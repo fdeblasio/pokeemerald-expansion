@@ -3212,6 +3212,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Walter5[] = {
     }
 };
 
+//Sharpedo (Archie), Obstagoon (Piers/Norman)
 static const struct TrainerMonItemCustomMoves sParty_Sidney[] = {
     {
     .iv = 250,
@@ -3250,6 +3251,7 @@ static const struct TrainerMonItemCustomMoves sParty_Sidney[] = {
     }
 };
 
+//Dusknoir
 static const struct TrainerMonItemCustomMoves sParty_Phoebe[] = {
     {
     .iv = 250,
@@ -3288,6 +3290,8 @@ static const struct TrainerMonItemCustomMoves sParty_Phoebe[] = {
     }
 };
 
+
+//Castform Snow, Froslass
 static const struct TrainerMonItemCustomMoves sParty_Glacia[] = {
     {
     .iv = 250,
@@ -3364,6 +3368,7 @@ static const struct TrainerMonItemCustomMoves sParty_Drake[] = {
     }
 };
 
+//Solrock/Lunatone (Tate/Liza), Aron (Steven?), Relicanth (Juan?), Lileep, Anorith
 static const struct TrainerMonItemCustomMoves sParty_Roxanne1[] = {
     {
     .iv = 100,
@@ -3388,6 +3393,7 @@ static const struct TrainerMonItemCustomMoves sParty_Roxanne1[] = {
     }
 };
 
+//Rematch: Blaziken (Flannery?), Breloom
 static const struct TrainerMonItemCustomMoves sParty_Brawly1[] = {
     {
     .iv = 100,
@@ -3412,6 +3418,7 @@ static const struct TrainerMonItemCustomMoves sParty_Brawly1[] = {
     }
 };
 
+//Plusle/Minun
 static const struct TrainerMonItemCustomMoves sParty_Wattson1[] = {
     {
     .iv = 200,
@@ -3443,6 +3450,7 @@ static const struct TrainerMonItemCustomMoves sParty_Wattson1[] = {
     }
 };
 
+//Castform Sunny?, Combusken (Brawly?); all female
 static const struct TrainerMonItemCustomMoves sParty_Flannery1[] = {
     {
     .iv = 200,
@@ -3474,6 +3482,7 @@ static const struct TrainerMonItemCustomMoves sParty_Flannery1[] = {
     }
 };
 
+//Loudred, Delcatty, Zangoose, Castform, Kecleon; Swellow/Swablu (Winona); Galarian Linoone (Sidney?)
 static const struct TrainerMonItemCustomMoves sParty_Norman1[] = {
     {
     .iv = 200,
@@ -3505,6 +3514,7 @@ static const struct TrainerMonItemCustomMoves sParty_Norman1[] = {
     }
 };
 
+//Swellow, Beautifly, Masquerain, Ninjask
 static const struct TrainerMonItemCustomMoves sParty_Winona1[] = {
     {
     .iv = 210,
@@ -3543,6 +3553,7 @@ static const struct TrainerMonItemCustomMoves sParty_Winona1[] = {
     }
 };
 
+//Grumpig, Chimecho
 static const struct TrainerMonItemCustomMoves sParty_TateAndLiza1[] = {
     {
     .iv = 250,
@@ -3574,6 +3585,7 @@ static const struct TrainerMonItemCustomMoves sParty_TateAndLiza1[] = {
     }
 };
 
+//Castform Rain, Gorebyss (Wallace), Huntail, Swampert, Relicanth (Roxanne?)
 static const struct TrainerMonItemCustomMoves sParty_Juan1[] = {
     {
     .iv = 200,
@@ -4411,6 +4423,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Timmy[] = {
     }
 };
 
+//Castform Rain, Gorebyss (Wallace), Huntail, Swampert, Relicanth (Roxanne?)
 static const struct TrainerMonItemCustomMoves sParty_Wallace[] = {
     {
     .iv = 255,
@@ -6748,6 +6761,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Edwin5[] = {
     }
 };
 
+//Gallade, Roserade
 static const struct TrainerMonNoItemCustomMoves sParty_WallyVR1[] = {
     {
     .iv = 150,
@@ -11595,6 +11609,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Darius[] = {
     }
 };
 
+//Mawile
 static const struct TrainerMonItemCustomMoves sParty_Steven[] = {
     {
     .iv = 255,

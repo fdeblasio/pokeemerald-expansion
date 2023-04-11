@@ -499,7 +499,7 @@ const u8 gText_Defense3[] = _("Defense");
 const u8 gText_SpAtk4[] = _("Sp. Atk");
 const u8 gText_SpDef4[] = _("Sp. Def");
 const u8 gText_Speed2[] = _("Speed");
-const u8 gText_HP4[] = _("Hp");
+const u8 gText_HP4[] = _("HP");
 const u8 gText_EmptyString8[] = _(""); // Unused
 <<<<<<< HEAD
 const u8 gText_OTSlash[] = _C("OT/");

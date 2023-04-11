@@ -41,3 +41,17 @@ Yes! Contributions are welcome via Pull Requests and they will be reviewed by ma
 A Discord-based ROM hacking community that has many members who hack using the disassembly and decompilation projects for Pokémon. Quite a few contributors to the original feature branches by DizzyEgg were members of ROM Hacking Hideout. You can call it RHH for short!
 
 [Click here to join the RHH Discord Server!](https://discord.gg/6CzjAG6GZk)
+
+## Notes
+(_\("[A-Z])([A-Z\.é':]+"\))
+$1\L$2
+
+(_\("[A-Z])([A-Z\.é':]+)([ -][A-Z])([A-Z\.é':]+"\))
+$1\L$2$3\L$4
+
+(_\("[A-Z])([A-Z\.é':]+)([ -][A-Z])([A-Z\.é':]+)([ -][A-Z])([A-Z\.é':]+"\))
+$1\L$2$3\L$4$5\L$6
+
+## TODO
+https://www.pokecommunity.com/showthread.php?t=416647&page=1
+Add Surskit, Meditite, Zangoose, Lunatone

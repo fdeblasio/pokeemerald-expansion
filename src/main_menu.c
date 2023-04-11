@@ -164,6 +164,8 @@
 
 #define OPTION_MENU_FLAG (1 << 15)
 
+#define INTRO_SPECIES SPECIES_ZANGOOSE
+
 // Static type declarations
 
 // Static RAM declarations
@@ -458,11 +460,11 @@ static const struct MenuAction sMenuActions_Gender[] = {
 };
 
 static const u8 *const sMalePresetNames[] = {
-    gText_DefaultNameStu,
-    gText_DefaultNameMilton,
-    gText_DefaultNameTom,
-    gText_DefaultNameKenny,
-    gText_DefaultNameReid,
+    gText_DefaultNameFrank,
+    gText_DefaultNameFelix,
+    gText_DefaultNameJake,
+    gText_DefaultNameJunya,
+    gText_DefaultNameRafi,
     gText_DefaultNameJude,
     gText_DefaultNameJaxson,
     gText_DefaultNameEaston,
@@ -481,13 +483,13 @@ static const u8 *const sMalePresetNames[] = {
 };
 
 static const u8 *const sFemalePresetNames[] = {
-    gText_DefaultNameKimmy,
-    gText_DefaultNameTiara,
+    gText_DefaultNameEmily,
+    gText_DefaultNameKim,
+    gText_DefaultNameSara,
     gText_DefaultNameBella,
     gText_DefaultNameJayla,
     gText_DefaultNameAllie,
     gText_DefaultNameLianna,
-    gText_DefaultNameSara,
     gText_DefaultNameMonica,
     gText_DefaultNameCamila,
     gText_DefaultNameAubree,
@@ -1373,7 +1375,7 @@ static void Task_NewGameBirchSpeechSub_InitPokeBall(u8 taskId)
     gSprites[spriteId].invisible = FALSE;
     gSprites[spriteId].data[0] = 0;
 
-    CreatePokeballSpriteToReleaseMon(spriteId, gSprites[spriteId].oam.paletteNum, 112, 58, 0, 0, 32, PALETTES_BG, SPECIES_LOTAD);
+    CreatePokeballSpriteToReleaseMon(spriteId, gSprites[spriteId].oam.paletteNum, 112, 58, 0, 0, 32, PALETTES_BG, INTRO_SPECIES);
     gTasks[taskId].func = Task_NewGameBirchSpeechSub_WaitForLotad;
     gTasks[sBirchSpeechMainTaskId].tTimer = 0;
 }
@@ -1875,7 +1877,7 @@ static void SpriteCB_MovePlayerDownWhileShrinking(struct Sprite *sprite)
 
 static u8 NewGameBirchSpeech_CreateLotadSprite(u8 x, u8 y)
 {
-    return CreateMonPicSprite_Affine(SPECIES_LOTAD, SHINY_ODDS, 0, MON_PIC_AFFINE_FRONT, x, y, 14, TAG_NONE);
+    return CreateMonPicSprite_Affine(INTRO_SPECIES, SHINY_ODDS, 0, MON_PIC_AFFINE_FRONT, x, y, 14, TAG_NONE);
 }
 
 static void AddBirchSpeechObjects(u8 taskId)

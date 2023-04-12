@@ -107,7 +107,7 @@ const u8 gText_EmptyWeight[] = _("        .   lbs."); // Unused
 const u8 gText_EmptyPokedexInfo1[] = _(""); // Unused
 const u8 gText_CryOf[] = _("Cry of");
 const u8 gText_EmptyPokedexInfo2[] = _(""); // Unused
-const u8 gText_SizeComparedTo[] = _("Size Compared to ");
+const u8 gText_SizeComparedTo[] = _("Size compared to ");
 const u8 gText_PokedexRegistration[] = _("Pokédex registration completed.");
 const u8 gText_HTHeight[] = _("HT");
 const u8 gText_WTWeight[] = _("WT");
@@ -1198,7 +1198,7 @@ const u8 gText_PkmnFainted_FldPsn[] = _("{STR_VAR_1} survived the poisoning.\nTh
 #endif
 const u8 gText_Marco[] = _("Marco");
 const u8 gText_TrainerCardName[] = _("Name: ");
-const u8 gText_TrainerCardIDNo[] = _("ID No.");
+const u8 gText_TrainerCardIDNo[] = _("ID No. ");
 const u8 gText_TrainerCardMoney[] = _("Money");
 const u8 gText_PokeDollar[] = _("¥"); // Unused
 const u8 gText_TrainerCardPokedex[] = _("Pokédex");

@@ -55,4 +55,5 @@ $1\L$2$3\L$4$5\L$6
 
 ## TODO
 https://www.pokecommunity.com/showthread.php?t=416647&page=1
+https://github.com/pret/pokeemerald/wiki/Tutorials
 Add Surskit, Meditite, Zangoose, Lunatone

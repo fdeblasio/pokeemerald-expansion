@@ -4219,7 +4219,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Calvin1[] = {
     {
     .iv = 0,
     .lvl = 5,
-    .species = SPECIES_POOCHYENA,
+    .species = SPECIES_ZIGZAGOON,
     }
 };
 
@@ -4331,7 +4331,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Calvin2[] = {
     {
     .iv = 10,
     .lvl = 27,
-    .species = SPECIES_MIGHTYENA,
+    .species = SPECIES_LINOONE,
     }
 };
 
@@ -4344,7 +4344,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Calvin3[] = {
     {
     .iv = 20,
     .lvl = 30,
-    .species = SPECIES_MIGHTYENA,
+    .species = SPECIES_LINOONE,
     }
 };
 
@@ -4357,30 +4357,30 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Calvin4[] = {
     {
     .iv = 30,
     .lvl = 29,
-    .species = SPECIES_LINOONE,
+    .species = SPECIES_VIGOROTH,
     },
     {
     .iv = 30,
     .lvl = 33,
-    .species = SPECIES_MIGHTYENA,
+    .species = SPECIES_LINOONE,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Calvin5[] = {
     {
     .iv = 40,
-    .lvl = 34,
+    .lvl = 36,
     .species = SPECIES_SWELLOW,
     },
     {
     .iv = 40,
-    .lvl = 32,
-    .species = SPECIES_LINOONE,
+    .lvl = 36,
+    .species = SPECIES_SLAKING,
     },
     {
-    .iv = 40,
-    .lvl = 36,
-    .species = SPECIES_MIGHTYENA,
+    .iv = 50,
+    .lvl = 38,
+    .species = SPECIES_LINOONE,
     }
 };
 
@@ -4401,7 +4401,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Allen[] = {
     {
     .iv = 0,
     .lvl = 4,
-    .species = SPECIES_ZIGZAGOON,
+    .species = SPECIES_POOCHYENA,
     },
     {
     .iv = 0,

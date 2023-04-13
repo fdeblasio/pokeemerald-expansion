@@ -58,6 +58,8 @@ sed -i 's/POKéDEX/Pokédex/g' */*.c */*.h */*.inc */*/*.c */*/*.h */*/*.inc */*
 ## TODO
 https://www.pokecommunity.com/showthread.php?t=416647&page=1
 https://github.com/pret/pokeemerald/wiki/Tutorials
-Add Surskit, Meditite, Zangoose, Lunatone
+Add Meditite, Zangoose, Lunatone
+Pokemon (especially stone evos) get moves previous evolutions know
+Update movesets for new moves
 Reusable TMs
 Trade Item evolutions (https://github.com/pret/pokeemerald/wiki/Allow-All-Pokemon-to-Evolve-Without-Trading might have some extra effects needed)

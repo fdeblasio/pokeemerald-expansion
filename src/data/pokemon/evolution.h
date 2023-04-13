@@ -255,7 +255,8 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
                                     #endif
                                        },
     [SPECIES_GLALIE]                = {{EVO_MEGA_EVOLUTION, ITEM_GLALITITE, SPECIES_GLALIE_MEGA}},
-    [SPECIES_AZURILL]               = {{EVO_FRIENDSHIP, 0, SPECIES_MARILL}},
+    [SPECIES_AZURILL]               = {{EVO_FRIENDSHIP, 0, SPECIES_MARILL},
+                                       {EVO_LEVEL, 10, SPECIES_MARILL}},
     [SPECIES_SPOINK]                = {{EVO_LEVEL, 32, SPECIES_GRUMPIG}},
     [SPECIES_MAWILE]                = {{EVO_MEGA_EVOLUTION, ITEM_MAWILITE, SPECIES_MAWILE_MEGA}},
     [SPECIES_MEDITITE]              = {{EVO_LEVEL, 37, SPECIES_MEDICHAM}},

@@ -53,6 +53,8 @@ $1\L$2$3\L$4
 (_\("[A-Z])([A-Z\.é':]+)([ -][A-Z])([A-Z\.é':]+)([ -][A-Z])([A-Z\.é':]+"\))
 $1\L$2$3\L$4$5\L$6
 
+sed -i 's/POKéDEX/Pokédex/g' */*.c */*.h */*.inc */*/*.c */*/*.h */*/*.inc */*/*/*.h */*/*/*.inc
+
 ## TODO
 https://www.pokecommunity.com/showthread.php?t=416647&page=1
 https://github.com/pret/pokeemerald/wiki/Tutorials

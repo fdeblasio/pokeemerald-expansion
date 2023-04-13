@@ -1,6 +1,6 @@
 const u8 gEasyChatWord_MatchUp[] = _("MATCH UP");
 const u8 gEasyChatWord_Go[] = _("GO");
-const u8 gEasyChatWord_No1[] = _("NO. 1");
+const u8 gEasyChatWord_No1[] = _("No. 1");
 const u8 gEasyChatWord_Decide[] = _("DECIDE");
 const u8 gEasyChatWord_LetMeWin[] = _("LET ME WIN");
 const u8 gEasyChatWord_Wins[] = _("WINS");

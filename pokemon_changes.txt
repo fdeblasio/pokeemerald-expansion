@@ -1,0 +1,14 @@
+Azurill:
+    50/50 gender ratio
+    Water/Fairy
+
+Marill:
+    HP: 70->75
+    Atk: 20->40
+    Def: 50->60
+    SpA: 20->40
+    SpD: 50->60
+
+Azumarill:
+    Atk: 50->60
+    Spe: 50->60

@@ -5049,12 +5049,12 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_MARILL] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 20,
-        .baseDefense   = 50,
+        .baseHP        = 75,
+        .baseAttack    = 40,
+        .baseDefense   = 60,
         .baseSpeed     = 40,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 50,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 60,
         #if P_UPDATED_TYPES >= GEN_6
             .types = { TYPE_WATER, TYPE_FAIRY},
         #else
@@ -5076,9 +5076,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_AZUMARILL] =
     {
         .baseHP        = 100,
-        .baseAttack    = 50,
+        .baseAttack    = 60,
         .baseDefense   = 80,
-        .baseSpeed     = 50,
+        .baseSpeed     = 60,
         .baseSpDefense = 80,
         #if P_UPDATED_STATS >= GEN_6
             .baseSpAttack  = 60,
@@ -7729,14 +7729,14 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpAttack  = 20,
         .baseSpDefense = 40,
         #if P_UPDATED_TYPES >= GEN_6
-            .types = { TYPE_NORMAL, TYPE_FAIRY},
+            .types = { TYPE_WATER, TYPE_FAIRY},
         #else
-            .types = { TYPE_NORMAL, TYPE_NORMAL},
+            .types = { TYPE_WATER, TYPE_WATER},
         #endif
         .catchRate = 150,
         .expYield = 38,
         .evYield_HP        = 1,
-        .genderRatio = PERCENT_FEMALE(75),
+        .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 10,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,

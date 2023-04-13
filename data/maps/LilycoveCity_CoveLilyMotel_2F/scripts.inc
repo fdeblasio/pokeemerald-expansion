@@ -69,7 +69,7 @@ LilycoveCity_CoveLilyMotel_2F_EventScript_MetScott::
 LilycoveCity_CoveLilyMotel_2F_Text_ShowMeCompletedDex:
 	.string "I'm the GAME DESIGNER.\p"
 	.string "Oh, is that right?\n"
-	.string "You're working on a POKéDEX?\p"
+	.string "You're working on a Pokédex?\p"
 	.string "It's tough trying to complete it,\n"
 	.string "but don't give up.\p"
 	.string "If you do complete it, please come\n"
@@ -78,7 +78,7 @@ LilycoveCity_CoveLilyMotel_2F_Text_ShowMeCompletedDex:
 LilycoveCity_CoveLilyMotel_2F_Text_FilledPokedexGiveYouThis:
 	.string "Wow! That's awesome!\n"
 	.string "Yep, it's totally awesome!\p"
-	.string "This POKéDEX is completely filled!\n"
+	.string "This Pokédex is completely filled!\n"
 	.string "You really must love Pokémon!\p"
 	.string "I'm so impressed!\p"
 	.string "Let me give you something in\n"
@@ -113,7 +113,7 @@ LilycoveCity_CoveLilyMotel_2F_Text_NeverLeaveWithoutGameBoy:
 	.string "my GAME BOY ADVANCE.$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_SnoozingPreferBattles:
-	.string "SCOTT: … … … … …\n"
+	.string "Scott: … … … … …\n"
 	.string "… … … … … Zzz…\p"
 	.string "… … … … … Huh?!\n"
 	.string "Oh, sorry, sorry! I was snoozing!\p"
@@ -129,7 +129,7 @@ LilycoveCity_CoveLilyMotel_2F_Text_SnoozingPreferBattles:
 	.string "the whole works!$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_ContestsDoTakeStrategy:
-	.string "SCOTT: I think it does take strategy\n"
+	.string "Scott: I think it does take strategy\n"
 	.string "to win a CONTEST.\p"
 	.string "Devising CONTEST strategies is one way\n"
 	.string "of becoming a better TRAINER, I'd say.$"

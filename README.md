@@ -63,3 +63,5 @@ Pokemon (especially stone evos) get moves previous evolutions know
 Update movesets for new moves
 Reusable TMs
 Trade Item evolutions (https://github.com/pret/pokeemerald/wiki/Allow-All-Pokemon-to-Evolve-Without-Trading might have some extra effects needed)
+Look at new animations for moves
+Easier move relearning

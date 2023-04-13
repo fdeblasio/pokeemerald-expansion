@@ -15,8 +15,8 @@ struct LandmarkList
     const struct Landmark *const *landmarks;
 };
 
-static const u8 LandmarkName_FlowerShop[] = _("FLOWER SHOP");
-static const u8 LandmarkName_PetalburgWoods[] = _("PETALBURG WOODS");
+static const u8 LandmarkName_FlowerShop[] = _("Flower Shop");
+static const u8 LandmarkName_PetalburgWoods[] = _("Petalburg Woods");
 static const u8 LandmarkName_MrBrineysCottage[] = _("MR. BRINEY'S COTTAGE");
 static const u8 LandmarkName_AbandonedShip[] = _("ABANDONED SHIP");
 static const u8 LandmarkName_SeashoreHouse[] = _("SEASHORE HOUSE");
@@ -33,7 +33,7 @@ static const u8 LandmarkName_WeatherInstitute[] = _("WEATHER INSTITUTE");
 static const u8 LandmarkName_MeteorFalls[] = _("METEOR FALLS");
 static const u8 LandmarkName_TunnelersRestHouse[] = _("TUNNELER'S RESTHOUSE");
 static const u8 LandmarkName_RusturfTunnel[] = _("RUSTURF TUNNEL");
-static const u8 LandmarkName_PokemonDayCare[] = _("POKéMON DAY CARE");
+static const u8 LandmarkName_PokemonDayCare[] = _("Pokémon Day Care");
 static const u8 LandmarkName_SafariZoneEntrance[] = _("SAFARI ZONE ENTRANCE");
 static const u8 LandmarkName_MtPyre[] = _("MT. PYRE");
 static const u8 LandmarkName_ShoalCave[] = _("SHOAL CAVE");

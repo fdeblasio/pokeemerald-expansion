@@ -74,5 +74,6 @@ Spruce up rematches
 Winston's rich enough to buy TMs so his moveset should incorporate that once TMs are finalized
 Reorganize Hoenn Pokemon based on Dex number as opposed to index
 Overworld sprites to match trainer sprites
+Make only one instance of each TM (https://pokemondb.net/pokebase/278398/which-tms-can-you-get-more-than-one-of-in-emerald; Lilycove ones can be configured with some shop tutorials)
 
 Maybe do one run-through of small updates and then add in new items/TMs in a second runthrough?

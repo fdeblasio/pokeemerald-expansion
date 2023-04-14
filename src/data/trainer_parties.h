@@ -4526,7 +4526,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Ivan[] = {
     {
     .iv = 0,
     .lvl = 5,
-    .species = SPECIES_MUDKIP,
+    .species = SPECIES_AZURILL,
     },
     {
     .iv = 0,
@@ -4536,7 +4536,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Ivan[] = {
     {
     .iv = 0,
     .lvl = 7,
-    .species = SPECIES_AZURILL,
+    .species = SPECIES_MUDKIP,
     }
 };
 

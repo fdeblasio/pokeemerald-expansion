@@ -66,3 +66,4 @@ Trade Item evolutions (https://github.com/pret/pokeemerald/wiki/Allow-All-Pokemo
 Look at new animations for moves
 Easier move relearning
 Change Day/Night hours?
+Gallade Sharpness (maybe wait for master/upcoming update)

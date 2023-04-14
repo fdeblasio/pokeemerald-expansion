@@ -67,3 +67,4 @@ Look at new animations for moves
 Easier move relearning
 Change Day/Night hours?
 Gallade Sharpness (maybe wait for master/upcoming update)
+Make Latios/Latias easier to catch/not roam?

@@ -69,3 +69,5 @@ Change Day/Night hours?
 Gallade Sharpness (maybe wait for master/upcoming update)
 Make Latios/Latias easier to catch/not roam?
 Incorporate new items/new methods of obtaining them (like how PP Ups are sold in Chansey Supply or Bottle Caps in Delibired)
+Add Farigiraf to Hoenn Dex once implemented
+Spruce up rematches

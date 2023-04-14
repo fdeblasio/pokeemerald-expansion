@@ -70,7 +70,7 @@ Gallade Sharpness (maybe wait for master/upcoming update)
 Make Latios/Latias easier to catch/not roam?
 Incorporate new items/new methods of obtaining them (like how PP Ups are sold in Chansey Supply or Bottle Caps in Delibired)
 Add Farigiraf to Hoenn Dex once implemented
-Spruce up rematches
+Spruce up rematches (customAll Pokemon. Winston could have a shiny, Calvin could have a good Nature/EV)
 Winston's rich enough to buy TMs so his moveset should incorporate that once TMs are finalized
 Reorganize Hoenn Pokemon based on Dex number as opposed to index
 Overworld sprites to match trainer sprites

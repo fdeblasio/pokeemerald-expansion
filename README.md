@@ -44,6 +44,7 @@ A Discord-based ROM hacking community that has many members who hack using the d
 
 ## Notes
 ([A-Z])([A-Z\.é':]+)
+([A-Z])([A-Z\.é'][A-Z\.é']+)
 (_\("[A-Z])([A-Z\.é':]+"\))
 $1\L$2
 

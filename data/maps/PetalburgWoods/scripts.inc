@@ -444,7 +444,7 @@ PetalburgWoods_Text_HiddenItemsExplanation:
 
 PetalburgWoods_Text_TryUsingThisItem:
 	.string "Oh, neat!\n"
-	.string "That's the Badge from Rustboro GYM!\p"
+	.string "That's the Badge from Rustboro Gym!\p"
 	.string "You must be a Trainer.\n"
 	.string "You should try using this item.$"
 

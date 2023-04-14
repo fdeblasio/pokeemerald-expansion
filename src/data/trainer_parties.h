@@ -4266,7 +4266,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Josh[] = {
     .iv = 100,
     .lvl = 10,
     .species = SPECIES_GEODUDE,
-    .moves = {MOVE_TACKLE, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    .moves = {MOVE_ROCK_TOMB, MOVE_TACKLE, MOVE_MUD_SPORT, MOVE_NONE}
     }
 };
 
@@ -4279,7 +4279,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Tommy[] = {
     {
     .iv = 120,
     .lvl = 8,
-    .species = SPECIES_GEODUDE,
+    .species = SPECIES_ARON,
     }
 };
 
@@ -7704,7 +7704,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Marc[] = {
     {
     .iv = 130,
     .lvl = 8,
-    .species = SPECIES_GEODUDE,
+    .species = SPECIES_RHYHORN,
     }
 };
 

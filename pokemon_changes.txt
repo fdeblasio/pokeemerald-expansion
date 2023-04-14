@@ -5,6 +5,9 @@ ALL:
 Nidorina/Nidoqueen:
     Can now breed
 
+Rhyperior:
+    Learns Rock Wrecker upon evolving
+
 Azurill:
     50/50 gender ratio
     Water/Fairy

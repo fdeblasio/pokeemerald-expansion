@@ -69,7 +69,7 @@ Easier move relearning
 Change Day/Night hours?
 Gallade Sharpness (maybe wait for master/upcoming update)
 Make Latios/Latias easier to catch/not roam?
-Incorporate new items/new methods of obtaining them (like how PP Ups are sold in Chansey Supply or Bottle Caps in Delibired)
+Incorporate new items/new methods of obtaining them (like how PP Ups are sold in Chansey Supply or Bottle Caps in Delibird)
 Add Farigiraf to Hoenn Dex once implemented
 Spruce up rematches (customAll Pokemon. Winston could have a shiny, Calvin could have a good Nature/EV)
 Winston's rich enough to buy TMs so his moveset should incorporate that once TMs are finalized
@@ -77,5 +77,6 @@ Reorganize Hoenn Pokemon based on Dex number as opposed to index
 Overworld sprites to match trainer sprites
 Make only one instance of each TM (https://pokemondb.net/pokebase/278398/which-tms-can-you-get-more-than-one-of-in-emerald; Lilycove ones can be configured with some shop tutorials)
 Sort/Expand bag
+Try to find Bolts foreground of Walda PC
 
 Maybe do one run-through of small updates and then add in new items/TMs in a second runthrough?

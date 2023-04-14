@@ -71,3 +71,4 @@ Make Latios/Latias easier to catch/not roam?
 Incorporate new items/new methods of obtaining them (like how PP Ups are sold in Chansey Supply or Bottle Caps in Delibired)
 Add Farigiraf to Hoenn Dex once implemented
 Spruce up rematches
+Winston's rich enough to buy TMs so his moveset should incorporate that once TMs are finalized

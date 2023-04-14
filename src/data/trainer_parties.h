@@ -1541,7 +1541,7 @@ static const struct TrainerMonItemDefaultMoves sParty_Cindy4[] = {
 static const struct TrainerMonItemDefaultMoves sParty_Cindy5[] = {
     {
     .iv = 30,
-    .lvl = 33,
+    .lvl = 34,
     .species = SPECIES_LINOONE,
     .heldItem = ITEM_NUGGET
     }
@@ -1550,7 +1550,7 @@ static const struct TrainerMonItemDefaultMoves sParty_Cindy5[] = {
 static const struct TrainerMonItemCustomMoves sParty_Cindy6[] = {
     {
     .iv = 40,
-    .lvl = 36,
+    .lvl = 38,
     .species = SPECIES_LINOONE,
     .heldItem = ITEM_BIG_NUGGET,
     .moves = {MOVE_FURY_SWIPES, MOVE_MUD_SPORT, MOVE_ODOR_SLEUTH, MOVE_SAND_ATTACK}
@@ -1740,6 +1740,12 @@ static const struct TrainerMonItemDefaultMoves sParty_Garret[] = {
 static const struct TrainerMonItemDefaultMoves sParty_Winston2[] = {
     {
     .iv = 0,
+    .lvl = 24,
+    .species = SPECIES_WINGULL,
+    .heldItem = ITEM_NUGGET
+    },
+    {
+    .iv = 0,
     .lvl = 27,
     .species = SPECIES_LINOONE,
     .heldItem = ITEM_NUGGET
@@ -1747,6 +1753,12 @@ static const struct TrainerMonItemDefaultMoves sParty_Winston2[] = {
 };
 
 static const struct TrainerMonItemDefaultMoves sParty_Winston3[] = {
+    {
+    .iv = 0,
+    .lvl = 28,
+    .species = SPECIES_PELIPPER,
+    .heldItem = ITEM_NUGGET
+    },
     {
     .iv = 0,
     .lvl = 30,
@@ -1758,6 +1770,12 @@ static const struct TrainerMonItemDefaultMoves sParty_Winston3[] = {
 static const struct TrainerMonItemDefaultMoves sParty_Winston4[] = {
     {
     .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_PELIPPER,
+    .heldItem = ITEM_NUGGET
+    },
+    {
+    .iv = 0,
     .lvl = 35,
     .species = SPECIES_LINOONE,
     .heldItem = ITEM_NUGGET
@@ -1765,6 +1783,13 @@ static const struct TrainerMonItemDefaultMoves sParty_Winston4[] = {
 };
 
 static const struct TrainerMonItemCustomMoves sParty_Winston5[] = {
+    {
+    .iv = 0,
+    .lvl = 38,
+    .species = SPECIES_PELIPPER,
+    .heldItem = ITEM_BIG_NUGGET,
+    .moves = {MOVE_PROTECT, MOVE_AIR_SLASH, MOVE_BRINE, MOVE_TAILWIND}
+    },
     {
     .iv = 0,
     .lvl = 40,
@@ -4329,6 +4354,11 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Dillon[] = {
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Calvin2[] = {
     {
+    .iv = 20,
+    .lvl = 25,
+    .species = SPECIES_TAILLOW,
+    },
+    {
     .iv = 10,
     .lvl = 27,
     .species = SPECIES_LINOONE,
@@ -4369,8 +4399,13 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Calvin4[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Calvin5[] = {
     {
     .iv = 40,
-    .lvl = 36,
+    .lvl = 38,
     .species = SPECIES_SWELLOW,
+    },
+    {
+    .iv = 40,
+    .lvl = 36,
+    .species = SPECIES_LOUDRED,
     },
     {
     .iv = 40,
@@ -4379,7 +4414,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Calvin5[] = {
     },
     {
     .iv = 50,
-    .lvl = 38,
+    .lvl = 40,
     .species = SPECIES_LINOONE,
     }
 };

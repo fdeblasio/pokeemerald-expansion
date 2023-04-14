@@ -1,5 +1,6 @@
 ALL:
     Movesets a combination of Gens 7-9
+    Any other moveset changes will be noted
 
 Azurill:
     50/50 gender ratio
@@ -16,3 +17,7 @@ Marill:
 Azumarill:
     Atk: 50->60
     Spe: 50->60
+
+Wurmple:
+    Learns Bug Bite at level 7
+    Evolution is based on time of day

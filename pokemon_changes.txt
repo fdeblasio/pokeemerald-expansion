@@ -2,6 +2,9 @@ ALL:
     Movesets a combination of Gens 7-9
     Any other moveset changes will be noted
 
+Nidorina/Nidoqueen:
+    Can now breed
+
 Azurill:
     50/50 gender ratio
     Water/Fairy

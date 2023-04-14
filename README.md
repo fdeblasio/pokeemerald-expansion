@@ -72,3 +72,6 @@ Incorporate new items/new methods of obtaining them (like how PP Ups are sold in
 Add Farigiraf to Hoenn Dex once implemented
 Spruce up rematches
 Winston's rich enough to buy TMs so his moveset should incorporate that once TMs are finalized
+Reorganize Hoenn Pokemon based on Dex number as opposed to index
+
+Maybe do one run-through of small updates and then add in new items/TMs in a second runthrough?

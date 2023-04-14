@@ -24,3 +24,12 @@ Azumarill:
 Wurmple:
     Learns Bug Bite at level 7
     Evolution is based on time of day
+
+Breloom:
+    Learns Drain Punch by level up
+
+Slaking:
+    Learns Giga Impact by level up
+
+Nincada/Ninjask/Shedinja:
+    Learn Leech Life by level up

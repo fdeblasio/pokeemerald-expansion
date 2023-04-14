@@ -8244,6 +8244,16 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Lyle[] = {
     .iv = 0,
     .lvl = 3,
     .species = SPECIES_WURMPLE,
+    },
+    {
+    .iv = 0,
+    .lvl = 3,
+    .species = SPECIES_WURMPLE,
+    },
+    {
+    .iv = 0,
+    .lvl = 3,
+    .species = SPECIES_WURMPLE,
     }
 };
 

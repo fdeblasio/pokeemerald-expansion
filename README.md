@@ -42,6 +42,11 @@ A Discord-based ROM hacking community that has many members who hack using the d
 
 [Click here to join the RHH Discord Server!](https://discord.gg/6CzjAG6GZk)
 
+FILL OUT
+## Contributions
+Emerald Expansion
+Other functionality to go back and look at/look who added it
+
 ## Notes
 ([A-Z])([A-Z\.é':]+)
 ([A-Z])([A-Z\.é'][A-Z\.é']+)
@@ -71,12 +76,25 @@ Gallade Sharpness (maybe wait for master/upcoming update)
 Make Latios/Latias easier to catch/not roam?
 Incorporate new items/new methods of obtaining them (like how PP Ups are sold in Chansey Supply or Bottle Caps in Delibird)
 Add Farigiraf to Hoenn Dex once implemented
-Spruce up rematches (customAll Pokemon. Winston could have a shiny, Calvin could have a good Nature/EV)
+Spruce up rematches
+    customAll Pokemon
+        Winston could have a shiny
+        Calvin could have a good Nature/EV
+        Leaders would have optimal Abilities/EVs/IVs/Natures)
 Winston's rich enough to buy TMs so his moveset should incorporate that once TMs are finalized
+    Gym Leader rematches should also utilize TMs
 Reorganize Hoenn Pokemon based on Dex number as opposed to index
 Overworld sprites to match trainer sprites
 Make only one instance of each TM (https://pokemondb.net/pokebase/278398/which-tms-can-you-get-more-than-one-of-in-emerald; Lilycove ones can be configured with some shop tutorials)
 Sort/Expand bag
 Try to find Bolts foreground of Walda PC
+Implement Mega Evolution (Mega Manectric for Wattson rematches)
+Potential TMs (look at spreadsheet of best moves per type):
+    Body Press
+    Liquidation
 
 Maybe do one run-through of small updates and then add in new items/TMs in a second runthrough?
+
+## Future Hacks
+Once this base is done, potential hacks that can be built on top of it
+With binary hacks, some Pokemon had things hardcoded in their species spot (Nidorans' gender not showing up if it wasn't nicknamed, Unown's forms, Shedinja having 1 HP, Spinda's spots). Now that the code is editable, potentially mess around with some of it. Like a hack where the starter is Shedinja at catching is disabled (disable shinies!) but even though Shedinja still has a base 1 stat, it'll do the normal stat calculation

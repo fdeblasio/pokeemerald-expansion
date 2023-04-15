@@ -43,9 +43,43 @@ A Discord-based ROM hacking community that has many members who hack using the d
 [Click here to join the RHH Discord Server!](https://discord.gg/6CzjAG6GZk)
 
 FILL OUT
-## Contributions
-Emerald Expansion
-Other functionality to go back and look at/look who added it
+## Contributions/Acknowledgements
+- [pret's initial decompilation](https://github.com/pret/pokeemerald)
+- [RHH's Emerald Expansion](https://github.com/rh-hideout/pokeemerald-expansion)
+    - Fill out individual contributers (https://github.com/rh-hideout/pokeemerald-expansion/wiki/Credits)
+- DizzyEgg
+    - Starting the Emerald Expansion
+    - [Colored stats by nature](https://github.com/pret/pokeemerald/compare/master...DizzyEggg:pokeemerald:nature_color)
+- [Porymaps](https://github.com/huderlem/porymap/releases/tag/5.1.1)
+- Lunos
+    - [Fixing Snow weather](https://github.com/pret/pokeemerald/wiki/Fix-Snow-Weather)
+    - [Showing Hidden Power type in battle](https://www.pokecommunity.com/showpost.php?p=10269149)
+    - [Swapping party using Select](https://www.pokecommunity.com/showpost.php?p=10420662)
+    - [Displaying Return/Frustration power in summary screen](https://www.pokecommunity.com/showpost.php?p=10575976&postcount=420)
+- Ghoulslash
+    - [Fixing the surfing dismount bug](https://github.com/pret/pokeemerald/wiki/Surfing-Dismount-Ground-Effects)
+    - [Implementing shops using badge count](https://github.com/pret/pokeemerald/wiki/Shop-Items-By-Badge-Count)
+    - [Plural giveitem](https://www.pokecommunity.com/showpost.php?p=10177314&postcount=107)
+- AsparagusEduardo
+    - [Not showing dex entries until the Pokédex is received](https://github.com/pret/pokeemerald/wiki/Not-showing-dex-entries-until-getting-the-Pok%C3%A9dex)
+    - [Having "Move Pokemon" as the first PC option](https://www.pokecommunity.com/showpost.php?p=10065761)
+- Jaizu
+    - [Implementing the FRLG bag sound](https://www.pokecommunity.com/showpost.php?p=10205757)
+    - [Implementing an auto-swapping naming screen](https://www.pokecommunity.com/showpost.php?p=10199896&postcount=139)
+- Buffel Saft 
+    - [Showing EVs/IVs in the summary screen](https://www.pokecommunity.com/showpost.php?p=10410302)
+    - [Removing the need to water berries on rainy routes](https://www.pokecommunity.com/showpost.php?p=10349397&postcount=258)
+    - [LGPE-Style bonus Premier Balls](https://github.com/pret/pokeemerald/wiki/LGPE-Style-Bonus-Premier-Balls)
+- [Jirachii for implementing Hidden Power type in the summary screen](https://www.pokecommunity.com/showpost.php?p=10269132)
+- [Zeturic for a wrapping summary screen](https://www.pokecommunity.com/showpost.php?p=10060875&postcount=27)
+- [Hiroshi for making TMs unsellable](https://www.pokecommunity.com/showpost.php?p=10209376)
+- [Flametix for fixing the RESET_FONT bug](https://github.com/pret/pokeemerald/wiki/Implement-Missing-Text-Function-RESET_FONT)
+- [voloved for removing Use on Key Items with no field use](https://github.com/pret/pokeemerald/wiki/Make-Key-Items-That-Cannot-Be-Used-In-The-Field-Not-Show-A-Use-or-Register-Option)
+- [Anon822 for removing map popups for the same map section](https://www.pokecommunity.com/showpost.php?p=10449889)
+- [paccy for implementing Wall Clock editing](https://www.pokecommunity.com/showpost.php?p=10481737)
+- [Fyreeire for removing the extra save confirmation](https://github.com/pret/pokeemerald/wiki/Remove-the-extra-save-confirmation)
+- [paccy, ExpoSeed, surskitty, FieryMewtwo, Lunos for Infinite TM Usage](https://github.com/pret/pokeemerald/wiki/Infinite-TM-usage)
+- [hjk321 for extra save space](https://github.com/pret/pokeemerald/wiki/Extra-save-space-with-two-lines-of-code)
 
 ## Notes
 ([A-Z])([A-Z\.é':]+)
@@ -89,9 +123,7 @@ Make only one instance of each TM (https://pokemondb.net/pokebase/278398/which-t
 Sort/Expand bag
 Try to find Bolts foreground of Walda PC
 Implement Mega Evolution (Mega Manectric for Wattson rematches)
-Potential TMs (look at spreadsheet of best moves per type):
-    Body Press
-    Liquidation
+Put EVs/IVs on one screen so less switching through stats?
 
 Maybe do one run-through of small updates and then add in new items/TMs in a second runthrough?
 

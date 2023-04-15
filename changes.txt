@@ -1,3 +1,7 @@
+Moves:
+    Play Rough has 100 accuracy
+
+Pokemon:
 ALL:
     Movesets a combination of Gens 7-9
     Any other moveset changes will be noted

@@ -1230,7 +1230,7 @@ RustboroCity_Text_BrendanMrBrineyHint:
 RustboroCity_Text_TunnelNearingCompletion:
 	.string "“Timesaving tunnel nearing\n"
 	.string "completion!”\p"
-	.string "…Is what it says on the sign, but\n"
+	.string "…is what it says on the sign, but\n"
 	.string "there's also a big “X” splashed\l"
 	.string "across it in red paint…$"
 

@@ -1,4 +1,5 @@
 Moves:
+    Cut has 100 accuracy
     Play Rough has 100 accuracy
 
 Pokemon:

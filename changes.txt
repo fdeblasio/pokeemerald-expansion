@@ -20,6 +20,7 @@ Azurill:
     50/50 gender ratio
     Water/Fairy
     Can also evolve into Marill at level 10
+    Catch rate is 255
 
 Marill:
     HP: 70->75

@@ -7733,7 +7733,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         #else
             .types = { TYPE_WATER, TYPE_WATER},
         #endif
-        .catchRate = 150,
+        .catchRate = 255,
         .expYield = 38,
         .evYield_HP        = 1,
         .genderRatio = PERCENT_FEMALE(50),

@@ -1111,7 +1111,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
             .pp = 25,
         #endif
         .effect = EFFECT_RECOIL_25,
-        .power = 80,
+        .power = 100,
         .type = TYPE_FIGHTING,
         .accuracy = 80,
         .secondaryEffectChance = 0,
@@ -5841,17 +5841,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
 
     [MOVE_VOLT_TACKLE] =
     {
-        #if B_UPDATED_MOVE_DATA >= GEN_4
-            .effect = EFFECT_RECOIL_33_STATUS,
-            .argument = STATUS1_PARALYSIS,
-        #else
-            .effect = EFFECT_RECOIL_33,
-        #endif
+        .effect = EFFECT_PARALYZE_HIT,
         .power = 120,
         .type = TYPE_ELECTRIC,
         .accuracy = 100,
         .pp = 15,
-        .secondaryEffectChance = 10,
+        .secondaryEffectChance = 30,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_RECKLESS_BOOST | FLAG_SHEER_FORCE_BOOST,

@@ -469,5 +469,5 @@ Route116_Text_TrainerTipsBagHasPockets:
 	.string "Items you obtain are automatically\n"
 	.string "placed in the appropriate Pockets.\p"
 	.string "No Trainer can afford to be without\n"
-	.string "a BAG of their own.$"
+	.string "a Bag of their own.$"
 

@@ -1857,63 +1857,63 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 8,
-                "max_level": 8,
+                "min_level": 9,
+                "max_level": 9,
                 "species": "SPECIES_WHISMUR"
               },
               {
-                "min_level": 8,
-                "max_level": 8,
+                "min_level": 9,
+                "max_level": 9,
                 "species": "SPECIES_WHISMUR"
               },
               {
-                "min_level": 8,
-                "max_level": 8,
+                "min_level": 9,
+                "max_level": 9,
                 "species": "SPECIES_WHISMUR"
               },
               {
-                "min_level": 8,
-                "max_level": 8,
+                "min_level": 9,
+                "max_level": 9,
                 "species": "SPECIES_WHISMUR"
               },
               {
-                "min_level": 8,
-                "max_level": 8,
+                "min_level": 9,
+                "max_level": 9,
                 "species": "SPECIES_WHISMUR"
               },
               {
-                "min_level": 8,
-                "max_level": 8,
+                "min_level": 9,
+                "max_level": 9,
                 "species": "SPECIES_WHISMUR"
               },
               {
-                "min_level": 8,
-                "max_level": 8,
+                "min_level": 9,
+                "max_level": 9,
                 "species": "SPECIES_WHISMUR"
               },
               {
-                "min_level": 8,
-                "max_level": 8,
+                "min_level": 9,
+                "max_level": 9,
                 "species": "SPECIES_WHISMUR"
               },
               {
-                "min_level": 8,
-                "max_level": 8,
+                "min_level": 9,
+                "max_level": 9,
                 "species": "SPECIES_WHISMUR"
               },
               {
-                "min_level": 8,
-                "max_level": 8,
+                "min_level": 9,
+                "max_level": 9,
                 "species": "SPECIES_WHISMUR"
               },
               {
-                "min_level": 8,
-                "max_level": 8,
+                "min_level": 9,
+                "max_level": 9,
                 "species": "SPECIES_WHISMUR"
               },
               {
-                "min_level": 8,
-                "max_level": 8,
+                "min_level": 9,
+                "max_level": 9,
                 "species": "SPECIES_WHISMUR"
               }
             ]

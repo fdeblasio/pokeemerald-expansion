@@ -125,6 +125,7 @@ Try to find Bolts foreground of Walda PC
 Implement Mega Evolution (Mega Manectric for Wattson rematches)
 Put EVs/IVs on one screen so less switching through stats?
 Maybe all Rich Boys/Ladies have shinies (would need to have different Pokemon from each other instead of all having Zigzagoon)
+Some MAN_2's maybe could be switched to DEVON_EMPLOYEE
 
 Maybe do one run-through of small updates and then add in new items/TMs in a second runthrough?
 

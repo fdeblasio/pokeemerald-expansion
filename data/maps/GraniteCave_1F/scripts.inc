@@ -24,7 +24,7 @@ GraniteCave_1F_Text_GetsDarkAheadHereYouGo:
 	.string "It'll be tough trying to explore.\p"
 	.string "That guy who came by earlier…\n"
 	.string "Steven, I think it was.\p"
-	.string "He had an Escape rope, so he ought\n"
+	.string "He had an Escape Rope, so he ought\n"
 	.string "to be all right, but…\p"
 	.string "Well, for us Hikers, helping out those\n"
 	.string "that we meet is our motto.\p"

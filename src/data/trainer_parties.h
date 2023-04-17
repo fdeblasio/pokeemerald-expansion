@@ -3417,7 +3417,7 @@ static const struct TrainerMonItemCustomMoves sParty_Roxanne1[] = {
     }
 };
 
-//Rematch: Blaziken (Flannery?), Breloom
+//Rematch: Blaziken (Flannery?), Breloom, Heracross, Gallade (Wally/Twins)
 static const struct TrainerMonItemCustomMoves sParty_Brawly1[] = {
     {
     .iv = 100,
@@ -4585,25 +4585,25 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Claude[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Elliot1[] = {
     {
     .iv = 0,
-    .lvl = 10,
+    .lvl = 12,
     .species = SPECIES_MAGIKARP,
     },
     {
     .iv = 0,
-    .lvl = 7,
+    .lvl = 12,
     .species = SPECIES_TENTACOOL,
     },
     {
     .iv = 0,
-    .lvl = 10,
-    .species = SPECIES_MAGIKARP,
+    .lvl = 14,
+    .species = SPECIES_WAILMER,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Ned[] = {
     {
     .iv = 10,
-    .lvl = 11,
+    .lvl = 14,
     .species = SPECIES_TENTACOOL,
     }
 };
@@ -4676,87 +4676,112 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Carter[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Elliot2[] = {
     {
     .iv = 10,
-    .lvl = 24,
+    .lvl = 27,
+    .species = SPECIES_BARBOACH,
+    },
+    {
+    .iv = 10,
+    .lvl = 27,
+    .species = SPECIES_CARVANHA,
+    },
+    {
+    .iv = 10,
+    .lvl = 27,
+    .species = SPECIES_GYARADOS,
+    },
+    {
+    .iv = 10,
+    .lvl = 27,
     .species = SPECIES_TENTACOOL,
     },
     {
     .iv = 10,
     .lvl = 27,
-    .species = SPECIES_GYARADOS,
-    },
-    {
-    .iv = 10,
-    .lvl = 27,
-    .species = SPECIES_GYARADOS,
+    .species = SPECIES_WAILMER,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Elliot3[] = {
     {
     .iv = 20,
-    .lvl = 29,
+    .lvl = 30,
+    .species = SPECIES_WHISCASH,
+    },
+    {
+    .iv = 20,
+    .lvl = 30,
+    .species = SPECIES_SHARPEDO,
+    },
+    {
+    .iv = 20,
+    .lvl = 30,
     .species = SPECIES_GYARADOS,
     },
     {
     .iv = 20,
-    .lvl = 26,
-    .species = SPECIES_CARVANHA,
+    .lvl = 30,
+    .species = SPECIES_TENTACRUEL,
     },
     {
     .iv = 20,
-    .lvl = 26,
-    .species = SPECIES_TENTACOOL,
-    },
-    {
-    .iv = 20,
-    .lvl = 29,
-    .species = SPECIES_GYARADOS,
+    .lvl = 30,
+    .species = SPECIES_WAILMER,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Elliot4[] = {
     {
     .iv = 30,
-    .lvl = 31,
+    .lvl = 35,
+    .species = SPECIES_WHISCASH,
+    },
+    {
+    .iv = 30,
+    .lvl = 35,
+    .species = SPECIES_SHARPEDO,
+    },
+    {
+    .iv = 30,
+    .lvl = 35,
     .species = SPECIES_GYARADOS,
     },
     {
     .iv = 30,
-    .lvl = 30,
-    .species = SPECIES_CARVANHA,
-    },
-    {
-    .iv = 30,
-    .lvl = 30,
+    .lvl = 35,
     .species = SPECIES_TENTACRUEL,
     },
     {
     .iv = 31,
-    .lvl = 31,
-    .species = SPECIES_GYARADOS,
+    .lvl = 35,
+    .species = SPECIES_WAILMER,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Elliot5[] = {
     {
     .iv = 40,
-    .lvl = 33,
-    .species = SPECIES_GYARADOS,
+    .lvl = 40,
+    .species = SPECIES_WHISCASH,
     },
     {
     .iv = 40,
-    .lvl = 33,
+    .lvl = 40,
     .species = SPECIES_SHARPEDO,
     },
     {
     .iv = 40,
-    .lvl = 33,
+    .lvl = 40,
     .species = SPECIES_GYARADOS,
     },
     {
     .iv = 40,
-    .lvl = 35,
+    .lvl = 40,
     .species = SPECIES_TENTACRUEL,
+    },
+    {
+    .iv = 40,
+    .lvl = 40,
+    .species = SPECIES_WAILORD,
     }
 };
 

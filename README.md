@@ -103,6 +103,8 @@ Pokemon (especially stone evos) get moves previous evolutions know
 Update movesets for new moves
 Reusable TMs
 Trade Item evolutions (https://github.com/pret/pokeemerald/wiki/Allow-All-Pokemon-to-Evolve-Without-Trading might have some extra effects needed)
+    Make Linking Cord available in shop
+    Lilycove: Turn one 4th floor clerk into all missing TMs, the other into evolution items
 Look at new animations for moves
 Easier move relearning
 Change Day/Night hours?

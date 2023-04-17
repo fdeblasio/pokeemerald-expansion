@@ -8,10 +8,14 @@ Moves:
 Pokemon:
 ALL:
     Movesets a combination of Gens 7-9
+        Typically this means they have their latest moveset plus any moves from their Gen 7 moveset that have been removed
     Any other moveset changes will be noted
 
 Nidorina/Nidoqueen:
     Can now breed
+
+Golbat:
+    Now also evolves into Crobat at level 33
 
 Rhyperior:
     Learns Rock Wrecker upon evolving

@@ -824,7 +824,7 @@ Route109_Text_AlicePostBattle:
 
 Route109_Text_HueyIntro:
 	.string "I've laid anchor in ports around\n"
-	.string "the world, but SLATEPORT's the best.$"
+	.string "the world, but Slateport's the best.$"
 
 Route109_Text_HueyDefeated:
 	.string "You're the best!$"
@@ -844,7 +844,7 @@ Route109_Text_EdmondDefeated:
 Route109_Text_EdmondPostBattle:
 	.string "I'm usually stronger than this!\n"
 	.string "I'm just seasick as a dog!\p"
-	.string "I'm a SAILOR, but…$"
+	.string "I'm a Sailor, but…$"
 
 Route109_Text_RickyIntro:
 	.string "I'm thirsty… I could go for a Soda Pop\n"

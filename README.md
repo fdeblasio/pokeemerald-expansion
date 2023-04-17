@@ -60,6 +60,7 @@ FILL OUT
     - [Fixing the surfing dismount bug](https://github.com/pret/pokeemerald/wiki/Surfing-Dismount-Ground-Effects)
     - [Implementing shops using badge count](https://github.com/pret/pokeemerald/wiki/Shop-Items-By-Badge-Count)
     - [Plural giveitem](https://www.pokecommunity.com/showpost.php?p=10177314&postcount=107)
+    - [Bag sorting](https://www.pokecommunity.com/showpost.php?p=10167488&postcount=84)
 - AsparagusEduardo
     - [Not showing dex entries until the Pokédex is received](https://github.com/pret/pokeemerald/wiki/Not-showing-dex-entries-until-getting-the-Pok%C3%A9dex)
     - [Having "Move Pokemon" as the first PC option](https://www.pokecommunity.com/showpost.php?p=10065761)

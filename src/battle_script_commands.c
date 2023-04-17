@@ -4174,7 +4174,6 @@ static void Cmd_getexp(void)
     s32 i; // also used as stringId
     u8 holdEffect;
     s32 sentIn;
-    s32 viaExpShare = 0;
     u32 *exp = &gBattleStruct->expValue;
 
     gBattlerFainted = GetBattlerForBattleScript(cmd->battler);
@@ -4220,9 +4219,6 @@ static void Cmd_getexp(void)
                     holdEffect = gSaveBlock1Ptr->enigmaBerry.holdEffect;
                 else
                     holdEffect = ItemId_GetHoldEffect(item);
-
-                if (holdEffect == HOLD_EFFECT_EXP_SHARE)
-                    viaExpShare++;
             }
             #if (B_SCALED_EXP >= GEN_5) && (B_SCALED_EXP != GEN_6)
                 calculatedExp = gSpeciesInfo[gBattleMons[gBattlerFainted].species].expYield * gBattleMons[gBattlerFainted].level / 5;
@@ -4231,13 +4227,13 @@ static void Cmd_getexp(void)
             #endif
 
             #if B_SPLIT_EXP < GEN_6
-                if (viaExpShare) // at least one mon is getting exp via exp share
+                if (gSaveBlock2Ptr->expShare) // exp share is turned on
                 {
                     *exp = SAFE_DIV(calculatedExp / 2, viaSentIn);
                     if (*exp == 0)
                         *exp = 1;
 
-                    gExpShareExp = calculatedExp / 2 / viaExpShare;
+                    gExpShareExp = calculatedExp / 2;
                     if (gExpShareExp == 0)
                         gExpShareExp = 1;
                 }
@@ -4270,7 +4266,7 @@ static void Cmd_getexp(void)
             else
                 holdEffect = ItemId_GetHoldEffect(item);
 
-            if (holdEffect != HOLD_EFFECT_EXP_SHARE && !(gBattleStruct->sentInPokes & 1))
+            if (!gSaveBlock2Ptr->expShare && !(gBattleStruct->sentInPokes & 1))
             {
                 *(&gBattleStruct->sentInPokes) >>= 1;
                 gBattleScripting.getexpState = 5;
@@ -4288,7 +4284,7 @@ static void Cmd_getexp(void)
             }
             else
             {
-                // Music change in a wild battle after fainting opposing pokemon.
+                // Music change in a wild battle after fainting opposing Pokemon.
                 if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER)
                     && (gBattleMons[0].hp || (gBattleTypeFlags & BATTLE_TYPE_DOUBLE && gBattleMons[2].hp))
                     && !IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT))
@@ -4310,10 +4306,10 @@ static void Cmd_getexp(void)
 
                     // only give exp share bonus in later gens if the mon wasn't sent out
                 #if B_SPLIT_EXP < GEN_6
-                    if (holdEffect == HOLD_EFFECT_EXP_SHARE)
+                    if (gSaveBlock2Ptr->expShare)
                         gBattleMoveDamage += gExpShareExp;
                 #else
-                    if (holdEffect == HOLD_EFFECT_EXP_SHARE && gBattleMoveDamage == 0)
+                    if (gSaveBlock2Ptr->expShare && gBattleMoveDamage == 0)
                         gBattleMoveDamage += gExpShareExp;
                 #endif
                     if (holdEffect == HOLD_EFFECT_LUCKY_EGG)

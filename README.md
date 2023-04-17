@@ -124,7 +124,7 @@ Winston's rich enough to buy TMs so his moveset should incorporate that once TMs
 Reorganize Hoenn Pokemon based on Dex number as opposed to index
 Overworld sprites to match trainer sprites
 Make only one instance of each TM (https://pokemondb.net/pokebase/278398/which-tms-can-you-get-more-than-one-of-in-emerald; Lilycove ones can be configured with some shop tutorials; remove from Pickup)
-Sort/Expand bag
+Expand bag
 Try to find Bolts foreground of Walda PC
 Implement Mega Evolution (Mega Manectric for Wattson rematches)
 Put EVs/IVs on one screen so less switching through stats?

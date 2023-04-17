@@ -62,11 +62,11 @@
 // *******************************
 // Enums
 enum { // Main
+    DEBUG_MENU_ITEM_GIVE,
     DEBUG_MENU_ITEM_UTILITIES,
     DEBUG_MENU_ITEM_SCRIPTS,
     DEBUG_MENU_ITEM_FLAGS,
     DEBUG_MENU_ITEM_VARS,
-    DEBUG_MENU_ITEM_GIVE,
     DEBUG_MENU_ITEM_SOUND,
     DEBUG_MENU_ITEM_ACCESS_PC,
     DEBUG_MENU_ITEM_CANCEL
@@ -430,11 +430,11 @@ static const s32 sPowersOfTen[] =
 // List Menu Items
 static const struct ListMenuItem sDebugMenu_Items_Main[] =
 {
+    [DEBUG_MENU_ITEM_GIVE]      = {sDebugText_Give,      DEBUG_MENU_ITEM_GIVE},
     [DEBUG_MENU_ITEM_UTILITIES] = {sDebugText_Utilities, DEBUG_MENU_ITEM_UTILITIES},
     [DEBUG_MENU_ITEM_SCRIPTS]   = {sDebugText_Scripts,   DEBUG_MENU_ITEM_SCRIPTS},
     [DEBUG_MENU_ITEM_FLAGS]     = {sDebugText_Flags,     DEBUG_MENU_ITEM_FLAGS},
     [DEBUG_MENU_ITEM_VARS]      = {sDebugText_Vars,      DEBUG_MENU_ITEM_VARS},
-    [DEBUG_MENU_ITEM_GIVE]      = {sDebugText_Give,      DEBUG_MENU_ITEM_GIVE},
     [DEBUG_MENU_ITEM_SOUND]     = {sDebugText_Sound,     DEBUG_MENU_ITEM_SOUND},
     [DEBUG_MENU_ITEM_ACCESS_PC] = {sDebugText_AccessPC,  DEBUG_MENU_ITEM_ACCESS_PC},
     [DEBUG_MENU_ITEM_CANCEL]    = {sDebugText_Cancel,    DEBUG_MENU_ITEM_CANCEL}

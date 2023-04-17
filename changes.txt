@@ -1,9 +1,12 @@
 Moves:
     Double Slap is called Multi-Slap
     Volt Tackle has a 30% chance to paralyze and no longer causes recoil
-    Cut has 100 accuracy
-    Submission has 100 accuracy
-    Play Rough has 100 accuracy
+    Given 100 accuracy:
+        Cut
+        Submission
+        Play Rough
+        Sky Uppercut
+        Blaze Kick
 
 Pokemon:
 ALL:

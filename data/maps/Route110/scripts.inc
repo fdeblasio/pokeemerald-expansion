@@ -965,7 +965,7 @@ Route110_Text_ThereIsNoRecord:
 	.string "challenge. There is no record…$"
 
 Route110_Text_ImagineSeeingYouHere:
-	.string "PROF. BIRCH: Oh, {PLAYER}{KUN}!\n"
+	.string "Prof. Birch: Oh, {PLAYER}{KUN}!\n"
 	.string "Imagine seeing you here!\p"
 	.string "And where might my {RIVAL} be?$"
 
@@ -974,7 +974,7 @@ Route110_Text_HeardYouInstallMatchCall:
 	.string "You two are running separately.\l"
 	.string "Well, that's fine.\p"
 	.string "Oh, yes, I heard that your PokéNav\n"
-	.string "had the MATCH CALL system installed.\p"
+	.string "had the Match Call system installed.\p"
 	.string "Well, then, I should register you in\n"
 	.string "my PokéNav as well.\p"
 	.string "That way, even when we're apart,\n"
@@ -982,11 +982,11 @@ Route110_Text_HeardYouInstallMatchCall:
 	.string "… … … … … …$"
 
 Route110_Text_RegisteredBirchInPokenav:
-	.string "Registered PROF. BIRCH\n"
+	.string "Registered Prof. Birch\n"
 	.string "in the PokéNav.$"
 
 Route110_Text_KeepAnEyeOutForRival:
-	.string "PROF. BIRCH: {PLAYER}{KUN}…\p"
+	.string "Prof. Birch: {PLAYER}{KUN}…\p"
 	.string "Please keep an eye out for my {RIVAL}.\n"
 	.string "… … … … … …\p"
 	.string "Well, I had better get going.\n"

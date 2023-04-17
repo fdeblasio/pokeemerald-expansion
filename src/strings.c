@@ -1830,3 +1830,4 @@ const u8 gText_PokeBalls[] = _("Poké Balls");
 const u8 gText_Berry[] = _("Berry");
 const u8 gText_Berries[] = _("Berries");
 const u8 gText_Nickname[] = _("Nickname");
+const u8 gText_Moves_Menu[] = _("Change Moves");

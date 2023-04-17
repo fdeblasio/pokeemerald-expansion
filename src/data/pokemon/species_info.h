@@ -7841,7 +7841,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpAttack  = 65,
         .baseSpDefense = 65,
         .types = { TYPE_DARK, TYPE_GHOST},
-        .catchRate = 45,
+        .catchRate = 150,
         .expYield = 133,
         .evYield_Attack    = 1,
         .evYield_Defense   = 1,
@@ -7869,7 +7869,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         #else
             .types = { TYPE_STEEL, TYPE_STEEL},
         #endif
-        .catchRate = 45,
+        .catchRate = 150,
         .expYield = 133,
         .evYield_Attack    = 1,
         .evYield_Defense   = 1,

@@ -565,7 +565,7 @@ Route106_Text_ElliotRematchPostBattle:
 Route106_Text_NedIntro:
 	.string "What do people do if they need to go\n"
 	.string "to a washroom?\p"
-	.string "What if my ROD hooks a big one while\n"
+	.string "What if my Rod hooks a big one while\n"
 	.string "I'm in the washroom? I just can't go…$"
 
 Route106_Text_NedDefeated:

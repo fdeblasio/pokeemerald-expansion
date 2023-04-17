@@ -241,7 +241,7 @@ RustboroCity_Gym_Text_RoxanneRegisterCall:
 	.string "Trainers at an incredible clip.\p"
 	.string "Well, I'd rather not think that\n"
 	.string "I can't beat you.\p"
-	.string "I promise, I will shape up my GYM\n"
+	.string "I promise, I will shape up my Gym\n"
 	.string "so that you may challenge us again.\p"
 	.string "I hope you'll be looking forward to\n"
 	.string "that occasion as much as me!\p"

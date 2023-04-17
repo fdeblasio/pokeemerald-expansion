@@ -92,6 +92,7 @@ enum {
     ACTION_BY_NAME,
     ACTION_BY_TYPE,
     ACTION_BY_AMOUNT,
+    ACTION_BY_INDEX,
     ACTION_DUMMY,
 };
 
@@ -219,6 +220,7 @@ static void Task_LoadBagSortOptions(u8 taskId);
 static void ItemMenu_SortByName(u8 taskId);
 static void ItemMenu_SortByType(u8 taskId);
 static void ItemMenu_SortByAmount(u8 taskId);
+static void ItemMenu_SortByIndex(u8 taskId);
 static void SortBagItems(u8 taskId);
 static void Task_SortFinish(u8 taskId);
 static void SortItemsInBag(u8 pocket, u8 type);
@@ -284,6 +286,7 @@ static const struct ListMenuTemplate sItemListMenu =
 static const u8 sMenuText_ByName[] = _("Name");
 static const u8 sMenuText_ByType[] = _("Type");
 static const u8 sMenuText_ByAmount[] = _("Amount");
+static const u8 sMenuText_ByIndex[] = _("Index");
 static const u8 sMenuText_ByNumber[] = _("Number");
 static const u8 sText_NothingToSort[] = _("There's nothing to sort!");
 
@@ -305,6 +308,7 @@ static const struct MenuAction sItemMenuActions[] = {
     [ACTION_BY_NAME]           = {sMenuText_ByName,   ItemMenu_SortByName},
     [ACTION_BY_TYPE]           = {sMenuText_ByType,   ItemMenu_SortByType},
     [ACTION_BY_AMOUNT]         = {sMenuText_ByAmount, ItemMenu_SortByAmount},
+    [ACTION_BY_INDEX]         =  {sMenuText_ByIndex,   ItemMenu_SortByIndex},
     [ACTION_DUMMY]             = {gText_EmptyString2, NULL}
 };
 
@@ -2666,6 +2670,7 @@ enum BagSortOptions
     SORT_ALPHABETICALLY,
     SORT_BY_TYPE,
     SORT_BY_AMOUNT, //greatest->least
+    SORT_BY_INDEX,
 };
 enum ItemSortType
 {
@@ -2699,33 +2704,37 @@ static const u8 sText_SortItemsHow[] = _("Sort items how?");
 static const u8 sText_Name[] = _("name");
 static const u8 sText_Type[] = _("type");
 static const u8 sText_Amount[] = _("amount");
+static const u8 sText_Index[] = _("index");
 static const u8 sText_ItemsSorted[] = _("Items sorted by {STR_VAR_1}!");
 static const u8 *const sSortTypeStrings[] = 
 {
     [SORT_ALPHABETICALLY] = sText_Name,
     [SORT_BY_TYPE] = sText_Type,
     [SORT_BY_AMOUNT] = sText_Amount,
+    [SORT_BY_INDEX] = sText_Index,
 };
 
 static const u8 sBagMenuSortItems[] =
 {
-    ACTION_BY_NAME,
     ACTION_BY_TYPE,
+    ACTION_BY_NAME,
     ACTION_BY_AMOUNT,
     ACTION_CANCEL,
 };
 
 static const u8 sBagMenuSortKeyItems[] =
 {
+    ACTION_BY_INDEX,
     ACTION_BY_NAME,
+    ACTION_DUMMY,
     ACTION_CANCEL,
 };
 
 static const u8 sBagMenuSortPokeBallsBerries[] =
 {
+    ACTION_BY_INDEX,
     ACTION_BY_NAME,
     ACTION_BY_AMOUNT,
-    ACTION_DUMMY,
     ACTION_CANCEL,
 };
 
@@ -3235,6 +3244,12 @@ static void ItemMenu_SortByAmount(u8 taskId)
     StringCopy(gStringVar1, sSortTypeStrings[SORT_BY_AMOUNT]);
     gTasks[taskId].func = SortBagItems;
 }
+static void ItemMenu_SortByIndex(u8 taskId)
+{
+    gTasks[taskId].tSortType = SORT_BY_INDEX;
+    StringCopy(gStringVar1, sSortTypeStrings[SORT_BY_INDEX]);
+    gTasks[taskId].func = SortBagItems;
+}
 
 static void SortBagItems(u8 taskId)
 {
@@ -3349,6 +3364,24 @@ static void Merge(struct ItemSlot* array, u32 low, u32 mid, u32 high, s8 (*compa
     }
 }
 
+static s8 CompareItemsByIndex(struct ItemSlot* itemSlot1, struct ItemSlot* itemSlot2)
+{
+    u16 item1 = itemSlot1->itemId;
+    u16 item2 = itemSlot2->itemId;
+
+    if (item1 == ITEM_NONE)
+        return 1;
+    else if (item2 == ITEM_NONE)
+        return -1;
+
+    if (item1 > item2)
+        return 1;
+    else if (item1 < item2)
+        return -1;
+
+    return 0; //Will never be reached
+}
+
 static s8 CompareItemsAlphabetically(struct ItemSlot* itemSlot1, struct ItemSlot* itemSlot2)
 {
     u16 item1 = itemSlot1->itemId;
@@ -3412,5 +3445,5 @@ static s8 CompareItemsByType(struct ItemSlot* itemSlot1, struct ItemSlot* itemSl
     else if (type1 > type2)
         return 1;
 
-    return CompareItemsAlphabetically(itemSlot1, itemSlot2); //Items are of same type so sort alphabetically
+    return CompareItemsByIndex(itemSlot1, itemSlot2); //Items are of same type so sort by index
 }

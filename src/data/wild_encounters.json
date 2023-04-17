@@ -8666,8 +8666,8 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 10,
+                "min_level": 15,
+                "max_level": 20,
                 "species": "SPECIES_MAGIKARP"
               },
               {

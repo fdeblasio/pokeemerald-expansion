@@ -566,9 +566,11 @@ SlateportCity_EventScript_PowerTMClerk::
 
 	.align 2
 SlateportCity_Pokemart_PowerTMs:
-	.2byte ITEM_TM10  @ Hidden Power
+	.2byte ITEM_TM51  @ Roost
 	.2byte ITEM_TM54  @ False Swipe
+	.2byte ITEM_TM57  @ Charge Beam
 	.2byte ITEM_TM61  @ Will-o-Wisp
+	.2byte ITEM_TM62  @ Silver Wind
 	.2byte ITEM_TM73  @ Thunder Wave
 	.2byte ITEM_TM77  @ Psych Up
 	.2byte ITEM_NONE

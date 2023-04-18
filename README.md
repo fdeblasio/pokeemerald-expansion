@@ -121,7 +121,6 @@ sed -i 's/POKéDEX/Pokédex/g' */*.c */*.h */*.inc */*/*.c */*/*.h */*/*.inc */*
 - Stay on EVs/IVs when switching Pokemon
 - Make tutors multi-use and make sure there's no overlap with TMs (if there is, they could always just give them TM instead)
 - Battle Tent Pokemon/EVs?
-- TM Shop
 - Add Regigigas to Sealed Chamber?
 - Update other punches (Shadow/Dizzy/Needle Arm) to 75 BP?
 - New TM compatibility

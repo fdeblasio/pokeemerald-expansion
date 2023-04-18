@@ -218,7 +218,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GruntWeatherInst3[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntMuseum1[] = {
     {
     .iv = 0,
-    .lvl = 15,
+    .lvl = 19,
     .species = SPECIES_CARVANHA,
     }
 };
@@ -226,12 +226,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GruntMuseum1[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntMuseum2[] = {
     {
     .iv = 0,
-    .lvl = 14,
+    .lvl = 18,
     .species = SPECIES_ZUBAT,
     },
     {
     .iv = 0,
-    .lvl = 14,
+    .lvl = 18,
     .species = SPECIES_CARVANHA,
     }
 };

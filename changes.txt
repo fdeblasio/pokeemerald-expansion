@@ -18,7 +18,7 @@ Nidorina/Nidoqueen:
     Can now breed
 
 Golbat:
-    Now also evolves into Crobat at level 33
+    Can also evolve at level 33
 
 Rhyperior:
     Learns Rock Wrecker upon evolving
@@ -26,7 +26,7 @@ Rhyperior:
 Azurill:
     50/50 gender ratio
     Water/Fairy
-    Can also evolve into Marill at level 10
+    Can also evolve at level 10
     Catch rate is 255
 
 Marill:
@@ -55,3 +55,6 @@ Nincada/Ninjask/Shedinja:
 
 Whismur/Loudred/Exploud:
     Get Punk Rock as a second ability
+
+Budew:
+    Can also evolve at level 13

@@ -11,7 +11,7 @@ Moves:
 Pokemon:
 ALL:
     Movesets a combination of Gens 7-9
-        Typically this means they have their latest moveset plus any moves from their Gen 7 moveset that have been removed
+        Typically this means they have their latest moveset plus most moves from their Gen 7 moveset that have been removed
     Any other moveset changes will be noted
 
 Nidorina/Nidoqueen:

@@ -72,6 +72,7 @@ A Discord-based ROM hacking community that has many members who hack using the d
 ([A-Z])([A-Z\.é':]+)
 ([A-Z])([A-Z\.é'][A-Z\.é']+)
 (_\("[A-Z])([A-Z\.é':]+"\))
+(["\- ][A-Z])([A-Z][A-Zé']+)
 $1\L$2
 
 (_\("[A-Z])([A-Z\.é':]+)([ -][A-Z])([A-Z\.é':]+"\))
@@ -121,6 +122,13 @@ Improve fishing
 Debug menu improvements
 Stay on EVs/IVs when switching Pokemon
 Make tutors multi-use and make sure there's no overlap with TMs (if there is, they could always just give them TM instead)
+
+New TM compatibility
+Change Torment Sailor overworld sprite
+TM Shop
+Battle Tent Pokemon/EVs/Trainers?
+Route 110 encounters/learnsets
+Check Dock/Museum
 
 Maybe do one run-through of small updates and then add in new items/TMs in a second runthrough?
 

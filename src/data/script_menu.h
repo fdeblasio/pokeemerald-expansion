@@ -105,21 +105,21 @@ static const struct MenuAction MultichoiceList_LevelMode[] =
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q1[] =
 {
-    {gTrickHouse_Mechadoll_Oddish},
-    {gTrickHouse_Mechadoll_Poochyena},
     {gTrickHouse_Mechadoll_Taillow},
+    {gTrickHouse_Mechadoll_Poochyena},
+    {gTrickHouse_Mechadoll_Oddish},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q2[] =
 {
-    {gTrickHouse_Mechadoll_Azurill},
+    {gTrickHouse_Mechadoll_Hariyama},
     {gTrickHouse_Mechadoll_Lotad},
     {gTrickHouse_Mechadoll_Wingull},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q3[] =
 {
-    {gTrickHouse_Mechadoll_Dustox},
+    {gTrickHouse_Mechadoll_Wurmple},
     {gTrickHouse_Mechadoll_Zubat},
     {gTrickHouse_Mechadoll_Nincada},
 };
@@ -133,16 +133,16 @@ static const struct MenuAction MultichoiceList_Mechadoll2_Q1[] =
 
 static const struct MenuAction MultichoiceList_Mechadoll2_Q2[] =
 {
-    {gTrickHouse_Mechadoll_Poochyena2},
-    {gTrickHouse_Mechadoll_Shroomish},
     {gTrickHouse_Mechadoll_Zigzagoon2},
+    {gTrickHouse_Mechadoll_Shroomish},
+    {gTrickHouse_Mechadoll_Poochyena2},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll2_Q3[] =
 {
-    {gTrickHouse_Mechadoll_Poochyena3},
-    {gTrickHouse_Mechadoll_Zubat2},
     {gTrickHouse_Mechadoll_Carvanha},
+    {gTrickHouse_Mechadoll_Zubat2},
+    {gTrickHouse_Mechadoll_Poochyena3},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll3_Q1[] =

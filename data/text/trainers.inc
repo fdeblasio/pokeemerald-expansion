@@ -81,78 +81,78 @@ Route103_Text_DaisyPostBattle:
 	.string "healing that works with fragrances.$"
 
 Route103_Text_AmyIntro:
-	.string "AMY: I'm AMY.\n"
-	.string "And this is my little sister LIV.\l"
+	.string "Amy: I'm Amy.\n"
+	.string "And this is my little sister Liv.\l"
 	.string "We battle together!$"
 
 Route103_Text_AmyDefeated:
-	.string "AMY: Uh-oh, we lost.$"
+	.string "Amy: Uh-oh, we lost.$"
 
 Route103_Text_AmyPostBattle:
-	.string "AMY: You have to think about all\n"
+	.string "Amy: You have to think about all\n"
 	.string "kinds of things when you're battling\l"
 	.string "against two TrainerS.$"
 
 Route103_Text_AmyNotEnoughPokemon:
-	.string "AMY: Uh-oh, you have only one\n"
+	.string "Amy: Uh-oh, you have only one\n"
 	.string "Pokémon with you.\l"
 	.string "You can't battle us like that.$"
 
 Route103_Text_LivIntro:
-	.string "LIV: We battle together as one\n"
+	.string "Liv: We battle together as one\n"
 	.string "team.$"
 
 Route103_Text_LivDefeated:
-	.string "LIV: Oh, we lost, big sister…$"
+	.string "Liv: Oh, we lost, big sister…$"
 
 Route103_Text_LivPostBattle:
-	.string "LIV: We work perfectly together,\n"
+	.string "Liv: We work perfectly together,\n"
 	.string "me and my big sister…\p"
 	.string "But we still lost…$"
 
 Route103_Text_AmyLivRegister:
-	.string "LIV: Really, we're a lot better…\n"
+	.string "Liv: Really, we're a lot better…\n"
 	.string "It's true! We'll show you next time!$"
 
 Route103_Text_LivNotEnoughPokemon:
-	.string "LIV: If you want to battle us,\n"
+	.string "Liv: If you want to battle us,\n"
 	.string "you have to have two Pokémon!\l"
 	.string "It's not fair if you don't!$"
 
 Route103_Text_AmyRematchIntro:
-	.string "AMY: I'm AMY.\n"
-	.string "And this is my little sister LIV.\l"
+	.string "Amy: I'm Amy.\n"
+	.string "And this is my little sister Liv.\l"
 	.string "We battle together!$"
 
 Route103_Text_AmyRematchDefeated:
-	.string "AMY: Aww, boo!\n"
+	.string "Amy: Aww, boo!\n"
 	.string "We couldn't win again…$"
 
 Route103_Text_AmyRematchPostBattle:
-	.string "AMY: You have to think about all\n"
+	.string "Amy: You have to think about all\n"
 	.string "kinds of things when you're battling\l"
 	.string "against two TrainerS.$"
 
 Route103_Text_AmyRematchNotEnoughPokemon:
-	.string "AMY: Uh-oh, you have only one\n"
+	.string "Amy: Uh-oh, you have only one\n"
 	.string "Pokémon with you.\l"
 	.string "You can't battle us like that.$"
 
 Route103_Text_LivRematchIntro:
-	.string "LIV: We battle together as one\n"
+	.string "Liv: We battle together as one\n"
 	.string "team.$"
 
 Route103_Text_LivRematchDefeated:
-	.string "LIV: Awww, we lost again…\n"
+	.string "Liv: Awww, we lost again…\n"
 	.string "Big sister…$"
 
 Route103_Text_LivRematchPostBattle:
-	.string "LIV: We work perfectly together,\n"
+	.string "Liv: We work perfectly together,\n"
 	.string "me and my big sister…\p"
 	.string "But why did we lose again?$"
 
 Route103_Text_LivRematchNotEnoughPokemon:
-	.string "LIV: If you want to battle us, you\n"
+	.string "Liv: If you want to battle us, you\n"
 	.string "have to have two Pokémon!\l"
 	.string "It's not fair if you don't!$"
 
@@ -1129,7 +1129,7 @@ Route110_Text_EdwinPostBattle:
 	.string "my passion as a collector is ignited!$"
 
 Route110_Text_EdwinRegister:
-	.string "I like collecting MATCH CALL\n"
+	.string "I like collecting Match Call\n"
 	.string "registrations, too…$"
 
 Route110_Text_EdwinRematchIntro:
@@ -1166,7 +1166,7 @@ Route110_Text_IsabelDefeated:
 
 Route110_Text_IsabelPostBattle:
 	.string "Rather than battling, perhaps I should\n"
-	.string "show off my Pokémon at the FAN CLUB.$"
+	.string "show off my Pokémon at the Fan Club.$"
 
 Route110_Text_IsabelRegister:
 	.string "That wasn't close to what I could\n"
@@ -1198,7 +1198,7 @@ Route110_Text_TimmyPostBattle:
 	.string "just caught.$"
 
 Route110_Text_AlyssaIntro:
-	.string "I fell off CYCLING ROAD…\p"
+	.string "I fell off Cycling Road…\p"
 	.string "I'll get over my embarrassment by\n"
 	.string "battling with you!$"
 

@@ -120,6 +120,7 @@ Set proper time hours (instead of all AM being morning and all PM being night)
 Improve fishing
 Debug menu improvements
 Stay on EVs/IVs when switching Pokemon
+Make tutors multi-use and make sure there's no overlap with TMs (if there is, they could always just give them TM instead)
 
 Maybe do one run-through of small updates and then add in new items/TMs in a second runthrough?
 

@@ -23,6 +23,11 @@ Golbat:
 Rhyperior:
     Learns Rock Wrecker upon evolving
 
+Eevee:
+    Can also evolve into Espeon with a Sun Stone
+    Can also evolve into Umbreon with a Moon Stone
+    Can also evolve into Sylveon with a Dawn Stone
+
 Azurill:
     50/50 gender ratio
     Water/Fairy
@@ -39,6 +44,9 @@ Marill:
 Azumarill:
     Atk: 50->60
     Spe: 50->60
+
+Ursaring:
+    Can also evolve with a Moon Stone
 
 Wurmple:
     Learns Bug Bite at level 7

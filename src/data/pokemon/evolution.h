@@ -115,7 +115,9 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
                                        {EVO_ITEM, ITEM_WATER_STONE, SPECIES_VAPOREON},
                                        {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_FLAREON},
                                        {EVO_FRIENDSHIP_DAY, 0, SPECIES_ESPEON},
+                                       {EVO_ITEM, ITEM_SUN_STONE, SPECIES_ESPEON},
                                        {EVO_FRIENDSHIP_NIGHT, 0, SPECIES_UMBREON},
+                                       {EVO_ITEM, ITEM_MOON_STONE, SPECIES_UMBREON},
                                     #if P_GEN_4_POKEMON == TRUE
                                        {EVO_SPECIFIC_MAP, MAP_PETALBURG_WOODS, SPECIES_LEAFEON},
                                        {EVO_ITEM, ITEM_LEAF_STONE, SPECIES_LEAFEON},
@@ -124,6 +126,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
                                     #endif
                                     #if P_GEN_6_POKEMON == TRUE
                                        {EVO_MOVE_TYPE, TYPE_FAIRY, SPECIES_SYLVEON}
+                                       {EVO_ITEM, ITEM_DAWN_STONE, SPECIES_SYLVEON},
                                     #endif
                                        },
     [SPECIES_PORYGON]               = {{EVO_TRADE_ITEM, ITEM_UPGRADE, SPECIES_PORYGON2}},
@@ -619,6 +622,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
 #endif
 #if P_GEN_8_POKEMON == TRUE
     [SPECIES_SINISTEA_ANTIQUE]      = {{EVO_ITEM, ITEM_CHIPPED_POT, SPECIES_POLTEAGEIST_ANTIQUE}},
-    [SPECIES_URSARING]              = {{EVO_ITEM_NIGHT, ITEM_PEAT_BLOCK, SPECIES_URSALUNA}},
+    [SPECIES_URSARING]              = {{EVO_ITEM_NIGHT, ITEM_PEAT_BLOCK, SPECIES_URSALUNA},
+                                       {EVO_ITEM, ITEM_MOON_STONE, SPECIES_URSALUNA}},
 #endif
 };

@@ -4,37 +4,37 @@ gContestHallPaintingCaption::
 
 @ Unused
 gContestPaintingContest::
-	.string "CONTEST$"
+	.string "Contest$"
 
 gContestRankNormal::
-	.string "NORMAL RANK$"
+	.string "Normal Rank$"
 
 gContestRankSuper::
-	.string "SUPER RANK$"
+	.string "Super Rank$"
 
 gContestRankHyper::
-	.string "HYPER RANK$"
+	.string "Hyper Rank$"
 
 gContestRankMaster::
-	.string "MASTER RANK$"
+	.string "Master Rank$"
 
 gContestLink::
-	.string "LINK$"
+	.string "Link$"
 
 gContestCoolness::
-	.string "COOLNESS$"
+	.string "Coolness$"
 
 gContestBeauty::
-	.string "BEAUTY$"
+	.string "Beauty$"
 
 gContestCuteness::
-	.string "CUTENESS$"
+	.string "Cuteness$"
 
 gContestSmartness::
-	.string "SMARTNESS$"
+	.string "Smartness$"
 
 gContestToughness::
-	.string "TOUGHNESS$"
+	.string "Toughness$"
 
 gContestPaintingCool1::
 	.string "Nonstop supercool--\n"
@@ -57,7 +57,7 @@ gContestPaintingBeauty2::
 	.string "glittering smile$"
 
 gContestPaintingBeauty3::
-	.string "Pokémon CENTER's super idol--\n"
+	.string "Pokémon Center's super idol--\n"
 	.string "the incomparable {STR_VAR_1}$"
 
 gContestPaintingCute1::

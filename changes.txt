@@ -48,6 +48,9 @@ Azumarill:
 Ursaring:
     Can also evolve with a Moon Stone
 
+Slugma:
+    Now evolves at level 32
+
 Wurmple:
     Learns Bug Bite at level 7
     Evolution is based on time of day
@@ -66,3 +69,6 @@ Whismur/Loudred/Exploud:
 
 Budew:
     Can also evolve at level 13
+
+Budew/Roselia/Roserade:
+    75% female gender ratio

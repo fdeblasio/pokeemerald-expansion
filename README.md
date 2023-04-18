@@ -1,9 +1,5 @@
 # pokeemerald Expansion
 
-## What is the pokeemerald Expansion?
-
-The Pokeemerald Expansion is a collection of feature branches that can be integrated into existing [pokeemerald](https://github.com/pret/pokeemerald) projects.
-
 ## What features are included?
 - Upgraded battle engine.
     - Fairy Type.
@@ -24,17 +20,7 @@ Certain mechanics, moves, abilities and species sprites are missing. For more in
 
 ### [Documentation on features can be found here](https://github.com/rh-hideout/pokeemerald-expansion/wiki)
 
-## Who maintains the project?
-
-The project was originally started by DizzyEgg alongside other contributors.
-
-The project has now gotten larger and DizzyEgg is now maintaining the project as part of the ROM Hacking Hideout community. Some members of this community are taking on larger roles to help maintain the project.
-
 ### Please consider crediting the entire [list of contributors](https://github.com/rh-hideout/pokeemerald-expansion/wiki/Credits) in your project, as they have all worked hard to develop this project :)
-
-## Can I contribute even if I'm not a member of ROM Hacking Hideout?
-
-Yes! Contributions are welcome via Pull Requests and they will be reviewed by maintainers. Don't feel discouraged if we take a bit to review your PR, we'll get to it.
 
 ## What is ROM Hacking Hideout?
 
@@ -42,7 +28,6 @@ A Discord-based ROM hacking community that has many members who hack using the d
 
 [Click here to join the RHH Discord Server!](https://discord.gg/6CzjAG6GZk)
 
-FILL OUT
 ## Contributions/Acknowledgements
 - [pret's initial decompilation](https://github.com/pret/pokeemerald)
 - [RHH's Emerald Expansion](https://github.com/rh-hideout/pokeemerald-expansion)
@@ -90,6 +75,7 @@ FILL OUT
 $1\L$2
 
 (_\("[A-Z])([A-Z\.é':]+)([ -][A-Z])([A-Z\.é':]+"\))
+([A-Z])([A-Z\.é':]+)([ -][A-Z])([A-Z\.é':]+)
 $1\L$2$3\L$4
 
 (_\("[A-Z])([A-Z\.é':]+)([ -][A-Z])([A-Z\.é':]+)([ -][A-Z])([A-Z\.é':]+"\))

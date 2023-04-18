@@ -122,8 +122,6 @@ sed -i 's/POKéDEX/Pokédex/g' */*.c */*.h */*.inc */*/*.c */*/*.h */*/*.inc */*
 - Battle Tent Pokemon/EVs?
 - TM Shop
 - New TM compatibility
-Change Torment Sailor overworld sprite
-Check Dock/Museum
 
 Maybe do one run-through of small updates and then add in new items/TMs in a second runthrough?
 

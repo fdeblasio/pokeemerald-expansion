@@ -3315,7 +3315,7 @@ static const u8 sTM63Desc[] = _( // Todo
     "Dazzling Gleam");
 
 static const u8 sTM64Desc[] = _( // Todo
-    "Explosion");
+    "Seed Bomb");
 
 static const u8 sTM65Desc[] = _( // Todo
     "Shadow Claw");
@@ -3393,7 +3393,7 @@ static const u8 sTM89Desc[] = _( // Todo
     "U-turn");
 
 static const u8 sTM90Desc[] = _( // Todo
-    "Substitute");
+    "Body Slam");
 
 static const u8 sTM91Desc[] = _( // Todo
     "Flash Cannon");

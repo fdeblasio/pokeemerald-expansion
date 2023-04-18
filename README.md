@@ -122,6 +122,7 @@ sed -i 's/POKéDEX/Pokédex/g' */*.c */*.h */*.inc */*/*.c */*/*.h */*/*.inc */*
 - Battle Tent Pokemon/EVs?
 - TM Shop
 - Add Regigigas to Sealed Chamber?
+- Update other punches (Shadow/Dizzy/Needle Arm) to 75 BP?
 - New TM compatibility
 
 Maybe do one run-through of small updates and then add in new items/TMs in a second runthrough?

@@ -157,7 +157,7 @@ static void Task_ReturnToItemListAfterDecorationPurchase(u8 taskId);
 static void Task_HandleShopMenuBuy(u8 taskId);
 static void Task_HandleShopMenuSell(u8 taskId);
 static void BuyMenuPrintItemDescriptionAndShowItemIcon(s32 item, bool8 onInit, struct ListMenu *list);
-static void BuyMenuPrintPriceInList(u8 windowId, s32 itemId, u8 y, u8 itemPos);
+static void BuyMenuPrintPriceInList(u8 windowId, u32 itemId, u8 y, u8 itemPos);
 
 static const u16 sShopInventory_ZeroBadges[] = {
     ITEM_POKE_BALL,
@@ -863,7 +863,7 @@ bool8 GetSetItemBought(u8 storeId, u16 itemPos, u8 caseId)
     return FALSE;
 }
 
-static void BuyMenuPrintPriceInList(u8 windowId, s32 itemId, u8 y, u8 itemPos)
+static void BuyMenuPrintPriceInList(u8 windowId, u32 itemId, u8 y, u8 itemPos)
 {
     u8 x;
 

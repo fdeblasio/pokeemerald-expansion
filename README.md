@@ -121,6 +121,7 @@ sed -i 's/POKéDEX/Pokédex/g' */*.c */*.h */*.inc */*/*.c */*/*.h */*/*.inc */*
 - Make tutors multi-use and make sure there's no overlap with TMs (if there is, they could always just give them TM instead)
 - Battle Tent Pokemon/EVs?
 - TM Shop
+- Add Regigigas to Sealed Chamber?
 - New TM compatibility
 
 Maybe do one run-through of small updates and then add in new items/TMs in a second runthrough?

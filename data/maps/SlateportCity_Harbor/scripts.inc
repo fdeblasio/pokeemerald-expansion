@@ -444,7 +444,7 @@ SlateportCity_Harbor_Text_SubTooSmallForMe:
 	.string "the ocean floor exploration.\p"
 	.string "But the sub's too small for me.\p"
 	.string "If I squeezed in, there wouldn't be\n"
-	.string "any room for the CAPTAIN…$"
+	.string "any room for the Captain…$"
 
 SlateportCity_Harbor_Text_SameThugsTriedToRobAtMuseum:
 	.string "Capt. Stern: Those thugs…\p"

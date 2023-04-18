@@ -68,7 +68,7 @@ A Discord-based ROM hacking community that has many members who hack using the d
 - [paccy, ExpoSeed, surskitty, FieryMewtwo, Lunos for Infinite TM Usage](https://github.com/pret/pokeemerald/wiki/Infinite-TM-usage)
 - [hjk321 for extra save space](https://github.com/pret/pokeemerald/wiki/Extra-save-space-with-two-lines-of-code)
 
-## Notes
+## Find/Replace help
 ([A-Z])([A-Z\.é':]+)
 ([A-Z])([A-Z\.é'][A-Z\.é']+)
 (_\("[A-Z])([A-Z\.é':]+"\))
@@ -85,47 +85,43 @@ $1\L$2$3\L$4$5\L$6
 sed -i 's/POKéDEX/Pokédex/g' */*.c */*.h */*.inc */*/*.c */*/*.h */*/*.inc */*/*/*.h */*/*/*.inc
 
 ## TODO
-https://www.pokecommunity.com/showthread.php?t=416647&page=1
-https://github.com/pret/pokeemerald/wiki/Tutorials
-Add Meditite, Zangoose, Lunatone
-Pokemon (especially stone evos) get moves previous evolutions know
-Update movesets for new moves
-Reusable TMs
-Trade Item evolutions (https://github.com/pret/pokeemerald/wiki/Allow-All-Pokemon-to-Evolve-Without-Trading might have some extra effects needed)
-    Make Linking Cord available in shop
-    Lilycove: Turn one 4th floor clerk into all missing TMs, the other into evolution items
-Look at new animations for moves
-Easier move relearning
-Change Day/Night hours?
-Gallade Sharpness (maybe wait for master/upcoming update)
-Make Latios/Latias easier to catch/not roam?
-Incorporate new items/new methods of obtaining them (like how PP Ups are sold in Chansey Supply or Bottle Caps in Delibird)
-Add Farigiraf to Hoenn Dex once implemented
-Spruce up rematches
-    customAll Pokemon
-        Winston could have a shiny
-        Calvin could have a good Nature/EV
-        Leaders would have optimal Abilities/EVs/IVs/Natures)
-Winston's rich enough to buy TMs so his moveset should incorporate that once TMs are finalized
-    Gym Leader rematches should also utilize TMs
-Reorganize Hoenn Pokemon based on Dex number as opposed to index (level up learnsets DONE)
-Overworld sprites to match trainer sprites (for example, giving Youngsters yellow shirts and girl tubers a yellow tube)
-Make only one instance of each TM (https://pokemondb.net/pokebase/278398/which-tms-can-you-get-more-than-one-of-in-emerald; Lilycove ones can be configured with some shop tutorials; remove from Pickup)
-Expand bag
-Try to find Bolts foreground of Walda PC
-Implement Mega Evolution (Mega Manectric for Wattson rematches)
-Put EVs/IVs on one screen so less switching through stats?
-Maybe all Rich Boys/Ladies have shinies (would need to have different Pokemon from each other instead of all having Zigzagoon)
-Some MAN_2's maybe could be switched to DEVON_EMPLOYEE
-Set proper time hours (instead of all AM being morning and all PM being night)
-Improve fishing
-Debug menu improvements
-Stay on EVs/IVs when switching Pokemon
-Make tutors multi-use and make sure there's no overlap with TMs (if there is, they could always just give them TM instead)
-Battle Tent Pokemon/EVs?
-TM Shop
-
-New TM compatibility
+- https://www.pokecommunity.com/showthread.php?t=416647&page=1
+- https://github.com/pret/pokeemerald/wiki/Tutorials
+- Add Meditite, Zangoose, Lunatone
+- Trade Item evolutions (https://github.com/pret/pokeemerald/wiki/Allow-All-Pokemon-to-Evolve-Without-Trading might have some extra effects needed)
+    - Make Linking Cord available in shop
+    - Lilycove: Turn one 4th floor clerk into all missing TMs, the other into evolution items
+- Look at new animations for moves (in battle.h)
+- Change Day/Night hours?
+    - Set proper time hours (instead of all AM being morning and all PM being night)
+- Gallade Sharpness (maybe wait for master/upcoming update)
+- Make Latios/Latias easier to catch/not roam?
+    - Maybe get rid of roamers and add both Latis to the Island?
+- Incorporate new items/new methods of obtaining them (like how PP Ups are sold in Chansey Supply or Bottle Caps in Delibird)
+    - Lilycove
+- Add Farigiraf to Hoenn Dex once implemented
+- Spruce up rematches
+    - customAll Pokemon
+        - Winston could have a shiny
+        - Calvin could have a good Nature/EV
+        - Leaders would have optimal Abilities/EVs/IVs/Natures)
+    - Winston's rich enough to buy TMs so his moveset should incorporate that once TMs are finalized
+        - Gym Leader rematches should also utilize TMs
+- Reorganize Hoenn Pokemon based on Dex number as opposed to index (level up learnsets DONE)
+- Overworld sprites to match trainer sprites (for example, giving Youngsters yellow shirts and girl tubers a yellow tube)
+- Make only one instance of each TM (https://pokemondb.net/pokebase/278398/which-tms-can-you-get-more-than-one-of-in-emerald; Lilycove ones can be configured with some shop tutorials)
+- Expand bag
+- Try to find Bolts foreground of Walda PC
+- Implement Mega Evolution (Mega Manectric for Wattson rematches)
+- Maybe all Rich Boys/Ladies have shinies (would need to have different Pokemon from each other instead of all having Zigzagoon)
+- Some MAN_2's maybe could be switched to DEVON_EMPLOYEE
+- Improve fishing
+- Debug menu improvements
+- Stay on EVs/IVs when switching Pokemon
+- Make tutors multi-use and make sure there's no overlap with TMs (if there is, they could always just give them TM instead)
+- Battle Tent Pokemon/EVs?
+- TM Shop
+- New TM compatibility
 Change Torment Sailor overworld sprite
 Check Dock/Museum
 

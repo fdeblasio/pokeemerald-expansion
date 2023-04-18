@@ -359,7 +359,7 @@ SlateportCity_PokemonFanClub_Text_ThatsAllForInterview2:
 	.string "Bye-bye!$"
 
 gTVFanClubOpinionsText00::
-	.string "WE Are The Pokémon Fan Club!\p"
+	.string "We are the Pokémon Fan Club!\p"
 	.string "We're on the air!\p"
 	.string "On this program, we get your opinions,\n"
 	.string "and I shout them out on your behalf!\l"
@@ -428,7 +428,7 @@ gTVFanClubOpinionsText04::
 	.string "“{STR_VAR_3}!”$"
 
 gTVFanClubText00::
-	.string "WE Are The Pokémon Fan Club!\p"
+	.string "We are the Pokémon Fan Club!\p"
 	.string "We're on the air!\p"
 	.string "Today, we'll get rolling with the\n"
 	.string "Pokémon Survey Corner.\p"

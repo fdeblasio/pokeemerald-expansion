@@ -49,6 +49,7 @@ A Discord-based ROM hacking community that has many members who hack using the d
 - AsparagusEduardo
     - [Not showing dex entries until the Pokédex is received](https://github.com/pret/pokeemerald/wiki/Not-showing-dex-entries-until-getting-the-Pok%C3%A9dex)
     - [Having "Move Pokemon" as the first PC option](https://www.pokecommunity.com/showpost.php?p=10065761)
+    - [TM Shops](https://www.pokecommunity.com/showpost.php?p=10133566&postcount=55)
 - Jaizu
     - [Implementing the FRLG bag sound](https://www.pokecommunity.com/showpost.php?p=10205757)
     - [Implementing an auto-swapping naming screen](https://www.pokecommunity.com/showpost.php?p=10199896&postcount=139)
@@ -72,6 +73,7 @@ A Discord-based ROM hacking community that has many members who hack using the d
 ([A-Z])([A-Z\.é':]+)
 ([A-Z])([A-Z\.é'][A-Z\.é']+)
 (_\("[A-Z])([A-Z\.é':]+"\))
+(["\- ][A-Z])([A-Z][A-Zé']+)
 $1\L$2
 
 (_\("[A-Z])([A-Z\.é':]+)([ -][A-Z])([A-Z\.é':]+"\))
@@ -93,6 +95,7 @@ Reusable TMs
 Trade Item evolutions (https://github.com/pret/pokeemerald/wiki/Allow-All-Pokemon-to-Evolve-Without-Trading might have some extra effects needed)
     Make Linking Cord available in shop
     Lilycove: Turn one 4th floor clerk into all missing TMs, the other into evolution items
+        Can only sell 32 TMs per shop so may need to keep second shopkeeper
 Look at new animations for moves
 Easier move relearning
 Change Day/Night hours?

@@ -8606,17 +8606,17 @@ static const struct TrainerMonNoItemCustomMoves sParty_Mike1[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Mike2[] = {
     {
     .iv = 0,
-    .lvl = 16,
+    .lvl = 19,
     .species = SPECIES_WHISMUR,
     },
     {
     .iv = 0,
-    .lvl = 16,
+    .lvl = 19,
     .species = SPECIES_WHISMUR,
     },
     {
     .iv = 0,
-    .lvl = 16,
+    .lvl = 19,
     .species = SPECIES_WHISMUR,
     }
 };

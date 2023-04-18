@@ -108,6 +108,7 @@ sed -i 's/POKéDEX/Pokédex/g' */*.c */*.h */*.inc */*/*.c */*/*.h */*/*.inc */*
         - Leaders would have optimal Abilities/EVs/IVs/Natures)
     - Winston's rich enough to buy TMs so his moveset should incorporate that once TMs are finalized
         - Gym Leader rematches should also utilize TMs
+    - Breeders should have good IVs/Natures/Abilities
 - Reorganize Hoenn Pokemon based on Dex number as opposed to index (level up learnsets DONE)
 - Overworld sprites to match trainer sprites (for example, giving Youngsters yellow shirts and girl tubers a yellow tube)
 - Make only one instance of each TM (https://pokemondb.net/pokebase/278398/which-tms-can-you-get-more-than-one-of-in-emerald; Lilycove ones can be configured with some shop tutorials)

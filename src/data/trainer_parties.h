@@ -227,7 +227,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GruntMuseum2[] = {
     {
     .iv = 0,
     .lvl = 18,
-    .species = SPECIES_ZUBAT,
+    .species = SPECIES_MAGIKARP,
     },
     {
     .iv = 0,

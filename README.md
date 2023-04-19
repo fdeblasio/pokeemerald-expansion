@@ -65,8 +65,9 @@ A Discord-based ROM hacking community that has many members who hack using the d
 - [Anon822 for removing map popups for the same map section](https://www.pokecommunity.com/showpost.php?p=10449889)
 - [paccy for implementing Wall Clock editing](https://www.pokecommunity.com/showpost.php?p=10481737)
 - [Fyreeire for removing the extra save confirmation](https://github.com/pret/pokeemerald/wiki/Remove-the-extra-save-confirmation)
-- [paccy, ExpoSeed, surskitty, FieryMewtwo, Lunos for Infinite TM Usage](https://github.com/pret/pokeemerald/wiki/Infinite-TM-usage)
 - [hjk321 for extra save space](https://github.com/pret/pokeemerald/wiki/Extra-save-space-with-two-lines-of-code)
+- [ellabrella for increasing text speed beyond fast](https://www.pokecommunity.com/showpost.php?p=10400198)
+- [Mashanny for making text speed up without holding A/B](https://www.pokecommunity.com/showpost.php?p=10266385)
 
 ## Find/Replace help
 ([A-Z])([A-Z\.é':]+)

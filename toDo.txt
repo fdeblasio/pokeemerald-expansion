@@ -63,4 +63,3 @@ With binary hacks, some Pokemon had things hardcoded in their species spot (Nido
 ## TODO Tomorrow
 - Route 111
 - Improve fishing
-- Improve text speed

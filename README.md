@@ -110,7 +110,7 @@ sed -i 's/POKéDEX/Pokédex/g' */*.c */*.h */*.inc */*/*.c */*/*.h */*/*.inc */*
         - Gym Leader rematches should also utilize TMs
     - Breeders should have good IVs/Natures/Abilities
     - Triathlete would be Speed-focused (maybe endurance/HP too)
-- Overworld sprites to match trainer sprites (for example, giving Youngsters yellow shirts and girl tubers a yellow tube)
+- Overworld sprites to match trainer sprites (for example, giving Youngsters yellow shirts, girl tubers a yellow tube, and Rangers red clothes)
 - Make only one instance of each TM (https://pokemondb.net/pokebase/278398/which-tms-can-you-get-more-than-one-of-in-emerald; Lilycove ones can be configured with some shop tutorials)
 - Expand bag
 - Try to find Bolts foreground of Walda PC
@@ -137,7 +137,7 @@ With binary hacks, some Pokemon had things hardcoded in their species spot (Nido
 ## TODO Tomorrow
 - Mauville Gym
 - Find way to get both bikes?
-- Route 111 South/Winstrate
+- Winstrate
 - Trainer Hill
     Remove TMs as prizes
 - Route 118 West

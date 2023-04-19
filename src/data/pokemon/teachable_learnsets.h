@@ -28502,6 +28502,7 @@ static const u16 sZangooseTeachableLearnset[] = {
     MOVE_COUNTER,
     MOVE_CRUSH_CLAW,
     MOVE_CURSE,
+    MOVE_CUT,
     MOVE_DEFENSE_CURL,
     MOVE_DETECT,
     MOVE_DIG,

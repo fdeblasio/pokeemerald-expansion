@@ -23,6 +23,34 @@ Golbat:
 Rhyperior:
     Learns Rock Wrecker upon evolving
 
+Elekid:
+    Atk: 63->65
+    Def: 37->40
+    SpA: 65->70
+
+Electabuzz:
+    Atk: 83->85
+    Def: 57->60
+    SpA: 95->100
+
+Electivire:
+    Atk: 123->125
+    Def: 67->70
+    SpA: 95->100
+
+Magby:
+    Def: 37->40
+    Spe: 83->85
+
+Magmar:
+    Def: 57->60
+    Spe: 93->95
+
+Magmortar:
+    Atk: 95->100
+    Def: 67->70
+    Spe: 83->85
+
 Eevee:
     Can also evolve into Espeon with a Sun Stone
     Can also evolve into Umbreon with a Moon Stone
@@ -80,3 +108,13 @@ Budew:
 
 Budew/Roselia/Roserade:
     75% female gender ratio
+
+Zangoose:
+    Also in Human-Like Egg Group
+    HP: 73->75
+    Atk: 115->125
+    Spe: 90->100
+
+Seviper:
+    HP: 73->75
+    Spe: 65->75

@@ -110,7 +110,6 @@ sed -i 's/POKéDEX/Pokédex/g' */*.c */*.h */*.inc */*/*.c */*/*.h */*/*.inc */*
         - Gym Leader rematches should also utilize TMs
     - Breeders should have good IVs/Natures/Abilities
     - Triathlete would be Speed-focused (maybe endurance/HP too)
-- Reorganize Hoenn Pokemon based on Dex number as opposed to index (level up learnsets DONE)
 - Overworld sprites to match trainer sprites (for example, giving Youngsters yellow shirts and girl tubers a yellow tube)
 - Make only one instance of each TM (https://pokemondb.net/pokebase/278398/which-tms-can-you-get-more-than-one-of-in-emerald; Lilycove ones can be configured with some shop tutorials)
 - Expand bag

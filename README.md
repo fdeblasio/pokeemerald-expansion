@@ -127,6 +127,8 @@ sed -i 's/POKéDEX/Pokédex/g' */*.c */*.h */*.inc */*/*.c */*/*.h */*/*.inc */*
 - New TM compatibility
 - Edit friendship evolution methods
 - Make a Pokeball shop
+- Improve text speed
+- Get all the weird Mauville men at once?
 
 Maybe do one run-through of small updates and then add in new items/TMs in a second runthrough?
 
@@ -136,6 +138,5 @@ With binary hacks, some Pokemon had things hardcoded in their species spot (Nido
 
 ## TODO Tomorrow
 - Mauville Gym
-- Find way to get both bikes?
 - Route 118 West
     Move Good Rod to west side? Would need to go back and find all routes with water and update Good Rod encounters

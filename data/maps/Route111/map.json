@@ -495,7 +495,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
-      "script": "Route111_EventScript_Celina",
+      "script": "Route111_EventScript_Lily",
       "flag": "0"
     },
     {

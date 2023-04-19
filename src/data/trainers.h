@@ -8461,16 +8461,16 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Tyron),
     },
 
-    [TRAINER_CELINA] =
+    [TRAINER_LILY] =
     {
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
         .trainerPic = TRAINER_PIC_AROMA_LADY,
-        .trainerName = _("Celina"),
+        .trainerName = _("Lily"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Celina),
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Lily),
     },
 
     [TRAINER_BIANCA] =

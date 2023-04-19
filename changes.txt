@@ -116,6 +116,7 @@ Budew/Roselia/Roserade:
     75% female gender ratio
 
 Zangoose:
+    Can learn Cut
     Also in Human-Like Egg Group
     HP: 73->75
     Atk: 115->125

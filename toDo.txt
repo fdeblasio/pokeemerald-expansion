@@ -48,6 +48,7 @@
 - Improve text speed
 - Get all the weird Mauville men at once?
 - Wild Beldum in Victory Road or something
+- See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 
 
 - Maybe do one run-through of small updates and then add in new items/updated teams in a second runthrough?
@@ -59,4 +60,3 @@ With binary hacks, some Pokemon had things hardcoded in their species spot (Nido
 
 ## TODO Tomorrow
 - Route 111
-- Improve fishing

@@ -61,7 +61,7 @@ A Discord-based ROM hacking community that has many members who hack using the d
 - [Diego Mertens for adding the Move Relearner to the summary screen](https://www.pokecommunity.com/showpost.php?p=10470602)
 - [Hiroshi for making TMs unsellable](https://www.pokecommunity.com/showpost.php?p=10209376)
 - [Flametix for fixing the RESET_FONT bug](https://github.com/pret/pokeemerald/wiki/Implement-Missing-Text-Function-RESET_FONT)
-- [voloved for removing Use on Key Items with no field use](https://github.com/pret/pokeemerald/wiki/Make-Key-Items-That-Cannot-Be-Used-In-The-Field-Not-Show-A-Use-or-Register-Option)
+- [devolov for removing Use on Key Items with no field use](https://github.com/pret/pokeemerald/wiki/Make-Key-Items-That-Cannot-Be-Used-In-The-Field-Not-Show-A-Use-or-Register-Option)
 - [Anon822 for removing map popups for the same map section](https://www.pokecommunity.com/showpost.php?p=10449889)
 - [paccy for implementing Wall Clock editing](https://www.pokecommunity.com/showpost.php?p=10481737)
 - [Fyreeire for removing the extra save confirmation](https://github.com/pret/pokeemerald/wiki/Remove-the-extra-save-confirmation)

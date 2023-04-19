@@ -230,10 +230,10 @@ MauvilleCity_BikeShop_Text_WantToChatBikes:
 	.string "Bikes?$"
 
 MauvilleCity_BikeShop_Text_GotAcro:
-	.string "Here's an Acro Bike!$"
+	.string "Rydel: Here's an Acro Bike!$"
 
 MauvilleCity_BikeShop_Text_GotMach:
-	.string "Here's a Mach Bike!$"
+	.string "Rydel: Here's a Mach Bike!$"
 
 MauvilleCity_BikeShop_Text_OhYourBikeIsInPC:
 	.string "Oh? What happened to that Bike\n"

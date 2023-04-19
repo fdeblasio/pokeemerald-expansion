@@ -137,8 +137,5 @@ With binary hacks, some Pokemon had things hardcoded in their species spot (Nido
 ## TODO Tomorrow
 - Mauville Gym
 - Find way to get both bikes?
-- Winstrate
-- Trainer Hill
-    Remove TMs as prizes
 - Route 118 West
     Move Good Rod to west side? Would need to go back and find all routes with water and update Good Rod encounters

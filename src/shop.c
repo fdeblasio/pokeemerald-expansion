@@ -1292,7 +1292,7 @@ static void Task_BuyMenu(u8 taskId)
                     }
                     else
                     {
-                        BuyMenuDisplayMessage(taskId, gText_SorryWereOutOfThis, BuyMenuReturnToItemList);
+                        BuyMenuDisplayMessage(taskId, gText_ThatItemIsSoldOut, BuyMenuReturnToItemList);
                     }
                 }
                 else

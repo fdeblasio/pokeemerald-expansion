@@ -1026,7 +1026,9 @@ s16 GetPlayerSpeed(void)
 
     if (gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_MACH_BIKE)
         return machSpeeds[gPlayerAvatar.bikeFrameCounter];
-    else if (gPlayerAvatar.flags & (PLAYER_AVATAR_FLAG_SURFING | PLAYER_AVATAR_FLAG_ACRO_BIKE))
+    else if (gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_SURFING)
+        return PLAYER_SPEED_FASTEST;
+    else if (gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_ACRO_BIKE)
         return PLAYER_SPEED_FASTER;
     else if (gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_DASH)
         return PLAYER_SPEED_FAST;

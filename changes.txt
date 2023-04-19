@@ -17,6 +17,9 @@ ALL:
 Nidorina/Nidoqueen:
     Can now breed
 
+Pikachu/Raichu:
+    Learn Volt Tackle at level 1
+
 Golbat:
     Can also evolve at level 33
 

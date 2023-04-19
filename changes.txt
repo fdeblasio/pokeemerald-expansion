@@ -67,6 +67,14 @@ Nincada/Ninjask/Shedinja:
 Whismur/Loudred/Exploud:
     Get Punk Rock as a second ability
 
+Volbeat:
+    Atk: 73->75
+    SpA: 47->75
+
+Illumise:
+    Atk: 47->75
+    SpA: 73->75
+
 Budew:
     Can also evolve at level 13
 

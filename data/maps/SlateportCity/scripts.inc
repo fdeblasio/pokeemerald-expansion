@@ -559,7 +559,7 @@ SlateportCity_EventScript_PowerTMClerk::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemart SlateportCity_Pokemart_PowerTMs, 1
+	pokemart SlateportCity_Pokemart_PowerTMs
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end

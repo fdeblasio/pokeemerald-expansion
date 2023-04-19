@@ -49,7 +49,6 @@ A Discord-based ROM hacking community that has many members who hack using the d
 - AsparagusEduardo
     - [Not showing dex entries until the Pokédex is received](https://github.com/pret/pokeemerald/wiki/Not-showing-dex-entries-until-getting-the-Pok%C3%A9dex)
     - [Having "Move Pokemon" as the first PC option](https://www.pokecommunity.com/showpost.php?p=10065761)
-    - [TM Shops](https://www.pokecommunity.com/showpost.php?p=10133566&postcount=55)
 - Jaizu
     - [Implementing the FRLG bag sound](https://www.pokecommunity.com/showpost.php?p=10205757)
     - [Implementing an auto-swapping naming screen](https://www.pokecommunity.com/showpost.php?p=10199896&postcount=139)
@@ -130,7 +129,9 @@ sed -i 's/POKéDEX/Pokédex/g' */*.c */*.h */*.inc */*/*.c */*/*.h */*/*.inc */*
 - Improve text speed
 - Get all the weird Mauville men at once?
 
-Maybe do one run-through of small updates and then add in new items/TMs in a second runthrough?
+
+- Maybe do one run-through of small updates and then add in new items/updated teams in a second runthrough?
+    - When doing new savefile, remove `u32 tmShopFlags[4];` from include/global.h
 
 ## Future Hacks
 Once this base is done, potential hacks that can be built on top of it

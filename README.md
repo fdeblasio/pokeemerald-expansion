@@ -139,4 +139,5 @@ Once this base is done, potential hacks that can be built on top of it
 With binary hacks, some Pokemon had things hardcoded in their species spot (Nidorans' gender not showing up if it wasn't nicknamed, Unown's forms, Shedinja having 1 HP, Spinda's spots). Now that the code is editable, potentially mess around with some of it. Like a hack where the starter is Shedinja at catching is disabled (disable shinies!) but even though Shedinja still has a base 1 stat, it'll do the normal stat calculation
 
 ## TODO Tomorrow
-- Mauville Gym
+- Rock Smash encounters
+- Route 111

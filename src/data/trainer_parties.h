@@ -3689,25 +3689,25 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Jerry1[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Ted[] = {
     {
     .iv = 10,
-    .lvl = 17,
-    .species = SPECIES_RALTS,
+    .lvl = 21,
+    .species = SPECIES_KADABRA,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Paul[] = {
     {
     .iv = 10,
-    .lvl = 15,
+    .lvl = 19,
     .species = SPECIES_NUMEL,
     },
     {
     .iv = 10,
-    .lvl = 15,
+    .lvl = 19,
     .species = SPECIES_ODDISH,
     },
     {
     .iv = 10,
-    .lvl = 15,
+    .lvl = 19,
     .species = SPECIES_WINGULL,
     }
 };
@@ -3790,12 +3790,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Karen1[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Georgia[] = {
     {
     .iv = 10,
-    .lvl = 16,
+    .lvl = 20,
     .species = SPECIES_SHROOMISH,
     },
     {
     .iv = 10,
-    .lvl = 16,
+    .lvl = 20,
     .species = SPECIES_BEAUTIFLY,
     }
 };

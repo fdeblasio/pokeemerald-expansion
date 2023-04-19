@@ -3,6 +3,7 @@ Moves:
     Volt Tackle has a 30% chance to paralyze and no longer causes recoil
     Given 100 accuracy:
         Cut
+        Metal Claw
         Submission
         Play Rough
         Sky Uppercut
@@ -104,6 +105,9 @@ Nincada/Ninjask/Shedinja:
 Whismur/Loudred/Exploud:
     Get Punk Rock as a second ability
 
+Mawile:
+    Can learn Metal Claw and Smart Strike by level up
+
 Volbeat:
     Atk: 73->75
     SpA: 47->75
@@ -119,7 +123,7 @@ Budew/Roselia/Roserade:
     75% female gender ratio
 
 Zangoose:
-    Can learn Cut
+    Can learn Cut by HM
     Also in Human-Like Egg Group
     HP: 73->75
     Atk: 115->125

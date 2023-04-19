@@ -11,6 +11,25 @@ VerdanturfTown_Mart_EventScript_Clerk::
 	release
 	end
 
+VerdanturfTown_Mart_EventScript_ClerkBalls::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart VerdanturfTown_Mart_Pokemart_Balls
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+VerdanturfTown_Mart_Pokemart_Balls:
+	.2byte ITEM_HEAL_BALL
+	.2byte ITEM_NEST_BALL
+	.2byte ITEM_LUXURY_BALL
+	.2byte ITEM_NONE
+	release
+	end
+
 VerdanturfTown_Mart_EventScript_Boy::
 	msgbox VerdanturfTown_Mart_Text_XSpecialIsCrucial, MSGBOX_NPC
 	end

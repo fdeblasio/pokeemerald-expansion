@@ -3598,6 +3598,7 @@ static const struct TrainerMonItemCustomMoves sParty_Winona1[] = {
 };
 
 //Grumpig, Chimecho
+//Give out Psychic now
 static const struct TrainerMonItemCustomMoves sParty_TateAndLiza1[] = {
     {
     .iv = 250,

@@ -566,6 +566,7 @@ SlateportCity_EventScript_PowerTMClerk::
 
 	.align 2
 SlateportCity_Pokemart_PowerTMs:
+	.2byte ITEM_TM04  @ Calm Mind
 	.2byte ITEM_TM51  @ Roost
 	.2byte ITEM_TM54  @ False Swipe
 	.2byte ITEM_TM57  @ Charge Beam

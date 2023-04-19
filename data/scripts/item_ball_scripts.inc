@@ -610,8 +610,8 @@ VictoryRoad_1F_EventScript_ItemPPUp::
 	finditem ITEM_PP_UP
 	end
 
-VictoryRoad_B1F_EventScript_ItemTM29::
-	finditem ITEM_TM29
+VictoryRoad_B1F_EventScript_ItemTM52::
+	finditem ITEM_TM52
 	end
 
 VictoryRoad_B1F_EventScript_ItemFullRestore::

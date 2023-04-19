@@ -188,7 +188,7 @@
 #define FLAG_RECEIVED_TM50                   0xA8
 #define FLAG_RECEIVED_TM42                   0xA9
 #define FLAG_RECEIVED_TM40                   0xAA
-#define FLAG_RECEIVED_TM04                   0xAB
+#define FLAG_RECEIVED_TM29                   0xAB
 #define FLAG_RECEIVED_TM03                   0xAC
 #define FLAG_HIDE_SECRET_BASE_TRAINER        0xAD
 #define FLAG_DECORATION_1                    0xAE
@@ -1131,7 +1131,7 @@
 #define FLAG_ITEM_SHOAL_CAVE_STAIRS_ROOM_ICE_HEAL                   0x43B
 #define FLAG_ITEM_VICTORY_ROAD_1F_MAX_ELIXIR                        0x43C
 #define FLAG_ITEM_VICTORY_ROAD_1F_PP_UP                             0x43D
-#define FLAG_ITEM_VICTORY_ROAD_B1F_TM29                             0x43E
+#define FLAG_ITEM_VICTORY_ROAD_B1F_TM52                             0x43E
 #define FLAG_ITEM_VICTORY_ROAD_B1F_FULL_RESTORE                     0x43F
 #define FLAG_ITEM_VICTORY_ROAD_B2F_FULL_HEAL                        0x440
 #define FLAG_ITEM_MT_PYRE_6F_TM30                                   0x441

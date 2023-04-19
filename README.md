@@ -109,6 +109,7 @@ sed -i 's/POKéDEX/Pokédex/g' */*.c */*.h */*.inc */*/*.c */*/*.h */*/*.inc */*
         - Gym Leader rematches should also utilize TMs
     - Breeders should have good IVs/Natures/Abilities
     - Triathlete would be Speed-focused (maybe endurance/HP too)
+    - Winstrates (including Victor) should have EVs due to the mom mentioning using the Macho Brace
 - Overworld sprites to match trainer sprites (for example, giving Youngsters yellow shirts, girl tubers a yellow tube, and Rangers red clothes)
 - Make only one instance of each TM (https://pokemondb.net/pokebase/278398/which-tms-can-you-get-more-than-one-of-in-emerald; Lilycove ones can be configured with some shop tutorials)
 - Expand bag

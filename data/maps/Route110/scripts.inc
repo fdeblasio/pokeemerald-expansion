@@ -955,12 +955,12 @@ Route110_Text_TrickHouseSign:
 	.string "to reach the wondrous Trick House.”$"
 
 Route110_Text_BestRecord:
-	.string "The Best Record TO Date…\p"
+	.string "The Best Record to Date…\p"
 	.string "No. of collisions: {STR_VAR_1}\p"
 	.string "Elapsed time: {STR_VAR_2}$"
 
 Route110_Text_ThereIsNoRecord:
-	.string "The Best Record TO Date…\p"
+	.string "The Best Record to Date…\p"
 	.string "No one seems to have taken the\n"
 	.string "challenge. There is no record…$"
 

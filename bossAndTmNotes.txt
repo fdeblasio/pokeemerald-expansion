@@ -1,0 +1,149 @@
+Roxanne:    12, 12, 15
+Brawly:     16, 16, 19
+Rival 110:  18, 18, 20
+Wattson:    20, 22, 22, 24
+Maxie:      24, 24, 25              25, 25, 27
+Flannery:   24, 24, 26, 29
+Norman:     27, 27, 29, 31          27, 27, 30, 32
+Shelly:     28, 28
+Rival 119:  29, 29, 31              32, 32, 32, 33
+Winona:     29, 29, 30, 31, 33      30, 30, 32, 33, 35
+Maxie:      37, 38, 39
+Rival Cove: 31, 32, 32, 34          ??, ??, ??, ??, 36+
+Matt:       34, 34
+Tate/Liza:  41, 41, 42, 42
+Maxie/Tab:  36, 38, 40/42, 43, 44
+Archie:     41, 41, 43
+Regis:      40
+Juan:       41, 41, 43, 43, 46
+Rayquaza:   70
+Wally:      41, 43, 44, 44, 45
+Sidney:     46, 46, 48, 48, 49
+Phoebe:     48, 49, 49, 50, 51
+Glacia:     50, 50, 52, 52, 53
+Drake:      52, 53, 53, 54, 55
+Wallace:    55, 56, 56, 56, 57, 58
+Latis:      40
+Groud/Kyog: 70
+Steven:     75, 76, 76, 76, 77, 78
+
+55 (new/returning 2), 57 (returning 1), 60 (signature) 4+
+60 (new/returning 2), 63 (returning 1), 65 (signature) 5+
+65 (new/returning 2), 67 (returning 1), 70 (signature)
+70 (new/returning 2), 73 (returning 1), 75 (signature) 6
+
+
+TM01_FOCUS_PUNCH - Route 115
+TM02_DRAGON_CLAW - Meteor Falls
+TM03_WATER_PULSE - Juan
+TM04_CALM_MIND - Slateport TM Shop
+TM05_ROAR - Route 114
+TM06_TOXIC - Fiery Path (swap with Flamethrower. Put in TM Shop 2?)
+TM07_HAIL - Shoal Cave
+TM08_BULK_UP - Brawly
+TM09_BULLET_SEED - Route 104
+TM10_HIDDEN_POWER - Fortree
+TM11_SUNNY_DAY - Scorched Slab
+TM12_TAUNT - Trick House
+TM13_ICE_BEAM - Abandonded Ship
+TM14_BLIZZARD - Lilycove Department Store
+TM15_HYPER_BEAM - Lilycove Department Store
+TM16_LIGHT_SCREEN - Lilycove Department Store
+TM17_PROTECT - Lilycove Department Store
+TM18_RAIN_DANCE - Abandonded Ship
+TM19_GIGA_DRAIN - Route 123
+TM20_SAFEGUARD - Lilycove Department Store
+TM21_FRUSTRATION - Pacifidlog
+TM22_SOLAR_BEAM - Safari Zone
+TM23_IRON_TAIL - Meteor Falls
+TM24_THUNDERBOLT - Mauville
+TM25_THUNDER - Lilycove Department Store
+TM26_EARTHQUAKE - Seafloor Cavern
+TM27_RETURN - Fallarbor; Pacifidlog (REMOVE ONE)
+TM28_DIG - Route 114
+TM29_PSYCHIC - Tate/Liza
+TM30_SHADOW_BALL - Mt. Pyre
+TM31_BRICK_BREAK - Sootopolis
+TM32_DOUBLE_TEAM - Route 113
+TM33_REFLECT - Lilycove Department Store
+TM34_SHOCK_WAVE - Wattson
+TM35_FLAMETHROWER - (swap with Toxic)
+TM36_SLUDGE_BOMB - Dewford
+TM37_SANDSTORM - Route 111
+TM38_FIRE_BLAST - Lilycove Department Store
+TM39_ROCK_TOMB - Roxanne
+TM40_AERIAL_ACE - Winona
+TM41_TORMENT - Slateport
+TM42_FACADE - Norman
+TM43_SECRET_POWER - Route 111
+TM44_REST - Lilycove
+TM45_ATTRACT - Verdanturf
+TM46_THIEF - Slateport
+TM47_STEEL_WING - Granite Cave
+TM48_SKILL_SWAP - Mt. Pyre
+TM49_SNATCH - SS Tidal
+TM50_OVERHEAT - Flannery
+
+Lilycove Department - 8
+Slateport TM - 8
+TM Shop 2 - 9
+  (Including Toxic)
+  Either replaces Mauville Game Corner TMs or is in Lavaridge
+
+TM51_ROOST - Slateport TM Shop
+TM52_FOCUS_BLAST - Victory Road
+TM53_ENERGY_BALL
+TM54_FALSE_SWIPE - Slateport TM Shop
+TM55_BRINE - TM Shop 2
+TM56_SIGNAL_BEAM
+TM57_CHARGE_BEAM - Slateport TM Shop
+TM58_PSYCHIC_FANGS
+TM59_DRAGON_PULSE
+TM60_DRAIN_PUNCH
+TM61_WILL_O_WISP - Slateport TM Shop
+TM62_SILVER_WIND - Slateport TM Shop
+TM63_DAZZLING_GLEAM
+TM64_SEED_BOMB
+TM65_SHADOW_CLAW
+TM66_PAYBACK - TM Shop 2
+TM67_POWER_GEM
+TM68_GIGA_IMPACT
+TM69_PLAY_ROUGH
+TM70_LEECH_LIFE
+TM71_STONE_EDGE
+TM72_AVALANCHE - TM Shop 2
+TM73_THUNDER_WAVE - Slateport TM Shop/(Replace Battle Frontier Tutor) 
+TM74_GYRO_BALL - TM Shop 2
+TM75_SWORDS_DANCE - (Replace Battle Frontier Tutor) 
+TM76_STEALTH_ROCK - TM Shop 2
+TM77_PSYCH_UP - Slateport TM Shop/(Replace Battle Frontier Tutor) 
+TM78_CRUNCH
+TM79_DARK_PULSE
+TM80_ROCK_SLIDE - (Replace Battle Frontier Tutor) 
+TM81_X_SCISSOR
+TM82_NIGHT_SLASH
+TM83_IRON_HEAD
+TM84_POISON_JAB
+TM85_AURA_SPHERE
+TM86_GRASS_KNOT - TM Shop 2
+TM87_BUG_BUZZ
+TM88_ACROBATICS
+TM89_U_TURN - TM Shop 2
+TM90_BODY_SLAM - (Replace Battle Frontier Tutor) 
+TM91_FLASH_CANNON
+TM92_TRICK_ROOM - TM Shop 2
+TM93_LIQUIDATION
+TM94_THUNDER_PUNCH - (Replace Battle Frontier Tutor) 
+TM95_FIRE_PUNCH - (Replace Battle Frontier Tutor) 
+TM96_ICE_PUNCH - (Replace Battle Frontier Tutor) 
+TM97_EARTH_POWER
+TM98_AIR_SLASH
+TM99_BODY_PRESS
+TM100_MOONBLAST
+
+Move Tutor Replacements: 8
+  4 Terrain moves (give to Tapus)
+  Scorching Sands
+  Dual Wingbeat
+  Flip Turn
+  Knock Off?

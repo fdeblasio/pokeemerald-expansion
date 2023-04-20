@@ -16,7 +16,7 @@
 - Incorporate new items/new methods of obtaining them (like how PP Ups are sold in Chansey Supply or Bottle Caps in Delibird)
     - Lilycove
 - Add Farigiraf to Hoenn Dex once implemented
-- Spruce up rematches
+- Spruce up battles/rematches
     - customAll Pokemon
         - Winston could have a shiny
         - Calvin could have a good Nature/EV
@@ -26,6 +26,7 @@
     - Breeders should have good IVs/Natures/Abilities
     - Triathlete would be Speed-focused (maybe endurance/HP too)
     - Winstrates (including Victor) should have EVs due to the mom mentioning using the Macho Brace
+    - Tori and Tia should have Spindas that aren't identical
 - Overworld sprites to match trainer sprites (for example, giving Youngsters yellow shirts, girl tubers a yellow tube, and Rangers red clothes)
 - Make only one instance of each TM (https://pokemondb.net/pokebase/278398/which-tms-can-you-get-more-than-one-of-in-emerald; Lilycove ones can be configured with some shop tutorials)
 - Expand bag
@@ -45,12 +46,12 @@
 - New TM compatibility
 - Edit friendship evolution methods
 - Make a Pokeball shop
-- Improve text speed
+- Calculate Electro Ball more similarly to Gyro Ball?
 - Get all the weird Mauville men at once?
 - Wild Beldum in Victory Road or something
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Figure out if it's possible to select multiple Pokemon when moving to or from party
-- Add in Courtney
+- Add in Courtney (Mossdeep?)
 
 
 - Maybe do one run-through of small updates and then add in new items/updated teams in a second runthrough?

@@ -132,3 +132,9 @@ Zangoose:
 Seviper:
     HP: 73->75
     Spe: 65->75
+
+Lunatone:
+    Learns Icy Wind by level up
+
+Solrock:
+    Learns Power Gem by level up

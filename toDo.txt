@@ -53,6 +53,7 @@
 - Figure out if it's possible to select multiple Pokemon when moving to or from party
 - Add in Courtney (Mossdeep?)
 - Sell Net and Dive Balls at Mossdeep
+- Implement Deoxys encounter at island/changing forms at Fallarbor
 
 
 - Maybe do one run-through of small updates and then add in new items/updated teams in a second runthrough?
@@ -65,5 +66,4 @@ With binary hacks, some Pokemon had things hardcoded in their species spot (Nido
 ## TODO Tomorrow
 - Fallarbor
     - Replace Return?
-    - Replace Move Tutor?
 - Cable Car Hiker

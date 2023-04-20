@@ -2641,7 +2641,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Beau[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Larry[] = {
     {
     .iv = 0,
-    .lvl = 18,
+    .lvl = 22,
     .species = SPECIES_NUZLEAF,
     }
 };
@@ -6289,12 +6289,12 @@ static const struct TrainerMonNoItemCustomMoves sParty_Becky[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Carol[] = {
     {
     .iv = 0,
-    .lvl = 17,
+    .lvl = 21,
     .species = SPECIES_TAILLOW,
     },
     {
     .iv = 0,
-    .lvl = 17,
+    .lvl = 21,
     .species = SPECIES_LOMBRE,
     }
 };
@@ -8566,12 +8566,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_James5[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Brice[] = {
     {
     .iv = 0,
-    .lvl = 17,
+    .lvl = 21,
     .species = SPECIES_NUMEL,
     },
     {
     .iv = 0,
-    .lvl = 17,
+    .lvl = 21,
     .species = SPECIES_MACHOP,
     }
 };
@@ -8579,17 +8579,17 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Brice[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Trent1[] = {
     {
     .iv = 0,
-    .lvl = 16,
+    .lvl = 20,
     .species = SPECIES_GEODUDE,
     },
     {
     .iv = 0,
-    .lvl = 17,
+    .lvl = 20,
     .species = SPECIES_GEODUDE,
     },
     {
     .iv = 0,
-    .lvl = 16,
+    .lvl = 20,
     .species = SPECIES_GEODUDE,
     }
 };
@@ -8719,7 +8719,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Trent2[] = {
     },
     {
     .iv = 10,
-    .lvl = 24,
+    .lvl = 25,
     .species = SPECIES_GRAVELER,
     }
 };
@@ -8727,22 +8727,22 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Trent2[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Trent3[] = {
     {
     .iv = 20,
-    .lvl = 27,
-    .species = SPECIES_GEODUDE,
-    },
-    {
-    .iv = 20,
-    .lvl = 27,
-    .species = SPECIES_GEODUDE,
-    },
-    {
-    .iv = 20,
-    .lvl = 27,
+    .lvl = 30,
     .species = SPECIES_GRAVELER,
     },
     {
     .iv = 20,
-    .lvl = 27,
+    .lvl = 30,
+    .species = SPECIES_GRAVELER,
+    },
+    {
+    .iv = 20,
+    .lvl = 30,
+    .species = SPECIES_GRAVELER,
+    },
+    {
+    .iv = 20,
+    .lvl = 30,
     .species = SPECIES_GRAVELER,
     }
 };
@@ -8750,45 +8750,45 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Trent3[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Trent4[] = {
     {
     .iv = 30,
-    .lvl = 30,
-    .species = SPECIES_GEODUDE,
-    },
-    {
-    .iv = 30,
-    .lvl = 30,
+    .lvl = 35,
     .species = SPECIES_GRAVELER,
     },
     {
     .iv = 30,
-    .lvl = 30,
+    .lvl = 35,
     .species = SPECIES_GRAVELER,
     },
     {
     .iv = 30,
-    .lvl = 30,
+    .lvl = 35,
     .species = SPECIES_GRAVELER,
+    },
+    {
+    .iv = 30,
+    .lvl = 35,
+    .species = SPECIES_GOLEM,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Trent5[] = {
     {
     .iv = 40,
-    .lvl = 33,
-    .species = SPECIES_GRAVELER,
+    .lvl = 40,
+    .species = SPECIES_GOLEM,
     },
     {
     .iv = 40,
-    .lvl = 33,
-    .species = SPECIES_GRAVELER,
+    .lvl = 40,
+    .species = SPECIES_GOLEM,
     },
     {
     .iv = 40,
-    .lvl = 33,
-    .species = SPECIES_GRAVELER,
+    .lvl = 40,
+    .species = SPECIES_GOLEM,
     },
     {
     .iv = 40,
-    .lvl = 33,
+    .lvl = 40,
     .species = SPECIES_GOLEM,
     }
 };

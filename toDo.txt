@@ -54,6 +54,7 @@
 - Add in Courtney (Mossdeep?)
 - Sell Net and Dive Balls at Mossdeep
 - Implement Deoxys encounter at island/changing forms at Fallarbor
+- Replace Regis with their doll sprites since they look more like them?
 
 
 - Maybe do one run-through of small updates and then add in new items/updated teams in a second runthrough?

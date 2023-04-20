@@ -670,9 +670,9 @@ Route111_Text_OldLadysRestStopSign:
 Route111_Text_TrainerTipsSpAtkSpDef:
 	.string "Trainer Tips:\p"
 	.string "One of the indicators of a Pokémon's\n"
-	.string "powerfulness is SP. Atk. It stands for\l"
+	.string "powerfulness is Sp. Atk. It stands for\l"
 	.string "“Special Attack.”\p"
-	.string "Likewise, SP. Def stands for “Special\n"
+	.string "Likewise, Sp. Def stands for “Special\n"
 	.string "Defense.”$"
 
 Route111_Text_ShouldBeMirageTowerAroundHere:

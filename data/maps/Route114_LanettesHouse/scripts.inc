@@ -52,7 +52,7 @@ Route114_LanettesHouse_Text_EverythingClutteredKeepThis:
 	.string "When I get engrossed in research,\l"
 	.string "things end up this way…\p"
 	.string "This is embarrassing… Please keep\n"
-	.string "these a secret in exchange for this.$"
+	.string "this a secret in exchange for these.$"
 
 Route114_LanettesHouse_Text_OrganizeYourBoxes:
 	.string "May I offer advice about my Pokémon\n"

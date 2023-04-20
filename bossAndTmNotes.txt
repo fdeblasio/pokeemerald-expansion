@@ -40,7 +40,7 @@ TM02_DRAGON_CLAW - Meteor Falls
 TM03_WATER_PULSE - Juan
 TM04_CALM_MIND - Slateport TM Shop
 TM05_ROAR - Route 114
-TM06_TOXIC - Fiery Path (swap with Flamethrower. Put in TM Shop 2?)
+TM06_TOXIC - Lavaridge TM Shop
 TM07_HAIL - Shoal Cave
 TM08_BULK_UP - Brawly
 TM09_BULLET_SEED - Route 104
@@ -69,7 +69,7 @@ TM31_BRICK_BREAK - Sootopolis
 TM32_DOUBLE_TEAM - Route 113
 TM33_REFLECT - Lilycove Department Store
 TM34_SHOCK_WAVE - Wattson
-TM35_FLAMETHROWER - (swap with Toxic)
+TM35_FLAMETHROWER - Fiery Path
 TM36_SLUDGE_BOMB - Dewford
 TM37_SANDSTORM - Route 111
 TM38_FIRE_BLAST - Lilycove Department Store
@@ -88,15 +88,14 @@ TM50_OVERHEAT - Flannery
 
 Lilycove Department - 8
 Slateport TM - 8
-TM Shop 2 - 9
-  (Including Toxic)
+Lavaridge TM - 9
   Either replaces Mauville Game Corner TMs or is in Lavaridge
 
 TM51_ROOST - Slateport TM Shop
 TM52_FOCUS_BLAST - Victory Road
 TM53_ENERGY_BALL
 TM54_FALSE_SWIPE - Slateport TM Shop
-TM55_BRINE - TM Shop 2
+TM55_BRINE - Lavaridge TM Shop
 TM56_SIGNAL_BEAM
 TM57_CHARGE_BEAM - Slateport TM Shop
 TM58_PSYCHIC_FANGS
@@ -107,17 +106,17 @@ TM62_SILVER_WIND - Slateport TM Shop
 TM63_DAZZLING_GLEAM
 TM64_SEED_BOMB
 TM65_SHADOW_CLAW
-TM66_PAYBACK - TM Shop 2
+TM66_PAYBACK - Lavaridge TM Shop
 TM67_POWER_GEM
 TM68_GIGA_IMPACT
 TM69_PLAY_ROUGH
 TM70_LEECH_LIFE
 TM71_STONE_EDGE
-TM72_AVALANCHE - TM Shop 2
+TM72_AVALANCHE - Lavaridge TM Shop
 TM73_THUNDER_WAVE - Slateport TM Shop/(Replace Battle Frontier Tutor) 
-TM74_GYRO_BALL - TM Shop 2
+TM74_GYRO_BALL - Lavaridge TM Shop
 TM75_SWORDS_DANCE - (Replace Battle Frontier Tutor) 
-TM76_STEALTH_ROCK - TM Shop 2
+TM76_STEALTH_ROCK - Lavaridge TM Shop
 TM77_PSYCH_UP - Slateport TM Shop/(Replace Battle Frontier Tutor) 
 TM78_CRUNCH
 TM79_DARK_PULSE
@@ -127,13 +126,13 @@ TM82_NIGHT_SLASH
 TM83_IRON_HEAD
 TM84_POISON_JAB
 TM85_AURA_SPHERE
-TM86_GRASS_KNOT - TM Shop 2
+TM86_GRASS_KNOT - Lavaridge TM Shop
 TM87_BUG_BUZZ
 TM88_ACROBATICS
-TM89_U_TURN - TM Shop 2
+TM89_U_TURN - Lavaridge TM Shop
 TM90_BODY_SLAM - (Replace Battle Frontier Tutor) 
 TM91_FLASH_CANNON
-TM92_TRICK_ROOM - TM Shop 2
+TM92_TRICK_ROOM - Lavaridge TM Shop
 TM93_LIQUIDATION
 TM94_THUNDER_PUNCH - (Replace Battle Frontier Tutor) 
 TM95_FIRE_PUNCH - (Replace Battle Frontier Tutor) 

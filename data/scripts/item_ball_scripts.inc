@@ -374,8 +374,8 @@ FieryPath_EventScript_ItemFireStone::
 	finditem ITEM_FIRE_STONE
 	end
 
-FieryPath_EventScript_ItemTM06::
-	finditem ITEM_TM06
+FieryPath_EventScript_ItemTM35::
+	finditem ITEM_TM35
 	end
 
 MeteorFalls_1F_1R_EventScript_ItemTM23::

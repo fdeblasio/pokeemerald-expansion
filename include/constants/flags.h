@@ -1136,7 +1136,7 @@
 #define FLAG_ITEM_VICTORY_ROAD_B2F_FULL_HEAL                        0x440
 #define FLAG_ITEM_MT_PYRE_6F_TM30                                   0x441
 #define FLAG_ITEM_SEAFLOOR_CAVERN_ROOM_9_TM26                       0x442
-#define FLAG_ITEM_FIERY_PATH_TM06                                   0x443
+#define FLAG_ITEM_FIERY_PATH_TM35                                   0x443
 #define FLAG_ITEM_ROUTE_124_RED_SHARD                               0x444
 #define FLAG_ITEM_ROUTE_124_BLUE_SHARD                              0x445
 #define FLAG_ITEM_SAFARI_ZONE_NORTH_WEST_TM22                       0x446

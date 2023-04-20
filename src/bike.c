@@ -74,8 +74,8 @@ static void (*const sMachBikeTransitions[])(u8) =
 // bikeFrameCounter is input which is represented by sMachBikeSpeeds in order
 static void (*const sMachBikeSpeedCallbacks[])(u8) =
 {
-    PlayerWalkNormal,
-    PlayerWalkFast,
+    PlayerWalkFaster,
+    PlayerWalkFaster,
     PlayerWalkFaster,
 };
 

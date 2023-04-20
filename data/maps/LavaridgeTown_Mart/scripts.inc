@@ -11,6 +11,32 @@ LavaridgeTown_Mart_EventScript_Clerk::
 	release
 	end
 
+LavaridgeTown_Mart_EventScript_TMClerk::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart LavaridgeTown_Mart_TMs
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+LavaridgeTown_Mart_TMs:
+	.2byte ITEM_TM06  @ Toxic
+	.2byte ITEM_TM55  @ Brine
+	.2byte ITEM_TM66  @ Payback
+	.2byte ITEM_TM72  @ Avalanche
+	.2byte ITEM_TM74  @ Gyro Ball
+	.2byte ITEM_TM75  @ Swords Dance
+	.2byte ITEM_TM76  @ Stealth Rock
+	.2byte ITEM_TM86  @ Grass Knot
+	.2byte ITEM_TM89  @ U-turn
+	.2byte ITEM_TM92  @ Trick Room
+	.2byte ITEM_NONE
+	release
+	end
+
 LavaridgeTown_Mart_EventScript_ExpertM::
 	msgbox LavaridgeTown_Mart_Text_XSpeedFirstStrike, MSGBOX_NPC
 	end

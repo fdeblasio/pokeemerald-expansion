@@ -88,7 +88,7 @@ TM50_OVERHEAT - Flannery
 
 Lilycove Department - 8
 Slateport TM - 8
-Lavaridge TM - 9
+Lavaridge TM - 10
   Either replaces Mauville Game Corner TMs or is in Lavaridge
 
 TM51_ROOST - Slateport TM Shop
@@ -115,7 +115,7 @@ TM71_STONE_EDGE
 TM72_AVALANCHE - Lavaridge TM Shop
 TM73_THUNDER_WAVE - Slateport TM Shop/(Replace Battle Frontier Tutor) 
 TM74_GYRO_BALL - Lavaridge TM Shop
-TM75_SWORDS_DANCE - (Replace Battle Frontier Tutor) 
+TM75_SWORDS_DANCE - Lavaridge TM Shop (Replace Battle Frontier Tutor) 
 TM76_STEALTH_ROCK - Lavaridge TM Shop
 TM77_PSYCH_UP - Slateport TM Shop/(Replace Battle Frontier Tutor) 
 TM78_CRUNCH

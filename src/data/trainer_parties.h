@@ -5862,7 +5862,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Cyndy1[] = {
     .iv = 100,
     .lvl = 23,
     .species = SPECIES_MAKUHITA,
-    }.
+    },
     {
     .iv = 100,
     .lvl = 23,

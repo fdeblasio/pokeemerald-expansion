@@ -82,7 +82,7 @@ AquaHideout_1F_Text_BossIsOnRoute122:
 	.string "What? What? What do you want with \n"
 	.string "TEAM AQUA?\p"
 	.string "Our BOSS isn't here! He's on his way to\n"
-	.string "MT. PYRE on ROUTE 122!\p"
+	.string "Mt. Pyre on ROUTE 122!\p"
 	.string "… …\n"
 	.string "Why did he go?\p"
 	.string "Wahaha! Do you really think I'd tell\n"
@@ -92,7 +92,7 @@ AquaHideout_1F_Text_TeamMagmaAtMtChimney:
 	.string "What? What?\n"
 	.string "Are you a TEAM MAGMA grunt?\p"
 	.string "I hear that TEAM MAGMA is after\n"
-	.string "an awesome Pokémon at MT. CHIMNEY.\p"
+	.string "an awesome Pokémon at Mt. Chimney.\p"
 	.string "But what is that Pokémon like?$"
 
 AquaHideout_1F_Text_BossIsInSlateportCity:

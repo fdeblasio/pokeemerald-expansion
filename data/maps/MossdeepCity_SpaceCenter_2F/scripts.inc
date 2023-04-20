@@ -459,7 +459,7 @@ MossdeepCity_SpaceCenter_2F_Text_MaxieUseFuelToEruptVolcano:
 	.string "MAXIE: Fufufu… Since you're so\n"
 	.string "curious, you deserve an explanation.\p"
 	.string "We're going to jettison the entire\n"
-	.string "load into MT. CHIMNEY!\p"
+	.string "load into Mt. Chimney!\p"
 	.string "With GROUDON gone, we have no need\n"
 	.string "for that slag heap of a mountain!\p"
 	.string "So we'll use the fuel's power to make\n"

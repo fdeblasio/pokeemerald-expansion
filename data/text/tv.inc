@@ -575,7 +575,7 @@ gTVMassOutbreakText00::
 
 gTV3CheersForPokeblocksText00::
 	.string "MC: We hope you're in good cheer,\n"
-	.string "“3 Cheers For {POKEBLOCK}S” is here!\p"
+	.string "“3 Cheers for {POKEBLOCK}s” is here!\p"
 	.string "Today, we examine the {POKEBLOCK} blended\n"
 	.string "by {STR_VAR_1} and associates.\p"
 	.string "Without any delay, let me feed it\n"
@@ -1139,7 +1139,7 @@ SmartShopper_Text_OutroMax::
 	.string "Still, {STR_VAR_1} is certainly an enigma…$"
 
 gTVWorldOfMastersText00::
-	.string "The World OF Masters\p"
+	.string "The World of Masters\p"
 	.string "Hello, viewers.\p"
 	.string "Perhaps you are aware of a Trainer\n"
 	.string "named {STR_VAR_1}.\p"
@@ -1739,8 +1739,8 @@ gTVTrainerFanClubText11::
 	.string "Fans: {STR_VAR_3}!$"
 
 TVSpotTheCuties_Text_Intro::
-	.string "Spot The Cuties!\n"
-	.string "Pokémon IN Ribbons!\p"
+	.string "Spot the Cuties!\n"
+	.string "Pokémon in Ribbons!\p"
 	.string "Hello, my sweet viewers!\p"
 	.string "I just know you'll agree, but a Pokémon\n"
 	.string "wearing Ribbons is simply divine!\p"
@@ -1776,7 +1776,7 @@ TVSpotTheCuties_Text_RibbonChampion::
 	.string "The Champion Ribbon is especially\n"
 	.string "fetching.\p"
 	.string "{STR_VAR_2} received it upon entering\n"
-	.string "the Hall OF Fame.\p"
+	.string "the Hall of Fame.\p"
 	.string "It verily draws out the bravery\n"
 	.string "of {STR_VAR_2}.\p"
 	.string "{STR_VAR_2} and the Champ Ribbon!\n"
@@ -2005,7 +2005,7 @@ gTVPokemonNewsBattleFrontierText18::
 	.string "That's the news on Pokémon News!$"
 
 gTVWhatsNo1InHoennTodayText00::
-	.string "What's NO. 1 IN Hoenn Today?\n"
+	.string "What's No. 1 in Hoenn Today?\n"
 	.string "Yes, it's that time again!\p"
 	.string "Hello, viewers! Are you giving your\n"
 	.string "best at whatever you do?\p"
@@ -2804,36 +2804,36 @@ GabbyAndTy_Text_GabbyDefeat:
 	.string "Did you get all that on camera?$"
 
 GabbyAndTy_Text_TyPreFirstBattle:
-	.string "TY: Hey, lookie here! A tough-looking\n"
+	.string "Ty: Hey, lookie here! A tough-looking\n"
 	.string "Trainer here, of all places!\l"
 	.string "Camera's rolling!$"
 
 GabbyAndTy_Text_TyIntro:
-	.string "TY: Hey, lookie here!\n"
+	.string "Ty: Hey, lookie here!\n"
 	.string "I remember you!\p"
 	.string "I'll get this battle all on this\n"
 	.string "here camera!$"
 
 GabbyAndTy_Text_TyPostBattle:
-	.string "TY: You're a natural!\n"
+	.string "Ty: You're a natural!\n"
 	.string "Got me some prime footage right here!$"
 
 GabbyAndTy_Text_TyNotEnoughMons:
-	.string "TY: Do you only have the one Pokémon\n"
+	.string "Ty: Do you only have the one Pokémon\n"
 	.string "and that's it?\p"
 	.string "If you had more Pokémon, it'd make for\n"
 	.string "better footage, but…$"
 
 GabbyAndTy_Text_TyDefeatFirstTime:
-	.string "TY: Yep, we sure spotted a hot Trainer.\n"
+	.string "Ty: Yep, we sure spotted a hot Trainer.\n"
 	.string "This is a huge scoop for us!$"
 
 GabbyAndTy_Text_TyDefeat:
-	.string "TY: Yep, I got it all.\n"
+	.string "Ty: Yep, I got it all.\n"
 	.string "That whole battle's on camera.$"
 
 gTVInSearchOfTrainersText00::
-	.string "IN Search OF Trainers…\p"
+	.string "In Search of Trainers…\p"
 	.string "Gabby: Hi! Today I'm visiting an area\n"
 	.string "near {STR_VAR_1}.\p"
 	.string "We're trying to spot some up-and-\n"

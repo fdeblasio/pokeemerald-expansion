@@ -29889,6 +29889,7 @@ static const u16 sCastformTeachableLearnset[] = {
     MOVE_LUCKY_CHANT,
     MOVE_MIMIC,
     MOVE_OMINOUS_WIND,
+    MOVE_OVERHEAT,
     MOVE_POWDER_SNOW,
     MOVE_PROTECT,
     MOVE_PSYCH_UP,

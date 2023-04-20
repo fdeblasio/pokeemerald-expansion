@@ -27,6 +27,7 @@
     - Triathlete would be Speed-focused (maybe endurance/HP too)
     - Winstrates (including Victor) should have EVs due to the mom mentioning using the Macho Brace
     - Tori and Tia should have Spindas that aren't identical
+    - Fix Flannery's rematches being male; also her Torkoal or Ninetales should have Drought
 - Overworld sprites to match trainer sprites (for example, giving Youngsters yellow shirts, girl tubers a yellow tube, and Rangers red clothes)
 - Make only one instance of each TM (https://pokemondb.net/pokebase/278398/which-tms-can-you-get-more-than-one-of-in-emerald; Lilycove ones can be configured with some shop tutorials)
 - Expand bag

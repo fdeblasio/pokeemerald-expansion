@@ -138,3 +138,8 @@ Lunatone:
 
 Solrock:
     Learns Power Gem by level up
+
+Castform:
+    All stats: 70->75
+    Learns Overheat by TM
+    Learns Thunder and Solar Beam by level up

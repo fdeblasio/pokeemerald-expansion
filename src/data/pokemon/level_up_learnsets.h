@@ -5498,6 +5498,7 @@ static const struct LevelUpMove sTorchicLevelUpLearnset[] = {
 
 static const struct LevelUpMove sCombuskenLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_DOUBLE_KICK),
+    LEVEL_UP_MOVE( 1, MOVE_FLAME_BURST),
     LEVEL_UP_MOVE( 1, MOVE_DOUBLE_KICK),
     LEVEL_UP_MOVE( 1, MOVE_FLAMETHROWER),
     LEVEL_UP_MOVE( 1, MOVE_FEATHER_DANCE),
@@ -7622,6 +7623,8 @@ static const struct LevelUpMove sCastformLevelUpLearnset[] = {
     LEVEL_UP_MOVE(35, MOVE_HYDRO_PUMP),
     LEVEL_UP_MOVE(35, MOVE_FIRE_BLAST),
     LEVEL_UP_MOVE(35, MOVE_BLIZZARD),
+    LEVEL_UP_MOVE(45, MOVE_THUNDER),
+    LEVEL_UP_MOVE(45, MOVE_SOLAR_BEAM),
     LEVEL_UP_MOVE(45, MOVE_HURRICANE),
     LEVEL_UP_END
 };

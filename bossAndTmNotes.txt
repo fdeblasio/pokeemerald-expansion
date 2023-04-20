@@ -29,9 +29,9 @@ Groud/Kyog: 70
 Steven:     75, 76, 76, 76, 77, 78
 
 Rematches:
-55 (new/returning 2), 57 (returning 1), 60 (signature) 4+
+55 (new/returning 2), 58 (returning 1), 60 (signature) 4+
 60 (new/returning 2), 63 (returning 1), 65 (signature) 5+
-65 (new/returning 2), 67 (returning 1), 70 (signature)
+65 (new/returning 2), 68 (returning 1), 70 (signature)
 70 (new/returning 2), 73 (returning 1), 75 (signature) 6
 
 

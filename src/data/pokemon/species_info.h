@@ -88,12 +88,12 @@
 
 #define CASTFORM_SPECIES_INFO(type, color)            \
     {                                                 \
-        .baseHP        = 70,                          \
-        .baseAttack    = 70,                          \
-        .baseDefense   = 70,                          \
-        .baseSpeed     = 70,                          \
-        .baseSpAttack  = 70,                          \
-        .baseSpDefense = 70,                          \
+        .baseHP        = 75,                          \
+        .baseAttack    = 75,                          \
+        .baseDefense   = 75,                          \
+        .baseSpeed     = 75,                          \
+        .baseSpAttack  = 75,                          \
+        .baseSpDefense = 75,                          \
         .types = { type, type },                      \
         .catchRate = 45,                              \
         .expYield = 147,                              \

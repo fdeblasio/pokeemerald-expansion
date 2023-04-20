@@ -1860,7 +1860,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Mark[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntMtChimney1[] = {
     {
     .iv = 0,
-    .lvl = 20,
+    .lvl = 24,
     .species = SPECIES_NUMEL,
     }
 };
@@ -7977,8 +7977,8 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Harrison[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntMtChimney2[] = {
     {
     .iv = 0,
-    .lvl = 20,
-    .species = SPECIES_ZUBAT,
+    .lvl = 24,
+    .species = SPECIES_POOCHYENA,
     }
 };
 
@@ -8146,23 +8146,23 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GruntWeatherInst5[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_TabithaMtChimney[] = {
     {
     .iv = 50,
-    .lvl = 18,
-    .species = SPECIES_NUMEL,
+    .lvl = 23,
+    .species = SPECIES_VULPIX,
     },
     {
     .iv = 50,
-    .lvl = 20,
+    .lvl = 23,
+    .species = SPECIES_SLUGMA,
+    },
+    {
+    .iv = 50,
+    .lvl = 23,
     .species = SPECIES_POOCHYENA,
     },
     {
     .iv = 50,
-    .lvl = 22,
+    .lvl = 25,
     .species = SPECIES_NUMEL,
-    },
-    {
-    .iv = 50,
-    .lvl = 22,
-    .species = SPECIES_ZUBAT,
     }
 };
 
@@ -8226,17 +8226,17 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MaxieMagmaHideout[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_MaxieMtChimney[] = {
     {
     .iv = 150,
-    .lvl = 24,
+    .lvl = 25,
     .species = SPECIES_MIGHTYENA,
     },
     {
     .iv = 150,
-    .lvl = 24,
-    .species = SPECIES_ZUBAT,
+    .lvl = 25,
+    .species = SPECIES_MAGCARGO,
     },
     {
     .iv = 150,
-    .lvl = 25,
+    .lvl = 27,
     .species = SPECIES_CAMERUPT,
     }
 };

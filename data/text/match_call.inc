@@ -2394,7 +2394,7 @@ MatchCall_Text_May7::
 
 MatchCall_Text_May8::
 	.string "May: {PLAYER}{KUN}, hi.\p"
-	.string "MT. Pyre is a memorial to Pokémon\n"
+	.string "Mt. Pyre is a memorial to Pokémon\n"
 	.string "whose lives have ended.\p"
 	.string "Maybe as a result, it's infested\n"
 	.string "with many Ghost-type Pokémon!$"
@@ -2521,7 +2521,7 @@ MatchCall_Text_Brendan7::
 
 MatchCall_Text_Brendan8::
 	.string "Brendan: {PLAYER}!\p"
-	.string "MT. Pyre is a memorial to Pokémon\n"
+	.string "Mt. Pyre is a memorial to Pokémon\n"
 	.string "whose lives have ended.\p"
 	.string "That's probably why it's infested\n"
 	.string "with many Ghost-type Pokémon!$"
@@ -2662,7 +2662,7 @@ MatchCall_Text_Scott2::
 MatchCall_Text_Scott3::
 	.string "Scott: Hi, hi, {PLAYER}{KUN}!\p"
 	.string "Have you had the chance to climb\n"
-	.string "MT. Pyre?\p"
+	.string "Mt. Pyre?\p"
 	.string "The place is a memorial to Pokémon\n"
 	.string "that have passed away.\p"
 	.string "It's somewhere every Trainer\n"

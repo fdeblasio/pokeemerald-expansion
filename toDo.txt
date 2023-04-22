@@ -56,6 +56,7 @@
 - Sell Net and Dive Balls at Mossdeep
 - Implement Deoxys encounter at island/changing forms at Fallarbor
 - Replace Regis with their doll sprites since they look more like them?
+- Give Golduck and Espeon Power Gem on level up
 
 
 - Maybe do one run-through of small updates and then add in new items/updated teams in a second runthrough?
@@ -66,4 +67,11 @@ Once this base is done, potential hacks that can be built on top of it
 With binary hacks, some Pokemon had things hardcoded in their species spot (Nidorans' gender not showing up if it wasn't nicknamed, Unown's forms, Shedinja having 1 HP, Spinda's spots). Now that the code is editable, potentially mess around with some of it. Like a hack where the starter is Shedinja at catching is disabled (disable shinies!) but even though Shedinja still has a base 1 stat, it'll do the normal stat calculation
 
 ## TODO Tomorrow
-- Cable Car Hiker
+- Get Power Gem in game to see if any decap is missing
+- Desert
+- Post-Flannery Mt. Chimney trainers
+- Trick House 3
+- Petalburg Gym
+- Surfing encounters
+- Edit trainers on western surfing routes
+- Route 118

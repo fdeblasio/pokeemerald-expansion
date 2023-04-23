@@ -69,8 +69,8 @@ With binary hacks, some Pokemon had things hardcoded in their species spot (Nido
 ## TODO Tomorrow
 - Get Power Gem in game to see if any decap is missing
 - Desert
-- Post-Flannery Mt. Chimney trainers
 - Trick House 3
+
 - Petalburg Gym
 - Surfing encounters
 - Edit trainers on western surfing routes

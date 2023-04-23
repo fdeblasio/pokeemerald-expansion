@@ -1,5 +1,5 @@
 
-## TODO
+## To Do
 - https://www.pokecommunity.com/showthread.php?t=416647&page=1
 - https://github.com/pret/pokeemerald/wiki/Tutorials
 - Add Meditite, Zangoose, Lunatone
@@ -20,7 +20,7 @@
     - customAll Pokemon
         - Winston could have a shiny
         - Calvin could have a good Nature/EV
-        - Leaders would have optimal Abilities/EVs/IVs/Natures)
+        - Leaders would have optimal Abilities/EVs/IVs/Natures
     - Winston's rich enough to buy TMs so his moveset should incorporate that once TMs are finalized
         - Gym Leader rematches should also utilize TMs
     - Breeders should have good IVs/Natures/Abilities
@@ -57,6 +57,7 @@
 - Implement Deoxys encounter at island/changing forms at Fallarbor
 - Replace Regis with their doll sprites since they look more like them?
 - Give Golduck and Espeon Power Gem on level up
+- Edit Slot odds (SLOT_MACHINE_)? Even though there's only three prizes?
 
 
 - Maybe do one run-through of small updates and then add in new items/updated teams in a second runthrough?
@@ -64,11 +65,11 @@
 
 ## Future Hacks
 Once this base is done, potential hacks that can be built on top of it
-With binary hacks, some Pokemon had things hardcoded in their species spot (Nidorans' gender not showing up if it wasn't nicknamed, Unown's forms, Shedinja having 1 HP, Spinda's spots). Now that the code is editable, potentially mess around with some of it. Like a hack where the starter is Shedinja at catching is disabled (disable shinies!) but even though Shedinja still has a base 1 stat, it'll do the normal stat calculation
+With binary hacks, some Pokemon had things hardcoded in their species spot (Nidorans' gender not showing up if it wasn't nicknamed (battle_interface.c/pokenav_conditions.c/party_menu.c/pokemon_summary.screen), Unown's forms, Shedinja having 1 HP, Spinda's spots). Now that the code is editable, potentially mess around with some of it. Like a hack where the starter is Shedinja at catching is disabled (disable shinies! (SHINY_ODDS)) but even though Shedinja still has a base 1 stat, it'll do the normal stat calculation
 
-## TODO Tomorrow
-- Get Power Gem in game to see if any decap is missing
+## To Do Soon
 - Desert
+- Edit Fossil levels?
 - Trick House 3
 
 - Petalburg Gym

@@ -7867,6 +7867,8 @@ BattleScript_FocusPunchSetUp::
 	end2
 
 BattleScript_MegaEvolution::
+	printstring STRINGID_EMPTYSTRING3
+	trytrainerslidemegaevolutionmsg BS_ATTACKER
 	printstring STRINGID_MEGAEVOREACTING
 BattleScript_MegaEvolutionAfeterString:
 	waitmessage B_WAIT_TIME_LONG
@@ -7882,6 +7884,8 @@ BattleScript_MegaEvolutionAfeterString:
 	end2
 
 BattleScript_WishMegaEvolution::
+	printstring STRINGID_EMPTYSTRING3
+	trytrainerslidemegaevolutionmsg BS_ATTACKER
 	printstring STRINGID_FERVENTWISHREACHED
 	goto BattleScript_MegaEvolutionAfeterString
 
@@ -10071,6 +10075,8 @@ BattleScript_JabocaRowapBerryActivate_Dmg:
 
 @ z moves / effects
 BattleScript_ZMoveActivateDamaging::
+	printstring STRINGID_EMPTYSTRING3
+	trytrainerslidezmovemsg BS_ATTACKER
 	printstring STRINGID_ZPOWERSURROUNDS
 	playanimation BS_ATTACKER, B_ANIM_ZMOVE_ACTIVATE, NULL
 	printstring STRINGID_ZMOVEUNLEASHED
@@ -10078,6 +10084,8 @@ BattleScript_ZMoveActivateDamaging::
 	return
 
 BattleScript_ZMoveActivateStatus::
+	printstring STRINGID_EMPTYSTRING3
+	trytrainerslidezmovemsg BS_ATTACKER
 	savetarget
 	printstring STRINGID_ZPOWERSURROUNDS
 	playanimation BS_ATTACKER, B_ANIM_ZMOVE_ACTIVATE, NULL

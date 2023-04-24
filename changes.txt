@@ -1,3 +1,6 @@
+Gym Leaders use more Hoenn Pokemon
+Gym Leaders and Magma/Aqua Admins/Leaders no longer have underleveled evolutions
+
 Moves:
     Double Slap is called Multi-Slap
     Volt Tackle has a 30% chance to paralyze and no longer causes recoil

@@ -69,8 +69,6 @@ With binary hacks, some Pokemon had things hardcoded in their species spot (Nido
 
 ## To Do Soon
 - Desert
-- Edit Fossil levels?
-- Trick House 3
 
 - Petalburg Gym
 - Surfing encounters

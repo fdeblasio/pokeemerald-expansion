@@ -8,138 +8,146 @@ Moves:
         Play Rough
         Sky Uppercut
         Blaze Kick
+        Crush Claw
+        Razor Shell
 
 Pokemon:
-ALL:
-    Movesets a combination of Gens 7-9
-        Typically this means they have their latest moveset plus most moves from their Gen 7 moveset that have been removed
-    Any other moveset changes will be noted
+    ALL:
+        Movesets a combination of Gens 7-9
+            Typically this means they have their latest moveset plus most moves from their Gen 7 moveset that have been removed
+        Any other moveset changes will be noted
 
-Nidorina/Nidoqueen:
-    Can now breed
+    Nidorina/Nidoqueen:
+        Can now breed
 
-Pichu:
-    Can also evolve at level 13
+    Pichu:
+        Can also evolve at level 13
 
-Pikachu/Raichu:
-    Learn Volt Tackle at level 1
+    Pikachu/Raichu:
+        Learn Volt Tackle at level 1
 
-Golbat:
-    Can also evolve at level 33
+    Golbat:
+        Can also evolve at level 33
 
-Doduo/Dodrio:
-    Get Aerial Ace instead of Wing Attack at level 15 due to not having wings
+    Doduo/Dodrio:
+        Get Aerial Ace instead of Wing Attack at level 15 due to not having wings
 
-Rhyperior:
-    Learns Rock Wrecker upon evolving
+    Rhyperior:
+        Learns Rock Wrecker upon evolving
 
-Elekid:
-    Atk: 63->65
-    Def: 37->40
-    SpA: 65->70
+    Elekid:
+        Atk: 63->65
+        Def: 37->40
+        SpA: 65->70
 
-Electabuzz:
-    Atk: 83->85
-    Def: 57->60
-    SpA: 95->100
+    Electabuzz:
+        Atk: 83->85
+        Def: 57->60
+        SpA: 95->100
 
-Electivire:
-    Atk: 123->125
-    Def: 67->70
-    SpA: 95->100
+    Electivire:
+        Atk: 123->125
+        Def: 67->70
+        SpA: 95->100
 
-Magby:
-    Def: 37->40
-    Spe: 83->85
+    Magby:
+        Def: 37->40
+        Spe: 83->85
 
-Magmar:
-    Def: 57->60
-    Spe: 93->95
+    Magmar:
+        Def: 57->60
+        Spe: 93->95
 
-Magmortar:
-    Atk: 95->100
-    Def: 67->70
-    Spe: 83->85
+    Magmortar:
+        Atk: 95->100
+        Def: 67->70
+        Spe: 83->85
 
-Eevee:
-    Can also evolve into Espeon with a Sun Stone
-    Can also evolve into Umbreon with a Moon Stone
-    Can also evolve into Sylveon with a Dawn Stone
+    Eevee:
+        Can also evolve into Espeon with a Sun Stone
+        Can also evolve into Umbreon with a Moon Stone
+        Can also evolve into Sylveon with a Dawn Stone
 
-Azurill:
-    50/50 gender ratio
-    Water/Fairy
-    Can also evolve at level 10
-    Catch rate is 255
+    Azurill:
+        50/50 gender ratio
+        Water/Fairy
+        Can also evolve at level 10
+        Catch rate is 255
 
-Marill:
-    HP: 70->75
-    Atk: 20->40
-    Def: 50->60
-    SpA: 20->40
-    SpD: 50->60
+    Marill:
+        HP: 70->75
+        Atk: 20->40
+        Def: 50->60
+        SpA: 20->40
+        SpD: 50->60
 
-Azumarill:
-    Atk: 50->60
-    Spe: 50->60
+    Azumarill:
+        Atk: 50->60
+        Spe: 50->60
 
-Ursaring:
-    Can also evolve with a Moon Stone
+    Ursaring:
+        Can also evolve with a Moon Stone
 
-Slugma:
-    Now evolves at level 32
+    Slugma:
+        Now evolves at level 32
 
-Wurmple:
-    Learns Bug Bite at level 7
-    Evolution is based on time of day
+    Wurmple:
+        Learns Bug Bite at level 7
+        Evolution is based on time of day
 
-Breloom:
-    Learns Drain Punch by level up
+    Breloom:
+        Learns Drain Punch by level up
 
-Slaking:
-    Learns Giga Impact by level up
+    Slaking:
+        Learns Giga Impact by level up
 
-Nincada/Ninjask/Shedinja:
-    Learn Leech Life by level up
+    Nincada/Ninjask/Shedinja:
+        Learn Leech Life by level up
 
-Whismur/Loudred/Exploud:
-    Get Punk Rock as a second ability
+    Whismur/Loudred/Exploud:
+        Get Punk Rock as a second ability
 
-Mawile:
-    Can learn Metal Claw and Smart Strike by level up
+    Delcatty:
+        Gets Swift via level up
 
-Volbeat:
-    Atk: 73->75
-    SpA: 47->75
+    Mawile:
+        Can learn Metal Claw and Smart Strike by level up
 
-Illumise:
-    Atk: 47->75
-    SpA: 73->75
+    Volbeat:
+        Atk: 73->75
+        SpA: 47->75
 
-Budew:
-    Can also evolve at level 13
+    Illumise:
+        Atk: 47->75
+        SpA: 73->75
 
-Budew/Roselia/Roserade:
-    75% female gender ratio
+    Budew:
+        Can also evolve at level 13
 
-Zangoose:
-    Can learn Cut by HM
-    Also in Human-Like Egg Group
-    HP: 73->75
-    Atk: 115->125
-    Spe: 90->100
+    Budew/Roselia/Roserade:
+        75% female gender ratio
 
-Seviper:
-    HP: 73->75
-    Spe: 65->75
+    Spinda:
+        All stats: 60->70
 
-Lunatone:
-    Learns Icy Wind by level up
+    Zangoose:
+        Can learn Cut by HM
+        Also in Human-Like Egg Group
+        HP: 73->75
+        Atk: 115->125
+        Spe: 90->100
 
-Solrock:
-    Learns Power Gem by level up
+    Seviper:
+        HP: 73->75
+        Spe: 65->75
 
-Castform:
-    All stats: 70->75
-    Learns Overheat by TM
-    Learns Thunder and Solar Beam by level up
+    Lunatone:
+        Learns Icy Wind by level up
+
+    Solrock:
+        Learns Power Gem by level up
+
+    Castform:
+        All stats: 70->75
+        Learns Overheat by TM
+        Learns Thunder and Solar Beam by level up

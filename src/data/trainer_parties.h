@@ -2361,12 +2361,12 @@ static const struct TrainerMonItemDefaultMoves sParty_Nob5[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Yuji[] = {
     {
     .iv = 100,
-    .lvl = 26,
+    .lvl = 29,
     .species = SPECIES_MAKUHITA,
     },
     {
     .iv = 100,
-    .lvl = 26,
+    .lvl = 29,
     .species = SPECIES_MACHOKE,
     }
 };
@@ -5908,7 +5908,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Cyndy1[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Cora[] = {
     {
     .iv = 100,
-    .lvl = 27,
+    .lvl = 30,
     .species = SPECIES_MEDITITE,
     }
 };
@@ -5916,7 +5916,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Cora[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Paula[] = {
     {
     .iv = 100,
-    .lvl = 27,
+    .lvl = 30,
     .species = SPECIES_BRELOOM,
     }
 };

@@ -68,5 +68,3 @@
     - Maybe this is when the bag expansion happens
 
 ## To Do Soon
-- New Mauville
-- Route 118 Water/Grass/Trainers

@@ -102,6 +102,9 @@ Pokemon:
         Learns Bug Bite at level 7
         Evolution is based on time of day
 
+    Dustox:
+        Sp. Def: 90->100 to match Beautifly's stat increase
+
     Breloom:
         Learns Drain Punch by level up
 

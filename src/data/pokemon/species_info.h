@@ -6984,11 +6984,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseDefense   = 50,
         .baseSpeed     = 65,
         .baseSpDefense = 50,
-        #if P_UPDATED_STATS >= GEN_6
-            .baseSpAttack  = 100,
-        #else
-            .baseSpAttack  = 90,
-        #endif
+        .baseSpAttack  = 100,
         .types = { TYPE_BUG, TYPE_FLYING},
         .catchRate = 45,
         .expYield = 178,
@@ -7033,7 +7029,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseDefense   = 70,
         .baseSpeed     = 65,
         .baseSpAttack  = 50,
-        .baseSpDefense = 90,
+        .baseSpDefense = 100,
         .types = { TYPE_BUG, TYPE_POISON },
         .catchRate = 45,
         .expYield = 173,

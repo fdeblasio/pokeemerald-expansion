@@ -67,7 +67,5 @@
     - When doing new savefile, remove `u32 tmShopFlags[4];` from include/global.h
 
 ## To Do Soon
-- Trick House 4
-- Abandoned Ship
 - New Mauville
 - Route 118 Water/Grass/Trainers

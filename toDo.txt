@@ -65,6 +65,7 @@
 
 - Maybe do one run-through of small updates and then add in new items/updated teams in a second runthrough?
     - When doing new savefile, remove `u32 tmShopFlags[4];` from include/global.h
+    - Maybe this is when the bag expansion happens
 
 ## To Do Soon
 - New Mauville

@@ -1,5 +1,6 @@
 Gym Leaders use more Hoenn Pokemon
 Gym Leaders and Magma/Aqua Admins/Leaders no longer have underleveled evolutions
+Pokemon have a more even encounter distribution
 
 Moves:
     Double Slap is called Multi-Slap
@@ -24,10 +25,13 @@ Pokemon:
         Can now breed
 
     Pichu:
-        Can also evolve at level 13
+        Can also evolve at level 12
 
     Pikachu/Raichu:
         Learn Volt Tackle at level 1
+
+    Igglybuff:
+        Can also evolve at level 12
 
     Golbat:
         Can also evolve at level 33

@@ -148,7 +148,8 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_PICHU]                 = {{EVO_FRIENDSHIP, 0, SPECIES_PIKACHU},
                                        {EVO_LEVEL, 12, SPECIES_PIKACHU}},
     [SPECIES_CLEFFA]                = {{EVO_FRIENDSHIP, 0, SPECIES_CLEFAIRY}},
-    [SPECIES_IGGLYBUFF]             = {{EVO_FRIENDSHIP, 0, SPECIES_JIGGLYPUFF}},
+    [SPECIES_IGGLYBUFF]             = {{EVO_FRIENDSHIP, 0, SPECIES_JIGGLYPUFF},
+                                       {EVO_LEVEL, 12, SPECIES_JIGGLYPUFF}},
     [SPECIES_TOGEPI]                = {{EVO_FRIENDSHIP, 0, SPECIES_TOGETIC}},
 #if P_GEN_4_POKEMON == TRUE
     [SPECIES_TOGETIC]               = {{EVO_ITEM, ITEM_SHINY_STONE, SPECIES_TOGEKISS}},

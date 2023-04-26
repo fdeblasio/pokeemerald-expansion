@@ -668,7 +668,7 @@ Route111_Text_OldLadysRestStopSign:
 	.string "“Come in and rest your tired bones.”$"
 
 Route111_Text_TrainerTipsSpAtkSpDef:
-	.string "Trainer Tips:\p"
+	.string "Trainer Tips\p"
 	.string "One of the indicators of a Pokémon's\n"
 	.string "powerfulness is Sp. Atk. It stands for\l"
 	.string "“Special Attack.”\p"

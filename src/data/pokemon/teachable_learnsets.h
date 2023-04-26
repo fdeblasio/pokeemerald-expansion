@@ -31204,6 +31204,7 @@ static const u16 sGorebyssTeachableLearnset[] = {
     MOVE_ICY_WIND,
     MOVE_INFESTATION,
     MOVE_IRON_DEFENSE,
+    MOVE_LEECH_LIFE,
     MOVE_MIMIC,
     MOVE_MUD_SLAP,
     MOVE_MUD_SPORT,

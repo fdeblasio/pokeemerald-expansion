@@ -173,3 +173,10 @@ Pokemon:
         SpA: 72->80
         SpD: 87->90
         Spe: 51->55
+
+    Huntail:
+        Atk: 104->114
+
+    Gorebyss:
+        SpA: 84->94
+        Can learn Leech Life by TM

@@ -9343,7 +9343,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_HUNTAIL] =
     {
         .baseHP        = 55,
-        .baseAttack    = 104,
+        .baseAttack    = 114,
         .baseDefense   = 105,
         .baseSpeed     = 52,
         .baseSpAttack  = 94,
@@ -9367,7 +9367,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_GOREBYSS] =
     {
         .baseHP        = 55,
-        .baseAttack    = 84,
+        .baseAttack    = 94,
         .baseDefense   = 105,
         .baseSpeed     = 52,
         .baseSpAttack  = 114,

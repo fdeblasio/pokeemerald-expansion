@@ -174,25 +174,25 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GruntRusturfTunnel[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntWeatherInst1[] = {
     {
     .iv = 0,
-    .lvl = 27,
-    .species = SPECIES_ZUBAT,
+    .lvl = 30,
+    .species = SPECIES_POOCHYENA,
     },
     {
     .iv = 0,
-    .lvl = 27,
-    .species = SPECIES_POOCHYENA,
+    .lvl = 30,
+    .species = SPECIES_CORPHISH,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntWeatherInst2[] = {
     {
     .iv = 0,
-    .lvl = 27,
+    .lvl = 30,
     .species = SPECIES_POOCHYENA,
     },
     {
     .iv = 0,
-    .lvl = 27,
+    .lvl = 30,
     .species = SPECIES_CARVANHA,
     }
 };
@@ -200,17 +200,17 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GruntWeatherInst2[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntWeatherInst3[] = {
     {
     .iv = 0,
-    .lvl = 26,
+    .lvl = 29,
     .species = SPECIES_POOCHYENA,
     },
     {
     .iv = 0,
-    .lvl = 26,
-    .species = SPECIES_ZUBAT,
+    .lvl = 29,
+    .species = SPECIES_CORPHISH,
     },
     {
     .iv = 0,
-    .lvl = 26,
+    .lvl = 29,
     .species = SPECIES_CARVANHA,
     }
 };
@@ -227,7 +227,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GruntMuseum2[] = {
     {
     .iv = 0,
     .lvl = 18,
-    .species = SPECIES_MAGIKARP,
+    .species = SPECIES_CORPHISH,
     },
     {
     .iv = 0,
@@ -276,7 +276,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GruntMtPyre3[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntWeatherInst4[] = {
     {
     .iv = 0,
-    .lvl = 28,
+    .lvl = 31,
     .species = SPECIES_CARVANHA,
     }
 };
@@ -334,17 +334,37 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Zander[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_ShellyWeatherInstitute[] = {
     {
     .iv = 50,
-    .lvl = 28,
+    .lvl = 31,
+    .species = SPECIES_MIGHTYENA,
+    },
+    {
+    .iv = 50,
+    .lvl = 31,
+    .species = SPECIES_CORPHISH,
+    },
+    {
+    .iv = 50,
+    .lvl = 31,
     .species = SPECIES_CARVANHA,
     },
     {
     .iv = 50,
-    .lvl = 28,
-    .species = SPECIES_MIGHTYENA,
+    .lvl = 33,
+    .species = SPECIES_GOREBYSS,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_ShellySeafloorCavern[] = {
+    {
+    .iv = 100,
+    .lvl = 37,
+    .species = SPECIES_MIGHTYENA,
+    },
+    {
+    .iv = 100,
+    .lvl = 37,
+    .species = SPECIES_CRAWDAUNT,
+    },
     {
     .iv = 100,
     .lvl = 37,
@@ -353,7 +373,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ShellySeafloorCavern[] =
     {
     .iv = 100,
     .lvl = 37,
-    .species = SPECIES_MIGHTYENA,
+    .species = SPECIES_GOREBYSS,
     }
 };
 
@@ -3729,7 +3749,7 @@ static const struct TrainerMonItemCustomMoves sParty_TateAndLiza1[] = {
     }
 };
 
-//Castform Rain, Gorebyss (Wallace), Huntail, Swampert, Relicanth (Roxanne?)
+//Castform Rain, Huntail/Gorebyss (Wallace, Shelly), Swampert, Relicanth (Roxanne?)
 static const struct TrainerMonItemCustomMoves sParty_Juan1[] = {
     {
     .iv = 200,
@@ -4602,7 +4622,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Timmy[] = {
     }
 };
 
-//Castform Rain, Gorebyss (Wallace), Huntail, Swampert, Relicanth (Roxanne?)
+//Castform Rain, Huntail/Gorebyss (Juan, Shelly), Swampert, Relicanth (Roxanne?)
 static const struct TrainerMonItemCustomMoves sParty_Wallace[] = {
     {
     .iv = 255,
@@ -8243,17 +8263,22 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Isabella[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntWeatherInst5[] = {
     {
     .iv = 0,
-    .lvl = 27,
-    .species = SPECIES_ZUBAT,
+    .lvl = 30,
+    .species = SPECIES_POOCHYENA,
     },
     {
     .iv = 0,
-    .lvl = 27,
-    .species = SPECIES_POOCHYENA,
+    .lvl = 30,
+    .species = SPECIES_TENTACOOL,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_TabithaMtChimney[] = {
+    {
+    .iv = 50,
+    .lvl = 23,
+    .species = SPECIES_POOCHYENA,
+    },
     {
     .iv = 50,
     .lvl = 23,
@@ -8262,17 +8287,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_TabithaMtChimney[] = {
     {
     .iv = 50,
     .lvl = 23,
-    .species = SPECIES_SLUGMA,
-    },
-    {
-    .iv = 50,
-    .lvl = 23,
-    .species = SPECIES_POOCHYENA,
+    .species = SPECIES_NUMEL,
     },
     {
     .iv = 50,
     .lvl = 25,
-    .species = SPECIES_NUMEL,
+    .species = SPECIES_SLUGMA,
     }
 };
 

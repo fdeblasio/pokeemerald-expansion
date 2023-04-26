@@ -5707,7 +5707,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Beck[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Yasu[] = {
     {
     .iv = 0,
-    .lvl = 26,
+    .lvl = 32,
     .species = SPECIES_NINJASK,
     }
 };
@@ -7331,17 +7331,22 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MayRoute110Treecko[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_MayRoute119Treecko[] = {
     {
     .iv = 100,
-    .lvl = 29,
+    .lvl = 32,
     .species = SPECIES_WINGULL,
     },
     {
     .iv = 100,
-    .lvl = 29,
+    .lvl = 32,
     .species = SPECIES_CACTURNE,
     },
     {
+    .iv = 100,
+    .lvl = 32,
+    .species = SPECIES_LOUDRED,
+    },
+    {
     .iv = 150,
-    .lvl = 31,
+    .lvl = 33,
     .species = SPECIES_COMBUSKEN,
     }
 };
@@ -7375,17 +7380,22 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MayRoute110Torchic[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_MayRoute119Torchic[] = {
     {
     .iv = 100,
-    .lvl = 29,
+    .lvl = 32,
     .species = SPECIES_CACNEA,
     },
     {
     .iv = 100,
-    .lvl = 29,
+    .lvl = 32,
     .species = SPECIES_NINETALES,
     },
     {
+    .iv = 100,
+    .lvl = 32,
+    .species = SPECIES_LOUDRED,
+    },
+    {
     .iv = 150,
-    .lvl = 31,
+    .lvl = 33,
     .species = SPECIES_MARSHTOMP,
     }
 };
@@ -8362,7 +8372,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MaxieMtChimney[] = {
     {
     .iv = 150,
     .lvl = 25,
-    .species = SPECIES_MAGCARGO,
+    .species = SPECIES_SLUGMA,
     },
     {
     .iv = 150,
@@ -9090,13 +9100,13 @@ static const struct TrainerMonNoItemCustomMoves sParty_Danielle[] = {
 static const struct TrainerMonNoItemCustomMoves sParty_Hideo[] = {
     {
     .iv = 0,
-    .lvl = 25,
+    .lvl = 31,
     .species = SPECIES_KOFFING,
-    .moves = {MOVE_TACKLE, MOVE_SELF_DESTRUCT, MOVE_SLUDGE, MOVE_SMOKESCREEN}
+    .moves = {MOVE_TACKLE, MOVE_GYRO_BALL, MOVE_SLUDGE, MOVE_SMOKESCREEN}
     },
     {
     .iv = 0,
-    .lvl = 25,
+    .lvl = 31,
     .species = SPECIES_KOFFING,
     .moves = {MOVE_TACKLE, MOVE_POISON_GAS, MOVE_SLUDGE, MOVE_SMOKESCREEN}
     }
@@ -10562,7 +10572,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Makayla[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Fabian[] = {
     {
     .iv = 0,
-    .lvl = 26,
+    .lvl = 32,
     .species = SPECIES_MANECTRIC,
     }
 };

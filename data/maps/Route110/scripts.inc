@@ -939,14 +939,14 @@ Route110_Text_MauvilleCitySign:
 	.string "{UP_ARROW} Mauville City$"
 
 Route110_Text_TrainerTipsPrlzSleep:
-	.string "Trainer Tips:\p"
+	.string "Trainer Tips\p"
 	.string "The foe can be made helpless by\n"
 	.string "paralyzing it or causing it to sleep.\p"
 	.string "It is an important technique for\n"
 	.string "Pokémon battles.$"
 
 Route110_Text_TrainerTipsRegisterItems:
-	.string "Trainer Tips:\p"
+	.string "Trainer Tips\p"
 	.string "The items in the Bag can be reorganized\n"
 	.string "by pressing Select.$"
 

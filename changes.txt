@@ -19,6 +19,7 @@ Pokemon:
     ALL:
         Movesets a combination of Gens 7-9
             Typically this means they have their latest moveset plus most moves from their Gen 7 moveset that have been removed
+                Natural Gift, Lucky Chant, and Synchronoise have been removed
         Any other moveset changes will be noted
 
     Nidorina/Nidoqueen:
@@ -157,7 +158,18 @@ Pokemon:
     Solrock:
         Learns Power Gem by level up
 
+    Feebas:
+        Can also evolve at level 20
+
     Castform:
         All stats: 70->75
         Learns Overheat by TM
         Learns Thunder and Solar Beam by level up
+
+    Tropius:
+        HP: 99->100
+        Atk: 68->70
+        Def: 83->85
+        SpA: 72->80
+        SpD: 87->90
+        Spe: 51->55

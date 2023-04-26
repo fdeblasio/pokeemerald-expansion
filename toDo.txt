@@ -61,6 +61,7 @@
 - Give Golduck and Espeon Power Gem on level up
 - Edit Slot odds (SLOT_MACHINE_)? Even though there's only three prizes?
 - Make the rapids easier to navigate?
+- Poison Heal is in the game so add Toxic Orb (Lilycove?)
 
 
 - Maybe do one run-through of small updates and then add in new items/updated teams in a second runthrough?
@@ -69,5 +70,6 @@
     - Implement Pokedex Plus (https://www.pokecommunity.com/showthread.php?t=441996)
 
 ## To Do Soon
-Route 119
 Weather Institute
+Rival
+Route 119 Post-WI

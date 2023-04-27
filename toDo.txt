@@ -74,6 +74,4 @@
     - Implement Pokedex Plus (https://www.pokecommunity.com/showthread.php?t=441996)
 
 ## To Do Soon
-Fortree Gym
-Trick House 5
 Route 120 Post-Gym

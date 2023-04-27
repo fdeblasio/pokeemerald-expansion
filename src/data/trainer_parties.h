@@ -11549,9 +11549,9 @@ static const struct TrainerMonItemCustomMoves sParty_Winona3[] = {
     {
     .iv = 255,
     .lvl = 60,
-    .species = SPECIES_BEAUTIFLY,
+    .species = SPECIES_NINJASK,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_AIR_SLASH, MOVE_BUG_BUZZ, MOVE_GIGA_DRAIN, MOVE_QUIVER_DANCE}
+    .moves = {MOVE_AERIAL_ACE, MOVE_LEECH_LIFE, MOVE_BATON_PASS, MOVE_SWORDS_DANCE}
     },
     {
     .iv = 255,
@@ -11594,9 +11594,9 @@ static const struct TrainerMonItemCustomMoves sParty_Winona4[] = {
     {
     .iv = 255,
     .lvl = 65,
-    .species = SPECIES_BEAUTIFLY,
+    .species = SPECIES_NINJASK,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_AIR_SLASH, MOVE_BUG_BUZZ, MOVE_GIGA_DRAIN, MOVE_QUIVER_DANCE}
+    .moves = {MOVE_AERIAL_ACE, MOVE_LEECH_LIFE, MOVE_BATON_PASS, MOVE_SWORDS_DANCE}
     },
     {
     .iv = 255,
@@ -11639,9 +11639,9 @@ static const struct TrainerMonItemCustomMoves sParty_Winona5[] = {
     {
     .iv = 255,
     .lvl = 70,
-    .species = SPECIES_BEAUTIFLY,
+    .species = SPECIES_NINJASK,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_AIR_SLASH, MOVE_BUG_BUZZ, MOVE_GIGA_DRAIN, MOVE_QUIVER_DANCE}
+    .moves = {MOVE_AERIAL_ACE, MOVE_LEECH_LIFE, MOVE_BATON_PASS, MOVE_SWORDS_DANCE}
     },
     {
     .iv = 255,

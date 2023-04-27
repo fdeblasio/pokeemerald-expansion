@@ -9142,7 +9142,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
             .baseSpDefense = 80,
         #endif
         .types = { TYPE_PSYCHIC, TYPE_PSYCHIC},
-        .catchRate = 45,
+        .catchRate = 60,
         .expYield = 159,
         .evYield_SpAttack  = 1,
         .evYield_SpDefense = 1,
@@ -9166,7 +9166,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpAttack  = 75,
         .baseSpDefense = 60,
         .types = { TYPE_DARK, TYPE_DARK},
-        .catchRate = 30,
+        .catchRate = 60,
         .expYield = 163,
         .evYield_Attack    = 2,
         .itemRare = ITEM_LIFE_ORB,

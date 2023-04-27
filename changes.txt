@@ -103,6 +103,9 @@ Pokemon:
         Learns Bug Bite at level 7
         Evolution is based on time of day
 
+    Beautifly:
+        Learns Air Slash by TM
+
     Dustox:
         Sp. Def: 90->100 to match Beautifly's stat increase
 
@@ -140,6 +143,9 @@ Pokemon:
 
     Spinda:
         All stats: 60->70
+
+    Altaria:
+        Learns Air Slash by TM
 
     Zangoose:
         Can learn Cut by HM

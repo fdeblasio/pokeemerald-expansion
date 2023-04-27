@@ -362,6 +362,18 @@ Route120_EventScript_Callie::
 	msgbox Route120_Text_CalliePostBattle, MSGBOX_AUTOCLOSE
 	end
 
+Route120_EventScript_BirdManiac::
+	lock
+	faceplayer
+	msgbox Route120_Text_BirdManiac, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+Route120_Text_BirdManiac:
+	.string "Stay there!\n"
+	.string "You don't want to scare the bird Pokémon.$"
+
 Route120_Text_StevenGreeting:
 	.string "Steven: Hm? {PLAYER}{KUN}, hi.\n"
 	.string "It's been a while.\p"

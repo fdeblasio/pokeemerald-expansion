@@ -43,6 +43,9 @@
 - Edit friendship evolution methods
 - Calculate Electro Ball more similarly to Gyro Ball?
 - Get all the weird Mauville men at once?
+- Get all the Lilycove ladies at once?
+    - Update Favor Lady's items to include new items
+    - Fix Quiz Lady's Ghost question
 - Wild Beldum in Victory Road or something
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Figure out if it's possible to select multiple Pokemon when moving to or from party

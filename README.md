@@ -69,6 +69,7 @@ A Discord-based ROM hacking community that has many members who hack using the d
 - [ellabrella for increasing text speed beyond fast](https://www.pokecommunity.com/showpost.php?p=10400198)
 - [Mashanny for making text speed up without holding A/B](https://www.pokecommunity.com/showpost.php?p=10266385)
 - [Sapphire Jester for making the Soot Sack usuable](https://www.pokecommunity.com/showpost.php?p=10222284&postcount=178)
+- [ScyrousFX for making Fly usable without a Pokemon knowing it](https://www.pokecommunity.com/showpost.php?p=10420068)
 
 ## Find/Replace help
 ([A-Z])([A-Z\.é':]+)

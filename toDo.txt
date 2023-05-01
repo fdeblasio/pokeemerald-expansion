@@ -43,9 +43,7 @@
 - Edit friendship evolution methods
 - Calculate Electro Ball more similarly to Gyro Ball?
 - Get all the weird Mauville men at once?
-- Get all the Lilycove ladies at once?
-    - Update Favor Lady's items to include new items
-    - Fix Quiz Lady's Ghost question
+- Update Favor Lady's items to include new items
 - Wild Beldum in Victory Road or something
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Figure out if it's possible to select multiple Pokemon when moving to or from party
@@ -68,6 +66,7 @@
 - Make a Pokeball shop?
 - Add in Courtney (Mossdeep?)
 - Sell Net and Dive Balls at Mossdeep
+- Update Devon to revive all types of Fossils (Fix Gen 8 mixup)
 
 
 - Maybe do one run-through of small updates and then add in new items/updated teams in a second runthrough?

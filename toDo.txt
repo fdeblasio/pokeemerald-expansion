@@ -77,7 +77,6 @@
 ## To Do Soon
 Lilycove:
     Contest Hall->Safari Zone
-    Hideout Guards
     Rival->Department Store->Route 122
         Route 123
         Mt. Pyre->Magma Hideout->Aqua Hideout

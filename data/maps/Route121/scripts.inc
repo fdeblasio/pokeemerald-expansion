@@ -182,11 +182,11 @@ Route121_Text_AheadLoomsMtPyre:
 	.string "of departed Pokémon…$"
 
 Route121_Text_MtPyrePierSign:
-	.string "Mt. Pyre PIER\p"
+	.string "Mt. Pyre Pier\p"
 	.string "…The sign is old and worn out.\n"
 	.string "The words are barely legible…$"
 
 Route121_Text_SafariZoneSign:
 	.string "“Filled with rare Pokémon!”\n"
-	.string "SAFARI ZONE$"
+	.string "Safari Zone$"
 

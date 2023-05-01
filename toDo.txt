@@ -66,6 +66,7 @@
 - Poison Heal is in the game so add Toxic Orb (Lilycove?)
 - Update Deep Sea items to work on respective evolutions as well?
 - Rework land_mons to only have 10 slots? (last two would go from 4->5)?
+    - Rework fishing to have one less slot (Super Rod 4/1->5)?
 
 
 - Maybe do one run-through of small updates and then add in new items/updated teams in a second runthrough?
@@ -74,13 +75,12 @@
     - Implement Pokedex Plus (https://www.pokecommunity.com/showthread.php?t=441996)
 
 ## To Do Soon
-Route 121 pre-dock
-    Route 122
-        Route 123
-        Mt. Pyre
-            Magma Hideout
-                Aqua Hideout
-    Route 121->Lilycove->Contest Hall
-        Safari Zone
-        Rival->Department Store
-        Hideout Guards
+Route 122
+    Route 123
+    Mt. Pyre
+        Magma Hideout
+            Aqua Hideout
+Lilycove->Contest Hall
+    Safari Zone
+    Rival->Department Store
+    Hideout Guards

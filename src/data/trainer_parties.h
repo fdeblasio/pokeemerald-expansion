@@ -3387,7 +3387,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Walter5[] = {
     .iv = 40,
     .lvl = 45,
     .species = SPECIES_GOLDUCK,
-    .moves = {MOVE_HYDRO_PUMP, MOVE_CONFUSION, MOVE_PSYCH_UP, MOVE_AMNESIA}
+    .moves = {MOVE_HYDRO_PUMP, MOVE_CONFUSION, MOVE_POWER_GEM, MOVE_AMNESIA}
     },
     {
     .iv = 40,

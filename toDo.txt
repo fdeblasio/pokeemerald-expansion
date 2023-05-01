@@ -2,19 +2,12 @@
 ## To Do
 - https://www.pokecommunity.com/showthread.php?t=416647&page=1
 - https://github.com/pret/pokeemerald/wiki/Tutorials
-- Add Meditite
-- Trade Item evolutions (https://github.com/pret/pokeemerald/wiki/Allow-All-Pokemon-to-Evolve-Without-Trading might have some extra effects needed)
-    - Make Linking Cord available in shop
-    - Lilycove: Turn one 4th floor clerk into all missing TMs, the other into evolution items
-        - Maybe Battle Frontier has shop for non-Hoenn Dex items?
 - Look at new animations for moves (in battle.h)
 - Change Day/Night hours?
     - Set proper time hours (instead of all AM being morning and all PM being night)
 - Gallade Sharpness (maybe wait for master/upcoming update)
 - Make Latios/Latias easier to catch/not roam?
     - Maybe get rid of roamers and add both Latis to the Island?
-- Incorporate new items/new methods of obtaining them (like how PP Ups are sold in Chansey Supply or Bottle Caps in Delibird)
-    - Lilycove
 - Add Farigiraf to Hoenn Dex once implemented
 - Spruce up battles/rematches
     - customAll Pokemon
@@ -33,7 +26,6 @@
         - Spinda: Thrash if Own Tempo, Superpower if Contrary. Should be given a cool pattern (maybe 88888888?)
     - Fix Winona's rematches being male; Pelipper gets Drizzle
 - Overworld sprites to match trainer sprites (for example, giving Youngsters yellow shirts, girl tubers a yellow tube, and Rangers red clothes)
-- Make only one instance of each TM (https://pokemondb.net/pokebase/278398/which-tms-can-you-get-more-than-one-of-in-emerald; Lilycove ones can be configured with some shop tutorials)
 - Expand bag
 - Try to find Bolts foreground of Walda PC
 - Implement Mega Evolution (Mega Manectric for Wattson rematches)
@@ -44,29 +36,35 @@
 - Improve fishing?
 - Debug menu improvements
 - Stay on EVs/IVs when switching Pokemon
-- Make tutors multi-use and make sure there's no overlap with TMs (if there is, they could always just give them TM instead)
 - Battle Tent Pokemon/EVs?
 - Add Regigigas to Sealed Chamber?
 - Update other punches (Shadow/Dizzy/Needle Arm) to 75 BP?
 - New TM compatibility
 - Edit friendship evolution methods
-- Make a Pokeball shop?
 - Calculate Electro Ball more similarly to Gyro Ball?
 - Get all the weird Mauville men at once?
 - Wild Beldum in Victory Road or something
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Figure out if it's possible to select multiple Pokemon when moving to or from party
-- Add in Courtney (Mossdeep?)
-- Sell Net and Dive Balls at Mossdeep
 - Implement Deoxys encounter at island/changing forms at Fallarbor
 - Replace Regis with their doll sprites since they look more like them?
-- Give Golduck and Espeon Power Gem on level up
+- Give Espeon Power Gem on level up
 - Edit Slot odds (SLOT_MACHINE_)? Even though there's only three prizes?
 - Make the rapids easier to navigate?
 - Poison Heal is in the game so add Toxic Orb (Lilycove?)
 - Update Deep Sea items to work on respective evolutions as well?
 - Rework land_mons to only have 10 slots? (last two would go from 4->5)?
     - Rework fishing to have one less slot (Super Rod 4/1->5)?
+- Incorporate new items/new methods of obtaining them (like how PP Ups are sold in Chansey Supply or Bottle Caps in Delibird)
+    - Lilycove
+- Add Meditite
+- Trade Item evolutions (https://github.com/pret/pokeemerald/wiki/Allow-All-Pokemon-to-Evolve-Without-Trading might have some extra effects needed)
+    - Make Linking Cord available in shop
+    - Lilycove: Turn one 4th floor clerk into all missing TMs, the other into evolution items
+        - Maybe Battle Frontier has shop for non-Hoenn Dex items?
+- Make a Pokeball shop?
+- Add in Courtney (Mossdeep?)
+- Sell Net and Dive Balls at Mossdeep
 
 
 - Maybe do one run-through of small updates and then add in new items/updated teams in a second runthrough?
@@ -75,8 +73,7 @@
     - Implement Pokedex Plus (https://www.pokecommunity.com/showthread.php?t=441996)
 
 ## To Do Soon
-Lilycove:
-    Contest Hall->Safari Zone
-    Rival->Department Store->Route 122
-        Route 123
-        Mt. Pyre->Magma Hideout->Aqua Hideout
+Contest Hall->Safari Zone
+Rival->Department Store->Route 122
+    Route 123
+    Mt. Pyre->Magma Hideout->Aqua Hideout

@@ -75,12 +75,9 @@
     - Implement Pokedex Plus (https://www.pokecommunity.com/showthread.php?t=441996)
 
 ## To Do Soon
-Route 122
-    Route 123
-    Mt. Pyre
-        Magma Hideout
-            Aqua Hideout
-Lilycove->Contest Hall
-    Safari Zone
-    Rival->Department Store
+Lilycove:
+    Contest Hall->Safari Zone
     Hideout Guards
+    Rival->Department Store->Route 122
+        Route 123
+        Mt. Pyre->Magma Hideout->Aqua Hideout

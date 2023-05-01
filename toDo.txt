@@ -74,4 +74,13 @@
     - Implement Pokedex Plus (https://www.pokecommunity.com/showthread.php?t=441996)
 
 ## To Do Soon
-Route 120 Post-Gym
+Route 121 pre-dock
+    Route 122
+        Route 123
+        Mt. Pyre
+            Magma Hideout
+                Aqua Hideout
+    Route 121->Lilycove->Contest Hall
+        Safari Zone
+        Rival->Department Store
+        Hideout Guards

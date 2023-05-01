@@ -10638,7 +10638,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Callie[] = {
     {
     .iv = 0,
     .lvl = 32,
-    .species = SPECIES_HARIYAMA,
+    .species = SPECIES_MAKUHITA,
     }
 };
 

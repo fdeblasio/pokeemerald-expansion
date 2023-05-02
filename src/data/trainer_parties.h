@@ -11241,7 +11241,7 @@ static const struct TrainerMonItemCustomMoves sParty_Wattson5[] = {
     .iv = 255,
     .lvl = 75,
     .species = SPECIES_MANECTRIC,
-    .heldItem = ITEM_SITRUS_BERRY,
+    .heldItem = ITEM_MANECTITE,
     .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_SIGNAL_BEAM, MOVE_ICE_FANG}
     }
 };

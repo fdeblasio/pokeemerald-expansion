@@ -3,18 +3,8 @@ LilycoveCity_DepartmentStoreRooftop_MapScripts::
 	.byte 0
 
 LilycoveCity_DepartmentStoreRooftop_OnTransition:
-	getpokenewsactive POKENEWS_LILYCOVE
-	call_if_eq VAR_RESULT, TRUE, LilycoveCity_DepartmentStoreRooftop_EventScript_ShowSaleWoman
-	call_if_eq VAR_RESULT, FALSE, LilycoveCity_DepartmentStoreRooftop_EventScript_HideSaleWoman
-	end
-
-LilycoveCity_DepartmentStoreRooftop_EventScript_ShowSaleWoman::
 	clearflag FLAG_HIDE_LILYCOVE_DEPARTMENT_STORE_ROOFTOP_SALE_WOMAN
-	return
-
-LilycoveCity_DepartmentStoreRooftop_EventScript_HideSaleWoman::
-	setflag FLAG_HIDE_LILYCOVE_DEPARTMENT_STORE_ROOFTOP_SALE_WOMAN
-	return
+	end
 
 LilycoveCity_DepartmentStoreRooftop_EventScript_SaleWoman::
 	lock
@@ -49,13 +39,6 @@ LilycoveCity_DepartmentStoreRooftop_PokemartDecor_ClearOutSale:
 LilycoveCity_DepartmentStoreRooftop_EventScript_Man::
 	lock
 	faceplayer
-	getpokenewsactive POKENEWS_LILYCOVE
-	call_if_eq VAR_RESULT, TRUE, LilycoveCity_DepartmentStoreRooftop_EventScript_ManClearOutSale
-	msgbox LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales, MSGBOX_DEFAULT
-	release
-	end
-
-LilycoveCity_DepartmentStoreRooftop_EventScript_ManClearOutSale::
 	msgbox LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale, MSGBOX_DEFAULT
 	release
 	end
@@ -140,7 +123,7 @@ LilycoveCity_DepartmentStoreRooftop_EventScript_TryBuyDrink::
 	bufferitemname STR_VAR_2, VAR_TEMP_0
 	bufferstdstring STR_VAR_3, STDSTRING_ITEMS
 	msgbox gText_PutItemInPocket, MSGBOX_DEFAULT
-	random 64  @ 1/64 chance of an additional drink dropping
+	random 16  @ 1/16 chance of an additional drink dropping
 	goto_if_ne VAR_RESULT, 0, LilycoveCity_DepartmentStoreRooftop_EventScript_ChooseNewDrink
 	checkitemspace VAR_TEMP_0
 	goto_if_eq VAR_RESULT, FALSE, LilycoveCity_DepartmentStoreRooftop_EventScript_NoRoomForDrink
@@ -150,7 +133,7 @@ LilycoveCity_DepartmentStoreRooftop_EventScript_TryBuyDrink::
 	bufferitemname STR_VAR_2, VAR_TEMP_0
 	bufferstdstring STR_VAR_3, STDSTRING_ITEMS
 	msgbox gText_PutItemInPocket, MSGBOX_DEFAULT
-	random 64  @ 1/64 * the prev 1/64 chance of a third additional drink dropping, ~ 0.02% chance
+	random 16  @ 1/16 * the prev 1/16 chance of a third additional drink dropping, ~ 0.4% chance
 	goto_if_ne VAR_RESULT, 0, LilycoveCity_DepartmentStoreRooftop_EventScript_ChooseNewDrink
 	checkitemspace VAR_TEMP_0
 	goto_if_eq VAR_RESULT, 0, LilycoveCity_DepartmentStoreRooftop_EventScript_NoRoomForDrink

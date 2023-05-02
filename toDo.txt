@@ -70,9 +70,6 @@
 
 ## To Do Soon
 Safari Zone
-Department Store
-    - Mega stones
-    - EV berries (maybe can go with Vitamins)
 Route 122
     Route 123
     Mt. Pyre->Magma Hideout->Aqua Hideout

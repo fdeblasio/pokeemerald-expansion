@@ -18,22 +18,66 @@ LilycoveCity_DepartmentStore_4F_EventScript_ClerkLeft::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemart LilycoveCity_DepartmentStore_4F_Pokemart_AttackTMs
+	pokemart LilycoveCity_DepartmentStore_4F_Pokemart_OldTMs
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
 
 	.align 2
-LilycoveCity_DepartmentStore_4F_Pokemart_AttackTMs:
+LilycoveCity_DepartmentStore_4F_Pokemart_OldTMs:
 	.2byte ITEM_TM14  @ Blizzard
 	.2byte ITEM_TM15  @ Hyper Beam
+	.2byte ITEM_TM16  @ Light Screen
+	.2byte ITEM_TM17  @ Protect
+	.2byte ITEM_TM20  @ Safeguard
 	.2byte ITEM_TM25  @ Thunder
+	.2byte ITEM_TM33  @ Reflect
 	.2byte ITEM_TM38  @ Fire Blast
 	.2byte ITEM_NONE
 	release
 	end
 
-LilycoveCity_DepartmentStore_4F_EventScript_ClerkNewTMs::
+LilycoveCity_DepartmentStore_4F_EventScript_ClerkMegaStones::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart LilycoveCity_DepartmentStore_4F_Pokemart_MegaStones
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+LilycoveCity_DepartmentStore_4F_Pokemart_MegaStones:
+	.2byte ITEM_ALAKAZITE
+	.2byte ITEM_PINSIRITE
+	.2byte ITEM_GYARADOSITE
+	.2byte ITEM_HERACRONITE
+	.2byte ITEM_SCEPTILITE
+	.2byte ITEM_BLAZIKENITE
+	.2byte ITEM_SWAMPERTITE
+	.2byte ITEM_GARDEVOIRITE
+	.2byte ITEM_GALLADITE
+	.2byte ITEM_SABLENITE
+	.2byte ITEM_MAWILITE
+	.2byte ITEM_AGGRONITE
+	.2byte ITEM_MEDICHAMITE
+	.2byte ITEM_MANECTITE
+	.2byte ITEM_SHARPEDONITE
+	.2byte ITEM_CAMERUPTITE
+	.2byte ITEM_ALTARIANITE
+	.2byte ITEM_BANETTITE
+	.2byte ITEM_ABSOLITE
+	.2byte ITEM_GLALITITE
+	.2byte ITEM_SALAMENCITE
+	.2byte ITEM_METAGROSSITE
+	.2byte ITEM_LATIASITE
+	.2byte ITEM_LATIOSITE
+	.2byte ITEM_NONE
+	release
+	end
+
+LilycoveCity_DepartmentStore_4F_EventScript_ClerkRight::
 	lock
 	faceplayer
 	message gText_HowMayIServeYou
@@ -77,26 +121,6 @@ LilycoveCity_DepartmentStore_4F_Pokemart_NewTMs:
 	.2byte ITEM_TM98  @ Air Slash
 	.2byte ITEM_TM99  @ Body Press
 	.2byte ITEM_TM100  @ Moonblast
-	.2byte ITEM_NONE
-	release
-	end
-
-LilycoveCity_DepartmentStore_4F_EventScript_ClerkRight::
-	lock
-	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
-	pokemart LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
-
-	.align 2
-LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs:
-	.2byte ITEM_TM16  @ Light Screen
-	.2byte ITEM_TM17  @ Protect
-	.2byte ITEM_TM20  @ Safeguard
-	.2byte ITEM_TM33  @ Reflect
 	.2byte ITEM_NONE
 	release
 	end

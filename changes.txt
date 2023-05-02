@@ -1,6 +1,6 @@
-Gym Leaders use more Hoenn Pokemon
+Gym Leaders use more Hoenn Pokémon
 Gym Leaders and Magma/Aqua Admins/Leaders no longer have underleveled evolutions
-Pokemon have a more even encounter distribution
+Pokémon have a more even encounter distribution
 
 Moves:
     Double Slap is called Multi-Slap
@@ -15,12 +15,13 @@ Moves:
         Crush Claw
         Razor Shell
 
-Pokemon:
+Pokémon:
     ALL:
         Movesets a combination of Gens 7-9
             Typically this means they have their latest moveset plus most moves from their Gen 7 moveset that have been removed
                 Natural Gift, Lucky Chant, and Synchronoise have been removed
         Any other moveset changes will be noted
+        If a Pokémon can evolve by holding/being traded with an item, it now can evolve from that item being used
 
     Nidorina/Nidoqueen:
         Can now breed

@@ -89,58 +89,58 @@ TM50_OVERHEAT - Flannery
 Lilycove Department - 8
 Slateport TM - 8
 Lavaridge TM - 10
-  Either replaces Mauville Game Corner TMs or is in Lavaridge
+Lilycove TM Shop - 32
 
 TM51_ROOST - Slateport TM Shop
 TM52_FOCUS_BLAST - Victory Road
-TM53_ENERGY_BALL
+TM53_ENERGY_BALL - Lilycove TM Shop
 TM54_FALSE_SWIPE - Slateport TM Shop
 TM55_BRINE - Lavaridge TM Shop
-TM56_SIGNAL_BEAM
+TM56_SIGNAL_BEAM - Lilycove TM Shop
 TM57_CHARGE_BEAM - Slateport TM Shop
-TM58_PSYCHIC_FANGS
-TM59_DRAGON_PULSE
-TM60_DRAIN_PUNCH
+TM58_PSYCHIC_FANGS - Lilycove TM Shop
+TM59_DRAGON_PULSE - Lilycove TM Shop
+TM60_DRAIN_PUNCH - Lilycove TM Shop
 TM61_WILL_O_WISP - Slateport TM Shop
 TM62_SILVER_WIND - Slateport TM Shop
-TM63_DAZZLING_GLEAM
-TM64_SEED_BOMB
-TM65_SHADOW_CLAW
+TM63_DAZZLING_GLEAM - Lilycove TM Shop
+TM64_SEED_BOMB - Lilycove TM Shop
+TM65_SHADOW_CLAW - Lilycove TM Shop
 TM66_PAYBACK - Lavaridge TM Shop
 TM67_POWER_GEM - Fallarbor
-TM68_GIGA_IMPACT
-TM69_PLAY_ROUGH
-TM70_LEECH_LIFE
-TM71_STONE_EDGE
+TM68_GIGA_IMPACT - Lilycove TM Shop
+TM69_PLAY_ROUGH - Lilycove TM Shop
+TM70_LEECH_LIFE - Lilycove TM Shop
+TM71_STONE_EDGE - Lilycove TM Shop
 TM72_AVALANCHE - Lavaridge TM Shop
 TM73_THUNDER_WAVE - Slateport TM Shop/(Replace Battle Frontier Tutor) 
 TM74_GYRO_BALL - Lavaridge TM Shop
 TM75_SWORDS_DANCE - Lavaridge TM Shop (Replace Battle Frontier Tutor) 
 TM76_STEALTH_ROCK - Lavaridge TM Shop
 TM77_PSYCH_UP - Slateport TM Shop/(Replace Battle Frontier Tutor) 
-TM78_CRUNCH
-TM79_DARK_PULSE
-TM80_ROCK_SLIDE - (Replace Battle Frontier Tutor) 
-TM81_X_SCISSOR
-TM82_NIGHT_SLASH
-TM83_IRON_HEAD
-TM84_POISON_JAB
-TM85_AURA_SPHERE
+TM78_CRUNCH - Lilycove TM Shop
+TM79_DARK_PULSE - Lilycove TM Shop
+TM80_ROCK_SLIDE - Lilycove TM Shop/(Replace Battle Frontier Tutor) 
+TM81_X_SCISSOR - Lilycove TM Shop
+TM82_NIGHT_SLASH - Lilycove TM Shop
+TM83_IRON_HEAD - Lilycove TM Shop
+TM84_POISON_JAB - Lilycove TM Shop
+TM85_AURA_SPHERE - Lilycove TM Shop
 TM86_GRASS_KNOT - Lavaridge TM Shop
-TM87_BUG_BUZZ
-TM88_ACROBATICS
+TM87_BUG_BUZZ - Lilycove TM Shop
+TM88_ACROBATICS - Lilycove TM Shop
 TM89_U_TURN - Lavaridge TM Shop
-TM90_BODY_SLAM - (Replace Battle Frontier Tutor) 
-TM91_FLASH_CANNON
+TM90_BODY_SLAM - Lilycove TM Shop/(Replace Battle Frontier Tutor) 
+TM91_FLASH_CANNON - Lilycove TM Shop
 TM92_TRICK_ROOM - Lavaridge TM Shop
-TM93_LIQUIDATION
-TM94_THUNDER_PUNCH - (Replace Battle Frontier Tutor) 
-TM95_FIRE_PUNCH - (Replace Battle Frontier Tutor) 
-TM96_ICE_PUNCH - (Replace Battle Frontier Tutor) 
-TM97_EARTH_POWER
-TM98_AIR_SLASH
-TM99_BODY_PRESS
-TM100_MOONBLAST
+TM93_LIQUIDATION - Lilycove TM Shop
+TM94_THUNDER_PUNCH - Lilycove TM Shop/(Replace Battle Frontier Tutor) 
+TM95_FIRE_PUNCH - Lilycove TM Shop/(Replace Battle Frontier Tutor) 
+TM96_ICE_PUNCH - Lilycove TM Shop/(Replace Battle Frontier Tutor) 
+TM97_EARTH_POWER - Lilycove TM Shop
+TM98_AIR_SLASH - Lilycove TM Shop
+TM99_BODY_PRESS - Lilycove TM Shop
+TM100_MOONBLAST - Lilycove TM Shop
 
 Move Tutor Replacements: 8
   4 Terrain moves (give to Tapus)

@@ -63,7 +63,6 @@
     - Make Linking Cord available in shop
     - Lilycove: Turn one 4th floor clerk into all missing TMs, the other into evolution items
         - Maybe Battle Frontier has shop for non-Hoenn Dex items?
-- Make a Pokeball shop?
 - Add in Courtney (Mossdeep?)
 - Sell Net and Dive Balls at Mossdeep
 - Update Devon to revive all types of Fossils (Fix Gen 8 mixup)

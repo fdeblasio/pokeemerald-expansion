@@ -5266,13 +5266,7 @@ static s16 AI_Roaming(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
 // Safari pokemon logic
 static s16 AI_Safari(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
 {
-    u8 safariFleeRate = gBattleStruct->safariEscapeFactor * 5; // Safari flee rate, from 0-20.
-
-    if ((Random() % 100) < safariFleeRate)
-        AI_Flee();
-    else
-        AI_Watch();
-
+    AI_Watch();
     return score;
 }
 

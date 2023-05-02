@@ -23,21 +23,37 @@ LilycoveCity_DepartmentStore_2F_EventScript_ClerkLeft::
 	release
 	end
 
-LilycoveCity_DepartmentStore_2F_EventScript_ClerkRight::
+LilycoveCity_DepartmentStore_2F_EventScript_ClerkEscape::
 	lock
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemart LilycoveCity_DepartmentStore_2F_Pokemart2
+	pokemart LilycoveCity_DepartmentStore_2F_PokemartEscape
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
 
 	.align 2
-LilycoveCity_DepartmentStore_2F_Pokemart2:
+LilycoveCity_DepartmentStore_2F_PokemartEscape:
 	.2byte ITEM_FLUFFY_TAIL
 	.2byte ITEM_POKE_DOLL
 	.2byte ITEM_POKE_TOY
+	.2byte ITEM_NONE
+	release
+	end
+
+LilycoveCity_DepartmentStore_2F_EventScript_ClerkBalls::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart LilycoveCity_DepartmentStore_2F_PokemartBalls
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+LilycoveCity_DepartmentStore_2F_PokemartBalls:
     .2byte ITEM_POKE_BALL
     .2byte ITEM_GREAT_BALL
     .2byte ITEM_ULTRA_BALL

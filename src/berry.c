@@ -178,7 +178,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 0,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 25
     },
 
     [ITEM_CHESTO_BERRY - FIRST_BERRY_INDEX] =
@@ -196,7 +196,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 0,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 25
     },
 
     [ITEM_PECHA_BERRY - FIRST_BERRY_INDEX] =
@@ -214,7 +214,7 @@ const struct Berry gBerries[] =
         .sweet = 20,
         .bitter = 0,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 25
     },
 
     [ITEM_RAWST_BERRY - FIRST_BERRY_INDEX] =
@@ -232,7 +232,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 20,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 25
     },
 
     [ITEM_ASPEAR_BERRY - FIRST_BERRY_INDEX] =
@@ -250,7 +250,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 0,
         .sour = 20,
-        .smoothness = 10
+        .smoothness = 25
     },
 
     [ITEM_LEPPA_BERRY - FIRST_BERRY_INDEX] =
@@ -268,7 +268,7 @@ const struct Berry gBerries[] =
         .sweet = 10,
         .bitter = 10,
         .sour = 10,
-        .smoothness = 10
+        .smoothness = 20
     },
 
     [ITEM_ORAN_BERRY - FIRST_BERRY_INDEX] =
@@ -286,7 +286,7 @@ const struct Berry gBerries[] =
         .sweet = 10,
         .bitter = 10,
         .sour = 10,
-        .smoothness = 10
+        .smoothness = 20
     },
 
     [ITEM_PERSIM_BERRY - FIRST_BERRY_INDEX] =
@@ -304,7 +304,7 @@ const struct Berry gBerries[] =
         .sweet = 10,
         .bitter = 10,
         .sour = 10,
-        .smoothness = 10
+        .smoothness = 20
     },
 
     [ITEM_LUM_BERRY - FIRST_BERRY_INDEX] =
@@ -322,7 +322,7 @@ const struct Berry gBerries[] =
         .sweet = 10,
         .bitter = 10,
         .sour = 10,
-        .smoothness = 10
+        .smoothness = 20
     },
 
     [ITEM_SITRUS_BERRY - FIRST_BERRY_INDEX] =
@@ -340,7 +340,7 @@ const struct Berry gBerries[] =
         .sweet = 10,
         .bitter = 10,
         .sour = 10,
-        .smoothness = 10
+        .smoothness = 20
     },
 
     [ITEM_FIGY_BERRY - FIRST_BERRY_INDEX] =
@@ -358,7 +358,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 0,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 25
     },
 
     [ITEM_WIKI_BERRY - FIRST_BERRY_INDEX] =
@@ -376,7 +376,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 0,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 25
     },
 
     [ITEM_MAGO_BERRY - FIRST_BERRY_INDEX] =
@@ -394,7 +394,7 @@ const struct Berry gBerries[] =
         .sweet = 30,
         .bitter = 0,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 25
     },
 
     [ITEM_AGUAV_BERRY - FIRST_BERRY_INDEX] =
@@ -412,7 +412,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 30,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 25
     },
 
     [ITEM_IAPAPA_BERRY - FIRST_BERRY_INDEX] =
@@ -430,7 +430,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 0,
         .sour = 30,
-        .smoothness = 10
+        .smoothness = 25
     },
 
     [ITEM_RAZZ_BERRY - FIRST_BERRY_INDEX] =
@@ -448,7 +448,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 0,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 20
     },
 
     [ITEM_BLUK_BERRY - FIRST_BERRY_INDEX] =
@@ -466,7 +466,7 @@ const struct Berry gBerries[] =
         .sweet = 10,
         .bitter = 0,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 20
     },
 
     [ITEM_NANAB_BERRY - FIRST_BERRY_INDEX] =
@@ -484,7 +484,7 @@ const struct Berry gBerries[] =
         .sweet = 10,
         .bitter = 10,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 20
     },
 
     [ITEM_WEPEAR_BERRY - FIRST_BERRY_INDEX] =
@@ -502,7 +502,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 10,
         .sour = 10,
-        .smoothness = 10
+        .smoothness = 20
     },
 
     [ITEM_PINAP_BERRY - FIRST_BERRY_INDEX] =
@@ -520,7 +520,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 0,
         .sour = 10,
-        .smoothness = 10
+        .smoothness = 20
     },
 
     [ITEM_POMEG_BERRY - FIRST_BERRY_INDEX] =
@@ -538,7 +538,7 @@ const struct Berry gBerries[] =
         .sweet = 10,
         .bitter = 10,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 20
     },
 
     [ITEM_KELPSY_BERRY - FIRST_BERRY_INDEX] =
@@ -556,7 +556,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 10,
         .sour = 10,
-        .smoothness = 10
+        .smoothness = 20
     },
 
     [ITEM_QUALOT_BERRY - FIRST_BERRY_INDEX] =
@@ -574,7 +574,7 @@ const struct Berry gBerries[] =
         .sweet = 10,
         .bitter = 0,
         .sour = 10,
-        .smoothness = 10
+        .smoothness = 20
     },
 
     [ITEM_HONDEW_BERRY - FIRST_BERRY_INDEX] =
@@ -592,7 +592,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 10,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 20
     },
 
     [ITEM_GREPA_BERRY - FIRST_BERRY_INDEX] =
@@ -610,7 +610,7 @@ const struct Berry gBerries[] =
         .sweet = 10,
         .bitter = 0,
         .sour = 10,
-        .smoothness = 10
+        .smoothness = 20
     },
 
     [ITEM_TAMATO_BERRY - FIRST_BERRY_INDEX] =
@@ -628,7 +628,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 0,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 30
     },
 
     [ITEM_CORNN_BERRY - FIRST_BERRY_INDEX] =
@@ -646,7 +646,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 0,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 30
     },
 
     [ITEM_MAGOST_BERRY - FIRST_BERRY_INDEX] =
@@ -664,7 +664,7 @@ const struct Berry gBerries[] =
         .sweet = 40,
         .bitter = 0,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 30
     },
 
     [ITEM_RABUTA_BERRY - FIRST_BERRY_INDEX] =
@@ -682,7 +682,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 40,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 30
     },
 
     [ITEM_NOMEL_BERRY - FIRST_BERRY_INDEX] =
@@ -700,7 +700,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 0,
         .sour = 40,
-        .smoothness = 10
+        .smoothness = 30
     },
 
     [ITEM_SPELON_BERRY - FIRST_BERRY_INDEX] =
@@ -718,7 +718,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 0,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 35
     },
 
     [ITEM_PAMTRE_BERRY - FIRST_BERRY_INDEX] =
@@ -736,7 +736,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 0,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 35
     },
 
     [ITEM_WATMEL_BERRY - FIRST_BERRY_INDEX] =
@@ -754,7 +754,7 @@ const struct Berry gBerries[] =
         .sweet = 50,
         .bitter = 0,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 35
     },
 
     [ITEM_DURIN_BERRY - FIRST_BERRY_INDEX] =
@@ -772,7 +772,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 50,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 35
     },
 
     [ITEM_BELUE_BERRY - FIRST_BERRY_INDEX] =
@@ -790,7 +790,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 0,
         .sour = 50,
-        .smoothness = 10
+        .smoothness = 35
     },
 
     [ITEM_CHILAN_BERRY - FIRST_BERRY_INDEX] =
@@ -808,7 +808,7 @@ const struct Berry gBerries[] =
         .sweet = 10,
         .bitter = 0,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 35
     },
 
     [ITEM_OCCA_BERRY - FIRST_BERRY_INDEX] =
@@ -826,7 +826,7 @@ const struct Berry gBerries[] =
         .sweet = 10,
         .bitter = 0,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 30
     },
 
     [ITEM_PASSHO_BERRY - FIRST_BERRY_INDEX] =
@@ -844,7 +844,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 10,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 30
     },
 
     [ITEM_WACAN_BERRY - FIRST_BERRY_INDEX] =
@@ -862,7 +862,7 @@ const struct Berry gBerries[] =
         .sweet = 15,
         .bitter = 0,
         .sour = 10,
-        .smoothness = 10
+        .smoothness = 30
     },
 
     [ITEM_RINDO_BERRY - FIRST_BERRY_INDEX] =
@@ -880,7 +880,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 15,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 30
     },
 
     [ITEM_YACHE_BERRY - FIRST_BERRY_INDEX] =
@@ -898,7 +898,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 0,
         .sour = 15,
-        .smoothness = 10
+        .smoothness = 30
     },
 
     [ITEM_CHOPLE_BERRY - FIRST_BERRY_INDEX] =
@@ -916,7 +916,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 10,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 30
     },
 
     [ITEM_KEBIA_BERRY - FIRST_BERRY_INDEX] =
@@ -934,7 +934,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 0,
         .sour = 10,
-        .smoothness = 10
+        .smoothness = 30
     },
 
     [ITEM_SHUCA_BERRY - FIRST_BERRY_INDEX] =
@@ -952,7 +952,7 @@ const struct Berry gBerries[] =
         .sweet = 15,
         .bitter = 0,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 30
     },
 
     [ITEM_COBA_BERRY - FIRST_BERRY_INDEX] =
@@ -970,7 +970,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 15,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 30
     },
 
     [ITEM_PAYAPA_BERRY - FIRST_BERRY_INDEX] =
@@ -988,7 +988,7 @@ const struct Berry gBerries[] =
         .sweet = 10,
         .bitter = 0,
         .sour = 15,
-        .smoothness = 10
+        .smoothness = 30
     },
 
     [ITEM_TANGA_BERRY - FIRST_BERRY_INDEX] =
@@ -1006,7 +1006,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 0,
         .sour = 10,
-        .smoothness = 10
+        .smoothness = 30
     },
 
     [ITEM_CHARTI_BERRY - FIRST_BERRY_INDEX] =
@@ -1024,7 +1024,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 0,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 30
     },
 
     [ITEM_KASIB_BERRY - FIRST_BERRY_INDEX] =
@@ -1042,7 +1042,7 @@ const struct Berry gBerries[] =
         .sweet = 20,
         .bitter = 0,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 30
     },
 
     [ITEM_HABAN_BERRY - FIRST_BERRY_INDEX] =
@@ -1060,7 +1060,7 @@ const struct Berry gBerries[] =
         .sweet = 10,
         .bitter = 20,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 30
     },
 
     [ITEM_COLBUR_BERRY - FIRST_BERRY_INDEX] =
@@ -1078,7 +1078,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 10,
         .sour = 20,
-        .smoothness = 10
+        .smoothness = 30
     },
 
     [ITEM_BABIRI_BERRY - FIRST_BERRY_INDEX] =
@@ -1096,7 +1096,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 0,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 30
     },
 
     [ITEM_ROSELI_BERRY - FIRST_BERRY_INDEX] =
@@ -1114,7 +1114,7 @@ const struct Berry gBerries[] =
         .sweet = 25,
         .bitter = 10,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 35
     },
 
     [ITEM_LIECHI_BERRY - FIRST_BERRY_INDEX] =
@@ -1132,7 +1132,7 @@ const struct Berry gBerries[] =
         .sweet = 40,
         .bitter = 0,
         .sour = 10,
-        .smoothness = 10
+        .smoothness = 40
     },
 
     [ITEM_GANLON_BERRY - FIRST_BERRY_INDEX] =
@@ -1150,7 +1150,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 40,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 40
     },
 
     [ITEM_SALAC_BERRY - FIRST_BERRY_INDEX] =
@@ -1168,7 +1168,7 @@ const struct Berry gBerries[] =
         .sweet = 40,
         .bitter = 0,
         .sour = 40,
-        .smoothness = 10
+        .smoothness = 40
     },
 
     [ITEM_PETAYA_BERRY - FIRST_BERRY_INDEX] =
@@ -1186,7 +1186,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 40,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 40
     },
 
     [ITEM_APICOT_BERRY - FIRST_BERRY_INDEX] =
@@ -1204,7 +1204,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 0,
         .sour = 40,
-        .smoothness = 10
+        .smoothness = 40
     },
 
     [ITEM_LANSAT_BERRY - FIRST_BERRY_INDEX] =
@@ -1222,7 +1222,7 @@ const struct Berry gBerries[] =
         .sweet = 10,
         .bitter = 10,
         .sour = 10,
-        .smoothness = 10
+        .smoothness = 50
     },
 
     [ITEM_STARF_BERRY - FIRST_BERRY_INDEX] =
@@ -1240,7 +1240,7 @@ const struct Berry gBerries[] =
         .sweet = 10,
         .bitter = 10,
         .sour = 10,
-        .smoothness = 10
+        .smoothness = 50
     },
 
     [ITEM_ENIGMA_BERRY - FIRST_BERRY_INDEX] =
@@ -1258,7 +1258,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 0,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 60
     },
 
     [ITEM_MICLE_BERRY - FIRST_BERRY_INDEX] =
@@ -1276,7 +1276,7 @@ const struct Berry gBerries[] =
         .sweet = 10,
         .bitter = 0,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 60
     },
 
     [ITEM_CUSTAP_BERRY - FIRST_BERRY_INDEX] =
@@ -1294,7 +1294,7 @@ const struct Berry gBerries[] =
         .sweet = 40,
         .bitter = 10,
         .sour = 0,
-        .smoothness = 10
+        .smoothness = 60
     },
 
     [ITEM_JABOCA_BERRY - FIRST_BERRY_INDEX] =
@@ -1312,7 +1312,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 40,
         .sour = 10,
-        .smoothness = 10
+        .smoothness = 60
     },
 
     [ITEM_ROWAP_BERRY - FIRST_BERRY_INDEX] =
@@ -1330,7 +1330,7 @@ const struct Berry gBerries[] =
         .sweet = 0,
         .bitter = 0,
         .sour = 40,
-        .smoothness = 10
+        .smoothness = 60
     },
 
     [ITEM_KEE_BERRY - FIRST_BERRY_INDEX] =
@@ -1348,7 +1348,7 @@ const struct Berry gBerries[] =
         .sweet = 10,
         .bitter = 10,
         .sour = 10,
-        .smoothness = 10
+        .smoothness = 60
     },
 
     [ITEM_MARANGA_BERRY - FIRST_BERRY_INDEX] =
@@ -1366,7 +1366,7 @@ const struct Berry gBerries[] =
         .sweet = 30,
         .bitter = 30,
         .sour = 10,
-        .smoothness = 10
+        .smoothness = 60
     },
 
     [ITEM_ENIGMA_BERRY_E_READER - FIRST_BERRY_INDEX] =
@@ -1384,7 +1384,7 @@ const struct Berry gBerries[] =
         .sweet = 40,
         .bitter = 40,
         .sour = 40,
-        .smoothness = 10
+        .smoothness = 40
     },
 };
 

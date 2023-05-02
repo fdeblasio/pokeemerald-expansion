@@ -70,7 +70,6 @@
     - Revamp EVs to give 1 stat per EV and cap out at 63
 
 ## To Do Soon
-Safari Zone
 Mt. Pyre
     Magma Hideout->Aqua Hideout
     Route 123

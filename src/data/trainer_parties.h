@@ -9343,138 +9343,168 @@ static const struct TrainerMonNoItemCustomMoves sParty_WallyVR5[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_BrendanLilycoveMudkip[] = {
     {
     .iv = 150,
-    .lvl = 31,
-    .species = SPECIES_TROPIUS,
+    .lvl = 35,
+    .species = SPECIES_VIBRAVA,
     },
     {
     .iv = 150,
-    .lvl = 32,
-    .species = SPECIES_SLUGMA,
+    .lvl = 35,
+    .species = SPECIES_MAGCARGO,
     },
     {
     .iv = 150,
-    .lvl = 32,
-    .species = SPECIES_PELIPPER,
+    .lvl = 35,
+    .species = SPECIES_CRAWDAUNT,
+    },
+    {
+    .iv = 150,
+    .lvl = 36,
+    .species = SPECIES_LOUDRED,
     },
     {
     .iv = 200,
-    .lvl = 34,
-    .species = SPECIES_GROVYLE,
+    .lvl = 37,
+    .species = SPECIES_SCEPTILE,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_BrendanLilycoveTreecko[] = {
     {
     .iv = 150,
-    .lvl = 31,
-    .species = SPECIES_TROPIUS,
+    .lvl = 35,
+    .species = SPECIES_VIBRAVA,
     },
     {
     .iv = 150,
-    .lvl = 32,
-    .species = SPECIES_PELIPPER,
+    .lvl = 35,
+    .species = SPECIES_CRAWDAUNT,
     },
     {
     .iv = 150,
-    .lvl = 32,
-    .species = SPECIES_LUDICOLO,
+    .lvl = 35,
+    .species = SPECIES_BRELOOM,
+    },
+    {
+    .iv = 150,
+    .lvl = 36,
+    .species = SPECIES_LOUDRED,
     },
     {
     .iv = 200,
-    .lvl = 34,
-    .species = SPECIES_COMBUSKEN,
+    .lvl = 37,
+    .species = SPECIES_BLAZIKEN,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_BrendanLilycoveTorchic[] = {
     {
     .iv = 150,
-    .lvl = 31,
-    .species = SPECIES_TROPIUS,
+    .lvl = 35,
+    .species = SPECIES_VIBRAVA,
     },
     {
     .iv = 150,
-    .lvl = 32,
-    .species = SPECIES_LUDICOLO,
+    .lvl = 35,
+    .species = SPECIES_BRELOOM,
     },
     {
     .iv = 150,
-    .lvl = 32,
-    .species = SPECIES_SLUGMA,
+    .lvl = 35,
+    .species = SPECIES_MAGCARGO,
+    },
+    {
+    .iv = 150,
+    .lvl = 36,
+    .species = SPECIES_LOUDRED,
     },
     {
     .iv = 200,
-    .lvl = 34,
-    .species = SPECIES_MARSHTOMP,
+    .lvl = 37,
+    .species = SPECIES_SWAMPERT,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_MayLilycoveMudkip[] = {
     {
     .iv = 150,
-    .lvl = 31,
-    .species = SPECIES_TROPIUS,
+    .lvl = 35,
+    .species = SPECIES_VIBRAVA,
     },
     {
     .iv = 150,
-    .lvl = 32,
-    .species = SPECIES_SLUGMA,
+    .lvl = 35,
+    .species = SPECIES_NINETALES,
     },
     {
     .iv = 150,
-    .lvl = 32,
+    .lvl = 35,
     .species = SPECIES_PELIPPER,
     },
     {
+    .iv = 150,
+    .lvl = 36,
+    .species = SPECIES_LOUDRED,
+    },
+    {
     .iv = 200,
-    .lvl = 34,
-    .species = SPECIES_GROVYLE,
+    .lvl = 37,
+    .species = SPECIES_SCEPTILE,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_MayLilycoveTreecko[] = {
     {
     .iv = 150,
-    .lvl = 31,
-    .species = SPECIES_TROPIUS,
+    .lvl = 35,
+    .species = SPECIES_VIBRAVA,
     },
     {
     .iv = 150,
-    .lvl = 32,
+    .lvl = 35,
     .species = SPECIES_PELIPPER,
     },
     {
     .iv = 150,
-    .lvl = 32,
-    .species = SPECIES_LUDICOLO,
+    .lvl = 35,
+    .species = SPECIES_CACTURNE,
+    },
+    {
+    .iv = 150,
+    .lvl = 36,
+    .species = SPECIES_LOUDRED,
     },
     {
     .iv = 200,
-    .lvl = 34,
-    .species = SPECIES_COMBUSKEN,
+    .lvl = 37,
+    .species = SPECIES_BLAZIKEN,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_MayLilycoveTorchic[] = {
     {
     .iv = 150,
-    .lvl = 31,
-    .species = SPECIES_TROPIUS,
+    .lvl = 35,
+    .species = SPECIES_VIBRAVA,
     },
     {
     .iv = 150,
-    .lvl = 32,
-    .species = SPECIES_LUDICOLO,
+    .lvl = 35,
+    .species = SPECIES_CACTURNE,
     },
     {
     .iv = 150,
-    .lvl = 32,
-    .species = SPECIES_SLUGMA,
+    .lvl = 35,
+    .species = SPECIES_NINETALES,
+    },
+    {
+    .iv = 150,
+    .lvl = 36,
+    .species = SPECIES_LOUDRED,
     },
     {
     .iv = 200,
-    .lvl = 34,
-    .species = SPECIES_MARSHTOMP,
+    .lvl = 37,
+    .species = SPECIES_SWAMPERT,
     }
 };
 

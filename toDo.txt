@@ -71,11 +71,10 @@
 ## To Do Soon
 Safari Zone
 Department Store
-    Battle Items (Toxic Orb, other Delibird Presents items)
-    Stones and other evolution items
+    - Stones and other evolution items
         (https://github.com/pret/pokeemerald/wiki/Allow-All-Pokemon-to-Evolve-Without-Trading might have some extra effects needed)
-    - Turn one 4th floor clerk into all missing TMs, the other into evolution items
-    - Maybe Battle Frontier has shop for non-Hoenn Dex items?
+    - Turn one 4th floor clerk into all missing TMs
+    - Mega stones
 Route 122
     Route 123
     Mt. Pyre->Magma Hideout->Aqua Hideout

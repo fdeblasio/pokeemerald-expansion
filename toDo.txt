@@ -9,6 +9,7 @@
 - Make Latios/Latias easier to catch/not roam?
     - Maybe get rid of roamers and add both Latis to the Island?
 - Add Farigiraf to Hoenn Dex once implemented
+- Add Paradoxes as evolutions?
 - Spruce up battles/rematches
     - customAll Pokemon
         - Winston could have a shiny
@@ -58,7 +59,6 @@
 - Update Devon to revive all types of Fossils (Fix Gen 8 mixup)
 - Once Mints are implemented, in Lilycove 3F, move X items to left clerk and make right clerk Mints
     - Or move Mints to left too and have left be Chansey, right be Delibird
-- Add Meditite
 - Add in Courtney (Mossdeep?)
 - Sell Net and Dive Balls at Mossdeep
 
@@ -70,6 +70,6 @@
     - Revamp EVs to give 1 stat per EV and cap out at 63
 
 ## To Do Soon
-Mt. Pyre
+Mt. Pyre (add Meditite)
     Magma Hideout->Aqua Hideout
     Route 123

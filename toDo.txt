@@ -52,20 +52,15 @@
 - Give Espeon Power Gem on level up
 - Edit Slot odds (SLOT_MACHINE_)? Even though there's only three prizes?
 - Make the rapids easier to navigate?
-- Poison Heal is in the game so add Toxic Orb (Lilycove?)
 - Update Deep Sea items to work on respective evolutions as well?
 - Rework land_mons to only have 10 slots? (last two would go from 4->5)?
     - Rework fishing to have one less slot (Super Rod 4/1->5)?
-- Incorporate new items/new methods of obtaining them (like how PP Ups are sold in Chansey Supply or Bottle Caps in Delibird)
-    - Lilycove
+- Update Devon to revive all types of Fossils (Fix Gen 8 mixup)
+- Once Mints are implemented, in Lilycove 3F, move X items to left clerk and make right clerk Mints
+    - Or move Mints to left too and have left be Chansey, right be Delibird
 - Add Meditite
-- Trade Item evolutions (https://github.com/pret/pokeemerald/wiki/Allow-All-Pokemon-to-Evolve-Without-Trading might have some extra effects needed)
-    - Make Linking Cord available in shop
-    - Lilycove: Turn one 4th floor clerk into all missing TMs, the other into evolution items
-        - Maybe Battle Frontier has shop for non-Hoenn Dex items?
 - Add in Courtney (Mossdeep?)
 - Sell Net and Dive Balls at Mossdeep
-- Update Devon to revive all types of Fossils (Fix Gen 8 mixup)
 
 
 - Maybe do one run-through of small updates and then add in new items/updated teams in a second runthrough?
@@ -76,6 +71,11 @@
 ## To Do Soon
 Safari Zone
 Department Store
+    Battle Items (Toxic Orb, other Delibird Presents items)
+    Stones and other evolution items
+        (https://github.com/pret/pokeemerald/wiki/Allow-All-Pokemon-to-Evolve-Without-Trading might have some extra effects needed)
+    - Turn one 4th floor clerk into all missing TMs, the other into evolution items
+    - Maybe Battle Frontier has shop for non-Hoenn Dex items?
 Route 122
     Route 123
     Mt. Pyre->Magma Hideout->Aqua Hideout

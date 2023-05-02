@@ -76,6 +76,8 @@
 
 ## To Do Soon
 Contest Hall->Safari Zone
-Rival->Department Store->Route 122
-    Route 123
-    Mt. Pyre->Magma Hideout->Aqua Hideout
+Rival
+    Department Store
+    Route 122
+        Route 123
+        Mt. Pyre->Magma Hideout->Aqua Hideout

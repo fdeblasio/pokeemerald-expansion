@@ -71,10 +71,9 @@
 ## To Do Soon
 Safari Zone
 Department Store
-    - Stones and other evolution items
-        (https://github.com/pret/pokeemerald/wiki/Allow-All-Pokemon-to-Evolve-Without-Trading might have some extra effects needed)
     - Turn one 4th floor clerk into all missing TMs
     - Mega stones
+    - EV berries (maybe can go with Vitamins)
 Route 122
     Route 123
     Mt. Pyre->Magma Hideout->Aqua Hideout

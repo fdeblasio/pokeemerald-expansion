@@ -55,6 +55,7 @@ LilycoveCity_DepartmentStore_3F_Pokemart_Delibird:
 	.2byte ITEM_WIDE_LENS
 	.2byte ITEM_ZOOM_LENS
 	.2byte ITEM_METRONOME
+	.2byte ITEM_PUNCHING_GLOVE
 	.2byte ITEM_NONE
 	release
 	end
@@ -104,7 +105,6 @@ LilycoveCity_DepartmentStore_3F_Pokemart_EvoUnused:
 	.2byte ITEM_ELECTIRIZER
 	.2byte ITEM_MAGMARIZER
 	.2byte ITEM_OVAL_STONE
-	.2byte ITEM_PRISM_SCALE
 	.2byte ITEM_SACHET
 	.2byte ITEM_WHIPPED_DREAM
 	.2byte ITEM_GALARICA_CUFF

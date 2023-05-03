@@ -84,7 +84,7 @@ Pokémon:
         50/50 gender ratio
         Water/Fairy
         Can also evolve at level 10
-        Catch rate is 255
+        Catch rate 150->255
 
     Marill:
         HP: 70->75
@@ -124,6 +124,9 @@ Pokémon:
 
     Whismur/Loudred/Exploud:
         Get Punk Rock as a second ability
+
+    Makuhita:
+        Catch rate: 180->220
 
     Delcatty:
         Gets Swift via level up
@@ -167,6 +170,7 @@ Pokémon:
 
     Solrock:
         Learns Power Gem by level up
+        Learns Solar Blade by level up
 
     Castform:
         All stats: 70->75
@@ -190,3 +194,6 @@ Pokémon:
     Gorebyss:
         SpA: 84->94
         Can learn Leech Life by TM
+
+    Beldum/Metang/Metagross:
+        Catch rate: 3->45

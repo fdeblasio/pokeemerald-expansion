@@ -71,6 +71,5 @@
     - DON'T USE DEBUG MENU FOR FLYING. Test to see if without it, Fly Flags are set correctly
 
 ## To Do Soon
-Mossdeep
-    Space Center
-    Super Rod encounters
+Space Center
+Trick House 6

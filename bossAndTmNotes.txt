@@ -145,7 +145,8 @@ TM99_BODY_PRESS - Lilycove TM Shop
 TM100_MOONBLAST - Lilycove TM Shop
 
 Move Tutor Replacements: 8
-  4 Terrain moves (give to Tapus)
+  Terrain moves?
+  Terrain-powered moves (give to Tapus)
   Scorching Sands
   Dual Wingbeat
   Flip Turn

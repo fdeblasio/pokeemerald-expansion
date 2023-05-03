@@ -33,7 +33,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_JIGGLYPUFF]            = {{EVO_ITEM, ITEM_MOON_STONE, SPECIES_WIGGLYTUFF}},
     [SPECIES_ZUBAT]                 = {{EVO_LEVEL, 22, SPECIES_GOLBAT}},
     [SPECIES_GOLBAT]                = {{EVO_FRIENDSHIP, 0, SPECIES_CROBAT},
-                                       {EVO_LEVEL, 35, SPECIES_CROBAT}},
+                                       {EVO_LEVEL, 33, SPECIES_CROBAT}},
     [SPECIES_ODDISH]                = {{EVO_LEVEL, 21, SPECIES_GLOOM}},
     [SPECIES_GLOOM]                 = {{EVO_ITEM, ITEM_LEAF_STONE, SPECIES_VILEPLUME},
                                        {EVO_ITEM, ITEM_SUN_STONE, SPECIES_BELLOSSOM}},

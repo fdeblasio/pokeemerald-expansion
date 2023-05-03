@@ -60,7 +60,6 @@
     - Or move Mints to left too and have left be Chansey, right be Delibird
 - Add Snowscape to Snorunt line's level up set once upcoming is merged in
 - Add in Courtney (Mossdeep?)
-- Sell Net and Dive Balls at Mossdeep
 
 
 - Maybe do one run-through of small updates and then add in new items/updated teams in a second runthrough?

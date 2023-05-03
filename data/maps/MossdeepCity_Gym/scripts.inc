@@ -2,52 +2,6 @@ MossdeepCity_Gym_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, MossdeepCity_Gym_OnLoad
 	.byte 0
 
-@ NOTE: Mossdeep Gym was redesigned between R/S and E. Leftover (and now functionally unused) scripts are commented below
-
-@ All the below checks are leftover from RS. FLAG_MOSSDEEP_GYM_SWITCH_X is never set
-MossdeepCity_Gym_OnLoad:
-	goto_if_set FLAG_MOSSDEEP_GYM_SWITCH_1, MossdeepCity_Gym_EventScript_SetSwitch1Metatiles
-	goto MossdeepCity_Gym_EventScript_CheckSwitch2
-	end
-
-MossdeepCity_Gym_EventScript_CheckSwitch2::
-	goto_if_set FLAG_MOSSDEEP_GYM_SWITCH_2, MossdeepCity_Gym_EventScript_SetSwitch2Metatiles
-	goto MossdeepCity_Gym_EventScript_CheckSwitch3
-	end
-
-MossdeepCity_Gym_EventScript_CheckSwitch3::
-	goto_if_set FLAG_MOSSDEEP_GYM_SWITCH_3, MossdeepCity_Gym_EventScript_SetSwitch3Metatiles
-	goto MossdeepCity_Gym_EventScript_CheckSwitch4
-	end
-
-MossdeepCity_Gym_EventScript_CheckSwitch4::
-	goto_if_set FLAG_MOSSDEEP_GYM_SWITCH_4, MossdeepCity_Gym_EventScript_SetSwitch4Metatiles
-	end
-
-@ All the below set metatile scripts are leftover from RS and are functionally unused
-MossdeepCity_Gym_EventScript_SetSwitch1Metatiles::
-	setmetatile 5, 5, METATILE_RSMossdeepGym_RedArrow_Right, FALSE
-	setmetatile 2, 7, METATILE_RSMossdeepGym_Switch_Down, TRUE
-	goto MossdeepCity_Gym_EventScript_CheckSwitch2
-	end
-
-MossdeepCity_Gym_EventScript_SetSwitch2Metatiles::
-	setmetatile 8, 14, METATILE_RSMossdeepGym_RedArrow_Right, FALSE
-	setmetatile 8, 10, METATILE_RSMossdeepGym_Switch_Down, TRUE
-	goto MossdeepCity_Gym_EventScript_CheckSwitch3
-	end
-
-MossdeepCity_Gym_EventScript_SetSwitch3Metatiles::
-	setmetatile 15, 17, METATILE_RSMossdeepGym_RedArrow_Left, FALSE
-	setmetatile 17, 15, METATILE_RSMossdeepGym_Switch_Down, TRUE
-	goto MossdeepCity_Gym_EventScript_CheckSwitch4
-	end
-
-MossdeepCity_Gym_EventScript_SetSwitch4Metatiles::
-	setmetatile 1, 23, METATILE_RSMossdeepGym_RedArrow_Up, FALSE
-	setmetatile 5, 24, METATILE_RSMossdeepGym_Switch_Down, TRUE
-	end
-
 MossdeepCity_Gym_EventScript_TateAndLiza::
 	trainerbattle_double TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaIntro, MossdeepCity_Gym_Text_TateAndLizaDefeat, MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons, MossdeepCity_Gym_EventScript_TateAndLizaDefeated, NO_MUSIC
 	specialvar VAR_RESULT, ShouldTryRematchBattle

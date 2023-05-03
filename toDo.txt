@@ -70,6 +70,5 @@
     - Revamp EVs to give 1 stat per EV and cap out at 63
 
 ## To Do Soon
-Mt. Pyre (add Meditite)
-    Magma Hideout->Aqua Hideout
-    Route 123
+Magma Hideout
+    Aqua Hideout

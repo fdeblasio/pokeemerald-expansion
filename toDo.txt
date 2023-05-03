@@ -59,6 +59,7 @@
 - Once Mints are implemented, in Lilycove 3F, move X items to left clerk and make right clerk Mints
     - Or move Mints to left too and have left be Chansey, right be Delibird
 - Add Snowscape to Snorunt line's level up set once upcoming is merged in
+- Update FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_BELDUM_POKEBALL to be cleared after Mossdeep Space Center?
 - Add in Courtney (Mossdeep?)
 
 

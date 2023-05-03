@@ -9335,7 +9335,7 @@
           "map": "MAP_MAGMA_HIDEOUT_1F",
           "base_label": "gMagmaHideout_1F",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 5,
             "mons": [
               {
                 "min_level": 35,
@@ -9404,7 +9404,7 @@
           "map": "MAP_MAGMA_HIDEOUT_2F_1R",
           "base_label": "gMagmaHideout_2F_1R",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 5,
             "mons": [
               {
                 "min_level": 35,
@@ -9473,7 +9473,7 @@
           "map": "MAP_MAGMA_HIDEOUT_2F_2R",
           "base_label": "gMagmaHideout_2F_2R",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 5,
             "mons": [
               {
                 "min_level": 35,
@@ -9542,7 +9542,7 @@
           "map": "MAP_MAGMA_HIDEOUT_3F_1R",
           "base_label": "gMagmaHideout_3F_1R",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 5,
             "mons": [
               {
                 "min_level": 35,
@@ -9611,7 +9611,7 @@
           "map": "MAP_MAGMA_HIDEOUT_3F_2R",
           "base_label": "gMagmaHideout_3F_2R",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 5,
             "mons": [
               {
                 "min_level": 35,
@@ -9680,7 +9680,7 @@
           "map": "MAP_MAGMA_HIDEOUT_4F",
           "base_label": "gMagmaHideout_4F",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 5,
             "mons": [
               {
                 "min_level": 35,
@@ -9749,7 +9749,7 @@
           "map": "MAP_MAGMA_HIDEOUT_3F_3R",
           "base_label": "gMagmaHideout_3F_3R",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 5,
             "mons": [
               {
                 "min_level": 35,
@@ -9818,7 +9818,7 @@
           "map": "MAP_MAGMA_HIDEOUT_2F_3R",
           "base_label": "gMagmaHideout_2F_3R",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 5,
             "mons": [
               {
                 "min_level": 35,
@@ -9887,7 +9887,7 @@
           "map": "MAP_MIRAGE_TOWER_1F",
           "base_label": "gMirageTower_1F",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 5,
             "mons": [
               {
                 "min_level": 25,
@@ -9956,7 +9956,7 @@
           "map": "MAP_MIRAGE_TOWER_2F",
           "base_label": "gMirageTower_2F",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 5,
             "mons": [
               {
                 "min_level": 25,
@@ -10025,7 +10025,7 @@
           "map": "MAP_MIRAGE_TOWER_3F",
           "base_label": "gMirageTower_3F",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 5,
             "mons": [
               {
                 "min_level": 25,
@@ -10094,7 +10094,7 @@
           "map": "MAP_MIRAGE_TOWER_4F",
           "base_label": "gMirageTower_4F",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 5,
             "mons": [
               {
                 "min_level": 25,

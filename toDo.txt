@@ -68,9 +68,7 @@
     - Maybe this is when the bag expansion happens
     - Implement Pokedex Plus (https://www.pokecommunity.com/showthread.php?t=441996)
     - Revamp EVs to give 1 stat per EV and cap out at 63
-
-## BUGS:
-- When using Fly, can Fly to anywhere
+    - DON'T USE DEBUG MENU FOR FLYING. Test to see if without it, Fly Flags are set correctly
 
 ## To Do Soon
 Aqua Hideout

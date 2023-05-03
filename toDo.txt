@@ -9,7 +9,6 @@
 - Make Latios/Latias easier to catch/not roam?
     - Maybe get rid of roamers and add both Latis to the Island?
 - Add Farigiraf to Hoenn Dex once implemented
-- Add Paradoxes as evolutions?
 - Spruce up battles/rematches
     - customAll Pokemon
         - Winston could have a shiny

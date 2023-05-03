@@ -29,8 +29,12 @@ Pokémon:
     Pichu:
         Can also evolve at level 12
 
-    Pikachu/Raichu:
-        Learn Volt Tackle at level 1
+    Pikachu:
+        Learns Volt Tackle at level 1
+        Evolves into Alolan Raichu with Sun Stone
+
+    Raichu:
+        Learns Volt Tackle at level 1
 
     Igglybuff:
         Can also evolve at level 12
@@ -43,6 +47,12 @@ Pokémon:
 
     Doduo/Dodrio:
         Get Aerial Ace instead of Wing Attack at level 15 due to not having wings
+
+    Exeggcute:
+        Evolves into Alolan Exeggcute with Sun Stone
+
+    Cubone:
+        Evolves into Alolan Marowak with Fire Stone
 
     Rhyperior:
         Learns Rock Wrecker upon evolving

@@ -1169,7 +1169,7 @@ SlateportCity_Text_CaptainsACelebrity:
 	.string "The Captain's a celebrity!$"
 
 SlateportCity_Text_BigSmileForCamera:
-	.string "TY: Okay, Capt. Stern, a big smile\n"
+	.string "Ty: Okay, Capt. Stern, a big smile\n"
 	.string "for the camera!$"
 
 SlateportCity_Text_MostInvaluableExperience:

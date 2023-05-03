@@ -708,12 +708,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GabbyAndTy3[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_GabbyAndTy4[] = {
     {
     .iv = 200,
-    .lvl = 33,
+    .lvl = 36,
     .species = SPECIES_MAGNETON,
     },
     {
     .iv = 200,
-    .lvl = 33,
+    .lvl = 36,
     .species = SPECIES_LOUDRED,
     }
 };

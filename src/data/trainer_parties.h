@@ -2101,7 +2101,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Roland[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Nolen[] = {
     {
     .iv = 0,
-    .lvl = 34,
+    .lvl = 38,
     .species = SPECIES_TENTACRUEL,
     }
 };
@@ -2109,8 +2109,8 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Nolen[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Stan[] = {
     {
     .iv = 0,
-    .lvl = 34,
-    .species = SPECIES_HORSEA,
+    .lvl = 37,
+    .species = SPECIES_SEADRA,
     }
 };
 
@@ -5603,12 +5603,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Humberto[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Presley[] = {
     {
     .iv = 0,
-    .lvl = 33,
+    .lvl = 37,
     .species = SPECIES_TROPIUS,
     },
     {
     .iv = 0,
-    .lvl = 33,
+    .lvl = 37,
     .species = SPECIES_XATU,
     }
 };
@@ -6249,7 +6249,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Grace[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Tanya[] = {
     {
     .iv = 0,
-    .lvl = 34,
+    .lvl = 38,
     .species = SPECIES_LUVDISC,
     }
 };
@@ -6257,7 +6257,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Tanya[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Sharon[] = {
     {
     .iv = 0,
-    .lvl = 34,
+    .lvl = 38,
     .species = SPECIES_SEAKING,
     }
 };
@@ -6981,12 +6981,12 @@ static const struct TrainerMonNoItemCustomMoves sParty_Kayley[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Auron[] = {
     {
     .iv = 0,
-    .lvl = 33,
+    .lvl = 37,
     .species = SPECIES_MANECTRIC,
     },
     {
     .iv = 0,
-    .lvl = 33,
+    .lvl = 37,
     .species = SPECIES_MACHAMP,
     }
 };
@@ -9719,15 +9719,15 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ToriAndTia[] = {
 static const struct TrainerMonNoItemCustomMoves sParty_KimAndIris[] = {
     {
     .iv = 0,
-    .lvl = 32,
-    .species = SPECIES_SWABLU,
-    .moves = {MOVE_SING, MOVE_FURY_ATTACK, MOVE_SAFEGUARD, MOVE_AERIAL_ACE}
+    .lvl = 36,
+    .species = SPECIES_CAMERUPT,
+    .moves = {MOVE_FLAMETHROWER, MOVE_BULLDOZE, MOVE_REST, MOVE_CURSE}
     },
     {
     .iv = 0,
-    .lvl = 35,
-    .species = SPECIES_NUMEL,
-    .moves = {MOVE_FLAMETHROWER, MOVE_TAKE_DOWN, MOVE_REST, MOVE_EARTHQUAKE}
+    .lvl = 38,
+    .species = SPECIES_ALTARIA,
+    .moves = {MOVE_DRAGON_PULSE, MOVE_AERIAL_ACE, MOVE_SAFEGUARD, MOVE_COTTON_GUARD}
     }
 };
 

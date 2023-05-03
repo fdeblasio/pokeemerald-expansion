@@ -70,6 +70,8 @@
     - DON'T USE DEBUG MENU FOR FLYING. Test to see if without it, Fly Flags are set correctly
 
 ## To Do Soon
+Route 125
+    Shoal Cave
 Mossdeep
     Space Center
     Super Rod encounters

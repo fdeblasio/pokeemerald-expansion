@@ -168,9 +168,6 @@ Pokémon:
     Solrock:
         Learns Power Gem by level up
 
-    Feebas:
-        Can also evolve at level 20
-
     Castform:
         All stats: 70->75
         Learns Overheat by TM
@@ -183,6 +180,9 @@ Pokémon:
         SpA: 72->80
         SpD: 87->90
         Spe: 51->55
+
+    Chingling:
+        Can also evolve at level 19
 
     Huntail:
         Atk: 104->114

@@ -58,6 +58,7 @@
     - Rework fishing to have one less slot (Super Rod 4/1->5)?
 - Once Mints are implemented, in Lilycove 3F, move X items to left clerk and make right clerk Mints
     - Or move Mints to left too and have left be Chansey, right be Delibird
+- Add Snowscape to Snorunt line's level up set once upcoming is merged in
 - Add in Courtney (Mossdeep?)
 - Sell Net and Dive Balls at Mossdeep
 
@@ -70,8 +71,6 @@
     - DON'T USE DEBUG MENU FOR FLYING. Test to see if without it, Fly Flags are set correctly
 
 ## To Do Soon
-Route 125
-    Shoal Cave
 Mossdeep
     Space Center
     Super Rod encounters

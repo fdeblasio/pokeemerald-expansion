@@ -56,7 +56,6 @@
 - Update Deep Sea items to work on respective evolutions as well?
 - Rework land_mons to only have 10 slots? (last two would go from 4->5)?
     - Rework fishing to have one less slot (Super Rod 4/1->5)?
-- Update Devon to revive all types of Fossils (Fix Gen 8 mixup)
 - Once Mints are implemented, in Lilycove 3F, move X items to left clerk and make right clerk Mints
     - Or move Mints to left too and have left be Chansey, right be Delibird
 - Add in Courtney (Mossdeep?)
@@ -71,4 +70,6 @@
     - DON'T USE DEBUG MENU FOR FLYING. Test to see if without it, Fly Flags are set correctly
 
 ## To Do Soon
-
+Mossdeep
+    Space Center
+    Super Rod encounters

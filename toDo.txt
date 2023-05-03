@@ -70,5 +70,4 @@
     - Revamp EVs to give 1 stat per EV and cap out at 63
 
 ## To Do Soon
-Magma Hideout
-    Aqua Hideout
+Aqua Hideout

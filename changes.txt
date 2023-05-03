@@ -1,6 +1,7 @@
 Gym Leaders use more Hoenn Pokémon
 Gym Leaders and Magma/Aqua Admins/Leaders no longer have underleveled evolutions
 Pokémon have a more even encounter distribution
+Alolan Raichu was added
 
 Moves:
     Double Slap is called Multi-Slap
@@ -23,7 +24,7 @@ Pokémon:
         Any other moveset changes will be noted
         If a Pokémon can evolve by holding/being traded with an item, it now can evolve from that item being used
 
-    Nidorina/Nidoqueen:
+    Nidorina/Nidoqueen (not in base game):
         Can now breed
 
     Pichu:
@@ -48,10 +49,10 @@ Pokémon:
     Doduo/Dodrio:
         Get Aerial Ace instead of Wing Attack at level 15 due to not having wings
 
-    Exeggcute:
+    Exeggcute (not in base game):
         Evolves into Alolan Exeggcute with Sun Stone
 
-    Cubone:
+    Cubone (not in base game):
         Evolves into Alolan Marowak with Fire Stone
 
     Rhyperior:
@@ -85,10 +86,10 @@ Pokémon:
         Def: 67->70
         Spe: 83->85
 
-    Eevee:
-        Can also evolve into Espeon with a Sun Stone
-        Can also evolve into Umbreon with a Moon Stone
-        Can also evolve into Sylveon with a Dawn Stone
+    Eevee (not in base game):
+        Now evolves into Espeon with a Sun Stone
+        Now evolves into Umbreon with a Moon Stone
+        Now evolves into Sylveon with a Dawn Stone
 
     Azurill:
         50/50 gender ratio
@@ -106,9 +107,6 @@ Pokémon:
     Azumarill:
         Atk: 50->60
         Spe: 50->60
-
-    Ursaring:
-        Can also evolve with a Moon Stone
 
     Slugma:
         Now evolves at level 32

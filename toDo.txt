@@ -60,6 +60,7 @@
     - Or move Mints to left too and have left be Chansey, right be Delibird
 - Add Snowscape to Snorunt line's level up set once upcoming is merged in
 - Update FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_BELDUM_POKEBALL to be cleared after Mossdeep Space Center?
+    - and FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY
 - Add in Courtney (Mossdeep?)
 
 
@@ -71,5 +72,6 @@
     - DON'T USE DEBUG MENU FOR FLYING. Test to see if without it, Fly Flags are set correctly
 
 ## To Do Soon
+Rest of water routes
 Space Center
 Trick House 6

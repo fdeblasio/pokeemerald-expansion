@@ -6783,12 +6783,17 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Edmond[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Ernest1[] = {
     {
     .iv = 0,
-    .lvl = 33,
-    .species = SPECIES_WINGULL,
+    .lvl = 36,
+    .species = SPECIES_PELIPPER,
     },
     {
     .iv = 0,
-    .lvl = 33,
+    .lvl = 36,
+    .species = SPECIES_WAILMER,
+    },
+    {
+    .iv = 0,
+    .lvl = 36,
     .species = SPECIES_MACHOKE,
     }
 };
@@ -6858,17 +6863,22 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Duncan[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Ernest2[] = {
     {
     .iv = 10,
-    .lvl = 36,
-    .species = SPECIES_WINGULL,
+    .lvl = 40,
+    .species = SPECIES_TENTACRUEL,
     },
     {
     .iv = 10,
-    .lvl = 36,
-    .species = SPECIES_TENTACOOL,
+    .lvl = 40,
+    .species = SPECIES_PELIPPER,
     },
     {
     .iv = 10,
-    .lvl = 36,
+    .lvl = 40,
+    .species = SPECIES_WAILMER,
+    },
+    {
+    .iv = 10,
+    .lvl = 40,
     .species = SPECIES_MACHOKE,
     }
 };
@@ -6876,17 +6886,22 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Ernest2[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Ernest3[] = {
     {
     .iv = 20,
-    .lvl = 39,
+    .lvl = 42,
+    .species = SPECIES_TENTACRUEL,
+    },
+    {
+    .iv = 20,
+    .lvl = 42,
     .species = SPECIES_PELIPPER,
     },
     {
     .iv = 20,
-    .lvl = 39,
-    .species = SPECIES_TENTACOOL,
+    .lvl = 42,
+    .species = SPECIES_WAILORD,
     },
     {
     .iv = 20,
-    .lvl = 39,
+    .lvl = 42,
     .species = SPECIES_MACHOKE,
     }
 };
@@ -6894,17 +6909,22 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Ernest3[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Ernest4[] = {
     {
     .iv = 30,
-    .lvl = 42,
+    .lvl = 44,
+    .species = SPECIES_TENTACRUEL,
+    },
+    {
+    .iv = 30,
+    .lvl = 44,
     .species = SPECIES_PELIPPER,
     },
     {
     .iv = 30,
-    .lvl = 42,
-    .species = SPECIES_TENTACOOL,
+    .lvl = 44,
+    .species = SPECIES_WAILORD,
     },
     {
     .iv = 30,
-    .lvl = 42,
+    .lvl = 44,
     .species = SPECIES_MACHOKE,
     }
 };
@@ -6912,18 +6932,23 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Ernest4[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Ernest5[] = {
     {
     .iv = 40,
-    .lvl = 45,
+    .lvl = 46,
+    .species = SPECIES_TENTACRUEL,
+    },
+    {
+    .iv = 40,
+    .lvl = 46,
     .species = SPECIES_PELIPPER,
     },
     {
     .iv = 40,
-    .lvl = 45,
-    .species = SPECIES_MACHOKE,
+    .lvl = 46,
+    .species = SPECIES_WAILORD,
     },
     {
     .iv = 40,
-    .lvl = 45,
-    .species = SPECIES_TENTACRUEL,
+    .lvl = 46,
+    .species = SPECIES_MACHAMP,
     }
 };
 

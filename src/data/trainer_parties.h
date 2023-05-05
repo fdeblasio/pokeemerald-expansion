@@ -713,12 +713,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GabbyAndTy4[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_GabbyAndTy5[] = {
     {
     .iv = 250,
-    .lvl = 36,
+    .lvl = 39,
     .species = SPECIES_MAGNETON,
     },
     {
     .iv = 250,
-    .lvl = 36,
+    .lvl = 39,
     .species = SPECIES_LOUDRED,
     }
 };
@@ -726,15 +726,15 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GabbyAndTy5[] = {
 static const struct TrainerMonNoItemCustomMoves sParty_GabbyAndTy6[] = {
     {
     .iv = 250,
-    .lvl = 40,
+    .lvl = 46,
     .species = SPECIES_MAGNEZONE,
-    .moves = {MOVE_SONIC_BOOM, MOVE_THUNDER_WAVE, MOVE_METAL_SOUND, MOVE_THUNDERBOLT}
+    .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_METAL_SOUND, MOVE_BARRIER}
     },
     {
     .iv = 250,
-    .lvl = 40,
+    .lvl = 46,
     .species = SPECIES_EXPLOUD,
-    .moves = {MOVE_ASTONISH, MOVE_STOMP, MOVE_SUPERSONIC, MOVE_HYPER_VOICE}
+    .moves = {MOVE_HYPER_VOICE, MOVE_THUNDER_FANG, MOVE_CRUNCH, MOVE_SUPERSONIC}
     }
 };
 

@@ -113,6 +113,6 @@
         - Would need to double check but this should make Cut, Rock Smash, and Strength forgettable
 
 ## To Do Soon
-Rest of water routes
 Space Center
 Trick House 6
+Rest of water routes

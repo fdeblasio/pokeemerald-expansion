@@ -131,6 +131,7 @@
 ## To Do Soon
 Make rapids easier to navigate
 Underwater
+    Sealed Chamber
 Pacifidlog
 Abandoned Ship Dive section
     Since Deep Sea items can be bought, should a Big Pearl be given instead?

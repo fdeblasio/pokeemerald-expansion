@@ -239,8 +239,8 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GruntMuseum2[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntSpaceCenter1[] = {
     {
     .iv = 0,
-    .lvl = 32,
-    .species = SPECIES_NUMEL,
+    .lvl = 41,
+    .species = SPECIES_TORKOAL,
     }
 };
 
@@ -1587,17 +1587,17 @@ static const struct TrainerMonItemCustomMoves sParty_Daphne[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntSpaceCenter2[] = {
     {
     .iv = 0,
-    .lvl = 26,
-    .species = SPECIES_MIGHTYENA,
+    .lvl = 39,
+    .species = SPECIES_VULPIX,
     },
     {
     .iv = 0,
-    .lvl = 28,
-    .species = SPECIES_MIGHTYENA,
+    .lvl = 39,
+    .species = SPECIES_SLUGMA,
     },
     {
     .iv = 0,
-    .lvl = 30,
+    .lvl = 39,
     .species = SPECIES_NUMEL,
     }
 };
@@ -7100,17 +7100,17 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Hector[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_TabithaMossdeep[] = {
     {
     .iv = 100,
-    .lvl = 36,
-    .species = SPECIES_MIGHTYENA,
-    },
-    {
-    .iv = 100,
-    .lvl = 38,
-    .species = SPECIES_MAGCARGO,
+    .lvl = 40,
+    .species = SPECIES_TORKOAL,
     },
     {
     .iv = 100,
     .lvl = 40,
+    .species = SPECIES_MAGCARGO,
+    },
+    {
+    .iv = 100,
+    .lvl = 42,
     .species = SPECIES_NINETALES,
     }
 };
@@ -8268,36 +8268,36 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Nicholas[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntSpaceCenter3[] = {
     {
     .iv = 0,
-    .lvl = 31,
-    .species = SPECIES_ZUBAT,
+    .lvl = 40,
+    .species = SPECIES_NUMEL,
     },
     {
     .iv = 0,
-    .lvl = 31,
-    .species = SPECIES_POOCHYENA,
+    .lvl = 40,
+    .species = SPECIES_VULPIX,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntSpaceCenter4[] = {
     {
     .iv = 0,
-    .lvl = 32,
-    .species = SPECIES_BALTOY,
+    .lvl = 41,
+    .species = SPECIES_CLAYDOL,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntSpaceCenter5[] = {
     {
     .iv = 0,
-    .lvl = 32,
-    .species = SPECIES_ZUBAT,
+    .lvl = 41,
+    .species = SPECIES_MAGCARGO,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntSpaceCenter6[] = {
     {
     .iv = 0,
-    .lvl = 32,
+    .lvl = 41,
     .species = SPECIES_MIGHTYENA,
     }
 };
@@ -8305,8 +8305,8 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GruntSpaceCenter6[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntSpaceCenter7[] = {
     {
     .iv = 0,
-    .lvl = 32,
-    .species = SPECIES_BALTOY,
+    .lvl = 41,
+    .species = SPECIES_NUMEL,
     }
 };
 
@@ -10398,7 +10398,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MaxieMossdeep[] = {
     {
     .iv = 150,
     .lvl = 43,
-    .species = SPECIES_MAGCARGO,
+    .species = SPECIES_CLAYDOL,
     },
     {
     .iv = 150,
@@ -12179,6 +12179,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Darius[] = {
 };
 
 //Mawile
+//Use Steven's Mossdeep team as reference for some moves (and natures/EVs once implemented)
 static const struct TrainerMonItemCustomMoves sParty_Steven[] = {
     {
     .iv = 255,

@@ -25,6 +25,7 @@
     - Norman can have Toxic Orb Toxic Boost Zangoose
         - Spinda: Thrash if Own Tempo, Superpower if Contrary. Should be given a cool pattern (maybe 88888888?)
     - Fix Winona's rematches being male; Pelipper gets Drizzle
+    - Gym leaders/Steven/Breeders can have Hidden Abilities
 - Overworld sprites to match trainer sprites (for example, giving Youngsters yellow shirts, girl tubers a yellow tube, and Rangers red clothes)
 - Expand bag
 - Try to find Bolts foreground of Walda PC
@@ -39,17 +40,18 @@
 - Battle Tent Pokemon/EVs?
 - Add Regigigas to Sealed Chamber?
 - Update other punches (Shadow/Dizzy/Needle Arm) to 75 BP?
-- New TM compatibility
+- Remove level up moves that are duplicated at level 1 (level takes priority over like level 5, but evolution moves take priority over level 1)
 - Edit friendship evolution methods
 - Calculate Electro Ball more similarly to Gyro Ball?
 - Get all the weird Mauville men at once?
 - Update Favor Lady's items to include new items
 - Wild Beldum in Victory Road or something
+    - Altering Cave: starters + Beldum?
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Figure out if it's possible to select multiple Pokemon when moving to or from party
 - Implement Deoxys encounter at island/changing forms at Fallarbor
 - Replace Regis with their doll sprites since they look more like them?
-- Give Espeon Power Gem on level up
+- Give Espeon Power Gem on level up or evolution
 - Edit Slot odds (SLOT_MACHINE_)? Even though there's only three prizes?
 - Make the rapids easier to navigate?
 - Update Deep Sea items to work on respective evolutions as well?
@@ -92,14 +94,10 @@
         - Light Screen?
         - Abilities like Illuminate?
 - Rework land_mons to only have 10 slots? (last two would go from 4->5)?
-    - Rework fishing to have one less slot (Super Rod 4/1->5)?
 - Once Mints are implemented, in Lilycove 3F, move X items to left clerk and make right clerk Mints
     - Or move Mints to left too and have left be Chansey, right be Delibird
 - Add Snowscape to Snorunt line's level up set once upcoming is merged in
 - Remove Alolan Raichu?/Add in other Hoenn Dex regionals? (Alolan Sandshrew/Vulpix at Shoal Cave, Shiny/Dawn Stone for Galarian Weezing)
-- Update FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_BELDUM_POKEBALL to be cleared after Mossdeep Space Center?
-    - and FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY
-- Add in Courtney (Mossdeep?)
 
 
 - Maybe do one run-through of small updates and then add in new items/updated teams in a second runthrough?
@@ -114,5 +112,8 @@
 
 ## To Do Soon
 Space Center
+    Add in Courtney?
+    Update FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_BELDUM_POKEBALL to be cleared after Mossdeep Space Center?
+        and FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY
 Trick House 6
 Rest of water routes

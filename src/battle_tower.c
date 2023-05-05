@@ -773,28 +773,28 @@ struct
 } static const sStevenMons[MULTI_PARTY_SIZE] =
 {
     {
-        .species = SPECIES_METANG,
+        .species = SPECIES_MAWILE,
         .fixedIV = MAX_PER_STAT_IVS,
         .level = 42,
-        .nature = NATURE_BRAVE,
-        .evs = {0, 252, 252, 0, 6, 0},
-        .moves = {MOVE_LIGHT_SCREEN, MOVE_PSYCHIC, MOVE_REFLECT, MOVE_METAL_CLAW}
-    },
-    {
-        .species = SPECIES_SKARMORY,
-        .fixedIV = MAX_PER_STAT_IVS,
-        .level = 43,
-        .nature = NATURE_IMPISH,
-        .evs = {252, 0, 0, 0, 6, 252},
-        .moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_PROTECT, MOVE_STEEL_WING}
+        .nature = NATURE_ADAMANT,
+        .evs = {0, 252, 6, 252, 0, 0},
+        .moves = {MOVE_IRON_HEAD, MOVE_CRUNCH, MOVE_SWORDS_DANCE, MOVE_IRON_DEFENSE}
     },
     {
         .species = SPECIES_AGGRON,
         .fixedIV = MAX_PER_STAT_IVS,
+        .level = 43,
+        .nature = NATURE_IMPISH,
+        .evs = {6, 252, 252, 0, 0, 0},
+        .moves = {MOVE_IRON_HEAD, MOVE_ROCK_SLIDE, MOVE_BODY_PRESS, MOVE_HARDEN}
+    },
+    {
+        .species = SPECIES_METANG,
+        .fixedIV = MAX_PER_STAT_IVS,
         .level = 44,
         .nature = NATURE_ADAMANT,
-        .evs = {0, 252, 0, 0, 252, 6},
-        .moves = {MOVE_THUNDER, MOVE_PROTECT, MOVE_SOLAR_BEAM, MOVE_DRAGON_CLAW}
+        .evs = {6, 252, 252, 0, 0, 0},
+        .moves = {MOVE_BULLET_PUNCH, MOVE_ZEN_HEADBUTT, MOVE_PURSUIT, MOVE_MAGNET_RISE}
     }
 };
 

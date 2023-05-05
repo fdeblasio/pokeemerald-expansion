@@ -20,7 +20,7 @@
     - Triathlete would be Speed-focused (maybe endurance/HP too)
     - Winstrates (including Victor) should have EVs due to the mom mentioning using the Macho Brace
     - Tori and Tia should have Spindas that aren't identical
-    - Fix Roxanne's rematches being male
+    - Fix Roxanne's rematches being male (due to double battles (which the rematches are) having the personality set before the gender. Can rearrange steps or use customAll to manually set gender)
     - Fix Flannery's rematches being male; also her Torkoal or Ninetales should have Drought
     - Norman can have Toxic Orb Toxic Boost Zangoose
         - Spinda: Thrash if Own Tempo, Superpower if Contrary. Should be given a cool pattern (maybe 88888888?)
@@ -55,6 +55,7 @@
 - Edit Slot odds (SLOT_MACHINE_)? Even though there's only three prizes?
 - Make the rapids easier to navigate?
 - Update Deep Sea items to work on respective evolutions as well?
+- Add Hyper Training
 - Edit moves that work in field
     - Maybe edit so instead of "if has move" to "if can learn move" (might not be simple since it's .inc and not C)
     - Cut:
@@ -112,7 +113,6 @@
 
 ## To Do Soon
 Space Center
-    Add in Courtney?
     Update FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_BELDUM_POKEBALL to be cleared after Mossdeep Space Center?
         and FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY
 Trick House 6

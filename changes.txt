@@ -18,6 +18,7 @@ Moves:
         Blaze Kick
         Crush Claw
         Razor Shell
+        Zen Headbutt
 
 Pokémon:
     ALL:

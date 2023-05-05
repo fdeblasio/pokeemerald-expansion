@@ -68,6 +68,11 @@
     - Strength:
         - Superpower?
         - Close Combat?
+    - Fly:
+        - Notes:
+            - Is manual unlike the rest so would need to be added to the Fly edit
+        - Teleport? (Would need to remove existing functionality)
+        - ExtremeSpeed?
     - Flash:
         - Notes:
             - Is manual unlike the rest so would need to be added to the Fly edit
@@ -103,7 +108,9 @@
     - Implement Pokedex Plus (https://www.pokecommunity.com/showthread.php?t=441996)
     - Revamp EVs to give 1 stat per EV and cap out at 63
     - DON'T USE DEBUG MENU FOR FLYING. Test to see if without it, Fly Flags are set correctly
-    - Expand moves usuable in overworld (see above)
+    - Expand moves usable in overworld (see above)
+        - Alternatively, remove instances of trees, rocks, boulders, etc
+        - Would need to double check but this should make Cut, Rock Smash, and Strength forgettable
 
 ## To Do Soon
 Rest of water routes

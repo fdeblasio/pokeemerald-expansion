@@ -123,10 +123,12 @@
         - Update some Kindlers
     - Remove Alolan Raichu?/Add in other Hoenn Dex regionals? (Alolan Sandshrew/Vulpix at Shoal Cave, Shiny/Dawn Stone for Galarian Weezing/level 38 Galarian Corsola)
     - Diversify water routes instead of just Tentacool/Wingull (definitely add more Carvanha; bring some fishing encounters to Surf)
+    - Go back and make rematches stronger
 
 ## To Do Soon
 Rest of water routes
 Underwater
+Pacifidlog
 Abandoned Ship Dive section
     Since Deep Sea items can be bought, should a Big Pearl be given instead?
 Update FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_BELDUM_POKEBALL to be cleared after Seafloor Cavern?

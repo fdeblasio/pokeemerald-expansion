@@ -1,6 +1,7 @@
 Gym Leaders use more Hoenn Pokémon
 Gym Leaders and Magma/Aqua Admins/Leaders no longer have underleveled evolutions
 Pokémon have a more even encounter distribution
+Tate and Liza give out Psychic instead of Calm Mind
 Alolan Raichu was added
 
 Moves:

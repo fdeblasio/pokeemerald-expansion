@@ -19,6 +19,9 @@ Moves:
         Crush Claw
         Razor Shell
         Zen Headbutt
+        Rock Throw
+        Rock Tomb
+        Rock Slide
 
 Pokémon:
     ALL:

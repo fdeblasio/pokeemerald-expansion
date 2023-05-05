@@ -98,7 +98,8 @@
 - Once Mints are implemented, in Lilycove 3F, move X items to left clerk and make right clerk Mints
     - Or move Mints to left too and have left be Chansey, right be Delibird
 - Add Snowscape to Snorunt line's level up set once upcoming is merged in
-- Remove Alolan Raichu?/Add in other Hoenn Dex regionals? (Alolan Sandshrew/Vulpix at Shoal Cave, Shiny/Dawn Stone for Galarian Weezing)
+- Get rid of low health constant beeping
+- Make some Rock moves more accurate?
 
 
 - Maybe do one run-through of small updates and then add in new items/updated teams in a second runthrough?
@@ -120,10 +121,15 @@
             - Slugma/Vulpix Mossdeep grunt has Slugma replaced by Houndour, the Mightyena grunt gets replaced with a Magcargo, and one of the Numel grunts gets Mightyena
         - Update some Flannery trainers
         - Update some Kindlers
+    - Remove Alolan Raichu?/Add in other Hoenn Dex regionals? (Alolan Sandshrew/Vulpix at Shoal Cave, Shiny/Dawn Stone for Galarian Weezing/level 38 Galarian Corsola)
+    - Diversify water routes instead of just Tentacool/Wingull (definitely add more Carvanha; bring some fishing encounters to Surf)
 
 ## To Do Soon
-Space Center
-    Update FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_BELDUM_POKEBALL to be cleared after Mossdeep Space Center?
-        and FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY
-Trick House 6
 Rest of water routes
+Underwater
+Abandoned Ship Dive section
+    Since Deep Sea items can be bought, should a Big Pearl be given instead?
+Update FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_BELDUM_POKEBALL to be cleared after Seafloor Cavern?
+    and FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY
+Mirage Island
+    Use location pointer?

@@ -106,7 +106,7 @@
     - Maybe this is when the bag expansion happens
     - Implement Pokedex Plus (https://www.pokecommunity.com/showthread.php?t=441996)
     - Figure out ?????? showing up at end of Dex
-    - Revamp EVs to give 1 stat per EV and cap out at 63 (bring Vitamin price back up since less are needed?)
+    - Revamp EVs to give 1 stat per EV and cap out at 63
     - DON'T USE DEBUG MENU FOR FLYING. Test to see if without it, Fly Flags are set correctly
         - Maybe use makeshift version of it (without setting all flags) to Fly without needing a Pokemon who knows it
     - Expand moves usable in overworld (see above)

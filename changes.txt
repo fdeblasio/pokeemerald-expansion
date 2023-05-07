@@ -211,5 +211,10 @@ Pokémon:
         SpA: 84->94
         Can learn Leech Life by TM
 
+    Luvdisc:
+        HP: 43->45
+        SpA: 40->60
+        Spd: 97->100
+
     Beldum/Metang/Metagross:
         Catch rate: 3->45

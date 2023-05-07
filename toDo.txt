@@ -115,6 +115,7 @@
     - Expand moves usable in overworld (see above)
         - Alternatively, remove instances of trees, rocks, boulders, etc
         - Would need to double check but this should make Cut, Rock Smash, and Strength forgettable
+    - Turn Dive functionality into an item and make Dive forgettable
     - Add in Houndoom for more Magma variety?
         - Replace Magcargo as Tabitha's main Pokemon (currently unsure if it will Mega Evolve)
         - Add in Hoenn Dex after Rhyperior

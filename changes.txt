@@ -23,6 +23,8 @@ Moves:
         Rock Throw
         Rock Tomb
         Rock Slide
+        Aqua Tail
+        Crabhammer
 
 Pokémon:
     ALL:
@@ -120,7 +122,7 @@ Pokémon:
         Now evolves at level 32
 
     Wurmple:
-        Learns Bug Bite at level 7
+        Learns Bug Bite at level 7 instead of 15
         Evolution is based on time of day
 
     Beautifly:
@@ -218,3 +220,18 @@ Pokémon:
 
     Beldum/Metang/Metagross:
         Catch rate: 3->45
+
+    Kyogre:
+        Origin Pulse is now learned at level 63 instead of level 1
+        Learns Aurora Beam at level 1 instead of Body Slam
+        Learns Surf at level 27 instead of Muddy Water
+        Learns Thunder at level 81 instead of Double-Edge
+
+    Groudon:
+        Precipice Blades is now learned at level 63 instead of level 1
+        Learns Bulldoze at level 1 instead of Mud Shot
+        Learns Solar Blade at level 81 instead of Solar Beam
+
+    Groudon:
+        Fly is now learned at level 1 instead of level 63
+        Dragon Ascent is now learned at level 63 instead of level 1

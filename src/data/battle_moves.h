@@ -2566,7 +2566,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
             .power = 100,
-            .accuracy = 90,
+            .accuracy = 100,
         #elif B_UPDATED_MOVE_DATA == GEN_5
             .power = 90,
             .accuracy = 90,
@@ -6804,7 +6804,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .effect = EFFECT_HIT,
         .power = 90,
         .type = TYPE_WATER,
-        .accuracy = 90,
+        .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,

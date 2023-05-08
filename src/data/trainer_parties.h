@@ -5749,7 +5749,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Alex[] = {
     {
     .iv = 150,
     .lvl = 41,
-    .species = SPECIES_NATU,
+    .species = SPECIES_XATU,
     },
     {
     .iv = 150,
@@ -6381,7 +6381,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Laurel[] = {
     {
     .iv = 0,
     .lvl = 41,
-    .species = SPECIES_CORSOLA,
+    .species = SPECIES_LUVDISC,
     },
     {
     .iv = 0,
@@ -7035,7 +7035,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Kelvin[] = {
     {
     .iv = 150,
     .lvl = 41,
-    .species = SPECIES_SPHEAL,
+    .species = SPECIES_SEALEO,
     }
 };
 

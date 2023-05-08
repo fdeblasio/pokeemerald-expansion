@@ -17,8 +17,8 @@ static const u8 sKarateChopDescription[] = _(
     "high critical-hit ratio.");
 
 static const u8 sDoubleSlapDescription[] = _(
-    "Repeatedly slaps the foe\n"
-    "2 to 5 times.");
+    "A slapping attack that\n"
+    "hits the foe twice.");
 
 static const u8 sCometPunchDescription[] = _(
     "Repeatedly punches the foe\n"

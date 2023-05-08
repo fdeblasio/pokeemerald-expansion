@@ -22,12 +22,6 @@ Certain mechanics, moves, abilities and species sprites are missing. For more in
 
 ### Please consider crediting the entire [list of contributors](https://github.com/rh-hideout/pokeemerald-expansion/wiki/Credits) in your project, as they have all worked hard to develop this project :)
 
-## What is ROM Hacking Hideout?
-
-A Discord-based ROM hacking community that has many members who hack using the disassembly and decompilation projects for Pokémon. Quite a few contributors to the original feature branches by DizzyEgg were members of ROM Hacking Hideout. You can call it RHH for short!
-
-[Click here to join the RHH Discord Server!](https://discord.gg/6CzjAG6GZk)
-
 ## Contributions/Acknowledgements
 - [pret's initial decompilation](https://github.com/pret/pokeemerald)
 - [RHH's Emerald Expansion](https://github.com/rh-hideout/pokeemerald-expansion)

@@ -8,7 +8,10 @@ Made rapids easier to navigate (at the cost of looking slightly worse)
 Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)
 
 Moves:
-    Double Slap is called Multi-Slap
+    Double Slap:
+        Now hits exactly twice
+        Power: 15->25
+        Accuracy: 85->100
     Volt Tackle has a 30% chance to paralyze and no longer causes recoil
     Given 100 accuracy:
         Cut
@@ -25,6 +28,7 @@ Moves:
         Rock Slide
         Aqua Tail
         Crabhammer
+        Bonemerang
 
 Pokémon:
     ALL:

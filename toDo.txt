@@ -8,7 +8,6 @@
 - Gallade Sharpness (maybe wait for master/upcoming update)
 - Make Latios/Latias easier to catch/not roam?
     - Maybe get rid of roamers and add both Latis to the Island?
-- Add Farigiraf to Hoenn Dex once implemented
 - Spruce up battles/rematches
     - customAll Pokemon
         - Winston could have a shiny
@@ -38,7 +37,6 @@
 - Debug menu improvements
 - Stay on EVs/IVs when switching Pokemon
 - Battle Tent Pokemon/EVs?
-- Add Regigigas to Sealed Chamber?
 - Update other punches (Shadow/Dizzy/Needle Arm) to 75 BP?
 - Remove level up moves that are duplicated at level 1 (level takes priority over like level 5, but evolution moves take priority over level 1)
 - Edit friendship evolution methods
@@ -131,19 +129,21 @@
         - Update some Kindlers
     - Make list of all Magma/Aqua Pokemon and make them spread more evenly across the Grunts
     - Remove Alolan Raichu?/Add in other Hoenn Dex regionals? (Alolan Sandshrew/Vulpix at Shoal Cave, Shiny/Dawn Stone for Galarian Weezing/level 38 Galarian Corsola)
+    - Add Farigiraf to Hoenn Dex once implemented
     - Add 3 other Regis?
+        - Add Regigigas to Sealed Chamber?
     - Diversify water routes instead of just Tentacool/Wingull (definitely add more Carvanha; bring some fishing encounters to Surf)
     - Go back and make rematch levels stronger/more consistent
     - Rework land_mons to only have 10 slots? (last two would go from 4->5)?
+    - Figure out why PokeNav callers think there were 512 wins at the Battle Palace
 
 ## To Do Soon
-Make rapids easier to navigate
 Underwater
     Sealed Chamber
-Pacifidlog
+Return/Frustration
+Mirage Island
+    Use location pointer?
 Abandoned Ship Dive section
     Since Deep Sea items can be bought, should a Big Pearl be given instead?
 Update FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_BELDUM_POKEBALL to be cleared after Seafloor Cavern?
     and FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY
-Mirage Island
-    Use location pointer?

@@ -92,6 +92,8 @@
     - Add Farigiraf to Hoenn Dex once implemented
     - Add 3 other Regis?
         - Add Regigigas to Sealed Chamber?
+        - Regieleki near New Mauville?
+        - Regidrago near Meteor Falls?
     - Diversify water routes instead of just Tentacool/Wingull (definitely add more Carvanha; bring some fishing encounters to Surf)
     - Go back and make rematch levels stronger/more consistent
     - Rework land_mons to only have 10 slots? (last two would go from 4->5)?

@@ -15,7 +15,7 @@ IslandCave_EventScript_TryRemoveRegice::
 	return
 
 IslandCave_OnLoad:
-	call_if_unset FLAG_SYS_BRAILLE_REGICE_COMPLETED, IslandCave_EventScript_HideRegiEntrance
+	setflag FLAG_SYS_BRAILLE_REGICE_COMPLETED
 	end
 
 IslandCave_EventScript_HideRegiEntrance::

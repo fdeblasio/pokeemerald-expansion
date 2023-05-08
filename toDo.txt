@@ -38,7 +38,6 @@
 - Stay on EVs/IVs when switching Pokemon
 - Battle Tent Pokemon/EVs?
 - Update other punches (Shadow/Dizzy/Needle Arm) to 75 BP?
-- Remove level up moves that are duplicated at level 1 (level takes priority over like level 5, but evolution moves take priority over level 1)
 - Edit friendship evolution methods
 - Calculate Electro Ball more similarly to Gyro Ball?
 - Get all the weird Mauville men at once?

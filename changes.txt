@@ -124,6 +124,12 @@ Pokémon:
     Slugma:
         Now evolves at level 32
 
+    Sceptile:
+        Learns Leaf Blade upon evolving
+
+    Blaziken:
+        Learns Blaze Kick upon evolving
+
     Wurmple:
         Learns Bug Bite at level 7 instead of 15
         Evolution is based on time of day

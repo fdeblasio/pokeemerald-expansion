@@ -12,6 +12,10 @@ Moves:
         Now hits exactly twice
         Power: 15->25
         Accuracy: 85->100
+    Needle Arm:
+        Power: 60->75
+    Dizzy Punch:
+        Power: 70->75
     Volt Tackle has a 30% chance to paralyze and no longer causes recoil
     Given 100 accuracy:
         Cut

@@ -231,14 +231,11 @@ Text_MonUsedWaterfall:
 
 EventScript_UseDive::
 	lockall
-	checkpartymove MOVE_DIVE
-	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantDive
-	bufferpartymonnick STR_VAR_1, VAR_RESULT
-	setfieldeffectargument 0, VAR_RESULT
-	setfieldeffectargument 1, 1
+	checkitem ITEM_SILPH_SCOPE
+	goto_if_eq VAR_RESULT, FALSE, EventScript_CantDive
 	msgbox Text_WantToDive, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_EndDive
-	msgbox Text_MonUsedDive, MSGBOX_DEFAULT
+	msgbox Text_DiveUnder, MSGBOX_DEFAULT
 	dofieldeffect FLDEFF_USE_DIVE
 	goto EventScript_EndDive
 	end
@@ -254,21 +251,10 @@ EventScript_EndDive::
 
 EventScript_UseDiveUnderwater::
 	lockall
-	checkpartymove MOVE_DIVE
-	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantSurface
-	bufferpartymonnick STR_VAR_1, VAR_RESULT
-	setfieldeffectargument 0, VAR_RESULT
-	setfieldeffectargument 1, 1
 	msgbox Text_WantToSurface, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_EndSurface
-	msgbox Text_MonUsedDive, MSGBOX_DEFAULT
+	msgbox Text_DiveSurfaced, MSGBOX_DEFAULT
 	dofieldeffect FLDEFF_USE_DIVE
-	goto EventScript_EndSurface
-	end
-
-EventScript_CantSurface::
-	lockall
-	msgbox Text_CantSurface, MSGBOX_DEFAULT
 	goto EventScript_EndSurface
 	end
 
@@ -277,23 +263,22 @@ EventScript_EndSurface::
 	end
 
 Text_CantDive:
-	.string "The sea is deep here. A Pokémon\n"
-	.string "may be able to go underwater.$"
+	.string "The sea is deep here. Someone with\n"
+	.string "Dive Goggles could go underwater.$"
 
 Text_WantToDive:
 	.string "The sea is deep here.\n"
-	.string "Would you like to use Dive?$"
+	.string "Would you like to Dive?$"
 
-Text_MonUsedDive:
-	.string "{STR_VAR_1} used Dive.$"
+Text_DiveUnder:
+	.string "You dove underwater.$"
 
-Text_CantSurface:
-	.string "Light is filtering down from above.\n"
-	.string "A Pokémon may be able to surface.$"
+Text_DiveSurfaced:
+	.string "You surfaced.$"
 
 Text_WantToSurface:
 	.string "Light is filtering down from above.\n"
-	.string "Would you like to use Dive?$"
+	.string "Would you like to surface?$"
 
 EventScript_FailSweetScent::
 	msgbox Text_FailSweetScent, MSGBOX_SIGN

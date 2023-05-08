@@ -3330,7 +3330,6 @@ static const u16 sHMMoves[] =
     MOVE_STRENGTH,
     MOVE_ROCK_SMASH,
     MOVE_WATERFALL,
-    MOVE_DIVE,
     HM_MOVES_END
 };
 

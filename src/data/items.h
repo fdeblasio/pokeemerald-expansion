@@ -8966,10 +8966,10 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_HM05_FLASH] =
+    [ITEM_TM105_FLASH] =
     {
-        .name = _("HM05"),
-        .itemId = ITEM_HM05_FLASH,
+        .name = _("TM105"),
+        .itemId = ITEM_TM105_FLASH,
         .price = 0,
         .description = sHM05Desc,
         .importance = 1,
@@ -9789,7 +9789,7 @@ const struct Item gItems[] =
 
     [ITEM_SILPH_SCOPE] =
     {
-        .name = _("Silph Scope"),
+        .name = _("Dive Goggles"),
         .itemId = ITEM_SILPH_SCOPE,
         .price = 0,
         .description = sSilphScopeDesc,

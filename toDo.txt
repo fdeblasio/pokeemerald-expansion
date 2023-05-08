@@ -128,7 +128,7 @@
         - Update some Flannery trainers
         - Update some Kindlers
     - Make list of all Magma/Aqua Pokemon and make them spread more evenly across the Grunts
-    - Remove Alolan Raichu?/Add in other Hoenn Dex regionals? (Alolan Sandshrew/Vulpix at Shoal Cave, Shiny/Dawn Stone for Galarian Weezing/level 38 Galarian Corsola)
+    - Add in Hoenn Dex regionals? (Sun/Shiny Stone for Alolan Raichu/Alolan Sandshrew/Vulpix at Shoal Cave, Shiny/Dawn Stone for Galarian Weezing/level 38 Galarian Corsola)
     - Add Farigiraf to Hoenn Dex once implemented
     - Add 3 other Regis?
         - Add Regigigas to Sealed Chamber?

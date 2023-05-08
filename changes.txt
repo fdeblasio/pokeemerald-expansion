@@ -42,7 +42,6 @@ Pokémon:
 
     Pikachu:
         Learns Volt Tackle at level 1
-        Evolves into Alolan Raichu with Sun Stone
 
     Raichu:
         Learns Volt Tackle at level 1

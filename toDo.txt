@@ -35,6 +35,7 @@
 - Add Ampharosite to Battle Frontier store
 - Replace ifdefs for move stats with just one set of stats
 - Add EXP Candy
+- Use location pointer for Mirage Island?
 
 - Second, more advanced run:
     - Edit moves that work in field
@@ -117,12 +118,6 @@
     - Check that Mossdeep swimmer flag works
 
 ## To Do Soon
-Underwater
-    Sealed Chamber
-Return/Frustration
-Mirage Island
-    Use location pointer?
+Sealed Chamber
 Abandoned Ship Dive section
     Since Deep Sea items can be bought, should a Big Pearl be given instead?
-Update FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_BELDUM_POKEBALL to be cleared after Seafloor Cavern?
-    and FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY

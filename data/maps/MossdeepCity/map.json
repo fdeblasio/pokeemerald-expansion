@@ -262,7 +262,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MossdeepCity_EventScript_AquaGrunt",
-      "flag": "FLAG_DEFEATED_MAGMA_SPACE_CENTER"
+      "flag": "FLAG_HIDE_MOSSDEEP_CITY_TEAM_AQUA"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
@@ -275,7 +275,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MossdeepCity_EventScript_AquaGrunt",
-      "flag": "FLAG_DEFEATED_MAGMA_SPACE_CENTER"
+      "flag": "FLAG_HIDE_MOSSDEEP_CITY_TEAM_AQUA"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
@@ -288,7 +288,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MossdeepCity_EventScript_AquaGrunt",
-      "flag": "FLAG_DEFEATED_MAGMA_SPACE_CENTER"
+      "flag": "FLAG_HIDE_MOSSDEEP_CITY_TEAM_AQUA"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
@@ -301,7 +301,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MossdeepCity_EventScript_AquaGrunt",
-      "flag": "FLAG_DEFEATED_MAGMA_SPACE_CENTER"
+      "flag": "FLAG_HIDE_MOSSDEEP_CITY_TEAM_AQUA"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
@@ -314,7 +314,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MossdeepCity_EventScript_AquaGrunt",
-      "flag": "FLAG_DEFEATED_MAGMA_SPACE_CENTER"
+      "flag": "FLAG_HIDE_MOSSDEEP_CITY_TEAM_AQUA"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
@@ -327,7 +327,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MossdeepCity_EventScript_AquaGrunt",
-      "flag": "FLAG_DEFEATED_MAGMA_SPACE_CENTER"
+      "flag": "FLAG_HIDE_MOSSDEEP_CITY_TEAM_AQUA"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
@@ -340,7 +340,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MossdeepCity_EventScript_AquaGrunt",
-      "flag": "FLAG_DEFEATED_MAGMA_SPACE_CENTER"
+      "flag": "FLAG_HIDE_MOSSDEEP_CITY_TEAM_AQUA"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
@@ -353,7 +353,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MossdeepCity_EventScript_AquaGrunt",
-      "flag": "FLAG_DEFEATED_MAGMA_SPACE_CENTER"
+      "flag": "FLAG_HIDE_MOSSDEEP_CITY_TEAM_AQUA"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
@@ -366,7 +366,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MossdeepCity_EventScript_AquaGrunt",
-      "flag": "FLAG_DEFEATED_MAGMA_SPACE_CENTER"
+      "flag": "FLAG_HIDE_MOSSDEEP_CITY_TEAM_AQUA"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
@@ -379,7 +379,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MossdeepCity_EventScript_AquaGrunt",
-      "flag": "FLAG_DEFEATED_MAGMA_SPACE_CENTER"
+      "flag": "FLAG_HIDE_MOSSDEEP_CITY_TEAM_AQUA"
     }
   ],
   "warp_events": [

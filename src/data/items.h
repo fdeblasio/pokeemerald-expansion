@@ -5193,7 +5193,7 @@ const struct Item gItems[] =
 
     [ITEM_DEEP_SEA_SCALE] =
     {
-        .name = _("DeepSea Scale"),
+        .name = _("DeepSeaScale"),
         .itemId = ITEM_DEEP_SEA_SCALE,
         .price = 2000,
         .holdEffect = HOLD_EFFECT_DEEP_SEA_SCALE,
@@ -5206,7 +5206,7 @@ const struct Item gItems[] =
 
     [ITEM_DEEP_SEA_TOOTH] =
     {
-        .name = _("DeepSea Tooth"),
+        .name = _("DeepSeaTooth"),
         .itemId = ITEM_DEEP_SEA_TOOTH,
         .price = 2000,
         .holdEffect = HOLD_EFFECT_DEEP_SEA_TOOTH,

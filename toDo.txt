@@ -120,6 +120,7 @@
     - Check that Mossdeep swimmer flag works
 
 ## To Do Soon
-Sealed Chamber
+Sootopolis
 Abandoned Ship Dive section
-    Since Deep Sea items can be bought, should a Big Pearl be given instead?
+    Since Deep Sea items can be bought, should a Big Pearl/Pearl String be given instead?
+Seafloor Cavern

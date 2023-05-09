@@ -35,6 +35,9 @@
 - Improve B-canceling moves
 - Figure out how to get important trainers to use their best Pokemon last
 - Go back and make rematch levels stronger/more consistent
+- Type effectiveness in battle
+- PC in menu (look at debug menu)
+- TM Case?
 
 - Second, more advanced run:
     - Edit moves that work in field

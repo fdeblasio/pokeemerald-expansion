@@ -526,7 +526,7 @@ BattleFrontier_ExchangeServiceCorner_Text_ConfirmCarbos:
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmHPUp:
-	.string "You've chosen the HP UP.\n"
+	.string "You've chosen the HP Up.\n"
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmBrightpowder:

@@ -34,6 +34,7 @@ Moves:
         Aqua Tail
         Crabhammer
         Bonemerang
+        Psyshield Bash
 
 Pokémon:
     ALL:

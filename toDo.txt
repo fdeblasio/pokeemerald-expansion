@@ -90,10 +90,12 @@
         - Update some Kindlers
     - Make list of all Magma/Aqua Pokemon and make them spread more evenly across the Grunts
         - Maybe Admins rely less on Mightyena/Leaders' signature
-    - Add in Hoenn Dex regionals? (Sun/Shiny Stone for Alolan Raichu/Alolan Sandshrew/Vulpix at Shoal Cave, Shiny/Dawn Stone for Galarian Weezing/level 38 Galarian Corsola/??? Obstagoon)
+    - Add in Hoenn Dex regionals? (Sun/Shiny Stone for Alolan Raichu/Alolan Sandshrew/Vulpix at Shoal Cave, ??? Alolan Muk, Shiny/Dawn Stone for Galarian Weezing, level 38 Cursola, ??? Obstagoon)
         - Update level up/learnable movesets for them
         - Sandslash, Ninetales, Cursola, and maybe Obstagoon can be used to diversify the Elite Four teams
+        - Post-game Meowth regionals
     - Add Farigiraf to Hoenn Dex once implemented
+        - Post-game Wyrdeer, Ambipom, Ursaluna, Bonsly
     - Add 3 other Regis?
         - Add Regigigas to Sealed Chamber?
         - Regieleki near New Mauville?

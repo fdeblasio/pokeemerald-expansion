@@ -8743,11 +8743,11 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_WHISCASH] =
     {
         .baseHP        = 110,
-        .baseAttack    = 78,
-        .baseDefense   = 73,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 76,
-        .baseSpDefense = 71,
+        .baseAttack    = 90,
+        .baseDefense   = 75,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 75,
         .types = { TYPE_WATER, TYPE_GROUND},
         .catchRate = 75,
         .expYield = 164,
@@ -9413,7 +9413,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_LUVDISC] =
     {
-        .baseHP        = 45,
+        .baseHP        = 50,
         .baseAttack    = 30,
         .baseDefense   = 55,
         .baseSpeed     = 100,

@@ -8633,73 +8633,73 @@
             "encounter_rate": 1,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 35,
+                "min_level": 40,
+                "max_level": 42,
                 "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 10,
-                "max_level": 30,
+                "min_level": 40,
+                "max_level": 42,
                 "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 15,
-                "max_level": 25,
+                "min_level": 40,
+                "max_level": 42,
                 "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 25,
-                "max_level": 30,
-                "species": "SPECIES_MAGIKARP"
+                "min_level": 40,
+                "max_level": 42,
+                "species": "SPECIES_GYARADOS"
               }
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 160,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 10,
+                "min_level": 40,
+                "max_level": 42,
                 "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 5,
-                "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
-              },
-              {
-                "min_level": 10,
-                "max_level": 30,
+                "min_level": 40,
+                "max_level": 42,
                 "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 10,
-                "max_level": 30,
+                "min_level": 40,
+                "max_level": 42,
                 "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 10,
-                "max_level": 30,
+                "min_level": 40,
+                "max_level": 42,
                 "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 30,
-                "max_level": 35,
+                "min_level": 40,
+                "max_level": 42,
                 "species": "SPECIES_MAGIKARP"
               },
               {
-                "min_level": 30,
-                "max_level": 35,
-                "species": "SPECIES_MAGIKARP"
-              },
-              {
-                "min_level": 35,
-                "max_level": 40,
+                "min_level": 40,
+                "max_level": 42,
                 "species": "SPECIES_GYARADOS"
               },
               {
-                "min_level": 5,
-                "max_level": 45,
+                "min_level": 40,
+                "max_level": 42,
+                "species": "SPECIES_GYARADOS"
+              },
+              {
+                "min_level": 40,
+                "max_level": 42,
+                "species": "SPECIES_GYARADOS"
+              },
+              {
+                "min_level": 40,
+                "max_level": 42,
                 "species": "SPECIES_GYARADOS"
               }
             ]

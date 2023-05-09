@@ -80,6 +80,7 @@
         - Maybe use makeshift version of it (without setting all flags) to Fly without needing a Pokemon who knows it
     - Add in Houndoom for more Magma variety?
         - Replace Magcargo as Tabitha's main Pokemon (currently unsure if it will Mega Evolve)
+            - Replace Mossdeep Maxie's Mightyena for Magcargo
         - Add in Hoenn Dex after Rhyperior
         - Add Houndoomite to Lilycove Shop
         - Update some grunts to have it 
@@ -120,5 +121,4 @@
     - Check that Mossdeep swimmer flag works
 
 ## To Do Soon
-Sootopolis
 Seafloor Cavern

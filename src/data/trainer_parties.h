@@ -46,24 +46,24 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GruntAquaHideout4[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntSeafloorCavern1[] = {
     {
     .iv = 0,
-    .lvl = 36,
-    .species = SPECIES_POOCHYENA,
+    .lvl = 42,
+    .species = SPECIES_MIGHTYENA,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntSeafloorCavern2[] = {
     {
     .iv = 0,
-    .lvl = 36,
-    .species = SPECIES_CARVANHA,
+    .lvl = 42,
+    .species = SPECIES_TENTACRUEL,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntSeafloorCavern3[] = {
     {
     .iv = 0,
-    .lvl = 36,
-    .species = SPECIES_ZUBAT,
+    .lvl = 42,
+    .species = SPECIES_CRAWDAUNT,
     }
 };
 
@@ -150,8 +150,8 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Ed[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntSeafloorCavern4[] = {
     {
     .iv = 0,
-    .lvl = 36,
-    .species = SPECIES_CARVANHA,
+    .lvl = 42,
+    .species = SPECIES_WAILORD,
     }
 };
 
@@ -359,22 +359,22 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ShellyWeatherInstitute[]
 static const struct TrainerMonNoItemDefaultMoves sParty_ShellySeafloorCavern[] = {
     {
     .iv = 100,
-    .lvl = 37,
+    .lvl = 42,
     .species = SPECIES_MIGHTYENA,
     },
     {
     .iv = 100,
-    .lvl = 37,
+    .lvl = 42,
     .species = SPECIES_CRAWDAUNT,
     },
     {
     .iv = 100,
-    .lvl = 37,
+    .lvl = 43,
     .species = SPECIES_SHARPEDO,
     },
     {
     .iv = 100,
-    .lvl = 37,
+    .lvl = 44,
     .species = SPECIES_GOREBYSS,
     }
 };
@@ -382,17 +382,22 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ShellySeafloorCavern[] =
 static const struct TrainerMonNoItemDefaultMoves sParty_Archie[] = {
     {
     .iv = 150,
-    .lvl = 41,
+    .lvl = 43,
     .species = SPECIES_MIGHTYENA,
     },
     {
     .iv = 150,
-    .lvl = 41,
+    .lvl = 43,
+    .species = SPECIES_TENTACRUEL,
+    },
+    {
+    .iv = 150,
+    .lvl = 44,
     .species = SPECIES_CRAWDAUNT,
     },
     {
     .iv = 150,
-    .lvl = 43,
+    .lvl = 45,
     .species = SPECIES_SHARPEDO,
     }
 };
@@ -8094,13 +8099,13 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Julio[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntSeafloorCavern5[] = {
     {
     .iv = 50,
-    .lvl = 35,
-    .species = SPECIES_MIGHTYENA,
+    .lvl = 41,
+    .species = SPECIES_CRAWDAUNT,
     },
     {
     .iv = 50,
-    .lvl = 35,
-    .species = SPECIES_GOLBAT,
+    .lvl = 41,
+    .species = SPECIES_CARVANHA,
     }
 };
 

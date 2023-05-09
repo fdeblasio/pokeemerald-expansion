@@ -295,9 +295,9 @@ void RtcCalcLocalTime(void)
 
 u8 GetTimeOfDay(void) {
     RtcCalcLocalTime();
-    if (gLocalTime.hours >= 12 && gLocalTime.hours < 24) {
+    if (gLocalTime.hours >= 6 && gLocalTime.hours < 20) {
         return TIME_DAY;
-    } else if (gLocalTime.hours >= 0 && gLocalTime.hours < 12) {
+    } else if ((gLocalTime.hours >= 0 && gLocalTime.hours < 6) || (gLocalTime.hours >= 20 && gLocalTime.hours < 24)) {
         return TIME_NIGHT;
     }
 }

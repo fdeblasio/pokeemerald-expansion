@@ -3,8 +3,6 @@
 - https://www.pokecommunity.com/showthread.php?t=416647&page=1
 - https://github.com/pret/pokeemerald/wiki/Tutorials
 - Look at new animations for moves (in battle.h)
-- Change Day/Night hours?
-    - Set proper time hours (instead of all AM being morning and all PM being night)
 - Gallade Sharpness (maybe wait for master/upcoming update)
 - Make Latios/Latias easier to catch/not roam?
     - Maybe get rid of roamers and add both Latis to the Island?

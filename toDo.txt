@@ -121,10 +121,12 @@
         - Gym leaders/Steven/Breeders can have Hidden Abilities
         - Maxie/Archie/Steven use Mega Evolutions
         - Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma)
+        - Vito can use TMs
     - Figure out why PokeNav callers think there were 512 wins at the Battle Palace
     - Check that Mossdeep swimmer flag works
 
 ## To Do Soon
 Double-check Mirage Island
-Trick House 7
-Ever Grande
+Elite Four
+    Trick House 8
+    Wally rematches

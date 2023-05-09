@@ -153,3 +153,7 @@ Move Tutor Replacements: 8 (could expand)
   Dual Wingbeat
   Flip Turn
   Knock Off?
+  Zen Headbutt/Psycho Cut?
+  Scald?
+
+Will need to redo move lists once Tutors are finalized

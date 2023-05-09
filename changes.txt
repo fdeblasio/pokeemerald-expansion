@@ -192,8 +192,9 @@ Pokémon:
 
     Budew:
         Can also evolve at level 13
+        75% female gender ratio
 
-    Budew/Roselia/Roserade:
+    Roselia/Roserade:
         75% female gender ratio
 
     Spinda:
@@ -227,6 +228,9 @@ Pokémon:
         SpD: 71->75
         Spe: 60->70
         Learns Dragon Dance by level up
+
+    Claydol:
+        Learns Zen Headbutt by level up
 
     Castform:
         All stats: 70->75

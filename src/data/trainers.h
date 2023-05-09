@@ -370,7 +370,7 @@ const struct Trainer gTrainers[] = {
         .items = {ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Matt),
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_MattAquaHideout),
     },
 
     [TRAINER_ZANDER] =
@@ -6807,14 +6807,14 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_GRUNT_SEAFLOOR_CAVERN_5] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+        .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .trainerName = _("Grunt"),
+        .trainerPic = TRAINER_PIC_AQUA_ADMIN_M,
+        .trainerName = _("Matt"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntSeafloorCavern5),
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_MattSeafloorCavern),
     },
 
     [TRAINER_GRUNT_UNUSED] =

@@ -302,7 +302,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Fredrick[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Matt[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_MattAquaHideout[] = {
     {
     .iv = 50,
     .lvl = 38,
@@ -370,11 +370,6 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ShellySeafloorCavern[] =
     {
     .iv = 100,
     .lvl = 43,
-    .species = SPECIES_SHARPEDO,
-    },
-    {
-    .iv = 100,
-    .lvl = 44,
     .species = SPECIES_GOREBYSS,
     }
 };
@@ -3791,7 +3786,7 @@ static const struct TrainerMonItemCustomMoves sParty_TateAndLiza1[] = {
     }
 };
 
-//Castform Rain, Huntail/Gorebyss (Wallace, Shelly), Swampert, Relicanth (Roxanne?)
+//Castform Rain, Huntail/Gorebyss (Wallace, Aqua Admins), Swampert, Relicanth (Roxanne?)
 static const struct TrainerMonItemCustomMoves sParty_Juan1[] = {
     {
     .iv = 200,
@@ -4664,7 +4659,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Timmy[] = {
     }
 };
 
-//Castform Rain, Huntail/Gorebyss (Juan, Shelly), Swampert, Relicanth (Roxanne?)
+//Castform Rain, Huntail/Gorebyss (Juan, Aqua Admins), Swampert, Relicanth (Roxanne?)
 static const struct TrainerMonItemCustomMoves sParty_Wallace[] = {
     {
     .iv = 255,
@@ -8096,16 +8091,21 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Julio[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_GruntSeafloorCavern5[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_MattSeafloorCavern[] = {
     {
     .iv = 50,
-    .lvl = 41,
-    .species = SPECIES_CRAWDAUNT,
+    .lvl = 42,
+    .species = SPECIES_WAILORD,
     },
     {
     .iv = 50,
-    .lvl = 41,
-    .species = SPECIES_CARVANHA,
+    .lvl = 42,
+    .species = SPECIES_SHARPEDO,
+    },
+    {
+    .iv = 50,
+    .lvl = 43,
+    .species = SPECIES_HUNTAIL,
     }
 };
 

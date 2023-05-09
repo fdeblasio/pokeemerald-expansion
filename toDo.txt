@@ -35,6 +35,7 @@
 - Replace ifdefs for move stats with just one set of stats
 - Add EXP Candy
 - Use location pointer for Mirage Island?
+- Improve B-canceling moves
 
 - Second, more advanced run:
     - Edit moves that work in field
@@ -71,7 +72,7 @@
         - Currently are in same index spot. Should be moved to before HMs once everything is figured out (can simplify IsMoveHm once done)
         - Edit text (Steven's house for Dive for example)
     - When doing new savefile, remove `u32 tmShopFlags[4];` from include/global.h
-    - Expand Bag!!!
+    - Expand Bag!!! (https://github.com/pret/pokeemerald/wiki/Make-the-Bag-Able-to-Hold-120-Items-Instead-of-30)
     - Implement Pokedex Plus (https://www.pokecommunity.com/showthread.php?t=441996)
     - Figure out ?????? showing up at end of Dex
     - Revamp EVs to give 1 stat per EV and cap out at 63
@@ -88,7 +89,9 @@
         - Update some Flannery trainers
         - Update some Kindlers
     - Make list of all Magma/Aqua Pokemon and make them spread more evenly across the Grunts
-    - Add in Hoenn Dex regionals? (Sun/Shiny Stone for Alolan Raichu/Alolan Sandshrew/Vulpix at Shoal Cave, Shiny/Dawn Stone for Galarian Weezing/level 38 Galarian Corsola)
+        - Maybe Admins rely less on Mightyena/Leaders' signature
+    - Add in Hoenn Dex regionals? (Sun/Shiny Stone for Alolan Raichu/Alolan Sandshrew/Vulpix at Shoal Cave, Shiny/Dawn Stone for Galarian Weezing/level 38 Galarian Corsola/??? Obstagoon)
+        - Update level up/learnable movesets for them
     - Add Farigiraf to Hoenn Dex once implemented
     - Add 3 other Regis?
         - Add Regigigas to Sealed Chamber?

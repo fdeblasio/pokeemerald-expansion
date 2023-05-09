@@ -29910,6 +29910,7 @@ static const u16 sCastformTeachableLearnset[] = {
     MOVE_SOLAR_BEAM,
     MOVE_SUBSTITUTE,
     MOVE_SUNNY_DAY,
+    MOVE_SURF,
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_TACKLE,

@@ -17,7 +17,6 @@
 - Get all the weird Mauville men at once?
 - Update Favor Lady's items to include new items
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
-- Figure out if it's possible to select multiple Pokemon when moving to or from party
 - Implement Deoxys encounter at island/changing forms at Fallarbor
 - Give Espeon Power Gem on level up or evolution
 - Edit Slot odds (SLOT_MACHINE_)? Even though there's only three prizes?
@@ -34,6 +33,8 @@
 - Add EXP Candy
 - Use location pointer for Mirage Island?
 - Improve B-canceling moves
+- Figure out how to get important trainers to use their best Pokemon last
+- Go back and make rematch levels stronger/more consistent
 
 - Second, more advanced run:
     - Edit moves that work in field
@@ -75,6 +76,9 @@
     - Implement Pokedex Plus (https://www.pokecommunity.com/showthread.php?t=441996)
     - Figure out ?????? showing up at end of Dex
     - Revamp EVs to give 1 stat per EV and cap out at 63
+    - Remove IVs? Maybe make binary for either 0 or 31 added to stat
+        - Would need to figure out Hidden Power
+    - Fire Blast/Hydro Pump/Stone Edge accurate in respective weathers?
     - Calculate Electro Ball more similarly to Gyro Ball?
     - DON'T USE DEBUG MENU FOR FLYING. Test to see if without it, Fly Flags are set correctly
         - Maybe use makeshift version of it (without setting all flags) to Fly without needing a Pokemon who knows it
@@ -100,7 +104,6 @@
         - Regieleki near New Mauville?
         - Regidrago near Meteor Falls?
     - Diversify water routes instead of just Tentacool/Wingull (definitely add more Carvanha; bring some fishing encounters to Surf)
-    - Go back and make rematch levels stronger/more consistent
     - Rework land_mons to only have 10 slots? (last two would go from 4->5)?
     - Spruce up battles/rematches
         - customAll Pokemon
@@ -118,15 +121,17 @@
         - Fix Flannery's rematches being male; also her Torkoal or Ninetales should have Drought
         - Norman can have Toxic Orb Toxic Boost Zangoose
             - Spinda: Thrash if Own Tempo, Superpower if Contrary. Should be given a cool pattern (maybe 88888888?)
-        - Fix Winona's rematches being male; Pelipper gets Drizzle
+        - Fix Winona's rematches being male; Pelipper gets Drizzle?
         - Gym leaders/Steven/Breeders can have Hidden Abilities
         - Maxie/Archie/Steven use Mega Evolutions
         - Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma)
         - Vito can use TMs
     - Figure out why PokeNav callers think there were 512 wins at the Battle Palace
+        - Might be related to Battle Tent giving an item right away
     - Check that Mossdeep swimmer flag works
     - Make all moves set to their Max PP automatically?
         - Would need to remove all PP Ups/Maxes
+    - Bring important Trainers up to ORAS levels?
 
 ## To Do Soon
 Double-check Mirage Island

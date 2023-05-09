@@ -234,8 +234,10 @@ Pokémon:
 
     Castform:
         All stats: 70->75
-        Learns Overheat by TM
+        Learns Surf, Flamethrower, and Ice Beam by level up
         Learns Thunder and Solar Beam by level up
+        Learns Overheat by TM
+        Learns Surf by HM
 
     Tropius:
         HP: 99->100

@@ -71,6 +71,7 @@
         - Edit text (Steven's house for Dive for example)
     - When doing new savefile, remove `u32 tmShopFlags[4];` from include/global.h
     - Expand Bag!!! (https://github.com/pret/pokeemerald/wiki/Make-the-Bag-Able-to-Hold-120-Items-Instead-of-30)
+        - Medicine Pocket?
     - Implement Pokedex Plus (https://www.pokecommunity.com/showthread.php?t=441996)
     - Figure out ?????? showing up at end of Dex
     - Revamp EVs to give 1 stat per EV and cap out at 63
@@ -124,6 +125,8 @@
         - Vito can use TMs
     - Figure out why PokeNav callers think there were 512 wins at the Battle Palace
     - Check that Mossdeep swimmer flag works
+    - Make all moves set to their Max PP automatically?
+        - Would need to remove all PP Ups/Maxes
 
 ## To Do Soon
 Double-check Mirage Island

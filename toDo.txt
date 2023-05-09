@@ -92,6 +92,7 @@
         - Maybe Admins rely less on Mightyena/Leaders' signature
     - Add in Hoenn Dex regionals? (Sun/Shiny Stone for Alolan Raichu/Alolan Sandshrew/Vulpix at Shoal Cave, Shiny/Dawn Stone for Galarian Weezing/level 38 Galarian Corsola/??? Obstagoon)
         - Update level up/learnable movesets for them
+        - Sandslash, Ninetales, Cursola, and maybe Obstagoon can be used to diversify the Elite Four teams
     - Add Farigiraf to Hoenn Dex once implemented
     - Add 3 other Regis?
         - Add Regigigas to Sealed Chamber?
@@ -127,6 +128,7 @@
 Double-check Mirage Island
 Sky Pillar
 Sootopolis Gym
+    Trick House 7
     Meteor Falls
     Ever Grande
     Waterfall items

@@ -124,5 +124,9 @@
     - Check that Mossdeep swimmer flag works
 
 ## To Do Soon
-Cave of Origin
 Double-check Mirage Island
+Sky Pillar
+Sootopolis Gym
+    Meteor Falls
+    Ever Grande
+    Waterfall items

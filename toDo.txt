@@ -8,7 +8,7 @@
 - Gallade Sharpness (maybe wait for master/upcoming update)
 - Make Latios/Latias easier to catch/not roam?
     - Maybe get rid of roamers and add both Latis to the Island?
-- Overworld sprites to match trainer sprites (for example, giving Youngsters yellow shirts, girl tubers a yellow tube, and Rangers red clothes)
+- Overworld sprites to match trainer sprites (for example, giving Youngsters yellow shirts, girl tubers a yellow tube, Rangers red clothes, Dragon Tamers capes and correct hair color)
 - Improve Pokemon overworld sprites
 - Try to find Bolts foreground of Walda PC
 - Some MAN_2's maybe could be switched to DEVON_EMPLOYEE
@@ -128,10 +128,5 @@
 
 ## To Do Soon
 Double-check Mirage Island
-Sootopolis Gym
-    Trick House 7
-    Mt. Pyre orbs scene
-    Sky Pillar part 2
-    Meteor Falls
-    Ever Grande
-    Waterfall items
+Trick House 7
+Ever Grande

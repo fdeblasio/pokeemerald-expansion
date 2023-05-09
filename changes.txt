@@ -231,10 +231,12 @@ Pokémon:
         Can also evolve at level 19
 
     Huntail:
+        Holding a Deep Sea Tooth multiplies its Attack by 1.5
         Atk: 104->114
 
     Gorebyss:
-        SpA: 84->94
+        Holding a Deep Sea Scale multiplies its Defense by 1.5
+        Atk: 84->94
         Can learn Leech Life by TM
 
     Luvdisc:

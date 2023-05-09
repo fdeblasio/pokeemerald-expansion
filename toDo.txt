@@ -23,7 +23,6 @@
 - Replace Regis with their doll sprites since they look more like them?
 - Give Espeon Power Gem on level up or evolution
 - Edit Slot odds (SLOT_MACHINE_)? Even though there's only three prizes?
-- Update Deep Sea items to work on respective evolutions as well?
 - Add Hyper Training
 - Primal legendaries in story (holding their orbs)
 - Once Mints are implemented, in Lilycove 3F, move X items to left clerk and make right clerk Mints
@@ -116,11 +115,10 @@
         - Fix Winona's rematches being male; Pelipper gets Drizzle
         - Gym leaders/Steven/Breeders can have Hidden Abilities
         - Maxie/Archie/Steven use Mega Evolutions
+        - Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma)
     - Figure out why PokeNav callers think there were 512 wins at the Battle Palace
     - Check that Mossdeep swimmer flag works
 
 ## To Do Soon
 Sootopolis
-Abandoned Ship Dive section
-    Since Deep Sea items can be bought, should a Big Pearl/Pearl String be given instead?
 Seafloor Cavern

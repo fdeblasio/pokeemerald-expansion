@@ -41,6 +41,7 @@ Pokémon:
                 Natural Gift, Lucky Chant, and Synchronoise have been removed
         Any other moveset changes will be noted
         If a Pokémon can evolve by holding/being traded with an item, it now can evolve from that item being used
+        Catch rate is a minimum of 30 for legendaries/mythicals and 45 for the rest
 
     Nidorina/Nidoqueen (not in base game):
         Can now breed
@@ -75,30 +76,33 @@ Pokémon:
     Rhyperior:
         Learns Rock Wrecker upon evolving
 
-    Elekid:
+    Pinsir:
+        Catch rate: 45->90
+
+    Elekid (not in base game):
         Atk: 63->65
         Def: 37->40
         SpA: 65->70
 
-    Electabuzz:
+    Electabuzz (not in base game):
         Atk: 83->85
         Def: 57->60
         SpA: 95->100
 
-    Electivire:
+    Electivire (not in base game):
         Atk: 123->125
         Def: 67->70
         SpA: 95->100
 
-    Magby:
+    Magby (not in base game):
         Def: 37->40
         Spe: 83->85
 
-    Magmar:
+    Magmar (not in base game):
         Def: 57->60
         Spe: 93->95
 
-    Magmortar:
+    Magmortar (not in base game):
         Atk: 95->100
         Def: 67->70
         Spe: 83->85
@@ -124,6 +128,9 @@ Pokémon:
     Azumarill:
         Atk: 50->60
         Spe: 50->60
+
+    Heracross:
+        Catch rate: 45->90
 
     Slugma:
         Now evolves at level 32
@@ -162,7 +169,11 @@ Pokémon:
     Delcatty:
         Gets Swift via level up
 
+    Sableye:
+        Catch rate: 45->90
+
     Mawile:
+        Catch rate: 45->90
         Can learn Metal Claw and Smart Strike by level up
 
     Volbeat:

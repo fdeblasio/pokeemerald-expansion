@@ -33,6 +33,9 @@ Moves:
     Disarming Voice:
         Power: 40->60
         PP: 15->20
+    Comet Punch:
+        Power: 18->20
+        Accuracy: 85->90
     Given 100 accuracy:
         Cut
         Metal Claw
@@ -54,6 +57,8 @@ Moves:
         Slam
         Mega Punch
         Egg Bomb
+        High Horsepower
+        Octazooka
 
 Pokémon:
     ALL:
@@ -161,6 +166,9 @@ Pokémon:
     Azumarill:
         Atk: 50->60
         Spe: 50->60
+
+    Sunflora:
+        Learns Morning Sun by level up
 
     Heracross:
         Catch rate: 45->90

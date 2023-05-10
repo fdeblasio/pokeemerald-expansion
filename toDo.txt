@@ -93,12 +93,14 @@
         - Replace Magcargo as Tabitha's main Pokemon (currently unsure if it will Mega Evolve)
             - Replace Mossdeep Maxie's Mightyena for Magcargo
         - Add in Hoenn Dex after Rhyperior
-        - Add Houndoomite to Lilycove Shop
+        - Move Houndoomite from Battle Frontier to Lilycove Shop
         - Update some grunts to have it 
             - Slugma/Vulpix Mossdeep grunt has Slugma replaced by Houndour, the Mightyena grunt gets replaced with a Magcargo, and one of the Numel grunts gets Mightyena
         - Update some Flannery trainers
         - Update some Kindlers
         - pokemon.c HOENN_TO_NATIONAL and whatnot
+        - Put it in Safari Zone but remove encounters for new sections
+            - Move Hoothoot to only Area 6 to take Houndour's place. This will give 5 and 6 six land Pokemon each. Redo encounter rates
     - Make list of all Magma/Aqua Pokemon and make them spread more evenly across the Grunts
         - Maybe Admins rely less on Mightyena/Leaders' signature
     - Add in Hoenn Dex regionals?
@@ -116,7 +118,6 @@
         - Update level up/learnable movesets for them
         - Sandslash, Ninetales, Cursola, and maybe Obstagoon can be used to diversify the Elite Four teams
     - Add Farigiraf to Hoenn Dex once implemented
-        - Post-game Wyrdeer, Ambipom, Ursaluna, Bonsly
     - Add 3 other Regis?
         - Add Regigigas to Sealed Chamber?
         - Regieleki near New Mauville?
@@ -154,15 +155,17 @@
     - Magmortar Flash Fire?
     - Edit max money
     - Brendan/May rematches?
+    - Make seperate Dex for post-game (similar to SwSh DLC dexes)?
 
 ## To Do Soon
 Double-check Mirage Island
-Wally rematches
 Safari Zone
+    - Wyrdeer, Ambipom, Ursaluna
 SS Tidal
     Battle Frontier
+        - Bonsly
         - Ampharos, Latios, Latias, Houndoom, Aerodactyl mega stones
         - Red and Blue Orbs?
-        - Oval Stone, Electrizer, Magmizer
+        - Oval Stone, Electrizer, Magmizer, Peat Block
         - Sacred Ash to store?
 Steven

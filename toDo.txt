@@ -92,6 +92,7 @@
             - Slugma/Vulpix Mossdeep grunt has Slugma replaced by Houndour, the Mightyena grunt gets replaced with a Magcargo, and one of the Numel grunts gets Mightyena
         - Update some Flannery trainers
         - Update some Kindlers
+        - pokemon.c HOENN_TO_NATIONAL and whatnot
     - Make list of all Magma/Aqua Pokemon and make them spread more evenly across the Grunts
         - Maybe Admins rely less on Mightyena/Leaders' signature
     - Add in Hoenn Dex regionals? (Sun/Shiny Stone for Alolan Raichu/Alolan Sandshrew/Vulpix at Shoal Cave, ??? Alolan Muk, Shiny/Dawn Stone for Galarian Weezing, level 38 Cursola, ??? Obstagoon)
@@ -144,11 +145,10 @@ Aurora Ticket
 Old Sea Map
 Steven's Jirachi
 Safari Zone
-Desert Underpass
 Altering Cave (Hoenn/Johto starters?)
 SS Tidal
     Battle Frontier
-        - Ampharos, Latios, Latias, Houndoom mega stones
+        - Ampharos, Latios, Latias, Houndoom, Aerodactyl mega stones
         - Sacred Ash to store?
 Groudon/Kyogre
 Steven

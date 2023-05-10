@@ -19,7 +19,11 @@ Moves:
         Power: 70->75
     Luster Purge/Mist Ball:
         PP: 5->10
-    Volt Tackle has a 30% chance to paralyze and no longer causes recoil
+    Constrict:
+        Power: 10->30
+    Volt Tackle:
+        Paralyze chance: 10%->30%
+        No longer causes recoil
     Given 100 accuracy:
         Cut
         Metal Claw
@@ -119,6 +123,10 @@ Pokémon:
         Now evolves into Espeon with a Sun Stone
         Now evolves into Umbreon with a Moon Stone
         Now evolves into Sylveon with a Dawn Stone
+
+    Aerodactyl:
+        Found in Desert Underpass
+        Learns Double-Edge, Head Smash, and Brave Bird by level up
 
     Azurill:
         50/50 gender ratio

@@ -21,6 +21,7 @@ Moves:
         PP: 5->10
     Constrict:
         Power: 10->30
+        Chance to reduce speed: 10->100
     Volt Tackle:
         Paralyze chance: 10%->30%
         No longer causes recoil
@@ -46,13 +47,17 @@ Moves:
         Crabhammer
         Bonemerang
         Psyshield Bash
+        Rolling Kick
+        Slam
+        Mega Punch
+        Egg Bomb
 
 Pokémon:
     ALL:
         Movesets a combination of Gens 7-9
             Typically this means they have their latest moveset plus most moves from their Gen 7 moveset that have been removed
-                Natural Gift, Lucky Chant, and Synchronoise have been removed
-        Any other moveset changes will be noted
+                Natural Gift, Lucky Chant, Wring Out, and Synchronoise have been removed
+        Other moveset changes will be noted
         If a Pokémon can evolve by holding/being traded with an item, it now can evolve from that item being used
         Catch rate is a minimum of 30 for legendaries/mythicals and 45 for the rest
 
@@ -95,30 +100,32 @@ Pokémon:
     Pinsir:
         Catch rate: 45->90
 
-    Elekid (not in base game):
+    Elekid:
         Atk: 63->65
         Def: 37->40
         SpA: 65->70
+        Learns Electric Terrain by level up
 
-    Electabuzz (not in base game):
+    Electabuzz:
         Atk: 83->85
         Def: 57->60
         SpA: 95->100
+        Learns Electric Terrain by level up
 
-    Electivire (not in base game):
+    Electivire:
         Atk: 123->125
         Def: 67->70
         SpA: 95->100
 
-    Magby (not in base game):
+    Magby:
         Def: 37->40
         Spe: 83->85
 
-    Magmar (not in base game):
+    Magmar:
         Def: 57->60
         Spe: 93->95
 
-    Magmortar (not in base game):
+    Magmortar:
         Atk: 95->100
         Def: 67->70
         Spe: 83->85
@@ -133,14 +140,13 @@ Pokémon:
         Now evolves into Sylveon with a Dawn Stone
 
     Aerodactyl:
-        Found in Desert Underpass
         Learns Double-Edge, Head Smash, and Brave Bird by level up
 
     Azurill:
-        50/50 gender ratio
-        Water/Fairy
         Can also evolve at level 10
-        Catch rate 150->255
+        Type: Normal/Fairy->Water/Fairy
+        Gender Ration: 25/75->50/50
+        Catch rate: 150->255
 
     Marill:
         HP: 70->75
@@ -202,7 +208,7 @@ Pokémon:
 
     Mawile:
         Catch rate: 45->90
-        Can learn Metal Claw and Smart Strike by level up
+        Learns Metal Claw and Smart Strike by level up
 
     Volbeat:
         Atk: 73->75
@@ -214,10 +220,10 @@ Pokémon:
 
     Budew:
         Can also evolve at level 13
-        75% female gender ratio
+        Gender Ratio: 50/50->75/25
 
     Roselia/Roserade:
-        75% female gender ratio
+        Gender Ratio: 50/50->75/25
 
     Spinda:
         All stats: 60->70
@@ -226,7 +232,7 @@ Pokémon:
         Learns Air Slash by TM
 
     Zangoose:
-        Can learn Cut by HM
+        Learns Cut by HM
         Also in Human-Like Egg Group
         HP: 73->75
         Atk: 115->125
@@ -279,7 +285,7 @@ Pokémon:
     Gorebyss:
         Holding a Deep Sea Scale multiplies its Defense by 1.5
         Atk: 84->94
-        Can learn Leech Life by TM
+        Learns Leech Life by TM
 
     Luvdisc:
         HP: 43->50
@@ -293,16 +299,16 @@ Pokémon:
         Level up learnset slightly restructured to avoid a battle they only have one attacking move
 
     Kyogre:
-        Origin Pulse is now learned at level 63 instead of level 1
+        Learns Origin Pulse at level 63 instead of level 1
         Learns Aurora Beam at level 1 instead of Body Slam
         Learns Surf at level 27 instead of Muddy Water
         Learns Thunder at level 81 instead of Double-Edge
 
     Groudon:
-        Precipice Blades is now learned at level 63 instead of level 1
+        Learns Precipice Blades at level 63 instead of level 1
         Learns Bulldoze at level 1 instead of Mud Shot
         Learns Solar Blade at level 81 instead of Solar Beam
 
     Groudon:
-        Fly is now learned at level 1 instead of level 63
-        Dragon Ascent is now learned at level 63 instead of level 1
+        Learns Fly at level 1 instead of level 63
+        Learns Dragon Ascent at level 63 instead of level 1

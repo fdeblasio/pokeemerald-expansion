@@ -29,6 +29,9 @@ Glacia:          50, 50, 52, 52, 53       51, 51, 52, 52, 54
 Drake:           52, 53, 53, 54, 55       53, 53, 53, 54, 56
 Wallace:         55, 56, 56, 56, 57, 58   56, 56, 56, 56, 57, 58
 Latios/Latias:   40                       60
+Mew:             N/A                      60
+Deoxys:          N/A                      60
+Lugia/Ho-Oh:     N/A                      70
 Groudon/Kyogre:  70
 Steven:          75, 76, 76, 76, 77, 78
 

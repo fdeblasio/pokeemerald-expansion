@@ -19,7 +19,6 @@
 - Give Espeon Power Gem on level up or evolution
 - Edit Slot odds (SLOT_MACHINE_)? Even though there's only three prizes?
 - Add Hyper Training
-- Primal legendaries in story (holding their orbs)
 - Once Mints are implemented, in Lilycove 3F, move X items to left clerk and make right clerk Mints
     - Or move Mints to left too and have left be Chansey, right be Delibird
 - Add Snowscape to Snorunt line's level up set once upcoming is merged in
@@ -37,8 +36,6 @@
 - Type effectiveness in battle
 - PC in menu (look at debug menu)
 - TM Case?
-- Make Groudon/Kyogre hold orbs
-    - seteventmon (look at Latis) instead of wildbattle?
 
 - Second, more advanced run:
     - Edit moves that work in field
@@ -130,6 +127,7 @@
         - Maxie/Archie/Steven use Mega Evolutions
         - Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma)
         - Vito can use TMs
+            - Swap Vito with Ace Trainer on 1F near the end?
     - Figure out why PokeNav callers think there were 512 wins at the Battle Palace
         - Might be related to Battle Tent giving an item right away
     - Check that Mossdeep swimmer flag works
@@ -141,6 +139,16 @@
 Double-check Mirage Island
 Trick House 8
 Wally rematches
-Battle Frontier
-    - Ampharos, Latios, Latias, Houndoom mega stones
-Southern Island
+Mystic Ticket
+Aurora Ticket
+Old Sea Map
+Steven's Jirachi
+Safari Zone
+Desert Underpass
+Altering Cave (Hoenn/Johto starters?)
+SS Tidal
+    Battle Frontier
+        - Ampharos, Latios, Latias, Houndoom mega stones
+        - Sacred Ash to store?
+Groudon/Kyogre
+Steven

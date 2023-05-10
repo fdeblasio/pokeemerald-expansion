@@ -143,6 +143,9 @@ Pokémon:
     Slugma:
         Now evolves at level 32
 
+    Lugia:
+        Learns Brave Bird by level up
+
     Sceptile:
         Learns Leaf Blade upon evolving
 

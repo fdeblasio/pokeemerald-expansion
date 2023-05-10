@@ -3501,8 +3501,6 @@ static const struct TrainerMonItemCustomMoves sParty_Phoebe[] = {
     }
 };
 
-
-//Castform Snow, Froslass
 static const struct TrainerMonItemCustomMoves sParty_Glacia[] = {
     {
     .iv = 250,
@@ -11890,7 +11888,6 @@ static const struct TrainerMonItemCustomMoves sParty_TateAndLiza2[] = {
     }
 };
 
-//Metagross (Steven)
 static const struct TrainerMonItemCustomMoves sParty_TateAndLiza3[] = {
     {
     .iv = 255,
@@ -12224,7 +12221,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Darius[] = {
     }
 };
 
-//Mawile
+//Mawile, Jirachi?
 //Use Steven's Mossdeep team as reference for some moves (and natures/EVs once implemented)
 static const struct TrainerMonItemCustomMoves sParty_Steven[] = {
     {

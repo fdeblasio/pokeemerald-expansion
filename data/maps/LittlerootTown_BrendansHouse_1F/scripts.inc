@@ -404,8 +404,8 @@ PlayersHouse_1F_Text_PortsInSlateportLilycove:
 	.string "Dad: Hm, a Ticket for a ferry?\p"
 	.string "If I recall, there are ferry ports in\n"
 	.string "Slateport and Lilycove.\p"
-	.string "There's also a ticker for an\n"
-	.string "island adventure!$"
+	.string "There's also some tickets for some\n"
+	.string "island adventures!$"
 
 PlayersHouse_1F_Text_BetterGetBackToGym:
 	.string "I'd better get back to Petalburg Gym.\p"

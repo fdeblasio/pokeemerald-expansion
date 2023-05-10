@@ -3946,15 +3946,8 @@ u8 TryGainNewFanFromCounter(u8 incrementId)
     {
         if (GET_TRAINER_FAN_CLUB_COUNTER + sCounterIncrements[incrementId] > 19)
         {
-            if (GetNumFansOfPlayerInTrainerFanClub() < 3)
-            {
-                PlayerGainRandomTrainerFan();
-                CLEAR_TRAINER_FAN_CLUB_COUNTER;
-            }
-            else
-            {
-                SET_TRAINER_FAN_CLUB_COUNTER(20);
-            }
+            PlayerGainRandomTrainerFan();
+            CLEAR_TRAINER_FAN_CLUB_COUNTER;
         }
         else
         {

@@ -1637,7 +1637,7 @@ static void TryStartRandomMassOutbreak(void)
 
     if (FlagGet(FLAG_SYS_GAME_CLEAR))
     {
-        if (!rbernoulli(1, 100))
+        if (!rbernoulli(1, 50))
         {
             sCurTVShowSlot = FindFirstEmptyNormalTVShowSlot(gSaveBlock1Ptr->tvShows);
             if (sCurTVShowSlot != -1)

@@ -91,6 +91,7 @@
         - Maybe use makeshift version of it (without setting all flags) to Fly without needing a Pokemon who knows it
     - Add in Houndoom for more Magma variety?
         - Replace Magcargo as Tabitha's main Pokemon (currently unsure if it will Mega Evolve)
+            - Or replace Camerupt as Maxie's signature and give Camerupt to Tabitha? Maybe edit stats so Sharpedo/Houndoom line up
             - Replace Mossdeep Maxie's Mightyena for Magcargo
         - Add in Hoenn Dex after Rhyperior
         - Move Houndoomite from Battle Frontier to Lilycove Shop
@@ -99,7 +100,7 @@
         - Update some Flannery trainers
         - Update some Kindlers
         - pokemon.c HOENN_TO_NATIONAL and whatnot
-        - Put it in Safari Zone but remove encounters for new sections
+        - Put it in Safari Zone or Fiery Path but remove encounters for new Safari sections
             - Move Hoothoot to only Area 6 to take Houndour's place. This will give 5 and 6 six land Pokemon each. Redo encounter rates
     - Make list of all Magma/Aqua Pokemon and make them spread more evenly across the Grunts
         - Maybe Admins rely less on Mightyena/Leaders' signature

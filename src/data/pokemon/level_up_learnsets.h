@@ -5034,6 +5034,7 @@ static const struct LevelUpMove sPorygon2LevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sStantlerLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_PSYSHIELD_BASH),
     LEVEL_UP_MOVE( 1, MOVE_ME_FIRST),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 3, MOVE_LEER),

@@ -59,6 +59,7 @@ Moves:
         Egg Bomb
         High Horsepower
         Octazooka
+        Air Slash
 
 Pokémon:
     ALL:

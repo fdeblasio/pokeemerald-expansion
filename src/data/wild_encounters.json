@@ -9056,7 +9056,7 @@
             ]
           },
           "rock_smash_mons": {
-            "encounter_rate": 25,
+            "encounter_rate": 250,
             "mons": [
               {
                 "min_level": 60,

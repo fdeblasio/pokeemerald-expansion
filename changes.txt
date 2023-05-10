@@ -89,6 +89,9 @@ Pokémon:
     Rhyperior:
         Learns Rock Wrecker upon evolving
 
+    Happiny:
+        Base exp: 110->250
+
     Pinsir:
         Catch rate: 45->90
 

@@ -24,6 +24,11 @@ Moves:
     Volt Tackle:
         Paralyze chance: 10%->30%
         No longer causes recoil
+    Precipice Blades:
+        Accuracy: 85->90
+    Origin Pulse:
+        Power: 110->120
+        Accuracy: 85->90
     Given 100 accuracy:
         Cut
         Metal Claw

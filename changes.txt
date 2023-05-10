@@ -30,6 +30,9 @@ Moves:
     Origin Pulse:
         Power: 110->120
         Accuracy: 85->90
+    Disarming Voice:
+        Power: 40->60
+        PP: 15->20
     Given 100 accuracy:
         Cut
         Metal Claw

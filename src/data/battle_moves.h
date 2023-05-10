@@ -9629,10 +9629,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_DISARMING_VOICE] =
     {
         .effect = EFFECT_HIT,
-        .power = 40,
+        .power = 60,
         .type = TYPE_FAIRY,
         .accuracy = 0,
-        .pp = 15,
+        .pp = 20,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_BOTH,
         .priority = 0,

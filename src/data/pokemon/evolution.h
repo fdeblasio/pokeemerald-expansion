@@ -171,6 +171,9 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_SNEASEL]               = {{EVO_ITEM_HOLD_NIGHT, ITEM_RAZOR_CLAW, SPECIES_WEAVILE}},
 #endif
     [SPECIES_TEDDIURSA]             = {{EVO_LEVEL, 30, SPECIES_URSARING}},
+#if P_GEN_8_POKEMON == TRUE
+    [SPECIES_URSARING]              = {{EVO_ITEM_NIGHT, ITEM_PEAT_BLOCK, SPECIES_URSALUNA}},
+#endif
     [SPECIES_SLUGMA]                = {{EVO_LEVEL, 32, SPECIES_MAGCARGO}},
     [SPECIES_SWINUB]                = {{EVO_LEVEL, 33, SPECIES_PILOSWINE}},
 #if P_GEN_4_POKEMON == TRUE
@@ -181,6 +184,9 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_PHANPY]                = {{EVO_LEVEL, 25, SPECIES_DONPHAN}},
 #if P_GEN_4_POKEMON == TRUE
     [SPECIES_PORYGON2]              = {{EVO_TRADE_ITEM, ITEM_DUBIOUS_DISC, SPECIES_PORYGON_Z}},
+#endif
+#if P_GEN_8_POKEMON == TRUE
+    [SPECIES_STANTLER]              = {{EVO_MOVE, MOVE_PSYSHIELD_BASH, SPECIES_WYRDEER}},
 #endif
     [SPECIES_TYROGUE]               = {{EVO_LEVEL_ATK_LT_DEF, 20, SPECIES_HITMONCHAN},
                                        {EVO_LEVEL_ATK_GT_DEF, 20, SPECIES_HITMONLEE},
@@ -583,6 +589,5 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
 #endif
 #if P_GEN_8_POKEMON == TRUE
     [SPECIES_SINISTEA_ANTIQUE]      = {{EVO_ITEM, ITEM_CHIPPED_POT, SPECIES_POLTEAGEIST_ANTIQUE}},
-    [SPECIES_URSARING]              = {{EVO_ITEM_NIGHT, ITEM_PEAT_BLOCK, SPECIES_URSALUNA}},
 #endif
 };

@@ -159,8 +159,6 @@
 
 ## To Do Soon
 Double-check Mirage Island
-Safari Zone
-    - Wyrdeer, Ambipom, Ursaluna
 SS Tidal
     Battle Frontier
         - Bonsly

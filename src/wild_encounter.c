@@ -537,6 +537,8 @@ static u16 GenerateFishingWildMon(const struct WildPokemonInfo *wildMonInfo, u8 
 static bool8 SetUpMassOutbreakEncounter(u8 flags)
 {
     u16 i;
+    int hiddenAbility;
+    u32 iv;
 
     if (flags & WILD_CHECK_REPEL && !IsWildLevelAllowedByRepel(gSaveBlock1Ptr->outbreakPokemonLevel))
         return FALSE;
@@ -544,6 +546,17 @@ static bool8 SetUpMassOutbreakEncounter(u8 flags)
     CreateWildMon(gSaveBlock1Ptr->outbreakPokemonSpecies, gSaveBlock1Ptr->outbreakPokemonLevel);
     for (i = 0; i < MAX_MON_MOVES; i++)
         SetMonMoveSlot(&gEnemyParty[0], gSaveBlock1Ptr->outbreakPokemonMoves[i], i);
+
+    hiddenAbility = 2;
+    SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &hiddenAbility);
+
+    iv = MAX_PER_STAT_IVS;
+    SetMonData(&gEnemyParty[0], MON_DATA_HP_IV, &iv);
+    SetMonData(&gEnemyParty[0], MON_DATA_ATK_IV, &iv);
+    SetMonData(&gEnemyParty[0], MON_DATA_DEF_IV, &iv);
+    SetMonData(&gEnemyParty[0], MON_DATA_SPEED_IV, &iv);
+    SetMonData(&gEnemyParty[0], MON_DATA_SPATK_IV, &iv);
+    SetMonData(&gEnemyParty[0], MON_DATA_SPDEF_IV, &iv);
 
     return TRUE;
 }

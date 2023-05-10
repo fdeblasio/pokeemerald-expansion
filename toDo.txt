@@ -149,6 +149,8 @@
     - Make all moves set to their Max PP automatically?
         - Would need to remove all PP Ups/Maxes
     - Bring important Trainers up to ORAS levels?
+    - Magmortar Flash Fire?
+    - Edit max money
 
 ## To Do Soon
 Double-check Mirage Island

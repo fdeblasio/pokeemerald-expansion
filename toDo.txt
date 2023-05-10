@@ -1,3 +1,6 @@
+## Find/Replace help
+(["\- ][A-Z])([A-Z][A-Zé']+)
+$1\L$2
 
 ## To Do
 - https://www.pokecommunity.com/showthread.php?t=416647&page=1
@@ -40,6 +43,9 @@
 - Have Hoenn starters learn STAB move at level 6 to make first rival battle easier
 - Edit rest out mass outbreaks
     - Maractus/Sandile in Route 111? Would be first time expanding past Gens 1-3 + evos
+- Edit Battle Frontier messages for Fairy?
+- Add new Pokemon to Frontier teams?
+- Add FRLG trainer sprites
 
 - Second, more advanced run:
     - Edit moves that work in field
@@ -162,6 +168,7 @@
 Double-check Mirage Island
 SS Tidal
     Battle Frontier
+        - Replace duplicate Tutors
         - Bonsly
         - Ampharos, Latios, Latias, Houndoom, Aerodactyl mega stones
         - Red and Blue Orbs?

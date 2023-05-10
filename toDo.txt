@@ -4,8 +4,6 @@
 - https://github.com/pret/pokeemerald/wiki/Tutorials
 - Look at new animations for moves (in battle.h)
 - Gallade Sharpness (maybe wait for master/upcoming update)
-- Make Latios/Latias easier to catch/not roam?
-    - Maybe get rid of roamers and add both Latis to the Island?
 - Overworld sprites to match trainer sprites (for example, giving Youngsters yellow shirts, girl tubers a yellow tube, Rangers red clothes, Dragon Tamers capes and correct hair color)
 - Improve Pokemon overworld sprites
 - Try to find Bolts foreground of Walda PC
@@ -34,10 +32,13 @@
 - Use location pointer for Mirage Island?
 - Improve B-canceling moves
 - Figure out how to get important trainers to use their best Pokemon last
+    - AI_FLAG_ACE_POKEMON
 - Go back and make rematch levels stronger/more consistent
 - Type effectiveness in battle
 - PC in menu (look at debug menu)
 - TM Case?
+- Make Groudon/Kyogre hold orbs
+    - seteventmon (look at Latis) instead of wildbattle?
 
 - Second, more advanced run:
     - Edit moves that work in field
@@ -138,6 +139,8 @@
 
 ## To Do Soon
 Double-check Mirage Island
-Elite Four
-    Trick House 8
-    Wally rematches
+Trick House 8
+Wally rematches
+Battle Frontier
+    - Ampharos, Latios, Latias, Houndoom mega stones
+Southern Island

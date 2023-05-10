@@ -432,11 +432,6 @@ PlayersHouse_1F_Text_LatiEmergencyNewsFlash:
 	.string "We now return you to the regular\n"
 	.string "movie program.$"
 
-PlayersHouse_1F_Text_WhatColorDidTheySay:
-	.string "Mom: {PLAYER}, did you catch that?\p"
-	.string "What color did the announcer say\n"
-	.string "that Pokémon was?$"
-
 PlayersHouse_1F_Text_StillUnknownPokemon:
 	.string "Mom: Well, isn't that something!\n"
 	.string "There are still unknown Pokémon.$"

@@ -17,6 +17,8 @@ Moves:
         Power: 60->75
     Dizzy Punch:
         Power: 70->75
+    Luster Purge/Mist Ball:
+        PP: 5->10
     Volt Tackle has a 30% chance to paralyze and no longer causes recoil
     Given 100 accuracy:
         Cut
@@ -266,6 +268,9 @@ Pokémon:
 
     Beldum/Metang/Metagross:
         Catch rate: 3->45
+
+    Latios/Latias:
+        Level up learnset slightly restructured to avoid a battle they only have one attacking move
 
     Kyogre:
         Origin Pulse is now learned at level 63 instead of level 1

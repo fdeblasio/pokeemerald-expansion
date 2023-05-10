@@ -161,5 +161,6 @@ Move Tutor Replacements: 8 (could expand)
   Lunge?
   Throat Chop/Darkest Lariat?
   Dragon Dance?
+  Solar Blade?
 
 Will need to redo move lists once Tutors are finalized

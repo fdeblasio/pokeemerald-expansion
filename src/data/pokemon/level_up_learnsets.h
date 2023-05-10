@@ -6320,6 +6320,7 @@ static const struct LevelUpMove sShedinjaLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sWhismurLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DISARMING_VOICE),
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 5, MOVE_ECHOED_VOICE),
@@ -6337,6 +6338,7 @@ static const struct LevelUpMove sWhismurLevelUpLearnset[] = {
 
 static const struct LevelUpMove sLoudredLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_BITE),
+    LEVEL_UP_MOVE( 1, MOVE_DISARMING_VOICE),
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_ECHOED_VOICE),
@@ -6355,6 +6357,7 @@ static const struct LevelUpMove sLoudredLevelUpLearnset[] = {
 static const struct LevelUpMove sExploudLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_HYPER_VOICE),
     LEVEL_UP_MOVE( 0, MOVE_CRUNCH),
+    LEVEL_UP_MOVE( 1, MOVE_DISARMING_VOICE),
     LEVEL_UP_MOVE( 1, MOVE_BITE),
     LEVEL_UP_MOVE( 1, MOVE_ICE_FANG),
     LEVEL_UP_MOVE( 1, MOVE_FIRE_FANG),

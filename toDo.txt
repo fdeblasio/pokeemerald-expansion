@@ -76,6 +76,7 @@
     - When doing new savefile, remove `u32 tmShopFlags[4];` from include/global.h
     - Expand Bag!!! (https://github.com/pret/pokeemerald/wiki/Make-the-Bag-Able-to-Hold-120-Items-Instead-of-30)
         - Medicine Pocket?
+        - See if it's possible to give item PC and decoration PC have more room
     - Implement Pokedex Plus (https://www.pokecommunity.com/showthread.php?t=441996)
     - Figure out ?????? showing up at end of Dex
     - Revamp EVs to give 1 stat per EV and cap out at 63
@@ -139,10 +140,7 @@
     - Bring important Trainers up to ORAS levels?
 
 ## To Do Soon
-????? is counted as a Dex entry
-Dex completeness might need to be HOENN_DEX_COUNT - 1
 Double-check Mirage Island
-Trick House 8
 Trainer Fan Club
 Wally rematches
 Safari Zone

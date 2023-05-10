@@ -189,6 +189,7 @@ Pokémon:
 
     Whismur/Loudred/Exploud:
         Get Punk Rock as a second ability
+        Learn Disarming Voice by level up
 
     Makuhita:
         Catch rate: 180->220

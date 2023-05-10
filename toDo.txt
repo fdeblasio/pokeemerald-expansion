@@ -36,6 +36,8 @@
 - Type effectiveness in battle
 - PC in menu (look at debug menu)
 - TM Case?
+- Get PokeNav to work indoors?
+- Have Hoenn starters learn STAB move at level 6 to make first rival battle easier
 
 - Second, more advanced run:
     - Edit moves that work in field
@@ -137,8 +139,11 @@
     - Bring important Trainers up to ORAS levels?
 
 ## To Do Soon
+????? is counted as a Dex entry
+Dex completeness might need to be HOENN_DEX_COUNT - 1
 Double-check Mirage Island
 Trick House 8
+Trainer Fan Club
 Wally rematches
 Safari Zone
 Johto starters

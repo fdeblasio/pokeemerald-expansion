@@ -1658,7 +1658,7 @@ static void TryStartRandomMassOutbreak(void)
                 show->massOutbreak.locationMapNum = sPokeOutbreakSpeciesList[outbreakIdx].location;
                 show->massOutbreak.locationMapGroup = 0;
                 show->massOutbreak.unused4 = 0;
-                show->massOutbreak.probability = 50;
+                show->massOutbreak.probability = 75;
                 show->massOutbreak.unused5 = 0;
                 show->massOutbreak.daysLeft = 1;
                 StorePlayerIdInNormalShow(show);

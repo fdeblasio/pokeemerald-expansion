@@ -3,7 +3,7 @@
 (["\- ][A-Z])([A-Z][A-Zé']+)
 $1\L$2
 
-## To Do
+## To Do (1.2.0)
 - https://www.pokecommunity.com/showthread.php?t=416647&page=1
 - https://github.com/pret/pokeemerald/wiki/Tutorials
 - Look at new animations for moves (in battle.h)
@@ -48,125 +48,122 @@ $1\L$2
 - Add new Pokemon to Frontier teams?
 - Add FRLG trainer sprites
 
-- Second, more advanced run:
-    - Edit moves that work in field
-        - Maybe edit so instead of "if has move" to "if can learn move" (might not be simple since it's .inc and not C)
-        - Cut:
-            - Slash?
-            - Fury Swipes?
-            - Crush Claw?
-            - Dragon Claw?
-            - X-Scissor
-            - Aqua Cutter
-            - Psycho Cut
-        - Rock Smash:
-            - Brick Break
-            - Meteor Mash?
-            - Focus Punch?
-        - Strength:
-            - Superpower?
-            - Close Combat?
-        - Fly:
-            - Notes:
-                - Is manual unlike the rest so would need to be added to the Fly edit
-            - Teleport? (Would need to remove existing functionality)
-            - ExtremeSpeed?
-    - Expand moves usable in overworld (see above)
-        - Alternatively, remove instances of trees, rocks, boulders, etc
-        - Would need to double check but this should make Cut, Rock Smash, and Strength forgettable
-            - (sHMMoves and IsMoveHm)
-        - Trick House can still use them but maybe have Escape Rope usable there
-    - Turn HMs into TMs if they are no longer used in the field
-        - Remove them from being an option in the summary screen
-        - Remove release blocks in pokemon_storage_system.c
-        - Look for FIELD_MOVE_X
-        - Currently are in same index spot. Should be moved to before HMs once everything is figured out (can simplify IsMoveHm once done)
-        - Edit text (Steven's house for Dive for example)
-    - When doing new savefile, remove `u32 tmShopFlags[4];` from include/global.h
-    - Expand Bag!!! (https://github.com/pret/pokeemerald/wiki/Make-the-Bag-Able-to-Hold-120-Items-Instead-of-30)
-        - Medicine Pocket?
-        - See if it's possible to give item PC and decoration PC have more room
-    - Implement Pokedex Plus (https://www.pokecommunity.com/showthread.php?t=441996)
-    - Figure out ?????? showing up at end of Dex
-    - Revamp EVs to give 1 stat per EV and cap out at 63
-    - Remove IVs? Maybe make binary for either 0 or 31 added to stat
-        - Would need to figure out Hidden Power
-    - Fire Blast/Hydro Pump/Stone Edge accurate in respective weathers?
-        - Make Thunder also accurate in Electric Terrain?
-    - Calculate Electro Ball more similarly to Gyro Ball?
-    - DON'T USE DEBUG MENU FOR FLYING. Test to see if without it, Fly Flags are set correctly
-        - Maybe use makeshift version of it (without setting all flags) to Fly without needing a Pokemon who knows it
-    - Add in Houndoom for more Magma variety?
-        - Replace Magcargo as Tabitha's main Pokemon (currently unsure if it will Mega Evolve)
-            - Or replace Camerupt as Maxie's signature and give Camerupt to Tabitha? Maybe edit stats so Sharpedo/Houndoom line up
-            - Replace Mossdeep Maxie's Mightyena for Magcargo
-        - Add in Hoenn Dex after Rhyperior
-        - Move Houndoomite from Battle Frontier to Lilycove Shop
-        - Update some grunts to have it 
-            - Slugma/Vulpix Mossdeep grunt has Slugma replaced by Houndour, the Mightyena grunt gets replaced with a Magcargo, and one of the Numel grunts gets Mightyena
-        - Update some Flannery trainers
-        - Update some Kindlers
-        - pokemon.c HOENN_TO_NATIONAL and whatnot
-        - Put it in Safari Zone or Fiery Path but remove encounters for new Safari sections
-            - Move Hoothoot to only Area 6 to take Houndour's place. This will give 5 and 6 six land Pokemon each. Redo encounter rates
-    - Make list of all Magma/Aqua Pokemon and make them spread more evenly across the Grunts
-        - Maybe Admins rely less on Mightyena/Leaders' signature
-    - Add in Hoenn Dex regionals?
-        - Sun/Shiny Stone for Alolan Raichu
-        - Alolan Sandshrew/Vulpix at Shoal Cave
-        - Alolan Muk
-        - Shiny/Dawn Stone for Galarian Weezing
-        - Cursola
-        - Obstagoon
-        - Hisui Voltorb
-        - Post-game:
-            - Alolan Meowth
-            - Galarian Meowth
-            - Paldean Wooper
-        - Update level up/learnable movesets for them
-        - Sandslash, Ninetales, Cursola, and maybe Obstagoon can be used to diversify the Elite Four teams
-    - Add Farigiraf to Hoenn Dex once implemented
-    - Add 3 other Regis?
-        - Add Regigigas to Sealed Chamber?
-        - Regieleki near New Mauville?
-        - Regidrago near Meteor Falls?
-    - Diversify water routes instead of just Tentacool/Wingull (definitely add more Carvanha; bring some fishing encounters to Surf)
-    - Rework land_mons to only have 10 slots? (last two would go from 4->5)?
-    - Spruce up battles/rematches
-        - customAll Pokemon
-            - Winston could have a shiny
-                - Maybe all Rich Boys/Ladies have shinies (would need to have different Pokemon from each other instead of all having Zigzagoon)
-            - Calvin could have a good Nature/EV
-            - Leaders would have optimal Abilities/EVs/IVs/Natures
-        - Winston's rich enough to buy TMs so his moveset should incorporate that once TMs are finalized
-            - Gym Leader rematches should also utilize TMs
-        - Breeders should have good IVs/Natures/Abilities
-        - Triathlete would be Speed-focused (maybe endurance/HP too)
-        - Winstrates (including Victor) should have EVs due to the mom mentioning using the Macho Brace
-        - Tori and Tia should have Spindas that aren't identical
-        - Fix Roxanne's rematches being male (due to double battles (which the rematches are) having the personality set before the gender. Can rearrange steps or use customAll to manually set gender)
-        - Fix Flannery's rematches being male; also her Torkoal or Ninetales should have Drought
-        - Norman can have Toxic Orb Toxic Boost Zangoose
-            - Spinda: Thrash if Own Tempo, Superpower if Contrary. Should be given a cool pattern (maybe 88888888?)
-        - Fix Winona's rematches being male; Pelipper gets Drizzle?
-        - Gym leaders/Steven/Breeders can have Hidden Abilities
-        - Maxie/Archie/Steven use Mega Evolutions
-        - Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma)
-        - Vito can use TMs
-            - Swap Vito with Ace Trainer on 1F near the end?
-    - Figure out why PokeNav callers think there were 512 wins at the Battle Palace
-        - Might be related to Battle Tent giving an item right away
-    - Check that Mossdeep swimmer flag works
-    - Make all moves set to their Max PP automatically?
-        - Would need to remove all PP Ups/Maxes
-    - Bring important Trainers up to ORAS levels?
-    - Magmortar Flash Fire?
-    - Edit max money
-    - Brendan/May rematches?
-    - Make seperate Dex for post-game (similar to SwSh DLC dexes)?
+## Second, more advanced run (2.0.0)
+- Edit moves that work in field
+    - Maybe edit so instead of "if has move" to "if can learn move" (might not be simple since it's .inc and not C)
+    - Cut:
+        - Slash?
+        - Fury Swipes?
+        - Crush Claw?
+        - Dragon Claw?
+        - X-Scissor
+        - Aqua Cutter
+        - Psycho Cut
+    - Rock Smash:
+        - Brick Break
+        - Meteor Mash?
+        - Focus Punch?
+    - Strength:
+        - Superpower?
+        - Close Combat?
+- Expand moves usable in overworld (see above)
+    - Alternatively, remove instances of trees, rocks, boulders, etc
+    - Would need to double check but this should make Cut, Rock Smash, and Strength forgettable
+        - (sHMMoves and IsMoveHm)
+    - Trick House can still use them but maybe have Escape Rope usable there
+- Turn HMs into TMs if they are no longer used in the field
+    - Remove them from being an option in the summary screen
+    - Remove release blocks in pokemon_storage_system.c
+    - Look for FIELD_MOVE_X
+    - Currently are in same index spot. Should be moved to before HMs once everything is figured out (can simplify IsMoveHm once done)
+    - Edit text (Steven's house for Dive for example)
+- When doing new savefile, remove `u32 tmShopFlags[4];` from include/global.h
+- Expand Bag!!! (https://github.com/pret/pokeemerald/wiki/Make-the-Bag-Able-to-Hold-120-Items-Instead-of-30)
+    - Medicine Pocket?
+    - See if it's possible to give item PC and decoration PC have more room
+- Implement Pokedex Plus (https://www.pokecommunity.com/showthread.php?t=441996)
+- Figure out ?????? showing up at end of Dex
+- Revamp EVs to give 1 stat per EV and cap out at 63
+- Remove IVs? Maybe make binary for either 0 or 31 added to stat
+    - Would need to figure out Hidden Power
+- Fire Blast/Hydro Pump/Stone Edge accurate in respective weathers?
+    - Make Thunder also accurate in Electric Terrain?
+- Calculate Electro Ball more similarly to Gyro Ball?
+- DON'T USE DEBUG MENU FOR FLYING. Test to see if without it, Fly Flags are set correctly
+    - Maybe use makeshift version of it (without setting all flags) in Start menu to Fly without needing a Pokemon who knows it (no badge requirements)
+- Add in Houndoom for more Magma variety?
+    - Replace Magcargo as Tabitha's main Pokemon (currently unsure if it will Mega Evolve)
+        - Or replace Camerupt as Maxie's signature and give Camerupt to Tabitha? Maybe edit stats so Sharpedo/Houndoom line up
+        - Replace Mossdeep Maxie's Mightyena for Magcargo
+    - Add in Hoenn Dex after Rhyperior
+    - Move Houndoomite from Battle Frontier to Lilycove Shop
+    - Update some grunts to have it 
+        - Slugma/Vulpix Mossdeep grunt has Slugma replaced by Houndour, the Mightyena grunt gets replaced with a Magcargo, and one of the Numel grunts gets Mightyena
+    - Update some Flannery trainers
+    - Update some Kindlers
+    - pokemon.c HOENN_TO_NATIONAL and whatnot
+    - Put it in Safari Zone or Fiery Path but remove encounters for new Safari sections
+        - Move Hoothoot to only Area 6 to take Houndour's place. This will give 5 and 6 six land Pokemon each. Redo encounter rates
+- Make list of all Magma/Aqua Pokemon and make them spread more evenly across the Grunts
+    - Maybe Admins rely less on Mightyena/Leaders' signature
+- Add in Hoenn Dex regionals?
+    - Sun/Shiny Stone for Alolan Raichu
+    - Alolan Sandshrew/Vulpix at Shoal Cave
+    - Alolan Muk
+    - Shiny/Dawn Stone for Galarian Weezing
+    - Cursola
+    - Obstagoon
+    - Hisui Voltorb
+    - Post-game:
+        - Alolan Meowth
+        - Galarian Meowth
+        - Paldean Wooper
+    - Update level up/learnable movesets for them
+    - Sandslash, Ninetales, Cursola, and maybe Obstagoon can be used to diversify the Elite Four teams
+- Add Farigiraf to Hoenn Dex once implemented
+- Add 3 other Regis?
+    - Add Regigigas to Sealed Chamber?
+    - Regieleki near New Mauville?
+    - Regidrago near Meteor Falls?
+- Diversify water routes instead of just Tentacool/Wingull (definitely add more Carvanha; bring some fishing encounters to Surf)
+- Rework land_mons to only have 10 slots? (last two would go from 4->5)?
+- Spruce up battles/rematches
+    - customAll Pokemon
+        - Winston could have a shiny
+            - Maybe all Rich Boys/Ladies have shinies (would need to have different Pokemon from each other instead of all having Zigzagoon)
+        - Calvin could have a good Nature/EV
+        - Leaders would have optimal Abilities/EVs/IVs/Natures
+    - Winston's rich enough to buy TMs so his moveset should incorporate that once TMs are finalized
+        - Gym Leader rematches should also utilize TMs
+    - Breeders should have good IVs/Natures/Abilities
+    - Triathlete would be Speed-focused (maybe endurance/HP too)
+    - Winstrates (including Victor) should have EVs due to the mom mentioning using the Macho Brace
+    - Tori and Tia should have Spindas that aren't identical
+    - Fix Roxanne's rematches being male (due to double battles (which the rematches are) having the personality set before the gender. Can rearrange steps or use customAll to manually set gender)
+    - Fix Flannery's rematches being male; also her Torkoal or Ninetales should have Drought
+    - Norman can have Toxic Orb Toxic Boost Zangoose
+        - Spinda: Thrash if Own Tempo, Superpower if Contrary. Should be given a cool pattern (maybe 88888888?)
+    - Fix Winona's rematches being male; Pelipper gets Drizzle?
+    - Gym leaders/Steven/Breeders can have Hidden Abilities
+    - Maxie/Archie/Steven use Mega Evolutions
+    - Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma)
+    - Vito can use TMs
+        - Swap Vito with Ace Trainer on 1F near the end?
+- Figure out why PokeNav callers think there were 512 wins at the Battle Palace
+    - Might be related to Battle Tent giving an item right away
+- Check that Mossdeep swimmer flag works
+- Make all moves set to their Max PP automatically?
+    - Would need to remove all PP Ups/Maxes
+- Bring important Trainers up to ORAS levels?
+- Magmortar Flash Fire?
+- Edit max money
+- Brendan/May/Steven rematches?
+- Make seperate Dex for post-game (similar to SwSh DLC dexes)?
 
-## To Do Soon
+## To Do Soon (1.1.0)
 Double-check Mirage Island
+Trainer Hill
+Steven
 SS Tidal
     Battle Frontier
         - Replace duplicate Tutors
@@ -175,5 +172,4 @@ SS Tidal
         - Red and Blue Orbs?
         - Oval Stone, Electrizer, Magmizer, Peat Block
         - Sacred Ash to store?
-Trainer Hill
-Steven
+        - Berry store (only for ones useful in battle)

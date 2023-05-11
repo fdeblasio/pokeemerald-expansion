@@ -4661,60 +4661,59 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Timmy[] = {
 
 static const struct TrainerMonCustomized sParty_Wallace[] = {
     {
-    .iv = 255,
     .lvl = 56,
     .species = SPECIES_PELIPPER,
     .heldItem = ITEM_DAMP_ROCK,
     .moves = {MOVE_HYDRO_PUMP, MOVE_HURRICANE, MOVE_ROOST, MOVE_SUPERSONIC},
     .gender = TRAINER_MON_MALE,
-    .ability = ABILITY_DRIZZLE
+    .ability = ABILITY_DRIZZLE,
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31)
     },
     {
-    .iv = 255,
     .lvl = 56,
     .species = SPECIES_GOREBYSS,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_SURF, MOVE_PSYCHIC, MOVE_DRAINING_KISS, MOVE_SHELL_SMASH},
     .gender = TRAINER_MON_FEMALE,
-    .ability = ABILITY_SWIFT_SWIM
+    .ability = ABILITY_SWIFT_SWIM,
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31)
     },
     {
-    .iv = 255,
     .lvl = 56,
     .species = SPECIES_RELICANTH,
     .heldItem = ITEM_CHESTO_BERRY,
     .moves = {MOVE_AQUA_TAIL, MOVE_ROCK_TOMB, MOVE_YAWN, MOVE_REST},
     .gender = TRAINER_MON_MALE,
     .ability = ABILITY_SWIFT_SWIM,
-    .nature = NATURE_IMPISH,
+    .nature = TRAINER_PARTY_NATURE(NATURE_IMPISH),
     .isShiny = TRUE
     },
     {
-    .iv = 255,
     .lvl = 56,
     .species = SPECIES_LUDICOLO,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_SURF, MOVE_GIGA_DRAIN, MOVE_LEECH_SEED, MOVE_RAIN_DANCE},
     .gender = TRAINER_MON_MALE,
-    .ability = ABILITY_SWIFT_SWIM
+    .ability = ABILITY_SWIFT_SWIM,
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31)
     },
     {
-    .iv = 255,
     .lvl = 56,
     .species = SPECIES_WAILORD,
     .heldItem = ITEM_LEFTOVERS,
     .moves = {MOVE_WATER_SPOUT, MOVE_ICE_BEAM, MOVE_AQUA_RING, MOVE_AMNESIA},
     .gender = TRAINER_MON_MALE,
-    .ability = ABILITY_OBLIVIOUS
+    .ability = ABILITY_OBLIVIOUS,
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31)
     },
     {
-    .iv = 255,
     .lvl = 58,
     .species = SPECIES_MILOTIC,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_SURF, MOVE_ICE_BEAM, MOVE_RAIN_DANCE, MOVE_RECOVER},
     .gender = TRAINER_MON_FEMALE,
-    .ability = ABILITY_MARVEL_SCALE
+    .ability = ABILITY_MARVEL_SCALE,
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31)
     }
 };
 
@@ -12227,50 +12226,72 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Darius[] = {
     }
 };
 
-//Mawile, Jirachi?
-//Use Steven's Mossdeep team as reference for some moves (and natures/EVs once implemented)
-static const struct TrainerMonItemCustomMoves sParty_Steven[] = {
+//Perrserker?
+static const struct TrainerMonCustomized sParty_Steven[] = {
     {
-    .iv = 255,
     .lvl = 77,
     .species = SPECIES_SKARMORY,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_SPIKES, MOVE_STEEL_WING}
+    .ability = ABILITY_STURDY,
+    .nature = TRAINER_PARTY_NATURE(NATURE_IMPISH),
+    .ev = TRAINER_PARTY_EVS(6, 252, 252, 0, 0, 0),
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .moves = {MOVE_STEEL_WING, MOVE_DRILL_PECK, MOVE_BODY_PRESS, MOVE_SPIKES},
+    .gender = TRAINER_MON_MALE,
+    .heldItem = ITEM_GANLON_BERRY,
+    .ball = ITEM_LUXURY_BALL
     },
     {
-    .iv = 255,
-    .lvl = 78,
+    .lvl = 77,
     .species = SPECIES_CLAYDOL,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_ANCIENT_POWER, MOVE_EARTHQUAKE}
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .moves = {MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_ANCIENT_POWER, MOVE_EARTHQUAKE},
+    .heldItem = ITEM_NONE
     },
     {
-    .iv = 255,
     .lvl = 78,
-    .species = SPECIES_CRADILY,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_GIGA_DRAIN, MOVE_ANCIENT_POWER, MOVE_INGRAIN, MOVE_CONFUSE_RAY}
+    .species = SPECIES_JIRACHI,
+    .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
+    .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 6),
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .moves = {MOVE_DOOM_DESIRE, MOVE_FLASH_CANNON, MOVE_PSYCHIC, MOVE_CALM_MIND},
+    .heldItem = ITEM_KINGS_ROCK,
+    .ball = ITEM_CHERISH_BALL,
+    .nickname = COMPOUND_STRING("Devon")
     },
     {
-    .iv = 255,
     .lvl = 78,
-    .species = SPECIES_ARMALDO,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_WATER_PULSE, MOVE_ANCIENT_POWER, MOVE_AERIAL_ACE, MOVE_SLASH}
+    .species = SPECIES_MAWILE,
+    .ability = ABILITY_SHEER_FORCE,
+    .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
+    .ev = TRAINER_PARTY_EVS(0, 252, 6, 252, 0, 0),
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .moves = {MOVE_IRON_HEAD, MOVE_PLAY_ROUGH, MOVE_CRUNCH, MOVE_SWORDS_DANCE},
+    .gender = TRAINER_MON_FEMALE,
+    .heldItem = ITEM_LIFE_ORB,
+    .ball = ITEM_ULTRA_BALL
     },
     {
-    .iv = 255,
     .lvl = 79,
     .species = SPECIES_AGGRON,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_THUNDER, MOVE_EARTHQUAKE, MOVE_SOLAR_BEAM, MOVE_DRAGON_CLAW}
+    .ability = ABILITY_STURDY,
+    .nature = TRAINER_PARTY_NATURE(NATURE_IMPISH),
+    .ev = TRAINER_PARTY_EVS(6, 252, 252, 0, 0, 0),
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .moves = {MOVE_IRON_HEAD, MOVE_ROCK_SLIDE, MOVE_BODY_PRESS, MOVE_IRON_DEFENSE},
+    .gender = TRAINER_MON_MALE,
+    .heldItem = ITEM_SHUCA_BERRY,
+    .ball = ITEM_HEAVY_BALL
     },
     {
-    .iv = 255,
     .lvl = 80,
     .species = SPECIES_METAGROSS,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_EARTHQUAKE, MOVE_PSYCHIC, MOVE_METEOR_MASH, MOVE_SHADOW_BALL}
+    .ability = ABILITY_CLEAR_BODY,
+    .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
+    .ev = TRAINER_PARTY_EVS(6, 252, 252, 0, 0, 0),
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .moves = {MOVE_METEOR_MASH, MOVE_ZEN_HEADBUTT, MOVE_EARTHQUAKE, MOVE_BULLET_PUNCH},
+    .heldItem = ITEM_METAGROSSITE,
+    .ball = ITEM_PREMIER_BALL
     }
 };
 

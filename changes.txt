@@ -36,6 +36,15 @@ Moves:
     Comet Punch:
         Power: 18->20
         Accuracy: 85->90
+    Fury Swipes:
+        Power: 18->20
+        Accuracy: 80->90
+    Fury Attack:
+        Power: 15->20
+        Accuracy: 85->90
+    Barrage:
+        Power: 15->20
+        Accuracy: 85->90
     Given 100 accuracy:
         Cut
         Metal Claw
@@ -60,6 +69,8 @@ Moves:
         High Horsepower
         Octazooka
         Air Slash
+        Meteor Mash
+        Steel Wing
 
 Pokémon:
     ALL:

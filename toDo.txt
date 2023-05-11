@@ -6,6 +6,11 @@ $1\L$2
 ## To Do (1.2.0)
 - https://www.pokecommunity.com/showthread.php?t=416647&page=1
 - https://github.com/pret/pokeemerald/wiki/Tutorials
+- https://www.pokecommunity.com/showpost.php?p=10378278
+- Undo EXP Share changes when Edu's (https://github.com/rh-hideout/pokeemerald-expansion/pull/2909) gets merged
+- https://github.com/pret/pokeemerald/wiki/Set-Up-Item-Balls-on-a-Map-Without-Needing-New-Scripts
+- https://www.pokecommunity.com/showpost.php?p=10127351&postcount=47
+- https://www.pokecommunity.com/showpost.php?p=10167016&postcount=83
 - Look at new animations for moves (in battle.h)
 - Gallade Sharpness (maybe wait for master/upcoming update)
 - Overworld sprites to match trainer sprites (for example, giving Youngsters yellow shirts, girl tubers a yellow tube, Rangers red clothes, Dragon Tamers capes and correct hair color)

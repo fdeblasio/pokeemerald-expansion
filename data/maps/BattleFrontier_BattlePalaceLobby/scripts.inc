@@ -98,7 +98,6 @@ BattleFrontier_BattlePalaceLobby_EventScript_ResumeChallenge::
 	lockall
 	msgbox BattleFrontier_BattlePalaceLobby_Text_WeHaveBeenWaiting, MSGBOX_DEFAULT
 	waitmessage
-	palace_save CHALLENGE_STATUS_SAVING
 	playse SE_SAVE
 	waitse
 	frontier_set FRONTIER_DATA_PAUSED, FALSE

@@ -9,12 +9,13 @@ Steven
 SS Tidal
 Battle Frontier
     - Remove saving (Common_EventScript_SaveGame)
+    - Make pausing challenge not a soft save (CHALLENGE_STATUS_SAVING)
     - Replace duplicate Tutors
     - Bonsly
     - Ampharos, Latios, Latias, Houndoom, Aerodactyl mega stones
     - Red and Blue Orbs?
     - Electrizer, Magmizer, Oval Stone, Razor Fang, Peat Block
-    - Sacred Ash to store?
+    - Sacred Ash, Rare Candies/Candy XL
     - Berry store (only for ones useful in battle)
     - Edit BP costs
 
@@ -68,6 +69,7 @@ Battle Frontier
 - Stop daycare from deleting moves
 - Add relearning moves to PC?
 - Remove unused code
+- Pokemon in Frontier/Trainer Hill are registered in Dex
 
 ## Second, more advanced run (2.0.0)
 - Switch to mGBA?

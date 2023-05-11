@@ -82,7 +82,7 @@ Pokémon:
         If a Pokémon can evolve by holding/being traded with an item, it now can evolve from that item being used
         Catch rate is a minimum of 30 for legendaries/mythicals and 45 for the rest
 
-    Nidorina/Nidoqueen (not in base game):
+    Nidorina/Nidoqueen (not in main game):
         Can now breed
 
     Pichu:
@@ -103,13 +103,16 @@ Pokémon:
     Golbat:
         Can also evolve at level 33
 
+    Gastly/Haunter/Gengar (not in main game):
+        Type: Ghost/Poison->Ghost
+
     Doduo/Dodrio:
         Get Aerial Ace instead of Wing Attack at level 15 due to not having wings
 
-    Exeggcute (not in base game):
+    Exeggcute (not in main game):
         Evolves into Alolan Exeggcute with Sun Stone
 
-    Cubone (not in base game):
+    Cubone (not in main game):
         Evolves into Alolan Marowak with Fire Stone
 
     Rhyperior:
@@ -158,7 +161,7 @@ Pokémon:
         Learns Hydro Pump at level 35
         Learns Bounce at level 45
 
-    Eevee (not in base game):
+    Eevee (not in main game):
         Now evolves into Espeon with a Sun Stone
         Now evolves into Umbreon with a Moon Stone
         Now evolves into Sylveon with a Dawn Stone

@@ -7,15 +7,16 @@ $1\L$2
 Double-check Mirage Island
 Steven
 SS Tidal
-    Battle Frontier
-        - Remove saving (Common_EventScript_SaveGame)
-        - Replace duplicate Tutors
-        - Bonsly
-        - Ampharos, Latios, Latias, Houndoom, Aerodactyl mega stones
-        - Red and Blue Orbs?
-        - Oval Stone, Electrizer, Magmizer, Peat Block, Razor Fang
-        - Sacred Ash to store?
-        - Berry store (only for ones useful in battle)
+Battle Frontier
+    - Remove saving (Common_EventScript_SaveGame)
+    - Replace duplicate Tutors
+    - Bonsly
+    - Ampharos, Latios, Latias, Houndoom, Aerodactyl mega stones
+    - Red and Blue Orbs?
+    - Electrizer, Magmizer, Oval Stone, Razor Fang, Peat Block
+    - Sacred Ash to store?
+    - Berry store (only for ones useful in battle)
+    - Edit BP costs
 
 ## To Do (1.2.0)
 - https://www.pokecommunity.com/showthread.php?t=416647&page=1
@@ -190,7 +191,14 @@ SS Tidal
     - Add new Pokemon to Frontier mons?
     - Make teams more accurate to trainer classes?
     - Edit rounds to 5 or 10?
+        - Look for "case 7" in BattleFrontier_BattlePalaceBattleRoom/scripts.inc
+        - Either way, should face Brain after 10; adjust BP to match
+        - This would work for Tower, Palace, Factory, and Arena
+        - Pyramid has 13 levels from the outside
+        - Unsure what to do for Pike and Dome
     - Battle Tower
         - Apprentices
     - Battle Factory
         - Rentals
+    - Battle Pyramid
+        - Wild Pokemon

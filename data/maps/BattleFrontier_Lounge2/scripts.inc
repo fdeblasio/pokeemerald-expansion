@@ -280,7 +280,7 @@ BattleFrontier_Lounge2_Text_PalaceMavenSilverMons::
 	.string "spirit, he's said to use these Pokémon:\p"
 	.string "A Poison & Flying-type Bat Pokémon,\n"
 	.string "a Normal-type Lazy Pokémon, and a\l"
-	.string "Water- & Ice-type Transport Pokémon.$"
+	.string "Water- & Rock-type Longevity Pokémon.$"
 
 BattleFrontier_Lounge2_Text_PalaceMavenGoldMons::
 	.string "Have you battled the Palace Maven\n"
@@ -288,7 +288,7 @@ BattleFrontier_Lounge2_Text_PalaceMavenGoldMons::
 	.string "When he throws his entire might into\n"
 	.string "battle, he's said to use these Pokémon:\p"
 	.string "A Fire-type Legendary Pokémon,\n"
-	.string "a Normal-type Lazy Pokémon,\l"
+	.string "a Water- & Rock-type Longevity Pokémon,\l"
 	.string "and a Water-type Aurora Pokémon.$"
 
 BattleFrontier_Lounge2_Text_PyramidKingIsThere::

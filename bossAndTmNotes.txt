@@ -162,5 +162,7 @@ Move Tutor Replacements: 8 (could expand)
   Throat Chop/Darkest Lariat?
   Dragon Dance?
   Solar Blade?
+  Iron Defense
+  Nasty Plot
 
 Will need to redo move lists once Tutors are finalized

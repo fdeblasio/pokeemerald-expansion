@@ -12315,7 +12315,22 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Spenser[] = {
     {
     .iv = 0,
     .lvl = 5,
-    .species = SPECIES_BELDUM,
+    .species = SPECIES_AZURILL,
+    },
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_UNOWN,
+    },
+    {
+    .iv = 0,
+    .lvl = 40,
+    .species = SPECIES_DUSCLOPS,
+    },
+    {
+    .iv = 0,
+    .lvl = 50,
+    .species = SPECIES_KYOGRE,
     }
 };
 

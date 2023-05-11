@@ -185,5 +185,12 @@ SS Tidal
 - Brendan/May/Steven rematches?
 - Make seperate Dex for post-game (similar to SwSh DLC dexes)?
 - Frontier overhaul:
+    - Give BP after every battle
     - Edit Battle Frontier messages for Fairy?
-    - Edit Frontier/Trainer Hill teams?
+    - Add new Pokemon to Frontier mons?
+    - Make teams more accurate to trainer classes?
+    - Edit rounds to 5 or 10?
+    - Battle Tower
+        - Apprentices
+    - Battle Factory
+        - Rentals

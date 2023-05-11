@@ -29,7 +29,6 @@ $1\L$2
 - Get rid of low health constant beeping
 - If Flash is unused, remove it from being an option in the summary screen
 - Elite Four rematches
-- Add Ampharosite to Battle Frontier store
 - Replace ifdefs for move stats with just one set of stats
 - Add EXP Candy
 - Use location pointer for Mirage Island?
@@ -45,10 +44,10 @@ $1\L$2
 - Edit rest out mass outbreaks
     - Maractus/Sandile in Route 111? Would be first time expanding past Gens 1-3 + evos
 - Edit Battle Frontier messages for Fairy?
-- Add new Pokemon to Frontier teams?
+- Edit Frontier/Trainer Hill teams?
 - Add FRLG trainer sprites
 - Edit contests?
-- Remove saving from Battle Frontier/Trainer Hill
+- Remove saving from Battle Frontier
 - Stop daycare from deleting moves
 - Add relearning moves to PC?
 
@@ -169,7 +168,6 @@ $1\L$2
 
 ## To Do Soon (1.1.0)
 Double-check Mirage Island
-Trainer Hill
 Steven
 SS Tidal
     Battle Frontier

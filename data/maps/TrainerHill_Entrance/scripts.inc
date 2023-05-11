@@ -176,11 +176,8 @@ TrainerHill_Entrance_EventScript_CancelEntry::
 	end
 
 TrainerHill_Entrance_EventScript_SaveGame::
-	msgbox TrainerHill_Entrance_Text_SaveGameBeforeEnter, MSGBOX_DEFAULT
 	trainerhill_setsaved
 	setvar VAR_TEMP_5, 1
-	call Common_EventScript_SaveGame
-	goto_if_eq VAR_RESULT, FALSE, TrainerHill_Entrance_EventScript_SaveFailed
 	trainerhill_setsaved
 	return
 
@@ -263,11 +260,6 @@ TrainerHill_Entrance_Text_WelcomeToTrainerHill:
 	.string "This is the Trainer Hill where\n"
 	.string "you may enjoy tag battles with many\l"
 	.string "Trainers!$"
-
-TrainerHill_Entrance_Text_SaveGameBeforeEnter:
-	.string "Is this your first visit here?\p"
-	.string "Before you enter, please save\n"
-	.string "your game.$"
 
 TrainerHill_Entrance_Text_TrainersUpToFloorX:
 	.string "Let's see…\n"

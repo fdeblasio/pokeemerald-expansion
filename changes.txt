@@ -121,6 +121,9 @@ Pokémon:
     Pinsir:
         Catch rate: 45->90
 
+    Mime Jr./Mr. Mime/Mr. Rime:
+        Gender Ration: 50/50->100/0
+
     Elekid:
         Atk: 63->65
         Def: 37->40

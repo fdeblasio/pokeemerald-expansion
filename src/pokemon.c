@@ -3434,6 +3434,7 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
     u8 i;
     u8 availableIVs[NUM_STATS];
     u8 selectedIvs[LEGENDARY_PERFECT_IV_COUNT];
+    u8 ppBonus;
 
     ZeroBoxMonData(boxMon);
 
@@ -3612,6 +3613,9 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
     }
 
     GiveBoxMonInitialMoveset(boxMon);
+
+    ppBonus = 255;
+    SetBoxMonData(boxMon, MON_DATA_PP_BONUSES, &ppBonus);
 }
 
 void CreateMonWithNature(struct Pokemon *mon, u16 species, u8 level, u8 fixedIV, u8 nature)
@@ -4316,7 +4320,6 @@ void DeleteFirstMoveAndGiveMoveToMon(struct Pokemon *mon, u16 move)
     s32 i;
     u16 moves[MAX_MON_MOVES];
     u8 pp[MAX_MON_MOVES];
-    u8 ppBonuses;
 
     for (i = 0; i < MAX_MON_MOVES - 1; i++)
     {
@@ -4324,8 +4327,6 @@ void DeleteFirstMoveAndGiveMoveToMon(struct Pokemon *mon, u16 move)
         pp[i] = GetMonData(mon, MON_DATA_PP2 + i, NULL);
     }
 
-    ppBonuses = GetMonData(mon, MON_DATA_PP_BONUSES, NULL);
-    ppBonuses >>= 2;
     moves[MAX_MON_MOVES - 1] = move;
     pp[MAX_MON_MOVES - 1] = gBattleMoves[move].pp;
 
@@ -4334,8 +4335,6 @@ void DeleteFirstMoveAndGiveMoveToMon(struct Pokemon *mon, u16 move)
         SetMonData(mon, MON_DATA_MOVE1 + i, &moves[i]);
         SetMonData(mon, MON_DATA_PP1 + i, &pp[i]);
     }
-
-    SetMonData(mon, MON_DATA_PP_BONUSES, &ppBonuses);
 }
 
 void DeleteFirstMoveAndGiveMoveToBoxMon(struct BoxPokemon *boxMon, u16 move)
@@ -4343,7 +4342,6 @@ void DeleteFirstMoveAndGiveMoveToBoxMon(struct BoxPokemon *boxMon, u16 move)
     s32 i;
     u16 moves[MAX_MON_MOVES];
     u8 pp[MAX_MON_MOVES];
-    u8 ppBonuses;
 
     for (i = 0; i < MAX_MON_MOVES - 1; i++)
     {
@@ -4351,8 +4349,6 @@ void DeleteFirstMoveAndGiveMoveToBoxMon(struct BoxPokemon *boxMon, u16 move)
         pp[i] = GetBoxMonData(boxMon, MON_DATA_PP2 + i, NULL);
     }
 
-    ppBonuses = GetBoxMonData(boxMon, MON_DATA_PP_BONUSES, NULL);
-    ppBonuses >>= 2;
     moves[MAX_MON_MOVES - 1] = move;
     pp[MAX_MON_MOVES - 1] = gBattleMoves[move].pp;
 
@@ -4361,8 +4357,6 @@ void DeleteFirstMoveAndGiveMoveToBoxMon(struct BoxPokemon *boxMon, u16 move)
         SetBoxMonData(boxMon, MON_DATA_MOVE1 + i, &moves[i]);
         SetBoxMonData(boxMon, MON_DATA_PP1 + i, &pp[i]);
     }
-
-    SetBoxMonData(boxMon, MON_DATA_PP_BONUSES, &ppBonuses);
 }
 
 u8 CountAliveMonsInBattle(u8 caseId)

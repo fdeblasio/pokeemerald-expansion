@@ -36,7 +36,7 @@ $1\L$2
 - Improve B-canceling moves
 - Figure out how to get important trainers to use their best Pokemon last
     - AI_FLAG_ACE_POKEMON
-- Go back and make rematch levels stronger/more consistent
+- Go back and make rematch levels stronger/more consistent (first see if they can be locked behind badges)
 - Type effectiveness in battle
 - PC in menu (look at debug menu)
 - TM Case?
@@ -50,6 +50,7 @@ $1\L$2
 - Edit contests?
 - Remove saving from Battle Frontier/Trainer Hill
 - Stop daycare from deleting moves
+- Add relearning moves to PC?
 
 ## Second, more advanced run (2.0.0)
 - Switch to mGBA?
@@ -72,6 +73,7 @@ $1\L$2
         - Close Combat?
 - Expand moves usable in overworld (see above)
     - Alternatively, remove instances of trees, rocks, boulders, etc
+        - Would need new Shuckle encounters
     - Would need to double check but this should make Cut, Rock Smash, and Strength forgettable
         - (sHMMoves and IsMoveHm)
     - Trick House can still use them but maybe have Escape Rope usable there
@@ -133,6 +135,7 @@ $1\L$2
 - Diversify water routes instead of just Tentacool/Wingull (definitely add more Carvanha; bring some fishing encounters to Surf)
 - Rework land_mons to only have 10 slots? (last two would go from 4->5)?
 - Spruce up battles/rematches
+    - Have each rematch only be possible after certain badges? Would make rematch levels more consistent
     - customAll Pokemon
         - Winston could have a shiny
             - Maybe all Rich Boys/Ladies have shinies (would need to have different Pokemon from each other instead of all having Zigzagoon)
@@ -157,8 +160,7 @@ $1\L$2
 - Figure out why PokeNav callers think there were 512 wins at the Battle Palace
     - Might be related to Battle Tent giving an item right away
 - Check that Mossdeep swimmer flag works
-- Make all moves set to their Max PP automatically?
-    - Would need to remove all PP Ups/Maxes (including Pickup)
+- Remove all PP Ups/Maxes (including Pickup) due to moves having max PP by default
 - Bring important Trainers up to ORAS levels?
 - Magmortar Flash Fire?
 - Edit max money
@@ -175,6 +177,6 @@ SS Tidal
         - Bonsly
         - Ampharos, Latios, Latias, Houndoom, Aerodactyl mega stones
         - Red and Blue Orbs?
-        - Oval Stone, Electrizer, Magmizer, Peat Block
+        - Oval Stone, Electrizer, Magmizer, Peat Block, Razor Fang
         - Sacred Ash to store?
         - Berry store (only for ones useful in battle)

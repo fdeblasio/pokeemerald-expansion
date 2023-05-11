@@ -221,14 +221,6 @@ u16 ChooseMoveAndTargetInBattlePalace(void)
                         chosenMoveId = i;
                 } while (chosenMoveId == -1);
             }
-
-            // If a move was selected (and in this case was not from the Nature-chosen group)
-            // then there's a 50% chance it won't be used anyway
-            if (Random() % 100 > 49)
-            {
-                gProtectStructs[gActiveBattler].palaceUnableToUseMove = TRUE;
-                return 0;
-            }
         }
         else
         {

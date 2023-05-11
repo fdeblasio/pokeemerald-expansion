@@ -185,6 +185,5 @@ SS Tidal
 - Brendan/May/Steven rematches?
 - Make seperate Dex for post-game (similar to SwSh DLC dexes)?
 - Frontier overhaul:
-    - Battle Palace new moves?
     - Edit Battle Frontier messages for Fairy?
     - Edit Frontier/Trainer Hill teams?

@@ -3,6 +3,20 @@
 (["\- ][A-Z])([A-Z][A-Zé']+)
 $1\L$2
 
+## To Do Soon (1.1.0)
+Double-check Mirage Island
+Steven
+SS Tidal
+    Battle Frontier
+        - Remove saving (Common_EventScript_SaveGame)
+        - Replace duplicate Tutors
+        - Bonsly
+        - Ampharos, Latios, Latias, Houndoom, Aerodactyl mega stones
+        - Red and Blue Orbs?
+        - Oval Stone, Electrizer, Magmizer, Peat Block, Razor Fang
+        - Sacred Ash to store?
+        - Berry store (only for ones useful in battle)
+
 ## To Do (1.2.0)
 - https://www.pokecommunity.com/showthread.php?t=416647&page=1
 - https://github.com/pret/pokeemerald/wiki/Tutorials
@@ -52,12 +66,13 @@ $1\L$2
 - Edit Frontier/Trainer Hill teams?
 - Add FRLG trainer sprites
 - Edit contests?
-- Remove saving from Battle Frontier
 - Stop daycare from deleting moves
 - Add relearning moves to PC?
+- Remove unused code
 
 ## Second, more advanced run (2.0.0)
 - Switch to mGBA?
+- make clean?
 - Edit moves that work in field
     - Maybe edit so instead of "if has move" to "if can learn move" (might not be simple since it's .inc and not C)
     - Cut:
@@ -170,16 +185,3 @@ $1\L$2
 - Edit max money
 - Brendan/May/Steven rematches?
 - Make seperate Dex for post-game (similar to SwSh DLC dexes)?
-
-## To Do Soon (1.1.0)
-Double-check Mirage Island
-Steven
-SS Tidal
-    Battle Frontier
-        - Replace duplicate Tutors
-        - Bonsly
-        - Ampharos, Latios, Latias, Houndoom, Aerodactyl mega stones
-        - Red and Blue Orbs?
-        - Oval Stone, Electrizer, Magmizer, Peat Block, Razor Fang
-        - Sacred Ash to store?
-        - Berry store (only for ones useful in battle)

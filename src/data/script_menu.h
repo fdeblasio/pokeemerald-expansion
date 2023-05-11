@@ -98,8 +98,8 @@ static const struct MenuAction MultichoiceList_ChallengeInfo[] =
 
 static const struct MenuAction MultichoiceList_LevelMode[] =
 {
-    {gText_Lv50},
     {gText_OpenLevel},
+    {gText_Lv50},
     {gText_Exit},
 };
 

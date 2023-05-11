@@ -11,13 +11,8 @@ Battle Frontier
     - Remove saving (Common_EventScript_SaveGame)
     - Make pausing challenge not a soft save (CHALLENGE_STATUS_SAVING)
     - Replace duplicate Tutors
-    - Bonsly
-    - Ampharos, Latios, Latias, Houndoom, Aerodactyl mega stones
-    - Red and Blue Orbs?
-    - Electrizer, Magmizer, Oval Stone, Razor Fang, Peat Block
-    - Sacred Ash, Rare Candies/Candy XL
+    - Edit BP costs for moves
     - Berry store (only for ones useful in battle)
-    - Edit BP costs
 
 ## To Do (1.2.0)
 - https://www.pokecommunity.com/showthread.php?t=416647&page=1
@@ -181,11 +176,13 @@ Battle Frontier
 - Figure out why PokeNav callers think there were 512 wins at the Battle Palace
     - Might be related to Battle Tent giving an item right away
 - Check that Mossdeep swimmer flag works
+- In game trades
 - Remove all PP Ups/Maxes (including Pickup) due to moves having max PP by default
 - Bring important Trainers up to ORAS levels?
 - Magmortar Flash Fire?
 - Edit max money
 - Brendan/May/Steven rematches?
+- Add Pokemon with dolls? (Togepi, Smoochum, Clefairy, Lapras, Snorlax, Venusaur, Charizard, Blastoise)
 - Make seperate Dex for post-game (similar to SwSh DLC dexes)?
 - Frontier overhaul:
     - Give BP after every battle

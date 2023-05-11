@@ -71,8 +71,6 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStones:
 	.2byte ITEM_GLALITITE
 	.2byte ITEM_SALAMENCITE
 	.2byte ITEM_METAGROSSITE
-	.2byte ITEM_LATIASITE
-	.2byte ITEM_LATIOSITE
 	.2byte ITEM_NONE
 	release
 	end

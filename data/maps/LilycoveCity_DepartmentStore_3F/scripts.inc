@@ -70,7 +70,6 @@ LilycoveCity_DepartmentStore_3F_Pokemart_Evo:
 	.2byte ITEM_DEEP_SEA_SCALE
 	.2byte ITEM_REAPER_CLOTH
 	.2byte ITEM_PROTECTOR
-	.2byte ITEM_RAZOR_FANG
 	.2byte ITEM_PRISM_SCALE
 	.2byte ITEM_NONE
 	release
@@ -81,14 +80,15 @@ LilycoveCity_DepartmentStore_3F_Pokemart_Evo:
 LilycoveCity_DepartmentStore_3F_Pokemart_EvoUnused:
 	.2byte ITEM_DUSK_STONE
 	.2byte ITEM_ICE_STONE
-	.2byte ITEM_KINGS_ROCK
+	.2byte ITEM_KINGS_ROCK 		@ Battle Frontier as battle item
 	.2byte ITEM_METAL_COAT
 	.2byte ITEM_UPGRADE
 	.2byte ITEM_DUBIOUS_DISC
+	.2byte ITEM_RAZOR_FANG		@ Battle Frontier
 	.2byte ITEM_RAZOR_CLAW
-	.2byte ITEM_ELECTIRIZER
-	.2byte ITEM_MAGMARIZER
-	.2byte ITEM_OVAL_STONE
+	.2byte ITEM_ELECTIRIZER		@ Battle Frontier
+	.2byte ITEM_MAGMARIZER		@ Battle Frontier
+	.2byte ITEM_OVAL_STONE		@ Battle Frontier
 	.2byte ITEM_SACHET
 	.2byte ITEM_WHIPPED_DREAM
 	.2byte ITEM_GALARICA_CUFF
@@ -98,7 +98,7 @@ LilycoveCity_DepartmentStore_3F_Pokemart_EvoUnused:
 	.2byte ITEM_SCROLL_OF_DARKNESS
 	.2byte ITEM_SCROLL_OF_WATERS
 	.2byte ITEM_BLACK_AUGURITE
-	.2byte ITEM_PEAT_BLOCK
+	.2byte ITEM_PEAT_BLOCK		@ Battle Frontier
 	.2byte ITEM_AUSPICIOUS_ARMOR
 	.2byte ITEM_MALICIOUS_ARMOR
 	.2byte ITEM_NONE
@@ -117,6 +117,7 @@ LilycoveCity_DepartmentStore_3F_EventScript_ClerkRight::
 
 	.align 2
 LilycoveCity_DepartmentStore_3F_Pokemart_Delibird:
+	.2byte ITEM_LEFTOVERS
 	.2byte ITEM_CHOICE_BAND
 	.2byte ITEM_CHOICE_SPECS
 	.2byte ITEM_CHOICE_SCARF

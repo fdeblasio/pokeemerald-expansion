@@ -5615,18 +5615,6 @@ u8 CalculatePPWithBonus(u16 move, u8 ppBonuses, u8 moveIndex)
     return basePP + ((basePP * 20 * ((gPPUpGetMask[moveIndex] & ppBonuses) >> (2 * moveIndex))) / 100);
 }
 
-void RemoveMonPPBonus(struct Pokemon *mon, u8 moveIndex)
-{
-    u8 ppBonuses = GetMonData(mon, MON_DATA_PP_BONUSES, NULL);
-    ppBonuses &= gPPUpClearMask[moveIndex];
-    SetMonData(mon, MON_DATA_PP_BONUSES, &ppBonuses);
-}
-
-void RemoveBattleMonPPBonus(struct BattlePokemon *mon, u8 moveIndex)
-{
-    mon->ppBonuses &= gPPUpClearMask[moveIndex];
-}
-
 void PokemonToBattleMon(struct Pokemon *src, struct BattlePokemon *dst)
 {
     s32 i;

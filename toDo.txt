@@ -47,8 +47,12 @@ $1\L$2
 - Edit Battle Frontier messages for Fairy?
 - Add new Pokemon to Frontier teams?
 - Add FRLG trainer sprites
+- Edit contests?
+- Remove saving from Battle Frontier/Trainer Hill
+- Stop daycare from deleting moves
 
 ## Second, more advanced run (2.0.0)
+- Switch to mGBA?
 - Edit moves that work in field
     - Maybe edit so instead of "if has move" to "if can learn move" (might not be simple since it's .inc and not C)
     - Cut:
@@ -91,6 +95,7 @@ $1\L$2
 - Calculate Electro Ball more similarly to Gyro Ball?
 - DON'T USE DEBUG MENU FOR FLYING. Test to see if without it, Fly Flags are set correctly
     - Maybe use makeshift version of it (without setting all flags) in Start menu to Fly without needing a Pokemon who knows it (no badge requirements)
+        - Fly to routes?
 - Add in Houndoom for more Magma variety?
     - Replace Magcargo as Tabitha's main Pokemon (currently unsure if it will Mega Evolve)
         - Or replace Camerupt as Maxie's signature and give Camerupt to Tabitha? Maybe edit stats so Sharpedo/Houndoom line up
@@ -153,7 +158,7 @@ $1\L$2
     - Might be related to Battle Tent giving an item right away
 - Check that Mossdeep swimmer flag works
 - Make all moves set to their Max PP automatically?
-    - Would need to remove all PP Ups/Maxes
+    - Would need to remove all PP Ups/Maxes (including Pickup)
 - Bring important Trainers up to ORAS levels?
 - Magmortar Flash Fire?
 - Edit max money

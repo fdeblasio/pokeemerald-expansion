@@ -62,8 +62,6 @@ SS Tidal
 - Have Hoenn starters learn STAB move at level 6 to make first rival battle easier
 - Edit rest out mass outbreaks
     - Maractus/Sandile in Route 111? Would be first time expanding past Gens 1-3 + evos
-- Edit Battle Frontier messages for Fairy?
-- Edit Frontier/Trainer Hill teams?
 - Add FRLG trainer sprites
 - Edit contests?
 - Stop daycare from deleting moves
@@ -73,6 +71,8 @@ SS Tidal
 ## Second, more advanced run (2.0.0)
 - Switch to mGBA?
 - make clean?
+- When doing new savefile, remove `u32 tmShopFlags[4];` from include/global.h
+- More save space editing
 - Edit moves that work in field
     - Maybe edit so instead of "if has move" to "if can learn move" (might not be simple since it's .inc and not C)
     - Cut:
@@ -102,7 +102,6 @@ SS Tidal
     - Look for FIELD_MOVE_X
     - Currently are in same index spot. Should be moved to before HMs once everything is figured out (can simplify IsMoveHm once done)
     - Edit text (Steven's house for Dive for example)
-- When doing new savefile, remove `u32 tmShopFlags[4];` from include/global.h
 - Expand Bag!!! (https://github.com/pret/pokeemerald/wiki/Make-the-Bag-Able-to-Hold-120-Items-Instead-of-30)
     - Medicine Pocket?
     - See if it's possible to give item PC and decoration PC have more room
@@ -185,3 +184,7 @@ SS Tidal
 - Edit max money
 - Brendan/May/Steven rematches?
 - Make seperate Dex for post-game (similar to SwSh DLC dexes)?
+- Frontier overhaul:
+    - Battle Palace new moves?
+    - Edit Battle Frontier messages for Fairy?
+    - Edit Frontier/Trainer Hill teams?

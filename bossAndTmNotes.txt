@@ -150,7 +150,7 @@ TM99_BODY_PRESS - Lilycove TM Shop
 TM100_MOONBLAST - Lilycove TM Shop
 
 
-Free Tutors:
+Mainland Tutors:
 Double-Edge
 Dynamic Punch
 Explosion

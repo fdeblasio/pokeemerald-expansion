@@ -9,8 +9,6 @@ Steven
 Battle Frontier
     - Remove saving (Common_EventScript_SaveGame)
     - Make pausing challenge not a soft save (CHALLENGE_STATUS_SAVING)
-    - Replace duplicate Tutors
-    - Edit BP costs for moves
     - Condense repeated Exchange Corner text
 
 ## To Do (1.2.0)

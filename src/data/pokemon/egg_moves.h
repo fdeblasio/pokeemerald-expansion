@@ -3499,6 +3499,7 @@ const u16 gEggMoves[] = {
 		MOVE_SWIFT,
 		MOVE_WHIRLPOOL),
 
+	egg_moves(SANDILE,
 		MOVE_AQUA_TAIL,
 		MOVE_BEAT_UP,
 		MOVE_COUNTER,

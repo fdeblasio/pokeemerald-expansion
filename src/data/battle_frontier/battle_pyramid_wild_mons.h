@@ -882,6 +882,8 @@ static const struct PyramidWildMon sBattlePyramidWildMons_Round17[] =
     }
 };
 
+//Braviary for Brave Symbol
+//Brave Bird
 static const struct PyramidWildMon sBattlePyramidWildMons_Round18[] =
 {
     {

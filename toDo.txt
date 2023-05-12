@@ -200,5 +200,6 @@ Battle Frontier
         - Wild Pokemon
             - Disable Shiny
             - Spawn rate
-        - Pickup
         - Items
+            - Pickup
+            - Battle Bag space

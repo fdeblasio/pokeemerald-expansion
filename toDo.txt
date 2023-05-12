@@ -180,6 +180,7 @@ Battle Frontier
 - Bring important Trainers up to ORAS levels?
 - Magmortar Flash Fire?
 - Edit max money
+- Get rid of duplicate regional evolution methods, even for ones not in the game
 - Actually go through SS Tidal now that you'll have more bag space
 - Brendan/May/Steven rematches?
 - Add Pokemon with dolls? (Togepi, Smoochum, Clefairy, Lapras, Snorlax, Venusaur, Charizard, Blastoise)

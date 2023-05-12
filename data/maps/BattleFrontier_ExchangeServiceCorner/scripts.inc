@@ -293,10 +293,10 @@ BattleFrontier_Mart_EvolutionMega:
 	.2byte ITEM_LATIOSITE
 	.2byte ITEM_RED_ORB
 	.2byte ITEM_BLUE_ORB
-	.2byte ITEM_SACRED_ASH
 	.2byte ITEM_RARE_CANDY
 	.2byte ITEM_EXP_CANDY_L
 	.2byte ITEM_EXP_CANDY_XL
+	.2byte ITEM_SACRED_ASH
 	.2byte ITEM_NONE
 	release
 	end
@@ -321,6 +321,7 @@ BattleFrontier_Mart_HoldItemVitamin:
 	.2byte ITEM_KINGS_ROCK
 	.2byte ITEM_FOCUS_BAND
 	.2byte ITEM_FOCUS_SASH
+	.2byte ITEM_GRIP_CLAW
 	.2byte ITEM_PROTEIN
 	.2byte ITEM_CALCIUM
 	.2byte ITEM_IRON

@@ -3767,7 +3767,7 @@ const struct Item gItems[] =
     {
         .name = _("Red Orb"),
         .itemId = ITEM_RED_ORB,
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_PRIMAL_ORB,
         .description = sRedOrbDesc,
         .pocket = POCKET_ITEMS,
@@ -3779,7 +3779,7 @@ const struct Item gItems[] =
     {
         .name = _("Blue Orb"),
         .itemId = ITEM_BLUE_ORB,
-        .price = 0,
+        .price = 10000,
         .holdEffect = HOLD_EFFECT_PRIMAL_ORB,
         .description = sBlueOrbDesc,
         .pocket = POCKET_ITEMS,

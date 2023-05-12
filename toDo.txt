@@ -60,7 +60,6 @@ Battle Frontier
 - Add relearning moves to PC?
 - Remove unused code
 - Pokemon in Frontier/Trainer Hill are registered in Dex
-- Look into odds of fleeing if speed is low
 
 ## Second, more advanced run (2.0.0)
 - Switch to mGBA?

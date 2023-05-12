@@ -120,14 +120,14 @@ TM69_PLAY_ROUGH - Lilycove TM Shop
 TM70_LEECH_LIFE - Lilycove TM Shop
 TM71_STONE_EDGE - Lilycove TM Shop
 TM72_AVALANCHE - Lavaridge TM Shop
-TM73_THUNDER_WAVE - Slateport TM Shop/(Replace Battle Frontier Tutor) 
+TM73_THUNDER_WAVE - Slateport TM Shop
 TM74_GYRO_BALL - Lavaridge TM Shop
-TM75_SWORDS_DANCE - Lavaridge TM Shop (Replace Battle Frontier Tutor) 
+TM75_SWORDS_DANCE - Lavaridge TM Shop (Replace Battle Frontier Tutor)
 TM76_STEALTH_ROCK - Lavaridge TM Shop
-TM77_PSYCH_UP - Slateport TM Shop/(Replace Battle Frontier Tutor) 
+TM77_PSYCH_UP - Slateport TM Shop
 TM78_CRUNCH - Lilycove TM Shop
 TM79_DARK_PULSE - Lilycove TM Shop
-TM80_ROCK_SLIDE - Lilycove TM Shop/(Replace Battle Frontier Tutor) 
+TM80_ROCK_SLIDE - Lilycove TM Shop
 TM81_X_SCISSOR - Lilycove TM Shop
 TM82_NIGHT_SLASH - Lilycove TM Shop
 TM83_IRON_HEAD - Lilycove TM Shop
@@ -137,32 +137,58 @@ TM86_GRASS_KNOT - Lavaridge TM Shop
 TM87_BUG_BUZZ - Lilycove TM Shop
 TM88_ACROBATICS - Lilycove TM Shop
 TM89_U_TURN - Lavaridge TM Shop
-TM90_BODY_SLAM - Lilycove TM Shop/(Replace Battle Frontier Tutor) 
+TM90_BODY_SLAM - Lilycove TM Shop
 TM91_FLASH_CANNON - Lilycove TM Shop
 TM92_TRICK_ROOM - Lavaridge TM Shop
 TM93_LIQUIDATION - Lilycove TM Shop
-TM94_THUNDER_PUNCH - Lilycove TM Shop/(Replace Battle Frontier Tutor) 
-TM95_FIRE_PUNCH - Lilycove TM Shop/(Replace Battle Frontier Tutor) 
-TM96_ICE_PUNCH - Lilycove TM Shop/(Replace Battle Frontier Tutor) 
+TM94_THUNDER_PUNCH - Lilycove TM Shop
+TM95_FIRE_PUNCH - Lilycove TM Shop
+TM96_ICE_PUNCH - Lilycove TM Shop
 TM97_EARTH_POWER - Lilycove TM Shop
 TM98_AIR_SLASH - Lilycove TM Shop
 TM99_BODY_PRESS - Lilycove TM Shop
 TM100_MOONBLAST - Lilycove TM Shop
 
-Move Tutor Replacements: 8 (could expand)
-  Terrain moves?
-  Terrain-powered moves (give to Tapus) (not Misty Explosion)
-  Scorching Sands
-  Dual Wingbeat
-  Flip Turn
-  Knock Off?
-  Zen Headbutt/Psycho Cut?
-  Scald?
-  Lunge?
-  Throat Chop/Darkest Lariat?
-  Dragon Dance?
-  Solar Blade?
-  Iron Defense
-  Nasty Plot
 
-Will need to redo move lists once Tutors are finalized
+Free Tutors:
+Double-Edge
+Dynamic Punch
+Explosion
+Fury Cutter
+Metronome
+Mimic
+Rollout
+Sleep Talk
+Substitute
+Swagger
+
+Battle Frontier Move Tutors:
+Rising Voltage
+Grassy Glide
+Expanding Force
+Zen Headbutt
+Scald
+Psycho Cut
+Lunge
+Throat Chop
+Solar Blade
+Dual Wingbeat
+Scorching Sands
+Knock Off
+Mega Punch
+Mega MOVE_DOUBLE_KICK
+
+Electric Terrain
+Grassy Terrain
+Misty Terrain
+Psychic Terrain
+Iron Defense
+Nasty Plot
+Dragon Dance
+Defense Curl
+Endure
+Icy Wind
+Swift
+Seismic Toss
+Counter
+Dream Eater

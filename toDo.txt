@@ -64,6 +64,7 @@ Battle Frontier
 - Add relearning moves to PC?
 - Remove unused code
 - Pokemon in Frontier/Trainer Hill are registered in Dex
+- Egg moves
 
 ## Second, more advanced run (2.0.0)
 - Switch to mGBA?
@@ -149,6 +150,7 @@ Battle Frontier
     - Regidrago near Meteor Falls?
 - Diversify water routes instead of just Tentacool/Wingull (definitely add more Carvanha; bring some fishing encounters to Surf)
 - Rework land_mons to only have 10 slots? (last two would go from 4->5)?
+- Figure out a way to mass update of both level up and teachable moves (PoryMoves has slightly different syntax for some forms)
 - Spruce up battles/rematches
     - Have each rematch only be possible after certain badges? Would make rematch levels more consistent
     - customAll Pokemon

@@ -4521,6 +4521,7 @@ static const struct LevelUpMove sGranbullLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sQwilfishLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_POISON_TAIL),
     LEVEL_UP_MOVE( 1, MOVE_FELL_STINGER),
     LEVEL_UP_MOVE( 1, MOVE_HYDRO_PUMP),
     LEVEL_UP_MOVE( 1, MOVE_DESTINY_BOND),
@@ -7843,6 +7844,7 @@ static const struct LevelUpMove sSnoruntLevelUpLearnset[] = {
     LEVEL_UP_MOVE(35, MOVE_BITE),
     LEVEL_UP_MOVE(40, MOVE_ICE_FANG),
     LEVEL_UP_MOVE(45, MOVE_HAIL),
+    LEVEL_UP_MOVE(45, MOVE_SNOWSCAPE),
     LEVEL_UP_MOVE(50, MOVE_WEATHER_BALL),
     LEVEL_UP_MOVE(55, MOVE_CRUNCH),
     LEVEL_UP_MOVE(60, MOVE_BLIZZARD),
@@ -7864,6 +7866,7 @@ static const struct LevelUpMove sGlalieLevelUpLearnset[] = {
     LEVEL_UP_MOVE(35, MOVE_BITE),
     LEVEL_UP_MOVE(40, MOVE_ICE_FANG),
     LEVEL_UP_MOVE(47, MOVE_HAIL),
+    LEVEL_UP_MOVE(47, MOVE_SNOWSCAPE),
     LEVEL_UP_MOVE(54, MOVE_WEATHER_BALL),
     LEVEL_UP_MOVE(61, MOVE_CRUNCH),
     LEVEL_UP_MOVE(68, MOVE_BLIZZARD),
@@ -10258,6 +10261,7 @@ static const struct LevelUpMove sFroslassLevelUpLearnset[] = {
     LEVEL_UP_MOVE(35, MOVE_CONFUSE_RAY),
     LEVEL_UP_MOVE(37, MOVE_WAKE_UP_SLAP),
     LEVEL_UP_MOVE(40, MOVE_HAIL),
+    LEVEL_UP_MOVE(40, MOVE_SNOWSCAPE),
     LEVEL_UP_MOVE(41, MOVE_CAPTIVATE),
     LEVEL_UP_MOVE(47, MOVE_WILL_O_WISP),
     LEVEL_UP_MOVE(54, MOVE_AURORA_VEIL),
@@ -18819,6 +18823,7 @@ static const struct LevelUpMove sSneaslerLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sOverqwilLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_POISON_TAIL),
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 5, MOVE_SPIKES),
     LEVEL_UP_MOVE( 9, MOVE_PIN_MISSILE),
@@ -19331,6 +19336,7 @@ static const struct LevelUpMove sFarfetchdGalarianLevelUpLearnset[] = {
 
 static const struct LevelUpMove sWeezingGalarianLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_DOUBLE_HIT),
+    LEVEL_UP_MOVE( 1, MOVE_MISTY_EXPLOSION),
     LEVEL_UP_MOVE( 1, MOVE_STRANGE_STEAM),
     LEVEL_UP_MOVE( 1, MOVE_DEFOG),
     LEVEL_UP_MOVE( 1, MOVE_HEAT_WAVE),
@@ -19671,6 +19677,7 @@ static const struct LevelUpMove sTyphlosionHisuianLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sQwilfishHisuianLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_POISON_TAIL),
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 5, MOVE_SPIKES),
     LEVEL_UP_MOVE( 9, MOVE_PIN_MISSILE),

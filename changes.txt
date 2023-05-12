@@ -46,33 +46,47 @@ Moves:
     Barrage:
         Power: 15->20
         Accuracy: 85->90
-    Given 100 accuracy:
-        Cut
-        Metal Claw
-        Submission
-        Play Rough
-        Sky Uppercut
-        Blaze Kick
-        Crush Claw
-        Razor Shell
-        Zen Headbutt
-        Rock Throw
-        Rock Tomb
-        Rock Slide
-        Aqua Tail
-        Crabhammer
-        Bonemerang
-        Psyshield Bash
-        Rolling Kick
-        Slam
-        Mega Punch
-        Egg Bomb
-        High Horsepower
-        Octazooka
-        Air Slash
-        Meteor Mash
-        Steel Wing
-        Dual Wingbeat
+
+    Many signature moves and other moves were given 100% accuracy:
+        Normal:
+            Cut
+            Crush Claw
+            Slam
+            Mega Punch
+            Egg Bomb
+        Fighting:
+            Rolling Kick
+            Submission
+            Sky Uppercut
+        Flying:
+            Air Cutter
+            Air Slash
+            Dual Wingbeat
+        Ground:
+            Bonemerang
+            Drill Run
+            High Horsepower
+        Rock:
+            Rock Throw
+            Rock Tomb
+            Rock Slide
+        Fire:
+            Blaze Kick
+        Water:
+            Octazooka
+            Razor Shell
+            Aqua Tail
+            Crabhammer
+        Psychic:
+            Zen Headbutt
+            Psyshield Bash
+        Steel:
+            Metal Claw
+            Steel Wing
+            Meteor Mash
+        Fairy:
+            Play Rough
+            Strange Steam
 
 Pokémon:
     ALL:
@@ -115,6 +129,9 @@ Pokémon:
 
     Cubone (not in main game):
         Evolves into Alolan Marowak with Fire Stone
+
+    Galarian Weezing:
+        Learns Misty Explosion by level up
 
     Rhyperior:
         Learns Rock Wrecker upon evolving
@@ -192,6 +209,9 @@ Pokémon:
 
     Heracross:
         Catch rate: 45->90
+
+    Qwilfish/Hisuian Qwilfish/Overqwil (not in main game):
+        Learns Poison Tail by level up
 
     Slugma:
         Now evolves at level 32
@@ -298,6 +318,9 @@ Pokémon:
         Learns Overheat by TM
         Learns Surf by HM
 
+    Duskull/Dusclops/Dusknoir:
+        Learns Spite by breeding
+
     Tropius:
         HP: 99->100
         Atk: 68->70
@@ -308,6 +331,9 @@ Pokémon:
 
     Chingling:
         Can also evolve at level 19
+
+    Absol:
+        Learns Spite by breeding
 
     Huntail:
         Holding a Deep Sea Tooth multiplies its Attack by 1.5

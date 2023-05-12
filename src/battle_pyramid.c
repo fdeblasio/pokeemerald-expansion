@@ -99,8 +99,7 @@ static bool8 TrySetPyramidObjectEventPositionAtCoords(bool8, u8, u8, u8 *, u8, u
 // Const rom data.
 #define ABILITY_RANDOM 2 // For wild mons data.
 
-#include "data/battle_frontier/battle_pyramid_level_50_wild_mons.h"
-#include "data/battle_frontier/battle_pyramid_open_level_wild_mons.h"
+#include "data/battle_frontier/battle_pyramid_wild_mons.h"
 
 static const struct PyramidFloorTemplate sPyramidFloorTemplates[] =
 {
@@ -1350,25 +1349,17 @@ void GenerateBattlePyramidWildMon(void)
     if (round >= TOTAL_PYRAMID_ROUNDS)
         round = TOTAL_PYRAMID_ROUNDS - 1;
 
-    if (lvl != FRONTIER_LVL_50)
-        wildMons = sOpenLevelWildMonPointers[round];
-    else
-        wildMons = sLevel50WildMonPointers[round];
+    wildMons = sBattlePyramidWildMonPointers[round];
 
     id = GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL) - 1;
     SetMonData(&gEnemyParty[0], MON_DATA_SPECIES, &wildMons[id].species);
     GetSpeciesName(name, wildMons[id].species);
     SetMonData(&gEnemyParty[0], MON_DATA_NICKNAME, &name);
-    if (lvl != FRONTIER_LVL_50)
-    {
-        lvl = SetFacilityPtrsGetLevel();
-        lvl -= wildMons[id].lvl;
-        lvl = lvl - 5 + (Random() % 11);
-    }
-    else
-    {
-        lvl = wildMons[id].lvl - 5 + ((Random() % 11));
-    }
+
+    lvl = SetFacilityPtrsGetLevel();
+    lvl -= wildMons[id].lvl;
+    lvl = lvl - 5 + (Random() % 11);
+
     SetMonData(&gEnemyParty[0],
                MON_DATA_EXP,
                &gExperienceTables[gSpeciesInfo[wildMons[id].species].growthRate][lvl]);

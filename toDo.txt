@@ -37,7 +37,6 @@ Battle Frontier
 - Add Hyper Training
 - Once Mints are implemented, in Lilycove 3F, move X items to left clerk and make right clerk Mints
     - Or move Mints to left too and have left be Chansey, right be Delibird
-- Add Snowscape to Snorunt line's level up set once upcoming is merged in
 - Get rid of low health constant beeping
 - If Flash is unused, remove it from being an option in the summary screen
 - Elite Four rematches
@@ -175,10 +174,15 @@ Battle Frontier
     - Might be related to Battle Tent giving an item right away
 - Check that Mossdeep swimmer flag works
 - In game trades
+- Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
 - Remove all PP Ups/Maxes (including Pickup) due to moves having max PP by default
 - Bring important Trainers up to ORAS levels?
 - Magmortar Flash Fire?
+- Cherrim
+- Make Water Veil also up evasion like Sand Veil?
 - Edit max money
+- Should be able to run from wild Pokemon if it is Digging, Diving, Flying, Bouncing, etc
+    - Even if ability is Shadow Tag/Arena Trap
 - Get rid of duplicate regional evolution methods, even for ones not in the game
 - Actually go through SS Tidal now that you'll have more bag space
 - Brendan/May/Steven rematches?
@@ -189,17 +193,12 @@ Battle Frontier
     - Edit Battle Frontier messages for Fairy?
     - Add new Pokemon to Frontier mons?
     - Make teams more accurate to trainer classes?
-    - Edit rounds to 5 or 10?
-        - Look for "case 7" in BattleFrontier_BattlePalaceBattleRoom/scripts.inc
-        - Either way, should face Brain after 10; adjust BP to match
-        - This would work for Tower, Palace, Factory, and Arena
-        - Pyramid has 13 levels from the outside
-        - Unsure what to do for Pike and Dome
     - Battle Tower
         - Apprentices
     - Battle Factory
         - Rentals
     - Battle Pyramid
         - Wild Pokemon
+            - Disable Shiny
         - Pickup
         - Items

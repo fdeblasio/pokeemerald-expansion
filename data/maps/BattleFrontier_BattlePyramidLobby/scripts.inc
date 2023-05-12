@@ -206,8 +206,8 @@ BattleFrontier_BattlePyramidLobby_EventScript_HintGiver::
 BattleFrontier_BattlePyramidLobby_EventScript_GiveHint::
 	multichoice 17, 6, MULTI_LEVEL_MODE, FALSE
 	switch VAR_RESULT
-	case FRONTIER_LVL_50, BattleFrontier_BattlePyramidLobby_EventScript_GiveHintLv50
 	case FRONTIER_LVL_OPEN, BattleFrontier_BattlePyramidLobby_EventScript_GiveHintLvOpen
+	case FRONTIER_LVL_50, BattleFrontier_BattlePyramidLobby_EventScript_GiveHintLv50
 	case FRONTIER_LVL_TENT, BattleFrontier_BattlePyramidLobby_EventScript_NoHint
 	case MULTI_B_PRESSED, BattleFrontier_BattlePyramidLobby_EventScript_NoHint
 	return

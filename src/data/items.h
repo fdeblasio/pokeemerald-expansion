@@ -701,6 +701,7 @@ const struct Item gItems[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_SacredAsh,
+        .battleUsage = EFFECT_ITEM_REVIVE,
         .flingPower = 30,
     },
 

@@ -12313,22 +12313,22 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Tucker[] = {
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Spenser[] = {
     {
-    .iv = 0,
+    .iv = 255,
     .lvl = 5,
     .species = SPECIES_AZURILL,
     },
     {
-    .iv = 0,
+    .iv = 255,
     .lvl = 5,
     .species = SPECIES_UNOWN,
     },
     {
-    .iv = 0,
+    .iv = 255,
     .lvl = 40,
     .species = SPECIES_DUSCLOPS,
     },
     {
-    .iv = 0,
+    .iv = 255,
     .lvl = 50,
     .species = SPECIES_KYOGRE,
     }
@@ -12360,9 +12360,34 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Lucy[] = {
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Brandon[] = {
     {
-    .iv = 0,
-    .lvl = 5,
-    .species = SPECIES_BELDUM,
+    .iv = 255,
+    .lvl = 50,
+    .species = SPECIES_REGIDRAGO,
+    },
+    {
+    .iv = 255,
+    .lvl = 50,
+    .species = SPECIES_REGIELEKI,
+    },
+    {
+    .iv = 255,
+    .lvl = 50,
+    .species = SPECIES_REGIROCK,
+    },
+    {
+    .iv = 255,
+    .lvl = 50,
+    .species = SPECIES_REGICE,
+    },
+    {
+    .iv = 255,
+    .lvl = 50,
+    .species = SPECIES_REGISTEEL,
+    },
+    {
+    .iv = 255,
+    .lvl = 70,
+    .species = SPECIES_REGIGIGAS,
     }
 };
 

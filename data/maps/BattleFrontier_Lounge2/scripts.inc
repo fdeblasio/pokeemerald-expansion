@@ -312,10 +312,9 @@ BattleFrontier_Lounge2_Text_PyramidKingGoldMons::
 	.string "when he's serious?\p"
 	.string "When he's pumped with hot power,\n"
 	.string "he apparently uses these Pokémon:\p"
-	.string "An Ice & Flying Freeze Pokémon, an\n"
-	.string "Electric & Flying Electric Pokémon,\l"
-	.string "and a Fire- & Flying-type Flame\l"
-	.string "Pokémon.$"
+	.string "A Dragon-type Dragon Orb Pokémon,\n"
+	.string "an Electric-type Electron Pokémon,\l"
+	.string "and a Normal-type Colossal Pokémon.$"
 
 BattleFrontier_Lounge2_Text_DoubleBattleAdvice1::
 	.string "Sure, there are several places where\n"

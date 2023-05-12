@@ -9,7 +9,6 @@ Steven
 Battle Frontier
     - Remove saving (Common_EventScript_SaveGame)
     - Make pausing challenge not a soft save (CHALLENGE_STATUS_SAVING)
-    - Condense repeated Exchange Corner text
 
 ## To Do (1.2.0)
 - https://www.pokecommunity.com/showthread.php?t=416647&page=1
@@ -202,3 +201,5 @@ Battle Frontier
         - Rentals
     - Battle Pyramid
         - Wild Pokemon
+        - Pickup
+        - Items

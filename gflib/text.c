@@ -327,6 +327,8 @@ void RunTextPrinters(void)
             if (sTextPrinters[i].active)
             {
                 u16 renderCmd = RenderFont(&sTextPrinters[i]);
+                //This causes empty textboxes when using Sacred Ash, but moving it back to its
+                //original position causes most sentences to not have their last character printed
                 CopyWindowToVram(sTextPrinters[i].printerTemplate.windowId, COPYWIN_GFX);
                 switch (renderCmd)
                 {

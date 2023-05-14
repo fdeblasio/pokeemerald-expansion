@@ -5,6 +5,8 @@ $1\L$2
 
 ## To Do Soon (1.1.0)
 Double-check Mirage Island
+Combine changes and README?
+    Include more changes, even if general like Battle Frontier edits
 Steven
 Battle Frontier
     - Remove saving (Common_EventScript_SaveGame)
@@ -198,5 +200,3 @@ Battle Frontier
         - Rentals
     - Battle Pyramid
         - Wild Pokemon
-            - Disable Shiny
-            - Spawn rate

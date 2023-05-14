@@ -5,10 +5,13 @@ Tate and Liza give out Psychic instead of Calm Mind
 Fly, Flash, and Dive can now be forgotten
 Brick Break can now also break rocks in the overworld
 Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room. The door to Sealed Chamber and the Regis' inner rooms are now automatically open
-Made rapids easier to navigate (at the cost of looking slightly worse)
+Made rapids easier to navigate so that only one trip is needed to get all items/battle all trainers (at the cost of looking slightly worse)
 Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)
 Any PP Ups or Maxes used are now permanent for that slot, even if the move is replaced
 Sacred Ash now works in battles although it only revives one Pokémon
+
+Frontier Brains have updated teams
+Battle Pyramid wild Pokémon have been updated
 
 Moves:
     Double Slap:
@@ -47,6 +50,13 @@ Moves:
     Barrage:
         Power: 15->20
         Accuracy: 85->90
+    Present:
+        Accuracy: 90->100
+        Now heals allies similar to Pollen Puff
+        Damage odds:
+            40% 40->20% 60
+            30% 80->40% 80
+            10% 120->20% 120
 
     Many signature moves and other moves were given 100% accuracy:
         Normal:
@@ -78,6 +88,8 @@ Moves:
             Razor Shell
             Aqua Tail
             Crabhammer
+        Ice:
+            Icicle Crash
         Psychic:
             Zen Headbutt
             Psyshield Bash
@@ -143,8 +155,9 @@ Pokémon:
     Pinsir:
         Catch rate: 45->90
 
-    Mime Jr./Mr. Mime/Mr. Rime:
-        Gender Ration: 50/50->100/0
+    Mime Jr./Mr. Mime/Mr. Rime (not in main game):
+        Gender Ratio: 50/50->100/0
+        Type: Psychic/Fairy->Psychic
 
     Elekid:
         Atk: 63->65
@@ -191,7 +204,7 @@ Pokémon:
     Azurill:
         Can also evolve at level 10
         Type: Normal/Fairy->Water/Fairy
-        Gender Ration: 25/75->50/50
+        Gender Ratio: 25/75->50/50
         Catch rate: 150->255
 
     Marill:
@@ -216,6 +229,11 @@ Pokémon:
 
     Slugma:
         Now evolves at level 32
+
+    Delibird (not in main game):
+        Atk: 55->75
+        Hidden Ability: Insomnia->Technician
+        Learns Ice Punch by level up
 
     Lugia:
         Learns Brave Bird by level up

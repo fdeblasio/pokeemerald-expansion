@@ -5,6 +5,7 @@ $1\L$2
 
 ## To Do Soon (1.1.0)
 Double-check Mirage Island
+Present Pollen Puff
 Combine changes and README?
     Include more changes, even if general like Battle Frontier edits
 Steven
@@ -180,6 +181,7 @@ Battle Frontier
 - Bring important Trainers up to ORAS levels?
 - Magmortar Flash Fire?
 - Cherrim
+- Find way to get Hypnosis to always hit if Hypno is using it?
 - Make Water Veil also up evasion like Sand Veil?
 - Edit max money
 - Should be able to run from wild Pokemon if it is Digging, Diving, Flying, Bouncing, etc

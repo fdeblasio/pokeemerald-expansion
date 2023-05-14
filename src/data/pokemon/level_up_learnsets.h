@@ -4844,6 +4844,7 @@ static const struct LevelUpMove sOctilleryLevelUpLearnset[] = {
 static const struct LevelUpMove sDelibirdLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_PRESENT),
     LEVEL_UP_MOVE(25, MOVE_DRILL_PECK),
+    LEVEL_UP_MOVE(25, MOVE_ICE_PUNCH),
     LEVEL_UP_END
 };
 

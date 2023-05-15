@@ -97,6 +97,7 @@ Moves:
             Metal Claw
             Steel Wing
             Meteor Mash
+            Gear Grind
         Dark:
             Night Daze
         Fairy:

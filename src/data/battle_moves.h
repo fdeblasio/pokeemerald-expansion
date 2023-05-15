@@ -12689,21 +12689,17 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_NONE,
     },
-
     [MOVE_ESPER_WING] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_9
             .power = 80,
+            .accuracy = 100,
         #else
             .power = 75,
+            .accuracy = 90,
         #endif
         .effect = EFFECT_SPEED_UP_HIT,
         .type = TYPE_PSYCHIC,
-        #if B_UPDATED_MOVE_DATA >= GEN_9
-            .accuracy = 100,
-        #else
-            .accuracy = 90,
-        #endif
         .pp = 10,
         .secondaryEffectChance = 100,
         .target = MOVE_TARGET_SELECTED,

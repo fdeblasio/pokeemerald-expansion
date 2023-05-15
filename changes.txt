@@ -97,6 +97,8 @@ Moves:
             Metal Claw
             Steel Wing
             Meteor Mash
+        Dark:
+            Night Daze
         Fairy:
             Play Rough
             Strange Steam

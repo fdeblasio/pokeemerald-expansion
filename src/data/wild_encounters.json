@@ -10800,7 +10800,7 @@
         {
           "base_label": "gBattlePyramid_1",
           "land_mons": {
-            "encounter_rate": 4,
+            "encounter_rate": 3,
             "mons": [
               {
                 "min_level": 5,
@@ -10810,37 +10810,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BULBASAUR"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BULBASAUR"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BULBASAUR"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
                 "species": "SPECIES_IVYSAUR"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_IVYSAUR"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_VENUSAUR"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_VENUSAUR"
               },
               {
                 "min_level": 5,
@@ -10861,6 +10831,36 @@
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_CHARMANDER"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BULBASAUR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_IVYSAUR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BULBASAUR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_IVYSAUR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BULBASAUR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_IVYSAUR"
               }
             ]
           }
@@ -10873,17 +10873,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_IVYSAUR"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_IVYSAUR"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_IVYSAUR"
+                "species": "SPECIES_BULBASAUR"
               },
               {
                 "min_level": 5,
@@ -10898,6 +10888,11 @@
               {
                 "min_level": 5,
                 "max_level": 5,
+                "species": "SPECIES_CHARMANDER"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
                 "species": "SPECIES_VENUSAUR"
               },
               {
@@ -10908,7 +10903,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CHARMANDER"
+                "species": "SPECIES_VENUSAUR"
               },
               {
                 "min_level": 5,
@@ -10918,12 +10913,17 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CHARMELEON"
+                "species": "SPECIES_VENUSAUR"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CHARMELEON"
+                "species": "SPECIES_CHARMANDER"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_VENUSAUR"
               },
               {
                 "min_level": 5,
@@ -10946,37 +10946,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_VENUSAUR"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_VENUSAUR"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_VENUSAUR"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
                 "species": "SPECIES_CHARMANDER"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CHARMANDER"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CHARMELEON"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CHARMELEON"
               },
               {
                 "min_level": 5,
@@ -10997,6 +10967,36 @@
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_CHARIZARD"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_VENUSAUR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CHARMANDER"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_VENUSAUR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CHARMANDER"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_VENUSAUR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CHARMANDER"
               }
             ]
           }
@@ -11009,17 +11009,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CHARMANDER"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CHARMANDER"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CHARMANDER"
+                "species": "SPECIES_VENUSAUR"
               },
               {
                 "min_level": 5,
@@ -11034,6 +11024,11 @@
               {
                 "min_level": 5,
                 "max_level": 5,
+                "species": "SPECIES_CHARIZARD"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
                 "species": "SPECIES_CHARMELEON"
               },
               {
@@ -11044,7 +11039,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CHARIZARD"
+                "species": "SPECIES_CHARMELEON"
               },
               {
                 "min_level": 5,
@@ -11054,7 +11049,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SQUIRTLE"
+                "species": "SPECIES_CHARMELEON"
               },
               {
                 "min_level": 5,
@@ -11064,7 +11059,12 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SQUIRTLE"
+                "species": "SPECIES_CHARMELEON"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CHARIZARD"
               }
             ]
           }
@@ -11082,37 +11082,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CHARMELEON"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CHARMELEON"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CHARMELEON"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
                 "species": "SPECIES_CHARIZARD"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CHARIZARD"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_SQUIRTLE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_SQUIRTLE"
               },
               {
                 "min_level": 5,
@@ -11133,6 +11103,36 @@
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_WARTORTLE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CHARMELEON"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CHARIZARD"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CHARMELEON"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CHARIZARD"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CHARMELEON"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CHARIZARD"
               }
             ]
           }
@@ -11145,27 +11145,12 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CHARIZARD"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CHARIZARD"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CHARIZARD"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
                 "species": "SPECIES_CHARMELEON"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SQUIRTLE"
+                "species": "SPECIES_CHARIZARD"
               },
               {
                 "min_level": 5,
@@ -11180,7 +11165,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_WARTORTLE"
+                "species": "SPECIES_SQUIRTLE"
               },
               {
                 "min_level": 5,
@@ -11190,12 +11175,27 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_WARTORTLE"
+                "species": "SPECIES_SQUIRTLE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_WARTORTLE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SQUIRTLE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_WARTORTLE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SQUIRTLE"
               },
               {
                 "min_level": 5,
@@ -11208,16 +11208,26 @@
         {
           "base_label": "gBattlePyramid_7",
           "land_mons": {
-            "encounter_rate": 8,
+            "encounter_rate": 5,
             "mons": [
               {
                 "min_level": 5,
                 "max_level": 5,
+                "species": "SPECIES_SQUIRTLE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
                 "species": "SPECIES_WARTORTLE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
+                "species": "SPECIES_SQUIRTLE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
                 "species": "SPECIES_WARTORTLE"
               },
               {
@@ -11228,7 +11238,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SQUIRTLE"
+                "species": "SPECIES_WARTORTLE"
               },
               {
                 "min_level": 5,
@@ -11238,37 +11248,27 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CHARIZARD"
+                "species": "SPECIES_WARTORTLE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CHARIZARD"
+                "species": "SPECIES_SQUIRTLE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CHARIZARD"
+                "species": "SPECIES_WARTORTLE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CHARMELEON"
+                "species": "SPECIES_SQUIRTLE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CHARMELEON"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CHARMELEON"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CHARMELEON"
+                "species": "SPECIES_WARTORTLE"
               }
             ]
           }

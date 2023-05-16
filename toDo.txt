@@ -3,6 +3,11 @@
 (["\- ][A-Z])([A-Z][A-Zé']+)
 $1\L$2
 
+## Known Bugs
+- When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
+- Items in the Battle Bag are turning into Poke Balls
+    - Seems to happen after trainer battles?
+
 ## To Do Soon (1.1.0)
 Double-check Mirage Island
 Present Pollen Puff
@@ -12,6 +17,8 @@ Steven
 Battle Frontier
     - Remove saving (Common_EventScript_SaveGame)
     - Make pausing challenge not a soft save (CHALLENGE_STATUS_SAVING)
+    - Make retiring not reset streak
+    - Perhaps combine the two to take a pause like in SwSh
 
 ## To Do (1.2.0)
 - https://www.pokecommunity.com/showthread.php?t=416647&page=1

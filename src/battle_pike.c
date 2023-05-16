@@ -1034,7 +1034,7 @@ bool32 TryGenerateBattlePikeWildMon(bool8 checkKeenEyeIntimidate)
     s32 monLevel;
     u8 headerId = GetBattlePikeWildMonHeaderId();
     u32 lvlMode = gSaveBlock2Ptr->frontier.lvlMode;
-    const struct PikeWildMon *const *const wildMons = sBattlePikeMons[lvlMode];
+    const struct PikeWildMon *const wildMons = sBattlePikeMons[lvlMode];
     u32 abilityNum;
     s32 pikeMonId = GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL);
     pikeMonId = SpeciesToPikeMonId(pikeMonId);
@@ -1048,14 +1048,14 @@ bool32 TryGenerateBattlePikeWildMon(bool8 checkKeenEyeIntimidate)
         }
         else
         {
-            monLevel -= wildMons[headerId][pikeMonId].levelDelta;
+            monLevel -= wildMons[pikeMonId].levelDelta;
             if (monLevel < FRONTIER_MIN_LEVEL_OPEN)
                 monLevel = FRONTIER_MIN_LEVEL_OPEN;
         }
     }
     else
     {
-        monLevel = FRONTIER_MAX_LEVEL_50 - wildMons[headerId][pikeMonId].levelDelta;
+        monLevel = FRONTIER_MAX_LEVEL_50 - wildMons[pikeMonId].levelDelta;
     }
 
     if (checkKeenEyeIntimidate == TRUE && !CanEncounterWildMon(monLevel))
@@ -1063,15 +1063,15 @@ bool32 TryGenerateBattlePikeWildMon(bool8 checkKeenEyeIntimidate)
 
     SetMonData(&gEnemyParty[0],
                MON_DATA_EXP,
-               &gExperienceTables[gSpeciesInfo[wildMons[headerId][pikeMonId].species].growthRate][monLevel]);
+               &gExperienceTables[gSpeciesInfo[wildMons[pikeMonId].species].growthRate][monLevel]);
 
-    if (gSpeciesInfo[wildMons[headerId][pikeMonId].species].abilities[1])
+    if (gSpeciesInfo[wildMons[pikeMonId].species].abilities[1])
         abilityNum = Random() % 2;
     else
         abilityNum = 0;
     SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &abilityNum);
     for (i = 0; i < MAX_MON_MOVES; i++)
-        SetMonMoveSlot(&gEnemyParty[0], wildMons[headerId][pikeMonId].moves[i], i);
+        SetMonMoveSlot(&gEnemyParty[0], wildMons[pikeMonId].moves[i], i);
 
     CalculateMonStats(&gEnemyParty[0]);
     return TRUE;

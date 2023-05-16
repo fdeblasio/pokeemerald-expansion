@@ -11282,7 +11282,7 @@
         {
           "base_label": "gBattlePike_1",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 5,
             "mons": [
               {
                 "min_level": 5,
@@ -11292,27 +11292,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_MILOTIC"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_DUSCLOPS"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_DUSCLOPS"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_DUSCLOPS"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_DUSCLOPS"
+                "species": "SPECIES_DRAGONAIR"
               },
               {
                 "min_level": 5,
@@ -11322,22 +11302,42 @@
               {
                 "min_level": 5,
                 "max_level": 5,
+                "species": "SPECIES_DRAGONAIR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
                 "species": "SPECIES_MILOTIC"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_DUSCLOPS"
+                "species": "SPECIES_MILOTIC"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_DUSCLOPS"
+                "species": "SPECIES_MILOTIC"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_MILOTIC"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_SEVIPER"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DRAGONAIR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_MILOTIC"
               },
               {
                 "min_level": 5,
@@ -11350,7 +11350,7 @@
         {
           "base_label": "gBattlePike_2",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 5,
             "mons": [
               {
                 "min_level": 5,
@@ -11360,27 +11360,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_MILOTIC"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ELECTRODE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ELECTRODE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ELECTRODE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ELECTRODE"
+                "species": "SPECIES_DRAGONAIR"
               },
               {
                 "min_level": 5,
@@ -11390,17 +11370,27 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_MILOTIC"
+                "species": "SPECIES_DRAGONAIR"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_ELECTRODE"
+                "species": "SPECIES_SANDACONDA"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_ELECTRODE"
+                "species": "SPECIES_SANDACONDA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SANDACONDA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SANDACONDA"
               },
               {
                 "min_level": 5,
@@ -11410,7 +11400,17 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_MILOTIC"
+                "species": "SPECIES_DRAGONAIR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SANDACONDA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SANDACONDA"
               }
             ]
           }
@@ -11418,7 +11418,7 @@
         {
           "base_label": "gBattlePike_3",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 5,
             "mons": [
               {
                 "min_level": 5,
@@ -11428,27 +11428,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_MILOTIC"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BRELOOM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BRELOOM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BRELOOM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BRELOOM"
+                "species": "SPECIES_DRAGONAIR"
               },
               {
                 "min_level": 5,
@@ -11458,17 +11438,27 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_MILOTIC"
+                "species": "SPECIES_DRAGONAIR"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BRELOOM"
+                "species": "SPECIES_SERPERIOR"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BRELOOM"
+                "species": "SPECIES_SERPERIOR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SERPERIOR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SERPERIOR"
               },
               {
                 "min_level": 5,
@@ -11478,7 +11468,17 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_MILOTIC"
+                "species": "SPECIES_DRAGONAIR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SERPERIOR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SERPERIOR"
               }
             ]
           }
@@ -11486,7 +11486,7 @@
         {
           "base_label": "gBattlePike_4",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 5,
             "mons": [
               {
                 "min_level": 5,
@@ -11496,27 +11496,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_MILOTIC"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_WOBBUFFET"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_WOBBUFFET"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_WOBBUFFET"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_WOBBUFFET"
+                "species": "SPECIES_DRAGONAIR"
               },
               {
                 "min_level": 5,
@@ -11526,17 +11506,27 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_MILOTIC"
+                "species": "SPECIES_DRAGONAIR"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_WOBBUFFET"
+                "species": "SPECIES_STEELIX"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_WOBBUFFET"
+                "species": "SPECIES_STEELIX"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_STEELIX"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_STEELIX"
               },
               {
                 "min_level": 5,
@@ -11546,7 +11536,17 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_MILOTIC"
+                "species": "SPECIES_DRAGONAIR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_STEELIX"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_STEELIX"
               }
             ]
           }

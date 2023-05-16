@@ -226,19 +226,19 @@ BattleFrontier_Lounge2_Text_PikeQueenSilverMons::
 	.string "before?\p"
 	.string "When she's in a good mood, they say\n"
 	.string "she uses these three Pokémon:\p"
-	.string "A Poison-type Fang Snake Pokémon,\n"
-	.string "a Bug & Rock Mold Pokémon,\l"
-	.string "and a Water-type Tender Pokémon.$"
+	.string "A Dragon-type Dragon Pokémon,\n"
+	.string "a Water-type Tender Pokémon,\l"
+	.string "and a Poison-type Fang Snake Pokémon.$"
 
 BattleFrontier_Lounge2_Text_PikeQueenGoldMons::
 	.string "Have you battled the Pike Queen\n"
 	.string "when she's serious?\p"
 	.string "When she's seriously annoyed, they say\n"
 	.string "she uses these three Pokémon:\p"
-	.string "A Poison-type Fang Snake Pokémon,\n"
-	.string "a Steel & Ground Iron Snake Pokémon,\l"
-	.string "and a Water- & Flying-type Atrocious\l"
-	.string "Pokémon.$"
+	.string "A Steel & Ground Iron Snake Pokémon,\n"
+	.string "a Water- & Flying-type Atrocious\l"
+	.string "Pokémon, and a Poison-type Fang\l"
+	.string "Snake Pokémon.$"
 
 BattleFrontier_Lounge2_Text_ArenaTycoonIsThere::
 	.string "Bet you didn't know this!\p"

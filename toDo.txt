@@ -110,7 +110,7 @@ Battle Frontier
     - See if it's possible to give item PC and decoration PC have more room
 - Implement Pokedex Plus (https://www.pokecommunity.com/showthread.php?t=441996)
 - Figure out ?????? showing up at end of Dex
-- Revamp EVs to give 1 stat per EV and cap out at 63
+- Revamp EVs to give 1 stat per EV and cap out at 63 (CALC_STAT)
 - Remove IVs? Maybe make binary for either 0 or 31 added to stat
     - Would need to figure out Hidden Power
 - Fire Blast/Hydro Pump/Stone Edge accurate in respective weathers?

@@ -12352,9 +12352,9 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Noland[] = {
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Lucy[] = {
     {
-    .iv = 0,
-    .lvl = 5,
-    .species = SPECIES_BELDUM,
+    .iv = 255,
+    .lvl = 60,
+    .species = SPECIES_SEVIPER,
     }
 };
 

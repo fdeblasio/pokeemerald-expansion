@@ -9,6 +9,7 @@ $1\L$2
     - Seems to happen after trainer battles?
     -This happens to held items in the Battle Pike as well
 - Battle Pike loops through rooms 1-14 and never advances to 15
+    - Works fine before any Battle Frontier changes were made
 
 ## To Do Soon (1.1.0)
 Double-check Mirage Island

@@ -90,7 +90,7 @@ static const u8 sFrontierBrainStreakAppearances[NUM_FRONTIER_FACILITIES][4] =
     [FRONTIER_FACILITY_PALACE]  = {14, 28, 21, 1},
     [FRONTIER_FACILITY_ARENA]   = {14, 28, 21, 1},
     [FRONTIER_FACILITY_FACTORY] = {14, 28, 21, 1},
-    [FRONTIER_FACILITY_PIKE]    = {14, 28, 21, 1},
+    [FRONTIER_FACILITY_PIKE]    = {28, 56, 42, 1},
     [FRONTIER_FACILITY_PYRAMID] = {14, 28, 21, 0},
 };
 

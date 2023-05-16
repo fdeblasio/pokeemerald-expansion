@@ -378,13 +378,13 @@ static const u16 sNPCSpeeches[][EASY_CHAT_BATTLE_WORDS_COUNT] =
 // Table duplicated from frontier_util, only Battle Pike entry used
 static const u8 sFrontierBrainStreakAppearances[NUM_FRONTIER_FACILITIES][4] =
 {
-    [FRONTIER_FACILITY_TOWER]   = {35,  70, 35, 1},
-    [FRONTIER_FACILITY_DOME]    = { 4,   9,  5, 0},
-    [FRONTIER_FACILITY_PALACE]  = {21,  42, 21, 1},
-    [FRONTIER_FACILITY_ARENA]   = {28,  56, 28, 1},
-    [FRONTIER_FACILITY_FACTORY] = {21,  42, 21, 1},
-    [FRONTIER_FACILITY_PIKE]    = {28, 140, 56, 1},
-    [FRONTIER_FACILITY_PYRAMID] = {21,  70, 35, 0},
+    [FRONTIER_FACILITY_TOWER]   = {35, 70, 35, 1},
+    [FRONTIER_FACILITY_DOME]    = { 4,  9,  5, 0},
+    [FRONTIER_FACILITY_PALACE]  = {21, 42, 21, 1},
+    [FRONTIER_FACILITY_ARENA]   = {28, 56, 28, 1},
+    [FRONTIER_FACILITY_FACTORY] = {21, 42, 21, 1},
+    [FRONTIER_FACILITY_PIKE]    = {28, 56, 42, 1},
+    [FRONTIER_FACILITY_PYRAMID] = {21, 70, 35, 0},
 };
 
 static void (* const sBattlePikeFunctions[])(void) =

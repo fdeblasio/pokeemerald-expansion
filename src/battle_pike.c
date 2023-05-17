@@ -90,7 +90,6 @@ static bool8 StatusInflictionFadeOut(struct Task *task);
 static bool8 StatusInflictionFadeIn(struct Task *task);
 
 // Const rom data.
-//Arbok, Onix, Gyarados, Dragonair, Huntail, Gorebyss, Drampa
 static const struct PikeWildMon sBattlePike_Mons1[] =
 {
     {

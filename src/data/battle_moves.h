@@ -12689,6 +12689,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_NONE,
     },
+
     [MOVE_ESPER_WING] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_9

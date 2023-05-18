@@ -8,8 +8,6 @@ $1\L$2
 - Items in the Battle Pyramid's Battle Bag/held items in the Battle Pike are turning into Poke Balls
     - Seems to happen after trainer battles?
     - This occurs even with the Battle Frontier changes reverted
-- Battle Pike loops through rooms 1-14 and never advances to 15
-    - Works fine before any Battle Frontier changes were made
 
 ## To Do Soon (1.1.0)
 Double-check Mirage Island
@@ -200,8 +198,12 @@ Battle Frontier
 - Brendan/May/Steven rematches?
 - Add Pokemon with dolls? (Togepi, Smoochum, Clefairy, Lapras, Snorlax, Venusaur, Charizard, Blastoise)
 - Make seperate Dex for post-game (similar to SwSh DLC dexes)?
+- Contests overhaul
 - Frontier overhaul:
-    - Give BP after every battle
+    - Give BP after every battle?
+    - Do better with saving/resting
+    - Remove level 50? Or remove Open Level but lower Pokemon to level 50 if over?
+    - See if Poke Ball issue no longer occurs on a clean save
     - Edit Battle Frontier messages for Fairy?
     - Add new Pokemon to Frontier mons?
     - Make teams more accurate to trainer classes?
@@ -209,5 +211,3 @@ Battle Frontier
         - Apprentices
     - Battle Factory
         - Rentals
-    - Battle Pyramid
-        - Wild Pokemon

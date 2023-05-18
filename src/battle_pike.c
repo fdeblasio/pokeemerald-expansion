@@ -446,7 +446,7 @@ static bool8 (* const sStatusInflictionScreenFlashFuncs[])(struct Task *) =
     StatusInflictionFadeOut, StatusInflictionFadeIn
 };
 
-static const u32 sWinStreakFlags[] = {STREAK_PIKE_50, STREAK_PIKE_OPEN};
+static const u32 sWinStreakFlags[] = {STREAK_PIKE_OPEN, STREAK_PIKE_50};
 
 // code
 void CallBattlePikeFunction(void)

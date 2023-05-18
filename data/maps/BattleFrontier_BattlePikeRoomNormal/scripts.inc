@@ -805,7 +805,7 @@ BattleFrontier_BattlePikeRoomNormal_Text_NowComeOn:
 
 BattleFrontier_BattlePikeRoomNormal_Text_LucyFrontierPass:
 	.string "Lucy: … … … … … …\p"
-	.string "…FRONTIER Pass…$"
+	.string "…Frontier Pass…$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_LuckSymbolTookGoldenShine:
 	.string "The Luck Symbol took on\n"

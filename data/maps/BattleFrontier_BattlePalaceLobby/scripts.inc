@@ -163,7 +163,6 @@ BattleFrontier_BattlePalaceLobby_EventScript_TryEnterChallenge::
 	frontier_set FRONTIER_DATA_PAUSED, FALSE
 	special LoadPlayerParty
 	closemessage
-	delay 2
 	setvar VAR_TEMP_0, 255
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattlePalaceLobby_EventScript_CancelChallengeSaveFailed
 

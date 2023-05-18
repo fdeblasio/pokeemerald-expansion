@@ -53,7 +53,7 @@ BattleFrontier_BattlePikeThreePathRoom_EventScript_Attendant::
 	frontier_get FRONTIER_DATA_BATTLE_NUM  @ Room number
 	buffernumberstring STR_VAR_1, VAR_RESULT
 	pike_get PIKE_DATA_WIN_STREAK
-	buffernumberstring STR_VAR_2, (VAR_RESULT + 1)
+	buffernumberstring STR_VAR_2, VAR_RESULT
 	lock
 	faceplayer
 	msgbox BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom, MSGBOX_DEFAULT

@@ -200,6 +200,9 @@ Battle Frontier
 - Make seperate Dex for post-game (similar to SwSh DLC dexes)?
 - Contests overhaul
 - Frontier overhaul:
+    - Pokemon
+        - EVs
+        - Moves
     - Give BP after every battle?
     - Do better with saving/resting
     - Remove level 50? Or remove Open Level but lower Pokemon to level 50 if over?
@@ -210,4 +213,5 @@ Battle Frontier
     - Battle Tower
         - Apprentices
     - Battle Factory
-        - Rentals
+        - Add new moves to moveStyles (sRequiredMoveCounts)
+        - Don't have both Open Level and Level 50 since the Pokemon are rentals anyways?

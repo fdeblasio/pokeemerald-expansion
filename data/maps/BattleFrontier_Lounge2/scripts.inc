@@ -253,18 +253,19 @@ BattleFrontier_Lounge2_Text_ArenaTycoonSilverMons::
 	.string "When she's assessing the foe's ability,\n"
 	.string "she supposedly uses these Pokémon:\p"
 	.string "A Bug & Fighting Single Horn Pokémon,\n"
-	.string "a Dark-type Moonlight Pokémon,\l"
-	.string "and a Bug & Ghost Shed Pokémon.$"
+	.string "a Bug & Ghost Shed Pokémon,\l"
+	.string "and a Fighting- & Psychic-type\l"
+	.string "Meditate Pokémon.$"
 
 BattleFrontier_Lounge2_Text_ArenaTycoonGoldMons::
 	.string "Have you battled the Arena Tycoon\n"
 	.string "when she's serious?\p"
 	.string "When she battles for keeps,\n"
 	.string "she supposedly uses these Pokémon:\p"
-	.string "A Dark-type Moonlight Pokémon,\n"
-	.string "a Ghost & Poison Shadow Pokémon\l"
-	.string "and a Grass- & Fighting-type\l"
-	.string "Mushroom Pokémon.$"
+	.string "A Fighting-type Martial Arts Pokémon,\n"
+	.string "a Grass- & Fighting-type Mushroom\l"
+	.string "Pokémon, and a Fighting- &\l"
+	.string "Psychic-type Meditate Pokémon.$"
 
 BattleFrontier_Lounge2_Text_PalaceMavenIsThere::
 	.string "Bet you didn't know this!\p"

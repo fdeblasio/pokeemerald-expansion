@@ -17,8 +17,6 @@ Steven
 Battle Frontier
     - Remove saving (Common_EventScript_SaveGame)
     - Make pausing challenge not a soft save (CHALLENGE_STATUS_SAVING)
-    - Make retiring not reset streak
-    - Perhaps combine the two to take a pause like in SwSh
 
 ## To Do (1.2.0)
 - https://www.pokecommunity.com/showthread.php?t=416647&page=1
@@ -72,8 +70,8 @@ Battle Frontier
 - Pokemon in Frontier/Trainer Hill are registered in Dex
 
 ## Second, more advanced run (2.0.0)
+- merge in 1.5
 - Switch to mGBA?
-- make clean?
 - When doing new savefile, remove `u32 tmShopFlags[4];` from include/global.h
 - More save space editing
 - Edit moves that work in field
@@ -210,6 +208,9 @@ Battle Frontier
     - Edit Battle Frontier messages for Fairy?
     - Add new Pokemon to Frontier mons?
     - Make teams more accurate to trainer classes?
+    - Make resting not a soft save (CHALLENGE_STATUS_SAVING)
+    - Make retiring not reset streak
+        - Perhaps combine the two to take a pause like in SwSh
     - Battle Tower
         - Apprentices
     - Battle Factory

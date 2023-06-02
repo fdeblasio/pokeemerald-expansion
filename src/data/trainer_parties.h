@@ -12329,16 +12329,31 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Spenser[] = {
     },
     {
     .iv = 255,
-    .lvl = 50,
+    .lvl = 70,
     .species = SPECIES_KYOGRE,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Greta[] = {
     {
-    .iv = 0,
-    .lvl = 5,
-    .species = SPECIES_BELDUM,
+    .iv = 255,
+    .lvl = 50,
+    .species = SPECIES_HERACROSS,
+    },
+    {
+    .iv = 255,
+    .lvl = 50,
+    .species = SPECIES_MIENSHAO,
+    },
+    {
+    .iv = 255,
+    .lvl = 50,
+    .species = SPECIES_BRELOOM,
+    },
+    {
+    .iv = 255,
+    .lvl = 50,
+    .species = SPECIES_MEDICHAM,
     }
 };
 

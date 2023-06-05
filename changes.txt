@@ -227,6 +227,9 @@ Pokémon:
     Heracross:
         Catch rate: 45->90
 
+    Granbull (not available in main game):
+        Hidden Ability: Rattled->Strong Jaw
+
     Qwilfish/Hisuian Qwilfish/Overqwil (not in main game):
         Learns Poison Tail by level up
 

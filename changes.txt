@@ -81,6 +81,8 @@ Moves:
             Rock Throw
             Rock Tomb
             Rock Slide
+        Electric:
+            Thunder Cage
         Fire:
             Blaze Kick
         Water:
@@ -93,6 +95,7 @@ Moves:
         Psychic:
             Zen Headbutt
             Psyshield Bash
+            Mystical Power
         Steel:
             Metal Claw
             Steel Wing
@@ -133,6 +136,9 @@ Pokémon:
 
     Golbat:
         Can also evolve at level 33
+
+    Cloyster (not in main game):
+        Learns Body Press by TM
 
     Gastly/Haunter/Gengar (not in main game):
         Type: Ghost/Poison->Ghost
@@ -203,6 +209,9 @@ Pokémon:
 
     Aerodactyl:
         Learns Double-Edge, Head Smash, and Brave Bird by level up
+
+    Zapdos:
+        Learns Air Slash by TM
 
     Azurill:
         Can also evolve at level 10
@@ -400,3 +409,6 @@ Pokémon:
 
     Shieldon/Bastiodon (not in main game):
         Received Rock Head as a second ability
+
+    Dragapult (not in main game):
+        Learns Shadow Claw by TM

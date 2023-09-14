@@ -69,6 +69,7 @@ Moves:
             Rolling Kick
             Submission
             Sky Uppercut
+            Flying Press
         Flying:
             Air Cutter
             Air Slash
@@ -81,6 +82,7 @@ Moves:
             Rock Throw
             Rock Tomb
             Rock Slide
+            Diamond Storm
         Electric:
             Thunder Cage
         Fire:
@@ -92,6 +94,7 @@ Moves:
             Crabhammer
         Ice:
             Icicle Crash
+            Mountain Gale
         Psychic:
             Zen Headbutt
             Psyshield Bash
@@ -318,6 +321,9 @@ Pokémon:
 
     Zangoose:
         Learns Cut by HM
+        Immunity->Poison Heal
+        Received Sharpness as a second ability
+        Toxic Boost->Guts
         Also in Human-Like Egg Group
         HP: 73->75
         Atk: 115->125

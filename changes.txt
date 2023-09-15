@@ -115,7 +115,7 @@ Pokémon:
         Movesets a combination of Gens 7-9
             Typically this means they have their latest moveset plus most moves from their Gen 7 moveset that have been removed
                 Natural Gift, Lucky Chant, Wring Out, and Synchronoise have been removed
-        Other moveset changes will be noted
+        Other moveset changes will be noted (movesets are based on their SwSh movesets, so some noted additions may be in newere games. For example, Magcargo can learn Power Gem in SV but its addition here is still noted)
         If a Pokémon can evolve by holding/being traded with an item, it now can evolve from that item being used
         Catch rate is a minimum of 30 for legendaries/mythicals and 45 for the rest
 
@@ -247,6 +247,10 @@ Pokémon:
 
     Slugma:
         Now evolves at level 32
+
+    Magcargo:
+        Learns Body Press by TM
+        Learns Power Gem by TM
 
     Delibird (not in main game):
         Atk: 55->75

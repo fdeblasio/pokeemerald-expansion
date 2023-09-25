@@ -292,6 +292,9 @@ Pokémon:
     Makuhita:
         Catch rate: 180->220
 
+    Hariyama:
+        Learns Drain Punch by TM
+
     Delcatty:
         Gets Swift via level up
 
@@ -362,8 +365,14 @@ Pokémon:
         Learns Overheat by TM
         Learns Surf by HM
 
-    Duskull/Dusclops/Dusknoir:
+    Duskull/Dusclops:
         Learns Spite by breeding
+
+    Dusknoir:
+        Learns Spite by breeding
+        Learns Drain Punch by TM
+        Learns Leech Life by TM
+        Gets Iron Fist as second Ability
 
     Tropius:
         HP: 99->100

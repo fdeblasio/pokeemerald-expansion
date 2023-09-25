@@ -133,7 +133,7 @@ Battle Frontier
 - Make list of all Magma/Aqua Pokemon and make them spread more evenly across the Grunts
     - Maybe Admins rely less on Mightyena/Leaders' signature
 - Add in Hoenn Dex regionals?
-    - Sun/Shiny Stone for Alolan Raichu
+    - Sun/Shiny Stone for Alolan Raichu (or use RHH 1.5's 0 item evo)
     - Alolan Sandshrew/Vulpix at Shoal Cave
     - Alolan Muk
     - Shiny/Dawn Stone for Galarian Weezing
@@ -147,6 +147,7 @@ Battle Frontier
     - Update level up/learnable movesets for them
     - Sandslash, Ninetales, Cursola, and maybe Obstagoon can be used to diversify the Elite Four teams
 - Add Farigiraf to Hoenn Dex once implemented
+- Add Ice Spinner as a TM (and maybe give to Beartic/Mamoswine/other Ice types) once implemented?
 - Add 3 other Regis?
     - Add Regigigas to Sealed Chamber?
     - Regieleki near New Mauville?

@@ -12735,7 +12735,7 @@ static void Cmd_mimicattackcopy(void)
 static bool32 InvalidMetronomeMove(u32 move)
 {
     return gBattleMoves[move].effect == EFFECT_PLACEHOLDER
-        || sForbiddenMoves[move] & FORBIDDEN_METRONOME;
+        || gBattleMoves[move].metronomeBanned;
 }
 
 static void Cmd_metronome(void)
@@ -12758,20 +12758,11 @@ static void Cmd_metronome(void)
     u32 moveCount = MOVES_COUNT_GEN3;
 #endif
 
-    while (TRUE)
-    {
-        gCurrentMove = (Random() % (moveCount - 1)) + 1;
-        if (gBattleMoves[gCurrentMove].effect == EFFECT_PLACEHOLDER)
-            continue;
-
-        if (!gBattleMoves[gCurrentMove].metronomeBanned)
-        {
-            gHitMarker &= ~HITMARKER_ATTACKSTRING_PRINTED;
-            gBattlescriptCurrInstr = gBattleScriptsForMoveEffects[gBattleMoves[gCurrentMove].effect];
-            gBattlerTarget = GetMoveTarget(gCurrentMove, NO_TARGET_OVERRIDE);
-            return;
-        }
-    }
+    gCurrentMove = RandomUniformExcept(RNG_METRONOME, 1, moveCount - 1, InvalidMetronomeMove);
+    gHitMarker &= ~HITMARKER_ATTACKSTRING_PRINTED;
+    SetAtkCancellerForCalledMove();
+    gBattlescriptCurrInstr = gBattleScriptsForMoveEffects[gBattleMoves[gCurrentMove].effect];
+    gBattlerTarget = GetMoveTarget(gCurrentMove, NO_TARGET_OVERRIDE);
 }
 
 static void Cmd_dmgtolevel(void)

@@ -218,6 +218,7 @@ void CopyMonLevelAndBaseStatsToBattleMon(u32 battler, struct Pokemon *mon);
 void CopyMonAbilityAndTypesToBattleMon(u32 battler, struct Pokemon *mon);
 void RecalcBattlerStats(u32 battler, struct Pokemon *mon);
 void MulModifier(u16 *modifier, u16 val);
+bool32 IsAlly(u32 battlerAtk, u32 battlerDef);
 
 // Ability checks
 bool32 IsRolePlayBannedAbilityAtk(u16 ability);

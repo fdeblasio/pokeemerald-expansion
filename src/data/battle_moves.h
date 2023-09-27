@@ -63,7 +63,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_NONE,
         .makesContact = TRUE,
-        .twoStrikes = TRUE,
+        .strikeCount = 2,
     },
 
     [MOVE_COMET_PUNCH] =
@@ -429,7 +429,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_NONE,
         .makesContact = TRUE,
-        .twoStrikes = TRUE,
+        .strikeCount = 2,
     },
 
     [MOVE_MEGA_KICK] =
@@ -717,7 +717,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .zMoveEffect = Z_EFFECT_NONE,
         .sheerForceBoost = TRUE,
         .ignoresKingsRock = B_UPDATED_MOVE_FLAGS < GEN_5, // && B_UPDATED_MOVE_FLAGS > GEN_2
-        .twoStrikes = TRUE,
+        .strikeCount = 2,
     },
 
     [MOVE_PIN_MISSILE] =
@@ -2681,7 +2681,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .priority = 0,
         .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_NONE,
-        .twoStrikes = TRUE,
+        .strikeCount = 2,
     },
 
     [MOVE_REST] =
@@ -7763,7 +7763,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_NONE,
         .makesContact = TRUE,
-        .twoStrikes = TRUE,
+        .strikeCount = 2,
     },
 
     [MOVE_ROAR_OF_TIME] =
@@ -8926,7 +8926,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_NONE,
         .makesContact = TRUE,
-        .twoStrikes = TRUE,
+        .strikeCount = 2,
     },
 
     [MOVE_HEART_STAMP] =
@@ -9154,7 +9154,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_NONE,
         .makesContact = TRUE,
-        .twoStrikes = TRUE,
+        .strikeCount = 2,
     },
 
     [MOVE_SEARING_SHOT] =
@@ -11536,7 +11536,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .makesContact = TRUE,
         .punchingMove = TRUE,
         .sheerForceBoost = TRUE,
-        .twoStrikes = TRUE,
+        .strikeCount = 2,
         .minimizeDoubleDamage = B_UPDATED_MOVE_FLAGS < GEN_8,
         .metronomeBanned = TRUE,
     },
@@ -11664,7 +11664,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .priority = 0,
         .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_NONE,
-        .twoStrikes = TRUE,
+        .strikeCount = 2,
     },
 
     [MOVE_TEATIME] =
@@ -12368,7 +12368,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_NONE,
         .makesContact = TRUE,
-        .twoStrikes = TRUE,
+        .strikeCount = 2,
     },
 
     [MOVE_SCORCHING_SANDS] =
@@ -12437,7 +12437,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .zMoveEffect = Z_EFFECT_NONE,
         .makesContact = TRUE,
         .punchingMove = TRUE,
-        .threeStrikes = TRUE,
+        .strikeCount = 3,
         .metronomeBanned = TRUE,
     },
 
@@ -13237,7 +13237,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_NONE,
         .makesContact = TRUE,
-        .threeStrikes = TRUE,
+        .strikeCount = 3,
     },
 
     [MOVE_MORTAL_SPIN] =
@@ -13562,7 +13562,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .priority = 0,
         .split = SPLIT_SPECIAL,
         .zMoveEffect = Z_EFFECT_NONE,
-        .twoStrikes = TRUE,
+        .strikeCount = 2,
         .metronomeBanned = TRUE,
     },
 

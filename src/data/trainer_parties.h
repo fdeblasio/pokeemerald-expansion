@@ -12448,7 +12448,6 @@ static const struct TrainerMon sParty_Thalia4[] = {
 
 static const struct TrainerMon sParty_Thalia5[] = {
     {
-<<<<<<< HEAD
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 41,
     .species = SPECIES_LUVDISC,

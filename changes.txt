@@ -140,6 +140,9 @@ Pokémon:
     Golbat:
         Can also evolve at level 33
 
+    Golem:
+        Learns Body Press by TM
+
     Cloyster (not in main game):
         Learns Body Press by TM
 
@@ -295,6 +298,9 @@ Pokémon:
     Hariyama:
         Learns Drain Punch by TM
 
+    Nosepass/Probopass:
+        Learn Body Press by TM
+
     Delcatty:
         Gets Swift via level up
 
@@ -422,6 +428,9 @@ Pokémon:
     Rayquaza:
         Learns Fly at level 1 instead of level 63
         Learns Dragon Ascent at level 63 instead of level 1
+
+    Infernape (not in main game):
+        Learns Aura Sphere by TM
 
     Cranidos/Rampardos (not in main game):
         Received Rock Head as a second ability

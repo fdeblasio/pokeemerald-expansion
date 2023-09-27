@@ -747,7 +747,7 @@ static const struct LevelUpMove sVulpixLevelUpLearnset[] = {
     LEVEL_UP_MOVE(47, MOVE_CAPTIVATE),
     LEVEL_UP_MOVE(48, MOVE_INFERNO),
     LEVEL_UP_MOVE(52, MOVE_GRUDGE),
-    LEVEL_UP_MOVE(56, MOVE_FIRE_BLAST),
+    LEVEL_UP_MOVE(52, MOVE_FIRE_BLAST),
     LEVEL_UP_END
 };
 

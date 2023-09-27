@@ -9,7 +9,7 @@ $1\L$2
     - Seems to happen after trainer battles?
     - This occurs even with the Battle Frontier changes reverted
 
-## To Do (1.2.0)
+## Second, more advanced run (2.0.0)
 Double-check Mirage Island
 Combine changes and README?
     Include more changes, even if general like Battle Frontier edits
@@ -65,8 +65,6 @@ Battle Frontier
 - Remove unused code
 - Pokemon in Frontier/Trainer Hill should be registered in Dex
 - Add Scarlet/Violet move additions
-
-## Second, more advanced run (2.0.0)
 - merge in 1.5+
 - Switch to mGBA?
 - When doing new savefile, remove `u32 tmShopFlags[4];` from include/global.h

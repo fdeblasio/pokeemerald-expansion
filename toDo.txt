@@ -15,7 +15,6 @@ Combine changes and README?
     Include more changes, even if general like Battle Frontier edits
 Steven
 Battle Frontier
-    - Remove saving (Common_EventScript_SaveGame)
     - Make pausing challenge not a soft save (CHALLENGE_STATUS_SAVING)
 
 ## To Do (1.2.0)
@@ -27,7 +26,6 @@ Battle Frontier
 - https://www.pokecommunity.com/showpost.php?p=10127351&postcount=47
 - https://www.pokecommunity.com/showpost.php?p=10167016&postcount=83
 - Look at new animations for moves (in battle.h)
-- Gallade Sharpness (maybe wait for master/upcoming update)
 - Overworld sprites to match trainer sprites (for example, giving Youngsters yellow shirts, girl tubers a yellow tube, Rangers red clothes, Dragon Tamers capes and correct hair color)
 - Improve Pokemon overworld sprites
 - Try to find Bolts foreground of Walda PC

@@ -65,9 +65,7 @@ Battle Frontier
 - Remove unused code
 - Pokemon in Frontier/Trainer Hill should be registered in Dex
 - Add Scarlet/Violet move additions
-- merge in 1.5+
-- Switch to mGBA?
-- When doing new savefile, remove `u32 tmShopFlags[4];` from include/global.h
+- merge in 1.6
 - More save space editing
 - Edit moves that work in field
     - Maybe edit so instead of "if has move" to "if can learn move" (might not be simple since it's .inc and not C)

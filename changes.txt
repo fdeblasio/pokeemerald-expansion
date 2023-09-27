@@ -9,6 +9,7 @@ Made rapids easier to navigate so that only one trip is needed to get all items/
 Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)
 Any PP Ups or Maxes used are now permanent for that slot, even if the move is replaced
 Sacred Ash now works in battles although it only revives one Pokémon
+Pokémon that evolve with an item at day or night now can evolve at any time
 
 Frontier Brains have updated teams
 Battle Pyramid wild Pokémon have been updated

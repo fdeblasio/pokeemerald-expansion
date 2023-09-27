@@ -2887,6 +2887,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_NONE,
         .makesContact = TRUE,
+        .strikeCount = 3,
     },
 
     [MOVE_THIEF] =
@@ -12353,6 +12354,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_NONE,
         .makesContact = TRUE,
+        .strikeCount = 3,
     },
 
     [MOVE_DUAL_WINGBEAT] =
@@ -13148,7 +13150,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
 
     [MOVE_POPULATION_BOMB] =
     {
-        .effect = EFFECT_PLACEHOLDER, // EFFECT_MULTI_HIT maybe?
+        .effect = EFFECT_POPULATION_BOMB,
         .power = 20,
         .type = TYPE_NORMAL,
         .accuracy = 90,
@@ -13161,6 +13163,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .makesContact = TRUE,
         .slicingMove = TRUE,
         .metronomeBanned = TRUE,
+        .strikeCount = 10,
     },
 
     [MOVE_ICE_SPINNER] =
@@ -13242,12 +13245,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
 
     [MOVE_MORTAL_SPIN] =
     {
-        .effect = EFFECT_PLACEHOLDER, // EFFECT_MORTAL_SPIN
+        .effect = EFFECT_MORTAL_SPIN,
         .power = 30,
         .type = TYPE_POISON,
         .accuracy = 100,
         .pp = 15,
-        .secondaryEffectChance = 0,
+        .secondaryEffectChance = 100,
         .target = MOVE_TARGET_BOTH,
         .priority = 0,
         .split = SPLIT_PHYSICAL,

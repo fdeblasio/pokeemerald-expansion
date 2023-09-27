@@ -151,44 +151,45 @@ TM100_MOONBLAST - Lilycove TM Shop
 
 
 Mainland Tutors:
-Double-Edge
-Dynamic Punch
-Explosion
-Fury Cutter
-Metronome
-Mimic
-Rollout
-Sleep Talk
-Substitute
-Swagger
+    Double-Edge
+    Dynamic Punch
+    Explosion
+    Fury Cutter
+    Metronome
+    Mimic
+    Rollout
+    Sleep Talk
+    Substitute
+    Swagger
 
 Battle Frontier Move Tutors:
-Rising Voltage
-Grassy Glide
-Expanding Force
-Zen Headbutt
-Scald
-Psycho Cut
-Lunge
-Throat Chop
-Solar Blade
-Dual Wingbeat
-Scorching Sands
-Knock Off
-Mega Punch
-Mega MOVE_DOUBLE_KICK
+    Rising Voltage
+    Grassy Glide
+    Expanding Force
+    Zen Headbutt
+    Scald
+    Psycho Cut
+    Lunge
+    Throat Chop
+    Solar Blade
+    Dual Wingbeat
+    Scorching Sands
+    Knock Off
+    Mega Punch
+    Mega Kick
 
-Electric Terrain
-Grassy Terrain
-Misty Terrain
-Psychic Terrain
-Iron Defense
-Nasty Plot
-Dragon Dance
-Defense Curl
-Endure
-Icy Wind
-Swift
-Seismic Toss
-Counter
-Dream Eater
+Future TMs/Tutors:
+    Electric Terrain
+    Grassy Terrain
+    Misty Terrain
+    Psychic Terrain
+    Iron Defense
+    Nasty Plot
+    Dragon Dance
+    Defense Curl
+    Endure
+    Icy Wind
+    Swift
+    Seismic Toss
+    Counter
+    Dream Eater

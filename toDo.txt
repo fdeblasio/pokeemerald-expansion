@@ -9,16 +9,13 @@ $1\L$2
     - Seems to happen after trainer battles?
     - This occurs even with the Battle Frontier changes reverted
 
-## To Do Soon (1.1.0)
+## To Do (1.2.0)
 Double-check Mirage Island
 Combine changes and README?
     Include more changes, even if general like Battle Frontier edits
-Steven
 Battle Frontier
     - Make pausing challenge not a soft save (CHALLENGE_STATUS_SAVING)
     - Update rest of apprentice teams
-
-## To Do (1.2.0)
 - https://www.pokecommunity.com/showthread.php?t=416647&page=1
 - https://github.com/pret/pokeemerald/wiki/Tutorials
 - https://www.pokecommunity.com/showpost.php?p=10378278
@@ -66,7 +63,8 @@ Battle Frontier
 - Stop daycare from deleting moves
 - Add relearning moves to PC?
 - Remove unused code
-- Pokemon in Frontier/Trainer Hill are registered in Dex
+- Pokemon in Frontier/Trainer Hill should be registered in Dex
+- Add Scarlet/Violet move additions
 
 ## Second, more advanced run (2.0.0)
 - merge in 1.5+

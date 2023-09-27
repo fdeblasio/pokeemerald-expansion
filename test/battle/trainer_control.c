@@ -11,20 +11,21 @@
 #include "constants/battle.h"
 
 
-static const struct TrainerMonCustomized sTestParty1[] =
+static const struct TrainerMon sTestParty1[] =
 {
     {
-        .lvl = 67,
         .species = SPECIES_WOBBUFFET,
+        .ball = ITEM_MASTER_BALL,
         .ability = ABILITY_TELEPATHY,
-        .nature = TRAINER_PARTY_NATURE(NATURE_HASTY),
-        .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 4, 0),
-        .iv = TRAINER_PARTY_IVS(25, 26, 27, 28, 29, 30),
-        .moves = {MOVE_AIR_SLASH, MOVE_BARRIER, MOVE_SOLAR_BEAM, MOVE_EXPLOSION},
+        .friendship = 42,
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_ASSAULT_VEST,
-        .ball = ITEM_MASTER_BALL,
         .isShiny = TRUE,
+        .iv = TRAINER_PARTY_IVS(25,26,27,28,29,30),
+        .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 4, 0),
+        .lvl = 67,
+        .moves = {MOVE_AIR_SLASH, MOVE_BARRIER, MOVE_SOLAR_BEAM, MOVE_EXPLOSION},
+        .nature = TRAINER_PARTY_NATURE(NATURE_HASTY),
         .nickname = COMPOUND_STRING("Bubbles")
     },
     {
@@ -34,28 +35,10 @@ static const struct TrainerMonCustomized sTestParty1[] =
     },
 };
 
-static const struct TrainerMonNoItemDefaultMoves sTestParty2[] =
-{
-    {
-        .species = SPECIES_WOBBUFFET,
-        .lvl = 5,
-    },
-    {
-        .species = SPECIES_WOBBUFFET,
-        .lvl = 6,
-    }
-};
-
 static const struct Trainer sTestTrainer1 =
 {
     .trainerName = _("Test1"),
-    .party = EVERYTHING_CUSTOMIZED(sTestParty1),
-};
-
-static const struct Trainer sTestTrainer2 =
-{
-    .trainerName = _("Test2"),
-    .party = NO_ITEM_DEFAULT_MOVES(sTestParty2),
+    .party = TRAINER_PARTY(sTestParty1),
 };
 
 TEST("CreateNPCTrainerPartyForTrainer generates customized Pokémon")
@@ -133,7 +116,7 @@ TEST("CreateNPCTrainerPartyForTrainer generates customized Pokémon")
 TEST("CreateNPCTrainerPartyForTrainer generates different personalities for different mons")
 {
     struct Pokemon *testParty = Alloc(6 * sizeof(struct Pokemon));
-    CreateNPCTrainerPartyFromTrainer(testParty, &sTestTrainer2, TRUE, BATTLE_TYPE_TRAINER);
+    CreateNPCTrainerPartyFromTrainer(testParty, &sTestTrainer1, TRUE, BATTLE_TYPE_TRAINER);
     EXPECT(testParty[0].box.personality != testParty[1].box.personality);
     Free(testParty);
 }

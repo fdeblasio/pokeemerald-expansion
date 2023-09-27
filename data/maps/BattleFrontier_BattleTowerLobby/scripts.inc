@@ -17,6 +17,8 @@ BattleFrontier_BattleTowerLobby_OnResume:
 	end
 
 BattleFrontier_BattleTowerLobby_OnTransition:
+	clearflag FLAG_DAILY_APPRENTICE_LEAVES
+	clearflag FLAG_HIDE_APPRENTICE
 	call BattleFrontier_BattleTowerLobby_EventScript_ShowOrHideReporter
 	apprentice_shouldcheckgone
 	goto_if_eq VAR_0x8004, FALSE, BattleFrontier_BattleTowerLobby_EventScript_ShowApprentice  @ VAR_0x8004 always TRUE here

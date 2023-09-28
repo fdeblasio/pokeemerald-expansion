@@ -8,6 +8,7 @@ $1\L$2
 - Items in the Battle Pyramid's Battle Bag/held items in the Battle Pike are turning into Poke Balls
     - Seems to happen after trainer battles?
     - This occurs even with the Battle Frontier changes reverted
+- The starter starts with max PP
 
 ## Post-merge:
 - If Flash is unused, remove it from being an option in the summary screen
@@ -60,7 +61,6 @@ Battle Frontier
 - https://github.com/pret/pokeemerald/wiki/Set-Up-Item-Balls-on-a-Map-Without-Needing-New-Scripts
 - https://www.pokecommunity.com/showpost.php?p=10127351&postcount=47
 - https://www.pokecommunity.com/showpost.php?p=10167016&postcount=83
-- Look at new animations for moves (in battle.h)
 - Overworld sprites to match trainer sprites (for example, giving Youngsters yellow shirts, girl tubers a yellow tube, Rangers red clothes, Dragon Tamers capes and correct hair color)
 - Improve Pokemon overworld sprites
 - Try to find Bolts foreground of Walda PC

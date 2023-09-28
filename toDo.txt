@@ -8,7 +8,7 @@ $1\L$2
 - Items in the Battle Pyramid's Battle Bag/held items in the Battle Pike are turning into Poke Balls
     - Seems to happen after trainer battles?
     - This occurs even with the Battle Frontier changes reverted
-- The starter starts with max PP
+- The starter starts with max max PP but not current PP
 
 ## Post-merge:
 - If Flash is unused, remove it from being an option in the summary screen
@@ -45,9 +45,9 @@ $1\L$2
 
 ## Second, more advanced run (2.0.0)
 - More save space editing
-- Expand Bag!!! (https://github.com/pret/pokeemerald/wiki/Make-the-Bag-Able-to-Hold-120-Items-Instead-of-30)
-    - Medicine Pocket?
-    - See if it's possible to give item PC and decoration PC have more room
+- Medicine Pocket?
+- See if it's possible to give item PC and decoration PC have more room
+- Include charms?
 Double-check Mirage Island
 Combine changes and README?
     Include more changes, even if general like Battle Frontier edits
@@ -82,7 +82,6 @@ Battle Frontier
 - Elite Four rematches
 - Replace ifdefs for move stats with just one set of stats
 - Add EXP Candy
-- Use location pointer for Mirage Island?
 - Improve B-canceling moves
 - Figure out how to get important trainers to use their best Pokemon last
     - AI_FLAG_ACE_POKEMON

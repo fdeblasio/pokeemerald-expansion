@@ -21,9 +21,9 @@ PacifidlogTown_House2_EventScript_FirstMonAssessment::
 	return
 
 PacifidlogTown_House2_EventScript_GiveTMs::
-	giveitem ITEM_TM27
+	giveitem ITEM_TM_RETURN
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	giveitem ITEM_TM21
+	giveitem ITEM_TM_FRUSTRATION
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	msgbox PacifidlogTown_House2_Text_ExplainReturnFrustration, MSGBOX_DEFAULT
 	release

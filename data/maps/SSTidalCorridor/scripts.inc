@@ -124,7 +124,7 @@ SSTidalCorridor_EventScript_ExitSailor::
 SSTidalCorridor_EventScript_ExitLilycove::
 	setrespawn HEAL_LOCATION_LILYCOVE_CITY
 	msgbox SSTidalCorridor_Text_WeveArrived, MSGBOX_DEFAULT
-	call_if_set FLAG_RECEIVED_TM49, SSTidalCorridor_EventScript_HideSnatchGiver
+	call_if_set FLAG_RECEIVED_TM_SNATCH, SSTidalCorridor_EventScript_HideSnatchGiver
 	cleartrainerflag TRAINER_PHILLIP
 	cleartrainerflag TRAINER_LEONARD
 	cleartrainerflag TRAINER_COLTON
@@ -141,7 +141,7 @@ SSTidalCorridor_EventScript_ExitLilycove::
 SSTidalCorridor_EventScript_ExitSlateport::
 	setrespawn HEAL_LOCATION_SLATEPORT_CITY
 	msgbox SSTidalCorridor_Text_WeveArrived, MSGBOX_DEFAULT
-	call_if_set FLAG_RECEIVED_TM49, SSTidalCorridor_EventScript_HideSnatchGiver
+	call_if_set FLAG_RECEIVED_TM_SNATCH, SSTidalCorridor_EventScript_HideSnatchGiver
 	cleartrainerflag TRAINER_PHILLIP
 	cleartrainerflag TRAINER_LEONARD
 	cleartrainerflag TRAINER_COLTON

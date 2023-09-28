@@ -25,14 +25,14 @@ LilycoveCity_DepartmentStore_4F_EventScript_ClerkLeft::
 
 	.align 2
 LilycoveCity_DepartmentStore_4F_Pokemart_OldTMs:
-	.2byte ITEM_TM14  @ Blizzard
-	.2byte ITEM_TM15  @ Hyper Beam
-	.2byte ITEM_TM16  @ Light Screen
-	.2byte ITEM_TM17  @ Protect
-	.2byte ITEM_TM20  @ Safeguard
-	.2byte ITEM_TM25  @ Thunder
-	.2byte ITEM_TM33  @ Reflect
-	.2byte ITEM_TM38  @ Fire Blast
+	.2byte ITEM_TM_BLIZZARD
+	.2byte ITEM_TM_HYPER_BEAM
+	.2byte ITEM_TM_LIGHT_SCREEN
+	.2byte ITEM_TM_PROTECT
+	.2byte ITEM_TM_SAFEGUARD
+	.2byte ITEM_TM_THUNDER
+	.2byte ITEM_TM_REFLECT
+	.2byte ITEM_TM_FIRE_BLAST
 	.2byte ITEM_NONE
 	release
 	end
@@ -87,38 +87,38 @@ LilycoveCity_DepartmentStore_4F_EventScript_ClerkRight::
 
 	.align 2
 LilycoveCity_DepartmentStore_4F_Pokemart_NewTMs:
-	.2byte ITEM_TM53  @ Energy Ball
-	.2byte ITEM_TM56  @ Signal Beam
-	.2byte ITEM_TM58  @ Psychic Fangs
-	.2byte ITEM_TM59  @ Dragon Pulse
-	.2byte ITEM_TM60  @ Drain Punch
-	.2byte ITEM_TM63  @ Dazzling Gleam
-	.2byte ITEM_TM64  @ Seed Bomb
-	.2byte ITEM_TM65  @ Shadow Claw
-	.2byte ITEM_TM68  @ Giga Impact
-	.2byte ITEM_TM69  @ Play Rough
-	.2byte ITEM_TM70  @ Leech Life
-	.2byte ITEM_TM71  @ Stone Edge
-	.2byte ITEM_TM78  @ Crunch
-	.2byte ITEM_TM79  @ Dark Pulse
-	.2byte ITEM_TM80  @ Rock Slide
-	.2byte ITEM_TM81  @ X-Scissor
-	.2byte ITEM_TM82  @ Night Slash
-	.2byte ITEM_TM83  @ Iron Head
-	.2byte ITEM_TM84  @ Poison Jab
-	.2byte ITEM_TM85  @ Aura Sphere
-	.2byte ITEM_TM87  @ Bug Buzz
-	.2byte ITEM_TM88  @ Acrobatics
-	.2byte ITEM_TM90  @ Body Slam
-	.2byte ITEM_TM91  @ Flash Cannon
-	.2byte ITEM_TM93  @ Liquidation
-	.2byte ITEM_TM94  @ Thunder Punch
-	.2byte ITEM_TM95  @ Fire Punch
-	.2byte ITEM_TM96  @ Ice Punch
-	.2byte ITEM_TM97  @ Earth Power
-	.2byte ITEM_TM98  @ Air Slash
-	.2byte ITEM_TM99  @ Body Press
-	.2byte ITEM_TM100  @ Moonblast
+	.2byte ITEM_TM_ENERGY_BALL
+	.2byte ITEM_TM_SIGNAL_BEAM
+	.2byte ITEM_TM_PSYCHIC_FANGS
+	.2byte ITEM_TM_DRAGON_PULSE
+	.2byte ITEM_TM_DRAIN_PUNCH
+	.2byte ITEM_TM_DAZZLING_GLEAM
+	.2byte ITEM_TM_SEED_BOMB
+	.2byte ITEM_TM_SHADOW_CLAW
+	.2byte ITEM_TM_GIGA_IMPACT
+	.2byte ITEM_TM_PLAY_ROUGH
+	.2byte ITEM_TM_LEECH_LIFE
+	.2byte ITEM_TM_STONE_EDGE
+	.2byte ITEM_TM_CRUNCH
+	.2byte ITEM_TM_DARK_PULSE
+	.2byte ITEM_TM_ROCK_SLIDE
+	.2byte ITEM_TM_X-SCISSOR
+	.2byte ITEM_TM_NIGHT_SLASH
+	.2byte ITEM_TM_IRON_HEAD
+	.2byte ITEM_TM_POISON_JAB
+	.2byte ITEM_TM_AURA_SPHERE
+	.2byte ITEM_TM_BUG_BUZZ
+	.2byte ITEM_TM_ACROBATICS
+	.2byte ITEM_TM_BODY_SLAM
+	.2byte ITEM_TM_FLASH_CANNON
+	.2byte ITEM_TM_LIQUIDATION
+	.2byte ITEM_TM_THUNDER_PUNCH
+	.2byte ITEM_TM_FIRE_PUNCH
+	.2byte ITEM_TM_ICE_PUNCH
+	.2byte ITEM_TM_EARTH_POWER
+	.2byte ITEM_TM_AIR_SLASH
+	.2byte ITEM_TM_BODY_PRESS
+	.2byte ITEM_TM_MOONBLAST
 	.2byte ITEM_NONE
 	release
 	end

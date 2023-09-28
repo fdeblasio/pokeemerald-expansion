@@ -15,11 +15,11 @@ BattleFrontier_BattleArenaLobby_EventScript_TurnPlayerNorth::
 	end
 
 BattleFrontier_BattleArenaLobby_OnFrame:
-	map_script_2 VAR_TEMP_0, 0, BattleFrontier_BattleArenaLobby_EventScript_GetChallengeStatus
-	map_script_2 VAR_TEMP_0, CHALLENGE_STATUS_SAVING, BattleFrontier_BattleArenaLobby_EventScript_QuitWithoutSaving
-	map_script_2 VAR_TEMP_0, CHALLENGE_STATUS_PAUSED, BattleFrontier_BattleArenaLobby_EventScript_ResumeChallenge
-	map_script_2 VAR_TEMP_0, CHALLENGE_STATUS_WON, BattleFrontier_BattleArenaLobby_EventScript_WonChallenge
-	map_script_2 VAR_TEMP_0, CHALLENGE_STATUS_LOST, BattleFrontier_BattleArenaLobby_EventScript_LostChallenge
+	map_script_2 VAR_TEMP_CHALLENGE_STATUS, 0, BattleFrontier_BattleArenaLobby_EventScript_GetChallengeStatus
+	map_script_2 VAR_TEMP_CHALLENGE_STATUS, CHALLENGE_STATUS_SAVING, BattleFrontier_BattleArenaLobby_EventScript_QuitWithoutSaving
+	map_script_2 VAR_TEMP_CHALLENGE_STATUS, CHALLENGE_STATUS_PAUSED, BattleFrontier_BattleArenaLobby_EventScript_ResumeChallenge
+	map_script_2 VAR_TEMP_CHALLENGE_STATUS, CHALLENGE_STATUS_WON, BattleFrontier_BattleArenaLobby_EventScript_WonChallenge
+	map_script_2 VAR_TEMP_CHALLENGE_STATUS, CHALLENGE_STATUS_LOST, BattleFrontier_BattleArenaLobby_EventScript_LostChallenge
 	.2byte 0
 
 BattleFrontier_BattleArenaLobby_EventScript_GetChallengeStatus::
@@ -33,7 +33,7 @@ BattleFrontier_BattleArenaLobby_EventScript_QuitWithoutSaving::
 	arena_set ARENA_DATA_WIN_STREAK, 0
 	arena_set ARENA_DATA_WIN_STREAK_ACTIVE, FALSE
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, 0
-	setvar VAR_TEMP_0, 255
+	setvar VAR_TEMP_CHALLENGE_STATUS, 255
 	releaseall
 	end
 
@@ -55,7 +55,7 @@ BattleFrontier_BattleArenaLobby_EventScript_GiveBattlePoints::
 	call BattleFrontier_BattleArenaLobby_EventScript_SaveAfterChallenge
 	msgbox BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge2, MSGBOX_DEFAULT
 	closemessage
-	setvar VAR_TEMP_0, 255
+	setvar VAR_TEMP_CHALLENGE_STATUS, 255
 	releaseall
 	end
 
@@ -67,7 +67,7 @@ BattleFrontier_BattleArenaLobby_EventScript_LostChallenge::
 	call BattleFrontier_BattleArenaLobby_EventScript_SaveAfterChallenge
 	msgbox BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge2, MSGBOX_DEFAULT
 	closemessage
-	setvar VAR_TEMP_0, 255
+	setvar VAR_TEMP_CHALLENGE_STATUS, 255
 	releaseall
 	end
 
@@ -101,7 +101,7 @@ BattleFrontier_BattleArenaLobby_EventScript_ResumeChallenge::
 	playse SE_SAVE
 	waitse
 	frontier_set FRONTIER_DATA_PAUSED, FALSE
-	setvar VAR_TEMP_0, 255
+	setvar VAR_TEMP_CHALLENGE_STATUS, 255
 	goto BattleFrontier_BattleArenaLobby_EventScript_EnterChallenge
 
 BattleFrontier_BattleArenaLobby_EventScript_Attendant::
@@ -139,7 +139,7 @@ BattleFrontier_BattleArenaLobby_EventScript_TryEnterChallenge::
 	special ChoosePartyForBattleFrontier
 	waitstate
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleArenaLobby_EventScript_LoadPartyAndCancelChallenge
-	setvar VAR_TEMP_0, 0
+	setvar VAR_TEMP_CHALLENGE_STATUS, 0
 	frontier_set FRONTIER_DATA_SELECTED_MON_ORDER
 	arena_init
 	arena_set ARENA_DATA_WIN_STREAK_ACTIVE, TRUE
@@ -147,7 +147,7 @@ BattleFrontier_BattleArenaLobby_EventScript_TryEnterChallenge::
 	frontier_set FRONTIER_DATA_PAUSED, FALSE
 	special LoadPlayerParty
 	closemessage
-	setvar VAR_TEMP_0, 255
+	setvar VAR_TEMP_CHALLENGE_STATUS, 255
 BattleFrontier_BattleArenaLobby_EventScript_EnterChallenge::
 	special SavePlayerParty
 	frontier_setpartyorder FRONTIER_PARTY_SIZE
@@ -157,7 +157,7 @@ BattleFrontier_BattleArenaLobby_EventScript_EnterChallenge::
 	call_if_eq VAR_RESULT, FRONTIER_LVL_50, BattleFrontier_BattleArenaLobby_EventScript_WalkToDoorLv50
 	call_if_eq VAR_RESULT, FRONTIER_LVL_OPEN, BattleFrontier_BattleArenaLobby_EventScript_WalkToDoorLvOpen
 	warp MAP_BATTLE_FRONTIER_BATTLE_ARENA_CORRIDOR, 9, 13
-	setvar VAR_TEMP_0, 0
+	setvar VAR_TEMP_CHALLENGE_STATUS, 0
 	waitstate
 	end
 

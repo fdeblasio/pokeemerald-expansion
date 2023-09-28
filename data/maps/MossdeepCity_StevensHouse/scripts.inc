@@ -40,8 +40,8 @@ MossdeepCity_StevensHouse_EventScript_StevenGivesDive::
 	applymovement LOCALID_STEVEN, MossdeepCity_StevensHouse_Movement_StevenApproachPlayer
 	waitmovement 0
 	msgbox MossdeepCity_StevensHouse_Text_YouveEarnedHMDive, MSGBOX_DEFAULT
-	giveitem ITEM_HM08
-	setflag FLAG_RECEIVED_HM08
+	giveitem ITEM_HM_DIVE
+	setflag FLAG_RECEIVED_HM_DIVE
 	setflag FLAG_OMIT_DIVE_FROM_STEVEN_LETTER
 	msgbox MossdeepCity_StevensHouse_Text_DiveGoggles, MSGBOX_DEFAULT
 	giveitem ITEM_SILPH_SCOPE
@@ -87,7 +87,7 @@ MossdeepCity_StevensHouse_EventScript_LeaveBeldum::
 	end
 
 MossdeepCity_StevensHouse_EventScript_GiveBeldum::
-	setvar VAR_TEMP_1, SPECIES_JIRACHI
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_JIRACHI
 	givemon SPECIES_JIRACHI, 60
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, MossdeepCity_StevensHouse_EventScript_SendBeldumParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, MossdeepCity_StevensHouse_EventScript_SendBeldumPC

@@ -21,11 +21,11 @@ BattleFrontier_BattleDomeLobby_EventScript_TurnPlayerNorth::
 	end
 
 BattleFrontier_BattleDomeLobby_OnFrame:
-	map_script_2 VAR_TEMP_0, 0, BattleFrontier_BattleDomeLobby_EventScript_GetChallengeStatus
-	map_script_2 VAR_TEMP_0, CHALLENGE_STATUS_SAVING, BattleFrontier_BattleDomeLobby_EventScript_QuitWithoutSaving
-	map_script_2 VAR_TEMP_0, CHALLENGE_STATUS_PAUSED, BattleFrontier_BattleDomeLobby_EventScript_ResumeChallenge
-	map_script_2 VAR_TEMP_0, CHALLENGE_STATUS_WON, BattleFrontier_BattleDomeLobby_EventScript_WonChallenge
-	map_script_2 VAR_TEMP_0, CHALLENGE_STATUS_LOST, BattleFrontier_BattleDomeLobby_EventScript_LostChallenge
+	map_script_2 VAR_TEMP_CHALLENGE_STATUS, 0, BattleFrontier_BattleDomeLobby_EventScript_GetChallengeStatus
+	map_script_2 VAR_TEMP_CHALLENGE_STATUS, CHALLENGE_STATUS_SAVING, BattleFrontier_BattleDomeLobby_EventScript_QuitWithoutSaving
+	map_script_2 VAR_TEMP_CHALLENGE_STATUS, CHALLENGE_STATUS_PAUSED, BattleFrontier_BattleDomeLobby_EventScript_ResumeChallenge
+	map_script_2 VAR_TEMP_CHALLENGE_STATUS, CHALLENGE_STATUS_WON, BattleFrontier_BattleDomeLobby_EventScript_WonChallenge
+	map_script_2 VAR_TEMP_CHALLENGE_STATUS, CHALLENGE_STATUS_LOST, BattleFrontier_BattleDomeLobby_EventScript_LostChallenge
 	.2byte 0
 
 BattleFrontier_BattleDomeLobby_EventScript_GetChallengeStatus::
@@ -40,7 +40,7 @@ BattleFrontier_BattleDomeLobby_EventScript_QuitWithoutSaving::
 	dome_set DOME_DATA_WIN_STREAK_ACTIVE, FALSE
 	dome_set DOME_DATA_ATTEMPTED_CHALLENGE, TRUE
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, 0
-	setvar VAR_TEMP_0, 255
+	setvar VAR_TEMP_CHALLENGE_STATUS, 255
 	releaseall
 	end
 
@@ -101,7 +101,7 @@ BattleFrontier_BattleDomeLobby_EventScript_RecordBattle::
 BattleFrontier_BattleDomeLobby_EventScript_EndChallenge::
 	msgbox BattleFrontier_BattleDomeLobby_Text_HopeToSeeYouAgain, MSGBOX_DEFAULT
 	closemessage
-	setvar VAR_TEMP_0, 255
+	setvar VAR_TEMP_CHALLENGE_STATUS, 255
 	releaseall
 	end
 
@@ -112,7 +112,7 @@ BattleFrontier_BattleDomeLobby_EventScript_ResumeChallenge::
 	playse SE_SAVE
 	waitse
 	frontier_set FRONTIER_DATA_PAUSED, FALSE
-	setvar VAR_TEMP_0, 255
+	setvar VAR_TEMP_CHALLENGE_STATUS, 255
 	goto BattleFrontier_BattleDomeLobby_EventScript_EnterChallenge
 
 BattleFrontier_BattleDomeLobby_EventScript_SinglesAttendant::
@@ -164,16 +164,16 @@ BattleFrontier_BattleDomeLobby_EventScript_TryEnterChallenge::
 	special ChoosePartyForBattleFrontier
 	waitstate
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleDomeLobby_EventScript_LoadPartyCancelChallenge
-	setvar VAR_TEMP_0, 0
+	setvar VAR_TEMP_CHALLENGE_STATUS, 0
 	frontier_set FRONTIER_DATA_SELECTED_MON_ORDER
 	dome_init
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_SAVING
 	frontier_set FRONTIER_DATA_PAUSED, FALSE
 	special LoadPlayerParty
 	closemessage
-	setvar VAR_TEMP_0, 255
+	setvar VAR_TEMP_CHALLENGE_STATUS, 255
+>>>>>>> c4e88760f5be890344140a76815b440c6d24d0a3
 	dome_inittrainers
-BattleFrontier_BattleDomeLobby_EventScript_EnterChallenge::
 	special SavePlayerParty
 	frontier_setpartyorder FRONTIER_PARTY_SIZE
 	dome_settrainers
@@ -182,7 +182,7 @@ BattleFrontier_BattleDomeLobby_EventScript_EnterChallenge::
 	call BattleFrontier_BattleDomeLobby_EventScript_WalkToDoor
 	special HealPlayerParty
 	warp MAP_BATTLE_FRONTIER_BATTLE_DOME_CORRIDOR, 23, 6
-	setvar VAR_TEMP_0, 0
+	setvar VAR_TEMP_CHALLENGE_STATUS, 0
 	waitstate
 	end
 

@@ -122,7 +122,7 @@ TM71_STONE_EDGE - Lilycove TM Shop
 TM72_AVALANCHE - Lavaridge TM Shop
 TM73_THUNDER_WAVE - Slateport TM Shop
 TM74_GYRO_BALL - Lavaridge TM Shop
-TM75_SWORDS_DANCE - Lavaridge TM Shop (Replace Battle Frontier Tutor)
+TM75_SWORDS_DANCE - Lavaridge TM Shop
 TM76_STEALTH_ROCK - Lavaridge TM Shop
 TM77_PSYCH_UP - Slateport TM Shop
 TM78_CRUNCH - Lilycove TM Shop
@@ -163,33 +163,34 @@ Mainland Tutors:
     Swagger
 
 Battle Frontier Move Tutors:
-    Rising Voltage
-    Grassy Glide
-    Expanding Force
-    Zen Headbutt
-    Scald
-    Psycho Cut
-    Lunge
-    Throat Chop
-    Solar Blade
-    Dual Wingbeat
-    Scorching Sands
-    Knock Off
-    Mega Punch
-    Mega Kick
+    Left:
+        Rising Voltage
+        Grassy Glide
+        Expanding Force
+        Zen Headbutt
+        Scald
+        Psycho Cut
+        Lunge
+        Throat Chop
+        Solar Blade
+        Dual Wingbeat
+        Scorching Sands
+        Knock Off
+        Mega Punch
+        Mega Kick
 
-Future TMs/Tutors:
-    Electric Terrain
-    Grassy Terrain
-    Misty Terrain
-    Psychic Terrain
-    Iron Defense
-    Nasty Plot
-    Dragon Dance
-    Defense Curl
-    Endure
-    Icy Wind
-    Swift
-    Seismic Toss
-    Counter
-    Dream Eater
+    Right:
+        Electric Terrain
+        Grassy Terrain
+        Misty Terrain
+        Psychic Terrain
+        Iron Defense
+        Nasty Plot
+        Dragon Dance
+        Defense Curl
+        Endure
+        Icy Wind
+        Swift
+        Seismic Toss
+        Counter
+        Dream Eater

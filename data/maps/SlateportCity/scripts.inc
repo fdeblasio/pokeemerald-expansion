@@ -566,14 +566,14 @@ SlateportCity_EventScript_TMClerk::
 
 	.align 2
 SlateportCity_Market_TMs:
-	.2byte ITEM_TM04  @ Calm Mind
-	.2byte ITEM_TM51  @ Roost
-	.2byte ITEM_TM54  @ False Swipe
-	.2byte ITEM_TM57  @ Charge Beam
-	.2byte ITEM_TM61  @ Will-o-Wisp
-	.2byte ITEM_TM62  @ Silver Wind
-	.2byte ITEM_TM73  @ Thunder Wave
-	.2byte ITEM_TM77  @ Psych Up
+	.2byte ITEM_TM_CALM_MIND
+	.2byte ITEM_TM_ROOST
+	.2byte ITEM_TM_FALSE_SWIPE
+	.2byte ITEM_TM_CHARGE_BEAM
+	.2byte ITEM_TM_WILL_O_WISP
+	.2byte ITEM_TM_SILVER_WIND
+	.2byte ITEM_TM_THUNDER_WAVE
+	.2byte ITEM_TM_PSYCH_UP
 	.2byte ITEM_NONE
 	release
 	end

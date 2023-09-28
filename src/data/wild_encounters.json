@@ -2345,7 +2345,7 @@
               {
                 "min_level": 20,
                 "max_level": 23,
-                "species": "SPECIES_MACHOP"
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 20,
@@ -9001,7 +9001,7 @@
               {
                 "min_level": 60,
                 "max_level": 60,
-                "species": "SPECIES_HOUNDOUR"
+                "species": "SPECIES_SHUCKLE"
               },
               {
                 "min_level": 60,
@@ -9110,7 +9110,7 @@
               {
                 "min_level": 35,
                 "max_level": 37,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 35,
@@ -9120,7 +9120,7 @@
               {
                 "min_level": 35,
                 "max_level": 37,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 35,
@@ -9130,7 +9130,7 @@
               {
                 "min_level": 35,
                 "max_level": 37,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_HOUNDOUR"
               }
             ]
           }
@@ -9179,7 +9179,7 @@
               {
                 "min_level": 35,
                 "max_level": 37,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 35,
@@ -9189,7 +9189,7 @@
               {
                 "min_level": 35,
                 "max_level": 37,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 35,
@@ -9199,7 +9199,7 @@
               {
                 "min_level": 35,
                 "max_level": 37,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_HOUNDOUR"
               }
             ]
           }
@@ -9248,7 +9248,7 @@
               {
                 "min_level": 35,
                 "max_level": 37,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 35,
@@ -9258,7 +9258,7 @@
               {
                 "min_level": 35,
                 "max_level": 37,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 35,
@@ -9268,7 +9268,7 @@
               {
                 "min_level": 35,
                 "max_level": 37,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_HOUNDOUR"
               }
             ]
           }
@@ -9317,7 +9317,7 @@
               {
                 "min_level": 35,
                 "max_level": 37,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 35,
@@ -9327,7 +9327,7 @@
               {
                 "min_level": 35,
                 "max_level": 37,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 35,
@@ -9337,7 +9337,7 @@
               {
                 "min_level": 35,
                 "max_level": 37,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_HOUNDOUR"
               }
             ]
           }
@@ -9386,7 +9386,7 @@
               {
                 "min_level": 35,
                 "max_level": 37,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 35,
@@ -9396,7 +9396,7 @@
               {
                 "min_level": 35,
                 "max_level": 37,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 35,
@@ -9406,7 +9406,7 @@
               {
                 "min_level": 35,
                 "max_level": 37,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_HOUNDOUR"
               }
             ]
           }
@@ -9455,7 +9455,7 @@
               {
                 "min_level": 35,
                 "max_level": 37,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 35,
@@ -9465,7 +9465,7 @@
               {
                 "min_level": 35,
                 "max_level": 37,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 35,
@@ -9475,7 +9475,7 @@
               {
                 "min_level": 35,
                 "max_level": 37,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_HOUNDOUR"
               }
             ]
           }
@@ -9524,7 +9524,7 @@
               {
                 "min_level": 35,
                 "max_level": 37,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 35,
@@ -9534,7 +9534,7 @@
               {
                 "min_level": 35,
                 "max_level": 37,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 35,
@@ -9544,7 +9544,7 @@
               {
                 "min_level": 35,
                 "max_level": 37,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_HOUNDOUR"
               }
             ]
           }
@@ -9593,7 +9593,7 @@
               {
                 "min_level": 35,
                 "max_level": 37,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 35,
@@ -9603,7 +9603,7 @@
               {
                 "min_level": 35,
                 "max_level": 37,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 35,
@@ -9613,7 +9613,7 @@
               {
                 "min_level": 35,
                 "max_level": 37,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_HOUNDOUR"
               }
             ]
           }
@@ -10317,62 +10317,62 @@
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_HOUNDOUR"
+                "species": "SPECIES_SANDILE"
               },
               {
                 "min_level": 18,
                 "max_level": 18,
-                "species": "SPECIES_HOUNDOUR"
+                "species": "SPECIES_SANDILE"
               },
               {
                 "min_level": 14,
                 "max_level": 14,
-                "species": "SPECIES_HOUNDOUR"
+                "species": "SPECIES_SANDILE"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_HOUNDOUR"
+                "species": "SPECIES_SANDILE"
               },
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_HOUNDOUR"
+                "species": "SPECIES_SANDILE"
               },
               {
                 "min_level": 18,
                 "max_level": 18,
-                "species": "SPECIES_HOUNDOUR"
+                "species": "SPECIES_SANDILE"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_HOUNDOUR"
+                "species": "SPECIES_SANDILE"
               },
               {
                 "min_level": 12,
                 "max_level": 12,
-                "species": "SPECIES_HOUNDOUR"
+                "species": "SPECIES_SANDILE"
               },
               {
                 "min_level": 14,
                 "max_level": 14,
-                "species": "SPECIES_HOUNDOUR"
+                "species": "SPECIES_SANDILE"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_HOUNDOUR"
+                "species": "SPECIES_SANDILE"
               },
               {
                 "min_level": 14,
                 "max_level": 14,
-                "species": "SPECIES_HOUNDOUR"
+                "species": "SPECIES_SANDILE"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_HOUNDOUR"
+                "species": "SPECIES_SANDILE"
               }
             ]
           }

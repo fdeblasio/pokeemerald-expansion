@@ -10,7 +10,7 @@ $1\L$2
     - This occurs even with the Battle Frontier changes reverted
 - The starter starts with max max PP but not current PP
 
-## Post-merge:
+## Second, more advanced run (2.0.0)
 - If Flash is unused, remove it from being an option in the summary screen
 - Edit moves that work in field
     - Maybe edit so instead of "if has move" to "if can learn move" (might not be simple since it's .inc and not C)
@@ -42,8 +42,13 @@ $1\L$2
     - Look for FIELD_MOVE_X
     - Currently are in same index spot. Should be moved to before HMs once everything is figured out (can simplify IsMoveHm once done) (Note: IsMoveHm may have been removed and replaced with IsMoveHm2 but need to double check)
     - Edit text (Steven's house for Dive for example)
-
-## Second, more advanced run (2.0.0)
+- Add in Houndoom for more Magma variety
+    - Mega Evolve Tabitha's?
+    - Redo Admin/Maxie teams
+    - Update some grunts to have it 
+        - Slugma/Vulpix Mossdeep grunt has Slugma replaced by Houndour, the Mightyena grunt gets replaced with a Magcargo, and one of the Numel grunts gets Mightyena
+    - Update some Flannery trainers
+    - Update some Kindlers
 - More save space editing
 - Medicine Pocket?
 - See if it's possible to give item PC and decoration PC have more room
@@ -57,7 +62,6 @@ Battle Frontier
 - https://www.pokecommunity.com/showthread.php?t=416647&page=1
 - https://github.com/pret/pokeemerald/wiki/Tutorials
 - https://www.pokecommunity.com/showpost.php?p=10378278
-- Undo EXP Share changes when Edu's (https://github.com/rh-hideout/pokeemerald-expansion/pull/2909) gets merged
 - https://github.com/pret/pokeemerald/wiki/Set-Up-Item-Balls-on-a-Map-Without-Needing-New-Scripts
 - https://www.pokecommunity.com/showpost.php?p=10127351&postcount=47
 - https://www.pokecommunity.com/showpost.php?p=10167016&postcount=83
@@ -73,14 +77,14 @@ Battle Frontier
 - Update Favor Lady's items to include new items
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Implement Deoxys encounter at island/changing forms at Fallarbor
-- Give Espeon Power Gem on level up or evolution
+- Give Espeon Power Gem on level up or evolution?
 - Edit Slot odds (SLOT_MACHINE_)? Even though there's only three prizes?
 - Add Hyper Training
 - Once Mints are implemented, in Lilycove 3F, move X items to left clerk and make right clerk Mints
     - Or move Mints to left too and have left be Chansey, right be Delibird
 - Get rid of low health constant beeping
 - Elite Four rematches
-- Replace ifdefs for move stats with just one set of stats
+- Replace ifdefs for move stats with just one set of stats?
 - Add EXP Candy
 - Improve B-canceling moves
 - Figure out how to get important trainers to use their best Pokemon last
@@ -109,23 +113,13 @@ Battle Frontier
 - DON'T USE DEBUG MENU FOR FLYING. Test to see if without it, Fly Flags are set correctly
     - Maybe use makeshift version of it (without setting all flags) in Start menu to Fly without needing a Pokemon who knows it (no badge requirements)
         - Fly to routes?
-- Add in Houndoom for more Magma variety?
-    - Replace Magcargo as Tabitha's main Pokemon (currently unsure if it will Mega Evolve)
-        - Or replace Camerupt as Maxie's signature and give Camerupt to Tabitha? Maybe edit stats so Sharpedo/Houndoom line up
-        - Replace Mossdeep Maxie's Mightyena for Magcargo
-    - Add in Hoenn Dex after Rhyperior
-    - Move Houndoomite from Battle Frontier to Lilycove Shop
-    - Update some grunts to have it 
-        - Slugma/Vulpix Mossdeep grunt has Slugma replaced by Houndour, the Mightyena grunt gets replaced with a Magcargo, and one of the Numel grunts gets Mightyena
-    - Update some Flannery trainers
-    - Update some Kindlers
-    - pokemon.c HOENN_TO_NATIONAL and whatnot
-    - Put it in Safari Zone or Fiery Path but remove encounters for new Safari sections
-        - Move Hoothoot to only Area 6 to take Houndour's place. This will give 5 and 6 six land Pokemon each. Redo encounter rates
 - Make list of all Magma/Aqua Pokemon and make them spread more evenly across the Grunts
     - Maybe Admins rely less on Mightyena/Leaders' signature
+    - Magma: Numel, Slugma, Vulpix, Houndour, Torkoal, Baltoy, ???
+    - Aqua: Carvanha, Tentacool, ???
+    - Both: Poochyena/Zubat?
 - Add in Hoenn Dex regionals?
-    - Sun/Shiny Stone for Alolan Raichu (or use RHH 1.5's 0 item evo)
+    - Sun/Shiny Stone for Alolan Raichu
     - Alolan Sandshrew/Vulpix at Shoal Cave
     - Alolan Muk
     - Shiny/Dawn Stone for Galarian Weezing

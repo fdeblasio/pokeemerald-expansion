@@ -53,6 +53,7 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStones:
 	.2byte ITEM_PINSIRITE
 	.2byte ITEM_GYARADOSITE
 	.2byte ITEM_HERACRONITE
+	.2byte ITEM_HOUNDOOMINITE
 	.2byte ITEM_SCEPTILITE
 	.2byte ITEM_BLAZIKENITE
 	.2byte ITEM_SWAMPERTITE

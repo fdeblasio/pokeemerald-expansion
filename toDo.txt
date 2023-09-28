@@ -90,7 +90,6 @@ Battle Frontier
 - PC in menu (look at debug menu)
 - TM Case?
 - Get PokeNav to work indoors?
-- Have Hoenn starters learn STAB move at level 6 to make first rival battle easier
 - Edit rest out mass outbreaks
     - Maractus/Sandile in Route 111? Would be first time expanding past Gens 1-3 + evos
 - Add FRLG trainer sprites
@@ -102,7 +101,6 @@ Battle Frontier
 - Add Scarlet/Violet move additions
 - Implement Pokedex Plus (https://www.pokecommunity.com/showthread.php?t=441996)
 - Figure out ?????? showing up at end of Dex
-- Revamp EVs to give 1 stat per EV and cap out at 63 (CALC_STAT)
 - Remove IVs? Maybe make binary for either 0 or 31 added to stat
     - Would need to figure out Hidden Power
 - Fire Blast/Hydro Pump/Stone Edge accurate in respective weathers?

@@ -10,6 +10,7 @@ Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)
 Any PP Ups or Maxes used are now permanent for that slot, even if the move is replaced
 Sacred Ash now works in battles although it only revives one Pokémon
 Pokémon that evolve with an item at day or night now can evolve at any time
+EVs now give one stat increase for every EV but cap out at 63 (individual)/127 (total)
 
 Frontier Brains have updated teams
 Battle Pyramid wild Pokémon have been updated
@@ -263,6 +264,9 @@ Pokémon:
 
     Lugia:
         Learns Brave Bird by level up
+
+    Treecko/Torchic/Mudkip:
+        Swapped level 3 and 6 moves to make first rival battle easier
 
     Sceptile:
         Learns Leaf Blade upon evolving

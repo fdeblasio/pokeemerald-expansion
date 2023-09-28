@@ -53,7 +53,6 @@
 #define MAIL_COUNT (10 + PARTY_SIZE)
 #define SECRET_BASES_COUNT 20
 #define POKE_NEWS_COUNT 16
-
 #define PC_ITEMS_COUNT 20 //was 50
 #define BAG_ITEMS_COUNT 60 //was 30
 #define BAG_KEYITEMS_COUNT 30 //might need more
@@ -61,7 +60,6 @@
 #define BAG_TMHM_COUNT 108 //was 64
 #define BAG_BERRIES_COUNT 46 //need 68
 #define POKEBLOCKS_COUNT 20 //was 40
-
 #define OBJECT_EVENT_TEMPLATES_COUNT 64
 #define DECOR_MAX_SECRET_BASE 16
 #define DECOR_MAX_PLAYERS_HOUSE 12

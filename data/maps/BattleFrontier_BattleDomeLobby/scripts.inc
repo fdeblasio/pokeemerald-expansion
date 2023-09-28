@@ -172,8 +172,8 @@ BattleFrontier_BattleDomeLobby_EventScript_TryEnterChallenge::
 	special LoadPlayerParty
 	closemessage
 	setvar VAR_TEMP_CHALLENGE_STATUS, 255
->>>>>>> c4e88760f5be890344140a76815b440c6d24d0a3
 	dome_inittrainers
+BattleFrontier_BattleDomeLobby_EventScript_EnterChallenge::
 	special SavePlayerParty
 	frontier_setpartyorder FRONTIER_PARTY_SIZE
 	dome_settrainers

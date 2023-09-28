@@ -21,6 +21,7 @@ $1\L$2
         - X-Scissor
         - Aqua Cutter
         - Psycho Cut
+        - Moves boosted by Sharpness
     - Rock Smash:
         - Brick Break
         - Meteor Mash?
@@ -42,6 +43,10 @@ $1\L$2
     - Edit text (Steven's house for Dive for example)
 
 ## Second, more advanced run (2.0.0)
+- More save space editing
+- Expand Bag!!! (https://github.com/pret/pokeemerald/wiki/Make-the-Bag-Able-to-Hold-120-Items-Instead-of-30)
+    - Medicine Pocket?
+    - See if it's possible to give item PC and decoration PC have more room
 Double-check Mirage Island
 Combine changes and README?
     Include more changes, even if general like Battle Frontier edits
@@ -96,10 +101,6 @@ Battle Frontier
 - Remove unused code
 - Pokemon in Frontier/Trainer Hill should be registered in Dex
 - Add Scarlet/Violet move additions
-- More save space editing
-- Expand Bag!!! (https://github.com/pret/pokeemerald/wiki/Make-the-Bag-Able-to-Hold-120-Items-Instead-of-30)
-    - Medicine Pocket?
-    - See if it's possible to give item PC and decoration PC have more room
 - Implement Pokedex Plus (https://www.pokecommunity.com/showthread.php?t=441996)
 - Figure out ?????? showing up at end of Dex
 - Revamp EVs to give 1 stat per EV and cap out at 63 (CALC_STAT)

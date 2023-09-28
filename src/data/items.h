@@ -8409,7 +8409,7 @@ const struct Item gItems[] =
 
     [ITEM_TM105] =
     {
-        .name = _("TM105")
+        .name = _("TM105"),
         .description = sHM05Desc,
         .importance = 1,
         .pocket = POCKET_TM_HM,

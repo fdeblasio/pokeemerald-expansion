@@ -203,7 +203,7 @@ static const struct TrainerMon sParty_GruntMuseum2[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_GruntMtPyre1[] = {
+static const struct TrainerMon sParty_GruntMtPyre1[] = {
     {
     .lvl = 36,
     .species = SPECIES_CORPHISH,
@@ -262,7 +262,7 @@ static const struct TrainerMon sParty_Fredrick[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_MattAquaHideout[] = {
+static const struct TrainerMon sParty_MattAquaHideout[] = {
     {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
     .lvl = 38,
@@ -1517,7 +1517,7 @@ static const struct TrainerMon sParty_Daphne[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Courtney[] = {
+static const struct TrainerMon sParty_Courtney[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 40,
@@ -1784,7 +1784,7 @@ static const struct TrainerMon sParty_Winston2[] = {
     }
 };
 
-static const struct TrainerMonItemDefaultMoves sParty_Winston3[] = {
+static const struct TrainerMon sParty_Winston3[] = {
     {
     .lvl = 33,
     .species = SPECIES_PELIPPER,
@@ -1797,7 +1797,7 @@ static const struct TrainerMonItemDefaultMoves sParty_Winston3[] = {
     }
 };
 
-static const struct TrainerMonItemDefaultMoves sParty_Winston4[] = {
+static const struct TrainerMon sParty_Winston4[] = {
     {
     .lvl = 36,
     .species = SPECIES_PELIPPER,
@@ -1810,7 +1810,7 @@ static const struct TrainerMonItemDefaultMoves sParty_Winston4[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Winston5[] = {
+static const struct TrainerMon sParty_Winston5[] = {
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
     .lvl = 40,
@@ -3266,7 +3266,7 @@ static const struct TrainerMon sParty_Walter5[] = {
 };
 
 //Sharpedo (Archie)
-static const struct TrainerMonItemCustomMoves sParty_Sidney[] = {
+static const struct TrainerMon sParty_Sidney[] = {
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .lvl = 47,
@@ -4470,7 +4470,7 @@ static const struct TrainerMon sParty_Timmy[] = {
     }
 };
 
-static const struct TrainerMonCustomized sParty_Wallace[] = {
+static const struct TrainerMon sParty_Wallace[] = {
     {
     .lvl = 56,
     .species = SPECIES_PELIPPER,
@@ -4500,9 +4500,6 @@ static const struct TrainerMonCustomized sParty_Wallace[] = {
     .isShiny = TRUE
     },
     {
-=======
-    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
->>>>>>> 5b885a4ddba24240e0c0b07474711ad66f66c946
     .lvl = 56,
     .species = SPECIES_LUDICOLO,
     .heldItem = ITEM_NONE,
@@ -6135,7 +6132,7 @@ static const struct TrainerMon sParty_Jenny3[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Jenny4[] = {
+static const struct TrainerMon sParty_Jenny4[] = {
     {
     .lvl = 44,
     .species = SPECIES_LUVDISC,
@@ -7706,7 +7703,7 @@ static const struct TrainerMon sParty_Julio[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_MattSeafloorCavern[] = {
+static const struct TrainerMon sParty_MattSeafloorCavern[] = {
     {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
     .lvl = 42,
@@ -7886,14 +7883,14 @@ static const struct TrainerMon sParty_Nicholas[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_GruntSpaceCenter1[] = {
+static const struct TrainerMon sParty_GruntSpaceCenter1[] = {
     {
     .lvl = 41,
     .species = SPECIES_NUMEL,
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_GruntSpaceCenter3[] = {
+static const struct TrainerMon sParty_GruntSpaceCenter3[] = {
     {
     .lvl = 40,
     .species = SPECIES_SLUGMA,
@@ -9598,7 +9595,7 @@ static const struct TrainerMon sParty_Tyron[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Lily[] = {
+static const struct TrainerMon sParty_Lily[] = {
     {
     .lvl = 19,
     .species = SPECIES_ROSELIA,
@@ -11607,7 +11604,7 @@ static const struct TrainerMon sParty_Darius[] = {
 };
 
 //Perrserker?
-static const struct TrainerMonCustomized sParty_Steven[] = {
+static const struct TrainerMon sParty_Steven[] = {
     {
     .lvl = 77,
     .species = SPECIES_SKARMORY,

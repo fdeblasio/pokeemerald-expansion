@@ -102,7 +102,7 @@ LilycoveCity_DepartmentStore_4F_Pokemart_NewTMs:
 	.2byte ITEM_TM_CRUNCH
 	.2byte ITEM_TM_DARK_PULSE
 	.2byte ITEM_TM_ROCK_SLIDE
-	.2byte ITEM_TM_X-SCISSOR
+	.2byte ITEM_TM_X_SCISSOR
 	.2byte ITEM_TM_NIGHT_SLASH
 	.2byte ITEM_TM_IRON_HEAD
 	.2byte ITEM_TM_POISON_JAB

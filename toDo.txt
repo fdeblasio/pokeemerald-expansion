@@ -103,7 +103,7 @@ Battle Frontier
 - Add relearning moves to PC?
 - Remove unused code
 - Pokemon in Frontier/Trainer Hill should be registered in Dex
-- Add Scarlet/Violet move additions
+- Update Shiftry's Hidden Ability to Wind Rider
 - Implement Pokedex Plus (https://www.pokecommunity.com/showthread.php?t=441996)
 - Figure out ?????? showing up at end of Dex
 - DON'T USE DEBUG MENU FOR FLYING. Test to see if without it, Fly Flags are set correctly

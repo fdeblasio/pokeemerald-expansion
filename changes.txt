@@ -146,7 +146,7 @@ Pokémon:
         Can also evolve at level 33
 
     Golem:
-        Learns Body Press by TM (Scarlet/Violet addition)
+        Learns Body Press by TM (Teal Mask addition)
 
     Cloyster (not in main game):
         Learns Body Press by TM
@@ -224,6 +224,9 @@ Pokémon:
     Zapdos:
         Learns Air Slash by TM
 
+    Noctowl:
+        Learns Skill Swap by TM (Teal Mask addition)
+
     Azurill:
         Can also evolve at level 10
         Type: Normal/Fairy->Water/Fairy
@@ -244,8 +247,9 @@ Pokémon:
     Sunflora:
         Learns Morning Sun by level up
 
-    Heracross:
-        Catch rate: 45->90
+    Gligar/Gliscor:
+        Learn Crunch and Psychic Fangs by TM (Teal Mask addition)
+        Learn Dual Wingbeat and Lunge by move tutor (Teal Mask addition)
 
     Granbull (not available in main game):
         Hidden Ability: Rattled->Strong Jaw
@@ -253,12 +257,15 @@ Pokémon:
     Qwilfish/Hisuian Qwilfish/Overqwil (not in main game):
         Learns Poison Tail by level up
 
+    Heracross:
+        Catch rate: 45->90
+
     Slugma:
         Now evolves at level 32
 
     Magcargo:
         Learns Body Press by TM
-        Learns Power Gem by TM (Scarlet/Violet addition)
+        Learns Power Gem by TM (Teal Mask addition)
 
     Delibird (not in main game):
         Atk: 55->75
@@ -276,6 +283,9 @@ Pokémon:
 
     Blaziken:
         Learns Blaze Kick upon evolving
+
+    Mightyena:
+        Learns Psychic Fangs by TM (Teal Mask addition)
 
     Wurmple:
         Learns Bug Bite at level 7 instead of 15
@@ -307,7 +317,7 @@ Pokémon:
         Learns Drain Punch by TM (Scarlet/Violet addition)
 
     Nosepass/Probopass:
-        Learn Body Press by TM (Scarlet/Violet addition)
+        Learn Body Press by level up
 
     Delcatty:
         Gets Swift via level up
@@ -322,10 +332,15 @@ Pokémon:
     Volbeat:
         Atk: 73->75
         SpA: 47->75
+        Illuminate->Tinted Lens
+        Learn Air Slash by TM (Teal Mask addition)
 
     Illumise:
         Atk: 47->75
         SpA: 73->75
+        Oblivious->Illuminate
+        Tinted Lens->Oblivious
+        Learn Air Slash by TM (Teal Mask addition)
 
     Budew:
         Can also evolve at level 13
@@ -385,7 +400,7 @@ Pokémon:
     Dusknoir:
         Learns Spite by breeding
         Learns Drain Punch by TM
-        Learns Leech Life by TM (Scarlet/Violet addition)
+        Learns Leech Life by TM (Teal Mask addition)
         Gets Iron Fist as second Ability
 
     Tropius:
@@ -437,12 +452,16 @@ Pokémon:
         Learns Fly at level 1 instead of level 63
         Learns Dragon Ascent at level 63 instead of level 1
 
-    Torterra:
-        Learns Body Press, Grassy Glide, and Zen Headbutt by TM (Scarlet/Violet addition)
+    Torterra (not in main game):
+        Learns Body Press and Zen Headbutt by TM (Teal Mask addition)
+        Learns Grassy Glide by move tutor (Teal Mask addition)
         Learns Shell Smash after evolving
 
     Infernape (not in main game):
-        Learns Aura Sphere by TM (Scarlet/Violet addition)
+        Learns Aura Sphere by TM (Teal Mask addition)
+
+    Empoleon (not in main game):
+        Hidden Ability: Defiant->Competitive (Teal Mask change)
 
     Cranidos/Rampardos (not in main game):
         Received Rock Head as a second ability

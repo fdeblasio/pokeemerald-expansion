@@ -8,7 +8,6 @@ $1\L$2
 - Items in the Battle Pyramid's Battle Bag/held items in the Battle Pike are turning into Poke Balls
     - Seems to happen after trainer battles?
     - This occurs even with the Battle Frontier changes reverted
-- The starter starts with max max PP but not current PP
 
 ## Second, more advanced run (2.0.0)
 - If Flash is unused, remove it from being an option in the summary screen
@@ -32,15 +31,16 @@ $1\L$2
         - Close Combat?
 - Expand moves usable in overworld (see above)
     - Alternatively, remove instances of trees, rocks, boulders, etc
-        - Would need new Shuckle encounters
+        - Would need to figure out Rusturf
     - Would need to double check but this should make Cut, Rock Smash, and Strength forgettable
-        - (sHMMoves and IsMoveHm)
+        - (sHMMoves and IsMoveHM)
+        - edit tm_hms.h
     - Trick House can still use them but maybe have Escape Rope usable there
 - Turn HMs into TMs if they are no longer used in the field
     - Remove them from being an option in the summary screen
     - Remove release blocks in pokemon_storage_system.c
     - Look for FIELD_MOVE_X
-    - Currently are in same index spot. Should be moved to before HMs once everything is figured out (can simplify IsMoveHm once done) (Note: IsMoveHm may have been removed and replaced with IsMoveHm2 but need to double check)
+    - Currently are in same index spot. Should be moved to before HMs once everything is figured out (can simplify IsMoveHM once done)
     - Edit text (Steven's house for Dive for example)
 - Add in Houndoom for more Magma variety
     - Mega Evolve Tabitha's?
@@ -53,6 +53,7 @@ $1\L$2
 - Medicine Pocket?
 - See if it's possible to give item PC and decoration PC have more room
 - Include charms?
+- Remove all PP Ups/Maxes (including Pickup) due to moves having max PP by default
 Double-check Mirage Island
 Combine changes and README?
     Include more changes, even if general like Battle Frontier edits
@@ -82,7 +83,7 @@ Battle Frontier
 - Add Hyper Training
 - Once Mints are implemented, in Lilycove 3F, move X items to left clerk and make right clerk Mints
     - Or move Mints to left too and have left be Chansey, right be Delibird
-- Get rid of low health constant beeping
+- Get rid of low health constant beeping (https://www.pokecommunity.com/showpost.php?p=10246778&postcount=194)
 - Elite Four rematches
 - Replace ifdefs for move stats with just one set of stats?
 - Add EXP Candy
@@ -105,11 +106,6 @@ Battle Frontier
 - Add Scarlet/Violet move additions
 - Implement Pokedex Plus (https://www.pokecommunity.com/showthread.php?t=441996)
 - Figure out ?????? showing up at end of Dex
-- Remove IVs? Maybe make binary for either 0 or 31 added to stat
-    - Would need to figure out Hidden Power
-- Fire Blast/Hydro Pump/Stone Edge accurate in respective weathers?
-    - Make Thunder also accurate in Electric Terrain?
-- Calculate Electro Ball more similarly to Gyro Ball?
 - DON'T USE DEBUG MENU FOR FLYING. Test to see if without it, Fly Flags are set correctly
     - Maybe use makeshift version of it (without setting all flags) in Start menu to Fly without needing a Pokemon who knows it (no badge requirements)
         - Fly to routes?
@@ -118,20 +114,6 @@ Battle Frontier
     - Magma: Numel, Slugma, Vulpix, Houndour, Torkoal, Baltoy, ???
     - Aqua: Carvanha, Tentacool, ???
     - Both: Poochyena/Zubat?
-- Add in Hoenn Dex regionals?
-    - Sun/Shiny Stone for Alolan Raichu
-    - Alolan Sandshrew/Vulpix at Shoal Cave
-    - Alolan Muk
-    - Shiny/Dawn Stone for Galarian Weezing
-    - Cursola
-    - Obstagoon
-    - Hisui Voltorb
-    - Post-game:
-        - Alolan Meowth
-        - Galarian Meowth
-        - Paldean Wooper
-    - Update level up/learnable movesets for them
-    - Sandslash, Ninetales, Cursola, and maybe Obstagoon can be used to diversify the Elite Four teams
 - Add Farigiraf to Hoenn Dex once implemented
 - Add Ice Spinner as a TM (and maybe give to Beartic/Mamoswine/other Ice types) once implemented?
 - Add 3 other Regis?
@@ -169,7 +151,6 @@ Battle Frontier
 - Check that Mossdeep swimmer flag works
 - In game trades
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
-- Remove all PP Ups/Maxes (including Pickup) due to moves having max PP by default
 - Bring important Trainers up to ORAS levels?
 - Magmortar Flash Fire?
 - Cherrim
@@ -178,7 +159,6 @@ Battle Frontier
 - Edit max money
 - Should be able to run from wild Pokemon if it is Digging, Diving, Flying, Bouncing, etc
     - Even if ability is Shadow Tag/Arena Trap
-- Get rid of duplicate regional evolution methods, even for ones not in the game
 - Actually go through SS Tidal now that you'll have more bag space
 - Brendan/May/Steven rematches?
 - Add Pokemon with dolls? (Togepi, Smoochum, Clefairy, Lapras, Snorlax, Venusaur, Charizard, Blastoise)
@@ -204,6 +184,27 @@ Battle Frontier
     - Battle Factory
         - Add new moves to moveStyles (sRequiredMoveCounts)
         - Don't have both Open Level and Level 50 since the Pokemon are rentals anyways?
+
+### Big changes from Vanilla - low priority
+- Remove IVs? Maybe make boolean for either 0 or 31 added to stat
+    - Would need to figure out Hidden Power
+- Fire Blast/Hydro Pump/Stone Edge accurate in respective weathers?
+    - Make Thunder also accurate in Electric Terrain?
+- Calculate Electro Ball more similarly to Gyro Ball?
+- Add in Hoenn Dex regionals?
+    - Sun/Shiny Stone for Alolan Raichu
+    - Alolan Sandshrew/Vulpix at Shoal Cave
+    - Alolan Muk
+    - Shiny/Dawn Stone for Galarian Weezing
+    - Cursola
+    - Obstagoon
+    - Hisui Voltorb
+    - Post-game:
+        - Alolan Meowth
+        - Galarian Meowth
+        - Paldean Wooper
+    - Update level up/learnable movesets for them
+    - Sandslash, Ninetales, Cursola, and maybe Obstagoon can be used to diversify the Elite Four teams
 
 ## Future hacks
 All Yellow Pokémon with yellow shinies (Lickitung, Altaria, etc) replacing the regular palette

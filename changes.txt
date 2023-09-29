@@ -1,3 +1,6 @@
+- Some reversions back to R/S
+    - Birch is chased by a Poochyena
+    - Some trainers on Routes 104 and 117 go back to their original locations
 - Gym Leaders use more Hoenn Pokémon
 - Gym Leaders and Magma/Aqua Admins/Leaders no longer have underleveled evolutions
 - Pokémon have a more even encounter distribution

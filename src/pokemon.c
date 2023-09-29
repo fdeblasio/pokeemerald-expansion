@@ -3347,7 +3347,7 @@ static const struct SpeciesItem sAlteringCaveWildMonHeldItems[] =
     {SPECIES_NONE,      ITEM_NONE},
     {SPECIES_MAREEP,    ITEM_GANLON_BERRY},
     {SPECIES_PINECO,    ITEM_APICOT_BERRY},
-    {SPECIES_HOUNDOUR,  ITEM_BIG_MUSHROOM},
+    {SPECIES_SANDILE,   ITEM_BIG_MUSHROOM},
     {SPECIES_TEDDIURSA, ITEM_PETAYA_BERRY},
     {SPECIES_AIPOM,     ITEM_BERRY_JUICE},
     {SPECIES_SHUCKLE,   ITEM_BERRY_JUICE},
@@ -4235,8 +4235,9 @@ u16 GiveMoveToBoxMon(struct BoxPokemon *boxMon, u16 move)
         u16 existingMove = GetBoxMonData(boxMon, MON_DATA_MOVE1 + i, NULL);
         if (existingMove == MOVE_NONE)
         {
+            u8 maxPP = CalculatePPWithBonus(move, 255, i);
             SetBoxMonData(boxMon, MON_DATA_MOVE1 + i, &move);
-            SetBoxMonData(boxMon, MON_DATA_PP1 + i, &gBattleMoves[move].pp);
+            SetBoxMonData(boxMon, MON_DATA_PP1 + i, &maxPP);
             return move;
         }
         if (existingMove == move)

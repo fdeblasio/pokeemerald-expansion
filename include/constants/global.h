@@ -56,7 +56,7 @@
 #define PC_ITEMS_COUNT 20 //was 50
 #define BAG_ITEMS_COUNT 60 //was 30
 #define BAG_KEYITEMS_COUNT 30 //might need more
-#define BAG_POKEBALLS_COUNT 25 //need 27
+#define BAG_POKEBALLS_COUNT 25 //need 27; was 16
 #define BAG_TMHM_COUNT 108 //was 64
 #define BAG_BERRIES_COUNT 46 //need 68
 #define POKEBLOCKS_COUNT 20 //was 40

@@ -2677,7 +2677,7 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
     }
 
     if (sPartyMenuInternal->numActions < 5 && CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES_OR_EGG), MOVE_FLY)) // If Mon can learn HM02 and action list consists of < 4 moves, add Fly to action list
-        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 5 + MENU_FIELD_MOVES);
+        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 4 + MENU_FIELD_MOVES);
 
     if (!InBattlePike())
     {

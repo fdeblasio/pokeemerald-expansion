@@ -46738,6 +46738,7 @@ static const u16 sCarracostaTeachableLearnset[] = {
     MOVE_BITE,
     MOVE_BLIZZARD,
     MOVE_BLOCK,
+    MOVE_BODY_PRESS,
     MOVE_BODY_SLAM,
     MOVE_BRINE,
     MOVE_BULLDOZE,

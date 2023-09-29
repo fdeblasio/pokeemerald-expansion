@@ -148,7 +148,8 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_CLEFFA]                = {{EVO_FRIENDSHIP, 0, SPECIES_CLEFAIRY}},
     [SPECIES_IGGLYBUFF]             = {{EVO_FRIENDSHIP, 0, SPECIES_JIGGLYPUFF},
                                        {EVO_LEVEL, 12, SPECIES_JIGGLYPUFF}},
-    [SPECIES_TOGEPI]                = {{EVO_FRIENDSHIP, 0, SPECIES_TOGETIC}},
+    [SPECIES_TOGEPI]                = {{EVO_FRIENDSHIP, 0, SPECIES_TOGETIC},
+                                       {EVO_LEVEL, 16, SPECIES_TOGETIC}},
 #if P_GEN_4_POKEMON == TRUE
     [SPECIES_TOGETIC]               = {{EVO_ITEM, ITEM_SHINY_STONE, SPECIES_TOGEKISS}},
 #endif
@@ -324,7 +325,8 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
                                        {EVO_ITEM, ITEM_OVAL_STONE, SPECIES_CHANSEY}},
     [SPECIES_GIBLE]                 = {{EVO_LEVEL, 24, SPECIES_GABITE}},
     [SPECIES_GABITE]                = {{EVO_LEVEL, 48, SPECIES_GARCHOMP}},
-    [SPECIES_MUNCHLAX]              = {{EVO_FRIENDSHIP, 0, SPECIES_SNORLAX}},
+    [SPECIES_MUNCHLAX]              = {{EVO_FRIENDSHIP, 0, SPECIES_SNORLAX},
+                                       {EVO_LEVEL, 20, SPECIES_SNORLAX}},
     [SPECIES_RIOLU]                 = {{EVO_FRIENDSHIP_DAY, 0, SPECIES_LUCARIO}},
     [SPECIES_HIPPOPOTAS]            = {{EVO_LEVEL, 34, SPECIES_HIPPOWDON}},
     [SPECIES_SKORUPI]               = {{EVO_LEVEL, 40, SPECIES_DRAPION}},

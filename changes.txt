@@ -216,11 +216,17 @@ Pokémon:
     Aerodactyl:
         Learns Double-Edge, Head Smash, and Brave Bird by level up
 
+    Munchlax (not in main game):
+        Can also evolve at level 20
+
     Zapdos:
         Learns Air Slash by TM
 
     Noctowl:
         Learns Skill Swap by TM (Teal Mask addition)
+
+    Togepi (not in main game):
+        Can also evolve at level 16
 
     Azurill:
         Can also evolve at level 10
@@ -246,7 +252,7 @@ Pokémon:
         Learn Crunch and Psychic Fangs by TM (Teal Mask addition)
         Learn Dual Wingbeat and Lunge by move tutor (Teal Mask addition)
 
-    Granbull (not available in main game):
+    Granbull (not in main game):
         Hidden Ability: Rattled->Strong Jaw
 
     Qwilfish/Hisuian Qwilfish/Overqwil (not in main game):
@@ -460,6 +466,9 @@ Pokémon:
 
     Shieldon/Bastiodon (not in main game):
         Received Rock Head as a second ability
+
+    Carracosta (not in main game):
+        Learns Body Press by TM
 
     Dragapult (not in main game):
         Learns Shadow Claw by TM

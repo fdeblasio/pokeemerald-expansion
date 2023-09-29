@@ -32901,6 +32901,7 @@ static const u16 sTorterraTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BITE,
     MOVE_BLOCK,
+    MOVE_BODY_PRESS,
     MOVE_BODY_SLAM,
     MOVE_BULLDOZE,
     MOVE_BULLET_SEED,
@@ -32922,6 +32923,7 @@ static const u16 sTorterraTeachableLearnset[] = {
     MOVE_GIGA_IMPACT,
     MOVE_GRASS_KNOT,
     MOVE_GRASS_PLEDGE,
+    MOVE_GRASSY_GLIDE,
     MOVE_GRASSY_TERRAIN,
     MOVE_GROWTH,
     MOVE_HEAVY_SLAM,
@@ -32978,6 +32980,7 @@ static const u16 sTorterraTeachableLearnset[] = {
     MOVE_WOOD_HAMMER,
     MOVE_WORK_UP,
     MOVE_WORRY_SEED,
+    MOVE_ZEN_HEADBUTT,
     MOVE_UNAVAILABLE,
 };
 

@@ -437,6 +437,10 @@ Pokémon:
         Learns Fly at level 1 instead of level 63
         Learns Dragon Ascent at level 63 instead of level 1
 
+    Torterra:
+        Learns Body Press, Grassy Glide, and Zen Headbutt by TM (Scarlet/Violet addition)
+        Learns Shell Smash after evolving
+
     Infernape (not in main game):
         Learns Aura Sphere by TM (Scarlet/Violet addition)
 

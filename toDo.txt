@@ -9,7 +9,8 @@ $1\L$2
     - Seems to happen after trainer battles?
     - This occurs even with the Battle Frontier changes reverted
 
-## Second, more advanced run (2.0.0)
+## Second, more advanced run (1.3.0)
+- Stay on EVs/IVs when switching Pokemon
 - If Flash is unused, remove it from being an option in the summary screen
 - Edit moves that work in field
     - Maybe edit so instead of "if has move" to "if can learn move" (might not be simple since it's .inc and not C)
@@ -50,8 +51,9 @@ $1\L$2
     - Update some Flannery trainers
     - Update some Kindlers
 - More save space editing
-- Medicine Pocket?
-- See if it's possible to give item PC and decoration PC have more room
+    - Medicine Pocket?
+    - See if it's possible to give item PC and decoration PC have more room
+- See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Include charms?
 - Remove all PP Ups/Maxes (including Pickup) due to moves having max PP by default
 Double-check Mirage Island
@@ -71,12 +73,10 @@ Battle Frontier
 - Try to find Bolts foreground of Walda PC
 - Some MAN_2's maybe could be switched to DEVON_EMPLOYEE
 - Debug menu improvements
-- Stay on EVs/IVs when switching Pokemon
 - Battle Tent Pokemon/EVs?
 - Edit friendship evolution methods
 - Get all the weird Mauville men at once?
 - Update Favor Lady's items to include new items
-- See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Implement Deoxys encounter at island/changing forms at Fallarbor
 - Give Espeon Power Gem on level up or evolution?
 - Edit Slot odds (SLOT_MACHINE_)? Even though there's only three prizes?

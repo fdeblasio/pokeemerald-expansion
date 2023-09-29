@@ -2679,7 +2679,7 @@ static void DebugAction_Give_AllTMs(u8 taskId)
 {
     u16 i;
     PlayFanfare(MUS_OBTAIN_TMHM);
-    for (i = ITEM_TM01; i <= ITEM_HM08; i++)
+    for (i = ITEM_TM01; i <= ITEM_TM108; i++)
     {
         if (ItemIdToBattleMoveId(i) != MOVE_NONE && !CheckBagHasItem(i, 1))
             AddBagItem(i, 1);
@@ -3580,7 +3580,7 @@ static void DebugAction_Fill_PocketTMHM(u8 taskId)
 {
     u16 itemId;
 
-    for (itemId = ITEM_TM01; itemId <= ITEM_HM08; itemId++)
+    for (itemId = ITEM_TM01; itemId <= ITEM_TM108; itemId++)
     {
         if (CheckBagHasSpace(itemId, 1) && ItemIdToBattleMoveId(itemId) != MOVE_NONE)
             AddBagItem(itemId, 1);

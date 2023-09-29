@@ -8371,11 +8371,11 @@ const struct Item gItems[] =
         .secondaryId = MOVE_CUT,
     },
 
-    [ITEM_HM_FLY] =
+    [ITEM_TM102] =
     {
-        .name = _("HM02"),
+        .name = _("TM102"),
         .price = 0,
-        .description = sHM02Desc,
+        .description = sTM102Desc,
         .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -8410,7 +8410,7 @@ const struct Item gItems[] =
     [ITEM_TM105] =
     {
         .name = _("TM105"),
-        .description = sHM05Desc,
+        .description = sTM105Desc,
         .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -8442,11 +8442,11 @@ const struct Item gItems[] =
         .secondaryId = MOVE_WATERFALL,
     },
 
-    [ITEM_HM_DIVE] =
+    [ITEM_TM108] =
     {
-        .name = _("HM08"),
+        .name = _("TM108"),
         .price = 0,
-        .description = sHM08Desc,
+        .description = sTM108Desc,
         .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,

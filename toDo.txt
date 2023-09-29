@@ -38,8 +38,7 @@ $1\L$2
         - edit tm_hms.h
     - Trick House can still use them but maybe have Escape Rope usable there
 - Turn HMs into TMs if they are no longer used in the field
-    - Remove them from being an option in the summary screen
-        - Edit party_menu.c (4 + MENU_FIELD_MOVES)
+    - Remove them from being an option in the summary screen (party_menu.c enum)
     - Remove release blocks in pokemon_storage_system.c
     - Look for FIELD_MOVE_X
     - Currently are in same index spot. Should be moved to before HMs once everything is figured out (can simplify IsMoveHM once done)

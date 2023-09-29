@@ -942,6 +942,7 @@ enum {
 
 // Hoenn Pokedex order
 enum {
+    HOENN_DEX_NONE,
     HOENN_DEX_TURTWIG,
     HOENN_DEX_GROTLE,
     HOENN_DEX_TORTERRA,

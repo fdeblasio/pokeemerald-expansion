@@ -1776,8 +1776,10 @@ static const struct TrainerMon sParty_Garret[] = {
 static const struct TrainerMon sParty_Winston2[] = {
     {
     .lvl = 30,
-    .species = SPECIES_WINGULL,
-    .heldItem = ITEM_NUGGET
+    .species = SPECIES_SPOINK,
+    .heldItem = ITEM_NUGGET,
+    .isShiny = TRUE,
+    .nickname = COMPOUND_STRING("Mr. Pig")
     },
     {
     .lvl = 30,
@@ -1791,8 +1793,10 @@ static const struct TrainerMon sParty_Winston2[] = {
 static const struct TrainerMon sParty_Winston3[] = {
     {
     .lvl = 33,
-    .species = SPECIES_PELIPPER,
-    .heldItem = ITEM_NUGGET
+    .species = SPECIES_GRUMPIG,
+    .heldItem = ITEM_NUGGET,
+    .isShiny = TRUE,
+    .nickname = COMPOUND_STRING("Mr. Pig")
     },
     {
     .lvl = 33,
@@ -1806,8 +1810,10 @@ static const struct TrainerMon sParty_Winston3[] = {
 static const struct TrainerMon sParty_Winston4[] = {
     {
     .lvl = 36,
-    .species = SPECIES_PELIPPER,
-    .heldItem = ITEM_NUGGET
+    .species = SPECIES_GRUMPIG,
+    .heldItem = ITEM_NUGGET,
+    .isShiny = TRUE,
+    .nickname = COMPOUND_STRING("Mr. Pig")
     },
     {
     .lvl = 36,
@@ -1820,17 +1826,19 @@ static const struct TrainerMon sParty_Winston4[] = {
 
 static const struct TrainerMon sParty_Winston5[] = {
     {
-    .lvl = 40,
-    .species = SPECIES_PELIPPER,
+    .lvl = 50,
+    .species = SPECIES_GRUMPIG,
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
-    .moves = {MOVE_PROTECT, MOVE_AIR_SLASH, MOVE_BRINE, MOVE_TAILWIND},
+    .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_DAZZLING_GLEAM, MOVE_FLASH_CANNON},
     .heldItem = ITEM_BIG_NUGGET,
+    .isShiny = TRUE,
+    .nickname = COMPOUND_STRING("Mr. Pig")
     },
     {
-    .lvl = 40,
+    .lvl = 50,
     .species = SPECIES_LINOONE,
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
-    .moves = {MOVE_SLASH, MOVE_HONE_CLAWS, MOVE_PIN_MISSILE, MOVE_PLAY_ROUGH},
+    .moves = {MOVE_BODY_SLAM, MOVE_PLAY_ROUGH, MOVE_SEED_BOMB, MOVE_HONE_CLAWS},
     .heldItem = ITEM_BIG_NUGGET,
     .isShiny = TRUE,
     .nickname = COMPOUND_STRING("Mr. Zig")

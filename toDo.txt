@@ -129,8 +129,6 @@ Battle Frontier
             - Maybe all Rich Boys/Ladies have shinies (would need to have different Pokemon from each other instead of all having Zigzagoon)
         - Calvin could have a good Nature/EV
         - Leaders would have optimal Abilities/EVs/IVs/Natures
-    - Winston's rich enough to buy TMs so his moveset should incorporate that once TMs are finalized
-        - Gym Leader rematches should also utilize TMs
     - Breeders should have good IVs/Natures/Abilities
     - Triathlete would be Speed-focused (maybe endurance/HP too)
     - Winstrates (including Victor) should have EVs due to the mom mentioning using the Macho Brace

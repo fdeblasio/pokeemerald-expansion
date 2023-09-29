@@ -120,8 +120,7 @@ Pokémon:
     ALL:
         Movesets a combination of Gens 7-9
             Typically this means they have their latest moveset plus most moves from their Gen 7 moveset that have been removed
-                Natural Gift, Lucky Chant, Wring Out, and Synchronoise have been removed
-        Other moveset changes will be noted (movesets are based on their SwSh movesets, so some noted additions may be in newere games. For example, Magcargo can learn Power Gem in SV but its addition here is still noted)
+                Natural Gift, Lucky Chant, Wring Out, and Synchronoise have been removed, though
         If a Pokémon can evolve by holding/being traded with an item, it now can evolve from that item being used
         Catch rate is a minimum of 30 for legendaries/mythicals and 45 for the rest
 
@@ -147,7 +146,7 @@ Pokémon:
         Can also evolve at level 33
 
     Golem:
-        Learns Body Press by TM
+        Learns Body Press by TM (Scarlet/Violet addition)
 
     Cloyster (not in main game):
         Learns Body Press by TM
@@ -259,7 +258,7 @@ Pokémon:
 
     Magcargo:
         Learns Body Press by TM
-        Learns Power Gem by TM
+        Learns Power Gem by TM (Scarlet/Violet addition)
 
     Delibird (not in main game):
         Atk: 55->75
@@ -305,10 +304,10 @@ Pokémon:
         Catch rate: 180->220
 
     Hariyama:
-        Learns Drain Punch by TM
+        Learns Drain Punch by TM (Scarlet/Violet addition)
 
     Nosepass/Probopass:
-        Learn Body Press by TM
+        Learn Body Press by TM (Scarlet/Violet addition)
 
     Delcatty:
         Gets Swift via level up
@@ -386,7 +385,7 @@ Pokémon:
     Dusknoir:
         Learns Spite by breeding
         Learns Drain Punch by TM
-        Learns Leech Life by TM
+        Learns Leech Life by TM (Scarlet/Violet addition)
         Gets Iron Fist as second Ability
 
     Tropius:
@@ -439,7 +438,7 @@ Pokémon:
         Learns Dragon Ascent at level 63 instead of level 1
 
     Infernape (not in main game):
-        Learns Aura Sphere by TM
+        Learns Aura Sphere by TM (Scarlet/Violet addition)
 
     Cranidos/Rampardos (not in main game):
         Received Rock Head as a second ability

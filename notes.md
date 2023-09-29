@@ -45,6 +45,10 @@ upcoming
 - Verdanturf Battle Tent sometimes gives an item right away
 - PokéNav callers sometimes think there were 512 wins at the Battle Palace (seems to be related to Battle Tent issue)
 
+## Tom-specific
+- Add postgame legendaries/Safari Zone to Hoenn Dex? National Dex is useless due to no connectivity with other games
+    - This could actually be applied to the main game too
+
 ## To Do:
 MERGE IN SPECIES REFACTOR AND RE-APPLY CHANGED EVO METHODS
 ### Meta

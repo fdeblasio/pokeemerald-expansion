@@ -1,3 +1,12 @@
+In college, I had you list some of your favorite Pokémon and told you I'd make you a FireRed hack. It never happened, but now hacking has come a long way, although with Emerald getting the improvements. There are some challenges this provides due to it having more of a plot, but I think I made it work.
+
+
+
+
+
+
+
+
 - Wild Pokémon and Trainers have their levels increased to make grinding less of a pain
     - However, with the Exp Share now affecting all party members, this can lead to becoming overleveled
 - Decapitalization
@@ -251,13 +260,13 @@
 <br>
 <br>
 
-- Ivysaur (not in main game):
-    - Evolution: 32->36
+- Squirtle:
+    - Swapped level 3 and 6 moves to make first rival battle easier
 
-- Pidgeot (not in main game):
+- Pidgeot:
     - Learns Acrobatics by TM
 
-- Nidorina/Nidoqueen (not in main game):
+- Nidorina/Nidoqueen:
     - Can now breed
 
 - Pichu:
@@ -271,7 +280,7 @@
 - Raichu:
     - Learns Volt Tackle at level 1
 
-- Cleffa (not in main game):
+- Cleffa:
     - Can also evolve at level 12
 
 - Parasect (not in main game):
@@ -331,23 +340,29 @@
     - Held item: Leek: 5%->100%
     - Learns Drain Punch by TM
 
-- Doduo/Dodrio:
-    - Get Aerial Ace instead of Wing Attack at level 15 due to not having wings
+- Cloyster:
+    - Learns Body Press by TM
 
-- Lickitung (not in main game):
+- Gastly/Haunter/Gengar:
+    - Type: Ghost/Poison->Ghost
+
+- Cubone:
+    - Can also evolve into Alolan Marowak with a Fire Stone
+
+- Sirfetch'd:
+    - Learns Drain Punch by TM
+
+- Lickitung:
     - Atk: 55->65
     - Spe: 30->50
     - Learns Coil by level up
     - Learns Sludge Bomb by TM
     - Ability: Oblivious->Thick Fat
 
-- Lickilicky (not in main game):
+- Lickilicky:
     - Learns Coil by level up
     - Learns Sludge Bomb by TM
     - Ability: Oblivious->Thick Fat
-
-- Galarian Weezing (not in main game):
-    - Learns Misty Explosion by level up
 
 - Rhyperior:
     - Learns Rock Wrecker upon evolving
@@ -376,10 +391,10 @@
 - Scyther (not in main game):
     - Catch rate: 45->90
     - Learns Dual Wingbeat by level up
-    - Learns Lunge by move tutor (Teal Mask addition)
+    - Learns Lunge by TM
 
-- Scizor/Kleavor (not in main game):
-    - Learn Lunge by move tutor (Teal Mask addition)
+- Scizor:
+    - Learns Lunge by TM
 
 - Smoochum (not in main game):
     - Def: 15->20
@@ -395,13 +410,13 @@
     - Catch rate: 45->150
     - Learns Electric Terrain by level up
 
-- Electabuzz (postgame):
+- Electabuzz:
     - Atk: 83->85
     - Def: 57->60
     - SpA: 95->100
     - Learns Electric Terrain by level up
 
-- Electivire (postgame):
+- Electivire:
     - Atk: 123->125
     - Def: 67->70
     - SpA: 95->100
@@ -427,22 +442,14 @@
 - Gyarados:
     - Type: Water/Flying->Water
 
-- Eevee (not in main game):
-    - Now evolves into Espeon with a Sun Stone
-    - Now evolves into Umbreon with a Moon Stone
-    - Now evolves into Sylveon with a Dawn Stone
-
-- Aerodactyl (postgame):
+- Aerodactyl:
     - Learns Dual Wingbeat, Double-Edge, Head Smash, and Brave Bird by level up
 
-- Munchlax (not in main game):
+- Munchlax:
     - Can also evolve at level 20
 
-- Snorlax (not in main game):
+- Snorlax:
     - Learns Slack Off by level up
-
-- Zapdos (not in main game):
-    - Learns Air Slash by TM
 
 - Bayleef (postgame):
     - Evolution: 32->36
@@ -456,70 +463,45 @@
 - Crocnaw (postgame):
     - Evolution: 30->36
 
-- Noctowl (postgame):
-    - Learns Skill Swap by TM (Teal Mask addition)
-
-- Ledyba (postgame):
-    - Atk: 20->40
-
-- Ledian (postgame):
-    - Atk: 35->55
-
-- Spinarak (postgame):
+- Spinarak:
     - Spe: 30->40
 
-- Ariados (postgame):
+- Ariados:
     - Spe: 40->50
 
-- Togepi (not in main game):
+- Togepi:
     - Can also evolve at level 16
 
-- Azurill:
-    - Can also evolve at level 10
-    - Type: Normal/Fairy->Water/Fairy
-    - Gender Ratio: 25/75->50/50
-    - Catch rate: 150->255
-
-- Marill:
-    - HP: 70->75
-    - Atk: 20->40
-    - Def: 50->60
-    - SpA: 20->40
-    - SpD: 50->60
-
-- Azumarill:
-    - Atk: 50->60
-    - Spe: 50->60
-
-- Sunflora:
-    - Learns Morning Sun by level up
-
-- Honchkrow (not in main game):
+- Honchkrow:
     - Learns Drill Peck by level up
 
-- Misdreavus/Mismagius (not in main game):
+- Misdreavus/Mismagius:
     - Gender Ratio: 50/50->25/75
 
-- Gligar/Gliscor (postgame):
+- Gligar/Gliscor:
     - Learn Dual Wingbeat by level up
     - Learn Crunch and Psychic Fangs by TM (Teal Mask addition)
     - Learn Lunge by move tutor (Teal Mask addition)
 
-- Dunsparce (not in main game):
+- Dunsparce:
     - Learns Swift by move tutor
 
-- Granbull (postgame):
+- Snubbull:
+    - Learns Draining Kiss via TM
+
+- Granbull:
     - Learns Psychic Fangs by TM
+    - Learns Draining Kiss via TM
     - Hidden Ability: Rattled->Strong Jaw
 
-- Qwilfish/Hisuian Qwilfish/Overqwil (not in main game):
+- Qwilfish:
     - Learns Poison Tail by level up
 
 - Heracross:
-    - Learns X-Scissor by TM
+    - Learns X-Scissor and Lunge by TM
     - Catch rate: 45->90
 
-- Sneasel (not in main game):
+- Sneasel:
     - Learns Razor Wind by Egg Move
 
 - Slugma:
@@ -529,7 +511,7 @@
     - Learns Body Press by TM
     - Learns Power Gem by TM (Teal Mask addition)
 
-- Mamoswine (not in main game):
+- Mamoswine:
     - Learns Icicle Crash by level up
 
 - Delibird (not in main game):
@@ -543,12 +525,6 @@
 - Lugia:
     - Learns Brave Bird by level up
 
-- Treecko:
-    - Swapped level 3 and 6 moves to make first rival battle easier
-
-- Sceptile:
-    - Learns Leaf Blade upon evolving
-
 - Torchic:
     - Swapped level 3 and 6 moves to make first rival battle easier
 
@@ -560,17 +536,7 @@
     - Swapped level 3 and 6 moves to make first rival battle easier
 
 - Mightyena:
-    - Learns Psychic Fangs by TM (Teal Mask addition)
-
-- Wurmple:
-    - Learns Bug Bite at level 7 instead of 15
-    - Evolution is based on time of day
-
-- Beautifly:
-    - Learns Air Slash by TM
-
-- Dustox:
-    - Sp. Def: 90->100 to match Beautifly's stat increase
+    - Learns Psychic Fangs by TM
 
 - Swellow:
     - Learns Acrobatics by TM
@@ -594,12 +560,6 @@
 - Loudred/Exploud:
     - Received Punk Rock as a second ability
     - Learn Disarming Voice, Teeter Dance, and Dizzy Punch via level up
-
-- Makuhita:
-    - Catch rate: 180->220
-
-- Hariyama:
-    - Learns Drain Punch by TM (Scarlet/Violet addition)
 
 - Nosepass/Probopass:
     - Learn Body Press by level up
@@ -745,8 +705,6 @@
     - Learns Fly at level 1 instead of level 63
     - Learns Dragon Ascent at level 63 instead of level 1
 
-**NOTE: Nothing past here is in the main game**
-
 - Turtwig:
     - Evolution: 18->16
 
@@ -787,14 +745,8 @@
 - Riolu:
     - Can also evolve at level 20
 
-- Snivy:
-    - Evolution: 17->16
-
-- Tepig:
-    - Evolution: 17->16
-
-- Oshawott:
-    - Evolution: 17->16
+- Whirlipede:
+    - Learns Lunge by TM
 
 - Woobat:
     - Can also evolve at level 24
@@ -810,13 +762,19 @@
 
 - Scolipede:
     - Learns Coil by level up
-    - Learns Lunge by move tutor
+    - Learns Lunge by TM
 
 - Sandile (postgame):
     - Evolution: 29->25
 
 - Krokorok (postgame):
     - Evolution: 40->38
+
+- Audino:
+    - Type: Normal->Normal/Fairy
+    - Gender Ratio: 50/50 -> 25/75
+    - Base experience: 390->395
+    - Mega base experience: 425->608
 
 - Darumaka:
     - Evolution: 35->32
@@ -863,15 +821,6 @@
 - Joltik:
     - Evolution: 36->32
 
-- Klink:
-    - Evolution: 38->32
-
-- Klang:
-    - Evolution: 49->42
-
-- Tynamo:
-    - Evolution: 39->32
-
 - Litwick:
     - Evolution: 41->36
 
@@ -887,99 +836,22 @@
 - Cryogonal:
     - Learns Dazzling Gleam, Flash, and Power Gem by TM
 
-- Mienfoo:
-    - Evolution: 50->38
-
 - Golett:
     - Evolution: 43->40
-
-- Pawniard:
-    - Evolution: 52->40
-
-- Rufflet:
-    - Evolution: 54->35
-
-- Vullaby:
-    - Evolution: 54->35
 
 - Heatmor:
     - Atk: 97->105
     - Def: 66->70
     - SpD: 66->70
 
-- Durant:
-    - HP: 58->65
-    - Atk: 109->110
-    - Def: 112->115
-    - SpA: 48->50
-    - SpD: 48->50
-    - Spe: 109->110
-
-- Deino:
-    - Evolution: 50->30
-
-- Zweilous:
-    - Evolution: 64->55
-
-- Larvesta:
-    - Evolution: 59->56
-
 - Spritzee/Aromatisse:
     - Gender Ratio: 50/50->25/75
 
-- Swirlix/Slurpuff:
+- Swirlix/Slurpuff (postgame):
     - Learn Lick by level up
-
-- Skrelp:
-    - Evolution: 48->37
-
-- Goomy:
-    - Evolution: 40->35
 
 - Noibat:
     - Evolution: 48->40
-
-- Rowlet:
-    - Evolution: 17->16
-
-- Dartrix:
-    - Evolution: 34->36
-
-- Litten:
-    - Evolution: 17->16
-
-- Torracat:
-    - Evolution: 34->36
-
-- Popplio:
-    - Evolution: 17->16
-
-- Brionne:
-    - Evolution: 34->36
-
-- Type: Null:
-    - Can also evolve at level 45
-
-- Thwackey:
-    - Evolution: 35->36
-
-- Raboot:
-    - Evolution: 35->36
-
-- Drizzile:
-    - Evolution: 35->36
-
-- Hatenna:
-    - Evolution: 32->28
-
-- Hattrem:
-    - Evolution: 42->38
-
-- Impidimp:
-    - Evolution: 32->28
-
-- Morgrem:
-    - Evolution: 42->38
 
 - Snom:
     - Can also evolve at level 21

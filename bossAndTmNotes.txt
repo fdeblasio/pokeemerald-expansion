@@ -1,39 +1,39 @@
-BOSSES:            VANILLA                   UPDATED
-Roxanne:         12, 12, 15
-Brawly:          16, 16, 19
+BOSSES:
+Leader 1:        12, 12, 15
+Leader 2:        16, 16, 19
 Rival 110:       18, 18, 20
-Wattson:         20, 22, 22, 24
-Tabitha:         18, 20, 22, 22           23, 23, 25
-Maxie:           24, 24, 25               25, 25, 25, 27
-Flannery:        24, 24, 26, 29           25, 27, 27, 29
-Norman:          27, 27, 29, 31           28, 30, 30, 32
-Shelly:          28, 28                   31, 31, 33
-Rival 119:       29, 29, 31               32, 32, 32, 33
-Winona:          29, 29, 30, 31, 33       32, 32, 33, 33, 35
-Rival Lilycove:  31, 32, 32, 34           35, 35, 35, 36, 37
-Tabitha:         26, 28, 30, 33           36, 37, 38
-Maxie:           37, 38, 39               37, 38, 38, 39
-Matt:            34, 34                   39, 39, 40
-Tate/Liza:       41, 41, 42, 42
-Courtney:        N/A                      40, 40, 42
-Tabitha/Maxie:   36, 38, 40/42, 43, 44    40, 40, 42/42, 43, 44
-Regis:           40                       45
-Matt/Shelly:     N/A/37, 37               42, 42, 43/42, 42, 43
-Archie:          41, 41, 43               43, 43, 44, 45
-Juan:            41, 41, 43, 43, 46       44, 44, 45, 45, 47
-Rayquaza:        70                       50
-Wally:           41, 43, 44, 44, 45       46, 46, 47, 47, 49
-Sidney:          46, 46, 48, 48, 49       47, 47, 48, 48, 50
-Phoebe:          48, 49, 49, 50, 51       49, 49, 50, 50, 52
-Glacia:          50, 50, 52, 52, 53       51, 51, 52, 52, 54
-Drake:           52, 53, 53, 54, 55       53, 53, 53, 54, 56
-Wallace:         55, 56, 56, 56, 57, 58   56, 56, 56, 56, 57, 58
-Latios/Latias:   40                       60
-Mew:             N/A                      60
-Deoxys:          N/A                      60
-Lugia/Ho-Oh:     N/A                      70
+Leader 3:        20, 22, 22, 24
+Tabitha:         23, 23, 25
+Maxie:           25, 25, 25, 27
+Leader 4:        25, 27, 27, 29
+Norman:          28, 30, 30, 32
+Shelly:          31, 31, 33
+Rival 119:       32, 32, 32, 33
+Leader 6:        32, 32, 33, 33, 35
+Rival Lilycove:  35, 35, 35, 36, 37
+Tabitha:         36, 37, 38
+Maxie:           37, 38, 38, 39
+Matt:            39, 39, 40
+Leader 7:        41, 41, 42, 42
+Courtney:        40, 40, 42
+Tabitha/Maxie:   40, 40, 42/42, 43, 44
+Regis:           45
+Matt/Shelly:     42, 42, 43/42, 42, 43
+Archie:          43, 43, 44, 45
+Leader 8:        44, 44, 45, 45, 47
+Rayquaza:        50
+Wally:           46, 46, 47, 47, 49
+Elite Four 1:    47, 47, 48, 48, 50
+Elite Four 2:    49, 49, 50, 50, 52
+Elite Four 3:    51, 51, 52, 52, 54
+Elite Four 4:    53, 53, 53, 54, 56
+Wallace:         56, 56, 56, 56, 57, 58
+Latios/Latias:   60
+Mew:             60
+Deoxys:          60
+Lugia/Ho-Oh:     70
 Groudon/Kyogre:  70
-Steven:          75, 76, 76, 76, 77, 78   77, 77, 78, 78, 79, 80
+Steven:          77, 77, 78, 78, 79, 80
 
 Gym Leader/Wally Rematches:
 60 (new/returning 2), 63 (returning 1), 65 (signature) 4+

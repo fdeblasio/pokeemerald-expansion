@@ -165,7 +165,7 @@
 
 #define OPTION_MENU_FLAG (1 << 15)
 
-#define INTRO_SPECIES SPECIES_ZANGOOSE
+#define INTRO_SPECIES SPECIES_SPHEAL
 
 // Static type declarations
 

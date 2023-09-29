@@ -157,12 +157,6 @@ Pokémon:
     Doduo/Dodrio:
         Get Aerial Ace instead of Wing Attack at level 15 due to not having wings
 
-    Exeggcute (not in main game):
-        Evolves into Alolan Exeggcute with Sun Stone
-
-    Cubone (not in main game):
-        Evolves into Alolan Marowak with Fire Stone
-
     Galarian Weezing:
         Learns Misty Explosion by level up
 
@@ -431,11 +425,8 @@ Pokémon:
         SpA: 40->60
         Spd: 97->100
 
-    Beldum/Metang/Metagross:
-        Catch rate: 3->45
-
     Latios/Latias:
-        Level up learnset slightly restructured to avoid a battle they only have one attacking move
+        Level up learnset slightly restructured to avoid a battle they where only have one attacking move
 
     Kyogre:
         Learns Origin Pulse at level 63 instead of level 1

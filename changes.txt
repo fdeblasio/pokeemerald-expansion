@@ -172,6 +172,12 @@ Pokémon:
     Aerodactyl:
         Learns Double-Edge, Head Smash, and Brave Bird by level up
 
+    Munchlax:
+        Can also evolve at level 20
+
+    Togepi:
+        Can also evolve at level 16
+
     Gligar/Gliscor:
         Learn Crunch and Psychic Fangs by TM
         Learn Dual Wingbeat and Lunge by move tutor

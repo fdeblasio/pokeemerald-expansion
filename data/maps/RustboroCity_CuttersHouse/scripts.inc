@@ -38,7 +38,7 @@ RustboroCity_CuttersHouse_Text_ExplainCut:
 	.string "short, is Cut.\p"
 	.string "Any Pokémon that's learned Cut can\n"
 	.string "chop down thin trees if the Trainer\l"
-	.string "has earned the Stone Badge.$"
+	.string "has earned the Heal Badge.$"
 
 RustboroCity_CuttersHouse_Text_DadHelpedClearLandOfTrees:
 	.string "When they were expanding the city of\n"

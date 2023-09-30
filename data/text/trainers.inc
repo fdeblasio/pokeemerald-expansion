@@ -3860,20 +3860,20 @@ Route125_Text_ErnestRematchPostBattle:
 	.string "high tide to low tide. Don't forget!$"
 
 Route125_Text_KimIntro:
-	.string "Kim: A funny old man lives in the\n"
+	.string "Lia: A funny old man lives in the\n"
 	.string "Shoal Cave. Someone told me.\l"
 	.string "Are you going to see him, too?$"
 
 Route125_Text_KimDefeat:
-	.string "Kim: I thought we would win.$"
+	.string "Lia: I thought we would win.$"
 
 Route125_Text_KimPostBattle:
-	.string "Kim: A funny old man lives in the\n"
+	.string "Lia: A funny old man lives in the\n"
 	.string "Shoal Cave, doesn't he?\p"
 	.string "Let's go see him, Iris!$"
 
 Route125_Text_KimNotEnoughMons:
-	.string "Kim: No, no, no! You need two Pokémon,\n"
+	.string "Lia: No, no, no! You need two Pokémon,\n"
 	.string "or it's just no good!$"
 
 Route125_Text_IrisIntro:

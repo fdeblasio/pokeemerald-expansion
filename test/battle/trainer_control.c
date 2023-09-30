@@ -25,7 +25,7 @@ static const struct TrainerMon sTestParty1[] =
         .heldItem = ITEM_ASSAULT_VEST,
         .ball = ITEM_MASTER_BALL,
         .isShiny = TRUE,
-        .nickname = COMPOUND_STRING("Bubbles")
+        .nickname = COMPOUND_STRING("Bubbles"),
         .friendship = 42,
     },
     {

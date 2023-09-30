@@ -3360,7 +3360,7 @@ static const u8 sTM76Desc[] = _(
     "Stealth Rock");
 
 static const u8 sTM77Desc[] = _(
-    "Psych Up");
+    "Draining Kiss");
 
 static const u8 sTM78Desc[] = _(
     "Crunch");

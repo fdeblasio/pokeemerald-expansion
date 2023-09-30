@@ -132,11 +132,8 @@ Pokémon:
     Pichu:
         Can also evolve at level 12
 
-    Pikachu:
-        Learns Volt Tackle at level 1
-
-    Raichu:
-        Learns Volt Tackle at level 1
+    Pikachu/Raichu:
+        Learn Volt Tackle at level 1
 
     Cleffa (not in main game):
         Can also evolve at level 12

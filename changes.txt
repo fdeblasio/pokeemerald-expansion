@@ -138,6 +138,9 @@ Pokémon:
     Raichu:
         Learns Volt Tackle at level 1
 
+    Cleffa (not in main game):
+        Can also evolve at level 12
+
     Igglybuff:
         Can also evolve at level 12
 

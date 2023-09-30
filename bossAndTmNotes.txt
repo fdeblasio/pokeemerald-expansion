@@ -42,113 +42,107 @@ Gym Leader/Wally Rematches:
 75 (new/returning 2), 78 (returning 1), 80 (signature) 6
 
 
-TM01_FOCUS_PUNCH - Route 115
-TM02_DRAGON_CLAW - Meteor Falls
-TM03_WATER_PULSE - Juan
-TM04_CALM_MIND - Slateport TM Shop
-TM05_ROAR - Route 114
-TM06_TOXIC - Lavaridge TM Shop
-TM07_HAIL - Shoal Cave
-TM08_BULK_UP - Brawly
-TM09_BULLET_SEED - Route 104
-TM10_HIDDEN_POWER - Fortree
-TM11_SUNNY_DAY - Scorched Slab
-TM12_TAUNT - Trick House
-TM13_ICE_BEAM - Abandonded Ship
-TM14_BLIZZARD - Lilycove Department Store
-TM15_HYPER_BEAM - Lilycove Department Store
-TM16_LIGHT_SCREEN - Lilycove Department Store
-TM17_PROTECT - Lilycove Department Store
-TM18_RAIN_DANCE - Abandonded Ship
-TM19_GIGA_DRAIN - Route 123
-TM20_SAFEGUARD - Lilycove Department Store
-TM21_FRUSTRATION - Pacifidlog
-TM22_SOLAR_BEAM - Safari Zone
-TM23_IRON_TAIL - Meteor Falls
-TM24_THUNDERBOLT - Mauville
-TM25_THUNDER - Lilycove Department Store
-TM26_EARTHQUAKE - Seafloor Cavern
-TM27_RETURN - Pacifidlog (REMOVE ONE)
-TM28_DIG - Route 114
-TM29_PSYCHIC - Tate/Liza
-TM30_SHADOW_BALL - Mt. Pyre
-TM31_BRICK_BREAK - Sootopolis
-TM32_DOUBLE_TEAM - Route 113
-TM33_REFLECT - Lilycove Department Store
-TM34_SHOCK_WAVE - Wattson
-TM35_FLAMETHROWER - Fiery Path
-TM36_SLUDGE_BOMB - Dewford
-TM37_SANDSTORM - Route 111
-TM38_FIRE_BLAST - Lilycove Department Store
-TM39_ROCK_TOMB - Roxanne
-TM40_AERIAL_ACE - Winona
-TM41_TORMENT - Slateport
-TM42_FACADE - Norman
-TM43_SECRET_POWER - Route 111
-TM44_REST - Lilycove
-TM45_ATTRACT - Verdanturf
-TM46_THIEF - Slateport
-TM47_STEEL_WING - Granite Cave
-TM48_SKILL_SWAP - Mt. Pyre
-TM49_SNATCH - SS Tidal
-TM50_OVERHEAT - Flannery
+TM01: Focus Punch - Route 115
+TM02: Dragon Claw - Meteor Falls
+TM03: Water Pulse - Juan
+TM04: Calm Mind - Slateport TM Shop
+TM05: Roar - Route 114
+TM06: Toxic - Lavaridge TM Shop
+TM07: Hail - Shoal Cave
+TM08: Bulk Up - Brawly
+TM09: Bullet Seed - Route 104
+TM10: Hidden Power - Fortree
+TM11: Sunny Day - Scorched Slab
+TM12: Taunt - Trick House
+TM13: Ice Beam - Abandonded Ship
+TM14: Blizzard - Lilycove Department Store
+TM15: Hyper Beam - Lilycove Department Store
+TM16: Light Screen - Lilycove Department Store
+TM17: Protect - Lilycove Department Store
+TM18: Rain Dance - Abandonded Ship
+TM19: Giga Drain - Route 123
+TM20: Safeguard - Lilycove Department Store
+TM21: Frustration - Pacifidlog
+TM22: Solar Beam - Safari Zone
+TM23: Iron Tail - Meteor Falls
+TM24: Thunderbolt - Mauville
+TM25: Thunder - Lilycove Department Store
+TM26: Earthquake - Seafloor Cavern
+TM27: Return - Pacifidlog (REMOVE ONE)
+TM28: Dig - Route 114
+TM29: Psychic - Tate/Liza
+TM30: Shadow Ball - Mt. Pyre
+TM31: Brick Break - Sootopolis
+TM32: Double Team - Route 113
+TM33: Reflect - Lilycove Department Store
+TM34: Shock Wave - Wattson
+TM35: Flamethrower - Fiery Path
+TM36: Sludge Bomb - Dewford
+TM37: Sandstorm - Route 111
+TM38: Fire Blast - Lilycove Department Store
+TM39: Rock Tomb - Roxanne
+TM40: Aerial Ace - Winona
+TM41: Torment - Slateport
+TM42: Facade - Norman
+TM43: Secret Power - Route 111
+TM44: Rest - Lilycove
+TM45: Attract - Verdanturf
+TM46: Thief - Slateport
+TM47: Steel Wing - Granite Cave
+TM48: Skill Swap - Mt. Pyre
+TM49: Snatch - SS Tidal
+TM50: Overheat - Flannery
 
-Lilycove Department - 8
-Slateport TM - 8
-Lavaridge TM - 10
-Lilycove TM Shop - 32
-
-TM51_ROOST - Slateport TM Shop
-TM52_FOCUS_BLAST - Victory Road
-TM53_ENERGY_BALL - Lilycove TM Shop
-TM54_FALSE_SWIPE - Slateport TM Shop
-TM55_BRINE - Lavaridge TM Shop
-TM56_SIGNAL_BEAM - Lilycove TM Shop
-TM57_CHARGE_BEAM - Slateport TM Shop
-TM58_PSYCHIC_FANGS - Lilycove TM Shop
-TM59_DRAGON_PULSE - Lilycove TM Shop
-TM60_DRAIN_PUNCH - Lilycove TM Shop
-TM61_WILL_O_WISP - Slateport TM Shop
-TM62_SILVER_WIND - Slateport TM Shop
-TM63_DAZZLING_GLEAM - Lilycove TM Shop
-TM64_SEED_BOMB - Lilycove TM Shop
-TM65_SHADOW_CLAW - Lilycove TM Shop
-TM66_PAYBACK - Lavaridge TM Shop
-TM67_POWER_GEM - Fallarbor
-TM68_GIGA_IMPACT - Lilycove TM Shop
-TM69_PLAY_ROUGH - Lilycove TM Shop
-TM70_LEECH_LIFE - Lilycove TM Shop
-TM71_STONE_EDGE - Lilycove TM Shop
-TM72_AVALANCHE - Lavaridge TM Shop
-TM73_THUNDER_WAVE - Slateport TM Shop
-TM74_GYRO_BALL - Lavaridge TM Shop
-TM75_SWORDS_DANCE - Lavaridge TM Shop
-TM76_STEALTH_ROCK - Lavaridge TM Shop
-TM77_PSYCH_UP - Slateport TM Shop
-TM78_CRUNCH - Lilycove TM Shop
-TM79_DARK_PULSE - Lilycove TM Shop
-TM80_ROCK_SLIDE - Lilycove TM Shop
-TM81_X_SCISSOR - Lilycove TM Shop
-TM82_NIGHT_SLASH - Lilycove TM Shop
-TM83_IRON_HEAD - Lilycove TM Shop
-TM84_POISON_JAB - Lilycove TM Shop
-TM85_AURA_SPHERE - Lilycove TM Shop
-TM86_GRASS_KNOT - Lavaridge TM Shop
-TM87_BUG_BUZZ - Lilycove TM Shop
-TM88_ACROBATICS - Lilycove TM Shop
-TM89_U_TURN - Lavaridge TM Shop
-TM90_BODY_SLAM - Lilycove TM Shop
-TM91_FLASH_CANNON - Lilycove TM Shop
-TM92_TRICK_ROOM - Lavaridge TM Shop
-TM93_LIQUIDATION - Lilycove TM Shop
-TM94_THUNDER_PUNCH - Lilycove TM Shop
-TM95_FIRE_PUNCH - Lilycove TM Shop
-TM96_ICE_PUNCH - Lilycove TM Shop
-TM97_EARTH_POWER - Lilycove TM Shop
-TM98_AIR_SLASH - Lilycove TM Shop
-TM99_BODY_PRESS - Lilycove TM Shop
-TM100_MOONBLAST - Lilycove TM Shop
-
+TM51: Roost - Slateport TM Shop
+TM52: Focus Blast - Victory Road
+TM53: Energy Ball - Lilycove TM Shop
+TM54: False Swipe - Slateport TM Shop
+TM55: Brine - Lavaridge TM Shop
+TM56: Signal Beam - Lilycove TM Shop
+TM57: Charge Beam - Slateport TM Shop
+TM58: Psychic Fangs - Lilycove TM Shop
+TM59: Dragon Pulse - Lilycove TM Shop
+TM60: Drain Punch - Lilycove TM Shop
+TM61: Will-O-Wisp - Slateport TM Shop
+TM62: Silver Wind - Slateport TM Shop
+TM63: Dazzling Gleam - Lilycove TM Shop
+TM64: Seed Bomb - Lilycove TM Shop
+TM65: Shadow Claw - Lilycove TM Shop
+TM66: Payback - Lavaridge TM Shop
+TM67: Power Gem - Fallarbor
+TM68: Giga Impact - Lilycove TM Shop
+TM69: Play Rough - Lilycove TM Shop
+TM70: Leech Life - Lilycove TM Shop
+TM71: Stone Edge - Lilycove TM Shop
+TM72: Avalanche - Lavaridge TM Shop
+TM73: Thunder Wave - Slateport TM Shop
+TM74: Gyro Ball - Lavaridge TM Shop
+TM75: Swords Dance - Lavaridge TM Shop
+TM76: Stealth Rock - Lavaridge TM Shop
+TM77: Psych Up - Slateport TM Shop
+TM78: Crunch - Lilycove TM Shop
+TM79: Dark Pulse - Lilycove TM Shop
+TM80: Rock Slide - Lilycove TM Shop
+TM81: X-Scissor - Lilycove TM Shop
+TM82: Night Slash - Lilycove TM Shop
+TM83: Iron Head - Lilycove TM Shop
+TM84: Poison Jab - Lilycove TM Shop
+TM85: Aura Sphere - Lilycove TM Shop
+TM86: Grass Knot - Lavaridge TM Shop
+TM87: Bug Buzz - Lilycove TM Shop
+TM88: Acrobatics - Lilycove TM Shop
+TM89: U-turn - Lavaridge TM Shop
+TM90: Body Slam - Lilycove TM Shop
+TM91: Flash Cannon - Lilycove TM Shop
+TM92: Trick Room - Lavaridge TM Shop
+TM93: Liquidation - Lilycove TM Shop
+TM94: Thunder Punch - Lilycove TM Shop
+TM95: Fire Punch - Lilycove TM Shop
+TM96: Ice Punch - Lilycove TM Shop
+TM97: Earth Power - Lilycove TM Shop
+TM98: Air Slash - Lilycove TM Shop
+TM99: Body Press - Lilycove TM Shop
+TM100: Moonblast - Lilycove TM Shop
 
 Mainland Tutors:
     Double-Edge

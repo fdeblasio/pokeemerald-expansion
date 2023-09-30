@@ -904,10 +904,10 @@ MatchCall_PersonalizedText24::
 MatchCall_PersonalizedText25::
 	.string "Snivel… It's… {STR_VAR_1}…\n"
 	.string "…Sob…\p"
-	.string "Roxanne chewed me out in class\n"
+	.string "Teach chewed me out in class\n"
 	.string "today.\p"
 	.string "But I don't dislike her or anything.\p"
-	.string "Roxanne tells me exactly what\n"
+	.string "Teach tells me exactly what\n"
 	.string "I did wrong so I can learn from it.\p"
 	.string "You bet I'll be going to\n"
 	.string "the Trainer's School tomorrow!\p"
@@ -915,11 +915,11 @@ MatchCall_PersonalizedText25::
 
 MatchCall_PersonalizedText26::
 	.string "It's {STR_VAR_1}!\p"
-	.string "Roxanne let me battle with her\n"
+	.string "Teach let me battle with her\n"
 	.string "yesterday.\p"
 	.string "The results…\n"
 	.string "Terrible, like you needed to ask.\p"
-	.string "But I was delighted that Roxanne\n"
+	.string "But I was delighted that Teach\n"
 	.string "would even let me challenge her!\p"
 	.string "You wouldn't believe how much\n"
 	.string "more I admire her!\p"
@@ -2039,7 +2039,7 @@ MatchCall_Text_Mom3::
 	.string "they fall apart, honey!$"
 
 MatchCall_Text_Roxanne1::
-	.string "Roxanne: Oh, hello, {PLAYER}!\p"
+	.string "Kristen: Oh, hello, {PLAYER}!\p"
 	.string "I've been hard at work retraining\n"
 	.string "since we met.\p"
 	.string "I will still need some more time\n"
@@ -2048,7 +2048,7 @@ MatchCall_Text_Roxanne1::
 	.string "for a rematch!$"
 
 MatchCall_Text_Roxanne2::
-	.string "Roxanne: Is this {PLAYER}?\n"
+	.string "Kristen: Is this {PLAYER}?\n"
 	.string "Congratulations!\l"
 	.string "I've been hearing about you!\p"
 	.string "As for me, I need some more time\n"
@@ -2057,13 +2057,13 @@ MatchCall_Text_Roxanne2::
 	.string "for a rematch!$"
 
 MatchCall_Text_Roxanne3::
-	.string "Roxanne: {PLAYER}!\n"
+	.string "Kristen: {PLAYER}!\n"
 	.string "My Gym is ready!\p"
 	.string "Please visit Rustboro whenever\n"
 	.string "you can!$"
 
 MatchCall_Text_Roxanne4::
-	.string "Roxanne: At the Rustboro Gym,\n"
+	.string "Kristen: At the Rustboro Gym,\n"
 	.string "the fact that we battled, {PLAYER},\l"
 	.string "is a matter of pride.$"
 

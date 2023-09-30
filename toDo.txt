@@ -153,6 +153,9 @@ Battle Frontier
 - Add Pokemon with dolls? (Togepi, Smoochum, Clefairy, Lapras, Snorlax, Venusaur, Charizard, Blastoise)
 - Make seperate Dex for post-game (similar to SwSh DLC dexes)?
 - Give Absol/Ceruledge Sharpness?
+- Make inserting trainer sprites easier?
+    - Wrapper for src/data/graphics/trainers.h
+    - Condense AnimCmds to just one in src/data/trainer_graphics/front_pic_anims.h
 - Contests overhaul
 - Frontier overhaul:
     - Pokemon

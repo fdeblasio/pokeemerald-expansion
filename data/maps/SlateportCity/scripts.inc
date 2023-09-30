@@ -567,13 +567,13 @@ SlateportCity_EventScript_TMClerk::
 	.align 2
 SlateportCity_Market_TMs:
 	.2byte ITEM_TM_CALM_MIND
+	.2byte ITEM_TM_ROCK_TOMB
 	.2byte ITEM_TM_ROOST
 	.2byte ITEM_TM_FALSE_SWIPE
 	.2byte ITEM_TM_CHARGE_BEAM
 	.2byte ITEM_TM_WILL_O_WISP
 	.2byte ITEM_TM_SILVER_WIND
 	.2byte ITEM_TM_THUNDER_WAVE
-	.2byte ITEM_TM_PSYCH_UP
 	.2byte ITEM_NONE
 	release
 	end

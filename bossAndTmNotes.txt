@@ -80,7 +80,7 @@ TM35: Flamethrower - Fiery Path
 TM36: Sludge Bomb - Dewford
 TM37: Sandstorm - Route 111
 TM38: Fire Blast - Lilycove Department Store
-TM39: Rock Tomb - Roxanne
+TM39: Rock Tomb - Slateport TM Shop
 TM40: Aerial Ace - Winona
 TM41: Torment - Slateport
 TM42: Facade - Norman
@@ -119,7 +119,7 @@ TM73: Thunder Wave - Slateport TM Shop
 TM74: Nasty Plot - Lavaridge TM Shop
 TM75: Swords Dance - Lavaridge TM Shop
 TM76: Stealth Rock - Lavaridge TM Shop
-TM77: Psych Up - Slateport TM Shop
+TM77: Draining Kiss - Rustboro Gym Leader
 TM78: Crunch - Lilycove TM Shop
 TM79: Dark Pulse - Lilycove TM Shop
 TM80: Rock Slide - Lilycove TM Shop

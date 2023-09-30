@@ -8064,7 +8064,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_PSYCH_UP
+        .secondaryId = MOVE_DRAINING_KISS
     },
 
     [ITEM_TM78] =

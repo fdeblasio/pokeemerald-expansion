@@ -82,8 +82,6 @@ Battle Frontier
 - Replace ifdefs for move stats with just one set of stats?
 - Add EXP Candy
 - Improve B-canceling moves
-- Figure out how to get important trainers to use their best Pokemon last
-    - AI_FLAG_ACE_POKEMON
 - Go back and make rematch levels stronger/more consistent (first see if they can be locked behind badges)
 - Type effectiveness in battle
 - PC in menu (look at debug menu)

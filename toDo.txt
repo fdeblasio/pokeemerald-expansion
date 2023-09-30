@@ -15,13 +15,6 @@ $1\L$2
 - Edit moves that work in field
     - Maybe edit so instead of "if has move" to "if can learn move" (might not be simple since it's .inc and not C)
     - Cut:
-        - Slash?
-        - Fury Swipes?
-        - Crush Claw?
-        - Dragon Claw?
-        - X-Scissor
-        - Aqua Cutter
-        - Psycho Cut
         - Moves boosted by Sharpness
     - Rock Smash:
         - Brick Break
@@ -31,8 +24,9 @@ $1\L$2
         - Superpower?
         - Close Combat?
 - Expand moves usable in overworld (see above)
-    - Alternatively, remove instances of trees, rocks, boulders, etc
+    - Alternatively, remove instances of rocks, boulders, etc
         - Would need to figure out Rusturf
+        - Cut is still usable in Trick House
     - Would need to double check but this should make Cut, Rock Smash, and Strength forgettable
         - (sHMMoves and IsMoveHM)
         - edit tm_hms.h

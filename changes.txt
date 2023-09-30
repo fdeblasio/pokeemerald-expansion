@@ -7,6 +7,7 @@
 - Tate and Liza give out Psychic instead of Calm Mind
 - Fly, Flash, and Dive can now be forgotten
 - Fly can be used if a Pokémon can learn it, without actually needing to be taught it. It can also be used without needing a badge
+- Cut trees have been removed from everywhere but the Trick House
 - Brick Break can now also break rocks in the overworld
 - Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room. The door to Sealed Chamber and the Regis' inner rooms are now automatically open
 - Made rapids easier to navigate so that only one trip is needed to get all items/battle all trainers (at the cost of looking slightly worse)

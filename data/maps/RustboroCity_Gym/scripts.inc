@@ -176,11 +176,11 @@ RustboroCity_Gym_Text_MarcPostBattle:
 	.string "pick the Fairy type at her young age.$"
 
 RustboroCity_Gym_Text_RoxanneIntro:
-	.string "Hello, I am Roxanne, the Rustboro\n"
+	.string "Hello, I am Kristen, the Rustboro\n"
 	.string "Pokémon Gym Leader.\p"
 	.string "I became a Gym Leader so that I might\n"
-	.string "apply what I learned at the Pokémon\l"
-	.string "Trainer's School in battle.\p"
+	.string "apply what I learned at nursing\l"
+	.string "school in battle.\p"
 	.string "Would you kindly demonstrate how you\n"
 	.string "battle, and with which Pokémon?$"
 

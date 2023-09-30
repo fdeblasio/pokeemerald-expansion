@@ -2087,7 +2087,7 @@ static const struct TrainerMon sParty_Gilbert[] = {
     }
 };
 
-static const struct TrainerMon sParty_Franklin[] = {
+static const struct TrainerMon sParty_Lee[] = {
     {
     .lvl = 42,
     .species = SPECIES_SEALEO,
@@ -3401,25 +3401,30 @@ static const struct TrainerMon sParty_Drake[] = {
     }
 };
 
-static const struct TrainerMon sParty_Roxanne1[] = {
+static const struct TrainerMon sParty_Kristen1[] = {
     {
     .lvl = 12,
-    .species = SPECIES_LILEEP,
+    .species = SPECIES_SNUBBULL,
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-    .moves = {MOVE_ROCK_TOMB, MOVE_WRAP, MOVE_INGRAIN, MOVE_CONFUSE_RAY},
+    .moves = {MOVE_DRAINING_KISS, MOVE_CHARM, MOVE_TACKLE, MOVE_TAIL_WHIP},
+    .nickname = COMPOUND_STRING("Nova II")
+    .ball = ITEM_HEAL_BALL,
     },
     {
     .lvl = 12,
-    .species = SPECIES_ANORITH,
+    .species = SPECIES_SPRITZEE,
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-    .moves = {MOVE_ROCK_TOMB, MOVE_SCRATCH, MOVE_HARDEN, MOVE_WATER_GUN},
+    .moves = {MOVE_DRAINING_KISS, MOVE_ECHOED_VOICE, MOVE_SWEET_KISS, MOVE_SWEET_SCENT},
+    .ball = ITEM_HEAL_BALL,
     },
     {
     .lvl = 15,
-    .species = SPECIES_NOSEPASS,
+    .species = SPECIES_AUDINO,
+    .ability = ABILITY_HEALER,
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
-    .moves = {MOVE_ROCK_TOMB, MOVE_BLOCK, MOVE_HARDEN, MOVE_TACKLE},
+    .moves = {MOVE_DRAINING_KISS, MOVE_BABY_DOLL_EYES, MOVE_PLAY_NICE, MOVE_POUND},
     .heldItem = ITEM_ORAN_BERRY,
+    .ball = ITEM_HEAL_BALL,
     }
 };
 
@@ -3445,7 +3450,7 @@ static const struct TrainerMon sParty_Brawly1[] = {
     }
 };
 
-static const struct TrainerMon sParty_Wattson1[] = {
+static const struct TrainerMon sParty_Frank1[] = {
     {
     .lvl = 20,
     .species = SPECIES_MAGNEMITE,
@@ -4004,7 +4009,7 @@ static const struct TrainerMon sParty_Victoria[] = {
     }
 };
 
-static const struct TrainerMon sParty_Vanessa[] = {
+static const struct TrainerMon sParty_Midge[] = {
     {
     .lvl = 34,
     .species = SPECIES_PIKACHU,
@@ -8248,7 +8253,7 @@ static const struct TrainerMon sParty_Lyle[] = {
     }
 };
 
-static const struct TrainerMon sParty_Jose[] = {
+static const struct TrainerMon sParty_Kyle[] = {
     {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
     .lvl = 8,
@@ -8449,7 +8454,7 @@ static const struct TrainerMon sParty_Clark[] = {
     }
 };
 
-static const struct TrainerMon sParty_Eric[] = {
+static const struct TrainerMon sParty_Derrick[] = {
     {
     .lvl = 25,
     .species = SPECIES_MACHOP,
@@ -9238,7 +9243,7 @@ static const struct TrainerMon sParty_ToriAndTia[] = {
     }
 };
 
-static const struct TrainerMon sParty_KimAndIris[] = {
+static const struct TrainerMon sParty_LiaAndIris[] = {
     {
     .lvl = 36,
     .species = SPECIES_CAMERUPT,
@@ -10245,147 +10250,182 @@ static const struct TrainerMon sParty_MayRustboroTorchic[] = {
     }
 };
 
-static const struct TrainerMon sParty_Roxanne2[] = {
+static const struct TrainerMon sParty_Kristen2[] = {
     {
     .lvl = 60,
-    .species = SPECIES_RELICANTH,
+    .species = SPECIES_TOGEKISS,
+    .ability = ABILITY_SUPER_LUCK,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .moves = {MOVE_HEAD_SMASH, MOVE_AQUA_TAIL, MOVE_DOUBLE_EDGE, MOVE_REST},
+    .moves = {MOVE_DAZZLING_GLEAM, MOVE_AIR_SLASH, MOVE_AURA_SPHERE, MOVE_LIFE_DEW},
+    .ball = ITEM_HEAL_BALL,
     },
     {
     .lvl = 63,
-    .species = SPECIES_CRADILY,
+    .species = SPECIES_GRANBULL,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .moves = {MOVE_GIGA_DRAIN, MOVE_ANCIENT_POWER, MOVE_INGRAIN, MOVE_AMNESIA},
-    .heldItem = ITEM_BIG_ROOT,
+    .moves = {MOVE_PLAY_ROUGH, MOVE_CRUNCH, MOVE_FIRE_FANG, MOVE_OUTRAGE},
+    .heldItem = ITEM_LEFTOVERS,
+    .ball = ITEM_HEAL_BALL,
+    .nickname = COMPOUND_STRING("Nova II"),
     },
     {
     .lvl = 63,
-    .species = SPECIES_ARMALDO,
+    .species = SPECIES_AROMATISSE,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .moves = {MOVE_ROCK_SLIDE, MOVE_X_SCISSOR, MOVE_CRUSH_CLAW, MOVE_SWORDS_DANCE},
-    .heldItem = ITEM_QUICK_CLAW,
+    .moves = {MOVE_MOONBLAST, MOVE_PSYCHIC, MOVE_MISTY_TERRAIN, MOVE_AROMATIC_MIST},
+    .heldItem = ITEM_MISTY_SEED,
+    .ball = ITEM_HEAL_BALL,
     },
     {
     .lvl = 65,
-    .species = SPECIES_PROBOPASS,
+    .species = SPECIES_AUDINO,
+    .ability = ABILITY_HEALER,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .moves = {MOVE_DOUBLE_TEAM, MOVE_EXPLOSION, MOVE_PROTECT, MOVE_ROCK_SLIDE},
-    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_HYPER_VOICE, MOVE_DAZZLING_GLEAM, MOVE_LIFE_DEW, MOVE_HEAL_PULSE},
+    .heldItem = ITEM_AUDINITE,
+    .ball = ITEM_HEAL_BALL,
     }
 };
 
-static const struct TrainerMon sParty_Roxanne3[] = {
+static const struct TrainerMon sParty_Kristen3[] = {
     {
     .lvl = 65,
-    .species = SPECIES_AGGRON,
+    .species = SPECIES_CLEFABLE,
+    .ability = ABILITY_MAGIC_GUARD,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .moves = {MOVE_IRON_HEAD, MOVE_ROCK_SLIDE, MOVE_PROTECT, MOVE_STEALTH_ROCK},
+    .moves = {MOVE_MOONBLAST, MOVE_COSMIC_POWER, MOVE_MOONLIGHT, MOVE_LIFE_DEW},
+    .ball = ITEM_HEAL_BALL,
     },
     {
     .lvl = 65,
-    .species = SPECIES_RELICANTH,
+    .species = SPECIES_TOGEKISS,
+    .ability = ABILITY_SUPER_LUCK,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .moves = {MOVE_HEAD_SMASH, MOVE_AQUA_TAIL, MOVE_DOUBLE_EDGE, MOVE_REST},
+    .moves = {MOVE_DAZZLING_GLEAM, MOVE_AIR_SLASH, MOVE_AURA_SPHERE, MOVE_LIFE_DEW},
+    .ball = ITEM_HEAL_BALL,
     },
     {
     .lvl = 68,
-    .species = SPECIES_CRADILY,
+    .species = SPECIES_GRANBULL,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .moves = {MOVE_GIGA_DRAIN, MOVE_ANCIENT_POWER, MOVE_INGRAIN, MOVE_AMNESIA},
-    .heldItem = ITEM_BIG_ROOT,
+    .moves = {MOVE_PLAY_ROUGH, MOVE_CRUNCH, MOVE_FIRE_FANG, MOVE_OUTRAGE},
+    .heldItem = ITEM_LEFTOVERS,
+    .ball = ITEM_HEAL_BALL,
+    .nickname = COMPOUND_STRING("Nova II"),
     },
     {
     .lvl = 68,
-    .species = SPECIES_ARMALDO,
+    .species = SPECIES_AROMATISSE,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .moves = {MOVE_ROCK_SLIDE, MOVE_X_SCISSOR, MOVE_CRUSH_CLAW, MOVE_SWORDS_DANCE},
-    .heldItem = ITEM_QUICK_CLAW,
+    .moves = {MOVE_MOONBLAST, MOVE_PSYCHIC, MOVE_MISTY_TERRAIN, MOVE_AROMATIC_MIST},
+    .heldItem = ITEM_MISTY_SEED,
+    .ball = ITEM_HEAL_BALL,
     },
     {
     .lvl = 70,
-    .species = SPECIES_PROBOPASS,
+    .species = SPECIES_AUDINO,
+    .ability = ABILITY_HEALER,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .moves = {MOVE_DOUBLE_TEAM, MOVE_EXPLOSION, MOVE_PROTECT, MOVE_ROCK_SLIDE},
-    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_HYPER_VOICE, MOVE_DAZZLING_GLEAM, MOVE_LIFE_DEW, MOVE_HEAL_PULSE},
+    .heldItem = ITEM_AUDINITE,
+    .ball = ITEM_HEAL_BALL,
     }
 };
 
-static const struct TrainerMon sParty_Roxanne4[] = {
+static const struct TrainerMon sParty_Kristen4[] = {
     {
     .lvl = 70,
-    .species = SPECIES_AGGRON,
+    .species = SPECIES_CLEFABLE,
+    .ability = ABILITY_MAGIC_GUARD,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .moves = {MOVE_IRON_HEAD, MOVE_ROCK_SLIDE, MOVE_IRON_DEFENSE, MOVE_STEALTH_ROCK},
+    .moves = {MOVE_MOONBLAST, MOVE_COSMIC_POWER, MOVE_MOONLIGHT, MOVE_LIFE_DEW},
+    .ball = ITEM_HEAL_BALL,
     },
     {
     .lvl = 70,
-    .species = SPECIES_RELICANTH,
+    .species = SPECIES_TOGEKISS,
+    .ability = ABILITY_SUPER_LUCK,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .moves = {MOVE_HEAD_SMASH, MOVE_AQUA_TAIL, MOVE_DOUBLE_EDGE, MOVE_REST},
+    .moves = {MOVE_DAZZLING_GLEAM, MOVE_AIR_SLASH, MOVE_AURA_SPHERE, MOVE_LIFE_DEW},
+    .ball = ITEM_HEAL_BALL,
     },
     {
     .lvl = 73,
-    .species = SPECIES_CRADILY,
+    .species = SPECIES_GRANBULL,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .moves = {MOVE_GIGA_DRAIN, MOVE_ANCIENT_POWER, MOVE_INGRAIN, MOVE_AMNESIA},
-    .heldItem = ITEM_BIG_ROOT,
+    .moves = {MOVE_PLAY_ROUGH, MOVE_CRUNCH, MOVE_FIRE_FANG, MOVE_OUTRAGE},
+    .heldItem = ITEM_LEFTOVERS,
+    .ball = ITEM_HEAL_BALL,
+    .nickname = COMPOUND_STRING("Nova II"),
     },
     {
     .lvl = 73,
-    .species = SPECIES_ARMALDO,
+    .species = SPECIES_AROMATISSE,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .moves = {MOVE_ROCK_SLIDE, MOVE_X_SCISSOR, MOVE_CRUSH_CLAW, MOVE_SWORDS_DANCE},
-    .heldItem = ITEM_QUICK_CLAW,
+    .moves = {MOVE_MOONBLAST, MOVE_PSYCHIC, MOVE_MISTY_TERRAIN, MOVE_AROMATIC_MIST},
+    .heldItem = ITEM_MISTY_SEED,
+    .ball = ITEM_HEAL_BALL,
     },
     {
     .lvl = 75,
-    .species = SPECIES_PROBOPASS,
+    .species = SPECIES_AUDINO,
+    .ability = ABILITY_HEALER,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .moves = {MOVE_DOUBLE_TEAM, MOVE_EXPLOSION, MOVE_PROTECT, MOVE_ROCK_SLIDE},
-    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_HYPER_VOICE, MOVE_DAZZLING_GLEAM, MOVE_LIFE_DEW, MOVE_HEAL_PULSE},
+    .heldItem = ITEM_AUDINITE,
+    .ball = ITEM_HEAL_BALL,
     }
 };
 
-static const struct TrainerMon sParty_Roxanne5[] = {
+static const struct TrainerMon sParty_Kristen5[] = {
     {
     .lvl = 75,
-    .species = SPECIES_RHYPERIOR,
+    .species = SPECIES_GARDEVOIR,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .moves = {MOVE_ROCK_WRECKER, MOVE_DRILL_RUN, MOVE_POISON_JAB, MOVE_MEGAHORN},
+    .moves = {MOVE_MOONBLAST, MOVE_PSYCHIC, MOVE_MYSTICAL_FIRE, MOVE_HEAL_PULSE},
+    .ball = ITEM_HEAL_BALL,
     },
     {
     .lvl = 75,
-    .species = SPECIES_AGGRON,
+    .species = SPECIES_CLEFABLE,
+    .ability = ABILITY_MAGIC_GUARD,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .moves = {MOVE_HEAD_SMASH, MOVE_BODY_PRESS, MOVE_IRON_DEFENSE, MOVE_STEALTH_ROCK},
+    .moves = {MOVE_MOONBLAST, MOVE_COSMIC_POWER, MOVE_MOONLIGHT, MOVE_LIFE_DEW},
+    .ball = ITEM_HEAL_BALL,
     },
     {
     .lvl = 75,
-    .species = SPECIES_RELICANTH,
+    .species = SPECIES_TOGEKISS,
+    .ability = ABILITY_SUPER_LUCK,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .moves = {MOVE_HEAD_SMASH, MOVE_AQUA_TAIL, MOVE_BODY_PRESS, MOVE_IRON_DEFENSE},
+    .moves = {MOVE_DAZZLING_GLEAM, MOVE_AIR_SLASH, MOVE_AURA_SPHERE, MOVE_LIFE_DEW},
+    .ball = ITEM_HEAL_BALL,
     },
     {
     .lvl = 78,
-    .species = SPECIES_CRADILY,
+    .species = SPECIES_GRANBULL,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .moves = {MOVE_GIGA_DRAIN, MOVE_ANCIENT_POWER, MOVE_INGRAIN, MOVE_AMNESIA},
-    .heldItem = ITEM_BIG_ROOT,
+    .moves = {MOVE_PLAY_ROUGH, MOVE_CRUNCH, MOVE_FIRE_FANG, MOVE_OUTRAGE},
+    .heldItem = ITEM_LEFTOVERS,
+    .ball = ITEM_HEAL_BALL,
+    .nickname = COMPOUND_STRING("Nova II"),
     },
     {
     .lvl = 78,
-    .species = SPECIES_ARMALDO,
+    .species = SPECIES_AROMATISSE,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .moves = {MOVE_ROCK_SLIDE, MOVE_X_SCISSOR, MOVE_CRUSH_CLAW, MOVE_SWORDS_DANCE},
-    .heldItem = ITEM_QUICK_CLAW,
+    .moves = {MOVE_MOONBLAST, MOVE_PSYCHIC, MOVE_MISTY_TERRAIN, MOVE_AROMATIC_MIST},
+    .heldItem = ITEM_MISTY_SEED,
+    .ball = ITEM_HEAL_BALL,
     },
     {
     .lvl = 80,
-    .species = SPECIES_PROBOPASS,
+    .species = SPECIES_AUDINO,
+    .ability = ABILITY_HEALER,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .moves = {MOVE_DOUBLE_TEAM, MOVE_EXPLOSION, MOVE_PROTECT, MOVE_ROCK_SLIDE},
-    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_HYPER_VOICE, MOVE_DAZZLING_GLEAM, MOVE_LIFE_DEW, MOVE_HEAL_PULSE},
+    .heldItem = ITEM_AUDINITE,
+    .ball = ITEM_HEAL_BALL,
     }
 };
 
@@ -10533,7 +10573,7 @@ static const struct TrainerMon sParty_Brawly5[] = {
     }
 };
 
-static const struct TrainerMon sParty_Wattson2[] = {
+static const struct TrainerMon sParty_Frank2[] = {
     {
     .lvl = 60,
     .species = SPECIES_MAGNETON,
@@ -10563,7 +10603,7 @@ static const struct TrainerMon sParty_Wattson2[] = {
     }
 };
 
-static const struct TrainerMon sParty_Wattson3[] = {
+static const struct TrainerMon sParty_Frank3[] = {
     {
     .lvl = 65,
     .species = SPECIES_LANTURN,
@@ -10599,7 +10639,7 @@ static const struct TrainerMon sParty_Wattson3[] = {
     }
 };
 
-static const struct TrainerMon sParty_Wattson4[] = {
+static const struct TrainerMon sParty_Frank4[] = {
     {
     .lvl = 70,
     .species = SPECIES_LANTURN,
@@ -10635,7 +10675,7 @@ static const struct TrainerMon sParty_Wattson4[] = {
     }
 };
 
-static const struct TrainerMon sParty_Wattson5[] = {
+static const struct TrainerMon sParty_Frank5[] = {
     {
     .lvl = 75,
     .species = SPECIES_ELECTRODE,

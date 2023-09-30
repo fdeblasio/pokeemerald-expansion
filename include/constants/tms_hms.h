@@ -78,7 +78,7 @@
     F(NASTY_PLOT) \
     F(SWORDS_DANCE) \
     F(STEALTH_ROCK) \
-    F(PSYCH_UP) \
+    F(DRAINING_KISS) \
     F(CRUNCH) \
     F(DARK_PULSE) \
     F(ROCK_SLIDE) \

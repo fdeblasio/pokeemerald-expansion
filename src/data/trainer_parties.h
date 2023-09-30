@@ -3407,8 +3407,8 @@ static const struct TrainerMon sParty_Kristen1[] = {
     .species = SPECIES_SNUBBULL,
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .moves = {MOVE_DRAINING_KISS, MOVE_CHARM, MOVE_TACKLE, MOVE_TAIL_WHIP},
-    .nickname = COMPOUND_STRING("Nova II")
     .ball = ITEM_HEAL_BALL,
+    .nickname = COMPOUND_STRING("Nova II")
     },
     {
     .lvl = 12,
@@ -3568,7 +3568,7 @@ static const struct TrainerMon sParty_Winona1[] = {
     }
 };
 
-static const struct TrainerMon sParty_TateAndLiza1[] = {
+static const struct TrainerMon sParty_RafiAndKim1[] = {
     {
     .lvl = 41,
     .species = SPECIES_CLAYDOL,
@@ -7723,7 +7723,7 @@ static const struct TrainerMon sParty_Mildred[] = {
     .lvl = 9,
     .species = SPECIES_SNUBBULL,
     .moves = {MOVE_DRAINING_KISS, MOVE_BITE, MOVE_TACKLE, MOVE_SCARY_FACE}
-    }
+    },
     {
     .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
     .lvl = 9,
@@ -11173,7 +11173,7 @@ static const struct TrainerMon sParty_Winona5[] = {
     }
 };
 
-static const struct TrainerMon sParty_TateAndLiza2[] = {
+static const struct TrainerMon sParty_RafiAndKim2[] = {
     {
     .lvl = 60,
     .species = SPECIES_CHIMECHO,
@@ -11208,7 +11208,7 @@ static const struct TrainerMon sParty_TateAndLiza2[] = {
     }
 };
 
-static const struct TrainerMon sParty_TateAndLiza3[] = {
+static const struct TrainerMon sParty_RafiAndKim3[] = {
     {
     .lvl = 65,
     .species = SPECIES_GARDEVOIR,
@@ -11249,7 +11249,7 @@ static const struct TrainerMon sParty_TateAndLiza3[] = {
     }
 };
 
-static const struct TrainerMon sParty_TateAndLiza4[] = {
+static const struct TrainerMon sParty_RafiAndKim4[] = {
     {
     .lvl = 70,
     .species = SPECIES_GARDEVOIR,
@@ -11290,7 +11290,7 @@ static const struct TrainerMon sParty_TateAndLiza4[] = {
     }
 };
 
-static const struct TrainerMon sParty_TateAndLiza5[] = {
+static const struct TrainerMon sParty_RafiAndKim5[] = {
     {
     .lvl = 75,
     .species = SPECIES_GARDEVOIR,

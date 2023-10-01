@@ -525,9 +525,7 @@ MossdeepCity_Gym_Text_ReceivedMindBadge:
 MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis:
 	.string "Tate: The Mind Badge enhances the\n"
 	.string "Sp. Atk and Sp. Def of Pokémon.\p"
-	.string "Liza: It also lets you use the HM move\n"
-	.string "Dive outside of battle.\p"
-	.string "Tate: You should also take this, too.$"
+	.string "Liza: You should also take this, too.$"
 
 MossdeepCity_Gym_Text_ExplainPsychic:
 	.string "Tate: That TM29 contains…\n"

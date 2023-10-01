@@ -2,7 +2,7 @@
 .set LOCALID_VICTORIA, 2
 .set LOCALID_VIVI, 3
 .set LOCALID_VICKY, 4
-.set LOCALID_ROCK_SMASH_MAN, 46
+.set LOCALID_ROCK_SMASH_MAN, 45
 
 @ Note: LOCALID_ROUTE111_PLAYER_FALLING is a local id for this map used elsewhere. It's defined in event_objects.h
 
@@ -549,9 +549,9 @@ Route111_EventScript_Tyron::
 	msgbox Route111_Text_TyronPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route111_EventScript_Celina::
-	trainerbattle_single TRAINER_CELINA, Route111_Text_CelinaIntro, Route111_Text_CelinaDefeat
-	msgbox Route111_Text_CelinaPostBattle, MSGBOX_AUTOCLOSE
+Route111_EventScript_Lily::
+	trainerbattle_single TRAINER_LILY, Route111_Text_LilyIntro, Route111_Text_LilyDefeat
+	msgbox Route111_Text_LilyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route111_EventScript_Celia::

@@ -2145,7 +2145,7 @@ static void InitDomeTrainers(void)
 #define CALC_STAT(base, statIndex)                                                          \
 {                                                                                           \
     u8 baseStat = gSpeciesInfo[species].base;                                                 \
-    stats[statIndex] = (((2 * baseStat + ivs + evs[statIndex] / 4) * level) / 100) + 5;     \
+    stats[statIndex] = (((2 * baseStat + ivs + evs[statIndex]) * level) / 100) + 5;     \
     stats[statIndex] = (u8) ModifyStatByNature(nature, stats[statIndex], statIndex);        \
 }
 

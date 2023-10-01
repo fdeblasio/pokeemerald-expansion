@@ -850,6 +850,10 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
         {
             isShiny = TRUE;
         }
+        else if (InBattlePyramid() || !FlagGet(FLAG_ADVENTURE_STARTED))
+        {
+            isShiny = FALSE;
+        }
         else
         {
             u32 totalRerolls = 0;

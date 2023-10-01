@@ -10,6 +10,7 @@
 - Fly can now be used after getting Mauville's badge
 - Cut trees have been removed from everywhere but the Trick House
 - Brick Break can now also break rocks in the overworld
+- Improved berry yields
 - Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room. The door to Sealed Chamber and the Regis' inner rooms are now automatically open
 - Made rapids easier to navigate so that only one trip is needed to get all items/battle all trainers (at the cost of looking slightly worse)
 - Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)

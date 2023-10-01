@@ -26,7 +26,8 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_VULPIX]                = {{EVO_ITEM, ITEM_FIRE_STONE, SPECIES_NINETALES}},
     [SPECIES_JIGGLYPUFF]            = {{EVO_ITEM, ITEM_MOON_STONE, SPECIES_WIGGLYTUFF}},
     [SPECIES_ZUBAT]                 = {{EVO_LEVEL, 22, SPECIES_GOLBAT}},
-    [SPECIES_GOLBAT]                = {{EVO_FRIENDSHIP, 0, SPECIES_CROBAT}},
+    [SPECIES_GOLBAT]                = {{EVO_FRIENDSHIP, 0, SPECIES_CROBAT},
+                                       {EVO_LEVEL, 33, SPECIES_CROBAT}},
     [SPECIES_ODDISH]                = {{EVO_LEVEL, 21, SPECIES_GLOOM}},
     [SPECIES_GLOOM]                 = {{EVO_ITEM, ITEM_LEAF_STONE, SPECIES_VILEPLUME},
                                        {EVO_ITEM, ITEM_SUN_STONE, SPECIES_BELLOSSOM}},
@@ -115,8 +116,8 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_EEVEE]                 = {{EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_JOLTEON},
                                        {EVO_ITEM, ITEM_WATER_STONE, SPECIES_VAPOREON},
                                        {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_FLAREON},
-                                       {EVO_FRIENDSHIP_DAY, 0, SPECIES_ESPEON},
-                                       {EVO_FRIENDSHIP_NIGHT, 0, SPECIES_UMBREON},
+                                       {EVO_ITEM, ITEM_SUN_STONE, SPECIES_ESPEON},
+                                       {EVO_ITEM, ITEM_MOON_STONE, SPECIES_UMBREON},
                                     #if P_GEN_4_POKEMON == TRUE
                                        {EVO_SPECIFIC_MAP, MAP_PETALBURG_WOODS, SPECIES_LEAFEON},
                                        {EVO_ITEM, ITEM_LEAF_STONE, SPECIES_LEAFEON},
@@ -124,7 +125,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
                                        {EVO_ITEM, ITEM_ICE_STONE, SPECIES_GLACEON},
                                     #endif
                                     #if P_GEN_6_POKEMON == TRUE
-                                       {EVO_FRIENDSHIP_MOVE_TYPE, TYPE_FAIRY, SPECIES_SYLVEON}
+                                       {EVO_ITEM, ITEM_DAWN_STONE, SPECIES_SYLVEON}
                                     #endif
                                        },
     [SPECIES_PORYGON]               = {{EVO_TRADE_ITEM, ITEM_UPGRADE, SPECIES_PORYGON2},
@@ -145,10 +146,14 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_LEDYBA]                = {{EVO_LEVEL, 18, SPECIES_LEDIAN}},
     [SPECIES_SPINARAK]              = {{EVO_LEVEL, 22, SPECIES_ARIADOS}},
     [SPECIES_CHINCHOU]              = {{EVO_LEVEL, 27, SPECIES_LANTURN}},
-    [SPECIES_PICHU]                 = {{EVO_FRIENDSHIP, 0, SPECIES_PIKACHU}},
-    [SPECIES_CLEFFA]                = {{EVO_FRIENDSHIP, 0, SPECIES_CLEFAIRY}},
-    [SPECIES_IGGLYBUFF]             = {{EVO_FRIENDSHIP, 0, SPECIES_JIGGLYPUFF}},
-    [SPECIES_TOGEPI]                = {{EVO_FRIENDSHIP, 0, SPECIES_TOGETIC}},
+    [SPECIES_PICHU]                 = {{EVO_FRIENDSHIP, 0, SPECIES_PIKACHU},
+                                       {EVO_LEVEL, 12, SPECIES_PIKACHU}},
+    [SPECIES_CLEFFA]                = {{EVO_FRIENDSHIP, 0, SPECIES_CLEFAIRY},
+                                       {EVO_LEVEL, 12, SPECIES_CLEFAIRY}},
+    [SPECIES_IGGLYBUFF]             = {{EVO_FRIENDSHIP, 0, SPECIES_JIGGLYPUFF},
+                                       {EVO_LEVEL, 12, SPECIES_JIGGLYPUFF}},
+    [SPECIES_TOGEPI]                = {{EVO_FRIENDSHIP, 0, SPECIES_TOGETIC},
+                                       {EVO_LEVEL, 16, SPECIES_TOGETIC}},
 #if P_GEN_4_POKEMON == TRUE
     [SPECIES_TOGETIC]               = {{EVO_ITEM, ITEM_SHINY_STONE, SPECIES_TOGEKISS}},
 #endif
@@ -181,18 +186,18 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
 #endif
 #if P_GEN_4_POKEMON == TRUE
     [SPECIES_GLIGAR]                = {{EVO_ITEM_HOLD_NIGHT, ITEM_RAZOR_FANG, SPECIES_GLISCOR},
-                                       {EVO_ITEM_NIGHT, ITEM_RAZOR_FANG, SPECIES_GLISCOR}},
+                                       {EVO_ITEM, ITEM_RAZOR_FANG, SPECIES_GLISCOR}},
 #endif
     [SPECIES_SNUBBULL]              = {{EVO_LEVEL, 23, SPECIES_GRANBULL}},
 #if P_GEN_4_POKEMON == TRUE
     [SPECIES_SNEASEL]               = {{EVO_ITEM_HOLD_NIGHT, ITEM_RAZOR_CLAW, SPECIES_WEAVILE},
-                                       {EVO_ITEM_NIGHT, ITEM_RAZOR_CLAW, SPECIES_WEAVILE}},
+                                       {EVO_ITEM, ITEM_RAZOR_CLAW, SPECIES_WEAVILE}},
 #endif
     [SPECIES_TEDDIURSA]             = {{EVO_LEVEL, 30, SPECIES_URSARING}},
 #if P_GEN_8_POKEMON == TRUE
-    [SPECIES_URSARING]              = {{EVO_ITEM_NIGHT, ITEM_PEAT_BLOCK, SPECIES_URSALUNA}},
+    [SPECIES_URSARING]              = {{EVO_ITEM, ITEM_PEAT_BLOCK, SPECIES_URSALUNA}},
 #endif
-    [SPECIES_SLUGMA]                = {{EVO_LEVEL, 38, SPECIES_MAGCARGO}},
+    [SPECIES_SLUGMA]                = {{EVO_LEVEL, 32, SPECIES_MAGCARGO}},
     [SPECIES_SWINUB]                = {{EVO_LEVEL, 33, SPECIES_PILOSWINE}},
 #if P_GEN_4_POKEMON == TRUE
     [SPECIES_PILOSWINE]             = {{EVO_MOVE, MOVE_ANCIENT_POWER, SPECIES_MAMOSWINE}},
@@ -223,8 +228,8 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_MARSHTOMP]             = {{EVO_LEVEL, 36, SPECIES_SWAMPERT}},
     [SPECIES_POOCHYENA]             = {{EVO_LEVEL, 18, SPECIES_MIGHTYENA}},
     [SPECIES_ZIGZAGOON]             = {{EVO_LEVEL, 20, SPECIES_LINOONE}},
-    [SPECIES_WURMPLE]               = {{EVO_LEVEL_SILCOON, 7, SPECIES_SILCOON},
-                                       {EVO_LEVEL_CASCOON, 7, SPECIES_CASCOON}},
+    [SPECIES_WURMPLE]               = {{EVO_LEVEL_DAY, 7, SPECIES_SILCOON},
+                                       {EVO_LEVEL_NIGHT, 7, SPECIES_CASCOON}},
     [SPECIES_SILCOON]               = {{EVO_LEVEL, 10, SPECIES_BEAUTIFLY}},
     [SPECIES_CASCOON]               = {{EVO_LEVEL, 10, SPECIES_DUSTOX}},
     [SPECIES_LOTAD]                 = {{EVO_LEVEL, 14, SPECIES_LOMBRE}},
@@ -263,7 +268,8 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
                                        {EVO_ITEM_FEMALE, ITEM_DAWN_STONE, SPECIES_FROSLASS}
                                     #endif
                                        },
-    [SPECIES_AZURILL]               = {{EVO_FRIENDSHIP, 0, SPECIES_MARILL}},
+    [SPECIES_AZURILL]               = {{EVO_FRIENDSHIP, 0, SPECIES_MARILL},
+                                       {EVO_LEVEL, 10, SPECIES_MARILL}},
     [SPECIES_SPOINK]                = {{EVO_LEVEL, 32, SPECIES_GRUMPIG}},
     [SPECIES_MEDITITE]              = {{EVO_LEVEL, 37, SPECIES_MEDICHAM}},
     [SPECIES_SWABLU]                = {{EVO_LEVEL, 35, SPECIES_ALTARIA}},
@@ -312,7 +318,8 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_KRICKETOT]             = {{EVO_LEVEL, 10, SPECIES_KRICKETUNE}},
     [SPECIES_SHINX]                 = {{EVO_LEVEL, 15, SPECIES_LUXIO}},
     [SPECIES_LUXIO]                 = {{EVO_LEVEL, 30, SPECIES_LUXRAY}},
-    [SPECIES_BUDEW]                 = {{EVO_FRIENDSHIP_DAY, 0, SPECIES_ROSELIA}},
+    [SPECIES_BUDEW]                 = {{EVO_FRIENDSHIP_DAY, 0, SPECIES_ROSELIA},
+                                       {EVO_LEVEL, 13, SPECIES_ROSELIA}},
     [SPECIES_CRANIDOS]              = {{EVO_LEVEL, 30, SPECIES_RAMPARDOS}},
     [SPECIES_SHIELDON]              = {{EVO_LEVEL, 30, SPECIES_BASTIODON}},
     [SPECIES_BURMY_PLANT_CLOAK]     = {{EVO_LEVEL_FEMALE, 20, SPECIES_WORMADAM_PLANT_CLOAK},
@@ -324,18 +331,21 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_DRIFLOON]              = {{EVO_LEVEL, 28, SPECIES_DRIFBLIM}},
     [SPECIES_BUNEARY]               = {{EVO_FRIENDSHIP, 0, SPECIES_LOPUNNY}},
     [SPECIES_GLAMEOW]               = {{EVO_LEVEL, 38, SPECIES_PURUGLY}},
-    [SPECIES_CHINGLING]             = {{EVO_FRIENDSHIP_NIGHT, 0, SPECIES_CHIMECHO}},
+    [SPECIES_CHINGLING]             = {{EVO_FRIENDSHIP_NIGHT, 0, SPECIES_CHIMECHO},
+                                       {EVO_LEVEL, 19, SPECIES_CHIMECHO}},
     [SPECIES_STUNKY]                = {{EVO_LEVEL, 34, SPECIES_SKUNTANK}},
     [SPECIES_BRONZOR]               = {{EVO_LEVEL, 33, SPECIES_BRONZONG}},
     [SPECIES_BONSLY]                = {{EVO_MOVE, MOVE_MIMIC, SPECIES_SUDOWOODO}},
     [SPECIES_MIME_JR]               = {{EVO_MOVE, MOVE_MIMIC, SPECIES_MR_MIME},
                                        {EVO_NONE, 0, SPECIES_MR_MIME_GALARIAN}},
     [SPECIES_HAPPINY]               = {{EVO_ITEM_HOLD_DAY, ITEM_OVAL_STONE, SPECIES_CHANSEY},
-                                       {EVO_ITEM_DAY, ITEM_OVAL_STONE, SPECIES_CHANSEY}},
+                                       {EVO_ITEM, ITEM_OVAL_STONE, SPECIES_CHANSEY}},
     [SPECIES_GIBLE]                 = {{EVO_LEVEL, 24, SPECIES_GABITE}},
     [SPECIES_GABITE]                = {{EVO_LEVEL, 48, SPECIES_GARCHOMP}},
-    [SPECIES_MUNCHLAX]              = {{EVO_FRIENDSHIP, 0, SPECIES_SNORLAX}},
-    [SPECIES_RIOLU]                 = {{EVO_FRIENDSHIP_DAY, 0, SPECIES_LUCARIO}},
+    [SPECIES_MUNCHLAX]              = {{EVO_FRIENDSHIP, 0, SPECIES_SNORLAX},
+                                       {EVO_LEVEL, 20, SPECIES_SNORLAX}},
+    [SPECIES_RIOLU]                 = {{EVO_FRIENDSHIP_DAY, 0, SPECIES_LUCARIO},
+                                       {EVO_LEVEL, 20, SPECIES_LUCARIO}},
     [SPECIES_HIPPOPOTAS]            = {{EVO_LEVEL, 34, SPECIES_HIPPOWDON}},
     [SPECIES_SKORUPI]               = {{EVO_LEVEL, 40, SPECIES_DRAPION}},
     [SPECIES_CROAGUNK]              = {{EVO_LEVEL, 37, SPECIES_TOXICROAK}},
@@ -674,7 +684,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
 #if P_GEN_8_POKEMON == TRUE
     [SPECIES_SINISTEA_ANTIQUE]      = {{EVO_ITEM, ITEM_CHIPPED_POT, SPECIES_POLTEAGEIST_ANTIQUE}},
     [SPECIES_QWILFISH_HISUIAN]      = {{EVO_MOVE, MOVE_BARB_BARRAGE, SPECIES_OVERQWIL}},
-    [SPECIES_SNEASEL_HISUIAN]       = {{EVO_ITEM_DAY, ITEM_RAZOR_CLAW, SPECIES_SNEASLER},
+    [SPECIES_SNEASEL_HISUIAN]       = {{EVO_ITEM, ITEM_RAZOR_CLAW, SPECIES_SNEASLER},
                                        {EVO_ITEM_HOLD_DAY, ITEM_RAZOR_CLAW, SPECIES_SNEASLER}},
 #endif
 };

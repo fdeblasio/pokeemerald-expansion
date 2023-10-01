@@ -13,9 +13,10 @@ static EWRAM_DATA u16 sOtIdDigit = 0;
 
 static const u16 sLotteryPrizes[] =
 {
+    ITEM_MOOMOO_MILK,
     ITEM_PP_UP,
-    ITEM_EXP_SHARE,
-    ITEM_MAX_REVIVE,
+    ITEM_PP_MAX,
+    ITEM_RARE_CANDY,
     ITEM_MASTER_BALL,
 };
 
@@ -87,9 +88,9 @@ void PickLotteryCornerTicket(void)
                 u32 otId = GetBoxMonData(&gPokemonStoragePtr->boxes[i][j], MON_DATA_OT_ID);
                 u8 numMatchingDigits = GetMatchingDigits(gSpecialVar_Result, otId);
 
-                if (numMatchingDigits > gSpecialVar_0x8004 && numMatchingDigits > 1)
+                if (numMatchingDigits > gSpecialVar_0x8004)
                 {
-                    gSpecialVar_0x8004 = numMatchingDigits - 1;
+                    gSpecialVar_0x8004 = numMatchingDigits;
                     box = i;
                     slot = j;
                 }
@@ -97,22 +98,19 @@ void PickLotteryCornerTicket(void)
         }
     }
 
-    if (gSpecialVar_0x8004 != 0)
-    {
-        gSpecialVar_0x8005 = sLotteryPrizes[gSpecialVar_0x8004 - 1];
+    gSpecialVar_0x8005 = sLotteryPrizes[gSpecialVar_0x8004 - 1];
 
-        if (box == TOTAL_BOXES_COUNT)
-        {
-            gSpecialVar_0x8006 = 0;
-            GetMonData(&gPlayerParty[slot], MON_DATA_NICKNAME, gStringVar1);
-        }
-        else
-        {
-            gSpecialVar_0x8006 = 1;
-            GetBoxMonData(&gPokemonStoragePtr->boxes[box][slot], MON_DATA_NICKNAME, gStringVar1);
-        }
-        StringGet_Nickname(gStringVar1);
+    if (box == TOTAL_BOXES_COUNT)
+    {
+        gSpecialVar_0x8006 = 0;
+        GetMonData(&gPlayerParty[slot], MON_DATA_NICKNAME, gStringVar1);
     }
+    else
+    {
+        gSpecialVar_0x8006 = 1;
+        GetBoxMonData(&gPokemonStoragePtr->boxes[box][slot], MON_DATA_NICKNAME, gStringVar1);
+    }
+    StringGet_Nickname(gStringVar1);
 }
 
 static u8 GetMatchingDigits(u16 winNumber, u16 otId)

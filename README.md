@@ -166,7 +166,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 - [Porymaps](https://github.com/huderlem/porymap/releases/tag/5.1.1)
 - Lunos
     - [Fixing Snow weather](https://github.com/pret/pokeemerald/wiki/Fix-Snow-Weather)
-    - [Showing Hidden Power type in battle](https://www.pokecommunity.com/showpost.php?p=10269149)
     - [Swapping party using Select](https://www.pokecommunity.com/showpost.php?p=10420662)
     - [Displaying Return/Frustration power in summary screen](https://www.pokecommunity.com/showpost.php?p=10575976&postcount=420)
 - Ghoulslash

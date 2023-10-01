@@ -47,7 +47,6 @@ Route121_SafariZoneEntrance_EventScript_EntranceCounterTrigger::
 	lockall
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
-	showmoneybox 0, 0
 	msgbox Route121_SafariZoneEntrance_Text_WouldYouLikeToPlay, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, Route121_SafariZoneEntrance_EventScript_TryEnterSafariZone
 	msgbox Route121_SafariZoneEntrance_Text_PlayAnotherTime, MSGBOX_DEFAULT
@@ -58,19 +57,13 @@ Route121_SafariZoneEntrance_EventScript_TryEnterSafariZone::
 	checkitem ITEM_POKEBLOCK_CASE
 	goto_if_eq VAR_RESULT, 0, Route121_SafariZoneEntrance_EventScript_NoPokeblockCase
 	call Route121_SafariZoneEntrance_EventScript_CheckHasRoomForPokemon
-	checkmoney 500
-	goto_if_eq VAR_RESULT, 0, Route121_SafariZoneEntrance_EventScript_NotEnoughMoney
 	playse SE_SHOP
-	msgbox Route121_SafariZoneEntrance_Text_ThatWillBe500Please, MSGBOX_DEFAULT
-	removemoney 500
-	updatemoneybox
 	msgbox Route121_SafariZoneEntrance_Text_HereAreYourSafariBalls, MSGBOX_DEFAULT
 	playfanfare MUS_OBTAIN_ITEM
 	message Route121_SafariZoneEntrance_Text_Received30SafariBalls
 	waitfanfare
 	msgbox Route121_SafariZoneEntrance_Text_PleaseEnjoyYourself, MSGBOX_DEFAULT
 	closemessage
-	hidemoneybox
 	applymovement OBJ_EVENT_ID_PLAYER, Route121_SafariZoneEntrance_Movement_EnterSafariZone
 	waitmovement 0
 	special EnterSafariMode
@@ -94,11 +87,6 @@ Route121_SafariZoneEntrance_EventScript_HasRoomForPokemon::
 
 Route121_SafariZoneEntrance_EventScript_NoPokeblockCase::
 	msgbox Route121_SafariZoneEntrance_Text_YouNeedPokeblockCase, MSGBOX_DEFAULT
-	goto Route121_SafariZoneEntrance_EventScript_MovePlayerBackFromCounter
-	end
-
-Route121_SafariZoneEntrance_EventScript_NotEnoughMoney::
-	msgbox Route121_SafariZoneEntrance_Text_NotEnoughMoney, MSGBOX_DEFAULT
 	goto Route121_SafariZoneEntrance_EventScript_MovePlayerBackFromCounter
 	end
 

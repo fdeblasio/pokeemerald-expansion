@@ -98,28 +98,28 @@ static const struct MenuAction MultichoiceList_ChallengeInfo[] =
 
 static const struct MenuAction MultichoiceList_LevelMode[] =
 {
-    {gText_Lv50},
     {gText_OpenLevel},
+    {gText_Lv50},
     {gText_Exit},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q1[] =
 {
-    {COMPOUND_STRING("Oddish")},
-    {COMPOUND_STRING("Poochyena")},
     {COMPOUND_STRING("Taillow")},
+    {COMPOUND_STRING("Poochyena")},
+    {COMPOUND_STRING("Oddish")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q2[] =
 {
-    {COMPOUND_STRING("Azurill")},
+    {COMPOUND_STRING("Hariyama")},
     {COMPOUND_STRING("Lotad")},
     {COMPOUND_STRING("Wingull")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q3[] =
 {
-    {COMPOUND_STRING("Dustox")},
+    {COMPOUND_STRING("Wurmple")},
     {COMPOUND_STRING("Zubat")},
     {COMPOUND_STRING("Nincada")},
 };
@@ -133,16 +133,16 @@ static const struct MenuAction MultichoiceList_Mechadoll2_Q1[] =
 
 static const struct MenuAction MultichoiceList_Mechadoll2_Q2[] =
 {
-    {COMPOUND_STRING("Poochyena")},
-    {COMPOUND_STRING("Shroomish")},
     {COMPOUND_STRING("Zigzagoon")},
+    {COMPOUND_STRING("Shroomish")},
+    {COMPOUND_STRING("Poochyena")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll2_Q3[] =
 {
-    {COMPOUND_STRING("Poochyena")},
-    {COMPOUND_STRING("Zubat")},
     {COMPOUND_STRING("Carvanha")},
+    {COMPOUND_STRING("Zubat")},
+    {COMPOUND_STRING("Poochyena")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll3_Q1[] =
@@ -262,16 +262,6 @@ static const struct MenuAction MultichoiceList_GameCornerDolls[] =
     {gText_TreeckoDollAndPrice},
     {gText_TorchicDollAndPrice},
     {gText_MudkipDollAndPrice},
-    {gText_Exit},
-};
-
-static const struct MenuAction MultichoiceList_GameCornerTMs[] =
-{
-    {gText_TM32AndPrice},
-    {gText_TM29AndPrice},
-    {gText_TM35AndPrice},
-    {gText_TM24AndPrice},
-    {gText_TM13AndPrice},
     {gText_Exit},
 };
 
@@ -846,7 +836,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_SSTIDAL_SLATEPORT_WITH_BF]  = MULTICHOICE(MultichoiceList_SSTidalSlateportWithBF),
     [MULTI_SSTIDAL_BATTLE_FRONTIER]    = MULTICHOICE(MultichoiceList_SSTidalBattleFrontier),
     [MULTI_RIGHTLEFT]                  = MULTICHOICE(MultichoiceList_RightLeft),
-    [MULTI_GAME_CORNER_TMS]            = MULTICHOICE(MultichoiceList_GameCornerTMs),
+    [MULTI_GAME_CORNER_TMS_UNUSED]     = MULTICHOICE(MultichoiceList_GameCornerCoins),
     [MULTI_SSTIDAL_SLATEPORT_NO_BF]    = MULTICHOICE(MultichoiceList_SSTidalSlateportNoBF),
     [MULTI_FLOORS]                     = MULTICHOICE(MultichoiceList_Floors),
     [MULTI_SHARDS_R]                   = MULTICHOICE(MultichoiceList_ShardsR),

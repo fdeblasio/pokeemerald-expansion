@@ -170,6 +170,17 @@ Route123_EventScript_RematchFernando::
 	msgbox Route123_Text_FernandoPostRematch, MSGBOX_AUTOCLOSE
 	end
 
+Route123_EventScript_AquaBlock::
+	lock
+	faceplayer
+	msgbox Route123_Text_AquaBlock, MSGBOX_DEFAULT
+	release
+	end
+
+Route123_Text_AquaBlock:
+	.string "Don't disturb the Boss!\n"
+	.string "He's at Mt. Pyre!$"
+
 Route123_Text_LoveGrassMonsHaveAny:
 	.string "I love Grass-type Pokémon!\p"
 	.string "Do you have any Grass-type Pokémon?$"

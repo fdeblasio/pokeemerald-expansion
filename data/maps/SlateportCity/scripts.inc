@@ -554,20 +554,26 @@ SlateportCity_PokemartDecor:
 	release
 	end
 
-SlateportCity_EventScript_PowerTMClerk::
+SlateportCity_EventScript_TMClerk::
 	lock
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemart SlateportCity_Pokemart_PowerTMs
+	pokemart SlateportCity_Market_TMs
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
 
 	.align 2
-SlateportCity_Pokemart_PowerTMs:
-	.2byte ITEM_TM_HIDDEN_POWER
-	.2byte ITEM_TM_SECRET_POWER
+SlateportCity_Market_TMs:
+	.2byte ITEM_TM_CALM_MIND
+	.2byte ITEM_TM_ROOST
+	.2byte ITEM_TM_FALSE_SWIPE
+	.2byte ITEM_TM_CHARGE_BEAM
+	.2byte ITEM_TM_WILL_O_WISP
+	.2byte ITEM_TM_SILVER_WIND
+	.2byte ITEM_TM_THUNDER_WAVE
+	.2byte ITEM_TM_PSYCH_UP
 	.2byte ITEM_NONE
 	release
 	end

@@ -4546,7 +4546,7 @@ static const struct TrainerMon sParty_Elliot1[] = {
     },
     {
     .lvl = 12,
-    .species = SPECIES_TENTACOOL,
+    .species = SPECIES_QWILFISH,
     },
     {
     .lvl = 14,
@@ -4558,7 +4558,7 @@ static const struct TrainerMon sParty_Ned[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 14,
-    .species = SPECIES_TENTACOOL,
+    .species = SPECIES_SHELLDER,
     }
 };
 
@@ -4623,7 +4623,7 @@ static const struct TrainerMon sParty_Elliot2[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 30,
-    .species = SPECIES_BARBOACH,
+    .species = SPECIES_CHINCHOU,
     },
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -4638,7 +4638,7 @@ static const struct TrainerMon sParty_Elliot2[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 30,
-    .species = SPECIES_TENTACRUEL,
+    .species = SPECIES_QWILFISH,
     },
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -4651,7 +4651,7 @@ static const struct TrainerMon sParty_Elliot3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 33,
-    .species = SPECIES_WHISCASH,
+    .species = SPECIES_LANTURN,
     },
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -4666,7 +4666,7 @@ static const struct TrainerMon sParty_Elliot3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 33,
-    .species = SPECIES_TENTACRUEL,
+    .species = SPECIES_QWILFISH,
     },
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -4679,7 +4679,7 @@ static const struct TrainerMon sParty_Elliot4[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 36,
-    .species = SPECIES_WHISCASH,
+    .species = ,
     },
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -4694,7 +4694,7 @@ static const struct TrainerMon sParty_Elliot4[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 36,
-    .species = SPECIES_TENTACRUEL,
+    .species = SPECIES_QWILFISH,
     },
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -4707,7 +4707,7 @@ static const struct TrainerMon sParty_Elliot5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 40,
-    .species = SPECIES_WHISCASH,
+    .species = SPECIES_LANTURN,
     },
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -4722,7 +4722,7 @@ static const struct TrainerMon sParty_Elliot5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 40,
-    .species = SPECIES_TENTACRUEL,
+    .species = SPECIES_QWILFISH,
     },
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),

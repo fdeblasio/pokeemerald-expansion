@@ -98,28 +98,28 @@ static const struct MenuAction MultichoiceList_ChallengeInfo[] =
 
 static const struct MenuAction MultichoiceList_LevelMode[] =
 {
-    {gText_Lv50},
     {gText_OpenLevel},
+    {gText_Lv50},
     {gText_Exit},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q1[] =
 {
-    {gTrickHouse_Mechadoll_Oddish},
-    {gTrickHouse_Mechadoll_Poochyena},
     {gTrickHouse_Mechadoll_Taillow},
+    {gTrickHouse_Mechadoll_Poochyena},
+    {gTrickHouse_Mechadoll_Oddish},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q2[] =
 {
-    {gTrickHouse_Mechadoll_Azurill},
+    {gTrickHouse_Mechadoll_Hariyama},
     {gTrickHouse_Mechadoll_Lotad},
     {gTrickHouse_Mechadoll_Wingull},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q3[] =
 {
-    {gTrickHouse_Mechadoll_Dustox},
+    {gTrickHouse_Mechadoll_Wurmple},
     {gTrickHouse_Mechadoll_Zubat},
     {gTrickHouse_Mechadoll_Nincada},
 };
@@ -133,16 +133,16 @@ static const struct MenuAction MultichoiceList_Mechadoll2_Q1[] =
 
 static const struct MenuAction MultichoiceList_Mechadoll2_Q2[] =
 {
-    {gTrickHouse_Mechadoll_Poochyena2},
-    {gTrickHouse_Mechadoll_Shroomish},
     {gTrickHouse_Mechadoll_Zigzagoon2},
+    {gTrickHouse_Mechadoll_Shroomish},
+    {gTrickHouse_Mechadoll_Poochyena2},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll2_Q3[] =
 {
-    {gTrickHouse_Mechadoll_Poochyena3},
-    {gTrickHouse_Mechadoll_Zubat2},
     {gTrickHouse_Mechadoll_Carvanha},
+    {gTrickHouse_Mechadoll_Zubat2},
+    {gTrickHouse_Mechadoll_Poochyena3},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll3_Q1[] =
@@ -262,16 +262,6 @@ static const struct MenuAction MultichoiceList_GameCornerDolls[] =
     {gText_TreeckoDollAndPrice},
     {gText_TorchicDollAndPrice},
     {gText_MudkipDollAndPrice},
-    {gText_Exit},
-};
-
-static const struct MenuAction MultichoiceList_GameCornerTMs[] =
-{
-    {gText_TM32AndPrice},
-    {gText_TM29AndPrice},
-    {gText_TM35AndPrice},
-    {gText_TM24AndPrice},
-    {gText_TM13AndPrice},
     {gText_Exit},
 };
 
@@ -846,7 +836,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_SSTIDAL_SLATEPORT_WITH_BF]  = MULTICHOICE(MultichoiceList_SSTidalSlateportWithBF),
     [MULTI_SSTIDAL_BATTLE_FRONTIER]    = MULTICHOICE(MultichoiceList_SSTidalBattleFrontier),
     [MULTI_RIGHTLEFT]                  = MULTICHOICE(MultichoiceList_RightLeft),
-    [MULTI_GAME_CORNER_TMS]            = MULTICHOICE(MultichoiceList_GameCornerTMs),
+    [MULTI_GAME_CORNER_TMS_UNUSED]     = MULTICHOICE(MultichoiceList_GameCornerCoins),
     [MULTI_SSTIDAL_SLATEPORT_NO_BF]    = MULTICHOICE(MultichoiceList_SSTidalSlateportNoBF),
     [MULTI_FLOORS]                     = MULTICHOICE(MultichoiceList_Floors),
     [MULTI_SHARDS_R]                   = MULTICHOICE(MultichoiceList_ShardsR),

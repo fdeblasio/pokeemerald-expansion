@@ -1,14 +1,14 @@
-gTrickHouse_Mechadoll_Oddish::
-	.string "Oddish$"
+gTrickHouse_Mechadoll_Taillow::
+	.string "Taillow$"
 
 gTrickHouse_Mechadoll_Poochyena::
 	.string "Poochyena$"
 
-gTrickHouse_Mechadoll_Taillow::
-	.string "Taillow$"
+gTrickHouse_Mechadoll_Oddish::
+	.string "Oddish$"
 
-gTrickHouse_Mechadoll_Azurill::
-	.string "Azurill$"
+gTrickHouse_Mechadoll_Hariyama::
+	.string "Hariyama$"
 
 gTrickHouse_Mechadoll_Lotad::
 	.string "Lotad$"
@@ -16,8 +16,8 @@ gTrickHouse_Mechadoll_Lotad::
 gTrickHouse_Mechadoll_Wingull::
 	.string "Wingull$"
 
-gTrickHouse_Mechadoll_Dustox::
-	.string "Dustox$"
+gTrickHouse_Mechadoll_Wurmple::
+	.string "Wurmple$"
 
 gTrickHouse_Mechadoll_Zubat::
 	.string "Zubat$"
@@ -34,23 +34,23 @@ gTrickHouse_Mechadoll_Zigzagoon::
 gTrickHouse_Mechadoll_Slakoth::
 	.string "Slakoth$"
 
-gTrickHouse_Mechadoll_Poochyena2::
-	.string "Poochyena$"
+gTrickHouse_Mechadoll_Zigzagoon2::
+	.string "Zigzagoon$"
 
 gTrickHouse_Mechadoll_Shroomish::
 	.string "Shroomish$"
 
-gTrickHouse_Mechadoll_Zigzagoon2::
-	.string "Zigzagoon$"
-
-gTrickHouse_Mechadoll_Poochyena3::
+gTrickHouse_Mechadoll_Poochyena2::
 	.string "Poochyena$"
+
+gTrickHouse_Mechadoll_Carvanha::
+	.string "Carvanha$"
 
 gTrickHouse_Mechadoll_Zubat2::
 	.string "Zubat$"
 
-gTrickHouse_Mechadoll_Carvanha::
-	.string "Carvanha$"
+gTrickHouse_Mechadoll_Poochyena3::
+	.string "Poochyena$"
 
 gTrickHouse_Mechadoll_BurnHeal::
 	.string "Burn Heal$"

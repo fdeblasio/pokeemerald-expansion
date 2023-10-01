@@ -4391,6 +4391,7 @@ BattleScript_EffectAttract::
 	goto BattleScript_MoveEnd
 
 BattleScript_EffectPresent::
+	jumpiftargetally BattleScript_EffectHealPulse
 	attackcanceler
 	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
 	attackstring
@@ -5869,12 +5870,8 @@ BattleScript_AskToLearnMove::
 	waitstate
 	setbyte sLEARNMOVE_STATE, 0
 	yesnoboxlearnmove BattleScript_ForgotAndLearnedNewMove
-	printstring STRINGID_STOPLEARNINGMOVE
-	waitstate
-	setbyte sLEARNMOVE_STATE, 0
-	yesnoboxstoplearningmove BattleScript_AskToLearnMove
 	printstring STRINGID_DIDNOTLEARNMOVE
-	goto BattleScript_TryLearnMoveLoop
+	goto BattleScript_LearnMoveReturn
 BattleScript_ForgotAndLearnedNewMove::
 	printstring STRINGID_123POOF
 	printstring STRINGID_PKMNFORGOTMOVE

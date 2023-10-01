@@ -830,13 +830,13 @@
 #define ITEM_TM100 681
 
 #define ITEM_HM01 682
-#define ITEM_HM02 683
+#define ITEM_TM102 683
 #define ITEM_HM03 684
 #define ITEM_HM04 685
-#define ITEM_HM05 686
+#define ITEM_TM105 686
 #define ITEM_HM06 687
 #define ITEM_HM07 688
-#define ITEM_HM08 689
+#define ITEM_TM108 689
 
 // Charms
 #define ITEM_OVAL_CHARM 690

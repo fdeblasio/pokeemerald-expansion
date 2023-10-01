@@ -2412,7 +2412,7 @@ static const u8 sExpShareDesc[] = _(
     "party members.");
 #else
     "A hold item that\n"
-    "gets Exp. points\n"
+    "spreads experience\n"
     "from battles.");
 #endif
 
@@ -3281,162 +3281,162 @@ static const u8 sTM50Desc[] = _(
     "attack, but sharply\n"
     "lowers Sp. Atk.");
 
-static const u8 sTM51Desc[] = _( // Todo
-    "?????");
+static const u8 sTM51Desc[] = _(
+    "Roost");
 
-static const u8 sTM52Desc[] = _( // Todo
-    "?????");
+static const u8 sTM52Desc[] = _(
+    "Focus Blast");
 
-static const u8 sTM53Desc[] = _( // Todo
-    "?????");
+static const u8 sTM53Desc[] = _(
+    "Energy Ball");
 
-static const u8 sTM54Desc[] = _( // Todo
-    "?????");
+static const u8 sTM54Desc[] = _(
+    "False Swipe");
 
-static const u8 sTM55Desc[] = _( // Todo
-    "?????");
+static const u8 sTM55Desc[] = _(
+    "Brine");
 
-static const u8 sTM56Desc[] = _( // Todo
-    "?????");
+static const u8 sTM56Desc[] = _(
+    "Signal Beam");
 
-static const u8 sTM57Desc[] = _( // Todo
-    "?????");
+static const u8 sTM57Desc[] = _(
+    "Charge Beam");
 
-static const u8 sTM58Desc[] = _( // Todo
-    "?????");
+static const u8 sTM58Desc[] = _(
+    "Psychic Fangs");
 
-static const u8 sTM59Desc[] = _( // Todo
-    "?????");
+static const u8 sTM59Desc[] = _(
+    "Dragon Pulse");
 
-static const u8 sTM60Desc[] = _( // Todo
-    "?????");
+static const u8 sTM60Desc[] = _(
+    "Drain Punch");
 
-static const u8 sTM61Desc[] = _( // Todo
-    "?????");
+static const u8 sTM61Desc[] = _(
+    "Will-o-Wisp");
 
-static const u8 sTM62Desc[] = _( // Todo
-    "?????");
+static const u8 sTM62Desc[] = _(
+    "Silver Wind");
 
-static const u8 sTM63Desc[] = _( // Todo
-    "?????");
+static const u8 sTM63Desc[] = _(
+    "Dazzling Gleam");
 
-static const u8 sTM64Desc[] = _( // Todo
-    "?????");
+static const u8 sTM64Desc[] = _(
+    "Seed Bomb");
 
-static const u8 sTM65Desc[] = _( // Todo
-    "?????");
+static const u8 sTM65Desc[] = _(
+    "Shadow Claw");
 
-static const u8 sTM66Desc[] = _( // Todo
-    "?????");
+static const u8 sTM66Desc[] = _(
+    "Payback");
 
-static const u8 sTM67Desc[] = _( // Todo
-    "?????");
+static const u8 sTM67Desc[] = _(
+    "Power Gem");
 
-static const u8 sTM68Desc[] = _( // Todo
-    "?????");
+static const u8 sTM68Desc[] = _(
+    "Giga Impact");
 
-static const u8 sTM69Desc[] = _( // Todo
-    "?????");
+static const u8 sTM69Desc[] = _(
+    "Play Rough");
 
-static const u8 sTM70Desc[] = _( // Todo
-    "?????");
+static const u8 sTM70Desc[] = _(
+    "Leech Life");
 
-static const u8 sTM71Desc[] = _( // Todo
-    "?????");
+static const u8 sTM71Desc[] = _(
+    "Stone Edge");
 
-static const u8 sTM72Desc[] = _( // Todo
-    "?????");
+static const u8 sTM72Desc[] = _(
+    "Avalanche");
 
-static const u8 sTM73Desc[] = _( // Todo
-    "?????");
+static const u8 sTM73Desc[] = _(
+    "Thunder Wave");
 
-static const u8 sTM74Desc[] = _( // Todo
-    "?????");
+static const u8 sTM74Desc[] = _(
+    "Gyro Ball");
 
-static const u8 sTM75Desc[] = _( // Todo
-    "?????");
+static const u8 sTM75Desc[] = _(
+    "Swords Dance");
 
-static const u8 sTM76Desc[] = _( // Todo
-    "?????");
+static const u8 sTM76Desc[] = _(
+    "Stealth Rock");
 
-static const u8 sTM77Desc[] = _( // Todo
-    "?????");
+static const u8 sTM77Desc[] = _(
+    "Psych Up");
 
-static const u8 sTM78Desc[] = _( // Todo
-    "?????");
+static const u8 sTM78Desc[] = _(
+    "Crunch");
 
-static const u8 sTM79Desc[] = _( // Todo
-    "?????");
+static const u8 sTM79Desc[] = _(
+    "Dark Pulse");
 
-static const u8 sTM80Desc[] = _( // Todo
-    "?????");
+static const u8 sTM80Desc[] = _(
+    "Rock Slide");
 
-static const u8 sTM81Desc[] = _( // Todo
-    "?????");
+static const u8 sTM81Desc[] = _(
+    "X-Scissor");
 
-static const u8 sTM82Desc[] = _( // Todo
-    "?????");
+static const u8 sTM82Desc[] = _(
+    "Night Slash");
 
-static const u8 sTM83Desc[] = _( // Todo
-    "?????");
+static const u8 sTM83Desc[] = _(
+    "Iron Head");
 
-static const u8 sTM84Desc[] = _( // Todo
-    "?????");
+static const u8 sTM84Desc[] = _(
+    "Poison Jab");
 
-static const u8 sTM85Desc[] = _( // Todo
-    "?????");
+static const u8 sTM85Desc[] = _(
+    "Aura Sphere");
 
-static const u8 sTM86Desc[] = _( // Todo
-    "?????");
+static const u8 sTM86Desc[] = _(
+    "Grass Knot");
 
-static const u8 sTM87Desc[] = _( // Todo
-    "?????");
+static const u8 sTM87Desc[] = _(
+    "Bug Buzz");
 
-static const u8 sTM88Desc[] = _( // Todo
-    "?????");
+static const u8 sTM88Desc[] = _(
+    "Acrobatics");
 
-static const u8 sTM89Desc[] = _( // Todo
-    "?????");
+static const u8 sTM89Desc[] = _(
+    "U-turn");
 
-static const u8 sTM90Desc[] = _( // Todo
-    "?????");
+static const u8 sTM90Desc[] = _(
+    "Body Slam");
 
-static const u8 sTM91Desc[] = _( // Todo
-    "?????");
+static const u8 sTM91Desc[] = _(
+    "Flash Cannon");
 
-static const u8 sTM92Desc[] = _( // Todo
-    "?????");
+static const u8 sTM92Desc[] = _(
+    "Trick Room");
 
-static const u8 sTM93Desc[] = _( // Todo
-    "?????");
+static const u8 sTM93Desc[] = _(
+    "Liquidation");
 
-static const u8 sTM94Desc[] = _( // Todo
-    "?????");
+static const u8 sTM94Desc[] = _(
+    "Thunder Punch");
 
-static const u8 sTM95Desc[] = _( // Todo
-    "?????");
+static const u8 sTM95Desc[] = _(
+    "Fire Punch");
 
-static const u8 sTM96Desc[] = _( // Todo
-    "?????");
+static const u8 sTM96Desc[] = _(
+    "Ice Punch");
 
-static const u8 sTM97Desc[] = _( // Todo
-    "?????");
+static const u8 sTM97Desc[] = _(
+    "Earth Power");
 
-static const u8 sTM98Desc[] = _( // Todo
-    "?????");
+static const u8 sTM98Desc[] = _(
+    "Air Slash");
 
-static const u8 sTM99Desc[] = _( // Todo
-    "?????");
+static const u8 sTM99Desc[] = _(
+    "Body Press");
 
-static const u8 sTM100Desc[] = _( // Todo
-    "?????");
+static const u8 sTM100Desc[] = _(
+    "Moonblast");
 
 static const u8 sHM01Desc[] = _(
     "Attacks the foe\n"
     "with sharp blades\n"
     "or claws.");
 
-static const u8 sHM02Desc[] = _(
+static const u8 sTM102Desc[] = _(
     "Flies up on the\n"
     "first turn, then\n"
     "attacks next turn.");
@@ -3451,7 +3451,7 @@ static const u8 sHM04Desc[] = _(
     "power, then slams\n"
     "the foe.");
 
-static const u8 sHM05Desc[] = _(
+static const u8 sTM105Desc[] = _(
     "Looses a powerful\n"
     "blast of light that\n"
     "reduces accuracy.");
@@ -3466,7 +3466,7 @@ static const u8 sHM07Desc[] = _(
     "with enough power\n"
     "to climb waterfalls.");
 
-static const u8 sHM08Desc[] = _(
+static const u8 sTM108Desc[] = _(
     "Dives underwater\n"
     "the 1st turn, then\n"
     "attacks next turn.");
@@ -3785,9 +3785,9 @@ static const u8 sLiftKeyDesc[] = _(
     "Rocket's Hideout.");
 
 static const u8 sSilphScopeDesc[] = _(
-    "Silph Co's scope\n"
-    "makes unseeable\n"
-    "Pokémon visible.");
+    "Devon's Dive\n"
+    "Goggles makes it\n"
+    "possible to Dive.");
 
 static const u8 sTriPassDesc[] = _(
     "A pass for ferries\n"

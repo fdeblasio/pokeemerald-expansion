@@ -479,11 +479,11 @@ static const struct MenuAction sMenuActions_Gender[] = {
 };
 
 static const u8 *const sMalePresetNames[] = {
-    COMPOUND_STRING("Stu"),
-    COMPOUND_STRING("Milton"),
-    COMPOUND_STRING("Tom"),
-    COMPOUND_STRING("Kenny"),
-    COMPOUND_STRING("Reid"),
+    COMPOUND_STRING("Frank"),
+    COMPOUND_STRING("Felix"),
+    COMPOUND_STRING("Jake"),
+    COMPOUND_STRING("Junya"),
+    COMPOUND_STRING("Rafi"),
     COMPOUND_STRING("Jude"),
     COMPOUND_STRING("Jaxson"),
     COMPOUND_STRING("Easton"),
@@ -502,13 +502,13 @@ static const u8 *const sMalePresetNames[] = {
 };
 
 static const u8 *const sFemalePresetNames[] = {
-    COMPOUND_STRING("Kimmy"),
-    COMPOUND_STRING("Tiara"),
+    COMPOUND_STRING("Emily"),
+    COMPOUND_STRING("Kim"),
+    COMPOUND_STRING("Sara"),
     COMPOUND_STRING("Bella"),
     COMPOUND_STRING("Jayla"),
     COMPOUND_STRING("Allie"),
     COMPOUND_STRING("Lianna"),
-    COMPOUND_STRING("Sara"),
     COMPOUND_STRING("Monica"),
     COMPOUND_STRING("Camila"),
     COMPOUND_STRING("Aubree"),

@@ -117,7 +117,7 @@
 #define TRAINER_VALERIE_5                   113
 #define TRAINER_CINDY_1                     114
 #define TRAINER_DAPHNE                      115
-#define TRAINER_GRUNT_SPACE_CENTER_2        116
+#define TRAINER_COURTNEY                    116
 #define TRAINER_CINDY_2                     117
 #define TRAINER_BRIANNA                     118
 #define TRAINER_NAOMI                       119
@@ -706,7 +706,7 @@
 #define TRAINER_MARCOS                      702
 #define TRAINER_RHETT                       703
 #define TRAINER_TYRON                       704
-#define TRAINER_CELINA                      705
+#define TRAINER_LILY                        705
 #define TRAINER_BIANCA                      706
 #define TRAINER_HAYDEN                      707
 #define TRAINER_SOPHIE                      708

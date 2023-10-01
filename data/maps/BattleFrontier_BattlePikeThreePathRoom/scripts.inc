@@ -8,7 +8,6 @@ BattleFrontier_BattlePikeThreePathRoom_MapScripts::
 
 BattleFrontier_BattlePikeThreePathRoom_OnFrame:
 	map_script_2 VAR_TEMP_CHALLENGE_STATUS, 0, BattleFrontier_BattlePikeThreePathRoom_EventScript_GetChallengeStatus
-	map_script_2 VAR_TEMP_CHALLENGE_STATUS, CHALLENGE_STATUS_SAVING, BattleFrontier_BattlePikeThreePathRoom_EventScript_WarpToLobby
 	map_script_2 VAR_TEMP_CHALLENGE_STATUS, CHALLENGE_STATUS_PAUSED, BattleFrontier_BattlePikeThreePathRoom_EventScript_ResumeChallenge
 	map_script_2 VAR_TEMP_5, 0, BattleFrontier_BattlePikeThreePathRoom_EventScript_SetHintRoom
 	map_script_2 VAR_TEMP_5, 1, BattleFrontier_BattlePikeThreePathRoom_EventScript_GivePikeQueenHint
@@ -52,66 +51,12 @@ BattleFrontier_BattlePikeThreePathRoom_EventScript_ResumeChallenge::
 
 BattleFrontier_BattlePikeThreePathRoom_EventScript_Attendant::
 	frontier_get FRONTIER_DATA_BATTLE_NUM  @ Room number
-	switch VAR_RESULT
-	case 1, BattleFrontier_BattlePikeThreePathRoom_EventScript_AttendantRoom1
-	case 3, BattleFrontier_BattlePikeThreePathRoom_EventScript_AttendantRoom3
-	case 5, BattleFrontier_BattlePikeThreePathRoom_EventScript_AttendantRoom5
-	case 7, BattleFrontier_BattlePikeThreePathRoom_EventScript_AttendantRoom7
-	case 9, BattleFrontier_BattlePikeThreePathRoom_EventScript_AttendantRoom9
-	case 11, BattleFrontier_BattlePikeThreePathRoom_EventScript_AttendantRoom11
-	case 13, BattleFrontier_BattlePikeThreePathRoom_EventScript_AttendantRoom13
-	end
-
-BattleFrontier_BattlePikeThreePathRoom_EventScript_AttendantRoom1::
+	buffernumberstring STR_VAR_1, VAR_RESULT
+	pike_get PIKE_DATA_WIN_STREAK
+	buffernumberstring STR_VAR_2, VAR_RESULT
 	lock
 	faceplayer
-	msgbox BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom1, MSGBOX_DEFAULT
-	goto BattleFrontier_BattlePikeThreePathRoom_EventScript_AskContinueChallenge
-	end
-
-BattleFrontier_BattlePikeThreePathRoom_EventScript_AttendantRoom3::
-	lock
-	faceplayer
-	msgbox BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom3, MSGBOX_DEFAULT
-	goto BattleFrontier_BattlePikeThreePathRoom_EventScript_AskContinueChallenge
-	end
-
-BattleFrontier_BattlePikeThreePathRoom_EventScript_AttendantRoom5::
-	lock
-	faceplayer
-	msgbox BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom5, MSGBOX_DEFAULT
-	goto BattleFrontier_BattlePikeThreePathRoom_EventScript_AskContinueChallenge
-	end
-
-BattleFrontier_BattlePikeThreePathRoom_EventScript_AttendantRoom7::
-	lock
-	faceplayer
-	msgbox BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom7, MSGBOX_DEFAULT
-	goto BattleFrontier_BattlePikeThreePathRoom_EventScript_AskContinueChallenge
-	end
-
-BattleFrontier_BattlePikeThreePathRoom_EventScript_AttendantRoom9::
-	lock
-	faceplayer
-	msgbox BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom9, MSGBOX_DEFAULT
-	goto BattleFrontier_BattlePikeThreePathRoom_EventScript_AskContinueChallenge
-	end
-
-BattleFrontier_BattlePikeThreePathRoom_EventScript_AttendantRoom11::
-	lock
-	faceplayer
-	msgbox BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom11, MSGBOX_DEFAULT
-	goto BattleFrontier_BattlePikeThreePathRoom_EventScript_AskContinueChallenge
-	end
-
-BattleFrontier_BattlePikeThreePathRoom_EventScript_AttendantRoom13::
-	lock
-	faceplayer
-	msgbox BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom13, MSGBOX_DEFAULT
-	goto BattleFrontier_BattlePikeThreePathRoom_EventScript_AskContinueChallenge
-	end
-
-BattleFrontier_BattlePikeThreePathRoom_EventScript_AskContinueChallenge::
+	msgbox BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom, MSGBOX_DEFAULT
 	msgbox BattleFrontier_BattlePikeThreePathRoom_Text_ContinueWithChallenge, MSGBOX_YESNO
 	switch VAR_RESULT
 	case NO, BattleFrontier_BattlePikeThreePathRoom_EventScript_AskSaveChallenge
@@ -263,33 +208,9 @@ BattleFrontier_BattlePikeThreePathRoom_Movement_HintGiverReturnToPos:
 	face_down
 	step_end
 
-BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom1:
-	.string "You are currently in\n"
-	.string "the 1st room…$"
-
-BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom3:
-	.string "You are currently in\n"
-	.string "the 3rd room…$"
-
-BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom5:
-	.string "You are currently in\n"
-	.string "the 5th room…$"
-
-BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom7:
-	.string "You are currently in\n"
-	.string "the 7th room…$"
-
-BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom9:
-	.string "You are currently in\n"
-	.string "the 9th room…$"
-
-BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom11:
-	.string "You are currently in\n"
-	.string "the 11th room…$"
-
-BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom13:
-	.string "You are currently in\n"
-	.string "the 13th room…$"
+BattleFrontier_BattlePikeThreePathRoom_Text_CurrentlyInRoom:
+	.string "You are currently in Room {STR_VAR_1}.\n"
+	.string "Your streak is {STR_VAR_2} rooms.$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_ContinueWithChallenge:
 	.string "Will you continue with\n"

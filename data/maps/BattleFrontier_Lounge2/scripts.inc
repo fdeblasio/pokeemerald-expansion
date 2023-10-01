@@ -226,19 +226,19 @@ BattleFrontier_Lounge2_Text_PikeQueenSilverMons::
 	.string "before?\p"
 	.string "When she's in a good mood, they say\n"
 	.string "she uses these three Pokémon:\p"
-	.string "A Poison-type Fang Snake Pokémon,\n"
-	.string "a Bug & Rock Mold Pokémon,\l"
-	.string "and a Water-type Tender Pokémon.$"
+	.string "A Dragon-type Dragon Pokémon,\n"
+	.string "a Water-type Tender Pokémon,\l"
+	.string "and a Poison-type Fang Snake Pokémon.$"
 
 BattleFrontier_Lounge2_Text_PikeQueenGoldMons::
 	.string "Have you battled the Pike Queen\n"
 	.string "when she's serious?\p"
 	.string "When she's seriously annoyed, they say\n"
 	.string "she uses these three Pokémon:\p"
-	.string "A Poison-type Fang Snake Pokémon,\n"
-	.string "a Steel & Ground Iron Snake Pokémon,\l"
-	.string "and a Water- & Flying-type Atrocious\l"
-	.string "Pokémon.$"
+	.string "A Steel & Ground Iron Snake Pokémon,\n"
+	.string "a Water- & Flying-type Atrocious\l"
+	.string "Pokémon, and a Poison-type Fang\l"
+	.string "Snake Pokémon.$"
 
 BattleFrontier_Lounge2_Text_ArenaTycoonIsThere::
 	.string "Bet you didn't know this!\p"
@@ -253,18 +253,19 @@ BattleFrontier_Lounge2_Text_ArenaTycoonSilverMons::
 	.string "When she's assessing the foe's ability,\n"
 	.string "she supposedly uses these Pokémon:\p"
 	.string "A Bug & Fighting Single Horn Pokémon,\n"
-	.string "a Dark-type Moonlight Pokémon,\l"
-	.string "and a Bug & Ghost Shed Pokémon.$"
+	.string "a Bug & Ghost Shed Pokémon,\l"
+	.string "and a Fighting- & Psychic-type\l"
+	.string "Meditate Pokémon.$"
 
 BattleFrontier_Lounge2_Text_ArenaTycoonGoldMons::
 	.string "Have you battled the Arena Tycoon\n"
 	.string "when she's serious?\p"
 	.string "When she battles for keeps,\n"
 	.string "she supposedly uses these Pokémon:\p"
-	.string "A Dark-type Moonlight Pokémon,\n"
-	.string "a Ghost & Poison Shadow Pokémon\l"
-	.string "and a Grass- & Fighting-type\l"
-	.string "Mushroom Pokémon.$"
+	.string "A Fighting-type Martial Arts Pokémon,\n"
+	.string "a Grass- & Fighting-type Mushroom\l"
+	.string "Pokémon, and a Fighting- &\l"
+	.string "Psychic-type Meditate Pokémon.$"
 
 BattleFrontier_Lounge2_Text_PalaceMavenIsThere::
 	.string "Bet you didn't know this!\p"
@@ -280,7 +281,7 @@ BattleFrontier_Lounge2_Text_PalaceMavenSilverMons::
 	.string "spirit, he's said to use these Pokémon:\p"
 	.string "A Poison & Flying-type Bat Pokémon,\n"
 	.string "a Normal-type Lazy Pokémon, and a\l"
-	.string "Water- & Ice-type Transport Pokémon.$"
+	.string "Water- & Rock-type Longevity Pokémon.$"
 
 BattleFrontier_Lounge2_Text_PalaceMavenGoldMons::
 	.string "Have you battled the Palace Maven\n"
@@ -288,7 +289,7 @@ BattleFrontier_Lounge2_Text_PalaceMavenGoldMons::
 	.string "When he throws his entire might into\n"
 	.string "battle, he's said to use these Pokémon:\p"
 	.string "A Fire-type Legendary Pokémon,\n"
-	.string "a Normal-type Lazy Pokémon,\l"
+	.string "a Water- & Rock-type Longevity Pokémon,\l"
 	.string "and a Water-type Aurora Pokémon.$"
 
 BattleFrontier_Lounge2_Text_PyramidKingIsThere::
@@ -312,10 +313,9 @@ BattleFrontier_Lounge2_Text_PyramidKingGoldMons::
 	.string "when he's serious?\p"
 	.string "When he's pumped with hot power,\n"
 	.string "he apparently uses these Pokémon:\p"
-	.string "An Ice & Flying Freeze Pokémon, an\n"
-	.string "Electric & Flying Electric Pokémon,\l"
-	.string "and a Fire- & Flying-type Flame\l"
-	.string "Pokémon.$"
+	.string "A Dragon-type Dragon Orb Pokémon,\n"
+	.string "an Electric-type Electron Pokémon,\l"
+	.string "and a Normal-type Colossal Pokémon.$"
 
 BattleFrontier_Lounge2_Text_DoubleBattleAdvice1::
 	.string "Sure, there are several places where\n"

@@ -110,8 +110,6 @@ BattleFrontier_BattleDomeLobby_EventScript_EndChallenge::
 BattleFrontier_BattleDomeLobby_EventScript_ResumeChallenge::
 	lockall
 	msgbox BattleFrontier_BattleDomeLobby_Text_WeveBeenWaitingForYou, MSGBOX_DEFAULT
-	message BattleFrontier_BattleDomeLobby_Text_OkayToSaveBeforeChallenge2
-	waitmessage
 	dome_save CHALLENGE_STATUS_SAVING
 	playse SE_SAVE
 	waitse
@@ -169,13 +167,6 @@ BattleFrontier_BattleDomeLobby_EventScript_TryEnterChallenge::
 	special ChoosePartyForBattleFrontier
 	waitstate
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleDomeLobby_EventScript_LoadPartyCancelChallenge
-	msgbox BattleFrontier_BattleDomeLobby_Text_OkayToSaveBeforeChallenge, MSGBOX_YESNO
-	switch VAR_RESULT
-	case NO, BattleFrontier_BattleDomeLobby_EventScript_LoadPartyCancelChallenge
-	case YES, BattleFrontier_BattleDomeLobby_EventScript_SaveBeforeChallenge
-	case MULTI_B_PRESSED, BattleFrontier_BattleDomeLobby_EventScript_LoadPartyCancelChallenge
-
-BattleFrontier_BattleDomeLobby_EventScript_SaveBeforeChallenge::
 	setvar VAR_TEMP_CHALLENGE_STATUS, 0
 	frontier_set FRONTIER_DATA_SELECTED_MON_ORDER
 	dome_init
@@ -183,10 +174,7 @@ BattleFrontier_BattleDomeLobby_EventScript_SaveBeforeChallenge::
 	frontier_set FRONTIER_DATA_PAUSED, FALSE
 	special LoadPlayerParty
 	closemessage
-	delay 2
-	call Common_EventScript_SaveGame
 	setvar VAR_TEMP_CHALLENGE_STATUS, 255
-	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleDomeLobby_EventScript_CancelChallengeSaveFailed
 	dome_inittrainers
 BattleFrontier_BattleDomeLobby_EventScript_EnterChallenge::
 	special SavePlayerParty
@@ -342,10 +330,10 @@ BattleFrontier_BattleDomeLobby_EventScript_ShowDoublesResults::
 
 BattleFrontier_BattleDomeLobby_EventScript_ShowPrevTourneyTree::
 	dome_get DOME_DATA_PREV_TOURNEY_TYPE
-	call_if_eq VAR_RESULT, 0, BattleFrontier_BattleDomeLobby_EventScript_PrevTourneyResultsSinglesLv50
-	call_if_eq VAR_RESULT, 1, BattleFrontier_BattleDomeLobby_EventScript_PrevTourneyResultsDoublesLv50
-	call_if_eq VAR_RESULT, 2, BattleFrontier_BattleDomeLobby_EventScript_PrevTourneyResultsSinglesLvOpen
-	call_if_eq VAR_RESULT, 3, BattleFrontier_BattleDomeLobby_EventScript_PrevTourneyResultsDoublesLvOpen
+	call_if_eq VAR_RESULT, 0, BattleFrontier_BattleDomeLobby_EventScript_PrevTourneyResultsSinglesLvOpen
+	call_if_eq VAR_RESULT, 1, BattleFrontier_BattleDomeLobby_EventScript_PrevTourneyResultsDoublesLvOpen
+	call_if_eq VAR_RESULT, 2, BattleFrontier_BattleDomeLobby_EventScript_PrevTourneyResultsSinglesLv50
+	call_if_eq VAR_RESULT, 3, BattleFrontier_BattleDomeLobby_EventScript_PrevTourneyResultsDoublesLv50
 	fadescreen FADE_TO_BLACK
 	dome_showprevtourneytree
 	waitstate
@@ -471,10 +459,6 @@ BattleFrontier_BattleDomeLobby_Text_ExplainSinglesChallenge:
 	.string "If you don't save before interrupting,\n"
 	.string "you will be disqualified.$"
 
-BattleFrontier_BattleDomeLobby_Text_OkayToSaveBeforeChallenge:
-	.string "Before I show you to the Battle Dome,\n"
-	.string "I must save the data. Is that okay?$"
-
 BattleFrontier_BattleDomeLobby_Text_WhichLevelMode:
 	.string "The tournament offers two levels\n"
 	.string "of challenge, Level 50 and Open Level.\l"
@@ -542,10 +526,6 @@ BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved:
 
 BattleFrontier_BattleDomeLobby_Text_WeveBeenWaitingForYou:
 	.string "We've been waiting for you!$"
-
-BattleFrontier_BattleDomeLobby_Text_OkayToSaveBeforeChallenge2:
-	.string "Before I show you to the Battle Dome,\n"
-	.string "I must save the data. Is that okay?$"
 
 BattleFrontier_BattleDomeLobby_Text_WelcomeDoubleBattle:
 	.string "Where the strategies of Trainers\n"

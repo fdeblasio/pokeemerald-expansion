@@ -7748,7 +7748,7 @@ static const struct TrainerMon sParty_Lilith[] = {
     }
 };
 
-static const struct TrainerMon sParty_Cristian[] = {
+static const struct TrainerMon sParty_Kyle[] = {
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
     .lvl = 15,
@@ -8253,7 +8253,7 @@ static const struct TrainerMon sParty_Lyle[] = {
     }
 };
 
-static const struct TrainerMon sParty_Kyle[] = {
+static const struct TrainerMon sParty_Cristian[] = {
     {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
     .lvl = 8,

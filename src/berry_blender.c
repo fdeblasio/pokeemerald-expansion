@@ -449,7 +449,7 @@ static const u16 sArrowStartPos[] = {
     MAX_ARROW_POS / 4 * 2  // 0x8000
 };
 static const u8 sArrowStartPosIds[BLENDER_MAX_PLAYERS - 1] = {1, 1, 0};
-static const u8 sArrowHitRangeStart[BLENDER_MAX_PLAYERS] = {32, 224, 96, 160};
+static const u8 sArrowHitRangeStart[BLENDER_MAX_PLAYERS] = {24, 216, 88, 152};
 
 static const TaskFunc sLocalOpponentTasks[] =
 {
@@ -875,18 +875,18 @@ static const s16 sBerrySpriteData[][5] =
 static const u8 sOpponentBerrySets[NUM_NPC_BERRIES * 2][3] =
 {
     // These sets are used if the player chose one of the 5 NPC berries
-    {ITEM_TO_BERRY(ITEM_ASPEAR_BERRY) - 1, ITEM_TO_BERRY(ITEM_RAWST_BERRY) - 1,  ITEM_TO_BERRY(ITEM_PECHA_BERRY) - 1},   // player chose Cheri Berry
-    {ITEM_TO_BERRY(ITEM_CHERI_BERRY) - 1,  ITEM_TO_BERRY(ITEM_ASPEAR_BERRY) - 1, ITEM_TO_BERRY(ITEM_RAWST_BERRY) - 1},   // player chose Chesto Berry
-    {ITEM_TO_BERRY(ITEM_CHESTO_BERRY) - 1, ITEM_TO_BERRY(ITEM_CHERI_BERRY) - 1,  ITEM_TO_BERRY(ITEM_ASPEAR_BERRY) - 1},  // player chose Pecha Berry
-    {ITEM_TO_BERRY(ITEM_PECHA_BERRY) - 1,  ITEM_TO_BERRY(ITEM_CHESTO_BERRY) - 1, ITEM_TO_BERRY(ITEM_CHERI_BERRY) - 1},   // player chose Rawst Berry
-    {ITEM_TO_BERRY(ITEM_RAWST_BERRY) - 1,  ITEM_TO_BERRY(ITEM_PECHA_BERRY) - 1,  ITEM_TO_BERRY(ITEM_CHESTO_BERRY) - 1},  // player chose Aspear Berry
+    {ITEM_TO_BERRY(ITEM_TAMATO_BERRY) - 1, ITEM_TO_BERRY(ITEM_FIGY_BERRY) - 1,  ITEM_TO_BERRY(ITEM_SPELON_BERRY) - 1},   // player chose Cheri Berry
+    {ITEM_TO_BERRY(ITEM_CORNN_BERRY) - 1,  ITEM_TO_BERRY(ITEM_WIKI_BERRY) - 1, ITEM_TO_BERRY(ITEM_PAMTRE_BERRY) - 1},   // player chose Chesto Berry
+    {ITEM_TO_BERRY(ITEM_MAGOST_BERRY) - 1, ITEM_TO_BERRY(ITEM_MAGO_BERRY) - 1,  ITEM_TO_BERRY(ITEM_WATMEL_BERRY) - 1},  // player chose Pecha Berry
+    {ITEM_TO_BERRY(ITEM_RABUTA_BERRY) - 1,  ITEM_TO_BERRY(ITEM_AGUAV_BERRY) - 1, ITEM_TO_BERRY(ITEM_DURIN_BERRY) - 1},   // player chose Rawst Berry
+    {ITEM_TO_BERRY(ITEM_NOMEL_BERRY) - 1,  ITEM_TO_BERRY(ITEM_IAPAPA_BERRY) - 1,  ITEM_TO_BERRY(ITEM_BELUE_BERRY) - 1},  // player chose Aspear Berry
 
     // These sets are used if the player chose a different berry (set is selected by player's berry % 5)
-    {ITEM_TO_BERRY(ITEM_CHERI_BERRY) - 1,  ITEM_TO_BERRY(ITEM_PECHA_BERRY) - 1,  ITEM_TO_BERRY(ITEM_RAWST_BERRY) - 1},   // player chose Leppa, Figy, ...
-    {ITEM_TO_BERRY(ITEM_CHESTO_BERRY) - 1, ITEM_TO_BERRY(ITEM_RAWST_BERRY) - 1,  ITEM_TO_BERRY(ITEM_ASPEAR_BERRY) - 1},  // player chose Oran, Wiki, ...
-    {ITEM_TO_BERRY(ITEM_PECHA_BERRY) - 1,  ITEM_TO_BERRY(ITEM_ASPEAR_BERRY) - 1, ITEM_TO_BERRY(ITEM_CHERI_BERRY) - 1},   // player chose Persim, Mago, ...
-    {ITEM_TO_BERRY(ITEM_RAWST_BERRY) - 1,  ITEM_TO_BERRY(ITEM_CHERI_BERRY) - 1,  ITEM_TO_BERRY(ITEM_CHESTO_BERRY) - 1},  // player chose Lum, Aguav, ...
-    {ITEM_TO_BERRY(ITEM_ASPEAR_BERRY) - 1, ITEM_TO_BERRY(ITEM_CHESTO_BERRY) - 1, ITEM_TO_BERRY(ITEM_PECHA_BERRY) - 1},   // player chose Sitrus, Iapapa, ...
+    {ITEM_TO_BERRY(ITEM_CHERI_BERRY) - 1,  ITEM_TO_BERRY(ITEM_PECHA_BERRY) - 1,  ITEM_TO_BERRY(ITEM_RAWST_BERRY) - 1},   // player chose Leppa, Figy, Razz, Pomeg, Tamato, Spelon, ...
+    {ITEM_TO_BERRY(ITEM_CHESTO_BERRY) - 1, ITEM_TO_BERRY(ITEM_RAWST_BERRY) - 1,  ITEM_TO_BERRY(ITEM_ASPEAR_BERRY) - 1},  // player chose Oran, Wiki, Bluk, Kelpsy, Cornn, Pamtre, ...
+    {ITEM_TO_BERRY(ITEM_PECHA_BERRY) - 1,  ITEM_TO_BERRY(ITEM_ASPEAR_BERRY) - 1, ITEM_TO_BERRY(ITEM_CHERI_BERRY) - 1},   // player chose Persim, Mago, Nanab, Qualot, Magost, Watmel, ...
+    {ITEM_TO_BERRY(ITEM_RAWST_BERRY) - 1,  ITEM_TO_BERRY(ITEM_CHERI_BERRY) - 1,  ITEM_TO_BERRY(ITEM_CHESTO_BERRY) - 1},  // player chose Lum, Aguav, Wepear, Hondew, Rabuta, Durin, ...
+    {ITEM_TO_BERRY(ITEM_ASPEAR_BERRY) - 1, ITEM_TO_BERRY(ITEM_CHESTO_BERRY) - 1, ITEM_TO_BERRY(ITEM_PECHA_BERRY) - 1},   // player chose Sitrus, Iapapa, Pinap, Grepa, Nomel, Belue, ...
 };
 
 // Berry master's berries follow the same rules as above, but instead of explicitly listing
@@ -914,16 +914,6 @@ static const u8 sBlackPokeblockFlavorFlags[] = {
     (1 << FLAVOR_BITTER) | (1 << FLAVOR_DRY)    | (1 << FLAVOR_SPICY),
     (1 << FLAVOR_SWEET)  | (1 << FLAVOR_DRY)    | (1 << FLAVOR_SPICY),
     (1 << FLAVOR_SOUR)   | (1 << FLAVOR_SWEET)  | (1 << FLAVOR_SPICY),
-};
-
-static const u8 sJPText_GoodTvReady[] = _("\nいいTVができました "); // Unused
-static const u8 sJPText_BadTvReady[] = _("\nダメTVができました "); // Unused
-static const u8 sJPText_Flavors[][5] = {_("からい"), _("しぶい"), _("あまい"), _("にがい"), _("すっぱい")}; // Unused
-
-static const u8 sUnused[] = {
-    6, 6, 6, 6, 5,
-    3, 3, 3, 2, 2,
-    3, 3, 3, 3, 2
 };
 
 static const struct WindowTemplate sBlenderRecordWindowTemplate =
@@ -1528,11 +1518,19 @@ static u8 GetArrowProximity(u16 arrowPos, u8 playerId)
     u8 arrowId = sBerryBlender->playerIdToArrowId[playerId];
     u32 hitRangeStart = sArrowHitRangeStart[arrowId];
 
-    if (pos >= hitRangeStart && pos < hitRangeStart + 48)
+    if (pos >= hitRangeStart && pos < hitRangeStart + 64)
     {
-        if (pos >= hitRangeStart + 20 && pos < hitRangeStart + 28)
+        if (pos >= hitRangeStart + 24 && pos < hitRangeStart + 40)
+            //48-64: 16
+            //240-256
+            //112-128
+            //176-192
             return PROXIMITY_BEST;
         else
+            //24-88: 64
+            //216-280
+            //88-152
+            //152-216
             return PROXIMITY_GOOD;
     }
 
@@ -2047,7 +2045,7 @@ static void UpdateSpeedFromHit(u16 cmd)
         }
         else
         {
-            sBerryBlender->speed += (128 / sNumPlayersToSpeedDivisor[sBerryBlender->numPlayers]);
+            sBerryBlender->speed += (256 / sNumPlayersToSpeedDivisor[sBerryBlender->numPlayers]);
             ShakeBgCoordForHit(&sBerryBlender->bg_X, (sBerryBlender->speed / 100) - 10);
             ShakeBgCoordForHit(&sBerryBlender->bg_Y, (sBerryBlender->speed / 100) - 10);
         }
@@ -2055,9 +2053,13 @@ static void UpdateSpeedFromHit(u16 cmd)
     case LINKCMD_BLENDER_SCORE_GOOD:
         if (sBerryBlender->speed < 1500)
             sBerryBlender->speed += (256 / sNumPlayersToSpeedDivisor[sBerryBlender->numPlayers]);
+        else
+        {
+            sBerryBlender->speed += (128 / sNumPlayersToSpeedDivisor[sBerryBlender->numPlayers]);
+        }
         break;
     case LINKCMD_BLENDER_SCORE_MISS:
-        sBerryBlender->speed -= (256 / sNumPlayersToSpeedDivisor[sBerryBlender->numPlayers]);
+        sBerryBlender->speed -= (128 / sNumPlayersToSpeedDivisor[sBerryBlender->numPlayers]);
         if (sBerryBlender->speed < MIN_ARROW_SPEED)
             sBerryBlender->speed = MIN_ARROW_SPEED;
         break;
@@ -2368,20 +2370,9 @@ static void Debug_SetMaxRPMStage(s16 value)
 {
     sDebug_MaxRPMStage = value;
 }
-
-static s16 UNUSED Debug_GetMaxRPMStage(void)
-{
-    return sDebug_MaxRPMStage;
-}
-
 static void Debug_SetGameTimeStage(s16 value)
 {
     sDebug_GameTimeStage = value;
-}
-
-static s16 UNUSED Debug_GetGameTimeStage(void)
-{
-    return sDebug_GameTimeStage;
 }
 
 static void CalculatePokeblock(struct BlenderBerry *berries, struct Pokeblock *pokeblock, u8 numPlayers, u8 *flavors, u16 maxRPM)
@@ -2489,11 +2480,6 @@ static void CalculatePokeblock(struct BlenderBerry *berries, struct Pokeblock *p
 
     for (i = 0; i < FLAVOR_COUNT + 1; i++)
         flavors[i] = sPokeblockFlavors[i];
-}
-
-static void UNUSED Debug_CalculatePokeblock(struct BlenderBerry* berries, struct Pokeblock* pokeblock, u8 numPlayers, u8 *flavors, u16 maxRPM)
-{
-    CalculatePokeblock(berries, pokeblock, numPlayers, flavors, maxRPM);
 }
 
 static void Debug_SetStageVars(void)

@@ -53,17 +53,17 @@
 
 // capacities of various saveblock objects
 #define DAYCARE_MON_COUNT 2
-#define POKEBLOCKS_COUNT 40
 #define OBJECT_EVENTS_COUNT 16
 #define MAIL_COUNT (10 + PARTY_SIZE)
 #define SECRET_BASES_COUNT 20
 #define POKE_NEWS_COUNT 16
-#define PC_ITEMS_COUNT 50
-#define BAG_ITEMS_COUNT 30
-#define BAG_KEYITEMS_COUNT 30
-#define BAG_POKEBALLS_COUNT 16
-#define BAG_TMHM_COUNT 64
-#define BAG_BERRIES_COUNT 46
+#define PC_ITEMS_COUNT 20 //was 50
+#define BAG_ITEMS_COUNT 60 //was 30
+#define BAG_KEYITEMS_COUNT 30 //might need more
+#define BAG_POKEBALLS_COUNT 25 //need 27; was 16
+#define BAG_TMHM_COUNT 108 //was 64
+#define BAG_BERRIES_COUNT 46 //need 68
+#define POKEBLOCKS_COUNT 20 //was 40
 #define OBJECT_EVENT_TEMPLATES_COUNT 64
 #define DECOR_MAX_SECRET_BASE 16
 #define DECOR_MAX_PLAYERS_HOUSE 12
@@ -85,8 +85,8 @@
 #define HALL_RECORDS_COUNT 3
 
 // Battle Frontier level modes.
-#define FRONTIER_LVL_50         0
-#define FRONTIER_LVL_OPEN       1
+#define FRONTIER_LVL_OPEN       0
+#define FRONTIER_LVL_50         1
 #define FRONTIER_LVL_MODE_COUNT 2
 #define FRONTIER_LVL_TENT       FRONTIER_LVL_MODE_COUNT // Special usage for indicating Battle Tent
 

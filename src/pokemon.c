@@ -4071,6 +4071,13 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
 #if P_FLAG_FORCE_SHINY != 0 || P_FLAG_FORCE_NO_SHINY != 0
         else
 #endif
+
+        if (InBattlePyramid())
+        {
+            while (GET_SHINY_VALUE(value, personality) < SHINY_ODDS)
+                personality = Random32();
+        }
+        else
         {
             u32 totalRerolls = 0;
             if (CheckBagHasItem(ITEM_SHINY_CHARM, 1))

@@ -15,24 +15,24 @@
 static const struct TrainerMon sTestParty1[] =
 {
     {
+        .lvl = 67,
         .species = SPECIES_WOBBUFFET,
-        .ball = ITEM_MASTER_BALL,
         .ability = ABILITY_TELEPATHY,
-        .friendship = 42,
+        .nature = TRAINER_PARTY_NATURE(NATURE_HASTY),
+        .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 4, 0),
+        .iv = TRAINER_PARTY_IVS(25, 26, 27, 28, 29, 30),
+        .moves = {MOVE_AIR_SLASH, MOVE_BARRIER, MOVE_SOLAR_BEAM, MOVE_EXPLOSION},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_ASSAULT_VEST,
+        .ball = ITEM_MASTER_BALL,
         .isShiny = TRUE,
-        .iv = TRAINER_PARTY_IVS(25,26,27,28,29,30),
-        .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 4, 0),
-        .lvl = 67,
-        .moves = {MOVE_AIR_SLASH, MOVE_BARRIER, MOVE_SOLAR_BEAM, MOVE_EXPLOSION},
-        .nature = TRAINER_PARTY_NATURE(NATURE_HASTY),
-        .nickname = COMPOUND_STRING("Bubbles")
+        .nickname = COMPOUND_STRING("Bubbles"),
+        .friendship = 42,
     },
     {
+        .lvl = 5,
         .species = SPECIES_WOBBUFFET,
         .ability = ABILITY_SHADOW_TAG,
-        .lvl = 5,
     },
 };
 

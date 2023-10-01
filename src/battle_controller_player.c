@@ -2089,7 +2089,10 @@ static void PlayerChooseMoveInBattlePalace(u32 battler)
     if (--*(gBattleStruct->arenaMindPoints + battler) == 0)
     {
         gBattlePalaceMoveSelectionRngValue = gRngValue;
-        BtlController_EmitTwoReturnValues(battler, BUFFER_B, 10, ChooseMoveAndTargetInBattlePalace(battler));
+        if (CanMegaEvolve(battler))
+            BtlController_EmitTwoReturnValues(battler, BUFFER_B, 10, ChooseMoveAndTargetInBattlePalace(battler) | (RET_MEGA_EVOLUTION) | (gBattlerTarget << 8));
+        else
+            BtlController_EmitTwoReturnValues(battler, BUFFER_B, 10, ChooseMoveAndTargetInBattlePalace(battler));
         PlayerBufferExecCompleted(battler);
     }
 }

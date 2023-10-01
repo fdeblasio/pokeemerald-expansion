@@ -1680,7 +1680,7 @@
               {
                 "min_level": 12,
                 "max_level": 15,
-                "species": "SPECIES_MAKUHITA"
+                "species": "SPECIES_ROGGENROLA"
               },
               {
                 "min_level": 12,
@@ -1690,7 +1690,7 @@
               {
                 "min_level": 12,
                 "max_level": 15,
-                "species": "SPECIES_MAKUHITA"
+                "species": "SPECIES_ROGGENROLA"
               },
               {
                 "min_level": 12,
@@ -1700,7 +1700,7 @@
               {
                 "min_level": 12,
                 "max_level": 15,
-                "species": "SPECIES_MAKUHITA"
+                "species": "SPECIES_ROGGENROLA"
               },
               {
                 "min_level": 12,
@@ -1710,12 +1710,12 @@
               {
                 "min_level": 12,
                 "max_level": 15,
-                "species": "SPECIES_MAKUHITA"
+                "species": "SPECIES_ROGGENROLA"
               },
               {
                 "min_level": 12,
                 "max_level": 15,
-                "species": "SPECIES_MAKUHITA"
+                "species": "SPECIES_ROGGENROLA"
               },
               {
                 "min_level": 12,
@@ -1744,7 +1744,7 @@
               {
                 "min_level": 12,
                 "max_level": 15,
-                "species": "SPECIES_SABLEYE"
+                "species": "SPECIES_DRILBUR"
               },
               {
                 "min_level": 12,
@@ -1764,7 +1764,7 @@
               {
                 "min_level": 12,
                 "max_level": 15,
-                "species": "SPECIES_SABLEYE"
+                "species": "SPECIES_DRILBUR"
               },
               {
                 "min_level": 12,
@@ -1774,17 +1774,17 @@
               {
                 "min_level": 12,
                 "max_level": 15,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_RIOLU"
               },
               {
                 "min_level": 12,
                 "max_level": 15,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_RIOLU"
               },
               {
                 "min_level": 12,
                 "max_level": 15,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_RIOLU"
               }
             ]
           }
@@ -2108,7 +2108,7 @@
               {
                 "min_level": 12,
                 "max_level": 15,
-                "species": "SPECIES_SABLEYE"
+                "species": "SPECIES_DRILBUR"
               },
               {
                 "min_level": 12,
@@ -2118,17 +2118,17 @@
               {
                 "min_level": 12,
                 "max_level": 15,
-                "species": "SPECIES_SABLEYE"
+                "species": "SPECIES_DRILBUR"
               },
               {
                 "min_level": 12,
                 "max_level": 15,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_RIOLU"
               },
               {
                 "min_level": 12,
                 "max_level": 15,
-                "species": "SPECIES_ARON"
+                "species": "SPECIES_RIOLU"
               }
             ]
           }
@@ -3946,7 +3946,7 @@
               {
                 "min_level": 12,
                 "max_level": 15,
-                "species": "SPECIES_MAKUHITA"
+                "species": "SPECIES_MAWILE"
               },
               {
                 "min_level": 12,
@@ -3956,7 +3956,7 @@
               {
                 "min_level": 12,
                 "max_level": 15,
-                "species": "SPECIES_MAKUHITA"
+                "species": "SPECIES_MAWILE"
               },
               {
                 "min_level": 12,
@@ -3966,7 +3966,7 @@
               {
                 "min_level": 12,
                 "max_level": 15,
-                "species": "SPECIES_MAKUHITA"
+                "species": "SPECIES_MAWILE"
               },
               {
                 "min_level": 12,
@@ -3976,7 +3976,7 @@
               {
                 "min_level": 12,
                 "max_level": 15,
-                "species": "SPECIES_MAKUHITA"
+                "species": "SPECIES_MAWILE"
               }
             ]
           }

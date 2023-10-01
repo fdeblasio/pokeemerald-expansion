@@ -114,34 +114,27 @@ Route121_SafariZoneEntrance_Text_ComeInAndEnjoy:
 
 Route121_SafariZoneEntrance_Text_FirstTimeInfo:
 	.string "When you enter the Safari Zone, you\n"
-	.string "start with 30 Safari Balls for\l"
+	.string "start with 50 Safari Balls for\l"
 	.string "catching Pokémon.\p"
 	.string "The Safari Game is over when you run\n"
 	.string "out of Safari Balls, or when you've\l"
-	.string "walked 500 steps.\p"
+	.string "walked 1,000 steps.\p"
 	.string "Come in and enjoy the Safari Zone!$"
 
 Route121_SafariZoneEntrance_Text_WouldYouLikeToPlay:
 	.string "Welcome to the Safari Zone!\p"
-	.string "All you can catch for just ¥500!\n"
+	.string "All you can catch for free!\n"
 	.string "Would you like to play a Safari Game?$"
 
 Route121_SafariZoneEntrance_Text_PlayAnotherTime:
 	.string "Okay.\n"
 	.string "Please play another time!$"
 
-Route121_SafariZoneEntrance_Text_NotEnoughMoney:
-	.string "You don't have enough money.\n"
-	.string "Sorry.$"
-
-Route121_SafariZoneEntrance_Text_ThatWillBe500Please:
-	.string "That will be ¥500, please.$"
-
 Route121_SafariZoneEntrance_Text_HereAreYourSafariBalls:
 	.string "Here are your Safari Balls.$"
 
 Route121_SafariZoneEntrance_Text_Received30SafariBalls:
-	.string "{PLAYER} received 30 Safari Balls.$"
+	.string "{PLAYER} received 50 Safari Balls.$"
 
 Route121_SafariZoneEntrance_Text_PleaseEnjoyYourself:
 	.string "We'll let you know when your game\n"
@@ -281,7 +274,7 @@ SafariZone_Northeast_Text_Boy:
 	.string "decide what I should catch.$"
 
 SafariZone_Northeast_Text_Woman:
-	.string "I heard that you can see Pikachu here.\n"
+	.string "I heard that you can see Pichu here.\n"
 	.string "Where might one be?$"
 
 SafariZone_Northeast_Text_Girl:

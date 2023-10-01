@@ -14,7 +14,7 @@ SealedChamber_OuterRoom_OnTransition:
 	end
 
 SealedChamber_OuterRoom_OnLoad:
-	call_if_unset FLAG_SYS_BRAILLE_DIG, SealedChamber_OuterRoom_EventScript_CloseInnerRoomEntrance
+	setflag FLAG_SYS_BRAILLE_DIG
 	end
 
 SealedChamber_OuterRoom_EventScript_CloseInnerRoomEntrance::
@@ -88,12 +88,6 @@ SealedChamber_OuterRoom_EventScript_BrailleComma::
 
 SealedChamber_OuterRoom_EventScript_InnerRoomEntranceWall::
 	lockall
-	goto_if_set FLAG_SYS_BRAILLE_DIG, SealedChamber_OuterRoom_EventScript_HoleInWall
-	braillemsgbox SealedChamber_OuterRoom_Braille_DigHere
-	releaseall
-	end
-
-SealedChamber_OuterRoom_EventScript_HoleInWall::
 	msgbox gText_BigHoleInTheWall, MSGBOX_DEFAULT
 	releaseall
 	end

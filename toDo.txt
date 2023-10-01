@@ -1,0 +1,205 @@
+## Find/Replace help
+(_\("[A-Z])([A-Z\.é':]+"\))
+(["\- ][A-Z])([A-Z][A-Zé']+)
+$1\L$2
+
+## Known Bugs
+- When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
+- Items in the Battle Pyramid's Battle Bag/held items in the Battle Pike are turning into Poke Balls
+    - Seems to happen after trainer battles?
+    - This occurs even with the Battle Frontier changes reverted
+- AI_FLAG_ACE_POKEMON didn't seem to work for Roxanne but may for Brawly
+- Unburden may not work?
+
+## Second, more advanced run (1.3.0)
+- Either go through the slog of rebasing, or make new develop branch with files committed in groups (for example, all trainer changes in one, Pokemon changes in others, then do added features last)
+- Stay on EVs/IVs when switching Pokemon
+- If Flash is unused, remove it from being an option in the summary screen
+- Edit moves that work in field
+    - Maybe edit so instead of "if has move" to "if can learn move" (might not be simple since it's .inc and not C)
+    - Cut:
+        - Moves boosted by Sharpness
+    - Rock Smash:
+        - Brick Break
+        - Meteor Mash?
+        - Focus Punch?
+    - Strength:
+        - Superpower?
+        - Close Combat?
+- Expand moves usable in overworld (see above)
+    - Alternatively, remove instances of rocks, boulders, etc
+        - Would need to figure out Rusturf
+        - Cut is still usable in Trick House
+    - Would need to double check but this should make Cut, Rock Smash, and Strength forgettable
+        - (sHMMoves and IsMoveHM)
+        - edit tm_hms.h
+    - Trick House can still use them but maybe have Escape Rope usable there
+- Turn HMs into TMs if they are no longer used in the field
+    - Remove them from being an option in the summary screen (party_menu.c enum)
+    - Remove release blocks in pokemon_storage_system.c
+    - Look for FIELD_MOVE_X
+    - Currently are in same index spot. Should be moved to before HMs once everything is figured out (can simplify IsMoveHM once done)
+    - Edit text (Steven's house for Dive for example)
+- Add in Houndoom for more Magma variety
+    - Mega Evolve Tabitha's?
+    - Redo Admin/Maxie teams
+    - Update some grunts to have it 
+        - Slugma/Vulpix Mossdeep grunt has Slugma replaced by Houndour, the Mightyena grunt gets replaced with a Magcargo, and one of the Numel grunts gets Mightyena
+    - Update some Flannery trainers
+    - Update some Kindlers
+- More save space editing
+    - Medicine Pocket?
+    - See if it's possible to give item PC and decoration PC have more room
+- See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
+- Include charms?
+- Remove all PP Ups/Maxes (including Pickup) due to moves having max PP by default
+Double-check Mirage Island
+Combine changes and README?
+    Include more changes, even if general like Battle Frontier edits
+Battle Frontier
+    - Make pausing challenge not a soft save (CHALLENGE_STATUS_SAVING)
+    - Update rest of apprentice teams
+- https://www.pokecommunity.com/showthread.php?t=416647&page=1
+- https://github.com/pret/pokeemerald/wiki/Tutorials
+- https://www.pokecommunity.com/showpost.php?p=10378278
+- https://github.com/pret/pokeemerald/wiki/Set-Up-Item-Balls-on-a-Map-Without-Needing-New-Scripts
+- https://www.pokecommunity.com/showpost.php?p=10127351&postcount=47
+- https://www.pokecommunity.com/showpost.php?p=10167016&postcount=83
+- Overworld sprites to match trainer sprites (for example, giving Youngsters yellow shirts, girl tubers a yellow tube, Rangers red clothes, Dragon Tamers capes and correct hair color)
+- Improve Pokemon overworld sprites
+- Try to find Bolts foreground of Walda PC
+- Some MAN_2's maybe could be switched to DEVON_EMPLOYEE
+- Debug menu improvements
+- Battle Tent Pokemon/EVs?
+- Edit friendship evolution methods
+- Get all the weird Mauville men at once?
+- Update Favor Lady's items to include new items
+- Implement Deoxys encounter at island/changing forms at Fallarbor
+- Give Espeon Power Gem on level up or evolution?
+- Edit Slot odds (SLOT_MACHINE_)? Even though there's only three prizes?
+- Add Hyper Training
+- Once Mints are implemented, in Lilycove 3F, move X items to left clerk and make right clerk Mints
+    - Or move Mints to left too and have left be Chansey, right be Delibird
+- Get rid of low health constant beeping (https://www.pokecommunity.com/showpost.php?p=10246778&postcount=194)
+- Elite Four rematches
+- Replace ifdefs for move stats with just one set of stats?
+- Add EXP Candy
+- Improve B-canceling moves
+- Go back and make rematch levels stronger/more consistent (first see if they can be locked behind badges)
+- Type effectiveness in battle
+- PC in menu (look at debug menu)
+- TM Case?
+- Get PokeNav to work indoors?
+- Edit rest out mass outbreaks
+    - Maractus/Sandile in Route 111? Would be first time expanding past Gens 1-3 + evos
+- Add FRLG trainer sprites
+- Edit contests?
+- Stop daycare from deleting moves
+- Add relearning moves to PC?
+- Remove unused code
+- Pokemon in Frontier/Trainer Hill should be registered in Dex
+- Update Shiftry's Hidden Ability to Wind Rider
+- Implement Pokedex Plus (https://www.pokecommunity.com/showthread.php?t=441996)
+- Figure out ?????? showing up at end of Dex
+- DON'T USE DEBUG MENU FOR FLYING. Test to see if without it, Fly Flags are set correctly
+    - Maybe use makeshift version of it (without setting all flags) in Start menu to Fly without needing a Pokemon who knows it (no badge requirements)
+        - Fly to routes?
+- Make list of all Magma/Aqua Pokemon and make them spread more evenly across the Grunts
+    - Maybe Admins rely less on Mightyena/Leaders' signature
+    - Magma: Numel, Slugma, Vulpix, Houndour, Torkoal, Baltoy, ???
+    - Aqua: Carvanha, Tentacool, ???
+    - Both: Poochyena/Zubat?
+- Add Farigiraf to Hoenn Dex once implemented
+- Add Ice Spinner as a TM (and maybe give to Beartic/Mamoswine/other Ice types) once implemented?
+- Add 3 other Regis?
+    - Add Regigigas to Sealed Chamber?
+    - Regieleki near New Mauville?
+    - Regidrago near Meteor Falls?
+- Diversify water routes instead of just Tentacool/Wingull (definitely add more Carvanha; bring some fishing encounters to Surf)
+- Figure out a way to mass update of both level up and teachable moves (PoryMoves has slightly different syntax for some forms)
+- Spruce up battles/rematches
+    - Have each rematch only be possible after certain badges? Would make rematch levels more consistent
+    - customAll Pokemon
+        - Winston could have a shiny
+            - Maybe all Rich Boys/Ladies have shinies (would need to have different Pokemon from each other instead of all having Zigzagoon)
+        - Calvin could have a good Nature/EV
+        - Leaders would have optimal Abilities/EVs/IVs/Natures
+    - Breeders should have good IVs/Natures/Abilities
+    - Triathlete would be Speed-focused (maybe endurance/HP too)
+    - Winstrates (including Victor) should have EVs due to the mom mentioning using the Macho Brace
+    - Tori and Tia should have Spindas that aren't identical
+    - Fix Roxanne's rematches being male (due to double battles (which the rematches are) having the personality set before the gender. Can rearrange steps or use customAll to manually set gender)
+    - Fix Flannery's rematches being male; also her Torkoal or Ninetales should have Drought
+    - Norman can have Toxic Orb Toxic Boost Zangoose
+        - Spinda: Thrash if Own Tempo, Superpower if Contrary. Should be given a cool pattern (maybe 88888888?)
+    - Fix Winona's rematches being male; Pelipper gets Drizzle?
+    - Gym leaders/Steven/Breeders can have Hidden Abilities
+    - Maxie/Archie/Steven use Mega Evolutions
+    - Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma)
+    - Vito can use TMs
+        - Swap Vito with Ace Trainer on 1F near the end?
+- Figure out why PokeNav callers think there were 512 wins at the Battle Palace
+    - Might be related to Battle Tent giving an item right away
+- Check that Mossdeep swimmer flag works
+- In game trades
+- Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
+- Bring important Trainers up to ORAS levels?
+- Magmortar Flash Fire?
+- Cherrim
+- Find way to get Hypnosis to always hit if Hypno is using it?
+- Make Water Veil also up evasion like Sand Veil?
+- Edit max money
+- Should be able to run from wild Pokemon if it is Digging, Diving, Flying, Bouncing, etc
+    - Even if ability is Shadow Tag/Arena Trap
+- Actually go through SS Tidal now that you'll have more bag space
+- Brendan/May/Steven rematches?
+- Add Pokemon with dolls? (Togepi, Smoochum, Clefairy, Lapras, Snorlax, Venusaur, Charizard, Blastoise)
+- Make seperate Dex for post-game (similar to SwSh DLC dexes)?
+- Give Absol/Ceruledge Sharpness?
+- Make inserting trainer sprites easier?
+    - Wrapper for src/data/graphics/trainers.h
+    - Condense AnimCmds to just one in src/data/trainer_graphics/front_pic_anims.h
+- Contests overhaul
+- Frontier overhaul:
+    - Pokemon
+        - EVs
+        - Moves
+    - Give BP after every battle?
+    - Do better with saving/resting
+    - Remove level 50? Or remove Open Level but lower Pokemon to level 50 if over?
+    - See if Poke Ball issue no longer occurs on a clean save
+    - Edit Battle Frontier messages for Fairy?
+    - Add new Pokemon to Frontier mons?
+    - Make teams more accurate to trainer classes?
+    - Make resting not a soft save (CHALLENGE_STATUS_SAVING)
+    - Make retiring not reset streak
+        - Perhaps combine the two to take a pause like in SwSh
+    - Battle Tower
+        - Apprentices
+    - Battle Factory
+        - Add new moves to moveStyles (sRequiredMoveCounts)
+        - Don't have both Open Level and Level 50 since the Pokemon are rentals anyways?
+
+### Big changes from Vanilla - low priority
+- Remove IVs? Maybe make boolean for either 0 or 31 added to stat
+    - Would need to figure out Hidden Power
+- Fire Blast/Hydro Pump/Stone Edge accurate in respective weathers?
+    - Make Thunder also accurate in Electric Terrain?
+- Calculate Electro Ball more similarly to Gyro Ball?
+- Add in Hoenn Dex regionals?
+    - Sun/Shiny Stone for Alolan Raichu
+    - Alolan Sandshrew/Vulpix at Shoal Cave
+    - Alolan Muk
+    - Shiny/Dawn Stone for Galarian Weezing
+    - Cursola
+    - Obstagoon
+    - Hisui Voltorb
+    - Post-game:
+        - Alolan Meowth
+        - Galarian Meowth
+        - Paldean Wooper
+    - Update level up/learnable movesets for them
+    - Sandslash, Ninetales, Cursola, and maybe Obstagoon can be used to diversify the Elite Four teams
+
+## Future hacks
+All Yellow Pokémon with yellow shinies (Lickitung, Altaria, etc) replacing the regular palette

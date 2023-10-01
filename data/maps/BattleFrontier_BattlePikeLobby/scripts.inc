@@ -128,13 +128,6 @@ BattleFrontier_BattlePikeLobby_EventScript_TryEnterChallenge::
 	special ChoosePartyForBattleFrontier
 	waitstate
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattlePikeLobby_EventScript_LoadPartyAndCancelChallenge
-	msgbox BattleFrontier_BattlePikeLobby_Text_SaveBeforeChallenge, MSGBOX_YESNO
-	switch VAR_RESULT
-	case NO, BattleFrontier_BattlePikeLobby_EventScript_LoadPartyAndCancelChallenge
-	case YES, BattleFrontier_BattlePikeLobby_EventScript_SaveBeforeChallenge
-	case MULTI_B_PRESSED, BattleFrontier_BattlePikeLobby_EventScript_LoadPartyAndCancelChallenge
-
-BattleFrontier_BattlePikeLobby_EventScript_SaveBeforeChallenge::
 	setvar VAR_TEMP_CHALLENGE_STATUS, 0
 	setvar VAR_TEMP_1, 0
 	frontier_set FRONTIER_DATA_SELECTED_MON_ORDER
@@ -145,8 +138,6 @@ BattleFrontier_BattlePikeLobby_EventScript_SaveBeforeChallenge::
 	frontier_set FRONTIER_DATA_PAUSED, FALSE
 	special LoadPlayerParty
 	closemessage
-	delay 2
-	call Common_EventScript_SaveGame
 	setvar VAR_TEMP_CHALLENGE_STATUS, 255
 	pike_savehelditems
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattlePikeLobby_EventScript_CancelChallengeSaveFailed
@@ -336,11 +327,6 @@ BattleFrontier_BattlePikeLobby_Text_NotEnoughValidMonsLvOpen:
 BattleFrontier_BattlePikeLobby_Text_PleaseChooseThreeMons:
 	.string "Please choose the three Pokémon\n"
 	.string "you wish to enter in the challenge…$"
-
-BattleFrontier_BattlePikeLobby_Text_SaveBeforeChallenge:
-	.string "Before starting your Battle Choice\n"
-	.string "challenge, I must save the game.\l"
-	.string "Is that acceptable?$"
 
 BattleFrontier_BattlePikeLobby_Text_StepThisWay:
 	.string "Please step this way…$"

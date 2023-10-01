@@ -2062,6 +2062,7 @@ static const u16 sSneaselEggMoveLearnset[] = {
     MOVE_FEINT,
     MOVE_ICICLE_CRASH,
     MOVE_THROAT_CHOP,
+    MOVE_RAZOR_WIND,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SNEASEL

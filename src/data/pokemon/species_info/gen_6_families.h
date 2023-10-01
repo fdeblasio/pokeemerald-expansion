@@ -2663,7 +2663,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .catchRate = 200,
         .expYield = 68,
         .evYield_HP = 1,
-        .genderRatio = PERCENT_FEMALE(50),
+        .genderRatio = PERCENT_FEMALE(75),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
@@ -2712,8 +2712,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sSpritzeeLevelUpLearnset,
         .teachableLearnset = sSpritzeeTeachableLearnset,
         .eggMoveLearnset = sSpritzeeEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_SACHET, SPECIES_AROMATISSE},
-                                {EVO_ITEM, ITEM_SACHET, SPECIES_AROMATISSE}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SACHET, SPECIES_AROMATISSE}),
     },
 
     [SPECIES_AROMATISSE] =
@@ -2728,7 +2727,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .catchRate = 140,
         .expYield = 162,
         .evYield_HP = 2,
-        .genderRatio = PERCENT_FEMALE(50),
+        .genderRatio = PERCENT_FEMALE(75),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
@@ -2839,8 +2838,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sSwirlixLevelUpLearnset,
         .teachableLearnset = sSwirlixTeachableLearnset,
         .eggMoveLearnset = sSwirlixEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_WHIPPED_DREAM, SPECIES_SLURPUFF},
-                                {EVO_ITEM, ITEM_WHIPPED_DREAM, SPECIES_SLURPUFF}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WHIPPED_DREAM, SPECIES_SLURPUFF}),
     },
 
     [SPECIES_SLURPUFF] =
@@ -3220,7 +3218,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sSkrelpLevelUpLearnset,
         .teachableLearnset = sSkrelpTeachableLearnset,
         .eggMoveLearnset = sSkrelpEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_DRAGALGE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_DRAGALGE}),
     },
 
     [SPECIES_DRAGALGE] =
@@ -3880,7 +3878,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
         .abilities = { ABILITY_CHEEK_POUCH, ABILITY_PICKUP, ABILITY_PLUS },
-        .bodyColor = BODY_COLOR_YELLOW,
+        .bodyColor = BODY_COLOR_ORANGE,
         .speciesName = _("Dedenne"),
         .cryId = CRY_DEDENNE,
         .natDexNum = NATIONAL_DEX_DEDENNE,
@@ -4052,7 +4050,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sGoomyLevelUpLearnset,
         .teachableLearnset = sGoomyTeachableLearnset,
         .eggMoveLearnset = sGoomyEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_SLIGGOO},
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_SLIGGOO},
                                 {EVO_NONE, 0, SPECIES_SLIGGOO_HISUI}),
     },
 
@@ -4443,8 +4441,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sPhantumpLevelUpLearnset,
         .teachableLearnset = sPhantumpTeachableLearnset,
         .eggMoveLearnset = sPhantumpEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_TREVENANT},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_TREVENANT}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LINKING_CORD, SPECIES_TREVENANT}),
     },
 
     [SPECIES_TREVENANT] =
@@ -4571,8 +4568,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .teachableLearnset = sPumpkabooTeachableLearnset,
         .eggMoveLearnset = sPumpkabooEggMoveLearnset,
         .formSpeciesIdTable = sPumpkabooFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GOURGEIST_AVERAGE},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOURGEIST_AVERAGE}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOURGEIST_AVERAGE}),
     },
 
     [SPECIES_PUMPKABOO_SMALL] =
@@ -4635,9 +4631,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .teachableLearnset = sPumpkabooTeachableLearnset,
         .eggMoveLearnset = sPumpkabooEggMoveLearnset,
         .formSpeciesIdTable = sPumpkabooFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GOURGEIST_SMALL},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOURGEIST_SMALL}),
-    },
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOURGEIST_SMALL}),
+=======
 
     [SPECIES_PUMPKABOO_LARGE] =
     {
@@ -4699,8 +4694,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .teachableLearnset = sPumpkabooTeachableLearnset,
         .eggMoveLearnset = sPumpkabooEggMoveLearnset,
         .formSpeciesIdTable = sPumpkabooFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GOURGEIST_LARGE},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOURGEIST_LARGE}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOURGEIST_LARGE}),
     },
 
     [SPECIES_PUMPKABOO_SUPER] =
@@ -4765,8 +4759,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .teachableLearnset = sPumpkabooTeachableLearnset,
         .eggMoveLearnset = sPumpkabooEggMoveLearnset,
         .formSpeciesIdTable = sPumpkabooFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GOURGEIST_SUPER},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOURGEIST_SUPER}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOURGEIST_SUPER}),
     },
 
     [SPECIES_GOURGEIST_AVERAGE] =
@@ -5284,7 +5277,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sNoibatLevelUpLearnset,
         .teachableLearnset = sNoibatTeachableLearnset,
         .eggMoveLearnset = sNoibatEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_NOIVERN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_NOIVERN}),
     },
 
     [SPECIES_NOIVERN] =
@@ -5556,7 +5549,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .baseSpAttack  = 81,
         .baseSpDefense = 95,
         .types = MON_TYPES(TYPE_DRAGON, TYPE_GROUND),
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,
         .evYield_HP = 3,
         .genderRatio = MON_GENDERLESS,
@@ -5618,7 +5611,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .baseSpAttack  = 81,
         .baseSpDefense = 95,
         .types = MON_TYPES(TYPE_DRAGON, TYPE_GROUND),
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,
         .evYield_HP = 3,
         .genderRatio = MON_GENDERLESS,
@@ -5680,7 +5673,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .baseSpAttack  = 61,
         .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_DRAGON, TYPE_GROUND),
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 243 : 219,
         .evYield_HP = 3,
         .genderRatio = MON_GENDERLESS,
@@ -5743,7 +5736,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .baseSpAttack  = 61,
         .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_DRAGON, TYPE_GROUND),
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 243 : 219,
         .evYield_HP = 3,
         .genderRatio = MON_GENDERLESS,
@@ -5806,7 +5799,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .baseSpAttack  = 91,
         .baseSpDefense = 95,
         .types = MON_TYPES(TYPE_DRAGON, TYPE_GROUND),
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 354 : 319,
         .evYield_HP = 3,
         .genderRatio = MON_GENDERLESS,
@@ -5875,7 +5868,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .baseSpAttack  = 100,
         .baseSpDefense = 150,
         .types = MON_TYPES(TYPE_ROCK, TYPE_FAIRY),
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,
         .evYield_Defense = 1,
         .evYield_SpDefense = 2,
@@ -5943,7 +5936,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .baseSpAttack  = 160,
         .baseSpDefense = 110,
         .types = MON_TYPES(TYPE_ROCK, TYPE_FAIRY),
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = 315,
         .evYield_Defense = 1,
         .evYield_SpDefense = 2,
@@ -6006,7 +5999,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .baseSpAttack  = 150,
         .baseSpDefense = 130,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_GHOST),
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,
         .evYield_SpAttack = 3,
         .genderRatio = MON_GENDERLESS,
@@ -6073,7 +6066,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .baseSpAttack  = 170,
         .baseSpDefense = 130,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_DARK),
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,
         .evYield_SpAttack = 3,
         .genderRatio = MON_GENDERLESS,
@@ -6142,7 +6135,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .baseSpAttack  = 130,
         .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_FIRE, TYPE_WATER),
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,
         .evYield_SpAttack = 3,
         .genderRatio = MON_GENDERLESS,

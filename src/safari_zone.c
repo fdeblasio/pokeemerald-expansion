@@ -29,7 +29,7 @@ extern const u8 SafariZone_EventScript_OutOfBallsMidBattle[];
 extern const u8 SafariZone_EventScript_OutOfBalls[];
 
 EWRAM_DATA u8 gNumSafariBalls = 0;
-EWRAM_DATA static u16 sSafariZoneStepCounter = 0;
+EWRAM_DATA u16 sSafariZoneStepCounter = 0;
 EWRAM_DATA static u8 sSafariZoneCaughtMons = 0;
 EWRAM_DATA static u8 sSafariZonePkblkUses = 0;
 EWRAM_DATA static struct PokeblockFeeder sPokeblockFeeders[NUM_POKEBLOCK_FEEDERS] = {0};
@@ -57,8 +57,8 @@ void EnterSafariMode(void)
     IncrementGameStat(GAME_STAT_ENTERED_SAFARI_ZONE);
     SetSafariZoneFlag();
     ClearAllPokeblockFeeders();
-    gNumSafariBalls = 30;
-    sSafariZoneStepCounter = 500;
+    gNumSafariBalls = 50;
+    sSafariZoneStepCounter = 1000;
     sSafariZoneCaughtMons = 0;
     sSafariZonePkblkUses = 0;
 }

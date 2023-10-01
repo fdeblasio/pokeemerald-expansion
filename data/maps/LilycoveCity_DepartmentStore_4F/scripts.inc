@@ -18,17 +18,60 @@ LilycoveCity_DepartmentStore_4F_EventScript_ClerkLeft::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemart LilycoveCity_DepartmentStore_4F_Pokemart_AttackTMs
+	pokemart LilycoveCity_DepartmentStore_4F_Pokemart_OldTMs
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
 
 	.align 2
-LilycoveCity_DepartmentStore_4F_Pokemart_AttackTMs:
-	.2byte ITEM_TM_FIRE_BLAST
-	.2byte ITEM_TM_THUNDER
+LilycoveCity_DepartmentStore_4F_Pokemart_OldTMs:
 	.2byte ITEM_TM_BLIZZARD
 	.2byte ITEM_TM_HYPER_BEAM
+	.2byte ITEM_TM_LIGHT_SCREEN
+	.2byte ITEM_TM_PROTECT
+	.2byte ITEM_TM_SAFEGUARD
+	.2byte ITEM_TM_THUNDER
+	.2byte ITEM_TM_REFLECT
+	.2byte ITEM_TM_FIRE_BLAST
+	.2byte ITEM_NONE
+	release
+	end
+
+LilycoveCity_DepartmentStore_4F_EventScript_ClerkMegaStones::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart LilycoveCity_DepartmentStore_4F_Pokemart_MegaStones
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+LilycoveCity_DepartmentStore_4F_Pokemart_MegaStones:
+	.2byte ITEM_ALAKAZITE
+	.2byte ITEM_PINSIRITE
+	.2byte ITEM_GYARADOSITE
+	.2byte ITEM_HERACRONITE
+	.2byte ITEM_HOUNDOOMINITE
+	.2byte ITEM_SCEPTILITE
+	.2byte ITEM_BLAZIKENITE
+	.2byte ITEM_SWAMPERTITE
+	.2byte ITEM_GARDEVOIRITE
+	.2byte ITEM_GALLADITE
+	.2byte ITEM_SABLENITE
+	.2byte ITEM_MAWILITE
+	.2byte ITEM_AGGRONITE
+	.2byte ITEM_MEDICHAMITE
+	.2byte ITEM_MANECTITE
+	.2byte ITEM_SHARPEDONITE
+	.2byte ITEM_CAMERUPTITE
+	.2byte ITEM_ALTARIANITE
+	.2byte ITEM_BANETTITE
+	.2byte ITEM_ABSOLITE
+	.2byte ITEM_GLALITITE
+	.2byte ITEM_SALAMENCITE
+	.2byte ITEM_METAGROSSITE
 	.2byte ITEM_NONE
 	release
 	end
@@ -38,17 +81,45 @@ LilycoveCity_DepartmentStore_4F_EventScript_ClerkRight::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemart LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs
+	pokemart LilycoveCity_DepartmentStore_4F_Pokemart_NewTMs
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
 
 	.align 2
-LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs:
-	.2byte ITEM_TM_PROTECT
-	.2byte ITEM_TM_SAFEGUARD
-	.2byte ITEM_TM_REFLECT
-	.2byte ITEM_TM_LIGHT_SCREEN
+LilycoveCity_DepartmentStore_4F_Pokemart_NewTMs:
+	.2byte ITEM_TM_ENERGY_BALL
+	.2byte ITEM_TM_SIGNAL_BEAM
+	.2byte ITEM_TM_PSYCHIC_FANGS
+	.2byte ITEM_TM_DRAGON_PULSE
+	.2byte ITEM_TM_DRAIN_PUNCH
+	.2byte ITEM_TM_DAZZLING_GLEAM
+	.2byte ITEM_TM_SEED_BOMB
+	.2byte ITEM_TM_SHADOW_CLAW
+	.2byte ITEM_TM_GIGA_IMPACT
+	.2byte ITEM_TM_PLAY_ROUGH
+	.2byte ITEM_TM_LEECH_LIFE
+	.2byte ITEM_TM_STONE_EDGE
+	.2byte ITEM_TM_CRUNCH
+	.2byte ITEM_TM_DARK_PULSE
+	.2byte ITEM_TM_ROCK_SLIDE
+	.2byte ITEM_TM_X_SCISSOR
+	.2byte ITEM_TM_NIGHT_SLASH
+	.2byte ITEM_TM_IRON_HEAD
+	.2byte ITEM_TM_POISON_JAB
+	.2byte ITEM_TM_AURA_SPHERE
+	.2byte ITEM_TM_BUG_BUZZ
+	.2byte ITEM_TM_ACROBATICS
+	.2byte ITEM_TM_BODY_SLAM
+	.2byte ITEM_TM_FLASH_CANNON
+	.2byte ITEM_TM_LIQUIDATION
+	.2byte ITEM_TM_THUNDER_PUNCH
+	.2byte ITEM_TM_FIRE_PUNCH
+	.2byte ITEM_TM_ICE_PUNCH
+	.2byte ITEM_TM_EARTH_POWER
+	.2byte ITEM_TM_AIR_SLASH
+	.2byte ITEM_TM_BODY_PRESS
+	.2byte ITEM_TM_MOONBLAST
 	.2byte ITEM_NONE
 	release
 	end
@@ -63,8 +134,8 @@ LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM:
 LilycoveCity_DepartmentStore_4F_Text_FiftyDifferentTMs:
 	.string "There are so many different kinds of\n"
 	.string "TM moves.\p"
-	.string "A catalog I read said there are fifty\n"
-	.string "different kinds.$"
+	.string "A catalog I read said there are one\n"
+	.string "hundred different kinds!$"
 
 LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves:
 	.string "I'd like to get all the different TMs,\n"

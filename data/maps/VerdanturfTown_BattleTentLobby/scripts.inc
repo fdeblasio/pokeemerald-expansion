@@ -94,7 +94,6 @@ VerdanturfTown_BattleTentLobby_EventScript_LostChallenge::
 VerdanturfTown_BattleTentLobby_EventScript_ResumeChallenge::
 	lockall
 	msgbox BattleFrontier_BattlePalaceLobby_Text_WeHaveBeenWaiting, MSGBOX_DEFAULT
-	message BattleFrontier_BattlePalaceLobby_Text_MustSaveBeforeChallenge
 	waitmessage
 	verdanturftent_save CHALLENGE_STATUS_SAVING
 	playse SE_SAVE
@@ -149,7 +148,6 @@ VerdanturfTown_BattleTentLobby_EventScript_SaveBeforeChallenge::
 	special LoadPlayerParty
 	closemessage
 	delay 2
-	call Common_EventScript_SaveGame
 	setvar VAR_TEMP_CHALLENGE_STATUS, 255
 	goto_if_eq VAR_RESULT, 0, VerdanturfTown_BattleTentLobby_EventScript_CancelChallengeSaveFailed
 VerdanturfTown_BattleTentLobby_EventScript_EnterChallenge::

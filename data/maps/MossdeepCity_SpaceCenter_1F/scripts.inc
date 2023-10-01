@@ -219,12 +219,12 @@ MossdeepCity_SpaceCenter_1F_EventScript_Grunt4::
 	msgbox MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE
 	end
 
-MossdeepCity_SpaceCenter_1F_EventScript_Grunt2::
+MossdeepCity_SpaceCenter_1F_EventScript_Courtney::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_GRUNT_SPACE_CENTER_1F, MossdeepCity_SpaceCenter_1F_EventScript_Grunt2Defeated
-	msgbox MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_GRUNT_SPACE_CENTER_2, MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat
+	goto_if_set FLAG_DEFEATED_GRUNT_SPACE_CENTER_1F, MossdeepCity_SpaceCenter_1F_EventScript_CourtneyDefeated
+	msgbox MossdeepCity_SpaceCenter_1F_Text_CourtneyIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_COURTNEY, MossdeepCity_SpaceCenter_1F_Text_CourtneyDefeat
 	setflag FLAG_DEFEATED_GRUNT_SPACE_CENTER_1F
 	copyobjectxytoperm LOCALID_STAIR_GRUNT
 	switch VAR_FACING
@@ -240,8 +240,8 @@ MossdeepCity_SpaceCenter_1F_EventScript_Grunt2::
 	release
 	end
 
-MossdeepCity_SpaceCenter_1F_EventScript_Grunt2Defeated::
-	msgbox MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle, MSGBOX_DEFAULT
+MossdeepCity_SpaceCenter_1F_EventScript_CourtneyDefeated::
+	msgbox MossdeepCity_SpaceCenter_1F_Text_CourtneyPostBattle, MSGBOX_DEFAULT
 	release
 	end
 
@@ -406,14 +406,14 @@ MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle:
 	.string "How would I know?\n"
 	.string "Ask our leader upstairs!$"
 
-MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro:
+MossdeepCity_SpaceCenter_1F_Text_CourtneyIntro:
 	.string "Our leader said no one, but no one,\n"
 	.string "gets past me!$"
 
-MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat:
+MossdeepCity_SpaceCenter_1F_Text_CourtneyDefeat:
 	.string "Ack! Ack! Aaack!$"
 
-MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle:
+MossdeepCity_SpaceCenter_1F_Text_CourtneyPostBattle:
 	.string "Please, tell our leader that\n"
 	.string "I never abandoned my post.\l"
 	.string "That I stayed to the bitter end…$"

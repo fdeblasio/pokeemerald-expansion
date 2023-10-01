@@ -139,13 +139,6 @@ BattleFrontier_BattleArenaLobby_EventScript_TryEnterChallenge::
 	special ChoosePartyForBattleFrontier
 	waitstate
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleArenaLobby_EventScript_LoadPartyAndCancelChallenge
-	msgbox BattleFrontier_BattleArenaLobby_Text_OkayToSave, MSGBOX_YESNO
-	switch VAR_RESULT
-	case NO, BattleFrontier_BattleArenaLobby_EventScript_LoadPartyAndCancelChallenge
-	case YES, BattleFrontier_BattleArenaLobby_EventScript_SaveBeforeChallenge
-	case MULTI_B_PRESSED, BattleFrontier_BattleArenaLobby_EventScript_LoadPartyAndCancelChallenge
-
-BattleFrontier_BattleArenaLobby_EventScript_SaveBeforeChallenge::
 	setvar VAR_TEMP_CHALLENGE_STATUS, 0
 	frontier_set FRONTIER_DATA_SELECTED_MON_ORDER
 	arena_init
@@ -154,10 +147,7 @@ BattleFrontier_BattleArenaLobby_EventScript_SaveBeforeChallenge::
 	frontier_set FRONTIER_DATA_PAUSED, FALSE
 	special LoadPlayerParty
 	closemessage
-	delay 2
-	call Common_EventScript_SaveGame
 	setvar VAR_TEMP_CHALLENGE_STATUS, 255
-	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleArenaLobby_EventScript_CancelChallengeSaveFailed
 BattleFrontier_BattleArenaLobby_EventScript_EnterChallenge::
 	special SavePlayerParty
 	frontier_setpartyorder FRONTIER_PARTY_SIZE
@@ -386,10 +376,6 @@ BattleFrontier_BattleArenaLobby_Text_ExplainChallenge:
 	.string "If you pull off the feat of beating\n"
 	.string "seven Trainers in succession,\l"
 	.string "we will present you with Battle Points.$"
-
-BattleFrontier_BattleArenaLobby_Text_OkayToSave:
-	.string "Before showing you to the Battle\n"
-	.string "Arena, you must save. Is that okay?$"
 
 BattleFrontier_BattleArenaLobby_Text_WhichLevelMode:
 	.string "The Battle Arena offers two levels\n"

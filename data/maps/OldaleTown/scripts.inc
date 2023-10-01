@@ -75,7 +75,7 @@ OldaleTown_EventScript_GoToMartEast::
 
 OldaleTown_EventScript_ExplainPokemonMart::
 	msgbox OldaleTown_Text_ThisIsAPokemonMart, MSGBOX_DEFAULT
-	giveitem ITEM_POTION
+	giveitem ITEM_POTION, 10
 	goto_if_eq VAR_RESULT, FALSE, OldaleTown_EventScript_BagIsFull
 	msgbox OldaleTown_Text_PotionExplanation, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_POTION_OLDALE
@@ -357,8 +357,8 @@ OldaleTown_Text_ThisIsAPokemonMart:
 	.string "Just look for our blue roof.\p"
 	.string "We sell a variety of goods including\n"
 	.string "Poké Balls for catching Pokémon.\p"
-	.string "Here, I'd like you to have this as\n"
-	.string "a promotional item.$"
+	.string "Here, I'd like you to have these as\n"
+	.string "promotional items.$"
 
 OldaleTown_Text_PotionExplanation:
 	.string "A Potion can be used anytime, so it's\n"

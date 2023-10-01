@@ -138,13 +138,6 @@ BattleFrontier_BattlePyramidLobby_EventScript_TryEnterChallenge::
 	special ChoosePartyForBattleFrontier
 	waitstate
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattlePyramidLobby_EventScript_LoadPartyAndCancelChallenge
-	msgbox BattleFrontier_BattlePyramidLobby_Text_OkayToSaveBeforeChallenge, MSGBOX_YESNO
-	switch VAR_RESULT
-	case NO, BattleFrontier_BattlePyramidLobby_EventScript_LoadPartyAndCancelChallenge
-	case YES, BattleFrontier_BattlePyramidLobby_EventScript_SaveBeforeChallenge
-	case MULTI_B_PRESSED, BattleFrontier_BattlePyramidLobby_EventScript_LoadPartyAndCancelChallenge
-
-BattleFrontier_BattlePyramidLobby_EventScript_SaveBeforeChallenge::
 	setvar VAR_TEMP_CHALLENGE_STATUS, 0
 	frontier_set FRONTIER_DATA_SELECTED_MON_ORDER
 	pyramid_init
@@ -155,8 +148,6 @@ BattleFrontier_BattlePyramidLobby_EventScript_SaveBeforeChallenge::
 	pyramid_settrainers
 	special LoadPlayerParty
 	closemessage
-	delay 2
-	call Common_EventScript_SaveGame
 	setvar VAR_TEMP_CHALLENGE_STATUS, 255
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattlePyramidLobby_EventScript_CancelChallengeSaveFailed
 BattleFrontier_BattlePyramidLobby_EventScript_EnterChallenge::
@@ -215,8 +206,8 @@ BattleFrontier_BattlePyramidLobby_EventScript_HintGiver::
 BattleFrontier_BattlePyramidLobby_EventScript_GiveHint::
 	multichoice 17, 6, MULTI_LEVEL_MODE, FALSE
 	switch VAR_RESULT
-	case FRONTIER_LVL_50, BattleFrontier_BattlePyramidLobby_EventScript_GiveHintLv50
 	case FRONTIER_LVL_OPEN, BattleFrontier_BattlePyramidLobby_EventScript_GiveHintLvOpen
+	case FRONTIER_LVL_50, BattleFrontier_BattlePyramidLobby_EventScript_GiveHintLv50
 	case FRONTIER_LVL_TENT, BattleFrontier_BattlePyramidLobby_EventScript_NoHint
 	case MULTI_B_PRESSED, BattleFrontier_BattlePyramidLobby_EventScript_NoHint
 	return
@@ -587,10 +578,6 @@ BattleFrontier_BattlePyramidLobby_Text_NotEnoughValidMonsLv50:
 	.string "Eggs{STR_VAR_1} ineligible.\p"
 	.string "When you are ready, please have\n"
 	.string "a word with me.$"
-
-BattleFrontier_BattlePyramidLobby_Text_OkayToSaveBeforeChallenge:
-	.string "Before you enter the Battle Pyramid,\n"
-	.string "the game must be saved. Is that okay?$"
 
 BattleFrontier_BattlePyramidLobby_Text_ShowYouIntoPyramid:
 	.string "Very good. I will now show you into\n"

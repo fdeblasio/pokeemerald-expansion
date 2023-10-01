@@ -176,11 +176,8 @@ TrainerHill_Entrance_EventScript_CancelEntry::
 	end
 
 TrainerHill_Entrance_EventScript_SaveGame::
-	msgbox TrainerHill_Entrance_Text_SaveGameBeforeEnter, MSGBOX_DEFAULT
 	trainerhill_setsaved
 	setvar VAR_TEMP_5, 1
-	call Common_EventScript_SaveGame
-	goto_if_eq VAR_RESULT, FALSE, TrainerHill_Entrance_EventScript_SaveFailed
 	trainerhill_setsaved
 	return
 
@@ -246,50 +243,8 @@ TrainerHill_Entrance_EventScript_Clerk::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	goto_if_set FLAG_SYS_GAME_CLEAR, TrainerHill_Entrance_EventScript_ExpandedPokemart
-	pokemart TrainerHill_Entrance_Pokemart_Basic
+	pokemart 0
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
-
-	.align 2
-TrainerHill_Entrance_Pokemart_Basic:
-	.2byte ITEM_SUPER_POTION
-	.2byte ITEM_ANTIDOTE
-	.2byte ITEM_PARALYZE_HEAL
-	.2byte ITEM_AWAKENING
-	.2byte ITEM_X_SPEED
-	.2byte ITEM_X_SP_ATK
-	.2byte ITEM_X_ATTACK
-	.2byte ITEM_X_DEFENSE
-	.2byte ITEM_DIRE_HIT
-	.2byte ITEM_GUARD_SPEC
-	.2byte ITEM_X_ACCURACY
-	.2byte ITEM_NONE
-	release
-	end
-
-TrainerHill_Entrance_EventScript_ExpandedPokemart::
-	pokemart TrainerHill_Entrance_Pokemart_Expanded
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
-
-	.align 2
-TrainerHill_Entrance_Pokemart_Expanded:
-	.2byte ITEM_HYPER_POTION
-	.2byte ITEM_MAX_POTION
-	.2byte ITEM_FULL_RESTORE
-	.2byte ITEM_FULL_HEAL
-	.2byte ITEM_REVIVE
-	.2byte ITEM_X_SPEED
-	.2byte ITEM_X_SP_ATK
-	.2byte ITEM_X_ATTACK
-	.2byte ITEM_X_DEFENSE
-	.2byte ITEM_DIRE_HIT
-	.2byte ITEM_GUARD_SPEC
-	.2byte ITEM_X_ACCURACY
-	.2byte ITEM_NONE
 	release
 	end
 
@@ -305,11 +260,6 @@ TrainerHill_Entrance_Text_WelcomeToTrainerHill:
 	.string "This is the Trainer Hill where\n"
 	.string "you may enjoy tag battles with many\l"
 	.string "Trainers!$"
-
-TrainerHill_Entrance_Text_SaveGameBeforeEnter:
-	.string "Is this your first visit here?\p"
-	.string "Before you enter, please save\n"
-	.string "your game.$"
 
 TrainerHill_Entrance_Text_TrainersUpToFloorX:
 	.string "Let's see…\n"

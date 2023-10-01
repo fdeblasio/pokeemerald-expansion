@@ -397,13 +397,15 @@ PlayersHouse_1F_Text_TicketFromBrineyCameForYou:
 	.string "That's the impression I get.\n"
 	.string "But your old man hasn't given up yet!\p"
 	.string "Oh, yes, I have something for you.\n"
-	.string "This came to you from someone named\l"
+	.string "These came to you from someone named\l"
 	.string "Mr. Briney.$"
 
 PlayersHouse_1F_Text_PortsInSlateportLilycove:
 	.string "Dad: Hm, a Ticket for a ferry?\p"
 	.string "If I recall, there are ferry ports in\n"
-	.string "Slateport and Lilycove.$"
+	.string "Slateport and Lilycove.\p"
+	.string "There's also some tickets for some\n"
+	.string "island adventures!$"
 
 PlayersHouse_1F_Text_BetterGetBackToGym:
 	.string "I'd better get back to Petalburg Gym.\p"
@@ -429,11 +431,6 @@ PlayersHouse_1F_Text_LatiEmergencyNewsFlash:
 	.string "currently unknown.\p"
 	.string "We now return you to the regular\n"
 	.string "movie program.$"
-
-PlayersHouse_1F_Text_WhatColorDidTheySay:
-	.string "Mom: {PLAYER}, did you catch that?\p"
-	.string "What color did the announcer say\n"
-	.string "that Pokémon was?$"
 
 PlayersHouse_1F_Text_StillUnknownPokemon:
 	.string "Mom: Well, isn't that something!\n"

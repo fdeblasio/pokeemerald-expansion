@@ -1,5 +1,5 @@
-.set LOCALID_GRUNT, 3
-.set LOCALID_DEVON_EMPLOYEE, 4
+.set LOCALID_GRUNT, 1
+.set LOCALID_DEVON_EMPLOYEE, 2
 
 PetalburgWoods_MapScripts::
 	.byte 0
@@ -444,8 +444,7 @@ PetalburgWoods_Text_HiddenItemsExplanation:
 
 PetalburgWoods_Text_TryUsingThisItem:
 	.string "Oh, neat!\n"
-	.string "That's the Badge from Rustboro GYM!\p"
-	.string "You must be a Trainer.\n"
+	.string "You must be a Trainer.\p"
 	.string "You should try using this item.$"
 
 PetalburgWoods_Text_MiracleSeedExplanation:

@@ -1,58 +1,11 @@
 MossdeepCity_Gym_MapScripts::
-	map_script MAP_SCRIPT_ON_LOAD, MossdeepCity_Gym_OnLoad
 	.byte 0
-
-@ NOTE: Mossdeep Gym was redesigned between R/S and E. Leftover (and now functionally unused) scripts are commented below
-
-@ All the below checks are leftover from RS. FLAG_MOSSDEEP_GYM_SWITCH_X is never set
-MossdeepCity_Gym_OnLoad:
-	goto_if_set FLAG_MOSSDEEP_GYM_SWITCH_1, MossdeepCity_Gym_EventScript_SetSwitch1Metatiles
-	goto MossdeepCity_Gym_EventScript_CheckSwitch2
-	end
-
-MossdeepCity_Gym_EventScript_CheckSwitch2::
-	goto_if_set FLAG_MOSSDEEP_GYM_SWITCH_2, MossdeepCity_Gym_EventScript_SetSwitch2Metatiles
-	goto MossdeepCity_Gym_EventScript_CheckSwitch3
-	end
-
-MossdeepCity_Gym_EventScript_CheckSwitch3::
-	goto_if_set FLAG_MOSSDEEP_GYM_SWITCH_3, MossdeepCity_Gym_EventScript_SetSwitch3Metatiles
-	goto MossdeepCity_Gym_EventScript_CheckSwitch4
-	end
-
-MossdeepCity_Gym_EventScript_CheckSwitch4::
-	goto_if_set FLAG_MOSSDEEP_GYM_SWITCH_4, MossdeepCity_Gym_EventScript_SetSwitch4Metatiles
-	end
-
-@ All the below set metatile scripts are leftover from RS and are functionally unused
-MossdeepCity_Gym_EventScript_SetSwitch1Metatiles::
-	setmetatile 5, 5, METATILE_RSMossdeepGym_RedArrow_Right, FALSE
-	setmetatile 2, 7, METATILE_RSMossdeepGym_Switch_Down, TRUE
-	goto MossdeepCity_Gym_EventScript_CheckSwitch2
-	end
-
-MossdeepCity_Gym_EventScript_SetSwitch2Metatiles::
-	setmetatile 8, 14, METATILE_RSMossdeepGym_RedArrow_Right, FALSE
-	setmetatile 8, 10, METATILE_RSMossdeepGym_Switch_Down, TRUE
-	goto MossdeepCity_Gym_EventScript_CheckSwitch3
-	end
-
-MossdeepCity_Gym_EventScript_SetSwitch3Metatiles::
-	setmetatile 15, 17, METATILE_RSMossdeepGym_RedArrow_Left, FALSE
-	setmetatile 17, 15, METATILE_RSMossdeepGym_Switch_Down, TRUE
-	goto MossdeepCity_Gym_EventScript_CheckSwitch4
-	end
-
-MossdeepCity_Gym_EventScript_SetSwitch4Metatiles::
-	setmetatile 1, 23, METATILE_RSMossdeepGym_RedArrow_Up, FALSE
-	setmetatile 5, 24, METATILE_RSMossdeepGym_Switch_Down, TRUE
-	end
 
 MossdeepCity_Gym_EventScript_TateAndLiza::
 	trainerbattle_double TRAINER_TATE_AND_LIZA_1, MossdeepCity_Gym_Text_TateAndLizaIntro, MossdeepCity_Gym_Text_TateAndLizaDefeat, MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons, MossdeepCity_Gym_EventScript_TateAndLizaDefeated, NO_MUSIC
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, MossdeepCity_Gym_EventScript_TateAndLizaRematch
-	goto_if_unset FLAG_RECEIVED_TM_CALM_MIND, MossdeepCity_Gym_EventScript_GiveCalmMind2
+	goto_if_unset FLAG_RECEIVED_TM_PSYCHIC, MossdeepCity_Gym_EventScript_GivePsychic2
 	msgbox MossdeepCity_Gym_Text_TateAndLizaPostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -77,7 +30,7 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 	setvar VAR_MOSSDEEP_CITY_STATE, 1
 	setflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_STEVEN
 	setvar VAR_MOSSDEEP_SPACE_CENTER_STATE, 1
-	call MossdeepCity_Gym_EventScript_GiveCalmMind
+	call MossdeepCity_Gym_EventScript_GivePsychic
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
@@ -89,19 +42,19 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 	release
 	end
 
-MossdeepCity_Gym_EventScript_GiveCalmMind2::
-	giveitem ITEM_TM_CALM_MIND
+MossdeepCity_Gym_EventScript_GivePsychic2::
+	giveitem ITEM_TM_PSYCHIC
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	msgbox MossdeepCity_Gym_Text_ExplainCalmMind, MSGBOX_DEFAULT
-	setflag FLAG_RECEIVED_TM_CALM_MIND
+	msgbox MossdeepCity_Gym_Text_ExplainPsychic, MSGBOX_DEFAULT
+	setflag FLAG_RECEIVED_TM_PSYCHIC
 	release
 	end
 
-MossdeepCity_Gym_EventScript_GiveCalmMind::
-	giveitem ITEM_TM_CALM_MIND
+MossdeepCity_Gym_EventScript_GivePsychic::
+	giveitem ITEM_TM_PSYCHIC
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
-	msgbox MossdeepCity_Gym_Text_ExplainCalmMind, MSGBOX_DEFAULT
-	setflag FLAG_RECEIVED_TM_CALM_MIND
+	msgbox MossdeepCity_Gym_Text_ExplainPsychic, MSGBOX_DEFAULT
+	setflag FLAG_RECEIVED_TM_PSYCHIC
 	return
 
 MossdeepCity_Gym_EventScript_TateAndLizaRematch::
@@ -572,15 +525,11 @@ MossdeepCity_Gym_Text_ReceivedMindBadge:
 MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis:
 	.string "Tate: The Mind Badge enhances the\n"
 	.string "Sp. Atk and Sp. Def of Pokémon.\p"
-	.string "Liza: It also lets you use the HM move\n"
-	.string "Dive outside of battle.\p"
-	.string "Tate: You should also take this, too.$"
+	.string "Liza: You should also take this, too.$"
 
-MossdeepCity_Gym_Text_ExplainCalmMind:
-	.string "Tate: That TM04 contains…\n"
-	.string "Liza: Calm Mind!\p"
-	.string "Tate: It raises SP. Atk and…\n"
-	.string "Liza: It raises SP. Def!\p"
+MossdeepCity_Gym_Text_ExplainPsychic:
+	.string "Tate: That TM29 contains…\n"
+	.string "Liza: Psychic!\p"
 	.string "Tate: It's a move that's perfect…\n"
 	.string "Liza: For Psychic Pokémon!\p"
 	.string "… … … … … …$"

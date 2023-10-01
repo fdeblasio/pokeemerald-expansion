@@ -1836,6 +1836,7 @@ const u16 gEggMoves[] = {
         MOVE_AVALANCHE,
         MOVE_FEINT,
         MOVE_ICICLE_CRASH,
+        MOVE_RAZOR_WIND,
         MOVE_THROAT_CHOP),
 #endif //P_FAMILY_SNEASEL
 

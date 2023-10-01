@@ -13,7 +13,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpAttack  = 100,
         .baseSpDefense = 100,
         .types = { TYPE_PSYCHIC, TYPE_FIRE },
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,
         .evYield_HP = 3,
         .genderRatio = MON_GENDERLESS,
@@ -99,7 +99,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Snivy, 1),
         FOOTPRINT(Snivy)
         LEARNSETS(Snivy),
-        .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_SERVINE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_SERVINE}),
     },
 
     [SPECIES_SERVINE] =
@@ -244,7 +244,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Tepig, 0),
         FOOTPRINT(Tepig)
         LEARNSETS(Tepig),
-        .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_PIGNITE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_PIGNITE}),
     },
 
     [SPECIES_PIGNITE] =
@@ -390,7 +390,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Oshawott, 0),
         FOOTPRINT(Oshawott)
         LEARNSETS(Oshawott),
-        .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_DEWOTT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_DEWOTT}),
     },
 
     [SPECIES_DEWOTT] =
@@ -1615,8 +1615,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Boldore, 0),
         FOOTPRINT(Boldore)
         LEARNSETS(Boldore),
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GIGALITH},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GIGALITH}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GIGALITH}),
     },
 
     [SPECIES_GIGALITH] =
@@ -1722,7 +1721,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Woobat, 0),
         FOOTPRINT(Woobat)
         LEARNSETS(Woobat),
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_SWOOBAT}),
+        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 24, SPECIES_SWOOBAT}),
     },
 
     [SPECIES_SWOOBAT] =
@@ -1878,7 +1877,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .evYield_HP = 2,                                    \
         .itemCommon = ITEM_ORAN_BERRY,                      \
         .itemRare = ITEM_SITRUS_BERRY,                      \
-        .genderRatio = PERCENT_FEMALE(50),                  \
+        .genderRatio = PERCENT_FEMALE(75),                  \
         .eggCycles = 20,                                    \
         .friendship = STANDARD_FRIENDSHIP,                  \
         .growthRate = GROWTH_FAST,                          \
@@ -1895,14 +1894,14 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_AUDINO] =
     {
         AUDINO_MISC_INFO,
-        .baseHP        = 103,
+        .baseHP        = 105,
         .baseAttack    = 60,
         .baseDefense   = 86,
         .baseSpeed     = 50,
         .baseSpAttack  = 60,
         .baseSpDefense = 86,
         .types = { TYPE_NORMAL, TYPE_NORMAL },
-        .expYield = 390,
+        .expYield = 395,
         .abilities = { ABILITY_HEALER, ABILITY_REGENERATOR, ABILITY_KLUTZ },
         .bodyColor = BODY_COLOR_PINK,
         .cryId = CRY_AUDINO,
@@ -1932,14 +1931,14 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_AUDINO_MEGA] =
     {
         AUDINO_MISC_INFO,
-        .baseHP        = 103,
+        .baseHP        = 105,
         .baseAttack    = 60,
         .baseDefense   = 126,
         .baseSpeed     = 50,
         .baseSpAttack  = 80,
         .baseSpDefense = 126,
         .types = { TYPE_NORMAL, TYPE_FAIRY },
-        .expYield = 425,
+        .expYield = 500,
         .abilities = { ABILITY_HEALER, ABILITY_HEALER, ABILITY_HEALER },
         .bodyColor = BODY_COLOR_WHITE,
         .cryId = CRY_AUDINO_MEGA,
@@ -2062,8 +2061,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Gurdurr, 1),
         FOOTPRINT(Gurdurr)
         LEARNSETS(Gurdurr),
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_CONKELDURR},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_CONKELDURR}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LINKING_CORD, SPECIES_CONKELDURR}),
     },
 
     [SPECIES_CONKELDURR] =
@@ -2462,7 +2460,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Swadloon, 1),
         FOOTPRINT(Swadloon)
         LEARNSETS(Swadloon),
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_LEAVANNY}),
+        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 30, SPECIES_LEAVANNY}),
     },
 
     [SPECIES_LEAVANNY] =
@@ -3161,7 +3159,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Sandile, 1),
         FOOTPRINT(Sandile)
         LEARNSETS(Sandile),
-        .evolutions = EVOLUTION({EVO_LEVEL, 29, SPECIES_KROKOROK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_KROKOROK}),
     },
 
     [SPECIES_KROKOROK] =
@@ -3210,7 +3208,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Krokorok, 1),
         FOOTPRINT(Krokorok)
         LEARNSETS(Krokorok),
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_KROOKODILE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_KROOKODILE}),
     },
 
     [SPECIES_KROOKODILE] =
@@ -3318,7 +3316,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         PALETTES(Darumaka),
         ICON(Darumaka, 0),
         LEARNSETS(Darumaka),
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_DARMANITAN_STANDARD_MODE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_DARMANITAN_STANDARD_MODE}),
     },
 
 #define DARMANITAN_MISC_INFO                                \
@@ -3703,7 +3701,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Scraggy, 2),
         FOOTPRINT(Scraggy)
         LEARNSETS(Scraggy),
-        .evolutions = EVOLUTION({EVO_LEVEL, 39, SPECIES_SCRAFTY}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_SCRAFTY}),
     },
 
     [SPECIES_SCRAFTY] =
@@ -4630,7 +4628,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Gothita, 2),
         FOOTPRINT(Gothita)
         LEARNSETS(Gothita),
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_GOTHORITA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_GOTHORITA}),
     },
 
     [SPECIES_GOTHORITA] =
@@ -4678,7 +4676,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Gothorita, 2),
         FOOTPRINT(Gothorita)
         LEARNSETS(Gothorita),
-        .evolutions = EVOLUTION({EVO_LEVEL, 41, SPECIES_GOTHITELLE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_GOTHITELLE}),
     },
 
     [SPECIES_GOTHITELLE] =
@@ -4777,7 +4775,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Solosis, 1),
         FOOTPRINT(Solosis)
         LEARNSETS(Solosis),
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_DUOSION}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_DUOSION}),
     },
 
     [SPECIES_DUOSION] =
@@ -4826,7 +4824,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Duosion, 1),
         FOOTPRINT(Duosion)
         LEARNSETS(Duosion),
-        .evolutions = EVOLUTION({EVO_LEVEL, 41, SPECIES_REUNICLUS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_REUNICLUS}),
     },
 
     [SPECIES_REUNICLUS] =
@@ -4924,7 +4922,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Ducklett, 0),
         FOOTPRINT(Ducklett)
         LEARNSETS(Ducklett),
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_SWANNA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_SWANNA}),
     },
 
     [SPECIES_SWANNA] =
@@ -5022,7 +5020,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Vanillite, 0),
         FOOTPRINT(Vanillite)
         LEARNSETS(Vanillite),
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_VANILLISH}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_VANILLISH}),
     },
 
     [SPECIES_VANILLISH] =
@@ -5071,7 +5069,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Vanillish, 2),
         FOOTPRINT(Vanillish)
         LEARNSETS(Vanillish),
-        .evolutions = EVOLUTION({EVO_LEVEL, 47, SPECIES_VANILLUXE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_VANILLUXE}),
     },
 
     [SPECIES_VANILLUXE] =
@@ -5505,7 +5503,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Foongus, 0),
         FOOTPRINT(Foongus)
         LEARNSETS(Foongus),
-        .evolutions = EVOLUTION({EVO_LEVEL, 39, SPECIES_AMOONGUSS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_AMOONGUSS}),
     },
 
     [SPECIES_AMOONGUSS] =
@@ -5520,8 +5518,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .catchRate = 75,
         .expYield = 162,
         .evYield_HP = 2,
-        .itemCommon = ITEM_TINY_MUSHROOM,
-        .itemRare = ITEM_BIG_MUSHROOM,
+        .itemCommon = ITEM_BIG_MUSHROOM,
+        .itemRare = ITEM_BALM_MUSHROOM,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -5759,7 +5757,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Joltik, 0),
         FOOTPRINT(Joltik)
         LEARNSETS(Joltik),
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_GALVANTULA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_GALVANTULA}),
     },
 
     [SPECIES_GALVANTULA] =
@@ -5958,7 +5956,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Klink, 0),
         FOOTPRINT(Klink)
         LEARNSETS(Klink),
-        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_KLANG}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_KLANG}),
     },
 
     [SPECIES_KLANG] =
@@ -6008,7 +6006,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Klang, 0),
         FOOTPRINT(Klang)
         LEARNSETS(Klang),
-        .evolutions = EVOLUTION({EVO_LEVEL, 49, SPECIES_KLINKLANG}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_KLINKLANG}),
     },
 
     [SPECIES_KLINKLANG] =
@@ -6020,7 +6018,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpAttack  = 70,
         .baseSpDefense = 85,
         .types = { TYPE_STEEL, TYPE_STEEL },
-        .catchRate = 30,
+        .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 260 : 234,
         .evYield_Defense = 3,
         .genderRatio = MON_GENDERLESS,
@@ -6109,7 +6107,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         FOOTPRINT(Tynamo)
         LEARNSETS(Tynamo),
         .tmIlliterate = TRUE,
-        .evolutions = EVOLUTION({EVO_LEVEL, 39, SPECIES_EELEKTRIK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_EELEKTRIK}),
     },
 
     [SPECIES_EELEKTRIK] =
@@ -6170,7 +6168,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpAttack  = 105,
         .baseSpDefense = 80,
         .types = { TYPE_ELECTRIC, TYPE_ELECTRIC },
-        .catchRate = 30,
+        .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 258 : 232,
         .evYield_Attack = 3,
         .genderRatio = PERCENT_FEMALE(50),
@@ -6229,7 +6227,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE },
         .abilities = { ABILITY_TELEPATHY, ABILITY_SYNCHRONIZE, ABILITY_ANALYTIC },
-        .bodyColor = BODY_COLOR_BLUE,
+        .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Elgyem"),
         .cryId = CRY_ELGYEM,
         .natDexNum = NATIONAL_DEX_ELGYEM,
@@ -6358,7 +6356,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Litwick, 2),
         FOOTPRINT(Litwick)
         LEARNSETS(Litwick),
-        .evolutions = EVOLUTION({EVO_LEVEL, 41, SPECIES_LAMPENT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_LAMPENT}),
     },
 
     [SPECIES_LAMPENT] =
@@ -6513,7 +6511,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Axew, 1),
         FOOTPRINT(Axew)
         LEARNSETS(Axew),
-        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_FRAXURE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_FRAXURE}),
     },
 
     [SPECIES_FRAXURE] =
@@ -6561,7 +6559,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Fraxure, 1),
         FOOTPRINT(Fraxure)
         LEARNSETS(Fraxure),
-        .evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_HAXORUS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_HAXORUS}),
     },
 
     [SPECIES_HAXORUS] =
@@ -6658,7 +6656,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Cubchoo, 0),
         FOOTPRINT(Cubchoo)
         LEARNSETS(Cubchoo),
-        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_BEARTIC}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_BEARTIC}),
     },
 
     [SPECIES_BEARTIC] =
@@ -6724,7 +6722,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             .baseDefense   = 30,
         #endif
         .types = { TYPE_ICE, TYPE_ICE },
-        .catchRate = 25,
+        .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_7) ? 180 : 170,
         .evYield_SpDefense = 2,
         .itemRare = ITEM_NEVER_MELT_ICE,
@@ -6996,7 +6994,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Mienfoo, 1),
         FOOTPRINT(Mienfoo)
         LEARNSETS(Mienfoo),
-        .evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_MIENSHAO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_MIENSHAO}),
     },
 
     [SPECIES_MIENSHAO] =
@@ -7145,7 +7143,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Golett, 0),
         FOOTPRINT(Golett)
         LEARNSETS(Golett),
-        .evolutions = EVOLUTION({EVO_LEVEL, 43, SPECIES_GOLURK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_GOLURK}),
     },
 
     [SPECIES_GOLURK] =
@@ -7244,7 +7242,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Pawniard, 0),
         FOOTPRINT(Pawniard)
         LEARNSETS(Pawniard),
-        .evolutions = EVOLUTION({EVO_LEVEL, 52, SPECIES_BISHARP}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_BISHARP}),
     },
 
     [SPECIES_BISHARP] =
@@ -7305,7 +7303,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpAttack  = 60,
         .baseSpDefense = 85,
         .types = { TYPE_DARK, TYPE_STEEL },
-        .catchRate = 25,
+        .catchRate = 45,
         .expYield = 275,
         .evYield_Attack = 3,
         .genderRatio = PERCENT_FEMALE(50),
@@ -7440,7 +7438,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Rufflet, 2),
         FOOTPRINT(Rufflet)
         LEARNSETS(Rufflet),
-        .evolutions = EVOLUTION({EVO_LEVEL, 54, SPECIES_BRAVIARY},
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_BRAVIARY},
                                 {EVO_NONE, 0, SPECIES_BRAVIARY_HISUIAN}),
     },
 
@@ -7583,7 +7581,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Vullaby, 0),
         FOOTPRINT(Vullaby)
         LEARNSETS(Vullaby),
-        .evolutions = EVOLUTION({EVO_LEVEL, 54, SPECIES_MANDIBUZZ}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_MANDIBUZZ}),
     },
 
     [SPECIES_MANDIBUZZ] =
@@ -7598,6 +7596,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .catchRate = 60,
         .expYield = 179,
         .evYield_SpAttack = 2,
+        .itemCommon = ITEM_RARE_BONE,
         .genderRatio = MON_FEMALE,
         .eggCycles = 20,
         .friendship = 35,
@@ -7638,11 +7637,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_HEATMOR] =
     {
         .baseHP        = 85,
-        .baseAttack    = 97,
-        .baseDefense   = 66,
+        .baseAttack    = 105,
+        .baseDefense   = 70,
         .baseSpeed     = 65,
         .baseSpAttack  = 105,
-        .baseSpDefense = 66,
+        .baseSpDefense = 70,
         .types = { TYPE_FIRE, TYPE_FIRE },
         .catchRate = 90,
         .expYield = 169,
@@ -7686,12 +7685,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_DURANT
     [SPECIES_DURANT] =
     {
-        .baseHP        = 58,
-        .baseAttack    = 109,
-        .baseDefense   = 112,
-        .baseSpeed     = 109,
-        .baseSpAttack  = 48,
-        .baseSpDefense = 48,
+        .baseHP        = 65,
+        .baseAttack    = 110,
+        .baseDefense   = 115,
+        .baseSpeed     = 110,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 50,
         .types = { TYPE_BUG, TYPE_STEEL },
         .catchRate = 90,
         .expYield = 169,
@@ -7778,7 +7777,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Deino, 2),
         FOOTPRINT(Deino)
         LEARNSETS(Deino),
-        .evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_ZWEILOUS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_ZWEILOUS}),
     },
 
     [SPECIES_ZWEILOUS] =
@@ -7826,7 +7825,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Zweilous, 2),
         FOOTPRINT(Zweilous)
         LEARNSETS(Zweilous),
-        .evolutions = EVOLUTION({EVO_LEVEL, 64, SPECIES_HYDREIGON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_HYDREIGON}),
     },
 
     [SPECIES_HYDREIGON] =
@@ -7924,7 +7923,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ICON(Larvesta, 0),
         FOOTPRINT(Larvesta)
         LEARNSETS(Larvesta),
-        .evolutions = EVOLUTION({EVO_LEVEL, 59, SPECIES_VOLCARONA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 56, SPECIES_VOLCARONA}),
     },
 
     [SPECIES_VOLCARONA] =
@@ -7936,7 +7935,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpAttack  = 135,
         .baseSpDefense = 105,
         .types = { TYPE_BUG, TYPE_FIRE },
-        .catchRate = 15,
+        .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 275 : 248,
         .evYield_SpAttack = 3,
         .itemCommon = ITEM_SILVER_POWDER,
@@ -7988,7 +7987,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpAttack  = 90,
         .baseSpDefense = 72,
         .types = { TYPE_STEEL, TYPE_FIGHTING },
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 290 : 261,
         .evYield_Defense = 3,
         .genderRatio = MON_GENDERLESS,
@@ -8038,7 +8037,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpAttack  = 72,
         .baseSpDefense = 90,
         .types = { TYPE_ROCK, TYPE_FIGHTING },
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 290 : 261,
         .evYield_Attack = 3,
         .genderRatio = MON_GENDERLESS,
@@ -8088,7 +8087,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpAttack  = 90,
         .baseSpDefense = 129,
         .types = { TYPE_GRASS, TYPE_FIGHTING },
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 290 : 261,
         .evYield_SpDefense = 3,
         .genderRatio = MON_GENDERLESS,
@@ -8131,7 +8130,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_TORNADUS
 #define TORNADUS_MISC_INFO                                                              \
         .types = { TYPE_FLYING, TYPE_FLYING },                                          \
-        .catchRate = 3,                                                                 \
+        .catchRate = 30,                                                                 \
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 290 : 261,                        \
         .evYield_Attack = 3,                                                            \
         .genderRatio = MON_MALE,                                                        \
@@ -8219,7 +8218,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_THUNDURUS
 #define THUNDURUS_MISC_INFO                                                             \
         .types = { TYPE_ELECTRIC, TYPE_FLYING },                                        \
-        .catchRate = 3,                                                                 \
+        .catchRate = 30,                                                                 \
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 290 : 261,                        \
         .genderRatio = MON_MALE,                                                        \
         .eggCycles = 120,                                                               \
@@ -8316,7 +8315,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpAttack  = 150,
         .baseSpDefense = 120,
         .types = { TYPE_DRAGON, TYPE_FIRE },
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 340 : 306,
         .evYield_SpAttack = 3,
         .genderRatio = MON_GENDERLESS,
@@ -8366,7 +8365,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpAttack  = 120,
         .baseSpDefense = 100,
         .types = { TYPE_DRAGON, TYPE_ELECTRIC },
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 340 : 306,
         .evYield_Attack = 3,
         .genderRatio = MON_GENDERLESS,
@@ -8409,7 +8408,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_LANDORUS
 #define LANDORUS_MISC_INFO                                                              \
         .types = { TYPE_GROUND, TYPE_FLYING },                                          \
-        .catchRate = 3,                                                                 \
+        .catchRate = 30,                                                                 \
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,                        \
         .genderRatio = MON_MALE,                                                        \
         .eggCycles = 120,                                                               \
@@ -8498,7 +8497,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_KYUREM
 #define KYUREM_MISC_INFO                                                                \
         .types = { TYPE_DRAGON, TYPE_ICE },                                             \
-        .catchRate = 3,                                                                 \
+        .catchRate = 30,                                                                \
         .genderRatio = MON_GENDERLESS,                                                  \
         .eggCycles = 120,                                                               \
         .friendship = 0,                                                                \
@@ -8649,7 +8648,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpAttack  = 129,                                                           \
         .baseSpDefense = 90,                                                            \
         .types = { TYPE_WATER, TYPE_FIGHTING },                                         \
-        .catchRate = 3,                                                                 \
+        .catchRate = 30,                                                                 \
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 290 : 261,                        \
         .evYield_SpAttack = 3,                                                          \
         .genderRatio = MON_GENDERLESS,                                                  \
@@ -8717,7 +8716,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 
 #if P_FAMILY_MELOETTA
 #define MELOETTA_MISC_INFO                                                              \
-        .catchRate = 3,                                                                 \
+        .catchRate = 30,                                                                 \
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,                        \
         .evYield_Speed = 1,                                                             \
         .itemCommon = ITEM_STAR_PIECE,                                                  \
@@ -8814,7 +8813,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpAttack  = 120,                                                           \
         .baseSpDefense = 95,                                                            \
         .types = { TYPE_BUG, TYPE_STEEL },                                              \
-        .catchRate = 3,                                                                 \
+        .catchRate = 30,                                                                 \
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,                        \
         .evYield_Attack = 1,                                                            \
         .evYield_Speed = 1,                                                             \

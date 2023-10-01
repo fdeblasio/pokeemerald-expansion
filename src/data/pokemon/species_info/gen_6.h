@@ -2105,7 +2105,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .catchRate = 200,
         .expYield = 68,
         .evYield_HP = 1,
-        .genderRatio = PERCENT_FEMALE(50),
+        .genderRatio = PERCENT_FEMALE(75),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
@@ -2139,8 +2139,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         ICON(Spritzee, 0),
         FOOTPRINT(Spritzee)
         LEARNSETS(Spritzee),
-        .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_SACHET, SPECIES_AROMATISSE},
-                                {EVO_ITEM, ITEM_SACHET, SPECIES_AROMATISSE}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SACHET, SPECIES_AROMATISSE}),
     },
 
     [SPECIES_AROMATISSE] =
@@ -2155,7 +2154,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .catchRate = 140,
         .expYield = 162,
         .evYield_HP = 2,
-        .genderRatio = PERCENT_FEMALE(50),
+        .genderRatio = PERCENT_FEMALE(75),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
@@ -2237,8 +2236,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         ICON(Swirlix, 1),
         FOOTPRINT(Swirlix)
         LEARNSETS(Swirlix),
-        .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_WHIPPED_DREAM, SPECIES_SLURPUFF},
-                                {EVO_ITEM, ITEM_WHIPPED_DREAM, SPECIES_SLURPUFF}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WHIPPED_DREAM, SPECIES_SLURPUFF}),
     },
 
     [SPECIES_SLURPUFF] =
@@ -2531,7 +2529,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         ICON(Skrelp, 2),
         FOOTPRINT(Skrelp)
         LEARNSETS(Skrelp),
-        .evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_DRAGALGE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_DRAGALGE}),
     },
 
     [SPECIES_DRAGALGE] =
@@ -3046,7 +3044,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FAIRY },
         .abilities = { ABILITY_CHEEK_POUCH, ABILITY_PICKUP, ABILITY_PLUS },
-        .bodyColor = BODY_COLOR_YELLOW,
+        .bodyColor = BODY_COLOR_ORANGE,
         .speciesName = _("Dedenne"),
         .cryId = CRY_DEDENNE,
         .natDexNum = NATIONAL_DEX_DEDENNE,
@@ -3174,7 +3172,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         ICON(Goomy, 5),
         FOOTPRINT(Goomy)
         LEARNSETS(Goomy),
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_SLIGGOO},
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_SLIGGOO},
                                 {EVO_NONE, 0, SPECIES_SLIGGOO_HISUIAN}),
     },
 
@@ -3458,8 +3456,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         ICON(Phantump, 1),
         FOOTPRINT(Phantump)
         LEARNSETS(Phantump),
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_TREVENANT},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_TREVENANT}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LINKING_CORD, SPECIES_TREVENANT}),
     },
 
     [SPECIES_TREVENANT] =
@@ -3560,8 +3557,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .frontPicYOffset = 13,
         BACK_PIC(PumpkabooAverage, 56, 48),
         .backPicYOffset = 13,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GOURGEIST_AVERAGE},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOURGEIST_AVERAGE}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOURGEIST_AVERAGE}),
     },
 
     [SPECIES_PUMPKABOO_SMALL] =
@@ -3588,8 +3584,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .frontPicYOffset = 15,
         BACK_PIC(PumpkabooSmall, 56, 48),
         .backPicYOffset = 14,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GOURGEIST_SMALL},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOURGEIST_SMALL}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOURGEIST_SMALL}),
     },
 
     [SPECIES_PUMPKABOO_LARGE] =
@@ -3616,8 +3611,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .frontPicYOffset = 12,
         BACK_PIC(PumpkabooLarge, 56, 48),
         .backPicYOffset = 13,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GOURGEIST_LARGE},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOURGEIST_LARGE}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOURGEIST_LARGE}),
     },
 
     [SPECIES_PUMPKABOO_SUPER] =
@@ -3646,8 +3640,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .frontPicYOffset = 10,
         BACK_PIC(PumpkabooSuper, 56, 48),
         .backPicYOffset = 12,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GOURGEIST_SUPER},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOURGEIST_SUPER}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOURGEIST_SUPER}),
     },
 
 #define GOURGEIST_MISC_INFO                                                 \
@@ -3981,7 +3974,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         ICON(Noibat, 2),
         FOOTPRINT(Noibat)
         LEARNSETS(Noibat),
-        .evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_NOIVERN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_NOIVERN}),
     },
 
     [SPECIES_NOIVERN] =
@@ -4141,7 +4134,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #if P_FAMILY_ZYGARDE
 #define ZYGARDE_MISC_INFO(ability)                                                      \
         .types = { TYPE_DRAGON, TYPE_GROUND },                                          \
-        .catchRate = 3,                                                                 \
+        .catchRate = 30,                                                                \
         .evYield_HP = 3,                                                                \
         .genderRatio = MON_GENDERLESS,                                                  \
         .eggCycles = 120,                                                               \
@@ -4271,7 +4264,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #if P_FAMILY_DIANCIE
 #define DIANCE_MISC_INFO                                                                \
         .types = { TYPE_ROCK, TYPE_FAIRY },                                             \
-        .catchRate = 3,                                                                 \
+        .catchRate = 30,                                                                \
         .evYield_Defense = 1,                                                           \
         .evYield_SpDefense = 2,                                                         \
         .genderRatio = MON_GENDERLESS,                                                  \
@@ -4363,7 +4356,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 
 #if P_FAMILY_HOOPA
 #define HOOPA_MISC_INFO                                                                 \
-        .catchRate = 3,                                                                 \
+        .catchRate = 30,                                                                 \
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,                        \
         .evYield_SpAttack = 3,                                                          \
         .genderRatio = MON_GENDERLESS,                                                  \
@@ -4464,7 +4457,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .baseSpAttack  = 130,
         .baseSpDefense = 90,
         .types = { TYPE_FIRE, TYPE_WATER },
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,
         .evYield_SpAttack = 3,
         .genderRatio = MON_GENDERLESS,

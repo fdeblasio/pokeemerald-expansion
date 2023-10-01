@@ -150,6 +150,9 @@ Pokémon:
     Gastly/Haunter/Gengar:
         Type: Ghost/Poison->Ghost
 
+    Cubone:
+        Can also evolve into Alolan Marowak with a Fire Stone
+
     Rhyperior:
         Learns Rock Wrecker upon evolving
 

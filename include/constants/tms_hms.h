@@ -93,7 +93,7 @@
     F(U_TURN) \
     F(BODY_SLAM) \
     F(FLASH_CANNON) \
-    F(TRICK_ROOM) \
+    F(HEX) \
     F(LIQUIDATION) \
     F(THUNDER_PUNCH) \
     F(FIRE_PUNCH) \

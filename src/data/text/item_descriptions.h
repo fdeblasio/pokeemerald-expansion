@@ -3405,7 +3405,7 @@ static const u8 sTM91Desc[] = _(
     "Flash Cannon");
 
 static const u8 sTM92Desc[] = _(
-    "Trick Room");
+    "Hex");
 
 static const u8 sTM93Desc[] = _(
     "Liquidation");

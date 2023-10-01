@@ -49,7 +49,7 @@ TM04: Calm Mind - Slateport TM Shop
 TM05: Roar - Route 114
 TM06: Toxic - Lavaridge TM Shop
 TM07: Hail - Shoal Cave
-TM08: Bulk Up - Brawly
+TM08: Bulk Up - Slateport TM Shop
 TM09: Bullet Seed - Route 104
 TM10: Hidden Power - Fortree
 TM11: Sunny Day - Scorched Slab
@@ -134,7 +134,7 @@ TM88: Acrobatics - Lilycove TM Shop
 TM89: U-turn - Lavaridge TM Shop
 TM90: Body Slam - Lilycove TM Shop
 TM91: Flash Cannon - Lilycove TM Shop
-TM92: Trick Room - Lavaridge TM Shop
+TM92: Hex - Dewford Gym Leader
 TM93: Liquidation - Lilycove TM Shop
 TM94: Thunder Punch - Lilycove TM Shop
 TM95: Fire Punch - Lilycove TM Shop

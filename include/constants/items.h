@@ -1036,7 +1036,7 @@
 #define MACH_BIKE 0
 #define ACRO_BIKE 1
 
-// Item parameters for EXP Candies
+// Item parameters for Exp. Candies
 #define EXP_100   1
 #define EXP_800   2
 #define EXP_3000  3

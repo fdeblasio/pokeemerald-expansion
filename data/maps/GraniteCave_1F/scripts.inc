@@ -31,10 +31,6 @@ GraniteCave_1F_Text_GetsDarkAheadHereYouGo:
 	.string "Here you go, I'll pass these on to you.$"
 
 GraniteCave_1F_Text_ExplainFlash:
-	.string "Teach that hidden move Flash to\n"
+	.string "Teach that technical move Flash to\n"
 	.string "a Pokémon and use it.\p"
-	.string "It lights up even the inky darkness\n"
-	.string "of caves.\p"
-	.string "But, to use it, you need the Gym Badge\n"
-	.string "from Dewford's Pokémon Gym.$"
-
+	.string "It lights lowers accuracy!.$"

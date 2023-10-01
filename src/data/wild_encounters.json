@@ -3658,16 +3658,6 @@
               {
                 "min_level": 12,
                 "max_level": 15,
-                "species": "SPECIES_ARON"
-              },
-              {
-                "min_level": 12,
-                "max_level": 15,
-                "species": "SPECIES_NOSEPASS"
-              },
-              {
-                "min_level": 12,
-                "max_level": 15,
                 "species": "SPECIES_MAWILE"
               },
               {
@@ -3678,27 +3668,37 @@
               {
                 "min_level": 12,
                 "max_level": 15,
-                "species": "SPECIES_MAWILE"
-              },
-              {
-                "min_level": 12,
-                "max_level": 15,
                 "species": "SPECIES_NOSEPASS"
               },
               {
                 "min_level": 12,
                 "max_level": 15,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_DRILBUR"
               },
               {
                 "min_level": 12,
                 "max_level": 15,
-                "species": "SPECIES_NOSEPASS"
+                "species": "SPECIES_DRILBUR"
               },
               {
                 "min_level": 12,
                 "max_level": 15,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_DRILBUR"
+              },
+              {
+                "min_level": 12,
+                "max_level": 15,
+                "species": "SPECIES_RIOLU"
+              },
+              {
+                "min_level": 12,
+                "max_level": 15,
+                "species": "SPECIES_RIOLU"
+              },
+              {
+                "min_level": 12,
+                "max_level": 15,
+                "species": "SPECIES_RIOLU"
               }
             ]
           }

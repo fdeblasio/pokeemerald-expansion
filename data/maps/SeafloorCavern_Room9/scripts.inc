@@ -34,12 +34,12 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	waitmovement 0
 	msgbox SeafloorCavern_Room9_Text_ArchieYouMustDisappear, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_ARCHIE, SeafloorCavern_Room9_Text_ArchieDefeat
-	msgbox SeafloorCavern_Room9_Text_ArchieWithThisRedOrb, MSGBOX_DEFAULT
+	msgbox SeafloorCavern_Room9_Text_ArchieWithThisBlueOrb, MSGBOX_DEFAULT
 	setweather WEATHER_NONE
 	doweather
 	special Script_FadeOutMapMusic
 	waitstate
-	msgbox SeafloorCavern_Room9_Text_RedOrbShinesByItself, MSGBOX_DEFAULT
+	msgbox SeafloorCavern_Room9_Text_BlueOrbShinesByItself, MSGBOX_DEFAULT
 	special WaitWeather
 	waitstate
 	setvar VAR_RESULT, 1
@@ -250,22 +250,22 @@ SeafloorCavern_Room9_Text_ArchieDefeat:
 	.string "What?!\n"
 	.string "I lost to a mere child like you?!$"
 
-SeafloorCavern_Room9_Text_ArchieWithThisRedOrb:
+SeafloorCavern_Room9_Text_ArchieWithThisBlueOrb:
 	.string "Archie: Fufufu…\p"
 	.string "I commend you. I must recognize that\n"
 	.string "you are truly gifted.\p"
 	.string "But!\n"
 	.string "I have this in my possession!\p"
-	.string "With this Red Orb, I can make Kyogre…$"
+	.string "With this Blue Orb, I can make Kyogre…$"
 
-SeafloorCavern_Room9_Text_RedOrbShinesByItself:
-	.string "The Red Orb suddenly began shining\n"
+SeafloorCavern_Room9_Text_BlueOrbShinesByItself:
+	.string "The Blue Orb suddenly began shining\n"
 	.string "by itself!$"
 
 SeafloorCavern_Room9_Text_ArchieWhereDidKyogreGo:
 	.string "Archie: What?!\p"
 	.string "I didn't do anything.\n"
-	.string "Why did the Red Orb…\p"
+	.string "Why did the Blue Orb…\p"
 	.string "Where did Kyogre go?$"
 
 SeafloorCavern_Room9_Text_ArchieAMessageFromOutside:
@@ -290,7 +290,7 @@ SeafloorCavern_Room9_Text_ArchieWhatRainingTooHard:
 
 SeafloorCavern_Room9_Text_ArchieWhyDidKyogreDisappear:
 	.string "Archie: There's something wrong…\p"
-	.string "The Red Orb is supposed to awaken\n"
+	.string "The Blue Orb is supposed to awaken\n"
 	.string "and control Kyogre…\p"
 	.string "But… Why?\n"
 	.string "Why did Kyogre disappear?\p"
@@ -310,7 +310,7 @@ SeafloorCavern_Room9_Text_ArchieDontGetAllHighAndMighty:
 	.string "Don't get all high and mighty with me!\p"
 	.string "Wasn't it you, Team Magma, that\n"
 	.string "infuriated Groudon?\p"
-	.string "So long as I have this Red Orb,\n"
+	.string "So long as I have this Blue Orb,\n"
 	.string "I should be able to control Kyogre…\p"
 	.string "I should be able to control it…$"
 

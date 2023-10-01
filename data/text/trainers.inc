@@ -1474,15 +1474,15 @@ Route111_Text_TyronPostBattle:
 	.string "I bet everyone feels that way when\n"
 	.string "they enter a battle!$"
 
-Route111_Text_CelinaIntro:
+Route111_Text_LilyIntro:
 	.string "Show me how to put a little excitement\n"
 	.string "into my life.$"
 
-Route111_Text_CelinaDefeat:
+Route111_Text_LilyDefeat:
 	.string "Oh… My…\n"
 	.string "That was too much excitement.$"
 
-Route111_Text_CelinaPostBattle:
+Route111_Text_LilyPostBattle:
 	.string "My pulse is still racing.\n"
 	.string "You're one fabulous Trainer.$"
 
@@ -2030,14 +2030,14 @@ Route115_Text_TimothyPostRematch:
 
 Route115_Text_KoichiIntro:
 	.string "You!\p"
-	.string "My Machop!\p"
+	.string "My Machoke!\p"
 	.string "Demand a battle!$"
 
 Route115_Text_KoichiDefeat:
 	.string "Ouch, ouch, ouch!$"
 
 Route115_Text_KoichiPostBattle:
-	.string "My Machop crew!\p"
+	.string "My Machoke crew!\p"
 	.string "So long as they seek power, I will\n"
 	.string "grow strong with them!$"
 
@@ -2099,7 +2099,7 @@ Route115_Text_CyndyPostRematch:
 	.string "It must be that I love Pokémon.$"
 
 Route115_Text_HectorIntro:
-	.string "I have a rare Pokémon!\n"
+	.string "I have rare Pokémon!\n"
 	.string "Would you like me to show you?$"
 
 Route115_Text_HectorDefeat:
@@ -2107,7 +2107,7 @@ Route115_Text_HectorDefeat:
 	.string "You want my Pokémon, don't you?$"
 
 Route115_Text_HectorPostBattle:
-	.string "I have this rare Pokémon.\n"
+	.string "I have these rare Pokémon.\n"
 	.string "It's enough to keep me satisfied.$"
 
 Route115_Text_KyraIntro:

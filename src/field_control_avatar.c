@@ -106,19 +106,16 @@ void FieldGetPlayerInput(struct FieldInput *input, u16 newKeys, u16 heldKeys)
 
     if ((tileTransitionState == T_TILE_CENTER && forcedMove == FALSE) || tileTransitionState == T_NOT_MOVING)
     {
-        if (GetPlayerSpeed() != PLAYER_SPEED_FASTEST)
-        {
-            if (newKeys & START_BUTTON)
-                input->pressedStartButton = TRUE;
-            if (newKeys & SELECT_BUTTON)
-                input->pressedSelectButton = TRUE;
-            if (newKeys & A_BUTTON)
-                input->pressedAButton = TRUE;
-            if (newKeys & B_BUTTON)
-                input->pressedBButton = TRUE;
-            if (newKeys & R_BUTTON && !FlagGet(DN_FLAG_SEARCHING))
-                input->pressedRButton = TRUE;
-        }
+        if (newKeys & START_BUTTON)
+            input->pressedStartButton = TRUE;
+        if (newKeys & SELECT_BUTTON)
+            input->pressedSelectButton = TRUE;
+        if (newKeys & A_BUTTON)
+            input->pressedAButton = TRUE;
+        if (newKeys & B_BUTTON)
+            input->pressedBButton = TRUE;
+        if (newKeys & R_BUTTON && !FlagGet(DN_FLAG_SEARCHING))
+            input->pressedRButton = TRUE;
 
         if (heldKeys & (DPAD_UP | DPAD_DOWN | DPAD_LEFT | DPAD_RIGHT))
         {
@@ -224,13 +221,13 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
         ShowStartMenu();
         return TRUE;
     }
-    
+
     if (input->tookStep && TryFindHiddenPokemon())
         return TRUE;
-    
+
     if (input->pressedSelectButton && UseRegisteredKeyItemOnField() == TRUE)
         return TRUE;
-    
+
     if (input->pressedRButton && TryStartDexNavSearch())
         return TRUE;
 

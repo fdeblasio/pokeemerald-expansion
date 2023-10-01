@@ -208,8 +208,11 @@ const u32 gTrainerPalette_Twins[] = INCBIN_U32("graphics/trainers/front_pics/twi
 const u32 gTrainerFrontPic_Sailor[] = INCBIN_U32("graphics/trainers/front_pics/sailor.4bpp.lz");
 const u32 gTrainerPalette_Sailor[] = INCBIN_U32("graphics/trainers/front_pics/sailor.gbapal.lz");
 
-const u32 gTrainerFrontPic_MagmaAdmin[] = INCBIN_U32("graphics/trainers/front_pics/magma_admin.4bpp.lz");
-const u32 gTrainerPalette_MagmaAdmin[] = INCBIN_U32("graphics/trainers/front_pics/magma_admin.gbapal.lz");
+const u32 gTrainerFrontPic_MagmaAdminM[] = INCBIN_U32("graphics/trainers/front_pics/magma_admin_m.4bpp.lz");
+const u32 gTrainerPalette_MagmaAdminM[] = INCBIN_U32("graphics/trainers/front_pics/magma_admin_m.gbapal.lz");
+
+const u32 gTrainerFrontPic_MagmaAdminF[] = INCBIN_U32("graphics/trainers/front_pics/magma_admin_f.4bpp.lz");
+const u32 gTrainerPalette_MagmaAdminF[] = INCBIN_U32("graphics/trainers/front_pics/magma_admin_f.gbapal.lz");
 
 const u32 gTrainerFrontPic_Wally[] = INCBIN_U32("graphics/trainers/front_pics/wally.4bpp.lz");
 const u32 gTrainerPalette_Wally[] = INCBIN_U32("graphics/trainers/palettes/wally.gbapal.lz");
@@ -273,6 +276,9 @@ const u32 gTrainerPalette_Red[] = INCBIN_U32("graphics/trainers/front_pics/red.g
 
 const u32 gTrainerFrontPic_Leaf[] = INCBIN_U32("graphics/trainers/front_pics/leaf.4bpp.lz");
 const u32 gTrainerPalette_Leaf[] = INCBIN_U32("graphics/trainers/front_pics/leaf.gbapal.lz");
+
+const u32 gTrainerFrontPic_Rocker[] = INCBIN_U32("graphics/trainers/front_pics/rocker.4bpp.lz");
+const u32 gTrainerPalette_Rocker[] = INCBIN_U32("graphics/trainers/front_pics/rocker.gbapal.lz");
 
 const u32 gTrainerFrontPic_RubySapphireBrendan[] = INCBIN_U32("graphics/trainers/front_pics/brendan_rs.4bpp.lz");
 const u32 gTrainerPalette_RubySapphireBrendan[] = INCBIN_U32("graphics/trainers/palettes/brendan_rs.gbapal.lz");
@@ -378,7 +384,8 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(SWIMMER_F, SwimmerF, 0, 0, 0x200),
     TRAINER_SPRITE(TWINS, Twins, 0, 0, 0x200),
     TRAINER_SPRITE(SAILOR, Sailor, 0, 0, 0x200),
-    TRAINER_SPRITE(MAGMA_ADMIN, MagmaAdmin, 0, 0, 0x200),
+    TRAINER_SPRITE(MAGMA_ADMIN_M, MagmaAdminM, 0, 0, 0x200),
+    TRAINER_SPRITE(MAGMA_ADMIN_F, MagmaAdminF, 0, 0, 0x200),
     TRAINER_SPRITE(WALLY, Wally, 0, 0, 0x200),
     TRAINER_SPRITE(BRENDAN, Brendan, 0, 0, 0x200),
     TRAINER_SPRITE(MAY, May, 0, 0, 0x200),
@@ -402,6 +409,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(LEAF, Leaf, 0, 0, 0x200),
     TRAINER_SPRITE(RS_BRENDAN, RubySapphireBrendan, 0, 0, 0x200),
     TRAINER_SPRITE(RS_MAY, RubySapphireMay, 0, 0, 0x200),
+    TRAINER_SPRITE(ROCKER, Rocker, 0, 0, 0x200),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =

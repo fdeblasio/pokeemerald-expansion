@@ -6182,7 +6182,7 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_ADMIN,
+        .trainerPic = TRAINER_PIC_MAGMA_ADMIN_M,
         .trainerName = _("Tabitha"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7178,7 +7178,7 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_ADMIN,
+        .trainerPic = TRAINER_PIC_MAGMA_ADMIN_M,
         .trainerName = _("Tabitha"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8798,7 +8798,7 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_ADMIN,
+        .trainerPic = TRAINER_PIC_MAGMA_ADMIN_M,
         .trainerName = _("Tabitha"),
         .items = {},
         .doubleBattle = FALSE,

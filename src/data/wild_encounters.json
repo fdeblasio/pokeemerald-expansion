@@ -2099,16 +2099,6 @@
                 "species": "SPECIES_ARON"
               }
             ]
-          },
-          "rock_smash_mons": {
-            "encounter_rate": 20,
-            "mons": [
-              {
-                "min_level": 20,
-                "max_level": 25,
-                "species": "SPECIES_NOSEPASS"
-              }
-            ]
           }
         },
         {

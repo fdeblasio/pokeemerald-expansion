@@ -469,6 +469,9 @@ Pokémon:
     Shieldon/Bastiodon (not in main game):
         Received Rock Head as a second ability
 
+    Riolu (not in main game):
+        Can also evolve at level 20
+
     Carracosta (not in main game):
         Learns Body Press by TM
 

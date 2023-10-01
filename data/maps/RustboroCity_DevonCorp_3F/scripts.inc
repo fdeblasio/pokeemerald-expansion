@@ -254,7 +254,7 @@ RustboroCity_DevonCorp_3F_Text_ExplainExpShare:
 	.string "Mr. Stone: A Pokémon holding that\n"
 	.string "Exp. Share will be given some of the\l"
 	.string "Exp Points from battle.\p"
-	.string "It will get EXP Points even if it didn't\n"
+	.string "It will get Exp Points even if it didn't\n"
 	.string "actually battle.\p"
 	.string "I would say Exp. Share is quite useful\n"
 	.string "for raising weak Pokémon.$"

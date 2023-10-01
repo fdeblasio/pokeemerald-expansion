@@ -188,7 +188,6 @@ With this, you'll get the latest version of pokeemerald-expansion, plus a couple
 - [Porymaps](https://github.com/huderlem/porymap/releases/tag/5.1.1)
 - Lunos
     - [Fixing Snow weather](https://github.com/pret/pokeemerald/wiki/Fix-Snow-Weather)
-    - [Showing Hidden Power type in battle](https://www.pokecommunity.com/showpost.php?p=10269149)
     - [Swapping party using Select](https://www.pokecommunity.com/showpost.php?p=10420662)
     - [Displaying Return/Frustration power in summary screen](https://www.pokecommunity.com/showpost.php?p=10575976&postcount=420)
 - Ghoulslash
@@ -205,7 +204,6 @@ With this, you'll get the latest version of pokeemerald-expansion, plus a couple
     - [Showing EVs/IVs in the summary screen](https://www.pokecommunity.com/showpost.php?p=10410302)
     - [Removing the need to water berries on rainy routes](https://www.pokecommunity.com/showpost.php?p=10349397&postcount=258)
     - [LGPE-Style bonus Premier Balls](https://github.com/pret/pokeemerald/wiki/LGPE-Style-Bonus-Premier-Balls)
-- [Jirachii for implementing Hidden Power type in the summary screen](https://www.pokecommunity.com/showpost.php?p=10269132)
 - [Zeturic for a wrapping summary screen](https://www.pokecommunity.com/showpost.php?p=10060875&postcount=27)
 - [Diego Mertens for adding the Move Relearner to the summary screen](https://www.pokecommunity.com/showpost.php?p=10470602)
 - [Hiroshi for making TMs unsellable](https://www.pokecommunity.com/showpost.php?p=10209376)

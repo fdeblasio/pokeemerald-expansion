@@ -676,8 +676,8 @@
     {
       "map_section": "MAPSEC_INSIDE_OF_TRUCK",
       "name": "Inside of Truck",
-      "x": 0,
-      "y": 0,
+      "x": 4,
+      "y": 11,
       "width": 1,
       "height": 1
     },

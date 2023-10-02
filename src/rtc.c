@@ -293,6 +293,15 @@ void RtcCalcLocalTime(void)
     RtcCalcTimeDifference(&sRtc, &gLocalTime, &gSaveBlock2Ptr->localTimeOffset);
 }
 
+u8 GetTimeOfDay(void) {
+    RtcCalcLocalTime();
+    if (gLocalTime.hours >= 6 && gLocalTime.hours < 20) {
+        return TIME_DAY;
+    } else if ((gLocalTime.hours >= 0 && gLocalTime.hours < 6) || (gLocalTime.hours >= 20 && gLocalTime.hours < 24)) {
+        return TIME_NIGHT;
+    }
+}
+
 void RtcInitLocalTimeOffset(s32 hour, s32 minute)
 {
     RtcCalcLocalTimeOffset(0, hour, minute, 0);

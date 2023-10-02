@@ -18282,6 +18282,7 @@ static const u16 sHeracrossTeachableLearnset[] = {
     MOVE_TRAILBLAZE,
     MOVE_VENOSHOCK,
     MOVE_WORK_UP,
+    MOVE_X_SCISSOR,
     MOVE_UNAVAILABLE,
 };
 

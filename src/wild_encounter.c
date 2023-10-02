@@ -40,7 +40,6 @@ extern const u8 EventScript_SprayWoreOff[];
 enum {
     WILD_AREA_LAND,
     WILD_AREA_WATER,
-    WILD_AREA_ROCKS,
     WILD_AREA_FISHING,
 };
 
@@ -248,22 +247,6 @@ static u8 ChooseWildMonIndex_Water(void)
 
     if (swap)
         wildMonIndex = 4 - wildMonIndex;
-
-    return wildMonIndex;
-}
-
-// ROCK_WILD_COUNT
-static u8 ChooseWildMonIndex_Rock(void)
-{
-    u8 wildMonIndex = 0;
-    bool8 swap = FALSE;
-    u8 rand = Random() % ENCOUNTER_CHANCE_ROCK_SMASH_MONS_TOTAL;
-
-    if (LURE_STEP_COUNT != 0 && (Random() % 10 < 2))
-        swap = TRUE;
-
-    if (swap)
-        wildMonIndex = 0 - wildMonIndex;
 
     return wildMonIndex;
 }
@@ -505,9 +488,6 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo *wildMonInfo, u8 ar
             break;
 
         wildMonIndex = ChooseWildMonIndex_Water();
-        break;
-    case WILD_AREA_ROCKS:
-        wildMonIndex = ChooseWildMonIndex_Rock();
         break;
     }
 
@@ -775,35 +755,6 @@ bool8 StandardWildEncounter(u16 curMetatileBehavior, u16 prevMetatileBehavior)
     }
 
     return FALSE;
-}
-
-void RockSmashWildEncounter(void)
-{
-    u16 headerId = GetCurrentMapWildMonHeaderId();
-
-    if (headerId != HEADER_NONE)
-    {
-        const struct WildPokemonInfo *wildPokemonInfo = gWildMonHeaders[headerId].rockSmashMonsInfo;
-
-        if (wildPokemonInfo == NULL)
-        {
-            gSpecialVar_Result = FALSE;
-        }
-        else if (WildEncounterCheck(wildPokemonInfo->encounterRate, TRUE) == TRUE
-         && TryGenerateWildMon(wildPokemonInfo, WILD_AREA_ROCKS, WILD_CHECK_REPEL | WILD_CHECK_KEEN_EYE) == TRUE)
-        {
-            BattleSetup_StartWildBattle();
-            gSpecialVar_Result = TRUE;
-        }
-        else
-        {
-            gSpecialVar_Result = FALSE;
-        }
-    }
-    else
-    {
-        gSpecialVar_Result = FALSE;
-    }
 }
 
 bool8 SweetScentWildEncounter(void)
@@ -1146,9 +1097,6 @@ static u8 GetMaxLevelOfSpeciesInWildTable(const struct WildPokemon *wildMon, u16
         break;
     case WILD_AREA_WATER:
         numMon = WATER_WILD_COUNT;
-        break;
-    case WILD_AREA_ROCKS:
-        numMon = ROCK_WILD_COUNT;
         break;
     }
 

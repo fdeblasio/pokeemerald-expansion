@@ -3792,32 +3792,24 @@ void UpdateTrainerFanClubGameClear(void)
     }
 }
 
-// If the player has < 3 fans, gain a new fan whenever the counter reaches 20+
-// Defeating Drake or participating in a Contest increments the counter by 2
-// Participating at Battle Tower or in a Secret Base battle increments the counter by 1
+// Gain a new fan whenever the counter reaches 10+
+// Defeating Drake, participating in a Contest, participating at Battle Tower, or in a Secret Base battle increments the counter by 1
 u8 TryGainNewFanFromCounter(u8 incrementId)
 {
     static const u8 sCounterIncrements[] =
     {
-        [FANCOUNTER_DEFEATED_DRAKE]    = 2,
+        [FANCOUNTER_DEFEATED_DRAKE]    = 1,
         [FANCOUNTER_BATTLED_AT_BASE]   = 1,
-        [FANCOUNTER_FINISHED_CONTEST]  = 2,
+        [FANCOUNTER_FINISHED_CONTEST]  = 1,
         [FANCOUNTER_USED_BATTLE_TOWER] = 1
     };
 
     if (VarGet(VAR_LILYCOVE_FAN_CLUB_STATE) == 2)
     {
-        if (GET_TRAINER_FAN_CLUB_COUNTER + sCounterIncrements[incrementId] > 19)
+        if (GET_TRAINER_FAN_CLUB_COUNTER + sCounterIncrements[incrementId] > 9)
         {
-            if (GetNumFansOfPlayerInTrainerFanClub() < 3)
-            {
-                PlayerGainRandomTrainerFan();
-                CLEAR_TRAINER_FAN_CLUB_COUNTER;
-            }
-            else
-            {
-                SET_TRAINER_FAN_CLUB_COUNTER(20);
-            }
+            PlayerGainRandomTrainerFan();
+            CLEAR_TRAINER_FAN_CLUB_COUNTER;
         }
         else
         {

@@ -18,34 +18,18 @@ upcoming
 - Unburden may not work?
 
 ## To Do:
-- Either go through the slog of rebasing, or make new develop branch with files committed in groups (for example, all trainer changes in one, Pokemon changes in others, then do added features last)
 - Stay on EVs/IVs when switching Pokemon
-- If Flash is unused, remove it from being an option in the summary screen
 - Edit moves that work in field
     - Maybe edit so instead of "if has move" to "if can learn move" (might not be simple since it's .inc and not C)
     - Cut:
         - Moves boosted by Sharpness
-    - Rock Smash:
-        - Brick Break
-        - Meteor Mash?
-        - Focus Punch?
     - Strength:
         - Superpower?
         - Close Combat?
-- Expand moves usable in overworld (see above)
-    - Alternatively, remove instances of rocks, boulders, etc
-        - Would need to figure out Rusturf
-        - Cut is still usable in Trick House
-    - Would need to double check but this should make Cut, Rock Smash, and Strength forgettable
-        - (sHMMoves and IsMoveHM)
-        - edit tm_hms.h
-    - Trick House can still use them but maybe have Escape Rope usable there
-- Turn HMs into TMs if they are no longer used in the field
-    - Remove them from being an option in the summary screen (party_menu.c enum)
-    - Remove release blocks in pokemon_storage_system.c
-    - Look for FIELD_MOVE_X
-    - Currently are in same index spot. Should be moved to before HMs once everything is figured out (can simplify IsMoveHM once done)
-    - Edit text (Steven's house for Dive for example)
+- Alternatively, remove instances of rocks, boulders, etc
+    - Cut is still usable in the Trick House
+    - Strength is still usable in the Trick House and Seafloor Cavern
+    - Rock Smash is still usable in Rusturf Tunnel
 - Add in Houndoom for more Magma variety
     - Mega Evolve Tabitha's?
     - Redo Admin/Maxie teams

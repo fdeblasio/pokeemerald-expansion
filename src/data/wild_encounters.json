@@ -17,12 +17,6 @@
           ]
         },
         {
-          "type": "rock_smash_mons",
-          "encounter_rates": [
-            100
-          ]
-        },
-        {
           "type": "fishing_mons",
           "encounter_rates": [
             100, 50, 50, 25, 25, 25, 25
@@ -742,16 +736,6 @@
               }
             ]
           },
-          "rock_smash_mons": {
-            "encounter_rate": 20,
-            "mons": [
-              {
-                "min_level": 20,
-                "max_level": 25,
-                "species": "SPECIES_GEODUDE"
-              }
-            ]
-          },
           "fishing_mons": {
             "encounter_rate": 160,
             "mons": [
@@ -991,16 +975,6 @@
                 "min_level": 28,
                 "max_level": 30,
                 "species": "SPECIES_MASQUERAIN"
-              }
-            ]
-          },
-          "rock_smash_mons": {
-            "encounter_rate": 20,
-            "mons": [
-              {
-                "min_level": 20,
-                "max_level": 25,
-                "species": "SPECIES_GEODUDE"
               }
             ]
           },
@@ -5749,16 +5723,6 @@
                 "species": "SPECIES_GLOOM"
               }
             ]
-          },
-          "rock_smash_mons": {
-            "encounter_rate": 25,
-            "mons": [
-              {
-                "min_level": 33,
-                "max_level": 35,
-                "species": "SPECIES_GEODUDE"
-              }
-            ]
           }
         },
         {
@@ -5940,16 +5904,6 @@
                 "min_level": 45,
                 "max_level": 47,
                 "species": "SPECIES_GOLBAT"
-              }
-            ]
-          },
-          "rock_smash_mons": {
-            "encounter_rate": 20,
-            "mons": [
-              {
-                "min_level": 45,
-                "max_level": 47,
-                "species": "SPECIES_GRAVELER"
               }
             ]
           }
@@ -7812,16 +7766,6 @@
                 "min_level": 60,
                 "max_level": 60,
                 "species": "SPECIES_AIPOM"
-              }
-            ]
-          },
-          "rock_smash_mons": {
-            "encounter_rate": 250,
-            "mons": [
-              {
-                "min_level": 60,
-                "max_level": 60,
-                "species": "SPECIES_SHUCKLE"
               }
             ]
           }

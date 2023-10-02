@@ -23,16 +23,16 @@ LavaridgeTown_Mart_EventScript_TMClerk::
 
 	.align 2
 LavaridgeTown_Mart_TMs:
-	.2byte ITEM_TM06  @ Toxic
-	.2byte ITEM_TM55  @ Brine
-	.2byte ITEM_TM66  @ Payback
-	.2byte ITEM_TM72  @ Avalanche
-	.2byte ITEM_TM74  @ Gyro Ball
-	.2byte ITEM_TM75  @ Swords Dance
-	.2byte ITEM_TM76  @ Stealth Rock
-	.2byte ITEM_TM86  @ Grass Knot
-	.2byte ITEM_TM89  @ U-turn
-	.2byte ITEM_TM92  @ Trick Room
+	.2byte ITEM_TM_TOXIC
+	.2byte ITEM_TM_BRINE
+	.2byte ITEM_TM_PAYBACK
+	.2byte ITEM_TM_AVALANCHE
+	.2byte ITEM_TM_GYRO_BALL
+	.2byte ITEM_TM_SWORDS_DANCE
+	.2byte ITEM_TM_STEALTH_ROCK
+	.2byte ITEM_TM_GRASS_KNOT
+	.2byte ITEM_TM_U_TURN
+	.2byte ITEM_TM_TRICK_ROOM
 	.2byte ITEM_NONE
 	release
 	end

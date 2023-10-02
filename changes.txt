@@ -262,6 +262,7 @@ Pokémon:
         Learns Poison Tail by level up
 
     Heracross:
+        Learns X-Scissor by TM
         Catch rate: 45->90
 
     Slugma:

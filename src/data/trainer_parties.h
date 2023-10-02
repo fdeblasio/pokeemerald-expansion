@@ -6815,8 +6815,10 @@ static const struct TrainerMon sParty_WallyVR1[] = {
     {
     .lvl = 49,
     .species = SPECIES_GALLADE,
-    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
+    .ability = ABILITY_SHARPNESS,
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE},
+    .nickname = COMPOUND_STRING("Ralph"),
     }
 };
 
@@ -8809,7 +8811,9 @@ static const struct TrainerMon sParty_WallyMauville[] = {
     {
     .lvl = 20,
     .species = SPECIES_KIRLIA,
+    .ability = ABILITY_TRACE,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .nickname = COMPOUND_STRING("Ralph"),
     }
 };
 
@@ -8841,8 +8845,10 @@ static const struct TrainerMon sParty_WallyVR2[] = {
     {
     .lvl = 65,
     .species = SPECIES_GALLADE,
+    .ability = ABILITY_SHARPNESS,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE},
+    .nickname = COMPOUND_STRING("Ralph"),
     }
 };
 
@@ -8874,8 +8880,10 @@ static const struct TrainerMon sParty_WallyVR3[] = {
     {
     .lvl = 70,
     .species = SPECIES_GALLADE,
+    .ability = ABILITY_SHARPNESS,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE},
+    .nickname = COMPOUND_STRING("Ralph"),
     }
 };
 
@@ -8907,8 +8915,10 @@ static const struct TrainerMon sParty_WallyVR4[] = {
     {
     .lvl = 75,
     .species = SPECIES_GALLADE,
+    .ability = ABILITY_SHARPNESS,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE},
+    .nickname = COMPOUND_STRING("Ralph"),
     }
 };
 
@@ -8946,8 +8956,10 @@ static const struct TrainerMon sParty_WallyVR5[] = {
     {
     .lvl = 80,
     .species = SPECIES_GALLADE,
+    .ability = ABILITY_SHARPNESS,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE},
+    .nickname = COMPOUND_STRING("Ralph"),
     }
 };
 

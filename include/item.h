@@ -84,7 +84,7 @@ u32 GetItemStatus2Mask(u16 itemId);
  * {
  *   ITEM_TM_FOCUS_PUNCH,
  *   ...
- *   ITEM_HM_CUT,
+ *   ITEM_HM_SURF,
  *   ...
  * }; */
 #define ENUM_TM(id) CAT(ITEM_TM_, id),

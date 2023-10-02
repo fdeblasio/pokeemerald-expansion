@@ -655,10 +655,7 @@ static const s8 sFriendshipEventModifiers[][3] =
 
 static const u16 sHMMoves[] =
 {
-    MOVE_CUT,
     MOVE_SURF,
-    MOVE_STRENGTH,
-    MOVE_ROCK_SMASH,
     MOVE_WATERFALL,
     HM_MOVES_END
 };

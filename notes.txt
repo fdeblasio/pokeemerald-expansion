@@ -3,6 +3,12 @@
 (["\- ][A-Z])([A-Z][A-Zé']+)
 $1\L$2
 
+## Rebasing
+upcoming
+└─ textDecapitalization
+   └─ develop
+      └─ All hacks
+
 ## Known Bugs
 - When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
 - Items in the Battle Pyramid's Battle Bag/held items in the Battle Pike are turning into Poke Balls
@@ -11,7 +17,7 @@ $1\L$2
 - AI_FLAG_ACE_POKEMON didn't seem to work for Roxanne but may for Brawly
 - Unburden may not work?
 
-## Second, more advanced run (1.3.0)
+## To Do:
 - Either go through the slog of rebasing, or make new develop branch with files committed in groups (for example, all trainer changes in one, Pokemon changes in others, then do added features last)
 - Stay on EVs/IVs when switching Pokemon
 - If Flash is unused, remove it from being an option in the summary screen

@@ -114,7 +114,6 @@ static bool8 WaterfallFieldEffect_ContinueRideOrEnd(struct Task *, struct Object
 
 static void Task_UseDive(u8);
 static bool8 DiveFieldEffect_Init(struct Task *);
-static bool8 DiveFieldEffect_ShowMon(struct Task *);
 static bool8 DiveFieldEffect_TryWarp(struct Task *);
 
 static void Task_LavaridgeGymB1FWarp(u8);
@@ -658,7 +657,6 @@ static bool8 (*const sWaterfallFieldEffectFuncs[])(struct Task *, struct ObjectE
 static bool8 (*const sDiveFieldEffectFuncs[])(struct Task *) =
 {
     DiveFieldEffect_Init,
-    DiveFieldEffect_ShowMon,
     DiveFieldEffect_TryWarp,
 };
 
@@ -1919,8 +1917,6 @@ bool8 FldEff_UseDive(void)
 {
     u8 taskId;
     taskId = CreateTask(Task_UseDive, 0xff);
-    gTasks[taskId].data[15] = gFieldEffectArguments[0];
-    gTasks[taskId].data[14] = gFieldEffectArguments[1];
     Task_UseDive(taskId);
     return FALSE;
 }
@@ -1933,15 +1929,6 @@ void Task_UseDive(u8 taskId)
 static bool8 DiveFieldEffect_Init(struct Task *task)
 {
     gPlayerAvatar.preventStep = TRUE;
-    task->data[0]++;
-    return FALSE;
-}
-
-static bool8 DiveFieldEffect_ShowMon(struct Task *task)
-{
-    LockPlayerFieldControls();
-    gFieldEffectArguments[0] = task->data[15];
-    FieldEffectStart(FLDEFF_FIELD_MOVE_SHOW_MON_INIT);
     task->data[0]++;
     return FALSE;
 }

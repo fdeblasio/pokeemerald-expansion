@@ -5,11 +5,15 @@
 - Gym Leaders and Magma/Aqua Admins/Leaders no longer have underleveled evolutions
 - Pokémon have a more even encounter distribution
 - Tate and Liza give out Psychic instead of Calm Mind
-- Fly, Flash, and Dive can now be forgotten
-- Fly can be used if a Pokémon can learn it, without actually needing to be taught it.
-- Fly can now be used after getting Mauville's badge
-- Cut trees have been removed from everywhere but the Trick House
-- Brick Break can now also break rocks in the overworld
+- Cut, Fly, Strength, Flash, Rock Smash, and Dive can now be forgotten
+    - Fly can be used if a Pokémon can learn it, without actually needing to be taught it.
+    - Fly can now be used after getting Mauville's badge
+    - Cut, Strength, and Rock Smash no longer need a badge to be used
+    - Cut trees have been removed from everywhere but the Trick House
+    - Strength boulders have been removed from everywhere but the Trick House and an optional puzzle in Seafloor Cavern
+    - Rock Smash rocks have been removed from everywhere but Rusturf Tunnel. Brick Break can now also break them
+    - The Escape Rope can by used in the Trick Room puzzles that involve Cut/Strength
+    - Dive has been replaced by a key item
 - Improved berry yields
 - Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room. The door to Sealed Chamber and the Regis' inner rooms are now automatically open
 - Made rapids easier to navigate so that only one trip is needed to get all items/battle all trainers (at the cost of looking slightly worse)

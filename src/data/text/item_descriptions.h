@@ -3431,7 +3431,7 @@ static const u8 sTM99Desc[] = _(
 static const u8 sTM100Desc[] = _(
     "Moonblast");
 
-static const u8 sHM01Desc[] = _(
+static const u8 sTM101Desc[] = _(
     "Attacks the foe\n"
     "with sharp blades\n"
     "or claws.");
@@ -3441,35 +3441,35 @@ static const u8 sTM102Desc[] = _(
     "first turn, then\n"
     "attacks next turn.");
 
-static const u8 sHM03Desc[] = _(
-    "Creates a huge\n"
-    "wave, then crashes\n"
-    "it down on the foe.");
-
-static const u8 sHM04Desc[] = _(
+static const u8 sTM103Desc[] = _(
     "Builds enormous\n"
     "power, then slams\n"
     "the foe.");
 
-static const u8 sTM105Desc[] = _(
+static const u8 sTM104Desc[] = _(
     "Looses a powerful\n"
     "blast of light that\n"
     "reduces accuracy.");
 
-static const u8 sHM06Desc[] = _(
+static const u8 sTM105Desc[] = _(
     "A rock-crushingly\n"
     "tough attack that\n"
     "may lower Defense.");
 
-static const u8 sHM07Desc[] = _(
-    "Attacks the foe\n"
-    "with enough power\n"
-    "to climb waterfalls.");
-
-static const u8 sTM108Desc[] = _(
+static const u8 sTM106Desc[] = _(
     "Dives underwater\n"
     "the 1st turn, then\n"
     "attacks next turn.");
+
+static const u8 sHM01Desc[] = _(
+    "Creates a huge\n"
+    "wave, then crashes\n"
+    "it down on the foe.");
+
+static const u8 sHM02Desc[] = _(
+    "Attacks the foe\n"
+    "with enough power\n"
+    "to climb waterfalls.");
 
 // Charms
 static const u8 sOvalCharmDesc[] = _(

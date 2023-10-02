@@ -4,10 +4,10 @@ RustboroCity_CuttersHouse_MapScripts::
 RustboroCity_CuttersHouse_EventScript_Cutter::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_HM_CUT, RustboroCity_CuttersHouse_EventScript_ExplainCut
+	goto_if_set FLAG_RECEIVED_TM_CUT, RustboroCity_CuttersHouse_EventScript_ExplainCut
 	msgbox RustboroCity_CuttersHouse_Text_YouCanPutThisHMToGoodUse, MSGBOX_DEFAULT
-	giveitem ITEM_HM_CUT
-	setflag FLAG_RECEIVED_HM_CUT
+	giveitem ITEM_TM_CUT
+	setflag FLAG_RECEIVED_TM_CUT
 	msgbox RustboroCity_CuttersHouse_Text_ExplainCut, MSGBOX_DEFAULT
 	release
 	end
@@ -29,15 +29,13 @@ RustboroCity_CuttersHouse_Text_YouCanPutThisHMToGoodUse:
 	.string "No, wait, don't say a word.\n"
 	.string "I can tell just by looking at you.\p"
 	.string "I'm sure that you can put this\n"
-	.string "Hidden Machine to good use.\p"
+	.string "Technical Machine to good use.\p"
 	.string "No need to be modest or shy.\n"
 	.string "Go on, take it!$"
 
 RustboroCity_CuttersHouse_Text_ExplainCut:
-	.string "That Hidden Machine, or HM for\n"
+	.string "That Technical Machine, or TM for\n"
 	.string "short, is Cut.\p"
-	.string "An HM move is one that can be used\n"
-	.string "by Pokémon outside of battle.\p"
 	.string "Any Pokémon that's learned Cut can\n"
 	.string "chop down thin trees if the Trainer\l"
 	.string "has earned the Stone Badge.$"

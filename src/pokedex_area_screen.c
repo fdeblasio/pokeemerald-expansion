@@ -395,8 +395,6 @@ static bool8 MapHasSpecies(const struct WildPokemonHeader *info, u16 species)
     if (MonListHasSpecies(info->fishingMonsInfo, species, LAND_WILD_COUNT))
 #endif
         return TRUE;
-    if (MonListHasSpecies(info->rockSmashMonsInfo, species, ROCK_WILD_COUNT))
-        return TRUE;
     return FALSE;
 }
 

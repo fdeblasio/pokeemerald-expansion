@@ -101,17 +101,17 @@
     F(EARTH_POWER) \
     F(AIR_SLASH) \
     F(BODY_PRESS) \
-    F(MOONBLAST)
-
-#define FOREACH_HM(F) \
+    F(MOONBLAST) \
     F(CUT) \
     F(FLY) \
-    F(SURF) \
     F(STRENGTH) \
     F(FLASH) \
     F(ROCK_SMASH) \
-    F(WATERFALL) \
     F(DIVE)
+
+#define FOREACH_HM(F) \
+    F(SURF) \
+    F(WATERFALL)
 
 #define FOREACH_TMHM(F) \
     FOREACH_TM(F) \

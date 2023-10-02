@@ -824,15 +824,15 @@
 #define ITEM_TM98 679
 #define ITEM_TM99 680
 #define ITEM_TM100 681
-
-#define ITEM_HM01 682
+#define ITEM_TM101 682
 #define ITEM_TM102 683
-#define ITEM_HM03 684
-#define ITEM_HM04 685
+#define ITEM_TM103 684
+#define ITEM_TM104 685
 #define ITEM_TM105 686
-#define ITEM_HM06 687
-#define ITEM_HM07 688
-#define ITEM_TM108 689
+#define ITEM_TM106 687
+
+#define ITEM_HM01 688
+#define ITEM_HM02 689
 
 // Charms
 #define ITEM_OVAL_CHARM 690

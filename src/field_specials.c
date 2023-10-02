@@ -3110,15 +3110,8 @@ static void Task_DeoxysRockInteraction(u8 taskId)
         u16 stepCount = VarGet(VAR_DEOXYS_ROCK_STEP_COUNT);
 
         VarSet(VAR_DEOXYS_ROCK_STEP_COUNT, 0);
-        if (rockLevel != 0 && sStoneMaxStepCounts[rockLevel - 1] < stepCount)
-        {
-            // Player failed to take the shortest path to the stone, so it resets.
-            ChangeDeoxysRockLevel(0);
-            VarSet(VAR_DEOXYS_ROCK_LEVEL, 0);
-            gSpecialVar_Result = DEOXYS_ROCK_FAILED;
-            DestroyTask(taskId);
-        }
-        else if (rockLevel == DEOXYS_ROCK_LEVELS - 1)
+
+        if (rockLevel == DEOXYS_ROCK_LEVELS - 1)
         {
             FlagSet(FLAG_DEOXYS_ROCK_COMPLETE);
             gSpecialVar_Result = DEOXYS_ROCK_SOLVED;

@@ -631,8 +631,7 @@ static void PlayerNotOnBikeMoving(u8 direction, u16 heldKeys)
 
     if (gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_SURFING)
     {
-        // same speed as running
-        PlayerWalkFast(direction);
+        PlayerWalkFaster(direction);
         return;
     }
 
@@ -645,7 +644,7 @@ static void PlayerNotOnBikeMoving(u8 direction, u16 heldKeys)
     }
     else
     {
-        PlayerWalkNormal(direction);
+        PlayerWalkFast(direction);
     }
 }
 
@@ -1665,6 +1664,7 @@ static void Task_WaitStopSurfing(u8 taskId)
         gPlayerAvatar.preventStep = FALSE;
         UnlockPlayerFieldControls();
         DestroySprite(&gSprites[playerObjEvent->fieldEffectSpriteId]);
+        playerObjEvent->triggerGroundEffectsOnMove = TRUE;
         DestroyTask(taskId);
     }
 }
@@ -1836,7 +1836,7 @@ static bool8 Fishing_CheckForBite(struct Task *task)
             u16 ability = GetMonAbility(&gPlayerParty[0]);
             if (ability == ABILITY_SUCTION_CUPS || ability  == ABILITY_STICKY_HOLD)
             {
-                if (Random() % 100 > 14)
+                if (Random() % 100 > 50)
                     bite = TRUE;
             }
         }
@@ -1864,20 +1864,12 @@ static bool8 Fishing_GotBite(struct Task *task)
     return FALSE;
 }
 
-// We have a bite. Now, wait for the player to press A, or the timer to expire.
+// We have a bite. Now, wait for the player to press A
 static bool8 Fishing_WaitForA(struct Task *task)
 {
-    const s16 reelTimeouts[3] = {
-        [OLD_ROD]   = 36,
-        [GOOD_ROD]  = 33,
-        [SUPER_ROD] = 30
-    };
-
     AlignFishingAnimationFrames();
     task->tFrameCounter++;
-    if (task->tFrameCounter >= reelTimeouts[task->tFishingRod])
-        task->tStep = FISHING_GOT_AWAY;
-    else if (JOY_NEW(A_BUTTON))
+    if (JOY_NEW(A_BUTTON))
         task->tStep++;
     return FALSE;
 }
@@ -1885,27 +1877,8 @@ static bool8 Fishing_WaitForA(struct Task *task)
 // Determine if we're going to play the dot game again
 static bool8 Fishing_CheckMoreDots(struct Task *task)
 {
-    const s16 moreDotsChance[][2] =
-    {
-        [OLD_ROD]   = {0, 0},
-        [GOOD_ROD]  = {40, 10},
-        [SUPER_ROD] = {70, 30}
-    };
-
     AlignFishingAnimationFrames();
     task->tStep++;
-    if (task->tRoundsPlayed < task->tMinRoundsRequired)
-    {
-        task->tStep = FISHING_START_ROUND;
-    }
-    else if (task->tRoundsPlayed < 2)
-    {
-        // probability of having to play another round
-        s16 probability = Random() % 100;
-
-        if (moreDotsChance[task->tFishingRod][task->tRoundsPlayed] > probability)
-            task->tStep = FISHING_START_ROUND;
-    }
     return FALSE;
 }
 

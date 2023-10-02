@@ -43,7 +43,7 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 	end
 
 MossdeepCity_Gym_EventScript_GivePsychic2::
-	giveitem ITEM_TM_PSYCHIC
+	giveitem ITEM_TM_DRAIN_PUNCH
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	msgbox MossdeepCity_Gym_Text_ExplainPsychic, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM_PSYCHIC
@@ -51,7 +51,7 @@ MossdeepCity_Gym_EventScript_GivePsychic2::
 	end
 
 MossdeepCity_Gym_EventScript_GivePsychic::
-	giveitem ITEM_TM_PSYCHIC
+	giveitem ITEM_TM_DRAIN_PUNCH
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
 	msgbox MossdeepCity_Gym_Text_ExplainPsychic, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM_PSYCHIC

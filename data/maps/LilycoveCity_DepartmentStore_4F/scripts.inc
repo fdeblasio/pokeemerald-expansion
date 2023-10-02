@@ -118,11 +118,11 @@ LilycoveCity_DepartmentStore_4F_EventScript_ClerkRight::
 
 	.align 2
 LilycoveCity_DepartmentStore_4F_Pokemart_NewTMs:
+	.2byte ITEM_TM_PSYCHIC
 	.2byte ITEM_TM_ENERGY_BALL
 	.2byte ITEM_TM_SIGNAL_BEAM
 	.2byte ITEM_TM_PSYCHIC_FANGS
 	.2byte ITEM_TM_DRAGON_PULSE
-	.2byte ITEM_TM_DRAIN_PUNCH
 	.2byte ITEM_TM_DAZZLING_GLEAM
 	.2byte ITEM_TM_SEED_BOMB
 	.2byte ITEM_TM_SHADOW_CLAW
@@ -133,7 +133,6 @@ LilycoveCity_DepartmentStore_4F_Pokemart_NewTMs:
 	.2byte ITEM_TM_CRUNCH
 	.2byte ITEM_TM_DARK_PULSE
 	.2byte ITEM_TM_ROCK_SLIDE
-	.2byte ITEM_TM_X_SCISSOR
 	.2byte ITEM_TM_NIGHT_SLASH
 	.2byte ITEM_TM_IRON_HEAD
 	.2byte ITEM_TM_POISON_JAB

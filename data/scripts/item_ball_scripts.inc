@@ -374,8 +374,8 @@ FieryPath_EventScript_ItemFireStone::
 	finditem ITEM_FIRE_STONE
 	end
 
-FieryPath_EventScript_ItemTMFlamethrower::
-	finditem ITEM_TM_FLAMETHROWER
+FieryPath_EventScript_ItemTMOverheat::
+	finditem ITEM_TM_OVERHEAT
 	end
 
 MeteorFalls_1F_1R_EventScript_ItemTMIronTail::

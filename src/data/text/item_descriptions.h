@@ -3372,7 +3372,7 @@ static const u8 sTM80Desc[] = _(
     "Rock Slide");
 
 static const u8 sTM81Desc[] = _(
-    "X-Scissor");
+    "Lunge");
 
 static const u8 sTM82Desc[] = _(
     "Night Slash");

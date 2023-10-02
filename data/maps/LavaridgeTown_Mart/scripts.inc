@@ -24,6 +24,7 @@ LavaridgeTown_Mart_EventScript_TMClerk::
 	.align 2
 LavaridgeTown_Mart_TMs:
 	.2byte ITEM_TM_TOXIC
+	.2byte ITEM_TM_AERIAL_ACE
 	.2byte ITEM_TM_BRINE
 	.2byte ITEM_TM_PAYBACK
 	.2byte ITEM_TM_AVALANCHE
@@ -32,7 +33,6 @@ LavaridgeTown_Mart_TMs:
 	.2byte ITEM_TM_STEALTH_ROCK
 	.2byte ITEM_TM_GRASS_KNOT
 	.2byte ITEM_TM_U_TURN
-	.2byte ITEM_TM_TRICK_ROOM
 	.2byte ITEM_NONE
 	release
 	end

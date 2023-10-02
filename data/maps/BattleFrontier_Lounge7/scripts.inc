@@ -122,7 +122,7 @@ BattleFrontier_Lounge7_EventScript_PsychoCut::
 	end
 
 BattleFrontier_Lounge7_EventScript_Lunge::
-	setvar VAR_0x8005, MOVE_LUNGE
+	setvar VAR_0x8005, MOVE_X_SCISSOR
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 

@@ -70,18 +70,18 @@ TM25: Thunder - Lilycove Department Store
 TM26: Earthquake - Seafloor Cavern
 TM27: Return - Pacifidlog
 TM28: Dig - Route 114
-TM29: Psychic - Tate/Liza
+TM29: Psychic - Lilycove TM Shop
 TM30: Shadow Ball - Mt. Pyre
 TM31: Brick Break - Sootopolis
 TM32: Double Team - Route 113
 TM33: Reflect - Lilycove Department Store
-TM34: Shock Wave - Wattson
-TM35: Flamethrower - Fiery Path
+TM34: Shock Wave - Mauville Gym Leader
+TM35: Flamethrower - Fortree Gym Leader
 TM36: Sludge Bomb - Dewford
 TM37: Sandstorm - Route 111
 TM38: Fire Blast - Lilycove Department Store
 TM39: Rock Tomb - Slateport TM Shop
-TM40: Aerial Ace - Winona
+TM40: Aerial Ace - Lavaridge TM Shop
 TM41: Torment - Slateport
 TM42: Facade - Norman
 TM43: Secret Power - Route 111
@@ -91,7 +91,7 @@ TM46: Thief - Slateport
 TM47: Steel Wing - Granite Cave
 TM48: Skill Swap - Mt. Pyre
 TM49: Snatch - SS Tidal
-TM50: Overheat - Flannery
+TM50: Overheat - Fiery Path
 
 TM51: Roost - Slateport TM Shop
 TM52: Focus Blast - Victory Road
@@ -102,7 +102,7 @@ TM56: Signal Beam - Lilycove TM Shop
 TM57: Charge Beam - Slateport TM Shop
 TM58: Psychic Fangs - Lilycove TM Shop
 TM59: Dragon Pulse - Lilycove TM Shop
-TM60: Drain Punch - Lilycove TM Shop
+TM60: Drain Punch - Mossdeep Gym Leader
 TM61: Will-O-Wisp - Slateport TM Shop
 TM62: Silver Wind - Slateport TM Shop
 TM63: Dazzling Gleam - Lilycove TM Shop
@@ -123,7 +123,7 @@ TM77: Draining Kiss - Rustboro Gym Leader
 TM78: Crunch - Lilycove TM Shop
 TM79: Dark Pulse - Lilycove TM Shop
 TM80: Rock Slide - Lilycove TM Shop
-TM81: X-Scissor - Lilycove TM Shop
+TM81: Lunge - Lavaridge Gym Leader
 TM82: Night Slash - Lilycove TM Shop
 TM83: Iron Head - Lilycove TM Shop
 TM84: Poison Jab - Lilycove TM Shop
@@ -164,7 +164,7 @@ Battle Frontier Move Tutors:
         Zen Headbutt
         Scald
         Psycho Cut
-        Lunge
+        X-Scissor
         Throat Chop
         Solar Blade
         Dual Wingbeat

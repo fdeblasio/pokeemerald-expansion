@@ -82,7 +82,7 @@
     F(CRUNCH) \
     F(DARK_PULSE) \
     F(ROCK_SLIDE) \
-    F(X_SCISSOR) \
+    F(LUNGE) \
     F(NIGHT_SLASH) \
     F(IRON_HEAD) \
     F(POISON_JAB) \

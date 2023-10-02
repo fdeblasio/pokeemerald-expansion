@@ -68,7 +68,7 @@ TM23: Iron Tail - Meteor Falls
 TM24: Thunderbolt - Mauville
 TM25: Thunder - Lilycove Department Store
 TM26: Earthquake - Seafloor Cavern
-TM27: Return - Pacifidlog (REMOVE ONE)
+TM27: Return - Pacifidlog
 TM28: Dig - Route 114
 TM29: Psychic - Tate/Liza
 TM30: Shadow Ball - Mt. Pyre

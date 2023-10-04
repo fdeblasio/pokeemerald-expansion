@@ -46,6 +46,7 @@ upcoming
 - PokéNav callers sometimes think there were 512 wins at the Battle Palace (seems to be related to Battle Tent issue)
 
 ## Tom-specific
+- Replace Wattson's overworld sprite
 - Add postgame legendaries/Safari Zone to Hoenn Dex? National Dex is useless due to no connectivity with other games
     - This could actually be applied to the main game too
 

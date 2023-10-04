@@ -329,7 +329,7 @@ const u8 gText_MatchCallRockinWhiz_Roxanne_Intro1[] = _("A Leader of a big Gym b
 const u8 gText_MatchCallRockinWhiz_Roxanne_Intro2[] = _("a lot of responsibility.");
 
 const u8 gText_MatchCallTheBigHit_Brawly_Strategy[] = _("Direct physical action!");
-const u8 gText_MatchCallTheBigHit_Brawly_Pokemon[] = _("Fighting Pokémon rule!");
+const u8 gText_MatchCallTheBigHit_Brawly_Pokemon[] = _("Ghost Pokémon rule!");
 const u8 gText_MatchCallTheBigHit_Brawly_Intro1[] = _("The world awaits me as the");
 const u8 gText_MatchCallTheBigHit_Brawly_Intro2[] = _("next big wave!");
 

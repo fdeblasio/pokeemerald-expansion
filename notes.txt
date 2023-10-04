@@ -82,7 +82,6 @@ Battle Frontier
 - Get PokeNav to work indoors?
 - Edit rest out mass outbreaks
     - Maractus/Sandile in Route 111? Would be first time expanding past Gens 1-3 + evos
-- Add FRLG trainer sprites
 - Edit contests?
 - Stop daycare from deleting moves
 - Add relearning moves to PC?
@@ -146,6 +145,8 @@ Battle Frontier
 - Add Pokemon with dolls? (Togepi, Smoochum, Clefairy, Lapras, Snorlax, Venusaur, Charizard, Blastoise)
 - Make seperate Dex for post-game (similar to SwSh DLC dexes)?
 - Give Absol/Ceruledge Sharpness?
+- Add FRLG trainer sprites/overworld sprites
+    - Sprites are added but still need to be implemented. Overworld sprites may have duplicates for Pokemon and may need palettes
 - Make inserting trainer sprites easier?
     - Wrapper for src/data/graphics/trainers.h
     - Condense AnimCmds to just one in src/data/trainer_graphics/front_pic_anims.h

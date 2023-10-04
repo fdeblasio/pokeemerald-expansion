@@ -148,8 +148,7 @@ Battle Frontier
 - Add FRLG trainer sprites/overworld sprites
     - Sprites are added but still need to be implemented. Overworld sprites may have duplicates for Pokemon and may need palettes
 - Make inserting trainer sprites easier?
-    - Wrapper for src/data/graphics/trainers.h
-    - Condense AnimCmds to just one in src/data/trainer_graphics/front_pic_anims.h
+    - Wrapper for src/data/graphics/trainers.h?
 - Contests overhaul
 - Frontier overhaul:
     - Pokemon

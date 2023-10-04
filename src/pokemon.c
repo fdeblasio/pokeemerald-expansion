@@ -5146,7 +5146,7 @@ void SetMultiuseSpriteTemplateToTrainerBack(u16 trainerPicId, u8 battlerPosition
             gMultiuseSpriteTemplate = gMonSpritesGfxPtr->templates[battlerPosition];
         else
             gMultiuseSpriteTemplate = gBattlerSpriteTemplates[battlerPosition];
-        gMultiuseSpriteTemplate.anims = gTrainerFrontAnimsPtrTable[trainerPicId];
+        gMultiuseSpriteTemplate.anims = gTrainerFrontAnimsPtrTable[0];
     }
 }
 
@@ -5158,7 +5158,7 @@ void SetMultiuseSpriteTemplateToTrainerFront(u16 trainerPicId, u8 battlerPositio
         gMultiuseSpriteTemplate = gBattlerSpriteTemplates[battlerPosition];
 
     gMultiuseSpriteTemplate.paletteTag = trainerPicId;
-    gMultiuseSpriteTemplate.anims = gTrainerFrontAnimsPtrTable[trainerPicId];
+    gMultiuseSpriteTemplate.anims = gTrainerFrontAnimsPtrTable[0];
 }
 
 static void EncryptBoxMon(struct BoxPokemon *boxMon)

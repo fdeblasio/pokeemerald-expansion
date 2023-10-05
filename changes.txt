@@ -458,28 +458,32 @@ Pokémon:
         Learns Fly at level 1 instead of level 63
         Learns Dragon Ascent at level 63 instead of level 1
 
-    Torterra (not in main game):
+NOTE: Nothing past here is in the main game
+    Torterra:
         Learns Body Press and Zen Headbutt by TM (Teal Mask addition)
         Learns Grassy Glide by move tutor (Teal Mask addition)
         Learns Shell Smash after evolving
 
-    Infernape (not in main game):
+    Infernape:
         Learns Aura Sphere by TM (Teal Mask addition)
 
-    Empoleon (not in main game):
+    Empoleon:
         Hidden Ability: Defiant->Competitive (Teal Mask change)
 
-    Cranidos/Rampardos (not in main game):
+    Cranidos/Rampardos:
         Received Rock Head as a second ability
 
-    Shieldon/Bastiodon (not in main game):
+    Shieldon/Bastiodon:
         Received Rock Head as a second ability
 
-    Riolu (not in main game):
+    Riolu:
         Can also evolve at level 20
 
-    Carracosta (not in main game):
+    Carracosta:
         Learns Body Press by TM
 
-    Dragapult (not in main game):
+    Spritzee/Aromatisse:
+        Gender Ratio: 50/50->25/75
+
+    Dragapult:
         Learns Shadow Claw by TM

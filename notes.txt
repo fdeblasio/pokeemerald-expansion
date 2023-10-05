@@ -14,8 +14,12 @@ upcoming
 - Items in the Battle Pyramid's Battle Bag/held items in the Battle Pike are turning into Poke Balls
     - Seems to happen after trainer battles?
     - This occurs even with the Battle Frontier changes reverted
-- AI_FLAG_ACE_POKEMON didn't seem to work for Roxanne but may for Brawly
+- AI_FLAG_ACE_POKEMON didn't seem to work for Roxanne
 - Unburden may not work?
+- HGSS Dex (currently disabled):
+    - TMs don't line up
+    - Shows evolutions multiple times
+    - Dark mode not implemented
 
 ## To Do:
 - Stay on EVs/IVs when switching Pokemon
@@ -43,10 +47,11 @@ upcoming
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Include charms?
 - Remove all PP Ups/Maxes (including Pickup) due to moves having max PP by default
-Double-check Mirage Island
-Combine changes and README?
+- Double-check Mirage Island
+- Combine changes and README?
     Include more changes, even if general like Battle Frontier edits
-Battle Frontier
+- Might need to increase MAX_LEVEL_UP_MOVES and/or MAX_RELEARNER_MOVES
+- Battle Frontier
     - Make pausing challenge not a soft save (CHALLENGE_STATUS_SAVING)
     - Update rest of apprentice teams
 - https://www.pokecommunity.com/showthread.php?t=416647&page=1

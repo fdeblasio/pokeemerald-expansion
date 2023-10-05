@@ -10533,6 +10533,7 @@ static const struct TrainerMon sParty_Kenny5[] = {
     {
     .lvl = 75,
     .species = SPECIES_MAROWAK_ALOLAN,
+    .ability = ABILITY_CURSED_BODY,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .moves = {MOVE_SHADOW_BONE, MOVE_FIRE_PUNCH, MOVE_BONEMERANG, MOVE_WILL_O_WISP},
     },

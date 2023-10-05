@@ -292,10 +292,8 @@ MauvilleCity_Gym_Text_ShawnDefeat:
 	.string "Unplugged and turned off…$"
 
 MauvilleCity_Gym_Text_ShawnPostBattle:
-	.string "Frank, our Gym Leader, has been\n"
-	.string "around for a long, long time.\p"
-	.string "He was battling even before your\n"
-	.string "daddy was born, that tough coot.$"
+	.string "Frank, our Gym Leader, has made\n"
+	.string "puns for a long, long time.$"
 
 MauvilleCity_Gym_Text_BenIntro:
 	.string "This Gym's got puzzles!\n"

@@ -286,6 +286,9 @@ const u32 gTrainerPalette_RubySapphireBrendan[] = INCBIN_U32("graphics/trainers/
 const u32 gTrainerFrontPic_RubySapphireMay[] = INCBIN_U32("graphics/trainers/front_pics/may_rs.4bpp.lz");
 const u32 gTrainerPalette_RubySapphireMay[] = INCBIN_U32("graphics/trainers/palettes/may_rs.gbapal.lz");
 
+const u32 gTrainerFrontPic_Frank[] = INCBIN_U32("graphics/trainers/front_pics/frank.4bpp.lz");
+const u32 gTrainerPalette_Frank[] = INCBIN_U32("graphics/trainers/front_pics/frank.gbapal.lz");
+
 const u8 gTrainerBackPic_Brendan[] = INCBIN_U8("graphics/trainers/back_pics/brendan.4bpp");
 const u8 gTrainerBackPic_May[] = INCBIN_U8("graphics/trainers/back_pics/may.4bpp");
 const u8 gTrainerBackPic_Red[] = INCBIN_U8("graphics/trainers/back_pics/red.4bpp");
@@ -410,6 +413,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(RS_BRENDAN, RubySapphireBrendan, 0, 0, 0x200),
     TRAINER_SPRITE(RS_MAY, RubySapphireMay, 0, 0, 0x200),
     TRAINER_SPRITE(ROCKER, Rocker, 0, 0, 0x200),
+    TRAINER_SPRITE(FRANK, Frank, 0, 0, 0x200),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =

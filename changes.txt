@@ -90,6 +90,7 @@ Moves:
             Dual Wingbeat
         Ground:
             Bonemerang
+            Bone Club
             Drill Run
             High Horsepower
         Rock:

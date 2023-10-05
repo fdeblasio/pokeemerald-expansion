@@ -996,7 +996,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_FARFETCHD] =
+    [NATIONAL_DEX_FARFETCHD_GALARIAN] =
     {
         .categoryName = _("Wild Duck"),
         .height = 8,

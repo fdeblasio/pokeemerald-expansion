@@ -667,17 +667,7 @@
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_CACNEA"
-              },
-              {
-                "min_level": 25,
-                "max_level": 28,
-                "species": "SPECIES_BALTOY"
-              },
-              {
-                "min_level": 25,
-                "max_level": 28,
-                "species": "SPECIES_BALTOY"
+                "species": "SPECIES_DARUMAKA"
               },
               {
                 "min_level": 25,
@@ -692,12 +682,22 @@
               {
                 "min_level": 25,
                 "max_level": 28,
+                "species": "SPECIES_BALTOY"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
                 "species": "SPECIES_SANDSHREW"
               },
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_BALTOY"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_SANDSHREW"
               },
               {
                 "min_level": 25,
@@ -801,7 +801,7 @@
               {
                 "min_level": 20,
                 "max_level": 23,
-                "species": "SPECIES_NUMEL"
+                "species": "SPECIES_CUBONE"
               },
               {
                 "min_level": 20,
@@ -811,7 +811,7 @@
               {
                 "min_level": 20,
                 "max_level": 23,
-                "species": "SPECIES_MACHOP"
+                "species": "SPECIES_CUBONE"
               },
               {
                 "min_level": 20,
@@ -821,17 +821,17 @@
               {
                 "min_level": 20,
                 "max_level": 23,
+                "species": "SPECIES_CUBONE"
+              },
+              {
+                "min_level": 20,
+                "max_level": 23,
                 "species": "SPECIES_MACHOP"
               },
               {
                 "min_level": 20,
                 "max_level": 23,
-                "species": "SPECIES_NUMEL"
-              },
-              {
-                "min_level": 20,
-                "max_level": 23,
-                "species": "SPECIES_NUMEL"
+                "species": "SPECIES_CUBONE"
               }
             ]
           }
@@ -855,7 +855,7 @@
               {
                 "min_level": 21,
                 "max_level": 24,
-                "species": "SPECIES_SKARMORY"
+                "species": "SPECIES_MURKROW"
               },
               {
                 "min_level": 21,
@@ -1979,17 +1979,7 @@
               {
                 "min_level": 20,
                 "max_level": 23,
-                "species": "SPECIES_SLUGMA"
-              },
-              {
-                "min_level": 20,
-                "max_level": 23,
-                "species": "SPECIES_GRIMER"
-              },
-              {
-                "min_level": 20,
-                "max_level": 23,
-                "species": "SPECIES_KOFFING"
+                "species": "SPECIES_HEATMOR"
               },
               {
                 "min_level": 20,
@@ -2004,12 +1994,22 @@
               {
                 "min_level": 20,
                 "max_level": 23,
-                "species": "SPECIES_GRIMER"
+                "species": "SPECIES_NUMEL"
               },
               {
                 "min_level": 20,
                 "max_level": 23,
-                "species": "SPECIES_KOFFING"
+                "species": "SPECIES_HOUNDOUR"
+              },
+              {
+                "min_level": 20,
+                "max_level": 23,
+                "species": "SPECIES_TORKOAL"
+              },
+              {
+                "min_level": 20,
+                "max_level": 23,
+                "species": "SPECIES_HEATMOR"
               },
               {
                 "min_level": 20,

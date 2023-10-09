@@ -20,6 +20,7 @@ upcoming
     - TMs don't line up
     - Shows evolutions multiple times
     - Dark mode not implemented
+- Move relearner option in menu selects second Pokemon when finished
 
 ## To Do:
 - Stay on EVs/IVs when switching Pokemon

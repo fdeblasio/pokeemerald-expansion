@@ -5678,7 +5678,7 @@ static const struct TrainerMon sParty_Cyndy1[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 23,
-    .species = SPECIES_MAKUHITA,
+    .species = SPECIES_FARFETCHD_GALARIAN,
     },
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -5707,7 +5707,7 @@ static const struct TrainerMon sParty_Cyndy2[] = {
     {
     .iv = TRAINER_PARTY_IVS(13, 13, 13, 13, 13, 13),
     .lvl = 30,
-    .species = SPECIES_HARIYAMA,
+    .species = SPECIES_FARFETCHD_GALARIAN,
     },
     {
     .iv = TRAINER_PARTY_IVS(13, 13, 13, 13, 13, 13),
@@ -5720,7 +5720,7 @@ static const struct TrainerMon sParty_Cyndy3[] = {
     {
     .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
     .lvl = 34,
-    .species = SPECIES_HARIYAMA,
+    .species = SPECIES_SIRFETCHD,
     },
     {
     .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
@@ -5733,7 +5733,7 @@ static const struct TrainerMon sParty_Cyndy4[] = {
     {
     .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
     .lvl = 38,
-    .species = SPECIES_HARIYAMA,
+    .species = SPECIES_SIRFETCHD,
     },
     {
     .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
@@ -5746,7 +5746,7 @@ static const struct TrainerMon sParty_Cyndy5[] = {
     {
     .iv = TRAINER_PARTY_IVS(17, 17, 17, 17, 17, 17),
     .lvl = 42,
-    .species = SPECIES_HARIYAMA,
+    .species = SPECIES_SIRFETCHD,
     },
     {
     .iv = TRAINER_PARTY_IVS(17, 17, 17, 17, 17, 17),

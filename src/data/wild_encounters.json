@@ -1498,17 +1498,17 @@
               {
                 "min_level": 9,
                 "max_level": 9,
-                "species": "SPECIES_CLEFFA"
+                "species": "SPECIES_WHISMUR"
               },
               {
                 "min_level": 9,
                 "max_level": 9,
-                "species": "SPECIES_CLEFFA"
+                "species": "SPECIES_WHISMUR"
               },
               {
                 "min_level": 9,
                 "max_level": 9,
-                "species": "SPECIES_CLEFFA"
+                "species": "SPECIES_WHISMUR"
               }
             ]
           }
@@ -2177,12 +2177,12 @@
               {
                 "min_level": 23,
                 "max_level": 26,
-                "species": "SPECIES_NUMEL"
+                "species": "SPECIES_MEDITITE"
               },
               {
                 "min_level": 23,
                 "max_level": 26,
-                "species": "SPECIES_NUMEL"
+                "species": "SPECIES_MEDITITE"
               },
               {
                 "min_level": 23,
@@ -6041,52 +6041,52 @@
               {
                 "min_level": 21,
                 "max_level": 24,
-                "species": "SPECIES_SOLROCK"
+                "species": "SPECIES_NOIBAT"
               },
               {
                 "min_level": 21,
                 "max_level": 24,
-                "species": "SPECIES_LUNATONE"
+                "species": "SPECIES_ONIX"
               },
               {
                 "min_level": 21,
                 "max_level": 24,
-                "species": "SPECIES_SOLROCK"
+                "species": "SPECIES_ELGYEM"
               },
               {
                 "min_level": 21,
                 "max_level": 24,
-                "species": "SPECIES_LUNATONE"
+                "species": "SPECIES_ELGYEM"
               },
               {
                 "min_level": 21,
                 "max_level": 24,
-                "species": "SPECIES_SOLROCK"
+                "species": "SPECIES_CLEFFA"
               },
               {
                 "min_level": 21,
                 "max_level": 24,
-                "species": "SPECIES_LUNATONE"
+                "species": "SPECIES_CLEFFA"
               },
               {
                 "min_level": 21,
                 "max_level": 24,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_NOIBAT"
               },
               {
                 "min_level": 21,
                 "max_level": 24,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_ONIX"
               },
               {
                 "min_level": 21,
                 "max_level": 24,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_ELGYEM"
               },
               {
                 "min_level": 21,
                 "max_level": 24,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_CLEFFA"
               }
             ]
           },
@@ -6126,32 +6126,32 @@
               {
                 "min_level": 20,
                 "max_level": 25,
-                "species": "SPECIES_CORPHISH"
+                "species": "SPECIES_SHELLDER"
               },
               {
                 "min_level": 20,
                 "max_level": 25,
-                "species": "SPECIES_CORPHISH"
+                "species": "SPECIES_SHELLDER"
               },
               {
                 "min_level": 35,
                 "max_level": 38,
-                "species": "SPECIES_CRAWDAUNT"
+                "species": "SPECIES_CLOYSTER"
               },
               {
                 "min_level": 35,
                 "max_level": 38,
-                "species": "SPECIES_CRAWDAUNT"
+                "species": "SPECIES_CLOYSTER"
               },
               {
                 "min_level": 35,
                 "max_level": 38,
-                "species": "SPECIES_CRAWDAUNT"
+                "species": "SPECIES_CLOYSTER"
               },
               {
                 "min_level": 35,
                 "max_level": 38,
-                "species": "SPECIES_CRAWDAUNT"
+                "species": "SPECIES_CLOYSTER"
               }
             ]
           }

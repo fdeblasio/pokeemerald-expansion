@@ -7786,7 +7786,7 @@ static const struct TrainerMon sParty_Harrison[] = {
 static const struct TrainerMon sParty_GruntMtChimney2[] = {
     {
     .lvl = 24,
-    .species = SPECIES_SLUGMA,
+    .species = SPECIES_BALTOY,
     }
 };
 

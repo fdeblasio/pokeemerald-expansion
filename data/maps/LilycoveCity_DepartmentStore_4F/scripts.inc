@@ -49,10 +49,14 @@ LilycoveCity_DepartmentStore_4F_EventScript_ClerkMegaStones::
 
 	.align 2
 LilycoveCity_DepartmentStore_4F_Pokemart_MegaStones:
+	.2byte ITEM_PIDGEOTITE
 	.2byte ITEM_ALAKAZITE
+	.2byte ITEM_GENGARITE
+	.2byte ITEM_SCIZORITE
 	.2byte ITEM_GYARADOSITE
 	.2byte ITEM_AERODACTYLITE
 	.2byte ITEM_AMPHAROSITE
+	.2byte ITEM_STEELIXITE
 	.2byte ITEM_HERACRONITE
 	.2byte ITEM_HOUNDOOMINITE
 	.2byte ITEM_GARDEVOIRITE
@@ -65,6 +69,8 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStones:
 	.2byte ITEM_ALTARIANITE
 	.2byte ITEM_ABSOLITE
 	.2byte ITEM_METAGROSSITE
+	.2byte ITEM_LUCARIONITE
+	.2byte ITEM_AUDINITE
 	.2byte ITEM_NONE
 	release
 	end

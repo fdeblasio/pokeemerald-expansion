@@ -18248,6 +18248,7 @@ static const u16 sHeracrossTeachableLearnset[] = {
     MOVE_KNOCK_OFF,
     MOVE_LEER,
     MOVE_LOW_KICK,
+    MOVE_LUNGE,
     MOVE_MEGAHORN,
     MOVE_MIMIC,
     MOVE_NIGHT_SLASH,

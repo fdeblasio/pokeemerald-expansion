@@ -76,6 +76,36 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStones:
 	release
 	end
 
+@Unused shop that contains Mega Stones for Pokemon not available in Emerald by default
+	.align 2
+LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
+	.2byte ITEM_VENUSAURITE
+	.2byte ITEM_CHARIZARDITE_X
+	.2byte ITEM_CHARIZARDITE_Y
+	.2byte ITEM_BLASTOISINITE
+	.2byte ITEM_BEEDRILLITE
+	.2byte ITEM_PIDGEOTITE
+	.2byte ITEM_SLOWBRONITE
+	.2byte ITEM_GENGARITE
+	.2byte ITEM_KANGASKHANITE
+	.2byte ITEM_AERODACTYLITE	@ Battle Frontier
+	.2byte ITEM_MEWTWONITE_X
+	.2byte ITEM_MEWTWONITE_Y
+	.2byte ITEM_AMPHAROSITE		@ Battle Frontier
+	.2byte ITEM_STEELIXITE
+	.2byte ITEM_SCIZORITE
+	.2byte ITEM_TYRANITARITE
+	.2byte ITEM_LATIASITE		@ Battle Frontier
+	.2byte ITEM_LATIOSITE		@ Battle Frontier
+	.2byte ITEM_LOPUNNITE
+	.2byte ITEM_GARCHOMPITE
+	.2byte ITEM_ABOMASITE
+	.2byte ITEM_AUDINITE
+	.2byte ITEM_DIANCITE
+	.2byte ITEM_NONE
+	release
+	end
+
 LilycoveCity_DepartmentStore_4F_EventScript_ClerkRight::
 	lock
 	faceplayer

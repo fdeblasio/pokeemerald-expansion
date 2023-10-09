@@ -845,12 +845,12 @@
               {
                 "min_level": 21,
                 "max_level": 24,
-                "species": "SPECIES_SPINDA"
+                "species": "SPECIES_DUNSPARCE"
               },
               {
                 "min_level": 21,
                 "max_level": 24,
-                "species": "SPECIES_SPINDA"
+                "species": "SPECIES_STUNKY"
               },
               {
                 "min_level": 21,
@@ -860,32 +860,32 @@
               {
                 "min_level": 21,
                 "max_level": 24,
-                "species": "SPECIES_SKARMORY"
+                "species": "SPECIES_MURKROW"
+              },
+              {
+                "min_level": 21,
+                "max_level": 24,
+                "species": "SPECIES_GLIGAR"
+              },
+              {
+                "min_level": 21,
+                "max_level": 24,
+                "species": "SPECIES_GLIGAR"
+              },
+              {
+                "min_level": 21,
+                "max_level": 24,
+                "species": "SPECIES_DUNSPARCE"
+              },
+              {
+                "min_level": 21,
+                "max_level": 24,
+                "species": "SPECIES_DUNSPARCE"
               },
               {
                 "min_level": 21,
                 "max_level": 24,
                 "species": "SPECIES_SANDSHREW"
-              },
-              {
-                "min_level": 21,
-                "max_level": 24,
-                "species": "SPECIES_SLUGMA"
-              },
-              {
-                "min_level": 21,
-                "max_level": 24,
-                "species": "SPECIES_SANDSHREW"
-              },
-              {
-                "min_level": 21,
-                "max_level": 24,
-                "species": "SPECIES_SLUGMA"
-              },
-              {
-                "min_level": 21,
-                "max_level": 24,
-                "species": "SPECIES_SKARMORY"
               },
               {
                 "min_level": 21,
@@ -924,32 +924,32 @@
               {
                 "min_level": 21,
                 "max_level": 24,
-                "species": "SPECIES_NUZLEAF"
+                "species": "SPECIES_PASSIMIAN"
               },
               {
                 "min_level": 21,
                 "max_level": 24,
-                "species": "SPECIES_LOMBRE"
+                "species": "SPECIES_PASSIMIAN"
               },
               {
                 "min_level": 21,
                 "max_level": 24,
-                "species": "SPECIES_ZANGOOSE"
+                "species": "SPECIES_BONSLY"
               },
               {
                 "min_level": 21,
                 "max_level": 24,
-                "species": "SPECIES_SEVIPER"
+                "species": "SPECIES_BONSLY"
               },
               {
                 "min_level": 21,
                 "max_level": 24,
-                "species": "SPECIES_SURSKIT"
+                "species": "SPECIES_BONSLY"
               },
               {
                 "min_level": 21,
                 "max_level": 24,
-                "species": "SPECIES_SWABLU"
+                "species": "SPECIES_BONSLY"
               }
             ]
           },

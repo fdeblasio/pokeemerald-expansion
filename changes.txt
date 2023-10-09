@@ -486,5 +486,8 @@ NOTE: Nothing past here is in the main game
     Spritzee/Aromatisse:
         Gender Ratio: 50/50->25/75
 
+    Snom:
+        Can also evolve at level 21
+
     Dragapult:
         Learns Shadow Claw by TM

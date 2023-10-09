@@ -3265,7 +3265,6 @@ static const struct TrainerMon sParty_Walter5[] = {
     }
 };
 
-//Sharpedo (Archie)
 static const struct TrainerMon sParty_Sidney[] = {
     {
     .lvl = 47,

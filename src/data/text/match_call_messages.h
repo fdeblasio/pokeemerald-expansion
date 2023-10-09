@@ -328,7 +328,7 @@ const u8 gText_MatchCallRockinWhiz_Roxanne_Pokemon[] = _("I prefer healing Poké
 const u8 gText_MatchCallRockinWhiz_Roxanne_Intro1[] = _("A Leader of a big Gym bears");
 const u8 gText_MatchCallRockinWhiz_Roxanne_Intro2[] = _("a lot of responsibility.");
 
-const u8 gText_MatchCallTheBigHit_Brawly_Strategy[] = _("Direct physical action!");
+const u8 gText_MatchCallTheBigHit_Brawly_Strategy[] = _("Direct spectral action!");
 const u8 gText_MatchCallTheBigHit_Brawly_Pokemon[] = _("Ghost Pokémon rule!");
 const u8 gText_MatchCallTheBigHit_Brawly_Intro1[] = _("The world awaits me as the");
 const u8 gText_MatchCallTheBigHit_Brawly_Intro2[] = _("next big wave!");
@@ -339,7 +339,7 @@ const u8 gText_MatchCallSwellShock_Wattson_Intro1[] = _("One must never throw a"
 const u8 gText_MatchCallSwellShock_Wattson_Intro2[] = _("match. Even I must not.");
 
 const u8 gText_MatchCallPassionBurn_Flannery_Strategy[] = _("Battle aggressively.");
-const u8 gText_MatchCallPassionBurn_Flannery_Pokemon[] = _("Burn with passion!");
+const u8 gText_MatchCallPassionBurn_Flannery_Pokemon[] = _("Bug with passion!");
 const u8 gText_MatchCallPassionBurn_Flannery_Intro1[] = _("Completely wash away daily");
 const u8 gText_MatchCallPassionBurn_Flannery_Intro2[] = _("fatigue in hot springs!");
 

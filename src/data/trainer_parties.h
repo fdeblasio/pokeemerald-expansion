@@ -2279,20 +2279,17 @@ static const struct TrainerMon sParty_Nob5[] = {
     {
     .iv = TRAINER_PARTY_IVS(17, 17, 17, 17, 17, 17),
     .lvl = 50,
-    .species = SPECIES_BLAZIKEN,
-    .heldItem = ITEM_NONE
+    .species = SPECIES_BLAZIKEN
     },
     {
     .iv = TRAINER_PARTY_IVS(17, 17, 17, 17, 17, 17),
     .lvl = 50,
-    .species = SPECIES_HERACROSS,
-    .heldItem = ITEM_NONE
+    .species = SPECIES_HERACROSS
     },
     {
     .iv = TRAINER_PARTY_IVS(17, 17, 17, 17, 17, 17),
     .lvl = 50,
-    .species = SPECIES_BRELOOM,
-    .heldItem = ITEM_NONE
+    .species = SPECIES_BRELOOM
     },
     {
     .iv = TRAINER_PARTY_IVS(17, 17, 17, 17, 17, 17),
@@ -2927,26 +2924,22 @@ static const struct TrainerMon sParty_Jeffrey5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 43,
-    .species = SPECIES_DUSTOX,
-    .heldItem = ITEM_NONE
+    .species = SPECIES_DUSTOX
     },
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 43,
-    .species = SPECIES_BEAUTIFLY,
-    .heldItem = ITEM_NONE
+    .species = SPECIES_BEAUTIFLY
     },
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 43,
-    .species = SPECIES_HERACROSS,
-    .heldItem = ITEM_NONE
+    .species = SPECIES_HERACROSS
     },
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 43,
-    .species = SPECIES_PINSIR,
-    .heldItem = ITEM_NONE
+    .species = SPECIES_PINSIR
     },
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -5282,14 +5275,12 @@ static const struct TrainerMon sParty_Nicolas5[] = {
     {
     .iv = TRAINER_PARTY_IVS(17, 17, 17, 17, 17, 17),
     .lvl = 53,
-    .species = SPECIES_FLYGON,
-    .heldItem = ITEM_NONE
+    .species = SPECIES_FLYGON
     },
     {
     .iv = TRAINER_PARTY_IVS(17, 17, 17, 17, 17, 17),
     .lvl = 53,
-    .species = SPECIES_SALAMENCE,
-    .heldItem = ITEM_NONE
+    .species = SPECIES_SALAMENCE
     },
     {
     .iv = TRAINER_PARTY_IVS(17, 17, 17, 17, 17, 17),

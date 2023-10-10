@@ -192,8 +192,7 @@ LavaridgeTown_Gym_1F_Text_GymGuideAdvice:
 	.string "uses Bug-type Pokémon.\p"
 	.string "His passion for Pokémon bugs stronger\n"
 	.string "and buggier than a bee.\p"
-	.string "Rock his world and then\l"
-	.string "go for it!$"
+	.string "Rock his world and then go for it!$"
 
 LavaridgeTown_Gym_1F_Text_GymGuidePostVictory:
 	.string "Yow! That was a buggy battle!$"
@@ -241,8 +240,7 @@ LavaridgeTown_Gym_B1F_Text_KeeganPostBattle:
 	.string "bugged seriously.$"
 
 LavaridgeTown_Gym_1F_Text_GeraldIntro:
-	.string "Can your Pokémon withstand\n"
-	.string "392 bugs?$"
+	.string "Can your Pokémon withstand 392 bugs?$"
 
 LavaridgeTown_Gym_1F_Text_GeraldDefeat:
 	.string "It didn't bug bugly enough…$"

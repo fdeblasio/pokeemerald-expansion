@@ -3499,10 +3499,10 @@ static const struct TrainerMon sParty_Carlos1[] = {
     },
     {
     .lvl = 27,
-    .species = SPECIES_SCIZOR,
+    .species = SPECIES_SCYTHER,
     .ability = ABILITY_TECHNICIAN,
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .moves = {MOVE_LUNGE, MOVE_METAL_CLAW, MOVE_BULLET_PUNCH, MOVE_DOUBLE_TEAM},
+    .moves = {MOVE_LUNGE, MOVE_WING_ATTACK, MOVE_SLASH, MOVE_LEER},
     },
     {
     .lvl = 29,

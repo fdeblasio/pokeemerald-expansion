@@ -3,9 +3,9 @@
 .set LOCALID_SCIENTIST, 3
 .set LOCALID_STEVEN, 4
 @ Grunt names numbered like their Trainer values (which are for the full Space Center)
-.set LOCALID_GRUNT_6, 5
-.set LOCALID_GRUNT_5, 6
-.set LOCALID_GRUNT_7, 7
+.set LOCALID_GRUNT_5, 5
+.set LOCALID_GRUNT_4, 6
+.set LOCALID_GRUNT_6, 7
 .set LOCALID_TABITHA, 8
 .set LOCALID_MAXIE, 9
 
@@ -30,9 +30,9 @@ MossdeepCity_SpaceCenter_2F_EventScript_MoveCivilians::
 	return
 
 MossdeepCity_SpaceCenter_2F_EventScript_MoveDefeatedGrunts::
-	setobjectxyperm LOCALID_GRUNT_6, 11, 2
-	setobjectxyperm LOCALID_GRUNT_7, 15, 2
-	setobjectxyperm LOCALID_GRUNT_5, 13, 4
+	setobjectxyperm LOCALID_GRUNT_5, 11, 2
+	setobjectxyperm LOCALID_GRUNT_6, 15, 2
+	setobjectxyperm LOCALID_GRUNT_4, 13, 4
 	return
 
 MossdeepCity_SpaceCenter_2F_OnFrame:
@@ -62,25 +62,25 @@ MossdeepCity_SpaceCenter_2F_Movement_PlayerExit:
 
 MossdeepCity_SpaceCenter_2F_EventScript_BattleThreeMagmaGrunts::
 	msgbox MossdeepCity_SpaceCenter_2F_Text_Grunt5Intro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_GRUNT_SPACE_CENTER_5, MossdeepCity_SpaceCenter_2F_Text_Grunt5Defeat
-	applymovement LOCALID_GRUNT_5, MossdeepCity_SpaceCenter_2F_Movement_Grunt5Defeated
+	trainerbattle_no_intro TRAINER_GRUNT_SPACE_CENTER_4, MossdeepCity_SpaceCenter_2F_Text_Grunt5Defeat
+	applymovement LOCALID_GRUNT_4, MossdeepCity_SpaceCenter_2F_Movement_Grunt5Defeated
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	msgbox MossdeepCity_SpaceCenter_2F_Text_Grunt6Intro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_GRUNT_SPACE_CENTER_6, MossdeepCity_SpaceCenter_2F_Text_Grunt6Defeat
-	applymovement LOCALID_GRUNT_6, MossdeepCity_SpaceCenter_2F_Movement_Grunt6Defeated
+	trainerbattle_no_intro TRAINER_GRUNT_SPACE_CENTER_5, MossdeepCity_SpaceCenter_2F_Text_Grunt6Defeat
+	applymovement LOCALID_GRUNT_5, MossdeepCity_SpaceCenter_2F_Movement_Grunt6Defeated
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	msgbox MossdeepCity_SpaceCenter_2F_Text_Grunt7Intro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_GRUNT_SPACE_CENTER_7, MossdeepCity_SpaceCenter_2F_Text_Grunt7Defeat
-	applymovement LOCALID_GRUNT_7, MossdeepCity_SpaceCenter_2F_Movement_Grunt7Defeated
+	trainerbattle_no_intro TRAINER_GRUNT_SPACE_CENTER_6, MossdeepCity_SpaceCenter_2F_Text_Grunt7Defeat
+	applymovement LOCALID_GRUNT_6, MossdeepCity_SpaceCenter_2F_Movement_Grunt7Defeated
 	waitmovement 0
 	setvar VAR_MOSSDEEP_SPACE_CENTER_STATE, 2
-	copyobjectxytoperm LOCALID_GRUNT_6
-	copyobjectxytoperm LOCALID_GRUNT_7
 	copyobjectxytoperm LOCALID_GRUNT_5
+	copyobjectxytoperm LOCALID_GRUNT_6
+	copyobjectxytoperm LOCALID_GRUNT_4
 	releaseall
 	end
 
@@ -285,9 +285,9 @@ MossdeepCity_SpaceCenter_2F_EventScript_DefeatedMaxieTabitha::
 	setflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_TEAM_MAGMA
 	setflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_TEAM_MAGMA
 	setflag FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA
-	removeobject LOCALID_GRUNT_6
-	removeobject LOCALID_GRUNT_7
 	removeobject LOCALID_GRUNT_5
+	removeobject LOCALID_GRUNT_6
+	removeobject LOCALID_GRUNT_4
 	removeobject LOCALID_TABITHA
 	removeobject LOCALID_MAXIE
 	setobjectxy LOCALID_SCIENTIST, 5, 6

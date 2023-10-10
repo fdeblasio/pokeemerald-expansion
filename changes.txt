@@ -166,6 +166,10 @@ Pokémon:
     Doduo/Dodrio:
         Get Aerial Ace instead of Wing Attack at level 15 due to not having wings
 
+    Lickitung/Lickilicky (not in main game):
+        Learn Coil by level up
+        Ability: Oblivious->Thick Fat
+
     Galarian Weezing:
         Learns Misty Explosion by level up
 
@@ -226,6 +230,9 @@ Pokémon:
 
     Munchlax (not in main game):
         Can also evolve at level 20
+
+    Snorlax (not in main game):
+        Learns Slack Off by level up
 
     Zapdos:
         Learns Air Slash by TM

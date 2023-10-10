@@ -260,6 +260,9 @@ Pokémon:
         Learn Crunch and Psychic Fangs by TM (Teal Mask addition)
         Learn Dual Wingbeat and Lunge by move tutor (Teal Mask addition)
 
+    Dunsparce (not in main game):
+        Learns Swift by Move Tutor
+
     Granbull (not in main game):
         Hidden Ability: Rattled->Strong Jaw
 
@@ -319,6 +322,7 @@ Pokémon:
     Whismur/Loudred/Exploud:
         Received Punk Rock as a second ability
         Learn Disarming Voice by level up
+        Loudred and Exploud learn Teeter Dance and Dizzy Punch via level up
 
     Makuhita:
         Catch rate: 180->220

@@ -8261,7 +8261,7 @@
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_GOLETT"
               },
               {
                 "min_level": 25,
@@ -8271,7 +8271,7 @@
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_GOLETT"
               },
               {
                 "min_level": 25,
@@ -8281,7 +8281,7 @@
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_GOLETT"
               },
               {
                 "min_level": 25,
@@ -8291,7 +8291,7 @@
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_GOLETT"
               },
               {
                 "min_level": 25,
@@ -8315,12 +8315,7 @@
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_TRAPINCH"
-              },
-              {
-                "min_level": 25,
-                "max_level": 28,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_GOLETT"
               },
               {
                 "min_level": 25,
@@ -8330,32 +8325,37 @@
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_GOLETT"
               },
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_BALTOY"
               },
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_GOLETT"
               },
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_BALTOY"
               },
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_GOLETT"
               },
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_BALTOY"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_GOLETT"
               }
             ]
           }
@@ -8374,12 +8374,7 @@
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_TRAPINCH"
-              },
-              {
-                "min_level": 25,
-                "max_level": 28,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_GOLETT"
               },
               {
                 "min_level": 25,
@@ -8389,32 +8384,37 @@
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_GOLETT"
               },
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_BALTOY"
               },
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_GOLETT"
               },
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_BALTOY"
               },
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_GOLETT"
               },
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_BALTOY"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_GOLETT"
               }
             ]
           }
@@ -8433,12 +8433,7 @@
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_TRAPINCH"
-              },
-              {
-                "min_level": 25,
-                "max_level": 28,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_GOLETT"
               },
               {
                 "min_level": 25,
@@ -8448,32 +8443,37 @@
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_GOLETT"
               },
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_BALTOY"
               },
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_GOLETT"
               },
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_BALTOY"
               },
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_GOLETT"
               },
               {
                 "min_level": 25,
                 "max_level": 28,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_BALTOY"
+              },
+              {
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_GOLETT"
               }
             ]
           }

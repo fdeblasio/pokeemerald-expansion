@@ -29,7 +29,7 @@ MirageTower_4F_EventScript_ClawFossil::
 	faceplayer
 	msgbox MirageTower_4F_Text_TakeClawFossil, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, MirageTower_4F_EventScript_LeaveClawFossil
-	giveitem ITEM_CLAW_FOSSIL
+	giveitem ITEM_COVER_FOSSIL
 	closemessage
 	setflag FLAG_HIDE_MIRAGE_TOWER_CLAW_FOSSIL
 	setflag FLAG_HIDE_MIRAGE_TOWER_ROOT_FOSSIL
@@ -70,11 +70,11 @@ MirageTower_4F_Text_LeftRootFossilAlone:
 	.string "{PLAYER} left the Root Fossil alone.$"
 
 MirageTower_4F_Text_TakeClawFossil:
-	.string "You found the Claw Fossil.\p"
+	.string "You found the Cover Fossil.\p"
 	.string "If this Fossil is taken, the ground\n"
 	.string "around it will likely crumble away…\p"
-	.string "Take the Claw Fossil anyway?$"
+	.string "Take the Cover Fossil anyway?$"
 
 MirageTower_4F_Text_LeaveClawFossilAlone:
-	.string "{PLAYER} left the Claw Fossil alone.$"
+	.string "{PLAYER} left the Cover Fossil alone.$"
 

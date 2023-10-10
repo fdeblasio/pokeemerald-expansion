@@ -580,8 +580,8 @@ static const struct TrainerMon sParty_Dusty5[] = {
     {
     .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
     .lvl = 46,
-    .species = SPECIES_RELICANTH,
-    .moves = {MOVE_AQUA_TAIL, MOVE_ROCK_TOMB, MOVE_TAKE_DOWN, MOVE_YAWN}
+    .species = SPECIES_FLYGON,
+    .moves = {MOVE_EARTHQUAKE, MOVE_DRAGON_CLAW, MOVE_CRUNCH, MOVE_SCREECH}
     },
     {
     .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
@@ -2592,25 +2592,21 @@ static const struct TrainerMon sParty_Drew[] = {
     {
     .lvl = 27,
     .species = SPECIES_TRAPINCH,
-    .moves = {MOVE_DIG, MOVE_BULLDOZE, MOVE_FEINT_ATTACK, MOVE_SAND_TOMB}
     }
 };
 
 static const struct TrainerMon sParty_Beau[] = {
     {
     .lvl = 25,
-    .species = SPECIES_BALTOY,
-    .moves = {MOVE_RAPID_SPIN, MOVE_MUD_SLAP, MOVE_PSYBEAM, MOVE_ROCK_TOMB}
+    .species = SPECIES_DARUMAKA,
     },
     {
     .lvl = 25,
     .species = SPECIES_SANDSHREW,
-    .moves = {MOVE_BULLDOZE, MOVE_SAND_TOMB, MOVE_RAPID_SPIN, MOVE_FURY_SWIPES}
     },
     {
     .lvl = 25,
     .species = SPECIES_BALTOY,
-    .moves = {MOVE_RAPID_SPIN, MOVE_MUD_SLAP, MOVE_PSYBEAM, MOVE_ROCK_TOMB}
     }
 };
 
@@ -6123,12 +6119,10 @@ static const struct TrainerMon sParty_Heidi[] = {
     {
     .lvl = 26,
     .species = SPECIES_SANDSHREW,
-    .moves = {MOVE_BULLDOZE, MOVE_SAND_TOMB, MOVE_RAPID_SPIN, MOVE_FURY_SWIPES}
     },
     {
     .lvl = 26,
     .species = SPECIES_BALTOY,
-    .moves = {MOVE_RAPID_SPIN, MOVE_MUD_SLAP, MOVE_PSYBEAM, MOVE_ROCK_TOMB}
     }
 };
 
@@ -6136,12 +6130,10 @@ static const struct TrainerMon sParty_Becky[] = {
     {
     .lvl = 26,
     .species = SPECIES_SANDSHREW,
-    .moves = {MOVE_BULLDOZE, MOVE_SAND_TOMB, MOVE_RAPID_SPIN, MOVE_FURY_SWIPES}
     },
     {
     .lvl = 26,
-    .species = SPECIES_MARILL,
-    .moves = {MOVE_AQUA_TAIL, MOVE_PLAY_ROUGH, MOVE_CHARM, MOVE_AQUA_RING}
+    .species = SPECIES_TOGETIC,
     }
 };
 
@@ -9916,11 +9908,11 @@ static const struct TrainerMon sParty_Elijah[] = {
 static const struct TrainerMon sParty_Celia[] = {
     {
     .lvl = 26,
-    .species = SPECIES_AZUMARILL,
+    .species = SPECIES_TOGETIC,
     },
     {
     .lvl = 26,
-    .species = SPECIES_LOMBRE,
+    .species = SPECIES_EXEGGCUTE,
     }
 };
 
@@ -9931,7 +9923,7 @@ static const struct TrainerMon sParty_Bryan[] = {
     },
     {
     .lvl = 26,
-    .species = SPECIES_SANDSHREW,
+    .species = SPECIES_GOLETT,
     }
 };
 
@@ -9942,7 +9934,7 @@ static const struct TrainerMon sParty_Branden[] = {
     },
     {
     .lvl = 25,
-    .species = SPECIES_NUZLEAF,
+    .species = SPECIES_TANGELA,
     },
     {
     .lvl = 25,

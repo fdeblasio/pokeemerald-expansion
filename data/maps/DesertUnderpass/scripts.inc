@@ -17,7 +17,7 @@ DesertUnderpass_EventScript_Fossil::
 	end
 
 DesertUnderpass_EventScript_GiveClawFossil::
-	giveitem ITEM_CLAW_FOSSIL
+	giveitem ITEM_COVER_FOSSIL
 	removeobject LOCALID_FOSSIL
 	release
 	end

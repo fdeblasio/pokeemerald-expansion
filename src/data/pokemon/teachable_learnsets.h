@@ -17521,6 +17521,7 @@ static const u16 sDunsparceTeachableLearnset[] = {
     MOVE_SUBSTITUTE,
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
+    MOVE_SWIFT,
     MOVE_TAKE_DOWN,
     MOVE_TERA_BLAST,
     MOVE_TERRAIN_PULSE,

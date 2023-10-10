@@ -64,6 +64,10 @@ Moves:
     Barrage:
         Power: 15->20
         Accuracy: 85->90
+    Arm Thrust:
+        Power: 15->20
+    Water Shuriken:
+        Power: 15->25
     Present:
         Accuracy: 90->100
         Now heals allies similar to Pollen Puff
@@ -79,6 +83,7 @@ Moves:
             Slam
             Mega Punch
             Egg Bomb
+            Tail Slap
         Fighting:
             Rolling Kick
             Submission
@@ -88,6 +93,8 @@ Moves:
             Air Cutter
             Air Slash
             Dual Wingbeat
+        Bug:
+            Pin Missile
         Ground:
             Bonemerang
             Bone Club
@@ -97,6 +104,7 @@ Moves:
             Rock Throw
             Rock Tomb
             Rock Slide
+            Rock Blast
             Diamond Storm
         Electric:
             Thunder Cage

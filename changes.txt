@@ -156,7 +156,11 @@ Pokémon:
     Igglybuff:
         Can also evolve at level 12
 
+    Psyduck:
+        Type: Water->Water/Psychic
+
     Golduck:
+        Type: Water->Water/Psychic
         Learns Power Gem upon evolving
 
     Golbat:
@@ -227,6 +231,9 @@ Pokémon:
     Magikarp:
         Learns Hydro Pump at level 35
         Learns Bounce at level 45
+
+    Gyarados:
+        Type: Water/Flying->Water
 
     Eevee (not in main game):
         Now evolves into Espeon with a Sun Stone

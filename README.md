@@ -32,8 +32,8 @@ Based off RHH's pokeemerald-expansion 1.9.1 https://github.com/rh-hideout/pokeem
         - Setting Terrains.
     - Mid-turn speed recalculation.
     - Quick Poké Ball selection in Wild Battles
-        - Hold `R` to change selection with the D-Pad.
-        - Press `R` to use last selected Poké Ball.
+        - Press `L` to use last selected Poké Ball.
+        - Hold `L` to change selection with the D-Pad.
     - Run option shortcut
     - Faster battle intro - Message and animation/cry happens at the same time.
     - Faster HP drain.
@@ -190,13 +190,13 @@ With this, you'll get the latest version of pokeemerald-expansion, plus a couple
     - [Fixing Snow weather](https://github.com/pret/pokeemerald/wiki/Fix-Snow-Weather)
     - [Swapping party using Select](https://www.pokecommunity.com/showpost.php?p=10420662)
     - [Displaying Return/Frustration power in summary screen](https://www.pokecommunity.com/showpost.php?p=10575976&postcount=420)
+- AsparagusEduardo
+    - [Not showing dex entries until the Pokédex is received](https://github.com/pret/pokeemerald/wiki/Not-showing-dex-entries-until-getting-the-Pok%C3%A9dex)
+    - [Having "Move Pokemon" as the first PC option](https://www.pokecommunity.com/showpost.php?p=10065761)
 - Ghoulslash
     - [Fixing the surfing dismount bug](https://github.com/pret/pokeemerald/wiki/Surfing-Dismount-Ground-Effects)
     - [Implementing shops using badge count](https://github.com/pret/pokeemerald/wiki/Shop-Items-By-Badge-Count)
     - [Bag sorting](https://www.pokecommunity.com/showpost.php?p=10167488&postcount=84)
-- AsparagusEduardo
-    - [Not showing dex entries until the Pokédex is received](https://github.com/pret/pokeemerald/wiki/Not-showing-dex-entries-until-getting-the-Pok%C3%A9dex)
-    - [Having "Move Pokemon" as the first PC option](https://www.pokecommunity.com/showpost.php?p=10065761)
 - Jaizu
     - [Implementing the FRLG bag sound](https://www.pokecommunity.com/showpost.php?p=10205757)
     - [Implementing an auto-swapping naming screen](https://www.pokecommunity.com/showpost.php?p=10199896&postcount=139)

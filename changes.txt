@@ -121,6 +121,8 @@ Moves:
     Bleakwind Storm/Wildbolt Storm/Sandsear Storm/Springtide Storm:
         Power: 100->120
         Accuracy: 80->100
+    Surf
+        Target: Both foes and ally->both foes
 
     Many signature moves and other moves were given 100% accuracy:
         Normal:
@@ -257,6 +259,7 @@ Pokémon:
 
     Lickitung/Lickilicky (not in main game):
         Learn Coil by level up
+        Learn Sludge Bomb by TM
         Ability: Oblivious->Thick Fat
 
     Galarian Weezing (not in main game):

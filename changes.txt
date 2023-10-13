@@ -1,6 +1,7 @@
 - Wild Pokemon and Trainers have their levels increased to make grinding less of a pain
     - However, with the Exp Share now affecting all party members, this can lead to becoming overleveled
-- Some reversions back to R/S
+- Decapitalization
+- Some reversions back to Ruby and Sapphire
     - Birch is chased by a Poochyena
     - Some trainers on Routes 104 and 117 go back to their original locations
 - Gym Leaders use more Hoenn Pokémon
@@ -16,8 +17,9 @@
     - Rock Smash rocks have been removed from everywhere but Rusturf Tunnel. Brick Break can now also break them
     - The Escape Rope can by used in the Trick Room puzzles that involve Cut/Strength
     - Dive has been replaced by a key item
-- Improved berry yields
-- Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room. The door to Sealed Chamber and the Regis' inner rooms are now automatically open
+- Berry trees give more berries
+- Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room
+    - The door to Sealed Chamber and the Regis' inner rooms are now automatically open
 - Made rapids easier to navigate so that only one trip is needed to get all items/battle all trainers (at the cost of looking slightly worse)
 - Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)
 - All moves automatically have their max PP amount
@@ -25,9 +27,27 @@
 - Pokémon that evolve with an item at day or night now can evolve at any time
 - EVs now give one stat increase for every EV but cap out at 63 (individual)/127 (total)
 - Houndour was added to the Hoenn dex to give Team Magma more variety
+- Frontier Brains have updated teams
+- Battle Pyramid wild Pokémon have been updated
 
-Frontier Brains have updated teams
-Battle Pyramid wild Pokémon have been updated
+Quality of life changes thanks to tutorials (credit in README.md):
+- You can nickname and relearn moves from the party menu
+- Press A on the summary screen to see a Pokemon's EVs/IVs
+- Stats affected by nature now are colored
+- Return/Frustration shows power in summary screen
+- Hidden Power type is shown in battle and the summary screen
+- Can swap party members with Select
+- Items in shops are based on the amount of badges you have
+- Bag sorting
+- More bag space
+- "Move Pokemon" is the first option in the PC
+- The naming screen automatically swaps to lowercase after the first letter
+- Rainy routes will automatically water berries
+- Premier Balls are now given for every multiple of 10 of any ball you buy (as opposed to only 1 for 10+ Poke Balls)
+- Faster text speed
+- Faster walking speed
+- Can now use Soot Sack to see how much ash you have
+
 
 Moves:
     Double Slap:
@@ -239,7 +259,7 @@ Pokémon:
         Learn Coil by level up
         Ability: Oblivious->Thick Fat
 
-    Galarian Weezing:
+    Galarian Weezing (not in main game):
         Learns Misty Explosion by level up
 
     Rhyperior:

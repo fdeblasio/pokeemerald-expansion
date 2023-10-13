@@ -168,12 +168,13 @@ There are some mechanics, moves and abilities that are missing and being develop
     - [Fixing Snow weather](https://github.com/pret/pokeemerald/wiki/Fix-Snow-Weather)
     - [Swapping party using Select](https://www.pokecommunity.com/showpost.php?p=10420662)
     - [Displaying Return/Frustration power in summary screen](https://www.pokecommunity.com/showpost.php?p=10575976&postcount=420)
+- AsparagusEduardo
+    - [Not showing dex entries until the Pokédex is received](https://github.com/pret/pokeemerald/wiki/Not-showing-dex-entries-until-getting-the-Pok%C3%A9dex)
+    - [Having "Move Pokemon" as the first PC option](https://www.pokecommunity.com/showpost.php?p=10065761)
 - Ghoulslash
     - [Fixing the surfing dismount bug](https://github.com/pret/pokeemerald/wiki/Surfing-Dismount-Ground-Effects)
     - [Implementing shops using badge count](https://github.com/pret/pokeemerald/wiki/Shop-Items-By-Badge-Count)
     - [Bag sorting](https://www.pokecommunity.com/showpost.php?p=10167488&postcount=84)
-- AsparagusEduardo
-    - [Not showing dex entries until the Pokédex is received](https://github.com/pret/pokeemerald/wiki/Not-showing-dex-entries-until-getting-the-Pok%C3%A9dex)
 - Jaizu
     - [Implementing the FRLG bag sound](https://www.pokecommunity.com/showpost.php?p=10205757)
     - [Implementing an auto-swapping naming screen](https://www.pokecommunity.com/showpost.php?p=10199896&postcount=139)

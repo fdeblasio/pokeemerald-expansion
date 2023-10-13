@@ -995,7 +995,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
             .power = 90,
-            .target = MOVE_TARGET_FOES_AND_ALLY,
+            .target = MOVE_TARGET_BOTH,
         #elif B_UPDATED_MOVE_DATA >= GEN_4
             .power = 95,
             .target = MOVE_TARGET_FOES_AND_ALLY,

@@ -1107,7 +1107,7 @@ const struct PokedexEntry gPokedexEntries[] =
     [NATIONAL_DEX_GASTLY] =
     {
         .categoryName = _("Gas"),
-        .height = 13,
+        .height = 10,
         .weight = 1,
         .description = gGastlyPokedexText,
         .pokemonScale = 256,
@@ -1119,7 +1119,7 @@ const struct PokedexEntry gPokedexEntries[] =
     [NATIONAL_DEX_HAUNTER] =
     {
         .categoryName = _("Gas"),
-        .height = 16,
+        .height = 12,
         .weight = 1,
         .description = gHaunterPokedexText,
         .pokemonScale = 256,

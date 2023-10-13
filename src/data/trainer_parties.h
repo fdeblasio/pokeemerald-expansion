@@ -9893,7 +9893,7 @@ static const struct TrainerMon sParty_Elijah[] = {
     },
     {
     .lvl = 29,
-    .species = SPECIES_SKARMORY,
+    .species = SPECIES_PIDGEOTTO,
     }
 };
 

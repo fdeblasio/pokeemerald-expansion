@@ -24,18 +24,18 @@ upcoming
 
 ## To Do:
 - Update teachable moves to match Indigo Disk
+    - Figure out a way to mass update of both level up and teachable moves (PoryMoves has slightly different syntax for some forms)
 - Stay on EVs/IVs when switching Pokemon
+- Add Fly to start menu instead?
 - Edit moves that work in field
-    - Maybe edit so instead of "if has move" to "if can learn move" (might not be simple since it's .inc and not C)
-    - Cut:
+    - Maybe edit so instead of "if has move" to "if can learn move"
+        - Might not be simple since it's .inc and not C
+        - Would really help with Surf, though
+    - Cut (only in Trick House):
         - Moves boosted by Sharpness
-    - Strength:
+    - Strength (only in Trick House and Seafloor Cavern):
         - Superpower?
         - Close Combat?
-- Alternatively, remove instances of rocks, boulders, etc
-    - Cut is still usable in the Trick House
-    - Strength is still usable in the Trick House and Seafloor Cavern
-    - Rock Smash is still usable in Rusturf Tunnel
 - More save space editing
     - Medicine Pocket?
     - See if it's possible to give item PC and decoration PC have more room
@@ -71,7 +71,7 @@ upcoming
 - Once Mints are implemented, in Lilycove 3F, move X items to left clerk and make right clerk Mints
     - Or move Mints to left too and have left be Chansey, right be Delibird
 - Get rid of low health constant beeping (https://www.pokecommunity.com/showpost.php?p=10246778&postcount=194)
-- Elite Four rematches
+- Elite Four rematches (wouldn't need to use Match Call, could probably do if statement in scripts.inc)
 - Replace ifdefs for move stats with just one set of stats?
 - Add EXP Candy
 - Improve B-canceling moves
@@ -93,38 +93,33 @@ upcoming
 - DON'T USE DEBUG MENU FOR FLYING. Test to see if without it, Fly Flags are set correctly
     - Maybe use makeshift version of it (without setting all flags) in Start menu to Fly without needing a Pokemon who knows it (no badge requirements)
         - Fly to routes?
-- Make list of all Magma/Aqua Pokemon and make them spread more evenly across the Grunts
-    - Maybe Admins rely less on Mightyena/Leaders' signature
-    - Magma: Numel, Slugma, Vulpix, Houndour, Torkoal, Baltoy, ???
-    - Aqua: Carvanha, Tentacool, ???
-    - Both: Poochyena/Zubat?
 - Add Farigiraf to Hoenn Dex once implemented
 - Add Ice Spinner as a TM (and maybe give to Beartic/Mamoswine/other Ice types) once implemented?
+    - Alternitavely could have Icicle Crash as a TM/given to more Pokemon since it got updated to have 100% accuracy
 - Add 3 other Regis?
     - Add Regigigas to Sealed Chamber?
     - Regieleki near New Mauville?
     - Regidrago near Meteor Falls?
 - Diversify water routes instead of just Tentacool/Wingull (definitely add more Carvanha; bring some fishing encounters to Surf)
-- Figure out a way to mass update of both level up and teachable moves (PoryMoves has slightly different syntax for some forms)
 - Spruce up battles/rematches
     - Have each rematch only be possible after certain badges? Would make rematch levels more consistent
-    - customAll Pokemon
-        - Winston could have a shiny
-            - Maybe all Rich Boys/Ladies have shinies (would need to have different Pokemon from each other instead of all having Zigzagoon)
+    - Trainer customization:
+        - Maybe all Rich Boys/Ladies have shinies (would need to have different Pokemon from each other instead of all having Zigzagoon)
         - Calvin could have a good Nature/EV
         - Leaders would have optimal Abilities/EVs/IVs/Natures
     - Breeders should have good IVs/Natures/Abilities
     - Triathlete would be Speed-focused (maybe endurance/HP too)
     - Winstrates (including Victor) should have EVs due to the mom mentioning using the Macho Brace
     - Tori and Tia should have Spindas that aren't identical
-    - Fix Roxanne's rematches being male (due to double battles (which the rematches are) having the personality set before the gender. Can rearrange steps or use customAll to manually set gender)
+    - Fix Roxanne's rematches being male (due to double battles (which the rematches are) having the personality set before the gender. Can rearrange steps or manually set gender)
     - Fix Flannery's rematches being male; also her Torkoal or Ninetales should have Drought
-    - Norman can have Toxic Orb Toxic Boost Zangoose
+    - Norman can have Toxic Orb Guts Zangoose
         - Spinda: Thrash if Own Tempo, Superpower if Contrary. Should be given a cool pattern (maybe 88888888?)
     - Fix Winona's rematches being male; Pelipper gets Drizzle?
     - Gym leaders/Steven/Breeders can have Hidden Abilities
     - Maxie/Archie/Steven use Mega Evolutions
-    - Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma)
+    - Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma. Mega Evo for Houndoom but unsure for Ninetales)
+        - Could swap out Huntail for Mega Gyarados and only it and Houndoom get items
     - Vito can use TMs
         - Swap Vito with Ace Trainer on 1F near the end?
 - Figure out why PokeNav callers think there were 512 wins at the Battle Palace
@@ -134,7 +129,7 @@ upcoming
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
 - Bring important Trainers up to ORAS levels?
 - Magmortar Flash Fire?
-- Cherrim
+- Cherrim (what does this mean?)
 - Find way to get Hypnosis to always hit if Hypno is using it?
 - Make Water Veil also up evasion like Sand Veil?
 - Edit max money

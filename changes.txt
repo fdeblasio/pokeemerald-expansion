@@ -255,6 +255,9 @@ Pokémon:
         Gender Ratio: 50/50->100/0
         Type: Psychic/Fairy->Psychic
 
+    Scyther/Scizor/Kleavor (not in main game):
+        Learn Lunge by move tutor (Teal Mask addition)
+
     Elekid:
         Atk: 63->65
         Def: 37->40
@@ -562,6 +565,10 @@ NOTE: Nothing past here is in the main game
 
     Riolu:
         Can also evolve at level 20
+
+    Scolipede:
+        Learns Coil by level up
+        Learns Lunge by move tutor
 
     Carracosta:
         Learns Body Press by TM

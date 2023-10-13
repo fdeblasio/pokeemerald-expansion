@@ -20,9 +20,10 @@ upcoming
     - TMs don't line up
     - Shows evolutions multiple times
     - Dark mode not implemented
-- Move relearner option in menu selects second Pokemon when finished
+- Move relearner option in menu sometimes selects different Pokemon when finished
 
 ## To Do:
+- Update teachable moves to match Indigo Disk
 - Stay on EVs/IVs when switching Pokemon
 - Edit moves that work in field
     - Maybe edit so instead of "if has move" to "if can learn move" (might not be simple since it's .inc and not C)

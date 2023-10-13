@@ -2616,32 +2616,22 @@
               {
                 "min_level": 28,
                 "max_level": 30,
-                "species": "SPECIES_VOLTORB"
+                "species": "SPECIES_ELEKID"
               },
               {
                 "min_level": 28,
                 "max_level": 30,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_PICHU"
               },
               {
                 "min_level": 28,
                 "max_level": 30,
-                "species": "SPECIES_VOLTORB"
+                "species": "SPECIES_ELEKID"
               },
               {
                 "min_level": 28,
                 "max_level": 30,
-                "species": "SPECIES_MAGNEMITE"
-              },
-              {
-                "min_level": 28,
-                "max_level": 30,
-                "species": "SPECIES_VOLTORB"
-              },
-              {
-                "min_level": 28,
-                "max_level": 30,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_PICHU"
               },
               {
                 "min_level": 28,
@@ -2651,7 +2641,7 @@
               {
                 "min_level": 28,
                 "max_level": 30,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_VOLTORB"
               },
               {
                 "min_level": 28,
@@ -2661,7 +2651,17 @@
               {
                 "min_level": 28,
                 "max_level": 30,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_VOLTORB"
+              },
+              {
+                "min_level": 28,
+                "max_level": 30,
+                "species": "SPECIES_ELEKID"
+              },
+              {
+                "min_level": 28,
+                "max_level": 30,
+                "species": "SPECIES_PICHU"
               }
             ]
           }
@@ -5492,32 +5492,22 @@
               {
                 "min_level": 28,
                 "max_level": 30,
-                "species": "SPECIES_VOLTORB"
+                "species": "SPECIES_ELEKID"
               },
               {
                 "min_level": 28,
                 "max_level": 30,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_PICHU"
               },
               {
                 "min_level": 28,
                 "max_level": 30,
-                "species": "SPECIES_VOLTORB"
+                "species": "SPECIES_ELEKID"
               },
               {
                 "min_level": 28,
                 "max_level": 30,
-                "species": "SPECIES_MAGNEMITE"
-              },
-              {
-                "min_level": 28,
-                "max_level": 30,
-                "species": "SPECIES_VOLTORB"
-              },
-              {
-                "min_level": 28,
-                "max_level": 30,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_PICHU"
               },
               {
                 "min_level": 28,
@@ -5527,7 +5517,7 @@
               {
                 "min_level": 28,
                 "max_level": 30,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_VOLTORB"
               },
               {
                 "min_level": 28,
@@ -5537,7 +5527,17 @@
               {
                 "min_level": 28,
                 "max_level": 30,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_VOLTORB"
+              },
+              {
+                "min_level": 28,
+                "max_level": 30,
+                "species": "SPECIES_ELEKID"
+              },
+              {
+                "min_level": 28,
+                "max_level": 30,
+                "species": "SPECIES_PICHU"
               }
             ]
           }

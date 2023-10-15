@@ -88,7 +88,7 @@ upcoming
 - Remove unused code
 - Pokemon in Frontier/Trainer Hill should be registered in Dex
 - Update Shiftry's Hidden Ability to Wind Rider
-- Implement Pokedex Plus (https://www.pokecommunity.com/showthread.php?t=441996)
+- Add accurate overworld sprites (https://github.com/pret/pokeemerald/wiki/Adding-new-event-object-or-overworld-sprites, https://www.pokecommunity.com/showthread.php?t=407124)
 - Figure out ?????? showing up at end of Dex
 - DON'T USE DEBUG MENU FOR FLYING. Test to see if without it, Fly Flags are set correctly
     - Maybe use makeshift version of it (without setting all flags) in Start menu to Fly without needing a Pokemon who knows it (no badge requirements)

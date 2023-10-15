@@ -1,13 +1,17 @@
 ## Find/Replace help
+```
 (_\("[A-Z])([A-Z\.é':]+"\))
 (["\- ][A-Z])([A-Z][A-Zé']+)
 $1\L$2
+```
 
 ## Rebasing
+```
 upcoming
 └─ textDecapitalization
    └─ develop
       └─ All hacks
+```
 
 ## Known Bugs
 - When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
@@ -20,13 +24,13 @@ upcoming
     - TMs don't line up
     - Shows evolutions multiple times
     - Dark mode not implemented
-- Move relearner option in menu sometimes selects different Pokemon when finished
+- Move relearner option in menu sometimes selects different Pokémon when finished
 - gBattleTextBuff3 causes the build to fail unless reverted from TEXT_BUFF_ARRAY_COUNT + 13 to 30
 
 ## To Do:
 - Update teachable moves to match Indigo Disk
     - Figure out a way to mass update of both level up and teachable moves (PoryMoves has slightly different syntax for some forms)
-- Stay on EVs/IVs when switching Pokemon
+- Stay on EVs/IVs when switching Pokémon
 - Add Fly to start menu instead?
 - Edit moves that work in field
     - Maybe edit so instead of "if has move" to "if can learn move"
@@ -57,11 +61,11 @@ upcoming
 - https://www.pokecommunity.com/showpost.php?p=10127351&postcount=47
 - https://www.pokecommunity.com/showpost.php?p=10167016&postcount=83
 - Overworld sprites to match trainer sprites (for example, giving Youngsters yellow shirts, girl tubers a yellow tube, Rangers red clothes, Dragon Tamers capes and correct hair color)
-- Improve Pokemon overworld sprites
+- Improve Pokémon overworld sprites
 - Try to find Bolts foreground of Walda PC
 - Some MAN_2's maybe could be switched to DEVON_EMPLOYEE
 - Debug menu improvements
-- Battle Tent Pokemon/EVs?
+- Battle Tent Pokémon/EVs?
 - Edit friendship evolution methods
 - Get all the weird Mauville men at once?
 - Update Favor Lady's items to include new items
@@ -87,16 +91,16 @@ upcoming
 - Stop daycare from deleting moves
 - Add relearning moves to PC?
 - Remove unused code
-- Pokemon in Frontier/Trainer Hill should be registered in Dex
+- Pokémon in Frontier/Trainer Hill should be registered in Dex
 - Update Shiftry's Hidden Ability to Wind Rider
 - Add accurate overworld sprites (https://github.com/pret/pokeemerald/wiki/Adding-new-event-object-or-overworld-sprites, https://www.pokecommunity.com/showthread.php?t=407124)
 - Figure out ?????? showing up at end of Dex
 - DON'T USE DEBUG MENU FOR FLYING. Test to see if without it, Fly Flags are set correctly
-    - Maybe use makeshift version of it (without setting all flags) in Start menu to Fly without needing a Pokemon who knows it (no badge requirements)
+    - Maybe use makeshift version of it (without setting all flags) in Start menu to Fly without needing a Pokémon who knows it (no badge requirements)
         - Fly to routes?
 - Add Farigiraf to Hoenn Dex once implemented
 - Add Ice Spinner as a TM (and maybe give to Beartic/Mamoswine/other Ice types) once implemented?
-    - Alternitavely could have Icicle Crash as a TM/given to more Pokemon since it got updated to have 100% accuracy
+    - Alternitavely could have Icicle Crash as a TM/given to more Pokémon since it got updated to have 100% accuracy
 - Add 3 other Regis?
     - Add Regigigas to Sealed Chamber?
     - Regieleki near New Mauville?
@@ -105,7 +109,7 @@ upcoming
 - Spruce up battles/rematches
     - Have each rematch only be possible after certain badges? Would make rematch levels more consistent
     - Trainer customization:
-        - Maybe all Rich Boys/Ladies have shinies (would need to have different Pokemon from each other instead of all having Zigzagoon)
+        - Maybe all Rich Boys/Ladies have shinies (would need to have different Pokémon from each other instead of all having Zigzagoon)
         - Calvin could have a good Nature/EV
         - Leaders would have optimal Abilities/EVs/IVs/Natures
     - Breeders should have good IVs/Natures/Abilities
@@ -134,28 +138,28 @@ upcoming
 - Find way to get Hypnosis to always hit if Hypno is using it?
 - Make Water Veil also up evasion like Sand Veil?
 - Edit max money
-- Should be able to run from wild Pokemon if it is Digging, Diving, Flying, Bouncing, etc
+- Should be able to run from wild Pokémon if it is Digging, Diving, Flying, Bouncing, etc
     - Even if ability is Shadow Tag/Arena Trap
 - Actually go through SS Tidal now that you'll have more bag space
 - Brendan/May/Steven rematches?
-- Add Pokemon with dolls? (Togepi, Smoochum, Clefairy, Lapras, Snorlax, Venusaur, Charizard, Blastoise)
+- Add Pokémon with dolls? (Togepi, Smoochum, Clefairy, Lapras, Snorlax, Venusaur, Charizard, Blastoise)
 - Make seperate Dex for post-game (similar to SwSh DLC dexes)?
 - Give Absol/Ceruledge Sharpness?
 - Add FRLG trainer sprites/overworld sprites
-    - Sprites are added but still need to be implemented. Overworld sprites may have duplicates for Pokemon and may need palettes
+    - Sprites are added but still need to be implemented. Overworld sprites may have duplicates for Pokémon and may need palettes
 - Make inserting trainer sprites easier?
     - Wrapper for src/data/graphics/trainers.h?
 - Contests overhaul
 - Frontier overhaul:
-    - Pokemon
+    - Pokémon
         - EVs
         - Moves
     - Give BP after every battle?
     - Do better with saving/resting
-    - Remove level 50? Or remove Open Level but lower Pokemon to level 50 if over?
+    - Remove level 50? Or remove Open Level but lower Pokémon to level 50 if over?
     - See if Poke Ball issue no longer occurs on a clean save
     - Edit Battle Frontier messages for Fairy?
-    - Add new Pokemon to Frontier mons?
+    - Add new Pokémon to Frontier mons?
     - Make teams more accurate to trainer classes?
     - Make resting not a soft save (CHALLENGE_STATUS_SAVING)
     - Make retiring not reset streak
@@ -164,7 +168,7 @@ upcoming
         - Apprentices
     - Battle Factory
         - Add new moves to moveStyles (sRequiredMoveCounts)
-        - Don't have both Open Level and Level 50 since the Pokemon are rentals anyways?
+        - Don't have both Open Level and Level 50 since the Pokémon are rentals anyways?
 
 ### Big changes from Vanilla - low priority
 - Remove IVs? Maybe make boolean for either 0 or 31 added to stat

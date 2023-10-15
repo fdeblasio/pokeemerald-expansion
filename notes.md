@@ -46,7 +46,7 @@ upcoming
 - PokéNav callers sometimes think there were 512 wins at the Battle Palace (seems to be related to Battle Tent issue)
 
 ## Tom-specific
-- Figure out mega evo for starters since only 2/3 get it
+- Torterra doesn't get a mega evo but the other two do
 - Add postgame legendaries/Safari Zone to Hoenn Dex? National Dex is useless due to no connectivity with other games
     - This could actually be applied to the main game too
 

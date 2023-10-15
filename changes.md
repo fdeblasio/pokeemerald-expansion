@@ -13,6 +13,7 @@ In college, I had you list some of your favorite Pokémon and told you I'd make 
 - Shiny Pokémon can no longer spawn until you get Poké Balls
 - Some areas made easier to navigate
     - Route 102/103: Path from Littleroot to rival is more direct
+- Safari Zone has been removed
 - Some reversions back to Ruby and Sapphire
     - Birch is chased by a Poochyena
     - Some trainers on Routes 104 and 117 go back to their original locations

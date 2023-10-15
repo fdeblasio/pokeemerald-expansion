@@ -278,35 +278,44 @@ Pokémon:
         Gender Ratio: 50/50->100/0
         Type: Psychic/Fairy->Psychic
 
-    Scyther/Scizor/Kleavor (not in main game):
+    Scyther (not in main game):
+        Catch rate: 45->90
         Learn Lunge by move tutor (Teal Mask addition)
 
-    Elekid:
+    Scizor/Kleavor (not in main game):
+        Learn Lunge by move tutor (Teal Mask addition)
+
+    Smoochum (not in main game):
+        Catch rate: 45->150
+
+    Elekid (not in main game):
         Atk: 63->65
         Def: 37->40
         SpA: 65->70
+        Catch rate: 45->150
         Learns Electric Terrain by level up
 
-    Electabuzz:
+    Electabuzz (not in main game):
         Atk: 83->85
         Def: 57->60
         SpA: 95->100
         Learns Electric Terrain by level up
 
-    Electivire:
+    Electivire (not in main game):
         Atk: 123->125
         Def: 67->70
         SpA: 95->100
 
-    Magby:
+    Magby (not in main game):
         Def: 37->40
         Spe: 83->85
+        Catch rate: 45->150
 
-    Magmar:
+    Magmar (not in main game):
         Def: 57->60
         Spe: 93->95
 
-    Magmortar:
+    Magmortar (not in main game):
         Atk: 95->100
         Def: 67->70
         Spe: 83->85

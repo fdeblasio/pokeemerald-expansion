@@ -193,7 +193,7 @@ With this, you'll get the latest version of pokeemerald-expansion, plus a couple
     - [Displaying Return/Frustration power in summary screen](https://www.pokecommunity.com/showpost.php?p=10575976&postcount=420)
 - AsparagusEduardo
     - [Not showing dex entries until the Pokédex is received](https://github.com/pret/pokeemerald/wiki/Not-showing-dex-entries-until-getting-the-Pok%C3%A9dex)
-    - [Having "Move Pokemon" as the first PC option](https://www.pokecommunity.com/showpost.php?p=10065761)
+    - [Having "Move Pokémon" as the first PC option](https://www.pokecommunity.com/showpost.php?p=10065761)
 - Ghoulslash
     - [Fixing the surfing dismount bug](https://github.com/pret/pokeemerald/wiki/Surfing-Dismount-Ground-Effects)
     - [Implementing shops using badge count](https://github.com/pret/pokeemerald/wiki/Shop-Items-By-Badge-Count)
@@ -218,4 +218,4 @@ With this, you'll get the latest version of pokeemerald-expansion, plus a couple
 - [ellabrella for increasing text speed beyond fast](https://www.pokecommunity.com/showpost.php?p=10400198)
 - [Mashanny for making text speed up without holding A/B](https://www.pokecommunity.com/showpost.php?p=10266385)
 - [Sapphire Jester for making the Soot Sack usuable](https://www.pokecommunity.com/showpost.php?p=10222284&postcount=178)
-- [ScyrousFX for making Fly usable without a Pokemon knowing it](https://www.pokecommunity.com/showpost.php?p=10420068)
+- [ScyrousFX for making Fly usable without a Pokémon knowing it](https://www.pokecommunity.com/showpost.php?p=10420068)

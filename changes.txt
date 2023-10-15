@@ -280,7 +280,7 @@ Pokémon:
 
     Scyther (not in main game):
         Catch rate: 45->90
-        Learn Lunge by move tutor (Teal Mask addition)
+        Learns Lunge by move tutor (Teal Mask addition)
 
     Scizor/Kleavor (not in main game):
         Learn Lunge by move tutor (Teal Mask addition)
@@ -375,7 +375,7 @@ Pokémon:
         Learn Dual Wingbeat and Lunge by move tutor (Teal Mask addition)
 
     Dunsparce (not in main game):
-        Learns Swift by Move Tutor
+        Learns Swift by move tutor
 
     Granbull (not in main game):
         Hidden Ability: Rattled->Strong Jaw
@@ -387,12 +387,18 @@ Pokémon:
         Learns X-Scissor by TM
         Catch rate: 45->90
 
+    Sneasel (not in main game):
+        Learns Razor Wind by Egg Move
+
     Slugma:
         Now evolves at level 32
 
     Magcargo:
         Learns Body Press by TM
         Learns Power Gem by TM (Teal Mask addition)
+
+    Mamoswine (not in main game):
+        Learns Icicle Crash by level up
 
     Delibird (not in main game):
         Atk: 55->75

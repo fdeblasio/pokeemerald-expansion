@@ -610,7 +610,7 @@ MauvilleCity_Text_WattsonThanksTakeTM:
 MauvilleCity_Text_WattsonYoungTakeCharge:
 	.string "Frank: Wahahahaha!\p"
 	.string "It pleases me to no end to see\n"
-	.string "the young step up and take charge!$"
+	.string "trainers step up and take charge!$"
 
 MauvilleCity_Text_NurseHurtMonBackToHealth:
 	.string "You know, it's cool to have Pokémon\n"

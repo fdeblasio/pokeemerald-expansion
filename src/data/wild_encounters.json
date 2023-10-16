@@ -2646,7 +2646,7 @@
               {
                 "min_level": 29,
                 "max_level": 31,
-                "species": "SPECIES_TANGROWTH"
+                "species": "SPECIES_EXEGGUTOR"
               },
               {
                 "min_level": 29,
@@ -2760,22 +2760,22 @@
               {
                 "min_level": 30,
                 "max_level": 32,
+                "species": "SPECIES_WHIRLIPEDE"
+              },
+              {
+                "min_level": 30,
+                "max_level": 32,
+                "species": "SPECIES_WHIRLIPEDE"
+              },
+              {
+                "min_level": 30,
+                "max_level": 32,
                 "species": "SPECIES_MIGHTYENA"
               },
               {
                 "min_level": 30,
                 "max_level": 32,
-                "species": "SPECIES_LINOONE"
-              },
-              {
-                "min_level": 30,
-                "max_level": 32,
-                "species": "SPECIES_WHIRLIPEDE"
-              },
-              {
-                "min_level": 30,
-                "max_level": 32,
-                "species": "SPECIES_WHIRLIPEDE"
+                "species": "SPECIES_MIGHTYENA"
               },
               {
                 "min_level": 30,
@@ -2785,7 +2785,7 @@
               {
                 "min_level": 30,
                 "max_level": 32,
-                "species": "SPECIES_AXEW"
+                "species": "SPECIES_LINOONE"
               }
             ]
           },

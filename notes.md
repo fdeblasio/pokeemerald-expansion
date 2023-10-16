@@ -18,7 +18,7 @@ upcoming
 - Items in the Battle Pyramid's Battle Bag/held items in the Battle Pike are turning into Poke Balls
     - Seems to happen after trainer battles?
     - This occurs even with the Battle Frontier changes reverted
-- AI_FLAG_ACE_POKEMON didn't seem to work for Roxanne
+- AI_FLAG_ACE_POKEMON didn't seem to work
 - Unburden may not work?
 - HGSS Dex (currently disabled):
     - TMs don't line up

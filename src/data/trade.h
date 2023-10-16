@@ -1002,10 +1002,10 @@ static const struct InGameTrade sIngameTrades[] =
     },
     [INGAME_TRADE_PLUSLE] =
     {
-        .nickname = _("Pluses"),
-        .species = SPECIES_PLUSLE,
+        .nickname = _("Peaches"),
+        .species = SPECIES_PICHU,
         .ivs = {31, 31, 31, 31, 31, 31},
-        .abilityNum = 0,
+        .abilityNum = 2,
         .otId = 73996,
         .conditions = {5, 5, 30, 5, 5},
         .personality = 0x6F,
@@ -1014,14 +1014,14 @@ static const struct InGameTrade sIngameTrades[] =
         .otName = _("Roman"),
         .otGender = MALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_VOLBEAT
+        .requestedSpecies = SPECIES_JOLTIK
     },
     [INGAME_TRADE_HORSEA] =
     {
-        .nickname = _("Seasor"),
-        .species = SPECIES_HORSEA,
+        .nickname = _("Cubby"),
+        .species = SPECIES_CUBCHOO,
         .ivs = {31, 31, 31, 31, 31, 31},
-        .abilityNum = 0,
+        .abilityNum = 2,
         .otId = 46285,
         .conditions = {5, 5, 5, 5, 30},
         .personality = 0x7F,
@@ -1030,14 +1030,14 @@ static const struct InGameTrade sIngameTrades[] =
         .otName = _("Skylar"),
         .otGender = MALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_BAGON
+        .requestedSpecies = SPECIES_BELDUM
     },
     [INGAME_TRADE_MEOWTH] =
     {
-        .nickname = _("Meowow"),
-        .species = SPECIES_MEOWTH,
+        .nickname = _("Skittes"),
+        .species = SPECIES_SKITTY,
         .ivs = {31, 31, 31, 31, 31, 31},
-        .abilityNum = 0,
+        .abilityNum = 2,
         .otId = 91481,
         .conditions = {5, 5, 5, 30, 5},
         .personality = 0x8B,
@@ -1046,7 +1046,7 @@ static const struct InGameTrade sIngameTrades[] =
         .otName = _("Isis"),
         .otGender = FEMALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_SKITTY
+        .requestedSpecies = SPECIES_SNUBBULL
     }
 };
 
@@ -1056,9 +1056,9 @@ static const u16 sIngameTradeMail[][MAIL_WORDS_COUNT + 1] =
         EC_WORD_BE,
         EC_WORD_NICE,
         EC_WORD_TO,
-        EC_POKEMON(PLUSLE),
+        EC_POKEMON(PICHU),
         EC_WORD_EXCL,
-        EC_POKEMON(VOLBEAT),
+        EC_POKEMON_NATIONAL(JOLTIK),
         EC_WORD_WILL,
         EC_WORD_BE,
         EC_WORD_FANTASTIC
@@ -1066,17 +1066,17 @@ static const u16 sIngameTradeMail[][MAIL_WORDS_COUNT + 1] =
         EC_WORD_I,
         EC_WORD_WILL,
         EC_WORD_MAKE,
-        EC_POKEMON(BAGON),
+        EC_POKEMON(BELDUM),
         EC_WORD_TOUGH,
         EC_WORD_PLEASE,
         EC_WORD_TRAIN,
-        EC_POKEMON(HORSEA),
+        EC_POKEMON_NATIONAL(CUBCHOO),
         EC_WORD_WELL
     }, {
         EC_WORD_THANK_YOU,
         EC_WORD_FOR,
+        EC_POKEMON_NATIONAL(SNUBBULL),
         EC_POKEMON(SKITTY),
-        EC_POKEMON_NATIONAL(MEOWTH),
         EC_WORD_CRIES,
         EC_WORD_IN,
         EC_WORD_A,

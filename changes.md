@@ -216,11 +216,16 @@
 ### Pokémon:
 - Pokémon typically have their latest moveset plus most moves from their Gen 7 moveset that have been removed
     - Natural Gift, Lucky Chant, Wring Out, and Synchronoise have still been removed
-    - If a Pokémon can evolve by holding/being traded with an item, it now can evolve from that item being used
-    - Catch rate is a minimum of 30 for legendaries/mythicals and 45 for the rest
+- If a Pokémon can evolve by holding/being traded with an item, it now evolves from that item being used
+    - Pokémon that evolve by trading with no held item now evolve by using a Linking Cord
+    - Items that need to be held at a certain time now evolve by using that item at any time
+- Catch rate is a minimum of 30 for legendaries/mythicals and 45 for the rest
 
 <br>
 <br>
+
+- Ivysaur (not in main game):
+    - Evolution: 32->36
 
 - Nidorina/Nidoqueen (not in main game):
     - Can now breed
@@ -346,6 +351,18 @@
 - Zapdos:
     - Learns Air Slash by TM
 
+- Bayleef (not in main game):
+    - Evolution: 32->36
+
+- Cyndaquil (not in main game):
+    - Evolution: 14->16
+
+- Totodile (not in main game):
+    - Evolution: 18->16
+
+- Crocnaw (not in main game):
+    - Evolution: 30->36
+
 - Noctowl:
     - Learns Skill Swap by TM (Teal Mask addition)
 
@@ -393,7 +410,7 @@
     - Learns Razor Wind by Egg Move
 
 - Slugma:
-    - Now evolves at level 32
+    - Evolution: 38->32
 
 - Magcargo:
     - Learns Body Press by TM
@@ -587,10 +604,19 @@
 
 **NOTE: Nothing past here is in the main game**
 
+- Turtwig:
+    - Evolution: 18->16
+
+- Grotle:
+    - Evolution: 32->36
+
 - Torterra:
     - Learns Body Press and Zen Headbutt by TM (Teal Mask addition)
     - Learns Grassy Glide by move tutor (Teal Mask addition)
     - Learns Shell Smash after evolving
+
+- Chimchar:
+    - Evolution: 14->16
 
 - Infernape:
     - Learns Aura Sphere by TM (Teal Mask addition)
@@ -604,21 +630,171 @@
 - Shieldon/Bastiodon:
     - Received Rock Head as a second ability
 
+- Glameow:
+    - Evolution: 38->34
+
 - Riolu:
     - Can also evolve at level 20
+
+- Snivy:
+    - Evolution: 17->16
+
+- Tepig:
+    - Evolution: 17->16
+
+- Oshawott:
+    - Evolution: 17->16
 
 - Scolipede:
     - Learns Coil by level up
     - Learns Lunge by move tutor
 
+- Sandile:
+    - Evolution: 29->25
+
+- Krokorok:
+    - Evolution: 40->38
+
+- Darumaka:
+    - Evolution: 35->32
+
+- Scraggy:
+    - Evolution: 39->35
+
 - Carracosta:
     - Learns Body Press by TM
+
+- Gothita:
+    - Evolution: 32->22
+
+- Gothorita:
+    - Evolution: 41->35
+
+- Solosis:
+    - Evolution: 32->22
+
+- Duosion:
+    - Evolution: 41->35
+
+- Ducklett:
+    - Evolution: 35->33
+
+- Vanillite:
+    - Evolution: 35->30
+
+- Vanillish:
+    - Evolution: 47->42
+
+- Foongus:
+    - Evolution: 39->36
+
+- Joltik:
+    - Evolution: 36->32
+
+- Klink:
+    - Evolution: 38->32
+
+- Klang:
+    - Evolution: 49->42
+
+- Tynamo:
+    - Evolution: 39->32
+
+- Litwick:
+    - Evolution: 41->36
+
+- Axew:
+    - Evolution: 38->35
+
+- Fraxure:
+    - Evolution: 48->45
+
+- Cubchoo:
+    - Evolution: 37->35
+
+- Mienfoo:
+    - Evolution: 50->38
+
+- Golett:
+    - Evolution: 43->40
+
+- Pawniard:
+    - Evolution: 52->40
+
+- Rufflet:
+    - Evolution: 54->35
+
+- Vullaby:
+    - Evolution: 54->35
+
+- Deino:
+    - Evolution: 50->30
+
+- Zweilous:
+    - Evolution: 64->55
+
+- Larvesta:
+    - Evolution: 59->56
 
 - Spritzee/Aromatisse:
     - Gender Ratio: 50/50->25/75
 
+- Skrelp:
+    - Evolution: 48->37
+
+- Goomy:
+    - Evolution: 40->35
+
+- Noibat:
+    - Evolution: 48->40
+
+- Rowlet:
+    - Evolution: 17->16
+
+- Dartrix:
+    - Evolution: 34->36
+
+- Litten:
+    - Evolution: 17->16
+
+- Torracat:
+    - Evolution: 34->36
+
+- Popplio:
+    - Evolution: 17->16
+
+- Brionne:
+    - Evolution: 34->36
+
+- Thwackey:
+    - Evolution: 35->36
+
+- Raboot:
+    - Evolution: 35->36
+
+- Drizzile:
+    - Evolution: 35->36
+
+- Hatenna:
+    - Evolution: 32->28
+
+- Hattrem:
+    - Evolution: 42->38
+
+- Impidimp:
+    - Evolution: 32->28
+
+- Morgrem:
+    - Evolution: 42->38
+
 - Snom:
     - Can also evolve at level 21
+
+- Dreepy:
+    - Evolution: 50->30
+
+- Drakloak:
+    - Evolution: 60->55
 
 - Dragapult:
     - Learns Shadow Claw by TM

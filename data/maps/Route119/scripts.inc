@@ -502,9 +502,6 @@ Route119_Text_MayExplainFly:
 	.string "May: Use Fly, and your Pokémon will\n"
 	.string "instantly carry you to any town you've\l"
 	.string "already visited.\p"
-	.string "But, to use Fly, you have to get\n"
-	.string "the Gym Badge from Fortree City.\l"
-	.string "That's important, so don't forget.\p"
 	.string "You should Fly home and visit\n"
 	.string "Littleroot for a change.\p"
 	.string "I bet your mom's worried about you,\n"
@@ -533,8 +530,6 @@ Route119_Text_BrendanExplainFly:
 	.string "Brendan: Use Fly, and your Pokémon\n"
 	.string "instantly carries you to any town\l"
 	.string "you've already visited.\p"
-	.string "But you need the Fortree Gym Badge \n"
-	.string "to do that.\p"
 	.string "Anyway, I have to move along.$"
 
 Route119_Text_ScottWayToGoBeSeeingYou:

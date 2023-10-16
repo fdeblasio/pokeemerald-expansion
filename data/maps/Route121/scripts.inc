@@ -13,10 +13,6 @@ Route121_EventScript_MtPyrePierSign::
 	msgbox Route121_Text_MtPyrePierSign, MSGBOX_SIGN
 	end
 
-Route121_EventScript_SafariZoneSign::
-	msgbox Route121_Text_SafariZoneSign, MSGBOX_SIGN
-	end
-
 Route121_EventScript_MallGrunt::
 	msgbox Route121_Text_MallGrunt, MSGBOX_NPC
 	end
@@ -189,10 +185,6 @@ Route121_Text_MtPyrePierSign:
 	.string "Mt. Pyre Pier\p"
 	.string "…The sign is old and worn out.\n"
 	.string "The words are barely legible…$"
-
-Route121_Text_SafariZoneSign:
-	.string "“Filled with rare Pokémon!”\n"
-	.string "Safari Zone$"
 
 Route121_Text_MallGrunt:
 	.string "Scram! The Boss is doing\n"

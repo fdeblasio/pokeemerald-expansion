@@ -727,6 +727,19 @@
 - Vullaby:
     - Evolution: 54->35
 
+- Heatmor:
+    - Atk: 97->105
+    - Def: 66->70
+    - SpD: 66->70
+
+- Durant:
+    - HP: 58->65
+    - Atk: 109->110
+    - Def: 112->115
+    - SpA: 48->50
+    - SpD: 48->50
+    - Spe: 109->110
+
 - Deino:
     - Evolution: 50->30
 

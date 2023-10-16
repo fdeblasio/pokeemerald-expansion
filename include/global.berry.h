@@ -9,8 +9,7 @@ struct Berry
     const u8 name[BERRY_NAME_LENGTH + 1];
     u8 firmness;
     u16 size;
-    u8 maxYield;
-    u8 minYield;
+    u8 yield;
     const u8 *description1;
     const u8 *description2;
     u8 stageDuration;
@@ -29,8 +28,7 @@ struct Berry2
     u8 name[BERRY_NAME_LENGTH + 1];
     u8 firmness;
     u16 size;
-    u8 maxYield;
-    u8 minYield;
+    u8 yield;
     u8 *description1;
     u8 *description2;
     u8 stageDuration;

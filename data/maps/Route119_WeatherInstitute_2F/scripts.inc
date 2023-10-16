@@ -89,7 +89,7 @@ Route119_WeatherInstitute_2F_EventScript_ShellyDefeated::
 Route119_WeatherInstitute_2F_EventScript_ReceiveCastform::
 	msgbox Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon, MSGBOX_DEFAULT
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CRYOGONAL
-	givemon SPECIES_CRYOGONAL, 30, ITEM_MYSTIC_WATER
+	givemon SPECIES_CRYOGONAL, 30, ITEM_NEVER_MELT_ICE
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, Route119_WeatherInstitute_2F_EventScript_ReceiveCastformParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, Route119_WeatherInstitute_2F_EventScript_ReceiveCastformPC
 	goto Common_EventScript_NoMoreRoomForPokemon
@@ -299,8 +299,7 @@ Route119_WeatherInstitute_2F_Text_PlayerReceivedCastform:
 	.string "{PLAYER} received Cryogonal!$"
 
 Route119_WeatherInstitute_2F_Text_PokemonChangesWithWeather:
-	.string "That Pokémon changes shape according\n"
-	.string "to the weather conditions.\p"
+	.string "That Pokémon can create snow.\p"
 	.string "There're plenty of them in the\n"
 	.string "Institute--go ahead and take it.$"
 

@@ -18,6 +18,7 @@
     - The Escape Rope can by used in the Trick Room puzzles that involve Cut/Strength
     - Dive has been replaced by a key item
 - Berry trees give more berries
+- Wild Pokémon have better chances of holding items
 - Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room
     - The door to Sealed Chamber and the Regis' inner rooms are now automatically open
 - Made rapids easier to navigate so that only one trip is needed to get all items/battle all trainers (at the cost of looking slightly worse)

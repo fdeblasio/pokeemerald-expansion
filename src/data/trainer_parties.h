@@ -5399,7 +5399,7 @@ static const struct TrainerMon sParty_Benny[] = {
 static const struct TrainerMon sParty_Chester[] = {
     {
     .lvl = 29,
-    .species = SPECIES_PIDGEOT,
+    .species = SPECIES_PIDGEOTTO,
     },
     {
     .lvl = 29,

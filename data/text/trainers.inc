@@ -3235,8 +3235,7 @@ Route121_Text_JessicaDefeat:
 	.string "Don't take it so seriously!$"
 
 Route121_Text_JessicaPostBattle:
-	.string "Maybe I'll go catch more Pokémon at\n"
-	.string "the Safari.$"
+	.string "Maybe I'll go catch more Pokémon.$"
 
 Route121_Text_JessicaRegister:
 	.string "I took it easy on you this time!\n"
@@ -3251,8 +3250,7 @@ Route121_Text_JessicaRematchDefeat:
 	.string "You still won't take it easy!$"
 
 Route121_Text_JessicaPostRematch:
-	.string "Maybe I'll go catch more Pokémon at\n"
-	.string "the Safari.$"
+	.string "Maybe I'll go catch more Pokémon.$"
 
 Route121_Text_CristinIntro:
 	.string "I have this routine.\n"

@@ -122,8 +122,8 @@ Route115_EventScript_ItemHealPowder::
 	finditem ITEM_HEAL_POWDER
 	end
 
-Route115_EventScript_ItemPPUp::
-	finditem ITEM_PP_UP
+Route115_EventScript_ItemDawnStone::
+	finditem ITEM_DAWN_STONE
 	end
 
 Route116_EventScript_ItemXSpecial::
@@ -234,8 +234,8 @@ Route123_EventScript_ItemElixir::
 	finditem ITEM_ELIXIR
 	end
 
-Route123_EventScript_ItemPPUp::
-	finditem ITEM_PP_UP
+Route123_EventScript_ItemShinyStone::
+	finditem ITEM_SHINY_STONE
 	end
 
 Route123_EventScript_ItemRevivalHerb::
@@ -390,8 +390,8 @@ MeteorFalls_1F_1R_EventScript_ItemMoonStone::
 	finditem ITEM_MOON_STONE
 	end
 
-MeteorFalls_1F_1R_EventScript_ItemPPUP::
-	finditem ITEM_PP_UP
+MeteorFalls_1F_1R_EventScript_ItemDragonScale::
+	finditem ITEM_DRAGON_SCALE
 	end
 
 MeteorFalls_B1F_2R_EventScript_ItemTMDragonClaw::
@@ -646,8 +646,8 @@ MagmaHideout_3F_1R_EventScript_ItemNugget::
 	finditem ITEM_NUGGET
 	end
 
-MagmaHideout_3F_2R_EventScript_ItemPPMax::
-	finditem ITEM_PP_MAX
+MagmaHideout_3F_2R_EventScript_ItemProtector::
+	finditem ITEM_PROTECTOR
 	end
 
 MagmaHideout_4F_EventScript_ItemMaxRevive::

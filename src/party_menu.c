@@ -385,7 +385,6 @@ static void Task_SpinTradeYesNo(u8);
 static void Task_HandleSpinTradeYesNoInput(u8);
 static void Task_CancelAfterAorBPress(u8);
 static void DisplayFieldMoveExitAreaMessage(u8);
-static void DisplayCantUseFlashMessage(void);
 static void DisplayCantUseSurfMessage(void);
 static void Task_FieldMoveExitAreaYesNo(u8);
 static void Task_HandleFieldMoveExitAreaYesNoInput(u8);
@@ -504,7 +503,6 @@ static void CursorCb_ChangeAbility(u8);
 static bool8 SetUpFieldMove_Surf(void);
 static bool8 SetUpFieldMove_Fly(void);
 static bool8 SetUpFieldMove_Waterfall(void);
-static bool8 SetUpFieldMove_Dive(void);
 void TryItemHoldFormChange(struct Pokemon *mon);
 static void ShowMoveSelectWindow(u8 slot);
 static void Task_HandleWhichMoveInput(u8 taskId);
@@ -4103,14 +4101,6 @@ static void Task_CancelAfterAorBPress(u8 taskId)
         CursorCb_Cancel1(taskId);
 }
 
-static void DisplayCantUseFlashMessage(void)
-{
-    if (FlagGet(FLAG_SYS_USE_FLASH) == TRUE)
-        DisplayPartyMenuStdMessage(PARTY_MSG_ALREADY_IN_USE);
-    else
-        DisplayPartyMenuStdMessage(PARTY_MSG_CANT_USE_HERE);
-}
-
 static void FieldCallback_Surf(void)
 {
     gFieldEffectArguments[0] = GetCursorSelectionMonId();
@@ -4164,24 +4154,6 @@ static bool8 SetUpFieldMove_Waterfall(void)
     {
         gFieldCallback2 = FieldCallback_PrepareFadeInFromMenu;
         gPostMenuFieldCallback = FieldCallback_Waterfall;
-        return TRUE;
-    }
-    return FALSE;
-}
-
-static void FieldCallback_Dive(void)
-{
-    gFieldEffectArguments[0] = GetCursorSelectionMonId();
-    FieldEffectStart(FLDEFF_USE_DIVE);
-}
-
-static bool8 SetUpFieldMove_Dive(void)
-{
-    gFieldEffectArguments[1] = TrySetDiveWarp();
-    if (gFieldEffectArguments[1] != 0)
-    {
-        gFieldCallback2 = FieldCallback_PrepareFadeInFromMenu;
-        gPostMenuFieldCallback = FieldCallback_Dive;
         return TRUE;
     }
     return FALSE;

@@ -12323,9 +12323,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_TORTERRA] =
     {
         .baseHP        = 95,
-        .baseAttack    = 109,
+        .baseAttack    = 110,
         .baseDefense   = 105,
-        .baseSpeed     = 56,
+        .baseSpeed     = 60,
         .baseSpAttack  = 75,
         .baseSpDefense = 85,
         .types = { TYPE_GRASS, TYPE_GROUND},

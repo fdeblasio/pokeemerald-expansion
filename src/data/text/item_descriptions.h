@@ -1648,7 +1648,7 @@ static const u8 sTyranitariteDesc[] = _(
 
 static const u8 sSceptiliteDesc[] = _(
     "This stone enables\n"
-    "Sceptile to Mega\n"
+    "Torterra to Mega\n"
     "Evolve in battle.");
 
 static const u8 sBlazikeniteDesc[] = _(

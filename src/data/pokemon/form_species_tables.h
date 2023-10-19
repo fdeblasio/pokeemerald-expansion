@@ -446,7 +446,7 @@ static const u16 sTyranitarFormSpeciesIdTable[] = {
 };
 
 static const u16 sSceptileFormSpeciesIdTable[] = {
-    SPECIES_SCEPTILE,
+    SPECIES_TORTERRA,
     SPECIES_SCEPTILE_MEGA,
     FORM_SPECIES_END,
 };

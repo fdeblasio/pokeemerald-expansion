@@ -713,6 +713,16 @@ In college, I had you list some of your favorite Pokémon and told you I'd make 
     - Evolution: 32->36
 
 - Torterra:
+    - Atk: 109->110
+    - Spe: 56->60
+    - Gets a Mega Evolution since the other two starters do, although the sprite is currently the same:
+        - HP: 95
+        - Atk: 140
+        - Def: 140
+        - SpA: 45
+        - SpD: 100
+        - Spe: 100
+        - Ability: Solid Rock
     - Learns Body Press and Zen Headbutt by TM (Teal Mask addition)
     - Learns Grassy Glide by move tutor (Teal Mask addition)
     - Learns Shell Smash after evolving

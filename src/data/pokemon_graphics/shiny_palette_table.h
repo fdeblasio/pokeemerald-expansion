@@ -1005,7 +1005,7 @@ const struct CompressedSpritePalette gMonShinyPaletteTable[NUM_SPECIES + 1] =
     SPECIES_SHINY_PAL(HERACROSS_MEGA, gMonShinyPalette_HeracrossMega),
     SPECIES_SHINY_PAL(HOUNDOOM_MEGA, gMonShinyPalette_HoundoomMega),
     SPECIES_SHINY_PAL(TYRANITAR_MEGA, gMonShinyPalette_TyranitarMega),
-    SPECIES_SHINY_PAL(SCEPTILE_MEGA, gMonShinyPalette_SceptileMega),
+    SPECIES_SHINY_PAL(SCEPTILE_MEGA, gMonShinyPalette_Torterra),
     SPECIES_SHINY_PAL(BLAZIKEN_MEGA, gMonShinyPalette_BlazikenMega),
     SPECIES_SHINY_PAL(SWAMPERT_MEGA, gMonShinyPalette_SwampertMega),
     SPECIES_SHINY_PAL(GARDEVOIR_MEGA, gMonShinyPalette_GardevoirMega),

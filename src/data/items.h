@@ -3772,9 +3772,9 @@ const struct Item gItems[] =
         .flingPower = 80,
     },
 
-    [ITEM_SCEPTILITE] =
+    [ITEM_TORTERRITE] =
     {
-        .name = _("Sceptilite"),
+        .name = _("Torterrite"),
         .price = 10000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = sSceptiliteDesc,

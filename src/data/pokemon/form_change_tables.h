@@ -100,7 +100,7 @@ static const struct FormChange sTyranitarFormChangeTable[] = {
 };
 
 static const struct FormChange sSceptileFormChangeTable[] = {
-    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_SCEPTILE_MEGA, ITEM_SCEPTILITE},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_SCEPTILE_MEGA, ITEM_TORTERRITE},
     {FORM_CHANGE_TERMINATOR},
 };
 

@@ -393,6 +393,9 @@
 - Sunflora:
     - Learns Morning Sun by level up
 
+- Misdreavus/Mismagius (not in main game):
+    - Gender Ratio: 50/50->25/75
+
 - Gligar/Gliscor:
     - Learn Crunch and Psychic Fangs by TM (Teal Mask addition)
     - Learn Dual Wingbeat and Lunge by move tutor (Teal Mask addition)

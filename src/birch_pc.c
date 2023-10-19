@@ -63,7 +63,7 @@ const u8 *GetPokedexRatingText(u16 count)
         return gBirchDexRatingText_LessThan190;
     if (count < HOENN_DEX_COUNT - 1)
         return gBirchDexRatingText_LessThan200;
-    if (count >= HOENN_DEX_COUNT - 1)
+    else
         return gBirchDexRatingText_DexCompleted;
 }
 

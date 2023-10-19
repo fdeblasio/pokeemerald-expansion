@@ -2007,7 +2007,7 @@ static u8 GetPokedexRatingLevel(u16 numSeen)
         return 18;
     if (numSeen < HOENN_DEX_COUNT - 1)
         return 19;
-    if (numSeen >= HOENN_DEX_COUNT - 1)
+    else
         return 20;
 }
 

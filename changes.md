@@ -269,9 +269,16 @@
 - Doduo/Dodrio:
     - Get Aerial Ace instead of Wing Attack at level 15 due to not having wings
 
-- Lickitung/Lickilicky (not in main game):
-    - Learn Coil by level up
-    - Learn Sludge Bomb by TM
+- Lickitung (not in main game):
+    - Atk: 55->65
+    - Spe: 30->50
+    - Learns Coil by level up
+    - Learns Sludge Bomb by TM
+    - Ability: Oblivious->Thick Fat
+
+- Lickilicky (not in main game):
+    - Learns Coil by level up
+    - Learns Sludge Bomb by TM
     - Ability: Oblivious->Thick Fat
 
 - Galarian Weezing (not in main game):

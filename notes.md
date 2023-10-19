@@ -32,6 +32,8 @@ upcoming
     - Figure out a way to mass update of both level up and teachable moves (PoryMoves has slightly different syntax for some forms)
 - Stay on EVs/IVs when switching Pokémon
 - Add Fly to start menu instead?
+- Nasty Plot tutor->TM?
+- Hyper Voice TM? (who even needs Gyro Ball?)
 - Edit moves that work in field
     - Maybe edit so instead of "if has move" to "if can learn move"
         - Might not be simple since it's .inc and not C

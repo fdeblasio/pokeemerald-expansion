@@ -3475,7 +3475,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = STANDARD_FRIENDSHIP,                  \
         .growthRate = GROWTH_SLOW,                          \
         .eggGroups = { EGG_GROUP_GRASS, EGG_GROUP_GRASS},   \
-        .bodyColor = BODY_COLOR_YELLOW,                     \
+        .bodyColor = BODY_COLOR_BROWN,                     \
         .noFlip = FALSE
 
 #define EXEGGUTOR_SP_DEF (P_UPDATED_STATS >= GEN_7 ? 75 : 65)

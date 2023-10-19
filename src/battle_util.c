@@ -405,7 +405,6 @@ bool32 TryRunFromBattle(u32 battler)
 {
     bool32 effect = FALSE;
     u8 holdEffect;
-    u8 pyramidMultiplier;
     u8 speedVar;
 
     // If this flag is set, running will never be successful under any circumstances.

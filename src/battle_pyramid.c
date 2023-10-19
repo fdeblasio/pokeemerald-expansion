@@ -883,7 +883,6 @@ static void SetPickupItem(void)
     int rand;
     u8 id;
     u32 lvlMode = gSaveBlock2Ptr->frontier.lvlMode;
-    u32 floor = gSaveBlock2Ptr->frontier.curChallengeBattleNum;
     u32 round = (gSaveBlock2Ptr->frontier.pyramidWinStreaks[lvlMode] / FRONTIER_STAGES_PER_CHALLENGE) % TOTAL_PYRAMID_ROUNDS;
 
     if (round >= TOTAL_PYRAMID_ROUNDS)

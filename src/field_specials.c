@@ -3120,8 +3120,6 @@ static const u8 sDeoxysRockCoords[DEOXYS_ROCK_LEVELS][2] = {
 
 static void Task_DeoxysRockInteraction(u8 taskId)
 {
-    static const u8 sStoneMaxStepCounts[DEOXYS_ROCK_LEVELS - 1] = { 4, 8, 8, 8, 4, 4, 4, 6, 3, 3 };
-
     if (FlagGet(FLAG_DEOXYS_ROCK_COMPLETE) == TRUE)
     {
         gSpecialVar_Result = DEOXYS_ROCK_COMPLETE;
@@ -3131,7 +3129,6 @@ static void Task_DeoxysRockInteraction(u8 taskId)
     else
     {
         u16 rockLevel = VarGet(VAR_DEOXYS_ROCK_LEVEL);
-        u16 stepCount = VarGet(VAR_DEOXYS_ROCK_STEP_COUNT);
 
         VarSet(VAR_DEOXYS_ROCK_STEP_COUNT, 0);
 

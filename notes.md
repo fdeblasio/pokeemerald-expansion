@@ -25,7 +25,7 @@ upcoming
     - Shows evolutions multiple times
     - Dark mode not implemented
 - Move relearner option in menu sometimes selects different Pokémon when finished
-- gBattleTextBuff3 causes the build to fail unless reverted from TEXT_BUFF_ARRAY_COUNT + 13 to 30
+- gBattleTextBuff3 causes the build to fail unless reverted from `TEXT_BUFF_ARRAY_COUNT + 13` to `30`
 
 ## To Do:
 - Update teachable moves to match Indigo Disk
@@ -48,7 +48,7 @@ upcoming
     - See if it's possible to give item PC and decoration PC have more room
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Include charms?
-- Remove all PP Ups/Maxes (including Pickup) due to moves having max PP by default
+- Remove all PP Ups/Maxes due to moves having max PP by default
 - Double-check Mirage Island
 - Combine changes and README?
     Include more changes, even if general like Battle Frontier edits
@@ -65,7 +65,6 @@ upcoming
 - Overworld sprites to match trainer sprites (for example, giving Youngsters yellow shirts, girl tubers a yellow tube, Rangers red clothes, Dragon Tamers capes and correct hair color)
 - Improve Pokémon overworld sprites
 - Try to find Bolts foreground of Walda PC
-- Some MAN_2's maybe could be switched to DEVON_EMPLOYEE
 - Debug menu improvements
 - Battle Tent Pokémon/EVs?
 - Edit friendship evolution methods
@@ -81,12 +80,12 @@ upcoming
 - Elite Four rematches (wouldn't need to use Match Call, could probably do if statement in scripts.inc)
 - Replace ifdefs for move stats with just one set of stats?
 - Add EXP Candy
-- Improve B-canceling moves
 - Go back and make rematch levels stronger/more consistent (first see if they can be locked behind badges)
 - Type effectiveness in battle
 - PC in menu (look at debug menu)
 - TM Case?
 - Get PokeNav to work indoors?
+    - Stop trainers from calling you shortly after loading the game
 - Edit rest out mass outbreaks
     - Maractus/Sandile in Route 111? Would be first time expanding past Gens 1-3 + evos
 - Edit contests?

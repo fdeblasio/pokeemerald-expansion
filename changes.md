@@ -50,6 +50,8 @@
 - Faster walking speed
 - Can now use Soot Sack to see how much ash you have
 
+## Abilities:
+- Iron Fist: Punching moves are now boosted by 30% (up from 20%) to match Sheer Force and Tough Claws
 
 ## Moves:
 - Double Slap:
@@ -378,6 +380,18 @@
 - Noctowl:
     - Learns Skill Swap by TM (Teal Mask addition)
 
+- Ledyba:
+    - Atk: 20->40
+
+- Ledian:
+    - Atk: 35->55
+
+- Spinarak:
+    - Spe: 30->40
+
+- Ariados:
+    - Spe: 40->50
+
 - Togepi (not in main game):
     - Can also evolve at level 16
 
@@ -412,6 +426,7 @@
     - Learns Swift by move tutor
 
 - Granbull (not in main game):
+    - Learns Psychic Fangs by TM
     - Hidden Ability: Rattled->Strong Jaw
 
 - Qwilfish/Hisuian Qwilfish/Overqwil (not in main game):

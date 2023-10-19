@@ -14,6 +14,7 @@ upcoming
 ```
 
 ## Known Bugs
+- #000 ?????????? sometimes shows up at the end of the Pokédex
 - When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
 - Items in the Battle Pyramid's Battle Bag/held items in the Battle Pike are turning into Poke Balls
     - Seems to happen after trainer battles?
@@ -95,7 +96,6 @@ upcoming
 - Pokémon in Frontier/Trainer Hill should be registered in Dex
 - Update Shiftry's Hidden Ability to Wind Rider
 - Add accurate overworld sprites (https://github.com/pret/pokeemerald/wiki/Adding-new-event-object-or-overworld-sprites, https://www.pokecommunity.com/showthread.php?t=407124)
-- Figure out ?????? showing up at end of Dex
 - DON'T USE DEBUG MENU FOR FLYING. Test to see if without it, Fly Flags are set correctly
     - Maybe use makeshift version of it (without setting all flags) in Start menu to Fly without needing a Pokémon who knows it (no badge requirements)
         - Fly to routes?

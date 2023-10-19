@@ -30,6 +30,7 @@
 - Houndour was added to the Hoenn dex to give Team Magma more variety
 - Frontier Brains have updated teams
 - Battle Pyramid wild Pokémon have been updated
+- Pokémon can now be listed as orange in the Pokédex
 
 **Quality of life changes thanks to tutorials (credit in README.md):**
 - You can nickname and relearn moves from the party menu

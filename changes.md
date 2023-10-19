@@ -261,6 +261,10 @@
 - Gastly/Haunter/Gengar (not in main game):
     - Type: Ghost/Poison->Ghost
 
+- Alolan Exeggutor (not in main game):
+    - Atk: 105->125
+    - SpA: 125->105
+
 - Doduo/Dodrio:
     - Get Aerial Ace instead of Wing Attack at level 15 due to not having wings
 

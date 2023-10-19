@@ -17880,6 +17880,7 @@ static const u16 sGranbullTeachableLearnset[] = {
     MOVE_PLAY_ROUGH,
     MOVE_PRESENT,
     MOVE_PROTECT,
+    MOVE_PSYCHIC_FANGS,
     MOVE_RAGE,
     MOVE_RAIN_DANCE,
     MOVE_REFLECT,

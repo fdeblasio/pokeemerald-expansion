@@ -19,7 +19,6 @@ LilycoveCity_DepartmentStore_3F_Pokemart_Vitamins:
 	.2byte ITEM_IRON
 	.2byte ITEM_ZINC
 	.2byte ITEM_CARBOS
-	.2byte ITEM_PP_UP
 	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_ABILITY_PATCH
 	.2byte ITEM_POMEG_BERRY

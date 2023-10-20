@@ -33,7 +33,7 @@ static const struct TrainerMon sParty_GruntAquaHideout3[] = {
 static const struct TrainerMon sParty_GruntAquaHideout4[] = {
     {
     .lvl = 37,
-    .species = SPECIES_CLAMPERL,
+    .species = SPECIES_CARVANHA,
     }
 };
 
@@ -9628,7 +9628,7 @@ static const struct TrainerMon sParty_Deandre[] = {
 static const struct TrainerMon sParty_GruntMagmaHideout1[] = {
     {
     .lvl = 36,
-    .species = SPECIES_TORKOAL,
+    .species = SPECIES_GOLETT,
     }
 };
 
@@ -9653,7 +9653,7 @@ static const struct TrainerMon sParty_GruntMagmaHideout4[] = {
     },
     {
     .lvl = 35,
-    .species = SPECIES_SLUGMA,
+    .species = SPECIES_CUBONE,
     }
 };
 
@@ -9664,7 +9664,7 @@ static const struct TrainerMon sParty_GruntMagmaHideout5[] = {
     },
     {
     .lvl = 35,
-    .species = SPECIES_HOUNDOUR,
+    .species = SPECIES_GLIGAR,
     }
 };
 
@@ -9685,7 +9685,7 @@ static const struct TrainerMon sParty_GruntMagmaHideout7[] = {
 static const struct TrainerMon sParty_GruntMagmaHideout8[] = {
     {
     .lvl = 36,
-    .species = SPECIES_HOUNDOUR,
+    .species = SPECIES_VIBRAVA,
     }
 };
 
@@ -9720,28 +9720,28 @@ static const struct TrainerMon sParty_GruntMagmaHideout12[] = {
 static const struct TrainerMon sParty_GruntMagmaHideout13[] = {
     {
     .lvl = 36,
-    .species = SPECIES_SLUGMA,
+    .species = SPECIES_DRILBUR,
     }
 };
 
 static const struct TrainerMon sParty_GruntMagmaHideout14[] = {
     {
     .lvl = 36,
-    .species = SPECIES_VULPIX,
+    .species = SPECIES_DRILBUR,
     }
 };
 
 static const struct TrainerMon sParty_GruntMagmaHideout15[] = {
     {
     .lvl = 36,
-    .species = SPECIES_VULPIX,
+    .species = SPECIES_TRAPINCH,
     }
 };
 
 static const struct TrainerMon sParty_GruntMagmaHideout16[] = {
     {
     .lvl = 36,
-    .species = SPECIES_VULPIX,
+    .species = SPECIES_PHANPY,
     }
 };
 

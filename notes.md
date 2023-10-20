@@ -26,6 +26,7 @@ upcoming
     - Shows evolutions multiple times
     - Dark mode not implemented
 - Move relearner option in menu sometimes selects different Pokémon when finished
+- Contest Lady thinks you already helped her when you first talk to her
 - gBattleTextBuff3 causes the build to fail unless reverted from `TEXT_BUFF_ARRAY_COUNT + 13` to `30`
 
 ## To Do:

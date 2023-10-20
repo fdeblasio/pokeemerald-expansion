@@ -391,7 +391,7 @@ MeteorFalls_1F_1R_EventScript_ItemMoonStone::
 	end
 
 MeteorFalls_1F_1R_EventScript_ItemDragonScale::
-	finditem ITEM_DRAGON_SCALE
+	finditem ITEM_DRAGON_FANG
 	end
 
 MeteorFalls_B1F_2R_EventScript_ItemTMDragonClaw::
@@ -647,7 +647,7 @@ MagmaHideout_3F_1R_EventScript_ItemNugget::
 	end
 
 MagmaHideout_3F_2R_EventScript_ItemProtector::
-	finditem ITEM_PROTECTOR
+	finditem ITEM_HEAVY_BALL
 	end
 
 MagmaHideout_4F_EventScript_ItemMaxRevive::

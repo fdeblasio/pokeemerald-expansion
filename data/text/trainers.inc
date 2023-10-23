@@ -3798,7 +3798,7 @@ Route125_Text_StanDefeat:
 	.string "I floundered…$"
 
 Route125_Text_StanPostBattle:
-	.string "I was blown away by Horsea's charm,\n"
+	.string "I was blown away by Wailmer's charm,\n"
 	.string "so I started swimming, too.$"
 
 Route125_Text_TanyaIntro:
@@ -3875,14 +3875,14 @@ Route125_Text_KimNotEnoughMons:
 	.string "or it's just no good!$"
 
 Route125_Text_IrisIntro:
-	.string "Iris: Kim, can you tell me what we're\n"
+	.string "Iris: Lia, can you tell me what we're\n"
 	.string "looking for out here?$"
 
 Route125_Text_IrisDefeat:
 	.string "Iris: Oh, we came sort of close.$"
 
 Route125_Text_IrisPostBattle:
-	.string "Iris: Kim, are we really going into\n"
+	.string "Iris: Lia, are we really going into\n"
 	.string "the Shoal Cave?\l"
 	.string "We'll get all wet.$"
 

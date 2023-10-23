@@ -3900,22 +3900,22 @@
               {
                 "min_level": 40,
                 "max_level": 42,
-                "species": "SPECIES_CHINCHOU"
+                "species": "SPECIES_LANTURN"
               },
               {
                 "min_level": 40,
                 "max_level": 42,
-                "species": "SPECIES_WAILMER"
+                "species": "SPECIES_WAILORD"
               },
               {
                 "min_level": 40,
                 "max_level": 42,
-                "species": "SPECIES_LUVDISC"
+                "species": "SPECIES_LANTURN"
               },
               {
                 "min_level": 40,
                 "max_level": 42,
-                "species": "SPECIES_CORSOLA"
+                "species": "SPECIES_WAILORD"
               }
             ]
           }
@@ -6798,22 +6798,22 @@
               {
                 "min_level": 40,
                 "max_level": 42,
-                "species": "SPECIES_CHINCHOU"
+                "species": "SPECIES_LANTURN"
               },
               {
                 "min_level": 40,
                 "max_level": 42,
-                "species": "SPECIES_WAILMER"
+                "species": "SPECIES_WAILORD"
               },
               {
                 "min_level": 40,
                 "max_level": 42,
-                "species": "SPECIES_LUVDISC"
+                "species": "SPECIES_LANTURN"
               },
               {
                 "min_level": 40,
                 "max_level": 42,
-                "species": "SPECIES_CORSOLA"
+                "species": "SPECIES_WAILORD"
               }
             ]
           }

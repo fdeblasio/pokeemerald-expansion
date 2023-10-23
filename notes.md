@@ -51,6 +51,8 @@ upcoming
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Include charms?
 - Remove all PP Ups/Maxes due to moves having max PP by default
+- Readjust wild/trainer levels so that parties aren't overpowered
+    - Bring important Trainers up to ORAS levels?
 - Double-check Mirage Island
 - Combine changes and README?
     Include more changes, even if general like Battle Frontier edits
@@ -134,7 +136,6 @@ upcoming
 - Check that Mossdeep swimmer flag works
 - In game trades
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
-- Bring important Trainers up to ORAS levels?
 - Magmortar Flash Fire?
 - Cherrim (what does this mean?)
 - Find way to get Hypnosis to always hit if Hypno is using it?

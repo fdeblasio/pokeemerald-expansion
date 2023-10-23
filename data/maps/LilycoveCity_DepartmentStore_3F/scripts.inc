@@ -62,6 +62,7 @@ LilycoveCity_DepartmentStore_3F_Pokemart_Evo:
 	.2byte ITEM_MOON_STONE
 	.2byte ITEM_SHINY_STONE
 	.2byte ITEM_DAWN_STONE
+	.2byte ITEM_DUSK_STONE
 	.2byte ITEM_LINKING_CORD
 	.2byte ITEM_METAL_COAT
 	.2byte ITEM_RAZOR_FANG

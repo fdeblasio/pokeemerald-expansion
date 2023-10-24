@@ -255,6 +255,9 @@
 - Golbat:
     - Can also evolve at level 33
 
+- Machamp:
+    - Learns Drain Punch by TM
+
 - Golem:
     - Learns Body Press by TM (Teal Mask addition)
 
@@ -267,6 +270,9 @@
 - Alolan Exeggutor (not in main game):
     - Atk: 105->125
     - SpA: 125->105
+
+- Sirfetch'd (not in main game):
+    - Learns Drain Punch by TM
 
 - Doduo/Dodrio:
     - Get Aerial Ace instead of Wing Attack at level 15 due to not having wings
@@ -457,14 +463,21 @@
 - Lugia:
     - Learns Brave Bird by level up
 
-- Treecko/Torchic/Mudkip:
+- Treecko:
     - Swapped level 3 and 6 moves to make first rival battle easier
 
 - Sceptile:
     - Learns Leaf Blade upon evolving
 
+- Torchic:
+    - Swapped level 3 and 6 moves to make first rival battle easier
+
 - Blaziken:
     - Learns Blaze Kick upon evolving
+    - Learns Drain Punch by TM
+
+- Mudkip:
+    - Swapped level 3 and 6 moves to make first rival battle easier
 
 - Mightyena:
     - Learns Psychic Fangs by TM (Teal Mask addition)

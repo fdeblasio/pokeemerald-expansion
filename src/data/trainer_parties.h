@@ -9315,11 +9315,11 @@ static const struct TrainerMon sParty_JohnAndJay5[] = {
 static const struct TrainerMon sParty_ReliAndIan[] = {
     {
     .lvl = 42,
-    .species = SPECIES_BLASTOISE,
+    .species = SPECIES_CARRACOSTA,
     },
     {
     .lvl = 40,
-    .species = SPECIES_CARRACOSTA,
+    .species = SPECIES_BLASTOISE,
     }
 };
 

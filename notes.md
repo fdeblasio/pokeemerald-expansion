@@ -54,6 +54,7 @@ upcoming
 - Readjust wild/trainer levels so that parties aren't overpowered
     - Bring important Trainers up to ORAS levels?
 - Double-check Mirage Island
+- Railroad the water routes
 - Combine changes and README?
     Include more changes, even if general like Battle Frontier edits
 - Might need to increase MAX_LEVEL_UP_MOVES and/or MAX_RELEARNER_MOVES

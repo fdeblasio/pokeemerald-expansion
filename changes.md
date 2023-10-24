@@ -31,6 +31,7 @@
 - Frontier Brains have updated teams
 - Battle Pyramid wild Pokémon have been updated
 - Pokémon can now be listed as orange in the Pokédex
+- Underwater areas now connect better
 
 **Quality of life changes thanks to tutorials (credit in README.md):**
 - You can nickname and relearn moves from the party menu

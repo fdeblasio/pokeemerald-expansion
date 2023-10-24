@@ -109,10 +109,11 @@
 #define TRAINER_PIC_PYRAMID_KING_BRANDON  89
 #define TRAINER_PIC_RED                   90
 #define TRAINER_PIC_LEAF                  91
-#define TRAINER_PIC_ROCKER                92
-#define TRAINER_PIC_RS_BRENDAN            93
-#define TRAINER_PIC_RS_MAY                94
-#define TRAINER_PIC_FRANK                 95
+#define TRAINER_PIC_RS_BRENDAN            92
+#define TRAINER_PIC_RS_MAY                93
+#define TRAINER_PIC_FRANK                 94
+#define TRAINER_PIC_ROCKER                95
+#define TRAINER_PIC_COOL_COUPLE           96
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0

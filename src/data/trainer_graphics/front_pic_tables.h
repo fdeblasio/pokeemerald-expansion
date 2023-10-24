@@ -92,10 +92,11 @@ const struct MonCoords gTrainerFrontPicCoords[] =
     [TRAINER_PIC_PYRAMID_KING_BRANDON] = {.size = 8, .y_offset = 1},
     [TRAINER_PIC_RED] = {.size = 8, .y_offset = 1},
     [TRAINER_PIC_LEAF] = {.size = 8, .y_offset = 1},
-    [TRAINER_PIC_ROCKER] = {.size = 8, .y_offset = 1},
     [TRAINER_PIC_RS_BRENDAN] = {.size = 8, .y_offset = 1},
     [TRAINER_PIC_RS_MAY] = {.size = 8, .y_offset = 1},
     [TRAINER_PIC_FRANK] = {.size = 8, .y_offset = 1},
+    [TRAINER_PIC_ROCKER] = {.size = 8, .y_offset = 1},
+    [TRAINER_PIC_COOL_COUPLE] = {.size = 8, .y_offset = 2},
 };
 
 #define TRAINER_SPRITE(trainerPic, sprite, size) [TRAINER_PIC_##trainerPic] = {sprite, size, TRAINER_PIC_##trainerPic}
@@ -194,10 +195,11 @@ const struct CompressedSpriteSheet gTrainerFrontPicTable[] =
     TRAINER_SPRITE(PYRAMID_KING_BRANDON, gTrainerFrontPic_PyramidKingBrandon, TRAINER_PIC_SIZE),
     TRAINER_SPRITE(RED, gTrainerFrontPic_Red, TRAINER_PIC_SIZE),
     TRAINER_SPRITE(LEAF, gTrainerFrontPic_Leaf, TRAINER_PIC_SIZE),
-    TRAINER_SPRITE(ROCKER, gTrainerFrontPic_Rocker, TRAINER_PIC_SIZE),
     TRAINER_SPRITE(RS_BRENDAN, gTrainerFrontPic_RubySapphireBrendan, TRAINER_PIC_SIZE),
     TRAINER_SPRITE(RS_MAY, gTrainerFrontPic_RubySapphireMay, TRAINER_PIC_SIZE),
     TRAINER_SPRITE(FRANK, gTrainerFrontPic_Frank, TRAINER_PIC_SIZE),
+    TRAINER_SPRITE(ROCKER, gTrainerFrontPic_Rocker, TRAINER_PIC_SIZE),
+    TRAINER_SPRITE(COOL_COUPLE, gTrainerFrontPic_CoolCouple, TRAINER_PIC_SIZE * 2),
 };
 
 #define TRAINER_PAL(trainerPic, pal) [TRAINER_PIC_##trainerPic] = {pal, TRAINER_PIC_##trainerPic}
@@ -296,8 +298,9 @@ const struct CompressedSpritePalette gTrainerFrontPicPaletteTable[] =
     TRAINER_PAL(PYRAMID_KING_BRANDON, gTrainerPalette_PyramidKingBrandon),
     TRAINER_PAL(RED, gTrainerPalette_Red),
     TRAINER_PAL(LEAF, gTrainerPalette_Leaf),
-    TRAINER_PAL(ROCKER, gTrainerPalette_Rocker),
     TRAINER_PAL(RS_BRENDAN, gTrainerPalette_RubySapphireBrendan),
     TRAINER_PAL(RS_MAY, gTrainerPalette_RubySapphireMay),
     TRAINER_PAL(FRANK, gTrainerPalette_Frank),
+    TRAINER_PAL(ROCKER, gTrainerPalette_Rocker),
+    TRAINER_PAL(COOL_COUPLE, gTrainerPalette_CoolCouple),
 };

@@ -2243,7 +2243,7 @@ MatchCall_Text_Juan2::
 
 MatchCall_Text_Juan3::
 	.string "Juan: Hoho… {PLAYER}{KUN}…\p"
-	.string "Our Sootopolis Gym has finally\n"
+	.string "Our Santorini Gym has finally\n"
 	.string "reopened.\p"
 	.string "If you wish to see me, you are\n"
 	.string "welcome to visit anytime.$"
@@ -2447,7 +2447,7 @@ MatchCall_Text_May13::
 MatchCall_Text_May14::
 	.string "May: {PLAYER}{KUN}!\n"
 	.string "I heard the rumors!\p"
-	.string "You beat the Sootopolis Gym\n"
+	.string "You beat the Santorini Gym\n"
 	.string "Leader?\p"
 	.string "That means you don't have far\n"
 	.string "to go, do you?$"
@@ -2574,7 +2574,7 @@ MatchCall_Text_Brendan13::
 MatchCall_Text_Brendan14::
 	.string "Brendan: {PLAYER}!\n"
 	.string "I heard the rumors!\p"
-	.string "You beat the Sootopolis Gym\n"
+	.string "You beat the Santorini Gym\n"
 	.string "Leader? Awesome!\p"
 	.string "You're getting awful close now!$"
 

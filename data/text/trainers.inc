@@ -3932,14 +3932,14 @@ Route126_Text_BarryPostBattle:
 
 Route126_Text_DeanIntro:
 	.string "This towering white mountain of rock\n"
-	.string "is Sootopolis City.$"
+	.string "is Santorini.$"
 
 Route126_Text_DeanDefeat:
 	.string "I was done in?$"
 
 Route126_Text_DeanPostBattle:
 	.string "I can't find the entrance to\n"
-	.string "Sootopolis. Where could it be?$"
+	.string "Santorini. Where could it be?$"
 
 Route126_Text_NikkiIntro:
 	.string "Ufufufufu!\n"
@@ -4236,7 +4236,7 @@ Route128_Text_WayneDefeat:
 Route128_Text_WaynePostBattle:
 	.string "Awww, phooey!\p"
 	.string "My Pokémon knows Waterfall, but\n"
-	.string "I don't have the Sootopolis Gym Badge!$"
+	.string "I don't have the Santorini Gym Badge!$"
 
 Route128_Text_HarrisonIntro:
 	.string "You're looking awfully tough.\n"

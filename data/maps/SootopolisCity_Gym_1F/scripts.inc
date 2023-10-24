@@ -275,10 +275,10 @@ SootopolisCity_Gym_1F_Text_GoGetFortreeBadge:
 	.string "Badge from the Gym in Fortree.$"
 
 SootopolisCity_Gym_1F_Text_GymStatue:
-	.string "Sootopolis City Pokémon Gym$"
+	.string "Santorini Pokémon Gym$"
 
 SootopolisCity_Gym_1F_Text_GymStatueCertified:
-	.string "Sootopolis City Pokémon Gym\p"
+	.string "Santorini Pokémon Gym\p"
 	.string "Juan's Certified Trainers:\n"
 	.string "{PLAYER}$"
 

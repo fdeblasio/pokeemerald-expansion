@@ -225,7 +225,7 @@ EverGrandeCity_ChampionsRoom_Movement_BirchArrives:
 
 EverGrandeCity_ChampionsRoom_Text_IntroSpeech:
 	.string "Wallace: Welcome, {PLAYER}{KUN}.\p"
-	.string "That incident in Sootopolis City…\n"
+	.string "That incident in Santorini…\n"
 	.string "That was superb work, putting an end\l"
 	.string "to that crisis all by yourself.\p"
 	.string "Oops!\p"

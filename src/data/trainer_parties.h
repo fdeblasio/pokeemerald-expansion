@@ -7821,11 +7821,11 @@ static const struct TrainerMon sParty_GruntSpaceCenter1[] = {
 static const struct TrainerMon sParty_GruntSpaceCenter2[] = {
     {
     .lvl = 40,
-    .species = SPECIES_HOUNDOUR,
+    .species = SPECIES_GLIGAR,
     },
     {
     .lvl = 40,
-    .species = SPECIES_VULPIX,
+    .species = SPECIES_DRILBUR,
     }
 };
 
@@ -7839,21 +7839,21 @@ static const struct TrainerMon sParty_GruntSpaceCenter3[] = {
 static const struct TrainerMon sParty_GruntSpaceCenter4[] = {
     {
     .lvl = 41,
-    .species = SPECIES_MAGCARGO,
+    .species = SPECIES_VIBRAVA,
     }
 };
 
 static const struct TrainerMon sParty_GruntSpaceCenter5[] = {
     {
     .lvl = 41,
-    .species = SPECIES_TORKOAL,
+    .species = SPECIES_CLAYDOL,
     }
 };
 
 static const struct TrainerMon sParty_GruntSpaceCenter6[] = {
     {
     .lvl = 41,
-    .species = SPECIES_CLAYDOL,
+    .species = SPECIES_TORTERRA,
     }
 };
 

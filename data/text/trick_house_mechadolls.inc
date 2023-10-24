@@ -1,11 +1,11 @@
 gTrickHouse_Mechadoll_Taillow::
-	.string "Taillow$"
+	.string "Pidgey$"
 
 gTrickHouse_Mechadoll_Poochyena::
-	.string "Poochyena$"
+	.string "Spritzee$"
 
 gTrickHouse_Mechadoll_Oddish::
-	.string "Oddish$"
+	.string "Drifloon$"
 
 gTrickHouse_Mechadoll_Hariyama::
 	.string "Hariyama$"
@@ -17,13 +17,13 @@ gTrickHouse_Mechadoll_Wingull::
 	.string "Wingull$"
 
 gTrickHouse_Mechadoll_Wurmple::
-	.string "Wurmple$"
+	.string "Heracross$"
 
 gTrickHouse_Mechadoll_Zubat::
-	.string "Zubat$"
+	.string "Sandshrew$"
 
 gTrickHouse_Mechadoll_Nincada::
-	.string "Nincada$"
+	.string "Ariados$"
 
 gTrickHouse_Mechadoll_Ralts::
 	.string "Ralts$"
@@ -32,7 +32,7 @@ gTrickHouse_Mechadoll_Zigzagoon::
 	.string "Zigzagoon$"
 
 gTrickHouse_Mechadoll_Slakoth::
-	.string "Slakoth$"
+	.string "Munchlax$"
 
 gTrickHouse_Mechadoll_Zigzagoon2::
 	.string "Zigzagoon$"
@@ -47,7 +47,7 @@ gTrickHouse_Mechadoll_Carvanha::
 	.string "Carvanha$"
 
 gTrickHouse_Mechadoll_Zubat2::
-	.string "Zubat$"
+	.string "Wailmer$"
 
 gTrickHouse_Mechadoll_Poochyena3::
 	.string "Poochyena$"

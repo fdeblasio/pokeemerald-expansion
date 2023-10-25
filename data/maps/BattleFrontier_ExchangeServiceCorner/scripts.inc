@@ -321,13 +321,12 @@ BattleFrontier_Mart_HoldItemVitamin:
 	.2byte ITEM_FOCUS_BAND
 	.2byte ITEM_FOCUS_SASH
 	.2byte ITEM_GRIP_CLAW
+	.2byte ITEM_HP_UP
 	.2byte ITEM_PROTEIN
 	.2byte ITEM_CALCIUM
 	.2byte ITEM_IRON
 	.2byte ITEM_ZINC
 	.2byte ITEM_CARBOS
-	.2byte ITEM_HP_UP
-	.2byte ITEM_PP_MAX
 	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_ABILITY_PATCH
 	.2byte ITEM_NONE

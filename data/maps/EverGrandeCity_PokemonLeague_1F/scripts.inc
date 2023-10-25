@@ -52,7 +52,6 @@ EverGrandeCity_PokemonLeague_1F_Max:
 	.2byte ITEM_FULL_RESTORE
 	.2byte ITEM_MAX_REVIVE
 	.2byte ITEM_MAX_ELIXIR
-	.2byte ITEM_PP_MAX
 	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_ABILITY_PATCH
 	.2byte ITEM_NONE

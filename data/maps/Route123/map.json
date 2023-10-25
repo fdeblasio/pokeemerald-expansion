@@ -812,8 +812,8 @@
       "x": 139,
       "y": 15,
       "elevation": 3,
-      "item": "ITEM_PP_UP",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_123_PP_UP"
+      "item": "ITEM_EXP_CANDY_L",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_123_EXP_CANDY_L"
     },
     {
       "type": "hidden_item",

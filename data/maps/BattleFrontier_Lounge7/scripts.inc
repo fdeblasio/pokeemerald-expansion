@@ -187,7 +187,7 @@ BattleFrontier_Lounge7_EventScript_IronDefense::
 	end
 
 BattleFrontier_Lounge7_EventScript_NastyPlot::
-	setvar VAR_0x8005, MOVE_NASTY_PLOT
+	setvar VAR_0x8005, MOVE_HYPER_VOICE
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 

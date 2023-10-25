@@ -75,7 +75,7 @@
     F(STONE_EDGE) \
     F(AVALANCHE) \
     F(THUNDER_WAVE) \
-    F(GYRO_BALL) \
+    F(NASTY_PLOT) \
     F(SWORDS_DANCE) \
     F(STEALTH_ROCK) \
     F(PSYCH_UP) \

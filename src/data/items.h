@@ -10261,7 +10261,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_GYRO_BALL
+        .secondaryId = MOVE_NASTY_PLOT
     },
 
     [ITEM_TM75] =

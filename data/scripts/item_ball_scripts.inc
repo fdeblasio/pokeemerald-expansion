@@ -7,11 +7,11 @@ Route103_EventScript_ItemGuardSpec::
 	end
 
 Route103_EventScript_ItemPPUp::
-	finditem ITEM_PP_UP
+	finditem ITEM_EXP_CANDY_S
 	end
 
 Route104_EventScript_ItemPPUp::
-	finditem ITEM_PP_UP
+	finditem ITEM_EXP_CANDY_M
 	end
 
 Route104_EventScript_ItemPokeBall::
@@ -39,7 +39,7 @@ Route108_EventScript_ItemStarPiece::
 	end
 
 Route109_EventScript_ItemPPUp::
-	finditem ITEM_PP_UP
+	finditem ITEM_EXP_CANDY_M
 	end
 
 Route109_EventScript_ItemPotion::
@@ -607,7 +607,7 @@ VictoryRoad_1F_EventScript_ItemMaxElixir::
 	end
 
 VictoryRoad_1F_EventScript_ItemPPUp::
-	finditem ITEM_PP_UP
+	finditem ITEM_EXP_CANDY_XL
 	end
 
 VictoryRoad_B1F_EventScript_ItemTMFocusBlast::

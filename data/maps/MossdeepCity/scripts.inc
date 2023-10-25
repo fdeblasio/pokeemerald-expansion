@@ -438,7 +438,7 @@ MossdeepCity_Text_SootopolisNewGymLeader:
 	.string "Ahh… It feels great letting the waves\n"
 	.string "wash over my feet…\p"
 	.string "Speaking of the waves, you know that\n"
-	.string "island city Sootopolis?\p"
+	.string "island city Santorini?\p"
 	.string "I think the Gym there had a new\n"
 	.string "Leader come in.$"
 

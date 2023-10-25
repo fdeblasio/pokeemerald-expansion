@@ -178,7 +178,7 @@ SootopolisCity_Gym_1F_EventScript_GymStatue::
 SootopolisCity_Gym_1F_Text_GymGuideAdvice:
 	.string "Yo! How's it going, Champion-\n"
 	.string "bound {PLAYER}?\p"
-	.string "Sootopolis's Gym Leader Juan is\n"
+	.string "Santorini's Gym Leader Juan is\n"
 	.string "a master of Water-type Pokémon.\p"
 	.string "And, to get to Juan, an icy floor\n"
 	.string "will hamper your progress…\p"

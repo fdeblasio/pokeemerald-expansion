@@ -1406,13 +1406,13 @@ SootopolisCity_Movement_DestroyTask::
 
 SootopolisCity_Text_GymSign:
 	.string "Santorini Pokémon Gym\n"
-	.string "Leader: Juan\p"
-	.string "“The Gym Leader with the beauty\n"
-	.string "of pure water!”$"
+	.string "Leader: Eric\p"
+	.string "“The Gym Leader with the charm\n"
+	.string "of pure poison!”$"
 
 SootopolisCity_Text_CitySign:
-	.string "Santorini City\p"
-	.string "“The mystical city where history\n"
+	.string "Santorini\p"
+	.string "“The mystical island where history\n"
 	.string "slumbers.”$"
 
 SootopolisCity_Text_DoorIsClosed:
@@ -1518,7 +1518,7 @@ SootopolisCity_Text_SootopolisDidntGetWrecked:
 
 SootopolisCity_Text_NoOrdinaryTourist:
 	.string "Hm!\n"
-	.string "You've come all the way to Sootopolis?\l"
+	.string "You've come all the way to Santorini?\l"
 	.string "You're no ordinary tourist.\p"
 	.string "But I suppose that doesn't make you\n"
 	.string "an extraordinary tourist, either.$"

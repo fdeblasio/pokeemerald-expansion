@@ -317,34 +317,34 @@
 - Smoochum (not in main game):
     - Catch rate: 45->150
 
-- Elekid (not in main game):
+- Elekid (postgame):
     - Atk: 63->65
     - Def: 37->40
     - SpA: 65->70
     - Catch rate: 45->150
     - Learns Electric Terrain by level up
 
-- Electabuzz (not in main game):
+- Electabuzz (postgame):
     - Atk: 83->85
     - Def: 57->60
     - SpA: 95->100
     - Learns Electric Terrain by level up
 
-- Electivire (not in main game):
+- Electivire (postgame):
     - Atk: 123->125
     - Def: 67->70
     - SpA: 95->100
 
-- Magby (not in main game):
+- Magby (postgame):
     - Def: 37->40
     - Spe: 83->85
     - Catch rate: 45->150
 
-- Magmar (not in main game):
+- Magmar (postgame):
     - Def: 57->60
     - Spe: 93->95
 
-- Magmortar (not in main game):
+- Magmortar (postgame):
     - Atk: 95->100
     - Def: 67->70
     - Spe: 83->85
@@ -361,7 +361,7 @@
     - Now evolves into Umbreon with a Moon Stone
     - Now evolves into Sylveon with a Dawn Stone
 
-- Aerodactyl:
+- Aerodactyl (postgame):
     - Learns Double-Edge, Head Smash, and Brave Bird by level up
 
 - Munchlax (not in main game):
@@ -385,19 +385,19 @@
 - Crocnaw (not in main game):
     - Evolution: 30->36
 
-- Noctowl:
+- Noctowl (postgame):
     - Learns Skill Swap by TM (Teal Mask addition)
 
-- Ledyba:
+- Ledyba (postgame):
     - Atk: 20->40
 
-- Ledian:
+- Ledian (postgame):
     - Atk: 35->55
 
-- Spinarak:
+- Spinarak (postgame):
     - Spe: 30->40
 
-- Ariados:
+- Ariados (postgame):
     - Spe: 40->50
 
 - Togepi (not in main game):
@@ -426,14 +426,14 @@
 - Misdreavus/Mismagius (not in main game):
     - Gender Ratio: 50/50->25/75
 
-- Gligar/Gliscor:
+- Gligar/Gliscor (postgame):
     - Learn Crunch and Psychic Fangs by TM (Teal Mask addition)
     - Learn Dual Wingbeat and Lunge by move tutor (Teal Mask addition)
 
 - Dunsparce (not in main game):
     - Learns Swift by move tutor
 
-- Granbull (not in main game):
+- Granbull (postgame):
     - Learns Psychic Fangs by TM
     - Hidden Ability: Rattled->Strong Jaw
 

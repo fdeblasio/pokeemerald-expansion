@@ -19,7 +19,7 @@ upcoming
 - Items in the Battle Pyramid's Battle Bag/held items in the Battle Pike are turning into Poke Balls
     - Seems to happen after trainer battles?
     - This occurs even with the Battle Frontier changes reverted
-- AI_FLAG_ACE_POKEMON didn't seem to work
+- AI_FLAG_ACE_POKEMON doesn't seem to work
 - Unburden may not work?
 - HGSS Dex (currently disabled):
     - TMs don't line up
@@ -27,15 +27,15 @@ upcoming
     - Dark mode not implemented
 - Move relearner option in menu sometimes selects different Pokémon when finished
 - Contest Lady thinks you already helped her when you first talk to her
+- Battle Tent gives an item right away
+- PokeNav callers think there were 512 wins at the Battle Palace
 - gBattleTextBuff3 causes the build to fail unless reverted from `TEXT_BUFF_ARRAY_COUNT + 13` to `30`
 
 ## To Do:
 - Update teachable moves to match Indigo Disk
     - Figure out a way to mass update of both level up and teachable moves (PoryMoves has slightly different syntax for some forms)
 - Stay on EVs/IVs when switching Pokémon
-- Add Fly to start menu instead?
-- Nasty Plot tutor->TM?
-- Hyper Voice TM? (who even needs Gyro Ball?)
+- Hyper Voice tutor->TM?
 - Edit moves that work in field
     - Maybe edit so instead of "if has move" to "if can learn move"
         - Might not be simple since it's .inc and not C
@@ -50,11 +50,12 @@ upcoming
     - See if it's possible to give item PC and decoration PC have more room
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Include charms?
-- Remove all PP Ups/Maxes due to moves having max PP by default
 - Readjust wild/trainer levels so that parties aren't overpowered
     - Bring important Trainers up to ORAS levels?
 - Double-check Mirage Island
 - Railroad the water routes
+- Add Fly to start menu instead (use modified version of debug menu's flying that doesn't set all flags)?
+        - Fly to routes?
 - Combine changes and README?
     Include more changes, even if general like Battle Frontier edits
 - Might need to increase MAX_LEVEL_UP_MOVES and/or MAX_RELEARNER_MOVES
@@ -67,24 +68,24 @@ upcoming
 - https://github.com/pret/pokeemerald/wiki/Set-Up-Item-Balls-on-a-Map-Without-Needing-New-Scripts
 - https://www.pokecommunity.com/showpost.php?p=10127351&postcount=47
 - https://www.pokecommunity.com/showpost.php?p=10167016&postcount=83
-- Overworld sprites to match trainer sprites (for example, giving Youngsters yellow shirts, girl tubers a yellow tube, Rangers red clothes, Dragon Tamers capes and correct hair color)
+- Add accurate overworld sprites (https://github.com/pret/pokeemerald/wiki/Adding-new-event-object-or-overworld-sprites, https://www.pokecommunity.com/showthread.php?t=407124)
+    - Overworld sprites to match trainer sprites (for example, giving Youngsters yellow shirts, girl tubers a yellow tube, Rangers red clothes, Dragon Tamers capes and correct hair color)
 - Improve Pokémon overworld sprites
 - Try to find Bolts foreground of Walda PC
-- Debug menu improvements
-- Battle Tent Pokémon/EVs?
-- Edit friendship evolution methods
 - Get all the weird Mauville men at once?
 - Update Favor Lady's items to include new items
 - Implement Deoxys encounter at island/changing forms at Fallarbor
 - Give Espeon Power Gem on level up or evolution?
-- Edit Slot odds (SLOT_MACHINE_)? Even though there's only three prizes?
 - Add Hyper Training
 - Once Mints are implemented, in Lilycove 3F, move X items to left clerk and make right clerk Mints
     - Or move Mints to left too and have left be Chansey, right be Delibird
 - Get rid of low health constant beeping (https://www.pokecommunity.com/showpost.php?p=10246778&postcount=194)
 - Elite Four rematches (wouldn't need to use Match Call, could probably do if statement in scripts.inc)
 - Replace ifdefs for move stats with just one set of stats?
+    - Would likely cause merge conflicts going forward
 - Add EXP Candy
+- Should be able to run from wild Pokémon if it is Digging, Diving, Flying, Bouncing, etc
+    - Even if ability is Shadow Tag/Arena Trap
 - Go back and make rematch levels stronger/more consistent (first see if they can be locked behind badges)
 - Type effectiveness in battle
 - PC in menu (look at debug menu)
@@ -99,10 +100,6 @@ upcoming
 - Remove unused code
 - Pokémon in Frontier/Trainer Hill should be registered in Dex
 - Update Shiftry's Hidden Ability to Wind Rider
-- Add accurate overworld sprites (https://github.com/pret/pokeemerald/wiki/Adding-new-event-object-or-overworld-sprites, https://www.pokecommunity.com/showthread.php?t=407124)
-- DON'T USE DEBUG MENU FOR FLYING. Test to see if without it, Fly Flags are set correctly
-    - Maybe use makeshift version of it (without setting all flags) in Start menu to Fly without needing a Pokémon who knows it (no badge requirements)
-        - Fly to routes?
 - Add Farigiraf to Hoenn Dex once implemented
 - Add Ice Spinner as a TM (and maybe give to Beartic/Mamoswine/other Ice types) once implemented?
     - Alternitavely could have Icicle Crash as a TM/given to more Pokémon since it got updated to have 100% accuracy
@@ -132,29 +129,24 @@ upcoming
         - Could swap out Huntail for Mega Gyarados and only it and Houndoom get items
     - Vito can use TMs
         - Swap Vito with Ace Trainer on 1F near the end?
-- Figure out why PokeNav callers think there were 512 wins at the Battle Palace
-    - Might be related to Battle Tent giving an item right away
 - Check that Mossdeep swimmer flag works
 - In game trades
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
 - Magmortar Flash Fire?
 - Cherrim (what does this mean?)
-- Find way to get Hypnosis to always hit if Hypno is using it?
-- Make Water Veil also up evasion like Sand Veil?
-- Edit max money
-- Should be able to run from wild Pokémon if it is Digging, Diving, Flying, Bouncing, etc
-    - Even if ability is Shadow Tag/Arena Trap
+- Edit max money?
 - Actually go through SS Tidal now that you'll have more bag space
 - Brendan/May/Steven rematches?
-- Add Pokémon with dolls? (Togepi, Smoochum, Clefairy, Lapras, Snorlax, Venusaur, Charizard, Blastoise)
-- Make seperate Dex for post-game (similar to SwSh DLC dexes)?
 - Give Absol/Ceruledge Sharpness?
+- Debug menu improvements
+- Edit friendship evolution methods
 - Add FRLG trainer sprites/overworld sprites
     - Sprites are added but still need to be implemented. Overworld sprites may have duplicates for Pokémon and may need palettes
 - Make inserting trainer sprites easier?
     - Wrapper for src/data/graphics/trainers.h?
 - Contests overhaul
 - Frontier overhaul:
+    - Battle Tent Pokémon/EVs?
     - Pokémon
         - EVs
         - Moves
@@ -177,9 +169,14 @@ upcoming
 ### Big changes from Vanilla - low priority
 - Remove IVs? Maybe make boolean for either 0 or 31 added to stat
     - Would need to figure out Hidden Power
+- Add Pokémon with dolls? (Togepi, Smoochum, Clefairy, Lapras, Snorlax, Venusaur, Charizard, Blastoise)
+- Make seperate Dex for post-game similar to SwSh DLC dexes (include Outbreaks like Elekid)?
 - Fire Blast/Hydro Pump/Stone Edge accurate in respective weathers?
     - Make Thunder also accurate in Electric Terrain?
 - Calculate Electro Ball more similarly to Gyro Ball?
+- Make Water Veil also up evasion like Sand Veil?
+- Find way to get Hypnosis to always hit if Hypno is using it?
+- Edit Slot odds (SLOT_MACHINE_)? Even though there's only three prizes?
 - Add in Hoenn Dex regionals?
     - Sun/Shiny Stone for Alolan Raichu
     - Alolan Sandshrew/Vulpix at Shoal Cave

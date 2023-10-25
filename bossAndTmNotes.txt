@@ -116,7 +116,7 @@ TM70: Leech Life - Lilycove TM Shop
 TM71: Stone Edge - Lilycove TM Shop
 TM72: Avalanche - Lavaridge TM Shop
 TM73: Thunder Wave - Slateport TM Shop
-TM74: Gyro Ball - Lavaridge TM Shop
+TM74: Nasty Plot - Lavaridge TM Shop
 TM75: Swords Dance - Lavaridge TM Shop
 TM76: Stealth Rock - Lavaridge TM Shop
 TM77: Psych Up - Slateport TM Shop
@@ -179,7 +179,7 @@ Battle Frontier Move Tutors:
         Misty Terrain
         Psychic Terrain
         Iron Defense
-        Nasty Plot
+        Hyper Voice
         Dragon Dance
         Defense Curl
         Endure

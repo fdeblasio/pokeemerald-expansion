@@ -2454,12 +2454,12 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
         gText_EnergyRoot80,
         gText_HealPowder50,
         gText_RevivalHerb300,
+        gText_HPUp1000,
         gText_Protein1000,
         gText_Iron1000,
         gText_Carbos1000,
         gText_Calcium1000,
         gText_Zinc1000,
-        gText_HPUp1000,
         gText_PPUp3000,
         gText_Exit
     },

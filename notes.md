@@ -92,8 +92,7 @@ upcoming
 - TM Case?
 - Get PokeNav to work indoors?
     - Stop trainers from calling you shortly after loading the game
-- Edit rest out mass outbreaks
-    - Maractus/Sandile in Route 111? Would be first time expanding past Gens 1-3 + evos
+- Edit last mass outbreak
 - Edit contests?
 - Stop daycare from deleting moves
 - Add relearning moves to PC?

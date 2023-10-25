@@ -47,6 +47,7 @@ upcoming
 
 ## Tom-specific
 - Make seperate sprite for "Mega" Torterra, even if it's just a slightly bigger version of the regular sprite
+- Replace Elekid and Tangela mass outbreaks
 - Add postgame legendaries/Safari Zone to Hoenn Dex? National Dex is useless due to no connectivity with other games
     - This could actually be applied to the main game too
 

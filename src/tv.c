@@ -213,16 +213,16 @@ static const struct {
         .location = MAP_NUM(ROUTE113),
     },
     {
-        .species = SPECIES_SKITTY,
-        .moves = {MOVE_COSMIC_POWER, MOVE_TICKLE, MOVE_ZEN_HEADBUTT, MOVE_WISH},
+        .species = SPECIES_SANDILE,
+        .moves = {MOVE_AQUA_TAIL, MOVE_EARTHQUAKE, MOVE_CRUNCH, MOVE_SPITE},
         .level = 60,
-        .location = MAP_NUM(ROUTE116),
+        .location = MAP_NUM(ROUTE111),
     },
     {
         .species = SPECIES_TANGELA,
         .moves = {MOVE_NATURE_POWER, MOVE_LEECH_SEED, MOVE_AMNESIA, MOVE_CONFUSION},
         .level = 60,
-        .location = MAP_NUM(ROUTE110),
+        .location = MAP_NUM(ROUTE123),
     }
 };
 

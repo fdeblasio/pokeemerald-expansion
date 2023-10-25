@@ -694,10 +694,10 @@
     - Learns Coil by level up
     - Learns Lunge by move tutor
 
-- Sandile:
+- Sandile (postgame):
     - Evolution: 29->25
 
-- Krokorok:
+- Krokorok (postgame):
     - Evolution: 40->38
 
 - Darumaka:

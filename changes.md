@@ -22,17 +22,20 @@
 - Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room
     - The door to Sealed Chamber and the Regis' inner rooms are now automatically open
 - Made rapids easier to navigate so that only one trip is needed to get all items/battle all trainers (at the cost of looking slightly worse)
-- Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)
 - All moves automatically have their max PP amount
 - Sacred Ash now works in battles although it only revives one Pokémon
 - Pokémon that evolve with an item at day or night now can evolve at any time
 - EVs now give one stat increase for every EV but cap out at 63 (individual)/127 (total)
+- Vitamins are cheaper
+- Ability Capsules, Ability Patches, and EV-reducing berries are available to buy in Lilycove (Bottle Caps and Mints not yet implemented)
 - Houndour was added to the Hoenn dex to give Team Magma more variety
 - Frontier Brains have updated teams
 - Battle Pyramid wild Pokémon have been updated
 - Pokémon can now be listed as orange in the Pokédex
 - Underwater areas now connect better
 - Mirage Island should appear every other day (might need fixing)
+- Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)
+- Tickets for islands where Latios, Latias, Deoxys, Lugia, Ho-Oh, and Mew reside are given after beating the Elite Four
 
 **Quality of life changes thanks to tutorials (credit in README.md):**
 - You can nickname and relearn moves from the party menu

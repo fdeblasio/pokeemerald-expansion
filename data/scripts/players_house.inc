@@ -441,12 +441,8 @@ PlayersHouse_1F_EventScript_GetSSTicketAndSeeLatiTV::
 	giveitem ITEM_SS_TICKET
 	giveitem ITEM_EON_TICKET
 	setflag FLAG_ENABLE_SHIP_SOUTHERN_ISLAND
-	giveitem ITEM_MYSTIC_TICKET
-	setflag FLAG_ENABLE_SHIP_NAVEL_ROCK
 	giveitem ITEM_AURORA_TICKET
 	setflag FLAG_ENABLE_SHIP_BIRTH_ISLAND
-	giveitem ITEM_OLD_SEA_MAP
-	setflag FLAG_ENABLE_SHIP_FARAWAY_ISLAND
 	msgbox PlayersHouse_1F_Text_PortsInSlateportLilycove, MSGBOX_DEFAULT
 	closemessage
 	delay 20

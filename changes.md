@@ -14,13 +14,7 @@ In college, I had you list some of your favorite Pokémon and told you I'd make 
 - Some areas made easier to navigate
     - Route 102/103: Path from Littleroot to rival is more direct
 - Safari Zone has been removed
-- Some reversions back to Ruby and Sapphire
-    - Birch is chased by a Poochyena
-    - Some trainers on Routes 104 and 117 go back to their original locations
-- Gym Leaders use more Hoenn Pokémon
-- Gym Leaders and Magma/Aqua Admins/Leaders no longer have underleveled evolutions
 - Pokémon have a more even encounter distribution
-- Tate and Liza give out Psychic instead of Calm Mind
 - Cut, Fly, Strength, Flash, Rock Smash, and Dive can now be forgotten
     - Fly can now be used from the Start Menu after getting Mauville's badge
     - Cut, Strength, and Rock Smash no longer need a badge to be used
@@ -48,14 +42,13 @@ In college, I had you list some of your favorite Pokémon and told you I'd make 
 - EVs now give one stat increase for every EV but cap out at 63 (individual)/127 (total)
 - Vitamins are cheaper
 - Ability Capsules, Ability Patches, and EV-reducing berries are available to buy in Lilycove (Bottle Caps and Mints not yet implemented)
-- Houndour was added to the Hoenn Pokédex to give Team Magma more variety
 - Frontier Brains have updated teams
 - Battle Pyramid wild Pokémon have been updated
 - Pokémon can now be listed as orange in the Pokédex
 - Underwater areas now connect better
 - Mirage Island now appears every other day
-- Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)
-- Tickets for islands where Latios, Latias, Deoxys, Lugia, Ho-Oh, and Mew reside are given after beating the Elite Four
+- Steven now gives out a Jirachi (Beldum is now in Meteor Falls where Bagon used to be)
+- Tickets for islands where Latios, Latias, and Deoxys reside are given after beating the Elite Four
     - Latios and Latias no longer roam and instead both show up on Southern Island
     - The Deoxys puzzle is much simpler
 - Battle Frontier no longer requires saving

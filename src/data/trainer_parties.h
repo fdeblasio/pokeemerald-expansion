@@ -130,7 +130,7 @@ static const struct TrainerMon sParty_Ed[] = {
 static const struct TrainerMon sParty_GruntSeafloorCavern4[] = {
     {
     .lvl = 42,
-    .species = SPECIES_SEAKING,
+    .species = SPECIES_LANTURN,
     }
 };
 

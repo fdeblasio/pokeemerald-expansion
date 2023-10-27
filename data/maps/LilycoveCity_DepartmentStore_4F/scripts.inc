@@ -71,6 +71,7 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStones:
 	.2byte ITEM_CAMERUPTITE
 	.2byte ITEM_ALTARIANITE
 	.2byte ITEM_ABSOLITE
+	.2byte ITEM_GLALITITE
 	.2byte ITEM_METAGROSSITE
 	.2byte ITEM_LUCARIONITE
 	.2byte ITEM_AUDINITE

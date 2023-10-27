@@ -45,9 +45,9 @@ upcoming
     - Strength (only in Trick House and Seafloor Cavern):
         - Superpower?
         - Close Combat?
-- More save space editing
-    - Medicine Pocket?
-    - See if it's possible to give item PC and decoration PC have more room
+- EV berries:
+    repeat like Medicine
+    Default choice is Use, not Check Tag
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Include charms?
 - Readjust wild/trainer levels so that parties aren't overpowered
@@ -102,6 +102,9 @@ upcoming
 - Add Farigiraf to Hoenn Dex once implemented
 - Add Ice Spinner as a TM (and maybe give to Beartic/Mamoswine/other Ice types) once implemented?
     - Alternitavely could have Icicle Crash as a TM/given to more Pokémon since it got updated to have 100% accuracy
+- More save space editing
+    - Medicine Pocket?
+    - See if it's possible to give item PC and decoration PC have more room
 - Add 3 other Regis?
     - Add Regigigas to Sealed Chamber?
     - Regieleki near New Mauville?

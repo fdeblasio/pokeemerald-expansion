@@ -78,7 +78,7 @@ BattleFrontier_Lounge7_EventScript_ChooseRightTutorMove::
 	case 2, BattleFrontier_Lounge7_EventScript_MistyTerrain
 	case 3, BattleFrontier_Lounge7_EventScript_PsychicTerrain
 	case 4, BattleFrontier_Lounge7_EventScript_IronDefense
-	case 5, BattleFrontier_Lounge7_EventScript_NastyPlot
+	case 5, BattleFrontier_Lounge7_EventScript_HyperVoice
 	case 6, BattleFrontier_Lounge7_EventScript_DragonDance
 	case 7, BattleFrontier_Lounge7_EventScript_DefenseCurl
 	case 8, BattleFrontier_Lounge7_EventScript_Endure
@@ -186,7 +186,7 @@ BattleFrontier_Lounge7_EventScript_IronDefense::
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
-BattleFrontier_Lounge7_EventScript_NastyPlot::
+BattleFrontier_Lounge7_EventScript_HyperVoice::
 	setvar VAR_0x8005, MOVE_HYPER_VOICE
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end

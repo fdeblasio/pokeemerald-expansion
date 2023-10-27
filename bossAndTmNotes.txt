@@ -72,7 +72,7 @@ TM27: Return - Pacifidlog
 TM28: Dig - Route 114
 TM29: Psychic - Lilycove TM Shop
 TM30: Shadow Ball - Mt. Pyre
-TM31: Brick Break - Sootopolis
+TM31: Brick Break - Santorini
 TM32: Double Team - Route 113
 TM33: Reflect - Lilycove Department Store
 TM34: Shock Wave - Mauville Gym Leader

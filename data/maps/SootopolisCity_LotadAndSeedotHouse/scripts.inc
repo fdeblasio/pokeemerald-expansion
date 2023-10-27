@@ -105,7 +105,7 @@ SootopolisCity_LotadAndSeedotHouse_EventScript_CubchooSizeRecord::
 
 SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigVoltorb:
 	.string "Do you know the Pokémon Voltorb?\n"
-	.string "It's hardly ever seen in Sootopolis.\p"
+	.string "It's hardly ever seen in Santorini.\p"
 	.string "Anyway, I love big Voltorb.\n"
 	.string "The bigger the better.\p"
 	.string "But my younger brother, he says that\n"
@@ -154,7 +154,7 @@ SootopolisCity_LotadAndSeedotHouse_Text_BiggestVoltorbInHistory:
 
 SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigCubchoo:
 	.string "Do you know the Pokémon Cubchoo?\n"
-	.string "It's rarely seen in Sootopolis.\p"
+	.string "It's rarely seen in Santorini.\p"
 	.string "I love, I mean love, big Cubchoo!\p"
 	.string "My big brother says that Voltorb is\n"
 	.string "bigger.\p"

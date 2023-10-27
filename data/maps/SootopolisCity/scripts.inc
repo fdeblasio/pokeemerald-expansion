@@ -1701,7 +1701,7 @@ SootopolisCity_Text_AquaMagmaDidntMeanHarm:
 SootopolisCity_Text_ThankYouForHelpAcceptThis:
 	.string "Wallace: {PLAYER}{KUN}…\n"
 	.string "My eyes didn't deceive me.\p"
-	.string "Thanks to your help, Sootopolis…\n"
+	.string "Thanks to your help, Santorini…\n"
 	.string "No, all of Hoenn was saved.\p"
 	.string "On behalf of the people, I thank you.\p"
 	.string "This is a gift from me.\n"

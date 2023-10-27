@@ -401,6 +401,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     TRAINER_CLASS(PIKE_QUEEN, "Pike Queen", DEFAULT_MONEY, DEFAULT_BALL),
     TRAINER_CLASS(PYRAMID_KING, "Pyramid King", DEFAULT_MONEY, DEFAULT_BALL),
     TRAINER_CLASS(RS_PROTAG, "{PKMN} Trainer", DEFAULT_MONEY, DEFAULT_BALL),
+    TRAINER_CLASS(BIKER, "Biker", DEFAULT_MONEY, DEFAULT_BALL),
 };
 
 static void (* const sTurnActionsFuncsTable[])(void) =

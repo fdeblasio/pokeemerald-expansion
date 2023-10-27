@@ -681,6 +681,14 @@
 - Glameow:
     - Evolution: 38->34
 
+- Skuntank:
+    - HP: 103->105
+    - Atk: 93->95
+    - Def: 67->70
+    - SpA: 71->80
+    - SpD: 61->65
+    - Spe: 84->85
+
 - Riolu:
     - Can also evolve at level 20
 

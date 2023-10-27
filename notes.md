@@ -45,9 +45,6 @@ upcoming
     - Strength (only in Trick House and Seafloor Cavern):
         - Superpower?
         - Close Combat?
-- EV berries:
-    repeat like Medicine
-    Default choice is Use, not Check Tag
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Include charms?
 - Readjust wild/trainer levels so that parties aren't overpowered

@@ -8161,11 +8161,11 @@ static const struct TrainerMon sParty_Robin[] = {
     }
 };
 
-static const struct TrainerMon sParty_Andrea[] = {
+static const struct TrainerMon sParty_Andreo[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 44,
-    .species = SPECIES_LUVDISC,
+    .species = SPECIES_SWALOT,
     }
 };
 

@@ -1407,8 +1407,7 @@ SootopolisCity_Movement_DestroyTask::
 SootopolisCity_Text_GymSign:
 	.string "Santorini Pokémon Gym\n"
 	.string "Leader: Eric\p"
-	.string "“The Gym Leader with the charm\n"
-	.string "of pure poison!”$"
+	.string "“The Gym Leader with pure poison!”$"
 
 SootopolisCity_Text_CitySign:
 	.string "Santorini\p"
@@ -1722,5 +1721,5 @@ SootopolisCity_Text_ExplainWaterfallGoToGym:
 
 SootopolisCity_Text_DazzledByMentor:
 	.string "Wallace: I'm sure that you will be\n"
-	.string "dazzled by my mentor's breathtakingly\l"
-	.string "elegant battle style.$"
+	.string "dazzled by my replacement's toxic\l"
+	.string "battle style.$"

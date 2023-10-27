@@ -44,7 +44,7 @@ Gym Leader/Wally Rematches:
 
 TM01: Focus Punch - Route 115
 TM02: Dragon Claw - Meteor Falls
-TM03: Water Pulse - Juan
+TM03: Water Pulse - Slateport TM Shop
 TM04: Calm Mind - Slateport TM Shop
 TM05: Roar - Route 114
 TM06: Toxic - Lavaridge TM Shop
@@ -102,7 +102,7 @@ TM56: Signal Beam - Lilycove TM Shop
 TM57: Charge Beam - Slateport TM Shop
 TM58: Psychic Fangs - Lilycove TM Shop
 TM59: Dragon Pulse - Lilycove TM Shop
-TM60: Drain Punch - Mossdeep Gym Leader
+TM60: Drain Punch - Mossdeep Gym Leaders
 TM61: Will-O-Wisp - Slateport TM Shop
 TM62: Silver Wind - Slateport TM Shop
 TM63: Dazzling Gleam - Lilycove TM Shop
@@ -126,7 +126,7 @@ TM80: Rock Slide - Lilycove TM Shop
 TM81: Lunge - Lavaridge Gym Leader
 TM82: Night Slash - Lilycove TM Shop
 TM83: Iron Head - Lilycove TM Shop
-TM84: Poison Jab - Lilycove TM Shop
+TM84: Poison Jab - Santorini Gym Leader
 TM85: Aura Sphere - Lilycove TM Shop
 TM86: Grass Knot - Lavaridge TM Shop
 TM87: Bug Buzz - Lilycove TM Shop

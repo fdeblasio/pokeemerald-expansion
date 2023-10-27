@@ -178,18 +178,18 @@ SootopolisCity_Gym_1F_EventScript_GymStatue::
 SootopolisCity_Gym_1F_Text_GymGuideAdvice:
 	.string "Yo! How's it going, Champion-\n"
 	.string "bound {PLAYER}?\p"
-	.string "Santorini's Gym Leader Juan is\n"
-	.string "a master of Water-type Pokémon.\p"
-	.string "And, to get to Juan, an icy floor\n"
-	.string "will hamper your progress…\p"
+	.string "Santorini's Gym Leader Eric is\n"
+	.string "a master of Poison-type Pokémon.\p"
+	.string "To get to Juan, a floor of frozen\n"
+	.string "acid will hamper your progress…\p"
 	.string "Listen, I'm sorry, but that's all the\n"
 	.string "advice that I have for you.\p"
 	.string "The rest of the way, you have to\n"
 	.string "go for it yourself!$"
 
 SootopolisCity_Gym_1F_Text_GymGuidePostVictory:
-	.string "Yow! You've beaten even Juan, who\n"
-	.string "was supposedly the best in all Hoenn!\p"
+	.string "Yow! You've beaten Eric, who\n"
+	.string "was supposedly the best in Santorini!\p"
 	.string "Okay! Check out your Trainer Card.\p"
 	.string "If you've gotten all the Badges, you're\n"
 	.string "set for the Pokémon League challenge!$"
@@ -198,19 +198,17 @@ SootopolisCity_Gym_1F_Text_JuanIntro:
 	.string "Let me ask you.\n"
 	.string "Did you know?\l"
 	.string "Ah, I should not be so coy.\p"
-	.string "It was I who taught Wallace everything\n"
+	.string "It was I who Wallace taught everything\n"
 	.string "there is to know about Pokémon.\p"
-	.string "Once, I had given up my position as\n"
+	.string "Once, he had given up his position as\n"
 	.string "the Gym Leader.\p"
-	.string "In my place, I had entrusted Wallace\n"
+	.string "In his place, he had entrusted me\n"
 	.string "with the Gym.\p"
-	.string "However, a compelling reason arose for\n"
-	.string "me to make a comeback.\p"
 	.string "Ah, but enough chatter.\n"
 	.string "Let us begin our match, shall we?\p"
 	.string "Please, you shall bear witness to\n"
 	.string "our artistry.\p"
-	.string "A grand illusion of water sculpted\n"
+	.string "A grand illusion of poison sculpted\n"
 	.string "by Pokémon and myself!$"
 
 @ NOTE: This defeat text actually causes a buffer overflow. It's about 50 bytes too long for
@@ -230,17 +228,17 @@ SootopolisCity_Gym_1F_Text_JuanDefeat:
 	.string "… … … … … …\p"
 	.string "Hahaha, I merely jest!\p"
 	.string "Rather than my clothes, I shall reward\n"
-	.string "you with this, the Rain Badge!$"
+	.string "you with this, the Acid Badge!$"
 
 SootopolisCity_Gym_1F_Text_ReceivedRainBadge:
-	.string "{PLAYER} received the Rain Badge\n"
+	.string "{PLAYER} received the Acid Badge\n"
 	.string "from Juan.$"
 
 SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
-	.string "Having the Rain Badge shall assure you\n"
+	.string "Having the Acid Badge shall assure you\n"
 	.string "the full obedience of all your Pokémon\l"
 	.string "to your every command.\p"
-	.string "The Rain Badge also allows the use\n"
+	.string "The Acid Badge also allows the use\n"
 	.string "of the HM move Waterfall to scale\l"
 	.string "walls of cascading water.\p"
 	.string "And, so that you never forget the\n"
@@ -248,13 +246,13 @@ SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
 
 SootopolisCity_Gym_1F_Text_ExplainWaterPulse:
 	.string "The Technical Machine I handed you\n"
-	.string "contains Water Pulse.\p"
-	.string "In use, it will occasionally confuse\n"
-	.string "the target with ultrasonic waves.\p"
+	.string "contains Poison Jab.\p"
+	.string "In use, it will occasionally poison\n"
+	.string "the target with toxic strikes.\p"
 	.string "… … … … … …$"
 
 SootopolisCity_Gym_1F_Text_RegisteredJuan:
-	.string "Registered Gym Leader Juan\n"
+	.string "Registered Gym Leader Eric\n"
 	.string "in the PokéNav.$"
 
 SootopolisCity_Gym_1F_Text_JuanPostBattle:
@@ -279,11 +277,11 @@ SootopolisCity_Gym_1F_Text_GymStatue:
 
 SootopolisCity_Gym_1F_Text_GymStatueCertified:
 	.string "Santorini Pokémon Gym\p"
-	.string "Juan's Certified Trainers:\n"
+	.string "Eric's Certified Trainers:\n"
 	.string "{PLAYER}$"
 
 SootopolisCity_Gym_1F_Text_JuanPreRematch:
-	.string "Juan: Ah, this Gym had returned to its\n"
+	.string "Eric: Ah, this Gym had returned to its\n"
 	.string "usual state of serenity…\p"
 	.string "But our young typhoon has returned\n"
 	.string "to put us to the test again!\p"
@@ -296,7 +294,7 @@ SootopolisCity_Gym_1F_Text_JuanRematchDefeat:
 	.string "You have defeated me again!$"
 
 SootopolisCity_Gym_1F_Text_JuanPostRematch:
-	.string "Juan: If I told you to become my\n"
+	.string "Eric: If I told you to become my\n"
 	.string "apprentice, you will refuse, I am sure.\p"
 	.string "I would like to make a gift of my coat\n"
 	.string "to you.\p"
@@ -306,7 +304,7 @@ SootopolisCity_Gym_1F_Text_JuanPostRematch:
 	.string "of nobility!$"
 
 SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons:
-	.string "Juan: Ah, this Gym had returned to its\n"
+	.string "Eric: Ah, this Gym had returned to its\n"
 	.string "usual state of serenity…\p"
 	.string "But our young typhoon has returned\n"
 	.string "to put us to the test again!\p"

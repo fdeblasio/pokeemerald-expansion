@@ -362,17 +362,17 @@
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music
 #define TRAINER_ENCOUNTER_MUSIC_FEMALE       1 // standard female encounter music
 #define TRAINER_ENCOUNTER_MUSIC_GIRL         2 // used for male Tubers and Young Couples too
-#define TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS   3
-#define TRAINER_ENCOUNTER_MUSIC_INTENSE      4
-#define TRAINER_ENCOUNTER_MUSIC_COOL         5
+#define TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS   3 // Used for Ninja Boys, Collectors, Hex Maniacs, Poké Maniacs, and Bug Maniacs
+#define TRAINER_ENCOUNTER_MUSIC_INTENSE      4 // Used for Guitarists, Psychics, Black Belts, Battle Girls, Dragon Tamers, Experts, and Old Couples
+#define TRAINER_ENCOUNTER_MUSIC_COOL         5 // Used for Cool Trainers, Pokémon Rangers, and Bird Keepers
 #define TRAINER_ENCOUNTER_MUSIC_AQUA         6
 #define TRAINER_ENCOUNTER_MUSIC_MAGMA        7
-#define TRAINER_ENCOUNTER_MUSIC_SWIMMER      8
-#define TRAINER_ENCOUNTER_MUSIC_TWINS        9 // used for other trainer classes too
+#define TRAINER_ENCOUNTER_MUSIC_SWIMMER      8 // Used for Swimmers, swimming Triathletes, and Sis and Bros
+#define TRAINER_ENCOUNTER_MUSIC_TWINS        9 // Used for Twins, PokéFans, and Sr. and Jr.s
 #define TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR  10
-#define TRAINER_ENCOUNTER_MUSIC_HIKER       11 // used for other trainer classes too
+#define TRAINER_ENCOUNTER_MUSIC_HIKER       11 // Used for Hikers, Ruin Maniacs, Kindlers, and Fishermen
 #define TRAINER_ENCOUNTER_MUSIC_INTERVIEWER 12
-#define TRAINER_ENCOUNTER_MUSIC_RICH        13 // Rich Boys and Gentlemen
+#define TRAINER_ENCOUNTER_MUSIC_RICH        13 // Used for Rich Boys and Gentlemen
 
 #define F_TRAINER_FEMALE (1 << 7)
 

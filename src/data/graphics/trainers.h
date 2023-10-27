@@ -292,6 +292,9 @@ const u32 gTrainerPalette_Rocker[] = INCBIN_U32("graphics/trainers/front_pics/ro
 const u32 gTrainerFrontPic_CoolCouple[] = INCBIN_U32("graphics/trainers/front_pics/cool_couple_frlg.4bpp.lz");
 const u32 gTrainerPalette_CoolCouple[] = INCBIN_U32("graphics/trainers/front_pics/cool_couple_frlg.gbapal.lz");
 
+const u32 gTrainerFrontPic_Biker[] = INCBIN_U32("graphics/trainers/front_pics/biker_frlg.4bpp.lz");
+const u32 gTrainerPalette_Biker[] = INCBIN_U32("graphics/trainers/front_pics/biker_frlg.gbapal.lz");
+
 const u8 gTrainerBackPic_Brendan[] = INCBIN_U8("graphics/trainers/back_pics/brendan.4bpp");
 const u8 gTrainerBackPic_May[] = INCBIN_U8("graphics/trainers/back_pics/may.4bpp");
 const u8 gTrainerBackPic_Red[] = INCBIN_U8("graphics/trainers/back_pics/red.4bpp");
@@ -417,6 +420,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(FRANK, Frank),
     TRAINER_SPRITE(ROCKER, Rocker),
     TRAINER_SPRITE(COOL_COUPLE, CoolCouple),
+    TRAINER_SPRITE(BIKER, Biker),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =

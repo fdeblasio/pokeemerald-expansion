@@ -112,7 +112,8 @@
 #define TRAINER_PIC_FRANK                 94
 #define TRAINER_PIC_ROCKER                95
 #define TRAINER_PIC_COOL_COUPLE           96
-#define TRAINER_PIC_COUNT                 97
+#define TRAINER_PIC_BIKER                 97
+#define TRAINER_PIC_COUNT                 98
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0

@@ -3622,6 +3622,7 @@ static const struct TrainerMon sParty_Juan1[] = {
     .species = SPECIES_WHISCASH,
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .moves = {MOVE_WATER_PULSE, MOVE_EARTHQUAKE, MOVE_AMNESIA, MOVE_DRAGON_DANCE},
+    .heldItem = ITEM_SITRUS_BERRY,
     }
 };
 

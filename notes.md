@@ -25,7 +25,7 @@ upcoming
     - TMs don't line up
     - Shows evolutions multiple times
     - Dark mode not implemented
-- Contest Lady thinks you already helped her when you first talk to her
+- If you help one of the Lilycove ladies, the other lady thinks you've already helped her as well
 - Verdanturf Battle Tent sometimes gives an item right away
 - PokeNav callers sometimes think there were 512 wins at the Battle Palace (seems to be related to Battle Tent issue)
 - gBattleTextBuff3 causes the build to fail unless reverted from `TEXT_BUFF_ARRAY_COUNT + 13` to `30`

@@ -1,9 +1,9 @@
 VictoryRoad_B2F_MapScripts::
 	.byte 0
 
-VictoryRoad_B2F_EventScript_Vito::
-	trainerbattle_single TRAINER_VITO, VictoryRoad_B2F_Text_VitoIntro, VictoryRoad_B2F_Text_VitoDefeat
-	msgbox VictoryRoad_B2F_Text_VitoPostBattle, MSGBOX_AUTOCLOSE
+VictoryRoad_B2F_EventScript_Edgar::
+	trainerbattle_single TRAINER_EDGAR, VictoryRoad_B2F_Text_EdgarIntro, VictoryRoad_B2F_Text_EdgarDefeat
+	msgbox VictoryRoad_B2F_Text_EdgarPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 VictoryRoad_B2F_EventScript_Owen::
@@ -31,20 +31,17 @@ VictoryRoad_B2F_EventScript_Dianne::
 	msgbox VictoryRoad_B2F_Text_DiannePostBattle, MSGBOX_AUTOCLOSE
 	end
 
-VictoryRoad_B2F_Text_VitoIntro:
-	.string "I trained together with my whole family,\n"
-	.string "every one of us!\l"
-	.string "I'm not losing to anyone!$"
+VictoryRoad_B2F_Text_EdgarIntro:
+	.string "I've made it this far a couple times,\n"
+	.string "but the last stretch is so long…$"
 
-VictoryRoad_B2F_Text_VitoDefeat:
-	.string "Better than my family?!\n"
-	.string "Is that possible?!$"
+VictoryRoad_B2F_Text_EdgarDefeat:
+	.string "My dream ends here again…$"
 
-VictoryRoad_B2F_Text_VitoPostBattle:
-	.string "I was better than everyone in my\n"
-	.string "family. I've never lost before…\p"
-	.string "I've lost my confidence…\n"
-	.string "Maybe I'll go home…$"
+VictoryRoad_B2F_Text_EdgarPostBattle:
+	.string "You've made it this far. Keep the\n"
+	.string "momentum going and become the\l"
+	.string "Champion! If anyone can, it's you!$"
 
 VictoryRoad_B2F_Text_OwenIntro:
 	.string "I'd heard that there was a tough\n"

@@ -95,9 +95,9 @@ VictoryRoad_1F_EventScript_RematchWally::
 	msgbox VictoryRoad_1F_Text_WallyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-VictoryRoad_1F_EventScript_Edgar::
-	trainerbattle_single TRAINER_EDGAR, VictoryRoad_1F_Text_EdgarIntro, VictoryRoad_1F_Text_EdgarDefeat
-	msgbox VictoryRoad_1F_Text_EdgarPostBattle, MSGBOX_AUTOCLOSE
+VictoryRoad_1F_EventScript_Vito::
+	trainerbattle_single TRAINER_VITO, VictoryRoad_1F_Text_VitoIntro, VictoryRoad_1F_Text_VitoDefeat
+	msgbox VictoryRoad_1F_Text_VitoPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 VictoryRoad_1F_EventScript_Albert::
@@ -157,17 +157,20 @@ VictoryRoad_1F_Text_WallyPostBattle:
 	.string "I'm going to catch up to you…\p"
 	.string "And challenge the Pokémon League!$"
 
-VictoryRoad_1F_Text_EdgarIntro:
-	.string "I've made it this far a couple times,\n"
-	.string "but the last stretch is so long…$"
+VictoryRoad_1F_Text_VitoIntro:
+	.string "I trained together with my whole family,\n"
+	.string "every one of us!\l"
+	.string "I'm not losing to anyone!$"
 
-VictoryRoad_1F_Text_EdgarDefeat:
-	.string "My dream ends here again…$"
+VictoryRoad_1F_Text_VitoDefeat:
+	.string "Better than my family?!\n"
+	.string "Is that possible?!$"
 
-VictoryRoad_1F_Text_EdgarPostBattle:
-	.string "You've made it this far. Keep the\n"
-	.string "momentum going and become the\l"
-	.string "Champion! If anyone can, it's you!$"
+VictoryRoad_1F_Text_VitoPostBattle:
+	.string "I was better than everyone in my\n"
+	.string "family. I've never lost before…\p"
+	.string "I've lost my confidence…\n"
+	.string "Maybe I'll go home…$"
 
 VictoryRoad_1F_Text_AlbertIntro:
 	.string "I didn't come all this way to lose now.\n"

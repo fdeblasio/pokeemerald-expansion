@@ -27,8 +27,8 @@ upcoming
     - Dark mode not implemented
 - Move relearner option in menu sometimes selects different Pokémon when finished
 - Contest Lady thinks you already helped her when you first talk to her
-- Battle Tent gives an item right away
-- PokeNav callers think there were 512 wins at the Battle Palace
+- Verdanturf Battle Tent sometimes gives an item right away
+- PokeNav callers sometimes think there were 512 wins at the Battle Palace (seems to be related to Battle Tent issue)
 - gBattleTextBuff3 causes the build to fail unless reverted from `TEXT_BUFF_ARRAY_COUNT + 13` to `30`
 
 ## To Do:
@@ -115,7 +115,8 @@ upcoming
         - Leaders would have optimal Abilities/EVs/IVs/Natures
     - Breeders should have good IVs/Natures/Abilities
     - Triathlete would be Speed-focused (maybe endurance/HP too)
-    - Winstrates (including Victor) should have EVs due to the mom mentioning using the Macho Brace
+    - Winstrates (including Vito) should have EVs due to the mom mentioning using the Macho Brace
+        - Vito can use TMs
     - Tori and Tia should have Spindas that aren't identical
     - Fix Roxanne's rematches being male (due to double battles (which the rematches are) having the personality set before the gender. Can rearrange steps or manually set gender)
     - Fix Flannery's rematches being male; also her Torkoal or Ninetales should have Drought
@@ -126,8 +127,6 @@ upcoming
     - Maxie/Archie/Steven use Mega Evolutions
     - Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma. Mega Evo for Houndoom but unsure for Ninetales)
         - Could swap out Huntail for Mega Gyarados and only it and Houndoom get items
-    - Vito can use TMs
-        - Swap Vito with Ace Trainer on 1F near the end?
 - Check that Mossdeep swimmer flag works
 - In game trades
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB

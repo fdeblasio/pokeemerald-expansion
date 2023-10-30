@@ -5799,52 +5799,52 @@
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_SOLROCK"
+                "species": "SPECIES_NOIBAT"
               },
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_LUNATONE"
+                "species": "SPECIES_ONIX"
               },
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_SOLROCK"
+                "species": "SPECIES_ELGYEM"
               },
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_LUNATONE"
+                "species": "SPECIES_ELGYEM"
               },
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_SOLROCK"
+                "species": "SPECIES_CLEFAIRY"
               },
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_LUNATONE"
+                "species": "SPECIES_CLEFAIRY"
               },
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_NOIBAT"
               },
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_ONIX"
               },
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_ELGYEM"
               },
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_CLEFAIRY"
               }
             ]
           },
@@ -5923,32 +5923,32 @@
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_SOLROCK"
+                "species": "SPECIES_NOIBAT"
               },
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_LUNATONE"
+                "species": "SPECIES_ONIX"
               },
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_SOLROCK"
+                "species": "SPECIES_ELGYEM"
               },
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_LUNATONE"
+                "species": "SPECIES_ELGYEM"
               },
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_SOLROCK"
+                "species": "SPECIES_CLEFAIRY"
               },
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_LUNATONE"
+                "species": "SPECIES_CLEFAIRY"
               },
               {
                 "min_level": 44,
@@ -5958,17 +5958,17 @@
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_NOIBAT"
+                "species": "SPECIES_ONIX"
               },
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_NOIBAT"
+                "species": "SPECIES_ELGYEM"
               },
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_NOIBAT"
+                "species": "SPECIES_CLEFAIRY"
               }
             ]
           },
@@ -8666,32 +8666,32 @@
               {
                 "min_level": 60,
                 "max_level": 60,
-                "species": "SPECIES_METANG"
+                "species": "SPECIES_STEELIX"
               },
               {
                 "min_level": 60,
                 "max_level": 60,
-                "species": "SPECIES_METANG"
+                "species": "SPECIES_STEELIX"
               },
               {
                 "min_level": 60,
                 "max_level": 60,
-                "species": "SPECIES_METANG"
+                "species": "SPECIES_BEHEEYEM"
               },
               {
                 "min_level": 60,
                 "max_level": 60,
-                "species": "SPECIES_METANG"
+                "species": "SPECIES_BEHEEYEM"
               },
               {
                 "min_level": 60,
                 "max_level": 60,
-                "species": "SPECIES_METANG"
+                "species": "SPECIES_CLEFABLE"
               },
               {
                 "min_level": 60,
                 "max_level": 60,
-                "species": "SPECIES_METANG"
+                "species": "SPECIES_CLEFABLE"
               }
             ]
           }

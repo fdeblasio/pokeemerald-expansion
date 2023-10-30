@@ -6799,6 +6799,7 @@ static const struct TrainerMon sParty_WallyVR1[] = {
     .ability = ABILITY_SHARPNESS,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE},
+    .heldItem = ITEM_GALLADITE,
     .nickname = COMPOUND_STRING("Ralph"),
     }
 };
@@ -8822,6 +8823,7 @@ static const struct TrainerMon sParty_WallyVR2[] = {
     .ability = ABILITY_SHARPNESS,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE},
+    .heldItem = ITEM_GALLADITE,
     .nickname = COMPOUND_STRING("Ralph"),
     }
 };
@@ -8857,6 +8859,7 @@ static const struct TrainerMon sParty_WallyVR3[] = {
     .ability = ABILITY_SHARPNESS,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE},
+    .heldItem = ITEM_GALLADITE,
     .nickname = COMPOUND_STRING("Ralph"),
     }
 };
@@ -8892,6 +8895,7 @@ static const struct TrainerMon sParty_WallyVR4[] = {
     .ability = ABILITY_SHARPNESS,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE},
+    .heldItem = ITEM_GALLADITE,
     .nickname = COMPOUND_STRING("Ralph"),
     }
 };
@@ -8933,6 +8937,7 @@ static const struct TrainerMon sParty_WallyVR5[] = {
     .ability = ABILITY_SHARPNESS,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE},
+    .heldItem = ITEM_GALLADITE,
     .nickname = COMPOUND_STRING("Ralph"),
     }
 };

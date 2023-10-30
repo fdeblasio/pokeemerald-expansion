@@ -115,6 +115,19 @@
 #define TRAINER_PIC_ROCKER                95
 #define TRAINER_PIC_COOL_COUPLE           96
 #define TRAINER_PIC_BIKER                 97
+#define TRAINER_PIC_LEADER_BROCK          98
+#define TRAINER_PIC_LEADER_MISTY          99
+#define TRAINER_PIC_LEADER_LT_SURGE       100
+#define TRAINER_PIC_LEADER_ERIKA          101
+#define TRAINER_PIC_LEADER_KOGA           102
+#define TRAINER_PIC_LEADER_SABRINA        103
+#define TRAINER_PIC_LEADER_BLAINE         104
+#define TRAINER_PIC_LEADER_GIOVANNI       105
+#define TRAINER_PIC_ELITE_FOUR_LORELEI    106
+#define TRAINER_PIC_ELITE_FOUR_BRUNO      107
+#define TRAINER_PIC_ELITE_FOUR_AGATHA     108
+#define TRAINER_PIC_ELITE_FOUR_LANCE      109
+#define TRAINER_PIC_BURGLAR               110
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0

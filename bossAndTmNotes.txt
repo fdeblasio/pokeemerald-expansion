@@ -63,7 +63,7 @@ TM18: Rain Dance - Abandonded Ship
 TM19: Giga Drain - Route 123
 TM20: Safeguard - Lilycove Department Store
 TM21: Frustration - Pacifidlog
-TM22: Solar Beam - Safari Zone
+TM22: Solar Beam - Lilycove Department Store
 TM23: Iron Tail - Meteor Falls
 TM24: Thunderbolt - Mauville
 TM25: Thunder - Lilycove Department Store

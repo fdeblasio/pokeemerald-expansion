@@ -14,21 +14,22 @@ upcoming
 ```
 
 ## Known Bugs
-- #000 ?????????? sometimes shows up at the end of the Pokédex
+- gBattleTextBuff3 causes the build to fail unless reverted from `TEXT_BUFF_ARRAY_COUNT + 13` to `30`
 - When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
+- AI_FLAG_ACE_POKEMON doesn't seem to work
+- Unburden may not work?
+- HGSS Pokédex (currently disabled):
+    - TMs don't line up
+    - Shows evolutions multiple times
+- If you help one of the Lilycove ladies, the other lady thinks you've already helped her as well
+
+#### Potentially just savefile issues
+- #000 ?????????? sometimes shows up at the end of the Pokédex
 - Items in the Battle Pyramid's Battle Bag/held items in the Battle Pike are turning into Poke Balls
     - Seems to happen after trainer battles?
     - This occurs even with the Battle Frontier changes reverted
-- AI_FLAG_ACE_POKEMON doesn't seem to work
-- Unburden may not work?
-- HGSS Dex (currently disabled):
-    - TMs don't line up
-    - Shows evolutions multiple times
-    - Dark mode not implemented
-- If you help one of the Lilycove ladies, the other lady thinks you've already helped her as well
 - Verdanturf Battle Tent sometimes gives an item right away
 - PokeNav callers sometimes think there were 512 wins at the Battle Palace (seems to be related to Battle Tent issue)
-- gBattleTextBuff3 causes the build to fail unless reverted from `TEXT_BUFF_ARRAY_COUNT + 13` to `30`
 
 ## To Do:
 - Update teachable moves to match Indigo Disk
@@ -55,6 +56,9 @@ upcoming
 - Combine changes and README?
     Include more changes, even if general like Battle Frontier edits
 - Might need to increase MAX_LEVEL_UP_MOVES and/or MAX_RELEARNER_MOVES
+- Update palettes?:
+    - Pokédex (and HGSS Pokédex)
+    - look in graphics/ for more
 - Battle Frontier
     - Make pausing challenge not a soft save (CHALLENGE_STATUS_SAVING)
     - Update rest of apprentice teams

@@ -68,6 +68,7 @@ LilycoveCity_DepartmentStore_3F_Pokemart_Evo:
 	.2byte ITEM_RAZOR_FANG
 	.2byte ITEM_RAZOR_CLAW
 	.2byte ITEM_ELECTIRIZER
+	.2byte ITEM_SACHET
 	.2byte ITEM_NONE
 	release
 	end

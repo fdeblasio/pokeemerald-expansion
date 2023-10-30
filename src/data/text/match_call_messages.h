@@ -349,22 +349,22 @@ const u8 gText_MatchCallReliableOne_Dad_Intro1[] = _("I walk the 30 minutes from
 const u8 gText_MatchCallReliableOne_Dad_Intro2[] = _("home to here every day.");
 
 const u8 gText_MatchCallSkyTamer_Winona_Strategy[] = _("I take advantage of speed.");
-const u8 gText_MatchCallSkyTamer_Winona_Pokemon[] = _("Graceful sky dancers.");
+const u8 gText_MatchCallSkyTamer_Winona_Pokemon[] = _("Graceful fire dancers.");
 const u8 gText_MatchCallSkyTamer_Winona_Intro1[] = _("The ultimate would be to");
 const u8 gText_MatchCallSkyTamer_Winona_Intro2[] = _("live as one with nature.");
 
 const u8 gText_MatchCallMysticDuo_TateAndLiza_Strategy[] = _("We battle in cooperation.");
-const u8 gText_MatchCallMysticDuo_TateAndLiza_Pokemon[] = _("Always friendly Pokémon.");
-const u8 gText_MatchCallMysticDuo_TateAndLiza_Intro1[] = _("Papa has trouble telling");
-const u8 gText_MatchCallMysticDuo_TateAndLiza_Intro2[] = _("the two of us apart!");
+const u8 gText_MatchCallMysticDuo_TateAndLiza_Pokemon[] = _("Buff & bird Pokémon.");
+const u8 gText_MatchCallMysticDuo_TateAndLiza_Intro1[] = _("He likes Machamp!");
+const u8 gText_MatchCallMysticDuo_TateAndLiza_Intro2[] = _("She likes birds!");
 
-const u8 gText_MatchCallDandyCharm_Juan_Strategy[] = _("I use splendid waterpower.");
+const u8 gText_MatchCallDandyCharm_Juan_Strategy[] = _("I use splendid poisonpower.");
 const u8 gText_MatchCallDandyCharm_Juan_Pokemon[] = _("Pokémon of elegance!");
 const u8 gText_MatchCallDandyCharm_Juan_Intro1[] = _("The adulation of beautiful");
 const u8 gText_MatchCallDandyCharm_Juan_Intro2[] = _("ladies fills me with energy!");
 
 const u8 gText_MatchCallEliteFour_Sidney_Strategy[] = _("Offense over defense!");
-const u8 gText_MatchCallEliteFour_Sidney_Pokemon[] = _("The Dark side's beauties.");
+const u8 gText_MatchCallEliteFour_Sidney_Pokemon[] = _("The Rock side's beauties.");
 const u8 gText_MatchCallEliteFour_Sidney_Intro1[] = _("They said I was a punk, but");
 const u8 gText_MatchCallEliteFour_Sidney_Intro2[] = _("I'm one of the Elite Four!");
 
@@ -379,9 +379,9 @@ const u8 gText_MatchCallEliteFour_Glacia_Intro1[] = _("The Ice type can be bette
 const u8 gText_MatchCallEliteFour_Glacia_Intro2[] = _("trained in this hot land.");
 
 const u8 gText_MatchCallEliteFour_Drake_Strategy[] = _("Harness strong abilities.");
-const u8 gText_MatchCallEliteFour_Drake_Pokemon[] = _("The raw power of Dragons!");
-const u8 gText_MatchCallEliteFour_Drake_Intro1[] = _("I dedicate myself to the");
-const u8 gText_MatchCallEliteFour_Drake_Intro2[] = _("Pokémon that saved me.");
+const u8 gText_MatchCallEliteFour_Drake_Pokemon[] = _("The raw power of Dark-types!");
+const u8 gText_MatchCallEliteFour_Drake_Intro1[] = _("I dedicate myself to our");
+const u8 gText_MatchCallEliteFour_Drake_Intro2[] = _("dogs!");
 
 const u8 gText_MatchCallChampion_Wallace_Strategy[] = _("Dignity and respect.");
 const u8 gText_MatchCallChampion_Wallace_Pokemon[] = _("I prefer Pokémon of grace.");

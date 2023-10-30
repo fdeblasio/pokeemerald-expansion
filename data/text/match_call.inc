@@ -2164,67 +2164,67 @@ MatchCall_Text_Flannery4::
 	.string "better at training every time.$"
 
 MatchCall_Text_Winona1::
-	.string "Winona: Hello, {PLAYER}!\p"
+	.string "Jorge: Hello, {PLAYER}!\p"
 	.string "Thanks to our battle, I've come\n"
 	.string "to understand my weak points!\p"
 	.string "When I reopen the Gym, I won't go\n"
 	.string "down in defeat again!$"
 
 MatchCall_Text_Winona2::
-	.string "Winona: You've done it, {PLAYER}!\p"
+	.string "Jorge: You've done it, {PLAYER}!\p"
 	.string "News about the new Champion\n"
 	.string "has reached us in Fortree!\p"
 	.string "But… The next time we battle,\n"
 	.string "it's not going to end the same way.$"
 
 MatchCall_Text_Winona3::
-	.string "Winona: Is this {PLAYER}?\n"
+	.string "Jorge: Is this {PLAYER}?\n"
 	.string "Our Gym is back in operation!\p"
 	.string "We're waiting for you in Fortree!$"
 
 MatchCall_Text_Winona4::
-	.string "Winona: {PLAYER}…\n"
-	.string "Though I have lost, my wings will\l"
-	.string "never break.\p"
+	.string "Jorge: {PLAYER}…\n"
+	.string "Though I have lost, my fire will\l"
+	.string "never go out.\p"
 	.string "Yes, in exactly the same way that\n"
 	.string "you never lost sight of your dream.$"
 
 MatchCall_Text_TateLiza1::
-	.string "Tate: Oh! You're…\n"
-	.string "Liza: {PLAYER}!\p"
-	.string "Tate: We're in training again…\n"
-	.string "Liza: So we can reopen our Gym!\p"
-	.string "Tate: When our Gym is ready…\n"
-	.string "Liza: When our Gym is ready…\p"
-	.string "Tate: A mark'll appear by our name…\n"
-	.string "Liza: On the Match Call list.$"
+	.string "Rafi: Oh! You're…\n"
+	.string "Kim: {PLAYER}!\p"
+	.string "Rafi: We're in training again…\n"
+	.string "Kim: So we can reopen our Gym!\p"
+	.string "Rafi: When our Gym is ready…\n"
+	.string "Kim: When our Gym is ready…\p"
+	.string "Rafi: A mark'll appear by our name…\n"
+	.string "Kim: On the Match Call list.$"
 
 MatchCall_Text_TateLiza2::
-	.string "Tate: {PLAYER}, congratulations!\n"
-	.string "Liza: {PLAYER}, congratulations!\p"
-	.string "Tate: The two of us are…\n"
-	.string "Liza: Still in training!\p"
-	.string "Tate: We need some more time, but…\n"
-	.string "Liza: When our Gym is ready…\p"
-	.string "Tate: A mark'll appear by our name…\n"
-	.string "Liza: On the Match Call list.$"
+	.string "Rafi: {PLAYER}, congratulations!\n"
+	.string "Kim: {PLAYER}, congratulations!\p"
+	.string "Rafi: The two of us are…\n"
+	.string "Kim: Still in training!\p"
+	.string "Rafi: We need some more time, but…\n"
+	.string "Kim: When our Gym is ready…\p"
+	.string "Rafi: A mark'll appear by our name…\n"
+	.string "Kim: On the Match Call list.$"
 
 MatchCall_Text_TateLiza3::
-	.string "Tate: {PLAYER}!\n"
-	.string "Liza: {PLAYER}!\p"
-	.string "Tate: Our Gym is ready!\n"
-	.string "Liza: Our Gym is ready!\p"
-	.string "Tate: Please come visit…\n"
-	.string "Liza: Mossdeep anytime!$"
+	.string "Rafi: {PLAYER}!\n"
+	.string "Kim: {PLAYER}!\p"
+	.string "Rafi: Our Gym is ready!\n"
+	.string "Kim: Our Gym is ready!\p"
+	.string "Rafi: Please come visit…\n"
+	.string "Kim: Mossdeep anytime!$"
 
 MatchCall_Text_TateLiza4::
-	.string "Tate: {PLAYER}, the battle we had…\n"
-	.string "Liza: Is an invaluable experience.\p"
-	.string "Tate: It would be nice if…\n"
-	.string "Liza: We could all battle again!$"
+	.string "Rafi: {PLAYER}, the battle we had…\n"
+	.string "Kim: Is an invaluable experience.\p"
+	.string "Rafi: It would be nice if…\n"
+	.string "Kim: We could all battle again!$"
 
 MatchCall_Text_Juan1::
-	.string "Juan: Hmm…\n"
+	.string "Eric: Hmm…\n"
 	.string "{PLAYER}{KUN}… Was it?\p"
 	.string "Our battle together--it brought\n"
 	.string "to me memories of when I first\l"
@@ -2233,7 +2233,7 @@ MatchCall_Text_Juan1::
 	.string "yet surpass Wallace!$"
 
 MatchCall_Text_Juan2::
-	.string "Juan: Fufu… {PLAYER}{KUN}…\n"
+	.string "Eric: Fufu… {PLAYER}{KUN}…\n"
 	.string "You've finally achieved your goal.\p"
 	.string "My eye for appraising talent wasn't\n"
 	.string "mistaken…\p"
@@ -2242,14 +2242,14 @@ MatchCall_Text_Juan2::
 	.string "of power and prestige.$"
 
 MatchCall_Text_Juan3::
-	.string "Juan: Hoho… {PLAYER}{KUN}…\p"
+	.string "Eric: Hoho… {PLAYER}{KUN}…\p"
 	.string "Our Santorini Gym has finally\n"
 	.string "reopened.\p"
 	.string "If you wish to see me, you are\n"
 	.string "welcome to visit anytime.$"
 
 MatchCall_Text_Juan4::
-	.string "Juan: {PLAYER}{KUN}…\p"
+	.string "Eric: {PLAYER}{KUN}…\p"
 	.string "Like the finest music, the battles\n"
 	.string "we wage together strike chords\l"
 	.string "of inspiration in my heart…\p"

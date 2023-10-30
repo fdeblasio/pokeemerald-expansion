@@ -25,7 +25,6 @@ upcoming
     - TMs don't line up
     - Shows evolutions multiple times
     - Dark mode not implemented
-- Move relearner option in menu sometimes selects different Pokémon when finished
 - Contest Lady thinks you already helped her when you first talk to her
 - Verdanturf Battle Tent sometimes gives an item right away
 - PokeNav callers sometimes think there were 512 wins at the Battle Palace (seems to be related to Battle Tent issue)

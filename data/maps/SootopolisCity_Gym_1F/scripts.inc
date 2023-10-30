@@ -180,7 +180,7 @@ SootopolisCity_Gym_1F_Text_GymGuideAdvice:
 	.string "bound {PLAYER}?\p"
 	.string "Santorini's Gym Leader Eric is\n"
 	.string "a master of Poison-type Pokémon.\p"
-	.string "To get to Juan, a floor of frozen\n"
+	.string "To get to Eric, a floor of frozen\n"
 	.string "acid will hamper your progress…\p"
 	.string "Listen, I'm sorry, but that's all the\n"
 	.string "advice that I have for you.\p"
@@ -232,7 +232,7 @@ SootopolisCity_Gym_1F_Text_JuanDefeat:
 
 SootopolisCity_Gym_1F_Text_ReceivedRainBadge:
 	.string "{PLAYER} received the Acid Badge\n"
-	.string "from Juan.$"
+	.string "from Eric.$"
 
 SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
 	.string "Having the Acid Badge shall assure you\n"

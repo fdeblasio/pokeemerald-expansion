@@ -1,6 +1,7 @@
 - Wild Pokémon and Trainers have their levels increased to make grinding less of a pain
     - However, with the Exp Share now affecting all party members, this can lead to becoming overleveled
 - Decapitalization
+- Shiny Pokémon can no longer spawn until you get Poké Balls
 - Some reversions back to Ruby and Sapphire
     - Birch is chased by a Poochyena
     - Some trainers on Routes 104 and 117 go back to their original locations

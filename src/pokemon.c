@@ -4078,7 +4078,7 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
         else
 #endif
 
-        if (InBattlePyramid())
+        if (InBattlePyramid() || !FlagGet(FLAG_ADVENTURE_STARTED))
         {
             while (GET_SHINY_VALUE(value, personality) < SHINY_ODDS)
                 personality = Random32();

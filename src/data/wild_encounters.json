@@ -1704,7 +1704,7 @@
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_HARIYAMA"
+                "species": "SPECIES_LUCARIO"
               },
               {
                 "min_level": 44,
@@ -1714,7 +1714,7 @@
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_NOIVERN"
               },
               {
                 "min_level": 44,
@@ -1724,27 +1724,27 @@
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_NOIVERN"
               },
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_LAIRON"
+                "species": "SPECIES_AUDINO"
               },
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_HARIYAMA"
+                "species": "SPECIES_AUDINO"
               },
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_LOUDRED"
+                "species": "SPECIES_AUDINO"
               },
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_AUDINO"
               }
             ]
           }
@@ -5497,7 +5497,7 @@
               {
                 "min_level": 45,
                 "max_level": 47,
-                "species": "SPECIES_HARIYAMA"
+                "species": "SPECIES_LUCARIO"
               },
               {
                 "min_level": 45,
@@ -5507,7 +5507,7 @@
               {
                 "min_level": 45,
                 "max_level": 47,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_NOIVERN"
               },
               {
                 "min_level": 45,
@@ -5517,27 +5517,27 @@
               {
                 "min_level": 45,
                 "max_level": 47,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_NOIVERN"
               },
               {
                 "min_level": 45,
                 "max_level": 47,
-                "species": "SPECIES_MEDICHAM"
+                "species": "SPECIES_AUDINO"
               },
               {
                 "min_level": 45,
                 "max_level": 47,
-                "species": "SPECIES_HARIYAMA"
+                "species": "SPECIES_AUDINO"
               },
               {
                 "min_level": 45,
                 "max_level": 47,
-                "species": "SPECIES_LAIRON"
+                "species": "SPECIES_AUDINO"
               },
               {
                 "min_level": 45,
                 "max_level": 47,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_AUDINO"
               }
             ]
           }
@@ -5566,7 +5566,7 @@
               {
                 "min_level": 45,
                 "max_level": 47,
-                "species": "SPECIES_SABLEYE"
+                "species": "SPECIES_FRAXURE"
               },
               {
                 "min_level": 45,
@@ -5576,27 +5576,27 @@
               {
                 "min_level": 45,
                 "max_level": 47,
-                "species": "SPECIES_SABLEYE"
+                "species": "SPECIES_FRAXURE"
               },
               {
                 "min_level": 45,
                 "max_level": 47,
-                "species": "SPECIES_LAIRON"
+                "species": "SPECIES_AUDINO"
               },
               {
                 "min_level": 45,
                 "max_level": 47,
-                "species": "SPECIES_MEDICHAM"
+                "species": "SPECIES_AUDINO"
               },
               {
                 "min_level": 45,
                 "max_level": 47,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_AUDINO"
               },
               {
                 "min_level": 45,
                 "max_level": 47,
-                "species": "SPECIES_SABLEYE"
+                "species": "SPECIES_AUDINO"
               }
             ]
           },

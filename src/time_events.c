@@ -16,9 +16,7 @@ void UpdateMirageRnd(u16 days)
 
 bool8 IsMirageIslandPresent(void)
 {
-    u16 rnd = VarGet(VAR_MIRAGE_RND_L);
-
-    if (rnd % 2 == 0)
+    if (VarGet(VAR_MIRAGE_RND_L) % 2 == 0)
         return TRUE;
 
     return FALSE;

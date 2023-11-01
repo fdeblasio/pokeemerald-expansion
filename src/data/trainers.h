@@ -2294,7 +2294,7 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_KIRK] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
+        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .trainerName = _("Mike"),
@@ -2330,7 +2330,7 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_SHAWN] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
+        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
         .trainerName = _("Duncan"),
@@ -3878,7 +3878,7 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_BEN] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
+        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerPic = TRAINER_PIC_NINJA_BOY,
         .trainerName = _("Junya"),
@@ -7790,7 +7790,7 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_VIVIAN] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
+        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
         .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
         .trainerName = _("Emily"),
@@ -9626,7 +9626,7 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_ANGELO] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
+        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
         .trainerPic = TRAINER_PIC_POKEMANIAC,
         .trainerName = _("Jake"),
@@ -9638,7 +9638,7 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_DARIUS] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
+        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
         .trainerName = _("Kylie"),

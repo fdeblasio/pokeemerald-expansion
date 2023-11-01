@@ -1052,6 +1052,7 @@ static const u16 sPidgeottoTeachableLearnset[] = {
 };
 
 static const u16 sPidgeotTeachableLearnset[] = {
+    MOVE_ACROBATICS,
     MOVE_AERIAL_ACE,
     MOVE_AGILITY,
     MOVE_AIR_CUTTER,
@@ -28000,6 +28001,7 @@ static const u16 sTaillowTeachableLearnset[] = {
 };
 
 static const u16 sSwellowTeachableLearnset[] = {
+    MOVE_ACROBATICS,
     MOVE_AERIAL_ACE,
     MOVE_AGILITY,
     MOVE_AIR_SLASH,

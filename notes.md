@@ -36,6 +36,7 @@ upcoming
     - Figure out a way to mass update of both level up and teachable moves (PoryMoves has slightly different syntax for some forms)
 - Stay on EVs/IVs when switching Pokémon
 - Hyper Voice tutor->TM?
+- Replace Waterfall (and maybe Surf) with an item, similar to Dive
 - Edit moves that work in field
     - Maybe edit so instead of "if has move" to "if can learn move"
         - Might not be simple since it's .inc and not C
@@ -119,6 +120,7 @@ upcoming
     - Breeders should have good IVs/Natures/Abilities
     - Triathlete would be Speed-focused (maybe endurance/HP too)
     - Winstrates (including Vito) should have EVs due to the mom mentioning using the Macho Brace
+        - Give Winstrates rematches
         - Vito can use TMs
     - Tori and Tia should have Spindas that aren't identical
     - Fix Roxanne's rematches being male (due to double battles (which the rematches are) having the personality set before the gender. Can rearrange steps or manually set gender)

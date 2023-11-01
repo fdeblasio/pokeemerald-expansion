@@ -236,6 +236,9 @@
 - Ivysaur (not in main game):
     - Evolution: 32->36
 
+- Pidgeot (not in main game):
+    - Learns Acrobatics by TM
+
 - Nidorina/Nidoqueen (not in main game):
     - Can now breed
 
@@ -313,6 +316,7 @@
 
 - Scyther (not in main game):
     - Catch rate: 45->90
+    - Learns Dual Wingbeat by level up
     - Learns Lunge by move tutor (Teal Mask addition)
 
 - Scizor/Kleavor (not in main game):
@@ -366,7 +370,7 @@
     - Now evolves into Sylveon with a Dawn Stone
 
 - Aerodactyl (postgame):
-    - Learns Double-Edge, Head Smash, and Brave Bird by level up
+    - Learns Dual Wingbeat, Double-Edge, Head Smash, and Brave Bird by level up
 
 - Munchlax (not in main game):
     - Can also evolve at level 20
@@ -427,12 +431,16 @@
 - Sunflora:
     - Learns Morning Sun by level up
 
+- Honchkrow (not in main game):
+    - Learns Drill Peck by level up
+
 - Misdreavus/Mismagius (not in main game):
     - Gender Ratio: 50/50->25/75
 
 - Gligar/Gliscor (postgame):
+    - Learn Dual Wingbeat by level up
     - Learn Crunch and Psychic Fangs by TM (Teal Mask addition)
-    - Learn Dual Wingbeat and Lunge by move tutor (Teal Mask addition)
+    - Learn Lunge by move tutor (Teal Mask addition)
 
 - Dunsparce (not in main game):
     - Learns Swift by move tutor
@@ -498,8 +506,11 @@
 - Dustox:
     - Sp. Def: 90->100 to match Beautifly's stat increase
 
+- Swellow:
+    - Learns Acrobatics by TM
+
 - Breloom:
-    - Learns Drain Punch by level up
+    - Learns Spore and Drain Punch by level up
 
 - Slaking:
     - Learns Giga Impact by level up
@@ -632,6 +643,9 @@
     - HP: 43->50
     - SpA: 40->60
     - Spd: 97->100
+
+- Salamence:
+    - Learns Dual Wingbeat by level up
 
 - Latios/Latias:
     - Level up learnset slightly restructured to avoid a battle they where only have one attacking move

@@ -838,6 +838,7 @@ In college, I had you list some of your favorite Pokémon and told you I'd make 
     - Evolution: 37->35
 
 - Cryogonal:
+    - Ability: Levitate->Snow Warning
     - Learns Dazzling Gleam, Flash, and Power Gem by TM
 
 - Golett:

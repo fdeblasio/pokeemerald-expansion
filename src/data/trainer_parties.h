@@ -3360,6 +3360,7 @@ static const struct TrainerMon sParty_Vannessa[] = {
     .ability = ABILITY_MOXIE,
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .moves = {MOVE_CRUNCH, MOVE_PLAY_ROUGH, MOVE_PSYCHIC_FANGS, MOVE_ICE_FANG},
+    .gender = TRAINER_MON_FEMALE,
     .nickname = COMPOUND_STRING("Nova"),
     },
     {
@@ -3367,6 +3368,7 @@ static const struct TrainerMon sParty_Vannessa[] = {
     .species = SPECIES_HOUNDOOM,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .moves = {MOVE_DARK_PULSE, MOVE_FLAMETHROWER, MOVE_SLUDGE_BOMB, MOVE_NASTY_PLOT},
+    .gender = TRAINER_MON_MALE,
     .heldItem = ITEM_HOUNDOOMINITE,
     .isShiny = TRUE,
     .nickname = COMPOUND_STRING("Blue"),

@@ -542,27 +542,27 @@ static const TransitionStateFunc sMugshot_Funcs[] =
 
 static const u8 sMugshotsTrainerPicIDsTable[MUGSHOTS_COUNT] =
 {
-    [MUGSHOT_SIDNEY]   = TRAINER_PIC_ELITE_FOUR_SIDNEY,
-    [MUGSHOT_PHOEBE]   = TRAINER_PIC_ELITE_FOUR_PHOEBE,
-    [MUGSHOT_GLACIA]   = TRAINER_PIC_ELITE_FOUR_GLACIA,
-    [MUGSHOT_DRAKE]    = TRAINER_PIC_ELITE_FOUR_DRAKE,
+    [MUGSHOT_SIDNEY]   = TRAINER_PIC_LEADER_BROCK,
+    [MUGSHOT_PHOEBE]   = TRAINER_PIC_ELITE_FOUR_LANCE,
+    [MUGSHOT_GLACIA]   = TRAINER_PIC_ELITE_FOUR_BRUNO,
+    [MUGSHOT_DRAKE]    = TRAINER_PIC_ELITE_FOUR_LORELEI,
     [MUGSHOT_CHAMPION] = TRAINER_PIC_CHAMPION_WALLACE,
 };
 static const s16 sMugshotsOpponentRotationScales[MUGSHOTS_COUNT][2] =
 {
     [MUGSHOT_SIDNEY] =   {0x200, 0x200},
     [MUGSHOT_PHOEBE] =   {0x200, 0x200},
-    [MUGSHOT_GLACIA] =   {0x1B0, 0x1B0},
-    [MUGSHOT_DRAKE] =    {0x1A0, 0x1A0},
+    [MUGSHOT_GLACIA] =   {0x200, 0x200},
+    [MUGSHOT_DRAKE] =    {0x200, 0x200},
     [MUGSHOT_CHAMPION] = {0x188, 0x188},
 };
 static const s16 sMugshotsOpponentCoords[MUGSHOTS_COUNT][2] =
 {
     [MUGSHOT_SIDNEY] =   { 0,  0},
-    [MUGSHOT_PHOEBE] =   { 0,  0},
-    [MUGSHOT_GLACIA] =   {-4,  4},
-    [MUGSHOT_DRAKE] =    { 0,  5},
-    [MUGSHOT_CHAMPION] = {-8,  7},
+    [MUGSHOT_PHOEBE] =   {-32, 0},
+    [MUGSHOT_GLACIA] =   {-10, 0},
+    [MUGSHOT_DRAKE] =    { -8, 0},
+    [MUGSHOT_CHAMPION] = { -8, 7},
 };
 
 static const TransitionSpriteCallback sMugshotTrainerPicFuncs[] =

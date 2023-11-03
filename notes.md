@@ -59,6 +59,8 @@ upcoming
 - Might need to increase MAX_LEVEL_UP_MOVES and/or MAX_RELEARNER_MOVES
 - Update palettes?:
     - Pokédex (and HGSS Pokédex)
+    - battle_transitions/*_bg.pal to better match E4 types
+    - stadium/palette3-7.pal to better match E4 types
     - look in graphics/ for more
 - Battle Frontier
     - Make pausing challenge not a soft save (CHALLENGE_STATUS_SAVING)
@@ -197,3 +199,5 @@ upcoming
 
 ## Future hacks
 All Yellow Pokémon with yellow shinies (Lickitung, Altaria, etc) replacing the regular palette
+    - Give trainer mugshot yellow palette (replace Wallace's yellow with something else)
+    - Replace green with yellow on player sprites?

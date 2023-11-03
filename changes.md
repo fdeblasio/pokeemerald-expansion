@@ -6,7 +6,10 @@ In college, I had you list some of your favorite Pokémon and told you I'd make 
 
 
 
-
+- New Gym Leaders and Elite Four
+    - Elite Four's rooms/battle backgrounds have been edited to match their new types
+    - Once adding overworld sprites is made easier, anyone with a mismatch between their overworld sprite/battle sprite will get a more accurate overworld sprite
+    - Their text has been edited to the bare minimum due to me not being great at writing dialogue
 - Wild Pokémon and Trainers have their levels increased to make grinding less of a pain
     - However, with the Exp Share now affecting all party members, this can lead to becoming overleveled
 - Decapitalization

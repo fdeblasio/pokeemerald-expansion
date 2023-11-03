@@ -1,4 +1,4 @@
-In college, I had you list some of your favorite Pokémon and told you I'd make you a FireRed hack. It never happened, but now hacking has come a long way, although with Emerald getting the improvements. There are some challenges this provides due to it having more of a plot, but I think I made it work.
+In college, I had you list some of your favorite Pokémon and told you I'd make you a FireRed hack. It never happened, but now hacking has come a long way, although with Emerald getting the improvements. There were some challenges due to Emerald having more of a plot, but hopefully you like it!
 
 
 

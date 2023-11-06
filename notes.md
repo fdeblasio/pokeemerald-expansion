@@ -5,10 +5,12 @@ Find/replace:
 (["\- ][A-Z])([A-Z][A-Zé']+)
 $1\L$2
 
-Debugging:
+Debugging (https://cplusplus.com/reference/cstdio/printf/):
+//#define NDEBUG
+
 if (mod > 0 && holdEffect == HOLD_EFFECT_FRIENDSHIP_UP)
   mod = (150 * mod) / 100;
-MgbaPrintf(MGBA_LOG_DEBUG, "Friendship gain, modified: %d", mod);
+MgbaPrintf(MGBA_LOG_WARN, "Friendship gain, modified: %d", mod);
 ```
 
 ## Rebasing
@@ -24,7 +26,7 @@ upcoming
 - When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
 - AI_FLAG_ACE_POKEMON doesn't seem to work
 - HGSS Pokédex (currently disabled):
-    - TMs don't line up
+    - TMs don't line up. This is due to the code assuming that in teachable_learnsets, the TMs will come before the tutor moves.
     - Shows evolutions multiple times
 - If you help one of the Lilycove ladies, the other lady thinks you've already helped her as well
 

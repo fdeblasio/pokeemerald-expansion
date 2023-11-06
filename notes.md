@@ -1,8 +1,14 @@
-## Find/Replace help
+## Helpful things
 ```
+Find/replace:
 (_\("[A-Z])([A-Z\.é':]+"\))
 (["\- ][A-Z])([A-Z][A-Zé']+)
 $1\L$2
+
+Debugging:
+if (mod > 0 && holdEffect == HOLD_EFFECT_FRIENDSHIP_UP)
+  mod = (150 * mod) / 100;
+MgbaPrintf(MGBA_LOG_DEBUG, "Friendship gain, modified: %d", mod);
 ```
 
 ## Rebasing

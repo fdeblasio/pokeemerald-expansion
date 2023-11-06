@@ -23,7 +23,6 @@ upcoming
 - gBattleTextBuff3 causes the build to fail unless reverted from `TEXT_BUFF_ARRAY_COUNT + 13` to `30`
 - When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
 - AI_FLAG_ACE_POKEMON doesn't seem to work
-- Unburden may not work?
 - HGSS Pokédex (currently disabled):
     - TMs don't line up
     - Shows evolutions multiple times

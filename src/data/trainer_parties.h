@@ -11600,27 +11600,29 @@ static const struct TrainerMon sParty_Kylie[] = {
     }
 };
 
-//Claydol->Perrserker?
 static const struct TrainerMon sParty_Steven[] = {
     {
     .lvl = 77,
-    .species = SPECIES_SKARMORY,
+    .species = SPECIES_STEELIX,
     .ability = ABILITY_STURDY,
     .nature = TRAINER_PARTY_NATURE(NATURE_IMPISH),
     .ev = TRAINER_PARTY_EVS(1, 63, 63, 0, 0, 0),
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .moves = {MOVE_STEEL_WING, MOVE_DRILL_PECK, MOVE_BODY_PRESS, MOVE_SPIKES},
+    .moves = {MOVE_IRON_HEAD, MOVE_BODY_PRESS, MOVE_CURSE, MOVE_STEALTH_ROCK},
     .gender = TRAINER_MON_MALE,
     .heldItem = ITEM_GANLON_BERRY,
-    .ball = ITEM_LUXURY_BALL,
+    .ball = ITEM_HEAVY_BALL,
     },
     {
     .lvl = 77,
-    .species = SPECIES_CLAYDOL,
-    .nature = TRAINER_PARTY_NATURE(NATURE_CALM),
-    .ev = TRAINER_PARTY_EVS(0, 0, 63, 0, 1, 63),
+    .species = SPECIES_COPPERAJAH,
+    .ability = ABILITY_HEAVY_METAL,
+    .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
+    .ev = TRAINER_PARTY_EVS(63, 63, 1, 0, 0, 0),
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .moves = {MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_ANCIENT_POWER, MOVE_EARTHQUAKE},
+    .moves = {MOVE_HEAVY_SLAM, MOVE_PLAY_ROUGH, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE},
+    .gender = TRAINER_MON_FEMALE,
+    .ball = ITEM_HEAVY_BALL,
     },
     {
     .lvl = 78,

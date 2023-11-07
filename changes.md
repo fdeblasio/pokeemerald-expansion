@@ -823,6 +823,9 @@
 - Spritzee/Aromatisse:
     - Gender Ratio: 50/50->25/75
 
+- Swirlix/Slurpuff:
+    - Learn Lick by level up
+
 - Skrelp:
     - Evolution: 48->37
 

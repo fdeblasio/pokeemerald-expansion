@@ -5,7 +5,8 @@ In college, I had you list some of your favorite Pokémon and told you I'd make 
 
 
 
-
+- A Pokédex based around some of your favorite Pokémon (circa 2016-2017) plus some others to help fill out certain types
+    - The starters you didn't choose are in Altering Cave on Route 103 in the postgame 
 - New Gym Leaders and Elite Four
     - Elite Four's rooms/battle backgrounds have been edited to match their new types
     - Once adding overworld sprites is made easier, anyone with a mismatch between their overworld sprite/battle sprite will get a more accurate overworld sprite

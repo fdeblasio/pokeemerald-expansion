@@ -290,8 +290,6 @@ BattleFrontier_Mart_EvolutionMega:
 	.2byte ITEM_AMPHAROSITE
 	.2byte ITEM_LATIASITE
 	.2byte ITEM_LATIOSITE
-	.2byte ITEM_RED_ORB
-	.2byte ITEM_BLUE_ORB
 	.2byte ITEM_RARE_CANDY
 	.2byte ITEM_EXP_CANDY_L
 	.2byte ITEM_EXP_CANDY_XL

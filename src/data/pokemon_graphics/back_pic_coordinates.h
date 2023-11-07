@@ -1160,7 +1160,7 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES + 1] =
     [SPECIES_HERACROSS_MEGA]               = { .size = MON_COORDS_SIZE(56, 64), .y_offset =  0 },
     [SPECIES_HOUNDOOM_MEGA]                = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  0 },
     [SPECIES_TYRANITAR_MEGA]               = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  0 },
-    [SPECIES_SCEPTILE_MEGA]                = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  3 },
+    [SPECIES_SCEPTILE_MEGA]                = { .size = MON_COORDS_SIZE(64, 56), .y_offset =  4 },
     [SPECIES_BLAZIKEN_MEGA]                = { .size = MON_COORDS_SIZE(56, 64), .y_offset =  0 },
     [SPECIES_SWAMPERT_MEGA]                = { .size = MON_COORDS_SIZE(64, 56), .y_offset =  6 },
     [SPECIES_GARDEVOIR_MEGA]               = { .size = MON_COORDS_SIZE(48, 56), .y_offset =  6 },

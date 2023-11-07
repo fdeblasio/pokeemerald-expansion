@@ -11495,7 +11495,7 @@ static const struct TrainerMon sParty_Steven[] = {
     .lvl = 77,
     .species = SPECIES_CLAYDOL,
     .nature = TRAINER_PARTY_NATURE(NATURE_CALM),
-    .ev = TRAINER_PARTY_EVS(0, 0, 63, 0, 6, 63),
+    .ev = TRAINER_PARTY_EVS(0, 0, 63, 0, 1, 63),
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .moves = {MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_ANCIENT_POWER, MOVE_EARTHQUAKE},
     },

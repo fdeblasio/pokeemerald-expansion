@@ -141,7 +141,7 @@ upcoming
     - Maxie/Archie/Steven use Mega Evolutions
     - Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma. Mega Evo for Houndoom but unsure for Ninetales)
         - Could swap out Huntail for Mega Gyarados and only it and Houndoom get items
-- Check that Mossdeep swimmer flag works
+- Add postgame Pokémon to Hoenn Dex? National Dex is useless due to no connectivity with other games
 - In game trades
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
 - Magmortar Flash Fire?

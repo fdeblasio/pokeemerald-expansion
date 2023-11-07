@@ -7,6 +7,7 @@ In college, I had you list some of your favorite Pokémon and told you I'd make 
 
 - A Pokédex based around some of your favorite Pokémon (circa 2016-2017) plus some others to help fill out certain types
     - The starters you didn't choose are in Altering Cave on Route 103 in the postgame 
+    - Most postgame-only Pokémon are included at the end of the Hoenn Pokédex. The exceptions are the non-Hoenn mass outbreaks (Magby and Sandile) since it's a random event, as well as the Johto starters (since the Hoenn Pokédex needs to be completed to get them)
 - New Gym Leaders and Elite Four
     - Elite Four's rooms/battle backgrounds have been edited to match their new types
     - Once adding overworld sprites is made easier, anyone with a mismatch between their overworld sprite/battle sprite will get a more accurate overworld sprite

@@ -282,10 +282,7 @@ BattleFrontier_ExchangeServiceCorner_EventScript_EvolutionMega::
 	.align 2
 BattleFrontier_Mart_EvolutionMega:
 	.2byte ITEM_MAGMARIZER
-	.2byte ITEM_OVAL_STONE
-	.2byte ITEM_PEAT_BLOCK
-	.2byte ITEM_BLASTOISINITE
-	.2byte ITEM_BLAZIKENITE
+	.2byte ITEM_WHIPPED_DREAM
 	.2byte ITEM_LATIASITE
 	.2byte ITEM_LATIOSITE
 	.2byte ITEM_RARE_CANDY

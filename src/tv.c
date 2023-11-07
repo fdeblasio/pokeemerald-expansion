@@ -195,8 +195,8 @@ static const struct {
     u8 location;
 } sPokeOutbreakSpeciesList[] = {
     {
-        .species = SPECIES_SURSKIT,
-        .moves = {MOVE_HYDRO_PUMP, MOVE_MUD_SHOT, MOVE_PSYBEAM, MOVE_LUNGE},
+        .species = SPECIES_SMOOCHUM,
+        .moves = {MOVE_FAKE_OUT, MOVE_ICE_PUNCH, MOVE_ZEN_HEADBUTT, MOVE_SWEET_KISS},
         .level = 60,
         .location = MAP_NUM(ROUTE102)
     },
@@ -219,10 +219,10 @@ static const struct {
         .location = MAP_NUM(ROUTE111),
     },
     {
-        .species = SPECIES_TANGELA,
-        .moves = {MOVE_NATURE_POWER, MOVE_LEECH_SEED, MOVE_AMNESIA, MOVE_CONFUSION},
+        .species = SPECIES_SPHEAL,
+        .moves = {MOVE_BELLY_DRUM, MOVE_AQUA_RING, MOVE_ICE_BALL, MOVE_SURF},
         .level = 60,
-        .location = MAP_NUM(ROUTE123),
+        .location = MAP_NUM(ROUTE121),
     }
 };
 

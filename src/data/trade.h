@@ -1034,8 +1034,8 @@ static const struct InGameTrade sIngameTrades[] =
     },
     [INGAME_TRADE_MEOWTH] =
     {
-        .nickname = _("Skittes"),
-        .species = SPECIES_SKITTY,
+        .nickname = _("Slurps"),
+        .species = SPECIES_SWIRLIX,
         .ivs = {31, 31, 31, 31, 31, 31},
         .abilityNum = 2,
         .otId = 91481,
@@ -1046,7 +1046,7 @@ static const struct InGameTrade sIngameTrades[] =
         .otName = _("Isis"),
         .otGender = FEMALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_SNUBBULL
+        .requestedSpecies = SPECIES_SPRITZEE
     }
 };
 
@@ -1075,8 +1075,8 @@ static const u16 sIngameTradeMail[][MAIL_WORDS_COUNT + 1] =
     }, {
         EC_WORD_THANK_YOU,
         EC_WORD_FOR,
-        EC_POKEMON_NATIONAL(SNUBBULL),
-        EC_POKEMON(SKITTY),
+        EC_POKEMON_NATIONAL(SPRITZEE),
+        EC_POKEMON_NATIONAL(SWIRLIX),
         EC_WORD_CRIES,
         EC_WORD_IN,
         EC_WORD_A,

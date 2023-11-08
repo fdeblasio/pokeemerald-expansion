@@ -143,6 +143,8 @@ upcoming
     - Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma. Mega Evo for Houndoom but unsure for Ninetales)
         - Could swap out Huntail for Mega Gyarados and only it and Houndoom get items
 - Add postgame Pokémon to Hoenn Dex? National Dex is useless due to no connectivity with other games
+    - Johto starters need Hoenn Dex completed to get, but could have them act similarly to Jirachi/Deoxys
+    - Could remove handing out of National Dex entirely, would need to see what checks if the National Dex exists (like Birch Lab state for Johto)
 - In game trades
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
 - Cherrim (what does this mean? Give sunny form BST boost from PLA?)

@@ -385,19 +385,19 @@
 - Snorlax (not in main game):
     - Learns Slack Off by level up
 
-- Zapdos:
+- Zapdos (not in main game):
     - Learns Air Slash by TM
 
-- Bayleef (not in main game):
+- Bayleef (postgame):
     - Evolution: 32->36
 
-- Cyndaquil (not in main game):
+- Cyndaquil (postgame):
     - Evolution: 14->16
 
-- Totodile (not in main game):
+- Totodile (postgame):
     - Evolution: 18->16
 
-- Crocnaw (not in main game):
+- Crocnaw (postgame):
     - Evolution: 30->36
 
 - Noctowl (postgame):

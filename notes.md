@@ -30,8 +30,7 @@ upcoming
     - Shows evolutions multiple times
 - If you help one of the Lilycove ladies, the other lady thinks you've already helped her as well
 
-#### Potentially just savefile issues
-- #000 ?????????? sometimes shows up at the end of the Pokédex
+#### Potentially just savefile issues due to playing while hacking
 - Items in the Battle Pyramid's Battle Bag/held items in the Battle Pike are turning into Poke Balls
     - Seems to happen after trainer battles?
     - This occurs even with the Battle Frontier changes reverted

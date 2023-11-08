@@ -6925,7 +6925,12 @@
               {
                 "min_level": 35,
                 "max_level": 38,
-                "species": "SPECIES_SNORUNT"
+                "species": "SPECIES_SNOM"
+              },
+              {
+                "min_level": 35,
+                "max_level": 38,
+                "species": "SPECIES_JYNX"
               },
               {
                 "min_level": 35,
@@ -6935,7 +6940,7 @@
               {
                 "min_level": 35,
                 "max_level": 38,
-                "species": "SPECIES_SNORUNT"
+                "species": "SPECIES_JYNX"
               },
               {
                 "min_level": 35,
@@ -6945,12 +6950,7 @@
               {
                 "min_level": 35,
                 "max_level": 38,
-                "species": "SPECIES_SNORUNT"
-              },
-              {
-                "min_level": 35,
-                "max_level": 38,
-                "species": "SPECIES_SNOM"
+                "species": "SPECIES_JYNX"
               },
               {
                 "min_level": 35,

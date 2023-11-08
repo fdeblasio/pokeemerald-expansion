@@ -48,6 +48,7 @@ upcoming
 ## Tom-specific
 - Make seperate sprite for "Mega" Torterra, even if it's just a slightly bigger version of the regular sprite
 - Make every battle use Tom rules (doubles, no items, no legendaries)
+- Add Dudunsparce?
 
 ## To Do:
 MERGE IN SPECIES REFACTOR AND RE-APPLY CHANGED EVO METHODS

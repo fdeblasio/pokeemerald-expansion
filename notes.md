@@ -43,6 +43,8 @@ upcoming
     - Figure out a way to mass update of both level up and teachable moves (PoryMoves has slightly different syntax for some forms)
 - Stay on EVs/IVs when switching Pokémon
 - Hyper Voice tutor->TM?
+- Edit remaining friendship evolution methods
+    - See if it's possible to condense friendship/level evos by replacing "EVO_FRIENDSHIP, 0" with "EVO_FRIENDSHIP, level" (update HGSS text)
 - Replace Waterfall (and maybe Surf) with an item, similar to Dive
 - Edit moves that work in field
     - Maybe edit so instead of "if has move" to "if can learn move"
@@ -151,7 +153,6 @@ upcoming
 - Brendan/May/Steven rematches?
 - Give Absol/Ceruledge Sharpness?
 - Debug menu improvements
-- Edit friendship evolution methods
 - Add FRLG trainer sprites/overworld sprites
     - Sprites are added but still need to be implemented. Overworld sprites may have duplicates for Pokémon and may need palettes
 - Make inserting trainer sprites easier?

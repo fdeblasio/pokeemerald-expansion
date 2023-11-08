@@ -37,6 +37,8 @@
 - Mirage Island should appear every other day (might need fixing)
 - Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)
 - Tickets for islands where Latios, Latias, Deoxys, Lugia, Ho-Oh, and Mew reside are given after beating the Elite Four
+- Battle Frontier no longer requires saving
+- SS Tidal trainers can be rebattled every trip
 
 **Quality of life changes thanks to tutorials (credit in README.md):**
 - You can nickname and relearn moves from the party menu
@@ -133,6 +135,8 @@
     - Accuracy: 80->100
 - Surf
     - Target: Both foes and ally->both foes
+- Ancient Power/Silver Wind/Ominous Wind:
+    - PP: 5->10
 
 **Many other moves (especially signature moves) were given 100% accuracy:**
 - Normal:

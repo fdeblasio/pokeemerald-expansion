@@ -37,6 +37,8 @@
 - Mirage Island should appear every other day (might need fixing)
 - Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)
 - Tickets for islands where Latios, Latias, Deoxys, Lugia, Ho-Oh, and Mew reside are given after beating the Elite Four
+    - Latios and Latias no longer roam and instead both show up on Southern Island
+    - The Deoxys puzzle is much simpler
 - Battle Frontier no longer requires saving
 - SS Tidal trainers can be rebattled every trip
 
@@ -357,6 +359,7 @@
     - Spe: 93->95
 
 - Magmortar (postgame):
+    - Ability: Flame Body->Flash Fire
     - Atk: 95->100
     - Def: 67->70
     - Spe: 83->85

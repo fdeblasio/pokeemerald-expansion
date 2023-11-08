@@ -104,7 +104,7 @@ upcoming
 - TM Case?
 - Get PokeNav to work indoors?
     - Stop trainers from calling you shortly after loading the game
-- Edit last mass outbreak
+- Edit Surskit mass outbreak
 - Edit contests?
 - Stop daycare from deleting moves
 - Add relearning moves to PC?
@@ -140,17 +140,17 @@ upcoming
         - Spinda: Thrash if Own Tempo, Superpower if Contrary. Should be given a cool pattern (maybe 88888888?)
     - Fix Winona's rematches being male; Pelipper gets Drizzle?
     - Gym leaders/Steven/Breeders can have Hidden Abilities
-    - Maxie/Archie/Steven use Mega Evolutions
+    - Maxie/Archie use Mega Evolutions
     - Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma. Mega Evo for Houndoom but unsure for Ninetales)
         - Could swap out Huntail for Mega Gyarados and only it and Houndoom get items
 - Add postgame Pokémon to Hoenn Dex? National Dex is useless due to no connectivity with other games
 - In game trades
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
-- Magmortar Flash Fire?
-- Cherrim (what does this mean?)
+- Cherrim (what does this mean? Give sunny form BST boost from PLA?)
+- Give Soul Dew both effects? (Without the ban/Battle Frontier nullification)
 - Edit max money?
 - Actually go through SS Tidal now that you'll have more bag space
-- Brendan/May/Steven rematches?
+- Brendan/May/Steven rematches? (Steven's would be the same team but re-battleable)
 - Give Absol/Ceruledge Sharpness?
 - Debug menu improvements
 - Add FRLG trainer sprites/overworld sprites

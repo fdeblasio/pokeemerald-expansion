@@ -4371,7 +4371,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     {
         .baseHP        = 45,
         .baseAttack    = 30,
-        .baseDefense   = 15,
+        .baseDefense   = 20,
         .baseSpeed     = 65,
         .baseSpAttack  = 85,
         .baseSpDefense = 65,
@@ -4393,7 +4393,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     {
         .baseHP        = 65,
         .baseAttack    = 50,
-        .baseDefense   = 35,
+        .baseDefense   = 45,
         .baseSpeed     = 95,
         .baseSpAttack  = 115,
         .baseSpDefense = 95,
@@ -15301,7 +15301,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .evYield_HP        = 2,                             \
         .itemCommon = ITEM_ORAN_BERRY,                      \
         .itemRare = ITEM_SITRUS_BERRY,                      \
-        .genderRatio = PERCENT_FEMALE(50),                  \
+        .genderRatio = PERCENT_FEMALE(75),                  \
         .eggCycles = 20,                                    \
         .friendship = STANDARD_FRIENDSHIP,                  \
         .growthRate = GROWTH_FAST,                          \
@@ -15312,14 +15312,14 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_AUDINO] =
     {
         AUDINO_MISC_INFO,
-        .baseHP        = 103,
+        .baseHP        = 105,
         .baseAttack    = 60,
         .baseDefense   = 86,
         .baseSpeed     = 50,
         .baseSpAttack  = 60,
         .baseSpDefense = 86,
         .types = { TYPE_NORMAL, TYPE_NORMAL},
-        .expYield = 390,
+        .expYield = 395,
         .abilities = {ABILITY_HEALER, ABILITY_REGENERATOR, ABILITY_KLUTZ},
         .bodyColor = BODY_COLOR_PINK,
     },
@@ -15328,14 +15328,14 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_AUDINO_MEGA] =
     {
         AUDINO_MISC_INFO,
-        .baseHP        = 103,
+        .baseHP        = 105,
         .baseAttack    = 60,
         .baseDefense   = 126,
         .baseSpeed     = 50,
         .baseSpAttack  = 80,
         .baseSpDefense = 126,
         .types = { TYPE_NORMAL, TYPE_FAIRY},
-        .expYield = 425,
+        .expYield = 525,
         .abilities = {ABILITY_HEALER, ABILITY_HEALER, ABILITY_HEALER},
         .bodyColor = BODY_COLOR_WHITE,
         .flags = SPECIES_FLAG_MEGA_EVOLUTION,

@@ -108,7 +108,6 @@ upcoming
 - Remove unused code
 - Pokémon in Frontier/Trainer Hill should be registered in Dex
 - Update Shiftry's Hidden Ability to Wind Rider
-- Add Farigiraf to Hoenn Dex once implemented
 - Add Ice Spinner as a TM (and maybe give to Beartic/Mamoswine/other Ice types) once implemented?
     - Alternitavely could have Icicle Crash as a TM/given to more Pokémon since it got updated to have 100% accuracy
 - More save space editing

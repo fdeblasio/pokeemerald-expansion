@@ -282,28 +282,6 @@ In college, I had you list some of your favorite Pokémon and told you I'd make 
 - Cleffa:
     - Can also evolve at level 12
 
-- Parasect (not in main game):
-    - Held items:
-        - Tiny Mushroom: 50%->0%
-        - Big Mushroom: 5%->50%
-        - Balm Mushroom: 0%->5%
-
-- Alolan Meowth: (not in main game):
-    - Can also evolve at level 28
-
-- Igglybuff:
-    - Can also evolve at level 12
-
-- Psyduck:
-    - Type: Water->Water/Psychic
-
-- Golduck:
-    - Type: Water->Water/Psychic
-    - Learns Power Gem upon evolving
-
-- Golbat:
-    - Can also evolve at level 33
-
 - Kadabra/Alakazam:
     - Held item: Twisted Spoon: 5%->100%
 
@@ -313,42 +291,32 @@ In college, I had you list some of your favorite Pokémon and told you I'd make 
 - Golem:
     - Learns Body Press by TM (Teal Mask addition)
 
-- Cloyster (not in main game):
+- Cloyster:
     - Held items:
         - Pearl: 50%->0%
         - Big Pearl: 5%->50%
         - Pearl String: 0%->5%
     - Learns Body Press by TM
 
-- Gastly/Haunter/Gengar (not in main game):
-    - Type: Ghost/Poison->Ghost
-
-- Alolan Exeggutor (not in main game):
-    - Atk: 105->125
-    - SpA: 125->105
-
-- Cubone/Marowak (not in main game):
-    - Held items:
-        - Thick Club: 5%->50%
-        - Rare Bone: 0%->5%
-
-- Farfetch'd (not in main game):
-    - Held item: Leek: 5%->100%
-
-- Sirfetch'd (not in main game):
-    - Held item: Leek: 5%->100%
-    - Learns Drain Punch by TM
-
-- Cloyster:
-    - Learns Body Press by TM
-
 - Gastly/Haunter/Gengar:
     - Type: Ghost/Poison->Ghost
 
 - Cubone:
+    - Held items:
+        - Thick Club: 5%->50%
+        - Rare Bone: 0%->5%
     - Can also evolve into Alolan Marowak with a Fire Stone
 
+- Marowak:
+    - Held items:
+        - Thick Club: 5%->50%
+        - Rare Bone: 0%->5%
+
+- Farfetch'd:
+    - Held item: Leek: 5%->100%
+
 - Sirfetch'd:
+    - Held item: Leek: 5%->100%
     - Learns Drain Punch by TM
 
 - Lickitung:
@@ -366,28 +334,7 @@ In college, I had you list some of your favorite Pokémon and told you I'd make 
 - Rhyperior:
     - Learns Rock Wrecker upon evolving
 
-- Happiny (postgame):
-    - Base exp: 110->250
-    - Held item: Lucky Egg: 0%->5%
-
-- Chansey (postgame):
-    - Held item: Lucky Punch: 50%->100%
-    - Can also evolve at level 36
-
-- Blissey (postgame):
-    - Held item: Lucky Egg: 50%->100%
-
-- Pinsir:
-    - Catch rate: 45->90
-
-- Mime Jr./Mr. Mime:
-    - Gender Ratio: 50/50->100/0
-    - Type: Psychic/Fairy->Psychic
-
-- Mr. Rime (not in main game):
-    - Gender Ratio: 50/50->100/0
-
-- Scyther (not in main game):
+- Scyther:
     - Catch rate: 45->90
     - Learns Dual Wingbeat by level up
     - Learns Lunge by TM
@@ -402,7 +349,7 @@ In college, I had you list some of your favorite Pokémon and told you I'd make 
 - Jynx (not in main game):
     - Def: 35->40
 
-- Elekid (postgame):
+- Elekid:
     - Atk: 63->65
     - Def: 37->40
     - SpA: 65->70
@@ -513,14 +460,6 @@ In college, I had you list some of your favorite Pokémon and told you I'd make 
 - Mamoswine:
     - Learns Icicle Crash by level up
 
-- Delibird (not in main game):
-    - Atk: 55->75
-    - Hidden Ability: Insomnia->Technician
-    - Learns Ice Punch by level up
-
-- Mantyke (not in main game):
-    - Catch rate: 25->90
-
 - Lugia:
     - Learns Brave Bird by level up
 
@@ -530,9 +469,6 @@ In college, I had you list some of your favorite Pokémon and told you I'd make 
 - Blaziken:
     - Learns Blaze Kick upon evolving
     - Learns Drain Punch by TM
-
-- Mudkip:
-    - Swapped level 3 and 6 moves to make first rival battle easier
 
 - Mightyena:
     - Learns Psychic Fangs by TM
@@ -547,12 +483,6 @@ In college, I had you list some of your favorite Pokémon and told you I'd make 
         - Balm Mushroom: 0%->5%
     - Learns Spore and Drain Punch by level up
 
-- Slaking:
-    - Learns Giga Impact by level up
-
-- Nincada/Ninjask/Shedinja:
-    - Learn Leech Life by level up
-
 - Whismur:
     - Learn Disarming Voice by level up
 
@@ -563,45 +493,13 @@ In college, I had you list some of your favorite Pokémon and told you I'd make 
 - Nosepass/Probopass:
     - Learn Body Press by level up
 
-- Delcatty:
-    - Learns Swift via level up
-
-- Sableye:
-    - Catch rate: 45->90
-
 - Mawile:
     - Catch rate: 45->90
     - Held item: Occa Berry: 0%->50%
     - Learns Metal Claw and Smart Strike by level up
 
-- Volbeat:
-    - Atk: 73->75
-    - SpA: 47->75
-    - Illuminate->Tinted Lens
-    - Learn Air Slash by TM (Teal Mask addition)
-
-- Illumise:
-    - Atk: 47->75
-    - SpA: 73->75
-    - Oblivious->Illuminate
-    - Tinted Lens->Oblivious
-    - Learn Air Slash by TM (Teal Mask addition)
-
-- Budew:
-    - Can also evolve at level 13
-    - Gender Ratio: 50/50->75/25
-
-- Roselia/Roserade:
-    - Gender Ratio: 50/50->75/25
-    - Held items:
-        - Poison Barb: 5%->50%
-        - Absorb Bulb: 0%->5%
-
 - Numel/Camerupt
     - Held item: Rawst Berry: 0%->100%
-
-- Spinda:
-    - All stats: 60->70
 
 - Altaria:
     - Learns Air Slash by TM
@@ -620,68 +518,14 @@ In college, I had you list some of your favorite Pokémon and told you I'd make 
     - HP: 73->75
     - Spe: 65->75
 
-- Lunatone:
-    - Learns Icy Wind by level up
-
-- Solrock:
-    - Learns Power Gem and Solar Blade by level up
-
-- Whiscash:
-    - Atk: 78->90
-    - Def: 73->75
-    - SpA: 76->80
-    - SpD: 71->75
-    - Spe: 60->70
-    - Learns Dragon Dance by level up
-
 - Claydol:
     - Learns Zen Headbutt by level up
-
-- Castform:
-    - All stats: 70->75
-    - Learns Surf, Flamethrower, and Ice Beam by level up
-    - Learns Thunder and Solar Beam by level up
-    - Learns Overheat by TM
-    - Learns Surf by HM
-
-- Duskull/Dusclops:
-    - Learns Spite by breeding
-
-- Dusknoir:
-    - Learns Spite by breeding
-    - Learns Drain Punch by TM
-    - Learns Leech Life by TM (Teal Mask addition)
-    - Gets Iron Fist as second Ability
-
-- Tropius:
-    - HP: 99->100
-    - Atk: 68->70
-    - Def: 83->85
-    - SpA: 72->80
-    - SpD: 87->90
-    - Spe: 51->55
-    - Held item: Nanab Berry: 0%->100%
 
 - Chingling:
     - Can also evolve at level 19
 
 - Absol:
     - Learns Spite by breeding
-
-- Huntail:
-    - Holding a Deep Sea Tooth multiplies its Attack by 1.5
-    - Atk: 104->114
-
-- Gorebyss:
-    - Holding a Deep Sea Scale multiplies its Defense by 1.5
-    - Atk: 84->94
-    - Learns Leech Life by TM
-
-- Luvdisc:
-    - HP: 43->50
-    - SpA: 40->60
-    - Spd: 97->100
-    - Held item: Heart Scale: 50%->100%
 
 - Salamence:
     - Learns Dual Wingbeat by level up
@@ -713,7 +557,7 @@ In college, I had you list some of your favorite Pokémon and told you I'd make 
 - Torterra:
     - Atk: 109->110
     - Spe: 56->60
-    - Gets a Mega Evolution since the other two starters do, although the sprite is currently the same:
+    - Gets a "Mega Evolution" since the other two starters do, although the sprite is currently the same:
         - HP: 95
         - Atk: 140
         - Def: 140
@@ -724,24 +568,6 @@ In college, I had you list some of your favorite Pokémon and told you I'd make 
     - Learns Body Press and Zen Headbutt by TM (Teal Mask addition)
     - Learns Grassy Glide by move tutor (Teal Mask addition)
     - Learns Shell Smash after evolving
-
-- Chimchar:
-    - Evolution: 14->16
-
-- Infernape:
-    - Learns Aura Sphere by TM (Teal Mask addition)
-
-- Cranidos/Rampardos:
-    - Received Rock Head as a second ability
-
-- Shieldon/Bastiodon:
-    - Received Rock Head as a second ability
-
-- Buneary:
-    - Can also evolve at level 23
-
-- Glameow:
-    - Evolution: 38->34
 
 - Skuntank:
     - HP: 103->105
@@ -754,20 +580,15 @@ In college, I had you list some of your favorite Pokémon and told you I'd make 
 - Riolu:
     - Can also evolve at level 20
 
-- Whirlipede:
-    - Learns Lunge by TM
-
-- Woobat:
-    - Can also evolve at level 24
-
 - Audino:
     - HP: 103->105
+    - Type: Normal->Normal/Fairy
     - Gender Ratio: 50/50 -> 25/75
     - Base experience: 390->395
-    - Mega base experience: 425->500
+    - Mega base experience: 425->608
 
-- Swadloon:
-    - Can also evolve at level 30
+- Whirlipede:
+    - Learns Lunge by TM
 
 - Scolipede:
     - Learns Coil by level up
@@ -779,53 +600,11 @@ In college, I had you list some of your favorite Pokémon and told you I'd make 
 - Krokorok (postgame):
     - Evolution: 40->38
 
-- Audino:
-    - Type: Normal->Normal/Fairy
-    - Gender Ratio: 50/50 -> 25/75
-    - Base experience: 390->395
-    - Mega base experience: 425->608
-
 - Darumaka:
     - Evolution: 35->32
 
-- Galarian Darumaka/Darmanitan:
-    - Held item: Snowball: 0%->50%
-
-- Scraggy:
-    - Evolution: 39->35
-
 - Carracosta:
     - Learns Body Press by TM
-
-- Gothita:
-    - Evolution: 32->22
-
-- Gothorita:
-    - Evolution: 41->35
-
-- Solosis:
-    - Evolution: 32->22
-
-- Duosion:
-    - Evolution: 41->35
-
-- Ducklett:
-    - Evolution: 35->33
-
-- Vanillite:
-    - Evolution: 35->30
-
-- Vanillish:
-    - Evolution: 47->42
-
-- Foongus:
-    - Evolution: 39->36
-
-- Amoonguss:
-    - Held items:
-        - Tiny Mushroom: 50%->0%
-        - Big Mushroom: 5%->50%
-        - Balm Mushroom: 0%->5%
 
 - Joltik:
     - Evolution: 36->32

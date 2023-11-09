@@ -27,7 +27,7 @@ upcoming
 - AI_FLAG_ACE_POKEMON doesn't seem to work
 - HGSS Pokédex (currently disabled):
     - TMs don't line up. This is due to the code assuming that in teachable_learnsets, the TMs will come before the tutor moves.
-    - Shows evolutions multiple times
+    - Shows evolutions multiple times (for this branch, only effects stone/location evos)
 - If you help one of the Lilycove ladies, the other lady thinks you've already helped her as well
 
 #### Potentially just savefile issues due to playing while hacking
@@ -42,7 +42,6 @@ upcoming
     - Figure out a way to mass update of both level up and teachable moves (PoryMoves has slightly different syntax for some forms)
 - Stay on EVs/IVs when switching Pokémon
 - Hyper Voice tutor->TM?
-- See if it's possible to condense friendship/level evos by replacing "EVO_FRIENDSHIP, 0" with "EVO_FRIENDSHIP, level" (update HGSS text)
 - Replace Waterfall (and maybe Surf) with an item, similar to Dive
 - Edit moves that work in field
     - Maybe edit so instead of "if has move" to "if can learn move"

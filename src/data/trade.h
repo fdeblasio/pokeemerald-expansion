@@ -1007,7 +1007,7 @@ static const struct InGameTrade sIngameTrades[] =
         .ivs = {31, 31, 31, 31, 31, 31},
         .abilityNum = 2,
         .otId = 73996,
-        .conditions = {5, 5, 30, 5, 5},
+        .conditions = {5, 5, 5, 30, 5},
         .personality = 0x6F,
         .heldItem = ITEM_WOOD_MAIL,
         .mailNum = 0,
@@ -1039,10 +1039,10 @@ static const struct InGameTrade sIngameTrades[] =
         .ivs = {31, 31, 31, 31, 31, 31},
         .abilityNum = 2,
         .otId = 91481,
-        .conditions = {5, 5, 5, 30, 5},
+        .conditions = {5, 5, 30, 5, 5},
         .personality = 0x8B,
-        .heldItem = ITEM_RETRO_MAIL,
-        .mailNum = 2,
+        .heldItem = ITEM_WHIPPED_DREAM,
+        .mailNum = -1,
         .otName = _("Isis"),
         .otGender = FEMALE,
         .sheen = 10,
@@ -1072,16 +1072,6 @@ static const u16 sIngameTradeMail[][MAIL_WORDS_COUNT + 1] =
         EC_WORD_TRAIN,
         EC_POKEMON_NATIONAL(CUBCHOO),
         EC_WORD_WELL
-    }, {
-        EC_WORD_THANK_YOU,
-        EC_WORD_FOR,
-        EC_POKEMON_NATIONAL(SPRITZEE),
-        EC_POKEMON_NATIONAL(SWIRLIX),
-        EC_WORD_CRIES,
-        EC_WORD_IN,
-        EC_WORD_A,
-        EC_WORD_CUTE,
-        EC_WORD_WAY
     }
 };
 

@@ -19,7 +19,6 @@
     - The Escape Rope can by used in the Trick Room puzzles that involve Cut/Strength
     - Dive has been replaced by a key item
 - Berry trees give more berries
-- Some wild Pokémon have better chances of holding items
 - Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room
     - The door to Sealed Chamber and the Regis' inner rooms are now automatically open
 - Made rapids easier to navigate so that only one trip is needed to get all items/battle all trainers (at the cost of looking slightly worse)
@@ -249,13 +248,24 @@
     - Can now breed
 
 - Pichu:
+    - Held item: None->Light Ball
     - Can also evolve at level 12
 
-- Pikachu/Raichu:
-    - Learn Volt Tackle at level 1
+- Pikachu
+    - Held item: Light Ball: 5%->100%
+    - Learns Volt Tackle at level 1
+
+- Raichu:
+    - Learns Volt Tackle at level 1
 
 - Cleffa (not in main game):
     - Can also evolve at level 12
+
+- Parasect (not in main game):
+    - Held items:
+        - Tiny Mushroom: 50%->0%
+        - Big Mushroom: 5%->50%
+        - Balm Mushroom: 0%->5%
 
 - Alolan Meowth: (not in main game):
     - Can also evolve at level 28
@@ -273,6 +283,9 @@
 - Golbat:
     - Can also evolve at level 33
 
+- Kadabra/Alakazam:
+    - Held item: Twisted Spoon: 5%->100%
+
 - Machamp:
     - Learns Drain Punch by TM
 
@@ -280,6 +293,10 @@
     - Learns Body Press by TM (Teal Mask addition)
 
 - Cloyster (not in main game):
+    - Held items:
+        - Pearl: 50%->0%
+        - Big Pearl: 5%->50%
+        - Pearl String: 0%->5%
     - Learns Body Press by TM
 
 - Gastly/Haunter/Gengar (not in main game):
@@ -289,7 +306,16 @@
     - Atk: 105->125
     - SpA: 125->105
 
+- Cubone/Marowak (not in main game):
+    - Held items:
+        - Thick Club: 5%->50%
+        - Rare Bone: 0%->5%
+
+- Farfetch'd (not in main game):
+    - Held item: Leek: 5%->100%
+
 - Sirfetch'd (not in main game):
+    - Held item: Leek: 5%->100%
     - Learns Drain Punch by TM
 
 - Doduo/Dodrio:
@@ -315,16 +341,24 @@
 
 - Happiny (postgame):
     - Base exp: 110->250
+    - Held item: Lucky Egg: 0%->5%
 
 - Chansey (postgame):
+    - Held item: Lucky Punch: 50%->100%
     - Can also evolve at level 36
+
+- Blissey (postgame):
+    - Held item: Lucky Egg: 50%->100%
 
 - Pinsir:
     - Catch rate: 45->90
 
-- Mime Jr./Mr. Mime/Mr. Rime (not in main game):
+- Mime Jr./Mr. Mime:
     - Gender Ratio: 50/50->100/0
     - Type: Psychic/Fairy->Psychic
+
+- Mr. Rime (not in main game):
+    - Gender Ratio: 50/50->100/0
 
 - Scyther (not in main game):
     - Catch rate: 45->90
@@ -371,8 +405,7 @@
     - Spe: 83->85
 
 - Magikarp:
-    - Learns Hydro Pump at level 35
-    - Learns Bounce at level 45
+    - Learns Bounce and Hydro Pump by level up
 
 - Gyarados:
     - Type: Water/Flying->Water
@@ -487,6 +520,9 @@
     - Hidden Ability: Insomnia->Technician
     - Learns Ice Punch by level up
 
+- Mantyke (not in main game):
+    - Catch rate: 25->90
+
 - Lugia:
     - Learns Brave Bird by level up
 
@@ -523,6 +559,10 @@
     - Learns Acrobatics by TM
 
 - Breloom:
+    - Held items:
+        - Tiny Mushroom: 50%->0%
+        - Big Mushroom: 5%->50%
+        - Balm Mushroom: 0%->5%
     - Learns Spore and Drain Punch by level up
 
 - Slaking:
@@ -531,10 +571,12 @@
 - Nincada/Ninjask/Shedinja:
     - Learn Leech Life by level up
 
-- Whismur/Loudred/Exploud:
-    - Received Punk Rock as a second ability
+- Whismur:
     - Learn Disarming Voice by level up
-    - Loudred and Exploud learn Teeter Dance and Dizzy Punch via level up
+
+- Loudred/Exploud:
+    - Received Punk Rock as a second ability
+    - Learn Disarming Voice, Teeter Dance, and Dizzy Punch via level up
 
 - Makuhita:
     - Catch rate: 180->220
@@ -546,13 +588,14 @@
     - Learn Body Press by level up
 
 - Delcatty:
-    - Gets Swift via level up
+    - Learns Swift via level up
 
 - Sableye:
     - Catch rate: 45->90
 
 - Mawile:
     - Catch rate: 45->90
+    - Held item: Occa Berry: 0%->50%
     - Learns Metal Claw and Smart Strike by level up
 
 - Volbeat:
@@ -574,6 +617,12 @@
 
 - Roselia/Roserade:
     - Gender Ratio: 50/50->75/25
+    - Held items:
+        - Poison Barb: 5%->50%
+        - Absorb Bulb: 0%->5%
+
+- Numel/Camerupt
+    - Held item: Rawst Berry: 0%->100%
 
 - Spinda:
     - All stats: 60->70
@@ -599,8 +648,7 @@
     - Learns Icy Wind by level up
 
 - Solrock:
-    - Learns Power Gem by level up
-    - Learns Solar Blade by level up
+    - Learns Power Gem and Solar Blade by level up
 
 - Whiscash:
     - Atk: 78->90
@@ -636,6 +684,7 @@
     - SpA: 72->80
     - SpD: 87->90
     - Spe: 51->55
+    - Held item: Nanab Berry: 0%->100%
 
 - Chingling:
     - Can also evolve at level 19
@@ -656,6 +705,7 @@
     - HP: 43->50
     - SpA: 40->60
     - Spd: 97->100
+    - Held item: Heart Scale: 50%->100%
 
 - Salamence:
     - Learns Dual Wingbeat by level up
@@ -696,9 +746,6 @@
 
 - Infernape:
     - Learns Aura Sphere by TM (Teal Mask addition)
-
-- Empoleon:
-    - Hidden Ability: Defiant->Competitive (Teal Mask change)
 
 - Cranidos/Rampardos:
     - Received Rock Head as a second ability
@@ -751,6 +798,9 @@
 - Darumaka:
     - Evolution: 35->32
 
+- Galarian Darumaka/Darmanitan:
+    - Held item: Snowball: 0%->50%
+
 - Scraggy:
     - Evolution: 39->35
 
@@ -780,6 +830,12 @@
 
 - Foongus:
     - Evolution: 39->36
+
+- Amoonguss:
+    - Held items:
+        - Tiny Mushroom: 50%->0%
+        - Big Mushroom: 5%->50%
+        - Balm Mushroom: 0%->5%
 
 - Joltik:
     - Evolution: 36->32

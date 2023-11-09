@@ -8850,7 +8850,7 @@ const struct Item gItems[] =
 
     [ITEM_FAME_CHECKER] =
     {
-        .name = _("Fame Checker"),
+        .name = _("Fall Scaler"),
         .price = 0,
         .description = sFameCheckerDesc,
         .importance = 1,

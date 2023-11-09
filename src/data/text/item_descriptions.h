@@ -3650,9 +3650,9 @@ static const u8 sPokeFluteDesc[] = _(
     "Pokémon.");
 
 static const u8 sFameCheckerDesc[] = _(
-    "Stores information\n"
-    "on famous people\n"
-    "for instant recall.");
+    "Allows the user\n"
+    "to scale waterfalls\n"
+    "with ease");
 
 static const u8 sTeachyTVDesc[] = _(
     "A TV set tuned to\n"

@@ -661,7 +661,7 @@
     - Learns Dual Wingbeat by level up
 
 - Latios/Latias:
-    - Level up learnset slightly restructured to avoid a battle they where only have one attacking move
+    - Level up learnset slightly restructured to avoid a battle where they only have one attacking move
 
 - Kyogre:
     - Learns Origin Pulse at level 63 instead of level 1

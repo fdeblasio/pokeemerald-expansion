@@ -3590,7 +3590,7 @@ static const struct TrainerMon sParty_RafiAndKim1[] = {
     .ability = ABILITY_SCRAPPY,
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .moves = {MOVE_DRAIN_PUNCH, MOVE_KNOCK_OFF, MOVE_FIRST_IMPRESSION, MOVE_IRON_DEFENSE},
-    .heldItem = ITEM_BLACK_BELT,
+    .heldItem = ITEM_LEEK,
     },
     {
     .lvl = 42,
@@ -11258,7 +11258,7 @@ static const struct TrainerMon sParty_RafiAndKim2[] = {
     .ability = ABILITY_SCRAPPY,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .moves = {MOVE_DRAIN_PUNCH, MOVE_LEAF_BLADE, MOVE_BRAVE_BIRD, MOVE_SWORDS_DANCE},
-    .heldItem = ITEM_SHARP_BEAK,
+    .heldItem = ITEM_LEEK,
     },
     {
     .lvl = 65,
@@ -11299,10 +11299,11 @@ static const struct TrainerMon sParty_RafiAndKim3[] = {
     },
     {
     .lvl = 70,
-    .species = SPECIES_LUNATONE,
+    .species = SPECIES_SIRFETCHD,
+    .ability = ABILITY_SCRAPPY,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_ICY_WIND, MOVE_COSMIC_POWER},
-    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_DRAIN_PUNCH, MOVE_LEAF_BLADE, MOVE_BRAVE_BIRD, MOVE_SWORDS_DANCE},
+    .heldItem = ITEM_LEEK,
     },
     {
     .lvl = 70,
@@ -11343,10 +11344,11 @@ static const struct TrainerMon sParty_RafiAndKim4[] = {
     },
     {
     .lvl = 75,
-    .species = SPECIES_LUNATONE,
+    .species = SPECIES_SIRFETCHD,
+    .ability = ABILITY_SCRAPPY,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_ICY_WIND, MOVE_COSMIC_POWER},
-    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_DRAIN_PUNCH, MOVE_LEAF_BLADE, MOVE_BRAVE_BIRD, MOVE_SWORDS_DANCE},
+    .heldItem = ITEM_LEEK,
     },
     {
     .lvl = 75,
@@ -11387,10 +11389,11 @@ static const struct TrainerMon sParty_RafiAndKim5[] = {
     },
     {
     .lvl = 80,
-    .species = SPECIES_LUNATONE,
+    .species = SPECIES_SIRFETCHD,
+    .ability = ABILITY_SCRAPPY,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_ICY_WIND, MOVE_COSMIC_POWER},
-    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_DRAIN_PUNCH, MOVE_LEAF_BLADE, MOVE_BRAVE_BIRD, MOVE_SWORDS_DANCE},
+    .heldItem = ITEM_LEEK,
     },
     {
     .lvl = 80,

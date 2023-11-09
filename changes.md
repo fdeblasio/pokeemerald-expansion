@@ -790,6 +790,7 @@
     - HP: 103->105
     - Gender Ratio: 50/50 -> 25/75
     - Base experience: 390->395
+    - Mega base experience: 425->500
 
 - Swadloon:
     - Can also evolve at level 30

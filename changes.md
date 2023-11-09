@@ -369,7 +369,11 @@
     - Learn Lunge by move tutor (Teal Mask addition)
 
 - Smoochum (not in main game):
+    - Def: 15->20
     - Catch rate: 45->150
+
+- Jynx (not in main game):
+    - Def: 35->40
 
 - Elekid (postgame):
     - Atk: 63->65
@@ -781,6 +785,11 @@
 
 - Woobat:
     - Can also evolve at level 24
+
+- Audino:
+    - HP: 103->105
+    - Gender Ratio: 50/50 -> 25/75
+    - Base experience: 390->395
 
 - Swadloon:
     - Can also evolve at level 30

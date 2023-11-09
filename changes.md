@@ -257,6 +257,9 @@
 - Cleffa (not in main game):
     - Can also evolve at level 12
 
+- Alolan Meowth: (not in main game):
+    - Can also evolve at level 28
+
 - Igglybuff:
     - Can also evolve at level 12
 
@@ -310,8 +313,11 @@
 - Rhyperior:
     - Learns Rock Wrecker upon evolving
 
-- Happiny:
+- Happiny (postgame):
     - Base exp: 110->250
+
+- Chansey (postgame):
+    - Can also evolve at level 36
 
 - Pinsir:
     - Catch rate: 45->90
@@ -700,6 +706,9 @@
 - Shieldon/Bastiodon:
     - Received Rock Head as a second ability
 
+- Buneary:
+    - Can also evolve at level 23
+
 - Glameow:
     - Evolution: 38->34
 
@@ -722,6 +731,12 @@
 
 - Oshawott:
     - Evolution: 17->16
+
+- Woobat:
+    - Can also evolve at level 24
+
+- Swadloon:
+    - Can also evolve at level 30
 
 - Scolipede:
     - Learns Coil by level up
@@ -859,6 +874,9 @@
 
 - Brionne:
     - Evolution: 34->36
+
+- Type: Null:
+    - Can also evolve at level 45
 
 - Thwackey:
     - Evolution: 35->36

@@ -42,8 +42,7 @@ upcoming
     - Figure out a way to mass update of both level up and teachable moves (PoryMoves has slightly different syntax for some forms)
 - Stay on EVs/IVs when switching Pokémon
 - Hyper Voice tutor->TM?
-- Edit remaining friendship evolution methods
-    - See if it's possible to condense friendship/level evos by replacing "EVO_FRIENDSHIP, 0" with "EVO_FRIENDSHIP, level" (update HGSS text)
+- See if it's possible to condense friendship/level evos by replacing "EVO_FRIENDSHIP, 0" with "EVO_FRIENDSHIP, level" (update HGSS text)
 - Replace Waterfall (and maybe Surf) with an item, similar to Dive
 - Edit moves that work in field
     - Maybe edit so instead of "if has move" to "if can learn move"

@@ -33,7 +33,7 @@
 - Battle Pyramid wild Pokémon have been updated
 - Pokémon can now be listed as orange in the Pokédex
 - Underwater areas now connect better
-- Mirage Island should appear every other day (might need fixing)
+- Mirage Island now appears every other day
 - Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)
 - Tickets for islands where Latios, Latias, Deoxys, Lugia, Ho-Oh, and Mew reside are given after beating the Elite Four
     - Latios and Latias no longer roam and instead both show up on Southern Island

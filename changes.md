@@ -978,3 +978,6 @@
 
 - Dragapult:
     - Learns Shadow Claw by TM
+
+- Ceruledge:
+    - Hidden Ability: Weak Armor->Sharpness

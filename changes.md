@@ -40,6 +40,7 @@
     - The Deoxys puzzle is much simpler
 - Battle Frontier no longer requires saving
 - SS Tidal trainers can be rebattled every trip
+- You can now run from wild Pokémon if they are asleep, frozen, or in a semi-invulnerable state (using Fly, Dig, Dive, Bounce, etc.). This works even if they have Shadow Tag/Arena Trap
 
 **Quality of life changes thanks to tutorials (credit in README.md):**
 - You can nickname and relearn moves from the party menu

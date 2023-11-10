@@ -153,7 +153,7 @@ upcoming
 - Edit max money?
 - Actually go through SS Tidal now that you'll have more bag space
 - Brendan/May/Steven rematches? (Steven's would be the same team but re-battleable)
-- Give Absol/Ceruledge Sharpness?
+- Give Absol Sharpness?
 - Debug menu improvements
 - Add FRLG trainer sprites/overworld sprites
     - Sprites are added but still need to be implemented. Overworld sprites may have duplicates for Pokémon and may need palettes

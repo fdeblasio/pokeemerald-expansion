@@ -5,6 +5,12 @@ Find/replace:
 (["\- ][A-Z])([A-Z][A-Zé']+)
 $1\L$2
 
+Merge conflicts:
+<<<<<<< HEAD
+((.*\n)*?)=======
+(.*\n)*?>>>>>>>.*\n
+$1
+
 Debugging (https://cplusplus.com/reference/cstdio/printf/):
 //#define NDEBUG
 

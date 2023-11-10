@@ -49,10 +49,57 @@ upcoming
 - PokeNav callers sometimes think there were 512 wins at the Battle Palace (seems to be related to Battle Tent issue)
 
 ## To Do:
+### Meta
+- More simple modifications: https://www.pokecommunity.com/showthread.php?t=416647&page=1
+- Pret wiki tutorials:       https://github.com/pret/pokeemerald/wiki/Tutorials
+- Combine changes and README?
+    Include more changes, even if general like Battle Frontier edits
+- Remove unused code
+
+### Pokémon
 - Update teachable moves to match Indigo Disk
     - Figure out a way to mass update of both level up and teachable moves (PoryMoves has slightly different syntax for some forms)
 - Stay on EVs/IVs when switching Pokémon
+- Give Absol Sharpness?
+- Give Espeon Power Gem on level up or evolution?
+- Edit Surskit mass outbreak
+- Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
+- Implement changing Deoxys forms at Fallarbor or from bag
+- Cherrim (what does this mean? Give sunny form BST boost from PLA?)
+
+### Items
 - Hyper Voice tutor->TM?
+- See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
+- Include charms?
+- Give Soul Dew both effects? (Without the ban/Battle Frontier nullification)
+- Xaman's TM Case: https://www.pokecommunity.com/showpost.php?p=10378278
+
+### Trainers
+- Have each rematch only be possible after certain badges? Would make rematch levels more consistent
+- Go back and make rematch levels stronger/more consistent (first see if they can be locked behind badges)
+- Elite Four rematches (wouldn't need to use Match Call, could probably do if statement in scripts.inc)
+- Brendan/May/Steven rematches? (Steven's would be the same team but re-battleable)
+- Trainer customization:
+    - Maybe all Rich Boys/Ladies have shinies (would need to have different Pokémon from each other instead of all having Zigzagoon)
+    - Calvin could have a good Nature/EV
+    - Leaders would have optimal Abilities/EVs/IVs/Natures
+- Breeders should have good IVs/Natures/Abilities
+- Triathlete would be Speed-focused (maybe endurance/HP too)
+- Winstrates (including Vito) should have EVs due to the mom mentioning using the Macho Brace
+    - Give Winstrates rematches
+    - Vito can use TMs
+- Tori and Tia should have Spindas that aren't identical
+- Fix Roxanne's rematches being male (due to double battles (which the rematches are) having the personality set before the gender. Can rearrange steps or manually set gender)
+- Fix Flannery's rematches being male; also her Torkoal or Ninetales should have Drought
+- Norman can have Toxic Orb Guts Zangoose
+    - Spinda: Thrash if Own Tempo, Superpower if Contrary. Should be given a cool pattern (maybe 88888888?)
+- Fix Winona's rematches being male; Pelipper gets Drizzle for Hurricane?
+- Gym leaders/Steven/Breeders can have Hidden Abilities
+- Maxie/Archie use Mega Evolutions
+- Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma. Mega Evo for Houndoom but unsure for Ninetales)
+    - Could swap out Huntail for Mega Gyarados and only it and Houndoom get items
+
+### Field Moves
 - Replace Waterfall (and maybe Surf) with an item, similar to Dive
 - Edit moves that work in field
     - Maybe edit so instead of "if has move" to "if can learn move"
@@ -63,138 +110,101 @@ upcoming
     - Strength (only in Trick House and Seafloor Cavern):
         - Superpower?
         - Close Combat?
-- See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
-- Include charms?
+- Add Fly to start menu instead (look at debug menu for guidance)?
+    - Fly to routes?
+
+### Overworld
+- Add accurate overworld sprites (https://github.com/pret/pokeemerald/wiki/Adding-new-event-object-or-overworld-sprites, https://www.pokecommunity.com/showthread.php?t=407124)
+    - Overworld sprites to match trainer sprites (for example, giving Youngsters yellow shirts, girl tubers a yellow tube, Rangers red clothes, Dragon Tamers capes and correct hair color)
+- Add FRLG trainer sprites/overworld sprites
+    - Sprites are added but still need to be implemented. Overworld sprites may have duplicates for Pokémon and may need palettes
+- Improve Pokémon overworld sprites
+
+### Battle Frontier
+- Battle Tent Pokémon/EVs?
+- Make pausing challenge not a soft save (CHALLENGE_STATUS_SAVING)
+- Update rest of apprentice teams
+- Pokémon
+    - EVs
+    - Moves
+- Give BP after every battle?
+- Do better with saving/resting
+- Remove level 50? Or remove Open Level but lower Pokémon to level 50 if over?
+- See if Poke Ball issue no longer occurs on a clean save
+- Edit Battle Frontier messages for Fairy?
+- Add new Pokémon to Frontier mons?
+- Make teams more accurate to trainer classes?
+- Make resting not a soft save (CHALLENGE_STATUS_SAVING)
+- Make retiring not reset streak
+    - Perhaps combine the two to take a pause like in SwSh
+- Battle Tower
+    - Apprentices
+- Battle Factory
+    - Add new moves to moveStyles (sRequiredMoveCounts)
+    - Don't have both Open Level and Level 50 since the Pokémon are rentals anyways?
+
+### Other
 - Readjust wild/trainer levels so that parties aren't overpowered
     - Bring important Trainers up to ORAS levels?
-- Railroad the water routes
-- Add Fly to start menu instead (use modified version of debug menu's flying that doesn't set all flags)?
-        - Fly to routes?
-- Combine changes and README?
-    Include more changes, even if general like Battle Frontier edits
+- Railroad the post-Mossdeep water routes
 - Might need to increase MAX_LEVEL_UP_MOVES and/or MAX_RELEARNER_MOVES
 - Update palettes?:
     - Pokédex (and HGSS Pokédex)
     - battle_transitions/*_bg.pal to better match E4 types
     - stadium/palette3-7.pal to better match E4 types
     - look in graphics/ for more
-- Battle Frontier
-    - Make pausing challenge not a soft save (CHALLENGE_STATUS_SAVING)
-    - Update rest of apprentice teams
-- More simple modifications: https://www.pokecommunity.com/showthread.php?t=416647&page=1
-- Pret wiki tutorials:       https://github.com/pret/pokeemerald/wiki/Tutorials
-- Xaman's TM Case:           https://www.pokecommunity.com/showpost.php?p=10378278
 - New Scriptless Item Balls: https://github.com/pret/pokeemerald/wiki/Set-Up-Item-Balls-on-a-Map-Without-Needing-New-Scripts
 - Type effectiveness in battle: https://www.pokecommunity.com/showpost.php?p=10167016&postcount=83
-- Add accurate overworld sprites (https://github.com/pret/pokeemerald/wiki/Adding-new-event-object-or-overworld-sprites, https://www.pokecommunity.com/showthread.php?t=407124)
-    - Overworld sprites to match trainer sprites (for example, giving Youngsters yellow shirts, girl tubers a yellow tube, Rangers red clothes, Dragon Tamers capes and correct hair color)
-- Improve Pokémon overworld sprites
-- Implement changing forms at Fallarbor or from bag
-- Give Espeon Power Gem on level up or evolution?
 - Add Hyper Training
 - Once Mints are implemented, in Lilycove 3F, move X items to left clerk and make right clerk Mints
     - Or move Mints to left too and have left be Chansey, right be Delibird
 - Get rid of low health constant beeping (https://www.pokecommunity.com/showpost.php?p=10246778&postcount=194)
-- Elite Four rematches (wouldn't need to use Match Call, could probably do if statement in scripts.inc)
 - Replace ifdefs for move stats with just one set of stats?
     - Would likely cause merge conflicts going forward
 - Add EXP Candy
-- Go back and make rematch levels stronger/more consistent (first see if they can be locked behind badges)
-- Type effectiveness in battle
 - PC in menu
     - look at debug menu or at https://www.pokecommunity.com/showpost.php?p=10127351&postcount=47
-- TM Case?
-- Get PokeNav to work indoors?
-    - Stop trainers from calling you shortly after loading the game
-- Edit Surskit mass outbreak
-- Edit contests?
-- Stop daycare from deleting moves
 - Add relearning moves to PC?
-- Simplify Walda codes?
-- Get all the weird Mauville men at once?
-- Update Favor Lady's items to include new items
-- Remove unused code
-- Add Ice Spinner as a TM (and maybe give to Beartic/Mamoswine/other Ice types) once implemented?
-    - Alternitavely could have Icicle Crash as a TM/given to more Pokémon since it got updated to have 100% accuracy
 - More save space editing
     - Medicine Pocket?
     - See if it's possible to give item PC and decoration PC have more room
+- Get PokeNav to work indoors?
+    - Stop trainers from calling you shortly after loading the game
+- Edit contests?
+- Stop daycare from deleting moves
+- Simplify Walda codes?
+- Get all the weird Mauville men at once?
+- Update Favor Lady's items to include new items
+- Add Ice Spinner as a TM (and maybe give to Beartic/Mamoswine/other Ice types) once implemented?
+    - Alternitavely could have Icicle Crash as a TM/given to more Pokémon since it got updated to have 100% accuracy
 - Add 3 other Regis?
     - Add Regigigas to Sealed Chamber?
     - Regieleki near New Mauville?
     - Regidrago near Meteor Falls?
 - Diversify water routes instead of just Tentacool/Wingull (definitely add more Carvanha; bring some fishing encounters to Surf)
-- Spruce up battles/rematches
-    - Have each rematch only be possible after certain badges? Would make rematch levels more consistent
-    - Trainer customization:
-        - Maybe all Rich Boys/Ladies have shinies (would need to have different Pokémon from each other instead of all having Zigzagoon)
-        - Calvin could have a good Nature/EV
-        - Leaders would have optimal Abilities/EVs/IVs/Natures
-    - Breeders should have good IVs/Natures/Abilities
-    - Triathlete would be Speed-focused (maybe endurance/HP too)
-    - Winstrates (including Vito) should have EVs due to the mom mentioning using the Macho Brace
-        - Give Winstrates rematches
-        - Vito can use TMs
-    - Tori and Tia should have Spindas that aren't identical
-    - Fix Roxanne's rematches being male (due to double battles (which the rematches are) having the personality set before the gender. Can rearrange steps or manually set gender)
-    - Fix Flannery's rematches being male; also her Torkoal or Ninetales should have Drought
-    - Norman can have Toxic Orb Guts Zangoose
-        - Spinda: Thrash if Own Tempo, Superpower if Contrary. Should be given a cool pattern (maybe 88888888?)
-    - Fix Winona's rematches being male; Pelipper gets Drizzle?
-    - Gym leaders/Steven/Breeders can have Hidden Abilities
-    - Maxie/Archie use Mega Evolutions
-    - Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma. Mega Evo for Houndoom but unsure for Ninetales)
-        - Could swap out Huntail for Mega Gyarados and only it and Houndoom get items
-- Add postgame Pokémon to Hoenn Dex? National Dex is useless due to no connectivity with other games
-    - Johto starters need Hoenn Dex completed to get, but could have them act similarly to Jirachi/Deoxys
-    - Could remove handing out of National Dex entirely, would need to see what checks if the National Dex exists (like Birch Lab state for Johto)
+- Add postgame Pokémon to Hoenn Pokédex? National Pokédex is useless due to no connectivity with other games
+    - Johto starters need Hoenn Pokédex completed to get, but could have them act similarly to Jirachi/Deoxys
+    - Could remove handing out of National Pokédex entirely, would need to see what checks if the National Pokédex exists (like Birch Lab state for Johto)
+    - Now that Frontier mons are registered in the Pokédex, the National Pokédex is a bit less useless
 - In game trades
-- Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
-- Cherrim (what does this mean? Give sunny form BST boost from PLA?)
-- Give Soul Dew both effects? (Without the ban/Battle Frontier nullification)
 - Edit max money?
-- Actually go through SS Tidal now that you'll have more bag space
-- Brendan/May/Steven rematches? (Steven's would be the same team but re-battleable)
-- Give Absol Sharpness?
 - Debug menu improvements
-- Add FRLG trainer sprites/overworld sprites
-    - Sprites are added but still need to be implemented. Overworld sprites may have duplicates for Pokémon and may need palettes
 - Make inserting trainer sprites easier?
     - Wrapper for src/data/graphics/trainers.h?
 - Contests overhaul
-- Frontier overhaul:
-    - Battle Tent Pokémon/EVs?
-    - Pokémon
-        - EVs
-        - Moves
-    - Give BP after every battle?
-    - Do better with saving/resting
-    - Remove level 50? Or remove Open Level but lower Pokémon to level 50 if over?
-    - See if Poke Ball issue no longer occurs on a clean save
-    - Edit Battle Frontier messages for Fairy?
-    - Add new Pokémon to Frontier mons?
-    - Make teams more accurate to trainer classes?
-    - Make resting not a soft save (CHALLENGE_STATUS_SAVING)
-    - Make retiring not reset streak
-        - Perhaps combine the two to take a pause like in SwSh
-    - Battle Tower
-        - Apprentices
-    - Battle Factory
-        - Add new moves to moveStyles (sRequiredMoveCounts)
-        - Don't have both Open Level and Level 50 since the Pokémon are rentals anyways?
 
 ### Big changes from Vanilla - low priority
 - Remove IVs? Maybe make boolean for either 0 or 31 added to stat
     - Would need to figure out Hidden Power
 - Add Pokémon with dolls? (Togepi, Smoochum, Clefairy, Lapras, Snorlax, Venusaur, Charizard, Blastoise)
-- Make seperate Dex for post-game similar to SwSh DLC dexes (include Outbreaks like Elekid)?
+- Make seperate Pokédex for post-game similar to SwSh DLC Pokédexes (include Outbreaks like Elekid)?
 - Fire Blast/Hydro Pump/Stone Edge accurate in respective weathers?
     - Make Thunder also accurate in Electric Terrain?
 - Calculate Electro Ball more similarly to Gyro Ball?
 - Make Water Veil also up evasion like Sand Veil?
 - Find way to get Hypnosis to always hit if Hypno is using it?
 - Edit Slot odds (SLOT_MACHINE_)? Even though there's only three prizes?
-- Add in Hoenn Dex regionals?
+- Add in Hoenn Pokédex regionals?
     - Sun/Shiny Stone for Alolan Raichu
     - Alolan Sandshrew/Vulpix at Shoal Cave
     - Alolan Muk

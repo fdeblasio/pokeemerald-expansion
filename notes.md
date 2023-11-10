@@ -59,13 +59,11 @@ upcoming
 ### Pokémon
 - Update teachable moves to match Indigo Disk
     - Figure out a way to mass update of both level up and teachable moves (PoryMoves has slightly different syntax for some forms)
-- Stay on EVs/IVs when switching Pokémon
 - Give Absol Sharpness?
 - Give Espeon Power Gem on level up or evolution?
-- Edit Surskit mass outbreak
+- Edit Surskit mass outbreak?
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
 - Implement changing Deoxys forms at Fallarbor or from bag
-- Cherrim (what does this mean? Give sunny form BST boost from PLA?)
 
 ### Items
 - Hyper Voice tutor->TM?

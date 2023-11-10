@@ -13078,13 +13078,11 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-#define CHERRIM_MISC_INFO                                   \
+#define CHERRIM_MISC_INFO                                \
         .baseHP        = 70,                             \
-        .baseAttack    = 60,                             \
         .baseDefense   = 70,                             \
         .baseSpeed     = 85,                             \
         .baseSpAttack  = 87,                             \
-        .baseSpDefense = 78,                             \
         .types = { TYPE_GRASS, TYPE_GRASS},              \
         .catchRate = 75,                                 \
         .expYield = 158,                                 \
@@ -13092,21 +13090,25 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .itemRare = ITEM_MIRACLE_SEED,                   \
         .genderRatio = PERCENT_FEMALE(50),               \
         .eggCycles = 20,                                 \
-        .friendship = STANDARD_FRIENDSHIP,                                \
+        .friendship = STANDARD_FRIENDSHIP,               \
         .growthRate = GROWTH_MEDIUM_FAST,                \
-        .eggGroups = { EGG_GROUP_FAIRY, EGG_GROUP_GRASS},                    \
+        .eggGroups = { EGG_GROUP_FAIRY, EGG_GROUP_GRASS},\
         .abilities = {ABILITY_FLOWER_GIFT, ABILITY_NONE},\
         .noFlip = FALSE
 
     [SPECIES_CHERRIM_OVERCAST] =
     {
         CHERRIM_MISC_INFO,
+        .baseAttack    = 60,
+        .baseSpDefense = 78,
         .bodyColor = BODY_COLOR_PURPLE,
     },
 
     [SPECIES_CHERRIM_SUNSHINE] =
     {
         CHERRIM_MISC_INFO,
+        .baseAttack    = 90,
+        .baseSpDefense = 117,
         .bodyColor = BODY_COLOR_PINK,
     },
 #endif //P_FAMILY_CHERUBI

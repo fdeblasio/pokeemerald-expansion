@@ -12,12 +12,16 @@ Merge conflicts:
 $1
 
 Debugging (https://cplusplus.com/reference/cstdio/printf/):
-//#define NDEBUG
-
-if (mod > 0 && holdEffect == HOLD_EFFECT_FRIENDSHIP_UP)
-  mod = (150 * mod) / 100;
 MgbaPrintf(MGBA_LOG_WARN, "Friendship gain, modified: %d", mod);
 ```
+
+## For release:
+- include/config.h:
+    - Uncomment `//#define NDEBUG`
+- include/config/debug.h:
+    - #define DEBUG_OVERWORLD_MENU            FALSE
+    - #define DEBUG_BATTLE_MENU               FALSE
+    - #define DEBUG_POKEMON_MENU              FALSE
 
 ## Rebasing
 ```
@@ -63,7 +67,6 @@ upcoming
 - Include charms?
 - Readjust wild/trainer levels so that parties aren't overpowered
     - Bring important Trainers up to ORAS levels?
-- Double-check Mirage Island
 - Railroad the water routes
 - Add Fly to start menu instead (use modified version of debug menu's flying that doesn't set all flags)?
         - Fly to routes?
@@ -78,16 +81,15 @@ upcoming
 - Battle Frontier
     - Make pausing challenge not a soft save (CHALLENGE_STATUS_SAVING)
     - Update rest of apprentice teams
-- https://www.pokecommunity.com/showthread.php?t=416647&page=1
-- https://github.com/pret/pokeemerald/wiki/Tutorials
-- https://www.pokecommunity.com/showpost.php?p=10378278
-- https://github.com/pret/pokeemerald/wiki/Set-Up-Item-Balls-on-a-Map-Without-Needing-New-Scripts
-- https://www.pokecommunity.com/showpost.php?p=10127351&postcount=47
-- https://www.pokecommunity.com/showpost.php?p=10167016&postcount=83
+- More simple modifications: https://www.pokecommunity.com/showthread.php?t=416647&page=1
+- Pret wiki tutorials:       https://github.com/pret/pokeemerald/wiki/Tutorials
+- Xaman's TM Case:           https://www.pokecommunity.com/showpost.php?p=10378278
+- New Scriptless Item Balls: https://github.com/pret/pokeemerald/wiki/Set-Up-Item-Balls-on-a-Map-Without-Needing-New-Scripts
+- Type effectiveness in battle: https://www.pokecommunity.com/showpost.php?p=10167016&postcount=83
 - Add accurate overworld sprites (https://github.com/pret/pokeemerald/wiki/Adding-new-event-object-or-overworld-sprites, https://www.pokecommunity.com/showthread.php?t=407124)
     - Overworld sprites to match trainer sprites (for example, giving Youngsters yellow shirts, girl tubers a yellow tube, Rangers red clothes, Dragon Tamers capes and correct hair color)
 - Improve Pokémon overworld sprites
-- Implement Deoxys encounter at island/changing forms at Fallarbor
+- Implement changing forms at Fallarbor or from bag
 - Give Espeon Power Gem on level up or evolution?
 - Add Hyper Training
 - Once Mints are implemented, in Lilycove 3F, move X items to left clerk and make right clerk Mints
@@ -99,7 +101,8 @@ upcoming
 - Add EXP Candy
 - Go back and make rematch levels stronger/more consistent (first see if they can be locked behind badges)
 - Type effectiveness in battle
-- PC in menu (look at debug menu)
+- PC in menu
+    - look at debug menu or at https://www.pokecommunity.com/showpost.php?p=10127351&postcount=47
 - TM Case?
 - Get PokeNav to work indoors?
     - Stop trainers from calling you shortly after loading the game
@@ -111,7 +114,6 @@ upcoming
 - Get all the weird Mauville men at once?
 - Update Favor Lady's items to include new items
 - Remove unused code
-- Update Shiftry's Hidden Ability to Wind Rider
 - Add Ice Spinner as a TM (and maybe give to Beartic/Mamoswine/other Ice types) once implemented?
     - Alternitavely could have Icicle Crash as a TM/given to more Pokémon since it got updated to have 100% accuracy
 - More save space editing

@@ -28,7 +28,7 @@
 - EVs now give one stat increase for every EV but cap out at 63 (individual)/127 (total)
 - Vitamins are cheaper
 - Ability Capsules, Ability Patches, and EV-reducing berries are available to buy in Lilycove (Bottle Caps and Mints not yet implemented)
-- Houndour was added to the Hoenn dex to give Team Magma more variety
+- Houndour was added to the Hoenn Pokédex to give Team Magma more variety
 - Frontier Brains have updated teams
 - Battle Pyramid wild Pokémon have been updated
 - Pokémon can now be listed as orange in the Pokédex
@@ -41,6 +41,7 @@
 - Battle Frontier no longer requires saving
 - SS Tidal trainers can be rebattled every trip
 - You can now run from wild Pokémon if they are asleep, frozen, or in a semi-invulnerable state (using Fly, Dig, Dive, Bounce, etc.). This works even if they have Shadow Tag/Arena Trap
+- Pokémon in the Battle Frontier/Trainer Hill now register in the Pokédex
 
 **Quality of life changes thanks to tutorials (credit in README.md):**
 - You can nickname and relearn moves from the party menu

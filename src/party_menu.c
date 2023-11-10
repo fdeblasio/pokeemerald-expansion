@@ -2843,7 +2843,7 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
         }
     }
 
-    if (sPartyMenuInternal->numActions < 5 && CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES_OR_EGG), MOVE_FLY)) // If Mon can learn HM02 and action list consists of < 4 moves, add Fly to action list
+    if (FlagGet(FLAG_BADGE03_GET) && CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES_OR_EGG), MOVE_FLY)) // If Mon can learn Fly and Trainer has proper badge, add Fly to action list
         AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, FIELD_MOVE_FLY + MENU_FIELD_MOVES);
 
     if (!InBattlePike())
@@ -3977,7 +3977,7 @@ static void CursorCb_FieldMove(u8 taskId)
     }
     else
     {
-        int hmBadges[] = {3, 4, 5, 8};
+        int hmBadges[] = {3, 5, 8};
         // All field moves before WATERFALL are HMs.
         if (fieldMove <= FIELD_MOVE_WATERFALL && FlagGet(FLAG_BADGE01_GET + hmBadges[fieldMove] - 1) != TRUE)
         {

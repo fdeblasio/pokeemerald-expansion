@@ -474,6 +474,12 @@ bool32 TryRunFromBattle(u32 battler)
     {
         effect++;
     }
+    else if (gStatuses3[BATTLE_OPPOSITE(battler)] & STATUS3_SEMI_INVULNERABLE) {
+        effect++;
+    }
+    else if (gBattleMons[BATTLE_OPPOSITE(battler)].status1 & (STATUS1_SLEEP || STATUS1_FREEZE)) {
+        effect++;
+    }
     else
     {
         u8 runningFromBattler = BATTLE_OPPOSITE(battler);

@@ -35,6 +35,7 @@ upcoming
     - TMs don't line up. This is due to the code assuming that in teachable_learnsets, the TMs will come before the tutor moves.
     - Shows evolutions multiple times (for this branch, only effects stone/location evos)
 - If you help one of the Lilycove ladies, the other lady thinks you've already helped her as well
+- Shadow Tag may not be working
 
 #### Potentially just savefile issues due to playing while hacking
 - Items in the Battle Pyramid's Battle Bag/held items in the Battle Pike are turning into Poke Balls
@@ -99,8 +100,6 @@ upcoming
 - Replace ifdefs for move stats with just one set of stats?
     - Would likely cause merge conflicts going forward
 - Add EXP Candy
-- Should be able to run from wild Pokémon if it is Digging, Diving, Flying, Bouncing, etc
-    - Even if ability is Shadow Tag/Arena Trap
 - Go back and make rematch levels stronger/more consistent (first see if they can be locked behind badges)
 - Type effectiveness in battle
 - PC in menu (look at debug menu)

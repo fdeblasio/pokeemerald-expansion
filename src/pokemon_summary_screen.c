@@ -1608,7 +1608,7 @@ static void CloseSummaryScreen(u8 taskId)
 }
 
 // Cycle summary page between stats and EVs/IVs
-static void ChangeSummaryState (s16 *taskData, u8 taskId)
+static void ChangeSummaryState(s16 *taskData, u8 taskId)
 {
     taskData[3] = (taskData[3] + 1) % 2;
     gTasks[taskId].func = Task_HandleInput;
@@ -1621,12 +1621,10 @@ static void Task_HandleInput(u8 taskId)
     {
         if (JOY_NEW(DPAD_UP))
         {
-            data[3] = 0;
             ChangeSummaryPokemon(taskId, -1);
         }
         else if (JOY_NEW(DPAD_DOWN))
         {
-            data[3] = 0;
             ChangeSummaryPokemon(taskId, 1);
         }
         else if ((JOY_NEW(DPAD_LEFT)) || GetLRKeysPressed() == MENU_L_PRESSED)
@@ -3390,10 +3388,7 @@ static void PrintSkillsPageText(void)
 {
     PrintHeldItemName();
     PrintRibbonCount();
-    BufferLeftColumnStats();
-    PrintLeftColumnStats();
-    BufferRightColumnStats();
-    PrintRightColumnStats();
+    BufferIvOrEvStats(gTasks[0].data[3]);
     PrintExpPointsNextLevel();
 }
 

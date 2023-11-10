@@ -109,6 +109,7 @@ upcoming
         - Superpower?
         - Close Combat?
 - Add Fly to start menu instead (look at debug menu for guidance)?
+    - Make Fly usuable after 2nd badge? or maybe even aftering delivering goods in Slateport
     - Fly to routes?
 
 ### Overworld

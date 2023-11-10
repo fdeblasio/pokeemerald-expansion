@@ -87,9 +87,6 @@ upcoming
 - Add accurate overworld sprites (https://github.com/pret/pokeemerald/wiki/Adding-new-event-object-or-overworld-sprites, https://www.pokecommunity.com/showthread.php?t=407124)
     - Overworld sprites to match trainer sprites (for example, giving Youngsters yellow shirts, girl tubers a yellow tube, Rangers red clothes, Dragon Tamers capes and correct hair color)
 - Improve Pokémon overworld sprites
-- Try to find Bolts foreground of Walda PC
-- Get all the weird Mauville men at once?
-- Update Favor Lady's items to include new items
 - Implement Deoxys encounter at island/changing forms at Fallarbor
 - Give Espeon Power Gem on level up or evolution?
 - Add Hyper Training
@@ -110,6 +107,9 @@ upcoming
 - Edit contests?
 - Stop daycare from deleting moves
 - Add relearning moves to PC?
+- Simplify Walda codes?
+- Get all the weird Mauville men at once?
+- Update Favor Lady's items to include new items
 - Remove unused code
 - Update Shiftry's Hidden Ability to Wind Rider
 - Add Ice Spinner as a TM (and maybe give to Beartic/Mamoswine/other Ice types) once implemented?

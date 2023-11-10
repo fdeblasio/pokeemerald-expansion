@@ -9,17 +9,9 @@
 #include "script.h"
 #include "task.h"
 
-void UpdateMirageRnd(u16 days)
-{
-    VarSet(VAR_MIRAGE_RND_L, days);
-}
-
 bool8 IsMirageIslandPresent(void)
 {
-    if (VarGet(VAR_MIRAGE_RND_L) % 2 == 0)
-        return TRUE;
-
-    return FALSE;
+    return VarGet(VAR_DAYS) % 2;
 }
 
 void UpdateShoalTideFlag(void)

@@ -1268,6 +1268,8 @@ static u8 Debug_CheckToggleFlags(u8 id)
                 FlagGet(FLAG_VISITED_SOOTOPOLIS_CITY) &&
                 FlagGet(FLAG_VISITED_EVER_GRANDE_CITY) &&
                 FlagGet(FLAG_LANDMARK_POKEMON_LEAGUE) &&
+                FlagGet(FLAG_LANDMARK_WEATHER_INSTITUTE) &&
+                FlagGet(FLAG_LANDMARK_SOUTHERN_ISLAND) &&
                 FlagGet(FLAG_LANDMARK_BATTLE_FRONTIER);
             break;
         case DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_BADGES_ALL:
@@ -2759,6 +2761,8 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
         FlagClear(FLAG_VISITED_SOOTOPOLIS_CITY);
         FlagClear(FLAG_VISITED_EVER_GRANDE_CITY);
         FlagClear(FLAG_LANDMARK_POKEMON_LEAGUE);
+        FlagClear(FLAG_LANDMARK_WEATHER_INSTITUTE);
+        FlagClear(FLAG_LANDMARK_SOUTHERN_ISLAND);
         FlagClear(FLAG_LANDMARK_BATTLE_FRONTIER);
     }
     else
@@ -2781,6 +2785,8 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
         FlagSet(FLAG_VISITED_SOOTOPOLIS_CITY);
         FlagSet(FLAG_VISITED_EVER_GRANDE_CITY);
         FlagSet(FLAG_LANDMARK_POKEMON_LEAGUE);
+        FlagSet(FLAG_LANDMARK_WEATHER_INSTITUTE);
+        FlagSet(FLAG_LANDMARK_SOUTHERN_ISLAND);
         FlagSet(FLAG_LANDMARK_BATTLE_FRONTIER);
     }
 }

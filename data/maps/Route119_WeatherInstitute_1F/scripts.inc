@@ -5,6 +5,8 @@ Route119_WeatherInstitute_1F_MapScripts::
 	.byte 0
 
 Route119_WeatherInstitute_1F_OnTransition:
+	setrespawn HEAL_LOCATION_ROUTE_119
+	setflag FLAG_LANDMARK_WEATHER_INSTITUTE
 	call_if_eq VAR_WEATHER_INSTITUTE_STATE, 0, Route119_WeatherInstitute_1F_EventScript_SetLittleBoyPos
 	end
 

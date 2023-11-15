@@ -33,4 +33,4 @@ GraniteCave_1F_Text_GetsDarkAheadHereYouGo:
 GraniteCave_1F_Text_ExplainFlash:
 	.string "Teach that technical move Flash to\n"
 	.string "a Pokémon and use it.\p"
-	.string "It lights lowers accuracy!.$"
+	.string "It uses light to lower accuracy!$"

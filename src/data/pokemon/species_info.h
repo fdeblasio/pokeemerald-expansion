@@ -8392,32 +8392,6 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .expYield = 239,
         .abilities = {ABILITY_OVERGROW, ABILITY_NONE, ABILITY_UNBURDEN},
     },
-
-#if P_MEGA_EVOLUTIONS
-    [SPECIES_SCEPTILE_MEGA] =
-    {
-        .baseHP        = 95,
-        .baseAttack    = 140,
-        .baseDefense   = 140,
-        .baseSpeed     = 45,
-        .baseSpAttack  = 100,
-        .baseSpDefense = 100,
-        .types = { TYPE_GRASS, TYPE_GROUND},
-        .catchRate = 45,
-        .expYield = 284,
-        .evYield_Attack    = 2,
-        .evYield_Defense   = 1,
-        .genderRatio = PERCENT_FEMALE(12.5),
-        .eggCycles = 20,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_SLOW,
-        .eggGroups = { EGG_GROUP_MONSTER, EGG_GROUP_GRASS},
-        .abilities = {ABILITY_SOLID_ROCK, ABILITY_SOLID_ROCK, ABILITY_SOLID_ROCK},
-        .bodyColor = BODY_COLOR_GREEN,
-        .noFlip = TRUE,
-        .flags = SPECIES_FLAG_MEGA_EVOLUTION,
-    },
-#endif
 #endif //P_FAMILY_TREECKO
 
 #if P_FAMILY_TORCHIC
@@ -12351,6 +12325,32 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = TRUE,
     },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_SCEPTILE_MEGA] =
+    {
+        .baseHP        = 95,
+        .baseAttack    = 140,
+        .baseDefense   = 140,
+        .baseSpeed     = 45,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 100,
+        .types = { TYPE_GRASS, TYPE_GROUND},
+        .catchRate = 45,
+        .expYield = 284,
+        .evYield_Attack    = 2,
+        .evYield_Defense   = 1,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = { EGG_GROUP_MONSTER, EGG_GROUP_GRASS},
+        .abilities = {ABILITY_SOLID_ROCK, ABILITY_SOLID_ROCK, ABILITY_SOLID_ROCK},
+        .bodyColor = BODY_COLOR_GREEN,
+        .noFlip = TRUE,
+        .flags = SPECIES_FLAG_MEGA_EVOLUTION,
+    },
+#endif
 #endif //P_FAMILY_TURTWIG
 
 #if P_FAMILY_CHIMCHAR

@@ -52,7 +52,7 @@ upcoming
 ### Meta
 - More simple modifications: https://www.pokecommunity.com/showthread.php?t=416647&page=1
 - Pret wiki tutorials:       https://github.com/pret/pokeemerald/wiki/Tutorials
-- Combine changes and README?
+- Combine four meta files (changes.md, notes.md, bossAndTmNotes.txt, and README)?
     Include more changes, even if general like Battle Frontier edits
 - Remove unused code
 

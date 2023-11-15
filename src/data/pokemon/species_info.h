@@ -2195,7 +2195,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = STANDARD_FRIENDSHIP,                          \
         .growthRate = GROWTH_MEDIUM_SLOW,                           \
         .eggGroups = { EGG_GROUP_HUMAN_LIKE, EGG_GROUP_HUMAN_LIKE}, \
-        .bodyColor = BODY_COLOR_YELLOW,                              \
+        .bodyColor = BODY_COLOR_YELLOW,                             \
         .noFlip = FALSE
 
     [SPECIES_ALAKAZAM] =

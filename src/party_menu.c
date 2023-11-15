@@ -6117,7 +6117,6 @@ void DeleteMove(struct Pokemon *mon, u32 move)
             if (existingMove == move)
             {
                 SetMonMoveSlot(mon, MOVE_NONE, i);
-                RemoveMonPPBonus(mon, i);
                 for (j = i; j < MAX_MON_MOVES - 1; j++)
                     ShiftMoveSlot(mon, j, j + 1);
                 break;

@@ -4517,15 +4517,15 @@ static const struct TrainerMon sParty_Andrew[] = {
 static const struct TrainerMon sParty_Ivan[] = {
     {
     .lvl = 5,
-    .species = SPECIES_AZURILL,
+    .species = SPECIES_MAGIKARP,
     },
     {
     .lvl = 6,
-    .species = SPECIES_LOTAD,
+    .species = SPECIES_CORPHISH,
     },
     {
     .lvl = 7,
-    .species = SPECIES_MUDKIP,
+    .species = SPECIES_SQUIRTLE,
     }
 };
 

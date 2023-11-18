@@ -2,6 +2,8 @@
     - However, with the Exp Share now affecting all party members, this can lead to becoming overleveled
 - Decapitalization
 - Shiny Pokémon can no longer spawn until you get Poké Balls
+- Some areas made easier to navigate
+    - Route 102/103: Path from Littleroot to rival is more direct
 - Some reversions back to Ruby and Sapphire
     - Birch is chased by a Poochyena
     - Some trainers on Routes 104 and 117 go back to their original locations
@@ -17,6 +19,7 @@
     - Strength boulders have been removed from everywhere but the Trick House and an optional puzzle in Seafloor Cavern
     - Rock Smash rocks have been removed from everywhere but Rusturf Tunnel. Brick Break can now also break them
     - The Escape Rope can by used in the Trick Room puzzles that involve Cut/Strength
+    - Flash is no longer needed anywhere
     - Dive has been replaced by a key item
 - Berry trees give more berries
 - Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room
@@ -51,14 +54,14 @@
 - Hidden Power type is shown in battle and the summary screen
 - Can swap party members with Select
 - Items in shops are based on the amount of badges you have
-- Bag sorting
+- Bag sorting with Start button
 - More bag space
 - "Move Pokémon" is the first option in the PC
 - The naming screen automatically swaps to lowercase after the first letter
 - Rainy routes will automatically water berries
 - Premier Balls are now given for every multiple of 10 of any ball you buy (as opposed to only 1 for 10+ Poke Balls)
 - Faster text speed
-- Faster walking speed
+- Faster walking/surfing speed
 - Can now use Soot Sack to see how much ash you have
 
 ## Abilities:

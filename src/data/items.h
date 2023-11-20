@@ -11434,7 +11434,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("TM74"),
         .price = 3000,
-        .description = COMPOUND_STRING("Gyro Ball"),
+        .description = COMPOUND_STRING("Nasty Plot"),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,

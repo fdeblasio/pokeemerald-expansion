@@ -21,6 +21,9 @@
     - The Escape Rope can by used in the Trick Room puzzles that involve Cut/Strength
     - Flash is no longer needed anywhere
     - Dive has been replaced by a key item
+- Fly can now be used to go to more places:
+    - The Weather Institute on Route 119
+    - Southern Island
 - Berry trees give more berries
 - Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room
     - The door to Sealed Chamber and the Regis' inner rooms are now automatically open

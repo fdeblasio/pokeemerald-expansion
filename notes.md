@@ -111,6 +111,8 @@ upcoming
 - Add Fly to start menu instead (look at debug menu for guidance)?
     - Make Fly usuable after 2nd badge? or maybe even aftering delivering goods in Slateport
     - Fly to routes?
+        - Route 122: Mt. Pyre
+        - Route 112: Old Lady House
 
 ### Overworld
 - Add accurate overworld sprites (https://github.com/pret/pokeemerald/wiki/Adding-new-event-object-or-overworld-sprites, https://www.pokecommunity.com/showthread.php?t=407124)
@@ -192,6 +194,8 @@ upcoming
 - Make inserting trainer sprites easier?
     - Wrapper for src/data/graphics/trainers.h?
 - Contests overhaul
+- Change Rival brother back to one with glasses?
+- Improve Old Lady house
 
 ### Big changes from Vanilla - low priority
 - Remove IVs? Maybe make boolean for either 0 or 31 added to stat

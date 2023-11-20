@@ -190,8 +190,8 @@ LavaridgeTown_Gym_1F_Text_GymGuideAdvice:
 	.string "bound {PLAYER}?\p"
 	.string "Lavaridge's Gym Leader Carlos\n"
 	.string "uses Bug-type Pokémon.\p"
-	.string "His passion for Pokémon bugs stronger\n"
-	.string "and buggier than a bee.\p"
+	.string "His passion for Pokémon is stronger\n"
+	.string "and buggier than a Heracross.\p"
 	.string "Rock his world and then go for it!$"
 
 LavaridgeTown_Gym_1F_Text_GymGuidePostVictory:
@@ -283,7 +283,7 @@ LavaridgeTown_Gym_B1F_Text_JeffDefeat:
 
 LavaridgeTown_Gym_B1F_Text_JeffPostBattle:
 	.string "Well, so what? I say so what?\n"
-	.string "I can walk on hot coals barefoot!\p"
+	.string "I can walk on bugs barefoot!\p"
 	.string "…Don't even think about trying it!$"
 
 LavaridgeTown_Gym_B1F_Text_EliIntro:

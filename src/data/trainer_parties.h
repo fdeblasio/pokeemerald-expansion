@@ -8711,7 +8711,7 @@ static const struct TrainerMon sParty_Danielle[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 26,
-    .species = SPECIES_FROSMOTH,
+    .species = SPECIES_SNOM,
     }
 };
 

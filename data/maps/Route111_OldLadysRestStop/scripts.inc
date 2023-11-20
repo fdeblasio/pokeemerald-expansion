@@ -19,9 +19,6 @@ Route111_OldLadysRestStop_EventScript_Rest::
 	msgbox Route111_OldLadysRestStop_Text_TakeYourTimeRestUp, MSGBOX_DEFAULT
 	closemessage
 	call Common_EventScript_OutOfCenterPartyHeal
-	msgbox Route111_OldLadysRestStop_Text_StillTiredTakeAnotherRest, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, Route111_OldLadysRestStop_EventScript_Rest
-	goto_if_eq VAR_RESULT, NO, Route111_OldLadysRestStop_EventScript_DeclineRest
 	end
 
 Route111_OldLadysRestStop_EventScript_DeclineRest::
@@ -38,12 +35,6 @@ Route111_OldLadysRestStop_Text_RestUpHere:
 Route111_OldLadysRestStop_Text_TakeYourTimeRestUp:
 	.string "That's right.\n"
 	.string "Take your time and rest up!$"
-
-Route111_OldLadysRestStop_Text_StillTiredTakeAnotherRest:
-	.string "Oh, dear, dear.\n"
-	.string "Are your Pokémon still tired?\p"
-	.string "You should take another rest here.\n"
-	.string "That's a fine idea. You should do that.$"
 
 Route111_OldLadysRestStop_Text_DontNeedToBeShy:
 	.string "Is that so?\n"

@@ -3351,7 +3351,7 @@ static const u8 sTM73Desc[] = _(
     "Thunder Wave");
 
 static const u8 sTM74Desc[] = _(
-    "Gyro Ball");
+    "Nasty Plot");
 
 static const u8 sTM75Desc[] = _(
     "Swords Dance");

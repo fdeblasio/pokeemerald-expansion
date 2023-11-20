@@ -3,6 +3,7 @@ Route111_OldLadysRestStop_MapScripts::
 	.byte 0
 
 Route111_OldLadysRestStop_OnTransition:
+	setrespawn HEAL_LOCATION_ROUTE_111
 	setflag FLAG_LANDMARK_OLD_LADY_REST_SHOP
 	end
 

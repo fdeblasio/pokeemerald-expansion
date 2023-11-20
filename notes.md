@@ -110,9 +110,8 @@ upcoming
         - Close Combat?
 - Add Fly to start menu instead (look at debug menu for guidance)?
     - Make Fly usuable after 2nd badge? or maybe even aftering delivering goods in Slateport
-    - Fly to routes?
-        - Route 122: Mt. Pyre
-        - Route 112: Old Lady House
+    - Fly to routes
+        - Route 108: Abandoned Ship
 
 ### Overworld
 - Add accurate overworld sprites (https://github.com/pret/pokeemerald/wiki/Adding-new-event-object-or-overworld-sprites, https://www.pokecommunity.com/showthread.php?t=407124)

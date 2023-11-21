@@ -162,7 +162,6 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Fill out individual contributers (https://github.com/rh-hideout/pokeemerald-expansion/wiki/Credits)
 - DizzyEgg
     - Starting the Emerald Expansion
-    - [Colored stats by nature](https://github.com/pret/pokeemerald/compare/master...DizzyEggg:pokeemerald:nature_color)
 - [Porymaps](https://github.com/huderlem/porymap/releases/tag/5.1.1)
 - Lunos
     - [Fixing Snow weather](https://github.com/pret/pokeemerald/wiki/Fix-Snow-Weather)

@@ -880,6 +880,9 @@
 - Cubchoo:
     - Evolution: 37->35
 
+- Cryogonal:
+    - Learns Dazzling Gleam, Flash, and Power Gem by TM
+
 - Mienfoo:
     - Evolution: 50->38
 

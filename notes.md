@@ -63,10 +63,6 @@ upcoming
 - Edit Surskit mass outbreak?
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
 - Implement changing Deoxys forms at Fallarbor or from bag
-- Summary Screen:
-    - Have Stat name be colored too if Nature effects it?
-    - Have EV be colored if maxed out?
-    - Have IV be colored if maxed out?
 
 ### Items
 - Hyper Voice tutor->TM?

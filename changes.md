@@ -22,7 +22,9 @@
     - Flash is no longer needed anywhere
     - Dive has been replaced by a key item
 - Fly can now be used to go to more places:
+    - The Old Lady's Rest Stop on Route 111
     - The Weather Institute on Route 119
+    - Mt. Pyre on Route 122
     - Southern Island
 - Berry trees give more berries
 - Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room
@@ -52,7 +54,6 @@
 **Quality of life changes thanks to tutorials (credit in README.md):**
 - You can nickname and relearn moves from the party menu
 - Press A on the summary screen to see a Pokémon's EVs/IVs
-- Stats affected by nature now are colored
 - Return/Frustration shows power in summary screen
 - Hidden Power type is shown in battle and the summary screen
 - Can swap party members with Select

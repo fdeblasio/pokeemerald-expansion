@@ -3478,8 +3478,6 @@ static void BufferStat(u8 *dst, s8 natureMod, u32 stat, u32 strId, u32 n)
 
 static void BufferIvOrEvStats(u8 mode)
 {
-    u16 hp, hp2, atk, def, spA, spD, spe;
-    u16 hpEv, hpIv, atkEv, atkIv, defEv, defIv, spaEv, spaIv, spdEv, spdIv, speEv, speIv;
     u8 *currHPString = Alloc(20);
     u8 *HP_EV_STRING = Alloc(20);
     u8 *ATK_EV_STRING = Alloc(20);
@@ -3496,60 +3494,35 @@ static void BufferIvOrEvStats(u8 mode)
     {
     case 0: // Stats mode
     default:
-        hp = sMonSummaryScreen->summary.currentHP;
-        hp2 = sMonSummaryScreen->summary.maxHP;
-        atk = sMonSummaryScreen->summary.atk;
-        def = sMonSummaryScreen->summary.def;
-
-        spA = sMonSummaryScreen->summary.spatk;
-        spD = sMonSummaryScreen->summary.spdef;
-        spe = sMonSummaryScreen->summary.speed;
-
-        BufferStat(currHPString, 0, hp, 0, 3);
-        BufferStat(gStringVar1, 0, hp2, 1, 3);
-        BufferStat(gStringVar2, natureMod[STAT_ATK - 1], atk, 2, 7);
-        BufferStat(gStringVar3, natureMod[STAT_DEF - 1], def, 3, 7);
+        BufferStat(currHPString, 0, sMonSummaryScreen->summary.currentHP, 0, 3);
+        BufferStat(gStringVar1, 0, sMonSummaryScreen->summary.maxHP, 1, 3);
+        BufferStat(gStringVar2, natureMod[STAT_ATK - 1], sMonSummaryScreen->summary.atk, 2, 7);
+        BufferStat(gStringVar3, natureMod[STAT_DEF - 1], sMonSummaryScreen->summary.def, 3, 7);
         DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsLeftColumnLayout);
         PrintLeftColumnStats();
 
-        BufferStat(gStringVar1, natureMod[STAT_SPATK - 1], spA, 0, 6);
-        BufferStat(gStringVar2, natureMod[STAT_SPDEF - 1], spD, 1, 6);
-        BufferStat(gStringVar3, natureMod[STAT_SPEED - 1], spe, 2, 6);
+        BufferStat(gStringVar1, natureMod[STAT_SPATK - 1], sMonSummaryScreen->summary.spatk, 0, 6);
+        BufferStat(gStringVar2, natureMod[STAT_SPDEF - 1], sMonSummaryScreen->summary.spdef, 1, 6);
+        BufferStat(gStringVar3, natureMod[STAT_SPEED - 1], sMonSummaryScreen->summary.speed, 2, 6);
         DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsRightColumnLayout);
         PrintRightColumnStats();
         break;
     case 1: // EV/IV mode
-        hpEv = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_HP_EV);
-        atkEv = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_ATK_EV);
-        defEv = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_DEF_EV);
-
-        spaEv = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_SPATK_EV);
-        spdEv = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_SPDEF_EV);
-        speEv = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_SPEED_EV);
-
-        hpIv = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_HP_IV);
-        atkIv = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_ATK_IV);
-        defIv = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_DEF_IV);
-
-        spaIv = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_SPATK_IV);
-        spdIv = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_SPDEF_IV);
-        speIv = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_SPEED_IV);
-
-        BufferStat(HP_EV_STRING, 0, hpEv, 0, 4);
-        BufferStat(gStringVar1, 0, hpIv, 1, 2);
-        BufferStat(ATK_EV_STRING, 0, atkEv, 2, 4);
-        BufferStat(gStringVar2, 0, atkIv, 3, 2);
-        BufferStat(DEF_EV_STRING, 0, defEv, 4, 4);
-        BufferStat(gStringVar3, 0, defIv, 5, 2);
+        BufferStat(HP_EV_STRING, 0, GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_HP_EV), 0, 4);
+        BufferStat(gStringVar1, 0, GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_HP_IV), 1, 2);
+        BufferStat(ATK_EV_STRING, natureMod[STAT_ATK - 1], GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_ATK_EV), 2, 4);
+        BufferStat(gStringVar2, natureMod[STAT_ATK - 1], GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_ATK_IV), 3, 2);
+        BufferStat(DEF_EV_STRING, natureMod[STAT_DEF - 1], GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_DEF_EV), 4, 4);
+        BufferStat(gStringVar3, natureMod[STAT_DEF - 1], GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_DEF_IV), 5, 2);
         DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsLeftColumnLayoutIVEV);
         PrintLeftColumnStats();
 
-        BufferStat(SP_ATK_EV_STRING, 0, spaEv, 0, 3);
-        BufferStat(gStringVar1, 0, spaIv, 1, 2);
-        BufferStat(SP_DEF_EV_STRING, 0, spdEv, 2, 3);
-        BufferStat(gStringVar2, 0, spdIv, 3, 2);
-        BufferStat(SPEED_EV_STRING, 0, speEv, 4, 3);
-        BufferStat(gStringVar3, 0, speIv, 5, 2);
+        BufferStat(SP_ATK_EV_STRING, natureMod[STAT_SPATK - 1], GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_SPATK_EV), 0, 3);
+        BufferStat(gStringVar1, natureMod[STAT_SPATK - 1], GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_SPATK_IV), 1, 2);
+        BufferStat(SP_DEF_EV_STRING, natureMod[STAT_SPDEF - 1], GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_SPDEF_EV), 2, 3);
+        BufferStat(gStringVar2, natureMod[STAT_SPDEF - 1], GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_SPDEF_IV), 3, 2);
+        BufferStat(SPEED_EV_STRING, natureMod[STAT_SPEED - 1], GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_SPEED_EV), 4, 3);
+        BufferStat(gStringVar3, natureMod[STAT_SPEED - 1], GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_SPEED_IV), 5, 2);
         DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsLeftColumnLayoutIVEV);
         PrintRightColumnStats();
         break;

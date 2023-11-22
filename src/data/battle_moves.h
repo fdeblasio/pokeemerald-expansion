@@ -1054,7 +1054,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_DYNAMAX] =
         #endif
         .type = TYPE_ICE,
         .accuracy = 70,
-        .pp = 5,
+        .pp = 10,
         .secondaryEffectChance = 10,
         .target = MOVE_TARGET_BOTH,
         .priority = 0,

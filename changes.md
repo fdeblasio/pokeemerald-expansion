@@ -147,6 +147,8 @@
     - Target: Both foes and ally->both foes
 - Ancient Power/Silver Wind/Ominous Wind:
     - PP: 5->10
+- Blizzard:
+    - PP: 5->10
 
 **Many other moves (especially signature moves) were given 100% accuracy:**
 - Normal:

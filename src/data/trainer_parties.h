@@ -9260,7 +9260,7 @@ static const struct TrainerMon sParty_TyraAndIvy[] = {
     },
     {
     .lvl = 23,
-    .species = SPECIES_GRAVELER,
+    .species = SPECIES_GEODUDE,
     .moves = {MOVE_SMACK_DOWN, MOVE_BULLDOZE, MOVE_DEFENSE_CURL, MOVE_ROLLOUT}
     }
 };

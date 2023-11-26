@@ -23,6 +23,7 @@
 - Fly can now be used to go to more places:
     - The Abandoned Ship on Route 108
     - The Old Lady's Rest Stop on Route 111
+    - Meteor Falls entrance on Route 114
     - The Weather Institute on Route 119
     - Mt. Pyre on Route 122
     - Sky Pillar on Route 131

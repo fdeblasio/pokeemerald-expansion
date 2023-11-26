@@ -4782,7 +4782,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_DITTO, EGG_GROUP_DITTO},
         .abilities = {ABILITY_LIMBER, ABILITY_NONE, ABILITY_IMPOSTER},
-        .bodyColor = BODY_COLOR_PURPLE,
+        .bodyColor = BODY_COLOR_PINK,
         .noFlip = FALSE,
     },
 #endif //P_FAMILY_DITTO
@@ -5168,7 +5168,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = STANDARD_FRIENDSHIP,                  \
         .growthRate = GROWTH_SLOW,                          \
         .eggGroups = { EGG_GROUP_FLYING, EGG_GROUP_FLYING}, \
-        .bodyColor = BODY_COLOR_PURPLE,                     \
+        .bodyColor = BODY_COLOR_GRAY,                       \
         .noFlip = FALSE
 
     [SPECIES_AERODACTYL] =
@@ -25767,7 +25767,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FIELD},
         .abilities = {ABILITY_STATIC, ABILITY_NATURAL_CURE, ABILITY_IRON_FIST},
-        .bodyColor = BODY_COLOR_YELLOW,
+        .bodyColor = BODY_COLOR_ORANGE,
         .noFlip = FALSE,
     },
 
@@ -25789,7 +25789,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FIELD},
         .abilities = {ABILITY_VOLT_ABSORB, ABILITY_NATURAL_CURE, ABILITY_IRON_FIST},
-        .bodyColor = BODY_COLOR_YELLOW,
+        .bodyColor = BODY_COLOR_ORANGE,
         .noFlip = FALSE,
     },
 
@@ -25811,7 +25811,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FIELD},
         .abilities = {ABILITY_VOLT_ABSORB, ABILITY_NATURAL_CURE, ABILITY_IRON_FIST},
-        .bodyColor = BODY_COLOR_YELLOW,
+        .bodyColor = BODY_COLOR_ORANGE,
         .noFlip = FALSE,
     },
 #endif //P_FAMILY_PAWMI
@@ -26889,7 +26889,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_SLOW,
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FIELD},
         .abilities = {ABILITY_EARTH_EATER, ABILITY_NONE, ABILITY_SAND_VEIL},
-        .bodyColor = BODY_COLOR_PINK,
+        .bodyColor = BODY_COLOR_RED,
         .noFlip = FALSE,
     },
 #endif //P_FAMILY_ORTHWORM
@@ -27127,7 +27127,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_TATSUGIRI_CURLY] =
     {
         TATSUGIRI_MISC_INFO,
-        .bodyColor = BODY_COLOR_PINK,
+        .bodyColor = BODY_COLOR_ORANGE,
     },
 
     [SPECIES_TATSUGIRI_DROOPY] =

@@ -12,8 +12,7 @@
 - Pokémon have a more even encounter distribution
 - Tate and Liza give out Psychic instead of Calm Mind
 - Cut, Fly, Strength, Flash, Rock Smash, and Dive can now be forgotten
-    - Fly can be used if a Pokémon can learn it, without actually needing to be taught it.
-    - Fly can now be used after getting Mauville's badge
+    - Fly can now be used from the Start Menu after getting Mauville's badge
     - Cut, Strength, and Rock Smash no longer need a badge to be used
     - Cut trees have been removed from everywhere but the Trick House
     - Strength boulders have been removed from everywhere but the Trick House and an optional puzzle in Seafloor Cavern

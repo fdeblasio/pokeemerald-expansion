@@ -21,9 +21,11 @@
     - Flash is no longer needed anywhere
     - Dive has been replaced by a key item
 - Fly can now be used to go to more places:
+    - The Abandoned Ship on Route 108
     - The Old Lady's Rest Stop on Route 111
     - The Weather Institute on Route 119
     - Mt. Pyre on Route 122
+    - Sky Pillar on Route 131
     - Southern Island
 - Berry trees give more berries
 - Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room

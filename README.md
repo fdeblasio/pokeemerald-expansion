@@ -190,4 +190,3 @@ There are some mechanics, moves and abilities that are missing and being develop
 - [ellabrella for increasing text speed beyond fast](https://www.pokecommunity.com/showpost.php?p=10400198)
 - [Mashanny for making text speed up without holding A/B](https://www.pokecommunity.com/showpost.php?p=10266385)
 - [Sapphire Jester for making the Soot Sack usuable](https://www.pokecommunity.com/showpost.php?p=10222284&postcount=178)
-- [ScyrousFX for making Fly usable without a Pokémon knowing it](https://www.pokecommunity.com/showpost.php?p=10420068)

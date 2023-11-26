@@ -357,8 +357,8 @@ MauvilleCity_Gym_Text_ReceivedDynamoBadge:
 	.string "from Wattson.$"
 
 MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis:
-	.string "With the Dynamo Badge, Pokémon can\n"
-	.string "use Fly out of battle.\p"
+	.string "With the Dynamo Badge, you can\n"
+	.string "have a taxi Fly you places.\p"
 	.string "And, it will make your Pokémon a little\n"
 	.string "bit faster, too.\p"
 	.string "Hmm…\n"

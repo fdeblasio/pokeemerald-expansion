@@ -107,10 +107,14 @@ upcoming
     - Strength (only in Trick House and Seafloor Cavern):
         - Superpower?
         - Close Combat?
-- Add Fly to start menu instead (look at debug menu for guidance)?
-    - Make Fly usuable after 2nd badge? or maybe even aftering delivering goods in Slateport
-    - Fly to routes
-        - Route 108: Abandoned Ship
+- Make Fly usuable after 2nd badge? Or maybe even aftering delivering goods in Slateport?
+- Fly to routes:
+    - Route 108: Abandoned Ship
+    - Route 114: Meteor Falls entrance
+    - Route 115: Meteor Falls entrance or Surf-exclusive part
+    - Route 121: Safari Zone
+    - Route 128: Where Steven flies to?
+    - Route 131: Sky Pillar
 
 ### Overworld
 - Add accurate overworld sprites (https://github.com/pret/pokeemerald/wiki/Adding-new-event-object-or-overworld-sprites, https://www.pokecommunity.com/showthread.php?t=407124)

@@ -138,7 +138,6 @@ enum {
 // In CursorCb_FieldMove, field moves <= FIELD_MOVE_WATERFALL are assumed to line up with the badge flags.
 // Badge flag names are commented here for people searching for references to remove the badge requirement.
 enum {
-    FIELD_MOVE_FLY,         // FLAG_BADGE03_GET
     FIELD_MOVE_SURF,        // FLAG_BADGE05_GET
     FIELD_MOVE_WATERFALL,   // FLAG_BADGE08_GET
     FIELD_MOVE_CUT,
@@ -506,7 +505,6 @@ static void CursorCb_CatalogMower(u8);
 static void CursorCb_ChangeForm(u8);
 static void CursorCb_ChangeAbility(u8);
 static bool8 SetUpFieldMove_Surf(void);
-static bool8 SetUpFieldMove_Fly(void);
 static bool8 SetUpFieldMove_Waterfall(void);
 void TryItemHoldFormChange(struct Pokemon *mon);
 static void ShowMoveSelectWindow(u8 slot);
@@ -2839,15 +2837,11 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
         {
             if (GetMonData(&mons[slotId], i + MON_DATA_MOVE1) == sFieldMoves[j])
             {
-                if (sFieldMoves[j] != MOVE_FLY) // If Mon already knows Fly, prevent it from being added to action list
-                    AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, j + MENU_FIELD_MOVES);
-                    break;
+                AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, j + MENU_FIELD_MOVES);
+                break;
             }
         }
     }
-
-    if (FlagGet(FLAG_BADGE03_GET) && CanLearnTeachableMove(GetMonData(&mons[slotId], MON_DATA_SPECIES_OR_EGG), MOVE_FLY)) // If Mon can learn Fly and Trainer has proper badge, add Fly to action list
-        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, FIELD_MOVE_FLY + MENU_FIELD_MOVES);
 
     if (!InBattlePike())
     {
@@ -3980,7 +3974,7 @@ static void CursorCb_FieldMove(u8 taskId)
     }
     else
     {
-        int hmBadges[] = {3, 5, 8};
+        int hmBadges[] = {5, 8};
         // All field moves before WATERFALL are HMs.
         if (fieldMove <= FIELD_MOVE_WATERFALL && FlagGet(FLAG_BADGE01_GET + hmBadges[fieldMove] - 1) != TRUE)
         {
@@ -4008,10 +4002,6 @@ static void CursorCb_FieldMove(u8 taskId)
                 StringExpandPlaceholders(gStringVar4, gText_EscapeFromHere);
                 DisplayFieldMoveExitAreaMessage(taskId);
                 sPartyMenuInternal->data[0] = fieldMove;
-                break;
-            case FIELD_MOVE_FLY:
-                gPartyMenu.exitCallback = CB2_OpenFlyMap;
-                Task_ClosePartyMenu(taskId);
                 break;
             default:
                 gPartyMenu.exitCallback = CB2_ReturnToField;
@@ -4121,14 +4111,6 @@ static void DisplayCantUseSurfMessage(void)
         DisplayPartyMenuStdMessage(PARTY_MSG_ALREADY_SURFING);
     else
         DisplayPartyMenuStdMessage(PARTY_MSG_CANT_SURF_HERE);
-}
-
-static bool8 SetUpFieldMove_Fly(void)
-{
-    if (Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType) == TRUE)
-        return TRUE;
-    else
-        return FALSE;
 }
 
 void CB2_ReturnToPartyMenuFromFlyMap(void)

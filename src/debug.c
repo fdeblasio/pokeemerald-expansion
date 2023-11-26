@@ -1267,10 +1267,12 @@ static u8 Debug_CheckToggleFlags(u8 id)
                 FlagGet(FLAG_VISITED_MOSSDEEP_CITY) &&
                 FlagGet(FLAG_VISITED_SOOTOPOLIS_CITY) &&
                 FlagGet(FLAG_VISITED_EVER_GRANDE_CITY) &&
+                FlagGet(FLAG_LANDMARK_ABANDONED_SHIP) &&
                 FlagGet(FLAG_LANDMARK_POKEMON_LEAGUE) &&
                 FlagGet(FLAG_LANDMARK_OLD_LADY_REST_SHOP) &&
                 FlagGet(FLAG_LANDMARK_WEATHER_INSTITUTE) &&
                 FlagGet(FLAG_LANDMARK_MT_PYRE) &&
+                FlagGet(FLAG_LANDMARK_SKY_PILLAR) &&
                 FlagGet(FLAG_LANDMARK_SOUTHERN_ISLAND) &&
                 FlagGet(FLAG_LANDMARK_BATTLE_FRONTIER);
             break;
@@ -2763,9 +2765,11 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
         FlagClear(FLAG_VISITED_SOOTOPOLIS_CITY);
         FlagClear(FLAG_VISITED_EVER_GRANDE_CITY);
         FlagClear(FLAG_LANDMARK_POKEMON_LEAGUE);
+        FlagClear(FLAG_LANDMARK_ABANDONED_SHIP);
         FlagClear(FLAG_LANDMARK_OLD_LADY_REST_SHOP);
         FlagClear(FLAG_LANDMARK_WEATHER_INSTITUTE);
         FlagClear(FLAG_LANDMARK_MT_PYRE);
+        FlagClear(FLAG_LANDMARK_SKY_PILLAR);
         FlagClear(FLAG_LANDMARK_SOUTHERN_ISLAND);
         FlagClear(FLAG_LANDMARK_BATTLE_FRONTIER);
     }
@@ -2789,9 +2793,11 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
         FlagSet(FLAG_VISITED_SOOTOPOLIS_CITY);
         FlagSet(FLAG_VISITED_EVER_GRANDE_CITY);
         FlagSet(FLAG_LANDMARK_POKEMON_LEAGUE);
+        FlagSet(FLAG_LANDMARK_ABANDONED_SHIP);
         FlagSet(FLAG_LANDMARK_OLD_LADY_REST_SHOP);
         FlagSet(FLAG_LANDMARK_WEATHER_INSTITUTE);
         FlagSet(FLAG_LANDMARK_MT_PYRE);
+        FlagSet(FLAG_LANDMARK_SKY_PILLAR);
         FlagSet(FLAG_LANDMARK_SOUTHERN_ISLAND);
         FlagSet(FLAG_LANDMARK_BATTLE_FRONTIER);
     }

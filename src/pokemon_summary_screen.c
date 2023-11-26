@@ -4008,7 +4008,6 @@ static void SetMoveTypeIcons(void)
         }
         else
             SetSpriteInvisibility(i + SPRITE_ARR_ID_TYPE, TRUE);
-        }
     }
 }
 

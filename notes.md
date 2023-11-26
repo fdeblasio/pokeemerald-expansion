@@ -109,7 +109,6 @@ upcoming
         - Close Combat?
 - Make Fly usuable after 2nd badge? Or maybe even aftering delivering goods in Slateport?
 - Fly to routes:
-    - Route 115: Meteor Falls entrance or Surf-exclusive part
     - Route 121: Safari Zone
     - Route 128: Where Steven flies to?
 
@@ -162,7 +161,7 @@ upcoming
 - Get rid of low health constant beeping (https://www.pokecommunity.com/showpost.php?p=10246778&postcount=194)
 - Replace ifdefs for move stats with just one set of stats?
     - Would likely cause merge conflicts going forward
-- Add EXP Candy
+- Add more EXP Candy
 - PC in menu
     - look at debug menu or at https://www.pokecommunity.com/showpost.php?p=10127351&postcount=47
 - Add relearning moves to PC?
@@ -223,6 +222,8 @@ upcoming
     - Sandslash, Ninetales, Cursola, and maybe Obstagoon can be used to diversify the Elite Four teams
 
 ## Future hacks
-All Yellow Pokémon with yellow shinies (Lickitung, Altaria, etc) replacing the regular palette
-    - Give trainer mugshot yellow palette (replace Wallace's yellow with something else)
+All Yellow Pokémon:
+    - Yellow shinies (Lickitung, Altaria, Luxray, Bellibolt, etc) replacing the regular palette
+        - Change Pokédex colors to match
+    - Give trainer mugshot yellow palette if possible (replace Wallace's yellow with something else)
     - Replace green with yellow on player sprites?

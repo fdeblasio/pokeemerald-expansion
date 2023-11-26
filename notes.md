@@ -109,7 +109,6 @@ upcoming
         - Close Combat?
 - Make Fly usuable after 2nd badge? Or maybe even aftering delivering goods in Slateport?
 - Fly to routes:
-    - Route 114: Meteor Falls entrance
     - Route 115: Meteor Falls entrance or Surf-exclusive part
     - Route 121: Safari Zone
     - Route 128: Where Steven flies to?

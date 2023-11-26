@@ -1385,7 +1385,7 @@
 
 #define FLAG_LANDMARK_WEATHER_INSTITUTE             (SYSTEM_FLAGS + 0x21)
 #define FLAG_LANDMARK_MT_PYRE                       (SYSTEM_FLAGS + 0x22)
-#define FLAG_UNUSED_0x883                           (SYSTEM_FLAGS + 0x23) // Unused Flag
+#define FLAG_LANDMARK_METEOR_FALLS                  (SYSTEM_FLAGS + 0x23)
 #define FLAG_UNUSED_0x884                           (SYSTEM_FLAGS + 0x24) // Unused Flag
 #define FLAG_UNUSED_0x885                           (SYSTEM_FLAGS + 0x25) // Unused Flag
 #define FLAG_UNUSED_0x886                           (SYSTEM_FLAGS + 0x26) // Unused Flag

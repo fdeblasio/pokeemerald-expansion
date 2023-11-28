@@ -348,7 +348,7 @@ static void BuildNormalStartMenu(void)
     AddStartMenuAction(MENU_ACTION_SAVE);
     AddStartMenuAction(MENU_ACTION_OPTION);
 
-    if (FlagGet(FLAG_BADGE03_GET) == TRUE)
+    if (FlagGet(FLAG_BADGE03_GET) == TRUE && Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType) == TRUE)
     {
         AddStartMenuAction(MENU_ACTION_FLY);
     }
@@ -726,7 +726,7 @@ static bool8 StartMenuFlyCallback(void)
         PlayRainStoppingSoundEffect();
         RemoveExtraStartMenuWindows();
         CleanupOverworldWindowsAndTilemaps();
-        SetMainCallback2(CB2_OpenFlyMap); // Display bag menu
+        SetMainCallback2(CB2_OpenFlyMap); // Display Fly map
 
         return TRUE;
     }
@@ -741,7 +741,7 @@ static bool8 StartMenuPokeNavCallback(void)
         PlayRainStoppingSoundEffect();
         RemoveExtraStartMenuWindows();
         CleanupOverworldWindowsAndTilemaps();
-        SetMainCallback2(CB2_InitPokeNav);  // Display PokeNav
+        SetMainCallback2(CB2_InitPokeNav);  // Display PokéNav
 
         return TRUE;
     }

@@ -38,14 +38,14 @@ upcoming
 - HGSS Pokédex (currently disabled):
     - TMs don't line up. This is due to the code assuming that in teachable_learnsets, the TMs will come before the tutor moves.
     - Shows evolutions multiple times (for this branch, only effects stone/location evos)
-- If you help one of the Lilycove ladies, the other lady thinks you've already helped her as well
+- If you help one of the Lilycove Pokémon Center ladies, the other lady thinks you've already helped her as well
 
 #### Potentially just savefile issues due to playing while hacking
 - Items in the Battle Pyramid's Battle Bag/held items in the Battle Pike are turning into Poke Balls
     - Seems to happen after trainer battles?
     - This occurs even with the Battle Frontier changes reverted
 - Verdanturf Battle Tent sometimes gives an item right away
-- PokeNav callers sometimes think there were 512 wins at the Battle Palace (seems to be related to Battle Tent issue)
+- PokéNav callers sometimes think there were 512 wins at the Battle Palace (seems to be related to Battle Tent issue)
 
 ## To Do:
 ### Meta

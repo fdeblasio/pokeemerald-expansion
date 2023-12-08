@@ -35,9 +35,7 @@ upcoming
 - gBattleTextBuff3 causes the build to fail unless reverted from `TEXT_BUFF_ARRAY_COUNT + 13` to `30`
 - When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
 - AI_FLAG_ACE_POKEMON doesn't seem to work
-- HGSS Pokédex (currently disabled):
-    - TMs don't line up. This is due to the code assuming that in teachable_learnsets, the TMs will come before the tutor moves.
-    - Shows evolutions multiple times (for this branch, only effects stone/location evos)
+- HGSS Pokédex shows evolutions multiple times (for this branch, only effects stone/location evos)
 - If you help one of the Lilycove Pokémon Center ladies, the other lady thinks you've already helped her as well
 
 #### Potentially just savefile issues due to playing while hacking
@@ -48,6 +46,7 @@ upcoming
 - PokéNav callers sometimes think there were 512 wins at the Battle Palace (seems to be related to Battle Tent issue)
 
 ## To Do:
+MERGE IN SPECIES REFACTOR AND RE-APPLY CHANGED EVO METHODS
 ### Meta
 - More simple modifications: https://www.pokecommunity.com/showthread.php?t=416647&page=1
 - Pret wiki tutorials:       https://github.com/pret/pokeemerald/wiki/Tutorials

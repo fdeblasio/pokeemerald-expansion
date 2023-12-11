@@ -314,8 +314,6 @@ static const u16 sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
 #if P_NEW_EVOS_IN_REGIONAL_DEX && P_GEN_4_CROSS_EVOS
     HOENN_TO_NATIONAL(RHYPERIOR),
 #endif
-    HOENN_TO_NATIONAL(HOUNDOUR),
-    HOENN_TO_NATIONAL(HOUNDOOM),
     HOENN_TO_NATIONAL(SNORUNT),
     HOENN_TO_NATIONAL(GLALIE),
 #if P_NEW_EVOS_IN_REGIONAL_DEX && P_GEN_4_CROSS_EVOS
@@ -4468,11 +4466,11 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, s
             switch (evolutions[i].method)
             {
             case EVO_FRIENDSHIP:
-                if (friendship >= FRIENDSHIP_EVO_THRESHOLD || gEvolutionTable[species][i].param <= level)
+                if (friendship >= FRIENDSHIP_EVO_THRESHOLD || evolutions[i].param <= level)
                     targetSpecies = evolutions[i].targetSpecies;
                 break;
             case EVO_FRIENDSHIP_DAY:
-                if (GetTimeOfDay() != TIME_NIGHT && (friendship >= FRIENDSHIP_EVO_THRESHOLD || gEvolutionTable[species][i].param <= level))
+                if (GetTimeOfDay() != TIME_NIGHT && (friendship >= FRIENDSHIP_EVO_THRESHOLD || evolutions[i].param <= level))
                     targetSpecies = evolutions[i].targetSpecies;
                 break;
             case EVO_LEVEL_DAY:
@@ -4480,7 +4478,7 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, s
                     targetSpecies = evolutions[i].targetSpecies;
                 break;
             case EVO_FRIENDSHIP_NIGHT:
-                if (GetTimeOfDay() == TIME_NIGHT && (friendship >= FRIENDSHIP_EVO_THRESHOLD || gEvolutionTable[species][i].param <= level))
+                if (GetTimeOfDay() == TIME_NIGHT && (friendship >= FRIENDSHIP_EVO_THRESHOLD || evolutions[i].param <= level))
                     targetSpecies = evolutions[i].targetSpecies;
                 break;
             case EVO_LEVEL_NIGHT:
@@ -4569,7 +4567,7 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, s
                     targetSpecies = evolutions[i].targetSpecies;
                 break;
             case EVO_FRIENDSHIP_MOVE_TYPE:
-                if (friendship >= FRIENDSHIP_EVO_THRESHOLD || gEvolutionTable[species][i].param <= level)
+                if (friendship >= FRIENDSHIP_EVO_THRESHOLD || evolutions[i].param <= level)
                 {
                     for (j = 0; j < MAX_MON_MOVES; j++)
                     {

@@ -223,8 +223,208 @@ upcoming
 
 ## Future hacks
 All Yellow Pokémon:
-    - Yellow shinies (Lickitung, Altaria, Luxray, Bellibolt, etc) replacing the regular palette
+    - Yellow shinies replacing the regular palette
         - Change Pokédex colors to match
     - Give trainer mugshot yellow palette if possible (replace Wallace's yellow with something else)
     - Replace green with yellow on player sprites?
     - If not enough, could also add black (Charmander line would have shiny palettes as they're both yellow and black)
+
+NOTE: these comparisons were taking from Go models. Actual sprites might have different colors
+Yellow/Black:
+    - Abra
+    - Bellsprout
+    - Drowzee
+    - Electabuzz
+    - Zapdos
+    - Murkrow
+    - Unown
+    - Sneasel (swap feather colors with shiny)
+    - Houndour
+    - Raikou
+    - Mawile
+    - Seviper
+    - Combee
+    - Giratina
+    - Darkrai
+    - Blitzle
+    - Sigilyph
+    - Yamask
+    - Zoroark
+    - Gothitelle
+    - Emolga
+    - Joltik
+    - Zekrom (shiny?)
+    - Heliolisk
+    - Alolan Rattata
+    - Pyukumuku
+    - Jangmo-o
+    - Tapu Koko (shiny is black but has orange instead of yellow)
+    - Xurtitree
+    - Guzzlord
+    - Necrozma
+    - Marshadow
+    - Zeraora
+    - Coalossal
+    - Falinks
+    - Pincurchin (apparently is purple?)
+    - Morpeko
+    - Regieleki
+    - Oricorio Pom Pom
+    - Minior Yellow
+    - Squawkabilly Yellow
+    - Kilowattrel
+    - Tatsugiri Yellow
+    - Paldean Tauros
+
+Yellow/Black shiny:
+    - Charmander (except for maybe Mega X)
+    - Beedrill (Weedle)
+    - Growlithe
+    - Hisuian Growlithe
+    - Exeggcutor/Alolan Exeggutor (Sun Stone?)
+    - Lickitung
+    - Galarian Zapdos
+    - Ho-Oh
+    - Torkoal
+    - Swablu (maybe change name)
+    - Baltoy
+    - Luvdisc
+    - Latias
+    - Rayquaza
+    - Deoxys
+    - Luxray
+    - Drifloon
+    - Lucario
+    - Heatmor
+    - Furfrou
+    - Klefki
+    - Volcanion
+    - Oricorio Baile
+    - Bewear
+    - Palossand
+    - Tapu Lele/Bulu/Fini
+    - Wooloo
+    - Stonjourner
+    - Minior
+    - Bellibolt (wait for better sprite?)
+    - Cetitan
+    - Dondozo
+    - Slither Wing
+
+Lesser Yellow/Black (filler if needed):
+    - Pidgey (shiny)
+    - Spearow (Shiny)
+    - Sandshrew
+    - Ninetales (shiny Vulpix)
+    - Tauros (shiny)
+    - Kabutops (shiny)
+    - Moltres
+    - Galarian Moltres (both)
+    - Hoothoot (shiny)
+    - Sunkern (shiny Sunflora?)
+    - Girafarig
+    - Pineco (shiny)
+    - Dunsparce
+    - Steelix (shiny)
+    - Shuckle
+    - Smeargle (shiny)
+    - Poochyena (shiny)
+    - Wingull (shiny)
+    - Nosepass (shiny)
+    - Sableye (shiny)
+    - Manectric
+    - Plusle/Minun
+    - Tropius (shiny)
+    - Metagross (shiny)
+    - Groudon (shiny)
+    - Jirachi
+    - Kricketot (shiny)
+    - Shieldon (shiny)
+    - Buizel (shiny)
+    - Rhydon (shiny)
+    - Uxie (both)
+    - Mesprit/Azelf (shiny)
+    - Regigigas
+    - Arceus (shiny?)
+    - Swoobat (shiny)
+    - Drilbur (maybe is gray?)
+    - Sewaddle
+    - Scraggy/shiny Scrafty?
+    - Karrablast
+    - Shelmet (shiny)
+    - Stunfisk
+    - Hydreigon
+    - Volcarona (shiny)
+    - Halwucha (shiny)
+    - Yveltal
+    - Hoopa (shiny)
+    - Toucannon
+    - Yungoos
+    - Cutiefly
+    - Salazzle
+    - Silvally (shiny)
+    - Stakakta (shiny?)
+    - Meltan
+    - Yamper
+    - Toxtricity
+    - Obstagoon
+    - Cufant (shiny)
+    - Draco/Arctozolt
+    - Dreepy (shiny)
+    - Zarude
+    - Regidrago
+    - Overqwil
+    - Galarian Ponyta (shiny)
+    - Hisuian Voltorb (shiny)
+    - Florges Yellow
+    - Xerneas
+    - Zygarde
+    - Ultra Burst Necrozma (could find a way to have normal form Ultra Burst)
+    - Pokeball Magearna (shiny)
+    - Lechonk
+    - Flittle (shiny Espathra)
+    - Revavroom (shiny)
+    - Iron Hands (both)
+
+Not whole line (change evo palettes?):
+    - Geodude (shiny)
+    - Magikarp (shiny)
+    - Jolteon/Umbreon
+    - Meganium (shiny)
+    - Mareep/Ampharos
+    - Azumarill (shiny)
+    - Scizor (shiny)
+    - Piloswine (shiny)
+    - Stantler (shiny)
+    - Magby (shiny)
+    - Larvitar (shiny)
+    - Torchic/Combusken (shiny)
+    - Ninjask
+    - Makuhita
+    - Camerupt (shiny)
+    - Grumpig (shiny)
+    - Banette?
+    - Gorebyss (shiny)
+    - Grotle (shiny)
+    - Chingling (shiny?)
+    - Dusknoir
+    - Tepig? (shiny)
+    - Munna (shiny)
+    - Eelektrik/Eelektross
+    - Lampent/Chandelure
+    - Haxorus (both)
+    - Greninja (shiny)
+    - Meowstic male (shiny)
+    - Aegislash (shiny)
+    - Vikavolt
+    - Naganadel (shiny)
+    - Sirfetch'd (shiny)
+    - Urshifu
+    - Galarian Meowth (shiny)
+    - Galarian Slowpoke (shiny)
+    - Hisuian Sneasel (shiny)
+    - Hisuian Braviary (Shiny)
+    - Female Basculegion (shiny)
+    - Armarouge
+    - Goldengho
+    - Dipplin (shiny; would need to change logic for its move)

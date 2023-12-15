@@ -509,7 +509,7 @@
     - Learns Swift by move tutor
 
 - Granbull (postgame):
-    - Learns Psychic Fangs by TM
+    - Learns Psychic Fangs by TM (Indigo Disk addition I accidentally predicted)
     - Hidden Ability: Rattled->Strong Jaw
 
 - Qwilfish/Hisuian Qwilfish/Overqwil (not in main game):

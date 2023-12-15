@@ -45,6 +45,7 @@ upcoming
 - PokéNav callers sometimes think there were 512 wins at the Battle Palace (seems to be related to Battle Tent issue)
 
 ## To Do:
+- ADD INDIGO DISK MOVES TO SOME MOVESETS (like Electivire/Supercell Slam) and update movesets of returning Hoenn Dex mons
 ### Meta
 - More simple modifications: https://www.pokecommunity.com/showthread.php?t=416647&page=1
 - Pret wiki tutorials:       https://github.com/pret/pokeemerald/wiki/Tutorials
@@ -224,3 +225,4 @@ All Yellow Pokémon:
         - Change Pokédex colors to match
     - Give trainer mugshot yellow palette if possible (replace Wallace's yellow with something else)
     - Replace green with yellow on player sprites?
+    - If not enough, could also add black (Charmander line would have shiny palettes as they're both yellow and black)

@@ -72,7 +72,6 @@
 // *******************************
 enum DebugMenu
 {
-    DEBUG_MENU_ITEM_GIVE,
     DEBUG_MENU_ITEM_UTILITIES,
     DEBUG_MENU_ITEM_PCBAG,
     DEBUG_MENU_ITEM_PARTY,
@@ -124,7 +123,6 @@ enum GivePCBagFillDebugMenu
 
 enum PartyDebugMenu
 {
-    DEBUG_PARTY_MENU_ITEM_MOVE_REMINDER,
     DEBUG_PARTY_MENU_ITEM_HATCH_AN_EGG,
     DEBUG_PARTY_MENU_ITEM_HEAL_PARTY,
     DEBUG_PARTY_MENU_ITEM_POISON_MONS,
@@ -472,8 +470,6 @@ extern const u8 Debug_ShowExpansionVersion[];
 extern const u8 Debug_BerryPestsDisabled[];
 extern const u8 Debug_BerryWeedsDisabled[];
 
-extern const u8 FallarborTown_MoveRelearnersHouse_EventScript_ChooseMon[];
-
 #include "data/map_group_count.h"
 
 // Text
@@ -733,7 +729,6 @@ static const struct ListMenuItem sDebugMenu_Items_PCBag_Fill[] =
 
 static const struct ListMenuItem sDebugMenu_Items_Party[] =
 {
-    [DEBUG_PARTY_MENU_ITEM_MOVE_REMINDER]  = {sDebugText_Party_MoveReminder,   DEBUG_PARTY_MENU_ITEM_MOVE_REMINDER},
     [DEBUG_PARTY_MENU_ITEM_HATCH_AN_EGG]   = {sDebugText_Party_HatchAnEgg,     DEBUG_PARTY_MENU_ITEM_HATCH_AN_EGG},
     [DEBUG_PARTY_MENU_ITEM_HEAL_PARTY]     = {sDebugText_Party_HealParty,      DEBUG_PARTY_MENU_ITEM_HEAL_PARTY},
     [DEBUG_PARTY_MENU_ITEM_POISON_MONS]    = {sDebugText_Party_PoisonParty,    DEBUG_PARTY_MENU_ITEM_POISON_MONS},
@@ -899,7 +894,6 @@ static void (*const sDebugMenu_Actions_PCBag_Fill[])(u8) =
 
 static void (*const sDebugMenu_Actions_Party[])(u8) =
 {
-    [DEBUG_PARTY_MENU_ITEM_MOVE_REMINDER] = DebugAction_Party_MoveReminder,
     [DEBUG_PARTY_MENU_ITEM_HATCH_AN_EGG]  = DebugAction_Party_HatchAnEgg,
     [DEBUG_PARTY_MENU_ITEM_HEAL_PARTY]    = DebugAction_Party_HealParty,
     [DEBUG_PARTY_MENU_ITEM_POISON_MONS]   = DebugAction_Party_PoisonMons,
@@ -5060,12 +5054,6 @@ static void DebugAction_BerryFunctions_Weeds(u8 taskId)
 
 // *******************************
 // Actions Party/Boxes
-
-static void DebugAction_Party_MoveReminder(u8 taskId)
-{
-    Debug_DestroyMenu_Full_Script(taskId, FallarborTown_MoveRelearnersHouse_EventScript_ChooseMon);
-}
-
 static void DebugAction_Party_HatchAnEgg(u8 taskId)
 {
     Debug_DestroyMenu_Full_Script(taskId, Debug_HatchAnEgg);

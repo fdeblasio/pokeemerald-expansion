@@ -71,7 +71,6 @@
 // *******************************
 enum DebugMenu
 {
-    DEBUG_MENU_ITEM_GIVE,
     DEBUG_MENU_ITEM_UTILITIES,
     DEBUG_MENU_ITEM_PCBAG,
     DEBUG_MENU_ITEM_PARTY,
@@ -126,7 +125,6 @@ enum GivePCBagFillDebugMenu
 
 enum PartyDebugMenu
 {
-    DEBUG_PARTY_MENU_ITEM_MOVE_REMINDER,
     DEBUG_PARTY_MENU_ITEM_HATCH_AN_EGG,
     DEBUG_PARTY_MENU_ITEM_HEAL_PARTY,
     DEBUG_PARTY_MENU_ITEM_INFLICT_STATUS1,
@@ -496,8 +494,6 @@ extern const u8 Debug_EventScript_Steven_Multi[];
 
 extern const u8 Debug_BerryPestsDisabled[];
 extern const u8 Debug_BerryWeedsDisabled[];
-
-extern const u8 FallarborTown_MoveRelearnersHouse_EventScript_ChooseMon[];
 
 #include "data/map_group_count.h"
 
@@ -5020,12 +5016,6 @@ static void DebugAction_BerryFunctions_Weeds(u8 taskId)
 
 // *******************************
 // Actions Party/Boxes
-
-static void DebugAction_Party_MoveReminder(u8 taskId)
-{
-    Debug_DestroyMenu_Full_Script(taskId, FallarborTown_MoveRelearnersHouse_EventScript_ChooseMon);
-}
-
 static void DebugAction_Party_HatchAnEgg(u8 taskId)
 {
     Debug_DestroyMenu_Full_Script(taskId, Debug_HatchAnEgg);

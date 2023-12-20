@@ -333,6 +333,7 @@
 
 - Doduo/Dodrio:
     - Get Aerial Ace instead of Wing Attack at level 15 due to not having wings
+    - Learn Acrobatics by TM (Indigo Disk addition)
 
 - Lickitung (not in main game):
     - Atk: 55->65
@@ -540,24 +541,26 @@
 - Mantyke (not in main game):
     - Catch rate: 25->90
 
-- Lugia:
+- Lugia (postgame):
     - Learns Brave Bird by level up
 
 - Treecko:
     - Swapped level 3 and 6 moves to make first rival battle easier
 
 - Sceptile:
-    - Learns Leaf Blade upon evolving
+    - Learns Dual Chop upon evolving
 
 - Torchic:
     - Swapped level 3 and 6 moves to make first rival battle easier
 
 - Blaziken:
-    - Learns Blaze Kick upon evolving
     - Learns Drain Punch by TM
 
 - Mudkip:
     - Swapped level 3 and 6 moves to make first rival battle easier
+
+- Swampert:
+    - Learns Poison Jab by TM (Indigo Disk addition)
 
 - Mightyena:
     - Learns Psychic Fangs by TM (Teal Mask addition)
@@ -727,6 +730,9 @@
 - Salamence:
     - Learns Dual Wingbeat by level up
 
+- Metagross:
+    - Learns Psychic Fangs by TM (Indigo Disk addition)
+
 - Latios/Latias:
     - Level up learnset slightly restructured to avoid a battle where they only have one attacking move
 
@@ -829,6 +835,9 @@
 
 - Carracosta:
     - Learns Body Press by TM
+
+- Archeops:
+    - Receives Early Bird as a Hidden Ability
 
 - Gothita:
     - Evolution: 32->22

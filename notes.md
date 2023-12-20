@@ -45,7 +45,7 @@ upcoming
 - PokéNav callers sometimes think there were 512 wins at the Battle Palace (seems to be related to Battle Tent issue)
 
 ## To Do:
-- ADD INDIGO DISK MOVES TO SOME MOVESETS (like Electivire/Supercell Slam) and update movesets of returning Hoenn Dex mons
+- Add Indigo Disk moves to some movesets (like Electivire/Supercell Slam)
 ### Meta
 - More simple modifications: https://www.pokecommunity.com/showthread.php?t=416647&page=1
 - Pret wiki tutorials:       https://github.com/pret/pokeemerald/wiki/Tutorials
@@ -64,6 +64,7 @@ upcoming
 
 ### Items
 - Hyper Voice tutor->TM?
+- Supercell Slam TM once implemented?
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Include charms?
 - Give Soul Dew both effects? (Without the ban/Battle Frontier nullification)

@@ -9083,6 +9083,7 @@ static const u16 sSirfetchdTeachableLearnset[] = {
 
 #if P_FAMILY_DODUO
 static const u16 sDoduoTeachableLearnset[] = {
+    MOVE_ACROBATICS,
     MOVE_ACUPRESSURE,
     MOVE_AERIAL_ACE,
     MOVE_AGILITY,
@@ -9138,6 +9139,7 @@ static const u16 sDoduoTeachableLearnset[] = {
 };
 
 static const u16 sDodrioTeachableLearnset[] = {
+    MOVE_ACROBATICS,
     MOVE_ACUPRESSURE,
     MOVE_AERIAL_ACE,
     MOVE_AGILITY,
@@ -26748,6 +26750,7 @@ static const u16 sSwampertTeachableLearnset[] = {
     MOVE_MUD_SPORT,
     MOVE_MUDDY_WATER,
     MOVE_OUTRAGE,
+    MOVE_POISON_JAB,
     MOVE_PROTECT,
     MOVE_RAIN_DANCE,
     MOVE_REFRESH,
@@ -36442,6 +36445,7 @@ static const u16 sMetagrossTeachableLearnset[] = {
     MOVE_PROTECT,
     MOVE_PSYCH_UP,
     MOVE_PSYCHIC,
+    MOVE_PSYCHIC_FANGS,
     MOVE_PSYCHO_CUT,
     MOVE_PSYSHOCK,
     MOVE_PURSUIT,

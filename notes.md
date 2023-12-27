@@ -155,8 +155,6 @@ upcoming
 - New Scriptless Item Balls: https://github.com/pret/pokeemerald/wiki/Set-Up-Item-Balls-on-a-Map-Without-Needing-New-Scripts
 - Type effectiveness in battle: https://www.pokecommunity.com/showpost.php?p=10167016&postcount=83
 - Add Hyper Training
-- Once Mints are implemented, in Lilycove 3F, move X items to left clerk and make right clerk Mints
-    - Or move Mints to left too and have left be Chansey, right be Delibird
 - Get rid of low health constant beeping (https://www.pokecommunity.com/showpost.php?p=10246778&postcount=194)
 - Replace ifdefs for move stats with just one set of stats?
     - Would likely cause merge conflicts going forward

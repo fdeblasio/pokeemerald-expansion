@@ -15511,6 +15511,7 @@ static const struct LevelUpMove sStunfiskLevelUpLearnset[] = {
 
 #if P_GALARIAN_FORMS
 static const struct LevelUpMove sStunfiskGalarianLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_TERRAIN_PULSE),
     LEVEL_UP_MOVE( 1, MOVE_MUD_SLAP),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),

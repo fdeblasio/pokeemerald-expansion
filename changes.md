@@ -151,6 +151,8 @@
     - PP: 5->10
 - Blizzard:
     - PP: 5->10
+- Misty Explosion:
+    - Power: 100->250
 
 **Many other moves (especially signature moves) were given 100% accuracy:**
 - Normal:
@@ -895,6 +897,23 @@
 
 - Cryogonal:
     - Learns Dazzling Gleam, Flash, and Power Gem by TM
+
+- Stunfisk:
+    - HP: 109->110
+    - Atk: 66->85
+    - Def: 84->85
+    - SpA: 81->85
+    - SpD: 99->100
+    - Spe: 32->35
+
+- Galarian Stunfisk:
+    - HP: 109->110
+    - Atk: 81->85
+    - Def: 99->100
+    - SpA: 66->85
+    - SpD: 84->85
+    - Speed: 32->35
+    - Learns Terrain Pulse by level up
 
 - Mienfoo:
     - Evolution: 50->38

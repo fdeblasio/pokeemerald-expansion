@@ -8504,10 +8504,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_KOFFING] =
     {
         .baseHP        = 40,
-        .baseAttack    = 65,
+        .baseAttack    = 60,
         .baseDefense   = 95,
         .baseSpeed     = 35,
-        .baseSpAttack  = 60,
+        .baseSpAttack  = 65,
         .baseSpDefense = 45,
         .types = { TYPE_POISON, TYPE_POISON },
         .catchRate = 190,
@@ -8558,10 +8558,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
 #define WEEZING_MISC_INFO                                           \
         .baseHP        = 65,                                        \
-        .baseAttack    = 90,                                        \
+        .baseAttack    = 85,                                        \
         .baseDefense   = 120,                                       \
         .baseSpeed     = 60,                                        \
-        .baseSpAttack  = 85,                                        \
+        .baseSpAttack  = 90,                                        \
         .baseSpDefense = 70,                                        \
         .catchRate = 60,                                            \
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 172 : 173,    \

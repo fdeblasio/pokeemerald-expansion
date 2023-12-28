@@ -349,7 +349,17 @@
     - Learns Sludge Bomb by TM
     - Ability: Oblivious->Thick Fat
 
+- Koffing:
+    - Atk: 65->60
+    - SpA: 60->65
+
+- Weezing:
+    - Atk: 90->85
+    - SpA: 85->90
+
 - Galarian Weezing (not in main game):
+    - Atk: 90->85
+    - SpA: 85->90
     - Learns Misty Explosion by level up
 
 - Rhyperior:

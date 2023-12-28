@@ -9298,12 +9298,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_STUNFISK
     [SPECIES_STUNFISK] =
     {
-        .baseHP        = 109,
-        .baseAttack    = 66,
-        .baseDefense   = 84,
-        .baseSpeed     = 32,
-        .baseSpAttack  = 81,
-        .baseSpDefense = 99,
+        .baseHP        = 110,
+        .baseAttack    = 85,
+        .baseDefense   = 85,
+        .baseSpeed     = 35,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 100,
         .types = MON_TYPES(TYPE_GROUND, TYPE_ELECTRIC),
         .catchRate = 75,
         .expYield = 165,
@@ -9362,12 +9362,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_GALARIAN_FORMS
     [SPECIES_STUNFISK_GALARIAN] =
     {
-        .baseHP        = 109,
-        .baseAttack    = 81,
-        .baseDefense   = 99,
-        .baseSpeed     = 32,
-        .baseSpAttack  = 66,
-        .baseSpDefense = 84,
+        .baseHP        = 110,
+        .baseAttack    = 85,
+        .baseDefense   = 100,
+        .baseSpeed     = 35,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_GROUND, TYPE_STEEL),
         .catchRate = 75,
         .expYield = 165,

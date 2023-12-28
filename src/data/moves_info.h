@@ -18108,7 +18108,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "Hit everything and faint.\n"
             "Powers up on Misty Terrain."),
         .effect = EFFECT_EXPLOSION,
-        .power = 100,
+        .power = 250,
         .type = TYPE_FAIRY,
         .accuracy = 100,
         .pp = 5,

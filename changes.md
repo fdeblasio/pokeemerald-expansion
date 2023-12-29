@@ -153,6 +153,8 @@
     - PP: 5->10
 - Misty Explosion:
     - Power: 100->250
+- Relic Song:
+    - Power: 75->100
 
 **Many other moves (especially signature moves) were given 100% accuracy:**
 - Normal:
@@ -213,6 +215,7 @@
     - Steam Eruption
     - Triple Dive
 - Grass:
+    - Seed Flare
     - Leaf Tornado
     - Chloroblast
     - Syrup Bomb

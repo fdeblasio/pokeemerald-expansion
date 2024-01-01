@@ -83,8 +83,6 @@
     - Power: 60->75
 - Dizzy Punch:
     - Power: 70->75
-- Luster Purge/Mist Ball:
-    - PP: 5->10
 - Constrict:
     - Power: 10->30
     - Chance to reduce speed: 10->50
@@ -147,14 +145,34 @@
     - Accuracy: 80->100
 - Surf
     - Target: Both foes and ally->both foes
-- Ancient Power/Silver Wind/Ominous Wind:
-    - PP: 5->10
-- Blizzard:
-    - PP: 5->10
 - Misty Explosion:
     - Power: 100->250
 - Relic Song:
     - Power: 75->100
+- Clanging Scales:
+    - PP: 5->10
+    - No longer lowers user's Defense
+- Spin Out
+    - PP: 5->10
+    - No longer lowers user's Speed
+- Make It Rain
+    - PP: 5->10
+    - No longer lowers user's Special Attack
+
+**Some other moves (especially signature moves) were given 10 PP as opposed to 5:**
+- Luster Purge
+- Mist Ball
+- Ancient Power
+- Silver Wind
+- Ominous Wind
+- Blizzard
+- Gigaton Hammer
+- Hyper Drill
+- Glaive Rush
+- Blood Moon
+- Fickle Beam
+- Thunderclap
+- Mighty Cleave
 
 **Many other moves (especially signature moves) were given 100% accuracy:**
 - Normal:

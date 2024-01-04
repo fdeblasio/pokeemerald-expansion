@@ -14419,6 +14419,7 @@ static const u16 sElectivireTeachableLearnset[] = {
     MOVE_DIG,
     MOVE_DISCHARGE,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAIN_PUNCH,
     MOVE_DUAL_CHOP,
     MOVE_DYNAMIC_PUNCH,
     MOVE_EARTHQUAKE,

@@ -439,6 +439,7 @@
     - Atk: 123->125
     - Def: 67->70
     - SpA: 95->100
+    - Learns Drain Punch by TM
 
 - Magby (postgame):
     - Def: 37->40

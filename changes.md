@@ -160,12 +160,14 @@
     - No longer lowers user's Special Attack
 
 **Some other moves (especially signature moves) were given 10 PP as opposed to 5:**
-- Luster Purge
-- Mist Ball
+- Blizzard
 - Ancient Power
 - Silver Wind
 - Ominous Wind
-- Blizzard
+- Luster Purge
+- Mist Ball
+- Fusion Bolt
+- Fusion Flare
 - Gigaton Hammer
 - Hyper Drill
 - Glaive Rush

@@ -28,7 +28,6 @@
     - Mt. Pyre on Route 122
     - Sky Pillar on Route 131
     - Southern Island
-- Berry trees give more berries
 - Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room
     - The door to Sealed Chamber and the Regis' inner rooms are now automatically open
 - Made rapids easier to navigate so that only one trip is needed to get all items/battle all trainers (at the cost of looking slightly worse)
@@ -69,6 +68,25 @@
 - Faster text speed
 - Faster walking/surfing speed
 - Can now use Soot Sack to see how much ash you have
+
+## Berries:
+- All berries: min and max yields have been boosted to a minimum of 3/6
+- EV reducing berries: min/max are at least 6/12
+- Cheri-Aspear:
+    - Flavor: 10->20
+- Figy-Iapapa:
+    - Flavor: 10->30
+- Tamato-Nomel:
+    - Flavor: 20/10->40
+- Spelon-Belue:
+    - Flavor: 40/10->50
+    - Smoothness: 70->35
+- Liechi-Apicot:
+    - Smoothness: 80->40
+- Lansat:
+    - Smoothness: 30->50
+- Starf:
+    - Smoothness: 30->50
 
 ## Abilities:
 - Iron Fist: Punching moves are now boosted by 30% (up from 20%) to match Sheer Force and Tough Claws

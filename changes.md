@@ -602,7 +602,13 @@
     - Swapped level 3 and 6 moves to make first rival battle easier
 
 - Sceptile:
+    - Atk: 85->105
+    - SpA: 105->85
     - Learns Dual Chop upon evolving
+
+- Mega Sceptile:
+    - Atk: 110->145
+    - SpA: 145->110
 
 - Torchic:
     - Swapped level 3 and 6 moves to make first rival battle easier

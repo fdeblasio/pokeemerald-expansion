@@ -121,10 +121,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     {
         SCEPTILE_MISC_INFO,
         .baseHP        = 70,
-        .baseAttack    = 85,
+        .baseAttack    = 105,
         .baseDefense   = 65,
         .baseSpeed     = 120,
-        .baseSpAttack  = 105,
+        .baseSpAttack  = 85,
         .baseSpDefense = 85,
         .types = { TYPE_GRASS, TYPE_GRASS },
     #if P_UPDATED_EXP_YIELDS >= GEN_8
@@ -163,10 +163,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     {
         SCEPTILE_MISC_INFO,
         .baseHP        = 70,
-        .baseAttack    = 110,
+        .baseAttack    = 145,
         .baseDefense   = 75,
         .baseSpeed     = 145,
-        .baseSpAttack  = 145,
+        .baseSpAttack  = 110,
         .baseSpDefense = 85,
         .types = { TYPE_GRASS, TYPE_DRAGON },
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 315 : 284,

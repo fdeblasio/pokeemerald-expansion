@@ -65,6 +65,9 @@ upcoming
 ### Items
 - Hyper Voice tutor->TM?
 - Supercell Slam TM once implemented?
+- Add Ice Spinner as a TM (and maybe give to Beartic/Mamoswine/other Ice types) once implemented?
+    - Alternitavely could have Icicle Crash as a TM/given to more Pokémon since it got updated to have 100% accuracy
+- Supercell Slam/Temper Flare/Ice Spinner (all with better STAB distribution) can replace elemental punches as TMs
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Include charms?
 - Give Soul Dew both effects? (Without the ban/Battle Frontier nullification)
@@ -172,8 +175,6 @@ upcoming
 - Simplify Walda codes?
 - Get all the weird Mauville men at once?
 - Update Favor Lady's items to include new items
-- Add Ice Spinner as a TM (and maybe give to Beartic/Mamoswine/other Ice types) once implemented?
-    - Alternitavely could have Icicle Crash as a TM/given to more Pokémon since it got updated to have 100% accuracy
 - Add 3 other Regis?
     - Add Regigigas to Sealed Chamber?
     - Regieleki near New Mauville?

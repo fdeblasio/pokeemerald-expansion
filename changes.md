@@ -107,12 +107,6 @@
 - Volt Tackle:
     - Paralyze chance: 10%->30%
     - No longer causes recoil
-- Origin Pulse:
-    - Power: 110->120
-    - Accuracy: 85->100
-- Disarming Voice:
-    - Power: 40->60
-    - PP: 15->20
 - Comet Punch:
     - Power: 18->20
     - Accuracy: 85->100
@@ -127,8 +121,6 @@
     - Accuracy: 85->100
 - Arm Thrust:
     - Power: 15->20
-- Water Shuriken:
-    - Power: 15->25
 - Present:
     - Accuracy: 90->100
     - Now heals allies similar to Pollen Puff
@@ -149,27 +141,88 @@
     - Power: 75->80
 - Astonish:
     - Power: 30->40
+- Surf
+    - Target: Both foes and ally->both foes
+- Zap Cannon:
+    - Power: 120->150
+- Dynamic Punch:
+    - Power: 100->150
+- Inferno:
+    - Power: 100->150
+- Aeroblast:
+    - Accuracy: 95->100
+    - PP: 5->10
+- Sacred Fire:
+    - Accuracy: 95->100
+    - PP: 5->10
 - Meteor Mash:
-    - Power: 90->90
+    - Power: 90->100
     - Accuracy: 90->100
-- Magma Storm:
-    - Power: 100->120
-    - Accuracy: 75->100
+- Origin Pulse:
+    - Power: 110->120
+    - Accuracy: 85->100
+- Luster Purge/Mist Ball:
+    - PP: 5->10
+    - Effect: 50%->100%
+- Psycho Boost:
+    - Accuracy: 90->100
+    - PP: 5->10
+- Rock Wrecker:
+    - Accuracy: 90->100
+    - PP: 5->10
 - Mystical Power:
     - Power: 70->80
     - Accuracy: 90->100
+- Spacial Rend:
+    - Accuracy: 95->100
+    - PP: 5->10
+- Roar of Time:
+    - Accuracy: 90->100
+    - PP: 5->10
+- Magma Storm:
+    - Power: 100->120
+    - Accuracy: 75->100
+    - PP: 5->10
+- Seed Flare:
+    - Accuracy: 85->100
+    - PP: 5->10
 - Bleakwind Storm/Wildbolt Storm/Sandsear Storm/Springtide Storm:
     - Power: 100->120
     - Accuracy: 80->100
-- Surf
-    - Target: Both foes and ally->both foes
-- Misty Explosion:
-    - Power: 100->250
+    - PP: 5->10 (Springtide Storm)
+- Bolt Strike/Blue Flare:
+    - Accuracy: 85->100
+    - PP: 5->10
+- Freeze Shock/Ice Burn:
+    - Accuracy: 90->100
+    - PP: 5->10
+- Glaciate:
+    - Power: 65->80
+    - Accuracy: 95->100
 - Relic Song:
     - Power: 75->100
+- Disarming Voice:
+    - Power: 40->60
+    - PP: 15->20
+- Water Shuriken:
+    - Power: 15->25
+- Mountain Gale:
+    - Accuracy: 85->100
+    - PP: 5->10
+- Hyperspace Fury
+    - PP: 5->10
+    - No longer lowers user's Defense
+- Diamond Storm:
+    - Accuracy: 95->100
+    - PP: 5->10
 - Clanging Scales:
     - PP: 5->10
     - No longer lowers user's Defense
+- Fleur Cannon:
+    - Accuracy: 90->100
+    - PP: 5->10
+- Misty Explosion:
+    - Power: 100->150
 - Spin Out
     - PP: 5->10
     - No longer lowers user's Speed
@@ -182,10 +235,30 @@
 - Ancient Power
 - Silver Wind
 - Ominous Wind
-- Luster Purge
-- Mist Ball
+- Doom Desire
+- Gyro Ball
+- Shadow Force
+- Searing Shot
 - Fusion Bolt
 - Fusion Flare
+- Techno Blast
+- Hyperspace Hole
+- Steam Eruption
+- Sunsteel Strike
+- Moongeist Beam
+- Photon Geyser
+- Double Iron Bash
+- Pyro Ball
+- Eerie Spell
+- Behemoth Blade
+- Behemoth Bash
+- Dynamax Cannon
+- Burning Jealousy
+- Lash Out
+- Wicked Blow
+- Surging Strikes
+- Glacial Lance
+- Astral Barrage
 - Gigaton Hammer
 - Hyper Drill
 - Glaive Rush
@@ -193,6 +266,8 @@
 - Fickle Beam
 - Thunderclap
 - Mighty Cleave
+- Tera Starstorm
+- Malignant Chain
 
 **Many other moves (especially signature moves) were given 100% accuracy:**
 - Normal:
@@ -211,10 +286,10 @@
     - Flying Press
 - Flying:
     - Fly
+    - Sky Attack
     - Air Cutter
     - Air Slash
     - Dual Wingbeat
-    - Aeroblast
 - Poison:
     - Belch
 - Ground:
@@ -228,7 +303,6 @@
     - Rock Throw
     - Rock Tomb
     - Rock Blast
-    - Diamond Storm
     - Stone Axe
 - Bug:
     - Pin Missile
@@ -236,13 +310,10 @@
     - Poltergeist
 - Electric:
     - Thunder Fang
-    - Bolt Strike
     - Thunder Cage
 - Fire:
     - Blaze Kick
     - Fire Fang
-    - Blue Flare
-    - Sacred Fire
     - V-Create
     - Pyro Ball
 - Water:
@@ -253,7 +324,6 @@
     - Steam Eruption
     - Triple Dive
 - Grass:
-    - Seed Flare
     - Leaf Tornado
     - Chloroblast
     - Syrup Bomb
@@ -265,13 +335,9 @@
 - Ice:
     - Ice Fang
     - Icicle Crash
-    - Glaciate
-    - Freeze Shock
-    - Ice Burn
-    - Mountain Gale
 - Dragon:
     - Dual Chop
-    - Spacial Rend
+    - Eternabeam
 - Dark:
     - Night Daze
     - Ceaseless Edge

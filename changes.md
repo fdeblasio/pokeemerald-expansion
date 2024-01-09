@@ -1114,6 +1114,15 @@
 - Type: Null:
     - Can also evolve at level 45
 
+- Tapu Koko:
+    - Learns Supercell Slam, Play Rough, and Rising Voltage by TM
+
+- Tapu Lele:
+    - Learns Expanding Force by TM
+
+- Tapu Bulu:
+    - Learns Grassy Glide and Play Rough by TM
+
 - Thwackey:
     - Evolution: 35->36
 

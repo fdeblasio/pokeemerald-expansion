@@ -9949,7 +9949,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "Attacks with an aura blast\n"
             "that cannot be evaded."),
         .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 80 : 90,
+        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 90 : 90,
         .type = TYPE_FIGHTING,
         .accuracy = 0,
         .pp = 20,

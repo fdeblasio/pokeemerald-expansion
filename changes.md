@@ -170,6 +170,8 @@
 - Rock Wrecker:
     - Accuracy: 90->100
     - PP: 5->10
+- Aura Sphere
+    - Power: 80->90
 - Mystical Power:
     - Power: 70->80
     - Accuracy: 90->100

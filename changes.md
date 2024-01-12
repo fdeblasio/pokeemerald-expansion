@@ -103,7 +103,7 @@
     - Power: 70->75
 - Constrict:
     - Power: 10->30
-    - Chance to reduce speed: 10->50
+    - Chance to reduce speed: 10%->30%
 - Volt Tackle:
     - Paralyze chance: 10%->30%
     - No longer causes recoil

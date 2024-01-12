@@ -72,12 +72,12 @@
 // *******************************
 enum DebugMenu
 {
+    DEBUG_MENU_ITEM_GIVE,
     DEBUG_MENU_ITEM_UTILITIES,
     DEBUG_MENU_ITEM_PCBAG,
-    DEBUG_MENU_ITEM_PARTY,
-    DEBUG_MENU_ITEM_GIVE,
-    DEBUG_MENU_ITEM_SCRIPTS,
     DEBUG_MENU_ITEM_FLAGVAR,
+    DEBUG_MENU_ITEM_PARTY,
+    DEBUG_MENU_ITEM_SCRIPTS,
     //DEBUG_MENU_ITEM_BATTLE,
     DEBUG_MENU_ITEM_SOUND,
     DEBUG_MENU_ITEM_CANCEL,
@@ -893,8 +893,8 @@ static void (*const sDebugMenu_Actions_PCBag_Fill[])(u8) =
 
 static void (*const sDebugMenu_Actions_Party[])(u8) =
 {
-    [DEBUG_PARTY_MENU_ITEM_HATCH_AN_EGG]  = DebugAction_Party_HatchAnEgg,
     [DEBUG_PARTY_MENU_ITEM_HEAL_PARTY]    = DebugAction_Party_HealParty,
+    [DEBUG_PARTY_MENU_ITEM_HATCH_AN_EGG]  = DebugAction_Party_HatchAnEgg,
     [DEBUG_PARTY_MENU_ITEM_POISON_MONS]   = DebugAction_Party_PoisonMons,
 };
 

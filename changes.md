@@ -264,6 +264,8 @@
 - Gigaton Hammer
 - Hyper Drill
 - Glaive Rush
+- Collision Course
+- Electro Drift
 - Blood Moon
 - Fickle Beam
 - Thunderclap

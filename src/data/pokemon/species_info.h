@@ -131,6 +131,112 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconPalIndex = 1,
     },
 
+    /*
+    [SPECIES_QUESTION_MARK] =
+    {
+        .baseHP        = 50,
+        .baseAttack    = 150,
+        .baseDefense   = 50,
+        .baseSpeed     = 150,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 150,
+        .types = { TYPE_NORMAL, TYPE_NORMAL },
+        .catchRate = 255,
+        .expYield = 255,
+        .evYield_HP = 2,
+        .evYield_Attack = 2,
+        .evYield_Defense = 2,
+        .evYield_SpAttack = 2,
+        .evYield_SpDefense = 2,
+        .evYield_Speed = 2,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = { EGG_GROUP_NO_EGGS_DISCOVERED, EGG_GROUP_NO_EGGS_DISCOVERED },
+        .abilities = { ABILITY_NONE, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("?"),
+        .cryId = CRY_UNOWN,
+        .natDexNum = NATIONAL_DEX_NONE,
+        .categoryName = _("œUYË fYËÏpY"),
+        .height = 0,
+        .weight = 2259,
+        .description = COMPOUND_STRING(
+            "This is a newly discovered Pokémon.\n"
+            "It is currently under investigation.\n"
+            "No detailed information is available\n"
+            "at this time."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        FRONT_PIC(DoubleQuestionMark, 64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_None,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .enemyMonElevation = 0,
+        BACK_PIC(DoubleQuestionMark, 64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_NONE,
+        PALETTES(DoubleQuestionMark),
+        ICON(QuestionMark, 0),
+        //FOOTPRINT(None)
+        LEARNSETS(None),
+    },
+    [SPECIES_DASH] =
+    {
+        .baseHP        = 33,
+        .baseAttack    = 2,
+        .baseDefense   = 45,
+        .baseSpeed     = 73,
+        .baseSpAttack  = 14,
+        .baseSpDefense = 8,
+        .types = { TYPE_TOUGH, TYPE_CUTE },
+        .catchRate = 255,
+        .expYield = 30,
+        .evYield_HP = 3,
+        .evYield_Attack = 3,
+        .evYield_SpAttack = 2,
+        .evYield_SpDefense = 3,
+        .evYield_Speed = 1,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 65,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = { EGG_GROUP_NO_EGGS_DISCOVERED, EGG_GROUP_NO_EGGS_DISCOVERED },
+        .abilities = { ABILITY_NONE, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("?"),
+        .cryId = CRY_BULBASAUR,
+        .natDexNum = NATIONAL_DEX_NONE,
+        .categoryName = _("N/A"),
+        .height = 0,
+        .weight = 0,
+        .description = COMPOUND_STRING(
+            "This is a newly discovered Pokémon.\n"
+            "It is currently under investigation.\n"
+            "No detailed information is available\n"
+            "at this time."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        FRONT_PIC(Egg, 64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_None,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .enemyMonElevation = 0,
+        BACK_PIC(Egg, 64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_NONE,
+        PALETTES(Egg),
+        ICON(Egg, 0),
+        FOOTPRINT(Treecko)
+        LEARNSETS(None),
+    },
+    */
+
     /* You may add any custom species below this point based on the following structure: */
 
     /*

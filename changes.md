@@ -35,8 +35,6 @@
 - Sacred Ash now works in battles although it only revives one Pokémon
 - Pokémon that evolve with an item at day or night now can evolve at any time
 - EVs now give one stat increase for every EV but cap out at 63 (individual)/127 (total)
-- Vitamins are cheaper
-- Ability Capsules, Ability Patches, and EV-reducing berries are available to buy in Lilycove (Bottle Caps and Mints not yet implemented)
 - Houndour was added to the Hoenn Pokédex to give Team Magma more variety
 - Frontier Brains have updated teams
 - Battle Pyramid wild Pokémon have been updated
@@ -68,6 +66,11 @@
 - Faster text speed
 - Faster walking/surfing speed
 - Can now use Soot Sack to see how much ash you have
+
+## Items:
+- Eviolite now prevents Pokémon from evolving
+- Some items, such as vitamins and hold items, are cheaper
+- Ability Capsules, Ability Patches, and EV-reducing berries are available to buy in Lilycove (Bottle Caps and Mints not yet implemented)
 
 ## Berries:
 - All berries: min and max yields have been boosted to a minimum of 3/6

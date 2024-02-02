@@ -501,29 +501,7 @@ const u8 gText_SpDef4[] = _("Sp. Def");
 const u8 gText_Speed2[] = _("Speed");
 const u8 gText_HP4[] = _("HP");
 const u8 gText_EmptyString8[] = _(""); // Unused
-<<<<<<< HEAD
 const u8 gText_OTSlash[] = _C("OT/");
-const u8 gText_RentalPkmn[] = _("RENTAL POKéMON");
-const u8 gText_TypeSlash[] = _("TYPE/");
-const u8 gText_Power[] = _("POWER");
-const u8 gText_Accuracy2[] = _("ACCURACY");
-const u8 gText_Appeal[] = _("APPEAL");
-const u8 gText_Jam[] = _("JAM");
-const u8 gText_Status[] = _("STATUS");
-const u8 gText_ExpPoints[] = _("EXP. POINTS");
-const u8 gText_NextLv[] = _("NEXT LV.");
-const u8 gText_RibbonsVar1[] = _("RIBBONS: {STR_VAR_1}");
-const u8 gText_EmptyString5[] = _("");
-const u8 gText_Events[] = _("EVENTS"); // Unused
-const u8 gText_Switch[] = _("SWITCH");
-const u8 gText_PkmnInfo[] = _("POKéMON INFO");
-const u8 gText_PkmnSkills[] = _("POKéMON SKILLS");
-const u8 gText_BattleMoves[] = _("BATTLE MOVES");
-const u8 gText_ContestMoves[] = _("CONTEST MOVES");
-const u8 gText_Info[] = _("INFO");
-const u8 gText_EggWillTakeALongTime[] = _("It looks like this EGG will\ntake a long time to hatch.");
-=======
-const u8 gText_OTSlash[] = _("OT/");
 const u8 gText_RentalPkmn[] = _("Rental Pokémon");
 const u8 gText_TypeSlash[] = _("Type/");
 const u8 gText_Power[] = _("Power");
@@ -543,7 +521,6 @@ const u8 gText_BattleMoves[] = _("Battle Moves");
 const u8 gText_ContestMoves[] = _("Contest Moves");
 const u8 gText_Info[] = _("Info");
 const u8 gText_EggWillTakeALongTime[] = _("It looks like this Egg will\ntake a long time to hatch.");
->>>>>>> dd7172293e (Decapitalized strings.c)
 const u8 gText_EggWillTakeSomeTime[] = _("What will hatch from this?\nIt will take some time.");
 const u8 gText_EggWillHatchSoon[] = _("It moves occasionally.\nIt should hatch soon.");
 const u8 gText_EggAboutToHatch[] = _("It's making sounds.\nIt's about to hatch!");
@@ -1127,21 +1104,15 @@ const u8 gText_GamePlayCannotBeContinued[] = _("{COLOR RED}“Game play cannot b
 const u8 gText_CheckCompleted[] = _("Check completed.\nAttempting to save again.\nPlease wait.");
 const u8 gText_SaveCompleteGameCannotContinue[] = _("Save completed.\n{COLOR RED}“Game play cannot be continued.\nReturning to the title screen.”");
 const u8 gText_SaveCompletePressA[] = _("Save completed.\n{COLOR RED}“Please press the A Button.”");
-<<<<<<< HEAD
 #if (DECAP_ENABLED) && !(DECAP_MAP_NAMES)
 const u8 gText_Ferry[] = _C("FERRY");
 const u8 gText_SecretBase[] = _C("SECRET BASE");
 const u8 gText_Hideout[] = _C("HIDEOUT");
 #else
-const u8 gText_Ferry[] = _("FERRY");
-const u8 gText_SecretBase[] = _("SECRET BASE");
-const u8 gText_Hideout[] = _("HIDEOUT");
-#endif
-=======
 const u8 gText_Ferry[] = _("Ferry");
 const u8 gText_SecretBase[] = _("Secret Base");
 const u8 gText_Hideout[] = _("Hideout");
->>>>>>> dd7172293e (Decapitalized strings.c)
+#endif
 const u8 gText_ResetRTCConfirmCancel[] = _("Reset RTC?\nA: Confirm, B: Cancel");
 const u8 gText_PresentTime[] = _("Present time in game");
 const u8 gText_PreviousTime[] = _("Previous time in game");
@@ -1237,17 +1208,10 @@ const u8 gText_PkmnFainted_FldPsn[] = _("{STR_VAR_1} fainted…\p\n");
 #else
 const u8 gText_PkmnFainted_FldPsn[] = _("{STR_VAR_1} survived the poisoning.\nThe poison faded away!\p");
 #endif
-<<<<<<< HEAD
-const u8 gText_Marco[] = _("MARCO");
-const u8 gText_TrainerCardName[] = _("NAME: ");
-const u8 gText_TrainerCardIDNo[] = _C("IDNo.");
-const u8 gText_TrainerCardMoney[] = _("MONEY");
-=======
 const u8 gText_Marco[] = _("Marco");
 const u8 gText_TrainerCardName[] = _("Name: ");
-const u8 gText_TrainerCardIDNo[] = _("ID No.");
+const u8 gText_TrainerCardIDNo[] = _C("ID No.");
 const u8 gText_TrainerCardMoney[] = _("Money");
->>>>>>> dd7172293e (Decapitalized strings.c)
 const u8 gText_PokeDollar[] = _("¥"); // Unused
 const u8 gText_TrainerCardPokedex[] = _("Pokédex");
 const u8 gText_EmptyString6[] = _("");

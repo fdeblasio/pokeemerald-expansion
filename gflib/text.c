@@ -1230,6 +1230,9 @@ static u16 RenderText(struct TextPrinter *textPrinter)
                 textPrinter->printerTemplate.currentX += gCurGlyph.width + textPrinter->printerTemplate.letterSpacing;
                 return RENDER_PRINT;
             case EOS:
+                if (DECAP_ENABLED)
+                    // Clear fixed case
+                    textPrinter->lastChar = currChar;
                 return RENDER_FINISH;
             }
 

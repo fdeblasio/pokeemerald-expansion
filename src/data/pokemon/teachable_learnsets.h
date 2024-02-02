@@ -35134,21 +35134,6 @@ static const u16 sBanetteTeachableLearnset[] = {
     MOVE_MAGIC_COAT,
     MOVE_MAGIC_ROOM,
     MOVE_METRONOME,
-    MOVE_PSYCH_UP,
-    MOVE_SLEEP_TALK,
-    MOVE_SNORE,
-    MOVE_SWAGGER,
-    MOVE_THUNDER_WAVE,
-    MOVE_UNAVAILABLE,
-};
-
-static const u16 sBanetteTeachableLearnset[] = {
-    MOVE_ATTRACT,
-    MOVE_CALM_MIND,
-    MOVE_DOUBLE_TEAM,
-    MOVE_FACADE,
-    MOVE_FLASH,
-    MOVE_HYPER_BEAM,
     MOVE_PROTECT,
     MOVE_PSYCHIC,
     MOVE_RAIN_DANCE,

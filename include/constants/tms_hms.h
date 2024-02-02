@@ -58,7 +58,7 @@
     F(FALSE_SWIPE) \
     F(BRINE) \
     F(SIGNAL_BEAM) \
-    F(CHARGE_BEAM) \
+    F(SUPERCELL_SLAM) \
     F(PSYCHIC_FANGS) \
     F(DRAGON_PULSE) \
     F(DRAIN_PUNCH) \
@@ -73,7 +73,7 @@
     F(PLAY_ROUGH) \
     F(LEECH_LIFE) \
     F(STONE_EDGE) \
-    F(AVALANCHE) \
+    F(ICICLE_CRASH) \
     F(THUNDER_WAVE) \
     F(NASTY_PLOT) \
     F(SWORDS_DANCE) \

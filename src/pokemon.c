@@ -3631,7 +3631,7 @@ u8 CalculatePPWithBonus(u16 move, u8 ppBonuses, u8 moveIndex)
 
 u8 CalculateMaxPP(u16 move)
 {
-    return gBattleMoves[move].pp * 16 / 10;
+    return gMovesInfo[move].pp * 16 / 10;
 }
 
 void PokemonToBattleMon(struct Pokemon *src, struct BattlePokemon *dst)

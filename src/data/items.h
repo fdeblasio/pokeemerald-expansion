@@ -11230,12 +11230,12 @@ const struct Item gItemsInfo[] =
     {
         .name = _("TM57"),
         .price = 3000,
-        .description = COMPOUND_STRING("Charge Beam"),
+        .description = COMPOUND_STRING("Supercell Slam"),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_CHARGE_BEAM
+        .secondaryId = MOVE_SUPERCELL_SLAM
     },
 
     [ITEM_TM58] =
@@ -11410,12 +11410,12 @@ const struct Item gItemsInfo[] =
     {
         .name = _("TM72"),
         .price = 3000,
-        .description = COMPOUND_STRING("Avalanche"),
+        .description = COMPOUND_STRING("Icicle Crash"),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_AVALANCHE
+        .secondaryId = MOVE_ICICLE_CRASH
     },
 
     [ITEM_TM73] =

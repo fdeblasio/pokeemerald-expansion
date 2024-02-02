@@ -98,8 +98,8 @@ TM52: Focus Blast - Victory Road
 TM53: Energy Ball - Lilycove TM Shop
 TM54: False Swipe - Slateport TM Shop
 TM55: Brine - Lavaridge TM Shop
-TM56: Signal Beam - Lilycove TM Shop
-TM57: Charge Beam - Slateport TM Shop
+TM56: Signal Beam - Lavaridge TM Shop
+TM57: Supercell Slam - Lilycove TM Shop
 TM58: Psychic Fangs - Lilycove TM Shop
 TM59: Dragon Pulse - Lilycove TM Shop
 TM60: Drain Punch - Lilycove TM Shop
@@ -114,7 +114,7 @@ TM68: Giga Impact - Lilycove TM Shop
 TM69: Play Rough - Lilycove TM Shop
 TM70: Leech Life - Lilycove TM Shop
 TM71: Stone Edge - Lilycove TM Shop
-TM72: Avalanche - Lavaridge TM Shop
+TM72: Icicle Crash - Lilycove TM Shop
 TM73: Thunder Wave - Slateport TM Shop
 TM74: Nasty Plot - Lavaridge TM Shop
 TM75: Swords Dance - Lavaridge TM Shop

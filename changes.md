@@ -926,6 +926,9 @@
 - Riolu:
     - Can also evolve at level 20
 
+- Abomasnow:
+    - Learns Icicle Crash by TM
+
 - Snivy:
     - Evolution: 17->16
 
@@ -1083,6 +1086,9 @@
 - Larvesta:
     - Evolution: 59->56
 
+- Kyurem:
+    - Learns Icicle Crash by TM
+
 - Spritzee/Aromatisse:
     - Gender Ratio: 50/50->25/75
 
@@ -1115,6 +1121,9 @@
 
 - Brionne:
     - Evolution: 34->36
+
+- Crabominable:
+    - Learns Icicle Crash by TM
 
 - Type: Null:
     - Can also evolve at level 45
@@ -1160,6 +1169,9 @@
 
 - Dragapult:
     - Learns Shadow Claw by TM
+
+- Pawmot:
+    - Learns Drain Punch by TM
 
 - Ceruledge:
     - Hidden Ability: Weak Armor->Sharpness

@@ -45,7 +45,7 @@ upcoming
 - PokéNav callers sometimes think there were 512 wins at the Battle Palace (seems to be related to Battle Tent issue)
 
 ## To Do:
-- Add Indigo Disk moves to some movesets (like Electivire/Supercell Slam)
+- Add Indigo Disk moves to some movesets
 ### Meta
 - More simple modifications: https://www.pokecommunity.com/showthread.php?t=416647&page=1
 - Pret wiki tutorials:       https://github.com/pret/pokeemerald/wiki/Tutorials
@@ -56,6 +56,7 @@ upcoming
 ### Pokémon
 - Update teachable moves to match Indigo Disk
     - Figure out a way to mass update of both level up and teachable moves (PoryMoves has slightly different syntax for some forms)
+    - Gen 9 Pokémon currently only have Gen 3 teachable moves
 - Give Absol Sharpness?
 - Give Espeon Power Gem on level up or evolution?
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?
@@ -65,10 +66,7 @@ upcoming
 
 ### Items
 - Hyper Voice tutor->TM?
-- Supercell Slam TM once implemented?
-- Add Ice Spinner as a TM (and maybe give to Beartic/Mamoswine/other Ice types) once implemented?
-    - Alternitavely could have Icicle Crash as a TM/given to more Pokémon since it got updated to have 100% accuracy
-- Supercell Slam/Temper Flare/Ice Spinner (all with better STAB distribution) can replace elemental punches as TMs
+- Temper Flare (with better STAB distribution) could become a TM/tutor
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Include charms?
 - Give Soul Dew both effects? (Without the ban/Battle Frontier nullification)

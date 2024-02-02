@@ -25,8 +25,8 @@ LavaridgeTown_Mart_EventScript_TMClerk::
 LavaridgeTown_Mart_TMs:
 	.2byte ITEM_TM_TOXIC
 	.2byte ITEM_TM_BRINE
+	.2byte ITEM_TM_SIGNAL_BEAM
 	.2byte ITEM_TM_PAYBACK
-	.2byte ITEM_TM_AVALANCHE
 	.2byte ITEM_TM_NASTY_PLOT
 	.2byte ITEM_TM_SWORDS_DANCE
 	.2byte ITEM_TM_STEALTH_ROCK

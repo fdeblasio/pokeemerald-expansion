@@ -5421,7 +5421,7 @@ static void Task_HandleReplaceMoveYesNoInput(u8 taskId)
         // fallthrough
     case 1:
         GetMonNickname(mon, gStringVar1);
-        StringCopy(gStringVar2, gMoveNames[gPartyMenu.data1]);
+        StringCopy(gStringVar2, GetMoveName(gPartyMenu.data1));
         StringExpandPlaceholders(gStringVar4, gText_MoveNotLearned);
         DisplayPartyMenuMessage(gStringVar4, TRUE);
         if (gPartyMenu.learnMoveState == 1)

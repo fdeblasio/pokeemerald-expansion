@@ -346,7 +346,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     TRAINER_CLASS(ELITE_FOUR, "Elite Four", 25, BALL_ULTRA),
     TRAINER_CLASS(LEADER, "Leader", 25, BALL_ULTRA),
     TRAINER_CLASS(SCHOOL_KID, "Schoolkid"),
-    TRAINER_CLASS(SR_AND_JR, "Teammates", 4, DEFAULT_BALL),
+    TRAINER_CLASS(SR_AND_JR, "Teammates", 4),
     TRAINER_CLASS(WINSTRATE, "Winstrates'", 10, BALL_ULTRA),
     TRAINER_CLASS(POKEFAN, "Poké Fan", 20, BALL_REPEAT),
     TRAINER_CLASS(YOUNGSTER, "Youngster", 4),

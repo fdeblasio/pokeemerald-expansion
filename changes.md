@@ -654,6 +654,9 @@
 - Mantyke (not in main game):
     - Catch rate: 25->90
 
+- Stantler (postgame):
+    - Learns Psyshield Bash by level up
+
 - Lugia (postgame):
     - Learns Brave Bird by level up
 

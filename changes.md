@@ -418,9 +418,6 @@
 - Machamp:
     - Learns Drain Punch by TM
 
-- Golem:
-    - Learns Body Press by TM (Teal Mask addition)
-
 - Cloyster (not in main game):
     - Held items:
         - Pearl: 50%->0%
@@ -449,7 +446,6 @@
 
 - Doduo/Dodrio:
     - Get Aerial Ace instead of Wing Attack at level 15 due to not having wings
-    - Learn Acrobatics by TM (Indigo Disk addition)
 
 - Lickitung (not in main game):
     - Atk: 55->65
@@ -503,10 +499,6 @@
 - Scyther (not in main game):
     - Catch rate: 45->90
     - Learns Dual Wingbeat by level up
-    - Learns Lunge by move tutor (Teal Mask addition)
-
-- Scizor/Kleavor (not in main game):
-    - Learn Lunge by move tutor (Teal Mask addition)
 
 - Smoochum (not in main game):
     - Def: 15->20
@@ -532,6 +524,7 @@
     - Atk: 123->125
     - Def: 67->70
     - SpA: 95->100
+    - Learns Electric Terrain by level up
     - Learns Drain Punch by TM
 
 - Magby (postgame):
@@ -584,9 +577,6 @@
 - Crocnaw (postgame):
     - Evolution: 30->36
 
-- Noctowl (postgame):
-    - Learns Skill Swap by TM (Teal Mask addition)
-
 - Ledyba (postgame):
     - Atk: 20->40
 
@@ -630,14 +620,11 @@
 
 - Gligar/Gliscor (postgame):
     - Learn Dual Wingbeat by level up
-    - Learn Crunch and Psychic Fangs by TM (Teal Mask addition)
-    - Learn Lunge by move tutor (Teal Mask addition)
 
 - Dunsparce (not in main game):
     - Learns Swift by move tutor
 
 - Granbull (postgame):
-    - Learns Psychic Fangs by TM (Indigo Disk addition I accidentally predicted)
     - Hidden Ability: Rattled->Strong Jaw
 
 - Qwilfish/Hisuian Qwilfish/Overqwil (not in main game):
@@ -655,7 +642,6 @@
 
 - Magcargo:
     - Learns Body Press by TM
-    - Learns Power Gem by TM (Teal Mask addition)
 
 - Mamoswine (not in main game):
     - Learns Icicle Crash by level up
@@ -692,12 +678,6 @@
 - Mudkip:
     - Swapped level 3 and 6 moves to make first rival battle easier
 
-- Swampert:
-    - Learns Poison Jab by TM (Indigo Disk addition)
-
-- Mightyena:
-    - Learns Psychic Fangs by TM (Teal Mask addition)
-
 - Wurmple:
     - Learns Bug Bite at level 7 instead of 15
     - Evolution is based on time of day
@@ -729,19 +709,13 @@
 
 - Loudred/Exploud:
     - Received Punk Rock as a second ability
-    - Learn Disarming Voice, Teeter Dance, and Dizzy Punch via level up
+    - Learn Disarming Voice, Teeter Dance, and Dizzy Punch by level up
 
 - Makuhita:
     - Catch rate: 180->220
 
-- Hariyama:
-    - Learns Drain Punch by TM (Scarlet/Violet addition)
-
-- Nosepass/Probopass:
-    - Learn Body Press by level up
-
 - Delcatty:
-    - Learns Swift via level up
+    - Learns Swift by level up
 
 - Sableye:
     - Catch rate: 45->90
@@ -755,14 +729,12 @@
     - Atk: 73->75
     - SpA: 47->75
     - Illuminate->Tinted Lens
-    - Learn Air Slash by TM (Teal Mask addition)
 
 - Illumise:
     - Atk: 47->75
     - SpA: 73->75
     - Oblivious->Illuminate
     - Tinted Lens->Oblivious
-    - Learn Air Slash by TM (Teal Mask addition)
 
 - Budew:
     - Can also evolve at level 13
@@ -822,12 +794,11 @@
     - Learns Surf by HM
 
 - Duskull/Dusclops:
-    - Learns Spite by breeding
+    - Learn Spite by Egg Move
 
 - Dusknoir:
-    - Learns Spite by breeding
+    - Learns Spite by Egg Move
     - Learns Drain Punch by TM
-    - Learns Leech Life by TM (Teal Mask addition)
     - Gets Iron Fist as second Ability
 
 - Tropius:
@@ -843,7 +814,7 @@
     - Can also evolve at level 19
 
 - Absol:
-    - Learns Spite by breeding
+    - Learns Spite by Egg Move
 
 - Huntail:
     - Holding a Deep Sea Tooth multiplies its Attack by 1.5
@@ -862,9 +833,6 @@
 
 - Salamence:
     - Learns Dual Wingbeat by level up
-
-- Metagross:
-    - Learns Psychic Fangs by TM (Indigo Disk addition)
 
 - Latios/Latias:
     - Level up learnset slightly restructured to avoid a battle where they only have one attacking move
@@ -893,15 +861,10 @@
     - Evolution: 32->36
 
 - Torterra:
-    - Learns Body Press and Zen Headbutt by TM (Teal Mask addition)
-    - Learns Grassy Glide by move tutor (Teal Mask addition)
-    - Learns Shell Smash after evolving
+    - Learns Shell Smash upon evolving
 
 - Chimchar:
     - Evolution: 14->16
-
-- Infernape:
-    - Learns Aura Sphere by TM (Teal Mask addition)
 
 - Cranidos/Rampardos:
     - Received Rock Head as a second ability

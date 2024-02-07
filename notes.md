@@ -54,9 +54,7 @@ upcoming
 - Remove unused code
 
 ### Pokémon
-- Update teachable moves to match Indigo Disk
-    - Figure out a way to mass update of both level up and teachable moves (PoryMoves has slightly different syntax for some forms)
-    - Gen 9 Pokémon currently only have Gen 3 teachable moves
+- Eventually remove RSE and/or BDSP teachable moves
 - Give Absol Sharpness?
 - Give Espeon Power Gem on level up or evolution?
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?

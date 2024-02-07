@@ -8663,7 +8663,6 @@ static const struct LevelUpMove sNosepassLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_STONE_EDGE),
     LEVEL_UP_MOVE(43, MOVE_LOCK_ON),
     LEVEL_UP_MOVE(43, MOVE_ZAP_CANNON),
-    LEVEL_UP_MOVE(50, MOVE_BODY_PRESS),
     LEVEL_UP_END
 };
 
@@ -8693,7 +8692,6 @@ static const struct LevelUpMove sProbopassLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_STONE_EDGE),
     LEVEL_UP_MOVE(43, MOVE_LOCK_ON),
     LEVEL_UP_MOVE(43, MOVE_ZAP_CANNON),
-    LEVEL_UP_MOVE(50, MOVE_BODY_PRESS),
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS

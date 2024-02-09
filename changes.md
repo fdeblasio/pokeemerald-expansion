@@ -369,8 +369,14 @@
 <br>
 <br>
 
+- All starters:
+    - Any with a STAB attack at level 5 or below had it swapped with the next attack to prevent the rival battle from being too hard
+
 - Ivysaur (not in main game):
     - Evolution: 32->36
+
+- Charmander/Charmeleon/Charizard (not in main game):
+    - Learn Metal Claw by level up
 
 - Caterpie (not in main game):
     - Learns Bug Bite at level 7 instead of 9
@@ -393,6 +399,9 @@
     - Learns Volt Tackle at level 1
 
 - Raichu:
+    - Learns Volt Tackle at level 1
+
+- Alolan Raichu (not in main game):
     - Learns Volt Tackle at level 1
 
 - Cleffa (not in main game):
@@ -451,9 +460,6 @@
 - Sirfetch'd (not in main game):
     - Held item: Leek: 5%->100%
     - Learns Drain Punch by TM
-
-- Doduo/Dodrio:
-    - Get Aerial Ace instead of Wing Attack at level 15 due to not having wings
 
 - Lickitung (not in main game):
     - Atk: 55->65
@@ -555,6 +561,7 @@
 
 - Gyarados:
     - Type: Water/Flying->Water
+    - Learns Bounce by level up
 
 - Eevee (not in main game):
     - Now evolves into Espeon with a Sun Stone
@@ -668,9 +675,6 @@
 - Lugia (postgame):
     - Learns Brave Bird by level up
 
-- Treecko:
-    - Swapped level 3 and 6 moves to make first rival battle easier
-
 - Sceptile:
     - Atk: 85->105
     - SpA: 105->85
@@ -680,14 +684,8 @@
     - Atk: 110->145
     - SpA: 145->110
 
-- Torchic:
-    - Swapped level 3 and 6 moves to make first rival battle easier
-
 - Blaziken:
     - Learns Drain Punch by TM
-
-- Mudkip:
-    - Swapped level 3 and 6 moves to make first rival battle easier
 
 - Wurmple:
     - Learns Bug Bite at level 7 instead of 15
@@ -718,8 +716,13 @@
 - Whismur:
     - Learn Disarming Voice by level up
 
-- Loudred/Exploud:
+- Loudred:
     - Received Punk Rock as a second ability
+    - Learns Disarming Voice, Teeter Dance, and Dizzy Punch by level up
+
+- Exploud:
+    - Received Punk Rock as a second ability
+    - Learns Hyper Voice upon evolving
     - Learn Disarming Voice, Teeter Dance, and Dizzy Punch by level up
 
 - Makuhita:

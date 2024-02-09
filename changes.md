@@ -191,6 +191,8 @@
 - Seed Flare:
     - Accuracy: 85->100
     - PP: 5->10
+- Fiery Dance
+    - Effect: 50%->100%
 - Bleakwind Storm/Wildbolt Storm/Sandsear Storm/Springtide Storm:
     - Power: 100->120
     - Accuracy: 80->100
@@ -369,6 +371,12 @@
 
 - Ivysaur (not in main game):
     - Evolution: 32->36
+
+- Caterpie (not in main game):
+    - Learns Bug Bite at level 7 instead of 9
+
+- Weedle (not in main game):
+    - Learns Bug Bite at level 7 instead of 9
 
 - Pidgeot (not in main game):
     - Learns Acrobatics by TM

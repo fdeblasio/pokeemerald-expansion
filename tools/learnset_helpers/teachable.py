@@ -154,9 +154,8 @@ for mon in list_of_mons:
         if move in compatibility_dict[mon_parsed]:
             tutor_learnset.append(move)
             continue
-    tm_learnset.sort()
-    tutor_learnset.sort()
     tm_learnset += tutor_learnset
+    tm_learnset.sort()
     repl = "static const u16 s%sTeachableLearnset[] = {\n    " % mon
     if len(tm_learnset) > 0:
         repl += ",\n    ".join(tm_learnset) + ",\n    "

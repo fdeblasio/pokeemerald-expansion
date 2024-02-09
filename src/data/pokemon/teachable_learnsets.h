@@ -31940,6 +31940,7 @@ static const u16 sGroudonTeachableLearnset[] = {
     MOVE_SMACK_DOWN,
     MOVE_SNORE,
     MOVE_SOLAR_BEAM,
+    MOVE_SOLAR_BLADE,
     MOVE_SPIKES,
     MOVE_STEALTH_ROCK,
     MOVE_STOMPING_TANTRUM,

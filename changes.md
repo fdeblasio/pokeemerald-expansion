@@ -359,7 +359,7 @@
     - Strange Steam
 
 ### Pokémon:
-- Pokémon typically have their latest moveset plus most moves from their Gen 7 moveset that have been removed
+- Pokémon have all their moves from their movesets from Gen 7 onwards, at the most recent levels
     - Natural Gift, Lucky Chant, Wring Out, and Synchronoise have still been removed
 - If a Pokémon can evolve by holding/being traded with an item, it now evolves from that item being used
     - Pokémon that evolve by trading with no held item now evolve by using a Linking Cord
@@ -502,6 +502,9 @@
 
 - Pinsir:
     - Catch rate: 45->90
+
+- Starmie:
+    - Learns Water Pulse by level up
 
 - Mime Jr./Mr. Mime:
     - Gender Ratio: 50/50->100/0
@@ -697,6 +700,9 @@
 - Dustox:
     - Sp. Def: 90->100 to match Beautifly's stat increase
 
+- Nuzleaf/Shiftry:
+    - Learn Grass Whistle by level up
+
 - Swellow:
     - Learns Acrobatics by TM
 
@@ -705,7 +711,7 @@
         - Tiny Mushroom: 50%->0%
         - Big Mushroom: 5%->50%
         - Balm Mushroom: 0%->5%
-    - Learns Spore and Drain Punch by level up
+    - Learns Drain Punch by level up
 
 - Slaking:
     - Learns Giga Impact by level up
@@ -930,6 +936,12 @@
 - Scolipede:
     - Learns Coil by level up
     - Learns Lunge by move tutor
+
+- Whimsicott:
+    - Learns Earth Power by TM
+
+- Lilligant:
+    - Learns Earth Power by TM
 
 - Sandile (postgame):
     - Evolution: 29->25

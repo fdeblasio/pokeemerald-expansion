@@ -45,7 +45,6 @@ upcoming
 - PokéNav callers sometimes think there were 512 wins at the Battle Palace (seems to be related to Battle Tent issue)
 
 ## To Do:
-- Add Indigo Disk moves to some movesets
 ### Meta
 - More simple modifications: https://www.pokecommunity.com/showthread.php?t=416647&page=1
 - Pret wiki tutorials:       https://github.com/pret/pokeemerald/wiki/Tutorials
@@ -65,6 +64,8 @@ upcoming
 ### Items
 - Hyper Voice tutor->TM?
 - Temper Flare (with better STAB distribution) could become a TM/tutor
+- Aqua Tail could also become a TM since it now has 100% accuracy
+- Ideally all SV TMs would be available if the bag was ever expanded greatly
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Include charms?
 - Give Soul Dew both effects? (Without the ban/Battle Frontier nullification)

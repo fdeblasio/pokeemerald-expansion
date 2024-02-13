@@ -486,10 +486,10 @@ extern const u8 FallarborTown_MoveRelearnersHouse_EventScript_ChooseMon[];
 
 // Text
 // General
-static const u8 sDebugText_True[] =          _("TRUE");
-static const u8 sDebugText_False[] =         _("FALSE");
-static const u8 sDebugText_Colored_True[] =  _("{COLOR GREEN}TRUE");
-static const u8 sDebugText_Colored_False[] = _("{COLOR RED}FALSE");
+static const u8 sDebugText_True[] =          _C("TRUE");
+static const u8 sDebugText_False[] =         _C("FALSE");
+static const u8 sDebugText_Colored_True[] =  _C("{COLOR GREEN}TRUE");
+static const u8 sDebugText_Colored_False[] = _C("{COLOR RED}FALSE");
 static const u8 sDebugText_Dashes[] =        _("---");
 static const u8 sDebugText_Empty[] =         _("");
 static const u8 sDebugText_Continue[] =      _("Continue…{CLEAR_TO 110}{RIGHT_ARROW}");

@@ -13,6 +13,13 @@ $1
 
 Debugging (https://cplusplus.com/reference/cstdio/printf/):
 MgbaPrintf(MGBA_LOG_WARN, "Friendship gain, modified: %d", mod);
+
+255 0 0
+0 255 0
+0 0 255
+255 255 0
+255 0 255
+0 255 255
 ```
 
 ## For release:
@@ -154,7 +161,7 @@ upcoming
     - battle_transitions/*_bg.pal to better match E4 types
     - stadium/palette3-7.pal to better match E4 types
     - look in graphics/ for more
-- New Scriptless Item Balls: https://github.com/pret/pokeemerald/wiki/Set-Up-Item-Balls-on-a-Map-Without-Needing-New-Scripts
+    - Trainer card
 - Type effectiveness in battle: https://www.pokecommunity.com/showpost.php?p=10167016&postcount=83
 - Add Hyper Training
 - Get rid of low health constant beeping (https://www.pokecommunity.com/showpost.php?p=10246778&postcount=194)

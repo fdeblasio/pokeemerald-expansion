@@ -5789,11 +5789,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_OCTILLERY] =
     {
         .baseHP        = 75,
-        .baseAttack    = 105,
-        .baseDefense   = 75,
+        .baseAttack    = 100,
+        .baseDefense   = 85,
         .baseSpeed     = 45,
-        .baseSpAttack  = 105,
-        .baseSpDefense = 75,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 75,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 168 : 164,

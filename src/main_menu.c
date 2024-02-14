@@ -410,7 +410,7 @@ static const u16 sMainMenuBgPal[] = INCBIN_U16("graphics/interface/main_menu_bg.
 static const u16 sMainMenuTextPal[] = INCBIN_U16("graphics/interface/main_menu_text.gbapal");
 
 static const u8 sTextColor_Headers[] = {TEXT_DYNAMIC_COLOR_1, TEXT_DYNAMIC_COLOR_2, TEXT_DYNAMIC_COLOR_3};
-static const u8 sTextColor_MenuInfo[] = {TEXT_DYNAMIC_COLOR_1, TEXT_COLOR_WHITE, TEXT_DYNAMIC_COLOR_3};
+static const u8 sTextColor_MenuInfo[] = {TEXT_DYNAMIC_COLOR_1, TEXT_COLOR_GREEN, TEXT_COLOR_LIGHT_GREEN};
 
 static const struct BgTemplate sMainMenuBgTemplates[] = {
     {

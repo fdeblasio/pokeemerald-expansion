@@ -152,6 +152,10 @@
     - Power: 100->150
 - Inferno:
     - Power: 100->150
+- Octazooka:
+    - Power: 65->90
+    - Accuracy: 85->100
+    - Effect: 50%->100%
 - Aeroblast:
     - Accuracy: 95->100
     - PP: 5->10
@@ -326,7 +330,6 @@
     - V-Create
     - Pyro Ball
 - Water:
-    - Octazooka
     - Razor Shell
     - Aqua Tail
     - Crabhammer
@@ -663,6 +666,14 @@
 
 - Mamoswine (not in main game):
     - Learns Icicle Crash by level up
+
+- Octillery (postgame):
+    - HP: 75
+    - Atk: 105->100
+    - Def: 75->85
+    - SpA: 105->110
+    - SpD: 75->85
+    - Spe: 45
 
 - Delibird (not in main game):
     - Atk: 55->75

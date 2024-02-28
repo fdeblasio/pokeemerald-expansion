@@ -93,6 +93,7 @@
 
 ## Abilities:
 - Iron Fist: Punching moves are now boosted by 30% (up from 20%) to match Sheer Force and Tough Claws
+- Punk Rock: Renamed Amplify to fit Exploud line as well
 
 ## Moves:
 - Double Slap:
@@ -734,11 +735,11 @@
     - Learn Disarming Voice by level up
 
 - Loudred:
-    - Received Punk Rock as a second ability
+    - Received Punk Rock/Amplify as a second ability
     - Learns Disarming Voice, Teeter Dance, and Dizzy Punch by level up
 
 - Exploud:
-    - Received Punk Rock as a second ability
+    - Received Punk Rock/Amplify as a second ability
     - Learns Hyper Voice upon evolving
     - Learn Disarming Voice, Teeter Dance, and Dizzy Punch by level up
 

@@ -1,3 +1,4 @@
+- NOTE: This all assumes there are no rebasing errors
 - Wild Pokémon and Trainers have their levels increased to make grinding less of a pain
     - However, with the Exp Share now affecting all party members, this can lead to becoming overleveled
 - Decapitalization
@@ -903,6 +904,10 @@
 
 - Shieldon/Bastiodon:
     - Received Rock Head as a second ability
+
+- Cherrim Sunshine Form:
+    - Atk: 60->90
+    - Sp. Def: 78->117
 
 - Buneary:
     - Can also evolve at level 23

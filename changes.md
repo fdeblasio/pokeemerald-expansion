@@ -34,6 +34,7 @@
 - Made rapids easier to navigate so that only one trip is needed to get all items/battle all trainers (at the cost of looking slightly worse)
 - All moves automatically have their max PP amount
 - Sacred Ash now works in battles although it only revives one Pokémon
+- Soul Dew uses its Gen 6 effect
 - Pokémon that evolve with an item at day or night now can evolve at any time
 - EVs now give one stat increase for every EV but cap out at 63 (individual)/127 (total)
 - Houndour was added to the Hoenn Pokédex to give Team Magma more variety

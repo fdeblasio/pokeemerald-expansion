@@ -75,7 +75,6 @@ upcoming
 - Ideally all SV TMs would be available if the bag was ever expanded greatly
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Include charms?
-- Give Soul Dew both effects? (Without the ban/Battle Frontier nullification)
 - Xaman's TM Case: https://www.pokecommunity.com/showpost.php?p=10378278
 
 ### Trainers

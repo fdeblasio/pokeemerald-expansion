@@ -616,6 +616,12 @@
 - Togepi (not in main game):
     - Can also evolve at level 16
 
+- Mareep/Flaaffy:
+    - Learn Tail Glow by Egg Move
+
+- Ampharos:
+    - Learns Tail Glow by level up
+
 - Azurill:
     - Can also evolve at level 10
     - Type: Normal/Fairy->Water/Fairy
@@ -658,8 +664,8 @@
     - Learns X-Scissor by TM
     - Catch rate: 45->90
 
-- Sneasel (not in main game):
-    - Learns Razor Wind by Egg Move
+- Sneasel/Weavile (not in main game):
+    - Learn Razor Wind by Egg Move
 
 - Slugma:
     - Evolution: 38->32

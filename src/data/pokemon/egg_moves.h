@@ -1673,6 +1673,7 @@ static const u16 sMareepEggMoveLearnset[] = {
     MOVE_IRON_TAIL,
     MOVE_AFTER_YOU,
     MOVE_AGILITY,
+    MOVE_TAIL_GLOW,
     MOVE_EERIE_IMPULSE,
     MOVE_ELECTRIC_TERRAIN,
     MOVE_UNAVAILABLE,

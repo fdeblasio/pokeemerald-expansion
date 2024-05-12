@@ -100,8 +100,10 @@
 ## Moves:
 - Double Slap:
     - Now hits exactly twice
-    - Power: 15->25
+    - Power: 15->30
     - Accuracy: 85->100
+- Twineedle:
+    - Power: 25->50
 - Needle Arm:
     - Now a punching move
     - Power: 60->75
@@ -180,7 +182,9 @@
 - Rock Wrecker:
     - Accuracy: 90->100
     - PP: 5->10
-- Aura Sphere
+- Chatter:
+    - Power: 65->80
+- Aura Sphere:
     - Power: 80->90
 - Mystical Power:
     - Power: 70->80
@@ -198,6 +202,8 @@
 - Seed Flare:
     - Accuracy: 85->100
     - PP: 5->10
+- Head Charge:
+    - No longer causes recoil
 - Fiery Dance
     - Effect: 50%->100%
 - Bleakwind Storm/Wildbolt Storm/Sandsear Storm/Springtide Storm:
@@ -390,8 +396,9 @@
 - Weedle (not in main game):
     - Learns Bug Bite at level 7 instead of 9
 
-- Pidgeot (not in main game):
-    - Learns Acrobatics by TM
+- Pidgey/Pidgeotto/Pidgeot (not in main game):
+    - Learn Peck by level up
+    - Learn Acrobatics by TM
 
 - Nidorina/Nidoqueen (not in main game):
     - Can now breed
@@ -450,6 +457,9 @@
 
 - Gastly/Haunter/Gengar (not in main game):
     - Type: Ghost/Poison->Ghost
+
+- Drowzee/Hypno (not in main game):
+    Learn Dream Eater by level up
 
 - Alolan Exeggutor (not in main game):
     - Atk: 105->125
@@ -945,6 +955,9 @@
 - Oshawott:
     - Evolution: 17->16
 
+- Unfezant:
+    - Learns Acrobatics by TM
+
 - Woobat:
     - Can also evolve at level 24
 
@@ -1113,6 +1126,9 @@
 
 - Goomy:
     - Evolution: 40->35
+
+- Gourgeist:
+    - Learns Shadow Claw by TM
 
 - Noibat:
     - Evolution: 48->40

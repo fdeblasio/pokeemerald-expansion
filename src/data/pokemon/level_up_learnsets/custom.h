@@ -280,6 +280,7 @@ static const struct LevelUpMove sBeedrillLevelUpLearnset[] = {
 
 #if P_FAMILY_PIDGEY
 static const struct LevelUpMove sPidgeyLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 5, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 9, MOVE_GUST),
@@ -298,6 +299,7 @@ static const struct LevelUpMove sPidgeyLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sPidgeottoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_GUST),
@@ -317,6 +319,7 @@ static const struct LevelUpMove sPidgeottoLevelUpLearnset[] = {
 
 static const struct LevelUpMove sPidgeotLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_HURRICANE),
+    LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_GUST),
@@ -2973,6 +2976,7 @@ static const struct LevelUpMove sDrowzeeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_NASTY_PLOT),
     LEVEL_UP_MOVE(45, MOVE_PSYSHOCK),
     LEVEL_UP_MOVE(49, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(49, MOVE_DREAM_EATER),
     LEVEL_UP_END
 };
 
@@ -2995,6 +2999,7 @@ static const struct LevelUpMove sHypnoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(47, MOVE_NASTY_PLOT),
     LEVEL_UP_MOVE(51, MOVE_PSYSHOCK),
     LEVEL_UP_MOVE(56, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(56, MOVE_DREAM_EATER),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DROWZEE

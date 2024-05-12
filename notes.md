@@ -8,7 +8,7 @@ $1\L$2
 Merge conflicts:
 <<<<<<< HEAD
 ((.*\n)*?)=======
-(.*\n)*?>>>>>>>.*\n
+((.*\n)*?)>>>>>>>.*\n
 $1
 
 Debugging (https://cplusplus.com/reference/cstdio/printf/):

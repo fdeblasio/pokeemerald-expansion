@@ -190,7 +190,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "Repeatedly slaps the foe\n"
             "2 to 5 times."),
         .effect = EFFECT_HIT,
-        .power = 25,
+        .power = 30,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 10,
@@ -1131,7 +1131,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "Stingers on the forelegs\n"
             "jab the foe twice."),
         .effect = EFFECT_HIT,
-        .power = 25,
+        .power = 50,
         .type = TYPE_BUG,
         .accuracy = 100,
         .pp = 20,
@@ -11223,7 +11223,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "Attacks with a sound wave\n"
             "that causes confusion."),
         .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 65 : 60,
+        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 80 : 60,
         .type = TYPE_FLYING,
         .accuracy = 100,
         .pp = 20,
@@ -13502,13 +13502,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     {
         .name = COMPOUND_STRING("Head Charge"),
         .description = COMPOUND_STRING(
-            "A charge using guard hair.\n"
-            "It hurts the user a little."),
+            "A powerful charge using\n"
+            "guard hair."),
         .effect = EFFECT_HIT,
         .power = 120,
         .type = TYPE_NORMAL,
         .accuracy = 100,
-        .recoil = 25,
         .pp = 15,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,

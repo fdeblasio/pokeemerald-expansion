@@ -702,6 +702,7 @@ static const u16 sBeedrillTeachableLearnset[] = {
 
 #if P_FAMILY_PIDGEY
 static const u16 sPidgeyTeachableLearnset[] = {
+    MOVE_ACROBATICS,
     MOVE_AERIAL_ACE,
     MOVE_AIR_SLASH,
     MOVE_ATTRACT,
@@ -726,6 +727,7 @@ static const u16 sPidgeyTeachableLearnset[] = {
 };
 
 static const u16 sPidgeottoTeachableLearnset[] = {
+    MOVE_ACROBATICS,
     MOVE_AERIAL_ACE,
     MOVE_AIR_SLASH,
     MOVE_ATTRACT,
@@ -25968,6 +25970,7 @@ static const u16 sTranquillTeachableLearnset[] = {
 };
 
 static const u16 sUnfezantTeachableLearnset[] = {
+    MOVE_ACROBATICS,
     MOVE_AERIAL_ACE,
     MOVE_AIR_SLASH,
     MOVE_ATTRACT,
@@ -33743,6 +33746,7 @@ static const u16 sGourgeistTeachableLearnset[] = {
     MOVE_SAFEGUARD,
     MOVE_SEED_BOMB,
     MOVE_SHADOW_BALL,
+    MOVE_SHADOW_CLAW,
     MOVE_SKILL_SWAP,
     MOVE_SLEEP_TALK,
     MOVE_SLUDGE_BOMB,

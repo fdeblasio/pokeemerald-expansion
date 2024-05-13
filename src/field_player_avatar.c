@@ -129,7 +129,6 @@ static u8 Fishing_InitDots(struct Task *);
 static u8 Fishing_ShowDots(struct Task *);
 static u8 Fishing_CheckForBite(struct Task *);
 static u8 Fishing_GotBite(struct Task *);
-static u8 Fishing_ChangeMinigame(struct Task *);
 static u8 Fishing_WaitForA(struct Task *);
 static u8 Fishing_APressNoMinigame(struct Task *);
 static u8 Fishing_CheckMoreDots(struct Task *);
@@ -1690,7 +1689,6 @@ enum
     FISHING_SHOW_DOTS,
     FISHING_CHECK_FOR_BITE,
     FISHING_GOT_BITE,
-    FISHING_CHANGE_MINIGAME,
     FISHING_WAIT_FOR_A,
     FISHING_A_PRESS_NO_MINIGAME,
     FISHING_CHECK_MORE_DOTS,
@@ -1712,7 +1710,6 @@ static bool8 (*const sFishingStateFuncs[])(struct Task *) =
     Fishing_ShowDots,         // FISHING_SHOW_DOTS,
     Fishing_CheckForBite,     // FISHING_CHECK_FOR_BITE,
     Fishing_GotBite,          // FISHING_GOT_BITE,
-    Fishing_ChangeMinigame,   // FISHING_CHANGE_MINIGAME,
     Fishing_WaitForA,         // FISHING_WAIT_FOR_A,
     Fishing_APressNoMinigame, // FISHING_A_PRESS_NO_MINIGAME,
     Fishing_CheckMoreDots,    // FISHING_CHECK_MORE_DOTS,

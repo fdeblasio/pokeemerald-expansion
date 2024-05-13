@@ -132,7 +132,6 @@ static bool32 Fishing_InitDots(struct Task *);
 static bool32 Fishing_ShowDots(struct Task *);
 static bool32 Fishing_CheckForBite(struct Task *);
 static bool32 Fishing_GotBite(struct Task *);
-static bool32 Fishing_ChangeMinigame(struct Task *);
 static bool32 Fishing_WaitForA(struct Task *);
 static bool32 Fishing_APressNoMinigame(struct Task *);
 static bool32 Fishing_CheckMoreDots(struct Task *);
@@ -1746,7 +1745,6 @@ enum
     FISHING_SHOW_DOTS,
     FISHING_CHECK_FOR_BITE,
     FISHING_GOT_BITE,
-    FISHING_CHANGE_MINIGAME,
     FISHING_WAIT_FOR_A,
     FISHING_A_PRESS_NO_MINIGAME,
     FISHING_CHECK_MORE_DOTS,
@@ -1768,7 +1766,6 @@ static bool32 (*const sFishingStateFuncs[])(struct Task *) =
     [FISHING_SHOW_DOTS]             = Fishing_ShowDots,
     [FISHING_CHECK_FOR_BITE]        = Fishing_CheckForBite,
     [FISHING_GOT_BITE]              = Fishing_GotBite,
-    [FISHING_CHANGE_MINIGAME]       = Fishing_ChangeMinigame,
     [FISHING_WAIT_FOR_A]            = Fishing_WaitForA,
     [FISHING_A_PRESS_NO_MINIGAME]   = Fishing_APressNoMinigame,
     [FISHING_CHECK_MORE_DOTS]       = Fishing_CheckMoreDots,

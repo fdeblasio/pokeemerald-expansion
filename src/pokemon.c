@@ -672,7 +672,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
         .backAnim = 1,
         .pokeBlockAnim = {ANIM_QUIRKY, AFFINE_NONE},
         .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow,
-        .battlePalacePercents = PALACE_STYLE(56, 22, 56, 22)  //22%, 22%
+        .battlePalacePercents = PALACE_STYLE(56, 22, 56, 22),  //22%, 22%
         .battlePalaceFlavorText = B_MSG_EAGER_FOR_MORE,
         .battlePalaceSmokescreen = PALACE_TARGET_STRONGER,
     },

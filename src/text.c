@@ -1052,10 +1052,6 @@ static u16 RenderText(struct TextPrinter *textPrinter)
         else
             textPrinter->delayCounter = textPrinter->textSpeed;
 
-<<<<<<< HEAD
-        currChar = *textPrinter->printerTemplate.currentChar;
-        textPrinter->printerTemplate.currentChar++;
-=======
         switch (GetPlayerTextSpeed())
         {
             case OPTIONS_TEXT_SPEED_SLOW:
@@ -1071,17 +1067,10 @@ static u16 RenderText(struct TextPrinter *textPrinter)
                 repeats = 4;
                 break;
         }
->>>>>>> 7e84f6929f (Increased text speed)
 
         do {
             currChar = *textPrinter->printerTemplate.currentChar;
             textPrinter->printerTemplate.currentChar++;
-            if (DECAP_ENABLED)
-            {
-                lastChar = textPrinter->lastChar;
-                if (lastChar != CHAR_FIXED_CASE)
-                    textPrinter->lastChar = currChar;
-            }
 
             switch (currChar)
             {
@@ -1238,9 +1227,6 @@ static u16 RenderText(struct TextPrinter *textPrinter)
                 textPrinter->printerTemplate.currentX += gCurGlyph.width + textPrinter->printerTemplate.letterSpacing;
                 return RENDER_PRINT;
             case EOS:
-                if (DECAP_ENABLED)
-                    // Clear fixed case
-                    textPrinter->lastChar = currChar;
                 return RENDER_FINISH;
             }
 

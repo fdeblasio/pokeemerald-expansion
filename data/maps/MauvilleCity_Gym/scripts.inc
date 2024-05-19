@@ -371,7 +371,7 @@ MauvilleCity_Gym_Text_ExplainShockWave:
 
 MauvilleCity_Gym_Text_RegisteredWattson:
 	.string "Registered Gym Leader Wattson\n"
-	.fixstr "in the PokéNav.$"
+	.string "in the PokéNav.$"
 
 MauvilleCity_Gym_Text_WattsonPostBattle:
 	.string "I swell with optimism, seeing a promising\n"

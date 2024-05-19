@@ -592,7 +592,7 @@ MossdeepCity_Gym_Text_ExplainCalmMind:
 
 MossdeepCity_Gym_Text_RegisteredTateAndLiza:
 	.string "Registered Gym Leaders Tate & Liza\n"
-	.fixstr "in the PokéNav.$"
+	.string "in the PokéNav.$"
 
 MossdeepCity_Gym_Text_TateAndLizaPostBattle:
 	.string "Tate: Looks like the bond between you\n"

@@ -889,7 +889,7 @@ gText_PlayerWhitedOut::
 
 gText_RegisteredTrainerinPokeNav::
 	.string "Registered {STR_VAR_1} {STR_VAR_2}\n"
-	.fixstr "in the PokéNav.$"
+	.string "in the PokéNav.$"
 
 gText_ComeBackWithSecretPower::
 	.string "Do you know the TM Secret Power?\p"

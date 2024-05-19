@@ -1137,14 +1137,14 @@ RustboroCity_Text_PleaseComeWithMe:
 RustboroCity_Text_MayHiLetsRegister:
 	.string "May: Oh, hi, {PLAYER}{KUN}!\p"
 	.string "You had a Match Call feature put\n"
-	.fixstr "on your PokéNav!\p"
+	.string "on your PokéNav!\p"
 	.string "Let's register each other so we can\n"
 	.string "contact one another anytime!\p"
 	.string "… … … … … …$"
 
 RustboroCity_Text_RegisteredMay:
 	.string "Registered May\n"
-	.fixstr "in the PokéNav.$"
+	.string "in the PokéNav.$"
 
 RustboroCity_Text_MayPassedBrineyWantToBattle:
 	.string "May: Oh, by the way, I passed\n"
@@ -1184,14 +1184,14 @@ RustboroCity_Text_MayMrBrineyHint:
 RustboroCity_Text_BrendanHiLetsRegister:
 	.string "Brendan: Oh, hey, {PLAYER}!\p"
 	.string "You had a Match Call feature put\n"
-	.fixstr "on your PokéNav! Cool!\p"
+	.string "on your PokéNav! Cool!\p"
 	.string "Let's register each other so we can\n"
 	.string "get in touch anytime!\p"
 	.string "… … … … … …$"
 
 RustboroCity_Text_RegisteredBrendan:
 	.string "Registered Brendan\n"
-	.fixstr "in the PokéNav.$"
+	.string "in the PokéNav.$"
 
 RustboroCity_Text_BrendanPassedBrineyWantToBattle:
 	.string "Brendan: By the way, {PLAYER}, I walked\n"
@@ -1264,25 +1264,25 @@ RustboroCity_Text_CuttersHouse:
 
 RustboroCity_Text_DevelopedNewPokenavFeature:
 	.string "I've been developing an added feature\n"
-	.fixstr "for the PokéNav…\p"
+	.string "for the PokéNav…\p"
 	.string "And it turned out great!\p"
-	.fixstr "{PLAYER}, may I see that PokéNav?\n"
+	.string "{PLAYER}, may I see that PokéNav?\n"
 	.string "The one our President gave you?$"
 
 RustboroCity_Text_AddedMatchCallPleaseCallMrStone:
 	.string "There you go, {PLAYER}!\p"
 	.string "I added a new feature named\n"
-	.fixstr "Match Call to your PokéNav.\p"
+	.string "Match Call to your PokéNav.\p"
 	.string "Using the Match Call feature,\n"
 	.string "you can chat with people who have\l"
-	.fixstr "been registered in your PokéNav.\p"
+	.string "been registered in your PokéNav.\p"
 	.string "{PLAYER}, our President Stone should\n"
-	.fixstr "be registered in your PokéNav.\p"
+	.string "be registered in your PokéNav.\p"
 	.string "Test it out.\n"
 	.string "Please give our President a call.$"
 
 RustboroCity_Text_PleaseSelectPokenav:
-	.fixstr "Please select the PokéNav.$"
+	.string "Please select the PokéNav.$"
 
 RustboroCity_Text_IdBetterGetBackToWork:
 	.string "Okay, I'd better get back to work.\n"

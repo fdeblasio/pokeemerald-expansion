@@ -1101,12 +1101,6 @@ static u16 RenderText(struct TextPrinter *textPrinter)
         do {
             currChar = *textPrinter->printerTemplate.currentChar;
             textPrinter->printerTemplate.currentChar++;
-            if (DECAP_ENABLED)
-            {
-                lastChar = textPrinter->lastChar;
-                if (lastChar != CHAR_FIXED_CASE)
-                    textPrinter->lastChar = currChar;
-            }
 
             switch (currChar)
             {
@@ -1263,9 +1257,6 @@ static u16 RenderText(struct TextPrinter *textPrinter)
                 textPrinter->printerTemplate.currentX += gCurGlyph.width + textPrinter->printerTemplate.letterSpacing;
                 return RENDER_PRINT;
             case EOS:
-                if (DECAP_ENABLED)
-                    // Clear fixed case
-                    textPrinter->lastChar = currChar;
                 return RENDER_FINISH;
             }
 

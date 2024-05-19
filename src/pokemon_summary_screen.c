@@ -3495,7 +3495,6 @@ static void BufferIvOrEvStats(u8 mode)
     u8 *SP_ATK_EV_STRING = Alloc(20);
     u8 *SP_DEF_EV_STRING = Alloc(20);
     u8 *SPEED_EV_STRING = Alloc(20);
-    const s8 *natureMod = gNatureStatTable[sMonSummaryScreen->summary.mintNature];
 
     FillWindowPixelBuffer(sMonSummaryScreen->windowIds[PSS_DATA_WINDOW_SKILLS_STATS_LEFT], 0);
     FillWindowPixelBuffer(sMonSummaryScreen->windowIds[PSS_DATA_WINDOW_SKILLS_STATS_RIGHT], 0);

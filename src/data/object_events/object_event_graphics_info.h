@@ -4663,7 +4663,6 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Frank = {
     .paletteSlot = PALSLOT_NPC_SPECIAL,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
-    .disableReflectionPaletteLoad = FALSE,
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,

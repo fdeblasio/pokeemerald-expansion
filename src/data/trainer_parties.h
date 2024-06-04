@@ -11188,6 +11188,7 @@ static const struct TrainerMon sParty_Jorge3[] = {
     .species = SPECIES_BLAZIKEN,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .moves = {MOVE_FLAMETHROWER, MOVE_AURA_SPHERE, MOVE_SOLAR_BEAM, MOVE_FOCUS_ENERGY},
+    .nickname = COMPOUND_STRING("Fiya")
     },
     {
     .lvl = 65,
@@ -11241,6 +11242,7 @@ static const struct TrainerMon sParty_Jorge4[] = {
     .species = SPECIES_BLAZIKEN,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .moves = {MOVE_FLAMETHROWER, MOVE_AURA_SPHERE, MOVE_SOLAR_BEAM, MOVE_FOCUS_ENERGY},
+    .nickname = COMPOUND_STRING("Fiya")
     },
     {
     .lvl = 70,
@@ -11294,6 +11296,7 @@ static const struct TrainerMon sParty_Jorge5[] = {
     .species = SPECIES_BLAZIKEN,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .moves = {MOVE_FLAMETHROWER, MOVE_AURA_SPHERE, MOVE_SOLAR_BEAM, MOVE_FOCUS_ENERGY},
+    .nickname = COMPOUND_STRING("Fiya")
     },
     {
     .lvl = 75,

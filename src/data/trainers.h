@@ -28,9 +28,9 @@
 #line 84
     [TRAINER_SAWYER_1] =
     {
-#line 85
+#line 20
         .trainerName = _("SAWYER"),
-#line 86
+#line 21
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 87
         .trainerPic = TRAINER_PIC_HIKER,
@@ -385,7 +385,7 @@ F_TRAINER_FEMALE |
     [TRAINER_GRUNT_PETALBURG_WOODS] =
     {
 #line 226
-        .trainerName = _("GRUNT"),
+        .trainerName = _("Grunt"),
 #line 227
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 228
@@ -33450,7 +33450,7 @@ F_TRAINER_FEMALE |
     [TRAINER_GRUNT_MAGMA_HIDEOUT_6] =
     {
 #line 13344
-        .trainerName = _("GRUNT"),
+        .trainerName = _("Grunt"),
 #line 13345
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 13346
@@ -33482,7 +33482,7 @@ F_TRAINER_FEMALE |
     [TRAINER_GRUNT_MAGMA_HIDEOUT_7] =
     {
 #line 13357
-        .trainerName = _("GRUNT"),
+        .trainerName = _("Grunt"),
 #line 13358
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 13359
@@ -33514,7 +33514,7 @@ F_TRAINER_FEMALE |
     [TRAINER_GRUNT_MAGMA_HIDEOUT_8] =
     {
 #line 13370
-        .trainerName = _("GRUNT"),
+        .trainerName = _("Grunt"),
 #line 13371
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 13372
@@ -33546,7 +33546,7 @@ F_TRAINER_FEMALE |
     [TRAINER_GRUNT_MAGMA_HIDEOUT_9] =
     {
 #line 13383
-        .trainerName = _("GRUNT"),
+        .trainerName = _("Grunt"),
 #line 13384
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 13385
@@ -33578,7 +33578,7 @@ F_TRAINER_FEMALE |
     [TRAINER_GRUNT_MAGMA_HIDEOUT_10] =
     {
 #line 13396
-        .trainerName = _("GRUNT"),
+        .trainerName = _("Grunt"),
 #line 13397
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 13398
@@ -33610,7 +33610,7 @@ F_TRAINER_FEMALE |
     [TRAINER_GRUNT_MAGMA_HIDEOUT_11] =
     {
 #line 13409
-        .trainerName = _("GRUNT"),
+        .trainerName = _("Grunt"),
 #line 13410
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 13411

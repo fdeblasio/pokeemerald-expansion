@@ -29,7 +29,7 @@
     [TRAINER_SAWYER_1] =
     {
 #line 20
-        .trainerName = _("SAWYER"),
+        .trainerName = _("Sawyer"),
 #line 21
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 87

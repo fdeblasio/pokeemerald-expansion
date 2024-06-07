@@ -38,24 +38,11 @@ upcoming
       └─ All hacks
 ```
 
-## Known Bugs
-- When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
-- AI_FLAG_ACE_POKEMON doesn't seem to work
-- HGSS Pokédex shows evolutions multiple times (for this branch, only effects stone/location evos)
-- If you help one of the Lilycove Pokémon Center ladies, the other lady thinks you've already helped her as well
-
-#### Potentially just savefile issues due to playing while hacking
-- Items in the Battle Pyramid's Battle Bag/held items in the Battle Pike are turning into Poke Balls
-    - Seems to happen after trainer battles?
-    - This occurs even with the Battle Frontier changes reverted
-- Verdanturf Battle Tent sometimes gives an item right away
-- PokéNav callers sometimes think there were 512 wins at the Battle Palace (seems to be related to Battle Tent issue)
-
 ## To Do:
 ### Meta
 - More simple modifications: https://www.pokecommunity.com/showthread.php?t=416647&page=1
 - Pret wiki tutorials:       https://github.com/pret/pokeemerald/wiki/Tutorials
-- Combine four meta files (changes.md, notes.md, bossAndTmNotes.txt, and README)?
+- Combine two meta files (notes.md and README.md)?
     Include more changes, even if general like Battle Frontier edits
 - Remove unused code
 

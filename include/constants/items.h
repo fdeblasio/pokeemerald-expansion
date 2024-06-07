@@ -1103,7 +1103,7 @@ enum BerryId
 #define ACRO_BIKE 1
 #define STANDARD_BIKE 2
 
-// Item parameters for EXP Candies
+// Item parameters for Exp. Candies
 #define EXP_100   1
 #define EXP_800   2
 #define EXP_3000  3

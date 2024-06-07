@@ -211,13 +211,13 @@ const struct EasyChatWordInfo gEasyChatGroup_People[] = {
     },
     [EC_INDEX(EC_WORD_MR)] =
     {
-        .text = COMPOUND_STRING("MR."),
+        .text = COMPOUND_STRING("Mr."),
         .alphabeticalOrder = EC_INDEX(EC_WORD_MY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_MRS)] =
     {
-        .text = COMPOUND_STRING("MRS."),
+        .text = COMPOUND_STRING("Mrs."),
         .alphabeticalOrder = EC_INDEX(EC_WORD_MYSELF),
         .enabled = TRUE,
     },

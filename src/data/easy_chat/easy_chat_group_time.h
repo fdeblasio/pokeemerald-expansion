@@ -67,7 +67,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Time[] = {
     },
     [EC_INDEX(EC_WORD_TUESDAY)] =
     {
-        .text = COMPOUND_STRING("TUESDAY"),
+        .text = COMPOUND_STRING("Tuesday"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_END),
         .enabled = TRUE,
     },
@@ -85,13 +85,13 @@ const struct EasyChatWordInfo gEasyChatGroup_Time[] = {
     },
     [EC_INDEX(EC_WORD_FRIDAY)] =
     {
-        .text = COMPOUND_STRING("FRIDAY"),
+        .text = COMPOUND_STRING("Friday"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_FINISH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_MONDAY)] =
     {
-        .text = COMPOUND_STRING("MONDAY"),
+        .text = COMPOUND_STRING("Monday"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_FOREVER),
         .enabled = TRUE,
     },
@@ -127,7 +127,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Time[] = {
     },
     [EC_INDEX(EC_WORD_WEDNESDAY)] =
     {
-        .text = COMPOUND_STRING("WEDNESDAY"),
+        .text = COMPOUND_STRING("Wednesday"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_MORNING),
         .enabled = TRUE,
     },
@@ -181,7 +181,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Time[] = {
     },
     [EC_INDEX(EC_WORD_SATURDAY)] =
     {
-        .text = COMPOUND_STRING("SATURDAY"),
+        .text = COMPOUND_STRING("Saturday"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SOON),
         .enabled = TRUE,
     },
@@ -193,7 +193,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Time[] = {
     },
     [EC_INDEX(EC_WORD_SUNDAY)] =
     {
-        .text = COMPOUND_STRING("SUNDAY"),
+        .text = COMPOUND_STRING("Sunday"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_START),
         .enabled = TRUE,
     },
@@ -247,7 +247,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Time[] = {
     },
     [EC_INDEX(EC_WORD_THURSDAY)] =
     {
-        .text = COMPOUND_STRING("THURSDAY"),
+        .text = COMPOUND_STRING("Thursday"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WEDNESDAY),
         .enabled = TRUE,
     },

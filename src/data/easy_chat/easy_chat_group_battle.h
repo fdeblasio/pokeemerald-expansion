@@ -13,7 +13,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Battle[] = {
     },
     [EC_INDEX(EC_WORD_NO_1)] =
     {
-        .text = COMPOUND_STRING("NO. 1"),
+        .text = COMPOUND_STRING("No. 1"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ATTACK),
         .enabled = TRUE,
     },

@@ -158,24 +158,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 ### [Documentation on features can be found here](https://github.com/rh-hideout/pokeemerald-expansion/wiki)
 
-## If I already have a project based on regular pokeemerald, can I use pokeemerald-expansion?
-Yes! Keep in mind that we keep up with pret's documentation of pokeemerald, which means that if your project a bit old, you might get merge conflicts that you need to solve manually.
-- If you haven't set up a remote, run the command `git remote add RHH https://github.com/rh-hideout/pokeemerald-expansion`.
-- Once you have your remote set up, run the command `git pull RHH master`.
-
-With this, you'll get the latest version of pokeemerald-expansion, plus a couple of bugfixes that haven't been released into the next patch version :)
-
-## **How do I update my version of pokeemerald-expansion?**
-- If you haven't set up a remote, run the command `git remote add RHH https://github.com/rh-hideout/pokeemerald-expansion`.
-- Check your current version.
-    - You can check in the debug menu's `Utilities -> Expansion Version` option.
-    - If the option is not available, you possibly have version 1.6.2 or older. In that case, please check the [changelogs](CHANGELOG.md) to determine your version based on the features available on your repository.
-- Once you have your remote set up, run the command `git pull RHH expansion/X.Y.Z`, replacing X, Y and Z with the digits of the respective version you want to update to (eg, to update to 1.8.4, use `git pull RHH expansion/1.8.4`).
-    - ***Important:*** If you are several versions behind, we recommend updating one minor version at a time, skipping directly to the latest patch version (eg, 1.5.3 -> 1.6.2 -> 1.7.4 and so on)
-- Alternatively, you can update to unreleased versions of the expansion.
-    - ***master (stable):*** It contains unreleased **bugfixes** that will come in the next patch version. To merge, use `git pull RHH master`.
-    - ***upcoming (unstable, with potential bugs):*** It contains unreleased **features** that will come in the next minor version. To merge, use `git pull RHH upcoming`.
-
 ### Please consider crediting the entire [list of contributors](https://github.com/rh-hideout/pokeemerald-expansion/wiki/Credits) in your project, as they have all worked hard to develop this project :)
 
 ## Contributions/Acknowledgements
@@ -216,3 +198,1419 @@ With this, you'll get the latest version of pokeemerald-expansion, plus a couple
 - [ellabrella for increasing text speed beyond fast](https://www.pokecommunity.com/showpost.php?p=10400198)
 - [Mashanny for making text speed up without holding A/B](https://www.pokecommunity.com/showpost.php?p=10266385)
 - [Sapphire Jester for making the Soot Sack usuable](https://www.pokecommunity.com/showpost.php?p=10222284&postcount=178)
+
+## Known Bugs
+- When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
+- AI_FLAG_ACE_POKEMON doesn't seem to work
+- HGSS Pokédex shows evolutions multiple times (for this branch, only effects stone/location evos)
+- If you help one of the Lilycove Pokémon Center ladies, the other lady thinks you've already helped her as well
+
+### Potentially just savefile issues due to playing while hacking
+- Items in the Battle Pyramid's Battle Bag/held items in the Battle Pike are turning into Poke Balls
+    - Seems to happen after trainer battles?
+    - This occurs even with the Battle Frontier changes reverted
+- Verdanturf Battle Tent sometimes gives an item right away
+- PokéNav callers sometimes think there were 512 wins at the Battle Palace (seems to be related to Battle Tent issue)
+
+## Changes
+- NOTE: This all assumes there are no rebasing errors
+- Wild Pokémon and Trainers have their levels increased to make grinding less of a pain
+    - However, with the Exp Share now affecting all party members, this can lead to becoming overleveled
+- Decapitalization
+- Shiny Pokémon can no longer spawn until you get Poké Balls
+- Some areas made easier to navigate
+    - Route 102/103: Path from Littleroot to rival is more direct
+- Some reversions back to Ruby and Sapphire
+    - Birch is chased by a Poochyena
+    - Some trainers on Routes 104 and 117 go back to their original locations
+- Gym Leaders use more Hoenn Pokémon
+- Gym Leaders and Magma/Aqua Admins/Leaders no longer have underleveled evolutions
+- Pokémon have a more even encounter distribution
+- Tate and Liza give out Psychic instead of Calm Mind
+- Cut, Fly, Strength, Flash, Rock Smash, and Dive can now be forgotten
+    - Fly can now be used from the Start Menu after getting Mauville's badge
+    - Cut, Strength, and Rock Smash no longer need a badge to be used
+    - Cut trees have been removed from everywhere but the Trick House
+    - Strength boulders have been removed from everywhere but the Trick House and an optional puzzle in Seafloor Cavern
+    - Rock Smash rocks have been removed from everywhere but Rusturf Tunnel. Brick Break can now also break them
+    - The Escape Rope can by used in the Trick Room puzzles that involve Cut/Strength
+    - Flash is no longer needed anywhere
+    - Dive has been replaced by a key item
+- Fly can now be used to go to more places:
+    - The Abandoned Ship on Route 108
+    - The Old Lady's Rest Stop on Route 111
+    - Meteor Falls entrance on Route 114
+    - The Weather Institute on Route 119
+    - Mt. Pyre on Route 122
+    - Sky Pillar on Route 131
+    - Southern Island
+- Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room
+    - The door to Sealed Chamber and the Regis' inner rooms are now automatically open
+- Made rapids easier to navigate so that only one trip is needed to get all items/battle all trainers (at the cost of looking slightly worse)
+- All moves automatically have their max PP amount
+- Sacred Ash now works in battles although it only revives one Pokémon
+- Soul Dew uses its Gen 6 effect
+- Pokémon that evolve with an item at day or night now can evolve at any time
+- EVs now give one stat increase for every EV but cap out at 63 (individual)/127 (total)
+- Houndour was added to the Hoenn Pokédex to give Team Magma more variety
+- Frontier Brains have updated teams
+- Battle Pyramid wild Pokémon have been updated
+- Pokémon can now be listed as orange in the Pokédex
+- Underwater areas now connect better
+- Mirage Island now appears every other day
+- Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)
+- Tickets for islands where Latios, Latias, Deoxys, Lugia, Ho-Oh, and Mew reside are given after beating the Elite Four
+    - Latios and Latias no longer roam and instead both show up on Southern Island
+    - The Deoxys puzzle is much simpler
+- Battle Frontier no longer requires saving
+- SS Tidal trainers can be rebattled every trip
+- You can now run from wild Pokémon if they are asleep, frozen, or in a semi-invulnerable state (using Fly, Dig, Dive, Bounce, etc.). This works even if they have Shadow Tag/Arena Trap
+- Pokémon in the Battle Frontier/Trainer Hill now register in the Pokédex
+
+### Quality of life changes thanks to tutorials (credit above):
+- You can nickname and relearn moves from the party menu
+- Press A on the summary screen to see a Pokémon's EVs/IVs
+- Return/Frustration shows power in summary screen
+- Hidden Power type is shown in battle and the summary screen
+- Can swap party members with Select
+- Items in shops are based on the amount of badges you have
+- Bag sorting with Start button
+- More bag space
+- "Move Pokémon" is the first option in the PC
+- The naming screen automatically swaps to lowercase after the first letter
+- Rainy routes will automatically water berries
+- Premier Balls are now given for every multiple of 10 of any ball you buy (as opposed to only 1 for 10+ Poke Balls)
+- Faster text speed
+- Faster walking/surfing speed
+- Can now use Soot Sack to see how much ash you have
+
+### Items:
+- Eviolite now prevents Pokémon from evolving
+- Some items, such as vitamins and hold items, are cheaper
+- Ability Capsules, Ability Patches, and EV-reducing berries are available to buy in Lilycove (Bottle Caps and Mints not yet implemented)
+
+### Bosses:
+|     BOSSES     |        VANILLA       |UPDATED|
+|:--------------:|:--------------------:|:-----:|
+|Roxanne         |12, 12, 15||
+|Brawly          |16, 16, 19||
+|Rival 110       |18, 18, 20||
+|Wattson         |20, 22, 22, 24||
+|Tabitha         |18, 20, 22, 22        |23, 23, 25|
+|Maxie           |24, 24, 25            |25, 25, 25, 27|
+|Flannery        |24, 24, 26, 29        |25, 27, 27, 29|
+|Norman          |27, 27, 29, 31        |28, 30, 30, 32|
+|Shelly          |28, 28                |31, 31, 33|
+|Rival 119       |29, 29, 31            |32, 32, 32, 33|
+|Winona          |29, 29, 30, 31, 33    |32, 32, 33, 33, 35|
+|Rival Lilycove  |31, 32, 32, 34        |35, 35, 35, 36, 37|
+|Tabitha         |26, 28, 30, 33        |36, 37, 38|
+|Maxie           |37, 38, 39            |37, 38, 38, 39|
+|Matt            |34, 34                |39, 39, 40|
+|Tate/Liza       |41, 41, 42, 42||
+|Courtney        |N/A                   |40, 40, 42|
+|Tabitha/Maxie   |36, 38, 40/42, 43, 44 |40, 40, 42/42, 43, 44|
+|Regis           |40                    |45|
+|Matt/Shelly     |N/A/37, 37            |42, 42, 43/42, 42, 43|
+|Archie          |41, 41, 43            |43, 43, 44, 45|
+|Juan            |41, 41, 43, 43, 46    |44, 44, 45, 45, 47|
+|Rayquaza        |70                    |50|
+|Wally           |41, 43, 44, 44, 45    |46, 46, 47, 47, 49|
+|Sidney          |46, 46, 48, 48, 49    |47, 47, 48, 48, 50|
+|Phoebe          |48, 49, 49, 50, 51    |49, 49, 50, 50, 52|
+|Glacia          |50, 50, 52, 52, 53    |51, 51, 52, 52, 54|
+|Drake           |52, 53, 53, 54, 55    |53, 53, 53, 54, 56|
+|Wallace         |55, 56, 56, 56, 57, 58|56, 56, 56, 56, 57, 58|
+|Latios/Latias   |40                    |60|
+|Mew             |N/A                   |60|
+|Deoxys          |N/A                   |60|
+|Lugia/Ho-Oh     |N/A                   |70|
+|Groudon/Kyogre  |70||
+|Steven          |75, 76, 76, 76, 77, 78|77, 77, 78, 78, 79, 80|
+
+#### Gym Leader/Wally Rematches:
+- 60 (new/returning 2), 63 (returning 1), 65 (signature) 4+
+- 65 (new/returning 2), 68 (returning 1), 70 (signature) 5+
+- 70 (new/returning 2), 73 (returning 1), 75 (signature)
+- 75 (new/returning 2), 78 (returning 1), 80 (signature) 6
+
+
+### Berries:
+- All berries: min and max yields have been boosted to a minimum of 3/6
+- EV reducing berries: min/max are at least 6/12
+- Cheri-Aspear:
+    - Flavor: 10->20
+- Figy-Iapapa:
+    - Flavor: 10->30
+- Tamato-Nomel:
+    - Flavor: 20/10->40
+- Spelon-Belue:
+    - Flavor: 40/10->50
+    - Smoothness: 70->35
+- Liechi-Apicot:
+    - Smoothness: 80->40
+- Lansat:
+    - Smoothness: 30->50
+- Starf:
+    - Smoothness: 30->50
+
+### Abilities:
+- Iron Fist: Punching moves are now boosted by 30% (up from 20%) to match Sheer Force and Tough Claws
+- Punk Rock: Renamed Amplify to fit Exploud line as well
+
+### TMs:
+|TM #|   Move   |Location|
+|:--:|   :--:   |:------:|
+|TM01|Focus Punch|Route 115|
+|TM02|Dragon Claw|Meteor Falls|
+|TM03|Water Pulse|Juan|
+|TM04|Calm Mind|Slateport TM Shop|
+|TM05|Roar|Route 114|
+|TM06|Toxic|Lavaridge TM Shop|
+|TM07|Hail|Shoal Cave|
+|TM08|Bulk Up|Brawly|
+|TM09|Bullet Seed|Route 104|
+|TM10|Hidden Power|Fortree|
+|TM11|Sunny Day|Scorched Slab|
+|TM12|Taunt|Trick House|
+|TM13|Ice Beam|Abandonded Ship|
+|TM14|Blizzard|Lilycove Department Store|
+|TM15|Hyper Beam|Lilycove Department Store|
+|TM16|Light Screen|Lilycove Department Store|
+|TM17|Protect|Lilycove Department Store|
+|TM18|Rain Dance|Abandonded Ship|
+|TM19|Giga Drain|Route 123|
+|TM20|Safeguard|Lilycove Department Store|
+|TM21|Frustration|Pacifidlog|
+|TM22|Solar Beam|Safari Zone|
+|TM23|Iron Tail|Meteor Falls|
+|TM24|Thunderbolt|Mauville|
+|TM25|Thunder|Lilycove Department Store|
+|TM26|Earthquake|Seafloor Cavern|
+|TM27|Return|Pacifidlog|
+|TM28|Dig|Route 114|
+|TM29|Psychic|Tate/Liza|
+|TM30|Shadow Ball|Mt. Pyre|
+|TM31|Brick Break|Sootopolis|
+|TM32|Double Team|Route 113|
+|TM33|Reflect|Lilycove Department Store|
+|TM34|Shock Wave|Wattson|
+|TM35|Flamethrower|Fiery Path|
+|TM36|Sludge Bomb|Dewford|
+|TM37|Sandstorm|Route 111|
+|TM38|Fire Blast|Lilycove Department Store|
+|TM39|Rock Tomb|Roxanne|
+|TM40|Aerial Ace|Winona|
+|TM41|Torment|Slateport|
+|TM42|Facade|Norman|
+|TM43|Secret Power|Route 111|
+|TM44|Rest|Lilycove|
+|TM45|Attract|Verdanturf|
+|TM46|Thief|Slateport|
+|TM47|Steel Wing|Granite Cave|
+|TM48|Skill Swap|Mt. Pyre|
+|TM49|Snatch|SS Tidal|
+|TM50|Overheat|Flannery|
+|TM51|Roost|Slateport TM Shop|
+|TM52|Focus Blast|Victory Road|
+|TM53|Energy Ball|Lilycove TM Shop|
+|TM54|False Swipe|Slateport TM Shop|
+|TM55|Brine|Lavaridge TM Shop|
+|TM56|Signal Beam|Lavaridge TM Shop|
+|TM57|Supercell Slam|Lilycove TM Shop|
+|TM58|Psychic Fangs|Lilycove TM Shop|
+|TM59|Dragon Pulse|Lilycove TM Shop|
+|TM60|Drain Punch|Lilycove TM Shop|
+|TM61|Will-O-Wisp|Slateport TM Shop|
+|TM62|Silver Wind|Slateport TM Shop|
+|TM63|Dazzling Gleam|Lilycove TM Shop|
+|TM64|Seed Bomb|Lilycove TM Shop|
+|TM65|Shadow Claw|Lilycove TM Shop|
+|TM66|Payback|Lavaridge TM Shop|
+|TM67|Power Gem|Fallarbor|
+|TM68|Giga Impact|Lilycove TM Shop|
+|TM69|Play Rough|Lilycove TM Shop|
+|TM70|Leech Life|Lilycove TM Shop|
+|TM71|Stone Edge|Lilycove TM Shop|
+|TM72|Icicle Crash|Lilycove TM Shop|
+|TM73|Thunder Wave|Slateport TM Shop|
+|TM74|Nasty Plot|Lavaridge TM Shop|
+|TM75|Swords Dance|Lavaridge TM Shop|
+|TM76|Stealth Rock|Lavaridge TM Shop|
+|TM77|Psych Up|Slateport TM Shop|
+|TM78|Crunch|Lilycove TM Shop|
+|TM79|Dark Pulse|Lilycove TM Shop|
+|TM80|Rock Slide|Lilycove TM Shop|
+|TM81|X-Scissor|Lilycove TM Shop|
+|TM82|Night Slash|Lilycove TM Shop|
+|TM83|Iron Head|Lilycove TM Shop|
+|TM84|Poison Jab|Lilycove TM Shop|
+|TM85|Aura Sphere|Lilycove TM Shop|
+|TM86|Grass Knot|Lavaridge TM Shop|
+|TM87|Bug Buzz|Lilycove TM Shop|
+|TM88|Acrobatics|Lilycove TM Shop|
+|TM89|U-turn|Lavaridge TM Shop|
+|TM90|Body Slam|Lilycove TM Shop|
+|TM91|Flash Cannon|Lilycove TM Shop|
+|TM92|Trick Room|Lavaridge TM Shop|
+|TM93|Liquidation|Lilycove TM Shop|
+|TM94|Thunder Punch|Lilycove TM Shop|
+|TM95|Fire Punch|Lilycove TM Shop|
+|TM96|Ice Punch|Lilycove TM Shop|
+|TM97|Earth Power|Lilycove TM Shop|
+|TM98|Air Slash|Lilycove TM Shop|
+|TM99|Body Press|Lilycove TM Shop|
+|TM100|Moonblast|Lilycove TM Shop|
+
+### Move Tutors:
+#### Mainland:
+- Double-Edge
+- Dynamic Punch
+- Explosion
+- Fury Cutter
+- Metronome
+- Mimic
+- Rollout
+- Sleep Talk
+- Substitute
+- Swagger
+
+#### Battle Frontier Left:
+- Rising Voltage
+- Grassy Glide
+- Expanding Force
+- Zen Headbutt
+- Scald
+- Psycho Cut
+- Lunge
+- Throat Chop
+- Solar Blade
+- Dual Wingbeat
+- Scorching Sands
+- Knock Off
+- Mega Punch
+- Mega Kick
+
+#### Battle Frontier Right:
+- Electric Terrain
+- Grassy Terrain
+- Misty Terrain
+- Psychic Terrain
+- Iron Defense
+- Hyper Voice
+- Dragon Dance
+- Defense Curl
+- Endure
+- Icy Wind
+- Swift
+- Seismic Toss
+- Counter
+- Dream Eater
+
+### Moves:
+- Double Slap:
+    - Now hits exactly twice
+    - Power: 15->30
+    - Accuracy: 85->100
+- Twineedle:
+    - Power: 25->50
+- Needle Arm:
+    - Now a punching move
+    - Power: 60->75
+- Dizzy Punch:
+    - Power: 70->75
+- Constrict:
+    - Power: 10->30
+    - Chance to reduce speed: 10%->30%
+- Volt Tackle:
+    - Paralyze chance: 10%->30%
+    - No longer causes recoil
+- Comet Punch:
+    - Power: 18->20
+    - Accuracy: 85->100
+- Fury Swipes:
+    - Power: 18->20
+    - Accuracy: 80->100
+- Fury Attack:
+    - Power: 15->20
+    - Accuracy: 85->100
+- Barrage:
+    - Power: 15->20
+    - Accuracy: 85->100
+- Arm Thrust:
+    - Power: 15->20
+- Present:
+    - Accuracy: 90->100
+    - Now heals allies similar to Pollen Puff
+    - Damage odds:
+        - 40% 40->20% 60
+        - 30% 80->40% 80
+        - 10% 120->20% 120
+- Razor Leaf:
+    - Power: 55->60
+    - Accuracy: 95->100
+- Rock Slide:
+    - Power: 75->80
+    - Accuracy: 90->100
+- Air Slash:
+    - Power: 75->80
+    - Accuracy: 95->100
+- Signal Beam:
+    - Power: 75->80
+- Astonish:
+    - Power: 30->40
+- Surf
+    - Target: Both foes and ally->both foes
+- Zap Cannon:
+    - Power: 120->150
+- Dynamic Punch:
+    - Power: 100->150
+- Inferno:
+    - Power: 100->150
+- Octazooka:
+    - Power: 65->90
+    - Accuracy: 85->100
+    - Effect: 50%->100%
+- Aeroblast:
+    - Accuracy: 95->100
+    - PP: 5->10
+- Sacred Fire:
+    - Accuracy: 95->100
+    - PP: 5->10
+- Meteor Mash:
+    - Power: 90->100
+    - Accuracy: 90->100
+- Origin Pulse:
+    - Power: 110->120
+    - Accuracy: 85->100
+- Luster Purge/Mist Ball:
+    - PP: 5->10
+    - Effect: 50%->100%
+- Psycho Boost:
+    - Accuracy: 90->100
+    - PP: 5->10
+- Rock Wrecker:
+    - Accuracy: 90->100
+    - PP: 5->10
+- Chatter:
+    - Power: 65->80
+- Aura Sphere:
+    - Power: 80->90
+- Mystical Power:
+    - Power: 70->80
+    - Accuracy: 90->100
+- Spacial Rend:
+    - Accuracy: 95->100
+    - PP: 5->10
+- Roar of Time:
+    - Accuracy: 90->100
+    - PP: 5->10
+- Magma Storm:
+    - Power: 100->120
+    - Accuracy: 75->100
+    - PP: 5->10
+- Seed Flare:
+    - Accuracy: 85->100
+    - PP: 5->10
+- Head Charge:
+    - No longer causes recoil
+- Fiery Dance
+    - Effect: 50%->100%
+- Bleakwind Storm/Wildbolt Storm/Sandsear Storm/Springtide Storm:
+    - Power: 100->120
+    - Accuracy: 80->100
+    - PP: 5->10 (Springtide Storm)
+- Bolt Strike/Blue Flare:
+    - Accuracy: 85->100
+    - PP: 5->10
+- Freeze Shock/Ice Burn:
+    - Accuracy: 90->100
+    - PP: 5->10
+- Glaciate:
+    - Power: 65->80
+    - Accuracy: 95->100
+- Relic Song:
+    - Power: 75->100
+- Disarming Voice:
+    - Power: 40->60
+    - PP: 15->20
+- Water Shuriken:
+    - Power: 15->25
+- Mountain Gale:
+    - Accuracy: 85->100
+    - PP: 5->10
+- Hyperspace Fury
+    - PP: 5->10
+    - No longer lowers user's Defense
+- Diamond Storm:
+    - Accuracy: 95->100
+    - PP: 5->10
+- Clanging Scales:
+    - PP: 5->10
+    - No longer lowers user's Defense
+- Fleur Cannon:
+    - Accuracy: 90->100
+    - PP: 5->10
+- Misty Explosion:
+    - Power: 100->150
+- Spin Out
+    - PP: 5->10
+    - No longer lowers user's Speed
+- Make It Rain
+    - PP: 5->10
+    - No longer lowers user's Special Attack
+
+**Some other moves (especially signature moves) were given 10 PP as opposed to 5:**
+- Blizzard
+- Ancient Power
+- Silver Wind
+- Ominous Wind
+- Doom Desire
+- Gyro Ball
+- Shadow Force
+- Searing Shot
+- Fusion Bolt
+- Fusion Flare
+- Techno Blast
+- Hyperspace Hole
+- Steam Eruption
+- Sunsteel Strike
+- Moongeist Beam
+- Photon Geyser
+- Double Iron Bash
+- Pyro Ball
+- Eerie Spell
+- Behemoth Blade
+- Behemoth Bash
+- Dynamax Cannon
+- Burning Jealousy
+- Lash Out
+- Wicked Blow
+- Surging Strikes
+- Glacial Lance
+- Astral Barrage
+- Gigaton Hammer
+- Hyper Drill
+- Glaive Rush
+- Collision Course
+- Electro Drift
+- Blood Moon
+- Fickle Beam
+- Thunderclap
+- Mighty Cleave
+- Tera Starstorm
+- Malignant Chain
+
+**Many other moves (especially signature moves) were given 100% accuracy:**
+- Normal:
+    - Cut
+    - Hyper Fang
+    - Crush Claw
+    - Take Down
+    - Slam
+    - Mega Punch
+    - Egg Bomb
+    - Tail Slap
+- Fighting:
+    - Rolling Kick
+    - Submission
+    - Sky Uppercut
+    - Flying Press
+- Flying:
+    - Fly
+    - Sky Attack
+    - Air Cutter
+    - Air Slash
+    - Dual Wingbeat
+- Poison:
+    - Belch
+- Ground:
+    - Bonemerang
+    - Bone Club
+    - Bone Rush
+    - Drill Run
+    - High Horsepower
+    - Precipice Blades
+- Rock:
+    - Rock Throw
+    - Rock Tomb
+    - Rock Blast
+    - Stone Axe
+- Bug:
+    - Pin Missile
+- Ghost:
+    - Poltergeist
+- Electric:
+    - Thunder Fang
+    - Thunder Cage
+- Fire:
+    - Blaze Kick
+    - Fire Fang
+    - V-Create
+    - Pyro Ball
+- Water:
+    - Razor Shell
+    - Aqua Tail
+    - Crabhammer
+    - Steam Eruption
+    - Triple Dive
+- Grass:
+    - Leaf Tornado
+    - Chloroblast
+    - Syrup Bomb
+    - Matcha Gotcha
+- Psychic:
+    - Kinesis
+    - Zen Headbutt
+    - Psyshield Bash
+- Ice:
+    - Ice Fang
+    - Icicle Crash
+- Dragon:
+    - Dual Chop
+    - Eternabeam
+- Dark:
+    - Night Daze
+    - Ceaseless Edge
+- Steel:
+    - Metal Claw
+    - Steel Wing
+    - Gear Grind
+- Fairy:
+    - Play Rough
+    - Strange Steam
+
+### Pokémon:
+- Pokémon have all their moves from their movesets from Gen 7 onwards, at the most recent levels
+    - Natural Gift, Lucky Chant, Wring Out, and Synchronoise have still been removed
+- If a Pokémon can evolve by holding/being traded with an item, it now evolves from that item being used
+    - Pokémon that evolve by trading with no held item now evolve by using a Linking Cord
+    - Items that need to be held at a certain time now evolve by using that item at any time
+- Catch rate is a minimum of 30 for legendaries/mythicals and 45 for the rest
+
+<br>
+<br>
+
+- All starters:
+    - Any with a STAB attack at level 5 or below had it swapped with the next attack to prevent the rival battle from being too hard
+
+- Ivysaur (not in main game):
+    - Evolution: 32->36
+
+- Charmander/Charmeleon/Charizard (not in main game):
+    - Learn Metal Claw by level up
+
+- Caterpie (not in main game):
+    - Learns Bug Bite at level 7 instead of 9
+
+- Weedle (not in main game):
+    - Learns Bug Bite at level 7 instead of 9
+
+- Pidgey/Pidgeotto/Pidgeot (not in main game):
+    - Learn Peck by level up
+    - Learn Acrobatics by TM
+
+- Nidorina/Nidoqueen (not in main game):
+    - Can now breed
+
+- Pichu:
+    - Held item: None->Light Ball
+    - Can also evolve at level 12
+
+- Pikachu
+    - Held item: Light Ball: 5%->100%
+    - Learns Volt Tackle at level 1
+
+- Raichu:
+    - Learns Volt Tackle at level 1
+
+- Alolan Raichu (not in main game):
+    - Learns Volt Tackle at level 1
+
+- Cleffa (not in main game):
+    - Can also evolve at level 12
+
+- Parasect (not in main game):
+    - Held items:
+        - Tiny Mushroom: 50%->0%
+        - Big Mushroom: 5%->50%
+        - Balm Mushroom: 0%->5%
+
+- Alolan Meowth: (not in main game):
+    - Can also evolve at level 28
+
+- Igglybuff:
+    - Can also evolve at level 12
+
+- Psyduck:
+    - Type: Water->Water/Psychic
+
+- Golduck:
+    - Type: Water->Water/Psychic
+    - Learns Power Gem upon evolving
+
+- Golbat:
+    - Can also evolve at level 33
+
+- Kadabra/Alakazam:
+    - Held item: Twisted Spoon: 5%->100%
+
+- Machamp:
+    - Learns Drain Punch by TM
+
+- Cloyster (not in main game):
+    - Held items:
+        - Pearl: 50%->0%
+        - Big Pearl: 5%->50%
+        - Pearl String: 0%->5%
+    - Learns Body Press by TM
+
+- Gastly/Haunter/Gengar (not in main game):
+    - Type: Ghost/Poison->Ghost
+
+- Drowzee/Hypno (not in main game):
+    Learn Dream Eater by level up
+
+- Alolan Exeggutor (not in main game):
+    - Atk: 105->125
+    - SpA: 125->105
+
+- Cubone/Marowak (not in main game):
+    - Held items:
+        - Thick Club: 5%->50%
+        - Rare Bone: 0%->5%
+
+- Farfetch'd (not in main game):
+    - Held item: Leek: 5%->100%
+
+- Sirfetch'd (not in main game):
+    - Held item: Leek: 5%->100%
+    - Learns Drain Punch by TM
+
+- Lickitung (not in main game):
+    - Atk: 55->65
+    - Spe: 30->50
+    - Learns Coil by level up
+    - Learns Sludge Bomb by TM
+    - Ability: Oblivious->Thick Fat
+
+- Lickilicky (not in main game):
+    - Learns Coil by level up
+    - Learns Sludge Bomb by TM
+    - Ability: Oblivious->Thick Fat
+
+- Koffing:
+    - Atk: 65->60
+    - SpA: 60->65
+
+- Weezing:
+    - Atk: 90->85
+    - SpA: 85->90
+
+- Galarian Weezing (not in main game):
+    - Atk: 90->85
+    - SpA: 85->90
+    - Learns Misty Explosion by level up
+
+- Rhyperior:
+    - Learns Rock Wrecker upon evolving
+
+- Happiny (postgame):
+    - Base exp: 110->250
+    - Held item: Lucky Egg: 0%->5%
+
+- Chansey (postgame):
+    - Held item: Lucky Punch: 50%->100%
+    - Can also evolve at level 36
+
+- Blissey (postgame):
+    - Held item: Lucky Egg: 50%->100%
+
+- Pinsir:
+    - Catch rate: 45->90
+
+- Starmie:
+    - Learns Water Pulse by level up
+
+- Mime Jr./Mr. Mime:
+    - Gender Ratio: 50/50->100/0
+    - Type: Psychic/Fairy->Psychic
+
+- Mr. Rime (not in main game):
+    - Gender Ratio: 50/50->100/0
+
+- Scyther (not in main game):
+    - Catch rate: 45->90
+    - Learns Dual Wingbeat by level up
+
+- Smoochum (not in main game):
+    - Def: 15->20
+    - Catch rate: 45->150
+
+- Jynx (not in main game):
+    - Def: 35->40
+
+- Elekid (postgame):
+    - Atk: 63->65
+    - Def: 37->40
+    - SpA: 65->70
+    - Catch rate: 45->150
+    - Learns Electric Terrain by level up
+
+- Electabuzz (postgame):
+    - Atk: 83->85
+    - Def: 57->60
+    - SpA: 95->100
+    - Learns Electric Terrain by level up
+
+- Electivire (postgame):
+    - Atk: 123->125
+    - Def: 67->70
+    - SpA: 95->100
+    - Learns Electric Terrain by level up
+    - Learns Drain Punch by TM
+
+- Magby (postgame):
+    - Def: 37->40
+    - Spe: 83->85
+    - Catch rate: 45->150
+
+- Magmar (postgame):
+    - Def: 57->60
+    - Spe: 93->95
+
+- Magmortar (postgame):
+    - Ability: Flame Body->Flash Fire
+    - Atk: 95->100
+    - Def: 67->70
+    - Spe: 83->85
+
+- Magikarp:
+    - Learns Bounce and Hydro Pump by level up
+
+- Gyarados:
+    - Type: Water/Flying->Water
+    - Learns Bounce by level up
+
+- Eevee (not in main game):
+    - Now evolves into Espeon with a Sun Stone
+    - Now evolves into Umbreon with a Moon Stone
+    - Now evolves into Sylveon with a Dawn Stone
+
+- Aerodactyl (postgame):
+    - Learns Dual Wingbeat, Double-Edge, Head Smash, and Brave Bird by level up
+
+- Munchlax (not in main game):
+    - Can also evolve at level 20
+
+- Snorlax (not in main game):
+    - Learns Slack Off by level up
+
+- Zapdos (not in main game):
+    - Learns Air Slash by TM
+
+- Bayleef (postgame):
+    - Evolution: 32->36
+
+- Cyndaquil (postgame):
+    - Evolution: 14->16
+
+- Totodile (postgame):
+    - Evolution: 18->16
+
+- Crocnaw (postgame):
+    - Evolution: 30->36
+
+- Ledyba (postgame):
+    - Atk: 20->40
+
+- Ledian (postgame):
+    - Atk: 35->55
+
+- Spinarak (postgame):
+    - Spe: 30->40
+
+- Ariados (postgame):
+    - Spe: 40->50
+
+- Togepi (not in main game):
+    - Can also evolve at level 16
+
+- Mareep/Flaaffy:
+    - Learn Tail Glow by Egg Move
+
+- Ampharos:
+    - Learns Tail Glow by level up
+
+- Azurill:
+    - Can also evolve at level 10
+    - Type: Normal/Fairy->Water/Fairy
+    - Gender Ratio: 25/75->50/50
+    - Catch rate: 150->255
+
+- Marill:
+    - HP: 70->75
+    - Atk: 20->40
+    - Def: 50->60
+    - SpA: 20->40
+    - SpD: 50->60
+
+- Azumarill:
+    - Atk: 50->60
+    - Spe: 50->60
+
+- Sunflora:
+    - Learns Morning Sun by level up
+
+- Honchkrow (not in main game):
+    - Learns Drill Peck by level up
+
+- Misdreavus/Mismagius (not in main game):
+    - Gender Ratio: 50/50->25/75
+
+- Gligar/Gliscor (postgame):
+    - Learn Dual Wingbeat by level up
+
+- Dunsparce (not in main game):
+    - Learns Swift by move tutor
+
+- Granbull (postgame):
+    - Hidden Ability: Rattled->Strong Jaw
+
+- Qwilfish/Hisuian Qwilfish/Overqwil (not in main game):
+    - Learns Poison Tail by level up
+
+- Heracross:
+    - Learns X-Scissor by TM
+    - Catch rate: 45->90
+
+- Sneasel/Weavile (not in main game):
+    - Learn Razor Wind by Egg Move
+
+- Slugma:
+    - Evolution: 38->32
+
+- Magcargo:
+    - Learns Body Press by TM
+
+- Mamoswine (not in main game):
+    - Learns Icicle Crash by level up
+
+- Octillery (postgame):
+    - HP: 75
+    - Atk: 105->100
+    - Def: 75->85
+    - SpA: 105->110
+    - SpD: 75->85
+    - Spe: 45
+
+- Delibird (not in main game):
+    - Atk: 55->75
+    - Hidden Ability: Insomnia->Technician
+    - Learns Ice Punch by level up
+
+- Mantyke (not in main game):
+    - Catch rate: 25->90
+
+- Stantler (postgame):
+    - Learns Psyshield Bash by level up
+
+- Lugia (postgame):
+    - Learns Brave Bird by level up
+
+- Sceptile:
+    - Atk: 85->105
+    - SpA: 105->85
+    - Learns Dual Chop upon evolving
+
+- Mega Sceptile:
+    - Atk: 110->145
+    - SpA: 145->110
+
+- Blaziken:
+    - Learns Drain Punch by TM
+
+- Wurmple:
+    - Learns Bug Bite at level 7 instead of 15
+    - Evolution is based on time of day
+
+- Beautifly:
+    - Learns Air Slash by TM
+
+- Dustox:
+    - Sp. Def: 90->100 to match Beautifly's stat increase
+
+- Nuzleaf/Shiftry:
+    - Learn Grass Whistle by level up
+
+- Swellow:
+    - Learns Acrobatics by TM
+
+- Breloom:
+    - Held items:
+        - Tiny Mushroom: 50%->0%
+        - Big Mushroom: 5%->50%
+        - Balm Mushroom: 0%->5%
+    - Learns Drain Punch by level up
+
+- Slaking:
+    - Learns Giga Impact by level up
+
+- Nincada/Ninjask/Shedinja:
+    - Learn Leech Life by level up
+
+- Whismur:
+    - Learn Disarming Voice by level up
+
+- Loudred:
+    - Received Punk Rock/Amplify as a second ability
+    - Learns Disarming Voice, Teeter Dance, and Dizzy Punch by level up
+
+- Exploud:
+    - Received Punk Rock/Amplify as a second ability
+    - Learns Hyper Voice upon evolving
+    - Learn Disarming Voice, Teeter Dance, and Dizzy Punch by level up
+
+- Makuhita:
+    - Catch rate: 180->220
+
+- Delcatty:
+    - Learns Swift by level up
+
+- Sableye:
+    - Catch rate: 45->90
+
+- Mawile:
+    - Catch rate: 45->90
+    - Held item: Occa Berry: 0%->50%
+    - Learns Metal Claw and Smart Strike by level up
+
+- Volbeat:
+    - Atk: 73->75
+    - SpA: 47->75
+    - Illuminate->Tinted Lens
+
+- Illumise:
+    - Atk: 47->75
+    - SpA: 73->75
+    - Oblivious->Illuminate
+    - Tinted Lens->Oblivious
+
+- Budew:
+    - Can also evolve at level 13
+    - Gender Ratio: 50/50->75/25
+
+- Roselia/Roserade:
+    - Gender Ratio: 50/50->75/25
+    - Held items:
+        - Poison Barb: 5%->50%
+        - Absorb Bulb: 0%->5%
+
+- Numel/Camerupt
+    - Held item: Rawst Berry: 0%->100%
+
+- Spinda:
+    - All stats: 60->70
+
+- Altaria:
+    - Learns Air Slash by TM
+
+- Zangoose:
+    - Learns Cut by HM
+    - Immunity->Poison Heal
+    - Received Sharpness as a second ability
+    - Toxic Boost->Guts
+    - Also in Human-Like Egg Group
+    - HP: 73->75
+    - Atk: 115->125
+    - Spe: 90->100
+
+- Seviper:
+    - HP: 73->75
+    - Spe: 65->75
+
+- Lunatone:
+    - Learns Icy Wind by level up
+
+- Solrock:
+    - Learns Power Gem and Solar Blade by level up
+
+- Whiscash:
+    - Atk: 78->90
+    - Def: 73->75
+    - SpA: 76->80
+    - SpD: 71->75
+    - Spe: 60->70
+    - Learns Dragon Dance by level up
+
+- Claydol:
+    - Learns Zen Headbutt by level up
+
+- Castform:
+    - All stats: 70->75
+    - Learns Surf, Flamethrower, and Ice Beam by level up
+    - Learns Thunder and Solar Beam by level up
+    - Learns Overheat by TM
+    - Learns Surf by HM
+
+- Duskull/Dusclops:
+    - Learn Spite by Egg Move
+
+- Dusknoir:
+    - Learns Spite by Egg Move
+    - Learns Drain Punch by TM
+    - Gets Iron Fist as second Ability
+
+- Tropius:
+    - HP: 99->100
+    - Atk: 68->70
+    - Def: 83->85
+    - SpA: 72->80
+    - SpD: 87->90
+    - Spe: 51->55
+    - Held item: Nanab Berry: 0%->100%
+
+- Chingling:
+    - Can also evolve at level 19
+
+- Absol:
+    - Learns Spite by Egg Move
+
+- Huntail:
+    - Holding a Deep Sea Tooth multiplies its Attack by 1.5
+    - Atk: 104->114
+
+- Gorebyss:
+    - Holding a Deep Sea Scale multiplies its Defense by 1.5
+    - Atk: 84->94
+    - Learns Leech Life by TM
+
+- Luvdisc:
+    - HP: 43->50
+    - SpA: 40->60
+    - Spd: 97->100
+    - Held item: Heart Scale: 50%->100%
+
+- Salamence:
+    - Learns Dual Wingbeat by level up
+
+- Latios/Latias:
+    - Level up learnset slightly restructured to avoid a battle where they only have one attacking move
+
+- Kyogre:
+    - Learns Origin Pulse at level 63 instead of level 1
+    - Learns Aurora Beam at level 1 instead of Body Slam
+    - Learns Surf at level 27 instead of Muddy Water
+    - Learns Thunder at level 81 instead of Double-Edge
+
+- Groudon:
+    - Learns Precipice Blades at level 63 instead of level 1
+    - Learns Bulldoze at level 1 instead of Mud Shot
+    - Learns Solar Blade at level 81 instead of Solar Beam
+
+- Rayquaza:
+    - Learns Fly at level 1 instead of level 63
+    - Learns Dragon Ascent at level 63 instead of level 1
+
+**NOTE: Nothing past here is in the main game**
+
+- Turtwig:
+    - Evolution: 18->16
+
+- Grotle:
+    - Evolution: 32->36
+
+- Torterra:
+    - Learns Shell Smash upon evolving
+
+- Chimchar:
+    - Evolution: 14->16
+
+- Cranidos/Rampardos:
+    - Received Rock Head as a second ability
+
+- Shieldon/Bastiodon:
+    - Received Rock Head as a second ability
+
+- Cherrim Sunshine Form:
+    - Atk: 60->90
+    - Sp. Def: 78->117
+
+- Buneary:
+    - Can also evolve at level 23
+
+- Glameow:
+    - Evolution: 38->34
+
+- Skuntank:
+    - HP: 103->105
+    - Atk: 93->95
+    - Def: 67->70
+    - SpA: 71->80
+    - SpD: 61->65
+    - Spe: 84->85
+
+- Riolu:
+    - Can also evolve at level 20
+
+- Abomasnow:
+    - Learns Icicle Crash by TM
+
+- Snivy:
+    - Evolution: 17->16
+
+- Tepig:
+    - Evolution: 17->16
+
+- Oshawott:
+    - Evolution: 17->16
+
+- Unfezant:
+    - Learns Acrobatics by TM
+
+- Woobat:
+    - Can also evolve at level 24
+
+- Audino:
+    - HP: 103->105
+    - Gender Ratio: 50/50 -> 25/75
+    - Base experience: 390->395
+    - Mega base experience: 425->500
+
+- Swadloon:
+    - Can also evolve at level 30
+
+- Scolipede:
+    - Learns Coil by level up
+    - Learns Lunge by move tutor
+
+- Whimsicott:
+    - Learns Earth Power by TM
+
+- Lilligant:
+    - Learns Earth Power by TM
+
+- Sandile (postgame):
+    - Evolution: 29->25
+
+- Krokorok (postgame):
+    - Evolution: 40->38
+
+- Darumaka:
+    - Evolution: 35->32
+
+- Galarian Darumaka/Darmanitan:
+    - Held item: Snowball: 0%->50%
+
+- Scraggy:
+    - Evolution: 39->35
+
+- Carracosta:
+    - Learns Body Press by TM
+
+- Archeops:
+    - Receives Early Bird as a Hidden Ability
+
+- Gothita:
+    - Evolution: 32->22
+
+- Gothorita:
+    - Evolution: 41->35
+
+- Solosis:
+    - Evolution: 32->22
+
+- Duosion:
+    - Evolution: 41->35
+
+- Ducklett:
+    - Evolution: 35->33
+
+- Vanillite:
+    - Evolution: 35->30
+
+- Vanillish:
+    - Evolution: 47->42
+
+- Foongus:
+    - Evolution: 39->36
+
+- Amoonguss:
+    - Held items:
+        - Tiny Mushroom: 50%->0%
+        - Big Mushroom: 5%->50%
+        - Balm Mushroom: 0%->5%
+
+- Joltik:
+    - Evolution: 36->32
+
+- Klink:
+    - Evolution: 38->32
+
+- Klang:
+    - Evolution: 49->42
+
+- Tynamo:
+    - Evolution: 39->32
+
+- Litwick:
+    - Evolution: 41->36
+
+- Axew:
+    - Evolution: 38->35
+
+- Fraxure:
+    - Evolution: 48->45
+
+- Cubchoo:
+    - Evolution: 37->35
+
+- Cryogonal:
+    - Learns Dazzling Gleam, Flash, and Power Gem by TM
+
+- Stunfisk:
+    - HP: 109->110
+    - Atk: 66->85
+    - Def: 84->85
+    - SpA: 81->85
+    - SpD: 99->100
+    - Spe: 32->35
+
+- Galarian Stunfisk:
+    - HP: 109->110
+    - Atk: 81->85
+    - Def: 99->100
+    - SpA: 66->85
+    - SpD: 84->85
+    - Speed: 32->35
+    - Learns Terrain Pulse by level up
+
+- Mienfoo:
+    - Evolution: 50->38
+
+- Golett:
+    - Evolution: 43->40
+
+- Pawniard:
+    - Evolution: 52->40
+
+- Rufflet:
+    - Evolution: 54->35
+
+- Vullaby:
+    - Evolution: 54->35
+
+- Heatmor:
+    - Atk: 97->105
+    - Def: 66->70
+    - SpD: 66->70
+
+- Durant:
+    - HP: 58->65
+    - Atk: 109->110
+    - Def: 112->115
+    - SpA: 48->50
+    - SpD: 48->50
+    - Spe: 109->110
+
+- Deino:
+    - Evolution: 50->30
+
+- Zweilous:
+    - Evolution: 64->55
+
+- Larvesta:
+    - Evolution: 59->56
+
+- Kyurem:
+    - Learns Icicle Crash by TM
+
+- Spritzee/Aromatisse:
+    - Gender Ratio: 50/50->25/75
+
+- Swirlix/Slurpuff:
+    - Learn Lick by level up
+
+- Skrelp:
+    - Evolution: 48->37
+
+- Goomy:
+    - Evolution: 40->35
+
+- Gourgeist:
+    - Learns Shadow Claw by TM
+
+- Noibat:
+    - Evolution: 48->40
+
+- Rowlet:
+    - Evolution: 17->16
+
+- Dartrix:
+    - Evolution: 34->36
+
+- Litten:
+    - Evolution: 17->16
+
+- Torracat:
+    - Evolution: 34->36
+
+- Popplio:
+    - Evolution: 17->16
+
+- Brionne:
+    - Evolution: 34->36
+
+- Crabominable:
+    - Learns Icicle Crash by TM
+
+- Type: Null:
+    - Can also evolve at level 45
+
+- Tapu Koko:
+    - Learns Supercell Slam, Play Rough, and Rising Voltage by TM
+
+- Tapu Lele:
+    - Learns Expanding Force by TM
+
+- Tapu Bulu:
+    - Learns Grassy Glide and Play Rough by TM
+
+- Thwackey:
+    - Evolution: 35->36
+
+- Raboot:
+    - Evolution: 35->36
+
+- Drizzile:
+    - Evolution: 35->36
+
+- Hatenna:
+    - Evolution: 32->28
+
+- Hattrem:
+    - Evolution: 42->38
+
+- Impidimp:
+    - Evolution: 32->28
+
+- Morgrem:
+    - Evolution: 42->38
+
+- Snom:
+    - Can also evolve at level 21
+
+- Dreepy:
+    - Evolution: 50->30
+
+- Drakloak:
+    - Evolution: 60->55
+
+- Dragapult:
+    - Learns Shadow Claw by TM
+
+- Pawmot:
+    - Learns Drain Punch by TM
+
+- Ceruledge:
+    - Hidden Ability: Weak Armor->Sharpness

@@ -1749,6 +1749,7 @@ extern const u32 gBagScreen_Gfx[];
 extern const u32 gBagScreen_GfxTileMap[];
 extern const u32 gBagScreenFemale_Pal[];
 extern const u32 gBagScreenMale_Pal[];
+extern const u32 gBagScreenYellowBlack_Pal[];
 extern const u8 gBagMenuHMIcon_Gfx[];
 
 // item menu icons graphics
@@ -1800,6 +1801,8 @@ extern const u32 gIntroFlygon_Gfx[];
 extern const u32 gPartyMenuBg_Gfx[];
 extern const u32 gPartyMenuBg_Tilemap[];
 extern const u32 gPartyMenuBg_Pal[];
+extern const u32 gPartyMenuBgYb_Gfx[];
+extern const u32 gPartyMenuBgYb_Pal[];
 
 // berry pics
 extern const u32 gBerryPic_Cheri[];

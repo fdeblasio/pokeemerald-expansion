@@ -856,7 +856,9 @@ static bool8 LoadBagMenu_Graphics(void)
         }
         break;
     case 2:
-        if (!IsWallysBag() && gSaveBlock2Ptr->playerGender != MALE)
+        if (YELLOW_BLACK_PALETTES)
+            LoadCompressedPalette(gBagScreenYellowBlack_Pal, BG_PLTT_ID(0), 2 * PLTT_SIZE_4BPP);
+        else if (!IsWallysBag() && gSaveBlock2Ptr->playerGender != MALE)
             LoadCompressedPalette(gBagScreenFemale_Pal, BG_PLTT_ID(0), 2 * PLTT_SIZE_4BPP);
         else
             LoadCompressedPalette(gBagScreenMale_Pal, BG_PLTT_ID(0), 2 * PLTT_SIZE_4BPP);

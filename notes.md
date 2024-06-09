@@ -65,6 +65,7 @@ upcoming
 - Xaman's TM Case: https://www.pokecommunity.com/showpost.php?p=10378278
 
 ### Trainers
+- Readjust wild/trainer levels so that parties aren't overpowered
 - Have each rematch only be possible after certain badges? Would make rematch levels more consistent
 - Go back and make rematch levels stronger/more consistent (first see if they can be locked behind badges)
 - Check if double battles work with only one Pokemon, then remove scripts that require two Pokemon for double battles (like Twins and Couples)
@@ -138,8 +139,6 @@ upcoming
 - Updated Battle Pyramid wild randomizer
 
 ### Other
-- Readjust wild/trainer levels so that parties aren't overpowered
-    - Bring important Trainers up to ORAS levels?
 - Railroad the post-Mossdeep water routes
 - Might need to increase MAX_LEVEL_UP_MOVES and/or MAX_RELEARNER_MOVES
 - Update palettes?:

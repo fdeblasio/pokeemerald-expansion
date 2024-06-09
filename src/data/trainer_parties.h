@@ -3267,31 +3267,31 @@ static const struct TrainerMon sParty_Walter5[] = {
 
 static const struct TrainerMon sParty_Sidney[] = {
     {
-    .lvl = 47,
+    .lvl = 50,
     .species = SPECIES_MIGHTYENA,
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .moves = {MOVE_CRUNCH, MOVE_FIRE_FANG, MOVE_THUNDER_FANG, MOVE_YAWN},
     },
     {
-    .lvl = 47,
+    .lvl = 50,
     .species = SPECIES_SHIFTRY,
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .moves = {MOVE_NIGHT_SLASH, MOVE_LEAF_BLADE, MOVE_FAKE_OUT, MOVE_DOUBLE_SLAP},
     },
     {
-    .lvl = 48,
+    .lvl = 51,
     .species = SPECIES_CRAWDAUNT,
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .moves = {MOVE_CRUNCH, MOVE_CRABHAMMER, MOVE_KNOCK_OFF, MOVE_SWORDS_DANCE},
     },
     {
-    .lvl = 48,
+    .lvl = 51,
     .species = SPECIES_CACTURNE,
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .moves = {MOVE_ENERGY_BALL, MOVE_DARK_PULSE, MOVE_LEECH_SEED, MOVE_SPIKY_SHIELD},
     },
     {
-    .lvl = 50,
+    .lvl = 52,
     .species = SPECIES_ABSOL,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .moves = {MOVE_NIGHT_SLASH, MOVE_PSYCHO_CUT, MOVE_AERIAL_ACE, MOVE_SWORDS_DANCE},
@@ -3301,31 +3301,31 @@ static const struct TrainerMon sParty_Sidney[] = {
 
 static const struct TrainerMon sParty_Phoebe[] = {
     {
-    .lvl = 49,
+    .lvl = 51,
     .species = SPECIES_DUSCLOPS,
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .moves = {MOVE_HEX, MOVE_CONFUSE_RAY, MOVE_CURSE, MOVE_WILL_O_WISP},
     },
     {
-    .lvl = 49,
+    .lvl = 51,
     .species = SPECIES_SHEDINJA,
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .moves = {MOVE_SHADOW_CLAW, MOVE_LEECH_LIFE, MOVE_HEAL_BLOCK, MOVE_SPITE},
     },
     {
-    .lvl = 50,
+    .lvl = 52,
     .species = SPECIES_SABLEYE,
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .moves = {MOVE_SHADOW_CLAW, MOVE_FOUL_PLAY, MOVE_POWER_GEM, MOVE_FAKE_OUT},
     },
     {
-    .lvl = 50,
+    .lvl = 52,
     .species = SPECIES_BANETTE,
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .moves = {MOVE_SHADOW_CLAW, MOVE_BODY_SLAM, MOVE_SHADOW_SNEAK, MOVE_SWORDS_DANCE},
     },
     {
-    .lvl = 52,
+    .lvl = 53,
     .species = SPECIES_DUSKNOIR,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .moves = {MOVE_SHADOW_PUNCH, MOVE_EARTHQUAKE, MOVE_FIRE_PUNCH, MOVE_ICE_PUNCH},
@@ -3335,25 +3335,25 @@ static const struct TrainerMon sParty_Phoebe[] = {
 
 static const struct TrainerMon sParty_Glacia[] = {
     {
-    .lvl = 51,
+    .lvl = 52,
     .species = SPECIES_SEALEO,
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .moves = {MOVE_ICE_BALL, MOVE_ROLLOUT, MOVE_DEFENSE_CURL, MOVE_HAIL},
     },
     {
-    .lvl = 51,
+    .lvl = 52,
     .species = SPECIES_CASTFORM,
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .moves = {MOVE_BLIZZARD, MOVE_WEATHER_BALL, MOVE_HYDRO_PUMP, MOVE_HAIL},
     },
     {
-    .lvl = 52,
+    .lvl = 53,
     .species = SPECIES_GLALIE,
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .moves = {MOVE_FREEZE_DRY, MOVE_ICE_SHARD, MOVE_PROTECT, MOVE_HAIL},
     },
     {
-    .lvl = 52,
+    .lvl = 53,
     .species = SPECIES_FROSLASS,
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .moves = {MOVE_BLIZZARD, MOVE_SHADOW_BALL, MOVE_DRAINING_KISS, MOVE_HAIL},
@@ -3381,7 +3381,7 @@ static const struct TrainerMon sParty_Drake[] = {
     .moves = {MOVE_DRAGON_PULSE, MOVE_SURF, MOVE_SMOKESCREEN, MOVE_YAWN},
     },
     {
-    .lvl = 53,
+    .lvl = 54,
     .species = SPECIES_ALTARIA,
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
@@ -4460,7 +4460,7 @@ static const struct TrainerMon sParty_Wallace[] = {
     .isShiny = TRUE,
     },
     {
-    .lvl = 56,
+    .lvl = 57,
     .species = SPECIES_LUDICOLO,
     .ability = ABILITY_SWIFT_SWIM,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -4468,7 +4468,7 @@ static const struct TrainerMon sParty_Wallace[] = {
     .gender = TRAINER_MON_MALE,
     },
     {
-    .lvl = 56,
+    .lvl = 57,
     .species = SPECIES_WAILORD,
     .ability = ABILITY_OBLIVIOUS,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -4477,7 +4477,7 @@ static const struct TrainerMon sParty_Wallace[] = {
     .heldItem = ITEM_LEFTOVERS,
     },
     {
-    .lvl = 58,
+    .lvl = 59,
     .species = SPECIES_MILOTIC,
     .ability = ABILITY_MARVEL_SCALE,
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),

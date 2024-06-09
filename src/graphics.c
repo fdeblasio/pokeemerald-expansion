@@ -1622,6 +1622,9 @@ const u32 gPartyMenuBg_Gfx[] = INCBIN_U32("graphics/party_menu/bg.4bpp.lz");
 const u32 gPartyMenuBg_Pal[] = INCBIN_U32("graphics/party_menu/bg.gbapal.lz");
 const u32 gPartyMenuBg_Tilemap[] = INCBIN_U32("graphics/party_menu/bg.bin.lz");
 
+const u32 gPartyMenuBgYb_Gfx[] = INCBIN_U32("graphics/party_menu/bg_yb.4bpp.lz");
+const u32 gPartyMenuBgYb_Pal[] = INCBIN_U32("graphics/party_menu/bg_yb.gbapal.lz");
+
 const u32 gPartyMenuPokeball_Gfx[] = INCBIN_U32("graphics/party_menu/pokeball.4bpp.lz");
 const u32 gPartyMenuPokeballSmall_Gfx[] = INCBIN_U32("graphics/party_menu/pokeball_small.4bpp.lz"); //unused
 const u32 gPartyMenuPokeball_Pal[] = INCBIN_U32("graphics/party_menu/pokeball.gbapal.lz");
@@ -1652,6 +1655,7 @@ const u32 gBagPalette[] = INCBIN_U32("graphics/bag/bag.gbapal.lz");
 
 const u32 gBagScreenMale_Pal[] = INCBIN_U32("graphics/bag/menu_male.gbapal.lz");
 const u32 gBagScreenFemale_Pal[] = INCBIN_U32("graphics/bag/menu_female.gbapal.lz");
+const u32 gBagScreenYellowBlack_Pal[] = INCBIN_U32("graphics/bag/menu_yellow_black.gbapal.lz");
 
 const u32 gBagScreen_Gfx[] = INCBIN_U32("graphics/bag/menu.4bpp.lz");
 const u32 gBagScreen_GfxTileMap[] = INCBIN_U32("graphics/bag/menu.bin.lz");

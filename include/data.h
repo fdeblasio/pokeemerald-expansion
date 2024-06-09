@@ -77,8 +77,6 @@ struct TrainerMon
     u8 padding:2;
 };
 
-#define TRAINER_PARTY(partyArray) partyArray, .partySize = ARRAY_COUNT(partyArray)
-
 struct Trainer
 {
     /*0x00*/ u32 aiFlags;

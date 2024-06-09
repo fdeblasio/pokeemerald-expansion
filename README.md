@@ -316,11 +316,11 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Juan            |41, 41, 43, 43, 46    |44, 44, 45, 45, 47|
 |Rayquaza        |70                    |50|
 |Wally           |41, 43, 44, 44, 45    |46, 46, 47, 47, 49|
-|Sidney          |46, 46, 48, 48, 49    |47, 47, 48, 48, 50|
-|Phoebe          |48, 49, 49, 50, 51    |49, 49, 50, 50, 52|
-|Glacia          |50, 50, 52, 52, 53    |51, 51, 52, 52, 54|
-|Drake           |52, 53, 53, 54, 55    |53, 53, 53, 54, 56|
-|Wallace         |55, 56, 56, 56, 57, 58|56, 56, 56, 56, 57, 58|
+|Sidney          |46, 46, 48, 48, 49    |50, 50, 51, 51, 52|
+|Phoebe          |48, 49, 49, 50, 51    |51, 51, 52, 52, 53|
+|Glacia          |50, 50, 52, 52, 53    |52, 52, 53, 53, 54|
+|Drake           |52, 53, 53, 54, 55    |53, 53, 54, 54, 56|
+|Wallace         |55, 56, 56, 56, 57, 58|56, 56, 56, 57, 57, 59|
 |Latios/Latias   |40                    |60|
 |Mew             |N/A                   |60|
 |Deoxys          |N/A                   |60|
@@ -329,10 +329,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Steven          |75, 76, 76, 76, 77, 78|77, 77, 78, 78, 79, 80|
 
 #### Gym Leader/Wally Rematches:
-- 60 (new/returning 2), 63 (returning 1), 65 (signature) 4+
-- 65 (new/returning 2), 68 (returning 1), 70 (signature) 5+
-- 70 (new/returning 2), 73 (returning 1), 75 (signature)
-- 75 (new/returning 2), 78 (returning 1), 80 (signature) 6
+- 4-5 Pokémon: 60, 63, 63, 65
+- 5-6 Pokémon: 65, 65, 68, 68, 70
+- 5-6 Pokémon: 70, 70, 73, 73, 75
+- 6 Pokémon: 75, 75, 75, 78, 78, 80
 
 
 ### Berries:

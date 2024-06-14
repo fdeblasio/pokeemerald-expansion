@@ -252,6 +252,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Soul Dew uses its Gen 6 effect
 - Pokémon that evolve with an item at day or night now can evolve at any time
 - EVs now give one stat increase for every EV but cap out at 63 (individual)/127 (total)
+- Bird Keepers now use the overworld sprite of male Psychics since it looks more like them than the blond sprite
 - Houndour was added to the Hoenn Pokédex to give Team Magma more variety
 - Frontier Brains have updated teams
 - Battle Pyramid wild Pokémon have been updated

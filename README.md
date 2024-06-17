@@ -514,7 +514,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Barrage:
         - Power: 15->20
         - Accuracy: 85->100
-    - Blood Moon
+    - Blood Moon:
         - PP: 5->10
     - Chatter:
         - Power: 65->80
@@ -524,9 +524,9 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Constrict:
         - Power: 10->30
         - Chance to reduce speed: 10%->30%
-    - Crush Claw
+    - Crush Claw:
         - Accuracy: 95->100
-    - Cut
+    - Cut:
         - Accuracy: 95->100
     - Dizzy Punch:
         - Power: 70->75
@@ -534,7 +534,7 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Now hits exactly twice
         - Power: 15->30
         - Accuracy: 85->100
-    - Egg Bomb
+    - Egg Bomb:
         - Accuracy: 75->100
     - Fury Attack:
         - Power: 15->20
@@ -544,11 +544,11 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Accuracy: 80->100
     - Head Charge:
         - No longer causes recoil
-    - Hyper Drill
+    - Hyper Drill:
         - PP: 5->10
-    - Hyper Fang
+    - Hyper Fang:
         - Accuracy: 90->100
-    - Mega Punch
+    - Mega Punch:
         - Accuracy: 85->100
     - Present:
         - Accuracy: 90->100
@@ -559,42 +559,40 @@ There are some mechanics, moves and abilities that are missing and being develop
             - 10% 120->20% 120
     - Relic Song:
         - Power: 75->100
-    - Rock Climb
+    - Rock Climb:
         - Accuracy: 85->100
-    - Slam
+    - Slam:
         - Accuracy: 75->100
-    - Tail Slap
+    - Tail Slap:
         - Accuracy: 85->100
-    - Take Down
+    - Take Down:
         - Accuracy: 85->100
-    - Techno Blast
+    - Techno Blast:
         - PP: 5->10
-    - Tera Starstorm
+    - Tera Starstorm:
         - PP: 5->10
 - Fighting:
     - Arm Thrust:
         - Power: 15->20
     - Aura Sphere:
         - Power: 80->90
-    - Collision Course
+    - Collision Course:
         - PP: 5->10
     - Dynamic Punch:
         - Power: 100->150
-    - Fly
+    - Flying Press:
         - Accuracy: 95->100
-    - Flying Press
-        - Accuracy: 95->100
-    - Rolling Kick
+    - Rolling Kick:
         - Accuracy: 85->100
-    - Sky Uppercut
+    - Sky Uppercut:
         - Accuracy: 90->100
-    - Submission
+    - Submission:
         - Accuracy: 80->100
 - Flying:
     - Aeroblast:
         - Accuracy: 95->100
         - PP: 5->10
-    - Air Cutter
+    - Air Cutter:
         - Accuracy: 95->100
     - Air Slash:
         - Power: 75->80
@@ -602,90 +600,102 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Bleakwind Storm:
         - Power: 100->120
         - Accuracy: 80->100
-    - Dual Wingbeat
+    - Dual Wingbeat:
         - Accuracy: 90->100
+    - Fly:
+        - Accuracy: 95->100
     - Peck:
         - Power: 35->40
-    - Sky Attack
+    - Sky Attack:
         - Accuracy: 90->100
 - Poison:
-    - Belch
+    - Belch:
         - Accuracy: 90->100
-    - Malignant Chain
+    - Malignant Chain:
         - PP: 5->10
+    - Poison Sting:
+        - Power: 15->20
+    - Poison Fang:
+        - Power: 50->60
 - Ground:
-    - Bonemerang
+    - Bonemerang:
         - Accuracy: 90->100
-    - Bone Club
+    - Bone Club:
         - Accuracy: 85->100
-    - Bone Rush
+    - Bone Rush:
         - Accuracy: 90->100
-    - Drill Run
+    - Drill Run:
         - Accuracy: 95->100
-    - High Horsepower
+    - High Horsepower:
         - Accuracy: 95->100
-    - Precipice Blades
+    - Mud Bomb:
+        - Accuracy: 85->100
+    - Mud Shot:
+        - Accuracy: 95->100
+    - Precipice Blades:
         - Accuracy: 85->100
     - Sandsear Storm:
         - Power: 100->120
         - Accuracy: 80->100
 - Rock:
-    - Ancient Power
+    - Ancient Power:
         - PP: 5->10
     - Diamond Storm:
         - Accuracy: 95->100
         - PP: 5->10
-    - Mighty Cleave
+    - Mighty Cleave:
         - PP: 5->10
-    - Rock Blast
+    - Rock Blast:
         - Accuracy: 90->100
     - Rock Slide:
         - Power: 75->80
         - Accuracy: 90->100
-    - Rock Throw
+    - Rock Throw:
         - Accuracy: 90->100
-    - Rock Tomb
+    - Rock Tomb:
         - Accuracy: 95->100
     - Rock Wrecker:
         - Accuracy: 90->100
         - PP: 5->10
-    - Stone Axe
+    - Stone Axe:
         - Accuracy: 90->100
 - Bug:
-    - Pin Missile
+    - Pin Missile:
         - Accuracy: 95->100
     - Signal Beam:
         - Power: 75->80
-    - Silver Wind
+    - Silver Wind:
         - PP: 5->10
     - Twineedle:
         - Power: 25->50
 - Ghost:
     - Astonish:
         - Power: 30->40
-    - Astral Barrage
+    - Astral Barrage:
         - PP: 5->10
-    - Moongeist Beam
+    - Moongeist Beam:
         - PP: 5->10
-    - Ominous Wind
+    - Ominous Wind:
         - PP: 5->10
-    - Poltergeist
+    - Poltergeist:
         - Accuracy: 90->100
-    - Shadow Force
+    - Shadow Force:
         - PP: 5->10
 - Electric:
     - Bolt Strike:
         - Accuracy: 85->100
         - PP: 5->10
-    - Electro Drift
+    - Electro Drift:
         - PP: 5->10
-    - Fusion Bolt
+    - Electro Web:
+        - Accuracy: 95->100
+    - Fusion Bolt:
         - PP: 5->10
-    - Thunderclap
+    - Thunderclap:
         - PP: 5->10
-    - Thunder Cage
+    - Thunder Cage:
         - Accuracy: 90->100
-    - Thunder Fang
+    - Thunder Fang:
         - Accuracy: 95->100
     - Volt Tackle:
         - Paralyze chance: 10%->30%
@@ -696,18 +706,18 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Zap Cannon:
         - Power: 120->150
 - Fire:
-    - Blaze Kick
+    - Blaze Kick:
         - Accuracy: 90->100
     - Blue Flare:
         - Accuracy: 85->100
         - PP: 5->10
-    - Burning Jealousy
+    - Burning Jealousy:
         - PP: 5->10
-    - Fiery Dance
+    - Fiery Dance:
         - Effect: 50%->100%
-    - Fire Fang
+    - Fire Fang:
         - Accuracy: 95->100
-    - Fusion Flare
+    - Fusion Flare:
         - PP: 5->10
     - Inferno:
         - Power: 100->150
@@ -715,20 +725,20 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Power: 100->120
         - Accuracy: 75->100
         - PP: 5->10
-    - Pyro Ball
+    - Pyro Ball:
         - Accuracy: 90->100
         - PP: 5->10
     - Sacred Fire:
         - Accuracy: 95->100
         - PP: 5->10
-    - Searing Shot
+    - Searing Shot:
         - PP: 5->10
-    - V-create
+    - V-create:
         - Accuracy: 95->100
 - Water:
-    - Aqua Tail
+    - Aqua Tail:
         - Accuracy: 90->100
-    - Crabhammer
+    - Crabhammer:
         - Accuracy: 90->100
     - Octazooka:
         - Power: 65->90
@@ -737,25 +747,25 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Origin Pulse:
         - Power: 110->120
         - Accuracy: 85->100
-    - Razor Shell
+    - Razor Shell:
         - Accuracy: 95->100
-    - Steam Eruption
+    - Steam Eruption:
         - Accuracy: 95->100
         - PP: 5->10
-    - Surf
+    - Surf:
         - Target: Both foes and ally->both foes
-    - Surging Strikes
+    - Surging Strikes:
         - PP: 5->10
-    - Triple Dive
+    - Triple Dive:
         - Accuracy: 95->100
     - Water Shuriken:
         - Power: 15->25
 - Grass:
-    - Chloroblast
+    - Chloroblast:
         - Accuracy: 95->100
-    - Leaf Tornado
+    - Leaf Tornado:
         - Accuracy: 90->100
-    - Matcha Gotcha
+    - Matcha Gotcha:
         - Accuracy: 90->100
     - Needle Arm:
         - Power: 60->75
@@ -766,14 +776,14 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Seed Flare:
         - Accuracy: 85->100
         - PP: 5->10
-    - Syrup Bomb
+    - Syrup Bomb:
         - Accuracy: 85->100
 - Psychic:
-    - Eerie Spell
+    - Eerie Spell:
         - PP: 5->10
-    - Hyperspace Hole
+    - Hyperspace Hole:
         - PP: 5->10
-    - Kinesis
+    - Kinesis:
         - Accuracy: 80->100
     - Luster Purge/Mist Ball:
         - PP: 5->10
@@ -781,22 +791,22 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Mystical Power:
         - Power: 70->80
         - Accuracy: 90->100
-    - Photon Geyser
+    - Photon Geyser:
         - PP: 5->10
     - Psycho Boost:
         - Accuracy: 90->100
         - PP: 5->10
-    - Psyshield Bash
+    - Psyshield Bash:
         - Accuracy: 90->100
-    - Zen Headbutt
+    - Zen Headbutt:
         - Accuracy: 90->100
 - Ice:
-    - Blizzard
+    - Blizzard:
         - PP: 5->10
     - Freeze Shock:
         - Accuracy: 90->100
         - PP: 5->10
-    - Glacial Lance
+    - Glacial Lance:
         - PP: 5->10
     - Glaciate:
         - Power: 65->80
@@ -804,10 +814,12 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Ice Burn:
         - Accuracy: 90->100
         - PP: 5->10
-    - Ice Fang
+    - Ice Fang:
         - Accuracy: 95->100
-    - Icicle Crash
+    - Icicle Crash:
         - Accuracy: 90->100
+    - Icy Wind:
+        - Accuracy: 95->100
     - Mountain Gale:
         - Accuracy: 85->100
         - PP: 5->10
@@ -815,15 +827,15 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Clanging Scales:
         - PP: 5->10
         - No longer lowers user's Defense
-    - Dual Chop
+    - Dual Chop:
         - Accuracy: 90->100
-    - Dynamax Cannon
+    - Dynamax Cannon:
         - PP: 5->10
-    - Eternabeam
+    - Eternabeam:
         - Accuracy: 90->100
-    - Fickle Beam
+    - Fickle Beam:
         - PP: 5->10
-    - Glaive Rush
+    - Glaive Rush:
         - PP: 5->10
     - Roar of Time:
         - Accuracy: 90->100
@@ -832,46 +844,50 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Accuracy: 95->100
         - PP: 5->10
 - Dark:
-    - Ceaseless Edge
+    - Ceaseless Edge:
         - Accuracy: 90->100
-    - Hyperspace Fury
+    - Hyperspace Fury:
         - PP: 5->10
         - No longer lowers user's Defense
-    - Lash Out
+    - Lash Out:
         - PP: 5->10
-    - Night Daze
+    - Night Daze:
         - Accuracy: 95->100
-    - Wicked Blow
+    - Snarl:
+        - Accuracy: 95->100
+    - Wicked Blow:
         - PP: 5->10
 - Steel:
-    - Behemoth Bash
+    - Behemoth Bash:
         - PP: 5->10
-    - Behemoth Blade
+    - Behemoth Blade:
         - PP: 5->10
-    - Doom Desire
+    - Doom Desire:
         - PP: 5->10
-    - Double Iron Bash
+    - Double Iron Bash:
         - PP: 5->10
-    - Gear Grind
+    - Gear Grind:
         - Accuracy: 85->100
-    - Gigaton Hammer
+    - Gigaton Hammer:
         - PP: 5->10
-    - Gyro Ball
+    - Gyro Ball:
         - PP: 5->10
-    - Make It Rain
+    - Make It Rain:
         - PP: 5->10
         - No longer lowers user's Special Attack
-    - Metal Claw
+    - Metal Claw:
         - Accuracy: 95->100
     - Meteor Mash:
         - Power: 90->100
         - Accuracy: 90->100
-    - Spin Out
+    - Mirror Shot:
+        - Accuracy: 85->100
+    - Spin Out:
         - PP: 5->10
         - No longer lowers user's Speed
-    - Steel Wing
+    - Steel Wing:
         - Accuracy: 90->100
-    - Sunsteel Strike
+    - Sunsteel Strike:
         - PP: 5->10
 - Fairy:
     - Disarming Voice:
@@ -882,13 +898,13 @@ There are some mechanics, moves and abilities that are missing and being develop
         - PP: 5->10
     - Misty Explosion:
         - Power: 100->150
-    - Play Rough
+    - Play Rough:
         - Accuracy: 90->100
     - Springtide Storm:
         - Power: 100->120
         - Accuracy: 80->100
         - PP: 5->10
-    - Strange Steam
+    - Strange Steam:
         - Accuracy: 95->100
 
 ### Pokémon:
@@ -1668,6 +1684,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Torracat:
     - Evolution: 34->36
+
+- Incineroar:
+    - Learns Incinerate by level up
 
 - Popplio:
     - Evolution: 17->16

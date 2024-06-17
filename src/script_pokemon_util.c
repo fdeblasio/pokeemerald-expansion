@@ -375,11 +375,11 @@ static u32 ScriptGiveMonParameterized(u8 side, u8 slot, u16 species, u8 level, u
     // moves
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
-        if (moves[0] == MOVE_NONE)
-            break;
-        if (moves[i] >= MOVES_COUNT)
-            continue;
-        SetMonMoveSlot(&mon, moves[i], i);
+        if (moves[0] == MOVE_NONE || moves[i] >= MOVES_COUNT){
+            SetMonMoveSlot(&mon, GetMonData(&mon, MON_DATA_MOVE1 + i), i);
+        } else {
+            SetMonMoveSlot(&mon, moves[i], i);
+        }
     }
 
     // ability

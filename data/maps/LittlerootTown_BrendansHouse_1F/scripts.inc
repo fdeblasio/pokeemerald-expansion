@@ -48,8 +48,8 @@ LittlerootTown_BrendansHouse_1F_EventScript_MoveMomToDoor::
 	setobjectmovementtype LOCALID_MOM, MOVEMENT_TYPE_FACE_UP
 	return
 
-@ Many of the below scripts have no gender check because they assume youre in the correct house
-@ The below SS Ticket script uses Mays house state by accident(?), but theyre both set identically after the intro
+@ Many of the below scripts have no gender check because they assume you're in the correct house
+@ The below SS Ticket script uses May's house state by accident(?), but theyre both set identically after the intro
 LittlerootTown_BrendansHouse_1F_OnFrame:
 	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 3, LittlerootTown_BrendansHouse_1F_EventScript_EnterHouseMovingIn
 	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 5, LittlerootTown_BrendansHouse_1F_EventScript_GoUpstairsToSetClock
@@ -296,10 +296,7 @@ PlayersHouse_1F_Text_MoversPokemonGoSetClock:
 	.string "of moving us in and cleaning up after.\l"
 	.string "This is so convenient!\p"
 	.string "{PLAYER}, your room is upstairs.\n"
-	.string "Go check it out, dear!\p"
-	.string "Dad bought you a new clock to mark\n"
-	.string "our move here.\l"
-	.string "Don't forget to set it!$"
+	.string "Go check it out, dear!$"
 
 PlayersHouse_1F_Text_ArentYouInterestedInRoom:
 	.string "Mom: Well, {PLAYER}?\p"
@@ -322,6 +319,14 @@ PlayersHouse_1F_Text_ItsOverWeMissedHim:
 	.string "Mom: Oh… It's over.\p"
 	.string "I think Dad was on, but we missed him.\n"
 	.string "Too bad.$"
+
+PlayersHouse_1F_Text_HowDoYouLikeYourRoom:
+	.string "Mom: {PLAYER}, how do you like your\n"
+	.string "new room?\p"
+	.string "Good! Everything's put away neatly!\p"
+	.string "They finished moving everything\n"
+	.string "down here, too.\p"
+	.string "Pokémon movers are so convenient!$"
 
 PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor:
 	.string "Oh, yes.\n"

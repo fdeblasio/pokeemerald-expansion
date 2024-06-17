@@ -509,277 +509,387 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Dream Eater
 
 ### Moves:
-- Double Slap:
-    - Now hits exactly twice
-    - Power: 15->30
-    - Accuracy: 85->100
-- Twineedle:
-    - Power: 25->50
-- Needle Arm:
-    - Now a punching move
-    - Power: 60->75
-- Dizzy Punch:
-    - Power: 70->75
-- Constrict:
-    - Power: 10->30
-    - Chance to reduce speed: 10%->30%
-- Volt Tackle:
-    - Paralyze chance: 10%->30%
-    - No longer causes recoil
-- Comet Punch:
-    - Power: 18->20
-    - Accuracy: 85->100
-- Fury Swipes:
-    - Power: 18->20
-    - Accuracy: 80->100
-- Fury Attack:
-    - Power: 15->20
-    - Accuracy: 85->100
-- Barrage:
-    - Power: 15->20
-    - Accuracy: 85->100
-- Arm Thrust:
-    - Power: 15->20
-- Present:
-    - Accuracy: 90->100
-    - Now heals allies similar to Pollen Puff
-    - Damage odds:
-        - 40% 40->20% 60
-        - 30% 80->40% 80
-        - 10% 120->20% 120
-- Razor Leaf:
-    - Power: 55->60
-    - Accuracy: 95->100
-- Rock Slide:
-    - Power: 75->80
-    - Accuracy: 90->100
-- Air Slash:
-    - Power: 75->80
-    - Accuracy: 95->100
-- Signal Beam:
-    - Power: 75->80
-- Astonish:
-    - Power: 30->40
-- Surf
-    - Target: Both foes and ally->both foes
-- Zap Cannon:
-    - Power: 120->150
-- Dynamic Punch:
-    - Power: 100->150
-- Inferno:
-    - Power: 100->150
-- Octazooka:
-    - Power: 65->90
-    - Accuracy: 85->100
-    - Effect: 50%->100%
-- Aeroblast:
-    - Accuracy: 95->100
-    - PP: 5->10
-- Sacred Fire:
-    - Accuracy: 95->100
-    - PP: 5->10
-- Meteor Mash:
-    - Power: 90->100
-    - Accuracy: 90->100
-- Origin Pulse:
-    - Power: 110->120
-    - Accuracy: 85->100
-- Luster Purge/Mist Ball:
-    - PP: 5->10
-    - Effect: 50%->100%
-- Psycho Boost:
-    - Accuracy: 90->100
-    - PP: 5->10
-- Rock Wrecker:
-    - Accuracy: 90->100
-    - PP: 5->10
-- Chatter:
-    - Power: 65->80
-- Aura Sphere:
-    - Power: 80->90
-- Mystical Power:
-    - Power: 70->80
-    - Accuracy: 90->100
-- Spacial Rend:
-    - Accuracy: 95->100
-    - PP: 5->10
-- Roar of Time:
-    - Accuracy: 90->100
-    - PP: 5->10
-- Magma Storm:
-    - Power: 100->120
-    - Accuracy: 75->100
-    - PP: 5->10
-- Seed Flare:
-    - Accuracy: 85->100
-    - PP: 5->10
-- Head Charge:
-    - No longer causes recoil
-- Fiery Dance
-    - Effect: 50%->100%
-- Bleakwind Storm/Wildbolt Storm/Sandsear Storm/Springtide Storm:
-    - Power: 100->120
-    - Accuracy: 80->100
-    - PP: 5->10 (Springtide Storm)
-- Bolt Strike/Blue Flare:
-    - Accuracy: 85->100
-    - PP: 5->10
-- Freeze Shock/Ice Burn:
-    - Accuracy: 90->100
-    - PP: 5->10
-- Glaciate:
-    - Power: 65->80
-    - Accuracy: 95->100
-- Relic Song:
-    - Power: 75->100
-- Disarming Voice:
-    - Power: 40->60
-    - PP: 15->20
-- Water Shuriken:
-    - Power: 15->25
-- Mountain Gale:
-    - Accuracy: 85->100
-    - PP: 5->10
-- Hyperspace Fury
-    - PP: 5->10
-    - No longer lowers user's Defense
-- Diamond Storm:
-    - Accuracy: 95->100
-    - PP: 5->10
-- Clanging Scales:
-    - PP: 5->10
-    - No longer lowers user's Defense
-- Fleur Cannon:
-    - Accuracy: 90->100
-    - PP: 5->10
-- Misty Explosion:
-    - Power: 100->150
-- Spin Out
-    - PP: 5->10
-    - No longer lowers user's Speed
-- Make It Rain
-    - PP: 5->10
-    - No longer lowers user's Special Attack
-
-**Some other moves (especially signature moves) were given 10 PP as opposed to 5:**
-- Blizzard
-- Ancient Power
-- Silver Wind
-- Ominous Wind
-- Doom Desire
-- Gyro Ball
-- Shadow Force
-- Searing Shot
-- Fusion Bolt
-- Fusion Flare
-- Techno Blast
-- Hyperspace Hole
-- Steam Eruption
-- Sunsteel Strike
-- Moongeist Beam
-- Photon Geyser
-- Double Iron Bash
-- Pyro Ball
-- Eerie Spell
-- Behemoth Blade
-- Behemoth Bash
-- Dynamax Cannon
-- Burning Jealousy
-- Lash Out
-- Wicked Blow
-- Surging Strikes
-- Glacial Lance
-- Astral Barrage
-- Gigaton Hammer
-- Hyper Drill
-- Glaive Rush
-- Collision Course
-- Electro Drift
-- Blood Moon
-- Fickle Beam
-- Thunderclap
-- Mighty Cleave
-- Tera Starstorm
-- Malignant Chain
-
-**Many other moves (especially signature moves) were given 100% accuracy:**
+**Many moves (especially signature moves) were given 100% accuracy and/or 10 PP as opposed to 5:**
 - Normal:
-    - Cut
-    - Hyper Fang
+    - Barrage:
+        - Power: 15->20
+        - Accuracy: 85->100
+    - Blood Moon
+        - PP: 5->10
+    - Chatter:
+        - Power: 65->80
+    - Comet Punch:
+        - Power: 18->20
+        - Accuracy: 85->100
+    - Constrict:
+        - Power: 10->30
+        - Chance to reduce speed: 10%->30%
     - Crush Claw
-    - Take Down
-    - Slam
-    - Mega Punch
+        - Accuracy: 95->100
+    - Cut
+        - Accuracy: 95->100
+    - Dizzy Punch:
+        - Power: 70->75
+    - Double Slap:
+        - Now hits exactly twice
+        - Power: 15->30
+        - Accuracy: 85->100
     - Egg Bomb
+        - Accuracy: 75->100
+    - Fury Attack:
+        - Power: 15->20
+        - Accuracy: 85->100
+    - Fury Swipes:
+        - Power: 18->20
+        - Accuracy: 80->100
+    - Head Charge:
+        - No longer causes recoil
+    - Hyper Drill
+        - PP: 5->10
+    - Hyper Fang
+        - Accuracy: 90->100
+    - Mega Punch
+        - Accuracy: 85->100
+    - Present:
+        - Accuracy: 90->100
+        - Now heals allies similar to Pollen Puff
+        - Damage odds:
+            - 40% 40->20% 60
+            - 30% 80->40% 80
+            - 10% 120->20% 120
+    - Relic Song:
+        - Power: 75->100
+    - Rock Climb
+        - Accuracy: 85->100
+    - Slam
+        - Accuracy: 75->100
     - Tail Slap
+        - Accuracy: 85->100
+    - Take Down
+        - Accuracy: 85->100
+    - Techno Blast
+        - PP: 5->10
+    - Tera Starstorm
+        - PP: 5->10
 - Fighting:
-    - Rolling Kick
-    - Submission
-    - Sky Uppercut
-    - Flying Press
-- Flying:
+    - Arm Thrust:
+        - Power: 15->20
+    - Aura Sphere:
+        - Power: 80->90
+    - Collision Course
+        - PP: 5->10
+    - Dynamic Punch:
+        - Power: 100->150
     - Fly
-    - Sky Attack
+        - Accuracy: 95->100
+    - Flying Press
+        - Accuracy: 95->100
+    - Rolling Kick
+        - Accuracy: 85->100
+    - Sky Uppercut
+        - Accuracy: 90->100
+    - Submission
+        - Accuracy: 80->100
+- Flying:
+    - Aeroblast:
+        - Accuracy: 95->100
+        - PP: 5->10
     - Air Cutter
-    - Air Slash
+        - Accuracy: 95->100
+    - Air Slash:
+        - Power: 75->80
+        - Accuracy: 95->100
+    - Bleakwind Storm:
+        - Power: 100->120
+        - Accuracy: 80->100
     - Dual Wingbeat
+        - Accuracy: 90->100
+    - Peck:
+        - Power: 35->40
+    - Sky Attack
+        - Accuracy: 90->100
 - Poison:
     - Belch
+        - Accuracy: 90->100
+    - Malignant Chain
+        - PP: 5->10
 - Ground:
     - Bonemerang
+        - Accuracy: 90->100
     - Bone Club
+        - Accuracy: 85->100
     - Bone Rush
+        - Accuracy: 90->100
     - Drill Run
+        - Accuracy: 95->100
     - High Horsepower
+        - Accuracy: 95->100
     - Precipice Blades
+        - Accuracy: 85->100
+    - Sandsear Storm:
+        - Power: 100->120
+        - Accuracy: 80->100
 - Rock:
-    - Rock Throw
-    - Rock Tomb
+    - Ancient Power
+        - PP: 5->10
+    - Diamond Storm:
+        - Accuracy: 95->100
+        - PP: 5->10
+    - Mighty Cleave
+        - PP: 5->10
     - Rock Blast
+        - Accuracy: 90->100
+    - Rock Slide:
+        - Power: 75->80
+        - Accuracy: 90->100
+    - Rock Throw
+        - Accuracy: 90->100
+    - Rock Tomb
+        - Accuracy: 95->100
+    - Rock Wrecker:
+        - Accuracy: 90->100
+        - PP: 5->10
     - Stone Axe
+        - Accuracy: 90->100
 - Bug:
     - Pin Missile
+        - Accuracy: 95->100
+    - Signal Beam:
+        - Power: 75->80
+    - Silver Wind
+        - PP: 5->10
+    - Twineedle:
+        - Power: 25->50
 - Ghost:
+    - Astonish:
+        - Power: 30->40
+    - Astral Barrage
+        - PP: 5->10
+    - Moongeist Beam
+        - PP: 5->10
+    - Ominous Wind
+        - PP: 5->10
     - Poltergeist
+        - Accuracy: 90->100
+    - Shadow Force
+        - PP: 5->10
 - Electric:
-    - Thunder Fang
+    - Bolt Strike:
+        - Accuracy: 85->100
+        - PP: 5->10
+    - Electro Drift
+        - PP: 5->10
+    - Fusion Bolt
+        - PP: 5->10
+    - Thunderclap
+        - PP: 5->10
     - Thunder Cage
+        - Accuracy: 90->100
+    - Thunder Fang
+        - Accuracy: 95->100
+    - Volt Tackle:
+        - Paralyze chance: 10%->30%
+        - No longer causes recoil
+    - Wildbolt Storm:
+        - Power: 100->120
+        - Accuracy: 80->100
+    - Zap Cannon:
+        - Power: 120->150
 - Fire:
     - Blaze Kick
+        - Accuracy: 90->100
+    - Blue Flare:
+        - Accuracy: 85->100
+        - PP: 5->10
+    - Burning Jealousy
+        - PP: 5->10
+    - Fiery Dance
+        - Effect: 50%->100%
     - Fire Fang
-    - V-Create
+        - Accuracy: 95->100
+    - Fusion Flare
+        - PP: 5->10
+    - Inferno:
+        - Power: 100->150
+    - Magma Storm:
+        - Power: 100->120
+        - Accuracy: 75->100
+        - PP: 5->10
     - Pyro Ball
+        - Accuracy: 90->100
+        - PP: 5->10
+    - Sacred Fire:
+        - Accuracy: 95->100
+        - PP: 5->10
+    - Searing Shot
+        - PP: 5->10
+    - V-create
+        - Accuracy: 95->100
 - Water:
-    - Razor Shell
     - Aqua Tail
+        - Accuracy: 90->100
     - Crabhammer
+        - Accuracy: 90->100
+    - Octazooka:
+        - Power: 65->90
+        - Accuracy: 85->100
+        - Effect: 50%->100%
+    - Origin Pulse:
+        - Power: 110->120
+        - Accuracy: 85->100
+    - Razor Shell
+        - Accuracy: 95->100
     - Steam Eruption
+        - Accuracy: 95->100
+        - PP: 5->10
+    - Surf
+        - Target: Both foes and ally->both foes
+    - Surging Strikes
+        - PP: 5->10
     - Triple Dive
+        - Accuracy: 95->100
+    - Water Shuriken:
+        - Power: 15->25
 - Grass:
-    - Leaf Tornado
     - Chloroblast
-    - Syrup Bomb
+        - Accuracy: 95->100
+    - Leaf Tornado
+        - Accuracy: 90->100
     - Matcha Gotcha
+        - Accuracy: 90->100
+    - Needle Arm:
+        - Power: 60->75
+        - Now a punching move
+    - Razor Leaf:
+        - Power: 55->60
+        - Accuracy: 95->100
+    - Seed Flare:
+        - Accuracy: 85->100
+        - PP: 5->10
+    - Syrup Bomb
+        - Accuracy: 85->100
 - Psychic:
+    - Eerie Spell
+        - PP: 5->10
+    - Hyperspace Hole
+        - PP: 5->10
     - Kinesis
-    - Zen Headbutt
+        - Accuracy: 80->100
+    - Luster Purge/Mist Ball:
+        - PP: 5->10
+        - Effect: 50%->100%
+    - Mystical Power:
+        - Power: 70->80
+        - Accuracy: 90->100
+    - Photon Geyser
+        - PP: 5->10
+    - Psycho Boost:
+        - Accuracy: 90->100
+        - PP: 5->10
     - Psyshield Bash
+        - Accuracy: 90->100
+    - Zen Headbutt
+        - Accuracy: 90->100
 - Ice:
+    - Blizzard
+        - PP: 5->10
+    - Freeze Shock:
+        - Accuracy: 90->100
+        - PP: 5->10
+    - Glacial Lance
+        - PP: 5->10
+    - Glaciate:
+        - Power: 65->80
+        - Accuracy: 95->100
+    - Ice Burn:
+        - Accuracy: 90->100
+        - PP: 5->10
     - Ice Fang
+        - Accuracy: 95->100
     - Icicle Crash
+        - Accuracy: 90->100
+    - Mountain Gale:
+        - Accuracy: 85->100
+        - PP: 5->10
 - Dragon:
+    - Clanging Scales:
+        - PP: 5->10
+        - No longer lowers user's Defense
     - Dual Chop
+        - Accuracy: 90->100
+    - Dynamax Cannon
+        - PP: 5->10
     - Eternabeam
+        - Accuracy: 90->100
+    - Fickle Beam
+        - PP: 5->10
+    - Glaive Rush
+        - PP: 5->10
+    - Roar of Time:
+        - Accuracy: 90->100
+        - PP: 5->10
+    - Spacial Rend:
+        - Accuracy: 95->100
+        - PP: 5->10
 - Dark:
-    - Night Daze
     - Ceaseless Edge
+        - Accuracy: 90->100
+    - Hyperspace Fury
+        - PP: 5->10
+        - No longer lowers user's Defense
+    - Lash Out
+        - PP: 5->10
+    - Night Daze
+        - Accuracy: 95->100
+    - Wicked Blow
+        - PP: 5->10
 - Steel:
-    - Metal Claw
-    - Steel Wing
+    - Behemoth Bash
+        - PP: 5->10
+    - Behemoth Blade
+        - PP: 5->10
+    - Doom Desire
+        - PP: 5->10
+    - Double Iron Bash
+        - PP: 5->10
     - Gear Grind
+        - Accuracy: 85->100
+    - Gigaton Hammer
+        - PP: 5->10
+    - Gyro Ball
+        - PP: 5->10
+    - Make It Rain
+        - PP: 5->10
+        - No longer lowers user's Special Attack
+    - Metal Claw
+        - Accuracy: 95->100
+    - Meteor Mash:
+        - Power: 90->100
+        - Accuracy: 90->100
+    - Spin Out
+        - PP: 5->10
+        - No longer lowers user's Speed
+    - Steel Wing
+        - Accuracy: 90->100
+    - Sunsteel Strike
+        - PP: 5->10
 - Fairy:
+    - Disarming Voice:
+        - Power: 40->60
+        - PP: 15->20
+    - Fleur Cannon:
+        - Accuracy: 90->100
+        - PP: 5->10
+    - Misty Explosion:
+        - Power: 100->150
     - Play Rough
+        - Accuracy: 90->100
+    - Springtide Storm:
+        - Power: 100->120
+        - Accuracy: 80->100
+        - PP: 5->10
     - Strange Steam
+        - Accuracy: 95->100
 
 ### Pokémon:
 - Pokémon have all their moves from their movesets from Gen 7 onwards, at the most recent levels
@@ -1133,7 +1243,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Wurmple:
     - Learns Bug Bite at level 7 instead of 15
-    - Evolution is based on time of day
+    - Evolution is now based on time of day
 
 - Beautifly:
     - Learns Air Slash by TM
@@ -1146,6 +1256,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Swellow:
     - Learns Acrobatics by TM
+
+- Surskit/Masquerain:
+    - Learn Struggle Bug by level up
 
 - Breloom:
     - Held items:

@@ -1174,6 +1174,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Type: Normal/Fairy->Water/Fairy
     - Gender Ratio: 25/75->50/50
     - Catch rate: 150->255
+    - Learns Aqua Jet by level up
 
 - Marill:
     - HP: 70->75
@@ -1181,10 +1182,12 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Def: 50->60
     - SpA: 20->40
     - SpD: 50->60
+    - Learns Aqua Jet by level up
 
 - Azumarill:
     - Atk: 50->60
     - Spe: 50->60
+    - Learns Aqua Jet by level up
 
 - Sunflora:
     - Learns Morning Sun by level up
@@ -1245,17 +1248,43 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Lugia (postgame):
     - Learns Brave Bird by level up
 
+- Treecko:
+    - Atk: 45->65
+    - SpA: 65->45
+
+- Grovyle:
+    - Atk: 65->85
+    - SpA: 85->65
+    - Hidden Ability: Unburden->Sharpness
+    - Learns Razor Leaf upon evolving
+
 - Sceptile:
     - Atk: 85->105
     - SpA: 105->85
+    - Hidden Ability: Unburden->Sharpness
     - Learns Dual Chop upon evolving
+    - Learns Razor Leaf by level up
 
 - Mega Sceptile:
     - Atk: 110->145
     - SpA: 145->110
+    - Ability: Lightning Rod->Sharpness
+
+- Combusken:
+    - Learns Flame Wheel upon evolving
 
 - Blaziken:
+    - Learns Flame Wheel by level up
     - Learns Drain Punch by TM
+
+- Marshtomp:
+    - Hidden Ability: Damp->Swift Swim
+    - Learns Aqua Jet upon evolving
+
+- Swampert:
+    - Hidden Ability: Damp->Swift Swim
+    - Learns Aqua Tail upon evolving
+    - Learns Aqua Jet by level up
 
 - Wurmple:
     - Learns Bug Bite at level 7 instead of 15
@@ -1267,11 +1296,28 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Dustox:
     - Sp. Def: 90->100 to match Beautifly's stat increase
 
-- Nuzleaf/Shiftry:
-    - Learn Grass Whistle by level up
+- Seedot:
+    - Learns Bullet Seed and Seed Bomb by level up
+
+- Nuzleaf:
+    - Learns Pursuit upon evolving
+    - Learns Bullet Seed, Seed Bomb, and Grass Whistle by level up
+
+- Shiftry:
+    - Learns Night Slash upon evolving
+    - Learn Bullet Seed, Seed Bomb, Grass Whistle, and Pursuit by level up
 
 - Swellow:
     - Learns Acrobatics by TM
+
+- Wingull/Pelipper:
+    - Learn Gust by level up
+
+Ralts/Kirlia/Gardevoir:
+    - Due to Disarming Voice's boost in power, Fairy Wind is learned in its place at level 1 instead. Disarming Voice is now learned at level 17.
+
+Gallade:
+    - Learns Fairy Wind by level up
 
 - Surskit/Masquerain:
     - Learn Struggle Bug by level up

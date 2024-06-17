@@ -382,8 +382,8 @@ PlayersHouse_1F_Text_ReportFromPetalburgGym:
 
 PlayersHouse_1F_Text_TheresAMovieOnTV:
 	.string "There is a movie on TV.\p"
-	.string "Two men are dancing on a big piano\n"
-	.string "keyboard.\p"
+	.string "Two cops are talking about peacocks\n"
+	.string "flying.\p"
 	.string "Better get going!$"
 
 PlayersHouse_1F_Text_RunningShoesManual:

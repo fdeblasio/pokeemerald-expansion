@@ -91,6 +91,12 @@ upcoming
 - Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma. Mega Evo for Houndoom but unsure for Ninetales)
     - Could swap out Huntail for Mega Gyarados and only it and Houndoom get items
 
+### Possible Move Updates
+- Infestation: 20->35
+- Parabolic Charge: 65->75
+- Poison Sting: 20->40
+- Poison Fang: 60->65
+
 ### Field Moves
 - Replace Waterfall (and maybe Surf) with an item, similar to Dive
 - Edit moves that work in field

@@ -6,7 +6,6 @@ LittlerootTown_BrendansHouse_2F_MapScripts::
 	.byte 0
 
 LittlerootTown_BrendansHouse_2F_OnTransition:
-	call_if_lt VAR_LITTLEROOT_RIVAL_STATE, 2, LittlerootTown_BrendansHouse_2F_EventScript_CheckSetReadyToMeetBrendan
 	call_if_ge VAR_LITTLEROOT_RIVAL_STATE, 3, LittlerootTown_BrendansHouse_2F_EventScript_CheckShouldUpdateBrendanPos
 	call_if_eq VAR_LITTLEROOT_INTRO_STATE, 4, PlayersHouse_2F_EventScript_BlockStairsUntilClockIsSet
 	call SecretBase_EventScript_SetDecorationFlags
@@ -28,15 +27,6 @@ LittlerootTown_BrendansHouse_2F_EventScript_TryUpdateBrendanPos::
 	return
 
 LittlerootTown_BrendansHouse_2F_EventScript_Ret::
-	return
-
-LittlerootTown_BrendansHouse_2F_EventScript_CheckSetReadyToMeetBrendan::
-	checkplayergender
-	goto_if_eq VAR_RESULT, FEMALE, LittlerootTown_BrendansHouse_2F_EventScript_SetReadyToMeetBrendan
-	return
-
-LittlerootTown_BrendansHouse_2F_EventScript_SetReadyToMeetBrendan::
-	setvar VAR_LITTLEROOT_RIVAL_STATE, 2
 	return
 
 LittlerootTown_BrendansHouse_2F_OnWarp:

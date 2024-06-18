@@ -72,7 +72,7 @@ upcoming
 - Elite Four rematches (wouldn't need to use Match Call, could probably do if statement in scripts.inc)
 - Brendan/May/Steven rematches? (Steven's would be the same team but re-battleable)
 - Trainer customization:
-    - Maybe all Rich Boys/Ladies have shinies (would need to have different Pokémon from each other instead of all having Zigzagoon)
+    - Maybe all Rich Boys have shinies (would need to have different Pokémon from each other instead of all having Zigzagoon)
     - Calvin could have a good Nature/EV
     - Leaders would have optimal Abilities/EVs/IVs/Natures
 - Breeders should have good IVs/Natures/Abilities

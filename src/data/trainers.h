@@ -2744,7 +2744,7 @@
 
 [TRAINER_UNUSED_1] =
 {
-    .trainerName = _("Cindy"),
+    .trainerName = _("Unused"),
     .trainerClass = TRAINER_CLASS_LADY,
     .trainerPic = TRAINER_PIC_LADY,
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
@@ -7498,6 +7498,10 @@
         {
         .lvl = 5,
         .species = SPECIES_ZIGZAGOON,
+        .ability = ABILITY_GLUTTONY,
+        .nature = NATURE_JOLLY,
+        .gender = TRAINER_MON_MALE,
+        .nickname = COMPOUND_STRING("Linus")
         }
     },
 },
@@ -7535,7 +7539,7 @@
     .party = (const struct TrainerMon[]) {
         {
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-        .lvl = 10,
+        .lvl = 11,
         .species = SPECIES_GEODUDE,
         .moves = {MOVE_ROCK_TOMB, MOVE_TACKLE, MOVE_MUD_SPORT, MOVE_NONE}
         }
@@ -7554,12 +7558,12 @@
     .party = (const struct TrainerMon[]) {
         {
         .iv = TRAINER_PARTY_IVS(13, 13, 13, 13, 13, 13),
-        .lvl = 8,
+        .lvl = 9,
         .species = SPECIES_GEODUDE,
         },
         {
         .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
-        .lvl = 8,
+        .lvl = 9,
         .species = SPECIES_ARON,
         }
     },
@@ -7709,9 +7713,13 @@
         .species = SPECIES_TAILLOW,
         },
         {
-        .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
+        .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
         .lvl = 30,
         .species = SPECIES_LINOONE,
+        .ability = ABILITY_GLUTTONY,
+        .nature = NATURE_JOLLY,
+        .gender = TRAINER_MON_MALE,
+        .nickname = COMPOUND_STRING("Linus")
         }
     },
 },
@@ -7732,9 +7740,13 @@
         .species = SPECIES_SWELLOW,
         },
         {
-        .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
+        .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
         .lvl = 35,
         .species = SPECIES_LINOONE,
+        .ability = ABILITY_GLUTTONY,
+        .nature = NATURE_JOLLY,
+        .gender = TRAINER_MON_MALE,
+        .nickname = COMPOUND_STRING("Linus")
         }
     },
 },
@@ -7763,6 +7775,10 @@
         .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
         .lvl = 40,
         .species = SPECIES_LINOONE,
+        .ability = ABILITY_GLUTTONY,
+        .nature = NATURE_JOLLY,
+        .gender = TRAINER_MON_MALE,
+        .nickname = COMPOUND_STRING("Linus")
         }
     },
 },
@@ -7793,9 +7809,15 @@
         .species = SPECIES_SWELLOW,
         },
         {
-        .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
-        .lvl = 45,
+        .ev = TRAINER_PARTY_EVS(1, 63, 0, 63, 0, 0),
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .lvl = 50,
         .species = SPECIES_LINOONE,
+        .ability = ABILITY_GLUTTONY,
+        .nature = NATURE_JOLLY,
+        .gender = TRAINER_MON_MALE,
+        .heldItem = ITEM_FIGY_BERRY,
+        .nickname = COMPOUND_STRING("Linus")
         }
     },
 },
@@ -13529,12 +13551,12 @@
     .party = (const struct TrainerMon[]) {
         {
         .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
-        .lvl = 8,
+        .lvl = 9,
         .species = SPECIES_GEODUDE,
         },
         {
         .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
-        .lvl = 8,
+        .lvl = 9,
         .species = SPECIES_RHYHORN,
         }
     },
@@ -16503,12 +16525,14 @@
         {
         .lvl = 8,
         .species = SPECIES_ABRA,
-        .heldItem = ITEM_NUGGET
+        .heldItem = ITEM_NUGGET,
+        .isShiny = TRUE,
         },
         {
         .lvl = 8,
         .species = SPECIES_POOCHYENA,
-        .heldItem = ITEM_NUGGET
+        .heldItem = ITEM_NUGGET,
+        .isShiny = TRUE,
         }
     },
 },
@@ -16527,12 +16551,12 @@
         {
         .lvl = 8,
         .species = SPECIES_LOTAD,
-        .heldItem = ITEM_NUGGET
+        .heldItem = ITEM_NUGGET,
         },
         {
         .lvl = 8,
         .species = SPECIES_ZIGZAGOON,
-        .heldItem = ITEM_NUGGET
+        .heldItem = ITEM_NUGGET,
         }
     },
 },

@@ -348,7 +348,7 @@
 #define OBJ_EVENT_PAL_TAG_NPC_3_REFLECTION        0x1109
 #define OBJ_EVENT_PAL_TAG_NPC_4_REFLECTION        0x110A
 #define OBJ_EVENT_PAL_TAG_FRANK                   0x110B
-#define OBJ_EVENT_PAL_TAG_UNUSED2                 0x110C
+#define OBJ_EVENT_PAL_TAG_YOUNGSTER               0x110C
 #define OBJ_EVENT_PAL_TAG_TRUCK                   0x110D
 #define OBJ_EVENT_PAL_TAG_VIGOROTH                0x110E
 #define OBJ_EVENT_PAL_TAG_ZIGZAGOON               0x110F

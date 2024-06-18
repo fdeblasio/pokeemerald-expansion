@@ -219,8 +219,8 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "min_level": 2,
-                "max_level": 2,
+                "min_level": 3,
+                "max_level": 3,
                 "species": "WINGULL"
               },
               {
@@ -239,8 +239,8 @@
                 "species": "POOCHYENA"
               },
               {
-                "min_level": 2,
-                "max_level": 2,
+                "min_level": 3,
+                "max_level": 3,
                 "species": "ZIGZAGOON"
               },
               {

@@ -56,6 +56,7 @@ upcoming
 - Implement changing Deoxys forms at Fallarbor or from bag
 
 ### Items
+- Get Exp. Share from Steven instead of from Mr. Stone after
 - Hyper Voice tutor->TM?
 - Temper Flare (with better STAB distribution) could become a TM/tutor
 - Aqua Tail could also become a TM since it now has 100% accuracy

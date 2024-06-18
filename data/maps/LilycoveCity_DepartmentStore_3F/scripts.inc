@@ -74,9 +74,7 @@ LilycoveCity_DepartmentStore_3F_Pokemart_Mints:
 	.2byte ITEM_SASSY_MINT
 	.2byte ITEM_HASTY_MINT
 	.2byte ITEM_NAIVE_MINT
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 LilycoveCity_DepartmentStore_3F_EventScript_ClerkEvo::
 	lock
@@ -166,6 +164,7 @@ LilycoveCity_DepartmentStore_3F_Pokemart_Delibird:
 	.2byte ITEM_ZOOM_LENS
 	.2byte ITEM_METRONOME
 	.2byte ITEM_PUNCHING_GLOVE
+	.2byte ITEM_LOADED_DICE
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_3F_EventScript_TriathleteM::

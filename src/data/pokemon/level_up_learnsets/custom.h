@@ -8752,11 +8752,11 @@ static const struct LevelUpMove sShedinjaLevelUpLearnset[] = {
 
 #if P_FAMILY_WHISMUR
 static const struct LevelUpMove sWhismurLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_DISARMING_VOICE),
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 5, MOVE_ECHOED_VOICE),
     LEVEL_UP_MOVE(10, MOVE_HOWL),
+    LEVEL_UP_MOVE(10, MOVE_DISARMING_VOICE),
     LEVEL_UP_MOVE(15, MOVE_REST),
     LEVEL_UP_MOVE(15, MOVE_SLEEP_TALK),
     LEVEL_UP_MOVE(21, MOVE_STOMP),
@@ -8770,13 +8770,13 @@ static const struct LevelUpMove sWhismurLevelUpLearnset[] = {
 
 static const struct LevelUpMove sLoudredLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_BITE),
-    LEVEL_UP_MOVE( 1, MOVE_DISARMING_VOICE),
     LEVEL_UP_MOVE( 1, MOVE_TEETER_DANCE),
     LEVEL_UP_MOVE( 1, MOVE_DIZZY_PUNCH),
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_ECHOED_VOICE),
     LEVEL_UP_MOVE( 1, MOVE_HOWL),
+    LEVEL_UP_MOVE( 1, MOVE_DISARMING_VOICE),
     LEVEL_UP_MOVE(15, MOVE_REST),
     LEVEL_UP_MOVE(15, MOVE_SLEEP_TALK),
     LEVEL_UP_MOVE(23, MOVE_STOMP),
@@ -8791,7 +8791,6 @@ static const struct LevelUpMove sLoudredLevelUpLearnset[] = {
 static const struct LevelUpMove sExploudLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_HYPER_VOICE),
     LEVEL_UP_MOVE( 0, MOVE_CRUNCH),
-    LEVEL_UP_MOVE( 1, MOVE_DISARMING_VOICE),
     LEVEL_UP_MOVE( 1, MOVE_TEETER_DANCE),
     LEVEL_UP_MOVE( 1, MOVE_DIZZY_PUNCH),
     LEVEL_UP_MOVE( 1, MOVE_BITE),
@@ -8802,6 +8801,7 @@ static const struct LevelUpMove sExploudLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_ECHOED_VOICE),
     LEVEL_UP_MOVE( 1, MOVE_HOWL),
+    LEVEL_UP_MOVE( 1, MOVE_DISARMING_VOICE),
     LEVEL_UP_MOVE(15, MOVE_REST),
     LEVEL_UP_MOVE(15, MOVE_SLEEP_TALK),
     LEVEL_UP_MOVE(23, MOVE_STOMP),

@@ -6139,7 +6139,7 @@
         .lvl = 12,
         .species = SPECIES_LILEEP,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-        .moves = {MOVE_ROCK_TOMB, MOVE_WRAP, MOVE_INGRAIN, MOVE_CONFUSE_RAY},
+        .moves = {MOVE_ROCK_TOMB, MOVE_ASTONISH, MOVE_CONSTRICT, MOVE_ACID},
         .gender = TRAINER_MON_FEMALE,
         },
         {

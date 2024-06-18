@@ -1102,6 +1102,7 @@ static const struct LevelUpMove sWigglytuffLevelUpLearnset[] = {
 
 #if P_FAMILY_ZUBAT
 static const struct LevelUpMove sZubatLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_GUST),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 1, MOVE_SUPERSONIC),
     LEVEL_UP_MOVE( 5, MOVE_ASTONISH),
@@ -1122,6 +1123,7 @@ static const struct LevelUpMove sZubatLevelUpLearnset[] = {
 
 static const struct LevelUpMove sGolbatLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCREECH),
+    LEVEL_UP_MOVE( 1, MOVE_GUST),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 1, MOVE_SUPERSONIC),
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
@@ -1146,6 +1148,7 @@ static const struct LevelUpMove sCrobatLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TAILWIND),
     LEVEL_UP_MOVE( 1, MOVE_TOXIC),
     LEVEL_UP_MOVE( 1, MOVE_SCREECH),
+    LEVEL_UP_MOVE( 1, MOVE_GUST),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 1, MOVE_SUPERSONIC),
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
@@ -8686,9 +8689,10 @@ static const struct LevelUpMove sSlakingLevelUpLearnset[] = {
 static const struct LevelUpMove sNincadaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
+    LEVEL_UP_MOVE( 1, MOVE_MUD_SLAP),
     LEVEL_UP_MOVE( 5, MOVE_HARDEN),
     LEVEL_UP_MOVE(10, MOVE_FALSE_SWIPE),
-    LEVEL_UP_MOVE(15, MOVE_MUD_SLAP),
+    LEVEL_UP_MOVE(15, MOVE_MUD_SHOT),
     LEVEL_UP_MOVE(21, MOVE_ABSORB),
     LEVEL_UP_MOVE(25, MOVE_METAL_CLAW),
     LEVEL_UP_MOVE(29, MOVE_BIDE),
@@ -8713,6 +8717,7 @@ static const struct LevelUpMove sNinjaskLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
+    LEVEL_UP_MOVE( 1, MOVE_MUD_SHOT),
     LEVEL_UP_MOVE(15, MOVE_AGILITY),
     LEVEL_UP_MOVE(23, MOVE_ABSORB),
     LEVEL_UP_MOVE(29, MOVE_BUG_BITE),
@@ -8736,6 +8741,7 @@ static const struct LevelUpMove sShedinjaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
+    LEVEL_UP_MOVE( 1, MOVE_MUD_SHOT),
     LEVEL_UP_MOVE(15, MOVE_CONFUSE_RAY),
     LEVEL_UP_MOVE(23, MOVE_ABSORB),
     LEVEL_UP_MOVE(29, MOVE_SHADOW_SNEAK),

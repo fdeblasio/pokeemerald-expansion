@@ -200,6 +200,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - [Sapphire Jester for making the Soot Sack usuable](https://www.pokecommunity.com/showpost.php?p=10222284&postcount=178)
 
 ## Known Bugs
+- Due to the increased walking speed, followers will sometimes clip through tiles
 - When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
 - AI_FLAG_ACE_POKEMON doesn't seem to work
 - HGSS Pokédex shows evolutions multiple times (for this branch, only effects stone/location evos)
@@ -976,8 +977,15 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Type: Water->Water/Psychic
     - Learns Power Gem upon evolving
 
+- Zubat:
+    - Learns Gust by level up
+
 - Golbat:
     - Can also evolve at level 33
+    - Learns Gust by level up
+
+- Crobat:
+    - Learns Gust by level up
 
 - Kadabra/Alakazam:
     - Held item: Twisted Spoon: 5%->100%
@@ -1332,8 +1340,11 @@ Gallade:
 - Slaking:
     - Learns Giga Impact by level up
 
-- Nincada/Ninjask/Shedinja:
-    - Learn Leech Life by level up
+- Nincada:
+    - Learns Mud Slap at level 1 and now learns Mud Shot in its place at level 15
+
+- Ninjask/Shedinja:
+    - Learn Leech Life and Mud Shot by level up
 
 - Whismur:
     - Learn Disarming Voice by level up

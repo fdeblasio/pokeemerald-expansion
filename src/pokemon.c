@@ -1998,8 +1998,9 @@ void GiveBoxMonInitialMoveset(struct BoxPokemon *boxMon) //Credit: AsparagusEdua
     }
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
+        u8 maxPP = CalculateMaxPP(moves[i]);
         SetBoxMonData(boxMon, MON_DATA_MOVE1 + i, &moves[i]);
-        SetBoxMonData(boxMon, MON_DATA_PP1 + i, &gMovesInfo[moves[i]].pp);
+        SetBoxMonData(boxMon, MON_DATA_PP1 + i, &maxPP);
     }
 }
 

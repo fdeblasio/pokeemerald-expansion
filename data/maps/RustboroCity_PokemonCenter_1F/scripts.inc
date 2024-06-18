@@ -27,7 +27,7 @@ RustboroCity_PokemonCenter_1F_EventScript_Boy::
 	end
 
 RustboroCity_PokemonCenter_1F_EventScript_Girl::
-	msgbox RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor, MSGBOX_NPC
+	msgbox RustboroCity_PokemonCenter_1F_Text_TMCutNextDoor, MSGBOX_NPC
 	end
 
 RustboroCity_PokemonCenter_1F_Text_PokemonHavePersonalities:
@@ -42,8 +42,8 @@ RustboroCity_PokemonCenter_1F_Text_MaleAndFemalePokemon:
 	.string "But no one seems to have any idea how\n"
 	.string "they're different.$"
 
-RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor:
-	.string "The man next door gave me an HM!\p"
+RustboroCity_PokemonCenter_1F_Text_TMCutNextDoor:
+	.string "The man next door gave me an TM!\p"
 	.string "I used it to teach my Pokémon how to\n"
 	.string "Cut down skinny trees.$"
 

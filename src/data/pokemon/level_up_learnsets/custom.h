@@ -8695,6 +8695,7 @@ static const struct LevelUpMove sNincadaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 5, MOVE_HARDEN),
     LEVEL_UP_MOVE(10, MOVE_FALSE_SWIPE),
+    LEVEL_UP_MOVE(15, MOVE_BUG_BITE),
     LEVEL_UP_MOVE(15, MOVE_MUD_SHOT),
     LEVEL_UP_MOVE(21, MOVE_ABSORB),
     LEVEL_UP_MOVE(25, MOVE_METAL_CLAW),
@@ -8735,6 +8736,7 @@ static const struct LevelUpMove sNinjaskLevelUpLearnset[] = {
 
 static const struct LevelUpMove sShedinjaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_BIDE),
+    LEVEL_UP_MOVE( 1, MOVE_BUG_BITE),
     LEVEL_UP_MOVE( 1, MOVE_MUD_SHOT),
     LEVEL_UP_MOVE( 1, MOVE_SHADOW_CLAW),
     LEVEL_UP_MOVE( 1, MOVE_GRUDGE),

@@ -161,7 +161,7 @@ SlateportCity_Pokemart_EnergyGuru:
 SlateportCity_EventScript_EffortRibbonWoman::
 	lock
 	faceplayer
-	bufferleadmonspeciesname STR_VAR_1
+	bufferpartymonnick STR_VAR_1 0
 	msgbox SlateportCity_Text_OhYourPokemon, MSGBOX_DEFAULT
 	specialvar VAR_RESULT, LeadMonHasEffortRibbon
 	call_if_eq VAR_RESULT, TRUE, SlateportCity_EventScript_MonHasEffortRibbon
@@ -964,7 +964,7 @@ SlateportCity_Text_OhYourPokemon:
 	.string "Your {STR_VAR_1}…$"
 
 SlateportCity_Text_PleaseGiveItThisEffortRibbon:
-	.string "Went for it stupendously!\p"
+	.string "…went for it stupendously!\p"
 	.string "As its reward, please give it this\n"
 	.string "Effort Ribbon.$"
 
@@ -976,8 +976,8 @@ SlateportCity_Text_PutEffortRibbonOnMon:
 	.string "on {STR_VAR_1}.$"
 
 SlateportCity_Text_GoForItLittleHarder:
-	.string "You have to go for it a little harder.\p"
-	.string "If you do, I'll give your Pokémon\n"
+	.string "…will have to go for it a little harder.\p"
+	.string "If it does, I'll give {STR_VAR_1}\n"
 	.string "something nice.$"
 
 SlateportCity_Text_EffortRibbonLooksGoodOnIt:

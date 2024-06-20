@@ -112,7 +112,7 @@ upcoming
 
 ### Overworld
 - Add accurate overworld sprites (https://github.com/pret/pokeemerald/wiki/Adding-new-event-object-or-overworld-sprites, https://www.pokecommunity.com/showthread.php?t=407124)
-    - Overworld sprites to match trainer sprites (for example, giving girl tubers a yellow tube, Rangers red clothes, Dragon Tamers capes and correct hair color)
+    - Overworld sprites to match trainer sprites (for example, Rangers red clothes or Dragon Tamers capes and correct hair color)
 - Add FRLG trainer sprites/overworld sprites
     - Sprites are added but still need to be implemented. Overworld sprites may have duplicates for Pokémon and may need palettes
 - Improve Pokémon overworld sprites

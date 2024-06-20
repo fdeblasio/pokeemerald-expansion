@@ -297,8 +297,8 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Roxanne         |12, 12, 15||
 |Brawly          |16, 16, 19||
 |Rival 110       |18, 18, 20||
-|Wally Mauville  |16                    |18, 20|
-|Wattson         |20, 22, 22, 24||
+|Wally Mauville  |16                    |20, 22|
+|Wattson         |20, 22, 22, 24        |22, 24, 24, 26|
 |Tabitha         |18, 20, 22, 22        |23, 23, 25|
 |Maxie           |24, 24, 25            |25, 25, 25, 27|
 |Flannery        |24, 24, 26, 29        |25, 27, 27, 29|

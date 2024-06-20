@@ -80,9 +80,8 @@ upcoming
     - Leaders would have optimal Abilities/EVs/IVs/Natures
 - Breeders should have good IVs/Natures/Abilities
 - Triathlete would be Speed-focused (maybe endurance/HP too)
-- Winstrates (including Vito) should have EVs due to the mom mentioning using the Macho Brace
-    - Give Winstrates rematches
-    - Vito can use TMs
+- Give Winstrates rematches?
+- Vito can use TMs
 - Tori and Tia should have Spindas that aren't identical
 - Fix Flannery's rematches being male (due to double battles (which the rematches are) having the personality set before the gender. Can rearrange steps or manually set gender); also her Torkoal or Ninetales should have Drought
 - Norman can have Toxic Orb Guts Zangoose

@@ -71,6 +71,9 @@ upcoming
 - Go back and make rematch levels stronger/more consistent (first see if they can be locked behind badges)
 - Check if double battles work with only one Pokemon, then remove scripts that require two Pokemon for double battles (like Twins and Couples)
 - Elite Four rematches (wouldn't need to use Match Call, could probably do if statement in scripts.inc)
+- Update Elite Four palettes
+    - battle_transitions/*_bg.pal to better match types
+    - stadium/palette3-7.pal to better match ypes
 - Brendan/May/Steven rematches? (Steven's would be the same team but re-battleable)
 - Trainer customization:
     - Maybe all Rich Boys have shinies (would need to have different Pokémon from each other instead of all having Zigzagoon)
@@ -90,12 +93,6 @@ upcoming
 - Maxie/Archie use Mega Evolutions
 - Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma. Mega Evo for Houndoom but unsure for Ninetales)
     - Could swap out Huntail for Mega Gyarados and only it and Houndoom get items
-
-### Possible Move Updates
-- Infestation: 20->35
-- Parabolic Charge: 65->75
-- Poison Sting: 20->40
-- Poison Fang: 60->65
 
 ### Field Moves
 - Replace Waterfall (and maybe Surf) with an item, similar to Dive
@@ -144,13 +141,18 @@ upcoming
     - Don't have both Open Level and Level 50 since the Pokémon are rentals anyways?
 - Updated Battle Pyramid wild randomizer
 
+### Possible Move Updates
+- Infestation: 20->35
+- Parabolic Charge: 65->75
+- Poison Sting: 20->40
+- Poison Fang: 60->65
+
 ### Other
+- Prevent Slateport access before Brawly/Steven
 - Railroad the post-Mossdeep water routes
 - Might need to increase MAX_LEVEL_UP_MOVES and/or MAX_RELEARNER_MOVES
 - Update palettes?:
     - Pokédex (and HGSS Pokédex)
-    - battle_transitions/*_bg.pal to better match E4 types
-    - stadium/palette3-7.pal to better match E4 types
     - look in graphics/ for more
     - Trainer card
 - Type effectiveness in battle: https://www.pokecommunity.com/showpost.php?p=10167016&postcount=83

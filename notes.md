@@ -69,7 +69,6 @@ upcoming
 - Readjust wild/trainer levels so that parties aren't overpowered
 - Have each rematch only be possible after certain badges? Would make rematch levels more consistent
 - Go back and make rematch levels stronger/more consistent (first see if they can be locked behind badges)
-- Check if double battles work with only one Pokemon, then remove scripts that require two Pokemon for double battles (like Twins and Couples)
 - Elite Four rematches (wouldn't need to use Match Call, could probably do if statement in scripts.inc)
 - Update Elite Four palettes
     - battle_transitions/*_bg.pal to better match types

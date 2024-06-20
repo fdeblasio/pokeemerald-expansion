@@ -16619,6 +16619,7 @@ static const u16 sNinjaskTeachableLearnset[] = {
     MOVE_SILVER_WIND,
     MOVE_SLEEP_TALK,
     MOVE_SOLAR_BEAM,
+    MOVE_STEEL_WING,
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,

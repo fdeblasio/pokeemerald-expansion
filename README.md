@@ -1285,14 +1285,19 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Flame Wheel by level up
     - Learns Drain Punch by TM
 
+- Mudkip:
+    - Learns Rock Smash later to avoid breaking the game
+
 - Marshtomp:
     - Hidden Ability: Damp->Swift Swim
     - Learns Aqua Jet upon evolving
+    - Learns Rock Smash, Surf, and Earthquake later to avoid breaking the game
 
 - Swampert:
     - Hidden Ability: Damp->Swift Swim
     - Learns Aqua Tail upon evolving
     - Learns Aqua Jet by level up
+    - Learns Rock Smash, Surf, and Earthquake later to avoid breaking the game
 
 - Wurmple:
     - Learns Bug Bite at level 7 instead of 15

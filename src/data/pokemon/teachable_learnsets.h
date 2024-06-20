@@ -16310,6 +16310,7 @@ static const u16 sMasquerainTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SOLAR_BEAM,
     MOVE_SUNNY_DAY,
+    MOVE_STEEL_WING,
     MOVE_SURF,
     MOVE_SWAGGER,
     MOVE_SWIFT,

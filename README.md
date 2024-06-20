@@ -1347,9 +1347,14 @@ Gallade:
 
 - Nincada:
     - Learns Mud Slap at level 1 and now learns Mud Shot in its place at level 15
+    - Learns Bug Bite by level up
 
-- Ninjask/Shedinja:
-    - Learn Leech Life and Mud Shot by level up
+- Ninjask:
+    - Learns Mud Shot and Leech Life by level up
+    - Learns Steel Wing by TM
+
+- Shedinja:
+    - Learns Mud Shot, Bug Bite, and Lunge by level up
 
 - Whismur:
     - Learn Disarming Voice by level up

@@ -1308,8 +1308,8 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Bullet Seed and Seed Bomb by level up
 
 - Nuzleaf:
-    - Learns Pursuit upon evolving
-    - Learns Bullet Seed, Seed Bomb, and Grass Whistle by level up
+    - Learns Pursuit and Grass Whistle upon evolving
+    - Learns Bullet Seed and Seed Bomb by level up
 
 - Shiftry:
     - Learns Night Slash upon evolving

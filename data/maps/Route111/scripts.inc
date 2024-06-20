@@ -712,7 +712,7 @@ Route111_Text_RootFossilDisappeared:
 Route111_Text_MauvilleUncleToldMeToTakeRockSmash:
 	.string "Our uncle in Mauville told us to not\n"
 	.string "let anyone through who hasn't beaten\l"
-	.string "the new Gym Leader!$"
+	.string "the Gym Leader!$"
 
 Route111_Text_TrainerHillSign:
 	.string "{RIGHT_ARROW} Trainer Hill Entrance\p"

@@ -1860,26 +1860,31 @@
         {
         .lvl = 44,
         .species = SPECIES_SWALOT,
+        .ev = TRAINER_PARTY_EVS(1, 63, 0, 63, 0, 0),
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         },
         {
         .lvl = 44,
         .species = SPECIES_DODRIO,
+        .ev = TRAINER_PARTY_EVS(1, 63, 0, 63, 0, 0),
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         },
         {
         .lvl = 44,
         .species = SPECIES_ALAKAZAM,
+        .ev = TRAINER_PARTY_EVS(1, 0, 0, 63, 63, 0),
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         },
         {
         .lvl = 44,
         .species = SPECIES_ELECTRODE,
+        .ev = TRAINER_PARTY_EVS(1, 0, 0, 63, 63, 0),
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         },
         {
         .lvl = 44,
         .species = SPECIES_SHIFTRY,
+        .ev = TRAINER_PARTY_EVS(1, 63, 0, 63, 0, 0),
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         }
     },
@@ -4300,13 +4305,13 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 19,
+        .lvl = 20,
         .species = SPECIES_ELECTRIKE,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         .moves = {MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_QUICK_ATTACK, MOVE_LEER}
         },
         {
-        .lvl = 19,
+        .lvl = 20,
         .species = SPECIES_VOLTORB,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         .moves = {MOVE_SHOCK_WAVE, MOVE_CHARGE, MOVE_SCREECH, MOVE_ROLLOUT}
@@ -4363,12 +4368,12 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 19,
+        .lvl = 20,
         .species = SPECIES_MAGNEMITE,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         },
         {
-        .lvl = 19,
+        .lvl = 20,
         .species = SPECIES_ELECTRIKE,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         }
@@ -6206,26 +6211,26 @@
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 20,
+        .lvl = 22,
         .species = SPECIES_MAGNEMITE,
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
         .moves = {MOVE_SHOCK_WAVE, MOVE_SONIC_BOOM, MOVE_MAGNET_BOMB, MOVE_THUNDER_WAVE},
         },
         {
-        .lvl = 22,
+        .lvl = 24,
         .species = SPECIES_MINUN,
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
         .moves = {MOVE_SHOCK_WAVE, MOVE_SWIFT, MOVE_SKILL_SWAP, MOVE_NUZZLE},
         },
         {
-        .lvl = 22,
+        .lvl = 24,
         .species = SPECIES_PLUSLE,
         .iv = TRAINER_PARTY_IVS(26, 26, 26, 26, 26, 26),
         .moves = {MOVE_SHOCK_WAVE, MOVE_SWIFT, MOVE_SKILL_SWAP, MOVE_THUNDER_WAVE},
         },
         {
-        .lvl = 24,
-        .species = SPECIES_ELECTRIKE,
+        .lvl = 26,
+        .species = SPECIES_MANECTRIC,
         .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
         .moves = {MOVE_SHOCK_WAVE, MOVE_QUICK_ATTACK, MOVE_BITE, MOVE_THUNDER_WAVE},
         .heldItem = ITEM_SITRUS_BERRY,
@@ -6917,14 +6922,16 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 17,
+        .lvl = 19,
         .species = SPECIES_TAILLOW,
+        .ev = TRAINER_PARTY_EVS(1, 63, 0, 63, 0, 0),
         .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
         .heldItem = ITEM_ORAN_BERRY
         },
         {
-        .lvl = 17,
+        .lvl = 19,
         .species = SPECIES_ZIGZAGOON,
+        .ev = TRAINER_PARTY_EVS(1, 63, 0, 63, 0, 0),
         .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
         .heldItem = ITEM_ORAN_BERRY
         }
@@ -7081,8 +7088,9 @@
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 19,
+        .lvl = 20,
         .species = SPECIES_ROSELIA,
+        .ev = TRAINER_PARTY_EVS(1, 0, 0, 63, 63, 0),
         .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
         .heldItem = ITEM_ORAN_BERRY
         }
@@ -7366,8 +7374,9 @@
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 20,
+        .lvl = 21,
         .species = SPECIES_MEDITITE,
+        .ev = TRAINER_PARTY_EVS(1, 63, 0, 63, 0, 0),
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
         .moves = {MOVE_HIGH_JUMP_KICK, MOVE_MEDITATE, MOVE_PSYBEAM, MOVE_DETECT}
         }
@@ -7601,13 +7610,13 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 19,
+        .lvl = 20,
         .species = SPECIES_PICHU,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_SHOCK_WAVE, MOVE_NASTY_PLOT, MOVE_NUZZLE, MOVE_SWEET_KISS}
         },
         {
-        .lvl = 19,
+        .lvl = 20,
         .species = SPECIES_ELECTRIKE,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_SHOCK_WAVE, MOVE_QUICK_ATTACK, MOVE_THUNDER_WAVE, MOVE_HOWL}
@@ -14265,17 +14274,20 @@
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 18,
-        .species = SPECIES_MARILL,
+        .species = SPECIES_NUMEL,
+        .ev = TRAINER_PARTY_EVS(1, 0, 0, 63, 63, 0),
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         },
         {
         .lvl = 18,
         .species = SPECIES_SHROOMISH,
+        .ev = TRAINER_PARTY_EVS(1, 63, 0, 63, 0, 0),
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         },
         {
         .lvl = 18,
-        .species = SPECIES_NUMEL,
+        .species = SPECIES_GOLDEEN,
+        .ev = TRAINER_PARTY_EVS(1, 63, 0, 63, 0, 0),
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         }
     },
@@ -15306,13 +15318,13 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 19,
+        .lvl = 20,
         .species = SPECIES_MINUN,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         .moves = {MOVE_SHOCK_WAVE, MOVE_SWIFT, MOVE_NUZZLE, MOVE_ENCORE}
         },
         {
-        .lvl = 19,
+        .lvl = 20,
         .species = SPECIES_PLUSLE,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         .moves = {MOVE_SHOCK_WAVE, MOVE_SWIFT, MOVE_NUZZLE, MOVE_SKILL_SWAP}
@@ -15469,12 +15481,12 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 18,
+        .lvl = 20,
         .species = SPECIES_BUDEW,
         .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
         },
         {
-        .lvl = 20,
+        .lvl = 22,
         .species = SPECIES_KIRLIA,
         .ability = ABILITY_TRACE,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -19693,13 +19705,13 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 19,
+        .lvl = 20,
         .species = SPECIES_CHINCHOU,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         .moves = {MOVE_SHOCK_WAVE, MOVE_BUBBLE_BEAM, MOVE_THUNDER_WAVE, MOVE_CONFUSE_RAY}
         },
         {
-        .lvl = 19,
+        .lvl = 20,
         .species = SPECIES_MAGNEMITE,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         .moves = {MOVE_SHOCK_WAVE, MOVE_MAGNET_BOMB, MOVE_THUNDER_WAVE, MOVE_SUPERSONIC}

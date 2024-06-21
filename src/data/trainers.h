@@ -16150,10 +16150,16 @@
         {
         .lvl = 23,
         .species = SPECIES_SPINDA,
+        .ability = ABILITY_TANGLED_FEET,
+        .nature = NATURE_ADAMANT,
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 23,
         .species = SPECIES_SPINDA,
+        .ability = ABILITY_OWN_TEMPO,
+        .nature = NATURE_MODEST,
+        .gender = TRAINER_MON_FEMALE,
         }
     },
 },

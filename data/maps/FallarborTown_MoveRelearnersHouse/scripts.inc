@@ -14,4 +14,4 @@ FallarborTown_MoveRelearnersHouse_EventScript_MoveRelearner::
 FallarborTown_MoveRelearnersHouse_Text_ImTheMoveTutor:
 	.string "I know all the moves that Pokémon\n"
 	.string "learn--every one of them--and I used\l"
-	.string " to teach Pokémon those moves.$"
+	.string "to teach Pokémon those moves.$"

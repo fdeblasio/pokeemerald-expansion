@@ -75,6 +75,7 @@ upcoming
     - stadium/palette3-7.pal to better match ypes
 - Brendan/May/Steven rematches? (Steven's would be the same team but re-battleable)
 - Trainer customization:
+    - Rematches should have consistent values (gender, IVs (unless maxed), etc.)
     - Maybe all Rich Boys have shinies (would need to have different Pokémon from each other instead of all having Zigzagoon)
     - Calvin could have a good Nature/EV
     - Leaders would have optimal Abilities/EVs/IVs/Natures

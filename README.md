@@ -200,7 +200,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - [Sapphire Jester for making the Soot Sack usuable](https://www.pokecommunity.com/showpost.php?p=10222284&postcount=178)
 
 ## Known Bugs
-- Due to the increased walking speed, followers will sometimes clip through tiles
+- Due to the increased walking speed, followers will sometimes clip through tiles, especially after hopping off a ledge
 - When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
 - AI_FLAG_ACE_POKEMON doesn't seem to work
 - HGSS Pokédex shows evolutions multiple times (for this branch, only effects stone/location evos)
@@ -226,6 +226,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Some trainers on Routes 104 and 117 go back to their original locations
 - Gym Leaders use more Hoenn Pokémon
 - Gym Leaders and Magma/Aqua Admins/Leaders no longer have underleveled evolutions
+- Team Magma are more focused on Ground types than Fire types to avoid overlap with Flannery
 - Pokémon have a more even encounter distribution
 - Tate and Liza give out Psychic instead of Calm Mind
 - Cut, Fly, Strength, Flash, Rock Smash, and Dive can now be forgotten
@@ -299,8 +300,8 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Rival 110       |18, 18, 20||
 |Wally Mauville  |16                    |20, 22|
 |Wattson         |20, 22, 22, 24        |22, 24, 24, 26|
-|Tabitha         |18, 20, 22, 22        |23, 23, 25|
-|Maxie           |24, 24, 25            |25, 25, 25, 27|
+|Tabitha         |18, 20, 22, 22        |26, 26, 28|
+|Maxie           |24, 24, 25            |28, 28, 28, 30|
 |Flannery        |24, 24, 26, 29        |25, 27, 27, 29|
 |Norman          |27, 27, 29, 31        |28, 30, 30, 32|
 |Shelly          |28, 28                |31, 31, 33|
@@ -1400,6 +1401,7 @@ Gallade:
 
 - Roselia/Roserade:
     - Gender Ratio: 50/50->75/25
+    - Learn Venoshock by level up
     - Held items:
         - Poison Barb: 5%->50%
         - Absorb Bulb: 0%->5%

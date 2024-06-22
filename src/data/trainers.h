@@ -6306,26 +6306,26 @@
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 31,
+        .lvl = 32,
         .species = SPECIES_LINOONE,
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
         .moves = {MOVE_FACADE, MOVE_SLASH, MOVE_PLAY_ROUGH, MOVE_HONE_CLAWS},
         },
         {
-        .lvl = 33,
+        .lvl = 34,
         .species = SPECIES_ZANGOOSE,
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
         .moves = {MOVE_FACADE, MOVE_CRUSH_CLAW, MOVE_NIGHT_SLASH, MOVE_HONE_CLAWS},
         },
         {
-        .lvl = 33,
+        .lvl = 34,
         .species = SPECIES_SPINDA,
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
         .moves = {MOVE_FACADE, MOVE_TEETER_DANCE, MOVE_FEINT_ATTACK, MOVE_DIZZY_PUNCH},
         },
         {
-        .lvl = 35,
-        .species = SPECIES_VIGOROTH,
+        .lvl = 36,
+        .species = SPECIES_SLAKING,
         .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
         .moves = {MOVE_FACADE, MOVE_THROAT_CHOP, MOVE_SLACK_OFF, MOVE_FOCUS_ENERGY},
         .heldItem = ITEM_SITRUS_BERRY,

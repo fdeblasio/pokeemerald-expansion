@@ -3167,6 +3167,7 @@
         .lvl = 8,
         .species = SPECIES_ZIGZAGOON,
         .heldItem = ITEM_NUGGET,
+        .gender = TRAINER_MON_MALE,
         .isShiny = TRUE,
         .nickname = COMPOUND_STRING("Mr. Zig")
         }
@@ -3228,6 +3229,7 @@
         {
         .lvl = 30,
         .species = SPECIES_SPOINK,
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_NUGGET,
         .isShiny = TRUE,
         .nickname = COMPOUND_STRING("Mr. Pig")
@@ -3235,6 +3237,7 @@
         {
         .lvl = 30,
         .species = SPECIES_LINOONE,
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_NUGGET,
         .isShiny = TRUE,
         .nickname = COMPOUND_STRING("Mr. Zig")
@@ -3256,6 +3259,7 @@
         {
         .lvl = 33,
         .species = SPECIES_GRUMPIG,
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_NUGGET,
         .isShiny = TRUE,
         .nickname = COMPOUND_STRING("Mr. Pig")
@@ -3263,6 +3267,7 @@
         {
         .lvl = 33,
         .species = SPECIES_LINOONE,
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_NUGGET,
         .isShiny = TRUE,
         .nickname = COMPOUND_STRING("Mr. Zig")
@@ -3284,6 +3289,7 @@
         {
         .lvl = 36,
         .species = SPECIES_GRUMPIG,
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_NUGGET,
         .isShiny = TRUE,
         .nickname = COMPOUND_STRING("Mr. Pig")
@@ -3291,6 +3297,7 @@
         {
         .lvl = 36,
         .species = SPECIES_LINOONE,
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_NUGGET,
         .isShiny = TRUE,
         .nickname = COMPOUND_STRING("Mr. Zig")
@@ -3314,6 +3321,7 @@
         .species = SPECIES_GRUMPIG,
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
         .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_DAZZLING_GLEAM, MOVE_FLASH_CANNON},
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_BIG_NUGGET,
         .isShiny = TRUE,
         .nickname = COMPOUND_STRING("Mr. Pig")
@@ -3323,6 +3331,7 @@
         .species = SPECIES_LINOONE,
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
         .moves = {MOVE_BODY_SLAM, MOVE_PLAY_ROUGH, MOVE_SEED_BOMB, MOVE_HONE_CLAWS},
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_BIG_NUGGET,
         .isShiny = TRUE,
         .nickname = COMPOUND_STRING("Mr. Zig")
@@ -6182,18 +6191,21 @@
         .species = SPECIES_MACHOP,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         .moves = {MOVE_BULK_UP, MOVE_KARATE_CHOP, MOVE_KNOCK_OFF, MOVE_FORESIGHT},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 16,
         .species = SPECIES_MEDITITE,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         .moves = {MOVE_BULK_UP, MOVE_DETECT, MOVE_CONFUSION, MOVE_BIDE},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 19,
         .species = SPECIES_MAKUHITA,
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
         .moves = {MOVE_BULK_UP, MOVE_ARM_THRUST, MOVE_FAKE_OUT, MOVE_WHIRLWIND},
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
         }
     },
@@ -11976,16 +11988,20 @@
         .lvl = 40,
         .species = SPECIES_DONPHAN,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 40,
         .species = SPECIES_MAGCARGO,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 42,
         .species = SPECIES_HOUNDOOM,
+        .ability = ABILITY_FLASH_FIRE,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        .gender = TRAINER_MON_MALE,
         }
     },
 },
@@ -12090,12 +12106,14 @@
         .species = SPECIES_DELCATTY,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_ASSIST, MOVE_CHARM},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 46,
         .species = SPECIES_ALTARIA,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 47,
@@ -12108,6 +12126,7 @@
         .species = SPECIES_ROSERADE,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 49,
@@ -12134,6 +12153,7 @@
         {
         .lvl = 5,
         .species = SPECIES_TREECKO,
+        .gender = TRAINER_MON_MALE,
         }
     },
 },
@@ -12152,16 +12172,19 @@
         .lvl = 18,
         .species = SPECIES_CORPHISH,
         .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 18,
         .species = SPECIES_WHISMUR,
         .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 20,
         .species = SPECIES_GROVYLE,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        .gender = TRAINER_MON_MALE,
         }
     },
 },
@@ -12180,21 +12203,25 @@
         .lvl = 32,
         .species = SPECIES_SLUGMA,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 32,
         .species = SPECIES_CRAWDAUNT,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 32,
         .species = SPECIES_LOUDRED,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 33,
         .species = SPECIES_GROVYLE,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_MALE,
         }
     },
 },
@@ -12212,6 +12239,7 @@
         {
         .lvl = 5,
         .species = SPECIES_TORCHIC,
+        .gender = TRAINER_MON_MALE,
         }
     },
 },
@@ -12230,16 +12258,19 @@
         .lvl = 18,
         .species = SPECIES_SHROOMISH,
         .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 18,
         .species = SPECIES_WHISMUR,
         .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 20,
         .species = SPECIES_COMBUSKEN,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        .gender = TRAINER_MON_MALE,
         }
     },
 },
@@ -12258,21 +12289,25 @@
         .lvl = 32,
         .species = SPECIES_CORPHISH,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 32,
         .species = SPECIES_BRELOOM,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 32,
         .species = SPECIES_LOUDRED,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 33,
         .species = SPECIES_COMBUSKEN,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_MALE,
         }
     },
 },
@@ -12290,6 +12325,7 @@
         {
         .lvl = 5,
         .species = SPECIES_MUDKIP,
+        .gender = TRAINER_MON_MALE,
         }
     },
 },
@@ -12308,16 +12344,19 @@
         .lvl = 18,
         .species = SPECIES_SLUGMA,
         .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 18,
         .species = SPECIES_WHISMUR,
         .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 20,
         .species = SPECIES_MARSHTOMP,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        .gender = TRAINER_MON_MALE,
         }
     },
 },
@@ -12336,21 +12375,25 @@
         .lvl = 32,
         .species = SPECIES_SHROOMISH,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 32,
         .species = SPECIES_MAGCARGO,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 32,
         .species = SPECIES_LOUDRED,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 33,
         .species = SPECIES_MARSHTOMP,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_MALE,
         }
     },
 },
@@ -12368,6 +12411,7 @@
         {
         .lvl = 5,
         .species = SPECIES_TREECKO,
+        .gender = TRAINER_MON_FEMALE,
         }
     },
 },
@@ -12386,16 +12430,19 @@
         .lvl = 18,
         .species = SPECIES_WINGULL,
         .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 18,
         .species = SPECIES_WHISMUR,
         .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 20,
         .species = SPECIES_GROVYLE,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        .gender = TRAINER_MON_FEMALE,
         }
     },
 },
@@ -12414,21 +12461,25 @@
         .lvl = 32,
         .species = SPECIES_VULPIX,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 32,
         .species = SPECIES_PELIPPER,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 32,
         .species = SPECIES_LOUDRED,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 33,
         .species = SPECIES_GROVYLE,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_FEMALE,
         }
     },
 },
@@ -12464,16 +12515,19 @@
         .lvl = 18,
         .species = SPECIES_CACNEA,
         .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 18,
         .species = SPECIES_WHISMUR,
         .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 20,
         .species = SPECIES_COMBUSKEN,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        .gender = TRAINER_MON_FEMALE,
         }
     },
 },
@@ -12492,21 +12546,25 @@
         .lvl = 32,
         .species = SPECIES_WINGULL,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 32,
         .species = SPECIES_CACTURNE,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 32,
         .species = SPECIES_LOUDRED,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 33,
         .species = SPECIES_COMBUSKEN,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_FEMALE,
         }
     },
 },
@@ -12542,16 +12600,19 @@
         .lvl = 18,
         .species = SPECIES_VULPIX,
         .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 18,
         .species = SPECIES_WHISMUR,
         .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 20,
         .species = SPECIES_MARSHTOMP,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        .gender = TRAINER_MON_FEMALE,
         }
     },
 },
@@ -12570,21 +12631,25 @@
         .lvl = 32,
         .species = SPECIES_CACNEA,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 32,
         .species = SPECIES_NINETALES,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 32,
         .species = SPECIES_LOUDRED,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 33,
         .species = SPECIES_MARSHTOMP,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_FEMALE,
         }
     },
 },
@@ -13948,11 +14013,13 @@
         .lvl = 13,
         .species = SPECIES_WHISMUR,
         .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 15,
         .species = SPECIES_TORCHIC,
         .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+        .gender = TRAINER_MON_MALE,
         }
     },
 },
@@ -13971,11 +14038,13 @@
         .lvl = 13,
         .species = SPECIES_WHISMUR,
         .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 15,
         .species = SPECIES_TREECKO,
         .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+        .gender = TRAINER_MON_MALE,
         }
     },
 },
@@ -14050,19 +14119,23 @@
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 23,
+        .lvl = 26,
         .species = SPECIES_PHANPY,
         .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+        .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 23,
+        .lvl = 26,
         .species = SPECIES_SLUGMA,
         .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+        .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 25,
+        .lvl = 28,
         .species = SPECIES_HOUNDOUR,
+        .ability = ABILITY_FLASH_FIRE,
         .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+        .gender = TRAINER_MON_MALE,
         }
     },
 },
@@ -14103,11 +14176,13 @@
         .lvl = 13,
         .species = SPECIES_WHISMUR,
         .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 15,
         .species = SPECIES_MUDKIP,
         .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+        .gender = TRAINER_MON_MALE,
         }
     },
 },
@@ -14126,11 +14201,13 @@
         .lvl = 13,
         .species = SPECIES_WHISMUR,
         .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 15,
         .species = SPECIES_TREECKO,
         .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+        .gender = TRAINER_MON_FEMALE,
         }
     },
 },
@@ -14150,11 +14227,13 @@
         .lvl = 37,
         .species = SPECIES_DONPHAN,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 38,
         .species = SPECIES_SANDSLASH,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 38,
@@ -14164,7 +14243,10 @@
         {
         .lvl = 39,
         .species = SPECIES_CAMERUPT,
+        .ability = ABILITY_SOLID_ROCK,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_MALE,
+        .nickname = COMPOUND_STRING("Humphrey"),
         }
     },
 },
@@ -14181,24 +14263,29 @@
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 25,
+        .lvl = 28,
         .species = SPECIES_PHANPY,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 25,
+        .lvl = 28,
         .species = SPECIES_SANDSHREW,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 25,
+        .lvl = 28,
         .species = SPECIES_BALTOY,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         },
         {
-        .lvl = 27,
+        .lvl = 30,
         .species = SPECIES_NUMEL,
+        .ability = ABILITY_SIMPLE,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_MALE,
+        .nickname = COMPOUND_STRING("Humphrey"),
         }
     },
 },
@@ -15484,12 +15571,14 @@
         .lvl = 20,
         .species = SPECIES_BUDEW,
         .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 22,
         .species = SPECIES_KIRLIA,
         .ability = ABILITY_TRACE,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .gender = TRAINER_MON_MALE,
         .nickname = COMPOUND_STRING("Ralph"),
         }
     },
@@ -15511,12 +15600,14 @@
         .species = SPECIES_DELCATTY,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_ASSIST, MOVE_CHARM},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 60,
         .species = SPECIES_ALTARIA,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 63,
@@ -15529,6 +15620,7 @@
         .species = SPECIES_ROSERADE,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 65,
@@ -15558,12 +15650,14 @@
         .species = SPECIES_DELCATTY,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_ASSIST, MOVE_CHARM},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 65,
         .species = SPECIES_ALTARIA,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 68,
@@ -15576,6 +15670,7 @@
         .species = SPECIES_ROSERADE,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 70,
@@ -15605,12 +15700,14 @@
         .species = SPECIES_DELCATTY,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_ASSIST, MOVE_CHARM},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 70,
         .species = SPECIES_ALTARIA,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 73,
@@ -15623,6 +15720,7 @@
         .species = SPECIES_ROSERADE,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 75,
@@ -15652,18 +15750,21 @@
         .species = SPECIES_GARDEVOIR,
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
         .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_MYSTICAL_FIRE, MOVE_CALM_MIND},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 75,
         .species = SPECIES_DELCATTY,
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
         .moves = {MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_ASSIST, MOVE_CHARM},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 75,
         .species = SPECIES_ALTARIA,
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
         .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 78,
@@ -15676,6 +15777,7 @@
         .species = SPECIES_ROSERADE,
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
         .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 80,
@@ -15703,26 +15805,31 @@
         .lvl = 35,
         .species = SPECIES_VIBRAVA,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 35,
         .species = SPECIES_MAGCARGO,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 35,
         .species = SPECIES_CRAWDAUNT,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 36,
         .species = SPECIES_LOUDRED,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 37,
         .species = SPECIES_SCEPTILE,
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
+        .gender = TRAINER_MON_MALE,
         }
     },
 },
@@ -15741,26 +15848,31 @@
         .lvl = 35,
         .species = SPECIES_VIBRAVA,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 35,
         .species = SPECIES_CRAWDAUNT,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 35,
         .species = SPECIES_BRELOOM,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 36,
         .species = SPECIES_LOUDRED,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 37,
         .species = SPECIES_BLAZIKEN,
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
+        .gender = TRAINER_MON_MALE,
         }
     },
 },
@@ -15779,26 +15891,31 @@
         .lvl = 35,
         .species = SPECIES_VIBRAVA,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 35,
         .species = SPECIES_BRELOOM,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 35,
         .species = SPECIES_MAGCARGO,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 36,
         .species = SPECIES_LOUDRED,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 37,
         .species = SPECIES_SWAMPERT,
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
+        .gender = TRAINER_MON_MALE,
         }
     },
 },
@@ -15817,26 +15934,31 @@
         .lvl = 35,
         .species = SPECIES_VIBRAVA,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 35,
         .species = SPECIES_NINETALES,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 35,
         .species = SPECIES_PELIPPER,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 36,
         .species = SPECIES_LOUDRED,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 37,
         .species = SPECIES_SCEPTILE,
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
+        .gender = TRAINER_MON_FEMALE,
         }
     },
 },
@@ -15855,26 +15977,31 @@
         .lvl = 35,
         .species = SPECIES_VIBRAVA,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 35,
         .species = SPECIES_PELIPPER,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 35,
         .species = SPECIES_CACTURNE,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 36,
         .species = SPECIES_LOUDRED,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 37,
         .species = SPECIES_BLAZIKEN,
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
+        .gender = TRAINER_MON_FEMALE,
         }
     },
 },
@@ -15893,26 +16020,31 @@
         .lvl = 35,
         .species = SPECIES_VIBRAVA,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 35,
         .species = SPECIES_CACTURNE,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 35,
         .species = SPECIES_NINETALES,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 36,
         .species = SPECIES_LOUDRED,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 37,
         .species = SPECIES_SWAMPERT,
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
+        .gender = TRAINER_MON_FEMALE,
         }
     },
 },
@@ -17261,16 +17393,20 @@
         .lvl = 36,
         .species = SPECIES_DONPHAN,
         .iv = TRAINER_PARTY_IVS(9, 9, 9, 9, 9, 9),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 37,
         .species = SPECIES_MAGCARGO,
         .iv = TRAINER_PARTY_IVS(9, 9, 9, 9, 9, 9),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 38,
         .species = SPECIES_HOUNDOOM,
+        .ability = ABILITY_FLASH_FIRE,
         .iv = TRAINER_PARTY_IVS(9, 9, 9, 9, 9, 9),
+        .gender = TRAINER_MON_MALE,
         }
     },
 },
@@ -17311,6 +17447,7 @@
         .lvl = 42,
         .species = SPECIES_SANDSLASH,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 43,
@@ -17320,7 +17457,10 @@
         {
         .lvl = 44,
         .species = SPECIES_CAMERUPT,
+        .ability = ABILITY_SOLID_ROCK,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .gender = TRAINER_MON_MALE,
+        .nickname = COMPOUND_STRING("Humphrey"),
         }
     },
 },
@@ -18067,11 +18207,13 @@
         .lvl = 13,
         .species = SPECIES_WHISMUR,
         .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 15,
         .species = SPECIES_TORCHIC,
         .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+        .gender = TRAINER_MON_FEMALE,
         }
     },
 },
@@ -18090,11 +18232,13 @@
         .lvl = 13,
         .species = SPECIES_WHISMUR,
         .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 15,
         .species = SPECIES_MUDKIP,
         .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
+        .gender = TRAINER_MON_FEMALE,
         }
     },
 },
@@ -18344,12 +18488,14 @@
         .species = SPECIES_BRELOOM,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_SEED_BOMB, MOVE_MACH_PUNCH},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 63,
         .species = SPECIES_MACHAMP,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_CROSS_CHOP, MOVE_KNOCK_OFF, MOVE_DUAL_CHOP},
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_BLACK_BELT,
         },
         {
@@ -18357,6 +18503,7 @@
         .species = SPECIES_MEDICHAM,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_HIGH_JUMP_KICK, MOVE_ZEN_HEADBUTT, MOVE_DETECT},
+        .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_MUSCLE_BAND,
         },
         {
@@ -18364,6 +18511,7 @@
         .species = SPECIES_HARIYAMA,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_BELLY_DRUM, MOVE_FAKE_OUT},
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
         }
     },
@@ -18385,18 +18533,21 @@
         .species = SPECIES_BLAZIKEN,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_SKY_UPPERCUT, MOVE_BLAZE_KICK, MOVE_MIRROR_MOVE},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 65,
         .species = SPECIES_BRELOOM,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_SEED_BOMB, MOVE_MACH_PUNCH},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 68,
         .species = SPECIES_MACHAMP,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_CROSS_CHOP, MOVE_KNOCK_OFF, MOVE_DUAL_CHOP},
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_BLACK_BELT,
         },
         {
@@ -18404,6 +18555,7 @@
         .species = SPECIES_MEDICHAM,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_HIGH_JUMP_KICK, MOVE_ZEN_HEADBUTT, MOVE_DETECT},
+        .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_MUSCLE_BAND,
         },
         {
@@ -18411,6 +18563,7 @@
         .species = SPECIES_HARIYAMA,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_BELLY_DRUM, MOVE_FAKE_OUT},
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
         }
     },
@@ -18432,18 +18585,21 @@
         .species = SPECIES_BLAZIKEN,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_SKY_UPPERCUT, MOVE_BLAZE_KICK, MOVE_MIRROR_MOVE},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 70,
         .species = SPECIES_BRELOOM,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_SEED_BOMB, MOVE_MACH_PUNCH},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 73,
         .species = SPECIES_MACHAMP,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_CROSS_CHOP, MOVE_KNOCK_OFF, MOVE_DUAL_CHOP},
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_BLACK_BELT,
         },
         {
@@ -18451,6 +18607,7 @@
         .species = SPECIES_MEDICHAM,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_HIGH_JUMP_KICK, MOVE_ZEN_HEADBUTT, MOVE_DETECT},
+        .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_MUSCLE_BAND,
         },
         {
@@ -18458,6 +18615,7 @@
         .species = SPECIES_HARIYAMA,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_BELLY_DRUM, MOVE_FAKE_OUT},
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
         }
     },
@@ -18485,18 +18643,21 @@
         .species = SPECIES_BLAZIKEN,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_SKY_UPPERCUT, MOVE_BLAZE_KICK, MOVE_MIRROR_MOVE},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 75,
         .species = SPECIES_BRELOOM,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_SEED_BOMB, MOVE_MACH_PUNCH},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 78,
         .species = SPECIES_MACHAMP,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_CROSS_CHOP, MOVE_KNOCK_OFF, MOVE_DUAL_CHOP},
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_BLACK_BELT,
         },
         {
@@ -18504,6 +18665,7 @@
         .species = SPECIES_MEDICHAM,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_HIGH_JUMP_KICK, MOVE_ZEN_HEADBUTT, MOVE_DETECT},
+        .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_MUSCLE_BAND,
         },
         {
@@ -18511,6 +18673,7 @@
         .species = SPECIES_HARIYAMA,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_BELLY_DRUM, MOVE_FAKE_OUT},
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
         }
     },
@@ -18538,6 +18701,7 @@
         .species = SPECIES_MINUN,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_THUNDER_WAVE, MOVE_FAKE_TEARS, MOVE_NASTY_PLOT},
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_MAGNET,
         },
         {
@@ -18545,6 +18709,7 @@
         .species = SPECIES_PLUSLE,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_SKILL_SWAP, MOVE_CHARM, MOVE_NASTY_PLOT},
+        .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_MAGNET,
         },
         {
@@ -18552,6 +18717,7 @@
         .species = SPECIES_MANECTRIC,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_SIGNAL_BEAM, MOVE_ICE_FANG},
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
         }
     },
@@ -18571,8 +18737,10 @@
         {
         .lvl = 65,
         .species = SPECIES_LANTURN,
+        .ability = ABILITY_VOLT_ABSORB,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDER, MOVE_HYDRO_PUMP, MOVE_ELECTRIC_TERRAIN, MOVE_RAIN_DANCE},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 65,
@@ -18585,6 +18753,7 @@
         .species = SPECIES_MINUN,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_THUNDER_WAVE, MOVE_FAKE_TEARS, MOVE_NASTY_PLOT},
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_MAGNET,
         },
         {
@@ -18592,6 +18761,7 @@
         .species = SPECIES_PLUSLE,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_SKILL_SWAP, MOVE_CHARM, MOVE_NASTY_PLOT},
+        .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_MAGNET,
         },
         {
@@ -18599,6 +18769,7 @@
         .species = SPECIES_MANECTRIC,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_SIGNAL_BEAM, MOVE_ICE_FANG},
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
         }
     },
@@ -18618,8 +18789,10 @@
         {
         .lvl = 70,
         .species = SPECIES_LANTURN,
+        .ability = ABILITY_VOLT_ABSORB,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDER, MOVE_HYDRO_PUMP, MOVE_ELECTRIC_TERRAIN, MOVE_RAIN_DANCE},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 70,
@@ -18632,6 +18805,7 @@
         .species = SPECIES_MINUN,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_THUNDER_WAVE, MOVE_FAKE_TEARS, MOVE_NASTY_PLOT},
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_MAGNET,
         },
         {
@@ -18639,6 +18813,7 @@
         .species = SPECIES_PLUSLE,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_SKILL_SWAP, MOVE_CHARM, MOVE_NASTY_PLOT},
+        .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_MAGNET,
         },
         {
@@ -18646,6 +18821,7 @@
         .species = SPECIES_MANECTRIC,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_SIGNAL_BEAM, MOVE_ICE_FANG},
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
         }
     },
@@ -18671,8 +18847,10 @@
         {
         .lvl = 75,
         .species = SPECIES_LANTURN,
+        .ability = ABILITY_VOLT_ABSORB,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDER, MOVE_HYDRO_PUMP, MOVE_ELECTRIC_TERRAIN, MOVE_RAIN_DANCE},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 75,
@@ -18685,6 +18863,7 @@
         .species = SPECIES_MINUN,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_THUNDER_WAVE, MOVE_FAKE_TEARS, MOVE_NASTY_PLOT},
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_MAGNET,
         },
         {
@@ -18692,6 +18871,7 @@
         .species = SPECIES_PLUSLE,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_SKILL_SWAP, MOVE_CHARM, MOVE_NASTY_PLOT},
+        .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_MAGNET,
         },
         {
@@ -18699,6 +18879,7 @@
         .species = SPECIES_MANECTRIC,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_SIGNAL_BEAM, MOVE_ICE_FANG},
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_MANECTITE,
         }
     },

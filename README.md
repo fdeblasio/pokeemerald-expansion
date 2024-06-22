@@ -250,6 +250,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - The door to Sealed Chamber and the Regis' inner rooms are now automatically open
 - Made rapids easier to navigate so that only one trip is needed to get all items/battle all trainers (at the cost of looking slightly worse)
 - All moves automatically have their max PP amount
+- The Good Rod is now obtained on the left side of Route 118 instead of the right
 - Sacred Ash now works in battles although it only revives one Pokémon
 - Soul Dew uses its Gen 6 effect
 - Pokémon that evolve with an item at day or night now can evolve at any time
@@ -302,8 +303,8 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Wattson         |20, 22, 22, 24        |22, 24, 24, 26|
 |Tabitha         |18, 20, 22, 22        |26, 26, 28|
 |Maxie           |24, 24, 25            |28, 28, 28, 30|
-|Flannery        |24, 24, 26, 29        |25, 27, 27, 29|
-|Norman          |27, 27, 29, 31        |28, 30, 30, 32|
+|Flannery        |24, 24, 26, 29        |28, 30, 30, 32|
+|Norman          |27, 27, 29, 31        |31, 33, 33, 35|
 |Shelly          |28, 28                |31, 31, 33|
 |Rival 119       |29, 29, 31            |32, 32, 32, 33|
 |Winona          |29, 29, 30, 31, 33    |32, 32, 33, 33, 35|

@@ -83,8 +83,6 @@ upcoming
 - Triathlete would be Speed-focused (maybe endurance/HP too)
 - Give Winstrates rematches?
 - Vito can use TMs
-- Tori and Tia should have Spindas that aren't identical
-- Fix Flannery's rematches being male (due to double battles (which the rematches are) having the personality set before the gender. Can rearrange steps or manually set gender); also her Torkoal or Ninetales should have Drought
 - Norman can have Toxic Orb Guts Zangoose
     - Spinda: Thrash if Own Tempo, Superpower if Contrary. Should be given a cool pattern (maybe 88888888?)
 - Fix Winona's rematches being male; Pelipper gets Drizzle for Hurricane?

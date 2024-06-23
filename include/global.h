@@ -998,7 +998,7 @@ struct SaveBlock1
     /*0x4E8*/ struct ItemSlot bagPocket_Items[BAG_ITEMS_COUNT];
     /*0x5D8*/ struct ItemSlot bagPocket_KeyItems[BAG_KEYITEMS_COUNT];
     /*0x650*/ struct ItemSlot bagPocket_PokeBalls[BAG_POKEBALLS_COUNT];
-    /*0x6B4*/ struct ItemSlot bagPocket_TMHM[BAG_TMHM_COUNT];
+    /*0x6B4*/ struct ItemSlot bagPocket_TM[BAG_TM_COUNT];
     /*0x864*/ struct ItemSlot bagPocket_Berries[BAG_BERRIES_COUNT];
     /*0x91C*/ struct Pokeblock pokeblocks[POKEBLOCKS_COUNT];
 #if FREE_EXTRA_SEEN_FLAGS_SAVEBLOCK1 == FALSE

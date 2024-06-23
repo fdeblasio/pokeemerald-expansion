@@ -421,7 +421,7 @@ gSpecials::
 	def_special DoMirageTowerCeilingCrumble
 	def_special SetMirageTowerVisibility
 	def_special StartPlayerDescendMirageTower
-	def_special BufferTMHMMoveName
+	def_special BufferTMMoveName
 	def_special IsWirelessAdapterConnected
 	def_special TryBecomeLinkLeader
 	def_special TryJoinLinkGroup

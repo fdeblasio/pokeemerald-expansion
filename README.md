@@ -201,6 +201,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 ## Known Bugs
 - Due to the increased walking speed, followers will sometimes clip through tiles, especially after hopping off a ledge
+- Followers will stop following you if you use the naming screen from the party menu. It will start to follow you again if you talk to it
 - When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
 - AI_FLAG_ACE_POKEMON doesn't seem to work
 - HGSS Pokédex shows evolutions multiple times (for this branch, only effects stone/location evos)
@@ -1429,7 +1430,7 @@ Gallade:
     - Spe: 65->75
 
 - Lunatone:
-    - Learns Icy Wind by level up
+    - Learns Icy Wind and Peck by level up
 
 - Solrock:
     - Learns Power Gem and Solar Blade by level up

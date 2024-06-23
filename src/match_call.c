@@ -1720,29 +1720,23 @@ static u8 GetLandEncounterSlot(void)
         return 6;
     else if (rand >= 85 && rand < 90)
         return 7;
-    else if (rand >= 90 && rand < 94)
+    else if (rand >= 90 && rand < 95)
         return 8;
-    else if (rand >= 94 && rand < 98)
-        return 9;
-    else if (rand >= 98 && rand < 99)
-        return 10;
     else
-        return 11;
+        return 9;
 }
 
 static u8 GetWaterEncounterSlot(void)
 {
     int rand = Random() % 100;
-    if (rand < 60)
+    if (rand < 50)
         return 0;
-    else if (rand >= 60 && rand < 90)
+    else if (rand >= 50 && rand < 80)
         return 1;
-    else if (rand >= 90 && rand < 95)
+    else if (rand >= 80 && rand < 95)
         return 2;
-    else if (rand >= 95 && rand < 99)
-        return 3;
     else
-        return 4;
+        return 3;
 }
 
 static void PopulateSpeciesFromTrainerLocation(int matchCallId, u8 *destStr)

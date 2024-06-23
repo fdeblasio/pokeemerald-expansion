@@ -1363,11 +1363,11 @@ Gallade:
     - Learn Disarming Voice by level up
 
 - Loudred:
-    - Received Punk Rock/Amplify as a second ability
+    - Received Amplify (Punk Rock) as a second ability
     - Learns Disarming Voice, Teeter Dance, and Dizzy Punch by level up
 
 - Exploud:
-    - Received Punk Rock/Amplify as a second ability
+    - Received Amplify (Punk Rock) as a second ability
     - Learns Hyper Voice upon evolving
     - Learn Disarming Voice, Teeter Dance, and Dizzy Punch by level up
 
@@ -1411,16 +1411,14 @@ Gallade:
     - Held item: Rawst Berry: 0%->100%
 
 - Spinda:
-    - All stats: 60->70
+    - All stats: 60->80
 
 - Altaria:
     - Learns Air Slash by TM
 
 - Zangoose:
     - Learns Cut by HM
-    - Immunity->Poison Heal
-    - Received Sharpness as a second ability
-    - Toxic Boost->Guts
+    - Abilities: Immunity/Toxic Boost->Poison Heal/Sharpness/Guts
     - Also in Human-Like Egg Group
     - HP: 73->75
     - Atk: 115->125

@@ -66,10 +66,10 @@ static void ItemUseOnFieldCB_Berry(u8);
 static void ItemUseOnFieldCB_WailmerPailBerry(u8);
 static void ItemUseOnFieldCB_WailmerPailSudowoodo(u8);
 static bool8 TryToWaterSudowoodo(void);
-static void BootUpSoundTMHM(u8);
-static void Task_ShowTMHMContainedMessage(u8);
-static void UseTMHMYesNo(u8);
-static void UseTMHM(u8);
+static void BootUpSoundTM(u8);
+static void Task_ShowTMContainedMessage(u8);
+static void UseTMYesNo(u8);
+static void UseTM(u8);
 static void Task_StartUseRepel(u8);
 static void Task_StartUseLure(u8 taskId);
 static void Task_UseRepel(u8);
@@ -98,9 +98,9 @@ static const MainCallback sItemUseCallbacks[] =
 
 static const u8 sClockwiseDirections[] = {DIR_NORTH, DIR_EAST, DIR_SOUTH, DIR_WEST};
 
-static const struct YesNoFuncTable sUseTMHMYesNoFuncTable =
+static const struct YesNoFuncTable sUseTMYesNoFuncTable =
 {
-    .yesFunc = UseTMHM,
+    .yesFunc = UseTM,
     .noFunc = CloseItemMessage,
 };
 
@@ -179,9 +179,9 @@ static void Task_CloseCantUseKeyItemMessage(u8 taskId)
     UnlockPlayerFieldControls();
 }
 
-u8 CheckIfItemIsTMHMOrEvolutionStone(u16 itemId)
+u8 CheckIfItemIsTMOrEvolutionStone(u16 itemId)
 {
-    if (ItemId_GetFieldFunc(itemId) == ItemUseOutOfBattle_TMHM)
+    if (ItemId_GetFieldFunc(itemId) == ItemUseOutOfBattle_TM)
         return 1;
     else if (ItemId_GetFieldFunc(itemId) == ItemUseOutOfBattle_EvolutionStone)
         return 2;
@@ -879,38 +879,35 @@ void ItemUseOutOfBattle_DynamaxCandy(u8 taskId)
     SetUpItemUseCallback(taskId);
 }
 
-void ItemUseOutOfBattle_TMHM(u8 taskId)
+void ItemUseOutOfBattle_TM(u8 taskId)
 {
-    if (gSpecialVar_ItemId >= ITEM_HM01)
-        DisplayItemMessage(taskId, FONT_NORMAL, gText_BootedUpHM, BootUpSoundTMHM); // HM
-    else
-        DisplayItemMessage(taskId, FONT_NORMAL, gText_BootedUpTM, BootUpSoundTMHM); // TM
+    DisplayItemMessage(taskId, FONT_NORMAL, gText_BootedUpTM, BootUpSoundTM);
 }
 
-static void BootUpSoundTMHM(u8 taskId)
+static void BootUpSoundTM(u8 taskId)
 {
     PlaySE(SE_PC_LOGIN);
-    gTasks[taskId].func = Task_ShowTMHMContainedMessage;
+    gTasks[taskId].func = Task_ShowTMContainedMessage;
 }
 
-static void Task_ShowTMHMContainedMessage(u8 taskId)
+static void Task_ShowTMContainedMessage(u8 taskId)
 {
     if (JOY_NEW(A_BUTTON | B_BUTTON))
     {
         StringCopy(gStringVar1, GetMoveName(ItemIdToBattleMoveId(gSpecialVar_ItemId)));
-        StringExpandPlaceholders(gStringVar4, gText_TMHMContainedVar1);
-        DisplayItemMessage(taskId, FONT_NORMAL, gStringVar4, UseTMHMYesNo);
+        StringExpandPlaceholders(gStringVar4, gText_TMContainedVar1);
+        DisplayItemMessage(taskId, FONT_NORMAL, gStringVar4, UseTMYesNo);
     }
 }
 
-static void UseTMHMYesNo(u8 taskId)
+static void UseTMYesNo(u8 taskId)
 {
-    BagMenu_YesNo(taskId, ITEMWIN_YESNO_HIGH, &sUseTMHMYesNoFuncTable);
+    BagMenu_YesNo(taskId, ITEMWIN_YESNO_HIGH, &sUseTMYesNoFuncTable);
 }
 
-static void UseTMHM(u8 taskId)
+static void UseTM(u8 taskId)
 {
-    gItemUseCB = ItemUseCB_TMHM;
+    gItemUseCB = ItemUseCB_TM;
     SetUpItemUseCallback(taskId);
 }
 

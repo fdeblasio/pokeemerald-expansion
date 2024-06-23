@@ -130,11 +130,7 @@ enum {
     ACTIONS_ZYGARDE_CUBE,
 };
 
-// In CursorCb_FieldMove, field moves <= FIELD_MOVE_WATERFALL are assumed to line up with the badge flags.
-// Badge flag names are commented here for people searching for references to remove the badge requirement.
 enum {
-    FIELD_MOVE_SURF,        // FLAG_BADGE05_GET
-    FIELD_MOVE_WATERFALL,   // FLAG_BADGE08_GET
     FIELD_MOVE_CUT,
     FIELD_MOVE_STRENGTH,
     FIELD_MOVE_ROCK_SMASH,
@@ -384,7 +380,6 @@ static void Task_SpinTradeYesNo(u8);
 static void Task_HandleSpinTradeYesNoInput(u8);
 static void Task_CancelAfterAorBPress(u8);
 static void DisplayFieldMoveExitAreaMessage(u8);
-static void DisplayCantUseSurfMessage(void);
 static void Task_FieldMoveExitAreaYesNo(u8);
 static void Task_HandleFieldMoveExitAreaYesNoInput(u8);
 static void Task_FieldMoveWaitForFade(u8);
@@ -499,8 +494,6 @@ static void CursorCb_CatalogFan(u8);
 static void CursorCb_CatalogMower(u8);
 static void CursorCb_ChangeForm(u8);
 static void CursorCb_ChangeAbility(u8);
-static bool8 SetUpFieldMove_Surf(void);
-static bool8 SetUpFieldMove_Waterfall(void);
 void TryItemHoldFormChange(struct Pokemon *mon);
 static void ShowMoveSelectWindow(u8 slot);
 static void Task_HandleWhichMoveInput(u8 taskId);
@@ -1135,7 +1128,7 @@ static bool8 DisplayPartyPokemonDataForMoveTutorOrEvolutionItem(u8 slot)
         if (gPartyMenu.action != PARTY_ACTION_USE_ITEM)
             return FALSE;
 
-        switch (CheckIfItemIsTMHMOrEvolutionStone(item))
+        switch (CheckIfItemIsTMOrEvolutionStone(item))
         {
         default:
             return FALSE;
@@ -3977,14 +3970,7 @@ static void CursorCb_FieldMove(u8 taskId)
     }
     else
     {
-        int hmBadges[] = {5, 8};
-        // All field moves before WATERFALL are HMs.
-        if (fieldMove <= FIELD_MOVE_WATERFALL && FlagGet(FLAG_BADGE01_GET + hmBadges[fieldMove] - 1) != TRUE)
-        {
-            DisplayPartyMenuMessage(gText_CantUseUntilNewBadge, TRUE);
-            gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
-        }
-        else if (sFieldMoveCursorCallbacks[fieldMove].fieldMoveFunc() == TRUE)
+        if (sFieldMoveCursorCallbacks[fieldMove].fieldMoveFunc() == TRUE)
         {
             switch (fieldMove)
             {
@@ -4012,18 +3998,10 @@ static void CursorCb_FieldMove(u8 taskId)
                 break;
             }
         }
-        // Cant use Field Move
+        // Can't use Field Move
         else
         {
-            switch (fieldMove)
-            {
-            case FIELD_MOVE_SURF:
-                DisplayCantUseSurfMessage();
-                break;
-            default:
-                DisplayPartyMenuStdMessage(sFieldMoveCursorCallbacks[fieldMove].msgId);
-                break;
-            }
+            DisplayPartyMenuStdMessage(sFieldMoveCursorCallbacks[fieldMove].msgId);
             gTasks[taskId].func = Task_CancelAfterAorBPress;
         }
     }
@@ -4098,54 +4076,9 @@ static void Task_CancelAfterAorBPress(u8 taskId)
         CursorCb_Cancel1(taskId);
 }
 
-static void FieldCallback_Surf(void)
-{
-    gFieldEffectArguments[0] = GetCursorSelectionMonId();
-    FieldEffectStart(FLDEFF_USE_SURF);
-}
-
-static bool8 SetUpFieldMove_Surf(void)
-{
-    if (PartyHasMonWithSurf() == TRUE && IsPlayerFacingSurfableFishableWater() == TRUE)
-    {
-        gFieldCallback2 = FieldCallback_PrepareFadeInFromMenu;
-        gPostMenuFieldCallback = FieldCallback_Surf;
-        return TRUE;
-    }
-    return FALSE;
-}
-
-static void DisplayCantUseSurfMessage(void)
-{
-    if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING))
-        DisplayPartyMenuStdMessage(PARTY_MSG_ALREADY_SURFING);
-    else
-        DisplayPartyMenuStdMessage(PARTY_MSG_CANT_SURF_HERE);
-}
-
 void CB2_ReturnToPartyMenuFromFlyMap(void)
 {
     InitPartyMenu(PARTY_MENU_TYPE_FIELD, PARTY_LAYOUT_SINGLE, PARTY_ACTION_CHOOSE_MON, TRUE, PARTY_MSG_CHOOSE_MON, Task_HandleChooseMonInput, CB2_ReturnToFieldWithOpenMenu);
-}
-
-static void FieldCallback_Waterfall(void)
-{
-    gFieldEffectArguments[0] = GetCursorSelectionMonId();
-    FieldEffectStart(FLDEFF_USE_WATERFALL);
-}
-
-static bool8 SetUpFieldMove_Waterfall(void)
-{
-    s16 x, y;
-
-    GetXYCoordsOneStepInFrontOfPlayer(&x, &y);
-    if (MetatileBehavior_IsWaterfall(MapGridGetMetatileBehaviorAt(x, y)) == TRUE && IsPlayerSurfingNorth() == TRUE)
-    {
-        gFieldCallback2 = FieldCallback_PrepareFadeInFromMenu;
-        gPostMenuFieldCallback = FieldCallback_Waterfall;
-        return TRUE;
-    }
-    return FALSE;
 }
 
 static void CreatePartyMonIconSprite(struct Pokemon *mon, struct PartyMenuBox *menuBox, u32 slot)
@@ -4480,7 +4413,7 @@ void CB2_ShowPartyMenuForItemUse(void)
     }
     else
     {
-        if (GetPocketByItemId(gSpecialVar_ItemId) == POCKET_TM_HM)
+        if (GetPocketByItemId(gSpecialVar_ItemId) == POCKET_TM)
             msgId = PARTY_MSG_TEACH_WHICH_MON;
         else
             msgId = PARTY_MSG_USE_ON_WHICH_MON;
@@ -5281,7 +5214,7 @@ void ItemUseCB_PPUp(u8 taskId, TaskFunc task)
 
 u16 ItemIdToBattleMoveId(u16 item)
 {
-    return (ItemId_GetPocket(item) == POCKET_TM_HM) ? gItemsInfo[item].secondaryId : MOVE_NONE;
+    return (ItemId_GetPocket(item) == POCKET_TM) ? gItemsInfo[item].secondaryId : MOVE_NONE;
 }
 
 bool8 MonKnowsMove(struct Pokemon *mon, u16 move)
@@ -5323,7 +5256,7 @@ static void DisplayLearnMoveMessageAndClose(u8 taskId, const u8 *str)
 
 // move[1] doesn't use constants cause I don't know if it's actually a move ID storage
 
-void ItemUseCB_TMHM(u8 taskId, TaskFunc task)
+void ItemUseCB_TM(u8 taskId, TaskFunc task)
 {
     struct Pokemon *mon;
     u16 item = gSpecialVar_ItemId;
@@ -5367,7 +5300,7 @@ static void Task_LearnedMove(u8 taskId)
 
     if (move[1] == 0)
     {
-        AdjustFriendship(mon, FRIENDSHIP_EVENT_LEARN_TMHM);
+        AdjustFriendship(mon, FRIENDSHIP_EVENT_LEARN_TM);
         if (!ItemId_GetImportance(item))
             RemoveBagItem(item, 1);
     }

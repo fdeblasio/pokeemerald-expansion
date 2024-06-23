@@ -1708,41 +1708,41 @@ const u32 gItemIcon_TM[] = INCBIN_U32("graphics/items/icons/tm.4bpp.lz");
 
 const u32 gItemIcon_HM[] = INCBIN_U32("graphics/items/icons/hm.4bpp.lz");
 
-const u32 gItemIconPalette_NormalTMHM[] = INCBIN_U32("graphics/items/icon_palettes/normal_tm_hm.gbapal.lz");
+const u32 gItemIconPalette_NormalTM[] = INCBIN_U32("graphics/items/icon_palettes/normal_tm_hm.gbapal.lz");
 
-const u32 gItemIconPalette_FireTMHM[] = INCBIN_U32("graphics/items/icon_palettes/fire_tm_hm.gbapal.lz");
+const u32 gItemIconPalette_FireTM[] = INCBIN_U32("graphics/items/icon_palettes/fire_tm_hm.gbapal.lz");
 
-const u32 gItemIconPalette_WaterTMHM[] = INCBIN_U32("graphics/items/icon_palettes/water_tm_hm.gbapal.lz");
+const u32 gItemIconPalette_WaterTM[] = INCBIN_U32("graphics/items/icon_palettes/water_tm_hm.gbapal.lz");
 
-const u32 gItemIconPalette_ElectricTMHM[] = INCBIN_U32("graphics/items/icon_palettes/electric_tm_hm.gbapal.lz");
+const u32 gItemIconPalette_ElectricTM[] = INCBIN_U32("graphics/items/icon_palettes/electric_tm_hm.gbapal.lz");
 
-const u32 gItemIconPalette_GrassTMHM[] = INCBIN_U32("graphics/items/icon_palettes/grass_tm_hm.gbapal.lz");
+const u32 gItemIconPalette_GrassTM[] = INCBIN_U32("graphics/items/icon_palettes/grass_tm_hm.gbapal.lz");
 
-const u32 gItemIconPalette_IceTMHM[] = INCBIN_U32("graphics/items/icon_palettes/ice_tm_hm.gbapal.lz");
+const u32 gItemIconPalette_IceTM[] = INCBIN_U32("graphics/items/icon_palettes/ice_tm_hm.gbapal.lz");
 
-const u32 gItemIconPalette_FightingTMHM[] = INCBIN_U32("graphics/items/icon_palettes/fighting_tm_hm.gbapal.lz");
+const u32 gItemIconPalette_FightingTM[] = INCBIN_U32("graphics/items/icon_palettes/fighting_tm_hm.gbapal.lz");
 
-const u32 gItemIconPalette_PoisonTMHM[] = INCBIN_U32("graphics/items/icon_palettes/poison_tm_hm.gbapal.lz");
+const u32 gItemIconPalette_PoisonTM[] = INCBIN_U32("graphics/items/icon_palettes/poison_tm_hm.gbapal.lz");
 
-const u32 gItemIconPalette_GroundTMHM[] = INCBIN_U32("graphics/items/icon_palettes/ground_tm_hm.gbapal.lz");
+const u32 gItemIconPalette_GroundTM[] = INCBIN_U32("graphics/items/icon_palettes/ground_tm_hm.gbapal.lz");
 
-const u32 gItemIconPalette_FlyingTMHM[] = INCBIN_U32("graphics/items/icon_palettes/flying_tm_hm.gbapal.lz");
+const u32 gItemIconPalette_FlyingTM[] = INCBIN_U32("graphics/items/icon_palettes/flying_tm_hm.gbapal.lz");
 
-const u32 gItemIconPalette_PsychicTMHM[] = INCBIN_U32("graphics/items/icon_palettes/psychic_tm_hm.gbapal.lz");
+const u32 gItemIconPalette_PsychicTM[] = INCBIN_U32("graphics/items/icon_palettes/psychic_tm_hm.gbapal.lz");
 
-const u32 gItemIconPalette_BugTMHM[] = INCBIN_U32("graphics/items/icon_palettes/bug_tm_hm.gbapal.lz");
+const u32 gItemIconPalette_BugTM[] = INCBIN_U32("graphics/items/icon_palettes/bug_tm_hm.gbapal.lz");
 
-const u32 gItemIconPalette_RockTMHM[] = INCBIN_U32("graphics/items/icon_palettes/rock_tm_hm.gbapal.lz");
+const u32 gItemIconPalette_RockTM[] = INCBIN_U32("graphics/items/icon_palettes/rock_tm_hm.gbapal.lz");
 
-const u32 gItemIconPalette_GhostTMHM[] = INCBIN_U32("graphics/items/icon_palettes/ghost_tm_hm.gbapal.lz");
+const u32 gItemIconPalette_GhostTM[] = INCBIN_U32("graphics/items/icon_palettes/ghost_tm_hm.gbapal.lz");
 
-const u32 gItemIconPalette_DragonTMHM[] = INCBIN_U32("graphics/items/icon_palettes/dragon_tm_hm.gbapal.lz");
+const u32 gItemIconPalette_DragonTM[] = INCBIN_U32("graphics/items/icon_palettes/dragon_tm_hm.gbapal.lz");
 
-const u32 gItemIconPalette_DarkTMHM[] = INCBIN_U32("graphics/items/icon_palettes/dark_tm_hm.gbapal.lz");
+const u32 gItemIconPalette_DarkTM[] = INCBIN_U32("graphics/items/icon_palettes/dark_tm_hm.gbapal.lz");
 
-const u32 gItemIconPalette_SteelTMHM[] = INCBIN_U32("graphics/items/icon_palettes/steel_tm_hm.gbapal.lz");
+const u32 gItemIconPalette_SteelTM[] = INCBIN_U32("graphics/items/icon_palettes/steel_tm_hm.gbapal.lz");
 
-const u32 gItemIconPalette_FairyTMHM[] = INCBIN_U32("graphics/items/icon_palettes/fairy_tm_hm.gbapal.lz");
+const u32 gItemIconPalette_FairyTM[] = INCBIN_U32("graphics/items/icon_palettes/fairy_tm_hm.gbapal.lz");
 
 // Charms
 

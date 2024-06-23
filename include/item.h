@@ -61,7 +61,7 @@ void SwapRegisteredBike(void);
 u16 BagGetItemIdByPocketPosition(u8 pocketId, u16 pocketPos);
 u16 BagGetQuantityByPocketPosition(u8 pocketId, u16 pocketPos);
 void CompactItemsInBagPocket(struct BagPocket *bagPocket);
-void SortBerriesOrTMHMs(struct BagPocket *bagPocket);
+void SortBerriesOrTMs(struct BagPocket *bagPocket);
 void MoveItemSlotInList(struct ItemSlot* itemSlots_, u32 from, u32 to_);
 void ClearBag(void);
 u16 CountTotalItemQuantityInBag(u16 itemId);
@@ -88,20 +88,13 @@ u32 GetItemStatus2Mask(u16 itemId);
  * {
  *   ITEM_TM_FOCUS_PUNCH,
  *   ...
- *   ITEM_HM_SURF,
- *   ...
  * }; */
 #define ENUM_TM(id) CAT(ITEM_TM_, id),
-#define ENUM_HM(id) CAT(ITEM_HM_, id),
 enum
 {
     ENUM_TM_START_ = ITEM_TM01 - 1,
     FOREACH_TM(ENUM_TM)
-
-    ENUM_HM_START_ = ITEM_HM01 - 1,
-    FOREACH_HM(ENUM_HM)
 };
 #undef ENUM_TM
-#undef ENUM_HM
 
 #endif // GUARD_ITEM_H

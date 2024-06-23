@@ -110,7 +110,7 @@ struct TypeInfo
     u16 teraTypeRGBValue;    // Most values pulled from the Tera type icon palette.
     u16 damageCategory:2;    // Used for B_PHYSICAL_SPECIAL_SPLIT <= GEN_3
     u16 padding:14;
-    const u32 *const paletteTMHM;
+    const u32 *const paletteTM;
     //u16 enhanceItem;
     //u16 berry;
     //u16 gem;

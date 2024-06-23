@@ -795,14 +795,15 @@ static void CreateCableCarSprites(void)
         [FEMALE] = OBJ_EVENT_GFX_RIVAL_MAY_NORMAL
     };
     u16 rval = Random();
-    u16 hikerGraphicsIds[7] = {
+    u16 hikerGraphicsIds[8] = {
         OBJ_EVENT_GFX_HIKER,
         OBJ_EVENT_GFX_CAMPER,
         OBJ_EVENT_GFX_PICNICKER,
         OBJ_EVENT_GFX_ZIGZAGOON_1,
         OBJ_EVENT_GFX_POOCHYENA,
-        OBJ_EVENT_GFX_BLACK_BELT,
-        OBJ_EVENT_GFX_GIRL_3
+        OBJ_EVENT_GFX_SPECIES(NUMEL),
+        OBJ_EVENT_GFX_SPECIES(SPOINK),
+        OBJ_EVENT_GFX_SPECIES(MACHOP)
     };
     s16 hikerCoords[2][2] = {
         {   0,  80 }, // Going up
@@ -880,8 +881,8 @@ static void CreateCableCarSprites(void)
         gSprites[spriteId].y2 = 8;
     }
 
-    // 1/8 chance for an NPC to appear hiking on the ground below the Cable Car
-    if ((rval % 8) == 0)
+    // 100% chance for an NPC to appear hiking on the ground below the Cable Car
+    if ((rval % 1) == 0)
     {
         spriteId = CreateObjectGraphicsSprite(hikerGraphicsIds[rval % (ARRAY_COUNT(hikerGraphicsIds))], hikerCallbacks[GOING_DOWN], hikerCoords[GOING_DOWN][0], hikerCoords[GOING_DOWN][1], 106);
         if (spriteId != MAX_SPRITES)

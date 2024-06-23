@@ -302,7 +302,7 @@
 #define MUS_OBTAIN_BADGE            369 // MUS_ME_BACHI
 #define MUS_OBTAIN_ITEM             370 // MUS_FANFA4
 #define MUS_EVOLVED                 371 // MUS_FANFA5           // Also used in egg hatching, trades and upon catching.
-#define MUS_OBTAIN_TMHM             372 // MUS_ME_WAZA
+#define MUS_OBTAIN_TM               372 // MUS_ME_WAZA
 #define MUS_LILYCOVE_MUSEUM         373 // MUS_BIJYUTU          // Also used in the Battle Frontier's Ranking Hall.
 #define MUS_ROUTE122                374 // MUS_DOORO_X4         // Also used in Route 123 and Birch's intro speech.
 #define MUS_OCEANIC_MUSEUM          375 // MUS_FUNE_KAN

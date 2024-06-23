@@ -59,7 +59,7 @@ TEST("Move names fit on TMs & HMs Bag Screen")
     u32 move = MOVE_NONE;
     for (i = 1; i < ITEMS_COUNT; i++)
     {
-        if (gItemsInfo[i].pocket == POCKET_TM_HM)
+        if (gItemsInfo[i].pocket == POCKET_TM)
         {
             PARAMETRIZE_LABEL("%S", gMovesInfo[gItemsInfo[i].secondaryId].name) { move = gItemsInfo[i].secondaryId; }
         }
@@ -89,7 +89,7 @@ TEST("Item names fit on Bag Screen (list)")
     {
         PARAMETRIZE_LABEL("%S", gItemsInfo[i].name) { item = i; }
     }
-    if (gItemsInfo[item].pocket == POCKET_TM_HM || gItemsInfo[item].pocket == POCKET_BERRIES)
+    if (gItemsInfo[item].pocket == POCKET_TM || gItemsInfo[item].pocket == POCKET_BERRIES)
         EXPECT_LE(GetStringWidth(fontId, gItemsInfo[item].name, 0), tmHmBerryWidthPx);
     else
         EXPECT_LE(GetStringWidth(fontId, gItemsInfo[item].name, 0), restWidthPx);

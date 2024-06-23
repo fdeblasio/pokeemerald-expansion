@@ -20,7 +20,7 @@ EventScript_BufferPocketNameAndTryFanfare::
 	case POCKET_ITEMS,      EventScript_BufferItemsPocket
 	case POCKET_KEY_ITEMS,  EventScript_BufferKeyItemsPocket
 	case POCKET_POKE_BALLS, EventScript_BufferPokeballsPocket
-	case POCKET_TM_HM,      EventScript_BufferTMHMsPocket
+	case POCKET_TM,         EventScript_BufferTMsPocket
 	case POCKET_BERRIES,    EventScript_BufferBerriesPocket
 	end
 
@@ -39,9 +39,9 @@ EventScript_BufferPokeballsPocket::
 	call_if_eq VAR_0x8007, TRUE, EventScript_PlayFanfareObtainedItem
 	return
 
-EventScript_BufferTMHMsPocket::
-	bufferstdstring STR_VAR_3, STDSTRING_TMHMS
-	call_if_eq VAR_0x8007, TRUE, EventScript_PlayFanfareObtainedTMHM
+EventScript_BufferTMsPocket::
+	bufferstdstring STR_VAR_3, STDSTRING_TMS
+	call_if_eq VAR_0x8007, TRUE, EventScript_PlayFanfareObtainedTM
 	return
 
 EventScript_BufferBerriesPocket::
@@ -71,8 +71,8 @@ EventScript_PlayFanfareObtainedItem::
 	playfanfare MUS_OBTAIN_ITEM
 	return
 
-EventScript_PlayFanfareObtainedTMHM::
-	playfanfare MUS_OBTAIN_TMHM
+EventScript_PlayFanfareObtainedTM::
+	playfanfare MUS_OBTAIN_TM
 	return
 
 Std_ObtainDecoration::
@@ -118,9 +118,9 @@ Std_FindItem::
 EventScript_PickUpItem::
 	removeobject VAR_LAST_TALKED
 	additem VAR_0x8004, VAR_0x8005
-	specialvar VAR_RESULT, BufferTMHMMoveName
+	specialvar VAR_RESULT, BufferTMMoveName
 	copyvar VAR_0x8008, VAR_RESULT
-	call_if_eq VAR_0x8008, TRUE, EventScript_FoundTMHM
+	call_if_eq VAR_0x8008, TRUE, EventScript_FoundTM
 	call_if_eq VAR_0x8008, FALSE, EventScript_FoundItem
 	waitfanfare
 	waitmessage
@@ -134,16 +134,16 @@ EventScript_PutBattlePyramidItemInBag::
 	msgbox gText_PlayerPutItemInBag, MSGBOX_DEFAULT
 	return
 
-EventScript_FoundTMHM::
+EventScript_FoundTM::
 	bufferitemnameplural STR_VAR_1, VAR_0x8004, VAR_0x8005
 	compare VAR_0x8005, 2
-	goto_if_lt EventScript_FoundTMHMMessage
+	goto_if_lt EventScript_FoundTMMessage
 	buffernumberstring STR_VAR_3, VAR_0x8005
-	message gText_PlayerFoundTMHMs
-	goto EventScript_BufferTMHMsPocket
+	message gText_PlayerFoundTMs
+	goto EventScript_BufferTMsPocket
 	return
-EventScript_FoundTMHMMessage::
-	message gText_PlayerFoundOneTMHM
+EventScript_FoundTMMessage::
+	message gText_PlayerFoundOneTM
 	return
 
 EventScript_FoundItem::
@@ -177,14 +177,14 @@ EventScript_HiddenItemScript::
 EventScript_PickUpHiddenItem::
 	copyvar VAR_0x8008, VAR_0x8004
 	copyvar VAR_0x8004, VAR_0x8005
-	specialvar VAR_RESULT, BufferTMHMMoveName
-	goto_if_eq VAR_RESULT, TRUE, EventScript_FoundHiddenTMHM
+	specialvar VAR_RESULT, BufferTMMoveName
+	goto_if_eq VAR_RESULT, TRUE, EventScript_FoundHiddenTM
 	goto_if_eq VAR_RESULT, FALSE, EventScript_FoundHiddenItem
 	end
 
-EventScript_FoundHiddenTMHM::
+EventScript_FoundHiddenTM::
 	bufferitemnameplural STR_VAR_1, VAR_0x8004, 1
-	message gText_PlayerFoundOneTMHM
+	message gText_PlayerFoundOneTM
 	goto EventScript_PutHiddenItemInPocket
 	end
 

@@ -1285,8 +1285,6 @@ PetalburgCity_Gym_Text_ReceivedBalanceBadge:
 PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis:
 	.string "Dad: With that Badge, the Defense\n"
 	.string "of all your Pokémon will increase.\p"
-	.string "Pokémon that know the HM move Surf\n"
-	.string "will be able to travel over water.\p"
 	.string "This is my gift to you. {PLAYER}, I'm\n"
 	.string "sure you can use it correctly.$"
 
@@ -1481,7 +1479,7 @@ PetalburgCity_Gym_Text_AlexiaPostBattle:
 	.string "skilled at offense.$"
 
 PetalburgCity_Gym_Text_AlexiaPostBadge:
-	.string "Hi! Have you tried using Surf?$"
+	.string "Hi! Have you tried surfing?$"
 
 PetalburgCity_Gym_Text_JodyIntro:
 	.string "Our Gym Leader told us to go all out\n"

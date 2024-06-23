@@ -1,5 +1,5 @@
-#ifndef GUARD_CONSTANTS_TMS_HMS_H
-#define GUARD_CONSTANTS_TMS_HMS_H
+#ifndef GUARD_CONSTANTS_TMS_H
+#define GUARD_CONSTANTS_TMS_H
 
 #define FOREACH_TM(F) \
     F(FOCUS_PUNCH) \
@@ -104,17 +104,11 @@
     F(MOONBLAST) \
     F(CUT) \
     F(FLY) \
+    F(SURF) \
     F(STRENGTH) \
     F(FLASH) \
     F(ROCK_SMASH) \
+    F(WATERFALL) \
     F(DIVE)
-
-#define FOREACH_HM(F) \
-    F(SURF) \
-    F(WATERFALL)
-
-#define FOREACH_TMHM(F) \
-    FOREACH_TM(F) \
-    FOREACH_HM(F)
 
 #endif

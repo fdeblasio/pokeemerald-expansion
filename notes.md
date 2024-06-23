@@ -90,7 +90,7 @@ upcoming
     - Could swap out Huntail for Mega Gyarados and only it and Houndoom get items
 
 ### Field Moves
-- Replace Waterfall (and maybe Surf) with an item, similar to Dive
+- Replace Waterfall with an item, similar to Dive
 - Edit moves that work in field
     - Maybe edit so instead of "if has move" to "if can learn move"
         - Might not be simple since it's .inc and not C

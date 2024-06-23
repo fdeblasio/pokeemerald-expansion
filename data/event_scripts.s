@@ -805,7 +805,7 @@ Common_EventScript_NameReceivedPartyMon::
 
 Common_EventScript_PlayerHandedOverTheItem::
 	bufferitemname STR_VAR_1, VAR_0x8004
-	playfanfare MUS_OBTAIN_TMHM
+	playfanfare MUS_OBTAIN_TM
 	message gText_PlayerHandedOverTheItem
 	waitmessage
 	waitfanfare
@@ -928,11 +928,11 @@ gText_ThankYouForAccessingMysteryGift::
 	.string "Thank you for accessing the\n"
 	.string "MYSTERY GIFT System.$"
 
-gText_PlayerFoundOneTMHM::
+gText_PlayerFoundOneTM::
 	.string "{PLAYER} found one {STR_VAR_1}\n"
 	.string "{STR_VAR_2}!$"
 
-gText_PlayerFoundTMHMs::
+gText_PlayerFoundTMs::
 	.string "{PLAYER} found {STR_VAR_3} {STR_VAR_1}\n"
 	.string "{STR_VAR_2}!$"
 

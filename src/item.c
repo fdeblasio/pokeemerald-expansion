@@ -76,8 +76,8 @@ void SetBagItemsPointers(void)
     gBagPockets[BALLS_POCKET].itemSlots = gSaveBlock1Ptr->bagPocket_PokeBalls;
     gBagPockets[BALLS_POCKET].capacity = BAG_POKEBALLS_COUNT;
 
-    gBagPockets[TMHM_POCKET].itemSlots = gSaveBlock1Ptr->bagPocket_TMHM;
-    gBagPockets[TMHM_POCKET].capacity = BAG_TMHM_COUNT;
+    gBagPockets[TM_POCKET].itemSlots = gSaveBlock1Ptr->bagPocket_TM;
+    gBagPockets[TM_POCKET].capacity = BAG_TM_COUNT;
 
     gBagPockets[BERRIES_POCKET].itemSlots = gSaveBlock1Ptr->bagPocket_Berries;
     gBagPockets[BERRIES_POCKET].capacity = BAG_BERRIES_COUNT;
@@ -241,7 +241,7 @@ bool8 AddBagItem(u16 itemId, u16 count)
                 else
                 {
                     // try creating another instance of the item if possible
-                    if (pocket == TMHM_POCKET || pocket == BERRIES_POCKET)
+                    if (pocket == TM_POCKET || pocket == BERRIES_POCKET)
                     {
                         Free(newItems);
                         return FALSE;
@@ -272,7 +272,7 @@ bool8 AddBagItem(u16 itemId, u16 count)
                     if (count > MAX_BAG_ITEM_CAPACITY)
                     {
                         // try creating a new slot with max capacity if duplicates are possible
-                        if (pocket == TMHM_POCKET || pocket == BERRIES_POCKET)
+                        if (pocket == TM_POCKET || pocket == BERRIES_POCKET)
                         {
                             Free(newItems);
                             return FALSE;
@@ -572,7 +572,7 @@ void CompactItemsInBagPocket(struct BagPocket *bagPocket)
     }
 }
 
-void SortBerriesOrTMHMs(struct BagPocket *bagPocket)
+void SortBerriesOrTMs(struct BagPocket *bagPocket)
 {
     u16 i, j;
 

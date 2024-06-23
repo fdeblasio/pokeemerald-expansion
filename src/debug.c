@@ -116,7 +116,7 @@ enum GivePCBagFillDebugMenu
     DEBUG_PCBAG_MENU_ITEM_FILL_PC_ITEMS,
     DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_ITEMS,
     DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_BALLS,
-    DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_TMHM,
+    DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_TM,
     DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_BERRIES,
     DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_KEY_ITEMS,
 };
@@ -380,7 +380,7 @@ static void DebugAction_PCBag_Fill_PCBoxes_Slow(u8 taskId);
 static void DebugAction_PCBag_Fill_PCItemStorage(u8 taskId);
 static void DebugAction_PCBag_Fill_PocketItems(u8 taskId);
 static void DebugAction_PCBag_Fill_PocketPokeBalls(u8 taskId);
-static void DebugAction_PCBag_Fill_PocketTMHM(u8 taskId);
+static void DebugAction_PCBag_Fill_PocketTM(u8 taskId);
 static void DebugAction_PCBag_Fill_PocketBerries(u8 taskId);
 static void DebugAction_PCBag_Fill_PocketKeyItems(u8 taskId);
 static void DebugAction_PCBag_AccessPC(u8 taskId);
@@ -535,7 +535,7 @@ static const u8 sDebugText_PCBag_Fill_Pc_Slow[] =            _("Fill PC Boxes Sl
 static const u8 sDebugText_PCBag_Fill_Pc_Items[] =           _("Fill PC Items");
 static const u8 sDebugText_PCBag_Fill_PocketItems[] =        _("Fill Pocket Items");
 static const u8 sDebugText_PCBag_Fill_PocketPokeBalls[] =    _("Fill Pocket Poké Balls");
-static const u8 sDebugText_PCBag_Fill_PocketTMHM[] =         _("Fill Pocket TMHM");
+static const u8 sDebugText_PCBag_Fill_PocketTM[] =           _("Fill TM Pocket");
 static const u8 sDebugText_PCBag_Fill_PocketBerries[] =      _("Fill Pocket Berries");
 static const u8 sDebugText_PCBag_Fill_PocketKeyItems[] =     _("Fill Pocket Key Items");
 static const u8 sDebugText_PCBag_AccessPC[] =                _("Access PC");
@@ -732,7 +732,7 @@ static const struct ListMenuItem sDebugMenu_Items_PCBag_Fill[] =
     [DEBUG_PCBAG_MENU_ITEM_FILL_PC_ITEMS]         = {sDebugText_PCBag_Fill_Pc_Items ,       DEBUG_PCBAG_MENU_ITEM_FILL_PC_ITEMS},
     [DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_ITEMS]     = {sDebugText_PCBag_Fill_PocketItems,     DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_ITEMS},
     [DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_BALLS]     = {sDebugText_PCBag_Fill_PocketPokeBalls, DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_BALLS},
-    [DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_TMHM]      = {sDebugText_PCBag_Fill_PocketTMHM,      DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_TMHM},
+    [DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_TM]        = {sDebugText_PCBag_Fill_PocketTM,      DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_TM},
     [DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_BERRIES]   = {sDebugText_PCBag_Fill_PocketBerries,   DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_BERRIES},
     [DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_KEY_ITEMS] = {sDebugText_PCBag_Fill_PocketKeyItems,  DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_KEY_ITEMS},
 };
@@ -900,7 +900,7 @@ static void (*const sDebugMenu_Actions_PCBag_Fill[])(u8) =
     [DEBUG_PCBAG_MENU_ITEM_FILL_PC_ITEMS]         = DebugAction_PCBag_Fill_PCItemStorage,
     [DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_ITEMS]     = DebugAction_PCBag_Fill_PocketItems,
     [DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_BALLS]     = DebugAction_PCBag_Fill_PocketPokeBalls,
-    [DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_TMHM]      = DebugAction_PCBag_Fill_PocketTMHM,
+    [DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_TM]        = DebugAction_PCBag_Fill_PocketTM,
     [DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_BERRIES]   = DebugAction_PCBag_Fill_PocketBerries,
     [DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_KEY_ITEMS] = DebugAction_PCBag_Fill_PocketKeyItems,
 };
@@ -4192,11 +4192,11 @@ static void DebugAction_PCBag_Fill_PocketPokeBalls(u8 taskId)
     }
 }
 
-static void DebugAction_PCBag_Fill_PocketTMHM(u8 taskId)
+static void DebugAction_PCBag_Fill_PocketTM(u8 taskId)
 {
     u16 itemId;
 
-    for (itemId = ITEM_TM01; itemId <= ITEM_HM02; itemId++)
+    for (itemId = ITEM_TM01; itemId <= ITEM_TM108; itemId++)
     {
         if (CheckBagHasSpace(itemId, 1) && ItemIdToBattleMoveId(itemId) != MOVE_NONE)
             AddBagItem(itemId, 1);
@@ -4445,7 +4445,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_OBTAIN_BADGE) \
     X(MUS_OBTAIN_ITEM) \
     X(MUS_EVOLVED) \
-    X(MUS_OBTAIN_TMHM) \
+    X(MUS_OBTAIN_TM) \
     X(MUS_LILYCOVE_MUSEUM) \
     X(MUS_ROUTE122) \
     X(MUS_OCEANIC_MUSEUM) \

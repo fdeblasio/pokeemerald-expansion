@@ -1101,7 +1101,7 @@ static void BagAction_UseOnField(u8 taskId)
 
     if (pocketId == POCKET_KEY_ITEMS
         || pocketId == POCKET_POKE_BALLS
-        || pocketId == POCKET_TM_HM
+        || pocketId == POCKET_TM
         || ItemIsMail(gSpecialVar_ItemId) == TRUE)
     {
         CloseMenuActionWindow();

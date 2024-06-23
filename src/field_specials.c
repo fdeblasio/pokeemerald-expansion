@@ -1646,9 +1646,9 @@ u16 GetMysteryGiftCardStat(void)
     }
 }
 
-bool8 BufferTMHMMoveName(void)
+bool8 BufferTMMoveName(void)
 {
-    if (gSpecialVar_0x8004 >= ITEM_TM01 && gSpecialVar_0x8004 <= ITEM_HM02)
+    if (gSpecialVar_0x8004 >= ITEM_TM01 && gSpecialVar_0x8004 <= ITEM_TM108)
     {
         StringCopy(gStringVar2, GetMoveName(ItemIdToBattleMoveId(gSpecialVar_0x8004)));
         return TRUE;

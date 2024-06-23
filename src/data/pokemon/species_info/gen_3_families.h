@@ -6124,12 +6124,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_SPINDA
     [SPECIES_SPINDA] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 70,
-        .baseDefense   = 70,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 70,
-        .baseSpDefense = 70,
+        .baseHP        = 80,
+        .baseAttack    = 80,
+        .baseDefense   = 80,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 126 : 85,

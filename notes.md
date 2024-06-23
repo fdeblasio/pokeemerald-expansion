@@ -83,8 +83,6 @@ upcoming
 - Triathlete would be Speed-focused (maybe endurance/HP too)
 - Give Winstrates rematches?
 - Vito can use TMs
-- Norman can have Toxic Orb Guts Zangoose
-    - Spinda: Thrash if Own Tempo, Superpower if Contrary. Should be given a cool pattern (maybe 88888888?)
 - Fix Winona's rematches being male; Pelipper gets Drizzle for Hurricane?
 - Gym leaders/Steven/Breeders can have Hidden Abilities
 - Maxie/Archie use Mega Evolutions

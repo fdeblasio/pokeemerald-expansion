@@ -184,7 +184,7 @@ const u8 gText_ItemFinderNothing[] = _("… … … …Nope!\nThere's no respons
 const u8 gText_CoinCase[] = _("Your Coins:\n{STR_VAR_1}{PAUSE_UNTIL_PRESS}");
 const u8 gText_BootedUpTM[] = _("Booted up a TM.");
 const u8 gText_BootedUpHM[] = _("Booted up an HM.");
-const u8 gText_TMHMContainedVar1[] = _("Teach {STR_VAR_1}\nto a Pokémon?");
+const u8 gText_TMContainedVar1[] = _("Teach {STR_VAR_1}\nto a Pokémon?");
 const u8 gText_PlayerUsedVar2[] = _("{PLAYER} used the\n{STR_VAR_2}.{PAUSE_UNTIL_PRESS}");
 const u8 gText_RepelEffectsLingered[] = _("But the effects of a Repel\nlingered from earlier.{PAUSE_UNTIL_PRESS}");
 const u8 gText_LureEffectsLingered[] = _("But the effects of a Lure\nlingered from earlier.{PAUSE_UNTIL_PRESS}");
@@ -233,7 +233,7 @@ const u8 *const gPocketNamesStringsTable[] =
 {
     [ITEMS_POCKET] =    COMPOUND_STRING("Items"),
     [BALLS_POCKET] =    COMPOUND_STRING("Poké Balls"),
-    [TMHM_POCKET]  =    COMPOUND_STRING("TMs & HMs"),
+    [TM_POCKET]  =    COMPOUND_STRING("TMs"),
     [BERRIES_POCKET] =  COMPOUND_STRING("Berries"),
     [KEYITEMS_POCKET] = COMPOUND_STRING("Key Items")
 };
@@ -610,7 +610,7 @@ const u8 gText_Tough2[] = _("Tough");
 const u8 gText_Items[] = _("Items");
 const u8 gText_Key_Items[] = _("Key Items");
 const u8 gText_Poke_Balls[] = _("Poké Balls");
-const u8 gText_TMs_Hms[] = _("TMs & HMs");
+const u8 gText_TMs[] = _("TMs & HMs");
 const u8 gText_Berries2[] = _("Berries");
 const u8 gText_SomeonesPC[] = _("Someone's PC");
 const u8 gText_LanettesPC[] = _("Lanette's PC");

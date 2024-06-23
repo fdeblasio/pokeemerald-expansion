@@ -111,7 +111,7 @@ struct TypeInfo
     u16 useSecondTypeIconPalette:1;
     u16 isSpecialCaseType:1;
     u16 padding:12;
-    const u32 *const paletteTMHM;
+    const u32 *const paletteTM;
     //u16 enhanceItem;
     //u16 berry;
     //u16 gem;

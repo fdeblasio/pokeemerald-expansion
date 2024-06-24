@@ -8722,7 +8722,7 @@ Minun
 Level: 27
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_GINA_AND_MIA_1 ===
+=== TRAINER_GINA_AND_MIA ===
 Name: Gina & Mia
 Class: Twins
 Pic: Twins
@@ -11427,7 +11427,7 @@ Machop
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_LUCAS_1 ===
+=== TRAINER_LUCAS ===
 Name: Lucas
 Class: Hiker
 Pic: Hiker
@@ -11531,7 +11531,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Bite
 - Scary Face
 
-=== TRAINER_MIKE_2 ===
+=== TRAINER_MIKE ===
 Name: Mike
 Class: Hiker
 Pic: Hiker

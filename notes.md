@@ -45,7 +45,6 @@ upcoming
 - Combine two meta files (notes.md and README.md)?
     Include more changes, even if general like Battle Frontier edits
 - Remove unused code
-- Move unused trainers to bottom (https://github.com/fdeblasio/pokeemerald-expansion/commit/87bc4d8aa9b70117988a2893f9598eeff3d90a08)
 
 ### Pokémon
 - Eventually remove RSE and/or BDSP teachable moves
@@ -67,6 +66,8 @@ upcoming
 - Xaman's TM Case: https://www.pokecommunity.com/showpost.php?p=10378278
 
 ### Trainers
+- Move unused trainers to bottom (https://github.com/fdeblasio/pokeemerald-expansion/commit/87bc4d8aa9b70117988a2893f9598eeff3d90a08)
+- Group rematches with original battles
 - Readjust wild/trainer levels so that parties aren't overpowered?
 - Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)
 - Elite Four rematches (wouldn't need to use Match Call, could probably do if statement in scripts.inc)

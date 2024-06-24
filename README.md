@@ -202,6 +202,8 @@ There are some mechanics, moves and abilities that are missing and being develop
 ## Known Bugs
 - Due to the increased walking speed, followers will sometimes clip through tiles, especially after hopping off a ledge
 - Followers will stop following you if you use the naming screen from the party menu. It will start to follow you again if you talk to it
+- Trying to enter the Safari Zone without a Pokeblock Case locks the player
+- Moving an item in the PC seems to duplicate it in the bag
 - When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
 - AI_FLAG_ACE_POKEMON doesn't seem to work
 - HGSS Pokédex shows evolutions multiple times (for this branch, only effects stone/location evos)
@@ -309,7 +311,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Shelly          |28, 28                |41, 41, 43|
 |Rival 119       |29, 29, 31            |42, 42, 42, 43|
 |Winona          |29, 29, 30, 31, 33    |43, 43, 44, 44, 46|
-|Rival Lilycove  |31, 32, 32, 34        |35, 35, 35, 36, 37|
+|Rival Lilycove  |31, 32, 32, 34        |48, 48, 48, 49, 50|
 |Tabitha         |26, 28, 30, 33        |36, 37, 38|
 |Maxie           |37, 38, 39            |37, 38, 38, 39|
 |Matt            |34, 34                |39, 39, 40|

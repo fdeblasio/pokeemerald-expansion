@@ -636,9 +636,9 @@
 #define TRAINER_ALAN                        630
 #define TRAINER_CLARK                       631
 #define TRAINER_ERIC                        632
-#define TRAINER_LUCAS_2                     633
+#define TRAINER_UNUSED_3                    633
 #define TRAINER_MIKE_1                      634
-#define TRAINER_MIKE_2                      635
+#define TRAINER_UNUSED_4                    635
 #define TRAINER_TRENT_2                     636
 #define TRAINER_TRENT_3                     637
 #define TRAINER_TRENT_4                     638

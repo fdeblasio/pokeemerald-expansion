@@ -96,7 +96,7 @@ Route119_EventScript_BattleMayMudkip::
 
 Route119_EventScript_DefeatedMay::
 	msgbox Route119_Text_MayPresentForYou, MSGBOX_DEFAULT
-	call Route119_EventScript_GiveFlyHM
+	call Route119_EventScript_GiveFlyTM
 	msgbox Route119_Text_MayExplainFly, MSGBOX_DEFAULT
 	goto Route119_EventScript_RivalExitScottArrive
 	end
@@ -126,12 +126,12 @@ Route119_EventScript_BattleBrendanMudkip::
 
 Route119_EventScript_DefeatedBrendan::
 	msgbox Route119_Text_BrendanIllGiveYouThis, MSGBOX_DEFAULT
-	call Route119_EventScript_GiveFlyHM
+	call Route119_EventScript_GiveFlyTM
 	msgbox Route119_Text_BrendanExplainFly, MSGBOX_DEFAULT
 	goto Route119_EventScript_RivalExitScottArrive
 	end
 
-Route119_EventScript_GiveFlyHM::
+Route119_EventScript_GiveFlyTM::
 	giveitem ITEM_TM_FLY
 	setflag FLAG_RECEIVED_TM_FLY
 	return
@@ -576,7 +576,7 @@ Route119_Text_ThoughtFlyByCatchingBirdMons:
 	.string "I thought you Fly by catching a whole\n"
 	.string "flock of Bird Pokémon, and then\l"
 	.string "hanging on to them somehow.\p"
-	.string "But it turns out there's an HM move\n"
+	.string "But it turns out there's an TM move\n"
 	.string "called Fly!\p"
 	.string "I wish I'd known about that a long\n"
 	.string "time ago…$"

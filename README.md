@@ -205,7 +205,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Moving an Pokemon in the PC seems to duplicate its item in the bag
 - When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
 - AI_FLAG_ACE_POKEMON doesn't seem to work
-- HGSS Pokédex shows evolutions multiple times (for this branch, only effects stone/location evos)
 - If you help one of the Lilycove Pokémon Center ladies, the other lady thinks you've already helped her as well
 
 ### Potentially just savefile issues due to playing while hacking

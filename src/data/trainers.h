@@ -1,3 +1,13 @@
+#define REMATCH_3_LEVEL_1 45
+#define REMATCH_3_LEVEL_2 REMATCH_3_LEVEL_1 - 1
+#define REMATCH_3_LEVEL_3 REMATCH_3_LEVEL_2 - 1
+#define REMATCH_3_LEVEL_4 REMATCH_3_LEVEL_3 - 1
+#define REMATCH_3_LEVEL_5 REMATCH_3_LEVEL_4 - 1
+#define REMATCH_3_LEVEL_6 REMATCH_3_LEVEL_5 - 1
+#define RIVAL_LILYCOVE_LEVEL_1 50
+#define RIVAL_LILYCOVE_LEVEL_2 RIVAL_LILYCOVE_LEVEL_1 - 1
+#define RIVAL_LILYCOVE_LEVEL_3 RIVAL_LILYCOVE_LEVEL_2 - 1
+
 [TRAINER_NONE] =
 {
     .trainerName = _(""),
@@ -854,17 +864,17 @@
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_BRELOOM,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_BELLOSSOM,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_ROSELIA,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -1049,13 +1059,13 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 38,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_SANDSLASH,
         .iv = TRAINER_PARTY_IVS(8, 8, 8, 8, 8, 8),
         .moves = {MOVE_BULLDOZE, MOVE_CRUSH_CLAW, MOVE_SAND_TOMB, MOVE_RAPID_SPIN}
         },
         {
-        .lvl = 38,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_CLAYDOL,
         .iv = TRAINER_PARTY_IVS(8, 8, 8, 8, 8, 8),
         .moves = {MOVE_EARTH_POWER, MOVE_PSYBEAM, MOVE_ANCIENT_POWER, MOVE_COSMIC_POWER}
@@ -1345,12 +1355,12 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_WAILMER,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_AZUMARILL,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -1496,13 +1506,13 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_LUDICOLO,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         .moves = {MOVE_SURF, MOVE_GIGA_DRAIN, MOVE_NATURE_POWER, MOVE_FAKE_OUT}
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_LINOONE,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         .moves = {MOVE_SURF, MOVE_SLASH, MOVE_PIN_MISSILE, MOVE_SAND_ATTACK}
@@ -1960,17 +1970,17 @@
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 34,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_MANECTRIC,
         .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
         },
         {
-        .lvl = 34,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_WAILMER,
         .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
         },
         {
-        .lvl = 34,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_HARIYAMA,
         .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
         }
@@ -2387,17 +2397,17 @@
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 34,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_PELIPPER,
         .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
         },
         {
-        .lvl = 34,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_CAMERUPT,
         .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
         },
         {
-        .lvl = 34,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_ROSELIA,
         .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
         }
@@ -2599,17 +2609,17 @@
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 40,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_DUSCLOPS,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 40,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_BANETTE,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 40,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_SABLEYE,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -2839,7 +2849,7 @@
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_1,
         .species = SPECIES_LINOONE,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         .heldItem = ITEM_NUGGET
@@ -3088,13 +3098,13 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 39,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_KECLEON,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         .moves = {MOVE_SLASH, MOVE_SHADOW_CLAW, MOVE_DETECT, MOVE_SCREECH}
         },
         {
-        .lvl = 39,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_SEVIPER,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         .moves = {MOVE_POISON_JAB, MOVE_CRUNCH, MOVE_GLARE, MOVE_SWORDS_DANCE}
@@ -3258,7 +3268,7 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_1,
         .species = SPECIES_GRUMPIG,
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_NUGGET,
@@ -3266,7 +3276,7 @@
         .nickname = COMPOUND_STRING("Mr. Pig")
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_1,
         .species = SPECIES_LINOONE,
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_NUGGET,
@@ -3441,12 +3451,12 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 38,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_RHYHORN,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 38,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_LAIRON,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -3989,7 +3999,7 @@
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 36,
+        .lvl = REMATCH_3_LEVEL_1,
         .species = SPECIES_SHARPEDO,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -4171,12 +4181,12 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 40,
+        .lvl = REMATCH_3_LEVEL_1,
         .species = SPECIES_BRELOOM,
         .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
         },
         {
-        .lvl = 40,
+        .lvl = REMATCH_3_LEVEL_1,
         .species = SPECIES_MACHOKE,
         .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
         }
@@ -4471,17 +4481,17 @@
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_MAGNETON,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_LOUDRED,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_ELECTRODE,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -4699,17 +4709,17 @@
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 34,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_CAMERUPT,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 34,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_SLUGMA,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 34,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_PELIPPER,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -4967,22 +4977,22 @@
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 35,
+        .lvl = REMATCH_3_LEVEL_4,
         .species = SPECIES_GOLBAT,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 35,
+        .lvl = REMATCH_3_LEVEL_4,
         .species = SPECIES_LINOONE,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 35,
+        .lvl = REMATCH_3_LEVEL_4,
         .species = SPECIES_SWALOT,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 35,
+        .lvl = REMATCH_3_LEVEL_4,
         .species = SPECIES_SWELLOW,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -5231,27 +5241,27 @@
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 37,
+        .lvl = REMATCH_3_LEVEL_5,
         .species = SPECIES_WURMPLE,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 37,
+        .lvl = REMATCH_3_LEVEL_5,
         .species = SPECIES_SILCOON,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 37,
+        .lvl = REMATCH_3_LEVEL_5,
         .species = SPECIES_HERACROSS,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 37,
+        .lvl = REMATCH_3_LEVEL_5,
         .species = SPECIES_PINSIR,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 37,
+        .lvl = REMATCH_3_LEVEL_5,
         .species = SPECIES_MASQUERAIN,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -5508,12 +5518,12 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_ALAKAZAM,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 41,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_SOLROCK,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -5739,12 +5749,12 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_ALAKAZAM,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 41,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_LUNATONE,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -5881,13 +5891,13 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 39,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_LINOONE,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         .moves = {MOVE_HEADBUTT, MOVE_PLAY_ROUGH, MOVE_PIN_MISSILE, MOVE_HONE_CLAWS}
         },
         {
-        .lvl = 39,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_MANECTRIC,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         .moves = {MOVE_DISCHARGE, MOVE_BITE, MOVE_ODOR_SLEUTH, MOVE_ROAR}
@@ -6578,17 +6588,17 @@
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_SHUPPET,
         .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_MEDITITE,
         .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_GALLADE,
         .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
         }
@@ -6726,17 +6736,17 @@
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_SKITTY,
         .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_LOUDRED,
         .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_BRELOOM,
         .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
         }
@@ -6881,13 +6891,13 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 34,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_LINOONE,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         .moves = {MOVE_SLASH, MOVE_TAIL_WHIP, MOVE_HONE_CLAWS, MOVE_ODOR_SLEUTH}
         },
         {
-        .lvl = 36,
+        .lvl = REMATCH_3_LEVEL_1,
         .species = SPECIES_HARIYAMA,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         .moves = {MOVE_WAKE_UP_SLAP, MOVE_BELLY_DRUM, MOVE_FAKE_OUT, MOVE_DETECT}
@@ -7068,7 +7078,7 @@
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 34,
+        .lvl = REMATCH_3_LEVEL_1,
         .species = SPECIES_SKITTY,
         .heldItem = ITEM_ORAN_BERRY
         }
@@ -7239,13 +7249,13 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_PLUSLE,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         .heldItem = ITEM_ORAN_BERRY
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_MINUN,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         .heldItem = ITEM_ORAN_BERRY
@@ -7351,7 +7361,7 @@
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 39,
+        .lvl = REMATCH_3_LEVEL_1,
         .species = SPECIES_HARIYAMA,
         .iv = TRAINER_PARTY_IVS(26, 26, 26, 26, 26, 26),
         .moves = {MOVE_WAKE_UP_SLAP, MOVE_SMELLING_SALTS, MOVE_KNOCK_OFF, MOVE_BULK_UP}
@@ -7474,12 +7484,12 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 37,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_HARIYAMA,
         .iv = TRAINER_PARTY_IVS(26, 26, 26, 26, 26, 26),
         },
         {
-        .lvl = 37,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_MEDICHAM,
         .iv = TRAINER_PARTY_IVS(26, 26, 26, 26, 26, 26),
         }
@@ -7782,12 +7792,12 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 35,
+        .lvl = REMATCH_3_LEVEL_1,
         .species = SPECIES_SWELLOW,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 35,
+        .lvl = REMATCH_3_LEVEL_1,
         .species = SPECIES_LINOONE,
         .ability = ABILITY_GLUTTONY,
         .nature = NATURE_JOLLY,
@@ -8276,27 +8286,27 @@
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_5,
         .species = SPECIES_WHISCASH,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_5,
         .species = SPECIES_SHARPEDO,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_5,
         .species = SPECIES_GYARADOS,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_5,
         .species = SPECIES_TENTACRUEL,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_5,
         .species = SPECIES_WAILMER,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -8516,17 +8526,17 @@
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_VOLTORB,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_MINUN,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_MAGNETON,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -8667,17 +8677,17 @@
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_ELECTRIKE,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_PLUSLE,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_MAGNETON,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -8786,7 +8796,7 @@
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 35,
+        .lvl = REMATCH_3_LEVEL_1,
         .species = SPECIES_DODRIO,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -8885,7 +8895,7 @@
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 35,
+        .lvl = REMATCH_3_LEVEL_1,
         .species = SPECIES_DODRIO,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -9687,12 +9697,12 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 38,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_XATU,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 38,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_ALTARIA,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -9956,25 +9966,25 @@
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_4,
         .species = SPECIES_TORKOAL,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         .moves = {MOVE_LAVA_PLUME, MOVE_SMOKESCREEN, MOVE_RAPID_SPIN, MOVE_SMOG}
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_4,
         .species = SPECIES_SHEDINJA,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         .moves = {MOVE_SHADOW_SNEAK, MOVE_DIG, MOVE_CONFUSE_RAY, MOVE_MUD_SLAP}
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_4,
         .species = SPECIES_NINJASK,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         .moves = {MOVE_AERIAL_ACE, MOVE_BATON_PASS, MOVE_AGILITY, MOVE_DOUBLE_TEAM}
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_4,
         .species = SPECIES_KOFFING,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         .moves = {MOVE_SLUDGE_BOMB, MOVE_SMOKESCREEN, MOVE_POISON_GAS, MOVE_ASSURANCE}
@@ -10184,12 +10194,12 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 34,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_HARIYAMA,
         .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
         },
         {
-        .lvl = 34,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_MEDITITE,
         .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
         }
@@ -10330,13 +10340,13 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 36,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_ROSELIA,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         .moves = {MOVE_GIGA_DRAIN, MOVE_LEECH_SEED, MOVE_GRASS_WHISTLE, MOVE_SUNNY_DAY}
         },
         {
-        .lvl = 36,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_CAMERUPT,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         .moves = {MOVE_LAVA_PLUME, MOVE_EARTH_POWER, MOVE_AMNESIA, MOVE_SUNNY_DAY}
@@ -11164,17 +11174,17 @@
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 35,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_BRELOOM,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 35,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_VILEPLUME,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 35,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_ALTARIA,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -12060,11 +12070,11 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_LOMBRE,
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_NUZLEAF,
         }
     },
@@ -12807,32 +12817,32 @@
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 34,
+        .lvl = REMATCH_3_LEVEL_6,
         .species = SPECIES_LOUDRED,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 34,
+        .lvl = REMATCH_3_LEVEL_6,
         .species = SPECIES_LINOONE,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 34,
+        .lvl = REMATCH_3_LEVEL_6,
         .species = SPECIES_LAIRON,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 34,
+        .lvl = REMATCH_3_LEVEL_6,
         .species = SPECIES_MIGHTYENA,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 34,
+        .lvl = REMATCH_3_LEVEL_6,
         .species = SPECIES_SWELLOW,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 34,
+        .lvl = REMATCH_3_LEVEL_6,
         .species = SPECIES_HARIYAMA,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -13055,32 +13065,32 @@
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 34,
+        .lvl = REMATCH_3_LEVEL_6,
         .species = SPECIES_PELIPPER,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 34,
+        .lvl = REMATCH_3_LEVEL_6,
         .species = SPECIES_BRELOOM,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 34,
+        .lvl = REMATCH_3_LEVEL_6,
         .species = SPECIES_AZUMARILL,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 34,
+        .lvl = REMATCH_3_LEVEL_6,
         .species = SPECIES_ROSELIA,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 34,
+        .lvl = REMATCH_3_LEVEL_6,
         .species = SPECIES_DELCATTY,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 34,
+        .lvl = REMATCH_3_LEVEL_6,
         .species = SPECIES_GOLDEEN,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -13281,17 +13291,17 @@
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 36,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_KECLEON,
         .iv = TRAINER_PARTY_IVS(8, 8, 8, 8, 8, 8),
         },
         {
-        .lvl = 36,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_GROVYLE,
         .iv = TRAINER_PARTY_IVS(8, 8, 8, 8, 8, 8),
         },
         {
-        .lvl = 36,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_BRELOOM,
         .iv = TRAINER_PARTY_IVS(8, 8, 8, 8, 8, 8),
         }
@@ -13469,12 +13479,12 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 36,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_GLOOM,
         .iv = TRAINER_PARTY_IVS(8, 8, 8, 8, 8, 8),
         },
         {
-        .lvl = 36,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_ROSELIA,
         .iv = TRAINER_PARTY_IVS(8, 8, 8, 8, 8, 8),
         }
@@ -14441,17 +14451,17 @@
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_TAILLOW,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_LOMBRE,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_BRELOOM,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -14788,17 +14798,17 @@
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 29,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_DUSTOX,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 29,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_SHEDINJA,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 29,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_NINJASK,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -15137,22 +15147,22 @@
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_4,
         .species = SPECIES_GRAVELER,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_4,
         .species = SPECIES_GRAVELER,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_4,
         .species = SPECIES_GRAVELER,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_3_LEVEL_4,
         .species = SPECIES_GRAVELER,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -15322,12 +15332,12 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 36,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_VOLBEAT,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 36,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_ILLUMISE,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -15824,31 +15834,31 @@
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 35,
+        .lvl = RIVAL_LILYCOVE_LEVEL_3,
         .species = SPECIES_VIBRAVA,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 35,
+        .lvl = RIVAL_LILYCOVE_LEVEL_3,
         .species = SPECIES_MAGCARGO,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 35,
+        .lvl = RIVAL_LILYCOVE_LEVEL_3,
         .species = SPECIES_CRAWDAUNT,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 36,
+        .lvl = RIVAL_LILYCOVE_LEVEL_2,
         .species = SPECIES_LOUDRED,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 37,
+        .lvl = RIVAL_LILYCOVE_LEVEL_1,
         .species = SPECIES_SCEPTILE,
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
         .gender = TRAINER_MON_MALE,
@@ -15867,31 +15877,31 @@
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 35,
+        .lvl = RIVAL_LILYCOVE_LEVEL_3,
         .species = SPECIES_VIBRAVA,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 35,
+        .lvl = RIVAL_LILYCOVE_LEVEL_3,
         .species = SPECIES_CRAWDAUNT,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 35,
+        .lvl = RIVAL_LILYCOVE_LEVEL_3,
         .species = SPECIES_BRELOOM,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 36,
+        .lvl = RIVAL_LILYCOVE_LEVEL_2,
         .species = SPECIES_LOUDRED,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 37,
+        .lvl = RIVAL_LILYCOVE_LEVEL_1,
         .species = SPECIES_BLAZIKEN,
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
         .gender = TRAINER_MON_MALE,
@@ -15910,31 +15920,31 @@
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 35,
+        .lvl = RIVAL_LILYCOVE_LEVEL_3,
         .species = SPECIES_VIBRAVA,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 35,
+        .lvl = RIVAL_LILYCOVE_LEVEL_3,
         .species = SPECIES_BRELOOM,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 35,
+        .lvl = RIVAL_LILYCOVE_LEVEL_3,
         .species = SPECIES_MAGCARGO,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 36,
+        .lvl = RIVAL_LILYCOVE_LEVEL_2,
         .species = SPECIES_LOUDRED,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 37,
+        .lvl = RIVAL_LILYCOVE_LEVEL_1,
         .species = SPECIES_SWAMPERT,
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
         .gender = TRAINER_MON_MALE,
@@ -15953,31 +15963,31 @@
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 35,
+        .lvl = RIVAL_LILYCOVE_LEVEL_3,
         .species = SPECIES_VIBRAVA,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = 35,
+        .lvl = RIVAL_LILYCOVE_LEVEL_3,
         .species = SPECIES_NINETALES,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = 35,
+        .lvl = RIVAL_LILYCOVE_LEVEL_3,
         .species = SPECIES_PELIPPER,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = 36,
+        .lvl = RIVAL_LILYCOVE_LEVEL_2,
         .species = SPECIES_LOUDRED,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = 37,
+        .lvl = RIVAL_LILYCOVE_LEVEL_1,
         .species = SPECIES_SCEPTILE,
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
         .gender = TRAINER_MON_FEMALE,
@@ -15996,31 +16006,31 @@
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 35,
+        .lvl = RIVAL_LILYCOVE_LEVEL_3,
         .species = SPECIES_VIBRAVA,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = 35,
+        .lvl = RIVAL_LILYCOVE_LEVEL_3,
         .species = SPECIES_PELIPPER,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = 35,
+        .lvl = RIVAL_LILYCOVE_LEVEL_3,
         .species = SPECIES_CACTURNE,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = 36,
+        .lvl = RIVAL_LILYCOVE_LEVEL_2,
         .species = SPECIES_LOUDRED,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = 37,
+        .lvl = RIVAL_LILYCOVE_LEVEL_1,
         .species = SPECIES_BLAZIKEN,
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
         .gender = TRAINER_MON_FEMALE,
@@ -16039,31 +16049,31 @@
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 35,
+        .lvl = RIVAL_LILYCOVE_LEVEL_3,
         .species = SPECIES_VIBRAVA,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = 35,
+        .lvl = RIVAL_LILYCOVE_LEVEL_3,
         .species = SPECIES_CACTURNE,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = 35,
+        .lvl = RIVAL_LILYCOVE_LEVEL_3,
         .species = SPECIES_NINETALES,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = 36,
+        .lvl = RIVAL_LILYCOVE_LEVEL_2,
         .species = SPECIES_LOUDRED,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = 37,
+        .lvl = RIVAL_LILYCOVE_LEVEL_1,
         .species = SPECIES_SWAMPERT,
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
         .gender = TRAINER_MON_FEMALE,
@@ -20338,17 +20348,17 @@
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 37,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_NOSEPASS,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 37,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_CLAYDOL,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 37,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_SANDSLASH,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -20450,17 +20460,17 @@
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 36,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_PELIPPER,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 36,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_MACHOKE,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 36,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_TENTACRUEL,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -20773,17 +20783,17 @@
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 39,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_SPINDA,
         .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
         },
         {
-        .lvl = 39,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_LOUDRED,
         .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
         },
         {
-        .lvl = 39,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_SLAKING,
         .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
         }
@@ -20887,17 +20897,17 @@
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 39,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_ELECTRODE,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 39,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_MANECTRIC,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 39,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_LOUDRED,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -20994,17 +21004,17 @@
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 36,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_MACHOKE,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 36,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_CAMERUPT,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 36,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_GRAVELER,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -21121,32 +21131,32 @@
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 36,
+        .lvl = REMATCH_3_LEVEL_6,
         .species = SPECIES_SKITTY,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 36,
+        .lvl = REMATCH_3_LEVEL_6,
         .species = SPECIES_MIGHTYENA,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 36,
+        .lvl = REMATCH_3_LEVEL_6,
         .species = SPECIES_LINOONE,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 36,
+        .lvl = REMATCH_3_LEVEL_6,
         .species = SPECIES_LOMBRE,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 36,
+        .lvl = REMATCH_3_LEVEL_6,
         .species = SPECIES_NUZLEAF,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 36,
+        .lvl = REMATCH_3_LEVEL_6,
         .species = SPECIES_TAILLOW,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }
@@ -21273,17 +21283,17 @@
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 37,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_LUVDISC,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 37,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_WAILMER,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         },
         {
-        .lvl = 37,
+        .lvl = REMATCH_3_LEVEL_3,
         .species = SPECIES_SEADRA,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
         }

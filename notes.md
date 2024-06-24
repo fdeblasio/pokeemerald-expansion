@@ -68,8 +68,7 @@ upcoming
 
 ### Trainers
 - Readjust wild/trainer levels so that parties aren't overpowered?
-- Have each rematch only be possible after certain badges? Would make rematch levels more consistent
-- Go back and make rematch levels stronger/more consistent (don't forget to update evolutions) (first see if they can be locked behind badges)
+- Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)
 - Elite Four rematches (wouldn't need to use Match Call, could probably do if statement in scripts.inc)
 - Update Elite Four palettes
     - battle_transitions/*_bg.pal to better match types

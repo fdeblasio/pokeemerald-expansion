@@ -92,7 +92,6 @@ Route121_SafariZoneEntrance_EventScript_NoPokeblockCase::
 
 Route121_SafariZoneEntrance_EventScript_MovePlayerBackFromCounter::
 	closemessage
-	hidemoneybox
 	applymovement OBJ_EVENT_ID_PLAYER, Route121_SafariZoneEntrance_Movement_BackAwayFromCounter
 	waitmovement 0
 	releaseall

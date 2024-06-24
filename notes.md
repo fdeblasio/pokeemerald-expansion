@@ -45,6 +45,7 @@ upcoming
 - Combine two meta files (notes.md and README.md)?
     Include more changes, even if general like Battle Frontier edits
 - Remove unused code
+- Move unused trainers to bottom (https://github.com/fdeblasio/pokeemerald-expansion/commit/87bc4d8aa9b70117988a2893f9598eeff3d90a08)
 
 ### Pokémon
 - Eventually remove RSE and/or BDSP teachable moves

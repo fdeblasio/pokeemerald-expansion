@@ -11272,7 +11272,7 @@
     },
 },
 
-[TRAINER_GINA_AND_MIA_1] =
+[TRAINER_GINA_AND_MIA] =
 {
     .trainerName = _("Gina & Mia"),
     .trainerClass = TRAINER_CLASS_TWINS,
@@ -11335,9 +11335,9 @@
     },
 },
 
-[TRAINER_GINA_AND_MIA_2] =
+[TRAINER_UNUSED_3] =
 {
-    .trainerName = _("Gina & Mia"),
+    .trainerName = _("Unused"),
     .trainerClass = TRAINER_CLASS_TWINS,
     .trainerPic = TRAINER_PIC_TWINS,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
@@ -14934,7 +14934,7 @@
     },
 },
 
-[TRAINER_LUCAS_1] =
+[TRAINER_LUCAS] =
 {
     .trainerName = _("Lucas"),
     .trainerClass = TRAINER_CLASS_HIKER,
@@ -15018,7 +15018,7 @@
     },
 },
 
-[TRAINER_UNUSED_3] =
+[TRAINER_UNUSED_4] =
 {
     .trainerName = _("Unused"),
     .trainerClass = TRAINER_CLASS_HIKER,
@@ -15036,9 +15036,9 @@
     },
 },
 
-[TRAINER_MIKE_1] =
+[TRAINER_UNUSED_5] =
 {
-    .trainerName = _("Mike"),
+    .trainerName = _("Unused"),
     .trainerClass = TRAINER_CLASS_HIKER,
     .trainerPic = TRAINER_PIC_HIKER,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
@@ -15059,9 +15059,9 @@
     },
 },
 
-[TRAINER_UNUSED_4] =
+[TRAINER_MIKE] =
 {
-    .trainerName = _("Unused"),
+    .trainerName = _("Mike"),
     .trainerClass = TRAINER_CLASS_HIKER,
     .trainerPic = TRAINER_PIC_HIKER,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,

@@ -320,7 +320,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Matt/Shelly     |N/A/37, 37            |42, 42, 43/42, 42, 43|
 |Archie          |41, 41, 43            |43, 43, 44, 45|
 |Juan            |41, 41, 43, 43, 46    |44, 44, 45, 45, 47|
-|Rayquaza        |70                    |50|
+|Rayquaza        |70                    |60|
 |Wally           |41, 43, 44, 44, 45    |46, 46, 47, 47, 49|
 |Sidney          |46, 46, 48, 48, 49    |50, 50, 51, 51, 52|
 |Phoebe          |48, 49, 49, 50, 51    |51, 51, 52, 52, 53|

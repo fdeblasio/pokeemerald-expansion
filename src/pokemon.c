@@ -5235,7 +5235,9 @@ void MonGainEVs(struct Pokemon *mon, u16 defeatedSpecies)
         switch (i)
         {
         case STAT_HP:
-            if (holdEffect == HOLD_EFFECT_POWER_ITEM && stat == STAT_HP)
+            if (GetMonData(mon, MON_DATA_SPECIES, 0) == SPECIES_SHEDINJA)
+                evIncrease = 0;
+            else if (holdEffect == HOLD_EFFECT_POWER_ITEM && stat == STAT_HP)
                 evIncrease = (gSpeciesInfo[defeatedSpecies].evYield_HP + bonus) * multiplier;
             else
                 evIncrease = gSpeciesInfo[defeatedSpecies].evYield_HP * multiplier;

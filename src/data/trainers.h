@@ -463,7 +463,7 @@
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 36,
+        .lvl = 42,
         .species = SPECIES_CORPHISH,
         }
     },
@@ -480,7 +480,7 @@
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 36,
+        .lvl = 42,
         .species = SPECIES_TENTACOOL,
         }
     },
@@ -497,11 +497,11 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 35,
+        .lvl = 41,
         .species = SPECIES_CARVANHA,
         },
         {
-        .lvl = 35,
+        .lvl = 41,
         .species = SPECIES_WAILMER,
         }
     },
@@ -13616,11 +13616,11 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 35,
+        .lvl = 41,
         .species = SPECIES_STARYU,
         },
         {
-        .lvl = 35,
+        .lvl = 41,
         .species = SPECIES_GOLDEEN,
         }
     },

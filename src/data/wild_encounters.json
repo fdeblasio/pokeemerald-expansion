@@ -1638,53 +1638,53 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               }
             ]
@@ -1756,53 +1756,53 @@
             "encounter_rate": 25,
             "mons": [
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "PICHU"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "DODUO"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "GIRAFARIG"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "GIRAFARIG"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "NATU"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "NATU"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "GLOOM"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "WYNAUT"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "GLOOM"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "WYNAUT"
               }
             ]
@@ -1815,23 +1815,23 @@
             "encounter_rate": 4,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CLAMPERL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CHINCHOU"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "RELICANTH"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "RELICANTH"
               }
             ]
@@ -2673,53 +2673,53 @@
             "encounter_rate": 15,
             "mons": [
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "TROPIUS"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "GLOOM"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "TROPIUS"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "GLOOM"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "LINOONE"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "LINOONE"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "TROPIUS"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "GLOOM"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "LINOONE"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "LINOONE"
               }
             ]
@@ -2728,23 +2728,23 @@
             "encounter_rate": 4,
             "mons": [
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "TENTACOOL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "PELIPPER"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "PELIPPER"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "PELIPPER"
               }
             ]
@@ -2753,18 +2753,18 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "FEEBAS"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "FEEBAS"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "CARVANHA"
               },
               {
@@ -3045,23 +3045,23 @@
             "encounter_rate": 1,
             "mons": [
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "PELIPPER"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "PELIPPER"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "PELIPPER"
               }
             ]
@@ -3070,18 +3070,18 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "MAGIKARP"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "TENTACOOL"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "WAILMER"
               },
               {
@@ -3114,53 +3114,53 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "GLOOM"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "LINOONE"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "LINOONE"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "PELIPPER"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "KECLEON"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "PELIPPER"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "KECLEON"
               }
             ]
@@ -3169,23 +3169,23 @@
             "encounter_rate": 1,
             "mons": [
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "PELIPPER"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "PELIPPER"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "PELIPPER"
               }
             ]
@@ -3194,18 +3194,18 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "MAGIKARP"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "TENTACOOL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "WAILMER"
               },
               {
@@ -3238,53 +3238,53 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               }
             ]
@@ -3297,53 +3297,53 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               }
             ]
@@ -3356,53 +3356,53 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               }
             ]
@@ -3415,53 +3415,53 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               }
             ]
@@ -3474,53 +3474,53 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               }
             ]
@@ -3533,53 +3533,53 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "VULPIX"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "MEDITITE"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "VULPIX"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "MEDITITE"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "PELIPPER"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "PELIPPER"
               }
             ]
@@ -3592,53 +3592,53 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "CHINGLING"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "CHINGLING"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "CHINGLING"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "CHINGLING"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "DUSKULL"
               },
               {
-                "min_level": 34,
-                "max_level": 36,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SHUPPET"
               }
             ]
@@ -3779,23 +3779,23 @@
             "encounter_rate": 1,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "PELIPPER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "PELIPPER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "PELIPPER"
               }
             ]
@@ -3804,38 +3804,38 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MAGIKARP"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACOOL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILMER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILORD"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILORD"
               }
             ]
@@ -3848,23 +3848,23 @@
             "encounter_rate": 1,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "PELIPPER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "PELIPPER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "PELIPPER"
               }
             ]
@@ -3873,38 +3873,38 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MAGIKARP"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACOOL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILMER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILORD"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILORD"
               }
             ]
@@ -3917,23 +3917,23 @@
             "encounter_rate": 1,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CORSOLA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "LUVDISC"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "LUVDISC"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "LUVDISC"
               }
             ]
@@ -3942,38 +3942,38 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MAGIKARP"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "LUVDISC"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CORSOLA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "LUVDISC"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CORSOLA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "LUVDISC"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CORSOLA"
               }
             ]
@@ -3986,23 +3986,23 @@
             "encounter_rate": 1,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "PELIPPER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "PELIPPER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILORD"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILORD"
               }
             ]
@@ -4011,38 +4011,38 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MAGIKARP"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACOOL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILMER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILORD"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILORD"
               }
             ]
@@ -4055,53 +4055,53 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 40,
+                "min_level": 50,
+                "max_level": 50,
                 "species": "WYNAUT"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
+                "min_level": 50,
+                "max_level": 50,
                 "species": "WYNAUT"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
+                "min_level": 50,
+                "max_level": 50,
                 "species": "WYNAUT"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
+                "min_level": 50,
+                "max_level": 50,
                 "species": "WYNAUT"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
+                "min_level": 50,
+                "max_level": 50,
                 "species": "WYNAUT"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
+                "min_level": 50,
+                "max_level": 50,
                 "species": "WYNAUT"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
+                "min_level": 50,
+                "max_level": 50,
                 "species": "WOBBUFFET"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
+                "min_level": 50,
+                "max_level": 50,
                 "species": "WOBBUFFET"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
+                "min_level": 50,
+                "max_level": 50,
                 "species": "WOBBUFFET"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
+                "min_level": 50,
+                "max_level": 50,
                 "species": "WOBBUFFET"
               }
             ]
@@ -4110,23 +4110,23 @@
             "encounter_rate": 1,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "PELIPPER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "PELIPPER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "PELIPPER"
               }
             ]
@@ -4135,38 +4135,38 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MAGIKARP"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACOOL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILMER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILORD"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILORD"
               }
             ]
@@ -4179,23 +4179,23 @@
             "encounter_rate": 1,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "PELIPPER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "PELIPPER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "PELIPPER"
               }
             ]
@@ -4204,38 +4204,38 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MAGIKARP"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACOOL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILMER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILORD"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILORD"
               }
             ]
@@ -4248,23 +4248,23 @@
             "encounter_rate": 1,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "PELIPPER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "PELIPPER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "PELIPPER"
               }
             ]
@@ -4273,38 +4273,38 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MAGIKARP"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "HORSEA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILMER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "SEADRA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILMER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "SEADRA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILMER"
               }
             ]
@@ -4317,23 +4317,23 @@
             "encounter_rate": 1,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "PELIPPER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "PELIPPER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "PELIPPER"
               }
             ]
@@ -4342,38 +4342,38 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MAGIKARP"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "HORSEA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILMER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "SEADRA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILMER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "SEADRA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILMER"
               }
             ]
@@ -4455,23 +4455,23 @@
             "encounter_rate": 4,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               }
             ]
@@ -4480,38 +4480,38 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MAGIKARP"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACOOL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACOOL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               }
             ]
@@ -4524,53 +4524,53 @@
             "encounter_rate": 4,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               }
             ]
@@ -4583,53 +4583,53 @@
             "encounter_rate": 4,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               }
             ]
@@ -4642,53 +4642,53 @@
             "encounter_rate": 4,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               }
             ]
@@ -4701,53 +4701,53 @@
             "encounter_rate": 4,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               }
             ]
@@ -4760,53 +4760,53 @@
             "encounter_rate": 4,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               }
             ]
@@ -4819,53 +4819,53 @@
             "encounter_rate": 4,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               }
             ]
@@ -4874,23 +4874,23 @@
             "encounter_rate": 4,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CARVANHA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               }
             ]
@@ -4899,38 +4899,38 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MAGIKARP"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CARVANHA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILMER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "SHARPEDO"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILORD"
               }
             ]
@@ -4943,53 +4943,53 @@
             "encounter_rate": 4,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               }
             ]
@@ -4998,23 +4998,23 @@
             "encounter_rate": 4,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CARVANHA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               }
             ]
@@ -5023,38 +5023,38 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MAGIKARP"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CARVANHA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILMER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "SHARPEDO"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILORD"
               }
             ]
@@ -5067,53 +5067,53 @@
             "encounter_rate": 4,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MIGHTYENA"
               }
             ]
@@ -5126,23 +5126,23 @@
             "encounter_rate": 4,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CARVANHA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               }
             ]
@@ -5151,38 +5151,38 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MAGIKARP"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CARVANHA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILMER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "SHARPEDO"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CRAWDAUNT"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "TENTACRUEL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILORD"
               }
             ]
@@ -5195,53 +5195,53 @@
             "encounter_rate": 4,
             "mons": [
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "MAWILE"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "SABLEYE"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "GOLBAT"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "GOLBAT"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "MAWILE"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "SABLEYE"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "GOLBAT"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "GOLBAT"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "GOLBAT"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "GOLBAT"
               }
             ]
@@ -5254,53 +5254,53 @@
             "encounter_rate": 4,
             "mons": [
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "MAWILE"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "SABLEYE"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "GOLBAT"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "GOLBAT"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "MAWILE"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "SABLEYE"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "GOLBAT"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "GOLBAT"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "GOLBAT"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "GOLBAT"
               }
             ]
@@ -5549,53 +5549,53 @@
             "encounter_rate": 25,
             "mons": [
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "GIRAFARIG"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "NATU"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "PICHU"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "PICHU"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "DODUO"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "DODUO"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "GLOOM"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "WYNAUT"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "GLOOM"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "WYNAUT"
               }
             ]
@@ -5604,23 +5604,23 @@
             "encounter_rate": 9,
             "mons": [
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "PSYDUCK"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "PSYDUCK"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "PSYDUCK"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "PSYDUCK"
               }
             ]
@@ -5629,18 +5629,18 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "MAGIKARP"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "GOLDEEN"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "GOLDEEN"
               },
               {
@@ -5673,53 +5673,53 @@
             "encounter_rate": 25,
             "mons": [
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "PHANPY"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "HERACROSS"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "PHANPY"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "HERACROSS"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "NATU"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "GLOOM"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "NATU"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "GLOOM"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "NATU"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "GLOOM"
               }
             ]
@@ -5732,53 +5732,53 @@
             "encounter_rate": 25,
             "mons": [
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "RHYHORN"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "PINSIR"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "RHYHORN"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "PINSIR"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "DODUO"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "GLOOM"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "DODUO"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "GLOOM"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "DODUO"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "GLOOM"
               }
             ]
@@ -5787,23 +5787,23 @@
             "encounter_rate": 9,
             "mons": [
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "PSYDUCK"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "PSYDUCK"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "PSYDUCK"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "GOLDUCK"
               }
             ]
@@ -5812,18 +5812,18 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "MAGIKARP"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "GOLDEEN"
               },
               {
-                "min_level": 33,
-                "max_level": 35,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "GOLDEEN"
               },
               {
@@ -6777,23 +6777,23 @@
             "encounter_rate": 1,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CARVANHA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "PELIPPER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "PELIPPER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "PELIPPER"
               }
             ]
@@ -6802,18 +6802,18 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MAGIKARP"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "STARYU"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILMER"
               },
               {
@@ -7053,23 +7053,23 @@
             "encounter_rate": 1,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILMER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "PELIPPER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "PELIPPER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "PELIPPER"
               }
             ]
@@ -7078,38 +7078,38 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MAGIKARP"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CARVANHA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILMER"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "SHARPEDO"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILORD"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "SHARPEDO"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "WAILORD"
               }
             ]
@@ -7122,23 +7122,23 @@
             "encounter_rate": 1,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "LUVDISC"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CORSOLA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CORSOLA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CORSOLA"
               }
             ]
@@ -7147,38 +7147,38 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MAGIKARP"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "LUVDISC"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CORSOLA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "LUVDISC"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CORSOLA"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "LUVDISC"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CORSOLA"
               }
             ]
@@ -7260,23 +7260,23 @@
             "encounter_rate": 4,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CLAMPERL"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "CHINCHOU"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "RELICANTH"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "RELICANTH"
               }
             ]
@@ -7348,53 +7348,53 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "MAWILE"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "SABLEYE"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "CLAYDOL"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "CLAYDOL"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "DUSCLOPS"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "BANETTE"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "GOLBAT"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "GOLBAT"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "DUSCLOPS"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "BANETTE"
               }
             ]
@@ -7407,23 +7407,23 @@
             "encounter_rate": 1,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MAGIKARP"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MAGIKARP"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MAGIKARP"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "GYARADOS"
               }
             ]
@@ -7432,38 +7432,38 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MAGIKARP"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MAGIKARP"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "MAGIKARP"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "GYARADOS"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "GYARADOS"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "GYARADOS"
               },
               {
-                "min_level": 40,
-                "max_level": 42,
+                "min_level": 50,
+                "max_level": 52,
                 "species": "GYARADOS"
               }
             ]
@@ -7476,53 +7476,53 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "MAWILE"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "SABLEYE"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "CLAYDOL"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "CLAYDOL"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "DUSCLOPS"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "BANETTE"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "GOLBAT"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "GOLBAT"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "DUSCLOPS"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "BANETTE"
               }
             ]
@@ -7535,53 +7535,53 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "CLAYDOL"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "ALTARIA"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "MAWILE"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "SABLEYE"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "DUSCLOPS"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "BANETTE"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "MAWILE"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "SABLEYE"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "DUSCLOPS"
               },
               {
-                "min_level": 43,
-                "max_level": 45,
+                "min_level": 53,
+                "max_level": 55,
                 "species": "BANETTE"
               }
             ]
@@ -7777,53 +7777,53 @@
             "encounter_rate": 5,
             "mons": [
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "NUMEL"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "SLUGMA"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "TORKOAL"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "TORKOAL"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "BALTOY"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "BALTOY"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "VULPIX"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "HOUNDOUR"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "VULPIX"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "HOUNDOUR"
               }
             ]
@@ -7836,53 +7836,53 @@
             "encounter_rate": 5,
             "mons": [
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "NUMEL"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "SLUGMA"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "TORKOAL"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "TORKOAL"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "BALTOY"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "BALTOY"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "VULPIX"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "HOUNDOUR"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "VULPIX"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "HOUNDOUR"
               }
             ]
@@ -7895,53 +7895,53 @@
             "encounter_rate": 5,
             "mons": [
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "NUMEL"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "SLUGMA"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "TORKOAL"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "TORKOAL"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "BALTOY"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "BALTOY"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "VULPIX"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "HOUNDOUR"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "VULPIX"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "HOUNDOUR"
               }
             ]
@@ -7954,53 +7954,53 @@
             "encounter_rate": 5,
             "mons": [
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "NUMEL"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "SLUGMA"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "TORKOAL"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "TORKOAL"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "BALTOY"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "BALTOY"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "VULPIX"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "HOUNDOUR"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "VULPIX"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "HOUNDOUR"
               }
             ]
@@ -8013,53 +8013,53 @@
             "encounter_rate": 5,
             "mons": [
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "NUMEL"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "SLUGMA"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "TORKOAL"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "TORKOAL"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "BALTOY"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "BALTOY"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "VULPIX"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "HOUNDOUR"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "VULPIX"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "HOUNDOUR"
               }
             ]
@@ -8072,53 +8072,53 @@
             "encounter_rate": 5,
             "mons": [
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "NUMEL"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "SLUGMA"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "TORKOAL"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "TORKOAL"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "BALTOY"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "BALTOY"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "VULPIX"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "HOUNDOUR"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "VULPIX"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "HOUNDOUR"
               }
             ]
@@ -8131,53 +8131,53 @@
             "encounter_rate": 5,
             "mons": [
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "NUMEL"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "SLUGMA"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "TORKOAL"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "TORKOAL"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "BALTOY"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "BALTOY"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "VULPIX"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "HOUNDOUR"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "VULPIX"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "HOUNDOUR"
               }
             ]
@@ -8190,53 +8190,53 @@
             "encounter_rate": 5,
             "mons": [
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "NUMEL"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "SLUGMA"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "TORKOAL"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "TORKOAL"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "BALTOY"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "BALTOY"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "VULPIX"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "HOUNDOUR"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "VULPIX"
               },
               {
-                "min_level": 35,
-                "max_level": 37,
+                "min_level": 45,
+                "max_level": 47,
                 "species": "HOUNDOUR"
               }
             ]

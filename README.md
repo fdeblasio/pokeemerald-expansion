@@ -202,7 +202,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 ## Known Bugs
 - Due to the increased walking speed, followers will sometimes clip through tiles, especially after hopping off a ledge
 - Followers will stop following you if you use the naming screen from the party menu. It will start to follow you again if you talk to it
-- Trying to enter the Safari Zone without a Pokeblock Case locks the player
 - Moving an item in the PC seems to duplicate it in the bag
 - When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
 - AI_FLAG_ACE_POKEMON doesn't seem to work

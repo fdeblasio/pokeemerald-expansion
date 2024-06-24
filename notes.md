@@ -66,16 +66,16 @@ upcoming
 - Xaman's TM Case: https://www.pokecommunity.com/showpost.php?p=10378278
 
 ### Trainers
-- Readjust wild/trainer levels so that parties aren't overpowered
+- Readjust wild/trainer levels so that parties aren't overpowered?
 - Have each rematch only be possible after certain badges? Would make rematch levels more consistent
-- Go back and make rematch levels stronger/more consistent (first see if they can be locked behind badges)
+- Go back and make rematch levels stronger/more consistent (don't forget to update evolutions) (first see if they can be locked behind badges)
 - Elite Four rematches (wouldn't need to use Match Call, could probably do if statement in scripts.inc)
 - Update Elite Four palettes
     - battle_transitions/*_bg.pal to better match types
     - stadium/palette3-7.pal to better match ypes
 - Brendan/May/Steven rematches? (Steven's would be the same team but re-battleable)
 - Trainer customization:
-    - Rematches should have consistent values (gender, IVs (unless maxed), etc.)
+    - All rematches should have consistent values (gender, IVs (unless maxed), etc.)
     - Maybe all Rich Boys have shinies (would need to have different Pokémon from each other instead of all having Zigzagoon)
     - Calvin could have a good Nature/EV
     - Leaders would have optimal Abilities/EVs/IVs/Natures

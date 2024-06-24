@@ -1731,6 +1731,8 @@ static void SetRematchIdForTrainer(const struct RematchTrainer *table, u32 table
 
         if (trainerId == 0)
             break;
+        if (!FlagGet(FLAG_BADGE05_GET + i))
+            break;
         if (!HasTrainerBeenFought(trainerId))
             break;
     }
@@ -1767,8 +1769,8 @@ static bool32 UpdateRandomTrainerRematches(const struct RematchTrainer *table, u
             // Trainer already wants a rematch. Don't bother updating it.
             return TRUE;
         }
-        else if (TrainerIsMatchCallRegistered(i) && ((Random() % 100) <= 30))
-            // 31% chance of getting a rematch.
+        else if (TrainerIsMatchCallRegistered(i) && ((Random() % 100) <= 34))
+            // 33% chance of getting a rematch.
         {
             SetRematchIdForTrainer(table, i);
             return TRUE;
@@ -1859,6 +1861,8 @@ u16 GetRematchTrainerIdFromTable(const struct RematchTrainer *table, u16 firstBa
     {
         if (trainerEntry->trainerIds[i] == 0) // previous entry was this trainer's last one
             return trainerEntry->trainerIds[i - 1];
+        if (!FlagGet(FLAG_BADGE05_GET + i))
+            return trainerEntry->trainerIds[i];
         if (!HasTrainerBeenFought(trainerEntry->trainerIds[i]))
             return trainerEntry->trainerIds[i];
     }

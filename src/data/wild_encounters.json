@@ -36,53 +36,53 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": "ROUTE_101_LEVEL",
+                "max_level": "ROUTE_101_LEVEL",
                 "species": "ZIGZAGOON"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": "ROUTE_101_LEVEL",
+                "max_level": "ROUTE_101_LEVEL",
                 "species": "ZIGZAGOON"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": "ROUTE_101_LEVEL",
+                "max_level": "ROUTE_101_LEVEL",
                 "species": "POOCHYENA"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": "ROUTE_101_LEVEL",
+                "max_level": "ROUTE_101_LEVEL",
                 "species": "POOCHYENA"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": "ROUTE_101_LEVEL",
+                "max_level": "ROUTE_101_LEVEL",
                 "species": "POOCHYENA"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": "ROUTE_101_LEVEL",
+                "max_level": "ROUTE_101_LEVEL",
                 "species": "POOCHYENA"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": "ROUTE_101_LEVEL",
+                "max_level": "ROUTE_101_LEVEL",
                 "species": "WURMPLE"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": "ROUTE_101_LEVEL",
+                "max_level": "ROUTE_101_LEVEL",
                 "species": "WURMPLE"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": "ROUTE_101_LEVEL",
+                "max_level": "ROUTE_101_LEVEL",
                 "species": "WURMPLE"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": "ROUTE_101_LEVEL",
+                "max_level": "ROUTE_101_LEVEL",
                 "species": "WURMPLE"
               }
             ]
@@ -95,53 +95,53 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": "ROUTE_102_LEVEL",
+                "max_level": "ROUTE_102_LEVEL",
                 "species": "SEEDOT"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": "ROUTE_102_LEVEL",
+                "max_level": "ROUTE_102_LEVEL",
                 "species": "LOTAD"
               },
               {
-                "min_level": 4,
-                "max_level": 4,
+                "min_level": "ROUTE_102_LEVEL",
+                "max_level": "ROUTE_102_LEVEL",
                 "species": "SEEDOT"
               },
               {
-                "min_level": 4,
-                "max_level": 4,
+                "min_level": "ROUTE_102_LEVEL",
+                "max_level": "ROUTE_102_LEVEL",
                 "species": "LOTAD"
               },
               {
-                "min_level": 4,
-                "max_level": 4,
+                "min_level": "ROUTE_102_LEVEL",
+                "max_level": "ROUTE_102_LEVEL",
                 "species": "RALTS"
               },
               {
-                "min_level": 4,
-                "max_level": 4,
+                "min_level": "ROUTE_102_LEVEL",
+                "max_level": "ROUTE_102_LEVEL",
                 "species": "RALTS"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": "ROUTE_102_LEVEL",
+                "max_level": "ROUTE_102_LEVEL",
                 "species": "RALTS"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": "ROUTE_102_LEVEL",
+                "max_level": "ROUTE_102_LEVEL",
                 "species": "SURSKIT"
               },
               {
-                "min_level": 4,
-                "max_level": 4,
+                "min_level": "ROUTE_102_LEVEL",
+                "max_level": "ROUTE_102_LEVEL",
                 "species": "RALTS"
               },
               {
-                "min_level": 4,
-                "max_level": 4,
+                "min_level": "ROUTE_102_LEVEL",
+                "max_level": "ROUTE_102_LEVEL",
                 "species": "SURSKIT"
               }
             ]
@@ -219,53 +219,53 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": "ROUTE_103_LEVEL",
+                "max_level": "ROUTE_103_LEVEL",
                 "species": "WINGULL"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": "ROUTE_103_LEVEL",
+                "max_level": "ROUTE_103_LEVEL",
                 "species": "WINGULL"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": "ROUTE_103_LEVEL",
+                "max_level": "ROUTE_103_LEVEL",
                 "species": "WINGULL"
               },
               {
-                "min_level": 4,
-                "max_level": 4,
+                "min_level": "ROUTE_103_LEVEL",
+                "max_level": "ROUTE_103_LEVEL",
                 "species": "POOCHYENA"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": "ROUTE_103_LEVEL",
+                "max_level": "ROUTE_103_LEVEL",
                 "species": "ZIGZAGOON"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": "ROUTE_103_LEVEL",
+                "max_level": "ROUTE_103_LEVEL",
                 "species": "POOCHYENA"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": "ROUTE_103_LEVEL",
+                "max_level": "ROUTE_103_LEVEL",
                 "species": "ZIGZAGOON"
               },
               {
-                "min_level": 4,
-                "max_level": 4,
+                "min_level": "ROUTE_103_LEVEL",
+                "max_level": "ROUTE_103_LEVEL",
                 "species": "ZIGZAGOON"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": "ROUTE_103_LEVEL",
+                "max_level": "ROUTE_103_LEVEL",
                 "species": "POOCHYENA"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": "ROUTE_103_LEVEL",
+                "max_level": "ROUTE_103_LEVEL",
                 "species": "ZIGZAGOON"
               }
             ]

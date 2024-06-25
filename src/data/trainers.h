@@ -3498,13 +3498,6 @@
     },
 },
 
-#define REMATCH_3_LEVEL_1 45
-#define REMATCH_3_LEVEL_2 REMATCH_3_LEVEL_1 - 1
-#define REMATCH_3_LEVEL_3 REMATCH_3_LEVEL_2 - 1
-#define REMATCH_3_LEVEL_4 REMATCH_3_LEVEL_3 - 1
-#define REMATCH_3_LEVEL_5 REMATCH_3_LEVEL_4 - 1
-#define REMATCH_3_LEVEL_6 REMATCH_3_LEVEL_5 - 1
-
 #define HIKER_INFO                       \
     .trainerClass = TRAINER_CLASS_HIKER, \
     .trainerPic = TRAINER_PIC_HIKER,     \
@@ -3519,6 +3512,158 @@
     .trainerClass = TRAINER_CLASS_COLLECTOR, \
     .trainerPic = TRAINER_PIC_COLLECTOR,     \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
+
+#define YOUNGSTER_INFO                       \
+    .trainerClass = TRAINER_CLASS_YOUNGSTER, \
+    .trainerPic = TRAINER_PIC_YOUNGSTER,     \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE
+
+#define REMATCH_2_LEVEL_1 35
+#define REMATCH_2_LEVEL_2 REMATCH_2_LEVEL_1 - 1
+#define REMATCH_2_LEVEL_3 REMATCH_2_LEVEL_1 - 2
+#define REMATCH_2_LEVEL_4 REMATCH_2_LEVEL_1 - 3
+#define REMATCH_2_LEVEL_5 REMATCH_2_LEVEL_1 - 4
+#define REMATCH_2_LEVEL_6 REMATCH_2_LEVEL_1 - 5
+
+#define REMATCH_3_LEVEL_1 45
+#define REMATCH_3_LEVEL_2 REMATCH_3_LEVEL_1 - 1
+#define REMATCH_3_LEVEL_3 REMATCH_3_LEVEL_1 - 2
+#define REMATCH_3_LEVEL_4 REMATCH_3_LEVEL_1 - 3
+#define REMATCH_3_LEVEL_5 REMATCH_3_LEVEL_1 - 4
+#define REMATCH_3_LEVEL_6 REMATCH_3_LEVEL_1 - 5
+
+#define REMATCH_4_LEVEL_1 55
+#define REMATCH_4_LEVEL_2 REMATCH_4_LEVEL_1 - 1
+#define REMATCH_4_LEVEL_3 REMATCH_4_LEVEL_1 - 2
+#define REMATCH_4_LEVEL_4 REMATCH_4_LEVEL_1 - 3
+#define REMATCH_4_LEVEL_5 REMATCH_4_LEVEL_1 - 4
+#define REMATCH_4_LEVEL_6 REMATCH_4_LEVEL_1 - 5
+
+
+
+#define LINUS                    \
+    .ability = ABILITY_GLUTTONY, \
+    .nature = NATURE_JOLLY,      \
+    .gender = TRAINER_MON_MALE,  \
+    .nickname = COMPOUND_STRING("Linus")
+
+[TRAINER_CALVIN_1] =
+{
+    .trainerName = _("Calvin"),
+    YOUNGSTER_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 5,
+        .species = SPECIES_ZIGZAGOON,
+        LINUS,
+        }
+    },
+},
+
+[TRAINER_CALVIN_2] =
+{
+    .trainerName = _("Calvin"),
+    YOUNGSTER_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = REMATCH_2_LEVEL_1,
+        .species = SPECIES_TAILLOW,
+        .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
+        },
+        {
+        .lvl = REMATCH_2_LEVEL_1,
+        .species = SPECIES_LINOONE,
+        .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
+        LINUS,
+        }
+    },
+},
+
+[TRAINER_CALVIN_3] =
+{
+    .trainerName = _("Calvin"),
+    YOUNGSTER_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = REMATCH_3_LEVEL_1,
+        .species = SPECIES_SWELLOW,
+        .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
+        },
+        {
+        .lvl = REMATCH_3_LEVEL_1,
+        .species = SPECIES_LINOONE,
+        .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
+        LINUS,
+        }
+    },
+},
+
+[TRAINER_CALVIN_4] =
+{
+    .trainerName = _("Calvin"),
+    YOUNGSTER_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = REMATCH_4_LEVEL_1,
+        .species = SPECIES_MIGHTYENA,
+        .ability = ABILITY_INTIMIDATE,
+        .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
+        },
+        {
+        .lvl = REMATCH_4_LEVEL_1,
+        .species = SPECIES_SWELLOW,
+        .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
+        },
+        {
+        .lvl = REMATCH_4_LEVEL_1,
+        .species = SPECIES_LINOONE,
+        .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
+        LINUS,
+        }
+    },
+},
+
+[TRAINER_CALVIN_5] =
+{
+    .trainerName = _("Calvin"),
+    YOUNGSTER_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
+    .partySize = 4,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 45,
+        .species = SPECIES_FLYGON,
+        .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
+        },
+        {
+        .lvl = 45,
+        .species = SPECIES_MIGHTYENA,
+        .ability = ABILITY_INTIMIDATE,
+        .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
+        },
+        {
+        .lvl = 45,
+        .species = SPECIES_SWELLOW,
+        .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
+        },
+        {
+        .lvl = 50,
+        .species = SPECIES_LINOONE,
+        .ev = TRAINER_PARTY_EVS(1, 63, 0, 63, 0, 0),
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .heldItem = ITEM_FIGY_BERRY,
+        LINUS,
+        }
+    },
+},
 
 [TRAINER_SAWYER_1] =
 {
@@ -10056,32 +10201,10 @@
     },
 },
 
-[TRAINER_CALVIN_1] =
-{
-    .trainerName = _("Calvin"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER,
-    .trainerPic = TRAINER_PIC_YOUNGSTER,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 5,
-        .species = SPECIES_ZIGZAGOON,
-        .ability = ABILITY_GLUTTONY,
-        .nature = NATURE_JOLLY,
-        .gender = TRAINER_MON_MALE,
-        .nickname = COMPOUND_STRING("Linus")
-        }
-    },
-},
-
 [TRAINER_BILLY] =
 {
     .trainerName = _("Billy"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER,
-    .trainerPic = TRAINER_PIC_YOUNGSTER,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    YOUNGSTER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
@@ -10099,9 +10222,7 @@
 [TRAINER_JOSH] =
 {
     .trainerName = _("Josh"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER,
-    .trainerPic = TRAINER_PIC_YOUNGSTER,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    YOUNGSTER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
@@ -10117,9 +10238,7 @@
 [TRAINER_TOMMY] =
 {
     .trainerName = _("Tommy"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER,
-    .trainerPic = TRAINER_PIC_YOUNGSTER,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    YOUNGSTER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
@@ -10139,9 +10258,7 @@
 [TRAINER_JOEY] =
 {
     .trainerName = _("Joey"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER,
-    .trainerPic = TRAINER_PIC_YOUNGSTER,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    YOUNGSTER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
@@ -10155,9 +10272,7 @@
 [TRAINER_BEN] =
 {
     .trainerName = _("Ben"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER,
-    .trainerPic = TRAINER_PIC_YOUNGSTER,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    YOUNGSTER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
@@ -10229,9 +10344,7 @@
 [TRAINER_JAYLEN] =
 {
     .trainerName = _("Jaylen"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER,
-    .trainerPic = TRAINER_PIC_YOUNGSTER,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    YOUNGSTER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
@@ -10245,9 +10358,7 @@
 [TRAINER_DILLON] =
 {
     .trainerName = _("Dillon"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER,
-    .trainerPic = TRAINER_PIC_YOUNGSTER,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    YOUNGSTER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
@@ -10258,133 +10369,10 @@
     },
 },
 
-[TRAINER_CALVIN_2] =
-{
-    .trainerName = _("Calvin"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER,
-    .trainerPic = TRAINER_PIC_YOUNGSTER,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 35,
-        .species = SPECIES_TAILLOW,
-        .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
-        },
-        {
-        .lvl = 35,
-        .species = SPECIES_LINOONE,
-        .ability = ABILITY_GLUTTONY,
-        .nature = NATURE_JOLLY,
-        .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
-        .gender = TRAINER_MON_MALE,
-        .nickname = COMPOUND_STRING("Linus")
-        }
-    },
-},
-
-[TRAINER_CALVIN_3] =
-{
-    .trainerName = _("Calvin"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER,
-    .trainerPic = TRAINER_PIC_YOUNGSTER,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = REMATCH_3_LEVEL_1,
-        .species = SPECIES_SWELLOW,
-        .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
-        },
-        {
-        .lvl = REMATCH_3_LEVEL_1,
-        .species = SPECIES_LINOONE,
-        .ability = ABILITY_GLUTTONY,
-        .nature = NATURE_JOLLY,
-        .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
-        .gender = TRAINER_MON_MALE,
-        .nickname = COMPOUND_STRING("Linus")
-        }
-    },
-},
-
-[TRAINER_CALVIN_4] =
-{
-    .trainerName = _("Calvin"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER,
-    .trainerPic = TRAINER_PIC_YOUNGSTER,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 40,
-        .species = SPECIES_MIGHTYENA,
-        .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
-        },
-        {
-        .lvl = 40,
-        .species = SPECIES_SWELLOW,
-        .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
-        },
-        {
-        .lvl = 40,
-        .species = SPECIES_LINOONE,
-        .ability = ABILITY_GLUTTONY,
-        .nature = NATURE_JOLLY,
-        .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
-        .gender = TRAINER_MON_MALE,
-        .nickname = COMPOUND_STRING("Linus")
-        }
-    },
-},
-
-[TRAINER_CALVIN_5] =
-{
-    .trainerName = _("Calvin"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER,
-    .trainerPic = TRAINER_PIC_YOUNGSTER,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 4,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 45,
-        .species = SPECIES_FLYGON,
-        .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
-        },
-        {
-        .lvl = 45,
-        .species = SPECIES_MIGHTYENA,
-        .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
-        },
-        {
-        .lvl = 45,
-        .species = SPECIES_SWELLOW,
-        .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
-        },
-        {
-        .lvl = 50,
-        .species = SPECIES_LINOONE,
-        .ability = ABILITY_GLUTTONY,
-        .nature = NATURE_JOLLY,
-        .ev = TRAINER_PARTY_EVS(1, 63, 0, 63, 0, 0),
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_FIGY_BERRY,
-        .nickname = COMPOUND_STRING("Linus")
-        }
-    },
-},
-
 [TRAINER_EDDIE] =
 {
     .trainerName = _("Eddie"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER,
-    .trainerPic = TRAINER_PIC_YOUNGSTER,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    YOUNGSTER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
@@ -10402,9 +10390,7 @@
 [TRAINER_ALLEN] =
 {
     .trainerName = _("Allen"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER,
-    .trainerPic = TRAINER_PIC_YOUNGSTER,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    YOUNGSTER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
@@ -10422,9 +10408,7 @@
 [TRAINER_TIMMY] =
 {
     .trainerName = _("Timmy"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER,
-    .trainerPic = TRAINER_PIC_YOUNGSTER,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    YOUNGSTER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
@@ -11360,9 +11344,7 @@
 [TRAINER_DEMETRIUS] =
 {
     .trainerName = _("Demetrius"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER,
-    .trainerPic = TRAINER_PIC_YOUNGSTER,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    YOUNGSTER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
@@ -17886,9 +17868,7 @@
 [TRAINER_DEANDRE] =
 {
     .trainerName = _("Deandre"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER,
-    .trainerPic = TRAINER_PIC_YOUNGSTER,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    YOUNGSTER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
@@ -18639,9 +18619,7 @@
 [TRAINER_JOHNSON] =
 {
     .trainerName = _("Johnson"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER,
-    .trainerPic = TRAINER_PIC_YOUNGSTER,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    YOUNGSTER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {

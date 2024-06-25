@@ -1172,11 +1172,11 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "range": "5, 5",
+                "range": "ROUTE_PETALBURG_WOODS_RANGE",
                 "species": "SHROOMISH"
               },
               {
-                "range": "5, 5",
+                "range": "ROUTE_PETALBURG_WOODS_RANGE",
                 "species": "NINCADA"
               },
               {
@@ -1196,19 +1196,19 @@
                 "species": "CASCOON"
               },
               {
-                "range": "7, 7",
+                "range": "ROUTE_PETALBURG_WOODS_RANGE",
                 "species": "SHROOMISH"
               },
               {
-                "range": "6, 6",
+                "range": "ROUTE_PETALBURG_WOODS_RANGE",
                 "species": "SLAKOTH"
               },
               {
-                "range": "5, 5",
+                "range": "ROUTE_PETALBURG_WOODS_RANGE",
                 "species": "SLAKOTH"
               },
               {
-                "range": "5, 5",
+                "range": "ROUTE_PETALBURG_WOODS_RANGE",
                 "species": "SLAKOTH"
               }
             ]

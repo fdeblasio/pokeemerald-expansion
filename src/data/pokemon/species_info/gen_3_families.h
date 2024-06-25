@@ -3662,10 +3662,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     {
         .baseHP        = 60,
         .baseAttack    = 55,
-        .baseDefense   = 145,
+        .baseDefense   = 150,
         .baseSpeed     = 40,
         .baseSpAttack  = 75,
-        .baseSpDefense = 150,
+        .baseSpDefense = 145,
         .types = MON_TYPES(TYPE_ROCK, TYPE_STEEL),
         .catchRate = 60,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 184 : 198,

@@ -99,6 +99,13 @@
 #define TRAINER_RICK                        657
 #define TRAINER_ALLEN                       402
 #define TRAINER_TIANA                       645
+#define TRAINER_WINSTON_1                   217
+#define TRAINER_WINSTON_2                   220
+#define TRAINER_WINSTON_3                   221
+#define TRAINER_WINSTON_4                   222
+#define TRAINER_WINSTON_5                   223
+#define TRAINER_BILLY                       388
+#define TRAINER_DARIAN                      725
 #define TRAINER_SAWYER_1                     89
 #define TRAINER_GRUNT_AQUA_HIDEOUT_1         90
 #define TRAINER_GRUNT_AQUA_HIDEOUT_2         91
@@ -227,13 +234,8 @@
 #define TRAINER_JESSICA_3                   214
 #define TRAINER_JESSICA_4                   215
 #define TRAINER_JESSICA_5                   216
-#define TRAINER_WINSTON_1                   217
 #define TRAINER_MOLLIE                      218
 #define TRAINER_GARRET                      219
-#define TRAINER_WINSTON_2                   220
-#define TRAINER_WINSTON_3                   221
-#define TRAINER_WINSTON_4                   222
-#define TRAINER_WINSTON_5                   223
 #define TRAINER_STEVE_1                     224
 #define TRAINER_THALIA_1                    225
 #define TRAINER_MARK                        226
@@ -397,7 +399,6 @@
 #define TRAINER_SHELBY_3                    384
 #define TRAINER_SHELBY_4                    385
 #define TRAINER_SHELBY_5                    386
-#define TRAINER_BILLY                       388
 #define TRAINER_JOSH                        389
 #define TRAINER_TOMMY                       390
 #define TRAINER_JOEY                        391
@@ -727,7 +728,6 @@
 #define TRAINER_CHRIS                       722
 #define TRAINER_DAWSON                      723
 #define TRAINER_SARAH                       724
-#define TRAINER_DARIAN                      725
 #define TRAINER_HAILEY                      726
 #define TRAINER_CHANDLER                    727
 #define TRAINER_KALEB                       728

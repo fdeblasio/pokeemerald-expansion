@@ -446,7 +446,7 @@
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = 44,
         .species = SPECIES_NUMEL,
         }
     },
@@ -2740,17 +2740,17 @@
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 40,
+        .lvl = 55,
         .species = SPECIES_SANDSLASH,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         },
         {
-        .lvl = 40,
+        .lvl = 55,
         .species = SPECIES_TORKOAL,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         },
         {
-        .lvl = 42,
+        .lvl = 57,
         .species = SPECIES_NINETALES,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         }
@@ -12019,19 +12019,19 @@
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 40,
+        .lvl = 55,
         .species = SPECIES_DONPHAN,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 40,
+        .lvl = 55,
         .species = SPECIES_MAGCARGO,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 42,
+        .lvl = 57,
         .species = SPECIES_HOUNDOOM,
         .ability = ABILITY_FLASH_FIRE,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -13938,11 +13938,11 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 40,
+        .lvl = 43,
         .species = SPECIES_HOUNDOUR,
         },
         {
-        .lvl = 40,
+        .lvl = 43,
         .species = SPECIES_VULPIX,
         }
     },
@@ -13959,7 +13959,7 @@
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = 44,
         .species = SPECIES_PHANPY,
         }
     },
@@ -13976,7 +13976,7 @@
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = 44,
         .species = SPECIES_MAGCARGO,
         }
     },
@@ -13993,7 +13993,7 @@
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = 44,
         .species = SPECIES_TORKOAL,
         }
     },
@@ -14010,7 +14010,7 @@
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = 44,
         .species = SPECIES_CLAYDOL,
         }
     },
@@ -17478,18 +17478,18 @@
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = 57,
         .species = SPECIES_SANDSLASH,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 43,
+        .lvl = 58,
         .species = SPECIES_CLAYDOL,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         },
         {
-        .lvl = 44,
+        .lvl = 60,
         .species = SPECIES_CAMERUPT,
         .ability = ABILITY_SOLID_ROCK,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),

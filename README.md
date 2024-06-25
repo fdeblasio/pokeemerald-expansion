@@ -1377,6 +1377,10 @@ Gallade:
 - Makuhita:
     - Catch rate: 180->220
 
+- Probopass:
+    - Def: 145->150
+    - SpD: 150->145
+
 - Delcatty:
     - Learns Swift by level up
 

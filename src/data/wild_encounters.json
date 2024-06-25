@@ -95,53 +95,53 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "min_level": "ROUTE_102_LEVEL",
-                "max_level": "ROUTE_102_LEVEL",
+                "min_level": "ROUTE_102_104_LEVEL",
+                "max_level": "ROUTE_102_104_LEVEL",
                 "species": "SEEDOT"
               },
               {
-                "min_level": "ROUTE_102_LEVEL",
-                "max_level": "ROUTE_102_LEVEL",
+                "min_level": "ROUTE_102_104_LEVEL",
+                "max_level": "ROUTE_102_104_LEVEL",
                 "species": "LOTAD"
               },
               {
-                "min_level": "ROUTE_102_LEVEL",
-                "max_level": "ROUTE_102_LEVEL",
+                "min_level": "ROUTE_102_104_LEVEL",
+                "max_level": "ROUTE_102_104_LEVEL",
                 "species": "SEEDOT"
               },
               {
-                "min_level": "ROUTE_102_LEVEL",
-                "max_level": "ROUTE_102_LEVEL",
+                "min_level": "ROUTE_102_104_LEVEL",
+                "max_level": "ROUTE_102_104_LEVEL",
                 "species": "LOTAD"
               },
               {
-                "min_level": "ROUTE_102_LEVEL",
-                "max_level": "ROUTE_102_LEVEL",
+                "min_level": "ROUTE_102_104_LEVEL",
+                "max_level": "ROUTE_102_104_LEVEL",
                 "species": "RALTS"
               },
               {
-                "min_level": "ROUTE_102_LEVEL",
-                "max_level": "ROUTE_102_LEVEL",
+                "min_level": "ROUTE_102_104_LEVEL",
+                "max_level": "ROUTE_102_104_LEVEL",
                 "species": "RALTS"
               },
               {
-                "min_level": "ROUTE_102_LEVEL",
-                "max_level": "ROUTE_102_LEVEL",
+                "min_level": "ROUTE_102_104_LEVEL",
+                "max_level": "ROUTE_102_104_LEVEL",
                 "species": "RALTS"
               },
               {
-                "min_level": "ROUTE_102_LEVEL",
-                "max_level": "ROUTE_102_LEVEL",
+                "min_level": "ROUTE_102_104_LEVEL",
+                "max_level": "ROUTE_102_104_LEVEL",
                 "species": "SURSKIT"
               },
               {
-                "min_level": "ROUTE_102_LEVEL",
-                "max_level": "ROUTE_102_LEVEL",
+                "min_level": "ROUTE_102_104_LEVEL",
+                "max_level": "ROUTE_102_104_LEVEL",
                 "species": "RALTS"
               },
               {
-                "min_level": "ROUTE_102_LEVEL",
-                "max_level": "ROUTE_102_LEVEL",
+                "min_level": "ROUTE_102_104_LEVEL",
+                "max_level": "ROUTE_102_104_LEVEL",
                 "species": "SURSKIT"
               }
             ]
@@ -343,53 +343,53 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "min_level": 4,
-                "max_level": 4,
+                "min_level": "ROUTE_102_104_LEVEL",
+                "max_level": "ROUTE_102_104_LEVEL",
                 "species": "WINGULL"
               },
               {
-                "min_level": 4,
-                "max_level": 4,
+                "min_level": "ROUTE_102_104_LEVEL",
+                "max_level": "ROUTE_102_104_LEVEL",
                 "species": "TAILLOW"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": "ROUTE_102_104_LEVEL",
+                "max_level": "ROUTE_102_104_LEVEL",
                 "species": "AZURILL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": "ROUTE_102_104_LEVEL",
+                "max_level": "ROUTE_102_104_LEVEL",
                 "species": "WURMPLE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": "ROUTE_102_104_LEVEL",
+                "max_level": "ROUTE_102_104_LEVEL",
                 "species": "WINGULL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": "ROUTE_102_104_LEVEL",
+                "max_level": "ROUTE_102_104_LEVEL",
                 "species": "AZURILL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": "ROUTE_102_104_LEVEL",
+                "max_level": "ROUTE_102_104_LEVEL",
                 "species": "TAILLOW"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": "ROUTE_102_104_LEVEL",
+                "max_level": "ROUTE_102_104_LEVEL",
                 "species": "WINGULL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": "ROUTE_102_104_LEVEL",
+                "max_level": "ROUTE_102_104_LEVEL",
                 "species": "WINGULL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": "ROUTE_102_104_LEVEL",
+                "max_level": "ROUTE_102_104_LEVEL",
                 "species": "WINGULL"
               }
             ]

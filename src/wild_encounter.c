@@ -69,8 +69,8 @@ EWRAM_DATA bool8 gIsSurfingEncounter = 0;
 EWRAM_DATA u8 gChainFishingDexNavStreak = 0;
 
 #define ROUTE_101_LEVEL 3
-#define ROUTE_102_LEVEL 5
 #define ROUTE_103_LEVEL 4
+#define ROUTE_102_104_LEVEL 5
 
 #include "data/wild_encounters.h"
 

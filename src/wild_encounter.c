@@ -77,9 +77,13 @@ EWRAM_DATA bool8 gIsSurfingEncounter = 0;
 EWRAM_DATA u8 gChainFishingDexNavStreak = 0;
 EWRAM_DATA static u16 sLastFishingSpecies = 0;
 
+#define ROUTE_101_LEVEL 3
+#define ROUTE_102_LEVEL 5
+#define ROUTE_103_LEVEL 4
+
 #include "data/wild_encounters.h"
 
-static const struct WildPokemon sWildFeebas = {20, 25, SPECIES_FEEBAS};
+static const struct WildPokemon sWildFeebas = {42, 44, SPECIES_FEEBAS};
 
 static const u16 sRoute119WaterTileData[] =
 {

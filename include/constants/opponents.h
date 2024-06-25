@@ -91,6 +91,11 @@
 #define TRAINER_GABBY_AND_TY_4               86
 #define TRAINER_GABBY_AND_TY_5               87
 #define TRAINER_GABBY_AND_TY_6               88
+#define TRAINER_CALVIN_1                    387
+#define TRAINER_CALVIN_2                    397
+#define TRAINER_CALVIN_3                    398
+#define TRAINER_CALVIN_4                    399
+#define TRAINER_CALVIN_5                    400
 #define TRAINER_SAWYER_1                     89
 #define TRAINER_GRUNT_AQUA_HIDEOUT_1         90
 #define TRAINER_GRUNT_AQUA_HIDEOUT_2         91
@@ -389,7 +394,6 @@
 #define TRAINER_SHELBY_3                    384
 #define TRAINER_SHELBY_4                    385
 #define TRAINER_SHELBY_5                    386
-#define TRAINER_CALVIN_1                    387
 #define TRAINER_BILLY                       388
 #define TRAINER_JOSH                        389
 #define TRAINER_TOMMY                       390
@@ -399,10 +403,6 @@
 #define TRAINER_KATELYNN                    394
 #define TRAINER_JAYLEN                      395
 #define TRAINER_DILLON                      396
-#define TRAINER_CALVIN_2                    397
-#define TRAINER_CALVIN_3                    398
-#define TRAINER_CALVIN_4                    399
-#define TRAINER_CALVIN_5                    400
 #define TRAINER_EDDIE                       401
 #define TRAINER_ALLEN                       402
 #define TRAINER_TIMMY                       403

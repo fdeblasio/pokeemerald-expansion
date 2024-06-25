@@ -66,6 +66,7 @@ upcoming
 - Xaman's TM Case: https://www.pokecommunity.com/showpost.php?p=10378278
 
 ### Trainers
+- Revert Mauville Wally back to Ralts and add Verdanturf battle with Kirlia?
 - Group rematches with original battles
 - Readjust wild/trainer levels so that parties aren't overpowered?
 - Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)

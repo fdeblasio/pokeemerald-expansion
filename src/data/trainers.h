@@ -6417,26 +6417,28 @@
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = 55,
         .species = SPECIES_CLAYDOL,
         .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
         .moves = {MOVE_PSYCHIC, MOVE_EARTH_POWER, MOVE_COSMIC_POWER, MOVE_LIGHT_SCREEN},
         },
         {
-        .lvl = 41,
+        .lvl = 55,
         .species = SPECIES_GRUMPIG,
+        .ability = ABILITY_THICK_FAT,
         .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
         .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_CONFUSE_RAY, MOVE_MAGIC_COAT},
+        .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 42,
+        .lvl = 57,
         .species = SPECIES_LUNATONE,
         .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
         .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_POWER_GEM, MOVE_ICY_WIND},
         .heldItem = ITEM_SITRUS_BERRY,
         },
         {
-        .lvl = 42,
+        .lvl = 57,
         .species = SPECIES_SOLROCK,
         .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
         .moves = {MOVE_PSYCHIC, MOVE_ROCK_SLIDE, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN},
@@ -19618,6 +19620,7 @@
         .species = SPECIES_CHIMECHO,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_HEAL_PULSE, MOVE_LIGHT_SCREEN, MOVE_HEAL_BELL},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 63,
@@ -19628,8 +19631,10 @@
         {
         .lvl = 63,
         .species = SPECIES_GRUMPIG,
+        .ability = ABILITY_THICK_FAT,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_CONFUSE_RAY, MOVE_MAGIC_COAT},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 65,
@@ -19662,14 +19667,17 @@
         {
         .lvl = 65,
         .species = SPECIES_GARDEVOIR,
+        .ability = ABILITY_SYNCHRONIZE,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_MYSTICAL_FIRE, MOVE_CALM_MIND},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 65,
         .species = SPECIES_CHIMECHO,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_HEAL_PULSE, MOVE_LIGHT_SCREEN, MOVE_HEAL_BELL},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 68,
@@ -19680,8 +19688,10 @@
         {
         .lvl = 68,
         .species = SPECIES_GRUMPIG,
+        .ability = ABILITY_THICK_FAT,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_CONFUSE_RAY, MOVE_MAGIC_COAT},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 70,
@@ -19714,14 +19724,17 @@
         {
         .lvl = 70,
         .species = SPECIES_GARDEVOIR,
+        .ability = ABILITY_SYNCHRONIZE,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_MYSTICAL_FIRE, MOVE_CALM_MIND},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 70,
         .species = SPECIES_CHIMECHO,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_HEAL_PULSE, MOVE_LIGHT_SCREEN, MOVE_HEAL_BELL},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 73,
@@ -19732,8 +19745,10 @@
         {
         .lvl = 73,
         .species = SPECIES_GRUMPIG,
+        .ability = ABILITY_THICK_FAT,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_CONFUSE_RAY, MOVE_MAGIC_COAT},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 75,
@@ -19766,14 +19781,17 @@
         {
         .lvl = 75,
         .species = SPECIES_GARDEVOIR,
+        .ability = ABILITY_SYNCHRONIZE,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_MYSTICAL_FIRE, MOVE_CALM_MIND},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 75,
         .species = SPECIES_CHIMECHO,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_HEAL_PULSE, MOVE_LIGHT_SCREEN, MOVE_HEAL_BELL},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 78,
@@ -19784,8 +19802,10 @@
         {
         .lvl = 78,
         .species = SPECIES_GRUMPIG,
+        .ability = ABILITY_THICK_FAT,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_CONFUSE_RAY, MOVE_MAGIC_COAT},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 80,

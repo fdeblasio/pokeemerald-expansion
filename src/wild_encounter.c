@@ -80,6 +80,7 @@ EWRAM_DATA static u16 sLastFishingSpecies = 0;
 #define ROUTE_101_RANGE 3, 3
 #define ROUTE_103_RANGE 4, 4
 #define ROUTE_102_104_RANGE 5, 5
+#define ROUTE_PETALBURG_WOODS_RANGE 5, 6
 
 #include "data/wild_encounters.h"
 

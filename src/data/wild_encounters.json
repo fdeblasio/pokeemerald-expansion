@@ -859,43 +859,43 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "range": "7, 7",
+                "range": "ROUTE_116_RANGE",
                 "species": "SKITTY"
               },
               {
-                "range": "7, 7",
+                "range": "ROUTE_116_RANGE",
                 "species": "NINCADA"
               },
               {
-                "range": "7, 7",
+                "range": "ROUTE_116_RANGE",
                 "species": "TAILLOW"
               },
               {
-                "range": "7, 7",
+                "range": "ROUTE_116_RANGE",
                 "species": "ABRA"
               },
               {
-                "range": "7, 7",
+                "range": "ROUTE_116_RANGE",
                 "species": "ZIGZAGOON"
               },
               {
-                "range": "7, 7",
+                "range": "ROUTE_116_RANGE",
                 "species": "TAILLOW"
               },
               {
-                "range": "7, 7",
+                "range": "ROUTE_116_RANGE",
                 "species": "ABRA"
               },
               {
-                "range": "8, 8",
+                "range": "ROUTE_116_RANGE",
                 "species": "ZIGZAGOON"
               },
               {
-                "range": "8, 8",
+                "range": "ROUTE_116_RANGE",
                 "species": "SKITTY"
               },
               {
-                "range": "8, 8",
+                "range": "ROUTE_116_RANGE",
                 "species": "SKITTY"
               }
             ]
@@ -1172,11 +1172,11 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "range": "ROUTE_PETALBURG_WOODS_RANGE",
+                "range": "PETALBURG_WOODS_RANGE",
                 "species": "SHROOMISH"
               },
               {
-                "range": "ROUTE_PETALBURG_WOODS_RANGE",
+                "range": "PETALBURG_WOODS_RANGE",
                 "species": "NINCADA"
               },
               {
@@ -1196,19 +1196,19 @@
                 "species": "CASCOON"
               },
               {
-                "range": "ROUTE_PETALBURG_WOODS_RANGE",
+                "range": "PETALBURG_WOODS_RANGE",
                 "species": "SHROOMISH"
               },
               {
-                "range": "ROUTE_PETALBURG_WOODS_RANGE",
+                "range": "PETALBURG_WOODS_RANGE",
                 "species": "SLAKOTH"
               },
               {
-                "range": "ROUTE_PETALBURG_WOODS_RANGE",
+                "range": "PETALBURG_WOODS_RANGE",
                 "species": "SLAKOTH"
               },
               {
-                "range": "ROUTE_PETALBURG_WOODS_RANGE",
+                "range": "PETALBURG_WOODS_RANGE",
                 "species": "SLAKOTH"
               }
             ]
@@ -1221,43 +1221,43 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "range": "9, 9",
+                "range": "RUSTURF_TUNNEL_RANGE",
                 "species": "WHISMUR"
               },
               {
-                "range": "9, 9",
+                "range": "RUSTURF_TUNNEL_RANGE",
                 "species": "WHISMUR"
               },
               {
-                "range": "9, 9",
+                "range": "RUSTURF_TUNNEL_RANGE",
                 "species": "WHISMUR"
               },
               {
-                "range": "9, 9",
+                "range": "RUSTURF_TUNNEL_RANGE",
                 "species": "WHISMUR"
               },
               {
-                "range": "9, 9",
+                "range": "RUSTURF_TUNNEL_RANGE",
                 "species": "WHISMUR"
               },
               {
-                "range": "9, 9",
+                "range": "RUSTURF_TUNNEL_RANGE",
                 "species": "WHISMUR"
               },
               {
-                "range": "9, 9",
+                "range": "RUSTURF_TUNNEL_RANGE",
                 "species": "WHISMUR"
               },
               {
-                "range": "9, 9",
+                "range": "RUSTURF_TUNNEL_RANGE",
                 "species": "WHISMUR"
               },
               {
-                "range": "9, 9",
+                "range": "RUSTURF_TUNNEL_RANGE",
                 "species": "WHISMUR"
               },
               {
-                "range": "9, 9",
+                "range": "RUSTURF_TUNNEL_RANGE",
                 "species": "WHISMUR"
               }
             ]

@@ -1,3 +1,5 @@
+#define PERFECT_IVS TRAINER_PARTY_IVS(MAX_PER_STAT_IVS, MAX_PER_STAT_IVS, MAX_PER_STAT_IVS, MAX_PER_STAT_IVS, MAX_PER_STAT_IVS, MAX_PER_STAT_IVS)
+
 [TRAINER_NONE] =
 {
     .trainerName = _(""),
@@ -52,7 +54,7 @@
 
 #define BRENDAN_STARTER                              \
     .nature = NATURE_SERIOUS,                        \
-    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31), \
+    .iv = PERFECT_IVS, \
     .gender = TRAINER_MON_MALE,
 
 [TRAINER_BRENDAN_ROUTE_103_MUDKIP] =
@@ -379,7 +381,7 @@
 
 #define MAY_STARTER                                  \
     .nature = NATURE_QUIRKY,                         \
-    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31), \
+    .iv = PERFECT_IVS, \
     .gender = TRAINER_MON_FEMALE,
 
 [TRAINER_MAY_ROUTE_103_MUDKIP] =
@@ -695,13 +697,22 @@
     },
 },
 
-#define ENDGAME_REMATCH_LEVEL_2(REMATCH) ENDGAME_REMATCH_##REMATCH##_LEVEL - 2
-#define ENDGAME_REMATCH_LEVEL_3(REMATCH) ENDGAME_REMATCH_##REMATCH##_LEVEL - 5
-
 #define ENDGAME_REMATCH_2_LEVEL 65
 #define ENDGAME_REMATCH_3_LEVEL 70
 #define ENDGAME_REMATCH_4_LEVEL 75
 #define ENDGAME_REMATCH_5_LEVEL 80
+
+#define REMATCH_ACE(rematch)                  \
+    .lvl = ENDGAME_REMATCH_##rematch##_LEVEL, \
+    .iv = PERFECT_IVS
+
+#define REMATCH_MON_TIER2(rematch)                \
+    .lvl = ENDGAME_REMATCH_##rematch##_LEVEL - 2, \
+    .iv = PERFECT_IVS
+
+#define REMATCH_MON_TIER3(rematch)                \
+    .lvl = ENDGAME_REMATCH_##rematch##_LEVEL - 5, \
+    .iv = PERFECT_IVS
 
 #define WALLY                                              \
     .trainerName = _("Wally"),                             \
@@ -725,7 +736,7 @@
         .lvl = 22,
         .species = SPECIES_KIRLIA,
         .ability = ABILITY_TRACE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .gender = TRAINER_MON_MALE,
         .nickname = COMPOUND_STRING("Ralph"),
         }
@@ -769,7 +780,7 @@
         .lvl = 49,
         .species = SPECIES_GALLADE,
         .ability = ABILITY_SHARPNESS,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE},
         .heldItem = ITEM_GALLADITE,
         .nickname = COMPOUND_STRING("Ralph"),
@@ -784,37 +795,32 @@
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(2),
+        REMATCH_MON_TIER3(2),
         .species = SPECIES_DELCATTY,
-        .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_ASSIST, MOVE_CHARM},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(2),
+        REMATCH_MON_TIER3(2),
         .species = SPECIES_ALTARIA,
-        .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(2),
+        REMATCH_MON_TIER2(2),
         .species = SPECIES_MAGNEZONE,
-        .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_METAL_SOUND},
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(2),
+        REMATCH_MON_TIER2(2),
         .species = SPECIES_ROSERADE,
-        .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_2_LEVEL,
+        REMATCH_ACE(2),
         .species = SPECIES_GALLADE,
         .ability = ABILITY_SHARPNESS,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE},
         .heldItem = ITEM_GALLADITE,
         .nickname = COMPOUND_STRING("Ralph"),
@@ -829,37 +835,32 @@
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(3),
+        REMATCH_MON_TIER3(3),
         .species = SPECIES_DELCATTY,
-        .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_ASSIST, MOVE_CHARM},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(3),
+        REMATCH_MON_TIER3(3),
         .species = SPECIES_ALTARIA,
-        .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(3),
+        REMATCH_MON_TIER2(3),
         .species = SPECIES_MAGNEZONE,
-        .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_METAL_SOUND},
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(3),
+        REMATCH_MON_TIER2(3),
         .species = SPECIES_ROSERADE,
-        .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_3_LEVEL,
+        REMATCH_ACE(3),
         .species = SPECIES_GALLADE,
         .ability = ABILITY_SHARPNESS,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE},
         .heldItem = ITEM_GALLADITE,
         .nickname = COMPOUND_STRING("Ralph"),
@@ -874,37 +875,32 @@
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(4),
+        REMATCH_MON_TIER3(4),
         .species = SPECIES_DELCATTY,
-        .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_ASSIST, MOVE_CHARM},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(4),
+        REMATCH_MON_TIER3(4),
         .species = SPECIES_ALTARIA,
-        .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(4),
+        REMATCH_MON_TIER2(4),
         .species = SPECIES_MAGNEZONE,
-        .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_METAL_SOUND},
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(4),
+        REMATCH_MON_TIER2(4),
         .species = SPECIES_ROSERADE,
-        .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_4_LEVEL,
+        REMATCH_ACE(4),
         .species = SPECIES_GALLADE,
         .ability = ABILITY_SHARPNESS,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE},
         .heldItem = ITEM_GALLADITE,
         .nickname = COMPOUND_STRING("Ralph"),
@@ -919,44 +915,38 @@
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(5),
+        REMATCH_MON_TIER3(5),
         .species = SPECIES_GARDEVOIR,
-        .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
         .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_MYSTICAL_FIRE, MOVE_CALM_MIND},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(5),
+        REMATCH_MON_TIER3(5),
         .species = SPECIES_DELCATTY,
-        .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
         .moves = {MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_ASSIST, MOVE_CHARM},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(5),
+        REMATCH_MON_TIER3(5),
         .species = SPECIES_ALTARIA,
-        .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
         .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(5),
+        REMATCH_MON_TIER2(5),
         .species = SPECIES_MAGNEZONE,
-        .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_METAL_SOUND},
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(5),
+        REMATCH_MON_TIER2(5),
         .species = SPECIES_ROSERADE,
-        .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
         .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_5_LEVEL,
+        REMATCH_ACE(5),
         .species = SPECIES_GALLADE,
         .ability = ABILITY_SHARPNESS,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE},
         .heldItem = ITEM_GALLADITE,
         .nickname = COMPOUND_STRING("Ralph"),
@@ -1003,6 +993,64 @@
     },
 },
 
+#define ROXANNE_PROBOPASS(rematch, move3)                                          \
+    {                                                                              \
+    REMATCH_ACE(rematch),                                                          \
+    .species = SPECIES_PROBOPASS,                                                  \
+    .ability = ABILITY_SAND_FORCE,                                                 \
+    .nature = NATURE_IMPISH,                                                       \
+    .ev = TRAINER_PARTY_EVS(0, 0, 63, 63, 1, 0),                                   \
+    .moves = {MOVE_POWER_GEM, MOVE_FLASH_CANNON, MOVE_##move3, MOVE_IRON_DEFENSE}, \
+    .gender = TRAINER_MON_FEMALE,                                                  \
+    .heldItem = ITEM_SITRUS_BERRY,                                                 \
+    }
+
+#define ROXANNE_ARMALDO(rematch)                                                    \
+    {                                                                               \
+    REMATCH_MON_TIER2(rematch),                                                        \
+    .species = SPECIES_ARMALDO,                                                     \
+    .ability = ABILITY_BATTLE_ARMOR,                                                \
+    .nature = NATURE_ADAMANT,                                                       \
+    .ev = TRAINER_PARTY_EVS(1, 63, 63, 0, 0, 0),                                    \
+    .moves = {MOVE_ROCK_SLIDE, MOVE_X_SCISSOR, MOVE_CRUSH_CLAW, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                     \
+    .heldItem = ITEM_QUICK_CLAW,                                                    \
+    }
+
+#define ROXANNE_CRADILY(rematch)                                                \
+    {                                                                           \
+    REMATCH_MON_TIER2(rematch),                                                    \
+    .species = SPECIES_CRADILY,                                                 \
+    .ability = ABILITY_STORM_DRAIN,                                             \
+    .nature = NATURE_CALM,                                                      \
+    .ev = TRAINER_PARTY_EVS(0, 0, 1, 0, 63, 63),                                \
+    .moves = {MOVE_GIGA_DRAIN, MOVE_ANCIENT_POWER, MOVE_INGRAIN, MOVE_AMNESIA}, \
+    .gender = TRAINER_MON_FEMALE,                                               \
+    .heldItem = ITEM_BIG_ROOT,                                                  \
+    }
+
+#define ROXANNE_RELICANTH(rematch, move3, move4)                            \
+    {                                                                       \
+    REMATCH_MON_TIER3(rematch),                                                \
+    .species = SPECIES_RELICANTH,                                           \
+    .ability = ABILITY_ROCK_HEAD,                                           \
+    .nature = NATURE_IMPISH,                                                \
+    .ev = TRAINER_PARTY_EVS(1, 63, 63, 0, 0, 0),                            \
+    .moves = {MOVE_HEAD_SMASH, MOVE_AQUA_TAIL, MOVE_##move3, MOVE_##move4}, \
+    .gender = TRAINER_MON_FEMALE,                                           \
+    }
+
+#define ROXANNE_AGGRON(rematch, move1, move2, move3)                        \
+    {                                                                       \
+    REMATCH_MON_TIER3(rematch),                                                \
+    .species = SPECIES_AGGRON,                                              \
+    .ability = ABILITY_ROCK_HEAD,                                           \
+    .nature = NATURE_IMPISH,                                                \
+    .ev = TRAINER_PARTY_EVS(1, 63, 63, 0, 0, 0),                            \
+    .moves = {MOVE_##move1, MOVE_##move2, MOVE_##move3, MOVE_STEALTH_ROCK}, \
+    .gender = TRAINER_MON_FEMALE,                                           \
+    }
+
 [TRAINER_ROXANNE_2] =
 {
     ROXANNE_INFO,
@@ -1010,41 +1058,10 @@
     .doubleBattle = TRUE,
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
-        {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(2),
-        .species = SPECIES_RELICANTH,
-        .ability = ABILITY_ROCK_HEAD,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .moves = {MOVE_HEAD_SMASH, MOVE_AQUA_TAIL, MOVE_DOUBLE_EDGE, MOVE_REST},
-        .gender = TRAINER_MON_FEMALE,
-        },
-        {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(2),
-        .species = SPECIES_CRADILY,
-        .ability = ABILITY_STORM_DRAIN,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .moves = {MOVE_GIGA_DRAIN, MOVE_ANCIENT_POWER, MOVE_INGRAIN, MOVE_AMNESIA},
-        .gender = TRAINER_MON_FEMALE,
-        .heldItem = ITEM_BIG_ROOT,
-        },
-        {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(2),
-        .species = SPECIES_ARMALDO,
-        .ability = ABILITY_BATTLE_ARMOR,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .moves = {MOVE_ROCK_SLIDE, MOVE_X_SCISSOR, MOVE_CRUSH_CLAW, MOVE_SWORDS_DANCE},
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_QUICK_CLAW,
-        },
-        {
-        .lvl = ENDGAME_REMATCH_2_LEVEL,
-        .species = SPECIES_PROBOPASS,
-        .ability = ABILITY_SAND_FORCE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .moves = {MOVE_POWER_GEM, MOVE_FLASH_CANNON, MOVE_SANDSTORM, MOVE_IRON_DEFENSE},
-        .gender = TRAINER_MON_FEMALE,
-        .heldItem = ITEM_SITRUS_BERRY,
-        }
+        ROXANNE_RELICANTH(2, DOUBLE_EDGE, REST),
+        ROXANNE_CRADILY(2),
+        ROXANNE_ARMALDO(2),
+        ROXANNE_PROBOPASS(2, SANDSTORM),
     },
 },
 
@@ -1055,49 +1072,11 @@
     .doubleBattle = TRUE,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(3),
-        .species = SPECIES_AGGRON,
-        .ability = ABILITY_ROCK_HEAD,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .moves = {MOVE_IRON_HEAD, MOVE_ROCK_SLIDE, MOVE_SANDSTORM, MOVE_STEALTH_ROCK},
-        .gender = TRAINER_MON_FEMALE,
-        },
-        {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(3),
-        .species = SPECIES_RELICANTH,
-        .ability = ABILITY_ROCK_HEAD,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .moves = {MOVE_HEAD_SMASH, MOVE_AQUA_TAIL, MOVE_DOUBLE_EDGE, MOVE_REST},
-        .gender = TRAINER_MON_FEMALE,
-        },
-        {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(3),
-        .species = SPECIES_CRADILY,
-        .ability = ABILITY_STORM_DRAIN,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .moves = {MOVE_GIGA_DRAIN, MOVE_ANCIENT_POWER, MOVE_INGRAIN, MOVE_AMNESIA},
-        .gender = TRAINER_MON_FEMALE,
-        .heldItem = ITEM_BIG_ROOT,
-        },
-        {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(3),
-        .species = SPECIES_ARMALDO,
-        .ability = ABILITY_BATTLE_ARMOR,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .moves = {MOVE_ROCK_SLIDE, MOVE_X_SCISSOR, MOVE_CRUSH_CLAW, MOVE_SWORDS_DANCE},
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_QUICK_CLAW,
-        },
-        {
-        .lvl = ENDGAME_REMATCH_3_LEVEL,
-        .species = SPECIES_PROBOPASS,
-        .ability = ABILITY_SAND_FORCE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .moves = {MOVE_POWER_GEM, MOVE_FLASH_CANNON, MOVE_SANDSTORM, MOVE_IRON_DEFENSE},
-        .gender = TRAINER_MON_FEMALE,
-        .heldItem = ITEM_SITRUS_BERRY,
-        }
+        ROXANNE_AGGRON(3, IRON_HEAD, ROCK_SLIDE, SANDSTORM),
+        ROXANNE_RELICANTH(3, DOUBLE_EDGE, REST),
+        ROXANNE_CRADILY(3),
+        ROXANNE_ARMALDO(3),
+        ROXANNE_PROBOPASS(3, SANDSTORM),
     },
 },
 
@@ -1108,49 +1087,11 @@
     .doubleBattle = TRUE,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(4),
-        .species = SPECIES_AGGRON,
-        .ability = ABILITY_ROCK_HEAD,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .moves = {MOVE_IRON_HEAD, MOVE_ROCK_SLIDE, MOVE_SANDSTORM, MOVE_STEALTH_ROCK},
-        .gender = TRAINER_MON_FEMALE,
-        },
-        {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(4),
-        .species = SPECIES_RELICANTH,
-        .ability = ABILITY_ROCK_HEAD,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .moves = {MOVE_HEAD_SMASH, MOVE_AQUA_TAIL, MOVE_DOUBLE_EDGE, MOVE_REST},
-        .gender = TRAINER_MON_FEMALE,
-        },
-        {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(4),
-        .species = SPECIES_CRADILY,
-        .ability = ABILITY_STORM_DRAIN,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .moves = {MOVE_GIGA_DRAIN, MOVE_ANCIENT_POWER, MOVE_INGRAIN, MOVE_AMNESIA},
-        .gender = TRAINER_MON_FEMALE,
-        .heldItem = ITEM_BIG_ROOT,
-        },
-        {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(4),
-        .species = SPECIES_ARMALDO,
-        .ability = ABILITY_BATTLE_ARMOR,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .moves = {MOVE_ROCK_SLIDE, MOVE_X_SCISSOR, MOVE_CRUSH_CLAW, MOVE_SWORDS_DANCE},
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_QUICK_CLAW,
-        },
-        {
-        .lvl = ENDGAME_REMATCH_4_LEVEL,
-        .species = SPECIES_PROBOPASS,
-        .ability = ABILITY_SAND_FORCE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .moves = {MOVE_POWER_GEM, MOVE_FLASH_CANNON, MOVE_SANDSTORM, MOVE_IRON_DEFENSE},
-        .gender = TRAINER_MON_FEMALE,
-        .heldItem = ITEM_SITRUS_BERRY,
-        }
+        ROXANNE_AGGRON(4, IRON_HEAD, ROCK_SLIDE, SANDSTORM),
+        ROXANNE_RELICANTH(4, DOUBLE_EDGE, REST),
+        ROXANNE_CRADILY(4),
+        ROXANNE_ARMALDO(4),
+        ROXANNE_PROBOPASS(4, SANDSTORM),
     },
 },
 
@@ -1162,57 +1103,19 @@
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(5),
+        REMATCH_MON_TIER3(5),
         .species = SPECIES_RHYPERIOR,
         .ability = ABILITY_SOLID_ROCK,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .nature = NATURE_ADAMANT,
+        .ev = TRAINER_PARTY_EVS(1, 63, 63, 0, 0, 0),
         .moves = {MOVE_ROCK_WRECKER, MOVE_DRILL_RUN, MOVE_POISON_JAB, MOVE_SANDSTORM},
         .gender = TRAINER_MON_FEMALE,
         },
-        {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(5),
-        .species = SPECIES_AGGRON,
-        .ability = ABILITY_ROCK_HEAD,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .moves = {MOVE_HEAD_SMASH, MOVE_BODY_PRESS, MOVE_IRON_DEFENSE, MOVE_STEALTH_ROCK},
-        .gender = TRAINER_MON_FEMALE,
-        },
-        {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(5),
-        .species = SPECIES_RELICANTH,
-        .ability = ABILITY_ROCK_HEAD,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .moves = {MOVE_HEAD_SMASH, MOVE_AQUA_TAIL, MOVE_BODY_PRESS, MOVE_IRON_DEFENSE},
-        .gender = TRAINER_MON_FEMALE,
-        },
-        {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(5),
-        .species = SPECIES_CRADILY,
-        .ability = ABILITY_STORM_DRAIN,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .moves = {MOVE_GIGA_DRAIN, MOVE_ANCIENT_POWER, MOVE_INGRAIN, MOVE_AMNESIA},
-        .gender = TRAINER_MON_FEMALE,
-        .heldItem = ITEM_BIG_ROOT,
-        },
-        {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(5),
-        .species = SPECIES_ARMALDO,
-        .ability = ABILITY_BATTLE_ARMOR,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .moves = {MOVE_ROCK_SLIDE, MOVE_X_SCISSOR, MOVE_CRUSH_CLAW, MOVE_SWORDS_DANCE},
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_QUICK_CLAW,
-        },
-        {
-        .lvl = ENDGAME_REMATCH_5_LEVEL,
-        .species = SPECIES_PROBOPASS,
-        .ability = ABILITY_SAND_FORCE,
-        .ev = TRAINER_PARTY_EVS(0, 0, 63, 63, 1, 0),
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .moves = {MOVE_POWER_GEM, MOVE_FLASH_CANNON, MOVE_BODY_PRESS, MOVE_IRON_DEFENSE},
-        .gender = TRAINER_MON_FEMALE,
-        .heldItem = ITEM_SITRUS_BERRY,
-        }
+        ROXANNE_AGGRON(5, HEAD_SMASH, BODY_PRESS, IRON_DEFENSE),
+        ROXANNE_RELICANTH(5, BODY_PRESS, IRON_DEFENSE),
+        ROXANNE_CRADILY(5),
+        ROXANNE_ARMALDO(5),
+        ROXANNE_PROBOPASS(5, BODY_PRESS),
     },
 },
 
@@ -1263,32 +1166,28 @@
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(2),
+        REMATCH_MON_TIER3(2),
         .species = SPECIES_BRELOOM,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_SEED_BOMB, MOVE_MACH_PUNCH},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(2),
+        REMATCH_MON_TIER2(2),
         .species = SPECIES_MACHAMP,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_CROSS_CHOP, MOVE_KNOCK_OFF, MOVE_DUAL_CHOP},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_BLACK_BELT,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(2),
+        REMATCH_MON_TIER2(2),
         .species = SPECIES_MEDICHAM,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_HIGH_JUMP_KICK, MOVE_ZEN_HEADBUTT, MOVE_DETECT},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_MUSCLE_BAND,
         },
         {
-        .lvl = ENDGAME_REMATCH_2_LEVEL,
+        REMATCH_ACE(2),
         .species = SPECIES_HARIYAMA,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_BELLY_DRUM, MOVE_FAKE_OUT},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -1308,39 +1207,34 @@
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(3),
+        REMATCH_MON_TIER3(3),
         .species = SPECIES_BLAZIKEN,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_SKY_UPPERCUT, MOVE_BLAZE_KICK, MOVE_MIRROR_MOVE},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(3),
+        REMATCH_MON_TIER3(3),
         .species = SPECIES_BRELOOM,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_SEED_BOMB, MOVE_MACH_PUNCH},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(3),
+        REMATCH_MON_TIER2(3),
         .species = SPECIES_MACHAMP,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_CROSS_CHOP, MOVE_KNOCK_OFF, MOVE_DUAL_CHOP},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_BLACK_BELT,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(3),
+        REMATCH_MON_TIER2(3),
         .species = SPECIES_MEDICHAM,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_HIGH_JUMP_KICK, MOVE_ZEN_HEADBUTT, MOVE_DETECT},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_MUSCLE_BAND,
         },
         {
-        .lvl = ENDGAME_REMATCH_3_LEVEL,
+        REMATCH_ACE(3),
         .species = SPECIES_HARIYAMA,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_BELLY_DRUM, MOVE_FAKE_OUT},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -1360,39 +1254,34 @@
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(4),
+        REMATCH_MON_TIER3(4),
         .species = SPECIES_BLAZIKEN,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_SKY_UPPERCUT, MOVE_BLAZE_KICK, MOVE_MIRROR_MOVE},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(4),
+        REMATCH_MON_TIER3(4),
         .species = SPECIES_BRELOOM,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_SEED_BOMB, MOVE_MACH_PUNCH},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(4),
+        REMATCH_MON_TIER2(4),
         .species = SPECIES_MACHAMP,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_CROSS_CHOP, MOVE_KNOCK_OFF, MOVE_DUAL_CHOP},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_BLACK_BELT,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(4),
+        REMATCH_MON_TIER2(4),
         .species = SPECIES_MEDICHAM,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_HIGH_JUMP_KICK, MOVE_ZEN_HEADBUTT, MOVE_DETECT},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_MUSCLE_BAND,
         },
         {
-        .lvl = ENDGAME_REMATCH_4_LEVEL,
+        REMATCH_ACE(4),
         .species = SPECIES_HARIYAMA,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_BELLY_DRUM, MOVE_FAKE_OUT},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -1412,45 +1301,39 @@
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(5),
+        REMATCH_MON_TIER3(5),
         .species = SPECIES_GALLADE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_PSYCHO_CUT, MOVE_NIGHT_SLASH},
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(5),
+        REMATCH_MON_TIER3(5),
         .species = SPECIES_BLAZIKEN,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_SKY_UPPERCUT, MOVE_BLAZE_KICK, MOVE_MIRROR_MOVE},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(5),
+        REMATCH_MON_TIER3(5),
         .species = SPECIES_BRELOOM,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_SEED_BOMB, MOVE_MACH_PUNCH},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(5),
+        REMATCH_MON_TIER2(5),
         .species = SPECIES_MACHAMP,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_CROSS_CHOP, MOVE_KNOCK_OFF, MOVE_DUAL_CHOP},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_BLACK_BELT,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(5),
+        REMATCH_MON_TIER2(5),
         .species = SPECIES_MEDICHAM,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_HIGH_JUMP_KICK, MOVE_ZEN_HEADBUTT, MOVE_DETECT},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_MUSCLE_BAND,
         },
         {
-        .lvl = ENDGAME_REMATCH_5_LEVEL,
+        REMATCH_ACE(5),
         .species = SPECIES_HARIYAMA,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_BELLY_DRUM, MOVE_FAKE_OUT},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -1508,31 +1391,27 @@
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(2),
+        REMATCH_MON_TIER3(2),
         .species = SPECIES_MAGNETON,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_ELECTRIC_TERRAIN},
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(2),
+        REMATCH_MON_TIER2(2),
         .species = SPECIES_MINUN,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_THUNDER_WAVE, MOVE_FAKE_TEARS, MOVE_NASTY_PLOT},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_MAGNET,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(2),
+        REMATCH_MON_TIER2(2),
         .species = SPECIES_PLUSLE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_SKILL_SWAP, MOVE_CHARM, MOVE_NASTY_PLOT},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_MAGNET,
         },
         {
-        .lvl = ENDGAME_REMATCH_2_LEVEL,
+        REMATCH_ACE(2),
         .species = SPECIES_MANECTRIC,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_SIGNAL_BEAM, MOVE_ICE_FANG},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -1552,39 +1431,34 @@
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(3),
+        REMATCH_MON_TIER3(3),
         .species = SPECIES_LANTURN,
         .ability = ABILITY_VOLT_ABSORB,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDER, MOVE_HYDRO_PUMP, MOVE_ELECTRIC_TERRAIN, MOVE_RAIN_DANCE},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(3),
+        REMATCH_MON_TIER3(3),
         .species = SPECIES_MAGNEZONE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_ELECTRIC_TERRAIN},
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(3),
+        REMATCH_MON_TIER2(3),
         .species = SPECIES_MINUN,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_THUNDER_WAVE, MOVE_FAKE_TEARS, MOVE_NASTY_PLOT},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_MAGNET,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(3),
+        REMATCH_MON_TIER2(3),
         .species = SPECIES_PLUSLE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_SKILL_SWAP, MOVE_CHARM, MOVE_NASTY_PLOT},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_MAGNET,
         },
         {
-        .lvl = ENDGAME_REMATCH_3_LEVEL,
+        REMATCH_ACE(3),
         .species = SPECIES_MANECTRIC,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_SIGNAL_BEAM, MOVE_ICE_FANG},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -1604,39 +1478,34 @@
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(4),
+        REMATCH_MON_TIER3(4),
         .species = SPECIES_LANTURN,
         .ability = ABILITY_VOLT_ABSORB,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDER, MOVE_HYDRO_PUMP, MOVE_ELECTRIC_TERRAIN, MOVE_RAIN_DANCE},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(4),
+        REMATCH_MON_TIER3(4),
         .species = SPECIES_MAGNEZONE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_ELECTRIC_TERRAIN},
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(4),
+        REMATCH_MON_TIER2(4),
         .species = SPECIES_MINUN,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_THUNDER_WAVE, MOVE_FAKE_TEARS, MOVE_NASTY_PLOT},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_MAGNET,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(4),
+        REMATCH_MON_TIER2(4),
         .species = SPECIES_PLUSLE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_SKILL_SWAP, MOVE_CHARM, MOVE_NASTY_PLOT},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_MAGNET,
         },
         {
-        .lvl = ENDGAME_REMATCH_4_LEVEL,
+        REMATCH_ACE(4),
         .species = SPECIES_MANECTRIC,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_SIGNAL_BEAM, MOVE_ICE_FANG},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -1656,45 +1525,39 @@
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(5),
+        REMATCH_MON_TIER3(5),
         .species = SPECIES_ELECTRODE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_ROLLOUT, MOVE_LIGHT_SCREEN, MOVE_SCREECH},
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(5),
+        REMATCH_MON_TIER3(5),
         .species = SPECIES_LANTURN,
         .ability = ABILITY_VOLT_ABSORB,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDER, MOVE_HYDRO_PUMP, MOVE_ELECTRIC_TERRAIN, MOVE_RAIN_DANCE},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(5),
+        REMATCH_MON_TIER3(5),
         .species = SPECIES_MAGNEZONE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_ELECTRIC_TERRAIN},
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(5),
+        REMATCH_MON_TIER2(5),
         .species = SPECIES_MINUN,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_THUNDER_WAVE, MOVE_FAKE_TEARS, MOVE_NASTY_PLOT},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_MAGNET,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(5),
+        REMATCH_MON_TIER2(5),
         .species = SPECIES_PLUSLE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_SKILL_SWAP, MOVE_CHARM, MOVE_NASTY_PLOT},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_MAGNET,
         },
         {
-        .lvl = ENDGAME_REMATCH_5_LEVEL,
+        REMATCH_ACE(5),
         .species = SPECIES_MANECTRIC,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_SIGNAL_BEAM, MOVE_ICE_FANG},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_MANECTITE,
@@ -1756,33 +1619,29 @@
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(2),
+        REMATCH_MON_TIER3(2),
         .species = SPECIES_CASTFORM,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_OVERHEAT, MOVE_SOLAR_BEAM, MOVE_WEATHER_BALL, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(2),
+        REMATCH_MON_TIER2(2),
         .species = SPECIES_BLAZIKEN,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_OVERHEAT, MOVE_AURA_SPHERE, MOVE_FOCUS_ENERGY, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_WHITE_HERB,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(2),
+        REMATCH_MON_TIER2(2),
         .species = SPECIES_CAMERUPT,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_OVERHEAT, MOVE_EARTH_POWER, MOVE_AMNESIA, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_WHITE_HERB,
         },
         {
-        .lvl = ENDGAME_REMATCH_2_LEVEL,
+        REMATCH_ACE(2),
         .species = SPECIES_TORKOAL,
         .ability = ABILITY_DROUGHT,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_OVERHEAT, MOVE_IRON_DEFENSE, MOVE_SHELL_SMASH, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_WHITE_HERB,
@@ -1798,40 +1657,35 @@
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(3),
+        REMATCH_MON_TIER3(3),
         .species = SPECIES_MAGCARGO,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_OVERHEAT, MOVE_YAWN, MOVE_AMNESIA, MOVE_SHELL_SMASH},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(3),
+        REMATCH_MON_TIER3(3),
         .species = SPECIES_CASTFORM,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_OVERHEAT, MOVE_SOLAR_BEAM, MOVE_WEATHER_BALL, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(3),
+        REMATCH_MON_TIER2(3),
         .species = SPECIES_BLAZIKEN,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_OVERHEAT, MOVE_AURA_SPHERE, MOVE_FOCUS_ENERGY, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_WHITE_HERB,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(3),
+        REMATCH_MON_TIER2(3),
         .species = SPECIES_CAMERUPT,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_OVERHEAT, MOVE_EARTH_POWER, MOVE_AMNESIA, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_WHITE_HERB,
         },
         {
-        .lvl = ENDGAME_REMATCH_3_LEVEL,
+        REMATCH_ACE(3),
         .species = SPECIES_TORKOAL,
         .ability = ABILITY_DROUGHT,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_OVERHEAT, MOVE_IRON_DEFENSE, MOVE_SHELL_SMASH, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_WHITE_HERB,
@@ -1847,48 +1701,42 @@
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(4),
+        REMATCH_MON_TIER3(4),
         .species = SPECIES_NINETALES,
         .ability = ABILITY_DROUGHT,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_OVERHEAT, MOVE_GRUDGE, MOVE_NASTY_PLOT, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(4),
+        REMATCH_MON_TIER3(4),
         .species = SPECIES_MAGCARGO,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_OVERHEAT, MOVE_YAWN, MOVE_SHELL_SMASH, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(4),
+        REMATCH_MON_TIER3(4),
         .species = SPECIES_CASTFORM,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_OVERHEAT, MOVE_SOLAR_BEAM, MOVE_WEATHER_BALL, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(4),
+        REMATCH_MON_TIER2(4),
         .species = SPECIES_BLAZIKEN,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_OVERHEAT, MOVE_AURA_SPHERE, MOVE_FOCUS_ENERGY, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_WHITE_HERB,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(4),
+        REMATCH_MON_TIER2(4),
         .species = SPECIES_CAMERUPT,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_OVERHEAT, MOVE_EARTH_POWER, MOVE_AMNESIA, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_WHITE_HERB,
         },
         {
-        .lvl = ENDGAME_REMATCH_4_LEVEL,
+        REMATCH_ACE(4),
         .species = SPECIES_TORKOAL,
         .ability = ABILITY_DROUGHT,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_OVERHEAT, MOVE_IRON_DEFENSE, MOVE_SHELL_SMASH, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_WHITE_HERB,
@@ -1904,48 +1752,42 @@
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(5),
+        REMATCH_MON_TIER3(5),
         .species = SPECIES_NINETALES,
         .ability = ABILITY_DROUGHT,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_OVERHEAT, MOVE_GRUDGE, MOVE_NASTY_PLOT, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(5),
+        REMATCH_MON_TIER3(5),
         .species = SPECIES_MAGCARGO,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_OVERHEAT, MOVE_YAWN, MOVE_AMNESIA, MOVE_SHELL_SMASH},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(5),
+        REMATCH_MON_TIER3(5),
         .species = SPECIES_CASTFORM,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_OVERHEAT, MOVE_SOLAR_BEAM, MOVE_WEATHER_BALL, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(5),
+        REMATCH_MON_TIER2(5),
         .species = SPECIES_BLAZIKEN,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_OVERHEAT, MOVE_AURA_SPHERE, MOVE_FOCUS_ENERGY, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_WHITE_HERB,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(5),
+        REMATCH_MON_TIER2(5),
         .species = SPECIES_CAMERUPT,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_OVERHEAT, MOVE_EARTH_POWER, MOVE_AMNESIA, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_WHITE_HERB,
         },
         {
-        .lvl = ENDGAME_REMATCH_5_LEVEL,
+        REMATCH_ACE(5),
         .species = SPECIES_TORKOAL,
         .ability = ABILITY_DROUGHT,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_OVERHEAT, MOVE_IRON_DEFENSE, MOVE_SHELL_SMASH, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_WHITE_HERB,
@@ -2011,35 +1853,31 @@
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(2),
+        REMATCH_MON_TIER3(2),
         .species = SPECIES_LINOONE,
         .ability = ABILITY_QUICK_FEET,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_SLASH, MOVE_PLAY_ROUGH, MOVE_PIN_MISSILE, MOVE_BELLY_DRUM},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(2),
+        REMATCH_MON_TIER2(2),
         .species = SPECIES_ZANGOOSE,
         .ability = ABILITY_POISON_HEAL,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_FACADE, MOVE_X_SCISSOR, MOVE_NIGHT_SLASH, MOVE_SWORDS_DANCE},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_TOXIC_ORB,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(2),
+        REMATCH_MON_TIER2(2),
         .species = SPECIES_SPINDA,
         .ability = ABILITY_OWN_TEMPO,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THRASH, MOVE_TEETER_DANCE, MOVE_HYPNOSIS, MOVE_SKILL_SWAP},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_LIECHI_BERRY,
         },
         {
-        .lvl = ENDGAME_REMATCH_2_LEVEL,
+        REMATCH_ACE(2),
         .species = SPECIES_SLAKING,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_GIGA_IMPACT, MOVE_HAMMER_ARM, MOVE_THROAT_CHOP, MOVE_SUCKER_PUNCH},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -2059,43 +1897,38 @@
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(3),
+        REMATCH_MON_TIER3(3),
         .species = SPECIES_LINOONE,
         .ability = ABILITY_QUICK_FEET,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_SLASH, MOVE_PLAY_ROUGH, MOVE_PIN_MISSILE, MOVE_BELLY_DRUM},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(3),
+        REMATCH_MON_TIER3(3),
         .species = SPECIES_EXPLOUD,
         .ability = ABILITY_PUNK_ROCK,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_HYPER_VOICE, MOVE_CRUNCH, MOVE_SCREECH, MOVE_SUPERSONIC},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(3),
+        REMATCH_MON_TIER2(3),
         .species = SPECIES_ZANGOOSE,
         .ability = ABILITY_POISON_HEAL,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_FACADE, MOVE_X_SCISSOR, MOVE_NIGHT_SLASH, MOVE_SWORDS_DANCE},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_TOXIC_ORB,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(3),
+        REMATCH_MON_TIER2(3),
         .species = SPECIES_SPINDA,
         .ability = ABILITY_OWN_TEMPO,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THRASH, MOVE_TEETER_DANCE, MOVE_HYPNOSIS, MOVE_SKILL_SWAP},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_LIECHI_BERRY,
         },
         {
-        .lvl = ENDGAME_REMATCH_3_LEVEL,
+        REMATCH_ACE(3),
         .species = SPECIES_SLAKING,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_GIGA_IMPACT, MOVE_HAMMER_ARM, MOVE_THROAT_CHOP, MOVE_SUCKER_PUNCH},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -2115,43 +1948,38 @@
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(4),
+        REMATCH_MON_TIER3(4),
         .species = SPECIES_LINOONE,
         .ability = ABILITY_QUICK_FEET,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_SLASH, MOVE_PLAY_ROUGH, MOVE_PIN_MISSILE, MOVE_BELLY_DRUM},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(4),
+        REMATCH_MON_TIER3(4),
         .species = SPECIES_EXPLOUD,
         .ability = ABILITY_PUNK_ROCK,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_HYPER_VOICE, MOVE_CRUNCH, MOVE_SCREECH, MOVE_SUPERSONIC},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(4),
+        REMATCH_MON_TIER2(4),
         .species = SPECIES_ZANGOOSE,
         .ability = ABILITY_POISON_HEAL,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_FACADE, MOVE_X_SCISSOR, MOVE_NIGHT_SLASH, MOVE_SWORDS_DANCE},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_TOXIC_ORB,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(4),
+        REMATCH_MON_TIER2(4),
         .species = SPECIES_SPINDA,
         .ability = ABILITY_OWN_TEMPO,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THRASH, MOVE_TEETER_DANCE, MOVE_HYPNOSIS, MOVE_SKILL_SWAP},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_LIECHI_BERRY,
         },
         {
-        .lvl = ENDGAME_REMATCH_4_LEVEL,
+        REMATCH_ACE(4),
         .species = SPECIES_SLAKING,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_GIGA_IMPACT, MOVE_HAMMER_ARM, MOVE_THROAT_CHOP, MOVE_SUCKER_PUNCH},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -2171,50 +1999,44 @@
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(5),
+        REMATCH_MON_TIER3(5),
         .species = SPECIES_LINOONE,
         .ability = ABILITY_QUICK_FEET,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_SLASH, MOVE_PLAY_ROUGH, MOVE_PIN_MISSILE, MOVE_BELLY_DRUM},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(5),
+        REMATCH_MON_TIER3(5),
         .species = SPECIES_KECLEON,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_FACADE, MOVE_SHADOW_CLAW, MOVE_SUCKER_PUNCH, MOVE_DISABLE},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(5),
+        REMATCH_MON_TIER3(5),
         .species = SPECIES_EXPLOUD,
         .ability = ABILITY_PUNK_ROCK,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_HYPER_VOICE, MOVE_CRUNCH, MOVE_SCREECH, MOVE_SUPERSONIC},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(5),
+        REMATCH_MON_TIER2(5),
         .species = SPECIES_ZANGOOSE,
         .ability = ABILITY_POISON_HEAL,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_FACADE, MOVE_X_SCISSOR, MOVE_NIGHT_SLASH, MOVE_SWORDS_DANCE},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_TOXIC_ORB,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(5),
+        REMATCH_MON_TIER2(5),
         .species = SPECIES_SPINDA,
         .ability = ABILITY_OWN_TEMPO,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_THRASH, MOVE_TEETER_DANCE, MOVE_HYPNOSIS, MOVE_SKILL_SWAP},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_LIECHI_BERRY,
         },
         {
-        .lvl = ENDGAME_REMATCH_5_LEVEL,
+        REMATCH_ACE(5),
         .species = SPECIES_SLAKING,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_GIGA_IMPACT, MOVE_HAMMER_ARM, MOVE_THROAT_CHOP, MOVE_SUCKER_PUNCH},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -2272,7 +2094,7 @@
         {
         .lvl = 46,
         .species = SPECIES_ALTARIA,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .moves = {MOVE_AERIAL_ACE, MOVE_DRAGON_BREATH, MOVE_COTTON_GUARD, MOVE_DRAGON_DANCE},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -2291,42 +2113,37 @@
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(2),
+        REMATCH_MON_TIER3(2),
         .species = SPECIES_MASQUERAIN,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_AIR_SLASH, MOVE_BUG_BUZZ, MOVE_GIGA_DRAIN, MOVE_QUIVER_DANCE},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(2),
+        REMATCH_MON_TIER3(2),
         .species = SPECIES_TROPIUS,
         .ability = ABILITY_CHLOROPHYLL,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_AIR_SLASH, MOVE_ENERGY_BALL, MOVE_BODY_SLAM, MOVE_SYNTHESIS},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(2),
+        REMATCH_MON_TIER2(2),
         .species = SPECIES_PELIPPER,
         .ability = ABILITY_DRIZZLE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_HURRICANE, MOVE_HYDRO_PUMP, MOVE_TAILWIND, MOVE_ROOST},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_DAMP_ROCK,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(2),
+        REMATCH_MON_TIER2(2),
         .species = SPECIES_SWELLOW,
         .ability = ABILITY_SCRAPPY,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BRAVE_BIRD, MOVE_ENDEAVOR, MOVE_REVERSAL, MOVE_DOUBLE_TEAM},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SHARP_BEAK,
         },
         {
-        .lvl = ENDGAME_REMATCH_2_LEVEL,
+        REMATCH_ACE(2),
         .species = SPECIES_ALTARIA,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_AIR_SLASH, MOVE_DRAGON_PULSE, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -2345,49 +2162,43 @@
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(3),
+        REMATCH_MON_TIER3(3),
         .species = SPECIES_NINJASK,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_AERIAL_ACE, MOVE_LEECH_LIFE, MOVE_BATON_PASS, MOVE_SWORDS_DANCE},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(3),
+        REMATCH_MON_TIER3(3),
         .species = SPECIES_MASQUERAIN,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_AIR_SLASH, MOVE_BUG_BUZZ, MOVE_GIGA_DRAIN, MOVE_QUIVER_DANCE},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(3),
+        REMATCH_MON_TIER3(3),
         .species = SPECIES_TROPIUS,
         .ability = ABILITY_CHLOROPHYLL,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_AIR_SLASH, MOVE_ENERGY_BALL, MOVE_BODY_SLAM, MOVE_SYNTHESIS},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(3),
+        REMATCH_MON_TIER2(3),
         .species = SPECIES_PELIPPER,
         .ability = ABILITY_DRIZZLE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_HURRICANE, MOVE_HYDRO_PUMP, MOVE_TAILWIND, MOVE_ROOST},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_DAMP_ROCK,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(3),
+        REMATCH_MON_TIER2(3),
         .species = SPECIES_SWELLOW,
         .ability = ABILITY_SCRAPPY,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BRAVE_BIRD, MOVE_ENDEAVOR, MOVE_REVERSAL, MOVE_DOUBLE_TEAM},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SHARP_BEAK,
         },
         {
-        .lvl = ENDGAME_REMATCH_3_LEVEL,
+        REMATCH_ACE(3),
         .species = SPECIES_ALTARIA,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_AIR_SLASH, MOVE_DRAGON_PULSE, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -2406,49 +2217,43 @@
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(4),
+        REMATCH_MON_TIER3(4),
         .species = SPECIES_NINJASK,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_AERIAL_ACE, MOVE_LEECH_LIFE, MOVE_BATON_PASS, MOVE_SWORDS_DANCE},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(4),
+        REMATCH_MON_TIER3(4),
         .species = SPECIES_MASQUERAIN,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_AIR_SLASH, MOVE_BUG_BUZZ, MOVE_GIGA_DRAIN, MOVE_QUIVER_DANCE},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(4),
+        REMATCH_MON_TIER3(4),
         .species = SPECIES_TROPIUS,
         .ability = ABILITY_CHLOROPHYLL,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_AIR_SLASH, MOVE_ENERGY_BALL, MOVE_BODY_SLAM, MOVE_SYNTHESIS},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(4),
+        REMATCH_MON_TIER2(4),
         .species = SPECIES_PELIPPER,
         .ability = ABILITY_DRIZZLE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_HURRICANE, MOVE_HYDRO_PUMP, MOVE_TAILWIND, MOVE_ROOST},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_DAMP_ROCK,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(4),
+        REMATCH_MON_TIER2(4),
         .species = SPECIES_SWELLOW,
         .ability = ABILITY_SCRAPPY,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BRAVE_BIRD, MOVE_ENDEAVOR, MOVE_REVERSAL, MOVE_DOUBLE_TEAM},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SHARP_BEAK,
         },
         {
-        .lvl = ENDGAME_REMATCH_4_LEVEL,
+        REMATCH_ACE(4),
         .species = SPECIES_ALTARIA,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_AIR_SLASH, MOVE_DRAGON_PULSE, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -2467,49 +2272,43 @@
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(5),
+        REMATCH_MON_TIER3(5),
         .species = SPECIES_NINJASK,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_ACROBATICS, MOVE_LEECH_LIFE, MOVE_BATON_PASS, MOVE_SWORDS_DANCE},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(5),
+        REMATCH_MON_TIER3(5),
         .species = SPECIES_MASQUERAIN,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_AIR_SLASH, MOVE_BUG_BUZZ, MOVE_GIGA_DRAIN, MOVE_QUIVER_DANCE},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(5),
+        REMATCH_MON_TIER3(5),
         .species = SPECIES_TROPIUS,
         .ability = ABILITY_CHLOROPHYLL,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_AIR_SLASH, MOVE_ENERGY_BALL, MOVE_BODY_SLAM, MOVE_SYNTHESIS},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(5),
+        REMATCH_MON_TIER2(5),
         .species = SPECIES_PELIPPER,
         .ability = ABILITY_DRIZZLE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_HURRICANE, MOVE_HYDRO_PUMP, MOVE_TAILWIND, MOVE_ROOST},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_DAMP_ROCK,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(5),
+        REMATCH_MON_TIER2(5),
         .species = SPECIES_SWELLOW,
         .ability = ABILITY_SCRAPPY,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_BRAVE_BIRD, MOVE_ENDEAVOR, MOVE_REVERSAL, MOVE_DOUBLE_TEAM},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SHARP_BEAK,
         },
         {
-        .lvl = ENDGAME_REMATCH_5_LEVEL,
+        REMATCH_ACE(5),
         .species = SPECIES_ALTARIA,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_AIR_SLASH, MOVE_DRAGON_PULSE, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -2571,37 +2370,32 @@
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(2),
+        REMATCH_MON_TIER3(2),
         .species = SPECIES_CHIMECHO,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_HEAL_PULSE, MOVE_LIGHT_SCREEN, MOVE_HEAL_BELL},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(2),
+        REMATCH_MON_TIER2(2),
         .species = SPECIES_CLAYDOL,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_EARTH_POWER, MOVE_POWER_SPLIT, MOVE_COSMIC_POWER},
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(2),
+        REMATCH_MON_TIER2(2),
         .species = SPECIES_GRUMPIG,
         .ability = ABILITY_THICK_FAT,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_CONFUSE_RAY, MOVE_MAGIC_COAT},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_2_LEVEL,
+        REMATCH_ACE(2),
         .species = SPECIES_LUNATONE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_ICY_WIND, MOVE_COSMIC_POWER},
         .heldItem = ITEM_SITRUS_BERRY,
         },
         {
-        .lvl = ENDGAME_REMATCH_2_LEVEL,
+        REMATCH_ACE(2),
         .species = SPECIES_SOLROCK,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_ROCK_SLIDE, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN},
         .heldItem = ITEM_SITRUS_BERRY,
         }
@@ -2620,45 +2414,39 @@
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(3),
+        REMATCH_MON_TIER3(3),
         .species = SPECIES_GARDEVOIR,
         .ability = ABILITY_SYNCHRONIZE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_MYSTICAL_FIRE, MOVE_CALM_MIND},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(3),
+        REMATCH_MON_TIER3(3),
         .species = SPECIES_CHIMECHO,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_HEAL_PULSE, MOVE_LIGHT_SCREEN, MOVE_HEAL_BELL},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(3),
+        REMATCH_MON_TIER2(3),
         .species = SPECIES_CLAYDOL,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_EARTH_POWER, MOVE_POWER_SPLIT, MOVE_COSMIC_POWER},
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(3),
+        REMATCH_MON_TIER2(3),
         .species = SPECIES_GRUMPIG,
         .ability = ABILITY_THICK_FAT,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_CONFUSE_RAY, MOVE_MAGIC_COAT},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_3_LEVEL,
+        REMATCH_ACE(3),
         .species = SPECIES_LUNATONE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_ICY_WIND, MOVE_COSMIC_POWER},
         .heldItem = ITEM_SITRUS_BERRY,
         },
         {
-        .lvl = ENDGAME_REMATCH_3_LEVEL,
+        REMATCH_ACE(3),
         .species = SPECIES_SOLROCK,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_ROCK_SLIDE, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN},
         .heldItem = ITEM_SITRUS_BERRY,
         }
@@ -2677,45 +2465,39 @@
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(4),
+        REMATCH_MON_TIER3(4),
         .species = SPECIES_GARDEVOIR,
         .ability = ABILITY_SYNCHRONIZE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_MYSTICAL_FIRE, MOVE_CALM_MIND},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(4),
+        REMATCH_MON_TIER3(4),
         .species = SPECIES_CHIMECHO,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_HEAL_PULSE, MOVE_LIGHT_SCREEN, MOVE_HEAL_BELL},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(4),
+        REMATCH_MON_TIER2(4),
         .species = SPECIES_CLAYDOL,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_EARTH_POWER, MOVE_POWER_SPLIT, MOVE_COSMIC_POWER},
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(4),
+        REMATCH_MON_TIER2(4),
         .species = SPECIES_GRUMPIG,
         .ability = ABILITY_THICK_FAT,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_CONFUSE_RAY, MOVE_MAGIC_COAT},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_4_LEVEL,
+        REMATCH_ACE(4),
         .species = SPECIES_LUNATONE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_ICY_WIND, MOVE_COSMIC_POWER},
         .heldItem = ITEM_SITRUS_BERRY,
         },
         {
-        .lvl = ENDGAME_REMATCH_4_LEVEL,
+        REMATCH_ACE(4),
         .species = SPECIES_SOLROCK,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_ROCK_SLIDE, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN},
         .heldItem = ITEM_SITRUS_BERRY,
         }
@@ -2734,45 +2516,39 @@
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(5),
+        REMATCH_MON_TIER3(5),
         .species = SPECIES_GARDEVOIR,
         .ability = ABILITY_SYNCHRONIZE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_MYSTICAL_FIRE, MOVE_CALM_MIND},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(5),
+        REMATCH_MON_TIER3(5),
         .species = SPECIES_CHIMECHO,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_HEAL_PULSE, MOVE_LIGHT_SCREEN, MOVE_HEAL_BELL},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(5),
+        REMATCH_MON_TIER2(5),
         .species = SPECIES_CLAYDOL,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_EARTH_POWER, MOVE_POWER_SPLIT, MOVE_COSMIC_POWER},
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(5),
+        REMATCH_MON_TIER2(5),
         .species = SPECIES_GRUMPIG,
         .ability = ABILITY_THICK_FAT,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_CONFUSE_RAY, MOVE_MAGIC_COAT},
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = ENDGAME_REMATCH_5_LEVEL,
+        REMATCH_ACE(5),
         .species = SPECIES_LUNATONE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_ICY_WIND, MOVE_COSMIC_POWER},
         .heldItem = ITEM_SITRUS_BERRY,
         },
         {
-        .lvl = ENDGAME_REMATCH_5_LEVEL,
+        REMATCH_ACE(5),
         .species = SPECIES_SOLROCK,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_PSYCHIC, MOVE_ROCK_SLIDE, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN},
         .heldItem = ITEM_SITRUS_BERRY,
         }
@@ -2835,35 +2611,30 @@
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(2),
+        REMATCH_MON_TIER3(2),
         .species = SPECIES_CASTFORM,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_WEATHER_BALL, MOVE_THUNDER, MOVE_HURRICANE, MOVE_RAIN_DANCE},
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(2),
+        REMATCH_MON_TIER3(2),
         .species = SPECIES_HUNTAIL,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_AQUA_TAIL, MOVE_CRUNCH, MOVE_BATON_PASS, MOVE_COIL},
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(2),
+        REMATCH_MON_TIER2(2),
         .species = SPECIES_CRAWDAUNT,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_CRABHAMMER, MOVE_CRUNCH, MOVE_ENDEAVOR, MOVE_SWORDS_DANCE},
         .heldItem = ITEM_MYSTIC_WATER,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(2),
+        REMATCH_MON_TIER2(2),
         .species = SPECIES_LUVDISC,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_HYDRO_PUMP, MOVE_WISH, MOVE_BABY_DOLL_EYES, MOVE_RAIN_DANCE},
         .heldItem = ITEM_DAMP_ROCK,
         },
         {
-        .lvl = ENDGAME_REMATCH_2_LEVEL,
+        REMATCH_ACE(2),
         .species = SPECIES_WHISCASH,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_AQUA_TAIL, MOVE_EARTHQUAKE, MOVE_ZEN_HEADBUTT, MOVE_DRAGON_DANCE},
         .heldItem = ITEM_SITRUS_BERRY,
         }
@@ -2882,41 +2653,35 @@
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(3),
+        REMATCH_MON_TIER3(3),
         .species = SPECIES_SWAMPERT,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_LIQUIDATION, MOVE_EARTHQUAKE, MOVE_HAMMER_ARM, MOVE_ROCK_SLIDE},
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(3),
+        REMATCH_MON_TIER3(3),
         .species = SPECIES_CASTFORM,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_WEATHER_BALL, MOVE_THUNDER, MOVE_HURRICANE, MOVE_RAIN_DANCE},
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(3),
+        REMATCH_MON_TIER3(3),
         .species = SPECIES_HUNTAIL,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_AQUA_TAIL, MOVE_CRUNCH, MOVE_BATON_PASS, MOVE_COIL},
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(3),
+        REMATCH_MON_TIER2(3),
         .species = SPECIES_CRAWDAUNT,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_CRABHAMMER, MOVE_CRUNCH, MOVE_ENDEAVOR, MOVE_SWORDS_DANCE},
         .heldItem = ITEM_MYSTIC_WATER,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(3),
+        REMATCH_MON_TIER2(3),
         .species = SPECIES_LUVDISC,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_HYDRO_PUMP, MOVE_WISH, MOVE_BABY_DOLL_EYES, MOVE_RAIN_DANCE},
         .heldItem = ITEM_DAMP_ROCK,
         },
         {
-        .lvl = ENDGAME_REMATCH_3_LEVEL,
+        REMATCH_ACE(3),
         .species = SPECIES_WHISCASH,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_AQUA_TAIL, MOVE_EARTHQUAKE, MOVE_ZEN_HEADBUTT, MOVE_DRAGON_DANCE},
         .heldItem = ITEM_SITRUS_BERRY,
         }
@@ -2935,41 +2700,35 @@
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(4),
+        REMATCH_MON_TIER3(4),
         .species = SPECIES_SWAMPERT,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_LIQUIDATION, MOVE_EARTHQUAKE, MOVE_HAMMER_ARM, MOVE_ROCK_SLIDE},
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(4),
+        REMATCH_MON_TIER3(4),
         .species = SPECIES_CASTFORM,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_WEATHER_BALL, MOVE_THUNDER, MOVE_HURRICANE, MOVE_RAIN_DANCE},
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(4),
+        REMATCH_MON_TIER3(4),
         .species = SPECIES_HUNTAIL,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_AQUA_TAIL, MOVE_CRUNCH, MOVE_BATON_PASS, MOVE_COIL},
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(4),
+        REMATCH_MON_TIER2(4),
         .species = SPECIES_CRAWDAUNT,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_CRABHAMMER, MOVE_CRUNCH, MOVE_ENDEAVOR, MOVE_SWORDS_DANCE},
         .heldItem = ITEM_MYSTIC_WATER,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(4),
+        REMATCH_MON_TIER2(4),
         .species = SPECIES_LUVDISC,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_HYDRO_PUMP, MOVE_WISH, MOVE_BABY_DOLL_EYES, MOVE_RAIN_DANCE},
         .heldItem = ITEM_DAMP_ROCK,
         },
         {
-        .lvl = ENDGAME_REMATCH_4_LEVEL,
+        REMATCH_ACE(4),
         .species = SPECIES_WHISCASH,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_AQUA_TAIL, MOVE_EARTHQUAKE, MOVE_ZEN_HEADBUTT, MOVE_DRAGON_DANCE},
         .heldItem = ITEM_SITRUS_BERRY,
         }
@@ -2988,41 +2747,35 @@
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(5),
+        REMATCH_MON_TIER3(5),
         .species = SPECIES_SWAMPERT,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_LIQUIDATION, MOVE_EARTHQUAKE, MOVE_HAMMER_ARM, MOVE_ROCK_SLIDE},
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(5),
+        REMATCH_MON_TIER3(5),
         .species = SPECIES_CASTFORM,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_WEATHER_BALL, MOVE_THUNDER, MOVE_HURRICANE, MOVE_RAIN_DANCE},
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_3(5),
+        REMATCH_MON_TIER3(5),
         .species = SPECIES_HUNTAIL,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_AQUA_TAIL, MOVE_CRUNCH, MOVE_BATON_PASS, MOVE_COIL},
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(5),
+        REMATCH_MON_TIER2(5),
         .species = SPECIES_CRAWDAUNT,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_CRABHAMMER, MOVE_CRUNCH, MOVE_ENDEAVOR, MOVE_SWORDS_DANCE},
         .heldItem = ITEM_MYSTIC_WATER,
         },
         {
-        .lvl = ENDGAME_REMATCH_LEVEL_2(5),
+        REMATCH_MON_TIER2(5),
         .species = SPECIES_LUVDISC,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_HYDRO_PUMP, MOVE_WISH, MOVE_BABY_DOLL_EYES, MOVE_RAIN_DANCE},
         .heldItem = ITEM_DAMP_ROCK,
         },
         {
-        .lvl = ENDGAME_REMATCH_5_LEVEL,
+        REMATCH_ACE(5),
         .species = SPECIES_WHISCASH,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .moves = {MOVE_AQUA_TAIL, MOVE_EARTHQUAKE, MOVE_ZEN_HEADBUTT, MOVE_DRAGON_DANCE},
         .heldItem = ITEM_SITRUS_BERRY,
         }
@@ -3068,7 +2821,7 @@
         {
         .lvl = 52,
         .species = SPECIES_ABSOL,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .moves = {MOVE_NIGHT_SLASH, MOVE_PSYCHO_CUT, MOVE_AERIAL_ACE, MOVE_SWORDS_DANCE},
         .heldItem = ITEM_SITRUS_BERRY,
         }
@@ -3114,7 +2867,7 @@
         {
         .lvl = 53,
         .species = SPECIES_DUSKNOIR,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .moves = {MOVE_SHADOW_PUNCH, MOVE_EARTHQUAKE, MOVE_FIRE_PUNCH, MOVE_ICE_PUNCH},
         .heldItem = ITEM_SITRUS_BERRY,
         }
@@ -3160,7 +2913,7 @@
         {
         .lvl = 54,
         .species = SPECIES_WALREIN,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .moves = {MOVE_BLIZZARD, MOVE_SURF, MOVE_SHEER_COLD, MOVE_HAIL},
         .heldItem = ITEM_SITRUS_BERRY,
         }
@@ -3206,7 +2959,7 @@
         {
         .lvl = 56,
         .species = SPECIES_SALAMENCE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .moves = {MOVE_DRAGON_CLAW, MOVE_DUAL_WINGBEAT, MOVE_ROCK_SLIDE, MOVE_DRAGON_DANCE},
         .heldItem = ITEM_SALAMENCITE,
         }
@@ -3229,7 +2982,7 @@
         .lvl = 56,
         .species = SPECIES_PELIPPER,
         .ability = ABILITY_DRIZZLE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .moves = {MOVE_HYDRO_PUMP, MOVE_HURRICANE, MOVE_ROOST, MOVE_SUPERSONIC},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_DAMP_ROCK,
@@ -3238,7 +2991,7 @@
         .lvl = 56,
         .species = SPECIES_GOREBYSS,
         .ability = ABILITY_SWIFT_SWIM,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .moves = {MOVE_SURF, MOVE_PSYCHIC, MOVE_DRAINING_KISS, MOVE_SHELL_SMASH},
         .gender = TRAINER_MON_FEMALE,
         },
@@ -3247,7 +3000,7 @@
         .species = SPECIES_RELICANTH,
         .ability = ABILITY_SWIFT_SWIM,
         .nature = NATURE_IMPISH,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .moves = {MOVE_AQUA_TAIL, MOVE_ROCK_TOMB, MOVE_YAWN, MOVE_REST},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_CHESTO_BERRY,
@@ -3257,7 +3010,7 @@
         .lvl = 57,
         .species = SPECIES_LUDICOLO,
         .ability = ABILITY_SWIFT_SWIM,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .moves = {MOVE_SURF, MOVE_GIGA_DRAIN, MOVE_LEECH_SEED, MOVE_RAIN_DANCE},
         .gender = TRAINER_MON_MALE,
         },
@@ -3265,7 +3018,7 @@
         .lvl = 57,
         .species = SPECIES_WAILORD,
         .ability = ABILITY_OBLIVIOUS,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .moves = {MOVE_WATER_SPOUT, MOVE_ICE_BEAM, MOVE_AQUA_RING, MOVE_AMNESIA},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_LEFTOVERS,
@@ -3274,7 +3027,7 @@
         .lvl = 59,
         .species = SPECIES_MILOTIC,
         .ability = ABILITY_MARVEL_SCALE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .moves = {MOVE_SURF, MOVE_ICE_BEAM, MOVE_RAIN_DANCE, MOVE_RECOVER},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -3298,7 +3051,7 @@
         .ability = ABILITY_STURDY,
         .nature = NATURE_IMPISH,
         .ev = TRAINER_PARTY_EVS(1, 63, 63, 0, 0, 0),
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .moves = {MOVE_STEEL_WING, MOVE_DRILL_PECK, MOVE_BODY_PRESS, MOVE_SPIKES},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_GANLON_BERRY,
@@ -3309,7 +3062,7 @@
         .species = SPECIES_CLAYDOL,
         .nature = NATURE_CALM,
         .ev = TRAINER_PARTY_EVS(0, 0, 63, 0, 1, 63),
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .moves = {MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_ANCIENT_POWER, MOVE_EARTHQUAKE},
         },
         {
@@ -3317,7 +3070,7 @@
         .species = SPECIES_JIRACHI,
         .nature = NATURE_MODEST,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 63, 63, 1),
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .moves = {MOVE_DOOM_DESIRE, MOVE_FLASH_CANNON, MOVE_PSYCHIC, MOVE_CALM_MIND},
         .heldItem = ITEM_KINGS_ROCK,
         .ball = ITEM_CHERISH_BALL,
@@ -3329,7 +3082,7 @@
         .ability = ABILITY_SHEER_FORCE,
         .nature = NATURE_ADAMANT,
         .ev = TRAINER_PARTY_EVS(0, 63, 1, 63, 0, 0),
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .moves = {MOVE_IRON_HEAD, MOVE_PLAY_ROUGH, MOVE_CRUNCH, MOVE_SWORDS_DANCE},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_LIFE_ORB,
@@ -3341,7 +3094,7 @@
         .ability = ABILITY_STURDY,
         .nature = NATURE_IMPISH,
         .ev = TRAINER_PARTY_EVS(1, 63, 63, 0, 0, 0),
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .moves = {MOVE_IRON_HEAD, MOVE_ROCK_SLIDE, MOVE_BODY_PRESS, MOVE_IRON_DEFENSE},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SHUCA_BERRY,
@@ -3353,7 +3106,7 @@
         .ability = ABILITY_CLEAR_BODY,
         .nature = NATURE_ADAMANT,
         .ev = TRAINER_PARTY_EVS(1, 63, 63, 0, 0, 0),
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .moves = {MOVE_METEOR_MASH, MOVE_PSYCHIC_FANGS, MOVE_EARTHQUAKE, MOVE_BULLET_PUNCH},
         .heldItem = ITEM_METAGROSSITE,
         .ball = ITEM_PREMIER_BALL,
@@ -3682,7 +3435,7 @@
         .lvl = REMATCH_5_LEVEL_1,
         .species = SPECIES_LINOONE,
         .ev = TRAINER_PARTY_EVS(1, 63, 0, 63, 0, 0),
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .moves = {MOVE_BODY_SLAM, MOVE_PLAY_ROUGH, MOVE_PIN_MISSILE, MOVE_HONE_CLAWS},
         .heldItem = ITEM_FIGY_BERRY,
         LINUS,
@@ -3920,7 +3673,7 @@
         .lvl = REMATCH_5_LEVEL_1,
         .species = SPECIES_LINOONE,
         .ability = ABILITY_QUICK_FEET,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .moves = {MOVE_BODY_SLAM, MOVE_PLAY_ROUGH, MOVE_SEED_BOMB, MOVE_HONE_CLAWS},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_BIG_NUGGET,
@@ -6141,7 +5894,7 @@
         {
         .lvl = 28,
         .species = SPECIES_SWELLOW,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .heldItem = ITEM_SALAC_BERRY,
         .moves = {MOVE_QUICK_ATTACK, MOVE_AGILITY, MOVE_WING_ATTACK, MOVE_NONE}
         }
@@ -6161,7 +5914,7 @@
         {
         .lvl = 28,
         .species = SPECIES_SPINDA,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .moves = {MOVE_TEETER_DANCE, MOVE_DIZZY_PUNCH, MOVE_PSYBEAM, MOVE_NONE}
         }
     },
@@ -6180,7 +5933,7 @@
         {
         .lvl = 28,
         .species = SPECIES_VIGOROTH,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .heldItem = ITEM_SITRUS_BERRY,
         .moves = {MOVE_SLACK_OFF, MOVE_DRAIN_PUNCH, MOVE_ENDURE, MOVE_NONE}
         }
@@ -6200,7 +5953,7 @@
         {
         .lvl = 28,
         .species = SPECIES_LINOONE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .heldItem = ITEM_SCOPE_LENS,
         .moves = {MOVE_SLASH, MOVE_NONE, MOVE_NONE, MOVE_NONE}
         }
@@ -6622,7 +6375,7 @@
         {
         .lvl = 28,
         .species = SPECIES_DELCATTY,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .heldItem = ITEM_MICLE_BERRY,
         .moves = {MOVE_SWIFT, MOVE_SHOCK_WAVE, MOVE_FEINT_ATTACK, MOVE_NONE}
         }
@@ -6642,7 +6395,7 @@
         {
         .lvl = 28,
         .species = SPECIES_WIGGLYTUFF,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .heldItem = ITEM_GANLON_BERRY,
         .moves = {MOVE_DEFENSE_CURL, MOVE_FACADE, MOVE_BODY_PRESS, MOVE_NONE}
         }
@@ -6662,7 +6415,7 @@
         {
         .lvl = 28,
         .species = SPECIES_ZANGOOSE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .heldItem = ITEM_LIECHI_BERRY,
         .moves = {MOVE_SWORDS_DANCE, MOVE_CRUSH_CLAW, MOVE_NONE, MOVE_NONE}
         }
@@ -12266,7 +12019,7 @@
         {
         .lvl = 42,
         .species = SPECIES_SHELGON,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .moves = {MOVE_DRAGON_CLAW, MOVE_ZEN_HEADBUTT, MOVE_CRUNCH, MOVE_SCARY_FACE}
         }
     },
@@ -14513,7 +14266,7 @@
         {
         .lvl = 42,
         .species = SPECIES_MANECTRIC,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         .moves = {MOVE_BITE, MOVE_ROAR, MOVE_THUNDER_WAVE, MOVE_THUNDERBOLT}
         }
     },
@@ -18884,7 +18637,7 @@
         {
         .lvl = 50,
         .species = SPECIES_SNORLAX,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         }
     },
 },
@@ -18901,7 +18654,7 @@
         {
         .lvl = 50,
         .species = SPECIES_SWAMPERT,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         }
     },
 },
@@ -18918,22 +18671,22 @@
         {
         .lvl = 5,
         .species = SPECIES_AZURILL,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         },
         {
         .lvl = 5,
         .species = SPECIES_UNOWN,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         },
         {
         .lvl = 40,
         .species = SPECIES_DUSCLOPS,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         },
         {
         .lvl = 70,
         .species = SPECIES_KYOGRE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         }
     },
 },
@@ -18950,22 +18703,22 @@
         {
         .lvl = 50,
         .species = SPECIES_HERACROSS,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         },
         {
         .lvl = 50,
         .species = SPECIES_MIENSHAO,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         },
         {
         .lvl = 50,
         .species = SPECIES_BRELOOM,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         },
         {
         .lvl = 50,
         .species = SPECIES_MEDICHAM,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         }
     },
 },
@@ -18982,7 +18735,7 @@
         {
         .lvl = 50,
         .species = SPECIES_PINSIR,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         }
     },
 },
@@ -18999,7 +18752,7 @@
         {
         .lvl = 60,
         .species = SPECIES_SEVIPER,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         }
     },
 },
@@ -19016,32 +18769,32 @@
         {
         .lvl = 50,
         .species = SPECIES_REGIDRAGO,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         },
         {
         .lvl = 50,
         .species = SPECIES_REGIELEKI,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         },
         {
         .lvl = 50,
         .species = SPECIES_REGIROCK,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         },
         {
         .lvl = 50,
         .species = SPECIES_REGICE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         },
         {
         .lvl = 50,
         .species = SPECIES_REGISTEEL,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         },
         {
         .lvl = 70,
         .species = SPECIES_REGIGIGAS,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .iv = PERFECT_IVS,
         }
     },
 },

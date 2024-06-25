@@ -314,8 +314,8 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Maxie           |37, 38, 39            |51, 52, 52, 53|
 |Matt            |34, 34                |52, 52, 54|
 |Tate/Liza       |41, 41, 42, 42        |55, 55, 57, 57|
-|Courtney        |N/A                   |40, 40, 42|
-|Tabitha/Maxie   |36, 38, 40/42, 43, 44 |40, 40, 42/42, 43, 44|
+|Courtney        |N/A                   |55, 55, 57|
+|Tabitha/Maxie   |36, 38, 40/42, 43, 44 |55, 55, 57/57, 58, 60|
 |Regis           |40                    |45|
 |Matt/Shelly     |N/A/37, 37            |42, 42, 43/42, 42, 43|
 |Archie          |41, 41, 43            |43, 43, 44, 45|

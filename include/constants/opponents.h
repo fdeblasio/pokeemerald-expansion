@@ -96,6 +96,9 @@
 #define TRAINER_CALVIN_3                    398
 #define TRAINER_CALVIN_4                    399
 #define TRAINER_CALVIN_5                    400
+#define TRAINER_RICK                        657
+#define TRAINER_ALLEN                       402
+#define TRAINER_TIANA                       645
 #define TRAINER_SAWYER_1                     89
 #define TRAINER_GRUNT_AQUA_HIDEOUT_1         90
 #define TRAINER_GRUNT_AQUA_HIDEOUT_2         91
@@ -404,7 +407,6 @@
 #define TRAINER_JAYLEN                      395
 #define TRAINER_DILLON                      396
 #define TRAINER_EDDIE                       401
-#define TRAINER_ALLEN                       402
 #define TRAINER_TIMMY                       403
 #define TRAINER_ANDREW                      404
 #define TRAINER_IVAN                        405
@@ -647,7 +649,6 @@
 #define TRAINER_JONATHAN                    642
 #define TRAINER_MAXIE_MAGMA_HIDEOUT         643
 #define TRAINER_MAXIE_MT_CHIMNEY            644
-#define TRAINER_TIANA                       645
 #define TRAINER_HALEY_1                     646
 #define TRAINER_JANICE                      647
 #define TRAINER_VIVI                        648
@@ -659,7 +660,6 @@
 #define TRAINER_ROBIN                       654
 #define TRAINER_ANDREA                      655
 #define TRAINER_CRISSY                      656
-#define TRAINER_RICK                        657
 #define TRAINER_LYLE                        658
 #define TRAINER_JOSE                        659
 #define TRAINER_DOUG                        660

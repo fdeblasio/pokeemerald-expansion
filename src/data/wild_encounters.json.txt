@@ -27,7 +27,7 @@
 const struct WildPokemon {{ encounter.base_label }}_LandMons[] =
 {
 ## for wild_mon in encounter.land_mons.mons
-    { {{ wild_mon.min_level }}, {{ wild_mon.max_level }}, {{ "SPECIES_" + wild_mon.species }} },
+    { {{ wild_mon.range }}, {{ "SPECIES_" + wild_mon.species }} },
 ## endfor
 };
 const struct WildPokemonInfo {{ encounter.base_label }}_LandMonsInfo = { {{encounter.land_mons.encounter_rate}}, {{ encounter.base_label }}_LandMons };
@@ -37,7 +37,7 @@ const struct WildPokemonInfo {{ encounter.base_label }}_LandMonsInfo = { {{encou
 const struct WildPokemon {{ encounter.base_label }}_WaterMons[] =
 {
 ## for wild_mon in encounter.water_mons.mons
-    { {{ wild_mon.min_level }}, {{ wild_mon.max_level }}, {{ "SPECIES_" + wild_mon.species }} },
+    { {{ wild_mon.range }}, {{ "SPECIES_" + wild_mon.species }} },
 ## endfor
 };
 const struct WildPokemonInfo {{ encounter.base_label }}_WaterMonsInfo = { {{encounter.water_mons.encounter_rate}}, {{ encounter.base_label }}_WaterMons };
@@ -47,7 +47,7 @@ const struct WildPokemonInfo {{ encounter.base_label }}_WaterMonsInfo = { {{enco
 const struct WildPokemon {{ encounter.base_label }}_FishingMons[] =
 {
 ## for wild_mon in encounter.fishing_mons.mons
-    { {{ wild_mon.min_level }}, {{ wild_mon.max_level }}, {{ "SPECIES_" + wild_mon.species }} },
+    { {{ wild_mon.range }}, {{ "SPECIES_" + wild_mon.species }} },
 ## endfor
 };
 const struct WildPokemonInfo {{ encounter.base_label }}_FishingMonsInfo = { {{encounter.fishing_mons.encounter_rate}}, {{ encounter.base_label }}_FishingMons };

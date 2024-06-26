@@ -1856,7 +1856,8 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     u16 pwr = gMovesInfo[move].power;
     u16 acc = gMovesInfo[move].accuracy;
     u8 cat = gMovesInfo[move].category;
-
+    u16 effect = gMovesInfo[move].effect;
+    
     u8 pwr_num[3], acc_num[3];
     u8 cat_desc[7] = _("CAT: ");
     u8 pwr_desc[7] = _("PWR: ");
@@ -1866,14 +1867,47 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     u8 acc_start[] = _("{CLEAR_TO 0x6D}");
     LoadMessageBoxAndBorderGfx();
     DrawStdWindowFrame(B_WIN_MOVE_DESCRIPTION, FALSE);
-    if (pwr < 2)
+
+    //Power
+    #define DISPLAY_POWER(power) ConvertIntToDecimalStringN(pwr_num, power, STR_CONV_MODE_LEFT_ALIGN, 3)
+    if (move == MOVE_RETURN)
+        DISPLAY_POWER(10 * GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_FRIENDSHIP) / 25);
+    else if (move == MOVE_FRUSTRATION)
+        DISPLAY_POWER(10 * (MAX_FRIENDSHIP - GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_FRIENDSHIP)) / 25);
+    else if (pwr < 2)
         StringCopy(pwr_num, gText_BattleSwitchWhich5);
     else
-        ConvertIntToDecimalStringN(pwr_num, pwr, STR_CONV_MODE_LEFT_ALIGN, 3);
+        DISPLAY_POWER(pwr);
+
+
+    //Accuracy
+    if (WEATHER_HAS_EFFECT){
+        if ((gBattleWeather & B_WEATHER_SUN) && effect == EFFECT_THUNDER)
+            acc = 50;
+        else if ((gBattleWeather & B_WEATHER_RAIN) && (effect == EFFECT_THUNDER || effect == EFFECT_RAIN_ALWAYS_HIT))
+            acc = 100;
+        else if ((gBattleWeather & (B_WEATHER_HAIL | B_WEATHER_SNOW)) && effect == EFFECT_BLIZZARD)
+            acc = 100;
+    }
+
+    if (GetBattlerAbility(battler) == ABILITY_COMPOUND_EYES)
+        acc = (acc * 130) / 100;
+    else if (GetBattlerAbility(battler) == ABILITY_VICTORY_STAR)
+        acc = (acc * 110) / 100;
+    else if (GetBattlerAbility(battler) == ABILITY_HUSTLE && cat == DAMAGE_CATEGORY_PHYSICAL)
+        acc = (acc * 80) / 100;
+
+    if (GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_HELD_ITEM) == ITEM_WIDE_LENS)
+        acc = (acc * 110) / 100;
+
+    if (acc > 100)
+        acc = 100;
+
     if (acc < 2)
         StringCopy(acc_num, gText_BattleSwitchWhich5);
     else
         ConvertIntToDecimalStringN(acc_num, acc, STR_CONV_MODE_LEFT_ALIGN, 3);
+
     StringCopy(gDisplayedStringBattle, cat_start);
     StringAppend(gDisplayedStringBattle, cat_desc);
     StringAppend(gDisplayedStringBattle, pwr_start);

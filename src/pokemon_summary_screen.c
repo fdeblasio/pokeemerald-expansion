@@ -3683,7 +3683,8 @@ static void PrintMoveNameAndPP(u8 moveIndex)
 static void PrintMovePowerAndAccuracy(u16 moveIndex)
 {
     const u8 *text;
-    u8 monFriendship = GetMonData(&gPlayerParty[sMonSummaryScreen->curMonIndex], MON_DATA_FRIENDSHIP);
+    struct Pokemon *mon = &sMonSummaryScreen->currentMon;
+    u8 monFriendship = GetMonData(mon, MON_DATA_FRIENDSHIP);
 
     if (moveIndex != 0)
     {
@@ -3711,13 +3712,25 @@ static void PrintMovePowerAndAccuracy(u16 moveIndex)
 
         PrintTextOnWindow(PSS_LABEL_WINDOW_MOVES_POWER_ACC, text, 53, 1, 0, 0);
 
-        if (gMovesInfo[moveIndex].accuracy == 0)
-        {
+        u16 accuracy = gMovesInfo[moveIndex].accuracy;
+        if (GetMonAbility(mon) == ABILITY_COMPOUND_EYES)
+            accuracy = (accuracy * 130) / 100;
+        else if (GetMonAbility(mon) == ABILITY_VICTORY_STAR)
+            accuracy = (accuracy * 110) / 100;
+        else if (GetMonAbility(mon) == ABILITY_HUSTLE && gMovesInfo[moveIndex].category == DAMAGE_CATEGORY_PHYSICAL)
+            accuracy = (accuracy * 80) / 100;
+
+        if (GetMonData(mon, MON_DATA_HELD_ITEM) == ITEM_WIDE_LENS)
+            accuracy = (accuracy * 110) / 100;
+
+        if (accuracy > 100)
+            accuracy = 100;
+
+        if (accuracy == 0)
             text = gText_ThreeDashes;
-        }
         else
         {
-            ConvertIntToDecimalStringN(gStringVar1, gMovesInfo[moveIndex].accuracy, STR_CONV_MODE_RIGHT_ALIGN, 3);
+            ConvertIntToDecimalStringN(gStringVar1, accuracy, STR_CONV_MODE_RIGHT_ALIGN, 3);
             text = gStringVar1;
         }
 

@@ -263,6 +263,15 @@ There are some mechanics, moves and abilities that are missing and being develop
 - The following moves show the correct power both in battle and on the summary screen:
   - Return
   - Frustration
+- The following effects on accuracy are now reflected in battle and on the summary screen:
+    - Compound Eyes
+    - Hustle
+    - Victory Star
+    - Wide Lens
+- The effects of weather on accuracy is now reflected in battle:
+    - Thunder and Hurricane having 50% accuracy in sun
+    - Thunder, Hurricane, Bleakwind Storm, Wildbolt Storm, and Sandsear Storm having 100% accuracy in rain
+    - Blizzard having 100% accuracy in snow/hail
 - The Good Rod is now obtained on the left side of Route 118 instead of the right
 - Sacred Ash now works in battles although it only revives one Pokémon
 - Soul Dew uses its Gen 6 effect

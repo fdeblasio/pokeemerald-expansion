@@ -66,7 +66,7 @@ upcoming
 - Xaman's TM Case: https://www.pokecommunity.com/showpost.php?p=10378278
 
 ### Trainers
-- Revert Mauville Wally back to Ralts and add Verdanturf battle with Kirlia?
+- Revert Mauville Wally back to Ralts and add Verdanturf or later battle with Kirlia?
 - Group rematches with original battles
 - Readjust wild/trainer levels so that parties aren't overpowered?
 - Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)
@@ -75,6 +75,8 @@ upcoming
     - battle_transitions/*_bg.pal to better match types
     - stadium/palette3-7.pal to better match ypes
 - Brendan/May/Steven rematches? (Steven's would be the same team but re-battleable)
+- Maybe add Brendan/May/Maxie/Archie/admins/Winstrate rematches in Battle Frontier?
+- Try to get every Pokemon in Pokedex in at least one rematch?
 - Trainer customization:
     - All rematches should have consistent values (gender, IVs (unless maxed), etc.)
     - Calvin could have a good Nature/EV
@@ -83,7 +85,6 @@ upcoming
 - Triathlete would be Speed-focused (maybe endurance/HP too)
 - Give Winstrates rematches?
 - Vito can use TMs
-- Fix Winona's rematches being male; Pelipper gets Drizzle for Hurricane?
 - Gym leaders/Steven/Breeders can have Hidden Abilities
 - Maxie/Archie use Mega Evolutions
 - Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma. Mega Evo for Houndoom but unsure for Ninetales)

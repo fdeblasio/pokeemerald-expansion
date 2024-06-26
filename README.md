@@ -295,10 +295,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Ability Capsules, Ability Patches, and EV-reducing berries are available to buy in Lilycove (Bottle Caps and Mints not yet implemented)
 
 ### Bosses:
-|     BOSSES     |        VANILLA       |UPDATED|
-|:--------------:|:--------------------:|:-----:|
+|     BOSSES     |        VANILLA       |    UPDATED    |
+|:--------------:|:--------------------:|:-------------:|
 |Rival 103       |5||
-|Roxanne         |12, 12, 15||
+|Roxanne         |12, 12, 15            |11, 11, 13|
 |Rival Rustboro  |13, 15||
 |Brawly          |16, 16, 19||
 |Rival 110       |18, 18, 20||

@@ -294,6 +294,27 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Acrobatics
     - Facade
     - Technician
+    - Toxic Boost
+    - Flare Boost
+    - Reckless
+    - Iron Fist
+    - Sheer Force
+    - Tough Claws
+    - Strong Jaw
+    - Mega Launcher
+    - Water Bubble
+    - Steelworker
+    - Steely Spirit
+    - Aerilate
+    - Refrigerate
+    - Pixilate
+    - Galvanize
+    - Normalize
+    - Punk Rock
+    - Transistor
+    - Dragon's Maw
+    - Rocky Payload
+    - Sharpness
 - The following moves/abilities show the correct power in battle:
     - Fury Cutter
     - Spit Up
@@ -309,6 +330,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Solar Beam/Solar Blade in non-sunny weather
     - Stomping Tantrum
     - Earthquake/Magnitude in Grassy Terrain
+    - Sand Force
 
 - The following effects on accuracy are now reflected in battle and on the summary screen:
     - Compound Eyes
@@ -408,7 +430,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Smoothness: 30->50
 
 ### Abilities:
-- Iron Fist: Punching moves are now boosted by 30% (up from 20%) to match Sheer Force and Tough Claws
+- Iron Fist: Boost: 20%->50%
 - Normalize: Boost: 20%->50%
 - Punk Rock: Renamed Amplify to fit Exploud line as well
 

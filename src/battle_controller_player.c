@@ -1915,6 +1915,8 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     u8 cat = gMovesInfo[move].category;
     u16 effect = gMovesInfo[move].effect;
     
+    struct Pokemon *mon = &gPlayerParty[gBattlerPartyIndexes[battler]];
+
     u8 pwr_num[3], acc_num[3];
     u8 cat_desc[7] = _("CAT: ");
     u8 pwr_desc[7] = _("PWR: ");
@@ -1926,16 +1928,52 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     DrawStdWindowFrame(B_WIN_MOVE_DESCRIPTION, FALSE);
 
     //Power
-    #define DISPLAY_POWER(power) ConvertIntToDecimalStringN(pwr_num, power, STR_CONV_MODE_LEFT_ALIGN, 3)
-    if (move == MOVE_RETURN)
-        DISPLAY_POWER(10 * GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_FRIENDSHIP) / 25);
-    else if (move == MOVE_FRUSTRATION)
-        DISPLAY_POWER(10 * (MAX_FRIENDSHIP - GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_FRIENDSHIP)) / 25);
-    else if (pwr < 2)
+    if (effect == EFFECT_ERUPTION)
+        pwr = GetMonData(mon, MON_DATA_HP) * pwr / GetMonData(mon, MON_DATA_MAX_HP);
+    else if (effect == EFFECT_RETURN)
+        pwr = 10 * GetMonData(mon, MON_DATA_FRIENDSHIP) / 25;
+    else if (effect == EFFECT_FRUSTRATION)
+        pwr = 10 * (MAX_FRIENDSHIP - GetMonData(mon, MON_DATA_FRIENDSHIP)) / 25;
+    else if (effect == EFFECT_FURY_CUTTER)
+        pwr = min(160, CalcFuryCutterBasePower(pwr, gDisableStructs[battler].furyCutterCounter + 1));
+    else if (effect == EFFECT_SPIT_UP)
+        pwr = 100 * gDisableStructs[battler].stockpileCounter;
+    else if (effect == EFFECT_WEATHER_BALL && WEATHER_HAS_EFFECT && (gBattleWeather & B_WEATHER_ANY))
+        pwr *= 2;
+    else if (effect == EFFECT_ACROBATICS && GetMonData(mon, MON_DATA_HELD_ITEM) == ITEM_NONE)
+        pwr *= 2;
+    else if (effect == EFFECT_STORED_POWER)
+        pwr += (CountBattlerStatIncreases(battler, TRUE) * 20);
+    else if (move == MOVE_MISTY_EXPLOSION && (gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN) && IsBattlerGrounded(battler))
+        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+    else if (effect == EFFECT_GRAV_APPLE && (gFieldStatuses & STATUS_FIELD_GRAVITY))
+        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+    else if (effect == EFFECT_TERRAIN_PULSE && (gFieldStatuses & STATUS_FIELD_TERRAIN_ANY) && IsBattlerGrounded(battler))
+        pwr *= 2;
+    else if (effect == EFFECT_EXPANDING_FORCE && IsBattlerTerrainAffected(battler, STATUS_FIELD_PSYCHIC_TERRAIN))
+        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+    else if (effect == EFFECT_RISING_VOLTAGE && IsBattlerTerrainAffected(battler, STATUS_FIELD_ELECTRIC_TERRAIN))
+        pwr *= 2;
+    else if (effect == EFFECT_PSYBLADE && IsBattlerTerrainAffected(battler, STATUS_FIELD_ELECTRIC_TERRAIN))
+        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+    else if (effect == EFFECT_RAGE_FIST)
+        pwr = min(350, 50 + (50 * gBattleStruct->timesGotHit[GetBattlerSide(battler)][gBattlerPartyIndexes[battler]]));
+    else if (effect == EFFECT_FACADE && (gBattleMons[battler].status1 & (STATUS1_BURN | STATUS1_PSN_ANY | STATUS1_PARALYSIS | STATUS1_FROSTBITE)))
+        pwr = uq4_12_multiply(pwr, UQ_4_12(2.0));
+    else if (effect == EFFECT_SOLAR_BEAM && IsBattlerWeatherAffected(battler, (B_WEATHER_HAIL | B_WEATHER_SANDSTORM | B_WEATHER_RAIN | B_WEATHER_SNOW | B_WEATHER_FOG)))
+        pwr = uq4_12_multiply(pwr, UQ_4_12(0.5));
+    else if (effect == EFFECT_STOMPING_TANTRUM && (gBattleStruct->lastMoveFailed & gBitTable[battler]))
+        pwr = uq4_12_multiply(pwr, UQ_4_12(2.0));
+    else if ((effect == EFFECT_EARTHQUAKE || effect == EFFECT_MAGNITUDE) && (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN))
+        pwr = uq4_12_multiply(pwr, UQ_4_12(0.5));
+
+    if (GetBattlerAbility(battler) == ABILITY_TECHNICIAN && pwr <= 60)
+        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+
+    if (pwr <= 1)
         StringCopy(pwr_num, gText_BattleSwitchWhich5);
     else
-        DISPLAY_POWER(pwr);
-
+        ConvertIntToDecimalStringN(pwr_num, pwr, STR_CONV_MODE_LEFT_ALIGN, 3);
 
     //Accuracy
     if (WEATHER_HAS_EFFECT){
@@ -1954,16 +1992,13 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     else if (GetBattlerAbility(battler) == ABILITY_HUSTLE && cat == DAMAGE_CATEGORY_PHYSICAL)
         acc = (acc * 80) / 100;
 
-    if (GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_HELD_ITEM) == ITEM_WIDE_LENS)
+    if (GetMonData(mon, MON_DATA_HELD_ITEM) == ITEM_WIDE_LENS)
         acc = (acc * 110) / 100;
-
-    if (acc > 100)
-        acc = 100;
 
     if (acc < 2)
         StringCopy(acc_num, gText_BattleSwitchWhich5);
     else
-        ConvertIntToDecimalStringN(acc_num, acc, STR_CONV_MODE_LEFT_ALIGN, 3);
+        ConvertIntToDecimalStringN(acc_num, min(acc, 100), STR_CONV_MODE_LEFT_ALIGN, 3);
 
     StringCopy(gDisplayedStringBattle, cat_start);
     StringAppend(gDisplayedStringBattle, cat_desc);

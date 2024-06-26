@@ -249,29 +249,6 @@ There are some mechanics, moves and abilities that are missing and being develop
     - The door to Sealed Chamber and the Regis' inner rooms are now automatically open
 - Made rapids easier to navigate so that only one trip is needed to get all items/battle all trainers (at the cost of looking slightly worse)
 - All moves automatically have their max PP amount
-- The following moves now show up as the right type both in battle and on the summary screen:
-    - Hidden Power
-    - Judgement
-    - Techno Blast
-    - Revelation Dance
-    - Multi-Attack
-    - Aura Wheel
-    - Raging Bull
-    - Ivy Cudgel
-    - Moves affected by Normalize, Aerilate, Refrigerate, Pixilate, Galvanize, or Liquid Voice
-- Weather Ball, Terrain Pulse, Tera Blast, Tera Starstorm show the correct type in battle
-- The following moves show the correct power both in battle and on the summary screen:
-  - Return
-  - Frustration
-- The following effects on accuracy are now reflected in battle and on the summary screen:
-    - Compound Eyes
-    - Hustle
-    - Victory Star
-    - Wide Lens
-- The effects of weather on accuracy is now reflected in battle:
-    - Thunder and Hurricane having 50% accuracy in sun
-    - Thunder, Hurricane, Bleakwind Storm, Wildbolt Storm, and Sandsear Storm having 100% accuracy in rain
-    - Blizzard having 100% accuracy in snow/hail
 - The Good Rod is now obtained on the left side of Route 118 instead of the right
 - Sacred Ash now works in battles although it only revives one Pokémon
 - Soul Dew uses its Gen 6 effect
@@ -292,6 +269,56 @@ There are some mechanics, moves and abilities that are missing and being develop
 - SS Tidal trainers can be rebattled every trip
 - You can now run from wild Pokémon if they are asleep, frozen, or in a semi-invulnerable state (using Fly, Dig, Dive, Bounce, etc.). This works even if they have Shadow Tag/Arena Trap
 - Pokémon in the Battle Frontier/Trainer Hill now register in the Pokédex
+
+### Summary Screen
+- The following moves now show up as the right type both in battle and on the summary screen:
+    - Hidden Power
+    - Judgement
+    - Techno Blast
+    - Revelation Dance
+    - Multi-Attack
+    - Aura Wheel
+    - Raging Bull
+    - Ivy Cudgel
+    - Moves affected by Normalize, Aerilate, Refrigerate, Pixilate, Galvanize, or Liquid Voice
+- The following moves now show up as the right type in battle:
+    - Weather Ball
+    - Terrain Pulse
+    - Tera Blast
+    - Tera Starstorm
+
+- The following moves/abilities show the correct power both in battle and on the summary screen:
+    - Eruption/Water Spout/Dragon Energy
+    - Return
+    - Frustration
+    - Acrobatics
+    - Facade
+    - Technician
+- The following moves/abilities show the correct power in battle:
+    - Fury Cutter
+    - Spit Up
+    - Weather Ball
+    - Stored Power
+    - Misty Explosion
+    - Grav Apple
+    - Terrain Pulse
+    - Expanding Force
+    - Rising Voltage
+    - Psyblade
+    - Rage Fist
+    - Solar Beam/Solar Blade in non-sunny weather
+    - Stomping Tantrum
+    - Earthquake/Magnitude in Grassy Terrain
+
+- The following effects on accuracy are now reflected in battle and on the summary screen:
+    - Compound Eyes
+    - Hustle
+    - Victory Star
+    - Wide Lens
+- The effects of weather on accuracy is now reflected in battle:
+    - Thunder and Hurricane having 50% accuracy in sun
+    - Thunder, Hurricane, Bleakwind Storm, Wildbolt Storm, and Sandsear Storm having 100% accuracy in rain
+    - Blizzard having 100% accuracy in snow/hail
 
 ### Quality of life changes thanks to tutorials (credit above):
 - You can nickname and relearn moves from the party menu
@@ -562,6 +589,8 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Accuracy: 85->100
     - Egg Bomb:
         - Accuracy: 75->100
+    - Frustration:
+        - Max power: 102->127.5
     - Fury Attack:
         - Power: 15->20
         - Accuracy: 85->100
@@ -587,6 +616,8 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Power: 75->100
     - Rock Climb:
         - Accuracy: 85->100
+    - Return:
+        - Max power: 102->127.5
     - Slam:
         - Accuracy: 75->100
     - Tail Slap:

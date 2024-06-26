@@ -30,6 +30,7 @@
 #include "text.h"
 #include "util.h"
 #include "window.h"
+#include "constants/abilities.h"
 #include "constants/battle_anim.h"
 #include "constants/battle_move_effects.h"
 #include "constants/battle_partner.h"
@@ -1776,33 +1777,128 @@ static void MoveSelectionDisplayPpNumber(u32 battler)
 static void MoveSelectionDisplayMoveType(u32 battler)
 {
     u8 *txtPtr, *end;
-    u8 type;
-    u32 speciesId;
+    u32 speciesId = gBattleMons[battler].species;
+    u16 holdEffect = GetBattlerHoldEffect(battler, TRUE);
     struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleResources->bufferA[battler][4]);
+    u16 move = moveInfo->moves[gMoveSelectionCursor[battler]];
+    u8 type = gMovesInfo[move].type;
+    u16 effect = gMovesInfo[move].effect;
 
     txtPtr = StringCopy(gDisplayedStringBattle, gText_MoveInterfaceType);
 
-    type = gMovesInfo[moveInfo->moves[gMoveSelectionCursor[battler]]].type;
-
-    if (moveInfo->moves[gMoveSelectionCursor[battler]] == MOVE_TERA_BLAST)
+    if (effect == EFFECT_WEATHER_BALL)
     {
-        if (gBattleStruct->tera.playerSelect || IsTerastallized(battler))
-            type = GetBattlerTeraType(battler);
+        if (WEATHER_HAS_EFFECT)
+        {
+            if (gBattleWeather & B_WEATHER_RAIN && holdEffect != HOLD_EFFECT_UTILITY_UMBRELLA)
+                type = TYPE_WATER;
+            else if (gBattleWeather & B_WEATHER_SANDSTORM)
+                type = TYPE_ROCK;
+            else if (gBattleWeather & B_WEATHER_SUN && holdEffect != HOLD_EFFECT_UTILITY_UMBRELLA)
+                type = TYPE_FIRE;
+            else if (gBattleWeather & (B_WEATHER_HAIL | B_WEATHER_SNOW))
+                type = TYPE_ICE;
+        }
     }
-    else if (moveInfo->moves[gMoveSelectionCursor[battler]] == MOVE_IVY_CUDGEL)
+    else if (effect == EFFECT_HIDDEN_POWER)
     {
-        speciesId = gBattleMons[battler].species;
+        u8 typeBits  = ((GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_HP_IV) & 1) << 0)
+                     | ((GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_ATK_IV) & 1) << 1)
+                     | ((GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_DEF_IV) & 1) << 2)
+                     | ((GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_SPEED_IV) & 1) << 3)
+                     | ((GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_SPATK_IV) & 1) << 4)
+                     | ((GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_SPDEF_IV) & 1) << 5);
 
+        u8 hpType = ((NUMBER_OF_MON_TYPES - 6) * typeBits) / 63 + 2;
+        if (hpType >= TYPE_MYSTERY)
+            hpType++;
+        hpType |= 0xC0;
+        type = hpType & 0x3F;
+    }
+    else if (effect == EFFECT_CHANGE_TYPE_ON_ITEM && holdEffect == gMovesInfo[move].argument)
+    {
+        type = ItemId_GetSecondaryId(gBattleMons[battler].item);
+    }
+    else if (effect == EFFECT_REVELATION_DANCE)
+    {
+        if ((IsTerastallized(battler)|| gBattleStruct->tera.playerSelect) && GetBattlerTeraType(battler) != TYPE_STELLAR)
+            type = GetBattlerTeraType(battler);
+        else if (gBattleMons[battler].type1 != TYPE_MYSTERY)
+            type = gBattleMons[battler].type1;
+        else if (gBattleMons[battler].type2 != TYPE_MYSTERY)
+            type = gBattleMons[battler].type2;
+        else if (gBattleMons[battler].type3 != TYPE_MYSTERY)
+            type = gBattleMons[battler].type3;
+    }
+    else if (effect == EFFECT_RAGING_BULL)
+    {
+        if (speciesId == SPECIES_TAUROS_PALDEAN_COMBAT_BREED
+            || speciesId == SPECIES_TAUROS_PALDEAN_BLAZE_BREED
+            || speciesId == SPECIES_TAUROS_PALDEAN_AQUA_BREED)
+            type = gBattleMons[battler].type2;
+    }
+    else if (effect == EFFECT_IVY_CUDGEL)
+    {
         if (speciesId == SPECIES_OGERPON_WELLSPRING_MASK || speciesId == SPECIES_OGERPON_WELLSPRING_MASK_TERA
             || speciesId == SPECIES_OGERPON_HEARTHFLAME_MASK || speciesId == SPECIES_OGERPON_HEARTHFLAME_MASK_TERA
             || speciesId == SPECIES_OGERPON_CORNERSTONE_MASK || speciesId == SPECIES_OGERPON_CORNERSTONE_MASK_TERA)
             type = gBattleMons[battler].type2;
     }
-    else if (moveInfo->moves[gMoveSelectionCursor[battler]] == MOVE_TERA_STARSTORM)
+    else if (effect == EFFECT_TERRAIN_PULSE)
     {
-        if (gBattleMons[battler].species == SPECIES_TERAPAGOS_STELLAR
-        || (gBattleStruct->tera.playerSelect && gBattleMons[battler].species == SPECIES_TERAPAGOS_TERASTAL))
+        if (IsBattlerTerrainAffected(battler, STATUS_FIELD_TERRAIN_ANY))
+        {
+            if (gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN)
+                type = TYPE_ELECTRIC;
+            else if (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN)
+                type = TYPE_GRASS;
+            else if (gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN)
+                type = TYPE_FAIRY;
+            else if (gFieldStatuses & STATUS_FIELD_PSYCHIC_TERRAIN)
+                type = TYPE_PSYCHIC;
+        }
+    }
+    else if (effect == EFFECT_TERA_BLAST)
+    {
+        if (gBattleStruct->tera.playerSelect || IsTerastallized(battler))
+            type = GetBattlerTeraType(battler);
+    }
+    else if (effect == EFFECT_TERA_STARSTORM)
+    {
+        if (speciesId == SPECIES_TERAPAGOS_STELLAR
+        || (gBattleStruct->tera.playerSelect && speciesId == SPECIES_TERAPAGOS_TERASTAL))
             type = TYPE_STELLAR;
+    }
+    else if (GetBattlerAbility(battler) == ABILITY_NORMALIZE){
+        type = TYPE_NORMAL;
+    }
+    else if (gMovesInfo[move].soundMove && GetBattlerAbility(battler) == ABILITY_LIQUID_VOICE)
+    {
+        type = TYPE_WATER;
+    }
+    else if (effect == EFFECT_AURA_WHEEL && speciesId == SPECIES_MORPEKO_HANGRY)
+    {
+        type = TYPE_DARK;
+    }
+    else if (type == TYPE_NORMAL)
+    {
+        switch(GetBattlerAbility(battler)){
+            case ABILITY_AERILATE:
+                type = TYPE_FLYING;
+                break;
+            case ABILITY_REFRIGERATE:
+                type = TYPE_ICE;
+                break;
+            case ABILITY_PIXILATE:
+                type = TYPE_FAIRY;
+                break;
+            case ABILITY_GALVANIZE:
+                type = TYPE_ELECTRIC;
+                break;
+            default:
+                type = TYPE_NORMAL;
+                break;
+        }
     }
 
     end = StringCopy(txtPtr, gTypesInfo[type].name);

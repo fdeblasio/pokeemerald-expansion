@@ -301,6 +301,6 @@
                                               // Currently Gen4+ shadows don't properly work with Trainerslides
 
 //  Battle UI settings
-#define B_MOVE_REARRANGEMENT_IN_BATTLE  GEN_LATEST  //  In Gen 4+ move slots cannot be rearranged in battle
+#define B_MOVE_REARRANGEMENT_IN_BATTLE  GEN_3  //  In Gen 4+ move slots cannot be rearranged in battle
 
 #endif // GUARD_CONFIG_BATTLE_H

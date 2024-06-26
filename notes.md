@@ -96,16 +96,10 @@ upcoming
     - Parabolic Charge: 65->75
     - Poison Sting: 20->40
     - Poison Fang: 60->65
-- Show the following correct types in summary screen (both existing and new moves) and battle
-    - Weather Ball
-    - Terrain Pulse
-    - Tera Blast
-    - Tera Starstorm
 - Show the following correct damage in summary screen (both existing and new moves) and battle (https://bulbapedia.bulbagarden.net/wiki/Category:Moves_that_have_variable_power and https://bulbapedia.bulbagarden.net/wiki/Category:Moves_that_power_up)
     - Acrobatics
     - Weather Ball
     - Terrain Pulse
-    - Return/Frustration
     - Flail/Reversal
     - Water Spout/Eruption/Dragon Energy
     - Electro Ball
@@ -119,8 +113,8 @@ upcoming
     - Sheer Force
     - Reckless
     - Punk Rock
-- Show correct category for Side Shell Arm
-- Show correct accuracy for OHKO moves
+    - Hustle (power)
+    - STAB
 
 ### Field Moves
 - Replace Waterfall with an item, similar to Dive

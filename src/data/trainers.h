@@ -1007,7 +1007,7 @@
 
 #define ROXANNE_ARMALDO(rematch)                                                    \
     {                                                                               \
-    REMATCH_MON_TIER2(rematch),                                                        \
+    REMATCH_MON_TIER2(rematch),                                                     \
     .species = SPECIES_ARMALDO,                                                     \
     .ability = ABILITY_BATTLE_ARMOR,                                                \
     .nature = NATURE_ADAMANT,                                                       \
@@ -1019,7 +1019,7 @@
 
 #define ROXANNE_CRADILY(rematch)                                                \
     {                                                                           \
-    REMATCH_MON_TIER2(rematch),                                                    \
+    REMATCH_MON_TIER2(rematch),                                                 \
     .species = SPECIES_CRADILY,                                                 \
     .ability = ABILITY_STORM_DRAIN,                                             \
     .nature = NATURE_CALM,                                                      \
@@ -1031,7 +1031,7 @@
 
 #define ROXANNE_RELICANTH(rematch, move3, move4)                            \
     {                                                                       \
-    REMATCH_MON_TIER3(rematch),                                                \
+    REMATCH_MON_TIER3(rematch),                                             \
     .species = SPECIES_RELICANTH,                                           \
     .ability = ABILITY_ROCK_HEAD,                                           \
     .nature = NATURE_IMPISH,                                                \
@@ -1042,7 +1042,7 @@
 
 #define ROXANNE_AGGRON(rematch, move1, move2, move3)                        \
     {                                                                       \
-    REMATCH_MON_TIER3(rematch),                                                \
+    REMATCH_MON_TIER3(rematch),                                             \
     .species = SPECIES_AGGRON,                                              \
     .ability = ABILITY_ROCK_HEAD,                                           \
     .nature = NATURE_IMPISH,                                                \

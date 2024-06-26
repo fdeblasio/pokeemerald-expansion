@@ -36,43 +36,43 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "range": "ROUTE_101_RANGE",
+                "range": "RANGE_ROUTE_101",
                 "species": "ZIGZAGOON"
               },
               {
-                "range": "ROUTE_101_RANGE",
+                "range": "RANGE_ROUTE_101",
                 "species": "ZIGZAGOON"
               },
               {
-                "range": "ROUTE_101_RANGE",
+                "range": "RANGE_ROUTE_101",
                 "species": "POOCHYENA"
               },
               {
-                "range": "ROUTE_101_RANGE",
+                "range": "RANGE_ROUTE_101",
                 "species": "POOCHYENA"
               },
               {
-                "range": "ROUTE_101_RANGE",
+                "range": "RANGE_ROUTE_101",
                 "species": "POOCHYENA"
               },
               {
-                "range": "ROUTE_101_RANGE",
+                "range": "RANGE_ROUTE_101",
                 "species": "POOCHYENA"
               },
               {
-                "range": "ROUTE_101_RANGE",
+                "range": "RANGE_ROUTE_101",
                 "species": "WURMPLE"
               },
               {
-                "range": "ROUTE_101_RANGE",
+                "range": "RANGE_ROUTE_101",
                 "species": "WURMPLE"
               },
               {
-                "range": "ROUTE_101_RANGE",
+                "range": "RANGE_ROUTE_101",
                 "species": "WURMPLE"
               },
               {
-                "range": "ROUTE_101_RANGE",
+                "range": "RANGE_ROUTE_101",
                 "species": "WURMPLE"
               }
             ]
@@ -85,43 +85,43 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "range": "ROUTE_102_104_RANGE",
+                "range": "RANGE_ROUTE_102_104",
                 "species": "SEEDOT"
               },
               {
-                "range": "ROUTE_102_104_RANGE",
+                "range": "RANGE_ROUTE_102_104",
                 "species": "LOTAD"
               },
               {
-                "range": "ROUTE_102_104_RANGE",
+                "range": "RANGE_ROUTE_102_104",
                 "species": "SEEDOT"
               },
               {
-                "range": "ROUTE_102_104_RANGE",
+                "range": "RANGE_ROUTE_102_104",
                 "species": "LOTAD"
               },
               {
-                "range": "ROUTE_102_104_RANGE",
+                "range": "RANGE_ROUTE_102_104",
                 "species": "RALTS"
               },
               {
-                "range": "ROUTE_102_104_RANGE",
+                "range": "RANGE_ROUTE_102_104",
                 "species": "RALTS"
               },
               {
-                "range": "ROUTE_102_104_RANGE",
+                "range": "RANGE_ROUTE_102_104",
                 "species": "RALTS"
               },
               {
-                "range": "ROUTE_102_104_RANGE",
+                "range": "RANGE_ROUTE_102_104",
                 "species": "SURSKIT"
               },
               {
-                "range": "ROUTE_102_104_RANGE",
+                "range": "RANGE_ROUTE_102_104",
                 "species": "RALTS"
               },
               {
-                "range": "ROUTE_102_104_RANGE",
+                "range": "RANGE_ROUTE_102_104",
                 "species": "SURSKIT"
               }
             ]
@@ -151,7 +151,7 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "range": "10, 15",
+                "range": "RANGE_OLD_ROD_INITIAL",
                 "species": "MAGIKARP"
               },
               {
@@ -188,43 +188,43 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "range": "ROUTE_103_RANGE",
+                "range": "RANGE_ROUTE_103",
                 "species": "WINGULL"
               },
               {
-                "range": "ROUTE_103_RANGE",
+                "range": "RANGE_ROUTE_103",
                 "species": "WINGULL"
               },
               {
-                "range": "ROUTE_103_RANGE",
+                "range": "RANGE_ROUTE_103",
                 "species": "WINGULL"
               },
               {
-                "range": "ROUTE_103_RANGE",
+                "range": "RANGE_ROUTE_103",
                 "species": "POOCHYENA"
               },
               {
-                "range": "ROUTE_103_RANGE",
+                "range": "RANGE_ROUTE_103",
                 "species": "ZIGZAGOON"
               },
               {
-                "range": "ROUTE_103_RANGE",
+                "range": "RANGE_ROUTE_103",
                 "species": "POOCHYENA"
               },
               {
-                "range": "ROUTE_103_RANGE",
+                "range": "RANGE_ROUTE_103",
                 "species": "ZIGZAGOON"
               },
               {
-                "range": "ROUTE_103_RANGE",
+                "range": "RANGE_ROUTE_103",
                 "species": "ZIGZAGOON"
               },
               {
-                "range": "ROUTE_103_RANGE",
+                "range": "RANGE_ROUTE_103",
                 "species": "POOCHYENA"
               },
               {
-                "range": "ROUTE_103_RANGE",
+                "range": "RANGE_ROUTE_103",
                 "species": "ZIGZAGOON"
               }
             ]
@@ -254,7 +254,7 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "range": "10, 15",
+                "range": "RANGE_OLD_ROD_INITIAL",
                 "species": "MAGIKARP"
               },
               {
@@ -291,43 +291,43 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "range": "ROUTE_102_104_RANGE",
+                "range": "RANGE_ROUTE_102_104",
                 "species": "WINGULL"
               },
               {
-                "range": "ROUTE_102_104_RANGE",
+                "range": "RANGE_ROUTE_102_104",
                 "species": "TAILLOW"
               },
               {
-                "range": "ROUTE_102_104_RANGE",
+                "range": "RANGE_ROUTE_102_104",
                 "species": "AZURILL"
               },
               {
-                "range": "ROUTE_102_104_RANGE",
+                "range": "RANGE_ROUTE_102_104",
                 "species": "WURMPLE"
               },
               {
-                "range": "ROUTE_102_104_RANGE",
+                "range": "RANGE_ROUTE_102_104",
                 "species": "WINGULL"
               },
               {
-                "range": "ROUTE_102_104_RANGE",
+                "range": "RANGE_ROUTE_102_104",
                 "species": "AZURILL"
               },
               {
-                "range": "ROUTE_102_104_RANGE",
+                "range": "RANGE_ROUTE_102_104",
                 "species": "TAILLOW"
               },
               {
-                "range": "ROUTE_102_104_RANGE",
+                "range": "RANGE_ROUTE_102_104",
                 "species": "WINGULL"
               },
               {
-                "range": "ROUTE_102_104_RANGE",
+                "range": "RANGE_ROUTE_102_104",
                 "species": "WINGULL"
               },
               {
-                "range": "ROUTE_102_104_RANGE",
+                "range": "RANGE_ROUTE_102_104",
                 "species": "WINGULL"
               }
             ]
@@ -357,7 +357,7 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "range": "10, 15",
+                "range": "RANGE_OLD_ROD_INITIAL",
                 "species": "MAGIKARP"
               },
               {
@@ -859,43 +859,43 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "range": "ROUTE_116_RANGE",
+                "range": "RANGE_ROUTE_116",
                 "species": "SKITTY"
               },
               {
-                "range": "ROUTE_116_RANGE",
+                "range": "RANGE_ROUTE_116",
                 "species": "NINCADA"
               },
               {
-                "range": "ROUTE_116_RANGE",
+                "range": "RANGE_ROUTE_116",
                 "species": "TAILLOW"
               },
               {
-                "range": "ROUTE_116_RANGE",
+                "range": "RANGE_ROUTE_116",
                 "species": "ABRA"
               },
               {
-                "range": "ROUTE_116_RANGE",
+                "range": "RANGE_ROUTE_116",
                 "species": "ZIGZAGOON"
               },
               {
-                "range": "ROUTE_116_RANGE",
+                "range": "RANGE_ROUTE_116",
                 "species": "TAILLOW"
               },
               {
-                "range": "ROUTE_116_RANGE",
+                "range": "RANGE_ROUTE_116",
                 "species": "ABRA"
               },
               {
-                "range": "ROUTE_116_RANGE",
+                "range": "RANGE_ROUTE_116",
                 "species": "ZIGZAGOON"
               },
               {
-                "range": "ROUTE_116_RANGE",
+                "range": "RANGE_ROUTE_116",
                 "species": "SKITTY"
               },
               {
-                "range": "ROUTE_116_RANGE",
+                "range": "RANGE_ROUTE_116",
                 "species": "SKITTY"
               }
             ]
@@ -1172,11 +1172,11 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "range": "PETALBURG_WOODS_RANGE",
+                "range": "RANGE_PETALBURG_WOODS",
                 "species": "SHROOMISH"
               },
               {
-                "range": "PETALBURG_WOODS_RANGE",
+                "range": "RANGE_PETALBURG_WOODS",
                 "species": "NINCADA"
               },
               {
@@ -1196,19 +1196,19 @@
                 "species": "CASCOON"
               },
               {
-                "range": "PETALBURG_WOODS_RANGE",
+                "range": "RANGE_PETALBURG_WOODS",
                 "species": "SHROOMISH"
               },
               {
-                "range": "PETALBURG_WOODS_RANGE",
+                "range": "RANGE_PETALBURG_WOODS",
                 "species": "SLAKOTH"
               },
               {
-                "range": "PETALBURG_WOODS_RANGE",
+                "range": "RANGE_PETALBURG_WOODS",
                 "species": "SLAKOTH"
               },
               {
-                "range": "PETALBURG_WOODS_RANGE",
+                "range": "RANGE_PETALBURG_WOODS",
                 "species": "SLAKOTH"
               }
             ]
@@ -1221,43 +1221,43 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "range": "RUSTURF_TUNNEL_RANGE",
+                "range": "RANGE_RUSTURF_TUNNEL",
                 "species": "WHISMUR"
               },
               {
-                "range": "RUSTURF_TUNNEL_RANGE",
+                "range": "RANGE_RUSTURF_TUNNEL",
                 "species": "WHISMUR"
               },
               {
-                "range": "RUSTURF_TUNNEL_RANGE",
+                "range": "RANGE_RUSTURF_TUNNEL",
                 "species": "WHISMUR"
               },
               {
-                "range": "RUSTURF_TUNNEL_RANGE",
+                "range": "RANGE_RUSTURF_TUNNEL",
                 "species": "WHISMUR"
               },
               {
-                "range": "RUSTURF_TUNNEL_RANGE",
+                "range": "RANGE_RUSTURF_TUNNEL",
                 "species": "WHISMUR"
               },
               {
-                "range": "RUSTURF_TUNNEL_RANGE",
+                "range": "RANGE_RUSTURF_TUNNEL",
                 "species": "WHISMUR"
               },
               {
-                "range": "RUSTURF_TUNNEL_RANGE",
+                "range": "RANGE_RUSTURF_TUNNEL",
                 "species": "WHISMUR"
               },
               {
-                "range": "RUSTURF_TUNNEL_RANGE",
+                "range": "RANGE_RUSTURF_TUNNEL",
                 "species": "WHISMUR"
               },
               {
-                "range": "RUSTURF_TUNNEL_RANGE",
+                "range": "RANGE_RUSTURF_TUNNEL",
                 "species": "WHISMUR"
               },
               {
-                "range": "RUSTURF_TUNNEL_RANGE",
+                "range": "RANGE_RUSTURF_TUNNEL",
                 "species": "WHISMUR"
               }
             ]
@@ -1270,43 +1270,43 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "range": "12, 15",
+                "range": "RANGE_GRANITE_CAVE",
                 "species": "MAKUHITA"
               },
               {
-                "range": "12, 15",
+                "range": "RANGE_GRANITE_CAVE",
                 "species": "GEODUDE"
               },
               {
-                "range": "12, 15",
+                "range": "RANGE_GRANITE_CAVE",
                 "species": "MAKUHITA"
               },
               {
-                "range": "12, 15",
+                "range": "RANGE_GRANITE_CAVE",
                 "species": "GEODUDE"
               },
               {
-                "range": "12, 15",
+                "range": "RANGE_GRANITE_CAVE",
                 "species": "MAKUHITA"
               },
               {
-                "range": "12, 15",
+                "range": "RANGE_GRANITE_CAVE",
                 "species": "ABRA"
               },
               {
-                "range": "12, 15",
+                "range": "RANGE_GRANITE_CAVE",
                 "species": "MAKUHITA"
               },
               {
-                "range": "12, 15",
+                "range": "RANGE_GRANITE_CAVE",
                 "species": "MAKUHITA"
               },
               {
-                "range": "12, 15",
+                "range": "RANGE_GRANITE_CAVE",
                 "species": "ABRA"
               },
               {
-                "range": "12, 15",
+                "range": "RANGE_GRANITE_CAVE",
                 "species": "ABRA"
               }
             ]
@@ -1319,44 +1319,142 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "range": "12, 15",
+                "range": "RANGE_GRANITE_CAVE",
                 "species": "MAWILE"
               },
               {
-                "range": "12, 15",
+                "range": "RANGE_GRANITE_CAVE",
                 "species": "SABLEYE"
               },
               {
-                "range": "12, 15",
+                "range": "RANGE_GRANITE_CAVE",
                 "species": "ARON"
               },
               {
-                "range": "12, 15",
+                "range": "RANGE_GRANITE_CAVE",
                 "species": "ARON"
               },
               {
-                "range": "12, 15",
+                "range": "RANGE_GRANITE_CAVE",
                 "species": "MAWILE"
               },
               {
-                "range": "12, 15",
+                "range": "RANGE_GRANITE_CAVE",
                 "species": "SABLEYE"
               },
               {
-                "range": "12, 15",
+                "range": "RANGE_GRANITE_CAVE",
                 "species": "ARON"
               },
               {
-                "range": "12, 15",
+                "range": "RANGE_GRANITE_CAVE",
                 "species": "ZUBAT"
               },
               {
-                "range": "12, 15",
+                "range": "RANGE_GRANITE_CAVE",
                 "species": "ZUBAT"
               },
               {
-                "range": "12, 15",
+                "range": "RANGE_GRANITE_CAVE",
                 "species": "ZUBAT"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_GRANITE_CAVE_B2F",
+          "base_label": "gGraniteCave_B2F",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "ARON"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "NOSEPASS"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "ARON"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "NOSEPASS"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "MAWILE"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "SABLEYE"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "MAWILE"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "SABLEYE"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "ZUBAT"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "ARON"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_GRANITE_CAVE_STEVENS_ROOM",
+          "base_label": "gGraniteCave_StevensRoom",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "ARON"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "ARON"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "NOSEPASS"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "MAKUHITA"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "NOSEPASS"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "MAKUHITA"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "NOSEPASS"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "MAKUHITA"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "NOSEPASS"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "MAKUHITA"
               }
             ]
           }
@@ -1592,55 +1690,6 @@
           }
         },
         {
-          "map": "MAP_GRANITE_CAVE_B2F",
-          "base_label": "gGraniteCave_B2F",
-          "land_mons": {
-            "encounter_rate": 10,
-            "mons": [
-              {
-                "range": "12, 15",
-                "species": "ARON"
-              },
-              {
-                "range": "12, 15",
-                "species": "NOSEPASS"
-              },
-              {
-                "range": "12, 15",
-                "species": "ARON"
-              },
-              {
-                "range": "12, 15",
-                "species": "NOSEPASS"
-              },
-              {
-                "range": "12, 15",
-                "species": "MAWILE"
-              },
-              {
-                "range": "12, 15",
-                "species": "SABLEYE"
-              },
-              {
-                "range": "12, 15",
-                "species": "MAWILE"
-              },
-              {
-                "range": "12, 15",
-                "species": "SABLEYE"
-              },
-              {
-                "range": "12, 15",
-                "species": "ZUBAT"
-              },
-              {
-                "range": "12, 15",
-                "species": "ARON"
-              }
-            ]
-          }
-        },
-        {
           "map": "MAP_FIERY_PATH",
           "base_label": "gFieryPath",
           "land_mons": {
@@ -1869,7 +1918,7 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "range": "10, 15",
+                "range": "RANGE_OLD_ROD_INITIAL",
                 "species": "MAGIKARP"
               },
               {
@@ -1927,7 +1976,7 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "range": "10, 15",
+                "range": "RANGE_OLD_ROD_INITIAL",
                 "species": "MAGIKARP"
               },
               {
@@ -2146,7 +2195,7 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "range": "10, 15",
+                "range": "RANGE_OLD_ROD_INITIAL",
                 "species": "MAGIKARP"
               },
               {
@@ -3034,55 +3083,6 @@
               {
                 "range": "42, 44",
                 "species": "SHUPPET"
-              }
-            ]
-          }
-        },
-        {
-          "map": "MAP_GRANITE_CAVE_STEVENS_ROOM",
-          "base_label": "gGraniteCave_StevensRoom",
-          "land_mons": {
-            "encounter_rate": 10,
-            "mons": [
-              {
-                "range": "12, 15",
-                "species": "ARON"
-              },
-              {
-                "range": "12, 15",
-                "species": "ARON"
-              },
-              {
-                "range": "12, 15",
-                "species": "NOSEPASS"
-              },
-              {
-                "range": "12, 15",
-                "species": "MAKUHITA"
-              },
-              {
-                "range": "12, 15",
-                "species": "NOSEPASS"
-              },
-              {
-                "range": "12, 15",
-                "species": "MAKUHITA"
-              },
-              {
-                "range": "12, 15",
-                "species": "NOSEPASS"
-              },
-              {
-                "range": "12, 15",
-                "species": "MAKUHITA"
-              },
-              {
-                "range": "12, 15",
-                "species": "NOSEPASS"
-              },
-              {
-                "range": "12, 15",
-                "species": "MAKUHITA"
               }
             ]
           }
@@ -5728,7 +5728,7 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "range": "10, 15",
+                "range": "RANGE_OLD_ROD_INITIAL",
                 "species": "MAGIKARP"
               },
               {

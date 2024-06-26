@@ -97,14 +97,6 @@ upcoming
     - Poison Sting: 20->40
     - Poison Fang: 60->65
 - Show the following correct damage in summary screen (both existing and new moves) and battle (https://bulbapedia.bulbagarden.net/wiki/Category:Moves_that_have_variable_power and https://bulbapedia.bulbagarden.net/wiki/Category:Moves_that_power_up)
-    - Acrobatics
-    - Weather Ball
-    - Terrain Pulse
-    - Flail/Reversal
-    - Water Spout/Eruption/Dragon Energy
-    - Electro Ball
-    - Gyro Ball
-    - Low Kick/Grass Know
     - ate boosts
     - Normalize
     - Tough Claws
@@ -115,6 +107,9 @@ upcoming
     - Punk Rock
     - Hustle (power)
     - STAB
+    - Stored Power
+    - Sun/Rain (Steam Eruption)
+    - Sand Force
 
 ### Field Moves
 - Replace Waterfall with an item, similar to Dive

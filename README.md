@@ -300,7 +300,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Rival 103       |5||
 |Roxanne         |12, 12, 15            |11, 11, 13|
 |Rival Rustboro  |13, 15||
-|Brawly          |16, 16, 19||
+|Brawly          |16, 16, 19            |16, 16, 18|
 |Rival 110       |18, 18, 20||
 |Wally Mauville  |16                    |20, 22|
 |Wattson         |20, 22, 22, 24        |22, 24, 24, 26|

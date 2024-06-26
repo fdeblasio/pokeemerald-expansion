@@ -174,7 +174,6 @@ There are some mechanics, moves and abilities that are missing and being develop
     - [Displaying Return/Frustration power in summary screen](https://www.pokecommunity.com/showpost.php?p=10575976&postcount=420)
 - AsparagusEduardo
     - [Not showing dex entries until the Pokédex is received](https://github.com/pret/pokeemerald/wiki/Not-showing-dex-entries-until-getting-the-Pok%C3%A9dex)
-    - [Having "Move Pokémon" as the first PC option](https://www.pokecommunity.com/showpost.php?p=10065761)
 - Ghoulslash
     - [Fixing the surfing dismount bug](https://github.com/pret/pokeemerald/wiki/Surfing-Dismount-Ground-Effects)
     - [Implementing shops using badge count](https://github.com/pret/pokeemerald/wiki/Shop-Items-By-Badge-Count)
@@ -189,7 +188,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 - [Jirachii for implementing Hidden Power type in the summary screen](https://www.pokecommunity.com/showpost.php?p=10269132)
 - [Zeturic for a wrapping summary screen](https://www.pokecommunity.com/showpost.php?p=10060875&postcount=27)
 - [Diego Mertens for adding the Move Relearner to the summary screen](https://www.pokecommunity.com/showpost.php?p=10470602)
-- [Hiroshi for making TMs unsellable](https://www.pokecommunity.com/showpost.php?p=10209376)
 - [Flametix for fixing the RESET_FONT bug](https://github.com/pret/pokeemerald/wiki/Implement-Missing-Text-Function-RESET_FONT)
 - [devolov for removing Use on Key Items with no field use](https://github.com/pret/pokeemerald/wiki/Make-Key-Items-That-Cannot-Be-Used-In-The-Field-Not-Show-A-Use-or-Register-Option)
 - [Anon822 for removing map popups for the same map section](https://www.pokecommunity.com/showpost.php?p=10449889)
@@ -200,9 +198,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - [Sapphire Jester for making the Soot Sack usuable](https://www.pokecommunity.com/showpost.php?p=10222284&postcount=178)
 
 ## Known Bugs
+- Moving an Pokemon in the PC seems to duplicate its item in the bag
 - Due to the increased walking speed, followers will sometimes clip through tiles, especially after hopping off a ledge
 - Followers will stop following you if you use the naming screen from the party menu. It will start to follow you again if you talk to it
-- Moving an Pokemon in the PC seems to duplicate its item in the bag
 - When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
 - AI_FLAG_ACE_POKEMON doesn't seem to work
 - If you help one of the Lilycove Pokémon Center ladies, the other lady thinks you've already helped her as well
@@ -251,6 +249,20 @@ There are some mechanics, moves and abilities that are missing and being develop
     - The door to Sealed Chamber and the Regis' inner rooms are now automatically open
 - Made rapids easier to navigate so that only one trip is needed to get all items/battle all trainers (at the cost of looking slightly worse)
 - All moves automatically have their max PP amount
+- The following moves now show up as the right type both in battle and on the summary screen:
+    - Hidden Power
+    - Judgement
+    - Techno Blast
+    - Revelation Dance
+    - Multi-Attack
+    - Aura Wheel
+    - Raging Bull
+    - Ivy Cudgel
+    - Moves affected by Normalize, Aerilate, Refrigerate, Pixilate, Galvanize, or Liquid Voice
+- Weather Ball, Terrain Pulse, Tera Blast, Tera Starstorm show the correct type in battle
+- The following moves show the correct power both in battle and on the summary screen:
+  - Return
+  - Frustration
 - The Good Rod is now obtained on the left side of Route 118 instead of the right
 - Sacred Ash now works in battles although it only revives one Pokémon
 - Soul Dew uses its Gen 6 effect
@@ -275,13 +287,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 ### Quality of life changes thanks to tutorials (credit above):
 - You can nickname and relearn moves from the party menu
 - Press A on the summary screen to see a Pokémon's EVs/IVs
-- Return/Frustration shows power in summary screen
-- Hidden Power type is shown in battle and the summary screen
 - Can swap party members with Select
 - Items in shops are based on the amount of badges you have
 - Bag sorting with Start button
 - More bag space
-- "Move Pokémon" is the first option in the PC
 - The naming screen automatically swaps to lowercase after the first letter
 - Rainy routes will automatically water berries
 - Premier Balls are now given for every multiple of 10 of any ball you buy (as opposed to only 1 for 10+ Poke Balls)

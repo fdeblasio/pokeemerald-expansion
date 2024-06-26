@@ -3683,30 +3683,33 @@ static void PrintMoveNameAndPP(u8 moveIndex)
 static void PrintMovePowerAndAccuracy(u16 moveIndex)
 {
     const u8 *text;
+    u16 effect = gMovesInfo[moveIndex].effect;
     struct Pokemon *mon = &sMonSummaryScreen->currentMon;
-    u8 monFriendship = GetMonData(mon, MON_DATA_FRIENDSHIP);
 
     if (moveIndex != 0)
     {
         FillWindowPixelRect(PSS_LABEL_WINDOW_MOVES_POWER_ACC, PIXEL_FILL(0), 53, 0, 19, 32);
 
-        if (moveIndex == MOVE_RETURN)
-        {
-            ConvertIntToDecimalStringN(gStringVar1, (10 * monFriendship / 25), STR_CONV_MODE_RIGHT_ALIGN, 3);
-            text = gStringVar1;
-        }
-        else if (moveIndex == MOVE_FRUSTRATION)
-        {
-            ConvertIntToDecimalStringN(gStringVar1, (10 * (MAX_FRIENDSHIP - monFriendship) / 25), STR_CONV_MODE_RIGHT_ALIGN, 3);
-            text = gStringVar1;
-        }
-        else if (gMovesInfo[moveIndex].power < 2)
-        {
+        u16 power = gMovesInfo[moveIndex].power;
+
+        if (effect == EFFECT_ERUPTION)
+            power = GetMonData(mon, MON_DATA_HP) * power / GetMonData(mon, MON_DATA_MAX_HP);
+        else if (effect == EFFECT_RETURN)
+            power = 10 * GetMonData(mon, MON_DATA_FRIENDSHIP) / 20;
+        else if (effect == EFFECT_FRUSTRATION)
+            power = 10 * (MAX_FRIENDSHIP - GetMonData(mon, MON_DATA_FRIENDSHIP)) / 20;
+        else if (effect == EFFECT_ACROBATICS && GetMonData(mon, MON_DATA_HELD_ITEM) == ITEM_NONE)
+            power *= 2;
+        else if (effect == EFFECT_FACADE && (GetMonData(mon, MON_DATA_STATUS) & (STATUS1_BURN | STATUS1_PSN_ANY | STATUS1_PARALYSIS | STATUS1_FROSTBITE)))
+            power = uq4_12_multiply(power, UQ_4_12(2.0));
+
+        if (GetMonAbility(mon) == ABILITY_TECHNICIAN && power <= 60)
+            power = uq4_12_multiply(power, UQ_4_12(1.5));
+
+        if (power <= 1)
             text = gText_ThreeDashes;
-        }
-        else
-        {
-            ConvertIntToDecimalStringN(gStringVar1, gMovesInfo[moveIndex].power, STR_CONV_MODE_RIGHT_ALIGN, 3);
+        else {
+            ConvertIntToDecimalStringN(gStringVar1, power, STR_CONV_MODE_RIGHT_ALIGN, 3);
             text = gStringVar1;
         }
 
@@ -3723,14 +3726,11 @@ static void PrintMovePowerAndAccuracy(u16 moveIndex)
         if (GetMonData(mon, MON_DATA_HELD_ITEM) == ITEM_WIDE_LENS)
             accuracy = (accuracy * 110) / 100;
 
-        if (accuracy > 100)
-            accuracy = 100;
-
         if (accuracy == 0)
             text = gText_ThreeDashes;
         else
         {
-            ConvertIntToDecimalStringN(gStringVar1, accuracy, STR_CONV_MODE_RIGHT_ALIGN, 3);
+            ConvertIntToDecimalStringN(gStringVar1, min(accuracy, 100), STR_CONV_MODE_RIGHT_ALIGN, 3);
             text = gStringVar1;
         }
 

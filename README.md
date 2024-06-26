@@ -1305,6 +1305,13 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Aqua Jet by level up
     - Learns Rock Smash, Surf, and Earthquake later to avoid breaking the game
 
+- Poochyena:
+    - Speed: 35->40
+
+- Mightyena:
+    - Atk: 90->110
+    - Speed: 70->80
+
 - Wurmple:
     - Learns Bug Bite at level 7 instead of 15
     - Evolution is now based on time of day
@@ -1332,10 +1339,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Wingull/Pelipper:
     - Learn Gust by level up
 
-Ralts/Kirlia/Gardevoir:
+- Ralts/Kirlia/Gardevoir:
     - Due to Disarming Voice's boost in power, Fairy Wind is learned in its place at level 1 instead. Disarming Voice is now learned at level 17.
 
-Gallade:
+- Gallade:
     - Learns Fairy Wind by level up
 
 - Surskit/Masquerain:
@@ -1381,8 +1388,17 @@ Gallade:
     - Def: 145->150
     - SpD: 150->145
 
+- Skitty:
+    - Atk: 45->50
+    - Def: 45->50
+    - Spe: 50->55
+    - Learns Quick Attack and Headbutt by level up
+
 - Delcatty:
-    - Learns Swift by level up
+    - Atk: 65->75
+    - Def: 65->70
+    - Spe: 90->95
+    - Learns Quick Attack, Swift, and Headbutt by level up
 
 - Sableye:
     - Catch rate: 45->90
@@ -1688,7 +1704,7 @@ Gallade:
     - Def: 99->100
     - SpA: 66->85
     - SpD: 84->85
-    - Speed: 32->35
+    - Spe: 32->35
     - Learns Terrain Pulse by level up
 
 - Mienfoo:

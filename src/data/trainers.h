@@ -968,14 +968,14 @@
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 12,
+        .lvl = 11,
         .species = SPECIES_LILEEP,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         .moves = {MOVE_ROCK_TOMB, MOVE_ASTONISH, MOVE_CONSTRICT, MOVE_ACID},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = 12,
+        .lvl = 11,
         .species = SPECIES_ANORITH,
         .ability = ABILITY_SWIFT_SWIM,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -983,7 +983,7 @@
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 15,
+        .lvl = 13,
         .species = SPECIES_NOSEPASS,
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
         .moves = {MOVE_ROCK_TOMB, MOVE_BLOCK, MOVE_HARDEN, MOVE_TACKLE},

@@ -1967,10 +1967,53 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     else if ((effect == EFFECT_EARTHQUAKE || effect == EFFECT_MAGNITUDE) && (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN))
         pwr = uq4_12_multiply(pwr, UQ_4_12(0.5));
 
-    if (GetBattlerAbility(battler) == ABILITY_TECHNICIAN && pwr <= 60)
+    if (GetBattlerAbility(battler) == ABILITY_TECHNICIAN && pwr > 1 && pwr <= 60)
+        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+    else if (GetBattlerAbility(battler) == ABILITY_FLARE_BOOST && (gBattleMons[battler].status1 & STATUS1_BURN) && cat == DAMAGE_CATEGORY_SPECIAL)
+        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+    else if (GetBattlerAbility(battler) == ABILITY_TOXIC_BOOST && (gBattleMons[battler].status1 & STATUS1_PSN_ANY) && cat == DAMAGE_CATEGORY_PHYSICAL)
+        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+    else if (GetBattlerAbility(battler) == ABILITY_RECKLESS && IS_MOVE_RECOIL(move))
+        pwr = uq4_12_multiply(pwr, UQ_4_12(1.2));
+    else if (GetBattlerAbility(battler) == ABILITY_IRON_FIST && gMovesInfo[move].punchingMove)
+        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+    else if (GetBattlerAbility(battler) == ABILITY_SHEER_FORCE && MoveIsAffectedBySheerForce(move))
+        pwr = uq4_12_multiply(pwr, UQ_4_12(1.3));
+    else if (GetBattlerAbility(battler) == ABILITY_SAND_FORCE
+             && (gBattleWeather & B_WEATHER_SANDSTORM)
+             && (gMovesInfo[move].type == TYPE_ROCK || gMovesInfo[move].type == TYPE_GROUND || gMovesInfo[move].type == TYPE_STEEL))
+        pwr = uq4_12_multiply(pwr, UQ_4_12(1.3));
+    else if (GetBattlerAbility(battler) == ABILITY_TOUGH_CLAWS && IsMoveMakingContact(move, battler))
+        pwr = uq4_12_multiply(pwr, UQ_4_12(1.3));
+    else if (GetBattlerAbility(battler) == ABILITY_STRONG_JAW && gMovesInfo[move].bitingMove)
+        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+    else if (GetBattlerAbility(battler) == ABILITY_MEGA_LAUNCHER && gMovesInfo[move].pulseMove)
+        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+    else if (GetBattlerAbility(battler) == ABILITY_WATER_BUBBLE && gMovesInfo[move].type == TYPE_WATER)
+        pwr = uq4_12_multiply(pwr, UQ_4_12(2.0));
+    else if ((GetBattlerAbility(battler) == ABILITY_STEELWORKER || GetBattlerAbility(battler) == ABILITY_STEELY_SPIRIT)
+            && gMovesInfo[move].type == TYPE_STEEL)
+        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+    else if ((GetBattlerAbility(battler) == ABILITY_AERILATE
+             || GetBattlerAbility(battler) == ABILITY_REFRIGERATE
+             || GetBattlerAbility(battler) == ABILITY_PIXILATE
+             || GetBattlerAbility(battler) == ABILITY_GALVANIZE)
+             && gMovesInfo[move].type == TYPE_NORMAL)
+        pwr = uq4_12_multiply(pwr, UQ_4_12(1.2));
+    else if (GetBattlerAbility(battler) == ABILITY_NORMALIZE)
+        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+    else if (GetBattlerAbility(battler) == ABILITY_PUNK_ROCK && gMovesInfo[move].soundMove)
+        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+    else if (GetBattlerAbility(battler) == ABILITY_TRANSISTOR && gMovesInfo[move].type == TYPE_ELECTRIC)
+        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+    else if (GetBattlerAbility(battler) == ABILITY_DRAGONS_MAW && gMovesInfo[move].type == TYPE_DRAGON)
+        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+    else if (GetBattlerAbility(battler) == ABILITY_ROCKY_PAYLOAD && gMovesInfo[move].type == TYPE_ROCK)
+        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+    else if (GetBattlerAbility(battler) == ABILITY_SHARPNESS && gMovesInfo[move].slicingMove)
         pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
 
-    if (pwr <= 1)
+    if (pwr < 2 && pwr == gMovesInfo[move].power)
         StringCopy(pwr_num, gText_BattleSwitchWhich5);
     else
         ConvertIntToDecimalStringN(pwr_num, pwr, STR_CONV_MODE_LEFT_ALIGN, 3);

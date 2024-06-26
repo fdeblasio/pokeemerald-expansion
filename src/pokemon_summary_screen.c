@@ -3703,10 +3703,50 @@ static void PrintMovePowerAndAccuracy(u16 moveIndex)
         else if (effect == EFFECT_FACADE && (GetMonData(mon, MON_DATA_STATUS) & (STATUS1_BURN | STATUS1_PSN_ANY | STATUS1_PARALYSIS | STATUS1_FROSTBITE)))
             power = uq4_12_multiply(power, UQ_4_12(2.0));
 
-        if (GetMonAbility(mon) == ABILITY_TECHNICIAN && power <= 60)
+        if (GetMonAbility(mon) == ABILITY_TECHNICIAN && power > 1 && power <= 60)
+            power = uq4_12_multiply(power, UQ_4_12(1.5));
+        else if (GetMonAbility(mon) == ABILITY_FLARE_BOOST && (GetMonData(mon, MON_DATA_STATUS) & STATUS1_BURN) && gMovesInfo[moveIndex].category == DAMAGE_CATEGORY_SPECIAL)
+            power = uq4_12_multiply(power, UQ_4_12(1.5));
+        else if (GetMonAbility(mon) == ABILITY_TOXIC_BOOST && (GetMonData(mon, MON_DATA_STATUS) & STATUS1_PSN_ANY) && gMovesInfo[moveIndex].category == DAMAGE_CATEGORY_PHYSICAL)
+            power = uq4_12_multiply(power, UQ_4_12(1.5));
+        else if (GetMonAbility(mon) == ABILITY_RECKLESS && IS_MOVE_RECOIL(moveIndex))
+            power = uq4_12_multiply(power, UQ_4_12(1.2));
+        else if (GetMonAbility(mon) == ABILITY_IRON_FIST && gMovesInfo[moveIndex].punchingMove)
+            power = uq4_12_multiply(power, UQ_4_12(1.5));
+        else if (GetMonAbility(mon) == ABILITY_SHEER_FORCE && MoveIsAffectedBySheerForce(moveIndex))
+            power = uq4_12_multiply(power, UQ_4_12(1.3));
+        else if (GetMonAbility(mon) == ABILITY_TOUGH_CLAWS && gMovesInfo[moveIndex].makesContact
+                && !(ItemId_GetHoldEffect(GetMonData(mon, MON_DATA_HELD_ITEM)) == HOLD_EFFECT_PUNCHING_GLOVE && gMovesInfo[moveIndex].punchingMove))
+            power = uq4_12_multiply(power, UQ_4_12(1.3));
+        else if (GetMonAbility(mon) == ABILITY_STRONG_JAW && gMovesInfo[moveIndex].bitingMove)
+            power = uq4_12_multiply(power, UQ_4_12(1.5));
+        else if (GetMonAbility(mon) == ABILITY_MEGA_LAUNCHER && gMovesInfo[moveIndex].pulseMove)
+            power = uq4_12_multiply(power, UQ_4_12(1.5));
+        else if (GetMonAbility(mon) == ABILITY_WATER_BUBBLE && gMovesInfo[moveIndex].type == TYPE_WATER)
+            power = uq4_12_multiply(power, UQ_4_12(2.0));
+        else if ((GetMonAbility(mon) == ABILITY_STEELWORKER || GetMonAbility(mon) == ABILITY_STEELY_SPIRIT)
+                && gMovesInfo[moveIndex].type == TYPE_STEEL)
+            power = uq4_12_multiply(power, UQ_4_12(1.5));
+        else if ((GetMonAbility(mon) == ABILITY_AERILATE
+                || GetMonAbility(mon) == ABILITY_REFRIGERATE
+                || GetMonAbility(mon) == ABILITY_PIXILATE
+                || GetMonAbility(mon) == ABILITY_GALVANIZE)
+                && gMovesInfo[moveIndex].type == TYPE_NORMAL)
+            power = uq4_12_multiply(power, UQ_4_12(1.2));
+        else if (GetMonAbility(mon) == ABILITY_NORMALIZE)
+            power = uq4_12_multiply(power, UQ_4_12(1.5));
+        else if (GetMonAbility(mon) == ABILITY_PUNK_ROCK && gMovesInfo[moveIndex].soundMove)
+            power = uq4_12_multiply(power, UQ_4_12(1.5));
+        else if (GetMonAbility(mon) == ABILITY_TRANSISTOR && gMovesInfo[moveIndex].type == TYPE_ELECTRIC)
+            power = uq4_12_multiply(power, UQ_4_12(1.5));
+        else if (GetMonAbility(mon) == ABILITY_DRAGONS_MAW && gMovesInfo[moveIndex].type == TYPE_DRAGON)
+            power = uq4_12_multiply(power, UQ_4_12(1.5));
+        else if (GetMonAbility(mon) == ABILITY_ROCKY_PAYLOAD && gMovesInfo[moveIndex].type == TYPE_ROCK)
+            power = uq4_12_multiply(power, UQ_4_12(1.5));
+        else if (GetMonAbility(mon) == ABILITY_SHARPNESS && gMovesInfo[moveIndex].slicingMove)
             power = uq4_12_multiply(power, UQ_4_12(1.5));
 
-        if (power <= 1)
+        if (power < 2 && power == gMovesInfo[moveIndex].power)
             text = gText_ThreeDashes;
         else {
             ConvertIntToDecimalStringN(gStringVar1, power, STR_CONV_MODE_RIGHT_ALIGN, 3);

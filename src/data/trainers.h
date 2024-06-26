@@ -1,4 +1,7 @@
 #define PERFECT_IVS TRAINER_PARTY_IVS(MAX_PER_STAT_IVS, MAX_PER_STAT_IVS, MAX_PER_STAT_IVS, MAX_PER_STAT_IVS, MAX_PER_STAT_IVS, MAX_PER_STAT_IVS)
+#define EV_SPREAD_ATK_DEF_HP TRAINER_PARTY_EVS(EV_REMAINDER, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, 0, 0, 0)
+#define EV_SPREAD_ATK_SPE_HP TRAINER_PARTY_EVS(EV_REMAINDER, MAX_PER_STAT_EVS, 0, MAX_PER_STAT_EVS, 0, 0)
+#define EV_SPREAD_SPA_SPE_HP TRAINER_PARTY_EVS(EV_REMAINDER, 0, 0, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, 0)
 
 [TRAINER_NONE] =
 {
@@ -45,21 +48,21 @@
     .ability = ABILITY_##Ability,                   \
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18) \
 
-#define BRENDAN                                            \
+#define BRENDAN_INFO                                       \
     .trainerName = _("Brendan"),                           \
     .trainerClass = TRAINER_CLASS_RIVAL,                   \
     .trainerPic = TRAINER_PIC_BRENDAN,                     \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE, \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON
 
-#define BRENDAN_STARTER                              \
-    .nature = NATURE_SERIOUS,                        \
-    .iv = PERFECT_IVS, \
+#define BRENDAN_STARTER       \
+    .nature = NATURE_SERIOUS, \
+    .iv = PERFECT_IVS,        \
     .gender = TRAINER_MON_MALE,
 
 [TRAINER_BRENDAN_ROUTE_103_MUDKIP] =
 {
-    BRENDAN,
+    BRENDAN_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -72,7 +75,7 @@
 
 [TRAINER_BRENDAN_RUSTBORO_MUDKIP] =
 {
-    BRENDAN,
+    BRENDAN_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -89,7 +92,7 @@
 
 [TRAINER_BRENDAN_ROUTE_110_MUDKIP] =
 {
-    BRENDAN,
+    BRENDAN_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -110,7 +113,7 @@
 
 [TRAINER_BRENDAN_ROUTE_119_MUDKIP] =
 {
-    BRENDAN,
+    BRENDAN_INFO,
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
@@ -135,7 +138,7 @@
 
 [TRAINER_BRENDAN_LILYCOVE_MUDKIP] =
 {
-    BRENDAN,
+    BRENDAN_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
@@ -164,7 +167,7 @@
 
 [TRAINER_BRENDAN_ROUTE_103_TREECKO] =
 {
-    BRENDAN,
+    BRENDAN_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -177,7 +180,7 @@
 
 [TRAINER_BRENDAN_RUSTBORO_TREECKO] =
 {
-    BRENDAN,
+    BRENDAN_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -194,7 +197,7 @@
 
 [TRAINER_BRENDAN_ROUTE_110_TREECKO] =
 {
-    BRENDAN,
+    BRENDAN_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -215,7 +218,7 @@
 
 [TRAINER_BRENDAN_ROUTE_119_TREECKO] =
 {
-    BRENDAN,
+    BRENDAN_INFO,
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
@@ -240,7 +243,7 @@
 
 [TRAINER_BRENDAN_LILYCOVE_TREECKO] =
 {
-    BRENDAN,
+    BRENDAN_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
@@ -269,7 +272,7 @@
 
 [TRAINER_BRENDAN_ROUTE_103_TORCHIC] =
 {
-    BRENDAN,
+    BRENDAN_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -282,7 +285,7 @@
 
 [TRAINER_BRENDAN_RUSTBORO_TORCHIC] =
 {
-    BRENDAN,
+    BRENDAN_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -299,7 +302,7 @@
 
 [TRAINER_BRENDAN_ROUTE_110_TORCHIC] =
 {
-    BRENDAN,
+    BRENDAN_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -320,7 +323,7 @@
 
 [TRAINER_BRENDAN_ROUTE_119_TORCHIC] =
 {
-    BRENDAN,
+    BRENDAN_INFO,
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
@@ -345,7 +348,7 @@
 
 [TRAINER_BRENDAN_LILYCOVE_TORCHIC] =
 {
-    BRENDAN,
+    BRENDAN_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
@@ -372,21 +375,21 @@
     },
 },
 
-#define MAY                                                                     \
+#define MAY_INFO                                                                \
     .trainerName = _("May"),                                                    \
     .trainerClass = TRAINER_CLASS_RIVAL,                                        \
     .trainerPic = TRAINER_PIC_MAY,                                              \
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE, \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON
 
-#define MAY_STARTER                                  \
-    .nature = NATURE_QUIRKY,                         \
-    .iv = PERFECT_IVS, \
+#define MAY_STARTER          \
+    .nature = NATURE_QUIRKY, \
+    .iv = PERFECT_IVS,       \
     .gender = TRAINER_MON_FEMALE,
 
 [TRAINER_MAY_ROUTE_103_MUDKIP] =
 {
-    MAY,
+    MAY_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -399,7 +402,7 @@
 
 [TRAINER_MAY_RUSTBORO_MUDKIP] =
 {
-    MAY,
+    MAY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -416,7 +419,7 @@
 
 [TRAINER_MAY_ROUTE_110_MUDKIP] =
 {
-    MAY,
+    MAY_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -437,7 +440,7 @@
 
 [TRAINER_MAY_ROUTE_119_MUDKIP] =
 {
-    MAY,
+    MAY_INFO,
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
@@ -462,7 +465,7 @@
 
 [TRAINER_MAY_LILYCOVE_MUDKIP] =
 {
-    MAY,
+    MAY_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
@@ -491,7 +494,7 @@
 
 [TRAINER_MAY_ROUTE_103_TREECKO] =
 {
-    MAY,
+    MAY_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -503,7 +506,7 @@
 
 [TRAINER_MAY_RUSTBORO_TREECKO] =
 {
-    MAY,
+    MAY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -520,7 +523,7 @@
 
 [TRAINER_MAY_ROUTE_110_TREECKO] =
 {
-    MAY,
+    MAY_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -541,7 +544,7 @@
 
 [TRAINER_MAY_ROUTE_119_TREECKO] =
 {
-    MAY,
+    MAY_INFO,
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
@@ -566,7 +569,7 @@
 
 [TRAINER_MAY_LILYCOVE_TREECKO] =
 {
-    MAY,
+    MAY_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
@@ -595,7 +598,7 @@
 
 [TRAINER_MAY_ROUTE_103_TORCHIC] =
 {
-    MAY,
+    MAY_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -607,7 +610,7 @@
 
 [TRAINER_MAY_RUSTBORO_TORCHIC] =
 {
-    MAY,
+    MAY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -624,7 +627,7 @@
 
 [TRAINER_MAY_ROUTE_110_TORCHIC] =
 {
-    MAY,
+    MAY_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -645,7 +648,7 @@
 
 [TRAINER_MAY_ROUTE_119_TORCHIC] =
 {
-    MAY,
+    MAY_INFO,
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
@@ -670,7 +673,7 @@
 
 [TRAINER_MAY_LILYCOVE_TORCHIC] =
 {
-    MAY,
+    MAY_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
@@ -702,19 +705,16 @@
 #define ENDGAME_REMATCH_4_LEVEL 75
 #define ENDGAME_REMATCH_5_LEVEL 80
 
-#define REMATCH_ACE(rematch)                  \
-    .lvl = ENDGAME_REMATCH_##rematch##_LEVEL, \
+#define ACE   0
+#define TIER2 2
+#define TIER3 5
+
+#define REMATCH_MON(Species, Tier, Rematch)          \
+    .lvl = ENDGAME_REMATCH_##Rematch##_LEVEL - Tier, \
+    .species = SPECIES_##Species,                    \
     .iv = PERFECT_IVS
 
-#define REMATCH_MON_TIER2(rematch)                \
-    .lvl = ENDGAME_REMATCH_##rematch##_LEVEL - 2, \
-    .iv = PERFECT_IVS
-
-#define REMATCH_MON_TIER3(rematch)                \
-    .lvl = ENDGAME_REMATCH_##rematch##_LEVEL - 5, \
-    .iv = PERFECT_IVS
-
-#define WALLY                                              \
+#define WALLY_INFO                                         \
     .trainerName = _("Wally"),                             \
     .trainerClass = TRAINER_CLASS_RIVAL,                   \
     .trainerPic = TRAINER_PIC_WALLY,                       \
@@ -723,7 +723,7 @@
 
 [TRAINER_WALLY_MAUVILLE] =
 {
-    WALLY,
+    WALLY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -745,7 +745,7 @@
 
 [TRAINER_WALLY_VR_1] =
 {
-    WALLY,
+    WALLY_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
@@ -790,36 +790,31 @@
 
 [TRAINER_WALLY_VR_2] =
 {
-    WALLY,
+    WALLY_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(2),
-        .species = SPECIES_DELCATTY,
+        REMATCH_MON(DELCATTY, TIER3, 2),
         .moves = {MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_ASSIST, MOVE_CHARM},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER3(2),
-        .species = SPECIES_ALTARIA,
+        REMATCH_MON(ALTARIA, TIER3, 2),
         .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
         .gender = TRAINER_MON_MALE,
         },
         {
-        REMATCH_MON_TIER2(2),
-        .species = SPECIES_MAGNEZONE,
+        REMATCH_MON(MAGNEZONE, TIER2, 2),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_METAL_SOUND},
         },
         {
-        REMATCH_MON_TIER2(2),
-        .species = SPECIES_ROSERADE,
+        REMATCH_MON(ROSERADE, TIER2, 2),
         .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_ACE(2),
-        .species = SPECIES_GALLADE,
+        REMATCH_MON(GALLADE, ACE, 2),
         .ability = ABILITY_SHARPNESS,
         .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE},
         .heldItem = ITEM_GALLADITE,
@@ -830,36 +825,31 @@
 
 [TRAINER_WALLY_VR_3] =
 {
-    WALLY,
+    WALLY_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(3),
-        .species = SPECIES_DELCATTY,
+        REMATCH_MON(DELCATTY, TIER3, 3),
         .moves = {MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_ASSIST, MOVE_CHARM},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER3(3),
-        .species = SPECIES_ALTARIA,
+        REMATCH_MON(ALTARIA, TIER3, 3),
         .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
         .gender = TRAINER_MON_MALE,
         },
         {
-        REMATCH_MON_TIER2(3),
-        .species = SPECIES_MAGNEZONE,
+        REMATCH_MON(MAGNEZONE, TIER2, 3),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_METAL_SOUND},
         },
         {
-        REMATCH_MON_TIER2(3),
-        .species = SPECIES_ROSERADE,
+        REMATCH_MON(ROSERADE, TIER2, 3),
         .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_ACE(3),
-        .species = SPECIES_GALLADE,
+        REMATCH_MON(GALLADE, ACE, 3),
         .ability = ABILITY_SHARPNESS,
         .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE},
         .heldItem = ITEM_GALLADITE,
@@ -870,36 +860,31 @@
 
 [TRAINER_WALLY_VR_4] =
 {
-    WALLY,
+    WALLY_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(4),
-        .species = SPECIES_DELCATTY,
+        REMATCH_MON(DELCATTY, TIER3, 4),
         .moves = {MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_ASSIST, MOVE_CHARM},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER3(4),
-        .species = SPECIES_ALTARIA,
+        REMATCH_MON(ALTARIA, TIER3, 4),
         .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
         .gender = TRAINER_MON_MALE,
         },
         {
-        REMATCH_MON_TIER2(4),
-        .species = SPECIES_MAGNEZONE,
+        REMATCH_MON(MAGNEZONE, TIER2, 4),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_METAL_SOUND},
         },
         {
-        REMATCH_MON_TIER2(4),
-        .species = SPECIES_ROSERADE,
+        REMATCH_MON(ROSERADE, TIER2, 4),
         .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_ACE(4),
-        .species = SPECIES_GALLADE,
+        REMATCH_MON(GALLADE, ACE, 4),
         .ability = ABILITY_SHARPNESS,
         .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE},
         .heldItem = ITEM_GALLADITE,
@@ -910,42 +895,36 @@
 
 [TRAINER_WALLY_VR_5] =
 {
-    WALLY,
+    WALLY_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(5),
-        .species = SPECIES_GARDEVOIR,
+        REMATCH_MON(GARDEVOIR, TIER3, 5),
         .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_MYSTICAL_FIRE, MOVE_CALM_MIND},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER3(5),
-        .species = SPECIES_DELCATTY,
+        REMATCH_MON(DELCATTY, TIER3, 5),
         .moves = {MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_ASSIST, MOVE_CHARM},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER3(5),
-        .species = SPECIES_ALTARIA,
+        REMATCH_MON(ALTARIA, TIER3, 5),
         .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
         .gender = TRAINER_MON_MALE,
         },
         {
-        REMATCH_MON_TIER2(5),
-        .species = SPECIES_MAGNEZONE,
+        REMATCH_MON(MAGNEZONE, TIER2, 5),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_METAL_SOUND},
         },
         {
-        REMATCH_MON_TIER2(5),
-        .species = SPECIES_ROSERADE,
+        REMATCH_MON(ROSERADE, TIER2, 5),
         .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_ACE(5),
-        .species = SPECIES_GALLADE,
+        REMATCH_MON(GALLADE, ACE, 5),
         .ability = ABILITY_SHARPNESS,
         .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE},
         .heldItem = ITEM_GALLADITE,
@@ -954,12 +933,15 @@
     },
 },
 
-#define ROXANNE_INFO                                                            \
-    .trainerName = _("Roxanne"),                                                \
-    .trainerClass = TRAINER_CLASS_LEADER,                                       \
-    .trainerPic = TRAINER_PIC_LEADER_ROXANNE,                                   \
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE, \
+#define LEADER_INFO(pic)                    \
+    .trainerClass = TRAINER_CLASS_LEADER,   \
+    .trainerPic = TRAINER_PIC_LEADER_##pic, \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON
+
+#define ROXANNE_INFO                                                            \
+    LEADER_INFO(ROXANNE),                                                       \
+    .trainerName = _("Roxanne"),                                                \
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE
 
 [TRAINER_ROXANNE_1] =
 {
@@ -995,8 +977,7 @@
 
 #define ROXANNE_PROBOPASS(rematch, move3)                                          \
     {                                                                              \
-    REMATCH_ACE(rematch),                                                          \
-    .species = SPECIES_PROBOPASS,                                                  \
+    REMATCH_MON(PROBOPASS, ACE, rematch),                                          \
     .ability = ABILITY_SAND_FORCE,                                                 \
     .nature = NATURE_IMPISH,                                                       \
     .ev = TRAINER_PARTY_EVS(0, 0, 63, 63, 1, 0),                                   \
@@ -1007,11 +988,10 @@
 
 #define ROXANNE_ARMALDO(rematch)                                                    \
     {                                                                               \
-    REMATCH_MON_TIER2(rematch),                                                     \
-    .species = SPECIES_ARMALDO,                                                     \
+    REMATCH_MON(ARMALDO, TIER2, rematch),                                           \
     .ability = ABILITY_BATTLE_ARMOR,                                                \
     .nature = NATURE_ADAMANT,                                                       \
-    .ev = TRAINER_PARTY_EVS(1, 63, 63, 0, 0, 0),                                    \
+    .ev = EV_SPREAD_ATK_DEF_HP,                                                     \
     .moves = {MOVE_ROCK_SLIDE, MOVE_X_SCISSOR, MOVE_CRUSH_CLAW, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                     \
     .heldItem = ITEM_QUICK_CLAW,                                                    \
@@ -1019,8 +999,7 @@
 
 #define ROXANNE_CRADILY(rematch)                                                \
     {                                                                           \
-    REMATCH_MON_TIER2(rematch),                                                 \
-    .species = SPECIES_CRADILY,                                                 \
+    REMATCH_MON(CRADILY, TIER2, rematch),                                       \
     .ability = ABILITY_STORM_DRAIN,                                             \
     .nature = NATURE_CALM,                                                      \
     .ev = TRAINER_PARTY_EVS(0, 0, 1, 0, 63, 63),                                \
@@ -1031,22 +1010,20 @@
 
 #define ROXANNE_RELICANTH(rematch, move3, move4)                            \
     {                                                                       \
-    REMATCH_MON_TIER3(rematch),                                             \
-    .species = SPECIES_RELICANTH,                                           \
+    REMATCH_MON(RELICANTH, TIER3, rematch),                                 \
     .ability = ABILITY_ROCK_HEAD,                                           \
     .nature = NATURE_IMPISH,                                                \
-    .ev = TRAINER_PARTY_EVS(1, 63, 63, 0, 0, 0),                            \
+    .ev = EV_SPREAD_ATK_DEF_HP,                                             \
     .moves = {MOVE_HEAD_SMASH, MOVE_AQUA_TAIL, MOVE_##move3, MOVE_##move4}, \
     .gender = TRAINER_MON_FEMALE,                                           \
     }
 
 #define ROXANNE_AGGRON(rematch, move1, move2, move3)                        \
     {                                                                       \
-    REMATCH_MON_TIER3(rematch),                                             \
-    .species = SPECIES_AGGRON,                                              \
+    REMATCH_MON(AGGRON, TIER3, rematch),                                    \
     .ability = ABILITY_ROCK_HEAD,                                           \
     .nature = NATURE_IMPISH,                                                \
-    .ev = TRAINER_PARTY_EVS(1, 63, 63, 0, 0, 0),                            \
+    .ev = EV_SPREAD_ATK_DEF_HP,                                             \
     .moves = {MOVE_##move1, MOVE_##move2, MOVE_##move3, MOVE_STEALTH_ROCK}, \
     .gender = TRAINER_MON_FEMALE,                                           \
     }
@@ -1103,11 +1080,10 @@
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(5),
-        .species = SPECIES_RHYPERIOR,
+        REMATCH_MON(RHYPERIOR, TIER3, 5),
         .ability = ABILITY_SOLID_ROCK,
         .nature = NATURE_ADAMANT,
-        .ev = TRAINER_PARTY_EVS(1, 63, 63, 0, 0, 0),
+        .ev = EV_SPREAD_ATK_DEF_HP,
         .moves = {MOVE_ROCK_WRECKER, MOVE_DRILL_RUN, MOVE_POISON_JAB, MOVE_SANDSTORM},
         .gender = TRAINER_MON_FEMALE,
         },
@@ -1119,19 +1095,21 @@
     },
 },
 
+#define BRAWLY_INFO             \
+    LEADER_INFO(BRAWLY),        \
+    .trainerName = _("Brawly"), \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE
+
 [TRAINER_BRAWLY_1] =
 {
-    .trainerName = _("Brawly"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    BRAWLY_INFO,
     .items = {ITEM_SUPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 16,
         .species = SPECIES_MACHOP,
+        .ability = ABILITY_NO_GUARD,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         .moves = {MOVE_BULK_UP, MOVE_KARATE_CHOP, MOVE_KNOCK_OFF, MOVE_FORESIGHT},
         .gender = TRAINER_MON_MALE,
@@ -1144,8 +1122,9 @@
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = 19,
+        .lvl = 18,
         .species = SPECIES_MAKUHITA,
+        .ability = ABILITY_THICK_FAT,
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
         .moves = {MOVE_BULK_UP, MOVE_ARM_THRUST, MOVE_FAKE_OUT, MOVE_WHIRLWIND},
         .gender = TRAINER_MON_MALE,
@@ -1154,201 +1133,132 @@
     },
 },
 
+#define BRAWLY_HARIYAMA(rematch)                                               \
+    {                                                                          \
+    REMATCH_MON(HARIYAMA, ACE, rematch),                                       \
+    .ability = ABILITY_THICK_FAT,                                              \
+    .nature = NATURE_ADAMANT,                                                  \
+    .ev = TRAINER_PARTY_EVS(63, 63, 0, 1, 0, 0),                               \
+    .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_BELLY_DRUM, MOVE_FAKE_OUT}, \
+    .gender = TRAINER_MON_MALE,                                                \
+    .heldItem = ITEM_SITRUS_BERRY,                                             \
+    }
+
+#define BRAWLY_MEDICHAM(rematch)                                                  \
+    {                                                                             \
+    REMATCH_MON(MEDICHAM, TIER2, rematch),                                        \
+    .nature = NATURE_ADAMANT,                                                     \
+    .ev = EV_SPREAD_ATK_SPE_HP,                                                   \
+    .moves = {MOVE_BULK_UP, MOVE_HIGH_JUMP_KICK, MOVE_ZEN_HEADBUTT, MOVE_DETECT}, \
+    .gender = TRAINER_MON_FEMALE,                                                 \
+    .heldItem = ITEM_MUSCLE_BAND,                                                 \
+    }
+
+#define BRAWLY_MACHAMP(rematch)                                               \
+    {                                                                         \
+    REMATCH_MON(MACHAMP, TIER2, rematch),                                     \
+    .ability = ABILITY_NO_GUARD,                                              \
+    .nature = NATURE_ADAMANT,                                                 \
+    .ev = EV_SPREAD_ATK_SPE_HP,                                               \
+    .moves = {MOVE_BULK_UP, MOVE_CROSS_CHOP, MOVE_KNOCK_OFF, MOVE_DUAL_CHOP}, \
+    .gender = TRAINER_MON_MALE,                                               \
+    .heldItem = ITEM_BLACK_BELT,                                              \
+    }
+
+#define BRAWLY_BRELOOM(rematch)                                                   \
+    {                                                                             \
+    REMATCH_MON(BRELOOM, TIER3, rematch),                                         \
+    .ability = ABILITY_TECHNICIAN,                                                \
+    .nature = NATURE_ADAMANT,                                                     \
+    .ev = EV_SPREAD_ATK_SPE_HP,                                                   \
+    .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_BULLET_SEED, MOVE_MACH_PUNCH}, \
+    .gender = TRAINER_MON_MALE,                                                   \
+    }
+
+#define BRAWLY_BLAZIKEN(rematch)                                                   \
+    {                                                                              \
+    REMATCH_MON(BLAZIKEN, TIER3, rematch),                                         \
+    .nature = NATURE_ADAMANT,                                                      \
+    .ev = EV_SPREAD_ATK_SPE_HP,                                                    \
+    .moves = {MOVE_BULK_UP, MOVE_SKY_UPPERCUT, MOVE_BLAZE_KICK, MOVE_MIRROR_MOVE}, \
+    .gender = TRAINER_MON_MALE,                                                    \
+    }
+
 [TRAINER_BRAWLY_2] =
 {
-    .trainerName = _("Brawly"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    BRAWLY_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
     .doubleBattle = TRUE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
-        {
-        REMATCH_MON_TIER3(2),
-        .species = SPECIES_BRELOOM,
-        .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_SEED_BOMB, MOVE_MACH_PUNCH},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        REMATCH_MON_TIER2(2),
-        .species = SPECIES_MACHAMP,
-        .moves = {MOVE_BULK_UP, MOVE_CROSS_CHOP, MOVE_KNOCK_OFF, MOVE_DUAL_CHOP},
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_BLACK_BELT,
-        },
-        {
-        REMATCH_MON_TIER2(2),
-        .species = SPECIES_MEDICHAM,
-        .moves = {MOVE_BULK_UP, MOVE_HIGH_JUMP_KICK, MOVE_ZEN_HEADBUTT, MOVE_DETECT},
-        .gender = TRAINER_MON_FEMALE,
-        .heldItem = ITEM_MUSCLE_BAND,
-        },
-        {
-        REMATCH_ACE(2),
-        .species = SPECIES_HARIYAMA,
-        .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_BELLY_DRUM, MOVE_FAKE_OUT},
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_SITRUS_BERRY,
-        }
+        BRAWLY_BRELOOM(2),
+        BRAWLY_MACHAMP(2),
+        BRAWLY_MEDICHAM(2),
+        BRAWLY_HARIYAMA(2),
     },
 },
 
 [TRAINER_BRAWLY_3] =
 {
-    .trainerName = _("Brawly"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    BRAWLY_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
     .doubleBattle = TRUE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        {
-        REMATCH_MON_TIER3(3),
-        .species = SPECIES_BLAZIKEN,
-        .moves = {MOVE_BULK_UP, MOVE_SKY_UPPERCUT, MOVE_BLAZE_KICK, MOVE_MIRROR_MOVE},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        REMATCH_MON_TIER3(3),
-        .species = SPECIES_BRELOOM,
-        .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_SEED_BOMB, MOVE_MACH_PUNCH},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        REMATCH_MON_TIER2(3),
-        .species = SPECIES_MACHAMP,
-        .moves = {MOVE_BULK_UP, MOVE_CROSS_CHOP, MOVE_KNOCK_OFF, MOVE_DUAL_CHOP},
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_BLACK_BELT,
-        },
-        {
-        REMATCH_MON_TIER2(3),
-        .species = SPECIES_MEDICHAM,
-        .moves = {MOVE_BULK_UP, MOVE_HIGH_JUMP_KICK, MOVE_ZEN_HEADBUTT, MOVE_DETECT},
-        .gender = TRAINER_MON_FEMALE,
-        .heldItem = ITEM_MUSCLE_BAND,
-        },
-        {
-        REMATCH_ACE(3),
-        .species = SPECIES_HARIYAMA,
-        .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_BELLY_DRUM, MOVE_FAKE_OUT},
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_SITRUS_BERRY,
-        }
+        BRAWLY_BLAZIKEN(3),
+        BRAWLY_BRELOOM(3),
+        BRAWLY_MACHAMP(3),
+        BRAWLY_MEDICHAM(3),
+        BRAWLY_HARIYAMA(3),
     },
 },
 
 [TRAINER_BRAWLY_4] =
 {
-    .trainerName = _("Brawly"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    BRAWLY_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
     .doubleBattle = TRUE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        {
-        REMATCH_MON_TIER3(4),
-        .species = SPECIES_BLAZIKEN,
-        .moves = {MOVE_BULK_UP, MOVE_SKY_UPPERCUT, MOVE_BLAZE_KICK, MOVE_MIRROR_MOVE},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        REMATCH_MON_TIER3(4),
-        .species = SPECIES_BRELOOM,
-        .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_SEED_BOMB, MOVE_MACH_PUNCH},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        REMATCH_MON_TIER2(4),
-        .species = SPECIES_MACHAMP,
-        .moves = {MOVE_BULK_UP, MOVE_CROSS_CHOP, MOVE_KNOCK_OFF, MOVE_DUAL_CHOP},
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_BLACK_BELT,
-        },
-        {
-        REMATCH_MON_TIER2(4),
-        .species = SPECIES_MEDICHAM,
-        .moves = {MOVE_BULK_UP, MOVE_HIGH_JUMP_KICK, MOVE_ZEN_HEADBUTT, MOVE_DETECT},
-        .gender = TRAINER_MON_FEMALE,
-        .heldItem = ITEM_MUSCLE_BAND,
-        },
-        {
-        REMATCH_ACE(4),
-        .species = SPECIES_HARIYAMA,
-        .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_BELLY_DRUM, MOVE_FAKE_OUT},
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_SITRUS_BERRY,
-        }
+        BRAWLY_BLAZIKEN(4),
+        BRAWLY_BRELOOM(4),
+        BRAWLY_MACHAMP(4),
+        BRAWLY_MEDICHAM(4),
+        BRAWLY_HARIYAMA(4),
     },
 },
 
 [TRAINER_BRAWLY_5] =
 {
-    .trainerName = _("Brawly"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    BRAWLY_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
     .doubleBattle = TRUE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(5),
-        .species = SPECIES_GALLADE,
+        REMATCH_MON(GALLADE, TIER3, 5),
+        .ability = ABILITY_JUSTIFIED,
+        .nature = NATURE_ADAMANT,
+        .ev = EV_SPREAD_ATK_SPE_HP,
         .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_PSYCHO_CUT, MOVE_NIGHT_SLASH},
         },
-        {
-        REMATCH_MON_TIER3(5),
-        .species = SPECIES_BLAZIKEN,
-        .moves = {MOVE_BULK_UP, MOVE_SKY_UPPERCUT, MOVE_BLAZE_KICK, MOVE_MIRROR_MOVE},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        REMATCH_MON_TIER3(5),
-        .species = SPECIES_BRELOOM,
-        .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_SEED_BOMB, MOVE_MACH_PUNCH},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        REMATCH_MON_TIER2(5),
-        .species = SPECIES_MACHAMP,
-        .moves = {MOVE_BULK_UP, MOVE_CROSS_CHOP, MOVE_KNOCK_OFF, MOVE_DUAL_CHOP},
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_BLACK_BELT,
-        },
-        {
-        REMATCH_MON_TIER2(5),
-        .species = SPECIES_MEDICHAM,
-        .moves = {MOVE_BULK_UP, MOVE_HIGH_JUMP_KICK, MOVE_ZEN_HEADBUTT, MOVE_DETECT},
-        .gender = TRAINER_MON_FEMALE,
-        .heldItem = ITEM_MUSCLE_BAND,
-        },
-        {
-        REMATCH_ACE(5),
-        .species = SPECIES_HARIYAMA,
-        .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_BELLY_DRUM, MOVE_FAKE_OUT},
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_SITRUS_BERRY,
-        }
+        BRAWLY_BLAZIKEN(5),
+        BRAWLY_BRELOOM(5),
+        BRAWLY_MACHAMP(5),
+        BRAWLY_MEDICHAM(5),
+        BRAWLY_HARIYAMA(5),
     },
 },
 
+#define WATTSON_INFO             \
+    LEADER_INFO(WATTSON),        \
+    .trainerName = _("Wattson"), \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE
+
 [TRAINER_WATTSON_1] =
 {
-    .trainerName = _("Wattson"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_WATTSON,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    WATTSON_INFO,
     .items = {ITEM_SUPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
@@ -1381,37 +1291,29 @@
 
 [TRAINER_WATTSON_2] =
 {
-    .trainerName = _("Wattson"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_WATTSON,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    WATTSON_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
     .doubleBattle = TRUE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(2),
-        .species = SPECIES_MAGNETON,
+        REMATCH_MON(MAGNETON, TIER3, 2),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_ELECTRIC_TERRAIN},
         },
         {
-        REMATCH_MON_TIER2(2),
-        .species = SPECIES_MINUN,
+        REMATCH_MON(MINUN, TIER2, 2),
         .moves = {MOVE_THUNDERBOLT, MOVE_THUNDER_WAVE, MOVE_FAKE_TEARS, MOVE_NASTY_PLOT},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_MAGNET,
         },
         {
-        REMATCH_MON_TIER2(2),
-        .species = SPECIES_PLUSLE,
+        REMATCH_MON(PLUSLE, TIER2, 2),
         .moves = {MOVE_THUNDERBOLT, MOVE_SKILL_SWAP, MOVE_CHARM, MOVE_NASTY_PLOT},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_MAGNET,
         },
         {
-        REMATCH_ACE(2),
-        .species = SPECIES_MANECTRIC,
+        REMATCH_MON(MANECTRIC, ACE, 2),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_SIGNAL_BEAM, MOVE_ICE_FANG},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -1421,44 +1323,35 @@
 
 [TRAINER_WATTSON_3] =
 {
-    .trainerName = _("Wattson"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_WATTSON,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    WATTSON_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
     .doubleBattle = TRUE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(3),
-        .species = SPECIES_LANTURN,
+        REMATCH_MON(LANTURN, TIER3, 3),
         .ability = ABILITY_VOLT_ABSORB,
         .moves = {MOVE_THUNDER, MOVE_HYDRO_PUMP, MOVE_ELECTRIC_TERRAIN, MOVE_RAIN_DANCE},
         .gender = TRAINER_MON_MALE,
         },
         {
-        REMATCH_MON_TIER3(3),
-        .species = SPECIES_MAGNEZONE,
+        REMATCH_MON(MAGNEZONE, TIER3, 3),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_ELECTRIC_TERRAIN},
         },
         {
-        REMATCH_MON_TIER2(3),
-        .species = SPECIES_MINUN,
+        REMATCH_MON(MINUN, TIER2, 3),
         .moves = {MOVE_THUNDERBOLT, MOVE_THUNDER_WAVE, MOVE_FAKE_TEARS, MOVE_NASTY_PLOT},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_MAGNET,
         },
         {
-        REMATCH_MON_TIER2(3),
-        .species = SPECIES_PLUSLE,
+        REMATCH_MON(PLUSLE, TIER2, 3),
         .moves = {MOVE_THUNDERBOLT, MOVE_SKILL_SWAP, MOVE_CHARM, MOVE_NASTY_PLOT},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_MAGNET,
         },
         {
-        REMATCH_ACE(3),
-        .species = SPECIES_MANECTRIC,
+        REMATCH_MON(MANECTRIC, ACE, 3),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_SIGNAL_BEAM, MOVE_ICE_FANG},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -1468,44 +1361,35 @@
 
 [TRAINER_WATTSON_4] =
 {
-    .trainerName = _("Wattson"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_WATTSON,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    WATTSON_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
     .doubleBattle = TRUE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(4),
-        .species = SPECIES_LANTURN,
+        REMATCH_MON(LANTURN, TIER3, 4),
         .ability = ABILITY_VOLT_ABSORB,
         .moves = {MOVE_THUNDER, MOVE_HYDRO_PUMP, MOVE_ELECTRIC_TERRAIN, MOVE_RAIN_DANCE},
         .gender = TRAINER_MON_MALE,
         },
         {
-        REMATCH_MON_TIER3(4),
-        .species = SPECIES_MAGNEZONE,
+        REMATCH_MON(MAGNEZONE, TIER3, 4),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_ELECTRIC_TERRAIN},
         },
         {
-        REMATCH_MON_TIER2(4),
-        .species = SPECIES_MINUN,
+        REMATCH_MON(MINUN, TIER2, 4),
         .moves = {MOVE_THUNDERBOLT, MOVE_THUNDER_WAVE, MOVE_FAKE_TEARS, MOVE_NASTY_PLOT},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_MAGNET,
         },
         {
-        REMATCH_MON_TIER2(4),
-        .species = SPECIES_PLUSLE,
+        REMATCH_MON(PLUSLE, TIER2, 4),
         .moves = {MOVE_THUNDERBOLT, MOVE_SKILL_SWAP, MOVE_CHARM, MOVE_NASTY_PLOT},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_MAGNET,
         },
         {
-        REMATCH_ACE(4),
-        .species = SPECIES_MANECTRIC,
+        REMATCH_MON(MANECTRIC, ACE, 4),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_SIGNAL_BEAM, MOVE_ICE_FANG},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -1515,49 +1399,39 @@
 
 [TRAINER_WATTSON_5] =
 {
-    .trainerName = _("Wattson"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_WATTSON,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    WATTSON_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
     .doubleBattle = TRUE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(5),
-        .species = SPECIES_ELECTRODE,
+        REMATCH_MON(ELECTRODE, TIER3, 5),
         .moves = {MOVE_THUNDERBOLT, MOVE_ROLLOUT, MOVE_LIGHT_SCREEN, MOVE_SCREECH},
         },
         {
-        REMATCH_MON_TIER3(5),
-        .species = SPECIES_LANTURN,
+        REMATCH_MON(LANTURN, TIER3, 5),
         .ability = ABILITY_VOLT_ABSORB,
         .moves = {MOVE_THUNDER, MOVE_HYDRO_PUMP, MOVE_ELECTRIC_TERRAIN, MOVE_RAIN_DANCE},
         .gender = TRAINER_MON_MALE,
         },
         {
-        REMATCH_MON_TIER3(5),
-        .species = SPECIES_MAGNEZONE,
+        REMATCH_MON(MAGNEZONE, TIER3, 5),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_ELECTRIC_TERRAIN},
         },
         {
-        REMATCH_MON_TIER2(5),
-        .species = SPECIES_MINUN,
+        REMATCH_MON(MINUN, TIER2, 5),
         .moves = {MOVE_THUNDERBOLT, MOVE_THUNDER_WAVE, MOVE_FAKE_TEARS, MOVE_NASTY_PLOT},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_MAGNET,
         },
         {
-        REMATCH_MON_TIER2(5),
-        .species = SPECIES_PLUSLE,
+        REMATCH_MON(PLUSLE, TIER2, 5),
         .moves = {MOVE_THUNDERBOLT, MOVE_SKILL_SWAP, MOVE_CHARM, MOVE_NASTY_PLOT},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_MAGNET,
         },
         {
-        REMATCH_ACE(5),
-        .species = SPECIES_MANECTRIC,
+        REMATCH_MON(MANECTRIC, ACE, 5),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_SIGNAL_BEAM, MOVE_ICE_FANG},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_MANECTITE,
@@ -1565,12 +1439,10 @@
     },
 },
 
-#define FLANNERY_INFO                                                           \
-    .trainerName = _("Flannery"),                                               \
-    .trainerClass = TRAINER_CLASS_LEADER,                                       \
-    .trainerPic = TRAINER_PIC_LEADER_FLANNERY,                                  \
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE, \
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON
+#define FLANNERY_INFO             \
+    LEADER_INFO(FLANNERY),        \
+    .trainerName = _("Flannery"), \
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE
 
 [TRAINER_FLANNERY_1] =
 {
@@ -1619,28 +1491,24 @@
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(2),
-        .species = SPECIES_CASTFORM,
+        REMATCH_MON(CASTFORM, TIER3, 2),
         .moves = {MOVE_OVERHEAT, MOVE_SOLAR_BEAM, MOVE_WEATHER_BALL, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER2(2),
-        .species = SPECIES_BLAZIKEN,
+        REMATCH_MON(BLAZIKEN, TIER2, 2),
         .moves = {MOVE_OVERHEAT, MOVE_AURA_SPHERE, MOVE_FOCUS_ENERGY, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_WHITE_HERB,
         },
         {
-        REMATCH_MON_TIER2(2),
-        .species = SPECIES_CAMERUPT,
+        REMATCH_MON(CAMERUPT, TIER2, 2),
         .moves = {MOVE_OVERHEAT, MOVE_EARTH_POWER, MOVE_AMNESIA, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_WHITE_HERB,
         },
         {
-        REMATCH_ACE(2),
-        .species = SPECIES_TORKOAL,
+        REMATCH_MON(TORKOAL, ACE, 2),
         .ability = ABILITY_DROUGHT,
         .moves = {MOVE_OVERHEAT, MOVE_IRON_DEFENSE, MOVE_SHELL_SMASH, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
@@ -1657,34 +1525,29 @@
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(3),
-        .species = SPECIES_MAGCARGO,
+        REMATCH_MON(MAGCARGO, TIER3, 3),
         .moves = {MOVE_OVERHEAT, MOVE_YAWN, MOVE_AMNESIA, MOVE_SHELL_SMASH},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER3(3),
-        .species = SPECIES_CASTFORM,
+        REMATCH_MON(CASTFORM, TIER3, 3),
         .moves = {MOVE_OVERHEAT, MOVE_SOLAR_BEAM, MOVE_WEATHER_BALL, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER2(3),
-        .species = SPECIES_BLAZIKEN,
+        REMATCH_MON(BLAZIKEN, TIER2, 3),
         .moves = {MOVE_OVERHEAT, MOVE_AURA_SPHERE, MOVE_FOCUS_ENERGY, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_WHITE_HERB,
         },
         {
-        REMATCH_MON_TIER2(3),
-        .species = SPECIES_CAMERUPT,
+        REMATCH_MON(CAMERUPT, TIER2, 3),
         .moves = {MOVE_OVERHEAT, MOVE_EARTH_POWER, MOVE_AMNESIA, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_WHITE_HERB,
         },
         {
-        REMATCH_ACE(3),
-        .species = SPECIES_TORKOAL,
+        REMATCH_MON(TORKOAL, ACE, 3),
         .ability = ABILITY_DROUGHT,
         .moves = {MOVE_OVERHEAT, MOVE_IRON_DEFENSE, MOVE_SHELL_SMASH, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
@@ -1701,41 +1564,35 @@
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(4),
-        .species = SPECIES_NINETALES,
+        REMATCH_MON(NINETALES, TIER3, 4),
         .ability = ABILITY_DROUGHT,
         .moves = {MOVE_OVERHEAT, MOVE_GRUDGE, MOVE_NASTY_PLOT, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER3(4),
-        .species = SPECIES_MAGCARGO,
+        REMATCH_MON(MAGCARGO, TIER3, 4),
         .moves = {MOVE_OVERHEAT, MOVE_YAWN, MOVE_SHELL_SMASH, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER3(4),
-        .species = SPECIES_CASTFORM,
+        REMATCH_MON(CASTFORM, TIER3, 4),
         .moves = {MOVE_OVERHEAT, MOVE_SOLAR_BEAM, MOVE_WEATHER_BALL, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER2(4),
-        .species = SPECIES_BLAZIKEN,
+        REMATCH_MON(BLAZIKEN, TIER2, 4),
         .moves = {MOVE_OVERHEAT, MOVE_AURA_SPHERE, MOVE_FOCUS_ENERGY, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_WHITE_HERB,
         },
         {
-        REMATCH_MON_TIER2(4),
-        .species = SPECIES_CAMERUPT,
+        REMATCH_MON(CAMERUPT, TIER2, 4),
         .moves = {MOVE_OVERHEAT, MOVE_EARTH_POWER, MOVE_AMNESIA, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_WHITE_HERB,
         },
         {
-        REMATCH_ACE(4),
-        .species = SPECIES_TORKOAL,
+        REMATCH_MON(TORKOAL, ACE, 4),
         .ability = ABILITY_DROUGHT,
         .moves = {MOVE_OVERHEAT, MOVE_IRON_DEFENSE, MOVE_SHELL_SMASH, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
@@ -1752,41 +1609,35 @@
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(5),
-        .species = SPECIES_NINETALES,
+        REMATCH_MON(NINETALES, TIER3, 5),
         .ability = ABILITY_DROUGHT,
         .moves = {MOVE_OVERHEAT, MOVE_GRUDGE, MOVE_NASTY_PLOT, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER3(5),
-        .species = SPECIES_MAGCARGO,
+        REMATCH_MON(MAGCARGO, TIER3, 5),
         .moves = {MOVE_OVERHEAT, MOVE_YAWN, MOVE_AMNESIA, MOVE_SHELL_SMASH},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER3(5),
-        .species = SPECIES_CASTFORM,
+        REMATCH_MON(CASTFORM, TIER3, 5),
         .moves = {MOVE_OVERHEAT, MOVE_SOLAR_BEAM, MOVE_WEATHER_BALL, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER2(5),
-        .species = SPECIES_BLAZIKEN,
+        REMATCH_MON(BLAZIKEN, TIER2, 5),
         .moves = {MOVE_OVERHEAT, MOVE_AURA_SPHERE, MOVE_FOCUS_ENERGY, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_WHITE_HERB,
         },
         {
-        REMATCH_MON_TIER2(5),
-        .species = SPECIES_CAMERUPT,
+        REMATCH_MON(CAMERUPT, TIER2, 5),
         .moves = {MOVE_OVERHEAT, MOVE_EARTH_POWER, MOVE_AMNESIA, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_WHITE_HERB,
         },
         {
-        REMATCH_ACE(5),
-        .species = SPECIES_TORKOAL,
+        REMATCH_MON(TORKOAL, ACE, 5),
         .ability = ABILITY_DROUGHT,
         .moves = {MOVE_OVERHEAT, MOVE_IRON_DEFENSE, MOVE_SHELL_SMASH, MOVE_SUNNY_DAY},
         .gender = TRAINER_MON_FEMALE,
@@ -1795,14 +1646,15 @@
     },
 },
 
+#define NORMAN_INFO             \
+    LEADER_INFO(NORMAN),        \
+    .trainerName = _("Norman"), \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE
+
 [TRAINER_NORMAN_1] =
 {
-    .trainerName = _("Norman"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_NORMAN,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    NORMAN_INFO,
     .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
@@ -1843,41 +1695,33 @@
 
 [TRAINER_NORMAN_2] =
 {
-    .trainerName = _("Norman"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_NORMAN,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    NORMAN_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
     .doubleBattle = TRUE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(2),
-        .species = SPECIES_LINOONE,
+        REMATCH_MON(LINOONE, TIER3, 2),
         .ability = ABILITY_QUICK_FEET,
         .moves = {MOVE_SLASH, MOVE_PLAY_ROUGH, MOVE_PIN_MISSILE, MOVE_BELLY_DRUM},
         .gender = TRAINER_MON_MALE,
         },
         {
-        REMATCH_MON_TIER2(2),
-        .species = SPECIES_ZANGOOSE,
+        REMATCH_MON(ZANGOOSE, TIER2, 2),
         .ability = ABILITY_POISON_HEAL,
         .moves = {MOVE_FACADE, MOVE_X_SCISSOR, MOVE_NIGHT_SLASH, MOVE_SWORDS_DANCE},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_TOXIC_ORB,
         },
         {
-        REMATCH_MON_TIER2(2),
-        .species = SPECIES_SPINDA,
+        REMATCH_MON(SPINDA, TIER2, 2),
         .ability = ABILITY_OWN_TEMPO,
         .moves = {MOVE_THRASH, MOVE_TEETER_DANCE, MOVE_HYPNOSIS, MOVE_SKILL_SWAP},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_LIECHI_BERRY,
         },
         {
-        REMATCH_ACE(2),
-        .species = SPECIES_SLAKING,
+        REMATCH_MON(SLAKING, ACE, 2),
         .moves = {MOVE_GIGA_IMPACT, MOVE_HAMMER_ARM, MOVE_THROAT_CHOP, MOVE_SUCKER_PUNCH},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -1887,48 +1731,39 @@
 
 [TRAINER_NORMAN_3] =
 {
-    .trainerName = _("Norman"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_NORMAN,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    NORMAN_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
     .doubleBattle = TRUE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(3),
-        .species = SPECIES_LINOONE,
+        REMATCH_MON(LINOONE, TIER3, 3),
         .ability = ABILITY_QUICK_FEET,
         .moves = {MOVE_SLASH, MOVE_PLAY_ROUGH, MOVE_PIN_MISSILE, MOVE_BELLY_DRUM},
         .gender = TRAINER_MON_MALE,
         },
         {
-        REMATCH_MON_TIER3(3),
-        .species = SPECIES_EXPLOUD,
+        REMATCH_MON(EXPLOUD, TIER3, 3),
         .ability = ABILITY_PUNK_ROCK,
         .moves = {MOVE_HYPER_VOICE, MOVE_CRUNCH, MOVE_SCREECH, MOVE_SUPERSONIC},
         .gender = TRAINER_MON_MALE,
         },
         {
-        REMATCH_MON_TIER2(3),
-        .species = SPECIES_ZANGOOSE,
+        REMATCH_MON(ZANGOOSE, TIER2, 3),
         .ability = ABILITY_POISON_HEAL,
         .moves = {MOVE_FACADE, MOVE_X_SCISSOR, MOVE_NIGHT_SLASH, MOVE_SWORDS_DANCE},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_TOXIC_ORB,
         },
         {
-        REMATCH_MON_TIER2(3),
-        .species = SPECIES_SPINDA,
+        REMATCH_MON(SPINDA, TIER2, 3),
         .ability = ABILITY_OWN_TEMPO,
         .moves = {MOVE_THRASH, MOVE_TEETER_DANCE, MOVE_HYPNOSIS, MOVE_SKILL_SWAP},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_LIECHI_BERRY,
         },
         {
-        REMATCH_ACE(3),
-        .species = SPECIES_SLAKING,
+        REMATCH_MON(SLAKING, ACE, 3),
         .moves = {MOVE_GIGA_IMPACT, MOVE_HAMMER_ARM, MOVE_THROAT_CHOP, MOVE_SUCKER_PUNCH},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -1938,48 +1773,39 @@
 
 [TRAINER_NORMAN_4] =
 {
-    .trainerName = _("Norman"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_NORMAN,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    NORMAN_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
     .doubleBattle = TRUE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(4),
-        .species = SPECIES_LINOONE,
+        REMATCH_MON(LINOONE, TIER3, 4),
         .ability = ABILITY_QUICK_FEET,
         .moves = {MOVE_SLASH, MOVE_PLAY_ROUGH, MOVE_PIN_MISSILE, MOVE_BELLY_DRUM},
         .gender = TRAINER_MON_MALE,
         },
         {
-        REMATCH_MON_TIER3(4),
-        .species = SPECIES_EXPLOUD,
+        REMATCH_MON(EXPLOUD, TIER3, 4),
         .ability = ABILITY_PUNK_ROCK,
         .moves = {MOVE_HYPER_VOICE, MOVE_CRUNCH, MOVE_SCREECH, MOVE_SUPERSONIC},
         .gender = TRAINER_MON_MALE,
         },
         {
-        REMATCH_MON_TIER2(4),
-        .species = SPECIES_ZANGOOSE,
+        REMATCH_MON(ZANGOOSE, TIER2, 4),
         .ability = ABILITY_POISON_HEAL,
         .moves = {MOVE_FACADE, MOVE_X_SCISSOR, MOVE_NIGHT_SLASH, MOVE_SWORDS_DANCE},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_TOXIC_ORB,
         },
         {
-        REMATCH_MON_TIER2(4),
-        .species = SPECIES_SPINDA,
+        REMATCH_MON(SPINDA, TIER2, 4),
         .ability = ABILITY_OWN_TEMPO,
         .moves = {MOVE_THRASH, MOVE_TEETER_DANCE, MOVE_HYPNOSIS, MOVE_SKILL_SWAP},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_LIECHI_BERRY,
         },
         {
-        REMATCH_ACE(4),
-        .species = SPECIES_SLAKING,
+        REMATCH_MON(SLAKING, ACE, 4),
         .moves = {MOVE_GIGA_IMPACT, MOVE_HAMMER_ARM, MOVE_THROAT_CHOP, MOVE_SUCKER_PUNCH},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -1989,54 +1815,44 @@
 
 [TRAINER_NORMAN_5] =
 {
-    .trainerName = _("Norman"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_NORMAN,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    NORMAN_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
     .doubleBattle = TRUE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(5),
-        .species = SPECIES_LINOONE,
+        REMATCH_MON(LINOONE, TIER3, 5),
         .ability = ABILITY_QUICK_FEET,
         .moves = {MOVE_SLASH, MOVE_PLAY_ROUGH, MOVE_PIN_MISSILE, MOVE_BELLY_DRUM},
         .gender = TRAINER_MON_MALE,
         },
         {
-        REMATCH_MON_TIER3(5),
-        .species = SPECIES_KECLEON,
+        REMATCH_MON(KECLEON, TIER3, 5),
         .moves = {MOVE_FACADE, MOVE_SHADOW_CLAW, MOVE_SUCKER_PUNCH, MOVE_DISABLE},
         .gender = TRAINER_MON_MALE,
         },
         {
-        REMATCH_MON_TIER3(5),
-        .species = SPECIES_EXPLOUD,
+        REMATCH_MON(EXPLOUD, TIER3, 5),
         .ability = ABILITY_PUNK_ROCK,
         .moves = {MOVE_HYPER_VOICE, MOVE_CRUNCH, MOVE_SCREECH, MOVE_SUPERSONIC},
         .gender = TRAINER_MON_MALE,
         },
         {
-        REMATCH_MON_TIER2(5),
-        .species = SPECIES_ZANGOOSE,
+        REMATCH_MON(ZANGOOSE, TIER2, 5),
         .ability = ABILITY_POISON_HEAL,
         .moves = {MOVE_FACADE, MOVE_X_SCISSOR, MOVE_NIGHT_SLASH, MOVE_SWORDS_DANCE},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_TOXIC_ORB,
         },
         {
-        REMATCH_MON_TIER2(5),
-        .species = SPECIES_SPINDA,
+        REMATCH_MON(SPINDA, TIER2, 5),
         .ability = ABILITY_OWN_TEMPO,
         .moves = {MOVE_THRASH, MOVE_TEETER_DANCE, MOVE_HYPNOSIS, MOVE_SKILL_SWAP},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_LIECHI_BERRY,
         },
         {
-        REMATCH_ACE(5),
-        .species = SPECIES_SLAKING,
+        REMATCH_MON(SLAKING, ACE, 5),
         .moves = {MOVE_GIGA_IMPACT, MOVE_HAMMER_ARM, MOVE_THROAT_CHOP, MOVE_SUCKER_PUNCH},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -2044,19 +1860,14 @@
     },
 },
 
-#define WINONA_INFO                                                             \
-    .trainerName = _("Winona"),                                                 \
-    .trainerClass = TRAINER_CLASS_LEADER,                                       \
-    .trainerPic = TRAINER_PIC_LEADER_WINONA,                                    \
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE, \
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON
+#define WINONA_INFO             \
+    LEADER_INFO(WINONA),        \
+    .trainerName = _("Winona"), \
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE
 
 [TRAINER_WINONA_1] =
 {
-    .trainerName = _("Winona"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_WINONA,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
+    WINONA_INFO,
     .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE},
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
@@ -2104,46 +1915,38 @@
 
 [TRAINER_WINONA_2] =
 {
-    .trainerName = _("Winona"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_WINONA,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
+    WINONA_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
     .doubleBattle = TRUE,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(2),
-        .species = SPECIES_MASQUERAIN,
+        REMATCH_MON(MASQUERAIN, TIER3, 2),
         .moves = {MOVE_AIR_SLASH, MOVE_BUG_BUZZ, MOVE_GIGA_DRAIN, MOVE_QUIVER_DANCE},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER3(2),
-        .species = SPECIES_TROPIUS,
+        REMATCH_MON(TROPIUS, TIER3, 2),
         .ability = ABILITY_CHLOROPHYLL,
         .moves = {MOVE_AIR_SLASH, MOVE_ENERGY_BALL, MOVE_BODY_SLAM, MOVE_SYNTHESIS},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER2(2),
-        .species = SPECIES_PELIPPER,
+        REMATCH_MON(PELIPPER, TIER2, 2),
         .ability = ABILITY_DRIZZLE,
         .moves = {MOVE_HURRICANE, MOVE_HYDRO_PUMP, MOVE_TAILWIND, MOVE_ROOST},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_DAMP_ROCK,
         },
         {
-        REMATCH_MON_TIER2(2),
-        .species = SPECIES_SWELLOW,
+        REMATCH_MON(SWELLOW, TIER2, 2),
         .ability = ABILITY_SCRAPPY,
         .moves = {MOVE_BRAVE_BIRD, MOVE_ENDEAVOR, MOVE_REVERSAL, MOVE_DOUBLE_TEAM},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SHARP_BEAK,
         },
         {
-        REMATCH_ACE(2),
-        .species = SPECIES_ALTARIA,
+        REMATCH_MON(ALTARIA, ACE, 2),
         .moves = {MOVE_AIR_SLASH, MOVE_DRAGON_PULSE, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -2153,52 +1956,43 @@
 
 [TRAINER_WINONA_3] =
 {
-    .trainerName = _("Winona"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_WINONA,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
+    WINONA_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
     .doubleBattle = TRUE,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(3),
-        .species = SPECIES_NINJASK,
+        REMATCH_MON(NINJASK, TIER3, 3),
         .moves = {MOVE_AERIAL_ACE, MOVE_LEECH_LIFE, MOVE_BATON_PASS, MOVE_SWORDS_DANCE},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER3(3),
-        .species = SPECIES_MASQUERAIN,
+        REMATCH_MON(MASQUERAIN, TIER3, 3),
         .moves = {MOVE_AIR_SLASH, MOVE_BUG_BUZZ, MOVE_GIGA_DRAIN, MOVE_QUIVER_DANCE},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER3(3),
-        .species = SPECIES_TROPIUS,
+        REMATCH_MON(TROPIUS, TIER3, 3),
         .ability = ABILITY_CHLOROPHYLL,
         .moves = {MOVE_AIR_SLASH, MOVE_ENERGY_BALL, MOVE_BODY_SLAM, MOVE_SYNTHESIS},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER2(3),
-        .species = SPECIES_PELIPPER,
+        REMATCH_MON(PELIPPER, TIER2, 3),
         .ability = ABILITY_DRIZZLE,
         .moves = {MOVE_HURRICANE, MOVE_HYDRO_PUMP, MOVE_TAILWIND, MOVE_ROOST},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_DAMP_ROCK,
         },
         {
-        REMATCH_MON_TIER2(3),
-        .species = SPECIES_SWELLOW,
+        REMATCH_MON(SWELLOW, TIER2, 3),
         .ability = ABILITY_SCRAPPY,
         .moves = {MOVE_BRAVE_BIRD, MOVE_ENDEAVOR, MOVE_REVERSAL, MOVE_DOUBLE_TEAM},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SHARP_BEAK,
         },
         {
-        REMATCH_ACE(3),
-        .species = SPECIES_ALTARIA,
+        REMATCH_MON(ALTARIA, ACE, 3),
         .moves = {MOVE_AIR_SLASH, MOVE_DRAGON_PULSE, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -2208,52 +2002,43 @@
 
 [TRAINER_WINONA_4] =
 {
-    .trainerName = _("Winona"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_WINONA,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
+    WINONA_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
     .doubleBattle = TRUE,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(4),
-        .species = SPECIES_NINJASK,
+        REMATCH_MON(NINJASK, TIER3, 4),
         .moves = {MOVE_AERIAL_ACE, MOVE_LEECH_LIFE, MOVE_BATON_PASS, MOVE_SWORDS_DANCE},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER3(4),
-        .species = SPECIES_MASQUERAIN,
+        REMATCH_MON(MASQUERAIN, TIER3, 4),
         .moves = {MOVE_AIR_SLASH, MOVE_BUG_BUZZ, MOVE_GIGA_DRAIN, MOVE_QUIVER_DANCE},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER3(4),
-        .species = SPECIES_TROPIUS,
+        REMATCH_MON(TROPIUS, TIER3, 4),
         .ability = ABILITY_CHLOROPHYLL,
         .moves = {MOVE_AIR_SLASH, MOVE_ENERGY_BALL, MOVE_BODY_SLAM, MOVE_SYNTHESIS},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER2(4),
-        .species = SPECIES_PELIPPER,
+        REMATCH_MON(PELIPPER, TIER2, 4),
         .ability = ABILITY_DRIZZLE,
         .moves = {MOVE_HURRICANE, MOVE_HYDRO_PUMP, MOVE_TAILWIND, MOVE_ROOST},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_DAMP_ROCK,
         },
         {
-        REMATCH_MON_TIER2(4),
-        .species = SPECIES_SWELLOW,
+        REMATCH_MON(SWELLOW, TIER2, 4),
         .ability = ABILITY_SCRAPPY,
         .moves = {MOVE_BRAVE_BIRD, MOVE_ENDEAVOR, MOVE_REVERSAL, MOVE_DOUBLE_TEAM},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SHARP_BEAK,
         },
         {
-        REMATCH_ACE(4),
-        .species = SPECIES_ALTARIA,
+        REMATCH_MON(ALTARIA, ACE, 4),
         .moves = {MOVE_AIR_SLASH, MOVE_DRAGON_PULSE, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -2263,52 +2048,43 @@
 
 [TRAINER_WINONA_5] =
 {
-    .trainerName = _("Winona"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_WINONA,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
+    WINONA_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
     .doubleBattle = TRUE,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(5),
-        .species = SPECIES_NINJASK,
+        REMATCH_MON(NINJASK, TIER3, 5),
         .moves = {MOVE_ACROBATICS, MOVE_LEECH_LIFE, MOVE_BATON_PASS, MOVE_SWORDS_DANCE},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER3(5),
-        .species = SPECIES_MASQUERAIN,
+        REMATCH_MON(MASQUERAIN, TIER3, 5),
         .moves = {MOVE_AIR_SLASH, MOVE_BUG_BUZZ, MOVE_GIGA_DRAIN, MOVE_QUIVER_DANCE},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER3(5),
-        .species = SPECIES_TROPIUS,
+        REMATCH_MON(TROPIUS, TIER3, 5),
         .ability = ABILITY_CHLOROPHYLL,
         .moves = {MOVE_AIR_SLASH, MOVE_ENERGY_BALL, MOVE_BODY_SLAM, MOVE_SYNTHESIS},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER2(5),
-        .species = SPECIES_PELIPPER,
+        REMATCH_MON(PELIPPER, TIER2, 5),
         .ability = ABILITY_DRIZZLE,
         .moves = {MOVE_HURRICANE, MOVE_HYDRO_PUMP, MOVE_TAILWIND, MOVE_ROOST},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_DAMP_ROCK,
         },
         {
-        REMATCH_MON_TIER2(5),
-        .species = SPECIES_SWELLOW,
+        REMATCH_MON(SWELLOW, TIER2, 5),
         .ability = ABILITY_SCRAPPY,
         .moves = {MOVE_BRAVE_BIRD, MOVE_ENDEAVOR, MOVE_REVERSAL, MOVE_DOUBLE_TEAM},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SHARP_BEAK,
         },
         {
-        REMATCH_ACE(5),
-        .species = SPECIES_ALTARIA,
+        REMATCH_MON(ALTARIA, ACE, 5),
         .moves = {MOVE_AIR_SLASH, MOVE_DRAGON_PULSE, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SITRUS_BERRY,
@@ -2316,15 +2092,16 @@
     },
 },
 
+#define TATE_AND_LIZA_INFO                                   \
+    LEADER_INFO(TATE_AND_LIZA),                              \
+    .trainerName = _("Tate&Liza"),                           \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE, \
+    .doubleBattle = TRUE
+
 [TRAINER_TATE_AND_LIZA_1] =
 {
-    .trainerName = _("Tate&Liza"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+    TATE_AND_LIZA_INFO,
     .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_HYPER_POTION},
-    .doubleBattle = TRUE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
@@ -2360,42 +2137,32 @@
 
 [TRAINER_TATE_AND_LIZA_2] =
 {
-    .trainerName = _("Tate&Liza"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+    TATE_AND_LIZA_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(2),
-        .species = SPECIES_CHIMECHO,
+        REMATCH_MON(CHIMECHO, TIER3, 2),
         .moves = {MOVE_PSYCHIC, MOVE_HEAL_PULSE, MOVE_LIGHT_SCREEN, MOVE_HEAL_BELL},
         .gender = TRAINER_MON_MALE,
         },
         {
-        REMATCH_MON_TIER2(2),
-        .species = SPECIES_CLAYDOL,
+        REMATCH_MON(CLAYDOL, TIER2, 2),
         .moves = {MOVE_PSYCHIC, MOVE_EARTH_POWER, MOVE_POWER_SPLIT, MOVE_COSMIC_POWER},
         },
         {
-        REMATCH_MON_TIER2(2),
-        .species = SPECIES_GRUMPIG,
+        REMATCH_MON(GRUMPIG, TIER2, 2),
         .ability = ABILITY_THICK_FAT,
         .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_CONFUSE_RAY, MOVE_MAGIC_COAT},
         .gender = TRAINER_MON_MALE,
         },
         {
-        REMATCH_ACE(2),
-        .species = SPECIES_LUNATONE,
+        REMATCH_MON(LUNATONE, ACE, 2),
         .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_ICY_WIND, MOVE_COSMIC_POWER},
         .heldItem = ITEM_SITRUS_BERRY,
         },
         {
-        REMATCH_ACE(2),
-        .species = SPECIES_SOLROCK,
+        REMATCH_MON(SOLROCK, ACE, 2),
         .moves = {MOVE_PSYCHIC, MOVE_ROCK_SLIDE, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN},
         .heldItem = ITEM_SITRUS_BERRY,
         }
@@ -2404,49 +2171,38 @@
 
 [TRAINER_TATE_AND_LIZA_3] =
 {
-    .trainerName = _("Tate&Liza"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+    TATE_AND_LIZA_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(3),
-        .species = SPECIES_GARDEVOIR,
+        REMATCH_MON(GARDEVOIR, TIER3, 3),
         .ability = ABILITY_SYNCHRONIZE,
         .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_MYSTICAL_FIRE, MOVE_CALM_MIND},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER3(3),
-        .species = SPECIES_CHIMECHO,
+        REMATCH_MON(CHIMECHO, TIER3, 3),
         .moves = {MOVE_PSYCHIC, MOVE_HEAL_PULSE, MOVE_LIGHT_SCREEN, MOVE_HEAL_BELL},
         .gender = TRAINER_MON_MALE,
         },
         {
-        REMATCH_MON_TIER2(3),
-        .species = SPECIES_CLAYDOL,
+        REMATCH_MON(CLAYDOL, TIER2, 3),
         .moves = {MOVE_PSYCHIC, MOVE_EARTH_POWER, MOVE_POWER_SPLIT, MOVE_COSMIC_POWER},
         },
         {
-        REMATCH_MON_TIER2(3),
-        .species = SPECIES_GRUMPIG,
+        REMATCH_MON(GRUMPIG, TIER2, 3),
         .ability = ABILITY_THICK_FAT,
         .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_CONFUSE_RAY, MOVE_MAGIC_COAT},
         .gender = TRAINER_MON_MALE,
         },
         {
-        REMATCH_ACE(3),
-        .species = SPECIES_LUNATONE,
+        REMATCH_MON(LUNATONE, ACE, 3),
         .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_ICY_WIND, MOVE_COSMIC_POWER},
         .heldItem = ITEM_SITRUS_BERRY,
         },
         {
-        REMATCH_ACE(3),
-        .species = SPECIES_SOLROCK,
+        REMATCH_MON(SOLROCK, ACE, 3),
         .moves = {MOVE_PSYCHIC, MOVE_ROCK_SLIDE, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN},
         .heldItem = ITEM_SITRUS_BERRY,
         }
@@ -2455,49 +2211,38 @@
 
 [TRAINER_TATE_AND_LIZA_4] =
 {
-    .trainerName = _("Tate&Liza"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+    TATE_AND_LIZA_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(4),
-        .species = SPECIES_GARDEVOIR,
+        REMATCH_MON(GARDEVOIR, TIER3, 4),
         .ability = ABILITY_SYNCHRONIZE,
         .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_MYSTICAL_FIRE, MOVE_CALM_MIND},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER3(4),
-        .species = SPECIES_CHIMECHO,
+        REMATCH_MON(CHIMECHO, TIER3, 4),
         .moves = {MOVE_PSYCHIC, MOVE_HEAL_PULSE, MOVE_LIGHT_SCREEN, MOVE_HEAL_BELL},
         .gender = TRAINER_MON_MALE,
         },
         {
-        REMATCH_MON_TIER2(4),
-        .species = SPECIES_CLAYDOL,
+        REMATCH_MON(CLAYDOL, TIER2, 4),
         .moves = {MOVE_PSYCHIC, MOVE_EARTH_POWER, MOVE_POWER_SPLIT, MOVE_COSMIC_POWER},
         },
         {
-        REMATCH_MON_TIER2(4),
-        .species = SPECIES_GRUMPIG,
+        REMATCH_MON(GRUMPIG, TIER2, 4),
         .ability = ABILITY_THICK_FAT,
         .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_CONFUSE_RAY, MOVE_MAGIC_COAT},
         .gender = TRAINER_MON_MALE,
         },
         {
-        REMATCH_ACE(4),
-        .species = SPECIES_LUNATONE,
+        REMATCH_MON(LUNATONE, ACE, 4),
         .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_ICY_WIND, MOVE_COSMIC_POWER},
         .heldItem = ITEM_SITRUS_BERRY,
         },
         {
-        REMATCH_ACE(4),
-        .species = SPECIES_SOLROCK,
+        REMATCH_MON(SOLROCK, ACE, 4),
         .moves = {MOVE_PSYCHIC, MOVE_ROCK_SLIDE, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN},
         .heldItem = ITEM_SITRUS_BERRY,
         }
@@ -2506,63 +2251,53 @@
 
 [TRAINER_TATE_AND_LIZA_5] =
 {
-    .trainerName = _("Tate&Liza"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+    TATE_AND_LIZA_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(5),
-        .species = SPECIES_GARDEVOIR,
+        REMATCH_MON(GARDEVOIR, TIER3, 5),
         .ability = ABILITY_SYNCHRONIZE,
         .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_MYSTICAL_FIRE, MOVE_CALM_MIND},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        REMATCH_MON_TIER3(5),
-        .species = SPECIES_CHIMECHO,
+        REMATCH_MON(CHIMECHO, TIER3, 5),
         .moves = {MOVE_PSYCHIC, MOVE_HEAL_PULSE, MOVE_LIGHT_SCREEN, MOVE_HEAL_BELL},
         .gender = TRAINER_MON_MALE,
         },
         {
-        REMATCH_MON_TIER2(5),
-        .species = SPECIES_CLAYDOL,
+        REMATCH_MON(CLAYDOL, TIER2, 5),
         .moves = {MOVE_PSYCHIC, MOVE_EARTH_POWER, MOVE_POWER_SPLIT, MOVE_COSMIC_POWER},
         },
         {
-        REMATCH_MON_TIER2(5),
-        .species = SPECIES_GRUMPIG,
+        REMATCH_MON(GRUMPIG, TIER2, 5),
         .ability = ABILITY_THICK_FAT,
         .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_CONFUSE_RAY, MOVE_MAGIC_COAT},
         .gender = TRAINER_MON_MALE,
         },
         {
-        REMATCH_ACE(5),
-        .species = SPECIES_LUNATONE,
+        REMATCH_MON(LUNATONE, ACE, 5),
         .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_ICY_WIND, MOVE_COSMIC_POWER},
         .heldItem = ITEM_SITRUS_BERRY,
         },
         {
-        REMATCH_ACE(5),
-        .species = SPECIES_SOLROCK,
+        REMATCH_MON(SOLROCK, ACE, 5),
         .moves = {MOVE_PSYCHIC, MOVE_ROCK_SLIDE, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN},
         .heldItem = ITEM_SITRUS_BERRY,
         }
     },
 },
 
+#define JUAN_INFO             \
+    LEADER_INFO(JUAN),        \
+    .trainerName = _("Juan"), \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE
+
 [TRAINER_JUAN_1] =
 {
-    .trainerName = _("Juan"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_JUAN,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    JUAN_INFO,
     .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
@@ -2601,40 +2336,31 @@
 
 [TRAINER_JUAN_2] =
 {
-    .trainerName = _("Juan"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_JUAN,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    JUAN_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
     .doubleBattle = TRUE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(2),
-        .species = SPECIES_CASTFORM,
+        REMATCH_MON(CASTFORM, TIER3, 2),
         .moves = {MOVE_WEATHER_BALL, MOVE_THUNDER, MOVE_HURRICANE, MOVE_RAIN_DANCE},
         },
         {
-        REMATCH_MON_TIER3(2),
-        .species = SPECIES_HUNTAIL,
+        REMATCH_MON(HUNTAIL, TIER3, 2),
         .moves = {MOVE_AQUA_TAIL, MOVE_CRUNCH, MOVE_BATON_PASS, MOVE_COIL},
         },
         {
-        REMATCH_MON_TIER2(2),
-        .species = SPECIES_CRAWDAUNT,
+        REMATCH_MON(CRAWDAUNT, TIER2, 2),
         .moves = {MOVE_CRABHAMMER, MOVE_CRUNCH, MOVE_ENDEAVOR, MOVE_SWORDS_DANCE},
         .heldItem = ITEM_MYSTIC_WATER,
         },
         {
-        REMATCH_MON_TIER2(2),
-        .species = SPECIES_LUVDISC,
+        REMATCH_MON(LUVDISC, TIER2, 2),
         .moves = {MOVE_HYDRO_PUMP, MOVE_WISH, MOVE_BABY_DOLL_EYES, MOVE_RAIN_DANCE},
         .heldItem = ITEM_DAMP_ROCK,
         },
         {
-        REMATCH_ACE(2),
-        .species = SPECIES_WHISCASH,
+        REMATCH_MON(WHISCASH, ACE, 2),
         .moves = {MOVE_AQUA_TAIL, MOVE_EARTHQUAKE, MOVE_ZEN_HEADBUTT, MOVE_DRAGON_DANCE},
         .heldItem = ITEM_SITRUS_BERRY,
         }
@@ -2643,45 +2369,35 @@
 
 [TRAINER_JUAN_3] =
 {
-    .trainerName = _("Juan"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_JUAN,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    JUAN_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
     .doubleBattle = TRUE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(3),
-        .species = SPECIES_SWAMPERT,
+        REMATCH_MON(SWAMPERT, TIER3, 3),
         .moves = {MOVE_LIQUIDATION, MOVE_EARTHQUAKE, MOVE_HAMMER_ARM, MOVE_ROCK_SLIDE},
         },
         {
-        REMATCH_MON_TIER3(3),
-        .species = SPECIES_CASTFORM,
+        REMATCH_MON(CASTFORM, TIER3, 3),
         .moves = {MOVE_WEATHER_BALL, MOVE_THUNDER, MOVE_HURRICANE, MOVE_RAIN_DANCE},
         },
         {
-        REMATCH_MON_TIER3(3),
-        .species = SPECIES_HUNTAIL,
+        REMATCH_MON(HUNTAIL, TIER3, 3),
         .moves = {MOVE_AQUA_TAIL, MOVE_CRUNCH, MOVE_BATON_PASS, MOVE_COIL},
         },
         {
-        REMATCH_MON_TIER2(3),
-        .species = SPECIES_CRAWDAUNT,
+        REMATCH_MON(CRAWDAUNT, TIER2, 3),
         .moves = {MOVE_CRABHAMMER, MOVE_CRUNCH, MOVE_ENDEAVOR, MOVE_SWORDS_DANCE},
         .heldItem = ITEM_MYSTIC_WATER,
         },
         {
-        REMATCH_MON_TIER2(3),
-        .species = SPECIES_LUVDISC,
+        REMATCH_MON(LUVDISC, TIER2, 3),
         .moves = {MOVE_HYDRO_PUMP, MOVE_WISH, MOVE_BABY_DOLL_EYES, MOVE_RAIN_DANCE},
         .heldItem = ITEM_DAMP_ROCK,
         },
         {
-        REMATCH_ACE(3),
-        .species = SPECIES_WHISCASH,
+        REMATCH_MON(WHISCASH, ACE, 3),
         .moves = {MOVE_AQUA_TAIL, MOVE_EARTHQUAKE, MOVE_ZEN_HEADBUTT, MOVE_DRAGON_DANCE},
         .heldItem = ITEM_SITRUS_BERRY,
         }
@@ -2690,45 +2406,35 @@
 
 [TRAINER_JUAN_4] =
 {
-    .trainerName = _("Juan"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_JUAN,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    JUAN_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
     .doubleBattle = TRUE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(4),
-        .species = SPECIES_SWAMPERT,
+        REMATCH_MON(SWAMPERT, TIER3, 4),
         .moves = {MOVE_LIQUIDATION, MOVE_EARTHQUAKE, MOVE_HAMMER_ARM, MOVE_ROCK_SLIDE},
         },
         {
-        REMATCH_MON_TIER3(4),
-        .species = SPECIES_CASTFORM,
+        REMATCH_MON(CASTFORM, TIER3, 4),
         .moves = {MOVE_WEATHER_BALL, MOVE_THUNDER, MOVE_HURRICANE, MOVE_RAIN_DANCE},
         },
         {
-        REMATCH_MON_TIER3(4),
-        .species = SPECIES_HUNTAIL,
+        REMATCH_MON(HUNTAIL, TIER3, 4),
         .moves = {MOVE_AQUA_TAIL, MOVE_CRUNCH, MOVE_BATON_PASS, MOVE_COIL},
         },
         {
-        REMATCH_MON_TIER2(4),
-        .species = SPECIES_CRAWDAUNT,
+        REMATCH_MON(CRAWDAUNT, TIER2, 4),
         .moves = {MOVE_CRABHAMMER, MOVE_CRUNCH, MOVE_ENDEAVOR, MOVE_SWORDS_DANCE},
         .heldItem = ITEM_MYSTIC_WATER,
         },
         {
-        REMATCH_MON_TIER2(4),
-        .species = SPECIES_LUVDISC,
+        REMATCH_MON(LUVDISC, TIER2, 4),
         .moves = {MOVE_HYDRO_PUMP, MOVE_WISH, MOVE_BABY_DOLL_EYES, MOVE_RAIN_DANCE},
         .heldItem = ITEM_DAMP_ROCK,
         },
         {
-        REMATCH_ACE(4),
-        .species = SPECIES_WHISCASH,
+        REMATCH_MON(WHISCASH, ACE, 4),
         .moves = {MOVE_AQUA_TAIL, MOVE_EARTHQUAKE, MOVE_ZEN_HEADBUTT, MOVE_DRAGON_DANCE},
         .heldItem = ITEM_SITRUS_BERRY,
         }
@@ -2737,45 +2443,35 @@
 
 [TRAINER_JUAN_5] =
 {
-    .trainerName = _("Juan"),
-    .trainerClass = TRAINER_CLASS_LEADER,
-    .trainerPic = TRAINER_PIC_LEADER_JUAN,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    JUAN_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
     .doubleBattle = TRUE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        REMATCH_MON_TIER3(5),
-        .species = SPECIES_SWAMPERT,
+        REMATCH_MON(SWAMPERT, TIER3, 5),
         .moves = {MOVE_LIQUIDATION, MOVE_EARTHQUAKE, MOVE_HAMMER_ARM, MOVE_ROCK_SLIDE},
         },
         {
-        REMATCH_MON_TIER3(5),
-        .species = SPECIES_CASTFORM,
+        REMATCH_MON(CASTFORM, TIER3, 5),
         .moves = {MOVE_WEATHER_BALL, MOVE_THUNDER, MOVE_HURRICANE, MOVE_RAIN_DANCE},
         },
         {
-        REMATCH_MON_TIER3(5),
-        .species = SPECIES_HUNTAIL,
+        REMATCH_MON(HUNTAIL, TIER3, 5),
         .moves = {MOVE_AQUA_TAIL, MOVE_CRUNCH, MOVE_BATON_PASS, MOVE_COIL},
         },
         {
-        REMATCH_MON_TIER2(5),
-        .species = SPECIES_CRAWDAUNT,
+        REMATCH_MON(CRAWDAUNT, TIER2, 5),
         .moves = {MOVE_CRABHAMMER, MOVE_CRUNCH, MOVE_ENDEAVOR, MOVE_SWORDS_DANCE},
         .heldItem = ITEM_MYSTIC_WATER,
         },
         {
-        REMATCH_MON_TIER2(5),
-        .species = SPECIES_LUVDISC,
+        REMATCH_MON(LUVDISC, TIER2, 5),
         .moves = {MOVE_HYDRO_PUMP, MOVE_WISH, MOVE_BABY_DOLL_EYES, MOVE_RAIN_DANCE},
         .heldItem = ITEM_DAMP_ROCK,
         },
         {
-        REMATCH_ACE(5),
-        .species = SPECIES_WHISCASH,
+        REMATCH_MON(WHISCASH, ACE, 5),
         .moves = {MOVE_AQUA_TAIL, MOVE_EARTHQUAKE, MOVE_ZEN_HEADBUTT, MOVE_DRAGON_DANCE},
         .heldItem = ITEM_SITRUS_BERRY,
         }
@@ -2791,7 +2487,7 @@
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
     .mugshotEnabled = TRUE,
     .mugshotColor = MUGSHOT_COLOR_PURPLE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SETUP_FIRST_TURN,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
@@ -3050,7 +2746,7 @@
         .species = SPECIES_SKARMORY,
         .ability = ABILITY_STURDY,
         .nature = NATURE_IMPISH,
-        .ev = TRAINER_PARTY_EVS(1, 63, 63, 0, 0, 0),
+        .ev = EV_SPREAD_ATK_DEF_HP,
         .iv = PERFECT_IVS,
         .moves = {MOVE_STEEL_WING, MOVE_DRILL_PECK, MOVE_BODY_PRESS, MOVE_SPIKES},
         .gender = TRAINER_MON_MALE,
@@ -3093,7 +2789,7 @@
         .species = SPECIES_AGGRON,
         .ability = ABILITY_STURDY,
         .nature = NATURE_IMPISH,
-        .ev = TRAINER_PARTY_EVS(1, 63, 63, 0, 0, 0),
+        .ev = EV_SPREAD_ATK_DEF_HP,
         .iv = PERFECT_IVS,
         .moves = {MOVE_IRON_HEAD, MOVE_ROCK_SLIDE, MOVE_BODY_PRESS, MOVE_IRON_DEFENSE},
         .gender = TRAINER_MON_MALE,
@@ -3105,7 +2801,7 @@
         .species = SPECIES_METAGROSS,
         .ability = ABILITY_CLEAR_BODY,
         .nature = NATURE_ADAMANT,
-        .ev = TRAINER_PARTY_EVS(1, 63, 63, 0, 0, 0),
+        .ev = EV_SPREAD_ATK_DEF_HP,
         .iv = PERFECT_IVS,
         .moves = {MOVE_METEOR_MASH, MOVE_PSYCHIC_FANGS, MOVE_EARTHQUAKE, MOVE_BULLET_PUNCH},
         .heldItem = ITEM_METAGROSSITE,
@@ -3255,9 +2951,9 @@
     TRAINER_CLASS_PIC(LADY), \
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE
 
-#define TWINS_INFO                                          \
-    TRAINER_CLASS_PIC(TWINS),                               \
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS, \
+#define TWINS_INFO                                                             \
+    TRAINER_CLASS_PIC(TWINS),                                                  \
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS, \
     .doubleBattle = TRUE
 
 #define HIKER_INFO            \
@@ -3434,7 +3130,7 @@
         {
         .lvl = REMATCH_5_LEVEL_1,
         .species = SPECIES_LINOONE,
-        .ev = TRAINER_PARTY_EVS(1, 63, 0, 63, 0, 0),
+        .ev = EV_SPREAD_ATK_SPE_HP,
         .iv = PERFECT_IVS,
         .moves = {MOVE_BODY_SLAM, MOVE_PLAY_ROUGH, MOVE_PIN_MISSILE, MOVE_HONE_CLAWS},
         .heldItem = ITEM_FIGY_BERRY,
@@ -4613,6 +4309,311 @@
         .species = SPECIES_CARVANHA,
         .moves = {MOVE_AQUA_JET, MOVE_RAGE, MOVE_LEER, MOVE_SCARY_FACE},
         .gender = TRAINER_MON_MALE,
+        }
+    },
+},
+
+[TRAINER_NED] =
+{
+    .trainerName = _("Ned"),
+    FISHERMAN_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 14,
+        .species = SPECIES_TENTACOOL,
+        .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
+        }
+    },
+},
+
+#define ELLIOT_INFO             \
+    .trainerName = _("Elliot"), \
+    FISHERMAN_INFO,             \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT
+
+#define ELLIOT_WAILMER_BARBOACH   \
+    .ability = ABILITY_OBLIVIOUS, \
+    .gender = TRAINER_MON_MALE
+
+#define ELLIOT_TENTACOOL           \
+    .ability = ABILITY_CLEAR_BODY, \
+    .gender = TRAINER_MON_MALE
+
+[TRAINER_ELLIOT_1] =
+{
+    ELLIOT_INFO,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 13,
+        .species = SPECIES_MAGIKARP,
+        .gender = TRAINER_MON_MALE,
+        },
+        {
+        .lvl = 13,
+        .species = SPECIES_TENTACOOL,
+        ELLIOT_TENTACOOL,
+        },
+        {
+        .lvl = 13,
+        .species = SPECIES_WAILMER,
+        ELLIOT_WAILMER_BARBOACH,
+        }
+    },
+},
+
+[TRAINER_ELLIOT_2] =
+{
+    ELLIOT_INFO,
+    .partySize = 5,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = REMATCH_2_LEVEL_5,
+        .species = SPECIES_BARBOACH,
+        .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
+        ELLIOT_WAILMER_BARBOACH,
+        },
+        {
+        .lvl = REMATCH_2_LEVEL_5,
+        .species = SPECIES_CARVANHA,
+        .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
+        .gender = TRAINER_MON_MALE,
+        },
+        {
+        .lvl = REMATCH_2_LEVEL_5,
+        .species = SPECIES_GYARADOS,
+        .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
+        .gender = TRAINER_MON_MALE,
+        },
+        {
+        .lvl = REMATCH_2_LEVEL_5,
+        .species = SPECIES_TENTACRUEL,
+        .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
+        ELLIOT_TENTACOOL,
+        },
+        {
+        .lvl = REMATCH_2_LEVEL_5,
+        .species = SPECIES_WAILMER,
+        .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
+        ELLIOT_WAILMER_BARBOACH,
+        }
+    },
+},
+
+[TRAINER_ELLIOT_3] =
+{
+    ELLIOT_INFO,
+    .partySize = 5,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = REMATCH_3_LEVEL_5,
+        .species = SPECIES_WHISCASH,
+        .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
+        ELLIOT_WAILMER_BARBOACH,
+        },
+        {
+        .lvl = REMATCH_3_LEVEL_5,
+        .species = SPECIES_SHARPEDO,
+        .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
+        .gender = TRAINER_MON_MALE,
+        },
+        {
+        .lvl = REMATCH_3_LEVEL_5,
+        .species = SPECIES_GYARADOS,
+        .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
+        .gender = TRAINER_MON_MALE,
+        },
+        {
+        .lvl = REMATCH_3_LEVEL_5,
+        .species = SPECIES_TENTACRUEL,
+        .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
+        ELLIOT_TENTACOOL,
+        },
+        {
+        .lvl = REMATCH_3_LEVEL_5,
+        .species = SPECIES_WAILMER,
+        .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
+        ELLIOT_WAILMER_BARBOACH,
+        }
+    },
+},
+
+[TRAINER_ELLIOT_4] =
+{
+    ELLIOT_INFO,
+    .partySize = 5,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = REMATCH_4_LEVEL_5,
+        .species = SPECIES_WHISCASH,
+        .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
+        ELLIOT_WAILMER_BARBOACH,
+        },
+        {
+        .lvl = REMATCH_4_LEVEL_5,
+        .species = SPECIES_SHARPEDO,
+        .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
+        .gender = TRAINER_MON_MALE,
+        },
+        {
+        .lvl = REMATCH_4_LEVEL_5,
+        .species = SPECIES_GYARADOS,
+        .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
+        .gender = TRAINER_MON_MALE,
+        },
+        {
+        .lvl = REMATCH_4_LEVEL_5,
+        .species = SPECIES_TENTACRUEL,
+        .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
+        ELLIOT_TENTACOOL,
+        },
+        {
+        .lvl = REMATCH_4_LEVEL_5,
+        .species = SPECIES_WAILMER,
+        .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
+        ELLIOT_WAILMER_BARBOACH,
+        }
+    },
+},
+
+[TRAINER_ELLIOT_5] =
+{
+    ELLIOT_INFO,
+    .partySize = 5,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = REMATCH_5_LEVEL_5,
+        .species = SPECIES_WHISCASH,
+        .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
+        ELLIOT_WAILMER_BARBOACH,
+        },
+        {
+        .lvl = REMATCH_5_LEVEL_5,
+        .species = SPECIES_SHARPEDO,
+        .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
+        .gender = TRAINER_MON_MALE,
+        },
+        {
+        .lvl = REMATCH_5_LEVEL_5,
+        .species = SPECIES_GYARADOS,
+        .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
+        .gender = TRAINER_MON_MALE,
+        },
+        {
+        .lvl = REMATCH_5_LEVEL_5,
+        .species = SPECIES_TENTACRUEL,
+        .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
+        ELLIOT_TENTACOOL,
+        },
+        {
+        .lvl = REMATCH_5_LEVEL_5,
+        .species = SPECIES_WAILORD,
+        .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
+        ELLIOT_WAILMER_BARBOACH,
+        }
+    },
+},
+
+[TRAINER_LAURA] =
+{
+    .trainerName = _("Laura"),
+    .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
+    .trainerPic = TRAINER_PIC_BATTLE_GIRL,
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 16,
+        .species = SPECIES_COMBUSKEN,
+        .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        }
+    },
+},
+
+[TRAINER_LILITH] =
+{
+    .trainerName = _("Lilith"),
+    .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
+    .trainerPic = TRAINER_PIC_BATTLE_GIRL,
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 15,
+        .species = SPECIES_MEDITITE,
+        .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        }
+    },
+},
+
+[TRAINER_BRENDEN] =
+{
+    .trainerName = _("Brenden"),
+    .trainerClass = TRAINER_CLASS_SAILOR,
+    .trainerPic = TRAINER_PIC_SAILOR,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 13,
+        .species = SPECIES_HERACROSS,
+        .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
+        }
+    },
+},
+
+[TRAINER_TAKAO] =
+{
+    .trainerName = _("Takao"),
+    .trainerClass = TRAINER_CLASS_BLACK_BELT,
+    .trainerPic = TRAINER_PIC_BLACK_BELT,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 15,
+        .species = SPECIES_MACHOP,
+        .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
+        }
+    },
+},
+
+[TRAINER_CRISTIAN] =
+{
+    .trainerName = _("Cristian"),
+    .trainerClass = TRAINER_CLASS_BLACK_BELT,
+    .trainerPic = TRAINER_PIC_BLACK_BELT,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 15,
+        .species = SPECIES_MAKUHITA,
+        .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
+        }
+    },
+},
+
+[TRAINER_JOCELYN] =
+{
+    .trainerName = _("Jocelyn"),
+    .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
+    .trainerPic = TRAINER_PIC_BATTLE_GIRL,
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 15,
+        .species = SPECIES_MEDITITE,
+        .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
         }
     },
 },
@@ -6169,31 +6170,31 @@
         {
         .lvl = 44,
         .species = SPECIES_SWALOT,
-        .ev = TRAINER_PARTY_EVS(1, 63, 0, 63, 0, 0),
+        .ev = EV_SPREAD_ATK_SPE_HP,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         },
         {
         .lvl = 44,
         .species = SPECIES_DODRIO,
-        .ev = TRAINER_PARTY_EVS(1, 63, 0, 63, 0, 0),
+        .ev = EV_SPREAD_ATK_SPE_HP,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         },
         {
         .lvl = 44,
         .species = SPECIES_ALAKAZAM,
-        .ev = TRAINER_PARTY_EVS(1, 0, 0, 63, 63, 0),
+        .ev = EV_SPREAD_SPA_SPE_HP,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         },
         {
         .lvl = 44,
         .species = SPECIES_ELECTRODE,
-        .ev = TRAINER_PARTY_EVS(1, 0, 0, 63, 63, 0),
+        .ev = EV_SPREAD_SPA_SPE_HP,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         },
         {
         .lvl = 44,
         .species = SPECIES_SHIFTRY,
-        .ev = TRAINER_PARTY_EVS(1, 63, 0, 63, 0, 0),
+        .ev = EV_SPREAD_ATK_SPE_HP,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         }
     },
@@ -7988,23 +7989,6 @@
         .lvl = 42,
         .species = SPECIES_SHARPEDO,
         .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
-        }
-    },
-},
-
-[TRAINER_TAKAO] =
-{
-    .trainerName = _("Takao"),
-    .trainerClass = TRAINER_CLASS_BLACK_BELT,
-    .trainerPic = TRAINER_PIC_BLACK_BELT,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 15,
-        .species = SPECIES_MACHOP,
-        .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
         }
     },
 },
@@ -10034,14 +10018,14 @@
         {
         .lvl = 19,
         .species = SPECIES_TAILLOW,
-        .ev = TRAINER_PARTY_EVS(1, 63, 0, 63, 0, 0),
+        .ev = EV_SPREAD_ATK_SPE_HP,
         .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
         .heldItem = ITEM_ORAN_BERRY
         },
         {
         .lvl = 19,
         .species = SPECIES_ZIGZAGOON,
-        .ev = TRAINER_PARTY_EVS(1, 63, 0, 63, 0, 0),
+        .ev = EV_SPREAD_ATK_SPE_HP,
         .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
         .heldItem = ITEM_ORAN_BERRY
         }
@@ -10193,7 +10177,7 @@
         {
         .lvl = 20,
         .species = SPECIES_ROSELIA,
-        .ev = TRAINER_PARTY_EVS(1, 0, 0, 63, 63, 0),
+        .ev = EV_SPREAD_SPA_SPE_HP,
         .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
         .heldItem = ITEM_ORAN_BERRY
         }
@@ -10466,7 +10450,7 @@
         {
         .lvl = 21,
         .species = SPECIES_MEDITITE,
-        .ev = TRAINER_PARTY_EVS(1, 63, 0, 63, 0, 0),
+        .ev = EV_SPREAD_ATK_SPE_HP,
         .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
         .moves = {MOVE_HIGH_JUMP_KICK, MOVE_MEDITATE, MOVE_PSYBEAM, MOVE_DETECT}
         }
@@ -10763,43 +10747,6 @@
     },
 },
 
-[TRAINER_ELLIOT_1] =
-{
-    .trainerName = _("Elliot"),
-    FISHERMAN_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 12,
-        .species = SPECIES_MAGIKARP,
-        },
-        {
-        .lvl = 12,
-        .species = SPECIES_TENTACOOL,
-        },
-        {
-        .lvl = 14,
-        .species = SPECIES_WAILMER,
-        }
-    },
-},
-
-[TRAINER_NED] =
-{
-    .trainerName = _("Ned"),
-    FISHERMAN_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 14,
-        .species = SPECIES_TENTACOOL,
-        .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
-        }
-    },
-},
-
 [TRAINER_DALE] =
 {
     .trainerName = _("Dale"),
@@ -10888,146 +10835,6 @@
         .lvl = 29,
         .species = SPECIES_TENTACRUEL,
         .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
-        }
-    },
-},
-
-[TRAINER_ELLIOT_2] =
-{
-    .trainerName = _("Elliot"),
-    FISHERMAN_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 5,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 31,
-        .species = SPECIES_BARBOACH,
-        .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
-        },
-        {
-        .lvl = 31,
-        .species = SPECIES_CARVANHA,
-        .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
-        },
-        {
-        .lvl = 31,
-        .species = SPECIES_GYARADOS,
-        .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
-        },
-        {
-        .lvl = 31,
-        .species = SPECIES_TENTACRUEL,
-        .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
-        },
-        {
-        .lvl = 31,
-        .species = SPECIES_WAILMER,
-        .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
-        }
-    },
-},
-
-[TRAINER_ELLIOT_3] =
-{
-    .trainerName = _("Elliot"),
-    FISHERMAN_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 5,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = REMATCH_3_LEVEL_5,
-        .species = SPECIES_WHISCASH,
-        .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
-        },
-        {
-        .lvl = REMATCH_3_LEVEL_5,
-        .species = SPECIES_SHARPEDO,
-        .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
-        },
-        {
-        .lvl = REMATCH_3_LEVEL_5,
-        .species = SPECIES_GYARADOS,
-        .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
-        },
-        {
-        .lvl = REMATCH_3_LEVEL_5,
-        .species = SPECIES_TENTACRUEL,
-        .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
-        },
-        {
-        .lvl = REMATCH_3_LEVEL_5,
-        .species = SPECIES_WAILMER,
-        .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
-        }
-    },
-},
-
-[TRAINER_ELLIOT_4] =
-{
-    .trainerName = _("Elliot"),
-    FISHERMAN_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 5,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 36,
-        .species = SPECIES_WHISCASH,
-        .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
-        },
-        {
-        .lvl = 36,
-        .species = SPECIES_SHARPEDO,
-        .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
-        },
-        {
-        .lvl = 36,
-        .species = SPECIES_GYARADOS,
-        .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
-        },
-        {
-        .lvl = 36,
-        .species = SPECIES_TENTACRUEL,
-        .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
-        },
-        {
-        .lvl = 36,
-        .species = SPECIES_WAILMER,
-        .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
-        }
-    },
-},
-
-[TRAINER_ELLIOT_5] =
-{
-    .trainerName = _("Elliot"),
-    FISHERMAN_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT,
-    .partySize = 5,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 40,
-        .species = SPECIES_WHISCASH,
-        .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
-        },
-        {
-        .lvl = 40,
-        .species = SPECIES_SHARPEDO,
-        .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
-        },
-        {
-        .lvl = 40,
-        .species = SPECIES_GYARADOS,
-        .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
-        },
-        {
-        .lvl = 40,
-        .species = SPECIES_TENTACRUEL,
-        .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
-        },
-        {
-        .lvl = 40,
-        .species = SPECIES_WAILORD,
-        .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
         }
     },
 },
@@ -12591,40 +12398,6 @@
         .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
         .heldItem = ITEM_SMOKE_BALL,
         .moves = {MOVE_SLUDGE_BOMB, MOVE_SMOKESCREEN, MOVE_POISON_GAS, MOVE_ASSURANCE}
-        }
-    },
-},
-
-[TRAINER_JOCELYN] =
-{
-    .trainerName = _("Jocelyn"),
-    .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
-    .trainerPic = TRAINER_PIC_BATTLE_GIRL,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 16,
-        .species = SPECIES_MEDITITE,
-        .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
-        }
-    },
-},
-
-[TRAINER_LAURA] =
-{
-    .trainerName = _("Laura"),
-    .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
-    .trainerPic = TRAINER_PIC_BATTLE_GIRL,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 16,
-        .species = SPECIES_COMBUSKEN,
-        .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         }
     },
 },
@@ -15378,57 +15151,6 @@
     },
 },
 
-[TRAINER_BRENDEN] =
-{
-    .trainerName = _("Brenden"),
-    .trainerClass = TRAINER_CLASS_SAILOR,
-    .trainerPic = TRAINER_PIC_SAILOR,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 13,
-        .species = SPECIES_HERACROSS,
-        .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-        }
-    },
-},
-
-[TRAINER_LILITH] =
-{
-    .trainerName = _("Lilith"),
-    .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
-    .trainerPic = TRAINER_PIC_BATTLE_GIRL,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 15,
-        .species = SPECIES_MEDITITE,
-        .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
-        }
-    },
-},
-
-[TRAINER_CRISTIAN] =
-{
-    .trainerName = _("Cristian"),
-    .trainerClass = TRAINER_CLASS_BLACK_BELT,
-    .trainerPic = TRAINER_PIC_BLACK_BELT,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 15,
-        .species = SPECIES_MAKUHITA,
-        .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
-        }
-    },
-},
-
 [TRAINER_SYLVIA] =
 {
     .trainerName = _("Sylvia"),
@@ -15913,19 +15635,19 @@
         {
         .lvl = 18,
         .species = SPECIES_NUMEL,
-        .ev = TRAINER_PARTY_EVS(1, 0, 0, 63, 63, 0),
+        .ev = EV_SPREAD_SPA_SPE_HP,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         },
         {
         .lvl = 18,
         .species = SPECIES_SHROOMISH,
-        .ev = TRAINER_PARTY_EVS(1, 63, 0, 63, 0, 0),
+        .ev = EV_SPREAD_ATK_SPE_HP,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         },
         {
         .lvl = 18,
         .species = SPECIES_GOLDEEN,
-        .ev = TRAINER_PARTY_EVS(1, 63, 0, 63, 0, 0),
+        .ev = EV_SPREAD_ATK_SPE_HP,
         .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
         }
     },

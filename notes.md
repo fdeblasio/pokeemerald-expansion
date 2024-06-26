@@ -90,6 +90,38 @@ upcoming
 - Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma. Mega Evo for Houndoom but unsure for Ninetales)
     - Could swap out Huntail for Mega Gyarados and only it and Houndoom get items
 
+### Moves
+- Possible Move Updates:
+    - Infestation: 20->35
+    - Parabolic Charge: 65->75
+    - Poison Sting: 20->40
+    - Poison Fang: 60->65
+- Show the following correct types in summary screen (both existing and new moves) and battle
+    - Weather Ball
+    - Terrain Pulse
+    - Tera Blast
+    - Tera Starstorm
+- Show the following correct damage in summary screen (both existing and new moves) and battle (https://bulbapedia.bulbagarden.net/wiki/Category:Moves_that_have_variable_power and https://bulbapedia.bulbagarden.net/wiki/Category:Moves_that_power_up)
+    - Acrobatics
+    - Weather Ball
+    - Terrain Pulse
+    - Return/Frustration
+    - Flail/Reversal
+    - Water Spout/Eruption/Dragon Energy
+    - Electro Ball
+    - Gyro Ball
+    - Low Kick/Grass Know
+    - ate boosts
+    - Normalize
+    - Tough Claws
+    - Strong Jaw
+    - Iron Fist
+    - Sheer Force
+    - Reckless
+    - Punk Rock
+- Show correct category for Side Shell Arm
+- Show correct accuracy for OHKO moves
+
 ### Field Moves
 - Replace Waterfall with an item, similar to Dive
 - Edit moves that work in field
@@ -137,12 +169,6 @@ upcoming
     - Add new moves to moveStyles (sRequiredMoveCounts)
     - Don't have both Open Level and Level 50 since the Pokémon are rentals anyways?
 - Updated Battle Pyramid wild randomizer
-
-### Possible Move Updates
-- Infestation: 20->35
-- Parabolic Charge: 65->75
-- Poison Sting: 20->40
-- Poison Fang: 60->65
 
 ### Other
 - Prevent Slateport access before Brawly/Steven

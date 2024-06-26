@@ -31,6 +31,7 @@
 #include "text.h"
 #include "util.h"
 #include "window.h"
+#include "constants/abilities.h"
 #include "constants/battle_anim.h"
 #include "constants/battle_move_effects.h"
 #include "constants/battle_partner.h"
@@ -1710,41 +1711,47 @@ static void MoveSelectionDisplayPpNumber(u32 battler)
 static void MoveSelectionDisplayMoveType(u32 battler)
 {
     u8 *txtPtr, *end;
-    u8 type;
-    u32 speciesId;
+    u32 speciesId = gBattleMons[battler].species;
+    u16 holdEffect = GetBattlerHoldEffect(battler, TRUE);
     struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleResources->bufferA[battler][4]);
+    u16 move = moveInfo->moves[gMoveSelectionCursor[battler]];
+    u8 type = gMovesInfo[move].type;
+    u16 effect = gMovesInfo[move].effect;
     txtPtr = StringCopy(gDisplayedStringBattle, gText_MoveInterfaceType);
-    type = gMovesInfo[moveInfo->moves[gMoveSelectionCursor[battler]]].type;
 
-    if (moveInfo->moves[gMoveSelectionCursor[battler]] == MOVE_TERA_BLAST)
+    if (move == MOVE_TERA_BLAST)
     {
         if (IsGimmickSelected(battler, GIMMICK_TERA) || GetActiveGimmick(battler) == GIMMICK_TERA)
             type = GetBattlerTeraType(battler);
     }
-    else if (moveInfo->moves[gMoveSelectionCursor[battler]] == MOVE_IVY_CUDGEL)
+    else if (effect == EFFECT_IVY_CUDGEL)
     {
-        speciesId = gBattleMons[battler].species;
-
         if (speciesId == SPECIES_OGERPON_WELLSPRING || speciesId == SPECIES_OGERPON_WELLSPRING_TERA
             || speciesId == SPECIES_OGERPON_HEARTHFLAME || speciesId == SPECIES_OGERPON_HEARTHFLAME_TERA
             || speciesId == SPECIES_OGERPON_CORNERSTONE || speciesId == SPECIES_OGERPON_CORNERSTONE_TERA)
             type = gBattleMons[battler].types[1];
     }
-    else if (gMovesInfo[moveInfo->moves[gMoveSelectionCursor[battler]]].category == DAMAGE_CATEGORY_STATUS
+    else if (gMovesInfo[move].category == DAMAGE_CATEGORY_STATUS
              && (GetActiveGimmick(battler) == GIMMICK_DYNAMAX || IsGimmickSelected(battler, GIMMICK_DYNAMAX)))
     {
         type = TYPE_NORMAL; // Max Guard is always a Normal-type move
     }
-    else if (moveInfo->moves[gMoveSelectionCursor[battler]] == MOVE_TERA_STARSTORM)
+    else if (effect == EFFECT_TERA_BLAST)
     {
-        if (gBattleMons[battler].species == SPECIES_TERAPAGOS_STELLAR
-        || (IsGimmickSelected(battler, GIMMICK_TERA) && gBattleMons[battler].species == SPECIES_TERAPAGOS_TERASTAL))
+        if (IsGimmickSelected(battler, GIMMICK_TERA) || GetActiveGimmick(battler) == GIMMICK_TERA)
+            type = GetBattlerTeraType(battler);
+            end = StringCopy(txtPtr, gTypesInfo[type].name);
+    }
+    else if (effect == EFFECT_TERA_STARSTORM)
+    {
+        if (speciesId == SPECIES_TERAPAGOS_STELLAR
+        || (IsGimmickSelected(battler, GIMMICK_TERA) && speciesId == SPECIES_TERAPAGOS_TERASTAL))
             type = TYPE_STELLAR;
     }
     else if (P_SHOW_DYNAMIC_TYPES) // Non-vanilla changes to battle UI showing dynamic types
     {
         struct Pokemon *mon = &gPlayerParty[gBattlerPartyIndexes[battler]];
-        type = CheckDynamicMoveType(mon, moveInfo->moves[gMoveSelectionCursor[battler]], battler);
+        type = CheckDynamicMoveType(mon, move, battler);
     }
     end = StringCopy(txtPtr, gTypesInfo[type].name);
 

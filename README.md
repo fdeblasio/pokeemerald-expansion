@@ -364,6 +364,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 ### Abilities:
 - Iron Fist: Punching moves are now boosted by 30% (up from 20%) to match Sheer Force and Tough Claws
+- Normalize: Boost: 20%->50%
 - Punk Rock: Renamed Amplify to fit Exploud line as well
 
 ### TMs:

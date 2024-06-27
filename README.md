@@ -199,6 +199,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 ## Known Bugs
 - Moving an Pokemon in the PC seems to duplicate its item in the bag
+- The power/type updates on the battle info screen don't seem to take into account the updated type when it comes to the power. For example, Weather Ball will show the correct type to match the weather but won't show the 1.5 boost from Sun/Rain. Similarly, STAB only shows up for Weather Ball/Terrain Pulse if the Pokemon is Normal Type
 - Due to the increased walking speed, followers will sometimes clip through tiles, especially after hopping off a ledge
 - Followers will stop following you if you use the naming screen from the party menu. It will start to follow you again if you talk to it
 - When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
@@ -287,7 +288,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Tera Blast
     - Tera Starstorm
 
-- The following moves/abilities show the correct power both in battle and on the summary screen:
+- The following moves/abilities/other effects show the correct power both in battle and on the summary screen:
     - Eruption/Water Spout/Dragon Energy
     - Return
     - Frustration
@@ -315,7 +316,13 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Dragon's Maw
     - Rocky Payload
     - Sharpness
-- The following moves/abilities show the correct power in battle:
+    - Punching Glove
+    - Hustle
+    - Moves that always crit (Frost Breath, Storm Throw, Surging Strikes, Wicked Blow, Flower Trick)
+    - Sniper
+    - STAB
+    - Adaptability
+- The following moves/abilities/other effects show the correct power in battle:
     - Fury Cutter
     - Spit Up
     - Weather Ball
@@ -331,6 +338,11 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Stomping Tantrum
     - Earthquake/Magnitude in Grassy Terrain
     - Sand Force
+    - Hydro Steam
+    - Sun/Rain
+    - Terrain
+    - Charge
+    - Mud Sport/Water Sport
 
 - The following effects on accuracy are now reflected in battle and on the summary screen:
     - Compound Eyes

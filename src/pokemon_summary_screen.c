@@ -3990,7 +3990,7 @@ static void PrintMovePowerAndAccuracy(u16 moveIndex)
         FillWindowPixelRect(PSS_LABEL_WINDOW_MOVES_POWER_ACC, PIXEL_FILL(0), 53, 0, 19, 32);
 
         u16 power = GetMovePower(moveIndex);
-        u16 moveType = GetMoveType(moveIndex);
+        u32 moveType = CheckDynamicMoveType(mon, moveIndex, 0);
 
         if (effect == EFFECT_ERUPTION)
             power = GetMonData(mon, MON_DATA_HP) * power / GetMonData(mon, MON_DATA_MAX_HP);
@@ -4034,7 +4034,7 @@ static void PrintMovePowerAndAccuracy(u16 moveIndex)
                 || ability == ABILITY_REFRIGERATE
                 || ability == ABILITY_PIXILATE
                 || ability == ABILITY_GALVANIZE)
-                && moveType == TYPE_NORMAL)
+                && gMovesInfo[moveIndex].type == TYPE_NORMAL)
             power = uq4_12_multiply(power, UQ_4_12(1.2));
         else if (ability == ABILITY_NORMALIZE)
             power = uq4_12_multiply(power, UQ_4_12(1.5));
@@ -4056,7 +4056,7 @@ static void PrintMovePowerAndAccuracy(u16 moveIndex)
         if (ItemId_GetHoldEffect(GetMonData(mon, MON_DATA_HELD_ITEM)) == HOLD_EFFECT_PUNCHING_GLOVE && gMovesInfo[moveIndex].punchingMove)
             power = uq4_12_multiply(power, UQ_4_12(1.1));
 
-        /*if (IS_BATTLER_OF_TYPE(battler, moveType)){
+        /*if (IS_BATTLER_OF_TYPE(mon, moveType)){
             if (ability == ABILITY_ADAPTABILITY)
                 power = uq4_12_multiply(power, UQ_4_12(2.0));
             else
@@ -4072,13 +4072,8 @@ static void PrintMovePowerAndAccuracy(u16 moveIndex)
 
         PrintTextOnWindow(PSS_LABEL_WINDOW_MOVES_POWER_ACC, text, 53, 1, 0, 0);
 
-<<<<<<< HEAD
         u32 accuracy = GetMoveAccuracy(moveIndex);
-        if (GetMonAbility(mon) == ABILITY_COMPOUND_EYES)
-=======
-        u16 accuracy = gMovesInfo[moveIndex].accuracy;
         if (ability == ABILITY_COMPOUND_EYES)
->>>>>>> f97cc88aa9 (Added most other power)
             accuracy = (accuracy * 130) / 100;
         else if (ability == ABILITY_VICTORY_STAR)
             accuracy = (accuracy * 110) / 100;
@@ -4354,27 +4349,23 @@ static void SetMonTypeIcons(void)
     }
 }
 
-#define TYPE_ICON(type) SetTypeSpritePosAndPal(type, 85, 32 + (i * 16), i + SPRITE_ARR_ID_TYPE)
 static void SetMoveTypeIcons(void)
 {
     u32 i;
     struct PokeSummary *summary = &sMonSummaryScreen->summary;
     struct Pokemon *mon = &sMonSummaryScreen->currentMon;
-    u32 speciesId = GetMonData(mon, MON_DATA_SPECIES);
     u32 type;
 
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
-        u16 effect = gMovesInfo[summary->moves[i]].effect;
         if (summary->moves[i] != MOVE_NONE)
         {
             type = GetMoveType(summary->moves[i]);
             if (P_SHOW_DYNAMIC_TYPES)
                 type = CheckDynamicMoveType(mon, summary->moves[i], 0);
-            TYPE_ICON(type);
+            SetTypeSpritePosAndPal(type, 85, 32 + (i * 16), i + SPRITE_ARR_ID_TYPE);
         }
         else
-        {
             SetSpriteInvisibility(i + SPRITE_ARR_ID_TYPE, TRUE);
         }
     }
@@ -4398,16 +4389,12 @@ static void SetNewMoveTypeIcon(void)
 {
     u32 type = GetMoveType(sMonSummaryScreen->newMove);
     struct Pokemon *mon = &sMonSummaryScreen->currentMon;
-    u32 speciesId = GetMonData(mon, MON_DATA_SPECIES);
-    u16 effect = gMovesInfo[sMonSummaryScreen->newMove].effect;
 
     if (P_SHOW_DYNAMIC_TYPES)
         type = CheckDynamicMoveType(mon, sMonSummaryScreen->newMove, 0);
 
     if (sMonSummaryScreen->newMove == MOVE_NONE)
-    {
         SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 4, TRUE);
-    }
     else
     {
         if (sMonSummaryScreen->currPageIndex == PSS_PAGE_BATTLE_MOVES)

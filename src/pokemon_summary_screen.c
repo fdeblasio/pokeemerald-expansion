@@ -3692,7 +3692,7 @@ static void PrintMovePowerAndAccuracy(u16 moveIndex)
         FillWindowPixelRect(PSS_LABEL_WINDOW_MOVES_POWER_ACC, PIXEL_FILL(0), 53, 0, 19, 32);
 
         u16 power = gMovesInfo[moveIndex].power;
-        u8 moveType = GetMoveType(mon, moveIndex);
+        u8 type = GetMoveType(mon, moveIndex);
 
         if (effect == EFFECT_ERUPTION)
             power = GetMonData(mon, MON_DATA_HP) * power / GetMonData(mon, MON_DATA_MAX_HP);
@@ -3727,10 +3727,10 @@ static void PrintMovePowerAndAccuracy(u16 moveIndex)
             power = uq4_12_multiply(power, UQ_4_12(1.5));
         else if (ability == ABILITY_MEGA_LAUNCHER && gMovesInfo[moveIndex].pulseMove)
             power = uq4_12_multiply(power, UQ_4_12(1.5));
-        else if (ability == ABILITY_WATER_BUBBLE && moveType == TYPE_WATER)
+        else if (ability == ABILITY_WATER_BUBBLE && type == TYPE_WATER)
             power = uq4_12_multiply(power, UQ_4_12(2.0));
         else if ((ability == ABILITY_STEELWORKER || ability == ABILITY_STEELY_SPIRIT)
-                && moveType == TYPE_STEEL)
+                && type == TYPE_STEEL)
             power = uq4_12_multiply(power, UQ_4_12(1.5));
         else if ((ability == ABILITY_AERILATE
                 || ability == ABILITY_REFRIGERATE
@@ -3742,11 +3742,11 @@ static void PrintMovePowerAndAccuracy(u16 moveIndex)
             power = uq4_12_multiply(power, UQ_4_12(1.5));
         else if (ability == ABILITY_PUNK_ROCK && gMovesInfo[moveIndex].soundMove)
             power = uq4_12_multiply(power, UQ_4_12(1.5));
-        else if (ability == ABILITY_TRANSISTOR && moveType == TYPE_ELECTRIC)
+        else if (ability == ABILITY_TRANSISTOR && type == TYPE_ELECTRIC)
             power = uq4_12_multiply(power, UQ_4_12(1.5));
-        else if (ability == ABILITY_DRAGONS_MAW && moveType == TYPE_DRAGON)
+        else if (ability == ABILITY_DRAGONS_MAW && type == TYPE_DRAGON)
             power = uq4_12_multiply(power, UQ_4_12(1.5));
-        else if (ability == ABILITY_ROCKY_PAYLOAD && moveType == TYPE_ROCK)
+        else if (ability == ABILITY_ROCKY_PAYLOAD && type == TYPE_ROCK)
             power = uq4_12_multiply(power, UQ_4_12(1.5));
         else if (ability == ABILITY_SHARPNESS && gMovesInfo[moveIndex].slicingMove)
             power = uq4_12_multiply(power, UQ_4_12(1.5));
@@ -3758,12 +3758,13 @@ static void PrintMovePowerAndAccuracy(u16 moveIndex)
         if (ItemId_GetHoldEffect(GetMonData(mon, MON_DATA_HELD_ITEM)) == HOLD_EFFECT_PUNCHING_GLOVE && gMovesInfo[moveIndex].punchingMove)
             power = uq4_12_multiply(power, UQ_4_12(1.1));
 
-        /*if (IS_BATTLER_OF_TYPE(mon, moveType)){
+        if (gSpeciesInfo[GetMonData(mon, MON_DATA_SPECIES)].types[0] == type
+         || gSpeciesInfo[GetMonData(mon, MON_DATA_SPECIES)].types[1] == type){
             if (ability == ABILITY_ADAPTABILITY)
                 power = uq4_12_multiply(power, UQ_4_12(2.0));
             else
                 power = uq4_12_multiply(power, UQ_4_12(1.5));
-        }*/
+        }
 
         if (power < 2 && power == gMovesInfo[moveIndex].power)
             text = gText_ThreeDashes;

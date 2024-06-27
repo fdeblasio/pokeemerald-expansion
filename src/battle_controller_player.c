@@ -1715,7 +1715,6 @@ static u8 GetMoveSelectionMoveType(u32 battler, u16 move)
     u32 speciesId = gBattleMons[battler].species;
     u8 type = gMovesInfo[move].type;
     u16 effect = gMovesInfo[move].effect;
-<<<<<<< HEAD
     txtPtr = StringCopy(gDisplayedStringBattle, gText_MoveInterfaceType);
 
     if (move == MOVE_TERA_BLAST)
@@ -1723,93 +1722,21 @@ static u8 GetMoveSelectionMoveType(u32 battler, u16 move)
         if (IsGimmickSelected(battler, GIMMICK_TERA) || GetActiveGimmick(battler) == GIMMICK_TERA)
             type = GetBattlerTeraType(battler);
             end = StringCopy(txtPtr, gTypesInfo[type].name);
-=======
-
-    if (effect == EFFECT_WEATHER_BALL)
-    {
-        if (WEATHER_HAS_EFFECT)
-        {
-            if (gBattleWeather & B_WEATHER_RAIN && holdEffect != HOLD_EFFECT_UTILITY_UMBRELLA)
-                return TYPE_WATER;
-            else if (gBattleWeather & B_WEATHER_SANDSTORM)
-                return TYPE_ROCK;
-            else if (gBattleWeather & B_WEATHER_SUN && holdEffect != HOLD_EFFECT_UTILITY_UMBRELLA)
-                return TYPE_FIRE;
-            else if (gBattleWeather & (B_WEATHER_HAIL | B_WEATHER_SNOW))
-                return TYPE_ICE;
-        }
-    }
-    else if (effect == EFFECT_HIDDEN_POWER)
-    {
-        u8 typeBits  = ((GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_HP_IV) & 1) << 0)
-                     | ((GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_ATK_IV) & 1) << 1)
-                     | ((GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_DEF_IV) & 1) << 2)
-                     | ((GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_SPEED_IV) & 1) << 3)
-                     | ((GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_SPATK_IV) & 1) << 4)
-                     | ((GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_SPDEF_IV) & 1) << 5);
-
-        u8 hpType = ((NUMBER_OF_MON_TYPES - 6) * typeBits) / 63 + 2;
-        if (hpType >= TYPE_MYSTERY)
-            hpType++;
-        hpType |= 0xC0;
-        return hpType & 0x3F;
-    }
-    else if (effect == EFFECT_CHANGE_TYPE_ON_ITEM && holdEffect == gMovesInfo[move].argument)
-        return ItemId_GetSecondaryId(gBattleMons[battler].item);
-    else if (effect == EFFECT_REVELATION_DANCE)
-    {
-        if ((IsTerastallized(battler)|| gBattleStruct->tera.playerSelect) && GetBattlerTeraType(battler) != TYPE_STELLAR)
-            return GetBattlerTeraType(battler);
-        else if (gBattleMons[battler].type1 != TYPE_MYSTERY)
-            return gBattleMons[battler].type1;
-        else if (gBattleMons[battler].type2 != TYPE_MYSTERY)
-            return gBattleMons[battler].type2;
-        else if (gBattleMons[battler].type3 != TYPE_MYSTERY)
-            return gBattleMons[battler].type3;
-    }
-    else if (effect == EFFECT_RAGING_BULL)
-    {
-        if (speciesId == SPECIES_TAUROS_PALDEAN_COMBAT_BREED
-            || speciesId == SPECIES_TAUROS_PALDEAN_BLAZE_BREED
-            || speciesId == SPECIES_TAUROS_PALDEAN_AQUA_BREED)
-            return gBattleMons[battler].type2;
->>>>>>> de89742838 (Refactored type into a function)
     }
     else if (effect == EFFECT_IVY_CUDGEL)
     {
         if (speciesId == SPECIES_OGERPON_WELLSPRING_MASK || speciesId == SPECIES_OGERPON_WELLSPRING_MASK_TERA
             || speciesId == SPECIES_OGERPON_HEARTHFLAME_MASK || speciesId == SPECIES_OGERPON_HEARTHFLAME_MASK_TERA
             || speciesId == SPECIES_OGERPON_CORNERSTONE_MASK || speciesId == SPECIES_OGERPON_CORNERSTONE_MASK_TERA)
-<<<<<<< HEAD
             type = gBattleMons[battler].types[1];
             end = StringCopy(txtPtr, gTypesInfo[type].name);
-=======
-            return gBattleMons[battler].type2;
->>>>>>> de89742838 (Refactored type into a function)
     }
     // Max Guard is a Normal-type move
     else if (gMovesInfo[move].category == DAMAGE_CATEGORY_STATUS
              && (GetActiveGimmick(battler) == GIMMICK_DYNAMAX || IsGimmickSelected(battler, GIMMICK_DYNAMAX)))
     {
         type = TYPE_NORMAL;
-<<<<<<< HEAD
         end = StringCopy(txtPtr, gTypesInfo[type].name);
-=======
-    }
-    else if (effect == EFFECT_TERRAIN_PULSE)
-    {
-        if (IsBattlerTerrainAffected(battler, STATUS_FIELD_TERRAIN_ANY))
-        {
-            if (gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN)
-                return TYPE_ELECTRIC;
-            else if (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN)
-                return TYPE_GRASS;
-            else if (gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN)
-                return TYPE_FAIRY;
-            else if (gFieldStatuses & STATUS_FIELD_PSYCHIC_TERRAIN)
-                return TYPE_PSYCHIC;
-        }
->>>>>>> de89742838 (Refactored type into a function)
     }
     else if (effect == EFFECT_TERA_BLAST)
     {
@@ -1824,7 +1751,6 @@ static u8 GetMoveSelectionMoveType(u32 battler, u16 move)
             type = TYPE_STELLAR;
             end = StringCopy(txtPtr, gTypesInfo[type].name);
     }
-<<<<<<< HEAD
     else if (P_SHOW_DYNAMIC_TYPES)
     {
         struct Pokemon *mon = &gPlayerParty[gBattlerPartyIndexes[battler]];
@@ -1834,28 +1760,6 @@ static u8 GetMoveSelectionMoveType(u32 battler, u16 move)
     else
     {
         end = StringCopy(txtPtr, gTypesInfo[type].name);
-=======
-    else if (GetBattlerAbility(battler) == ABILITY_NORMALIZE)
-        return TYPE_NORMAL;
-    else if (gMovesInfo[move].soundMove && GetBattlerAbility(battler) == ABILITY_LIQUID_VOICE)
-        return TYPE_WATER;
-    else if (effect == EFFECT_AURA_WHEEL && speciesId == SPECIES_MORPEKO_HANGRY)
-        return TYPE_DARK;
-    else if (type == TYPE_NORMAL)
-    {
-        switch(GetBattlerAbility(battler)){
-            case ABILITY_AERILATE:
-                return TYPE_FLYING;
-            case ABILITY_REFRIGERATE:
-                return TYPE_ICE;
-            case ABILITY_PIXILATE:
-                return TYPE_FAIRY;
-            case ABILITY_GALVANIZE:
-                return TYPE_ELECTRIC;
-            default:
-                return TYPE_NORMAL;
-        }
->>>>>>> de89742838 (Refactored type into a function)
     }
     return type;
 }

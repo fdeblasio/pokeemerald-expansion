@@ -1881,8 +1881,7 @@ static bool8 Fishing_WaitForA(struct Task *task)
 {
     AlignFishingAnimationFrames();
     task->tFrameCounter++;
-    if (JOY_NEW(A_BUTTON))
-        task->tStep++;
+    task->tStep++;
     return FALSE;
 }
 

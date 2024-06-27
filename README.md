@@ -199,7 +199,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 ## Known Bugs
 - Moving an Pokemon in the PC seems to duplicate its item in the bag
-- The power/type updates on the battle info screen don't seem to take into account the updated type when it comes to the power. For example, Weather Ball will show the correct type to match the weather but won't show the 1.5 boost from Sun/Rain. Similarly, STAB only shows up for Weather Ball/Terrain Pulse if the Pokemon is Normal Type
 - Due to the increased walking speed, followers will sometimes clip through tiles, especially after hopping off a ledge
 - Followers will stop following you if you use the naming screen from the party menu. It will start to follow you again if you talk to it
 - When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text

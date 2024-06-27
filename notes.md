@@ -44,6 +44,8 @@ upcoming
 - Pret wiki tutorials:       https://github.com/pret/pokeemerald/wiki/Tutorials
 - Combine two meta files (notes.md and README.md)?
     Include more changes, even if general like Battle Frontier edits
+- Before a new game, put Trainer numbers in order
+- Consolidate flags (for example, FLAG_DEFEATED_MAUVILLE_GYM, FLAG_BADGE03_GET, FLAG_HIDE_MAUVILLE_ROCK_SMASH_TIP_GUY)
 - Remove unused code
 
 ### Pokémon
@@ -67,6 +69,7 @@ upcoming
 
 ### Trainers
 - Revert Mauville Wally back to Ralts and add Verdanturf or later battle with Kirlia?
+    - Near Fallarbor with new Swablu?/New Mauville with Magnemite?
 - Group rematches with original battles
 - Readjust wild/trainer levels so that parties aren't overpowered?
 - Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)

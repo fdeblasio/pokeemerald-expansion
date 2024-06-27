@@ -13,8 +13,14 @@ MauvilleCity_OnTransition:
 	setflag FLAG_SYS_TV_START
 	clearflag FLAG_MAUVILLE_GYM_BARRIERS_STATE
 	setvar VAR_MAUVILLE_GYM_STATE, 0
+	call_if_unset FLAG_DEFEATED_WALLY_MAUVILLE, MauvilleCity_EventScript_MoveScott
 	call_if_set FLAG_GOT_TM_THUNDERBOLT_FROM_WATTSON, MauvilleCity_EventScript_MoveWattsonBackToGym
 	end
+
+MauvilleCity_EventScript_MoveScott::
+	setobjectxyperm LOCALID_SCOTT, 7, 6
+	setobjectmovementtype LOCALID_SCOTT, MOVEMENT_TYPE_FACE_RIGHT
+	return
 
 MauvilleCity_EventScript_MoveWattsonBackToGym::
 	clearflag FLAG_HIDE_MAUVILLE_GYM_WATTSON
@@ -68,6 +74,21 @@ MauvilleCity_EventScript_TVExplained::
 	release
 	end
 
+MauvilleCity_EventScript_Scott::
+	lock
+	goto_if_set FLAG_DEFEATED_WALLY_MAUVILLE, MauvilleCity_EventScript_ScottCheckOnFriend
+	msgbox MauvilleCity_Text_ScottInterestingTrainer, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+MauvilleCity_EventScript_ScottCheckOnFriend::
+	faceplayer
+	msgbox MauvilleCity_Text_ScottCheckOnFriend, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
 MauvilleCity_EventScript_WallysUncle::
 	lock
 	faceplayer
@@ -112,7 +133,6 @@ MauvilleCity_EventScript_BattleWallyPrompt::
 	closemessage
 	switch VAR_FACING
 	case DIR_NORTH, MauvilleCity_EventScript_WallyAndUncleExitNorth
-	case DIR_EAST, MauvilleCity_EventScript_WallyAndUncleExitEast
 	end
 
 MauvilleCity_EventScript_WallyAndUncleExitNorth::
@@ -135,25 +155,6 @@ MauvilleCity_EventScript_WallyAndUncleExitNorth::
 	goto MauvilleCity_EventScript_DefeatedWally
 	end
 
-MauvilleCity_EventScript_WallyAndUncleExitEast::
-	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerWatchWallyExitEast1
-	applymovement LOCALID_WALLY, MauvilleCity_Movement_WallyExitEast1
-	applymovement LOCALID_WALLYS_UNCLE, MauvilleCity_Movement_WallysUncleExitEast1
-	waitmovement 0
-	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterRight
-	waitmovement 0
-	delay 30
-	applymovement LOCALID_WALLYS_UNCLE, MauvilleCity_Movement_WallysUncleApproachPlayerEast
-	waitmovement 0
-	msgbox MauvilleCity_Text_UncleVisitUsSometime, MSGBOX_DEFAULT
-	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerWatchWallyExitEast2
-	applymovement LOCALID_WALLYS_UNCLE, MauvilleCity_Movement_WallysUncleExitEast2
-	applymovement LOCALID_WALLY, MauvilleCity_Movement_WallyExitEast2
-	waitmovement 0
-	goto MauvilleCity_EventScript_DefeatedWally
-	end
-
 MauvilleCity_EventScript_DefeatedWally::
 	removeobject LOCALID_WALLY
 	removeobject LOCALID_WALLYS_UNCLE
@@ -163,40 +164,22 @@ MauvilleCity_EventScript_DefeatedWally::
 	setvar VAR_WALLY_CALL_STEP_COUNTER, 0
 	setflag FLAG_ENABLE_FIRST_WALLY_POKENAV_CALL
 	call_if_eq VAR_FACING, DIR_NORTH, MauvilleCity_EventScript_ScottApproachPlayerNorth
-	call_if_eq VAR_FACING, DIR_EAST, MauvilleCity_EventScript_ScottApproachPlayerEast
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	msgbox MauvilleCity_Text_ScottYouDidntHoldBack, MSGBOX_DEFAULT
 	closemessage
 	addvar VAR_SCOTT_STATE, 1
-	call_if_eq VAR_FACING, DIR_NORTH, MauvilleCity_EventScript_ScottExitNorth
-	call_if_eq VAR_FACING, DIR_EAST, MauvilleCity_EventScript_ScottExitEast
-	removeobject LOCALID_SCOTT
 	releaseall
 	end
 
 MauvilleCity_EventScript_ScottApproachPlayerNorth::
-	addobject LOCALID_SCOTT
 	applymovement LOCALID_SCOTT, MauvilleCity_Movement_ScottApproachPlayerNorth
-	waitmovement 0
-	return
-
-MauvilleCity_EventScript_ScottApproachPlayerEast::
-	setobjectxyperm LOCALID_SCOTT, 12, 13
-	addobject LOCALID_SCOTT
-	applymovement LOCALID_SCOTT, MauvilleCity_Movement_ScottApproachPlayerEast
 	waitmovement 0
 	return
 
 MauvilleCity_EventScript_ScottExitNorth::
 	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerWatchScottExitNorth
 	applymovement LOCALID_SCOTT, MauvilleCity_Movement_ScottExitNorth
-	waitmovement 0
-	return
-
-MauvilleCity_EventScript_ScottExitEast::
-	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Movement_PlayerWatchScottExitEast
-	applymovement LOCALID_SCOTT, MauvilleCity_Movement_ScottExitEast
 	waitmovement 0
 	return
 
@@ -228,14 +211,8 @@ MauvilleCity_EventScript_WallyRequestBattleAgain::
 	end
 
 MauvilleCity_Movement_WallyExitNorth1:
-	walk_left
-	walk_left
+	walk_right
 	walk_down
-	walk_down
-	walk_left
-	step_end
-
-MauvilleCity_Movement_WallyExitEast1:
 	walk_down
 	walk_down
 	walk_left
@@ -257,30 +234,9 @@ MauvilleCity_Movement_WallyExitNorth2:
 	delay_8
 	step_end
 
-MauvilleCity_Movement_WallyExitEast2:
-	delay_16
-	delay_16
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	delay_8
-	step_end
-
 MauvilleCity_Movement_PlayerWatchWallyExitNorth2:
 	delay_16
 	delay_8
-	walk_in_place_faster_left
-	step_end
-
-MauvilleCity_Movement_PlayerWatchWallyExitEast2:
-	delay_16
-	delay_16
-	delay_16
 	walk_in_place_faster_left
 	step_end
 
@@ -289,34 +245,19 @@ MauvilleCity_Movement_PlayerWatchScottExitNorth:
 	walk_in_place_faster_left
 	step_end
 
-MauvilleCity_Movement_PlayerWatchScottExitEast:
+MauvilleCity_Movement_PlayerWatchWallyExitNorth1:
 	delay_16
-	delay_16
-	walk_in_place_faster_left
-	step_end
-
-MauvilleCity_Movement_PlayerWatchWallyExitEast1:
+	walk_in_place_faster_right
 	delay_16
 	walk_in_place_faster_down
-	step_end
-
-MauvilleCity_Movement_PlayerWatchWallyExitNorth1:
 	delay_16
 	walk_in_place_faster_left
 	step_end
 
 MauvilleCity_Movement_WallysUncleExitNorth1:
-	walk_left
-	walk_left
-	walk_left
 	walk_down
 	walk_down
-	step_end
-
-MauvilleCity_Movement_WallysUncleExitEast1:
 	walk_left
-	walk_down
-	walk_down
 	walk_left
 	walk_left
 	step_end
@@ -334,11 +275,6 @@ MauvilleCity_Movement_WallysUncleApproachPlayerNorth:
 	walk_in_place_faster_up
 	step_end
 
-MauvilleCity_Movement_WallysUncleApproachPlayerEast:
-	walk_right
-	walk_up
-	step_end
-
 MauvilleCity_Movement_WallysUncleExitNorth2:
 	walk_left
 	walk_left
@@ -350,60 +286,12 @@ MauvilleCity_Movement_WallysUncleExitNorth2:
 	walk_left
 	step_end
 
-MauvilleCity_Movement_WallysUncleExitEast2:
-	walk_down
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	step_end
-
 MauvilleCity_Movement_ScottApproachPlayerNorth:
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_in_place_faster_up
-	step_end
-
-MauvilleCity_Movement_ScottApproachPlayerEast:
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_up
+	walk_right
+	walk_in_place_faster_down
 	step_end
 
 MauvilleCity_Movement_ScottExitNorth:
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	step_end
-
-MauvilleCity_Movement_ScottExitEast:
-	walk_down
 	walk_left
 	walk_left
 	walk_left
@@ -463,10 +351,25 @@ MauvilleCity_EventScript_RegisterWallyCall::
 	releaseall
 	end
 
+MauvilleCity_EventScript_RockSmashTipFatMan::
+	lockall
+	faceplayer
+	msgbox MauvilleCity_Text_MauvilleUncleToldMeToTakeRockSmash, MSGBOX_DEFAULT
+	releaseall
+	end
+
 MauvilleCity_Text_UncleHesTooPeppy:
 	.string "Uncle: It's because of Pokémon that\n"
 	.string "this boy's got more pep, I suppose…\l"
 	.string "But he's become a bit too peppy…$"
+
+MauvilleCity_Text_ScottInterestingTrainer:
+	.string "Scott: Hmm… this Trainer could be\n"
+	.string "interesting…$"
+
+MauvilleCity_Text_ScottCheckOnFriend:
+	.string "Scott: Maybe you should go check on\n"
+	.string "your friend.$"
 
 MauvilleCity_Text_WallyWantToChallengeGym:
 	.string "Wally: Aww, Uncle, please?\p"
@@ -575,7 +478,9 @@ MauvilleCity_Text_ScottYouDidntHoldBack:
 	.string "battle is all about!\p"
 	.string "I idolize Trainers like that!\p"
 	.string "… … … … … …\n"
-	.string "I'll be cheering for you!$"
+	.string "I'll be cheering for you!\p"
+	.string "…Maybe you should go check\n"
+	.string "on your friend though.$"
 
 MauvilleCity_Text_WattsonNeedFavorTakeKey:
 	.string "Wattson: Oh, {PLAYER}{KUN}!\n"
@@ -666,3 +571,7 @@ MauvilleCity_Text_ExplainTV:
 
 MauvilleCity_Text_BeenCheckingOutTV:
 	.string "Hi, have you been checking out TVs?$"
+
+MauvilleCity_Text_MauvilleUncleToldMeToTakeRockSmash:
+	.string "Our cousin told us not to let anyone\n"
+	.string "through who hasn't beaten Wattson!$"

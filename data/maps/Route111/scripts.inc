@@ -424,13 +424,6 @@ Route111_EventScript_HikerMirageTowerVisible::
 	release
 	end
 
-Route111_EventScript_RockSmashTipFatMan::
-	lockall
-	faceplayer
-	msgbox Route111_Text_MauvilleUncleToldMeToTakeRockSmash, MSGBOX_DEFAULT
-	releaseall
-	end
-
 Route111_EventScript_Drew::
 	trainerbattle_single TRAINER_DREW, Route111_Text_DrewIntro, Route111_Text_DrewDefeat
 	msgbox Route111_Text_DrewPostBattle, MSGBOX_AUTOCLOSE
@@ -708,11 +701,6 @@ Route111_Text_ClawFossilDisappeared:
 Route111_Text_RootFossilDisappeared:
 	.string "The Root Fossil disappeared into\n"
 	.string "the sand…$"
-
-Route111_Text_MauvilleUncleToldMeToTakeRockSmash:
-	.string "Our uncle in Mauville told us to not\n"
-	.string "let anyone through who hasn't beaten\l"
-	.string "the Gym Leader!$"
 
 Route111_Text_TrainerHillSign:
 	.string "{RIGHT_ARROW} Trainer Hill Entrance\p"

@@ -86,6 +86,7 @@ static void HandleInputChooseTarget(u32 battler);
 static void HandleInputChooseMove(u32 battler);
 static void MoveSelectionDisplayPpNumber(u32 battler);
 static void MoveSelectionDisplayPpString(u32 battler);
+static u8 GetMoveSelectionMoveType(u32 battler, u16 move);
 static void MoveSelectionDisplayMoveType(u32 battler);
 static void MoveSelectionDisplayMoveNames(u32 battler);
 static void MoveSelectionDisplayMoveDescription(u32 battler);
@@ -1711,30 +1712,25 @@ static void MoveSelectionDisplayPpNumber(u32 battler)
     BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_PP_REMAINING);
 }
 
-static void MoveSelectionDisplayMoveType(u32 battler)
+static u8 GetMoveSelectionMoveType(u32 battler, u16 move)
 {
-    u8 *txtPtr, *end;
-    u32 speciesId = gBattleMons[battler].species;
     u16 holdEffect = GetBattlerHoldEffect(battler, TRUE);
-    struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleResources->bufferA[battler][4]);
-    u16 move = moveInfo->moves[gMoveSelectionCursor[battler]];
+    u32 speciesId = gBattleMons[battler].species;
     u8 type = gMovesInfo[move].type;
     u16 effect = gMovesInfo[move].effect;
-
-    txtPtr = StringCopy(gDisplayedStringBattle, gText_MoveInterfaceType);
 
     if (effect == EFFECT_WEATHER_BALL)
     {
         if (WEATHER_HAS_EFFECT)
         {
             if (gBattleWeather & B_WEATHER_RAIN && holdEffect != HOLD_EFFECT_UTILITY_UMBRELLA)
-                type = TYPE_WATER;
+                return TYPE_WATER;
             else if (gBattleWeather & B_WEATHER_SANDSTORM)
-                type = TYPE_ROCK;
+                return TYPE_ROCK;
             else if (gBattleWeather & B_WEATHER_SUN && holdEffect != HOLD_EFFECT_UTILITY_UMBRELLA)
-                type = TYPE_FIRE;
+                return TYPE_FIRE;
             else if (gBattleWeather & (B_WEATHER_HAIL | B_WEATHER_SNOW))
-                type = TYPE_ICE;
+                return TYPE_ICE;
         }
     }
     else if (effect == EFFECT_HIDDEN_POWER)
@@ -1750,36 +1746,34 @@ static void MoveSelectionDisplayMoveType(u32 battler)
         if (hpType >= TYPE_MYSTERY)
             hpType++;
         hpType |= 0xC0;
-        type = hpType & 0x3F;
+        return hpType & 0x3F;
     }
     else if (effect == EFFECT_CHANGE_TYPE_ON_ITEM && holdEffect == gMovesInfo[move].argument)
-    {
-        type = ItemId_GetSecondaryId(gBattleMons[battler].item);
-    }
+        return ItemId_GetSecondaryId(gBattleMons[battler].item);
     else if (effect == EFFECT_REVELATION_DANCE)
     {
         if ((IsTerastallized(battler)|| gBattleStruct->tera.playerSelect) && GetBattlerTeraType(battler) != TYPE_STELLAR)
-            type = GetBattlerTeraType(battler);
+            return GetBattlerTeraType(battler);
         else if (gBattleMons[battler].type1 != TYPE_MYSTERY)
-            type = gBattleMons[battler].type1;
+            return gBattleMons[battler].type1;
         else if (gBattleMons[battler].type2 != TYPE_MYSTERY)
-            type = gBattleMons[battler].type2;
+            return gBattleMons[battler].type2;
         else if (gBattleMons[battler].type3 != TYPE_MYSTERY)
-            type = gBattleMons[battler].type3;
+            return gBattleMons[battler].type3;
     }
     else if (effect == EFFECT_RAGING_BULL)
     {
         if (speciesId == SPECIES_TAUROS_PALDEAN_COMBAT_BREED
             || speciesId == SPECIES_TAUROS_PALDEAN_BLAZE_BREED
             || speciesId == SPECIES_TAUROS_PALDEAN_AQUA_BREED)
-            type = gBattleMons[battler].type2;
+            return gBattleMons[battler].type2;
     }
     else if (effect == EFFECT_IVY_CUDGEL)
     {
         if (speciesId == SPECIES_OGERPON_WELLSPRING_MASK || speciesId == SPECIES_OGERPON_WELLSPRING_MASK_TERA
             || speciesId == SPECIES_OGERPON_HEARTHFLAME_MASK || speciesId == SPECIES_OGERPON_HEARTHFLAME_MASK_TERA
             || speciesId == SPECIES_OGERPON_CORNERSTONE_MASK || speciesId == SPECIES_OGERPON_CORNERSTONE_MASK_TERA)
-            type = gBattleMons[battler].type2;
+            return gBattleMons[battler].type2;
     }
     // Max Guard is a Normal-type move
     else if (gMovesInfo[moveInfo->moves[gMoveSelectionCursor[battler]]].category == DAMAGE_CATEGORY_STATUS
@@ -1792,13 +1786,13 @@ static void MoveSelectionDisplayMoveType(u32 battler)
         if (IsBattlerTerrainAffected(battler, STATUS_FIELD_TERRAIN_ANY))
         {
             if (gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN)
-                type = TYPE_ELECTRIC;
+                return TYPE_ELECTRIC;
             else if (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN)
-                type = TYPE_GRASS;
+                return TYPE_GRASS;
             else if (gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN)
-                type = TYPE_FAIRY;
+                return TYPE_FAIRY;
             else if (gFieldStatuses & STATUS_FIELD_PSYCHIC_TERRAIN)
-                type = TYPE_PSYCHIC;
+                return TYPE_PSYCHIC;
         }
     }
     else if (effect == EFFECT_TERA_BLAST)
@@ -1812,37 +1806,39 @@ static void MoveSelectionDisplayMoveType(u32 battler)
         || (IsGimmickSelected(battler, GIMMICK_TERA) && speciesId == SPECIES_TERAPAGOS_TERASTAL))
             type = TYPE_STELLAR;
     }
-    else if (GetBattlerAbility(battler) == ABILITY_NORMALIZE){
-        type = TYPE_NORMAL;
-    }
+    else if (GetBattlerAbility(battler) == ABILITY_NORMALIZE)
+        return TYPE_NORMAL;
     else if (gMovesInfo[move].soundMove && GetBattlerAbility(battler) == ABILITY_LIQUID_VOICE)
-    {
-        type = TYPE_WATER;
-    }
+        return TYPE_WATER;
     else if (effect == EFFECT_AURA_WHEEL && speciesId == SPECIES_MORPEKO_HANGRY)
-    {
-        type = TYPE_DARK;
-    }
+        return TYPE_DARK;
     else if (type == TYPE_NORMAL)
     {
         switch(GetBattlerAbility(battler)){
             case ABILITY_AERILATE:
-                type = TYPE_FLYING;
-                break;
+                return TYPE_FLYING;
             case ABILITY_REFRIGERATE:
-                type = TYPE_ICE;
-                break;
+                return TYPE_ICE;
             case ABILITY_PIXILATE:
-                type = TYPE_FAIRY;
-                break;
+                return TYPE_FAIRY;
             case ABILITY_GALVANIZE:
-                type = TYPE_ELECTRIC;
-                break;
+                return TYPE_ELECTRIC;
             default:
-                type = TYPE_NORMAL;
-                break;
+                return TYPE_NORMAL;
         }
     }
+    return type;
+}
+
+static void MoveSelectionDisplayMoveType(u32 battler)
+{
+    u8 *txtPtr, *end;
+    struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleResources->bufferA[battler][4]);
+    u16 move = moveInfo->moves[gMoveSelectionCursor[battler]];
+
+    txtPtr = StringCopy(gDisplayedStringBattle, gText_MoveInterfaceType);
+
+    u8 type = GetMoveSelectionMoveType(battler, move);
 
     end = StringCopy(txtPtr, gTypesInfo[type].name);
     PrependFontIdToFit(txtPtr, end, FONT_NORMAL, WindowWidthPx(B_WIN_MOVE_TYPE) - 25);
@@ -1851,203 +1847,203 @@ static void MoveSelectionDisplayMoveType(u32 battler)
 
 static void MoveSelectionDisplayMoveDescription(u32 battler)
 {
+    u16 holdEffect = GetBattlerHoldEffect(battler, TRUE);
     struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct*)(&gBattleResources->bufferA[battler][4]);
     u16 move = moveInfo->moves[gMoveSelectionCursor[battler]];
-    u16 pwr = gMovesInfo[move].power;
-    u16 acc = gMovesInfo[move].accuracy;
-    u8 cat = gMovesInfo[move].category;
+    u8 type = GetMoveSelectionMoveType(battler, move);
     u16 effect = gMovesInfo[move].effect;
-    u16 holdEffect = GetBattlerHoldEffect(battler, TRUE);
-    u16 moveType = gMovesInfo[move].type;
+    u16 power = gMovesInfo[move].power;
+    u16 accuracy = gMovesInfo[move].accuracy;
+    u8 category = gMovesInfo[move].category;
 
     struct Pokemon *mon = &gPlayerParty[gBattlerPartyIndexes[battler]];
 
-    u8 pwr_num[3], acc_num[3];
-    u8 cat_desc[7] = _("CAT: ");
-    u8 pwr_desc[7] = _("PWR: ");
-    u8 acc_desc[7] = _("ACC: ");
-    u8 cat_start[] = _("{CLEAR_TO 0x03}");
-    u8 pwr_start[] = _("{CLEAR_TO 0x38}");
-    u8 acc_start[] = _("{CLEAR_TO 0x6D}");
+    u8 power_num[3], accuracy_num[3];
+    u8 category_desc[7] = _("CAT: ");
+    u8 power_desc[7] = _("PWR: ");
+    u8 accuracy_desc[7] = _("ACC: ");
+    u8 category_start[] = _("{CLEAR_TO 0x03}");
+    u8 power_start[] = _("{CLEAR_TO 0x38}");
+    u8 accuracy_start[] = _("{CLEAR_TO 0x6D}");
     LoadMessageBoxAndBorderGfx();
     DrawStdWindowFrame(B_WIN_MOVE_DESCRIPTION, FALSE);
 
     //Power
     if (effect == EFFECT_ERUPTION)
-        pwr = GetMonData(mon, MON_DATA_HP) * pwr / GetMonData(mon, MON_DATA_MAX_HP);
+        power = GetMonData(mon, MON_DATA_HP) * power / GetMonData(mon, MON_DATA_MAX_HP);
     else if (effect == EFFECT_RETURN)
-        pwr = 10 * GetMonData(mon, MON_DATA_FRIENDSHIP) / 25;
+        power = 10 * GetMonData(mon, MON_DATA_FRIENDSHIP) / 25;
     else if (effect == EFFECT_FRUSTRATION)
-        pwr = 10 * (MAX_FRIENDSHIP - GetMonData(mon, MON_DATA_FRIENDSHIP)) / 25;
+        power = 10 * (MAX_FRIENDSHIP - GetMonData(mon, MON_DATA_FRIENDSHIP)) / 25;
     else if (effect == EFFECT_FURY_CUTTER)
-        pwr = min(160, CalcFuryCutterBasePower(pwr, gDisableStructs[battler].furyCutterCounter + 1));
+        power = min(160, CalcFuryCutterBasePower(power, gDisableStructs[battler].furyCutterCounter + 1));
     else if (effect == EFFECT_SPIT_UP)
-        pwr = 100 * gDisableStructs[battler].stockpileCounter;
+        power = 100 * gDisableStructs[battler].stockpileCounter;
     else if (effect == EFFECT_WEATHER_BALL && WEATHER_HAS_EFFECT && (gBattleWeather & B_WEATHER_ANY))
-        pwr *= 2;
+        power *= 2;
     else if (effect == EFFECT_ACROBATICS && GetMonData(mon, MON_DATA_HELD_ITEM) == ITEM_NONE)
-        pwr *= 2;
+        power *= 2;
     else if (effect == EFFECT_STORED_POWER)
-        pwr += (CountBattlerStatIncreases(battler, TRUE) * 20);
+        power += (CountBattlerStatIncreases(battler, TRUE) * 20);
     else if (move == MOVE_MISTY_EXPLOSION && (gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN) && IsBattlerGrounded(battler))
-        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+        power = uq4_12_multiply(power, UQ_4_12(1.5));
     else if (effect == EFFECT_GRAV_APPLE && (gFieldStatuses & STATUS_FIELD_GRAVITY))
-        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+        power = uq4_12_multiply(power, UQ_4_12(1.5));
     else if (effect == EFFECT_TERRAIN_PULSE && (gFieldStatuses & STATUS_FIELD_TERRAIN_ANY) && IsBattlerGrounded(battler))
-        pwr *= 2;
+        power *= 2;
     else if (effect == EFFECT_EXPANDING_FORCE && IsBattlerTerrainAffected(battler, STATUS_FIELD_PSYCHIC_TERRAIN))
-        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+        power = uq4_12_multiply(power, UQ_4_12(1.5));
     else if (effect == EFFECT_RISING_VOLTAGE && IsBattlerTerrainAffected(battler, STATUS_FIELD_ELECTRIC_TERRAIN))
-        pwr *= 2;
+        power *= 2;
     else if (effect == EFFECT_PSYBLADE && IsBattlerTerrainAffected(battler, STATUS_FIELD_ELECTRIC_TERRAIN))
-        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+        power = uq4_12_multiply(power, UQ_4_12(1.5));
     else if (effect == EFFECT_RAGE_FIST)
-        pwr = min(350, 50 + (50 * gBattleStruct->timesGotHit[GetBattlerSide(battler)][gBattlerPartyIndexes[battler]]));
+        power = min(350, 50 + (50 * gBattleStruct->timesGotHit[GetBattlerSide(battler)][gBattlerPartyIndexes[battler]]));
     else if (effect == EFFECT_FACADE && (gBattleMons[battler].status1 & (STATUS1_BURN | STATUS1_PSN_ANY | STATUS1_PARALYSIS | STATUS1_FROSTBITE)))
-        pwr = uq4_12_multiply(pwr, UQ_4_12(2.0));
+        power = uq4_12_multiply(power, UQ_4_12(2.0));
     else if (effect == EFFECT_SOLAR_BEAM && IsBattlerWeatherAffected(battler, (B_WEATHER_HAIL | B_WEATHER_SANDSTORM | B_WEATHER_RAIN | B_WEATHER_SNOW | B_WEATHER_FOG)))
-        pwr = uq4_12_multiply(pwr, UQ_4_12(0.5));
+        power = uq4_12_multiply(power, UQ_4_12(0.5));
     else if (effect == EFFECT_STOMPING_TANTRUM && (gBattleStruct->lastMoveFailed & gBitTable[battler]))
-        pwr = uq4_12_multiply(pwr, UQ_4_12(2.0));
+        power = uq4_12_multiply(power, UQ_4_12(2.0));
     else if ((effect == EFFECT_EARTHQUAKE || effect == EFFECT_MAGNITUDE) && (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN))
-        pwr = uq4_12_multiply(pwr, UQ_4_12(0.5));
+        power = uq4_12_multiply(power, UQ_4_12(0.5));
     else if (effect == EFFECT_HYDRO_STEAM && (gBattleWeather & B_WEATHER_SUN) && holdEffect != HOLD_EFFECT_UTILITY_UMBRELLA)
-        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+        power = uq4_12_multiply(power, UQ_4_12(1.5));
     else if (gMovesInfo[move].alwaysCriticalHit)
-        pwr = uq4_12_multiply_half_down(pwr, B_CRIT_MULTIPLIER >= GEN_6 ? UQ_4_12(1.5) : UQ_4_12(2.0));
+        power = uq4_12_multiply_half_down(power, B_CRIT_MULTIPLIER >= GEN_6 ? UQ_4_12(1.5) : UQ_4_12(2.0));
 
     u16 ability = GetBattlerAbility(battler);
-    if (ability == ABILITY_TECHNICIAN && pwr > 1 && pwr <= 60)
-        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
-    else if (ability == ABILITY_FLARE_BOOST && (gBattleMons[battler].status1 & STATUS1_BURN) && cat == DAMAGE_CATEGORY_SPECIAL)
-        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
-    else if (ability == ABILITY_TOXIC_BOOST && (gBattleMons[battler].status1 & STATUS1_PSN_ANY) && cat == DAMAGE_CATEGORY_PHYSICAL)
-        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+    if (ability == ABILITY_TECHNICIAN && power > 1 && power <= 60)
+        power = uq4_12_multiply(power, UQ_4_12(1.5));
+    else if (ability == ABILITY_FLARE_BOOST && (gBattleMons[battler].status1 & STATUS1_BURN) && category == DAMAGE_CATEGORY_SPECIAL)
+        power = uq4_12_multiply(power, UQ_4_12(1.5));
+    else if (ability == ABILITY_TOXIC_BOOST && (gBattleMons[battler].status1 & STATUS1_PSN_ANY) && category == DAMAGE_CATEGORY_PHYSICAL)
+        power = uq4_12_multiply(power, UQ_4_12(1.5));
     else if (ability == ABILITY_RECKLESS && IS_MOVE_RECOIL(move))
-        pwr = uq4_12_multiply(pwr, UQ_4_12(1.2));
+        power = uq4_12_multiply(power, UQ_4_12(1.2));
     else if (ability == ABILITY_IRON_FIST && gMovesInfo[move].punchingMove)
-        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+        power = uq4_12_multiply(power, UQ_4_12(1.5));
     else if (ability == ABILITY_SHEER_FORCE && MoveIsAffectedBySheerForce(move))
-        pwr = uq4_12_multiply(pwr, UQ_4_12(1.3));
+        power = uq4_12_multiply(power, UQ_4_12(1.3));
     else if (ability == ABILITY_SAND_FORCE
              && (gBattleWeather & B_WEATHER_SANDSTORM)
-             && (moveType == TYPE_ROCK || moveType == TYPE_GROUND || moveType == TYPE_STEEL))
-        pwr = uq4_12_multiply(pwr, UQ_4_12(1.3));
+             && (type == TYPE_ROCK || type == TYPE_GROUND || type == TYPE_STEEL))
+        power = uq4_12_multiply(power, UQ_4_12(1.3));
     else if (ability == ABILITY_TOUGH_CLAWS && IsMoveMakingContact(move, battler))
-        pwr = uq4_12_multiply(pwr, UQ_4_12(1.3));
+        power = uq4_12_multiply(power, UQ_4_12(1.3));
     else if (ability == ABILITY_STRONG_JAW && gMovesInfo[move].bitingMove)
-        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+        power = uq4_12_multiply(power, UQ_4_12(1.5));
     else if (ability == ABILITY_MEGA_LAUNCHER && gMovesInfo[move].pulseMove)
-        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
-    else if (ability == ABILITY_WATER_BUBBLE && moveType == TYPE_WATER)
-        pwr = uq4_12_multiply(pwr, UQ_4_12(2.0));
+        power = uq4_12_multiply(power, UQ_4_12(1.5));
+    else if (ability == ABILITY_WATER_BUBBLE && type == TYPE_WATER)
+        power = uq4_12_multiply(power, UQ_4_12(2.0));
     else if ((ability == ABILITY_STEELWORKER || ability == ABILITY_STEELY_SPIRIT)
-            && moveType == TYPE_STEEL)
-        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+            && type == TYPE_STEEL)
+        power = uq4_12_multiply(power, UQ_4_12(1.5));
     else if ((ability == ABILITY_AERILATE
              || ability == ABILITY_REFRIGERATE
              || ability == ABILITY_PIXILATE
              || ability == ABILITY_GALVANIZE)
-             && moveType == TYPE_NORMAL)
-        pwr = uq4_12_multiply(pwr, UQ_4_12(1.2));
+             && type == TYPE_NORMAL)
+        power = uq4_12_multiply(power, UQ_4_12(1.2));
     else if (ability == ABILITY_NORMALIZE)
-        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+        power = uq4_12_multiply(power, UQ_4_12(1.5));
     else if (ability == ABILITY_PUNK_ROCK && gMovesInfo[move].soundMove)
-        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
-    else if (ability == ABILITY_TRANSISTOR && moveType == TYPE_ELECTRIC)
-        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
-    else if (ability == ABILITY_DRAGONS_MAW && moveType == TYPE_DRAGON)
-        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
-    else if (ability == ABILITY_ROCKY_PAYLOAD && moveType == TYPE_ROCK)
-        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+        power = uq4_12_multiply(power, UQ_4_12(1.5));
+    else if (ability == ABILITY_TRANSISTOR && type == TYPE_ELECTRIC)
+        power = uq4_12_multiply(power, UQ_4_12(1.5));
+    else if (ability == ABILITY_DRAGONS_MAW && type == TYPE_DRAGON)
+        power = uq4_12_multiply(power, UQ_4_12(1.5));
+    else if (ability == ABILITY_ROCKY_PAYLOAD && type == TYPE_ROCK)
+        power = uq4_12_multiply(power, UQ_4_12(1.5));
     else if (ability == ABILITY_SHARPNESS && gMovesInfo[move].slicingMove)
-        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
-    else if (ability == ABILITY_HUSTLE && cat == DAMAGE_CATEGORY_PHYSICAL)
-        pwr = uq4_12_multiply_half_down(pwr, UQ_4_12(1.5));
+        power = uq4_12_multiply(power, UQ_4_12(1.5));
+    else if (ability == ABILITY_HUSTLE && category == DAMAGE_CATEGORY_PHYSICAL)
+        power = uq4_12_multiply_half_down(power, UQ_4_12(1.5));
     else if (ability == ABILITY_SNIPER && gMovesInfo[move].alwaysCriticalHit)
-        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+        power = uq4_12_multiply(power, UQ_4_12(1.5));
 
     if (holdEffect == HOLD_EFFECT_PUNCHING_GLOVE && gMovesInfo[move].punchingMove)
-        pwr = uq4_12_multiply(pwr, UQ_4_12(1.1));
+        power = uq4_12_multiply(power, UQ_4_12(1.1));
 
-    if (IS_BATTLER_OF_TYPE(battler, moveType)){
+    if (IS_BATTLER_OF_TYPE(battler, type)){
         if (ability == ABILITY_ADAPTABILITY)
-            pwr = uq4_12_multiply(pwr, UQ_4_12(2.0));
+            power = uq4_12_multiply(power, UQ_4_12(2.0));
         else
-            pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+            power = uq4_12_multiply(power, UQ_4_12(1.5));
     }
 
     if (holdEffect != HOLD_EFFECT_UTILITY_UMBRELLA){
         if (gBattleWeather & B_WEATHER_SUN){
-            if (moveType == TYPE_FIRE)
-                pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
-            else if (moveType == TYPE_WATER && effect != EFFECT_HYDRO_STEAM)
-                pwr = uq4_12_multiply(pwr, UQ_4_12(0.5));
+            if (type == TYPE_FIRE)
+                power = uq4_12_multiply(power, UQ_4_12(1.5));
+            else if (type == TYPE_WATER && effect != EFFECT_HYDRO_STEAM)
+                power = uq4_12_multiply(power, UQ_4_12(0.5));
         }
         else if (gBattleWeather & B_WEATHER_RAIN){
-            if (moveType == TYPE_WATER)
-                pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
-            else if (moveType == TYPE_FIRE && effect != EFFECT_HYDRO_STEAM)
-                pwr = uq4_12_multiply(pwr, UQ_4_12(0.5));
+            if (type == TYPE_WATER)
+                power = uq4_12_multiply(power, UQ_4_12(1.5));
+            else if (type == TYPE_FIRE && effect != EFFECT_HYDRO_STEAM)
+                power = uq4_12_multiply(power, UQ_4_12(0.5));
         }
     }
 
-    if (IsBattlerTerrainAffected(battler, STATUS_FIELD_GRASSY_TERRAIN) && moveType == TYPE_GRASS)
-        pwr = uq4_12_multiply(pwr, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
-    else if (IsBattlerTerrainAffected(battler, STATUS_FIELD_ELECTRIC_TERRAIN) && moveType == TYPE_ELECTRIC)
-        pwr = uq4_12_multiply(pwr, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
-    else if (IsBattlerTerrainAffected(battler, STATUS_FIELD_PSYCHIC_TERRAIN) && moveType == TYPE_PSYCHIC)
-        pwr = uq4_12_multiply(pwr, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
-    else if ((gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN) && moveType == TYPE_DRAGON)
-        pwr = uq4_12_multiply(pwr, UQ_4_12(0.5));
+    if (IsBattlerTerrainAffected(battler, STATUS_FIELD_GRASSY_TERRAIN) && type == TYPE_GRASS)
+        power = uq4_12_multiply(power, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
+    else if (IsBattlerTerrainAffected(battler, STATUS_FIELD_ELECTRIC_TERRAIN) && type == TYPE_ELECTRIC)
+        power = uq4_12_multiply(power, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
+    else if (IsBattlerTerrainAffected(battler, STATUS_FIELD_PSYCHIC_TERRAIN) && type == TYPE_PSYCHIC)
+        power = uq4_12_multiply(power, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
+    else if ((gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN) && type == TYPE_DRAGON)
+        power = uq4_12_multiply(power, UQ_4_12(0.5));
 
-    if (gStatuses3[battler] & STATUS3_CHARGED_UP && moveType == TYPE_ELECTRIC)
-        pwr = uq4_12_multiply(pwr, UQ_4_12(2.0));
-    if (moveType == TYPE_ELECTRIC && ((gFieldStatuses & STATUS_FIELD_MUDSPORT)
+    if (gStatuses3[battler] & STATUS3_CHARGED_UP && type == TYPE_ELECTRIC)
+        power = uq4_12_multiply(power, UQ_4_12(2.0));
+    if (type == TYPE_ELECTRIC && ((gFieldStatuses & STATUS_FIELD_MUDSPORT)
     || AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_MUD_SPORT, 0)))
-        pwr = uq4_12_multiply(pwr, UQ_4_12(B_SPORT_DMG_REDUCTION >= GEN_5 ? 0.33 : 0.5));
-    if (moveType == TYPE_FIRE && ((gFieldStatuses & STATUS_FIELD_WATERSPORT)
+        power = uq4_12_multiply(power, UQ_4_12(B_SPORT_DMG_REDUCTION >= GEN_5 ? 0.33 : 0.5));
+    if (type == TYPE_FIRE && ((gFieldStatuses & STATUS_FIELD_WATERSPORT)
     || AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_WATER_SPORT, 0)))
-        pwr = uq4_12_multiply(pwr, UQ_4_12(B_SPORT_DMG_REDUCTION >= GEN_5 ? 0.33 : 0.5));
+        power = uq4_12_multiply(power, UQ_4_12(B_SPORT_DMG_REDUCTION >= GEN_5 ? 0.33 : 0.5));
 
-    if (pwr < 2 && pwr == gMovesInfo[move].power)
-        StringCopy(pwr_num, gText_BattleSwitchWhich5);
+    if (power < 2 && power == gMovesInfo[move].power)
+        StringCopy(power_num, gText_BattleSwitchWhich5);
     else
-        ConvertIntToDecimalStringN(pwr_num, pwr, STR_CONV_MODE_LEFT_ALIGN, 3);
+        ConvertIntToDecimalStringN(power_num, power, STR_CONV_MODE_LEFT_ALIGN, 3);
 
     //Accuracy
     if (WEATHER_HAS_EFFECT){
         if ((gBattleWeather & B_WEATHER_SUN) && effect == EFFECT_THUNDER)
-            acc = 50;
+            accuracy = 50;
         else if ((gBattleWeather & B_WEATHER_RAIN) && (effect == EFFECT_THUNDER || effect == EFFECT_RAIN_ALWAYS_HIT))
-            acc = 100;
+            accuracy = 100;
         else if ((gBattleWeather & (B_WEATHER_HAIL | B_WEATHER_SNOW)) && effect == EFFECT_BLIZZARD)
-            acc = 100;
+            accuracy = 100;
     }
 
     if (ability == ABILITY_COMPOUND_EYES)
-        acc = (acc * 130) / 100;
+        accuracy = (accuracy * 130) / 100;
     else if (ability == ABILITY_VICTORY_STAR)
-        acc = (acc * 110) / 100;
-    else if (ability == ABILITY_HUSTLE && cat == DAMAGE_CATEGORY_PHYSICAL)
-        acc = (acc * 80) / 100;
+        accuracy = (accuracy * 110) / 100;
+    else if (ability == ABILITY_HUSTLE && category == DAMAGE_CATEGORY_PHYSICAL)
+        accuracy = (accuracy * 80) / 100;
 
     if (GetMonData(mon, MON_DATA_HELD_ITEM) == ITEM_WIDE_LENS)
-        acc = (acc * 110) / 100;
+        accuracy = (accuracy * 110) / 100;
 
-    if (acc < 2)
-        StringCopy(acc_num, gText_BattleSwitchWhich5);
+    if (accuracy < 2)
+        StringCopy(accuracy_num, gText_BattleSwitchWhich5);
     else
-        ConvertIntToDecimalStringN(acc_num, min(acc, 100), STR_CONV_MODE_LEFT_ALIGN, 3);
+        ConvertIntToDecimalStringN(accuracy_num, min(accuracy, 100), STR_CONV_MODE_LEFT_ALIGN, 3);
 
-    StringCopy(gDisplayedStringBattle, cat_start);
-    StringAppend(gDisplayedStringBattle, cat_desc);
-    StringAppend(gDisplayedStringBattle, pwr_start);
-    StringAppend(gDisplayedStringBattle, pwr_desc);
-    StringAppend(gDisplayedStringBattle, pwr_num);
-    StringAppend(gDisplayedStringBattle, acc_start);
-    StringAppend(gDisplayedStringBattle, acc_desc);
-    StringAppend(gDisplayedStringBattle, acc_num);
+    StringCopy(gDisplayedStringBattle, category_start);
+    StringAppend(gDisplayedStringBattle, category_desc);
+    StringAppend(gDisplayedStringBattle, power_start);
+    StringAppend(gDisplayedStringBattle, power_desc);
+    StringAppend(gDisplayedStringBattle, power_num);
+    StringAppend(gDisplayedStringBattle, accuracy_start);
+    StringAppend(gDisplayedStringBattle, accuracy_desc);
+    StringAppend(gDisplayedStringBattle, accuracy_num);
     StringAppend(gDisplayedStringBattle, gText_NewLine);
     if (gMovesInfo[move].effect == EFFECT_PLACEHOLDER)
         StringAppend(gDisplayedStringBattle, gNotDoneYetDescription);
@@ -2058,7 +2054,7 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     if (gCategoryIconSpriteId == 0xFF)
         gCategoryIconSpriteId = CreateSprite(&gSpriteTemplate_CategoryIcons, 38, 64, 1);
 
-    StartSpriteAnim(&gSprites[gCategoryIconSpriteId], cat);
+    StartSpriteAnim(&gSprites[gCategoryIconSpriteId], category);
 
     CopyWindowToVram(B_WIN_MOVE_DESCRIPTION, COPYWIN_FULL);
 }

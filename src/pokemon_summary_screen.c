@@ -302,6 +302,7 @@ static void SetTypeIcons(void);
 static void CreateMoveTypeIcons(void);
 static void SetMonTypeIcons(void);
 static void SetMoveTypeIcons(void);
+static u8 GetMoveType(struct Pokemon *mon, u16 move);
 static void SetContestMoveTypeIcons(void);
 static void SetNewMoveTypeIcon(void);
 static void SwapMovesTypeSprites(u8, u8);
@@ -3691,7 +3692,7 @@ static void PrintMovePowerAndAccuracy(u16 moveIndex)
         FillWindowPixelRect(PSS_LABEL_WINDOW_MOVES_POWER_ACC, PIXEL_FILL(0), 53, 0, 19, 32);
 
         u16 power = gMovesInfo[moveIndex].power;
-        u16 moveType = gMovesInfo[moveIndex].type;
+        u8 moveType = GetMoveType(mon, moveIndex);
 
         if (effect == EFFECT_ERUPTION)
             power = GetMonData(mon, MON_DATA_HP) * power / GetMonData(mon, MON_DATA_MAX_HP);
@@ -3735,7 +3736,7 @@ static void PrintMovePowerAndAccuracy(u16 moveIndex)
                 || ability == ABILITY_REFRIGERATE
                 || ability == ABILITY_PIXILATE
                 || ability == ABILITY_GALVANIZE)
-                && moveType == TYPE_NORMAL)
+                && gMovesInfo[moveIndex].type == TYPE_NORMAL)
             power = uq4_12_multiply(power, UQ_4_12(1.2));
         else if (ability == ABILITY_NORMALIZE)
             power = uq4_12_multiply(power, UQ_4_12(1.5));
@@ -3757,7 +3758,7 @@ static void PrintMovePowerAndAccuracy(u16 moveIndex)
         if (ItemId_GetHoldEffect(GetMonData(mon, MON_DATA_HELD_ITEM)) == HOLD_EFFECT_PUNCHING_GLOVE && gMovesInfo[moveIndex].punchingMove)
             power = uq4_12_multiply(power, UQ_4_12(1.1));
 
-        /*if (IS_BATTLER_OF_TYPE(battler, moveType)){
+        /*if (IS_BATTLER_OF_TYPE(mon, moveType)){
             if (ability == ABILITY_ADAPTABILITY)
                 power = uq4_12_multiply(power, UQ_4_12(2.0));
             else
@@ -4056,77 +4057,72 @@ static void SetMonTypeIcons(void)
     }
 }
 
-#define TYPE_ICON(type) SetTypeSpritePosAndPal(type, 85, 32 + (i * 16), i + SPRITE_ARR_ID_TYPE)
+static u8 GetMoveType(struct Pokemon *mon, u16 move){
+    u32 speciesId = GetMonData(mon, MON_DATA_SPECIES);
+    u8 type = gMovesInfo[move].type;
+    u16 effect = gMovesInfo[move].effect;
+
+    if (move == MOVE_HIDDEN_POWER) {
+        u8 typeBits = ((GetMonData(mon, MON_DATA_HP_IV) & 1) << 0)
+                | ((GetMonData(mon, MON_DATA_ATK_IV) & 1) << 1)
+                | ((GetMonData(mon, MON_DATA_DEF_IV) & 1) << 2)
+                | ((GetMonData(mon, MON_DATA_SPEED_IV) & 1) << 3)
+                | ((GetMonData(mon, MON_DATA_SPATK_IV) & 1) << 4)
+                | ((GetMonData(mon, MON_DATA_SPDEF_IV) & 1) << 5);
+
+        u8 hpType = ((NUMBER_OF_MON_TYPES - 6) * typeBits) / 63 + 2;
+        if (hpType >= TYPE_MYSTERY)
+            hpType++;
+        hpType |= 0xC0;
+        return hpType & 0x3F;
+    }
+    else if (effect == EFFECT_CHANGE_TYPE_ON_ITEM && ItemId_GetHoldEffect(GetMonData(mon, MON_DATA_HELD_ITEM)) == gMovesInfo[move].argument)
+        return ItemId_GetSecondaryId(GetMonData(mon, MON_DATA_HELD_ITEM));
+    else if (effect == EFFECT_REVELATION_DANCE)
+        return gSpeciesInfo[speciesId].types[0];
+    else if (effect == EFFECT_RAGING_BULL &&
+            (speciesId == SPECIES_TAUROS_PALDEAN_COMBAT_BREED
+            || speciesId == SPECIES_TAUROS_PALDEAN_BLAZE_BREED
+            || speciesId == SPECIES_TAUROS_PALDEAN_AQUA_BREED))
+        return gSpeciesInfo[speciesId].types[1];
+    else if (effect == EFFECT_IVY_CUDGEL &&
+            (speciesId == SPECIES_OGERPON_WELLSPRING_MASK || speciesId == SPECIES_OGERPON_WELLSPRING_MASK_TERA
+            || speciesId == SPECIES_OGERPON_HEARTHFLAME_MASK || speciesId == SPECIES_OGERPON_HEARTHFLAME_MASK_TERA
+            || speciesId == SPECIES_OGERPON_CORNERSTONE_MASK || speciesId == SPECIES_OGERPON_CORNERSTONE_MASK_TERA))
+        return gSpeciesInfo[speciesId].types[1];
+    else if (GetMonAbility(mon) == ABILITY_NORMALIZE)
+        return TYPE_NORMAL;
+    else if (gMovesInfo[move].soundMove && GetMonAbility(mon) == ABILITY_LIQUID_VOICE)
+        return TYPE_WATER;
+    else if (effect == EFFECT_AURA_WHEEL && speciesId == SPECIES_MORPEKO_HANGRY)
+        return TYPE_DARK;
+    else if (gMovesInfo[move].type == TYPE_NORMAL){
+        switch(GetMonAbility(mon)){
+            case ABILITY_AERILATE:
+                return TYPE_FLYING;
+            case ABILITY_REFRIGERATE:
+                return TYPE_ICE;
+            case ABILITY_PIXILATE:
+                return TYPE_FAIRY;
+            case ABILITY_GALVANIZE:
+                return TYPE_ELECTRIC;
+            default:
+                return TYPE_NORMAL;
+        }
+    }
+    return type;
+}
+
 static void SetMoveTypeIcons(void)
 {
     u8 i;
     struct PokeSummary *summary = &sMonSummaryScreen->summary;
     struct Pokemon *mon = &sMonSummaryScreen->currentMon;
-    u32 speciesId = GetMonData(mon, MON_DATA_SPECIES);
 
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
-        u16 effect = gMovesInfo[summary->moves[i]].effect;
         if (summary->moves[i] != MOVE_NONE)
-        {
-            if (summary->moves[i] == MOVE_HIDDEN_POWER) {
-                u8 typeBits = ((GetMonData(mon, MON_DATA_HP_IV) & 1) << 0)
-                     | ((GetMonData(mon, MON_DATA_ATK_IV) & 1) << 1)
-                     | ((GetMonData(mon, MON_DATA_DEF_IV) & 1) << 2)
-                     | ((GetMonData(mon, MON_DATA_SPEED_IV) & 1) << 3)
-                     | ((GetMonData(mon, MON_DATA_SPATK_IV) & 1) << 4)
-                     | ((GetMonData(mon, MON_DATA_SPDEF_IV) & 1) << 5);
-
-                u8 hpType = ((NUMBER_OF_MON_TYPES - 6) * typeBits) / 63 + 2;
-                if (hpType >= TYPE_MYSTERY)
-                    hpType++;
-                hpType |= 0xC0;
-                TYPE_ICON(hpType & 0x3F);
-            }
-            else if (effect == EFFECT_CHANGE_TYPE_ON_ITEM && ItemId_GetHoldEffect(GetMonData(mon, MON_DATA_HELD_ITEM)) == gMovesInfo[summary->moves[i]].argument)
-                TYPE_ICON(ItemId_GetSecondaryId(GetMonData(mon, MON_DATA_HELD_ITEM)));
-            else if (effect == EFFECT_REVELATION_DANCE)
-                TYPE_ICON(gSpeciesInfo[speciesId].types[0]);
-            else if (effect == EFFECT_RAGING_BULL &&
-                    (speciesId == SPECIES_TAUROS_PALDEAN_COMBAT_BREED
-                    || speciesId == SPECIES_TAUROS_PALDEAN_BLAZE_BREED
-                    || speciesId == SPECIES_TAUROS_PALDEAN_AQUA_BREED))
-                TYPE_ICON(gSpeciesInfo[speciesId].types[1]);
-            else if (effect == EFFECT_IVY_CUDGEL &&
-                    (speciesId == SPECIES_OGERPON_WELLSPRING_MASK || speciesId == SPECIES_OGERPON_WELLSPRING_MASK_TERA
-                    || speciesId == SPECIES_OGERPON_HEARTHFLAME_MASK || speciesId == SPECIES_OGERPON_HEARTHFLAME_MASK_TERA
-                    || speciesId == SPECIES_OGERPON_CORNERSTONE_MASK || speciesId == SPECIES_OGERPON_CORNERSTONE_MASK_TERA))
-                TYPE_ICON(gSpeciesInfo[speciesId].types[1]);
-            else if (GetMonAbility(mon) == ABILITY_NORMALIZE)
-                TYPE_ICON(TYPE_NORMAL);
-            else if (gMovesInfo[summary->moves[i]].soundMove && GetMonAbility(mon) == ABILITY_LIQUID_VOICE)
-                TYPE_ICON(TYPE_WATER);
-            else if (effect == EFFECT_AURA_WHEEL && speciesId == SPECIES_MORPEKO_HANGRY)
-                TYPE_ICON(TYPE_DARK);
-            else if (gMovesInfo[summary->moves[i]].type == TYPE_NORMAL){
-                u8 ateType;
-                switch(GetMonAbility(mon)){
-                    case ABILITY_AERILATE:
-                        ateType = TYPE_FLYING;
-                        break;
-                    case ABILITY_REFRIGERATE:
-                        ateType = TYPE_ICE;
-                        break;
-                    case ABILITY_PIXILATE:
-                        ateType = TYPE_FAIRY;
-                        break;
-                    case ABILITY_GALVANIZE:
-                        ateType = TYPE_ELECTRIC;
-                        break;
-                    default:
-                        ateType = TYPE_NORMAL;
-                        break;
-                }
-                TYPE_ICON(ateType);
-            }
-            else
-                TYPE_ICON(gMovesInfo[summary->moves[i]].type);
-        }
+            SetTypeSpritePosAndPal(GetMoveType(mon, summary->moves[i]), 85, 32 + (i * 16), i + SPRITE_ARR_ID_TYPE);
         else
             SetSpriteInvisibility(i + SPRITE_ARR_ID_TYPE, TRUE);
     }
@@ -4149,73 +4145,12 @@ static void SetContestMoveTypeIcons(void)
 static void SetNewMoveTypeIcon(void)
 {
     struct Pokemon *mon = &sMonSummaryScreen->currentMon;
-    u32 speciesId = GetMonData(mon, MON_DATA_SPECIES);
-    u16 effect = gMovesInfo[sMonSummaryScreen->newMove].effect;
-
     if (sMonSummaryScreen->newMove == MOVE_NONE)
-    {
         SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 4, TRUE);
-    }
     else
     {
         if (sMonSummaryScreen->currPageIndex == PSS_PAGE_BATTLE_MOVES)
-            if (sMonSummaryScreen->newMove == MOVE_HIDDEN_POWER) {
-                u8 typeBits = ((GetMonData(mon, MON_DATA_HP_IV) & 1) << 0)
-                     | ((GetMonData(mon, MON_DATA_ATK_IV) & 1) << 1)
-                     | ((GetMonData(mon, MON_DATA_DEF_IV) & 1) << 2)
-                     | ((GetMonData(mon, MON_DATA_SPEED_IV) & 1) << 3)
-                     | ((GetMonData(mon, MON_DATA_SPATK_IV) & 1) << 4)
-                     | ((GetMonData(mon, MON_DATA_SPDEF_IV) & 1) << 5);
-
-                u8 hpType = ((NUMBER_OF_MON_TYPES - 6) * typeBits) / 63 + 2;
-                if (hpType >= TYPE_MYSTERY)
-                    hpType++;
-                hpType |= 0xC0;
-                NEW_TYPE_ICON(hpType & 0x3F);
-            }
-            else if (effect == EFFECT_CHANGE_TYPE_ON_ITEM && ItemId_GetHoldEffect(GetMonData(mon, MON_DATA_HELD_ITEM)) == gMovesInfo[sMonSummaryScreen->newMove].argument)
-                NEW_TYPE_ICON(ItemId_GetSecondaryId(GetMonData(mon, MON_DATA_HELD_ITEM)));
-            else if (effect == EFFECT_REVELATION_DANCE)
-                NEW_TYPE_ICON(gSpeciesInfo[speciesId].types[0]);
-            else if (effect == EFFECT_RAGING_BULL &&
-                    (speciesId == SPECIES_TAUROS_PALDEAN_COMBAT_BREED
-                    || speciesId == SPECIES_TAUROS_PALDEAN_BLAZE_BREED
-                    || speciesId == SPECIES_TAUROS_PALDEAN_AQUA_BREED))
-                NEW_TYPE_ICON(gSpeciesInfo[speciesId].types[1]);
-            else if (effect == EFFECT_IVY_CUDGEL &&
-                    (speciesId == SPECIES_OGERPON_WELLSPRING_MASK || speciesId == SPECIES_OGERPON_WELLSPRING_MASK_TERA
-                    || speciesId == SPECIES_OGERPON_HEARTHFLAME_MASK || speciesId == SPECIES_OGERPON_HEARTHFLAME_MASK_TERA
-                    || speciesId == SPECIES_OGERPON_CORNERSTONE_MASK || speciesId == SPECIES_OGERPON_CORNERSTONE_MASK_TERA))
-                NEW_TYPE_ICON(gSpeciesInfo[speciesId].types[1]);
-            else if (GetMonAbility(mon) == ABILITY_NORMALIZE)
-                NEW_TYPE_ICON(TYPE_NORMAL);
-            else if (gMovesInfo[sMonSummaryScreen->newMove].soundMove && GetMonAbility(mon) == ABILITY_LIQUID_VOICE)
-                NEW_TYPE_ICON(TYPE_WATER);
-            else if (effect == EFFECT_AURA_WHEEL && speciesId == SPECIES_MORPEKO_HANGRY)
-                NEW_TYPE_ICON(TYPE_DARK);
-            else if (gMovesInfo[sMonSummaryScreen->newMove].type == TYPE_NORMAL){
-                u8 ateType;
-                switch(GetMonAbility(mon)){
-                    case ABILITY_AERILATE:
-                        ateType = TYPE_FLYING;
-                        break;
-                    case ABILITY_REFRIGERATE:
-                        ateType = TYPE_ICE;
-                        break;
-                    case ABILITY_PIXILATE:
-                        ateType = TYPE_FAIRY;
-                        break;
-                    case ABILITY_GALVANIZE:
-                        ateType = TYPE_ELECTRIC;
-                        break;
-                    default:
-                        ateType = TYPE_NORMAL;
-                        break;
-                }
-                NEW_TYPE_ICON(ateType);
-            }
-            else
-                NEW_TYPE_ICON(gMovesInfo[sMonSummaryScreen->newMove].type);
+            NEW_TYPE_ICON(GetMoveType(mon, sMonSummaryScreen->newMove));
         else
             NEW_TYPE_ICON(NUMBER_OF_MON_TYPES + gMovesInfo[sMonSummaryScreen->newMove].contestCategory);
     }

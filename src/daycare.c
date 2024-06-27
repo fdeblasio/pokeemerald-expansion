@@ -1308,12 +1308,7 @@ u8 GetDaycareCompatibilityScore(struct DayCare *daycare)
 
     // one parent is Ditto
     if (eggGroups[0][0] == EGG_GROUP_DITTO || eggGroups[1][0] == EGG_GROUP_DITTO)
-    {
-        if (trainerIds[0] == trainerIds[1])
-            return PARENTS_LOW_COMPATIBILITY;
-
         return PARENTS_MED_COMPATIBILITY;
-    }
     // neither parent is Ditto
     else
     {
@@ -1325,19 +1320,9 @@ u8 GetDaycareCompatibilityScore(struct DayCare *daycare)
             return PARENTS_INCOMPATIBLE;
 
         if (species[0] == species[1])
-        {
-            if (trainerIds[0] == trainerIds[1])
-                return PARENTS_MED_COMPATIBILITY; // same species, same trainer
-
             return PARENTS_MAX_COMPATIBILITY; // same species, different trainers
-        }
         else
-        {
-            if (trainerIds[0] != trainerIds[1])
-                return PARENTS_MED_COMPATIBILITY; // different species, different trainers
-
-            return PARENTS_LOW_COMPATIBILITY; // different species, same trainer
-        }
+            return PARENTS_MED_COMPATIBILITY; // different species, same trainer
     }
 }
 

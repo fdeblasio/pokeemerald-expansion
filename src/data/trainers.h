@@ -437,7 +437,26 @@
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE, \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON
 
+#define RALPH(Level, Species, Ability) \
+    .lvl = Level,                      \
+    .species = SPECIES_##Species,      \
+    .ability = ABILITY_##Ability,      \
+    .iv = PERFECT_IVS,                 \
+    .gender = TRAINER_MON_MALE,        \
+    .nickname = COMPOUND_STRING("Ralph")
+
 [TRAINER_WALLY_MAUVILLE] =
+{
+    WALLY_INFO,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        RALPH(19, RALTS, TRACE),
+        }
+    },
+},
+
+[TRAINER_WALLY_VERDANTURF] =
 {
     WALLY_INFO,
     .partySize = 2,
@@ -445,16 +464,12 @@
         {
         .lvl = 20,
         .species = SPECIES_BUDEW,
+        .ability = ABILITY_NATURAL_CURE,
         .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = 22,
-        .species = SPECIES_KIRLIA,
-        .ability = ABILITY_TRACE,
-        .iv = PERFECT_IVS,
-        .gender = TRAINER_MON_MALE,
-        .nickname = COMPOUND_STRING("Ralph"),
+        RALPH(22, KIRLIA, TRACE),
         }
     },
 },
@@ -468,41 +483,95 @@
         {
         .lvl = 46,
         .species = SPECIES_DELCATTY,
+        .ability = ABILITY_NORMALIZE,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_ASSIST, MOVE_CHARM},
         .gender = TRAINER_MON_FEMALE,
         },
         {
+        .lvl = 47,
+        .species = SPECIES_MAGNEZONE,
+        .ability = ABILITY_ANALYTIC,
+        .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
+        .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_METAL_SOUND},
+        },
+        {
         .lvl = 46,
         .species = SPECIES_ALTARIA,
+        .ability = ABILITY_NATURAL_CURE,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
         .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 47,
-        .species = SPECIES_MAGNEZONE,
-        .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
-        .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_METAL_SOUND},
-        },
-        {
-        .lvl = 47,
         .species = SPECIES_ROSERADE,
+        .ability = ABILITY_NATURAL_CURE,
         .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
         .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC},
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = 49,
-        .species = SPECIES_GALLADE,
-        .ability = ABILITY_SHARPNESS,
-        .iv = PERFECT_IVS,
+        RALPH(49, GALLADE, SHARPNESS),
+        .nature = NATURE_ADAMANT,
         .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE},
         .heldItem = ITEM_GALLADITE,
-        .nickname = COMPOUND_STRING("Ralph"),
         }
     },
 },
+
+#define REMATCH_RALPH(rematch)                                                         \
+    {                                                                                  \
+    REMATCH_MON(GALLADE, ACE, rematch),                                                \
+    .ability = ABILITY_SHARPNESS,                                                      \
+    .nature = NATURE_ADAMANT,                                                          \
+    .ev = EV_SPREAD_ATK_SPE_HP,                                                        \
+    .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                        \
+    .heldItem = ITEM_GALLADITE,                                                        \
+    .nickname = COMPOUND_STRING("Ralph"),                                              \
+    .friendship = 255,                                                                 \
+    }
+
+#define WALLY_ROSERADE(rematch)                                                \
+    {                                                                          \
+    REMATCH_MON(ROSERADE, TIER2, rematch),                                     \
+    .ability = ABILITY_NATURAL_CURE,                                           \
+    .nature = NATURE_MODEST,                                                   \
+    .ev = TRAINER_PARTY_EVS(0, 0, 0, 63, 63, 1),                               \
+    .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC}, \
+    .gender = TRAINER_MON_FEMALE,                                              \
+    .heldItem = ITEM_MIRACLE_SEED,                                             \
+    }
+
+#define WALLY_ALTARIA(rematch)                                                       \
+    {                                                                                \
+    REMATCH_MON(ALTARIA, TIER2, rematch),                                            \
+    .ability = ABILITY_NATURAL_CURE,                                                 \
+    .nature = NATURE_MODEST,                                                         \
+    .ev = TRAINER_PARTY_EVS(0, 0, 1, 63, 63, 0),                                     \
+    .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD}, \
+    .gender = TRAINER_MON_MALE,                                                      \
+    }
+
+#define WALLY_MAGNEZONE(rematch)                                                       \
+    {                                                                                  \
+    REMATCH_MON(MAGNEZONE, TIER3, rematch),                                            \
+    .ability = ABILITY_ANALYTIC,                                                       \
+    .nature = NATURE_BOLD,                                                             \
+    .ev = TRAINER_PARTY_EVS(0, 0, 63, 0, 63, 1),                                       \
+    .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_METAL_SOUND}, \
+    }
+
+#define WALLY_DELCATTY(rematch)                                         \
+    {                                                                   \
+    REMATCH_MON(DELCATTY, TIER3, rematch),                              \
+    .ability = ABILITY_NORMALIZE,                                       \
+    .nature = NATURE_TIMID,                                             \
+    .ev = EV_SPREAD_SPA_SPE_HP,                                         \
+    .moves = {MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_ASSIST, MOVE_CHARM}, \
+    .gender = TRAINER_MON_FEMALE,                                       \
+    }
 
 [TRAINER_WALLY_VR_2] =
 {
@@ -510,32 +579,11 @@
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        {
-        REMATCH_MON(DELCATTY, TIER3, 2),
-        .moves = {MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_ASSIST, MOVE_CHARM},
-        .gender = TRAINER_MON_FEMALE,
-        },
-        {
-        REMATCH_MON(ALTARIA, TIER3, 2),
-        .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        REMATCH_MON(MAGNEZONE, TIER2, 2),
-        .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_METAL_SOUND},
-        },
-        {
-        REMATCH_MON(ROSERADE, TIER2, 2),
-        .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC},
-        .gender = TRAINER_MON_FEMALE,
-        },
-        {
-        REMATCH_MON(GALLADE, ACE, 2),
-        .ability = ABILITY_SHARPNESS,
-        .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE},
-        .heldItem = ITEM_GALLADITE,
-        .nickname = COMPOUND_STRING("Ralph"),
-        }
+        WALLY_DELCATTY(2),
+        WALLY_MAGNEZONE(2),
+        WALLY_ALTARIA(2),
+        WALLY_ROSERADE(2),
+        REMATCH_RALPH(2),
     },
 },
 
@@ -545,32 +593,11 @@
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        {
-        REMATCH_MON(DELCATTY, TIER3, 3),
-        .moves = {MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_ASSIST, MOVE_CHARM},
-        .gender = TRAINER_MON_FEMALE,
-        },
-        {
-        REMATCH_MON(ALTARIA, TIER3, 3),
-        .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        REMATCH_MON(MAGNEZONE, TIER2, 3),
-        .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_METAL_SOUND},
-        },
-        {
-        REMATCH_MON(ROSERADE, TIER2, 3),
-        .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC},
-        .gender = TRAINER_MON_FEMALE,
-        },
-        {
-        REMATCH_MON(GALLADE, ACE, 3),
-        .ability = ABILITY_SHARPNESS,
-        .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE},
-        .heldItem = ITEM_GALLADITE,
-        .nickname = COMPOUND_STRING("Ralph"),
-        }
+        WALLY_DELCATTY(3),
+        WALLY_MAGNEZONE(3),
+        WALLY_ALTARIA(3),
+        WALLY_ROSERADE(3),
+        REMATCH_RALPH(3),
     },
 },
 
@@ -580,32 +607,11 @@
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        {
-        REMATCH_MON(DELCATTY, TIER3, 4),
-        .moves = {MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_ASSIST, MOVE_CHARM},
-        .gender = TRAINER_MON_FEMALE,
-        },
-        {
-        REMATCH_MON(ALTARIA, TIER3, 4),
-        .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        REMATCH_MON(MAGNEZONE, TIER2, 4),
-        .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_METAL_SOUND},
-        },
-        {
-        REMATCH_MON(ROSERADE, TIER2, 4),
-        .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC},
-        .gender = TRAINER_MON_FEMALE,
-        },
-        {
-        REMATCH_MON(GALLADE, ACE, 4),
-        .ability = ABILITY_SHARPNESS,
-        .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE},
-        .heldItem = ITEM_GALLADITE,
-        .nickname = COMPOUND_STRING("Ralph"),
-        }
+        WALLY_DELCATTY(4),
+        WALLY_MAGNEZONE(4),
+        WALLY_ALTARIA(4),
+        WALLY_ROSERADE(4),
+        REMATCH_RALPH(4),
     },
 },
 
@@ -620,32 +626,11 @@
         .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_MYSTICAL_FIRE, MOVE_CALM_MIND},
         .gender = TRAINER_MON_FEMALE,
         },
-        {
-        REMATCH_MON(DELCATTY, TIER3, 5),
-        .moves = {MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_ASSIST, MOVE_CHARM},
-        .gender = TRAINER_MON_FEMALE,
-        },
-        {
-        REMATCH_MON(ALTARIA, TIER3, 5),
-        .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        REMATCH_MON(MAGNEZONE, TIER2, 5),
-        .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_METAL_SOUND},
-        },
-        {
-        REMATCH_MON(ROSERADE, TIER2, 5),
-        .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC},
-        .gender = TRAINER_MON_FEMALE,
-        },
-        {
-        REMATCH_MON(GALLADE, ACE, 5),
-        .ability = ABILITY_SHARPNESS,
-        .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE},
-        .heldItem = ITEM_GALLADITE,
-        .nickname = COMPOUND_STRING("Ralph"),
-        }
+        WALLY_DELCATTY(5),
+        WALLY_MAGNEZONE(5),
+        WALLY_ALTARIA(5),
+        WALLY_ROSERADE(5),
+        REMATCH_RALPH(5),
     },
 },
 
@@ -2813,10 +2798,12 @@
     YOUNGSTER_INFO,             \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON
 
-#define LINUS                    \
-    .ability = ABILITY_GLUTTONY, \
-    .nature = NATURE_JOLLY,      \
-    .gender = TRAINER_MON_MALE,  \
+#define LINUS(Level, Species)     \
+    .lvl = Level,                 \
+    .species = SPECIES_##Species, \
+    .ability = ABILITY_GLUTTONY,  \
+    .nature = NATURE_JOLLY,       \
+    .gender = TRAINER_MON_MALE,   \
     .nickname = COMPOUND_STRING("Linus")
 
 [TRAINER_CALVIN_1] =
@@ -2825,9 +2812,7 @@
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 5,
-        .species = SPECIES_ZIGZAGOON,
-        LINUS,
+        LINUS(5, ZIGZAGOON),
         }
     },
 },
@@ -2841,12 +2826,11 @@
         .lvl = REMATCH_2_LEVEL_1,
         .species = SPECIES_TAILLOW,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
+        .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = REMATCH_2_LEVEL_1,
-        .species = SPECIES_LINOONE,
+        LINUS(REMATCH_2_LEVEL_1, LINOONE),
         .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
-        LINUS,
         }
     },
 },
@@ -2860,12 +2844,11 @@
         .lvl = REMATCH_3_LEVEL_1,
         .species = SPECIES_SWELLOW,
         .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
+        .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = REMATCH_3_LEVEL_1,
-        .species = SPECIES_LINOONE,
+        LINUS(REMATCH_3_LEVEL_1, LINOONE),
         .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
-        LINUS,
         }
     },
 },
@@ -2880,17 +2863,17 @@
         .species = SPECIES_MIGHTYENA,
         .ability = ABILITY_INTIMIDATE,
         .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = REMATCH_4_LEVEL_1,
         .species = SPECIES_SWELLOW,
         .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
+        .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = REMATCH_4_LEVEL_1,
-        .species = SPECIES_LINOONE,
+        LINUS(REMATCH_4_LEVEL_1, LINOONE),
         .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
-        LINUS,
         }
     },
 },
@@ -2904,26 +2887,27 @@
         .lvl = REMATCH_5_LEVEL_2,
         .species = SPECIES_FLYGON,
         .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = REMATCH_5_LEVEL_2,
         .species = SPECIES_MIGHTYENA,
         .ability = ABILITY_INTIMIDATE,
         .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = REMATCH_5_LEVEL_2,
         .species = SPECIES_SWELLOW,
         .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
+        .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = REMATCH_5_LEVEL_1,
-        .species = SPECIES_LINOONE,
+        LINUS(REMATCH_5_LEVEL_1, LINOONE),
         .ev = EV_SPREAD_ATK_SPE_HP,
         .iv = PERFECT_IVS,
         .moves = {MOVE_BODY_SLAM, MOVE_PLAY_ROUGH, MOVE_PIN_MISSILE, MOVE_HONE_CLAWS},
         .heldItem = ITEM_FIGY_BERRY,
-        LINUS,
         }
     },
 },
@@ -19145,26 +19129,6 @@
         .lvl = 9,
         .species = SPECIES_WAILMER,
         .moves = {MOVE_SPLASH, MOVE_WATER_GUN, MOVE_NONE, MOVE_NONE}
-        }
-    },
-},
-
-[TRAINER_UNUSED_5] =
-{
-    .trainerName = _("Unused"),
-    HIKER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 10,
-        .species = SPECIES_PELIPPER,
-        .moves = {MOVE_GUST, MOVE_GROWL, MOVE_NONE, MOVE_NONE}
-        },
-        {
-        .lvl = 10,
-        .species = SPECIES_POOCHYENA,
-        .moves = {MOVE_BITE, MOVE_SCARY_FACE, MOVE_NONE, MOVE_NONE}
         }
     },
 },

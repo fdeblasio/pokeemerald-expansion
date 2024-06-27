@@ -152,33 +152,33 @@ BattleFrontier_ScottsHouse_EventScript_WelcomeToFrontier::
 	applymovement LOCALID_SCOTT, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox BattleFrontier_ScottsHouse_Text_HaveThisAsMementoOfOurPathsCrossing, MSGBOX_DEFAULT
-	goto_if_eq VAR_SCOTT_STATE, 13, BattleFrontier_ScottsHouse_EventScript_Give4BattlePoints
+	goto_if_eq VAR_SCOTT_STATE, 11, BattleFrontier_ScottsHouse_EventScript_Give4BattlePoints
 	goto_if_ge VAR_SCOTT_STATE, 9, BattleFrontier_ScottsHouse_EventScript_Give3BattlePoints
 	goto_if_ge VAR_SCOTT_STATE, 6, BattleFrontier_ScottsHouse_EventScript_Give2BattlePoints
 	goto BattleFrontier_ScottsHouse_EventScript_Give1BattlePoint
 	end
 
 BattleFrontier_ScottsHouse_EventScript_Give4BattlePoints::
-	buffernumberstring STR_VAR_1, 4
-	setvar VAR_0x8004, 4
+	buffernumberstring STR_VAR_1, 11
+	setvar VAR_0x8004, 11
 	goto BattleFrontier_ScottsHouse_EventScript_GiveBattlePoints
 	end
 
 BattleFrontier_ScottsHouse_EventScript_Give3BattlePoints::
-	buffernumberstring STR_VAR_1, 3
-	setvar VAR_0x8004, 3
+	buffernumberstring STR_VAR_1, 9
+	setvar VAR_0x8004, 9
 	goto BattleFrontier_ScottsHouse_EventScript_GiveBattlePoints
 	end
 
 BattleFrontier_ScottsHouse_EventScript_Give2BattlePoints::
-	buffernumberstring STR_VAR_1, 2
-	setvar VAR_0x8004, 2
+	buffernumberstring STR_VAR_1, 6
+	setvar VAR_0x8004, 6
 	goto BattleFrontier_ScottsHouse_EventScript_GiveBattlePoints
 	end
 
 BattleFrontier_ScottsHouse_EventScript_Give1BattlePoint::
-	buffernumberstring STR_VAR_1, 1
-	setvar VAR_0x8004, 1
+	buffernumberstring STR_VAR_1, 4
+	setvar VAR_0x8004, 4
 	goto BattleFrontier_ScottsHouse_EventScript_GiveBattlePoints
 	end
 

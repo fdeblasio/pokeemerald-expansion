@@ -1914,7 +1914,9 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     u16 acc = gMovesInfo[move].accuracy;
     u8 cat = gMovesInfo[move].category;
     u16 effect = gMovesInfo[move].effect;
-    
+    u16 holdEffect = GetBattlerHoldEffect(battler, TRUE);
+    u16 moveType = gMovesInfo[move].type;
+
     struct Pokemon *mon = &gPlayerParty[gBattlerPartyIndexes[battler]];
 
     u8 pwr_num[3], acc_num[3];
@@ -1966,52 +1968,104 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
         pwr = uq4_12_multiply(pwr, UQ_4_12(2.0));
     else if ((effect == EFFECT_EARTHQUAKE || effect == EFFECT_MAGNITUDE) && (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN))
         pwr = uq4_12_multiply(pwr, UQ_4_12(0.5));
+    else if (effect == EFFECT_HYDRO_STEAM && (gBattleWeather & B_WEATHER_SUN) && holdEffect != HOLD_EFFECT_UTILITY_UMBRELLA)
+        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+    else if (gMovesInfo[move].alwaysCriticalHit)
+        pwr = uq4_12_multiply_half_down(pwr, B_CRIT_MULTIPLIER >= GEN_6 ? UQ_4_12(1.5) : UQ_4_12(2.0));
 
-    if (GetBattlerAbility(battler) == ABILITY_TECHNICIAN && pwr > 1 && pwr <= 60)
+    u16 ability = GetBattlerAbility(battler);
+    if (ability == ABILITY_TECHNICIAN && pwr > 1 && pwr <= 60)
         pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
-    else if (GetBattlerAbility(battler) == ABILITY_FLARE_BOOST && (gBattleMons[battler].status1 & STATUS1_BURN) && cat == DAMAGE_CATEGORY_SPECIAL)
+    else if (ability == ABILITY_FLARE_BOOST && (gBattleMons[battler].status1 & STATUS1_BURN) && cat == DAMAGE_CATEGORY_SPECIAL)
         pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
-    else if (GetBattlerAbility(battler) == ABILITY_TOXIC_BOOST && (gBattleMons[battler].status1 & STATUS1_PSN_ANY) && cat == DAMAGE_CATEGORY_PHYSICAL)
+    else if (ability == ABILITY_TOXIC_BOOST && (gBattleMons[battler].status1 & STATUS1_PSN_ANY) && cat == DAMAGE_CATEGORY_PHYSICAL)
         pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
-    else if (GetBattlerAbility(battler) == ABILITY_RECKLESS && IS_MOVE_RECOIL(move))
+    else if (ability == ABILITY_RECKLESS && IS_MOVE_RECOIL(move))
         pwr = uq4_12_multiply(pwr, UQ_4_12(1.2));
-    else if (GetBattlerAbility(battler) == ABILITY_IRON_FIST && gMovesInfo[move].punchingMove)
+    else if (ability == ABILITY_IRON_FIST && gMovesInfo[move].punchingMove)
         pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
-    else if (GetBattlerAbility(battler) == ABILITY_SHEER_FORCE && MoveIsAffectedBySheerForce(move))
+    else if (ability == ABILITY_SHEER_FORCE && MoveIsAffectedBySheerForce(move))
         pwr = uq4_12_multiply(pwr, UQ_4_12(1.3));
-    else if (GetBattlerAbility(battler) == ABILITY_SAND_FORCE
+    else if (ability == ABILITY_SAND_FORCE
              && (gBattleWeather & B_WEATHER_SANDSTORM)
-             && (gMovesInfo[move].type == TYPE_ROCK || gMovesInfo[move].type == TYPE_GROUND || gMovesInfo[move].type == TYPE_STEEL))
+             && (moveType == TYPE_ROCK || moveType == TYPE_GROUND || moveType == TYPE_STEEL))
         pwr = uq4_12_multiply(pwr, UQ_4_12(1.3));
-    else if (GetBattlerAbility(battler) == ABILITY_TOUGH_CLAWS && IsMoveMakingContact(move, battler))
+    else if (ability == ABILITY_TOUGH_CLAWS && IsMoveMakingContact(move, battler))
         pwr = uq4_12_multiply(pwr, UQ_4_12(1.3));
-    else if (GetBattlerAbility(battler) == ABILITY_STRONG_JAW && gMovesInfo[move].bitingMove)
+    else if (ability == ABILITY_STRONG_JAW && gMovesInfo[move].bitingMove)
         pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
-    else if (GetBattlerAbility(battler) == ABILITY_MEGA_LAUNCHER && gMovesInfo[move].pulseMove)
+    else if (ability == ABILITY_MEGA_LAUNCHER && gMovesInfo[move].pulseMove)
         pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
-    else if (GetBattlerAbility(battler) == ABILITY_WATER_BUBBLE && gMovesInfo[move].type == TYPE_WATER)
+    else if (ability == ABILITY_WATER_BUBBLE && moveType == TYPE_WATER)
         pwr = uq4_12_multiply(pwr, UQ_4_12(2.0));
-    else if ((GetBattlerAbility(battler) == ABILITY_STEELWORKER || GetBattlerAbility(battler) == ABILITY_STEELY_SPIRIT)
-            && gMovesInfo[move].type == TYPE_STEEL)
+    else if ((ability == ABILITY_STEELWORKER || ability == ABILITY_STEELY_SPIRIT)
+            && moveType == TYPE_STEEL)
         pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
-    else if ((GetBattlerAbility(battler) == ABILITY_AERILATE
-             || GetBattlerAbility(battler) == ABILITY_REFRIGERATE
-             || GetBattlerAbility(battler) == ABILITY_PIXILATE
-             || GetBattlerAbility(battler) == ABILITY_GALVANIZE)
-             && gMovesInfo[move].type == TYPE_NORMAL)
+    else if ((ability == ABILITY_AERILATE
+             || ability == ABILITY_REFRIGERATE
+             || ability == ABILITY_PIXILATE
+             || ability == ABILITY_GALVANIZE)
+             && moveType == TYPE_NORMAL)
         pwr = uq4_12_multiply(pwr, UQ_4_12(1.2));
-    else if (GetBattlerAbility(battler) == ABILITY_NORMALIZE)
+    else if (ability == ABILITY_NORMALIZE)
         pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
-    else if (GetBattlerAbility(battler) == ABILITY_PUNK_ROCK && gMovesInfo[move].soundMove)
+    else if (ability == ABILITY_PUNK_ROCK && gMovesInfo[move].soundMove)
         pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
-    else if (GetBattlerAbility(battler) == ABILITY_TRANSISTOR && gMovesInfo[move].type == TYPE_ELECTRIC)
+    else if (ability == ABILITY_TRANSISTOR && moveType == TYPE_ELECTRIC)
         pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
-    else if (GetBattlerAbility(battler) == ABILITY_DRAGONS_MAW && gMovesInfo[move].type == TYPE_DRAGON)
+    else if (ability == ABILITY_DRAGONS_MAW && moveType == TYPE_DRAGON)
         pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
-    else if (GetBattlerAbility(battler) == ABILITY_ROCKY_PAYLOAD && gMovesInfo[move].type == TYPE_ROCK)
+    else if (ability == ABILITY_ROCKY_PAYLOAD && moveType == TYPE_ROCK)
         pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
-    else if (GetBattlerAbility(battler) == ABILITY_SHARPNESS && gMovesInfo[move].slicingMove)
+    else if (ability == ABILITY_SHARPNESS && gMovesInfo[move].slicingMove)
         pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+    else if (ability == ABILITY_HUSTLE && cat == DAMAGE_CATEGORY_PHYSICAL)
+        pwr = uq4_12_multiply_half_down(pwr, UQ_4_12(1.5));
+    else if (ability == ABILITY_SNIPER && gMovesInfo[move].alwaysCriticalHit)
+        pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+
+    if (holdEffect == HOLD_EFFECT_PUNCHING_GLOVE && gMovesInfo[move].punchingMove)
+        pwr = uq4_12_multiply(pwr, UQ_4_12(1.1));
+
+    if (IS_BATTLER_OF_TYPE(battler, moveType)){
+        if (ability == ABILITY_ADAPTABILITY)
+            pwr = uq4_12_multiply(pwr, UQ_4_12(2.0));
+        else
+            pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+    }
+
+    if (holdEffect != HOLD_EFFECT_UTILITY_UMBRELLA){
+        if (gBattleWeather & B_WEATHER_SUN){
+            if (moveType == TYPE_FIRE)
+                pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+            else if (moveType == TYPE_WATER && effect != EFFECT_HYDRO_STEAM)
+                pwr = uq4_12_multiply(pwr, UQ_4_12(0.5));
+        }
+        else if (gBattleWeather & B_WEATHER_RAIN){
+            if (moveType == TYPE_WATER)
+                pwr = uq4_12_multiply(pwr, UQ_4_12(1.5));
+            else if (moveType == TYPE_FIRE && effect != EFFECT_HYDRO_STEAM)
+                pwr = uq4_12_multiply(pwr, UQ_4_12(0.5));
+        }
+    }
+
+    if (IsBattlerTerrainAffected(battler, STATUS_FIELD_GRASSY_TERRAIN) && moveType == TYPE_GRASS)
+        pwr = uq4_12_multiply(pwr, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
+    else if (IsBattlerTerrainAffected(battler, STATUS_FIELD_ELECTRIC_TERRAIN) && moveType == TYPE_ELECTRIC)
+        pwr = uq4_12_multiply(pwr, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
+    else if (IsBattlerTerrainAffected(battler, STATUS_FIELD_PSYCHIC_TERRAIN) && moveType == TYPE_PSYCHIC)
+        pwr = uq4_12_multiply(pwr, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
+    else if ((gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN) && moveType == TYPE_DRAGON)
+        pwr = uq4_12_multiply(pwr, UQ_4_12(0.5));
+
+    if (gStatuses3[battler] & STATUS3_CHARGED_UP && moveType == TYPE_ELECTRIC)
+        pwr = uq4_12_multiply(pwr, UQ_4_12(2.0));
+    if (moveType == TYPE_ELECTRIC && ((gFieldStatuses & STATUS_FIELD_MUDSPORT)
+    || AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_MUD_SPORT, 0)))
+        pwr = uq4_12_multiply(pwr, UQ_4_12(B_SPORT_DMG_REDUCTION >= GEN_5 ? 0.33 : 0.5));
+    if (moveType == TYPE_FIRE && ((gFieldStatuses & STATUS_FIELD_WATERSPORT)
+    || AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_WATER_SPORT, 0)))
+        pwr = uq4_12_multiply(pwr, UQ_4_12(B_SPORT_DMG_REDUCTION >= GEN_5 ? 0.33 : 0.5));
 
     if (pwr < 2 && pwr == gMovesInfo[move].power)
         StringCopy(pwr_num, gText_BattleSwitchWhich5);
@@ -2028,11 +2082,11 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
             acc = 100;
     }
 
-    if (GetBattlerAbility(battler) == ABILITY_COMPOUND_EYES)
+    if (ability == ABILITY_COMPOUND_EYES)
         acc = (acc * 130) / 100;
-    else if (GetBattlerAbility(battler) == ABILITY_VICTORY_STAR)
+    else if (ability == ABILITY_VICTORY_STAR)
         acc = (acc * 110) / 100;
-    else if (GetBattlerAbility(battler) == ABILITY_HUSTLE && cat == DAMAGE_CATEGORY_PHYSICAL)
+    else if (ability == ABILITY_HUSTLE && cat == DAMAGE_CATEGORY_PHYSICAL)
         acc = (acc * 80) / 100;
 
     if (GetMonData(mon, MON_DATA_HELD_ITEM) == ITEM_WIDE_LENS)

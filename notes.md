@@ -96,10 +96,6 @@ upcoming
     - Parabolic Charge: 65->75
     - Poison Sting: 20->40
     - Poison Fang: 60->65
-- Show the following correct damage in summary screen (both existing and new moves) and battle (https://bulbapedia.bulbagarden.net/wiki/Category:Moves_that_have_variable_power and https://bulbapedia.bulbagarden.net/wiki/Category:Moves_that_power_up)
-    - Hustle (power)
-    - STAB (Adaptability)
-    - Sun/Rain (Steam Eruption)
 
 ### Field Moves
 - Replace Waterfall with an item, similar to Dive

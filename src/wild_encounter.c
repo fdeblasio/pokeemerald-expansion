@@ -77,15 +77,17 @@ EWRAM_DATA bool8 gIsSurfingEncounter = 0;
 EWRAM_DATA u8 gChainFishingDexNavStreak = 0;
 EWRAM_DATA static u16 sLastFishingSpecies = 0;
 
-#define RANGE_ROUTE_101        3, 3
-#define RANGE_ROUTE_103        4, 4
-#define RANGE_ROUTE_102_104    5, 5
-#define RANGE_PETALBURG_WOODS  5, 6
-#define RANGE_ROUTE_116        7, 8
-#define RANGE_RUSTURF_TUNNEL   9, 9
-#define RANGE_OLD_ROD_INITIAL 10, 15
-#define RANGE_GRANITE_CAVE    12, 15
-#define RANGE_ROUTE_119       42, 44
+#define RANGE_ROUTE_101          3, 3
+#define RANGE_ROUTE_103          4, 4
+#define RANGE_ROUTE_102_104      5, 5
+#define RANGE_PETALBURG_WOODS    5, 6
+#define RANGE_ROUTE_116          7, 8
+#define RANGE_RUSTURF_TUNNEL     9, 9
+#define RANGE_OLD_ROD_INITIAL   10, 15
+#define RANGE_GRANITE_CAVE      12, 15
+#define RANGE_ROUTE_109_SLATEPORT_OLD_ROD 15, 20
+#define RANGE_ROUTE_110         14, 17
+#define RANGE_ROUTE_119         42, 44
 
 #include "data/wild_encounters.h"
 

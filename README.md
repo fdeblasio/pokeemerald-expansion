@@ -202,7 +202,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Due to the increased walking speed, followers will sometimes clip through tiles, especially after hopping off a ledge
 - Followers will stop following you if you use the naming screen from the party menu. It will start to follow you again if you talk to it
 - When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
-- AI_FLAG_ACE_POKEMON doesn't seem to work
+- AI_FLAG_ACE_POKEMON doesn't seem to work (may be fixed)
 - If you help one of the Lilycove Pokémon Center ladies, the other lady thinks you've already helped her as well
 
 ### Potentially just savefile issues due to playing while hacking
@@ -1472,14 +1472,12 @@ There are some mechanics, moves and abilities that are missing and being develop
     - SpD: 150->145
 
 - Skitty:
-    - Atk: 45->50
-    - Def: 45->50
+    - SpA: 35->55
     - Spe: 50->55
-    - Learns Quick Attack and Headbutt by level up
+    - Learns Quick Attack, Swift and Headbutt by level up
 
 - Delcatty:
-    - Atk: 65->75
-    - Def: 65->70
+    - SpA: 55->75
     - Spe: 90->95
     - Learns Quick Attack, Swift, and Headbutt by level up
 

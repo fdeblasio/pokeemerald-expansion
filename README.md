@@ -268,6 +268,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Battle Frontier no longer requires saving
 - SS Tidal trainers can be rebattled every trip
 - You can now run from wild Pokémon if they are asleep, frozen, or in a semi-invulnerable state (using Fly, Dig, Dive, Bounce, etc.). This works even if they have Shadow Tag/Arena Trap
+- Two Pokémon having the same original trainer no longer negatively affects breeding chances
 - Pokémon in the Battle Frontier/Trainer Hill now register in the Pokédex
 
 ### Summary Screen
@@ -380,7 +381,8 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Rival Rustboro  |13, 15||
 |Brawly          |16, 16, 19            |16, 16, 18|
 |Rival 110       |18, 18, 20||
-|Wally Mauville  |16                    |20, 22|
+|Wally Mauville  |16                    |19|
+|Wally Verdanturf|N/A                   |20, 22|
 |Wattson         |20, 22, 22, 24        |22, 24, 24, 26|
 |Tabitha         |18, 20, 22, 22        |26, 26, 28|
 |Maxie           |24, 24, 25            |28, 28, 28, 30|
@@ -407,11 +409,11 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Glacia          |50, 50, 52, 52, 53    |52, 52, 53, 53, 54|
 |Drake           |52, 53, 53, 54, 55    |53, 53, 54, 54, 56|
 |Wallace         |55, 56, 56, 56, 57, 58|56, 56, 56, 57, 57, 59|
+|Groudon/Kyogre  |70||
 |Latios/Latias   |40                    |60|
 |Mew             |N/A                   |60|
 |Deoxys          |N/A                   |60|
 |Lugia/Ho-Oh     |N/A                   |70|
-|Groudon/Kyogre  |70||
 |Steven          |75, 76, 76, 76, 77, 78|77, 77, 78, 78, 79, 80|
 
 #### Gym Leader/Wally Rematches:
@@ -1427,6 +1429,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Gallade:
     - Learns Fairy Wind by level up
+
+- Mega Gallade:
+    - Ability: Inner Focus->Sharpness
 
 - Surskit/Masquerain:
     - Learn Struggle Bug by level up

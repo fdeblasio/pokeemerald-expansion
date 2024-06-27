@@ -155,11 +155,11 @@
                 "species": "MAGIKARP"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "GOLDEEN"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "CORPHISH"
               },
               {
@@ -258,11 +258,11 @@
                 "species": "MAGIKARP"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "TENTACOOL"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "WAILMER"
               },
               {
@@ -361,11 +361,11 @@
                 "species": "MAGIKARP"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "TENTACOOL"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "STARYU"
               },
               {
@@ -522,11 +522,11 @@
                 "species": "MAGIKARP"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "CHINCHOU"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "WAILMER"
               },
               {
@@ -974,15 +974,15 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "range": "17, 20",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "MAGIKARP"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "GOLDEEN"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "CORPHISH"
               },
               {
@@ -1077,15 +1077,15 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "MAGIKARP"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "TENTACOOL"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "CARVANHA"
               },
               {
@@ -1922,11 +1922,11 @@
                 "species": "MAGIKARP"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "TENTACOOL"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "WAILMER"
               },
               {
@@ -1980,11 +1980,11 @@
                 "species": "MAGIKARP"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "TENTACOOL"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "WAILMER"
               },
               {
@@ -2096,11 +2096,11 @@
                 "species": "MAGIKARP"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "TENTACOOL"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "WAILMER"
               },
               {
@@ -2199,11 +2199,11 @@
                 "species": "MAGIKARP"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "TENTACOOL"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "WAILMER"
               },
               {
@@ -5732,11 +5732,11 @@
                 "species": "MAGIKARP"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "TENTACOOL"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "WAILMER"
               },
               {
@@ -5790,11 +5790,11 @@
                 "species": "MAGIKARP"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "TENTACOOL"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "WAILMER"
               },
               {
@@ -6022,11 +6022,11 @@
                 "species": "MAGIKARP"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "GOLDEEN"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "CORPHISH"
               },
               {

@@ -146,7 +146,6 @@ upcoming
 - Updated Battle Pyramid wild randomizer
 
 ### Other
-- Prevent Slateport access before Brawly/Steven
 - Railroad the post-Mossdeep water routes
 - Might need to increase MAX_LEVEL_UP_MOVES and/or MAX_RELEARNER_MOVES
 - Update palettes?:

@@ -452,43 +452,43 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "range": "16, 19",
+                "range": "RANGE_ROUTE_110",
                 "species": "GULPIN"
               },
               {
-                "range": "16, 19",
+                "range": "RANGE_ROUTE_110",
                 "species": "ELECTRIKE"
               },
               {
-                "range": "16, 19",
+                "range": "RANGE_ROUTE_110",
                 "species": "GULPIN"
               },
               {
-                "range": "16, 19",
+                "range": "RANGE_ROUTE_110",
                 "species": "ELECTRIKE"
               },
               {
-                "range": "16, 19",
+                "range": "RANGE_ROUTE_110",
                 "species": "PLUSLE"
               },
               {
-                "range": "16, 19",
+                "range": "RANGE_ROUTE_110",
                 "species": "MINUN"
               },
               {
-                "range": "16, 19",
+                "range": "RANGE_ROUTE_110",
                 "species": "PLUSLE"
               },
               {
-                "range": "16, 19",
+                "range": "RANGE_ROUTE_110",
                 "species": "MINUN"
               },
               {
-                "range": "16, 19",
+                "range": "RANGE_ROUTE_110",
                 "species": "ODDISH"
               },
               {
-                "range": "16, 19",
+                "range": "RANGE_ROUTE_110",
                 "species": "ODDISH"
               }
             ]
@@ -518,7 +518,7 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "range": "15, 20",
+                "range": "RANGE_ROUTE_110",
                 "species": "MAGIKARP"
               },
               {
@@ -621,7 +621,7 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "range": "15, 20",
+                "range": "20, 25",
                 "species": "MAGIKARP"
               },
               {
@@ -974,7 +974,7 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "range": "15, 20",
+                "range": "17, 20",
                 "species": "MAGIKARP"
               },
               {
@@ -1077,7 +1077,7 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "range": "15, 20",
+                "range": "20, 25",
                 "species": "MAGIKARP"
               },
               {
@@ -2092,7 +2092,7 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "range": "15, 20",
+                "range": "RANGE_ROUTE_109_SLATEPORT_OLD_ROD",
                 "species": "MAGIKARP"
               },
               {
@@ -5786,7 +5786,7 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "range": "15, 20",
+                "range": "RANGE_ROUTE_109_SLATEPORT_OLD_ROD",
                 "species": "MAGIKARP"
               },
               {

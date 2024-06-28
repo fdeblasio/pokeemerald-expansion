@@ -217,7 +217,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Wild Pokémon and Trainers have their levels increased to make grinding less of a pain
     - However, with the Exp Share now affecting all party members, this can lead to becoming overleveled
 - Decapitalization
-- Shiny Pokémon can no longer spawn until you get Poké Balls
 - Some areas made easier to navigate
     - Route 102/103: Path from Littleroot to rival is more direct
 - Some reversions back to Ruby and Sapphire
@@ -227,7 +226,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Gym Leaders and Magma/Aqua Admins/Leaders no longer have underleveled evolutions
 - Team Magma are more focused on Ground types than Fire types to avoid overlap with Flannery
 - Pokémon have a more even encounter distribution
-- Tate and Liza give out Psychic instead of Calm Mind
+- Tate and Liza give out Psychic instead of Calm Mind (Calm Mind can be found in Slateport)
 - Cut, Fly, Strength, Flash, Rock Smash, and Dive can now be forgotten
     - Fly can now be used from the Start Menu after getting Mauville's badge
     - Cut, Strength, and Rock Smash no longer need a badge to be used
@@ -237,14 +236,6 @@ There are some mechanics, moves and abilities that are missing and being develop
     - The Escape Rope can by used in the Trick Room puzzles that involve Cut/Strength
     - Flash is no longer needed anywhere
     - Dive has been replaced by a key item
-- Fly can now be used to go to more places:
-    - The Abandoned Ship on Route 108
-    - The Old Lady's Rest Stop on Route 111
-    - Meteor Falls entrance on Route 114
-    - The Weather Institute on Route 119
-    - Mt. Pyre on Route 122
-    - Sky Pillar on Route 131
-    - Southern Island
 - Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room
     - The door to Sealed Chamber and the Regis' inner rooms are now automatically open
 - Made rapids easier to navigate so that only one trip is needed to get all items/battle all trainers (at the cost of looking slightly worse)
@@ -253,7 +244,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Sacred Ash now works in battles although it only revives one Pokémon
 - Soul Dew uses its Gen 6 effect
 - Pokémon that evolve with an item at day or night now can evolve at any time
-- EVs now give one stat increase for every EV but cap out at 63 (individual)/127 (total)
+- EVs now give one stat increase for every EV but cap out at 63 (individual)/127 (total). This will lead to the same stats as the old system but easier to train
 - Bird Keepers now use the overworld sprite of male Psychics since it looks more like them than the blond sprite
 - Houndour was added to the Hoenn Pokédex to give Team Magma more variety
 - Frontier Brains have updated teams
@@ -266,9 +257,20 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Latios and Latias no longer roam and instead both show up on Southern Island
     - The Deoxys puzzle is much simpler
 - Battle Frontier no longer requires saving
-- SS Tidal trainers can be rebattled every trip
-- You can now run from wild Pokémon if they are asleep, frozen, or in a semi-invulnerable state (using Fly, Dig, Dive, Bounce, etc.). This works even if they have Shadow Tag/Arena Trap
 - Two Pokémon having the same original trainer no longer negatively affects breeding chances
+
+### Quality of Life
+- Shiny Pokémon can no longer spawn until you get Poké Balls
+- You can now always run from wild Pokémon if they are asleep, frozen, or in a semi-invulnerable state (using Fly, Dig, Dive, Bounce, etc.). This works even if they have Shadow Tag/Arena Trap
+- Fly can now be used to go to more places:
+    - The Abandoned Ship on Route 108
+    - The Old Lady's Rest Stop on Route 111
+    - Meteor Falls entrance on Route 114
+    - The Weather Institute on Route 119
+    - Mt. Pyre on Route 122
+    - Sky Pillar on Route 131
+    - Southern Island
+- SS Tidal trainers can be rebattled every trip
 - Pokémon in the Battle Frontier/Trainer Hill now register in the Pokédex
 
 ### Summary Screen
@@ -371,9 +373,14 @@ There are some mechanics, moves and abilities that are missing and being develop
 ### Items:
 - Eviolite now prevents Pokémon from evolving
 - Some items, such as vitamins and hold items, are cheaper
-- Ability Capsules, Ability Patches, and EV-reducing berries are available to buy in Lilycove (Bottle Caps and Mints not yet implemented)
+- Ability Capsules, Ability Patches, Mints, and EV-reducing berries are available to buy in Lilycove (Bottle Caps not yet implemented)
 
-### Bosses:
+### Trainers:
+- Rich Boys all have shiny Pokémon
+- Triathletes all have Pokémon with maxed HP and Speed EVs and IVs (to reflect training for endurance and speed)
+- Pokémon Breeders all have Pokémon with perfect IVs. They can also have Hidden Abilities and Egg Moves
+
+#### Bosses:
 |     BOSSES     |        VANILLA       |    UPDATED    |
 |:--------------:|:--------------------:|:-------------:|
 |Rival 103       |5||
@@ -421,7 +428,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 - 5-6 Pokémon: 65, 65, 68, 68, 70
 - 5-6 Pokémon: 70, 70, 73, 73, 75
 - 6 Pokémon: 75, 75, 75, 78, 78, 80
-
 
 ### Berries:
 - All berries: min and max yields have been boosted to a minimum of 3/6
@@ -1025,6 +1031,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Weedle (not in main game):
     - Learns Bug Bite at level 7 instead of 9
 
+- Beedrill (not in main game):
+    - Learns Leech Life and Drill Run by level up
+
 - Pidgey/Pidgeotto/Pidgeot (not in main game):
     - Learn Peck by level up
     - Learn Acrobatics by TM
@@ -1113,6 +1122,9 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Held item: Leek: 5%->100%
     - Learns Drain Punch by TM
 
+- Dodrio:
+    - Learns Body Slam and Drill Run by level up
+
 - Lickitung (not in main game):
     - Atk: 55->65
     - Spe: 30->50
@@ -1152,17 +1164,20 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Blissey (postgame):
     - Held item: Lucky Egg: 50%->100%
 
+- Seaking:
+    - Learns Drill Run by level up
+
 - Pinsir:
     - Catch rate: 45->90
 
 - Starmie:
     - Learns Water Pulse by level up
 
-- Mime Jr./Mr. Mime:
+- Mime Jr./Mr. Mime (not in main game):
     - Gender Ratio: 50/50->100/0
     - Type: Psychic/Fairy->Psychic
 
-- Mr. Rime (not in main game):
+- Galarian Mr. Mime/Mr. Rime (not in main game):
     - Gender Ratio: 50/50->100/0
 
 - Scyther (not in main game):
@@ -1392,10 +1407,15 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Poochyena:
     - Speed: 35->40
+    - Hidden Ability: Rattled->Strong Jaw
 
 - Mightyena:
     - Atk: 90->110
     - Speed: 70->80
+    - Hidden Ability: Moxie->Strong Jaw
+
+- Galarian Zigzagoon/Galarian Linoone (not in main game):
+    - Abilities: Pickup/Gluttony/Quick Feet->Reckless/Guts/Defiant
 
 - Wurmple:
     - Learns Bug Bite at level 7 instead of 15

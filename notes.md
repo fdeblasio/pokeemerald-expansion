@@ -59,9 +59,6 @@ upcoming
 
 ### Items
 - Get Exp. Share from Steven instead of from Mr. Stone after
-- Hyper Voice tutor->TM?
-- Temper Flare (with better STAB distribution) could become a TM/tutor
-- Aqua Tail could also become a TM since it now has 100% accuracy
 - Ideally all SV TMs would be available if the bag was ever expanded greatly
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Include charms?
@@ -78,22 +75,34 @@ upcoming
     - battle_transitions/*_bg.pal to better match types
     - stadium/palette3-7.pal to better match ypes
 - Brendan/May/Steven rematches? (Steven's would be the same team but re-battleable)
+- Consolidate Brendan and May battles with macros and code
+    - For Route 103, something like sStarterMon[(VAR_STARTER_MON + 1) % STARTER_MON_COUNT]
+    - If so, maybe move them in trainers.h to be in order of the other trainers
 - Maybe add Brendan/May/Maxie/Archie/admins/Winstrate rematches in Battle Frontier?
 - Try to get every Pokemon in Pokedex in at least one rematch?
 - Trainer customization:
     - All rematches should have consistent values (gender, IVs (unless maxed), etc.)
     - Calvin could have a good Nature/EV
     - Leaders would have optimal Abilities/EVs/IVs/Natures
+- Use Good Ruby's palette shifting to give trainers more unique looks
 - Breeders should have good IVs/Natures/Abilities
-- Triathlete would be Speed-focused (maybe endurance/HP too)
+- Psychics can use Psyduck, Golduck, and Farigiraf now
+    - Update Mossdeep Gym if there are duplicates of other Pokemon
 - Give Winstrates rematches?
 - Vito can use TMs
 - Gym leaders/Steven/Breeders can have Hidden Abilities
+- Battle Archie at Oceanic Museum?
 - Maxie/Archie use Mega Evolutions
 - Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma. Mega Evo for Houndoom but unsure for Ninetales)
     - Could swap out Huntail for Mega Gyarados and only it and Houndoom get items
 
 ### Moves
+- Fix incense egg moves
+- TMs/Tutors
+    - Hyper Voice tutor->TM?
+    - Temper Flare (with better STAB distribution)
+    - Drill Run (remove it from new level up learnsets)
+    - Aqua Tail since it now has 100% accuracy
 - Possible Move Updates:
     - Infestation: 20->35
     - Parabolic Charge: 65->75

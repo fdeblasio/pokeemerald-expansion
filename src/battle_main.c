@@ -342,10 +342,10 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     TRAINER_CLASS(GENTLEMAN, "Gentleman", 50, ITEM_LUXURY_BALL),
     TRAINER_CLASS(ELITE_FOUR, "Elite Four", 25, ITEM_ULTRA_BALL),
     TRAINER_CLASS(LEADER, "Leader", 25, ITEM_ULTRA_BALL),
-    TRAINER_CLASS(SCHOOL_KID, "Schoolkid"),
-    TRAINER_CLASS(SR_AND_JR, "Teammates", 4),
+    TRAINER_CLASS(SCHOOLKID, "Schoolkid"),
+    TRAINER_CLASS(TEAMMATES, "Teammates", 4),
     TRAINER_CLASS(WINSTRATE, "Winstrates'", 10, ITEM_ULTRA_BALL),
-    TRAINER_CLASS(POKEFAN, "Poké Fan", 20, ITEM_REPEAT_BALL),
+    TRAINER_CLASS(POKE_FAN, "Poké Fan", 20, ITEM_REPEAT_BALL),
     TRAINER_CLASS(YOUNGSTER, "Youngster", 4),
     TRAINER_CLASS(CHAMPION, "Champion", 50, ITEM_ULTRA_BALL),
     TRAINER_CLASS(FISHERMAN, "Fisherman", 10, ITEM_LURE_BALL),
@@ -1979,17 +1979,22 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
                 SetMonData(&party[i], MON_DATA_SPDEF_EV, &(partyData[i].ev[4]));
                 SetMonData(&party[i], MON_DATA_SPEED_EV, &(partyData[i].ev[5]));
             }
-            if (partyData[i].ability != ABILITY_NONE)
+            u32 monAbility = partyData[i].ability;
+            if (monAbility != ABILITY_NONE)
             {
                 const struct SpeciesInfo *speciesInfo = &gSpeciesInfo[partyData[i].species];
                 u32 maxAbilities = ARRAY_COUNT(speciesInfo->abilities);
                 for (ability = 0; ability < maxAbilities; ++ability)
                 {
-                    if (speciesInfo->abilities[ability] == partyData[i].ability)
+                    if (speciesInfo->abilities[ability] == monAbility)
                         break;
                 }
-                if (ability >= maxAbilities)
-                    ability = 0;
+                if (ability >= maxAbilities){
+                    if ((monAbility == 1 || monAbility == 2) && speciesInfo->abilities[monAbility] != ABILITY_NONE)
+                        ability = monAbility;
+                    else
+                        ability = 0;
+                }
             }
             else if (B_TRAINER_MON_RANDOM_ABILITY)
             {

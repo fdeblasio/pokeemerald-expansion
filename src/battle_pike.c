@@ -177,7 +177,7 @@ static const struct PikeWildMon *const sBattlePikeMons[] =
 static const struct PikeRoomNPC sNPCTable[] =
 {
     {
-        .graphicsId = OBJ_EVENT_GFX_POKEFAN_F,
+        .graphicsId = OBJ_EVENT_GFX_POKE_FAN_F,
         .speechId1 = 3,
         .speechId2 = 5,
         .speechId3 = 6
@@ -249,7 +249,7 @@ static const struct PikeRoomNPC sNPCTable[] =
         .speechId3 = 25
     },
     {
-        .graphicsId = OBJ_EVENT_GFX_SCHOOL_KID_M,
+        .graphicsId = OBJ_EVENT_GFX_SCHOOLKID_M,
         .speechId1 = 23,
         .speechId2 = 38,
         .speechId3 = 26

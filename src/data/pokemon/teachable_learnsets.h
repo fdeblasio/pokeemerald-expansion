@@ -678,6 +678,7 @@ static const u16 sBeedrillTeachableLearnset[] = {
     MOVE_GIGA_IMPACT,
     MOVE_HYPER_BEAM,
     MOVE_KNOCK_OFF,
+    MOVE_LEECH_LIFE,
     MOVE_PAYBACK,
     MOVE_POISON_JAB,
     MOVE_PROTECT,

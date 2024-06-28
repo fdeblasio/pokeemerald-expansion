@@ -315,7 +315,7 @@ const struct ApprenticeTrainer gApprentices[NUM_APPRENTICES] =
     {
         .name = {_("ケイジ"), _("Sonny"), _("Herve"), _("Fedro"), _("Wenzel"), _("Santi")},
         .otId = 0x2E34,
-        .facilityClass = FACILITY_CLASS_SCHOOL_KID_M,
+        .facilityClass = FACILITY_CLASS_SCHOOLKID_M,
         .species = {SPECIES_LINOONE, SPECIES_MIGHTYENA, SPECIES_WHISCASH, SPECIES_ZANGOOSE, SPECIES_SEVIPER, SPECIES_NINETALES, SPECIES_KECLEON, SPECIES_SHUCKLE, SPECIES_MANECTRIC, SPECIES_MACHAMP},
         .id = 2,
         .speechLost = {EC_WORD_I, EC_WORD_WENT, EC_WORD_AND, EC_WORD_LOST, EC_WORD_AWW, EC_WORD_ELLIPSIS},
@@ -331,7 +331,7 @@ const struct ApprenticeTrainer gApprentices[NUM_APPRENTICES] =
     {
         .name = {_("ヨウカ"), _("Macy"), _("Amelie"), _("Cleo"), _("Maria"), _("Elisa")},
         .otId = 0x1E43,
-        .facilityClass = FACILITY_CLASS_SCHOOL_KID_F,
+        .facilityClass = FACILITY_CLASS_SCHOOLKID_F,
         .species = {SPECIES_WIGGLYTUFF, SPECIES_LINOONE, SPECIES_KINGDRA, SPECIES_DELCATTY, SPECIES_RAICHU, SPECIES_FEAROW, SPECIES_STARMIE, SPECIES_MEDICHAM, SPECIES_SHIFTRY, SPECIES_BEAUTIFLY},
         .id = 4,
         .speechLost = {EC_WORD_THIS, EC_WORD_WON_T, EC_WORD_BE, EC_WORD_HAPPENING, EC_WORD_NEXT, EC_WORD_TIME},

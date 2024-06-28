@@ -511,7 +511,7 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_AddRound2Audience::
 	createvobject OBJ_EVENT_GFX_WOMAN_5, 22, 11, 1
 	createvobject OBJ_EVENT_GFX_LITTLE_BOY, 25, 15, 1
 	createvobject OBJ_EVENT_GFX_YOUNGSTER, 26, 2, 2
-	createvobject OBJ_EVENT_GFX_SCHOOL_KID_M, 29, 5, 1
+	createvobject OBJ_EVENT_GFX_SCHOOLKID_M, 29, 5, 1
 	return
 
 BattleFrontier_BattleDomeBattleRoom_EventScript_AddSemifinalAudience::
@@ -533,7 +533,7 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_AddSemifinalAudience::
 	createvobject OBJ_EVENT_GFX_LITTLE_BOY, 25, 15, 1
 	createvobject OBJ_EVENT_GFX_YOUNGSTER, 26, 2, 2
 	createvobject OBJ_EVENT_GFX_HEX_MANIAC, 28, 5, 2
-	createvobject OBJ_EVENT_GFX_SCHOOL_KID_M, 29, 5, 1
+	createvobject OBJ_EVENT_GFX_SCHOOLKID_M, 29, 5, 1
 	createvobject OBJ_EVENT_GFX_MART_EMPLOYEE, 30, 6, 2
 	createvobject OBJ_EVENT_GFX_WOMAN_5, 31, 8, 2
 	return
@@ -568,7 +568,7 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_AddFinalAudience::
 	createvobject OBJ_EVENT_GFX_YOUNGSTER, 26, 2, 2
 	createvobject OBJ_EVENT_GFX_FAT_MAN, 27, 3, 2
 	createvobject OBJ_EVENT_GFX_HEX_MANIAC, 28, 5, 2
-	createvobject OBJ_EVENT_GFX_SCHOOL_KID_M, 29, 5, 1
+	createvobject OBJ_EVENT_GFX_SCHOOLKID_M, 29, 5, 1
 	createvobject OBJ_EVENT_GFX_MART_EMPLOYEE, 30, 6, 2
 	createvobject OBJ_EVENT_GFX_WOMAN_5, 31, 8, 2
 	return

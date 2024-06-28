@@ -1,6 +1,6 @@
 .set LOCALID_EXPERT_M, 4
 .set LOCALID_TWIN, 5
-.set LOCALID_SCHOOL_KID_M, 7
+.set LOCALID_SCHOOLKID_M, 7
 .set LOCALID_PSYCHIC_M, 8
 
 DewfordTown_Hall_MapScripts::
@@ -207,7 +207,7 @@ DewfordTown_Hall_EventScript_DontMovePlayer2::
 	return
 
 DewfordTown_Hall_EventScript_DebateReact2::
-	applymovement LOCALID_SCHOOL_KID_M, DewfordTown_Hall_Movement_SchoolKidWalkInPlaceRight
+	applymovement LOCALID_SCHOOLKID_M, DewfordTown_Hall_Movement_SchoolKidWalkInPlaceRight
 	waitmovement 0
 	goto_if_eq VAR_0x8008, 0, DewfordTown_Hall_EventScript_PlayerReactNorthSouth
 	goto_if_eq VAR_0x8008, 1, DewfordTown_Hall_EventScript_PlayerReactEast

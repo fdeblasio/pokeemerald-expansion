@@ -166,7 +166,6 @@ static const u16 sPichuEggMoveLearnset[] = {
     MOVE_TICKLE,
     MOVE_FLAIL,
     MOVE_ENDURE,
-    MOVE_LUCKY_CHANT,
     MOVE_BESTOW,
     MOVE_DISARMING_VOICE,
     MOVE_ELECTRIC_TERRAIN,
@@ -380,7 +379,6 @@ static const u16 sParasEggMoveLearnset[] = {
     MOVE_CROSS_POISON,
     MOVE_AGILITY,
     MOVE_ENDURE,
-    MOVE_NATURAL_GIFT,
     MOVE_LEECH_SEED,
     MOVE_WIDE_GUARD,
     MOVE_ROTOTILLER,
@@ -503,7 +501,6 @@ static const u16 sPsyduckEggMoveLearnset[] = {
     MOVE_ENCORE,
     MOVE_SECRET_POWER,
     MOVE_SLEEP_TALK,
-    MOVE_SYNCHRONOISE,
     MOVE_SIMPLE_BEAM,
     MOVE_CLEAR_SMOG,
     MOVE_UNAVAILABLE,
@@ -619,7 +616,6 @@ static const u16 sBellsproutEggMoveLearnset[] = {
     MOVE_TICKLE,
     MOVE_WEATHER_BALL,
     MOVE_BULLET_SEED,
-    MOVE_NATURAL_GIFT,
     MOVE_GIGA_DRAIN,
     MOVE_CLEAR_SMOG,
     MOVE_POWER_WHIP,
@@ -783,7 +779,6 @@ static const u16 sDoduoEggMoveLearnset[] = {
     MOVE_ENDEAVOR,
     MOVE_MIRROR_MOVE,
     MOVE_BRAVE_BIRD,
-    MOVE_NATURAL_GIFT,
     MOVE_ASSURANCE,
     MOVE_UNAVAILABLE,
 };
@@ -948,12 +943,10 @@ static const u16 sExeggcuteEggMoveLearnset[] = {
     MOVE_INGRAIN,
     MOVE_CURSE,
     MOVE_NATURE_POWER,
-    MOVE_LUCKY_CHANT,
     MOVE_LEAF_STORM,
     MOVE_POWER_SWAP,
     MOVE_GIGA_DRAIN,
     MOVE_SKILL_SWAP,
-    MOVE_NATURAL_GIFT,
     MOVE_BLOCK,
     MOVE_GRASSY_TERRAIN,
     MOVE_UNAVAILABLE,
@@ -1068,7 +1061,6 @@ static const u16 sHappinyEggMoveLearnset[] = {
     MOVE_GRAVITY,
     MOVE_LAST_RESORT,
     MOVE_MUD_BOMB,
-    MOVE_NATURAL_GIFT,
     MOVE_ENDURE,
     MOVE_UNAVAILABLE,
 };
@@ -1082,7 +1074,6 @@ static const u16 sChanseyEggMoveLearnset[] = {
     MOVE_HELPING_HAND,
     MOVE_GRAVITY,
     MOVE_MUD_BOMB,
-    MOVE_NATURAL_GIFT,
     MOVE_ENDURE,
     MOVE_SEISMIC_TOSS,
     MOVE_UNAVAILABLE,
@@ -1102,7 +1093,6 @@ static const u16 sTangelaEggMoveLearnset[] = {
     MOVE_POWER_SWAP,
     MOVE_GIGA_DRAIN,
     MOVE_RAGE_POWDER,
-    MOVE_NATURAL_GIFT,
     MOVE_WAKE_UP_SLAP,
     MOVE_UNAVAILABLE,
 };
@@ -1354,9 +1344,7 @@ static const u16 sEeveeEggMoveLearnset[] = {
     MOVE_FAKE_TEARS,
     MOVE_COVET,
     MOVE_DETECT,
-    MOVE_NATURAL_GIFT,
     MOVE_STORED_POWER,
-    MOVE_SYNCHRONOISE,
     MOVE_CAPTIVATE,
     MOVE_UNAVAILABLE,
 };
@@ -1371,7 +1359,6 @@ static const u16 sOmanyteEggMoveLearnset[] = {
     MOVE_HAZE,
     MOVE_SPIKES,
     MOVE_KNOCK_OFF,
-    MOVE_WRING_OUT,
     MOVE_TOXIC_SPIKES,
     MOVE_MUDDY_WATER,
     MOVE_BIDE,
@@ -1427,7 +1414,6 @@ static const u16 sMunchlaxEggMoveLearnset[] = {
     MOVE_PURSUIT,
     MOVE_ZEN_HEADBUTT,
     MOVE_COUNTER,
-    MOVE_NATURAL_GIFT,
     MOVE_AFTER_YOU,
     MOVE_SELF_DESTRUCT,
     MOVE_BELCH,
@@ -1443,7 +1429,6 @@ static const u16 sSnorlaxEggMoveLearnset[] = {
     MOVE_WHIRLWIND,
     MOVE_PURSUIT,
     MOVE_COUNTER,
-    MOVE_NATURAL_GIFT,
     MOVE_AFTER_YOU,
     MOVE_BELCH,
     MOVE_POWER_UP_PUNCH,
@@ -1480,7 +1465,6 @@ static const u16 sChikoritaEggMoveLearnset[] = {
     MOVE_GRASS_WHISTLE,
     MOVE_LEAF_STORM,
     MOVE_AROMATHERAPY,
-    MOVE_WRING_OUT,
     MOVE_BODY_SLAM,
     MOVE_REFRESH,
     MOVE_HEAL_PULSE,
@@ -1541,7 +1525,6 @@ static const u16 sSentretEggMoveLearnset[] = {
     MOVE_LAST_RESORT,
     MOVE_CHARM,
     MOVE_COVET,
-    MOVE_NATURAL_GIFT,
     MOVE_IRON_TAIL,
     MOVE_CAPTIVATE,
     MOVE_BABY_DOLL_EYES,
@@ -1632,7 +1615,6 @@ static const u16 sTogepiEggMoveLearnset[] = {
     MOVE_FUTURE_SIGHT,
     MOVE_NASTY_PLOT,
     MOVE_PSYCHO_SHIFT,
-    MOVE_LUCKY_CHANT,
     MOVE_EXTRASENSORY,
     MOVE_SECRET_POWER,
     MOVE_STORED_POWER,
@@ -1652,7 +1634,6 @@ static const u16 sNatuEggMoveLearnset[] = {
     MOVE_REFRESH,
     MOVE_ZEN_HEADBUTT,
     MOVE_SUCKER_PUNCH,
-    MOVE_SYNCHRONOISE,
     MOVE_ROOST,
     MOVE_SKILL_SWAP,
     MOVE_SIMPLE_BEAM,
@@ -1695,6 +1676,11 @@ static const u16 sAzurillEggMoveLearnset[] = {
     MOVE_MUDDY_WATER,
     MOVE_COPYCAT,
     MOVE_CAMOUFLAGE,
+    MOVE_AQUA_JET,
+    MOVE_BELLY_DRUM,
+    MOVE_PERISH_SONG,
+    MOVE_PRESENT,
+    MOVE_SUPERSONIC,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_3_CROSS_EVOS
@@ -1796,7 +1782,6 @@ static const u16 sSunkernEggMoveLearnset[] = {
     MOVE_SWEET_SCENT,
     MOVE_ENDURE,
     MOVE_BIDE,
-    MOVE_NATURAL_GIFT,
     MOVE_MORNING_SUN,
     MOVE_GRASSY_TERRAIN,
     MOVE_UNAVAILABLE,
@@ -2318,7 +2303,6 @@ static const u16 sMiltankEggMoveLearnset[] = {
     MOVE_HAMMER_ARM,
     MOVE_DOUBLE_EDGE,
     MOVE_PUNISHMENT,
-    MOVE_NATURAL_GIFT,
     MOVE_HEART_STAMP,
     MOVE_BELCH,
     MOVE_UNAVAILABLE,
@@ -2359,7 +2343,6 @@ static const u16 sTreeckoEggMoveLearnset[] = {
     MOVE_LEAF_STORM,
     MOVE_RAZOR_WIND,
     MOVE_BULLET_SEED,
-    MOVE_NATURAL_GIFT,
     MOVE_GRASSY_TERRAIN,
     MOVE_UNAVAILABLE,
 };
@@ -2532,7 +2515,6 @@ static const u16 sRaltsEggMoveLearnset[] = {
     MOVE_SHADOW_SNEAK,
     MOVE_CONFUSE_RAY,
     MOVE_ENCORE,
-    MOVE_SYNCHRONOISE,
     MOVE_SKILL_SWAP,
     MOVE_MISTY_TERRAIN,
     MOVE_ALLY_SWITCH,
@@ -2568,7 +2550,6 @@ static const u16 sShroomishEggMoveLearnset[] = {
     MOVE_SEED_BOMB,
     MOVE_BULLET_SEED,
     MOVE_FOCUS_PUNCH,
-    MOVE_NATURAL_GIFT,
     MOVE_DRAIN_PUNCH,
     MOVE_UNAVAILABLE,
 };
@@ -2777,7 +2758,6 @@ static const u16 sPlusleEggMoveLearnset[] = {
     MOVE_SING,
     MOVE_SWEET_KISS,
     MOVE_DISCHARGE,
-    MOVE_LUCKY_CHANT,
     MOVE_CHARM,
     MOVE_FAKE_TEARS,
     MOVE_TEARFUL_LOOK,
@@ -2791,7 +2771,6 @@ static const u16 sMinunEggMoveLearnset[] = {
     MOVE_SING,
     MOVE_SWEET_KISS,
     MOVE_DISCHARGE,
-    MOVE_LUCKY_CHANT,
     MOVE_CHARM,
     MOVE_FAKE_TEARS,
     MOVE_TEARFUL_LOOK,
@@ -2840,8 +2819,8 @@ static const u16 sBudewEggMoveLearnset[] = {
     MOVE_EXTRASENSORY,
     MOVE_SEED_BOMB,
     MOVE_GIGA_DRAIN,
-    MOVE_NATURAL_GIFT,
     MOVE_GRASS_WHISTLE,
+    MOVE_LIFE_DEW,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -2856,7 +2835,6 @@ static const u16 sRoseliaEggMoveLearnset[] = {
     MOVE_LEAF_STORM,
     MOVE_SEED_BOMB,
     MOVE_GIGA_DRAIN,
-    MOVE_NATURAL_GIFT,
     MOVE_GRASS_WHISTLE,
     MOVE_BULLET_SEED,
     MOVE_POWER_WHIP,
@@ -2959,7 +2937,6 @@ static const u16 sSpoinkEggMoveLearnset[] = {
     MOVE_MIRROR_COAT,
     MOVE_SKILL_SWAP,
     MOVE_WHIRLWIND,
-    MOVE_LUCKY_CHANT,
     MOVE_ENDURE,
     MOVE_SIMPLE_BEAM,
     MOVE_UNAVAILABLE,
@@ -3078,7 +3055,6 @@ static const u16 sSeviperEggMoveLearnset[] = {
     MOVE_NIGHT_SLASH,
     MOVE_SWITCHEROO,
     MOVE_IRON_TAIL,
-    MOVE_WRING_OUT,
     MOVE_PUNISHMENT,
     MOVE_FINAL_GAMBIT,
     MOVE_UNAVAILABLE,
@@ -3125,7 +3101,6 @@ static const u16 sLileepEggMoveLearnset[] = {
     MOVE_BARRIER,
     MOVE_RECOVER,
     MOVE_MIRROR_COAT,
-    MOVE_WRING_OUT,
     MOVE_TICKLE,
     MOVE_CURSE,
     MOVE_MEGA_DRAIN,
@@ -3171,7 +3146,6 @@ static const u16 sFeebasEggMoveLearnset[] = {
 #if P_FAMILY_CASTFORM
 static const u16 sCastformEggMoveLearnset[] = {
     MOVE_FUTURE_SIGHT,
-    MOVE_LUCKY_CHANT,
     MOVE_DISABLE,
     MOVE_AMNESIA,
     MOVE_OMINOUS_WIND,
@@ -3248,7 +3222,6 @@ static const u16 sTropiusEggMoveLearnset[] = {
     MOVE_LEAF_BLADE,
     MOVE_DRAGON_DANCE,
     MOVE_BULLET_SEED,
-    MOVE_NATURAL_GIFT,
     MOVE_DRAGON_HAMMER,
     MOVE_UNAVAILABLE,
 };
@@ -3619,7 +3592,6 @@ static const u16 sCherubiEggMoveLearnset[] = {
     MOVE_HEAL_PULSE,
     MOVE_HEALING_WISH,
     MOVE_SEED_BOMB,
-    MOVE_NATURAL_GIFT,
     MOVE_DEFENSE_CURL,
     MOVE_ROLLOUT,
     MOVE_FLOWER_SHIELD,
@@ -3901,7 +3873,6 @@ static const u16 sSnoverEggMoveLearnset[] = {
     MOVE_STOMP,
     MOVE_SKULL_BASH,
     MOVE_AVALANCHE,
-    MOVE_NATURAL_GIFT,
     MOVE_BULLET_SEED,
     MOVE_UNAVAILABLE,
 };
@@ -3910,7 +3881,6 @@ static const u16 sSnoverEggMoveLearnset[] = {
 #if P_FAMILY_SNIVY
 static const u16 sSnivyEggMoveLearnset[] = {
     MOVE_CAPTIVATE,
-    MOVE_NATURAL_GIFT,
     MOVE_GLARE,
     MOVE_IRON_TAIL,
     MOVE_MAGICAL_LEAF,
@@ -4084,7 +4054,6 @@ static const u16 sPidoveEggMoveLearnset[] = {
     MOVE_BESTOW,
     MOVE_WISH,
     MOVE_MORNING_SUN,
-    MOVE_LUCKY_CHANT,
     MOVE_NIGHT_SLASH,
     MOVE_UNAVAILABLE,
 };
@@ -4128,7 +4097,6 @@ static const u16 sWoobatEggMoveLearnset[] = {
     MOVE_KNOCK_OFF,
     MOVE_FAKE_TEARS,
     MOVE_SUPERSONIC,
-    MOVE_SYNCHRONOISE,
     MOVE_STORED_POWER,
     MOVE_ROOST,
     MOVE_FLATTER,
@@ -4158,7 +4126,6 @@ static const u16 sDrilburEggMoveLearnset[] = {
 static const u16 sAudinoEggMoveLearnset[] = {
     MOVE_WISH,
     MOVE_HEAL_BELL,
-    MOVE_LUCKY_CHANT,
     MOVE_ENCORE,
     MOVE_BESTOW,
     MOVE_SWEET_KISS,
@@ -4235,7 +4202,6 @@ static const u16 sVenipedeEggMoveLearnset[] = {
 
 #if P_FAMILY_COTTONEE
 static const u16 sCottoneeEggMoveLearnset[] = {
-    MOVE_NATURAL_GIFT,
     MOVE_ENCORE,
     MOVE_TICKLE,
     MOVE_FAKE_TEARS,
@@ -4252,7 +4218,6 @@ static const u16 sCottoneeEggMoveLearnset[] = {
 
 #if P_FAMILY_PETILIL
 static const u16 sPetililEggMoveLearnset[] = {
-    MOVE_NATURAL_GIFT,
     MOVE_CHARM,
     MOVE_ENDURE,
     MOVE_INGRAIN,
@@ -4530,7 +4495,6 @@ static const u16 sDucklettEggMoveLearnset[] = {
     MOVE_AIR_CUTTER,
     MOVE_MIRROR_MOVE,
     MOVE_ME_FIRST,
-    MOVE_LUCKY_CHANT,
     MOVE_MUD_SPORT,
     MOVE_AQUA_JET,
     MOVE_UNAVAILABLE,
@@ -4540,7 +4504,6 @@ static const u16 sDucklettEggMoveLearnset[] = {
 #if P_FAMILY_VANILLITE
 static const u16 sVanilliteEggMoveLearnset[] = {
     MOVE_WATER_PULSE,
-    MOVE_NATURAL_GIFT,
     MOVE_IMPRISON,
     MOVE_AUTOTOMIZE,
     MOVE_IRON_DEFENSE,
@@ -4554,7 +4517,6 @@ static const u16 sVanilliteEggMoveLearnset[] = {
 #if P_FAMILY_DEERLING
 static const u16 sDeerlingEggMoveLearnset[] = {
     MOVE_FAKE_TEARS,
-    MOVE_NATURAL_GIFT,
     MOVE_SYNTHESIS,
     MOVE_WORRY_SEED,
     MOVE_ODOR_SLEUTH,
@@ -5168,7 +5130,6 @@ static const u16 sDedenneEggMoveLearnset[] = {
     MOVE_EERIE_IMPULSE,
     MOVE_COVET,
     MOVE_HELPING_HAND,
-    MOVE_NATURAL_GIFT,
     MOVE_TEARFUL_LOOK,
     MOVE_UNAVAILABLE,
 };
@@ -5456,7 +5417,6 @@ static const u16 sComfeyEggMoveLearnset[] = {
     MOVE_ENDURE,
     MOVE_AMNESIA,
     MOVE_AFTER_YOU,
-    MOVE_LUCKY_CHANT,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_COMFEY

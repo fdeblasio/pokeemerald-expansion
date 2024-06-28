@@ -1992,7 +1992,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                     [0] =
                         {
                             .name = _("Kimberly"),
-                            .facilityClass = FACILITY_CLASS_POKEFAN_F,
+                            .facilityClass = FACILITY_CLASS_POKE_FAN_F,
                             .speechBefore = {EC_WORD_I, EC_WORD_LIKE, EC_WORD_WORKING, EC_WORD_AT, EC_WORD_MY, EC_WORD_OWN_TEMPO},
                             .speechWin = {EC_WORD_I_AM, EC_WORD_NOT, EC_WORD_BAD, EC_WORD_YOU, EC_WORD_THINK, EC_WORD_QUES},
                             .speechLose = {EC_WORD_YOU_RE, EC_WORD_A, EC_WORD_MEAN, EC_WORD_KID, EC_WORD_IT, EC_WORD_SEEMS},
@@ -2119,7 +2119,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                     [1] =
                         {
                             .name = _("Francisco"),
-                            .facilityClass = FACILITY_CLASS_POKEFAN_M,
+                            .facilityClass = FACILITY_CLASS_POKE_FAN_M,
                             .speechBefore = {EC_WORD_I, EC_WORD_STUDY, EC_WORD_EVERY, EC_WORD_DAY, EC_WORD_TOO, EC_EMPTY_WORD},
                             .speechWin = {EC_WORD_SO, EC_WORD_THAT_S, EC_WORD_HOW, EC_WORD_YOU, EC_WORD_LOSE, EC_EMPTY_WORD},
                             .speechLose = {EC_WORD_NO, EC_WORD_WONDER, EC_WORD_I, EC_WORD_COULDN_T, EC_WORD_BEAT, EC_WORD_YOU},

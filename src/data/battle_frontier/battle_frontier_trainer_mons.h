@@ -65,7 +65,7 @@
     -1
 
 // Also used by early Pkmn Breeder, Collector, and Beauty trainers
-#define FRONTIER_MONS_SCHOOL_KID_1 \
+#define FRONTIER_MONS_SCHOOLKID_1 \
     FRONTIER_MON_PIKACHU,       \
     FRONTIER_MON_SANDSHREW,     \
     FRONTIER_MON_POLIWAG,       \
@@ -345,7 +345,7 @@
     FRONTIER_MON_POLIWHIRL,     \
     -1
 
-#define FRONTIER_MONS_POKEFAN_M_1 \
+#define FRONTIER_MONS_POKE_FAN_M_1 \
     FRONTIER_MON_SMOOCHUM,      \
     FRONTIER_MON_NUMEL,         \
     FRONTIER_MON_CORPHISH,      \
@@ -384,7 +384,7 @@
     FRONTIER_MON_POLIWHIRL,     \
     -1
 
-#define FRONTIER_MONS_POKEFAN_F_1 \
+#define FRONTIER_MONS_POKE_FAN_F_1 \
     FRONTIER_MON_AZURILL,       \
     FRONTIER_MON_RALTS,         \
     FRONTIER_MON_MAGIKARP,      \
@@ -1657,7 +1657,7 @@
     FRONTIER_MON_SALAMENCE_1,   \
     -1
 
-#define FRONTIER_MONS_POKEFAN_2 \
+#define FRONTIER_MONS_POKE_FAN_2 \
     FRONTIER_MON_MISDREAVUS_1,  \
     FRONTIER_MON_LANTURN_1,     \
     FRONTIER_MON_BRELOOM_1,     \
@@ -1824,7 +1824,7 @@
     FRONTIER_MON_DUGTRIO_2,            \
     FRONTIER_MONS_YOUNGSTER_LASS_2_NO_DUGTRIO
 
-#define FRONTIER_MONS_SCHOOL_KID_2 \
+#define FRONTIER_MONS_SCHOOLKID_2 \
     FRONTIER_MON_WEEZING_2,     \
     FRONTIER_MON_KANGASKHAN_2,  \
     FRONTIER_MON_ELECTABUZZ_2,  \
@@ -2406,7 +2406,7 @@
     FRONTIER_MON_SLAKING_4,     \
     -1
 
-#define FRONTIER_MONS_POKEFAN_3 \
+#define FRONTIER_MONS_POKE_FAN_3 \
     FRONTIER_MON_DELCATTY_2,    \
     FRONTIER_MON_PORYGON_2,     \
     FRONTIER_MON_DUNSPARCE_2,   \
@@ -5820,32 +5820,32 @@ const u16 gBattleFrontierTrainerMons_Peggy[] =
 
 const u16 gBattleFrontierTrainerMons_Keith[] =
 {
-    FRONTIER_MONS_SCHOOL_KID_1
+    FRONTIER_MONS_SCHOOLKID_1
 };
 
 const u16 gBattleFrontierTrainerMons_Grayson[] =
 {
-    FRONTIER_MONS_SCHOOL_KID_1
+    FRONTIER_MONS_SCHOOLKID_1
 };
 
 const u16 gBattleFrontierTrainerMons_Glenn[] =
 {
-    FRONTIER_MONS_SCHOOL_KID_1
+    FRONTIER_MONS_SCHOOLKID_1
 };
 
 const u16 gBattleFrontierTrainerMons_Liliana[] =
 {
-    FRONTIER_MONS_SCHOOL_KID_1
+    FRONTIER_MONS_SCHOOLKID_1
 };
 
 const u16 gBattleFrontierTrainerMons_Elise[] =
 {
-    FRONTIER_MONS_SCHOOL_KID_1
+    FRONTIER_MONS_SCHOOLKID_1
 };
 
 const u16 gBattleFrontierTrainerMons_Zoey[] =
 {
-    FRONTIER_MONS_SCHOOL_KID_1
+    FRONTIER_MONS_SCHOOLKID_1
 };
 
 const u16 gBattleFrontierTrainerMons_Manuel[] =
@@ -5970,32 +5970,32 @@ const u16 gBattleFrontierTrainerMons_Kathy[] =
 
 const u16 gBattleFrontierTrainerMons_Peyton[] =
 {
-    FRONTIER_MONS_POKEFAN_M_1
+    FRONTIER_MONS_POKE_FAN_M_1
 };
 
 const u16 gBattleFrontierTrainerMons_Julian[] =
 {
-    FRONTIER_MONS_POKEFAN_M_1
+    FRONTIER_MONS_POKE_FAN_M_1
 };
 
 const u16 gBattleFrontierTrainerMons_Quinn[] =
 {
-    FRONTIER_MONS_POKEFAN_M_1
+    FRONTIER_MONS_POKE_FAN_M_1
 };
 
 const u16 gBattleFrontierTrainerMons_Haylee[] =
 {
-    FRONTIER_MONS_POKEFAN_F_1
+    FRONTIER_MONS_POKE_FAN_F_1
 };
 
 const u16 gBattleFrontierTrainerMons_Amanda[] =
 {
-    FRONTIER_MONS_POKEFAN_F_1
+    FRONTIER_MONS_POKE_FAN_F_1
 };
 
 const u16 gBattleFrontierTrainerMons_Stacy[] =
 {
-    FRONTIER_MONS_POKEFAN_F_1
+    FRONTIER_MONS_POKE_FAN_F_1
 };
 
 // The below 6 are the early Pkmn Breeder class trainers, which use groups from other general classes
@@ -6006,7 +6006,7 @@ const u16 gBattleFrontierTrainerMons_Rafael[] =
 
 const u16 gBattleFrontierTrainerMons_Oliver[] =
 {
-    FRONTIER_MONS_SCHOOL_KID_1
+    FRONTIER_MONS_SCHOOLKID_1
 };
 
 const u16 gBattleFrontierTrainerMons_Payton[] =
@@ -6021,7 +6021,7 @@ const u16 gBattleFrontierTrainerMons_Pamela[] =
 
 const u16 gBattleFrontierTrainerMons_Eliza[] =
 {
-    FRONTIER_MONS_SCHOOL_KID_1
+    FRONTIER_MONS_SCHOOLKID_1
 };
 
 const u16 gBattleFrontierTrainerMons_Marisa[] =
@@ -6112,7 +6112,7 @@ const u16 gBattleFrontierTrainerMons_Arnie[] =
 
 const u16 gBattleFrontierTrainerMons_Adrian[] =
 {
-    FRONTIER_MONS_SCHOOL_KID_1
+    FRONTIER_MONS_SCHOOLKID_1
 };
 
 const u16 gBattleFrontierTrainerMons_Tristan[] =
@@ -6143,7 +6143,7 @@ const u16 gBattleFrontierTrainerMons_Danela[] =
 
 const u16 gBattleFrontierTrainerMons_Lizbeth[] =
 {
-    FRONTIER_MONS_SCHOOL_KID_1
+    FRONTIER_MONS_SCHOOLKID_1
 };
 
 const u16 gBattleFrontierTrainerMons_Amelia[] =
@@ -6573,12 +6573,12 @@ const u16 gBattleFrontierTrainerMons_Graham[] =
 
 const u16 gBattleFrontierTrainerMons_Tylor[] =
 {
-    FRONTIER_MONS_POKEFAN_2
+    FRONTIER_MONS_POKE_FAN_2
 };
 
 const u16 gBattleFrontierTrainerMons_Jaren[] =
 {
-    FRONTIER_MONS_POKEFAN_2
+    FRONTIER_MONS_POKE_FAN_2
 };
 
 const u16 gBattleFrontierTrainerMons_Cordell[] =
@@ -6613,22 +6613,22 @@ const u16 gBattleFrontierTrainerMons_Kaila[] =
 
 const u16 gBattleFrontierTrainerMons_Isiah[] =
 {
-    FRONTIER_MONS_SCHOOL_KID_2
+    FRONTIER_MONS_SCHOOLKID_2
 };
 
 const u16 gBattleFrontierTrainerMons_Garrett[] =
 {
-    FRONTIER_MONS_SCHOOL_KID_2
+    FRONTIER_MONS_SCHOOLKID_2
 };
 
 const u16 gBattleFrontierTrainerMons_Haylie[] =
 {
-    FRONTIER_MONS_SCHOOL_KID_2
+    FRONTIER_MONS_SCHOOLKID_2
 };
 
 const u16 gBattleFrontierTrainerMons_Megan[] =
 {
-    FRONTIER_MONS_SCHOOL_KID_2
+    FRONTIER_MONS_SCHOOLKID_2
 };
 
 const u16 gBattleFrontierTrainerMons_Issac[] =
@@ -6853,22 +6853,22 @@ const u16 gBattleFrontierTrainerMons_Joyce[] =
 
 const u16 gBattleFrontierTrainerMons_Todd[] =
 {
-    FRONTIER_MONS_POKEFAN_3
+    FRONTIER_MONS_POKE_FAN_3
 };
 
 const u16 gBattleFrontierTrainerMons_Gavin[] =
 {
-    FRONTIER_MONS_POKEFAN_3
+    FRONTIER_MONS_POKE_FAN_3
 };
 
 const u16 gBattleFrontierTrainerMons_Malory[] =
 {
-    FRONTIER_MONS_POKEFAN_3
+    FRONTIER_MONS_POKE_FAN_3
 };
 
 const u16 gBattleFrontierTrainerMons_Esther[] =
 {
-    FRONTIER_MONS_POKEFAN_3
+    FRONTIER_MONS_POKE_FAN_3
 };
 
 const u16 gBattleFrontierTrainerMons_Oscar[] =

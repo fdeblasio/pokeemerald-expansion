@@ -19,14 +19,14 @@
 #define OBJ_EVENT_GFX_RICH_BOY                    15
 #define OBJ_EVENT_GFX_WOMAN_1                     16
 #define OBJ_EVENT_GFX_FAT_MAN                     17
-#define OBJ_EVENT_GFX_POKEFAN_F                   18
+#define OBJ_EVENT_GFX_POKE_FAN_F                   18
 #define OBJ_EVENT_GFX_MAN_1                       19
 #define OBJ_EVENT_GFX_WOMAN_2                     20
 #define OBJ_EVENT_GFX_EXPERT_M                    21
 #define OBJ_EVENT_GFX_EXPERT_F                    22
 #define OBJ_EVENT_GFX_MAN_2                       23
 #define OBJ_EVENT_GFX_WOMAN_3                     24
-#define OBJ_EVENT_GFX_POKEFAN_M                   25
+#define OBJ_EVENT_GFX_POKE_FAN_M                   25
 #define OBJ_EVENT_GFX_WOMAN_4                     26
 #define OBJ_EVENT_GFX_COOK                        27
 #define OBJ_EVENT_GFX_LINK_RECEPTIONIST           28
@@ -39,7 +39,7 @@
 #define OBJ_EVENT_GFX_YOUNGSTER                   35
 #define OBJ_EVENT_GFX_BUG_CATCHER                 36
 #define OBJ_EVENT_GFX_PSYCHIC_M                   37
-#define OBJ_EVENT_GFX_SCHOOL_KID_M                38
+#define OBJ_EVENT_GFX_SCHOOLKID_M                38
 #define OBJ_EVENT_GFX_MANIAC                      39
 #define OBJ_EVENT_GFX_HEX_MANIAC                  40
 #define OBJ_EVENT_GFX_RAYQUAZA_STILL              41

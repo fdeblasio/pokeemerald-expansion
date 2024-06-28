@@ -274,6 +274,8 @@ static const struct LevelUpMove sBeedrillLevelUpLearnset[] = {
     LEVEL_UP_MOVE(38, MOVE_AGILITY),
     LEVEL_UP_MOVE(41, MOVE_ENDEAVOR),
     LEVEL_UP_MOVE(44, MOVE_FELL_STINGER),
+    LEVEL_UP_MOVE(47, MOVE_LEECH_LIFE),
+    LEVEL_UP_MOVE(47, MOVE_DRILL_RUN),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_WEEDLE
@@ -2627,6 +2629,8 @@ static const struct LevelUpMove sDoduoLevelUpLearnset[] = {
 
 static const struct LevelUpMove sDodrioLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_TRI_ATTACK),
+    LEVEL_UP_MOVE( 1, MOVE_BODY_SLAM),
+    LEVEL_UP_MOVE( 1, MOVE_DRILL_RUN),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
@@ -3843,6 +3847,7 @@ static const struct LevelUpMove sSeakingLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_WATERFALL),
     LEVEL_UP_MOVE(44, MOVE_SOAK),
     LEVEL_UP_MOVE(51, MOVE_MEGAHORN),
+    LEVEL_UP_MOVE(51, MOVE_DRILL_RUN),
     LEVEL_UP_MOVE(58, MOVE_HORN_DRILL),
     LEVEL_UP_END
 };

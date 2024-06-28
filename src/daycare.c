@@ -1154,7 +1154,7 @@ static bool8 TryProduceOrHatchEgg(struct DayCare *daycare)
     }
 
     // Try to hatch Egg
-    if (++daycare->stepCounter == ((P_EGG_CYCLE_LENGTH >= GEN_8) ? 127 : 255))
+    if (++daycare->stepCounter == ((P_EGG_CYCLE_LENGTH >= GEN_8) ? 32 : 255))
     {
         u32 eggCycles;
         u8 toSub = GetEggCyclesToSubtract();
@@ -1276,7 +1276,6 @@ u8 GetDaycareCompatibilityScore(struct DayCare *daycare)
     u32 i;
     u16 eggGroups[DAYCARE_MON_COUNT][EGG_GROUPS_PER_MON];
     u16 species[DAYCARE_MON_COUNT];
-    u32 trainerIds[DAYCARE_MON_COUNT];
     u32 genders[DAYCARE_MON_COUNT];
 
     for (i = 0; i < DAYCARE_MON_COUNT; i++)
@@ -1284,7 +1283,6 @@ u8 GetDaycareCompatibilityScore(struct DayCare *daycare)
         u32 personality;
 
         species[i] = GetBoxMonData(&daycare->mons[i].mon, MON_DATA_SPECIES);
-        trainerIds[i] = GetBoxMonData(&daycare->mons[i].mon, MON_DATA_OT_ID);
         personality = GetBoxMonData(&daycare->mons[i].mon, MON_DATA_PERSONALITY);
         genders[i] = GetGenderFromSpeciesAndPersonality(species[i], personality);
         eggGroups[i][0] = gSpeciesInfo[species[i]].eggGroups[0];
@@ -1552,9 +1550,9 @@ static u8 ModifyBreedingScoreForOvalCharm(u8 score)
         case 20:
             return 40;
         case 50:
-            return 80;
+            return 75;
         case 70:
-            return 88;
+            return 90;
         }
     }
 

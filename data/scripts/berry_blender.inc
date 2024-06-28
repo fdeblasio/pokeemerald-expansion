@@ -2,7 +2,7 @@
 .set LOCALID_MAN, 3
 .set LOCALID_BOY, 9
 .set LOCALID_TWIN, 10
-.set LOCALID_POKEFAN_F, 15
+.set LOCALID_POKE_FAN_F, 15
 .set LOCALID_EXPERT_M, 16
 .set LOCALID_GIRL, 17
 
@@ -382,7 +382,7 @@ BerryBlender_EventScript_Blender2NoCase:
 
 BerryBlender_EventScript_BerryBlender3::
 	lockall
-	setvar VAR_0x8008, LOCALID_POKEFAN_F
+	setvar VAR_0x8008, LOCALID_POKE_FAN_F
 	setvar NUM_OPPONENTS, 3
 	applymovement LOCALID_BOY, Common_Movement_FaceOriginalDirection
 	applymovement LOCALID_GIRL, Common_Movement_FaceOriginalDirection

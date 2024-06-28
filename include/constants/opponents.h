@@ -241,6 +241,7 @@
 #define TRAINER_BRANDI                      785
 #define TRAINER_MELINA                      784
 #define TRAINER_AISHA                       786
+#define TRAINER_MIKE                        675
 
 #define TRAINER_SAWYER_1                     89
 #define TRAINER_GRUNT_AQUA_HIDEOUT_1         90
@@ -695,7 +696,6 @@
 #define TRAINER_LUCAS                       671
 #define TRAINER_ALAN                        672
 #define TRAINER_ERIC                        674
-#define TRAINER_MIKE                        675
 #define TRAINER_TRENT_2                     676
 #define TRAINER_TRENT_3                     677
 #define TRAINER_TRENT_4                     678

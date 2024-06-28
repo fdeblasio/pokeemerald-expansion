@@ -5750,6 +5750,28 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
+[TRAINER_MIKE] =
+{
+    .trainerName = _("Mike"),
+    HIKER_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 19,
+        .species = SPECIES_WHISMUR,
+        },
+        {
+        .lvl = 19,
+        .species = SPECIES_WHISMUR,
+        },
+        {
+        .lvl = 19,
+        .species = SPECIES_WHISMUR,
+        }
+    },
+},
+
 
 
 
@@ -15032,28 +15054,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         {
         .lvl = 25,
         .species = SPECIES_BALTOY,
-        }
-    },
-},
-
-[TRAINER_MIKE] =
-{
-    .trainerName = _("Mike"),
-    HIKER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 19,
-        .species = SPECIES_WHISMUR,
-        },
-        {
-        .lvl = 19,
-        .species = SPECIES_WHISMUR,
-        },
-        {
-        .lvl = 19,
-        .species = SPECIES_WHISMUR,
         }
     },
 },

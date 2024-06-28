@@ -908,43 +908,43 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "range": "17, 20",
+                "range": "RANGE_ROUTE_117",
                 "species": "BUDEW"
               },
               {
-                "range": "17, 20",
+                "range": "RANGE_ROUTE_117",
                 "species": "BUDEW"
               },
               {
-                "range": "17, 20",
+                "range": "RANGE_ROUTE_117",
                 "species": "VOLBEAT"
               },
               {
-                "range": "17, 20",
+                "range": "RANGE_ROUTE_117",
                 "species": "ILLUMISE"
               },
               {
-                "range": "17, 20",
+                "range": "RANGE_ROUTE_117",
                 "species": "VOLBEAT"
               },
               {
-                "range": "17, 20",
+                "range": "RANGE_ROUTE_117",
                 "species": "ILLUMISE"
               },
               {
-                "range": "17, 20",
+                "range": "RANGE_ROUTE_117",
                 "species": "SURSKIT"
               },
               {
-                "range": "17, 20",
+                "range": "RANGE_ROUTE_117",
                 "species": "ODDISH"
               },
               {
-                "range": "17, 20",
+                "range": "RANGE_ROUTE_117",
                 "species": "MARILL"
               },
               {
-                "range": "17, 20",
+                "range": "RANGE_ROUTE_117",
                 "species": "SURSKIT"
               }
             ]

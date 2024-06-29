@@ -1,4 +1,5 @@
 .set LOCALID_TWIN, 2
+.set LOCALID_WALLY, 5
 
 VerdanturfTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, VerdanturfTown_OnTransition
@@ -62,6 +63,78 @@ VerdanturfTown_EventScript_BattleTentSign::
 VerdanturfTown_EventScript_RusturfTunnelSign::
 	msgbox VerdanturfTown_Text_RusturfTunnelSign, MSGBOX_SIGN
 	end
+
+VerdanturfTown_EventScript_WallyTrigger::
+	lockall
+	setvar VAR_0x8004, 10
+	setvar VAR_0x8005, 14
+	opendoor VAR_0x8004, VAR_0x8005
+	waitdooranim
+	setvar VAR_VERDANTURF_TOWN_STATE, 2
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	waitmovement 0
+	delay 10
+	addobject LOCALID_WALLY
+	clearflag FLAG_HIDE_VERDANTURF_TOWN_WALLY
+	applymovement OBJ_EVENT_ID_PLAYER, VerdanturfTown_Movement_PlayerBackUp
+	waitmovement 0
+	applymovement LOCALID_WALLY, VerdanturfTown_Movement_WallyExitWandasHome
+	waitmovement 0
+	closedoor VAR_0x8004, VAR_0x8005
+	waitdooranim
+	delay 20
+	playse SE_PIN
+	applymovement LOCALID_WALLY, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement LOCALID_WALLY, Common_Movement_Delay48
+	waitmovement 0
+	msgbox VerdanturfTown_Text_WallyIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_WALLY_VERDANTURF, VerdanturfTown_Text_WallyDefeat
+	msgbox VerdanturfTown_Text_WallyPostBattle, MSGBOX_DEFAULT
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	setvar VAR_0x8004, 10
+	setvar VAR_0x8005, 14
+	opendoor VAR_0x8004, VAR_0x8005
+	waitdooranim
+	closedoor VAR_0x8004, VAR_0x8005
+	waitdooranim
+	applymovement LOCALID_WALLY, VerdanturfTown_Movement_WallyEnterWandasHome
+	waitmovement 0
+	removeobject LOCALID_WALLY
+	setflag FLAG_HIDE_VERDANTURF_TOWN_WALLY
+	applymovement LOCALID_WALLY, VerdanturfTown_Movement_WallyEnterWandasHome
+	waitmovement 0
+	removeobject LOCALID_WALLY
+	setflag FLAG_HIDE_MAUVILLE_CITY_SCOTT
+	releaseall
+	end
+
+VerdanturfTown_Movement_PlayerBackUp:
+	lock_facing_direction
+	walk_down
+	unlock_facing_direction
+	step_end
+
+VerdanturfTown_Movement_WallyExitWandasHome:
+	walk_down
+	step_end
+
+VerdanturfTown_Movement_WallyEnterWandasHome:
+	walk_up
+	step_end
+
+VerdanturfTown_Text_WallyIntro:
+	.string "Wally: Oh, {PLAYER}!\p"
+	.string "I caught a new Pokémon!\p"
+	.string "Let's have another battle!$"
+
+VerdanturfTown_Text_WallyDefeat:
+	.string "Wally: Aww… I guess I need to train\n"
+	.string "more if I want to beat you, {PLAYER}.$"
+
+VerdanturfTown_Text_WallyPostBattle:
+	.string "Wally: Thanks for battling me,\n"
+	.string "{PLAYER}! Just wait, I'll get stronger!$"
 
 VerdanturfTown_Text_ManTryingToDigTunnel:
 	.string "My papa told me.\p"

@@ -199,6 +199,8 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 ## Known Bugs
 - Moving an Pokemon in the PC seems to duplicate its item in the bag
+- Scott in Mauville lags before coming onscreen
+- Player faces down after beating Wally in Verdanturf
 - Due to the increased walking speed, followers will sometimes clip through tiles, especially after hopping off a ledge
 - Followers will stop following you if you use the naming screen from the party menu. It will start to follow you again if you talk to it
 - When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
@@ -258,6 +260,8 @@ There are some mechanics, moves and abilities that are missing and being develop
     - The Deoxys puzzle is much simpler
 - Battle Frontier no longer requires saving
 - Two Pokémon having the same original trainer no longer negatively affects breeding chances
+- Certain sections are blocked off until gyms or rivals are defeated
+- Wally is given more battles
 
 ### Quality of Life
 - Shiny Pokémon can no longer spawn until you get Poké Balls

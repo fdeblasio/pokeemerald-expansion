@@ -442,12 +442,16 @@
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE, \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON
 
-#define RALPH(Level, Species, Ability) \
+#define RALPH(Level, Species) \
     BASE_MON(Level, Species),          \
-    .ability = ABILITY_##Ability,      \
-    PERFECT_IVS,                       \
+    .ability = 1,                      \
+    IVS(24),                           \
     .gender = TRAINER_MON_MALE,        \
     .nickname = COMPOUND_STRING("Ralph")
+
+#define WALLY_BUDEW                  \
+    .ability = ABILITY_NATURAL_CURE, \
+    .gender = TRAINER_MON_FEMALE
 
 [TRAINER_WALLY_MAUVILLE] =
 {
@@ -455,7 +459,7 @@
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        RALPH(19, RALTS, TRACE),
+        RALPH(19, RALTS),
         }
     },
 },
@@ -468,12 +472,11 @@
         {
         .lvl = 20,
         .species = SPECIES_BUDEW,
-        .ability = ABILITY_NATURAL_CURE,
         IVS(3),
-        .gender = TRAINER_MON_FEMALE,
+        WALLY_BUDEW,
         },
         {
-        RALPH(22, KIRLIA, TRACE),
+        RALPH(22, KIRLIA),
         }
     },
 },
@@ -510,13 +513,12 @@
         {
         .lvl = 47,
         .species = SPECIES_ROSERADE,
-        .ability = ABILITY_NATURAL_CURE,
         IVS(18),
         .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC},
-        .gender = TRAINER_MON_FEMALE,
+        WALLY_BUDEW,
         },
         {
-        RALPH(49, GALLADE, SHARPNESS),
+        RALPH(49, GALLADE),
         .nature = NATURE_ADAMANT,
         .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE},
         .heldItem = ITEM_GALLADITE,
@@ -540,11 +542,10 @@
 #define WALLY_ROSERADE(rematch)                                                \
     {                                                                          \
     REMATCH_MON(ROSERADE, TIER2, rematch),                                     \
-    .ability = ABILITY_NATURAL_CURE,                                           \
+    WALLY_BUDEW,                                                               \
     .nature = NATURE_MODEST,                                                   \
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 63, 63, 1),                               \
     .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC}, \
-    .gender = TRAINER_MON_FEMALE,                                              \
     .heldItem = ITEM_MIRACLE_SEED,                                             \
     }
 

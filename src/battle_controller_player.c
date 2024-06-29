@@ -882,7 +882,7 @@ void HandleInputChooseMove(u32 battler)
             MoveSelectionDisplayMoveType(battler);
         }
     }
-    else if (JOY_NEW(B_MOVE_DESCRIPTION_BUTTON) && B_MOVE_DESCRIPTION_BUTTON != B_LAST_USED_BALL_BUTTON)
+    else if (JOY_NEW(B_MOVE_DESCRIPTION_BUTTON))
     {
         gBattleStruct->descriptionSubmenu = TRUE;
         MoveSelectionDisplayMoveDescription(battler);
@@ -2273,7 +2273,7 @@ static void PlayerChooseMoveInBattlePalace(u32 battler)
     {
         gBattlePalaceMoveSelectionRngValue = gRngValue;
         if (CanMegaEvolve(battler))
-            BtlController_EmitTwoReturnValues(battler, BUFFER_B, 10, ChooseMoveAndTargetInBattlePalace(battler) | (RET_MEGA_EVOLUTION) | (gBattlerTarget << 8));
+            BtlController_EmitTwoReturnValues(battler, BUFFER_B, 10, ChooseMoveAndTargetInBattlePalace(battler) | (RET_GIMMICK) | (gBattlerTarget << 8));
         else
             BtlController_EmitTwoReturnValues(battler, BUFFER_B, 10, ChooseMoveAndTargetInBattlePalace(battler));
         PlayerBufferExecCompleted(battler);

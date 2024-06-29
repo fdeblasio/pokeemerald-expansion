@@ -379,11 +379,13 @@
 #define TRAINER_ENCOUNTER_MUSIC_AQUA         6
 #define TRAINER_ENCOUNTER_MUSIC_MAGMA        7
 #define TRAINER_ENCOUNTER_MUSIC_SWIMMER      8 // Used for Swimmers, swimming Triathletes, and Sis and Bros
-#define TRAINER_ENCOUNTER_MUSIC_TWINS        9 // Used for Twins, PokéFans, and Sr. and Jr.s
+#define TRAINER_ENCOUNTER_MUSIC_TWINS        9 // Used for Twins, PokéFans, and Teammates
 #define TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR  10
 #define TRAINER_ENCOUNTER_MUSIC_HIKER       11 // Used for Hikers, Ruin Maniacs, Kindlers, and Fishermen
 #define TRAINER_ENCOUNTER_MUSIC_INTERVIEWER 12
 #define TRAINER_ENCOUNTER_MUSIC_RICH        13 // Used for Rich Boys and Gentlemen
+//#define TRAINER_ENCOUNTER_MUSIC_BRENDAN     14
+//#define TRAINER_ENCOUNTER_MUSIC_MAY         15
 
 #define F_TRAINER_FEMALE (1 << 7)
 

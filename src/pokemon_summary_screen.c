@@ -3766,6 +3766,9 @@ static void PrintMovePowerAndAccuracy(u16 moveIndex)
                 power = uq4_12_multiply(power, UQ_4_12(1.5));
         }
 
+        if (gMovesInfo[moveIndex].strikeCount > 1 && effect == EFFECT_HIT)
+            power *= gMovesInfo[moveIndex].strikeCount;
+
         if (power < 2 && power == gMovesInfo[moveIndex].power)
             text = gText_ThreeDashes;
         else {

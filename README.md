@@ -293,6 +293,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Tera Starstorm
 
 - The following moves/abilities/other effects show the correct power both in battle and on the summary screen:
+    - STAB/Adaptability
     - Eruption/Water Spout/Dragon Energy
     - Return
     - Frustration
@@ -322,10 +323,8 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Sharpness
     - Punching Glove
     - Hustle
-    - Moves that always crit (Frost Breath, Storm Throw, Surging Strikes, Wicked Blow, Flower Trick)
-    - Sniper
-    - STAB
-    - Adaptability
+    - Moves that always crit (Frost Breath, Storm Throw, Surging Strikes, Wicked Blow, Flower Trick)/Sniper
+    - Strike count for regular moves
 - The following moves/abilities/other effects show the correct power in battle:
     - Fury Cutter
     - Spit Up

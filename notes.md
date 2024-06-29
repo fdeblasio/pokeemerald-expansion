@@ -65,8 +65,8 @@ upcoming
 - Xaman's TM Case: https://www.pokecommunity.com/showpost.php?p=10378278
 
 ### Trainers
-- Revert Mauville Wally back to Ralts and add Verdanturf or later battle with Kirlia?
-    - Near Fallarbor with new Swablu?/New Mauville with Magnemite?
+- Add Grassy Terrain to Wally's Verdanturf battle?
+- Add Wally battle near Fallarbor with new Swablu
 - Group rematches with original battles
 - Readjust wild/trainer levels so that parties aren't overpowered?
 - Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)
@@ -81,7 +81,7 @@ upcoming
 - Maybe add Brendan/May/Maxie/Archie/admins/Winstrate rematches in Battle Frontier?
 - Try to get every Pokemon in Pokedex in at least one rematch?
 - Trainer customization:
-    - All rematches should have consistent values (gender, IVs (unless maxed), etc.)
+    - All rematches should have consistent values (gender, IVs (unless maxed but only > level 50), etc.)
     - Calvin could have a good Nature/EV
     - Leaders would have optimal Abilities/EVs/IVs/Natures
 - Use Good Ruby's palette shifting to give trainers more unique looks
@@ -98,6 +98,7 @@ upcoming
 
 ### Moves
 - Fix incense egg moves
+- Have multi-hit moves display the minimum? Or just have consant hit moves (Hit Twice, plus Triple Kick or Triple Axel if buffed to 100% accuracy)
 - TMs/Tutors
     - Hyper Voice tutor->TM?
     - Temper Flare (with better STAB distribution)

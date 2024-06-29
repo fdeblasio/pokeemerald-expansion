@@ -2006,6 +2006,9 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     || AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_WATER_SPORT, 0)))
         power = uq4_12_multiply(power, UQ_4_12(B_SPORT_DMG_REDUCTION >= GEN_5 ? 0.33 : 0.5));
 
+    if (gMovesInfo[move].strikeCount > 1 && effect == EFFECT_HIT)
+        power *= gMovesInfo[move].strikeCount;
+
     if (power < 2 && power == gMovesInfo[move].power)
         StringCopy(power_num, gText_BattleSwitchWhich5);
     else

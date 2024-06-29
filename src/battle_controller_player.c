@@ -885,7 +885,7 @@ static void HandleInputChooseMove(u32 battler)
             MoveSelectionDisplayMoveType(battler);
         }
     }
-    else if (JOY_NEW(B_MOVE_DESCRIPTION_BUTTON) && B_MOVE_DESCRIPTION_BUTTON != B_LAST_USED_BALL_BUTTON)
+    else if (JOY_NEW(B_MOVE_DESCRIPTION_BUTTON))
     {
         gBattleStruct->descriptionSubmenu = TRUE;
         MoveSelectionDisplayMoveDescription(battler);
@@ -1752,7 +1752,7 @@ static u8 GetMoveSelectionMoveType(u32 battler, u16 move)
         return ItemId_GetSecondaryId(gBattleMons[battler].item);
     else if (effect == EFFECT_REVELATION_DANCE)
     {
-        if ((IsTerastallized(battler)|| gBattleStruct->tera.playerSelect) && GetBattlerTeraType(battler) != TYPE_STELLAR)
+        if ((GetActiveGimmick(battler) == GIMMICK_DYNAMAX || IsGimmickSelected(battler, GIMMICK_DYNAMAX)) && GetBattlerTeraType(battler) != TYPE_STELLAR)
             return GetBattlerTeraType(battler);
         else if (gBattleMons[battler].type1 != TYPE_MYSTERY)
             return gBattleMons[battler].type1;
@@ -1776,7 +1776,7 @@ static u8 GetMoveSelectionMoveType(u32 battler, u16 move)
             return gBattleMons[battler].type2;
     }
     // Max Guard is a Normal-type move
-    else if (gMovesInfo[moveInfo->moves[gMoveSelectionCursor[battler]]].category == DAMAGE_CATEGORY_STATUS
+    else if (gMovesInfo[move].category == DAMAGE_CATEGORY_STATUS
              && (GetActiveGimmick(battler) == GIMMICK_DYNAMAX || IsGimmickSelected(battler, GIMMICK_DYNAMAX)))
     {
         type = TYPE_NORMAL;
@@ -2340,7 +2340,7 @@ static void PlayerChooseMoveInBattlePalace(u32 battler)
     {
         gBattlePalaceMoveSelectionRngValue = gRngValue;
         if (CanMegaEvolve(battler))
-            BtlController_EmitTwoReturnValues(battler, BUFFER_B, 10, ChooseMoveAndTargetInBattlePalace(battler) | (RET_MEGA_EVOLUTION) | (gBattlerTarget << 8));
+            BtlController_EmitTwoReturnValues(battler, BUFFER_B, 10, ChooseMoveAndTargetInBattlePalace(battler) | (RET_GIMMICK) | (gBattlerTarget << 8));
         else
             BtlController_EmitTwoReturnValues(battler, BUFFER_B, 10, ChooseMoveAndTargetInBattlePalace(battler));
         PlayerBufferExecCompleted(battler);

@@ -199,7 +199,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 ## Known Bugs
 - Moving an Pokemon in the PC seems to duplicate its item in the bag
-- Scott in Mauville lags before coming onscreen
 - Player faces down after beating Wally in Verdanturf
 - Due to the increased walking speed, followers will sometimes clip through tiles, especially after hopping off a ledge
 - Followers will stop following you if you use the naming screen from the party menu. It will start to follow you again if you talk to it

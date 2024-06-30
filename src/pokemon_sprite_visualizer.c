@@ -369,33 +369,33 @@ const u8 gFrontAnimNames[][34] =
 };
 const u8 gBattleBackgroundNames[][30] =
 {
-    [MAP_BATTLE_SCENE_NORMAL]   = _("NORMAL                  "),
-    [MAP_BATTLE_SCENE_GYM]      = _("GYM                     "),
-    [MAP_BATTLE_SCENE_MAGMA]    = _("MAGMA                   "),
-    [MAP_BATTLE_SCENE_AQUA]     = _("AQUA                    "),
-    [MAP_BATTLE_SCENE_SIDNEY]   = _("SIDNEY                  "),
-    [MAP_BATTLE_SCENE_PHOEBE]   = _("PHOEBE                  "),
-    [MAP_BATTLE_SCENE_GLACIA]   = _("GLACIA                  "),
-    [MAP_BATTLE_SCENE_DRAKE]    = _("DRAKE                   "),
-    [MAP_BATTLE_SCENE_FRONTIER] = _("FRONTIER                "),
-    [MAP_BATTLE_SCENE_LEADER]   = _("LEADER                  "),
-    [MAP_BATTLE_SCENE_WALLACE]  = _("WALLACE                 "),
-    [MAP_BATTLE_SCENE_GROUDON]  = _("GROUDON                 "),
-    [MAP_BATTLE_SCENE_KYOGRE]   = _("KYOGRE                  "),
-    [MAP_BATTLE_SCENE_RAYQUAZA] = _("RAYQUAZA                "),
+    [MAP_BATTLE_SCENE_NORMAL]   = _("Normal                  "),
+    [MAP_BATTLE_SCENE_GYM]      = _("Gym                     "),
+    [MAP_BATTLE_SCENE_MAGMA]    = _("Magma                   "),
+    [MAP_BATTLE_SCENE_AQUA]     = _("Aqua                    "),
+    [MAP_BATTLE_SCENE_SIDNEY]   = _("Sidney                  "),
+    [MAP_BATTLE_SCENE_PHOEBE]   = _("Phoebe                  "),
+    [MAP_BATTLE_SCENE_GLACIA]   = _("Glacia                  "),
+    [MAP_BATTLE_SCENE_DRAKE]    = _("Drake                   "),
+    [MAP_BATTLE_SCENE_FRONTIER] = _("Frontier                "),
+    [MAP_BATTLE_SCENE_LEADER]   = _("Leader                  "),
+    [MAP_BATTLE_SCENE_WALLACE]  = _("Wallace                 "),
+    [MAP_BATTLE_SCENE_GROUDON]  = _("Groudon                 "),
+    [MAP_BATTLE_SCENE_KYOGRE]   = _("Kyogre                  "),
+    [MAP_BATTLE_SCENE_RAYQUAZA] = _("Rayquaza                "),
 };
 const u8 gBattleBackgroundTerrainNames[][26] =
 {
-    [BATTLE_TERRAIN_GRASS]      = _("NORMAL - GRASS           "),
-    [BATTLE_TERRAIN_LONG_GRASS] = _("NORMAL - LONG GRASS      "),
-    [BATTLE_TERRAIN_SAND]       = _("NORMAL - SAND            "),
-    [BATTLE_TERRAIN_UNDERWATER] = _("NORMAL - UNDERWATER      "),
-    [BATTLE_TERRAIN_WATER]      = _("NORMAL - WATER           "),
-    [BATTLE_TERRAIN_POND]       = _("NORMAL - POND            "),
-    [BATTLE_TERRAIN_MOUNTAIN]   = _("NORMAL - MOUNTAIN        "),
-    [BATTLE_TERRAIN_CAVE]       = _("NORMAL - CAVE            "),
-    [BATTLE_TERRAIN_BUILDING]   = _("NORMAL - BUILDING        "),
-    [BATTLE_TERRAIN_PLAIN]      = _("NORMAL - PLAIN           "),
+    [BATTLE_TERRAIN_GRASS]      = _("Normal - Grass           "),
+    [BATTLE_TERRAIN_LONG_GRASS] = _("Normal - Long Grass      "),
+    [BATTLE_TERRAIN_SAND]       = _("Normal - Sand            "),
+    [BATTLE_TERRAIN_UNDERWATER] = _("Normal - Underwater      "),
+    [BATTLE_TERRAIN_WATER]      = _("Normal - Water           "),
+    [BATTLE_TERRAIN_POND]       = _("Normal - Pond            "),
+    [BATTLE_TERRAIN_MOUNTAIN]   = _("Normal - Mountain        "),
+    [BATTLE_TERRAIN_CAVE]       = _("Normal - Cave            "),
+    [BATTLE_TERRAIN_BUILDING]   = _("Normal - Building        "),
+    [BATTLE_TERRAIN_PLAIN]      = _("Normal - Plain           "),
 };
 //Function declarations
 static void PrintDigitChars(struct PokemonSpriteVisualizer *data);
@@ -435,8 +435,8 @@ static void PrintInstructionsOnWindow(struct PokemonSpriteVisualizer *data)
     u8 textInstructionsSubmenuTwoGender[] = _("{START_BUTTON} Shiny {SELECT_BUTTON} Gender\n{B_BUTTON} Back$");
 
 
-    u8 textBottom[] = _("BACK:\nFRONT:\nBG:$");
-    u8 textBottomForms[] = _("BACK:\nFRONT:\nBG:\nFORMS:$");
+    u8 textBottom[] = _("Back:\nFront:\nBG:$");
+    u8 textBottomForms[] = _("Back:\nFront:\nBG:\nFORMS:$");
     u8 textBottomSubmenuTwo[] = _("B coords:\nF coords:\nF elev:");
     u16 species = data->modifyArrows.currValue;
 

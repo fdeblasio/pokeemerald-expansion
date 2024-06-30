@@ -65,7 +65,6 @@ upcoming
 - Xaman's TM Case: https://www.pokecommunity.com/showpost.php?p=10378278
 
 ### Trainers
-- Add Grassy Terrain to Wally's Verdanturf battle?
 - Add Wally battle near Fallarbor with new Swablu
 - Readjust wild/trainer levels so that parties aren't overpowered?
 - Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)
@@ -83,7 +82,7 @@ upcoming
     - All rematches should have consistent values (gender, IVs (unless maxed but only > level 50), etc.)
     - Calvin could have a good Nature/EV
     - Leaders would have optimal Abilities/EVs/IVs/Natures
-- Use Good Ruby's palette shifting to give trainers more unique looks
+- Use Good Ruby's palette shifting to give trainers more unique looks? (https://github.com/Doesnty/goodruby/commit/ff53bbab592865b49f345342205b41cb869abf27)
 - Breeders should have good IVs/Natures/Abilities
 - Psychics can use Psyduck, Golduck, and Farigiraf now
     - Update Mossdeep Gym if there are duplicates of other Pokemon
@@ -159,6 +158,8 @@ upcoming
 
 ### Other
 - Railroad the post-Mossdeep water routes
+- Try to get Verdanturf grass to start Grassy Terrain instead of messing with weather
+    - MB_SHORT_GRASS but unsure of what else uses that
 - Might need to increase MAX_LEVEL_UP_MOVES and/or MAX_RELEARNER_MOVES
 - Update palettes?:
     - Pokédex (and HGSS Pokédex)

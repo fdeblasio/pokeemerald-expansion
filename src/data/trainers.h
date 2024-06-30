@@ -13475,7 +13475,7 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         {
         .lvl = 29,
         .species = SPECIES_ABSOL,
-        }
+        },
         {
         .lvl = 29,
         .species = SPECIES_TROPIUS,

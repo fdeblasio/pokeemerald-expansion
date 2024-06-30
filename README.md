@@ -199,7 +199,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 ## Known Bugs
 - Moving an Pokemon in the PC seems to duplicate its item in the bag
-- Player faces down after beating Wally in Verdanturf
 - Due to the increased walking speed, followers will sometimes clip through tiles, especially after hopping off a ledge
 - Followers will stop following you if you use the naming screen from the party menu. It will start to follow you again if you talk to it
 - When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
@@ -209,9 +208,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 ### Potentially just savefile issues due to playing while hacking
 - Items in the Battle Pyramid's Battle Bag/held items in the Battle Pike are turning into Poke Balls
     - Seems to happen after trainer battles?
-    - This occurs even with the Battle Frontier changes reverted
-- Verdanturf Battle Tent sometimes gives an item right away
-- PokéNav callers sometimes think there were 512 wins at the Battle Palace (seems to be related to Battle Tent issue)
 
 ## Changes
 - NOTE: This all assumes there are no rebasing errors
@@ -260,7 +256,8 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Battle Frontier no longer requires saving
 - Two Pokémon having the same original trainer no longer negatively affects breeding chances
 - Certain sections are blocked off until gyms or rivals are defeated
-- Wally is given more battles
+- Wally is given more battles. The battle in Verdanturf starts with Grassy Terrain
+- Battles in long grass on Routes 119 and 120 start with Grassy Terrain (unless it's a thunderstorm)
 
 ### Quality of Life
 - Shiny Pokémon can no longer spawn until you get Poké Balls
@@ -391,7 +388,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Brawly          |16, 16, 19            |16, 16, 18|
 |Rival 110       |18, 18, 20||
 |Wally Mauville  |16                    |19|
-|Wally Verdanturf|N/A                   |20, 22|
+|Wally Verdanturf|N/A                   |21, 23|
 |Wattson         |20, 22, 22, 24        |22, 24, 24, 26|
 |Tabitha         |18, 20, 22, 22        |26, 26, 28|
 |Maxie           |24, 24, 25            |28, 28, 28, 30|

@@ -1245,7 +1245,7 @@ static void UpdateThunderSound(void)
 }
 
 //------------------------------------------------------------------------------
-// WEATHER_FOG_HORIZONTAL and WEATHER_UNDERWATER
+// WEATHER_FOG_HORIZONTAL
 //------------------------------------------------------------------------------
 
 static const u16 sUnusedData[] = {0, 6, 6, 12, 18, 42, 300, 300};
@@ -2580,7 +2580,7 @@ static u8 TranslateWeatherNum(u8 weather)
     case WEATHER_VOLCANIC_ASH:       return WEATHER_VOLCANIC_ASH;
     case WEATHER_SANDSTORM:          return WEATHER_SANDSTORM;
     case WEATHER_FOG_DIAGONAL:       return WEATHER_FOG_DIAGONAL;
-    case WEATHER_UNDERWATER:         return WEATHER_UNDERWATER;
+    case WEATHER_VERDANT:            return WEATHER_VERDANT;
     case WEATHER_SHADE:              return WEATHER_SHADE;
     case WEATHER_DROUGHT:            return WEATHER_DROUGHT;
     case WEATHER_DOWNPOUR:           return WEATHER_DOWNPOUR;

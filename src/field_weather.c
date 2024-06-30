@@ -95,7 +95,7 @@ static const struct WeatherCallbacks sWeatherFuncs[] =
     [WEATHER_VOLCANIC_ASH]       = {Ash_InitVars,           Ash_Main,           Ash_InitAll,           Ash_Finish},
     [WEATHER_SANDSTORM]          = {Sandstorm_InitVars,     Sandstorm_Main,     Sandstorm_InitAll,     Sandstorm_Finish},
     [WEATHER_FOG_DIAGONAL]       = {FogDiagonal_InitVars,   FogDiagonal_Main,   FogDiagonal_InitAll,   FogDiagonal_Finish},
-    [WEATHER_UNDERWATER]         = {FogHorizontal_InitVars, FogHorizontal_Main, FogHorizontal_InitAll, FogHorizontal_Finish},
+    [WEATHER_VERDANT]            = {Sunny_InitVars,         Sunny_Main,         Sunny_InitAll,         Sunny_Finish},
     [WEATHER_SHADE]              = {Shade_InitVars,         Shade_Main,         Shade_InitAll,         Shade_Finish},
     [WEATHER_DROUGHT]            = {Drought_InitVars,       Drought_Main,       Drought_InitAll,       Drought_Finish},
     [WEATHER_DOWNPOUR]           = {Downpour_InitVars,      Thunderstorm_Main,  Downpour_InitAll,      Thunderstorm_Finish},
@@ -403,7 +403,6 @@ static void FadeInScreenWithWeather(void)
     case WEATHER_VOLCANIC_ASH:
     case WEATHER_SANDSTORM:
     case WEATHER_FOG_DIAGONAL:
-    case WEATHER_UNDERWATER:
     default:
         if (!gPaletteFade.active)
         {
@@ -1110,6 +1109,5 @@ bool32 IsWeatherAlphaBlend(void)
 {
     return (gWeatherPtr->currWeather == WEATHER_FOG_HORIZONTAL
          || gWeatherPtr->currWeather == WEATHER_FOG_DIAGONAL
-         || gWeatherPtr->currWeather == WEATHER_UNDERWATER_BUBBLES
-         || gWeatherPtr->currWeather == WEATHER_UNDERWATER);
+         || gWeatherPtr->currWeather == WEATHER_UNDERWATER_BUBBLES);
 }

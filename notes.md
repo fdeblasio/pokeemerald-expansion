@@ -67,7 +67,6 @@ upcoming
 ### Trainers
 - Add Grassy Terrain to Wally's Verdanturf battle?
 - Add Wally battle near Fallarbor with new Swablu
-- Group rematches with original battles
 - Readjust wild/trainer levels so that parties aren't overpowered?
 - Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)
 - Elite Four rematches (wouldn't need to use Match Call, could probably do if statement in scripts.inc)

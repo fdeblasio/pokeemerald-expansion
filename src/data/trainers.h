@@ -470,13 +470,13 @@
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 20,
+        .lvl = 21,
         .species = SPECIES_BUDEW,
         IVS(3),
         WALLY_BUDEW,
         },
         {
-        RALPH(22, KIRLIA),
+        RALPH(23, KIRLIA),
         }
     },
 },
@@ -5773,6 +5773,115 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
+[TRAINER_VIVIAN] =
+{
+    .trainerName = _("Vivian"),
+    BEAUTY_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 20,
+        .species = SPECIES_MINUN,
+        IVS(12),
+        .moves = {MOVE_SHOCK_WAVE, MOVE_SWIFT, MOVE_NUZZLE, MOVE_ENCORE}
+        },
+        {
+        .lvl = 20,
+        .species = SPECIES_PLUSLE,
+        IVS(12),
+        .moves = {MOVE_SHOCK_WAVE, MOVE_SWIFT, MOVE_NUZZLE, MOVE_SKILL_SWAP}
+        }
+    },
+},
+
+[TRAINER_KIRK] =
+{
+    .trainerName = _("Kirk"),
+    GUITARIST_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 20,
+        .species = SPECIES_ELECTRIKE,
+        IVS(12),
+        .moves = {MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_QUICK_ATTACK, MOVE_LEER}
+        },
+        {
+        .lvl = 20,
+        .species = SPECIES_VOLTORB,
+        IVS(12),
+        .moves = {MOVE_SHOCK_WAVE, MOVE_CHARGE, MOVE_SCREECH, MOVE_ROLLOUT}
+        }
+    },
+},
+
+[TRAINER_BEN] =
+{
+    .trainerName = _("Ben"),
+    YOUNGSTER_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 20,
+        .species = SPECIES_PICHU,
+        IVS(18),
+        .moves = {MOVE_SHOCK_WAVE, MOVE_NASTY_PLOT, MOVE_NUZZLE, MOVE_SWEET_KISS}
+        },
+        {
+        .lvl = 20,
+        .species = SPECIES_ELECTRIKE,
+        IVS(18),
+        .moves = {MOVE_SHOCK_WAVE, MOVE_QUICK_ATTACK, MOVE_THUNDER_WAVE, MOVE_HOWL}
+        }
+    },
+},
+
+[TRAINER_ANGELO] =
+{
+    .trainerName = _("Angelo"),
+    TRAINER_CLASS_PIC(POKEMANIAC),
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 20,
+        .species = SPECIES_CHINCHOU,
+        IVS(12),
+        .moves = {MOVE_SHOCK_WAVE, MOVE_BUBBLE_BEAM, MOVE_THUNDER_WAVE, MOVE_CONFUSE_RAY}
+        },
+        {
+        .lvl = 20,
+        .species = SPECIES_MAGNEMITE,
+        IVS(12),
+        .moves = {MOVE_SHOCK_WAVE, MOVE_MAGNET_BOMB, MOVE_THUNDER_WAVE, MOVE_SUPERSONIC}
+        }
+    },
+},
+
+[TRAINER_SHAWN] =
+{
+    .trainerName = _("Shawn"),
+    GUITARIST_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 20,
+        .species = SPECIES_MAGNEMITE,
+        IVS(12),
+        },
+        {
+        .lvl = 20,
+        .species = SPECIES_ELECTRIKE,
+        IVS(12),
+        }
+    },
+},
+
 
 
 
@@ -5790,97 +5899,97 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_GRUNT_AQUA_HIDEOUT_1] =
+[TRAINER_SAWYER_2] =
 {
-    AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 43,
-        .species = SPECIES_TENTACOOL,
-        }
-    },
-},
-
-[TRAINER_GRUNT_AQUA_HIDEOUT_2] =
-{
-    AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .trainerName = _("Sawyer"),
+    HIKER_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
+        .lvl = 34,
+        .species = SPECIES_NUMEL,
+        IVS(1),
+        },
+        {
+        .lvl = 34,
+        .species = SPECIES_GEODUDE,
+        IVS(1),
+        }
+    },
+},
+
+[TRAINER_SAWYER_3] =
+{
+    .trainerName = _("Sawyer"),
+    HIKER_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = REMATCH_3_LEVEL_3,
+        .species = SPECIES_MACHOKE,
+        IVS(3),
+        },
+        {
+        .lvl = REMATCH_3_LEVEL_3,
+        .species = SPECIES_CAMERUPT,
+        IVS(3),
+        },
+        {
+        .lvl = REMATCH_3_LEVEL_3,
+        .species = SPECIES_GRAVELER,
+        IVS(3),
+        }
+    },
+},
+
+[TRAINER_SAWYER_4] =
+{
+    .trainerName = _("Sawyer"),
+    HIKER_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 40,
+        .species = SPECIES_MACHOKE,
+        IVS(3),
+        },
+        {
+        .lvl = 40,
+        .species = SPECIES_CAMERUPT,
+        IVS(3),
+        },
+        {
+        .lvl = 40,
+        .species = SPECIES_GOLEM,
+        IVS(3),
+        }
+    },
+},
+
+[TRAINER_SAWYER_5] =
+{
+    .trainerName = _("Sawyer"),
+    HIKER_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
         .lvl = 42,
-        .species = SPECIES_CORPHISH,
+        .species = SPECIES_MACHAMP,
+        IVS(4),
         },
         {
         .lvl = 42,
-        .species = SPECIES_CARVANHA,
-        }
-    },
-},
-
-[TRAINER_GRUNT_AQUA_HIDEOUT_3] =
-{
-    AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 43,
-        .species = SPECIES_WAILMER,
-        }
-    },
-},
-
-[TRAINER_GRUNT_AQUA_HIDEOUT_4] =
-{
-    AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 43,
-        .species = SPECIES_CLAMPERL,
-        }
-    },
-},
-
-[TRAINER_GRUNT_SEAFLOOR_CAVERN_1] =
-{
-    AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
+        .species = SPECIES_CAMERUPT,
+        IVS(4),
+        },
         {
         .lvl = 42,
-        .species = SPECIES_WAILORD,
-        }
-    },
-},
-
-[TRAINER_GRUNT_SEAFLOOR_CAVERN_2] =
-{
-    AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_TENTACRUEL,
-        }
-    },
-},
-
-[TRAINER_GRUNT_SEAFLOOR_CAVERN_3] =
-{
-    AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_CRAWDAUNT,
+        .species = SPECIES_GOLEM,
+        IVS(4),
         }
     },
 },
@@ -5917,6 +6026,154 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         {
         .lvl = 31,
         .species = SPECIES_TAILLOW,
+        }
+    },
+},
+
+[TRAINER_GABRIELLE_2] =
+{
+    GABRIELLE_INFO,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 34,
+        .species = SPECIES_SKITTY,
+        IVS(1),
+        },
+        {
+        .lvl = 34,
+        .species = SPECIES_MIGHTYENA,
+        IVS(1),
+        },
+        {
+        .lvl = 34,
+        .species = SPECIES_ZIGZAGOON,
+        IVS(1),
+        },
+        {
+        .lvl = 34,
+        .species = SPECIES_LOTAD,
+        IVS(1),
+        },
+        {
+        .lvl = 34,
+        .species = SPECIES_SEEDOT,
+        IVS(1),
+        },
+        {
+        .lvl = 34,
+        .species = SPECIES_TAILLOW,
+        IVS(1),
+        }
+    },
+},
+
+[TRAINER_GABRIELLE_3] =
+{
+    GABRIELLE_INFO,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = REMATCH_3_LEVEL_6,
+        .species = SPECIES_SKITTY,
+        IVS(3),
+        },
+        {
+        .lvl = REMATCH_3_LEVEL_6,
+        .species = SPECIES_MIGHTYENA,
+        IVS(3),
+        },
+        {
+        .lvl = REMATCH_3_LEVEL_6,
+        .species = SPECIES_LINOONE,
+        IVS(3),
+        },
+        {
+        .lvl = REMATCH_3_LEVEL_6,
+        .species = SPECIES_LOMBRE,
+        IVS(3),
+        },
+        {
+        .lvl = REMATCH_3_LEVEL_6,
+        .species = SPECIES_NUZLEAF,
+        IVS(3),
+        },
+        {
+        .lvl = REMATCH_3_LEVEL_6,
+        .species = SPECIES_TAILLOW,
+        IVS(3),
+        }
+    },
+},
+
+[TRAINER_GABRIELLE_4] =
+{
+    GABRIELLE_INFO,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 38,
+        .species = SPECIES_DELCATTY,
+        IVS(3),
+        },
+        {
+        .lvl = 38,
+        .species = SPECIES_MIGHTYENA,
+        IVS(3),
+        },
+        {
+        .lvl = 38,
+        .species = SPECIES_LINOONE,
+        IVS(3),
+        },
+        {
+        .lvl = 38,
+        .species = SPECIES_LOMBRE,
+        IVS(3),
+        },
+        {
+        .lvl = 38,
+        .species = SPECIES_NUZLEAF,
+        IVS(3),
+        },
+        {
+        .lvl = 38,
+        .species = SPECIES_SWELLOW,
+        IVS(3),
+        }
+    },
+},
+
+[TRAINER_GABRIELLE_5] =
+{
+    GABRIELLE_INFO,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 40,
+        .species = SPECIES_DELCATTY,
+        IVS(4),
+        },
+        {
+        .lvl = 40,
+        .species = SPECIES_MIGHTYENA,
+        IVS(4),
+        },
+        {
+        .lvl = 40,
+        .species = SPECIES_LINOONE,
+        IVS(4),
+        },
+        {
+        .lvl = 40,
+        .species = SPECIES_LUDICOLO,
+        IVS(4),
+        },
+        {
+        .lvl = 40,
+        .species = SPECIES_SHIFTRY,
+        IVS(4),
+        },
+        {
+        .lvl = 40,
+        .species = SPECIES_SWELLOW,
+        IVS(4),
         }
     },
 },
@@ -5980,22 +6237,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_GRUNT_SEAFLOOR_CAVERN_4] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-    .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_SEAKING,
-        }
-    },
-},
-
 [TRAINER_DECLAN] =
 {
     .trainerName = _("Declan"),
@@ -6008,168 +6249,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         {
         .lvl = 38,
         .species = SPECIES_GYARADOS,
-        }
-    },
-},
-
-[TRAINER_GRUNT_WEATHER_INST_1] =
-{
-    AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 40,
-        .species = SPECIES_CARVANHA,
-        },
-        {
-        .lvl = 40,
-        .species = SPECIES_CORPHISH,
-        }
-    },
-},
-
-[TRAINER_GRUNT_WEATHER_INST_2] =
-{
-    AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 40,
-        .species = SPECIES_CARVANHA,
-        },
-        {
-        .lvl = 40,
-        .species = SPECIES_WAILMER,
-        }
-    },
-},
-
-[TRAINER_GRUNT_WEATHER_INST_3] =
-{
-    AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 39,
-        .species = SPECIES_CARVANHA,
-        },
-        {
-        .lvl = 39,
-        .species = SPECIES_CLAMPERL,
-        },
-        {
-        .lvl = 39,
-        .species = SPECIES_TENTACOOL,
-        }
-    },
-},
-
-[TRAINER_GRUNT_SPACE_CENTER_1] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 44,
-        .species = SPECIES_NUMEL,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MT_PYRE_1] =
-{
-    AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_CORPHISH,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MT_PYRE_2] =
-{
-    AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_TENTACOOL,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MT_PYRE_3] =
-{
-    AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 41,
-        .species = SPECIES_CARVANHA,
-        },
-        {
-        .lvl = 41,
-        .species = SPECIES_WAILMER,
-        }
-    },
-},
-
-[TRAINER_GRUNT_WEATHER_INST_4] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-    .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 41,
-        .species = SPECIES_CARVANHA,
-        }
-    },
-},
-
-[TRAINER_GRUNT_AQUA_HIDEOUT_5] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-    .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 43,
-        .species = SPECIES_STARYU,
-        }
-    },
-},
-
-[TRAINER_GRUNT_AQUA_HIDEOUT_6] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-    .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 43,
-        .species = SPECIES_GOLDEEN,
         }
     },
 },
@@ -6196,34 +6275,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_MATT_AQUA_HIDEOUT] =
-{
-    .trainerName = _("Matt"),
-    .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
-    .trainerPic = TRAINER_PIC_AQUA_ADMIN_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .items = {ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 52,
-        .species = SPECIES_TENTACRUEL,
-        IVS(6),
-        },
-        {
-        .lvl = 52,
-        .species = SPECIES_CRAWDAUNT,
-        IVS(6),
-        },
-        {
-        .lvl = 54,
-        .species = SPECIES_HUNTAIL,
-        IVS(6),
-        }
-    },
-},
-
 [TRAINER_ZANDER] =
 {
     .trainerName = _("Zander"),
@@ -6234,60 +6285,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         {
         .lvl = 36,
         .species = SPECIES_HARIYAMA,
-        }
-    },
-},
-
-[TRAINER_SHELLY_WEATHER_INSTITUTE] =
-{
-    .trainerName = _("Shelly"),
-    .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
-    .trainerPic = TRAINER_PIC_AQUA_ADMIN_F,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 41,
-        .species = SPECIES_STARYU,
-        IVS(6),
-        },
-        {
-        .lvl = 41,
-        .species = SPECIES_GOLDEEN,
-        IVS(6),
-        },
-        {
-        .lvl = 43,
-        .species = SPECIES_GOREBYSS,
-        IVS(6),
-        }
-    },
-},
-
-[TRAINER_SHELLY_SEAFLOOR_CAVERN] =
-{
-    .trainerName = _("Shelly"),
-    .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
-    .trainerPic = TRAINER_PIC_AQUA_ADMIN_F,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_STARMIE,
-        IVS(12),
-        },
-        {
-        .lvl = 42,
-        .species = SPECIES_SEAKING,
-        IVS(12),
-        },
-        {
-        .lvl = 43,
-        .species = SPECIES_GOREBYSS,
-        IVS(12),
         }
     },
 },
@@ -6340,28 +6337,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_ROSE_1] =
-{
-    .trainerName = _("Rose"),
-    AROMA_LADY_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 18,
-        .species = SPECIES_SHROOMISH,
-        },
-        {
-        .lvl = 18,
-        .species = SPECIES_ODDISH,
-        },
-        {
-        .lvl = 18,
-        .species = SPECIES_BUDEW,
-        }
-    },
-},
-
 [TRAINER_FELIX] =
 {
     .trainerName = _("Felix"),
@@ -6399,6 +6374,28 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         {
         .lvl = 29,
         .species = SPECIES_GLOOM,
+        }
+    },
+},
+
+[TRAINER_ROSE_1] =
+{
+    .trainerName = _("Rose"),
+    AROMA_LADY_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 18,
+        .species = SPECIES_SHROOMISH,
+        },
+        {
+        .lvl = 18,
+        .species = SPECIES_ODDISH,
+        },
+        {
+        .lvl = 18,
+        .species = SPECIES_BUDEW,
         }
     },
 },
@@ -6508,29 +6505,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_DUSTY_1] =
-{
-    .trainerName = _("Dusty"),
-    TRAINER_CLASS_PIC(RUIN_MANIAC),
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 26,
-        .species = SPECIES_SANDSLASH,
-        IVS(6),
-        .moves = {MOVE_BULLDOZE, MOVE_CRUSH_CLAW, MOVE_SAND_ATTACK, MOVE_RAPID_SPIN}
-        },
-        {
-        .lvl = 26,
-        .species = SPECIES_BALTOY,
-        IVS(6),
-        .moves = {MOVE_PSYBEAM, MOVE_ANCIENT_POWER, MOVE_RAPID_SPIN, MOVE_COSMIC_POWER}
-        }
-    },
-},
-
 [TRAINER_CHIP] =
 {
     .trainerName = _("Chip"),
@@ -6579,6 +6553,29 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         .species = SPECIES_SANDSLASH,
         IVS(12),
         .moves = {MOVE_BULLDOZE, MOVE_CRUSH_CLAW, MOVE_SAND_ATTACK, MOVE_FURY_SWIPES}
+        }
+    },
+},
+
+[TRAINER_DUSTY_1] =
+{
+    .trainerName = _("Dusty"),
+    TRAINER_CLASS_PIC(RUIN_MANIAC),
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 26,
+        .species = SPECIES_SANDSLASH,
+        IVS(6),
+        .moves = {MOVE_BULLDOZE, MOVE_CRUSH_CLAW, MOVE_SAND_ATTACK, MOVE_RAPID_SPIN}
+        },
+        {
+        .lvl = 26,
+        .species = SPECIES_BALTOY,
+        IVS(6),
+        .moves = {MOVE_PSYBEAM, MOVE_ANCIENT_POWER, MOVE_RAPID_SPIN, MOVE_COSMIC_POWER}
         }
     },
 },
@@ -6896,34 +6893,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_WILTON_1] =
-{
-    .trainerName = _("Wilton"),
-    .trainerClass = TRAINER_CLASS_COOLTRAINER,
-    .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = {ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 22,
-        .species = SPECIES_ELECTRIKE,
-        IVS(12),
-        },
-        {
-        .lvl = 22,
-        .species = SPECIES_WAILMER,
-        IVS(12),
-        },
-        {
-        .lvl = 22,
-        .species = SPECIES_MAKUHITA,
-        IVS(12),
-        }
-    },
-},
-
 [TRAINER_EDGAR] =
 {
     .trainerName = _("Edgar"),
@@ -7064,6 +7033,34 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         {
         .lvl = 45,
         .species = SPECIES_WAILORD,
+        IVS(12),
+        }
+    },
+},
+
+[TRAINER_WILTON_1] =
+{
+    .trainerName = _("Wilton"),
+    .trainerClass = TRAINER_CLASS_COOLTRAINER,
+    .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
+    .items = {ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 22,
+        .species = SPECIES_ELECTRIKE,
+        IVS(12),
+        },
+        {
+        .lvl = 22,
+        .species = SPECIES_WAILMER,
+        IVS(12),
+        },
+        {
+        .lvl = 22,
+        .species = SPECIES_MAKUHITA,
         IVS(12),
         }
     },
@@ -7318,34 +7315,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_BROOKE_1] =
-{
-    .trainerName = _("Brooke"),
-    .trainerClass = TRAINER_CLASS_COOLTRAINER,
-    .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = {ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 22,
-        .species = SPECIES_WINGULL,
-        IVS(12),
-        },
-        {
-        .lvl = 22,
-        .species = SPECIES_NUMEL,
-        IVS(12),
-        },
-        {
-        .lvl = 22,
-        .species = SPECIES_ROSELIA,
-        IVS(12),
-        }
-    },
-},
-
 [TRAINER_JENNIFER] =
 {
     .trainerName = _("Jennifer"),
@@ -7474,6 +7443,34 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         {
         .lvl = 45,
         .species = SPECIES_TROPIUS,
+        IVS(12),
+        }
+    },
+},
+
+[TRAINER_BROOKE_1] =
+{
+    .trainerName = _("Brooke"),
+    .trainerClass = TRAINER_CLASS_COOLTRAINER,
+    .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
+    .items = {ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 22,
+        .species = SPECIES_WINGULL,
+        IVS(12),
+        },
+        {
+        .lvl = 22,
+        .species = SPECIES_NUMEL,
+        IVS(12),
+        },
+        {
+        .lvl = 22,
+        .species = SPECIES_ROSELIA,
         IVS(12),
         }
     },
@@ -7648,21 +7645,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_VALERIE_1] =
-{
-    .trainerName = _("Valerie"),
-    TRAINER_CLASS_PIC(HEX_MANIAC),
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 36,
-        .species = SPECIES_SABLEYE,
-        }
-    },
-},
-
 [TRAINER_TASHA] =
 {
     .trainerName = _("Tasha"),
@@ -7675,6 +7657,21 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         .lvl = 36,
         .species = SPECIES_SHUPPET,
         IVS(6),
+        }
+    },
+},
+
+[TRAINER_VALERIE_1] =
+{
+    .trainerName = _("Valerie"),
+    TRAINER_CLASS_PIC(HEX_MANIAC),
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 36,
+        .species = SPECIES_SABLEYE,
         }
     },
 },
@@ -7804,33 +7801,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_COURTNEY_SPACE_CENTER] =
-{
-    .trainerName = _("Courtney"),
-    .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
-    .trainerPic = TRAINER_PIC_MAGMA_ADMIN_F,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 55,
-        .species = SPECIES_SANDSLASH,
-        IVS(12),
-        },
-        {
-        .lvl = 55,
-        .species = SPECIES_TORKOAL,
-        IVS(12),
-        },
-        {
-        .lvl = 57,
-        .species = SPECIES_NINETALES,
-        IVS(12),
-        }
-    },
-},
-
 [TRAINER_BRIANNA] =
 {
     .trainerName = _("Brianna"),
@@ -7899,26 +7869,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         {
         .lvl = 26,
         .species = SPECIES_NUMEL,
-        }
-    },
-},
-
-[TRAINER_JESSICA_1] =
-{
-    .trainerName = _("Jessica"),
-    BEAUTY_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 33,
-        .species = SPECIES_KECLEON,
-        .moves = {MOVE_SLASH, MOVE_SHADOW_CLAW, MOVE_DETECT, MOVE_PSYBEAM}
-        },
-        {
-        .lvl = 33,
-        .species = SPECIES_SEVIPER,
-        .moves = {MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_NIGHT_SLASH}
         }
     },
 },
@@ -7997,6 +7947,26 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         .lvl = 43,
         .species = SPECIES_SHARPEDO,
         IVS(12),
+        }
+    },
+},
+
+[TRAINER_JESSICA_1] =
+{
+    .trainerName = _("Jessica"),
+    BEAUTY_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 33,
+        .species = SPECIES_KECLEON,
+        .moves = {MOVE_SLASH, MOVE_SHADOW_CLAW, MOVE_DETECT, MOVE_PSYBEAM}
+        },
+        {
+        .lvl = 33,
+        .species = SPECIES_SEVIPER,
+        .moves = {MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_NIGHT_SLASH}
         }
     },
 },
@@ -8124,39 +8094,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_STEVE_1] =
-{
-    .trainerName = _("Steve"),
-    TRAINER_CLASS_PIC(POKEMANIAC),
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 24,
-        .species = SPECIES_ARON,
-        }
-    },
-},
-
-[TRAINER_THALIA_1] =
-{
-    .trainerName = _("Thalia"),
-    BEAUTY_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 29,
-        .species = SPECIES_WAILMER,
-        },
-        {
-        .lvl = 29,
-        .species = SPECIES_HORSEA,
-        }
-    },
-},
-
 [TRAINER_MARK] =
 {
     .trainerName = _("Mark"),
@@ -8172,18 +8109,17 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_GRUNT_MT_CHIMNEY_1] =
+[TRAINER_STEVE_1] =
 {
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .trainerName = _("Steve"),
+    TRAINER_CLASS_PIC(POKEMANIAC),
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 24,
-        .species = SPECIES_NUMEL,
+        .species = SPECIES_ARON,
         }
     },
 },
@@ -8344,22 +8280,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         .lvl = 28,
         .species = SPECIES_TENTACOOL,
         IVS(1),
-        }
-    },
-},
-
-[TRAINER_TONY_1] =
-{
-    .trainerName = _("Tony"),
-    .trainerClass = TRAINER_CLASS_SWIMMER,
-    .trainerPic = TRAINER_PIC_SWIMMER_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 30,
-        .species = SPECIES_CARVANHA,
         }
     },
 },
@@ -8704,6 +8624,22 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
+[TRAINER_TONY_1] =
+{
+    .trainerName = _("Tony"),
+    .trainerClass = TRAINER_CLASS_SWIMMER,
+    .trainerPic = TRAINER_PIC_SWIMMER_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 30,
+        .species = SPECIES_CARVANHA,
+        }
+    },
+},
+
 [TRAINER_TONY_2] =
 {
     .trainerName = _("Tony"),
@@ -8989,99 +8925,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         .lvl = 36,
         .species = SPECIES_HARIYAMA,
         IVS(12),
-        }
-    },
-},
-
-[TRAINER_KIRK] =
-{
-    .trainerName = _("Kirk"),
-    GUITARIST_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 20,
-        .species = SPECIES_ELECTRIKE,
-        IVS(12),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_QUICK_ATTACK, MOVE_LEER}
-        },
-        {
-        .lvl = 20,
-        .species = SPECIES_VOLTORB,
-        IVS(12),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_CHARGE, MOVE_SCREECH, MOVE_ROLLOUT}
-        }
-    },
-},
-
-[TRAINER_GRUNT_AQUA_HIDEOUT_7] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-    .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_STARYU,
-        },
-        {
-        .lvl = 42,
-        .species = SPECIES_GOLDEEN,
-        }
-    },
-},
-
-[TRAINER_GRUNT_AQUA_HIDEOUT_8] =
-{
-    AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 43,
-        .species = SPECIES_CARVANHA,
-        }
-    },
-},
-
-[TRAINER_SHAWN] =
-{
-    .trainerName = _("Shawn"),
-    GUITARIST_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 20,
-        .species = SPECIES_MAGNEMITE,
-        IVS(12),
-        },
-        {
-        .lvl = 20,
-        .species = SPECIES_ELECTRIKE,
-        IVS(12),
-        }
-    },
-},
-
-[TRAINER_FERNANDO_1] =
-{
-    .trainerName = _("Fernando"),
-    GUITARIST_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 35,
-        .species = SPECIES_MANECTRIC,
-        },
-        {
-        .lvl = 35,
-        .species = SPECIES_LOUDRED,
         }
     },
 },
@@ -9503,25 +9346,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_ETHAN_1] =
-{
-    .trainerName = _("Ethan"),
-    TRAINER_CLASS_PIC(CAMPER),
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 25,
-        .species = SPECIES_GULPIN,
-        },
-        {
-        .lvl = 25,
-        .species = SPECIES_TAILLOW,
-        }
-    },
-},
-
 [TRAINER_AUTUMN] =
 {
     .trainerName = _("Autumn"),
@@ -9548,6 +9372,25 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         {
         .lvl = 21,
         .species = SPECIES_SANDSHREW,
+        }
+    },
+},
+
+[TRAINER_ETHAN_1] =
+{
+    .trainerName = _("Ethan"),
+    TRAINER_CLASS_PIC(CAMPER),
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 25,
+        .species = SPECIES_GULPIN,
+        },
+        {
+        .lvl = 25,
+        .species = SPECIES_TAILLOW,
         }
     },
 },
@@ -10285,21 +10128,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_WALTER_1] =
-{
-    .trainerName = _("Walter"),
-    TRAINER_CLASS_PIC(GENTLEMAN),
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_RICH,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 34,
-        .species = SPECIES_MANECTRIC,
-        }
-    },
-},
-
 [TRAINER_MICAH] =
 {
     .trainerName = _("Micah"),
@@ -10330,6 +10158,21 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         {
         .lvl = 60,
         .species = SPECIES_ZANGOOSE,
+        }
+    },
+},
+
+[TRAINER_WALTER_1] =
+{
+    .trainerName = _("Walter"),
+    TRAINER_CLASS_PIC(GENTLEMAN),
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_RICH,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 34,
+        .species = SPECIES_MANECTRIC,
         }
     },
 },
@@ -10857,28 +10700,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_BEN] =
-{
-    .trainerName = _("Ben"),
-    YOUNGSTER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 20,
-        .species = SPECIES_PICHU,
-        IVS(18),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_NASTY_PLOT, MOVE_NUZZLE, MOVE_SWEET_KISS}
-        },
-        {
-        .lvl = 20,
-        .species = SPECIES_ELECTRIKE,
-        IVS(18),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_QUICK_ATTACK, MOVE_THUNDER_WAVE, MOVE_HOWL}
-        }
-    },
-},
-
 [TRAINER_QUINCY] =
 {
     .trainerName = _("Quincy"),
@@ -11231,20 +11052,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_ABIGAIL_1] =
-{
-    .trainerName = _("Abigail"),
-    TRIATHLETE_F_CYCLING_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 20,
-        .species = SPECIES_MAGNEMITE,
-        }
-    },
-},
-
 [TRAINER_JASMINE] =
 {
     .trainerName = _("Jasmine"),
@@ -11265,6 +11072,20 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         {
         .lvl = 17,
         .species = SPECIES_VOLTORB,
+        }
+    },
+},
+
+[TRAINER_ABIGAIL_1] =
+{
+    .trainerName = _("Abigail"),
+    TRIATHLETE_F_CYCLING_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 20,
+        .species = SPECIES_MAGNEMITE,
         }
     },
 },
@@ -11400,38 +11221,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_ISAIAH_1] =
-{
-    .trainerName = _("Isaiah"),
-    TRIATHLETE_M_SWIMMING_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_CHINCHOU,
-        }
-    },
-},
-
-[TRAINER_PABLO_1] =
-{
-    .trainerName = _("Pablo"),
-    TRIATHLETE_M_SWIMMING_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 41,
-        .species = SPECIES_CORPHISH,
-        },
-        {
-        .lvl = 41,
-        .species = SPECIES_STARYU,
-        }
-    },
-},
-
 [TRAINER_CHASE] =
 {
     .trainerName = _("Chase"),
@@ -11447,6 +11236,20 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         .lvl = 41,
         .species = SPECIES_PELIPPER,
         IVS(9),
+        }
+    },
+},
+
+[TRAINER_ISAIAH_1] =
+{
+    .trainerName = _("Isaiah"),
+    TRIATHLETE_M_SWIMMING_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_CHINCHOU,
         }
     },
 },
@@ -11558,20 +11361,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_KATELYN_1] =
-{
-    .trainerName = _("Katelyn"),
-    TRIATHLETE_F_SWIMMING_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_STARYU,
-        }
-    },
-},
-
 [TRAINER_ALLISON] =
 {
     .trainerName = _("Allison"),
@@ -11587,6 +11376,20 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         .lvl = 41,
         .species = SPECIES_STARMIE,
         IVS(29),
+        }
+    },
+},
+
+[TRAINER_KATELYN_1] =
+{
+    .trainerName = _("Katelyn"),
+    TRIATHLETE_F_SWIMMING_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_STARYU,
         }
     },
 },
@@ -11926,20 +11729,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_ROBERT_1] =
-{
-    .trainerName = _("Robert"),
-    BIRD_KEEPER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 32,
-        .species = SPECIES_SWABLU,
-        }
-    },
-},
-
 [TRAINER_BENNY] =
 {
     .trainerName = _("Benny"),
@@ -11976,6 +11765,20 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         {
         .lvl = 29,
         .species = SPECIES_SWELLOW,
+        }
+    },
+},
+
+[TRAINER_ROBERT_1] =
+{
+    .trainerName = _("Robert"),
+    BIRD_KEEPER_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 32,
+        .species = SPECIES_SWABLU,
         }
     },
 },
@@ -12168,6 +11971,24 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
+[TRAINER_LUNG] =
+{
+    .trainerName = _("Lung"),
+    TRAINER_CLASS_PIC(NINJA_BOY),
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 23,
+        .species = SPECIES_KOFFING,
+        },
+        {
+        .lvl = 23,
+        .species = SPECIES_NINJASK,
+        }
+    },
+},
+
 [TRAINER_LAO_1] =
 {
     .trainerName = _("Lao"),
@@ -12189,24 +12010,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         .lvl = 22,
         .species = SPECIES_KOFFING,
         .moves = {MOVE_SLUDGE, MOVE_SMOKESCREEN, MOVE_POISON_GAS, MOVE_ASSURANCE}
-        }
-    },
-},
-
-[TRAINER_LUNG] =
-{
-    .trainerName = _("Lung"),
-    TRAINER_CLASS_PIC(NINJA_BOY),
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 23,
-        .species = SPECIES_KOFFING,
-        },
-        {
-        .lvl = 23,
-        .species = SPECIES_NINJASK,
         }
     },
 },
@@ -12344,26 +12147,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_CYNDY_1] =
-{
-    .trainerName = _("Cyndy"),
-    BATTLE_GIRL_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 23,
-        .species = SPECIES_MAKUHITA,
-        IVS(12),
-        },
-        {
-        .lvl = 23,
-        .species = SPECIES_MEDITITE,
-        IVS(12),
-        }
-    },
-},
-
 [TRAINER_CORA] =
 {
     .trainerName = _("Cora"),
@@ -12389,6 +12172,26 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         {
         .lvl = 30,
         .species = SPECIES_BRELOOM,
+        IVS(12),
+        }
+    },
+},
+
+[TRAINER_CYNDY_1] =
+{
+    .trainerName = _("Cyndy"),
+    BATTLE_GIRL_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 23,
+        .species = SPECIES_MAKUHITA,
+        IVS(12),
+        },
+        {
+        .lvl = 23,
+        .species = SPECIES_MEDITITE,
         IVS(12),
         }
     },
@@ -12474,22 +12277,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_MADELINE_1] =
-{
-    .trainerName = _("Madeline"),
-    TRAINER_CLASS_PIC(PARASOL_LADY),
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 24,
-        .species = SPECIES_NUMEL,
-        .moves = {MOVE_LAVA_PLUME, MOVE_BULLDOZE, MOVE_AMNESIA, MOVE_SUNNY_DAY}
-        }
-    },
-},
-
 [TRAINER_CLARISSA] =
 {
     .trainerName = _("Clarissa"),
@@ -12522,6 +12309,22 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         .species = SPECIES_CASTFORM_NORMAL,
         IVS(6),
         .moves = {MOVE_RAIN_DANCE, MOVE_WEATHER_BALL, MOVE_THUNDER, MOVE_WATER_PULSE}
+        }
+    },
+},
+
+[TRAINER_MADELINE_1] =
+{
+    .trainerName = _("Madeline"),
+    TRAINER_CLASS_PIC(PARASOL_LADY),
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 24,
+        .species = SPECIES_NUMEL,
+        .moves = {MOVE_LAVA_PLUME, MOVE_BULLDOZE, MOVE_AMNESIA, MOVE_SUNNY_DAY}
         }
     },
 },
@@ -12766,22 +12569,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         {
         .lvl = 28,
         .species = SPECIES_GOLDEEN,
-        }
-    },
-},
-
-[TRAINER_JENNY_1] =
-{
-    .trainerName = _("Jenny"),
-    .trainerClass = TRAINER_CLASS_SWIMMER,
-    .trainerPic = TRAINER_PIC_SWIMMER_F,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 38,
-        .species = SPECIES_WAILMER,
         }
     },
 },
@@ -13050,6 +12837,22 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
+[TRAINER_JENNY_1] =
+{
+    .trainerName = _("Jenny"),
+    .trainerClass = TRAINER_CLASS_SWIMMER,
+    .trainerPic = TRAINER_PIC_SWIMMER_F,
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 38,
+        .species = SPECIES_WAILMER,
+        }
+    },
+},
+
 [TRAINER_JENNY_2] =
 {
     .trainerName = _("Jenny"),
@@ -13241,29 +13044,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_DIANA_1] =
-{
-    .trainerName = _("Diana"),
-    TRAINER_CLASS_PIC(PICNICKER),
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 24,
-        .species = SPECIES_SHROOMISH,
-        },
-        {
-        .lvl = 24,
-        .species = SPECIES_ODDISH,
-        },
-        {
-        .lvl = 24,
-        .species = SPECIES_SWABLU,
-        }
-    },
-},
-
 [TRAINER_CEDRIC] =
 {
     .trainerName = _("Cedric"),
@@ -13294,6 +13074,29 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         {
         .lvl = 21,
         .species = SPECIES_MARILL,
+        }
+    },
+},
+
+[TRAINER_DIANA_1] =
+{
+    .trainerName = _("Diana"),
+    TRAINER_CLASS_PIC(PICNICKER),
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 24,
+        .species = SPECIES_SHROOMISH,
+        },
+        {
+        .lvl = 24,
+        .species = SPECIES_ODDISH,
+        },
+        {
+        .lvl = 24,
+        .species = SPECIES_SWABLU,
         }
     },
 },
@@ -13420,28 +13223,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_ERNEST_1] =
-{
-    .trainerName = _("Ernest"),
-    SAILOR_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 36,
-        .species = SPECIES_PELIPPER,
-        },
-        {
-        .lvl = 36,
-        .species = SPECIES_WAILMER,
-        },
-        {
-        .lvl = 36,
-        .species = SPECIES_MACHOKE,
-        }
-    },
-},
-
 [TRAINER_PHILLIP] =
 {
     .trainerName = _("Phillip"),
@@ -13495,6 +13276,28 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         },
         {
         .lvl = 29,
+        .species = SPECIES_MACHOKE,
+        }
+    },
+},
+
+[TRAINER_ERNEST_1] =
+{
+    .trainerName = _("Ernest"),
+    SAILOR_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 36,
+        .species = SPECIES_PELIPPER,
+        },
+        {
+        .lvl = 36,
+        .species = SPECIES_WAILMER,
+        },
+        {
+        .lvl = 36,
         .species = SPECIES_MACHOKE,
         }
     },
@@ -13667,11 +13470,15 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 1,
+    .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 30,
+        .lvl = 29,
         .species = SPECIES_ABSOL,
+        }
+        {
+        .lvl = 29,
+        .species = SPECIES_TROPIUS,
         }
     },
 },
@@ -13840,37 +13647,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_TABITHA_SPACE_CENTER] =
-{
-    .trainerName = _("Tabitha"),
-    .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
-    .trainerPic = TRAINER_PIC_MAGMA_ADMIN_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 55,
-        .species = SPECIES_DONPHAN,
-        IVS(12),
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        .lvl = 55,
-        .species = SPECIES_MAGCARGO,
-        IVS(12),
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        .lvl = 57,
-        .species = SPECIES_HOUNDOOM,
-        .ability = ABILITY_FLASH_FIRE,
-        IVS(12),
-        .gender = TRAINER_MON_MALE,
-        }
-    },
-},
-
 [TRAINER_DAVIS] =
 {
     .trainerName = _("Davis"),
@@ -13943,29 +13719,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_JACKSON_1] =
-{
-    .trainerName = _("Jackson"),
-    .trainerClass = TRAINER_CLASS_PKMN_RANGER,
-    .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 30,
-        .species = SPECIES_TREECKO,
-        IVS(6),
-        },
-        {
-        .lvl = 30,
-        .species = SPECIES_BRELOOM,
-        IVS(6),
-        }
-    },
-},
-
 [TRAINER_LORENZO] =
 {
     .trainerName = _("Lorenzo"),
@@ -14007,6 +13760,29 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         {
         .lvl = 41,
         .species = SPECIES_CACTURNE,
+        IVS(6),
+        }
+    },
+},
+
+[TRAINER_JACKSON_1] =
+{
+    .trainerName = _("Jackson"),
+    .trainerClass = TRAINER_CLASS_PKMN_RANGER,
+    .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 30,
+        .species = SPECIES_TREECKO,
+        IVS(6),
+        },
+        {
+        .lvl = 30,
+        .species = SPECIES_BRELOOM,
         IVS(6),
         }
     },
@@ -14119,29 +13895,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_CATHERINE_1] =
-{
-    .trainerName = _("Catherine"),
-    .trainerClass = TRAINER_CLASS_PKMN_RANGER,
-    .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 30,
-        .species = SPECIES_GLOOM,
-        IVS(6),
-        },
-        {
-        .lvl = 30,
-        .species = SPECIES_ROSELIA,
-        IVS(6),
-        }
-    },
-},
-
 [TRAINER_JENNA] =
 {
     .trainerName = _("Jenna"),
@@ -14187,6 +13940,29 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         },
         {
         .lvl = 40,
+        .species = SPECIES_ROSELIA,
+        IVS(6),
+        }
+    },
+},
+
+[TRAINER_CATHERINE_1] =
+{
+    .trainerName = _("Catherine"),
+    .trainerClass = TRAINER_CLASS_PKMN_RANGER,
+    .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 30,
+        .species = SPECIES_GLOOM,
+        IVS(6),
+        },
+        {
+        .lvl = 30,
         .species = SPECIES_ROSELIA,
         IVS(6),
         }
@@ -14299,75 +14075,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_MATT_SEAFLOOR_CAVERN] =
-{
-    .trainerName = _("Matt"),
-    .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
-    .trainerPic = TRAINER_PIC_AQUA_ADMIN_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_TENTACRUEL,
-        IVS(6),
-        },
-        {
-        .lvl = 42,
-        .species = SPECIES_CRAWDAUNT,
-        IVS(6),
-        },
-        {
-        .lvl = 43,
-        .species = SPECIES_HUNTAIL,
-        IVS(6),
-        }
-    },
-},
-
-[TRAINER_GRUNT_MT_PYRE_4] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-    .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 41,
-        .species = SPECIES_STARYU,
-        },
-        {
-        .lvl = 41,
-        .species = SPECIES_GOLDEEN,
-        }
-    },
-},
-
-[TRAINER_GRUNT_JAGGED_PASS] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 25,
-        .species = SPECIES_BALTOY,
-        IVS(6),
-        },
-        {
-        .lvl = 25,
-        .species = SPECIES_HOUNDOUR,
-        IVS(6),
-        }
-    },
-},
-
 [TRAINER_SYLVIA] =
 {
     .trainerName = _("Sylvia"),
@@ -14437,22 +14144,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         {
         .lvl = 42,
         .species = SPECIES_TENTACRUEL,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MT_CHIMNEY_2] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 24,
-        .species = SPECIES_SLUGMA,
         }
     },
 },
@@ -14548,90 +14239,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_GRUNT_SPACE_CENTER_2] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 43,
-        .species = SPECIES_HOUNDOUR,
-        },
-        {
-        .lvl = 43,
-        .species = SPECIES_VULPIX,
-        }
-    },
-},
-
-[TRAINER_GRUNT_SPACE_CENTER_3] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 44,
-        .species = SPECIES_PHANPY,
-        }
-    },
-},
-
-[TRAINER_GRUNT_SPACE_CENTER_4] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 44,
-        .species = SPECIES_MAGCARGO,
-        }
-    },
-},
-
-[TRAINER_GRUNT_SPACE_CENTER_5] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 44,
-        .species = SPECIES_TORKOAL,
-        }
-    },
-},
-
-[TRAINER_GRUNT_SPACE_CENTER_6] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 44,
-        .species = SPECIES_CLAYDOL,
-        }
-    },
-},
-
 [TRAINER_MACEY] =
 {
     .trainerName = _("Macey"),
@@ -14680,57 +14287,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_GRUNT_WEATHER_INST_5] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-    .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 40,
-        .species = SPECIES_STARYU,
-        },
-        {
-        .lvl = 40,
-        .species = SPECIES_GOLDEEN,
-        }
-    },
-},
-
-[TRAINER_TABITHA_MT_CHIMNEY] =
-{
-    .trainerName = _("Tabitha"),
-    .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
-    .trainerPic = TRAINER_PIC_MAGMA_ADMIN_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 26,
-        .species = SPECIES_PHANPY,
-        IVS(6),
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        .lvl = 26,
-        .species = SPECIES_SLUGMA,
-        IVS(6),
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        .lvl = 28,
-        .species = SPECIES_HOUNDOUR,
-        .ability = ABILITY_FLASH_FIRE,
-        IVS(6),
-        .gender = TRAINER_MON_MALE,
-        }
-    },
-},
-
 [TRAINER_JONATHAN] =
 {
     .trainerName = _("Jonathan"),
@@ -14748,82 +14304,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         {
         .lvl = 41,
         .species = SPECIES_EXPLOUD,
-        }
-    },
-},
-
-[TRAINER_MAXIE_MAGMA_HIDEOUT] =
-{
-    .trainerName = _("Maxie"),
-    .trainerClass = TRAINER_CLASS_MAGMA_LEADER,
-    .trainerPic = TRAINER_PIC_MAGMA_LEADER_MAXIE,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .items = {ITEM_SUPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
-    .partySize = 4,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 51,
-        .species = SPECIES_DONPHAN,
-        IVS(18),
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        .lvl = 52,
-        .species = SPECIES_SANDSLASH,
-        IVS(18),
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        .lvl = 52,
-        .species = SPECIES_CLAYDOL,
-        IVS(18),
-        },
-        {
-        .lvl = 53,
-        .species = SPECIES_CAMERUPT,
-        .ability = ABILITY_SOLID_ROCK,
-        IVS(18),
-        .gender = TRAINER_MON_MALE,
-        .nickname = COMPOUND_STRING("Humphrey"),
-        }
-    },
-},
-
-[TRAINER_MAXIE_MT_CHIMNEY] =
-{
-    .trainerName = _("Maxie"),
-    .trainerClass = TRAINER_CLASS_MAGMA_LEADER,
-    .trainerPic = TRAINER_PIC_MAGMA_LEADER_MAXIE,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .items = {ITEM_SUPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
-    .partySize = 4,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 28,
-        .species = SPECIES_PHANPY,
-        IVS(18),
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        .lvl = 28,
-        .species = SPECIES_SANDSHREW,
-        IVS(18),
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        .lvl = 28,
-        .species = SPECIES_BALTOY,
-        IVS(18),
-        },
-        {
-        .lvl = 30,
-        .species = SPECIES_NUMEL,
-        .ability = ABILITY_SIMPLE,
-        IVS(18),
-        .gender = TRAINER_MON_MALE,
-        .nickname = COMPOUND_STRING("Humphrey"),
         }
     },
 },
@@ -14961,28 +14441,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_TRENT_1] =
-{
-    .trainerName = _("Trent"),
-    HIKER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 20,
-        .species = SPECIES_GEODUDE,
-        },
-        {
-        .lvl = 20,
-        .species = SPECIES_GEODUDE,
-        },
-        {
-        .lvl = 20,
-        .species = SPECIES_GEODUDE,
-        }
-    },
-},
-
 [TRAINER_LENNY] =
 {
     .trainerName = _("Lenny"),
@@ -15055,6 +14513,28 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         {
         .lvl = 25,
         .species = SPECIES_BALTOY,
+        }
+    },
+},
+
+[TRAINER_TRENT_1] =
+{
+    .trainerName = _("Trent"),
+    HIKER_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 20,
+        .species = SPECIES_GEODUDE,
+        },
+        {
+        .lvl = 20,
+        .species = SPECIES_GEODUDE,
+        },
+        {
+        .lvl = 20,
+        .species = SPECIES_GEODUDE,
         }
     },
 },
@@ -15345,28 +14825,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_VIVIAN] =
-{
-    .trainerName = _("Vivian"),
-    BEAUTY_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 20,
-        .species = SPECIES_MINUN,
-        IVS(12),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_SWIFT, MOVE_NUZZLE, MOVE_ENCORE}
-        },
-        {
-        .lvl = 20,
-        .species = SPECIES_PLUSLE,
-        IVS(12),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_SWIFT, MOVE_NUZZLE, MOVE_SKILL_SWAP}
-        }
-    },
-},
-
 [TRAINER_DANIELLE] =
 {
     .trainerName = _("Danielle"),
@@ -15596,20 +15054,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         .lvl = 41,
         .species = SPECIES_PROBOPASS,
         IVS(12),
-        }
-    },
-},
-
-[TRAINER_KOJI_1] =
-{
-    .trainerName = _("Koji"),
-    BLACK_BELT_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_MEDICHAM,
         }
     },
 },
@@ -16266,301 +15710,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_GRUNT_MAGMA_HIDEOUT_1] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_TORKOAL,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_2] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_PHANPY,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_3] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_NUMEL,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_4] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 41,
-        .species = SPECIES_BALTOY,
-        },
-        {
-        .lvl = 41,
-        .species = SPECIES_SLUGMA,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_5] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 41,
-        .species = SPECIES_BALTOY,
-        },
-        {
-        .lvl = 41,
-        .species = SPECIES_HOUNDOUR,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_6] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_SANDSHREW,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_7] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_NUMEL,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_8] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_HOUNDOUR,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_9] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_PHANPY,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_10] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_SANDSHREW,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_11] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_BALTOY,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_12] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_NUMEL,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_13] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_SLUGMA,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_14] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_VULPIX,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_15] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_VULPIX,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_16] =
-{
-    .trainerName = _("Grunt"),
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_VULPIX,
-        }
-    },
-},
-
-[TRAINER_TABITHA_MAGMA_HIDEOUT] =
-{
-    .trainerName = _("Tabitha"),
-    .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
-    .trainerPic = TRAINER_PIC_MAGMA_ADMIN_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 50,
-        .species = SPECIES_DONPHAN,
-        IVS(9),
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        .lvl = 51,
-        .species = SPECIES_MAGCARGO,
-        IVS(9),
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        .lvl = 52,
-        .species = SPECIES_HOUNDOOM,
-        .ability = ABILITY_FLASH_FIRE,
-        IVS(9),
-        .gender = TRAINER_MON_MALE,
-        }
-    },
-},
-
 [TRAINER_DARCY] =
 {
     .trainerName = _("Darcy"),
@@ -16578,37 +15727,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         {
         .lvl = 41,
         .species = SPECIES_CAMERUPT,
-        }
-    },
-},
-
-[TRAINER_MAXIE_SPACE_CENTER] =
-{
-    .trainerName = _("Maxie"),
-    .trainerClass = TRAINER_CLASS_MAGMA_LEADER,
-    .trainerPic = TRAINER_PIC_MAGMA_LEADER_MAXIE,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 57,
-        .species = SPECIES_SANDSLASH,
-        IVS(18),
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        .lvl = 58,
-        .species = SPECIES_CLAYDOL,
-        IVS(18),
-        },
-        {
-        .lvl = 60,
-        .species = SPECIES_CAMERUPT,
-        .ability = ABILITY_SOLID_ROCK,
-        IVS(18),
-        .gender = TRAINER_MON_MALE,
-        .nickname = COMPOUND_STRING("Humphrey"),
         }
     },
 },
@@ -16645,27 +15763,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_ANDRES_1] =
-{
-    .trainerName = _("Andres"),
-    TRAINER_CLASS_PIC(RUIN_MANIAC),
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 29,
-        .species = SPECIES_BALTOY,
-        IVS(6),
-        },
-        {
-        .lvl = 29,
-        .species = SPECIES_SANDSHREW,
-        IVS(6),
-        }
-    },
-},
-
 [TRAINER_JOSUE] =
 {
     .trainerName = _("Josue"),
@@ -16696,28 +15793,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         {
         .lvl = 30,
         .species = SPECIES_STARYU,
-        }
-    },
-},
-
-[TRAINER_CORY_1] =
-{
-    .trainerName = _("Cory"),
-    SAILOR_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 28,
-        .species = SPECIES_PELIPPER,
-        },
-        {
-        .lvl = 28,
-        .species = SPECIES_MACHOKE,
-        },
-        {
-        .lvl = 28,
-        .species = SPECIES_TENTACOOL,
         }
     },
 },
@@ -17159,52 +16234,6 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_CRISTIN_1] =
-{
-    .trainerName = _("Cristin"),
-    .trainerClass = TRAINER_CLASS_COOLTRAINER,
-    .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 33,
-        .species = SPECIES_LOUDRED,
-        IVS(12),
-        },
-        {
-        .lvl = 33,
-        .species = SPECIES_VIGOROTH,
-        IVS(12),
-        }
-    },
-},
-
-[TRAINER_ANGELO] =
-{
-    .trainerName = _("Angelo"),
-    TRAINER_CLASS_PIC(POKEMANIAC),
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 20,
-        .species = SPECIES_CHINCHOU,
-        IVS(12),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_BUBBLE_BEAM, MOVE_THUNDER_WAVE, MOVE_CONFUSE_RAY}
-        },
-        {
-        .lvl = 20,
-        .species = SPECIES_MAGNEMITE,
-        IVS(12),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_MAGNET_BOMB, MOVE_THUNDER_WAVE, MOVE_SUPERSONIC}
-        }
-    },
-},
-
 [TRAINER_DARIUS] =
 {
     .trainerName = _("Darius"),
@@ -17394,6 +16423,27 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
+[TRAINER_ANDRES_1] =
+{
+    .trainerName = _("Andres"),
+    TRAINER_CLASS_PIC(RUIN_MANIAC),
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 29,
+        .species = SPECIES_BALTOY,
+        IVS(6),
+        },
+        {
+        .lvl = 29,
+        .species = SPECIES_SANDSHREW,
+        IVS(6),
+        }
+    },
+},
+
 [TRAINER_ANDRES_2] =
 {
     .trainerName = _("Andres"),
@@ -17489,6 +16539,28 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         .lvl = 43,
         .species = SPECIES_SANDSLASH,
         IVS(4),
+        }
+    },
+},
+
+[TRAINER_CORY_1] =
+{
+    .trainerName = _("Cory"),
+    SAILOR_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 28,
+        .species = SPECIES_PELIPPER,
+        },
+        {
+        .lvl = 28,
+        .species = SPECIES_MACHOKE,
+        },
+        {
+        .lvl = 28,
+        .species = SPECIES_TENTACOOL,
         }
     },
 },
@@ -17593,6 +16665,24 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
+[TRAINER_PABLO_1] =
+{
+    .trainerName = _("Pablo"),
+    TRIATHLETE_M_SWIMMING_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 41,
+        .species = SPECIES_CORPHISH,
+        },
+        {
+        .lvl = 41,
+        .species = SPECIES_STARYU,
+        }
+    },
+},
+
 [TRAINER_PABLO_2] =
 {
     .trainerName = _("Pablo"),
@@ -17688,6 +16778,20 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
+[TRAINER_KOJI_1] =
+{
+    .trainerName = _("Koji"),
+    BLACK_BELT_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_MEDICHAM,
+        }
+    },
+},
+
 [TRAINER_KOJI_2] =
 {
     .trainerName = _("Koji"),
@@ -17779,6 +16883,29 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
         .lvl = 50,
         .species = SPECIES_MEDICHAM,
         IVS(4),
+        }
+    },
+},
+
+[TRAINER_CRISTIN_1] =
+{
+    .trainerName = _("Cristin"),
+    .trainerClass = TRAINER_CLASS_COOLTRAINER,
+    .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
+    .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 33,
+        .species = SPECIES_LOUDRED,
+        IVS(12),
+        },
+        {
+        .lvl = 33,
+        .species = SPECIES_VIGOROTH,
+        IVS(12),
         }
     },
 },
@@ -17890,6 +17017,24 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
+[TRAINER_FERNANDO_1] =
+{
+    .trainerName = _("Fernando"),
+    GUITARIST_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 35,
+        .species = SPECIES_MANECTRIC,
+        },
+        {
+        .lvl = 35,
+        .species = SPECIES_LOUDRED,
+        }
+    },
+},
+
 [TRAINER_FERNANDO_2] =
 {
     .trainerName = _("Fernando"),
@@ -17990,245 +17135,20 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_SAWYER_2] =
+[TRAINER_THALIA_1] =
 {
-    .trainerName = _("Sawyer"),
-    HIKER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .trainerName = _("Thalia"),
+    BEAUTY_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 34,
-        .species = SPECIES_NUMEL,
-        IVS(1),
+        .lvl = 29,
+        .species = SPECIES_WAILMER,
         },
         {
-        .lvl = 34,
-        .species = SPECIES_GEODUDE,
-        IVS(1),
-        }
-    },
-},
-
-[TRAINER_SAWYER_3] =
-{
-    .trainerName = _("Sawyer"),
-    HIKER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = REMATCH_3_LEVEL_3,
-        .species = SPECIES_MACHOKE,
-        IVS(3),
-        },
-        {
-        .lvl = REMATCH_3_LEVEL_3,
-        .species = SPECIES_CAMERUPT,
-        IVS(3),
-        },
-        {
-        .lvl = REMATCH_3_LEVEL_3,
-        .species = SPECIES_GRAVELER,
-        IVS(3),
-        }
-    },
-},
-
-[TRAINER_SAWYER_4] =
-{
-    .trainerName = _("Sawyer"),
-    HIKER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 40,
-        .species = SPECIES_MACHOKE,
-        IVS(3),
-        },
-        {
-        .lvl = 40,
-        .species = SPECIES_CAMERUPT,
-        IVS(3),
-        },
-        {
-        .lvl = 40,
-        .species = SPECIES_GOLEM,
-        IVS(3),
-        }
-    },
-},
-
-[TRAINER_SAWYER_5] =
-{
-    .trainerName = _("Sawyer"),
-    HIKER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_MACHAMP,
-        IVS(4),
-        },
-        {
-        .lvl = 42,
-        .species = SPECIES_CAMERUPT,
-        IVS(4),
-        },
-        {
-        .lvl = 42,
-        .species = SPECIES_GOLEM,
-        IVS(4),
-        }
-    },
-},
-
-[TRAINER_GABRIELLE_2] =
-{
-    GABRIELLE_INFO,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 34,
-        .species = SPECIES_SKITTY,
-        IVS(1),
-        },
-        {
-        .lvl = 34,
-        .species = SPECIES_MIGHTYENA,
-        IVS(1),
-        },
-        {
-        .lvl = 34,
-        .species = SPECIES_ZIGZAGOON,
-        IVS(1),
-        },
-        {
-        .lvl = 34,
-        .species = SPECIES_LOTAD,
-        IVS(1),
-        },
-        {
-        .lvl = 34,
-        .species = SPECIES_SEEDOT,
-        IVS(1),
-        },
-        {
-        .lvl = 34,
-        .species = SPECIES_TAILLOW,
-        IVS(1),
-        }
-    },
-},
-
-[TRAINER_GABRIELLE_3] =
-{
-    GABRIELLE_INFO,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = REMATCH_3_LEVEL_6,
-        .species = SPECIES_SKITTY,
-        IVS(3),
-        },
-        {
-        .lvl = REMATCH_3_LEVEL_6,
-        .species = SPECIES_MIGHTYENA,
-        IVS(3),
-        },
-        {
-        .lvl = REMATCH_3_LEVEL_6,
-        .species = SPECIES_LINOONE,
-        IVS(3),
-        },
-        {
-        .lvl = REMATCH_3_LEVEL_6,
-        .species = SPECIES_LOMBRE,
-        IVS(3),
-        },
-        {
-        .lvl = REMATCH_3_LEVEL_6,
-        .species = SPECIES_NUZLEAF,
-        IVS(3),
-        },
-        {
-        .lvl = REMATCH_3_LEVEL_6,
-        .species = SPECIES_TAILLOW,
-        IVS(3),
-        }
-    },
-},
-
-[TRAINER_GABRIELLE_4] =
-{
-    GABRIELLE_INFO,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 38,
-        .species = SPECIES_DELCATTY,
-        IVS(3),
-        },
-        {
-        .lvl = 38,
-        .species = SPECIES_MIGHTYENA,
-        IVS(3),
-        },
-        {
-        .lvl = 38,
-        .species = SPECIES_LINOONE,
-        IVS(3),
-        },
-        {
-        .lvl = 38,
-        .species = SPECIES_LOMBRE,
-        IVS(3),
-        },
-        {
-        .lvl = 38,
-        .species = SPECIES_NUZLEAF,
-        IVS(3),
-        },
-        {
-        .lvl = 38,
-        .species = SPECIES_SWELLOW,
-        IVS(3),
-        }
-    },
-},
-
-[TRAINER_GABRIELLE_5] =
-{
-    GABRIELLE_INFO,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 40,
-        .species = SPECIES_DELCATTY,
-        IVS(4),
-        },
-        {
-        .lvl = 40,
-        .species = SPECIES_MIGHTYENA,
-        IVS(4),
-        },
-        {
-        .lvl = 40,
-        .species = SPECIES_LINOONE,
-        IVS(4),
-        },
-        {
-        .lvl = 40,
-        .species = SPECIES_LUDICOLO,
-        IVS(4),
-        },
-        {
-        .lvl = 40,
-        .species = SPECIES_SHIFTRY,
-        IVS(4),
-        },
-        {
-        .lvl = 40,
-        .species = SPECIES_SWELLOW,
-        IVS(4),
+        .lvl = 29,
+        .species = SPECIES_HORSEA,
         }
     },
 },
@@ -18372,6 +17292,1090 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
+[TRAINER_GRUNT_MT_CHIMNEY_1] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 24,
+        .species = SPECIES_NUMEL,
+        }
+    },
+},
+
+[TRAINER_GRUNT_MT_CHIMNEY_2] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 24,
+        .species = SPECIES_SLUGMA,
+        }
+    },
+},
+
+[TRAINER_TABITHA_MT_CHIMNEY] =
+{
+    .trainerName = _("Tabitha"),
+    .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
+    .trainerPic = TRAINER_PIC_MAGMA_ADMIN_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 26,
+        .species = SPECIES_PHANPY,
+        IVS(6),
+        .gender = TRAINER_MON_MALE,
+        },
+        {
+        .lvl = 26,
+        .species = SPECIES_SLUGMA,
+        IVS(6),
+        .gender = TRAINER_MON_MALE,
+        },
+        {
+        .lvl = 28,
+        .species = SPECIES_HOUNDOUR,
+        .ability = ABILITY_FLASH_FIRE,
+        IVS(6),
+        .gender = TRAINER_MON_MALE,
+        }
+    },
+},
+
+[TRAINER_MAXIE_MT_CHIMNEY] =
+{
+    .trainerName = _("Maxie"),
+    .trainerClass = TRAINER_CLASS_MAGMA_LEADER,
+    .trainerPic = TRAINER_PIC_MAGMA_LEADER_MAXIE,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .items = {ITEM_SUPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
+    .partySize = 4,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 28,
+        .species = SPECIES_PHANPY,
+        IVS(18),
+        .gender = TRAINER_MON_MALE,
+        },
+        {
+        .lvl = 28,
+        .species = SPECIES_SANDSHREW,
+        IVS(18),
+        .gender = TRAINER_MON_MALE,
+        },
+        {
+        .lvl = 28,
+        .species = SPECIES_BALTOY,
+        IVS(18),
+        },
+        {
+        .lvl = 30,
+        .species = SPECIES_NUMEL,
+        .ability = ABILITY_SIMPLE,
+        IVS(18),
+        .gender = TRAINER_MON_MALE,
+        .nickname = COMPOUND_STRING("Humphrey"),
+        }
+    },
+},
+
+[TRAINER_GRUNT_JAGGED_PASS] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 25,
+        .species = SPECIES_BALTOY,
+        IVS(6),
+        },
+        {
+        .lvl = 25,
+        .species = SPECIES_HOUNDOUR,
+        IVS(6),
+        }
+    },
+},
+
+[TRAINER_GRUNT_WEATHER_INST_1] =
+{
+    AQUA_GRUNT_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 40,
+        .species = SPECIES_CARVANHA,
+        },
+        {
+        .lvl = 40,
+        .species = SPECIES_CORPHISH,
+        }
+    },
+},
+
+[TRAINER_GRUNT_WEATHER_INST_2] =
+{
+    AQUA_GRUNT_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 40,
+        .species = SPECIES_CARVANHA,
+        },
+        {
+        .lvl = 40,
+        .species = SPECIES_WAILMER,
+        }
+    },
+},
+
+[TRAINER_GRUNT_WEATHER_INST_3] =
+{
+    AQUA_GRUNT_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 39,
+        .species = SPECIES_CARVANHA,
+        },
+        {
+        .lvl = 39,
+        .species = SPECIES_CLAMPERL,
+        },
+        {
+        .lvl = 39,
+        .species = SPECIES_TENTACOOL,
+        }
+    },
+},
+
+[TRAINER_GRUNT_WEATHER_INST_4] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+    .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 41,
+        .species = SPECIES_CARVANHA,
+        }
+    },
+},
+
+[TRAINER_GRUNT_WEATHER_INST_5] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+    .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 40,
+        .species = SPECIES_STARYU,
+        },
+        {
+        .lvl = 40,
+        .species = SPECIES_GOLDEEN,
+        }
+    },
+},
+
+[TRAINER_SHELLY_WEATHER_INSTITUTE] =
+{
+    .trainerName = _("Shelly"),
+    .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
+    .trainerPic = TRAINER_PIC_AQUA_ADMIN_F,
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 41,
+        .species = SPECIES_STARYU,
+        IVS(6),
+        },
+        {
+        .lvl = 41,
+        .species = SPECIES_GOLDEEN,
+        IVS(6),
+        },
+        {
+        .lvl = 43,
+        .species = SPECIES_GOREBYSS,
+        IVS(6),
+        }
+    },
+},
+
+[TRAINER_GRUNT_MT_PYRE_1] =
+{
+    AQUA_GRUNT_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_CORPHISH,
+        }
+    },
+},
+
+[TRAINER_GRUNT_MT_PYRE_2] =
+{
+    AQUA_GRUNT_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_TENTACOOL,
+        }
+    },
+},
+
+[TRAINER_GRUNT_MT_PYRE_3] =
+{
+    AQUA_GRUNT_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 41,
+        .species = SPECIES_CARVANHA,
+        },
+        {
+        .lvl = 41,
+        .species = SPECIES_WAILMER,
+        }
+    },
+},
+
+[TRAINER_GRUNT_MT_PYRE_4] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+    .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 41,
+        .species = SPECIES_STARYU,
+        },
+        {
+        .lvl = 41,
+        .species = SPECIES_GOLDEEN,
+        }
+    },
+},
+
+[TRAINER_GRUNT_MAGMA_HIDEOUT_1] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_TORKOAL,
+        }
+    },
+},
+
+[TRAINER_GRUNT_MAGMA_HIDEOUT_2] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_PHANPY,
+        }
+    },
+},
+
+[TRAINER_GRUNT_MAGMA_HIDEOUT_3] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_NUMEL,
+        }
+    },
+},
+
+[TRAINER_GRUNT_MAGMA_HIDEOUT_4] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 41,
+        .species = SPECIES_BALTOY,
+        },
+        {
+        .lvl = 41,
+        .species = SPECIES_SLUGMA,
+        }
+    },
+},
+
+[TRAINER_GRUNT_MAGMA_HIDEOUT_5] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 41,
+        .species = SPECIES_BALTOY,
+        },
+        {
+        .lvl = 41,
+        .species = SPECIES_HOUNDOUR,
+        }
+    },
+},
+
+[TRAINER_GRUNT_MAGMA_HIDEOUT_6] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_SANDSHREW,
+        }
+    },
+},
+
+[TRAINER_GRUNT_MAGMA_HIDEOUT_7] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_NUMEL,
+        }
+    },
+},
+
+[TRAINER_GRUNT_MAGMA_HIDEOUT_8] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_HOUNDOUR,
+        }
+    },
+},
+
+[TRAINER_GRUNT_MAGMA_HIDEOUT_9] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_PHANPY,
+        }
+    },
+},
+
+[TRAINER_GRUNT_MAGMA_HIDEOUT_10] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_SANDSHREW,
+        }
+    },
+},
+
+[TRAINER_GRUNT_MAGMA_HIDEOUT_11] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_BALTOY,
+        }
+    },
+},
+
+[TRAINER_GRUNT_MAGMA_HIDEOUT_12] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_NUMEL,
+        }
+    },
+},
+
+[TRAINER_GRUNT_MAGMA_HIDEOUT_13] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_SLUGMA,
+        }
+    },
+},
+
+[TRAINER_GRUNT_MAGMA_HIDEOUT_14] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_VULPIX,
+        }
+    },
+},
+
+[TRAINER_GRUNT_MAGMA_HIDEOUT_15] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_VULPIX,
+        }
+    },
+},
+
+[TRAINER_GRUNT_MAGMA_HIDEOUT_16] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_VULPIX,
+        }
+    },
+},
+
+[TRAINER_TABITHA_MAGMA_HIDEOUT] =
+{
+    .trainerName = _("Tabitha"),
+    .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
+    .trainerPic = TRAINER_PIC_MAGMA_ADMIN_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 50,
+        .species = SPECIES_DONPHAN,
+        IVS(9),
+        .gender = TRAINER_MON_MALE,
+        },
+        {
+        .lvl = 51,
+        .species = SPECIES_MAGCARGO,
+        IVS(9),
+        .gender = TRAINER_MON_MALE,
+        },
+        {
+        .lvl = 52,
+        .species = SPECIES_HOUNDOOM,
+        .ability = ABILITY_FLASH_FIRE,
+        IVS(9),
+        .gender = TRAINER_MON_MALE,
+        }
+    },
+},
+
+[TRAINER_MAXIE_MAGMA_HIDEOUT] =
+{
+    .trainerName = _("Maxie"),
+    .trainerClass = TRAINER_CLASS_MAGMA_LEADER,
+    .trainerPic = TRAINER_PIC_MAGMA_LEADER_MAXIE,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .items = {ITEM_SUPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
+    .partySize = 4,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 51,
+        .species = SPECIES_DONPHAN,
+        IVS(18),
+        .gender = TRAINER_MON_MALE,
+        },
+        {
+        .lvl = 52,
+        .species = SPECIES_SANDSLASH,
+        IVS(18),
+        .gender = TRAINER_MON_MALE,
+        },
+        {
+        .lvl = 52,
+        .species = SPECIES_CLAYDOL,
+        IVS(18),
+        },
+        {
+        .lvl = 53,
+        .species = SPECIES_CAMERUPT,
+        .ability = ABILITY_SOLID_ROCK,
+        IVS(18),
+        .gender = TRAINER_MON_MALE,
+        .nickname = COMPOUND_STRING("Humphrey"),
+        }
+    },
+},
+
+[TRAINER_GRUNT_AQUA_HIDEOUT_1] =
+{
+    AQUA_GRUNT_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 43,
+        .species = SPECIES_TENTACOOL,
+        }
+    },
+},
+
+[TRAINER_GRUNT_AQUA_HIDEOUT_2] =
+{
+    AQUA_GRUNT_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_CORPHISH,
+        },
+        {
+        .lvl = 42,
+        .species = SPECIES_CARVANHA,
+        }
+    },
+},
+
+[TRAINER_GRUNT_AQUA_HIDEOUT_3] =
+{
+    AQUA_GRUNT_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 43,
+        .species = SPECIES_WAILMER,
+        }
+    },
+},
+
+[TRAINER_GRUNT_AQUA_HIDEOUT_4] =
+{
+    AQUA_GRUNT_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 43,
+        .species = SPECIES_CLAMPERL,
+        }
+    },
+},
+
+[TRAINER_GRUNT_AQUA_HIDEOUT_5] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+    .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 43,
+        .species = SPECIES_STARYU,
+        }
+    },
+},
+
+[TRAINER_GRUNT_AQUA_HIDEOUT_6] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+    .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 43,
+        .species = SPECIES_GOLDEEN,
+        }
+    },
+},
+
+[TRAINER_GRUNT_AQUA_HIDEOUT_7] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+    .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_STARYU,
+        },
+        {
+        .lvl = 42,
+        .species = SPECIES_GOLDEEN,
+        }
+    },
+},
+
+[TRAINER_GRUNT_AQUA_HIDEOUT_8] =
+{
+    AQUA_GRUNT_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 43,
+        .species = SPECIES_CARVANHA,
+        }
+    },
+},
+
+[TRAINER_MATT_AQUA_HIDEOUT] =
+{
+    .trainerName = _("Matt"),
+    .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
+    .trainerPic = TRAINER_PIC_AQUA_ADMIN_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
+    .items = {ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 52,
+        .species = SPECIES_TENTACRUEL,
+        IVS(6),
+        },
+        {
+        .lvl = 52,
+        .species = SPECIES_CRAWDAUNT,
+        IVS(6),
+        },
+        {
+        .lvl = 54,
+        .species = SPECIES_HUNTAIL,
+        IVS(6),
+        }
+    },
+},
+
+[TRAINER_GRUNT_SPACE_CENTER_1] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 44,
+        .species = SPECIES_NUMEL,
+        }
+    },
+},
+
+[TRAINER_GRUNT_SPACE_CENTER_2] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 43,
+        .species = SPECIES_HOUNDOUR,
+        },
+        {
+        .lvl = 43,
+        .species = SPECIES_VULPIX,
+        }
+    },
+},
+
+[TRAINER_GRUNT_SPACE_CENTER_3] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 44,
+        .species = SPECIES_PHANPY,
+        }
+    },
+},
+
+[TRAINER_GRUNT_SPACE_CENTER_4] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 44,
+        .species = SPECIES_MAGCARGO,
+        }
+    },
+},
+
+[TRAINER_GRUNT_SPACE_CENTER_5] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 44,
+        .species = SPECIES_TORKOAL,
+        }
+    },
+},
+
+[TRAINER_GRUNT_SPACE_CENTER_6] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 44,
+        .species = SPECIES_CLAYDOL,
+        }
+    },
+},
+
+[TRAINER_COURTNEY_SPACE_CENTER] =
+{
+    .trainerName = _("Courtney"),
+    .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
+    .trainerPic = TRAINER_PIC_MAGMA_ADMIN_F,
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 55,
+        .species = SPECIES_SANDSLASH,
+        IVS(12),
+        },
+        {
+        .lvl = 55,
+        .species = SPECIES_TORKOAL,
+        IVS(12),
+        },
+        {
+        .lvl = 57,
+        .species = SPECIES_NINETALES,
+        IVS(12),
+        }
+    },
+},
+
+[TRAINER_TABITHA_SPACE_CENTER] =
+{
+    .trainerName = _("Tabitha"),
+    .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
+    .trainerPic = TRAINER_PIC_MAGMA_ADMIN_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 55,
+        .species = SPECIES_DONPHAN,
+        IVS(12),
+        .gender = TRAINER_MON_MALE,
+        },
+        {
+        .lvl = 55,
+        .species = SPECIES_MAGCARGO,
+        IVS(12),
+        .gender = TRAINER_MON_MALE,
+        },
+        {
+        .lvl = 57,
+        .species = SPECIES_HOUNDOOM,
+        .ability = ABILITY_FLASH_FIRE,
+        IVS(12),
+        .gender = TRAINER_MON_MALE,
+        }
+    },
+},
+
+[TRAINER_MAXIE_SPACE_CENTER] =
+{
+    .trainerName = _("Maxie"),
+    .trainerClass = TRAINER_CLASS_MAGMA_LEADER,
+    .trainerPic = TRAINER_PIC_MAGMA_LEADER_MAXIE,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 57,
+        .species = SPECIES_SANDSLASH,
+        IVS(18),
+        .gender = TRAINER_MON_MALE,
+        },
+        {
+        .lvl = 58,
+        .species = SPECIES_CLAYDOL,
+        IVS(18),
+        },
+        {
+        .lvl = 60,
+        .species = SPECIES_CAMERUPT,
+        .ability = ABILITY_SOLID_ROCK,
+        IVS(18),
+        .gender = TRAINER_MON_MALE,
+        .nickname = COMPOUND_STRING("Humphrey"),
+        }
+    },
+},
+
+[TRAINER_GRUNT_SEAFLOOR_CAVERN_1] =
+{
+    AQUA_GRUNT_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_WAILORD,
+        }
+    },
+},
+
+[TRAINER_GRUNT_SEAFLOOR_CAVERN_2] =
+{
+    AQUA_GRUNT_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_TENTACRUEL,
+        }
+    },
+},
+
+[TRAINER_GRUNT_SEAFLOOR_CAVERN_3] =
+{
+    AQUA_GRUNT_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_CRAWDAUNT,
+        }
+    },
+},
+
+[TRAINER_GRUNT_SEAFLOOR_CAVERN_4] =
+{
+    .trainerName = _("Grunt"),
+    .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+    .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_SEAKING,
+        }
+    },
+},
+
+[TRAINER_MATT_SEAFLOOR_CAVERN] =
+{
+    .trainerName = _("Matt"),
+    .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
+    .trainerPic = TRAINER_PIC_AQUA_ADMIN_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_TENTACRUEL,
+        IVS(6),
+        },
+        {
+        .lvl = 42,
+        .species = SPECIES_CRAWDAUNT,
+        IVS(6),
+        },
+        {
+        .lvl = 43,
+        .species = SPECIES_HUNTAIL,
+        IVS(6),
+        }
+    },
+},
+
+[TRAINER_SHELLY_SEAFLOOR_CAVERN] =
+{
+    .trainerName = _("Shelly"),
+    .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
+    .trainerPic = TRAINER_PIC_AQUA_ADMIN_F,
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_STARMIE,
+        IVS(12),
+        },
+        {
+        .lvl = 42,
+        .species = SPECIES_SEAKING,
+        IVS(12),
+        },
+        {
+        .lvl = 43,
+        .species = SPECIES_GOREBYSS,
+        IVS(12),
+        }
+    },
+},
+
 [TRAINER_RED] =
 {
     .trainerName = _("Red"),
@@ -18432,72 +18436,23 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
-[TRAINER_GRUNT_UNUSED] =
-{
-    .trainerName = _("Unused"),
-    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_2,
-    .trainerPic = TRAINER_PIC_RS_BRENDAN,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 1,
-        .species = SPECIES_BULBASAUR,
-        }
-    },
-},
+#define UNUSED_TRAINER(Num)                       \
+[TRAINER_UNUSED_##Num] =                          \
+{                                                 \
+    .trainerName = _("Unused"),                   \
+    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_2, \
+    .trainerPic = TRAINER_PIC_RS_BRENDAN,         \
+    .partySize = 1,                               \
+    .party = (const struct TrainerMon[]) {        \
+        {                                         \
+        .lvl = 1,                                 \
+        .species = SPECIES_BULBASAUR,             \
+        }                                         \
+    },                                            \
+}
 
-[TRAINER_UNUSED_1] =
-{
-    .trainerName = _("Unused"),
-    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_2,
-    .trainerPic = TRAINER_PIC_RS_BRENDAN,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 1,
-        .species = SPECIES_BULBASAUR,
-        }
-    },
-},
-
-[TRAINER_UNUSED_2] =
-{
-    .trainerName = _("Unused"),
-    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_2,
-    .trainerPic = TRAINER_PIC_RS_BRENDAN,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 1,
-        .species = SPECIES_BULBASAUR,
-        }
-    },
-},
-
-[TRAINER_UNUSED_3] =
-{
-    .trainerName = _("Unused"),
-    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_2,
-    .trainerPic = TRAINER_PIC_RS_BRENDAN,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 1,
-        .species = SPECIES_BULBASAUR,
-        }
-    },
-},
-
-[TRAINER_UNUSED_4] =
-{
-    .trainerName = _("Unused"),
-    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_2,
-    .trainerPic = TRAINER_PIC_RS_BRENDAN,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 1,
-        .species = SPECIES_BULBASAUR,
-        }
-    },
-},
+UNUSED_TRAINER(1),
+UNUSED_TRAINER(2),
+UNUSED_TRAINER(3),
+UNUSED_TRAINER(4),
+UNUSED_TRAINER(5),

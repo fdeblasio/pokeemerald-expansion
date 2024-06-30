@@ -171,6 +171,8 @@ MauvilleCity_EventScript_DefeatedWally::
 	msgbox MauvilleCity_Text_ScottYouDidntHoldBack, MSGBOX_DEFAULT
 	closemessage
 	addvar VAR_SCOTT_STATE, 1
+	setobjectxyperm LOCALID_SCOTT, 8, 6
+	setobjectmovementtype LOCALID_SCOTT, MOVEMENT_TYPE_FACE_DOWN
 	releaseall
 	end
 

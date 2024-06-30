@@ -86,25 +86,19 @@ VerdanturfTown_EventScript_WallyTrigger::
 	playse SE_PIN
 	applymovement LOCALID_WALLY, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement LOCALID_WALLY, Common_Movement_Delay48
-	waitmovement 0
 	msgbox VerdanturfTown_Text_WallyIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_WALLY_VERDANTURF, VerdanturfTown_Text_WallyDefeat
 	msgbox VerdanturfTown_Text_WallyPostBattle, MSGBOX_DEFAULT
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	setvar VAR_0x8004, 10
 	setvar VAR_0x8005, 14
 	opendoor VAR_0x8004, VAR_0x8005
 	waitdooranim
+	applymovement LOCALID_WALLY, VerdanturfTown_Movement_WallyEnterWandasHome
+	waitmovement 0
+	removeobject LOCALID_WALLY
 	closedoor VAR_0x8004, VAR_0x8005
 	waitdooranim
-	applymovement LOCALID_WALLY, VerdanturfTown_Movement_WallyEnterWandasHome
-	waitmovement 0
-	removeobject LOCALID_WALLY
 	setflag FLAG_HIDE_VERDANTURF_TOWN_WALLY
-	applymovement LOCALID_WALLY, VerdanturfTown_Movement_WallyEnterWandasHome
-	waitmovement 0
-	removeobject LOCALID_WALLY
 	setflag FLAG_HIDE_MAUVILLE_CITY_SCOTT
 	releaseall
 	end
@@ -112,7 +106,6 @@ VerdanturfTown_EventScript_WallyTrigger::
 VerdanturfTown_Movement_PlayerBackUp:
 	lock_facing_direction
 	walk_down
-	unlock_facing_direction
 	step_end
 
 VerdanturfTown_Movement_WallyExitWandasHome:

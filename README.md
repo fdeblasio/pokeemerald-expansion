@@ -1513,6 +1513,15 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Held item: Occa Berry: 0%->50%
     - Learns Metal Claw and Smart Strike by level up
 
+- Manectric:
+    - Learns Ice Fang and Snarl by level up
+
+- Plusle:
+    - SpD: 75->85
+
+- Minun:
+    - SpA: 75->85
+
 - Volbeat:
     - Atk: 73->75
     - SpA: 47->75

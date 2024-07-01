@@ -92,6 +92,7 @@
 #define TRAINER_GABBY_AND_TY_4               86
 #define TRAINER_GABBY_AND_TY_5               87
 #define TRAINER_GABBY_AND_TY_6               88
+//Route 102
 #define TRAINER_CALVIN_1                    387
 #define TRAINER_CALVIN_2                    397
 #define TRAINER_CALVIN_3                    398
@@ -100,6 +101,7 @@
 #define TRAINER_RICK                        657
 #define TRAINER_ALLEN                       402
 #define TRAINER_TIANA                       645
+//Route 104 south
 #define TRAINER_WINSTON_1                   217
 #define TRAINER_WINSTON_2                   220
 #define TRAINER_WINSTON_3                   221
@@ -107,6 +109,7 @@
 #define TRAINER_WINSTON_5                   223
 #define TRAINER_BILLY                       388
 #define TRAINER_DARIAN                      725
+//Petalburg Woods
 #define TRAINER_LYLE                        658
 #define TRAINER_GRUNT_PETALBURG_WOODS        98
 #define TRAINER_JAMES_1                     663
@@ -114,6 +117,7 @@
 #define TRAINER_JAMES_3                     665
 #define TRAINER_JAMES_4                     666
 #define TRAINER_JAMES_5                     667
+//Route 104 north
 #define TRAINER_CINDY_1                     196
 #define TRAINER_CINDY_2                     201
 #define TRAINER_CINDY_3                     202
@@ -126,6 +130,7 @@
 #define TRAINER_HALEY_5                     652
 #define TRAINER_GINA_AND_MIA                551
 #define TRAINER_IVAN                        405
+//Route 116
 #define TRAINER_JOSE                        659
 #define TRAINER_JOEY                        391
 #define TRAINER_JANICE                      647
@@ -144,22 +149,27 @@
 #define TRAINER_KAREN_3                     352
 #define TRAINER_KAREN_4                     353
 #define TRAINER_KAREN_5                     354
+//Rustboro Gym
 #define TRAINER_JOSH                        389
 #define TRAINER_TOMMY                       390
 #define TRAINER_MARC                        617
+//Rusturf Tunnel
 #define TRAINER_GRUNT_RUSTURF_TUNNEL        104
+//Route 106 land
 #define TRAINER_NED                         408
 #define TRAINER_ELLIOT_1                    407
 #define TRAINER_ELLIOT_2                    414
 #define TRAINER_ELLIOT_3                    415
 #define TRAINER_ELLIOT_4                    416
 #define TRAINER_ELLIOT_5                    417
+//Dewford Gym
 #define TRAINER_LAURA                       494
 #define TRAINER_LILITH                      619
 #define TRAINER_BRENDEN                     618
 #define TRAINER_TAKAO                       260
 #define TRAINER_CRISTIAN                    620
 #define TRAINER_JOCELYN                     493
+//Route 109 land
 #define TRAINER_HUEY                        556
 #define TRAINER_EDMOND                      557
 #define TRAINER_HAILEY                      726
@@ -174,20 +184,25 @@
 #define TRAINER_RICKY_3                     150
 #define TRAINER_RICKY_4                     151
 #define TRAINER_RICKY_5                     152
+//Seashore House
 #define TRAINER_SIMON                       147
 #define TRAINER_JOHANNA                     687
 #define TRAINER_DWAYNE                      559
+//Oceanic Museum
 #define TRAINER_GRUNT_MUSEUM_1              108
 #define TRAINER_GRUNT_MUSEUM_2              109
+//Route 110
 #define TRAINER_ISABEL_1                    371
 #define TRAINER_ISABEL_2                    372
 #define TRAINER_ISABEL_3                    373
 #define TRAINER_ISABEL_4                    374
 #define TRAINER_ISABEL_5                    375
 #define TRAINER_KALEB                       728
+//Trick House 1
 #define TRAINER_SALLY                       653
 #define TRAINER_ROBIN                       654
 #define TRAINER_EDDIE                       401
+//Route 103
 #define TRAINER_DAISY                       124
 #define TRAINER_MARCOS                      731
 #define TRAINER_RHETT                       732
@@ -202,6 +217,7 @@
 #define TRAINER_MIGUEL_4                    366
 #define TRAINER_MIGUEL_5                    367
 #define TRAINER_ANDREW                      404
+//Route 110
 #define TRAINER_TIMMY                       403
 #define TRAINER_EDWIN_1                     578
 #define TRAINER_EDWIN_2                     581
@@ -212,6 +228,7 @@
 #define TRAINER_EDWARD                      313
 #define TRAINER_ALYSSA                      730
 #define TRAINER_DALE                        409
+//Route 117
 #define TRAINER_DYLAN_1                     432
 #define TRAINER_DYLAN_2                     433
 #define TRAINER_DYLAN_3                     434
@@ -241,12 +258,46 @@
 #define TRAINER_BRANDI                      785
 #define TRAINER_MELINA                      784
 #define TRAINER_AISHA                       786
+//Rusturf Tunnel
 #define TRAINER_MIKE                        675
+//Mauville Gym
 #define TRAINER_VIVIAN                      689
 #define TRAINER_KIRK                        272
 #define TRAINER_BEN                         392
 #define TRAINER_ANGELO                      797
 #define TRAINER_SHAWN                       275
+//Route 118
+#define TRAINER_ROSE_1                      125
+#define TRAINER_ROSE_2                      128
+#define TRAINER_ROSE_3                      129
+#define TRAINER_ROSE_4                      130
+#define TRAINER_ROSE_5                      131
+#define TRAINER_DEANDRE                     744
+#define TRAINER_DALTON_1                    277
+#define TRAINER_DALTON_2                    278
+#define TRAINER_DALTON_3                    279
+#define TRAINER_DALTON_4                    280
+#define TRAINER_DALTON_5                    281
+#define TRAINER_WADE                        412
+//Cycling Road
+#define TRAINER_JACLYN                      324
+#define TRAINER_ABIGAIL_1                   426
+#define TRAINER_ABIGAIL_2                   428
+#define TRAINER_ABIGAIL_3                   429
+#define TRAINER_ABIGAIL_4                   430
+#define TRAINER_ABIGAIL_5                   431
+#define TRAINER_ANTHONY                     420
+#define TRAINER_BENJAMIN_1                  421
+#define TRAINER_BENJAMIN_2                  422
+#define TRAINER_BENJAMIN_3                  423
+#define TRAINER_BENJAMIN_4                  424
+#define TRAINER_BENJAMIN_5                  425
+#define TRAINER_JASMINE                     427
+#define TRAINER_JACOB                       419
+//Trick House 2
+#define TRAINER_TED                         343
+#define TRAINER_PAUL                        344
+#define TRAINER_GEORGIA                     350
 
 #define TRAINER_SAWYER_1                     89
 #define TRAINER_SAWYER_2                    830
@@ -268,11 +319,6 @@
 #define TRAINER_LEAH                        123
 #define TRAINER_FELIX                       126
 #define TRAINER_VIOLET                      127
-#define TRAINER_ROSE_1                      125
-#define TRAINER_ROSE_2                      128
-#define TRAINER_ROSE_3                      129
-#define TRAINER_ROSE_4                      130
-#define TRAINER_ROSE_5                      131
 #define TRAINER_CHIP                        133
 #define TRAINER_FOSTER                      134
 #define TRAINER_DUSTY_1                     132
@@ -388,11 +434,6 @@
 #define TRAINER_YUJI                        269
 #define TRAINER_DAISUKE                     270
 #define TRAINER_ATSUSHI                     271
-#define TRAINER_DALTON_1                    277
-#define TRAINER_DALTON_2                    278
-#define TRAINER_DALTON_3                    279
-#define TRAINER_DALTON_4                    280
-#define TRAINER_DALTON_5                    281
 #define TRAINER_COLE                        282
 #define TRAINER_JEFF                        283
 #define TRAINER_AXLE                        284
@@ -433,7 +474,6 @@
 #define TRAINER_CAMERON_3                   321
 #define TRAINER_CAMERON_4                   322
 #define TRAINER_CAMERON_5                   323
-#define TRAINER_JACLYN                      324
 #define TRAINER_HANNAH                      325
 #define TRAINER_SAMANTHA                    326
 #define TRAINER_MAURA                       327
@@ -451,9 +491,6 @@
 #define TRAINER_WALTER_3                    339
 #define TRAINER_WALTER_4                    340
 #define TRAINER_WALTER_5                    341
-#define TRAINER_TED                         343
-#define TRAINER_PAUL                        344
-#define TRAINER_GEORGIA                     350
 #define TRAINER_KATE_AND_JOY                355
 #define TRAINER_VICTOR                      361
 #define TRAINER_COLTON                      363
@@ -478,22 +515,8 @@
 #define TRAINER_CLAUDE                      406
 #define TRAINER_NOLAN                       410
 #define TRAINER_BARNY                       411
-#define TRAINER_WADE                        412
 #define TRAINER_CARTER                      413
 #define TRAINER_RONALD                      418
-#define TRAINER_JACOB                       419
-#define TRAINER_ANTHONY                     420
-#define TRAINER_BENJAMIN_1                  421
-#define TRAINER_BENJAMIN_2                  422
-#define TRAINER_BENJAMIN_3                  423
-#define TRAINER_BENJAMIN_4                  424
-#define TRAINER_BENJAMIN_5                  425
-#define TRAINER_JASMINE                     427
-#define TRAINER_ABIGAIL_1                   426
-#define TRAINER_ABIGAIL_2                   428
-#define TRAINER_ABIGAIL_3                   429
-#define TRAINER_ABIGAIL_4                   430
-#define TRAINER_ABIGAIL_5                   431
 #define TRAINER_CAMDEN                      442
 #define TRAINER_DEMETRIUS                   443
 #define TRAINER_CHASE                       446
@@ -719,7 +742,6 @@
 #define TRAINER_ANGELINA                    741
 #define TRAINER_KAI                         742
 #define TRAINER_CHARLOTTE                   743
-#define TRAINER_DEANDRE                     744
 #define TRAINER_DARCY                       762
 #define TRAINER_PETE                        764
 #define TRAINER_ISABELLE                    765

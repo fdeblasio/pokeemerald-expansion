@@ -974,7 +974,7 @@
             "encounter_rate": 160,
             "mons": [
               {
-                "range": "RANGE_GOOD_ROD_INITIAL",
+                "range": "RANGE_ROUTE_117",
                 "species": "MAGIKARP"
               },
               {

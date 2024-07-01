@@ -2,7 +2,11 @@
 #define PERFECT_IVS IVS(MAX_PER_STAT_IVS)
 #define EV_SPREAD_ATK_DEF_HP TRAINER_PARTY_EVS(EV_REMAINDER, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, 0, 0, 0)
 #define EV_SPREAD_ATK_SPE_HP TRAINER_PARTY_EVS(EV_REMAINDER, MAX_PER_STAT_EVS, 0, MAX_PER_STAT_EVS, 0, 0)
+#define EV_SPREAD_ATK_SPE_DEF TRAINER_PARTY_EVS(0, MAX_PER_STAT_EVS, EV_REMAINDER, MAX_PER_STAT_EVS, 0, 0)
+#define EV_SPREAD_ATK_SPE_SPD TRAINER_PARTY_EVS(0, MAX_PER_STAT_EVS, 0, MAX_PER_STAT_EVS, 0, EV_REMAINDER)
 #define EV_SPREAD_SPA_SPE_HP TRAINER_PARTY_EVS(EV_REMAINDER, 0, 0, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, 0)
+#define EV_SPREAD_SPA_SPE_DEF TRAINER_PARTY_EVS(0, 0, EV_REMAINDER, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, 0)
+#define EV_SPREAD_SPA_SPE_SPD TRAINER_PARTY_EVS(0, 0, 0, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, EV_REMAINDER)
 
 #define BASE_MON(Level, Species) \
     .lvl = Level,                \
@@ -686,7 +690,7 @@
     REMATCH_MON(PROBOPASS, ACE, rematch),                                          \
     .ability = ABILITY_SAND_FORCE,                                                 \
     .nature = NATURE_IMPISH,                                                       \
-    .ev = TRAINER_PARTY_EVS(0, 0, 63, 63, 1, 0),                                   \
+    .ev = TRAINER_PARTY_EVS(0, 0, 63, 0, 63, 1),                                   \
     .moves = {MOVE_POWER_GEM, MOVE_FLASH_CANNON, MOVE_##move3, MOVE_IRON_DEFENSE}, \
     .gender = TRAINER_MON_FEMALE,                                                  \
     .heldItem = ITEM_SITRUS_BERRY,                                                 \
@@ -968,32 +972,89 @@
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 22,
+        .lvl = 20,
         .species = SPECIES_MAGNEMITE,
+        .ability = ABILITY_MAGNET_PULL,
         IVS(24),
         .moves = {MOVE_SHOCK_WAVE, MOVE_SONIC_BOOM, MOVE_MAGNET_BOMB, MOVE_THUNDER_WAVE},
         },
         {
-        .lvl = 24,
+        .lvl = 22,
         .species = SPECIES_MINUN,
         IVS(24),
         .moves = {MOVE_SHOCK_WAVE, MOVE_SWIFT, MOVE_SKILL_SWAP, MOVE_NUZZLE},
+        .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 24,
+        .lvl = 22,
         .species = SPECIES_PLUSLE,
         IVS(26),
         .moves = {MOVE_SHOCK_WAVE, MOVE_SWIFT, MOVE_SKILL_SWAP, MOVE_THUNDER_WAVE},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = 26,
-        .species = SPECIES_MANECTRIC,
+        .lvl = 24,
+        .species = SPECIES_ELECTRIKE,
+        .ability = ABILITY_STATIC,
         IVS(30),
         .moves = {MOVE_SHOCK_WAVE, MOVE_QUICK_ATTACK, MOVE_BITE, MOVE_THUNDER_WAVE},
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
         }
     },
 },
+
+#define WATTSON_MANECTRIC(rematch)                                                   \
+    {                                                                                \
+    REMATCH_MON(MANECTRIC, ACE, rematch),                                            \
+    .ability = ABILITY_MINUS,                                                        \
+    .nature = NATURE_MODEST,                                                         \
+    .ev = EV_SPREAD_ATK_SPE_HP,                                                      \
+    .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_SIGNAL_BEAM, MOVE_SNARL},    \
+    .gender = TRAINER_MON_MALE,                                                      \
+    .heldItem = ITEM_SITRUS_BERRY,                                                   \
+    }
+
+#define WATTSON_PLUSLE(rematch)                                                  \
+    {                                                                            \
+    REMATCH_MON(PLUSLE, TIER2, rematch),                                         \
+    .ability = ABILITY_PLUS,                                                     \
+    .nature = NATURE_TIMID,                                                      \
+    .ev = EV_SPREAD_ATK_SPE_SPD,                                                 \
+    .moves = {MOVE_THUNDERBOLT, MOVE_HELPING_HAND, MOVE_CHARM, MOVE_NASTY_PLOT}, \
+    .gender = TRAINER_MON_FEMALE,                                                \
+    .heldItem = ITEM_MAGNET,                                                     \
+    }
+
+#define WATTSON_MINUN(rematch)                                                        \
+    {                                                                                 \
+    REMATCH_MON(MINUN, TIER2, rematch),                                               \
+    .ability = ABILITY_MINUS,                                                         \
+    .nature = NATURE_TIMID,                                                           \
+    .ev = EV_SPREAD_ATK_SPE_SPD,                                                      \
+    .moves = {MOVE_THUNDERBOLT, MOVE_THUNDER_WAVE, MOVE_FAKE_TEARS, MOVE_NASTY_PLOT}, \
+    .gender = TRAINER_MON_MALE,                                                       \
+    .heldItem = ITEM_MAGNET,                                                          \
+    }
+
+#define WATTSON_MAGNEZONE(rematch)                                                       \
+    {                                                                                    \
+    REMATCH_MON(MAGNEZONE, TIER3, rematch),                                              \
+    .ability = ABILITY_MAGNET_PULL,                                                      \
+    .nature = NATURE_MODEST,                                                             \
+    .ev = TRAINER_PARTY_EVS(0, 0, 63, 0, 63, 1),                                         \
+    .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_BODY_PRESS, MOVE_MAGNETIC_FLUX}, \
+    }
+
+#define WATTSON_LANTURN(rematch)                                                      \
+    {                                                                                 \
+    REMATCH_MON(LANTURN, TIER3, rematch),                                             \
+    .ability = ABILITY_VOLT_ABSORB,                                                   \
+    .nature = NATURE_MODEST,                                                          \
+    .ev = TRAINER_PARTY_EVS(63, 0, 0, 0, 63, 1),                                      \
+    .moves = {MOVE_THUNDER, MOVE_HYDRO_PUMP, MOVE_ELECTRIC_TERRAIN, MOVE_RAIN_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                       \
+    }
 
 [TRAINER_WATTSON_2] =
 {
@@ -1002,28 +1063,10 @@
     .doubleBattle = TRUE,
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
-        {
-        REMATCH_MON(MAGNETON, TIER3, 2),
-        .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_ELECTRIC_TERRAIN},
-        },
-        {
-        REMATCH_MON(MINUN, TIER2, 2),
-        .moves = {MOVE_THUNDERBOLT, MOVE_THUNDER_WAVE, MOVE_FAKE_TEARS, MOVE_NASTY_PLOT},
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_MAGNET,
-        },
-        {
-        REMATCH_MON(PLUSLE, TIER2, 2),
-        .moves = {MOVE_THUNDERBOLT, MOVE_SKILL_SWAP, MOVE_CHARM, MOVE_NASTY_PLOT},
-        .gender = TRAINER_MON_FEMALE,
-        .heldItem = ITEM_MAGNET,
-        },
-        {
-        REMATCH_MON(MANECTRIC, ACE, 2),
-        .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_SIGNAL_BEAM, MOVE_ICE_FANG},
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_SITRUS_BERRY,
-        }
+        WATTSON_MAGNEZONE(2),
+        WATTSON_MINUN(2),
+        WATTSON_PLUSLE(2),
+        WATTSON_MANECTRIC(2),
     },
 },
 
@@ -1034,34 +1077,11 @@
     .doubleBattle = TRUE,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        {
-        REMATCH_MON(LANTURN, TIER3, 3),
-        .ability = ABILITY_VOLT_ABSORB,
-        .moves = {MOVE_THUNDER, MOVE_HYDRO_PUMP, MOVE_ELECTRIC_TERRAIN, MOVE_RAIN_DANCE},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        REMATCH_MON(MAGNEZONE, TIER3, 3),
-        .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_ELECTRIC_TERRAIN},
-        },
-        {
-        REMATCH_MON(MINUN, TIER2, 3),
-        .moves = {MOVE_THUNDERBOLT, MOVE_THUNDER_WAVE, MOVE_FAKE_TEARS, MOVE_NASTY_PLOT},
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_MAGNET,
-        },
-        {
-        REMATCH_MON(PLUSLE, TIER2, 3),
-        .moves = {MOVE_THUNDERBOLT, MOVE_SKILL_SWAP, MOVE_CHARM, MOVE_NASTY_PLOT},
-        .gender = TRAINER_MON_FEMALE,
-        .heldItem = ITEM_MAGNET,
-        },
-        {
-        REMATCH_MON(MANECTRIC, ACE, 3),
-        .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_SIGNAL_BEAM, MOVE_ICE_FANG},
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_SITRUS_BERRY,
-        }
+        WATTSON_LANTURN(3),
+        WATTSON_MAGNEZONE(3),
+        WATTSON_MINUN(3),
+        WATTSON_PLUSLE(3),
+        WATTSON_MANECTRIC(3),
     },
 },
 
@@ -1072,34 +1092,11 @@
     .doubleBattle = TRUE,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        {
-        REMATCH_MON(LANTURN, TIER3, 4),
-        .ability = ABILITY_VOLT_ABSORB,
-        .moves = {MOVE_THUNDER, MOVE_HYDRO_PUMP, MOVE_ELECTRIC_TERRAIN, MOVE_RAIN_DANCE},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        REMATCH_MON(MAGNEZONE, TIER3, 4),
-        .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_ELECTRIC_TERRAIN},
-        },
-        {
-        REMATCH_MON(MINUN, TIER2, 4),
-        .moves = {MOVE_THUNDERBOLT, MOVE_THUNDER_WAVE, MOVE_FAKE_TEARS, MOVE_NASTY_PLOT},
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_MAGNET,
-        },
-        {
-        REMATCH_MON(PLUSLE, TIER2, 4),
-        .moves = {MOVE_THUNDERBOLT, MOVE_SKILL_SWAP, MOVE_CHARM, MOVE_NASTY_PLOT},
-        .gender = TRAINER_MON_FEMALE,
-        .heldItem = ITEM_MAGNET,
-        },
-        {
-        REMATCH_MON(MANECTRIC, ACE, 4),
-        .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_SIGNAL_BEAM, MOVE_ICE_FANG},
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_SITRUS_BERRY,
-        }
+        WATTSON_LANTURN(4),
+        WATTSON_MAGNEZONE(4),
+        WATTSON_MINUN(4),
+        WATTSON_PLUSLE(4),
+        WATTSON_MANECTRIC(4),
     },
 },
 
@@ -1112,36 +1109,14 @@
     .party = (const struct TrainerMon[]) {
         {
         REMATCH_MON(ELECTRODE, TIER3, 5),
-        .moves = {MOVE_THUNDERBOLT, MOVE_ROLLOUT, MOVE_LIGHT_SCREEN, MOVE_SCREECH},
+        .ability = ABILITY_STATIC,
+        .moves = {MOVE_DISCHARGE, MOVE_EERIE_IMPULSE, MOVE_LIGHT_SCREEN, MOVE_SCREECH},
         },
-        {
-        REMATCH_MON(LANTURN, TIER3, 5),
-        .ability = ABILITY_VOLT_ABSORB,
-        .moves = {MOVE_THUNDER, MOVE_HYDRO_PUMP, MOVE_ELECTRIC_TERRAIN, MOVE_RAIN_DANCE},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        REMATCH_MON(MAGNEZONE, TIER3, 5),
-        .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_ELECTRIC_TERRAIN},
-        },
-        {
-        REMATCH_MON(MINUN, TIER2, 5),
-        .moves = {MOVE_THUNDERBOLT, MOVE_THUNDER_WAVE, MOVE_FAKE_TEARS, MOVE_NASTY_PLOT},
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_MAGNET,
-        },
-        {
-        REMATCH_MON(PLUSLE, TIER2, 5),
-        .moves = {MOVE_THUNDERBOLT, MOVE_SKILL_SWAP, MOVE_CHARM, MOVE_NASTY_PLOT},
-        .gender = TRAINER_MON_FEMALE,
-        .heldItem = ITEM_MAGNET,
-        },
-        {
-        REMATCH_MON(MANECTRIC, ACE, 5),
-        .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_SIGNAL_BEAM, MOVE_ICE_FANG},
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_MANECTITE,
-        }
+        WATTSON_LANTURN(5),
+        WATTSON_MAGNEZONE(5),
+        WATTSON_MINUN(5),
+        WATTSON_PLUSLE(5),
+        WATTSON_MANECTRIC(5),
     },
 },
 
@@ -2801,6 +2776,10 @@
 #define BATTLE_GIRL_INFO            \
     TRAINER_CLASS_PIC(BATTLE_GIRL), \
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE
+
+#define POKEMANIAC_INFO            \
+    TRAINER_CLASS_PIC(POKEMANIAC), \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
 
 #define AQUA_GRUNT_M_INFO                    \
     .trainerName = _("Grunt"),               \
@@ -5751,6 +5730,7 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
+//Rusturf Tunnel
 [TRAINER_MIKE] =
 {
     .trainerName = _("Mike"),
@@ -5773,6 +5753,7 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     },
 },
 
+//Mauville Gym
 [TRAINER_VIVIAN] =
 {
     .trainerName = _("Vivian"),
@@ -5781,13 +5762,13 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 20,
+        .lvl = 21,
         .species = SPECIES_MINUN,
         IVS(12),
         .moves = {MOVE_SHOCK_WAVE, MOVE_SWIFT, MOVE_NUZZLE, MOVE_ENCORE}
         },
         {
-        .lvl = 20,
+        .lvl = 21,
         .species = SPECIES_PLUSLE,
         IVS(12),
         .moves = {MOVE_SHOCK_WAVE, MOVE_SWIFT, MOVE_NUZZLE, MOVE_SKILL_SWAP}
@@ -5803,13 +5784,13 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 20,
+        .lvl = 21,
         .species = SPECIES_ELECTRIKE,
         IVS(12),
         .moves = {MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_QUICK_ATTACK, MOVE_LEER}
         },
         {
-        .lvl = 20,
+        .lvl = 21,
         .species = SPECIES_VOLTORB,
         IVS(12),
         .moves = {MOVE_SHOCK_WAVE, MOVE_CHARGE, MOVE_SCREECH, MOVE_ROLLOUT}
@@ -5825,13 +5806,13 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 20,
+        .lvl = 21,
         .species = SPECIES_PICHU,
         IVS(18),
         .moves = {MOVE_SHOCK_WAVE, MOVE_NASTY_PLOT, MOVE_NUZZLE, MOVE_SWEET_KISS}
         },
         {
-        .lvl = 20,
+        .lvl = 21,
         .species = SPECIES_ELECTRIKE,
         IVS(18),
         .moves = {MOVE_SHOCK_WAVE, MOVE_QUICK_ATTACK, MOVE_THUNDER_WAVE, MOVE_HOWL}
@@ -5842,19 +5823,18 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
 [TRAINER_ANGELO] =
 {
     .trainerName = _("Angelo"),
-    TRAINER_CLASS_PIC(POKEMANIAC),
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+    POKEMANIAC_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 20,
+        .lvl = 21,
         .species = SPECIES_CHINCHOU,
         IVS(12),
         .moves = {MOVE_SHOCK_WAVE, MOVE_BUBBLE_BEAM, MOVE_THUNDER_WAVE, MOVE_CONFUSE_RAY}
         },
         {
-        .lvl = 20,
+        .lvl = 21,
         .species = SPECIES_MAGNEMITE,
         IVS(12),
         .moves = {MOVE_SHOCK_WAVE, MOVE_MAGNET_BOMB, MOVE_THUNDER_WAVE, MOVE_SUPERSONIC}
@@ -5870,18 +5850,19 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 20,
+        .lvl = 21,
         .species = SPECIES_MAGNEMITE,
         IVS(12),
         },
         {
-        .lvl = 20,
+        .lvl = 21,
         .species = SPECIES_ELECTRIKE,
         IVS(12),
         }
     },
 },
 
+//
 
 
 
@@ -8097,8 +8078,7 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
 [TRAINER_MARK] =
 {
     .trainerName = _("Mark"),
-    TRAINER_CLASS_PIC(POKEMANIAC),
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+    POKEMANIAC_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
@@ -8112,8 +8092,7 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
 [TRAINER_STEVE_1] =
 {
     .trainerName = _("Steve"),
-    TRAINER_CLASS_PIC(POKEMANIAC),
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+    POKEMANIAC_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
@@ -8127,8 +8106,7 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
 [TRAINER_STEVE_2] =
 {
     .trainerName = _("Steve"),
-    TRAINER_CLASS_PIC(POKEMANIAC),
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+    POKEMANIAC_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
@@ -8143,8 +8121,7 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
 [TRAINER_STEVE_3] =
 {
     .trainerName = _("Steve"),
-    TRAINER_CLASS_PIC(POKEMANIAC),
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+    POKEMANIAC_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
@@ -8164,8 +8141,7 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
 [TRAINER_STEVE_4] =
 {
     .trainerName = _("Steve"),
-    TRAINER_CLASS_PIC(POKEMANIAC),
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+    POKEMANIAC_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
@@ -8185,8 +8161,7 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
 [TRAINER_STEVE_5] =
 {
     .trainerName = _("Steve"),
-    TRAINER_CLASS_PIC(POKEMANIAC),
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+    POKEMANIAC_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
@@ -15624,8 +15599,7 @@ LYDIA_INFO(5, REMATCH_4_LEVEL_3, PELIPPER, BRELOOM, AZUMARILL, ROSERADE, DELCATT
 [TRAINER_WYATT] =
 {
     .trainerName = _("Wyatt"),
-    TRAINER_CLASS_PIC(POKEMANIAC),
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+    POKEMANIAC_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {

@@ -286,12 +286,12 @@
 #define TRAINER_ABIGAIL_3                   429
 #define TRAINER_ABIGAIL_4                   430
 #define TRAINER_ABIGAIL_5                   431
-#define TRAINER_ANTHONY                     420
 #define TRAINER_BENJAMIN_1                  421
 #define TRAINER_BENJAMIN_2                  422
 #define TRAINER_BENJAMIN_3                  423
 #define TRAINER_BENJAMIN_4                  424
 #define TRAINER_BENJAMIN_5                  425
+#define TRAINER_ANTHONY                     420
 #define TRAINER_JASMINE                     427
 #define TRAINER_JACOB                       419
 //Trick House 2

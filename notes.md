@@ -83,6 +83,7 @@ upcoming
     - All rematches should have consistent values (gender, IVs (unless maxed but only > level 50), etc.)
     - Calvin could have a good Nature/EV
     - Leaders would have optimal Abilities/EVs/IVs/Natures
+    - Add Speed increasing natures to Triathletes
 - Use Good Ruby's palette shifting to give trainers more unique looks? (https://github.com/Doesnty/goodruby/commit/ff53bbab592865b49f345342205b41cb869abf27)
 - Psychics can use Psyduck, Golduck, and Farigiraf now
     - Update Mossdeep Gym if there are duplicates of other Pokemon

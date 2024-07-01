@@ -224,7 +224,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Team Magma are more focused on Ground types than Fire types to avoid overlap with Flannery
 - Pokémon have a more even encounter distribution
 - Tate and Liza give out Psychic instead of Calm Mind (Calm Mind can be found in Slateport)
-- Cut, Fly, Strength, Flash, Rock Smash, and Dive can now be forgotten
+- Cut, Fly, Strength, Flash, Rock Smash, Surf, and Dive can now be forgotten
     - Fly can now be used from the Start Menu after getting Mauville's badge
     - Cut, Strength, and Rock Smash no longer need a badge to be used
     - Cut trees have been removed from everywhere but the Trick House
@@ -232,7 +232,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Rock Smash rocks have been removed from everywhere but Rusturf Tunnel. Brick Break can now also break them
     - The Escape Rope can by used in the Trick Room puzzles that involve Cut/Strength
     - Flash is no longer needed anywhere
-    - Dive has been replaced by a key item
+    - Surf and Dive have been replaced by a key item
 - Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room
     - The door to Sealed Chamber and the Regis' inner rooms are now automatically open
 - Made rapids easier to navigate so that only one trip is needed to get all items/battle all trainers (at the cost of looking slightly worse)
@@ -1506,6 +1506,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Quick Attack, Swift, and Headbutt by level up
 
 - Sableye:
+    - Loses Stall as an ability since it's worthless
     - Catch rate: 45->90
 
 - Mawile:

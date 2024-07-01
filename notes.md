@@ -55,7 +55,6 @@ upcoming
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?
 - Edit Surskit mass outbreak?
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
-- Implement changing Deoxys forms at Fallarbor or from bag
 
 ### Items
 - Get Exp. Share from Steven instead of from Mr. Stone after
@@ -65,10 +64,12 @@ upcoming
 - Xaman's TM Case: https://www.pokecommunity.com/showpost.php?p=10378278
 
 ### Trainers
-- Add Wally battle near Fallarbor with new Swablu
+- Add Wally battle near Fallarbor with new Swablu/evolved Roselia
+- More mugshots for other bosses?
 - Readjust wild/trainer levels so that parties aren't overpowered?
 - Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)
 - Elite Four rematches (wouldn't need to use Match Call, could probably do if statement in scripts.inc)
+- 6th rematches for trainers post-Elite Four?
 - Update Elite Four palettes
     - battle_transitions/*_bg.pal to better match types
     - stadium/palette3-7.pal to better match ypes
@@ -83,7 +84,6 @@ upcoming
     - Calvin could have a good Nature/EV
     - Leaders would have optimal Abilities/EVs/IVs/Natures
 - Use Good Ruby's palette shifting to give trainers more unique looks? (https://github.com/Doesnty/goodruby/commit/ff53bbab592865b49f345342205b41cb869abf27)
-- Breeders should have good IVs/Natures/Abilities
 - Psychics can use Psyduck, Golduck, and Farigiraf now
     - Update Mossdeep Gym if there are duplicates of other Pokemon
 - Give Winstrates rematches?

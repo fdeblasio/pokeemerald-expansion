@@ -387,7 +387,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(BEAUTY, Beauty),
     TRAINER_SPRITE(RICH_BOY, RichBoy),
     TRAINER_SPRITE(EXPERT_F, ExpertF),
-    TRAINER_SPRITE(POKEMANIAC, Pokemaniac),
+    TRAINER_SPRITE(POKE_MANIAC, Pokemaniac),
     TRAINER_SPRITE(MAGMA_GRUNT_F, MagmaGruntF),
     TRAINER_SPRITE(GUITARIST, Guitarist),
     TRAINER_SPRITE(KINDLER, Kindler),

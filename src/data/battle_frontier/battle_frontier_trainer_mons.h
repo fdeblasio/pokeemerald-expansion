@@ -1231,7 +1231,7 @@
     FRONTIER_MON_CACTURNE_2,    \
     -1
 
-#define FRONTIER_MONS_POKEMANIAC_1 \
+#define FRONTIER_MONS_POKE_MANIAC_1 \
     FRONTIER_MON_LICKITUNG_2,   \
     FRONTIER_MON_GRAVELER_2,    \
     FRONTIER_MON_WAILMER_2,     \
@@ -4404,8 +4404,8 @@
     -1
 
 // For whatever reason FRONTIER_MON_MAROWAK_2 is in a different order than _1 _3 and _4
-// This order change is the only difference btween FRONITER_MONS_POKEMANIAC_2A and FRONTIER_MONS_POKEMANIAC_2B other than the numbered suffixes
-#define FRONTIER_MONS_POKEMANIAC_2A \
+// This order change is the only difference btween FRONITER_MONS_POKE_MANIAC_2A and FRONTIER_MONS_POKE_MANIAC_2B other than the numbered suffixes
+#define FRONTIER_MONS_POKE_MANIAC_2A \
     FRONTIER_MON_ZANGOOSE_2,    \
     FRONTIER_MON_GRANBULL_1,    \
     FRONTIER_MON_SKARMORY_1,    \
@@ -4495,7 +4495,7 @@
     FRONTIER_MON_TYRANITAR_10,  \
     -1
 
-#define FRONTIER_MONS_POKEMANIAC_2B \
+#define FRONTIER_MONS_POKE_MANIAC_2B \
     FRONTIER_MON_ZANGOOSE_2,    \
     FRONTIER_MON_GRANBULL_3,    \
     FRONTIER_MON_SKARMORY_3,    \
@@ -4585,7 +4585,7 @@
     FRONTIER_MON_TYRANITAR_10,  \
     -1
 
-#define FRONTIER_MONS_POKEMANIAC_2C \
+#define FRONTIER_MONS_POKE_MANIAC_2C \
     FRONTIER_MON_ZANGOOSE_2,    \
     FRONTIER_MON_URSARING_1,    \
     FRONTIER_MON_STEELIX_1,     \
@@ -6438,17 +6438,17 @@ const u16 gBattleFrontierTrainerMons_Kelsey[] =
 
 const u16 gBattleFrontierTrainerMons_Jalen[] =
 {
-    FRONTIER_MONS_POKEMANIAC_1
+    FRONTIER_MONS_POKE_MANIAC_1
 };
 
 const u16 gBattleFrontierTrainerMons_Griffen[] =
 {
-    FRONTIER_MONS_POKEMANIAC_1
+    FRONTIER_MONS_POKE_MANIAC_1
 };
 
 const u16 gBattleFrontierTrainerMons_Xander[] =
 {
-    FRONTIER_MONS_POKEMANIAC_1
+    FRONTIER_MONS_POKE_MANIAC_1
 };
 
 const u16 gBattleFrontierTrainerMons_Marvin[] =
@@ -7083,17 +7083,17 @@ const u16 gBattleFrontierTrainerMons_Lexie[] =
 
 const u16 gBattleFrontierTrainerMons_Miller[] =
 {
-    FRONTIER_MONS_POKEMANIAC_2A
+    FRONTIER_MONS_POKE_MANIAC_2A
 };
 
 const u16 gBattleFrontierTrainerMons_Marv[] =
 {
-    FRONTIER_MONS_POKEMANIAC_2B
+    FRONTIER_MONS_POKE_MANIAC_2B
 };
 
 const u16 gBattleFrontierTrainerMons_Layton[] =
 {
-    FRONTIER_MONS_POKEMANIAC_2C
+    FRONTIER_MONS_POKE_MANIAC_2C
 };
 
 const u16 gBattleFrontierTrainerMons_Brooks[] =

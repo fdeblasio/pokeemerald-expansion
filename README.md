@@ -390,7 +390,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Rival 110       |18, 18, 20||
 |Wally Mauville  |16                    |19|
 |Wally Verdanturf|N/A                   |21, 23|
-|Wattson         |20, 22, 22, 24        |22, 24, 24, 26|
+|Wattson         |20, 22, 22, 24||
 |Tabitha         |18, 20, 22, 22        |26, 26, 28|
 |Maxie           |24, 24, 25            |28, 28, 28, 30|
 |Flannery        |24, 24, 26, 29        |28, 30, 30, 32|

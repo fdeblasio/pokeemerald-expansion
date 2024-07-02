@@ -652,43 +652,43 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "range": "20, 23",
+                "range": "RANGE_ROUTE_112",
                 "species": "NUMEL"
               },
               {
-                "range": "20, 23",
+                "range": "RANGE_ROUTE_112",
                 "species": "NUMEL"
               },
               {
-                "range": "20, 23",
+                "range": "RANGE_ROUTE_112",
                 "species": "MACHOP"
               },
               {
-                "range": "20, 23",
+                "range": "RANGE_ROUTE_112",
                 "species": "NUMEL"
               },
               {
-                "range": "20, 23",
+                "range": "RANGE_ROUTE_112",
                 "species": "MACHOP"
               },
               {
-                "range": "20, 23",
+                "range": "RANGE_ROUTE_112",
                 "species": "MACHOP"
               },
               {
-                "range": "20, 23",
+                "range": "RANGE_ROUTE_112",
                 "species": "MACHOP"
               },
               {
-                "range": "20, 23",
+                "range": "RANGE_ROUTE_112",
                 "species": "MACHOP"
               },
               {
-                "range": "20, 23",
+                "range": "RANGE_ROUTE_112",
                 "species": "NUMEL"
               },
               {
-                "range": "20, 23",
+                "range": "RANGE_ROUTE_112",
                 "species": "NUMEL"
               }
             ]
@@ -1685,43 +1685,43 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "range": "20, 23",
+                "range": "RANGE_FIERY_PATH",
                 "species": "TORKOAL"
               },
               {
-                "range": "20, 23",
+                "range": "RANGE_FIERY_PATH",
                 "species": "SLUGMA"
               },
               {
-                "range": "20, 23",
+                "range": "RANGE_FIERY_PATH",
                 "species": "GRIMER"
               },
               {
-                "range": "20, 23",
+                "range": "RANGE_FIERY_PATH",
                 "species": "KOFFING"
               },
               {
-                "range": "20, 23",
+                "range": "RANGE_FIERY_PATH",
                 "species": "NUMEL"
               },
               {
-                "range": "20, 23",
+                "range": "RANGE_FIERY_PATH",
                 "species": "HOUNDOUR"
               },
               {
-                "range": "20, 23",
+                "range": "RANGE_FIERY_PATH",
                 "species": "GRIMER"
               },
               {
-                "range": "20, 23",
+                "range": "RANGE_FIERY_PATH",
                 "species": "KOFFING"
               },
               {
-                "range": "20, 23",
+                "range": "RANGE_FIERY_PATH",
                 "species": "NUMEL"
               },
               {
-                "range": "20, 23",
+                "range": "RANGE_FIERY_PATH",
                 "species": "HOUNDOUR"
               }
             ]

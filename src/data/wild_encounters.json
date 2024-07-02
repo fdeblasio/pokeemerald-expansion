@@ -148,7 +148,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "RANGE_OLD_ROD_INITIAL",
@@ -251,7 +250,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "RANGE_OLD_ROD_INITIAL",
@@ -354,7 +352,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "RANGE_OLD_ROD_INITIAL",
@@ -412,7 +409,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "28, 30",
@@ -515,7 +511,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "RANGE_ROUTE_110",
@@ -618,7 +613,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "20, 25",
@@ -819,7 +813,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "20, 25",
@@ -971,7 +964,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "RANGE_ROUTE_117",
@@ -1074,7 +1066,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
@@ -1132,7 +1123,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "45, 48",
@@ -1656,7 +1646,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "28, 30",
@@ -1808,7 +1797,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "44, 46",
@@ -1915,7 +1903,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "RANGE_OLD_ROD_INITIAL",
@@ -1973,7 +1960,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "RANGE_OLD_ROD_INITIAL",
@@ -2031,7 +2017,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "28, 30",
@@ -2089,7 +2074,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "RANGE_ROUTE_109_SLATEPORT_OLD_ROD",
@@ -2192,7 +2176,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "RANGE_OLD_ROD_INITIAL",
@@ -2344,7 +2327,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "42, 44",
@@ -2447,7 +2429,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "35, 37",
@@ -2550,7 +2531,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "40, 42",
@@ -2608,7 +2588,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "41, 43",
@@ -2711,7 +2690,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "42, 44",
@@ -3112,7 +3090,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "45, 48",
@@ -3170,7 +3147,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "50, 52",
@@ -3228,7 +3204,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "50, 52",
@@ -3286,7 +3261,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "50, 52",
@@ -3344,7 +3318,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "50, 52",
@@ -3447,7 +3420,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "50, 52",
@@ -3505,7 +3477,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "50, 52",
@@ -3563,7 +3534,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "50, 52",
@@ -3621,7 +3591,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "50, 52",
@@ -3679,7 +3648,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "28, 30",
@@ -3737,7 +3705,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "50, 52",
@@ -4085,7 +4052,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "50, 52",
@@ -4188,7 +4154,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "50, 52",
@@ -4295,7 +4260,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "50, 52",
@@ -4671,7 +4635,7 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 9,
+            "encounter_rate": 25,
             "mons": [
               {
                 "range": "41, 43",
@@ -4692,7 +4656,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "41, 43",
@@ -4823,7 +4786,7 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 9,
+            "encounter_rate": 25,
             "mons": [
               {
                 "range": "41, 43",
@@ -4844,7 +4807,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "41, 43",
@@ -4996,7 +4958,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "45, 47",
@@ -5099,7 +5060,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "20, 25",
@@ -5202,7 +5162,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "44, 46",
@@ -5305,7 +5264,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "44, 46",
@@ -5506,7 +5464,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "45, 48",
@@ -5609,7 +5566,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "45, 48",
@@ -5667,7 +5623,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "50, 52",
@@ -5725,7 +5680,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "RANGE_OLD_ROD_INITIAL",
@@ -5783,7 +5737,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "RANGE_ROUTE_109_SLATEPORT_OLD_ROD",
@@ -5841,7 +5794,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "45, 48",
@@ -5899,7 +5851,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "50, 52",
@@ -5957,7 +5908,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "50, 52",
@@ -6015,7 +5965,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "5, 10",
@@ -6196,7 +6145,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "50, 52",
@@ -6397,7 +6345,6 @@
             ]
           },
           "fishing_mons": {
-            "encounter_rate": 160,
             "mons": [
               {
                 "range": "60, 60",

@@ -298,6 +298,17 @@
 #define TRAINER_TED                         343
 #define TRAINER_PAUL                        344
 #define TRAINER_GEORGIA                     350
+//Route 111 south
+#define TRAINER_TYRON                       733
+#define TRAINER_LILY                        734
+#define TRAINER_BIANCA                      735
+#define TRAINER_HAYDEN                      736
+#define TRAINER_VICTOR                      361
+#define TRAINER_VICTORIA                    368
+#define TRAINER_VIVI                        648
+#define TRAINER_VICKY                       381
+#define TRAINER_IRENE                       544
+#define TRAINER_TRAVIS                      299
 
 #define TRAINER_SAWYER_1                     89
 #define TRAINER_SAWYER_2                    830
@@ -450,7 +461,6 @@
 #define TRAINER_SHANE                       295
 #define TRAINER_JUSTIN                      296
 #define TRAINER_AUTUMN                      298
-#define TRAINER_TRAVIS                      299
 #define TRAINER_ETHAN_1                     297
 #define TRAINER_ETHAN_2                     300
 #define TRAINER_ETHAN_3                     301
@@ -492,9 +502,7 @@
 #define TRAINER_WALTER_4                    340
 #define TRAINER_WALTER_5                    341
 #define TRAINER_KATE_AND_JOY                355
-#define TRAINER_VICTOR                      361
 #define TRAINER_COLTON                      363
-#define TRAINER_VICTORIA                    368
 #define TRAINER_VANESSA                     369
 #define TRAINER_BETHANY                     370
 #define TRAINER_TIMOTHY_1                   376
@@ -502,7 +510,6 @@
 #define TRAINER_TIMOTHY_3                   378
 #define TRAINER_TIMOTHY_4                   379
 #define TRAINER_TIMOTHY_5                   380
-#define TRAINER_VICKY                       381
 #define TRAINER_SHELBY_1                    382
 #define TRAINER_SHELBY_2                    383
 #define TRAINER_SHELBY_3                    384
@@ -615,7 +622,6 @@
 #define TRAINER_NANCY                       540
 #define TRAINER_MARTHA                      541
 #define TRAINER_CEDRIC                      543
-#define TRAINER_IRENE                       544
 #define TRAINER_DIANA_1                     542
 #define TRAINER_DIANA_2                     545
 #define TRAINER_DIANA_3                     546
@@ -675,7 +681,6 @@
 #define TRAINER_PAXTON                      638
 #define TRAINER_ISABELLA                    639
 #define TRAINER_JONATHAN                    642
-#define TRAINER_VIVI                        648
 #define TRAINER_ANDREA                      655
 #define TRAINER_CRISSY                      656
 #define TRAINER_DOUG                        660
@@ -731,10 +736,6 @@
 #define TRAINER_LILA_AND_ROY_5              720
 #define TRAINER_LISA_AND_RAY                721
 #define TRAINER_CHRIS                       722
-#define TRAINER_TYRON                       733
-#define TRAINER_LILY                        734
-#define TRAINER_BIANCA                      735
-#define TRAINER_HAYDEN                      736
 #define TRAINER_SOPHIE                      737
 #define TRAINER_COBY                        738
 #define TRAINER_LAWRENCE                    739

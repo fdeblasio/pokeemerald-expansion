@@ -50,7 +50,7 @@ const struct WildPokemon {{ encounter.base_label }}_FishingMons[] =
     { {{ wild_mon.range }}, {{ "SPECIES_" + wild_mon.species }} },
 ## endfor
 };
-const struct WildPokemonInfo {{ encounter.base_label }}_FishingMonsInfo = { {{encounter.fishing_mons.encounter_rate}}, {{ encounter.base_label }}_FishingMons };
+const struct WildPokemonInfo {{ encounter.base_label }}_FishingMonsInfo = { 200, {{ encounter.base_label }}_FishingMons };
 {% endif %}
 ## endfor
 

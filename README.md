@@ -223,6 +223,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Gym Leaders and Magma/Aqua Admins/Leaders no longer have underleveled evolutions
 - Team Magma are more focused on Ground types than Fire types to avoid overlap with Flannery
 - Pokémon have a more even encounter distribution
+- Trainer rematches (including Gabby and Ty) are now based on number of badges
 - Tate and Liza give out Psychic instead of Calm Mind (Calm Mind can be found in Slateport)
 - Cut, Fly, Strength, Flash, Rock Smash, Surf, and Dive can now be forgotten
     - Fly can now be used from the Start Menu after getting Mauville's badge
@@ -1163,8 +1164,11 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Blissey (postgame):
     - Held item: Lucky Egg: 50%->100%
 
+- Goldeen:
+    - Learns Aqua Jet by level up
+
 - Seaking:
-    - Learns Drill Run by level up
+    - Learns Aqua Jet by level up
 
 - Pinsir:
     - Catch rate: 45->90

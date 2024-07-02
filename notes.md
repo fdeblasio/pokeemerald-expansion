@@ -46,7 +46,7 @@ upcoming
     Include more changes, even if general like Battle Frontier edits
 - Before a new game, put Trainer numbers in order
 - Consolidate flags (for example, FLAG_DEFEATED_MAUVILLE_GYM, FLAG_BADGE03_GET, FLAG_HIDE_MAUVILLE_ROCK_SMASH_TIP_GUY)
-- Remove unused code
+- Remove unused code (both in vanilla as well as stuff like move tutor flags since they're now infinite)
 
 ### Pokémon
 - Eventually remove RSE and/or BDSP teachable moves
@@ -66,7 +66,6 @@ upcoming
 ### Trainers
 - Add Wally battle near Fallarbor with new Swablu/evolved Roselia
 - More mugshots for other bosses?
-- Gabby and Ty rematches should be based on badges
 - Readjust wild/trainer levels so that parties aren't overpowered?
 - Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)
 - Elite Four rematches (wouldn't need to use Match Call, could probably do if statement in scripts.inc)

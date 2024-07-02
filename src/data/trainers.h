@@ -2522,13 +2522,13 @@
 
 #define GABBY_WHISMUR(Level)                                                                                   \
     .lvl = Level,                                                                                              \
-    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_WHISMUR : (Level < 55 ? SPECIES_LOUDRED : SPECIES_EXPLOUD), \
+    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_WHISMUR : (Level < ENDGAME_REMATCH_2_LEVEL ? SPECIES_LOUDRED : SPECIES_EXPLOUD), \
     .ability = ABILITY_SCRAPPY,                                                                                \
     .gender = TRAINER_MON_FEMALE
 
 #define TY_MAGNEMITE(Level)                                                                                         \
     .lvl = Level,                                                                                                   \
-    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_MAGNEMITE : (Level < 55 ? SPECIES_MAGNETON : SPECIES_MAGNEZONE), \
+    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_MAGNEMITE : (Level < ENDGAME_REMATCH_2_LEVEL ? SPECIES_MAGNETON : SPECIES_MAGNEZONE), \
     .ability = ABILITY_ANALYTIC
 
 [TRAINER_GABBY_AND_TY_1] =
@@ -2581,11 +2581,11 @@
     GABBY_AND_TY_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        TY_MAGNEMITE(45),
+        TY_MAGNEMITE(REMATCH_4_LEVEL_1),
         IVS(24),
         },
         {
-        GABBY_WHISMUR(45),
+        GABBY_WHISMUR(REMATCH_4_LEVEL_1),
         IVS(24),
         }
     },
@@ -2596,11 +2596,11 @@
     GABBY_AND_TY_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        TY_MAGNEMITE(50),
+        TY_MAGNEMITE(REMATCH_5_LEVEL_1),
         IVS(30),
         },
         {
-        GABBY_WHISMUR(50),
+        GABBY_WHISMUR(REMATCH_5_LEVEL_1),
         IVS(30),
         }
     },
@@ -2611,12 +2611,12 @@
     GABBY_AND_TY_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        TY_MAGNEMITE(55),
+        TY_MAGNEMITE(ENDGAME_REMATCH_2_LEVEL),
         IVS(30),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_METAL_SOUND, MOVE_BARRIER},
         },
         {
-        GABBY_WHISMUR(55),
+        GABBY_WHISMUR(ENDGAME_REMATCH_2_LEVEL),
         IVS(30),
         .moves = {MOVE_HYPER_VOICE, MOVE_DISARMING_VOICE, MOVE_CRUNCH, MOVE_THUNDER_FANG},
         }

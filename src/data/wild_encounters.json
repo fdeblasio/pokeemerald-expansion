@@ -615,15 +615,15 @@
           "fishing_mons": {
             "mons": [
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "MAGIKARP"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "GOLDEEN"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_GOOD_ROD_INITIAL",
                 "species": "BARBOACH"
               },
               {

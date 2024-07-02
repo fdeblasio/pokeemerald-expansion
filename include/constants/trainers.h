@@ -40,7 +40,7 @@
 #define TRAINER_PIC_BEAUTY                22
 #define TRAINER_PIC_RICH_BOY              23
 #define TRAINER_PIC_EXPERT_F              24
-#define TRAINER_PIC_POKEMANIAC            25
+#define TRAINER_PIC_POKE_MANIAC           25
 #define TRAINER_PIC_MAGMA_GRUNT_F         26
 #define TRAINER_PIC_GUITARIST             27
 #define TRAINER_PIC_KINDLER               28
@@ -63,11 +63,11 @@
 #define TRAINER_PIC_LEADER_WINONA         45
 #define TRAINER_PIC_LEADER_TATE_AND_LIZA  46
 #define TRAINER_PIC_LEADER_JUAN           47
-#define TRAINER_PIC_SCHOOLKID_M          48
-#define TRAINER_PIC_SCHOOLKID_F          49
+#define TRAINER_PIC_SCHOOLKID_M           48
+#define TRAINER_PIC_SCHOOLKID_F           49
 #define TRAINER_PIC_TEAMMATES             50
-#define TRAINER_PIC_POKE_FAN_M             51
-#define TRAINER_PIC_POKE_FAN_F             52
+#define TRAINER_PIC_POKE_FAN_M            51
+#define TRAINER_PIC_POKE_FAN_F            52
 #define TRAINER_PIC_YOUNGSTER             53
 #define TRAINER_PIC_CHAMPION_WALLACE      54
 #define TRAINER_PIC_FISHERMAN             55
@@ -161,7 +161,7 @@
 #define FACILITY_CLASS_BEAUTY                0x14
 #define FACILITY_CLASS_RICH_BOY              0x15
 #define FACILITY_CLASS_EXPERT_F              0x16
-#define FACILITY_CLASS_POKEMANIAC            0x17
+#define FACILITY_CLASS_POKE_MANIAC            0x17
 #define FACILITY_CLASS_MAGMA_GRUNT_F         0x18
 #define FACILITY_CLASS_GUITARIST             0x19
 #define FACILITY_CLASS_KINDLER               0x1a
@@ -237,7 +237,7 @@
 #define RS_FACILITY_CLASS_LADY                  0xB
 #define RS_FACILITY_CLASS_BEAUTY                0xC
 #define RS_FACILITY_CLASS_RICH_BOY              0xD
-#define RS_FACILITY_CLASS_POKEMANIAC            0xE
+#define RS_FACILITY_CLASS_POKE_MANIAC            0xE
 #define RS_FACILITY_CLASS_SWIMMER_M             0xF
 #define RS_FACILITY_CLASS_BLACK_BELT            0x10
 #define RS_FACILITY_CLASS_GUITARIST             0x11
@@ -325,7 +325,7 @@
 #define TRAINER_CLASS_LADY           0x13
 #define TRAINER_CLASS_BEAUTY         0x14
 #define TRAINER_CLASS_RICH_BOY       0x15
-#define TRAINER_CLASS_POKEMANIAC     0x16
+#define TRAINER_CLASS_POKE_MANIAC    0x16
 #define TRAINER_CLASS_GUITARIST      0x17
 #define TRAINER_CLASS_KINDLER        0x18
 #define TRAINER_CLASS_CAMPER         0x19
@@ -335,10 +335,10 @@
 #define TRAINER_CLASS_GENTLEMAN      0x1d
 #define TRAINER_CLASS_ELITE_FOUR     0x1e
 #define TRAINER_CLASS_LEADER         0x1f
-#define TRAINER_CLASS_SCHOOLKID     0x20
+#define TRAINER_CLASS_SCHOOLKID      0x20
 #define TRAINER_CLASS_TEAMMATES      0x21
 #define TRAINER_CLASS_WINSTRATE      0x22
-#define TRAINER_CLASS_POKE_FAN        0x23
+#define TRAINER_CLASS_POKE_FAN       0x23
 #define TRAINER_CLASS_YOUNGSTER      0x24
 #define TRAINER_CLASS_CHAMPION       0x25
 #define TRAINER_CLASS_FISHERMAN      0x26

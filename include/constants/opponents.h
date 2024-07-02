@@ -309,6 +309,29 @@
 #define TRAINER_VICKY                       381
 #define TRAINER_IRENE                       544
 #define TRAINER_TRAVIS                      299
+//Route 112
+#define TRAINER_LARRY                       294
+#define TRAINER_CAROL                       539
+#define TRAINER_BRICE                       668
+#define TRAINER_TRENT_1                     669
+#define TRAINER_TRENT_2                     676
+#define TRAINER_TRENT_3                     677
+#define TRAINER_TRENT_4                     678
+#define TRAINER_TRENT_5                     679
+#define TRAINER_BRYANT                      775
+#define TRAINER_SHAYLA                      776
+//Route 111 north
+#define TRAINER_WILTON_1                    160
+#define TRAINER_WILTON_2                    166
+#define TRAINER_WILTON_3                    167
+#define TRAINER_WILTON_4                    168
+#define TRAINER_WILTON_5                    169
+#define TRAINER_BROOKE_1                    176
+#define TRAINER_BROOKE_2                    183
+#define TRAINER_BROOKE_3                    184
+#define TRAINER_BROOKE_4                    185
+#define TRAINER_BROOKE_5                    186
+#define TRAINER_DAISUKE                     270
 
 #define TRAINER_SAWYER_1                     89
 #define TRAINER_SAWYER_2                    830
@@ -352,11 +375,6 @@
 #define TRAINER_SAMUEL                      163
 #define TRAINER_VITO                        164
 #define TRAINER_OWEN                        165
-#define TRAINER_WILTON_1                    160
-#define TRAINER_WILTON_2                    166
-#define TRAINER_WILTON_3                    167
-#define TRAINER_WILTON_4                    168
-#define TRAINER_WILTON_5                    169
 #define TRAINER_WARREN                      170
 #define TRAINER_MARY                        171
 #define TRAINER_ALEXIA                      172
@@ -369,11 +387,6 @@
 #define TRAINER_MICHELLE                    180
 #define TRAINER_CAROLINE                    181
 #define TRAINER_JULIE                       182
-#define TRAINER_BROOKE_1                    176
-#define TRAINER_BROOKE_2                    183
-#define TRAINER_BROOKE_3                    184
-#define TRAINER_BROOKE_4                    185
-#define TRAINER_BROOKE_5                    186
 #define TRAINER_PATRICIA                    187
 #define TRAINER_KINDRA                      188
 #define TRAINER_TAMMY                       189
@@ -443,7 +456,6 @@
 #define TRAINER_NOB_4                       267
 #define TRAINER_NOB_5                       268
 #define TRAINER_YUJI                        269
-#define TRAINER_DAISUKE                     270
 #define TRAINER_ATSUSHI                     271
 #define TRAINER_COLE                        282
 #define TRAINER_JEFF                        283
@@ -457,7 +469,6 @@
 #define TRAINER_BERNIE_5                    291
 #define TRAINER_DREW                        292
 #define TRAINER_BEAU                        293
-#define TRAINER_LARRY                       294
 #define TRAINER_SHANE                       295
 #define TRAINER_JUSTIN                      296
 #define TRAINER_AUTUMN                      298
@@ -618,7 +629,6 @@
 #define TRAINER_JENNY_5                     536
 #define TRAINER_HEIDI                       537
 #define TRAINER_BECKY                       538
-#define TRAINER_CAROL                       539
 #define TRAINER_NANCY                       540
 #define TRAINER_MARTHA                      541
 #define TRAINER_CEDRIC                      543
@@ -686,16 +696,10 @@
 #define TRAINER_DOUG                        660
 #define TRAINER_GREG                        661
 #define TRAINER_KENT                        662
-#define TRAINER_BRICE                       668
 #define TRAINER_LENNY                       670
 #define TRAINER_LUCAS                       671
 #define TRAINER_ALAN                        672
 #define TRAINER_ERIC                        674
-#define TRAINER_TRENT_1                     669
-#define TRAINER_TRENT_2                     676
-#define TRAINER_TRENT_3                     677
-#define TRAINER_TRENT_4                     678
-#define TRAINER_TRENT_5                     679
 #define TRAINER_DEZ_AND_LUKE                680
 #define TRAINER_LEA_AND_JED                 681
 #define TRAINER_KIRA_AND_DAN_1              682
@@ -753,8 +757,6 @@
 #define TRAINER_CELIA                       772
 #define TRAINER_BRYAN                       773
 #define TRAINER_BRANDEN                     774
-#define TRAINER_BRYANT                      775
-#define TRAINER_SHAYLA                      776
 #define TRAINER_KYRA                        777
 #define TRAINER_JAIDEN                      778
 #define TRAINER_ALIX                        779

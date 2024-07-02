@@ -332,7 +332,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     TRAINER_CLASS(LADY, "Lady", 50, ITEM_LUXURY_BALL),
     TRAINER_CLASS(BEAUTY, "Beauty", 20, ITEM_GREAT_BALL),
     TRAINER_CLASS(RICH_BOY, "Rich Boy", 50, ITEM_LUXURY_BALL),
-    TRAINER_CLASS(POKEMANIAC, "Poké Maniac", 15),
+    TRAINER_CLASS(POKE_MANIAC, "Poké Maniac", 15),
     TRAINER_CLASS(GUITARIST, "Guitarist", 8),
     TRAINER_CLASS(KINDLER, "Kindler", 8),
     TRAINER_CLASS(CAMPER, "Camper", 4),

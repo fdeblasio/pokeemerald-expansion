@@ -66,6 +66,7 @@ upcoming
 ### Trainers
 - Add Wally battle near Fallarbor with new Swablu/evolved Roselia
 - More mugshots for other bosses?
+- Gabby and Ty rematches should be based on badges
 - Readjust wild/trainer levels so that parties aren't overpowered?
 - Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)
 - Elite Four rematches (wouldn't need to use Match Call, could probably do if statement in scripts.inc)

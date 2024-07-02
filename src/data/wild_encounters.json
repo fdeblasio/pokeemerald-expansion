@@ -701,43 +701,43 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "range": "21, 24",
+                "range": "RANGE_ROUTE_113",
                 "species": "SPINDA"
               },
               {
-                "range": "21, 24",
+                "range": "RANGE_ROUTE_113",
                 "species": "SPINDA"
               },
               {
-                "range": "21, 24",
+                "range": "RANGE_ROUTE_113",
                 "species": "SKARMORY"
               },
               {
-                "range": "21, 24",
+                "range": "RANGE_ROUTE_113",
                 "species": "SKARMORY"
               },
               {
-                "range": "21, 24",
+                "range": "RANGE_ROUTE_113",
                 "species": "SANDSHREW"
               },
               {
-                "range": "21, 24",
+                "range": "RANGE_ROUTE_113",
                 "species": "SLUGMA"
               },
               {
-                "range": "21, 24",
+                "range": "RANGE_ROUTE_113",
                 "species": "SANDSHREW"
               },
               {
-                "range": "21, 24",
+                "range": "RANGE_ROUTE_113",
                 "species": "SLUGMA"
               },
               {
-                "range": "21, 24",
+                "range": "RANGE_ROUTE_113",
                 "species": "SKARMORY"
               },
               {
-                "range": "21, 24",
+                "range": "RANGE_ROUTE_113",
                 "species": "SANDSHREW"
               }
             ]
@@ -750,43 +750,43 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "range": "21, 24",
+                "range": "RANGE_ROUTE_114",
                 "species": "ZANGOOSE"
               },
               {
-                "range": "21, 24",
+                "range": "RANGE_ROUTE_114",
                 "species": "SEVIPER"
               },
               {
-                "range": "21, 24",
+                "range": "RANGE_ROUTE_114",
                 "species": "SWABLU"
               },
               {
-                "range": "21, 24",
+                "range": "RANGE_ROUTE_114",
                 "species": "SWABLU"
               },
               {
-                "range": "21, 24",
+                "range": "RANGE_ROUTE_114",
                 "species": "NUZLEAF"
               },
               {
-                "range": "21, 24",
+                "range": "RANGE_ROUTE_114",
                 "species": "LOMBRE"
               },
               {
-                "range": "21, 24",
+                "range": "RANGE_ROUTE_114",
                 "species": "ZANGOOSE"
               },
               {
-                "range": "21, 24",
+                "range": "RANGE_ROUTE_114",
                 "species": "SEVIPER"
               },
               {
-                "range": "21, 24",
+                "range": "RANGE_ROUTE_114",
                 "species": "SURSKIT"
               },
               {
-                "range": "21, 24",
+                "range": "RANGE_ROUTE_114",
                 "species": "SWABLU"
               }
             ]
@@ -815,15 +815,15 @@
           "fishing_mons": {
             "mons": [
               {
-                "range": "20, 25",
+                "range": "RANGE_ROUTE_114",
                 "species": "MAGIKARP"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_ROUTE_114",
                 "species": "GOLDEEN"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_ROUTE_114",
                 "species": "BARBOACH"
               },
               {
@@ -4997,43 +4997,43 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "range": "21, 24",
+                "range": "RANGE_METEOR_FALLS",
                 "species": "SOLROCK"
               },
               {
-                "range": "21, 24",
+                "range": "RANGE_METEOR_FALLS",
                 "species": "LUNATONE"
               },
               {
-                "range": "21, 24",
+                "range": "RANGE_METEOR_FALLS",
                 "species": "SOLROCK"
               },
               {
-                "range": "21, 24",
+                "range": "RANGE_METEOR_FALLS",
                 "species": "LUNATONE"
               },
               {
-                "range": "21, 24",
+                "range": "RANGE_METEOR_FALLS",
                 "species": "SOLROCK"
               },
               {
-                "range": "21, 24",
+                "range": "RANGE_METEOR_FALLS",
                 "species": "LUNATONE"
               },
               {
-                "range": "21, 24",
+                "range": "RANGE_METEOR_FALLS",
                 "species": "ZUBAT"
               },
               {
-                "range": "21, 24",
+                "range": "RANGE_METEOR_FALLS",
                 "species": "ZUBAT"
               },
               {
-                "range": "21, 24",
+                "range": "RANGE_METEOR_FALLS",
                 "species": "ZUBAT"
               },
               {
-                "range": "21, 24",
+                "range": "RANGE_METEOR_FALLS",
                 "species": "ZUBAT"
               }
             ]
@@ -5062,15 +5062,15 @@
           "fishing_mons": {
             "mons": [
               {
-                "range": "20, 25",
+                "range": "RANGE_METEOR_FALLS",
                 "species": "MAGIKARP"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_METEOR_FALLS",
                 "species": "GOLDEEN"
               },
               {
-                "range": "20, 25",
+                "range": "RANGE_METEOR_FALLS",
                 "species": "BARBOACH"
               },
               {

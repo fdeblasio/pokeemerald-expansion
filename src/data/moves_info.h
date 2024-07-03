@@ -188,7 +188,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .name = COMPOUND_STRING("Double Slap"),
         .description = COMPOUND_STRING(
             "Repeatedly slaps the foe\n"
-            "2 to 5 times."),
+            "twice."),
         .effect = EFFECT_HIT,
         .power = 30,
         .type = TYPE_NORMAL,

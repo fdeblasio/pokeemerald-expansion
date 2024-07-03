@@ -68,6 +68,7 @@ upcoming
 - More mugshots for other bosses?
 - Readjust wild/trainer levels so that parties aren't overpowered?
 - Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)
+    - Figure out intermittent rematch levels (for example rematch 2 levels for trainers after Petalburg or rematch 3 levels for trainers after Fortree)
 - Elite Four rematches (wouldn't need to use Match Call, could probably do if statement in scripts.inc)
 - 6th rematches for trainers post-Elite Four?
 - Update Elite Four palettes

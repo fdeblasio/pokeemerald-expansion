@@ -498,6 +498,6 @@ void InitRamScript_NoObjectEvent(u8 *script, u16 scriptSize)
 #if FREE_MYSTERY_EVENT_BUFFERS == FALSE
     if (scriptSize > sizeof(gSaveBlock1Ptr->ramScript.data.script))
         scriptSize = sizeof(gSaveBlock1Ptr->ramScript.data.script);
-    InitRamScript(script, scriptSize, MAP_GROUP(UNDEFINED), MAP_NUM(UNDEFINED), NO_OBJECT);
+    InitRamScript(script, scriptSize, MAP_GROUP_AND_NUM(UNDEFINED), NO_OBJECT);
 #endif //FREE_MYSTERY_EVENT_BUFFERS
 }

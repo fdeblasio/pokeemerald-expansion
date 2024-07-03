@@ -35,6 +35,7 @@
 #define TRAINER_MAY_LILYCOVE_TORCHIC         30
 #define TRAINER_WALLY_MAUVILLE               31
 #define TRAINER_WALLY_VERDANTURF            854
+#define TRAINER_WALLY_ROUTE_114             853
 #define TRAINER_WALLY_VR_1                   32
 #define TRAINER_WALLY_VR_2                   33
 #define TRAINER_WALLY_VR_3                   34
@@ -935,7 +936,6 @@
 #define TRAINER_UNUSED_2                    850
 #define TRAINER_UNUSED_3                    851
 #define TRAINER_UNUSED_4                    852
-#define TRAINER_UNUSED_5                    853
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled

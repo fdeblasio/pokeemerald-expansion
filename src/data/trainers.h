@@ -2504,7 +2504,7 @@
 #define REMATCH_4_LEVEL_6 REMATCH_4_LEVEL_1 - 5
 
 #define REMATCH_5_LEVEL_1 60
-#define REMATCH_5_MINIBOSS REMATCH_5_LEVEL_1 + 1
+#define REMATCH_5_MINI_BOSS REMATCH_5_LEVEL_1 + 1
 #define REMATCH_5_LEVEL_2 REMATCH_5_LEVEL_1 - 1
 #define REMATCH_5_LEVEL_3 REMATCH_5_LEVEL_1 - 2
 #define REMATCH_5_LEVEL_4 REMATCH_5_LEVEL_1 - 3
@@ -2875,15 +2875,17 @@
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_GIRL, \
     .doubleBattle = TRUE
 
-#define POKEMON_RANGER_F_INFO                   \
-    .trainerClass = TRAINER_CLASS_PKMN_RANGER,  \
-    .trainerPic = TRAINER_PIC_POKEMON_RANGER_F, \
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL
+#define POKEMON_RANGER_F_INFO                                                 \
+    .trainerClass = TRAINER_CLASS_PKMN_RANGER,                                \
+    .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,                               \
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL, \
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE}
 
-#define POKEMON_RANGER_M_INFO                   \
-    .trainerClass = TRAINER_CLASS_PKMN_RANGER,  \
-    .trainerPic = TRAINER_PIC_POKEMON_RANGER_M, \
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL
+#define POKEMON_RANGER_M_INFO                              \
+    .trainerClass = TRAINER_CLASS_PKMN_RANGER,             \
+    .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,            \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL, \
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE}
 
 #define HEX_MANIAC_INFO            \
     TRAINER_CLASS_PIC(HEX_MANIAC), \
@@ -2902,29 +2904,33 @@
     TRAINER_CLASS_PIC(DRAGON_TAMER), \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE
 
-#define MAGMA_GRUNT_M_INFO                    \
-    .trainerName = _("Grunt"),                \
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA, \
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,  \
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA
+#define MAGMA_GRUNT_M_INFO                                  \
+    .trainerName = _("Grunt"),                              \
+    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,               \
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,                \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA, \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define MAGMA_GRUNT_F_INFO                    \
-    .trainerName = _("Grunt"),                \
-    .trainerClass = TRAINER_CLASS_TEAM_MAGMA, \
-    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,  \
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MAGMA
+#define MAGMA_GRUNT_F_INFO                                                     \
+    .trainerName = _("Grunt"),                                                 \
+    .trainerClass = TRAINER_CLASS_TEAM_MAGMA,                                  \
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,                                   \
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MAGMA, \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define AQUA_GRUNT_M_INFO                    \
-    .trainerName = _("Grunt"),               \
-    .trainerClass = TRAINER_CLASS_TEAM_AQUA, \
-    .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,  \
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA
+#define AQUA_GRUNT_M_INFO                                  \
+    .trainerName = _("Grunt"),                             \
+    .trainerClass = TRAINER_CLASS_TEAM_AQUA,               \
+    .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,                \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA, \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define AQUA_GRUNT_F_INFO                    \
-    .trainerName = _("Grunt"),               \
-    .trainerClass = TRAINER_CLASS_TEAM_AQUA, \
-    .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,  \
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA
+#define AQUA_GRUNT_F_INFO                                                     \
+    .trainerName = _("Grunt"),                                                \
+    .trainerClass = TRAINER_CLASS_TEAM_AQUA,                                  \
+    .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,                                   \
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA, \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
 #define TABITHA_INFO                                        \
     .trainerName = _("Tabitha"),                            \
@@ -3078,7 +3084,7 @@
         IVS(5),
         },
         {
-        LINUS(REMATCH_5_MINIBOSS),
+        LINUS(REMATCH_5_MINI_BOSS),
         .ev = EV_SPREAD_ATK_SPE_HP,
         PERFECT_IVS,
         .moves = {MOVE_BODY_SLAM, MOVE_PLAY_ROUGH, MOVE_PIN_MISSILE, MOVE_HONE_CLAWS},
@@ -3257,7 +3263,7 @@
         .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_DAZZLING_GLEAM, MOVE_FLASH_CANNON},
         },
         {
-        MR_ZIG(REMATCH_5_MINIBOSS),
+        MR_ZIG(REMATCH_5_MINI_BOSS),
         PERFECT_IVS,
         .moves = {MOVE_BODY_SLAM, MOVE_PLAY_ROUGH, MOVE_SEED_BOMB, MOVE_HONE_CLAWS},
         }
@@ -3334,7 +3340,6 @@
 [TRAINER_GRUNT_PETALBURG_WOODS] =
 {
     AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -4116,7 +4121,6 @@
 [TRAINER_GRUNT_RUSTURF_TUNNEL] =
 {
     AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -4714,7 +4718,6 @@
 [TRAINER_GRUNT_MUSEUM_1] =
 {
     AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -4727,7 +4730,6 @@
 [TRAINER_GRUNT_MUSEUM_2] =
 {
     AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -5482,7 +5484,7 @@
         .species = SPECIES_SHARPEDO,
         },
         {
-        DYLAN_DODUO(REMATCH_5_MINIBOSS, 5),
+        DYLAN_DODUO(REMATCH_5_MINI_BOSS, 5),
         .moves = {MOVE_THRASH, MOVE_DRILL_PECK, MOVE_DRILL_RUN, MOVE_SWORDS_DANCE},
         }
     },
@@ -5557,7 +5559,7 @@
         .species = SPECIES_STARMIE,
         },
         {
-        MARIA_DODUO(REMATCH_5_MINIBOSS, 5),
+        MARIA_DODUO(REMATCH_5_MINI_BOSS, 5),
         .moves = {MOVE_BODY_SLAM, MOVE_DRILL_PECK, MOVE_DRILL_RUN, MOVE_REST},
         }
     },
@@ -8044,12 +8046,15 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
+#define NOB_INFO             \
+    .trainerName = _("Nob"), \
+    BLACK_BELT_INFO,         \
+    MINI_BOSS_AI_FLAGS
+
 //Route 115 (south)
 [TRAINER_NOB_1] =
 {
-    .trainerName = _("Nob"),
-    BLACK_BELT_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    NOB_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -8062,13 +8067,11 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_NOB_2] =
 {
-    .trainerName = _("Nob"),
-    BLACK_BELT_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    NOB_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 35,
+        .lvl = REMATCH_2_LEVEL_1,
         .species = SPECIES_MACHOKE,
         IVS(13),
         }
@@ -8077,13 +8080,11 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_NOB_3] =
 {
-    .trainerName = _("Nob"),
-    BLACK_BELT_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    NOB_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_3_LEVEL_1,
+        .lvl = REMATCH_3_LEVEL_2,
         .species = SPECIES_BRELOOM,
         IVS(14),
         },
@@ -8097,23 +8098,21 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_NOB_4] =
 {
-    .trainerName = _("Nob"),
-    BLACK_BELT_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    NOB_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 45,
+        .lvl = REMATCH_4_LEVEL_2,
         .species = SPECIES_HERACROSS,
         IVS(15),
         },
         {
-        .lvl = 45,
+        .lvl = REMATCH_4_LEVEL_2,
         .species = SPECIES_BRELOOM,
         IVS(15),
         },
         {
-        .lvl = 45,
+        .lvl = REMATCH_4_LEVEL_1,
         .species = SPECIES_MACHAMP,
         IVS(15),
         }
@@ -8122,28 +8121,26 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_NOB_5] =
 {
-    .trainerName = _("Nob"),
-    BLACK_BELT_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    NOB_INFO,
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 50,
+        .lvl = REMATCH_5_LEVEL_2,
         .species = SPECIES_BLAZIKEN,
         IVS(17),
         },
         {
-        .lvl = 50,
+        .lvl = REMATCH_5_LEVEL_2,
         .species = SPECIES_HERACROSS,
         IVS(17),
         },
         {
-        .lvl = 50,
+        .lvl = REMATCH_5_LEVEL_2,
         .species = SPECIES_BRELOOM,
         IVS(17),
         },
         {
-        .lvl = 50,
+        .lvl = REMATCH_5_MINI_BOSS,
         .species = SPECIES_MACHAMP,
         IVS(17),
         .heldItem = ITEM_BLACK_BELT
@@ -8187,11 +8184,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
+#define CYNDY_INFO             \
+    .trainerName = _("Cyndy"), \
+    BATTLE_GIRL_INFO,          \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
+
 [TRAINER_CYNDY_1] =
 {
-    .trainerName = _("Cyndy"),
-    BATTLE_GIRL_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    CYNDY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -8209,18 +8209,16 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_CYNDY_2] =
 {
-    .trainerName = _("Cyndy"),
-    BATTLE_GIRL_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    CYNDY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 34,
+        .lvl = REMATCH_2_LEVEL_2,
         .species = SPECIES_HARIYAMA,
         IVS(13),
         },
         {
-        .lvl = 34,
+        .lvl = REMATCH_2_LEVEL_2,
         .species = SPECIES_MEDITITE,
         IVS(13),
         }
@@ -8229,9 +8227,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_CYNDY_3] =
 {
-    .trainerName = _("Cyndy"),
-    BATTLE_GIRL_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    CYNDY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -8249,18 +8245,16 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_CYNDY_4] =
 {
-    .trainerName = _("Cyndy"),
-    BATTLE_GIRL_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    CYNDY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 38,
+        .lvl = REMATCH_4_LEVEL_2,
         .species = SPECIES_HARIYAMA,
         IVS(15),
         },
         {
-        .lvl = 38,
+        .lvl = REMATCH_4_LEVEL_2,
         .species = SPECIES_MEDICHAM,
         IVS(15),
         }
@@ -8269,18 +8263,16 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_CYNDY_5] =
 {
-    .trainerName = _("Cyndy"),
-    BATTLE_GIRL_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    CYNDY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = REMATCH_5_LEVEL_2,
         .species = SPECIES_HARIYAMA,
         IVS(17),
         },
         {
-        .lvl = 42,
+        .lvl = REMATCH_5_LEVEL_2,
         .species = SPECIES_MEDICHAM,
         IVS(17),
         }
@@ -8291,7 +8283,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_MT_CHIMNEY_1] =
 {
     MAGMA_GRUNT_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -8304,7 +8295,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_MT_CHIMNEY_2] =
 {
     MAGMA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -8397,7 +8387,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_JAGGED_PASS] =
 {
     MAGMA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -8413,11 +8402,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
+#define DIANA_INFO             \
+    .trainerName = _("Diana"), \
+    PICNICKER_INFO,            \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
+
 [TRAINER_DIANA_1] =
 {
-    .trainerName = _("Diana"),
-    PICNICKER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    DIANA_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -8437,23 +8429,21 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_DIANA_2] =
 {
-    .trainerName = _("Diana"),
-    PICNICKER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    DIANA_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 33,
+        .lvl = REMATCH_2_LEVEL_3,
         .species = SPECIES_BRELOOM,
         IVS(1),
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_2_LEVEL_3,
         .species = SPECIES_GLOOM,
         IVS(1),
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_2_LEVEL_3,
         .species = SPECIES_SWABLU,
         IVS(1),
         }
@@ -8462,9 +8452,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_DIANA_3] =
 {
-    .trainerName = _("Diana"),
-    PICNICKER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    DIANA_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -8487,23 +8475,21 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_DIANA_4] =
 {
-    .trainerName = _("Diana"),
-    PICNICKER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    DIANA_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 40,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_BRELOOM,
         IVS(3),
         },
         {
-        .lvl = 40,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_VILEPLUME,
         IVS(3),
         },
         {
-        .lvl = 40,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_ALTARIA,
         IVS(3),
         }
@@ -8512,23 +8498,21 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_DIANA_5] =
 {
-    .trainerName = _("Diana"),
-    PICNICKER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    DIANA_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 45,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_BRELOOM,
         IVS(4),
         },
         {
-        .lvl = 45,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_VILEPLUME,
         IVS(4),
         },
         {
-        .lvl = 45,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_ALTARIA,
         IVS(4),
         }
@@ -8563,11 +8547,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
+#define ETHAN_INFO             \
+    .trainerName = _("Ethan"), \
+    CAMPER_INFO,               \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
+
 [TRAINER_ETHAN_1] =
 {
-    .trainerName = _("Ethan"),
-    CAMPER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    ETHAN_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -8583,23 +8570,21 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_ETHAN_2] =
 {
-    .trainerName = _("Ethan"),
-    CAMPER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    ETHAN_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 33,
+        .lvl = REMATCH_2_LEVEL_3,
         .species = SPECIES_ZIGZAGOON,
         IVS(1),
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_2_LEVEL_3,
         .species = SPECIES_SWALOT,
         IVS(1),
         },
         {
-        .lvl = 33,
+        .lvl = REMATCH_2_LEVEL_3,
         .species = SPECIES_SWELLOW,
         IVS(1),
         }
@@ -8608,9 +8593,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_ETHAN_3] =
 {
-    .trainerName = _("Ethan"),
-    CAMPER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    ETHAN_INFO,
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
@@ -8638,33 +8621,31 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_ETHAN_4] =
 {
-    .trainerName = _("Ethan"),
-    CAMPER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    ETHAN_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 40,
+        .lvl = REMATCH_4_LEVEL_5,
         .species = SPECIES_SANDSLASH,
         IVS(3),
         },
         {
-        .lvl = 40,
+        .lvl = REMATCH_4_LEVEL_5,
         .species = SPECIES_GOLBAT,
         IVS(3),
         },
         {
-        .lvl = 40,
+        .lvl = REMATCH_4_LEVEL_5,
         .species = SPECIES_LINOONE,
         IVS(3),
         },
         {
-        .lvl = 40,
+        .lvl = REMATCH_4_LEVEL_5,
         .species = SPECIES_SWALOT,
         IVS(3),
         },
         {
-        .lvl = 40,
+        .lvl = REMATCH_4_LEVEL_5,
         .species = SPECIES_SWELLOW,
         IVS(3),
         }
@@ -8673,33 +8654,31 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_ETHAN_5] =
 {
-    .trainerName = _("Ethan"),
-    CAMPER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    ETHAN_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 45,
+        .lvl = REMATCH_5_LEVEL_5,
         .species = SPECIES_SANDSLASH,
         IVS(4),
         },
         {
-        .lvl = 45,
+        .lvl = REMATCH_5_LEVEL_5,
         .species = SPECIES_CROBAT,
         IVS(4),
         },
         {
-        .lvl = 45,
+        .lvl = REMATCH_5_LEVEL_5,
         .species = SPECIES_LINOONE,
         IVS(4),
         },
         {
-        .lvl = 45,
+        .lvl = REMATCH_5_LEVEL_5,
         .species = SPECIES_SWALOT,
         IVS(4),
         },
         {
-        .lvl = 45,
+        .lvl = REMATCH_5_LEVEL_5,
         .species = SPECIES_SWELLOW,
         IVS(4),
         }
@@ -8862,11 +8841,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
+#define SHELBY_INFO             \
+    .trainerName = _("Shelby"), \
+    EXPERT_F_INFO,              \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY
+
 [TRAINER_SHELBY_1] =
 {
-    .trainerName = _("Shelby"),
-    EXPERT_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    SHELBY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -8884,18 +8866,16 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_SHELBY_2] =
 {
-    .trainerName = _("Shelby"),
-    EXPERT_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    SHELBY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 34,
+        .lvl = REMATCH_2_LEVEL_2,
         .species = SPECIES_HARIYAMA,
         IVS(25),
         },
         {
-        .lvl = 34,
+        .lvl = REMATCH_2_LEVEL_2,
         .species = SPECIES_MEDITITE,
         IVS(25),
         }
@@ -8904,9 +8884,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_SHELBY_3] =
 {
-    .trainerName = _("Shelby"),
-    EXPERT_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    SHELBY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -8924,18 +8902,16 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_SHELBY_4] =
 {
-    .trainerName = _("Shelby"),
-    EXPERT_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    SHELBY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = REMATCH_4_LEVEL_2,
         .species = SPECIES_HARIYAMA,
         IVS(27),
         },
         {
-        .lvl = 41,
+        .lvl = REMATCH_4_LEVEL_2,
         .species = SPECIES_MEDICHAM,
         IVS(27),
         }
@@ -8944,29 +8920,30 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_SHELBY_5] =
 {
-    .trainerName = _("Shelby"),
-    EXPERT_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    SHELBY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 45,
+        .lvl = REMATCH_5_LEVEL_2,
         .species = SPECIES_HARIYAMA,
         IVS(29),
         },
         {
-        .lvl = 45,
+        .lvl = REMATCH_5_LEVEL_2,
         .species = SPECIES_MEDICHAM,
         IVS(29),
         }
     },
 },
 
+#define SAWYER_INFO             \
+    .trainerName = _("Sawyer"), \
+    HIKER_INFO,                 \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY
+
 [TRAINER_SAWYER_1] =
 {
-    .trainerName = _("Sawyer"),
-    HIKER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    SAWYER_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -8978,18 +8955,16 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_SAWYER_2] =
 {
-    .trainerName = _("Sawyer"),
-    HIKER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    SAWYER_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 34,
+        .lvl = REMATCH_2_LEVEL_2,
         .species = SPECIES_NUMEL,
         IVS(1),
         },
         {
-        .lvl = 34,
+        .lvl = REMATCH_2_LEVEL_2,
         .species = SPECIES_GEODUDE,
         IVS(1),
         }
@@ -8998,9 +8973,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_SAWYER_3] =
 {
-    .trainerName = _("Sawyer"),
-    HIKER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    SAWYER_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -9023,23 +8996,21 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_SAWYER_4] =
 {
-    .trainerName = _("Sawyer"),
-    HIKER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    SAWYER_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 40,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_MACHOKE,
         IVS(3),
         },
         {
-        .lvl = 40,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_CAMERUPT,
         IVS(3),
         },
         {
-        .lvl = 40,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_GOLEM,
         IVS(3),
         }
@@ -9048,23 +9019,21 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_SAWYER_5] =
 {
-    .trainerName = _("Sawyer"),
-    HIKER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    SAWYER_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_MACHAMP,
         IVS(4),
         },
         {
-        .lvl = 42,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_CAMERUPT,
         IVS(4),
         },
         {
-        .lvl = 42,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_GOLEM,
         IVS(4),
         }
@@ -9166,11 +9135,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
+#define DUSTY_INFO             \
+    .trainerName = _("Dusty"), \
+    RUIN_MANIAC_INFO,          \
+    MINI_BOSS_AI_FLAGS
+
 [TRAINER_DUSTY_1] =
 {
-    .trainerName = _("Dusty"),
-    RUIN_MANIAC_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    DUSTY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -9190,19 +9162,17 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_DUSTY_2] =
 {
-    .trainerName = _("Dusty"),
-    RUIN_MANIAC_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    DUSTY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 34,
+        .lvl = REMATCH_2_LEVEL_2,
         .species = SPECIES_SANDSLASH,
         IVS(7),
         .moves = {MOVE_BULLDOZE, MOVE_CRUSH_CLAW, MOVE_SAND_TOMB, MOVE_RAPID_SPIN}
         },
         {
-        .lvl = 34,
+        .lvl = REMATCH_2_LEVEL_2,
         .species = SPECIES_BALTOY,
         IVS(7),
         .moves = {MOVE_EARTH_POWER, MOVE_PSYBEAM, MOVE_ANCIENT_POWER, MOVE_COSMIC_POWER}
@@ -9212,9 +9182,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_DUSTY_3] =
 {
-    .trainerName = _("Dusty"),
-    RUIN_MANIAC_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    DUSTY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -9234,19 +9202,17 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_DUSTY_4] =
 {
-    .trainerName = _("Dusty"),
-    RUIN_MANIAC_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    DUSTY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = REMATCH_4_LEVEL_2,
         .species = SPECIES_SANDSLASH,
         IVS(9),
         .moves = {MOVE_BULLDOZE, MOVE_CRUSH_CLAW, MOVE_SAND_TOMB, MOVE_RAPID_SPIN}
         },
         {
-        .lvl = 42,
+        .lvl = REMATCH_4_LEVEL_2,
         .species = SPECIES_CLAYDOL,
         IVS(9),
         .moves = {MOVE_EARTH_POWER, MOVE_PSYBEAM, MOVE_ANCIENT_POWER, MOVE_COSMIC_POWER}
@@ -9256,25 +9222,23 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_DUSTY_5] =
 {
-    .trainerName = _("Dusty"),
-    RUIN_MANIAC_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    DUSTY_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 46,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_RELICANTH,
         IVS(10),
         .moves = {MOVE_AQUA_TAIL, MOVE_ROCK_TOMB, MOVE_TAKE_DOWN, MOVE_YAWN}
         },
         {
-        .lvl = 46,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_SANDSLASH,
         IVS(10),
         .moves = {MOVE_BULLDOZE, MOVE_CRUSH_CLAW, MOVE_SAND_TOMB, MOVE_RAPID_SPIN}
         },
         {
-        .lvl = 46,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_CLAYDOL,
         IVS(10),
         .moves = {MOVE_EARTH_POWER, MOVE_PSYBEAM, MOVE_ANCIENT_POWER, MOVE_COSMIC_POWER}
@@ -9569,11 +9533,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
+#define TIMOTHY_INFO             \
+    .trainerName = _("Timothy"), \
+    EXPERT_M_INFO,               \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY
+
 [TRAINER_TIMOTHY_1] =
 {
-    .trainerName = _("Timothy"),
-    EXPERT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    TIMOTHY_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -9586,9 +9553,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_TIMOTHY_2] =
 {
-    .trainerName = _("Timothy"),
-    EXPERT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    TIMOTHY_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -9602,9 +9567,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_TIMOTHY_3] =
 {
-    .trainerName = _("Timothy"),
-    EXPERT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    TIMOTHY_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -9618,13 +9581,11 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_TIMOTHY_4] =
 {
-    .trainerName = _("Timothy"),
-    EXPERT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    TIMOTHY_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = REMATCH_4_LEVEL_1,
         .species = SPECIES_HARIYAMA,
         IVS(27),
         .moves = {MOVE_WAKE_UP_SLAP, MOVE_SMELLING_SALTS, MOVE_KNOCK_OFF, MOVE_BELLY_DRUM}
@@ -9634,13 +9595,11 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_TIMOTHY_5] =
 {
-    .trainerName = _("Timothy"),
-    EXPERT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    TIMOTHY_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 45,
+        .lvl = REMATCH_5_LEVEL_1,
         .species = SPECIES_HARIYAMA,
         IVS(29),
         .moves = {MOVE_WAKE_UP_SLAP, MOVE_SMELLING_SALTS, MOVE_KNOCK_OFF, MOVE_BELLY_DRUM}
@@ -9791,11 +9750,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
+#define ANDRES_INFO             \
+    .trainerName = _("Andres"), \
+    RUIN_MANIAC_INFO,           \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
+
 [TRAINER_ANDRES_1] =
 {
-    .trainerName = _("Andres"),
-    RUIN_MANIAC_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    ANDRES_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -9813,9 +9775,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_ANDRES_2] =
 {
-    .trainerName = _("Andres"),
-    RUIN_MANIAC_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    ANDRES_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -9833,9 +9793,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_ANDRES_3] =
 {
-    .trainerName = _("Andres"),
-    RUIN_MANIAC_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    ANDRES_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -9858,23 +9816,21 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_ANDRES_4] =
 {
-    .trainerName = _("Andres"),
-    RUIN_MANIAC_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    ANDRES_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 40,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_NOSEPASS,
         IVS(3),
         },
         {
-        .lvl = 40,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_CLAYDOL,
         IVS(3),
         },
         {
-        .lvl = 40,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_SANDSLASH,
         IVS(3),
         }
@@ -9883,23 +9839,21 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_ANDRES_5] =
 {
-    .trainerName = _("Andres"),
-    RUIN_MANIAC_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    ANDRES_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 43,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_NOSEPASS,
         IVS(4),
         },
         {
-        .lvl = 43,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_CLAYDOL,
         IVS(4),
         },
         {
-        .lvl = 43,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_SANDSLASH,
         IVS(4),
         }
@@ -9998,11 +9952,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
+#define TONY_INFO             \
+    .trainerName = _("Tony"), \
+    SWIMMER_M_INFO,           \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
+
 [TRAINER_TONY_1] =
 {
-    .trainerName = _("Tony"),
-    SWIMMER_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    TONY_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -10014,9 +9971,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_TONY_2] =
 {
-    .trainerName = _("Tony"),
-    SWIMMER_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    TONY_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -10029,9 +9984,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_TONY_3] =
 {
-    .trainerName = _("Tony"),
-    SWIMMER_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    TONY_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -10044,18 +9997,16 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_TONY_4] =
 {
-    .trainerName = _("Tony"),
-    SWIMMER_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    TONY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 39,
+        .lvl = REMATCH_4_LEVEL_2,
         .species = SPECIES_STARYU,
         IVS(3),
         },
         {
-        .lvl = 39,
+        .lvl = REMATCH_4_LEVEL_2,
         .species = SPECIES_SHARPEDO,
         IVS(3),
         }
@@ -10064,18 +10015,16 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_TONY_5] =
 {
-    .trainerName = _("Tony"),
-    SWIMMER_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    TONY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = REMATCH_5_LEVEL_2,
         .species = SPECIES_STARMIE,
         IVS(4),
         },
         {
-        .lvl = 42,
+        .lvl = REMATCH_5_LEVEL_2,
         .species = SPECIES_SHARPEDO,
         IVS(4),
         }
@@ -10226,11 +10175,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
+#define CORY_INFO             \
+    .trainerName = _("Cory"), \
+    SAILOR_INFO,              \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
+
 [TRAINER_CORY_1] =
 {
-    .trainerName = _("Cory"),
-    SAILOR_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    CORY_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -10250,9 +10202,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_CORY_2] =
 {
-    .trainerName = _("Cory"),
-    SAILOR_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    CORY_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -10275,9 +10225,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_CORY_3] =
 {
-    .trainerName = _("Cory"),
-    SAILOR_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    CORY_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -10300,23 +10248,21 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_CORY_4] =
 {
-    .trainerName = _("Cory"),
-    SAILOR_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    CORY_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 39,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_PELIPPER,
         IVS(3),
         },
         {
-        .lvl = 39,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_MACHOKE,
         IVS(3),
         },
         {
-        .lvl = 39,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_TENTACRUEL,
         IVS(3),
         }
@@ -10325,23 +10271,21 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_CORY_5] =
 {
-    .trainerName = _("Cory"),
-    SAILOR_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    CORY_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_PELIPPER,
         IVS(4),
         },
         {
-        .lvl = 42,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_MACHAMP,
         IVS(4),
         },
         {
-        .lvl = 42,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_TENTACRUEL,
         IVS(4),
         }
@@ -10363,11 +10307,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 },
 
 //Abandoned Ship
+#define THALIA_INFO             \
+    .trainerName = _("Thalia"), \
+    BEAUTY_INFO,                \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
+
 [TRAINER_THALIA_1] =
 {
-    .trainerName = _("Thalia"),
-    BEAUTY_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    THALIA_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -10383,9 +10330,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_THALIA_2] =
 {
-    .trainerName = _("Thalia"),
-    BEAUTY_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    THALIA_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -10403,9 +10348,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_THALIA_3] =
 {
-    .trainerName = _("Thalia"),
-    BEAUTY_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    THALIA_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -10428,23 +10371,21 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_THALIA_4] =
 {
-    .trainerName = _("Thalia"),
-    BEAUTY_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    THALIA_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 39,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_LUVDISC,
         IVS(3),
         },
         {
-        .lvl = 39,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_WAILMER,
         IVS(3),
         },
         {
-        .lvl = 39,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_SEADRA,
         IVS(3),
         }
@@ -10453,23 +10394,21 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_THALIA_5] =
 {
-    .trainerName = _("Thalia"),
-    BEAUTY_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    THALIA_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_LUVDISC,
         IVS(4),
         },
         {
-        .lvl = 41,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_WAILORD,
         IVS(4),
         },
         {
-        .lvl = 41,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_KINGDRA,
         IVS(4),
         }
@@ -10553,11 +10492,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
+#define KIRA_AND_DAN_INFO           \
+    .trainerName = _("Kira & Dan"), \
+    YOUNG_COUPLE_INFO,              \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
+
 [TRAINER_KIRA_AND_DAN_1] =
 {
-    .trainerName = _("Kira & Dan"),
-    YOUNG_COUPLE_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    KIRA_AND_DAN_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -10573,9 +10515,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_KIRA_AND_DAN_2] =
 {
-    .trainerName = _("Kira & Dan"),
-    YOUNG_COUPLE_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    KIRA_AND_DAN_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -10593,9 +10533,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_KIRA_AND_DAN_3] =
 {
-    .trainerName = _("Kira & Dan"),
-    YOUNG_COUPLE_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    KIRA_AND_DAN_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -10613,18 +10551,16 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_KIRA_AND_DAN_4] =
 {
-    .trainerName = _("Kira & Dan"),
-    YOUNG_COUPLE_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    KIRA_AND_DAN_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 39,
+        .lvl = REMATCH_4_LEVEL_2,
         .species = SPECIES_VOLBEAT,
         IVS(3),
         },
         {
-        .lvl = 39,
+        .lvl = REMATCH_4_LEVEL_2,
         .species = SPECIES_ILLUMISE,
         IVS(3),
         }
@@ -10633,18 +10569,16 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_KIRA_AND_DAN_5] =
 {
-    .trainerName = _("Kira & Dan"),
-    YOUNG_COUPLE_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    KIRA_AND_DAN_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = REMATCH_5_LEVEL_2,
         .species = SPECIES_VOLBEAT,
         IVS(4),
         },
         {
-        .lvl = 42,
+        .lvl = REMATCH_5_LEVEL_2,
         .species = SPECIES_ILLUMISE,
         IVS(4),
         }
@@ -11095,12 +11029,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
+#define CATHERINE_INFO             \
+    .trainerName = _("Catherine"), \
+    POKEMON_RANGER_F_INFO,         \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY
+
 [TRAINER_CATHERINE_1] =
 {
-    .trainerName = _("Catherine"),
-    POKEMON_RANGER_F_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
+    CATHERINE_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -11118,10 +11054,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_CATHERINE_2] =
 {
-    .trainerName = _("Catherine"),
-    POKEMON_RANGER_F_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
+    CATHERINE_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -11139,10 +11072,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_CATHERINE_3] =
 {
-    .trainerName = _("Catherine"),
-    POKEMON_RANGER_F_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    CATHERINE_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -11160,19 +11090,16 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_CATHERINE_4] =
 {
-    .trainerName = _("Catherine"),
-    POKEMON_RANGER_F_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
+    CATHERINE_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 39,
+        .lvl = REMATCH_4_LEVEL_2,
         .species = SPECIES_GLOOM,
         IVS(9),
         },
         {
-        .lvl = 39,
+        .lvl = REMATCH_4_LEVEL_2,
         .species = SPECIES_ROSELIA,
         IVS(9),
         }
@@ -11181,31 +11108,30 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_CATHERINE_5] =
 {
-    .trainerName = _("Catherine"),
-    POKEMON_RANGER_F_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    CATHERINE_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = REMATCH_5_LEVEL_2,
         .species = SPECIES_BELLOSSOM,
         IVS(10),
         },
         {
-        .lvl = 42,
+        .lvl = REMATCH_5_LEVEL_2,
         .species = SPECIES_ROSERADE,
         IVS(10),
         }
     },
 },
 
+#define JACKSON_INFO             \
+    .trainerName = _("Jackson"), \
+    POKEMON_RANGER_M_INFO,       \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY
+
 [TRAINER_JACKSON_1] =
 {
-    .trainerName = _("Jackson"),
-    POKEMON_RANGER_M_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    JACKSON_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -11223,10 +11149,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_JACKSON_2] =
 {
-    .trainerName = _("Jackson"),
-    POKEMON_RANGER_M_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
+    JACKSON_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -11244,10 +11167,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_JACKSON_3] =
 {
-    .trainerName = _("Jackson"),
-    POKEMON_RANGER_M_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    JACKSON_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -11270,24 +11190,21 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_JACKSON_4] =
 {
-    .trainerName = _("Jackson"),
-    POKEMON_RANGER_M_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
+    JACKSON_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 39,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_KECLEON,
         IVS(9),
         },
         {
-        .lvl = 39,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_SCEPTILE,
         IVS(9),
         },
         {
-        .lvl = 39,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_BRELOOM,
         IVS(9),
         }
@@ -11296,24 +11213,21 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_JACKSON_5] =
 {
-    .trainerName = _("Jackson"),
-    POKEMON_RANGER_M_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    JACKSON_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_KECLEON,
         IVS(10),
         },
         {
-        .lvl = 42,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_SCEPTILE,
         IVS(10),
         },
         {
-        .lvl = 42,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_BRELOOM,
         IVS(10),
         }
@@ -11406,7 +11320,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_WEATHER_INST_1] =
 {
     AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -11423,7 +11336,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_WEATHER_INST_2] =
 {
     AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -11440,7 +11352,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_WEATHER_INST_3] =
 {
     AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -11461,7 +11372,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_WEATHER_INST_4] =
 {
     AQUA_GRUNT_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -11474,7 +11384,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_WEATHER_INST_5] =
 {
     AQUA_GRUNT_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -11579,11 +11488,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
+#define ROBERT_INFO             \
+    .trainerName = _("Robert"), \
+    BIRD_KEEPER_INFO,           \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
+
 [TRAINER_ROBERT_1] =
 {
-    .trainerName = _("Robert"),
-    BIRD_KEEPER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    ROBERT_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -11595,9 +11507,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_ROBERT_2] =
 {
-    .trainerName = _("Robert"),
-    BIRD_KEEPER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    ROBERT_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -11615,9 +11525,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_ROBERT_3] =
 {
-    .trainerName = _("Robert"),
-    BIRD_KEEPER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    ROBERT_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -11635,18 +11543,16 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_ROBERT_4] =
 {
-    .trainerName = _("Robert"),
-    BIRD_KEEPER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    ROBERT_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = REMATCH_4_LEVEL_2,
         .species = SPECIES_XATU,
         IVS(3),
         },
         {
-        .lvl = 41,
+        .lvl = REMATCH_4_LEVEL_2,
         .species = SPECIES_ALTARIA,
         IVS(3),
         }
@@ -11655,23 +11561,21 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_ROBERT_5] =
 {
-    .trainerName = _("Robert"),
-    BIRD_KEEPER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    ROBERT_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 44,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_SWELLOW,
         IVS(4),
         },
         {
-        .lvl = 44,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_XATU,
         IVS(4),
         },
         {
-        .lvl = 44,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_ALTARIA,
         IVS(4),
         }
@@ -11909,7 +11813,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 {
     .trainerName = _("Jenna"),
     POKEMON_RANGER_F_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
@@ -11935,7 +11838,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 {
     .trainerName = _("Lorenzo"),
     POKEMON_RANGER_M_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
@@ -11957,11 +11859,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
+#define JEFFREY_INFO             \
+    .trainerName = _("Jeffrey"), \
+    BUG_MANIAC_INFO,             \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
+
 [TRAINER_JEFFREY_1] =
 {
-    .trainerName = _("Jeffrey"),
-    BUG_MANIAC_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    JEFFREY_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -11981,9 +11886,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_JEFFREY_2] =
 {
-    .trainerName = _("Jeffrey"),
-    BUG_MANIAC_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    JEFFREY_INFO,
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
@@ -12011,33 +11914,31 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_JEFFREY_3] =
 {
-    .trainerName = _("Jeffrey"),
-    BUG_MANIAC_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    JEFFREY_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_3_LEVEL_5,
+        .lvl = 37,
         .species = SPECIES_WURMPLE,
         IVS(3),
         },
         {
-        .lvl = REMATCH_3_LEVEL_5,
+        .lvl = 37,
         .species = SPECIES_SILCOON,
         IVS(3),
         },
         {
-        .lvl = REMATCH_3_LEVEL_5,
+        .lvl = 37,
         .species = SPECIES_HERACROSS,
         IVS(3),
         },
         {
-        .lvl = REMATCH_3_LEVEL_5,
+        .lvl = 37,
         .species = SPECIES_PINSIR,
         IVS(3),
         },
         {
-        .lvl = REMATCH_3_LEVEL_5,
+        .lvl = 37,
         .species = SPECIES_MASQUERAIN,
         IVS(3),
         }
@@ -12046,33 +11947,31 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_JEFFREY_4] =
 {
-    .trainerName = _("Jeffrey"),
-    BUG_MANIAC_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    JEFFREY_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 40,
+        .lvl = REMATCH_4_LEVEL_5,
         .species = SPECIES_CASCOON,
         IVS(3),
         },
         {
-        .lvl = 40,
+        .lvl = REMATCH_4_LEVEL_5,
         .species = SPECIES_SILCOON,
         IVS(3),
         },
         {
-        .lvl = 40,
+        .lvl = REMATCH_4_LEVEL_5,
         .species = SPECIES_HERACROSS,
         IVS(3),
         },
         {
-        .lvl = 40,
+        .lvl = REMATCH_4_LEVEL_5,
         .species = SPECIES_PINSIR,
         IVS(3),
         },
         {
-        .lvl = 40,
+        .lvl = REMATCH_4_LEVEL_5,
         .species = SPECIES_MASQUERAIN,
         IVS(3),
         }
@@ -12081,33 +11980,31 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_JEFFREY_5] =
 {
-    .trainerName = _("Jeffrey"),
-    BUG_MANIAC_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    JEFFREY_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 43,
+        .lvl = REMATCH_5_LEVEL_5,
         .species = SPECIES_DUSTOX,
         IVS(4),
         },
         {
-        .lvl = 43,
+        .lvl = REMATCH_5_LEVEL_5,
         .species = SPECIES_BEAUTIFLY,
         IVS(4),
         },
         {
-        .lvl = 43,
+        .lvl = REMATCH_5_LEVEL_5,
         .species = SPECIES_HERACROSS,
         IVS(4),
         },
         {
-        .lvl = 43,
+        .lvl = REMATCH_5_LEVEL_5,
         .species = SPECIES_PINSIR,
         IVS(4),
         },
         {
-        .lvl = 43,
+        .lvl = REMATCH_5_LEVEL_5,
         .species = SPECIES_MASQUERAIN,
         IVS(4),
         .heldItem = ITEM_SILVER_POWDER
@@ -12200,11 +12097,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
+#define JESSICA_INFO             \
+    .trainerName = _("Jessica"), \
+    BEAUTY_INFO,                 \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
+
 [TRAINER_JESSICA_1] =
 {
-    .trainerName = _("Jessica"),
-    BEAUTY_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    JESSICA_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -12222,9 +12122,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_JESSICA_2] =
 {
-    .trainerName = _("Jessica"),
-    BEAUTY_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    JESSICA_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -12244,19 +12142,17 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_JESSICA_3] =
 {
-    .trainerName = _("Jessica"),
-    BEAUTY_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    JESSICA_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_3_LEVEL_2,
+        .lvl = 39,
         .species = SPECIES_KECLEON,
         IVS(3),
         .moves = {MOVE_SLASH, MOVE_SHADOW_CLAW, MOVE_DETECT, MOVE_SCREECH}
         },
         {
-        .lvl = REMATCH_3_LEVEL_2,
+        .lvl = 39,
         .species = SPECIES_SEVIPER,
         IVS(3),
         .moves = {MOVE_POISON_JAB, MOVE_CRUNCH, MOVE_GLARE, MOVE_SWORDS_DANCE}
@@ -12266,19 +12162,17 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_JESSICA_4] =
 {
-    .trainerName = _("Jessica"),
-    BEAUTY_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    JESSICA_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = REMATCH_4_LEVEL_2,
         .species = SPECIES_KECLEON,
         IVS(3),
         .moves = {MOVE_SLASH, MOVE_SHADOW_CLAW, MOVE_DETECT, MOVE_SCREECH}
         },
         {
-        .lvl = 42,
+        .lvl = REMATCH_4_LEVEL_2,
         .species = SPECIES_SEVIPER,
         IVS(3),
         .moves = {MOVE_POISON_JAB, MOVE_CRUNCH, MOVE_GLARE, MOVE_SWORDS_DANCE}
@@ -12288,19 +12182,17 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_JESSICA_5] =
 {
-    .trainerName = _("Jessica"),
-    BEAUTY_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    JESSICA_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 45,
+        .lvl = REMATCH_5_LEVEL_2,
         .species = SPECIES_KECLEON,
         IVS(4),
         .moves = {MOVE_SLASH, MOVE_SHADOW_CLAW, MOVE_DETECT, MOVE_SCREECH}
         },
         {
-        .lvl = 45,
+        .lvl = REMATCH_5_LEVEL_2,
         .species = SPECIES_SEVIPER,
         IVS(4),
         .moves = {MOVE_POISON_JAB, MOVE_CRUNCH, MOVE_GLARE, MOVE_COIL}
@@ -12406,11 +12298,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
+#define WALTER_INFO             \
+    .trainerName = _("Walter"), \
+    GENTLEMAN_INFO,             \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
+
 [TRAINER_WALTER_1] =
 {
-    .trainerName = _("Walter"),
-    GENTLEMAN_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    WALTER_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -12422,9 +12317,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_WALTER_2] =
 {
-    .trainerName = _("Walter"),
-    GENTLEMAN_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    WALTER_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -12437,19 +12330,17 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_WALTER_3] =
 {
-    .trainerName = _("Walter"),
-    GENTLEMAN_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    WALTER_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_3_LEVEL_2,
+        .lvl = 39,
         .species = SPECIES_LINOONE,
         IVS(3),
         .moves = {MOVE_HEADBUTT, MOVE_PLAY_ROUGH, MOVE_PIN_MISSILE, MOVE_HONE_CLAWS}
         },
         {
-        .lvl = REMATCH_3_LEVEL_2,
+        .lvl = 39,
         .species = SPECIES_MANECTRIC,
         IVS(3),
         .moves = {MOVE_DISCHARGE, MOVE_BITE, MOVE_ODOR_SLEUTH, MOVE_ROAR}
@@ -12459,19 +12350,17 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_WALTER_4] =
 {
-    .trainerName = _("Walter"),
-    GENTLEMAN_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    WALTER_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = REMATCH_4_LEVEL_2,
         .species = SPECIES_LINOONE,
         IVS(3),
         .moves = {MOVE_HEADBUTT, MOVE_PLAY_ROUGH, MOVE_PIN_MISSILE, MOVE_BELLY_DRUM}
         },
         {
-        .lvl = 42,
+        .lvl = REMATCH_4_LEVEL_2,
         .species = SPECIES_MANECTRIC,
         IVS(3),
         .moves = {MOVE_DISCHARGE, MOVE_BITE, MOVE_CHARGE, MOVE_ROAR}
@@ -12481,25 +12370,23 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_WALTER_5] =
 {
-    .trainerName = _("Walter"),
-    GENTLEMAN_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    WALTER_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 45,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_LINOONE,
         IVS(4),
         .moves = {MOVE_HEADBUTT, MOVE_PLAY_ROUGH, MOVE_PIN_MISSILE, MOVE_BELLY_DRUM}
         },
         {
-        .lvl = 45,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_GOLDUCK,
         IVS(4),
         .moves = {MOVE_HYDRO_PUMP, MOVE_CONFUSION, MOVE_POWER_GEM, MOVE_AMNESIA}
         },
         {
-        .lvl = 45,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_MANECTRIC,
         IVS(4),
         .moves = {MOVE_DISCHARGE, MOVE_BITE, MOVE_CHARGE, MOVE_ROAR}
@@ -12542,12 +12429,15 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
+#define CRISTIN_INFO                                               \
+    .trainerName = _("Cristin"),                                   \
+    ACE_TRAINER_F_INFO,                                            \
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE}, \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY
+
 [TRAINER_CRISTIN_1] =
 {
-    .trainerName = _("Cristin"),
-    ACE_TRAINER_F_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    CRISTIN_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -12565,10 +12455,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_CRISTIN_2] =
 {
-    .trainerName = _("Cristin"),
-    ACE_TRAINER_F_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    CRISTIN_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -12586,24 +12473,21 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_CRISTIN_3] =
 {
-    .trainerName = _("Cristin"),
-    ACE_TRAINER_F_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    CRISTIN_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_3_LEVEL_3,
+        .lvl = 39,
         .species = SPECIES_SPINDA,
         IVS(14),
         },
         {
-        .lvl = REMATCH_3_LEVEL_3,
+        .lvl = 39,
         .species = SPECIES_LOUDRED,
         IVS(14),
         },
         {
-        .lvl = REMATCH_3_LEVEL_3,
+        .lvl = 39,
         .species = SPECIES_SLAKING,
         IVS(14),
         }
@@ -12612,24 +12496,21 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_CRISTIN_4] =
 {
-    .trainerName = _("Cristin"),
-    ACE_TRAINER_F_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    CRISTIN_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_SPINDA,
         IVS(15),
         },
         {
-        .lvl = 42,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_EXPLOUD,
         IVS(15),
         },
         {
-        .lvl = 42,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_SLAKING,
         IVS(12),
         }
@@ -12638,24 +12519,21 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_CRISTIN_5] =
 {
-    .trainerName = _("Cristin"),
-    ACE_TRAINER_F_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    CRISTIN_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 45,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_SPINDA,
         IVS(17),
         },
         {
-        .lvl = 45,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_EXPLOUD,
         IVS(17),
         },
         {
-        .lvl = 45,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_SLAKING,
         IVS(17),
         }
@@ -12823,32 +12701,32 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     GABRIELLE_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_3_LEVEL_6,
+        .lvl = 36,
         .species = SPECIES_SKITTY,
         IVS(3),
         },
         {
-        .lvl = REMATCH_3_LEVEL_6,
+        .lvl = 36,
         .species = SPECIES_MIGHTYENA,
         IVS(3),
         },
         {
-        .lvl = REMATCH_3_LEVEL_6,
+        .lvl = 36,
         .species = SPECIES_LINOONE,
         IVS(3),
         },
         {
-        .lvl = REMATCH_3_LEVEL_6,
+        .lvl = 36,
         .species = SPECIES_LOMBRE,
         IVS(3),
         },
         {
-        .lvl = REMATCH_3_LEVEL_6,
+        .lvl = 36,
         .species = SPECIES_NUZLEAF,
         IVS(3),
         },
         {
-        .lvl = REMATCH_3_LEVEL_6,
+        .lvl = 36,
         .species = SPECIES_TAILLOW,
         IVS(3),
         }
@@ -12860,32 +12738,32 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     GABRIELLE_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 38,
+        .lvl = REMATCH_4_LEVEL_6,
         .species = SPECIES_DELCATTY,
         IVS(3),
         },
         {
-        .lvl = 38,
+        .lvl = REMATCH_4_LEVEL_6,
         .species = SPECIES_MIGHTYENA,
         IVS(3),
         },
         {
-        .lvl = 38,
+        .lvl = REMATCH_4_LEVEL_6,
         .species = SPECIES_LINOONE,
         IVS(3),
         },
         {
-        .lvl = 38,
+        .lvl = REMATCH_4_LEVEL_6,
         .species = SPECIES_LOMBRE,
         IVS(3),
         },
         {
-        .lvl = 38,
+        .lvl = REMATCH_4_LEVEL_6,
         .species = SPECIES_NUZLEAF,
         IVS(3),
         },
         {
-        .lvl = 38,
+        .lvl = REMATCH_4_LEVEL_6,
         .species = SPECIES_SWELLOW,
         IVS(3),
         }
@@ -12897,32 +12775,32 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     GABRIELLE_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 40,
+        .lvl = REMATCH_5_LEVEL_6,
         .species = SPECIES_DELCATTY,
         IVS(4),
         },
         {
-        .lvl = 40,
+        .lvl = REMATCH_5_LEVEL_6,
         .species = SPECIES_MIGHTYENA,
         IVS(4),
         },
         {
-        .lvl = 40,
+        .lvl = REMATCH_5_LEVEL_6,
         .species = SPECIES_LINOONE,
         IVS(4),
         },
         {
-        .lvl = 40,
+        .lvl = REMATCH_5_LEVEL_6,
         .species = SPECIES_LUDICOLO,
         IVS(4),
         },
         {
-        .lvl = 40,
+        .lvl = REMATCH_5_LEVEL_6,
         .species = SPECIES_SHIFTRY,
         IVS(4),
         },
         {
-        .lvl = 40,
+        .lvl = REMATCH_5_LEVEL_6,
         .species = SPECIES_SWELLOW,
         IVS(4),
         }
@@ -12981,11 +12859,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
+#define VALERIE_INFO             \
+    .trainerName = _("Valerie"), \
+    HEX_MANIAC_INFO,             \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
+
 [TRAINER_VALERIE_1] =
 {
-    .trainerName = _("Valerie"),
-    HEX_MANIAC_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    VALERIE_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -12997,9 +12878,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_VALERIE_2] =
 {
-    .trainerName = _("Valerie"),
-    HEX_MANIAC_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    VALERIE_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -13022,23 +12901,21 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_VALERIE_3] =
 {
-    .trainerName = _("Valerie"),
-    HEX_MANIAC_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    VALERIE_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_3_LEVEL_3,
+        .lvl = 40,
         .species = SPECIES_DUSCLOPS,
         IVS(3),
         },
         {
-        .lvl = REMATCH_3_LEVEL_3,
+        .lvl = 40,
         .species = SPECIES_BANETTE,
         IVS(3),
         },
         {
-        .lvl = REMATCH_3_LEVEL_3,
+        .lvl = 40,
         .species = SPECIES_SABLEYE,
         IVS(3),
         }
@@ -13047,23 +12924,21 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_VALERIE_4] =
 {
-    .trainerName = _("Valerie"),
-    HEX_MANIAC_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    VALERIE_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_DUSCLOPS,
         IVS(3),
         },
         {
-        .lvl = 42,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_BANETTE,
         IVS(3),
         },
         {
-        .lvl = 42,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_SABLEYE,
         IVS(3),
         }
@@ -13072,23 +12947,21 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_VALERIE_5] =
 {
-    .trainerName = _("Valerie"),
-    HEX_MANIAC_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    VALERIE_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 44,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_DUSKNOIR,
         IVS(4),
         },
         {
-        .lvl = 44,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_BANETTE,
         IVS(4),
         },
         {
-        .lvl = 44,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_SABLEYE,
         IVS(4),
         }
@@ -13113,7 +12986,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_MT_PYRE_1] =
 {
     AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13126,7 +12998,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_MT_PYRE_2] =
 {
     AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13139,7 +13010,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_MT_PYRE_3] =
 {
     AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -13156,7 +13026,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_MT_PYRE_4] =
 {
     AQUA_GRUNT_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -13170,12 +13039,15 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
+#define CAMERON_INFO             \
+    .trainerName = _("Cameron"), \
+    PSYCHIC_M_INFO,              \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
+
 //Route 123 (east)
 [TRAINER_CAMERON_1] =
 {
-    .trainerName = _("Cameron"),
-    PSYCHIC_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    CAMERON_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -13191,9 +13063,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_CAMERON_2] =
 {
-    .trainerName = _("Cameron"),
-    PSYCHIC_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    CAMERON_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -13211,18 +13081,16 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_CAMERON_3] =
 {
-    .trainerName = _("Cameron"),
-    PSYCHIC_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    CAMERON_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_3_LEVEL_2,
+        .lvl = 41,
         .species = SPECIES_ALAKAZAM,
         IVS(3),
         },
         {
-        .lvl = REMATCH_3_LEVEL_2,
+        .lvl = 41,
         .species = SPECIES_SOLROCK,
         IVS(3),
         }
@@ -13231,18 +13099,16 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_CAMERON_4] =
 {
-    .trainerName = _("Cameron"),
-    PSYCHIC_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    CAMERON_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 43,
+        .lvl = REMATCH_4_LEVEL_2,
         .species = SPECIES_ALAKAZAM,
         IVS(3),
         },
         {
-        .lvl = 43,
+        .lvl = REMATCH_4_LEVEL_2,
         .species = SPECIES_SOLROCK,
         IVS(3),
         }
@@ -13251,18 +13117,16 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_CAMERON_5] =
 {
-    .trainerName = _("Cameron"),
-    PSYCHIC_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    CAMERON_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 45,
+        .lvl = REMATCH_5_LEVEL_2,
         .species = SPECIES_ALAKAZAM,
         IVS(4),
         },
         {
-        .lvl = 45,
+        .lvl = REMATCH_5_LEVEL_2,
         .species = SPECIES_SOLROCK,
         IVS(4),
         }
@@ -13405,11 +13269,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
+#define FERNANDO_INFO             \
+    .trainerName = _("Fernando"), \
+    GUITARIST_INFO,               \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
+
 [TRAINER_FERNANDO_1] =
 {
-    .trainerName = _("Fernando"),
-    GUITARIST_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    FERNANDO_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -13425,9 +13292,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_FERNANDO_2] =
 {
-    .trainerName = _("Fernando"),
-    GUITARIST_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    FERNANDO_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -13450,23 +13315,21 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_FERNANDO_3] =
 {
-    .trainerName = _("Fernando"),
-    GUITARIST_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    FERNANDO_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_3_LEVEL_3,
+        .lvl = 39,
         .species = SPECIES_ELECTRODE,
         IVS(3),
         },
         {
-        .lvl = REMATCH_3_LEVEL_3,
+        .lvl = 39,
         .species = SPECIES_MANECTRIC,
         IVS(3),
         },
         {
-        .lvl = REMATCH_3_LEVEL_3,
+        .lvl = 39,
         .species = SPECIES_LOUDRED,
         IVS(3),
         }
@@ -13475,23 +13338,21 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_FERNANDO_4] =
 {
-    .trainerName = _("Fernando"),
-    GUITARIST_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    FERNANDO_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_ELECTRODE,
         IVS(3),
         },
         {
-        .lvl = 41,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_MANECTRIC,
         IVS(3),
         },
         {
-        .lvl = 41,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_EXPLOUD,
         IVS(3),
         }
@@ -13500,23 +13361,21 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_FERNANDO_5] =
 {
-    .trainerName = _("Fernando"),
-    GUITARIST_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    FERNANDO_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 43,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_ELECTRODE,
         IVS(4),
         },
         {
-        .lvl = 43,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_MANECTRIC,
         IVS(4),
         },
         {
-        .lvl = 43,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_EXPLOUD,
         IVS(4),
         }
@@ -13541,11 +13400,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
+#define JACKI_INFO             \
+    .trainerName = _("Jacki"), \
+    PSYCHIC_F_INFO,            \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
+
 [TRAINER_JACKI_1] =
 {
-    .trainerName = _("Jacki"),
-    PSYCHIC_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    JACKI_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -13561,9 +13423,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_JACKI_2] =
 {
-    .trainerName = _("Jacki"),
-    PSYCHIC_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    JACKI_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -13581,18 +13441,16 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_JACKI_3] =
 {
-    .trainerName = _("Jacki"),
-    PSYCHIC_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    JACKI_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_3_LEVEL_2,
+        .lvl = 41,
         .species = SPECIES_ALAKAZAM,
         IVS(3),
         },
         {
-        .lvl = REMATCH_3_LEVEL_2,
+        .lvl = 41,
         .species = SPECIES_LUNATONE,
         IVS(3),
         }
@@ -13601,18 +13459,16 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_JACKI_4] =
 {
-    .trainerName = _("Jacki"),
-    PSYCHIC_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    JACKI_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 43,
+        .lvl = REMATCH_4_LEVEL_2,
         .species = SPECIES_ALAKAZAM,
         IVS(3),
         },
         {
-        .lvl = 43,
+        .lvl = REMATCH_4_LEVEL_2,
         .species = SPECIES_LUNATONE,
         IVS(3),
         }
@@ -13621,18 +13477,16 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_JACKI_5] =
 {
-    .trainerName = _("Jacki"),
-    PSYCHIC_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    JACKI_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 45,
+        .lvl = REMATCH_5_LEVEL_2,
         .species = SPECIES_ALAKAZAM,
         IVS(4),
         },
         {
-        .lvl = 45,
+        .lvl = REMATCH_5_LEVEL_2,
         .species = SPECIES_LUNATONE,
         IVS(4),
         }
@@ -13663,7 +13517,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_MAGMA_HIDEOUT_1] =
 {
     MAGMA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13676,7 +13529,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_MAGMA_HIDEOUT_2] =
 {
     MAGMA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13689,7 +13541,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_MAGMA_HIDEOUT_3] =
 {
     MAGMA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13702,7 +13553,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_MAGMA_HIDEOUT_4] =
 {
     MAGMA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -13719,7 +13569,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_MAGMA_HIDEOUT_5] =
 {
     MAGMA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -13736,7 +13585,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_MAGMA_HIDEOUT_6] =
 {
     MAGMA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13749,7 +13597,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_MAGMA_HIDEOUT_7] =
 {
     MAGMA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13762,7 +13609,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_MAGMA_HIDEOUT_8] =
 {
     MAGMA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13775,7 +13621,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_MAGMA_HIDEOUT_9] =
 {
     MAGMA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13788,7 +13633,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_MAGMA_HIDEOUT_10] =
 {
     MAGMA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13801,7 +13645,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_MAGMA_HIDEOUT_11] =
 {
     MAGMA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13814,7 +13657,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_MAGMA_HIDEOUT_12] =
 {
     MAGMA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13827,7 +13669,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_MAGMA_HIDEOUT_13] =
 {
     MAGMA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13840,7 +13681,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_MAGMA_HIDEOUT_14] =
 {
     MAGMA_GRUNT_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13853,7 +13693,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_MAGMA_HIDEOUT_15] =
 {
     MAGMA_GRUNT_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13866,7 +13705,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_MAGMA_HIDEOUT_16] =
 {
     MAGMA_GRUNT_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13941,7 +13779,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_AQUA_HIDEOUT_1] =
 {
     AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13954,7 +13791,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_AQUA_HIDEOUT_2] =
 {
     AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -13971,7 +13807,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_AQUA_HIDEOUT_3] =
 {
     AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13984,7 +13819,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_AQUA_HIDEOUT_4] =
 {
     AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13997,7 +13831,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_AQUA_HIDEOUT_5] =
 {
     AQUA_GRUNT_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -14010,7 +13843,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_AQUA_HIDEOUT_6] =
 {
     AQUA_GRUNT_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -14023,7 +13855,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_AQUA_HIDEOUT_7] =
 {
     AQUA_GRUNT_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -14040,7 +13871,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_AQUA_HIDEOUT_8] =
 {
     AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -14103,11 +13933,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
+#define LILA_AND_ROY_INFO           \
+    .trainerName = _("Lila & Roy"), \
+    SIS_AND_BRO_INFO,               \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
+
 [TRAINER_LILA_AND_ROY_1] =
 {
-    .trainerName = _("Lila & Roy"),
-    SIS_AND_BRO_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    LILA_AND_ROY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -14123,9 +13956,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_LILA_AND_ROY_2] =
 {
-    .trainerName = _("Lila & Roy"),
-    SIS_AND_BRO_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    LILA_AND_ROY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -14141,9 +13972,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_LILA_AND_ROY_3] =
 {
-    .trainerName = _("Lila & Roy"),
-    SIS_AND_BRO_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    LILA_AND_ROY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -14159,17 +13988,15 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_LILA_AND_ROY_4] =
 {
-    .trainerName = _("Lila & Roy"),
-    SIS_AND_BRO_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    LILA_AND_ROY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 48,
+        .lvl = REMATCH_4_LEVEL_1,
         .species = SPECIES_LANTURN,
         },
         {
-        .lvl = 46,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_SEADRA,
         }
     },
@@ -14177,17 +14004,15 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_LILA_AND_ROY_5] =
 {
-    .trainerName = _("Lila & Roy"),
-    SIS_AND_BRO_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    LILA_AND_ROY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 51,
+        .lvl = REMATCH_5_LEVEL_1,
         .species = SPECIES_LANTURN,
         },
         {
-        .lvl = 49,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_KINGDRA,
         }
     },
@@ -14211,11 +14036,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
+#define JENNY_INFO             \
+    .trainerName = _("Jenny"), \
+    SWIMMER_F_INFO,            \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
+
 [TRAINER_JENNY_1] =
 {
-    .trainerName = _("Jenny"),
-    SWIMMER_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    JENNY_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -14227,9 +14055,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_JENNY_2] =
 {
-    .trainerName = _("Jenny"),
-    SWIMMER_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    JENNY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -14245,9 +14071,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_JENNY_3] =
 {
-    .trainerName = _("Jenny"),
-    SWIMMER_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    JENNY_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -14267,21 +14091,19 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_JENNY_4] =
 {
-    .trainerName = _("Jenny"),
-    SWIMMER_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    JENNY_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 44,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_LUVDISC,
         },
         {
-        .lvl = 44,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_STARYU,
         },
         {
-        .lvl = 44,
+        .lvl = REMATCH_4_LEVEL_3,
         .species = SPECIES_WAILORD,
         }
     },
@@ -14289,21 +14111,19 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_JENNY_5] =
 {
-    .trainerName = _("Jenny"),
-    SWIMMER_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    JENNY_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 45,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_LUVDISC,
         },
         {
-        .lvl = 45,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_STARMIE,
         },
         {
-        .lvl = 45,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_WAILORD,
         }
     },
@@ -14356,11 +14176,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 },
 
 //Route 125
+#define ERNEST_INFO             \
+    .trainerName = _("Ernest"), \
+    SAILOR_INFO,                \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
+
 [TRAINER_ERNEST_1] =
 {
-    .trainerName = _("Ernest"),
-    SAILOR_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    ERNEST_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -14380,9 +14203,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_ERNEST_2] =
 {
-    .trainerName = _("Ernest"),
-    SAILOR_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    ERNEST_INFO,
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
@@ -14410,9 +14231,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_ERNEST_3] =
 {
-    .trainerName = _("Ernest"),
-    SAILOR_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    ERNEST_INFO,
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
@@ -14440,28 +14259,26 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_ERNEST_4] =
 {
-    .trainerName = _("Ernest"),
-    SAILOR_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    ERNEST_INFO,
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 44,
+        .lvl = REMATCH_4_LEVEL_4,
         .species = SPECIES_TENTACRUEL,
         IVS(3),
         },
         {
-        .lvl = 44,
+        .lvl = REMATCH_4_LEVEL_4,
         .species = SPECIES_PELIPPER,
         IVS(3),
         },
         {
-        .lvl = 44,
+        .lvl = REMATCH_4_LEVEL_4,
         .species = SPECIES_WAILORD,
         IVS(3),
         },
         {
-        .lvl = 44,
+        .lvl = REMATCH_4_LEVEL_4,
         .species = SPECIES_MACHOKE,
         IVS(3),
         }
@@ -14470,28 +14287,26 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_ERNEST_5] =
 {
-    .trainerName = _("Ernest"),
-    SAILOR_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    ERNEST_INFO,
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 46,
+        .lvl = REMATCH_5_LEVEL_4,
         .species = SPECIES_TENTACRUEL,
         IVS(4),
         },
         {
-        .lvl = 46,
+        .lvl = REMATCH_5_LEVEL_4,
         .species = SPECIES_PELIPPER,
         IVS(4),
         },
         {
-        .lvl = 46,
+        .lvl = REMATCH_5_LEVEL_4,
         .species = SPECIES_WAILORD,
         IVS(4),
         },
         {
-        .lvl = 46,
+        .lvl = REMATCH_5_LEVEL_4,
         .species = SPECIES_MACHAMP,
         IVS(4),
         }
@@ -14792,7 +14607,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_SPACE_CENTER_1] =
 {
     MAGMA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -14805,7 +14619,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_SPACE_CENTER_2] =
 {
     MAGMA_GRUNT_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -14822,7 +14635,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_SPACE_CENTER_3] =
 {
     MAGMA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -14835,7 +14647,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_SPACE_CENTER_4] =
 {
     MAGMA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -14848,7 +14659,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_SPACE_CENTER_5] =
 {
     MAGMA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -14861,7 +14671,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_SPACE_CENTER_6] =
 {
     MAGMA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -14953,7 +14762,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 {
     .trainerName = _("Sophia"),
     POKEMON_RANGER_F_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
@@ -14974,7 +14782,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 {
     .trainerName = _("Sebastian"),
     POKEMON_RANGER_M_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
@@ -15130,11 +14937,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
+#define KOJI_INFO             \
+    .trainerName = _("Koji"), \
+    BLACK_BELT_INFO,          \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
+
 [TRAINER_KOJI_1] =
 {
-    .trainerName = _("Koji"),
-    BLACK_BELT_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    KOJI_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -15146,9 +14956,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_KOJI_2] =
 {
-    .trainerName = _("Koji"),
-    BLACK_BELT_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    KOJI_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -15166,9 +14974,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_KOJI_3] =
 {
-    .trainerName = _("Koji"),
-    BLACK_BELT_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    KOJI_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -15191,9 +14997,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_KOJI_4] =
 {
-    .trainerName = _("Koji"),
-    BLACK_BELT_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    KOJI_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -15216,23 +15020,21 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_KOJI_5] =
 {
-    .trainerName = _("Koji"),
-    BLACK_BELT_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    KOJI_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 50,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_HARIYAMA,
         IVS(4),
         },
         {
-        .lvl = 50,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_MACHAMP,
         IVS(4),
         },
         {
-        .lvl = 50,
+        .lvl = REMATCH_5_LEVEL_3,
         .species = SPECIES_MEDICHAM,
         IVS(4),
         }
@@ -15322,11 +15124,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
+#define ISAIAH_INFO             \
+    .trainerName = _("Isaiah"), \
+    TRIATHLETE_M_SWIMMING_INFO, \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
+
 [TRAINER_ISAIAH_1] =
 {
-    .trainerName = _("Isaiah"),
-    TRIATHLETE_M_SWIMMING_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    ISAIAH_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -15338,9 +15143,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_ISAIAH_2] =
 {
-    .trainerName = _("Isaiah"),
-    TRIATHLETE_M_SWIMMING_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    ISAIAH_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -15352,9 +15155,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_ISAIAH_3] =
 {
-    .trainerName = _("Isaiah"),
-    TRIATHLETE_M_SWIMMING_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    ISAIAH_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -15366,9 +15167,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_ISAIAH_4] =
 {
-    .trainerName = _("Isaiah"),
-    TRIATHLETE_M_SWIMMING_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    ISAIAH_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -15380,23 +15179,24 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_ISAIAH_5] =
 {
-    .trainerName = _("Isaiah"),
-    TRIATHLETE_M_SWIMMING_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    ISAIAH_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        TRIATHLETE_MON(50, 4),
+        TRIATHLETE_MON(REMATCH_5_LEVEL_1, 4),
         .species = SPECIES_LANTURN,
         }
     },
 },
 
+#define KATELYN_INFO             \
+    .trainerName = _("Katelyn"), \
+    TRIATHLETE_F_SWIMMING_INFO,  \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
+
 [TRAINER_KATELYN_1] =
 {
-    .trainerName = _("Katelyn"),
-    TRIATHLETE_F_SWIMMING_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    KATELYN_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -15408,9 +15208,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_KATELYN_2] =
 {
-    .trainerName = _("Katelyn"),
-    TRIATHLETE_F_SWIMMING_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    KATELYN_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -15423,9 +15221,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_KATELYN_3] =
 {
-    .trainerName = _("Katelyn"),
-    TRIATHLETE_F_SWIMMING_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    KATELYN_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -15438,9 +15234,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_KATELYN_4] =
 {
-    .trainerName = _("Katelyn"),
-    TRIATHLETE_F_SWIMMING_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    KATELYN_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -15453,13 +15247,11 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_KATELYN_5] =
 {
-    .trainerName = _("Katelyn"),
-    TRIATHLETE_F_SWIMMING_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    KATELYN_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 50,
+        .lvl = REMATCH_5_LEVEL_1,
         .species = SPECIES_STARMIE,
         IVS(4),
         }
@@ -15498,7 +15290,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_SEAFLOOR_CAVERN_1] =
 {
     AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -15511,7 +15302,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_SEAFLOOR_CAVERN_2] =
 {
     AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -15524,7 +15314,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_SEAFLOOR_CAVERN_3] =
 {
     AQUA_GRUNT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -15537,7 +15326,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_SEAFLOOR_CAVERN_4] =
 {
     AQUA_GRUNT_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -15623,6 +15411,227 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 },
 
 //Route 126
+[TRAINER_LEONARDO] =
+{
+    .trainerName = _("Leonardo"),
+    SWIMMER_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_SHARPEDO,
+        }
+    },
+},
+
+[TRAINER_ISOBEL] =
+{
+    .trainerName = _("Isobel"),
+    TRIATHLETE_F_SWIMMING_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        TRIATHLETE_MON(42, 0),
+        .species = SPECIES_STARMIE,
+        }
+    },
+},
+
+[TRAINER_DEAN] =
+{
+    .trainerName = _("Dean"),
+    SWIMMER_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 40,
+        .species = SPECIES_TENTACRUEL,
+        },
+        {
+        .lvl = 40,
+        .species = SPECIES_PELIPPER,
+        },
+        {
+        .lvl = 40,
+        .species = SPECIES_SHARPEDO,
+        }
+    },
+},
+
+[TRAINER_NIKKI] =
+{
+    .trainerName = _("Nikki"),
+    SWIMMER_F_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 41,
+        .species = SPECIES_AZUMARILL,
+        },
+        {
+        .lvl = 41,
+        .species = SPECIES_SEALEO,
+        }
+    },
+},
+
+[TRAINER_BARRY] =
+{
+    .trainerName = _("Barry"),
+    SWIMMER_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_GYARADOS,
+        }
+    },
+},
+
+[TRAINER_SIENNA] =
+{
+    .trainerName = _("Sienna"),
+    SWIMMER_F_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 41,
+        .species = SPECIES_CORSOLA,
+        },
+        {
+        .lvl = 41,
+        .species = SPECIES_LUVDISC,
+        }
+    },
+},
+
+#define PABLO_INFO              \
+    .trainerName = _("Pablo"),  \
+    TRIATHLETE_M_SWIMMING_INFO, \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
+
+[TRAINER_PABLO_1] =
+{
+    PABLO_INFO,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        TRIATHLETE_MON(41, 0),
+        .species = SPECIES_CORPHISH,
+        },
+        {
+        TRIATHLETE_MON(41, 0),
+        .species = SPECIES_STARYU,
+        }
+    },
+},
+
+[TRAINER_PABLO_2] =
+{
+    PABLO_INFO,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 43,
+        .species = SPECIES_CRAWDAUNT,
+        IVS(1),
+        },
+        {
+        .lvl = 43,
+        .species = SPECIES_STARMIE,
+        IVS(1),
+        }
+    },
+},
+
+[TRAINER_PABLO_3] =
+{
+    PABLO_INFO,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 45,
+        .species = SPECIES_PELIPPER,
+        IVS(2),
+        },
+        {
+        .lvl = 45,
+        .species = SPECIES_CRAWDAUNT,
+        IVS(2),
+        },
+        {
+        .lvl = 45,
+        .species = SPECIES_STARMIE,
+        IVS(2),
+        }
+    },
+},
+
+[TRAINER_PABLO_4] =
+{
+    PABLO_INFO,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 47,
+        .species = SPECIES_PELIPPER,
+        IVS(3),
+        },
+        {
+        .lvl = 47,
+        .species = SPECIES_CRAWDAUNT,
+        IVS(3),
+        },
+        {
+        .lvl = 47,
+        .species = SPECIES_STARMIE,
+        IVS(3),
+        }
+    },
+},
+
+[TRAINER_PABLO_5] =
+{
+    PABLO_INFO,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 49,
+        .species = SPECIES_PELIPPER,
+        IVS(4),
+        },
+        {
+        .lvl = 49,
+        .species = SPECIES_CRAWDAUNT,
+        IVS(4),
+        },
+        {
+        .lvl = 49,
+        .species = SPECIES_STARMIE,
+        IVS(4),
+        }
+    },
+},
+
+[TRAINER_BRENDA] =
+{
+    .trainerName = _("Brenda"),
+    SWIMMER_F_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_SEAKING,
+        }
+    },
+},
 
 //Route 129
 
@@ -15982,11 +15991,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 },
 
 //Meteor Falls
+#define JOHN_AND_JAY_INFO           \
+    .trainerName = _("John & Jay"), \
+    OLD_COUPLE_INFO,                \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY
+
 [TRAINER_JOHN_AND_JAY_1] =
 {
-    .trainerName = _("John & Jay"),
-    OLD_COUPLE_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    JOHN_AND_JAY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -16006,9 +16018,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_JOHN_AND_JAY_2] =
 {
-    .trainerName = _("John & Jay"),
-    OLD_COUPLE_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    JOHN_AND_JAY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -16028,9 +16038,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_JOHN_AND_JAY_3] =
 {
-    .trainerName = _("John & Jay"),
-    OLD_COUPLE_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    JOHN_AND_JAY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -16050,9 +16058,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_JOHN_AND_JAY_4] =
 {
-    .trainerName = _("John & Jay"),
-    OLD_COUPLE_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
+    JOHN_AND_JAY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -16072,9 +16078,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_JOHN_AND_JAY_5] =
 {
-    .trainerName = _("John & Jay"),
-    OLD_COUPLE_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    JOHN_AND_JAY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -16092,11 +16096,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
+#define NICOLAS_INFO             \
+    .trainerName = _("Nicolas"), \
+    DRAGON_TAMER_INFO,           \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
+
 [TRAINER_NICOLAS_1] =
 {
-    .trainerName = _("Nicolas"),
-    DRAGON_TAMER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    NICOLAS_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -16114,9 +16121,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_NICOLAS_2] =
 {
-    .trainerName = _("Nicolas"),
-    DRAGON_TAMER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    NICOLAS_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -16134,9 +16139,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_NICOLAS_3] =
 {
-    .trainerName = _("Nicolas"),
-    DRAGON_TAMER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    NICOLAS_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -16154,9 +16157,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_NICOLAS_4] =
 {
-    .trainerName = _("Nicolas"),
-    DRAGON_TAMER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    NICOLAS_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -16179,9 +16180,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_NICOLAS_5] =
 {
-    .trainerName = _("Nicolas"),
-    DRAGON_TAMER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    NICOLAS_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -16739,42 +16738,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
-[TRAINER_BARRY] =
-{
-    .trainerName = _("Barry"),
-    SWIMMER_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_GYARADOS,
-        }
-    },
-},
-
-[TRAINER_DEAN] =
-{
-    .trainerName = _("Dean"),
-    SWIMMER_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 40,
-        .species = SPECIES_TENTACRUEL,
-        },
-        {
-        .lvl = 40,
-        .species = SPECIES_PELIPPER,
-        },
-        {
-        .lvl = 40,
-        .species = SPECIES_SHARPEDO,
-        }
-    },
-},
-
 [TRAINER_RICHARD] =
 {
     .trainerName = _("Richard"),
@@ -17018,20 +16981,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
-[TRAINER_ISOBEL] =
-{
-    .trainerName = _("Isobel"),
-    TRIATHLETE_F_SWIMMING_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        TRIATHLETE_MON(42, 0),
-        .species = SPECIES_STARMIE,
-        }
-    },
-},
-
 [TRAINER_TALIA] =
 {
     .trainerName = _("Talia"),
@@ -17134,38 +17083,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     },
 },
 
-[TRAINER_NIKKI] =
-{
-    .trainerName = _("Nikki"),
-    SWIMMER_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 41,
-        .species = SPECIES_AZUMARILL,
-        },
-        {
-        .lvl = 41,
-        .species = SPECIES_SEALEO,
-        }
-    },
-},
-
-[TRAINER_BRENDA] =
-{
-    .trainerName = _("Brenda"),
-    SWIMMER_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_SEAKING,
-        }
-    },
-},
-
 [TRAINER_SUSIE] =
 {
     .trainerName = _("Susie"),
@@ -17204,24 +17121,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
         {
         .lvl = 42,
         .species = SPECIES_AZUMARILL,
-        }
-    },
-},
-
-[TRAINER_SIENNA] =
-{
-    .trainerName = _("Sienna"),
-    SWIMMER_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 41,
-        .species = SPECIES_CORSOLA,
-        },
-        {
-        .lvl = 41,
-        .species = SPECIES_LUVDISC,
         }
     },
 },
@@ -17420,20 +17319,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
         {
         .lvl = 46,
         .species = SPECIES_ABSOL,
-        }
-    },
-},
-
-[TRAINER_LEONARDO] =
-{
-    .trainerName = _("Leonardo"),
-    SWIMMER_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_SHARPEDO,
         }
     },
 },
@@ -17761,119 +17646,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
         .lvl = 70,
         .species = SPECIES_REGIGIGAS,
         PERFECT_IVS,
-        }
-    },
-},
-
-[TRAINER_PABLO_1] =
-{
-    .trainerName = _("Pablo"),
-    TRIATHLETE_M_SWIMMING_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        TRIATHLETE_MON(41, 0),
-        .species = SPECIES_CORPHISH,
-        },
-        {
-        TRIATHLETE_MON(41, 0),
-        .species = SPECIES_STARYU,
-        }
-    },
-},
-
-[TRAINER_PABLO_2] =
-{
-    .trainerName = _("Pablo"),
-    TRIATHLETE_M_SWIMMING_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 43,
-        .species = SPECIES_CRAWDAUNT,
-        IVS(1),
-        },
-        {
-        .lvl = 43,
-        .species = SPECIES_STARMIE,
-        IVS(1),
-        }
-    },
-},
-
-[TRAINER_PABLO_3] =
-{
-    .trainerName = _("Pablo"),
-    TRIATHLETE_M_SWIMMING_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 45,
-        .species = SPECIES_PELIPPER,
-        IVS(2),
-        },
-        {
-        .lvl = 45,
-        .species = SPECIES_CRAWDAUNT,
-        IVS(2),
-        },
-        {
-        .lvl = 45,
-        .species = SPECIES_STARMIE,
-        IVS(2),
-        }
-    },
-},
-
-[TRAINER_PABLO_4] =
-{
-    .trainerName = _("Pablo"),
-    TRIATHLETE_M_SWIMMING_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 47,
-        .species = SPECIES_PELIPPER,
-        IVS(3),
-        },
-        {
-        .lvl = 47,
-        .species = SPECIES_CRAWDAUNT,
-        IVS(3),
-        },
-        {
-        .lvl = 47,
-        .species = SPECIES_STARMIE,
-        IVS(3),
-        }
-    },
-},
-
-[TRAINER_PABLO_5] =
-{
-    .trainerName = _("Pablo"),
-    TRIATHLETE_M_SWIMMING_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 49,
-        .species = SPECIES_PELIPPER,
-        IVS(4),
-        },
-        {
-        .lvl = 49,
-        .species = SPECIES_CRAWDAUNT,
-        IVS(4),
-        },
-        {
-        .lvl = 49,
-        .species = SPECIES_STARMIE,
-        IVS(4),
         }
     },
 },

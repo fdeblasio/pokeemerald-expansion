@@ -460,6 +460,12 @@
     .ability = ABILITY_NATURAL_CURE,                                                           \
     .gender = TRAINER_MON_FEMALE
 
+#define WALLY_SWABLU(Level)                                   \
+    .lvl = Level,                                             \
+    .species = Level < 35 ? SPECIES_SWABLU : SPECIES_ALTARIA, \
+    .ability = ABILITY_NATURAL_CURE,                          \
+    .gender = TRAINER_MON_MALE
+
 [TRAINER_WALLY_MAUVILLE] =
 {
     WALLY_INFO,
@@ -486,6 +492,25 @@
     },
 },
 
+[TRAINER_WALLY_ROUTE_114] =
+{
+    WALLY_INFO,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        WALLY_SWABLU(24),
+        IVS(6),
+        },
+        {
+        WALLY_BUDEW(24),
+        IVS(6),
+        },
+        {
+        RALPH(26),
+        }
+    },
+},
+
 [TRAINER_WALLY_VR_1] =
 {
     WALLY_INFO,
@@ -501,19 +526,16 @@
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = 47,
+        .lvl = 46,
         .species = SPECIES_MAGNEZONE,
         .ability = ABILITY_ANALYTIC,
         IVS(18),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_METAL_SOUND},
         },
         {
-        .lvl = 46,
-        .species = SPECIES_ALTARIA,
-        .ability = ABILITY_NATURAL_CURE,
+        WALLY_SWABLU(47),
         IVS(18),
         .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
-        .gender = TRAINER_MON_MALE,
         },
         {
         WALLY_BUDEW(47),
@@ -17723,4 +17745,3 @@ UNUSED_TRAINER(1),
 UNUSED_TRAINER(2),
 UNUSED_TRAINER(3),
 UNUSED_TRAINER(4),
-UNUSED_TRAINER(5),

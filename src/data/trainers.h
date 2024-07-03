@@ -15634,6 +15634,87 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 },
 
 //Route 129
+[DIFFICULTY_NORMAL][TRAINER_REED] =
+{
+    .trainerName = _("Reed"),
+    SWIMMER_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 41,
+        .species = SPECIES_SEALEO,
+        },
+        {
+        .lvl = 41,
+        .species = SPECIES_SHARPEDO,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_CHASE] =
+{
+    .trainerName = _("Chase"),
+    TRIATHLETE_M_SWIMMING_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        TRIATHLETE_MON(41, 0),
+        .species = SPECIES_STARMIE,
+        },
+        {
+        TRIATHLETE_MON(41, 0),
+        .species = SPECIES_PELIPPER,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_ALLISON] =
+{
+    .trainerName = _("Allison"),
+    TRIATHLETE_F_SWIMMING_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        TRIATHLETE_MON(41, 0),
+        .species = SPECIES_PELIPPER,
+        },
+        {
+        TRIATHLETE_MON(41, 0),
+        .species = SPECIES_STARMIE,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_CLARENCE] =
+{
+    .trainerName = _("Clarence"),
+    SWIMMER_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_SHARPEDO,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_TISHA] =
+{
+    .trainerName = _("Tisha"),
+    SWIMMER_F_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_LANTURN,
+        }
+    },
+},
 
 //Route 130
 [DIFFICULTY_NORMAL][TRAINER_RODNEY] =
@@ -15687,12 +15768,545 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 },
 
 //Route 131
+[DIFFICULTY_NORMAL][TRAINER_KEVIN] =
+{
+    .trainerName = _("Kevin"),
+    SWIMMER_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_SEALEO,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_TALIA] =
+{
+    .trainerName = _("Talia"),
+    TRIATHLETE_F_SWIMMING_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        TRIATHLETE_MON(42, 0),
+        .species = SPECIES_STARMIE,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_RICHARD] =
+{
+    .trainerName = _("Richard"),
+    SWIMMER_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_PELIPPER,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_KARA] =
+{
+    .trainerName = _("Kara"),
+    SWIMMER_F_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_SEAKING,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_HERMAN] =
+{
+    .trainerName = _("Herman"),
+    SWIMMER_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 41,
+        .species = SPECIES_PELIPPER,
+        },
+        {
+        .lvl = 41,
+        .species = SPECIES_TENTACRUEL,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_SUSIE] =
+{
+    .trainerName = _("Susie"),
+    SWIMMER_F_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_LUVDISC,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_RELI_AND_IAN] =
+{
+    .trainerName = _("Reli & Ian"),
+    SIS_AND_BRO_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_AZUMARILL,
+        },
+        {
+        .lvl = 40,
+        .species = SPECIES_PELIPPER,
+        }
+    },
+},
 
 //Route 132
+[DIFFICULTY_NORMAL][TRAINER_GILBERT] =
+{
+    .trainerName = _("Gilbert"),
+    SWIMMER_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_SHARPEDO,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_DANA] =
+{
+    .trainerName = _("Dana"),
+    SWIMMER_F_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_AZUMARILL,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_RONALD] =
+{
+    .trainerName = _("Ronald"),
+    FISHERMAN_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 6,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 37,
+        .species = SPECIES_GYARADOS,
+        },
+        {
+        .lvl = 37,
+        .species = SPECIES_GYARADOS,
+        },
+        {
+        .lvl = 37,
+        .species = SPECIES_GYARADOS,
+        },
+        {
+        .lvl = 37,
+        .species = SPECIES_GYARADOS,
+        },
+        {
+        .lvl = 37,
+        .species = SPECIES_GYARADOS,
+        },
+        {
+        .lvl = 37,
+        .species = SPECIES_GYARADOS,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_KIYO] =
+{
+    .trainerName = _("Kiyo"),
+    BLACK_BELT_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_HARIYAMA,
+        IVS(12),
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_PAXTON] =
+{
+    .trainerName = _("Paxton"),
+    EXPERT_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 41,
+        .species = SPECIES_SWELLOW,
+        },
+        {
+        .lvl = 41,
+        .species = SPECIES_BRELOOM,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_DARCY] =
+{
+    .trainerName = _("Darcy"),
+    ACE_TRAINER_F_INFO,
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 41,
+        .species = SPECIES_PELIPPER,
+        },
+        {
+        .lvl = 41,
+        .species = SPECIES_CAMERUPT,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_MAKAYLA] =
+{
+    .trainerName = _("Makayla"),
+    EXPERT_F_INFO,
+    .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 41,
+        .species = SPECIES_ROSELIA,
+        },
+        {
+        .lvl = 41,
+        .species = SPECIES_MEDICHAM,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_JONATHAN] =
+{
+    .trainerName = _("Jonathan"),
+    ACE_TRAINER_M_INFO,
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 41,
+        .species = SPECIES_KECLEON,
+        },
+        {
+        .lvl = 41,
+        .species = SPECIES_EXPLOUD,
+        }
+    },
+},
 
 //Route 133
+[DIFFICULTY_NORMAL][TRAINER_LINDA] =
+{
+    .trainerName = _("Linda"),
+    SWIMMER_F_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 41,
+        .species = SPECIES_CORSOLA,
+        },
+        {
+        .lvl = 41,
+        .species = SPECIES_SEADRA,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_BECK] =
+{
+    .trainerName = _("Beck"),
+    BIRD_KEEPER_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_TROPIUS,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_CONOR] =
+{
+    .trainerName = _("Conor"),
+    EXPERT_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 41,
+        .species = SPECIES_LANTURN,
+        },
+        {
+        .lvl = 41,
+        .species = SPECIES_HARIYAMA,
+        IVS(24),
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_MOLLIE] =
+{
+    .trainerName = _("Mollie"),
+    EXPERT_F_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 41,
+        .species = SPECIES_WHISCASH,
+        },
+        {
+        .lvl = 41,
+        .species = SPECIES_MEDICHAM,
+        IVS(24),
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_WARREN] =
+{
+    .trainerName = _("Warren"),
+    ACE_TRAINER_M_INFO,
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 41,
+        .species = SPECIES_GOLEM,
+        IVS(12),
+        },
+        {
+        .lvl = 41,
+        .species = SPECIES_LUDICOLO,
+        IVS(12),
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_DEBRA] =
+{
+    .trainerName = _("Debra"),
+    SWIMMER_F_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_SEAKING,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_FRANKLIN] =
+{
+    .trainerName = _("Franklin"),
+    SWIMMER_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_SEALEO,
+        }
+    },
+},
 
 //Route 134
+[DIFFICULTY_NORMAL][TRAINER_LAUREL] =
+{
+    .trainerName = _("Laurel"),
+    SWIMMER_F_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 41,
+        .species = SPECIES_LUVDISC,
+        },
+        {
+        .lvl = 41,
+        .species = SPECIES_LUVDISC,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_JACK] =
+{
+    .trainerName = _("Jack"),
+    SWIMMER_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_GYARADOS,
+        }
+    },
+},
+
+
+[DIFFICULTY_NORMAL][TRAINER_HITOSHI] =
+{
+    .trainerName = _("Hitoshi"),
+    BLACK_BELT_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 41,
+        .species = SPECIES_HARIYAMA,
+        IVS(6),
+        },
+        {
+        .lvl = 41,
+        .species = SPECIES_MACHOKE,
+        IVS(24),
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_REYNA] =
+{
+    .trainerName = _("Reyna"),
+    BATTLE_GIRL_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 41,
+        .species = SPECIES_MEDICHAM,
+        IVS(6),
+        },
+        {
+        .lvl = 41,
+        .species = SPECIES_HARIYAMA,
+        IVS(24),
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_HUDSON] =
+{
+    .trainerName = _("Hudson"),
+    SAILOR_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_WAILORD,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_AARON] =
+{
+    .trainerName = _("Aaron"),
+    DRAGON_TAMER_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_SHELGON,
+        PERFECT_IVS,
+        .moves = {MOVE_DRAGON_CLAW, MOVE_ZEN_HEADBUTT, MOVE_CRUNCH, MOVE_SCARY_FACE}
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_MARLEY] =
+{
+    .trainerName = _("Marley"),
+    ACE_TRAINER_F_INFO,
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 42,
+        .species = SPECIES_MANECTRIC,
+        PERFECT_IVS,
+        .moves = {MOVE_BITE, MOVE_ROAR, MOVE_THUNDER_WAVE, MOVE_THUNDERBOLT}
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_ALEX] =
+{
+    .trainerName = _("Alex"),
+    BIRD_KEEPER_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 41,
+        .species = SPECIES_XATU,
+        IVS(18),
+        },
+        {
+        .lvl = 41,
+        .species = SPECIES_SWELLOW,
+        IVS(18),
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_KELVIN] =
+{
+    .trainerName = _("Kelvin"),
+    SAILOR_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 41,
+        .species = SPECIES_MACHOKE,
+        IVS(18),
+        },
+        {
+        .lvl = 41,
+        .species = SPECIES_SEALEO,
+        IVS(18),
+        }
+    },
+},
 
 //Sootopolis Gym
 [DIFFICULTY_NORMAL][TRAINER_CONNIE] =
@@ -16203,6 +16817,374 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 },
 
 //Victory Road
+[DIFFICULTY_NORMAL][TRAINER_ALBERT] =
+{
+    .trainerName = _("Albert"),
+    ACE_TRAINER_M_INFO,
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 45,
+        .species = SPECIES_MAGNETON,
+        IVS(12),
+        },
+        {
+        .lvl = 45,
+        .species = SPECIES_MUK,
+        IVS(12),
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_HOPE] =
+{
+    .trainerName = _("Hope"),
+    ACE_TRAINER_F_INFO,
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 47,
+        .species = SPECIES_ROSERADE,
+        IVS(12),
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_SHANNON] =
+{
+    .trainerName = _("Shannon"),
+    ACE_TRAINER_F_INFO,
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 47,
+        .species = SPECIES_CLAYDOL,
+        IVS(12),
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_SAMUEL] =
+{
+    .trainerName = _("Samuel"),
+    ACE_TRAINER_M_INFO,
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 45,
+        .species = SPECIES_SWELLOW,
+        IVS(12),
+        },
+        {
+        .lvl = 45,
+        .species = SPECIES_MAWILE,
+        IVS(12),
+        },
+        {
+        .lvl = 45,
+        .species = SPECIES_ALAKAZAM,
+        IVS(12),
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_JULIE] =
+{
+    .trainerName = _("Julie"),
+    ACE_TRAINER_F_INFO,
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 45,
+        .species = SPECIES_SANDSLASH,
+        IVS(12),
+        },
+        {
+        .lvl = 45,
+        .species = SPECIES_NINETALES,
+        IVS(12),
+        },
+        {
+        .lvl = 45,
+        .species = SPECIES_TROPIUS,
+        IVS(12),
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_OWEN] =
+{
+    .trainerName = _("Owen"),
+    ACE_TRAINER_M_INFO,
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 45,
+        .species = SPECIES_KECLEON,
+        IVS(12),
+        },
+        {
+        .lvl = 45,
+        .species = SPECIES_GOLEM,
+        IVS(12),
+        },
+        {
+        .lvl = 45,
+        .species = SPECIES_WAILORD,
+        IVS(12),
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_DIANNE] =
+{
+    .trainerName = _("Dianne"),
+    ACE_TRAINER_F_INFO,
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 46,
+        .species = SPECIES_CLAYDOL,
+        .moves = {MOVE_SKILL_SWAP, MOVE_ZEN_HEADBUTT, MOVE_EARTHQUAKE, MOVE_COSMIC_POWER}
+        },
+        {
+        .lvl = 46,
+        .species = SPECIES_LANTURN,
+        .moves = {MOVE_THUNDERBOLT, MOVE_BUBBLE_BEAM, MOVE_SIGNAL_BEAM, MOVE_THUNDER_WAVE}
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_FELIX] =
+{
+    .trainerName = _("Felix"),
+    ACE_TRAINER_M_INFO,
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 46,
+        .species = SPECIES_MEDICHAM,
+        .moves = {MOVE_ZEN_HEADBUTT, MOVE_HIGH_JUMP_KICK, MOVE_THUNDER_PUNCH, MOVE_FIRE_PUNCH}
+        },
+        {
+        .lvl = 46,
+        .species = SPECIES_CLAYDOL,
+        .moves = {MOVE_SKILL_SWAP, MOVE_EARTH_POWER, MOVE_PSYCHIC, MOVE_COSMIC_POWER}
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_CAROLINE] =
+{
+    .trainerName = _("Caroline"),
+    ACE_TRAINER_F_INFO,
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 46,
+        .species = SPECIES_SKARMORY,
+        IVS(12),
+        },
+        {
+        .lvl = 46,
+        .species = SPECIES_SABLEYE,
+        IVS(12),
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_EDGAR] =
+{
+    .trainerName = _("Edgar"),
+    ACE_TRAINER_M_INFO,
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 46,
+        .species = SPECIES_CACTURNE,
+        IVS(12),
+        },
+        {
+        .lvl = 46,
+        .species = SPECIES_PELIPPER,
+        IVS(12),
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_MICHELLE] =
+{
+    .trainerName = _("Michelle"),
+    ACE_TRAINER_F_INFO,
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 45,
+        .species = SPECIES_TORKOAL,
+        IVS(12),
+        },
+        {
+        .lvl = 45,
+        .species = SPECIES_MEDICHAM,
+        IVS(12),
+        },
+        {
+        .lvl = 45,
+        .species = SPECIES_LUDICOLO,
+        IVS(12),
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_MITCHELL] =
+{
+    .trainerName = _("Mitchell"),
+    ACE_TRAINER_M_INFO,
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 46,
+        .species = SPECIES_LUNATONE,
+        .moves = {MOVE_EXPLOSION, MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_PSYCHIC}
+        },
+        {
+        .lvl = 46,
+        .species = SPECIES_SOLROCK,
+        .moves = {MOVE_EXPLOSION, MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_SHADOW_BALL}
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_HALLE] =
+{
+    .trainerName = _("Halle"),
+    ACE_TRAINER_F_INFO,
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 46,
+        .species = SPECIES_SABLEYE,
+        },
+        {
+        .lvl = 46,
+        .species = SPECIES_ABSOL,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_VITO] =
+{
+    .trainerName = _("Vito"),
+    .trainerClass = TRAINER_CLASS_WINSTRATE,
+    .trainerPic = TRAINER_PIC_ACE_TRAINER_M,
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 5,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 44,
+        .species = SPECIES_SWALOT,
+        .ev = EV_SPREAD_ATK_SPE_HP,
+        IVS(12),
+        },
+        {
+        .lvl = 44,
+        .species = SPECIES_DODRIO,
+        .ev = EV_SPREAD_ATK_SPE_HP,
+        IVS(12),
+        },
+        {
+        .lvl = 44,
+        .species = SPECIES_ALAKAZAM,
+        .ev = EV_SPREAD_SPA_SPE_HP,
+        IVS(12),
+        },
+        {
+        .lvl = 44,
+        .species = SPECIES_ELECTRODE,
+        .ev = EV_SPREAD_SPA_SPE_HP,
+        IVS(12),
+        },
+        {
+        .lvl = 44,
+        .species = SPECIES_SHIFTRY,
+        .ev = EV_SPREAD_ATK_SPE_HP,
+        IVS(12),
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_KATELYNN] =
+{
+    .trainerName = _("Katelynn"),
+    ACE_TRAINER_F_INFO,
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 46,
+        .species = SPECIES_GARDEVOIR,
+        IVS(12),
+        .moves = {MOVE_SKILL_SWAP, MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_CALM_MIND}
+        },
+        {
+        .lvl = 46,
+        .species = SPECIES_SLAKING,
+        IVS(12),
+        .moves = {MOVE_EARTHQUAKE, MOVE_SHADOW_CLAW, MOVE_AERIAL_ACE, MOVE_BRICK_BREAK}
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_QUINCY] =
+{
+    .trainerName = _("Quincy"),
+    ACE_TRAINER_M_INFO,
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 46,
+        .species = SPECIES_SLAKING,
+        IVS(12),
+        .moves = {MOVE_ATTRACT, MOVE_MEGA_KICK, MOVE_HAMMER_ARM, MOVE_THROAT_CHOP}
+        },
+        {
+        .lvl = 46,
+        .species = SPECIES_DUSCLOPS,
+        IVS(12),
+        .moves = {MOVE_SKILL_SWAP, MOVE_PROTECT, MOVE_WILL_O_WISP, MOVE_TOXIC}
+        }
+    },
+},
 
 //Trick House 8
 [DIFFICULTY_NORMAL][TRAINER_KEIRA] =
@@ -16434,1048 +17416,6 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 },
 
 //Other
-
-[DIFFICULTY_NORMAL][TRAINER_FELIX] =
-{
-    .trainerName = _("Felix"),
-    ACE_TRAINER_M_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 46,
-        .species = SPECIES_MEDICHAM,
-        .moves = {MOVE_ZEN_HEADBUTT, MOVE_HIGH_JUMP_KICK, MOVE_THUNDER_PUNCH, MOVE_FIRE_PUNCH}
-        },
-        {
-        .lvl = 46,
-        .species = SPECIES_CLAYDOL,
-        .moves = {MOVE_SKILL_SWAP, MOVE_EARTH_POWER, MOVE_PSYCHIC, MOVE_COSMIC_POWER}
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_EDGAR] =
-{
-    .trainerName = _("Edgar"),
-    ACE_TRAINER_M_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 46,
-        .species = SPECIES_CACTURNE,
-        IVS(12),
-        },
-        {
-        .lvl = 46,
-        .species = SPECIES_PELIPPER,
-        IVS(12),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_ALBERT] =
-{
-    .trainerName = _("Albert"),
-    ACE_TRAINER_M_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 45,
-        .species = SPECIES_MAGNETON,
-        IVS(12),
-        },
-        {
-        .lvl = 45,
-        .species = SPECIES_MUK,
-        IVS(12),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_SAMUEL] =
-{
-    .trainerName = _("Samuel"),
-    ACE_TRAINER_M_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 45,
-        .species = SPECIES_SWELLOW,
-        IVS(12),
-        },
-        {
-        .lvl = 45,
-        .species = SPECIES_MAWILE,
-        IVS(12),
-        },
-        {
-        .lvl = 45,
-        .species = SPECIES_ALAKAZAM,
-        IVS(12),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_VITO] =
-{
-    .trainerName = _("Vito"),
-    .trainerClass = TRAINER_CLASS_WINSTRATE,
-    .trainerPic = TRAINER_PIC_ACE_TRAINER_M,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 5,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 44,
-        .species = SPECIES_SWALOT,
-        .ev = EV_SPREAD_ATK_SPE_HP,
-        IVS(12),
-        },
-        {
-        .lvl = 44,
-        .species = SPECIES_DODRIO,
-        .ev = EV_SPREAD_ATK_SPE_HP,
-        IVS(12),
-        },
-        {
-        .lvl = 44,
-        .species = SPECIES_ALAKAZAM,
-        .ev = EV_SPREAD_SPA_SPE_HP,
-        IVS(12),
-        },
-        {
-        .lvl = 44,
-        .species = SPECIES_ELECTRODE,
-        .ev = EV_SPREAD_SPA_SPE_HP,
-        IVS(12),
-        },
-        {
-        .lvl = 44,
-        .species = SPECIES_SHIFTRY,
-        .ev = EV_SPREAD_ATK_SPE_HP,
-        IVS(12),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_OWEN] =
-{
-    .trainerName = _("Owen"),
-    ACE_TRAINER_M_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 45,
-        .species = SPECIES_KECLEON,
-        IVS(12),
-        },
-        {
-        .lvl = 45,
-        .species = SPECIES_GOLEM,
-        IVS(12),
-        },
-        {
-        .lvl = 45,
-        .species = SPECIES_WAILORD,
-        IVS(12),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_WARREN] =
-{
-    .trainerName = _("Warren"),
-    ACE_TRAINER_M_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 41,
-        .species = SPECIES_GOLEM,
-        IVS(12),
-        },
-        {
-        .lvl = 41,
-        .species = SPECIES_LUDICOLO,
-        IVS(12),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_HOPE] =
-{
-    .trainerName = _("Hope"),
-    ACE_TRAINER_F_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 47,
-        .species = SPECIES_ROSERADE,
-        IVS(12),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_SHANNON] =
-{
-    .trainerName = _("Shannon"),
-    ACE_TRAINER_F_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 47,
-        .species = SPECIES_CLAYDOL,
-        IVS(12),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_MICHELLE] =
-{
-    .trainerName = _("Michelle"),
-    ACE_TRAINER_F_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 45,
-        .species = SPECIES_TORKOAL,
-        IVS(12),
-        },
-        {
-        .lvl = 45,
-        .species = SPECIES_MEDICHAM,
-        IVS(12),
-        },
-        {
-        .lvl = 45,
-        .species = SPECIES_LUDICOLO,
-        IVS(12),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_CAROLINE] =
-{
-    .trainerName = _("Caroline"),
-    ACE_TRAINER_F_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 46,
-        .species = SPECIES_SKARMORY,
-        IVS(12),
-        },
-        {
-        .lvl = 46,
-        .species = SPECIES_SABLEYE,
-        IVS(12),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_JULIE] =
-{
-    .trainerName = _("Julie"),
-    ACE_TRAINER_F_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 45,
-        .species = SPECIES_SANDSLASH,
-        IVS(12),
-        },
-        {
-        .lvl = 45,
-        .species = SPECIES_NINETALES,
-        IVS(12),
-        },
-        {
-        .lvl = 45,
-        .species = SPECIES_TROPIUS,
-        IVS(12),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_MOLLIE] =
-{
-    .trainerName = _("Mollie"),
-    EXPERT_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 41,
-        .species = SPECIES_WHISCASH,
-        },
-        {
-        .lvl = 41,
-        .species = SPECIES_MEDICHAM,
-        IVS(24),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_RICHARD] =
-{
-    .trainerName = _("Richard"),
-    SWIMMER_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_PELIPPER,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_HERMAN] =
-{
-    .trainerName = _("Herman"),
-    SWIMMER_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 41,
-        .species = SPECIES_PELIPPER,
-        },
-        {
-        .lvl = 41,
-        .species = SPECIES_TENTACRUEL,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_GILBERT] =
-{
-    .trainerName = _("Gilbert"),
-    SWIMMER_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_SHARPEDO,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_FRANKLIN] =
-{
-    .trainerName = _("Franklin"),
-    SWIMMER_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_SEALEO,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_KEVIN] =
-{
-    .trainerName = _("Kevin"),
-    SWIMMER_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_SEALEO,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_JACK] =
-{
-    .trainerName = _("Jack"),
-    SWIMMER_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_GYARADOS,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_DUDLEY] =
-{
-    .trainerName = _("Dudley"),
-    SWIMMER_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 33,
-        .species = SPECIES_TENTACOOL,
-        },
-        {
-        .lvl = 33,
-        .species = SPECIES_WINGULL,
-        },
-        {
-        .lvl = 33,
-        .species = SPECIES_TENTACRUEL,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_HITOSHI] =
-{
-    .trainerName = _("Hitoshi"),
-    BLACK_BELT_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 41,
-        .species = SPECIES_HARIYAMA,
-        IVS(6),
-        },
-        {
-        .lvl = 41,
-        .species = SPECIES_MACHOKE,
-        IVS(24),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_KIYO] =
-{
-    .trainerName = _("Kiyo"),
-    BLACK_BELT_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_HARIYAMA,
-        IVS(12),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_QUINCY] =
-{
-    .trainerName = _("Quincy"),
-    ACE_TRAINER_M_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 46,
-        .species = SPECIES_SLAKING,
-        IVS(12),
-        .moves = {MOVE_ATTRACT, MOVE_MEGA_KICK, MOVE_HAMMER_ARM, MOVE_THROAT_CHOP}
-        },
-        {
-        .lvl = 46,
-        .species = SPECIES_DUSCLOPS,
-        IVS(12),
-        .moves = {MOVE_SKILL_SWAP, MOVE_PROTECT, MOVE_WILL_O_WISP, MOVE_TOXIC}
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_KATELYNN] =
-{
-    .trainerName = _("Katelynn"),
-    ACE_TRAINER_F_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 46,
-        .species = SPECIES_GARDEVOIR,
-        IVS(12),
-        .moves = {MOVE_SKILL_SWAP, MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_CALM_MIND}
-        },
-        {
-        .lvl = 46,
-        .species = SPECIES_SLAKING,
-        IVS(12),
-        .moves = {MOVE_EARTHQUAKE, MOVE_SHADOW_CLAW, MOVE_AERIAL_ACE, MOVE_BRICK_BREAK}
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_RONALD] =
-{
-    .trainerName = _("Ronald"),
-    FISHERMAN_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 6,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 37,
-        .species = SPECIES_GYARADOS,
-        },
-        {
-        .lvl = 37,
-        .species = SPECIES_GYARADOS,
-        },
-        {
-        .lvl = 37,
-        .species = SPECIES_GYARADOS,
-        },
-        {
-        .lvl = 37,
-        .species = SPECIES_GYARADOS,
-        },
-        {
-        .lvl = 37,
-        .species = SPECIES_GYARADOS,
-        },
-        {
-        .lvl = 37,
-        .species = SPECIES_GYARADOS,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_CHASE] =
-{
-    .trainerName = _("Chase"),
-    TRIATHLETE_M_SWIMMING_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        TRIATHLETE_MON(41, 0),
-        .species = SPECIES_STARMIE,
-        },
-        {
-        TRIATHLETE_MON(41, 0),
-        .species = SPECIES_PELIPPER,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_TALIA] =
-{
-    .trainerName = _("Talia"),
-    TRIATHLETE_F_SWIMMING_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        TRIATHLETE_MON(42, 0),
-        .species = SPECIES_STARMIE,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_ALLISON] =
-{
-    .trainerName = _("Allison"),
-    TRIATHLETE_F_SWIMMING_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        TRIATHLETE_MON(41, 0),
-        .species = SPECIES_PELIPPER,
-        },
-        {
-        TRIATHLETE_MON(41, 0),
-        .species = SPECIES_STARMIE,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_AARON] =
-{
-    .trainerName = _("Aaron"),
-    DRAGON_TAMER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_SHELGON,
-        PERFECT_IVS,
-        .moves = {MOVE_DRAGON_CLAW, MOVE_ZEN_HEADBUTT, MOVE_CRUNCH, MOVE_SCARY_FACE}
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_ALEX] =
-{
-    .trainerName = _("Alex"),
-    BIRD_KEEPER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 41,
-        .species = SPECIES_XATU,
-        IVS(18),
-        },
-        {
-        .lvl = 41,
-        .species = SPECIES_SWELLOW,
-        IVS(18),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_BECK] =
-{
-    .trainerName = _("Beck"),
-    BIRD_KEEPER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_TROPIUS,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_DIANNE] =
-{
-    .trainerName = _("Dianne"),
-    ACE_TRAINER_F_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 46,
-        .species = SPECIES_CLAYDOL,
-        .moves = {MOVE_SKILL_SWAP, MOVE_ZEN_HEADBUTT, MOVE_EARTHQUAKE, MOVE_COSMIC_POWER}
-        },
-        {
-        .lvl = 46,
-        .species = SPECIES_LANTURN,
-        .moves = {MOVE_THUNDERBOLT, MOVE_BUBBLE_BEAM, MOVE_SIGNAL_BEAM, MOVE_THUNDER_WAVE}
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_SUSIE] =
-{
-    .trainerName = _("Susie"),
-    SWIMMER_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_LUVDISC,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_KARA] =
-{
-    .trainerName = _("Kara"),
-    SWIMMER_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_SEAKING,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_DANA] =
-{
-    .trainerName = _("Dana"),
-    SWIMMER_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_AZUMARILL,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_DEBRA] =
-{
-    .trainerName = _("Debra"),
-    SWIMMER_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_SEAKING,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_LINDA] =
-{
-    .trainerName = _("Linda"),
-    SWIMMER_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 41,
-        .species = SPECIES_CORSOLA,
-        },
-        {
-        .lvl = 41,
-        .species = SPECIES_SEADRA,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_KAYLEE] =
-{
-    .trainerName = _("Kaylee"),
-    SWIMMER_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 34,
-        .species = SPECIES_LANTURN,
-        },
-        {
-        .lvl = 34,
-        .species = SPECIES_PELIPPER,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_LAUREL] =
-{
-    .trainerName = _("Laurel"),
-    SWIMMER_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 41,
-        .species = SPECIES_LUVDISC,
-        },
-        {
-        .lvl = 41,
-        .species = SPECIES_LUVDISC,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_KELVIN] =
-{
-    .trainerName = _("Kelvin"),
-    SAILOR_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 41,
-        .species = SPECIES_MACHOKE,
-        IVS(18),
-        },
-        {
-        .lvl = 41,
-        .species = SPECIES_SEALEO,
-        IVS(18),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_MARLEY] =
-{
-    .trainerName = _("Marley"),
-    ACE_TRAINER_F_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_MANECTRIC,
-        PERFECT_IVS,
-        .moves = {MOVE_BITE, MOVE_ROAR, MOVE_THUNDER_WAVE, MOVE_THUNDERBOLT}
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_REYNA] =
-{
-    .trainerName = _("Reyna"),
-    BATTLE_GIRL_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 41,
-        .species = SPECIES_MEDICHAM,
-        IVS(6),
-        },
-        {
-        .lvl = 41,
-        .species = SPECIES_HARIYAMA,
-        IVS(24),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_HUDSON] =
-{
-    .trainerName = _("Hudson"),
-    SAILOR_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_WAILORD,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_CONOR] =
-{
-    .trainerName = _("Conor"),
-    EXPERT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 41,
-        .species = SPECIES_LANTURN,
-        },
-        {
-        .lvl = 41,
-        .species = SPECIES_HARIYAMA,
-        IVS(24),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_MITCHELL] =
-{
-    .trainerName = _("Mitchell"),
-    ACE_TRAINER_M_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 46,
-        .species = SPECIES_LUNATONE,
-        .moves = {MOVE_EXPLOSION, MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_PSYCHIC}
-        },
-        {
-        .lvl = 46,
-        .species = SPECIES_SOLROCK,
-        .moves = {MOVE_EXPLOSION, MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_SHADOW_BALL}
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_HALLE] =
-{
-    .trainerName = _("Halle"),
-    ACE_TRAINER_F_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 46,
-        .species = SPECIES_SABLEYE,
-        },
-        {
-        .lvl = 46,
-        .species = SPECIES_ABSOL,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_CLARENCE] =
-{
-    .trainerName = _("Clarence"),
-    SWIMMER_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_SHARPEDO,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_TERRY] =
-{
-    .trainerName = _("Terry"),
-    PSYCHIC_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 37,
-        .species = SPECIES_GIRAFARIG,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_PAXTON] =
-{
-    .trainerName = _("Paxton"),
-    EXPERT_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 41,
-        .species = SPECIES_SWELLOW,
-        },
-        {
-        .lvl = 41,
-        .species = SPECIES_BRELOOM,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_JONATHAN] =
-{
-    .trainerName = _("Jonathan"),
-    ACE_TRAINER_M_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 41,
-        .species = SPECIES_KECLEON,
-        },
-        {
-        .lvl = 41,
-        .species = SPECIES_EXPLOUD,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_REED] =
-{
-    .trainerName = _("Reed"),
-    SWIMMER_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 41,
-        .species = SPECIES_SEALEO,
-        },
-        {
-        .lvl = 41,
-        .species = SPECIES_SHARPEDO,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_TISHA] =
-{
-    .trainerName = _("Tisha"),
-    SWIMMER_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_LANTURN,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_RELI_AND_IAN] =
-{
-    .trainerName = _("Reli & Ian"),
-    SIS_AND_BRO_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 42,
-        .species = SPECIES_AZUMARILL,
-        },
-        {
-        .lvl = 40,
-        .species = SPECIES_PELIPPER,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_DARCY] =
-{
-    .trainerName = _("Darcy"),
-    ACE_TRAINER_F_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 41,
-        .species = SPECIES_PELIPPER,
-        },
-        {
-        .lvl = 41,
-        .species = SPECIES_CAMERUPT,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_MAKAYLA] =
-{
-    .trainerName = _("Makayla"),
-    EXPERT_F_INFO,
-    .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 41,
-        .species = SPECIES_ROSELIA,
-        },
-        {
-        .lvl = 41,
-        .species = SPECIES_MEDICHAM,
-        }
-    },
-},
-
 [DIFFICULTY_NORMAL][TRAINER_ANABEL] =
 {
     .trainerName = _("Anabel"),
@@ -17706,6 +17646,60 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
         {
         .lvl = 5,
         .species = SPECIES_KYOGRE,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_DUDLEY] =
+{
+    .trainerName = _("Dudley"),
+    SWIMMER_M_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 33,
+        .species = SPECIES_TENTACOOL,
+        },
+        {
+        .lvl = 33,
+        .species = SPECIES_WINGULL,
+        },
+        {
+        .lvl = 33,
+        .species = SPECIES_TENTACRUEL,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_KAYLEE] =
+{
+    .trainerName = _("Kaylee"),
+    SWIMMER_F_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 2,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 34,
+        .species = SPECIES_LANTURN,
+        },
+        {
+        .lvl = 34,
+        .species = SPECIES_PELIPPER,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_TERRY] =
+{
+    .trainerName = _("Terry"),
+    PSYCHIC_F_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 37,
+        .species = SPECIES_GIRAFARIG,
         }
     },
 },

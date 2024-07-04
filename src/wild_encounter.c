@@ -84,7 +84,7 @@ EWRAM_DATA u8 gChainFishingDexNavStreak = 0;
 #define RANGE_FIERY_PATH        24, 25
 #define RANGE_ROUTE_113         24, 25
 #define RANGE_ROUTE_114         24, 25
-#define RANGE_METEOR_FALLS      24, 25
+#define RANGE_METEOR_FALLS      25, 27
 #define RANGE_ROUTE_119         42, 44
 
 #include "data/wild_encounters.h"

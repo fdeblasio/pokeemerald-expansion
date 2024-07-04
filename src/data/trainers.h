@@ -498,15 +498,15 @@
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        WALLY_SWABLU(24),
+        WALLY_SWABLU(25),
         IVS(6),
         },
         {
-        WALLY_BUDEW(24),
+        WALLY_BUDEW(25),
         IVS(6),
         },
         {
-        RALPH(26),
+        RALPH(27),
         }
     },
 },

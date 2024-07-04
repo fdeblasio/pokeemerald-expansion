@@ -659,8 +659,8 @@ MtChimney_Text_YouBetterNotMessWithUs:
 MtChimney_Text_AquasNameSimilar:
 	.string "We're Team Magma!\p"
 	.string "They're Team Aqua!\p"
-	.string "It totally annoys me that they'd\n"
-	.string "use a name like ours!$"
+	.string "It burns me up that they'd use such\n"
+	.string "a confusing name!$"
 
 MtChimney_Text_DouseThemInFire:
 	.string "Yeah!\n"
@@ -712,8 +712,8 @@ MtChimney_Text_LessHabitatForWaterPokemon:
 MtChimney_Text_MagmasNameSimilar:
 	.string "We're Team Aqua!\p"
 	.string "They're Team Magma!\p"
-	.string "It burns me up that they'd use such\n"
-	.string "a confusing name!$"
+	.string "It totally annoys me that they'd\n"
+	.string "use a name like ours!$"
 
 MtChimney_Text_Bushaa:
 	.string "Bushaa!$"

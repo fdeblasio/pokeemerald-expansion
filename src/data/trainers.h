@@ -8080,7 +8080,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 25,
+        .lvl = 27,
         .species = SPECIES_MACHOP,
         IVS(12),
         }
@@ -8178,11 +8178,11 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 23,
+        .lvl = 25,
         .species = SPECIES_LUNATONE,
         },
         {
-        .lvl = 23,
+        .lvl = 25,
         .species = SPECIES_SOLROCK,
         }
     },
@@ -8196,11 +8196,11 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 23,
+        .lvl = 25,
         .species = SPECIES_BALTOY,
         },
         {
-        .lvl = 23,
+        .lvl = 25,
         .species = SPECIES_SPOINK,
         }
     },
@@ -8217,12 +8217,12 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 23,
+        .lvl = 25,
         .species = SPECIES_MAKUHITA,
         IVS(12),
         },
         {
-        .lvl = 23,
+        .lvl = 25,
         .species = SPECIES_MEDITITE,
         IVS(12),
         }
@@ -8308,7 +8308,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 24,
+        .lvl = 26,
         .species = SPECIES_NUMEL,
         }
     },
@@ -8320,7 +8320,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 24,
+        .lvl = 26,
         .species = SPECIES_SLUGMA,
         }
     },

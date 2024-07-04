@@ -391,7 +391,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Wally Mauville  |16                    |19|
 |Wally Verdanturf|N/A                   |21, 23|
 |Wattson         |20, 22, 22, 24||
-|Wally Route 114 |N/A                   |24, 24, 26|
+|Wally Route 114 |N/A                   |25, 25, 27|
 |Tabitha         |18, 20, 22, 22        |26, 26, 28|
 |Maxie           |24, 24, 25            |28, 28, 28, 30|
 |Flannery        |24, 24, 26, 29        |28, 30, 30, 32|

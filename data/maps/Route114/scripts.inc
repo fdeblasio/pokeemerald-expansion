@@ -1,3 +1,5 @@
+.set LOCALID_WALLY, 23
+
 Route114_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route114_OnTransition
 	map_script MAP_SCRIPT_ON_LOAD, Route114_OnLoad
@@ -175,6 +177,68 @@ Route114_EventScript_Kai::
 	trainerbattle_single TRAINER_KAI, Route114_Text_KaiIntro, Route114_Text_KaiDefeat
 	msgbox Route114_Text_KaiPostBattle, MSGBOX_AUTOCLOSE
 	end
+
+Route114_EventScript_WallyTrigger::
+	lockall
+	setvar VAR_ROUTE114_STATE, 1
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	waitmovement 0
+	delay 10
+	addobject LOCALID_WALLY
+	clearflag FLAG_HIDE_ROUTE_114_WALLY
+	applymovement OBJ_EVENT_ID_PLAYER, Route114_Movement_PlayerBackUp
+	waitmovement 0
+	applymovement LOCALID_WALLY, Route114_Movement_WallyExitMeteorFalls
+	waitmovement 0
+	delay 20
+	playse SE_PIN
+	applymovement LOCALID_WALLY, Common_Movement_ExclamationMark
+	waitmovement 0
+	msgbox Route114_Text_WallyIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_WALLY_ROUTE_114, Route114_Text_WallyDefeat
+	msgbox Route114_Text_WallyPostBattle, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_WALLY, Route114_Movement_WallyWalkAway
+	waitmovement 0
+	removeobject LOCALID_WALLY
+	setflag FLAG_HIDE_ROUTE_114_WALLY
+	releaseall
+	end
+
+Route114_Movement_PlayerBackUp:
+	lock_facing_direction
+	walk_down
+	step_end
+
+Route114_Movement_WallyExitMeteorFalls:
+	walk_down
+	step_end
+
+Route114_Movement_WallyWalkAway:
+	walk_right
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+Route114_Text_WallyIntro:
+	.string "Wally: Hi, {PLAYER}!\p"
+	.string "I caught another Pokémon! I was going\n"
+	.string "to train it in Meteor Falls but there's\l"
+	.string "some weird people in there. Now I can\l"
+	.string "train against you though!$"
+
+Route114_Text_WallyDefeat:
+	.string "Wally: Aww… you beat me again,\n"
+	.string "{PLAYER}!$"
+
+Route114_Text_WallyPostBattle:
+	.string "Wally: Thanks again, {PLAYER}!\n"
+	.string "I'll have to catch more Pokémon!$"
 
 Route114_Text_AllMyMonDoesIsRoarTakeThis:
 	.string "All my Pokémon does is Roar…\n"

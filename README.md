@@ -1008,7 +1008,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 ### Pokémon:
 - Pokémon have all their moves from their movesets from Gen 7 onwards, at the most recent levels
-    - Natural Gift, Lucky Chant, Wring Out, and Synchronoise have still been removed
+    - Natural Gift, Lucky Chant, Wring Out, Synchronoise, and Embargo have still been removed
 - If a Pokémon can evolve by holding/being traded with an item, it now evolves from that item being used
     - Pokémon that evolve by trading with no held item now evolve by using a Linking Cord
     - Items that need to be held at a certain time now evolve by using that item at any time

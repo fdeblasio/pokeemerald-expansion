@@ -45,7 +45,9 @@ upcoming
 - Combine two meta files (notes.md and README.md)?
     Include more changes, even if general like Battle Frontier edits
 - Before a new game, put Trainer numbers in order
-- Consolidate flags (for example, FLAG_DEFEATED_MAUVILLE_GYM, FLAG_BADGE03_GET, FLAG_HIDE_MAUVILLE_ROCK_SMASH_TIP_GUY)
+- Consolidate flags
+    - FLAG_DEFEATED_MAUVILLE_GYM, FLAG_BADGE03_GET, FLAG_HIDE_MAUVILLE_ROCK_SMASH_TIP_GUY
+    - FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA
 - Remove unused code (both in vanilla as well as stuff like move tutor flags since they're now infinite)
 
 ### Pokémon

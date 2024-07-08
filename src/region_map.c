@@ -315,7 +315,7 @@ static const u8 sMapHealLocations[][3] =
     [MAPSEC_ROUTE_109] = {MAP_GROUP_AND_NUM(ROUTE109), HEAL_LOCATION_NONE},
     [MAPSEC_ROUTE_110] = {MAP_GROUP_AND_NUM(ROUTE110), HEAL_LOCATION_NONE},
     [MAPSEC_ROUTE_111] = {MAP_GROUP_AND_NUM(ROUTE111), HEAL_LOCATION_ROUTE_111},
-    [MAPSEC_ROUTE_112] = {MAP_GROUP_AND_NUM(ROUTE112), HEAL_LOCATION_NONE},
+    [MAPSEC_ROUTE_112] = {MAP_GROUP_AND_NUM(ROUTE112), HEAL_LOCATION_ROUTE_112},
     [MAPSEC_ROUTE_113] = {MAP_GROUP_AND_NUM(ROUTE113), HEAL_LOCATION_NONE},
     [MAPSEC_ROUTE_114] = {MAP_GROUP_AND_NUM(ROUTE114), HEAL_LOCATION_ROUTE_114},
     [MAPSEC_ROUTE_115] = {MAP_GROUP_AND_NUM(ROUTE115), HEAL_LOCATION_NONE},
@@ -434,6 +434,10 @@ static const u16 sRedOutlineFlyDestinations[][2] =
     {
         FLAG_LANDMARK_OLD_LADY_REST_SHOP,
         MAPSEC_ROUTE_111
+    },
+    {
+        FLAG_LANDMARK_FIERY_PATH,
+        MAPSEC_ROUTE_112
     },
     {
         FLAG_LANDMARK_METEOR_FALLS,
@@ -1244,6 +1248,8 @@ static u8 GetMapsecType(u16 mapSecId)
         return FlagGet(FLAG_LANDMARK_ABANDONED_SHIP) ? MAPSECTYPE_BATTLE_FRONTIER : MAPSECTYPE_ROUTE;
     case MAPSEC_ROUTE_111:
         return FlagGet(FLAG_LANDMARK_OLD_LADY_REST_SHOP) ? MAPSECTYPE_BATTLE_FRONTIER : MAPSECTYPE_ROUTE;
+    case MAPSEC_ROUTE_112:
+        return FlagGet(FLAG_LANDMARK_FIERY_PATH) ? MAPSECTYPE_BATTLE_FRONTIER : MAPSECTYPE_ROUTE;
     case MAPSEC_ROUTE_114:
         return FlagGet(FLAG_LANDMARK_METEOR_FALLS) ? MAPSECTYPE_BATTLE_FRONTIER : MAPSECTYPE_ROUTE;
     case MAPSEC_ROUTE_119:
@@ -1936,12 +1942,12 @@ static void TryCreateRedOutlineFlyDestIcons(void)
         {
             mapSecId = sRedOutlineFlyDestinations[i][1];
             GetMapSecDimensions(mapSecId, &x, &y, &width, &height);
-            if (mapSecId == MAPSEC_ROUTE_131)
-                x++;
+            if (mapSecId == MAPSEC_ROUTE_114)
+                y += 2;
             if (mapSecId == MAPSEC_ROUTE_119 || mapSecId == MAPSEC_ROUTE_122)
                 y++;
-            if (mapSecId == MAPSEC_ROUTE_114)
-                y = y + 2;
+            if (mapSecId == MAPSEC_ROUTE_131)
+                x++;
             x = (x + MAPCURSOR_X_MIN) * 8;
             y = (y + MAPCURSOR_Y_MIN) * 8;
             spriteId = CreateSprite(&sFlyDestIconSpriteTemplate, x, y, 10);

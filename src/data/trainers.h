@@ -8308,8 +8308,8 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 26,
-        .species = SPECIES_NUMEL,
+        .lvl = 27,
+        .species = SPECIES_VULPIX,
         }
     },
 },
@@ -8320,11 +8320,28 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 26,
+        .lvl = 27,
         .species = SPECIES_SLUGMA,
         }
     },
 },
+
+#define TABITHA_HOUNDOUR(Level)                                                 \
+    .lvl = Level,                                                               \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_HOUNDOUR : SPECIES_HOUNDOOM, \
+    .ability = ABILITY_FLASH_FIRE,                                              \
+    .gender = TRAINER_MON_MALE
+
+#define TABITHA_SLUGMA(Level)                                                 \
+    .lvl = Level,                                                             \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_SLUGMA : SPECIES_MAGCARGO, \
+    .ability = ABILITY_MAGMA_ARMOR,                                           \
+    .gender = TRAINER_MON_MALE
+
+#define TABITHA_PHANPY(Level)                                                \
+    .lvl = Level,                                                            \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_PHANPY : SPECIES_DONPHAN, \
+    .gender = TRAINER_MON_MALE
 
 [TRAINER_TABITHA_MT_CHIMNEY] =
 {
@@ -8332,26 +8349,52 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 26,
-        .species = SPECIES_PHANPY,
+        TABITHA_PHANPY(27),
         IVS(6),
-        .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 26,
-        .species = SPECIES_SLUGMA,
+        TABITHA_SLUGMA(27),
         IVS(6),
-        .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 28,
-        .species = SPECIES_HOUNDOUR,
-        .ability = ABILITY_FLASH_FIRE,
+        TABITHA_HOUNDOUR(29),
         IVS(6),
-        .gender = TRAINER_MON_MALE,
         }
     },
 },
+
+#define HUMPHREY(Level)                                       \
+    .lvl = Level,                                             \
+    .species = Level < 33 ? SPECIES_NUMEL : SPECIES_CAMERUPT, \
+    .ability = 2,                                             \
+    .nature = NATURE_MODEST,                                  \
+    PERFECT_IVS,                                              \
+    .gender = TRAINER_MON_MALE,                               \
+    .nickname = COMPOUND_STRING("Humphrey")
+
+#define MAXIE_BALTOY(Level)                                   \
+    {                                                         \
+    .lvl = Level,                                             \
+    .species = Level < 36 ? SPECIES_BALTOY : SPECIES_CLAYDOL, \
+    IVS(18),                                                  \
+    }
+
+#define MAXIE_SANDSHREW(Level)                                                    \
+    {                                                                             \
+    .lvl = Level,                                                                 \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_SANDSHREW : SPECIES_SANDSLASH, \
+    IVS(18),                                                                      \
+    .gender = TRAINER_MON_MALE,                                                   \
+    }
+
+#define MAXIE_PHANPY(Level)                                                  \
+    {                                                                        \
+    .lvl = Level,                                                            \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_PHANPY : SPECIES_DONPHAN, \
+    .ability = ABILITY_SAND_VEIL,                                            \
+    IVS(18),                                                                 \
+    .gender = TRAINER_MON_MALE,                                              \
+    }
 
 [TRAINER_MAXIE_MT_CHIMNEY] =
 {
@@ -8359,30 +8402,11 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     .items = {ITEM_SUPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
+        MAXIE_PHANPY(28),
+        MAXIE_SANDSHREW(29),
+        MAXIE_BALTOY(29),
         {
-        .lvl = 28,
-        .species = SPECIES_PHANPY,
-        IVS(18),
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        .lvl = 28,
-        .species = SPECIES_SANDSHREW,
-        IVS(18),
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        .lvl = 28,
-        .species = SPECIES_BALTOY,
-        IVS(18),
-        },
-        {
-        .lvl = 30,
-        .species = SPECIES_NUMEL,
-        .ability = ABILITY_SIMPLE,
-        IVS(18),
-        .gender = TRAINER_MON_MALE,
-        .nickname = COMPOUND_STRING("Humphrey"),
+        HUMPHREY(30),
         }
     },
 },
@@ -13742,23 +13766,16 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 50,
-        .species = SPECIES_DONPHAN,
+        TABITHA_PHANPY(50),
         IVS(9),
-        .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 51,
-        .species = SPECIES_MAGCARGO,
+        TABITHA_SLUGMA(50),
         IVS(9),
-        .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 52,
-        .species = SPECIES_HOUNDOOM,
-        .ability = ABILITY_FLASH_FIRE,
+        TABITHA_HOUNDOUR(52),
         IVS(9),
-        .gender = TRAINER_MON_MALE,
         }
     },
 },
@@ -13769,30 +13786,11 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     .items = {ITEM_SUPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
+        MAXIE_PHANPY(51),
+        MAXIE_SANDSHREW(52),
+        MAXIE_BALTOY(52),
         {
-        .lvl = 51,
-        .species = SPECIES_DONPHAN,
-        IVS(18),
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        .lvl = 52,
-        .species = SPECIES_SANDSLASH,
-        IVS(18),
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        .lvl = 52,
-        .species = SPECIES_CLAYDOL,
-        IVS(18),
-        },
-        {
-        .lvl = 53,
-        .species = SPECIES_CAMERUPT,
-        .ability = ABILITY_SOLID_ROCK,
-        IVS(18),
-        .gender = TRAINER_MON_MALE,
-        .nickname = COMPOUND_STRING("Humphrey"),
+        HUMPHREY(53),
         }
     },
 },
@@ -14731,23 +14729,16 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 55,
-        .species = SPECIES_DONPHAN,
+        TABITHA_PHANPY(55),
         IVS(12),
-        .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 55,
-        .species = SPECIES_MAGCARGO,
+        TABITHA_SLUGMA(55),
         IVS(12),
-        .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 57,
-        .species = SPECIES_HOUNDOOM,
-        .ability = ABILITY_FLASH_FIRE,
+        TABITHA_HOUNDOUR(57),
         IVS(12),
-        .gender = TRAINER_MON_MALE,
         }
     },
 },
@@ -14757,24 +14748,11 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     MAXIE_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
+        MAXIE_SANDSHREW(57),
+        MAXIE_BALTOY(58),
         {
-        .lvl = 57,
-        .species = SPECIES_SANDSLASH,
-        IVS(18),
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        .lvl = 58,
-        .species = SPECIES_CLAYDOL,
-        IVS(18),
-        },
-        {
-        .lvl = 60,
-        .species = SPECIES_CAMERUPT,
-        .ability = ABILITY_SOLID_ROCK,
-        IVS(18),
-        .gender = TRAINER_MON_MALE,
-        .nickname = COMPOUND_STRING("Humphrey"),
+        HUMPHREY(60),
+        .heldItem = ITEM_CAMERUPTITE,
         }
     },
 },
@@ -15427,7 +15405,8 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
         {
         .lvl = 45,
         .species = SPECIES_SHARPEDO,
-        IVS(18),
+        PERFECT_IVS,
+        .heldItem = ITEM_SHARPEDONITE,
         }
     },
 },

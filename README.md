@@ -266,6 +266,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Fly can now be used to go to more places:
     - The Abandoned Ship on Route 108
     - The Old Lady's Rest Stop on Route 111
+    - Fiery Path on Route 112
     - Meteor Falls entrance on Route 114
     - The Weather Institute on Route 119
     - Mt. Pyre on Route 122
@@ -381,48 +382,48 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Pokémon Breeders all have Pokémon with perfect IVs. They can also have Hidden Abilities and Egg Moves
 
 #### Bosses:
-|     BOSSES     |        VANILLA       |    UPDATED    |
-|:--------------:|:--------------------:|:-------------:|
-|Rival 103       |5||
-|Roxanne         |12, 12, 15            |11, 11, 13|
-|Rival Rustboro  |13, 15||
-|Brawly          |16, 16, 19            |16, 16, 18|
-|Rival 110       |18, 18, 20||
-|Wally Mauville  |16                    |19|
-|Wally Verdanturf|N/A                   |21, 23|
-|Wattson         |20, 22, 22, 24||
-|Wally Route 114 |N/A                   |25, 25, 27|
-|Tabitha         |18, 20, 22, 22        |26, 26, 28|
-|Maxie           |24, 24, 25            |28, 28, 28, 30|
-|Flannery        |24, 24, 26, 29        |28, 30, 30, 32|
-|Norman          |27, 27, 29, 31        |32, 34, 34, 36|
-|Shelly          |28, 28                |41, 41, 43|
-|Rival 119       |29, 29, 31            |42, 42, 42, 43|
-|Winona          |29, 29, 30, 31, 33    |43, 43, 44, 44, 46|
-|Rival Lilycove  |31, 32, 32, 34        |48, 48, 48, 49, 50|
-|Tabitha         |26, 28, 30, 33        |50, 51, 52|
-|Maxie           |37, 38, 39            |51, 52, 52, 53|
-|Matt            |34, 34                |52, 52, 54|
-|Tate/Liza       |41, 41, 42, 42        |55, 55, 57, 57|
-|Courtney        |N/A                   |55, 55, 57|
-|Tabitha/Maxie   |36, 38, 40/42, 43, 44 |55, 55, 57/57, 58, 60|
-|Regis           |40                    |45|
-|Matt/Shelly     |N/A/37, 37            |42, 42, 43/42, 42, 43|
-|Archie          |41, 41, 43            |43, 43, 44, 45|
-|Juan            |41, 41, 43, 43, 46    |44, 44, 45, 45, 47|
-|Rayquaza        |70                    |60|
-|Wally           |41, 43, 44, 44, 45    |46, 46, 47, 47, 49|
-|Sidney          |46, 46, 48, 48, 49    |50, 50, 51, 51, 52|
-|Phoebe          |48, 49, 49, 50, 51    |51, 51, 52, 52, 53|
-|Glacia          |50, 50, 52, 52, 53    |52, 52, 53, 53, 54|
-|Drake           |52, 53, 53, 54, 55    |53, 53, 54, 54, 56|
-|Wallace         |55, 56, 56, 56, 57, 58|56, 56, 56, 57, 57, 59|
-|Groudon/Kyogre  |70||
-|Latios/Latias   |40                    |60|
-|Mew             |N/A                   |60|
-|Deoxys          |N/A                   |60|
-|Lugia/Ho-Oh     |N/A                   |70|
-|Steven          |75, 76, 76, 76, 77, 78|77, 77, 78, 78, 79, 80|
+|     BOSSES             |        VANILLA       |    UPDATED    |
+|:----------------------:|:--------------------:|:-------------:|
+|Rival 103               |5||
+|Roxanne                 |12, 12, 15            |11, 11, 13|
+|Rival Rustboro          |13, 15||
+|Brawly                  |16, 16, 19            |16, 16, 18|
+|Rival 110               |18, 18, 20||
+|Wally Mauville          |16                    |19|
+|Wally Verdanturf        |N/A                   |21, 23|
+|Wattson                 |20, 22, 22, 24||
+|Wally Route 114         |N/A                   |25, 25, 27|
+|Tabitha Mt. Chimney     |18, 20, 22, 22        |27, 27, 29|
+|Maxie Mt. Chimney       |24, 24, 25            |28, 29, 29, 30|
+|Flannery                |24, 24, 26, 29        |28, 30, 30, 32|
+|Norman                  |27, 27, 29, 31        |32, 34, 34, 36|
+|Shelly Weather Institute|28, 28                |41, 41, 43|
+|Rival 119               |29, 29, 31            |42, 42, 42, 43|
+|Winona                  |29, 29, 30, 31, 33    |43, 43, 44, 44, 46|
+|Rival Lilycove          |31, 32, 32, 34        |48, 48, 48, 49, 50|
+|Tabitha Magma Hideout   |26, 28, 30, 33        |50, 50, 52|
+|Maxie Magma Hideout     |37, 38, 39            |51, 52, 52, 53|
+|Matt Aqua Hideout       |34, 34                |52, 52, 54|
+|Tate/Liza               |41, 41, 42, 42        |55, 55, 57, 57|
+|Courtney                |N/A                   |55, 55, 57|
+|Tabitha/Maxie           |36, 38, 40/42, 43, 44 |55, 55, 57/57, 58, 60|
+|Regis                   |40                    |45|
+|Matt/Shelly             |N/A/37, 37            |42, 42, 43/42, 42, 43|
+|Archie Seafloor Cavern  |41, 41, 43            |43, 43, 44, 45|
+|Juan                    |41, 41, 43, 43, 46    |44, 44, 45, 45, 47|
+|Rayquaza                |70                    |60|
+|Wally                   |41, 43, 44, 44, 45    |46, 46, 47, 47, 49|
+|Sidney                  |46, 46, 48, 48, 49    |50, 50, 51, 51, 52|
+|Phoebe                  |48, 49, 49, 50, 51    |51, 51, 52, 52, 53|
+|Glacia                  |50, 50, 52, 52, 53    |52, 52, 53, 53, 54|
+|Drake                   |52, 53, 53, 54, 55    |53, 53, 54, 54, 56|
+|Wallace                 |55, 56, 56, 56, 57, 58|56, 56, 56, 57, 57, 59|
+|Groudon/Kyogre          |70||
+|Latios/Latias           |40                    |60|
+|Mew                     |N/A                   |60|
+|Deoxys                  |N/A                   |60|
+|Lugia/Ho-Oh             |N/A                   |70|
+|Steven                  |75, 76, 76, 76, 77, 78|77, 77, 78, 78, 79, 80|
 
 #### Gym Leader/Wally Rematches:
 - 4-5 Pokémon: 60, 63, 63, 65

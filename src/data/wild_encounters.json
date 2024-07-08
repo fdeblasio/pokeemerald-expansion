@@ -1836,43 +1836,43 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "range": "23, 26",
+                "range": "RANGE_JAGGED_PASS",
                 "species": "SPOINK"
               },
               {
-                "range": "23, 26",
+                "range": "RANGE_JAGGED_PASS",
                 "species": "SPOINK"
               },
               {
-                "range": "23, 26",
+                "range": "RANGE_JAGGED_PASS",
                 "species": "NUMEL"
               },
               {
-                "range": "23, 26",
+                "range": "RANGE_JAGGED_PASS",
                 "species": "NUMEL"
               },
               {
-                "range": "23, 26",
+                "range": "RANGE_JAGGED_PASS",
                 "species": "NUMEL"
               },
               {
-                "range": "23, 26",
+                "range": "RANGE_JAGGED_PASS",
                 "species": "NUMEL"
               },
               {
-                "range": "23, 26",
+                "range": "RANGE_JAGGED_PASS",
                 "species": "MACHOP"
               },
               {
-                "range": "23, 26",
+                "range": "RANGE_JAGGED_PASS",
                 "species": "MACHOP"
               },
               {
-                "range": "23, 26",
+                "range": "RANGE_JAGGED_PASS",
                 "species": "MACHOP"
               },
               {
-                "range": "23, 26",
+                "range": "RANGE_JAGGED_PASS",
                 "species": "MACHOP"
               }
             ]

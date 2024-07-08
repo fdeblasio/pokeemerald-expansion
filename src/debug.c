@@ -1286,6 +1286,7 @@ static u8 Debug_CheckToggleFlags(u8 id)
                 FlagGet(FLAG_LANDMARK_ABANDONED_SHIP) &&
                 FlagGet(FLAG_LANDMARK_POKEMON_LEAGUE) &&
                 FlagGet(FLAG_LANDMARK_OLD_LADY_REST_SHOP) &&
+                FlagGet(FLAG_LANDMARK_FIERY_PATH) &&
                 FlagGet(FLAG_LANDMARK_METEOR_FALLS) &&
                 FlagGet(FLAG_LANDMARK_WEATHER_INSTITUTE) &&
                 FlagGet(FLAG_LANDMARK_MT_PYRE) &&
@@ -2800,6 +2801,7 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
         FlagClear(FLAG_LANDMARK_POKEMON_LEAGUE);
         FlagClear(FLAG_LANDMARK_ABANDONED_SHIP);
         FlagClear(FLAG_LANDMARK_OLD_LADY_REST_SHOP);
+        FlagClear(FLAG_LANDMARK_FIERY_PATH);
         FlagClear(FLAG_LANDMARK_METEOR_FALLS);
         FlagClear(FLAG_LANDMARK_WEATHER_INSTITUTE);
         FlagClear(FLAG_LANDMARK_MT_PYRE);
@@ -2829,6 +2831,7 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
         FlagSet(FLAG_LANDMARK_POKEMON_LEAGUE);
         FlagSet(FLAG_LANDMARK_ABANDONED_SHIP);
         FlagSet(FLAG_LANDMARK_OLD_LADY_REST_SHOP);
+        FlagSet(FLAG_LANDMARK_FIERY_PATH);
         FlagSet(FLAG_LANDMARK_METEOR_FALLS);
         FlagSet(FLAG_LANDMARK_WEATHER_INSTITUTE);
         FlagSet(FLAG_LANDMARK_MT_PYRE);

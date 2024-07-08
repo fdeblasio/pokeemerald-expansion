@@ -158,6 +158,7 @@ LilycoveCity_DepartmentStore_3F_Pokemart_Delibird:
 	.2byte ITEM_CHOICE_SPECS
 	.2byte ITEM_CHOICE_SCARF
 	.2byte ITEM_SMOKE_BALL
+	.2byte ITEM_BIG_ROOT
 	.2byte ITEM_ROCKY_HELMET
 	.2byte ITEM_EVIOLITE
 	.2byte ITEM_ASSAULT_VEST

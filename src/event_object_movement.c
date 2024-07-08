@@ -6727,7 +6727,7 @@ static void InitJumpRegular(struct ObjectEvent *objectEvent, struct Sprite *spri
       && distance == JUMP_DISTANCE_FAR
       // In some areas (i.e Meteor Falls), the player can jump as the follower jumps, so preserve type in this case
       && PlayerGetCopyableMovement() != COPY_MOVE_JUMP2)
-        type = TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_DASH) ? JUMP_TYPE_FASTER : JUMP_TYPE_FAST;
+        type = TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_DASH) ? JUMP_TYPE_FASTER : JUMP_TYPE_FASTER;
     InitJump(objectEvent, sprite, direction, distance, type);
     SetStepAnimHandleAlternation(objectEvent, sprite, GetMoveDirectionAnimNum(objectEvent->facingDirection));
     DoShadowFieldEffect(objectEvent);

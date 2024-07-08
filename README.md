@@ -199,10 +199,8 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 ## Known Bugs
 - Moving an Pokemon in the PC seems to duplicate its item in the bag
-- Due to the increased walking speed, followers will sometimes clip through tiles, especially after hopping off a ledge
 - Followers will stop following you if you use the naming screen from the party menu. It will start to follow you again if you talk to it
 - When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
-- AI_FLAG_ACE_POKEMON doesn't seem to work (may be fixed)
 - If you help one of the Lilycove Pokémon Center ladies, the other lady thinks you've already helped her as well
 
 ### Potentially just savefile issues due to playing while hacking

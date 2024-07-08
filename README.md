@@ -1808,6 +1808,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Evolution: 37->35
 
 - Cryogonal:
+    - Hidden Ability: None->Snow Warning
     - Learns Dazzling Gleam, Flash, and Power Gem by TM
 
 - Stunfisk:

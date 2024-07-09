@@ -94,7 +94,6 @@ upcoming
 - Vito can use TMs
 - Gym leaders/Steven/Breeders can have Hidden Abilities
 - Battle Archie at Oceanic Museum?
-- Maxie/Archie use Mega Evolutions
 - Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma. Mega Evo for Houndoom but unsure for Ninetales)
     - Could swap out Huntail for Mega Gyarados and only it and Houndoom get items
 
@@ -170,7 +169,7 @@ upcoming
     - look in graphics/ for more
     - Trainer card
 - Type effectiveness in battle: https://www.pokecommunity.com/showpost.php?p=10167016&postcount=83
-- Add Hyper Training
+- Add Hyper Training (Battle Frontier stats judge could do so)
 - Get rid of low health constant beeping (https://www.pokecommunity.com/showpost.php?p=10246778&postcount=194)
 - Replace ifdefs for move stats with just one set of stats?
     - Would likely cause merge conflicts going forward
@@ -203,8 +202,6 @@ upcoming
 - Make inserting trainer sprites easier?
     - Wrapper for src/data/graphics/trainers.h?
 - Contests overhaul
-- Change Rival brother back to one with glasses?
-- Improve Old Lady house
 
 ### Big changes from Vanilla - low priority
 - Remove IVs? Maybe make boolean for either 0 or 31 added to stat

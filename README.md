@@ -396,7 +396,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Flannery                |24, 24, 26, 29        |28, 30, 30, 32|
 |Norman                  |27, 27, 29, 31        |31, 33, 33, 35|
 |Shelly Weather Institute|28, 28                |41, 41, 43|
-|Rival 119               |29, 29, 31            |42, 42, 42, 43|
+|Rival 119               |29, 29, 31            |41, 41, 42, 43|
 |Winona                  |29, 29, 30, 31, 33    |43, 43, 44, 44, 46|
 |Rival Lilycove          |31, 32, 32, 34        |48, 48, 48, 49, 50|
 |Tabitha Magma Hideout   |26, 28, 30, 33        |50, 50, 52|
@@ -1168,7 +1168,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Aqua Jet by level up
 
 - Seaking:
-    - Learns Aqua Jet by level up
+    - Learns Aqua Jet and Drill Run by level up
 
 - Pinsir:
     - Catch rate: 45->90
@@ -1481,6 +1481,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Mud Shot, Fury Cutter, Bug Bite, Swords Dance, and Leech Life by level up
 
 - Whismur:
+    - Received Run Away as a second ability
     - Learn Disarming Voice by level up
 
 - Loudred:

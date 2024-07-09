@@ -23,64 +23,14 @@
     .party = NULL,
 },
 
-#define RIVAL_STARTER(Location, Species, Nature, Gender) \
-    {                                                    \
-    .lvl = RIVAL_##Location##_STARTER_LEVEL,             \
-    .species = SPECIES_##Species,                        \
-    .nature = NATURE_##Nature,                           \
-    PERFECT_IVS,                                         \
-    .gender = TRAINER_MON_##Gender,                      \
-    }
-
-#define RIVAL_ROUTE_103_STARTER_LEVEL 5
-
-#define RIVAL_RUSTBORO_STARTER_LEVEL 15
-#define RIVAL_RUSTBORO_WHISMUR(Gender)         \
-    {                                          \
-    .lvl = 13,                                 \
-    .species = SPECIES_WHISMUR,                \
-    IVS(3),                                    \
-    .gender = TRAINER_MON_##Gender,            \
-    }
-
+#define RIVAL_ROUTE_103_STARTER_LEVEL  5
+#define RIVAL_RUSTBORO_STARTER_LEVEL  15
 #define RIVAL_ROUTE_110_STARTER_LEVEL 20
-#define RIVAL_ROUTE_110_MON(Species, Ability, Gender) \
-    {                                                 \
-    .lvl = 18,                                        \
-    .species = SPECIES_##Species,                     \
-    .ability = ABILITY_##Ability,                     \
-    IVS(6),                                           \
-    .gender = TRAINER_MON_##Gender,                   \
-    }
-
 #define RIVAL_ROUTE_119_STARTER_LEVEL 43
-#define RIVAL_ROUTE_119_MON(Species, Ability, Gender) \
-    {                                                 \
-    .lvl = 42,                                        \
-    .species = SPECIES_##Species,                     \
-    .ability = ABILITY_##Ability,                     \
-    IVS(12),                                          \
-    .gender = TRAINER_MON_##Gender,                   \
-    }
+#define RIVAL_LILYCOVE_STARTER_LEVEL  50
 
-#define RIVAL_LILYCOVE_STARTER_LEVEL 50
-#define RIVAL_LILYCOVE_LOUDRED(Ability, Gender)      \
-    {                                                \
-    .lvl = RIVAL_LILYCOVE_STARTER_LEVEL - 1,         \
-    .species = SPECIES_LOUDRED,                      \
-    .ability = ABILITY_##Ability,                    \
-    IVS(18),                                         \
-    .gender = TRAINER_MON_##Gender,                  \
-    }
-
-#define RIVAL_LILYCOVE_MON(Species, Ability, Gender) \
-    {                                                \
-    .lvl = RIVAL_LILYCOVE_STARTER_LEVEL - 2,         \
-    .species = SPECIES_##Species,                    \
-    .ability = ABILITY_##Ability,                    \
-    IVS(18),                                         \
-    .gender = TRAINER_MON_##Gender,                  \
-    }
+#define BRENDAN 0
+#define MAY     1
 
 #define BRENDAN_INFO                                       \
     .trainerName = _("Brendan"),                           \
@@ -89,171 +39,6 @@
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE, \
     BOSS_AI_FLAGS
 
-[TRAINER_BRENDAN_ROUTE_103_MUDKIP] =
-{
-    BRENDAN_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_STARTER(ROUTE_103, TREECKO, SERIOUS, MALE),
-    },
-},
-
-[TRAINER_BRENDAN_RUSTBORO_MUDKIP] =
-{
-    BRENDAN_INFO,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_RUSTBORO_WHISMUR(MALE),
-        RIVAL_STARTER(RUSTBORO, TREECKO, SERIOUS, MALE),
-    },
-},
-
-[TRAINER_BRENDAN_ROUTE_110_MUDKIP] =
-{
-    BRENDAN_INFO,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_ROUTE_110_MON(CORPHISH, HYPER_CUTTER, MALE),
-        RIVAL_ROUTE_110_MON(WHISMUR, SOUNDPROOF, MALE),
-        RIVAL_STARTER(ROUTE_110, GROVYLE, SERIOUS, MALE),
-    },
-},
-
-[TRAINER_BRENDAN_ROUTE_119_MUDKIP] =
-{
-    BRENDAN_INFO,
-    .partySize = 4,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_ROUTE_119_MON(SLUGMA, FLAME_BODY, MALE),
-        RIVAL_ROUTE_119_MON(CRAWDAUNT, HYPER_CUTTER, MALE),
-        RIVAL_ROUTE_119_MON(LOUDRED, PUNK_ROCK, MALE),
-        RIVAL_STARTER(ROUTE_119, GROVYLE, SERIOUS, MALE),
-    },
-},
-
-[TRAINER_BRENDAN_LILYCOVE_MUDKIP] =
-{
-    BRENDAN_INFO,
-    .partySize = 5,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_LILYCOVE_MON(VIBRAVA, LEVITATE, MALE),
-        RIVAL_LILYCOVE_MON(MAGCARGO, FLAME_BODY, MALE),
-        RIVAL_LILYCOVE_MON(CRAWDAUNT, HYPER_CUTTER, MALE),
-        RIVAL_LILYCOVE_LOUDRED(PUNK_ROCK, MALE),
-        RIVAL_STARTER(LILYCOVE, SCEPTILE, SERIOUS, MALE),
-    },
-},
-
-[TRAINER_BRENDAN_ROUTE_103_TREECKO] =
-{
-    BRENDAN_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_STARTER(ROUTE_103, TORCHIC, SERIOUS, MALE),
-    },
-},
-
-[TRAINER_BRENDAN_RUSTBORO_TREECKO] =
-{
-    BRENDAN_INFO,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_RUSTBORO_WHISMUR(MALE),
-        RIVAL_STARTER(RUSTBORO, TORCHIC, SERIOUS, MALE),
-    },
-},
-
-[TRAINER_BRENDAN_ROUTE_110_TREECKO] =
-{
-    BRENDAN_INFO,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_ROUTE_110_MON(SHROOMISH, EFFECT_SPORE, MALE),
-        RIVAL_ROUTE_110_MON(WHISMUR, SOUNDPROOF, MALE),
-        RIVAL_STARTER(ROUTE_110, COMBUSKEN, SERIOUS, MALE),
-    },
-},
-
-[TRAINER_BRENDAN_ROUTE_119_TREECKO] =
-{
-    BRENDAN_INFO,
-    .partySize = 4,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_ROUTE_119_MON(CORPHISH, HYPER_CUTTER, MALE),
-        RIVAL_ROUTE_119_MON(BRELOOM, EFFECT_SPORE, MALE),
-        RIVAL_ROUTE_119_MON(LOUDRED, PUNK_ROCK, MALE),
-        RIVAL_STARTER(ROUTE_119, COMBUSKEN, SERIOUS, MALE),
-    },
-},
-
-[TRAINER_BRENDAN_LILYCOVE_TREECKO] =
-{
-    BRENDAN_INFO,
-    .partySize = 5,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_LILYCOVE_MON(VIBRAVA, LEVITATE, MALE),
-        RIVAL_LILYCOVE_MON(CRAWDAUNT, HYPER_CUTTER, MALE),
-        RIVAL_LILYCOVE_MON(BRELOOM, EFFECT_SPORE, MALE),
-        RIVAL_LILYCOVE_LOUDRED(PUNK_ROCK, MALE),
-        RIVAL_STARTER(LILYCOVE, BLAZIKEN, SERIOUS, MALE),
-    },
-},
-
-[TRAINER_BRENDAN_ROUTE_103_TORCHIC] =
-{
-    BRENDAN_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_STARTER(ROUTE_103, MUDKIP, SERIOUS, MALE),
-    },
-},
-
-[TRAINER_BRENDAN_RUSTBORO_TORCHIC] =
-{
-    BRENDAN_INFO,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_RUSTBORO_WHISMUR(MALE),
-        RIVAL_STARTER(RUSTBORO, MUDKIP, SERIOUS, MALE),
-    },
-},
-
-[TRAINER_BRENDAN_ROUTE_110_TORCHIC] =
-{
-    BRENDAN_INFO,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_ROUTE_110_MON(SLUGMA, FLAME_BODY, MALE),
-        RIVAL_ROUTE_110_MON(WHISMUR, SOUNDPROOF, MALE),
-        RIVAL_STARTER(ROUTE_110, MARSHTOMP, SERIOUS, MALE),
-    },
-},
-
-[TRAINER_BRENDAN_ROUTE_119_TORCHIC] =
-{
-    BRENDAN_INFO,
-    .partySize = 4,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_ROUTE_119_MON(SHROOMISH, EFFECT_SPORE, MALE),
-        RIVAL_ROUTE_119_MON(MAGCARGO, FLAME_BODY, MALE),
-        RIVAL_ROUTE_119_MON(LOUDRED, PUNK_ROCK, MALE),
-        RIVAL_STARTER(ROUTE_119, MARSHTOMP, SERIOUS, MALE),
-    },
-},
-
-[TRAINER_BRENDAN_LILYCOVE_TORCHIC] =
-{
-    BRENDAN_INFO,
-    .partySize = 5,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_LILYCOVE_MON(VIBRAVA, LEVITATE, MALE),
-        RIVAL_LILYCOVE_MON(BRELOOM, EFFECT_SPORE, MALE),
-        RIVAL_LILYCOVE_MON(MAGCARGO, FLAME_BODY, MALE),
-        RIVAL_LILYCOVE_LOUDRED(PUNK_ROCK, MALE),
-        RIVAL_STARTER(LILYCOVE, SWAMPERT, SERIOUS, MALE),
-    },
-},
-
 #define MAY_INFO                                                                \
     .trainerName = _("May"),                                                    \
     .trainerClass = TRAINER_CLASS_RIVAL,                                        \
@@ -261,170 +46,101 @@
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE, \
     BOSS_AI_FLAGS
 
-[TRAINER_MAY_ROUTE_103_MUDKIP] =
-{
-    MAY_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_STARTER(ROUTE_103, TREECKO, QUIRKY, FEMALE),
-    },
-},
+#define RIVAL_STARTER(Location, Starter, Rival)                         \
+    {                                                                   \
+    .lvl = RIVAL_##Location##_STARTER_LEVEL,                            \
+    .species = Starter##_STARTER + (RIVAL_##Location##_STARTER_LEVEL < RIVAL_ROUTE_110_STARTER_LEVEL ? 0 : (RIVAL_##Location##_STARTER_LEVEL < RIVAL_LILYCOVE_STARTER_LEVEL ? 1 : 2)), \
+    .nature = Rival == BRENDAN ? NATURE_SERIOUS : NATURE_QUIRKY,        \
+    PERFECT_IVS,                                                        \
+    .gender = Rival == BRENDAN ? TRAINER_MON_MALE : TRAINER_MON_FEMALE, \
+    }
 
-[TRAINER_MAY_RUSTBORO_MUDKIP] =
-{
-    MAY_INFO,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_RUSTBORO_WHISMUR(FEMALE),
-        RIVAL_STARTER(RUSTBORO, TREECKO, QUIRKY, FEMALE),
-    },
-},
+#define RIVAL_WHISMUR(Location, Rival)                                  \
+    {                                                                   \
+    .lvl = RIVAL_##Location##_STARTER_LEVEL - (RIVAL_##Location##_STARTER_LEVEL < RIVAL_ROUTE_119_STARTER_LEVEL ? 2 : 1), \
+    .species = RIVAL_##Location##_STARTER_LEVEL < RIVAL_ROUTE_119_STARTER_LEVEL ? SPECIES_WHISMUR : SPECIES_LOUDRED, \
+    .ability = Rival == BRENDAN,                                        \
+    IVS(18),                                                            \
+    .gender = Rival == BRENDAN ? TRAINER_MON_MALE : TRAINER_MON_FEMALE, \
+    }
 
-[TRAINER_MAY_ROUTE_110_MUDKIP] =
-{
-    MAY_INFO,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_ROUTE_110_MON(WINGULL, KEEN_EYE, FEMALE),
-        RIVAL_ROUTE_110_MON(WHISMUR, SOUNDPROOF, FEMALE),
-        RIVAL_STARTER(ROUTE_110, GROVYLE, QUIRKY, FEMALE),
-    },
-},
+#define RIVAL_MON(Location, Species, Ability, Rival)                    \
+    {                                                                   \
+    .lvl = RIVAL_##Location##_STARTER_LEVEL - 2,                        \
+    .species = SPECIES_##Species,                                       \
+    .ability = ABILITY_##Ability,                                       \
+    IVS(RIVAL_##Location##_STARTER_LEVEL < RIVAL_ROUTE_119_STARTER_LEVEL ? 6 : (RIVAL_##Location##_STARTER_LEVEL < RIVAL_LILYCOVE_STARTER_LEVEL ? 12 : 18)), \
+    .gender = Rival == BRENDAN ? TRAINER_MON_MALE : TRAINER_MON_FEMALE, \
+    }
 
-[TRAINER_MAY_ROUTE_119_MUDKIP] =
-{
-    MAY_INFO,
-    .partySize = 4,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_ROUTE_119_MON(VULPIX, FLASH_FIRE, FEMALE),
-        RIVAL_ROUTE_119_MON(PELIPPER, KEEN_EYE, FEMALE),
-        RIVAL_ROUTE_119_MON(LOUDRED, SOUNDPROOF, FEMALE),
-        RIVAL_STARTER(ROUTE_119, GROVYLE, QUIRKY, FEMALE),
-    },
-},
+#define RIVAL_BATTLES(Rival, Type, Mon3, Evo3, Ability3, Mon4, Evo4, Ability4) \
+[TRAINER_##Rival##_ROUTE_103_##Type] =                                         \
+{                                                                              \
+    Rival##_INFO,                                                              \
+    .partySize = 1,                                                            \
+    .party = (const struct TrainerMon[]) {                                     \
+        RIVAL_STARTER(ROUTE_103, Type, Rival),                                 \
+    },                                                                         \
+},                                                                             \
+                                                                               \
+[TRAINER_##Rival##_RUSTBORO_##Type] =                                          \
+{                                                                              \
+    Rival##_INFO,                                                              \
+    .partySize = 2,                                                            \
+    .party = (const struct TrainerMon[]) {                                     \
+        RIVAL_WHISMUR(RUSTBORO, Rival),                                        \
+        RIVAL_STARTER(RUSTBORO, Type, Rival),                                  \
+    },                                                                         \
+},                                                                             \
+                                                                               \
+[TRAINER_##Rival##_ROUTE_110_##Type] =                                         \
+{                                                                              \
+    Rival##_INFO,                                                              \
+    .partySize = 3,                                                            \
+    .party = (const struct TrainerMon[]) {                                     \
+        RIVAL_MON(ROUTE_110, Mon3, Ability3, Rival),                           \
+        RIVAL_WHISMUR(ROUTE_110, Rival),                                       \
+        RIVAL_STARTER(ROUTE_110, Type, Rival),                                 \
+    },                                                                         \
+},                                                                             \
+                                                                               \
+[TRAINER_##Rival##_ROUTE_119_##Type] =                                         \
+{                                                                              \
+    Rival##_INFO,                                                              \
+    .partySize = 4,                                                            \
+    .party = (const struct TrainerMon[]) {                                     \
+        RIVAL_MON(ROUTE_119, Mon4, Ability4, Rival),                           \
+        RIVAL_MON(ROUTE_119, Evo3, Ability3, Rival),                           \
+        RIVAL_WHISMUR(ROUTE_119, Rival),                                       \
+        RIVAL_STARTER(ROUTE_119, Type, Rival),                                 \
+    },                                                                         \
+},                                                                             \
+                                                                               \
+[TRAINER_##Rival##_LILYCOVE_##Type] =                                          \
+{                                                                              \
+    Rival##_INFO,                                                              \
+    .partySize = 5,                                                            \
+    .party = (const struct TrainerMon[]) {                                     \
+        {                                                                      \
+        .lvl = RIVAL_LILYCOVE_STARTER_LEVEL - 2,                               \
+        .species = SPECIES_VIBRAVA,                                            \
+        .ability = ABILITY_LEVITATE,                                           \
+        IVS(18),                                                               \
+        .gender = Rival == BRENDAN ? TRAINER_MON_MALE : TRAINER_MON_FEMALE,    \
+        },                                                                     \
+        RIVAL_MON(LILYCOVE, Evo4, Ability4, Rival),                            \
+        RIVAL_MON(LILYCOVE, Evo3, Ability3, Rival),                            \
+        RIVAL_WHISMUR(LILYCOVE, Rival),                                        \
+        RIVAL_STARTER(LILYCOVE, Type, Rival),                                  \
+    },                                                                         \
+}
 
-[TRAINER_MAY_LILYCOVE_MUDKIP] =
-{
-    MAY_INFO,
-    .partySize = 5,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_LILYCOVE_MON(VIBRAVA, LEVITATE, FEMALE),
-        RIVAL_LILYCOVE_MON(NINETALES, FLASH_FIRE, FEMALE),
-        RIVAL_LILYCOVE_MON(PELIPPER, KEEN_EYE, FEMALE),
-        RIVAL_LILYCOVE_LOUDRED(SOUNDPROOF, FEMALE),
-        RIVAL_STARTER(LILYCOVE, SCEPTILE, QUIRKY, FEMALE),
-    },
-},
-
-[TRAINER_MAY_ROUTE_103_TREECKO] =
-{
-    MAY_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_STARTER(ROUTE_103, TORCHIC, QUIRKY, FEMALE),
-    },
-},
-
-[TRAINER_MAY_RUSTBORO_TREECKO] =
-{
-    MAY_INFO,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_RUSTBORO_WHISMUR(FEMALE),
-        RIVAL_STARTER(RUSTBORO, TORCHIC, QUIRKY, FEMALE),
-    },
-},
-
-[TRAINER_MAY_ROUTE_110_TREECKO] =
-{
-    MAY_INFO,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_ROUTE_110_MON(CACNEA, SAND_VEIL, FEMALE),
-        RIVAL_ROUTE_110_MON(WHISMUR, SOUNDPROOF, FEMALE),
-        RIVAL_STARTER(ROUTE_110, COMBUSKEN, QUIRKY, FEMALE),
-    },
-},
-
-[TRAINER_MAY_ROUTE_119_TREECKO] =
-{
-    MAY_INFO,
-    .partySize = 4,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_ROUTE_119_MON(WINGULL, KEEN_EYE, FEMALE),
-        RIVAL_ROUTE_119_MON(CACTURNE, SAND_VEIL, FEMALE),
-        RIVAL_ROUTE_119_MON(LOUDRED, SOUNDPROOF, FEMALE),
-        RIVAL_STARTER(ROUTE_119, COMBUSKEN, QUIRKY, FEMALE),
-    },
-},
-
-[TRAINER_MAY_LILYCOVE_TREECKO] =
-{
-    MAY_INFO,
-    .partySize = 5,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_LILYCOVE_MON(VIBRAVA, LEVITATE, FEMALE),
-        RIVAL_LILYCOVE_MON(PELIPPER, KEEN_EYE, FEMALE),
-        RIVAL_LILYCOVE_MON(CACTURNE, SAND_VEIL, FEMALE),
-        RIVAL_LILYCOVE_LOUDRED(SOUNDPROOF, FEMALE),
-        RIVAL_STARTER(LILYCOVE, BLAZIKEN, QUIRKY, FEMALE),
-    },
-},
-
-[TRAINER_MAY_ROUTE_103_TORCHIC] =
-{
-    MAY_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_STARTER(ROUTE_103, MUDKIP, QUIRKY, FEMALE),
-    },
-},
-
-[TRAINER_MAY_RUSTBORO_TORCHIC] =
-{
-    MAY_INFO,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_RUSTBORO_WHISMUR(FEMALE),
-        RIVAL_STARTER(RUSTBORO, MUDKIP, QUIRKY, FEMALE),
-    },
-},
-
-[TRAINER_MAY_ROUTE_110_TORCHIC] =
-{
-    MAY_INFO,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_ROUTE_110_MON(VULPIX, FLASH_FIRE, FEMALE),
-        RIVAL_ROUTE_110_MON(WHISMUR, SOUNDPROOF, FEMALE),
-        RIVAL_STARTER(ROUTE_110, MARSHTOMP, QUIRKY, FEMALE),
-    },
-},
-
-[TRAINER_MAY_ROUTE_119_TORCHIC] =
-{
-    MAY_INFO,
-    .partySize = 4,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_ROUTE_119_MON(CACNEA, SAND_VEIL, FEMALE),
-        RIVAL_ROUTE_119_MON(NINETALES, FLASH_FIRE, FEMALE),
-        RIVAL_ROUTE_119_MON(LOUDRED, SOUNDPROOF, FEMALE),
-        RIVAL_STARTER(ROUTE_119, MARSHTOMP, QUIRKY, FEMALE),
-    },
-},
-
-[TRAINER_MAY_LILYCOVE_TORCHIC] =
-{
-    MAY_INFO,
-    .partySize = 5,
-    .party = (const struct TrainerMon[]) {
-        RIVAL_LILYCOVE_MON(VIBRAVA, LEVITATE, FEMALE),
-        RIVAL_LILYCOVE_MON(CACTURNE, SAND_VEIL, FEMALE),
-        RIVAL_LILYCOVE_MON(NINETALES, FLASH_FIRE, FEMALE),
-        RIVAL_LILYCOVE_LOUDRED(SOUNDPROOF, FEMALE),
-        RIVAL_STARTER(LILYCOVE, SWAMPERT, QUIRKY, FEMALE),
-    },
-},
+RIVAL_BATTLES(BRENDAN, GRASS, CORPHISH, CRAWDAUNT, HYPER_CUTTER, SLUGMA, MAGCARGO, FLAME_BODY),
+RIVAL_BATTLES(BRENDAN, FIRE, SHROOMISH, BRELOOM, EFFECT_SPORE, CORPHISH, CRAWDAUNT, HYPER_CUTTER),
+RIVAL_BATTLES(BRENDAN, WATER, SLUGMA, MAGCARGO, FLAME_BODY, SHROOMISH, BRELOOM, EFFECT_SPORE),
+RIVAL_BATTLES(MAY, GRASS, WINGULL, PELIPPER, KEEN_EYE, VULPIX, NINETALES, FLASH_FIRE),
+RIVAL_BATTLES(MAY, FIRE, CACNEA, CACTURNE, SAND_VEIL, WINGULL, PELIPPER, KEEN_EYE),
+RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_VEIL),
 
 #define ENDGAME_REMATCH_2_LEVEL 65
 #define ENDGAME_REMATCH_3_LEVEL 70
@@ -1529,6 +1245,67 @@
     },
 },
 
+#define WINONA_ALTARIA(rematch)            \
+    {                                      \
+    REMATCH_MON(, ACE, rematch),           \
+    .ability = ABILITY_,                   \
+    .nature = NATURE_,                     \
+    .ev = ,                                \
+    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
+    .gender = TRAINER_MON_MALE,            \
+    .heldItem = ITEM_,                     \
+    }
+
+#define WINONA_SWELLOW(rematch)            \
+    {                                      \
+    REMATCH_MON(, TIER2, rematch),         \
+    .ability = ABILITY_,                   \
+    .nature = NATURE_,                     \
+    .ev = ,                                \
+    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
+    .gender = TRAINER_MON_MALE,            \
+    }
+
+#define WINONA_PELIPPER(rematch)           \
+    {                                      \
+    REMATCH_MON(, TIER2, rematch),         \
+    .ability = ABILITY_,                   \
+    .nature = NATURE_,                     \
+    .ev = ,                                \
+    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
+    .gender = TRAINER_MON_MALE,            \
+    }
+
+#define WINONA_TROPIUS(rematch)            \
+    {                                      \
+    REMATCH_MON(, TIER3, rematch),         \
+    .ability = ABILITY_,                   \
+    .nature = NATURE_,                     \
+    .ev = ,                                \
+    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
+    .gender = TRAINER_MON_MALE,            \
+    }
+
+#define WINONA_MASQUERAIN(rematch)         \
+    {                                      \
+    REMATCH_MON(, TIER3, rematch),         \
+    .ability = ABILITY_,                   \
+    .nature = NATURE_,                     \
+    .ev = ,                                \
+    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
+    .gender = TRAINER_MON_MALE,            \
+    }
+
+#define WINONA_(rematch)                   \
+    {                                      \
+    REMATCH_MON(, TIER3, rematch),         \
+    .ability = ABILITY_,                   \
+    .nature = NATURE_,                     \
+    .ev = ,                                \
+    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
+    .gender = TRAINER_MON_MALE,            \
+    }
+
 [TRAINER_WINONA_2] =
 {
     WINONA_INFO,
@@ -1751,6 +1528,68 @@
     },
 },
 
+#define TATE_SOLROCK(rematch)              \
+    {                                      \
+    REMATCH_MON(, ACE, rematch),           \
+    .ability = ABILITY_,                   \
+    .nature = NATURE_,                     \
+    .ev = ,                                \
+    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
+    .gender = TRAINER_MON_MALE,            \
+    .heldItem = ITEM_,                     \
+    }
+
+#define LIZA_LUNATONE(rematch)             \
+    {                                      \
+    REMATCH_MON(, ACE, rematch),           \
+    .ability = ABILITY_,                   \
+    .nature = NATURE_,                     \
+    .ev = ,                                \
+    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
+    .gender = TRAINER_MON_MALE,            \
+    .heldItem = ITEM_,                     \
+    }
+
+#define TATE_GRUMPIG(rematch)              \
+    {                                      \
+    REMATCH_MON(, TIER2, rematch),         \
+    .ability = ABILITY_,                   \
+    .nature = NATURE_,                     \
+    .ev = ,                                \
+    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
+    .gender = TRAINER_MON_MALE,            \
+    }
+
+#define LIZA_CLAYDOL(rematch)              \
+    {                                      \
+    REMATCH_MON(, TIER2, rematch),         \
+    .ability = ABILITY_,                   \
+    .nature = NATURE_,                     \
+    .ev = ,                                \
+    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
+    .gender = TRAINER_MON_MALE,            \
+    }
+
+#define TATE_CHIMECHO(rematch)             \
+    {                                      \
+    REMATCH_MON(, TIER3, rematch),         \
+    .ability = ABILITY_,                   \
+    .nature = NATURE_,                     \
+    .ev = ,                                \
+    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
+    .gender = TRAINER_MON_MALE,            \
+    }
+
+#define LIZA_GARDEVOIR(rematch)            \
+    {                                      \
+    REMATCH_MON(, TIER3, rematch),         \
+    .ability = ABILITY_,                   \
+    .nature = NATURE_,                     \
+    .ev = ,                                \
+    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
+    .gender = TRAINER_MON_MALE,            \
+    }
+
 [TRAINER_TATE_AND_LIZA_2] =
 {
     TATE_AND_LIZA_INFO,
@@ -1949,6 +1788,68 @@
         }
     },
 },
+
+#define JUAN_WHISCASH(rematch)             \
+    {                                      \
+    REMATCH_MON(, ACE, rematch),           \
+    .ability = ABILITY_,                   \
+    .nature = NATURE_,                     \
+    .ev = ,                                \
+    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
+    .gender = TRAINER_MON_MALE,            \
+    .heldItem = ITEM_,                     \
+    }
+
+#define JUAN_LUVDISC(rematch)              \
+    {                                      \
+    REMATCH_MON(, TIER2, rematch),         \
+    .ability = ABILITY_,                   \
+    .nature = NATURE_,                     \
+    .ev = ,                                \
+    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
+    .gender = TRAINER_MON_MALE,            \
+    }
+
+#define JUAN_CRAWDAUNT(rematch)            \
+    {                                      \
+    REMATCH_MON(, TIER2, rematch),         \
+    .ability = ABILITY_,                   \
+    .nature = NATURE_,                     \
+    .ev = ,                                \
+    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
+    .gender = TRAINER_MON_MALE,            \
+    }
+
+#define JUAN_HUNTAIL(rematch)              \
+    {                                      \
+    REMATCH_MON(, TIER3, rematch),         \
+    .ability = ABILITY_,                   \
+    .nature = NATURE_,                     \
+    .ev = ,                                \
+    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
+    .gender = TRAINER_MON_MALE,            \
+    }
+
+#define JUAN_CASTFORM(rematch)             \
+    {                                      \
+    REMATCH_MON(, TIER3, rematch),         \
+    .ability = ABILITY_,                   \
+    .nature = NATURE_,                     \
+    .ev = ,                                \
+    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
+    .gender = TRAINER_MON_MALE,            \
+    }
+
+#define JUAN_SWAMPERT(rematch)             \
+    {                                      \
+    REMATCH_MON(, TIER3, rematch),         \
+    .ability = ABILITY_,                   \
+    .nature = NATURE_,                     \
+    .ev = ,                                \
+    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
+    .gender = TRAINER_MON_MALE,            \
+    }
+
 
 [TRAINER_JUAN_2] =
 {

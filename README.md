@@ -394,7 +394,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Tabitha Mt. Chimney     |18, 20, 22, 22        |27, 27, 29|
 |Maxie Mt. Chimney       |24, 24, 25            |28, 29, 29, 30|
 |Flannery                |24, 24, 26, 29        |28, 30, 30, 32|
-|Norman                  |27, 27, 29, 31        |32, 34, 34, 36|
+|Norman                  |27, 27, 29, 31        |31, 33, 33, 35|
 |Shelly Weather Institute|28, 28                |41, 41, 43|
 |Rival 119               |29, 29, 31            |42, 42, 42, 43|
 |Winona                  |29, 29, 30, 31, 33    |43, 43, 44, 44, 46|

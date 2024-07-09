@@ -550,43 +550,43 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "CACNEA"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "BALTOY"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "BALTOY"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "BALTOY"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "BALTOY"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "SANDSHREW"
               }
             ]
@@ -6825,43 +6825,43 @@
             "encounter_rate": 5,
             "mons": [
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "BALTOY"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "BALTOY"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "TRAPINCH"
               }
             ]
@@ -6874,43 +6874,43 @@
             "encounter_rate": 5,
             "mons": [
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "BALTOY"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "BALTOY"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "TRAPINCH"
               }
             ]
@@ -6923,43 +6923,43 @@
             "encounter_rate": 5,
             "mons": [
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "BALTOY"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "BALTOY"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "TRAPINCH"
               }
             ]
@@ -6972,43 +6972,43 @@
             "encounter_rate": 5,
             "mons": [
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "BALTOY"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "BALTOY"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "25, 28",
+                "range": "RANGE_DESERT",
                 "species": "TRAPINCH"
               }
             ]

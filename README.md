@@ -198,12 +198,13 @@ There are some mechanics, moves and abilities that are missing and being develop
 - [Sapphire Jester for making the Soot Sack usuable](https://www.pokecommunity.com/showpost.php?p=10222284&postcount=178)
 
 ## Known Bugs
-- Moving an Pokemon in the PC seems to duplicate its item in the bag
 - Followers will stop following you if you use the naming screen from the party menu. It will start to follow you again if you talk to it
 - When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
+- Some of the EV-reducing berries on Route 123 will randomly disappear and then come back
 - If you help one of the Lilycove Pokémon Center ladies, the other lady thinks you've already helped her as well
 
 ### Potentially just savefile issues due to playing while hacking
+- Moving an Pokemon in the PC seems to duplicate its item in the bag
 - Items in the Battle Pyramid's Battle Bag/held items in the Battle Pike are turning into Poke Balls
     - Seems to happen after trainer battles?
 
@@ -395,8 +396,8 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Maxie Mt. Chimney       |24, 24, 25            |28, 29, 29, 30|
 |Flannery                |24, 24, 26, 29        |28, 30, 30, 32|
 |Norman                  |27, 27, 29, 31        |31, 33, 33, 35|
-|Shelly Weather Institute|28, 28                |41, 41, 43|
-|Rival 119               |29, 29, 31            |41, 41, 42, 43|
+|Shelly Weather Institute|28, 28                |39, 39, 41|
+|Rival 119               |29, 29, 31            |40, 40, 41, 42|
 |Winona                  |29, 29, 30, 31, 33    |43, 43, 44, 44, 46|
 |Rival Lilycove          |31, 32, 32, 34        |48, 48, 48, 49, 50|
 |Tabitha Magma Hideout   |26, 28, 30, 33        |50, 50, 52|

@@ -26,7 +26,7 @@
 #define RIVAL_ROUTE_103_STARTER_LEVEL  5
 #define RIVAL_RUSTBORO_STARTER_LEVEL  15
 #define RIVAL_ROUTE_110_STARTER_LEVEL 20
-#define RIVAL_ROUTE_119_STARTER_LEVEL 43
+#define RIVAL_ROUTE_119_STARTER_LEVEL 42
 #define RIVAL_LILYCOVE_STARTER_LEVEL  50
 
 #define BRENDAN 0
@@ -2805,6 +2805,22 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .trainerPic = TRAINER_PIC_AQUA_ADMIN_F,                                   \
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA, \
     BOSS_AI_FLAGS
+
+#define SHELLY_GOREBYSS(Level)   \
+    .lvl = Level,                \
+    .species = SPECIES_GOREBYSS, \
+    .gender = TRAINER_MON_FEMALE
+
+#define SHELLY_GOLDEEN(Level)   \
+    .lvl = Level,                \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_GOLDEEN : SPECIES_SEAKING, \
+    .ability = ABILITY_SWIFT_SWIM,      \
+    .gender = TRAINER_MON_FEMALE
+
+#define SHELLY_STARYU(Level)   \
+    .lvl = Level,                \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_STARYU : SPECIES_STARMIE, \
+    .ability = ABILITY_ILLUMINATE
 
 #define MATT_INFO                                          \
     .trainerName = _("Matt"),                              \
@@ -9600,7 +9616,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 #define ANDRES_SANDSHREW(Level)                                                     \
     .lvl = Level,                                                                   \
-    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_SANDSHREW : SPECIES_SANDSLASH, \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_SANDSHREW : SPECIES_SANDSLASH, \
     .gender = TRAINER_MON_MALE
 
 #define ANDRES_BALTOY(Level) \
@@ -9804,7 +9820,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 #define TONY_CARVANHA(Level)                                                      \
     .lvl = Level,                                                                 \
-    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_CARVANHA : SPECIES_SHARPEDO, \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_CARVANHA : SPECIES_SHARPEDO, \
     .gender = TRAINER_MON_MALE
 
 #define TONY_STARYU(Level)                                                   \
@@ -10030,7 +10046,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 #define CORY_TENTACOOL(Level)                                                        \
     .lvl = Level,                                                                    \
-    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_TENTACOOL : SPECIES_TENTACRUEL, \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_TENTACOOL : SPECIES_TENTACRUEL, \
     .ability = ABILITY_CLEAR_BODY,                                                   \
     .gender = TRAINER_MON_MALE
 
@@ -10165,7 +10181,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 #define THALIA_HORSEA(Level)   \
     .lvl = Level,              \
-    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_HORSEA : (Level < REMATCH_3_LEVEL_6 ? SPECIES_SEADRA : SPECIES_KINGDRA), \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_HORSEA : (Level < REMATCH_4_LEVEL_6 ? SPECIES_SEADRA : SPECIES_KINGDRA), \
     .ability = ABILITY_SNIPER, \
     .gender = TRAINER_MON_FEMALE
 
@@ -10891,14 +10907,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 #define CATHERINE_ROSELIA(Level)                                               \
     .lvl = Level,                                                              \
-    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_ROSELIA : SPECIES_ROSERADE, \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_ROSELIA : SPECIES_ROSERADE, \
     .ability = ABILITY_NATURAL_CURE,                                           \
     IVS(10),                                                                   \
     .gender = TRAINER_MON_FEMALE
 
 #define CATHERINE_GLOOM(Level)                                                \
     .lvl = Level,                                                             \
-    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_GLOOM : SPECIES_BELLOSSOM, \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_GLOOM : SPECIES_BELLOSSOM, \
     IVS(10),                                                                  \
     .gender = TRAINER_MON_FEMALE
 
@@ -10987,7 +11003,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 
 #define JACKSON_TREECKO(Level) \
     .lvl = Level,              \
-    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_TREECKO : (Level < REMATCH_4_LEVEL_6 ? SPECIES_GROVYLE : SPECIES_SCEPTILE), \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_TREECKO : (Level < REMATCH_4_LEVEL_6 ? SPECIES_GROVYLE : SPECIES_SCEPTILE), \
     IVS(10),                   \
     .gender = TRAINER_MON_MALE
 
@@ -11161,16 +11177,12 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 //Weather Institute
 [TRAINER_GRUNT_WEATHER_INST_1] =
 {
-    AQUA_GRUNT_M_INFO,
-    .partySize = 2,
+    AQUA_GRUNT_F_INFO,
+    .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 40,
+        .lvl = 38,
         .species = SPECIES_CARVANHA,
-        },
-        {
-        .lvl = 40,
-        .species = SPECIES_CORPHISH,
         }
     },
 },
@@ -11181,12 +11193,12 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 40,
+        .lvl = 37,
         .species = SPECIES_CARVANHA,
         },
         {
-        .lvl = 40,
-        .species = SPECIES_WAILMER,
+        .lvl = 37,
+        .species = SPECIES_CORPHISH,
         }
     },
 },
@@ -11194,19 +11206,15 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_WEATHER_INST_3] =
 {
     AQUA_GRUNT_M_INFO,
-    .partySize = 3,
+    .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 39,
+        .lvl = 37,
         .species = SPECIES_CARVANHA,
         },
         {
-        .lvl = 39,
-        .species = SPECIES_CLAMPERL,
-        },
-        {
-        .lvl = 39,
-        .species = SPECIES_TENTACOOL,
+        .lvl = 37,
+        .species = SPECIES_WAILMER,
         }
     },
 },
@@ -11214,27 +11222,35 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
 [TRAINER_GRUNT_WEATHER_INST_4] =
 {
     AQUA_GRUNT_F_INFO,
-    .partySize = 1,
+    .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
-        .species = SPECIES_CARVANHA,
+        .lvl = 37,
+        .species = SPECIES_STARYU,
+        },
+        {
+        .lvl = 37,
+        .species = SPECIES_GOLDEEN,
         }
     },
 },
 
 [TRAINER_GRUNT_WEATHER_INST_5] =
 {
-    AQUA_GRUNT_F_INFO,
-    .partySize = 2,
+    AQUA_GRUNT_M_INFO,
+    .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 40,
-        .species = SPECIES_STARYU,
+        .lvl = 36,
+        .species = SPECIES_CARVANHA,
         },
         {
-        .lvl = 40,
-        .species = SPECIES_GOLDEEN,
+        .lvl = 36,
+        .species = SPECIES_CLAMPERL,
+        },
+        {
+        .lvl = 36,
+        .species = SPECIES_TENTACOOL,
         }
     },
 },
@@ -11245,18 +11261,15 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
-        .species = SPECIES_STARYU,
+        SHELLY_STARYU(39),
         IVS(6),
         },
         {
-        .lvl = 41,
-        .species = SPECIES_GOLDEEN,
+        SHELLY_GOLDEEN(39),
         IVS(6),
         },
         {
-        .lvl = 43,
-        .species = SPECIES_GOREBYSS,
+        SHELLY_GOREBYSS(41),
         IVS(6),
         }
     },
@@ -11271,7 +11284,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 32,
+        .lvl = 39,
         .species = SPECIES_MANECTRIC,
         }
     },
@@ -11285,7 +11298,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 32,
+        .lvl = 39,
         .species = SPECIES_NINJASK,
         }
     },
@@ -11299,14 +11312,14 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 31,
+        .lvl = 38,
         .species = SPECIES_KOFFING,
-        .moves = {MOVE_TACKLE, MOVE_GYRO_BALL, MOVE_SLUDGE, MOVE_SMOKESCREEN}
+        .moves = {MOVE_SLUDGE_BOMB, MOVE_ASSURANCE, MOVE_TOXIC, MOVE_SMOKESCREEN}
         },
         {
-        .lvl = 31,
+        .lvl = 38,
         .species = SPECIES_KOFFING,
-        .moves = {MOVE_TACKLE, MOVE_POISON_GAS, MOVE_SLUDGE, MOVE_SMOKESCREEN}
+        .moves = {MOVE_SLUDGE_BOMB, MOVE_ASSURANCE, MOVE_TOXIC, MOVE_SMOKESCREEN}
         }
     },
 },
@@ -15160,18 +15173,15 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
-        .species = SPECIES_STARMIE,
+        SHELLY_STARYU(42),
         IVS(12),
         },
         {
-        .lvl = 42,
-        .species = SPECIES_SEAKING,
+        SHELLY_GOLDEEN(42),
         IVS(12),
         },
         {
-        .lvl = 43,
-        .species = SPECIES_GOREBYSS,
+        SHELLY_GOREBYSS(43),
         IVS(12),
         }
     },
@@ -15852,7 +15862,7 @@ LYDIA_INFO(5, REMATCH_5_LEVEL_3),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 42,
-        .species = SPECIES_TROPIUS,
+        .species = SPECIES_BLAZIKEN,
         }
     },
 },

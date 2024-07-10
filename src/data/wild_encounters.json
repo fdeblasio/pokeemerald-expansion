@@ -7169,43 +7169,43 @@
             "mons": [
               {
                 "range": "60, 60",
-                "species": "TREECKO"
+                "species": "GRASS_STARTER"
               },
               {
                 "range": "60, 60",
-                "species": "TORCHIC"
+                "species": "FIRE_STARTER"
               },
               {
                 "range": "60, 60",
-                "species": "MUDKIP"
+                "species": "WATER_STARTER"
               },
               {
                 "range": "60, 60",
-                "species": "MUDKIP"
+                "species": "WATER_STARTER"
               },
               {
                 "range": "60, 60",
-                "species": "TREECKO"
+                "species": "GRASS_STARTER"
               },
               {
                 "range": "60, 60",
-                "species": "TORCHIC"
+                "species": "FIRE_STARTER"
               },
               {
                 "range": "60, 60",
-                "species": "MUDKIP"
+                "species": "WATER_STARTER"
               },
               {
                 "range": "60, 60",
-                "species": "MUDKIP"
+                "species": "WATER_STARTER"
               },
               {
                 "range": "60, 60",
-                "species": "HAPPINY"
+                "species": "SPECIES_HAPPINY"
               },
               {
                 "range": "60, 60",
-                "species": "HAPPINY"
+                "species": "SPECIES_HAPPINY"
               }
             ]
           }

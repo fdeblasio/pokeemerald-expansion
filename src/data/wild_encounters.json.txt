@@ -27,7 +27,11 @@
 const struct WildPokemon {{ encounter.base_label }}_LandMons[] =
 {
 ## for wild_mon in encounter.land_mons.mons
+{% if encounter.base_label == "gAlteringCave1" %}
+    { {{ wild_mon.range }}, {{ wild_mon.species }} },
+{% else %}
     { {{ wild_mon.range }}, {{ "SPECIES_" + wild_mon.species }} },
+{% endif %}
 ## endfor
 };
 const struct WildPokemonInfo {{ encounter.base_label }}_LandMonsInfo = { {{encounter.land_mons.encounter_rate}}, {{ encounter.base_label }}_LandMons };

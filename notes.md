@@ -100,6 +100,7 @@ upcoming
 ### Moves
 - Fix incense egg moves
 - Have multi-hit moves display the minimum? Or just have consant hit moves (Hit Twice, plus Triple Kick or Triple Axel if buffed to 100% accuracy)
+- Just make new tutors in towns
 - TMs/Tutors
     - Hyper Voice tutor->TM?
     - Temper Flare (with better STAB distribution)
@@ -230,9 +231,11 @@ upcoming
     - Sandslash, Ninetales, Cursola, and maybe Obstagoon can be used to diversify the Elite Four teams
 
 ## Future hacks
-All Yellow Pokémon:
+- All Yellow Pokémon:
     - Yellow shinies (Lickitung, Altaria, Luxray, Bellibolt, etc) replacing the regular palette
         - Change Pokédex colors to match
     - Give trainer mugshot yellow palette if possible (replace Wallace's yellow with something else)
     - Replace green with yellow on player sprites?
     - If not enough, could also add black (Charmander line would have shiny palettes as they're both yellow and black)
+- Tropical:
+    - Tropius, Bellossom, Pau Oricorio, Tsareena, probably a lot of Alolan Pokémon, both forms of Exeggutor (Sun Stone for Alolan)

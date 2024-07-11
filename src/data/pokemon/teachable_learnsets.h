@@ -1,5 +1,5 @@
 // *************************************************** //
-// TM/HM moves found in "include/constants/tms_hms.h": //
+// TM/HM moves found in "include/constants/tms.h":     //
 // - MOVE_FOCUS_PUNCH                                  //
 // - MOVE_DRAGON_CLAW                                  //
 // - MOVE_WATER_PULSE                                  //
@@ -102,12 +102,12 @@
 // - MOVE_MOONBLAST                                    //
 // - MOVE_CUT                                          //
 // - MOVE_FLY                                          //
+// - MOVE_SURF                                         //
 // - MOVE_STRENGTH                                     //
 // - MOVE_FLASH                                        //
 // - MOVE_ROCK_SMASH                                   //
-// - MOVE_DIVE                                         //
-// - MOVE_SURF                                         //
 // - MOVE_WATERFALL                                    //
+// - MOVE_DIVE                                         //
 // *************************************************** //
 // Tutor moves found in map scripts:                   //
 // - MOVE_COUNTER                                      //

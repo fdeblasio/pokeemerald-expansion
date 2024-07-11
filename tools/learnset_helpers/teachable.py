@@ -33,7 +33,7 @@ for file in incs_to_check:
                 tutor_moves.append(x)
 
 # scan TMs and HMs
-with open("./include/constants/tms_hms.h", 'r') as file:
+with open("./include/constants/tms.h", 'r') as file:
     for x in re.findall(r'F\((.*)\)', file.read()):
         if not 'MOVE_' + x in tm_moves:
             tm_moves.append('MOVE_' + x)
@@ -174,7 +174,7 @@ for move in tm_moves + tutor_moves:
 longest_move_name += 2 # + 2 for a hyphen and a space
 
 universal_title = "Near-universal moves found in sUniversalMoves:"
-tmhm_title = "TM/HM moves found in \"include/constants/tms_hms.h\":"
+tmhm_title = "TM/HM moves found in \"include/constants/tms.h\":"
 tutor_title = "Tutor moves found in map scripts:"
 
 if longest_move_name < len(universal_title):

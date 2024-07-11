@@ -1,7 +1,7 @@
 #ifndef GUARD_CONSTANTS_TMS_INC
 #define GUARD_CONSTANTS_TMS_INC
 
-#include "constants/tms_hms.h"
+#include "constants/tms.h"
 
 /* Expands to:
 * enum_start ITEM_TM01

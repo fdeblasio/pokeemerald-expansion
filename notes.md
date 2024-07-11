@@ -48,7 +48,9 @@ upcoming
 - Consolidate flags
     - FLAG_DEFEATED_MAUVILLE_GYM, FLAG_BADGE03_GET, FLAG_HIDE_MAUVILLE_ROCK_SMASH_TIP_GUY
     - FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA
-- Remove unused code (both in vanilla as well as stuff like move tutor flags since they're now infinite)
+- Remove unused code
+    - Vanilla code
+    - Move tutor flags since they're now infinite
 
 ### Pokémon
 - Eventually remove RSE and/or BDSP teachable moves
@@ -57,30 +59,44 @@ upcoming
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?
 - Edit Surskit mass outbreak?
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
+- Remove Safari Zone?
+    - Move Solar Beam to Lilycove Department Store
+    - Pichu: New Mauville
+    - Natu: Route 111?
+    - Phanpy: Route 111?
+    - Psyduck: Various ponds
+    - Wynaut: Make Mirage Island permanent?
+    - Heracross/Pinsir: Route 119?
+    - Girafarig: Route 120?
+    - Doduo: ???
+    - Rhyhorn: ???
+    - Mareep/Gligar/Sunkern/Snubbull/Stantler/Spinarak/Hoothoot/Wooper/Remoraid/Teddiursa/Shuckle/Pineco/Aipom/Miltank/Ledyba: Remove?
 
 ### Items
 - Get Exp. Share from Steven instead of from Mr. Stone after
+    - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game
 - Ideally all SV TMs would be available if the bag was ever expanded greatly
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Include charms?
 - Xaman's TM Case: https://www.pokecommunity.com/showpost.php?p=10378278
 
 ### Trainers
-- Add Wally battle near Fallarbor with new Swablu/evolved Roselia
+- Battle Archie at Oceanic Museum?
 - More mugshots for other bosses?
 - Readjust wild/trainer levels so that parties aren't overpowered?
 - Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)
-    - Figure out intermittent rematch levels (for example rematch 2 levels for trainers after Petalburg or rematch 3 levels for trainers after Fortree)
+    - Figure out intermittent rematch levels (for example rematch 2 levels for trainers after Petalburg or rematch 2/3 levels for trainers after Fortree)
 - Elite Four rematches (wouldn't need to use Match Call, could probably do if statement in scripts.inc)
-- 6th rematches for trainers post-Elite Four?
+- 6th rematches for trainers post-Elite Four? (Might not work due to running out of trainer space)
 - Update Elite Four palettes
     - battle_transitions/*_bg.pal to better match types
     - stadium/palette3-7.pal to better match ypes
-- Brendan/May/Steven rematches? (Steven's would be the same team but re-battleable)
-- Consolidate Brendan and May battles with macros and code
-    - For Route 103, something like sStarterMon[(VAR_STARTER_MON + 1) % STARTER_MON_COUNT]
-    - If so, maybe move them in trainers.h to be in order of the other trainers
+- Brendan/May rematches? (Route 103?)
+- Steven rematches? (Would be the same team but re-battleable)
+- Give Winstrates rematches?
 - Maybe add Brendan/May/Maxie/Archie/admins/Winstrate rematches in Battle Frontier?
+    - Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma. Mega Evo for Houndoom but unsure for Ninetales)
+        - Could swap out Huntail for Mega Gyarados and only it and Houndoom get items
 - Try to get every Pokemon in Pokedex in at least one rematch?
 - Trainer customization:
     - All rematches should have consistent values (gender, IVs (unless maxed but only > level 50), etc.)
@@ -90,16 +106,10 @@ upcoming
 - Use Good Ruby's palette shifting to give trainers more unique looks? (https://github.com/Doesnty/goodruby/commit/ff53bbab592865b49f345342205b41cb869abf27)
 - Psychics can use Psyduck, Golduck, and Farigiraf now
     - Update Mossdeep Gym if there are duplicates of other Pokemon
-- Give Winstrates rematches?
 - Vito can use TMs
 - Gym leaders/Steven/Breeders can have Hidden Abilities
-- Battle Archie at Oceanic Museum?
-- Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma. Mega Evo for Houndoom but unsure for Ninetales)
-    - Could swap out Huntail for Mega Gyarados and only it and Houndoom get items
 
 ### Moves
-- Fix incense egg moves
-- Have multi-hit moves display the minimum? Or just have consant hit moves (Hit Twice, plus Triple Kick or Triple Axel if buffed to 100% accuracy)
 - Just make new tutors in towns
 - TMs/Tutors
     - Hyper Voice tutor->TM?
@@ -117,7 +127,6 @@ upcoming
 - Edit moves that work in field
     - Maybe edit so instead of "if has move" to "if can learn move"
         - Might not be simple since it's .inc and not C
-        - Would really help with Surf, though
     - Cut (only in Trick House):
         - Moves boosted by Sharpness
     - Strength (only in Trick House and Seafloor Cavern):
@@ -125,7 +134,7 @@ upcoming
         - Close Combat?
 - Make Fly usuable after 2nd badge? Or maybe even aftering delivering goods in Slateport?
 - Fly to routes:
-    - Route 121: Safari Zone
+    - Route 121: Safari Zone (if not removed)
     - Route 128: Where Steven flies to?
 
 ### Overworld
@@ -134,7 +143,7 @@ upcoming
     - Overworld sprites to match trainer sprites (for example, Rangers red clothes, Dragon Tamers capes and correct hair color, or Rich Boys correct clothes and hair color)
 - Add FRLG trainer sprites/overworld sprites
     - Sprites are added but still need to be implemented. Overworld sprites may have duplicates for Pokémon and may need palettes
-- Improve Pokémon overworld sprites
+- Replace Pokémon overworld sprites with follower sprites
 
 ### Battle Frontier
 - Battle Tent Pokémon/EVs?
@@ -172,8 +181,6 @@ upcoming
 - Type effectiveness in battle: https://www.pokecommunity.com/showpost.php?p=10167016&postcount=83
 - Add Hyper Training (Battle Frontier stats judge could do so)
 - Get rid of low health constant beeping (https://www.pokecommunity.com/showpost.php?p=10246778&postcount=194)
-- Replace ifdefs for move stats with just one set of stats?
-    - Would likely cause merge conflicts going forward
 - Add more EXP Candy
 - PC in menu
     - look at debug menu or at https://www.pokecommunity.com/showpost.php?p=10127351&postcount=47
@@ -192,7 +199,7 @@ upcoming
     - Add Regigigas to Sealed Chamber?
     - Regieleki near New Mauville?
     - Regidrago near Meteor Falls?
-- Diversify water routes instead of just Tentacool/Wingull (definitely add more Carvanha; bring some fishing encounters to Surf)
+- Diversify water routes instead of just Tentacool/Wingull (definitely add more Carvanha, especially around Team Aqua-related areas; bring some fishing encounters to Surf)
 - Add postgame Pokémon to Hoenn Pokédex? National Pokédex is useless due to no connectivity with other games
     - Johto starters need Hoenn Pokédex completed to get, but could have them act similarly to Jirachi/Deoxys
     - Could remove handing out of National Pokédex entirely, would need to see what checks if the National Pokédex exists (like Birch Lab state for Johto)

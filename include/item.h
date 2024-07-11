@@ -3,7 +3,7 @@
 
 #include "constants/item.h"
 #include "constants/items.h"
-#include "constants/tms_hms.h"
+#include "constants/tms.h"
 
 typedef void (*ItemUseFunc)(u8);
 

@@ -2366,43 +2366,43 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "range": "35, 37",
+                "range": "RANGE_ROUTE_120",
                 "species": "ABSOL"
               },
               {
-                "range": "35, 37",
+                "range": "RANGE_ROUTE_120",
                 "species": "MASQUERAIN"
               },
               {
-                "range": "35, 37",
+                "range": "RANGE_ROUTE_120",
                 "species": "MIGHTYENA"
               },
               {
-                "range": "35, 37",
+                "range": "RANGE_ROUTE_120",
                 "species": "LINOONE"
               },
               {
-                "range": "35, 37",
+                "range": "RANGE_ROUTE_120",
                 "species": "GLOOM"
               },
               {
-                "range": "35, 37",
+                "range": "RANGE_ROUTE_120",
                 "species": "GLOOM"
               },
               {
-                "range": "35, 37",
+                "range": "RANGE_ROUTE_120",
                 "species": "ABSOL"
               },
               {
-                "range": "35, 37",
+                "range": "RANGE_ROUTE_120",
                 "species": "KECLEON"
               },
               {
-                "range": "35, 37",
+                "range": "RANGE_ROUTE_120",
                 "species": "MIGHTYENA"
               },
               {
-                "range": "35, 37",
+                "range": "RANGE_ROUTE_120",
                 "species": "LINOONE"
               }
             ]
@@ -2411,19 +2411,19 @@
             "encounter_rate": 4,
             "mons": [
               {
-                "range": "35, 37",
+                "range": "RANGE_ROUTE_120",
                 "species": "AZUMARILL"
               },
               {
-                "range": "35, 37",
+                "range": "RANGE_ROUTE_120",
                 "species": "GOLDEEN"
               },
               {
-                "range": "35, 37",
+                "range": "RANGE_ROUTE_120",
                 "species": "MASQUERAIN"
               },
               {
-                "range": "35, 37",
+                "range": "RANGE_ROUTE_120",
                 "species": "MASQUERAIN"
               }
             ]
@@ -2431,15 +2431,15 @@
           "fishing_mons": {
             "mons": [
               {
-                "range": "35, 37",
+                "range": "RANGE_ROUTE_120",
                 "species": "MAGIKARP"
               },
               {
-                "range": "35, 37",
+                "range": "RANGE_ROUTE_120",
                 "species": "GOLDEEN"
               },
               {
-                "range": "35, 37",
+                "range": "RANGE_ROUTE_120",
                 "species": "BARBOACH"
               },
               {

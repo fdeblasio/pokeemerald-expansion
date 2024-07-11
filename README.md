@@ -398,7 +398,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Norman                  |27, 27, 29, 31        |31, 33, 33, 35|
 |Shelly Weather Institute|28, 28                |39, 39, 41|
 |Rival 119               |29, 29, 31            |40, 40, 41, 42|
-|Winona                  |29, 29, 30, 31, 33    |43, 43, 44, 44, 46|
+|Winona                  |29, 29, 30, 31, 33    |40, 40, 41, 41, 43|
 |Rival Lilycove          |31, 32, 32, 34        |48, 48, 48, 49, 50|
 |Tabitha Magma Hideout   |26, 28, 30, 33        |50, 50, 52|
 |Maxie Magma Hideout     |37, 38, 39            |51, 52, 52, 53|
@@ -1502,12 +1502,17 @@ There are some mechanics, moves and abilities that are missing and being develop
     - SpD: 150->145
 
 - Skitty:
+    - Def: 45->35
     - SpA: 35->55
+    - SpD: 35->45
     - Spe: 50->55
     - Learns Quick Attack, Swift and Headbutt by level up
 
 - Delcatty:
-    - SpA: 55->75
+    - Atk: 65->55
+    - Def: 65->55
+    - SpA: 55->85
+    - SpD: 55->65
     - Spe: 90->95
     - Learns Quick Attack, Swift, and Headbutt by level up
 
@@ -1558,7 +1563,11 @@ There are some mechanics, moves and abilities that are missing and being develop
     - All stats: 60->80
 
 - Altaria:
+    - SpA: 70->80
     - Learns Air Slash by TM
+
+- Mega Altaria:
+    - SpD: 105->115
 
 - Zangoose:
     - Learns Cut by HM
@@ -1718,7 +1727,9 @@ There are some mechanics, moves and abilities that are missing and being develop
     - HP: 103->105
     - Gender Ratio: 50/50 -> 25/75
     - Base experience: 390->395
-    - Mega base experience: 425->500
+
+- Mega Audino:
+    - Base experience: 425->500
 
 - Swadloon:
     - Can also evolve at level 30
@@ -1910,6 +1921,13 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Crabominable:
     - Learns Icicle Crash by TM
+
+- Bounsweet/Steenee:
+    - Held item: Magost Berry: 0%->50%
+
+- Tsareena:
+    - Held item: Magost Berry: 0%->50%
+    - Held item: Grassy Seed: 50%->5%
 
 - Type: Null:
     - Can also evolve at level 45

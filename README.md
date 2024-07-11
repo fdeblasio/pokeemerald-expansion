@@ -1281,10 +1281,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Togepi (not in main game):
     - Can also evolve at level 16
 
-- Mareep/Flaaffy:
+- Mareep/Flaaffy (postgame):
     - Learn Tail Glow by Egg Move
 
-- Ampharos:
+- Ampharos (postgame):
     - Learns Tail Glow by level up
 
 - Azurill:

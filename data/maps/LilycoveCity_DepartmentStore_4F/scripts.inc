@@ -119,6 +119,7 @@ LilycoveCity_DepartmentStore_4F_EventScript_ClerkRight::
 	.align 2
 LilycoveCity_DepartmentStore_4F_Pokemart_NewTMs:
 	.2byte ITEM_TM_ENERGY_BALL
+	.2byte ITEM_TM_SUPERCELL_SLAM
 	.2byte ITEM_TM_PSYCHIC_FANGS
 	.2byte ITEM_TM_DRAGON_PULSE
 	.2byte ITEM_TM_DRAIN_PUNCH
@@ -130,7 +131,6 @@ LilycoveCity_DepartmentStore_4F_Pokemart_NewTMs:
 	.2byte ITEM_TM_LEECH_LIFE
 	.2byte ITEM_TM_STONE_EDGE
 	.2byte ITEM_TM_ICICLE_CRASH
-	.2byte ITEM_TM_SUPERCELL_SLAM
 	.2byte ITEM_TM_CRUNCH
 	.2byte ITEM_TM_DARK_PULSE
 	.2byte ITEM_TM_ROCK_SLIDE

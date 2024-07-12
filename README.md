@@ -402,7 +402,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Shelly Weather Institute|28, 28                |39, 39, 41|
 |Rival 119               |29, 29, 31            |40, 40, 41, 42|
 |Winona                  |29, 29, 30, 31, 33    |40, 40, 41, 41, 43|
-|Rival Lilycove          |31, 32, 32, 34        |48, 48, 48, 49, 50|
+|Rival Lilycove          |31, 32, 32, 34        |43, 43, 43, 44, 45|
 |Tabitha Magma Hideout   |26, 28, 30, 33        |50, 50, 52|
 |Maxie Magma Hideout     |37, 38, 39            |51, 52, 52, 53|
 |Matt Aqua Hideout       |34, 34                |52, 52, 54|

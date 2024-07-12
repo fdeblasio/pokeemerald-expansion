@@ -6433,43 +6433,43 @@
             "encounter_rate": 5,
             "mons": [
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "NUMEL"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "SLUGMA"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "BALTOY"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "BALTOY"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               }
             ]
@@ -6482,43 +6482,43 @@
             "encounter_rate": 5,
             "mons": [
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "NUMEL"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "SLUGMA"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "BALTOY"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "BALTOY"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               }
             ]
@@ -6531,43 +6531,43 @@
             "encounter_rate": 5,
             "mons": [
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "NUMEL"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "SLUGMA"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "BALTOY"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "BALTOY"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               }
             ]
@@ -6580,43 +6580,43 @@
             "encounter_rate": 5,
             "mons": [
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "NUMEL"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "SLUGMA"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "BALTOY"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "BALTOY"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               }
             ]
@@ -6629,43 +6629,43 @@
             "encounter_rate": 5,
             "mons": [
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "NUMEL"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "SLUGMA"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "BALTOY"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "BALTOY"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               }
             ]
@@ -6678,43 +6678,43 @@
             "encounter_rate": 5,
             "mons": [
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "NUMEL"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "SLUGMA"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "BALTOY"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "BALTOY"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               }
             ]
@@ -6727,43 +6727,43 @@
             "encounter_rate": 5,
             "mons": [
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "NUMEL"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "SLUGMA"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "BALTOY"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "BALTOY"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               }
             ]
@@ -6776,43 +6776,43 @@
             "encounter_rate": 5,
             "mons": [
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "NUMEL"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "SLUGMA"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "BALTOY"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "BALTOY"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "45, 47",
+                "range": "RANGE_MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               }
             ]

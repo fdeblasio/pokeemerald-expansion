@@ -403,9 +403,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Rival 119               |29, 29, 31            |40, 40, 41, 42|
 |Winona                  |29, 29, 30, 31, 33    |40, 40, 41, 41, 43|
 |Rival Lilycove          |31, 32, 32, 34        |43, 43, 43, 44, 45|
-|Tabitha Magma Hideout   |26, 28, 30, 33        |50, 50, 52|
-|Maxie Magma Hideout     |37, 38, 39            |51, 52, 52, 53|
-|Matt Aqua Hideout       |34, 34                |52, 52, 54|
+|Tabitha Magma Hideout   |26, 28, 30, 33        |45, 45, 47|
+|Maxie Magma Hideout     |37, 38, 39            |46, 47, 47, 48|
+|Matt Aqua Hideout       |34, 34                |47, 47, 49|
 |Tate/Liza               |41, 41, 42, 42        |55, 55, 57, 57|
 |Courtney                |N/A                   |55, 55, 57|
 |Tabitha/Maxie           |36, 38, 40/42, 43, 44 |55, 55, 57/57, 58, 60|

@@ -2468,43 +2468,43 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "range": "40, 42",
+                "range": "RANGE_ROUTE_121",
                 "species": "DUSKULL"
               },
               {
-                "range": "40, 42",
+                "range": "RANGE_ROUTE_121",
                 "species": "SHUPPET"
               },
               {
-                "range": "40, 42",
+                "range": "RANGE_ROUTE_121",
                 "species": "DUSKULL"
               },
               {
-                "range": "40, 42",
+                "range": "RANGE_ROUTE_121",
                 "species": "SHUPPET"
               },
               {
-                "range": "40, 42",
+                "range": "RANGE_ROUTE_121",
                 "species": "MIGHTYENA"
               },
               {
-                "range": "40, 42",
+                "range": "RANGE_ROUTE_121",
                 "species": "GLOOM"
               },
               {
-                "range": "40, 42",
+                "range": "RANGE_ROUTE_121",
                 "species": "MIGHTYENA"
               },
               {
-                "range": "40, 42",
+                "range": "RANGE_ROUTE_121",
                 "species": "GLOOM"
               },
               {
-                "range": "40, 42",
+                "range": "RANGE_ROUTE_121",
                 "species": "PELIPPER"
               },
               {
-                "range": "40, 42",
+                "range": "RANGE_ROUTE_121",
                 "species": "KECLEON"
               }
             ]
@@ -2513,19 +2513,19 @@
             "encounter_rate": 1,
             "mons": [
               {
-                "range": "40, 42",
+                "range": "RANGE_ROUTE_121",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "40, 42",
+                "range": "RANGE_ROUTE_121",
                 "species": "PELIPPER"
               },
               {
-                "range": "40, 42",
+                "range": "RANGE_ROUTE_121",
                 "species": "PELIPPER"
               },
               {
-                "range": "40, 42",
+                "range": "RANGE_ROUTE_121",
                 "species": "PELIPPER"
               }
             ]
@@ -2533,15 +2533,15 @@
           "fishing_mons": {
             "mons": [
               {
-                "range": "40, 42",
+                "range": "RANGE_ROUTE_121",
                 "species": "MAGIKARP"
               },
               {
-                "range": "40, 42",
+                "range": "RANGE_ROUTE_121",
                 "species": "TENTACOOL"
               },
               {
-                "range": "40, 42",
+                "range": "RANGE_ROUTE_121",
                 "species": "WAILMER"
               },
               {

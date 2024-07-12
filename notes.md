@@ -54,7 +54,6 @@ upcoming
 
 ### Pokémon
 - Eventually remove RSE and/or BDSP teachable moves
-- Give Absol Sharpness?
 - Give Espeon Power Gem on level up or evolution?
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?
 - Edit Surskit mass outbreak?
@@ -71,6 +70,19 @@ upcoming
     - Doduo: ???
     - Rhyhorn: ???
     - Mareep/Gligar/Sunkern/Snubbull/Stantler/Spinarak/Hoothoot/Wooper/Remoraid/Teddiursa/Shuckle/Pineco/Aipom/Miltank/Ledyba: Remove?
+- Add in some Vega evolutions?
+    - Adnokana
+    - Cheauking
+    - Sandrill
+    - Ranconette/Manneking
+    - Valentide
+    - Galavagos
+    - Auldsparce
+    - R'duckulus
+    - Sableater/Gehemoth (as seperate)
+    - Ledybulk
+    - Rougella/Heilareina
+    - Pachirikku
 
 ### Items
 - Get Exp. Share from Steven instead of from Mr. Stone after
@@ -86,6 +98,7 @@ upcoming
 - Readjust wild/trainer levels so that parties aren't overpowered?
 - Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)
     - Figure out intermittent rematch levels (for example rematch 2 levels for trainers after Petalburg or rematch 2/3 levels for trainers after Fortree)
+- Edit Winona's text to change Bird to Flying?
 - Elite Four rematches (wouldn't need to use Match Call, could probably do if statement in scripts.inc)
 - 6th rematches for trainers post-Elite Four? (Might not work due to running out of trainer space)
 - Update Elite Four palettes
@@ -110,6 +123,7 @@ upcoming
 - Gym leaders/Steven/Breeders can have Hidden Abilities
 
 ### Moves
+- Remove egg moves that are part of level up learnsets
 - Just make new tutors in towns
 - TMs/Tutors
     - Hyper Voice tutor->TM?
@@ -183,7 +197,8 @@ upcoming
 - Get rid of low health constant beeping (https://www.pokecommunity.com/showpost.php?p=10246778&postcount=194)
 - Add more EXP Candy
 - PC in menu
-    - look at debug menu or at https://www.pokecommunity.com/showpost.php?p=10127351&postcount=47
+    - Look at debug menu or at https://www.pokecommunity.com/showpost.php?p=10127351&postcount=47
+    - Set OW_PC_HEAL to GEN_LATEST
 - Add relearning moves to PC?
 - More save space editing
     - Medicine Pocket?

@@ -202,6 +202,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
 - Some of the EV-reducing berries on Route 123 will randomly disappear and then come back
 - If you help one of the Lilycove Pokémon Center ladies, the other lady thinks you've already helped her as well
+    - Now one crashes the game and the other resets it
 
 ### Potentially just savefile issues due to playing while hacking
 - Moving an Pokemon in the PC seems to duplicate its item in the bag
@@ -1073,10 +1074,12 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Psyduck:
     - Type: Water->Water/Psychic
+    - Learns Psybeam, Extrasensory, and Psychic by level up
 
 - Golduck:
     - Type: Water->Water/Psychic
     - Learns Power Gem upon evolving
+    - Learns Psybeam, Extrasensory, and Psychic by level up
 
 - Zubat:
     - Learns Gust by level up
@@ -1281,6 +1284,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Togepi (not in main game):
     - Can also evolve at level 16
 
+- Natu/Xatu:
+    - Learns Confusion and Psybeam by level up
+
 - Mareep/Flaaffy (postgame):
     - Learn Tail Glow by Egg Move
 
@@ -1359,6 +1365,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Mantyke (not in main game):
     - Catch rate: 25->90
+
+- Houndour/Houndoom:
+    - Learn Snarl by level up
 
 - Stantler (postgame):
     - Learns Psyshield Bash by level up
@@ -1626,6 +1635,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Can also evolve at level 19
 
 - Absol:
+    - Hidden Ability: Justified->Sharpness
     - Learns Spite by Egg Move
 
 - Huntail:

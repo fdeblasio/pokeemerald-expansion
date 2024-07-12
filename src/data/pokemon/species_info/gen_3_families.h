@@ -8746,9 +8746,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
     #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_PRESSURE, ABILITY_SUPER_LUCK, ABILITY_JUSTIFIED },
+        .abilities = { ABILITY_PRESSURE, ABILITY_SUPER_LUCK, ABILITY_SHARPNESS },
     #else
-        .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_JUSTIFIED },
+        .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_SHARPNESS },
     #endif
         .bodyColor = BODY_COLOR_WHITE,
         .noFlip = TRUE,

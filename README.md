@@ -206,10 +206,11 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 ### Potentially just savefile issues due to merging upcoming/playing while hacking
 - Lilycove ladies crash the game
-- Moving an Pokemon in the PC seems to duplicate its item in the bag
+- Moving an Pokémon in the PC seems to duplicate its item in the bag
 - Items in the Battle Pyramid's Battle Bag/held items in the Battle Pike are turning into Poke Balls
     - Seems to happen after trainer battles?
 - Contest reporter says a number instead of the contest category
+    - The corresponding TV report thinks a winning Pokémon came in last
 
 ## Changes
 - NOTE: This all assumes there are no rebasing errors
@@ -240,6 +241,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - The door to Sealed Chamber and the Regis' inner rooms are now automatically open
 - Made rapids easier to navigate so that only one trip is needed to get all items/battle all trainers (at the cost of looking slightly worse)
 - All moves automatically have their max PP amount
+- Much easier to make good Pokéblocks
 - The Good Rod is now obtained on the left side of Route 118 instead of the right
 - Sacred Ash now works in battles although it only revives one Pokémon
 - Soul Dew uses its Gen 6 effect
@@ -247,8 +249,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 - EVs now give one stat increase for every EV but cap out at 63 (individual)/127 (total). This will lead to the same stats as the old system but easier to train
 - Bird Keepers now use the overworld sprite of male Psychics since it looks more like them than the blond sprite
 - Houndour was added to the Hoenn Pokédex to give Team Magma more variety
-- Frontier Brains have updated teams
-- Battle Pyramid wild Pokémon have been updated
 - Pokémon can now be listed as orange in the Pokédex
 - Underwater areas now connect better
 - Mirage Island now appears every other day
@@ -256,6 +256,8 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Tickets for islands where Latios, Latias, Deoxys, Lugia, Ho-Oh, and Mew reside are given after beating the Elite Four
     - Latios and Latias no longer roam and instead both show up on Southern Island
     - The Deoxys puzzle is much simpler
+- Frontier Brains have updated teams
+- Battle Pyramid wild Pokémon have been updated
 - Battle Frontier no longer requires saving
 - Two Pokémon having the same original trainer no longer negatively affects breeding chances
 - Certain sections are blocked off until gyms or rivals are defeated

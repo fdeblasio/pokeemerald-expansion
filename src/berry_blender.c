@@ -69,11 +69,11 @@ enum {
 
 enum {
     BLENDER_MISTER,
-    BLENDER_LADDIE,
-    BLENDER_LASSIE,
-    BLENDER_MASTER,
     BLENDER_DUDE,
-    BLENDER_MISS
+    BLENDER_LASSIE,
+    BLENDER_LADDIE,
+    BLENDER_MISS,
+    BLENDER_MASTER
 };
 
 #define BLENDER_MAX_PLAYERS MAX_LINK_PLAYERS
@@ -252,22 +252,11 @@ static const u16 sBlenderCenter_Pal[] = INCBIN_U16("graphics/berry_blender/cente
 static const u8 sBlenderCenter_Tilemap[] = INCBIN_U8("graphics/berry_blender/center_map.bin");
 static const u16 sBlenderOuter_Pal[] = INCBIN_U16("graphics/berry_blender/outer.gbapal");
 
-static const u16 sUnused_Pal[] = INCBIN_U16("graphics/berry_blender/unused.gbapal");
 static const u16 sEmpty_Pal[16 * 14] = {0};
 
 static const u8 sText_BerryBlenderStart[] = _("Starting up the Berry Blender.\pPlease select a Berry from your Bag\nto put in the Berry Blender.\p");
 static const u8 sText_NewParagraph[] = _("\p");
 static const u8 sText_WasMade[] = _(" was made!");
-
-static const u8 *const sBlenderOpponentsNames[] =
-{
-    [BLENDER_MISTER] = COMPOUND_STRING("Mister"),
-    [BLENDER_LADDIE] = COMPOUND_STRING("Laddie"),
-    [BLENDER_LASSIE] = COMPOUND_STRING("Lassie"),
-    [BLENDER_MASTER] = COMPOUND_STRING("Master"),
-    [BLENDER_DUDE]   = COMPOUND_STRING("Dude"),
-    [BLENDER_MISS]   = COMPOUND_STRING("Miss"),
-};
 
 static const u8 sText_CommunicationStandby[] = _("Communication standby…");
 static const u8 sText_WouldLikeToBlendAnotherBerry[] = _("Would you like to blend another Berry?");
@@ -1193,6 +1182,16 @@ static void ConvertItemToBlenderBerry(struct BlenderBerry* berry, u16 itemId)
     berry->flavors[FLAVOR_SOUR] = berryInfo->sour;
     berry->flavors[FLAVOR_COUNT] = berryInfo->smoothness;
 }
+
+static const u8 *const sBlenderOpponentsNames[] =
+{
+    [BLENDER_MISTER] = COMPOUND_STRING("Mister"),
+    [BLENDER_DUDE]   = COMPOUND_STRING("Dude"),
+    [BLENDER_LASSIE] = COMPOUND_STRING("Lassie"),
+    [BLENDER_LADDIE] = COMPOUND_STRING("Laddie"),
+    [BLENDER_MISS]   = COMPOUND_STRING("Miss"),
+    [BLENDER_MASTER] = COMPOUND_STRING("Master"),
+};
 
 static void InitLocalPlayers(u8 opponentsNum)
 {

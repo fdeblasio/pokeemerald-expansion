@@ -12,7 +12,7 @@ Merge conflicts:
 $1
 
 Debugging (https://cplusplus.com/reference/cstdio/printf/):
-MgbaPrintf(MGBA_LOG_WARN, "Friendship gain, modified: %d", mod);
+MgbaPrintf(MGBA_LOG_WARN, "XYZ: %d", mod);
 
 255 0 0
 0 255 0

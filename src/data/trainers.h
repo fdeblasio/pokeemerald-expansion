@@ -13526,7 +13526,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 38,
+        .lvl = 46,
         .species = SPECIES_AZUMARILL,
         }
     },
@@ -13540,7 +13540,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 38,
+        .lvl = 46,
         .species = SPECIES_GYARADOS,
         }
     },
@@ -13551,18 +13551,28 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     SIS_AND_BRO_INFO,               \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
+#define LILA_CHINCHOU(Level)                                    \
+    .lvl = Level,                                               \
+    .species = Level < 47 ? SPECIES_CHINCHOU : SPECIES_LANTURN, \
+    .ability = ABILITY_VOLT_ABSORB,                             \
+    .gender = TRAINER_MON_FEMALE
+
+#define ROY_HORSEA(Level)                                                                                    \
+    .lvl = Level,                                                                                            \
+    .species = Level < 45 ? SPECIES_HORSEA : (Level < REMATCH_5_LEVEL_6 ? SPECIES_SEADRA : SPECIES_KINGDRA), \
+    .ability = ABILITY_SWIFT_SWIM,                                                                           \
+    .gender = TRAINER_MON_MALE
+
 [TRAINER_LILA_AND_ROY_1] =
 {
     LILA_AND_ROY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 38,
-        .species = SPECIES_CHINCHOU,
+        LILA_CHINCHOU(46),
         },
         {
-        .lvl = 36,
-        .species = SPECIES_HORSEA,
+        ROY_HORSEA(44),
         }
     },
 },
@@ -13573,12 +13583,10 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
-        .species = SPECIES_LANTURN,
+        LILA_CHINCHOU(47),
         },
         {
-        .lvl = 40,
-        .species = SPECIES_SEADRA,
+        ROY_HORSEA(45),
         }
     },
 },
@@ -13589,12 +13597,10 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 45,
-        .species = SPECIES_LANTURN,
+        LILA_CHINCHOU(48),
         },
         {
-        .lvl = 43,
-        .species = SPECIES_SEADRA,
+        ROY_HORSEA(46),
         }
     },
 },
@@ -13605,12 +13611,10 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_4_LEVEL_1,
-        .species = SPECIES_LANTURN,
+        LILA_CHINCHOU(REMATCH_4_LEVEL_1),
         },
         {
-        .lvl = REMATCH_4_LEVEL_3,
-        .species = SPECIES_SEADRA,
+        ROY_HORSEA(REMATCH_4_LEVEL_3),
         }
     },
 },
@@ -13621,12 +13625,10 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_5_LEVEL_1,
-        .species = SPECIES_LANTURN,
+        LILA_CHINCHOU(REMATCH_5_LEVEL_1),
         },
         {
-        .lvl = REMATCH_5_LEVEL_3,
-        .species = SPECIES_KINGDRA,
+        ROY_HORSEA(REMATCH_5_LEVEL_3),
         }
     },
 },
@@ -13639,11 +13641,11 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 37,
+        .lvl = 45,
         .species = SPECIES_TENTACRUEL,
         },
         {
-        .lvl = 37,
+        .lvl = 45,
         .species = SPECIES_PELIPPER,
         }
     },
@@ -13654,14 +13656,29 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     SWIMMER_F_INFO,            \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
+#define JENNY_WAILMER(Level)                                   \
+    .lvl = Level,                                              \
+    .species = Level < 47 ? SPECIES_WAILMER : SPECIES_WAILORD, \
+    .ability = ABILITY_WATER_VEIL,                             \
+    .gender = TRAINER_MON_FEMALE
+
+#define JENNY_STARYU(Level)                                                  \
+    .lvl = Level,                                                            \
+    .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_STARYU : SPECIES_STARMIE, \
+    .ability = ABILITY_ILLUMINATE
+
+#define JENNY_LUVDISC(Level)    \
+    .lvl = Level,               \
+    .species = SPECIES_LUVDISC, \
+    .gender = TRAINER_MON_FEMALE
+
 [TRAINER_JENNY_1] =
 {
     JENNY_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 38,
-        .species = SPECIES_WAILMER,
+        JENNY_WAILMER(46),
         }
     },
 },
@@ -13672,12 +13689,10 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
-        .species = SPECIES_STARYU,
+        JENNY_STARYU(47),
         },
         {
-        .lvl = 42,
-        .species = SPECIES_WAILORD,
+        JENNY_WAILMER(47),
         }
     },
 },
@@ -13688,16 +13703,13 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 43,
-        .species = SPECIES_LUVDISC,
+        JENNY_LUVDISC(47),
         },
         {
-        .lvl = 43,
-        .species = SPECIES_STARYU,
+        JENNY_STARYU(47),
         },
         {
-        .lvl = 43,
-        .species = SPECIES_WAILORD,
+        JENNY_WAILMER(47),
         }
     },
 },
@@ -13708,16 +13720,13 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_4_LEVEL_3,
-        .species = SPECIES_LUVDISC,
+        JENNY_LUVDISC(REMATCH_4_LEVEL_3),
         },
         {
-        .lvl = REMATCH_4_LEVEL_3,
-        .species = SPECIES_STARYU,
+        JENNY_STARYU(REMATCH_4_LEVEL_3),
         },
         {
-        .lvl = REMATCH_4_LEVEL_3,
-        .species = SPECIES_WAILORD,
+        JENNY_WAILMER(REMATCH_4_LEVEL_3),
         }
     },
 },
@@ -13728,16 +13737,13 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_5_LEVEL_3,
-        .species = SPECIES_LUVDISC,
+        JENNY_LUVDISC(REMATCH_5_LEVEL_3),
         },
         {
-        .lvl = REMATCH_5_LEVEL_3,
-        .species = SPECIES_STARMIE,
+        JENNY_STARYU(REMATCH_5_LEVEL_3),
         },
         {
-        .lvl = REMATCH_5_LEVEL_3,
-        .species = SPECIES_WAILORD,
+        JENNY_WAILMER(REMATCH_5_LEVEL_3),
         }
     },
 },
@@ -13750,11 +13756,11 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 37,
+        .lvl = 45,
         .species = SPECIES_TENTACRUEL,
         },
         {
-        .lvl = 37,
+        .lvl = 45,
         .species = SPECIES_WAILMER,
         }
     },
@@ -13768,7 +13774,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        TRIATHLETE_MON(38, 0),
+        TRIATHLETE_MON(46, 0),
         .species = SPECIES_STARMIE,
         }
     },
@@ -13782,7 +13788,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 38,
+        .lvl = 46,
         .species = SPECIES_SHARPEDO,
         }
     },
@@ -13794,22 +13800,43 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     SAILOR_INFO,                \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
+#define ERNEST_MACHOKE(Level)                                  \
+    .lvl = Level,                                              \
+    .species = Level < 45 ? SPECIES_MACHOKE : SPECIES_MACHAMP, \
+    .ability = ABILITY_GUTS,                                   \
+    .gender = TRAINER_MON_MALE
+
+#define ERNEST_WAILMER(Level)                                  \
+    .lvl = Level,                                              \
+    .species = Level < 45 ? SPECIES_WAILMER : SPECIES_WAILORD, \
+    .ability = ABILITY_WATER_VEIL,                             \
+    .gender = TRAINER_MON_MALE
+
+#define ERNEST_PELIPPER(Level)   \
+    .lvl = Level,                \
+    .species = SPECIES_PELIPPER, \
+    .ability = ABILITY_KEEN_EYE, \
+    .gender = TRAINER_MON_MALE
+
+#define ERNEST_TENTACRUEL(Level)   \
+    .lvl = Level,                  \
+    .species = SPECIES_TENTACRUEL, \
+    .ability = ABILITY_CLEAR_BODY, \
+    .gender = TRAINER_MON_MALE
+
 [TRAINER_ERNEST_1] =
 {
     ERNEST_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 36,
-        .species = SPECIES_PELIPPER,
+        ERNEST_PELIPPER(44),
         },
         {
-        .lvl = 36,
-        .species = SPECIES_WAILMER,
+        ERNEST_WAILMER(44),
         },
         {
-        .lvl = 36,
-        .species = SPECIES_MACHOKE,
+        ERNEST_MACHOKE(44),
         }
     },
 },
@@ -13820,24 +13847,20 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 40,
-        .species = SPECIES_TENTACRUEL,
-        IVS(1),
+        ERNEST_TENTACRUEL(44),
+        IVS(2),
         },
         {
-        .lvl = 40,
-        .species = SPECIES_PELIPPER,
-        IVS(1),
+        ERNEST_PELIPPER(44),
+        IVS(2),
         },
         {
-        .lvl = 40,
-        .species = SPECIES_WAILMER,
-        IVS(1),
+        ERNEST_WAILMER(44),
+        IVS(2),
         },
         {
-        .lvl = 40,
-        .species = SPECIES_MACHOKE,
-        IVS(1),
+        ERNEST_MACHOKE(44),
+        IVS(2),
         }
     },
 },
@@ -13848,24 +13871,20 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
-        .species = SPECIES_TENTACRUEL,
-        IVS(2),
+        ERNEST_TENTACRUEL(45),
+        IVS(3),
         },
         {
-        .lvl = 42,
-        .species = SPECIES_PELIPPER,
-        IVS(2),
+        ERNEST_PELIPPER(45),
+        IVS(3),
         },
         {
-        .lvl = 42,
-        .species = SPECIES_WAILORD,
-        IVS(2),
+        ERNEST_WAILMER(45),
+        IVS(3),
         },
         {
-        .lvl = 42,
-        .species = SPECIES_MACHOKE,
-        IVS(2),
+        ERNEST_MACHOKE(45),
+        IVS(3),
         }
     },
 },
@@ -13876,23 +13895,19 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_4_LEVEL_4,
-        .species = SPECIES_TENTACRUEL,
+        ERNEST_TENTACRUEL(REMATCH_4_LEVEL_4),
         IVS(4),
         },
         {
-        .lvl = REMATCH_4_LEVEL_4,
-        .species = SPECIES_PELIPPER,
+        ERNEST_PELIPPER(REMATCH_4_LEVEL_4),
         IVS(4),
         },
         {
-        .lvl = REMATCH_4_LEVEL_4,
-        .species = SPECIES_WAILORD,
+        ERNEST_WAILMER(REMATCH_4_LEVEL_4),
         IVS(4),
         },
         {
-        .lvl = REMATCH_4_LEVEL_4,
-        .species = SPECIES_MACHOKE,
+        ERNEST_MACHOKE(REMATCH_4_LEVEL_4),
         IVS(4),
         }
     },
@@ -13904,23 +13919,19 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_5_LEVEL_4,
-        .species = SPECIES_TENTACRUEL,
+        ERNEST_TENTACRUEL(REMATCH_5_LEVEL_4),
         IVS(5),
         },
         {
-        .lvl = REMATCH_5_LEVEL_4,
-        .species = SPECIES_PELIPPER,
+        ERNEST_PELIPPER(REMATCH_5_LEVEL_4),
         IVS(5),
         },
         {
-        .lvl = REMATCH_5_LEVEL_4,
-        .species = SPECIES_WAILORD,
+        ERNEST_WAILMER(REMATCH_5_LEVEL_4),
         IVS(5),
         },
         {
-        .lvl = REMATCH_5_LEVEL_4,
-        .species = SPECIES_MACHAMP,
+        ERNEST_MACHOKE(REMATCH_5_LEVEL_4),
         IVS(5),
         }
     },
@@ -13934,7 +13945,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 38,
+        .lvl = 46,
         .species = SPECIES_TENTACRUEL,
         }
     },
@@ -13948,7 +13959,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 38,
+        .lvl = 46,
         .species = SPECIES_SEAKING,
         }
     },
@@ -13962,7 +13973,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 38,
+        .lvl = 46,
         .species = SPECIES_LUVDISC,
         }
     },
@@ -13976,11 +13987,11 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 37,
+        .lvl = 45,
         .species = SPECIES_TROPIUS,
         },
         {
-        .lvl = 37,
+        .lvl = 45,
         .species = SPECIES_XATU,
         }
     },
@@ -13994,11 +14005,11 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 37,
+        .lvl = 45,
         .species = SPECIES_MANECTRIC,
         },
         {
-        .lvl = 37,
+        .lvl = 45,
         .species = SPECIES_MACHAMP,
         }
     },
@@ -14012,7 +14023,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 37,
+        .lvl = 46,
         .species = SPECIES_SEADRA,
         }
     },
@@ -14026,12 +14037,12 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 36,
+        .lvl = 44,
         .species = SPECIES_CAMERUPT,
         .moves = {MOVE_FLAMETHROWER, MOVE_BULLDOZE, MOVE_REST, MOVE_CURSE}
         },
         {
-        .lvl = 38,
+        .lvl = 46,
         .species = SPECIES_ALTARIA,
         .moves = {MOVE_DRAGON_PULSE, MOVE_AERIAL_ACE, MOVE_SAFEGUARD, MOVE_COTTON_GUARD}
         }

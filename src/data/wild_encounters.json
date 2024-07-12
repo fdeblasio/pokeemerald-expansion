@@ -5605,19 +5605,19 @@
             "encounter_rate": 1,
             "mons": [
               {
-                "range": "50, 52",
+                "range": "RANGE_LILYCOVE_CITY",
                 "species": "CARVANHA"
               },
               {
-                "range": "50, 52",
+                "range": "RANGE_LILYCOVE_CITY",
                 "species": "PELIPPER"
               },
               {
-                "range": "50, 52",
+                "range": "RANGE_LILYCOVE_CITY",
                 "species": "PELIPPER"
               },
               {
-                "range": "50, 52",
+                "range": "RANGE_LILYCOVE_CITY",
                 "species": "PELIPPER"
               }
             ]
@@ -5625,15 +5625,15 @@
           "fishing_mons": {
             "mons": [
               {
-                "range": "50, 52",
+                "range": "RANGE_LILYCOVE_CITY",
                 "species": "MAGIKARP"
               },
               {
-                "range": "50, 52",
+                "range": "RANGE_LILYCOVE_CITY",
                 "species": "STARYU"
               },
               {
-                "range": "50, 52",
+                "range": "RANGE_LILYCOVE_CITY",
                 "species": "WAILMER"
               },
               {

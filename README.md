@@ -1324,6 +1324,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Misdreavus/Mismagius (not in main game):
     - Gender Ratio: 50/50->25/75
 
+- Girafarig/Farigiraf:
+    - Learn Swift by level up
+
 - Gligar/Gliscor (postgame):
     - Learn Dual Wingbeat by level up
 

@@ -202,9 +202,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
 - Some of the EV-reducing berries on Route 123 will randomly disappear and then come back
 - If you help one of the Lilycove Pokémon Center ladies, the other lady thinks you've already helped her as well
-    - Now one crashes the game and the other resets it
 
 ### Potentially just savefile issues due to playing while hacking
+- Lilycove ladies crash the game
 - Moving an Pokemon in the PC seems to duplicate its item in the bag
 - Items in the Battle Pyramid's Battle Bag/held items in the Battle Pike are turning into Poke Balls
     - Seems to happen after trainer battles?

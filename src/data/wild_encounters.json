@@ -1456,43 +1456,43 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               }
             ]
@@ -1554,43 +1554,43 @@
             "encounter_rate": 25,
             "mons": [
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "PICHU"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "DODUO"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "GIRAFARIG"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "GIRAFARIG"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "NATU"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "NATU"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "GLOOM"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "WYNAUT"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "GLOOM"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "WYNAUT"
               }
             ]
@@ -2570,19 +2570,19 @@
             "encounter_rate": 1,
             "mons": [
               {
-                "range": "41, 43",
+                "range": "RANGE_ROUTE_122",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_ROUTE_122",
                 "species": "PELIPPER"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_ROUTE_122",
                 "species": "PELIPPER"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_ROUTE_122",
                 "species": "PELIPPER"
               }
             ]
@@ -2590,15 +2590,15 @@
           "fishing_mons": {
             "mons": [
               {
-                "range": "41, 43",
+                "range": "RANGE_ROUTE_122",
                 "species": "MAGIKARP"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_ROUTE_122",
                 "species": "TENTACOOL"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_ROUTE_122",
                 "species": "WAILMER"
               },
               {
@@ -2627,43 +2627,43 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "range": "42, 44",
+                "range": "RANGE_ROUTE_123",
                 "species": "GLOOM"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_ROUTE_123",
                 "species": "MIGHTYENA"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_ROUTE_123",
                 "species": "LINOONE"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_ROUTE_123",
                 "species": "LINOONE"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_ROUTE_123",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_ROUTE_123",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_ROUTE_123",
                 "species": "PELIPPER"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_ROUTE_123",
                 "species": "KECLEON"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_ROUTE_123",
                 "species": "PELIPPER"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_ROUTE_123",
                 "species": "KECLEON"
               }
             ]
@@ -2672,19 +2672,19 @@
             "encounter_rate": 1,
             "mons": [
               {
-                "range": "42, 44",
+                "range": "RANGE_ROUTE_123",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_ROUTE_123",
                 "species": "PELIPPER"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_ROUTE_123",
                 "species": "PELIPPER"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_ROUTE_123",
                 "species": "PELIPPER"
               }
             ]
@@ -2692,15 +2692,15 @@
           "fishing_mons": {
             "mons": [
               {
-                "range": "42, 44",
+                "range": "RANGE_ROUTE_123",
                 "species": "MAGIKARP"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_ROUTE_123",
                 "species": "TENTACOOL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_ROUTE_123",
                 "species": "WAILMER"
               },
               {
@@ -2729,43 +2729,43 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               }
             ]
@@ -2778,43 +2778,43 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               }
             ]
@@ -2827,43 +2827,43 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               }
             ]
@@ -2876,43 +2876,43 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               }
             ]
@@ -2925,43 +2925,43 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               }
             ]
@@ -2974,43 +2974,43 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "VULPIX"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "MEDITITE"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "VULPIX"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "MEDITITE"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "PELIPPER"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "PELIPPER"
               }
             ]
@@ -3023,43 +3023,43 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "CHINGLING"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "CHINGLING"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "CHINGLING"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "CHINGLING"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "42, 44",
+                "range": "RANGE_MT_PYRE",
                 "species": "SHUPPET"
               }
             ]
@@ -4593,43 +4593,43 @@
             "encounter_rate": 25,
             "mons": [
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "GIRAFARIG"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "NATU"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "PICHU"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "PICHU"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "DODUO"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "DODUO"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "GLOOM"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "WYNAUT"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "GLOOM"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "WYNAUT"
               }
             ]
@@ -4638,19 +4638,19 @@
             "encounter_rate": 25,
             "mons": [
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "PSYDUCK"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "PSYDUCK"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "PSYDUCK"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "PSYDUCK"
               }
             ]
@@ -4658,15 +4658,15 @@
           "fishing_mons": {
             "mons": [
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "MAGIKARP"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "GOLDEEN"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "GOLDEEN"
               },
               {
@@ -4695,43 +4695,43 @@
             "encounter_rate": 25,
             "mons": [
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "PHANPY"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "HERACROSS"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "PHANPY"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "HERACROSS"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "NATU"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "GLOOM"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "NATU"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "GLOOM"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "NATU"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "GLOOM"
               }
             ]
@@ -4744,43 +4744,43 @@
             "encounter_rate": 25,
             "mons": [
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "RHYHORN"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "PINSIR"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "RHYHORN"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "PINSIR"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "DODUO"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "GLOOM"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "DODUO"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "GLOOM"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "DODUO"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "GLOOM"
               }
             ]
@@ -4789,19 +4789,19 @@
             "encounter_rate": 25,
             "mons": [
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "PSYDUCK"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "PSYDUCK"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "PSYDUCK"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "GOLDUCK"
               }
             ]
@@ -4809,15 +4809,15 @@
           "fishing_mons": {
             "mons": [
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "MAGIKARP"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "GOLDEEN"
               },
               {
-                "range": "41, 43",
+                "range": "RANGE_SAFARI_ZONE",
                 "species": "GOLDEEN"
               },
               {

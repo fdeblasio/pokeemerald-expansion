@@ -94,6 +94,8 @@ upcoming
 
 ### Trainers
 - Battle Archie at Oceanic Museum?
+- Give grunts consistent teams/genders?
+    - Give them names?
 - More mugshots for other bosses?
 - Readjust wild/trainer levels so that parties aren't overpowered?
 - Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)
@@ -152,6 +154,7 @@ upcoming
     - Route 128: Where Steven flies to?
 
 ### Overworld
+- Edit local Porymaps to avoid file formats being edited
 - Add accurate overworld sprites (https://github.com/pret/pokeemerald/wiki/Adding-new-event-object-or-overworld-sprites, https://www.pokecommunity.com/showthread.php?t=407124)
     - Overworld sprites to match trainer sprites (for example, Rangers red clothes, Dragon Tamers capes and correct hair color, or Rich Boys correct clothes and hair color)
 - Add FRLG trainer sprites/overworld sprites

@@ -69,11 +69,11 @@ enum {
 
 enum {
     BLENDER_MISTER,
-    BLENDER_LADDIE,
-    BLENDER_LASSIE,
-    BLENDER_MASTER,
     BLENDER_DUDE,
-    BLENDER_MISS
+    BLENDER_LASSIE,
+    BLENDER_LADDIE,
+    BLENDER_MISS,
+    BLENDER_MASTER
 };
 
 #define BLENDER_MAX_PLAYERS MAX_LINK_PLAYERS
@@ -252,35 +252,11 @@ static const u16 sBlenderCenter_Pal[] = INCBIN_U16("graphics/berry_blender/cente
 static const u8 sBlenderCenter_Tilemap[] = INCBIN_U8("graphics/berry_blender/center_map.bin");
 static const u16 sBlenderOuter_Pal[] = INCBIN_U16("graphics/berry_blender/outer.gbapal");
 
-static const u16 sUnused_Pal[] = INCBIN_U16("graphics/berry_blender/unused.gbapal");
 static const u16 sEmpty_Pal[16 * 14] = {0};
-
-// unused text
-static const u8 sUnusedText_YesNo[] = _("Yes\nNo");
-static const u8 sUnusedText_2[] = _("▶");
-static const u8 sUnusedText_Space[] = _(" ");
-static const u8 sUnusedText_Terminating[] = _("Terminating.");
-static const u8 sUnusedText_LinkPartnerNotFound[] = _("Link partner(s) not found.\nPlease try again.\p");
 
 static const u8 sText_BerryBlenderStart[] = _("Starting up the Berry Blender.\pPlease select a Berry from your Bag\nto put in the Berry Blender.\p");
 static const u8 sText_NewParagraph[] = _("\p");
 static const u8 sText_WasMade[] = _(" was made!");
-static const u8 sText_Mister[] = _("Mister");
-static const u8 sText_Laddie[] = _("Laddie");
-static const u8 sText_Lassie[] = _("Lassie");
-static const u8 sText_Master[] = _("Master");
-static const u8 sText_Dude[] = _("Dude");
-static const u8 sText_Miss[] = _("Miss");
-
-static const u8 *const sBlenderOpponentsNames[] =
-{
-    [BLENDER_MISTER] = sText_Mister,
-    [BLENDER_LADDIE] = sText_Laddie,
-    [BLENDER_LASSIE] = sText_Lassie,
-    [BLENDER_MASTER] = sText_Master,
-    [BLENDER_DUDE]   = sText_Dude,
-    [BLENDER_MISS]   = sText_Miss
-};
 
 static const u8 sText_PressAToStart[] = _("Press the A Button to start.");
 static const u8 sText_PleaseWaitAWhile[] = _("Please wait a while.");
@@ -1210,6 +1186,16 @@ static void ConvertItemToBlenderBerry(struct BlenderBerry* berry, u16 itemId)
     berry->flavors[FLAVOR_SOUR] = berryInfo->sour;
     berry->flavors[FLAVOR_COUNT] = berryInfo->smoothness;
 }
+
+static const u8 *const sBlenderOpponentsNames[] =
+{
+    [BLENDER_MISTER] = COMPOUND_STRING("Mister"),
+    [BLENDER_DUDE]   = COMPOUND_STRING("Dude"),
+    [BLENDER_LASSIE] = COMPOUND_STRING("Lassie"),
+    [BLENDER_LADDIE] = COMPOUND_STRING("Laddie"),
+    [BLENDER_MISS]   = COMPOUND_STRING("Miss"),
+    [BLENDER_MASTER] = COMPOUND_STRING("Master"),
+};
 
 static void InitLocalPlayers(u8 opponentsNum)
 {

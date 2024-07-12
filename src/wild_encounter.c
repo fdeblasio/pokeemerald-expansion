@@ -96,6 +96,7 @@ EWRAM_DATA u8 gChainFishingDexNavStreak = 0;
 #define RANGE_ROUTE_122         42, 44
 #define RANGE_MT_PYRE           42, 44
 #define RANGE_ROUTE_123         42, 44
+#define RANGE_MAGMA_HIDEOUT     43, 45
 
 #include "data/wild_encounters.h"
 

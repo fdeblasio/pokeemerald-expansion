@@ -459,14 +459,14 @@ MossdeepCity_Gym_Text_NatePostBattle:
 	.string "however b-badly.$"
 
 MossdeepCity_Gym_Text_KathleenIntro:
-	.string "Let me show you a perfectly awful,\n"
-	.string "horrifying time!$"
+	.string "Let me show you a perfectly,\n"
+	.string "mind-blowing time!$"
 
 MossdeepCity_Gym_Text_KathleenDefeat:
 	.string "N-nooooo!$"
 
 MossdeepCity_Gym_Text_KathleenPostBattle:
-	.string "Your vitality is contagious!\n"
+	.string "Your mentality is contagious!\n"
 	.string "Get away from me quickly!$"
 
 MossdeepCity_Gym_Text_CliffordIntro:

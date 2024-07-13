@@ -77,6 +77,20 @@ struct TrainerMon
     u8 padding:2;
 };
 
+#define IVS(IV) .iv = TRAINER_PARTY_IVS(IV, IV, IV, IV, IV, IV)
+#define PERFECT_IVS IVS(MAX_PER_STAT_IVS)
+
+#define EV_SPREAD_ATK_DEF_HP TRAINER_PARTY_EVS(EV_REMAINDER, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, 0, 0, 0)
+#define EV_SPREAD_ATK_SPE_HP TRAINER_PARTY_EVS(EV_REMAINDER, MAX_PER_STAT_EVS, 0, MAX_PER_STAT_EVS, 0, 0)
+#define EV_SPREAD_ATK_SPE_DEF TRAINER_PARTY_EVS(0, MAX_PER_STAT_EVS, EV_REMAINDER, MAX_PER_STAT_EVS, 0, 0)
+#define EV_SPREAD_ATK_SPE_SPD TRAINER_PARTY_EVS(0, MAX_PER_STAT_EVS, 0, MAX_PER_STAT_EVS, 0, EV_REMAINDER)
+#define EV_SPREAD_DEF_SPD_HP TRAINER_PARTY_EVS(EV_REMAINDER, 0, MAX_PER_STAT_EVS, 0, 0, MAX_PER_STAT_EVS)
+#define EV_SPREAD_SPA_DEF_HP TRAINER_PARTY_EVS(EV_REMAINDER, 0, MAX_PER_STAT_EVS, 0, MAX_PER_STAT_EVS, 0)
+#define EV_SPREAD_SPA_SPD_HP TRAINER_PARTY_EVS(EV_REMAINDER, 0, 0, 0, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS)
+#define EV_SPREAD_SPA_SPE_HP TRAINER_PARTY_EVS(EV_REMAINDER, 0, 0, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, 0)
+#define EV_SPREAD_SPA_SPE_DEF TRAINER_PARTY_EVS(0, 0, EV_REMAINDER, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, 0)
+#define EV_SPREAD_SPA_SPE_SPD TRAINER_PARTY_EVS(0, 0, 0, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, EV_REMAINDER)
+
 struct Trainer
 {
     /*0x00*/ u32 aiFlags;
@@ -92,6 +106,41 @@ struct Trainer
     /*0x1F*/ u8 mugshotColor;
     /*0x20*/ u8 partySize;
 };
+
+#define STEVEN_INFO                      \
+    .trainerName = _("Steven"),          \
+    .trainerClass = TRAINER_CLASS_RIVAL, \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE
+
+#define STEVEN_METAGROSS(Level)                                 \
+    .lvl = Level,                                               \
+    .species = Level < 70 ? SPECIES_METANG : SPECIES_METAGROSS, \
+    .ability = ABILITY_CLEAR_BODY,                              \
+    .nature = NATURE_ADAMANT,                                   \
+    .ev = EV_SPREAD_ATK_DEF_HP,                                 \
+    PERFECT_IVS,                                                \
+    .ball = ITEM_PREMIER_BALL
+
+#define STEVEN_AGGRON(Level)    \
+    .lvl = Level,               \
+    .species = SPECIES_AGGRON,  \
+    .ability = ABILITY_STURDY,  \
+    .nature = NATURE_IMPISH,    \
+    .ev = EV_SPREAD_ATK_DEF_HP, \
+    PERFECT_IVS,                \
+    .gender = TRAINER_MON_MALE, \
+    .ball = ITEM_HEAVY_BALL
+
+#define STEVEN_MAWILE(Level)                                                    \
+    .lvl = Level,                                                               \
+    .species = SPECIES_MAWILE,                                                  \
+    .ability = ABILITY_SHEER_FORCE,                                             \
+    .nature = NATURE_ADAMANT,                                                   \
+    .ev = EV_SPREAD_ATK_SPE_DEF,                                                \
+    PERFECT_IVS,                                                                \
+    .moves = {MOVE_IRON_HEAD, MOVE_PLAY_ROUGH, MOVE_CRUNCH, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_FEMALE,                                               \
+    .ball = ITEM_ULTRA_BALL
 
 struct TrainerClass
 {

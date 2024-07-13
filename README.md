@@ -197,15 +197,18 @@ There are some mechanics, moves and abilities that are missing and being develop
 - [Mashanny for making text speed up without holding A/B](https://www.pokecommunity.com/showpost.php?p=10266385)
 - [Sapphire Jester for making the Soot Sack usuable](https://www.pokecommunity.com/showpost.php?p=10222284&postcount=178)
 
-## Known Bugs
+## Known bugs and other notes
+- Using the Exp. Share can cause your team to become overpowered
 - Followers will stop following you if you use the naming screen from the party menu. It will start to follow you again if you talk to it
+- Newer Pokémon don't have follower sprites
+- Newer moves don't have animations
 - When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
-- Some of the EV-reducing berries on Route 123 will randomly disappear and then come back
 - If you help one of the Lilycove Pokémon Center ladies, the other lady thinks you've already helped her as well
     - Could have something to do with this: sContestLadyPtr->id = LILYCOVE_LADY_CONTEST
 
 ### Potentially just savefile issues due to merging upcoming/playing while hacking
 - Lilycove ladies crash the game
+- Some of the EV-reducing berries on Route 123 will randomly disappear and then come back
 - Moving an Pokémon in the PC seems to duplicate its item in the bag
 - Items in the Battle Pyramid's Battle Bag/held items in the Battle Pike are turning into Poke Balls
     - Seems to happen after trainer battles?
@@ -409,10 +412,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Tabitha Magma Hideout   |26, 28, 30, 33        |45, 45, 47|
 |Maxie Magma Hideout     |37, 38, 39            |46, 47, 47, 48|
 |Matt Aqua Hideout       |34, 34                |47, 47, 49|
-|Tate/Liza               |41, 41, 42, 42        |48, 48, 50, 50|
-|Courtney                |N/A                   |55, 55, 57|
-|Tabitha/Maxie           |36, 38, 40/42, 43, 44 |55, 55, 57/57, 58, 60|
-|Regis                   |40                    |45|
+|Tate/Liza               |41, 41, 42, 42        |49, 49, 51, 51|
+|Courtney                |N/A                   |50, 50, 52|
+|Tabitha/Maxie           |36, 38, 40/42, 43, 44 |50, 50, 52/52, 53, 55|
+|Regis                   |40                    |55|
 |Matt/Shelly             |N/A/37, 37            |42, 42, 43/42, 42, 43|
 |Archie Seafloor Cavern  |41, 41, 43            |43, 43, 44, 45|
 |Juan                    |41, 41, 43, 43, 46    |44, 44, 45, 45, 47|

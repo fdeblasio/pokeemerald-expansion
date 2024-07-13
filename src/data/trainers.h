@@ -1,17 +1,3 @@
-#define IVS(IV) .iv = TRAINER_PARTY_IVS(IV, IV, IV, IV, IV, IV)
-#define PERFECT_IVS IVS(MAX_PER_STAT_IVS)
-
-#define EV_SPREAD_ATK_DEF_HP TRAINER_PARTY_EVS(EV_REMAINDER, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, 0, 0, 0)
-#define EV_SPREAD_ATK_SPE_HP TRAINER_PARTY_EVS(EV_REMAINDER, MAX_PER_STAT_EVS, 0, MAX_PER_STAT_EVS, 0, 0)
-#define EV_SPREAD_ATK_SPE_DEF TRAINER_PARTY_EVS(0, MAX_PER_STAT_EVS, EV_REMAINDER, MAX_PER_STAT_EVS, 0, 0)
-#define EV_SPREAD_ATK_SPE_SPD TRAINER_PARTY_EVS(0, MAX_PER_STAT_EVS, 0, MAX_PER_STAT_EVS, 0, EV_REMAINDER)
-#define EV_SPREAD_DEF_SPD_HP TRAINER_PARTY_EVS(EV_REMAINDER, 0, MAX_PER_STAT_EVS, 0, 0, MAX_PER_STAT_EVS)
-#define EV_SPREAD_SPA_DEF_HP TRAINER_PARTY_EVS(EV_REMAINDER, 0, MAX_PER_STAT_EVS, 0, MAX_PER_STAT_EVS, 0)
-#define EV_SPREAD_SPA_SPD_HP TRAINER_PARTY_EVS(EV_REMAINDER, 0, 0, 0, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS)
-#define EV_SPREAD_SPA_SPE_HP TRAINER_PARTY_EVS(EV_REMAINDER, 0, 0, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, 0)
-#define EV_SPREAD_SPA_SPE_DEF TRAINER_PARTY_EVS(0, 0, EV_REMAINDER, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, 0)
-#define EV_SPREAD_SPA_SPE_SPD TRAINER_PARTY_EVS(0, 0, 0, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, EV_REMAINDER)
-
 #define BOSS_AI_FLAGS .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON
 #define MINI_BOSS_AI_FLAGS .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON
 
@@ -1393,13 +1379,13 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 48,
+        .lvl = 49,
         .species = SPECIES_CLAYDOL,
         IVS(30),
         .moves = {MOVE_PSYCHIC, MOVE_EARTH_POWER, MOVE_COSMIC_POWER, MOVE_LIGHT_SCREEN},
         },
         {
-        .lvl = 48,
+        .lvl = 49,
         .species = SPECIES_GRUMPIG,
         .ability = ABILITY_THICK_FAT,
         IVS(30),
@@ -1407,14 +1393,14 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 50,
+        .lvl = 51,
         .species = SPECIES_LUNATONE,
         IVS(30),
         .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_POWER_GEM, MOVE_ICY_WIND},
         .heldItem = ITEM_SITRUS_BERRY,
         },
         {
-        .lvl = 50,
+        .lvl = 51,
         .species = SPECIES_SOLROCK,
         IVS(30),
         .moves = {MOVE_PSYCHIC, MOVE_ROCK_SLIDE, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN},
@@ -2036,10 +2022,8 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 
 [TRAINER_STEVEN] =
 {
-    .trainerName = _("Steven"),
-    .trainerClass = TRAINER_CLASS_RIVAL,
+    STEVEN_INFO,
     .trainerPic = TRAINER_PIC_STEVEN,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
     BOSS_AI_FLAGS,
     .partySize = 6,
@@ -2076,39 +2060,18 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         .nickname = COMPOUND_STRING("Devon"),
         },
         {
-        .lvl = 78,
-        .species = SPECIES_MAWILE,
-        .ability = ABILITY_SHEER_FORCE,
-        .nature = NATURE_ADAMANT,
-        .ev = TRAINER_PARTY_EVS(0, MAX_PER_STAT_EVS, EV_REMAINDER, MAX_PER_STAT_EVS, 0, 0),
-        PERFECT_IVS,
-        .moves = {MOVE_IRON_HEAD, MOVE_PLAY_ROUGH, MOVE_CRUNCH, MOVE_SWORDS_DANCE},
-        .gender = TRAINER_MON_FEMALE,
+        STEVEN_MAWILE(78),
         .heldItem = ITEM_LIFE_ORB,
-        .ball = ITEM_ULTRA_BALL,
         },
         {
-        .lvl = 79,
-        .species = SPECIES_AGGRON,
-        .ability = ABILITY_STURDY,
-        .nature = NATURE_IMPISH,
-        .ev = EV_SPREAD_ATK_DEF_HP,
-        PERFECT_IVS,
+        STEVEN_AGGRON(79),
         .moves = {MOVE_IRON_HEAD, MOVE_ROCK_SLIDE, MOVE_BODY_PRESS, MOVE_IRON_DEFENSE},
-        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SHUCA_BERRY,
-        .ball = ITEM_HEAVY_BALL,
         },
         {
-        .lvl = 80,
-        .species = SPECIES_METAGROSS,
-        .ability = ABILITY_CLEAR_BODY,
-        .nature = NATURE_ADAMANT,
-        .ev = EV_SPREAD_ATK_DEF_HP,
-        PERFECT_IVS,
+        STEVEN_METAGROSS(80),
         .moves = {MOVE_METEOR_MASH, MOVE_PSYCHIC_FANGS, MOVE_EARTHQUAKE, MOVE_BULLET_PUNCH},
         .heldItem = ITEM_METAGROSSITE,
-        .ball = ITEM_PREMIER_BALL,
         }
     },
 },
@@ -14130,13 +14093,14 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 },
 
 //Space Center
+#define SPACE_CENTER_GRUNT_LEVEL 47
 [TRAINER_GRUNT_SPACE_CENTER_1] =
 {
     MAGMA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 44,
+        .lvl = SPACE_CENTER_GRUNT_LEVEL,
         .species = SPECIES_NUMEL,
         }
     },
@@ -14148,11 +14112,11 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 43,
+        .lvl = (SPACE_CENTER_GRUNT_LEVEL - 1),
         .species = SPECIES_HOUNDOUR,
         },
         {
-        .lvl = 43,
+        .lvl = (SPACE_CENTER_GRUNT_LEVEL - 1),
         .species = SPECIES_VULPIX,
         }
     },
@@ -14164,7 +14128,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 44,
+        .lvl = SPACE_CENTER_GRUNT_LEVEL,
         .species = SPECIES_PHANPY,
         }
     },
@@ -14176,7 +14140,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 44,
+        .lvl = SPACE_CENTER_GRUNT_LEVEL,
         .species = SPECIES_MAGCARGO,
         }
     },
@@ -14188,7 +14152,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 44,
+        .lvl = SPACE_CENTER_GRUNT_LEVEL,
         .species = SPECIES_TORKOAL,
         }
     },
@@ -14200,7 +14164,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 44,
+        .lvl = SPACE_CENTER_GRUNT_LEVEL,
         .species = SPECIES_CLAYDOL,
         }
     },
@@ -14212,19 +14176,23 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 55,
+        .lvl = 50,
         .species = SPECIES_SANDSLASH,
         IVS(12),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = 55,
+        .lvl = 50,
         .species = SPECIES_TORKOAL,
+        .ability = ABILITY_WHITE_SMOKE,
         IVS(12),
+        .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = 57,
+        .lvl = 52,
         .species = SPECIES_NINETALES,
         IVS(12),
+        .gender = TRAINER_MON_FEMALE,
         }
     },
 },
@@ -14235,15 +14203,15 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        TABITHA_PHANPY(55),
+        TABITHA_PHANPY(50),
         IVS(12),
         },
         {
-        TABITHA_SLUGMA(55),
+        TABITHA_SLUGMA(50),
         IVS(12),
         },
         {
-        TABITHA_HOUNDOUR(57),
+        TABITHA_HOUNDOUR(52),
         IVS(12),
         }
     },
@@ -14254,10 +14222,10 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     MAXIE_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
-        MAXIE_SANDSHREW(57),
-        MAXIE_BALTOY(58),
+        MAXIE_SANDSHREW(52),
+        MAXIE_BALTOY(53),
         {
-        HUMPHREY(60),
+        HUMPHREY(55),
         .heldItem = ITEM_CAMERUPTITE,
         }
     },

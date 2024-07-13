@@ -5,7 +5,9 @@
 #define EV_SPREAD_ATK_SPE_HP TRAINER_PARTY_EVS(EV_REMAINDER, MAX_PER_STAT_EVS, 0, MAX_PER_STAT_EVS, 0, 0)
 #define EV_SPREAD_ATK_SPE_DEF TRAINER_PARTY_EVS(0, MAX_PER_STAT_EVS, EV_REMAINDER, MAX_PER_STAT_EVS, 0, 0)
 #define EV_SPREAD_ATK_SPE_SPD TRAINER_PARTY_EVS(0, MAX_PER_STAT_EVS, 0, MAX_PER_STAT_EVS, 0, EV_REMAINDER)
+#define EV_SPREAD_DEF_SPD_HP TRAINER_PARTY_EVS(EV_REMAINDER, 0, MAX_PER_STAT_EVS, 0, 0, MAX_PER_STAT_EVS)
 #define EV_SPREAD_SPA_DEF_HP TRAINER_PARTY_EVS(EV_REMAINDER, 0, MAX_PER_STAT_EVS, 0, MAX_PER_STAT_EVS, 0)
+#define EV_SPREAD_SPA_SPD_HP TRAINER_PARTY_EVS(EV_REMAINDER, 0, 0, 0, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS)
 #define EV_SPREAD_SPA_SPE_HP TRAINER_PARTY_EVS(EV_REMAINDER, 0, 0, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, 0)
 #define EV_SPREAD_SPA_SPE_DEF TRAINER_PARTY_EVS(0, 0, EV_REMAINDER, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, 0)
 #define EV_SPREAD_SPA_SPE_SPD TRAINER_PARTY_EVS(0, 0, 0, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, EV_REMAINDER)
@@ -1391,13 +1393,13 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 55,
+        .lvl = 48,
         .species = SPECIES_CLAYDOL,
         IVS(30),
         .moves = {MOVE_PSYCHIC, MOVE_EARTH_POWER, MOVE_COSMIC_POWER, MOVE_LIGHT_SCREEN},
         },
         {
-        .lvl = 55,
+        .lvl = 48,
         .species = SPECIES_GRUMPIG,
         .ability = ABILITY_THICK_FAT,
         IVS(30),
@@ -1405,14 +1407,14 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 57,
+        .lvl = 50,
         .species = SPECIES_LUNATONE,
         IVS(30),
         .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_POWER_GEM, MOVE_ICY_WIND},
         .heldItem = ITEM_SITRUS_BERRY,
         },
         {
-        .lvl = 57,
+        .lvl = 50,
         .species = SPECIES_SOLROCK,
         IVS(30),
         .moves = {MOVE_PSYCHIC, MOVE_ROCK_SLIDE, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN},
@@ -1421,66 +1423,59 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     },
 },
 
-#define TATE_SOLROCK(rematch)              \
-    {                                      \
-    REMATCH_MON(, ACE, rematch),           \
-    .ability = ABILITY_,                   \
-    .nature = NATURE_,                     \
-    .ev = ,                                \
-    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
-    .gender = TRAINER_MON_MALE,            \
-    .heldItem = ITEM_,                     \
+#define TATE_SOLROCK(rematch)                                                          \
+    {                                                                                  \
+    REMATCH_MON(SOLROCK, ACE, rematch),                                                \
+    .nature = NATURE_ADAMANT,                                                          \
+    .ev = EV_SPREAD_ATK_DEF_HP,                                                        \
+    .moves = {MOVE_ZEN_HEADBUTT, MOVE_ROCK_SLIDE, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN}, \
+    .heldItem = ITEM_SITRUS_BERRY,                                                     \
     }
 
-#define LIZA_LUNATONE(rematch)             \
-    {                                      \
-    REMATCH_MON(, ACE, rematch),           \
-    .ability = ABILITY_,                   \
-    .nature = NATURE_,                     \
-    .ev = ,                                \
-    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
-    .gender = TRAINER_MON_MALE,            \
-    .heldItem = ITEM_,                     \
+#define LIZA_LUNATONE(rematch)                                                 \
+    {                                                                          \
+    REMATCH_MON(LUNATONE, ACE, rematch),                                       \
+    .nature = NATURE_MODEST,                                                   \
+    .ev = EV_SPREAD_SPA_SPD_HP,                                                \
+    .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_ICY_WIND, MOVE_COSMIC_POWER}, \
+    .heldItem = ITEM_SITRUS_BERRY,                                             \
     }
 
-#define TATE_GRUMPIG(rematch)              \
-    {                                      \
-    REMATCH_MON(, TIER2, rematch),         \
-    .ability = ABILITY_,                   \
-    .nature = NATURE_,                     \
-    .ev = ,                                \
-    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
-    .gender = TRAINER_MON_MALE,            \
+#define TATE_GRUMPIG(rematch)                                                      \
+    {                                                                              \
+    REMATCH_MON(GRUMPIG, TIER2, rematch),                                          \
+    .ability = ABILITY_THICK_FAT,                                                  \
+    .nature = NATURE_CALM,                                                         \
+    .ev = EV_SPREAD_SPA_SPD_HP,                                                    \
+    .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_DAZZLING_GLEAM, MOVE_MAGIC_COAT}, \
+    .gender = TRAINER_MON_MALE,                                                    \
     }
 
-#define LIZA_CLAYDOL(rematch)              \
-    {                                      \
-    REMATCH_MON(, TIER2, rematch),         \
-    .ability = ABILITY_,                   \
-    .nature = NATURE_,                     \
-    .ev = ,                                \
-    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
-    .gender = TRAINER_MON_MALE,            \
+#define LIZA_CLAYDOL(rematch)                                                       \
+    {                                                                               \
+    REMATCH_MON(CLAYDOL, TIER2, rematch),                                           \
+    .nature = NATURE_CALM,                                                          \
+    .ev = EV_SPREAD_DEF_SPD_HP,                                                     \
+    .moves = {MOVE_PSYCHIC, MOVE_EARTH_POWER, MOVE_POWER_SPLIT, MOVE_COSMIC_POWER}, \
     }
 
-#define TATE_CHIMECHO(rematch)             \
-    {                                      \
-    REMATCH_MON(, TIER3, rematch),         \
-    .ability = ABILITY_,                   \
-    .nature = NATURE_,                     \
-    .ev = ,                                \
-    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
-    .gender = TRAINER_MON_MALE,            \
+#define TATE_CHIMECHO(rematch)                                                   \
+    {                                                                            \
+    REMATCH_MON(CHIMECHO, TIER3, rematch),                                       \
+    .nature = NATURE_MODEST,                                                     \
+    .ev = EV_SPREAD_SPA_SPD_HP,                                                  \
+    .moves = {MOVE_PSYCHIC, MOVE_HEAL_PULSE, MOVE_LIGHT_SCREEN, MOVE_HEAL_BELL}, \
+    .gender = TRAINER_MON_MALE,                                                  \
     }
 
-#define LIZA_GARDEVOIR(rematch)            \
-    {                                      \
-    REMATCH_MON(, TIER3, rematch),         \
-    .ability = ABILITY_,                   \
-    .nature = NATURE_,                     \
-    .ev = ,                                \
-    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
-    .gender = TRAINER_MON_MALE,            \
+#define LIZA_GARDEVOIR(rematch)                                                        \
+    {                                                                                  \
+    REMATCH_MON(GARDEVOIR, TIER3, rematch),                                            \
+    .ability = ABILITY_SYNCHRONIZE,                                                    \
+    .nature = NATURE_MODEST,                                                           \
+    .ev = EV_SPREAD_SPA_SPE_SPD,                                                       \
+    .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_MYSTICAL_FIRE, MOVE_CALM_MIND},  \
+    .gender = TRAINER_MON_FEMALE,                                                      \
     }
 
 [TRAINER_TATE_AND_LIZA_2] =
@@ -1489,31 +1484,11 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        {
-        REMATCH_MON(CHIMECHO, TIER3, 2),
-        .moves = {MOVE_PSYCHIC, MOVE_HEAL_PULSE, MOVE_LIGHT_SCREEN, MOVE_HEAL_BELL},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        REMATCH_MON(CLAYDOL, TIER2, 2),
-        .moves = {MOVE_PSYCHIC, MOVE_EARTH_POWER, MOVE_POWER_SPLIT, MOVE_COSMIC_POWER},
-        },
-        {
-        REMATCH_MON(GRUMPIG, TIER2, 2),
-        .ability = ABILITY_THICK_FAT,
-        .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_CONFUSE_RAY, MOVE_MAGIC_COAT},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        REMATCH_MON(LUNATONE, ACE, 2),
-        .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_ICY_WIND, MOVE_COSMIC_POWER},
-        .heldItem = ITEM_SITRUS_BERRY,
-        },
-        {
-        REMATCH_MON(SOLROCK, ACE, 2),
-        .moves = {MOVE_PSYCHIC, MOVE_ROCK_SLIDE, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN},
-        .heldItem = ITEM_SITRUS_BERRY,
-        }
+        TATE_CHIMECHO(2),
+        LIZA_CLAYDOL(2),
+        TATE_GRUMPIG(2),
+        LIZA_LUNATONE(2),
+        TATE_SOLROCK(2),
     },
 },
 
@@ -1523,37 +1498,12 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        {
-        REMATCH_MON(GARDEVOIR, TIER3, 3),
-        .ability = ABILITY_SYNCHRONIZE,
-        .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_MYSTICAL_FIRE, MOVE_CALM_MIND},
-        .gender = TRAINER_MON_FEMALE,
-        },
-        {
-        REMATCH_MON(CHIMECHO, TIER3, 3),
-        .moves = {MOVE_PSYCHIC, MOVE_HEAL_PULSE, MOVE_LIGHT_SCREEN, MOVE_HEAL_BELL},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        REMATCH_MON(CLAYDOL, TIER2, 3),
-        .moves = {MOVE_PSYCHIC, MOVE_EARTH_POWER, MOVE_POWER_SPLIT, MOVE_COSMIC_POWER},
-        },
-        {
-        REMATCH_MON(GRUMPIG, TIER2, 3),
-        .ability = ABILITY_THICK_FAT,
-        .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_CONFUSE_RAY, MOVE_MAGIC_COAT},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        REMATCH_MON(LUNATONE, ACE, 3),
-        .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_ICY_WIND, MOVE_COSMIC_POWER},
-        .heldItem = ITEM_SITRUS_BERRY,
-        },
-        {
-        REMATCH_MON(SOLROCK, ACE, 3),
-        .moves = {MOVE_PSYCHIC, MOVE_ROCK_SLIDE, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN},
-        .heldItem = ITEM_SITRUS_BERRY,
-        }
+        LIZA_GARDEVOIR(3),
+        TATE_CHIMECHO(3),
+        LIZA_CLAYDOL(3),
+        TATE_GRUMPIG(3),
+        LIZA_LUNATONE(3),
+        TATE_SOLROCK(3),
     },
 },
 
@@ -1563,37 +1513,12 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        {
-        REMATCH_MON(GARDEVOIR, TIER3, 4),
-        .ability = ABILITY_SYNCHRONIZE,
-        .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_MYSTICAL_FIRE, MOVE_CALM_MIND},
-        .gender = TRAINER_MON_FEMALE,
-        },
-        {
-        REMATCH_MON(CHIMECHO, TIER3, 4),
-        .moves = {MOVE_PSYCHIC, MOVE_HEAL_PULSE, MOVE_LIGHT_SCREEN, MOVE_HEAL_BELL},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        REMATCH_MON(CLAYDOL, TIER2, 4),
-        .moves = {MOVE_PSYCHIC, MOVE_EARTH_POWER, MOVE_POWER_SPLIT, MOVE_COSMIC_POWER},
-        },
-        {
-        REMATCH_MON(GRUMPIG, TIER2, 4),
-        .ability = ABILITY_THICK_FAT,
-        .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_CONFUSE_RAY, MOVE_MAGIC_COAT},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        REMATCH_MON(LUNATONE, ACE, 4),
-        .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_ICY_WIND, MOVE_COSMIC_POWER},
-        .heldItem = ITEM_SITRUS_BERRY,
-        },
-        {
-        REMATCH_MON(SOLROCK, ACE, 4),
-        .moves = {MOVE_PSYCHIC, MOVE_ROCK_SLIDE, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN},
-        .heldItem = ITEM_SITRUS_BERRY,
-        }
+        LIZA_GARDEVOIR(4),
+        TATE_CHIMECHO(4),
+        LIZA_CLAYDOL(4),
+        TATE_GRUMPIG(4),
+        LIZA_LUNATONE(4),
+        TATE_SOLROCK(4),
     },
 },
 
@@ -1603,37 +1528,12 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        {
-        REMATCH_MON(GARDEVOIR, TIER3, 5),
-        .ability = ABILITY_SYNCHRONIZE,
-        .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_MYSTICAL_FIRE, MOVE_CALM_MIND},
-        .gender = TRAINER_MON_FEMALE,
-        },
-        {
-        REMATCH_MON(CHIMECHO, TIER3, 5),
-        .moves = {MOVE_PSYCHIC, MOVE_HEAL_PULSE, MOVE_LIGHT_SCREEN, MOVE_HEAL_BELL},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        REMATCH_MON(CLAYDOL, TIER2, 5),
-        .moves = {MOVE_PSYCHIC, MOVE_EARTH_POWER, MOVE_POWER_SPLIT, MOVE_COSMIC_POWER},
-        },
-        {
-        REMATCH_MON(GRUMPIG, TIER2, 5),
-        .ability = ABILITY_THICK_FAT,
-        .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_CONFUSE_RAY, MOVE_MAGIC_COAT},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        REMATCH_MON(LUNATONE, ACE, 5),
-        .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_ICY_WIND, MOVE_COSMIC_POWER},
-        .heldItem = ITEM_SITRUS_BERRY,
-        },
-        {
-        REMATCH_MON(SOLROCK, ACE, 5),
-        .moves = {MOVE_PSYCHIC, MOVE_ROCK_SLIDE, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN},
-        .heldItem = ITEM_SITRUS_BERRY,
-        }
+        LIZA_GARDEVOIR(5),
+        TATE_CHIMECHO(5),
+        LIZA_CLAYDOL(5),
+        TATE_GRUMPIG(5),
+        LIZA_LUNATONE(5),
+        TATE_SOLROCK(5),
     },
 },
 
@@ -2227,7 +2127,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 #define REMATCH_3_LEVEL_5 REMATCH_3_LEVEL_1 - 4
 #define REMATCH_3_LEVEL_6 REMATCH_3_LEVEL_1 - 5
 
-#define REMATCH_4_LEVEL_1 55
+#define REMATCH_4_LEVEL_1 52
 #define REMATCH_4_LEVEL_2 REMATCH_4_LEVEL_1 - 1
 #define REMATCH_4_LEVEL_3 REMATCH_4_LEVEL_1 - 2
 #define REMATCH_4_LEVEL_4 REMATCH_4_LEVEL_1 - 3
@@ -13664,7 +13564,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 #define JENNY_STARYU(Level)                                                  \
     .lvl = Level,                                                            \
-    .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_STARYU : SPECIES_STARMIE, \
+    .species = Level < 47 ? SPECIES_STARYU : SPECIES_STARMIE, \
     .ability = ABILITY_ILLUMINATE
 
 #define JENNY_LUVDISC(Level)    \
@@ -13689,10 +13589,10 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        JENNY_STARYU(47),
+        JENNY_STARYU(46),
         },
         {
-        JENNY_WAILMER(47),
+        JENNY_WAILMER(46),
         }
     },
 },
@@ -14050,6 +13950,8 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 },
 
 //Mossdeep Gym
+#define MOSSDEEP_GYM_LEVEL 46
+
 [TRAINER_PRESTON] =
 {
     .trainerName = _("Preston"),
@@ -14058,7 +13960,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 40,
+        .lvl = MOSSDEEP_GYM_LEVEL,
         .species = SPECIES_GALLADE,
         IVS(12),
         }
@@ -14073,7 +13975,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 40,
+        .lvl = MOSSDEEP_GYM_LEVEL,
         .species = SPECIES_ALAKAZAM,
         IVS(12),
         }
@@ -14088,7 +13990,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 40,
+        .lvl = MOSSDEEP_GYM_LEVEL,
         .species = SPECIES_XATU,
         IVS(12),
         }
@@ -14103,7 +14005,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 40,
+        .lvl = MOSSDEEP_GYM_LEVEL,
         .species = SPECIES_CLAYDOL,
         IVS(12),
         }
@@ -14118,7 +14020,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 40,
+        .lvl = MOSSDEEP_GYM_LEVEL,
         .species = SPECIES_STARMIE,
         }
     },
@@ -14132,8 +14034,23 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 40,
-        .species = SPECIES_GIRAFARIG,
+        .lvl = MOSSDEEP_GYM_LEVEL,
+        .species = SPECIES_FARIGIRAF,
+        }
+    },
+},
+
+[TRAINER_KATHLEEN] =
+{
+    .trainerName = _("Kathleen"),
+    PSYCHIC_F_INFO,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = MOSSDEEP_GYM_LEVEL,
+        .species = SPECIES_CHIMECHO,
+        IVS(12),
         }
     },
 },
@@ -14146,7 +14063,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 40,
+        .lvl = MOSSDEEP_GYM_LEVEL,
         .species = SPECIES_WOBBUFFET,
         }
     },
@@ -14160,7 +14077,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 40,
+        .lvl = MOSSDEEP_GYM_LEVEL,
         .species = SPECIES_GRUMPIG,
         IVS(12),
         }
@@ -14175,8 +14092,8 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 40,
-        .species = SPECIES_METANG,
+        .lvl = MOSSDEEP_GYM_LEVEL,
+        .species = SPECIES_GOLDUCK,
         IVS(12),
         }
     },
@@ -14190,7 +14107,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 40,
+        .lvl = MOSSDEEP_GYM_LEVEL,
         .species = SPECIES_MEDICHAM,
         IVS(12),
         }
@@ -14205,23 +14122,8 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 40,
+        .lvl = MOSSDEEP_GYM_LEVEL,
         .species = SPECIES_GARDEVOIR,
-        IVS(12),
-        }
-    },
-},
-
-[TRAINER_KATHLEEN] =
-{
-    .trainerName = _("Kathleen"),
-    HEX_MANIAC_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 40,
-        .species = SPECIES_CHIMECHO,
         IVS(12),
         }
     },

@@ -51,6 +51,7 @@ upcoming
 - Remove unused code
     - Vanilla code
     - Move tutor flags since they're now infinite
+- Organize changes better
 
 ### Pokémon
 - Eventually remove RSE and/or BDSP teachable moves

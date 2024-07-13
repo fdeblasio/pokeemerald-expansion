@@ -241,8 +241,9 @@ There are some mechanics, moves and abilities that are missing and being develop
     - The door to Sealed Chamber and the Regis' inner rooms are now automatically open
 - Made rapids easier to navigate so that only one trip is needed to get all items/battle all trainers (at the cost of looking slightly worse)
 - All moves automatically have their max PP amount
-- Much easier to make good Pokéblocks
 - The Good Rod is now obtained on the left side of Route 118 instead of the right
+- Much easier to make good Pokéblocks
+- TM moves not in the game are learnable as egg moves
 - Sacred Ash now works in battles although it only revives one Pokémon
 - Soul Dew uses its Gen 6 effect
 - Pokémon that evolve with an item at day or night now can evolve at any time
@@ -408,7 +409,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Tabitha Magma Hideout   |26, 28, 30, 33        |45, 45, 47|
 |Maxie Magma Hideout     |37, 38, 39            |46, 47, 47, 48|
 |Matt Aqua Hideout       |34, 34                |47, 47, 49|
-|Tate/Liza               |41, 41, 42, 42        |55, 55, 57, 57|
+|Tate/Liza               |41, 41, 42, 42        |48, 48, 50, 50|
 |Courtney                |N/A                   |55, 55, 57|
 |Tabitha/Maxie           |36, 38, 40/42, 43, 44 |55, 55, 57/57, 58, 60|
 |Regis                   |40                    |45|

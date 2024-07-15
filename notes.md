@@ -232,14 +232,16 @@ upcoming
 ### Big changes from Vanilla - low priority
 - Remove IVs? Maybe make boolean for either 0 or 31 added to stat
     - Would need to figure out Hidden Power
-- Add Pokémon with dolls? (Togepi, Smoochum, Clefairy, Lapras, Snorlax, Venusaur, Charizard, Blastoise)
 - Make seperate Pokédex for post-game similar to SwSh DLC Pokédexes (include Outbreaks like Elekid)?
 - Fire Blast/Hydro Pump/Stone Edge accurate in respective weathers?
     - Make Thunder also accurate in Electric Terrain?
 - Calculate Electro Ball more similarly to Gyro Ball?
 - Make Water Veil also up evasion like Sand Veil?
-- Find way to get Hypnosis to always hit if Hypno is using it?
+- Species-specific move effects?:
+    - Hypnosis always hits if Hypno is using it
+    - Smack Down is super effective if a Tinkaton uses it against Corviknight
 - Edit Slot odds (SLOT_MACHINE_)? Even though there's only three prizes?
+- Add Pokémon with dolls? (Togepi, Smoochum, Clefairy, Lapras, Snorlax, Venusaur, Charizard, Blastoise)
 - Add in Hoenn Pokédex regionals?
     - Sun/Shiny Stone for Alolan Raichu
     - Alolan Sandshrew/Vulpix at Shoal Cave

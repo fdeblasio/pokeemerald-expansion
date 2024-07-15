@@ -2000,3 +2000,19 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Ceruledge:
     - Hidden Ability: Weak Armor->Sharpness
+
+- Tinkatink:
+    - SpD: 64->65
+    - Spe: 58->60
+
+- Tinkatuff:
+    - Atk: 55->70
+    - SpD: 82->85
+    - Spe: 78->80
+
+- Tinkaton:
+    - Atk: 75->85
+    - Def: 77->80
+    - Spe: 94->95
+    - Hidden Ability: Pickpocket->Steelworker
+    - Learns Smack Down by level up

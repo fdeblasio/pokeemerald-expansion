@@ -2065,7 +2065,6 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         },
         {
         STEVEN_AGGRON(79),
-        .moves = {MOVE_IRON_HEAD, MOVE_ROCK_SLIDE, MOVE_BODY_PRESS, MOVE_IRON_DEFENSE},
         .heldItem = ITEM_SHUCA_BERRY,
         },
         {
@@ -14176,20 +14175,20 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 50,
+        .lvl = MAXIE_SPACE_CENTER_ACE_LEVEL - 3,
         .species = SPECIES_SANDSLASH,
         IVS(12),
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = 50,
+        .lvl = MAXIE_SPACE_CENTER_ACE_LEVEL - 3,
         .species = SPECIES_TORKOAL,
         .ability = ABILITY_WHITE_SMOKE,
         IVS(12),
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = 52,
+        .lvl = MAXIE_SPACE_CENTER_ACE_LEVEL - 1,
         .species = SPECIES_NINETALES,
         IVS(12),
         .gender = TRAINER_MON_FEMALE,
@@ -14203,15 +14202,15 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        TABITHA_PHANPY(50),
+        TABITHA_PHANPY(MAXIE_SPACE_CENTER_ACE_LEVEL - 3),
         IVS(12),
         },
         {
-        TABITHA_SLUGMA(50),
+        TABITHA_SLUGMA(MAXIE_SPACE_CENTER_ACE_LEVEL - 3),
         IVS(12),
         },
         {
-        TABITHA_HOUNDOUR(52),
+        TABITHA_HOUNDOUR(MAXIE_SPACE_CENTER_ACE_LEVEL - 1),
         IVS(12),
         }
     },
@@ -14222,10 +14221,10 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     MAXIE_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
-        MAXIE_SANDSHREW(52),
-        MAXIE_BALTOY(53),
+        MAXIE_SANDSHREW(MAXIE_SPACE_CENTER_ACE_LEVEL - 1),
+        MAXIE_BALTOY(MAXIE_SPACE_CENTER_ACE_LEVEL - 1),
         {
-        HUMPHREY(55),
+        HUMPHREY(MAXIE_SPACE_CENTER_ACE_LEVEL),
         .heldItem = ITEM_CAMERUPTITE,
         }
     },

@@ -203,6 +203,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Newer Pokémon don't have follower sprites
 - Newer moves don't have animations
 - When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
+- AI_FLAG_ACE_POKEMON potentially broken in multi-battles (maybe only if both trainers have it)
 - If you help one of the Lilycove Pokémon Center ladies, the other lady thinks you've already helped her as well
     - Could have something to do with this: sContestLadyPtr->id = LILYCOVE_LADY_CONTEST
 

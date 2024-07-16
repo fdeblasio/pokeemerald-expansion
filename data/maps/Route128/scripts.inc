@@ -245,6 +245,17 @@ Route128_EventScript_Carlee::
 	msgbox Route128_Text_CarleePostBattle, MSGBOX_AUTOCLOSE
 	end
 
+Route128_EventScript_AquaGrunt::
+	msgbox Route128_Text_AquaGrunt, MSGBOX_DEFAULT
+	release
+	end
+
+Route128_Text_AquaGrunt:
+	.string "Shh…we're actually Team Aqua\n"
+	.string "in disguise!\p"
+	.string "We're trying to stop anyone\n"
+	.string "from hindering Archie!$"
+
 Route128_Text_ArchieWhatHappened:
 	.string "Archie: What happened…\n"
 	.string "What is this wretched scene…\p"

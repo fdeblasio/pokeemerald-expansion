@@ -121,14 +121,15 @@ struct Trainer
     PERFECT_IVS,                                                \
     .ball = ITEM_PREMIER_BALL
 
-#define STEVEN_AGGRON(Level)    \
-    .lvl = Level,               \
-    .species = SPECIES_AGGRON,  \
-    .ability = ABILITY_STURDY,  \
-    .nature = NATURE_IMPISH,    \
-    .ev = EV_SPREAD_ATK_DEF_HP, \
-    PERFECT_IVS,                \
-    .gender = TRAINER_MON_MALE, \
+#define STEVEN_AGGRON(Level)                                                                                   \
+    .lvl = Level,                                                                                              \
+    .species = SPECIES_AGGRON,                                                                                 \
+    .ability = ABILITY_STURDY,                                                                                 \
+    .nature = NATURE_IMPISH,                                                                                   \
+    .ev = EV_SPREAD_ATK_DEF_HP,                                                                                \
+    PERFECT_IVS,                                                                                               \
+    .moves = {MOVE_IRON_HEAD, MOVE_ROCK_SLIDE, MOVE_BODY_PRESS, Level < 64 ? MOVE_HARDEN : MOVE_IRON_DEFENSE}, \
+    .gender = TRAINER_MON_MALE,                                                                                \
     .ball = ITEM_HEAVY_BALL
 
 #define STEVEN_MAWILE(Level)                                                    \
@@ -141,6 +142,8 @@ struct Trainer
     .moves = {MOVE_IRON_HEAD, MOVE_PLAY_ROUGH, MOVE_CRUNCH, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_FEMALE,                                               \
     .ball = ITEM_ULTRA_BALL
+
+#define MAXIE_SPACE_CENTER_ACE_LEVEL 53
 
 struct TrainerClass
 {

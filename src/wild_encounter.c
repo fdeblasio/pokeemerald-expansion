@@ -116,9 +116,9 @@ EWRAM_DATA static u16 sLastFishingSpecies = 0;
 #define RANGE_ROUTE_127         47, 49
 #define RANGE_ROUTE_126         47, 49
 #define RANGE_SOOTOPOLIS_CITY   47, 49
-#define RANGE_ROUTE_128         47, 49
-#define RANGE_EVER_GRANDE_CITY  47, 49
-#define RANGE_SEAFLOOR_CAVERN   48, 50
+#define RANGE_ROUTE_128         48, 50
+#define RANGE_EVER_GRANDE_CITY  48, 50
+#define RANGE_SEAFLOOR_CAVERN   50, 52
 #define RANGE_CAVE_OF_ORIGIN    53, 55
 #define RANGE_ROUTE_129         50, 52
 #define RANGE_ROUTE_130         50, 52

@@ -416,9 +416,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Tate/Liza               |41, 41, 42, 42        |49, 49, 51, 51|
 |Courtney                |N/A                   |50, 50, 52|
 |Tabitha/Maxie           |36, 38, 40/42, 43, 44 |50, 50, 52/52, 52, 53|
+|Matt/Shelly             |N/A/37, 37            |52, 52, 53/52, 52, 53|
+|Archie Seafloor Cavern  |41, 41, 43            |53, 53, 54, 55|
 |Regis                   |40                    |55|
-|Matt/Shelly             |N/A/37, 37            |42, 42, 43/42, 42, 43|
-|Archie Seafloor Cavern  |41, 41, 43            |43, 43, 44, 45|
 |Juan                    |41, 41, 43, 43, 46    |44, 44, 45, 45, 47|
 |Rayquaza                |70                    |60|
 |Wally                   |41, 43, 44, 44, 45    |46, 46, 47, 47, 49|

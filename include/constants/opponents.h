@@ -749,6 +749,10 @@
 #define TRAINER_VIRGIL                      315
 #define TRAINER_SYLVIA                      621
 #define TRAINER_HANNAH                      325
+//Trick House 6
+#define TRAINER_SOPHIA                      608
+#define TRAINER_SEBASTIAN                   601
+#define TRAINER_BENNY                       475
 //Space Center
 #define TRAINER_GRUNT_SPACE_CENTER_1        110
 #define TRAINER_GRUNT_SPACE_CENTER_2        632
@@ -759,10 +763,6 @@
 #define TRAINER_COURTNEY_SPACE_CENTER       198
 #define TRAINER_TABITHA_SPACE_CENTER        580
 #define TRAINER_MAXIE_SPACE_CENTER          763
-//Trick House 6
-#define TRAINER_SOPHIA                      608
-#define TRAINER_SEBASTIAN                   601
-#define TRAINER_BENNY                       475
 //Route 127
 #define TRAINER_AIDAN                       703
 #define TRAINER_ATHENA                      623
@@ -776,6 +776,19 @@
 #define TRAINER_KOJI_4                      820
 #define TRAINER_KOJI_5                      821
 #define TRAINER_DONNY                       452
+//Route 126
+#define TRAINER_LEONARDO                    622
+#define TRAINER_ISOBEL                      451
+#define TRAINER_DEAN                        245
+#define TRAINER_NIKKI                       521
+#define TRAINER_BARRY                       244
+#define TRAINER_SIENNA                      527
+#define TRAINER_PABLO_1                     445
+#define TRAINER_PABLO_2                     814
+#define TRAINER_PABLO_3                     815
+#define TRAINER_PABLO_4                     816
+#define TRAINER_PABLO_5                     817
+#define TRAINER_BRENDA                      522
 //Route 128
 #define TRAINER_RUBEN                       700
 #define TRAINER_ALEXA                       699
@@ -800,19 +813,6 @@
 #define TRAINER_MATT_SEAFLOOR_CAVERN        614
 #define TRAINER_SHELLY_SEAFLOOR_CAVERN      121
 #define TRAINER_ARCHIE_SEAFLOOR_CAVERN      122
-//Route 126
-#define TRAINER_LEONARDO                    622
-#define TRAINER_ISOBEL                      451
-#define TRAINER_DEAN                        245
-#define TRAINER_NIKKI                       521
-#define TRAINER_BARRY                       244
-#define TRAINER_SIENNA                      527
-#define TRAINER_PABLO_1                     445
-#define TRAINER_PABLO_2                     814
-#define TRAINER_PABLO_3                     815
-#define TRAINER_PABLO_4                     816
-#define TRAINER_PABLO_5                     817
-#define TRAINER_BRENDA                      522
 //Route 129
 #define TRAINER_REED                        704
 #define TRAINER_CHASE                       446

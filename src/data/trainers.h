@@ -2613,7 +2613,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 #define HUMPHREY(Level)                                       \
     .lvl = Level,                                             \
     .species = Level < 33 ? SPECIES_NUMEL : SPECIES_CAMERUPT, \
-    .ability = 2,                                             \
+    .ability = 1,                                             \
     .nature = NATURE_MODEST,                                  \
     PERFECT_IVS,                                              \
     .gender = TRAINER_MON_MALE,                               \
@@ -13252,7 +13252,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 [TRAINER_MAXIE_MAGMA_HIDEOUT] =
 {
     MAXIE_INFO,
-    .items = {ITEM_SUPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
+    .items = {ITEM_HYPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         MAXIE_PHANPY(46),
@@ -14998,29 +14998,38 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
 [TRAINER_ARCHIE_SEAFLOOR_CAVERN] =
 {
     ARCHIE_INFO,
-    .items = {ITEM_SUPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
+    .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE},
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 53,
         .species = SPECIES_STARMIE,
+        .ability = ABILITY_ILLUMINATE,
         IVS(18),
         },
         {
         .lvl = 53,
         .species = SPECIES_TENTACRUEL,
+        .ability = ABILITY_CLEAR_BODY,
         IVS(18),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 54,
         .species = SPECIES_WAILORD,
+        .ability = ABILITY_OBLIVIOUS,
         IVS(18),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 55,
         .species = SPECIES_SHARPEDO,
+        .ability = ABILITY_ROUGH_SKIN,
         PERFECT_IVS,
+        .moves = {MOVE_LIQUIDATION, MOVE_CRUNCH, MOVE_ICE_FANG, MOVE_POISON_FANG},
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SHARPEDONITE,
+        .nickname = COMPOUND_STRING("Finneas"),
         }
     },
 },

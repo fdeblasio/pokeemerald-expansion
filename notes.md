@@ -45,6 +45,7 @@ upcoming
 - Combine two meta files (notes.md and README.md)?
     Include more changes, even if general like Battle Frontier edits
 - Before a new game, put Trainer numbers in order
+- Rearrange wild_encounters.json to be in order
 - Consolidate flags
     - FLAG_DEFEATED_MAUVILLE_GYM, FLAG_BADGE03_GET, FLAG_HIDE_MAUVILLE_ROCK_SMASH_TIP_GUY
     - FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA

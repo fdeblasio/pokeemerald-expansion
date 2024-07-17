@@ -81,6 +81,7 @@ EWRAM_DATA static u16 sLastFishingSpecies = 0;
 #define RANGE_ROUTE_103          4, 4
 #define RANGE_ROUTE_102_104      5, 5
 #define RANGE_PETALBURG_WOODS    5, 6
+#define RANGE_PETALBURG_WOODS_COCOON 7, 7
 #define RANGE_ROUTE_116          7, 8
 #define RANGE_RUSTURF_TUNNEL     9, 9
 #define RANGE_OLD_ROD_INITIAL   10, 15
@@ -111,6 +112,28 @@ EWRAM_DATA static u16 sLastFishingSpecies = 0;
 #define RANGE_MOSSDEEP_CITY     46, 48
 #define RANGE_SHOAL_CAVE        46, 48
 #define RANGE_SUPER_ROD_INITIAL 46, 48
+#define RANGE_DIVE_INITIAL      47, 49
+#define RANGE_ROUTE_127         47, 49
+#define RANGE_ROUTE_126         47, 49
+#define RANGE_SOOTOPOLIS_CITY   47, 49
+#define RANGE_ROUTE_128         47, 49
+#define RANGE_EVER_GRANDE_CITY  47, 49
+#define RANGE_SEAFLOOR_CAVERN   48, 50
+#define RANGE_CAVE_OF_ORIGIN    53, 55
+#define RANGE_ROUTE_129         50, 52
+#define RANGE_ROUTE_130         50, 52
+#define RANGE_MIRAGE_ISLAND     50, 50
+#define RANGE_ROUTE_131         50, 52
+#define RANGE_SKY_PILLAR        53, 55
+#define RANGE_PACIFIDLOG_TOWN   50, 52
+#define RANGE_ROUTE_132         50, 52
+#define RANGE_ROUTE_133         50, 52
+#define RANGE_ROUTE_134         50, 52
+#define RANGE_METEOR_FALLS_WATERFALL 52, 54
+#define RANGE_VICTORY_ROAD      54, 56
+#define RANGE_POSTGAME          60, 60
+#define RANGE_BATTLE_FRONTIER   5, 5
+#define RANGE_UNUSED            1, 1
 
 #include "data/wild_encounters.h"
 

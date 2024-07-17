@@ -2568,14 +2568,14 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .species = SPECIES_GOREBYSS, \
     .gender = TRAINER_MON_FEMALE
 
-#define SHELLY_GOLDEEN(Level)   \
-    .lvl = Level,                \
+#define SHELLY_GOLDEEN(Level)                                                 \
+    .lvl = Level,                                                             \
     .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_GOLDEEN : SPECIES_SEAKING, \
-    .ability = ABILITY_SWIFT_SWIM,      \
+    .ability = ABILITY_SWIFT_SWIM,                                            \
     .gender = TRAINER_MON_FEMALE
 
-#define SHELLY_STARYU(Level)   \
-    .lvl = Level,                \
+#define SHELLY_STARYU(Level)                                                 \
+    .lvl = Level,                                                            \
     .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_STARYU : SPECIES_STARMIE, \
     .ability = ABILITY_ILLUMINATE
 
@@ -2585,6 +2585,23 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .trainerPic = TRAINER_PIC_AQUA_ADMIN_M,                \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA, \
     BOSS_AI_FLAGS
+
+#define MATT_HUNTAIL(Level)     \
+    .lvl = Level,               \
+    .species = SPECIES_HUNTAIL, \
+    .gender = TRAINER_MON_MALE
+
+#define MATT_CRAWDAUNT(Level)       \
+    .lvl = Level,                   \
+    .species = SPECIES_CRAWDAUNT,   \
+    .ability = ABILITY_SHELL_ARMOR, \
+    .gender = TRAINER_MON_MALE
+
+#define MATT_TENTACRUEL(Level)      \
+    .lvl = Level,                   \
+    .species = SPECIES_TENTACRUEL,  \
+    .ability = ABILITY_LIQUID_OOZE, \
+    .gender = TRAINER_MON_MALE
 
 #define MAXIE_INFO                                          \
     .trainerName = _("Maxie"),                              \
@@ -13362,18 +13379,15 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 47,
-        .species = SPECIES_TENTACRUEL,
+        MATT_TENTACRUEL(47),
         IVS(6),
         },
         {
-        .lvl = 47,
-        .species = SPECIES_CRAWDAUNT,
+        MATT_CRAWDAUNT(47),
         IVS(6),
         },
         {
-        .lvl = 49,
-        .species = SPECIES_HUNTAIL,
+        MATT_HUNTAIL(49),
         IVS(6),
         }
     },
@@ -14891,13 +14905,15 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
 },
 
 //Seafloor Cavern
+#define SEAFLOOR_CAVERN_LEVEL 52
+
 [TRAINER_GRUNT_SEAFLOOR_CAVERN_1] =
 {
     AQUA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = SEAFLOOR_CAVERN_LEVEL,
         .species = SPECIES_WAILORD,
         }
     },
@@ -14909,7 +14925,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = SEAFLOOR_CAVERN_LEVEL,
         .species = SPECIES_TENTACRUEL,
         }
     },
@@ -14921,7 +14937,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = SEAFLOOR_CAVERN_LEVEL,
         .species = SPECIES_CRAWDAUNT,
         }
     },
@@ -14933,7 +14949,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = SEAFLOOR_CAVERN_LEVEL,
         .species = SPECIES_SEAKING,
         }
     },
@@ -14945,19 +14961,16 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
-        .species = SPECIES_TENTACRUEL,
-        IVS(6),
+        MATT_TENTACRUEL(52),
+        IVS(12),
         },
         {
-        .lvl = 42,
-        .species = SPECIES_CRAWDAUNT,
-        IVS(6),
+        MATT_CRAWDAUNT(52),
+        IVS(12),
         },
         {
-        .lvl = 43,
-        .species = SPECIES_HUNTAIL,
-        IVS(6),
+        MATT_HUNTAIL(53),
+        IVS(12),
         }
     },
 },
@@ -14968,15 +14981,15 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        SHELLY_STARYU(42),
+        SHELLY_STARYU(52),
         IVS(12),
         },
         {
-        SHELLY_GOLDEEN(42),
+        SHELLY_GOLDEEN(52),
         IVS(12),
         },
         {
-        SHELLY_GOREBYSS(43),
+        SHELLY_GOREBYSS(53),
         IVS(12),
         }
     },
@@ -14989,22 +15002,22 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 43,
+        .lvl = 53,
         .species = SPECIES_STARMIE,
         IVS(18),
         },
         {
-        .lvl = 43,
+        .lvl = 53,
         .species = SPECIES_TENTACRUEL,
         IVS(18),
         },
         {
-        .lvl = 44,
+        .lvl = 54,
         .species = SPECIES_WAILORD,
         IVS(18),
         },
         {
-        .lvl = 45,
+        .lvl = 55,
         .species = SPECIES_SHARPEDO,
         PERFECT_IVS,
         .heldItem = ITEM_SHARPEDONITE,

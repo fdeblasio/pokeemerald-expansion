@@ -152,6 +152,7 @@ upcoming
         - Close Combat?
 - Make Fly usuable after 2nd badge? Or maybe even aftering delivering goods in Slateport?
 - Fly to routes:
+    - Route 110: Trick House or New Mauville
     - Route 121: Safari Zone (if not removed)
     - Route 128: Where Steven flies to?
 

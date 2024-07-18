@@ -124,11 +124,11 @@ EWRAM_DATA static u16 sLastFishingSpecies = 0;
 #define RANGE_ROUTE_130         51, 53
 #define RANGE_MIRAGE_ISLAND     50, 50
 #define RANGE_ROUTE_131         51, 53
-#define RANGE_SKY_PILLAR        53, 55
-#define RANGE_PACIFIDLOG_TOWN   51, 53
-#define RANGE_ROUTE_132         51, 53
-#define RANGE_ROUTE_133         51, 53
-#define RANGE_ROUTE_134         51, 53
+#define RANGE_SKY_PILLAR        52, 54
+#define RANGE_PACIFIDLOG_TOWN   52, 54
+#define RANGE_ROUTE_132         52, 54
+#define RANGE_ROUTE_133         52, 54
+#define RANGE_ROUTE_134         52, 54
 #define RANGE_METEOR_FALLS_WATERFALL 52, 54
 #define RANGE_VICTORY_ROAD      54, 56
 #define RANGE_POSTGAME          60, 60

@@ -268,7 +268,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(GALLADE, ACE, rematch),                                                \
     .ability = ABILITY_SHARPNESS,                                                      \
     .nature = NATURE_ADAMANT,                                                          \
-    .ev = EV_SPREAD_ATK_SPE_HP,                                                        \
+    EV_SPREAD_ATK_SPE_HP,                                                              \
     .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                        \
     .heldItem = ITEM_GALLADITE,                                                        \
@@ -281,7 +281,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(ROSERADE, TIER2, rematch),                                              \
     .ability = ABILITY_NATURAL_CURE,                                                    \
     .nature = NATURE_MODEST,                                                            \
-    .ev = TRAINER_PARTY_EVS(0, 0, 0, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, EV_REMAINDER), \
+    EV_SPREAD_SPA_SPE_SPD,                                                              \
     .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC},          \
     .gender = TRAINER_MON_FEMALE,                                                       \
     .heldItem = ITEM_MIRACLE_SEED,                                                      \
@@ -292,7 +292,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(ALTARIA, TIER2, rematch),                                               \
     .ability = ABILITY_NATURAL_CURE,                                                    \
     .nature = NATURE_MODEST,                                                            \
-    .ev = TRAINER_PARTY_EVS(0, 0, EV_REMAINDER, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, 0), \
+    EV_SPREAD_SPA_SPE_DEF,                                                              \
     .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},    \
     .gender = TRAINER_MON_MALE,                                                         \
     }
@@ -302,7 +302,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(MAGNEZONE, TIER3, rematch),                                             \
     .ability = ABILITY_ANALYTIC,                                                        \
     .nature = NATURE_BOLD,                                                              \
-    .ev = TRAINER_PARTY_EVS(0, 0, MAX_PER_STAT_EVS, 0, MAX_PER_STAT_EVS, EV_REMAINDER), \
+    EV_SPREAD_SPA_DEF_SPD,                                                              \
     .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_METAL_SOUND},  \
     }
 
@@ -311,7 +311,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(DELCATTY, TIER3, rematch),                              \
     .ability = ABILITY_NORMALIZE,                                       \
     .nature = NATURE_TIMID,                                             \
-    .ev = EV_SPREAD_SPA_SPE_HP,                                         \
+    EV_SPREAD_SPA_SPE_HP,                                               \
     .moves = {MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_ASSIST, MOVE_CHARM}, \
     .gender = TRAINER_MON_FEMALE,                                       \
     }
@@ -424,7 +424,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(PROBOPASS, ACE, rematch),                                               \
     .ability = ABILITY_SAND_FORCE,                                                      \
     .nature = NATURE_IMPISH,                                                            \
-    .ev = TRAINER_PARTY_EVS(0, 0, MAX_PER_STAT_EVS, 0, MAX_PER_STAT_EVS, EV_REMAINDER), \
+    EV_SPREAD_SPA_DEF_SPD,                                                              \
     .moves = {MOVE_POWER_GEM, MOVE_FLASH_CANNON, rematch < 5 ? MOVE_SANDSTORM : MOVE_BODY_PRESS, MOVE_IRON_DEFENSE}, \
     .gender = TRAINER_MON_FEMALE,                                                       \
     .heldItem = ITEM_SITRUS_BERRY,                                                      \
@@ -435,7 +435,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(ARMALDO, TIER2, rematch),                                           \
     .ability = ABILITY_BATTLE_ARMOR,                                                \
     .nature = NATURE_ADAMANT,                                                       \
-    .ev = EV_SPREAD_ATK_DEF_HP,                                                     \
+    EV_SPREAD_ATK_DEF_HP,                                                           \
     .moves = {MOVE_ROCK_SLIDE, MOVE_X_SCISSOR, MOVE_CRUSH_CLAW, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                     \
     .heldItem = ITEM_QUICK_CLAW,                                                    \
@@ -446,7 +446,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(CRADILY, TIER2, rematch),                                               \
     .ability = ABILITY_STORM_DRAIN,                                                     \
     .nature = NATURE_CALM,                                                              \
-    .ev = TRAINER_PARTY_EVS(0, 0, EV_REMAINDER, 0, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS), \
+    EV_SPREAD_SPA_SPD_DEF,                                                              \
     .moves = {MOVE_GIGA_DRAIN, MOVE_ANCIENT_POWER, MOVE_INGRAIN, MOVE_AMNESIA},         \
     .gender = TRAINER_MON_FEMALE,                                                       \
     .heldItem = ITEM_BIG_ROOT,                                                          \
@@ -457,7 +457,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(RELICANTH, TIER3, rematch),                                      \
     .ability = ABILITY_ROCK_HEAD,                                                \
     .nature = NATURE_IMPISH,                                                     \
-    .ev = EV_SPREAD_ATK_DEF_HP,                                                  \
+    EV_SPREAD_ATK_DEF_HP,                                                        \
     .moves = {MOVE_HEAD_SMASH, MOVE_AQUA_TAIL, rematch < 5 ? MOVE_DOUBLE_EDGE : MOVE_BODY_PRESS, MOVE_IRON_DEFENSE}, \
     .gender = TRAINER_MON_FEMALE,                                                \
     }
@@ -467,7 +467,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(AGGRON, TIER3, rematch),                                    \
     .ability = ABILITY_ROCK_HEAD,                                           \
     .nature = NATURE_IMPISH,                                                \
-    .ev = EV_SPREAD_ATK_DEF_HP,                                             \
+    EV_SPREAD_ATK_DEF_HP,                                                   \
     .moves = {MOVE_##move1, MOVE_##move2, MOVE_##move3, MOVE_STEALTH_ROCK}, \
     .gender = TRAINER_MON_FEMALE,                                           \
     }
@@ -527,7 +527,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         REMATCH_MON(RHYPERIOR, TIER3, 5),
         .ability = ABILITY_SOLID_ROCK,
         .nature = NATURE_ADAMANT,
-        .ev = EV_SPREAD_ATK_DEF_HP,
+        EV_SPREAD_ATK_DEF_HP,
         .moves = {MOVE_ROCK_WRECKER, MOVE_DRILL_RUN, MOVE_POISON_JAB, MOVE_SANDSTORM},
         .gender = TRAINER_MON_FEMALE,
         },
@@ -582,7 +582,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(HARIYAMA, ACE, rematch),                                                \
     .ability = ABILITY_THICK_FAT,                                                       \
     .nature = NATURE_ADAMANT,                                                           \
-    .ev = TRAINER_PARTY_EVS(MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, 0, EV_REMAINDER, 0, 0), \
+    EV_SPREAD_ATK_HP_SPE,                                                               \
     .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_BELLY_DRUM, MOVE_FAKE_OUT},          \
     .gender = TRAINER_MON_MALE,                                                         \
     .heldItem = ITEM_SITRUS_BERRY,                                                      \
@@ -592,7 +592,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     {                                                                             \
     REMATCH_MON(MEDICHAM, TIER2, rematch),                                        \
     .nature = NATURE_ADAMANT,                                                     \
-    .ev = EV_SPREAD_ATK_SPE_HP,                                                   \
+    EV_SPREAD_ATK_SPE_HP,                                                         \
     .moves = {MOVE_BULK_UP, MOVE_HIGH_JUMP_KICK, MOVE_ZEN_HEADBUTT, MOVE_DETECT}, \
     .gender = TRAINER_MON_FEMALE,                                                 \
     .heldItem = ITEM_MUSCLE_BAND,                                                 \
@@ -603,7 +603,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(MACHAMP, TIER2, rematch),                                     \
     .ability = ABILITY_NO_GUARD,                                              \
     .nature = NATURE_ADAMANT,                                                 \
-    .ev = EV_SPREAD_ATK_SPE_HP,                                               \
+    EV_SPREAD_ATK_SPE_HP,                                                     \
     .moves = {MOVE_BULK_UP, MOVE_CROSS_CHOP, MOVE_KNOCK_OFF, MOVE_DUAL_CHOP}, \
     .gender = TRAINER_MON_MALE,                                               \
     .heldItem = ITEM_BLACK_BELT,                                              \
@@ -614,7 +614,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(BRELOOM, TIER3, rematch),                                         \
     .ability = ABILITY_TECHNICIAN,                                                \
     .nature = NATURE_ADAMANT,                                                     \
-    .ev = EV_SPREAD_ATK_SPE_HP,                                                   \
+    EV_SPREAD_ATK_SPE_HP,                                                         \
     .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_BULLET_SEED, MOVE_MACH_PUNCH}, \
     .gender = TRAINER_MON_MALE,                                                   \
     }
@@ -623,7 +623,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     {                                                                              \
     REMATCH_MON(BLAZIKEN, TIER3, rematch),                                         \
     .nature = NATURE_ADAMANT,                                                      \
-    .ev = EV_SPREAD_ATK_SPE_HP,                                                    \
+    EV_SPREAD_ATK_SPE_HP,                                                          \
     .moves = {MOVE_BULK_UP, MOVE_SKY_UPPERCUT, MOVE_BLAZE_KICK, MOVE_MIRROR_MOVE}, \
     .gender = TRAINER_MON_MALE,                                                    \
     }
@@ -683,7 +683,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         REMATCH_MON(GALLADE, TIER3, 5),
         .ability = ABILITY_JUSTIFIED,
         .nature = NATURE_ADAMANT,
-        .ev = EV_SPREAD_ATK_SPE_HP,
+        EV_SPREAD_ATK_SPE_HP,
         .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_PSYCHO_CUT, MOVE_NIGHT_SLASH},
         },
         BRAWLY_BLAZIKEN(5),
@@ -743,7 +743,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(MANECTRIC, ACE, rematch),                                            \
     .ability = ABILITY_MINUS,                                                        \
     .nature = NATURE_MODEST,                                                         \
-    .ev = EV_SPREAD_ATK_SPE_HP,                                                      \
+    EV_SPREAD_ATK_SPE_HP,                                                            \
     .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_SIGNAL_BEAM, MOVE_SNARL},    \
     .gender = TRAINER_MON_MALE,                                                      \
     .heldItem = ITEM_SITRUS_BERRY,                                                   \
@@ -754,7 +754,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(PLUSLE, TIER2, rematch),                                         \
     .ability = ABILITY_PLUS,                                                     \
     .nature = NATURE_TIMID,                                                      \
-    .ev = EV_SPREAD_ATK_SPE_SPD,                                                 \
+    EV_SPREAD_ATK_SPE_SPD,                                                       \
     .moves = {MOVE_THUNDERBOLT, MOVE_HELPING_HAND, MOVE_CHARM, MOVE_NASTY_PLOT}, \
     .gender = TRAINER_MON_FEMALE,                                                \
     .heldItem = ITEM_MAGNET,                                                     \
@@ -765,7 +765,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(MINUN, TIER2, rematch),                                               \
     .ability = ABILITY_MINUS,                                                         \
     .nature = NATURE_TIMID,                                                           \
-    .ev = EV_SPREAD_ATK_SPE_SPD,                                                      \
+    EV_SPREAD_ATK_SPE_SPD,                                                            \
     .moves = {MOVE_THUNDERBOLT, MOVE_THUNDER_WAVE, MOVE_FAKE_TEARS, MOVE_NASTY_PLOT}, \
     .gender = TRAINER_MON_MALE,                                                       \
     .heldItem = ITEM_MAGNET,                                                          \
@@ -776,7 +776,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(MAGNEZONE, TIER3, rematch),                                              \
     .ability = ABILITY_MAGNET_PULL,                                                      \
     .nature = NATURE_MODEST,                                                             \
-    .ev = TRAINER_PARTY_EVS(0, 0, MAX_PER_STAT_EVS, 0, MAX_PER_STAT_EVS, EV_REMAINDER),  \
+    EV_SPREAD_SPA_DEF_SPD,                                                               \
     .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_BODY_PRESS, MOVE_MAGNETIC_FLUX}, \
     }
 
@@ -785,7 +785,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(LANTURN, TIER3, rematch),                                               \
     .ability = ABILITY_VOLT_ABSORB,                                                     \
     .nature = NATURE_MODEST,                                                            \
-    .ev = TRAINER_PARTY_EVS(MAX_PER_STAT_EVS, 0, 0, 0, MAX_PER_STAT_EVS, EV_REMAINDER), \
+    EV_SPREAD_SPA_HP_SPD,                                                               \
     .moves = {MOVE_THUNDER, MOVE_HYDRO_PUMP, MOVE_ELECTRIC_TERRAIN, MOVE_RAIN_DANCE},   \
     .gender = TRAINER_MON_MALE,                                                         \
     }
@@ -904,7 +904,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(TORKOAL, ACE, rematch),                                            \
     .ability = ABILITY_DROUGHT,                                                    \
     .nature = NATURE_MODEST,                                                       \
-    .ev = EV_SPREAD_SPA_DEF_HP,                                                    \
+    EV_SPREAD_SPA_DEF_HP,                                                          \
     .moves = {MOVE_OVERHEAT, MOVE_IRON_DEFENSE, MOVE_SHELL_SMASH, MOVE_SUNNY_DAY}, \
     .gender = TRAINER_MON_FEMALE,                                                  \
     .heldItem = ITEM_WHITE_HERB,                                                   \
@@ -915,7 +915,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(CAMERUPT, TIER2, rematch),                                    \
     .ability = ABILITY_MAGMA_ARMOR,                                           \
     .nature = NATURE_MODEST,                                                  \
-    .ev = EV_SPREAD_SPA_SPE_HP,                                               \
+    EV_SPREAD_SPA_SPE_HP,                                                     \
     .moves = {MOVE_OVERHEAT, MOVE_EARTH_POWER, MOVE_AMNESIA, MOVE_SUNNY_DAY}, \
     .gender = TRAINER_MON_FEMALE,                                             \
     .heldItem = ITEM_WHITE_HERB,                                              \
@@ -926,7 +926,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(BLAZIKEN, TIER2, rematch),                                         \
     .ability = ABILITY_BLAZE,                                                      \
     .nature = NATURE_MODEST,                                                       \
-    .ev = EV_SPREAD_SPA_SPE_HP,                                                    \
+    EV_SPREAD_SPA_SPE_HP,                                                          \
     .moves = {MOVE_OVERHEAT, MOVE_AURA_SPHERE, MOVE_FOCUS_ENERGY, MOVE_SUNNY_DAY}, \
     .gender = TRAINER_MON_FEMALE,                                                  \
     .heldItem = ITEM_WHITE_HERB,                                                   \
@@ -937,7 +937,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(CASTFORM, TIER3, rematch),                                        \
     .ability = ABILITY_FORECAST,                                                  \
     .nature = NATURE_MODEST,                                                      \
-    .ev = EV_SPREAD_SPA_SPE_HP,                                                   \
+    EV_SPREAD_SPA_SPE_HP,                                                         \
     .moves = {MOVE_OVERHEAT, MOVE_SOLAR_BEAM, MOVE_WEATHER_BALL, MOVE_SUNNY_DAY}, \
     .gender = TRAINER_MON_FEMALE,                                                 \
     }
@@ -947,7 +947,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(MAGCARGO, TIER3, rematch),                                 \
     .ability = ABILITY_FLAME_BODY,                                         \
     .nature = NATURE_MODEST,                                               \
-    .ev = EV_SPREAD_SPA_DEF_HP,                                            \
+    EV_SPREAD_SPA_DEF_HP,                                                  \
     .moves = {MOVE_OVERHEAT, MOVE_YAWN, MOVE_SHELL_SMASH, MOVE_SUNNY_DAY}, \
     .gender = TRAINER_MON_FEMALE,                                          \
     }
@@ -957,7 +957,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(NINETALES, TIER3, rematch),                                 \
     .ability = ABILITY_DROUGHT,                                             \
     .nature = NATURE_TIMID,                                                \
-    .ev = EV_SPREAD_SPA_SPE_HP,                                             \
+    EV_SPREAD_SPA_SPE_HP,                                                   \
     .moves = {MOVE_OVERHEAT, MOVE_GRUDGE, MOVE_NASTY_PLOT, MOVE_SUNNY_DAY}, \
     .gender = TRAINER_MON_FEMALE,                                           \
     }
@@ -1075,7 +1075,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(SLAKING, ACE, rematch),                                                \
     .ability = ABILITY_TRUANT,                                                         \
     .nature = NATURE_ADAMANT,                                                          \
-    .ev = EV_SPREAD_ATK_SPE_HP,                                                        \
+    EV_SPREAD_ATK_SPE_HP,                                                              \
     .moves = {MOVE_GIGA_IMPACT, MOVE_HAMMER_ARM, MOVE_THROAT_CHOP, MOVE_SUCKER_PUNCH}, \
     .gender = TRAINER_MON_MALE,                                                        \
     .heldItem = ITEM_SITRUS_BERRY,                                                     \
@@ -1086,7 +1086,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(SPINDA, TIER2, rematch),                                       \
     .ability = ABILITY_OWN_TEMPO,                                              \
     .nature = NATURE_JOLLY,                                                    \
-    .ev = EV_SPREAD_ATK_SPE_HP,                                                \
+    EV_SPREAD_ATK_SPE_HP,                                                      \
     .moves = {MOVE_THRASH, MOVE_TEETER_DANCE, MOVE_HYPNOSIS, MOVE_SKILL_SWAP}, \
     .gender = TRAINER_MON_MALE,                                                \
     .heldItem = ITEM_LIECHI_BERRY,                                             \
@@ -1097,7 +1097,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(ZANGOOSE, TIER2, rematch),                                       \
     .ability = ABILITY_POISON_HEAL,                                              \
     .nature = NATURE_ADAMANT,                                                    \
-    .ev = EV_SPREAD_ATK_SPE_HP,                                                  \
+    EV_SPREAD_ATK_SPE_HP,                                                        \
     .moves = {MOVE_FACADE, MOVE_X_SCISSOR, MOVE_NIGHT_SLASH, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                  \
     .heldItem = ITEM_TOXIC_ORB,                                                  \
@@ -1108,7 +1108,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(LINOONE, TIER3, rematch),                                      \
     .ability = ABILITY_QUICK_FEET,                                             \
     .nature = NATURE_JOLLY,                                                    \
-    .ev = EV_SPREAD_ATK_SPE_HP,                                                \
+    EV_SPREAD_ATK_SPE_HP,                                                      \
     .moves = {MOVE_SLASH, MOVE_PLAY_ROUGH, MOVE_PIN_MISSILE, MOVE_BELLY_DRUM}, \
     .gender = TRAINER_MON_MALE,                                                \
     }
@@ -1118,7 +1118,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(EXPLOUD, TIER3, rematch),                                                 \
     .ability = ABILITY_PUNK_ROCK,                                                         \
     .nature = NATURE_MODEST,                                                              \
-    .ev = EV_SPREAD_SPA_SPE_HP,                                                           \
+    EV_SPREAD_SPA_SPE_HP,                                                                 \
     .moves = {MOVE_HYPER_VOICE, MOVE_DISARMING_VOICE, MOVE_SHADOW_BALL, MOVE_SUPERSONIC}, \
     .gender = TRAINER_MON_MALE,                                                           \
     }
@@ -1245,7 +1245,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(ALTARIA, ACE, rematch),                                              \
     .ability = ABILITY_NATURAL_CURE,                                                 \
     .nature = NATURE_MODEST,                                                         \
-    .ev = EV_SPREAD_SPA_SPE_SPD,                                                     \
+    EV_SPREAD_SPA_SPE_SPD,                                                           \
     .moves = {MOVE_AIR_SLASH, MOVE_DRAGON_PULSE, MOVE_MOONBLAST, MOVE_COTTON_GUARD}, \
     .gender = TRAINER_MON_FEMALE,                                                    \
     .heldItem = ITEM_SITRUS_BERRY,                                                   \
@@ -1256,7 +1256,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(SWELLOW, TIER2, rematch),                                       \
     .ability = ABILITY_SCRAPPY,                                                 \
     .nature = NATURE_JOLLY,                                                     \
-    .ev = EV_SPREAD_ATK_SPE_HP,                                                 \
+    EV_SPREAD_ATK_SPE_HP,                                                       \
     .moves = {MOVE_BRAVE_BIRD, MOVE_ENDEAVOR, MOVE_REVERSAL, MOVE_DOUBLE_TEAM}, \
     .gender = TRAINER_MON_FEMALE,                                               \
     .heldItem = ITEM_SHARP_BEAK,                                                \
@@ -1267,7 +1267,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(PELIPPER, TIER2, rematch),                                              \
     .ability = ABILITY_DRIZZLE,                                                         \
     .nature = NATURE_MODEST,                                                            \
-    .ev = TRAINER_PARTY_EVS(0, 0, EV_REMAINDER, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, 0), \
+    EV_SPREAD_SPA_SPE_DEF,                                                              \
     .moves = {MOVE_HURRICANE, MOVE_HYDRO_PUMP, MOVE_TAILWIND, MOVE_ROOST},              \
     .gender = TRAINER_MON_FEMALE,                                                       \
     .heldItem = ITEM_DAMP_ROCK,                                                         \
@@ -1278,7 +1278,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(TROPIUS, TIER3, rematch),                                               \
     .ability = ABILITY_CHLOROPHYLL,                                                     \
     .nature = NATURE_MODEST,                                                            \
-    .ev = TRAINER_PARTY_EVS(MAX_PER_STAT_EVS, 0, 0, EV_REMAINDER, MAX_PER_STAT_EVS, 0), \
+    EV_SPREAD_SPA_HP_SPE,                                                               \
     .moves = {MOVE_AIR_SLASH, MOVE_ENERGY_BALL, MOVE_BODY_SLAM, MOVE_SYNTHESIS},        \
     .gender = TRAINER_MON_FEMALE,                                                       \
     }
@@ -1288,7 +1288,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(MASQUERAIN, TIER3, rematch),                                      \
     .ability = ABILITY_INTIMIDATE,                                                \
     .nature = NATURE_MODEST,                                                      \
-    .ev = EV_SPREAD_SPA_SPE_SPD,                                                  \
+    EV_SPREAD_SPA_SPE_SPD,                                                        \
     .moves = {MOVE_AIR_SLASH, MOVE_BUG_BUZZ, MOVE_GIGA_DRAIN, MOVE_QUIVER_DANCE}, \
     .gender = TRAINER_MON_FEMALE,                                                 \
     }
@@ -1298,7 +1298,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(NINJASK, TIER3, rematch),                                            \
     .ability = ABILITY_SPEED_BOOST,                                                  \
     .nature = NATURE_JOLLY,                                                          \
-    .ev = EV_SPREAD_ATK_SPE_HP,                                                      \
+    EV_SPREAD_ATK_SPE_HP,                                                            \
     .moves = {MOVE_ACROBATICS, MOVE_LEECH_LIFE, MOVE_BATON_PASS, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_FEMALE,                                                    \
     }
@@ -1413,7 +1413,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     {                                                                                  \
     REMATCH_MON(SOLROCK, ACE, rematch),                                                \
     .nature = NATURE_ADAMANT,                                                          \
-    .ev = EV_SPREAD_ATK_DEF_HP,                                                        \
+    EV_SPREAD_ATK_DEF_HP,                                                              \
     .moves = {MOVE_ZEN_HEADBUTT, MOVE_ROCK_SLIDE, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN}, \
     .heldItem = ITEM_SITRUS_BERRY,                                                     \
     }
@@ -1422,7 +1422,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     {                                                                          \
     REMATCH_MON(LUNATONE, ACE, rematch),                                       \
     .nature = NATURE_MODEST,                                                   \
-    .ev = EV_SPREAD_SPA_SPD_HP,                                                \
+    EV_SPREAD_SPA_SPD_HP,                                                      \
     .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_ICY_WIND, MOVE_COSMIC_POWER}, \
     .heldItem = ITEM_SITRUS_BERRY,                                             \
     }
@@ -1432,7 +1432,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(GRUMPIG, TIER2, rematch),                                          \
     .ability = ABILITY_THICK_FAT,                                                  \
     .nature = NATURE_CALM,                                                         \
-    .ev = EV_SPREAD_SPA_SPD_HP,                                                    \
+    EV_SPREAD_SPA_SPD_HP,                                                          \
     .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_DAZZLING_GLEAM, MOVE_MAGIC_COAT}, \
     .gender = TRAINER_MON_MALE,                                                    \
     }
@@ -1441,7 +1441,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     {                                                                               \
     REMATCH_MON(CLAYDOL, TIER2, rematch),                                           \
     .nature = NATURE_CALM,                                                          \
-    .ev = EV_SPREAD_DEF_SPD_HP,                                                     \
+    EV_SPREAD_DEF_SPD_HP,                                                           \
     .moves = {MOVE_PSYCHIC, MOVE_EARTH_POWER, MOVE_POWER_SPLIT, MOVE_COSMIC_POWER}, \
     }
 
@@ -1449,7 +1449,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     {                                                                            \
     REMATCH_MON(CHIMECHO, TIER3, rematch),                                       \
     .nature = NATURE_MODEST,                                                     \
-    .ev = EV_SPREAD_SPA_SPD_HP,                                                  \
+    EV_SPREAD_SPA_SPD_HP,                                                        \
     .moves = {MOVE_PSYCHIC, MOVE_HEAL_PULSE, MOVE_LIGHT_SCREEN, MOVE_HEAL_BELL}, \
     .gender = TRAINER_MON_MALE,                                                  \
     }
@@ -1459,7 +1459,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(GARDEVOIR, TIER3, rematch),                                            \
     .ability = ABILITY_SYNCHRONIZE,                                                    \
     .nature = NATURE_MODEST,                                                           \
-    .ev = EV_SPREAD_SPA_SPE_SPD,                                                       \
+    EV_SPREAD_SPA_SPE_SPD,                                                             \
     .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_MYSTICAL_FIRE, MOVE_CALM_MIND},  \
     .gender = TRAINER_MON_FEMALE,                                                      \
     }
@@ -1535,100 +1535,107 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 44,
+        .lvl = 55,
         .species = SPECIES_CASTFORM,
         IVS(24),
-        .moves = {MOVE_WATER_PULSE, MOVE_WEATHER_BALL, MOVE_POWDER_SNOW, MOVE_RAIN_DANCE},
+        .moves = {MOVE_WATER_PULSE, MOVE_WEATHER_BALL, MOVE_ICE_BEAM, MOVE_RAIN_DANCE},
+        .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 44,
+        .lvl = 55,
         .species = SPECIES_HUNTAIL,
         IVS(24),
         .moves = {MOVE_WATER_PULSE, MOVE_CRUNCH, MOVE_ICE_FANG, MOVE_RAIN_DANCE},
+        .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 45,
+        .lvl = 56,
         .species = SPECIES_CRAWDAUNT,
+        .ability = ABILITY_SHELL_ARMOR,
         IVS(24),
-        .moves = {MOVE_WATER_PULSE, MOVE_NIGHT_SLASH, MOVE_TAUNT, MOVE_SWORDS_DANCE},
+        .moves = {MOVE_WATER_PULSE, MOVE_NIGHT_SLASH, MOVE_PROTECT, MOVE_SWORDS_DANCE},
+        .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 45,
+        .lvl = 56,
         .species = SPECIES_LUVDISC,
         IVS(24),
-        .moves = {MOVE_WATER_PULSE, MOVE_ATTRACT, MOVE_BABY_DOLL_EYES, MOVE_WISH},
+        .moves = {MOVE_WATER_PULSE, MOVE_DRAINING_KISS, MOVE_BABY_DOLL_EYES, MOVE_AQUA_RING},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = 47,
+        .lvl = 58,
         .species = SPECIES_WHISCASH,
+        .ability = ABILITY_OBLIVIOUS,
         IVS(30),
         .moves = {MOVE_WATER_PULSE, MOVE_EARTHQUAKE, MOVE_AMNESIA, MOVE_DRAGON_DANCE},
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
         }
     },
 },
 
-#define JUAN_WHISCASH(rematch)             \
-    {                                      \
-    REMATCH_MON(, ACE, rematch),           \
-    .ability = ABILITY_,                   \
-    .nature = NATURE_,                     \
-    .ev = ,                                \
-    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
-    .gender = TRAINER_MON_MALE,            \
-    .heldItem = ITEM_,                     \
+#define JUAN_WHISCASH(rematch)                                                        \
+    {                                                                                 \
+    REMATCH_MON(WHISCASH, ACE, rematch),                                              \
+    .ability = ABILITY_OBLIVIOUS,                                                     \
+    .nature = NATURE_ADAMANT,                                                         \
+    EV_SPREAD_ATK_HP_SPE,                                                             \
+    .moves = {MOVE_AQUA_TAIL, MOVE_EARTHQUAKE, MOVE_ZEN_HEADBUTT, MOVE_DRAGON_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                       \
+    .heldItem = ITEM_SITRUS_BERRY,                                                    \
     }
 
-#define JUAN_LUVDISC(rematch)              \
-    {                                      \
-    REMATCH_MON(, TIER2, rematch),         \
-    .ability = ABILITY_,                   \
-    .nature = NATURE_,                     \
-    .ev = ,                                \
-    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
-    .gender = TRAINER_MON_MALE,            \
-    .heldItem = ITEM_,                     \
+#define JUAN_LUVDISC(rematch)                                                             \
+    {                                                                                     \
+    REMATCH_MON(LUVDISC, TIER2, rematch),                                                 \
+    .ability = ABILITY_SWIFT_SWIM,                                                        \
+    .nature = NATURE_TIMID,                                                               \
+    EV_SPREAD_SPA_SPE_HP,                                                                 \
+    .moves = {MOVE_HYDRO_PUMP, MOVE_DRAINING_KISS, MOVE_BABY_DOLL_EYES, MOVE_RAIN_DANCE}, \
+    .gender = TRAINER_MON_FEMALE,                                                         \
+    .heldItem = ITEM_DAMP_ROCK,                                                           \
     }
 
-#define JUAN_CRAWDAUNT(rematch)            \
-    {                                      \
-    REMATCH_MON(, TIER2, rematch),         \
-    .ability = ABILITY_,                   \
-    .nature = NATURE_,                     \
-    .ev = ,                                \
-    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
-    .gender = TRAINER_MON_MALE,            \
-    .heldItem = ITEM_,                     \
+#define JUAN_CRAWDAUNT(rematch)                                                \
+    {                                                                          \
+    REMATCH_MON(CRAWDAUNT, TIER2, rematch),                                    \
+    .ability = ABILITY_SHELL_ARMOR,                                            \
+    .nature = NATURE_ADAMANT,                                                  \
+    EV_SPREAD_ATK_SPE_HP,                                                      \
+    .moves = {MOVE_CRABHAMMER, MOVE_CRUNCH, MOVE_ENDEAVOR, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                \
+    .heldItem = ITEM_MYSTIC_WATER,                                             \
     }
 
-#define JUAN_HUNTAIL(rematch)              \
-    {                                      \
-    REMATCH_MON(, TIER3, rematch),         \
-    .ability = ABILITY_,                   \
-    .nature = NATURE_,                     \
-    .ev = ,                                \
-    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
-    .gender = TRAINER_MON_MALE,            \
+#define JUAN_HUNTAIL(rematch)                                           \
+    {                                                                   \
+    REMATCH_MON(HUNTAIL, TIER3, rematch),                               \
+    .ability = ABILITY_SWIFT_SWIM,                                      \
+    .nature = NATURE_ADAMANT,                                           \
+    EV_SPREAD_ATK_DEF_SPE,                                              \
+    .moves = {MOVE_AQUA_TAIL, MOVE_CRUNCH, MOVE_BATON_PASS, MOVE_COIL}, \
+    .gender = TRAINER_MON_MALE,                                         \
     }
 
-#define JUAN_CASTFORM(rematch)             \
-    {                                      \
-    REMATCH_MON(, TIER3, rematch),         \
-    .ability = ABILITY_,                   \
-    .nature = NATURE_,                     \
-    .ev = ,                                \
-    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
-    .gender = TRAINER_MON_MALE,            \
+#define JUAN_CASTFORM(rematch)                                                   \
+    {                                                                            \
+    REMATCH_MON(CASTFORM, TIER3, rematch),                                       \
+    .ability = ABILITY_FORECAST,                                                 \
+    .nature = NATURE_MODEST,                                                     \
+    EV_SPREAD_SPA_SPE_HP,                                                        \
+    .moves = {MOVE_WEATHER_BALL, MOVE_THUNDER, MOVE_HURRICANE, MOVE_RAIN_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                  \
     }
 
-#define JUAN_SWAMPERT(rematch)             \
-    {                                      \
-    REMATCH_MON(, TIER3, rematch),         \
-    .ability = ABILITY_,                   \
-    .nature = NATURE_,                     \
-    .ev = ,                                \
-    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
-    .gender = TRAINER_MON_MALE,            \
+#define JUAN_SWAMPERT(rematch)                                                    \
+    {                                                                             \
+    REMATCH_MON(SWAMPERT, TIER3, rematch),                                        \
+    .ability = ABILITY_SWIFT_SWIM,                                                \
+    .nature = NATURE_ADAMANT,                                                     \
+    EV_SPREAD_ATK_HP_SPE,                                                         \
+    .moves = {MOVE_AQUA_TAIL, MOVE_EARTHQUAKE, MOVE_HAMMER_ARM, MOVE_ROCK_SLIDE}, \
+    .gender = TRAINER_MON_MALE,                                                   \
     }
 
 
@@ -1639,29 +1646,11 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .doubleBattle = TRUE,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        {
-        REMATCH_MON(CASTFORM, TIER3, 2),
-        .moves = {MOVE_WEATHER_BALL, MOVE_THUNDER, MOVE_HURRICANE, MOVE_RAIN_DANCE},
-        },
-        {
-        REMATCH_MON(HUNTAIL, TIER3, 2),
-        .moves = {MOVE_AQUA_TAIL, MOVE_CRUNCH, MOVE_BATON_PASS, MOVE_COIL},
-        },
-        {
-        REMATCH_MON(CRAWDAUNT, TIER2, 2),
-        .moves = {MOVE_CRABHAMMER, MOVE_CRUNCH, MOVE_ENDEAVOR, MOVE_SWORDS_DANCE},
-        .heldItem = ITEM_MYSTIC_WATER,
-        },
-        {
-        REMATCH_MON(LUVDISC, TIER2, 2),
-        .moves = {MOVE_HYDRO_PUMP, MOVE_WISH, MOVE_BABY_DOLL_EYES, MOVE_RAIN_DANCE},
-        .heldItem = ITEM_DAMP_ROCK,
-        },
-        {
-        REMATCH_MON(WHISCASH, ACE, 2),
-        .moves = {MOVE_AQUA_TAIL, MOVE_EARTHQUAKE, MOVE_ZEN_HEADBUTT, MOVE_DRAGON_DANCE},
-        .heldItem = ITEM_SITRUS_BERRY,
-        }
+        JUAN_CASTFORM(2),
+        JUAN_HUNTAIL(2),
+        JUAN_CRAWDAUNT(2),
+        JUAN_LUVDISC(2),
+        JUAN_WHISCASH(2),
     },
 },
 
@@ -1672,33 +1661,12 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .doubleBattle = TRUE,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        {
-        REMATCH_MON(SWAMPERT, TIER3, 3),
-        .moves = {MOVE_LIQUIDATION, MOVE_EARTHQUAKE, MOVE_HAMMER_ARM, MOVE_ROCK_SLIDE},
-        },
-        {
-        REMATCH_MON(CASTFORM, TIER3, 3),
-        .moves = {MOVE_WEATHER_BALL, MOVE_THUNDER, MOVE_HURRICANE, MOVE_RAIN_DANCE},
-        },
-        {
-        REMATCH_MON(HUNTAIL, TIER3, 3),
-        .moves = {MOVE_AQUA_TAIL, MOVE_CRUNCH, MOVE_BATON_PASS, MOVE_COIL},
-        },
-        {
-        REMATCH_MON(CRAWDAUNT, TIER2, 3),
-        .moves = {MOVE_CRABHAMMER, MOVE_CRUNCH, MOVE_ENDEAVOR, MOVE_SWORDS_DANCE},
-        .heldItem = ITEM_MYSTIC_WATER,
-        },
-        {
-        REMATCH_MON(LUVDISC, TIER2, 3),
-        .moves = {MOVE_HYDRO_PUMP, MOVE_WISH, MOVE_BABY_DOLL_EYES, MOVE_RAIN_DANCE},
-        .heldItem = ITEM_DAMP_ROCK,
-        },
-        {
-        REMATCH_MON(WHISCASH, ACE, 3),
-        .moves = {MOVE_AQUA_TAIL, MOVE_EARTHQUAKE, MOVE_ZEN_HEADBUTT, MOVE_DRAGON_DANCE},
-        .heldItem = ITEM_SITRUS_BERRY,
-        }
+        JUAN_SWAMPERT(3),
+        JUAN_CASTFORM(3),
+        JUAN_HUNTAIL(3),
+        JUAN_CRAWDAUNT(3),
+        JUAN_LUVDISC(3),
+        JUAN_WHISCASH(3),
     },
 },
 
@@ -1709,33 +1677,12 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .doubleBattle = TRUE,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        {
-        REMATCH_MON(SWAMPERT, TIER3, 4),
-        .moves = {MOVE_LIQUIDATION, MOVE_EARTHQUAKE, MOVE_HAMMER_ARM, MOVE_ROCK_SLIDE},
-        },
-        {
-        REMATCH_MON(CASTFORM, TIER3, 4),
-        .moves = {MOVE_WEATHER_BALL, MOVE_THUNDER, MOVE_HURRICANE, MOVE_RAIN_DANCE},
-        },
-        {
-        REMATCH_MON(HUNTAIL, TIER3, 4),
-        .moves = {MOVE_AQUA_TAIL, MOVE_CRUNCH, MOVE_BATON_PASS, MOVE_COIL},
-        },
-        {
-        REMATCH_MON(CRAWDAUNT, TIER2, 4),
-        .moves = {MOVE_CRABHAMMER, MOVE_CRUNCH, MOVE_ENDEAVOR, MOVE_SWORDS_DANCE},
-        .heldItem = ITEM_MYSTIC_WATER,
-        },
-        {
-        REMATCH_MON(LUVDISC, TIER2, 4),
-        .moves = {MOVE_HYDRO_PUMP, MOVE_WISH, MOVE_BABY_DOLL_EYES, MOVE_RAIN_DANCE},
-        .heldItem = ITEM_DAMP_ROCK,
-        },
-        {
-        REMATCH_MON(WHISCASH, ACE, 4),
-        .moves = {MOVE_AQUA_TAIL, MOVE_EARTHQUAKE, MOVE_ZEN_HEADBUTT, MOVE_DRAGON_DANCE},
-        .heldItem = ITEM_SITRUS_BERRY,
-        }
+        JUAN_SWAMPERT(4),
+        JUAN_CASTFORM(4),
+        JUAN_HUNTAIL(4),
+        JUAN_CRAWDAUNT(4),
+        JUAN_LUVDISC(4),
+        JUAN_WHISCASH(4),
     },
 },
 
@@ -1746,33 +1693,12 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .doubleBattle = TRUE,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        {
-        REMATCH_MON(SWAMPERT, TIER3, 5),
-        .moves = {MOVE_LIQUIDATION, MOVE_EARTHQUAKE, MOVE_HAMMER_ARM, MOVE_ROCK_SLIDE},
-        },
-        {
-        REMATCH_MON(CASTFORM, TIER3, 5),
-        .moves = {MOVE_WEATHER_BALL, MOVE_THUNDER, MOVE_HURRICANE, MOVE_RAIN_DANCE},
-        },
-        {
-        REMATCH_MON(HUNTAIL, TIER3, 5),
-        .moves = {MOVE_AQUA_TAIL, MOVE_CRUNCH, MOVE_BATON_PASS, MOVE_COIL},
-        },
-        {
-        REMATCH_MON(CRAWDAUNT, TIER2, 5),
-        .moves = {MOVE_CRABHAMMER, MOVE_CRUNCH, MOVE_ENDEAVOR, MOVE_SWORDS_DANCE},
-        .heldItem = ITEM_MYSTIC_WATER,
-        },
-        {
-        REMATCH_MON(LUVDISC, TIER2, 5),
-        .moves = {MOVE_HYDRO_PUMP, MOVE_WISH, MOVE_BABY_DOLL_EYES, MOVE_RAIN_DANCE},
-        .heldItem = ITEM_DAMP_ROCK,
-        },
-        {
-        REMATCH_MON(WHISCASH, ACE, 5),
-        .moves = {MOVE_AQUA_TAIL, MOVE_EARTHQUAKE, MOVE_ZEN_HEADBUTT, MOVE_DRAGON_DANCE},
-        .heldItem = ITEM_SITRUS_BERRY,
-        }
+        JUAN_SWAMPERT(5),
+        JUAN_CASTFORM(5),
+        JUAN_HUNTAIL(5),
+        JUAN_CRAWDAUNT(5),
+        JUAN_LUVDISC(5),
+        JUAN_WHISCASH(5),
     },
 },
 
@@ -2033,7 +1959,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         .species = SPECIES_SKARMORY,
         .ability = ABILITY_STURDY,
         .nature = NATURE_IMPISH,
-        .ev = EV_SPREAD_ATK_DEF_HP,
+        EV_SPREAD_ATK_DEF_HP,
         PERFECT_IVS,
         .moves = {MOVE_STEEL_WING, MOVE_DRILL_PECK, MOVE_BODY_PRESS, MOVE_SPIKES},
         .gender = TRAINER_MON_MALE,
@@ -2044,7 +1970,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         .lvl = 77,
         .species = SPECIES_CLAYDOL,
         .nature = NATURE_CALM,
-        .ev = TRAINER_PARTY_EVS(0, 0, MAX_PER_STAT_EVS, 0, EV_REMAINDER, MAX_PER_STAT_EVS),
+        EV_SPREAD_DEF_SPD_SPA,
         PERFECT_IVS,
         .moves = {MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_ANCIENT_POWER, MOVE_EARTHQUAKE},
         },
@@ -2052,7 +1978,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         .lvl = 78,
         .species = SPECIES_JIRACHI,
         .nature = NATURE_MODEST,
-        .ev = TRAINER_PARTY_EVS(0, 0, 0, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, EV_REMAINDER),
+        EV_SPREAD_SPA_SPE_SPD,
         PERFECT_IVS,
         .moves = {MOVE_DOOM_DESIRE, MOVE_FLASH_CANNON, MOVE_PSYCHIC, MOVE_CALM_MIND},
         .heldItem = ITEM_KINGS_ROCK,
@@ -2761,7 +2687,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         },
         {
         LINUS(REMATCH_5_MINI_BOSS),
-        .ev = EV_SPREAD_ATK_SPE_HP,
+        EV_SPREAD_ATK_SPE_HP,
         PERFECT_IVS,
         .moves = {MOVE_BODY_SLAM, MOVE_PLAY_ROUGH, MOVE_PIN_MISSILE, MOVE_HONE_CLAWS},
         .heldItem = ITEM_FIGY_BERRY,
@@ -6325,14 +6251,14 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         {
         POKE_FAN_MON(23),
         .species = SPECIES_TAILLOW,
-        .ev = EV_SPREAD_ATK_SPE_HP,
+        EV_SPREAD_ATK_SPE_HP,
         IVS(3),
         .gender = TRAINER_MON_MALE,
         },
         {
         POKE_FAN_MON(23),
         .species = SPECIES_ZIGZAGOON,
-        .ev = EV_SPREAD_ATK_SPE_HP,
+        EV_SPREAD_ATK_SPE_HP,
         IVS(3),
         .gender = TRAINER_MON_MALE,
         }
@@ -6352,7 +6278,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         POKE_FAN_MON(24),
         .species = SPECIES_ROSELIA,
         .ability = ABILITY_POISON_POINT,
-        .ev = EV_SPREAD_SPA_SPE_HP,
+        EV_SPREAD_SPA_SPE_HP,
         IVS(6),
         .gender = TRAINER_MON_FEMALE,
         }
@@ -6371,21 +6297,21 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         {
         .lvl = 22,
         .species = SPECIES_NUMEL,
-        .ev = EV_SPREAD_SPA_SPE_HP,
+        EV_SPREAD_SPA_SPE_HP,
         IVS(12),
         .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 22,
         .species = SPECIES_SHROOMISH,
-        .ev = EV_SPREAD_ATK_SPE_HP,
+        EV_SPREAD_ATK_SPE_HP,
         IVS(12),
         .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 22,
         .species = SPECIES_GOLDEEN,
-        .ev = EV_SPREAD_ATK_SPE_HP,
+        EV_SPREAD_ATK_SPE_HP,
         IVS(12),
         .gender = TRAINER_MON_FEMALE,
         }
@@ -6404,7 +6330,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         {
         .lvl = 25,
         .species = SPECIES_MEDITITE,
-        .ev = EV_SPREAD_ATK_SPE_HP,
+        EV_SPREAD_ATK_SPE_HP,
         IVS(24),
         .moves = {MOVE_FORCE_PALM, MOVE_MEDITATE, MOVE_PSYBEAM, MOVE_DETECT},
         .gender = TRAINER_MON_FEMALE,
@@ -15717,7 +15643,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 44,
+        .lvl = 55,
         .species = SPECIES_SEAKING,
         IVS(12),
         }
@@ -15732,7 +15658,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 44,
+        .lvl = 55,
         .species = SPECIES_LUVDISC,
         IVS(12),
         }
@@ -15747,16 +15673,14 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        RICH_MON(43),
+        RICH_MON(54),
         .species = SPECIES_CORSOLA,
         IVS(12),
-        .moves = {MOVE_WATER_PULSE, MOVE_ATTRACT, MOVE_POWER_GEM, MOVE_LIFE_DEW}
         },
         {
-        RICH_MON(43),
+        RICH_MON(54),
         .species = SPECIES_LUVDISC,
         IVS(12),
-        .moves = {MOVE_WATER_PULSE, MOVE_ATTRACT, MOVE_CAPTIVATE, MOVE_AQUA_RING}
         }
     },
 },
@@ -15769,13 +15693,13 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        POKE_FAN_MON(43),
+        POKE_FAN_MON(54),
         .species = SPECIES_MAGIKARP,
         IVS(12),
         .moves = {MOVE_HYDRO_PUMP, MOVE_BOUNCE, MOVE_FLAIL, MOVE_TACKLE}
         },
         {
-        POKE_FAN_MON(43),
+        POKE_FAN_MON(54),
         .species = SPECIES_FEEBAS,
         IVS(12),
         .moves = {MOVE_WATER_PULSE, MOVE_FLAIL, MOVE_RETURN, MOVE_ATTRACT}
@@ -15791,12 +15715,12 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 43,
+        .lvl = 54,
         .species = SPECIES_TENTACRUEL,
         IVS(12),
         },
         {
-        .lvl = 43,
+        .lvl = 54,
         .species = SPECIES_SHARPEDO,
         IVS(12),
         }
@@ -15811,12 +15735,12 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 43,
+        .lvl = 54,
         .species = SPECIES_LANTURN,
         IVS(12),
         },
         {
-        .lvl = 43,
+        .lvl = 54,
         .species = SPECIES_WAILORD,
         IVS(12),
         }
@@ -15831,17 +15755,17 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        POKE_FAN_MON(42),
+        POKE_FAN_MON(53),
         .species = SPECIES_AZURILL,
         IVS(12),
         },
         {
-        POKE_FAN_MON(42),
+        POKE_FAN_MON(53),
         .species = SPECIES_MARILL,
         IVS(12),
         },
         {
-        POKE_FAN_MON(42),
+        POKE_FAN_MON(53),
         .species = SPECIES_AZUMARILL,
         IVS(12),
         }
@@ -15856,19 +15780,19 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = 53,
         .species = SPECIES_CLAMPERL,
         IVS(12),
         .moves = {MOVE_WATER_PULSE, MOVE_WHIRLPOOL, MOVE_RAIN_DANCE, MOVE_IRON_DEFENSE}
         },
         {
-        .lvl = 42,
+        .lvl = 53,
         .species = SPECIES_CRAWDAUNT,
         IVS(12),
         .moves = {MOVE_WATER_PULSE, MOVE_NIGHT_SLASH, MOVE_PROTECT, MOVE_TAUNT}
         },
         {
-        .lvl = 42,
+        .lvl = 53,
         .species = SPECIES_LUDICOLO,
         IVS(12),
         .moves = {MOVE_WATER_PULSE, MOVE_GIGA_DRAIN, MOVE_NATURE_POWER, MOVE_TEETER_DANCE}
@@ -15884,7 +15808,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        RICH_MON(44),
+        RICH_MON(55),
         .species = SPECIES_MARSHTOMP,
         IVS(18),
         }
@@ -15899,7 +15823,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 44,
+        .lvl = 55,
         .species = SPECIES_AZUMARILL,
         IVS(18),
         }
@@ -16508,31 +16432,31 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
         {
         .lvl = 44,
         .species = SPECIES_SWALOT,
-        .ev = EV_SPREAD_ATK_SPE_HP,
+        EV_SPREAD_ATK_SPE_HP,
         IVS(12),
         },
         {
         .lvl = 44,
         .species = SPECIES_DODRIO,
-        .ev = EV_SPREAD_ATK_SPE_HP,
+        EV_SPREAD_ATK_SPE_HP,
         IVS(12),
         },
         {
         .lvl = 44,
         .species = SPECIES_ALAKAZAM,
-        .ev = EV_SPREAD_SPA_SPE_HP,
+        EV_SPREAD_SPA_SPE_HP,
         IVS(12),
         },
         {
         .lvl = 44,
         .species = SPECIES_ELECTRODE,
-        .ev = EV_SPREAD_SPA_SPE_HP,
+        EV_SPREAD_SPA_SPE_HP,
         IVS(12),
         },
         {
         .lvl = 44,
         .species = SPECIES_SHIFTRY,
-        .ev = EV_SPREAD_ATK_SPE_HP,
+        EV_SPREAD_ATK_SPE_HP,
         IVS(12),
         }
     },
@@ -17121,3 +17045,8 @@ UNUSED_TRAINER(1),
 UNUSED_TRAINER(2),
 UNUSED_TRAINER(3),
 UNUSED_TRAINER(4),
+UNUSED_TRAINER(5),
+UNUSED_TRAINER(6),
+UNUSED_TRAINER(7),
+UNUSED_TRAINER(8),
+UNUSED_TRAINER(9),

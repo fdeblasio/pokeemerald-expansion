@@ -2022,7 +2022,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 #define REMATCH_4_LEVEL_5 REMATCH_4_LEVEL_1 - 4
 #define REMATCH_4_LEVEL_6 REMATCH_4_LEVEL_1 - 5
 
-#define REMATCH_5_LEVEL_1 60
+#define REMATCH_5_LEVEL_1 59
 #define REMATCH_5_MINI_BOSS REMATCH_5_LEVEL_1 + 1
 #define REMATCH_5_LEVEL_2 REMATCH_5_LEVEL_1 - 1
 #define REMATCH_5_LEVEL_3 REMATCH_5_LEVEL_1 - 2
@@ -15839,10 +15839,12 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        CAMERON_KADABRA(45),
+        .lvl = 55,
+        .species = SPECIES_KADABRA,
         },
         {
-        CAMERON_SOLROCK(45),
+        .lvl = 55,
+        .species = SPECIES_SOLROCK,
         }
     },
 },
@@ -15855,11 +15857,11 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 45,
+        .lvl = 55,
         .species = SPECIES_BANETTE,
         },
         {
-        .lvl = 45,
+        .lvl = 55,
         .species = SPECIES_DUSCLOPS,
         }
     },
@@ -15872,7 +15874,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 46,
+        .lvl = 56,
         .species = SPECIES_CHIMECHO,
         }
     },
@@ -15885,7 +15887,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 46,
+        .lvl = 56,
         .species = SPECIES_WOBBUFFET,
         }
     },
@@ -15899,11 +15901,11 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 45,
+        .lvl = 55,
         .species = SPECIES_GARDEVOIR,
         },
         {
-        .lvl = 45,
+        .lvl = 55,
         .species = SPECIES_XATU,
         }
     },
@@ -15916,38 +15918,47 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 45,
+        .lvl = 55,
         .species = SPECIES_LUNATONE,
         },
         {
-        .lvl = 45,
+        .lvl = 55,
         .species = SPECIES_ALAKAZAM,
         }
     },
 },
 
 //Meteor Falls
-#define JOHN_AND_JAY_INFO           \
-    .trainerName = _("John & Jay"), \
-    OLD_COUPLE_INFO,                \
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY
+#define JOHN_AND_JAY_INFO                                                               \
+    .trainerName = _("John & Jay"),                                                     \
+    OLD_COUPLE_INFO,                                                                    \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY, \
+    .partySize = 2
+
+#define JOHN_HARIYAMA(Level)                                                   \
+    .lvl = Level,                                                              \
+    .species = SPECIES_HARIYAMA,                                               \
+    .ability = ABILITY_THICK_FAT,                                              \
+    PERFECT_IVS,                                                               \
+    .moves = {MOVE_CLOSE_COMBAT, MOVE_ROCK_SLIDE, MOVE_REST, MOVE_BELLY_DRUM}, \
+    .gender = TRAINER_MON_MALE
+
+#define JAY_MEDICHAM(Level)                                                             \
+    .lvl = Level,                                                                       \
+    .species = SPECIES_MEDICHAM,                                                        \
+    PERFECT_IVS,                                                                        \
+    .moves = {MOVE_ZEN_HEADBUTT, MOVE_HIGH_JUMP_KICK, MOVE_FIRE_PUNCH, MOVE_ICE_PUNCH}, \
+    .gender = TRAINER_MON_FEMALE
 
 [TRAINER_JOHN_AND_JAY_1] =
 {
     JOHN_AND_JAY_INFO,
-    .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 45,
-        .species = SPECIES_MEDICHAM,
-        IVS(24),
-        .moves = {MOVE_ZEN_HEADBUTT, MOVE_HIGH_JUMP_KICK, MOVE_FIRE_PUNCH, MOVE_ICE_PUNCH}
+        JAY_MEDICHAM(56),
         },
         {
-        .lvl = 45,
-        .species = SPECIES_HARIYAMA,
-        IVS(24),
-        .moves = {MOVE_CLOSE_COMBAT, MOVE_ROCK_SLIDE, MOVE_REST, MOVE_BELLY_DRUM}
+        JOHN_HARIYAMA(56),
         }
     },
 },
@@ -15955,19 +15966,12 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
 [TRAINER_JOHN_AND_JAY_2] =
 {
     JOHN_AND_JAY_INFO,
-    .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 48,
-        .species = SPECIES_MEDICHAM,
-        IVS(25),
-        .moves = {MOVE_ZEN_HEADBUTT, MOVE_HIGH_JUMP_KICK, MOVE_FIRE_PUNCH, MOVE_ICE_PUNCH}
+        JAY_MEDICHAM(57),
         },
         {
-        .lvl = 48,
-        .species = SPECIES_HARIYAMA,
-        IVS(25),
-        .moves = {MOVE_CLOSE_COMBAT, MOVE_ROCK_SLIDE, MOVE_REST, MOVE_BELLY_DRUM}
+        JOHN_HARIYAMA(57),
         }
     },
 },
@@ -15975,19 +15979,12 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
 [TRAINER_JOHN_AND_JAY_3] =
 {
     JOHN_AND_JAY_INFO,
-    .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 51,
-        .species = SPECIES_MEDICHAM,
-        IVS(26),
-        .moves = {MOVE_ZEN_HEADBUTT, MOVE_HIGH_JUMP_KICK, MOVE_FIRE_PUNCH, MOVE_ICE_PUNCH}
+        JAY_MEDICHAM(58),
         },
         {
-        .lvl = 51,
-        .species = SPECIES_HARIYAMA,
-        IVS(26),
-        .moves = {MOVE_CLOSE_COMBAT, MOVE_ROCK_SLIDE, MOVE_REST, MOVE_BELLY_DRUM}
+        JOHN_HARIYAMA(58),
         }
     },
 },
@@ -15995,19 +15992,12 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
 [TRAINER_JOHN_AND_JAY_4] =
 {
     JOHN_AND_JAY_INFO,
-    .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 54,
-        .species = SPECIES_MEDICHAM,
-        IVS(27),
-        .moves = {MOVE_ZEN_HEADBUTT, MOVE_HIGH_JUMP_KICK, MOVE_FIRE_PUNCH, MOVE_ICE_PUNCH}
+        JAY_MEDICHAM(59),
         },
         {
-        .lvl = 54,
-        .species = SPECIES_HARIYAMA,
-        IVS(27),
-        .moves = {MOVE_CLOSE_COMBAT, MOVE_ROCK_SLIDE, MOVE_REST, MOVE_BELLY_DRUM}
+        JOHN_HARIYAMA(59),
         }
     },
 },
@@ -16015,19 +16005,12 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
 [TRAINER_JOHN_AND_JAY_5] =
 {
     JOHN_AND_JAY_INFO,
-    .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 57,
-        .species = SPECIES_MEDICHAM,
-        IVS(29),
-        .moves = {MOVE_ZEN_HEADBUTT, MOVE_HIGH_JUMP_KICK, MOVE_FIRE_PUNCH, MOVE_ICE_PUNCH}
+        JAY_MEDICHAM(REMATCH_5_MINI_BOSS),
         },
         {
-        .lvl = 57,
-        .species = SPECIES_HARIYAMA,
-        IVS(29),
-        .moves = {MOVE_CLOSE_COMBAT, MOVE_ROCK_SLIDE, MOVE_REST, MOVE_BELLY_DRUM}
+        JOHN_HARIYAMA(REMATCH_5_MINI_BOSS),
         }
     },
 },
@@ -16037,20 +16020,34 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     DRAGON_TAMER_INFO,           \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
+#define NICOLAS_ALTARIA(Level)  \
+    .lvl = Level,               \
+    .species = SPECIES_ALTARIA, \
+    IVS(18),                    \
+    .gender = TRAINER_MON_MALE
+
+#define NICOLAS_BAGON(Level)                                                                                     \
+    .lvl = Level,                                                                                                \
+    .species = Level < 56 ? SPECIES_BAGON : (Level < REMATCH_5_MINI_BOSS ? SPECIES_SHELGON : SPECIES_SALAMENCE), \
+    IVS(18),                                                                                                     \
+    .gender = TRAINER_MON_MALE
+
+#define NICOLAS_FLYGON(Level)  \
+    .lvl = Level,              \
+    .species = SPECIES_FLYGON, \
+    IVS(18),                   \
+    .gender = TRAINER_MON_MALE
+
 [TRAINER_NICOLAS_1] =
 {
     NICOLAS_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 45,
-        .species = SPECIES_BAGON,
-        IVS(12),
+        NICOLAS_BAGON(55),
         },
         {
-        .lvl = 45,
-        .species = SPECIES_ALTARIA,
-        IVS(12),
+        NICOLAS_ALTARIA(55),
         }
     },
 },
@@ -16061,14 +16058,10 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 47,
-        .species = SPECIES_SHELGON,
-        IVS(13),
+        NICOLAS_BAGON(56),
         },
         {
-        .lvl = 47,
-        .species = SPECIES_ALTARIA,
-        IVS(13),
+        NICOLAS_ALTARIA(56),
         }
     },
 },
@@ -16079,14 +16072,10 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 49,
-        .species = SPECIES_SHELGON,
-        IVS(14),
+        NICOLAS_BAGON(57),
         },
         {
-        .lvl = 49,
-        .species = SPECIES_ALTARIA,
-        IVS(14),
+        NICOLAS_ALTARIA(57),
         }
     },
 },
@@ -16097,19 +16086,13 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 51,
-        .species = SPECIES_FLYGON,
-        IVS(15),
+        NICOLAS_FLYGON(58),
         },
         {
-        .lvl = 51,
-        .species = SPECIES_SHELGON,
-        IVS(15),
+        NICOLAS_BAGON(58),
         },
         {
-        .lvl = 51,
-        .species = SPECIES_ALTARIA,
-        IVS(15),
+        NICOLAS_ALTARIA(58),
         }
     },
 },
@@ -16120,19 +16103,13 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 53,
-        .species = SPECIES_FLYGON,
-        IVS(17),
+        NICOLAS_FLYGON(REMATCH_5_LEVEL_1),
         },
         {
-        .lvl = 53,
-        .species = SPECIES_SALAMENCE,
-        IVS(17),
+        NICOLAS_BAGON(REMATCH_5_MINI_BOSS),
         },
         {
-        .lvl = 53,
-        .species = SPECIES_ALTARIA,
-        IVS(17),
+        NICOLAS_ALTARIA(REMATCH_5_MINI_BOSS),
         .heldItem = ITEM_DRAGON_FANG
         }
     },

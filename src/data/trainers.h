@@ -15043,11 +15043,11 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = 52,
         .species = SPECIES_SEALEO,
         },
         {
-        .lvl = 41,
+        .lvl = 52,
         .species = SPECIES_SHARPEDO,
         }
     },
@@ -15061,11 +15061,11 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        TRIATHLETE_MON(41, 0),
+        TRIATHLETE_MON(52, 0),
         .species = SPECIES_STARMIE,
         },
         {
-        TRIATHLETE_MON(41, 0),
+        TRIATHLETE_MON(52, 0),
         .species = SPECIES_PELIPPER,
         }
     },
@@ -15079,11 +15079,11 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        TRIATHLETE_MON(41, 0),
+        TRIATHLETE_MON(52, 0),
         .species = SPECIES_PELIPPER,
         },
         {
-        TRIATHLETE_MON(41, 0),
+        TRIATHLETE_MON(52, 0),
         .species = SPECIES_STARMIE,
         }
     },
@@ -15097,7 +15097,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = 53,
         .species = SPECIES_SHARPEDO,
         }
     },
@@ -15111,7 +15111,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = 53,
         .species = SPECIES_LANTURN,
         }
     },
@@ -15126,7 +15126,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = 53,
         .species = SPECIES_GYARADOS,
         }
     },
@@ -15140,11 +15140,11 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = 52,
         .species = SPECIES_SEAKING,
         },
         {
-        .lvl = 41,
+        .lvl = 52,
         .species = SPECIES_SEALEO,
         }
     },
@@ -15158,11 +15158,11 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = 52,
         .species = SPECIES_TENTACRUEL,
         },
         {
-        .lvl = 41,
+        .lvl = 52,
         .species = SPECIES_WAILORD,
         }
     },
@@ -15177,7 +15177,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = 53,
         .species = SPECIES_SEALEO,
         }
     },
@@ -15191,7 +15191,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        TRIATHLETE_MON(42, 0),
+        TRIATHLETE_MON(53, 0),
         .species = SPECIES_STARMIE,
         }
     },
@@ -15205,7 +15205,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = 53,
         .species = SPECIES_PELIPPER,
         }
     },
@@ -15219,7 +15219,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = 53,
         .species = SPECIES_SEAKING,
         }
     },
@@ -15233,11 +15233,11 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = 52,
         .species = SPECIES_PELIPPER,
         },
         {
-        .lvl = 41,
+        .lvl = 52,
         .species = SPECIES_TENTACRUEL,
         }
     },
@@ -15251,7 +15251,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = 53,
         .species = SPECIES_LUVDISC,
         }
     },
@@ -15265,11 +15265,11 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = 53,
         .species = SPECIES_AZUMARILL,
         },
         {
-        .lvl = 40,
+        .lvl = 51,
         .species = SPECIES_PELIPPER,
         }
     },
@@ -15284,7 +15284,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = 54,
         .species = SPECIES_SHARPEDO,
         }
     },
@@ -15298,7 +15298,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = 54,
         .species = SPECIES_AZUMARILL,
         }
     },
@@ -15312,27 +15312,27 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 37,
+        .lvl = 49,
         .species = SPECIES_GYARADOS,
         },
         {
-        .lvl = 37,
+        .lvl = 49,
         .species = SPECIES_GYARADOS,
         },
         {
-        .lvl = 37,
+        .lvl = 49,
         .species = SPECIES_GYARADOS,
         },
         {
-        .lvl = 37,
+        .lvl = 49,
         .species = SPECIES_GYARADOS,
         },
         {
-        .lvl = 37,
+        .lvl = 49,
         .species = SPECIES_GYARADOS,
         },
         {
-        .lvl = 37,
+        .lvl = 49,
         .species = SPECIES_GYARADOS,
         }
     },
@@ -15346,7 +15346,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = 54,
         .species = SPECIES_HARIYAMA,
         IVS(12),
         }
@@ -15361,11 +15361,11 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = 53,
         .species = SPECIES_SWELLOW,
         },
         {
-        .lvl = 41,
+        .lvl = 53,
         .species = SPECIES_BRELOOM,
         }
     },
@@ -15380,11 +15380,11 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = 53,
         .species = SPECIES_PELIPPER,
         },
         {
-        .lvl = 41,
+        .lvl = 53,
         .species = SPECIES_CAMERUPT,
         }
     },
@@ -15399,11 +15399,11 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = 53,
         .species = SPECIES_ROSELIA,
         },
         {
-        .lvl = 41,
+        .lvl = 53,
         .species = SPECIES_MEDICHAM,
         }
     },
@@ -15418,11 +15418,11 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = 53,
         .species = SPECIES_KECLEON,
         },
         {
-        .lvl = 41,
+        .lvl = 53,
         .species = SPECIES_EXPLOUD,
         }
     },
@@ -15437,11 +15437,11 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = 53,
         .species = SPECIES_CORSOLA,
         },
         {
-        .lvl = 41,
+        .lvl = 53,
         .species = SPECIES_SEADRA,
         }
     },
@@ -15455,7 +15455,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = 54,
         .species = SPECIES_BLAZIKEN,
         }
     },
@@ -15469,11 +15469,11 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = 53,
         .species = SPECIES_LANTURN,
         },
         {
-        .lvl = 41,
+        .lvl = 53,
         .species = SPECIES_HARIYAMA,
         IVS(24),
         }
@@ -15488,11 +15488,11 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = 53,
         .species = SPECIES_WHISCASH,
         },
         {
-        .lvl = 41,
+        .lvl = 53,
         .species = SPECIES_MEDICHAM,
         IVS(24),
         }
@@ -15508,12 +15508,12 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = 53,
         .species = SPECIES_GOLEM,
         IVS(12),
         },
         {
-        .lvl = 41,
+        .lvl = 53,
         .species = SPECIES_LUDICOLO,
         IVS(12),
         }
@@ -15528,7 +15528,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = 54,
         .species = SPECIES_SEAKING,
         }
     },
@@ -15542,7 +15542,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = 54,
         .species = SPECIES_SEALEO,
         }
     },
@@ -15557,11 +15557,11 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = 53,
         .species = SPECIES_LUVDISC,
         },
         {
-        .lvl = 41,
+        .lvl = 53,
         .species = SPECIES_LUVDISC,
         }
     },
@@ -15575,7 +15575,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = 54,
         .species = SPECIES_GYARADOS,
         }
     },
@@ -15590,12 +15590,12 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = 53,
         .species = SPECIES_HARIYAMA,
         IVS(6),
         },
         {
-        .lvl = 41,
+        .lvl = 53,
         .species = SPECIES_MACHOKE,
         IVS(24),
         }
@@ -15610,12 +15610,12 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = 53,
         .species = SPECIES_MEDICHAM,
         IVS(6),
         },
         {
-        .lvl = 41,
+        .lvl = 53,
         .species = SPECIES_HARIYAMA,
         IVS(24),
         }
@@ -15630,7 +15630,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = 54,
         .species = SPECIES_WAILORD,
         }
     },
@@ -15644,7 +15644,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = 54,
         .species = SPECIES_SHELGON,
         PERFECT_IVS,
         .moves = {MOVE_DRAGON_CLAW, MOVE_ZEN_HEADBUTT, MOVE_CRUNCH, MOVE_SCARY_FACE}
@@ -15661,10 +15661,9 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 42,
+        .lvl = 54,
         .species = SPECIES_MANECTRIC,
         PERFECT_IVS,
-        .moves = {MOVE_BITE, MOVE_ROAR, MOVE_THUNDER_WAVE, MOVE_THUNDERBOLT}
         }
     },
 },
@@ -15677,12 +15676,12 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = 53,
         .species = SPECIES_XATU,
         IVS(18),
         },
         {
-        .lvl = 41,
+        .lvl = 53,
         .species = SPECIES_SWELLOW,
         IVS(18),
         }
@@ -15697,12 +15696,12 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 41,
+        .lvl = 53,
         .species = SPECIES_MACHOKE,
         IVS(18),
         },
         {
-        .lvl = 41,
+        .lvl = 53,
         .species = SPECIES_SEALEO,
         IVS(18),
         }

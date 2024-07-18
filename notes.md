@@ -219,6 +219,7 @@ upcoming
     - Add Regigigas to Sealed Chamber?
     - Regieleki near New Mauville?
     - Regidrago near Meteor Falls?
+    - Edit Pacifidlog house text
 - Diversify water routes instead of just Tentacool/Wingull (definitely add more Carvanha, especially around Team Aqua-related areas; bring some fishing encounters to Surf)
 - Add postgame Pokémon to Hoenn Pokédex? National Pokédex is useless due to no connectivity with other games
     - Johto starters need Hoenn Pokédex completed to get, but could have them act similarly to Jirachi/Deoxys

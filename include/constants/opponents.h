@@ -3,36 +3,36 @@
 
 #include "constants/battle_partner.h"
 #define TRAINER_NONE                          0
-#define TRAINER_BRENDAN_ROUTE_103_GRASS      1
-#define TRAINER_BRENDAN_RUSTBORO_GRASS       2
-#define TRAINER_BRENDAN_ROUTE_110_GRASS      3
-#define TRAINER_BRENDAN_ROUTE_119_GRASS      4
-#define TRAINER_BRENDAN_LILYCOVE_GRASS       5
-#define TRAINER_BRENDAN_ROUTE_103_FIRE     6
-#define TRAINER_BRENDAN_RUSTBORO_FIRE      7
-#define TRAINER_BRENDAN_ROUTE_110_FIRE     8
-#define TRAINER_BRENDAN_ROUTE_119_FIRE     9
-#define TRAINER_BRENDAN_LILYCOVE_FIRE     10
-#define TRAINER_BRENDAN_ROUTE_103_WATER    11
-#define TRAINER_BRENDAN_RUSTBORO_WATER     12
-#define TRAINER_BRENDAN_ROUTE_110_WATER    13
-#define TRAINER_BRENDAN_ROUTE_119_WATER    14
-#define TRAINER_BRENDAN_LILYCOVE_WATER     15
-#define TRAINER_MAY_ROUTE_103_GRASS         16
-#define TRAINER_MAY_RUSTBORO_GRASS          17
-#define TRAINER_MAY_ROUTE_110_GRASS         18
-#define TRAINER_MAY_ROUTE_119_GRASS         19
-#define TRAINER_MAY_LILYCOVE_GRASS          20
-#define TRAINER_MAY_ROUTE_103_FIRE        21
-#define TRAINER_MAY_RUSTBORO_FIRE         22
-#define TRAINER_MAY_ROUTE_110_FIRE        23
-#define TRAINER_MAY_ROUTE_119_FIRE        24
-#define TRAINER_MAY_LILYCOVE_FIRE         25
-#define TRAINER_MAY_ROUTE_103_WATER        26
-#define TRAINER_MAY_RUSTBORO_WATER         27
-#define TRAINER_MAY_ROUTE_110_WATER        28
-#define TRAINER_MAY_ROUTE_119_WATER        29
-#define TRAINER_MAY_LILYCOVE_WATER         30
+#define TRAINER_BRENDAN_ROUTE_103_GRASS       1
+#define TRAINER_BRENDAN_RUSTBORO_GRASS        2
+#define TRAINER_BRENDAN_ROUTE_110_GRASS       3
+#define TRAINER_BRENDAN_ROUTE_119_GRASS       4
+#define TRAINER_BRENDAN_LILYCOVE_GRASS        5
+#define TRAINER_BRENDAN_ROUTE_103_FIRE        6
+#define TRAINER_BRENDAN_RUSTBORO_FIRE         7
+#define TRAINER_BRENDAN_ROUTE_110_FIRE        8
+#define TRAINER_BRENDAN_ROUTE_119_FIRE        9
+#define TRAINER_BRENDAN_LILYCOVE_FIRE        10
+#define TRAINER_BRENDAN_ROUTE_103_WATER      11
+#define TRAINER_BRENDAN_RUSTBORO_WATER       12
+#define TRAINER_BRENDAN_ROUTE_110_WATER      13
+#define TRAINER_BRENDAN_ROUTE_119_WATER      14
+#define TRAINER_BRENDAN_LILYCOVE_WATER       15
+#define TRAINER_MAY_ROUTE_103_GRASS          16
+#define TRAINER_MAY_RUSTBORO_GRASS           17
+#define TRAINER_MAY_ROUTE_110_GRASS          18
+#define TRAINER_MAY_ROUTE_119_GRASS          19
+#define TRAINER_MAY_LILYCOVE_GRASS           20
+#define TRAINER_MAY_ROUTE_103_FIRE           21
+#define TRAINER_MAY_RUSTBORO_FIRE            22
+#define TRAINER_MAY_ROUTE_110_FIRE           23
+#define TRAINER_MAY_ROUTE_119_FIRE           24
+#define TRAINER_MAY_LILYCOVE_FIRE            25
+#define TRAINER_MAY_ROUTE_103_WATER          26
+#define TRAINER_MAY_RUSTBORO_WATER           27
+#define TRAINER_MAY_ROUTE_110_WATER          28
+#define TRAINER_MAY_ROUTE_119_WATER          29
+#define TRAINER_MAY_LILYCOVE_WATER           30
 #define TRAINER_WALLY_MAUVILLE               31
 #define TRAINER_WALLY_VERDANTURF            854
 #define TRAINER_WALLY_ROUTE_114             853
@@ -936,12 +936,17 @@
 #define TRAINER_UNUSED_2                    850
 #define TRAINER_UNUSED_3                    851
 #define TRAINER_UNUSED_4                    852
+#define TRAINER_UNUSED_5                    855
+#define TRAINER_UNUSED_6                    856
+#define TRAINER_UNUSED_7                    857
+#define TRAINER_UNUSED_8                    858
+#define TRAINER_UNUSED_9                    859
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT                      855
+#define TRAINERS_COUNT                      860
 #define MAX_TRAINERS_COUNT                  864
 #define TRAINER_PARTNER(partner)           (MAX_TRAINERS_COUNT + partner)
 

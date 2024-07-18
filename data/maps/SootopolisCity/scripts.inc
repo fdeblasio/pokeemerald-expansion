@@ -1395,16 +1395,6 @@ SootopolisCity_EventScript_MaxieArchieLeave::
 	releaseall
 	end
 
-@ Unused
-SootopolisCity_Movement_Levitate::
-	levitate
-	step_end
-
-@ Unused
-SootopolisCity_Movement_DestroyTask::
-	destroy_extra_task
-	step_end
-
 SootopolisCity_Text_GymSign:
 	.string "Sootopolis City Pokémon Gym\n"
 	.string "Leader: Juan\p"

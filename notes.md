@@ -163,6 +163,7 @@ upcoming
 - Add FRLG trainer sprites/overworld sprites
     - Sprites are added but still need to be implemented. Overworld sprites may have duplicates for Pokémon and may need palettes
 - Replace Pokémon overworld sprites with follower sprites
+- Combine Centers and Marts?
 
 ### Battle Frontier
 - Battle Tent Pokémon/EVs?

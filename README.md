@@ -419,7 +419,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Matt/Shelly              |N/A/37, 37            |52, 52, 53/52, 52, 53|
 |Archie Seafloor Cavern   |41, 41, 43            |53, 53, 54, 55|
 |Regirock/Regice/Registeel|40                    |55|
-|Juan                     |41, 41, 43, 43, 46    |44, 44, 45, 45, 47|
+|Juan                     |41, 41, 43, 43, 46    |55, 55, 56, 56, 58|
 |Rayquaza                 |70                    |60|
 |Wally                    |41, 43, 44, 44, 45    |46, 46, 47, 47, 49|
 |Sidney                   |46, 46, 48, 48, 49    |50, 50, 51, 51, 52|
@@ -1370,6 +1370,9 @@ There are some mechanics, moves and abilities that are missing and being develop
     - SpD: 75->85
     - Spe: 45
 
+- Corsola:
+    - SpA: 65->80
+
 - Delibird (not in main game):
     - Atk: 55->75
     - Hidden Ability: Insomnia->Technician
@@ -1620,7 +1623,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Zen Headbutt by level up
 
 - Castform:
-    - All stats: 70->75
+    - All stats: 70->80
     - Learns Surf, Flamethrower, and Ice Beam by level up
     - Learns Thunder and Solar Beam by level up
     - Learns Overheat by TM
@@ -1661,7 +1664,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Luvdisc:
     - HP: 43->50
-    - SpA: 40->60
+    - SpA: 40->80
     - Spd: 97->100
     - Held item: Heart Scale: 50%->100%
 

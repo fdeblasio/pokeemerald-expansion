@@ -7781,12 +7781,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_CASTFORM
     [SPECIES_CASTFORM_NORMAL] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 75,
-        .baseDefense   = 75,
-        .baseSpeed     = 75,
-        .baseSpAttack  = 75,
-        .baseSpDefense = 75,
+        .baseHP        = 80,
+        .baseAttack    = 80,
+        .baseDefense   = 80,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 147 : 145,
@@ -9585,7 +9585,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseAttack    = 30,
         .baseDefense   = 55,
         .baseSpeed     = 100,
-        .baseSpAttack  = 60,
+        .baseSpAttack  = 80,
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 225,

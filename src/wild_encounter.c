@@ -120,8 +120,8 @@ EWRAM_DATA u8 gChainFishingDexNavStreak = 0;
 #define RANGE_ROUTE_132         52, 54
 #define RANGE_ROUTE_133         52, 54
 #define RANGE_ROUTE_134         52, 54
-#define RANGE_METEOR_FALLS_WATERFALL 52, 54
-#define RANGE_VICTORY_ROAD      54, 56
+#define RANGE_METEOR_FALLS_WATERFALL 54, 56
+#define RANGE_VICTORY_ROAD      55, 57
 #define RANGE_POSTGAME          60, 60
 #define RANGE_BATTLE_FRONTIER   5, 5
 #define RANGE_UNUSED            1, 1

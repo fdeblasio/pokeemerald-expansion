@@ -13,7 +13,7 @@
         .species = SPECIES_WOBBUFFET,
         .ability = ABILITY_TELEPATHY,
         .nature = NATURE_HASTY,
-        .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 4, 0),
+        .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 4, 0), //EV_SPREAD_X
         .iv = TRAINER_PARTY_IVS(25, 26, 27, 28, 29, 30), //IVS(X)
         .moves = {MOVE_AIR_SLASH, MOVE_BARRIER, MOVE_SOLAR_BEAM, MOVE_EXPLOSION},
         .gender = TRAINER_MON_FEMALE,

@@ -432,7 +432,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Mew                      |N/A                   |70|
 |Deoxys                   |N/A                   |70|
 |Lugia/Ho-Oh              |N/A                   |70|
-|Steven                   |75, 76, 76, 76, 77, 78|77, 77, 78, 78, 79, 80|
+|Steven                   |75, 76, 76, 76, 77, 78|87, 87, 88, 88, 89, 90|
 
 #### Gym Leader/Wally Rematches:
 - 4-5 Pokémon: 60, 63, 63, 65
@@ -1586,8 +1586,12 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Spinda:
     - All stats: 60->80
 
+- Swablu:
+    - Received Fluffy as a second Ability
+
 - Altaria:
     - SpA: 70->80
+    - Received Fluffy as a second Ability
     - Learns Air Slash by TM
 
 - Mega Altaria:
@@ -1635,7 +1639,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Dusknoir:
     - Learns Spite by Egg Move
     - Learns Drain Punch by TM
-    - Gets Iron Fist as second Ability
+    - Received Iron Fist as second Ability
 
 - Tropius:
     - HP: 99->100
@@ -1661,6 +1665,9 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Holding a Deep Sea Scale multiplies its Defense by 1.5
     - Atk: 84->94
     - Learns Leech Life by TM
+
+- Relicanth:
+    - Learns Rock Slide by level up
 
 - Luvdisc:
     - HP: 43->50

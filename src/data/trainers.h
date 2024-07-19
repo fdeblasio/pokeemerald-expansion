@@ -137,10 +137,10 @@ RIVAL_BATTLES(MAY, GRASS, WINGULL, PELIPPER, KEEN_EYE, VULPIX, NINETALES, FLASH_
 RIVAL_BATTLES(MAY, FIRE, CACNEA, CACTURNE, SAND_VEIL, WINGULL, PELIPPER, KEEN_EYE),
 RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_VEIL),
 
-#define ENDGAME_REMATCH_2_LEVEL 65
-#define ENDGAME_REMATCH_3_LEVEL 70
-#define ENDGAME_REMATCH_4_LEVEL 75
-#define ENDGAME_REMATCH_5_LEVEL 80
+#define ENDGAME_REMATCH_2_LEVEL 75
+#define ENDGAME_REMATCH_3_LEVEL 80
+#define ENDGAME_REMATCH_4_LEVEL 85
+#define ENDGAME_REMATCH_5_LEVEL 90
 
 #define ACE   0
 #define TIER2 2
@@ -175,7 +175,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 #define WALLY_SWABLU(Level)                                   \
     .lvl = Level,                                             \
     .species = Level < 35 ? SPECIES_SWABLU : SPECIES_ALTARIA, \
-    .ability = ABILITY_NATURAL_CURE,                          \
+    .ability = ABILITY_FLUFFY,                                \
     .gender = TRAINER_MON_MALE
 
 [TRAINER_WALLY_MAUVILLE] =
@@ -1232,6 +1232,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         {
         .lvl = 43,
         .species = SPECIES_ALTARIA,
+        .ability = ABILITY_NATURAL_CURE,
         PERFECT_IVS,
         .moves = {MOVE_AERIAL_ACE, MOVE_DRAGON_BREATH, MOVE_COTTON_GUARD, MOVE_DRAGON_DANCE},
         .gender = TRAINER_MON_FEMALE,
@@ -1720,33 +1721,58 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         {
         .lvl = 60,
         .species = SPECIES_MIGHTYENA,
+        .ability = ABILITY_INTIMIDATE,
+        .nature = NATURE_ADAMANT,
+        EV_SPREAD_ATK_SPE_HP,
         IVS(30),
-        .moves = {MOVE_CRUNCH, MOVE_FIRE_FANG, MOVE_THUNDER_FANG, MOVE_YAWN},
+        .moves = {MOVE_CRUNCH, MOVE_PLAY_ROUGH, MOVE_FIRE_FANG, MOVE_THUNDER_FANG},
+        .gender = TRAINER_MON_MALE,
+        .ball = ITEM_DUSK_BALL,
         },
         {
         .lvl = 60,
         .species = SPECIES_SHIFTRY,
+        .ability = ABILITY_WIND_RIDER,
+        .nature = NATURE_ADAMANT,
+        EV_SPREAD_ATK_SPE_HP,
         IVS(30),
-        .moves = {MOVE_NIGHT_SLASH, MOVE_LEAF_BLADE, MOVE_FAKE_OUT, MOVE_DOUBLE_SLAP},
+        .moves = {MOVE_NIGHT_SLASH, MOVE_LEAF_BLADE, MOVE_FAKE_OUT, MOVE_ROLLOUT},
+        .gender = TRAINER_MON_MALE,
+        .ball = ITEM_DUSK_BALL,
         },
         {
         .lvl = 61,
         .species = SPECIES_CRAWDAUNT,
+        .ability = ABILITY_HYPER_CUTTER,
+        .nature = NATURE_ADAMANT,
+        EV_SPREAD_ATK_SPE_HP,
         IVS(30),
         .moves = {MOVE_CRUNCH, MOVE_CRABHAMMER, MOVE_KNOCK_OFF, MOVE_SWORDS_DANCE},
+        .gender = TRAINER_MON_MALE,
+        .ball = ITEM_DUSK_BALL,
         },
         {
         .lvl = 61,
         .species = SPECIES_CACTURNE,
+        .ability = ABILITY_WATER_ABSORB,
+        .nature = NATURE_MODEST,
+        EV_SPREAD_SPA_SPE_HP,
         IVS(30),
-        .moves = {MOVE_ENERGY_BALL, MOVE_DARK_PULSE, MOVE_LEECH_SEED, MOVE_SPIKY_SHIELD},
+        .moves = {MOVE_DARK_PULSE, MOVE_ENERGY_BALL, MOVE_LEECH_SEED, MOVE_SPIKY_SHIELD},
+        .gender = TRAINER_MON_MALE,
+        .ball = ITEM_DUSK_BALL,
         },
         {
         .lvl = 62,
         .species = SPECIES_ABSOL,
+        .ability = ABILITY_SHARPNESS,
+        .nature = NATURE_ADAMANT,
+        EV_SPREAD_ATK_SPE_HP,
         PERFECT_IVS,
         .moves = {MOVE_NIGHT_SLASH, MOVE_PSYCHO_CUT, MOVE_AERIAL_ACE, MOVE_SWORDS_DANCE},
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
+        .ball = ITEM_POKE_BALL,
         }
     },
 },
@@ -1762,33 +1788,53 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         {
         .lvl = 61,
         .species = SPECIES_DUSCLOPS,
+        .ability = ABILITY_PRESSURE,
         IVS(30),
         .moves = {MOVE_HEX, MOVE_CONFUSE_RAY, MOVE_CURSE, MOVE_WILL_O_WISP},
+        .gender = TRAINER_MON_MALE,
+        .ball = ITEM_DUSK_BALL,
         },
         {
         .lvl = 61,
         .species = SPECIES_SHEDINJA,
+        .ability = ABILITY_WONDER_GUARD,
+        .nature = NATURE_ADAMANT,
+        EV_SPREAD_ATK_SPE_HP,
         IVS(30),
         .moves = {MOVE_SHADOW_CLAW, MOVE_LEECH_LIFE, MOVE_HEAL_BLOCK, MOVE_SPITE},
+        .ball = ITEM_DUSK_BALL,
         },
         {
         .lvl = 62,
         .species = SPECIES_SABLEYE,
+        .ability = ABILITY_PRANKSTER,
         IVS(30),
         .moves = {MOVE_SHADOW_CLAW, MOVE_FOUL_PLAY, MOVE_POWER_GEM, MOVE_FAKE_OUT},
+        .gender = TRAINER_MON_FEMALE,
+        .ball = ITEM_DUSK_BALL,
         },
         {
         .lvl = 62,
         .species = SPECIES_BANETTE,
+        .ability = ABILITY_CURSED_BODY,
+        .nature = NATURE_ADAMANT,
+        EV_SPREAD_ATK_SPE_HP,
         IVS(30),
         .moves = {MOVE_SHADOW_CLAW, MOVE_BODY_SLAM, MOVE_SHADOW_SNEAK, MOVE_SWORDS_DANCE},
+        .gender = TRAINER_MON_FEMALE,
+        .ball = ITEM_DUSK_BALL,
         },
         {
         .lvl = 63,
         .species = SPECIES_DUSKNOIR,
+        .ability = ABILITY_IRON_FIST,
+        .nature = NATURE_ADAMANT,
+        EV_SPREAD_ATK_SPD_HP,
         PERFECT_IVS,
         .moves = {MOVE_SHADOW_PUNCH, MOVE_EARTHQUAKE, MOVE_FIRE_PUNCH, MOVE_ICE_PUNCH},
+        .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SITRUS_BERRY,
+        .ball = ITEM_POKE_BALL,
         }
     },
 },
@@ -1804,33 +1850,51 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         {
         .lvl = 62,
         .species = SPECIES_SEALEO,
+        .ability = ABILITY_ICE_BODY,
         IVS(30),
-        .moves = {MOVE_ICE_BALL, MOVE_ROLLOUT, MOVE_DEFENSE_CURL, MOVE_HAIL},
+        .moves = {MOVE_ICE_BALL, MOVE_ROLLOUT, MOVE_DEFENSE_CURL, MOVE_SNOWSCAPE},
+        .gender = TRAINER_MON_MALE,
+        .ball = ITEM_PREMIER_BALL,
         },
         {
         .lvl = 62,
         .species = SPECIES_CASTFORM,
+        .ability = ABILITY_FORECAST,
+        EV_SPREAD_SPA_SPE_HP,
         IVS(30),
-        .moves = {MOVE_BLIZZARD, MOVE_WEATHER_BALL, MOVE_HYDRO_PUMP, MOVE_HAIL},
+        .moves = {MOVE_BLIZZARD, MOVE_WEATHER_BALL, MOVE_HYDRO_PUMP, MOVE_SNOWSCAPE},
+        .gender = TRAINER_MON_FEMALE,
+        .ball = ITEM_PREMIER_BALL,
         },
         {
         .lvl = 63,
         .species = SPECIES_GLALIE,
+        .ability = ABILITY_ICE_BODY,
         IVS(30),
-        .moves = {MOVE_FREEZE_DRY, MOVE_ICE_SHARD, MOVE_PROTECT, MOVE_HAIL},
+        .moves = {MOVE_FREEZE_DRY, MOVE_ICE_SHARD, MOVE_PROTECT, MOVE_SNOWSCAPE},
+        .gender = TRAINER_MON_MALE,
+        .ball = ITEM_PREMIER_BALL,
         },
         {
         .lvl = 63,
         .species = SPECIES_FROSLASS,
+        .ability = ABILITY_SNOW_CLOAK,
+        .nature = NATURE_TIMID,
+        EV_SPREAD_SPA_SPE_HP,
         IVS(30),
-        .moves = {MOVE_BLIZZARD, MOVE_SHADOW_BALL, MOVE_DRAINING_KISS, MOVE_HAIL},
+        .moves = {MOVE_BLIZZARD, MOVE_SHADOW_BALL, MOVE_DRAINING_KISS, MOVE_SNOWSCAPE},
+        .gender = TRAINER_MON_FEMALE,
+        .ball = ITEM_PREMIER_BALL,
         },
         {
         .lvl = 64,
         .species = SPECIES_WALREIN,
+        .ability = ABILITY_THICK_FAT,
         PERFECT_IVS,
-        .moves = {MOVE_BLIZZARD, MOVE_SURF, MOVE_SHEER_COLD, MOVE_HAIL},
+        .moves = {MOVE_BLIZZARD, MOVE_SURF, MOVE_SIGNAL_BEAM, MOVE_SNOWSCAPE},
+        .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SITRUS_BERRY,
+        .ball = ITEM_POKE_BALL,
         }
     },
 },
@@ -1846,33 +1910,54 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         {
         .lvl = 63,
         .species = SPECIES_SHELGON,
+        .ability = ABILITY_ROCK_HEAD,
         IVS(30),
         .moves = {MOVE_DRAGON_CLAW, MOVE_ZEN_HEADBUTT, MOVE_DOUBLE_EDGE, MOVE_PROTECT},
+        .gender = TRAINER_MON_FEMALE,
+        .ball = ITEM_HEAVY_BALL,
         },
         {
         .lvl = 63,
         .species = SPECIES_KINGDRA,
+        .ability = ABILITY_SNIPER,
+        .nature = NATURE_MODEST,
+        EV_SPREAD_SPA_SPE_HP,
         IVS(30),
         .moves = {MOVE_DRAGON_PULSE, MOVE_SURF, MOVE_SMOKESCREEN, MOVE_YAWN},
+        .gender = TRAINER_MON_MALE,
+        .ball = ITEM_HEAVY_BALL,
         },
         {
         .lvl = 64,
         .species = SPECIES_ALTARIA,
+        .ability = ABILITY_FLUFFY,
         IVS(30),
         .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
+        .gender = TRAINER_MON_MALE,
+        .ball = ITEM_HEAVY_BALL,
         },
         {
         .lvl = 64,
         .species = SPECIES_FLYGON,
+        .ability = ABILITY_LEVITATE,
+        .nature = NATURE_ADAMANT,
+        EV_SPREAD_ATK_SPE_HP,
         IVS(30),
-        .moves = {MOVE_DRAGON_CLAW, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE},
+        .moves = {MOVE_DRAGON_CLAW, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_DRAGON_DANCE},
+        .gender = TRAINER_MON_MALE,
+        .ball = ITEM_HEAVY_BALL,
         },
         {
         .lvl = 66,
         .species = SPECIES_SALAMENCE,
+        .ability = ABILITY_INTIMIDATE,
+        .nature = NATURE_ADAMANT,
+        EV_SPREAD_ATK_SPE_HP,
         PERFECT_IVS,
         .moves = {MOVE_DRAGON_CLAW, MOVE_DUAL_WINGBEAT, MOVE_ROCK_SLIDE, MOVE_DRAGON_DANCE},
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SALAMENCITE,
+        .ball = ITEM_POKE_BALL,
         }
     },
 },
@@ -1893,55 +1978,72 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         .lvl = 66,
         .species = SPECIES_PELIPPER,
         .ability = ABILITY_DRIZZLE,
+        .nature = NATURE_MODEST,
+        EV_SPREAD_SPA_DEF_SPE,
         PERFECT_IVS,
-        .moves = {MOVE_HYDRO_PUMP, MOVE_HURRICANE, MOVE_ROOST, MOVE_SUPERSONIC},
+        .moves = {MOVE_HYDRO_PUMP, MOVE_HURRICANE, MOVE_ROOST, MOVE_TAILWIND},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_DAMP_ROCK,
+        .ball = ITEM_ULTRA_BALL,
         },
         {
         .lvl = 66,
         .species = SPECIES_GOREBYSS,
         .ability = ABILITY_SWIFT_SWIM,
+        .nature = NATURE_MODEST,
+        EV_SPREAD_SPA_SPE_DEF,
         PERFECT_IVS,
         .moves = {MOVE_SURF, MOVE_PSYCHIC, MOVE_DRAINING_KISS, MOVE_SHELL_SMASH},
         .gender = TRAINER_MON_FEMALE,
+        .ball = ITEM_DIVE_BALL,
         },
         {
         .lvl = 66,
         .species = SPECIES_RELICANTH,
         .ability = ABILITY_SWIFT_SWIM,
         .nature = NATURE_IMPISH,
+        EV_SPREAD_ATK_DEF_HP,
         PERFECT_IVS,
-        .moves = {MOVE_AQUA_TAIL, MOVE_ROCK_TOMB, MOVE_YAWN, MOVE_REST},
+        .moves = {MOVE_AQUA_TAIL, MOVE_ROCK_SLIDE, MOVE_YAWN, MOVE_REST},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_CHESTO_BERRY,
+        .ball = ITEM_DIVE_BALL,
         .isShiny = TRUE,
         },
         {
         .lvl = 67,
         .species = SPECIES_LUDICOLO,
         .ability = ABILITY_SWIFT_SWIM,
+        .nature = NATURE_MODEST,
+        EV_SPREAD_SPA_SPE_HP,
         PERFECT_IVS,
         .moves = {MOVE_SURF, MOVE_GIGA_DRAIN, MOVE_LEECH_SEED, MOVE_RAIN_DANCE},
         .gender = TRAINER_MON_MALE,
+        .ball = ITEM_ULTRA_BALL,
         },
         {
         .lvl = 67,
         .species = SPECIES_WAILORD,
         .ability = ABILITY_OBLIVIOUS,
+        .nature = NATURE_MODEST,
+        EV_SPREAD_SPA_HP_SPE,
         PERFECT_IVS,
         .moves = {MOVE_WATER_SPOUT, MOVE_ICE_BEAM, MOVE_AQUA_RING, MOVE_AMNESIA},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_LEFTOVERS,
+        .ball = ITEM_DIVE_BALL,
         },
         {
         .lvl = 69,
         .species = SPECIES_MILOTIC,
         .ability = ABILITY_MARVEL_SCALE,
+        .nature = NATURE_MODEST,
+        EV_SPREAD_SPA_SPD_SPE,
         PERFECT_IVS,
-        .moves = {MOVE_SURF, MOVE_ICE_BEAM, MOVE_RAIN_DANCE, MOVE_RECOVER},
+        .moves = {MOVE_HYDRO_PUMP, MOVE_ICE_BEAM, MOVE_COIL, MOVE_RECOVER},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SITRUS_BERRY,
+        .ball = ITEM_POKE_BALL,
         }
     },
 },
@@ -1955,7 +2057,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 77,
+        .lvl = 87,
         .species = SPECIES_SKARMORY,
         .ability = ABILITY_STURDY,
         .nature = NATURE_IMPISH,
@@ -1967,15 +2069,16 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         .ball = ITEM_LUXURY_BALL,
         },
         {
-        .lvl = 77,
+        .lvl = 87,
         .species = SPECIES_CLAYDOL,
         .nature = NATURE_CALM,
         EV_SPREAD_DEF_SPD_SPA,
         PERFECT_IVS,
         .moves = {MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_ANCIENT_POWER, MOVE_EARTHQUAKE},
+        .ball = ITEM_HEAVY_BALL,
         },
         {
-        .lvl = 78,
+        .lvl = 88,
         .species = SPECIES_JIRACHI,
         .nature = NATURE_MODEST,
         EV_SPREAD_SPA_SPE_SPD,
@@ -1986,15 +2089,15 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         .nickname = COMPOUND_STRING("Devon"),
         },
         {
-        STEVEN_MAWILE(78),
+        STEVEN_MAWILE(88),
         .heldItem = ITEM_LIFE_ORB,
         },
         {
-        STEVEN_AGGRON(79),
+        STEVEN_AGGRON(89),
         .heldItem = ITEM_SHUCA_BERRY,
         },
         {
-        STEVEN_METAGROSS(80),
+        STEVEN_METAGROSS(90),
         .moves = {MOVE_METEOR_MASH, MOVE_PSYCHIC_FANGS, MOVE_EARTHQUAKE, MOVE_BULLET_PUNCH},
         .heldItem = ITEM_METAGROSSITE,
         }
@@ -7986,6 +8089,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 #define DIANA_SWABLU(Level)                                   \
     .lvl = Level,                                             \
     .species = Level < 35 ? SPECIES_SWABLU : SPECIES_ALTARIA, \
+    .ability = ABILITY_FLUFFY,                                \
     .gender = TRAINER_MON_FEMALE
 
 #define DIANA_ODDISH(Level) \
@@ -11055,6 +11159,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 #define ROBERT_SWABLU(Level)                                                 \
     .lvl = Level,                                                            \
     .species = Level < REMATCH_3_LEVEL_2 ? SPECIES_SWABLU : SPECIES_ALTARIA, \
+    .ability = ABILITY_NATURAL_CURE,                                         \
     .gender = TRAINER_MON_MALE
 
 #define ROBERT_NATU(Level)                                              \
@@ -16020,10 +16125,11 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     DRAGON_TAMER_INFO,           \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define NICOLAS_ALTARIA(Level)  \
-    .lvl = Level,               \
-    .species = SPECIES_ALTARIA, \
-    IVS(18),                    \
+#define NICOLAS_ALTARIA(Level)       \
+    .lvl = Level,                    \
+    .species = SPECIES_ALTARIA,      \
+    .ability = ABILITY_NATURAL_CURE, \
+    IVS(18),                         \
     .gender = TRAINER_MON_MALE
 
 #define NICOLAS_BAGON(Level)                                                                                     \

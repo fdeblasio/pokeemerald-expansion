@@ -223,14 +223,14 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     },
 },
 
-[TRAINER_WALLY_VR_1] =
+[TRAINER_WALLY_VICTORY_ROAD_1] =
 {
     WALLY_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 46,
+        .lvl = 56,
         .species = SPECIES_DELCATTY,
         .ability = ABILITY_NORMALIZE,
         IVS(18),
@@ -238,24 +238,24 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = 46,
+        .lvl = 56,
         .species = SPECIES_MAGNEZONE,
         .ability = ABILITY_ANALYTIC,
         IVS(18),
         .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_METAL_SOUND},
         },
         {
-        WALLY_SWABLU(47),
+        WALLY_SWABLU(57),
         IVS(18),
         .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
         },
         {
-        WALLY_BUDEW(47),
+        WALLY_BUDEW(57),
         IVS(18),
         .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC},
         },
         {
-        RALPH(49),
+        RALPH(59),
         .nature = NATURE_ADAMANT,
         .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE},
         .heldItem = ITEM_GALLADITE,
@@ -316,7 +316,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .gender = TRAINER_MON_FEMALE,                                       \
     }
 
-[TRAINER_WALLY_VR_2] =
+[TRAINER_WALLY_VICTORY_ROAD_2] =
 {
     WALLY_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
@@ -330,7 +330,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     },
 },
 
-[TRAINER_WALLY_VR_3] =
+[TRAINER_WALLY_VICTORY_ROAD_3] =
 {
     WALLY_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
@@ -344,7 +344,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     },
 },
 
-[TRAINER_WALLY_VR_4] =
+[TRAINER_WALLY_VICTORY_ROAD_4] =
 {
     WALLY_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
@@ -358,7 +358,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     },
 },
 
-[TRAINER_WALLY_VR_5] =
+[TRAINER_WALLY_VICTORY_ROAD_5] =
 {
     WALLY_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
@@ -1718,31 +1718,31 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 50,
+        .lvl = 60,
         .species = SPECIES_MIGHTYENA,
         IVS(30),
         .moves = {MOVE_CRUNCH, MOVE_FIRE_FANG, MOVE_THUNDER_FANG, MOVE_YAWN},
         },
         {
-        .lvl = 50,
+        .lvl = 60,
         .species = SPECIES_SHIFTRY,
         IVS(30),
         .moves = {MOVE_NIGHT_SLASH, MOVE_LEAF_BLADE, MOVE_FAKE_OUT, MOVE_DOUBLE_SLAP},
         },
         {
-        .lvl = 51,
+        .lvl = 61,
         .species = SPECIES_CRAWDAUNT,
         IVS(30),
         .moves = {MOVE_CRUNCH, MOVE_CRABHAMMER, MOVE_KNOCK_OFF, MOVE_SWORDS_DANCE},
         },
         {
-        .lvl = 51,
+        .lvl = 61,
         .species = SPECIES_CACTURNE,
         IVS(30),
         .moves = {MOVE_ENERGY_BALL, MOVE_DARK_PULSE, MOVE_LEECH_SEED, MOVE_SPIKY_SHIELD},
         },
         {
-        .lvl = 52,
+        .lvl = 62,
         .species = SPECIES_ABSOL,
         PERFECT_IVS,
         .moves = {MOVE_NIGHT_SLASH, MOVE_PSYCHO_CUT, MOVE_AERIAL_ACE, MOVE_SWORDS_DANCE},
@@ -1760,31 +1760,31 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 51,
+        .lvl = 61,
         .species = SPECIES_DUSCLOPS,
         IVS(30),
         .moves = {MOVE_HEX, MOVE_CONFUSE_RAY, MOVE_CURSE, MOVE_WILL_O_WISP},
         },
         {
-        .lvl = 51,
+        .lvl = 61,
         .species = SPECIES_SHEDINJA,
         IVS(30),
         .moves = {MOVE_SHADOW_CLAW, MOVE_LEECH_LIFE, MOVE_HEAL_BLOCK, MOVE_SPITE},
         },
         {
-        .lvl = 52,
+        .lvl = 62,
         .species = SPECIES_SABLEYE,
         IVS(30),
         .moves = {MOVE_SHADOW_CLAW, MOVE_FOUL_PLAY, MOVE_POWER_GEM, MOVE_FAKE_OUT},
         },
         {
-        .lvl = 52,
+        .lvl = 62,
         .species = SPECIES_BANETTE,
         IVS(30),
         .moves = {MOVE_SHADOW_CLAW, MOVE_BODY_SLAM, MOVE_SHADOW_SNEAK, MOVE_SWORDS_DANCE},
         },
         {
-        .lvl = 53,
+        .lvl = 63,
         .species = SPECIES_DUSKNOIR,
         PERFECT_IVS,
         .moves = {MOVE_SHADOW_PUNCH, MOVE_EARTHQUAKE, MOVE_FIRE_PUNCH, MOVE_ICE_PUNCH},
@@ -1802,31 +1802,31 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 52,
+        .lvl = 62,
         .species = SPECIES_SEALEO,
         IVS(30),
         .moves = {MOVE_ICE_BALL, MOVE_ROLLOUT, MOVE_DEFENSE_CURL, MOVE_HAIL},
         },
         {
-        .lvl = 52,
+        .lvl = 62,
         .species = SPECIES_CASTFORM,
         IVS(30),
         .moves = {MOVE_BLIZZARD, MOVE_WEATHER_BALL, MOVE_HYDRO_PUMP, MOVE_HAIL},
         },
         {
-        .lvl = 53,
+        .lvl = 63,
         .species = SPECIES_GLALIE,
         IVS(30),
         .moves = {MOVE_FREEZE_DRY, MOVE_ICE_SHARD, MOVE_PROTECT, MOVE_HAIL},
         },
         {
-        .lvl = 53,
+        .lvl = 63,
         .species = SPECIES_FROSLASS,
         IVS(30),
         .moves = {MOVE_BLIZZARD, MOVE_SHADOW_BALL, MOVE_DRAINING_KISS, MOVE_HAIL},
         },
         {
-        .lvl = 54,
+        .lvl = 64,
         .species = SPECIES_WALREIN,
         PERFECT_IVS,
         .moves = {MOVE_BLIZZARD, MOVE_SURF, MOVE_SHEER_COLD, MOVE_HAIL},
@@ -1844,31 +1844,31 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 53,
+        .lvl = 63,
         .species = SPECIES_SHELGON,
         IVS(30),
         .moves = {MOVE_DRAGON_CLAW, MOVE_ZEN_HEADBUTT, MOVE_DOUBLE_EDGE, MOVE_PROTECT},
         },
         {
-        .lvl = 53,
+        .lvl = 63,
         .species = SPECIES_KINGDRA,
         IVS(30),
         .moves = {MOVE_DRAGON_PULSE, MOVE_SURF, MOVE_SMOKESCREEN, MOVE_YAWN},
         },
         {
-        .lvl = 54,
+        .lvl = 64,
         .species = SPECIES_ALTARIA,
         IVS(30),
         .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
         },
         {
-        .lvl = 54,
+        .lvl = 64,
         .species = SPECIES_FLYGON,
         IVS(30),
         .moves = {MOVE_DRAGON_CLAW, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE},
         },
         {
-        .lvl = 56,
+        .lvl = 66,
         .species = SPECIES_SALAMENCE,
         PERFECT_IVS,
         .moves = {MOVE_DRAGON_CLAW, MOVE_DUAL_WINGBEAT, MOVE_ROCK_SLIDE, MOVE_DRAGON_DANCE},
@@ -1890,7 +1890,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 56,
+        .lvl = 66,
         .species = SPECIES_PELIPPER,
         .ability = ABILITY_DRIZZLE,
         PERFECT_IVS,
@@ -1899,7 +1899,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         .heldItem = ITEM_DAMP_ROCK,
         },
         {
-        .lvl = 56,
+        .lvl = 66,
         .species = SPECIES_GOREBYSS,
         .ability = ABILITY_SWIFT_SWIM,
         PERFECT_IVS,
@@ -1907,7 +1907,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = 56,
+        .lvl = 66,
         .species = SPECIES_RELICANTH,
         .ability = ABILITY_SWIFT_SWIM,
         .nature = NATURE_IMPISH,
@@ -1918,7 +1918,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         .isShiny = TRUE,
         },
         {
-        .lvl = 57,
+        .lvl = 67,
         .species = SPECIES_LUDICOLO,
         .ability = ABILITY_SWIFT_SWIM,
         PERFECT_IVS,
@@ -1926,7 +1926,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 57,
+        .lvl = 67,
         .species = SPECIES_WAILORD,
         .ability = ABILITY_OBLIVIOUS,
         PERFECT_IVS,
@@ -1935,7 +1935,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         .heldItem = ITEM_LEFTOVERS,
         },
         {
-        .lvl = 59,
+        .lvl = 69,
         .species = SPECIES_MILOTIC,
         .ability = ABILITY_MARVEL_SCALE,
         PERFECT_IVS,
@@ -16125,12 +16125,12 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 45,
+        .lvl = 56,
         .species = SPECIES_MAGNETON,
         IVS(12),
         },
         {
-        .lvl = 45,
+        .lvl = 56,
         .species = SPECIES_MUK,
         IVS(12),
         }
@@ -16146,7 +16146,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 47,
+        .lvl = 57,
         .species = SPECIES_ROSERADE,
         IVS(12),
         }
@@ -16162,7 +16162,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 47,
+        .lvl = 57,
         .species = SPECIES_CLAYDOL,
         IVS(12),
         }
@@ -16178,17 +16178,17 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 45,
+        .lvl = 55,
         .species = SPECIES_SWELLOW,
         IVS(12),
         },
         {
-        .lvl = 45,
+        .lvl = 55,
         .species = SPECIES_MAWILE,
         IVS(12),
         },
         {
-        .lvl = 45,
+        .lvl = 55,
         .species = SPECIES_ALAKAZAM,
         IVS(12),
         }
@@ -16204,17 +16204,17 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 45,
+        .lvl = 55,
         .species = SPECIES_SANDSLASH,
         IVS(12),
         },
         {
-        .lvl = 45,
+        .lvl = 55,
         .species = SPECIES_NINETALES,
         IVS(12),
         },
         {
-        .lvl = 45,
+        .lvl = 55,
         .species = SPECIES_TROPIUS,
         IVS(12),
         }
@@ -16230,17 +16230,17 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 45,
+        .lvl = 55,
         .species = SPECIES_KECLEON,
         IVS(12),
         },
         {
-        .lvl = 45,
+        .lvl = 55,
         .species = SPECIES_GOLEM,
         IVS(12),
         },
         {
-        .lvl = 45,
+        .lvl = 55,
         .species = SPECIES_WAILORD,
         IVS(12),
         }
@@ -16255,12 +16255,12 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 46,
+        .lvl = 56,
         .species = SPECIES_CLAYDOL,
         .moves = {MOVE_SKILL_SWAP, MOVE_ZEN_HEADBUTT, MOVE_EARTHQUAKE, MOVE_COSMIC_POWER}
         },
         {
-        .lvl = 46,
+        .lvl = 56,
         .species = SPECIES_LANTURN,
         .moves = {MOVE_THUNDERBOLT, MOVE_BUBBLE_BEAM, MOVE_SIGNAL_BEAM, MOVE_THUNDER_WAVE}
         }
@@ -16276,12 +16276,12 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 46,
+        .lvl = 56,
         .species = SPECIES_MEDICHAM,
         .moves = {MOVE_ZEN_HEADBUTT, MOVE_HIGH_JUMP_KICK, MOVE_THUNDER_PUNCH, MOVE_FIRE_PUNCH}
         },
         {
-        .lvl = 46,
+        .lvl = 56,
         .species = SPECIES_CLAYDOL,
         .moves = {MOVE_SKILL_SWAP, MOVE_EARTH_POWER, MOVE_PSYCHIC, MOVE_COSMIC_POWER}
         }
@@ -16297,12 +16297,12 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 46,
+        .lvl = 56,
         .species = SPECIES_SKARMORY,
         IVS(12),
         },
         {
-        .lvl = 46,
+        .lvl = 56,
         .species = SPECIES_SABLEYE,
         IVS(12),
         }
@@ -16318,12 +16318,12 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 46,
+        .lvl = 56,
         .species = SPECIES_CACTURNE,
         IVS(12),
         },
         {
-        .lvl = 46,
+        .lvl = 56,
         .species = SPECIES_PELIPPER,
         IVS(12),
         }
@@ -16339,17 +16339,17 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 45,
+        .lvl = 55,
         .species = SPECIES_TORKOAL,
         IVS(12),
         },
         {
-        .lvl = 45,
+        .lvl = 55,
         .species = SPECIES_MEDICHAM,
         IVS(12),
         },
         {
-        .lvl = 45,
+        .lvl = 55,
         .species = SPECIES_LUDICOLO,
         IVS(12),
         }
@@ -16365,12 +16365,12 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 46,
+        .lvl = 56,
         .species = SPECIES_LUNATONE,
         .moves = {MOVE_EXPLOSION, MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_PSYCHIC}
         },
         {
-        .lvl = 46,
+        .lvl = 56,
         .species = SPECIES_SOLROCK,
         .moves = {MOVE_EXPLOSION, MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_SHADOW_BALL}
         }
@@ -16386,11 +16386,11 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 46,
+        .lvl = 56,
         .species = SPECIES_SABLEYE,
         },
         {
-        .lvl = 46,
+        .lvl = 56,
         .species = SPECIES_ABSOL,
         }
     },
@@ -16403,35 +16403,35 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .trainerPic = TRAINER_PIC_ACE_TRAINER_M,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    MINI_BOSS_AI_FLAGS,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 44,
+        .lvl = 55,
         .species = SPECIES_SWALOT,
         EV_SPREAD_ATK_SPE_HP,
         IVS(12),
         },
         {
-        .lvl = 44,
+        .lvl = 55,
         .species = SPECIES_DODRIO,
         EV_SPREAD_ATK_SPE_HP,
         IVS(12),
         },
         {
-        .lvl = 44,
+        .lvl = 55,
         .species = SPECIES_ALAKAZAM,
         EV_SPREAD_SPA_SPE_HP,
         IVS(12),
         },
         {
-        .lvl = 44,
+        .lvl = 55,
         .species = SPECIES_ELECTRODE,
         EV_SPREAD_SPA_SPE_HP,
         IVS(12),
         },
         {
-        .lvl = 44,
+        .lvl = 55,
         .species = SPECIES_SHIFTRY,
         EV_SPREAD_ATK_SPE_HP,
         IVS(12),
@@ -16448,13 +16448,13 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 46,
+        .lvl = 56,
         .species = SPECIES_GARDEVOIR,
         IVS(12),
         .moves = {MOVE_SKILL_SWAP, MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_CALM_MIND}
         },
         {
-        .lvl = 46,
+        .lvl = 56,
         .species = SPECIES_SLAKING,
         IVS(12),
         .moves = {MOVE_EARTHQUAKE, MOVE_SHADOW_CLAW, MOVE_AERIAL_ACE, MOVE_BRICK_BREAK}
@@ -16471,13 +16471,13 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 46,
+        .lvl = 56,
         .species = SPECIES_SLAKING,
         IVS(12),
         .moves = {MOVE_ATTRACT, MOVE_MEGA_KICK, MOVE_HAMMER_ARM, MOVE_THROAT_CHOP}
         },
         {
-        .lvl = 46,
+        .lvl = 56,
         .species = SPECIES_DUSCLOPS,
         IVS(12),
         .moves = {MOVE_SKILL_SWAP, MOVE_PROTECT, MOVE_WILL_O_WISP, MOVE_TOXIC}
@@ -16495,12 +16495,12 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 59,
+        .lvl = 69,
         .species = SPECIES_AGGRON,
         IVS(12),
         },
         {
-        .lvl = 59,
+        .lvl = 69,
         .species = SPECIES_MANECTRIC,
         IVS(12),
         }
@@ -16516,17 +16516,17 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 58,
+        .lvl = 68,
         .species = SPECIES_SABLEYE,
         IVS(12),
         },
         {
-        .lvl = 58,
+        .lvl = 68,
         .species = SPECIES_MEDICHAM,
         IVS(12),
         },
         {
-        .lvl = 58,
+        .lvl = 68,
         .species = SPECIES_SHARPEDO,
         IVS(12),
         }
@@ -16542,12 +16542,12 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 59,
+        .lvl = 69,
         .species = SPECIES_MAWILE,
         IVS(12),
         },
         {
-        .lvl = 59,
+        .lvl = 69,
         .species = SPECIES_STARMIE,
         IVS(12),
         }
@@ -16563,11 +16563,11 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 59,
+        .lvl = 69,
         .species = SPECIES_LUVDISC,
         },
         {
-        .lvl = 59,
+        .lvl = 69,
         .species = SPECIES_LUVDISC,
         }
     },
@@ -16581,7 +16581,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        RICH_BOY_MON(60),
+        RICH_BOY_MON(70),
         .species = SPECIES_AZUMARILL,
         }
     },
@@ -16595,11 +16595,11 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 59,
+        .lvl = 69,
         .species = SPECIES_PERSIAN,
         },
         {
-        .lvl = 59,
+        .lvl = 69,
         .species = SPECIES_MANECTRIC,
         }
     },
@@ -16613,32 +16613,32 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        POKE_FAN_MON(55),
+        POKE_FAN_MON(65),
         .species = SPECIES_SKITTY,
         .moves = {MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK, MOVE_HEAL_BELL}
         },
         {
-        POKE_FAN_MON(55),
+        POKE_FAN_MON(65),
         .species = SPECIES_SKITTY,
         .moves = {MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK, MOVE_HEAL_BELL}
         },
         {
-        POKE_FAN_MON(55),
+        POKE_FAN_MON(65),
         .species = SPECIES_SKITTY,
         .moves = {MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK, MOVE_HEAL_BELL}
         },
         {
-        POKE_FAN_MON(55),
+        POKE_FAN_MON(65),
         .species = SPECIES_SKITTY,
         .moves = {MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK, MOVE_HEAL_BELL}
         },
         {
-        POKE_FAN_MON(55),
+        POKE_FAN_MON(65),
         .species = SPECIES_SKITTY,
         .moves = {MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK, MOVE_HEAL_BELL}
         },
         {
-        POKE_FAN_MON(55),
+        POKE_FAN_MON(65),
         .species = SPECIES_DELCATTY,
         .moves = {MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK, MOVE_HEAL_BELL}
         }
@@ -16653,7 +16653,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        RICH_MON(60),
+        RICH_MON(70),
         .species = SPECIES_ROSERADE,
         IVS(12),
         }
@@ -16668,7 +16668,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 60,
+        .lvl = 70,
         .species = SPECIES_ZANGOOSE,
         }
     },
@@ -16682,11 +16682,11 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 59,
+        .lvl = 69,
         .species = SPECIES_TENTACRUEL,
         },
         {
-        .lvl = 59,
+        .lvl = 69,
         .species = SPECIES_MACHAMP,
         }
     },
@@ -16700,15 +16700,15 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 58,
+        .lvl = 68,
         .species = SPECIES_QUAGSIRE,
         },
         {
-        .lvl = 58,
+        .lvl = 68,
         .species = SPECIES_PELIPPER,
         },
         {
-        .lvl = 58,
+        .lvl = 68,
         .species = SPECIES_FERALIGATR,
         }
     },

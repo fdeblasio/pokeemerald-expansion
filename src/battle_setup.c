@@ -361,7 +361,7 @@ const struct RematchTrainer gRematchTable[REMATCH_TABLE_ENTRIES] =
     REMATCH(TRENT, ROUTE112),
     REMATCH(SAWYER, MT_CHIMNEY),
     REMATCH(KIRA_AND_DAN, ABANDONED_SHIP_ROOMS2_1F),
-    REMATCH_WALLY(WALLY_VR, VICTORY_ROAD_1F),
+    REMATCH_WALLY(WALLY_VICTORY_ROAD, VICTORY_ROAD_1F),
     REMATCH(ROXANNE, RUSTBORO_CITY),
     REMATCH(BRAWLY, DEWFORD_TOWN),
     REMATCH(WATTSON, MAUVILLE_CITY),
@@ -1720,7 +1720,7 @@ static inline bool32 IsRematchForbidden(s32 rematchTableId)
 {
     if (rematchTableId >= REMATCH_ELITE_FOUR_ENTRIES)
         return TRUE;
-    else if (rematchTableId == REMATCH_WALLY_VR)
+    else if (rematchTableId == REMATCH_WALLY_VICTORY_ROAD)
         return !FlagGet(FLAG_DEFEATED_WALLY_VICTORY_ROAD);
     else
         return FALSE;

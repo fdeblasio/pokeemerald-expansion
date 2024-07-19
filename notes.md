@@ -61,6 +61,7 @@ upcoming
     - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game
 - Rearrange wild_encounters.json to be in order
 - Edit local Porymaps to avoid file formats being edited
+- Give Altaria Fluffy? (Would need to update abilities for rematches)
 - Include charms? (might go over Key Items amount)
 - Remove egg moves that are part of level up learnsets
 - Give grunts consistent teams/genders?
@@ -100,6 +101,7 @@ upcoming
 ### Pokémon
 - Eventually remove RSE and/or BDSP teachable moves?
 - Give Espeon Power Gem on level up or evolution?
+- Give Altaria Fluffy? (Would need to update abilities for rematches)
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?
 - Make Outbreak Pokémon somehow obtainable in endgame?
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB

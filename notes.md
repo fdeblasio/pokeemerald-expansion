@@ -39,6 +39,46 @@ upcoming
 ```
 
 ## To Do:
+### Next playthrough
+- Reorder Trainer numbers
+- Consolidate flags
+    - FLAG_DEFEATED_MAUVILLE_GYM, FLAG_BADGE03_GET, FLAG_HIDE_MAUVILLE_ROCK_SMASH_TIP_GUY
+    - FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA
+    - FLAG_HIDE_SOOTOPOLIS_CITY_MAXIE/FLAG_HIDE_SOOTOPOLIS_CITY_ARCHIE/FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE
+- Remove Safari Zone and move Pokémon to new locations
+    - Move Solar Beam to Lilycove Department Store
+    - Pichu: New Mauville
+    - Natu: Route 111?
+    - Phanpy: Route 111/112/114/Jagged Pass
+    - Psyduck: Various ponds
+    - Wynaut: Make Mirage Island permanent?
+    - Heracross/Pinsir: Route 119?
+    - Girafarig: Route 120?
+    - Doduo: Route 121?
+    - Rhyhorn: Route 112/114/Jagged Pass
+    - Mareep/Gligar/Sunkern/Snubbull/Stantler/Spinarak/Hoothoot/Wooper/Remoraid/Teddiursa/Shuckle/Pineco/Aipom/Miltank/Ledyba: Remove?
+- Get Exp. Share from Steven instead of from Mr. Stone after
+    - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game
+- Rearrange wild_encounters.json to be in order
+- Edit local Porymaps to avoid file formats being edited
+- Include charms? (might go over Key Items amount)
+- Remove egg moves that are part of level up learnsets
+- Give grunts consistent teams/genders?
+    - Give them names?
+- Battle Archie at Oceanic Museum?
+- Stop daycare from deleting moves
+- Battle Archie/Courtney at Meteor Falls?
+- Edit Winona's text to change Bird to Flying?
+- Edit contests?/Contests overhaul
+- Replace Waterfall with an item, similar to Surf/Dive
+- Just make new tutors in towns or Battle Frontier
+- TMs/Tutors
+    - Hyper Voice tutor->TM (or earlier Tutor)?
+    - Temper Flare (with better STAB distribution)
+    - Drill Run (remove it from new level up learnsets)
+    - Aqua Tail since it now has 100% accuracy
+    - Ice Spinner? (100% accurate Icicle Crash might have better STAB distribution)
+
 ### Meta
 - More simple modifications: https://www.pokecommunity.com/showthread.php?t=416647&page=1
 - Pret wiki tutorials:       https://github.com/pret/pokeemerald/wiki/Tutorials
@@ -52,26 +92,28 @@ upcoming
     - FLAG_HIDE_SOOTOPOLIS_CITY_MAXIE/FLAG_HIDE_SOOTOPOLIS_CITY_ARCHIE/FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE
 - Remove unused code
     - Vanilla code
-    - Move tutor flags since they're now infinite
+    - Rename tutor flags since they're now infinite
 - Organize changes better
+- ENDGAME_LEVEL is set in wild_encounter but is still used for SS Tidal trainers (trainers.h), mass outbreaks (tv.c), and presumably Sudowoodo
 
 ### Pokémon
-- Eventually remove RSE and/or BDSP teachable moves
+- Eventually remove RSE and/or BDSP teachable moves?
 - Give Espeon Power Gem on level up or evolution?
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?
-- Edit Surskit mass outbreak?
+- Make Outbreak Pokémon somehow obtainable in endgame?
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
+- Set Deoxys to normal form if not already
 - Remove Safari Zone?
     - Move Solar Beam to Lilycove Department Store
     - Pichu: New Mauville
     - Natu: Route 111?
-    - Phanpy: Route 111?
+    - Phanpy: Route 111/112/114/Jagged Pass
     - Psyduck: Various ponds
     - Wynaut: Make Mirage Island permanent?
     - Heracross/Pinsir: Route 119?
     - Girafarig: Route 120?
-    - Doduo: ???
-    - Rhyhorn: ???
+    - Doduo: Route 121?
+    - Rhyhorn: Route 112/114/Jagged Pass
     - Mareep/Gligar/Sunkern/Snubbull/Stantler/Spinarak/Hoothoot/Wooper/Remoraid/Teddiursa/Shuckle/Pineco/Aipom/Miltank/Ledyba: Remove?
 - Add in some Vega evolutions?
     - Adnokana
@@ -92,7 +134,7 @@ upcoming
     - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game
 - Ideally all SV TMs would be available if the bag was ever expanded greatly
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
-- Include charms?
+- Include charms? (might go over Key Items amount)
 - Xaman's TM Case: https://www.pokecommunity.com/showpost.php?p=10378278
 
 ### Trainers
@@ -103,7 +145,6 @@ upcoming
 - More mugshots for other bosses?
 - Readjust wild/trainer levels so that parties aren't overpowered?
 - Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)
-    - Figure out intermittent rematch levels (for example rematch 2 levels for trainers after Petalburg or rematch 2/3 levels for trainers after Fortree)
 - Edit Winona's text to change Bird to Flying?
 - Elite Four rematches (wouldn't need to use Match Call, could probably do if statement in scripts.inc)
 - 6th rematches for trainers post-Elite Four? (Might not work due to running out of trainer space)
@@ -116,7 +157,7 @@ upcoming
 - Maybe add Brendan/May/Maxie/Archie/admins/Winstrate rematches in Battle Frontier?
     - Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma. Mega Evo for Houndoom but unsure for Ninetales)
         - Could swap out Huntail for Mega Gyarados and only it and Houndoom get items
-- Try to get every Pokemon in Pokedex in at least one rematch?
+- Try to get every Pokémon in Pokédex in at least one rematch?
 - Trainer customization:
     - All rematches should have consistent values (gender, IVs (unless maxed but only > level 50), etc.)
     - Calvin could have a good Nature/EV
@@ -124,18 +165,19 @@ upcoming
     - Add Speed increasing natures to Triathletes
 - Use Good Ruby's palette shifting to give trainers more unique looks? (https://github.com/Doesnty/goodruby/commit/ff53bbab592865b49f345342205b41cb869abf27)
 - Psychics can use Psyduck, Golduck, and Farigiraf now
-    - Update Mossdeep Gym if there are duplicates of other Pokemon
+    - Update Mossdeep Gym if there are duplicates of other Pokémon
 - Vito can use TMs
 - Gym leaders/Steven/Breeders can have Hidden Abilities
 
 ### Moves
 - Remove egg moves that are part of level up learnsets
-- Just make new tutors in towns
+- Just make new tutors in towns or Battle Frontier
 - TMs/Tutors
-    - Hyper Voice tutor->TM?
+    - Hyper Voice tutor->TM (or earlier Tutor)?
     - Temper Flare (with better STAB distribution)
     - Drill Run (remove it from new level up learnsets)
     - Aqua Tail since it now has 100% accuracy
+    - Ice Spinner? (100% accurate Icicle Crash might have better STAB distribution)
 - Possible Move Updates:
     - Infestation: 20->35
     - Parabolic Charge: 65->75
@@ -165,6 +207,14 @@ upcoming
 - Add FRLG trainer sprites/overworld sprites
     - Sprites are added but still need to be implemented. Overworld sprites may have duplicates for Pokémon and may need palettes
 - Replace Pokémon overworld sprites with follower sprites
+    - Latias/Latios?
+    - Kyogre/Groudon?
+    - Poochyena chasing Birch?
+    - Sudowoodo?
+    - Mew?
+    - Deoxys
+    - Lugia
+    - Ho-Oh
 - Combine Centers and Marts?
 
 ### Battle Frontier
@@ -189,10 +239,11 @@ upcoming
 - Battle Factory
     - Add new moves to moveStyles (sRequiredMoveCounts)
     - Don't have both Open Level and Level 50 since the Pokémon are rentals anyways?
-- Updated Battle Pyramid wild randomizer
+- Updated Battle Pyramid wild randomizer?
+- Battle Pike
+    - Change Kirlia and Dusclops to fit the type?
 
 ### Other
-- Railroad the post-Mossdeep water routes
 - Try to get Verdanturf grass to start Grassy Terrain instead of messing with weather
     - MB_SHORT_GRASS but unsure of what else uses that
 - Might need to increase MAX_LEVEL_UP_MOVES and/or MAX_RELEARNER_MOVES

@@ -316,6 +316,16 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .gender = TRAINER_MON_FEMALE,                                       \
     }
 
+#define WALLY_GARDEVOIR(rematch)                                                 \
+    {                                                                            \
+    REMATCH_MON(GARDEVOIR, TIER3, rematch),                                      \
+    .ability = ABILITY_SYNCHRONIZE,                                              \
+    .nature = NATURE_MODEST,                                                     \
+    EV_SPREAD_SPA_SPE_HP,                                                        \
+    .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_MYSTICAL_FIRE, MOVE_CALM_MIND}, \
+    .gender = TRAINER_MON_FEMALE,                                                \
+    }
+
 [TRAINER_WALLY_VICTORY_ROAD_2] =
 {
     WALLY_INFO,
@@ -348,8 +358,9 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 {
     WALLY_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
-    .partySize = 5,
+    .partySize = 6,
     .party = (const struct TrainerMon[]) {
+        WALLY_GARDEVOIR(4),
         WALLY_DELCATTY(4),
         WALLY_MAGNEZONE(4),
         WALLY_ALTARIA(4),
@@ -364,11 +375,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        {
-        REMATCH_MON(GARDEVOIR, TIER3, 5),
-        .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_MYSTICAL_FIRE, MOVE_CALM_MIND},
-        .gender = TRAINER_MON_FEMALE,
-        },
+        WALLY_GARDEVOIR(5),
         WALLY_DELCATTY(5),
         WALLY_MAGNEZONE(5),
         WALLY_ALTARIA(5),
@@ -381,6 +388,11 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .trainerClass = TRAINER_CLASS_LEADER,       \
     .trainerPic = TRAINER_PIC_LEADER_##Trainer, \
     BOSS_AI_FLAGS
+
+#define LEADER_REMATCH(rematch)                                                    \
+    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE}, \
+    .doubleBattle = TRUE,                                                          \
+    .partySize = rematch < 4 ? 5 : 6
 
 #define ROXANNE_INFO                                                            \
     LEADER_INFO(ROXANNE),                                                       \
@@ -415,6 +427,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         .moves = {MOVE_ROCK_TOMB, MOVE_BLOCK, MOVE_HARDEN, MOVE_TACKLE},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_ORAN_BERRY,
+        .ball = ITEM_POKE_BALL,
         }
     },
 },
@@ -428,6 +441,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .moves = {MOVE_POWER_GEM, MOVE_FLASH_CANNON, rematch < 5 ? MOVE_SANDSTORM : MOVE_BODY_PRESS, MOVE_IRON_DEFENSE}, \
     .gender = TRAINER_MON_FEMALE,                                                       \
     .heldItem = ITEM_SITRUS_BERRY,                                                      \
+    .ball = ITEM_POKE_BALL,                                                             \
     }
 
 #define ROXANNE_ARMALDO(rematch)                                                    \
@@ -472,13 +486,22 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .gender = TRAINER_MON_FEMALE,                                           \
     }
 
+#define ROXANNE_RHYPERIOR(rematch)                                                 \
+    {                                                                              \
+    REMATCH_MON(RHYPERIOR, TIER3, rematch),                                        \
+    .ability = ABILITY_SOLID_ROCK,                                                 \
+    .nature = NATURE_ADAMANT,                                                      \
+    EV_SPREAD_ATK_DEF_HP,                                                          \
+    .moves = {MOVE_ROCK_WRECKER, MOVE_DRILL_RUN, MOVE_POISON_JAB, MOVE_SANDSTORM}, \
+    .gender = TRAINER_MON_FEMALE,                                                  \
+    }
+
 [TRAINER_ROXANNE_2] =
 {
     ROXANNE_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 4,
+    LEADER_REMATCH(2),
     .party = (const struct TrainerMon[]) {
+        ROXANNE_AGGRON(2, IRON_HEAD, ROCK_SLIDE, SANDSTORM),
         ROXANNE_RELICANTH(2),
         ROXANNE_CRADILY(2),
         ROXANNE_ARMALDO(2),
@@ -489,9 +512,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_ROXANNE_3] =
 {
     ROXANNE_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 5,
+    LEADER_REMATCH(3),
     .party = (const struct TrainerMon[]) {
         ROXANNE_AGGRON(3, IRON_HEAD, ROCK_SLIDE, SANDSTORM),
         ROXANNE_RELICANTH(3),
@@ -504,10 +525,9 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_ROXANNE_4] =
 {
     ROXANNE_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 5,
+    LEADER_REMATCH(4),
     .party = (const struct TrainerMon[]) {
+        ROXANNE_RHYPERIOR(4),
         ROXANNE_AGGRON(4, IRON_HEAD, ROCK_SLIDE, SANDSTORM),
         ROXANNE_RELICANTH(4),
         ROXANNE_CRADILY(4),
@@ -519,18 +539,9 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_ROXANNE_5] =
 {
     ROXANNE_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 6,
+    LEADER_REMATCH(5),
     .party = (const struct TrainerMon[]) {
-        {
-        REMATCH_MON(RHYPERIOR, TIER3, 5),
-        .ability = ABILITY_SOLID_ROCK,
-        .nature = NATURE_ADAMANT,
-        EV_SPREAD_ATK_DEF_HP,
-        .moves = {MOVE_ROCK_WRECKER, MOVE_DRILL_RUN, MOVE_POISON_JAB, MOVE_SANDSTORM},
-        .gender = TRAINER_MON_FEMALE,
-        },
+        ROXANNE_RHYPERIOR(5),
         ROXANNE_AGGRON(5, HEAD_SMASH, BODY_PRESS, IRON_DEFENSE),
         ROXANNE_RELICANTH(5),
         ROXANNE_CRADILY(5),
@@ -573,19 +584,21 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         .moves = {MOVE_BULK_UP, MOVE_ARM_THRUST, MOVE_FAKE_OUT, MOVE_WHIRLWIND},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
+        .ball = ITEM_POKE_BALL,
         }
     },
 },
 
-#define BRAWLY_HARIYAMA(rematch)                                                        \
-    {                                                                                   \
-    REMATCH_MON(HARIYAMA, ACE, rematch),                                                \
-    .ability = ABILITY_THICK_FAT,                                                       \
-    .nature = NATURE_ADAMANT,                                                           \
-    EV_SPREAD_ATK_HP_SPE,                                                               \
-    .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_BELLY_DRUM, MOVE_FAKE_OUT},          \
-    .gender = TRAINER_MON_MALE,                                                         \
-    .heldItem = ITEM_SITRUS_BERRY,                                                      \
+#define BRAWLY_HARIYAMA(rematch)                                               \
+    {                                                                          \
+    REMATCH_MON(HARIYAMA, ACE, rematch),                                       \
+    .ability = ABILITY_THICK_FAT,                                              \
+    .nature = NATURE_ADAMANT,                                                  \
+    EV_SPREAD_ATK_HP_SPE,                                                      \
+    .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_BELLY_DRUM, MOVE_FAKE_OUT}, \
+    .gender = TRAINER_MON_MALE,                                                \
+    .heldItem = ITEM_SITRUS_BERRY,                                             \
+    .ball = ITEM_POKE_BALL,                                                    \
     }
 
 #define BRAWLY_MEDICHAM(rematch)                                                  \
@@ -628,13 +641,22 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .gender = TRAINER_MON_MALE,                                                    \
     }
 
+#define BRAWLY_GALLADE(rematch)                                                   \
+    {                                                                             \
+    REMATCH_MON(GALLADE, TIER3, rematch),                                         \
+    .ability = ABILITY_JUSTIFIED,                                                 \
+    .nature = NATURE_ADAMANT,                                                     \
+    EV_SPREAD_ATK_SPE_HP,                                                         \
+    .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_PSYCHO_CUT, MOVE_NIGHT_SLASH}, \
+    .gender = TRAINER_MON_MALE,                                                   \
+    }
+
 [TRAINER_BRAWLY_2] =
 {
     BRAWLY_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 4,
+    LEADER_REMATCH(2),
     .party = (const struct TrainerMon[]) {
+        BRAWLY_BLAZIKEN(2),
         BRAWLY_BRELOOM(2),
         BRAWLY_MACHAMP(2),
         BRAWLY_MEDICHAM(2),
@@ -645,9 +667,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_BRAWLY_3] =
 {
     BRAWLY_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 5,
+    LEADER_REMATCH(3),
     .party = (const struct TrainerMon[]) {
         BRAWLY_BLAZIKEN(3),
         BRAWLY_BRELOOM(3),
@@ -660,10 +680,9 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_BRAWLY_4] =
 {
     BRAWLY_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 5,
+    LEADER_REMATCH(4),
     .party = (const struct TrainerMon[]) {
+        BRAWLY_GALLADE(4),
         BRAWLY_BLAZIKEN(4),
         BRAWLY_BRELOOM(4),
         BRAWLY_MACHAMP(4),
@@ -675,17 +694,9 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_BRAWLY_5] =
 {
     BRAWLY_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 6,
+    LEADER_REMATCH(5),
     .party = (const struct TrainerMon[]) {
-        {
-        REMATCH_MON(GALLADE, TIER3, 5),
-        .ability = ABILITY_JUSTIFIED,
-        .nature = NATURE_ADAMANT,
-        EV_SPREAD_ATK_SPE_HP,
-        .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_PSYCHO_CUT, MOVE_NIGHT_SLASH},
-        },
+        BRAWLY_GALLADE(5),
         BRAWLY_BLAZIKEN(5),
         BRAWLY_BRELOOM(5),
         BRAWLY_MACHAMP(5),
@@ -734,19 +745,21 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         .moves = {MOVE_SHOCK_WAVE, MOVE_QUICK_ATTACK, MOVE_BITE, MOVE_THUNDER_WAVE},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
+        .ball = ITEM_POKE_BALL,
         }
     },
 },
 
-#define WATTSON_MANECTRIC(rematch)                                                   \
-    {                                                                                \
-    REMATCH_MON(MANECTRIC, ACE, rematch),                                            \
-    .ability = ABILITY_MINUS,                                                        \
-    .nature = NATURE_MODEST,                                                         \
-    EV_SPREAD_ATK_SPE_HP,                                                            \
-    .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_SIGNAL_BEAM, MOVE_SNARL},    \
-    .gender = TRAINER_MON_MALE,                                                      \
-    .heldItem = ITEM_SITRUS_BERRY,                                                   \
+#define WATTSON_MANECTRIC(rematch)                                                \
+    {                                                                             \
+    REMATCH_MON(MANECTRIC, ACE, rematch),                                         \
+    .ability = ABILITY_MINUS,                                                     \
+    .nature = NATURE_MODEST,                                                      \
+    EV_SPREAD_ATK_SPE_HP,                                                         \
+    .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_SIGNAL_BEAM, MOVE_SNARL}, \
+    .gender = TRAINER_MON_MALE,                                                   \
+    .heldItem = ITEM_SITRUS_BERRY,                                                \
+    .ball = ITEM_POKE_BALL,                                                       \
     }
 
 #define WATTSON_PLUSLE(rematch)                                                  \
@@ -790,13 +803,21 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .gender = TRAINER_MON_MALE,                                                         \
     }
 
+#define WATTSON_ELECTRODE(rematch)                                                  \
+    {                                                                               \
+    REMATCH_MON(ELECTRODE, TIER3, rematch),                                         \
+    .ability = ABILITY_STATIC,                                                      \
+    .nature = NATURE_TIMID,                                                         \
+    EV_SPREAD_SPA_SPE_HP,                                                           \
+    .moves = {MOVE_DISCHARGE, MOVE_EERIE_IMPULSE, MOVE_LIGHT_SCREEN, MOVE_SCREECH}, \
+    }
+
 [TRAINER_WATTSON_2] =
 {
     WATTSON_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 4,
+    LEADER_REMATCH(2),
     .party = (const struct TrainerMon[]) {
+        WATTSON_LANTURN(2),
         WATTSON_MAGNEZONE(2),
         WATTSON_MINUN(2),
         WATTSON_PLUSLE(2),
@@ -807,9 +828,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_WATTSON_3] =
 {
     WATTSON_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 5,
+    LEADER_REMATCH(3),
     .party = (const struct TrainerMon[]) {
         WATTSON_LANTURN(3),
         WATTSON_MAGNEZONE(3),
@@ -822,10 +841,9 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_WATTSON_4] =
 {
     WATTSON_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 5,
+    LEADER_REMATCH(4),
     .party = (const struct TrainerMon[]) {
+        WATTSON_ELECTRODE(4),
         WATTSON_LANTURN(4),
         WATTSON_MAGNEZONE(4),
         WATTSON_MINUN(4),
@@ -837,15 +855,9 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_WATTSON_5] =
 {
     WATTSON_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 6,
+    LEADER_REMATCH(5),
     .party = (const struct TrainerMon[]) {
-        {
-        REMATCH_MON(ELECTRODE, TIER3, 5),
-        .ability = ABILITY_STATIC,
-        .moves = {MOVE_DISCHARGE, MOVE_EERIE_IMPULSE, MOVE_LIGHT_SCREEN, MOVE_SCREECH},
-        },
+        WATTSON_ELECTRODE(5),
         WATTSON_LANTURN(5),
         WATTSON_MAGNEZONE(5),
         WATTSON_MINUN(5),
@@ -895,6 +907,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         .moves = {MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_RAPID_SPIN, MOVE_SMOKESCREEN},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_WHITE_HERB,
+        .ball = ITEM_POKE_BALL,
         }
     },
 },
@@ -908,6 +921,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .moves = {MOVE_OVERHEAT, MOVE_IRON_DEFENSE, MOVE_SHELL_SMASH, MOVE_SUNNY_DAY}, \
     .gender = TRAINER_MON_FEMALE,                                                  \
     .heldItem = ITEM_WHITE_HERB,                                                   \
+    .ball = ITEM_POKE_BALL,                                                        \
     }
 
 #define FLANNERY_CAMERUPT(rematch)                                            \
@@ -965,10 +979,9 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_FLANNERY_2] =
 {
     FLANNERY_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 4,
+    LEADER_REMATCH(2),
     .party = (const struct TrainerMon[]) {
+        FLANNERY_MAGCARGO(2),
         FLANNERY_CASTFORM(2),
         FLANNERY_BLAZIKEN(2),
         FLANNERY_CAMERUPT(2),
@@ -979,9 +992,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_FLANNERY_3] =
 {
     FLANNERY_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 5,
+    LEADER_REMATCH(3),
     .party = (const struct TrainerMon[]) {
         FLANNERY_MAGCARGO(3),
         FLANNERY_CASTFORM(3),
@@ -994,9 +1005,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_FLANNERY_4] =
 {
     FLANNERY_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 6,
+    LEADER_REMATCH(4),
     .party = (const struct TrainerMon[]) {
         FLANNERY_NINETALES(4),
         FLANNERY_MAGCARGO(4),
@@ -1010,9 +1019,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_FLANNERY_5] =
 {
     FLANNERY_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 6,
+    LEADER_REMATCH(5),
     .party = (const struct TrainerMon[]) {
         FLANNERY_NINETALES(5),
         FLANNERY_MAGCARGO(5),
@@ -1066,6 +1073,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         .moves = {MOVE_FACADE, MOVE_THROAT_CHOP, MOVE_SLACK_OFF, MOVE_FOCUS_ENERGY},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
+        .ball = ITEM_POKE_BALL,
         }
     },
 },
@@ -1079,6 +1087,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .moves = {MOVE_GIGA_IMPACT, MOVE_HAMMER_ARM, MOVE_THROAT_CHOP, MOVE_SUCKER_PUNCH}, \
     .gender = TRAINER_MON_MALE,                                                        \
     .heldItem = ITEM_SITRUS_BERRY,                                                     \
+    .ball = ITEM_POKE_BALL,                                                            \
     }
 
 #define NORMAN_SPINDA(rematch)                                                 \
@@ -1123,14 +1132,23 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .gender = TRAINER_MON_MALE,                                                           \
     }
 
+#define NORMAN_KECLEON(rematch)                                                \
+    {                                                                          \
+    REMATCH_MON(KECLEON, TIER3, rematch),                                      \
+    .ability = ABILITY_COLOR_CHANGE,                                           \
+    .nature = NATURE_ADAMANT,                                                  \
+    EV_SPREAD_ATK_SPD_HP,                                                      \
+    .moves = {MOVE_FACADE, MOVE_SHADOW_CLAW, MOVE_SUCKER_PUNCH, MOVE_DISABLE}, \
+    .gender = TRAINER_MON_MALE,                                                \
+    }
+
 [TRAINER_NORMAN_2] =
 {
     NORMAN_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 4,
+    LEADER_REMATCH(2),
     .party = (const struct TrainerMon[]) {
         NORMAN_LINOONE(2),
+        NORMAN_EXPLOUD(2),
         NORMAN_ZANGOOSE(2),
         NORMAN_SPINDA(2),
         NORMAN_SLAKING(2),
@@ -1140,9 +1158,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_NORMAN_3] =
 {
     NORMAN_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 5,
+    LEADER_REMATCH(3),
     .party = (const struct TrainerMon[]) {
         NORMAN_LINOONE(3),
         NORMAN_EXPLOUD(3),
@@ -1155,11 +1171,10 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_NORMAN_4] =
 {
     NORMAN_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 5,
+    LEADER_REMATCH(4),
     .party = (const struct TrainerMon[]) {
         NORMAN_LINOONE(4),
+        NORMAN_KECLEON(4),
         NORMAN_EXPLOUD(4),
         NORMAN_ZANGOOSE(4),
         NORMAN_SPINDA(4),
@@ -1170,16 +1185,10 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_NORMAN_5] =
 {
     NORMAN_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 6,
+    LEADER_REMATCH(5),
     .party = (const struct TrainerMon[]) {
         NORMAN_LINOONE(5),
-        {
-        REMATCH_MON(KECLEON, TIER3, 5),
-        .moves = {MOVE_FACADE, MOVE_SHADOW_CLAW, MOVE_SUCKER_PUNCH, MOVE_DISABLE},
-        .gender = TRAINER_MON_MALE,
-        },
+        NORMAN_KECLEON(5),
         NORMAN_EXPLOUD(5),
         NORMAN_ZANGOOSE(5),
         NORMAN_SPINDA(5),
@@ -1237,6 +1246,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         .moves = {MOVE_AERIAL_ACE, MOVE_DRAGON_BREATH, MOVE_COTTON_GUARD, MOVE_DRAGON_DANCE},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SITRUS_BERRY,
+        .ball = ITEM_POKE_BALL,
         }
     },
 },
@@ -1250,6 +1260,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .moves = {MOVE_AIR_SLASH, MOVE_DRAGON_PULSE, MOVE_MOONBLAST, MOVE_COTTON_GUARD}, \
     .gender = TRAINER_MON_FEMALE,                                                    \
     .heldItem = ITEM_SITRUS_BERRY,                                                   \
+    .ball = ITEM_POKE_BALL,                                                          \
     }
 
 #define WINONA_SWELLOW(rematch)                                                 \
@@ -1307,9 +1318,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_WINONA_2] =
 {
     WINONA_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 5,
+    LEADER_REMATCH(2),
     .party = (const struct TrainerMon[]) {
         WINONA_MASQUERAIN(2),
         WINONA_TROPIUS(2),
@@ -1322,11 +1331,8 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_WINONA_3] =
 {
     WINONA_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 6,
+    LEADER_REMATCH(3),
     .party = (const struct TrainerMon[]) {
-        WINONA_NINJASK(3),
         WINONA_MASQUERAIN(3),
         WINONA_TROPIUS(3),
         WINONA_PELIPPER(3),
@@ -1338,9 +1344,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_WINONA_4] =
 {
     WINONA_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 6,
+    LEADER_REMATCH(4),
     .party = (const struct TrainerMon[]) {
         WINONA_NINJASK(4),
         WINONA_MASQUERAIN(4),
@@ -1354,9 +1358,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_WINONA_5] =
 {
     WINONA_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 6,
+    LEADER_REMATCH(5),
     .party = (const struct TrainerMon[]) {
         WINONA_NINJASK(5),
         WINONA_MASQUERAIN(5),
@@ -1367,15 +1369,15 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     },
 },
 
-#define TATE_AND_LIZA_INFO                                   \
-    LEADER_INFO(TATE_AND_LIZA),                              \
-    .trainerName = _("Tate&Liza"),                           \
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE, \
-    .doubleBattle = TRUE
+#define TATE_AND_LIZA_INFO         \
+    LEADER_INFO(TATE_AND_LIZA),    \
+    .trainerName = _("Tate&Liza"), \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE
 
 [TRAINER_TATE_AND_LIZA_1] =
 {
     TATE_AND_LIZA_INFO,
+    .doubleBattle = TRUE,
     .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_HYPER_POTION},
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
@@ -1399,6 +1401,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         IVS(30),
         .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_POWER_GEM, MOVE_ICY_WIND},
         .heldItem = ITEM_SITRUS_BERRY,
+        .ball = ITEM_POKE_BALL,
         },
         {
         .lvl = 51,
@@ -1406,6 +1409,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         IVS(30),
         .moves = {MOVE_PSYCHIC, MOVE_ROCK_SLIDE, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN},
         .heldItem = ITEM_SITRUS_BERRY,
+        .ball = ITEM_POKE_BALL,
         }
     },
 },
@@ -1417,6 +1421,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     EV_SPREAD_ATK_DEF_HP,                                                              \
     .moves = {MOVE_ZEN_HEADBUTT, MOVE_ROCK_SLIDE, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN}, \
     .heldItem = ITEM_SITRUS_BERRY,                                                     \
+    .ball = ITEM_POKE_BALL,                                                            \
     }
 
 #define LIZA_LUNATONE(rematch)                                                 \
@@ -1426,6 +1431,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     EV_SPREAD_SPA_SPD_HP,                                                      \
     .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_ICY_WIND, MOVE_COSMIC_POWER}, \
     .heldItem = ITEM_SITRUS_BERRY,                                             \
+    .ball = ITEM_POKE_BALL,                                                    \
     }
 
 #define TATE_GRUMPIG(rematch)                                                      \
@@ -1468,8 +1474,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_TATE_AND_LIZA_2] =
 {
     TATE_AND_LIZA_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .partySize = 5,
+    LEADER_REMATCH(2),
     .party = (const struct TrainerMon[]) {
         TATE_CHIMECHO(2),
         LIZA_CLAYDOL(2),
@@ -1482,10 +1487,8 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_TATE_AND_LIZA_3] =
 {
     TATE_AND_LIZA_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .partySize = 6,
+    LEADER_REMATCH(3),
     .party = (const struct TrainerMon[]) {
-        LIZA_GARDEVOIR(3),
         TATE_CHIMECHO(3),
         LIZA_CLAYDOL(3),
         TATE_GRUMPIG(3),
@@ -1497,8 +1500,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_TATE_AND_LIZA_4] =
 {
     TATE_AND_LIZA_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .partySize = 6,
+    LEADER_REMATCH(4),
     .party = (const struct TrainerMon[]) {
         LIZA_GARDEVOIR(4),
         TATE_CHIMECHO(4),
@@ -1512,8 +1514,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_TATE_AND_LIZA_5] =
 {
     TATE_AND_LIZA_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .partySize = 6,
+    LEADER_REMATCH(5),
     .party = (const struct TrainerMon[]) {
         LIZA_GARDEVOIR(5),
         TATE_CHIMECHO(5),
@@ -1572,6 +1573,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         .moves = {MOVE_WATER_PULSE, MOVE_EARTHQUAKE, MOVE_AMNESIA, MOVE_DRAGON_DANCE},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
+        .ball = ITEM_POKE_BALL,
         }
     },
 },
@@ -1585,6 +1587,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .moves = {MOVE_AQUA_TAIL, MOVE_EARTHQUAKE, MOVE_ZEN_HEADBUTT, MOVE_DRAGON_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                       \
     .heldItem = ITEM_SITRUS_BERRY,                                                    \
+    .ball = ITEM_POKE_BALL,                                                           \
     }
 
 #define JUAN_LUVDISC(rematch)                                                             \
@@ -1643,9 +1646,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_JUAN_2] =
 {
     JUAN_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 5,
+    LEADER_REMATCH(2),
     .party = (const struct TrainerMon[]) {
         JUAN_CASTFORM(2),
         JUAN_HUNTAIL(2),
@@ -1658,11 +1659,8 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_JUAN_3] =
 {
     JUAN_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 6,
+    LEADER_REMATCH(3),
     .party = (const struct TrainerMon[]) {
-        JUAN_SWAMPERT(3),
         JUAN_CASTFORM(3),
         JUAN_HUNTAIL(3),
         JUAN_CRAWDAUNT(3),
@@ -1674,9 +1672,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_JUAN_4] =
 {
     JUAN_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 6,
+    LEADER_REMATCH(4),
     .party = (const struct TrainerMon[]) {
         JUAN_SWAMPERT(4),
         JUAN_CASTFORM(4),
@@ -1690,9 +1686,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [TRAINER_JUAN_5] =
 {
     JUAN_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
-    .doubleBattle = TRUE,
-    .partySize = 6,
+    LEADER_REMATCH(5),
     .party = (const struct TrainerMon[]) {
         JUAN_SWAMPERT(5),
         JUAN_CASTFORM(5),
@@ -1703,276 +1697,429 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     },
 },
 
-#define ELITE_FOUR_INFO(Trainer, MugshotColor)      \
-    .trainerClass = TRAINER_CLASS_ELITE_FOUR,       \
-    .trainerPic = TRAINER_PIC_ELITE_FOUR_##Trainer, \
-    .mugshotEnabled = TRUE,                         \
-    .mugshotColor = MUGSHOT_TYPE_##MugshotColor,    \
+#define ELITE_FOUR_INFO(Trainer, MugshotColor)                             \
+    .trainerClass = TRAINER_CLASS_ELITE_FOUR,                              \
+    .trainerPic = TRAINER_PIC_ELITE_FOUR_##Trainer,                        \
+    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE}, \
+    .mugshotEnabled = TRUE,                                                \
+    .mugshotColor = MUGSHOT_TYPE_##MugshotColor,                           \
     BOSS_AI_FLAGS
+
+#define SIDNEY_INFO                \
+    ELITE_FOUR_INFO(SIDNEY, DARK), \
+    .trainerName = _("Sidney"),    \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
+
+#define SIDNEY_ABSOL(Level)                                                           \
+    {                                                                                 \
+    .lvl = Level,                                                                     \
+    .species = SPECIES_ABSOL,                                                         \
+    .ability = ABILITY_SHARPNESS,                                                     \
+    .nature = NATURE_ADAMANT,                                                         \
+    EV_SPREAD_ATK_SPE_HP,                                                             \
+    PERFECT_IVS,                                                                      \
+    .moves = {MOVE_NIGHT_SLASH, MOVE_PSYCHO_CUT, MOVE_AERIAL_ACE, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                       \
+    .heldItem = Level < 85 ? ITEM_SITRUS_BERRY : ITEM_ABSOLITE,                       \
+    .ball = ITEM_POKE_BALL,                                                           \
+    }
+
+#define SIDNEY_SUPPORTING_MON(Level) \
+    .lvl = Level,                    \
+    PERFECT_IVS,                     \
+    .gender = TRAINER_MON_MALE,      \
+    .ball = ITEM_DUSK_BALL
+
+#define SIDNEY_CACTURNE(Level)                                                        \
+    {                                                                                 \
+    SIDNEY_SUPPORTING_MON(Level),                                                     \
+    .species = SPECIES_CACTURNE,                                                      \
+    .ability = ABILITY_WATER_ABSORB,                                                  \
+    .nature = NATURE_MODEST,                                                          \
+    EV_SPREAD_SPA_SPE_HP,                                                             \
+    .moves = {MOVE_DARK_PULSE, MOVE_ENERGY_BALL, MOVE_LEECH_SEED, MOVE_SPIKY_SHIELD}, \
+    }
+
+#define SIDNEY_CRAWDAUNT(Level)                                                 \
+    {                                                                           \
+    SIDNEY_SUPPORTING_MON(Level),                                               \
+    .species = SPECIES_CRAWDAUNT,                                               \
+    .ability = ABILITY_HYPER_CUTTER,                                            \
+    .nature = NATURE_ADAMANT,                                                   \
+    EV_SPREAD_ATK_SPE_HP,                                                       \
+    .moves = {MOVE_CRUNCH, MOVE_CRABHAMMER, MOVE_KNOCK_OFF, MOVE_SWORDS_DANCE}, \
+    }
+
+#define SIDNEY_SHIFTRY(Level)                                                  \
+    {                                                                          \
+    SIDNEY_SUPPORTING_MON(Level),                                              \
+    .species = SPECIES_SHIFTRY,                                                \
+    .ability = ABILITY_WIND_RIDER,                                             \
+    .nature = NATURE_ADAMANT,                                                  \
+    EV_SPREAD_ATK_SPE_HP,                                                      \
+    .moves = {MOVE_NIGHT_SLASH, MOVE_LEAF_BLADE, MOVE_FAKE_OUT, MOVE_ROLLOUT}, \
+    }
+
+#define SIDNEY_MIGHTYENA(Level)                                                 \
+    {                                                                           \
+    SIDNEY_SUPPORTING_MON(Level),                                               \
+    .species = SPECIES_MIGHTYENA,                                               \
+    .ability = ABILITY_INTIMIDATE,                                              \
+    .nature = NATURE_ADAMANT,                                                   \
+    EV_SPREAD_ATK_SPE_HP,                                                       \
+    .moves = {MOVE_CRUNCH, MOVE_PLAY_ROUGH, MOVE_FIRE_FANG, MOVE_THUNDER_FANG}, \
+    }
+
+#define SIDNEY_SHARPEDO(Level)                                                 \
+    {                                                                          \
+    SIDNEY_SUPPORTING_MON(Level),                                              \
+    .species = SPECIES_SHARPEDO,                                               \
+    .ability = ABILITY_ROUGH_SKIN,                                             \
+    .nature = NATURE_ADAMANT,                                                  \
+    EV_SPREAD_ATK_SPE_HP,                                                      \
+    .moves = {MOVE_CRUNCH, MOVE_LIQUIDATION, MOVE_POISON_FANG, MOVE_ICE_FANG}, \
+    }
 
 [TRAINER_SIDNEY] =
 {
-    ELITE_FOUR_INFO(SIDNEY, DARK),
-    .trainerName = _("Sidney"),
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
+    SIDNEY_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 60,
-        .species = SPECIES_MIGHTYENA,
-        .ability = ABILITY_INTIMIDATE,
-        .nature = NATURE_ADAMANT,
-        EV_SPREAD_ATK_SPE_HP,
-        IVS(30),
-        .moves = {MOVE_CRUNCH, MOVE_PLAY_ROUGH, MOVE_FIRE_FANG, MOVE_THUNDER_FANG},
-        .gender = TRAINER_MON_MALE,
-        .ball = ITEM_DUSK_BALL,
-        },
-        {
-        .lvl = 60,
-        .species = SPECIES_SHIFTRY,
-        .ability = ABILITY_WIND_RIDER,
-        .nature = NATURE_ADAMANT,
-        EV_SPREAD_ATK_SPE_HP,
-        IVS(30),
-        .moves = {MOVE_NIGHT_SLASH, MOVE_LEAF_BLADE, MOVE_FAKE_OUT, MOVE_ROLLOUT},
-        .gender = TRAINER_MON_MALE,
-        .ball = ITEM_DUSK_BALL,
-        },
-        {
-        .lvl = 61,
-        .species = SPECIES_CRAWDAUNT,
-        .ability = ABILITY_HYPER_CUTTER,
-        .nature = NATURE_ADAMANT,
-        EV_SPREAD_ATK_SPE_HP,
-        IVS(30),
-        .moves = {MOVE_CRUNCH, MOVE_CRABHAMMER, MOVE_KNOCK_OFF, MOVE_SWORDS_DANCE},
-        .gender = TRAINER_MON_MALE,
-        .ball = ITEM_DUSK_BALL,
-        },
-        {
-        .lvl = 61,
-        .species = SPECIES_CACTURNE,
-        .ability = ABILITY_WATER_ABSORB,
-        .nature = NATURE_MODEST,
-        EV_SPREAD_SPA_SPE_HP,
-        IVS(30),
-        .moves = {MOVE_DARK_PULSE, MOVE_ENERGY_BALL, MOVE_LEECH_SEED, MOVE_SPIKY_SHIELD},
-        .gender = TRAINER_MON_MALE,
-        .ball = ITEM_DUSK_BALL,
-        },
-        {
-        .lvl = 62,
-        .species = SPECIES_ABSOL,
-        .ability = ABILITY_SHARPNESS,
-        .nature = NATURE_ADAMANT,
-        EV_SPREAD_ATK_SPE_HP,
-        PERFECT_IVS,
-        .moves = {MOVE_NIGHT_SLASH, MOVE_PSYCHO_CUT, MOVE_AERIAL_ACE, MOVE_SWORDS_DANCE},
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_SITRUS_BERRY,
-        .ball = ITEM_POKE_BALL,
-        }
+        SIDNEY_MIGHTYENA(60),
+        SIDNEY_SHIFTRY(60),
+        SIDNEY_CRAWDAUNT(61),
+        SIDNEY_CACTURNE(61),
+        SIDNEY_ABSOL(62),
     },
 },
 
+[TRAINER_SIDNEY_REMATCH] =
+{
+    SIDNEY_INFO,
+    .partySize = 6,
+    .party = (const struct TrainerMon[]) {
+        SIDNEY_SHARPEDO(86),
+        SIDNEY_MIGHTYENA(86),
+        SIDNEY_SHIFTRY(86),
+        SIDNEY_CRAWDAUNT(88),
+        SIDNEY_CACTURNE(88),
+        SIDNEY_ABSOL(90),
+    },
+},
+
+#define PHOEBE_INFO                 \
+    ELITE_FOUR_INFO(PHOEBE, GHOST), \
+    .trainerName = _("Phoebe"),     \
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
+
+#define PHOEBE_DUSKNOIR(Level)                                                      \
+    {                                                                               \
+    .lvl = Level,                                                                   \
+    .species = SPECIES_DUSKNOIR,                                                    \
+    .ability = ABILITY_IRON_FIST,                                                   \
+    .nature = NATURE_ADAMANT,                                                       \
+    EV_SPREAD_ATK_SPD_HP,                                                           \
+    PERFECT_IVS,                                                                    \
+    .moves = {MOVE_SHADOW_PUNCH, MOVE_EARTHQUAKE, MOVE_FIRE_PUNCH, MOVE_ICE_PUNCH}, \
+    .gender = TRAINER_MON_FEMALE,                                                   \
+    .heldItem = ITEM_SITRUS_BERRY,                                                  \
+    .ball = ITEM_POKE_BALL,                                                         \
+    }
+
+#define PHOEBE_SUPPORTING_MON(Level) \
+    .lvl = Level,                    \
+    PERFECT_IVS,                     \
+    .ball = ITEM_DUSK_BALL
+
+#define PHOEBE_(Level)                     \
+    {                                      \
+    PHOEBE_SUPPORTING_MON(Level),          \
+    .species = SPECIES_,                   \
+    .ability = ABILITY_,                   \
+    .nature = NATURE_,                     \
+    EV_SPREAD_,                            \
+    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
+    .gender = TRAINER_MON_FEMALE,          \
+    .heldItem = ITEM_,                     \
+    }
+
 [TRAINER_PHOEBE] =
 {
-    ELITE_FOUR_INFO(PHOEBE, GHOST),
-    .trainerName = _("Phoebe"),
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
+    PHOEBE_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 61,
+        PHOEBE_SUPPORTING_MON(61),
         .species = SPECIES_DUSCLOPS,
         .ability = ABILITY_PRESSURE,
-        IVS(30),
         .moves = {MOVE_HEX, MOVE_CONFUSE_RAY, MOVE_CURSE, MOVE_WILL_O_WISP},
         .gender = TRAINER_MON_MALE,
-        .ball = ITEM_DUSK_BALL,
         },
         {
-        .lvl = 61,
+        PHOEBE_SUPPORTING_MON(61),
         .species = SPECIES_SHEDINJA,
         .ability = ABILITY_WONDER_GUARD,
         .nature = NATURE_ADAMANT,
         EV_SPREAD_ATK_SPE_HP,
-        IVS(30),
         .moves = {MOVE_SHADOW_CLAW, MOVE_LEECH_LIFE, MOVE_HEAL_BLOCK, MOVE_SPITE},
-        .ball = ITEM_DUSK_BALL,
         },
         {
-        .lvl = 62,
+        PHOEBE_SUPPORTING_MON(62),
         .species = SPECIES_SABLEYE,
         .ability = ABILITY_PRANKSTER,
-        IVS(30),
         .moves = {MOVE_SHADOW_CLAW, MOVE_FOUL_PLAY, MOVE_POWER_GEM, MOVE_FAKE_OUT},
         .gender = TRAINER_MON_FEMALE,
-        .ball = ITEM_DUSK_BALL,
         },
         {
-        .lvl = 62,
+        PHOEBE_SUPPORTING_MON(62),
         .species = SPECIES_BANETTE,
         .ability = ABILITY_CURSED_BODY,
         .nature = NATURE_ADAMANT,
         EV_SPREAD_ATK_SPE_HP,
-        IVS(30),
         .moves = {MOVE_SHADOW_CLAW, MOVE_BODY_SLAM, MOVE_SHADOW_SNEAK, MOVE_SWORDS_DANCE},
         .gender = TRAINER_MON_FEMALE,
-        .ball = ITEM_DUSK_BALL,
         },
-        {
-        .lvl = 63,
-        .species = SPECIES_DUSKNOIR,
-        .ability = ABILITY_IRON_FIST,
-        .nature = NATURE_ADAMANT,
-        EV_SPREAD_ATK_SPD_HP,
-        PERFECT_IVS,
-        .moves = {MOVE_SHADOW_PUNCH, MOVE_EARTHQUAKE, MOVE_FIRE_PUNCH, MOVE_ICE_PUNCH},
-        .gender = TRAINER_MON_FEMALE,
-        .heldItem = ITEM_SITRUS_BERRY,
-        .ball = ITEM_POKE_BALL,
-        }
+        PHOEBE_DUSKNOIR(63),
     },
 },
 
+[TRAINER_PHOEBE_REMATCH] =
+{
+    PHOEBE_INFO,
+    .partySize = 6,
+    .party = (const struct TrainerMon[]) {
+        PHOEBE_DUSKNOIR(86),
+        PHOEBE_DUSKNOIR(86),
+        PHOEBE_DUSKNOIR(86),
+        PHOEBE_DUSKNOIR(88),
+        PHOEBE_DUSKNOIR(88),
+        PHOEBE_DUSKNOIR(90),
+    },
+},
+
+#define GLACIA_INFO               \
+    ELITE_FOUR_INFO(GLACIA, ICE), \
+    .trainerName = _("Glacia"),   \
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
+
+#define GLACIA_WALREIN(Level)                                              \
+    {                                                                      \
+    .lvl = Level,                                                          \
+    .species = SPECIES_WALREIN,                                            \
+    .ability = ABILITY_THICK_FAT,                                          \
+    .nature = NATURE_MODEST,                                               \
+    EV_SPREAD_SPA_HP_SPE,                                                  \
+    PERFECT_IVS,                                                           \
+    .moves = {MOVE_BLIZZARD, MOVE_SURF, MOVE_SIGNAL_BEAM, MOVE_SNOWSCAPE}, \
+    .gender = TRAINER_MON_FEMALE,                                          \
+    .heldItem = ITEM_SITRUS_BERRY,                                         \
+    .ball = ITEM_POKE_BALL,                                                \
+    }
+
+#define GLACIA_SUPPORTING_MON(Level) \
+    .lvl = Level,                    \
+    PERFECT_IVS,                     \
+    .ball = ITEM_PREMIER_BALL
+
+#define GLACIA_(Level)                     \
+    {                                      \
+    GLACIA_SUPPORTING_MON(Level),          \
+    .species = SPECIES_,                   \
+    .ability = ABILITY_,                   \
+    .nature = NATURE_,                     \
+    EV_SPREAD_,                            \
+    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
+    .gender = TRAINER_MON_FEMALE,          \
+    .heldItem = ITEM_,                     \
+    }
+
 [TRAINER_GLACIA] =
 {
-    ELITE_FOUR_INFO(GLACIA, ICE),
-    .trainerName = _("Glacia"),
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
+    GLACIA_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 62,
+        GLACIA_SUPPORTING_MON(62),
         .species = SPECIES_SEALEO,
         .ability = ABILITY_ICE_BODY,
-        IVS(30),
         .moves = {MOVE_ICE_BALL, MOVE_ROLLOUT, MOVE_DEFENSE_CURL, MOVE_SNOWSCAPE},
         .gender = TRAINER_MON_MALE,
-        .ball = ITEM_PREMIER_BALL,
         },
         {
-        .lvl = 62,
+        GLACIA_SUPPORTING_MON(62),
         .species = SPECIES_CASTFORM,
         .ability = ABILITY_FORECAST,
         EV_SPREAD_SPA_SPE_HP,
-        IVS(30),
         .moves = {MOVE_BLIZZARD, MOVE_WEATHER_BALL, MOVE_HYDRO_PUMP, MOVE_SNOWSCAPE},
         .gender = TRAINER_MON_FEMALE,
-        .ball = ITEM_PREMIER_BALL,
         },
         {
-        .lvl = 63,
+        GLACIA_SUPPORTING_MON(63),
         .species = SPECIES_GLALIE,
         .ability = ABILITY_ICE_BODY,
-        IVS(30),
         .moves = {MOVE_FREEZE_DRY, MOVE_ICE_SHARD, MOVE_PROTECT, MOVE_SNOWSCAPE},
         .gender = TRAINER_MON_MALE,
-        .ball = ITEM_PREMIER_BALL,
         },
         {
-        .lvl = 63,
+        GLACIA_SUPPORTING_MON(63),
         .species = SPECIES_FROSLASS,
         .ability = ABILITY_SNOW_CLOAK,
         .nature = NATURE_TIMID,
         EV_SPREAD_SPA_SPE_HP,
-        IVS(30),
         .moves = {MOVE_BLIZZARD, MOVE_SHADOW_BALL, MOVE_DRAINING_KISS, MOVE_SNOWSCAPE},
         .gender = TRAINER_MON_FEMALE,
-        .ball = ITEM_PREMIER_BALL,
         },
-        {
-        .lvl = 64,
-        .species = SPECIES_WALREIN,
-        .ability = ABILITY_THICK_FAT,
-        PERFECT_IVS,
-        .moves = {MOVE_BLIZZARD, MOVE_SURF, MOVE_SIGNAL_BEAM, MOVE_SNOWSCAPE},
-        .gender = TRAINER_MON_FEMALE,
-        .heldItem = ITEM_SITRUS_BERRY,
-        .ball = ITEM_POKE_BALL,
-        }
+        GLACIA_WALREIN(64),
     },
 },
 
+[TRAINER_GLACIA_REMATCH] =
+{
+    GLACIA_INFO,
+    .partySize = 6,
+    .party = (const struct TrainerMon[]) {
+        GLACIA_WALREIN(86),
+        GLACIA_WALREIN(86),
+        GLACIA_WALREIN(86),
+        GLACIA_WALREIN(88),
+        GLACIA_WALREIN(88),
+        GLACIA_WALREIN(90),
+    },
+},
+
+#define DRAKE_INFO                  \
+    ELITE_FOUR_INFO(DRAKE, DRAGON), \
+    .trainerName = _("Drake"),      \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
+
+#define DRAKE_SALAMENCE(Level)                                                           \
+    {                                                                                    \
+    .lvl = Level,                                                                        \
+    .species = SPECIES_SALAMENCE,                                                        \
+    .ability = ABILITY_INTIMIDATE,                                                       \
+    .nature = NATURE_ADAMANT,                                                            \
+    EV_SPREAD_ATK_SPE_HP,                                                                \
+    PERFECT_IVS,                                                                         \
+    .moves = {MOVE_DRAGON_CLAW, MOVE_DUAL_WINGBEAT, MOVE_ROCK_SLIDE, MOVE_DRAGON_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                          \
+    .heldItem = ITEM_SALAMENCITE,                                                        \
+    .ball = ITEM_POKE_BALL,                                                              \
+    }
+
+#define DRAKE_SUPPORTING_MON(Level) \
+    .lvl = Level,                   \
+    PERFECT_IVS,                    \
+    .ball = ITEM_HEAVY_BALL
+
+#define DRAKE_(Level)                      \
+    {                                      \
+    DRAKE_SUPPORTING_MON(Level),           \
+    .species = SPECIES_,                   \
+    .ability = ABILITY_,                   \
+    .nature = NATURE_,                     \
+    EV_SPREAD_,                            \
+    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
+    .gender = TRAINER_MON_MALE,            \
+    .heldItem = ITEM_,                     \
+    }
+
 [TRAINER_DRAKE] =
 {
-    ELITE_FOUR_INFO(DRAKE, DRAGON),
-    .trainerName = _("Drake"),
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
+    DRAKE_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 63,
+        DRAKE_SUPPORTING_MON(63),
         .species = SPECIES_SHELGON,
         .ability = ABILITY_ROCK_HEAD,
-        IVS(30),
         .moves = {MOVE_DRAGON_CLAW, MOVE_ZEN_HEADBUTT, MOVE_DOUBLE_EDGE, MOVE_PROTECT},
         .gender = TRAINER_MON_FEMALE,
-        .ball = ITEM_HEAVY_BALL,
         },
         {
-        .lvl = 63,
+        DRAKE_SUPPORTING_MON(63),
         .species = SPECIES_KINGDRA,
         .ability = ABILITY_SNIPER,
         .nature = NATURE_MODEST,
         EV_SPREAD_SPA_SPE_HP,
-        IVS(30),
         .moves = {MOVE_DRAGON_PULSE, MOVE_SURF, MOVE_SMOKESCREEN, MOVE_YAWN},
         .gender = TRAINER_MON_MALE,
-        .ball = ITEM_HEAVY_BALL,
         },
         {
-        .lvl = 64,
+        DRAKE_SUPPORTING_MON(64),
         .species = SPECIES_ALTARIA,
         .ability = ABILITY_FLUFFY,
-        IVS(30),
         .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
         .gender = TRAINER_MON_MALE,
-        .ball = ITEM_HEAVY_BALL,
         },
         {
-        .lvl = 64,
+        DRAKE_SUPPORTING_MON(64),
         .species = SPECIES_FLYGON,
         .ability = ABILITY_LEVITATE,
         .nature = NATURE_ADAMANT,
         EV_SPREAD_ATK_SPE_HP,
-        IVS(30),
         .moves = {MOVE_DRAGON_CLAW, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_DRAGON_DANCE},
         .gender = TRAINER_MON_MALE,
-        .ball = ITEM_HEAVY_BALL,
         },
-        {
-        .lvl = 66,
-        .species = SPECIES_SALAMENCE,
-        .ability = ABILITY_INTIMIDATE,
-        .nature = NATURE_ADAMANT,
-        EV_SPREAD_ATK_SPE_HP,
-        PERFECT_IVS,
-        .moves = {MOVE_DRAGON_CLAW, MOVE_DUAL_WINGBEAT, MOVE_ROCK_SLIDE, MOVE_DRAGON_DANCE},
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_SALAMENCITE,
-        .ball = ITEM_POKE_BALL,
-        }
+        DRAKE_SALAMENCE(66),
     },
 },
 
+[TRAINER_DRAKE_REMATCH] =
+{
+    DRAKE_INFO,
+    .partySize = 6,
+    .party = (const struct TrainerMon[]) {
+        DRAKE_SALAMENCE(86),
+        DRAKE_SALAMENCE(86),
+        DRAKE_SALAMENCE(86),
+        DRAKE_SALAMENCE(88),
+        DRAKE_SALAMENCE(88),
+        DRAKE_SALAMENCE(90),
+    },
+},
+
+#define WALLACE_INFO                                                                       \
+    .trainerName = _("Wallace"),                                                           \
+    .trainerClass = TRAINER_CLASS_CHAMPION,                                                \
+    .trainerPic = TRAINER_PIC_CHAMPION_WALLACE,                                            \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,                                 \
+    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE}, \
+    .mugshotEnabled = TRUE,                                                                \
+    .mugshotColor = MUGSHOT_TYPE_WATER,                                                    \
+    BOSS_AI_FLAGS,                                                                         \
+    .partySize = 6
+
+#define WALLACE_MILOTIC(Level)                                          \
+    {                                                                   \
+    .lvl = Level,                                                       \
+    .species = SPECIES_MILOTIC,                                         \
+    .ability = ABILITY_MARVEL_SCALE,                                    \
+    .nature = NATURE_MODEST,                                            \
+    EV_SPREAD_SPA_SPD_SPE,                                              \
+    PERFECT_IVS,                                                        \
+    .moves = {MOVE_HYDRO_PUMP, MOVE_ICE_BEAM, MOVE_COIL, MOVE_RECOVER}, \
+    .gender = TRAINER_MON_FEMALE,                                       \
+    .heldItem = ITEM_SITRUS_BERRY,                                      \
+    .ball = ITEM_POKE_BALL,                                             \
+    }
+
+#define WALLACE_(Level)                    \
+    {                                      \
+    .lvl = Level,                          \
+    .species = SPECIES_,                   \
+    .ability = ABILITY_,                   \
+    .nature = NATURE_,                     \
+    EV_SPREAD_,                            \
+    IVS(),                                 \
+    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
+    .gender = TRAINER_MON_MALE,            \
+    .heldItem = ITEM_,                     \
+    .ball = ITEM__BALL,                    \
+    }
+
 [TRAINER_WALLACE] =
 {
-    .trainerName = _("Wallace"),
-    .trainerClass = TRAINER_CLASS_CHAMPION,
-    .trainerPic = TRAINER_PIC_CHAMPION_WALLACE,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
-    .mugshotEnabled = TRUE,
-    .mugshotColor = MUGSHOT_TYPE_WATER,
-    BOSS_AI_FLAGS,
-    .partySize = 6,
+    WALLACE_INFO,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 66,
@@ -2033,18 +2180,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         .heldItem = ITEM_LEFTOVERS,
         .ball = ITEM_DIVE_BALL,
         },
-        {
-        .lvl = 69,
-        .species = SPECIES_MILOTIC,
-        .ability = ABILITY_MARVEL_SCALE,
-        .nature = NATURE_MODEST,
-        EV_SPREAD_SPA_SPD_SPE,
-        PERFECT_IVS,
-        .moves = {MOVE_HYDRO_PUMP, MOVE_ICE_BEAM, MOVE_COIL, MOVE_RECOVER},
-        .gender = TRAINER_MON_FEMALE,
-        .heldItem = ITEM_SITRUS_BERRY,
-        .ball = ITEM_POKE_BALL,
-        }
+        WALLACE_MILOTIC(69),
     },
 },
 
@@ -2646,6 +2782,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .nature = NATURE_MODEST,                                  \
     PERFECT_IVS,                                              \
     .gender = TRAINER_MON_MALE,                               \
+    .ball = ITEM_POKE_BALL,                                   \
     .nickname = COMPOUND_STRING("Humphrey")
 
 #define MAXIE_BALTOY(Level)                                   \
@@ -15060,6 +15197,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
         .moves = {MOVE_LIQUIDATION, MOVE_CRUNCH, MOVE_ICE_FANG, MOVE_POISON_FANG},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SHARPEDONITE,
+        .ball = ITEM_POKE_BALL,
         .nickname = COMPOUND_STRING("Finneas"),
         }
     },
@@ -17128,8 +17266,3 @@ UNUSED_TRAINER(1),
 UNUSED_TRAINER(2),
 UNUSED_TRAINER(3),
 UNUSED_TRAINER(4),
-UNUSED_TRAINER(5),
-UNUSED_TRAINER(6),
-UNUSED_TRAINER(7),
-UNUSED_TRAINER(8),
-UNUSED_TRAINER(9),

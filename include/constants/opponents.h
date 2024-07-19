@@ -82,10 +82,15 @@
 #define TRAINER_JUAN_4                       75
 #define TRAINER_JUAN_5                       76
 #define TRAINER_SIDNEY                       77
+#define TRAINER_SIDNEY_REMATCH              855
 #define TRAINER_PHOEBE                       78
+#define TRAINER_PHOEBE_REMATCH              856
 #define TRAINER_GLACIA                       79
+#define TRAINER_GLACIA_REMATCH              857
 #define TRAINER_DRAKE                        80
+#define TRAINER_DRAKE_REMATCH               858
 #define TRAINER_WALLACE                      81
+#define TRAINER_WALLACE_REMATCH             859
 #define TRAINER_STEVEN                       82
 #define TRAINER_GABBY_AND_TY_1               83
 #define TRAINER_GABBY_AND_TY_2               84
@@ -936,11 +941,6 @@
 #define TRAINER_UNUSED_2                    850
 #define TRAINER_UNUSED_3                    851
 #define TRAINER_UNUSED_4                    852
-#define TRAINER_UNUSED_5                    855
-#define TRAINER_UNUSED_6                    856
-#define TRAINER_UNUSED_7                    857
-#define TRAINER_UNUSED_8                    858
-#define TRAINER_UNUSED_9                    859
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled

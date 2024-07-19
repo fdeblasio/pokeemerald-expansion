@@ -70,6 +70,9 @@ upcoming
 - Stop daycare from deleting moves
 - Battle Archie/Courtney at Meteor Falls?
 - Edit Winona's text to change Bird to Flying?
+- Clear up trainer spots by having just one set of gym leader rematches?
+    - Late-game trainers like Nicolas or John and Jay too
+    - Even just reducing to two or three rematches would save space
 - Edit contests?/Contests overhaul
 - Check that Waterfall replacement is good (getting item properly, etc.)
 - Just make new tutors in towns or Battle Frontier
@@ -148,7 +151,9 @@ upcoming
 - Readjust wild/trainer levels so that parties aren't overpowered?
 - Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)
 - Edit Winona's text to change Bird to Flying?
-- Elite Four rematches (wouldn't need to use Match Call, could probably do if statement in scripts.inc)
+- Clear up trainer spots by having just one set of gym leader rematches?
+    - Late-game trainers like Nicolas or John and Jay too
+    - Even just reducing to two or three rematches would save space
 - 6th rematches for trainers post-Elite Four? (Might not work due to running out of trainer space)
 - Update Elite Four palettes
     - battle_terrain/stadium/palette3-7.pal to better match ypes

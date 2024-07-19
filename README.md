@@ -421,16 +421,16 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Regirock/Regice/Registeel|40                    |55|
 |Juan                     |41, 41, 43, 43, 46    |55, 55, 56, 56, 58|
 |Rayquaza                 |70                    |60|
-|Wally                    |41, 43, 44, 44, 45    |46, 46, 47, 47, 49|
-|Sidney                   |46, 46, 48, 48, 49    |50, 50, 51, 51, 52|
-|Phoebe                   |48, 49, 49, 50, 51    |51, 51, 52, 52, 53|
-|Glacia                   |50, 50, 52, 52, 53    |52, 52, 53, 53, 54|
-|Drake                    |52, 53, 53, 54, 55    |53, 53, 54, 54, 56|
-|Wallace                  |55, 56, 56, 56, 57, 58|56, 56, 56, 57, 57, 59|
+|Wally Victory Road       |41, 43, 44, 44, 45    |56, 56, 57, 57, 59|
+|Sidney                   |46, 46, 48, 48, 49    |60, 60, 61, 61, 62|
+|Phoebe                   |48, 49, 49, 50, 51    |61, 61, 62, 62, 63|
+|Glacia                   |50, 50, 52, 52, 53    |62, 62, 63, 63, 64|
+|Drake                    |52, 53, 53, 54, 55    |63, 63, 64, 64, 66|
+|Wallace                  |55, 56, 56, 56, 57, 58|66, 66, 66, 67, 67, 69|
 |Groudon/Kyogre           |70||
-|Latios/Latias            |40                    |60|
-|Mew                      |N/A                   |60|
-|Deoxys                   |N/A                   |60|
+|Latios/Latias            |40                    |70|
+|Mew                      |N/A                   |70|
+|Deoxys                   |N/A                   |70|
 |Lugia/Ho-Oh              |N/A                   |70|
 |Steven                   |75, 76, 76, 76, 77, 78|77, 77, 78, 78, 79, 80|
 
@@ -1438,7 +1438,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Hidden Ability: Rattled->Strong Jaw
 
 - Mightyena:
-    - Atk: 90->110
+    - Atk: 90->100
     - Speed: 70->80
     - Hidden Ability: Moxie->Strong Jaw
 

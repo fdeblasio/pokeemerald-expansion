@@ -191,37 +191,31 @@ static void DoTVShowLilycoveContestLady(void);
 static const struct {
     u16 species;
     u16 moves[MAX_MON_MOVES];
-    u8 level;
     u8 location;
 } sPokeOutbreakSpeciesList[] = {
     {
         .species = SPECIES_TOGEPI,
         .moves = {MOVE_MYSTICAL_FIRE, MOVE_PSYSHOCK, MOVE_EXTRASENSORY, MOVE_BATON_PASS},
-        .level = 60,
         .location = MAP_NUM(ROUTE102)
     },
     {
         .species = SPECIES_ELEKID,
         .moves = {MOVE_CROSS_CHOP, MOVE_THUNDERBOLT, MOVE_FIRE_PUNCH, MOVE_ELECTRIC_TERRAIN},
-        .level = 60,
         .location = MAP_NUM(ROUTE110),
     },
     {
         .species = SPECIES_MAGBY,
         .moves = {MOVE_MACH_PUNCH, MOVE_FLAMETHROWER, MOVE_THUNDER_PUNCH, MOVE_SUNNY_DAY},
-        .level = 60,
         .location = MAP_NUM(ROUTE113),
     },
     {
         .species = SPECIES_SANDILE,
         .moves = {MOVE_AQUA_TAIL, MOVE_THUNDER_FANG, MOVE_FIRE_FANG, MOVE_SPITE},
-        .level = 60,
         .location = MAP_NUM(ROUTE111),
     },
     {
         .species = SPECIES_TANGELA,
         .moves = {MOVE_NATURE_POWER, MOVE_CONFUSION, MOVE_LEECH_SEED, MOVE_AMNESIA},
-        .level = 60,
         .location = MAP_NUM(ROUTE123),
     }
 };
@@ -1639,7 +1633,7 @@ static void TryStartRandomMassOutbreak(void)
                 show = &gSaveBlock1Ptr->tvShows[sCurTVShowSlot];
                 show->massOutbreak.kind = TVSHOW_MASS_OUTBREAK;
                 show->massOutbreak.active = TRUE;
-                show->massOutbreak.level = sPokeOutbreakSpeciesList[outbreakIdx].level;
+                show->massOutbreak.level = 70;
                 show->massOutbreak.unused1 = 0;
                 show->massOutbreak.unused3 = 0;
                 show->massOutbreak.species = sPokeOutbreakSpeciesList[outbreakIdx].species;

@@ -94,7 +94,8 @@ upcoming
     - Vanilla code
     - Rename tutor flags since they're now infinite
 - Organize changes better
-- ENDGAME_LEVEL is set in wild_encounter but is still used for SS Tidal trainers (trainers.h), mass outbreaks (tv.c), and presumably Sudowoodo
+- ENDGAME_LEVEL is set in wild_encounter but is still used for Trick House 8, SS Tidal trainers, and Gym rematches (trainers.h), mass outbreaks (tv.c), Jirachi, Johto starters, and Bonsly (scripts.inc)
+    - They all probably use species.h but a level number feels out of place there
 
 ### Pokémon
 - Eventually remove RSE and/or BDSP teachable moves?
@@ -102,7 +103,6 @@ upcoming
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?
 - Make Outbreak Pokémon somehow obtainable in endgame?
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
-- Set Deoxys to normal form if not already
 - Remove Safari Zone?
     - Move Solar Beam to Lilycove Department Store
     - Pichu: New Mauville
@@ -196,6 +196,7 @@ upcoming
         - Close Combat?
 - Make Fly usuable after 2nd badge? Or maybe even aftering delivering goods in Slateport?
 - Fly to routes:
+    - Route 103: Altering Cave
     - Route 110: Trick House or New Mauville
     - Route 121: Safari Zone (if not removed)
     - Route 128: Where Steven flies to?
@@ -210,7 +211,7 @@ upcoming
     - Latias/Latios?
     - Kyogre/Groudon?
     - Poochyena chasing Birch?
-    - Sudowoodo?
+    - Bonsly?
     - Mew?
     - Deoxys
     - Lugia

@@ -7479,6 +7479,7 @@ static const u16 sSeakingTeachableLearnset[] = {
     MOVE_HYPER_BEAM,
     MOVE_ICE_BEAM,
     MOVE_ICY_WIND,
+    MOVE_LIQUIDATION,
     MOVE_KNOCK_OFF,
     MOVE_POISON_JAB,
     MOVE_PROTECT,

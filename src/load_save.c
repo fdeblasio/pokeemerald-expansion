@@ -268,7 +268,7 @@ void LoadPlayerBag(void)
     for (i = 0; i < BAG_POKEBALLS_COUNT; i++)
         gLoadedSaveData.pokeBalls[i] = gSaveBlock1Ptr->bagPocket_PokeBalls[i];
 
-    // load player TMs and HMs.
+    // load player TMs.
     for (i = 0; i < BAG_TM_COUNT; i++)
         gLoadedSaveData.TMs[i] = gSaveBlock1Ptr->bagPocket_TM[i];
 
@@ -300,7 +300,7 @@ void SavePlayerBag(void)
     for (i = 0; i < BAG_POKEBALLS_COUNT; i++)
         gSaveBlock1Ptr->bagPocket_PokeBalls[i] = gLoadedSaveData.pokeBalls[i];
 
-    // save player TMs and HMs.
+    // save player TMsHMs.
     for (i = 0; i < BAG_TM_COUNT; i++)
         gSaveBlock1Ptr->bagPocket_TM[i] = gLoadedSaveData.TMs[i];
 

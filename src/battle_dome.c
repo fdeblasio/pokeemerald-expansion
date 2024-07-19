@@ -3980,7 +3980,7 @@ static bool32 IsDomePopularMove(u32 move)
     }
     if (i == NUM_TECHNICAL_MACHINES + NUM_HIDDEN_MACHINES)
         return FALSE;
-    // Filter in TMs/HMs
+    // Filter in TMs
     if (gMovesInfo[move].power >= 90)
         return TRUE;
 

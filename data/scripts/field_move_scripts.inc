@@ -299,13 +299,11 @@ Text_StrengthActivated:
 
 EventScript_UseWaterfall::
 	lockall
-	checkpartymove MOVE_WATERFALL
-	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantWaterfall
-	bufferpartymonnick STR_VAR_1, VAR_RESULT
-	setfieldeffectargument 0, VAR_RESULT
+	checkitem ITEM_FAME_CHECKER
+	goto_if_eq VAR_RESULT, FALSE, EventScript_CantWaterfall
 	msgbox Text_WantToWaterfall, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_EndWaterfall
-	msgbox Text_MonUsedWaterfall, MSGBOX_DEFAULT
+	msgbox Text_ScaledWaterfall, MSGBOX_DEFAULT
 	dofieldeffect FLDEFF_USE_WATERFALL
 	goto EventScript_EndWaterfall
 
@@ -325,10 +323,10 @@ Text_CantWaterfall:
 
 Text_WantToWaterfall:
 	.string "It's a large waterfall.\n"
-	.string "Would you like to use Waterfall?$"
+	.string "Would you like to scale it?$"
 
-Text_MonUsedWaterfall:
-	.string "{STR_VAR_1} used Waterfall.$"
+Text_ScaledWaterfall:
+	.string "You scaled the waterfall.$"
 
 EventScript_UseDive::
 	lockall

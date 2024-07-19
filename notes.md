@@ -70,7 +70,7 @@ upcoming
 - Battle Archie/Courtney at Meteor Falls?
 - Edit Winona's text to change Bird to Flying?
 - Edit contests?/Contests overhaul
-- Replace Waterfall with an item, similar to Surf/Dive
+- Check that Waterfall replacement is good (getting item properly, etc.)
 - Just make new tutors in towns or Battle Frontier
 - TMs/Tutors
     - Hyper Voice tutor->TM (or earlier Tutor)?
@@ -185,7 +185,6 @@ upcoming
     - Poison Fang: 60->65
 
 ### Field Moves
-- Replace Waterfall with an item, similar to Surf/Dive
 - Edit moves that work in field
     - Maybe edit so instead of "if has move" to "if can learn move"
         - Might not be simple since it's .inc and not C

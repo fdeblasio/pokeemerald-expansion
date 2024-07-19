@@ -1132,7 +1132,7 @@ static bool8 DisplayPartyPokemonDataForMoveTutorOrEvolutionItem(u8 slot)
         {
         default:
             return FALSE;
-        case 1: // TM/HM
+        case 1: // TM
             DisplayPartyPokemonDataToTeachMove(slot, ItemIdToBattleMoveId(item));
             break;
         case 2: // Evolution stone

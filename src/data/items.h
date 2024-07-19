@@ -9828,7 +9828,7 @@ const struct Item gItemsInfo[] =
         ITEM_ICON(EnigmaBerry)
     },
 
-// TMs/HMs. They don't have a set flingPower, as that's handled by GetFlingPowerFromItemId.
+// TMs. They don't have a set flingPower, as that's handled by GetFlingPowerFromItemId.
 
     [ITEM_TM_FOCUS_PUNCH] =
     {
@@ -11713,8 +11713,7 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = COMPOUND_STRING(
             "A convenient case\n"
-            "that holds TMs and\n"
-            "HMs."),
+            "that holds TMs"),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,

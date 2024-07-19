@@ -1699,12 +1699,11 @@ SootopolisCity_Text_ThankYouForHelpAcceptThis:
 	.string "Please accept it.$"
 
 SootopolisCity_Text_ExplainWaterfallGoToGym:
-	.string "That Hidden Machine contains\n"
+	.string "That Technical Machine contains\n"
 	.string "Waterfall.\p"
-	.string "If you have the Rain Badge, a Pokémon\n"
-	.string "that has learned that HM move can\l"
-	.string "force its way up waterfalls.\p"
-	.string "And where does one get the Rain Badge?\n"
+	.string "If you have the Fall Scaler, you can\n"
+	.string "force your way up waterfalls.\p"
+	.string "And where does one get the Fall Scaler?\n"
 	.string "You know, don't you?\p"
 	.string "That's right! You have to beat\n"
 	.string "the Sootopolis Gym Leader.\p"

@@ -107,8 +107,6 @@ static bool8 EscalatorWarpIn_End(struct Task *);
 
 static void Task_UseWaterfall(u8);
 static bool8 WaterfallFieldEffect_Init(struct Task *, struct ObjectEvent *);
-static bool8 WaterfallFieldEffect_ShowMon(struct Task *, struct ObjectEvent *);
-static bool8 WaterfallFieldEffect_WaitForShowMon(struct Task *, struct ObjectEvent *);
 static bool8 WaterfallFieldEffect_RideUp(struct Task *, struct ObjectEvent *);
 static bool8 WaterfallFieldEffect_ContinueRideOrEnd(struct Task *, struct ObjectEvent *);
 
@@ -642,8 +640,6 @@ static bool8 (*const sEscalatorWarpInFieldEffectFuncs[])(struct Task *) =
 static bool8 (*const sWaterfallFieldEffectFuncs[])(struct Task *, struct ObjectEvent *) =
 {
     WaterfallFieldEffect_Init,
-    WaterfallFieldEffect_ShowMon,
-    WaterfallFieldEffect_WaitForShowMon,
     WaterfallFieldEffect_RideUp,
     WaterfallFieldEffect_ContinueRideOrEnd,
 };
@@ -1855,29 +1851,6 @@ static bool8 WaterfallFieldEffect_Init(struct Task *task, struct ObjectEvent *ob
     return FALSE;
 }
 
-static bool8 WaterfallFieldEffect_ShowMon(struct Task *task, struct ObjectEvent *objectEvent)
-{
-    LockPlayerFieldControls();
-    if (!ObjectEventIsMovementOverridden(objectEvent))
-    {
-        ObjectEventClearHeldMovementIfFinished(objectEvent);
-        gFieldEffectArguments[0] = task->tMonId;
-        FieldEffectStart(FLDEFF_FIELD_MOVE_SHOW_MON_INIT);
-        task->tState++;
-    }
-    return FALSE;
-}
-
-static bool8 WaterfallFieldEffect_WaitForShowMon(struct Task *task, struct ObjectEvent *objectEvent)
-{
-    if (FieldEffectActiveListContains(FLDEFF_FIELD_MOVE_SHOW_MON))
-    {
-        return FALSE;
-    }
-    task->tState++;
-    return TRUE;
-}
-
 static bool8 WaterfallFieldEffect_RideUp(struct Task *task, struct ObjectEvent *objectEvent)
 {
     ObjectEventSetHeldMovement(objectEvent, GetWalkSlowMovementAction(DIR_NORTH));
@@ -1893,7 +1866,7 @@ static bool8 WaterfallFieldEffect_ContinueRideOrEnd(struct Task *task, struct Ob
     if (MetatileBehavior_IsWaterfall(objectEvent->currentMetatileBehavior))
     {
         // Still ascending waterfall, back to WaterfallFieldEffect_RideUp
-        task->tState = 3;
+        task->tState = 1;
         return TRUE;
     }
 

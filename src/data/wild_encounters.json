@@ -5886,6 +5886,51 @@
         {
           "map": "MAP_EVER_GRANDE_CITY",
           "base_label": "gEverGrandeCity",
+          "land_mons": {
+            "encounter_rate": 50,
+            "mons": [
+              {
+                "range": "RANGE_EVER_GRANDE_CITY_GRIND",
+                "species": "SLAKING"
+              },
+              {
+                "range": "RANGE_EVER_GRANDE_CITY_GRIND",
+                "species": "SLAKING"
+              },
+              {
+                "range": "RANGE_EVER_GRANDE_CITY_GRIND",
+                "species": "SLAKING"
+              },
+              {
+                "range": "RANGE_EVER_GRANDE_CITY_GRIND",
+                "species": "SLAKING"
+              },
+              {
+                "range": "RANGE_EVER_GRANDE_CITY_GRIND",
+                "species": "SLAKING"
+              },
+              {
+                "range": "RANGE_EVER_GRANDE_CITY_GRIND",
+                "species": "SLAKING"
+              },
+              {
+                "range": "RANGE_EVER_GRANDE_CITY_GRIND",
+                "species": "SLAKING"
+              },
+              {
+                "range": "RANGE_EVER_GRANDE_CITY_GRIND",
+                "species": "SLAKING"
+              },
+              {
+                "range": "RANGE_EVER_GRANDE_CITY_GRIND",
+                "species": "SLAKING"
+              },
+              {
+                "range": "RANGE_EVER_GRANDE_CITY_GRIND",
+                "species": "SLAKING"
+              }
+            ]
+          },
           "water_mons": {
             "encounter_rate": 1,
             "mons": [

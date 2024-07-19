@@ -250,6 +250,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - All moves automatically have their max PP amount
 - The Good Rod is now obtained on the left side of Route 118 instead of the right
 - Much easier to make good Pokéblocks
+- Added area to grind right outside Elite Four
 - TM moves not in the game are learnable as egg moves
 - Sacred Ash now works in battles although it only revives one Pokémon
 - Soul Dew uses its Gen 6 effect
@@ -1185,6 +1186,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Seaking:
     - Learns Aqua Jet and Drill Run by level up
+    - Learns Liquidation by TM
 
 - Pinsir:
     - Catch rate: 45->90
@@ -1495,7 +1497,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Drain Punch by level up
 
 - Slaking:
-    - Learns Giga Impact by level up
+    - Learns Focus Punch and Giga Impact by level up
 
 - Nincada:
     - Learns Mud Slap at level 1 and now learns Mud Shot in its place at level 15

@@ -19,14 +19,14 @@
 #define OBJ_EVENT_GFX_RICH_BOY                    15
 #define OBJ_EVENT_GFX_WOMAN_1                     16
 #define OBJ_EVENT_GFX_FAT_MAN                     17
-#define OBJ_EVENT_GFX_POKE_FAN_F                   18
+#define OBJ_EVENT_GFX_POKE_FAN_F                  18
 #define OBJ_EVENT_GFX_MAN_1                       19
 #define OBJ_EVENT_GFX_WOMAN_2                     20
 #define OBJ_EVENT_GFX_EXPERT_M                    21
 #define OBJ_EVENT_GFX_EXPERT_F                    22
 #define OBJ_EVENT_GFX_MAN_2                       23
 #define OBJ_EVENT_GFX_WOMAN_3                     24
-#define OBJ_EVENT_GFX_POKE_FAN_M                   25
+#define OBJ_EVENT_GFX_POKE_FAN_M                  25
 #define OBJ_EVENT_GFX_WOMAN_4                     26
 #define OBJ_EVENT_GFX_COOK                        27
 #define OBJ_EVENT_GFX_LINK_RECEPTIONIST           28
@@ -39,7 +39,7 @@
 #define OBJ_EVENT_GFX_YOUNGSTER                   35
 #define OBJ_EVENT_GFX_BUG_CATCHER                 36
 #define OBJ_EVENT_GFX_PSYCHIC_M                   37
-#define OBJ_EVENT_GFX_SCHOOLKID_M                38
+#define OBJ_EVENT_GFX_SCHOOLKID_M                 38
 #define OBJ_EVENT_GFX_MANIAC                      39
 #define OBJ_EVENT_GFX_HEX_MANIAC                  40
 #define OBJ_EVENT_GFX_RAYQUAZA_STILL              41
@@ -209,13 +209,13 @@
 #define OBJ_EVENT_GFX_KYOGRE_ASLEEP              205
 #define OBJ_EVENT_GFX_GROUDON_ASLEEP             206
 #define OBJ_EVENT_GFX_RAYQUAZA                   207
-#define OBJ_EVENT_GFX_ZIGZAGOON_2                208
-#define OBJ_EVENT_GFX_PIKACHU                    209
-#define OBJ_EVENT_GFX_AZUMARILL                  210
-#define OBJ_EVENT_GFX_WINGULL                    211
+#define OBJ_EVENT_GFX_ZIGZAGOON_2                208 //Unused
+#define OBJ_EVENT_GFX_PIKACHU                    209 //Unused
+#define OBJ_EVENT_GFX_AZUMARILL                  210 //Unused
+#define OBJ_EVENT_GFX_WINGULL                    211 //Unused
 #define OBJ_EVENT_GFX_KECLEON_BRIDGE_SHADOW      212
 #define OBJ_EVENT_GFX_TUBER_M_SWIMMING           213
-#define OBJ_EVENT_GFX_AZURILL                    214
+#define OBJ_EVENT_GFX_AZURILL                    214 //Unused
 #define OBJ_EVENT_GFX_MOM                        215
 #define OBJ_EVENT_GFX_LINK_BRENDAN               216
 #define OBJ_EVENT_GFX_LINK_MAY                   217
@@ -226,8 +226,8 @@
 #define OBJ_EVENT_GFX_GROUDON_SIDE               222
 #define OBJ_EVENT_GFX_MYSTERY_GIFT_MAN           223
 #define OBJ_EVENT_GFX_TRICK_HOUSE_STATUE         224
-#define OBJ_EVENT_GFX_KIRLIA                     225
-#define OBJ_EVENT_GFX_DUSCLOPS                   226
+#define OBJ_EVENT_GFX_KIRLIA                     225 //Unused
+#define OBJ_EVENT_GFX_DUSCLOPS                   226 //Unused
 #define OBJ_EVENT_GFX_UNION_ROOM_NURSE           227
 #define OBJ_EVENT_GFX_SUDOWOODO                  228
 #define OBJ_EVENT_GFX_MEW                        229

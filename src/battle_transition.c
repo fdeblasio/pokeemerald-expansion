@@ -852,16 +852,33 @@ static const u16 sFieldEffectPal_Pokeball[] = INCBIN_U16("graphics/field_effects
 
 const struct SpritePalette gSpritePalette_Pokeball = {sFieldEffectPal_Pokeball, FLDEFF_PAL_TAG_POKEBALL_TRAIL};
 
+static const u16 sMugshotPal_Dark[]   = INCBIN_U16("graphics/battle_transitions/dark_bg.gbapal");
+static const u16 sMugshotPal_Dragon[] = INCBIN_U16("graphics/battle_transitions/dragon_bg.gbapal");
+static const u16 sMugshotPal_Flying[] = INCBIN_U16("graphics/battle_transitions/flying_bg.gbapal");
+static const u16 sMugshotPal_Ghost[]  = INCBIN_U16("graphics/battle_transitions/ghost_bg.gbapal");
+static const u16 sMugshotPal_Grass[]  = INCBIN_U16("graphics/battle_transitions/grass_bg.gbapal");
+static const u16 sMugshotPal_Ice[]    = INCBIN_U16("graphics/battle_transitions/ice_bg.gbapal");
+static const u16 sMugshotPal_Rock[]   = INCBIN_U16("graphics/battle_transitions/rock_bg.gbapal");
+static const u16 sMugshotPal_Water[]  = INCBIN_U16("graphics/battle_transitions/water_bg.gbapal");
+
 static const u16 sMugshotPal_Purple[] = INCBIN_U16("graphics/battle_transitions/purple_bg.gbapal");
 static const u16 sMugshotPal_Green[]  = INCBIN_U16("graphics/battle_transitions/green_bg.gbapal");
 static const u16 sMugshotPal_Pink[]   = INCBIN_U16("graphics/battle_transitions/pink_bg.gbapal");
 static const u16 sMugshotPal_Blue[]   = INCBIN_U16("graphics/battle_transitions/blue_bg.gbapal");
 static const u16 sMugshotPal_Yellow[] = INCBIN_U16("graphics/battle_transitions/yellow_bg.gbapal");
 static const u16 sMugshotPal_Brendan[] = INCBIN_U16("graphics/battle_transitions/brendan_bg.gbapal");
-static const u16 sMugshotPal_May[] = INCBIN_U16("graphics/battle_transitions/may_bg.gbapal");
+static const u16 sMugshotPal_May[]     = INCBIN_U16("graphics/battle_transitions/may_bg.gbapal");
 
 static const u16 *const sOpponentMugshotsPals[MUGSHOT_COLOR_COUNT] =
 {
+    [MUGSHOT_TYPE_DARK]   = sMugshotPal_Dark,
+    [MUGSHOT_TYPE_DRAGON] = sMugshotPal_Dragon,
+    [MUGSHOT_TYPE_FLYING] = sMugshotPal_Flying,
+    [MUGSHOT_TYPE_GHOST]  = sMugshotPal_Ghost,
+    [MUGSHOT_TYPE_GRASS]  = sMugshotPal_Grass,
+    [MUGSHOT_TYPE_ICE]    = sMugshotPal_Ice,
+    [MUGSHOT_TYPE_ROCK]   = sMugshotPal_Rock,
+    [MUGSHOT_TYPE_WATER]  = sMugshotPal_Water,
     [MUGSHOT_COLOR_PURPLE] = sMugshotPal_Purple,
     [MUGSHOT_COLOR_GREEN]  = sMugshotPal_Green,
     [MUGSHOT_COLOR_PINK]   = sMugshotPal_Pink,

@@ -151,8 +151,7 @@ upcoming
 - Elite Four rematches (wouldn't need to use Match Call, could probably do if statement in scripts.inc)
 - 6th rematches for trainers post-Elite Four? (Might not work due to running out of trainer space)
 - Update Elite Four palettes
-    - battle_transitions/*_bg.pal to better match types
-    - stadium/palette3-7.pal to better match ypes
+    - battle_terrain/stadium/palette3-7.pal to better match ypes
 - Brendan/May rematches? (Route 103?)
 - Steven rematches? (Would be the same team but re-battleable)
 - Give Winstrates rematches?
@@ -286,6 +285,7 @@ upcoming
 - Debug menu improvements
 - Make inserting trainer sprites easier?
     - Wrapper for src/data/graphics/trainers.h?
+        - Something like this but for U32? #define COMPOUND_U16(file) (const u16[]) INCBIN_U16(file)
 - Contests overhaul
 
 ### Big changes from Vanilla - low priority

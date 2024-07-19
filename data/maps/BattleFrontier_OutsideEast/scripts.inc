@@ -129,7 +129,7 @@ BattleFrontier_OutsideEast_EventScript_WaterSudowoodo::
 	delay 40
 	waitmoncry
 	setvar VAR_LAST_TALKED, LOCALID_SUDOWOODO
-	setwildbattle SPECIES_BONSLY, 60
+	setwildbattle SPECIES_BONSLY, 70
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	dowildbattle
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE

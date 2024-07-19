@@ -36,11 +36,11 @@
 #define TRAINER_WALLY_MAUVILLE               31
 #define TRAINER_WALLY_VERDANTURF            854
 #define TRAINER_WALLY_ROUTE_114             853
-#define TRAINER_WALLY_VR_1                   32
-#define TRAINER_WALLY_VR_2                   33
-#define TRAINER_WALLY_VR_3                   34
-#define TRAINER_WALLY_VR_4                   35
-#define TRAINER_WALLY_VR_5                   36
+#define TRAINER_WALLY_VICTORY_ROAD_1         32
+#define TRAINER_WALLY_VICTORY_ROAD_2         33
+#define TRAINER_WALLY_VICTORY_ROAD_3         34
+#define TRAINER_WALLY_VICTORY_ROAD_4         35
+#define TRAINER_WALLY_VICTORY_ROAD_5         36
 #define TRAINER_ROXANNE_1                    37
 #define TRAINER_ROXANNE_2                    38
 #define TRAINER_ROXANNE_3                    39

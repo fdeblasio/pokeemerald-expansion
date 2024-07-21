@@ -2125,7 +2125,9 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     },
 },
 
-#define WALLACE_INFO                                                                       \
+#define WALLACE_BATTLE(Trainer, AceLevel)                                                  \
+[TRAINER_##Trainer] =                                                                      \
+{                                                                                          \
     .trainerName = _("Wallace"),                                                           \
     .trainerClass = TRAINER_CLASS_CHAMPION,                                                \
     .trainerPic = TRAINER_PIC_CHAMPION_WALLACE,                                            \
@@ -2134,116 +2136,84 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .mugshotEnabled = TRUE,                                                                \
     .mugshotColor = MUGSHOT_TYPE_WATER,                                                    \
     BOSS_AI_FLAGS,                                                                         \
-    .partySize = 6
+    .partySize = 6,                                                                        \
+    .party = (const struct TrainerMon[]) {                                                 \
+        {                                                                                  \
+        .lvl = AceLevel - 3,                                                               \
+        .species = SPECIES_PELIPPER,                                                       \
+        .ability = ABILITY_DRIZZLE,                                                        \
+        .nature = NATURE_MODEST,                                                           \
+        EV_SPREAD_SPA_DEF_SPE,                                                             \
+        PERFECT_IVS,                                                                       \
+        .moves = {MOVE_HYDRO_PUMP, MOVE_HURRICANE, MOVE_ROOST, MOVE_TAILWIND},             \
+        .gender = TRAINER_MON_MALE,                                                        \
+        .heldItem = ITEM_DAMP_ROCK,                                                        \
+        .ball = ITEM_ULTRA_BALL,                                                           \
+        },                                                                                 \
+        {                                                                                  \
+        .lvl = AceLevel - 3,                                                               \
+        .species = SPECIES_GOREBYSS,                                                       \
+        .ability = ABILITY_SWIFT_SWIM,                                                     \
+        .nature = NATURE_MODEST,                                                           \
+        EV_SPREAD_SPA_SPE_DEF,                                                             \
+        PERFECT_IVS,                                                                       \
+        .moves = {MOVE_SURF, MOVE_PSYCHIC, MOVE_DRAINING_KISS, MOVE_SHELL_SMASH},          \
+        .gender = TRAINER_MON_FEMALE,                                                      \
+        .ball = ITEM_DIVE_BALL,                                                            \
+        },                                                                                 \
+        {                                                                                  \
+        .lvl = AceLevel - 3,                                                               \
+        .species = SPECIES_RELICANTH,                                                      \
+        .ability = ABILITY_SWIFT_SWIM,                                                     \
+        .nature = NATURE_IMPISH,                                                           \
+        EV_SPREAD_ATK_DEF_HP,                                                              \
+        PERFECT_IVS,                                                                       \
+        .moves = {MOVE_AQUA_TAIL, MOVE_ROCK_SLIDE, MOVE_YAWN, MOVE_REST},                  \
+        .gender = TRAINER_MON_MALE,                                                        \
+        .heldItem = ITEM_CHESTO_BERRY,                                                     \
+        .ball = ITEM_DIVE_BALL,                                                            \
+        .isShiny = TRUE,                                                                   \
+        },                                                                                 \
+        {                                                                                  \
+        .lvl = AceLevel - 2,                                                               \
+        .species = SPECIES_LUDICOLO,                                                       \
+        .ability = ABILITY_SWIFT_SWIM,                                                     \
+        .nature = NATURE_MODEST,                                                           \
+        EV_SPREAD_SPA_SPE_HP,                                                              \
+        PERFECT_IVS,                                                                       \
+        .moves = {MOVE_SURF, MOVE_GIGA_DRAIN, MOVE_LEECH_SEED, MOVE_RAIN_DANCE},           \
+        .gender = TRAINER_MON_MALE,                                                        \
+        .ball = ITEM_ULTRA_BALL,                                                           \
+        },                                                                                 \
+        {                                                                                  \
+        .lvl = AceLevel - 2,                                                               \
+        .species = SPECIES_WAILORD,                                                        \
+        .ability = ABILITY_OBLIVIOUS,                                                      \
+        .nature = NATURE_MODEST,                                                           \
+        EV_SPREAD_SPA_HP_SPE,                                                              \
+        PERFECT_IVS,                                                                       \
+        .moves = {MOVE_WATER_SPOUT, MOVE_ICE_BEAM, MOVE_AQUA_RING, MOVE_AMNESIA},          \
+        .gender = TRAINER_MON_MALE,                                                        \
+        .heldItem = ITEM_LEFTOVERS,                                                        \
+        .ball = ITEM_DIVE_BALL,                                                            \
+        },                                                                                 \
+        {                                                                                  \
+        .lvl = AceLevel,                                                                   \
+        .species = SPECIES_MILOTIC,                                                        \
+        .ability = ABILITY_MARVEL_SCALE,                                                   \
+        .nature = NATURE_MODEST,                                                           \
+        EV_SPREAD_SPA_SPD_SPE,                                                             \
+        PERFECT_IVS,                                                                       \
+        .moves = {MOVE_HYDRO_PUMP, MOVE_ICE_BEAM, MOVE_COIL, MOVE_RECOVER},                \
+        .gender = TRAINER_MON_FEMALE,                                                      \
+        .heldItem = ITEM_SITRUS_BERRY,                                                     \
+        .ball = ITEM_POKE_BALL,                                                            \
+        },                                                                                 \
+    },                                                                                     \
+}                                                                                          \
 
-#define WALLACE_MILOTIC(Level)                                          \
-    {                                                                   \
-    .lvl = Level,                                                       \
-    .species = SPECIES_MILOTIC,                                         \
-    .ability = ABILITY_MARVEL_SCALE,                                    \
-    .nature = NATURE_MODEST,                                            \
-    EV_SPREAD_SPA_SPD_SPE,                                              \
-    PERFECT_IVS,                                                        \
-    .moves = {MOVE_HYDRO_PUMP, MOVE_ICE_BEAM, MOVE_COIL, MOVE_RECOVER}, \
-    .gender = TRAINER_MON_FEMALE,                                       \
-    .heldItem = ITEM_SITRUS_BERRY,                                      \
-    .ball = ITEM_POKE_BALL,                                             \
-    }
-
-#define WALLACE_WAILORD(Level)                                                \
-    {                                                                         \
-    .lvl = Level,                                                             \
-    .species = SPECIES_WAILORD,                                               \
-    .ability = ABILITY_OBLIVIOUS,                                             \
-    .nature = NATURE_MODEST,                                                  \
-    EV_SPREAD_SPA_HP_SPE,                                                     \
-    PERFECT_IVS,                                                              \
-    .moves = {MOVE_WATER_SPOUT, MOVE_ICE_BEAM, MOVE_AQUA_RING, MOVE_AMNESIA}, \
-    .gender = TRAINER_MON_MALE,                                               \
-    .heldItem = ITEM_LEFTOVERS,                                               \
-    .ball = ITEM_DIVE_BALL,                                                   \
-    }
-
-#define WALLACE_LUDICOLO(Level)                                              \
-    {                                                                        \
-    .lvl = Level,                                                            \
-    .species = SPECIES_LUDICOLO,                                             \
-    .ability = ABILITY_SWIFT_SWIM,                                           \
-    .nature = NATURE_MODEST,                                                 \
-    EV_SPREAD_SPA_SPE_HP,                                                    \
-    PERFECT_IVS,                                                             \
-    .moves = {MOVE_SURF, MOVE_GIGA_DRAIN, MOVE_LEECH_SEED, MOVE_RAIN_DANCE}, \
-    .gender = TRAINER_MON_MALE,                                              \
-    .ball = ITEM_ULTRA_BALL,                                                 \
-    }
-
-#define WALLACE_RELICANTH(Level)                                      \
-    {                                                                 \
-    .lvl = Level,                                                     \
-    .species = SPECIES_RELICANTH,                                     \
-    .ability = ABILITY_SWIFT_SWIM,                                    \
-    .nature = NATURE_IMPISH,                                          \
-    EV_SPREAD_ATK_DEF_HP,                                             \
-    PERFECT_IVS,                                                      \
-    .moves = {MOVE_AQUA_TAIL, MOVE_ROCK_SLIDE, MOVE_YAWN, MOVE_REST}, \
-    .gender = TRAINER_MON_MALE,                                       \
-    .heldItem = ITEM_CHESTO_BERRY,                                    \
-    .ball = ITEM_DIVE_BALL,                                           \
-    .isShiny = TRUE,                                                  \
-    }
-
-#define WALLACE_GOREBYSS(Level)                                               \
-    {                                                                         \
-    .lvl = Level,                                                             \
-    .species = SPECIES_GOREBYSS,                                              \
-    .ability = ABILITY_SWIFT_SWIM,                                            \
-    .nature = NATURE_MODEST,                                                  \
-    EV_SPREAD_SPA_SPE_DEF,                                                    \
-    PERFECT_IVS,                                                              \
-    .moves = {MOVE_SURF, MOVE_PSYCHIC, MOVE_DRAINING_KISS, MOVE_SHELL_SMASH}, \
-    .gender = TRAINER_MON_FEMALE,                                             \
-    .ball = ITEM_DIVE_BALL,                                                   \
-    }
-
-#define WALLACE_PELIPPER(Level)                                            \
-    {                                                                      \
-    .lvl = Level,                                                          \
-    .species = SPECIES_PELIPPER,                                           \
-    .ability = ABILITY_DRIZZLE,                                            \
-    .nature = NATURE_MODEST,                                               \
-    EV_SPREAD_SPA_DEF_SPE,                                                 \
-    PERFECT_IVS,                                                           \
-    .moves = {MOVE_HYDRO_PUMP, MOVE_HURRICANE, MOVE_ROOST, MOVE_TAILWIND}, \
-    .gender = TRAINER_MON_MALE,                                            \
-    .heldItem = ITEM_DAMP_ROCK,                                            \
-    .ball = ITEM_ULTRA_BALL,                                               \
-    }
-
-[TRAINER_WALLACE] =
-{
-    WALLACE_INFO,
-    .party = (const struct TrainerMon[]) {
-        WALLACE_PELIPPER(66),
-        WALLACE_GOREBYSS(66),
-        WALLACE_RELICANTH(66),
-        WALLACE_LUDICOLO(67),
-        WALLACE_WAILORD(67),
-        WALLACE_MILOTIC(69),
-    },
-},
-
-[TRAINER_WALLACE_REMATCH] =
-{
-    WALLACE_INFO,
-    .party = (const struct TrainerMon[]) {
-        WALLACE_PELIPPER(87),
-        WALLACE_GOREBYSS(87),
-        WALLACE_RELICANTH(87),
-        WALLACE_LUDICOLO(88),
-        WALLACE_WAILORD(88),
-        WALLACE_MILOTIC(90),
-    },
-},
+WALLACE_BATTLE(WALLACE, 69),
+WALLACE_BATTLE(WALLACE_REMATCH, 90),
 
 [TRAINER_STEVEN] =
 {

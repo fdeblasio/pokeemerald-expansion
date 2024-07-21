@@ -61,7 +61,7 @@ upcoming
     - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game
 - Rearrange wild_encounters.json to be in order
 - Edit local Porymaps to avoid file formats being edited
-- Give Altaria Fluffy? (Would need to update abilities for rematches)
+- Add in Cursola/Alolan Ninetales/Dragalge in postgame since Elite Four rematches have them?
 - Include charms? (might go over Key Items amount)
 - Remove egg moves that are part of level up learnsets
 - Give grunts consistent teams/genders?
@@ -104,7 +104,7 @@ upcoming
 ### Pokémon
 - Eventually remove RSE and/or BDSP teachable moves?
 - Give Espeon Power Gem on level up or evolution?
-- Give Altaria Fluffy? (Would need to update abilities for rematches)
+- Add in Cursola/Alolan Ninetales/Dragalge in postgame since Elite Four rematches have them?
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?
 - For Egg Groups that share names with types, give moves of that type to Pokémon not of that type in the egg group
     - Egg moves since egg group?
@@ -162,11 +162,11 @@ upcoming
 - Clear up trainer spots by having just one set of gym leader rematches?
     - Late-game trainers like Nicolas or John and Jay too
     - Even just reducing to two or three rematches would save space
-- 6th rematches for trainers post-Elite Four? (Might not work due to running out of trainer space)
 - Update Elite Four palettes
     - battle_terrain/stadium/palette3-7.pal to better match ypes
 - Brendan/May rematches? (Route 103?)
 - Steven rematches? (Would be the same team but re-battleable)
+    - Replace Claydol with a Steel-type?
 - Give Winstrates rematches?
 - Maybe add Brendan/May/Maxie/Archie/admins/Winstrate rematches in Battle Frontier?
     - Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma. Mega Evo for Houndoom but unsure for Ninetales)

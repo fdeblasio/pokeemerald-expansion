@@ -41,7 +41,7 @@
       "flag": "FLAG_HIDE_SOUTHERN_ISLAND_EON_STONE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_VAR_1",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(LATIOS)",
       "x": 12,
       "y": 2,
       "elevation": 0,
@@ -51,10 +51,10 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_HIDE_SOUTHERN_ISLAND_UNCHOSEN_EON_DUO_MON"
+      "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_VAR_2",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(LATIAS)",
       "x": 14,
       "y": 2,
       "elevation": 0,
@@ -64,7 +64,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_HIDE_SOUTHERN_ISLAND_UNCHOSEN_EON_DUO_MON"
+      "flag": "0"
     }
   ],
   "warp_events": [

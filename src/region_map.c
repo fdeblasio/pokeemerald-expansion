@@ -324,7 +324,7 @@ static const u8 sMapHealLocations[][3] =
     [MAPSEC_ROUTE_118] = {MAP_GROUP_AND_NUM(ROUTE118), HEAL_LOCATION_NONE},
     [MAPSEC_ROUTE_119] = {MAP_GROUP_AND_NUM(ROUTE119), HEAL_LOCATION_ROUTE_119},
     [MAPSEC_ROUTE_120] = {MAP_GROUP_AND_NUM(ROUTE120), HEAL_LOCATION_NONE},
-    [MAPSEC_ROUTE_121] = {MAP_GROUP_AND_NUM(ROUTE121), HEAL_LOCATION_NONE},
+    [MAPSEC_ROUTE_121] = {MAP_GROUP_AND_NUM(ROUTE121), HEAL_LOCATION_ROUTE_121},
     [MAPSEC_ROUTE_122] = {MAP_GROUP_AND_NUM(ROUTE122), HEAL_LOCATION_ROUTE_122},
     [MAPSEC_ROUTE_123] = {MAP_GROUP_AND_NUM(ROUTE123), HEAL_LOCATION_NONE},
     [MAPSEC_ROUTE_124] = {MAP_GROUP_AND_NUM(ROUTE124), HEAL_LOCATION_NONE},
@@ -421,44 +421,20 @@ static const struct SpritePalette sFlyTargetIconsSpritePalette =
     .tag = TAG_FLY_ICON
 };
 
+#define RED_OUTLINE(flag, mapsec) {FLAG_LANDMARK_##flag, MAPSEC_##mapsec}
+
 static const u16 sRedOutlineFlyDestinations[][2] =
 {
-    {
-        FLAG_LANDMARK_BATTLE_FRONTIER,
-        MAPSEC_BATTLE_FRONTIER
-    },
-    {
-        FLAG_LANDMARK_ABANDONED_SHIP,
-        MAPSEC_ROUTE_108
-    },
-    {
-        FLAG_LANDMARK_OLD_LADY_REST_SHOP,
-        MAPSEC_ROUTE_111
-    },
-    {
-        FLAG_LANDMARK_FIERY_PATH,
-        MAPSEC_ROUTE_112
-    },
-    {
-        FLAG_LANDMARK_METEOR_FALLS,
-        MAPSEC_ROUTE_114
-    },
-    {
-        FLAG_LANDMARK_WEATHER_INSTITUTE,
-        MAPSEC_ROUTE_119
-    },
-    {
-        FLAG_LANDMARK_MT_PYRE,
-        MAPSEC_ROUTE_122
-    },
-    {
-        FLAG_LANDMARK_SKY_PILLAR,
-        MAPSEC_ROUTE_131
-    },
-    {
-        FLAG_LANDMARK_SOUTHERN_ISLAND,
-        MAPSEC_SOUTHERN_ISLAND
-    },
+    RED_OUTLINE(BATTLE_FRONTIER, BATTLE_FRONTIER),
+    RED_OUTLINE(ABANDONED_SHIP, ROUTE_108),
+    RED_OUTLINE(OLD_LADY_REST_SHOP, ROUTE_111),
+    RED_OUTLINE(FIERY_PATH, ROUTE_112),
+    RED_OUTLINE(METEOR_FALLS, ROUTE_114),
+    RED_OUTLINE(WEATHER_INSTITUTE, ROUTE_119),
+    RED_OUTLINE(SAFARI_ZONE, ROUTE_121),
+    RED_OUTLINE(MT_PYRE, ROUTE_122),
+    RED_OUTLINE(SKY_PILLAR, ROUTE_131),
+    RED_OUTLINE(SOUTHERN_ISLAND, SOUTHERN_ISLAND),
     {
         -1,
         MAPSEC_NONE
@@ -1254,6 +1230,8 @@ static u8 GetMapsecType(u16 mapSecId)
         return FlagGet(FLAG_LANDMARK_METEOR_FALLS) ? MAPSECTYPE_BATTLE_FRONTIER : MAPSECTYPE_ROUTE;
     case MAPSEC_ROUTE_119:
         return FlagGet(FLAG_LANDMARK_WEATHER_INSTITUTE) ? MAPSECTYPE_BATTLE_FRONTIER : MAPSECTYPE_ROUTE;
+    case MAPSEC_ROUTE_121:
+        return FlagGet(FLAG_LANDMARK_SAFARI_ZONE) ? MAPSECTYPE_BATTLE_FRONTIER : MAPSECTYPE_ROUTE;
     case MAPSEC_ROUTE_122:
         return FlagGet(FLAG_LANDMARK_MT_PYRE) ? MAPSECTYPE_BATTLE_FRONTIER : MAPSECTYPE_ROUTE;
     case MAPSEC_ROUTE_131:
@@ -1942,12 +1920,17 @@ static void TryCreateRedOutlineFlyDestIcons(void)
         {
             mapSecId = sRedOutlineFlyDestinations[i][1];
             GetMapSecDimensions(mapSecId, &x, &y, &width, &height);
-            if (mapSecId == MAPSEC_ROUTE_114)
-                y += 2;
-            if (mapSecId == MAPSEC_ROUTE_119 || mapSecId == MAPSEC_ROUTE_122)
-                y++;
+
             if (mapSecId == MAPSEC_ROUTE_131)
                 x++;
+            else if (mapSecId == MAPSEC_ROUTE_121)
+                x += 2;
+
+            if (mapSecId == MAPSEC_ROUTE_119 || mapSecId == MAPSEC_ROUTE_122)
+                y++;
+            else if (mapSecId == MAPSEC_ROUTE_114)
+                y += 2;
+
             x = (x + MAPCURSOR_X_MIN) * 8;
             y = (y + MAPCURSOR_Y_MIN) * 8;
             spriteId = CreateSprite(&sFlyDestIconSpriteTemplate, x, y, 10);

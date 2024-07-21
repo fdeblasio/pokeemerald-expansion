@@ -1289,6 +1289,7 @@ static u8 Debug_CheckToggleFlags(u8 id)
                 FlagGet(FLAG_LANDMARK_FIERY_PATH) &&
                 FlagGet(FLAG_LANDMARK_METEOR_FALLS) &&
                 FlagGet(FLAG_LANDMARK_WEATHER_INSTITUTE) &&
+                FlagGet(FLAG_LANDMARK_SAFARI_ZONE) &&
                 FlagGet(FLAG_LANDMARK_MT_PYRE) &&
                 FlagGet(FLAG_LANDMARK_SKY_PILLAR) &&
                 FlagGet(FLAG_LANDMARK_SOUTHERN_ISLAND) &&
@@ -2804,6 +2805,7 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
         FlagClear(FLAG_LANDMARK_FIERY_PATH);
         FlagClear(FLAG_LANDMARK_METEOR_FALLS);
         FlagClear(FLAG_LANDMARK_WEATHER_INSTITUTE);
+        FlagClear(FLAG_LANDMARK_SAFARI_ZONE);
         FlagClear(FLAG_LANDMARK_MT_PYRE);
         FlagClear(FLAG_LANDMARK_SKY_PILLAR);
         FlagClear(FLAG_LANDMARK_SOUTHERN_ISLAND);
@@ -2834,6 +2836,7 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
         FlagSet(FLAG_LANDMARK_FIERY_PATH);
         FlagSet(FLAG_LANDMARK_METEOR_FALLS);
         FlagSet(FLAG_LANDMARK_WEATHER_INSTITUTE);
+        FlagSet(FLAG_LANDMARK_SAFARI_ZONE);
         FlagSet(FLAG_LANDMARK_MT_PYRE);
         FlagSet(FLAG_LANDMARK_SKY_PILLAR);
         FlagSet(FLAG_LANDMARK_SOUTHERN_ISLAND);

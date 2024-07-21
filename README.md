@@ -286,6 +286,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Mt. Pyre on Route 122
     - Sky Pillar on Route 131
     - Southern Island
+- Navel Rock is slightly easier to navigate
 - SS Tidal trainers can be rebattled every trip
 - Pokémon in the Battle Frontier/Trainer Hill now register in the Pokédex
 

@@ -58,7 +58,7 @@ upcoming
     - Rhyhorn: Route 112/114/Jagged Pass
     - Mareep/Gligar/Sunkern/Snubbull/Stantler/Spinarak/Hoothoot/Wooper/Remoraid/Teddiursa/Shuckle/Pineco/Aipom/Miltank/Ledyba
         - Remove?
-        - Or keep in and make Safari Zone postgame-only (add in other species like regional forms the Elite Four rematches use)
+        - Or keep in and make Safari Zone postgame-only (add in other species like regional forms the Elite Four rematches use or outbreaks)
 - Get Exp. Share from Steven instead of from Mr. Stone after
     - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game
 - Rearrange wild_encounters.json to be in order
@@ -131,7 +131,7 @@ upcoming
     - Rhyhorn: Route 112/114/Jagged Pass
     - Mareep/Gligar/Sunkern/Snubbull/Stantler/Spinarak/Hoothoot/Wooper/Remoraid/Teddiursa/Shuckle/Pineco/Aipom/Miltank/Ledyba
         - Remove?
-        - Or keep in and make Safari Zone postgame-only (add in other species like regional forms the Elite Four rematches use)
+        - Or keep in and make Safari Zone postgame-only (add in other species like regional forms the Elite Four rematches use or outbreaks)
 - Add in some Vega evolutions?
     - Adnokana
     - Cheauking

@@ -1831,16 +1831,58 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     PERFECT_IVS,                     \
     .ball = ITEM_DUSK_BALL
 
-#define PHOEBE_(Level)                     \
-    {                                      \
-    PHOEBE_SUPPORTING_MON(Level),          \
-    .species = SPECIES_,                   \
-    .ability = ABILITY_,                   \
-    .nature = NATURE_,                     \
-    EV_SPREAD_,                            \
-    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
-    .gender = TRAINER_MON_FEMALE,          \
-    .heldItem = ITEM_,                     \
+#define PHOEBE_BANETTE(Level)                                                          \
+    {                                                                                  \
+    PHOEBE_SUPPORTING_MON(Level),                                                      \
+    .species = SPECIES_BANETTE,                                                        \
+    .ability = ABILITY_CURSED_BODY,                                                    \
+    .nature = NATURE_ADAMANT,                                                          \
+    EV_SPREAD_ATK_SPE_HP,                                                              \
+    .moves = {MOVE_SHADOW_CLAW, MOVE_BODY_SLAM, MOVE_SHADOW_SNEAK, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_FEMALE,                                                      \
+    }
+
+#define PHOEBE_SABLEYE(Level)                                                     \
+    {                                                                             \
+    PHOEBE_SUPPORTING_MON(Level),                                                 \
+    .species = SPECIES_SABLEYE,                                                   \
+    .ability = ABILITY_PRANKSTER,                                                 \
+    .nature = NATURE_IMPISH,                                                      \
+    EV_SPREAD_DEF_HP_SPD,                                                         \
+    .moves = {MOVE_FOUL_PLAY, MOVE_CONFUSE_RAY, MOVE_WILL_O_WISP, MOVE_FAKE_OUT}, \
+    .gender = TRAINER_MON_FEMALE,                                                 \
+    }
+
+#define PHOEBE_SHEDINJA(Level)                                                 \
+    {                                                                          \
+    PHOEBE_SUPPORTING_MON(Level),                                              \
+    .species = SPECIES_SHEDINJA,                                               \
+    .ability = ABILITY_WONDER_GUARD,                                           \
+    .nature = NATURE_ADAMANT,                                                  \
+    EV_SPREAD_ATK_SPE_HP,                                                      \
+    .moves = {MOVE_SHADOW_CLAW, MOVE_LEECH_LIFE, MOVE_HEAL_BLOCK, MOVE_SPITE}, \
+    }
+
+#define PHOEBE_DUSCLOPS(Level)                                                 \
+    {                                                                          \
+    PHOEBE_SUPPORTING_MON(Level),                                              \
+    .species = SPECIES_DUSCLOPS,                                               \
+    .ability = ABILITY_PRESSURE,                                               \
+    .nature = NATURE_CALM,                                                     \
+    EV_SPREAD_SPD_HP_DEF,                                                      \
+    .moves = {MOVE_HEX, MOVE_CONFUSE_RAY, MOVE_NIGHT_SHADE, MOVE_WILL_O_WISP}, \
+    .gender = TRAINER_MON_MALE,                                                \
+    }
+
+#define PHOEBE_CURSOLA(Level)                                                   \
+    {                                                                           \
+    PHOEBE_SUPPORTING_MON(Level),                                               \
+    .species = SPECIES_CURSOLA,                                                 \
+    .ability = ABILITY_PERISH_BODY,                                             \
+    .nature = NATURE_MODEST,                                                    \
+    EV_SPREAD_SPA_SPD_DEF,                                                      \
+    .moves = {MOVE_SHADOW_BALL, MOVE_POWER_GEM, MOVE_SPITE, MOVE_STRENGTH_SAP}, \
+    .gender = TRAINER_MON_FEMALE,                                               \
     }
 
 [TRAINER_PHOEBE] =
@@ -1848,37 +1890,10 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     PHOEBE_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        {
-        PHOEBE_SUPPORTING_MON(61),
-        .species = SPECIES_DUSCLOPS,
-        .ability = ABILITY_PRESSURE,
-        .moves = {MOVE_HEX, MOVE_CONFUSE_RAY, MOVE_CURSE, MOVE_WILL_O_WISP},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        PHOEBE_SUPPORTING_MON(61),
-        .species = SPECIES_SHEDINJA,
-        .ability = ABILITY_WONDER_GUARD,
-        .nature = NATURE_ADAMANT,
-        EV_SPREAD_ATK_SPE_HP,
-        .moves = {MOVE_SHADOW_CLAW, MOVE_LEECH_LIFE, MOVE_HEAL_BLOCK, MOVE_SPITE},
-        },
-        {
-        PHOEBE_SUPPORTING_MON(62),
-        .species = SPECIES_SABLEYE,
-        .ability = ABILITY_PRANKSTER,
-        .moves = {MOVE_SHADOW_CLAW, MOVE_FOUL_PLAY, MOVE_POWER_GEM, MOVE_FAKE_OUT},
-        .gender = TRAINER_MON_FEMALE,
-        },
-        {
-        PHOEBE_SUPPORTING_MON(62),
-        .species = SPECIES_BANETTE,
-        .ability = ABILITY_CURSED_BODY,
-        .nature = NATURE_ADAMANT,
-        EV_SPREAD_ATK_SPE_HP,
-        .moves = {MOVE_SHADOW_CLAW, MOVE_BODY_SLAM, MOVE_SHADOW_SNEAK, MOVE_SWORDS_DANCE},
-        .gender = TRAINER_MON_FEMALE,
-        },
+        PHOEBE_DUSCLOPS(61),
+        PHOEBE_SHEDINJA(61),
+        PHOEBE_SABLEYE(62),
+        PHOEBE_BANETTE(62),
         PHOEBE_DUSKNOIR(63),
     },
 },
@@ -1888,11 +1903,11 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     PHOEBE_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        PHOEBE_DUSKNOIR(86),
-        PHOEBE_DUSKNOIR(86),
-        PHOEBE_DUSKNOIR(86),
-        PHOEBE_DUSKNOIR(88),
-        PHOEBE_DUSKNOIR(88),
+        PHOEBE_DUSCLOPS(86),
+        PHOEBE_CURSOLA(86),
+        PHOEBE_SHEDINJA(86),
+        PHOEBE_SABLEYE(88),
+        PHOEBE_BANETTE(88),
         PHOEBE_DUSKNOIR(90),
     },
 },
@@ -1921,16 +1936,60 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     PERFECT_IVS,                     \
     .ball = ITEM_PREMIER_BALL
 
-#define GLACIA_(Level)                     \
-    {                                      \
-    GLACIA_SUPPORTING_MON(Level),          \
-    .species = SPECIES_,                   \
-    .ability = ABILITY_,                   \
-    .nature = NATURE_,                     \
-    EV_SPREAD_,                            \
-    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
-    .gender = TRAINER_MON_FEMALE,          \
-    .heldItem = ITEM_,                     \
+#define GLACIA_FROSLASS(Level)                                                      \
+    {                                                                               \
+    GLACIA_SUPPORTING_MON(Level),                                                   \
+    .species = SPECIES_FROSLASS,                                                    \
+    .ability = ABILITY_SNOW_CLOAK,                                                  \
+    .nature = NATURE_TIMID,                                                         \
+    EV_SPREAD_SPA_SPE_HP,                                                           \
+    .moves = {MOVE_BLIZZARD, MOVE_SHADOW_BALL, MOVE_DRAINING_KISS, MOVE_SNOWSCAPE}, \
+    .gender = TRAINER_MON_FEMALE,                                                   \
+    }
+
+#define GLACIA_GLALIE(Level)                                                        \
+    {                                                                               \
+    GLACIA_SUPPORTING_MON(Level),                                                   \
+    .species = SPECIES_GLALIE,                                                      \
+    .ability = ABILITY_ICE_BODY,                                                    \
+    .nature = NATURE_MODEST,                                                        \
+    EV_SPREAD_SPA_SPE_HP,                                                           \
+    .moves = {MOVE_FREEZE_DRY, MOVE_WEATHER_BALL, MOVE_DARK_PULSE, MOVE_SNOWSCAPE}, \
+    .gender = TRAINER_MON_MALE,                                                     \
+    }
+
+#define GLACIA_CASTFORM(Level)                                                    \
+    {                                                                             \
+    GLACIA_SUPPORTING_MON(Level),                                                 \
+    .species = SPECIES_CASTFORM,                                                  \
+    .ability = ABILITY_FORECAST,                                                  \
+    .nature = NATURE_MODEST,                                                      \
+    EV_SPREAD_SPA_SPE_HP,                                                         \
+    .moves = {MOVE_BLIZZARD, MOVE_WEATHER_BALL, MOVE_HYDRO_PUMP, MOVE_SNOWSCAPE}, \
+    .gender = TRAINER_MON_FEMALE,                                                 \
+    }
+
+#define GLACIA_SEALEO(Level)                                                   \
+    {                                                                          \
+    GLACIA_SUPPORTING_MON(Level),                                              \
+    .species = SPECIES_SEALEO,                                                 \
+    .ability = ABILITY_ICE_BODY,                                               \
+    .nature = NATURE_ADAMANT,                                                  \
+    EV_SPREAD_ATK_HP_SPE,                                                      \
+    .moves = {MOVE_ICE_BALL, MOVE_ROLLOUT, MOVE_DEFENSE_CURL, MOVE_SNOWSCAPE}, \
+    .gender = TRAINER_MON_MALE,                                                \
+    }
+
+#define GLACIA_NINETALES(Level)                                                  \
+    {                                                                            \
+    GLACIA_SUPPORTING_MON(Level),                                                \
+    .species = SPECIES_NINETALES_ALOLAN,                                         \
+    .ability = ABILITY_SNOW_WARNING,                                             \
+    .nature = NATURE_TIMID,                                                      \
+    EV_SPREAD_SPE_SPD_HP,                                                        \
+    .moves = {MOVE_BLIZZARD, MOVE_MOONBLAST, MOVE_AURORA_VEIL, MOVE_NASTY_PLOT}, \
+    .gender = TRAINER_MON_FEMALE,                                                \
+    .heldItem = ITEM_ICY_ROCK,                                                   \
     }
 
 [TRAINER_GLACIA] =
@@ -1938,37 +1997,10 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     GLACIA_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        {
-        GLACIA_SUPPORTING_MON(62),
-        .species = SPECIES_SEALEO,
-        .ability = ABILITY_ICE_BODY,
-        .moves = {MOVE_ICE_BALL, MOVE_ROLLOUT, MOVE_DEFENSE_CURL, MOVE_SNOWSCAPE},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        GLACIA_SUPPORTING_MON(62),
-        .species = SPECIES_CASTFORM,
-        .ability = ABILITY_FORECAST,
-        EV_SPREAD_SPA_SPE_HP,
-        .moves = {MOVE_BLIZZARD, MOVE_WEATHER_BALL, MOVE_HYDRO_PUMP, MOVE_SNOWSCAPE},
-        .gender = TRAINER_MON_FEMALE,
-        },
-        {
-        GLACIA_SUPPORTING_MON(63),
-        .species = SPECIES_GLALIE,
-        .ability = ABILITY_ICE_BODY,
-        .moves = {MOVE_FREEZE_DRY, MOVE_ICE_SHARD, MOVE_PROTECT, MOVE_SNOWSCAPE},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        GLACIA_SUPPORTING_MON(63),
-        .species = SPECIES_FROSLASS,
-        .ability = ABILITY_SNOW_CLOAK,
-        .nature = NATURE_TIMID,
-        EV_SPREAD_SPA_SPE_HP,
-        .moves = {MOVE_BLIZZARD, MOVE_SHADOW_BALL, MOVE_DRAINING_KISS, MOVE_SNOWSCAPE},
-        .gender = TRAINER_MON_FEMALE,
-        },
+        GLACIA_SEALEO(62),
+        GLACIA_CASTFORM(62),
+        GLACIA_GLALIE(63),
+        GLACIA_FROSLASS(63),
         GLACIA_WALREIN(64),
     },
 },
@@ -1978,11 +2010,11 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     GLACIA_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        GLACIA_WALREIN(86),
-        GLACIA_WALREIN(86),
-        GLACIA_WALREIN(86),
-        GLACIA_WALREIN(88),
-        GLACIA_WALREIN(88),
+        GLACIA_SEALEO(86),
+        GLACIA_NINETALES(86),
+        GLACIA_CASTFORM(86),
+        GLACIA_GLALIE(88),
+        GLACIA_FROSLASS(88),
         GLACIA_WALREIN(90),
     },
 },
@@ -2011,16 +2043,59 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     PERFECT_IVS,                    \
     .ball = ITEM_HEAVY_BALL
 
-#define DRAKE_(Level)                      \
-    {                                      \
-    DRAKE_SUPPORTING_MON(Level),           \
-    .species = SPECIES_,                   \
-    .ability = ABILITY_,                   \
-    .nature = NATURE_,                     \
-    EV_SPREAD_,                            \
-    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
-    .gender = TRAINER_MON_MALE,            \
-    .heldItem = ITEM_,                     \
+#define DRAKE_FLYGON(Level)                                                           \
+    {                                                                                 \
+    DRAKE_SUPPORTING_MON(Level),                                                      \
+    .species = SPECIES_FLYGON,                                                        \
+    .ability = ABILITY_LEVITATE,                                                      \
+    .nature = NATURE_ADAMANT,                                                         \
+    EV_SPREAD_ATK_SPE_HP,                                                             \
+    .moves = {MOVE_DRAGON_CLAW, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_DRAGON_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                       \
+    }
+
+#define DRAKE_ALTARIA(Level)                                                         \
+    {                                                                                \
+    DRAKE_SUPPORTING_MON(Level),                                                     \
+    .species = SPECIES_ALTARIA,                                                      \
+    .ability = ABILITY_FLUFFY,                                                       \
+    .nature = NATURE_MODEST,                                                         \
+    EV_SPREAD_SPA_DEF_HP,                                                            \
+    .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD}, \
+    .gender = TRAINER_MON_MALE,                                                      \
+    }
+
+#define DRAKE_KINGDRA(Level)                                              \
+    {                                                                     \
+    DRAKE_SUPPORTING_MON(Level),                                          \
+    .species = SPECIES_KINGDRA,                                           \
+    .ability = ABILITY_SNIPER,                                            \
+    .nature = NATURE_MODEST,                                              \
+    EV_SPREAD_SPA_SPE_HP,                                                 \
+    .moves = {MOVE_DRAGON_PULSE, MOVE_SURF, MOVE_SMOKESCREEN, MOVE_YAWN}, \
+    .gender = TRAINER_MON_MALE,                                           \
+    }
+
+#define DRAKE_SHELGON(Level)                                                        \
+    {                                                                               \
+    DRAKE_SUPPORTING_MON(Level),                                                    \
+    .species = SPECIES_SHELGON,                                                     \
+    .ability = ABILITY_ROCK_HEAD,                                                   \
+    .nature = NATURE_IMPISH,                                                        \
+    EV_SPREAD_ATK_DEF_HP,                                                           \
+    .moves = {MOVE_DRAGON_CLAW, MOVE_ZEN_HEADBUTT, MOVE_DOUBLE_EDGE, MOVE_PROTECT}, \
+    .gender = TRAINER_MON_FEMALE,                                                   \
+    }
+
+#define DRAKE_DRAGALGE(Level)                                                            \
+    {                                                                                    \
+    DRAKE_SUPPORTING_MON(Level),                                                         \
+    .species = SPECIES_DRAGALGE,                                                         \
+    .ability = ABILITY_ADAPTABILITY,                                                     \
+    .nature = NATURE_CALM,                                                               \
+    EV_SPREAD_SPA_SPD_HP,                                                                \
+    .moves = {MOVE_DRAGON_PULSE, MOVE_SLUDGE_BOMB, MOVE_DRAGON_TAIL, MOVE_TOXIC_SPIKES}, \
+    .gender = TRAINER_MON_MALE,                                                          \
     }
 
 [TRAINER_DRAKE] =
@@ -2028,38 +2103,10 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     DRAKE_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        {
-        DRAKE_SUPPORTING_MON(63),
-        .species = SPECIES_SHELGON,
-        .ability = ABILITY_ROCK_HEAD,
-        .moves = {MOVE_DRAGON_CLAW, MOVE_ZEN_HEADBUTT, MOVE_DOUBLE_EDGE, MOVE_PROTECT},
-        .gender = TRAINER_MON_FEMALE,
-        },
-        {
-        DRAKE_SUPPORTING_MON(63),
-        .species = SPECIES_KINGDRA,
-        .ability = ABILITY_SNIPER,
-        .nature = NATURE_MODEST,
-        EV_SPREAD_SPA_SPE_HP,
-        .moves = {MOVE_DRAGON_PULSE, MOVE_SURF, MOVE_SMOKESCREEN, MOVE_YAWN},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        DRAKE_SUPPORTING_MON(64),
-        .species = SPECIES_ALTARIA,
-        .ability = ABILITY_FLUFFY,
-        .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        DRAKE_SUPPORTING_MON(64),
-        .species = SPECIES_FLYGON,
-        .ability = ABILITY_LEVITATE,
-        .nature = NATURE_ADAMANT,
-        EV_SPREAD_ATK_SPE_HP,
-        .moves = {MOVE_DRAGON_CLAW, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_DRAGON_DANCE},
-        .gender = TRAINER_MON_MALE,
-        },
+        DRAKE_SHELGON(63),
+        DRAKE_KINGDRA(63),
+        DRAKE_ALTARIA(64),
+        DRAKE_FLYGON(64),
         DRAKE_SALAMENCE(66),
     },
 },
@@ -2069,11 +2116,11 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     DRAKE_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        DRAKE_SALAMENCE(86),
-        DRAKE_SALAMENCE(86),
-        DRAKE_SALAMENCE(86),
-        DRAKE_SALAMENCE(88),
-        DRAKE_SALAMENCE(88),
+        DRAKE_SHELGON(86),
+        DRAKE_DRAGALGE(86),
+        DRAKE_KINGDRA(86),
+        DRAKE_ALTARIA(88),
+        DRAKE_FLYGON(88),
         DRAKE_SALAMENCE(90),
     },
 },
@@ -2103,84 +2150,98 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .ball = ITEM_POKE_BALL,                                             \
     }
 
-#define WALLACE_(Level)                    \
-    {                                      \
-    .lvl = Level,                          \
-    .species = SPECIES_,                   \
-    .ability = ABILITY_,                   \
-    .nature = NATURE_,                     \
-    EV_SPREAD_,                            \
-    IVS(),                                 \
-    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
-    .gender = TRAINER_MON_MALE,            \
-    .heldItem = ITEM_,                     \
-    .ball = ITEM__BALL,                    \
+#define WALLACE_WAILORD(Level)                                                \
+    {                                                                         \
+    .lvl = Level,                                                             \
+    .species = SPECIES_WAILORD,                                               \
+    .ability = ABILITY_OBLIVIOUS,                                             \
+    .nature = NATURE_MODEST,                                                  \
+    EV_SPREAD_SPA_HP_SPE,                                                     \
+    PERFECT_IVS,                                                              \
+    .moves = {MOVE_WATER_SPOUT, MOVE_ICE_BEAM, MOVE_AQUA_RING, MOVE_AMNESIA}, \
+    .gender = TRAINER_MON_MALE,                                               \
+    .heldItem = ITEM_LEFTOVERS,                                               \
+    .ball = ITEM_DIVE_BALL,                                                   \
+    }
+
+#define WALLACE_LUDICOLO(Level)                                              \
+    {                                                                        \
+    .lvl = Level,                                                            \
+    .species = SPECIES_LUDICOLO,                                             \
+    .ability = ABILITY_SWIFT_SWIM,                                           \
+    .nature = NATURE_MODEST,                                                 \
+    EV_SPREAD_SPA_SPE_HP,                                                    \
+    PERFECT_IVS,                                                             \
+    .moves = {MOVE_SURF, MOVE_GIGA_DRAIN, MOVE_LEECH_SEED, MOVE_RAIN_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                              \
+    .ball = ITEM_ULTRA_BALL,                                                 \
+    }
+
+#define WALLACE_RELICANTH(Level)                                      \
+    {                                                                 \
+    .lvl = Level,                                                     \
+    .species = SPECIES_RELICANTH,                                     \
+    .ability = ABILITY_SWIFT_SWIM,                                    \
+    .nature = NATURE_IMPISH,                                          \
+    EV_SPREAD_ATK_DEF_HP,                                             \
+    PERFECT_IVS,                                                      \
+    .moves = {MOVE_AQUA_TAIL, MOVE_ROCK_SLIDE, MOVE_YAWN, MOVE_REST}, \
+    .gender = TRAINER_MON_MALE,                                       \
+    .heldItem = ITEM_CHESTO_BERRY,                                    \
+    .ball = ITEM_DIVE_BALL,                                           \
+    .isShiny = TRUE,                                                  \
+    }
+
+#define WALLACE_GOREBYSS(Level)                                               \
+    {                                                                         \
+    .lvl = Level,                                                             \
+    .species = SPECIES_GOREBYSS,                                              \
+    .ability = ABILITY_SWIFT_SWIM,                                            \
+    .nature = NATURE_MODEST,                                                  \
+    EV_SPREAD_SPA_SPE_DEF,                                                    \
+    PERFECT_IVS,                                                              \
+    .moves = {MOVE_SURF, MOVE_PSYCHIC, MOVE_DRAINING_KISS, MOVE_SHELL_SMASH}, \
+    .gender = TRAINER_MON_FEMALE,                                             \
+    .ball = ITEM_DIVE_BALL,                                                   \
+    }
+
+#define WALLACE_PELIPPER(Level)                                            \
+    {                                                                      \
+    .lvl = Level,                                                          \
+    .species = SPECIES_PELIPPER,                                           \
+    .ability = ABILITY_DRIZZLE,                                            \
+    .nature = NATURE_MODEST,                                               \
+    EV_SPREAD_SPA_DEF_SPE,                                                 \
+    PERFECT_IVS,                                                           \
+    .moves = {MOVE_HYDRO_PUMP, MOVE_HURRICANE, MOVE_ROOST, MOVE_TAILWIND}, \
+    .gender = TRAINER_MON_MALE,                                            \
+    .heldItem = ITEM_DAMP_ROCK,                                            \
+    .ball = ITEM_ULTRA_BALL,                                               \
     }
 
 [TRAINER_WALLACE] =
 {
     WALLACE_INFO,
     .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 66,
-        .species = SPECIES_PELIPPER,
-        .ability = ABILITY_DRIZZLE,
-        .nature = NATURE_MODEST,
-        EV_SPREAD_SPA_DEF_SPE,
-        PERFECT_IVS,
-        .moves = {MOVE_HYDRO_PUMP, MOVE_HURRICANE, MOVE_ROOST, MOVE_TAILWIND},
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_DAMP_ROCK,
-        .ball = ITEM_ULTRA_BALL,
-        },
-        {
-        .lvl = 66,
-        .species = SPECIES_GOREBYSS,
-        .ability = ABILITY_SWIFT_SWIM,
-        .nature = NATURE_MODEST,
-        EV_SPREAD_SPA_SPE_DEF,
-        PERFECT_IVS,
-        .moves = {MOVE_SURF, MOVE_PSYCHIC, MOVE_DRAINING_KISS, MOVE_SHELL_SMASH},
-        .gender = TRAINER_MON_FEMALE,
-        .ball = ITEM_DIVE_BALL,
-        },
-        {
-        .lvl = 66,
-        .species = SPECIES_RELICANTH,
-        .ability = ABILITY_SWIFT_SWIM,
-        .nature = NATURE_IMPISH,
-        EV_SPREAD_ATK_DEF_HP,
-        PERFECT_IVS,
-        .moves = {MOVE_AQUA_TAIL, MOVE_ROCK_SLIDE, MOVE_YAWN, MOVE_REST},
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_CHESTO_BERRY,
-        .ball = ITEM_DIVE_BALL,
-        .isShiny = TRUE,
-        },
-        {
-        .lvl = 67,
-        .species = SPECIES_LUDICOLO,
-        .ability = ABILITY_SWIFT_SWIM,
-        .nature = NATURE_MODEST,
-        EV_SPREAD_SPA_SPE_HP,
-        PERFECT_IVS,
-        .moves = {MOVE_SURF, MOVE_GIGA_DRAIN, MOVE_LEECH_SEED, MOVE_RAIN_DANCE},
-        .gender = TRAINER_MON_MALE,
-        .ball = ITEM_ULTRA_BALL,
-        },
-        {
-        .lvl = 67,
-        .species = SPECIES_WAILORD,
-        .ability = ABILITY_OBLIVIOUS,
-        .nature = NATURE_MODEST,
-        EV_SPREAD_SPA_HP_SPE,
-        PERFECT_IVS,
-        .moves = {MOVE_WATER_SPOUT, MOVE_ICE_BEAM, MOVE_AQUA_RING, MOVE_AMNESIA},
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_LEFTOVERS,
-        .ball = ITEM_DIVE_BALL,
-        },
+        WALLACE_PELIPPER(66),
+        WALLACE_GOREBYSS(66),
+        WALLACE_RELICANTH(66),
+        WALLACE_LUDICOLO(67),
+        WALLACE_WAILORD(67),
         WALLACE_MILOTIC(69),
+    },
+},
+
+[TRAINER_WALLACE_REMATCH] =
+{
+    WALLACE_INFO,
+    .party = (const struct TrainerMon[]) {
+        WALLACE_PELIPPER(87),
+        WALLACE_GOREBYSS(87),
+        WALLACE_RELICANTH(87),
+        WALLACE_LUDICOLO(88),
+        WALLACE_WAILORD(88),
+        WALLACE_MILOTIC(90),
     },
 },
 

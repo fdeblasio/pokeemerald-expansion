@@ -106,6 +106,14 @@ upcoming
 - Give Espeon Power Gem on level up or evolution?
 - Give Altaria Fluffy? (Would need to update abilities for rematches)
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?
+- For Egg Groups that share names with types, give moves of that type to Pokémon not of that type in the egg group
+    - Egg moves since egg group?
+    - Dragon: Dragon Breath/Claw/Pulse/Tail/etc. (where applicable)
+    - Fairy
+    - Bug
+    - Flying
+    - Grass
+    - Water 1/2/3
 - Make Outbreak Pokémon somehow obtainable in endgame?
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
 - Remove Safari Zone?

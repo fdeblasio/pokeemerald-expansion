@@ -63,6 +63,8 @@ upcoming
     - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game
 - Rearrange wild_encounters.json to be in order
 - Edit local Porymaps to avoid file formats being edited
+    - map.json null and empty arrays
+    - wild_encounters arrays/fishing encounter rate/range defaulting to 0
 - Add in Cursola/Alolan Ninetales/Dragalge in postgame since Elite Four rematches have them?
 - Include charms? (might go over Key Items amount)
 - Remove egg moves that are part of level up learnsets

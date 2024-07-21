@@ -280,8 +280,9 @@ There are some mechanics, moves and abilities that are missing and being develop
     - The Abandoned Ship on Route 108
     - The Old Lady's Rest Stop on Route 111
     - Fiery Path on Route 112
-    - Meteor Falls entrance on Route 114
+    - Meteor Falls on Route 114
     - The Weather Institute on Route 119
+    - The Safari Zone on Route 121
     - Mt. Pyre on Route 122
     - Sky Pillar on Route 131
     - Southern Island

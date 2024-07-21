@@ -56,7 +56,9 @@ upcoming
     - Girafarig: Route 120?
     - Doduo: Route 121?
     - Rhyhorn: Route 112/114/Jagged Pass
-    - Mareep/Gligar/Sunkern/Snubbull/Stantler/Spinarak/Hoothoot/Wooper/Remoraid/Teddiursa/Shuckle/Pineco/Aipom/Miltank/Ledyba: Remove?
+    - Mareep/Gligar/Sunkern/Snubbull/Stantler/Spinarak/Hoothoot/Wooper/Remoraid/Teddiursa/Shuckle/Pineco/Aipom/Miltank/Ledyba
+        - Remove?
+        - Or keep in and make Safari Zone postgame-only (add in other species like regional forms the Elite Four rematches use)
 - Get Exp. Share from Steven instead of from Mr. Stone after
     - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game
 - Rearrange wild_encounters.json to be in order
@@ -127,7 +129,9 @@ upcoming
     - Girafarig: Route 120?
     - Doduo: Route 121?
     - Rhyhorn: Route 112/114/Jagged Pass
-    - Mareep/Gligar/Sunkern/Snubbull/Stantler/Spinarak/Hoothoot/Wooper/Remoraid/Teddiursa/Shuckle/Pineco/Aipom/Miltank/Ledyba: Remove?
+    - Mareep/Gligar/Sunkern/Snubbull/Stantler/Spinarak/Hoothoot/Wooper/Remoraid/Teddiursa/Shuckle/Pineco/Aipom/Miltank/Ledyba
+        - Remove?
+        - Or keep in and make Safari Zone postgame-only (add in other species like regional forms the Elite Four rematches use)
 - Add in some Vega evolutions?
     - Adnokana
     - Cheauking
@@ -211,7 +215,6 @@ upcoming
 - Fly to routes:
     - Route 103: Altering Cave
     - Route 110: Trick House or New Mauville
-    - Route 121: Safari Zone (if not removed)
     - Route 128: Where Steven flies to?
 
 ### Overworld

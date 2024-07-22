@@ -287,7 +287,8 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Southern Island
 - Can now use Soot Sack to see how much ash you have
 - Much easier to make good Pokéblocks
-- Mirage Island now appears every other day
+- Mirage Island now always appears
+    - Wynaut from Mirage Island will have their Hidden Ability
 - Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room
     - The door to Sealed Chamber and the Regis' inner rooms are now automatically open
 - Tickets for islands where Latios, Latias, Deoxys, Lugia, Ho-Oh, and Mew reside are given after beating the Elite Four

@@ -1260,7 +1260,11 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
         }
     }
 
-    if (gSpeciesInfo[species].abilities[1])
+    if (species == SPECIES_WYNAUT && GetCurrentRegionMapSectionId() == MAPSEC_ROUTE_130){
+        value = 2;
+        SetBoxMonData(boxMon, MON_DATA_ABILITY_NUM, &value);
+    }
+    else if (gSpeciesInfo[species].abilities[1])
     {
         value = personality & 1;
         SetBoxMonData(boxMon, MON_DATA_ABILITY_NUM, &value);

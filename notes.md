@@ -40,6 +40,7 @@ upcoming
 
 ## To Do:
 ### Next playthrough
+- Might need to fix Mew movement
 - Reorder Trainer numbers
 - Consolidate flags
     - FLAG_DEFEATED_MAUVILLE_GYM, FLAG_BADGE03_GET, FLAG_HIDE_MAUVILLE_ROCK_SMASH_TIP_GUY
@@ -62,9 +63,6 @@ upcoming
 - Get Exp. Share from Steven instead of from Mr. Stone after
     - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game
 - Rearrange wild_encounters.json to be in order
-- Edit local Porymaps to avoid file formats being edited
-    - map.json null and empty arrays
-    - wild_encounters arrays/fishing encounter rate/range defaulting to 0
 - Add in Cursola/Alolan Ninetales/Dragalge in postgame since Elite Four rematches have them?
 - Include charms? (might go over Key Items amount)
 - Remove egg moves that are part of level up learnsets
@@ -220,7 +218,6 @@ upcoming
     - Route 128: Where Steven flies to?
 
 ### Overworld
-- Edit local Porymaps to avoid file formats being edited
 - Add accurate overworld sprites (https://github.com/pret/pokeemerald/wiki/Adding-new-event-object-or-overworld-sprites, https://www.pokecommunity.com/showthread.php?t=407124)
     - Overworld sprites to match trainer sprites (for example, Rangers red clothes, Dragon Tamers capes and correct hair color, or Rich Boys correct clothes and hair color)
 - Add FRLG trainer sprites/overworld sprites

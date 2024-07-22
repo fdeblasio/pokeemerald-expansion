@@ -209,7 +209,7 @@ upcoming
         - Might not be simple since it's .inc and not C
     - Cut (only in Trick House):
         - Moves boosted by Sharpness
-    - Strength (only in Trick House and Seafloor Cavern):
+    - Strength (only in Trick House):
         - Superpower?
         - Close Combat?
 - Make Fly usuable after 2nd badge? Or maybe even aftering delivering goods in Slateport?

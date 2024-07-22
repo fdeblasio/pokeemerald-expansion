@@ -45,22 +45,9 @@ upcoming
     - FLAG_DEFEATED_MAUVILLE_GYM, FLAG_BADGE03_GET, FLAG_HIDE_MAUVILLE_ROCK_SMASH_TIP_GUY
     - FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA
     - FLAG_HIDE_SOOTOPOLIS_CITY_MAXIE/FLAG_HIDE_SOOTOPOLIS_CITY_ARCHIE/FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE
-- Remove Safari Zone and move Pokémon to new locations
-    - Move Solar Beam to Lilycove Department Store
-    - Pichu: New Mauville
-    - Natu: Route 111?
-    - Phanpy: Route 111/112/114/Jagged Pass
-    - Psyduck: Various ponds
-    - Heracross/Pinsir: Route 119?
-    - Girafarig: Route 120?
-    - Doduo: Route 121?
-    - Rhyhorn: Route 112/114/Jagged Pass
-    - Mareep/Gligar/Sunkern/Snubbull/Stantler/Spinarak/Hoothoot/Wooper/Remoraid/Teddiursa/Shuckle/Pineco/Aipom/Miltank/Ledyba
-        - Remove?
-        - Or keep in and make Safari Zone postgame-only (add in other species like regional forms the Elite Four rematches use or outbreaks)
+- Move construction worker in order to make Safari Zone postgame-only
 - Get Exp. Share from Steven instead of from Mr. Stone after
     - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game
-- Add in Cursola/Alolan Ninetales/Dragalge in postgame since Elite Four rematches have them?
 - Include charms? (might go over Key Items amount)
 - Remove egg moves that are part of level up learnsets
 - Give grunts consistent teams/genders?
@@ -114,19 +101,6 @@ upcoming
     - Water 1/2/3
 - Make Outbreak Pokémon somehow obtainable in endgame?
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
-- Remove Safari Zone?
-    - Move Solar Beam to Lilycove Department Store
-    - Pichu: New Mauville
-    - Natu: Route 111?
-    - Phanpy: Route 111/112/114/Jagged Pass
-    - Psyduck: Various ponds
-    - Heracross/Pinsir: Route 119?
-    - Girafarig: Route 120?
-    - Doduo: Route 121?
-    - Rhyhorn: Route 112/114/Jagged Pass
-    - Mareep/Gligar/Sunkern/Snubbull/Stantler/Spinarak/Hoothoot/Wooper/Remoraid/Teddiursa/Shuckle/Pineco/Aipom/Miltank/Ledyba
-        - Remove?
-        - Or keep in and make Safari Zone postgame-only (add in other species like regional forms the Elite Four rematches use or outbreaks)
 - Add in some Vega evolutions?
     - Adnokana
     - Cheauking
@@ -311,7 +285,7 @@ upcoming
     - Smack Down is super effective if a Tinkaton uses it against Corviknight
 - Edit Slot odds (SLOT_MACHINE_)? Even though there's only three prizes?
 - Add Pokémon with dolls? (Togepi, Smoochum, Clefairy, Lapras, Snorlax, Venusaur, Charizard, Blastoise)
-- Add in Hoenn Pokédex regionals?
+- Add in Hoenn Pokédex regionals? (currently postgame Safari Zone)
     - Sun/Shiny Stone for Alolan Raichu
     - Alolan Sandshrew/Vulpix at Shoal Cave
     - Alolan Muk
@@ -323,7 +297,6 @@ upcoming
         - Alolan Meowth
         - Galarian Meowth
         - Paldean Wooper
-    - Update level up/learnable movesets for them
     - Sandslash, Ninetales, Cursola, and maybe Obstagoon can be used to diversify the Elite Four teams
 
 ## Future hacks

@@ -8238,7 +8238,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 26,
-        .species = SPECIES_BALTOY,
+        .species = SPECIES_RHYHORN,
         IVS(6),
         },
         {
@@ -13287,7 +13287,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = MAGMA_HIDEOUT_LEVEL_2,
-        .species = SPECIES_BALTOY,
+        .species = SPECIES_RHYHORN,
         },
         {
         .lvl = MAGMA_HIDEOUT_LEVEL_2,
@@ -13375,7 +13375,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = MAGMA_HIDEOUT_LEVEL,
-        .species = SPECIES_NUMEL,
+        .species = SPECIES_RHYHORN,
         }
     },
 },
@@ -13423,7 +13423,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = MAGMA_HIDEOUT_LEVEL,
-        .species = SPECIES_VULPIX,
+        .species = SPECIES_TORKOAL,
         }
     },
 },

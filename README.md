@@ -237,6 +237,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Bird Keepers now use the overworld sprite of male Psychics since it looks more like them than the blond sprite
 - Houndour was added to the Hoenn Pokédex to give Team Magma more variety
 - Pokémon can now be listed as orange in the Pokédex
+- Safari Zone Pokémon have been moved to other locations
 - Underwater areas now connect better
 - Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)
 - Frontier Brains have updated teams
@@ -282,6 +283,8 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Southern Island
 - Can now use Soot Sack to see how much ash you have
 - Much easier to make good Pokéblocks
+- Pokémon in the Safari Zone can't flee
+- Connected the north and northwest sections of the Safari Zone
 - Mirage Island now always appears
     - Wynaut from Mirage Island will have their Hidden Ability
 - Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room

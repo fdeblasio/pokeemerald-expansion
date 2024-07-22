@@ -61,7 +61,6 @@ upcoming
         - Or keep in and make Safari Zone postgame-only (add in other species like regional forms the Elite Four rematches use or outbreaks)
 - Get Exp. Share from Steven instead of from Mr. Stone after
     - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game
-- Rearrange wild_encounters.json to be in order
 - Add in Cursola/Alolan Ninetales/Dragalge in postgame since Elite Four rematches have them?
 - Include charms? (might go over Key Items amount)
 - Remove egg moves that are part of level up learnsets
@@ -90,7 +89,6 @@ upcoming
 - Combine two meta files (notes.md and README.md)?
     Include more changes, even if general like Battle Frontier edits
 - Before a new game, put Trainer numbers in order
-- Rearrange wild_encounters.json to be in order
 - Consolidate flags
     - FLAG_DEFEATED_MAUVILLE_GYM, FLAG_BADGE03_GET, FLAG_HIDE_MAUVILLE_ROCK_SMASH_TIP_GUY
     - FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA
@@ -99,7 +97,7 @@ upcoming
     - Vanilla code
     - Rename tutor flags since they're now infinite
 - Organize changes better
-- ENDGAME_LEVEL is set in wild_encounter but is still used for Trick House 8, SS Tidal trainers, and Gym rematches (trainers.h), mass outbreaks (tv.c), Jirachi, Johto starters, and Bonsly (scripts.inc)
+- POSTGAME_LEVEL is set in wild_encounter but is still used for Trick House 8, SS Tidal trainers, and Gym rematches (trainers.h), mass outbreaks (tv.c), Jirachi, Johto starters, postgame legendaries, and Bonsly (scripts.inc)
     - They all probably use species.h but a level number feels out of place there
 
 ### Pokémon
@@ -230,6 +228,7 @@ upcoming
     - Bonsly?
     - Mew?
 - Combine Centers and Marts?
+    - Use left wall where escalators used to be
 
 ### Battle Frontier
 - Battle Tent Pokémon/EVs?
@@ -255,7 +254,7 @@ upcoming
     - Don't have both Open Level and Level 50 since the Pokémon are rentals anyways?
 - Updated Battle Pyramid wild randomizer?
 - Battle Pike
-    - Change Kirlia and Dusclops to fit the type?
+    - Change Kirlia and Dusclops to fit the type of move used?
 
 ### Other
 - Try to get Verdanturf grass to start Grassy Terrain instead of messing with weather

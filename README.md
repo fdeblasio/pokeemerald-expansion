@@ -272,6 +272,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Certain sections are blocked off until gyms or rivals are defeated
 - Wally is given more battles. The battle in Verdanturf starts with Grassy Terrain
 - Battles in long grass on Routes 119 and 120 start with Grassy Terrain (unless it's a thunderstorm)
+- All Pokémon in the Dragon egg group that could not already learn Dragon Breath (with the exception of Magikarp and Trapinch) now get it as an egg move. This is reflected in the species changes below
 
 ### Quality of Life
 - Shiny Pokémon can no longer spawn until you get Poké Balls
@@ -1058,6 +1059,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Nidorina/Nidoqueen (not in main game):
     - Can now breed
 
+- Ekans/Arbok (not in main game):
+    - Learn Dragon Breath by Egg Move
+
 - Pichu:
     - Held item: None->Light Ball
     - Can also evolve at level 12
@@ -1615,6 +1619,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Seviper:
     - HP: 73->75
     - Spe: 65->75
+    - Learns Dragon Breath by Egg Move
 
 - Lunatone:
     - Learns Icy Wind and Peck by level up
@@ -1797,6 +1802,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Scraggy:
     - Evolution: 39->35
+    - Learns Dragon Breath by Egg Move
+
+- Scrafty:
+    - Learns Dragon Breath by Egg Move
 
 - Carracosta:
     - Learns Body Press by TM
@@ -1851,9 +1860,14 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Axew:
     - Evolution: 38->35
+    - Learns Dragon Breath by Egg Move
 
 - Fraxure:
     - Evolution: 48->45
+    - Learns Dragon Breath by Egg Move
+
+- Haxorus:
+    - Learns Dragon Breath by Egg Move
 
 - Cubchoo:
     - Evolution: 37->35
@@ -1881,6 +1895,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Mienfoo:
     - Evolution: 50->38
+
+- Druddigon:
+    - Learns Dragon Breath by Egg Move
 
 - Golett:
     - Evolution: 43->40
@@ -1927,6 +1944,16 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Skrelp:
     - Evolution: 48->37
+    - Learns Dragon Breath by Egg Move
+
+- Dragalge:
+    - Learns Dragon Breath by Egg Move
+
+- Helioptile/Heliolisk:
+    - Learn Dragon Breath by Egg Move
+
+- Tyrunt/Tyrantrum:
+    - Learn Dragon Breath by Egg Move
 
 - Goomy:
     - Evolution: 40->35
@@ -1936,6 +1963,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Noibat:
     - Evolution: 48->40
+    - Learns Dragon Breath by Egg Move
+
+- Noivern:
+    - Learns Dragon Breath by Egg Move
 
 - Rowlet:
     - Evolution: 17->16
@@ -1961,6 +1992,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Crabominable:
     - Learns Icicle Crash by TM
 
+- Salandit/Salazzle:
+    - Learn Dragon Breath by Egg Move
+
 - Bounsweet/Steenee:
     - Held item: Magost Berry: 0%->50%
 
@@ -1970,6 +2004,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Type: Null:
     - Can also evolve at level 45
+
+- Turtonator:
+    - Learns Dragon Breath by Egg Move
 
 - Tapu Koko:
     - Learns Supercell Slam, Play Rough, and Rising Voltage by TM
@@ -1989,6 +2026,12 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Drizzile:
     - Evolution: 35->36
 
+- Applin/Appletun:
+    - Learns Dragon Breath by Egg Move (Flapple, Dippin, and Hydrapple already learn it)
+
+- Silicobra/Sandaconda:
+    - Learn Dragon Breath by Egg Move
+
 - Hatenna:
     - Evolution: 32->28
 
@@ -2004,14 +2047,20 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Snom:
     - Can also evolve at level 21
 
+- Duraludon/Archaludon:
+    - Learn Dragon Breath by Egg Move
+
 - Dreepy:
     - Evolution: 50->30
+    - Learns Dragon Breath by Egg Move
 
 - Drakloak:
     - Evolution: 60->55
+    - Learns Dragon Breath by Egg Move
 
 - Dragapult:
     - Learns Shadow Claw by TM
+    - Learns Dragon Breath by Egg Move
 
 - Pawmot:
     - Learns Drain Punch by TM

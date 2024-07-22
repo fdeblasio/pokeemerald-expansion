@@ -197,6 +197,7 @@
 //Oceanic Museum
 #define TRAINER_GRUNT_MUSEUM_1              108
 #define TRAINER_GRUNT_MUSEUM_2              109
+#define TRAINER_ARCHIE_MUSEUM               852
 //Route 110
 #define TRAINER_ISABEL_1                    371
 #define TRAINER_ISABEL_2                    372
@@ -940,7 +941,6 @@
 #define TRAINER_UNUSED_1                    849
 #define TRAINER_UNUSED_2                    850
 #define TRAINER_UNUSED_3                    851
-#define TRAINER_UNUSED_4                    852
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled

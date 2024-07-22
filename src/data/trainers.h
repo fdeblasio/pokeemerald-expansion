@@ -455,15 +455,15 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .heldItem = ITEM_QUICK_CLAW,                                                    \
     }
 
-#define ROXANNE_CRADILY(rematch)                                                        \
-    {                                                                                   \
-    REMATCH_MON(CRADILY, TIER2, rematch),                                               \
-    .ability = ABILITY_STORM_DRAIN,                                                     \
-    .nature = NATURE_CALM,                                                              \
-    EV_SPREAD_SPA_SPD_DEF,                                                              \
-    .moves = {MOVE_GIGA_DRAIN, MOVE_ANCIENT_POWER, MOVE_INGRAIN, MOVE_AMNESIA},         \
-    .gender = TRAINER_MON_FEMALE,                                                       \
-    .heldItem = ITEM_BIG_ROOT,                                                          \
+#define ROXANNE_CRADILY(rematch)                                                \
+    {                                                                           \
+    REMATCH_MON(CRADILY, TIER2, rematch),                                       \
+    .ability = ABILITY_STORM_DRAIN,                                             \
+    .nature = NATURE_CALM,                                                      \
+    EV_SPREAD_SPA_SPD_DEF,                                                      \
+    .moves = {MOVE_GIGA_DRAIN, MOVE_ANCIENT_POWER, MOVE_INGRAIN, MOVE_AMNESIA}, \
+    .gender = TRAINER_MON_FEMALE,                                               \
+    .heldItem = ITEM_BIG_ROOT,                                                  \
     }
 
 #define ROXANNE_RELICANTH(rematch)                                               \
@@ -486,14 +486,14 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .gender = TRAINER_MON_FEMALE,                                           \
     }
 
-#define ROXANNE_RHYPERIOR(rematch)                                                 \
-    {                                                                              \
-    REMATCH_MON(RHYPERIOR, TIER3, rematch),                                        \
-    .ability = ABILITY_SOLID_ROCK,                                                 \
-    .nature = NATURE_ADAMANT,                                                      \
-    EV_SPREAD_ATK_DEF_HP,                                                          \
-    .moves = {MOVE_ROCK_WRECKER, MOVE_DRILL_RUN, MOVE_POISON_JAB, MOVE_SANDSTORM}, \
-    .gender = TRAINER_MON_FEMALE,                                                  \
+#define ROXANNE_CORSOLA(rematch)                                          \
+    {                                                                     \
+    REMATCH_MON(CORSOLA, TIER3, rematch),                                 \
+    .ability = ABILITY_REGENERATOR,                                       \
+    .nature = NATURE_CALM,                                                \
+    EV_SPREAD_SPA_SPD_HP,                                                 \
+    .moves = {MOVE_POWER_GEM, MOVE_SCALD, MOVE_LIFE_DEW, MOVE_SANDSTORM}, \
+    .gender = TRAINER_MON_FEMALE,                                         \
     }
 
 [TRAINER_ROXANNE_2] =
@@ -527,7 +527,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     ROXANNE_INFO,
     LEADER_REMATCH(4),
     .party = (const struct TrainerMon[]) {
-        ROXANNE_RHYPERIOR(4),
+        ROXANNE_CORSOLA(4),
         ROXANNE_AGGRON(4, IRON_HEAD, ROCK_SLIDE, SANDSTORM),
         ROXANNE_RELICANTH(4),
         ROXANNE_CRADILY(4),
@@ -541,7 +541,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     ROXANNE_INFO,
     LEADER_REMATCH(5),
     .party = (const struct TrainerMon[]) {
-        ROXANNE_RHYPERIOR(5),
+        ROXANNE_CORSOLA(5),
         ROXANNE_AGGRON(5, HEAD_SMASH, BODY_PRESS, IRON_DEFENSE),
         ROXANNE_RELICANTH(5),
         ROXANNE_CRADILY(5),
@@ -2740,9 +2740,9 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ability = ABILITY_MAGMA_ARMOR,                                           \
     .gender = TRAINER_MON_MALE
 
-#define TABITHA_PHANPY(Level)                                                \
-    .lvl = Level,                                                            \
-    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_PHANPY : SPECIES_DONPHAN, \
+#define TABITHA_SANDSHREW(Level)                                                  \
+    .lvl = Level,                                                                 \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_SANDSHREW : SPECIES_SANDSLASH, \
     .gender = TRAINER_MON_MALE
 
 #define COURTNEY_INFO                                                          \
@@ -2793,10 +2793,10 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ability = ABILITY_SHELL_ARMOR, \
     .gender = TRAINER_MON_MALE
 
-#define MATT_TENTACRUEL(Level)      \
-    .lvl = Level,                   \
-    .species = SPECIES_TENTACRUEL,  \
-    .ability = ABILITY_LIQUID_OOZE, \
+#define MATT_GYARADOS(Level)       \
+    .lvl = Level,                  \
+    .species = SPECIES_GYARADOS,   \
+    .ability = ABILITY_INTIMIDATE, \
     .gender = TRAINER_MON_MALE
 
 #define MAXIE_INFO                                          \
@@ -2823,6 +2823,15 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     IVS(18),                                                  \
     }
 
+#define MAXIE_RHYHORN(Level)    \
+    {                           \
+    .lvl = Level,               \
+    .species = Level < 42 ? SPECIES_RHYHORN : (Level < (MAXIE_SPACE_CENTER_ACE_LEVEL - 1) ? SPECIES_RHYDON : SPECIES_RHYPERIOR), \
+    .ability = 2,               \
+    IVS(18),                    \
+    .gender = TRAINER_MON_MALE, \
+    }
+
 #define MAXIE_SANDSHREW(Level)                                                    \
     {                                                                             \
     .lvl = Level,                                                                 \
@@ -2831,21 +2840,40 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .gender = TRAINER_MON_MALE,                                                   \
     }
 
-#define MAXIE_PHANPY(Level)                                                  \
-    {                                                                        \
-    .lvl = Level,                                                            \
-    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_PHANPY : SPECIES_DONPHAN, \
-    .ability = ABILITY_SAND_VEIL,                                            \
-    IVS(18),                                                                 \
-    .gender = TRAINER_MON_MALE,                                              \
-    }
-
 #define ARCHIE_INFO                                        \
     .trainerName = _("Archie"),                            \
     .trainerClass = TRAINER_CLASS_AQUA_LEADER,             \
     .trainerPic = TRAINER_PIC_AQUA_LEADER_ARCHIE,          \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA, \
     BOSS_AI_FLAGS
+
+#define FINNEAS(Level)                                           \
+    .lvl = Level,                                                \
+    .species = Level < 30 ? SPECIES_CARVANHA : SPECIES_SHARPEDO, \
+    .ability = ABILITY_ROUGH_SKIN,                               \
+    .nature = NATURE_ADAMANT,                                    \
+    PERFECT_IVS,                                                 \
+    .gender = TRAINER_MON_MALE,                                  \
+    .ball = ITEM_POKE_BALL,                                      \
+    .nickname = COMPOUND_STRING("Finneas")
+
+#define ARCHIE_WAILMER(Level)                                  \
+    {                                                          \
+    .lvl = Level,                                              \
+    .species = Level < 40 ? SPECIES_WAILMER : SPECIES_WAILORD, \
+    .ability = ABILITY_OBLIVIOUS,                              \
+    IVS(18),                                                   \
+    .gender = TRAINER_MON_MALE,                                \
+    }
+
+#define ARCHIE_TENTACOOL(Level)                                     \
+    {                                                               \
+    .lvl = Level,                                                   \
+    .species = Level < 30 ? SPECIES_TENTACOOL : SPECIES_TENTACRUEL, \
+    .ability = ABILITY_CLEAR_BODY,                                  \
+    IVS(18),                                                        \
+    .gender = TRAINER_MON_MALE,                                     \
+    }
 
 
 
@@ -4612,6 +4640,20 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         {
         .lvl = 17,
         .species = SPECIES_CORPHISH,
+        }
+    },
+},
+
+[TRAINER_ARCHIE_MUSEUM] =
+{
+    ARCHIE_INFO,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        ARCHIE_TENTACOOL(17),
+        ARCHIE_WAILMER(17),
+        {
+        FINNEAS(19),
+        .moves = {MOVE_AQUA_JET, MOVE_BITE, MOVE_POISON_FANG, MOVE_FOCUS_ENERGY},
         }
     },
 },
@@ -8183,7 +8225,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        TABITHA_PHANPY(27),
+        TABITHA_SANDSHREW(27),
         IVS(6),
         },
         {
@@ -8203,8 +8245,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .items = {ITEM_SUPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
-        MAXIE_PHANPY(28),
-        MAXIE_SANDSHREW(29),
+        MAXIE_SANDSHREW(28),
+        MAXIE_RHYHORN(29),
         MAXIE_BALTOY(29),
         {
         HUMPHREY(30),
@@ -13434,7 +13476,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        TABITHA_PHANPY(45),
+        TABITHA_SANDSHREW(45),
         IVS(9),
         },
         {
@@ -13454,8 +13496,8 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .items = {ITEM_HYPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
-        MAXIE_PHANPY(46),
-        MAXIE_SANDSHREW(47),
+        MAXIE_SANDSHREW(46),
+        MAXIE_RHYHORN(47),
         MAXIE_BALTOY(47),
         {
         HUMPHREY(48),
@@ -13578,7 +13620,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        MATT_TENTACRUEL(47),
+        MATT_GYARADOS(47),
         IVS(6),
         },
         {
@@ -14447,7 +14489,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = MAXIE_SPACE_CENTER_ACE_LEVEL - 3,
-        .species = SPECIES_SANDSLASH,
+        .species = SPECIES_DONPHAN,
         IVS(12),
         .gender = TRAINER_MON_FEMALE,
         },
@@ -14473,7 +14515,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        TABITHA_PHANPY(MAXIE_SPACE_CENTER_ACE_LEVEL - 3),
+        TABITHA_SANDSHREW(MAXIE_SPACE_CENTER_ACE_LEVEL - 3),
         IVS(12),
         },
         {
@@ -14492,7 +14534,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     MAXIE_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
-        MAXIE_SANDSHREW(MAXIE_SPACE_CENTER_ACE_LEVEL - 1),
+        MAXIE_RHYHORN(MAXIE_SPACE_CENTER_ACE_LEVEL - 1),
         MAXIE_BALTOY(MAXIE_SPACE_CENTER_ACE_LEVEL - 1),
         {
         HUMPHREY(MAXIE_SPACE_CENTER_ACE_LEVEL),
@@ -15160,7 +15202,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        MATT_TENTACRUEL(52),
+        MATT_GYARADOS(52),
         IVS(12),
         },
         {
@@ -15202,34 +15244,16 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 53,
-        .species = SPECIES_STARMIE,
-        .ability = ABILITY_ILLUMINATE,
+        .species = SPECIES_GOLDUCK,
+        .ability = ABILITY_DAMP,
         IVS(18),
         },
+        ARCHIE_TENTACOOL(53),
+        ARCHIE_WAILMER(54),
         {
-        .lvl = 53,
-        .species = SPECIES_TENTACRUEL,
-        .ability = ABILITY_CLEAR_BODY,
-        IVS(18),
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        .lvl = 54,
-        .species = SPECIES_WAILORD,
-        .ability = ABILITY_OBLIVIOUS,
-        IVS(18),
-        .gender = TRAINER_MON_MALE,
-        },
-        {
-        .lvl = 55,
-        .species = SPECIES_SHARPEDO,
-        .ability = ABILITY_ROUGH_SKIN,
-        PERFECT_IVS,
+        FINNEAS(55),
         .moves = {MOVE_LIQUIDATION, MOVE_CRUNCH, MOVE_ICE_FANG, MOVE_POISON_FANG},
-        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SHARPEDONITE,
-        .ball = ITEM_POKE_BALL,
-        .nickname = COMPOUND_STRING("Finneas"),
         }
     },
 },
@@ -17296,4 +17320,3 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
 UNUSED_TRAINER(1),
 UNUSED_TRAINER(2),
 UNUSED_TRAINER(3),
-UNUSED_TRAINER(4),

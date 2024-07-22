@@ -49,13 +49,12 @@ upcoming
 - Get Exp. Share from Steven instead of from Mr. Stone after
     - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game
 - Include charms? (might go over Key Items amount)
-- Remove egg moves that are part of level up learnsets
 - Give grunts consistent teams/genders?
     - Give them names?
-- Battle Archie at Oceanic Museum?
-- Stop daycare from deleting moves
-- Battle Archie/Courtney at Meteor Falls?
+- Update scripts for Archie battle at Oceanic Museum
+- Battle Archie or Courtney at Meteor Falls?
 - Edit Winona's text to change Bird to Flying?
+- Stop daycare from deleting moves
 - Clear up trainer spots by having just one set of gym leader rematches?
     - Late-game trainers like Nicolas or John and Jay too
     - Even just reducing to two or three rematches would save space
@@ -89,7 +88,6 @@ upcoming
 ### Pokémon
 - Eventually remove RSE and/or BDSP teachable moves?
 - Give Espeon Power Gem on level up or evolution?
-- Add in Cursola/Alolan Ninetales/Dragalge in postgame since Elite Four rematches have them?
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?
 - For Egg Groups that share names with types, give moves of that type to Pokémon not of that type in the egg group
     - Egg moves since egg group?
@@ -99,7 +97,6 @@ upcoming
     - Flying
     - Grass
     - Water 1/2/3
-- Make Outbreak Pokémon somehow obtainable in endgame?
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
 - Add in some Vega evolutions?
     - Adnokana
@@ -275,7 +272,7 @@ upcoming
 ### Big changes from Vanilla - low priority
 - Remove IVs? Maybe make boolean for either 0 or 31 added to stat
     - Would need to figure out Hidden Power
-- Make seperate Pokédex for post-game similar to SwSh DLC Pokédexes (include Outbreaks like Elekid)?
+- Make seperate Pokédex for post-game similar to SwSh DLC Pokédexes?
 - Fire Blast/Hydro Pump/Stone Edge accurate in respective weathers?
     - Make Thunder also accurate in Electric Terrain?
 - Calculate Electro Ball more similarly to Gyro Ball?

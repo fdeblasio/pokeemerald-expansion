@@ -109,7 +109,7 @@ upcoming
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?
 - For Egg Groups that share names with types, give moves of that type to Pokémon not of that type in the egg group
     - Egg moves since egg group?
-    - Dragon: Dragon Breath/Claw/Pulse/Tail/etc. (where applicable)
+    - Dragon: Dragon Claw/Pulse/Tail/etc. (where applicable)
     - Fairy
     - Bug
     - Flying
@@ -187,12 +187,11 @@ upcoming
 - Gym leaders/Steven/Breeders can have Hidden Abilities
 
 ### Moves
-- Remove egg moves that are part of level up learnsets
 - Nature Power:
     - Nature Power details on summary screen (power/accuracy would be for in-battle status screen only)
         - All moves are special so change category to special (if nothing changes)?
-    - Revert some Nature Power moves for a more varied effect
-    - Mt Pyre inside Burial Ground terrain?
+    - Revert some Nature Power moves for a more varied effect (waiting on refactor PR)
+    - Have the inside of Mt. Pyre use Burial Ground terrain?
 - Just make new tutors in towns or Battle Frontier
 - TMs/Tutors
     - Hyper Voice tutor->TM (or earlier Tutor)?

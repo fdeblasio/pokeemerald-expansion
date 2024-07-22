@@ -113,7 +113,6 @@ EWRAM_DATA u8 gChainFishingDexNavStreak = 0;
 #define RANGE_CAVE_OF_ORIGIN    51, 53
 #define RANGE_ROUTE_129         51, 53
 #define RANGE_ROUTE_130         51, 53
-#define RANGE_MIRAGE_ISLAND     50, 50
 #define RANGE_ROUTE_131         51, 53
 #define RANGE_SKY_PILLAR        52, 54
 #define RANGE_PACIFIDLOG_TOWN   52, 54

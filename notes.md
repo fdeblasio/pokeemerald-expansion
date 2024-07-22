@@ -51,7 +51,6 @@ upcoming
     - Natu: Route 111?
     - Phanpy: Route 111/112/114/Jagged Pass
     - Psyduck: Various ponds
-    - Wynaut: Make Mirage Island permanent?
     - Heracross/Pinsir: Route 119?
     - Girafarig: Route 120?
     - Doduo: Route 121?
@@ -121,7 +120,6 @@ upcoming
     - Natu: Route 111?
     - Phanpy: Route 111/112/114/Jagged Pass
     - Psyduck: Various ponds
-    - Wynaut: Make Mirage Island permanent?
     - Heracross/Pinsir: Route 119?
     - Girafarig: Route 120?
     - Doduo: Route 121?

@@ -2743,43 +2743,43 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "range": "RANGE_MIRAGE_ISLAND",
+                "range": "RANGE_ROUTE_130",
                 "species": "WYNAUT"
               },
               {
-                "range": "RANGE_MIRAGE_ISLAND",
+                "range": "RANGE_ROUTE_130",
                 "species": "WYNAUT"
               },
               {
-                "range": "RANGE_MIRAGE_ISLAND",
+                "range": "RANGE_ROUTE_130",
                 "species": "WYNAUT"
               },
               {
-                "range": "RANGE_MIRAGE_ISLAND",
+                "range": "RANGE_ROUTE_130",
                 "species": "WYNAUT"
               },
               {
-                "range": "RANGE_MIRAGE_ISLAND",
+                "range": "RANGE_ROUTE_130",
                 "species": "WYNAUT"
               },
               {
-                "range": "RANGE_MIRAGE_ISLAND",
+                "range": "RANGE_ROUTE_130",
                 "species": "WYNAUT"
               },
               {
-                "range": "RANGE_MIRAGE_ISLAND",
+                "range": "RANGE_ROUTE_130",
                 "species": "WOBBUFFET"
               },
               {
-                "range": "RANGE_MIRAGE_ISLAND",
+                "range": "RANGE_ROUTE_130",
                 "species": "WOBBUFFET"
               },
               {
-                "range": "RANGE_MIRAGE_ISLAND",
+                "range": "RANGE_ROUTE_130",
                 "species": "WOBBUFFET"
               },
               {
-                "range": "RANGE_MIRAGE_ISLAND",
+                "range": "RANGE_ROUTE_130",
                 "species": "WOBBUFFET"
               }
             ]

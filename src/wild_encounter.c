@@ -93,7 +93,6 @@ EWRAM_DATA u8 gChainFishingDexNavStreak = 0;
 #define RANGE_ROUTE_120         38, 40
 #define RANGE_ROUTE_121         40, 42
 #define RANGE_LILYCOVE_CITY     41, 43
-#define RANGE_SAFARI_ZONE       42, 44
 #define RANGE_ROUTE_122         42, 44
 #define RANGE_MT_PYRE           42, 44
 #define RANGE_ROUTE_123         42, 44

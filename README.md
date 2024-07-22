@@ -179,7 +179,6 @@ There are some mechanics, moves and abilities that are missing and being develop
     - [Bag sorting](https://www.pokecommunity.com/showpost.php?p=10167488&postcount=84)
 - Jaizu
     - [Implementing the FRLG bag sound](https://www.pokecommunity.com/showpost.php?p=10205757)
-    - [Implementing an auto-swapping naming screen](https://www.pokecommunity.com/showpost.php?p=10199896&postcount=139)
 - Buffel Saft 
     - [Showing EVs/IVs in the summary screen](https://www.pokecommunity.com/showpost.php?p=10410302)
     - [Removing the need to water berries on rainy routes](https://www.pokecommunity.com/showpost.php?p=10349397&postcount=258)
@@ -226,44 +225,23 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Some trainers on Routes 104 and 117 go back to their original locations
 - Gym Leaders use more Hoenn Pokémon
 - Gym Leaders and Magma/Aqua Admins/Leaders no longer have underleveled evolutions
-- Team Magma are more focused on Ground types than Fire types to avoid overlap with Flannery
+- Team Magma are also focused on Ground types than Fire types to avoid overlap with Flannery
 - Pokémon have a more even encounter distribution
 - Trainer rematches (including Gabby and Ty) are now based on number of badges
 - Tate and Liza give out Psychic instead of Calm Mind (Calm Mind can be found in Slateport)
-- HMs can now be forgotten
-    - Fly can now be used from the Start Menu after getting Mauville's badge
-    - Cut, Strength, and Rock Smash no longer need a badge to be used
-    - Cut trees have been removed from everywhere but the Trick House
-    - Strength boulders have been removed from everywhere but the Trick House and an optional puzzle in Seafloor Cavern
-    - Rock Smash rocks have been removed from everywhere but Rusturf Tunnel. Brick Break can now also break them
-    - The Escape Rope can by used in the Trick Room puzzles that involve Cut/Strength
-    - Flash is no longer needed anywhere
-    - Surf, Dive and Waterfall have been replaced by a key item
-- Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room
-    - The door to Sealed Chamber and the Regis' inner rooms are now automatically open
 - Made rapids easier to navigate so that only one trip is needed to get all items/battle all trainers (at the cost of looking slightly worse)
-- All moves automatically have their max PP amount
-- The Good Rod is now obtained on the left side of Route 118 instead of the right
-- Much easier to make good Pokéblocks
 - Added area to grind right outside Elite Four
 - TM moves not in the game are learnable as egg moves
-- Sacred Ash now works in battles although it only revives one Pokémon
-- Soul Dew uses its Gen 6 effect
 - Pokémon that evolve with an item at day or night now can evolve at any time
 - EVs now give one stat increase for every EV but cap out at 63 (individual)/127 (total). This will lead to the same stats as the old system but easier to train
 - Bird Keepers now use the overworld sprite of male Psychics since it looks more like them than the blond sprite
 - Houndour was added to the Hoenn Pokédex to give Team Magma more variety
 - Pokémon can now be listed as orange in the Pokédex
 - Underwater areas now connect better
-- Mirage Island now appears every other day
 - Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)
-- Tickets for islands where Latios, Latias, Deoxys, Lugia, Ho-Oh, and Mew reside are given after beating the Elite Four
-    - Latios and Latias no longer roam and instead both show up on Southern Island
-    - The Deoxys puzzle is much simpler
 - Frontier Brains have updated teams
 - Battle Pyramid wild Pokémon have been updated
 - Battle Frontier no longer requires saving
-- Two Pokémon having the same original trainer no longer negatively affects breeding chances
 - Certain sections are blocked off until gyms or rivals are defeated
 - Wally is given more battles. The battle in Verdanturf starts with Grassy Terrain
 - Battles in long grass on Routes 119 and 120 start with Grassy Terrain (unless it's a thunderstorm)
@@ -272,103 +250,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 ### Quality of Life
 - Shiny Pokémon can no longer spawn until you get Poké Balls
 - You can now always run from wild Pokémon if they are asleep, frozen, or in a semi-invulnerable state (using Fly, Dig, Dive, Bounce, etc.). This works even if they have Shadow Tag/Arena Trap
-- Fly can now be used to go to more places:
-    - The Abandoned Ship on Route 108
-    - The Old Lady's Rest Stop on Route 111
-    - Fiery Path on Route 112
-    - Meteor Falls on Route 114
-    - The Weather Institute on Route 119
-    - The Safari Zone on Route 121
-    - Mt. Pyre on Route 122
-    - Sky Pillar on Route 131
-    - Southern Island
-- Navel Rock is slightly easier to navigate
-- SS Tidal trainers can be rebattled every trip
-- Pokémon in the Battle Frontier/Trainer Hill now register in the Pokédex
-
-### Summary Screen
-- The following moves now show up as the right type both in battle and on the summary screen:
-    - Hidden Power
-    - Judgement
-    - Techno Blast
-    - Revelation Dance
-    - Multi-Attack
-    - Aura Wheel
-    - Raging Bull
-    - Ivy Cudgel
-    - Moves affected by Normalize, Aerilate, Refrigerate, Pixilate, Galvanize, or Liquid Voice
-- The following moves now show up as the right type in battle:
-    - Weather Ball
-    - Terrain Pulse
-    - Tera Blast
-    - Tera Starstorm
-
-- The following moves/abilities/other effects show the correct power both in battle and on the summary screen:
-    - STAB/Adaptability
-    - Eruption/Water Spout/Dragon Energy
-    - Return
-    - Frustration
-    - Acrobatics
-    - Facade
-    - Technician
-    - Toxic Boost
-    - Flare Boost
-    - Reckless
-    - Iron Fist
-    - Sheer Force
-    - Tough Claws
-    - Strong Jaw
-    - Mega Launcher
-    - Water Bubble
-    - Steelworker
-    - Steely Spirit
-    - Aerilate
-    - Refrigerate
-    - Pixilate
-    - Galvanize
-    - Normalize
-    - Punk Rock
-    - Transistor
-    - Dragon's Maw
-    - Rocky Payload
-    - Sharpness
-    - Punching Glove
-    - Hustle
-    - Moves that always crit (Frost Breath, Storm Throw, Surging Strikes, Wicked Blow, Flower Trick)/Sniper
-    - Strike count for regular moves
-- The following moves/abilities/other effects show the correct power in battle:
-    - Fury Cutter
-    - Spit Up
-    - Weather Ball
-    - Stored Power
-    - Misty Explosion
-    - Grav Apple
-    - Terrain Pulse
-    - Expanding Force
-    - Rising Voltage
-    - Psyblade
-    - Rage Fist
-    - Solar Beam/Solar Blade in non-sunny weather
-    - Stomping Tantrum
-    - Earthquake/Magnitude in Grassy Terrain
-    - Sand Force
-    - Hydro Steam
-    - Sun/Rain
-    - Terrain
-    - Charge
-    - Mud Sport/Water Sport
-
-- The following effects on accuracy are now reflected in battle and on the summary screen:
-    - Compound Eyes
-    - Hustle
-    - Victory Star
-    - Wide Lens
-- The effects of weather on accuracy is now reflected in battle:
-    - Thunder and Hurricane having 50% accuracy in sun
-    - Thunder, Hurricane, Bleakwind Storm, Wildbolt Storm, and Sandsear Storm having 100% accuracy in rain
-    - Blizzard having 100% accuracy in snow/hail
-
-### Quality of life changes thanks to tutorials (credit above):
 - You can nickname and relearn moves from the party menu
 - Press A on the summary screen to see a Pokémon's EVs/IVs
 - Can swap party members with Select
@@ -380,12 +261,44 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Premier Balls are now given for every multiple of 10 of any ball you buy (as opposed to only 1 for 10+ Poke Balls)
 - Faster text speed
 - Faster walking/surfing speed
+- Two Pokémon having the same original trainer no longer negatively affects breeding chances
+- HMs can now be forgotten
+    - Fly can now be used from the Start Menu after getting Mauville's badge
+    - Cut, Strength, and Rock Smash no longer need a badge to be used
+    - Cut trees and Strength boulders have been removed from everywhere but the Trick House
+    - Rock Smash rocks have been removed from everywhere but Rusturf Tunnel. Brick Break can now also break them
+    - The Escape Rope can by used in the Trick Room puzzles that involve Cut/Strength
+    - Flash is no longer needed anywhere
+    - Surf, Dive and Waterfall have been replaced by a key item
+- Fly can now be used to go to more places:
+    - The Abandoned Ship on Route 108
+    - The Old Lady's Rest Stop on Route 111
+    - Fiery Path on Route 112
+    - Meteor Falls on Route 114
+    - The Weather Institute on Route 119
+    - The Safari Zone on Route 121
+    - Mt. Pyre on Route 122
+    - Sky Pillar on Route 131
+    - Southern Island
 - Can now use Soot Sack to see how much ash you have
+- Much easier to make good Pokéblocks
+- Mirage Island now appears every other day
+- Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room
+    - The door to Sealed Chamber and the Regis' inner rooms are now automatically open
+- Tickets for islands where Latios, Latias, Deoxys, Lugia, Ho-Oh, and Mew reside are given after beating the Elite Four
+    - Latios and Latias no longer roam and instead both show up on Southern Island
+    - The Deoxys puzzle is much simpler
+    - Navel Rock is slightly easier to navigate
+- SS Tidal trainers can be rebattled every trip
+- Pokémon in the Battle Frontier/Trainer Hill now register in the Pokédex
 
 ### Items:
 - Eviolite now prevents Pokémon from evolving
 - Some items, such as vitamins and hold items, are cheaper
 - Ability Capsules, Ability Patches, Mints, and EV-reducing berries are available to buy in Lilycove (Bottle Caps not yet implemented)
+- The Good Rod is now obtained on the left side of Route 118 instead of the right
+- Sacred Ash now works in battles although it only revives one Pokémon
+- Soul Dew uses its Gen 6 effect
 
 ### Trainers:
 - Rich Boys all have shiny Pokémon
@@ -616,7 +529,8 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Dream Eater
 
 ### Moves:
-**Many moves (especially signature moves) were given 100% accuracy and/or 10 PP as opposed to 5:**
+- All moves automatically have their max PP amount
+#### Many moves (especially signature moves) were given 100% accuracy and/or 10 PP as opposed to 5:
 - Normal:
     - Barrage:
         - Power: 15->20
@@ -1017,6 +931,88 @@ There are some mechanics, moves and abilities that are missing and being develop
         - PP: 5->10
     - Strange Steam:
         - Accuracy: 95->100
+
+### Summary Screen
+- The following moves now show up as the right type both in battle and on the summary screen:
+    - Hidden Power
+    - Judgement
+    - Techno Blast
+    - Revelation Dance
+    - Multi-Attack
+    - Aura Wheel
+    - Raging Bull
+    - Ivy Cudgel
+    - Moves affected by Normalize, Aerilate, Refrigerate, Pixilate, Galvanize, or Liquid Voice
+- The following moves now show up as the right type in battle:
+    - Weather Ball
+    - Terrain Pulse
+    - Tera Blast
+    - Tera Starstorm
+
+- The following moves/abilities/other effects show the correct power both in battle and on the summary screen:
+    - STAB/Adaptability
+    - Eruption/Water Spout/Dragon Energy
+    - Return
+    - Frustration
+    - Acrobatics
+    - Facade
+    - Technician
+    - Toxic Boost
+    - Flare Boost
+    - Reckless
+    - Iron Fist
+    - Sheer Force
+    - Tough Claws
+    - Strong Jaw
+    - Mega Launcher
+    - Water Bubble
+    - Steelworker
+    - Steely Spirit
+    - Aerilate
+    - Refrigerate
+    - Pixilate
+    - Galvanize
+    - Normalize
+    - Punk Rock
+    - Transistor
+    - Dragon's Maw
+    - Rocky Payload
+    - Sharpness
+    - Punching Glove
+    - Hustle
+    - Moves that always crit (Frost Breath, Storm Throw, Surging Strikes, Wicked Blow, Flower Trick)/Sniper
+    - Strike count for regular moves
+- The following moves/abilities/other effects show the correct power in battle:
+    - Fury Cutter
+    - Spit Up
+    - Weather Ball
+    - Stored Power
+    - Misty Explosion
+    - Grav Apple
+    - Terrain Pulse
+    - Expanding Force
+    - Rising Voltage
+    - Psyblade
+    - Rage Fist
+    - Solar Beam/Solar Blade in non-sunny weather
+    - Stomping Tantrum
+    - Earthquake/Magnitude in Grassy Terrain
+    - Sand Force
+    - Hydro Steam
+    - Sun/Rain
+    - Terrain
+    - Charge
+    - Mud Sport/Water Sport
+
+- The following effects on accuracy are now reflected in battle and on the summary screen:
+    - Compound Eyes
+    - Hustle
+    - Victory Star
+    - Wide Lens
+- The effects of weather on accuracy is now reflected in battle:
+    - Thunder and Hurricane having 50% accuracy in sun
+    - Thunder, Hurricane, Bleakwind Storm, Wildbolt Storm, and Sandsear Storm having 100% accuracy in rain
+    - Blizzard having 100% accuracy in snow/hail
 
 ### Pokémon:
 - Pokémon have all their moves from their movesets from Gen 7 onwards, at the most recent levels

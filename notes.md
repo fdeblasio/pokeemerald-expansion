@@ -40,7 +40,6 @@ upcoming
 
 ## To Do:
 ### Next playthrough
-- Might need to fix Mew movement
 - Reorder Trainer numbers
 - Consolidate flags
     - FLAG_DEFEATED_MAUVILLE_GYM, FLAG_BADGE03_GET, FLAG_HIDE_MAUVILLE_ROCK_SMASH_TIP_GUY
@@ -189,6 +188,11 @@ upcoming
 
 ### Moves
 - Remove egg moves that are part of level up learnsets
+- Nature Power:
+    - Nature Power details on summary screen (power/accuracy would be for in-battle status screen only)
+        - All moves are special so change category to special (if nothing changes)?
+    - Revert some Nature Power moves for a more varied effect
+    - Mt Pyre inside Burial Ground terrain?
 - Just make new tutors in towns or Battle Frontier
 - TMs/Tutors
     - Hyper Voice tutor->TM (or earlier Tutor)?
@@ -223,14 +227,9 @@ upcoming
 - Add FRLG trainer sprites/overworld sprites
     - Sprites are added but still need to be implemented. Overworld sprites may have duplicates for Pokémon and may need palettes
 - Replace Pokémon overworld sprites with follower sprites
-    - Latias/Latios?
-    - Kyogre/Groudon?
     - Poochyena chasing Birch?
     - Bonsly?
     - Mew?
-    - Deoxys
-    - Lugia
-    - Ho-Oh
 - Combine Centers and Marts?
 
 ### Battle Frontier

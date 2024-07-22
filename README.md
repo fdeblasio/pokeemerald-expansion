@@ -321,6 +321,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Roxanne                   |12, 12, 15            |11, 11, 13|
 |Rival Rustboro            |13, 15||
 |Brawly                    |16, 16, 19            |16, 16, 18|
+|Archie Oceanic Museum     |N/A                   |17, 17, 19|
 |Rival 110                 |18, 18, 20||
 |Wally Mauville            |16                    |19|
 |Wally Verdanturf          |N/A                   |21, 23|

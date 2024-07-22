@@ -11,7 +11,7 @@
 
 bool8 IsMirageIslandPresent(void)
 {
-    return VarGet(VAR_DAYS) % 2;
+    return TRUE;
 }
 
 void UpdateShoalTideFlag(void)

@@ -78,7 +78,6 @@ upcoming
     - FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA
 - Remove unused code
     - Vanilla code
-    - Rename tutor flags since they're now infinite
 - Organize changes better
 - POSTGAME_LEVEL is set in wild_encounter but is still used for Trick House 8, SS Tidal trainers, and Gym rematches (trainers.h), mass outbreaks (tv.c), Jirachi, Johto starters, postgame legendaries, and Bonsly (scripts.inc)
     - They all probably use species.h but a level number feels out of place there

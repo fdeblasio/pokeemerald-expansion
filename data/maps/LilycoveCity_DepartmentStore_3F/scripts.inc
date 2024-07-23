@@ -166,6 +166,7 @@ LilycoveCity_DepartmentStore_3F_Pokemart_Delibird:
 	.2byte ITEM_METRONOME
 	.2byte ITEM_PUNCHING_GLOVE
 	.2byte ITEM_LOADED_DICE
+	.2byte ITEM_MIRROR_HERB
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_3F_EventScript_TriathleteM::

@@ -1267,6 +1267,9 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Now evolves into Umbreon with a Moon Stone
     - Now evolves into Sylveon with a Dawn Stone
 
+- Espeon (not in main game):
+    - Learns Power Gem by level up
+
 - Aerodactyl (postgame):
     - Learns Dual Wingbeat, Double-Edge, Head Smash, and Brave Bird by level up
 

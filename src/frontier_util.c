@@ -286,7 +286,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .heldItem = ITEM_LUM_BERRY,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_MODEST,
-                .evs = {158, 0, 63, 25, 0, 0},
+                .evs = {1, 0, 63, 63, 0, 0},
                 .moves = {MOVE_THUNDERBOLT, MOVE_SHADOW_BALL, MOVE_REST, MOVE_CALM_MIND},
             },
             {

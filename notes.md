@@ -44,7 +44,6 @@ upcoming
 - Consolidate flags
     - FLAG_DEFEATED_MAUVILLE_GYM, FLAG_BADGE03_GET, FLAG_HIDE_MAUVILLE_ROCK_SMASH_TIP_GUY
     - FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA
-    - FLAG_HIDE_SOOTOPOLIS_CITY_MAXIE/FLAG_HIDE_SOOTOPOLIS_CITY_ARCHIE/FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE
 - Move construction worker in order to make Safari Zone postgame-only
 - Get Exp. Share from Steven instead of from Mr. Stone after
     - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game
@@ -77,7 +76,6 @@ upcoming
 - Consolidate flags
     - FLAG_DEFEATED_MAUVILLE_GYM, FLAG_BADGE03_GET, FLAG_HIDE_MAUVILLE_ROCK_SMASH_TIP_GUY
     - FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA
-    - FLAG_HIDE_SOOTOPOLIS_CITY_MAXIE/FLAG_HIDE_SOOTOPOLIS_CITY_ARCHIE/FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE
 - Remove unused code
     - Vanilla code
     - Rename tutor flags since they're now infinite

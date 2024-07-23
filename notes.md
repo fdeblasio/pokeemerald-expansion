@@ -80,10 +80,10 @@ upcoming
 - Organize changes better
 - POSTGAME_LEVEL is set in wild_encounter but is still used for Trick House 8, SS Tidal trainers, and Gym rematches (trainers.h), mass outbreaks (tv.c), Jirachi, Johto starters, postgame legendaries, and Bonsly (scripts.inc)
     - They all probably use species.h but a level number feels out of place there
+- Once more changes are made, consolidate commits on develop branch again
 
 ### Pokémon
 - Eventually remove RSE and/or BDSP teachable moves?
-- Give Espeon Power Gem on level up or evolution?
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?
 - For Egg Groups that share names with types, give moves of that type to Pokémon not of that type in the egg group
     - Egg moves since egg group?

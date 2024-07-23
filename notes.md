@@ -53,7 +53,6 @@ upcoming
 - Update scripts for Archie battle at Oceanic Museum
 - Battle Archie or Courtney at Meteor Falls?
 - Edit Winona's text to change Bird to Flying?
-- Stop daycare from deleting moves
 - Clear up trainer spots by having just one set of gym leader rematches?
     - Late-game trainers like Nicolas or John and Jay too
     - Even just reducing to two or three rematches would save space
@@ -244,7 +243,6 @@ upcoming
 - Get PokeNav to work indoors?
     - Stop trainers from calling you shortly after loading the game
 - Edit contests?
-- Stop daycare from deleting moves
 - Simplify Walda codes?
 - Get all the weird Mauville men at once?
 - Update Favor Lady's items to include new items

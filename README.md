@@ -247,6 +247,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Wally is given more battles. The battle in Verdanturf starts with Grassy Terrain
 - Battles in long grass on Routes 119 and 120 start with Grassy Terrain (unless it's a thunderstorm)
 - All Pokémon in the Dragon egg group that could not already learn Dragon Breath (with the exception of Magikarp and Trapinch) now get it as an egg move. This is reflected in the species changes below
+- Moves are no longer replaced if a Pokémon levels up in the daycare
 
 ### Quality of Life
 - Shiny Pokémon can no longer spawn until you get Poké Balls

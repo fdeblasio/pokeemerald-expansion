@@ -107,6 +107,7 @@ static const u16 sWeatherChangingMoves[] = {
     MOVE_RAIN_DANCE,
     MOVE_SANDSTORM,
     MOVE_HAIL,
+    MOVE_SNOWSCAPE,
     MOVE_SUNNY_DAY,
 };
 

@@ -4595,6 +4595,7 @@ static const struct LevelUpMove sFlareonLevelUpLearnset[] = {
 #if P_GEN_2_CROSS_EVOS
 static const struct LevelUpMove sEspeonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_CONFUSION),
+    LEVEL_UP_MOVE( 1, MOVE_POWER_GEM),
     LEVEL_UP_MOVE( 1, MOVE_REFRESH),
     LEVEL_UP_MOVE( 1, MOVE_TRUMP_CARD),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),

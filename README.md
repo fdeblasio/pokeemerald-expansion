@@ -2010,7 +2010,11 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Hippopotas/Hippowdon:
     - Learn Bulldoze, Stomping Tantrum, Scorching Sands, and High Horsepower by level up
 
+- Snover:
+    - Type: Grass/Ice->Ice/Grass
+
 - Abomasnow:
+    - Type: Grass/Ice->Ice/Grass
     - Learns Icicle Crash by TM
 
 - Rotom:
@@ -2559,6 +2563,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Dragon Breath by Egg Move
 
 - Drampa:
+    - Type: Normal/Dragon->Dragon/Normal
     - Learns Swift by level up
 
 - Tapu Koko:

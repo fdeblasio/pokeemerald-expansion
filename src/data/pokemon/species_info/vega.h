@@ -453,7 +453,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_WHITE_SMOKE, ABILITY_DROUGHT, ABILITY_SHELL_ARMOR },
+        .abilities = { ABILITY_WHITE_SMOKE, ABILITY_DROUGHT, ABILITY_SOLID_ROCK },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Galavagos"),
         DEX_INFO(GALAVAGOS),
@@ -625,17 +625,16 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #endif //P_FAMILY_PACHIRISU
 
 //Sableater, originally Sableye evolution
-//Rock or Ground?
 #if P_FAMILY_GEHEMOTH
     [SPECIES_GEHEMOTH] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 95,
+        .baseHP        = 85,
+        .baseAttack    = 105,
         .baseDefense   = 85,
-        .baseSpAttack  = 90,
+        .baseSpAttack  = 100,
         .baseSpDefense = 75,
         .baseSpeed     = 70,
-        .types = MON_TYPES(TYPE_DARK, TYPE_GHOST),
+        .types = MON_TYPES(TYPE_ROCK, TYPE_GHOST),
         .catchRate = 90,
         .expYield = 178,
         .evYield_Attack = 2,
@@ -645,7 +644,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
-        .abilities = { ABILITY_KEEN_EYE, ABILITY_KEEN_EYE, ABILITY_PRANKSTER },
+        .abilities = { ABILITY_TINTED_LENS, ABILITY_EARTH_EATER, ABILITY_SOLID_ROCK },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Gehemoth"),
         DEX_INFO(GEHEMOTH),

@@ -1733,6 +1733,12 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Shieldon/Bastiodon:
     - Received Rock Head as a second ability
 
+- Vespiquen:
+    - Held items:
+        - Honey: 0%->50%
+        - Max Honey: 0%->5%
+        - Poison Barb: 5%->0%
+
 - Cherrim Sunshine Form:
     - Atk: 60->90
     - Sp. Def: 78->117

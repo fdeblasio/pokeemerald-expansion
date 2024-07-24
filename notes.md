@@ -58,13 +58,6 @@ upcoming
     - Even just reducing to two or three rematches would save space
 - Edit contests?/Contests overhaul
 - Check that Waterfall replacement is good (getting item properly, etc.)
-- Just make new tutors in towns or Battle Frontier
-- TMs/Tutors
-    - Hyper Voice tutor->TM (or earlier Tutor)?
-    - Temper Flare (with better STAB distribution)
-    - Drill Run (remove it from new level up learnsets)
-    - Aqua Tail since it now has 100% accuracy
-    - Ice Spinner? (100% accurate Icicle Crash might have better STAB distribution)
 
 ### Meta
 - More simple modifications: https://www.pokecommunity.com/showthread.php?t=416647&page=1
@@ -143,12 +136,6 @@ upcoming
     - Revert some Nature Power moves for a more varied effect (waiting on refactor PR)
     - Have the inside of Mt. Pyre use Burial Ground terrain?
 - Just make new tutors in towns or Battle Frontier
-- TMs/Tutors
-    - Hyper Voice tutor->TM (or earlier Tutor)?
-    - Temper Flare (with better STAB distribution)
-    - Drill Run (remove it from new level up learnsets)
-    - Aqua Tail since it now has 100% accuracy
-    - Ice Spinner? (100% accurate Icicle Crash might have better STAB distribution)
 - Possible Move Updates:
     - Infestation: 20->35
     - Parabolic Charge: 65->75

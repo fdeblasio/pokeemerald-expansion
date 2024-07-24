@@ -497,6 +497,13 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Substitute
 - Swagger
 
+#### Ever Grande:
+- Hyper Voice
+- Aqua Tail
+- Drill Run
+- High Horsepower
+- Temper Flare
+
 #### Battle Frontier Left:
 - Rising Voltage
 - Grassy Glide
@@ -519,7 +526,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Misty Terrain
 - Psychic Terrain
 - Iron Defense
-- Hyper Voice
+- Ice Spinner
 - Dragon Dance
 - Defense Curl
 - Endure
@@ -1042,7 +1049,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Bug Bite at level 7 instead of 9
 
 - Beedrill (not in main game):
-    - Learns Leech Life and Drill Run by level up
+    - Learns Leech Life by level up
 
 - Pidgey/Pidgeotto/Pidgeot (not in main game):
     - Learn Peck by level up
@@ -1138,7 +1145,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Drain Punch by TM
 
 - Dodrio:
-    - Learns Body Slam and Drill Run by level up
+    - Learns Body Slam by level up
 
 - Lickitung (not in main game):
     - Atk: 55->65
@@ -1183,7 +1190,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Aqua Jet by level up
 
 - Seaking:
-    - Learns Aqua Jet and Drill Run by level up
+    - Learns Aqua Jet by level up
     - Learns Liquidation by TM
 
 - Pinsir:

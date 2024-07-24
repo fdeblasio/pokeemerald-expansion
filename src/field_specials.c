@@ -2510,7 +2510,7 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
         COMPOUND_STRING("Misty Terrain{CLEAR_TO 0x64}1BP"),
         COMPOUND_STRING("Psychic Terrain{CLEAR_TO 0x64}1BP"),
         COMPOUND_STRING("Iron Defense{CLEAR_TO 0x64}1BP"),
-        COMPOUND_STRING("Nasty Plot{CLEAR_TO 0x64}1BP"),
+        COMPOUND_STRING("Ice Spinner{CLEAR_TO 0x64}1BP"),
         COMPOUND_STRING("Dragon Dance{CLEAR_TO 0x64}1BP"),
         COMPOUND_STRING("Defense Curl{CLEAR_TO 0x64}1BP"),
         COMPOUND_STRING("Endure{CLEAR_TO 0x64}1BP"),

@@ -78,7 +78,7 @@ BattleFrontier_Lounge7_EventScript_ChooseRightTutorMove::
 	case 2, BattleFrontier_Lounge7_EventScript_MistyTerrain
 	case 3, BattleFrontier_Lounge7_EventScript_PsychicTerrain
 	case 4, BattleFrontier_Lounge7_EventScript_IronDefense
-	case 5, BattleFrontier_Lounge7_EventScript_HyperVoice
+	case 5, BattleFrontier_Lounge7_EventScript_IceSpinner
 	case 6, BattleFrontier_Lounge7_EventScript_DragonDance
 	case 7, BattleFrontier_Lounge7_EventScript_DefenseCurl
 	case 8, BattleFrontier_Lounge7_EventScript_Endure
@@ -186,8 +186,8 @@ BattleFrontier_Lounge7_EventScript_IronDefense::
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
-BattleFrontier_Lounge7_EventScript_HyperVoice::
-	setvar VAR_0x8005, MOVE_HYPER_VOICE
+BattleFrontier_Lounge7_EventScript_IceSpinner::
+	setvar VAR_0x8005, MOVE_ICE_SPINNER
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 

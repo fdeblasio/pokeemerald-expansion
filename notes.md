@@ -97,7 +97,6 @@ upcoming
 - Xaman's TM Case: https://www.pokecommunity.com/showpost.php?p=10378278
 
 ### Trainers
-- Battle Archie at Oceanic Museum?
 - Battle Archie/Courtney at Meteor Falls?
 - Give grunts consistent teams/genders?
     - Give them names?
@@ -124,8 +123,6 @@ upcoming
     - Leaders would have optimal Abilities/EVs/IVs/Natures
     - Add Speed increasing natures to Triathletes
 - Use Good Ruby's palette shifting to give trainers more unique looks? (https://github.com/Doesnty/goodruby/commit/ff53bbab592865b49f345342205b41cb869abf27)
-- Psychics can use Psyduck, Golduck, and Farigiraf now
-    - Update Mossdeep Gym if there are duplicates of other Pokémon
 - Vito can use TMs
 - Gym leaders/Steven/Breeders can have Hidden Abilities
 
@@ -168,6 +165,7 @@ upcoming
     - Mew?
 - Combine Centers and Marts?
     - Use left wall where escalators used to be
+    - Tileset doesn't seem to support it
 
 ### Battle Frontier
 - Battle Tent Pokémon/EVs?

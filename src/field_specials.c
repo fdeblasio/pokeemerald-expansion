@@ -2501,7 +2501,7 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
         gText_MistyTerrain1BP,
         gText_PsychicTerrain1BP,
         gText_IronDefense1BP,
-        gText_NastyPlot1BP,
+        gText_IceSpinner1BP,
         gText_DragonDance1BP,
         gText_DefenseCurl1BP,
         gText_Endure1BP,

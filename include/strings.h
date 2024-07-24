@@ -680,7 +680,7 @@ extern const u8 gText_GrassyTerrain1BP[];
 extern const u8 gText_MistyTerrain1BP[];
 extern const u8 gText_PsychicTerrain1BP[];
 extern const u8 gText_IronDefense1BP[];
-extern const u8 gText_NastyPlot1BP[];
+extern const u8 gText_IceSpinner1BP[];
 extern const u8 gText_DragonDance1BP[];
 extern const u8 gText_DefenseCurl1BP[];
 extern const u8 gText_Endure1BP[];

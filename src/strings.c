@@ -951,22 +951,20 @@ const u8 gText_ScorchingSands1BP[] = _("Scorching Sands{CLEAR_TO 0x64}1BP");
 const u8 gText_KnockOff1BP[] = _("Knock Off{CLEAR_TO 0x64}1BP");
 const u8 gText_MegaPunch1BP[] = _("Mega Punch{CLEAR_TO 0x64}1BP");
 const u8 gText_MegaKick1BP[] = _("Mega Kick{CLEAR_TO 0x64}1BP");
-const u8 gText_Swift1BP[] = _("Swift{CLEAR_TO 0x64}1BP");
 const u8 gText_ElectricTerrain1BP[] = _("Electric Terrain{CLEAR_TO 0x64}1BP");
 const u8 gText_GrassyTerrain1BP[] = _("Grassy Terrain{CLEAR_TO 0x64}1BP");
 const u8 gText_MistyTerrain1BP[] = _("Misty Terrain{CLEAR_TO 0x64}1BP");
 const u8 gText_PsychicTerrain1BP[] = _("Psychic Terrain{CLEAR_TO 0x64}1BP");
 const u8 gText_IronDefense1BP[] = _("Iron Defense{CLEAR_TO 0x64}1BP");
-const u8 gText_NastyPlot1BP[] = _("Nasty Plot{CLEAR_TO 0x64}1BP");
+const u8 gText_IceSpinner1BP[] = _("Ice Spinner{CLEAR_TO 0x64}1BP");
 const u8 gText_DragonDance1BP[] = _("Dragon Dance{CLEAR_TO 0x64}1BP");
 const u8 gText_DefenseCurl1BP[] = _("Defense Curl{CLEAR_TO 0x64}1BP");
 const u8 gText_Endure1BP[] = _("Endure{CLEAR_TO 0x64}1BP");
 const u8 gText_IcyWind1BP[] = _("Icy Wind{CLEAR_TO 0x64}1BP");
+const u8 gText_Swift1BP[] = _("Swift{CLEAR_TO 0x64}1BP");
 const u8 gText_SeismicToss1BP[] = _("Seismic Toss{CLEAR_TO 0x64}1BP");
 const u8 gText_Counter1BP[] = _("Counter{CLEAR_TO 0x64}1BP");
 const u8 gText_DreamEater1BP[] = _("Dream Eater{CLEAR_TO 0x64}1BP");
-const u8 gText_Snore1BP[] = _("Snore{CLEAR_TO 0x64}1BP");
-const u8 gText_MudSlap1BP[] = _("Mud Slap{CLEAR_TO 0x64}1BP");
 
 #if OW_POISON_DAMAGE < GEN_4
 const u8 gText_PkmnFainted_FldPsn[] = _("{STR_VAR_1} fainted…\p\n");

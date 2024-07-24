@@ -218,6 +218,76 @@ MoveTutor_EventScript_ExplosionTaught::
 	release
 	end
 
+MoveTutor_EventScript_HyperVoiceTutor::
+	lock
+	faceplayer
+	msgbox MoveTutor_Text_HyperVoiceTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_EverGrandeMoveDeclined
+	msgbox MoveTutor_Text_EverGrandeWhichMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, MOVE_ROLLOUT
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_EverGrandeMoveDeclined
+	goto MoveTutor_EventScript_EverGrandeMoveTaught
+	end
+
+MoveTutor_EventScript_AquaTailTutor::
+	lock
+	faceplayer
+	msgbox MoveTutor_Text_AquaTailTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_EverGrandeMoveDeclined
+	msgbox MoveTutor_Text_EverGrandeWhichMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, MOVE_ROLLOUT
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_EverGrandeMoveDeclined
+	goto MoveTutor_EventScript_EverGrandeMoveTaught
+	end
+
+MoveTutor_EventScript_DrillRunTutor::
+	lock
+	faceplayer
+	msgbox MoveTutor_Text_DrillRunTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_EverGrandeMoveDeclined
+	msgbox MoveTutor_Text_EverGrandeWhichMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, MOVE_ROLLOUT
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_EverGrandeMoveDeclined
+	goto MoveTutor_EventScript_EverGrandeMoveTaught
+	end
+
+MoveTutor_EventScript_HighHorsepowerTutor::
+	lock
+	faceplayer
+	msgbox MoveTutor_Text_HighHorsepowerTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_EverGrandeMoveDeclined
+	msgbox MoveTutor_Text_EverGrandeWhichMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, MOVE_ROLLOUT
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_EverGrandeMoveDeclined
+	goto MoveTutor_EventScript_EverGrandeMoveTaught
+	end
+
+MoveTutor_EventScript_TemperFlareTutor::
+	lock
+	faceplayer
+	msgbox MoveTutor_Text_TemperFlareTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_EverGrandeMoveDeclined
+	msgbox MoveTutor_Text_EverGrandeWhichMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, MOVE_ROLLOUT
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_EverGrandeMoveDeclined
+	goto MoveTutor_EventScript_EverGrandeMoveTaught
+	end
+
+MoveTutor_EventScript_EverGrandeMoveDeclined::
+	msgbox MoveTutor_Text_EverGrandeDeclined, MSGBOX_DEFAULT
+	release
+	end
+
+MoveTutor_EventScript_EverGrandeMoveTaught::
+	msgbox MoveTutor_Text_EverGrandeTaught, MSGBOX_DEFAULT
+	release
+	end
+
 MoveTutor_EventScript_OpenPartyMenu::
 	special ChooseMonForMoveTutor
 	waitstate

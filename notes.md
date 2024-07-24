@@ -94,19 +94,6 @@ upcoming
     - Grass
     - Water 1/2/3
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
-- Add in some Vega evolutions?
-    - Adnokana
-    - Cheauking
-    - Sandrill
-    - Ranconette/Manneking
-    - Valentide
-    - Galavagos
-    - Auldsparce
-    - R'duckulus
-    - Sableater/Gehemoth (as seperate)
-    - Ledybulk
-    - Rougella/Heilareina
-    - Pachirikku
 
 ### Items
 - Get Exp. Share from Steven instead of from Mr. Stone after

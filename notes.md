@@ -41,8 +41,7 @@ upcoming
 ## To Do:
 ### Next playthrough
 - Consolidate flags
-    - FLAG_BADGE03_GET, FLAG_HIDE_MAUVILLE_ROCK_SMASH_TIP_GUY
-    - FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA
+    - FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA, FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY
 - Move construction worker in order to make Safari Zone postgame-only
 - Get Exp. Share from Steven instead of from Mr. Stone after
     - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game
@@ -63,10 +62,8 @@ upcoming
 - Pret wiki tutorials:       https://github.com/pret/pokeemerald/wiki/Tutorials
 - Combine two meta files (notes.md and README.md)?
     Include more changes, even if general like Battle Frontier edits
-- Before a new game, put Trainer numbers in order
 - Consolidate flags
-    - FLAG_DEFEATED_MAUVILLE_GYM, FLAG_BADGE03_GET, FLAG_HIDE_MAUVILLE_ROCK_SMASH_TIP_GUY
-    - FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA
+    - FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA, FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY
 - Remove unused code
     - Vanilla code
 - Organize changes better

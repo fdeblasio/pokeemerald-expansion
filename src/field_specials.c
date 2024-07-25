@@ -357,9 +357,9 @@ u8 GetSSTidalLocation(s8 *mapGroup, s8 *mapNum, s16 *x, s16 *y)
     return SS_TIDAL_LOCATION_CURRENTS;
 }
 
-bool32 ShouldDoWallyCall(void)
+bool32 ShouldDoDuncanCall(void)
 {
-    if (FlagGet(FLAG_ENABLE_FIRST_WALLY_POKENAV_CALL))
+    if (FlagGet(FLAG_ENABLE_FIRST_DUNCAN_POKENAV_CALL))
     {
         switch (gMapHeader.mapType)
         {
@@ -367,7 +367,7 @@ bool32 ShouldDoWallyCall(void)
         case MAP_TYPE_CITY:
         case MAP_TYPE_ROUTE:
         case MAP_TYPE_OCEAN_ROUTE:
-            if (++(*GetVarPointer(VAR_WALLY_CALL_STEP_COUNTER)) < 250)
+            if (++(*GetVarPointer(VAR_DUNCAN_CALL_STEP_COUNTER)) < 250)
                 return FALSE;
             break;
         default:
@@ -553,21 +553,21 @@ void SpawnLinkPartnerObjectEvent(void)
             case VERSION_RUBY:
             case VERSION_SAPPHIRE:
                 if (gLinkPlayers[i].gender == 0)
-                    linkSpriteId = OBJ_EVENT_GFX_LINK_RS_BRENDAN;
+                    linkSpriteId = OBJ_EVENT_GFX_LINK_RS_KYLE;
                 else
-                    linkSpriteId = OBJ_EVENT_GFX_LINK_RS_MAY;
+                    linkSpriteId = OBJ_EVENT_GFX_LINK_RS_KELLI;
                 break;
             case VERSION_EMERALD:
                 if (gLinkPlayers[i].gender == 0)
-                    linkSpriteId = OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL;
+                    linkSpriteId = OBJ_EVENT_GFX_RIVAL_KYLE_NORMAL;
                 else
-                    linkSpriteId = OBJ_EVENT_GFX_RIVAL_MAY_NORMAL;
+                    linkSpriteId = OBJ_EVENT_GFX_RIVAL_KELLI_NORMAL;
                 break;
             default:
                 if (gLinkPlayers[i].gender == 0)
-                    linkSpriteId = OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL;
+                    linkSpriteId = OBJ_EVENT_GFX_RIVAL_KYLE_NORMAL;
                 else
-                    linkSpriteId = OBJ_EVENT_GFX_RIVAL_MAY_NORMAL;
+                    linkSpriteId = OBJ_EVENT_GFX_RIVAL_KELLI_NORMAL;
                 break;
             }
             SpawnSpecialObjectEventParameterized(linkSpriteId, movementTypes[j], 240 - i, coordOffsets[j][0] + x + MAP_OFFSET, coordOffsets[j][1] + y + MAP_OFFSET, 0);
@@ -584,10 +584,10 @@ static void LoadLinkPartnerObjectEventSpritePalette(u16 graphicsId, u8 localEven
     u8 adjustedPaletteNum;
     // Note: This temp var is necessary; paletteNum += 6 doesn't match.
     adjustedPaletteNum = paletteNum + 6;
-    if (graphicsId == OBJ_EVENT_GFX_LINK_RS_BRENDAN ||
-        graphicsId == OBJ_EVENT_GFX_LINK_RS_MAY ||
-        graphicsId == OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL ||
-        graphicsId == OBJ_EVENT_GFX_RIVAL_MAY_NORMAL)
+    if (graphicsId == OBJ_EVENT_GFX_LINK_RS_KYLE ||
+        graphicsId == OBJ_EVENT_GFX_LINK_RS_KELLI ||
+        graphicsId == OBJ_EVENT_GFX_RIVAL_KYLE_NORMAL ||
+        graphicsId == OBJ_EVENT_GFX_RIVAL_KELLI_NORMAL)
     {
         u8 obj = GetObjectEventIdByLocalIdAndMap(localEventId, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup);
         if (obj != OBJECT_EVENTS_COUNT)
@@ -598,16 +598,16 @@ static void LoadLinkPartnerObjectEventSpritePalette(u16 graphicsId, u8 localEven
 
             switch (graphicsId)
             {
-            case OBJ_EVENT_GFX_LINK_RS_BRENDAN:
-                LoadPalette(gObjectEventPal_RubySapphireBrendan, OBJ_PLTT_ID(adjustedPaletteNum), PLTT_SIZE_4BPP);
+            case OBJ_EVENT_GFX_LINK_RS_KYLE:
+                LoadPalette(gObjectEventPal_RubySapphireKyle, OBJ_PLTT_ID(adjustedPaletteNum), PLTT_SIZE_4BPP);
                 break;
-            case OBJ_EVENT_GFX_LINK_RS_MAY:
+            case OBJ_EVENT_GFX_LINK_RS_KELLI:
                 LoadPalette(gObjectEventPal_RubySapphireMay, OBJ_PLTT_ID(adjustedPaletteNum), PLTT_SIZE_4BPP);
                 break;
-            case OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL:
-                LoadPalette(gObjectEventPal_Brendan, OBJ_PLTT_ID(adjustedPaletteNum), PLTT_SIZE_4BPP);
+            case OBJ_EVENT_GFX_RIVAL_KYLE_NORMAL:
+                LoadPalette(gObjectEventPal_Kyle, OBJ_PLTT_ID(adjustedPaletteNum), PLTT_SIZE_4BPP);
                 break;
-            case OBJ_EVENT_GFX_RIVAL_MAY_NORMAL:
+            case OBJ_EVENT_GFX_RIVAL_KELLI_NORMAL:
                 LoadPalette(gObjectEventPal_May, OBJ_PLTT_ID(adjustedPaletteNum), PLTT_SIZE_4BPP);
                 break;
             }
@@ -975,11 +975,11 @@ static bool32 IsBuildingPCTile(u32 tileId)
 
 static bool32 IsPlayerHousePCTile(u32 tileId)
 {
-    return gMapHeader.mapLayout->secondaryTileset == &gTileset_BrendansMaysHouse
-        && (tileId == METATILE_BrendansMaysHouse_BrendanPC_On
-            || tileId == METATILE_BrendansMaysHouse_BrendanPC_Off
-            || tileId == METATILE_BrendansMaysHouse_MayPC_On
-            || tileId == METATILE_BrendansMaysHouse_MayPC_Off);
+    return gMapHeader.mapLayout->secondaryTileset == &gTileset_KylesMaysHouse
+        && (tileId == METATILE_KylesMaysHouse_KylePC_On
+            || tileId == METATILE_KylesMaysHouse_KylePC_Off
+            || tileId == METATILE_KylesMaysHouse_MayPC_On
+            || tileId == METATILE_KylesMaysHouse_MayPC_Off);
 }
 
 static bool8 IsPlayerInFrontOfPC(void)
@@ -1069,20 +1069,20 @@ static void PCTurnOnEffect_SetMetatile(s16 isScreenOn, s8 dx, s8 dy)
         // Screen is on, set it off
         if (gSpecialVar_0x8004 == PC_LOCATION_OTHER)
             metatileId = METATILE_Building_PC_Off;
-        else if (gSpecialVar_0x8004 == PC_LOCATION_BRENDANS_HOUSE)
-            metatileId = METATILE_BrendansMaysHouse_BrendanPC_Off;
-        else if (gSpecialVar_0x8004 == PC_LOCATION_MAYS_HOUSE)
-            metatileId = METATILE_BrendansMaysHouse_MayPC_Off;
+        else if (gSpecialVar_0x8004 == PC_LOCATION_KYLES_HOUSE)
+            metatileId = METATILE_KylesMaysHouse_KylePC_Off;
+        else if (gSpecialVar_0x8004 == PC_LOCATION_KELLIS_HOUSE)
+            metatileId = METATILE_KylesMaysHouse_MayPC_Off;
     }
     else
     {
         // Screen is off, set it on
         if (gSpecialVar_0x8004 == PC_LOCATION_OTHER)
             metatileId = METATILE_Building_PC_On;
-        else if (gSpecialVar_0x8004 == PC_LOCATION_BRENDANS_HOUSE)
-            metatileId = METATILE_BrendansMaysHouse_BrendanPC_On;
-        else if (gSpecialVar_0x8004 == PC_LOCATION_MAYS_HOUSE)
-            metatileId = METATILE_BrendansMaysHouse_MayPC_On;
+        else if (gSpecialVar_0x8004 == PC_LOCATION_KYLES_HOUSE)
+            metatileId = METATILE_KylesMaysHouse_KylePC_On;
+        else if (gSpecialVar_0x8004 == PC_LOCATION_KELLIS_HOUSE)
+            metatileId = METATILE_KylesMaysHouse_MayPC_On;
     }
     MapGridSetMetatileIdAt(gSaveBlock1Ptr->pos.x + dx + MAP_OFFSET, gSaveBlock1Ptr->pos.y + dy + MAP_OFFSET, metatileId | MAPGRID_COLLISION_MASK);
 }
@@ -1122,10 +1122,10 @@ static void PCTurnOffEffect(void)
 
     if (gSpecialVar_0x8004 == PC_LOCATION_OTHER)
         metatileId = METATILE_Building_PC_Off;
-    else if (gSpecialVar_0x8004 == PC_LOCATION_BRENDANS_HOUSE)
-        metatileId = METATILE_BrendansMaysHouse_BrendanPC_Off;
-    else if (gSpecialVar_0x8004 == PC_LOCATION_MAYS_HOUSE)
-        metatileId = METATILE_BrendansMaysHouse_MayPC_Off;
+    else if (gSpecialVar_0x8004 == PC_LOCATION_KYLES_HOUSE)
+        metatileId = METATILE_KylesMaysHouse_KylePC_Off;
+    else if (gSpecialVar_0x8004 == PC_LOCATION_KELLIS_HOUSE)
+        metatileId = METATILE_KylesMaysHouse_MayPC_Off;
 
     MapGridSetMetatileIdAt(gSaveBlock1Ptr->pos.x + dx + MAP_OFFSET, gSaveBlock1Ptr->pos.y + dy + MAP_OFFSET, metatileId | MAPGRID_COLLISION_MASK);
     DrawWholeMapView();
@@ -1441,7 +1441,7 @@ void SetShoalItemFlag(u16 unused)
     FlagSet(FLAG_SYS_SHOAL_ITEM);
 }
 
-void LoadWallyZigzagoon(void)
+void LoadDuncanZigzagoon(void)
 {
     u16 monData;
     CreateMon(&gPlayerParty[0], NORMAN_LEND, 7, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
@@ -2760,9 +2760,9 @@ void SetBattleTowerLinkPlayerGfx(void)
     for (i = 0; i < 2; i++)
     {
         if (gLinkPlayers[i].gender == MALE)
-            VarSet(VAR_OBJ_GFX_ID_F - i, OBJ_EVENT_GFX_BRENDAN_NORMAL);
+            VarSet(VAR_OBJ_GFX_ID_F - i, OBJ_EVENT_GFX_KYLE_NORMAL);
         else
-            VarSet(VAR_OBJ_GFX_ID_F - i, OBJ_EVENT_GFX_RIVAL_MAY_NORMAL);
+            VarSet(VAR_OBJ_GFX_ID_F - i, OBJ_EVENT_GFX_RIVAL_KELLI_NORMAL);
     }
 }
 

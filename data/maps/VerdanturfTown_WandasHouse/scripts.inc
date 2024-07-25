@@ -1,36 +1,36 @@
 VerdanturfTown_WandasHouse_MapScripts::
 	.byte 0
 
-VerdanturfTown_WandasHouse_EventScript_Wally::
+VerdanturfTown_WandasHouse_EventScript_Duncan::
 	lock
 	faceplayer
-	goto_if_set FLAG_WALLY_SPEECH, VerdanturfTown_WandasHouse_EventScript_WallyShortSpeech
+	goto_if_set FLAG_DUNCAN_SPEECH, VerdanturfTown_WandasHouse_EventScript_DuncanShortSpeech
 	msgbox VerdanturfTown_WandasHouse_Text_StrongerSpeech, MSGBOX_DEFAULT
-	setflag FLAG_WALLY_SPEECH
+	setflag FLAG_DUNCAN_SPEECH
 	release
 	end
 
-VerdanturfTown_WandasHouse_EventScript_WallyShortSpeech::
+VerdanturfTown_WandasHouse_EventScript_DuncanShortSpeech::
 	msgbox VerdanturfTown_WandasHouse_Text_StrongerSpeechShort, MSGBOX_DEFAULT
 	release
 	end
 
-VerdanturfTown_WandasHouse_EventScript_WallysUncle::
+VerdanturfTown_WandasHouse_EventScript_DuncansUncle::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_WALLY_VICTORY_ROAD, VerdanturfTown_WandasHouse_EventScript_WallysUncleEverGrande
-	goto_if_set FLAG_BADGE04_GET, VerdanturfTown_WandasHouse_EventScript_WallysUncleSlippedOff
-	msgbox VerdanturfTown_WandasHouse_Text_WallysNextDoor, MSGBOX_DEFAULT
+	goto_if_set FLAG_DEFEATED_DUNCAN_VICTORY_ROAD, VerdanturfTown_WandasHouse_EventScript_DuncansUncleEverGrande
+	goto_if_set FLAG_BADGE04_GET, VerdanturfTown_WandasHouse_EventScript_DuncansUncleSlippedOff
+	msgbox VerdanturfTown_WandasHouse_Text_DuncansNextDoor, MSGBOX_DEFAULT
 	release
 	end
 
-VerdanturfTown_WandasHouse_EventScript_WallysUncleSlippedOff::
-	msgbox VerdanturfTown_WandasHouse_Text_WallySlippedOff, MSGBOX_DEFAULT
+VerdanturfTown_WandasHouse_EventScript_DuncansUncleSlippedOff::
+	msgbox VerdanturfTown_WandasHouse_Text_DuncanSlippedOff, MSGBOX_DEFAULT
 	release
 	end
 
-VerdanturfTown_WandasHouse_EventScript_WallysUncleEverGrande::
-	msgbox VerdanturfTown_WandasHouse_Text_WallyGoneThatFar, MSGBOX_DEFAULT
+VerdanturfTown_WandasHouse_EventScript_DuncansUncleEverGrande::
+	msgbox VerdanturfTown_WandasHouse_Text_DuncanGoneThatFar, MSGBOX_DEFAULT
 	release
 	end
 
@@ -42,8 +42,8 @@ VerdanturfTown_WandasHouse_EventScript_Wanda::
 	lock
 	faceplayer
 	goto_if_set FLAG_BADGE04_GET, VerdanturfTown_WandasHouse_EventScript_WandaDontWorry
-	goto_if_set FLAG_DEFEATED_WALLY_MAUVILLE, VerdanturfTown_WandasHouse_EventScript_MeetWanda
-	msgbox VerdanturfTown_WandasHouse_Text_DontWorryAboutWally, MSGBOX_DEFAULT
+	goto_if_set FLAG_DEFEATED_DUNCAN_MAUVILLE, VerdanturfTown_WandasHouse_EventScript_MeetWanda
+	msgbox VerdanturfTown_WandasHouse_Text_DontWorryAboutDuncan, MSGBOX_DEFAULT
 	release
 	end
 
@@ -53,37 +53,37 @@ VerdanturfTown_WandasHouse_EventScript_MeetWanda::
 	end
 
 VerdanturfTown_WandasHouse_EventScript_WandaDontWorry::
-	msgbox VerdanturfTown_WandasHouse_Text_DontWorryAboutWally, MSGBOX_DEFAULT
+	msgbox VerdanturfTown_WandasHouse_Text_DontWorryAboutDuncan, MSGBOX_DEFAULT
 	release
 	end
 
-VerdanturfTown_WandasHouse_EventScript_WallysAunt::
+VerdanturfTown_WandasHouse_EventScript_DuncansAunt::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_WALLY_VICTORY_ROAD, VerdanturfTown_WandasHouse_EventScript_WallysAuntEverGrande
-	goto_if_set FLAG_BADGE04_GET, VerdanturfTown_WandasHouse_EventScript_WallysAuntAnythingHappened
-	goto_if_set FLAG_RUSTURF_TUNNEL_OPENED, VerdanturfTown_WandasHouse_EventScript_WallysAuntTunnelOpen
+	goto_if_set FLAG_DEFEATED_DUNCAN_VICTORY_ROAD, VerdanturfTown_WandasHouse_EventScript_DuncansAuntEverGrande
+	goto_if_set FLAG_BADGE04_GET, VerdanturfTown_WandasHouse_EventScript_DuncansAuntAnythingHappened
+	goto_if_set FLAG_RUSTURF_TUNNEL_OPENED, VerdanturfTown_WandasHouse_EventScript_DuncansAuntTunnelOpen
 	msgbox VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendDriven, MSGBOX_DEFAULT
 	release
 	end
 
-VerdanturfTown_WandasHouse_EventScript_WallysAuntTunnelOpen::
+VerdanturfTown_WandasHouse_EventScript_DuncansAuntTunnelOpen::
 	msgbox VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendWasDigging, MSGBOX_DEFAULT
 	release
 	end
 
-VerdanturfTown_WandasHouse_EventScript_WallysAuntAnythingHappened::
-	msgbox VerdanturfTown_WandasHouse_Text_IfAnythingHappenedToWally, MSGBOX_DEFAULT
+VerdanturfTown_WandasHouse_EventScript_DuncansAuntAnythingHappened::
+	msgbox VerdanturfTown_WandasHouse_Text_IfAnythingHappenedToDuncan, MSGBOX_DEFAULT
 	release
 	end
 
-VerdanturfTown_WandasHouse_EventScript_WallysAuntEverGrande::
-	msgbox VerdanturfTown_WandasHouse_Text_WallyWasInEverGrande, MSGBOX_DEFAULT
+VerdanturfTown_WandasHouse_EventScript_DuncansAuntEverGrande::
+	msgbox VerdanturfTown_WandasHouse_Text_DuncanWasInEverGrande, MSGBOX_DEFAULT
 	release
 	end
 
 VerdanturfTown_WandasHouse_Text_StrongerSpeech:
-	.string "Wally: I lost to you, {PLAYER}, but I'm\n"
+	.string "Duncan: I lost to you, {PLAYER}, but I'm\n"
 	.string "not feeling down anymore.\p"
 	.string "Because I have a new purpose in life.\n"
 	.string "Together with Ralph, I'm going\l"
@@ -95,29 +95,29 @@ VerdanturfTown_WandasHouse_Text_StrongerSpeech:
 	.string "to another battle.$"
 
 VerdanturfTown_WandasHouse_Text_StrongerSpeechShort:
-	.string "Wally: Please watch me, {PLAYER}.\n"
+	.string "Duncan: Please watch me, {PLAYER}.\n"
 	.string "I'm going to get stronger than you.\p"
 	.string "When I do, I'm going to challenge you\n"
 	.string "to another battle.$"
 
-VerdanturfTown_WandasHouse_Text_WallysNextDoor:
+VerdanturfTown_WandasHouse_Text_DuncansNextDoor:
 	.string "Uncle: Oh! {PLAYER}{KUN}!\n"
-	.string "Wally's next door.\p"
+	.string "Duncan's next door.\p"
 	.string "But, boy, there's something I have to\n"
 	.string "tell you.\p"
 	.string "This natural environment is doing\n"
-	.string "wonders for Wally's health.\p"
+	.string "wonders for Duncan's health.\p"
 	.string "Maybe it's not just the environment.\n"
 	.string "It could be Pokémon that are giving\l"
 	.string "the boy hope.$"
 
-VerdanturfTown_WandasHouse_Text_WallySlippedOff:
-	.string "Wally's gone away…\n"
+VerdanturfTown_WandasHouse_Text_DuncanSlippedOff:
+	.string "Duncan's gone away…\n"
 	.string "He slipped off on his own…$"
 
-VerdanturfTown_WandasHouse_Text_WallyGoneThatFar:
+VerdanturfTown_WandasHouse_Text_DuncanGoneThatFar:
 	.string "Uncle: Is that right?\n"
-	.string "Wally's gone away that far all by\l"
+	.string "Duncan's gone away that far all by\l"
 	.string "himself…\p"
 	.string "Well, I have to give him credit--he is\n"
 	.string "my little brother's son.$"
@@ -125,15 +125,15 @@ VerdanturfTown_WandasHouse_Text_WallyGoneThatFar:
 VerdanturfTown_WandasHouse_Text_MeetWanda:
 	.string "Wanda: You are?\n"
 	.string "Oh, right, I get it!\p"
-	.string "You're the {PLAYER} who Wally was\n"
+	.string "You're the {PLAYER} who Duncan was\n"
 	.string "telling me about.\p"
-	.string "I'm Wally's cousin.\n"
+	.string "I'm Duncan's cousin.\n"
 	.string "Glad to meet you!\p"
-	.string "I think Wally's become a lot more lively\n"
+	.string "I think Duncan's become a lot more lively\n"
 	.string "and healthy since he came here.$"
 
-VerdanturfTown_WandasHouse_Text_DontWorryAboutWally:
-	.string "Wanda: Don't worry about Wally.\n"
+VerdanturfTown_WandasHouse_Text_DontWorryAboutDuncan:
+	.string "Wanda: Don't worry about Duncan.\n"
 	.string "He'll be just fine.\p"
 	.string "I know my little cousin, and he has\n"
 	.string "Pokémon with him, too.$"
@@ -156,13 +156,13 @@ VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendWasDigging:
 	.string "was digging the tunnel by hand!\p"
 	.string "It's so incredible!$"
 
-VerdanturfTown_WandasHouse_Text_IfAnythingHappenedToWally:
-	.string "If anything were to happen to Wally,\n"
+VerdanturfTown_WandasHouse_Text_IfAnythingHappenedToDuncan:
+	.string "If anything were to happen to Duncan,\n"
 	.string "I would never be able to look his\l"
 	.string "parents in Petalburg in the eye…$"
 
-VerdanturfTown_WandasHouse_Text_WallyWasInEverGrande:
-	.string "Wally was in Ever Grande?\p"
+VerdanturfTown_WandasHouse_Text_DuncanWasInEverGrande:
+	.string "Duncan was in Ever Grande?\p"
 	.string "His parents in Petalburg would be\n"
 	.string "astonished to hear that!$"
 

@@ -116,7 +116,7 @@ struct ListBuffer2 {
     u8 name[MAX_POCKET_ITEMS][max(ITEM_NAME_LENGTH, MOVE_NAME_LENGTH) + 15];
 };
 
-struct TempWallyBag {
+struct TempDuncanBag {
     struct ItemSlot bagPocket_Items[BAG_ITEMS_COUNT];
     struct ItemSlot bagPocket_PokeBalls[BAG_POKEBALLS_COUNT];
     u16 cursorPosition[POCKETS_COUNT];
@@ -139,8 +139,8 @@ static void CreatePocketScrollArrowPair(void);
 static void CreatePocketSwitchArrowPair(void);
 static void DestroyPocketSwitchArrowPair(void);
 static void PrepareTMMoveWindow(void);
-static bool8 IsWallysBag(void);
-static void Task_WallyTutorialBagMenu(u8);
+static bool8 IsDuncansBag(void);
+static void Task_DuncanTutorialBagMenu(u8);
 static void Task_BagMenu_HandleInput(u8);
 static void GetItemName(u8 *, u16);
 static void PrintItemDescription(int);
@@ -381,7 +381,7 @@ static const TaskFunc sContextMenuFuncs[] = {
     [ITEMMENULOCATION_FAVOR_LADY] =             Task_ItemContext_Normal,
     [ITEMMENULOCATION_QUIZ_LADY] =              Task_ItemContext_Normal,
     [ITEMMENULOCATION_APPRENTICE] =             Task_ItemContext_Normal,
-    [ITEMMENULOCATION_WALLY] =                  NULL,
+    [ITEMMENULOCATION_DUNCAN] =                  NULL,
     [ITEMMENULOCATION_PCBOX] =                  Task_ItemContext_GiveToPC,
     [ITEMMENULOCATION_BERRY_TREE_MULCH] =       Task_FadeAndCloseBagMenuIfMulch,
 };
@@ -581,7 +581,7 @@ EWRAM_DATA struct BagPosition gBagPosition = {0};
 static EWRAM_DATA struct ListBuffer1 *sListBuffer1 = 0;
 static EWRAM_DATA struct ListBuffer2 *sListBuffer2 = 0;
 EWRAM_DATA u16 gSpecialVar_ItemId = 0;
-static EWRAM_DATA struct TempWallyBag *sTempWallyBag = 0;
+static EWRAM_DATA struct TempDuncanBag *sTempDuncanBag = 0;
 
 void ResetBagScrollPositions(void)
 {
@@ -858,14 +858,14 @@ static bool8 LoadBagMenu_Graphics(void)
     case 2:
         if (YELLOW_BLACK_PALETTES)
             LoadCompressedPalette(gBagScreenYellowBlack_Pal, BG_PLTT_ID(0), 2 * PLTT_SIZE_4BPP);
-        else if (!IsWallysBag() && gSaveBlock2Ptr->playerGender != MALE)
+        else if (!IsDuncansBag() && gSaveBlock2Ptr->playerGender != MALE)
             LoadCompressedPalette(gBagScreenFemale_Pal, BG_PLTT_ID(0), 2 * PLTT_SIZE_4BPP);
         else
             LoadCompressedPalette(gBagScreenMale_Pal, BG_PLTT_ID(0), 2 * PLTT_SIZE_4BPP);
         gBagMenu->graphicsLoadState++;
         break;
     case 3:
-        if (IsWallysBag() == TRUE || gSaveBlock2Ptr->playerGender == MALE)
+        if (IsDuncansBag() == TRUE || gSaveBlock2Ptr->playerGender == MALE)
             LoadCompressedSpriteSheet(&gBagMaleSpriteSheet);
         else
             LoadCompressedSpriteSheet(&gBagFemaleSpriteSheet);
@@ -886,8 +886,8 @@ static bool8 LoadBagMenu_Graphics(void)
 static u8 CreateBagInputHandlerTask(u8 location)
 {
     u8 taskId;
-    if (location == ITEMMENULOCATION_WALLY)
-        taskId = CreateTask(Task_WallyTutorialBagMenu, 0);
+    if (location == ITEMMENULOCATION_DUNCAN)
+        taskId = CreateTask(Task_DuncanTutorialBagMenu, 0);
     else
         taskId = CreateTask(Task_BagMenu_HandleInput, 0);
     return taskId;
@@ -1416,7 +1416,7 @@ static void Task_SwitchBagPocket(u8 taskId)
 {
     s16 *data = gTasks[taskId].data;
 
-    if (!MenuHelpers_IsLinkActive() && !IsWallysBag())
+    if (!MenuHelpers_IsLinkActive() && !IsDuncansBag())
     {
         switch (GetSwitchBagPocketDirection())
         {
@@ -1594,7 +1594,7 @@ static void OpenContextMenu(u8 taskId)
     switch (gBagPosition.location)
     {
     case ITEMMENULOCATION_BATTLE:
-    case ITEMMENULOCATION_WALLY:
+    case ITEMMENULOCATION_DUNCAN:
         if (ItemId_GetBattleUsage(gSpecialVar_ItemId))
         {
             gBagMenu->contextMenuItemsPtr = sContextMenuItems_BattleUse;
@@ -2358,58 +2358,58 @@ static void WaitDepositErrorMessage(u8 taskId)
     }
 }
 
-static bool8 IsWallysBag(void)
+static bool8 IsDuncansBag(void)
 {
-    if (gBagPosition.location == ITEMMENULOCATION_WALLY)
+    if (gBagPosition.location == ITEMMENULOCATION_DUNCAN)
         return TRUE;
     return FALSE;
 }
 
-static void PrepareBagForWallyTutorial(void)
+static void PrepareBagForDuncanTutorial(void)
 {
     u32 i;
 
-    sTempWallyBag = AllocZeroed(sizeof(*sTempWallyBag));
-    memcpy(sTempWallyBag->bagPocket_Items, gSaveBlock1Ptr->bagPocket_Items, sizeof(gSaveBlock1Ptr->bagPocket_Items));
-    memcpy(sTempWallyBag->bagPocket_PokeBalls, gSaveBlock1Ptr->bagPocket_PokeBalls, sizeof(gSaveBlock1Ptr->bagPocket_PokeBalls));
-    sTempWallyBag->pocket = gBagPosition.pocket;
+    sTempDuncanBag = AllocZeroed(sizeof(*sTempDuncanBag));
+    memcpy(sTempDuncanBag->bagPocket_Items, gSaveBlock1Ptr->bagPocket_Items, sizeof(gSaveBlock1Ptr->bagPocket_Items));
+    memcpy(sTempDuncanBag->bagPocket_PokeBalls, gSaveBlock1Ptr->bagPocket_PokeBalls, sizeof(gSaveBlock1Ptr->bagPocket_PokeBalls));
+    sTempDuncanBag->pocket = gBagPosition.pocket;
     for (i = 0; i < POCKETS_COUNT; i++)
     {
-        sTempWallyBag->cursorPosition[i] = gBagPosition.cursorPosition[i];
-        sTempWallyBag->scrollPosition[i] = gBagPosition.scrollPosition[i];
+        sTempDuncanBag->cursorPosition[i] = gBagPosition.cursorPosition[i];
+        sTempDuncanBag->scrollPosition[i] = gBagPosition.scrollPosition[i];
     }
     ClearItemSlots(gSaveBlock1Ptr->bagPocket_Items, BAG_ITEMS_COUNT);
     ClearItemSlots(gSaveBlock1Ptr->bagPocket_PokeBalls, BAG_POKEBALLS_COUNT);
     ResetBagScrollPositions();
 }
 
-static void RestoreBagAfterWallyTutorial(void)
+static void RestoreBagAfterDuncanTutorial(void)
 {
     u32 i;
 
-    memcpy(gSaveBlock1Ptr->bagPocket_Items, sTempWallyBag->bagPocket_Items, sizeof(sTempWallyBag->bagPocket_Items));
-    memcpy(gSaveBlock1Ptr->bagPocket_PokeBalls, sTempWallyBag->bagPocket_PokeBalls, sizeof(sTempWallyBag->bagPocket_PokeBalls));
-    gBagPosition.pocket = sTempWallyBag->pocket;
+    memcpy(gSaveBlock1Ptr->bagPocket_Items, sTempDuncanBag->bagPocket_Items, sizeof(sTempDuncanBag->bagPocket_Items));
+    memcpy(gSaveBlock1Ptr->bagPocket_PokeBalls, sTempDuncanBag->bagPocket_PokeBalls, sizeof(sTempDuncanBag->bagPocket_PokeBalls));
+    gBagPosition.pocket = sTempDuncanBag->pocket;
     for (i = 0; i < POCKETS_COUNT; i++)
     {
-        gBagPosition.cursorPosition[i] = sTempWallyBag->cursorPosition[i];
-        gBagPosition.scrollPosition[i] = sTempWallyBag->scrollPosition[i];
+        gBagPosition.cursorPosition[i] = sTempDuncanBag->cursorPosition[i];
+        gBagPosition.scrollPosition[i] = sTempDuncanBag->scrollPosition[i];
     }
-    Free(sTempWallyBag);
+    Free(sTempDuncanBag);
 }
 
-void DoWallyTutorialBagMenu(void)
+void DoDuncanTutorialBagMenu(void)
 {
-    PrepareBagForWallyTutorial();
+    PrepareBagForDuncanTutorial();
     AddBagItem(ITEM_POTION, 1);
     AddBagItem(ITEM_POKE_BALL, 1);
-    GoToBagMenu(ITEMMENULOCATION_WALLY, ITEMS_POCKET, CB2_SetUpReshowBattleScreenAfterMenu2);
+    GoToBagMenu(ITEMMENULOCATION_DUNCAN, ITEMS_POCKET, CB2_SetUpReshowBattleScreenAfterMenu2);
 }
 
 #define tTimer data[8]
-#define WALLY_BAG_DELAY 102 // The number of frames between each action Wally takes in the bag
+#define DUNCAN_BAG_DELAY 102 // The number of frames between each action Duncan takes in the bag
 
-static void Task_WallyTutorialBagMenu(u8 taskId)
+static void Task_DuncanTutorialBagMenu(u8 taskId)
 {
     s16 *data = gTasks[taskId].data;
 
@@ -2417,23 +2417,23 @@ static void Task_WallyTutorialBagMenu(u8 taskId)
     {
         switch (tTimer)
         {
-        case WALLY_BAG_DELAY * 1:
+        case DUNCAN_BAG_DELAY * 1:
             PlaySE(SE_SELECT);
             SwitchBagPocket(taskId, MENU_CURSOR_DELTA_RIGHT, FALSE);
             tTimer++;
             break;
-        case WALLY_BAG_DELAY * 2:
+        case DUNCAN_BAG_DELAY * 2:
             PlaySE(SE_SELECT);
             BagMenu_PrintCursor(tListTaskId, COLORID_GRAY_CURSOR);
             gSpecialVar_ItemId = ITEM_POKE_BALL;
             OpenContextMenu(taskId);
             tTimer++;
             break;
-        case WALLY_BAG_DELAY * 3:
+        case DUNCAN_BAG_DELAY * 3:
             PlaySE(SE_SELECT);
             RemoveContextWindow();
             DestroyListMenuTask(tListTaskId, 0, 0);
-            RestoreBagAfterWallyTutorial();
+            RestoreBagAfterDuncanTutorial();
             Task_FadeAndCloseBagMenu(taskId);
             break;
         default:

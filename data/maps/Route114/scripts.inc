@@ -1,4 +1,4 @@
-.set LOCALID_WALLY, 23
+.set LOCALID_DUNCAN, 23
 
 Route114_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route114_OnTransition
@@ -178,30 +178,30 @@ Route114_EventScript_Kai::
 	msgbox Route114_Text_KaiPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route114_EventScript_WallyTrigger::
+Route114_EventScript_DuncanTrigger::
 	lockall
 	setvar VAR_ROUTE114_STATE, 1
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	delay 10
-	addobject LOCALID_WALLY
-	clearflag FLAG_HIDE_ROUTE_114_WALLY
+	addobject LOCALID_DUNCAN
+	clearflag FLAG_HIDE_ROUTE_114_DUNCAN
 	applymovement OBJ_EVENT_ID_PLAYER, Route114_Movement_PlayerBackUp
 	waitmovement 0
-	applymovement LOCALID_WALLY, Route114_Movement_WallyExitMeteorFalls
+	applymovement LOCALID_DUNCAN, Route114_Movement_DuncanExitMeteorFalls
 	waitmovement 0
 	delay 20
 	playse SE_PIN
-	applymovement LOCALID_WALLY, Common_Movement_ExclamationMark
+	applymovement LOCALID_DUNCAN, Common_Movement_ExclamationMark
 	waitmovement 0
-	msgbox Route114_Text_WallyIntro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_WALLY_ROUTE_114, Route114_Text_WallyDefeat
-	msgbox Route114_Text_WallyPostBattle, MSGBOX_DEFAULT
+	msgbox Route114_Text_DuncanIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_DUNCAN_ROUTE_114, Route114_Text_DuncanDefeat
+	msgbox Route114_Text_DuncanPostBattle, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_WALLY, Route114_Movement_WallyWalkAway
+	applymovement LOCALID_DUNCAN, Route114_Movement_DuncanWalkAway
 	waitmovement 0
-	removeobject LOCALID_WALLY
-	setflag FLAG_HIDE_ROUTE_114_WALLY
+	removeobject LOCALID_DUNCAN
+	setflag FLAG_HIDE_ROUTE_114_DUNCAN
 	releaseall
 	end
 
@@ -210,11 +210,11 @@ Route114_Movement_PlayerBackUp:
 	walk_down
 	step_end
 
-Route114_Movement_WallyExitMeteorFalls:
+Route114_Movement_DuncanExitMeteorFalls:
 	walk_down
 	step_end
 
-Route114_Movement_WallyWalkAway:
+Route114_Movement_DuncanWalkAway:
 	walk_right
 	walk_down
 	walk_down
@@ -225,19 +225,19 @@ Route114_Movement_WallyWalkAway:
 	walk_down
 	step_end
 
-Route114_Text_WallyIntro:
-	.string "Wally: Hi, {PLAYER}!\p"
+Route114_Text_DuncanIntro:
+	.string "Duncan: Hi, {PLAYER}!\p"
 	.string "I caught another Pokémon! I was going\n"
 	.string "to train it in Meteor Falls but there's\l"
 	.string "some weird people in there. Now I can\l"
 	.string "train against you though!$"
 
-Route114_Text_WallyDefeat:
-	.string "Wally: Aww… you beat me again,\n"
+Route114_Text_DuncanDefeat:
+	.string "Duncan: Aww… you beat me again,\n"
 	.string "{PLAYER}!$"
 
-Route114_Text_WallyPostBattle:
-	.string "Wally: Thanks again, {PLAYER}!\n"
+Route114_Text_DuncanPostBattle:
+	.string "Duncan: Thanks again, {PLAYER}!\n"
 	.string "I'll have to catch more Pokémon!$"
 
 Route114_Text_AllMyMonDoesIsRoarTakeThis:

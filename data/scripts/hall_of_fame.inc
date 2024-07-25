@@ -9,8 +9,8 @@ EverGrandeCity_HallOfFame_EventScript_SetGameClearFlags::
 	clearflag FLAG_HIDE_SS_TIDAL_CORRIDOR_MR_BRINEY
 	clearflag FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY
 	setvar VAR_STEVENS_HOUSE_STATE, 2
-	setflag FLAG_HIDE_VICTORY_ROAD_ENTRANCE_WALLY
-	clearflag FLAG_HIDE_VICTORY_ROAD_EXIT_WALLY
+	setflag FLAG_HIDE_VICTORY_ROAD_ENTRANCE_DUNCAN
+	clearflag FLAG_HIDE_VICTORY_ROAD_EXIT_DUNCAN
 	clearflag FLAG_HIDE_SLATEPORT_CITY_HARBOR_SS_TIDAL
 	clearflag FLAG_HIDE_LILYCOVE_HARBOR_SSTIDAL
 	setflag FLAG_HIDE_SAFARI_ZONE_SOUTH_CONSTRUCTION_WORKERS
@@ -19,8 +19,8 @@ EverGrandeCity_HallOfFame_EventScript_SetGameClearFlags::
 	special UpdateTrainerFanClubGameClear
 	call_if_unset FLAG_RECEIVED_SS_TICKET, EverGrandeCity_HallOfFame_EventScript_ReadyReceiveSSTicketEvent
 	call_if_unset FLAG_RECEIVED_BELDUM, EverGrandeCity_HallOfFame_EventScript_ShowStevensHouseBeldum
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_BEDROOM
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_KYLES_HOUSE_RIVAL_BEDROOM
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_KELLIS_HOUSE_RIVAL_BEDROOM
 	call_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 0, EverGrandeCity_HallOfFame_EventScript_ReadyDexUpgradeEvent
 	return
 
@@ -40,8 +40,8 @@ EverGrandeCity_HallOfFame_EventScript_ShowStevensHouseBeldum::
 	return
 
 EverGrandeCity_HallOfFame_EventScript_ReadyReceiveSSTicketEvent::
-	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 3
-	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 3
+	setvar VAR_LITTLEROOT_HOUSES_STATE_KELLI, 3
+	setvar VAR_LITTLEROOT_HOUSES_STATE_KYLE, 3
 	clearflag FLAG_HIDE_PLAYERS_HOUSE_DAD
 	return
 

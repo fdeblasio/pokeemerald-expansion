@@ -23,20 +23,20 @@
 #define RIVAL_ROUTE_119_STARTER_LEVEL 42
 #define RIVAL_LILYCOVE_STARTER_LEVEL  45
 
-#define BRENDAN 0
-#define MAY     1
+#define KYLE  0
+#define KELLI 1
 
-#define BRENDAN_INFO                                       \
-    .trainerName = _("Brendan"),                           \
+#define KYLE_INFO                                          \
+    .trainerName = _("Kyle"),                              \
     .trainerClass = TRAINER_CLASS_RIVAL,                   \
-    .trainerPic = TRAINER_PIC_BRENDAN,                     \
+    .trainerPic = TRAINER_PIC_KYLE,                        \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE, \
     BOSS_AI_FLAGS
 
-#define MAY_INFO                                                                \
-    .trainerName = _("May"),                                                    \
+#define KELLI_INFO                                                              \
+    .trainerName = _("Kelli"),                                                  \
     .trainerClass = TRAINER_CLASS_RIVAL,                                        \
-    .trainerPic = TRAINER_PIC_MAY,                                              \
+    .trainerPic = TRAINER_PIC_KELLI,                                            \
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE, \
     BOSS_AI_FLAGS
 
@@ -44,19 +44,19 @@
     {                                                                                                    \
     .lvl = Location##_STARTER_LEVEL,                                                                     \
     .species = Type##_STARTER + (Location < RIVAL_ROUTE_110 ? 0 : (Location < RIVAL_ROUTE_119 ? 1 : 2)), \
-    .nature = Rival == BRENDAN ? NATURE_SERIOUS : NATURE_QUIRKY,                                         \
+    .nature = Rival == KYLE ? NATURE_SERIOUS : NATURE_QUIRKY,                                            \
     PERFECT_IVS,                                                                                         \
-    .gender = Rival == BRENDAN ? TRAINER_MON_MALE : TRAINER_MON_FEMALE,                                  \
+    .gender = Rival == KYLE ? TRAINER_MON_MALE : TRAINER_MON_FEMALE,                                     \
     .heldItem = Location < RIVAL_LILYCOVE ? ITEM_NONE : (TYPE_##Type == TYPE_GRASS ? ITEM_SCEPTILITE : (TYPE_##Type == TYPE_FIRE ? ITEM_BLAZIKENITE : ITEM_SWAMPERTITE)), \
     }
 
 #define RIVAL_WHISMUR(Location, Rival)                                      \
     {                                                                       \
     .lvl = Location##_STARTER_LEVEL - (Location < RIVAL_ROUTE_119 ? 2 : 1), \
-    .species = Location < RIVAL_ROUTE_119 ? SPECIES_WHISMUR : (Location < RIVAL_LILYCOVE ? SPECIES_LOUDRED : SPECIES_EXPLOUD), \
-    .ability = Rival == BRENDAN,                                            \
+    .species = Location < RIVAL_ROUTE_119 ? SPECIES_ZUBAT : (Location < RIVAL_LILYCOVE ? SPECIES_GOLBAT : SPECIES_CROBAT), \
+    .ability = Rival == KYLE,                                            \
     IVS(18),                                                                \
-    .gender = Rival == BRENDAN ? TRAINER_MON_MALE : TRAINER_MON_FEMALE,     \
+    .gender = Rival == KYLE ? TRAINER_MON_MALE : TRAINER_MON_FEMALE,     \
     }
 
 #define RIVAL_MON(Location, Species, Ability, Rival)                             \
@@ -65,7 +65,7 @@
     .species = SPECIES_##Species,                                                \
     .ability = ABILITY_##Ability,                                                \
     IVS(Location < RIVAL_ROUTE_119 ? 6 : (Location < RIVAL_LILYCOVE ? 12 : 18)), \
-    .gender = Rival == BRENDAN ? TRAINER_MON_MALE : TRAINER_MON_FEMALE,          \
+    .gender = Rival == KYLE ? TRAINER_MON_MALE : TRAINER_MON_FEMALE,             \
     }
 
 #define RIVAL_BATTLES(Rival, Type, Mon3, Evo3, Ability3, Mon4, Evo4, Ability4) \
@@ -121,7 +121,7 @@
         .species = SPECIES_VIBRAVA,                                            \
         .ability = ABILITY_LEVITATE,                                           \
         IVS(18),                                                               \
-        .gender = Rival == BRENDAN ? TRAINER_MON_MALE : TRAINER_MON_FEMALE,    \
+        .gender = Rival == KYLE ? TRAINER_MON_MALE : TRAINER_MON_FEMALE,       \
         },                                                                     \
         RIVAL_MON(RIVAL_LILYCOVE, Evo4, Ability4, Rival),                      \
         RIVAL_MON(RIVAL_LILYCOVE, Evo3, Ability3, Rival),                      \
@@ -130,12 +130,12 @@
     },                                                                         \
 }
 
-RIVAL_BATTLES(BRENDAN, GRASS, CORPHISH, CRAWDAUNT, HYPER_CUTTER, SLUGMA, MAGCARGO, FLAME_BODY),
-RIVAL_BATTLES(BRENDAN, FIRE, SHROOMISH, BRELOOM, EFFECT_SPORE, CORPHISH, CRAWDAUNT, HYPER_CUTTER),
-RIVAL_BATTLES(BRENDAN, WATER, SLUGMA, MAGCARGO, FLAME_BODY, SHROOMISH, BRELOOM, EFFECT_SPORE),
-RIVAL_BATTLES(MAY, GRASS, WINGULL, PELIPPER, KEEN_EYE, VULPIX, NINETALES, FLASH_FIRE),
-RIVAL_BATTLES(MAY, FIRE, CACNEA, CACTURNE, SAND_VEIL, WINGULL, PELIPPER, KEEN_EYE),
-RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_VEIL),
+RIVAL_BATTLES(KYLE, GRASS, CORPHISH, CRAWDAUNT, HYPER_CUTTER, SLUGMA, MAGCARGO, FLAME_BODY),
+RIVAL_BATTLES(KYLE, FIRE, SHROOMISH, BRELOOM, EFFECT_SPORE, CORPHISH, CRAWDAUNT, HYPER_CUTTER),
+RIVAL_BATTLES(KYLE, WATER, SLUGMA, MAGCARGO, FLAME_BODY, SHROOMISH, BRELOOM, EFFECT_SPORE),
+RIVAL_BATTLES(KELLI, GRASS, WINGULL, PELIPPER, KEEN_EYE, VULPIX, NINETALES, FLASH_FIRE),
+RIVAL_BATTLES(KELLI, FIRE, CACNEA, CACTURNE, SAND_VEIL, WINGULL, PELIPPER, KEEN_EYE),
+RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_VEIL),
 
 #define ENDGAME_REMATCH_2_LEVEL 75
 #define ENDGAME_REMATCH_3_LEVEL 80
@@ -151,10 +151,10 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .species = SPECIES_##Species,                    \
     PERFECT_IVS
 
-#define WALLY_INFO                                         \
-    .trainerName = _("Wally"),                             \
+#define DUNCAN_INFO                                         \
+    .trainerName = _("Duncan"),                             \
     .trainerClass = TRAINER_CLASS_RIVAL,                   \
-    .trainerPic = TRAINER_PIC_WALLY,                       \
+    .trainerPic = TRAINER_PIC_DUNCAN,                       \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE, \
     BOSS_AI_FLAGS
 
@@ -166,21 +166,21 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     IVS(24),                                                                                                      \
     .nickname = COMPOUND_STRING("Ralph")
 
-#define WALLY_BUDEW(Level)                                                                     \
+#define DUNCAN_BUDEW(Level)                                                                     \
     .lvl = Level,                                                                              \
     .species = Level < 25 ? SPECIES_BUDEW : (Level < 35 ? SPECIES_ROSELIA : SPECIES_ROSERADE), \
     .ability = ABILITY_NATURAL_CURE,                                                           \
     .gender = TRAINER_MON_FEMALE
 
-#define WALLY_SWABLU(Level)                                   \
+#define DUNCAN_SWABLU(Level)                                   \
     .lvl = Level,                                             \
     .species = Level < 35 ? SPECIES_SWABLU : SPECIES_ALTARIA, \
     .ability = ABILITY_FLUFFY,                                \
     .gender = TRAINER_MON_MALE
 
-[TRAINER_WALLY_MAUVILLE] =
+[TRAINER_DUNCAN_MAUVILLE] =
 {
-    WALLY_INFO,
+    DUNCAN_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -189,13 +189,13 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     },
 },
 
-[TRAINER_WALLY_VERDANTURF] =
+[TRAINER_DUNCAN_VERDANTURF] =
 {
-    WALLY_INFO,
+    DUNCAN_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        WALLY_BUDEW(21),
+        DUNCAN_BUDEW(21),
         IVS(3),
         },
         {
@@ -204,17 +204,17 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     },
 },
 
-[TRAINER_WALLY_ROUTE_114] =
+[TRAINER_DUNCAN_ROUTE_114] =
 {
-    WALLY_INFO,
+    DUNCAN_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        WALLY_SWABLU(25),
+        DUNCAN_SWABLU(25),
         IVS(6),
         },
         {
-        WALLY_BUDEW(25),
+        DUNCAN_BUDEW(25),
         IVS(6),
         },
         {
@@ -223,9 +223,9 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     },
 },
 
-[TRAINER_WALLY_VICTORY_ROAD_1] =
+[TRAINER_DUNCAN_VICTORY_ROAD_1] =
 {
-    WALLY_INFO,
+    DUNCAN_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
@@ -245,12 +245,12 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_METAL_SOUND},
         },
         {
-        WALLY_SWABLU(57),
+        DUNCAN_SWABLU(57),
         IVS(18),
         .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
         },
         {
-        WALLY_BUDEW(57),
+        DUNCAN_BUDEW(57),
         IVS(18),
         .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC},
         },
@@ -276,37 +276,37 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .friendship = 255,                                                                 \
     }
 
-#define WALLY_ROSERADE(rematch)                                                \
-    {                                                                          \
-    REMATCH_MON(ROSERADE, TIER2, rematch),                                     \
-    .ability = ABILITY_NATURAL_CURE,                                           \
-    .nature = NATURE_MODEST,                                                   \
-    EV_SPREAD_SPA_SPE_SPD,                                                     \
-    .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC}, \
-    .gender = TRAINER_MON_FEMALE,                                              \
-    .heldItem = ITEM_MIRACLE_SEED,                                             \
+#define DUNCAN_ROSERADE(rematch)                                                         \
+    {                                                                                   \
+    REMATCH_MON(ROSERADE, TIER2, rematch),                                              \
+    .ability = ABILITY_NATURAL_CURE,                                                    \
+    .nature = NATURE_MODEST,                                                            \
+    EV_SPREAD_SPA_SPE_SPD,                                                              \
+    .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC},          \
+    .gender = TRAINER_MON_FEMALE,                                                       \
+    .heldItem = ITEM_MIRACLE_SEED,                                                      \
     }
 
-#define WALLY_ALTARIA(rematch)                                                       \
-    {                                                                                \
-    REMATCH_MON(ALTARIA, TIER2, rematch),                                            \
-    .ability = ABILITY_NATURAL_CURE,                                                 \
-    .nature = NATURE_MODEST,                                                         \
-    EV_SPREAD_SPA_SPE_DEF,                                                           \
-    .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD}, \
-    .gender = TRAINER_MON_MALE,                                                      \
+#define DUNCAN_ALTARIA(rematch)                                                          \
+    {                                                                                   \
+    REMATCH_MON(ALTARIA, TIER2, rematch),                                               \
+    .ability = ABILITY_NATURAL_CURE,                                                    \
+    .nature = NATURE_MODEST,                                                            \
+    EV_SPREAD_SPA_SPE_DEF,                                                              \
+    .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},    \
+    .gender = TRAINER_MON_MALE,                                                         \
     }
 
-#define WALLY_MAGNEZONE(rematch)                                                       \
-    {                                                                                  \
-    REMATCH_MON(MAGNEZONE, TIER3, rematch),                                            \
-    .ability = ABILITY_ANALYTIC,                                                       \
-    .nature = NATURE_BOLD,                                                             \
-    EV_SPREAD_SPA_DEF_SPD,                                                             \
-    .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_METAL_SOUND}, \
+#define DUNCAN_MAGNEZONE(rematch)                                                        \
+    {                                                                                   \
+    REMATCH_MON(MAGNEZONE, TIER3, rematch),                                             \
+    .ability = ABILITY_ANALYTIC,                                                        \
+    .nature = NATURE_BOLD,                                                              \
+    EV_SPREAD_SPA_DEF_SPD,                                                              \
+    .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_METAL_SOUND},  \
     }
 
-#define WALLY_DELCATTY(rematch)                                         \
+#define DUNCAN_DELCATTY(rematch)                                         \
     {                                                                   \
     REMATCH_MON(DELCATTY, TIER3, rematch),                              \
     .ability = ABILITY_NORMALIZE,                                       \
@@ -316,7 +316,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .gender = TRAINER_MON_FEMALE,                                       \
     }
 
-#define WALLY_GARDEVOIR(rematch)                                                 \
+#define DUNCAN_GARDEVOIR(rematch)                                                 \
     {                                                                            \
     REMATCH_MON(GARDEVOIR, TIER3, rematch),                                      \
     .ability = ABILITY_SYNCHRONIZE,                                              \
@@ -326,60 +326,60 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .gender = TRAINER_MON_FEMALE,                                                \
     }
 
-[TRAINER_WALLY_VICTORY_ROAD_2] =
+[TRAINER_DUNCAN_VICTORY_ROAD_2] =
 {
-    WALLY_INFO,
+    DUNCAN_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        WALLY_DELCATTY(2),
-        WALLY_MAGNEZONE(2),
-        WALLY_ALTARIA(2),
-        WALLY_ROSERADE(2),
+        DUNCAN_DELCATTY(2),
+        DUNCAN_MAGNEZONE(2),
+        DUNCAN_ALTARIA(2),
+        DUNCAN_ROSERADE(2),
         REMATCH_RALPH(2),
     },
 },
 
-[TRAINER_WALLY_VICTORY_ROAD_3] =
+[TRAINER_DUNCAN_VICTORY_ROAD_3] =
 {
-    WALLY_INFO,
+    DUNCAN_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        WALLY_DELCATTY(3),
-        WALLY_MAGNEZONE(3),
-        WALLY_ALTARIA(3),
-        WALLY_ROSERADE(3),
+        DUNCAN_DELCATTY(3),
+        DUNCAN_MAGNEZONE(3),
+        DUNCAN_ALTARIA(3),
+        DUNCAN_ROSERADE(3),
         REMATCH_RALPH(3),
     },
 },
 
-[TRAINER_WALLY_VICTORY_ROAD_4] =
+[TRAINER_DUNCAN_VICTORY_ROAD_4] =
 {
-    WALLY_INFO,
+    DUNCAN_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        WALLY_GARDEVOIR(4),
-        WALLY_DELCATTY(4),
-        WALLY_MAGNEZONE(4),
-        WALLY_ALTARIA(4),
-        WALLY_ROSERADE(4),
+        DUNCAN_GARDEVOIR(4),
+        DUNCAN_DELCATTY(4),
+        DUNCAN_MAGNEZONE(4),
+        DUNCAN_ALTARIA(4),
+        DUNCAN_ROSERADE(4),
         REMATCH_RALPH(4),
     },
 },
 
-[TRAINER_WALLY_VICTORY_ROAD_5] =
+[TRAINER_DUNCAN_VICTORY_ROAD_5] =
 {
-    WALLY_INFO,
+    DUNCAN_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        WALLY_GARDEVOIR(5),
-        WALLY_DELCATTY(5),
-        WALLY_MAGNEZONE(5),
-        WALLY_ALTARIA(5),
-        WALLY_ROSERADE(5),
+        DUNCAN_GARDEVOIR(5),
+        DUNCAN_DELCATTY(5),
+        DUNCAN_MAGNEZONE(5),
+        DUNCAN_ALTARIA(5),
+        DUNCAN_ROSERADE(5),
         REMATCH_RALPH(5),
     },
 },
@@ -10400,9 +10400,9 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     },
 },
 
-[TRAINER_DUNCAN] =
+[TRAINER_WERNER] =
 {
-    .trainerName = _("Duncan"),
+    .trainerName = _("Werner"),
     SAILOR_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -16687,11 +16687,11 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     },
 },
 
-[TRAINER_BRENDAN_PLACEHOLDER] =
+[TRAINER_KYLE_PLACEHOLDER] =
 {
-    .trainerName = _("Brendan"),
+    .trainerName = _("Kyle"),
     .trainerClass = TRAINER_CLASS_RS_PROTAG,
-    .trainerPic = TRAINER_PIC_RS_BRENDAN,
+    .trainerPic = TRAINER_PIC_RS_KYLE,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
@@ -16702,11 +16702,11 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     },
 },
 
-[TRAINER_MAY_PLACEHOLDER] =
+[TRAINER_KELLI_PLACEHOLDER] =
 {
     .trainerName = _("May"),
     .trainerClass = TRAINER_CLASS_RS_PROTAG,
-    .trainerPic = TRAINER_PIC_RS_MAY,
+    .trainerPic = TRAINER_PIC_RS_KELLI,
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MALE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
@@ -16776,7 +16776,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
 {                                                 \
     .trainerName = _("Unused"),                   \
     .trainerClass = TRAINER_CLASS_PKMN_TRAINER_2, \
-    .trainerPic = TRAINER_PIC_RS_BRENDAN,         \
+    .trainerPic = TRAINER_PIC_RS_KYLE,         \
     .partySize = 1,                               \
     .party = (const struct TrainerMon[]) {        \
         {                                         \

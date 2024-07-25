@@ -23,13 +23,13 @@ Route103_EventScript_Rival::
 	lockall
 	checkplayergender
 	goto_if_eq VAR_RESULT, MALE, Route103_EventScript_RivalMay
-	goto_if_eq VAR_RESULT, FEMALE, Route103_EventScript_RivalBrendan
+	goto_if_eq VAR_RESULT, FEMALE, Route103_EventScript_RivalKyle
 	end
 
 Route103_EventScript_RivalMay::
 	msgbox Route103_Text_MayRoute103Pokemon, MSGBOX_DEFAULT
 	closemessage
-	playbgm MUS_ENCOUNTER_MAY, TRUE
+	playbgm MUS_ENCOUNTER_KELLI, TRUE
 	applymovement LOCALID_RIVAL, Common_Movement_FacePlayer
 	waitmovement 0
 	applymovement LOCALID_RIVAL, Common_Movement_ExclamationMark
@@ -43,51 +43,51 @@ Route103_EventScript_RivalMay::
 	case 2, Route103_EventScript_StartMayBattleMudkip
 	end
 
-Route103_EventScript_RivalBrendan::
-	msgbox Route103_Text_BrendanRoute103Pokemon, MSGBOX_DEFAULT
+Route103_EventScript_RivalKyle::
+	msgbox Route103_Text_KyleRoute103Pokemon, MSGBOX_DEFAULT
 	closemessage
-	playbgm MUS_ENCOUNTER_BRENDAN, TRUE
+	playbgm MUS_ENCOUNTER_KYLE, TRUE
 	applymovement LOCALID_RIVAL, Common_Movement_FacePlayer
 	waitmovement 0
 	applymovement LOCALID_RIVAL, Common_Movement_ExclamationMark
 	waitmovement 0
 	applymovement LOCALID_RIVAL, Common_Movement_Delay48
 	waitmovement 0
-	msgbox Route103_Text_BrendanLetsBattle, MSGBOX_DEFAULT
+	msgbox Route103_Text_KyleLetsBattle, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
-	case 0, Route103_EventScript_StartBrendanBattleTreecko
-	case 1, Route103_EventScript_StartBrendanBattleTorchic
-	case 2, Route103_EventScript_StartBrendanBattleMudkip
+	case 0, Route103_EventScript_StartKyleBattleTreecko
+	case 1, Route103_EventScript_StartKyleBattleTorchic
+	case 2, Route103_EventScript_StartKyleBattleMudkip
 	end
 
 Route103_EventScript_StartMayBattleTreecko::
-	trainerbattle_no_intro TRAINER_MAY_ROUTE_103_FIRE, Route103_Text_MayDefeated
+	trainerbattle_no_intro TRAINER_KELLI_ROUTE_103_FIRE, Route103_Text_MayDefeated
 	goto Route103_EventScript_AfterMayBattle
 	end
 
 Route103_EventScript_StartMayBattleTorchic::
-	trainerbattle_no_intro TRAINER_MAY_ROUTE_103_WATER, Route103_Text_MayDefeated
+	trainerbattle_no_intro TRAINER_KELLI_ROUTE_103_WATER, Route103_Text_MayDefeated
 	goto Route103_EventScript_AfterMayBattle
 	end
 
 Route103_EventScript_StartMayBattleMudkip::
-	trainerbattle_no_intro TRAINER_MAY_ROUTE_103_GRASS, Route103_Text_MayDefeated
+	trainerbattle_no_intro TRAINER_KELLI_ROUTE_103_GRASS, Route103_Text_MayDefeated
 	goto Route103_EventScript_AfterMayBattle
 	end
 
-Route103_EventScript_StartBrendanBattleTreecko::
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_103_FIRE, Route103_Text_BrendanDefeated
-	goto Route103_EventScript_AfterBrendanBattle
+Route103_EventScript_StartKyleBattleTreecko::
+	trainerbattle_no_intro TRAINER_KYLE_ROUTE_103_FIRE, Route103_Text_KyleDefeated
+	goto Route103_EventScript_AfterKyleBattle
 	end
 
-Route103_EventScript_StartBrendanBattleTorchic::
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_103_WATER, Route103_Text_BrendanDefeated
-	goto Route103_EventScript_AfterBrendanBattle
+Route103_EventScript_StartKyleBattleTorchic::
+	trainerbattle_no_intro TRAINER_KYLE_ROUTE_103_WATER, Route103_Text_KyleDefeated
+	goto Route103_EventScript_AfterKyleBattle
 	end
 
-Route103_EventScript_StartBrendanBattleMudkip::
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_103_GRASS, Route103_Text_BrendanDefeated
-	goto Route103_EventScript_AfterBrendanBattle
+Route103_EventScript_StartKyleBattleMudkip::
+	trainerbattle_no_intro TRAINER_KYLE_ROUTE_103_GRASS, Route103_Text_KyleDefeated
+	goto Route103_EventScript_AfterKyleBattle
 	end
 
 Route103_EventScript_AfterMayBattle::
@@ -95,8 +95,8 @@ Route103_EventScript_AfterMayBattle::
 	goto Route103_EventScript_RivalExit
 	end
 
-Route103_EventScript_AfterBrendanBattle::
-	msgbox Route103_Text_BrendanTimeToHeadBack, MSGBOX_DEFAULT
+Route103_EventScript_AfterKyleBattle::
+	msgbox Route103_Text_KyleTimeToHeadBack, MSGBOX_DEFAULT
 	goto Route103_EventScript_RivalExit
 	end
 
@@ -289,7 +289,7 @@ Route103_EventScript_Isabelle::
 	end
 
 Route103_Text_MayRoute103Pokemon:
-	.string "May: Let's see… The Pokémon found\n"
+	.string "Kelli: Let's see… The Pokémon found\n"
 	.string "on Route 103 include…$"
 
 Route103_Text_MayLetsBattle:
@@ -306,7 +306,7 @@ Route103_Text_MayDefeated:
 	.string "{PLAYER}{KUN}, you're pretty good!$"
 
 Route103_Text_MayTimeToHeadBack:
-	.string "May: I think I know why my dad has\n"
+	.string "Kelli: I think I know why my dad has\n"
 	.string "an eye out for you now.\p"
 	.string "I mean, you just got that Pokémon,\n"
 	.string "but it already likes you.\p"
@@ -315,11 +315,11 @@ Route103_Text_MayTimeToHeadBack:
 	.string "Well, it's time to head back to\n"
 	.string "the Lab.$"
 
-Route103_Text_BrendanRoute103Pokemon:
-	.string "Brendan: Okay, so it's this one and\n"
+Route103_Text_KyleRoute103Pokemon:
+	.string "Kyle: Okay, so it's this one and\n"
 	.string "that one that live on Route 103…$"
 
-Route103_Text_BrendanLetsBattle:
+Route103_Text_KyleLetsBattle:
 	.string "Hey, it's {PLAYER}!\p"
 	.string "…Oh, yeah, Dad gave you a Pokémon.\p"
 	.string "Since we're here, how about a little\n"
@@ -327,11 +327,11 @@ Route103_Text_BrendanLetsBattle:
 	.string "I'll teach you what being a Trainer's\n"
 	.string "about!$"
 
-Route103_Text_BrendanDefeated:
+Route103_Text_KyleDefeated:
 	.string "Huh, {PLAYER}, you're not too shabby.$"
 
-Route103_Text_BrendanTimeToHeadBack:
-	.string "Brendan: I think I get it.\n"
+Route103_Text_KyleTimeToHeadBack:
+	.string "Kyle: I think I get it.\n"
 	.string "I think I know why my dad has his eye\l"
 	.string "out for you now.\p"
 	.string "Look, your Pokémon already likes you,\n"

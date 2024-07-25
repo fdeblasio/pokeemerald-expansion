@@ -312,7 +312,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WALLY",
+      "graphics_id": "OBJ_EVENT_GFX_DUNCAN",
       "x": 8,
       "y": 63,
       "elevation": 5,
@@ -322,7 +322,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_HIDE_ROUTE_114_WALLY"
+      "flag": "FLAG_HIDE_ROUTE_114_DUNCAN"
     }
   ],
   "warp_events": [
@@ -370,7 +370,7 @@
       "elevation": 5,
       "var": "VAR_ROUTE114_STATE",
       "var_value": "0",
-      "script": "Route114_EventScript_WallyTrigger"
+      "script": "Route114_EventScript_DuncanTrigger"
     }
   ],
   "bg_events": [

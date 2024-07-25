@@ -1,4 +1,4 @@
-.set LOCALID_WALLYS_DAD, 1
+.set LOCALID_DUNCANS_DAD, 1
 
 PetalburgCity_WallysHouse_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, PetalburgCity_WallysHouse_OnFrame
@@ -6,12 +6,12 @@ PetalburgCity_WallysHouse_MapScripts::
 	.byte 0
 
 PetalburgCity_WallysHouse_OnWarp:
-	map_script_2 VAR_PETALBURG_CITY_STATE, 4, PetalburgCity_WallysHouse_EventScript_PlayerWallysDadFaceEachOther
+	map_script_2 VAR_PETALBURG_CITY_STATE, 4, PetalburgCity_WallysHouse_EventScript_PlayerDuncansDadFaceEachOther
 	.2byte 0
 
-PetalburgCity_WallysHouse_EventScript_PlayerWallysDadFaceEachOther::
+PetalburgCity_WallysHouse_EventScript_PlayerDuncansDadFaceEachOther::
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
-	turnobject LOCALID_WALLYS_DAD, DIR_WEST
+	turnobject LOCALID_DUNCANS_DAD, DIR_WEST
 	end
 
 PetalburgCity_WallysHouse_OnFrame:
@@ -29,49 +29,49 @@ PetalburgCity_WallysHouse_EventScript_GiveTMSurf::
 	releaseall
 	end
 
-PetalburgCity_WallysHouse_EventScript_WallysDad::
+PetalburgCity_WallysHouse_EventScript_DuncansDad::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_WALLY_VICTORY_ROAD, PetalburgCity_WallysHouse_EventScript_DefeatedWallyInVictoryRoad
+	goto_if_set FLAG_DEFEATED_DUNCAN_VICTORY_ROAD, PetalburgCity_WallysHouse_EventScript_DefeatedDuncanInVictoryRoad
 	goto_if_set FLAG_RECEIVED_TM_SURF, PetalburgCity_WallysHouse_EventScript_ReceievedTMSurf
-	goto_if_set FLAG_THANKED_FOR_PLAYING_WITH_WALLY, PetalburgCity_WallysHouse_EventScript_PlayedWithWally
-	msgbox PetalburgCity_WallysHouse_Text_ThanksForPlayingWithWally, MSGBOX_DEFAULT
-	setflag FLAG_THANKED_FOR_PLAYING_WITH_WALLY
+	goto_if_set FLAG_THANKED_FOR_PLAYING_WITH_DUNCAN, PetalburgCity_WallysHouse_EventScript_PlayedWithDuncan
+	msgbox PetalburgCity_WallysHouse_Text_ThanksForPlayingWithDuncan, MSGBOX_DEFAULT
+	setflag FLAG_THANKED_FOR_PLAYING_WITH_DUNCAN
 	release
 	end
 
 PetalburgCity_WallysHouse_EventScript_ReceievedTMSurf::
-	msgbox PetalburgCity_WallysHouse_Text_WallyIsComingHomeSoon, MSGBOX_DEFAULT
+	msgbox PetalburgCity_WallysHouse_Text_DuncanIsComingHomeSoon, MSGBOX_DEFAULT
 	release
 	end
 
-PetalburgCity_WallysHouse_EventScript_DefeatedWallyInVictoryRoad::
-	msgbox PetalburgCity_WallysHouse_Text_YouMetWallyInEverGrandeCity, MSGBOX_DEFAULT
+PetalburgCity_WallysHouse_EventScript_DefeatedDuncanInVictoryRoad::
+	msgbox PetalburgCity_WallysHouse_Text_YouMetDuncanInEverGrandeCity, MSGBOX_DEFAULT
 	release
 	end
 
-PetalburgCity_WallysHouse_EventScript_PlayedWithWally::
-	msgbox PetalburgCity_WallysHouse_Text_WonderHowWallyIsDoing, MSGBOX_DEFAULT
+PetalburgCity_WallysHouse_EventScript_PlayedWithDuncan::
+	msgbox PetalburgCity_WallysHouse_Text_WonderHowDuncanIsDoing, MSGBOX_DEFAULT
 	release
 	end
 
-PetalburgCity_WallysHouse_EventScript_WallysMom::
+PetalburgCity_WallysHouse_EventScript_DuncansMom::
 	lock
 	faceplayer
 	goto_if_set FLAG_RECEIVED_TM_SURF, PetalburgCity_WallysHouse_EventScript_ReceivedTMSurf
-	msgbox PetalburgCity_WallysHouse_Text_WallyWasReallyHappy, MSGBOX_DEFAULT
+	msgbox PetalburgCity_WallysHouse_Text_DuncanWasReallyHappy, MSGBOX_DEFAULT
 	release
 	end
 
 PetalburgCity_WallysHouse_EventScript_ReceivedTMSurf::
-	msgbox PetalburgCity_WallysHouse_Text_WallyLeftWithoutTelling, MSGBOX_DEFAULT
+	msgbox PetalburgCity_WallysHouse_Text_DuncanLeftWithoutTelling, MSGBOX_DEFAULT
 	release
 	end
 
-PetalburgCity_WallysHouse_Text_ThanksForPlayingWithWally:
+PetalburgCity_WallysHouse_Text_ThanksForPlayingWithDuncan:
 	.string "You're…\n"
 	.string "Ah, you must be {PLAYER}{KUN}, right?\p"
-	.string "Thank you for playing with Wally a\n"
+	.string "Thank you for playing with Duncan a\n"
 	.string "little while ago.\p"
 	.string "He's been frail and sickly ever\n"
 	.string "since he was a baby.\p"
@@ -79,25 +79,25 @@ PetalburgCity_WallysHouse_Text_ThanksForPlayingWithWally:
 	.string "in Verdanturf Town for a while.\p"
 	.string "The air is a lot cleaner there\n"
 	.string "than it is here.\p"
-	.string "What's that? Where's Wally?\n"
-	.string "He's already left, our Wally.\p"
+	.string "What's that? Where's Duncan?\n"
+	.string "He's already left, our Duncan.\p"
 	.string "I wonder where he could have\n"
 	.string "gotten by now?$"
 
-PetalburgCity_WallysHouse_Text_WonderHowWallyIsDoing:
-	.string "I wonder how our Wally is doing?$"
+PetalburgCity_WallysHouse_Text_WonderHowDuncanIsDoing:
+	.string "I wonder how our Duncan is doing?$"
 
 PetalburgCity_WallysHouse_Text_PleaseExcuseUs:
 	.string "{PLAYER}{KUN}! Please excuse us for\n"
 	.string "dragging you here this way.\p"
-	.string "But our Wally's become very healthy\n"
+	.string "But our Duncan's become very healthy\n"
 	.string "since he went to Verdanturf Town.\p"
 	.string "We owe it all to you!\p"
-	.string "When Wally left town, you helped\n"
+	.string "When Duncan left town, you helped\n"
 	.string "him catch a Pokémon, right?\p"
-	.string "I think that made Wally really\n"
+	.string "I think that made Duncan really\n"
 	.string "happy.\p"
-	.string "Actually, not just Wally.\n"
+	.string "Actually, not just Duncan.\n"
 	.string "It made me, his father, happy too.\p"
 	.string "Happy that he's gained such a great\n"
 	.string "friend as you.\p"
@@ -108,30 +108,30 @@ PetalburgCity_WallysHouse_Text_SurfGoAllSortsOfPlaces:
 	.string "If you ride a Wailmer, you'll be\n"
 	.string "able to go to all sorts of places.$"
 
-PetalburgCity_WallysHouse_Text_WallyIsComingHomeSoon:
-	.string "Wally's coming home soon.\n"
+PetalburgCity_WallysHouse_Text_DuncanIsComingHomeSoon:
+	.string "Duncan's coming home soon.\n"
 	.string "I'm looking forward to that.$"
 
-PetalburgCity_WallysHouse_Text_YouMetWallyInEverGrandeCity:
-	.string "Oh? You met Wally in\n"
+PetalburgCity_WallysHouse_Text_YouMetDuncanInEverGrandeCity:
+	.string "Oh? You met Duncan in\n"
 	.string "Ever Grande City?\p"
 	.string "Oh, {PLAYER}{KUN}, don't be silly.\p"
 	.string "He may have gotten healthy, but he\n"
 	.string "can't go somewhere far away like\l"
 	.string "that all by himself.$"
 
-PetalburgCity_WallysHouse_Text_WallyWasReallyHappy:
-	.string "Wally was really happy when he told\n"
+PetalburgCity_WallysHouse_Text_DuncanWasReallyHappy:
+	.string "Duncan was really happy when he told\n"
 	.string "us that he caught a Pokémon.\p"
 	.string "It's been ages since I've seen him\n"
 	.string "smile like that.$"
 
-PetalburgCity_WallysHouse_Text_WallyLeftWithoutTelling:
+PetalburgCity_WallysHouse_Text_DuncanLeftWithoutTelling:
 	.string "I want you to keep this a secret\n"
 	.string "from my husband…\p"
-	.string "But our Wally left Verdanturf Town\n"
+	.string "But our Duncan left Verdanturf Town\n"
 	.string "without telling anyone.\p"
-	.string "You know, Wally is frail, but\n"
+	.string "You know, Duncan is frail, but\n"
 	.string "he's surprisingly strong-willed.\p"
 	.string "I'm sure that he'll come back safe\n"
 	.string "and sound one day!$"

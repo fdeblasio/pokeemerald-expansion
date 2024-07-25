@@ -1381,7 +1381,7 @@ static void Task_Scene2_CreateSprites(u8 taskId)
 
     // Load sprite sheets
     if (sIntroCharacterGender == MALE)
-        LoadCompressedSpriteSheet(gSpriteSheet_IntroBrendan);
+        LoadCompressedSpriteSheet(gSpriteSheet_IntroKyle);
     else
         LoadCompressedSpriteSheet(gSpriteSheet_IntroMay);
 
@@ -1400,7 +1400,7 @@ static void Task_Scene2_CreateSprites(u8 taskId)
     CreateSprite(&sSpriteTemplate_Torchic, DISPLAY_WIDTH + 48, 110, 1);
 
     if (sIntroCharacterGender == MALE)
-        spriteId = CreateIntroBrendanSprite(DISPLAY_WIDTH + 32, 100);
+        spriteId = CreateIntroKyleSprite(DISPLAY_WIDTH + 32, 100);
     else
         spriteId = CreateIntroMaySprite(DISPLAY_WIDTH + 32, 100);
 

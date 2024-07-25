@@ -65,10 +65,10 @@
 #define MAP_UNDERWATER_ROUTE125 (56 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
-#define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
-#define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F    (1 | (1 << 8))
-#define MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F        (2 | (1 << 8))
-#define MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F        (3 | (1 << 8))
+#define MAP_LITTLEROOT_TOWN_KYLES_HOUSE_1F       (0 | (1 << 8))
+#define MAP_LITTLEROOT_TOWN_KYLES_HOUSE_2F       (1 | (1 << 8))
+#define MAP_LITTLEROOT_TOWN_KELLIS_HOUSE_1F      (2 | (1 << 8))
+#define MAP_LITTLEROOT_TOWN_KELLIS_HOUSE_2F      (3 | (1 << 8))
 #define MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB (4 | (1 << 8))
 
 // gMapGroup_IndoorOldale
@@ -120,7 +120,7 @@
 #define MAP_PACIFIDLOG_TOWN_HOUSE5            (5 | (7 << 8))
 
 // gMapGroup_IndoorPetalburg
-#define MAP_PETALBURG_CITY_WALLYS_HOUSE      (0 | (8 << 8))
+#define MAP_PETALBURG_CITY_DUNCANS_HOUSE     (0 | (8 << 8))
 #define MAP_PETALBURG_CITY_GYM               (1 | (8 << 8))
 #define MAP_PETALBURG_CITY_HOUSE1            (2 | (8 << 8))
 #define MAP_PETALBURG_CITY_HOUSE2            (3 | (8 << 8))

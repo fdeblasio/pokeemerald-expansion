@@ -1,7 +1,7 @@
 [PARTNER_NONE] =
 {
     .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
-    .trainerPic = TRAINER_BACK_PIC_BRENDAN,
+    .trainerPic = TRAINER_BACK_PIC_KYLE,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
     .partySize = 0,
     .party = (const struct TrainerMon[])

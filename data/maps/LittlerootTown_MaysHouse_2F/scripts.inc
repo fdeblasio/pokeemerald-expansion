@@ -55,14 +55,14 @@ LittlerootTown_MaysHouse_2F_EventScript_MeetMay::
 	applymovement LOCALID_RIVAL, Common_Movement_Delay48
 	waitmovement 0
 	delay 10
-	playbgm MUS_ENCOUNTER_MAY, TRUE
+	playbgm MUS_ENCOUNTER_KELLI, TRUE
 	call_if_eq VAR_FACING, DIR_NORTH, LittlerootTown_MaysHouse_2F_EventScript_MeetMayNorth
 	call_if_eq VAR_FACING, DIR_SOUTH, LittlerootTown_MaysHouse_2F_EventScript_MeetMaySouth
 	call_if_eq VAR_FACING, DIR_WEST, LittlerootTown_MaysHouse_2F_EventScript_MeetMayWest
 	call_if_eq VAR_FACING, DIR_EAST, LittlerootTown_MaysHouse_2F_EventScript_MeetMayEast
 	setvar VAR_LITTLEROOT_RIVAL_STATE, 3
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL
-	clearflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_KELLIS_HOUSE_2F_POKE_BALL
+	clearflag FLAG_HIDE_LITTLEROOT_TOWN_KELLIS_HOUSE_RIVAL_BEDROOM
 	setvar VAR_LITTLEROOT_TOWN_STATE, 1
 	savebgm MUS_DUMMY
 	fadedefaultbgm
@@ -230,7 +230,7 @@ RivalsHouse_2F_EventScript_Rival::
 	goto_if_set FLAG_MET_RIVAL_LILYCOVE, RivalsHouse_2F_EventScript_RivalPostLilycove
 	checkplayergender
 	goto_if_eq VAR_RESULT, MALE, RivalsHouse_2F_EventScript_May
-	goto_if_eq VAR_RESULT, FEMALE, RivalsHouse_2F_EventScript_Brendan
+	goto_if_eq VAR_RESULT, FEMALE, RivalsHouse_2F_EventScript_Kyle
 	end
 
 RivalsHouse_2F_EventScript_May::
@@ -238,8 +238,8 @@ RivalsHouse_2F_EventScript_May::
 	releaseall
 	end
 
-RivalsHouse_2F_EventScript_Brendan::
-	msgbox RivalsHouse_2F_Text_BrendanGettingReady, MSGBOX_DEFAULT
+RivalsHouse_2F_EventScript_Kyle::
+	msgbox RivalsHouse_2F_Text_KyleGettingReady, MSGBOX_DEFAULT
 	releaseall
 	end
 
@@ -248,7 +248,7 @@ RivalsHouse_2F_EventScript_RivalPostLilycove::
 	waitmovement 0
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, RivalsHouse_2F_EventScript_MayPostLilycove
-	call_if_eq VAR_RESULT, FEMALE, RivalsHouse_2F_EventScript_BrendanPostLilycove
+	call_if_eq VAR_RESULT, FEMALE, RivalsHouse_2F_EventScript_KylePostLilycove
 	setflag FLAG_MET_RIVAL_IN_HOUSE_AFTER_LILYCOVE
 	releaseall
 	end
@@ -258,17 +258,17 @@ RivalsHouse_2F_EventScript_MayPostLilycove::
 	msgbox RivalsHouse_2F_Text_MayJustCheckingMyPokedex, MSGBOX_DEFAULT
 	return
 
-RivalsHouse_2F_EventScript_BrendanPostLilycove::
-	goto_if_set FLAG_MET_RIVAL_IN_HOUSE_AFTER_LILYCOVE, RivalsHouse_2F_EventScript_BrendanWhereShouldIGoNext
-	msgbox RivalsHouse_2F_Text_BrendanJustCheckingMyPokedex, MSGBOX_DEFAULT
+RivalsHouse_2F_EventScript_KylePostLilycove::
+	goto_if_set FLAG_MET_RIVAL_IN_HOUSE_AFTER_LILYCOVE, RivalsHouse_2F_EventScript_KyleWhereShouldIGoNext
+	msgbox RivalsHouse_2F_Text_KyleJustCheckingMyPokedex, MSGBOX_DEFAULT
 	return
 
 RivalsHouse_2F_EventScript_MayWhereShouldIGoNext::
 	msgbox RivalsHouse_2F_Text_MayWhereShouldIGoNext, MSGBOX_DEFAULT
 	return
 
-RivalsHouse_2F_EventScript_BrendanWhereShouldIGoNext::
-	msgbox RivalsHouse_2F_Text_BrendanWhereShouldIGoNext, MSGBOX_DEFAULT
+RivalsHouse_2F_EventScript_KyleWhereShouldIGoNext::
+	msgbox RivalsHouse_2F_Text_KyleWhereShouldIGoNext, MSGBOX_DEFAULT
 	return
 
 LittlerootTown_MaysHouse_2F_EventScript_PC::
@@ -284,7 +284,7 @@ LittlerootTown_MaysHouse_2F_EventScript_CheckRivalsPC::
 	end
 
 LittlerootTown_MaysHouse_2F_EventScript_CheckPlayersPC::
-	setvar VAR_0x8004, PC_LOCATION_MAYS_HOUSE
+	setvar VAR_0x8004, PC_LOCATION_KELLIS_HOUSE
 	special DoPCTurnOnEffect
 	playse SE_PC_ON
 	msgbox gText_PlayerHouseBootPC, MSGBOX_DEFAULT
@@ -294,7 +294,7 @@ LittlerootTown_MaysHouse_2F_EventScript_CheckPlayersPC::
 	end
 
 LittlerootTown_MaysHouse_2F_EventScript_TurnOffPlayerPC::
-	setvar VAR_0x8004, PC_LOCATION_MAYS_HOUSE
+	setvar VAR_0x8004, PC_LOCATION_KELLIS_HOUSE
 	playse SE_PC_OFF
 	special DoPCTurnOffEffect
 	releaseall
@@ -328,7 +328,7 @@ RivalsHouse_2F_Text_MayGettingReady:
 	.string "Pokémon fully restored!\n"
 	.string "Items ready, and…$"
 
-RivalsHouse_2F_Text_BrendanWhoAreYou:
+RivalsHouse_2F_Text_KyleWhoAreYou:
 	.string "Hey!\n"
 	.string "You…\p"
 	.string "Who are you?\p"
@@ -338,7 +338,7 @@ RivalsHouse_2F_Text_BrendanWhoAreYou:
 	.string "Dad, Prof. Birch, said that our new\n"
 	.string "next-door neighbor is a Gym Leader's\l"
 	.string "kid, so I assumed you'd be a guy.\p"
-	.string "My name's Brendan.\n"
+	.string "My name's Kyle.\n"
 	.string "So, hi, neighbor!\p"
 	.string "Huh? Hey, {PLAYER}, don't you have\n"
 	.string "a Pokémon?\p"
@@ -348,7 +348,7 @@ RivalsHouse_2F_Text_BrendanWhoAreYou:
 	.string "some wild Pokémon.\p"
 	.string "Some other time, okay?$"
 
-RivalsHouse_2F_Text_BrendanGettingReady:
+RivalsHouse_2F_Text_KyleGettingReady:
 	.string "Pokémon fully restored…\n"
 	.string "Items all packed, and…$"
 
@@ -357,7 +357,7 @@ RivalsHouse_2F_Text_ItsRivalsPokeBall:
 	.string "Better leave it right where it is.$"
 
 RivalsHouse_2F_Text_MayJustCheckingMyPokedex:
-	.string "May: {PLAYER}{KUN}!\p"
+	.string "Kelli: {PLAYER}{KUN}!\p"
 	.string "I was just checking my Pokédex.\p"
 	.string "There's still a lot of Pokémon that\n"
 	.string "I've seen but haven't caught.\p"
@@ -367,13 +367,13 @@ RivalsHouse_2F_Text_MayJustCheckingMyPokedex:
 	.string "some Pokémon next?$"
 
 RivalsHouse_2F_Text_MayWhereShouldIGoNext:
-	.string "May: I wonder where I should go catch\n"
+	.string "Kelli: I wonder where I should go catch\n"
 	.string "some Pokémon next?\p"
 	.string "Wouldn't it be funny if we ran into each\n"
 	.string "other, {PLAYER}{KUN}?$"
 
-RivalsHouse_2F_Text_BrendanJustCheckingMyPokedex:
-	.string "Brendan: Hey, it's {PLAYER}.\p"
+RivalsHouse_2F_Text_KyleJustCheckingMyPokedex:
+	.string "Kyle: Hey, it's {PLAYER}.\p"
 	.string "I was just checking out my Pokédex.\p"
 	.string "There are still many Pokémon that\n"
 	.string "I need to catch, I know, but this\l"
@@ -381,8 +381,8 @@ RivalsHouse_2F_Text_BrendanJustCheckingMyPokedex:
 	.string "Checking this Pokédex out gives me\n"
 	.string "the urge to hit the road again.$"
 
-RivalsHouse_2F_Text_BrendanWhereShouldIGoNext:
-	.string "Brendan: I'm having a hard time deciding\n"
+RivalsHouse_2F_Text_KyleWhereShouldIGoNext:
+	.string "Kyle: I'm having a hard time deciding\n"
 	.string "where I should catch Pokémon next.\p"
 	.string "Hey, {PLAYER}, if I see you while I'm out\n"
 	.string "catching Pokémon, I can pitch you a\l"

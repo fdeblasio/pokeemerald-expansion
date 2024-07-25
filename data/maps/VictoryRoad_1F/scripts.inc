@@ -1,56 +1,56 @@
-.set LOCALID_WALLY_ENTRANCE, 4
+.set LOCALID_DUNCAN_ENTRANCE, 4
 
 VictoryRoad_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, VictoryRoad_1F_OnTransition
 	.byte 0
 
 VictoryRoad_1F_OnTransition:
-	call_if_eq VAR_VICTORY_ROAD_1F_STATE, 1, VictoryRoad_1F_EventScript_SetEntranceWallyPos1
-	call_if_eq VAR_VICTORY_ROAD_1F_STATE, 2, VictoryRoad_1F_EventScript_SetEntranceWallyPos2
+	call_if_eq VAR_VICTORY_ROAD_1F_STATE, 1, VictoryRoad_1F_EventScript_SetEntranceDuncanPos1
+	call_if_eq VAR_VICTORY_ROAD_1F_STATE, 2, VictoryRoad_1F_EventScript_SetEntranceDuncanPos2
 	end
 
-VictoryRoad_1F_EventScript_SetEntranceWallyPos1::
-	setobjectxyperm LOCALID_WALLY_ENTRANCE, 2, 24
-	setobjectmovementtype LOCALID_WALLY_ENTRANCE, MOVEMENT_TYPE_FACE_DOWN
+VictoryRoad_1F_EventScript_SetEntranceDuncanPos1::
+	setobjectxyperm LOCALID_DUNCAN_ENTRANCE, 2, 24
+	setobjectmovementtype LOCALID_DUNCAN_ENTRANCE, MOVEMENT_TYPE_FACE_DOWN
 	return
 
-VictoryRoad_1F_EventScript_SetEntranceWallyPos2::
-	setobjectxyperm LOCALID_WALLY_ENTRANCE, 3, 24
-	setobjectmovementtype LOCALID_WALLY_ENTRANCE, MOVEMENT_TYPE_FACE_DOWN
+VictoryRoad_1F_EventScript_SetEntranceDuncanPos2::
+	setobjectxyperm LOCALID_DUNCAN_ENTRANCE, 3, 24
+	setobjectmovementtype LOCALID_DUNCAN_ENTRANCE, MOVEMENT_TYPE_FACE_DOWN
 	return
 
-VictoryRoad_1F_EventScript_WallyBattleTrigger1::
+VictoryRoad_1F_EventScript_DuncanBattleTrigger1::
 	lockall
 	setvar VAR_0x8008, 1
-	addobject LOCALID_WALLY_ENTRANCE
-	applymovement LOCALID_WALLY_ENTRANCE, VictoryRoad_1F_Movement_WallyApproachPlayer1
+	addobject LOCALID_DUNCAN_ENTRANCE
+	applymovement LOCALID_DUNCAN_ENTRANCE, VictoryRoad_1F_Movement_DuncanApproachPlayer1
 	waitmovement 0
-	goto VictoryRoad_1F_EventScript_WallyEntranceBattle
+	goto VictoryRoad_1F_EventScript_DuncanEntranceBattle
 	end
 
-VictoryRoad_1F_EventScript_WallyBattleTrigger2::
+VictoryRoad_1F_EventScript_DuncanBattleTrigger2::
 	lockall
 	setvar VAR_0x8008, 2
-	addobject LOCALID_WALLY_ENTRANCE
-	applymovement LOCALID_WALLY_ENTRANCE, VictoryRoad_1F_Movement_WallyApproachPlayer2
+	addobject LOCALID_DUNCAN_ENTRANCE
+	applymovement LOCALID_DUNCAN_ENTRANCE, VictoryRoad_1F_Movement_DuncanApproachPlayer2
 	waitmovement 0
-	goto VictoryRoad_1F_EventScript_WallyEntranceBattle
+	goto VictoryRoad_1F_EventScript_DuncanEntranceBattle
 	end
 
-VictoryRoad_1F_EventScript_WallyEntranceBattle::
+VictoryRoad_1F_EventScript_DuncanEntranceBattle::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
-	msgbox VictoryRoad_1F_Text_WallyNotGoingToLoseAnymore, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_WALLY_VICTORY_ROAD_1, VictoryRoad_1F_Text_WallyEntranceDefeat
-	msgbox VictoryRoad_1F_Text_WallyPostEntranceBattle, MSGBOX_DEFAULT
-	clearflag FLAG_HIDE_VICTORY_ROAD_ENTRANCE_WALLY
-	copyobjectxytoperm LOCALID_WALLY_ENTRANCE
-	setflag FLAG_DEFEATED_WALLY_VICTORY_ROAD
+	msgbox VictoryRoad_1F_Text_DuncanNotGoingToLoseAnymore, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_DUNCAN_VICTORY_ROAD_1, VictoryRoad_1F_Text_DuncanEntranceDefeat
+	msgbox VictoryRoad_1F_Text_DuncanPostEntranceBattle, MSGBOX_DEFAULT
+	clearflag FLAG_HIDE_VICTORY_ROAD_ENTRANCE_DUNCAN
+	copyobjectxytoperm LOCALID_DUNCAN_ENTRANCE
+	setflag FLAG_DEFEATED_DUNCAN_VICTORY_ROAD
 	copyvar VAR_VICTORY_ROAD_1F_STATE, VAR_0x8008
 	releaseall
 	end
 
-VictoryRoad_1F_Movement_WallyApproachPlayer1:
+VictoryRoad_1F_Movement_DuncanApproachPlayer1:
 	walk_left
 	walk_left
 	walk_left
@@ -64,7 +64,7 @@ VictoryRoad_1F_Movement_WallyApproachPlayer1:
 	walk_up
 	step_end
 
-VictoryRoad_1F_Movement_WallyApproachPlayer2:
+VictoryRoad_1F_Movement_DuncanApproachPlayer2:
 	walk_left
 	walk_left
 	walk_left
@@ -77,22 +77,22 @@ VictoryRoad_1F_Movement_WallyApproachPlayer2:
 	walk_up
 	step_end
 
-@ This Wally appears near the entrance once his battle is triggered and remains there until the Hall of Fame is entered
-VictoryRoad_1F_EventScript_EntranceWally::
-	msgbox VictoryRoad_1F_Text_WallyPostEntranceBattle, MSGBOX_NPC
+@ This Duncan appears near the entrance once his battle is triggered and remains there until the Hall of Fame is entered
+VictoryRoad_1F_EventScript_EntranceDuncan::
+	msgbox VictoryRoad_1F_Text_DuncanPostEntranceBattle, MSGBOX_NPC
 	end
 
-@ This Wally appears and remains at the exit after the Hall of Fame is entered
-VictoryRoad_1F_EventScript_ExitWally::
-	trainerbattle_single TRAINER_WALLY_VICTORY_ROAD_2, VictoryRoad_1F_Text_WallyIntro, VictoryRoad_1F_Text_WallyDefeat
+@ This Duncan appears and remains at the exit after the Hall of Fame is entered
+VictoryRoad_1F_EventScript_ExitDuncan::
+	trainerbattle_single TRAINER_DUNCAN_VICTORY_ROAD_2, VictoryRoad_1F_Text_DuncanIntro, VictoryRoad_1F_Text_DuncanDefeat
 	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, VictoryRoad_1F_EventScript_RematchWally
-	msgbox VictoryRoad_1F_Text_WallyPostBattle, MSGBOX_AUTOCLOSE
+	goto_if_eq VAR_RESULT, TRUE, VictoryRoad_1F_EventScript_RematchDuncan
+	msgbox VictoryRoad_1F_Text_DuncanPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-VictoryRoad_1F_EventScript_RematchWally::
-	trainerbattle_rematch TRAINER_WALLY_VICTORY_ROAD_2, VictoryRoad_1F_Text_WallyIntro, VictoryRoad_1F_Text_WallyDefeat
-	msgbox VictoryRoad_1F_Text_WallyPostBattle, MSGBOX_AUTOCLOSE
+VictoryRoad_1F_EventScript_RematchDuncan::
+	trainerbattle_rematch TRAINER_DUNCAN_VICTORY_ROAD_2, VictoryRoad_1F_Text_DuncanIntro, VictoryRoad_1F_Text_DuncanDefeat
+	msgbox VictoryRoad_1F_Text_DuncanPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 VictoryRoad_1F_EventScript_Vito::
@@ -120,8 +120,8 @@ VictoryRoad_1F_EventScript_Katelynn::
 	msgbox VictoryRoad_1F_Text_KatelynnPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-VictoryRoad_1F_Text_WallyNotGoingToLoseAnymore:
-	.string "Wally: Hi! {PLAYER}!\p"
+VictoryRoad_1F_Text_DuncanNotGoingToLoseAnymore:
+	.string "Duncan: Hi! {PLAYER}!\p"
 	.string "I bet you're surprised to see me here!\p"
 	.string "I made it all the way here, and it's\n"
 	.string "all thanks to you!\p"
@@ -132,27 +132,27 @@ VictoryRoad_1F_Text_WallyNotGoingToLoseAnymore:
 	.string "gave me courage and strength!\p"
 	.string "Okay… Here I come!$"
 
-VictoryRoad_1F_Text_WallyEntranceDefeat:
+VictoryRoad_1F_Text_DuncanEntranceDefeat:
 	.string "Wow!\n"
 	.string "{PLAYER}, you are strong, after all!$"
 
-VictoryRoad_1F_Text_WallyPostEntranceBattle:
-	.string "Wally: I couldn't beat you today,\n"
+VictoryRoad_1F_Text_DuncanPostEntranceBattle:
+	.string "Duncan: I couldn't beat you today,\n"
 	.string "{PLAYER}, but one of these days, I'll\l"
 	.string "catch up to you!$"
 
-VictoryRoad_1F_Text_WallyIntro:
-	.string "Wally: Hi! {PLAYER}!\p"
+VictoryRoad_1F_Text_DuncanIntro:
+	.string "Duncan: Hi! {PLAYER}!\p"
 	.string "I've gotten stronger since that last\n"
 	.string "time! I wanted to show you, {PLAYER}!\p"
 	.string "Okay… Here I come!$"
 
-VictoryRoad_1F_Text_WallyDefeat:
+VictoryRoad_1F_Text_DuncanDefeat:
 	.string "Wow!\n"
 	.string "{PLAYER}, you are strong, after all!$"
 
-VictoryRoad_1F_Text_WallyPostBattle:
-	.string "Wally: I couldn't beat you this time,\n"
+VictoryRoad_1F_Text_DuncanPostBattle:
+	.string "Duncan: I couldn't beat you this time,\n"
 	.string "too… But one of these days, {PLAYER},\l"
 	.string "I'm going to catch up to you…\p"
 	.string "And challenge the Pokémon League!$"

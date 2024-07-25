@@ -256,7 +256,7 @@
 #define STRINGID_NOPPLEFT                             255
 #define STRINGID_BUTNOPPLEFT                          256
 #define STRINGID_PLAYERUSEDITEM                       257
-#define STRINGID_WALLYUSEDITEM                        258
+#define STRINGID_DUNCANUSEDITEM                        258
 #define STRINGID_TRAINERBLOCKEDBALL                   259
 #define STRINGID_DONTBEATHIEF                         260
 #define STRINGID_ITDODGEDBALL                         261
@@ -266,7 +266,7 @@
 #define STRINGID_AARGHALMOSTHADIT                     265
 #define STRINGID_SHOOTSOCLOSE                         266
 #define STRINGID_GOTCHAPKMNCAUGHTPLAYER               267
-#define STRINGID_GOTCHAPKMNCAUGHTWALLY                268
+#define STRINGID_GOTCHAPKMNCAUGHTDUNCAN                268
 #define STRINGID_GIVENICKNAMECAPTURED                 269
 #define STRINGID_PKMNSENTTOPC                         270
 #define STRINGID_PKMNDATAADDEDTODEX                   271

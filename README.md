@@ -246,7 +246,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Battle Pyramid wild Pokémon have been updated
 - Battle Frontier no longer requires saving
 - Certain sections are blocked off until gyms or rivals are defeated
-- Wally is given more battles. The battle in Verdanturf starts with Grassy Terrain
+- Duncan is given more battles. The battle in Verdanturf starts with Grassy Terrain
 - Battles in long grass on Routes 119 and 120 start with Grassy Terrain (unless it's a thunderstorm)
 - All Pokémon in the Dragon egg group that could not already learn Dragon Breath now get it as an egg move. This is reflected in the species changes below
 - Moves are no longer replaced if a Pokémon levels up in the daycare
@@ -324,10 +324,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Brawly                    |16, 16, 19            |16, 16, 18|
 |Archie Oceanic Museum     |N/A                   |17, 17, 19|
 |Rival 110                 |18, 18, 20||
-|Wally Mauville            |16                    |19|
-|Wally Verdanturf          |N/A                   |21, 23|
+|Duncan Mauville           |16                    |19|
+|Duncan Verdanturf         |N/A                   |21, 23|
 |Wattson                   |20, 22, 22, 24||
-|Wally Route 114           |N/A                   |25, 25, 27|
+|Duncan Route 114          |N/A                   |25, 25, 27|
 |Courtney Meteor Falls     |N/A                   |26, 26, 28|
 |Tabitha Mt. Chimney       |18, 20, 22, 22        |27, 27, 29|
 |Maxie Mt. Chimney         |24, 24, 25            |28, 29, 29, 30|
@@ -348,7 +348,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Regirock/Regice/Registeel |40                    |55|
 |Juan                      |41, 41, 43, 43, 46    |55, 55, 56, 56, 58|
 |Rayquaza                  |70                    |60|
-|Wally Victory Road        |41, 43, 44, 44, 45    |56, 56, 57, 57, 59|
+|Duncan Victory Road       |41, 43, 44, 44, 45    |56, 56, 57, 57, 59|
 |Sidney                    |46, 46, 48, 48, 49    |60, 60, 61, 61, 62|
 |Phoebe                    |48, 49, 49, 50, 51    |61, 61, 62, 62, 63|
 |Glacia                    |50, 50, 52, 52, 53    |62, 62, 63, 63, 64|
@@ -359,10 +359,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Mew                       |N/A                   |70|
 |Deoxys                    |N/A                   |70|
 |Lugia/Ho-Oh               |N/A                   |70|
-|Gym Leader/Wally rematch 1|Various               |70, 70, 73, 73, 75|
-|Gym Leader/Wally rematch 2|Various               |75, 75, 78, 78, 80|
-|Gym Leader/Wally rematch 3|Various               |80, 80, 80, 83, 83, 85|
-|Gym Leader/Wally rematch 4|Various               |85, 85, 85, 88, 88, 90|
+|Gym Leader/Duncan rematch 1|Various               |70, 70, 73, 73, 75|
+|Gym Leader/Duncan rematch 2|Various               |75, 75, 78, 78, 80|
+|Gym Leader/Duncan rematch 3|Various               |80, 80, 80, 83, 83, 85|
+|Gym Leader/Duncan rematch 4|Various               |85, 85, 85, 88, 88, 90|
 |Elite Four rematches      |N/A                   |86, 86, 86, 88, 88, 90|
 |Wallace rematches         |N/A                   |87, 87, 87, 88, 88, 90|
 |Steven                    |75, 76, 76, 76, 77, 78|87, 87, 88, 88, 89, 90|

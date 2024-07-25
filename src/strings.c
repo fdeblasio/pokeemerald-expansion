@@ -16,7 +16,7 @@ const u8 gText_ExpandedPlaceholder_Archie[] = _("Archie");
 const u8 gText_ExpandedPlaceholder_Maxie[] = _("Maxie");
 const u8 gText_ExpandedPlaceholder_Kyogre[] = _("Kyogre");
 const u8 gText_ExpandedPlaceholder_Groudon[] = _("Groudon");
-const u8 gText_ExpandedPlaceholder_Brendan[] = _("Brendan");
+const u8 gText_ExpandedPlaceholder_Kyle[] = _("Kyle");
 const u8 gText_ExpandedPlaceholder_May[] = _("May");
 const u8 gText_EggNickname[] = _("Egg");
 const u8 gText_Pokemon[] = _("Pokémon");
@@ -212,7 +212,7 @@ const u8 *const gBagMenu_ReturnToStrings[] =
     [ITEMMENULOCATION_FAVOR_LADY]          = gText_TheField,
     [ITEMMENULOCATION_QUIZ_LADY]           = gText_TheField,
     [ITEMMENULOCATION_APPRENTICE]          = gText_TheField,
-    [ITEMMENULOCATION_WALLY]               = gText_TheBattle,
+    [ITEMMENULOCATION_DUNCAN]               = gText_TheBattle,
     [ITEMMENULOCATION_PCBOX]               = gText_ThePC,
     [ITEMMENULOCATION_BERRY_TREE_MULCH]    = gText_TheField,
 };

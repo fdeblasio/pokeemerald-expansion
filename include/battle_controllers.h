@@ -332,7 +332,7 @@ void SetControllerToPlayerPartner(u32 battler);
 void SetControllerToSafari(u32 battler);
 
 // wally controller
-void SetControllerToWally(u32 battler);
+void SetControllerToDuncan(u32 battler);
 
 // recorded opponent controller
 void SetControllerToRecordedOpponent(u32 battler);

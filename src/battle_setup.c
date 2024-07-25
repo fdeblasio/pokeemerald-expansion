@@ -279,7 +279,7 @@ static const struct TrainerBattleParameter sTrainerTwoTrainerBattleParams[] =
     .mapNum = MAP_NUM(map),     \
 }
 
-#define REMATCH_WALLY(trainer, map)   \
+#define REMATCH_DUNCAN(trainer, map)   \
 [REMATCH_##trainer] =           \
 {                               \
     .trainerIds = {TRAINER_##trainer##_2, TRAINER_##trainer##_3, TRAINER_##trainer##_4, TRAINER_##trainer##_5, TRAINER_##trainer##_5}, \
@@ -361,7 +361,7 @@ const struct RematchTrainer gRematchTable[REMATCH_TABLE_ENTRIES] =
     REMATCH(TRENT, ROUTE112),
     REMATCH(SAWYER, MT_CHIMNEY),
     REMATCH(KIRA_AND_DAN, ABANDONED_SHIP_ROOMS2_1F),
-    REMATCH_WALLY(WALLY_VICTORY_ROAD, VICTORY_ROAD_1F),
+    REMATCH_DUNCAN(DUNCAN_VICTORY_ROAD, VICTORY_ROAD_1F),
     REMATCH(ROXANNE, RUSTBORO_CITY),
     REMATCH(BRAWLY, DEWFORD_TOWN),
     REMATCH(WATTSON, MAUVILLE_CITY),
@@ -575,13 +575,13 @@ static void DoBattlePyramidTrainerHillBattle(void)
     TryUpdateGymLeaderRematchFromTrainer();
 }
 
-// Initiates battle where Wally catches Ralts
-void StartWallyTutorialBattle(void)
+// Initiates battle where Duncan catches Ralts
+void StartDuncanTutorialBattle(void)
 {
     CreateMaleMon(&gEnemyParty[0], SPECIES_WALLY_STARTER, 5);
     LockPlayerFieldControls();
     gMain.savedCallback = CB2_ReturnToFieldContinueScriptPlayMapMusic;
-    gBattleTypeFlags = BATTLE_TYPE_WALLY_TUTORIAL;
+    gBattleTypeFlags = BATTLE_TYPE_DUNCAN_TUTORIAL;
     CreateBattleStartTask(B_TRANSITION_SLICE, 0);
 }
 
@@ -1654,11 +1654,11 @@ void PlayTrainerEncounterMusic(void)
         case TRAINER_ENCOUNTER_MUSIC_RICH:
             music = MUS_ENCOUNTER_RICH;
             break;
-        /*case TRAINER_ENCOUNTER_MUSIC_BRENDAN:
-            music = MUS_ENCOUNTER_BRENDAN;
+        /*case TRAINER_ENCOUNTER_MUSIC_KYLE:
+            music = MUS_ENCOUNTER_KYLE;
             break;
-        case TRAINER_ENCOUNTER_MUSIC_MAY:
-            music = MUS_ENCOUNTER_MAY;
+        case TRAINER_ENCOUNTER_MUSIC_KELLI:
+            music = MUS_ENCOUNTER_KELLI;
             break;*/
         default:
             music = MUS_ENCOUNTER_SUSPICIOUS;
@@ -1743,13 +1743,13 @@ s32 TrainerIdToRematchTableId(const struct RematchTrainer *table, u16 trainerId)
 }
 
 // Returns TRUE if the given trainer (by their entry in the rematch table) is not allowed to have rematches.
-// This applies to the Elite Four and Victory Road Wally (if he's not been defeated yet)
+// This applies to the Elite Four and Victory Road Duncan (if he's not been defeated yet)
 static inline bool32 IsRematchForbidden(s32 rematchTableId)
 {
     if (rematchTableId >= REMATCH_ELITE_FOUR_ENTRIES)
         return TRUE;
-    else if (rematchTableId == REMATCH_WALLY_VICTORY_ROAD)
-        return !FlagGet(FLAG_DEFEATED_WALLY_VICTORY_ROAD);
+    else if (rematchTableId == REMATCH_DUNCAN_VICTORY_ROAD)
+        return !FlagGet(FLAG_DEFEATED_DUNCAN_VICTORY_ROAD);
     else
         return FALSE;
 }

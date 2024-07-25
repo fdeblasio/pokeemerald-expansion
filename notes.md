@@ -123,12 +123,12 @@ upcoming
     - Even just reducing to two or three rematches would save space
 - Update Elite Four palettes
     - battle_terrain/stadium/palette3-7.pal to better match ypes
-- Brendan/May rematches? (Route 103?)
+- Kyle/May rematches? (Route 103?)
 - Steven rematches? (Would be the same team but re-battleable)
     - Could make his flag a daily one?
     - Replace Claydol with a Steel-type?
 - Give Winstrates rematches?
-- Maybe add Brendan/May/Maxie/Archie/admins/Winstrate rematches in Battle Frontier?
+- Maybe add Kyle/May/Maxie/Archie/admins/Winstrate rematches in Battle Frontier?
     - Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma. Mega Evo for Houndoom but unsure for Ninetales)
         - Could swap out Huntail for Mega Gyarados and only it and Houndoom get items
 - Try to get every Pokémon in Pokédex in at least one rematch?

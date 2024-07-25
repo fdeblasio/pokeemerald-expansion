@@ -19,16 +19,16 @@ SouthernIsland_Interior_EventScript_TryRemoveLati::
 
 SouthernIsland_Interior_OnTransition:
 	checkplayergender
-	goto_if_eq VAR_RESULT, MALE, SouthernIsland_Interior_EventScript_SetBrendanGfx
+	goto_if_eq VAR_RESULT, MALE, SouthernIsland_Interior_EventScript_SetKyleGfx
 	goto_if_eq VAR_RESULT, FEMALE, SouthernIsland_Interior_EventScript_SetMayGfx
 	end
 
-SouthernIsland_Interior_EventScript_SetBrendanGfx::
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL
+SouthernIsland_Interior_EventScript_SetKyleGfx::
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_RIVAL_KYLE_NORMAL
 	return
 
 SouthernIsland_Interior_EventScript_SetMayGfx::
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_RIVAL_MAY_NORMAL
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_RIVAL_KELLI_NORMAL
 	return
 
 SouthernIsland_Interior_EventScript_TryLatiosEncounter::

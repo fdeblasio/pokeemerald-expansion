@@ -1,5 +1,5 @@
 .set LOCALID_TWIN, 2
-.set LOCALID_WALLY, 5
+.set LOCALID_DUNCAN, 5
 
 VerdanturfTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, VerdanturfTown_OnTransition
@@ -64,7 +64,7 @@ VerdanturfTown_EventScript_RusturfTunnelSign::
 	msgbox VerdanturfTown_Text_RusturfTunnelSign, MSGBOX_SIGN
 	end
 
-VerdanturfTown_EventScript_WallyTrigger::
+VerdanturfTown_EventScript_DuncanTrigger::
 	lockall
 	setvar VAR_0x8004, 10
 	setvar VAR_0x8005, 14
@@ -74,31 +74,31 @@ VerdanturfTown_EventScript_WallyTrigger::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	delay 10
-	addobject LOCALID_WALLY
-	clearflag FLAG_HIDE_VERDANTURF_TOWN_WALLY
+	addobject LOCALID_DUNCAN
+	clearflag FLAG_HIDE_VERDANTURF_TOWN_DUNCAN
 	applymovement OBJ_EVENT_ID_PLAYER, VerdanturfTown_Movement_PlayerBackUp
 	waitmovement 0
-	applymovement LOCALID_WALLY, VerdanturfTown_Movement_WallyExitWandasHome
+	applymovement LOCALID_DUNCAN, VerdanturfTown_Movement_DuncanExitWandasHome
 	waitmovement 0
 	closedoor VAR_0x8004, VAR_0x8005
 	waitdooranim
 	delay 20
 	playse SE_PIN
-	applymovement LOCALID_WALLY, Common_Movement_ExclamationMark
+	applymovement LOCALID_DUNCAN, Common_Movement_ExclamationMark
 	waitmovement 0
-	msgbox VerdanturfTown_Text_WallyIntro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_WALLY_VERDANTURF, VerdanturfTown_Text_WallyDefeat
-	msgbox VerdanturfTown_Text_WallyPostBattle, MSGBOX_DEFAULT
+	msgbox VerdanturfTown_Text_DuncanIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_DUNCAN_VERDANTURF, VerdanturfTown_Text_DuncanDefeat
+	msgbox VerdanturfTown_Text_DuncanPostBattle, MSGBOX_DEFAULT
 	setvar VAR_0x8004, 10
 	setvar VAR_0x8005, 14
 	opendoor VAR_0x8004, VAR_0x8005
 	waitdooranim
-	applymovement LOCALID_WALLY, VerdanturfTown_Movement_WallyEnterWandasHome
+	applymovement LOCALID_DUNCAN, VerdanturfTown_Movement_DuncanEnterWandasHome
 	waitmovement 0
-	removeobject LOCALID_WALLY
+	removeobject LOCALID_DUNCAN
 	closedoor VAR_0x8004, VAR_0x8005
 	waitdooranim
-	setflag FLAG_HIDE_VERDANTURF_TOWN_WALLY
+	setflag FLAG_HIDE_VERDANTURF_TOWN_DUNCAN
 	setflag FLAG_HIDE_MAUVILLE_CITY_SCOTT
 	releaseall
 	end
@@ -108,25 +108,25 @@ VerdanturfTown_Movement_PlayerBackUp:
 	walk_down
 	step_end
 
-VerdanturfTown_Movement_WallyExitWandasHome:
+VerdanturfTown_Movement_DuncanExitWandasHome:
 	walk_down
 	step_end
 
-VerdanturfTown_Movement_WallyEnterWandasHome:
+VerdanturfTown_Movement_DuncanEnterWandasHome:
 	walk_up
 	step_end
 
-VerdanturfTown_Text_WallyIntro:
-	.string "Wally: Oh, {PLAYER}!\p"
+VerdanturfTown_Text_DuncanIntro:
+	.string "Duncan: Oh, {PLAYER}!\p"
 	.string "I caught a new Pokémon!\p"
 	.string "Let's have another battle!$"
 
-VerdanturfTown_Text_WallyDefeat:
-	.string "Wally: Aww… I guess I need to train\n"
+VerdanturfTown_Text_DuncanDefeat:
+	.string "Duncan: Aww… I guess I need to train\n"
 	.string "more if I want to beat you, {PLAYER}.$"
 
-VerdanturfTown_Text_WallyPostBattle:
-	.string "Wally: Thanks for battling me,\n"
+VerdanturfTown_Text_DuncanPostBattle:
+	.string "Duncan: Thanks for battling me,\n"
 	.string "{PLAYER}! Just wait, I'll get stronger!$"
 
 VerdanturfTown_Text_ManTryingToDigTunnel:

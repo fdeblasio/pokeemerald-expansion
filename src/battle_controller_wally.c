@@ -32,30 +32,30 @@
 #include "constants/trainers.h"
 #include "constants/rgb.h"
 
-static void WallyHandleDrawTrainerPic(u32 battler);
-static void WallyHandleTrainerSlide(u32 battler);
-static void WallyHandleSuccessBallThrowAnim(u32 battler);
-static void WallyHandleBallThrowAnim(u32 battler);
-static void WallyHandleMoveAnimation(u32 battler);
-static void WallyHandlePrintString(u32 battler);
-static void WallyHandlePrintSelectionString(u32 battler);
-static void WallyHandleChooseAction(u32 battler);
-static void WallyHandleChooseMove(u32 battler);
-static void WallyHandleChooseItem(u32 battler);
-static void WallyHandleHealthBarUpdate(u32 battler);
-static void WallyHandlePlaySE(u32 battler);
-static void WallyHandleFaintingCry(u32 battler);
-static void WallyHandleIntroTrainerBallThrow(u32 battler);
-static void WallyHandleDrawPartyStatusSummary(u32 battler);
-static void WallyHandleBattleAnimation(u32 battler);
-static void WallyHandleEndLinkBattle(u32 battler);
+static void DuncanHandleDrawTrainerPic(u32 battler);
+static void DuncanHandleTrainerSlide(u32 battler);
+static void DuncanHandleSuccessBallThrowAnim(u32 battler);
+static void DuncanHandleBallThrowAnim(u32 battler);
+static void DuncanHandleMoveAnimation(u32 battler);
+static void DuncanHandlePrintString(u32 battler);
+static void DuncanHandlePrintSelectionString(u32 battler);
+static void DuncanHandleChooseAction(u32 battler);
+static void DuncanHandleChooseMove(u32 battler);
+static void DuncanHandleChooseItem(u32 battler);
+static void DuncanHandleHealthBarUpdate(u32 battler);
+static void DuncanHandlePlaySE(u32 battler);
+static void DuncanHandleFaintingCry(u32 battler);
+static void DuncanHandleIntroTrainerBallThrow(u32 battler);
+static void DuncanHandleDrawPartyStatusSummary(u32 battler);
+static void DuncanHandleBattleAnimation(u32 battler);
+static void DuncanHandleEndLinkBattle(u32 battler);
 
-static void WallyBufferRunCommand(u32 battler);
-static void WallyBufferExecCompleted(u32 battler);
+static void DuncanBufferRunCommand(u32 battler);
+static void DuncanBufferExecCompleted(u32 battler);
 static void CompleteOnChosenItem(u32 battler);
 static void Intro_WaitForShinyAnimAndHealthbox(u32 battler);
 
-static void (*const sWallyBufferCommands[CONTROLLER_CMDS_COUNT])(u32 battler) =
+static void (*const sDuncanBufferCommands[CONTROLLER_CMDS_COUNT])(u32 battler) =
 {
     [CONTROLLER_GETMONDATA]               = BtlController_HandleGetMonData,
     [CONTROLLER_GETRAWMONDATA]            = BtlController_HandleGetRawMonData,
@@ -64,24 +64,24 @@ static void (*const sWallyBufferCommands[CONTROLLER_CMDS_COUNT])(u32 battler) =
     [CONTROLLER_LOADMONSPRITE]            = BtlController_Empty,
     [CONTROLLER_SWITCHINANIM]             = BtlController_Empty,
     [CONTROLLER_RETURNMONTOBALL]          = BtlController_HandleReturnMonToBall,
-    [CONTROLLER_DRAWTRAINERPIC]           = WallyHandleDrawTrainerPic,
-    [CONTROLLER_TRAINERSLIDE]             = WallyHandleTrainerSlide,
+    [CONTROLLER_DRAWTRAINERPIC]           = DuncanHandleDrawTrainerPic,
+    [CONTROLLER_TRAINERSLIDE]             = DuncanHandleTrainerSlide,
     [CONTROLLER_TRAINERSLIDEBACK]         = BtlController_Empty,
     [CONTROLLER_FAINTANIMATION]           = BtlController_Empty,
     [CONTROLLER_PALETTEFADE]              = BtlController_Empty,
-    [CONTROLLER_SUCCESSBALLTHROWANIM]     = WallyHandleSuccessBallThrowAnim,
-    [CONTROLLER_BALLTHROWANIM]            = WallyHandleBallThrowAnim,
+    [CONTROLLER_SUCCESSBALLTHROWANIM]     = DuncanHandleSuccessBallThrowAnim,
+    [CONTROLLER_BALLTHROWANIM]            = DuncanHandleBallThrowAnim,
     [CONTROLLER_PAUSE]                    = BtlController_Empty,
-    [CONTROLLER_MOVEANIMATION]            = WallyHandleMoveAnimation,
-    [CONTROLLER_PRINTSTRING]              = WallyHandlePrintString,
-    [CONTROLLER_PRINTSTRINGPLAYERONLY]    = WallyHandlePrintSelectionString,
-    [CONTROLLER_CHOOSEACTION]             = WallyHandleChooseAction,
+    [CONTROLLER_MOVEANIMATION]            = DuncanHandleMoveAnimation,
+    [CONTROLLER_PRINTSTRING]              = DuncanHandlePrintString,
+    [CONTROLLER_PRINTSTRINGPLAYERONLY]    = DuncanHandlePrintSelectionString,
+    [CONTROLLER_CHOOSEACTION]             = DuncanHandleChooseAction,
     [CONTROLLER_YESNOBOX]                 = BtlController_Empty,
-    [CONTROLLER_CHOOSEMOVE]               = WallyHandleChooseMove,
-    [CONTROLLER_OPENBAG]                  = WallyHandleChooseItem,
+    [CONTROLLER_CHOOSEMOVE]               = DuncanHandleChooseMove,
+    [CONTROLLER_OPENBAG]                  = DuncanHandleChooseItem,
     [CONTROLLER_CHOOSEPOKEMON]            = BtlController_Empty,
     [CONTROLLER_23]                       = BtlController_Empty,
-    [CONTROLLER_HEALTHBARUPDATE]          = WallyHandleHealthBarUpdate,
+    [CONTROLLER_HEALTHBARUPDATE]          = DuncanHandleHealthBarUpdate,
     [CONTROLLER_EXPUPDATE]                = BtlController_Empty,
     [CONTROLLER_STATUSICONUPDATE]         = BtlController_Empty,
     [CONTROLLER_STATUSANIMATION]          = BtlController_Empty,
@@ -100,45 +100,45 @@ static void (*const sWallyBufferCommands[CONTROLLER_CMDS_COUNT])(u32 battler) =
     [CONTROLLER_TOGGLEUNKFLAG]            = BtlController_Empty,
     [CONTROLLER_HITANIMATION]             = BtlController_HandleHitAnimation,
     [CONTROLLER_CANTSWITCH]               = BtlController_Empty,
-    [CONTROLLER_PLAYSE]                   = WallyHandlePlaySE,
+    [CONTROLLER_PLAYSE]                   = DuncanHandlePlaySE,
     [CONTROLLER_PLAYFANFAREORBGM]         = BtlController_HandlePlayFanfareOrBGM,
-    [CONTROLLER_FAINTINGCRY]              = WallyHandleFaintingCry,
+    [CONTROLLER_FAINTINGCRY]              = DuncanHandleFaintingCry,
     [CONTROLLER_INTROSLIDE]               = BtlController_HandleIntroSlide,
-    [CONTROLLER_INTROTRAINERBALLTHROW]    = WallyHandleIntroTrainerBallThrow,
-    [CONTROLLER_DRAWPARTYSTATUSSUMMARY]   = WallyHandleDrawPartyStatusSummary,
+    [CONTROLLER_INTROTRAINERBALLTHROW]    = DuncanHandleIntroTrainerBallThrow,
+    [CONTROLLER_DRAWPARTYSTATUSSUMMARY]   = DuncanHandleDrawPartyStatusSummary,
     [CONTROLLER_HIDEPARTYSTATUSSUMMARY]   = BtlController_Empty,
     [CONTROLLER_ENDBOUNCE]                = BtlController_Empty,
     [CONTROLLER_SPRITEINVISIBILITY]       = BtlController_Empty,
-    [CONTROLLER_BATTLEANIMATION]          = WallyHandleBattleAnimation,
+    [CONTROLLER_BATTLEANIMATION]          = DuncanHandleBattleAnimation,
     [CONTROLLER_LINKSTANDBYMSG]           = BtlController_Empty,
     [CONTROLLER_RESETACTIONMOVESELECTION] = BtlController_Empty,
-    [CONTROLLER_ENDLINKBATTLE]            = WallyHandleEndLinkBattle,
+    [CONTROLLER_ENDLINKBATTLE]            = DuncanHandleEndLinkBattle,
     [CONTROLLER_DEBUGMENU]                = BtlController_Empty,
     [CONTROLLER_TERMINATOR_NOP]           = BtlController_TerminatorNop
 };
 
-void SetControllerToWally(u32 battler)
+void SetControllerToDuncan(u32 battler)
 {
-    gBattlerControllerEndFuncs[battler] = WallyBufferExecCompleted;
-    gBattlerControllerFuncs[battler] = WallyBufferRunCommand;
+    gBattlerControllerEndFuncs[battler] = DuncanBufferExecCompleted;
+    gBattlerControllerFuncs[battler] = DuncanBufferRunCommand;
     gBattleStruct->wallyBattleState = 0;
     gBattleStruct->wallyMovesState = 0;
     gBattleStruct->wallyWaitFrames = 0;
     gBattleStruct->wallyMoveFrames = 0;
 }
 
-static void WallyBufferRunCommand(u32 battler)
+static void DuncanBufferRunCommand(u32 battler)
 {
     if (gBattleControllerExecFlags & (1u << battler))
     {
-        if (gBattleResources->bufferA[battler][0] < ARRAY_COUNT(sWallyBufferCommands))
-            sWallyBufferCommands[gBattleResources->bufferA[battler][0]](battler);
+        if (gBattleResources->bufferA[battler][0] < ARRAY_COUNT(sDuncanBufferCommands))
+            sDuncanBufferCommands[gBattleResources->bufferA[battler][0]](battler);
         else
-            WallyBufferExecCompleted(battler);
+            DuncanBufferExecCompleted(battler);
     }
 }
 
-static void WallyHandleActions(u32 battler)
+static void DuncanHandleActions(u32 battler)
 {
     switch (gBattleStruct->wallyBattleState)
     {
@@ -150,7 +150,7 @@ static void WallyHandleActions(u32 battler)
         {
             PlaySE(SE_SELECT);
             BtlController_EmitTwoReturnValues(battler, BUFFER_B, B_ACTION_USE_MOVE, 0);
-            WallyBufferExecCompleted(battler);
+            DuncanBufferExecCompleted(battler);
             gBattleStruct->wallyBattleState++;
             gBattleStruct->wallyMovesState = 0;
             gBattleStruct->wallyWaitFrames = B_WAIT_TIME_LONG;
@@ -161,7 +161,7 @@ static void WallyHandleActions(u32 battler)
         {
             PlaySE(SE_SELECT);
             BtlController_EmitTwoReturnValues(battler, BUFFER_B, B_ACTION_USE_MOVE, 0);
-            WallyBufferExecCompleted(battler);
+            DuncanBufferExecCompleted(battler);
             gBattleStruct->wallyBattleState++;
             gBattleStruct->wallyMovesState = 0;
             gBattleStruct->wallyWaitFrames = B_WAIT_TIME_LONG;
@@ -170,8 +170,8 @@ static void WallyHandleActions(u32 battler)
     case 3:
         if (--gBattleStruct->wallyWaitFrames == 0)
         {
-            BtlController_EmitTwoReturnValues(battler, BUFFER_B, B_ACTION_WALLY_THROW, 0);
-            WallyBufferExecCompleted(battler);
+            BtlController_EmitTwoReturnValues(battler, BUFFER_B, B_ACTION_DUNCAN_THROW, 0);
+            DuncanBufferExecCompleted(battler);
             gBattleStruct->wallyBattleState++;
             gBattleStruct->wallyMovesState = 0;
             gBattleStruct->wallyWaitFrames = B_WAIT_TIME_LONG;
@@ -192,7 +192,7 @@ static void WallyHandleActions(u32 battler)
         {
             PlaySE(SE_SELECT);
             BtlController_EmitTwoReturnValues(battler, BUFFER_B, B_ACTION_USE_ITEM, 0);
-            WallyBufferExecCompleted(battler);
+            DuncanBufferExecCompleted(battler);
         }
         break;
     }
@@ -205,7 +205,7 @@ static void OpenBagAfterPaletteFade(u32 battler)
         gBattlerControllerFuncs[battler] = CompleteOnChosenItem;
         ReshowBattleScreenDummy();
         FreeAllWindowBuffers();
-        DoWallyTutorialBagMenu();
+        DoDuncanTutorialBagMenu();
     }
 }
 
@@ -214,7 +214,7 @@ static void CompleteOnChosenItem(u32 battler)
     if (gMain.callback2 == BattleMainCB2 && !gPaletteFade.active)
     {
         BtlController_EmitOneReturnValue(battler, BUFFER_B, gSpecialVar_ItemId);
-        WallyBufferExecCompleted(battler);
+        DuncanBufferExecCompleted(battler);
     }
 }
 
@@ -272,13 +272,13 @@ static void Intro_WaitForShinyAnimAndHealthbox(u32 battler)
         CreateTask(Task_PlayerController_RestoreBgmAfterCry, 10);
         HandleLowHpMusicChange(&gPlayerParty[gBattlerPartyIndexes[battler]], battler);
 
-        WallyBufferExecCompleted(battler);
+        DuncanBufferExecCompleted(battler);
     }
 }
 
-static void WallyBufferExecCompleted(u32 battler)
+static void DuncanBufferExecCompleted(u32 battler)
 {
-    gBattlerControllerFuncs[battler] = WallyBufferRunCommand;
+    gBattlerControllerFuncs[battler] = DuncanBufferRunCommand;
     if (gBattleTypeFlags & BATTLE_TYPE_LINK)
     {
         u8 playerId = GetMultiplayerId();
@@ -294,46 +294,46 @@ static void WallyBufferExecCompleted(u32 battler)
 
 #define sSpeedX data[0]
 
-static void WallyHandleDrawTrainerPic(u32 battler)
+static void DuncanHandleDrawTrainerPic(u32 battler)
 {
-    BtlController_HandleDrawTrainerPic(battler, TRAINER_BACK_PIC_WALLY, FALSE,
-                                       80, 80 + 4 * (8 - gTrainerBacksprites[TRAINER_BACK_PIC_WALLY].coordinates.size),
+    BtlController_HandleDrawTrainerPic(battler, TRAINER_BACK_PIC_DUNCAN, FALSE,
+                                       80, 80 + 4 * (8 - gTrainerBacksprites[TRAINER_BACK_PIC_DUNCAN].coordinates.size),
                                        30);
 }
 
-static void WallyHandleTrainerSlide(u32 battler)
+static void DuncanHandleTrainerSlide(u32 battler)
 {
-    BtlController_HandleTrainerSlide(battler, TRAINER_BACK_PIC_WALLY);
+    BtlController_HandleTrainerSlide(battler, TRAINER_BACK_PIC_DUNCAN);
 }
 
 #undef sSpeedX
 
-static void WallyHandleSuccessBallThrowAnim(u32 battler)
+static void DuncanHandleSuccessBallThrowAnim(u32 battler)
 {
     BtlController_HandleSuccessBallThrowAnim(battler, GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT), B_ANIM_BALL_THROW_WITH_TRAINER, FALSE);
 }
 
-static void WallyHandleBallThrowAnim(u32 battler)
+static void DuncanHandleBallThrowAnim(u32 battler)
 {
     BtlController_HandleBallThrowAnim(battler, GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT), B_ANIM_BALL_THROW_WITH_TRAINER, FALSE);
 }
 
-static void WallyHandleMoveAnimation(u32 battler)
+static void DuncanHandleMoveAnimation(u32 battler)
 {
     BtlController_HandleMoveAnimation(battler, FALSE);
 }
 
-static void WallyHandlePrintString(u32 battler)
+static void DuncanHandlePrintString(u32 battler)
 {
     BtlController_HandlePrintString(battler, FALSE, FALSE);
 }
 
-static void WallyHandlePrintSelectionString(u32 battler)
+static void DuncanHandlePrintSelectionString(u32 battler)
 {
     if (GetBattlerSide(battler) == B_SIDE_PLAYER)
-        WallyHandlePrintString(battler);
+        DuncanHandlePrintString(battler);
     else
-        WallyBufferExecCompleted(battler);
+        DuncanBufferExecCompleted(battler);
 }
 
 static void HandleChooseActionAfterDma3(u32 battler)
@@ -342,11 +342,11 @@ static void HandleChooseActionAfterDma3(u32 battler)
     {
         gBattle_BG0_X = 0;
         gBattle_BG0_Y = DISPLAY_HEIGHT;
-        gBattlerControllerFuncs[battler] = WallyHandleActions;
+        gBattlerControllerFuncs[battler] = DuncanHandleActions;
     }
 }
 
-static void WallyHandleChooseAction(u32 battler)
+static void DuncanHandleChooseAction(u32 battler)
 {
     s32 i;
 
@@ -357,11 +357,11 @@ static void WallyHandleChooseAction(u32 battler)
         ActionSelectionDestroyCursorAt(i);
 
     ActionSelectionCreateCursorAt(gActionSelectionCursor[battler], 0);
-    BattleStringExpandPlaceholdersToDisplayedString(gText_WhatWillWallyDo);
+    BattleStringExpandPlaceholdersToDisplayedString(gText_WhatWillDuncanDo);
     BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_ACTION_PROMPT);
 }
 
-static void WallyHandleChooseMove(u32 battler)
+static void DuncanHandleChooseMove(u32 battler)
 {
     switch (gBattleStruct->wallyMovesState)
     {
@@ -383,63 +383,63 @@ static void WallyHandleChooseMove(u32 battler)
         {
             PlaySE(SE_SELECT);
             BtlController_EmitTwoReturnValues(battler, BUFFER_B, 10, 0x100);
-            WallyBufferExecCompleted(battler);
+            DuncanBufferExecCompleted(battler);
         }
         break;
     }
 }
 
-static void WallyHandleChooseItem(u32 battler)
+static void DuncanHandleChooseItem(u32 battler)
 {
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);
     gBattlerControllerFuncs[battler] = OpenBagAfterPaletteFade;
     gBattlerInMenuId = battler;
 }
 
-static void WallyHandleHealthBarUpdate(u32 battler)
+static void DuncanHandleHealthBarUpdate(u32 battler)
 {
     BtlController_HandleHealthBarUpdate(battler, TRUE);
 }
 
-// For some reason Wally's SE don't take side into account and pan is always the same. Possibly a bug
-static void WallyHandlePlaySE(u32 battler)
+// For some reason Duncan's SE don't take side into account and pan is always the same. Possibly a bug
+static void DuncanHandlePlaySE(u32 battler)
 {
     PlaySE(gBattleResources->bufferA[battler][1] | (gBattleResources->bufferA[battler][2] << 8));
-    WallyBufferExecCompleted(battler);
+    DuncanBufferExecCompleted(battler);
 }
 
 // All of the other controllers use CRY_MODE_FAINT.
-// Wally's Pokémon during the tutorial is never intended to faint, so that's probably why it's different here.
-static void WallyHandleFaintingCry(u32 battler)
+// Duncan's Pokémon during the tutorial is never intended to faint, so that's probably why it's different here.
+static void DuncanHandleFaintingCry(u32 battler)
 {
     u16 species = GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_SPECIES);
 
     PlayCry_Normal(species, 25);
-    WallyBufferExecCompleted(battler);
+    DuncanBufferExecCompleted(battler);
 }
 
-static void WallyHandleIntroTrainerBallThrow(u32 battler)
+static void DuncanHandleIntroTrainerBallThrow(u32 battler)
 {
-    const u32 *trainerPal = gTrainerBacksprites[TRAINER_BACK_PIC_WALLY].palette.data;
+    const u32 *trainerPal = gTrainerBacksprites[TRAINER_BACK_PIC_DUNCAN].palette.data;
     BtlController_HandleIntroTrainerBallThrow(battler, 0xD6F8, trainerPal, 31, Intro_TryShinyAnimShowHealthbox);
 }
 
-static void WallyHandleDrawPartyStatusSummary(u32 battler)
+static void DuncanHandleDrawPartyStatusSummary(u32 battler)
 {
     BtlController_HandleDrawPartyStatusSummary(battler, B_SIDE_PLAYER, FALSE);
 }
 
-static void WallyHandleBattleAnimation(u32 battler)
+static void DuncanHandleBattleAnimation(u32 battler)
 {
     BtlController_HandleBattleAnimation(battler, TRUE, FALSE);
 }
 
-static void WallyHandleEndLinkBattle(u32 battler)
+static void DuncanHandleEndLinkBattle(u32 battler)
 {
     gBattleOutcome = gBattleResources->bufferA[battler][1];
     FadeOutMapMusic(5);
     BeginFastPaletteFade(3);
-    WallyBufferExecCompleted(battler);
+    DuncanBufferExecCompleted(battler);
 
     if (!(gBattleTypeFlags & BATTLE_TYPE_IS_MASTER) && gBattleTypeFlags & BATTLE_TYPE_LINK)
         gBattlerControllerFuncs[battler] = SetBattleEndCallbacks;

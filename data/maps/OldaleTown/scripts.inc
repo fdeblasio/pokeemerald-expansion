@@ -260,7 +260,7 @@ OldaleTown_EventScript_RivalTrigger3::
 OldaleTown_EventScript_ShowRivalMessage::
 	checkplayergender
 	goto_if_eq VAR_RESULT, MALE, OldaleTown_EventScript_ShowMayMessage
-	goto_if_eq VAR_RESULT, FEMALE, OldaleTown_EventScript_ShowBrendanMessage
+	goto_if_eq VAR_RESULT, FEMALE, OldaleTown_EventScript_ShowKyleMessage
 	end
 
 OldaleTown_EventScript_ShowMayMessage::
@@ -268,8 +268,8 @@ OldaleTown_EventScript_ShowMayMessage::
 	goto OldaleTown_EventScript_RivalFinish
 	end
 
-OldaleTown_EventScript_ShowBrendanMessage::
-	msgbox OldaleTown_Text_BrendanLetsGoBack, MSGBOX_DEFAULT
+OldaleTown_EventScript_ShowKyleMessage::
+	msgbox OldaleTown_Text_KyleLetsGoBack, MSGBOX_DEFAULT
 	goto OldaleTown_EventScript_RivalFinish
 	end
 
@@ -386,12 +386,12 @@ OldaleTown_Text_FinishedSketchingFootprints:
 	.string "own footprints…$"
 
 OldaleTown_Text_MayLetsGoBack:
-	.string "May: {PLAYER}{KUN}!\n"
+	.string "Kelli: {PLAYER}{KUN}!\n"
 	.string "Over here!\l"
 	.string "Let's hurry home!$"
 
-OldaleTown_Text_BrendanLetsGoBack:
-	.string "Brendan: I'm heading back to my dad's\n"
+OldaleTown_Text_KyleLetsGoBack:
+	.string "Kyle: I'm heading back to my dad's\n"
 	.string "Lab now.\l"
 	.string "{PLAYER}, you should hustle back, too.$"
 

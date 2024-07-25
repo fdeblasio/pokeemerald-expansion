@@ -86,9 +86,9 @@
 #define TRAINER_PIC_SAILOR                68
 #define TRAINER_PIC_MAGMA_ADMIN_M         69
 #define TRAINER_PIC_MAGMA_ADMIN_F         70
-#define TRAINER_PIC_WALLY                 71
-#define TRAINER_PIC_BRENDAN               72
-#define TRAINER_PIC_MAY                   73
+#define TRAINER_PIC_DUNCAN                 71
+#define TRAINER_PIC_KYLE               72
+#define TRAINER_PIC_KELLI                   73
 #define TRAINER_PIC_BUG_CATCHER           74
 #define TRAINER_PIC_POKEMON_RANGER_M      75
 #define TRAINER_PIC_POKEMON_RANGER_F      76
@@ -107,8 +107,8 @@
 #define TRAINER_PIC_PYRAMID_KING_BRANDON  89
 #define TRAINER_PIC_RED                   90
 #define TRAINER_PIC_LEAF                  91
-#define TRAINER_PIC_RS_BRENDAN            92
-#define TRAINER_PIC_RS_MAY                93
+#define TRAINER_PIC_RS_KYLE            92
+#define TRAINER_PIC_RS_KELLI                93
 #define TRAINER_PIC_FRANK                 94
 #define TRAINER_PIC_ROCKER                95
 #define TRAINER_PIC_COOL_COUPLE           96
@@ -129,13 +129,13 @@
 #define TRAINER_PIC_COUNT                 111
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
-#define TRAINER_BACK_PIC_BRENDAN                0
-#define TRAINER_BACK_PIC_MAY                    1
+#define TRAINER_BACK_PIC_KYLE                0
+#define TRAINER_BACK_PIC_KELLI                    1
 #define TRAINER_BACK_PIC_RED                    2
 #define TRAINER_BACK_PIC_LEAF                   3
-#define TRAINER_BACK_PIC_RUBY_SAPPHIRE_BRENDAN  4
-#define TRAINER_BACK_PIC_RUBY_SAPPHIRE_MAY      5
-#define TRAINER_BACK_PIC_WALLY                  6
+#define TRAINER_BACK_PIC_RUBY_SAPPHIRE_KYLE  4
+#define TRAINER_BACK_PIC_RUBY_SAPPHIRE_KELLI      5
+#define TRAINER_BACK_PIC_DUNCAN                  6
 #define TRAINER_BACK_PIC_STEVEN                 7
 
 #define FACILITY_CLASS_HIKER                 0x0
@@ -197,13 +197,13 @@
 #define FACILITY_CLASS_SWIMMER_F             0x38
 #define FACILITY_CLASS_TWINS                 0x39
 #define FACILITY_CLASS_SAILOR                0x3a
-#define FACILITY_CLASS_WALLY                 0x3b
-#define FACILITY_CLASS_BRENDAN               0x3c
-#define FACILITY_CLASS_BRENDAN_2             0x3d
-#define FACILITY_CLASS_BRENDAN_3             0x3e
-#define FACILITY_CLASS_MAY                   0x3f
-#define FACILITY_CLASS_MAY_2                 0x40
-#define FACILITY_CLASS_MAY_3                 0x41
+#define FACILITY_CLASS_DUNCAN                 0x3b
+#define FACILITY_CLASS_KYLE               0x3c
+#define FACILITY_CLASS_KYLE_2             0x3d
+#define FACILITY_CLASS_KYLE_3             0x3e
+#define FACILITY_CLASS_KELLI                   0x3f
+#define FACILITY_CLASS_KELLI_2                 0x40
+#define FACILITY_CLASS_KELLI_3                 0x41
 #define FACILITY_CLASS_PKMN_BREEDER_M        0x42
 #define FACILITY_CLASS_BUG_CATCHER           0x43
 #define FACILITY_CLASS_PKMN_RANGER_M         0x44
@@ -218,8 +218,8 @@
 #define FACILITY_CLASS_DOME_ACE_TUCKER       0x4d
 #define FACILITY_CLASS_RED                   0x4e
 #define FACILITY_CLASS_LEAF                  0x4f
-#define FACILITY_CLASS_RS_BRENDAN            0x50
-#define FACILITY_CLASS_RS_MAY                0x51
+#define FACILITY_CLASS_RS_KYLE            0x50
+#define FACILITY_CLASS_RS_KELLI                0x51
 
 #define FACILITY_CLASSES_COUNT               0x52
 
@@ -280,13 +280,13 @@
 #define RS_FACILITY_CLASS_BOARDER_1             0x36
 #define RS_FACILITY_CLASS_BOARDER_2             0x37
 #define RS_FACILITY_CLASS_COLLECTOR             0x38
-#define RS_FACILITY_CLASS_WALLY                 0x39
-#define RS_FACILITY_CLASS_BRENDAN_1             0x3A
-#define RS_FACILITY_CLASS_BRENDAN_2             0x3B
-#define RS_FACILITY_CLASS_BRENDAN_3             0x3C
-#define RS_FACILITY_CLASS_MAY_1                 0x3D
-#define RS_FACILITY_CLASS_MAY_2                 0x3E
-#define RS_FACILITY_CLASS_MAY_3                 0x3F
+#define RS_FACILITY_CLASS_DUNCAN                 0x39
+#define RS_FACILITY_CLASS_KYLE_1             0x3A
+#define RS_FACILITY_CLASS_KYLE_2             0x3B
+#define RS_FACILITY_CLASS_KYLE_3             0x3C
+#define RS_FACILITY_CLASS_KELLI_1                 0x3D
+#define RS_FACILITY_CLASS_KELLI_2                 0x3E
+#define RS_FACILITY_CLASS_KELLI_3                 0x3F
 #define RS_FACILITY_CLASS_PKMN_BREEDER_M        0x40
 #define RS_FACILITY_CLASS_PKMN_BREEDER_F        0x41
 #define RS_FACILITY_CLASS_PKMN_RANGER_M         0x42
@@ -384,8 +384,8 @@
 #define TRAINER_ENCOUNTER_MUSIC_HIKER       11 // Used for Hikers, Ruin Maniacs, Kindlers, and Fishermen
 #define TRAINER_ENCOUNTER_MUSIC_INTERVIEWER 12
 #define TRAINER_ENCOUNTER_MUSIC_RICH        13 // Used for Rich Boys and Gentlemen
-//#define TRAINER_ENCOUNTER_MUSIC_BRENDAN     14
-//#define TRAINER_ENCOUNTER_MUSIC_MAY         15
+//#define TRAINER_ENCOUNTER_MUSIC_KYLE     14
+//#define TRAINER_ENCOUNTER_MUSIC_KELLI         15
 
 #define F_TRAINER_FEMALE (1 << 7)
 

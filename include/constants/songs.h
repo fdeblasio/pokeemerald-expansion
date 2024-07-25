@@ -345,13 +345,13 @@
 #define MUS_VICTORY_TRAINER         412 // MUS_KACHI1
 #define MUS_TITLE                   413 // MUS_TITLE3
 #define MUS_INTRO                   414 // MUS_DEMO1
-#define MUS_ENCOUNTER_MAY           415 // MUS_GIRL_SUP
+#define MUS_ENCOUNTER_KELLI           415 // MUS_GIRL_SUP
 #define MUS_ENCOUNTER_INTENSE       416 // MUS_HAGESHII
 #define MUS_ENCOUNTER_COOL          417 // MUS_KAKKOII
 #define MUS_ROUTE113                418 // MUS_KAZANBAI
 #define MUS_ENCOUNTER_AQUA          419 // MUS_AQA_0
 #define MUS_FOLLOW_ME               420 // MUS_TSURETEK
-#define MUS_ENCOUNTER_BRENDAN       421 // MUS_BOY_SUP
+#define MUS_ENCOUNTER_KYLE       421 // MUS_BOY_SUP
 #define MUS_EVER_GRANDE             422 // MUS_RAINBOW          // Also used in link rooms.
 #define MUS_ENCOUNTER_SUSPICIOUS    423 // MUS_AYASII
 #define MUS_VICTORY_AQUA_MAGMA      424 // MUS_KACHI4

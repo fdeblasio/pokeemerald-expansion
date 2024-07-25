@@ -77,21 +77,21 @@ Route104_EventScript_RivalTrigger::
 Route104_EventScript_PlayRivalMusic::
 	checkplayergender
 	goto_if_eq VAR_RESULT, MALE, Route104_EventScript_PlayMayMusic
-	goto_if_eq VAR_RESULT, FEMALE, Route104_EventScript_PlayBrendanMusic
+	goto_if_eq VAR_RESULT, FEMALE, Route104_EventScript_PlayKyleMusic
 	return
 
 Route104_EventScript_PlayMayMusic::
-	playbgm MUS_ENCOUNTER_MAY, TRUE
+	playbgm MUS_ENCOUNTER_KELLI, TRUE
 	return
 
-Route104_EventScript_PlayBrendanMusic::
-	playbgm MUS_ENCOUNTER_BRENDAN, TRUE
+Route104_EventScript_PlayKyleMusic::
+	playbgm MUS_ENCOUNTER_KYLE, TRUE
 	return
 
 Route104_EventScript_RivalEncounter::
 	checkplayergender
 	goto_if_eq VAR_RESULT, MALE, Route104_EventScript_MayEncounter
-	goto_if_eq VAR_RESULT, FEMALE, Route104_EventScript_BrendanEncounter
+	goto_if_eq VAR_RESULT, FEMALE, Route104_EventScript_KyleEncounter
 	end
 
 Route104_EventScript_MayEncounter::
@@ -163,88 +163,88 @@ Route104_EventScript_RestoreMusic::
 	return
 
 Route104_EventScript_BattleMayTreecko::
-	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_FIRE, Route104_Text_MayDefeat
+	trainerbattle_no_intro TRAINER_KELLI_RUSTBORO_FIRE, Route104_Text_MayDefeat
 	setflag FLAG_DEFEATED_RIVAL_ROUTE_104
 	goto Route104_EventScript_MayDefeated
 	end
 
 Route104_EventScript_BattleMayTorchic::
-	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_WATER, Route104_Text_MayDefeat
+	trainerbattle_no_intro TRAINER_KELLI_RUSTBORO_WATER, Route104_Text_MayDefeat
 	setflag FLAG_DEFEATED_RIVAL_ROUTE_104
 	goto Route104_EventScript_MayDefeated
 	end
 
 Route104_EventScript_BattleMayMudkip::
-	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_GRASS, Route104_Text_MayDefeat
+	trainerbattle_no_intro TRAINER_KELLI_RUSTBORO_GRASS, Route104_Text_MayDefeat
 	setflag FLAG_DEFEATED_RIVAL_ROUTE_104
 	goto Route104_EventScript_MayDefeated
 	end
 
-Route104_EventScript_BrendanEncounter::
-	goto_if_set FLAG_DEFEATED_RIVAL_ROUTE_104, Route104_EventScript_BrendanDefeated
-	goto_if_set FLAG_REGISTER_RIVAL_POKENAV, Route104_EventScript_BrendanAskToBattle
+Route104_EventScript_KyleEncounter::
+	goto_if_set FLAG_DEFEATED_RIVAL_ROUTE_104, Route104_EventScript_KyleDefeated
+	goto_if_set FLAG_REGISTER_RIVAL_POKENAV, Route104_EventScript_KyleAskToBattle
 	setflag FLAG_REGISTER_RIVAL_POKENAV
-	msgbox Route104_Text_BrendanWeShouldRegister, MSGBOX_DEFAULT
+	msgbox Route104_Text_KyleWeShouldRegister, MSGBOX_DEFAULT
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox Route104_Text_RegisteredBrendan, MSGBOX_DEFAULT
+	msgbox Route104_Text_RegisteredKyle, MSGBOX_DEFAULT
 	waitfanfare
 	closemessage
 	delay 30
 	setflag FLAG_ENABLE_RIVAL_MATCH_CALL
 	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_PlayerFaceRival
 	applymovement LOCALID_RIVAL, Route104_Movement_RivalWalkSlowLeft
-	msgbox Route104_Text_BrendanHowsYourPokedex, MSGBOX_DEFAULT
+	msgbox Route104_Text_KyleHowsYourPokedex, MSGBOX_DEFAULT
 	closemessage
 	waitmovement 0
 	applymovement LOCALID_RIVAL, Route104_Movement_RivalApproachPlayer
 	waitmovement 0
 	copyobjectxytoperm LOCALID_RIVAL
-	msgbox Route104_Text_BrendanDoingGreatLetsBattle, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, Route104_EventScript_BattleBrendan
-	msgbox Route104_Text_BrendanNoConfidence, MSGBOX_DEFAULT
+	msgbox Route104_Text_KyleDoingGreatLetsBattle, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, Route104_EventScript_BattleKyle
+	msgbox Route104_Text_KyleNoConfidence, MSGBOX_DEFAULT
 	call Route104_EventScript_RestoreMusic
 	releaseall
 	end
 
-Route104_EventScript_BrendanAskToBattle::
-	msgbox Route104_Text_BrendanLetsBattle, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, Route104_EventScript_BattleBrendan
-	msgbox Route104_Text_BrendanNoConfidence, MSGBOX_DEFAULT
+Route104_EventScript_KyleAskToBattle::
+	msgbox Route104_Text_KyleLetsBattle, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, Route104_EventScript_BattleKyle
+	msgbox Route104_Text_KyleNoConfidence, MSGBOX_DEFAULT
 	releaseall
 	end
 
-Route104_EventScript_BattleBrendan::
-	msgbox Route104_Text_BrendanIntro, MSGBOX_DEFAULT
+Route104_EventScript_BattleKyle::
+	msgbox Route104_Text_KyleIntro, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
-	case 0, Route104_EventScript_BattleBrendanTreecko
-	case 1, Route104_EventScript_BattleBrendanTorchic
-	case 2, Route104_EventScript_BattleBrendanMudkip
+	case 0, Route104_EventScript_BattleKyleTreecko
+	case 1, Route104_EventScript_BattleKyleTorchic
+	case 2, Route104_EventScript_BattleKyleMudkip
 	end
 
-Route104_EventScript_BrendanDefeated::
-	msgbox Route104_Text_BrendanPostBattle, MSGBOX_DEFAULT
+Route104_EventScript_KyleDefeated::
+	msgbox Route104_Text_KylePostBattle, MSGBOX_DEFAULT
 	call_if_eq VAR_0x8008, 0, Route104_EventScript_RestoreMusic
 	releaseall
 	end
 
-Route104_EventScript_BattleBrendanTreecko::
-	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_FIRE, Route104_Text_BrendanDefeat
+Route104_EventScript_BattleKyleTreecko::
+	trainerbattle_no_intro TRAINER_KYLE_RUSTBORO_FIRE, Route104_Text_KyleDefeat
 	setflag FLAG_DEFEATED_RIVAL_ROUTE_104
-	goto Route104_EventScript_BrendanDefeated
+	goto Route104_EventScript_KyleDefeated
 	end
 
-Route104_EventScript_BattleBrendanTorchic::
-	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_WATER, Route104_Text_BrendanDefeat
+Route104_EventScript_BattleKyleTorchic::
+	trainerbattle_no_intro TRAINER_KYLE_RUSTBORO_WATER, Route104_Text_KyleDefeat
 	setflag FLAG_DEFEATED_RIVAL_ROUTE_104
-	goto Route104_EventScript_BrendanDefeated
+	goto Route104_EventScript_KyleDefeated
 	end
 
-Route104_EventScript_BattleBrendanMudkip::
-	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_GRASS, Route104_Text_BrendanDefeat
+Route104_EventScript_BattleKyleMudkip::
+	trainerbattle_no_intro TRAINER_KYLE_RUSTBORO_GRASS, Route104_Text_KyleDefeat
 	setflag FLAG_DEFEATED_RIVAL_ROUTE_104
-	goto Route104_EventScript_BrendanDefeated
+	goto Route104_EventScript_KyleDefeated
 	end
 
 Route104_Movement_PlayerBackUp:
@@ -1079,7 +1079,7 @@ Route104_Text_TrainerTipsDoubleBattles:
 	.string "Watch how Pokémon are lined up.$"
 
 Route104_Text_MayWeShouldRegister:
-	.string "May: Oh, hi, {PLAYER}{KUN}!\p"
+	.string "Kelli: Oh, hi, {PLAYER}{KUN}!\p"
 	.string "Devon upgraded your PokéNav with\n"
 	.string "the Match Call system, huh?\p"
 	.string "We should register each other so we\n"
@@ -1090,7 +1090,7 @@ Route104_Text_RegisteredMay:
 	.string "in the PokéNav.$"
 
 Route104_Text_MayHowsYourPokedex:
-	.string "May: Oh, by the way, {PLAYER}{KUN},\n"
+	.string "Kelli: Oh, by the way, {PLAYER}{KUN},\n"
 	.string "how's your Pokédex coming along?$"
 
 Route104_Text_MayMinesDecentLetsBattle:
@@ -1099,17 +1099,17 @@ Route104_Text_MayMinesDecentLetsBattle:
 	.string "How about a little battle?$"
 
 Route104_Text_MayHaventRaisedPokemon:
-	.string "May: Oh, what's the matter?\p"
+	.string "Kelli: Oh, what's the matter?\p"
 	.string "Haven't you caught or raised your\n"
 	.string "Pokémon very much?\p"
 	.string "That's not very good for a Trainer!$"
 
 Route104_Text_MayLetsBattle:
-	.string "May: So, what do you think?\n"
+	.string "Kelli: So, what do you think?\n"
 	.string "How about a little battle here?$"
 
 Route104_Text_MayIntro:
-	.string "May: You just became a Trainer,\n"
+	.string "Kelli: You just became a Trainer,\n"
 	.string "{PLAYER}{KUN}. I'm not going to lose!$"
 
 Route104_Text_MayDefeat:
@@ -1117,51 +1117,51 @@ Route104_Text_MayDefeat:
 	.string "You're better than I expected!$"
 
 Route104_Text_MayPostBattle:
-	.string "May: I can tell you've gotten pretty\n"
+	.string "Kelli: I can tell you've gotten pretty\n"
 	.string "good with the way you handle Pokémon.\p"
 	.string "But instead of only making them\n"
 	.string "battle, you should be like Mr. Briney.\p"
 	.string "It's important to become friends with\n"
 	.string "Pokémon, too.$"
 
-Route104_Text_BrendanWeShouldRegister:
-	.string "Brendan: Oh, hey, {PLAYER}!\p"
+Route104_Text_KyleWeShouldRegister:
+	.string "Kyle: Oh, hey, {PLAYER}!\p"
 	.string "Cool, you had Devon install the Match\n"
 	.string "Call system on your PokéNav!\p"
 	.string "Let's register each other in our\n"
 	.string "PokéNavs so we can keep in touch.$"
 
-Route104_Text_RegisteredBrendan:
-	.string "{PLAYER} registered Brendan\n"
+Route104_Text_RegisteredKyle:
+	.string "{PLAYER} registered Kyle\n"
 	.string "in the PokéNav.$"
 
-Route104_Text_BrendanHowsYourPokedex:
-	.string "Brendan: {PLAYER}, how's your Pokédex?\n"
+Route104_Text_KyleHowsYourPokedex:
+	.string "Kyle: {PLAYER}, how's your Pokédex?\n"
 	.string "Have you filled in any pages yet?$"
 
-Route104_Text_BrendanDoingGreatLetsBattle:
+Route104_Text_KyleDoingGreatLetsBattle:
 	.string "Me, I'm doing great!\p"
 	.string "Want to check out how good I am with\n"
 	.string "a battle?$"
 
-Route104_Text_BrendanNoConfidence:
-	.string "Brendan: What's the matter? Don't have\n"
+Route104_Text_KyleNoConfidence:
+	.string "Kyle: What's the matter? Don't have\n"
 	.string "any confidence in your Pokémon?$"
 
-Route104_Text_BrendanLetsBattle:
-	.string "Brendan: What's up?\n"
+Route104_Text_KyleLetsBattle:
+	.string "Kyle: What's up?\n"
 	.string "Want to have a battle with me?$"
 
-Route104_Text_BrendanIntro:
-	.string "Brendan: I know you just became\n"
+Route104_Text_KyleIntro:
+	.string "Kyle: I know you just became\n"
 	.string "a Trainer, but I won't go easy!$"
 
-Route104_Text_BrendanDefeat:
+Route104_Text_KyleDefeat:
 	.string "Hmm…\n"
 	.string "You're pretty good.$"
 
-Route104_Text_BrendanPostBattle:
-	.string "Brendan: You've gotten pretty decent\n"
+Route104_Text_KylePostBattle:
+	.string "Kyle: You've gotten pretty decent\n"
 	.string "at handling Pokémon.\p"
 	.string "But, you know, you shouldn't just be\n"
 	.string "making Pokémon battle.\p"

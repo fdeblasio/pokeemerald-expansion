@@ -246,7 +246,7 @@ static void SafariBufferExecCompleted(u32 battler)
 
 static void SafariHandleDrawTrainerPic(u32 battler)
 {
-    u32 trainerPicId = gSaveBlock2Ptr->playerGender + TRAINER_BACK_PIC_BRENDAN;
+    u32 trainerPicId = gSaveBlock2Ptr->playerGender + TRAINER_BACK_PIC_KYLE;
 
     BtlController_HandleDrawTrainerPic(battler, trainerPicId, FALSE,
                                        80, 80 + 4 * (8 - gTrainerBacksprites[trainerPicId].coordinates.size),
@@ -314,7 +314,7 @@ static void SafariHandleStatusIconUpdate(u32 battler)
     SafariBufferExecCompleted(battler);
 }
 
-// All of the other controllers(except Wally's) use CRY_MODE_FAINT.
+// All of the other controllers(except Duncan's) use CRY_MODE_FAINT.
 // Player is not a pokemon, so it can't really faint in the Safari anyway.
 static void SafariHandleFaintingCry(u32 battler)
 {

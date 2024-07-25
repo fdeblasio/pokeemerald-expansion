@@ -14,8 +14,8 @@ LittlerootTown_MaysHouse_1F_OnLoad:
 	end
 
 LittlerootTown_MaysHouse_1F_EventScript_SetMovingBoxes::
-	setmetatile 5, 4, METATILE_BrendansMaysHouse_MovingBox_Open, TRUE
-	setmetatile 5, 2, METATILE_BrendansMaysHouse_MovingBox_Closed, TRUE
+	setmetatile 5, 4, METATILE_KylesMaysHouse_MovingBox_Open, TRUE
+	setmetatile 5, 2, METATILE_KylesMaysHouse_MovingBox_Closed, TRUE
 	return
 
 LittlerootTown_MaysHouse_1F_EventScript_CheckShowShoesManual::
@@ -24,7 +24,7 @@ LittlerootTown_MaysHouse_1F_EventScript_CheckShowShoesManual::
 	return
 
 LittlerootTown_MaysHouse_1F_EventScript_ShowRunningShoesManual::
-	setmetatile 6, 7, METATILE_BrendansMaysHouse_BookOnTable, TRUE
+	setmetatile 6, 7, METATILE_KylesMaysHouse_BookOnTable, TRUE
 	return
 
 LittlerootTown_MaysHouse_1F_OnTransition:
@@ -53,8 +53,8 @@ LittlerootTown_MaysHouse_1F_OnFrame:
 	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 3, LittlerootTown_MaysHouse_1F_EventScript_EnterHouseMovingIn
 	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 5, LittlerootTown_MaysHouse_1F_EventScript_GoUpstairsToSetClock
 	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 6, LittlerootTown_MaysHouse_1F_EventScript_PetalburgGymReport
-	map_script_2 VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 1, LittlerootTown_MaysHouse_1F_EventScript_YoureNewNeighbor
-	map_script_2 VAR_LITTLEROOT_HOUSES_STATE_MAY, 3, PlayersHouse_1F_EventScript_GetSSTicketAndSeeLatiTV
+	map_script_2 VAR_LITTLEROOT_HOUSES_STATE_KYLE, 1, LittlerootTown_MaysHouse_1F_EventScript_YoureNewNeighbor
+	map_script_2 VAR_LITTLEROOT_HOUSES_STATE_KELLI, 3, PlayersHouse_1F_EventScript_GetSSTicketAndSeeLatiTV
 	.2byte 0
 
 LittlerootTown_MaysHouse_1F_EventScript_GoUpstairsToSetClock::
@@ -64,7 +64,7 @@ LittlerootTown_MaysHouse_1F_EventScript_GoUpstairsToSetClock::
 	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_MaysHouse_1F_Movement_PushTowardStairs
 	applymovement LOCALID_MOM, LittlerootTown_MaysHouse_1F_Movement_PushTowardStairs
 	waitmovement 0
-	warp MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F, 1, 1
+	warp MAP_LITTLEROOT_TOWN_KELLIS_HOUSE_2F, 1, 1
 	waitstate
 	releaseall
 	end
@@ -100,7 +100,7 @@ LittlerootTown_MaysHouse_1F_EventScript_YoureNewNeighbor::
 	special GetRivalSonDaughterString
 	msgbox RivalsHouse_1F_Text_OhYoureTheNewNeighbor, MSGBOX_DEFAULT
 	setflag FLAG_MET_RIVAL_MOM
-	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 2
+	setvar VAR_LITTLEROOT_HOUSES_STATE_KYLE, 2
 	setvar VAR_LITTLEROOT_RIVAL_STATE, 2
 	releaseall
 	end
@@ -187,7 +187,7 @@ LittlerootTown_MaysHouse_1F_EventScript_MeetRival::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
-	playbgm MUS_ENCOUNTER_MAY, TRUE
+	playbgm MUS_ENCOUNTER_KELLI, TRUE
 	call_if_eq VAR_0x8008, 0, LittlerootTown_MaysHouse_1F_EventScript_MayApproachPlayer0
 	call_if_eq VAR_0x8008, 1, LittlerootTown_MaysHouse_1F_EventScript_MayApproachPlayer1
 	call_if_eq VAR_0x8008, 2, LittlerootTown_MaysHouse_1F_EventScript_MayApproachPlayer2
@@ -198,9 +198,9 @@ LittlerootTown_MaysHouse_1F_EventScript_MeetRival::
 	call_if_eq VAR_0x8008, 2, LittlerootTown_MaysHouse_1F_EventScript_MayGoUpstairs2
 	playse SE_EXIT
 	removeobject LOCALID_RIVAL
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_MAY
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL
-	clearflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_KELLIS_HOUSE_KELLI
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_KELLIS_HOUSE_2F_POKE_BALL
+	clearflag FLAG_HIDE_LITTLEROOT_TOWN_KELLIS_HOUSE_RIVAL_BEDROOM
 	delay 30
 	setvar VAR_LITTLEROOT_RIVAL_STATE, 3
 	setvar VAR_LITTLEROOT_TOWN_STATE, 1
@@ -380,7 +380,7 @@ RivalsHouse_1F_Text_MayWhoAreYou:
 	.string "some wild Pokémon!\p"
 	.string "{PLAYER}{KUN}, I'll catch you later!$"
 
-RivalsHouse_1F_Text_BrendanWhoAreYou:
+RivalsHouse_1F_Text_KyleWhoAreYou:
 	.string "Hey!\n"
 	.string "You…\p"
 	.string "Who are you?\p"
@@ -390,7 +390,7 @@ RivalsHouse_1F_Text_BrendanWhoAreYou:
 	.string "Dad, Prof. Birch, said that our new\n"
 	.string "next-door neighbor is a Gym Leader's\l"
 	.string "kid, so I assumed you'd be a guy.\p"
-	.string "My name's Brendan.\n"
+	.string "My name's Kyle.\n"
 	.string "So, hi, neighbor!\p"
 	.string "Huh? Hey, {PLAYER}, don't you have\n"
 	.string "a Pokémon?\p"

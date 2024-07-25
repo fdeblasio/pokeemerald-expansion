@@ -52,12 +52,12 @@ LavaridgeTown_EventScript_RivalGiveGoGoggles::
 	delay 20
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, LavaridgeTown_EventScript_PlayMayMusic
-	call_if_eq VAR_RESULT, FEMALE, LavaridgeTown_EventScript_PlayBrendanMusic
+	call_if_eq VAR_RESULT, FEMALE, LavaridgeTown_EventScript_PlayKyleMusic
 	call_if_eq VAR_0x8008, 9, LavaridgeTown_EventScript_RivalApproachPlayer1
 	call_if_ne VAR_0x8008, 9, LavaridgeTown_EventScript_RivalApproachPlayer2
 	checkplayergender
 	goto_if_eq VAR_RESULT, MALE, LavaridgeTown_EventScript_MayGiveGoGoggles
-	goto_if_eq VAR_RESULT, FEMALE, LavaridgeTown_EventScript_BrendanGiveGoGoggles
+	goto_if_eq VAR_RESULT, FEMALE, LavaridgeTown_EventScript_KyleGiveGoGoggles
 	end
 
 LavaridgeTown_EventScript_MayGiveGoGoggles::
@@ -68,11 +68,11 @@ LavaridgeTown_EventScript_MayGiveGoGoggles::
 	goto LavaridgeTown_EventScript_RivalExit
 	end
 
-LavaridgeTown_EventScript_BrendanGiveGoGoggles::
-	msgbox LavaridgeTown_Text_BrendanNiceBadgesTakeThis, MSGBOX_DEFAULT
+LavaridgeTown_EventScript_KyleGiveGoGoggles::
+	msgbox LavaridgeTown_Text_KyleNiceBadgesTakeThis, MSGBOX_DEFAULT
 	giveitem ITEM_GO_GOGGLES
 	setflag FLAG_RECEIVED_GO_GOGGLES
-	msgbox LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad, MSGBOX_DEFAULT
+	msgbox LavaridgeTown_Text_KyleExplainGoGogglesChallengeDad, MSGBOX_DEFAULT
 	goto LavaridgeTown_EventScript_RivalExit
 	end
 
@@ -92,11 +92,11 @@ LavaridgeTown_EventScript_RivalExit::
 	end
 
 LavaridgeTown_EventScript_PlayMayMusic::
-	playbgm MUS_ENCOUNTER_MAY, TRUE
+	playbgm MUS_ENCOUNTER_KELLI, TRUE
 	return
 
-LavaridgeTown_EventScript_PlayBrendanMusic::
-	playbgm MUS_ENCOUNTER_BRENDAN, TRUE
+LavaridgeTown_EventScript_PlayKyleMusic::
+	playbgm MUS_ENCOUNTER_KYLE, TRUE
 	return
 
 LavaridgeTown_EventScript_RivalNoticePlayer::
@@ -277,7 +277,7 @@ LavaridgeTown_EventScript_HerbShopSign::
 	end
 
 LavaridgeTown_Text_MayNiceBadgesTakeThis:
-	.string "May: {PLAYER}{KUN}! Long time no see!\p"
+	.string "Kelli: {PLAYER}{KUN}! Long time no see!\p"
 	.string "Oh? While I visited the hot springs,\n"
 	.string "you got the Lavaridge Gym Badge.\p"
 	.string "You must have collected\n"
@@ -287,7 +287,7 @@ LavaridgeTown_Text_MayNiceBadgesTakeThis:
 	.string "have this.$"
 
 LavaridgeTown_Text_MayExplainGoGogglesChallengeDad:
-	.string "May: With those Go-Goggles, you'll\n"
+	.string "Kelli: With those Go-Goggles, you'll\n"
 	.string "have no trouble getting through the\l"
 	.string "desert near Route 111.\p"
 	.string "But, wow, {PLAYER}{KUN}…\n"
@@ -298,16 +298,16 @@ LavaridgeTown_Text_MayExplainGoGogglesChallengeDad:
 	.string "your dad in Petalburg Gym.\p"
 	.string "See you again!$"
 
-LavaridgeTown_Text_BrendanNiceBadgesTakeThis:
-	.string "Brendan: {PLAYER}, hey, it's been a while.\n"
+LavaridgeTown_Text_KyleNiceBadgesTakeThis:
+	.string "Kyle: {PLAYER}, hey, it's been a while.\n"
 	.string "How's it going?\p"
 	.string "Hmm…\n"
 	.string "That's a decent collection of Badges.\p"
 	.string "All right, then.\n"
 	.string "You may as well have this.$"
 
-LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad:
-	.string "Brendan: Keep those with you if you're\n"
+LavaridgeTown_Text_KyleExplainGoGogglesChallengeDad:
+	.string "Kyle: Keep those with you if you're\n"
 	.string "planning on going into that desert near\l"
 	.string "Route 111.\p"
 	.string "There should be some Pokémon that\n"

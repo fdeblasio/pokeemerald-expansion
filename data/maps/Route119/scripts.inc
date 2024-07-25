@@ -45,7 +45,7 @@ Route119_EventScript_RivalEncounter::
 	addobject LOCALID_RIVAL_ON_BIKE
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, Route119_EventScript_PlayMayMusic
-	call_if_eq VAR_RESULT, FEMALE, Route119_EventScript_PlayBrendanMusic
+	call_if_eq VAR_RESULT, FEMALE, Route119_EventScript_PlayKyleMusic
 	delay 65
 	call_if_eq VAR_TEMP_1, 1, Route119_EventScript_RivalEnter1
 	call_if_eq VAR_TEMP_1, 2, Route119_EventScript_RivalEnter2
@@ -59,16 +59,16 @@ Route119_EventScript_RivalEncounter::
 	delay 30
 	checkplayergender
 	goto_if_eq VAR_RESULT, MALE, Route119_EventScript_BattleMay
-	goto_if_eq VAR_RESULT, FEMALE, Route119_EventScript_BattleBrendan
+	goto_if_eq VAR_RESULT, FEMALE, Route119_EventScript_BattleKyle
 	releaseall
 	end
 
 Route119_EventScript_PlayMayMusic::
-	playbgm MUS_ENCOUNTER_MAY, TRUE
+	playbgm MUS_ENCOUNTER_KELLI, TRUE
 	return
 
-Route119_EventScript_PlayBrendanMusic::
-	playbgm MUS_ENCOUNTER_BRENDAN, TRUE
+Route119_EventScript_PlayKyleMusic::
+	playbgm MUS_ENCOUNTER_KYLE, TRUE
 	return
 
 Route119_EventScript_BattleMay::
@@ -80,17 +80,17 @@ Route119_EventScript_BattleMay::
 	end
 
 Route119_EventScript_BattleMayTreecko::
-	trainerbattle_no_intro TRAINER_MAY_ROUTE_119_FIRE, Route119_Text_MayDefeat
+	trainerbattle_no_intro TRAINER_KELLI_ROUTE_119_FIRE, Route119_Text_MayDefeat
 	goto Route119_EventScript_DefeatedMay
 	end
 
 Route119_EventScript_BattleMayTorchic::
-	trainerbattle_no_intro TRAINER_MAY_ROUTE_119_WATER, Route119_Text_MayDefeat
+	trainerbattle_no_intro TRAINER_KELLI_ROUTE_119_WATER, Route119_Text_MayDefeat
 	goto Route119_EventScript_DefeatedMay
 	end
 
 Route119_EventScript_BattleMayMudkip::
-	trainerbattle_no_intro TRAINER_MAY_ROUTE_119_GRASS, Route119_Text_MayDefeat
+	trainerbattle_no_intro TRAINER_KELLI_ROUTE_119_GRASS, Route119_Text_MayDefeat
 	goto Route119_EventScript_DefeatedMay
 	end
 
@@ -101,33 +101,33 @@ Route119_EventScript_DefeatedMay::
 	goto Route119_EventScript_RivalExitScottArrive
 	end
 
-Route119_EventScript_BattleBrendan::
-	msgbox Route119_Text_BrendanIntro, MSGBOX_DEFAULT
+Route119_EventScript_BattleKyle::
+	msgbox Route119_Text_KyleIntro, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
-	case 0, Route119_EventScript_BattleBrendanTreecko
-	case 1, Route119_EventScript_BattleBrendanTorchic
-	case 2, Route119_EventScript_BattleBrendanMudkip
+	case 0, Route119_EventScript_BattleKyleTreecko
+	case 1, Route119_EventScript_BattleKyleTorchic
+	case 2, Route119_EventScript_BattleKyleMudkip
 	end
 
-Route119_EventScript_BattleBrendanTreecko::
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_119_FIRE, Route119_Text_BrendanDefeat
-	goto Route119_EventScript_DefeatedBrendan
+Route119_EventScript_BattleKyleTreecko::
+	trainerbattle_no_intro TRAINER_KYLE_ROUTE_119_FIRE, Route119_Text_KyleDefeat
+	goto Route119_EventScript_DefeatedKyle
 	end
 
-Route119_EventScript_BattleBrendanTorchic::
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_119_WATER, Route119_Text_BrendanDefeat
-	goto Route119_EventScript_DefeatedBrendan
+Route119_EventScript_BattleKyleTorchic::
+	trainerbattle_no_intro TRAINER_KYLE_ROUTE_119_WATER, Route119_Text_KyleDefeat
+	goto Route119_EventScript_DefeatedKyle
 	end
 
-Route119_EventScript_BattleBrendanMudkip::
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_119_GRASS, Route119_Text_BrendanDefeat
-	goto Route119_EventScript_DefeatedBrendan
+Route119_EventScript_BattleKyleMudkip::
+	trainerbattle_no_intro TRAINER_KYLE_ROUTE_119_GRASS, Route119_Text_KyleDefeat
+	goto Route119_EventScript_DefeatedKyle
 	end
 
-Route119_EventScript_DefeatedBrendan::
-	msgbox Route119_Text_BrendanIllGiveYouThis, MSGBOX_DEFAULT
+Route119_EventScript_DefeatedKyle::
+	msgbox Route119_Text_KyleIllGiveYouThis, MSGBOX_DEFAULT
 	call Route119_EventScript_GiveFlyTM
-	msgbox Route119_Text_BrendanExplainFly, MSGBOX_DEFAULT
+	msgbox Route119_Text_KyleExplainFly, MSGBOX_DEFAULT
 	goto Route119_EventScript_RivalExitScottArrive
 	end
 
@@ -480,7 +480,7 @@ Route119_EventScript_ScottWonAtFortreeGymCall::
 	end
 
 Route119_Text_MayIntro:
-	.string "May: {PLAYER}{KUN}!\n"
+	.string "Kelli: {PLAYER}{KUN}!\n"
 	.string "Where were you? I was looking for you!\p"
 	.string "How much stronger have you gotten?\n"
 	.string "Let me check for you!\p"
@@ -494,12 +494,12 @@ Route119_Text_MayDefeat:
 	.string "struggling with your training.$"
 
 Route119_Text_MayPresentForYou:
-	.string "May: But I had absolutely nothing to\n"
+	.string "Kelli: But I had absolutely nothing to\n"
 	.string "worry about! Keep it up!\p"
 	.string "And, here! I have a present for you.$"
 
 Route119_Text_MayExplainFly:
-	.string "May: Use Fly, and your Pokémon will\n"
+	.string "Kelli: Use Fly, and your Pokémon will\n"
 	.string "instantly carry you to any town you've\l"
 	.string "already visited.\p"
 	.string "You should Fly home and visit\n"
@@ -508,26 +508,26 @@ Route119_Text_MayExplainFly:
 	.string "{PLAYER}{KUN}.\p"
 	.string "Well, let's meet again somewhere!$"
 
-Route119_Text_BrendanIntro:
-	.string "Brendan: {PLAYER}! So this is where\n"
+Route119_Text_KyleIntro:
+	.string "Kyle: {PLAYER}! So this is where\n"
 	.string "you've been looking for Pokémon?\p"
 	.string "Let me see how good you got.\n"
 	.string "I'll test you!\p"
 	.string "Now!\n"
 	.string "It's a battle, so battle!$"
 
-Route119_Text_BrendanDefeat:
+Route119_Text_KyleDefeat:
 	.string "Hmm…\n"
 	.string "You've gotten pretty darn decent.$"
 
-Route119_Text_BrendanIllGiveYouThis:
-	.string "Brendan: I'd say you're good enough\n"
+Route119_Text_KyleIllGiveYouThis:
+	.string "Kyle: I'd say you're good enough\n"
 	.string "to search for Pokémon anywhere.\p"
 	.string "Here, I'll give you this.\n"
 	.string "Try it out.$"
 
-Route119_Text_BrendanExplainFly:
-	.string "Brendan: Use Fly, and your Pokémon\n"
+Route119_Text_KyleExplainFly:
+	.string "Kyle: Use Fly, and your Pokémon\n"
 	.string "instantly carries you to any town\l"
 	.string "you've already visited.\p"
 	.string "Anyway, I have to move along.$"

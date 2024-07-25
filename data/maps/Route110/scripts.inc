@@ -377,7 +377,7 @@ Route110_EventScript_RivalScene::
 	lockall
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, Route110_EventScript_PlayMayMusic
-	call_if_eq VAR_RESULT, FEMALE, Route110_EventScript_PlayBrendanMusic
+	call_if_eq VAR_RESULT, FEMALE, Route110_EventScript_PlayKyleMusic
 	applymovement LOCALID_RIVAL, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	applymovement LOCALID_RIVAL, Common_Movement_ExclamationMark
@@ -390,16 +390,16 @@ Route110_EventScript_RivalScene::
 	call_if_eq VAR_0x8008, 3, Route110_EventScript_RivalApproachPlayer3
 	checkplayergender
 	goto_if_eq VAR_RESULT, MALE, Route110_EventScript_MayBattle
-	goto_if_eq VAR_RESULT, FEMALE, Route110_EventScript_BrendanBattle
+	goto_if_eq VAR_RESULT, FEMALE, Route110_EventScript_KyleBattle
 	releaseall
 	end
 
 Route110_EventScript_PlayMayMusic::
-	playbgm MUS_ENCOUNTER_MAY, TRUE
+	playbgm MUS_ENCOUNTER_KELLI, TRUE
 	return
 
-Route110_EventScript_PlayBrendanMusic::
-	playbgm MUS_ENCOUNTER_BRENDAN, TRUE
+Route110_EventScript_PlayKyleMusic::
+	playbgm MUS_ENCOUNTER_KYLE, TRUE
 	return
 
 Route110_EventScript_MayBattle::
@@ -411,17 +411,17 @@ Route110_EventScript_MayBattle::
 	end
 
 Route110_EventScript_MayBattleTreecko::
-	trainerbattle_no_intro TRAINER_MAY_ROUTE_110_FIRE, Route110_Text_MayDefeated
+	trainerbattle_no_intro TRAINER_KELLI_ROUTE_110_FIRE, Route110_Text_MayDefeated
 	goto Route110_EventScript_MayDefeated
 	end
 
 Route110_EventScript_MayBattleTorchic::
-	trainerbattle_no_intro TRAINER_MAY_ROUTE_110_WATER, Route110_Text_MayDefeated
+	trainerbattle_no_intro TRAINER_KELLI_ROUTE_110_WATER, Route110_Text_MayDefeated
 	goto Route110_EventScript_MayDefeated
 	end
 
 Route110_EventScript_MayBattleMudkip::
-	trainerbattle_no_intro TRAINER_MAY_ROUTE_110_GRASS, Route110_Text_MayDefeated
+	trainerbattle_no_intro TRAINER_KELLI_ROUTE_110_GRASS, Route110_Text_MayDefeated
 	goto Route110_EventScript_MayDefeated
 	end
 
@@ -432,33 +432,33 @@ Route110_EventScript_MayDefeated::
 	goto Route110_EventScript_RivalExit
 	end
 
-Route110_EventScript_BrendanBattle::
-	msgbox Route110_Text_BrendanLetsBattle, MSGBOX_DEFAULT
+Route110_EventScript_KyleBattle::
+	msgbox Route110_Text_KyleLetsBattle, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
-	case 0, Route110_EventScript_BrendanBattleTreecko
-	case 1, Route110_EventScript_BrendanBattleTorchic
-	case 2, Route110_EventScript_BrendanBattleMudkip
+	case 0, Route110_EventScript_KyleBattleTreecko
+	case 1, Route110_EventScript_KyleBattleTorchic
+	case 2, Route110_EventScript_KyleBattleMudkip
 	end
 
-Route110_EventScript_BrendanBattleTreecko::
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_110_FIRE, Route110_Text_BrendanDefeated
-	goto Route110_EventScript_BrendanDefeated
+Route110_EventScript_KyleBattleTreecko::
+	trainerbattle_no_intro TRAINER_KYLE_ROUTE_110_FIRE, Route110_Text_KyleDefeated
+	goto Route110_EventScript_KyleDefeated
 	end
 
-Route110_EventScript_BrendanBattleTorchic::
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_110_WATER, Route110_Text_BrendanDefeated
-	goto Route110_EventScript_BrendanDefeated
+Route110_EventScript_KyleBattleTorchic::
+	trainerbattle_no_intro TRAINER_KYLE_ROUTE_110_WATER, Route110_Text_KyleDefeated
+	goto Route110_EventScript_KyleDefeated
 	end
 
-Route110_EventScript_BrendanBattleMudkip::
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_110_GRASS, Route110_Text_BrendanDefeated
-	goto Route110_EventScript_BrendanDefeated
+Route110_EventScript_KyleBattleMudkip::
+	trainerbattle_no_intro TRAINER_KYLE_ROUTE_110_GRASS, Route110_Text_KyleDefeated
+	goto Route110_EventScript_KyleDefeated
 	end
 
-Route110_EventScript_BrendanDefeated::
-	msgbox Route110_Text_BrendanTakeThis, MSGBOX_DEFAULT
+Route110_EventScript_KyleDefeated::
+	msgbox Route110_Text_KyleTakeThis, MSGBOX_DEFAULT
 	call Route110_EventScript_GiveItemfinder
-	msgbox Route110_Text_BrendanExplainItemfinder, MSGBOX_DEFAULT
+	msgbox Route110_Text_KyleExplainItemfinder, MSGBOX_DEFAULT
 	goto Route110_EventScript_RivalExit
 	end
 
@@ -760,7 +760,7 @@ Route110_Text_AquaActionsBringSmiles:
 	.string "smiles to people's faces!$"
 
 Route110_Text_MayLetsBattle:
-	.string "May: Hi, {PLAYER}{KUN}, long time no see!\p"
+	.string "Kelli: Hi, {PLAYER}{KUN}, long time no see!\p"
 	.string "While I was searching for other\n"
 	.string "Pokémon, my Pokémon grew stronger.\p"
 	.string "So…\n"
@@ -771,13 +771,13 @@ Route110_Text_MayDefeated:
 	.string "You're better than I expected!$"
 
 Route110_Text_MayTakeThis:
-	.string "May: {PLAYER}{KUN}, you've been busy\n"
+	.string "Kelli: {PLAYER}{KUN}, you've been busy\n"
 	.string "training, too, haven't you?\p"
 	.string "I think you deserve a reward!\n"
 	.string "This is from me!$"
 
 Route110_Text_MayExplainItemfinder:
-	.string "May: That's an Itemfinder.\p"
+	.string "Kelli: That's an Itemfinder.\p"
 	.string "Try it out. If there is an item that's\n"
 	.string "not visible, it emits a sound.\p"
 	.string "Okay, {PLAYER}{KUN}, let's meet again!\p"
@@ -785,25 +785,25 @@ Route110_Text_MayExplainItemfinder:
 	.string "me, but I think you should train a lot\l"
 	.string "harder for the next time.$"
 
-Route110_Text_BrendanLetsBattle:
-	.string "Brendan: Hey, {PLAYER}.\n"
+Route110_Text_KyleLetsBattle:
+	.string "Kyle: Hey, {PLAYER}.\n"
 	.string "So this is where you were.\l"
 	.string "How's it going?\p"
 	.string "Have you been raising your Pokémon?\n"
 	.string "I'll check for you.$"
 
-Route110_Text_BrendanDefeated:
+Route110_Text_KyleDefeated:
 	.string "Hmm…\n"
 	.string "You're pretty good.$"
 
-Route110_Text_BrendanTakeThis:
-	.string "Brendan: {PLAYER}, you've trained\n"
+Route110_Text_KyleTakeThis:
+	.string "Kyle: {PLAYER}, you've trained\n"
 	.string "without me noticing…\p"
 	.string "Good enough!\n"
 	.string "Here, take this.$"
 
-Route110_Text_BrendanExplainItemfinder:
-	.string "Brendan: That's an Itemfinder.\p"
+Route110_Text_KyleExplainItemfinder:
+	.string "Kyle: That's an Itemfinder.\p"
 	.string "Use it to root around for items that\n"
 	.string "aren't visible.\p"
 	.string "If it senses something, it emits\n"

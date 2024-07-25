@@ -9042,8 +9042,8 @@ Machoke
 Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DUNCAN ===
-Name: Duncan
+=== TRAINER_WERNER ===
+Name: Werner
 Class: Sailor
 Pic: Sailor
 Gender: Male
@@ -9451,10 +9451,10 @@ Shiftry
 Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_WALLY_VICTORY_ROAD_1 ===
-Name: Wally
+=== TRAINER_DUNCAN_VICTORY_ROAD_1 ===
+Name: Duncan
 Class: Rival
-Pic: Wally
+Pic: Duncan
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore
@@ -9501,10 +9501,10 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Psychic
 - Future Sight
 
-=== TRAINER_BRENDAN_ROUTE_103_GRASS ===
-Name: Brendan
+=== TRAINER_KYLE_ROUTE_103_GRASS ===
+Name: Kyle
 Class: Rival
-Pic: Brendan
+Pic: Kyle
 Gender: Male
 Music: Male
 Double Battle: No
@@ -9514,10 +9514,10 @@ Treecko
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRENDAN_ROUTE_110_GRASS ===
-Name: Brendan
+=== TRAINER_KYLE_ROUTE_110_GRASS ===
+Name: Kyle
 Class: Rival
-Pic: Brendan
+Pic: Kyle
 Gender: Male
 Music: Male
 Double Battle: No
@@ -9535,10 +9535,10 @@ Grovyle
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_BRENDAN_ROUTE_119_GRASS ===
-Name: Brendan
+=== TRAINER_KYLE_ROUTE_119_GRASS ===
+Name: Kyle
 Class: Rival
-Pic: Brendan
+Pic: Kyle
 Gender: Male
 Music: Male
 Double Battle: No
@@ -9556,10 +9556,10 @@ Grovyle
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_BRENDAN_ROUTE_103_FIRE ===
-Name: Brendan
+=== TRAINER_KYLE_ROUTE_103_FIRE ===
+Name: Kyle
 Class: Rival
-Pic: Brendan
+Pic: Kyle
 Gender: Male
 Music: Male
 Double Battle: No
@@ -9569,10 +9569,10 @@ Torchic
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRENDAN_ROUTE_110_FIRE ===
-Name: Brendan
+=== TRAINER_KYLE_ROUTE_110_FIRE ===
+Name: Kyle
 Class: Rival
-Pic: Brendan
+Pic: Kyle
 Gender: Male
 Music: Male
 Double Battle: No
@@ -9590,10 +9590,10 @@ Combusken
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_BRENDAN_ROUTE_119_FIRE ===
-Name: Brendan
+=== TRAINER_KYLE_ROUTE_119_FIRE ===
+Name: Kyle
 Class: Rival
-Pic: Brendan
+Pic: Kyle
 Gender: Male
 Music: Male
 Double Battle: No
@@ -9611,10 +9611,10 @@ Combusken
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_BRENDAN_ROUTE_103_WATER ===
-Name: Brendan
+=== TRAINER_KYLE_ROUTE_103_WATER ===
+Name: Kyle
 Class: Rival
-Pic: Brendan
+Pic: Kyle
 Gender: Male
 Music: Male
 Double Battle: No
@@ -9624,10 +9624,10 @@ Mudkip
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRENDAN_ROUTE_110_WATER ===
-Name: Brendan
+=== TRAINER_KYLE_ROUTE_110_WATER ===
+Name: Kyle
 Class: Rival
-Pic: Brendan
+Pic: Kyle
 Gender: Male
 Music: Male
 Double Battle: No
@@ -9645,10 +9645,10 @@ Marshtomp
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_BRENDAN_ROUTE_119_WATER ===
-Name: Brendan
+=== TRAINER_KYLE_ROUTE_119_WATER ===
+Name: Kyle
 Class: Rival
-Pic: Brendan
+Pic: Kyle
 Gender: Male
 Music: Male
 Double Battle: No
@@ -9666,7 +9666,7 @@ Marshtomp
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_MAY_ROUTE_103_GRASS ===
+=== TRAINER_KELLI_ROUTE_103_GRASS ===
 Name: May
 Class: Rival
 Pic: May
@@ -9679,7 +9679,7 @@ Treecko
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MAY_ROUTE_110_GRASS ===
+=== TRAINER_KELLI_ROUTE_110_GRASS ===
 Name: May
 Class: Rival
 Pic: May
@@ -9700,7 +9700,7 @@ Grovyle
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_MAY_ROUTE_119_GRASS ===
+=== TRAINER_KELLI_ROUTE_119_GRASS ===
 Name: May
 Class: Rival
 Pic: May
@@ -9721,7 +9721,7 @@ Grovyle
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_MAY_ROUTE_103_FIRE ===
+=== TRAINER_KELLI_ROUTE_103_FIRE ===
 Name: May
 Class: Rival
 Pic: May
@@ -9734,7 +9734,7 @@ Torchic
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MAY_ROUTE_110_FIRE ===
+=== TRAINER_KELLI_ROUTE_110_FIRE ===
 Name: May
 Class: Rival
 Pic: May
@@ -9755,7 +9755,7 @@ Combusken
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_MAY_ROUTE_119_FIRE ===
+=== TRAINER_KELLI_ROUTE_119_FIRE ===
 Name: May
 Class: Rival
 Pic: May
@@ -9776,7 +9776,7 @@ Combusken
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_MAY_ROUTE_103_WATER ===
+=== TRAINER_KELLI_ROUTE_103_WATER ===
 Name: May
 Class: Rival
 Pic: May
@@ -9789,7 +9789,7 @@ Mudkip
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MAY_ROUTE_110_WATER ===
+=== TRAINER_KELLI_ROUTE_110_WATER ===
 Name: May
 Class: Rival
 Pic: May
@@ -9810,7 +9810,7 @@ Marshtomp
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_MAY_ROUTE_119_WATER ===
+=== TRAINER_KELLI_ROUTE_119_WATER ===
 Name: May
 Class: Rival
 Pic: May
@@ -10842,10 +10842,10 @@ Natu
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRENDAN_RUSTBORO_FIRE ===
-Name: Brendan
+=== TRAINER_KYLE_RUSTBORO_FIRE ===
+Name: Kyle
 Class: Rival
-Pic: Brendan
+Pic: Kyle
 Gender: Male
 Music: Male
 Double Battle: No
@@ -10859,10 +10859,10 @@ Torchic
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_BRENDAN_RUSTBORO_GRASS ===
-Name: Brendan
+=== TRAINER_KYLE_RUSTBORO_GRASS ===
+Name: Kyle
 Class: Rival
-Pic: Brendan
+Pic: Kyle
 Gender: Male
 Music: Male
 Double Battle: No
@@ -10966,10 +10966,10 @@ Loudred
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRENDAN_RUSTBORO_WATER ===
-Name: Brendan
+=== TRAINER_KYLE_RUSTBORO_WATER ===
+Name: Kyle
 Class: Rival
-Pic: Brendan
+Pic: Kyle
 Gender: Male
 Music: Male
 Double Battle: No
@@ -10983,7 +10983,7 @@ Mudkip
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_MAY_RUSTBORO_GRASS ===
+=== TRAINER_KELLI_RUSTBORO_GRASS ===
 Name: May
 Class: Rival
 Pic: May
@@ -12032,10 +12032,10 @@ Swablu
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_WALLY_MAUVILLE ===
-Name: Wally
+=== TRAINER_DUNCAN_MAUVILLE ===
+Name: Duncan
 Class: Rival
-Pic: Wally
+Pic: Duncan
 Gender: Male
 Music: Male
 Double Battle: No
@@ -12045,10 +12045,10 @@ Ralts
 Level: 16
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_WALLY_VICTORY_ROAD_2 ===
-Name: Wally
+=== TRAINER_DUNCAN_VICTORY_ROAD_2 ===
+Name: Duncan
 Class: Rival
-Pic: Wally
+Pic: Duncan
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore
@@ -12095,10 +12095,10 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Psychic
 - Future Sight
 
-=== TRAINER_WALLY_VICTORY_ROAD_3 ===
-Name: Wally
+=== TRAINER_DUNCAN_VICTORY_ROAD_3 ===
+Name: Duncan
 Class: Rival
-Pic: Wally
+Pic: Duncan
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore
@@ -12145,10 +12145,10 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Psychic
 - Future Sight
 
-=== TRAINER_WALLY_VICTORY_ROAD_4 ===
-Name: Wally
+=== TRAINER_DUNCAN_VICTORY_ROAD_4 ===
+Name: Duncan
 Class: Rival
-Pic: Wally
+Pic: Duncan
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore
@@ -12195,10 +12195,10 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Psychic
 - Future Sight
 
-=== TRAINER_WALLY_VICTORY_ROAD_5 ===
-Name: Wally
+=== TRAINER_DUNCAN_VICTORY_ROAD_5 ===
+Name: Duncan
 Class: Rival
-Pic: Wally
+Pic: Duncan
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore
@@ -12245,10 +12245,10 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Psychic
 - Future Sight
 
-=== TRAINER_BRENDAN_LILYCOVE_GRASS ===
-Name: Brendan
+=== TRAINER_KYLE_LILYCOVE_GRASS ===
+Name: Kyle
 Class: Rival
-Pic: Brendan
+Pic: Kyle
 Gender: Male
 Music: Male
 Double Battle: No
@@ -12270,10 +12270,10 @@ Grovyle
 Level: 34
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_BRENDAN_LILYCOVE_FIRE ===
-Name: Brendan
+=== TRAINER_KYLE_LILYCOVE_FIRE ===
+Name: Kyle
 Class: Rival
-Pic: Brendan
+Pic: Kyle
 Gender: Male
 Music: Male
 Double Battle: No
@@ -12295,10 +12295,10 @@ Combusken
 Level: 34
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_BRENDAN_LILYCOVE_WATER ===
-Name: Brendan
+=== TRAINER_KYLE_LILYCOVE_WATER ===
+Name: Kyle
 Class: Rival
-Pic: Brendan
+Pic: Kyle
 Gender: Male
 Music: Male
 Double Battle: No
@@ -12320,7 +12320,7 @@ Marshtomp
 Level: 34
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_MAY_LILYCOVE_GRASS ===
+=== TRAINER_KELLI_LILYCOVE_GRASS ===
 Name: May
 Class: Rival
 Pic: May
@@ -12345,7 +12345,7 @@ Grovyle
 Level: 34
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_MAY_LILYCOVE_FIRE ===
+=== TRAINER_KELLI_LILYCOVE_FIRE ===
 Name: May
 Class: Rival
 Pic: May
@@ -12370,7 +12370,7 @@ Combusken
 Level: 34
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_MAY_LILYCOVE_WATER ===
+=== TRAINER_KELLI_LILYCOVE_WATER ===
 Name: May
 Class: Rival
 Pic: May
@@ -14119,7 +14119,7 @@ Vigoroth
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_MAY_RUSTBORO_FIRE ===
+=== TRAINER_KELLI_RUSTBORO_FIRE ===
 Name: May
 Class: Rival
 Pic: May
@@ -14136,7 +14136,7 @@ Torchic
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_MAY_RUSTBORO_WATER ===
+=== TRAINER_KELLI_RUSTBORO_WATER ===
 Name: May
 Class: Rival
 Pic: May
@@ -16850,10 +16850,10 @@ Bulbasaur
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRENDAN_PLACEHOLDER ===
-Name: Brendan
+=== TRAINER_KYLE_PLACEHOLDER ===
+Name: Kyle
 Class: RS Protag
-Pic: RS Brendan
+Pic: RS Kyle
 Gender: Male
 Music: Male
 Double Battle: No
@@ -16862,7 +16862,7 @@ Groudon
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MAY_PLACEHOLDER ===
+=== TRAINER_KELLI_PLACEHOLDER ===
 Name: May
 Class: RS Protag
 Pic: RS May

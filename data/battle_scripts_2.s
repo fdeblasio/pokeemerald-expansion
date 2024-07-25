@@ -31,7 +31,7 @@ gBattlescriptsForSafariActions::
 	.4byte BattleScript_ActionWatchesCarefully
 	.4byte BattleScript_ActionGetNear
 	.4byte BattleScript_ActionThrowPokeblock
-	.4byte BattleScript_ActionWallyThrow
+	.4byte BattleScript_ActionDuncanThrow
 
 BattleScript_ItemEnd:
 	end
@@ -143,12 +143,12 @@ BattleScript_ItemIncreaseAllStats::
 	end
 
 BattleScript_BallThrow::
-	jumpifword CMP_COMMON_BITS, gBattleTypeFlags, BATTLE_TYPE_WALLY_TUTORIAL, BattleScript_BallThrowByWally
+	jumpifword CMP_COMMON_BITS, gBattleTypeFlags, BATTLE_TYPE_DUNCAN_TUTORIAL, BattleScript_BallThrowByDuncan
 	printstring STRINGID_PLAYERUSEDITEM
 	handleballthrow
 
-BattleScript_BallThrowByWally::
-	printstring STRINGID_WALLYUSEDITEM
+BattleScript_BallThrowByDuncan::
+	printstring STRINGID_DUNCANUSEDITEM
 	handleballthrow
 
 BattleScript_SafariBallThrow::
@@ -186,8 +186,8 @@ BattleScript_SuccessBallThrowEnd::
 	setbyte gBattleOutcome, B_OUTCOME_CAUGHT
 	finishturn
 
-BattleScript_WallyBallThrow::
-	printstring STRINGID_GOTCHAPKMNCAUGHTWALLY
+BattleScript_DuncanBallThrow::
+	printstring STRINGID_GOTCHAPKMNCAUGHTDUNCAN
 	setbyte gBattleOutcome, B_OUTCOME_CAUGHT
 	finishturn
 
@@ -233,7 +233,7 @@ BattleScript_ActionThrowPokeblock:
 	waitmessage B_WAIT_TIME_LONG
 	end2
 
-BattleScript_ActionWallyThrow:
+BattleScript_ActionDuncanThrow:
 	printstring STRINGID_RETURNMON
 	waitmessage B_WAIT_TIME_LONG
 	returnatktoball

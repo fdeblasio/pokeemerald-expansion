@@ -389,7 +389,7 @@ static void (* const sTurnActionsFuncsTable[])(void) =
     [B_ACTION_SAFARI_POKEBLOCK]       = HandleAction_ThrowPokeblock,
     [B_ACTION_SAFARI_GO_NEAR]         = HandleAction_GoNear,
     [B_ACTION_SAFARI_RUN]             = HandleAction_SafariZoneRun,
-    [B_ACTION_WALLY_THROW]            = HandleAction_WallyBallThrow,
+    [B_ACTION_DUNCAN_THROW]            = HandleAction_DuncanBallThrow,
     [B_ACTION_EXEC_SCRIPT]            = HandleAction_RunBattleScript,
     [B_ACTION_TRY_FINISH]             = HandleAction_TryFinish,
     [B_ACTION_FINISHED]               = HandleAction_ActionFinished,
@@ -2958,7 +2958,7 @@ static void SpriteCB_TrainerThrowObject_Main(struct Sprite *sprite)
 }
 
 // Sprite callback for a trainer back pic to throw an object
-// (Wally throwing a ball, throwing Pokéblocks/balls in the Safari Zone)
+// (Duncan throwing a ball, throwing Pokéblocks/balls in the Safari Zone)
 void SpriteCB_TrainerThrowObject(struct Sprite *sprite)
 {
     StartSpriteAnim(sprite, 1);
@@ -4162,7 +4162,7 @@ enum
     STATE_WAIT_ACTION_CONFIRMED,
     STATE_SELECTION_SCRIPT,
     STATE_WAIT_SET_BEFORE_ACTION,
-    STATE_SELECTION_SCRIPT_MAY_RUN
+    STATE_SELECTION_SCRIPT_KELLI_RUN
 };
 
 static void HandleTurnActionSelectionState(void)
@@ -4400,7 +4400,7 @@ static void HandleTurnActionSelectionState(void)
                     && gBattleResources->bufferB[battler][1] == B_ACTION_RUN)
                 {
                     gSelectionBattleScripts[battler] = BattleScript_AskIfWantsToForfeitMatch;
-                    gBattleCommunication[battler] = STATE_SELECTION_SCRIPT_MAY_RUN;
+                    gBattleCommunication[battler] = STATE_SELECTION_SCRIPT_KELLI_RUN;
                     *(gBattleStruct->selectionScriptFinished + battler) = FALSE;
                     *(gBattleStruct->stateIdAfterSelScript + battler) = STATE_BEFORE_ACTION_CHOSEN;
                     return;
@@ -4548,7 +4548,7 @@ static void HandleTurnActionSelectionState(void)
                     gHitMarker |= HITMARKER_RUN;
                     gBattleCommunication[battler]++;
                     break;
-                case B_ACTION_WALLY_THROW:
+                case B_ACTION_DUNCAN_THROW:
                     gBattleCommunication[battler]++;
                     break;
                 case B_ACTION_DEBUG:
@@ -4611,7 +4611,7 @@ static void HandleTurnActionSelectionState(void)
                 gBattleCommunication[battler] = STATE_BEFORE_ACTION_CHOSEN;
             }
             break;
-        case STATE_SELECTION_SCRIPT_MAY_RUN:
+        case STATE_SELECTION_SCRIPT_KELLI_RUN:
             if (*(gBattleStruct->selectionScriptFinished + battler))
             {
                 if (gBattleResources->bufferB[battler][1] == B_ACTION_NOTHING_FAINTED)
@@ -5505,7 +5505,7 @@ static void HandleEndTurn_FinishBattle(void)
                                   | BATTLE_TYPE_FIRST_BATTLE
                                   | BATTLE_TYPE_SAFARI
                                   | BATTLE_TYPE_EREADER_TRAINER
-                                  | BATTLE_TYPE_WALLY_TUTORIAL
+                                  | BATTLE_TYPE_DUNCAN_TUTORIAL
                                   | BATTLE_TYPE_FRONTIER)))
         {
             for (battler = 0; battler < gBattlersCount; battler++)
@@ -5534,7 +5534,7 @@ static void HandleEndTurn_FinishBattle(void)
                                   | BATTLE_TYPE_SAFARI
                                   | BATTLE_TYPE_FRONTIER
                                   | BATTLE_TYPE_EREADER_TRAINER
-                                  | BATTLE_TYPE_WALLY_TUTORIAL))
+                                  | BATTLE_TYPE_DUNCAN_TUTORIAL))
             && gBattleResults.shinyWildMon)
         {
             TryPutBreakingNewsOnAir();
@@ -5604,7 +5604,7 @@ static void FreeResetData_ReturnToOvOrDoEvolutions(void)
                                   | BATTLE_TYPE_SAFARI
                                   | BATTLE_TYPE_FRONTIER
                                   | BATTLE_TYPE_EREADER_TRAINER
-                                  | BATTLE_TYPE_WALLY_TUTORIAL))
+                                  | BATTLE_TYPE_DUNCAN_TUTORIAL))
             && (B_EVOLUTION_AFTER_WHITEOUT >= GEN_6
                 || gBattleOutcome == B_OUTCOME_WON
                 || gBattleOutcome == B_OUTCOME_CAUGHT))

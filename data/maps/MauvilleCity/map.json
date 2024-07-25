@@ -189,7 +189,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MauvilleCity_EventScript_RockSmashTipFatMan",
-      "flag": "FLAG_HIDE_MAUVILLE_ROCK_SMASH_TIP_GUY"
+      "flag": "FLAG_BADGE03_GET"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
@@ -202,7 +202,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MauvilleCity_EventScript_RockSmashTipFatMan",
-      "flag": "FLAG_HIDE_MAUVILLE_ROCK_SMASH_TIP_GUY"
+      "flag": "FLAG_BADGE03_GET"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
@@ -215,7 +215,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MauvilleCity_EventScript_RockSmashTipFatMan",
-      "flag": "FLAG_HIDE_MAUVILLE_ROCK_SMASH_TIP_GUY"
+      "flag": "FLAG_BADGE03_GET"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
@@ -228,7 +228,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MauvilleCity_EventScript_RockSmashTipFatMan",
-      "flag": "FLAG_HIDE_MAUVILLE_ROCK_SMASH_TIP_GUY"
+      "flag": "FLAG_BADGE03_GET"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
@@ -241,7 +241,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MauvilleCity_EventScript_RockSmashTipFatMan",
-      "flag": "FLAG_HIDE_MAUVILLE_ROCK_SMASH_TIP_GUY"
+      "flag": "FLAG_BADGE03_GET"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
@@ -254,7 +254,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MauvilleCity_EventScript_RockSmashTipFatMan",
-      "flag": "FLAG_HIDE_MAUVILLE_ROCK_SMASH_TIP_GUY"
+      "flag": "FLAG_BADGE03_GET"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
@@ -267,7 +267,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MauvilleCity_EventScript_RockSmashTipFatMan",
-      "flag": "FLAG_HIDE_MAUVILLE_ROCK_SMASH_TIP_GUY"
+      "flag": "FLAG_BADGE03_GET"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
@@ -280,7 +280,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MauvilleCity_EventScript_RockSmashTipFatMan",
-      "flag": "FLAG_HIDE_MAUVILLE_ROCK_SMASH_TIP_GUY"
+      "flag": "FLAG_BADGE03_GET"
     }
   ],
   "warp_events": [

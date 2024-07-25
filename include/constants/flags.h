@@ -1311,14 +1311,14 @@
 #define FLAG_UNUSED_0x4EE                                           0x4EE // Unused Flag
 #define FLAG_UNUSED_0x4EF                                           0x4EF // Unused Flag
 
-#define FLAG_DEFEATED_RUSTBORO_GYM                                  0x4F0
-#define FLAG_DEFEATED_DEWFORD_GYM                                   0x4F1
-#define FLAG_DEFEATED_MAUVILLE_GYM                                  0x4F2
-#define FLAG_DEFEATED_LAVARIDGE_GYM                                 0x4F3
-#define FLAG_DEFEATED_PETALBURG_GYM                                 0x4F4
-#define FLAG_DEFEATED_FORTREE_GYM                                   0x4F5
-#define FLAG_DEFEATED_MOSSDEEP_GYM                                  0x4F6
-#define FLAG_DEFEATED_SOOTOPOLIS_GYM                                0x4F7
+#define FLAG_UNUSED_0x4F0                                           0x4F0 // Unused Flag
+#define FLAG_UNUSED_0x4F1                                           0x4F1 // Unused Flag
+#define FLAG_UNUSED_0x4F2                                           0x4F2 // Unused Flag
+#define FLAG_UNUSED_0x4F3                                           0x4F3 // Unused Flag
+#define FLAG_UNUSED_0x4F4                                           0x4F4 // Unused Flag
+#define FLAG_UNUSED_0x4F5                                           0x4F5 // Unused Flag
+#define FLAG_UNUSED_0x4F6                                           0x4F6 // Unused Flag
+#define FLAG_UNUSED_0x4F7                                           0x4F7 // Unused Flag
 #define FLAG_DEFEATED_METEOR_FALLS_STEVEN                           0x4F8
 
 #define FLAG_UNUSED_0x4F9                                           0x4F9 // Unused Flag

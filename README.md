@@ -1772,7 +1772,16 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Evolution: 17->16
 
 - Oshawott:
+    - Atk: 55->65
+    - SpA: 63->65
     - Evolution: 17->16
+
+- Dewott:
+    - Atk: 75->80
+    - SpA: 83->85
+
+- Hisuian Samurott:
+    - Atk: 108->115
 
 - Unfezant:
     - Learns Acrobatics by TM
@@ -1994,6 +2003,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Evolution: 34->36
 
 - Incineroar:
+    - Spe: 60->65
     - Learns Incinerate by level up
 
 - Popplio:
@@ -2074,6 +2084,22 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Dragapult:
     - Learns Shadow Claw by TM
     - Learns Dragon Breath by Egg Move
+
+- Sprigatito:
+    - HP: 40->45
+    - Atk: 61->65
+    - Def: 54->55
+
+- Floragato:
+    - HP: 61->65
+    - Def: 63->65
+    - SpD: 63->65
+    - Spe: 83->85
+
+- Meowscarada:
+    - HP: 76->80
+    - SpA: 81->80
+    - Spe: 123->125
 
 - Pawmot:
     - Learns Drain Punch by TM

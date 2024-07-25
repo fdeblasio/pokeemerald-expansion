@@ -1665,9 +1665,9 @@
 #define SPECIES_DRAMPA_MEGA                             1548
 #define SPECIES_FALINKS_MEGA                            1549
 
-#define SPECIES_LED                                     1550
+#define SPECIES_LEDYBULK                                1550
 
-#define SPECIES_EGG (SPECIES_LED + 1)
+#define SPECIES_EGG (SPECIES_LEDYBULK + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

@@ -154,18 +154,18 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, CHL
     .ball = Tier == ACE ? ITEM_POKE_BALL : ITEM_NONE
 
 #define WALLY_INFO                                         \
-    .trainerName = _("Duncan"),                             \
+    .trainerName = _("Duncan"),                            \
     .trainerClass = TRAINER_CLASS_RIVAL,                   \
     .trainerPic = TRAINER_PIC_WALLY,                       \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE, \
     BOSS_AI_FLAGS
 
-#define RALPH(Level)                                                                                              \
-    .lvl = Level,                                                                                                 \
-    .species = Level < 20 ? SPECIES_WALLY_STARTER : (Level < 30 ? (SPECIES_WALLY_STARTER + 1) : SPECIES_GALLADE), \
-    .ability = 1,                                                                                                 \
-    .gender = TRAINER_MON_MALE,                                                                                   \
-    IVS(24),                                                                                                      \
+#define RALPH(Level)                                                                                               \
+    .lvl = Level,                                                                                                  \
+    .species = Level < 20 ? SPECIES_WALLY_STARTER : (Level < 30 ? (SPECIES_WALLY_STARTER + 1) : SPECIES_LEDYBULK), \
+    .ability = 1,                                                                                                  \
+    .gender = TRAINER_MON_MALE,                                                                                    \
+    IVS(24),                                                                                                       \
     .nickname = COMPOUND_STRING("Ralph")
 
 #define WALLY_BUDEW(Level)                                                                     \

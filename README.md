@@ -1089,7 +1089,7 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Big Mushroom: 5%->50%
         - Balm Mushroom: 0%->5%
 
-- Alolan Meowth: (postgame):
+- Alolan Meowth (postgame):
     - Can also evolve at level 28
 
 - Igglybuff:
@@ -1137,7 +1137,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Atk: 105->125
     - SpA: 125->105
 
-- Cubone/Marowak (not in main game):
+- Cubone/Marowak/Alolan Marowak (not in main game):
     - Held items:
         - Thick Club: 5%->50%
         - Rare Bone: 0%->5%

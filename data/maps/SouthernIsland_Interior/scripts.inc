@@ -51,7 +51,7 @@ SouthernIsland_Interior_EventScript_Latios::
 	waitmovement 0
 	delay 50
 	waitse
-	playmoncry SPECIES_LATIOS, CRY_MODE_NORMAL
+	playmoncry SPECIES_SOUTHERN_ISLAND_1, CRY_MODE_NORMAL
 	delay 30
 	waitmoncry
 	addobject LOCALID_LATIOS
@@ -85,7 +85,7 @@ SouthernIsland_Interior_EventScript_Latias::
 	waitmovement 0
 	delay 50
 	waitse
-	playmoncry SPECIES_LATIAS, CRY_MODE_NORMAL
+	playmoncry SPECIES_SOUTHERN_ISLAND_2, CRY_MODE_NORMAL
 	delay 30
 	waitmoncry
 	addobject LOCALID_LATIAS
@@ -110,22 +110,22 @@ SouthernIsland_Interior_EventScript_Latias::
 	end
 
 SouthernIsland_Interior_EventScript_LatiosDefeated::
-	setvar VAR_0x8004, SPECIES_LATIOS
+	setvar VAR_0x8004, SPECIES_SOUTHERN_ISLAND_1
 	goto Common_EventScript_LegendaryFlewAway
 	end
 
 SouthernIsland_Interior_EventScript_LatiasDefeated::
-	setvar VAR_0x8004, SPECIES_LATIAS
+	setvar VAR_0x8004, SPECIES_SOUTHERN_ISLAND_2
 	goto Common_EventScript_LegendaryFlewAway
 	end
 
 SouthernIsland_Interior_EventScript_RanFromLatios::
-	setvar VAR_0x8004, SPECIES_LATIOS
+	setvar VAR_0x8004, SPECIES_SOUTHERN_ISLAND_1
 	goto Common_EventScript_LegendaryFlewAway
 	end
 
 SouthernIsland_Interior_EventScript_RanFromLatias::
-	setvar VAR_0x8004, SPECIES_LATIAS
+	setvar VAR_0x8004, SPECIES_SOUTHERN_ISLAND_2
 	goto Common_EventScript_LegendaryFlewAway
 	end
 
@@ -135,11 +135,11 @@ SouthernIsland_Interior_EventScript_Sign::
 	end
 
 SouthernIsland_Interior_EventScript_SetLatiosBattleVars::
-	seteventmon SPECIES_LATIOS, 70, ITEM_SOUL_DEW
+	seteventmon SPECIES_SOUTHERN_ISLAND_1, 70, ITEM_SOUL_DEW
 	return
 
 SouthernIsland_Interior_EventScript_SetLatiasBattleVars::
-	seteventmon SPECIES_LATIAS, 70, ITEM_SOUL_DEW
+	seteventmon SPECIES_SOUTHERN_ISLAND_2, 70, ITEM_SOUL_DEW
 	return
 
 SouthernIsland_Interior_Movement_CameraPanUp:

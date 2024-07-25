@@ -6,9 +6,9 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_SPRIGATITO
     [SPECIES_SPRIGATITO] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 61,
-        .baseDefense   = 54,
+        .baseHP        = 45,
+        .baseAttack    = 65,
+        .baseDefense   = 55,
         .baseSpeed     = 65,
         .baseSpAttack  = 45,
         .baseSpDefense = 45,
@@ -69,12 +69,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_FLORAGATO] =
     {
-        .baseHP        = 61,
+        .baseHP        = 65,
         .baseAttack    = 80,
-        .baseDefense   = 63,
-        .baseSpeed     = 83,
+        .baseDefense   = 65,
+        .baseSpeed     = 85,
         .baseSpAttack  = 60,
-        .baseSpDefense = 63,
+        .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_GRASS),
         .catchRate = 45,
         .expYield = 144,
@@ -131,11 +131,11 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_MEOWSCARADA] =
     {
-        .baseHP        = 76,
+        .baseHP        = 80,
         .baseAttack    = 110,
         .baseDefense   = 70,
-        .baseSpeed     = 123,
-        .baseSpAttack  = 81,
+        .baseSpeed     = 125,
+        .baseSpAttack  = 80,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_GRASS, TYPE_DARK),
         .catchRate = 45,

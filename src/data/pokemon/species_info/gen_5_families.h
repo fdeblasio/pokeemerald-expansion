@@ -450,10 +450,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_OSHAWOTT] =
     {
         .baseHP        = 55,
-        .baseAttack    = 55,
+        .baseAttack    = 65,
         .baseDefense   = 45,
         .baseSpeed     = 45,
-        .baseSpAttack  = 63,
+        .baseSpAttack  = 65,
         .baseSpDefense = 45,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 45,
@@ -513,10 +513,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_DEWOTT] =
     {
         .baseHP        = 75,
-        .baseAttack    = 75,
+        .baseAttack    = 80,
         .baseDefense   = 60,
         .baseSpeed     = 60,
-        .baseSpAttack  = 83,
+        .baseSpAttack  = 85,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 45,
@@ -639,7 +639,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_SAMUROTT_HISUI] =
     {
         .baseHP        = 90,
-        .baseAttack    = 108,
+        .baseAttack    = 115,
         .baseDefense   = 80,
         .baseSpeed     = 85,
         .baseSpAttack  = 100,

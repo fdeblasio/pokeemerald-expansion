@@ -159,11 +159,11 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     BOSS_AI_FLAGS
 
 #define RALPH(Level) \
-    .lvl = Level,                                                                                 \
-    .species = Level < 20 ? WALLY_STARTER : (Level < 30 ? (WALLY_STARTER + 1) : SPECIES_GALLADE), \
-    .ability = 1,                                                                                 \
-    .gender = TRAINER_MON_MALE,                                                                   \
-    IVS(24),                                                                                      \
+    .lvl = Level,                                                                                                 \
+    .species = Level < 20 ? SPECIES_WALLY_STARTER : (Level < 30 ? (SPECIES_WALLY_STARTER + 1) : SPECIES_GALLADE), \
+    .ability = 1,                                                                                                 \
+    .gender = TRAINER_MON_MALE,                                                                                   \
+    IVS(24),                                                                                                      \
     .nickname = COMPOUND_STRING("Ralph")
 
 #define WALLY_BUDEW(Level)                                                                     \

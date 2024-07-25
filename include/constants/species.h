@@ -1655,7 +1655,7 @@
 #define WATER_STARTER             SPECIES_MUDKIP
 
 #define NORMAN_LEND               SPECIES_ZIGZAGOON //Try to use this variable for the Trick House question once multichoices are refactored
-#define WALLY_STARTER             SPECIES_RALTS
+#define SPECIES_WALLY_STARTER     SPECIES_RALTS
 
 #define SPECIES_DESERT_RUINS      SPECIES_REGIROCK
 #define SPECIES_ISLAND_CAVE       SPECIES_REGICE

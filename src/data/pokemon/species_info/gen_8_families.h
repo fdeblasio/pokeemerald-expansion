@@ -3219,11 +3219,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .levelUpLearnset = sToxelLevelUpLearnset,
         .teachableLearnset = sToxelTeachableLearnset,
         .eggMoveLearnset = sToxelEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL_NATURE_AMPED, 30, SPECIES_TOXTRICITY_AMPED},
-                                {EVO_LEVEL_NATURE_LOW_KEY, 30, SPECIES_TOXTRICITY_LOW_KEY}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_TOXTRICITY}),
     },
 
-    [SPECIES_TOXTRICITY_AMPED] =
+    [SPECIES_TOXTRICITY] =
     {
         .baseHP        = 75,
         .baseAttack    = 100,

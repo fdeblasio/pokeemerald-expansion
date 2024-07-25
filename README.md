@@ -2171,6 +2171,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Toxel:
     - Atk: 38->40
     - SpA: 54->55
+    - Can only evolve into Amped Form Toxtricity
 
 - Toxtricity:
     - Atk: 98->100

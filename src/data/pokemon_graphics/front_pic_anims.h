@@ -2482,8 +2482,9 @@ static const union AnimCmd sAnim_Ledian_1[] =
     ANIMCMD_FRAME(0, 25),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_LEDYBA
 
+PLACEHOLDER_ANIM_SINGLE_FRAME(Ledybulk);
+#endif //P_FAMILY_LEDYBA
 #if P_FAMILY_SPINARAK
 static const union AnimCmd sAnim_Spinarak_1[] =
 {
@@ -10777,6 +10778,7 @@ SINGLE_ANIMATION(Noctowl);
 #if P_FAMILY_LEDYBA
 SINGLE_ANIMATION(Ledyba);
 SINGLE_ANIMATION(Ledian);
+SINGLE_ANIMATION(Ledybulk);
 #endif //P_FAMILY_LEDYBA
 #if P_FAMILY_SPINARAK
 SINGLE_ANIMATION(Spinarak);

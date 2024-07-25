@@ -704,6 +704,8 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Power: 65->70
         - Accuracy: 90->100
 - Bug:
+    - Bug Bite:
+        - Now a biting move
     - Pin Missile:
         - Accuracy: 95->100
     - Signal Beam:
@@ -1057,6 +1059,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Caterpie (not in main game):
     - Learns Bug Bite at level 7 instead of 9
 
+- Butterfree (not in main game):
+    - Learns Air Cutter and Signal Beam by level up
+
 - Weedle (not in main game):
     - Learns Bug Bite at level 7 instead of 9
 
@@ -1305,15 +1310,21 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Ledyba (postgame):
     - Atk: 20->40
+    - SpA: 40->20
+    - Learns Gust, Struggle Bug, and Bug Bite by level up
 
 - Ledian (postgame):
-    - Atk: 35->55
+    - HP: 65->80
+    - Atk: 35->80
+    - SpA: 55->35
+    - Learns Gust, Struggle Bug, Bug Bite, and Acrobatics by level up
 
 - Spinarak (postgame):
+    - Atk: 60->65
     - Spe: 30->40
 
 - Ariados (postgame):
-    - Spe: 40->50
+    - Spe: 40->60
 
 - Togepi (postgame):
     - Can also evolve at level 16
@@ -1790,6 +1801,22 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Hisuian Samurott:
     - Atk: 108->115
 
+- Patrat/Watchog:
+    - Learn Cut, Headbutt and Body Slam by level up
+
+- Purrloin:
+    - HP: 41->45
+    - Def: 37->40
+    - SpD: 37->40
+    - Learns Thief and Dark Pulse by level up
+
+- Liepard:
+    - HP: 64->65
+    - Atk: 88->90
+    - SpA: 88->90
+    - Spe: 106->110
+    - Learns Thief and Dark Pulse by level up
+
 - Unfezant:
     - Learns Acrobatics by TM
 
@@ -2019,6 +2046,14 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Brionne:
     - Evolution: 34->36
 
+- Yungoos:
+    - HP: 48->50
+    - Learns Cut and Chip Away by level up
+
+- Gumshoos:
+    - HP: 88->90
+    - Learns Cut, Chip Away, Thunder Fang, Fire Fang, and Ice Fang by level up
+
 - Crabominable:
     - Learns Icicle Crash by TM
 
@@ -2055,6 +2090,25 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Drizzile:
     - Evolution: 35->36
+
+- Rookidee:
+    - HP: 38->40
+    - Atk: 47->50
+    - SpA: 33->35
+    - Spe: 57->60
+
+- Corvisquire:
+    - HP: 68->70
+    - Atk: 67->70
+    - SpA: 43->45
+    - Spe: 77->80
+
+- Corviknight:
+    - HP: 98->100
+    - Atk: 87->90
+    - SpA: 53->55
+    - Spe: 67->70
+    - Learns Iron Head by level up
 
 - Applin/Appletun:
     - Learns Dragon Breath by Egg Move (Flapple, Dippin, and Hydrapple already learn it)

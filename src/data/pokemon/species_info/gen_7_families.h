@@ -829,7 +829,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_YUNGOOS
     [SPECIES_YUNGOOS] =
     {
-        .baseHP        = 48,
+        .baseHP        = 50,
         .baseAttack    = 70,
         .baseDefense   = 30,
         .baseSpeed     = 45,
@@ -893,7 +893,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
     [SPECIES_GUMSHOOS] =
     {
-        .baseHP        = 88,
+        .baseHP        = 90,
         .baseAttack    = 110,
         .baseDefense   = 60,
         .baseSpeed     = 45,

@@ -937,7 +937,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseAttack    = 40,
         .baseDefense   = 30,
         .baseSpeed     = 55,
-        .baseSpAttack  = 40,
+        .baseSpAttack  = 20,
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),
         .catchRate = 255,
@@ -1006,11 +1006,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_LEDIAN] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 55,
+        .baseHP        = 60,
+        .baseAttack    = 80,
         .baseDefense   = 50,
         .baseSpeed     = 85,
-        .baseSpAttack  = 55,
+        .baseSpAttack  = 35,
         .baseSpDefense = 110,
         .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),
         .catchRate = 90,
@@ -1081,7 +1081,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_SPINARAK] =
     {
         .baseHP        = 40,
-        .baseAttack    = 60,
+        .baseAttack    = 65,
         .baseDefense   = 40,
         .baseSpeed     = 40,
         .baseSpAttack  = 40,
@@ -1146,7 +1146,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseHP        = 70,
         .baseAttack    = 90,
         .baseDefense   = 70,
-        .baseSpeed     = 50,
+        .baseSpeed     = 60,
         .baseSpAttack  = 60,
         .baseSpDefense = P_UPDATED_STATS >= GEN_7 ? 70 : 60,
         .types = MON_TYPES(TYPE_BUG, TYPE_POISON),

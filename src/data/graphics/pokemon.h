@@ -6817,6 +6817,12 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #if OW_POKEMON_OBJECT_EVENTS
     const u32 gObjectEventPic_LedianF[] = INCBIN_COMP("graphics/pokemon/ledian/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
+
+    const u32 gMonFrontPic_Ledybulk[] = INCBIN_U32("graphics/pokemon/ledybulk/front.4bpp.lz");
+    const u32 gMonPalette_Ledybulk[] = INCBIN_U32("graphics/pokemon/ledybulk/normal.gbapal.lz");
+    const u32 gMonBackPic_Ledybulk[] = INCBIN_U32("graphics/pokemon/ledybulk/back.4bpp.lz");
+    const u32 gMonShinyPalette_Ledybulk[] = INCBIN_U32("graphics/pokemon/ledybulk/shiny.gbapal.lz");
+    const u8 gMonIcon_Ledybulk[] = INCBIN_U8("graphics/pokemon/ledybulk/icon.4bpp");
 #endif //P_FAMILY_LEDYBA
 
 #if P_FAMILY_SPINARAK

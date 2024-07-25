@@ -26,17 +26,17 @@
 #define BRENDAN 1
 #define MAY     2
 
-#define BRENDAN_INFO                                       \
-    .trainerName = _("Brendan"),                           \
+#define BRENDAN_INFO                                          \
+    .trainerName = _("Kyle"),                              \
     .trainerClass = TRAINER_CLASS_RIVAL,                   \
-    .trainerPic = TRAINER_PIC_BRENDAN,                     \
+    .trainerPic = TRAINER_PIC_BRENDAN,                        \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE, \
     BOSS_AI_FLAGS
 
-#define MAY_INFO                                                                \
-    .trainerName = _("May"),                                                    \
+#define MAY_INFO                                                              \
+    .trainerName = _("Kelli"),                                                  \
     .trainerClass = TRAINER_CLASS_RIVAL,                                        \
-    .trainerPic = TRAINER_PIC_MAY,                                              \
+    .trainerPic = TRAINER_PIC_MAY,                                            \
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE, \
     BOSS_AI_FLAGS
 
@@ -44,7 +44,7 @@
     {                                                                                                    \
     .lvl = Location##_STARTER_LEVEL,                                                                     \
     .species = Type##_STARTER + (Location < RIVAL_ROUTE_110 ? 0 : (Location < RIVAL_ROUTE_119 ? 1 : 2)), \
-    .nature = Rival == BRENDAN ? NATURE_SERIOUS : NATURE_QUIRKY,                                         \
+    .nature = Rival == BRENDAN ? NATURE_SERIOUS : NATURE_QUIRKY,                                            \
     PERFECT_IVS,                                                                                         \
     .gender = Rival,                                                                                     \
     .heldItem = Location < RIVAL_LILYCOVE ? ITEM_NONE : (TYPE_##Type == TYPE_GRASS ? ITEM_SCEPTILITE : (TYPE_##Type == TYPE_FIRE ? ITEM_BLAZIKENITE : ITEM_SWAMPERTITE)), \
@@ -53,7 +53,7 @@
 #define RIVAL_WHISMUR(Location, Rival)                                      \
     {                                                                       \
     .lvl = Location##_STARTER_LEVEL - (Location < RIVAL_ROUTE_119 ? 2 : 1), \
-    .species = Location < RIVAL_ROUTE_119 ? SPECIES_WHISMUR : (Location < RIVAL_LILYCOVE ? SPECIES_LOUDRED : SPECIES_EXPLOUD), \
+    .species = Location < RIVAL_ROUTE_119 ? SPECIES_ZUBAT : (Location < RIVAL_LILYCOVE ? SPECIES_GOLBAT : SPECIES_CROBAT), \
     .ability = Rival == BRENDAN,                                            \
     IVS(18),                                                                \
     .gender = Rival,                                                        \
@@ -154,7 +154,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .ball = Tier == ACE ? ITEM_POKE_BALL : ITEM_NONE
 
 #define WALLY_INFO                                         \
-    .trainerName = _("Wally"),                             \
+    .trainerName = _("Duncan"),                             \
     .trainerClass = TRAINER_CLASS_RIVAL,                   \
     .trainerPic = TRAINER_PIC_WALLY,                       \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE, \
@@ -4835,7 +4835,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 
 #define MR_ZIG(Level)                                            \
     RICH_BOY_MON(Level),                                         \
-    .species = Level < 20 ? SPECIES_MEOWTH_ALOLAN : SPECIES_LINOONE, \
+    .species = Level < 20 ? SPECIES_MEOWTH_ALOLA : SPECIES_LINOONE, \
     .ability = ABILITY_QUICK_FEET,                               \
     .gender = TRAINER_MON_MALE,                                  \
     .nickname = COMPOUND_STRING("Mr. Cat")
@@ -11945,9 +11945,9 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     },
 },
 
-[DIFFICULTY_NORMAL][TRAINER_DUNCAN] =
+[DIFFICULTY_NORMAL][TRAINER_WERNER] =
 {
-    .trainerName = _("Duncan"),
+    .trainerName = _("Werner"),
     SAILOR_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,

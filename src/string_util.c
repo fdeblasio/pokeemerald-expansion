@@ -484,7 +484,7 @@ static const u8 *ExpandPlaceholder_RivalName(void)
         return gText_ExpandedPlaceholder_Brendan;
 }
 
-const u8 gText_ExpandedPlaceholder_Wally[] = _("Wally");
+const u8 gText_ExpandedPlaceholder_Wally[] = _("Duncan");
 static const u8 *ExpandPlaceholder_Wally(void)
 {
     return gText_ExpandedPlaceholder_Wally;

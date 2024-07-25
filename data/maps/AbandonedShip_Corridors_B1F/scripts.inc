@@ -48,20 +48,20 @@ AbandonedShip_Corridors_B1F_EventScript_DoorIsUnlocked::
 	releaseall
 	end
 
-AbandonedShip_Corridors_B1F_EventScript_Duncan::
-	trainerbattle_single TRAINER_DUNCAN, AbandonedShip_Corridors_B1F_Text_DuncanIntro, AbandonedShip_Corridors_B1F_Text_DuncanDefeat
-	msgbox AbandonedShip_Corridors_B1F_Text_DuncanPostBattle, MSGBOX_AUTOCLOSE
+AbandonedShip_Corridors_B1F_EventScript_Werner::
+	trainerbattle_single TRAINER_WERNER, AbandonedShip_Corridors_B1F_Text_WernerIntro, AbandonedShip_Corridors_B1F_Text_WernerDefeat
+	msgbox AbandonedShip_Corridors_B1F_Text_WernerPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-AbandonedShip_Corridors_B1F_Text_DuncanIntro:
+AbandonedShip_Corridors_B1F_Text_WernerIntro:
 	.string "When we go out to sea, we Sailors\n"
 	.string "always bring our Pokémon.\l"
 	.string "How about a quick battle?$"
 
-AbandonedShip_Corridors_B1F_Text_DuncanDefeat:
+AbandonedShip_Corridors_B1F_Text_WernerDefeat:
 	.string "Whoops, I'm sunk!$"
 
-AbandonedShip_Corridors_B1F_Text_DuncanPostBattle:
+AbandonedShip_Corridors_B1F_Text_WernerPostBattle:
 	.string "The ship's bottom has sunk into the\n"
 	.string "depths.\p"
 	.string "If a Pokémon knew how to go underwater,\n"

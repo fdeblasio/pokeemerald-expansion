@@ -9042,8 +9042,8 @@ Machoke
 Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_DUNCAN ===
-Name: Duncan
+=== TRAINER_WERNER ===
+Name: Werner
 Class: Sailor
 Pic: Sailor
 Gender: Male
@@ -9452,9 +9452,9 @@ Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_WALLY_VICTORY_ROAD_1 ===
-Name: Wally
+Name: Duncan
 Class: Rival
-Pic: Wally
+Pic: Duncan
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore
@@ -12012,9 +12012,9 @@ Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_WALLY_MAUVILLE ===
-Name: Wally
+Name: Duncan
 Class: Rival
-Pic: Wally
+Pic: Duncan
 Gender: Male
 Music: Male
 Double Battle: No
@@ -12025,9 +12025,9 @@ Level: 16
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_WALLY_VICTORY_ROAD_2 ===
-Name: Wally
+Name: Duncan
 Class: Rival
-Pic: Wally
+Pic: Duncan
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore
@@ -12075,9 +12075,9 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Future Sight
 
 === TRAINER_WALLY_VICTORY_ROAD_3 ===
-Name: Wally
+Name: Duncan
 Class: Rival
-Pic: Wally
+Pic: Duncan
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore
@@ -12125,9 +12125,9 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Future Sight
 
 === TRAINER_WALLY_VICTORY_ROAD_4 ===
-Name: Wally
+Name: Duncan
 Class: Rival
-Pic: Wally
+Pic: Duncan
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore
@@ -12175,9 +12175,9 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Future Sight
 
 === TRAINER_WALLY_VICTORY_ROAD_5 ===
-Name: Wally
+Name: Duncan
 Class: Rival
-Pic: Wally
+Pic: Duncan
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore

@@ -44,10 +44,10 @@
     {                                                                                                    \
     .lvl = Location##_STARTER_LEVEL,                                                                     \
     .species = Type##_STARTER + (Location < RIVAL_ROUTE_110 ? 0 : (Location < RIVAL_ROUTE_119 ? 1 : 2)), \
-    .nature = Rival == BRENDAN ? NATURE_SERIOUS : NATURE_QUIRKY,                                            \
+    .nature = Rival == BRENDAN ? NATURE_SERIOUS : NATURE_QUIRKY,                                         \
     PERFECT_IVS,                                                                                         \
     .gender = Rival,                                                                                     \
-    .heldItem = Location < RIVAL_LILYCOVE ? ITEM_NONE : (TYPE_##Type == TYPE_GRASS ? ITEM_SCEPTILITE : (TYPE_##Type == TYPE_FIRE ? ITEM_BLAZIKENITE : ITEM_SWAMPERTITE)), \
+    .heldItem = ITEM_NONE,                                                                               \
     }
 
 #define RIVAL_WHISMUR(Location, Rival)                                      \
@@ -118,8 +118,8 @@
     .party = (const struct TrainerMon[]) {                                     \
         {                                                                      \
         .lvl = RIVAL_LILYCOVE_STARTER_LEVEL - 2,                               \
-        .species = SPECIES_VIBRAVA,                                            \
-        .ability = ABILITY_LEVITATE,                                           \
+        .species = SPECIES_TOXTRICITY                                          \
+        .ability = ABILITY_PUNK_ROCK,                                          \
         IVS(18),                                                               \
         .gender = Rival,                                                       \
         },                                                                     \
@@ -130,12 +130,12 @@
     },                                                                         \
 }
 
-RIVAL_BATTLES(BRENDAN, GRASS, CORPHISH, CRAWDAUNT, HYPER_CUTTER, SLUGMA, MAGCARGO, FLAME_BODY),
-RIVAL_BATTLES(BRENDAN, FIRE, SHROOMISH, BRELOOM, EFFECT_SPORE, CORPHISH, CRAWDAUNT, HYPER_CUTTER),
-RIVAL_BATTLES(BRENDAN, WATER, SLUGMA, MAGCARGO, FLAME_BODY, SHROOMISH, BRELOOM, EFFECT_SPORE),
-RIVAL_BATTLES(MAY, GRASS, WINGULL, PELIPPER, KEEN_EYE, VULPIX, NINETALES, FLASH_FIRE),
-RIVAL_BATTLES(MAY, FIRE, CACNEA, CACTURNE, SAND_VEIL, WINGULL, PELIPPER, KEEN_EYE),
-RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_VEIL),
+RIVAL_BATTLES(BRENDAN, GRASS, BARBOACH, WHISCASH, OBLIVIOUS, GROWLITHE, ARCANINE, FLASH_FIRE),
+RIVAL_BATTLES(BRENDAN, FIRE, SKIDDO, GOGOAT, SAP_SIPPER, BARBOACH, WHISCASH, OBLIVIOUS),
+RIVAL_BATTLES(BRENDAN, WATER, GROWLITHE, ARCANINE, FLASH_FIRE, SKIDDO, GOGOAT, SAP_SIPPER),
+RIVAL_BATTLES(MAY, GRASS, BUIZEL, FLOATZEL, SWIFT_SWIM, VULPIX, NINETALES, FLASH_FIRE),
+RIVAL_BATTLES(MAY, FIRE, TANGELA, TANGROWTH, CHLOROPHYLL, BUIZEL, FLOATZEL, SWIFT_SWIM),
+RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, CHLOROPHYLL),
 
 #define ENDGAME_REMATCH_2_LEVEL 75
 #define ENDGAME_REMATCH_3_LEVEL 80

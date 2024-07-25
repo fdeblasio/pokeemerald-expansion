@@ -1988,6 +1988,7 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
 - Toxel:
     - Atk: 38->40
     - SpA: 54->55
+    - Can only evolve into Amped Form Toxtricity
 
 - Toxtricity:
     - Atk: 98->100

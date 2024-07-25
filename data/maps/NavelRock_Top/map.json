@@ -15,7 +15,7 @@
   "connections": null,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(NAVEL_ROCK_1)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(NAVEL_ROCK_TOP)",
       "x": 12,
       "y": 4,
       "elevation": 0,

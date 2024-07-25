@@ -1941,7 +1941,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Torterra:
     - Learns Shell Smash upon evolving
 
-- Chimchar:
+- Chimchar (postgame):
     - Evolution: 14->16
 
 - Shinx/Luxio/Luxray:

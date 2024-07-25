@@ -41,10 +41,92 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
 
 # [Documentation](https://rh-hideout.github.io/pokeemerald-expansion/)
 
-For detailed documentation, visit the [pokeemerald-expansion documentation page](https://rh-hideout.github.io/pokeemerald-expansion/).
+## Changes
+- NOTE: This all assumes there are no rebasing errors
+- Wild Pokémon and Trainers have their levels increased to make grinding less of a pain
+    - However, with the Exp Share now affecting all party members, this can lead to becoming overleveled
+- Decapitalization
+- Some areas made easier to navigate
+    - Route 102/103: Path from Littleroot to rival is more direct
+- Some reversions back to Ruby and Sapphire
+    - Birch is chased by a Poochyena
+    - Some trainers on Routes 104 and 117 go back to their original locations
+- Gym Leaders use more Hoenn Pokémon
+- Gym Leaders and Magma/Aqua Admins/Leaders no longer have underleveled evolutions
+- Team Magma are also focused on Ground types than Fire types to avoid overlap with Flannery
+- Pokémon have a more even encounter distribution
+- Trainer rematches (including Gabby and Ty) are now based on number of badges
+- Tate and Liza give out Psychic instead of Calm Mind (Calm Mind can be found in Slateport)
+- Made rapids easier to navigate so that only one trip is needed to get all items/battle all trainers (at the cost of looking slightly worse)
+- Added area to grind right outside Elite Four
+- TM moves not in the game are learnable as egg moves
+    - However, this is only applicable for when the base form learns the move
+- Pokémon that evolve with an item at day or night now can evolve at any time
+- EVs now give one stat increase for every EV but cap out at 63 (individual)/127 (total). This will lead to the same stats as the old system but easier to train
+- Bird Keepers now use the overworld sprite of male Psychics since it looks more like them than the blond sprite
+- Houndour was added to the Hoenn Pokédex to give Team Magma more variety
+- Pokémon can now be listed as orange in the Pokédex
+- The Safari Zone is now in the postgame only. Its regular Pokémon have been moved to other locations
+- Underwater areas now connect better
+- Steven now gives out a Jirachi
+- Frontier Brains have updated teams
+- Battle Pyramid wild Pokémon have been updated
+- Battle Frontier no longer requires saving
+- Certain sections are blocked off until gyms or rivals are defeated
+- Wally is given more battles. The battle in Verdanturf starts with Grassy Terrain
+- Battles in long grass on Routes 119 and 120 start with Grassy Terrain (unless it's a thunderstorm)
+- All Pokémon in the Dragon egg group that could not already learn Dragon Breath now get it as an egg move. This is reflected in the species changes below
+- Moves are no longer replaced if a Pokémon levels up in the daycare
+- The old man in the Battle Frontier (in the building above the Pokémon Center) who used to tell you your Pokémon's IVs now Hyper Trains stats for free
 
-# [Contributions](CONTRIBUTING.md)
-If you are looking to [report a bug](CONTRIBUTING.md#Bug-Report), [open a pull request](CONTRIBUTING.md#Pull-Requests), or [request a feature](CONTRIBUTING.md#Feature-Request), our [`CONTRIBUTING.md`](CONTRIBUTING.md) has guides for each.
+### Quality of Life
+- Shiny Pokémon can no longer spawn until you get Poké Balls
+- You can now always run from wild Pokémon if they are asleep, frozen, or in a semi-invulnerable state (using Fly, Dig, Dive, Bounce, etc.). This works even if they have Shadow Tag/Arena Trap
+- You can nickname and relearn moves from the party menu
+- Press A on the summary screen to see a Pokémon's EVs/IVs
+- Can swap party members with Select
+- Items in shops are based on the amount of badges you have
+- Bag sorting with Start button
+- More bag space
+- The naming screen automatically swaps to lowercase after the first letter
+- Rainy routes will automatically water berries
+- Premier Balls are now given for every multiple of 10 of any ball you buy (as opposed to only 1 for 10+ Poke Balls)
+- Faster text speed
+- Faster walking/surfing speed
+- Two Pokémon having the same original trainer no longer negatively affects breeding chances
+- HMs can now be forgotten
+    - Fly can now be used from the Start Menu after getting Mauville's badge
+    - Cut and Strength no longer need a badge to be used
+    - Cut trees and Strength boulders have been removed from everywhere but the Trick House
+    - Rock Smash rocks have been removed from everywhere but Rusturf Tunnel. Brick Break can now also break them
+    - The Escape Rope can by used in the Trick Room puzzles that involve Cut/Strength
+    - Flash is no longer needed anywhere
+    - Surf, Dive and Waterfall have been replaced by a key item
+- Fly can now be used to go to more places:
+    - The Abandoned Ship on Route 108
+    - The Old Lady's Rest Stop on Route 111
+    - Fiery Path on Route 112
+    - Meteor Falls on Route 114
+    - The Weather Institute on Route 119
+    - The Safari Zone on Route 121
+    - Mt. Pyre on Route 122
+    - Sky Pillar on Route 131
+    - Southern Island
+- Can now use Soot Sack to see how much ash you have
+- Much easier to make good Pokéblocks
+- Pokémon in the Safari Zone can't flee
+- Connected the north and northwest sections of the Safari Zone
+- Both Shoal Cave items are now available in low tide, which is available more often
+- Mirage Island now always appears
+    - Wynaut from Mirage Island will have their Hidden Ability
+- Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room
+    - The door to Sealed Chamber and the Regis' inner rooms are now automatically open
+- Tickets for islands where Latios, Latias, Solgaleo, Zeraora, Therian Landorus, and Mew reside are given after beating the Elite Four
+    - Latios and Latias no longer roam and instead both show up on Southern Island
+    - The Birth Island puzzle is much simpler
+    - Navel Rock is slightly easier to navigate
+- SS Tidal trainers can be rebattled every trip
+- Pokémon in the Battle Frontier/Trainer Hill now register in the Pokédex
 
 # [Community](https://discord.gg/6CzjAG6GZk)
 

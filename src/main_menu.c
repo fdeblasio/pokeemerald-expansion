@@ -483,16 +483,18 @@ static const u8 *const sMalePresetNames[] = {
     COMPOUND_STRING("Kyle"),
     COMPOUND_STRING("Frank"),
     COMPOUND_STRING("Jimmy"),
-    COMPOUND_STRING("Ross"),
-    COMPOUND_STRING("Mike"),
-    COMPOUND_STRING("Pat"),
+    COMPOUND_STRING("Sam"),
+    COMPOUND_STRING("Will"),
 };
 
 static const u8 *const sFemalePresetNames[] = {
     COMPOUND_STRING("Kelli"),
     COMPOUND_STRING("Alyssa"),
     COMPOUND_STRING("Lori"),
-    COMPOUND_STRING("Brielle"),
+    COMPOUND_STRING("Mac"),
+    COMPOUND_STRING("Hudson"),
+    COMPOUND_STRING("Shayla"),
+    COMPOUND_STRING("Taylor"),
 };
 
 // The number of male vs. female names is assumed to be the same.

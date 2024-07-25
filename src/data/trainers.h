@@ -7165,11 +7165,11 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 24,
-        .species = SPECIES_SHROOMISH,
+        .species = SPECIES_ROSELIA,
         },
         {
         .lvl = 24,
-        .species = SPECIES_ROSELIA,
+        .species = SPECIES_SPRIGATITO,
         }
     },
 },

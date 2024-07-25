@@ -248,6 +248,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Battles in long grass on Routes 119 and 120 start with Grassy Terrain (unless it's a thunderstorm)
 - All Pokémon in the Dragon egg group that could not already learn Dragon Breath (with the exception of Magikarp and Trapinch) now get it as an egg move. This is reflected in the species changes below
 - Moves are no longer replaced if a Pokémon levels up in the daycare
+- The old man in the Battle Frontier (in the building above the Pokémon Center) who used to tell you your Pokémon's IVs now Hyper Trains stats for free
 
 ### Quality of Life
 - Shiny Pokémon can no longer spawn until you get Poké Balls
@@ -300,7 +301,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 ### Items:
 - Eviolite now prevents Pokémon from evolving
 - Some items, such as vitamins and hold items, are cheaper
-- Ability Capsules, Ability Patches, Mints, and EV-reducing berries are available to buy in Lilycove (Bottle Caps not yet implemented)
+- Ability Capsules, Ability Patches, Mints, and EV-reducing berries are available to buy in Lilycove
 - The Good Rod is now obtained on the left side of Route 118 instead of the right
 - Sacred Ash now works in battles although it only revives one Pokémon
 - Soul Dew uses its Gen 6 effect

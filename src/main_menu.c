@@ -479,49 +479,20 @@ static const struct MenuAction sMenuActions_Gender[] = {
 };
 
 static const u8 *const sMalePresetNames[] = {
-    COMPOUND_STRING("Frank"),
-    COMPOUND_STRING("Felix"),
     COMPOUND_STRING("Jake"),
-    COMPOUND_STRING("Junya"),
-    COMPOUND_STRING("Rafi"),
-    COMPOUND_STRING("Jude"),
-    COMPOUND_STRING("Jaxson"),
-    COMPOUND_STRING("Easton"),
-    COMPOUND_STRING("Walker"),
-    COMPOUND_STRING("Teru"),
-    COMPOUND_STRING("Johnny"),
-    COMPOUND_STRING("Brett"),
-    COMPOUND_STRING("Seth"),
-    COMPOUND_STRING("Terry"),
-    COMPOUND_STRING("Casey"),
-    COMPOUND_STRING("Darren"),
-    COMPOUND_STRING("Landon"),
-    COMPOUND_STRING("Collin"),
-    COMPOUND_STRING("Stanley"),
-    COMPOUND_STRING("Quincy")
+    COMPOUND_STRING("Kyle"),
+    COMPOUND_STRING("Frank"),
+    COMPOUND_STRING("Jimmy"),
+    COMPOUND_STRING("Ross"),
+    COMPOUND_STRING("Mike"),
+    COMPOUND_STRING("Pat"),
 };
 
 static const u8 *const sFemalePresetNames[] = {
-    COMPOUND_STRING("Emily"),
-    COMPOUND_STRING("Kim"),
-    COMPOUND_STRING("Sara"),
-    COMPOUND_STRING("Bella"),
-    COMPOUND_STRING("Jayla"),
-    COMPOUND_STRING("Allie"),
-    COMPOUND_STRING("Lianna"),
-    COMPOUND_STRING("Monica"),
-    COMPOUND_STRING("Camila"),
-    COMPOUND_STRING("Aubree"),
-    COMPOUND_STRING("Ruthie"),
-    COMPOUND_STRING("Hazel"),
-    COMPOUND_STRING("Nadine"),
-    COMPOUND_STRING("Tanja"),
-    COMPOUND_STRING("Yasmin"),
-    COMPOUND_STRING("Nicola"),
-    COMPOUND_STRING("Lillie"),
-    COMPOUND_STRING("Terra"),
-    COMPOUND_STRING("Lucy"),
-    COMPOUND_STRING("Halie")
+    COMPOUND_STRING("Kelli"),
+    COMPOUND_STRING("Alyssa"),
+    COMPOUND_STRING("Lori"),
+    COMPOUND_STRING("Brielle"),
 };
 
 // The number of male vs. female names is assumed to be the same.

@@ -4716,459 +4716,6 @@
           }
         },
         {
-          "map": "MAP_SAFARI_ZONE_SOUTH",
-          "base_label": "gSafariZone_South",
-          "land_mons": {
-            "encounter_rate": 25,
-            "mons": [
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "ELEKID"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "MAREEP"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "AIPOM"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "TOGEPI"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "AIPOM"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "TOGEPI"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "RAICHU_ALOLAN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "RAICHU_ALOLAN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "RAICHU_ALOLAN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "RAICHU_ALOLAN"
-              }
-            ]
-          }
-        },
-        {
-          "map": "MAP_SAFARI_ZONE_SOUTHWEST",
-          "base_label": "gSafariZone_Southwest",
-          "land_mons": {
-            "encounter_rate": 25,
-            "mons": [
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "TEDDIURSA"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "SHUCKLE"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "LEDYBA"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "SPINARAK"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "LEDYBA"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "SPINARAK"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "PINECO"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "PINECO"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "PINECO"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "PINECO"
-              }
-            ]
-          },
-          "water_mons": {
-            "encounter_rate": 25,
-            "mons": [
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "WOOPER"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "CORSOLA_GALARIAN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "CORSOLA_GALARIAN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "QUAGSIRE"
-              }
-            ]
-          },
-          "fishing_mons": {
-            "mons": [
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "MAGIKARP"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "REMORAID"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "SKRELP"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "OCTILLERY"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "DRAGALGE"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "OCTILLERY"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "DRAGALGE"
-              }
-            ]
-          }
-        },
-        {
-          "map": "MAP_SAFARI_ZONE_NORTH",
-          "base_label": "gSafariZone_North",
-          "land_mons": {
-            "encounter_rate": 25,
-            "mons": [
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "MAGBY"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "SANDILE"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "GLIGAR"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "BONSLY"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "GLIGAR"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "BONSLY"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "SNUBBULL"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "SNUBBULL"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "SNUBBULL"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "SNUBBULL"
-              }
-            ]
-          }
-        },
-        {
-          "map": "MAP_SAFARI_ZONE_NORTHWEST",
-          "base_label": "gSafariZone_Northwest",
-          "land_mons": {
-            "encounter_rate": 25,
-            "mons": [
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "TANGELA"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "SUNKERN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "VOLTORB_HISUIAN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "HOOTHOOT"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "VOLTORB_HISUIAN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "HOOTHOOT"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "MILTANK"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "MILTANK"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "MILTANK"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "MILTANK"
-              }
-            ]
-          },
-          "water_mons": {
-            "encounter_rate": 25,
-            "mons": [
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "WOOPER"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "CORSOLA_GALARIAN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "CORSOLA_GALARIAN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "QUAGSIRE"
-              }
-            ]
-          },
-          "fishing_mons": {
-            "mons": [
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "MAGIKARP"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "REMORAID"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "SKRELP"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "OCTILLERY"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "DRAGALGE"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "OCTILLERY"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "DRAGALGE"
-              }
-            ]
-          }
-        },
-        {
-          "map": "MAP_SAFARI_ZONE_SOUTHEAST",
-          "base_label": "gSafariZone_Southeast",
-          "land_mons": {
-            "encounter_rate": 25,
-            "mons": [
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "MEOWTH"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "WOOPER_PALDEAN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "MEOWTH_ALOLAN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "MEOWTH_GALARIAN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "MEOWTH_ALOLAN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "MEOWTH_GALARIAN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "GRIMER_ALOLAN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "GRIMER_ALOLAN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "GRIMER_ALOLAN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "GRIMER_ALOLAN"
-              }
-            ]
-          },
-          "water_mons": {
-            "encounter_rate": 9,
-            "mons": [
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "WOOPER"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "CORSOLA_GALARIAN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "CORSOLA_GALARIAN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "QUAGSIRE"
-              }
-            ]
-          },
-          "fishing_mons": {
-            "mons": [
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "MAGIKARP"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "REMORAID"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "SKRELP"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "OCTILLERY"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "DRAGALGE"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "OCTILLERY"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "DRAGALGE"
-              }
-            ]
-          }
-        },
-        {
-          "map": "MAP_SAFARI_ZONE_NORTHEAST",
-          "base_label": "gSafariZone_Northeast",
-          "land_mons": {
-            "encounter_rate": 25,
-            "mons": [
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "VULPIX_ALOLAN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "SANDSHREW_ALOLAN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "ZIGZAGOON_GALARIAN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "STANTLER"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "ZIGZAGOON_GALARIAN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "STANTLER"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "WEEZING_GALARIAN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "WEEZING_GALARIAN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "WEEZING_GALARIAN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "WEEZING_GALARIAN"
-              }
-            ]
-          }
-        },
-        {
           "map": "MAP_MAGMA_HIDEOUT_1F",
           "base_label": "gMagmaHideout_1F",
           "land_mons": {
@@ -6957,6 +6504,459 @@
               {
                 "range": "RANGE_VICTORY_ROAD",
                 "species": "WHISCASH"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_SAFARI_ZONE_SOUTH",
+          "base_label": "gSafariZone_South",
+          "land_mons": {
+            "encounter_rate": 25,
+            "mons": [
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "ELEKID"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "MAREEP"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "AIPOM"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "TOGEPI"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "AIPOM"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "TOGEPI"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "RAICHU_ALOLAN"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "RAICHU_ALOLAN"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "RAICHU_ALOLAN"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "RAICHU_ALOLAN"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_SAFARI_ZONE_SOUTHWEST",
+          "base_label": "gSafariZone_Southwest",
+          "land_mons": {
+            "encounter_rate": 25,
+            "mons": [
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "TEDDIURSA"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "SHUCKLE"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "LEDYBA"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "SPINARAK"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "LEDYBA"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "SPINARAK"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "PINECO"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "PINECO"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "PINECO"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "PINECO"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 25,
+            "mons": [
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "WOOPER"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "CORSOLA_GALARIAN"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "CORSOLA_GALARIAN"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "QUAGSIRE"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "mons": [
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "MAGIKARP"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "REMORAID"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "SKRELP"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "OCTILLERY"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "DRAGALGE"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "OCTILLERY"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "DRAGALGE"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_SAFARI_ZONE_NORTH",
+          "base_label": "gSafariZone_North",
+          "land_mons": {
+            "encounter_rate": 25,
+            "mons": [
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "MAGBY"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "SANDILE"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "GLIGAR"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "BONSLY"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "GLIGAR"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "BONSLY"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "SNUBBULL"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "SNUBBULL"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "SNUBBULL"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "SNUBBULL"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_SAFARI_ZONE_NORTHWEST",
+          "base_label": "gSafariZone_Northwest",
+          "land_mons": {
+            "encounter_rate": 25,
+            "mons": [
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "TANGELA"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "SUNKERN"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "VOLTORB_HISUIAN"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "HOOTHOOT"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "VOLTORB_HISUIAN"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "HOOTHOOT"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "MILTANK"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "MILTANK"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "MILTANK"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "MILTANK"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 25,
+            "mons": [
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "WOOPER"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "CORSOLA_GALARIAN"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "CORSOLA_GALARIAN"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "QUAGSIRE"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "mons": [
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "MAGIKARP"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "REMORAID"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "SKRELP"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "OCTILLERY"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "DRAGALGE"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "OCTILLERY"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "DRAGALGE"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_SAFARI_ZONE_SOUTHEAST",
+          "base_label": "gSafariZone_Southeast",
+          "land_mons": {
+            "encounter_rate": 25,
+            "mons": [
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "MEOWTH"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "WOOPER_PALDEAN"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "MEOWTH_ALOLAN"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "MEOWTH_GALARIAN"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "MEOWTH_ALOLAN"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "MEOWTH_GALARIAN"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "GRIMER_ALOLAN"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "GRIMER_ALOLAN"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "GRIMER_ALOLAN"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "GRIMER_ALOLAN"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 9,
+            "mons": [
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "WOOPER"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "CORSOLA_GALARIAN"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "CORSOLA_GALARIAN"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "QUAGSIRE"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "mons": [
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "MAGIKARP"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "REMORAID"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "SKRELP"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "OCTILLERY"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "DRAGALGE"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "OCTILLERY"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "DRAGALGE"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_SAFARI_ZONE_NORTHEAST",
+          "base_label": "gSafariZone_Northeast",
+          "land_mons": {
+            "encounter_rate": 25,
+            "mons": [
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "VULPIX_ALOLAN"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "SANDSHREW_ALOLAN"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "ZIGZAGOON_GALARIAN"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "STANTLER"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "ZIGZAGOON_GALARIAN"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "STANTLER"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "WEEZING_GALARIAN"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "WEEZING_GALARIAN"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "WEEZING_GALARIAN"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "WEEZING_GALARIAN"
               }
             ]
           }

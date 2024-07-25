@@ -1082,7 +1082,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Raichu:
     - Learns Volt Tackle at level 1
 
-- Alolan Raichu (not in main game):
+- Alolan Raichu (postgame):
     - Learns Volt Tackle at level 1
 
 - Cleffa (not in main game):
@@ -1094,7 +1094,7 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Big Mushroom: 5%->50%
         - Balm Mushroom: 0%->5%
 
-- Alolan Meowth: (not in main game):
+- Alolan Meowth: (postgame):
     - Can also evolve at level 28
 
 - Igglybuff:
@@ -1177,7 +1177,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Atk: 90->85
     - SpA: 85->90
 
-- Galarian Weezing (not in main game):
+- Galarian Weezing (postgame):
     - Atk: 90->85
     - SpA: 85->90
     - Learns Misty Explosion by level up
@@ -1313,7 +1313,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Ariados (postgame):
     - Spe: 40->50
 
-- Togepi (not in main game):
+- Togepi (postgame):
     - Can also evolve at level 16
 
 - Natu/Xatu:
@@ -1465,7 +1465,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Speed: 70->80
     - Hidden Ability: Moxie->Strong Jaw
 
-- Galarian Zigzagoon/Galarian Linoone (not in main game):
+- Galarian Zigzagoon/Galarian Linoone (postgame):
     - Abilities: Pickup/Gluttony/Quick Feet->Reckless/Guts/Defiant
 
 - Wurmple:
@@ -1621,7 +1621,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - SpD: 105->115
 
 - Zangoose:
-    - Learns Cut by HM
+    - Learns Cut by TM
     - Abilities: Immunity/Toxic Boost->Poison Heal/Sharpness/Guts
     - Also in Human-Like Egg Group
     - HP: 73->75
@@ -1655,7 +1655,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Surf, Flamethrower, and Ice Beam by level up
     - Learns Thunder and Solar Beam by level up
     - Learns Overheat by TM
-    - Learns Surf by HM
+    - Learns Surf by TM
 
 - Duskull/Dusclops:
     - Learn Spite by Egg Move
@@ -1960,11 +1960,11 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Swirlix/Slurpuff:
     - Learn Lick by level up
 
-- Skrelp:
+- Skrelp (postgame):
     - Evolution: 48->37
     - Learns Dragon Breath by Egg Move
 
-- Dragalge:
+- Dragalge (postgame):
     - Learns Dragon Breath by Egg Move
 
 - Helioptile/Heliolisk:

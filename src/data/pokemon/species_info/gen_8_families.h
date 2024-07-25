@@ -859,11 +859,11 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_ROOKIDEE
     [SPECIES_ROOKIDEE] =
     {
-        .baseHP        = 38,
-        .baseAttack    = 47,
+        .baseHP        = 40,
+        .baseAttack    = 50,
         .baseDefense   = 35,
-        .baseSpeed     = 57,
-        .baseSpAttack  = 33,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 35,
         .baseSpDefense = 35,
         .types = MON_TYPES(TYPE_FLYING),
         .catchRate = 255,
@@ -921,11 +921,11 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 
     [SPECIES_CORVISQUIRE] =
     {
-        .baseHP        = 68,
-        .baseAttack    = 67,
+        .baseHP        = 70,
+        .baseAttack    = 70,
         .baseDefense   = 55,
-        .baseSpeed     = 77,
-        .baseSpAttack  = 43,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 45,
         .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_FLYING),
         .catchRate = 120,
@@ -983,11 +983,11 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 
     [SPECIES_CORVIKNIGHT] =
     {
-        .baseHP        = 98,
-        .baseAttack    = 87,
+        .baseHP        = 100,
+        .baseAttack    = 90,
         .baseDefense   = 105,
-        .baseSpeed     = 67,
-        .baseSpAttack  = 53,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 55,
         .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_FLYING, TYPE_STEEL),
         .catchRate = 45,

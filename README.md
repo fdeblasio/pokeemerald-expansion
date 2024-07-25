@@ -1178,6 +1178,7 @@ If you are looking to [report a bug](CONTRIBUTING.md#Bug-Report), [open a pull r
     - Hidden Ability: Rattled->Strong Jaw
 
 - Mightyena:
+    - Despite their canine-esque features, hyenas are actually from the same suborder as cats
     - Atk: 90->100
     - Speed: 70->80
     - Hidden Ability: Moxie->Strong Jaw
@@ -1311,6 +1312,7 @@ If you are looking to [report a bug](CONTRIBUTING.md#Bug-Report), [open a pull r
     - SpD: 105->115
 
 - Zangoose:
+    - Cat Ferret Pokémon and mongooses are from the same order as cats
     - Learns Cut by TM
     - Abilities: Immunity/Toxic Boost->Poison Heal/Sharpness/Guts
     - Also in Human-Like Egg Group
@@ -1495,6 +1497,7 @@ If you are looking to [report a bug](CONTRIBUTING.md#Bug-Report), [open a pull r
     - Learns Parabolic Charge, Thunderbolt, and Shadow Ball by level up
 
 - Oshawott:
+    - The two cat starters have Dark-type final evolutions, and the only two water starters with Dark-type final evolutions were Oshawott and Froakie, and otters are much more catlike than frogs
     - Atk: 55->65
     - SpA: 63->65
     - Evolution: 17->16

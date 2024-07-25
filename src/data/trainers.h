@@ -3334,30 +3334,32 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 
 #define MR_ZIG(Level)                                            \
     RICH_BOY_MON(Level),                                         \
-    .species = Level < 20 ? SPECIES_ZIGZAGOON : SPECIES_LINOONE, \
+    .species = Level < 20 ? SPECIES_MEOWTH_ALOLAN : SPECIES_LINOONE, \
     .ability = ABILITY_QUICK_FEET,                               \
     .gender = TRAINER_MON_MALE,                                  \
-    .nickname = COMPOUND_STRING("Mr. Zig")
+    .nickname = COMPOUND_STRING("Mr. Cat")
 
 #define MR_PIG(Level)                                                        \
     RICH_BOY_MON(Level),                                                     \
-    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_SPOINK : SPECIES_GRUMPIG, \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_PATRAT : SPECIES_GRUMPIG, \
     .ability = ABILITY_THICK_FAT,                                            \
     .gender = TRAINER_MON_MALE,                                              \
-    .nickname = COMPOUND_STRING("Mr. Pig")
+    .nickname = COMPOUND_STRING("Mr. Pat")
 
 #define MR_DIG(Level)             \
     RICH_BOY_MON(Level),          \
-    .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_TRAPINCH : (Level < REMATCH_5_LEVEL_6 ? SPECIES_VIBRAVA : SPECIES_FLYGON), \
+    .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_ZUBAT : (Level < REMATCH_5_LEVEL_6 ? SPECIES_VIBRAVA : SPECIES_FLYGON), \
     .gender = TRAINER_MON_MALE,   \
-    .nickname = COMPOUND_STRING("Mr. Dig")
+    .nickname = COMPOUND_STRING("Mr. Bat")
 
 #define MR_GIG(Level)                                                             \
     RICH_BOY_MON(Level),                                                          \
-    .species = Level < REMATCH_5_LEVEL_6 ? SPECIES_GIRAFARIG : SPECIES_FARIGIRAF, \
+    .species = Level < REMATCH_5_LEVEL_6 ? SPECIES_MUNCHLAX : SPECIES_FARIGIRAF, \
     .ability = ABILITY_SAP_SIPPER,                                                \
     .gender = TRAINER_MON_MALE,                                                   \
-    .nickname = COMPOUND_STRING("Mr. Gig")
+    .nickname = COMPOUND_STRING("Mr. Fat")
+
+//Mr. Xat
 
 [TRAINER_WINSTON_1] =
 {

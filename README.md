@@ -1057,6 +1057,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Any with a STAB attack at level 5 or below had it swapped with the next attack to prevent the rival battle from being too hard
 
 - Caterpie:
+    - CATerpie/CATerpillar
     - Learns Bug Bite at level 7 instead of 9
 
 - Butterfree:
@@ -1282,6 +1283,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Body Slam at level 45
 
 - Espeon:
+    - Based on Japanese mythical cats
     - Learns Hypnosis (replacing Swift), Psychic Terrain (replacing Power Swap), and Extrasensory (replacing Psychic) by level up
     - Learns Body Slam, Swift, Power Swap, and Power Gem at level 1
     - Learns Psychic at level 45
@@ -1386,6 +1388,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Catch rate: 45->90
 
 - Sneasel/Weavile:
+    - Included in the [cat photo](https://archives.bulbagarden.net/media/upload/5/51/Cats_by_Kino_Takahashi.png)
     - Learn Powder Snow, Bite, Ice Fang, Ice Punch, and Razor Wind by level up
 
 - Swinub/Piloswine:
@@ -1439,6 +1442,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - SpA: 105->85
 
 - Poochyena:
+    - Despite their canine-esque features, hyenas are actually from the same suborder as cats
     - Speed: 35->40
     - Hidden Ability: Rattled->Strong Jaw
 
@@ -1577,7 +1581,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - SpD: 105->115
 
 - Zangoose:
-    - Cat Ferret Pokémon and mongooses are from the same order as cats
+    - Cat Ferret Pokémon and mongooses are from the same suborder as cats
     - Learns Cut by TM
     - Abilities: Immunity/Toxic Boost->Poison Heal/Sharpness/Guts
     - Also in Human-Like Egg Group
@@ -1775,6 +1779,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Atk: 108->115
 
 - Patrat/Watchog:
+    - Possibly based on the meerKAT which is in the same suborder as cats
     - Learn Cut, Headbutt and Body Slam by level up
 
 - Purrloin:
@@ -2098,10 +2103,12 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Incinerate and Blaze Kick by level up
 
 - Yungoos:
+    - Mongooses are in the same suborder as cats
     - HP: 48->50
     - Learns Cut and Chip Away by level up
 
 - Gumshoos:
+    - Mongooses are in the same suborder as cats
     - HP: 88->90
     - Learns Cut, Chip Away, Thunder Fang, Fire Fang, and Ice Fang by level up
 

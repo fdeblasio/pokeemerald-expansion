@@ -3332,34 +3332,39 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     RICH_BOY_INFO,               \
     MINI_BOSS_AI_FLAGS
 
-#define MR_ZIG(Level)                                            \
+#define MR_CAT(Level)                                            \
     RICH_BOY_MON(Level),                                         \
     .species = Level < 20 ? SPECIES_MEOWTH_ALOLAN : SPECIES_LINOONE, \
     .ability = ABILITY_QUICK_FEET,                               \
     .gender = TRAINER_MON_MALE,                                  \
     .nickname = COMPOUND_STRING("Mr. Cat")
 
-#define MR_PIG(Level)                                                        \
+#define MR_PAT(Level)                                                        \
     RICH_BOY_MON(Level),                                                     \
     .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_PATRAT : SPECIES_GRUMPIG, \
     .ability = ABILITY_THICK_FAT,                                            \
     .gender = TRAINER_MON_MALE,                                              \
     .nickname = COMPOUND_STRING("Mr. Pat")
 
-#define MR_DIG(Level)             \
+#define MR_BAT(Level)             \
     RICH_BOY_MON(Level),          \
     .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_ZUBAT : (Level < REMATCH_5_LEVEL_6 ? SPECIES_VIBRAVA : SPECIES_FLYGON), \
     .gender = TRAINER_MON_MALE,   \
     .nickname = COMPOUND_STRING("Mr. Bat")
 
-#define MR_GIG(Level)                                                             \
+#define MR_FAT(Level)                                                             \
     RICH_BOY_MON(Level),                                                          \
     .species = Level < REMATCH_5_LEVEL_6 ? SPECIES_MUNCHLAX : SPECIES_FARIGIRAF, \
     .ability = ABILITY_SAP_SIPPER,                                                \
     .gender = TRAINER_MON_MALE,                                                   \
     .nickname = COMPOUND_STRING("Mr. Fat")
 
-//Mr. Xat
+#define MR_XAT(Level)              \
+    RICH_BOY_MON(Level),           \
+    .species = SPECIES_XATU,       \
+    .ability = ABILITY_EARLY_BIRD, \
+    .gender = TRAINER_MON_MALE,    \
+    .nickname = COMPOUND_STRING("Mr. Xat")
 
 [TRAINER_WINSTON_1] =
 {
@@ -3367,7 +3372,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        MR_ZIG(8),
+        MR_CAT(8),
         }
     },
 },
@@ -3378,10 +3383,10 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        MR_PIG(REMATCH_2_LEVEL_2),
+        MR_PAT(REMATCH_2_LEVEL_2),
         },
         {
-        MR_ZIG(REMATCH_2_LEVEL_1),
+        MR_CAT(REMATCH_2_LEVEL_1),
         }
     },
 },
@@ -3392,13 +3397,13 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        MR_DIG(REMATCH_3_LEVEL_2),
+        MR_BAT(REMATCH_3_LEVEL_2),
         },
         {
-        MR_PIG(REMATCH_3_LEVEL_2),
+        MR_PAT(REMATCH_3_LEVEL_2),
         },
         {
-        MR_ZIG(REMATCH_3_LEVEL_1),
+        MR_CAT(REMATCH_3_LEVEL_1),
         }
     },
 },
@@ -3409,16 +3414,16 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        MR_GIG(REMATCH_4_LEVEL_2),
+        MR_FAT(REMATCH_4_LEVEL_2),
         },
         {
-        MR_DIG(REMATCH_4_LEVEL_2),
+        MR_BAT(REMATCH_4_LEVEL_2),
         },
         {
-        MR_PIG(REMATCH_4_LEVEL_2),
+        MR_PAT(REMATCH_4_LEVEL_2),
         },
         {
-        MR_ZIG(REMATCH_4_LEVEL_1),
+        MR_CAT(REMATCH_4_LEVEL_1),
         }
     },
 },
@@ -3429,22 +3434,26 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        MR_GIG(REMATCH_5_LEVEL_2),
+        MR_XAT(REMATCH_5_LEVEL_2),
+        IVS(24),
+        },
+        {
+        MR_FAT(REMATCH_5_LEVEL_2),
         IVS(24),
         .moves = {MOVE_TWIN_BEAM, MOVE_ENERGY_BALL, MOVE_SHADOW_BALL, MOVE_NASTY_PLOT},
         },
         {
-        MR_DIG(REMATCH_5_LEVEL_2),
+        MR_BAT(REMATCH_5_LEVEL_2),
         IVS(24),
         .moves = {MOVE_DIG, MOVE_DRAGON_CLAW, MOVE_CRUNCH, MOVE_DRAGON_DANCE},
         },
         {
-        MR_PIG(REMATCH_5_LEVEL_2),
+        MR_PAT(REMATCH_5_LEVEL_2),
         IVS(24),
         .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_DAZZLING_GLEAM, MOVE_FLASH_CANNON},
         },
         {
-        MR_ZIG(REMATCH_5_MINI_BOSS),
+        MR_CAT(REMATCH_5_MINI_BOSS),
         PERFECT_IVS,
         .moves = {MOVE_BODY_SLAM, MOVE_PLAY_ROUGH, MOVE_SEED_BOMB, MOVE_HONE_CLAWS},
         }

@@ -436,43 +436,43 @@
             "mons": [
               {
                 "range": "RANGE_EVER_GRANDE_CITY_GRIND",
-                "species": "SLAKING"
+                "species": "BLISSEY"
               },
               {
                 "range": "RANGE_EVER_GRANDE_CITY_GRIND",
-                "species": "SLAKING"
+                "species": "BLISSEY"
               },
               {
                 "range": "RANGE_EVER_GRANDE_CITY_GRIND",
-                "species": "SLAKING"
+                "species": "BLISSEY"
               },
               {
                 "range": "RANGE_EVER_GRANDE_CITY_GRIND",
-                "species": "SLAKING"
+                "species": "BLISSEY"
               },
               {
                 "range": "RANGE_EVER_GRANDE_CITY_GRIND",
-                "species": "SLAKING"
+                "species": "BLISSEY"
               },
               {
                 "range": "RANGE_EVER_GRANDE_CITY_GRIND",
-                "species": "SLAKING"
+                "species": "BLISSEY"
               },
               {
                 "range": "RANGE_EVER_GRANDE_CITY_GRIND",
-                "species": "SLAKING"
+                "species": "BLISSEY"
               },
               {
                 "range": "RANGE_EVER_GRANDE_CITY_GRIND",
-                "species": "SLAKING"
+                "species": "BLISSEY"
               },
               {
                 "range": "RANGE_EVER_GRANDE_CITY_GRIND",
-                "species": "SLAKING"
+                "species": "BLISSEY"
               },
               {
                 "range": "RANGE_EVER_GRANDE_CITY_GRIND",
-                "species": "SLAKING"
+                "species": "BLISSEY"
               }
             ]
           },
@@ -538,7 +538,7 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_101",
-                "species": "ZIGZAGOON"
+                "species": "PATRAT"
               },
               {
                 "range": "RANGE_ROUTE_101",
@@ -546,7 +546,11 @@
               },
               {
                 "range": "RANGE_ROUTE_101",
-                "species": "ZIGZAGOON"
+                "species": "PATRAT"
+              },
+              {
+                "range": "RANGE_ROUTE_101",
+                "species": "PATRAT"
               },
               {
                 "range": "RANGE_ROUTE_101",
@@ -554,27 +558,23 @@
               },
               {
                 "range": "RANGE_ROUTE_101",
-                "species": "ZIGZAGOON"
-              },
-              {
-                "range": "RANGE_ROUTE_101",
                 "species": "POOCHYENA"
               },
               {
                 "range": "RANGE_ROUTE_101",
-                "species": "WURMPLE"
+                "species": "CATERPIE"
               },
               {
                 "range": "RANGE_ROUTE_101",
-                "species": "WURMPLE"
+                "species": "CATERPIE"
               },
               {
                 "range": "RANGE_ROUTE_101",
-                "species": "WURMPLE"
+                "species": "CATERPIE"
               },
               {
                 "range": "RANGE_ROUTE_101",
-                "species": "WURMPLE"
+                "species": "CATERPIE"
               }
             ]
           }
@@ -587,19 +587,19 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_102_104",
-                "species": "SEEDOT"
+                "species": "ROOKIDEE"
               },
               {
                 "range": "RANGE_ROUTE_102_104",
-                "species": "LOTAD"
+                "species": "PURRLOIN"
               },
               {
                 "range": "RANGE_ROUTE_102_104",
-                "species": "SEEDOT"
+                "species": "ROOKIDEE"
               },
               {
                 "range": "RANGE_ROUTE_102_104",
-                "species": "LOTAD"
+                "species": "PURRLOIN"
               },
               {
                 "range": "RANGE_ROUTE_102_104",
@@ -689,7 +689,27 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_103",
-                "species": "WINGULL"
+                "species": "PURRLOIN"
+              },
+              {
+                "range": "RANGE_ROUTE_103",
+                "species": "YUNGOOS"
+              },
+              {
+                "range": "RANGE_ROUTE_103",
+                "species": "PURRLOIN"
+              },
+              {
+                "range": "RANGE_ROUTE_103",
+                "species": "YUNGOOS"
+              },
+              {
+                "range": "RANGE_ROUTE_103",
+                "species": "PURRLOIN"
+              },
+              {
+                "range": "RANGE_ROUTE_103",
+                "species": "YUNGOOS"
               },
               {
                 "range": "RANGE_ROUTE_103",
@@ -701,31 +721,11 @@
               },
               {
                 "range": "RANGE_ROUTE_103",
-                "species": "POOCHYENA"
+                "species": "WINGULL"
               },
               {
                 "range": "RANGE_ROUTE_103",
-                "species": "ZIGZAGOON"
-              },
-              {
-                "range": "RANGE_ROUTE_103",
-                "species": "POOCHYENA"
-              },
-              {
-                "range": "RANGE_ROUTE_103",
-                "species": "ZIGZAGOON"
-              },
-              {
-                "range": "RANGE_ROUTE_103",
-                "species": "ZIGZAGOON"
-              },
-              {
-                "range": "RANGE_ROUTE_103",
-                "species": "POOCHYENA"
-              },
-              {
-                "range": "RANGE_ROUTE_103",
-                "species": "ZIGZAGOON"
+                "species": "WINGULL"
               }
             ]
           },

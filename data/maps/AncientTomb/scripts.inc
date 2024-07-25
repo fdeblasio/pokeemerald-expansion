@@ -58,10 +58,10 @@ AncientTomb_EventScript_Registeel::
 	lock
 	faceplayer
 	waitse
-	playmoncry ANCIENT_TOMB_LEGENDARY, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_ANCIENT_TOMB_LEGENDARY, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle ANCIENT_TOMB_LEGENDARY, 55
+	setwildbattle SPECIES_ANCIENT_TOMB_LEGENDARY, 55
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special StartRegiBattle
 	waitstate
@@ -80,7 +80,7 @@ AncientTomb_EventScript_DefeatedRegisteel::
 	end
 
 AncientTomb_EventScript_RanFromRegisteel::
-	setvar VAR_0x8004, ANCIENT_TOMB_LEGENDARY
+	setvar VAR_0x8004, SPECIES_ANCIENT_TOMB_LEGENDARY
 	goto Common_EventScript_LegendaryFlewAway
 	end
 

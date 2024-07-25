@@ -111,6 +111,7 @@ upcoming
     - battle_terrain/stadium/palette3-7.pal to better match ypes
 - Brendan/May rematches? (Route 103?)
 - Steven rematches? (Would be the same team but re-battleable)
+    - Could make his flag a daily one?
     - Replace Claydol with a Steel-type?
 - Give Winstrates rematches?
 - Maybe add Brendan/May/Maxie/Archie/admins/Winstrate rematches in Battle Frontier?

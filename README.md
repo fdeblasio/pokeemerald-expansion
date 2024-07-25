@@ -701,6 +701,7 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Accuracy: 90->100
         - PP: 5->10
     - Stone Axe:
+        - Power: 65->70
         - Accuracy: 90->100
 - Bug:
     - Pin Missile:
@@ -888,6 +889,7 @@ There are some mechanics, moves and abilities that are missing and being develop
         - PP: 5->10
 - Dark:
     - Ceaseless Edge:
+        - Power: 65->70
         - Accuracy: 90->100
     - Hyperspace Fury:
         - PP: 5->10
@@ -2009,7 +2011,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Incineroar:
     - Spe: 60->65
-    - Learns Incinerate by level up
+    - Learns Incinerate and Blaze Kick by level up
 
 - Popplio:
     - Evolution: 17->16
@@ -2105,6 +2107,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - HP: 76->80
     - SpA: 81->80
     - Spe: 123->125
+    - Learns Throat Chop by level up
 
 - Pawmot:
     - Learns Drain Punch by TM

@@ -50,13 +50,13 @@
     .heldItem = Location < RIVAL_LILYCOVE ? ITEM_NONE : (TYPE_##Type == TYPE_GRASS ? ITEM_SCEPTILITE : (TYPE_##Type == TYPE_FIRE ? ITEM_BLAZIKENITE : ITEM_SWAMPERTITE)), \
     }
 
-#define RIVAL_WHISMUR(Location, Rival)                                         \
-    {                                                                          \
-    .lvl = Location##_STARTER_LEVEL - (Location < RIVAL_ROUTE_119 ? 2 : 1),    \
-    .species = Location < RIVAL_ROUTE_119 ? SPECIES_WHISMUR : SPECIES_LOUDRED, \
-    .ability = Rival == BRENDAN,                                               \
-    IVS(18),                                                                   \
-    .gender = Rival == BRENDAN ? TRAINER_MON_MALE : TRAINER_MON_FEMALE,        \
+#define RIVAL_WHISMUR(Location, Rival)                                      \
+    {                                                                       \
+    .lvl = Location##_STARTER_LEVEL - (Location < RIVAL_ROUTE_119 ? 2 : 1), \
+    .species = Location < RIVAL_ROUTE_119 ? SPECIES_WHISMUR : (Location < RIVAL_LILYCOVE ? SPECIES_LOUDRED : SPECIES_EXPLOUD), \
+    .ability = Rival == BRENDAN,                                            \
+    IVS(18),                                                                \
+    .gender = Rival == BRENDAN ? TRAINER_MON_MALE : TRAINER_MON_FEMALE,     \
     }
 
 #define RIVAL_MON(Location, Species, Ability, Rival)                             \

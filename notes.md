@@ -199,7 +199,6 @@ upcoming
     - look in graphics/ for more
     - Trainer card
 - Type effectiveness in battle: https://www.pokecommunity.com/showpost.php?p=10167016&postcount=83
-- Add Hyper Training (Battle Frontier stats judge could do so)
 - Get rid of low health constant beeping (https://www.pokecommunity.com/showpost.php?p=10246778&postcount=194)
 - Add more EXP Candy
 - PC in menu

@@ -39,6 +39,9 @@ upcoming
 ```
 
 ## To Do:
+### Hack-specific
+- Replace Alolan Raichu, Meowth trio, Tangela, Ledyba, Togepi, Galarian Corsola, Galarian Zigzagoon, Skrelp in post-game safari zone
+
 ### Next playthrough
 - Consolidate flags
     - FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA, FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY
@@ -286,13 +289,3 @@ upcoming
         - Galarian Meowth
         - Paldean Wooper
     - Sandslash, Ninetales, Cursola, and maybe Obstagoon can be used to diversify the Elite Four teams
-
-## Future hacks
-- All Yellow Pokémon:
-    - Yellow shinies (Lickitung, Altaria, Luxray, Bellibolt, etc) replacing the regular palette
-        - Change Pokédex colors to match
-    - Give trainer mugshot yellow palette if possible (replace Wallace's yellow with something else)
-    - Replace green with yellow on player sprites?
-    - If not enough, could also add black (Charmander line would have shiny palettes as they're both yellow and black)
-- Tropical:
-    - Tropius, Bellossom, Pau Oricorio, Tsareena, probably a lot of Alolan Pokémon, both forms of Exeggutor (Sun Stone for Alolan)

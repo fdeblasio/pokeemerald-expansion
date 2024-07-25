@@ -7170,6 +7170,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         {
         .lvl = 24,
         .species = SPECIES_SPRIGATITO,
+        .isShiny = TRUE,
+        .nickname = COMPOUND_STRING("Teaspoon"),
         }
     },
 },

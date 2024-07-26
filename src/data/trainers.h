@@ -47,7 +47,6 @@
     .nature = Rival == KYLE ? NATURE_SERIOUS : NATURE_QUIRKY,                                            \
     PERFECT_IVS,                                                                                         \
     .gender = Rival == KYLE ? TRAINER_MON_MALE : TRAINER_MON_FEMALE,                                     \
-    .heldItem = ITEM_NONE, \
     }
 
 #define RIVAL_WHISMUR(Location, Rival)                                      \

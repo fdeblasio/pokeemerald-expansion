@@ -1074,7 +1074,71 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sLedianLevelUpLearnset,
         .teachableLearnset = sLedianTeachableLearnset,
+    #if P_VEGA_POKEMON
+        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_LEDYBULK}),
+    #endif
     },
+
+#if P_VEGA_POKEMON
+    [SPECIES_LEDYBULK] =
+    {
+        .baseHP        = 70,
+        .baseAttack    = 120,
+        .baseDefense   = 60,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 110,
+        .types = MON_TYPES(TYPE_BUG, TYPE_FIGHTING),
+        .catchRate = 45,
+        .expYield = 200,
+        .evYield_Attack = 3,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+        .abilities = { ABILITY_SWARM, ABILITY_EARLY_BIRD, ABILITY_IRON_FIST },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Ledybulk"),
+        .cryId = CRY_LEDIAN,
+        .natDexNum = NATIONAL_LEDYBULK,
+        .categoryName = _("Five Star"),
+        .height = 16,
+        .weight = 495,
+        .description = COMPOUND_STRING(
+            "A Ledian with a body specialized for\n"
+            "hand-to-hand combat. Its floating hands\n"
+            "flutter freely through the air."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Ledybulk,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_Ledybulk,
+        .frontAnimId = ANIM_H_VIBRATE_FAST,
+        .backPic = gMonBackPic_Ledybulk,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
+        .palette = gMonPalette_Ledybulk,
+        .shinyPalette = gMonShinyPalette_Ledybulk,
+        .iconSprite = gMonIcon_Ledybulk,
+        .iconPalIndex = 0,
+        FOOTPRINT(Ledian)
+        OVERWORLD(
+            sPicTable_Ledian,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Ledian,
+            gShinyOverworldPalette_Ledian
+        )
+        .levelUpLearnset = sLedybulkLevelUpLearnset,
+        .teachableLearnset = sLedybulkTeachableLearnset,
+    },
+#endif //P_VEGA_POKEMON
 #endif //P_FAMILY_LEDYBA
 
 #if P_FAMILY_SPINARAK

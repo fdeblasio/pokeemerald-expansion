@@ -11045,6 +11045,14 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .iconSprite = gMonIcon_TornadusTherian,
         .iconPalIndex = 1,
         FOOTPRINT(Tornadus)
+        OVERWORLD(
+            sPicTable_TornadusIncarnate,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_TornadusIncarnate,
+            gShinyOverworldPalette_TornadusIncarnate
+        )
         .isLegendary = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sTornadusLevelUpLearnset,
@@ -11169,6 +11177,14 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .iconSprite = gMonIcon_ThundurusTherian,
         .iconPalIndex = 0,
         FOOTPRINT(Thundurus)
+        OVERWORLD(
+            sPicTable_ThundurusIncarnate,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_ThundurusIncarnate,
+            gShinyOverworldPalette_ThundurusIncarnate
+        )
         .isLegendary = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sThundurusLevelUpLearnset,
@@ -11422,6 +11438,14 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .iconSprite = gMonIcon_LandorusTherian,
         .iconPalIndex = 0,
         FOOTPRINT(Landorus)
+        OVERWORLD(
+            sPicTable_LandorusIncarnate,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_LandorusIncarnate,
+            gShinyOverworldPalette_LandorusIncarnate
+        )
         .isLegendary = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sLandorusLevelUpLearnset,

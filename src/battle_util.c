@@ -2353,6 +2353,8 @@ u8 DoBattlerEndTurnEffects(void)
                   && ability != ABILITY_SAND_FORCE
                   && ability != ABILITY_SAND_RUSH
                   && ability != ABILITY_OVERCOAT
+                  && ability != ABILITY_WIND_POWER
+                  && ability != ABILITY_WIND_RIDER
                   && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_ROCK)
                   && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_GROUND)
                   && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_STEEL)
@@ -5279,6 +5281,10 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 if (gMovesInfo[gCurrentMove].windMove && !(GetBattlerMoveTargetType(gBattlerAttacker, gCurrentMove) & MOVE_TARGET_USER))
                     effect = 2, statId = STAT_ATK;
                 break;
+            case ABILITY_WIND_POWER:
+                if (gMovesInfo[gCurrentMove].windMove && !(GetBattlerMoveTargetType(gBattlerAttacker, gCurrentMove) & MOVE_TARGET_USER))
+                    effect = 4;
+                break;
             case ABILITY_EARTH_EATER:
                 if (moveType == TYPE_GROUND)
                     effect = 1;
@@ -5291,7 +5297,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
 
                 return effect;
             }
-            else if (effect == 1) // Drain Hp ability.
+            else if (effect == 1) // Drain HP ability.
             {
                 if (BATTLER_MAX_HP(battler) || (B_HEAL_BLOCKING >= GEN_5 && gStatuses3[battler] & STATUS3_HEAL_BLOCK))
                 {
@@ -5352,6 +5358,17 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                         gBattlescriptCurrInstr = BattleScript_FlashFireBoost;
                     else
                         gBattlescriptCurrInstr = BattleScript_FlashFireBoost_PPLoss;
+                }
+            }
+            else if (effect == 4)
+            {
+                if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+                && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
+                && IsBattlerAlive(gBattlerTarget))
+                {
+                    MgbaPrintf(MGBA_LOG_WARN, "Conditions passed");
+                    gBattlescriptCurrInstr = BattleScript_WindPowerActivates;
+                    MgbaPrintf(MGBA_LOG_WARN, "Steps finished");
                 }
             }
 
@@ -5912,10 +5929,6 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
-        case ABILITY_WIND_POWER:
-            if (!(gMovesInfo[gCurrentMove].windMove))
-                break;
-            // fall through
         case ABILITY_ELECTROMORPHOSIS:
             if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
              && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
@@ -5923,7 +5936,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
              && IsBattlerAlive(gBattlerTarget))
             {
                 BattleScriptPushCursor();
-                gBattlescriptCurrInstr = BattleScript_WindPowerActivates;
+                gBattlescriptCurrInstr = BattleScript_ElectromorphosisActivates;
                 effect++;
             }
             break;

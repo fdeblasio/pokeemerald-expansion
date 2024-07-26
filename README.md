@@ -385,6 +385,8 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Iron Fist: Boost: 20%->50%
 - Normalize: Boost: 20%->50%
 - Punk Rock: Renamed Amplify to fit Exploud line as well
+- Wind Power: Grants immunity to wind moves and sandstorm damage
+- Wind Rider: Grants immunity to sandstorm damage
 
 ### TMs:
 |TM #|   Move   |Location|
@@ -1778,6 +1780,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Abomasnow:
     - Learns Icicle Crash by TM
+
+- Rotom Fan:
+    - Ability: Levitate->Wind Power
 
 - Snivy:
     - Evolution: 17->16

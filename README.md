@@ -2181,6 +2181,11 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Ceruledge:
     - Hidden Ability: Weak Armor->Sharpness
 
+- Wattrel/Kilowattrel:
+    - Learn Gust, Shock Wave, Air Cutter, Tailwind, Air Slash, and Thunder by level up
+    - Learn Rain Dance by TM
+    - Learns Heat Wave by Egg Move
+
 - Tinkatink:
     - SpD: 64->65
     - Spe: 58->60

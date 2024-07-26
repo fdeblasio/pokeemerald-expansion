@@ -12050,6 +12050,7 @@ static const u16 sWattrelEggMoveLearnset[] = {
     MOVE_ELECTROWEB,
     MOVE_ENDEAVOR,
     MOVE_FEATHER_DANCE,
+    MOVE_HEAT_WAVE,
     MOVE_HURRICANE,
     MOVE_SPIT_UP,
     MOVE_STOCKPILE,

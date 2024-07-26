@@ -1208,8 +1208,8 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Water Pulse by level up
 
 - Mime Jr./Mr. Mime (not in main game):
-    - Gender Ratio: 50/50->100/0
     - Type: Psychic/Fairy->Psychic
+    - Gender Ratio: 50/50->100/0
 
 - Galarian Mr. Mime/Mr. Rime (not in main game):
     - Gender Ratio: 50/50->100/0
@@ -1881,6 +1881,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Vanillish:
     - Evolution: 47->42
 
+- Karrablast:
+    - Can also evolve with Linking Cord
+
 - Foongus:
     - Evolution: 39->36
 
@@ -1922,6 +1925,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Cryogonal:
     - Hidden Ability: None->Snow Warning
     - Learns Dazzling Gleam, Flash, and Power Gem by TM
+
+- Shelmet:
+    - Can also evolve with Linking Cord
 
 - Stunfisk:
     - HP: 109->110

@@ -3168,10 +3168,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .gender = TRAINER_MON_MALE,                                  \
     .nickname = COMPOUND_STRING("Linus")
 
-#define CALVIN_TAILLOW(Level)                                                 \
-    .lvl = Level,                                                             \
-    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_TAILLOW : SPECIES_SWELLOW, \
-    .gender = TRAINER_MON_MALE                                                \
+#define CALVIN_WATTREL(Level)                                                     \
+    .lvl = Level,                                                                 \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_WATTREL : SPECIES_KILOWATTREL, \
+    .ability = ABILITY_WIND_POWER,                                                \
+    .gender = TRAINER_MON_MALE                                                    \
 
 #define CALVIN_MIGHTYENA(Level)    \
     .lvl = Level,                  \
@@ -3196,7 +3197,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        CALVIN_TAILLOW(REMATCH_2_LEVEL_2),
+        CALVIN_WATTREL(REMATCH_2_LEVEL_2),
         IVS(2),
         },
         {
@@ -3212,7 +3213,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        CALVIN_TAILLOW(REMATCH_3_LEVEL_2),
+        CALVIN_WATTREL(REMATCH_3_LEVEL_2),
         IVS(3),
         },
         {
@@ -3232,7 +3233,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(4),
         },
         {
-        CALVIN_TAILLOW(REMATCH_4_LEVEL_2),
+        CALVIN_WATTREL(REMATCH_4_LEVEL_2),
         IVS(4),
         },
         {
@@ -3258,7 +3259,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(5),
         },
         {
-        CALVIN_TAILLOW(REMATCH_5_LEVEL_2),
+        CALVIN_WATTREL(REMATCH_5_LEVEL_2),
         IVS(5),
         },
         {
@@ -3280,11 +3281,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 4,
-        .species = SPECIES_WURMPLE,
+        .species = SPECIES_SURSKIT,
         },
         {
         .lvl = 4,
-        .species = SPECIES_WURMPLE,
+        .species = SPECIES_CATERPIE,
         }
     },
 },
@@ -3302,7 +3303,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         },
         {
         .lvl = 4,
-        .species = SPECIES_TAILLOW,
+        .species = SPECIES_WINGULL,
         }
     },
 },
@@ -3316,7 +3317,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 4,
-        .species = SPECIES_ZIGZAGOON,
+        .species = SPECIES_PURRLOIN,
         },
         {
         .lvl = 4,

@@ -115,7 +115,7 @@ LilycoveCity_DepartmentStore_3F_Pokemart_Evo:
 	.align 2
 LilycoveCity_DepartmentStore_3F_Pokemart_EvoUnused:
 	.2byte ITEM_DUSK_STONE
-	.2byte ITEM_ICE_STONE
+	.2byte ITEM_ICE_STONE       @ Battle Frontier
 	.2byte ITEM_KINGS_ROCK 		@ Battle Frontier as battle item
 	.2byte ITEM_METAL_COAT
 	.2byte ITEM_UPGRADE

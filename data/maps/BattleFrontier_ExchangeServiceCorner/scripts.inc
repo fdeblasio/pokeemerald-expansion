@@ -281,6 +281,7 @@ BattleFrontier_ExchangeServiceCorner_EventScript_EvolutionMega::
 
 	.align 2
 BattleFrontier_Mart_EvolutionMega:
+	.2byte ITEM_ICE_STONE
 	.2byte ITEM_ELECTIRIZER
 	.2byte ITEM_MAGMARIZER
 	.2byte ITEM_OVAL_STONE

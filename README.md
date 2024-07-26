@@ -1317,6 +1317,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Atk: 20->40
     - SpA: 40->20
     - Learns Gust, Struggle Bug, Bug Bite, Air Cutter, and Aerial Ace by level up
+    - Learns Supersonic at level 6 to avoid issues with Wally battle
 
 - Ledian:
     - HP: 65->80

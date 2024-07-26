@@ -5653,9 +5653,9 @@ static const struct LevelUpMove sNoctowlLevelUpLearnset[] = {
 #if P_FAMILY_LEDYBA
 static const struct LevelUpMove sLedybaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GUST),
-    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
-    LEVEL_UP_MOVE( 5, MOVE_STRUGGLE_BUG),
-    LEVEL_UP_MOVE( 5, MOVE_SUPERSONIC),
+    LEVEL_UP_MOVE( 6, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 6, MOVE_STRUGGLE_BUG),
+    LEVEL_UP_MOVE( 6, MOVE_SUPERSONIC),
     LEVEL_UP_MOVE( 8, MOVE_BUG_BITE),
     LEVEL_UP_MOVE( 8, MOVE_SWIFT),
     LEVEL_UP_MOVE(12, MOVE_LIGHT_SCREEN),

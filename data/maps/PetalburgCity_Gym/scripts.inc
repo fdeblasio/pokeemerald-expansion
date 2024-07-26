@@ -1181,8 +1181,8 @@ PetalburgCity_Gym_Text_DadPlayerGoWithDuncan:
 	.string "safely catches a Pokémon.$"
 
 PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon:
-	.string "Wally, here, I'll loan you my Pokémon.\p"
-	.string "Wally received a {STR_VAR_1}!$"
+	.string "Duncan, here, I'll loan you my Pokémon.\p"
+	.string "Duncan received a {STR_VAR_1}!$"
 
 PetalburgCity_Gym_Text_DuncanThankYouAndDadGivesPokeBall:
 	.string "Duncan: Oh, wow!\n"

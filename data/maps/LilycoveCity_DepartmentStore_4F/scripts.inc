@@ -49,31 +49,20 @@ LilycoveCity_DepartmentStore_4F_EventScript_ClerkMegaStones::
 	.align 2
 LilycoveCity_DepartmentStore_4F_Pokemart_MegaStones:
 	.2byte ITEM_ALAKAZITE       @ 0065
-	.2byte ITEM_STARMINITE      @ 0121
+	.2byte ITEM_GENGARITE       @ 0094
 	.2byte ITEM_PINSIRITE       @ 0127
-	.2byte ITEM_GYARADOSITE     @ 0130
 	.2byte ITEM_HERACRONITE     @ 0214
-	.2byte ITEM_SKARMORITE      @ 0227
-	.2byte ITEM_HOUNDOOMINITE   @ 0229
-	.2byte ITEM_SCEPTILITE      @ 0254
-	.2byte ITEM_BLAZIKENITE     @ 0257
-	.2byte ITEM_SWAMPERTITE     @ 0260
-	.2byte ITEM_GARDEVOIRITE    @ 0282
-	.2byte ITEM_GALLADITE       @ 0282
-	.2byte ITEM_SABLENITE       @ 0302
 	.2byte ITEM_MAWILITE        @ 0303
 	.2byte ITEM_AGGRONITE       @ 0306
 	.2byte ITEM_MEDICHAMITE     @ 0308
-	.2byte ITEM_MANECTITE       @ 0310
 	.2byte ITEM_SHARPEDONITE    @ 0319
 	.2byte ITEM_CAMERUPTITE     @ 0323
 	.2byte ITEM_ALTARIANITE     @ 0334
 	.2byte ITEM_BANETTITE       @ 0354
 	.2byte ITEM_ABSOLITE        @ 0359
 	.2byte ITEM_GLALITITE       @ 0362
-	.2byte ITEM_FROSLASSITE     @ 0362
-	.2byte ITEM_SALAMENCITE     @ 0373
-	.2byte ITEM_METAGROSSITE    @ 0376
+	.2byte ITEM_GARCHOMPITE     @ 0445
+	.2byte ITEM_ABOMASITE       @ 0460
 	pokemartlistend
 
 @ Unused shop that contains Mega Stones for Pokemon not available in Emerald by default
@@ -90,10 +79,10 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_CLEFABLITE      @ 0036
 	.2byte ITEM_VICTREEBELITE   @ 0071
 	.2byte ITEM_SLOWBRONITE     @ 0080
-	.2byte ITEM_GENGARITE       @ 0094
 	.2byte ITEM_STEELIXITE      @ 0095
 	.2byte ITEM_KANGASKHANITE   @ 0115
 	.2byte ITEM_SCIZORITE       @ 0123
+	.2byte ITEM_GYARADOSITE     @ 0130
 	.2byte ITEM_AERODACTYLITE   @ 0142 Battle Frontier
 	.2byte ITEM_DRAGONINITE     @ 0149
 	.2byte ITEM_MEWTWONITE_X    @ 0150
@@ -101,16 +90,26 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_MEGANIUMITE     @ 0154 Battle Frontier
 	.2byte ITEM_FERALIGITE      @ 0160 Battle Frontier
 	.2byte ITEM_AMPHAROSITE     @ 0181 Battle Frontier
+	.2byte ITEM_SKARMORITE      @ 0227 Skarmory (move to regular shop when implemented)
+	.2byte ITEM_HOUNDOOMINITE   @ 0229
 	.2byte ITEM_TYRANITARITE    @ 0248
+	.2byte ITEM_SCEPTILITE      @ 0254
+	.2byte ITEM_BLAZIKENITE     @ 0257
+	.2byte ITEM_SWAMPERTITE     @ 0260
+	.2byte ITEM_GARDEVOIRITE    @ 0282
+	.2byte ITEM_GALLADITE       @ 0282
+	.2byte ITEM_SABLENITE       @ 0302
+	.2byte ITEM_MANECTITE       @ 0310
 	.2byte ITEM_NONE            @ 0358 Chimecho (move to regular shop when implemented)
+	.2byte ITEM_FROSLASSITE     @ 0362 Froslass (move to regular shop when implemented)
+	.2byte ITEM_SALAMENCITE     @ 0373
+	.2byte ITEM_METAGROSSITE    @ 0376
 	.2byte ITEM_LATIASITE       @ 0380 Battle Frontier
 	.2byte ITEM_LATIOSITE       @ 0381 Battle Frontier
 	.2byte ITEM_LOPUNNITE       @ 0428
-	.2byte ITEM_GARCHOMPITE     @ 0445
 	.2byte ITEM_LUCARIONITE     @ 0448
-	.2byte ITEM_ABOMASITE       @ 0460
 	.2byte ITEM_EMBOARITE       @ 0500
-	.2byte ITEM_EXCADRITE       @ 0530 Battle Frontier
+	.2byte ITEM_EXCADRITE       @ 0530 (move to regular shop when implemented)
 	.2byte ITEM_AUDINITE        @ 0531
 	.2byte ITEM_SCOLIPITE       @ 0545
 	.2byte ITEM_SCRAFTINITE     @ 0560

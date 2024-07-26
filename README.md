@@ -1791,7 +1791,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Atk: 108->115
 
 - Patrat/Watchog:
-    - Possibly based on the meerKAT which is in the same suborder as cats
+    - Partially based on the meerKAT which is in the same suborder as cats
     - Learn Cut, Headbutt and Body Slam by level up
 
 - Purrloin:

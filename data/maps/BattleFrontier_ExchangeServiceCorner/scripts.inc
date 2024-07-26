@@ -284,7 +284,6 @@ BattleFrontier_Mart_EvolutionMega:
 	.2byte ITEM_ICE_STONE
 	.2byte ITEM_ELECTIRIZER
 	.2byte ITEM_MAGMARIZER
-	.2byte ITEM_OVAL_STONE
 	.2byte ITEM_RAZOR_FANG
 	.2byte ITEM_PEAT_BLOCK
 	.2byte ITEM_AERODACTYLITE
@@ -316,7 +315,6 @@ BattleFrontier_Mart_HoldItemVitamin:
 	.2byte ITEM_POWER_HERB
 	.2byte ITEM_QUICK_CLAW
 	.2byte ITEM_BRIGHT_POWDER
-	.2byte ITEM_KINGS_ROCK
 	.2byte ITEM_FOCUS_BAND
 	.2byte ITEM_FOCUS_SASH
 	.2byte ITEM_GRIP_CLAW

@@ -37,15 +37,15 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PSYDUCK"
+                "species": "DUCKLETT"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "AZUMARILL"
+                "species": "POLIWAG"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "MASQUERAIN"
+                "species": "BUIZEL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
@@ -632,15 +632,15 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PSYDUCK"
+                "species": "DUCKLETT"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "AZUMARILL"
+                "species": "POLIWAG"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "MASQUERAIN"
+                "species": "BUIZEL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
@@ -1325,15 +1325,15 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PSYDUCK"
+                "species": "DUCKLETT"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "AZUMARILL"
+                "species": "POLIWAG"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "MASQUERAIN"
+                "species": "BUIZEL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
@@ -1525,15 +1525,15 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PSYDUCK"
+                "species": "DUCKLETT"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "AZUMARILL"
+                "species": "POLIWAG"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "MASQUERAIN"
+                "species": "BUIZEL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
@@ -1778,15 +1778,15 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PSYDUCK"
+                "species": "DUCKLETT"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "AZUMARILL"
+                "species": "POLIWAG"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "MASQUERAIN"
+                "species": "BUIZEL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
@@ -2084,15 +2084,15 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_120",
-                "species": "PSYDUCK"
+                "species": "DUCKLETT"
               },
               {
                 "range": "RANGE_ROUTE_120",
-                "species": "GOLDEEN"
+                "species": "POLIWAG"
               },
               {
                 "range": "RANGE_ROUTE_120",
-                "species": "AZUMARILL"
+                "species": "BUIZEL"
               },
               {
                 "range": "RANGE_ROUTE_120",

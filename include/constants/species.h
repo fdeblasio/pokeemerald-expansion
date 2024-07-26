@@ -1784,6 +1784,8 @@
 #define NORMAN_LEND               SPECIES_ZIGZAGOON //Try to use this variable for the Trick House question once multichoices are refactored
 #define SPECIES_WALLY_STARTER     SPECIES_RALTS
 
+#define SPECIES_PEEKO             SPECIES_WINGULL
+
 #define SPECIES_DESERT_RUINS      SPECIES_REGIROCK
 #define SPECIES_ISLAND_CAVE       SPECIES_REGICE
 #define SPECIES_ANCIENT_TOMB      SPECIES_REGISTEEL

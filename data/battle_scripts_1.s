@@ -6460,12 +6460,21 @@ BattleScript_AngerShellRet:
 	restoreattacker
 	return
 
-BattleScript_WindPowerActivates::
+BattleScript_ElectromorphosisActivates::
 	call BattleScript_AbilityPopUp
 	setcharge BS_TARGET
 	printstring STRINGID_BEINGHITCHARGEDPKMNWITHPOWER
 	waitmessage B_WAIT_TIME_LONG
 	return
+
+BattleScript_WindPowerActivates::
+	attackstring
+	pause B_WAIT_TIME_SHORT
+	call BattleScript_AbilityPopUp
+	setcharge BS_TARGET
+	printstring STRINGID_BEINGHITCHARGEDPKMNWITHPOWER
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_MoveEnd
 
 BattleScript_ToxicDebrisActivates::
 	call BattleScript_AbilityPopUp

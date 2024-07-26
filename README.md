@@ -1139,7 +1139,19 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
     - HP: 65->80
     - Atk: 35->80
     - SpA: 55->35
+    - Evolves into ??? at level 38
     - Learns Gust, Struggle Bug, Bug Bite, Air Cutter, Aerial Ace, Lunge, and Acrobatics by level up
+
+- ???:
+    - Type: Bug/Fighting
+    - HP: 70
+    - Atk: 120
+    - Def: 60
+    - SpA: 75
+    - SpD: 110
+    - Spe: 85
+    - Abilities: Swarm/Early Bird/Iron Fist
+
 
 - Spinarak (postgame):
     - Atk: 60->65

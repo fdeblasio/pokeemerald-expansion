@@ -542,6 +542,10 @@
               },
               {
                 "range": "RANGE_ROUTE_101",
+                "species": "POOCHYENA"
+              },
+              {
+                "range": "RANGE_ROUTE_101",
                 "species": "ZIGZAGOON"
               },
               {
@@ -550,11 +554,7 @@
               },
               {
                 "range": "RANGE_ROUTE_101",
-                "species": "POOCHYENA"
-              },
-              {
-                "range": "RANGE_ROUTE_101",
-                "species": "POOCHYENA"
+                "species": "ZIGZAGOON"
               },
               {
                 "range": "RANGE_ROUTE_101",
@@ -615,11 +615,11 @@
               },
               {
                 "range": "RANGE_ROUTE_102_104",
-                "species": "SURSKIT"
+                "species": "WALLY_STARTER"
               },
               {
                 "range": "RANGE_ROUTE_102_104",
-                "species": "WALLY_STARTER"
+                "species": "SURSKIT"
               },
               {
                 "range": "RANGE_ROUTE_102_104",

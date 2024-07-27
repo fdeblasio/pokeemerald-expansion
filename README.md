@@ -1757,6 +1757,11 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Max Honey: 0%->5%
         - Poison Barb: 5%->0%
 
+- Pachirisu:
+    - Learns Shock Wave and Thunder Fang by level up
+    - Learns Signal Beam by TM
+    - Learns Tail Slap by Egg Move
+
 - Cherrim Sunshine Form:
     - Atk: 60->90
     - Sp. Def: 78->117

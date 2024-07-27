@@ -6541,6 +6541,7 @@ static const u16 sPachirisuEggMoveLearnset[] = {
     MOVE_MUD_SLAP,
     MOVE_ROUND,
     MOVE_SNORE,
+    MOVE_TAIL_SLAP,
     MOVE_TAIL_WHIP,
     MOVE_TAKE_DOWN,
     MOVE_TERA_BLAST,

@@ -2166,7 +2166,73 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sPachirisuLevelUpLearnset,
         .teachableLearnset = sPachirisuTeachableLearnset,
         .eggMoveLearnset = sPachirisuEggMoveLearnset,
+    #if P_VEGA_POKEMON
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_PACHIRIKKU}),
+    #endif
     },
+
+#if P_VEGA_POKEMON
+    [SPECIES_PACHIRIKKU] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 50,
+        .baseDefense   = 90,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 105,
+        .baseSpeed     = 105,
+        .types = MON_TYPES(TYPE_ELECTRIC),
+        .catchRate = 75,
+        .expYield = 210,
+        .evYield_SpDefense = 1,
+        .evYield_Speed = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 10,
+        .friendship = 100,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
+        .abilities = { ABILITY_CHEEK_POUCH, ABILITY_PICKUP, ABILITY_VOLT_ABSORB },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Pachirikku"),
+        .cryId = CRY_PACHIRISU,
+        .natDexNum = NATIONAL_DEX_PACHIRIKKU,
+        .categoryName = _("EleSquirrel"),
+        .height = 7,
+        .weight = 133,
+        .description = COMPOUND_STRING(
+            "When it sees a Pachirisu that is\n"
+            "running low on electricity, it\n"
+            " rubs cheeks with it in order\n"
+            " to share its own stored charge."),
+        .pokemonScale = 491,
+        .pokemonOffset = 16,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Pachirikku,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 3,
+        .frontAnimFrames = sAnims_Pachirikku,
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_Pachirikku,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 6,
+        .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
+        .palette = gMonPalette_Pachirikku,
+        .shinyPalette = gMonShinyPalette_Pachirikku,
+        .iconSprite = gMonIcon_Pachirikku,
+        .iconPalIndex = 0,
+        FOOTPRINT(Name)
+        OVERWORLD(
+            sPicTable_Pachirisu,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Pachirisu,
+            gShinyOverworldPalette_Pachirisu
+        )
+        .levelUpLearnset = sPachirikkuLevelUpLearnset,
+        .teachableLearnset = sPachirikkuTeachableLearnset,
+    },
+#endif //P_VEGA_POKEMON
 #endif //P_FAMILY_PACHIRISU
 
 #if P_FAMILY_BUIZEL

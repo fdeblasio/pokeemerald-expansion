@@ -1898,6 +1898,12 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Karrablast:
     - Can also evolve with Linking Cord
+    - Learns Bug Bite by level up
+
+- Escavalier:
+    - HP: 70->80
+    - Learns Metal Claw and Twineedle upon evolving
+    - Learns Bug Bite and Smart Strike by level up
 
 - Foongus:
     - Evolution: 39->36
@@ -1942,7 +1948,15 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Dazzling Gleam, Flash, and Power Gem by TM
 
 - Shelmet:
+    - SpA: 40->50
     - Can also evolve with Linking Cord
+    - Learns Signal Beam by level up
+
+- Accelgor:
+    - SpA: 100->110
+    - Abilities: Hydration/Sticky Hold/Unburden->Hydration/Dry Skin/Speed Boost
+    - Learns Water Shuriken upon evolving
+    - Learns Signal Beam by level up
 
 - Stunfisk:
     - HP: 109->110

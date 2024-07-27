@@ -5559,6 +5559,8 @@ static const union AnimCmd sAnim_Pachirisu_1[] =
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
+
+PLACEHOLDER_ANIM_SINGLE_FRAME(Pachirikku);
 #endif //P_FAMILY_PACHIRISU
 
 #if P_FAMILY_BUIZEL
@@ -11443,6 +11445,7 @@ SINGLE_ANIMATION(Vespiquen);
 #endif //P_FAMILY_COMBEE
 #if P_FAMILY_PACHIRISU
 SINGLE_ANIMATION(Pachirisu);
+SINGLE_ANIMATION(Pachirikku);
 #endif //P_FAMILY_PACHIRISU
 #if P_FAMILY_BUIZEL
 SINGLE_ANIMATION(Buizel);

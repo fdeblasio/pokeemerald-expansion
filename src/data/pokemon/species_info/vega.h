@@ -530,53 +530,6 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_LUVDISC
 
-#if P_FAMILY_PACHIRISU
-    [SPECIES_PACHIRIKKU] =
-    {
-        .baseHP        = 80,
-        .baseAttack    = 50,
-        .baseDefense   = 90,
-        .baseSpAttack  = 75,
-        .baseSpDefense = 105,
-        .baseSpeed     = 105,
-        .types = MON_TYPES(TYPE_ELECTRIC),
-        .catchRate = 75,
-        .expYield = 210,
-        .evYield_SpDefense = 1,
-        .evYield_Speed = 1,
-        .genderRatio = PERCENT_FEMALE(50),
-        .eggCycles = 10,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_VOLT_ABSORB, ABILITY_PICKUP, ABILITY_CHEEK_POUCH },
-        .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Pachirikku"),
-        DEX_INFO(PACHIRIKKU),
-        .categoryName = _("EleSquirrel"),
-        .height = 7,
-        .weight = 233,
-        .description = COMPOUND_STRING(
-            "Placeholder\n"
-            "Placeholder\n"
-            "Placeholder\n"
-            "Placeholder."),
-        .pokemonScale = 426,
-        .pokemonOffset = 13,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-        SPECIES_VALUES(Pachirikku),
-        .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 3,
-        .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPicSize = MON_COORDS_SIZE(64, 56),
-        .backPicYOffset = 6,
-        .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
-        .iconPalIndex = 0,
-    },
-#endif //P_FAMILY_PACHIRISU
-
 //Sableater, originally Sableye evolution
 #if P_FAMILY_GEHEMOTH
     [SPECIES_GEHEMOTH] =

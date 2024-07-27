@@ -1543,6 +1543,7 @@
 #define SPECIES_TERAPAGOS_TERASTAL                      1432
 #define SPECIES_TERAPAGOS_STELLAR                       1433
 #define SPECIES_PECHARUNT                               1434
+// Forms
 #define SPECIES_LUGIA_SHADOW                            1435
 #define SPECIES_MOTHIM_SANDY                            1436
 #define SPECIES_MOTHIM_TRASH                            1437
@@ -1666,8 +1667,9 @@
 #define SPECIES_FALINKS_MEGA                            1549
 
 #define SPECIES_LEDYBULK                                1550
+#define SPECIES_PACHIRIKKU                              1551
 
-#define SPECIES_EGG (SPECIES_LEDYBULK + 1)
+#define SPECIES_EGG (SPECIES_PACHIRIKKU + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

@@ -1134,7 +1134,7 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
     - Atk: 20->40
     - SpA: 40->20
     - Learns Gust, Struggle Bug, Bug Bite, Air Cutter, and Aerial Ace by level up
-    - Learns Supersonic at level 6 to avoid issues with Wally battle
+    - Learns Tackle and Supersonic at level 6 to avoid issues with Wally battle
 
 - Ledian:
     - HP: 65->80

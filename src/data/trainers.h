@@ -161,7 +161,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, CHL
 
 #define RALPH(Level)                                                                                               \
     .lvl = Level,                                                                                                  \
-    .species = Level < 20 ? SPECIES_WALLY_STARTER : (Level < 30 ? (SPECIES_WALLY_STARTER + 1) : SPECIES_LEDYBULK), \
+    .species = Level < 20 ? SPECIES_WALLY_STARTER : (Level < 38 ? (SPECIES_WALLY_STARTER + 1) : SPECIES_LEDYBULK), \
     .ability = 1,                                                                                                  \
     .gender = TRAINER_MON_MALE,                                                                                    \
     IVS(24),                                                                                                       \
@@ -4988,7 +4988,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 6,
-        .species = SPECIES_ZIGZAGOON,
+        .species = SPECIES_WATTREL,
         },
         {
         .lvl = 6,
@@ -5021,27 +5021,27 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 3,
-        .species = SPECIES_WURMPLE,
+        .species = SPECIES_CATERPIE,
         },
         {
         .lvl = 3,
-        .species = SPECIES_WURMPLE,
+        .species = SPECIES_CATERPIE,
         },
         {
         .lvl = 3,
-        .species = SPECIES_WURMPLE,
+        .species = SPECIES_CATERPIE,
         },
         {
         .lvl = 3,
-        .species = SPECIES_WURMPLE,
+        .species = SPECIES_CATERPIE,
         },
         {
         .lvl = 3,
-        .species = SPECIES_WURMPLE,
+        .species = SPECIES_CATERPIE,
         },
         {
         .lvl = 3,
-        .species = SPECIES_WURMPLE,
+        .species = SPECIES_CATERPIE,
         }
     },
 },

@@ -3277,6 +3277,15 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .species = Level < 20 ? SPECIES_NINCADA : SPECIES_NINJASK, \
     .gender = TRAINER_MON_MALE
 
+#define JAMES_SHEDINJA(Level) \
+    .lvl = Level,             \
+    .species = SPECIES_SHEDINJA
+
+#define JAMES_DUSTOX(Level)   \
+    .lvl = Level,              \
+    .species = SPECIES_DUSTOX, \
+    .gender = TRAINER_MON_MALE
+
 [TRAINER_JAMES_1] =
 {
     JAMES_INFO,
@@ -3294,8 +3303,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_2_LEVEL_2,
-        .species = SPECIES_SHEDINJA,
+        JAMES_SHEDINJA(REMATCH_2_LEVEL_2),
         IVS(2),
         },
         {
@@ -3311,14 +3319,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_3_LEVEL_3,
-        .species = SPECIES_DUSTOX,
+        JAMES_DUSTOX(REMATCH_3_LEVEL_3),
         IVS(3),
-        .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = REMATCH_3_LEVEL_3,
-        .species = SPECIES_SHEDINJA,
+        JAMES_SHEDINJA(REMATCH_3_LEVEL_3),
         IVS(3),
         },
         {
@@ -3340,14 +3345,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = REMATCH_4_LEVEL_4,
-        .species = SPECIES_DUSTOX,
+        JAMES_DUSTOX(REMATCH_4_LEVEL_4),
         IVS(4),
-        .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = REMATCH_4_LEVEL_4,
-        .species = SPECIES_SHEDINJA,
+        JAMES_SHEDINJA(REMATCH_4_LEVEL_4),
         IVS(4),
         },
         {
@@ -3375,14 +3377,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = REMATCH_5_LEVEL_5,
-        .species = SPECIES_DUSTOX,
+        JAMES_DUSTOX(REMATCH_5_LEVEL_4),
         IVS(5),
-        .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = REMATCH_5_LEVEL_4,
-        .species = SPECIES_SHEDINJA,
+        JAMES_SHEDINJA(REMATCH_5_LEVEL_4),
         IVS(5),
         },
         {

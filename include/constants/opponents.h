@@ -117,7 +117,7 @@
 #define TRAINER_DARIAN                    110
 //Petalburg Woods
 #define TRAINER_LYLE                      111
-#define TRAINER_GRUNT_PETALBURG_WOODS     112
+#define TRAINER_CASPIAN_PETALBURG_WOODS   112
 #define TRAINER_JAMES_1                   113
 #define TRAINER_JAMES_2                   114
 #define TRAINER_JAMES_3                   115
@@ -160,7 +160,7 @@
 #define TRAINER_TOMMY                     149
 #define TRAINER_MARC                      150
 //Rusturf Tunnel
-#define TRAINER_GRUNT_RUSTURF_TUNNEL      151
+#define TRAINER_CASPIAN_RUSTURF_TUNNEL    151
 //Route 106 (land)
 #define TRAINER_NED                       152
 #define TRAINER_ELLIOT_1                  153

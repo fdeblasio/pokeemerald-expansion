@@ -22590,6 +22590,7 @@ static const struct LevelUpMove sMausholdLevelUpLearnset[] = {
 static const struct LevelUpMove sFidoughLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
+    LEVEL_UP_MOVE( 3, MOVE_FAIRY_WIND),
     LEVEL_UP_MOVE( 3, MOVE_LICK),
     LEVEL_UP_MOVE( 6, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 8, MOVE_COVET),
@@ -22607,8 +22608,10 @@ static const struct LevelUpMove sFidoughLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sDachsbunLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_BODY_PRESS),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
+    LEVEL_UP_MOVE( 3, MOVE_FAIRY_WIND),
     LEVEL_UP_MOVE( 3, MOVE_LICK),
     LEVEL_UP_MOVE( 6, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 8, MOVE_COVET),

@@ -1190,7 +1190,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_FIDOUGH
     [SPECIES_FIDOUGH] =
     {
-        .baseHP        = 37,
+        .baseHP        = 40,
         .baseAttack    = 55,
         .baseDefense   = 70,
         .baseSpeed     = 65,
@@ -1244,8 +1244,8 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_DACHSBUN] =
     {
-        .baseHP        = 57,
-        .baseAttack    = 80,
+        .baseHP        = 60,
+        .baseAttack    = 90,
         .baseDefense   = 115,
         .baseSpeed     = 95,
         .baseSpAttack  = 50,

@@ -2192,6 +2192,16 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Pawmot:
     - Learns Drain Punch by TM
 
+- Fidough:
+    - HP: 37->40
+    - Learns Fairy Wind by level up
+
+- Dachsbun:
+    - HP: 57->60
+    - Atk: 80->90
+    - Learns Body Press upon evolving
+    - Learns Fairy Wind by level up
+
 - Ceruledge:
     - Hidden Ability: Weak Armor->Sharpness
 

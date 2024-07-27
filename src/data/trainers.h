@@ -3565,9 +3565,9 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .lvl = Level,             \
     .species = SPECIES_SHEDINJA
 
-#define JAMES_DUSTOX(Level)    \
-    .lvl = Level,              \
-    .species = SPECIES_DUSTOX, \
+#define JAMES_BUTTERFREE(Level)    \
+    .lvl = Level,                  \
+    .species = SPECIES_BUTTERFREE, \
     .gender = TRAINER_MON_MALE
 
 [TRAINER_JAMES_1] =
@@ -3603,7 +3603,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        JAMES_DUSTOX(REMATCH_3_LEVEL_3),
+        JAMES_BUTTERFREE(REMATCH_3_LEVEL_3),
         IVS(3),
         },
         {
@@ -3629,7 +3629,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        JAMES_DUSTOX(REMATCH_4_LEVEL_4),
+        JAMES_BUTTERFREE(REMATCH_4_LEVEL_4),
         IVS(4),
         },
         {
@@ -3656,12 +3656,12 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         },
         {
         .lvl = REMATCH_5_LEVEL_5,
-        .species = SPECIES_BEAUTIFLY,
+        .species = SPECIES_ESCAVALIER,
         IVS(5),
-        .gender = TRAINER_MON_FEMALE,
+        .gender = TRAINER_MON_MALE,
         },
         {
-        JAMES_DUSTOX(REMATCH_5_LEVEL_4),
+        JAMES_BUTTERFREE(REMATCH_5_LEVEL_4),
         IVS(5),
         },
         {

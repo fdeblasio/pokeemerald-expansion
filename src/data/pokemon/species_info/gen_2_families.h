@@ -1040,12 +1040,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sLedianLevelUpLearnset,
         .teachableLearnset = sLedianTeachableLearnset,
-    #if P_VEGA_POKEMON
         .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_LEDYBULK}),
-    #endif
     },
 
-#if P_VEGA_POKEMON
     [SPECIES_LEDYBULK] =
     {
         .baseHP        = 70,
@@ -1104,7 +1101,6 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sLedybulkLevelUpLearnset,
         .teachableLearnset = sLedybulkTeachableLearnset,
     },
-#endif //P_VEGA_POKEMON
 #endif //P_FAMILY_LEDYBA
 
 #if P_FAMILY_SPINARAK

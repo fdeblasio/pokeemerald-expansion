@@ -2166,12 +2166,9 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sPachirisuLevelUpLearnset,
         .teachableLearnset = sPachirisuTeachableLearnset,
         .eggMoveLearnset = sPachirisuEggMoveLearnset,
-    #if P_VEGA_POKEMON
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_PACHIRIKKU}),
-    #endif
     },
 
-#if P_VEGA_POKEMON
     [SPECIES_PACHIRIKKU] =
     {
         .baseHP        = 80,
@@ -2232,7 +2229,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sPachirikkuLevelUpLearnset,
         .teachableLearnset = sPachirikkuTeachableLearnset,
     },
-#endif //P_VEGA_POKEMON
 #endif //P_FAMILY_PACHIRISU
 
 #if P_FAMILY_BUIZEL

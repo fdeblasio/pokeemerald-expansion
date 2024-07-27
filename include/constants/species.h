@@ -1538,6 +1538,7 @@
 #define SPECIES_TERAPAGOS_TERASTAL                      1432
 #define SPECIES_TERAPAGOS_STELLAR                       1433
 #define SPECIES_PECHARUNT                               1434
+// Forms
 #define SPECIES_LUGIA_SHADOW                            1435
 #define SPECIES_MOTHIM_SANDY_CLOAK                      1436
 #define SPECIES_MOTHIM_TRASH_CLOAK                      1437
@@ -1629,6 +1630,7 @@
 #define SPECIES_URSHIFU_RAPID_STRIKE_STYLE_GIGANTAMAX   1522
 #define SPECIES_MIMIKYU_TOTEM_BUSTED                    1523
 #define SPECIES_LEDYBULK                                1524
+#define SPECIES_PACHIRIKKU                              1525
 
 #define SPECIES_EGG (SPECIES_LEDYBULK + 1)
 

@@ -2693,33 +2693,47 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     TRAINER_CLASS_PIC(DRAGON_TAMER), \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE
 
+#define GENERIC_GRUNT_NAME .trainerName = _("Grunt")
+
 #define MAGMA_GRUNT_M_INFO                                  \
-    .trainerName = _("Grunt"),                              \
     .trainerClass = TRAINER_CLASS_TEAM_MAGMA,               \
     .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,                \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA, \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
+#define GENERIC_MAGMA_GRUNT_M_INFO \
+    GENERIC_GRUNT_NAME,            \
+    MAGMA_GRUNT_M_INFO
+
 #define MAGMA_GRUNT_F_INFO                                                     \
-    .trainerName = _("Grunt"),                                                 \
     .trainerClass = TRAINER_CLASS_TEAM_MAGMA,                                  \
     .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,                                   \
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MAGMA, \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
+#define GENERIC_MAGMA_GRUNT_F_INFO \
+    GENERIC_GRUNT_NAME,            \
+    MAGMA_GRUNT_F_INFO
+
 #define AQUA_GRUNT_M_INFO                                  \
-    .trainerName = _("Grunt"),                             \
     .trainerClass = TRAINER_CLASS_TEAM_AQUA,               \
     .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,                \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA, \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
+#define GENERIC_AQUA_GRUNT_M_INFO \
+    GENERIC_GRUNT_NAME,           \
+    AQUA_GRUNT_M_INFO
+
 #define AQUA_GRUNT_F_INFO                                                     \
-    .trainerName = _("Grunt"),                                                \
     .trainerClass = TRAINER_CLASS_TEAM_AQUA,                                  \
     .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,                                   \
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA, \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
+
+#define GENERIC_AQUA_GRUNT_F_INFO \
+    GENERIC_GRUNT_NAME,           \
+    AQUA_GRUNT_F_INFO
 
 #define TABITHA_INFO                                        \
     .trainerName = _("Tabitha"),                            \
@@ -3238,8 +3252,9 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },
 },
 
-[TRAINER_GRUNT_PETALBURG_WOODS] =
+[TRAINER_CASPIAN_PETALBURG_WOODS] =
 {
+    .trainerName = _("Caspian"),
     AQUA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
@@ -4019,8 +4034,9 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 },
 
 //Rusturf Tunnel
-[TRAINER_GRUNT_RUSTURF_TUNNEL] =
+[TRAINER_CASPIAN_RUSTURF_TUNNEL] =
 {
+    .trainerName = _("Caspian"),
     AQUA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
@@ -4618,7 +4634,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 //Oceanic Museum
 [TRAINER_GRUNT_MUSEUM_1] =
 {
-    AQUA_GRUNT_M_INFO,
+    GENERIC_AQUA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -4630,7 +4646,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 
 [TRAINER_GRUNT_MUSEUM_2] =
 {
-    AQUA_GRUNT_M_INFO,
+    GENERIC_AQUA_GRUNT_M_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -8197,7 +8213,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 //Mt. Chimney (Magma)
 [TRAINER_GRUNT_MT_CHIMNEY_1] =
 {
-    MAGMA_GRUNT_F_INFO,
+    GENERIC_MAGMA_GRUNT_F_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -8209,7 +8225,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_GRUNT_MT_CHIMNEY_2] =
 {
-    MAGMA_GRUNT_M_INFO,
+    GENERIC_MAGMA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -8275,7 +8291,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_GRUNT_JAGGED_PASS] =
 {
-    MAGMA_GRUNT_M_INFO,
+    GENERIC_MAGMA_GRUNT_M_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -11195,7 +11211,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 //Weather Institute
 [TRAINER_GRUNT_WEATHER_INSTITUTE_1] =
 {
-    AQUA_GRUNT_F_INFO,
+    GENERIC_AQUA_GRUNT_F_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -11207,7 +11223,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_GRUNT_WEATHER_INSTITUTE_2] =
 {
-    AQUA_GRUNT_M_INFO,
+    GENERIC_AQUA_GRUNT_M_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -11223,7 +11239,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_GRUNT_WEATHER_INSTITUTE_3] =
 {
-    AQUA_GRUNT_M_INFO,
+    GENERIC_AQUA_GRUNT_M_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -11239,7 +11255,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_GRUNT_WEATHER_INSTITUTE_4] =
 {
-    AQUA_GRUNT_F_INFO,
+    GENERIC_AQUA_GRUNT_F_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -11255,7 +11271,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 
 [TRAINER_GRUNT_WEATHER_INSTITUTE_5] =
 {
-    AQUA_GRUNT_M_INFO,
+    GENERIC_AQUA_GRUNT_M_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -12738,7 +12754,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_MT_PYRE_1] =
 {
-    AQUA_GRUNT_M_INFO,
+    GENERIC_AQUA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -12750,7 +12766,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_MT_PYRE_2] =
 {
-    AQUA_GRUNT_M_INFO,
+    GENERIC_AQUA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -12762,7 +12778,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_MT_PYRE_3] =
 {
-    AQUA_GRUNT_M_INFO,
+    GENERIC_AQUA_GRUNT_M_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -12778,7 +12794,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_MT_PYRE_4] =
 {
-    AQUA_GRUNT_F_INFO,
+    GENERIC_AQUA_GRUNT_F_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -13272,7 +13288,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_MAGMA_HIDEOUT_1] =
 {
-    MAGMA_GRUNT_M_INFO,
+    GENERIC_MAGMA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13284,7 +13300,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_MAGMA_HIDEOUT_2] =
 {
-    MAGMA_GRUNT_M_INFO,
+    GENERIC_MAGMA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13296,7 +13312,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_MAGMA_HIDEOUT_3] =
 {
-    MAGMA_GRUNT_M_INFO,
+    GENERIC_MAGMA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13308,7 +13324,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_MAGMA_HIDEOUT_4] =
 {
-    MAGMA_GRUNT_M_INFO,
+    GENERIC_MAGMA_GRUNT_M_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -13324,7 +13340,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_MAGMA_HIDEOUT_5] =
 {
-    MAGMA_GRUNT_M_INFO,
+    GENERIC_MAGMA_GRUNT_M_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -13340,7 +13356,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_MAGMA_HIDEOUT_6] =
 {
-    MAGMA_GRUNT_M_INFO,
+    GENERIC_MAGMA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13352,7 +13368,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_MAGMA_HIDEOUT_7] =
 {
-    MAGMA_GRUNT_M_INFO,
+    GENERIC_MAGMA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13364,7 +13380,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_MAGMA_HIDEOUT_8] =
 {
-    MAGMA_GRUNT_M_INFO,
+    GENERIC_MAGMA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13376,7 +13392,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_MAGMA_HIDEOUT_9] =
 {
-    MAGMA_GRUNT_M_INFO,
+    GENERIC_MAGMA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13388,7 +13404,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_MAGMA_HIDEOUT_10] =
 {
-    MAGMA_GRUNT_M_INFO,
+    GENERIC_MAGMA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13400,7 +13416,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_MAGMA_HIDEOUT_11] =
 {
-    MAGMA_GRUNT_M_INFO,
+    GENERIC_MAGMA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13412,7 +13428,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_MAGMA_HIDEOUT_12] =
 {
-    MAGMA_GRUNT_M_INFO,
+    GENERIC_MAGMA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13424,7 +13440,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_MAGMA_HIDEOUT_13] =
 {
-    MAGMA_GRUNT_M_INFO,
+    GENERIC_MAGMA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13436,7 +13452,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_MAGMA_HIDEOUT_14] =
 {
-    MAGMA_GRUNT_F_INFO,
+    GENERIC_MAGMA_GRUNT_F_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13448,7 +13464,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_MAGMA_HIDEOUT_15] =
 {
-    MAGMA_GRUNT_F_INFO,
+    GENERIC_MAGMA_GRUNT_F_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13460,7 +13476,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_MAGMA_HIDEOUT_16] =
 {
-    MAGMA_GRUNT_F_INFO,
+    GENERIC_MAGMA_GRUNT_F_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13511,7 +13527,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_AQUA_HIDEOUT_1] =
 {
-    AQUA_GRUNT_M_INFO,
+    GENERIC_AQUA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13523,7 +13539,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_AQUA_HIDEOUT_2] =
 {
-    AQUA_GRUNT_M_INFO,
+    GENERIC_AQUA_GRUNT_M_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -13539,7 +13555,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_AQUA_HIDEOUT_3] =
 {
-    AQUA_GRUNT_M_INFO,
+    GENERIC_AQUA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13551,7 +13567,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_AQUA_HIDEOUT_4] =
 {
-    AQUA_GRUNT_M_INFO,
+    GENERIC_AQUA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13563,7 +13579,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_AQUA_HIDEOUT_5] =
 {
-    AQUA_GRUNT_F_INFO,
+    GENERIC_AQUA_GRUNT_F_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13575,7 +13591,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_AQUA_HIDEOUT_6] =
 {
-    AQUA_GRUNT_F_INFO,
+    GENERIC_AQUA_GRUNT_F_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -13587,7 +13603,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_AQUA_HIDEOUT_7] =
 {
-    AQUA_GRUNT_F_INFO,
+    GENERIC_AQUA_GRUNT_F_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -13603,7 +13619,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_AQUA_HIDEOUT_8] =
 {
-    AQUA_GRUNT_M_INFO,
+    GENERIC_AQUA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -14408,7 +14424,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 #define SPACE_CENTER_GRUNT_LEVEL 47
 [TRAINER_GRUNT_SPACE_CENTER_1] =
 {
-    MAGMA_GRUNT_M_INFO,
+    GENERIC_MAGMA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -14420,7 +14436,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_SPACE_CENTER_2] =
 {
-    MAGMA_GRUNT_F_INFO,
+    GENERIC_MAGMA_GRUNT_F_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -14436,7 +14452,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_SPACE_CENTER_3] =
 {
-    MAGMA_GRUNT_M_INFO,
+    GENERIC_MAGMA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -14448,7 +14464,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_SPACE_CENTER_4] =
 {
-    MAGMA_GRUNT_M_INFO,
+    GENERIC_MAGMA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -14460,7 +14476,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_SPACE_CENTER_5] =
 {
-    MAGMA_GRUNT_M_INFO,
+    GENERIC_MAGMA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -14472,7 +14488,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
 
 [TRAINER_GRUNT_SPACE_CENTER_6] =
 {
-    MAGMA_GRUNT_M_INFO,
+    GENERIC_MAGMA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -15150,7 +15166,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
 
 [TRAINER_GRUNT_SEAFLOOR_CAVERN_1] =
 {
-    AQUA_GRUNT_M_INFO,
+    GENERIC_AQUA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -15162,7 +15178,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
 
 [TRAINER_GRUNT_SEAFLOOR_CAVERN_2] =
 {
-    AQUA_GRUNT_M_INFO,
+    GENERIC_AQUA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -15174,7 +15190,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
 
 [TRAINER_GRUNT_SEAFLOOR_CAVERN_3] =
 {
-    AQUA_GRUNT_M_INFO,
+    GENERIC_AQUA_GRUNT_M_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
@@ -15186,7 +15202,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
 
 [TRAINER_GRUNT_SEAFLOOR_CAVERN_4] =
 {
-    AQUA_GRUNT_F_INFO,
+    GENERIC_AQUA_GRUNT_F_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {

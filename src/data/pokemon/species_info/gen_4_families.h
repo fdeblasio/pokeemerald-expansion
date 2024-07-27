@@ -2306,8 +2306,8 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .description = COMPOUND_STRING(
             "When it sees a Pachirisu that is\n"
             "running low on electricity, it\n"
-            " rubs cheeks with it in order\n"
-            " to share its own stored charge."),
+            "rubs cheeks with it in order\n"
+            "to share its own stored charge."),
         .pokemonScale = 491,
         .pokemonOffset = 16,
         .trainerScale = 256,
@@ -2325,7 +2325,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .shinyPalette = gMonShinyPalette_Pachirikku,
         .iconSprite = gMonIcon_Pachirikku,
         .iconPalIndex = 0,
-        FOOTPRINT(Name)
+        FOOTPRINT(Pachirisu)
         OVERWORLD(
             sPicTable_Pachirisu,
             SIZE_32x32,

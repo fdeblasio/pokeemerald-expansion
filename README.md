@@ -246,7 +246,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Certain sections are blocked off until gyms or rivals are defeated
 - Wally is given more battles. The battle in Verdanturf starts with Grassy Terrain
 - Battles in long grass on Routes 119 and 120 start with Grassy Terrain (unless it's a thunderstorm)
-- All Pokémon in the Dragon egg group that could not already learn Dragon Breath (with the exception of Magikarp and Trapinch) now get it as an egg move. This is reflected in the species changes below
+- All Pokémon in the Dragon egg group that could not already learn Dragon Breath now get it as an egg move. This is reflected in the species changes below
 - Moves are no longer replaced if a Pokémon levels up in the daycare
 - The old man in the Battle Frontier (in the building above the Pokémon Center) who used to tell you your Pokémon's IVs now Hyper Trains stats for free
 
@@ -1269,6 +1269,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Magikarp:
     - Learns Bounce and Hydro Pump by level up
+    - Learns Dragon Breath by Egg Move
 
 - Gyarados:
     - Type: Water/Flying->Water
@@ -1619,6 +1620,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Spinda:
     - All stats: 60->80
+
+- Trapinch:
+    - Learns Dragon Breath by Egg Move
 
 - Swablu:
     - Received Fluffy as a second Ability

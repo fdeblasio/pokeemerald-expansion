@@ -73,7 +73,6 @@ upcoming
 
 ### Pokémon
 - Eventually remove RSE and/or BDSP teachable moves?
-- Fix removing level up moves from egg moves
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?
 - For Egg Groups that share names with types, give moves of that type to Pokémon not of that type in the egg group
     - Egg moves since egg group?

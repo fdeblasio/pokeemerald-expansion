@@ -11752,7 +11752,7 @@
       "MOVE_COUNTER",
       "MOVE_FEINT",
       "MOVE_HELPING_HAND",
-      "MOVE_HI_JUMP_KICK",
+      "MOVE_HIGH_JUMP_KICK",
       "MOVE_MACH_PUNCH",
       "MOVE_MIND_READER",
       "MOVE_RAPID_SPIN",
@@ -11887,7 +11887,7 @@
       "MOVE_COUNTER",
       "MOVE_FEINT",
       "MOVE_HELPING_HAND",
-      "MOVE_HI_JUMP_KICK",
+      "MOVE_HIGH_JUMP_KICK",
       "MOVE_MACH_PUNCH",
       "MOVE_MIND_READER",
       "MOVE_RAPID_SPIN",
@@ -18490,6 +18490,119 @@
     "TutorMoves": []
   },
   "LEDIAN": {
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_TACKLE"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_SUPERSONIC"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_SWIFT"
+      },
+      {
+        "Level": 5,
+        "Move": "MOVE_SUPERSONIC"
+      },
+      {
+        "Level": 8,
+        "Move": "MOVE_SWIFT"
+      },
+      {
+        "Level": 12,
+        "Move": "MOVE_LIGHT_SCREEN"
+      },
+      {
+        "Level": 12,
+        "Move": "MOVE_REFLECT"
+      },
+      {
+        "Level": 12,
+        "Move": "MOVE_SAFEGUARD"
+      },
+      {
+        "Level": 15,
+        "Move": "MOVE_MACH_PUNCH"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_ROOST"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_STRUGGLE_BUG"
+      },
+      {
+        "Level": 29,
+        "Move": "MOVE_BATON_PASS"
+      },
+      {
+        "Level": 33,
+        "Move": "MOVE_AGILITY"
+      },
+      {
+        "Level": 38,
+        "Move": "MOVE_BUG_BUZZ"
+      },
+      {
+        "Level": 42,
+        "Move": "MOVE_AIR_SLASH"
+      },
+      {
+        "Level": 47,
+        "Move": "MOVE_DOUBLE_EDGE"
+      }
+    ],
+    "PreEvoMoves": [],
+    "TMMoves": [
+      "MOVE_FOCUS_PUNCH",
+      "MOVE_SUNNY_DAY",
+      "MOVE_HYPER_BEAM",
+      "MOVE_LIGHT_SCREEN",
+      "MOVE_PROTECT",
+      "MOVE_GIGA_DRAIN",
+      "MOVE_SAFEGUARD",
+      "MOVE_SOLAR_BEAM",
+      "MOVE_DIG",
+      "MOVE_BRICK_BREAK",
+      "MOVE_DOUBLE_TEAM",
+      "MOVE_REFLECT",
+      "MOVE_AERIAL_ACE",
+      "MOVE_FACADE",
+      "MOVE_REST",
+      "MOVE_ATTRACT",
+      "MOVE_THIEF",
+      "MOVE_ROOST",
+      "MOVE_FOCUS_BLAST",
+      "MOVE_FLING",
+      "MOVE_ENDURE",
+      "MOVE_DRAIN_PUNCH",
+      "MOVE_BUG_BUZZ",
+      "MOVE_GIGA_IMPACT",
+      "MOVE_FLASH",
+      "MOVE_SWORDS_DANCE",
+      "MOVE_SLEEP_TALK",
+      "MOVE_SWAGGER",
+      "MOVE_U_TURN",
+      "MOVE_SUBSTITUTE",
+      "MOVE_STRENGTH",
+      "MOVE_ROCK_SMASH"
+    ],
+    "EggMoves": [
+      "MOVE_BUG_BITE",
+      "MOVE_COUNTER",
+      "MOVE_ENCORE",
+      "MOVE_KNOCK_OFF",
+      "MOVE_PSYBEAM",
+      "MOVE_SCREECH",
+      "MOVE_TAILWIND"
+    ],
+    "TutorMoves": []
+  },
+  "LEDYBULK": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -26446,7 +26559,7 @@
       "MOVE_COUNTER",
       "MOVE_FEINT",
       "MOVE_HELPING_HAND",
-      "MOVE_HI_JUMP_KICK",
+      "MOVE_HIGH_JUMP_KICK",
       "MOVE_MACH_PUNCH",
       "MOVE_MIND_READER",
       "MOVE_RAPID_SPIN",
@@ -26572,7 +26685,7 @@
       "MOVE_COUNTER",
       "MOVE_FEINT",
       "MOVE_HELPING_HAND",
-      "MOVE_HI_JUMP_KICK",
+      "MOVE_HIGH_JUMP_KICK",
       "MOVE_MACH_PUNCH",
       "MOVE_MIND_READER",
       "MOVE_RAPID_SPIN",
@@ -46223,7 +46336,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "WORMADAM_PLANT_CLOAK": {
+  "WORMADAM": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -46587,6 +46700,111 @@
     "TutorMoves": []
   },
   "PACHIRISU": {
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_GROWL"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_BABY_DOLL_EYES"
+      },
+      {
+        "Level": 5,
+        "Move": "MOVE_QUICK_ATTACK"
+      },
+      {
+        "Level": 9,
+        "Move": "MOVE_CHARM"
+      },
+      {
+        "Level": 13,
+        "Move": "MOVE_SPARK"
+      },
+      {
+        "Level": 17,
+        "Move": "MOVE_ENDURE"
+      },
+      {
+        "Level": 19,
+        "Move": "MOVE_NUZZLE"
+      },
+      {
+        "Level": 21,
+        "Move": "MOVE_SWIFT"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_ELECTRO_BALL"
+      },
+      {
+        "Level": 29,
+        "Move": "MOVE_SWEET_KISS"
+      },
+      {
+        "Level": 33,
+        "Move": "MOVE_THUNDER_WAVE"
+      },
+      {
+        "Level": 37,
+        "Move": "MOVE_SUPER_FANG"
+      },
+      {
+        "Level": 41,
+        "Move": "MOVE_DISCHARGE"
+      },
+      {
+        "Level": 45,
+        "Move": "MOVE_LAST_RESORT"
+      },
+      {
+        "Level": 49,
+        "Move": "MOVE_THUNDER"
+      }
+    ],
+    "PreEvoMoves": [],
+    "TMMoves": [
+      "MOVE_LIGHT_SCREEN",
+      "MOVE_PROTECT",
+      "MOVE_RAIN_DANCE",
+      "MOVE_IRON_TAIL",
+      "MOVE_THUNDERBOLT",
+      "MOVE_THUNDER",
+      "MOVE_DIG",
+      "MOVE_DOUBLE_TEAM",
+      "MOVE_SHOCK_WAVE",
+      "MOVE_FACADE",
+      "MOVE_VOLT_SWITCH",
+      "MOVE_REST",
+      "MOVE_ATTRACT",
+      "MOVE_FLING",
+      "MOVE_CHARGE_BEAM",
+      "MOVE_ENDURE",
+      "MOVE_FLASH",
+      "MOVE_THUNDER_WAVE",
+      "MOVE_SLEEP_TALK",
+      "MOVE_GRASS_KNOT",
+      "MOVE_SWAGGER",
+      "MOVE_U_TURN",
+      "MOVE_SUBSTITUTE",
+      "MOVE_CUT"
+    ],
+    "EggMoves": [
+      "MOVE_BABY_DOLL_EYES",
+      "MOVE_BITE",
+      "MOVE_CHARGE",
+      "MOVE_COVET",
+      "MOVE_DEFENSE_CURL",
+      "MOVE_FAKE_TEARS",
+      "MOVE_FLAIL",
+      "MOVE_FLATTER",
+      "MOVE_FOLLOW_ME",
+      "MOVE_ROLLOUT",
+      "MOVE_TAIL_WHIP"
+    ],
+    "TutorMoves": []
+  },
+  "PACHIRIKKU": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -50025,7 +50243,7 @@
       "MOVE_CRUNCH",
       "MOVE_DETECT",
       "MOVE_FOLLOW_ME",
-      "MOVE_HI_JUMP_KICK",
+      "MOVE_HIGH_JUMP_KICK",
       "MOVE_HOWL",
       "MOVE_IRON_DEFENSE",
       "MOVE_LOW_KICK",
@@ -50211,7 +50429,7 @@
       "MOVE_CRUNCH",
       "MOVE_DETECT",
       "MOVE_FOLLOW_ME",
-      "MOVE_HI_JUMP_KICK",
+      "MOVE_HIGH_JUMP_KICK",
       "MOVE_HOWL",
       "MOVE_IRON_DEFENSE",
       "MOVE_LOW_KICK",
@@ -55330,7 +55548,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "SHAYMIN_LAND": {
+  "SHAYMIN": {
     "LevelMoves": [
       {
         "Level": 1,

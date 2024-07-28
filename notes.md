@@ -35,6 +35,11 @@ upcoming
 ```
 
 ## To Do:
+### Hack-specific
+- Figure out Pumpkaboo sizes
+- Replace Alolan Raichu, Meowth trio, Tangela, Ledyba, Togepi, Galarian Corsola, Galarian Zigzagoon, Skrelp in post-game safari zone
+
+### Megas:
 - Z-A Megas:
     - Pidgey line:
         - Make attacking stats more consistent? (Regular has 10 more Atk, but Mega has 55 more SpA)

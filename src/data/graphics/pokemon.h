@@ -9977,7 +9977,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 
     const u32 gMonFrontPic_PachirisuF[] = INCBIN_U32("graphics/pokemon/pachirisu/anim_frontf.4bpp.lz");
 
-    const u32 gMonFrontPic_Pachirikku[] = INCBIN_U32("graphics/pokemon/pachirikku/anim_front.4bpp.lz");
+    const u32 gMonFrontPic_Pachirikku[] = INCBIN_U32("graphics/pokemon/pachirikku/front.4bpp.lz");
     const u32 gMonPalette_Pachirikku[] = INCBIN_U32("graphics/pokemon/pachirikku/normal.gbapal.lz");
     const u32 gMonBackPic_Pachirikku[] = INCBIN_U32("graphics/pokemon/pachirikku/back.4bpp.lz");
     const u32 gMonShinyPalette_Pachirikku[] = INCBIN_U32("graphics/pokemon/pachirikku/shiny.gbapal.lz");

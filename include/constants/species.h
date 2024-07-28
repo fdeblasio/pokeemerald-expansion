@@ -1632,7 +1632,7 @@
 #define SPECIES_LEDYBULK                                1524
 #define SPECIES_PACHIRIKKU                              1525
 
-#define SPECIES_EGG (SPECIES_LEDYBULK + 1)
+#define SPECIES_EGG (SPECIES_PACHIRIKKU + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

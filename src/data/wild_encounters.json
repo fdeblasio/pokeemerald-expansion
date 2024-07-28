@@ -1847,7 +1847,7 @@
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "SANDYGHAST"
+                "species": "SANDYGAST"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
@@ -1855,7 +1855,7 @@
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "SANDYGHAST"
+                "species": "SANDYGAST"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
@@ -1871,7 +1871,7 @@
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "SANDYGHAST"
+                "species": "SANDYGAST"
               }
             ]
           },
@@ -4637,7 +4637,7 @@
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "PUMKPABOO"
+                "species": "PUMPKABOO"
               },
               {
                 "range": "RANGE_MT_PYRE",
@@ -4645,7 +4645,7 @@
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "PUMKPABOO"
+                "species": "PUMPKABOO"
               },
               {
                 "range": "RANGE_MT_PYRE",

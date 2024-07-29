@@ -2271,11 +2271,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 
     [SPECIES_SWOOBAT] =
     {
-        .baseHP        = 67,
-        .baseAttack    = 57,
+        .baseHP        = 80,
+        .baseAttack    = 60,
         .baseDefense   = 55,
-        .baseSpeed     = 114,
-        .baseSpAttack  = 77,
+        .baseSpeed     = 115,
+        .baseSpAttack  = 90,
         .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FLYING),
         .catchRate = 45,

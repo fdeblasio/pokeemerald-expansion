@@ -730,7 +730,6 @@ static const u16 sMeowthEggMoveLearnset[] = {
     MOVE_CHARM,
     MOVE_CHILLING_WATER,
     MOVE_CONFIDE,
-    MOVE_COVET,
     MOVE_ECHOED_VOICE,
     MOVE_ENDEAVOR,
     MOVE_FAKE_TEARS,

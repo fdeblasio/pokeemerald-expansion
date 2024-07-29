@@ -1804,6 +1804,7 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Poison Barb: 5%->0%
 
 - Pachirisu:
+    - SpA: 45->55
     - Learns Shock Wave and Thunder Fang by level up
     - Learns Signal Beam by TM
     - Learns Tail Slap by Egg Move

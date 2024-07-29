@@ -1369,6 +1369,14 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Togepi (postgame):
     - Can also evolve at level 16
+    - Learns Fairy Wind, Draining Kiss, and Disarming Voice by level up
+
+- Togetic (postgame):
+    - Learns Gust by evolving instead of Fairy Wind and learns Fairy Wind by level up instead
+    - Learns Draining Kiss, Disarming Voice, and Air Cutter by level up
+
+- Togekiss (postgame):
+    - Learns Fairy Wind, Gust, Draining Kiss, Disarming Voice, and Air Cutter by level up
 
 - Natu/Xatu:
     - Learns Confusion and Psybeam by level up

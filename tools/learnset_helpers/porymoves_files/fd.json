@@ -7590,16 +7590,32 @@
     "TutorMoves": []
   },
   "NOIBAT": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 4,
+        "Move": "MOVE_TWISTER"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_DRAGON_BREATH"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
-    "EggMoves": [
-      "MOVE_DRAGON_BREATH"
-    ],
+    "EggMoves": [],
     "TutorMoves": []
   },
   "NOIVERN": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_TWISTER"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_DRAGON_BREATH"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

@@ -18257,12 +18257,14 @@ static const struct LevelUpMove sAvaluggHisuianLevelUpLearnset[] = {
 static const struct LevelUpMove sNoibatLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
+    LEVEL_UP_MOVE( 4, MOVE_TWISTER),
     LEVEL_UP_MOVE( 4, MOVE_GUST),
     LEVEL_UP_MOVE( 8, MOVE_SUPERSONIC),
     LEVEL_UP_MOVE(12, MOVE_DOUBLE_TEAM),
     LEVEL_UP_MOVE(16, MOVE_WING_ATTACK),
     LEVEL_UP_MOVE(18, MOVE_AGILITY),
     LEVEL_UP_MOVE(20, MOVE_BITE),
+    LEVEL_UP_MOVE(24, MOVE_DRAGON_BREATH),
     LEVEL_UP_MOVE(24, MOVE_AIR_CUTTER),
     LEVEL_UP_MOVE(28, MOVE_WHIRLWIND),
     LEVEL_UP_MOVE(31, MOVE_RAZOR_WIND),
@@ -18277,6 +18279,7 @@ static const struct LevelUpMove sNoibatLevelUpLearnset[] = {
 
 static const struct LevelUpMove sNoivernLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_DRAGON_PULSE),
+    LEVEL_UP_MOVE( 1, MOVE_TWISTER),
     LEVEL_UP_MOVE( 1, MOVE_GUST),
     LEVEL_UP_MOVE( 1, MOVE_MOONLIGHT),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
@@ -18286,6 +18289,7 @@ static const struct LevelUpMove sNoivernLevelUpLearnset[] = {
     LEVEL_UP_MOVE(16, MOVE_WING_ATTACK),
     LEVEL_UP_MOVE(18, MOVE_AGILITY),
     LEVEL_UP_MOVE(20, MOVE_BITE),
+    LEVEL_UP_MOVE(24, MOVE_DRAGON_BREATH),
     LEVEL_UP_MOVE(24, MOVE_AIR_CUTTER),
     LEVEL_UP_MOVE(28, MOVE_WHIRLWIND),
     LEVEL_UP_MOVE(31, MOVE_RAZOR_WIND),

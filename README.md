@@ -1737,13 +1737,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Hippopotas/Hippowdon:
     - Learn Bulldoze, Stomping Tantrum, Scorching Sands, and High Horsepower by level up
 
-- Snover:
-    - Type: Grass/Ice->Ice/Grass
-
-- Abomasnow:
-    - Type: Grass/Ice->Ice/Grass
-    - Learns Icicle Crash by TM
-
 - Rotom:
     - Def: 77->90
     - SpA: 95->100

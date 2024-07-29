@@ -481,19 +481,19 @@
             "mons": [
               {
                 "range": "RANGE_EVER_GRANDE_CITY",
-                "species": "LUVDISC"
+                "species": "BARRASKEWDA"
               },
               {
                 "range": "RANGE_EVER_GRANDE_CITY",
-                "species": "CORSOLA"
+                "species": "PELIPPER"
               },
               {
                 "range": "RANGE_EVER_GRANDE_CITY",
-                "species": "CORSOLA"
+                "species": "PELIPPER"
               },
               {
                 "range": "RANGE_EVER_GRANDE_CITY",
-                "species": "CORSOLA"
+                "species": "DONDOZO"
               }
             ]
           },
@@ -505,27 +505,27 @@
               },
               {
                 "range": "RANGE_EVER_GRANDE_CITY",
-                "species": "LUVDISC"
+                "species": "ARROKUDA"
               },
               {
                 "range": "RANGE_EVER_GRANDE_CITY",
-                "species": "CORSOLA"
+                "species": "DONDOZO"
               },
               {
                 "range": "RANGE_EVER_GRANDE_CITY",
-                "species": "LUVDISC"
+                "species": "DONDOZO"
               },
               {
                 "range": "RANGE_EVER_GRANDE_CITY",
-                "species": "CORSOLA"
+                "species": "DONDOZO"
               },
               {
                 "range": "RANGE_EVER_GRANDE_CITY",
-                "species": "LUVDISC"
+                "species": "DONDOZO"
               },
               {
                 "range": "RANGE_EVER_GRANDE_CITY",
-                "species": "CORSOLA"
+                "species": "DONDOZO"
               }
             ]
           }
@@ -2438,7 +2438,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WAILMER"
+                "species": "DONDOZO"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -2446,7 +2446,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WAILMER"
+                "species": "DONDOZO"
               }
             ]
           }
@@ -2552,7 +2552,7 @@
               },
               {
                 "range": "RANGE_ROUTE_126",
-                "species": "WAILORD"
+                "species": "DONDOZO"
               },
               {
                 "range": "RANGE_ROUTE_126",
@@ -2560,7 +2560,7 @@
               },
               {
                 "range": "RANGE_ROUTE_126",
-                "species": "WAILORD"
+                "species": "DONDOZO"
               }
             ]
           }
@@ -2654,7 +2654,7 @@
               },
               {
                 "range": "RANGE_ROUTE_128",
-                "species": "LUVDISC"
+                "species": "ARROKUDA"
               },
               {
                 "range": "RANGE_ROUTE_128",

@@ -1554,13 +1554,6 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
 - Hippopotas/Hippowdon:
     - Learn Bulldoze, Stomping Tantrum, Scorching Sands, and High Horsepower by level up
 
-- Snover:
-    - Type: Grass/Ice->Ice/Grass
-
-- Abomasnow:
-    - Type: Grass/Ice->Ice/Grass
-    - Learns Icicle Crash by TM
-
 - Rotom:
     - Def: 77->90
     - SpA: 95->100

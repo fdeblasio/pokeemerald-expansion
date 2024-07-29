@@ -2134,10 +2134,12 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Noibat:
     - Evolution: 48->40
-    - Learns Dragon Breath by Egg Move
+    - Learns Twister and Dragon Breath by level up
 
 - Noivern:
-    - Learns Dragon Breath by Egg Move
+    - SpA: 97->100
+    - Spe: 123->125
+    - Learns Twister and Dragon Breath by level up
 
 - Rowlet:
     - Evolution: 17->16

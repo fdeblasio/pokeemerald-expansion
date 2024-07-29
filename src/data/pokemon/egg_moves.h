@@ -9745,7 +9745,6 @@ static const u16 sNoibatEggMoveLearnset[] = {
     MOVE_CONFIDE,
     MOVE_DEFOG,
     MOVE_DRACO_METEOR,
-    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_RUSH,
     MOVE_ECHOED_VOICE,
     MOVE_HEAT_WAVE,

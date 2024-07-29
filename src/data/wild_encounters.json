@@ -1455,11 +1455,11 @@
               },
               {
                 "range": "RANGE_ROUTE_113",
-                "species": "SANDSHREW"
+                "species": "ORTHWORM"
               },
               {
                 "range": "RANGE_ROUTE_113",
-                "species": "SANDSHREW"
+                "species": "ORTHWORM"
               },
               {
                 "range": "RANGE_ROUTE_113",
@@ -1598,11 +1598,11 @@
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "ORTHWORM"
+                "species": "MUNCHLAX"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "ORTHWORM"
+                "species": "RHYHORN"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
@@ -2629,15 +2629,15 @@
             "encounter_rate": 1,
             "mons": [
               {
-                "range": "RANGE_ROUTE_127",
+                "range": "RANGE_ROUTE_128",
                 "species": "BARRASKEWDA"
               },
               {
-                "range": "RANGE_ROUTE_127",
+                "range": "RANGE_ROUTE_128",
                 "species": "PELIPPER"
               },
               {
-                "range": "RANGE_ROUTE_127",
+                "range": "RANGE_ROUTE_128",
                 "species": "PELIPPER"
               },
               {
@@ -2979,31 +2979,31 @@
           "fishing_mons": {
             "mons": [
               {
-                "range": "RANGE_ROUTE_132",
+                "range": "RANGE_ROUTE_133",
                 "species": "MAGIKARP"
               },
               {
-                "range": "RANGE_ROUTE_132",
+                "range": "RANGE_ROUTE_133",
                 "species": "ARROKUDA"
               },
               {
-                "range": "RANGE_ROUTE_132",
+                "range": "RANGE_ROUTE_133",
                 "species": "WAILMER"
               },
               {
-                "range": "RANGE_ROUTE_132",
+                "range": "RANGE_ROUTE_133",
                 "species": "BARRASKEWDA"
               },
               {
-                "range": "RANGE_ROUTE_132",
+                "range": "RANGE_ROUTE_133",
                 "species": "WAILMER"
               },
               {
-                "range": "RANGE_ROUTE_132",
+                "range": "RANGE_ROUTE_133",
                 "species": "BARRASKEWDA"
               },
               {
-                "range": "RANGE_ROUTE_132",
+                "range": "RANGE_ROUTE_133",
                 "species": "WAILMER"
               }
             ]

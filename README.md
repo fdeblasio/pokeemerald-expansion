@@ -241,7 +241,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Pokémon can now be listed as orange in the Pokédex
 - The Safari Zone is now in the postgame only. Its regular Pokémon have been moved to other locations
 - Underwater areas now connect better
-- Steven now gives out a Jirachi
 - Frontier Brains have updated teams
 - Battle Pyramid wild Pokémon have been updated
 - Battle Frontier no longer requires saving
@@ -294,8 +293,8 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Wynaut from Mirage Island will have their Hidden Ability
 - Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room
     - The door to Sealed Chamber and the Regis' inner rooms are now automatically open
-- Tickets for islands where Latios, Latias, Solgaleo, Zeraora, Therian Landorus, and Mew reside are given after beating the Elite Four
-    - Latios and Latias no longer roam and instead both show up on Southern Island
+- Steven now gives out a Chien-Pao
+- Tickets for islands where Solgaleo, Zeraora, and Therian Landorus reside are given after beating the Elite Four
     - The Birth Island puzzle is much simpler
     - Navel Rock is slightly easier to navigate
 - SS Tidal trainers can be rebattled every trip

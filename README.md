@@ -1699,9 +1699,20 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Pachirisu:
     - SpA: 45->55
+    - Evolves into ??? with a Thunder Stone
     - Learns Shock Wave and Thunder Fang by level up
     - Learns Signal Beam by TM
     - Learns Tail Slap by Egg Move
+
+- ???:
+    - Type: Electric
+    - HP: 80
+    - Atk: 50
+    - Def: 90
+    - SpA: 85
+    - SpD: 105
+    - Spe: 105
+    - Abilities: Cheek Pouch/Pickup/Volt Absorb
 
 - Buizel/Floatzel:
     - Learn Bubble by level up

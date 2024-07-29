@@ -2898,7 +2898,6 @@ static const u16 sChinchouEggMoveLearnset[] = {
 static const u16 sTogepiEggMoveLearnset[] = {
     MOVE_CONFIDE,
     MOVE_COVET,
-    MOVE_DRAINING_KISS,
     MOVE_ECHOED_VOICE,
     MOVE_ENDEAVOR,
     MOVE_EXTRASENSORY,

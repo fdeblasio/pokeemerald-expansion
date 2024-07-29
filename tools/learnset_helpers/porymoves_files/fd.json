@@ -2434,14 +2434,48 @@
     "TutorMoves": []
   },
   "TOGEPI": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_FAIRY_WIND"
+      },
+      {
+        "Level": 17,
+        "Move": "MOVE_DRAINING_KISS"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_DISARMING_VOICE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "TOGETIC": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 0,
+        "Move": "MOVE_GUST"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_FAIRY_WIND"
+      },
+      {
+        "Level": 17,
+        "Move": "MOVE_DRAINING_KISS"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_DISARMING_VOICE"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_AIR_CUTTER"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -2450,8 +2484,24 @@
   "TOGEKISS": {
     "LevelMoves": [
       {
-        "Level": 2,
+        "Level": 1,
         "Move": "MOVE_FAIRY_WIND"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_GUST"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_DRAINING_KISS"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_AIR_CUTTER"
+      },
+      {
+        "Level": 2,
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 2,

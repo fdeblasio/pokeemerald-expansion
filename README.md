@@ -1099,8 +1099,37 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Big Mushroom: 5%->50%
         - Balm Mushroom: 0%->5%
 
+- Meowth (postgame):
+    - Atk: 45->55
+    - Learns Cut and Covet by level up
+
 - Alolan Meowth (postgame):
+    - Def: 35->40
+    - SpA: 50->55
     - Can also evolve at level 28
+    - Learns Pursuit and Thief by level up
+
+- Galarian Meowth (postgame):
+    - Atk: 65->75
+    - Learns Bullet Punch by level up
+
+- Persian (postgame):
+    - HP: 65->70
+    - Atk: 70->100
+    - Learns Cut and Covet by level up
+
+- Alolan Persian (postgame):
+    - HP: 65->70
+    - Def: 60->65
+    - SpA: 75->100
+    - Learns Pursuit and Thief by level up
+
+- Perrserker (postgame):
+    - Atk: 110->115
+    - SpA: 50->60
+    - SpD: 60->65
+    - Spe: 50->65
+    - Learns Bullet Punch by level up
 
 - Igglybuff:
     - Can also evolve at level 12
@@ -1123,6 +1152,14 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Crobat:
     - Learns Gust by level up
+
+- Poliwrath
+    - Atk: 95->100
+    - Learns Liquidation, Drain Punch, and Sky Uppercut by level up
+
+- Politoed
+    - Def: 75->80
+    - SpA: 90->100
 
 - Kadabra/Alakazam:
     - Held item: Twisted Spoon: 5%->100%
@@ -1831,7 +1868,18 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Acrobatics by TM
 
 - Woobat:
+    - Def: 43->45
+    - SpD: 43->45
+    - Spe: 72->75
     - Can also evolve at level 24
+    - Learns Psybeam and Psychic Noise by level up
+
+- Swoobat:
+    - HP: 67->80
+    - Atk: 57->60
+    - SpA: 77->90
+    - Spe: 114->115
+    - Learns Psybeam and Psychic Noise by level up
 
 - Audino:
     - HP: 103->105
@@ -1893,6 +1941,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Ducklett:
     - Evolution: 35->33
+    - Learns Surf and Dual Wingbeat by level up
+
+- Swanna:
+    - Learns Surf and Dual Wingbeat by level up
 
 - Vanillite:
     - Evolution: 35->30
@@ -2021,6 +2073,25 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Kyurem:
     - Learns Icicle Crash by TM
+
+- Litleo:
+    - HP: 62->65
+    - Def: 58->60
+    - SpA: 73->75
+    - SpD: 54->55
+    - Spe: 72->75
+    - Hidden Ability: Moxie->Competitive
+    - Learns Swift and Flame Burst by level up
+
+- Pyroar:
+    - HP: 86->90
+    - Atk: 68->70
+    - Def: 72->75
+    - SpA: 109->110
+    - SpD: 66->70
+    - Spe: 106->110
+    - Hidden Ability: Moxie->Competitive
+    - Learns Swift, Flame Burst, and Fire Blast by level up
 
 - Spritzee/Aromatisse:
     - Gender Ratio: 50/50->25/75

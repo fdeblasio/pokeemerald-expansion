@@ -736,42 +736,88 @@
     "TutorMoves": []
   },
   "MEOWTH": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 16,
+        "Move": "MOVE_CUT"
+      },
+      {
+        "Level": 22,
+        "Move": "MOVE_COVET"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "PERSIAN": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 16,
+        "Move": "MOVE_CUT"
+      },
+      {
+        "Level": 22,
+        "Move": "MOVE_COVET"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "MEOWTH_ALOLAN": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_PURSUIT"
+      },
+      {
+        "Level": 22,
+        "Move": "MOVE_THIEF"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "PERSIAN_ALOLAN": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_PURSUIT"
+      },
+      {
+        "Level": 22,
+        "Move": "MOVE_THIEF"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "MEOWTH_GALARIAN": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_BULLET_PUNCH"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "PERRSERKER": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_BULLET_PUNCH"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -921,6 +967,18 @@
   "POLIWRATH": {
     "LevelMoves": [
       {
+        "Level": 1,
+        "Move": "MOVE_LIQUIDATION"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_DRAIN_PUNCH"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_SKY_UPPERCUT"
+      },
+      {
         "Level": 2,
         "Move": "MOVE_BUBBLE_BEAM"
       },
@@ -943,7 +1001,24 @@
     "TutorMoves": []
   },
   "POLITOED": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 2,
+        "Move": "MOVE_BUBBLE_BEAM"
+      },
+      {
+        "Level": 2,
+        "Move": "MOVE_HYPER_VOICE"
+      },
+      {
+        "Level": 2,
+        "Move": "MOVE_HYPNOSIS"
+      },
+      {
+        "Level": 2,
+        "Move": "MOVE_EARTH_POWER"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -5709,14 +5784,32 @@
     "TutorMoves": []
   },
   "WOOBAT": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 20,
+        "Move": "MOVE_PSYBEAM"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_PSYCHIC_NOISE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "SWOOBAT": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 20,
+        "Move": "MOVE_PSYBEAM"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_PSYCHIC_NOISE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -6225,14 +6318,32 @@
     "TutorMoves": []
   },
   "DUCKLETT": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 37,
+        "Move": "MOVE_SURF"
+      },
+      {
+        "Level": 37,
+        "Move": "MOVE_DUAL_WINGBEAT"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "SWANNA": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 40,
+        "Move": "MOVE_SURF"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_DUAL_WINGBEAT"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -6985,14 +7096,36 @@
     "TutorMoves": []
   },
   "LITLEO": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 20,
+        "Move": "MOVE_SWIFT"
+      },
+      {
+        "Level": 23,
+        "Move": "MOVE_FLAME_BURST"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "PYROAR": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 20,
+        "Move": "MOVE_SWIFT"
+      },
+      {
+        "Level": 23,
+        "Move": "MOVE_FLAME_BURST"
+      },
+      {
+        "Level": 48,
+        "Move": "MOVE_FIRE_BLAST"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

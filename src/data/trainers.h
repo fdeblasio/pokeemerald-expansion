@@ -5296,15 +5296,15 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ability = ABILITY_EFFECT_SPORE,                             \
     .gender = TRAINER_MON_FEMALE
 
-#define HALEY_LOTAD(Level)                                                                                   \
-    .lvl = Level,                                                                                            \
-    .species = Level < 14 ? SPECIES_LOTAD : (Level < REMATCH_5_LEVEL_6 ? SPECIES_LOMBRE : SPECIES_LUDICOLO), \
-    .ability = ABILITY_SWIFT_SWIM,                                                                           \
+#define HALEY_TOGEPI(Level)                                                                                    \
+    .lvl = Level,                                                                                              \
+    .species = Level < 16 ? SPECIES_TOGEPI : (Level < REMATCH_5_LEVEL_6 ? SPECIES_TOGETIC : SPECIES_TOGEKISS), \
+    .ability = ABILITY_CHLOROPHYLL,                                                                            \
     .gender = TRAINER_MON_FEMALE
 
-#define HALEY_TAILLOW(Level)                                                  \
-    .lvl = Level,                                                             \
-    .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_TAILLOW : SPECIES_SWELLOW, \
+#define HALEY_PACHIRISU(Level)                                                     \
+    .lvl = Level,                                                                  \
+    .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_PACHIRISU : SPECIES_PACHIRIKKU, \
     .gender = TRAINER_MON_FEMALE
 
 //Extra for hacks
@@ -5316,7 +5316,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        HALEY_LOTAD(7),
+        HALEY_TOGEPI(7),
         },
         {
         HALEY_SHROOMISH(7),
@@ -5330,11 +5330,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        HALEY_TAILLOW(REMATCH_2_LEVEL_3),
+        HALEY_PACHIRISU(REMATCH_2_LEVEL_3),
         IVS(2),
         },
         {
-        HALEY_LOTAD(REMATCH_2_LEVEL_3),
+        HALEY_TOGEPI(REMATCH_2_LEVEL_3),
         IVS(2),
         },
         {
@@ -5350,11 +5350,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        HALEY_TAILLOW(REMATCH_3_LEVEL_3),
+        HALEY_PACHIRISU(REMATCH_3_LEVEL_3),
         IVS(3),
         },
         {
-        HALEY_LOTAD(REMATCH_3_LEVEL_3),
+        HALEY_TOGEPI(REMATCH_3_LEVEL_3),
         IVS(3),
         },
         {
@@ -5370,11 +5370,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        HALEY_TAILLOW(REMATCH_4_LEVEL_3),
+        HALEY_PACHIRISU(REMATCH_4_LEVEL_3),
         IVS(4),
         },
         {
-        HALEY_LOTAD(REMATCH_4_LEVEL_3),
+        HALEY_TOGEPI(REMATCH_4_LEVEL_3),
         IVS(4),
         },
         {
@@ -5390,11 +5390,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        HALEY_TAILLOW(REMATCH_5_LEVEL_3),
+        HALEY_PACHIRISU(REMATCH_5_LEVEL_3),
         IVS(5),
         },
         {
-        HALEY_LOTAD(REMATCH_5_LEVEL_3),
+        HALEY_TOGEPI(REMATCH_5_LEVEL_3),
         IVS(5),
         },
         {
@@ -5413,11 +5413,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 7,
-        .species = SPECIES_SEEDOT,
+        .species = SPECIES_KARRABLAST,
         },
         {
         .lvl = 7,
-        .species = SPECIES_LOTAD,
+        .species = SPECIES_SHELMET,
         }
     },
 },
@@ -5431,11 +5431,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 6,
-        .species = SPECIES_AZURILL,
+        .species = SPECIES_ARROKUDA,
         },
         {
         .lvl = 6,
-        .species = SPECIES_LOTAD,
+        .species = SPECIES_POLIWAG,
         },
         {
         .lvl = 6,
@@ -5454,7 +5454,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 8,
-        .species = SPECIES_WURMPLE,
+        .species = SPECIES_CATERPIE,
         IVS(6),
         },
         {
@@ -5488,7 +5488,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 9,
-        .species = SPECIES_AZURILL,
+        .species = SPECIES_SNUBBULL,
         }
     },
 },
@@ -5502,7 +5502,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 9,
-        .species = SPECIES_GEODUDE,
+        .species = SPECIES_NACLI,
         }
     },
 },
@@ -5516,7 +5516,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 8,
-        .species = SPECIES_GEODUDE,
+        .species = SPECIES_ROGGENROLA,
         },
         {
         .lvl = 8,
@@ -5538,7 +5538,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         },
         {
         .lvl = 8,
-        .species = SPECIES_SEEDOT,
+        .species = SPECIES_YUNGOOS,
         }
     },
 },
@@ -5552,11 +5552,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         RICH_BOY_MON(8),
-        .species = SPECIES_ABRA,
+        .species = SPECIES_HELIOPTILE,
         },
         {
         RICH_BOY_MON(8),
-        .species = SPECIES_EARLY_BEAST_2,
+        .species = SPECIES_SKIDDO,
         }
     },
 },
@@ -5570,11 +5570,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         RICH_MON(8),
-        .species = SPECIES_LOTAD,
+        .species = SPECIES_PURRLOIN,
         },
         {
         RICH_MON(8),
-        .species = SPECIES_EARLY_BEAST_1,
+        .species = SPECIES_PATRAT,
         }
     },
 },
@@ -5584,10 +5584,10 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     SCHOOLKID_M_INFO,          \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define JERRY_RALTS(Level)                                                                   \
-    .lvl = Level,                                                                            \
-    .species = Level < 20 ? SPECIES_RALTS : (Level < 30 ? SPECIES_KIRLIA : SPECIES_GALLADE), \
-    .ability = 1,                                                                            \
+#define JERRY_ABRA(Level)                                                                                    \
+    .lvl = Level,                                                                                            \
+    .species = Level < 16 ? SPECIES_ABRA : (Level < REMATCH_3_LEVEL_6 ? SPECIES_KADABRA : SPECIES_ALAKAZAM), \
+    .ability = ABILITY_INNER_FOCUS,                                                                          \
     .gender = TRAINER_MON_MALE
 
 #define JERRY_MEDITITE(Level)                                   \
@@ -5610,7 +5610,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        JERRY_RALTS(10),
+        JERRY_ABRA(10),
         IVS(1),
         }
     },
@@ -5626,7 +5626,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(2),
         },
         {
-        JERRY_RALTS(REMATCH_2_LEVEL_2),
+        JERRY_ABRA(REMATCH_2_LEVEL_2),
         IVS(2),
         }
     },
@@ -5646,7 +5646,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(3),
         },
         {
-        JERRY_RALTS(REMATCH_3_LEVEL_3),
+        JERRY_ABRA(REMATCH_3_LEVEL_3),
         IVS(3),
         }
     },
@@ -5666,7 +5666,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(4),
         },
         {
-        JERRY_RALTS(REMATCH_4_LEVEL_3),
+        JERRY_ABRA(REMATCH_4_LEVEL_3),
         IVS(4),
         }
     },
@@ -5686,7 +5686,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(5),
         },
         {
-        JERRY_RALTS(REMATCH_5_LEVEL_3),
+        JERRY_ABRA(REMATCH_5_LEVEL_3),
         IVS(6),
         }
     },
@@ -5703,10 +5703,10 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ability = ABILITY_POISON_HEAL,                              \
     .gender = TRAINER_MON_FEMALE
 
-#define KAREN_WHISMUR(Level)                                                                    \
-    .lvl = Level,                                                                               \
-    .species = Level < 20 ? SPECIES_WHISMUR : (Level < 40 ? SPECIES_LOUDRED : SPECIES_EXPLOUD), \
-    .ability = ABILITY_SOUNDPROOF,                                                              \
+#define KAREN_CLEFFA(Level)                                                                                     \
+    .lvl = Level,                                                                                               \
+    .species = Level < 12 ? SPECIES_CLEFFA : (Level < REMATCH_3_LEVEL_6 ? SPECIES_CLEFAIRY : SPECIES_CLEFABLE), \
+    .ability = ABILITY_MAGIC_GUARD,                                                                             \
     .gender = TRAINER_MON_FEMALE
 
 #define KAREN_SKITTY(Level)                                                   \
@@ -5736,7 +5736,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        KAREN_WHISMUR(REMATCH_2_LEVEL_2),
+        KAREN_CLEFFA(REMATCH_2_LEVEL_2),
         IVS(2),
         },
         {
@@ -5756,7 +5756,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(3),
         },
         {
-        KAREN_WHISMUR(REMATCH_3_LEVEL_3),
+        KAREN_CLEFFA(REMATCH_3_LEVEL_3),
         IVS(3),
         },
         {
@@ -5776,7 +5776,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(4),
         },
         {
-        KAREN_WHISMUR(REMATCH_4_LEVEL_3),
+        KAREN_CLEFFA(REMATCH_4_LEVEL_3),
         IVS(4),
         },
         {
@@ -5796,7 +5796,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(5),
         },
         {
-        KAREN_WHISMUR(REMATCH_5_LEVEL_3),
+        KAREN_CLEFFA(REMATCH_5_LEVEL_3),
         IVS(5),
         },
         {

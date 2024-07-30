@@ -1368,14 +1368,17 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Spe: 40->60
 
 - Togepi (postgame):
+    - Ability: Hustle->Early Bird
     - Can also evolve at level 16
     - Learns Fairy Wind, Draining Kiss, and Disarming Voice by level up
 
 - Togetic (postgame):
+    - Ability: Hustle->Early Bird
     - Learns Gust by evolving instead of Fairy Wind and learns Fairy Wind by level up instead
     - Learns Draining Kiss, Disarming Voice, and Air Cutter by level up
 
 - Togekiss (postgame):
+    - Ability: Hustle->Early Bird
     - Learns Fairy Wind, Gust, Draining Kiss, Disarming Voice, and Air Cutter by level up
 
 - Natu/Xatu:
@@ -1938,8 +1941,8 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Carracosta:
     - Learns Body Press by TM
 
-- Archeops:
-    - Receives Early Bird as a Hidden Ability
+- Archen/Archeops:
+    - Hidden Ability: None->Early Bird
 
 - Gothita:
     - Evolution: 32->22

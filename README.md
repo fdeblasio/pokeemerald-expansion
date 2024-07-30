@@ -1152,7 +1152,6 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
     - Spe: 85
     - Abilities: Swarm/Early Bird/Iron Fist
 
-
 - Spinarak (postgame):
     - Atk: 60->65
     - Spe: 30->40

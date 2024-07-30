@@ -14196,11 +14196,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "Damages adjacent Pokémon\n"
             "and heals up by half of it."),
         .effect = EFFECT_ABSORB,
-        .power = B_UPDATED_MOVE_DATA >= GEN_7 ? 65 : 50,
+        .power = B_UPDATED_MOVE_DATA >= GEN_7 ? 75 : 50,
         .type = TYPE_ELECTRIC,
         .accuracy = 100,
         .pp = 20,
-        .target = MOVE_TARGET_FOES_AND_ALLY,
+        .target = MOVE_TARGET_BOTH,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .healingMove = B_HEAL_BLOCKING >= GEN_6,

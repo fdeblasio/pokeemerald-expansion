@@ -8505,8 +8505,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     {
         .baseHP        = 80,
         .baseAttack    = GOLEM_ATTACK,
-        .baseDefense   = 130,
-        .baseSpeed     = 45,
+        .baseDefense   = 145,
+        .baseSpeed     = 50,
         .baseSpAttack  = 55,
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_ROCK, TYPE_GROUND),
@@ -8701,8 +8701,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     {
         .baseHP        = 80,
         .baseAttack    = GOLEM_ATTACK,
-        .baseDefense   = 130,
-        .baseSpeed     = 45,
+        .baseDefense   = 145,
+        .baseSpeed     = 50,
         .baseSpAttack  = 55,
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_ROCK, TYPE_ELECTRIC),

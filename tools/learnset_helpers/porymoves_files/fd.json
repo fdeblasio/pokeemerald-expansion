@@ -448,14 +448,28 @@
     "TutorMoves": []
   },
   "CLEFFA": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_FAIRY_WIND"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "CLEFAIRY": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_FAIRY_WIND"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_ALLURING_VOICE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -463,6 +477,14 @@
   },
   "CLEFABLE": {
     "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_FAIRY_WIND"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_ALLURING_VOICE"
+      },
       {
         "Level": 2,
         "Move": "MOVE_METRONOME"
@@ -2881,14 +2903,24 @@
     "TutorMoves": []
   },
   "SNUBBULL": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 2,
+        "Move": "MOVE_FAIRY_WIND"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "GRANBULL": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 2,
+        "Move": "MOVE_FAIRY_WIND"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -5813,21 +5845,36 @@
     "TutorMoves": []
   },
   "ROGGENROLA": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ROCK_THROW"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "BOLDORE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ROCK_THROW"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "GIGALITH": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ROCK_THROW"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -7223,14 +7270,32 @@
     "TutorMoves": []
   },
   "SKIDDO": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 34,
+        "Move": "MOVE_GRASSY_TERRAIN"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "GOGOAT": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_TRAILBLAZE"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_GRASSY_GLIDE"
+      },
+      {
+        "Level": 34,
+        "Move": "MOVE_GRASSY_TERRAIN"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -7413,7 +7478,16 @@
     "TutorMoves": []
   },
   "HELIOPTILE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 20,
+        "Move": "MOVE_SHOCK_WAVE"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_SWIFT"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [
@@ -7424,12 +7498,32 @@
   "HELIOLISK": {
     "LevelMoves": [
       {
+        "Level": 0,
+        "Move": "MOVE_WEATHER_BALL"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_SHOCK_WAVE"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_HYPER_VOICE"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_SOLAR_BEAM"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_MORNING_SUN"
+      },
+      {
         "Level": 2,
         "Move": "MOVE_PARABOLIC_CHARGE"
       },
       {
         "Level": 2,
-        "Move": "MOVE_QUICK_ATTACK"
+        "Move": "MOVE_SWIFT"
       },
       {
         "Level": 2,
@@ -7441,7 +7535,9 @@
       }
     ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_EARTH_POWER"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -8660,7 +8756,9 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-    "EggMoves": [],
+    "EggMoves": [
+      "MOVE_DRILL_PECK"
+    ],
     "TutorMoves": []
   },
   "BARRASKEWDA": {
@@ -9278,7 +9376,12 @@
     "TutorMoves": []
   },
   "GARGANACL": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_POWER_GEM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

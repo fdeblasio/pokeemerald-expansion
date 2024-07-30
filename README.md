@@ -740,6 +740,9 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Accuracy: 95->100
     - Fusion Bolt:
         - PP: 5->10
+    - Parabolic Charge:
+        - Power: 65->75
+        - Target: Both foes and ally->both foes
     - Thunderclap:
         - PP: 5->10
     - Thunder Cage:
@@ -1097,6 +1100,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Cleffa (not in main game):
     - Can also evolve at level 12
+    - Learns Fairy Wind by level up
+
+- Clefairy/Clefable (not in main game):
+    - Learn Fairy Wind and Alluring Voice by level up
 
 - Parasect (not in main game):
     - Held items:
@@ -1171,6 +1178,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Machamp:
     - Learns Drain Punch by TM
+
+- Golem/Alolan Golem:
+    - Def: 130->145
+    - Spe: 45->50
 
 - Cloyster (not in main game):
     - Held items:
@@ -1316,6 +1327,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Gyarados:
     - Type: Water/Flying->Water
     - Learns Bounce by level up
+    - Learns Dragon Breath by Egg Move
 
 - Eevee (not in main game):
     - Now evolves into Espeon with a Sun Stone
@@ -1428,8 +1440,12 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Dunsparce (not in main game):
     - Learns Swift by move tutor
 
+- Snubbull (postgame):
+    - Learns Fairy Wind by level up
+
 - Granbull (postgame):
     - Hidden Ability: Rattled->Strong Jaw
+    - Learns Fairy Wind by level up
 
 - Qwilfish/Hisuian Qwilfish/Overqwil (not in main game):
     - Learns Poison Tail by level up
@@ -1884,6 +1900,14 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Unfezant:
     - Learns Acrobatics by TM
 
+- Roggenrola:
+    - Atk: 75->85
+    - SpA: 25->35
+    - Learns Rock Throw by level up
+
+- Boldore/Gigalith
+    - Learn Rock Throw by level up
+
 - Woobat:
     - Def: 43->45
     - SpD: 43->45
@@ -2110,6 +2134,19 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Hidden Ability: Moxie->Competitive
     - Learns Swift, Flame Burst, and Fire Blast by level up
 
+- Skiddo:
+    - Received Grass Pelt as a second Ability and Grassy Surge as a Hidden Ability (previously Grass Pelt)
+    - Learns Grassy Terrain by level up
+
+- Gogoat:
+    - HP: 123->125
+    - Def: 62->65
+    - SpA: 97->90
+    - SpD: 81->85
+    - Spe: 68->70
+    - Received Grass Pelt as a second Ability and Grassy Surge as a Hidden Ability (previously Grass Pelt)
+    - Learns Trailblaze, Grassy Terrain, Grassy Glide by level up
+
 - Spritzee/Aromatisse:
     - Gender Ratio: 50/50->25/75
 
@@ -2123,8 +2160,25 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Dragalge (postgame):
     - Learns Dragon Breath by Egg Move
 
-- Helioptile/Heliolisk:
-    - Learn Dragon Breath by Egg Move
+- Helioptile:
+    - HP: 44->45
+    - Atk: 38->40
+    - Def: 33->35
+    - SpA: 61->65
+    - SpD: 43->45
+    - Learns Shock Wave and Swift by level up
+    - Learns Dragon Breath by Egg Move
+
+- Heliolisk:
+    - HP: 62->65
+    - Def: 52->55
+    - SpA: 109->110
+    - SpD: 94->110
+    - Spe: 109->110
+    - Learns Weather Ball upon evolving
+    - Learns Shock Wave, Swift, Hyper Voice, Solar Beam, and Morning Sun by level up
+    - Learns Earth Power by TM
+    - Learns Dragon Breath by Egg Move
 
 - Tyrunt/Tyrantrum:
     - Learn Dragon Breath by Egg Move
@@ -2236,6 +2290,18 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Silicobra/Sandaconda:
     - Learn Dragon Breath by Egg Move
 
+- Arrokuda:
+    - HP: 41->45
+    - Atk: 63->65
+    - Spe: 66->70
+    - Learns Drill Peck by Egg Move
+
+- Barraskewda:
+    - HP: 61->65
+    - Atk: 123->125
+    - Spe: 136->140
+    - Learns Drill Peck by Egg Move
+
 - Hatenna:
     - Evolution: 32->28
 
@@ -2295,6 +2361,9 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Atk: 80->90
     - Learns Body Press upon evolving
     - Learns Fairy Wind by level up
+
+- Garganacl:
+    - Learns Power Gem by level up
 
 - Ceruledge:
     - Hidden Ability: Weak Armor->Sharpness

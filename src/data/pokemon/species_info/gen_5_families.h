@@ -1956,10 +1956,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_ROGGENROLA] =
     {
         .baseHP        = 55,
-        .baseAttack    = 75,
+        .baseAttack    = 85,
         .baseDefense   = 85,
         .baseSpeed     = 15,
-        .baseSpAttack  = 25,
+        .baseSpAttack  = 35,
         .baseSpDefense = 25,
         .types = MON_TYPES(TYPE_ROCK),
         .catchRate = 255,

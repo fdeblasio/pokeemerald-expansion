@@ -11051,6 +11051,7 @@ static const u16 sArrokudaEggMoveLearnset[] = {
     MOVE_BOUNCE,
     MOVE_CHILLING_WATER,
     MOVE_CLOSE_COMBAT,
+    MOVE_DRILL_PECK,
     MOVE_FLIP_TURN,
     MOVE_HYDRO_PUMP,
     MOVE_ICE_FANG,

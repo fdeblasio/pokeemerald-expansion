@@ -3038,10 +3038,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_ARROKUDA
     [SPECIES_ARROKUDA] =
     {
-        .baseHP        = 41,
-        .baseAttack    = 63,
+        .baseHP        = 45,
+        .baseAttack    = 65,
         .baseDefense   = 40,
-        .baseSpeed     = 66,
+        .baseSpeed     = 70,
         .baseSpAttack  = 40,
         .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_WATER),
@@ -3100,10 +3100,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 
     [SPECIES_BARRASKEWDA] =
     {
-        .baseHP        = 61,
-        .baseAttack    = 123,
+        .baseHP        = 65,
+        .baseAttack    = 125,
         .baseDefense   = 60,
-        .baseSpeed     = 136,
+        .baseSpeed     = 140,
         .baseSpAttack  = 60,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_WATER),

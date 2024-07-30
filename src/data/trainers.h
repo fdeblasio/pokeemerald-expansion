@@ -3373,10 +3373,10 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        MR_BRAT(8),
+        MR_BRAT(7),
         },
         {
-        MR_CAT(8),
+        MR_CAT(7),
         }
     },
 },

@@ -1335,7 +1335,6 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Spe: 85
     - Abilities: Swarm/Early Bird/Iron Fist
 
-
 - Spinarak (postgame):
     - Atk: 60->65
     - Spe: 30->40

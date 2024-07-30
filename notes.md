@@ -77,7 +77,7 @@ upcoming
 - For Egg Groups that share names with types, give moves of that type to Pokémon not of that type in the egg group
     - Egg moves since egg group?
     - Dragon: Dragon Claw/Pulse/Tail/etc. (where applicable)
-    - Fairy
+    - Fairy: Fairy Wind? (Igglybuff, Plusle, Minun, Audino, Hattena, Indeedee, Pikachu, Marill, Shroomish, Skitty, Budew, Snorunt, Cherubi, Phione, Dedenne, Carbink, Togedemaru, Impidimp, Milcery, Falinks, Morpeko, Tandemaus)
     - Bug
     - Flying
     - Grass

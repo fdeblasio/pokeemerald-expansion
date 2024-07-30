@@ -4508,7 +4508,13 @@
       "MOVE_SURF",
       "MOVE_OVERHEAT"
     ],
-    "EggMoves": [],
+    "EggMoves": [
+      "MOVE_GUST",
+      "MOVE_TWISTER",
+      "MOVE_ICY_WIND",
+      "MOVE_HEAT_WAVE",
+      "MOVE_FAIRY_WIND"
+    ],
     "TutorMoves": []
   },
   "KECLEON": {

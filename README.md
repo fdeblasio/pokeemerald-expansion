@@ -1731,10 +1731,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Castform:
     - All stats: 70->80
-    - Learns Surf, Flamethrower, and Ice Beam by level up
-    - Learns Thunder and Solar Beam by level up
-    - Learns Overheat by TM
-    - Learns Surf by TM
+    - Learns Surf, Flamethrower, Ice Beam, Thunder, and Solar Beam by level up
+    - Learns Surf and Overheat by TM
+    - Learns Gust, Twister, Icy Wind, Heat Wave, and Fairy Wind by Egg Move
 
 - Duskull/Dusclops:
     - Learn Spite by Egg Move

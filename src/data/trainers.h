@@ -3063,9 +3063,9 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 },
 
 //Route 104 (south)
-#define WINSTON_INFO                                               \
-    .trainerName = _("Winston"),                                   \
-    RICH_BOY_INFO,                                                 \
+#define WINSTON_INFO             \
+    .trainerName = _("Winston"), \
+    RICH_BOY_INFO,               \
     MINI_BOSS_AI_FLAGS
 
 #define MR_ZIG(Level)                                            \
@@ -3281,7 +3281,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .lvl = Level,             \
     .species = SPECIES_SHEDINJA
 
-#define JAMES_DUSTOX(Level)   \
+#define JAMES_DUSTOX(Level)    \
     .lvl = Level,              \
     .species = SPECIES_DUSTOX, \
     .gender = TRAINER_MON_MALE
@@ -3392,9 +3392,9 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 },
 
 //Route 104 (north)
-#define CINDY_INFO                                                 \
-    .trainerName = _("Cindy"),                                     \
-    LADY_INFO,                                                     \
+#define CINDY_INFO             \
+    .trainerName = _("Cindy"), \
+    LADY_INFO,                 \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
 #define CINDY_ZIGZAGOON(Level)                                   \
@@ -4081,15 +4081,15 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ability = ABILITY_CLEAR_BODY,                                  \
     .gender = TRAINER_MON_MALE
 
-#define ELLIOT_CARVANHA(Level)                                      \
-    .lvl = Level,                                                   \
-    .species = Level < 30 ? SPECIES_CARVANHA : SPECIES_SHARPEDO,    \
+#define ELLIOT_CARVANHA(Level)                                   \
+    .lvl = Level,                                                \
+    .species = Level < 30 ? SPECIES_CARVANHA : SPECIES_SHARPEDO, \
     .gender = TRAINER_MON_MALE
 
-#define ELLIOT_BARBOACH(Level)                                      \
-    .lvl = Level,                                                   \
-    .species = Level < 30 ? SPECIES_BARBOACH : SPECIES_WHISCASH,    \
-    .ability = ABILITY_OBLIVIOUS,                                   \
+#define ELLIOT_BARBOACH(Level)                                   \
+    .lvl = Level,                                                \
+    .species = Level < 30 ? SPECIES_BARBOACH : SPECIES_WHISCASH, \
+    .ability = ABILITY_OBLIVIOUS,                                \
     .gender = TRAINER_MON_MALE
 
 [TRAINER_ELLIOT_1] =
@@ -4394,10 +4394,10 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     TUBER_F_INFO,             \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define LOLA_MARILL(Level)                       \
-    .lvl = Level,                                \
+#define LOLA_MARILL(Level)                                                     \
+    .lvl = Level,                                                              \
     .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_MARILL : SPECIES_AZUMARILL, \
-    .ability = ABILITY_THICK_FAT, \
+    .ability = ABILITY_THICK_FAT,                                              \
     .gender = TRAINER_MON_FEMALE
 
 #define LOLA_WAILMER(Level)        \
@@ -4680,9 +4680,9 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE, \
     .partySize = 2
 
-#define ISABEL_MON(Level, Species)       \
-    POKE_FAN_MON(Level),          \
-    .species = SPECIES_##Species, \
+#define ISABEL_MON(Level, Species) \
+    POKE_FAN_MON(Level),           \
+    .species = SPECIES_##Species,  \
     .gender = TRAINER_MON_FEMALE
 
 [TRAINER_ISABEL_1] =
@@ -5003,7 +5003,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ability = ABILITY_CUTE_CHARM,                                            \
     .gender = TRAINER_MON_MALE
 
-#define MIGUEL_CASTFORM(Level)  \
+#define MIGUEL_CASTFORM(Level)   \
     POKE_FAN_MON(Level),         \
     .species = SPECIES_CASTFORM, \
     .gender = TRAINER_MON_MALE
@@ -5611,10 +5611,10 @@ LYDIA_BATTLE(3, REMATCH_3_LEVEL_3),
 LYDIA_BATTLE(4, REMATCH_4_LEVEL_3),
 LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 
-#define ANNA_AND_MEG_INFO                                                              \
-    .trainerName = _("Anna & Meg"),                                                    \
-    TEAMMATES_INFO,                                                                    \
-    MINI_BOSS_AI_FLAGS, \
+#define ANNA_AND_MEG_INFO           \
+    .trainerName = _("Anna & Meg"), \
+    TEAMMATES_INFO,                 \
+    MINI_BOSS_AI_FLAGS,             \
     .partySize = 2
 
 #define ANNA_MAKUHITA(Level)                                     \
@@ -6306,9 +6306,9 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .species = SPECIES_MINUN,     \
     .gender = TRAINER_MON_MALE
 
-#define BENJAMIN_VOLTORB(Level, IV)                                               \
-    TRIATHLETE_MON(Level, IV),                                                    \
-    .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_VOLTORB : SPECIES_ELECTRODE,   \
+#define BENJAMIN_VOLTORB(Level, IV)                                             \
+    TRIATHLETE_MON(Level, IV),                                                  \
+    .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_VOLTORB : SPECIES_ELECTRODE, \
     .ability = ABILITY_SOUNDPROOF
 
 [TRAINER_BENJAMIN_1] =
@@ -7082,16 +7082,16 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE}, \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY
 
-#define BROOKE_ROSELIA(Level)                                                   \
+#define BROOKE_ROSELIA(Level)                                                  \
     .lvl = Level,                                                              \
     .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_ROSELIA : SPECIES_ROSERADE, \
     .ability = ABILITY_POISON_POINT,                                           \
     .gender = TRAINER_MON_FEMALE
 
-#define BROOKE_NUMEL(Level)                                    \
-    .lvl = Level,                                              \
-    .species = Level < 33 ? SPECIES_NUMEL : SPECIES_CAMERUPT,  \
-    .ability = ABILITY_OBLIVIOUS,                              \
+#define BROOKE_NUMEL(Level)                                   \
+    .lvl = Level,                                             \
+    .species = Level < 33 ? SPECIES_NUMEL : SPECIES_CAMERUPT, \
+    .ability = ABILITY_OBLIVIOUS,                             \
     .gender = TRAINER_MON_FEMALE
 
 #define BROOKE_WINGULL(Level)                                                  \
@@ -7405,7 +7405,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 
 #define LAO_INFO             \
     .trainerName = _("Lao"), \
-    NINJA_BOY_INFO,            \
+    NINJA_BOY_INFO,          \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
 #define LAO_KOFFING(Level)                                     \
@@ -8862,16 +8862,16 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .ability = ABILITY_STURDY, \
     .gender = TRAINER_MON_MALE
 
-#define SAWYER_NUMEL(Level)  \
-    .lvl = Level,              \
+#define SAWYER_NUMEL(Level)                                                  \
+    .lvl = Level,                                                            \
     .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_NUMEL : SPECIES_CAMERUPT, \
-    .ability = 0, \
+    .ability = 0,                                                            \
     .gender = TRAINER_MON_MALE
 
-#define SAWYER_MACHOKE(Level)  \
-    .lvl = Level,              \
+#define SAWYER_MACHOKE(Level)                                                 \
+    .lvl = Level,                                                             \
     .species = Level < REMATCH_5_LEVEL_6 ? SPECIES_MACHOKE : SPECIES_MACHAMP, \
-    .ability = ABILITY_GUTS, \
+    .ability = ABILITY_GUTS,                                                  \
     .gender = TRAINER_MON_MALE
 
 [TRAINER_SAWYER_1] =
@@ -9061,7 +9061,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 #define DUSTY_SANDSLASH(Level)    \
     .lvl = Level,                 \
     .species = SPECIES_SANDSLASH, \
-    IVS(10), \
+    IVS(10),                      \
     .gender = TRAINER_MON_MALE
 
 [TRAINER_DUSTY_1] =
@@ -9643,8 +9643,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     RUIN_MANIAC_INFO,           \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define ANDRES_SANDSHREW(Level)                                                     \
-    .lvl = Level,                                                                   \
+#define ANDRES_SANDSHREW(Level)                                                   \
+    .lvl = Level,                                                                 \
     .species = Level < REMATCH_2_LEVEL_2 ? SPECIES_SANDSHREW : SPECIES_SANDSLASH, \
     .gender = TRAINER_MON_MALE
 
@@ -9847,8 +9847,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     SWIMMER_M_INFO,           \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define TONY_CARVANHA(Level)                                                      \
-    .lvl = Level,                                                                 \
+#define TONY_CARVANHA(Level)                                                    \
+    .lvl = Level,                                                               \
     .species = Level < REMATCH_2_LEVEL_1 ? SPECIES_CARVANHA : SPECIES_SHARPEDO, \
     .gender = TRAINER_MON_MALE
 
@@ -10077,10 +10077,10 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     SAILOR_INFO,              \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define CORY_TENTACOOL(Level)                                                        \
-    .lvl = Level,                                                                    \
+#define CORY_TENTACOOL(Level)                                                      \
+    .lvl = Level,                                                                  \
     .species = Level < REMATCH_2_LEVEL_3 ? SPECIES_TENTACOOL : SPECIES_TENTACRUEL, \
-    .ability = ABILITY_CLEAR_BODY,                                                   \
+    .ability = ABILITY_CLEAR_BODY,                                                 \
     .gender = TRAINER_MON_MALE
 
 #define CORY_MACHOKE(Level)                                                   \
@@ -10089,9 +10089,9 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .ability = ABILITY_GUTS,                                                  \
     .gender = TRAINER_MON_MALE
 
-#define CORY_PELIPPER(Level)       \
-    .lvl = Level,                  \
-    .species = SPECIES_PELIPPER,   \
+#define CORY_PELIPPER(Level)     \
+    .lvl = Level,                \
+    .species = SPECIES_PELIPPER, \
     .ability = ABILITY_KEEN_EYE, \
     .gender = TRAINER_MON_MALE
 
@@ -13794,8 +13794,8 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .ability = ABILITY_WATER_VEIL,                             \
     .gender = TRAINER_MON_FEMALE
 
-#define JENNY_STARYU(Level)                                                  \
-    .lvl = Level,                                                            \
+#define JENNY_STARYU(Level)                                   \
+    .lvl = Level,                                             \
     .species = Level < 47 ? SPECIES_STARYU : SPECIES_STARMIE, \
     .ability = ABILITY_ILLUMINATE
 

@@ -33513,6 +33513,7 @@ static const u16 sHelioliskTeachableLearnset[] = {
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
     MOVE_DRAGON_PULSE,
+    MOVE_EARTH_POWER,
     MOVE_ELECTRIC_TERRAIN,
     MOVE_ENDURE,
     MOVE_FACADE,

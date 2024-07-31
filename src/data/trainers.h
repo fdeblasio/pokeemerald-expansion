@@ -674,26 +674,26 @@ ROXANNE_REMATCH(5),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 16,
-        .species = SPECIES_MACHOP,
-        .ability = ABILITY_NO_GUARD,
+        .species = SPECIES_MAKUHITA,
+        .ability = ABILITY_THICK_FAT,
         IVS(12),
-        .moves = {MOVE_BULK_UP, MOVE_KARATE_CHOP, MOVE_KNOCK_OFF, MOVE_FORESIGHT},
+        .moves = {MOVE_BULK_UP, MOVE_ARM_THRUST, MOVE_FAKE_OUT, MOVE_WHIRLWIND},
         .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 16,
-        .species = SPECIES_MEDITITE,
-        .ability = ABILITY_PURE_POWER,
+        .species = SPECIES_CRABRAWLER,
+        .ability = ABILITY_IRON_FIST,
         IVS(12),
-        .moves = {MOVE_BULK_UP, MOVE_DETECT, MOVE_CONFUSION, MOVE_BIDE},
-        .gender = TRAINER_MON_FEMALE,
+        .moves = {MOVE_BULK_UP, MOVE_ROCK_SMASH, MOVE_VISE_GRIP, MOVE_BUBBLE_BEAM},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 18,
-        .species = SPECIES_MAKUHITA,
-        .ability = ABILITY_THICK_FAT,
+        .species = SPECIES_CLOBBOPUS,
+        .ability = ABILITY_LIMBER,
         IVS(24),
-        .moves = {MOVE_BULK_UP, MOVE_ARM_THRUST, MOVE_FAKE_OUT, MOVE_WHIRLWIND},
+        .moves = {MOVE_BULK_UP, MOVE_ROCK_SMASH, MOVE_BIND, MOVE_DETECT},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
         .ball = ITEM_POKE_BALL,
@@ -703,7 +703,7 @@ ROXANNE_REMATCH(5),
 
 #define BRAWLY_HARIYAMA(rematch, tier)                                         \
     {                                                                          \
-    REMATCH_MON(HARIYAMA, tier, rematch, ITEM_SITRUS_BERRY),                   \
+    REMATCH_MON(HARIYAMA, tier, rematch, ITEM_BLACK_BELT),                     \
     .ability = ABILITY_THICK_FAT,                                              \
     .nature = NATURE_ADAMANT,                                                  \
     EV_SPREAD_ATK_HP_SPE,                                                      \
@@ -863,12 +863,12 @@ ROXANNE_REMATCH(5),
     BRAWLY_INFO,                                \
     LEADER_REMATCH,                             \
     .party = (const struct TrainerMon[]) {      \
-        BRAWLY_GALLADE(Rematch, TIER3),         \
-        BRAWLY_BLAZIKEN(Rematch, TIER3),        \
-        BRAWLY_BRELOOM(Rematch, TIER3),         \
-        BRAWLY_MACHAMP(Rematch, TIER2),         \
-        BRAWLY_MEDICHAM(Rematch, TIER2),        \
-        BRAWLY_HARIYAMA(Rematch, ACE),          \
+        BRAWLY_MIENSHAO(Rematch, TIER3),         \
+        BRAWLY_MACHAMP(Rematch, TIER3),        \
+        BRAWLY_MEDICHAM(Rematch, TIER3),         \
+        BRAWLY_HARIYAMA(Rematch, TIER2),         \
+        BRAWLY_CRABOMINABLE(Rematch, TIER2),        \
+        BRAWLY_GRAPPLOCT(Rematch, ACE),          \
     },                                          \
 }
 
@@ -6062,8 +6062,8 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 16,
-        .species = SPECIES_COMBUSKEN,
+        .lvl = 13,
+        .species = SPECIES_HERACROSS,
         IVS(18),
         }
     },
@@ -6093,8 +6093,8 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 15,
-        .species = SPECIES_MACHOP,
-        IVS(15),
+        .species = SPECIES_CRAWBRAWLER,
+        IVS(12),
         }
     },
 },
@@ -6107,9 +6107,9 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 13,
-        .species = SPECIES_HERACROSS,
-        IVS(12),
+        .lvl = 15,
+        .species = SPECIES_MACHOP,
+        IVS(15),
         }
     },
 },
@@ -6138,7 +6138,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 15,
-        .species = SPECIES_MEDITITE,
+        .species = SPECIES_MIENFOO,
         IVS(15),
         }
     },

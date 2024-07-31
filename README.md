@@ -1097,18 +1097,21 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Persian:
     - HP: 65->70
-    - Atk: 70->75
+    - Atk: 70->100
     - Learns Cut and Covet by level up
 
 - Alolan Persian:
     - HP: 65->70
     - Def: 60->65
+    - SpA: 75->100
     - Learns Pursuit and Thief by level up
     - Learns Cut by TM
 
 - Perrserker:
     - Atk: 110->115
-    - Spe: 50->55
+    - SpA: 50->60
+    - SpD: 60->65
+    - Spe: 50->65
     - Learns Bullet Punch by level up
     - Learns Cut by TM
 

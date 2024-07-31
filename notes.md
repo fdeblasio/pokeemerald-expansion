@@ -42,6 +42,7 @@ upcoming
 ### Hack-specific
 - Figure out Pumpkaboo sizes
 - Replace Alolan Raichu, Meowth trio, Tangela, Ledyba, Togepi, Galarian Corsola, Galarian Zigzagoon, Skrelp in post-game safari zone
+    - Growlithe-H?
 
 ### Next playthrough
 - Consolidate flags

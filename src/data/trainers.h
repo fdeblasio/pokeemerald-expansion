@@ -440,19 +440,19 @@ WALLY_REMATCH(5),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 11,
-        .species = SPECIES_LILEEP,
-        .ability = ABILITY_SUCTION_CUPS,
+        .species = SPECIES_ARCHEN,
+        .ability = ABILITY_DEFEATIST,
         IVS(12),
-        .moves = {MOVE_ROCK_TOMB, MOVE_ASTONISH, MOVE_CONSTRICT, MOVE_ACID},
+        .moves = {MOVE_ROCK_TOMB, MOVE_WING_ATTACK, MOVE_DRAGON_BREATH, MOVE_QUICK_ATTACK},
         .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 11,
-        .species = SPECIES_ANORITH,
-        .ability = ABILITY_SWIFT_SWIM,
+        .species = SPECIES_CRANIDOS,
+        .ability = ABILITY_ROCK_HEAD,
         IVS(12),
-        .moves = {MOVE_ROCK_TOMB, MOVE_SCRATCH, MOVE_HARDEN, MOVE_WATER_GUN},
-        .gender = TRAINER_MON_MALE,
+        .moves = {MOVE_ROCK_TOMB, MOVE_ROCK_SMASH, MOVE_PURSUIT, MOVE_HEADBUTT},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 13,
@@ -647,11 +647,11 @@ WALLY_REMATCH(5),
     ROXANNE_INFO,                                \
     LEADER_REMATCH,                              \
     .party = (const struct TrainerMon[]) {       \
-        ROXANNE_CORSOLA(Rematch, TIER3),         \
-        ROXANNE_AGGRON(Rematch, TIER3),          \
-        ROXANNE_RELICANTH(Rematch, TIER3),       \
-        ROXANNE_CRADILY(Rematch, TIER2),         \
-        ROXANNE_ARMALDO(Rematch, TIER2),         \
+        ROXANNE_GOLEM(Rematch, TIER3),         \
+        ROXANNE_GIGALITH(Rematch, TIER3),          \
+        ROXANNE_GARGANACL(Rematch, TIER3),       \
+        ROXANNE_ARCHEOPS(Rematch, TIER2),         \
+        ROXANNE_RAMPARDOS(Rematch, TIER2),         \
         ROXANNE_PROBOPASS(Rematch, ACE),         \
     },                                           \
 }
@@ -5816,9 +5816,8 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 11,
-        .species = SPECIES_GEODUDE,
+        .species = SPECIES_NACLI,
         IVS(12),
-        .moves = {MOVE_ROCK_TOMB, MOVE_TACKLE, MOVE_MUD_SPORT, MOVE_NONE}
         }
     },
 },
@@ -5832,7 +5831,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 9,
-        .species = SPECIES_GEODUDE,
+        .species = SPECIES_RHYHORN,
         IVS(13),
         },
         {
@@ -5857,7 +5856,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         },
         {
         .lvl = 9,
-        .species = SPECIES_RHYHORN,
+        .species = SPECIES_ROGGENROLA,
         IVS(15),
         }
     },

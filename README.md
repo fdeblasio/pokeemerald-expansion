@@ -1122,20 +1122,17 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Persian (postgame):
     - HP: 65->70
-    - Atk: 70->100
+    - Atk: 70->75
     - Learns Cut and Covet by level up
 
 - Alolan Persian (postgame):
     - HP: 65->70
     - Def: 60->65
-    - SpA: 75->100
     - Learns Pursuit and Thief by level up
 
 - Perrserker (postgame):
     - Atk: 110->115
-    - SpA: 50->60
-    - SpD: 60->65
-    - Spe: 50->65
+    - Spe: 50->55
     - Learns Bullet Punch by level up
 
 - Igglybuff:

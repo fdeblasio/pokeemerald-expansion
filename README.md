@@ -267,7 +267,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Two Pokémon having the same original trainer no longer negatively affects breeding chances
 - HMs can now be forgotten
     - Fly can now be used from the Start Menu after getting Mauville's badge
-    - Cut, Strength, and Rock Smash no longer need a badge to be used
+    - Cut and Strength no longer need a badge to be used
     - Cut trees and Strength boulders have been removed from everywhere but the Trick House
     - Rock Smash rocks have been removed from everywhere but Rusturf Tunnel. Brick Break can now also break them
     - The Escape Rope can by used in the Trick Room puzzles that involve Cut/Strength
@@ -1160,6 +1160,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Crobat:
     - Learns Gust by level up
 
+- Growlithe/Arcanine:
+    - Learn Temper Flare by level up
+
 - Poliwrath
     - Atk: 95->100
     - Learns Liquidation, Drain Punch, and Sky Uppercut by level up
@@ -1248,6 +1251,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Blissey (postgame):
     - Held item: Lucky Egg: 50%->100%
+
+- Tangela/Tangrowth:
+    - Learn Energy Ball by level up
 
 - Goldeen:
     - Learns Aqua Jet by level up
@@ -1518,19 +1524,16 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Flame Wheel by level up
     - Learns Drain Punch by TM
 
-- Mudkip:
-    - Learns Rock Smash later to avoid breaking the game
-
 - Marshtomp:
     - Hidden Ability: Damp->Swift Swim
     - Learns Aqua Jet upon evolving
-    - Learns Rock Smash, Surf, and Earthquake later to avoid breaking the game
+    - Learns Surf and Earthquake later to avoid breaking the game
 
 - Swampert:
     - Hidden Ability: Damp->Swift Swim
     - Learns Aqua Tail upon evolving
     - Learns Aqua Jet by level up
-    - Learns Rock Smash, Surf, and Earthquake later to avoid breaking the game
+    - Learns Surf and Earthquake later to avoid breaking the game
 
 - Poochyena:
     - Speed: 35->40
@@ -1835,6 +1838,9 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Atk: 60->90
     - Sp. Def: 78->117
 
+- Buizel/Floatzel:
+    - Learn Bubble by level up
+
 - Buneary:
     - Can also evolve at level 23
 
@@ -2070,6 +2076,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Mienfoo:
     - Evolution: 50->38
+    - Learns Rock Smash and Double Kick by level up
+
+- Mienshao:
+    - Learns Rock Smash and Double Kick by level up
 
 - Druddigon:
     - Learns Dragon Breath by Egg Move
@@ -2225,6 +2235,12 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Cut, Chip Away, Thunder Fang, Fire Fang, and Ice Fang by level up
 
 - Crabominable:
+    - HP: 97->100
+    - Atk: 132->135
+    - Def: 77->80
+    - SpA: 62->65
+    - SpD: 67->70
+    - Spe: 43->50
     - Learns Icicle Crash by TM
 
 - Salandit/Salazzle:
@@ -2298,6 +2314,15 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Spe: 136->140
     - Learns Drill Peck by Egg Move
 
+- Clobbopus:
+    - Received Suction Cups as a second ability
+
+- Grapploct:
+    - Atk: 118->125
+    - Spe: 42->50
+    - Received Suction Cups as a second ability
+    - Learns Circle Throw, Storm Throw, and Aqua Jet by level up
+
 - Hatenna:
     - Evolution: 32->28
 
@@ -2312,6 +2337,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Snom:
     - Can also evolve at level 21
+
+- Cufant/Copperajah:
+    - Received Sturdy as a second ability
 
 - Duraludon/Archaludon:
     - Learn Dragon Breath by Egg Move
@@ -2384,3 +2412,6 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Spe: 94->95
     - Hidden Ability: Pickpocket->Steelworker
     - Learns Smack Down by level up
+
+- Flamigo:
+    - Learns Brick Break, Dual Wingbeat, Jump Kick, and High Jump Kick by level up

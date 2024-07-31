@@ -8577,7 +8577,6 @@ static const u16 sCryogonalEggMoveLearnset[] = {
 #if P_FAMILY_SHELMET
 static const u16 sShelmetEggMoveLearnset[] = {
     MOVE_BATON_PASS,
-    MOVE_BUG_BITE,
     MOVE_CONFIDE,
     MOVE_ENCORE,
     MOVE_FEINT,

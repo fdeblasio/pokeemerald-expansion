@@ -4093,15 +4093,15 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .species = Level < 20 ? SPECIES_MAGIKARP : SPECIES_GYARADOS, \
     .gender = TRAINER_MON_MALE
 
-#define ELLIOT_CARVANHA(Level)                                   \
-    .lvl = Level,                                                \
-    .species = Level < 30 ? SPECIES_CARVANHA : SPECIES_SHARPEDO, \
+#define ELLIOT_CARVANHA(Level)                                                  \
+    .lvl = Level,                                                               \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_CARVANHA : SPECIES_SHARPEDO, \
     .gender = TRAINER_MON_MALE
 
-#define ELLIOT_BARBOACH(Level)                                   \
-    .lvl = Level,                                                \
-    .species = Level < 30 ? SPECIES_BARBOACH : SPECIES_WHISCASH, \
-    .ability = ABILITY_OBLIVIOUS,                                \
+#define ELLIOT_BARBOACH(Level)                                                  \
+    .lvl = Level,                                                               \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_BARBOACH : SPECIES_WHISCASH, \
+    .ability = ABILITY_OBLIVIOUS,                                               \
     .gender = TRAINER_MON_MALE
 
 [TRAINER_ELLIOT_1] =

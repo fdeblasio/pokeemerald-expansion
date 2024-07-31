@@ -135,11 +135,11 @@ SouthernIsland_Interior_EventScript_Sign::
 	end
 
 SouthernIsland_Interior_EventScript_SetLatiosBattleVars::
-	seteventmon SPECIES_SOUTHERN_ISLAND_1, 70, ITEM_SOUL_DEW
+	seteventmon SPECIES_SOUTHERN_ISLAND_1, POSTGAME_LEVEL, ITEM_SOUL_DEW
 	return
 
 SouthernIsland_Interior_EventScript_SetLatiasBattleVars::
-	seteventmon SPECIES_SOUTHERN_ISLAND_2, 70, ITEM_SOUL_DEW
+	seteventmon SPECIES_SOUTHERN_ISLAND_2, POSTGAME_LEVEL, ITEM_SOUL_DEW
 	return
 
 SouthernIsland_Interior_Movement_CameraPanUp:

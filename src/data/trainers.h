@@ -563,32 +563,55 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 16,
-        .species = SPECIES_MACHOP,
-        .ability = ABILITY_NO_GUARD,
+        .species = SPECIES_MAKUHITA,
+        .ability = ABILITY_THICK_FAT,
         IVS(12),
-        .moves = {MOVE_BULK_UP, MOVE_KARATE_CHOP, MOVE_KNOCK_OFF, MOVE_FORESIGHT},
+        .moves = {MOVE_BULK_UP, MOVE_ARM_THRUST, MOVE_FAKE_OUT, MOVE_WHIRLWIND},
         .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 16,
-        .species = SPECIES_MEDITITE,
-        .ability = ABILITY_PURE_POWER,
+        .species = SPECIES_CRABRAWLER,
+        .ability = ABILITY_IRON_FIST,
         IVS(12),
-        .moves = {MOVE_BULK_UP, MOVE_DETECT, MOVE_CONFUSION, MOVE_BIDE},
-        .gender = TRAINER_MON_FEMALE,
+        .moves = {MOVE_BULK_UP, MOVE_ROCK_SMASH, MOVE_VISE_GRIP, MOVE_BUBBLE_BEAM},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 18,
-        .species = SPECIES_MAKUHITA,
-        .ability = ABILITY_THICK_FAT,
+        .species = SPECIES_CLOBBOPUS,
+        .ability = ABILITY_LIMBER,
         IVS(24),
-        .moves = {MOVE_BULK_UP, MOVE_ARM_THRUST, MOVE_FAKE_OUT, MOVE_WHIRLWIND},
+        .moves = {MOVE_BULK_UP, MOVE_ROCK_SMASH, MOVE_BIND, MOVE_DETECT},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
         .ball = ITEM_POKE_BALL,
         }
     },
 },
+
+#define BRAWLY_GRAPPLOCT(rematch)                                               \
+    {                                                                           \
+    REMATCH_MON(GRAPPLOCT, TIER3, rematch),                                     \
+    .ability = ABILITY_LIMBER,                                                  \
+    .nature = NATURE_ADAMANT,                                                   \
+    EV_SPREAD_ATK_SPE_HP,                                                       \
+    .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_LIQUIDATION, MOVE_OCTOLOCK}, \
+    .gender = TRAINER_MON_MALE,                                                 \
+    .heldItem = ITEM_SITRUS_BERRY,                                              \
+    .ball = ITEM_POKE_BALL,                                                     \
+    }
+
+#define BRAWLY_CRABOMINABLE(rematch)                                                    \
+    {                                                                                   \
+    REMATCH_MON(CRABOMINABLE, TIER3, rematch),                                          \
+    .ability = ABILITY_IRON_FIST,                                                       \
+    .nature = NATURE_ADAMANT,                                                           \
+    EV_SPREAD_ATK_HP_SPD,                                                               \
+    .moves = {MOVE_DRAIN_PUNCH, MOVE_ICE_HAMMER, MOVE_CRABHAMMER, MOVE_POWER_UP_PUNCH}, \
+    .gender = TRAINER_MON_MALE,                                                         \
+    .heldItem = ITEM_ASSAULT_VEST,                                                      \
+    }
 
 #define BRAWLY_HARIYAMA(rematch)                                               \
     {                                                                          \
@@ -598,8 +621,7 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     EV_SPREAD_ATK_HP_SPE,                                                      \
     .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_BELLY_DRUM, MOVE_FAKE_OUT}, \
     .gender = TRAINER_MON_MALE,                                                \
-    .heldItem = ITEM_SITRUS_BERRY,                                             \
-    .ball = ITEM_POKE_BALL,                                                    \
+    .heldItem = ITEM_BLACK_BELT,                                               \
     }
 
 #define BRAWLY_MEDICHAM(rematch)                                                  \
@@ -610,7 +632,6 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     EV_SPREAD_ATK_SPE_HP,                                                         \
     .moves = {MOVE_BULK_UP, MOVE_HIGH_JUMP_KICK, MOVE_ZEN_HEADBUTT, MOVE_DETECT}, \
     .gender = TRAINER_MON_FEMALE,                                                 \
-    .heldItem = ITEM_MUSCLE_BAND,                                                 \
     }
 
 #define BRAWLY_MACHAMP(rematch)                                               \
@@ -621,37 +642,16 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     EV_SPREAD_ATK_SPE_HP,                                                     \
     .moves = {MOVE_BULK_UP, MOVE_CROSS_CHOP, MOVE_KNOCK_OFF, MOVE_DUAL_CHOP}, \
     .gender = TRAINER_MON_MALE,                                               \
-    .heldItem = ITEM_BLACK_BELT,                                              \
     }
 
-#define BRAWLY_BRELOOM(rematch)                                                   \
-    {                                                                             \
-    REMATCH_MON(BRELOOM, TIER3, rematch),                                         \
-    .ability = ABILITY_TECHNICIAN,                                                \
-    .nature = NATURE_ADAMANT,                                                     \
-    EV_SPREAD_ATK_SPE_HP,                                                         \
-    .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_BULLET_SEED, MOVE_MACH_PUNCH}, \
-    .gender = TRAINER_MON_MALE,                                                   \
-    }
-
-#define BRAWLY_BLAZIKEN(rematch)                                                   \
-    {                                                                              \
-    REMATCH_MON(BLAZIKEN, TIER3, rematch),                                         \
-    .ability = ABILITY_BLAZE,                                                      \
-    .nature = NATURE_ADAMANT,                                                      \
-    EV_SPREAD_ATK_SPE_HP,                                                          \
-    .moves = {MOVE_BULK_UP, MOVE_SKY_UPPERCUT, MOVE_BLAZE_KICK, MOVE_MIRROR_MOVE}, \
-    .gender = TRAINER_MON_MALE,                                                    \
-    }
-
-#define BRAWLY_GALLADE(rematch)                                                   \
-    {                                                                             \
-    REMATCH_MON(GALLADE, TIER3, rematch),                                         \
-    .ability = ABILITY_JUSTIFIED,                                                 \
-    .nature = NATURE_ADAMANT,                                                     \
-    EV_SPREAD_ATK_SPE_HP,                                                         \
-    .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_PSYCHO_CUT, MOVE_NIGHT_SLASH}, \
-    .gender = TRAINER_MON_MALE,                                                   \
+#define BRAWLY_MIENSHAO(rematch)                                              \
+    {                                                                         \
+    REMATCH_MON(MIENSHAO, TIER3, rematch),                                    \
+    .ability = ABILITY_REGENERATOR,                                           \
+    .nature = NATURE_ADAMANT,                                                 \
+    EV_SPREAD_ATK_SPE_HP,                                                     \
+    .moves = {MOVE_BULK_UP, MOVE_HIGH_JUMP_KICK, MOVE_U_TURN, MOVE_FAKE_OUT}, \
+    .gender = TRAINER_MON_MALE,                                               \
     }
 
 [TRAINER_BRAWLY_2] =
@@ -659,11 +659,11 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     BRAWLY_INFO,
     LEADER_REMATCH(2),
     .party = (const struct TrainerMon[]) {
-        BRAWLY_BLAZIKEN(2),
-        BRAWLY_BRELOOM(2),
         BRAWLY_MACHAMP(2),
         BRAWLY_MEDICHAM(2),
         BRAWLY_HARIYAMA(2),
+        BRAWLY_CRABOMINABLE(2),
+        BRAWLY_GRAPPLOCT(2),
     },
 },
 
@@ -672,11 +672,11 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     BRAWLY_INFO,
     LEADER_REMATCH(3),
     .party = (const struct TrainerMon[]) {
-        BRAWLY_BLAZIKEN(3),
-        BRAWLY_BRELOOM(3),
         BRAWLY_MACHAMP(3),
         BRAWLY_MEDICHAM(3),
         BRAWLY_HARIYAMA(3),
+        BRAWLY_CRABOMINABLE(3),
+        BRAWLY_GRAPPLOCT(3),
     },
 },
 
@@ -685,12 +685,12 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     BRAWLY_INFO,
     LEADER_REMATCH(4),
     .party = (const struct TrainerMon[]) {
-        BRAWLY_GALLADE(4),
-        BRAWLY_BLAZIKEN(4),
-        BRAWLY_BRELOOM(4),
+        BRAWLY_MIENSHAO(4),
         BRAWLY_MACHAMP(4),
         BRAWLY_MEDICHAM(4),
         BRAWLY_HARIYAMA(4),
+        BRAWLY_CRABOMINABLE(4),
+        BRAWLY_GRAPPLOCT(4),
     },
 },
 
@@ -699,12 +699,12 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     BRAWLY_INFO,
     LEADER_REMATCH(5),
     .party = (const struct TrainerMon[]) {
-        BRAWLY_GALLADE(5),
-        BRAWLY_BLAZIKEN(5),
-        BRAWLY_BRELOOM(5),
+        BRAWLY_MIENSHAO(5),
         BRAWLY_MACHAMP(5),
         BRAWLY_MEDICHAM(5),
         BRAWLY_HARIYAMA(5),
+        BRAWLY_CRABOMINABLE(5),
+        BRAWLY_GRAPPLOCT(5),
     },
 },
 
@@ -4539,8 +4539,8 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 16,
-        .species = SPECIES_COMBUSKEN,
+        .lvl = 13,
+        .species = SPECIES_HERACROSS,
         IVS(18),
         }
     },
@@ -4570,8 +4570,8 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 15,
-        .species = SPECIES_MACHOP,
-        IVS(15),
+        .species = SPECIES_CRAWBRAWLER,
+        IVS(12),
         }
     },
 },
@@ -4584,9 +4584,9 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 13,
-        .species = SPECIES_HERACROSS,
-        IVS(12),
+        .lvl = 15,
+        .species = SPECIES_MACHOP,
+        IVS(15),
         }
     },
 },
@@ -4615,7 +4615,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 15,
-        .species = SPECIES_MEDITITE,
+        .species = SPECIES_MIENFOO,
         IVS(15),
         }
     },

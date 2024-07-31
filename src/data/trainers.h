@@ -4272,9 +4272,9 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 13,
-        .species = SPECIES_HERACROSS,
-        IVS(12),
+        .lvl = 15,
+        .species = SPECIES_MACHOP,
+        IVS(15),
         }
     },
 },
@@ -4287,9 +4287,9 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 15,
-        .species = SPECIES_MACHOP,
-        IVS(15),
+        .lvl = 13,
+        .species = SPECIES_HERACROSS,
+        IVS(12),
         }
     },
 },

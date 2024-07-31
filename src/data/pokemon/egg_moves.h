@@ -5655,7 +5655,6 @@ static const u16 sCastformEggMoveLearnset[] = {
     MOVE_GUST,
     MOVE_HEAT_WAVE,
     MOVE_HEX,
-    MOVE_ICY_WIND,
     MOVE_LAST_RESORT,
     MOVE_OMINOUS_WIND,
     MOVE_REFLECT_TYPE,

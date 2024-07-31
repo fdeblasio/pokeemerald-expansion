@@ -1733,7 +1733,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - All stats: 70->80
     - Learns Surf, Flamethrower, Ice Beam, Thunder, and Solar Beam by level up
     - Learns Surf and Overheat by TM
-    - Learns Gust, Twister, Icy Wind, Heat Wave, and Fairy Wind by Egg Move
+    - Learns Gust, Twister, Heat Wave, and Fairy Wind by Egg Move
 
 - Duskull/Dusclops:
     - Learn Spite by Egg Move
@@ -1814,6 +1814,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Cranidos/Rampardos:
     - Received Rock Head as a second ability
+    - Learn Rock Throw, Rock Tomb, Brick Break, and Rock Slide by level up
 
 - Shieldon/Bastiodon:
     - Received Rock Head as a second ability
@@ -1961,6 +1962,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Archen/Archeops:
     - Hidden Ability: None->Early Bird
+    - Learn Dual Wingbeat by level up
 
 - Gothita:
     - Evolution: 32->22
@@ -2041,13 +2043,13 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Shelmet:
     - SpA: 40->50
     - Can also evolve with Linking Cord
-    - Learns Signal Beam by level up
+    - Learns Bug Bite and Signal Beam by level up
 
 - Accelgor:
     - SpA: 100->110
     - Abilities: Hydration/Sticky Hold/Unburden->Hydration/Dry Skin/Speed Boost
     - Learns Water Shuriken upon evolving
-    - Learns Signal Beam by level up
+    - Learns Bug Bite and Signal Beam by level up
 
 - Stunfisk:
     - HP: 109->110

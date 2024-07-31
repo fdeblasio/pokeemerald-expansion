@@ -2905,6 +2905,18 @@
   "SNUBBULL": {
     "LevelMoves": [
       {
+        "Level": 1,
+        "Move": "MOVE_ICE_FANG"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_FIRE_FANG"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_THUNDER_FANG"
+      },
+      {
         "Level": 2,
         "Move": "MOVE_FAIRY_WIND"
       }
@@ -2916,6 +2928,18 @@
   },
   "GRANBULL": {
     "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ICE_FANG"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_FIRE_FANG"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_THUNDER_FANG"
+      },
       {
         "Level": 2,
         "Move": "MOVE_FAIRY_WIND"
@@ -5014,14 +5038,48 @@
     "TutorMoves": []
   },
   "CRANIDOS": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ROCK_THROW"
+      },
+      {
+        "Level": 15,
+        "Move": "MOVE_ROCK_TOMB"
+      },
+      {
+        "Level": 28,
+        "Move": "MOVE_BRICK_BREAK"
+      },
+      {
+        "Level": 33,
+        "Move": "MOVE_ROCK_SLIDE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "RAMPARDOS": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ROCK_THROW"
+      },
+      {
+        "Level": 15,
+        "Move": "MOVE_ROCK_TOMB"
+      },
+      {
+        "Level": 28,
+        "Move": "MOVE_BRICK_BREAK"
+      },
+      {
+        "Level": 36,
+        "Move": "MOVE_ROCK_SLIDE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -6292,14 +6350,24 @@
     "TutorMoves": []
   },
   "ARCHEN": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 24,
+        "Move": "MOVE_DUAL_WINGBEAT"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "ARCHEOPS": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 24,
+        "Move": "MOVE_DUAL_WINGBEAT"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -6755,6 +6823,10 @@
   "SHELMET": {
     "LevelMoves": [
       {
+        "Level": 1,
+        "Move": "MOVE_BUG_BITE"
+      },
+      {
         "Level": 32,
         "Move": "MOVE_SIGNAL_BEAM"
       }
@@ -6769,6 +6841,10 @@
       {
         "Level": 0,
         "Move": "MOVE_WATER_SHURIKEN"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_BUG_BITE"
       },
       {
         "Level": 32,

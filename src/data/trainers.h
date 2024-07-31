@@ -406,18 +406,19 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 11,
-        .species = SPECIES_LILEEP,
+        .species = SPECIES_ARCHEN,
+        .ability = ABILITY_DEFEATIST,
         IVS(12),
-        .moves = {MOVE_ROCK_TOMB, MOVE_ASTONISH, MOVE_CONSTRICT, MOVE_ACID},
+        .moves = {MOVE_ROCK_TOMB, MOVE_WING_ATTACK, MOVE_DRAGON_BREATH, MOVE_QUICK_ATTACK},
         .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 11,
-        .species = SPECIES_ANORITH,
-        .ability = ABILITY_SWIFT_SWIM,
+        .species = SPECIES_CRANIDOS,
+        .ability = ABILITY_ROCK_HEAD,
         IVS(12),
-        .moves = {MOVE_ROCK_TOMB, MOVE_SCRATCH, MOVE_HARDEN, MOVE_WATER_GUN},
-        .gender = TRAINER_MON_MALE,
+        .moves = {MOVE_ROCK_TOMB, MOVE_ROCK_SMASH, MOVE_PURSUIT, MOVE_HEADBUTT},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 13,
@@ -443,56 +444,56 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     .ball = ITEM_POKE_BALL,                                                             \
     }
 
-#define ROXANNE_ARMALDO(rematch)                                                    \
-    {                                                                               \
-    REMATCH_MON(ARMALDO, TIER2, rematch),                                           \
-    .ability = ABILITY_BATTLE_ARMOR,                                                \
-    .nature = NATURE_ADAMANT,                                                       \
-    EV_SPREAD_ATK_DEF_HP,                                                           \
-    .moves = {MOVE_ROCK_SLIDE, MOVE_X_SCISSOR, MOVE_CRUSH_CLAW, MOVE_SWORDS_DANCE}, \
-    .gender = TRAINER_MON_MALE,                                                     \
-    .heldItem = ITEM_QUICK_CLAW,                                                    \
+#define ROXANNE_RAMPARDOS(rematch)                                                   \
+    {                                                                                \
+    REMATCH_MON(RAMPARDOS, TIER2, rematch),                                          \
+    .ability = ABILITY_ROCK_HEAD,                                                    \
+    .nature = NATURE_ADAMANT,                                                        \
+    EV_SPREAD_ATK_SPE_HP,                                                            \
+    .moves = {MOVE_HEAD_SMASH, MOVE_ZEN_HEADBUTT, MOVE_IRON_HEAD, MOVE_BRICK_BREAK}, \
+    .gender = TRAINER_MON_FEMALE,                                                    \
+    .heldItem = ITEM_QUICK_CLAW,                                                     \
     }
 
-#define ROXANNE_CRADILY(rematch)                                                \
-    {                                                                           \
-    REMATCH_MON(CRADILY, TIER2, rematch),                                       \
-    .ability = ABILITY_STORM_DRAIN,                                             \
-    .nature = NATURE_CALM,                                                      \
-    EV_SPREAD_SPA_SPD_DEF,                                                      \
-    .moves = {MOVE_GIGA_DRAIN, MOVE_ANCIENT_POWER, MOVE_INGRAIN, MOVE_AMNESIA}, \
-    .gender = TRAINER_MON_FEMALE,                                               \
-    .heldItem = ITEM_BIG_ROOT,                                                  \
+#define ROXANNE_ARCHEOPS(rematch)                                                  \
+    {                                                                              \
+    REMATCH_MON(ARCHEOPS, TIER2, rematch),                                         \
+    .ability = ABILITY_EARLY_BIRD,                                                 \
+    .nature = NATURE_ADAMANT,                                                      \
+    EV_SPREAD_ATK_SPE_HP,                                                          \
+    .moves = {MOVE_ROCK_SLIDE, MOVE_DUAL_WINGBEAT, MOVE_CRUNCH, MOVE_DRAGON_CLAW}, \
+    .gender = TRAINER_MON_FEMALE,                                                  \
+    .heldItem = ITEM_SHELL_BELL,                                                   \
     }
 
-#define ROXANNE_RELICANTH(rematch)                                               \
-    {                                                                            \
-    REMATCH_MON(RELICANTH, TIER3, rematch),                                      \
-    .ability = ABILITY_ROCK_HEAD,                                                \
-    .nature = NATURE_IMPISH,                                                     \
-    EV_SPREAD_ATK_DEF_HP,                                                        \
-    .moves = {MOVE_HEAD_SMASH, MOVE_AQUA_TAIL, rematch < 5 ? MOVE_DOUBLE_EDGE : MOVE_BODY_PRESS, MOVE_IRON_DEFENSE}, \
-    .gender = TRAINER_MON_FEMALE,                                                \
+#define ROXANNE_GARGANACL(rematch)                                                 \
+    {                                                                              \
+    REMATCH_MON(GARGANACL, TIER3, rematch),                                        \
+    .ability = ABILITY_PURIFYING_SALT,                                             \
+    .nature = NATURE_IMPISH,                                                       \
+    EV_SPREAD_ATK_DEF_HP,                                                          \
+    .moves = {MOVE_ROCK_SLIDE, MOVE_SALT_CURE, MOVE_BODY_PRESS, MOVE_WIDE_GUARD}, \
+    .gender = TRAINER_MON_FEMALE,                                                  \
     }
 
-#define ROXANNE_AGGRON(rematch, move1, move2, move3)                        \
-    {                                                                       \
-    REMATCH_MON(AGGRON, TIER3, rematch),                                    \
-    .ability = ABILITY_ROCK_HEAD,                                           \
-    .nature = NATURE_IMPISH,                                                \
-    EV_SPREAD_ATK_DEF_HP,                                                   \
-    .moves = {MOVE_##move1, MOVE_##move2, MOVE_##move3, MOVE_STEALTH_ROCK}, \
-    .gender = TRAINER_MON_FEMALE,                                           \
+#define ROXANNE_GIGALITH(rematch)                                                  \
+    {                                                                              \
+    REMATCH_MON(GIGALITH, TIER3, rematch),                                         \
+    .ability = ABILITY_SAND_STREAM,                                                \
+    .nature = NATURE_ADAMANT,                                                      \
+    EV_SPREAD_ATK_SPD_HP,                                                          \
+    .moves = {MOVE_ROCK_SLIDE, MOVE_IRON_HEAD, MOVE_SANDSTORM, MOVE_STEALTH_ROCK}, \
+    .gender = TRAINER_MON_FEMALE,                                                  \
     }
 
-#define ROXANNE_CORSOLA(rematch)                                          \
-    {                                                                     \
-    REMATCH_MON(CORSOLA, TIER3, rematch),                                 \
-    .ability = ABILITY_REGENERATOR,                                       \
-    .nature = NATURE_CALM,                                                \
-    EV_SPREAD_SPA_SPD_HP,                                                 \
-    .moves = {MOVE_POWER_GEM, MOVE_SCALD, MOVE_LIFE_DEW, MOVE_SANDSTORM}, \
-    .gender = TRAINER_MON_FEMALE,                                         \
+#define ROXANNE_GOLEM(rematch)                                                            \
+    {                                                                                     \
+    REMATCH_MON(GOLEM, TIER3, rematch),                                                   \
+    .ability = ABILITY_SAND_VEIL,                                                         \
+    .nature = NATURE_IMPISH,                                                              \
+    EV_SPREAD_ATK_DEF_HP,                                                                 \
+    .moves = {MOVE_ROCK_SLIDE, MOVE_HIGH_HORSEPOWER, MOVE_BODY_PRESS, MOVE_IRON_DEFENSE}, \
+    .gender = TRAINER_MON_FEMALE,                                                         \
     }
 
 [TRAINER_ROXANNE_2] =
@@ -500,10 +501,10 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     ROXANNE_INFO,
     LEADER_REMATCH(2),
     .party = (const struct TrainerMon[]) {
-        ROXANNE_AGGRON(2, IRON_HEAD, ROCK_SLIDE, SANDSTORM),
-        ROXANNE_RELICANTH(2),
-        ROXANNE_CRADILY(2),
-        ROXANNE_ARMALDO(2),
+        ROXANNE_GIGALITH(2),
+        ROXANNE_GARGANACL(2),
+        ROXANNE_ARCHEOPS(2),
+        ROXANNE_RAMPARDOS(2),
         ROXANNE_PROBOPASS(2),
     },
 },
@@ -513,10 +514,10 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     ROXANNE_INFO,
     LEADER_REMATCH(3),
     .party = (const struct TrainerMon[]) {
-        ROXANNE_AGGRON(3, IRON_HEAD, ROCK_SLIDE, SANDSTORM),
-        ROXANNE_RELICANTH(3),
-        ROXANNE_CRADILY(3),
-        ROXANNE_ARMALDO(3),
+        ROXANNE_GIGALITH(3),
+        ROXANNE_GARGANACL(3),
+        ROXANNE_ARCHEOPS(3),
+        ROXANNE_RAMPARDOS(3),
         ROXANNE_PROBOPASS(3),
     },
 },
@@ -526,11 +527,11 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     ROXANNE_INFO,
     LEADER_REMATCH(4),
     .party = (const struct TrainerMon[]) {
-        ROXANNE_CORSOLA(4),
-        ROXANNE_AGGRON(4, IRON_HEAD, ROCK_SLIDE, SANDSTORM),
-        ROXANNE_RELICANTH(4),
-        ROXANNE_CRADILY(4),
-        ROXANNE_ARMALDO(4),
+        ROXANNE_GOLEM(4),
+        ROXANNE_GIGALITH(4),
+        ROXANNE_GARGANACL(4),
+        ROXANNE_ARCHEOPS(4),
+        ROXANNE_RAMPARDOS(4),
         ROXANNE_PROBOPASS(4),
     },
 },
@@ -540,11 +541,11 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     ROXANNE_INFO,
     LEADER_REMATCH(5),
     .party = (const struct TrainerMon[]) {
-        ROXANNE_CORSOLA(5),
-        ROXANNE_AGGRON(5, HEAD_SMASH, BODY_PRESS, IRON_DEFENSE),
-        ROXANNE_RELICANTH(5),
-        ROXANNE_CRADILY(5),
-        ROXANNE_ARMALDO(5),
+        ROXANNE_GOLEM(5),
+        ROXANNE_GIGALITH(5),
+        ROXANNE_GARGANACL(5),
+        ROXANNE_ARCHEOPS(5),
+        ROXANNE_RAMPARDOS(5),
         ROXANNE_PROBOPASS(5),
     },
 },
@@ -4295,9 +4296,8 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 11,
-        .species = SPECIES_GEODUDE,
+        .species = SPECIES_NACLI,
         IVS(12),
-        .moves = {MOVE_ROCK_TOMB, MOVE_TACKLE, MOVE_MUD_SPORT, MOVE_NONE}
         }
     },
 },
@@ -4311,7 +4311,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 9,
-        .species = SPECIES_GEODUDE,
+        .species = SPECIES_RHYHORN,
         IVS(13),
         },
         {
@@ -4336,7 +4336,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         },
         {
         .lvl = 9,
-        .species = SPECIES_RHYHORN,
+        .species = SPECIES_ROGGENROLA,
         IVS(15),
         }
     },

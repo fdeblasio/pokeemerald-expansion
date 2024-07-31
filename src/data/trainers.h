@@ -6093,7 +6093,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 15,
-        .species = SPECIES_CRAWBRAWLER,
+        .species = SPECIES_CRABRAWLER,
         IVS(12),
         }
     },

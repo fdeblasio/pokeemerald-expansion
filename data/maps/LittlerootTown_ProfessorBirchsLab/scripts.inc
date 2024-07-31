@@ -329,7 +329,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_TakeYourTime::
 LittlerootTown_ProfessorBirchsLab_EventScript_GiveCyndaquil::
 	bufferspeciesname STR_VAR_1, POSTGAME_FIRE_STARTER
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, POSTGAME_FIRE_STARTER
-	givemon POSTGAME_FIRE_STARTER, 70
+	givemon POSTGAME_FIRE_STARTER, POSTGAME_LEVEL
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, LittlerootTown_ProfessorBirchsLab_EventScript_SendCyndaquilToParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, LittlerootTown_ProfessorBirchsLab_EventScript_SendCyndaquilToPC
 	hidemonpic
@@ -369,7 +369,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedCyndaquil::
 LittlerootTown_ProfessorBirchsLab_EventScript_GiveTotodile::
 	bufferspeciesname STR_VAR_1, POSTGAME_WATER_STARTER
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, POSTGAME_WATER_STARTER
-	givemon POSTGAME_WATER_STARTER, 70
+	givemon POSTGAME_WATER_STARTER, POSTGAME_LEVEL
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, LittlerootTown_ProfessorBirchsLab_EventScript_SendTotodileToParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, LittlerootTown_ProfessorBirchsLab_EventScript_SendTotodileToPC
 	hidemonpic
@@ -409,7 +409,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedTotodile::
 LittlerootTown_ProfessorBirchsLab_EventScript_GiveChikorita::
 	bufferspeciesname STR_VAR_1, POSTGAME_GRASS_STARTER
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, POSTGAME_GRASS_STARTER
-	givemon POSTGAME_GRASS_STARTER, 70
+	givemon POSTGAME_GRASS_STARTER, POSTGAME_LEVEL
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, LittlerootTown_ProfessorBirchsLab_EventScript_SendChikoritaToParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, LittlerootTown_ProfessorBirchsLab_EventScript_SendChikoritaToPC
 	hidemonpic

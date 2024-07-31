@@ -57,7 +57,7 @@ NavelRock_Top_EventScript_HoOh::
 	applymovement LOCALID_HO_OH, NavelRock_Top_Movement_HoOhApproach
 	waitmovement 0
 	special RemoveCameraObject
-	seteventmon SPECIES_NAVEL_ROCK_TOP, 70
+	seteventmon SPECIES_NAVEL_ROCK_TOP, POSTGAME_LEVEL
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLegendaryBattle
 	waitstate

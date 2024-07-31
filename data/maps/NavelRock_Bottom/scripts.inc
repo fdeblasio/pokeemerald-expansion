@@ -53,7 +53,7 @@ NavelRock_Bottom_EventScript_Lugia::
 	playmoncry SPECIES_NAVEL_ROCK_BOTTOM, CRY_MODE_ENCOUNTER
 	waitmoncry
 	delay 20
-	seteventmon SPECIES_NAVEL_ROCK_BOTTOM, 70
+	seteventmon SPECIES_NAVEL_ROCK_BOTTOM, POSTGAME_LEVEL
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLegendaryBattle
 	waitstate

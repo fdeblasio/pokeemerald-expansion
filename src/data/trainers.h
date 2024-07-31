@@ -5882,7 +5882,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 14,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_ARROKUDA,
         IVS(1),
         }
     },
@@ -5899,9 +5899,9 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ability = ABILITY_OBLIVIOUS,                              \
     .gender = TRAINER_MON_MALE
 
-#define ELLIOT_TENTACOOL(Level)                                     \
+#define ELLIOT_ARROKUDA(Level)                                      \
     .lvl = Level,                                                   \
-    .species = Level < 30 ? SPECIES_TENTACOOL : SPECIES_TENTACRUEL, \
+    .species = Level < 26 ? SPECIES_ARROKUDA : SPECIES_BARRASKEWDA, \
     .ability = ABILITY_CLEAR_BODY,                                  \
     .gender = TRAINER_MON_MALE
 
@@ -5933,7 +5933,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         ELLIOT_MAGIKARP(13),
         },
         {
-        ELLIOT_TENTACOOL(13),
+        ELLIOT_ARROKUDA(13),
         },
         {
         ELLIOT_WAILMER(13),
@@ -5959,7 +5959,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(2),
         },
         {
-        ELLIOT_TENTACOOL(REMATCH_2_LEVEL_5),
+        ELLIOT_ARROKUDA(REMATCH_2_LEVEL_5),
         IVS(2),
         },
         {
@@ -5987,7 +5987,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(3),
         },
         {
-        ELLIOT_TENTACOOL(REMATCH_3_LEVEL_5),
+        ELLIOT_ARROKUDA(REMATCH_3_LEVEL_5),
         IVS(3),
         },
         {
@@ -6015,7 +6015,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(4),
         },
         {
-        ELLIOT_TENTACOOL(REMATCH_4_LEVEL_5),
+        ELLIOT_ARROKUDA(REMATCH_4_LEVEL_5),
         IVS(4),
         },
         {
@@ -6043,7 +6043,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(5),
         },
         {
-        ELLIOT_TENTACOOL(REMATCH_5_LEVEL_5),
+        ELLIOT_ARROKUDA(REMATCH_5_LEVEL_5),
         IVS(5),
         },
         {

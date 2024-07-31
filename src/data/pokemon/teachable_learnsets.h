@@ -22573,6 +22573,7 @@ static const u16 sCranidosTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BODY_SLAM,
+    MOVE_BRICK_BREAK,
     MOVE_CRUNCH,
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,

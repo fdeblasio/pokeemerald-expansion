@@ -590,16 +590,16 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     },
 },
 
-#define BRAWLY_GRAPPLOCT(rematch)                                               \
-    {                                                                           \
-    REMATCH_MON(GRAPPLOCT, TIER3, rematch),                                     \
-    .ability = ABILITY_LIMBER,                                                  \
-    .nature = NATURE_ADAMANT,                                                   \
-    EV_SPREAD_ATK_SPE_HP,                                                       \
-    .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_LIQUIDATION, MOVE_OCTOLOCK}, \
-    .gender = TRAINER_MON_MALE,                                                 \
-    .heldItem = ITEM_SITRUS_BERRY,                                              \
-    .ball = ITEM_POKE_BALL,                                                     \
+#define BRAWLY_GRAPPLOCT(rematch)                                            \
+    {                                                                        \
+    REMATCH_MON(GRAPPLOCT, TIER3, rematch),                                  \
+    .ability = ABILITY_TECHNICIAN,                                           \
+    .nature = NATURE_ADAMANT,                                                \
+    EV_SPREAD_ATK_SPE_HP,                                                    \
+    .moves = {MOVE_BULK_UP, MOVE_STORM_THROW, MOVE_AQUA_JET, MOVE_OCTOLOCK}, \
+    .gender = TRAINER_MON_MALE,                                              \
+    .heldItem = ITEM_SITRUS_BERRY,                                           \
+    .ball = ITEM_POKE_BALL,                                                  \
     }
 
 #define BRAWLY_CRABOMINABLE(rematch)                                                    \
@@ -4570,7 +4570,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 15,
-        .species = SPECIES_CRAWBRAWLER,
+        .species = SPECIES_CRABRAWLER,
         IVS(12),
         }
     },

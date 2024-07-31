@@ -572,6 +572,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
         {
         .lvl = 16,
         .species = SPECIES_MEDITITE,
+        .ability = ABILITY_PURE_POWER,
         IVS(12),
         .moves = {MOVE_BULK_UP, MOVE_DETECT, MOVE_CONFUSION, MOVE_BIDE},
         .gender = TRAINER_MON_FEMALE,
@@ -604,6 +605,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 #define BRAWLY_MEDICHAM(rematch)                                                  \
     {                                                                             \
     REMATCH_MON(MEDICHAM, TIER2, rematch),                                        \
+    .ability = ABILITY_PURE_POWER,                                                \
     .nature = NATURE_ADAMANT,                                                     \
     EV_SPREAD_ATK_SPE_HP,                                                         \
     .moves = {MOVE_BULK_UP, MOVE_HIGH_JUMP_KICK, MOVE_ZEN_HEADBUTT, MOVE_DETECT}, \
@@ -635,6 +637,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 #define BRAWLY_BLAZIKEN(rematch)                                                   \
     {                                                                              \
     REMATCH_MON(BLAZIKEN, TIER3, rematch),                                         \
+    .ability = ABILITY_BLAZE,                                                      \
     .nature = NATURE_ADAMANT,                                                      \
     EV_SPREAD_ATK_SPE_HP,                                                          \
     .moves = {MOVE_BULK_UP, MOVE_SKY_UPPERCUT, MOVE_BLAZE_KICK, MOVE_MIRROR_MOVE}, \
@@ -1417,6 +1420,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 #define TATE_SOLROCK(rematch)                                                          \
     {                                                                                  \
     REMATCH_MON(SOLROCK, ACE, rematch),                                                \
+    .ability = ABILITY_LEVITATE,                                                       \
     .nature = NATURE_ADAMANT,                                                          \
     EV_SPREAD_ATK_DEF_HP,                                                              \
     .moves = {MOVE_ZEN_HEADBUTT, MOVE_ROCK_SLIDE, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN}, \
@@ -1427,6 +1431,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 #define LIZA_LUNATONE(rematch)                                                 \
     {                                                                          \
     REMATCH_MON(LUNATONE, ACE, rematch),                                       \
+    .ability = ABILITY_LEVITATE,                                               \
     .nature = NATURE_MODEST,                                                   \
     EV_SPREAD_SPA_SPD_HP,                                                      \
     .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_ICY_WIND, MOVE_COSMIC_POWER}, \
@@ -1447,6 +1452,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 #define LIZA_CLAYDOL(rematch)                                                       \
     {                                                                               \
     REMATCH_MON(CLAYDOL, TIER2, rematch),                                           \
+    .ability = ABILITY_LEVITATE,                                                    \
     .nature = NATURE_CALM,                                                          \
     EV_SPREAD_DEF_SPD_HP,                                                           \
     .moves = {MOVE_PSYCHIC, MOVE_EARTH_POWER, MOVE_POWER_SPLIT, MOVE_COSMIC_POWER}, \
@@ -1455,6 +1461,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 #define TATE_CHIMECHO(rematch)                                                   \
     {                                                                            \
     REMATCH_MON(CHIMECHO, TIER3, rematch),                                       \
+    .ability = ABILITY_LEVITATE,                                                 \
     .nature = NATURE_MODEST,                                                     \
     EV_SPREAD_SPA_SPD_HP,                                                        \
     .moves = {MOVE_PSYCHIC, MOVE_HEAL_PULSE, MOVE_LIGHT_SCREEN, MOVE_HEAL_BELL}, \
@@ -4081,6 +4088,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ability = ABILITY_CLEAR_BODY,                                  \
     .gender = TRAINER_MON_MALE
 
+#define ELLIOT_MAGIKARP(Level)                                   \
+    .lvl = Level,                                                \
+    .species = Level < 20 ? SPECIES_MAGIKARP : SPECIES_GYARADOS, \
+    .gender = TRAINER_MON_MALE
+
 #define ELLIOT_CARVANHA(Level)                                   \
     .lvl = Level,                                                \
     .species = Level < 30 ? SPECIES_CARVANHA : SPECIES_SHARPEDO, \
@@ -4098,9 +4110,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 13,
-        .species = SPECIES_MAGIKARP,
-        .gender = TRAINER_MON_MALE,
+        ELLIOT_MAGIKARP(13),
         },
         {
         ELLIOT_TENTACOOL(13),
@@ -4125,10 +4135,8 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(2),
         },
         {
-        .lvl = REMATCH_2_LEVEL_5,
-        .species = SPECIES_GYARADOS,
+        ELLIOT_MAGIKARP(REMATCH_2_LEVEL_5),
         IVS(2),
-        .gender = TRAINER_MON_MALE,
         },
         {
         ELLIOT_TENTACOOL(REMATCH_2_LEVEL_5),
@@ -4155,10 +4163,8 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(3),
         },
         {
-        .lvl = REMATCH_3_LEVEL_5,
-        .species = SPECIES_GYARADOS,
+        ELLIOT_MAGIKARP(REMATCH_3_LEVEL_5),
         IVS(3),
-        .gender = TRAINER_MON_MALE,
         },
         {
         ELLIOT_TENTACOOL(REMATCH_3_LEVEL_5),
@@ -4185,10 +4191,8 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(4),
         },
         {
-        .lvl = REMATCH_4_LEVEL_5,
-        .species = SPECIES_GYARADOS,
+        ELLIOT_MAGIKARP(REMATCH_4_LEVEL_5),
         IVS(4),
-        .gender = TRAINER_MON_MALE,
         },
         {
         ELLIOT_TENTACOOL(REMATCH_4_LEVEL_5),
@@ -4215,10 +4219,8 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(5),
         },
         {
-        .lvl = REMATCH_5_LEVEL_5,
-        .species = SPECIES_GYARADOS,
+        ELLIOT_MAGIKARP(REMATCH_5_LEVEL_5),
         IVS(5),
-        .gender = TRAINER_MON_MALE,
         },
         {
         ELLIOT_TENTACOOL(REMATCH_5_LEVEL_5),

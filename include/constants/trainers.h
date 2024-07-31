@@ -390,6 +390,7 @@
 #define F_TRAINER_FEMALE (1 << 7)
 
 // Trainer party defines
+#define TRAINER_MON_NONE          0
 #define TRAINER_MON_MALE          1
 #define TRAINER_MON_FEMALE        2
 #define TRAINER_MON_RANDOM_GENDER 3

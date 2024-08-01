@@ -2860,15 +2860,15 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 2,                                                                   \
     .party = (const struct TrainerMon[]) {                                            \
         {                                                                             \
-        .lvl = Level,                                                                 \
-        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_GOLDEEN : SPECIES_SEAKING, \
+        .species = Level < AQUA_HIDEOUT_LEVEL ? SPECIES_POLIWAG : (Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_POLIWHIRL : SPECIES_POLIWRATH), \
         .ability = ABILITY_SWIFT_SWIM,                                                \
         .gender = TRAINER_MON_FEMALE,                                                 \
         },                                                                            \
         {                                                                             \
         .lvl = Level,                                                                 \
-        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_STARYU : SPECIES_STARMIE,  \
-        .ability = ABILITY_ILLUMINATE,                                                \
+        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_DUCKLETT : SPECIES_SWANNA, \
+        .ability = ABILITY_BIG_PECKS,                                                 \
+        .gender = TRAINER_MON_FEMALE,                                                 \
         }                                                                             \
     },                                                                                \
 }
@@ -2882,14 +2882,14 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {                                                 \
         {                                                                                  \
         .lvl = Level,                                                                      \
-        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_TENTACOOL : SPECIES_TENTACRUEL, \
-        .ability = ABILITY_CLEAR_BODY,                                                     \
+        .species = Level < AQUA_HIDEOUT_LEVEL ? SPECIES_POLIWAG : (Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_POLIWHIRL : SPECIES_POLITOED), \
+        .ability = ABILITY_SWIFT_SWIM,                                                     \
         .gender = TRAINER_MON_MALE,                                                        \
         },                                                                                 \
         {                                                                                  \
         .lvl = Level,                                                                      \
-        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_CORPHISH : SPECIES_CRAWDAUNT,   \
-        .ability = ABILITY_SHELL_ARMOR,                                                    \
+        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_ARROKUDA : SPECIES_BARRASKEWDA, \
+        .ability = ABILITY_SWIFT_SWIM,                                                     \
         .gender = TRAINER_MON_MALE,                                                        \
         }                                                                                  \
     },                                                                                     \
@@ -3135,6 +3135,15 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ball = ITEM_POKE_BALL,                                      \
     .nickname = COMPOUND_STRING("Finneas")
 
+#define ARCHIE_ARROKUDA(Level)                                      \
+    {                                                               \
+    .lvl = Level,                                                   \
+    .species = Level < 26 ? SPECIES_ARROKUDA : SPECIES_BARRASKEWDA, \
+    .ability = ABILITY_SWIFT_SWIM,                                  \
+    IVS(18),                                                        \
+    .gender = TRAINER_MON_MALE,                                     \
+    }
+
 #define ARCHIE_WAILMER(Level)                                  \
     {                                                          \
     .lvl = Level,                                              \
@@ -3142,15 +3151,6 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ability = ABILITY_OBLIVIOUS,                              \
     IVS(18),                                                   \
     .gender = TRAINER_MON_MALE,                                \
-    }
-
-#define ARCHIE_TENTACOOL(Level)                                     \
-    {                                                               \
-    .lvl = Level,                                                   \
-    .species = Level < 30 ? SPECIES_TENTACOOL : SPECIES_TENTACRUEL, \
-    .ability = ABILITY_CLEAR_BODY,                                  \
-    IVS(18),                                                        \
-    .gender = TRAINER_MON_MALE,                                     \
     }
 
 
@@ -4665,7 +4665,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 17,
-        .species = SPECIES_AZURILL,
+        .species = SPECIES_BUIZEL,
         }
     },
 },
@@ -4679,11 +4679,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 16,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_POLIWAG,
         },
         {
         .lvl = 16,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_ARROKUDA,
         }
     },
 },
@@ -4693,10 +4693,10 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     TUBER_F_INFO,             \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define LOLA_MARILL(Level)                                                     \
-    .lvl = Level,                                                              \
-    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_MARILL : SPECIES_AZUMARILL, \
-    .ability = ABILITY_THICK_FAT,                                              \
+#define LOLA_BUIZEL(Level)                                                    \
+    .lvl = Level,                                                             \
+    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_BUIZEL : SPECIES_FLOATZEL, \
+    .ability = ABILITY_SWIFT_SWIM,                                            \
     .gender = TRAINER_MON_FEMALE
 
 #define LOLA_WAILMER(Level)        \
@@ -4709,7 +4709,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        LOLA_MARILL(18),
+        LOLA_BUIZEL(18),
         IVS(1),
         }
     },
@@ -4725,7 +4725,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(2),
         },
         {
-        LOLA_MARILL(REMATCH_2_LEVEL_2),
+        LOLA_BUIZEL(REMATCH_2_LEVEL_2),
         IVS(2),
         }
     },
@@ -4741,7 +4741,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(3),
         },
         {
-        LOLA_MARILL(REMATCH_3_LEVEL_2),
+        LOLA_BUIZEL(REMATCH_3_LEVEL_2),
         IVS(3),
         }
     },
@@ -4757,7 +4757,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(4),
         },
         {
-        LOLA_MARILL(REMATCH_4_LEVEL_2),
+        LOLA_BUIZEL(REMATCH_4_LEVEL_2),
         IVS(4),
         }
     },
@@ -4773,7 +4773,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(5),
         },
         {
-        LOLA_MARILL(REMATCH_5_LEVEL_2),
+        LOLA_BUIZEL(REMATCH_5_LEVEL_2),
         IVS(5),
         }
     },
@@ -4791,11 +4791,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .moves = {MOVE_SURF, MOVE_HEADBUTT, MOVE_PIN_MISSILE, MOVE_SAND_ATTACK}, \
     .gender = TRAINER_MON_MALE
 
-#define RICKY_LOMBRE(Level, Move2, Move3)                                     \
+#define RICKY_DUCKLETT(Level, Move2, Move3)                                   \
     .lvl = Level,                                                             \
-    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_LOMBRE : SPECIES_LUDICOLO, \
-    .ability = ABILITY_SWIFT_SWIM,                                            \
-    .moves = {MOVE_SURF, MOVE_##Move2, MOVE_##Move3, MOVE_FAKE_OUT},          \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_DUCKLETT : SPECIES_SWANNA, \
+    .ability = ABILITY_BIG_PECKS,                                             \
+    .moves = {MOVE_SURF, MOVE_AIR_SLASH, MOVE_FEATHER_DANCE, MOVE_AQUA_RING}, \
     .gender = TRAINER_MON_MALE
 
 [TRAINER_RICKY_1] =
@@ -4816,7 +4816,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        RICKY_LOMBRE(REMATCH_2_LEVEL_2, MEGA_DRAIN, TEETER_DANCE),
+        RICKY_DUCKLETT(REMATCH_2_LEVEL_2),
         IVS(2),
         },
         {
@@ -4832,7 +4832,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        RICKY_LOMBRE(REMATCH_3_LEVEL_2, GIGA_DRAIN, NATURE_POWER),
+        RICKY_DUCKLETT(REMATCH_3_LEVEL_2),
         IVS(3),
         },
         {
@@ -4848,7 +4848,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        RICKY_LOMBRE(REMATCH_4_LEVEL_2, GIGA_DRAIN, NATURE_POWER),
+        RICKY_DUCKLETT(REMATCH_4_LEVEL_2),
         IVS(4),
         },
         {
@@ -4864,7 +4864,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        RICKY_LOMBRE(REMATCH_5_LEVEL_2, GIGA_DRAIN, NATURE_POWER),
+        RICKY_DUCKLETT(REMATCH_5_LEVEL_2),
         IVS(5),
         },
         {
@@ -4884,11 +4884,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 16,
-        .species = SPECIES_MARILL,
+        .species = SPECIES_BUIZEL,
         },
         {
         .lvl = 16,
-        .species = SPECIES_MARILL,
+        .species = SPECIES_POLIWAG,
         }
     },
 },
@@ -4902,7 +4902,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 17,
-        .species = SPECIES_GOLDEEN,
+        .species = SPECIES_DUCKLETT,
         }
     },
 },
@@ -4920,11 +4920,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         },
         {
         .lvl = 15,
-        .species = SPECIES_MACHOP,
+        .species = SPECIES_CRABRAWLER,
         },
         {
         .lvl = 15,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_ARROKUDA,
         }
     },
 },
@@ -4938,8 +4938,8 @@ MARINA_BATTLE(MUSEUM, 17),
     ARCHIE_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
-        ARCHIE_TENTACOOL(17),
         ARCHIE_WAILMER(17),
+        ARCHIE_ARROKUDA(17),
         {
         FINNEAS(19),
         .moves = {MOVE_AQUA_JET, MOVE_BITE, MOVE_POISON_FANG, MOVE_FOCUS_ENERGY},
@@ -14764,13 +14764,13 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 53,
-        .species = SPECIES_GOLDUCK,
-        .ability = ABILITY_DAMP,
+        .species = SPECIES_DONDOZO,
+        .ability = ABILITY_UNAWARE,
         IVS(18),
         .gender = TRAINER_MON_MALE,
         },
-        ARCHIE_TENTACOOL(53),
-        ARCHIE_WAILMER(54),
+        ARCHIE_WAILMER(53),
+        ARCHIE_ARROKUDA(54),
         {
         FINNEAS(55),
         .moves = {MOVE_LIQUIDATION, MOVE_CRUNCH, MOVE_ICE_FANG, MOVE_POISON_FANG},

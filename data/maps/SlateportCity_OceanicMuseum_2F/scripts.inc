@@ -58,6 +58,9 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	applymovement LOCALID_ARCHIE, SlateportCity_OceanicMuseum_2F_Movement_ArchieApproachPlayer
 	waitmovement 0
 	msgbox SlateportCity_OceanicMuseum_2F_Text_ArchieWarning, MSGBOX_DEFAULT
+	@closemessage
+	trainerbattle_no_intro TRAINER_ARCHIE_MUSEUM, SlateportCity_OceanicMuseum_2F_Text_ArchieDefeat
+	msgbox SlateportCity_OceanicMuseum_2F_Text_ArchieRetreat, MSGBOX_DEFAULT
 	closemessage
 	savebgm MUS_DUMMY
 	fadedefaultbgm
@@ -338,7 +341,13 @@ SlateportCity_OceanicMuseum_2F_Text_ArchieWarning:
 	.string "So, Team Aqua is dedicated to\n"
 	.string "the expansion of the sea.\p"
 	.string "Don't you agree? What we are doing\n"
-	.string "is a magnificent undertaking.\p"
+	.string "is a magnificent undertaking.$"
+
+SlateportCity_OceanicMuseum_2F_Text_ArchieDefeat:
+	.string "… … … … … …\n"
+	.string "… … … … … …$"
+
+SlateportCity_OceanicMuseum_2F_Text_ArchieRetreat:
 	.string "Ah, fine…\n"
 	.string "You're still too young to understand\l"
 	.string "our noble objective.\p"

@@ -1174,6 +1174,12 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Machamp:
     - Learns Drain Punch by TM
 
+- Bellsprout/Weepinbell
+    - Learn Absorb, Mega Drain, Magical Leaf, Giga Drain, Venoshock, and Seed Bomb by level up
+
+- Victreebel:
+    - Learns Absorb, Mega Drain, Magical Leaf, Giga Drain, Venoshock, Seed Bomb, Poison Fang, and Solar Blade by level up
+
 - Golem/Alolan Golem:
     - Def: 130->145
     - Spe: 45->50
@@ -1812,6 +1818,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Chimchar:
     - Evolution: 14->16
 
+- Shinx/Luxio/Luxray:
+    - Learn Supercell Slam by level up
+
 - Cranidos/Rampardos:
     - Received Rock Head as a second ability
     - Learn Rock Throw, Rock Tomb, Brick Break, and Rock Slide by level up
@@ -1966,6 +1975,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Archen/Archeops:
     - Hidden Ability: None->Early Bird
     - Learn Dual Wingbeat by level up
+
+- Trubbish/Garbodor:
+    - Learn Poison Sting, Poison Fang, and Poison Jab by level up
 
 - Gothita:
     - Evolution: 32->22

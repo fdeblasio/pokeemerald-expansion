@@ -1101,14 +1101,64 @@
     "TutorMoves": []
   },
   "BELLSPROUT": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ABSORB"
+      },
+      {
+        "Level": 23,
+        "Move": "MOVE_MEGA_DRAIN"
+      },
+      {
+        "Level": 27,
+        "Move": "MOVE_MAGICAL_LEAF"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_GIGA_DRAIN"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_VENOSHOCK"
+      },
+      {
+        "Level": 47,
+        "Move": "MOVE_SEED_BOMB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "WEEPINBELL": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ABSORB"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_MEGA_DRAIN"
+      },
+      {
+        "Level": 29,
+        "Move": "MOVE_MAGICAL_LEAF"
+      },
+      {
+        "Level": 39,
+        "Move": "MOVE_GIGA_DRAIN"
+      },
+      {
+        "Level": 39,
+        "Move": "MOVE_VENOSHOCK"
+      },
+      {
+        "Level": 54,
+        "Move": "MOVE_SEED_BOMB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -1116,6 +1166,38 @@
   },
   "VICTREEBEL": {
     "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ABSORB"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_MEGA_DRAIN"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_MAGICAL_LEAF"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_GIGA_DRAIN"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_VENOSHOCK"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_SEED_BOMB"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_POISON_FANG"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_SOLAR_BLADE"
+      },
       {
         "Level": 2,
         "Move": "MOVE_RAZOR_LEAF"
@@ -5020,21 +5102,36 @@
     "TutorMoves": []
   },
   "SHINX": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 36,
+        "Move": "MOVE_SUPERCELL_SLAM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "LUXIO": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 48,
+        "Move": "MOVE_SUPERCELL_SLAM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "LUXRAY": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 56,
+        "Move": "MOVE_SUPERCELL_SLAM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -6387,14 +6484,40 @@
     "TutorMoves": []
   },
   "TRUBBISH": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_POISON_STING"
+      },
+      {
+        "Level": 18,
+        "Move": "MOVE_POISON_FANG"
+      },
+      {
+        "Level": 18,
+        "Move": "MOVE_POISON_JAB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "GARBODOR": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_POISON_STING"
+      },
+      {
+        "Level": 18,
+        "Move": "MOVE_POISON_FANG"
+      },
+      {
+        "Level": 18,
+        "Move": "MOVE_POISON_JAB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

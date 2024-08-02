@@ -61,32 +61,24 @@ AquaHideout_B2F_Movement_SumbarineDepartLeft:
 	walk_left
 	step_end
 
-@ Unused
-AquaHideout_B2F_Movement_SumbarineDepartRight:
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	step_end
-
-AquaHideout_B2F_EventScript_Grunt4::
-	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_4, AquaHideout_B2F_Text_Grunt4Intro, AquaHideout_B2F_Text_Grunt4Defeat, AquaHideout_B2F_EventScript_Grunt4Defeated
-	msgbox AquaHideout_B2F_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE
+AquaHideout_B2F_EventScript_Grunt5::
+	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_5, AquaHideout_B2F_Text_Grunt5Intro, AquaHideout_B2F_Text_Grunt5Defeat, AquaHideout_B2F_EventScript_Grunt5Defeated
+	msgbox AquaHideout_B2F_Text_Grunt5PostBattle, MSGBOX_AUTOCLOSE
 	end
 
-AquaHideout_B2F_EventScript_Grunt4Defeated::
-	msgbox AquaHideout_B2F_Text_Grunt4PostBattle, MSGBOX_DEFAULT
+AquaHideout_B2F_EventScript_Grunt5Defeated::
+	msgbox AquaHideout_B2F_Text_Grunt5PostBattle, MSGBOX_DEFAULT
 	release
 	end
 
-AquaHideout_B2F_EventScript_Grunt6::
-	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_6, AquaHideout_B2F_Text_Grunt6Intro, AquaHideout_B2F_Text_Grunt6Defeat
-	msgbox AquaHideout_B2F_Text_Grunt6PostBattle, MSGBOX_AUTOCLOSE
+AquaHideout_B2F_EventScript_Malik::
+	trainerbattle_single TRAINER_MALIK_AQUA_HIDEOUT, AquaHideout_B2F_Text_MalikIntro, AquaHideout_B2F_Text_MalikDefeat
+	msgbox AquaHideout_B2F_Text_MalikPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-AquaHideout_B2F_EventScript_Grunt8::
-	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_8, AquaHideout_B2F_Text_Grunt8Intro, AquaHideout_B2F_Text_Grunt8Defeat
-	msgbox AquaHideout_B2F_Text_Grunt8PostBattle, MSGBOX_AUTOCLOSE
+AquaHideout_B2F_EventScript_Marina::
+	trainerbattle_single TRAINER_MARINA_AQUA_HIDEOUT, AquaHideout_B2F_Text_MarinaIntro, AquaHideout_B2F_Text_MarinaDefeat
+	msgbox AquaHideout_B2F_Text_MarinaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 AquaHideout_B2F_Text_MattIntro:
@@ -118,19 +110,32 @@ AquaHideout_B2F_Text_MattPostBattle:
 	.string "But will you find it then?\n"
 	.string "Hehehe!$"
 
-AquaHideout_B2F_Text_Grunt4Intro:
+AquaHideout_B2F_Text_Grunt5Intro:
 	.string "Wahahah, I grew weary of waiting!\n"
 	.string "You owe me a battle, too!$"
 
-AquaHideout_B2F_Text_Grunt4Defeat:
+AquaHideout_B2F_Text_Grunt5Defeat:
 	.string "Tired of waiting…\n"
 	.string "Lost and dazed…$"
 
-AquaHideout_B2F_Text_Grunt4PostBattle:
+AquaHideout_B2F_Text_Grunt5PostBattle:
 	.string "Boss…\n"
 	.string "Is this good enough?$"
 
-AquaHideout_B2F_Text_Grunt6Intro:
+AquaHideout_B2F_Text_MalikIntro:
+	.string "When I joined Team Aqua, the first\n"
+	.string "thing I had to learn was how these\l"
+	.string "warp panels connected.$"
+
+AquaHideout_B2F_Text_MalikDefeat:
+	.string "I was too occupied thinking about\n"
+	.string "the warp panels…$"
+
+AquaHideout_B2F_Text_MalikPostBattle:
+	.string "I'll have to learn about how I can\n"
+	.string "battle more effectively…$"
+
+AquaHideout_B2F_Text_MarinaIntro:
 	.string "Warp panels, the Hideout's pride\n"
 	.string "and joy!\p"
 	.string "You're clueless about where you are,\n"
@@ -138,25 +143,12 @@ AquaHideout_B2F_Text_Grunt6Intro:
 	.string "Fluster and tire out the enemy, then\n"
 	.string "lower the boom! That's our plan!$"
 
-AquaHideout_B2F_Text_Grunt6Defeat:
+AquaHideout_B2F_Text_MarinaDefeat:
 	.string "What's wrong with you?\n"
 	.string "You're not tired at all!$"
 
-AquaHideout_B2F_Text_Grunt6PostBattle:
+AquaHideout_B2F_Text_MarinaPostBattle:
 	.string "That reminds me… I can't remember\n"
 	.string "where I put the Master Ball.\p"
 	.string "If I fail to guard it, our Boss will\n"
 	.string "chew me out…$"
-
-AquaHideout_B2F_Text_Grunt8Intro:
-	.string "When I joined Team Aqua, the first\n"
-	.string "thing I had to learn was how these\l"
-	.string "warp panels connected.$"
-
-AquaHideout_B2F_Text_Grunt8Defeat:
-	.string "I was too occupied thinking about\n"
-	.string "the warp panels…$"
-
-AquaHideout_B2F_Text_Grunt8PostBattle:
-	.string "I'll have to learn about how I can\n"
-	.string "battle more effectively…$"

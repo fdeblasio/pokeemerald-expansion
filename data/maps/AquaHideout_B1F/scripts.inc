@@ -75,15 +75,8 @@ AquaHideout_B1F_EventScript_DefeatedElectrode2::
 	end
 
 AquaHideout_B1F_EventScript_Grunt2::
-	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_2, AquaHideout_B1F_Text_Grunt2Intro, AquaHideout_B1F_Text_Grunt2Defeat, AquaHideout_B1F_EventScript_Grunt2Defeated
+	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_2, AquaHideout_B1F_Text_Grunt2Intro, AquaHideout_B1F_Text_Grunt2Defeat
 	msgbox AquaHideout_B1F_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
-	end
-
-AquaHideout_B1F_EventScript_Grunt2Defeated::
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox AquaHideout_B1F_Text_Grunt2PostBattle, MSGBOX_DEFAULT
-	release
 	end
 
 AquaHideout_B1F_EventScript_Grunt3::
@@ -92,69 +85,76 @@ AquaHideout_B1F_EventScript_Grunt3::
 	end
 
 AquaHideout_B1F_EventScript_Grunt3Defeated::
+	special PlayerFaceTrainerAfterBattle
+	waitmovement 0
 	msgbox AquaHideout_B1F_Text_Grunt3PostBattle, MSGBOX_DEFAULT
 	release
 	end
 
-AquaHideout_B1F_EventScript_Grunt5::
-	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_5, AquaHideout_B1F_Text_Grunt5Intro, AquaHideout_B1F_Text_Grunt5Defeat
-	msgbox AquaHideout_B1F_Text_Grunt5PostBattle, MSGBOX_AUTOCLOSE
+AquaHideout_B1F_EventScript_Grunt4::
+	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_4, AquaHideout_B1F_Text_Grunt4Intro, AquaHideout_B1F_Text_Grunt4Defeat
+	msgbox AquaHideout_B1F_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE
 	end
 
-AquaHideout_B1F_EventScript_Grunt7::
-	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_7, AquaHideout_B1F_Text_Grunt7Intro, AquaHideout_B1F_Text_Grunt7Defeat
-	msgbox AquaHideout_B1F_Text_Grunt7PostBattle, MSGBOX_AUTOCLOSE
+AquaHideout_B1F_EventScript_Grunt6::
+	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_6, AquaHideout_B1F_Text_Grunt6Intro, AquaHideout_B1F_Text_Grunt6Defeat, AquaHideout_B1F_EventScript_Grunt6Defeated
+	msgbox AquaHideout_B1F_Text_Grunt6PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+AquaHideout_B1F_EventScript_Grunt6Defeated::
+	msgbox AquaHideout_B1F_Text_Grunt6PostBattle, MSGBOX_DEFAULT
+	release
 	end
 
 AquaHideout_B1F_Text_Grunt2Intro:
+	.string "Yawn… Keeping watch over the\n"
+	.string "Hideout bores me. I'll take you on.$"
+
+AquaHideout_B1F_Text_Grunt2Defeat:
+	.string "Yawn…\n"
+	.string "Oh, I lost…$"
+
+AquaHideout_B1F_Text_Grunt2PostBattle:
+	.string "If you scurry too much, other Team\n"
+	.string "Aqua members might get you.$"
+
+AquaHideout_B1F_Text_Grunt3Intro:
 	.string "If you want to know the secret about\n"
 	.string "our Hideout, you have me to beat!$"
 
-AquaHideout_B1F_Text_Grunt2Defeat:
+AquaHideout_B1F_Text_Grunt3Defeat:
 	.string "I can't win at all…$"
 
-AquaHideout_B1F_Text_Grunt2PostBattle:
+AquaHideout_B1F_Text_Grunt3PostBattle:
 	.string "Our Hideout's secret?\p"
 	.string "Well, let's just say…\n"
 	.string "There's a submarine at the far end!\p"
 	.string "But, by now…\n"
 	.string "Kekekeke…$"
 
-AquaHideout_B1F_Text_Grunt3Intro:
-	.string "Fuel supply loaded A-OK!\n"
-	.string "In-cruise snacks loaded A-OK!\p"
-	.string "Nothing left to do but KO a pesky\n"
-	.string "meddler!$"
-
-AquaHideout_B1F_Text_Grunt3Defeat:
-	.string "I took a serious licking!$"
-
-AquaHideout_B1F_Text_Grunt3PostBattle:
-	.string "Humph!\n"
-	.string "This was supposed to happen!\p"
-	.string "My mission was to just hold you up!$"
-
-AquaHideout_B1F_Text_Grunt5Intro:
-	.string "Yawn… Keeping watch over the\n"
-	.string "Hideout bores me. I'll take you on.$"
-
-AquaHideout_B1F_Text_Grunt5Defeat:
-	.string "Yawn…\n"
-	.string "Oh, I lost…$"
-
-AquaHideout_B1F_Text_Grunt5PostBattle:
-	.string "If you scurry too much, other Team\n"
-	.string "Aqua members might get you.$"
-
-AquaHideout_B1F_Text_Grunt7Intro:
+AquaHideout_B1F_Text_Grunt4Intro:
 	.string "Hey!\n"
 	.string "You there!\p"
 	.string "Which do you think is cooler?\n"
 	.string "Team Aqua's uniform or Team Magma's?$"
 
-AquaHideout_B1F_Text_Grunt7Defeat:
+AquaHideout_B1F_Text_Grunt4Defeat:
 	.string "I lost in a cool way…$"
 
-AquaHideout_B1F_Text_Grunt7PostBattle:
+AquaHideout_B1F_Text_Grunt4PostBattle:
 	.string "If you have a cool uniform, you look\n"
 	.string "good even in a loss, don't you think?$"
+
+AquaHideout_B1F_Text_Grunt6Intro:
+	.string "Fuel supply loaded A-OK!\n"
+	.string "In-cruise snacks loaded A-OK!\p"
+	.string "Nothing left to do but KO a pesky\n"
+	.string "meddler!$"
+
+AquaHideout_B1F_Text_Grunt6Defeat:
+	.string "I took a serious licking!$"
+
+AquaHideout_B1F_Text_Grunt6PostBattle:
+	.string "Humph!\n"
+	.string "This was supposed to happen!\p"
+	.string "My mission was to just hold you up!$"

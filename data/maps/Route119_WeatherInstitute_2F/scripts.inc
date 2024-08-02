@@ -30,14 +30,14 @@ Route119_WeatherInstitute_2F_EventScript_SetScientistPosGameClear::
 	setobjectmovementtype LOCALID_SCIENTIST, MOVEMENT_TYPE_FACE_UP
 	return
 
-Route119_WeatherInstitute_2F_EventScript_Grunt3::
-	trainerbattle_single TRAINER_GRUNT_WEATHER_INSTITUTE_3, Route119_WeatherInstitute_2F_Text_Grunt3Intro, Route119_WeatherInstitute_2F_Text_Grunt3Defeat
-	msgbox Route119_WeatherInstitute_2F_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
+Route119_WeatherInstitute_2F_EventScript_Malik::
+	trainerbattle_single TRAINER_MALIK_WEATHER_INSTITUTE, Route119_WeatherInstitute_2F_Text_MalikIntro, Route119_WeatherInstitute_2F_Text_MalikDefeat
+	msgbox Route119_WeatherInstitute_2F_Text_MalikPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route119_WeatherInstitute_2F_EventScript_Grunt4::
-	trainerbattle_single TRAINER_GRUNT_WEATHER_INSTITUTE_4, Route119_WeatherInstitute_2F_Text_Grunt4Intro, Route119_WeatherInstitute_2F_Text_Grunt4Defeat
-	msgbox Route119_WeatherInstitute_2F_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE
+Route119_WeatherInstitute_2F_EventScript_Marina::
+	trainerbattle_single TRAINER_MARINA_WEATHER_INSTITUTE, Route119_WeatherInstitute_2F_Text_MarinaIntro, Route119_WeatherInstitute_2F_Text_MarinaDefeat
+	msgbox Route119_WeatherInstitute_2F_Text_MarinaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route119_WeatherInstitute_2F_EventScript_Grunt5::
@@ -210,29 +210,29 @@ Route119_WeatherInstitute_2F_EventScript_WeatherScientist::
 	goto Route119_WeatherInstitute_2F_EventScript_ReceiveCastform
 	end
 
-Route119_WeatherInstitute_2F_Text_Grunt3Intro:
+Route119_WeatherInstitute_2F_Text_MalikIntro:
 	.string "The Institute created a type of\n"
 	.string "Pokémon that has something to do with\l"
 	.string "the weather. We're here to take them!$"
 
-Route119_WeatherInstitute_2F_Text_Grunt3Defeat:
+Route119_WeatherInstitute_2F_Text_MalikDefeat:
 	.string "Our plan's being spoiled by a kid?$"
 
-Route119_WeatherInstitute_2F_Text_Grunt3PostBattle:
+Route119_WeatherInstitute_2F_Text_MalikPostBattle:
 	.string "If the Pokémon they made here can\n"
 	.string "control the weather freely, then we of\l"
 	.string "Team Aqua definitely need it!$"
 
-Route119_WeatherInstitute_2F_Text_Grunt4Intro:
+Route119_WeatherInstitute_2F_Text_MarinaIntro:
 	.string "Don't tell me you're looking for that\n"
 	.string "weather Pokémon, too?\p"
 	.string "That's a no-no!\n"
 	.string "We were here to get it first!$"
 
-Route119_WeatherInstitute_2F_Text_Grunt4Defeat:
+Route119_WeatherInstitute_2F_Text_MarinaDefeat:
 	.string "Oh, will you look at my Pokémon?$"
 
-Route119_WeatherInstitute_2F_Text_Grunt4PostBattle:
+Route119_WeatherInstitute_2F_Text_MarinaPostBattle:
 	.string "Humph, so what?\n"
 	.string "What we want…\p"
 	.string "What we really want isn't here…\n"

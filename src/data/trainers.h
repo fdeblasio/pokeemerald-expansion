@@ -4791,7 +4791,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .moves = {MOVE_SURF, MOVE_HEADBUTT, MOVE_PIN_MISSILE, MOVE_SAND_ATTACK}, \
     .gender = TRAINER_MON_MALE
 
-#define RICKY_DUCKLETT(Level, Move2, Move3)                                   \
+#define RICKY_DUCKLETT(Level)                                   \
     .lvl = Level,                                                             \
     .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_DUCKLETT : SPECIES_SWANNA, \
     .ability = ABILITY_BIG_PECKS,                                             \

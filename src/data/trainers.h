@@ -5062,7 +5062,7 @@ MARINA_BATTLE(MUSEUM, 17),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 18,
-        .species = SPECIES_BELLSPROUT,
+        .species = SPECIES_GULPIN,
         }
     },
 },
@@ -5102,7 +5102,7 @@ MARINA_BATTLE(MUSEUM, 17),
         },
         {
         .lvl = 17,
-        .species = SPECIES_YUNGOOS,
+        .species = SPECIES_GEODUDE,
         }
     },
 },
@@ -5670,11 +5670,11 @@ MARINA_BATTLE(MUSEUM, 17),
     .party = (const struct TrainerMon[]) {
         {
         TRIATHLETE_MON(REMATCH_5_LEVEL_2, 5),
-        .species = SPECIES_ELECTRODE,
+        .species = SPECIES_SHARPEDO,
         },
         {
         TRIATHLETE_MON(REMATCH_5_LEVEL_2, 5),
-        .species = SPECIES_SHARPEDO,
+        .species = SPECIES_ARCANINE,
         },
         {
         DYLAN_DODUO(REMATCH_5_MINI_BOSS, 5),
@@ -5758,56 +5758,56 @@ MARINA_BATTLE(MUSEUM, 17),
     },
 },
 
-#define ISAAC_BATTLE(Match, Level)                                                                  \
-[TRAINER_ISAAC_##Match]                                                                             \
-{                                                                                                   \
-    .trainerName = _("Isaac"),                                                                      \
-    POKEMON_BREEDER_M_INFO,                                                                         \
-    MINI_BOSS_AI_FLAGS,                                                                             \
-    .party = (const struct TrainerMon[]) {                                                          \
-        {                                                                                           \
-        POKEMON_BREEDER_MON(Level),                                                                 \
-        .species = Level < 20 ? SPECIES_WHISMUR : (Level < 40 ? SPECIES_LOUDRED : SPECIES_EXPLOUD), \
-        .ability = 2,                                                                               \
-        .moves = {MOVE_SMELLING_SALTS, MOVE_EXTRASENSORY, MOVE_CIRCLE_THROW, MOVE_HAMMER_ARM},      \
-        .gender = TRAINER_MON_MALE                                                                  \
-        },                                                                                          \
-        {                                                                                           \
-        POKEMON_BREEDER_MON(Level),                                                                 \
-        .species = Level < 20 ? SPECIES_ZIGZAGOON : SPECIES_LINOONE,                                \
-        .ability = ABILITY_QUICK_FEET,                                                              \
-        .moves = {MOVE_EXTREME_SPEED, MOVE_MUD_SLAP, MOVE_SIMPLE_BEAM, MOVE_TICKLE},                \
-        .gender = TRAINER_MON_MALE                                                                  \
-        },                                                                                          \
-        {                                                                                           \
-        POKEMON_BREEDER_MON(Level),                                                                 \
-        .species = Level < 24 ? SPECIES_MAKUHITA : SPECIES_HARIYAMA,                                \
-        .ability = ABILITY_SHEER_FORCE,                                                             \
-        .moves = {MOVE_CROSS_CHOP, MOVE_BULLET_PUNCH, MOVE_FEINT_ATTACK, MOVE_STOMPING_TANTRUM},    \
-        .gender = TRAINER_MON_MALE                                                                  \
-        },                                                                                          \
-        {                                                                                           \
-        POKEMON_BREEDER_MON(Level),                                                                 \
-        .species = Level < 18 ? SPECIES_POOCHYENA : SPECIES_MIGHTYENA,                              \
-        .ability = ABILITY_STRONG_JAW,                                                              \
-        .moves = {MOVE_LASH_OUT, MOVE_POISON_FANG, MOVE_THUNDER_FANG, MOVE_FIRE_FANG},              \
-        .gender = TRAINER_MON_MALE                                                                  \
-        },                                                                                          \
-        {                                                                                           \
-        POKEMON_BREEDER_MON(Level),                                                                 \
-        .species = Level < 22 ? SPECIES_TAILLOW : SPECIES_SWELLOW,                                  \
-        .ability = ABILITY_SCRAPPY,                                                                 \
-        .moves = {MOVE_BOOMBURST, MOVE_HURRICANE, MOVE_HEAT_WAVE, MOVE_ROOST},                      \
-        .gender = TRAINER_MON_MALE                                                                  \
-        },                                                                                          \
-        {                                                                                           \
-        POKEMON_BREEDER_MON(Level),                                                                 \
-        .species = Level < 32 ? SPECIES_ARON : (Level < 42 ? SPECIES_LAIRON : SPECIES_AGGRON),      \
-        .ability = ABILITY_ROCK_HEAD,                                                               \
-        .moves = {MOVE_SMELLING_SALTS, MOVE_HEAD_SMASH, MOVE_DRAGON_RUSH, MOVE_CURSE},              \
-        .gender = TRAINER_MON_MALE                                                                  \
-        },                                                                                          \
-    },                                                                                              \
+#define ISAAC_BATTLE(Match, Level)                                                                      \
+[TRAINER_ISAAC_##Match]                                                                                 \
+{                                                                                                       \
+    .trainerName = _("Isaac"),                                                                          \
+    POKEMON_BREEDER_M_INFO,                                                                             \
+    MINI_BOSS_AI_FLAGS,                                                                                 \
+    .party = (const struct TrainerMon[]) {                                                              \
+        {                                                                                               \
+        POKEMON_BREEDER_MON(Level),                                                                     \
+        .species = Level < 29 ? SPECIES_SANDILE : (Level < 40 ? SPECIES_KROKOROK : SPECIES_KROOKODILE), \
+        .ability = ABILITY_ANGER_POINT,                                                                 \
+        .moves = {MOVE_STOMPING_TANTRUM, MOVE_LASH_OUT, MOVE_THUNDER_FANG, MOVE_FIRE_FANG},             \
+        .gender = TRAINER_MON_MALE                                                                      \
+        },                                                                                              \
+        {                                                                                               \
+        POKEMON_BREEDER_MON(Level),                                                                     \
+        .species = Level < 20 ? SPECIES_MUNCHLAX : SPECIES_SNORLAX,                                     \
+        .ability = ABILITY_THICK_FAT,                                                                   \
+        .moves = {MOVE_PAY_DAY, MOVE_POWER_UP_PUNCH, MOVE_HYDRO_PUMP, MOVE_CURSE},                      \
+        .gender = TRAINER_MON_MALE                                                                      \
+        },                                                                                              \
+        {                                                                                               \
+        POKEMON_BREEDER_MON(Level),                                                                     \
+        .species = Level < 24 ? SPECIES_MAKUHITA : SPECIES_HARIYAMA,                                    \
+        .ability = ABILITY_SHEER_FORCE,                                                                 \
+        .moves = {MOVE_CROSS_CHOP, MOVE_BULLET_PUNCH, MOVE_FEINT_ATTACK, MOVE_STOMPING_TANTRUM},        \
+        .gender = TRAINER_MON_MALE                                                                      \
+        },                                                                                              \
+        {                                                                                               \
+        POKEMON_BREEDER_MON(Level),                                                                     \
+        .species = Level < 18 ? SPECIES_POOCHYENA : SPECIES_MIGHTYENA,                                  \
+        .ability = ABILITY_STRONG_JAW,                                                                  \
+        .moves = {MOVE_LASH_OUT, MOVE_POISON_FANG, MOVE_THUNDER_FANG, MOVE_FIRE_FANG},                  \
+        .gender = TRAINER_MON_MALE                                                                      \
+        },                                                                                              \
+        {                                                                                               \
+        POKEMON_BREEDER_MON(Level),                                                                     \
+        .species = Level < 24 ? SPECIES_TANGELA : SPECIES_TANGROWTH,                                    \
+        .ability = ABILITY_REGENERATOR,                                                                 \
+        .moves = {MOVE_NATURE_POWER, MOVE_INFESTATION, MOVE_CONFUSION, MOVE_WAKE_UP_SLAP},              \
+        .gender = TRAINER_MON_MALE                                                                      \
+        },                                                                                              \
+        {                                                                                               \
+        POKEMON_BREEDER_MON(Level),                                                                     \
+        .species = Level < 32 ? SPECIES_ARON : (Level < 42 ? SPECIES_LAIRON : SPECIES_AGGRON),          \
+        .ability = ABILITY_ROCK_HEAD,                                                                   \
+        .moves = {MOVE_SMELLING_SALTS, MOVE_HEAD_SMASH, MOVE_DRAGON_RUSH, MOVE_CURSE},                  \
+        .gender = TRAINER_MON_MALE                                                                      \
+        },                                                                                              \
+    },                                                                                                  \
 }
 
 ISAAC_BATTLE(1, 16),
@@ -5839,9 +5839,9 @@ ISAAC_BATTLE(5, REMATCH_5_LEVEL_3),
         },                                                                                     \
         {                                                                                      \
         POKEMON_BREEDER_MON(Level),                                                            \
-        .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_AZURILL : (Level < REMATCH_3_LEVEL_6 ? SPECIES_MARILL : SPECIES_AZUMARILL), \
-        .ability = ABILITY_SAP_SIPPER,                                                         \
-        .moves = {MOVE_AQUA_JET, MOVE_PRESENT, MOVE_BRUTAL_SWING, MOVE_BELLY_DRUM},            \
+        .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_HAPPINY : (Level < REMATCH_3_LEVEL_6 ? SPECIES_CHANSEY : SPECIES_BLISSEY), \
+        .ability = ABILITY_NATURAL_CURE,                                                       \
+        .moves = {MOVE_UPROAR, MOVE_PRESENT, MOVE_GRAVITY, MOVE_HEAL_BELL},                    \
         .gender = TRAINER_MON_FEMALE                                                           \
         },                                                                                     \
         {                                                                                      \
@@ -5860,9 +5860,9 @@ ISAAC_BATTLE(5, REMATCH_5_LEVEL_3),
         },                                                                                     \
         {                                                                                      \
         POKEMON_BREEDER_MON(Level),                                                            \
-        .species = Level < 33 ? SPECIES_GOLDEEN : SPECIES_SEAKING,                             \
-        .ability = ABILITY_LIGHTNING_ROD,                                                      \
-        .moves = {MOVE_AQUA_TAIL, MOVE_SMART_STRIKE, MOVE_DRILL_RUN, MOVE_MEGAHORN},           \
+        .species = Level < 38 ? SPECIES_GLAMEOW : SPECIES_PURUGLY,                             \
+        .ability = 2,                                                                          \
+        .moves = {MOVE_COVET, MOVE_WAKE_UP_SLAP, MOVE_BITE, MOVE_QUICK_ATTACK},                \
         .gender = TRAINER_MON_FEMALE                                                           \
         },                                                                                     \
     },                                                                                         \
@@ -5886,10 +5886,10 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .ability = ABILITY_THICK_FAT,                                \
     .gender = TRAINER_MON_FEMALE
 
-#define MEG_ZIGZAGOON(Level)                                     \
-    .lvl = Level,                                                \
-    .species = Level < 20 ? SPECIES_ZIGZAGOON : SPECIES_LINOONE, \
-    .ability = ABILITY_PICKUP,                                   \
+#define MEG_PATRAT(Level)                                     \
+    .lvl = Level,                                             \
+    .species = Level < 20 ? SPECIES_PATRAT : SPECIES_WATCHOG, \
+    .ability = ABILITY_KEEN_EYE,                              \
     .gender = TRAINER_MON_FEMALE
 
 [TRAINER_ANNA_AND_MEG_1] =
@@ -5897,8 +5897,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     ANNA_AND_MEG_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        MEG_ZIGZAGOON(19),
-        .moves = {MOVE_HEADBUTT, MOVE_BABY_DOLL_EYES, MOVE_SAND_ATTACK, MOVE_ODOR_SLEUTH},
+        MEG_PATRAT(19),
         },
         {
         ANNA_MAKUHITA(21),
@@ -5912,9 +5911,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     ANNA_AND_MEG_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        MEG_ZIGZAGOON(REMATCH_2_LEVEL_3),
+        MEG_PATRAT(REMATCH_2_LEVEL_3),
         IVS(2),
-        .moves = {MOVE_SLASH, MOVE_TAIL_WHIP, MOVE_HONE_CLAWS, MOVE_ODOR_SLEUTH},
         },
         {
         ANNA_MAKUHITA(REMATCH_2_LEVEL_1),
@@ -5929,9 +5927,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     ANNA_AND_MEG_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        MEG_ZIGZAGOON(REMATCH_3_LEVEL_3),
+        MEG_PATRAT(REMATCH_3_LEVEL_3),
         IVS(3),
-        .moves = {MOVE_SLASH, MOVE_TAIL_WHIP, MOVE_HONE_CLAWS, MOVE_ODOR_SLEUTH},
         },
         {
         ANNA_MAKUHITA(REMATCH_3_LEVEL_1),
@@ -5946,9 +5943,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     ANNA_AND_MEG_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        MEG_ZIGZAGOON(REMATCH_4_LEVEL_3),
+        MEG_PATRAT(REMATCH_4_LEVEL_3),
         IVS(4),
-        .moves = {MOVE_SLASH, MOVE_TAIL_WHIP, MOVE_HONE_CLAWS, MOVE_ODOR_SLEUTH},
         },
         {
         ANNA_MAKUHITA(REMATCH_4_LEVEL_1),
@@ -5963,9 +5959,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     ANNA_AND_MEG_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        MEG_ZIGZAGOON(REMATCH_5_LEVEL_3),
+        MEG_PATRAT(REMATCH_5_LEVEL_3),
         IVS(5),
-        .moves = {MOVE_SLASH, MOVE_TAIL_WHIP, MOVE_HONE_CLAWS, MOVE_ODOR_SLEUTH},
         },
         {
         ANNA_MAKUHITA(REMATCH_5_LEVEL_1),
@@ -5984,12 +5979,12 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 19,
-        .species = SPECIES_DUSTOX,
+        .species = SPECIES_KARRABLAST,
         IVS(18),
         },
         {
         .lvl = 19,
-        .species = SPECIES_BEAUTIFLY,
+        .species = SPECIES_BUTTERFREE,
         IVS(18),
         }
     },
@@ -6004,7 +5999,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 20,
-        .species = SPECIES_PSYDUCK,
+        .species = SPECIES_FLITTLE,
         }
     },
 },
@@ -6018,7 +6013,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .party = (const struct TrainerMon[]) {
         {
         TRIATHLETE_MON(20, 0),
-        .species = SPECIES_IGGLYBUFF,
+        .species = SPECIES_FIDOUGH,
         }
     },
 },
@@ -6047,15 +6042,15 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 19,
-        .species = SPECIES_WHISMUR,
+        .species = SPECIES_ZUBAT,
         },
         {
         .lvl = 19,
-        .species = SPECIES_WHISMUR,
+        .species = SPECIES_WOOBAT,
         },
         {
         .lvl = 19,
-        .species = SPECIES_WHISMUR,
+        .species = SPECIES_NOIBAT,
         }
     },
 },

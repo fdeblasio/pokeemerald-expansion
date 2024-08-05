@@ -6599,7 +6599,7 @@ MARINA_BATTLE(MUSEUM, 17),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 18,
-        .species = SPECIES_ODDISH,
+        .species = SPECIES_BELLSPROUT,
         }
     },
 },
@@ -6621,7 +6621,7 @@ MARINA_BATTLE(MUSEUM, 17),
         },
         {
         .lvl = 16,
-        .species = SPECIES_MARILL,
+        .species = SPECIES_WOOLOO,
         }
     },
 },
@@ -6639,7 +6639,7 @@ MARINA_BATTLE(MUSEUM, 17),
         },
         {
         .lvl = 17,
-        .species = SPECIES_ZIGZAGOON,
+        .species = SPECIES_YUNGOOS,
         }
     },
 },
@@ -6798,10 +6798,10 @@ MARINA_BATTLE(MUSEUM, 17),
     .ability = ABILITY_CUTE_CHARM,                                            \
     .gender = TRAINER_MON_FEMALE
 
-#define MIGUEL_IGGLYBUFF(Level)                                               \
-    POKE_FAN_MON(Level),                                                      \
-    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_IGGLYBUFF : (Level < REMATCH_4_LEVEL_6 ? SPECIES_JIGGLYPUFF : SPECIES_WIGGLYTUFF), \
-    .ability = ABILITY_CUTE_CHARM,                                            \
+#define MIGUEL_PACHIRISU(Level)                                                    \
+    POKE_FAN_MON(Level),                                                           \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_PACHIRISU : SPECIES_PACHIRIKKU, \
+    .ability = 0,                                                                  \
     .gender = TRAINER_MON_MALE
 
 #define MIGUEL_CASTFORM(Level)   \
@@ -6824,7 +6824,7 @@ MARINA_BATTLE(MUSEUM, 17),
     MIGUEL_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        MIGUEL_IGGLYBUFF(REMATCH_2_LEVEL_2),
+        MIGUEL_PACHIRISU(REMATCH_2_LEVEL_2),
         },
         {
         MIGUEL_SKITTY(REMATCH_2_LEVEL_2),
@@ -6840,7 +6840,7 @@ MARINA_BATTLE(MUSEUM, 17),
         MIGUEL_CASTFORM(REMATCH_3_LEVEL_3),
         },
         {
-        MIGUEL_IGGLYBUFF(REMATCH_3_LEVEL_3),
+        MIGUEL_PACHIRISU(REMATCH_3_LEVEL_3),
         },
         {
         MIGUEL_SKITTY(REMATCH_3_LEVEL_3),
@@ -6856,7 +6856,7 @@ MARINA_BATTLE(MUSEUM, 17),
         MIGUEL_CASTFORM(REMATCH_4_LEVEL_3),
         },
         {
-        MIGUEL_IGGLYBUFF(REMATCH_4_LEVEL_3),
+        MIGUEL_PACHIRISU(REMATCH_4_LEVEL_3),
         },
         {
         MIGUEL_SKITTY(REMATCH_4_LEVEL_3),
@@ -6872,7 +6872,7 @@ MARINA_BATTLE(MUSEUM, 17),
         MIGUEL_CASTFORM(REMATCH_5_LEVEL_3),
         },
         {
-        MIGUEL_IGGLYBUFF(REMATCH_5_LEVEL_3),
+        MIGUEL_PACHIRISU(REMATCH_5_LEVEL_3),
         },
         {
         MIGUEL_SKITTY(REMATCH_5_LEVEL_3),
@@ -6893,7 +6893,7 @@ MARINA_BATTLE(MUSEUM, 17),
         },
         {
         .lvl = 16,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_ARROKUDA,
         },
         {
         .lvl = 16,
@@ -6916,7 +6916,7 @@ MARINA_BATTLE(MUSEUM, 17),
         },
         {
         .lvl = 17,
-        .species = SPECIES_ELECTRIKE,
+        .species = SPECIES_SHINX,
         }
     },
 },
@@ -6925,18 +6925,6 @@ MARINA_BATTLE(MUSEUM, 17),
     .trainerName = _("Edwin"),         \
     COLLECTOR_INFO,                    \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
-
-#define EDWIN_NUZLEAF(Level)                                                  \
-    .lvl = Level,                                                             \
-    .species = Level < REMATCH_5_LEVEL_6 ? SPECIES_NUZLEAF : SPECIES_SHIFTRY, \
-    .ability = ABILITY_CHLOROPHYLL,                                           \
-    .gender = TRAINER_MON_MALE
-
-#define EDWIN_LOMBRE(Level)                                                   \
-    .lvl = Level,                                                             \
-    .species = Level < REMATCH_5_LEVEL_6 ? SPECIES_LOMBRE : SPECIES_LUDICOLO, \
-    .ability = ABILITY_SWIFT_SWIM,                                            \
-    .gender = TRAINER_MON_MALE
 
 #define EDWIN_ZANGOOSE(Level)       \
     .lvl = Level,                   \
@@ -6949,15 +6937,26 @@ MARINA_BATTLE(MUSEUM, 17),
     .species = SPECIES_SEVIPER, \
     .gender = TRAINER_MON_MALE
 
-#define EDWIN_MAWILE(Level)          \
-    .lvl = Level,                    \
-    .species = SPECIES_MAWILE,       \
-    .ability = ABILITY_HYPER_CUTTER, \
+#define EDWIN_MAROWAK(Level)      \
+    .lvl = Level,                 \
+    .species = SPECIES_MAROWAK,   \
+    .ability = ABILITY_ROCK_HEAD, \
     .gender = TRAINER_MON_MALE
 
-#define EDWIN_SABLEYE(Level)    \
+#define EDWIN_MAROWAK_ALOLAN(Level)    \
+    .lvl = Level,                      \
+    .species = SPECIES_MAROWAK_ALOLAN, \
+    .ability = ABILITY_CURSED_BODY,    \
+    .gender = TRAINER_MON_MALE
+
+#define EDWIN_ESPEON(Level)    \
+    .lvl = Level,              \
+    .species = SPECIES_ESPEON, \
+    .gender = TRAINER_MON_FEMALE
+
+#define EDWIN_UMBREON(Level)    \
     .lvl = Level,               \
-    .species = SPECIES_SABLEYE, \
+    .species = SPECIES_UMBREON, \
     .gender = TRAINER_MON_MALE
 
 [DIFFICULTY_NORMAL][TRAINER_EDWIN_1] =
@@ -6966,10 +6965,10 @@ MARINA_BATTLE(MUSEUM, 17),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        EDWIN_LOMBRE(18),
+        EDWIN_SEVIPER(18),
         },
         {
-        EDWIN_NUZLEAF(18),
+        EDWIN_ZANGOOSE(18),
         }
     },
 },
@@ -6980,16 +6979,16 @@ MARINA_BATTLE(MUSEUM, 17),
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
+        EDWIN_MAROWAK_ALOLAN(REMATCH_2_LEVEL_4),
+        },
+        {
+        EDWIN_MAROWAK(REMATCH_2_LEVEL_4),
+        },
+        {
         EDWIN_SEVIPER(REMATCH_2_LEVEL_4),
         },
         {
         EDWIN_ZANGOOSE(REMATCH_2_LEVEL_4),
-        },
-        {
-        EDWIN_LOMBRE(REMATCH_2_LEVEL_4),
-        },
-        {
-        EDWIN_NUZLEAF(REMATCH_2_LEVEL_4),
         }
     },
 },
@@ -7000,22 +6999,22 @@ MARINA_BATTLE(MUSEUM, 17),
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        EDWIN_SABLEYE(REMATCH_3_LEVEL_6),
+        EDWIN_UMBREON(REMATCH_3_LEVEL_6),
         },
         {
-        EDWIN_MAWILE(REMATCH_3_LEVEL_6),
+        EDWIN_ESPEON(REMATCH_3_LEVEL_6),
+        },
+        {
+        EDWIN_MAROWAK_ALOLAN(REMATCH_3_LEVEL_6),
+        },
+        {
+        EDWIN_MAROWAK(REMATCH_3_LEVEL_6),
         },
         {
         EDWIN_SEVIPER(REMATCH_3_LEVEL_6),
         },
         {
         EDWIN_ZANGOOSE(REMATCH_3_LEVEL_6),
-        },
-        {
-        EDWIN_LOMBRE(REMATCH_3_LEVEL_6),
-        },
-        {
-        EDWIN_NUZLEAF(REMATCH_3_LEVEL_6),
         }
     },
 },
@@ -7026,22 +7025,22 @@ MARINA_BATTLE(MUSEUM, 17),
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        EDWIN_SABLEYE(REMATCH_4_LEVEL_6),
+        EDWIN_UMBREON(REMATCH_4_LEVEL_6),
         },
         {
-        EDWIN_MAWILE(REMATCH_4_LEVEL_6),
+        EDWIN_ESPEON(REMATCH_4_LEVEL_6),
+        },
+        {
+        EDWIN_MAROWAK_ALOLAN(REMATCH_4_LEVEL_6),
+        },
+        {
+        EDWIN_MAROWAK(REMATCH_4_LEVEL_6),
         },
         {
         EDWIN_SEVIPER(REMATCH_4_LEVEL_6),
         },
         {
         EDWIN_ZANGOOSE(REMATCH_4_LEVEL_6),
-        },
-        {
-        EDWIN_LOMBRE(REMATCH_4_LEVEL_6),
-        },
-        {
-        EDWIN_NUZLEAF(REMATCH_4_LEVEL_6),
         }
     },
 },
@@ -7052,22 +7051,22 @@ MARINA_BATTLE(MUSEUM, 17),
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {
-        EDWIN_SABLEYE(REMATCH_5_LEVEL_6),
+        EDWIN_UMBREON(REMATCH_5_LEVEL_6),
         },
         {
-        EDWIN_MAWILE(REMATCH_5_LEVEL_6),
+        EDWIN_ESPEON(REMATCH_5_LEVEL_6),
+        },
+        {
+        EDWIN_MAROWAK_ALOLAN(REMATCH_5_LEVEL_6),
+        },
+        {
+        EDWIN_MAROWAK(REMATCH_5_LEVEL_6),
         },
         {
         EDWIN_SEVIPER(REMATCH_5_LEVEL_6),
         },
         {
         EDWIN_ZANGOOSE(REMATCH_5_LEVEL_6),
-        },
-        {
-        EDWIN_LOMBRE(REMATCH_5_LEVEL_6),
-        },
-        {
-        EDWIN_NUZLEAF(REMATCH_5_LEVEL_6),
         }
     },
 },
@@ -7081,7 +7080,7 @@ MARINA_BATTLE(MUSEUM, 17),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 18,
-        .species = SPECIES_ELECTRIKE,
+        .species = SPECIES_SHINX,
         },
         {
         .lvl = 18,
@@ -7114,7 +7113,7 @@ MARINA_BATTLE(MUSEUM, 17),
     .party = (const struct TrainerMon[]) {
         {
         TRIATHLETE_MON(19, 0),
-        .species = SPECIES_MAGNEMITE,
+        .species = SPECIES_KLINK,
         }
     },
 },
@@ -7128,7 +7127,7 @@ MARINA_BATTLE(MUSEUM, 17),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 16,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_BARBOACH,
         },
         {
         .lvl = 16,
@@ -7136,7 +7135,7 @@ MARINA_BATTLE(MUSEUM, 17),
         },
         {
         .lvl = 16,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_ARROKUDA,
         },
         {
         .lvl = 16,
@@ -7286,11 +7285,11 @@ MARINA_BATTLE(MUSEUM, 17),
     .party = (const struct TrainerMon[]) {
         {
         TRIATHLETE_MON(REMATCH_5_LEVEL_2, 5),
-        .species = SPECIES_RAICHU,
+        .species = SPECIES_WEAVILE,
         },
         {
         TRIATHLETE_MON(REMATCH_5_LEVEL_2, 5),
-        .species = SPECIES_STARMIE,
+        .species = SPECIES_GOGOAT,
         },
         {
         MARIA_DODUO(REMATCH_5_MINI_BOSS, 5),

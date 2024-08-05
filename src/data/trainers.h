@@ -4918,19 +4918,25 @@ MARINA_BATTLE(MUSEUM, 17),
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE, \
     .partySize = 2
 
+#define AMY_MINUN(Level)      \
+    .lvl = Level,             \
+    .species = SPECIES_MINUN, \
+    .gender = TRAINER_MON_FEMALE
+
+#define LIV_PLUSLE(Level)      \
+    .lvl = Level,              \
+    .species = SPECIES_PLUSLE, \
+    .gender = TRAINER_MON_FEMALE
+
 [TRAINER_AMY_AND_LIV_1] =
 {
     AMY_AND_LIV_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 17,
-        .species = SPECIES_PLUSLE,
-        .gender = TRAINER_MON_FEMALE,
+        LIV_PLUSLE(17),
         },
         {
-        .lvl = 17,
-        .species = SPECIES_MINUN,
-        .gender = TRAINER_MON_FEMALE,
+        AMY_MINUN(17),
         }
     },
 },
@@ -4940,16 +4946,12 @@ MARINA_BATTLE(MUSEUM, 17),
     AMY_AND_LIV_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_2_LEVEL_2,
-        .species = SPECIES_PLUSLE,
+        LIV_PLUSLE(REMATCH_2_LEVEL_2),
         IVS(2),
-        .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = REMATCH_2_LEVEL_2,
-        .species = SPECIES_MINUN,
+        AMY_MINUN(REMATCH_2_LEVEL_2),
         IVS(2),
-        .gender = TRAINER_MON_FEMALE,
         }
     },
 },
@@ -4959,16 +4961,12 @@ MARINA_BATTLE(MUSEUM, 17),
     AMY_AND_LIV_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_3_LEVEL_2,
-        .species = SPECIES_PLUSLE,
+        LIV_PLUSLE(REMATCH_3_LEVEL_2),
         IVS(3),
-        .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = REMATCH_3_LEVEL_2,
-        .species = SPECIES_MINUN,
+        AMY_MINUN(REMATCH_3_LEVEL_2),
         IVS(3),
-        .gender = TRAINER_MON_FEMALE,
         }
     },
 },
@@ -4978,18 +4976,14 @@ MARINA_BATTLE(MUSEUM, 17),
     AMY_AND_LIV_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_4_LEVEL_2,
-        .species = SPECIES_PLUSLE,
+        LIV_PLUSLE(REMATCH_4_LEVEL_2),
         IVS(4),
         .moves = {MOVE_SHOCK_WAVE, MOVE_CHARGE, MOVE_FAKE_TEARS, MOVE_HELPING_HAND},
-        .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = REMATCH_4_LEVEL_2,
-        .species = SPECIES_MINUN,
+        AMY_MINUN(REMATCH_4_LEVEL_2),
         IVS(4),
         .moves = {MOVE_SHOCK_WAVE, MOVE_CHARGE, MOVE_CHARM, MOVE_HELPING_HAND},
-        .gender = TRAINER_MON_FEMALE,
         }
     },
 },
@@ -4999,18 +4993,14 @@ MARINA_BATTLE(MUSEUM, 17),
     AMY_AND_LIV_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_5_LEVEL_2,
-        .species = SPECIES_PLUSLE,
+        LIV_PLUSLE(REMATCH_5_LEVEL_2),
         IVS(5),
         .moves = {MOVE_THUNDERBOLT, MOVE_CHARGE, MOVE_FAKE_TEARS, MOVE_HELPING_HAND},
-        .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = REMATCH_5_LEVEL_2,
-        .species = SPECIES_MINUN,
+        AMY_MINUN(REMATCH_5_LEVEL_2),
         IVS(5),
         .moves = {MOVE_THUNDERBOLT, MOVE_CHARGE, MOVE_CHARM, MOVE_HELPING_HAND},
-        .gender = TRAINER_MON_FEMALE,
         }
     },
 },

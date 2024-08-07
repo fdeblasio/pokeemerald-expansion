@@ -1202,15 +1202,24 @@ There are some mechanics, moves and abilities that are missing and being develop
     - SpA: 125->105
 
 - Cubone (not in main game):
+    - Speed: 35->40
+    - Held items:
+        - Thick Club: 5%->50%
+        - Rare Bone: 0%->5%
     - Evolves into Alolan Marowak with a Fire Stone
+
+- Marowak (not in main game):
+    - Speed: 45->50
     - Held items:
         - Thick Club: 5%->50%
         - Rare Bone: 0%->5%
 
-- Marowak/Alolan Marowak (not in main game):
+- Alolan Marowak (not in main game):
+    - Speed: 45->50
     - Held items:
         - Thick Club: 5%->50%
         - Rare Bone: 0%->5%
+    - Learns Fire Punch and Temper Flare by level up
 
 - Farfetch'd (not in main game):
     - Held item: Leek: 5%->100%
@@ -1257,9 +1266,11 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Chansey (postgame):
     - Held item: Lucky Punch: 50%->100%
     - Can also evolve at level 36
+    - Learns Revival Blessing by level up
 
 - Blissey (postgame):
     - Held item: Lucky Egg: 50%->100%
+    - Learns Revival Blessing by level up
 
 - Tangela/Tangrowth:
     - Learn Energy Ball by level up
@@ -1352,6 +1363,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Munchlax (not in main game):
     - Can also evolve at level 20
+    - Learns Gastro Acid and Power-Up Punch by Egg Move
 
 - Snorlax (not in main game):
     - Learns Slack Off by level up
@@ -1465,7 +1477,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Catch rate: 45->90
 
 - Sneasel/Weavile (not in main game):
-    - Learn Razor Wind by Egg Move
+    - Learn Powder Snow, Bite, Ice Fang, Ice Punch, and Razor Wind by level up
 
 - Slugma:
     - Evolution: 38->32
@@ -1858,6 +1870,19 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Glameow:
     - Evolution: 38->34
+    - Learns Covet by level up
+
+- Purugly:
+    - HP: 71->90
+    - Atk: 82->90
+    - Def: 64->65
+    - SpA: 64->65
+    - SpD: 59->65
+    - Spe: 112->115
+    - Learns Covet by level up
+
+- Stunky:
+    - Learns Acid, Poison Tail, Poison Fang, Poison Jab, and Crunch by level up
 
 - Skuntank:
     - HP: 103->105
@@ -1866,6 +1891,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - SpA: 71->80
     - SpD: 61->65
     - Spe: 84->85
+    - Learns Acid, Poison Tail, Poison Fang, Poison Jab, and Crunch by level up
 
 - Riolu:
     - Can also evolve at level 20
@@ -1957,10 +1983,20 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Earth Power by TM
 
 - Sandile (postgame):
+    - Atk: 72->75
     - Evolution: 29->25
+    - Learns Bulldoze, Stomping Tantrum, and High Horsepower by level up
 
 - Krokorok (postgame):
+    - Atk: 82->85
+    - Spe: 74->75
     - Evolution: 40->38
+    - Learns Bulldoze, Stomping Tantrum, and High Horsepower by level up
+
+- Krookodile (postgame):
+    - Atk: 117->120
+    - Spe: 92->95
+    - Learns Bulldoze, Stomping Tantrum, and High Horsepower by level up
 
 - Darumaka:
     - Evolution: 35->32
@@ -2032,10 +2068,18 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Evolution: 36->32
 
 - Klink:
+    - Atk: 55->60
+    - Def: 70->75
     - Evolution: 38->32
+    - Learns Metal Claw, Rapid Spin, and Magnet Bomb by level up
 
 - Klang:
     - Evolution: 49->42
+    - Learns Metal Claw, Rapid Spin, and Magnet Bomb by level up
+
+- Klinklang:
+    - Learns Metal Claw, Rapid Spin, and Magnet Bomb by level up
+    - Learns Body Press by TM
 
 - Tynamo:
     - Evolution: 39->32
@@ -2168,11 +2212,19 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Received Grass Pelt as a second Ability and Grassy Surge as a Hidden Ability (previously Grass Pelt)
     - Learns Trailblaze, Grassy Terrain, Grassy Glide by level up
 
-- Spritzee/Aromatisse:
+- Spritzee:
     - Gender Ratio: 50/50->25/75
+    - Learns Dazzling Gleam by level up
+
+- Aromatisse:
+    - Spe: 29->47
+    - Base experience: 162->168
+    - Gender Ratio: 50/50->25/75
+    - Learns Aromatic Mist by evolving
+    - Learns Dazzling Gleam by level up
 
 - Swirlix/Slurpuff:
-    - Learn Lick by level up
+    - Learn Lick, Disarming Voice, and Dazzling Gleam by level up
 
 - Skrelp (postgame):
     - Evolution: 48->37
@@ -2311,6 +2363,15 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Spe: 67->70
     - Learns Iron Head by level up
 
+- Wooloo:
+    - Learns Rollout and Body Slam by level up
+
+- Dubwool:
+    - HP: 72->75
+    - Atk: 80->90
+    - Spe: 88->90
+    - Learns Rollout and Body Slam by level up
+
 - Applin/Appletun:
     - Learns Dragon Breath by Egg Move (Flapple, Dippin, and Hydrapple already learn it)
 
@@ -2411,6 +2472,12 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learn Gust, Shock Wave, Air Cutter, Tailwind, Air Slash, and Thunder by level up
     - Learn Rain Dance by TM
     - Learns Heat Wave by Egg Move
+
+- Flittle:
+    - Learns Psychic by level up
+
+- Espathra:
+    - SpA: 101->105
 
 - Tinkatink:
     - SpD: 64->65

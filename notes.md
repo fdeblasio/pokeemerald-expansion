@@ -130,6 +130,9 @@ upcoming
     - Revert some Nature Power moves for a more varied effect (waiting on refactor PR)
     - Have the inside of Mt. Pyre use Burial Ground terrain?
 - Just make new tutors in towns or Battle Frontier
+- Update local Porymoves for automatic movepool updates (similar to Hail/Snowscape)
+    - All Pokémon that can learn Flash Cannon should learn Dazzling Gleam and vice versa?
+    - Any Pokémon that learns a biting move, should also learn a STAB version (for example, Stunky learning Bite but not Poison Fang)
 - Possible Move Updates:
     - Infestation: 20->35
     - Parabolic Charge: 65->75

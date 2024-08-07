@@ -4169,7 +4169,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_SANDILE] =
     {
         .baseHP        = 50,
-        .baseAttack    = 72,
+        .baseAttack    = 75,
         .baseDefense   = 35,
         .baseSpeed     = 65,
         .baseSpAttack  = 35,
@@ -4233,9 +4233,9 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_KROKOROK] =
     {
         .baseHP        = 60,
-        .baseAttack    = 82,
+        .baseAttack    = 85,
         .baseDefense   = 45,
-        .baseSpeed     = 74,
+        .baseSpeed     = 75,
         .baseSpAttack  = 45,
         .baseSpDefense = 45,
         .types = MON_TYPES(TYPE_GROUND, TYPE_DARK),
@@ -4296,9 +4296,9 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_KROOKODILE] =
     {
         .baseHP        = 95,
-        .baseAttack    = 117,
+        .baseAttack    = 120,
         .baseDefense   = P_UPDATED_STATS >= GEN_6 ? 80 : 70,
-        .baseSpeed     = 92,
+        .baseSpeed     = 95,
         .baseSpAttack  = 65,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_GROUND, TYPE_DARK),
@@ -8244,8 +8244,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_KLINK] =
     {
         .baseHP        = 40,
-        .baseAttack    = 55,
-        .baseDefense   = 70,
+        .baseAttack    = 60,
+        .baseDefense   = 75,
         .baseSpeed     = 30,
         .baseSpAttack  = 45,
         .baseSpDefense = 60,

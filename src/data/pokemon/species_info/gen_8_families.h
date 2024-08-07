@@ -1689,10 +1689,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 
     [SPECIES_DUBWOOL] =
     {
-        .baseHP        = 72,
-        .baseAttack    = 80,
+        .baseHP        = 75,
+        .baseAttack    = 90,
         .baseDefense   = 100,
-        .baseSpeed     = 88,
+        .baseSpeed     = 90,
         .baseSpAttack  = 60,
         .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_NORMAL),

@@ -6533,6 +6533,7 @@ static const u16 sMarowakAlolaTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_TEMPER_FLARE,
     MOVE_THIEF,
     MOVE_THROAT_CHOP,
     MOVE_THUNDER,
@@ -27528,6 +27529,7 @@ static const u16 sSandileTeachableLearnset[] = {
     MOVE_ENDURE,
     MOVE_FACADE,
     MOVE_GRASS_KNOT,
+    MOVE_HIGH_HORSEPOWER,
     MOVE_IRON_TAIL,
     MOVE_PAYBACK,
     MOVE_PROTECT,
@@ -27570,6 +27572,7 @@ static const u16 sKrokorokTeachableLearnset[] = {
     MOVE_FACADE,
     MOVE_FOCUS_PUNCH,
     MOVE_GRASS_KNOT,
+    MOVE_HIGH_HORSEPOWER,
     MOVE_IRON_TAIL,
     MOVE_KNOCK_OFF,
     MOVE_MEGA_KICK,
@@ -29618,6 +29621,7 @@ static const u16 sKlangTeachableLearnset[] = {
 };
 
 static const u16 sKlinklangTeachableLearnset[] = {
+    MOVE_BODY_PRESS,
     MOVE_DOUBLE_TEAM,
     MOVE_ELECTRIC_TERRAIN,
     MOVE_ENDURE,
@@ -38793,6 +38797,7 @@ static const u16 sEldegossTeachableLearnset[] = {
 #if P_FAMILY_WOOLOO
 static const u16 sWoolooTeachableLearnset[] = {
     MOVE_ATTRACT,
+    MOVE_BODY_SLAM,
     MOVE_COUNTER,
     MOVE_DEFENSE_CURL,
     MOVE_DOUBLE_EDGE,
@@ -38802,6 +38807,7 @@ static const u16 sWoolooTeachableLearnset[] = {
     MOVE_PAYBACK,
     MOVE_PROTECT,
     MOVE_REST,
+    MOVE_ROLLOUT,
     MOVE_SLEEP_TALK,
     MOVE_SWAGGER,
     MOVE_THUNDER_WAVE,
@@ -38824,6 +38830,7 @@ static const u16 sDubwoolTeachableLearnset[] = {
     MOVE_PAYBACK,
     MOVE_PROTECT,
     MOVE_REST,
+    MOVE_ROLLOUT,
     MOVE_SLEEP_TALK,
     MOVE_SWAGGER,
     MOVE_SWORDS_DANCE,

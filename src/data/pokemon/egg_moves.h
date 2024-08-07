@@ -3690,7 +3690,6 @@ static const u16 sHeracrossEggMoveLearnset[] = {
 static const u16 sSneaselEggMoveLearnset[] = {
     MOVE_ASSIST,
     MOVE_AVALANCHE,
-    MOVE_BITE,
     MOVE_CONFIDE,
     MOVE_CRUSH_CLAW,
     MOVE_DOUBLE_HIT,
@@ -3708,7 +3707,6 @@ static const u16 sSneaselEggMoveLearnset[] = {
     MOVE_LOW_KICK,
     MOVE_LOW_SWEEP,
     MOVE_PURSUIT,
-    MOVE_RAZOR_WIND,
     MOVE_RETALIATE,
     MOVE_REVERSAL,
     MOVE_ROUND,
@@ -6496,7 +6494,6 @@ static const u16 sGlameowEggMoveLearnset[] = {
     MOVE_ASSURANCE,
     MOVE_BITE,
     MOVE_CONFIDE,
-    MOVE_COVET,
     MOVE_ECHOED_VOICE,
     MOVE_FAKE_TEARS,
     MOVE_FLAIL,
@@ -6529,7 +6526,6 @@ static const u16 sStunkyEggMoveLearnset[] = {
     MOVE_HEX,
     MOVE_LASH_OUT,
     MOVE_LEER,
-    MOVE_POISON_TAIL,
     MOVE_PUNISHMENT,
     MOVE_PURSUIT,
     MOVE_ROUND,
@@ -7741,7 +7737,6 @@ static const u16 sBasculinWhiteStripedEggMoveLearnset[] = {
 #if P_FAMILY_SANDILE
 static const u16 sSandileEggMoveLearnset[] = {
     MOVE_BEAT_UP,
-    MOVE_BULLDOZE,
     MOVE_CONFIDE,
     MOVE_CURSE,
     MOVE_FIRE_FANG,
@@ -7760,7 +7755,6 @@ static const u16 sSandileEggMoveLearnset[] = {
     MOVE_SNARL,
     MOVE_SNORE,
     MOVE_SPITE,
-    MOVE_STOMPING_TANTRUM,
     MOVE_TAKE_DOWN,
     MOVE_TERA_BLAST,
     MOVE_THUNDER_FANG,

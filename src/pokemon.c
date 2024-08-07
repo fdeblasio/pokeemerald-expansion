@@ -5473,21 +5473,10 @@ u8 CanLearnTeachableMove(u16 species, u16 move)
     {
         switch (move)
         {
-        case MOVE_BADDY_BAD:
-        case MOVE_BOUNCY_BUBBLE:
-        case MOVE_BUZZY_BUZZ:
         case MOVE_DRAGON_ASCENT:
-        case MOVE_FLOATY_FALL:
-        case MOVE_FREEZY_FROST:
-        case MOVE_GLITZY_GLOW:
         case MOVE_RELIC_SONG:
-        case MOVE_SAPPY_SEED:
         case MOVE_SECRET_SWORD:
-        case MOVE_SIZZLY_SLIDE:
-        case MOVE_SPARKLY_SWIRL:
-        case MOVE_SPLISHY_SPLASH:
         case MOVE_VOLT_TACKLE:
-        case MOVE_ZIPPY_ZAP:
             return FALSE;
         default:
             return TRUE;

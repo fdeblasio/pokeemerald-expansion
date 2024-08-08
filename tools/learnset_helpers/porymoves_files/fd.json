@@ -2104,28 +2104,132 @@
     "TutorMoves": []
   },
   "EEVEE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 20,
+        "Move": "MOVE_BITE"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_SWIFT"
+      },
+      {
+        "Level": 45,
+        "Move": "MOVE_BODY_SLAM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "VAPOREON": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_BODY_SLAM"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_AURORA_BEAM"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_AQUA_RING"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_MUDDY_WATER"
+      },
+      {
+        "Level": 30,
+        "Move": "MOVE_BUBBLE_BEAM"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_RAIN_DANCE"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_SCALD"
+      },
+      {
+        "Level": 45,
+        "Move": "MOVE_SURF"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "JOLTEON": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_BODY_SLAM"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_DOUBLE_KICK"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_PIN_MISSILE"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_SHOCK_WAVE"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_ELECTRIC_TERRAIN"
+      },
+      {
+        "Level": 45,
+        "Move": "MOVE_THUNDERBOLT"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "FLAREON": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_BODY_SLAM"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_SMOG"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_BITE"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_FIRE_SPIN"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_WILL_O_WISP"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_FLAME_WHEEL"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_SUNNY_DAY"
+      },
+      {
+        "Level": 45,
+        "Move": "MOVE_TEMPER_FLARE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -2135,7 +2239,35 @@
     "LevelMoves": [
       {
         "Level": 1,
+        "Move": "MOVE_BODY_SLAM"
+      },
+      {
+        "Level": 1,
         "Move": "MOVE_POWER_GEM"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_SWIFT"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_POWER_SWAP"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_HYPNOSIS"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_PSYCHIC_TERRAIN"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_EXTRASENSORY"
+      },
+      {
+        "Level": 45,
+        "Move": "MOVE_PSYCHIC"
       }
     ],
     "PreEvoMoves": [],
@@ -2144,28 +2276,160 @@
     "TutorMoves": []
   },
   "UMBREON": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 0,
+        "Move": "MOVE_PURSUIT"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_BODY_SLAM"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_SNARL"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_ASSURANCE"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_FEINT_ATTACK"
+      },
+      {
+        "Level": 45,
+        "Move": "MOVE_CRUNCH"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "LEAFEON": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 0,
+        "Move": "MOVE_LEAFAGE"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_BODY_SLAM"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_MAGICAL_LEAF"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_SYNTHESIS"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_SUNNY_DAY"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_RAZOR_LEAF"
+      },
+      {
+        "Level": 30,
+        "Move": "MOVE_LEAF_TORNADO"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_GRASSY_TERRAIN"
+      },
+      {
+        "Level": 45,
+        "Move": "MOVE_SEED_BOMB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "GLACEON": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 0,
+        "Move": "MOVE_POWDER_SNOW"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_BODY_SLAM"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_ICE_SHARD"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_ICY_WIND"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_BITE"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_AURORA_VEIL"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_AURORA_BEAM"
+      },
+      {
+        "Level": 45,
+        "Move": "MOVE_ICE_BEAM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "SYLVEON": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 0,
+        "Move": "MOVE_FAIRY_WIND"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_BODY_SLAM"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_SWIFT"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_LIGHT_SCREEN"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_SKILL_SWAP"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_MIST"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_DISARMING_VOICE"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_DAZZLING_GLEAM"
+      },
+      {
+        "Level": 45,
+        "Move": "MOVE_ALLURING_VOICE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

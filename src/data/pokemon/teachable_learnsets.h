@@ -8971,6 +8971,7 @@ static const u16 sLeafeonTeachableLearnset[] = {
     MOVE_GIGA_IMPACT,
     MOVE_GRASS_KNOT,
     MOVE_GRASSY_GLIDE,
+    MOVE_GRASSY_TERRAIN,
     MOVE_HYPER_BEAM,
     MOVE_HYPER_VOICE,
     MOVE_IRON_TAIL,

@@ -1356,12 +1356,60 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Dragon Breath by Egg Move
 
 - Eevee (not in main game):
-    - Now evolves into Espeon with a Sun Stone
-    - Now evolves into Umbreon with a Moon Stone
-    - Now evolves into Sylveon with a Dawn Stone
+    - Def: 50->55
+    - SpA: 45->55
+    - Now evolves into Espeon only with a Sun Stone
+    - Now evolves into Umbreon only with a Moon Stone
+    - Now evolves into Sylveon only with a Dawn Stone
+    - Swift and Bite swap levels
+    - Learns Body Slam at level 45
+
+- All Eeveelutions (not in main game):
+    - Learn Body Slam by level up
+
+- Vaporeon (not in main game):
+    - Learns Bubble Beam (replacing Aurora Beam), Rain Dance (replacing Aqua Ring), and Scald (replacing Muddy Water) by level up
+    - Learns Aurora Beam, Aqua Ring, and Muddy Water at level 1
+    - Learns Surf at level 45
+
+- Jolteon (not in main game):
+    - Learns Shock Wave (replacing Double Kick) and Electric Terrain (replacing Pin Missile) by level up
+    - Learns Double Kick and Pin Missile at level 1
+    - Learns Thunderbolt at level 45
+
+- Flareon (not in main game):
+    - Learns Will-O-Wisp (replacing Smog), Flame Wheel (replacing Bite), and Sunny Day (replacing Fire Spin) by level up
+    - Learns Smog, Bite, and Fire Spin at level 1
+    - Learns Temper Flare at level 45
 
 - Espeon (not in main game):
-    - Learns Power Gem by level up
+    - Learns Hypnosis (replacing Swift), Psychic Terrain (replacing Power Swap), and Extrasensory (replacing Psychic) by level up
+    - Learns Swift, Power Swap, and Power Gem at level 1
+    - Learns Psychic at level 45
+
+- Umbreon (not in main game):
+    - Learns Pursuit (replacing Snarl) upon evolving
+    - Learns Feint Attack (replacing Assurance) by level up
+    - Learns Snarl and Assurance at level 1
+    - Learns Crunch at level 45
+
+- Leafeon (not in main game):
+    - Learns Leafage (replacing Razor Leaf) upon evolving
+    - Learns Razor Leaf (replacing Magical Leaf), Leaf Tornado (replacing Synthesis), and Grassy Terrain (replacing Sunny Day) by level up
+    - Learns Magical Leaf, Synthesis, and Sunny Day at level 1
+    - Learns Seed Bomb at level 45
+
+- Glaceon (not in main game):
+    - Learns Powder Snow (replacing Icy Wind) upon evolving
+    - Learns Aurora Veil (replacing Ice Shard) and Aurora Beam (replacing Bite) by level up
+    - Learns Ice Shard, Icy Wind, and Bite at level 1
+    - Learns Ice Beam at level 45
+
+- Sylveon (not in main game):
+    - Learns Fairy Wind (replacing Disarming Voice) upon evolving
+    - Learns Mist (replacing Swift), Disarming Voice (replacing Light Screen), and Dazzling Gleam (replacing Skill Swap) by level up
+    - Learns Swift, Light Screen, and Skill Swap at level 1
+    - Learns Alluring Voice at level 45
 
 - Aerodactyl (postgame):
     - Learns Dual Wingbeat, Double-Edge, Head Smash, and Brave Bird by level up

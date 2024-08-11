@@ -5920,7 +5920,20 @@
     "TutorMoves": []
   },
   "ROTOM": {
-    "LevelMoves": [],
+    "LevelMoves": [
+    {
+      "Level": 40,
+      "Move": "MOVE_PARABOLIC_CHARGE"
+    },
+    {
+      "Level": 50,
+      "Move": "MOVE_SHADOW_BALL"
+    },
+    {
+      "Level": 60,
+      "Move": "MOVE_THUNDERBOLT"
+    }
+  ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -7289,7 +7302,16 @@
     "TutorMoves": []
   },
   "EELEKTRIK": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 19,
+        "Move": "MOVE_THUNDER_FANG"
+      },
+      {
+        "Level": 74,
+        "Move": "MOVE_SUPERCELL_SLAM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -7298,8 +7320,16 @@
   "EELEKTROSS": {
     "LevelMoves": [
       {
+        "Level": 1,
+        "Move": "MOVE_THUNDER_FANG"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_SUPERCELL_SLAM"
+      },
+      {
         "Level": 2,
-        "Move": "MOVE_DISCHARGE"
+        "Move": "MOVE_THUNDER_PUNCH"
       },
       {
         "Level": 2,
@@ -9523,14 +9553,48 @@
     "TutorMoves": []
   },
   "TOXTRICITY": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_SNARL"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_PSYCHIC_NOISE"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_THUNDERBOLT"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_SLUDGE_BOMB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "TOXTRICITY_LOW_KEY": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_SNARL"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_PSYCHIC_NOISE"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_THUNDERBOLT"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_SLUDGE_BOMB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

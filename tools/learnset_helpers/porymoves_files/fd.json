@@ -2746,6 +2746,10 @@
         "Move": "MOVE_BUG_BITE"
       },
       {
+        "Level": 38,
+        "Move": "MOVE_LUNGE"
+      },
+      {
         "Level": 42,
         "Move": "MOVE_ACROBATICS"
       }
@@ -2788,6 +2792,10 @@
       {
         "Level": 38,
         "Move": "MOVE_JUMP_KICK"
+      },
+      {
+        "Level": 38,
+        "Move": "MOVE_LUNGE"
       },
       {
         "Level": 42,

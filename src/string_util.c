@@ -490,7 +490,7 @@ static const u8 *ExpandPlaceholder_Wally(void)
     return gText_ExpandedPlaceholder_Wally;
 }
 
-const u8 gText_ExpandedPlaceholder_Ralph[] = _("Ralph");
+const u8 gText_ExpandedPlaceholder_Ralph[] = _("Ledge");
 static const u8 *ExpandPlaceholder_Ralph(void)
 {
     return gText_ExpandedPlaceholder_Ralph;

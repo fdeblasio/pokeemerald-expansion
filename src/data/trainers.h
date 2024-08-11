@@ -49,13 +49,13 @@
     .gender = Rival == KYLE ? TRAINER_MON_MALE : TRAINER_MON_FEMALE,                                     \
     }
 
-#define RIVAL_WHISMUR(Location, Rival)                                      \
+#define RIVAL_ZUBAT(Location, Rival)                                        \
     {                                                                       \
     .lvl = Location##_STARTER_LEVEL - (Location < RIVAL_ROUTE_119 ? 2 : 1), \
     .species = Location < RIVAL_ROUTE_119 ? SPECIES_ZUBAT : (Location < RIVAL_LILYCOVE ? SPECIES_GOLBAT : SPECIES_CROBAT), \
-    .ability = Rival == KYLE,                                            \
+    .ability = ABILITY_INNER_FOCUS,                                         \
     IVS(18),                                                                \
-    .gender = Rival == KYLE ? TRAINER_MON_MALE : TRAINER_MON_FEMALE,     \
+    .gender = Rival == KYLE ? TRAINER_MON_MALE : TRAINER_MON_FEMALE,        \
     }
 
 #define RIVAL_MON(Location, Species, Ability, Rival)                             \
@@ -82,7 +82,7 @@
     Rival##_INFO,                                                              \
     .partySize = 2,                                                            \
     .party = (const struct TrainerMon[]) {                                     \
-        RIVAL_WHISMUR(RIVAL_RUSTBORO, Rival),                                  \
+        RIVAL_ZUBAT(RIVAL_RUSTBORO, Rival),                                    \
         RIVAL_STARTER(RIVAL_RUSTBORO, Type, Rival),                            \
     },                                                                         \
 },                                                                             \
@@ -93,7 +93,7 @@
     .partySize = 3,                                                            \
     .party = (const struct TrainerMon[]) {                                     \
         RIVAL_MON(RIVAL_ROUTE_110, Mon3, Ability3, Rival),                     \
-        RIVAL_WHISMUR(RIVAL_ROUTE_110, Rival),                                 \
+        RIVAL_ZUBAT(RIVAL_ROUTE_110, Rival),                                   \
         RIVAL_STARTER(RIVAL_ROUTE_110, Type, Rival),                           \
     },                                                                         \
 },                                                                             \
@@ -105,7 +105,7 @@
     .party = (const struct TrainerMon[]) {                                     \
         RIVAL_MON(RIVAL_ROUTE_119, Mon4, Ability4, Rival),                     \
         RIVAL_MON(RIVAL_ROUTE_119, Evo3, Ability3, Rival),                     \
-        RIVAL_WHISMUR(RIVAL_ROUTE_119, Rival),                                 \
+        RIVAL_ZUBAT(RIVAL_ROUTE_119, Rival),                                   \
         RIVAL_STARTER(RIVAL_ROUTE_119, Type, Rival),                           \
     },                                                                         \
 },                                                                             \
@@ -124,7 +124,7 @@
         },                                                                     \
         RIVAL_MON(RIVAL_LILYCOVE, Evo4, Ability4, Rival),                      \
         RIVAL_MON(RIVAL_LILYCOVE, Evo3, Ability3, Rival),                      \
-        RIVAL_WHISMUR(RIVAL_LILYCOVE, Rival),                                  \
+        RIVAL_ZUBAT(RIVAL_LILYCOVE, Rival),                                    \
         RIVAL_STARTER(RIVAL_LILYCOVE, Type, Rival),                            \
     },                                                                         \
 }
@@ -157,24 +157,24 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE, \
     BOSS_AI_FLAGS
 
-#define RALPH(Level)                                                                                               \
+#define LEDGE(Level)                                                                                               \
     .lvl = Level,                                                                                                  \
     .species = Level < 20 ? SPECIES_WALLY_STARTER : (Level < 38 ? (SPECIES_WALLY_STARTER + 1) : SPECIES_LEDYBULK), \
-    .ability = 1,                                                                                                  \
+    .ability = ABILITY_SWARM,                                                                                      \
     .gender = TRAINER_MON_MALE,                                                                                    \
     IVS(24),                                                                                                       \
-    .nickname = COMPOUND_STRING("Ralph")
+    .nickname = COMPOUND_STRING("Ledge")
 
-#define DUNCAN_BUDEW(Level)                                                                     \
-    .lvl = Level,                                                                              \
-    .species = Level < 25 ? SPECIES_BUDEW : (Level < 35 ? SPECIES_ROSELIA : SPECIES_ROSERADE), \
-    .ability = ABILITY_NATURAL_CURE,                                                           \
-    .gender = TRAINER_MON_FEMALE
+#define DUNCAN_BELLSPROUT(Level)                                                                         \
+    .lvl = Level,                                                                                        \
+    .species = Level < 25 ? SPECIES_BELLSPROUT : (Level < 35 ? SPECIES_WEEPINBELL : SPECIES_VICTREEBEL), \
+    .ability = ABILITY_CHLOROPHYLL,                                                                      \
+    .gender = TRAINER_MON_MALE
 
-#define DUNCAN_SWABLU(Level)                                   \
-    .lvl = Level,                                             \
-    .species = Level < 35 ? SPECIES_SWABLU : SPECIES_ALTARIA, \
-    .ability = ABILITY_FLUFFY,                                \
+#define DUNCAN_PACHIRISU(Level)                                     \
+    .lvl = Level,                                                   \
+    .species = Level < 35 ? SPECIES_PACHIRISU : SPECIES_PACHIRIKKU, \
+    .ability = 0,                                                   \
     .gender = TRAINER_MON_MALE
 
 [TRAINER_DUNCAN_MAUVILLE] =
@@ -183,7 +183,7 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        RALPH(19),
+        LEDGE(19),
         }
     },
 },
@@ -194,11 +194,11 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        DUNCAN_BUDEW(21),
+        DUNCAN_BELLSPROUT(21),
         IVS(3),
         },
         {
-        RALPH(23),
+        LEDGE(23),
         }
     },
 },
@@ -209,15 +209,15 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        DUNCAN_SWABLU(25),
+        DUNCAN_PACHIRISU(25),
         IVS(6),
         },
         {
-        DUNCAN_BUDEW(25),
+        DUNCAN_BELLSPROUT(25),
         IVS(6),
         },
         {
-        RALPH(27),
+        LEDGE(27),
         }
     },
 },
@@ -230,99 +230,101 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 56,
-        .species = SPECIES_DELCATTY,
-        .ability = ABILITY_NORMALIZE,
+        .species = SPECIES_SWOOBAT,
+        .ability = ABILITY_SIMPLE,
         IVS(18),
-        .moves = {MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_ASSIST, MOVE_CHARM},
-        .gender = TRAINER_MON_FEMALE,
+        .moves = {MOVE_PSYCHIC, MOVE_AIR_SLASH, MOVE_CALM_MIND, MOVE_AMNESIA},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 56,
-        .species = SPECIES_MAGNEZONE,
-        .ability = ABILITY_ANALYTIC,
+        .species = SPECIES_SWALOT,
+        .ability = ABILITY_LIQUID_OOZE,
         IVS(18),
-        .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_METAL_SOUND},
+        .moves = {MOVE_SLUDGE_BOMB, MOVE_GIGA_DRAIN, MOVE_ICE_BEAM, MOVE_BODY_PRESS},
+        .gender = TRAINER_MON_MALE,
         },
         {
-        DUNCAN_SWABLU(57),
+        DUNCAN_PACHIRISU(57),
         IVS(18),
-        .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},
+        .moves = {MOVE_DISCHARGE, MOVE_SWIFT, MOVE_NUZZLE, MOVE_SWEET_KISS},
         },
         {
-        DUNCAN_BUDEW(57),
+        DUNCAN_BELLSPROUT(57),
         IVS(18),
-        .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC},
+        .moves = {MOVE_LEAF_BLADE, MOVE_POISON_JAB, MOVE_POISON_POWDER, MOVE_GASTRO_ACID},
         },
         {
-        RALPH(59),
+        LEDGE(59),
         .nature = NATURE_ADAMANT,
-        .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE},
-        .heldItem = ITEM_GALLADITE,
+        .moves = {MOVE_LUNGE, MOVE_DRAIN_PUNCH, MOVE_FIRE_PUNCH, MOVE_THUNDER_PUNCH},
+        .heldItem = ITEM_PUNCHING_GLOVE,
         }
     },
 },
 
-#define REMATCH_RALPH(rematch)                                                         \
-    {                                                                                  \
-    REMATCH_MON(GALLADE, ACE, rematch),                                                \
-    .ability = ABILITY_SHARPNESS,                                                      \
-    .nature = NATURE_ADAMANT,                                                          \
-    EV_SPREAD_ATK_SPE_HP,                                                              \
-    .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE}, \
-    .gender = TRAINER_MON_MALE,                                                        \
-    .heldItem = ITEM_GALLADITE,                                                        \
-    .nickname = COMPOUND_STRING("Ralph"),                                              \
-    .friendship = 255,                                                                 \
+#define REMATCH_LEDGE(rematch)                                                    \
+    {                                                                             \
+    REMATCH_MON(LEDYBULK, ACE, rematch),                                          \
+    .ability = ABILITY_IRON_FIST,                                                 \
+    .nature = NATURE_ADAMANT,                                                     \
+    EV_SPREAD_ATK_SPE_HP,                                                         \
+    .moves = {MOVE_LUNGE, MOVE_DRAIN_PUNCH, MOVE_FIRE_PUNCH, MOVE_THUNDER_PUNCH}, \
+    .gender = TRAINER_MON_MALE,                                                   \
+    .heldItem = ITEM_PUNCHING_GLOVE,                                              \
+    .nickname = COMPOUND_STRING("Ledge"),                                         \
+    .friendship = 255,                                                            \
     }
 
-#define DUNCAN_ROSERADE(rematch)                                                         \
-    {                                                                                   \
-    REMATCH_MON(ROSERADE, TIER2, rematch),                                              \
-    .ability = ABILITY_NATURAL_CURE,                                                    \
-    .nature = NATURE_MODEST,                                                            \
-    EV_SPREAD_SPA_SPE_SPD,                                                              \
-    .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC},          \
-    .gender = TRAINER_MON_FEMALE,                                                       \
-    .heldItem = ITEM_MIRACLE_SEED,                                                      \
+#define DUNCAN_VICTREEBEL(rematch)                                                   \
+    {                                                                                \
+    REMATCH_MON(VICTREEBEL, TIER2, rematch),                                         \
+    .ability = ABILITY_NATURAL_CURE,                                                 \
+    .nature = NATURE_ADAMANT,                                                        \
+    EV_SPREAD_ATK_SPE_HP,                                                            \
+    .moves = {MOVE_LEAF_BLADE, MOVE_POISON_JAB, MOVE_LEECH_LIFE, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                      \
+    .heldItem = ITEM_MIRACLE_SEED,                                                   \
     }
 
-#define DUNCAN_ALTARIA(rematch)                                                          \
-    {                                                                                   \
-    REMATCH_MON(ALTARIA, TIER2, rematch),                                               \
-    .ability = ABILITY_NATURAL_CURE,                                                    \
-    .nature = NATURE_MODEST,                                                            \
-    EV_SPREAD_SPA_SPE_DEF,                                                              \
-    .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},    \
-    .gender = TRAINER_MON_MALE,                                                         \
-    }
-
-#define DUNCAN_MAGNEZONE(rematch)                                                        \
-    {                                                                                   \
-    REMATCH_MON(MAGNEZONE, TIER3, rematch),                                             \
-    .ability = ABILITY_ANALYTIC,                                                        \
-    .nature = NATURE_BOLD,                                                              \
-    EV_SPREAD_SPA_DEF_SPD,                                                              \
-    .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_METAL_SOUND},  \
-    }
-
-#define DUNCAN_DELCATTY(rematch)                                         \
-    {                                                                   \
-    REMATCH_MON(DELCATTY, TIER3, rematch),                              \
-    .ability = ABILITY_NORMALIZE,                                       \
-    .nature = NATURE_TIMID,                                             \
-    EV_SPREAD_SPA_SPE_HP,                                               \
-    .moves = {MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_ASSIST, MOVE_CHARM}, \
-    .gender = TRAINER_MON_FEMALE,                                       \
-    }
-
-#define DUNCAN_GARDEVOIR(rematch)                                                 \
+#define DUNCAN_PACHIRIKKU(rematch)                                               \
     {                                                                            \
-    REMATCH_MON(GARDEVOIR, TIER3, rematch),                                      \
-    .ability = ABILITY_SYNCHRONIZE,                                              \
-    .nature = NATURE_MODEST,                                                     \
-    EV_SPREAD_SPA_SPE_HP,                                                        \
-    .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_MYSTICAL_FIRE, MOVE_CALM_MIND}, \
-    .gender = TRAINER_MON_FEMALE,                                                \
+    REMATCH_MON(PACHIRIKKU, TIER2, rematch),                                     \
+    .ability = ABILITY_VOLT_ABSORB,                                              \
+    .nature = NATURE_TIMID,                                                      \
+    EV_SPREAD_SPA_SPE_SPD,                                                       \
+    .moves = {MOVE_THUNDERBOLT, MOVE_SIGNAL_BEAM, MOVE_GRASS_KNOT, MOVE_NUZZLE}, \
+    .gender = TRAINER_MON_MALE,                                                  \
+    }
+
+#define DUNCAN_SWALOT(rematch)                                                    \
+    {                                                                             \
+    REMATCH_MON(SWALOT, TIER3, rematch),                                          \
+    .ability = ABILITY_LIQUID_OOZE,                                               \
+    .nature = NATURE_MODEST,                                                      \
+    EV_SPREAD_SPA_HP_SPE,                                                         \
+    .moves = {MOVE_SLUDGE_BOMB, MOVE_GIGA_DRAIN, MOVE_ICE_BEAM, MOVE_BODY_PRESS}, \
+    .gender = TRAINER_MON_MALE,                                                   \
+    }
+
+#define DUNCAN_SWOOBAT(rematch)                                                \
+    {                                                                          \
+    REMATCH_MON(SWOOBAT, TIER3, rematch),                                      \
+    .ability = ABILITY_SIMPLE,                                                 \
+    .nature = NATURE_TIMID,                                                    \
+    EV_SPREAD_SPA_SPE_HP,                                                      \
+    .moves = {MOVE_PSYCHIC, MOVE_AIR_SLASH, MOVE_SIGNAL_BEAM, MOVE_CALM_MIND}, \
+    .gender = TRAINER_MON_MALE,                                                \
+    }
+
+#define DUNCAN_DUBWOOL(rematch)                                                       \
+    {                                                                                 \
+    REMATCH_MON(DUBWOOL, TIER3, rematch),                                             \
+    .ability = ABILITY_FLUFFY,                                                        \
+    .nature = NATURE_MODEST,                                                          \
+    EV_SPREAD_ATK_DEF_HP,                                                             \
+    .moves = {MOVE_BODY_SLAM, MOVE_BODY_PRESS, MOVE_ZEN_HEADBUTT, MOVE_COTTON_GUARD}, \
+    .gender = TRAINER_MON_MALE,                                                       \
     }
 
 [TRAINER_DUNCAN_VICTORY_ROAD_2] =
@@ -331,11 +333,11 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        DUNCAN_DELCATTY(2),
-        DUNCAN_MAGNEZONE(2),
-        DUNCAN_ALTARIA(2),
-        DUNCAN_ROSERADE(2),
-        REMATCH_RALPH(2),
+        DUNCAN_SWOOBAT(2),
+        DUNCAN_SWALOT(2),
+        DUNCAN_PACHIRIKKU(2),
+        DUNCAN_VICTREEBEL(2),
+        REMATCH_LEDGE(2),
     },
 },
 
@@ -345,11 +347,11 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        DUNCAN_DELCATTY(3),
-        DUNCAN_MAGNEZONE(3),
-        DUNCAN_ALTARIA(3),
-        DUNCAN_ROSERADE(3),
-        REMATCH_RALPH(3),
+        DUNCAN_SWOOBAT(3),
+        DUNCAN_SWALOT(3),
+        DUNCAN_PACHIRIKKU(3),
+        DUNCAN_VICTREEBEL(3),
+        REMATCH_LEDGE(3),
     },
 },
 
@@ -359,12 +361,12 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        DUNCAN_GARDEVOIR(4),
-        DUNCAN_DELCATTY(4),
-        DUNCAN_MAGNEZONE(4),
-        DUNCAN_ALTARIA(4),
-        DUNCAN_ROSERADE(4),
-        REMATCH_RALPH(4),
+        DUNCAN_DUBWOOL(4),
+        DUNCAN_SWOOBAT(4),
+        DUNCAN_SWALOT(4),
+        DUNCAN_PACHIRIKKU(4),
+        DUNCAN_VICTREEBEL(4),
+        REMATCH_LEDGE(4),
     },
 },
 
@@ -374,12 +376,12 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        DUNCAN_GARDEVOIR(5),
-        DUNCAN_DELCATTY(5),
-        DUNCAN_MAGNEZONE(5),
-        DUNCAN_ALTARIA(5),
-        DUNCAN_ROSERADE(5),
-        REMATCH_RALPH(5),
+        DUNCAN_DUBWOOL(5),
+        DUNCAN_SWOOBAT(5),
+        DUNCAN_SWALOT(5),
+        DUNCAN_PACHIRIKKU(5),
+        DUNCAN_VICTREEBEL(5),
+        REMATCH_LEDGE(5),
     },
 },
 

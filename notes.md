@@ -124,6 +124,9 @@ upcoming
 - Gym leaders/Steven/Breeders can have Hidden Abilities
 
 ### Moves
+- Find way for Rotom to learn special moves by level up (for relearning). Currently have TMs, but not all moves (Hydro Pump/Leaf Storm) are TMs
+- Find a way for newer gen TMs to be learned by Pokémon whose base forms don't learn the move (for example Eelektross or Toxtricity)
+    - Remove Snarl and Psychic Noise from Toxtricity's level up learnset once this is implemented
 - Nature Power:
     - Nature Power details on summary screen (power/accuracy would be for in-battle status screen only)
         - All moves are special so change category to special (if nothing changes)?
@@ -132,7 +135,7 @@ upcoming
 - Just make new tutors in towns or Battle Frontier
 - Update local Porymoves for automatic movepool updates (similar to Hail/Snowscape)
     - All Pokémon that can learn Flash Cannon should learn Dazzling Gleam and vice versa?
-    - Any Pokémon that learns a biting move, should also learn a STAB version (for example, Stunky learning Bite but not Poison Fang)
+    - Any Pokémon that learns a biting move, should also learn a STAB version (for example, Eelektrik learning Crunch but not Thunder Fang)
 - Possible Move Updates:
     - Infestation: 20->35
     - Parabolic Charge: 65->75

@@ -1445,7 +1445,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - HP: 65->80
     - Atk: 35->80
     - SpA: 55->35
-    - Learns Gust, Struggle Bug, Bug Bite, and Acrobatics by level up
+    - Learns Gust, Struggle Bug, Bug Bite, Lunge, and Acrobatics by level up
 
 - Spinarak (postgame):
     - Atk: 60->65
@@ -1756,6 +1756,18 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Poison Barb: 5%->50%
         - Absorb Bulb: 0%->5%
 
+- Gulpin:
+    - Atk: 43->45
+    - Def: 53->55
+    - SpA: 43->45
+    - SpD: 53->55
+
+- Swalot:
+    - Atk: 73->85
+    - Def: 83->85
+    - SpA: 73->85
+    - SpD: 83->85
+
 - Numel/Camerupt
     - Held item: Rawst Berry: 0%->100%
 
@@ -2004,6 +2016,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Def: 43->45
     - SpD: 43->45
     - Spe: 72->75
+    - Abilities: Unaware/Klutz/Simple->Unaware/Simple/Synchronize
     - Can also evolve at level 24
     - Learns Psybeam and Psychic Noise by level up
 
@@ -2012,6 +2025,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Atk: 57->60
     - SpA: 77->90
     - Spe: 114->115
+    - Abilities: Unaware/Klutz/Simple->Unaware/Simple/Synchronize
     - Learns Psybeam and Psychic Noise by level up
 
 - Audino:

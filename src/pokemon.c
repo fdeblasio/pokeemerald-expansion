@@ -5519,6 +5519,13 @@ u8 CanLearnTeachableMove(u16 species, u16 move)
             if (teachableLearnset[i] == move)
                 return TRUE;
         }
+        if ((species == SPECIES_ROTOM_HEAT && (move == MOVE_FLAMETHROWER || move == MOVE_OVERHEAT))
+            || (species == SPECIES_ROTOM_WASH && (move == MOVE_SURF || move == MOVE_HYDRO_PUMP))
+            || (species == SPECIES_ROTOM_FROST && (move == MOVE_ICE_BEAM || move == MOVE_BLIZZARD))
+            || (species == SPECIES_ROTOM_FAN && move == MOVE_AIR_SLASH)
+            || (species == SPECIES_ROTOM_MOW && (move == MOVE_ENERGY_BALL || move == MOVE_LEAF_STORM))
+        )
+            return TRUE;
         return FALSE;
     }
 }
@@ -5570,9 +5577,9 @@ u8 GetLevelUpMovesBySpecies(u16 species, u16 *moves)
     const struct LevelUpMove *learnset = GetSpeciesLevelUpLearnset(species);
 
     for (i = 0; i < MAX_LEVEL_UP_MOVES && learnset[i].move != LEVEL_UP_MOVE_END; i++)
-         moves[numMoves++] = learnset[i].move;
+        moves[numMoves++] = learnset[i].move;
 
-     return numMoves;
+    return numMoves;
 }
 
 u8 GetNumberOfRelearnableMoves(struct Pokemon *mon)

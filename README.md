@@ -232,6 +232,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Made rapids easier to navigate so that only one trip is needed to get all items/battle all trainers (at the cost of looking slightly worse)
 - Added area to grind right outside Elite Four
 - TM moves not in the game are learnable as egg moves
+    - However, this is only applicable for when the base form learns the move
 - Pokémon that evolve with an item at day or night now can evolve at any time
 - EVs now give one stat increase for every EV but cap out at 63 (individual)/127 (total). This will lead to the same stats as the old system but easier to train
 - Bird Keepers now use the overworld sprite of male Psychics since it looks more like them than the blond sprite
@@ -1959,8 +1960,32 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Abomasnow:
     - Learns Icicle Crash by TM
 
+- Rotom:
+    - Def: 77->90
+    - SpA: 95->100
+    - SpD: 77->90
+    - Spe: 91->100
+    - Learns Parabolic Charge, Thunderbolt, and Shadow Ball by level up
+
+- Rotom Heat:
+    - Now learns Flamethrower by form change and instead learns Overheat by TM
+    - Learns Parabolic Charge, Thunderbolt, and Shadow Ball by level up
+
+- Rotom Wash:
+    - Now learns Surf by form change
+    - Learns Parabolic Charge, Thunderbolt, and Shadow Ball by level up
+
+- Rotom Frost:
+    - Now learns Ice Beam by form change and instead learns Blizzard by TM
+    - Learns Parabolic Charge, Thunderbolt, and Shadow Ball by level up
+
 - Rotom Fan:
     - Ability: Levitate->Wind Power
+    - Learns Parabolic Charge, Thunderbolt, and Shadow Ball by level up
+
+- Rotom Mow:
+    - Now learns Energy Ball by form change
+    - Learns Parabolic Charge, Thunderbolt, and Shadow Ball by level up
 
 - Snivy:
     - Evolution: 17->16
@@ -2145,6 +2170,12 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Tynamo:
     - Evolution: 39->32
+
+- Eelektrik:
+    - Learns Thunder Fang and Supercell Slam by level up
+
+- Eelektrik:
+    - Learns Thunder Fang, Thunder Punch, and Supercell Slam by level up
 
 - Litwick:
     - Evolution: 41->36
@@ -2451,6 +2482,15 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Atk: 123->125
     - Spe: 136->140
     - Learns Drill Peck by Egg Move
+
+- Toxel:
+    - Atk: 38->40
+    - SpA: 54->55
+
+- Toxtricity:
+    - Atk: 98->100
+    - SpA: 114->115
+    - Learns Snarl, Psychic Noise, Thunderbolt and Sludge Bomb by level up
 
 - Clobbopus:
     - Received Suction Cups as a second ability

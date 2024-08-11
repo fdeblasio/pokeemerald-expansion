@@ -390,7 +390,7 @@ MauvilleCity_Text_UncleYourePushingIt:
 
 MauvilleCity_Text_DuncanWeCanBeatAnyone:
 	.string "Duncan: I'm not pushing it.\p"
-	.string "If I combine forces with Ralph,\n"
+	.string "If I combine forces with Ledge,\n"
 	.string "we can beat anyone!$"
 
 MauvilleCity_Text_DuncanWillYouBattleMe:

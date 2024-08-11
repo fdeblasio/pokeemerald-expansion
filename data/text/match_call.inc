@@ -2617,7 +2617,7 @@ MatchCall_Text_Duncan4::
 
 MatchCall_Text_Duncan5::
 	.string "Duncan: {PLAYER}? It's awesome!\n"
-	.string "Ralph evolved, {PLAYER}!\p"
+	.string "Ledge evolved, {PLAYER}!\p"
 	.string "Maybe I'm talented…\p"
 	.string "Oh, but I shouldn't get a big head\n"
 	.string "like that!\p"

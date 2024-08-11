@@ -158,7 +158,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE, \
     BOSS_AI_FLAGS
 
-#define RALPH(Level) \
+#define RALPH(Level)                                                                                              \
     .lvl = Level,                                                                                                 \
     .species = Level < 20 ? SPECIES_WALLY_STARTER : (Level < 30 ? (SPECIES_WALLY_STARTER + 1) : SPECIES_GALLADE), \
     .ability = 1,                                                                                                 \
@@ -276,34 +276,34 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .friendship = 255,                                                                 \
     }
 
-#define WALLY_ROSERADE(rematch)                                                         \
-    {                                                                                   \
-    REMATCH_MON(ROSERADE, TIER2, rematch),                                              \
-    .ability = ABILITY_NATURAL_CURE,                                                    \
-    .nature = NATURE_MODEST,                                                            \
-    EV_SPREAD_SPA_SPE_SPD,                                                              \
-    .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC},          \
-    .gender = TRAINER_MON_FEMALE,                                                       \
-    .heldItem = ITEM_MIRACLE_SEED,                                                      \
+#define WALLY_ROSERADE(rematch)                                                \
+    {                                                                          \
+    REMATCH_MON(ROSERADE, TIER2, rematch),                                     \
+    .ability = ABILITY_NATURAL_CURE,                                           \
+    .nature = NATURE_MODEST,                                                   \
+    EV_SPREAD_SPA_SPE_SPD,                                                     \
+    .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC}, \
+    .gender = TRAINER_MON_FEMALE,                                              \
+    .heldItem = ITEM_MIRACLE_SEED,                                             \
     }
 
-#define WALLY_ALTARIA(rematch)                                                          \
-    {                                                                                   \
-    REMATCH_MON(ALTARIA, TIER2, rematch),                                               \
-    .ability = ABILITY_NATURAL_CURE,                                                    \
-    .nature = NATURE_MODEST,                                                            \
-    EV_SPREAD_SPA_SPE_DEF,                                                              \
-    .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD},    \
-    .gender = TRAINER_MON_MALE,                                                         \
+#define WALLY_ALTARIA(rematch)                                                       \
+    {                                                                                \
+    REMATCH_MON(ALTARIA, TIER2, rematch),                                            \
+    .ability = ABILITY_NATURAL_CURE,                                                 \
+    .nature = NATURE_MODEST,                                                         \
+    EV_SPREAD_SPA_SPE_DEF,                                                           \
+    .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD}, \
+    .gender = TRAINER_MON_MALE,                                                      \
     }
 
-#define WALLY_MAGNEZONE(rematch)                                                        \
-    {                                                                                   \
-    REMATCH_MON(MAGNEZONE, TIER3, rematch),                                             \
-    .ability = ABILITY_ANALYTIC,                                                        \
-    .nature = NATURE_BOLD,                                                              \
-    EV_SPREAD_SPA_DEF_SPD,                                                              \
-    .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_METAL_SOUND},  \
+#define WALLY_MAGNEZONE(rematch)                                                       \
+    {                                                                                  \
+    REMATCH_MON(MAGNEZONE, TIER3, rematch),                                            \
+    .ability = ABILITY_ANALYTIC,                                                       \
+    .nature = NATURE_BOLD,                                                             \
+    EV_SPREAD_SPA_DEF_SPD,                                                             \
+    .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_TRI_ATTACK, MOVE_METAL_SOUND}, \
     }
 
 #define WALLY_DELCATTY(rematch)                                         \

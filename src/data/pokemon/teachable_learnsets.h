@@ -29634,6 +29634,7 @@ static const u16 sEelektrikTeachableLearnset[] = {
     MOVE_SHOCK_WAVE,
     MOVE_SIGNAL_BEAM,
     MOVE_SLEEP_TALK,
+    MOVE_SUPERCELL_SLAM,
     MOVE_SWAGGER,
     MOVE_THROAT_CHOP,
     MOVE_THUNDER,

@@ -29614,6 +29614,7 @@ static const u16 sKlinklangTeachableLearnset[] = {
 #if P_FAMILY_TYNAMO
 static const u16 sTynamoTeachableLearnset[] = {
     MOVE_KNOCK_OFF,
+    MOVE_SHOCK_WAVE,
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
@@ -39288,6 +39289,7 @@ static const u16 sToxelTeachableLearnset[] = {
     MOVE_FACADE,
     MOVE_PROTECT,
     MOVE_REST,
+    MOVE_SHOCK_WAVE,
     MOVE_SLEEP_TALK,
     MOVE_UNAVAILABLE,
 };

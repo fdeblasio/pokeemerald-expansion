@@ -21493,6 +21493,7 @@ static const struct LevelUpMove sToxtricityAmpedLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_OVERDRIVE),
     LEVEL_UP_MOVE(48, MOVE_BOOMBURST),
     LEVEL_UP_MOVE(52, MOVE_SHIFT_GEAR),
+    LEVEL_UP_MOVE(52, MOVE_MAGNETIC_FLUX),
     LEVEL_UP_END
 };
 

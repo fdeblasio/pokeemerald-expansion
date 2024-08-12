@@ -914,34 +914,33 @@ BRAWLY_REMATCH(5),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 20,
-        .species = SPECIES_MAGNEMITE,
-        .ability = ABILITY_MAGNET_PULL,
+        .species = SPECIES_TYNAMO,
+        .ability = ABILITY_LEVITATE,
         IVS(24),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_SONIC_BOOM, MOVE_MAGNET_BOMB, MOVE_THUNDER_WAVE},
-        .gender = TRAINER_MON_NONE,
+        .moves = {MOVE_SHOCK_WAVE, MOVE_SPARK, MOVE_TACKLE, MOVE_THUNDER_WAVE},
         },
         {
         .lvl = 22,
-        .species = SPECIES_MINUN,
-        .ability = ABILITY_MINUS,
+        .species = SPECIES_WATTREL,
+        .ability = ABILITY_WIND_POWER,
         IVS(24),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_SWIFT, MOVE_SKILL_SWAP, MOVE_NUZZLE},
+        .moves = {MOVE_SHOCK_WAVE, MOVE_AIR_CUTTER, MOVE_UPROAR, MOVE_QUICK_ATTACK},
         .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 22,
-        .species = SPECIES_PLUSLE,
-        .ability = ABILITY_PLUS,
+        .species = SPECIES_HELIOPTILE,
+        .ability = ABILITY_DRY_SKIN,
         IVS(26),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_SWIFT, MOVE_SKILL_SWAP, MOVE_THUNDER_WAVE},
-        .gender = TRAINER_MON_FEMALE,
+        .moves = {MOVE_SHOCK_WAVE, MOVE_SWIFT, MOVE_MUD_SLAP, MOVE_CHARGE},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 24,
-        .species = SPECIES_ELECTRIKE,
-        .ability = ABILITY_STATIC,
+        .species = SPECIES_LUXIO,
+        .ability = ABILITY_INTIMIDATE,
         IVS(30),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_QUICK_ATTACK, MOVE_BITE, MOVE_THUNDER_WAVE},
+        .moves = {MOVE_SHOCK_WAVE, MOVE_BITE, MOVE_BABY_DOLL_EYES, MOVE_CHARGE},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
         .ball = ITEM_POKE_BALL,
@@ -1164,11 +1163,11 @@ BRAWLY_REMATCH(5),
     LEADER_REMATCH,                              \
     .party = (const struct TrainerMon[]) {       \
         WATTSON_ELECTRODE(Rematch, TIER3),       \
-        WATTSON_LANTURN(Rematch, TIER3),         \
-        WATTSON_MAGNEZONE(Rematch, TIER3),       \
-        WATTSON_MINUN(Rematch, TIER2),           \
-        WATTSON_PLUSLE(Rematch, TIER2),          \
-        WATTSON_MANECTRIC(Rematch, ACE),         \
+        WATTSON_ROTOM(Rematch, TIER3),         \
+        WATTSON_EELEKTROSS(Rematch, TIER3),       \
+        WATTSON_KILOWATTREL_RAIN(Rematch, TIER2),           \
+        WATTSON_HELIOLISK(Rematch, TIER2),          \
+        WATTSON_LUXRAY(Rematch, ACE),         \
     },                                           \
 }
 
@@ -7648,8 +7647,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .trainerName = _("Kirk"),
     MAUVILLE_GYM_TRAINER_INFO(GUITARIST),
     .party = (const struct TrainerMon[]) {
-        MAUVILLE_GYM_MON(ELECTRIKE, QUICK_ATTACK, THUNDER_WAVE, LEER),
-        MAUVILLE_GYM_MON(VOLTORB, CHARGE, SCREECH, ROLLOUT)
+        MAUVILLE_GYM_MON(VOLTORB, SWIFT, EERIE_IMPULSE, CHARGE),
+        MAUVILLE_GYM_MON(TOXEL, ACID, NUZZLE, TEARFUL_LOOK)
     },
 },
 
@@ -7658,8 +7657,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .trainerName = _("Ben"),
     MAUVILLE_GYM_TRAINER_INFO(YOUNGSTER),
     .party = (const struct TrainerMon[]) {
-        MAUVILLE_GYM_MON(PICHU, NASTY_PLOT, NUZZLE, SWEET_KISS),
-        MAUVILLE_GYM_MON(ELECTRIKE, QUICK_ATTACK, THUNDER_WAVE, HOWL)
+        MAUVILLE_GYM_MON(WATTREL, AIR_CUTTER, SPARK, UPROAR),
+        MAUVILLE_GYM_MON(PACHIRISU, QUICK_ATTACK, THUNDER_WAVE, GROWL)
     },
 },
 
@@ -7668,8 +7667,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .trainerName = _("Angelo"),
     MAUVILLE_GYM_TRAINER_INFO(POKE_MANIAC),
     .party = (const struct TrainerMon[]) {
-        MAUVILLE_GYM_MON(CHINCHOU, BUBBLE_BEAM, THUNDER_WAVE, CONFUSE_RAY),
-        MAUVILLE_GYM_MON(MAGNEMITE, MAGNET_BOMB, THUNDER_WAVE, SUPERSONIC)
+        MAUVILLE_GYM_MON(TYNAMO, SPARK, TACKLE, THUNDER_WAVE),
+        MAUVILLE_GYM_MON(HELIOPTILE, SWIFT, BULLDOZE, CHARGE)
     },
 },
 
@@ -7678,8 +7677,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .trainerName = _("Shawn"),
     MAUVILLE_GYM_TRAINER_INFO(GUITARIST),
     .party = (const struct TrainerMon[]) {
-        MAUVILLE_GYM_MON(MAGNEMITE, MAGNET_BOMB, THUNDER_WAVE, SUPERSONIC),
-        MAUVILLE_GYM_MON(ELECTRIKE, THUNDER_WAVE, QUICK_ATTACK, LEER)
+        MAUVILLE_GYM_MON(TOXEL, ACID, NUZZLE, TEARFUL_LOOK),
+        MAUVILLE_GYM_MON(SHINX, BITE, BABY_DOLL_EYES, LEER)
     },
 },
 

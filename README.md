@@ -1728,6 +1728,7 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
 
 - Tynamo:
     - Evolution: 39->32
+    - Learns Shock Wave by TM
 
 - Eelektrik:
     - Learns Thunder Fang and Supercell Slam by level up
@@ -2011,13 +2012,18 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
     - Learns Drill Peck by Egg Move
 
 - Toxel:
+    - Only evolves into Amped Toxtricity
     - Atk: 38->40
     - SpA: 54->55
+    - Abilities: Rattled/Static/Klutz->Rattled/Static (Hidden)
     - Can only evolve into Amped Form Toxtricity
+    - Learns Shock Wave by TM
 
 - Toxtricity:
     - Atk: 98->100
     - SpA: 114->115
+    - Abilities: Punk Rock/Plus/Technician->Punk Rock/Technician (Hidden)
+    - Learns Magnetic Flux (originally only Low Key Form knew it) by level up
     - Learns Snarl, Psychic Noise, Thunderbolt and Sludge Bomb by level up
 
 - Clobbopus:

@@ -40166,6 +40166,7 @@ static const u16 sTynamoTeachableLearnset[] = {
     MOVE_CHARGE,
     MOVE_CHARGE_BEAM,
     MOVE_KNOCK_OFF,
+    MOVE_SHOCK_WAVE,
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
@@ -53438,6 +53439,7 @@ static const u16 sToxelTeachableLearnset[] = {
     MOVE_METAL_SOUND,
     MOVE_PROTECT,
     MOVE_REST,
+    MOVE_SHOCK_WAVE,
     MOVE_SLEEP_TALK,
     MOVE_UNAVAILABLE,
 };

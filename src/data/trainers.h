@@ -8514,7 +8514,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 24,
-        .species = SPECIES_WATTREL,
+        .species = SPECIES_GULPIN,
         },
         {
         .lvl = 24,
@@ -8857,18 +8857,22 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 [DIFFICULTY_NORMAL][TRAINER_WILTON_5] =
 {
     WILTON_INFO,
-    .partySize = 3,
+    .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        WILTON_LUXIO(REMATCH_5_LEVEL_3),
+        .lvl = REMATCH_5_LEVEL_4,
+        .species = SPECIES_HAXORUS,
+        },
+        {
+        WILTON_LUXIO(REMATCH_5_LEVEL_4),
         IVS(17),
         },
         {
-        WILTON_WAILMER(REMATCH_5_LEVEL_3),
+        WILTON_WAILMER(REMATCH_5_LEVEL_4),
         IVS(17),
         },
         {
-        WILTON_MAKUHITA(REMATCH_5_LEVEL_3),
+        WILTON_MAKUHITA(REMATCH_5_LEVEL_4),
         IVS(17),
         }
     },
@@ -8985,18 +8989,22 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 [DIFFICULTY_NORMAL][TRAINER_BROOKE_5] =
 {
     BROOKE_INFO,
-    .partySize = 3,
+    .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        BROOKE_WINGULL(REMATCH_5_LEVEL_3),
+        .lvl = REMATCH_5_LEVEL_4,
+        .species = SPECIES_PURUGLY,
+        },
+        {
+        BROOKE_WINGULL(REMATCH_5_LEVEL_4),
         IVS(17),
         },
         {
-        BROOKE_NUMEL(REMATCH_5_LEVEL_3),
+        BROOKE_NUMEL(REMATCH_5_LEVEL_4),
         IVS(17),
         },
         {
-        BROOKE_ROSELIA(REMATCH_5_LEVEL_3),
+        BROOKE_ROSELIA(REMATCH_5_LEVEL_4),
         IVS(17),
         }
     },

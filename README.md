@@ -1957,6 +1957,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Riolu:
     - Can also evolve at level 20
 
+- Hippopotas/Hippowdon:
+    - Learn Bulldoze, Stomping Tantrum, Scorching Sands, and High Horsepower by level up
+
 - Abomasnow:
     - Learns Icicle Crash by TM
 
@@ -2234,6 +2237,8 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Rock Smash and Double Kick by level up
 
 - Druddigon:
+    - Hidden Ability: Mold Breaker->Rock Head
+    - Learns Take Down, Double-Edge, and Head Smash by level up
     - Learns Dragon Breath by Egg Move
 
 - Golett:
@@ -2252,6 +2257,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Atk: 97->105
     - Def: 66->70
     - SpD: 66->70
+    - Learns Ember, Flame Wheel, Fire Punch, and Lava Plume by level up
 
 - Durant:
     - HP: 58->65
@@ -2575,6 +2581,17 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learn Rain Dance by TM
     - Learns Heat Wave by Egg Move
 
+- Capsakid:
+    - Hidden Ability: Klutz->Moody
+    - Learns Absorb, Mega Drain, Giga Drain, Leaf Blade, and Energy Ball by level up
+
+- Scovillain:
+    - Atk: 108->110
+    - SpA: 108->110
+    - Spe: 75->85
+    - Learns Absorb, Ember, Mega Drain, Incinerate, Giga Drain, Flame Burst, Temper Flare, Leaf Blade, and Energy Ball by level up
+    - Learns Earth Power by TM
+
 - Flittle:
     - Learns Psychic by level up
 
@@ -2596,6 +2613,18 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Spe: 94->95
     - Hidden Ability: Pickpocket->Steelworker
     - Learns Smack Down by level up
+
+- Bombirdier:
+    - Atk: 103->105
+    - Spe: 82->85
+    - Learns Aerial Ace, Feint Attack, Drill Peck, and Throat Chop by level up
+
+- Cyclizar:
+    - Learns Headbutt and Body Slam by level up
+
+- Orthworm:
+    - Atk: 85->90
+    - Learns Bullet Punch and Comet Punch by level up
 
 - Flamigo:
     - Learns Brick Break, Dual Wingbeat, Jump Kick, and High Jump Kick by level up

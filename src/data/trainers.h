@@ -6984,8 +6984,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .ability = ABILITY_THICK_FAT,                                               \
     .gender = TRAINER_MON_MALE
 
-#define WILTON_WAILMER(Level) \
-    .lvl = Level,             \
+#define WILTON_WAILMER(Level)                                  \
+    .lvl = Level,                                              \
     .species = Level < 40 ? SPECIES_WAILMER : SPECIES_WAILORD, \
     .ability = ABILITY_OBLIVIOUS,                              \
     .gender = TRAINER_MON_MALE

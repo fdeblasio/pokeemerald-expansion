@@ -795,7 +795,7 @@ static void CreateCableCarSprites(void)
         [FEMALE] = OBJ_EVENT_GFX_RIVAL_KELLI_NORMAL
     };
     u16 rval = Random();
-    u16 hikerGraphicsIds[8] = {
+    u16 hikerGraphicsIds[7] = {
         OBJ_EVENT_GFX_HIKER,
         OBJ_EVENT_GFX_CAMPER,
         OBJ_EVENT_GFX_PICNICKER,

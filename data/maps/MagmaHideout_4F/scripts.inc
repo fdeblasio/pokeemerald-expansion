@@ -1,7 +1,7 @@
 .set LOCALID_GROUDON, 1
 .set LOCALID_GRUNT_1, 2
-.set LOCALID_GRUNT_2, 3
-.set LOCALID_GRUNT_3, 4
+.set LOCALID_GIANA, 3
+.set LOCALID_LANDON, 4
 .set LOCALID_TABITHA, 5
 .set LOCALID_MAXIE, 6
 .set LOCALID_GROUDON_SLEEPING, 7
@@ -73,8 +73,8 @@ MagmaHideout_4F_EventScript_Maxie::
 	fadescreen FADE_TO_BLACK
 	removeobject LOCALID_MAXIE
 	removeobject LOCALID_GRUNT_1
-	removeobject LOCALID_GRUNT_2
-	removeobject LOCALID_GRUNT_3
+	removeobject LOCALID_GIANA
+	removeobject LOCALID_LANDON
 	removeobject LOCALID_TABITHA
 	setflag FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS
 	fadescreen FADE_FROM_BLACK
@@ -113,19 +113,19 @@ MagmaHideout_4F_Movement_MaxieLookAround:
 	delay_16
 	step_end
 
-MagmaHideout_4F_EventScript_Grunt11::
-	trainerbattle_single TRAINER_GRUNT_MAGMA_HIDEOUT_11, MagmaHideout_4F_Text_Grunt11Intro, MagmaHideout_4F_Text_Grunt11Defeat
-	msgbox MagmaHideout_4F_Text_Grunt11PostBattle, MSGBOX_AUTOCLOSE
+MagmaHideout_4F_EventScript_Terrance::
+	trainerbattle_single TRAINER_TERRANCE_MAGMA_HIDEOUT, MagmaHideout_4F_Text_TerranceIntro, MagmaHideout_4F_Text_TerranceDefeat
+	msgbox MagmaHideout_4F_Text_TerrancePostBattle, MSGBOX_AUTOCLOSE
 	end
 
-MagmaHideout_4F_EventScript_Grunt12::
-	trainerbattle_single TRAINER_GRUNT_MAGMA_HIDEOUT_12, MagmaHideout_4F_Text_Grunt12Intro, MagmaHideout_4F_Text_Grunt12Defeat
-	msgbox MagmaHideout_4F_Text_Grunt12PostBattle, MSGBOX_AUTOCLOSE
+MagmaHideout_4F_EventScript_Giana::
+	trainerbattle_single TRAINER_GIANA_MAGMA_HIDEOUT, MagmaHideout_4F_Text_GianaIntro, MagmaHideout_4F_Text_GianaDefeat
+	msgbox MagmaHideout_4F_Text_GianaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-MagmaHideout_4F_EventScript_Grunt13::
-	trainerbattle_single TRAINER_GRUNT_MAGMA_HIDEOUT_13, MagmaHideout_4F_Text_Grunt13Intro, MagmaHideout_4F_Text_Grunt13Defeat
-	msgbox MagmaHideout_4F_Text_Grunt13PostBattle, MSGBOX_AUTOCLOSE
+MagmaHideout_4F_EventScript_Landon::
+	trainerbattle_single TRAINER_LANDON_MAGMA_HIDEOUT, MagmaHideout_4F_Text_LandonIntro, MagmaHideout_4F_Text_LandonDefeat
+	msgbox MagmaHideout_4F_Text_LandonPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 MagmaHideout_4F_EventScript_Tabitha::
@@ -133,41 +133,41 @@ MagmaHideout_4F_EventScript_Tabitha::
 	msgbox MagmaHideout_4F_Text_TabithaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-MagmaHideout_4F_Text_Grunt11Intro:
+MagmaHideout_4F_Text_TerranceIntro:
 	.string "I want to see Groudon, too, but they\n"
 	.string "won't let me see even its tail…\p"
 	.string "It's got me feeling really frustrated.\p"
 	.string "Oh, no!\n"
 	.string "I blabbed about Groudon!$"
 
-MagmaHideout_4F_Text_Grunt11Defeat:
+MagmaHideout_4F_Text_TerranceDefeat:
 	.string "I guess it's impossible to win if one\n"
 	.string "doesn't have a calm mind…$"
 
-MagmaHideout_4F_Text_Grunt11PostBattle:
+MagmaHideout_4F_Text_TerrancePostBattle:
 	.string "I wonder if Groudon even has a tail?$"
 
-MagmaHideout_4F_Text_Grunt12Intro:
+MagmaHideout_4F_Text_GianaIntro:
 	.string "Fuhahaha!\n"
 	.string "Soon! Very soon!\l"
 	.string "Our grand objective will be achieved!$"
 
-MagmaHideout_4F_Text_Grunt12Defeat:
+MagmaHideout_4F_Text_GianaDefeat:
 	.string "Grrr…\n"
 	.string "I've come so far, but now this?$"
 
-MagmaHideout_4F_Text_Grunt12PostBattle:
+MagmaHideout_4F_Text_GianaPostBattle:
 	.string "Maxie, sir!\n"
 	.string "An intruder is headed your way!$"
 
-MagmaHideout_4F_Text_Grunt13Intro:
+MagmaHideout_4F_Text_LandonIntro:
 	.string "You're not finished yet!\n"
 	.string "You're not getting by me easily!$"
 
-MagmaHideout_4F_Text_Grunt13Defeat:
+MagmaHideout_4F_Text_LandonDefeat:
 	.string "Was I that easy to knock down?$"
 
-MagmaHideout_4F_Text_Grunt13PostBattle:
+MagmaHideout_4F_Text_LandonPostBattle:
 	.string "C-come on, one more match…$"
 
 MagmaHideout_4F_Text_TabithaIntro:

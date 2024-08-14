@@ -3417,27 +3417,27 @@
             "mons": [
               {
                 "range": "RANGE_METEOR_FALLS",
-                "species": "SOLROCK"
-              },
-              {
-                "range": "RANGE_METEOR_FALLS",
-                "species": "LUNATONE"
-              },
-              {
-                "range": "RANGE_METEOR_FALLS",
-                "species": "SOLROCK"
-              },
-              {
-                "range": "RANGE_METEOR_FALLS",
-                "species": "LUNATONE"
-              },
-              {
-                "range": "RANGE_METEOR_FALLS",
                 "species": "CLEFFA"
               },
               {
                 "range": "RANGE_METEOR_FALLS",
-                "species": "CLEFFA"
+                "species": "ZUBAT"
+              },
+              {
+                "range": "RANGE_METEOR_FALLS",
+                "species": "DIGLETT"
+              },
+              {
+                "range": "RANGE_METEOR_FALLS",
+                "species": "DIGLETT"
+              },
+              {
+                "range": "RANGE_METEOR_FALLS",
+                "species": "DRILBUR"
+              },
+              {
+                "range": "RANGE_METEOR_FALLS",
+                "species": "DRILBUR"
               },
               {
                 "range": "RANGE_METEOR_FALLS",
@@ -3449,11 +3449,11 @@
               },
               {
                 "range": "RANGE_METEOR_FALLS",
-                "species": "ZUBAT"
+                "species": "DIGLETT"
               },
               {
                 "range": "RANGE_METEOR_FALLS",
-                "species": "ZUBAT"
+                "species": "DRILBUR"
               }
             ]
           },
@@ -3462,19 +3462,19 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "SOLROCK"
+                "species": "ZUBAT"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "LUNATONE"
+                "species": "ZUBAT"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "LUNATONE"
+                "species": "ZUBAT"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "LUNATONE"
+                "species": "ZUBAT"
               }
             ]
           },
@@ -3519,27 +3519,7 @@
             "mons": [
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "SOLROCK"
-              },
-              {
-                "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
-              },
-              {
-                "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "SOLROCK"
-              },
-              {
-                "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
-              },
-              {
-                "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "SOLROCK"
-              },
-              {
-                "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
+                "species": "CLEFAIRY"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
@@ -3547,11 +3527,31 @@
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "GOLBAT"
+                "species": "CLEFAIRY"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
                 "species": "GOLBAT"
+              },
+              {
+                "range": "RANGE_METEOR_FALLS_WATERFALL",
+                "species": "CLEFAIRY"
+              },
+              {
+                "range": "RANGE_METEOR_FALLS_WATERFALL",
+                "species": "GOLBAT"
+              },
+              {
+                "range": "RANGE_METEOR_FALLS_WATERFALL",
+                "species": "CLEFAIRY"
+              },
+              {
+                "range": "RANGE_METEOR_FALLS_WATERFALL",
+                "species": "GOLBAT"
+              },
+              {
+                "range": "RANGE_METEOR_FALLS_WATERFALL",
+                "species": "CLEFAIRY"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
@@ -3564,19 +3564,19 @@
             "mons": [
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "SOLROCK"
+                "species": "GOLBAT"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
+                "species": "GOLBAT"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
+                "species": "GOLBAT"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
+                "species": "GOLBAT"
               }
             ]
           },
@@ -3621,27 +3621,7 @@
             "mons": [
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "SOLROCK"
-              },
-              {
-                "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
-              },
-              {
-                "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "SOLROCK"
-              },
-              {
-                "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
-              },
-              {
-                "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "SOLROCK"
-              },
-              {
-                "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
+                "species": "CLEFAIRY"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
@@ -3649,11 +3629,31 @@
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "GOLBAT"
+                "species": "CLEFAIRY"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
                 "species": "GOLBAT"
+              },
+              {
+                "range": "RANGE_METEOR_FALLS_WATERFALL",
+                "species": "CLEFAIRY"
+              },
+              {
+                "range": "RANGE_METEOR_FALLS_WATERFALL",
+                "species": "GOLBAT"
+              },
+              {
+                "range": "RANGE_METEOR_FALLS_WATERFALL",
+                "species": "CLEFAIRY"
+              },
+              {
+                "range": "RANGE_METEOR_FALLS_WATERFALL",
+                "species": "GOLBAT"
+              },
+              {
+                "range": "RANGE_METEOR_FALLS_WATERFALL",
+                "species": "CLEFAIRY"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
@@ -3666,19 +3666,19 @@
             "mons": [
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "SOLROCK"
+                "species": "GOLBAT"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
+                "species": "GOLBAT"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
+                "species": "GOLBAT"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
+                "species": "GOLBAT"
               }
             ]
           },
@@ -3768,19 +3768,19 @@
             "mons": [
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "SOLROCK"
+                "species": "CROBAT"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
+                "species": "CROBAT"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
+                "species": "CROBAT"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
+                "species": "CROBAT"
               }
             ]
           },
@@ -3829,7 +3829,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "GABITE"
+                "species": "CLEFABLE"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -3837,7 +3837,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "GABITE"
+                "species": "CLEFABLE"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -3845,7 +3845,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "GABITE"
+                "species": "CLEFABLE"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -3853,7 +3853,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "GABITE"
+                "species": "CLEFABLE"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -3861,7 +3861,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "GABITE"
+                "species": "CLEFABLE"
               }
             ]
           }
@@ -3890,11 +3890,11 @@
               },
               {
                 "range": "RANGE_JAGGED_PASS",
-                "species": "DIGLETT"
+                "species": "SPOINK"
               },
               {
                 "range": "RANGE_JAGGED_PASS",
-                "species": "DRILBUR"
+                "species": "LITLEO"
               },
               {
                 "range": "RANGE_JAGGED_PASS",

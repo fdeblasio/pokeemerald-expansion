@@ -42,13 +42,13 @@ upcoming
 ### Next playthrough
 - Consolidate flags
     - FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA, FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY
+    - FLAG_HIDE_FALLARBOR_AZURILL might be unused
 - Move construction worker in order to make Safari Zone postgame-only
 - Get Exp. Share from Steven instead of from Mr. Stone after
     - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game
 - Include charms? (might go over Key Items amount)
 - Give grunts consistent teams/genders?
     - Give them names?
-- Update scripts for Archie battle at Oceanic Museum
 - Battle Archie or Courtney at Meteor Falls?
 - Edit Winona's text to change Bird to Flying?
 - Clear up trainer spots by having just one set of gym leader rematches?
@@ -64,6 +64,7 @@ upcoming
     Include more changes, even if general like Battle Frontier edits
 - Consolidate flags
     - FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA, FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY
+    - FLAG_HIDE_FALLARBOR_AZURILL might be unused
 - Remove unused code
     - Vanilla code
 - Organize changes better

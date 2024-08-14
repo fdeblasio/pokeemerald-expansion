@@ -58,7 +58,6 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	applymovement LOCALID_ARCHIE, SlateportCity_OceanicMuseum_2F_Movement_ArchieApproachPlayer
 	waitmovement 0
 	msgbox SlateportCity_OceanicMuseum_2F_Text_ArchieWarning, MSGBOX_DEFAULT
-	@closemessage
 	trainerbattle_no_intro TRAINER_ARCHIE_MUSEUM, SlateportCity_OceanicMuseum_2F_Text_ArchieDefeat
 	msgbox SlateportCity_OceanicMuseum_2F_Text_ArchieRetreat, MSGBOX_DEFAULT
 	closemessage

@@ -2099,6 +2099,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Galarian Darumaka/Darmanitan:
     - Held item: Snowball: 0%->50%
 
+- Maractus:
+    - Learns Energy Ball by level up
+
 - Scraggy:
     - Evolution: 39->35
     - Learns Dragon Breath by Egg Move
@@ -2511,6 +2514,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Spe: 42->50
     - Received Suction Cups as a second ability
     - Learns Circle Throw, Storm Throw, and Aqua Jet by level up
+    - Learns Strength by TM
 
 - Hatenna:
     - Evolution: 32->28

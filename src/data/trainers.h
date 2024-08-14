@@ -2724,6 +2724,59 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     GENERIC_GRUNT_NAME,            \
     MAGMA_GRUNT_F_INFO
 
+#define SPACE_CENTER_GRUNT_LEVEL 47
+
+#define LANDON_BATTLE(Location, Level)                                                   \
+[TRAINER_LANDON_##Location] =                                                            \
+{                                                                                        \
+    .trainerName = _("Landon"),                                                          \
+    MAGMA_GRUNT_M_INFO,                                                                  \
+    .partySize = 1,                                                                      \
+    .party = (const struct TrainerMon[]) {                                               \
+        {                                                                                \
+        .lvl = Level,                                                                    \
+        .species = Level < SPACE_CENTER_GRUNT_LEVEL ? SPECIES_SLUGMA : SPECIES_MAGCARGO, \
+        .ability = ABILITY_MAGMA_ARMOR,                                                  \
+        .gender = TRAINER_MON_MALE,                                                      \
+        }                                                                                \
+    },                                                                                   \
+}
+
+#define GIANA_BATTLE(Location, Level)                                                        \
+[TRAINER_GIANA_##Location] =                                                                 \
+{                                                                                            \
+    .trainerName = _("Giana"),                                                               \
+    MAGMA_GRUNT_F_INFO,                                                                      \
+    .partySize = 1,                                                                          \
+    .party = (const struct TrainerMon[]) {                                                   \
+        {                                                                                    \
+        .lvl = Level,                                                                        \
+        .species = Level < SPACE_CENTER_GRUNT_LEVEL ? SPECIES_SANDSHREW : SPECIES_SANDSLASH, \
+        .ability = ABILITY_SAND_VEIL,                                                        \
+        .gender = TRAINER_MON_FEMALE,                                                        \
+        }                                                                                    \
+    },                                                                                       \
+}
+
+#define TERRANCE_BATTLE(Location, Level)                                                \
+[TRAINER_TERRANCE_##Location] =                                                         \
+{                                                                                       \
+    .trainerName = _("Terrance"),                                                       \
+    MAGMA_GRUNT_M_INFO,                                                                 \
+    .partySize = 1,                                                                     \
+    .party = (const struct TrainerMon[]) {                                              \
+        {                                                                               \
+        .lvl = Level,                                                                   \
+        .species = Level < SPACE_CENTER_GRUNT_LEVEL ? SPECIES_BALTOY : SPECIES_CLAYDOL, \
+        .ability = ABILITY_LEVITATE,                                                    \
+        IVS(6),                                                                         \
+        .gender = TRAINER_MON_NONE,                                                     \
+        }                                                                               \
+    },                                                                                  \
+}
+
+
+
 #define AQUA_GRUNT_M_INFO                                  \
     .trainerClass = TRAINER_CLASS_TEAM_AQUA,               \
     .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,                \
@@ -2754,7 +2807,6 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .species = SPECIES_CARVANHA,   \
     .ability = ABILITY_ROUGH_SKIN, \
     .gender = TRAINER_MON_MALE
-
 
 #define SEAFLOOR_CAVERN_LEVEL 52
 
@@ -8270,29 +8322,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 },
 
 //Mt. Chimney (Magma)
-[TRAINER_GRUNT_MT_CHIMNEY_1] =
-{
-    GENERIC_MAGMA_GRUNT_F_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 27,
-        .species = SPECIES_VULPIX,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MT_CHIMNEY_2] =
-{
-    GENERIC_MAGMA_GRUNT_M_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 27,
-        .species = SPECIES_SLUGMA,
-        }
-    },
-},
+GIANA_BATTLE(MT_CHIMNEY, 27),
+LANDON_BATTLE(MT_CHIMNEY, 27),
 
 [TRAINER_TABITHA_MT_CHIMNEY] =
 {
@@ -8348,23 +8379,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     },
 },
 
-[TRAINER_GRUNT_JAGGED_PASS] =
-{
-    GENERIC_MAGMA_GRUNT_M_INFO,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 26,
-        .species = SPECIES_RHYHORN,
-        IVS(6),
-        },
-        {
-        .lvl = 26,
-        .species = SPECIES_HOUNDOUR,
-        IVS(6),
-        }
-    },
-},
+TERRANCE_BATTLE(JAGGED_PASS, 27),
 
 #define DIANA_INFO             \
     .trainerName = _("Diana"), \
@@ -13415,42 +13430,6 @@ MARINA_BATTLE(MT_PYRE, 42),
     },
 },
 
-[TRAINER_GRUNT_MAGMA_HIDEOUT_11] =
-{
-    GENERIC_MAGMA_GRUNT_M_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MAGMA_HIDEOUT_LEVEL,
-        .species = SPECIES_BALTOY,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_12] =
-{
-    GENERIC_MAGMA_GRUNT_M_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MAGMA_HIDEOUT_LEVEL,
-        .species = SPECIES_RHYHORN,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_13] =
-{
-    GENERIC_MAGMA_GRUNT_M_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MAGMA_HIDEOUT_LEVEL,
-        .species = SPECIES_SLUGMA,
-        }
-    },
-},
-
 [TRAINER_GRUNT_MAGMA_HIDEOUT_14] =
 {
     GENERIC_MAGMA_GRUNT_F_INFO,
@@ -13486,6 +13465,10 @@ MARINA_BATTLE(MT_PYRE, 42),
         }
     },
 },
+
+TERRANCE_BATTLE(MAGMA_HIDEOUT, MAGMA_HIDEOUT_LEVEL),
+GIANA_BATTLE(MAGMA_HIDEOUT, MAGMA_HIDEOUT_LEVEL),
+LANDON_BATTLE(MAGMA_HIDEOUT, MAGMA_HIDEOUT_LEVEL),
 
 [TRAINER_TABITHA_MAGMA_HIDEOUT] =
 {
@@ -14393,7 +14376,6 @@ MARINA_BATTLE(AQUA_HIDEOUT, AQUA_HIDEOUT_LEVEL_2),
 },
 
 //Space Center
-#define SPACE_CENTER_GRUNT_LEVEL 47
 [TRAINER_GRUNT_SPACE_CENTER_1] =
 {
     GENERIC_MAGMA_GRUNT_M_INFO,
@@ -14429,46 +14411,14 @@ MARINA_BATTLE(AQUA_HIDEOUT, AQUA_HIDEOUT_LEVEL_2),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = SPACE_CENTER_GRUNT_LEVEL,
-        .species = SPECIES_PHANPY,
-        }
-    },
-},
-
-[TRAINER_GRUNT_SPACE_CENTER_4] =
-{
-    GENERIC_MAGMA_GRUNT_M_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = SPACE_CENTER_GRUNT_LEVEL,
-        .species = SPECIES_MAGCARGO,
-        }
-    },
-},
-
-[TRAINER_GRUNT_SPACE_CENTER_5] =
-{
-    GENERIC_MAGMA_GRUNT_M_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = SPACE_CENTER_GRUNT_LEVEL,
         .species = SPECIES_TORKOAL,
         }
     },
 },
 
-[TRAINER_GRUNT_SPACE_CENTER_6] =
-{
-    GENERIC_MAGMA_GRUNT_M_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = SPACE_CENTER_GRUNT_LEVEL,
-        .species = SPECIES_CLAYDOL,
-        }
-    },
-},
+TERRANCE_BATTLE(SPACE_CENTER, SPACE_CENTER_GRUNT_LEVEL),
+GIANA_BATTLE(SPACE_CENTER, SPACE_CENTER_GRUNT_LEVEL),
+LANDON_BATTLE(SPACE_CENTER, SPACE_CENTER_GRUNT_LEVEL),
 
 [TRAINER_COURTNEY_SPACE_CENTER] =
 {

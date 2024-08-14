@@ -3,9 +3,9 @@
 .set LOCALID_SCIENTIST, 3
 .set LOCALID_STEVEN, 4
 @ Grunt names numbered like their Trainer values (which are for the full Space Center)
-.set LOCALID_GRUNT_5, 5
-.set LOCALID_GRUNT_4, 6
-.set LOCALID_GRUNT_6, 7
+.set LOCALID_GIANA, 5
+.set LOCALID_TERRANCE, 6
+.set LOCALID_LANDON, 7
 .set LOCALID_TABITHA, 8
 .set LOCALID_MAXIE, 9
 
@@ -30,9 +30,9 @@ MossdeepCity_SpaceCenter_2F_EventScript_MoveCivilians::
 	return
 
 MossdeepCity_SpaceCenter_2F_EventScript_MoveDefeatedGrunts::
-	setobjectxyperm LOCALID_GRUNT_5, 11, 2
-	setobjectxyperm LOCALID_GRUNT_6, 15, 2
-	setobjectxyperm LOCALID_GRUNT_4, 13, 4
+	setobjectxyperm LOCALID_GIANA, 11, 2
+	setobjectxyperm LOCALID_LANDON, 15, 2
+	setobjectxyperm LOCALID_TERRANCE, 13, 4
 	return
 
 MossdeepCity_SpaceCenter_2F_OnFrame:
@@ -61,42 +61,42 @@ MossdeepCity_SpaceCenter_2F_Movement_PlayerExit:
 	step_end
 
 MossdeepCity_SpaceCenter_2F_EventScript_BattleThreeMagmaGrunts::
-	msgbox MossdeepCity_SpaceCenter_2F_Text_Grunt5Intro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_GRUNT_SPACE_CENTER_4, MossdeepCity_SpaceCenter_2F_Text_Grunt5Defeat
-	applymovement LOCALID_GRUNT_4, MossdeepCity_SpaceCenter_2F_Movement_Grunt5Defeated
+	msgbox MossdeepCity_SpaceCenter_2F_Text_TerranceIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_TERRANCE_SPACE_CENTER, MossdeepCity_SpaceCenter_2F_Text_TerranceDefeat
+	applymovement LOCALID_TERRANCE, MossdeepCity_SpaceCenter_2F_Movement_TerranceDefeated
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
-	msgbox MossdeepCity_SpaceCenter_2F_Text_Grunt6Intro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_GRUNT_SPACE_CENTER_5, MossdeepCity_SpaceCenter_2F_Text_Grunt6Defeat
-	applymovement LOCALID_GRUNT_5, MossdeepCity_SpaceCenter_2F_Movement_Grunt6Defeated
+	msgbox MossdeepCity_SpaceCenter_2F_Text_GianaIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_GIANA_SPACE_CENTER, MossdeepCity_SpaceCenter_2F_Text_GianaDefeat
+	applymovement LOCALID_GIANA, MossdeepCity_SpaceCenter_2F_Movement_GianaDefeated
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
-	msgbox MossdeepCity_SpaceCenter_2F_Text_Grunt7Intro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_GRUNT_SPACE_CENTER_6, MossdeepCity_SpaceCenter_2F_Text_Grunt7Defeat
-	applymovement LOCALID_GRUNT_6, MossdeepCity_SpaceCenter_2F_Movement_Grunt7Defeated
+	msgbox MossdeepCity_SpaceCenter_2F_Text_LandonIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_LANDON_SPACE_CENTER, MossdeepCity_SpaceCenter_2F_Text_LandonDefeat
+	applymovement LOCALID_LANDON, MossdeepCity_SpaceCenter_2F_Movement_LandonDefeated
 	waitmovement 0
 	setvar VAR_MOSSDEEP_SPACE_CENTER_STATE, 2
-	copyobjectxytoperm LOCALID_GRUNT_5
-	copyobjectxytoperm LOCALID_GRUNT_6
-	copyobjectxytoperm LOCALID_GRUNT_4
+	copyobjectxytoperm LOCALID_GIANA
+	copyobjectxytoperm LOCALID_LANDON
+	copyobjectxytoperm LOCALID_TERRANCE
 	releaseall
 	end
 
-MossdeepCity_SpaceCenter_2F_Movement_Grunt6Defeated:
+MossdeepCity_SpaceCenter_2F_Movement_GianaDefeated:
 	lock_facing_direction
 	walk_left
 	unlock_facing_direction
 	step_end
 
-MossdeepCity_SpaceCenter_2F_Movement_Grunt5Defeated:
+MossdeepCity_SpaceCenter_2F_Movement_TerranceDefeated:
 	lock_facing_direction
 	walk_down
 	unlock_facing_direction
 	step_end
 
-MossdeepCity_SpaceCenter_2F_Movement_Grunt7Defeated:
+MossdeepCity_SpaceCenter_2F_Movement_LandonDefeated:
 	lock_facing_direction
 	walk_right
 	unlock_facing_direction
@@ -160,16 +160,16 @@ MossdeepCity_SpaceCenter_2F_EventScript_RichBoyMagma::
 	end
 
 @ Battle for the below 3 grunts is handled in MossdeepCity_SpaceCenter_2F_EventScript_BattleThreeMagmaGrunts
-MossdeepCity_SpaceCenter_2F_EventScript_Grunt6::
-	msgbox MossdeepCity_SpaceCenter_2F_Text_Grunt6PostBattle, MSGBOX_NPC
+MossdeepCity_SpaceCenter_2F_EventScript_Giana::
+	msgbox MossdeepCity_SpaceCenter_2F_Text_GianaPostBattle, MSGBOX_NPC
 	end
 
-MossdeepCity_SpaceCenter_2F_EventScript_Grunt7::
-	msgbox MossdeepCity_SpaceCenter_2F_Text_Grunt7PostBattle, MSGBOX_NPC
+MossdeepCity_SpaceCenter_2F_EventScript_Landon::
+	msgbox MossdeepCity_SpaceCenter_2F_Text_LandonPostBattle, MSGBOX_NPC
 	end
 
-MossdeepCity_SpaceCenter_2F_EventScript_Grunt5::
-	msgbox MossdeepCity_SpaceCenter_2F_Text_Grunt5PostBattle, MSGBOX_NPC
+MossdeepCity_SpaceCenter_2F_EventScript_Terrance::
+	msgbox MossdeepCity_SpaceCenter_2F_Text_TerrancePostBattle, MSGBOX_NPC
 	end
 
 MossdeepCity_SpaceCenter_2F_EventScript_Tabitha::
@@ -285,9 +285,9 @@ MossdeepCity_SpaceCenter_2F_EventScript_DefeatedMaxieTabitha::
 	setflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_TEAM_MAGMA
 	setflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_TEAM_MAGMA
 	setflag FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA
-	removeobject LOCALID_GRUNT_5
-	removeobject LOCALID_GRUNT_6
-	removeobject LOCALID_GRUNT_4
+	removeobject LOCALID_GIANA
+	removeobject LOCALID_LANDON
+	removeobject LOCALID_TERRANCE
 	removeobject LOCALID_TABITHA
 	removeobject LOCALID_MAXIE
 	setobjectxy LOCALID_SCIENTIST, 5, 6
@@ -392,39 +392,39 @@ MossdeepCity_SpaceCenter_2F_Text_GoodAnswer:
 	.string "Good answer!\n"
 	.string "That's what a smart person'll do!$"
 
-MossdeepCity_SpaceCenter_2F_Text_Grunt5Intro:
+MossdeepCity_SpaceCenter_2F_Text_TerranceIntro:
 	.string "A reckless go-getter, are you?\n"
 	.string "Okay, I'll go first!$"
 
-MossdeepCity_SpaceCenter_2F_Text_Grunt5Defeat:
+MossdeepCity_SpaceCenter_2F_Text_TerranceDefeat:
 	.string "I lost!\n"
 	.string "But!$"
 
-MossdeepCity_SpaceCenter_2F_Text_Grunt6Intro:
+MossdeepCity_SpaceCenter_2F_Text_GianaIntro:
 	.string "It's too soon to be relieved!\n"
 	.string "I'm up next!$"
 
-MossdeepCity_SpaceCenter_2F_Text_Grunt6Defeat:
+MossdeepCity_SpaceCenter_2F_Text_GianaDefeat:
 	.string "I lost, too!\n"
 	.string "But!$"
 
-MossdeepCity_SpaceCenter_2F_Text_Grunt7Intro:
+MossdeepCity_SpaceCenter_2F_Text_LandonIntro:
 	.string "I bet you want to take a break.\n"
 	.string "But I'm not about to let you do that!$"
 
-MossdeepCity_SpaceCenter_2F_Text_Grunt7Defeat:
+MossdeepCity_SpaceCenter_2F_Text_LandonDefeat:
 	.string "We should've taken a break…\n"
 	.string "That's what we should've done…$"
 
-MossdeepCity_SpaceCenter_2F_Text_Grunt6PostBattle:
+MossdeepCity_SpaceCenter_2F_Text_GianaPostBattle:
 	.string "Three of us here, and look at the sorry\n"
 	.string "mess we got ourselves into.$"
 
-MossdeepCity_SpaceCenter_2F_Text_Grunt7PostBattle:
+MossdeepCity_SpaceCenter_2F_Text_LandonPostBattle:
 	.string "We three losing like this…\n"
 	.string "We look worse than usual by triple!$"
 
-MossdeepCity_SpaceCenter_2F_Text_Grunt5PostBattle:
+MossdeepCity_SpaceCenter_2F_Text_TerrancePostBattle:
 	.string "Are we being useful to our leader\n"
 	.string "at all?$"
 

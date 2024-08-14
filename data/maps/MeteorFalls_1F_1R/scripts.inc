@@ -1,5 +1,5 @@
-.set LOCALID_MAGMA_GRUNT_1, 5
-.set LOCALID_MAGMA_GRUNT_2, 6
+.set LOCAL_ID_COURTNEY, 5
+.set LOCALID_MAGMA_GRUNT, 6
 .set LOCALID_ARCHIE, 7
 .set LOCALID_AQUA_GRUNT_1, 8
 .set LOCALID_AQUA_GRUNT_2, 9
@@ -30,27 +30,27 @@ MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
 	waitmovement 0
 	delay 30
-	applymovement LOCALID_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceDown
+	applymovement LOCAL_ID_COURTNEY, Common_Movement_WalkInPlaceDown
 	waitmovement 0
 	msgbox MeteorFalls_1F_1R_Text_WithThisMeteorite, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceFasterUp
-	applymovement LOCALID_MAGMA_GRUNT_2, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCAL_ID_COURTNEY, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_MAGMA_GRUNT, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	playse SE_PIN
-	applymovement LOCALID_MAGMA_GRUNT_1, Common_Movement_ExclamationMark
+	applymovement LOCAL_ID_COURTNEY, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement LOCALID_MAGMA_GRUNT_1, Common_Movement_Delay48
+	applymovement LOCAL_ID_COURTNEY, Common_Movement_Delay48
 	waitmovement 0
 	msgbox MeteorFalls_1F_1R_Text_DontExpectMercyFromMagma, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_MAGMA_GRUNT_1, MeteorFalls_1F_1R_Movement_MagmaGruntApproachPlayer
+	applymovement LOCAL_ID_COURTNEY, MeteorFalls_1F_1R_Movement_MagmaGruntApproachPlayer
 	waitmovement 0
 	msgbox MeteorFalls_1F_1R_Text_HoldItRightThereMagma, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
-	applymovement LOCALID_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceFasterLeft
-	applymovement LOCALID_MAGMA_GRUNT_2, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCAL_ID_COURTNEY, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_MAGMA_GRUNT, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	addobject LOCALID_ARCHIE
 	addobject LOCALID_AQUA_GRUNT_1
@@ -60,17 +60,17 @@ MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene::
 	applymovement LOCALID_AQUA_GRUNT_1, MeteorFalls_1F_1R_Movement_AquaGrunt1Arrive
 	applymovement LOCALID_AQUA_GRUNT_2, MeteorFalls_1F_1R_Movement_AquaGrunt2Arrive
 	waitmovement 0
-	applymovement LOCALID_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceFasterLeft
-	applymovement LOCALID_MAGMA_GRUNT_2, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCAL_ID_COURTNEY, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_MAGMA_GRUNT, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	msgbox MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, MeteorFalls_1F_1R_Movement_PushPlayerOutOfWay
-	applymovement LOCALID_MAGMA_GRUNT_1, MeteorFalls_1F_1R_Movement_MagmaGrunt1Exit
-	applymovement LOCALID_MAGMA_GRUNT_2, MeteorFalls_1F_1R_Movement_MagmaGrunt2Exit
+	applymovement LOCAL_ID_COURTNEY, MeteorFalls_1F_1R_Movement_MagmaGrunt1Exit
+	applymovement LOCALID_MAGMA_GRUNT, MeteorFalls_1F_1R_Movement_MagmaGrunt2Exit
 	waitmovement 0
-	removeobject LOCALID_MAGMA_GRUNT_1
-	removeobject LOCALID_MAGMA_GRUNT_2
+	removeobject LOCAL_ID_COURTNEY
+	removeobject LOCALID_MAGMA_GRUNT
 	applymovement LOCALID_ARCHIE, MeteorFalls_1F_1R_Movement_ArchieApproachPlayer
 	waitmovement 0
 	msgbox MeteorFalls_1F_1R_Text_ArchieSeenYouBefore, MSGBOX_DEFAULT

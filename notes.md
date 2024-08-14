@@ -49,6 +49,7 @@ upcoming
 - Include charms? (might go over Key Items amount)
 - Give grunts consistent teams/genders?
     - Give them names?
+        - Landon and Terrance for Magma males
 - Battle Archie or Courtney at Meteor Falls?
 - Edit Winona's text to change Bird to Flying?
 - Clear up trainer spots by having just one set of gym leader rematches?
@@ -115,6 +116,7 @@ upcoming
 - Battle Archie/Courtney at Meteor Falls?
 - Give grunts consistent teams/genders?
     - Give them names?
+        - Landon and Terrance for Magma males
 - More mugshots for other bosses?
 - Readjust wild/trainer levels so that parties aren't overpowered?
 - Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)

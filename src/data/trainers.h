@@ -9432,7 +9432,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 25,
-        .species = SPECIES_NUZLEAF,
+        .species = SPECIES_WEEPINBELL,
         }
     },
 },
@@ -9460,11 +9460,11 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 23,
-        .species = SPECIES_CORPHISH,
+        .species = SPECIES_POLIWAG,
         },
         {
         .lvl = 23,
-        .species = SPECIES_GOLDEEN,
+        .species = SPECIES_BUIZEL,
         },
         {
         .lvl = 23,
@@ -9482,11 +9482,11 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 24,
-        .species = SPECIES_MARILL,
+        .species = SPECIES_BUIZEL,
         },
         {
         .lvl = 24,
-        .species = SPECIES_LOMBRE,
+        .species = SPECIES_CAPSAKID,
         }
     },
 },
@@ -9524,7 +9524,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         },
         {
         .lvl = 24,
-        .species = SPECIES_NUZLEAF,
+        .species = SPECIES_STUNKY,
         }
     },
 },
@@ -9632,10 +9632,10 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .ability = ABILITY_KEEN_EYE,                                               \
     .gender = TRAINER_MON_MALE
 
-#define BERNIE_SLUGMA(Level)                                   \
-    .lvl = Level,                                              \
-    .species = Level < 32 ? SPECIES_SLUGMA : SPECIES_MAGCARGO, \
-    .ability = ABILITY_FLAME_BODY,                             \
+#define BERNIE_HEATMOR(Level)      \
+    .lvl = Level,                  \
+    .species = SPECIES_HEATMOR,    \
+    .ability = ABILITY_FLASH_FIRE, \
     .gender = TRAINER_MON_MALE
 
 #define BERNIE_NUMEL(Level)                                                  \
@@ -9650,7 +9650,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        BERNIE_SLUGMA(24),
+        BERNIE_HEATMOR(24),
         },
         {
         BERNIE_WINGULL(24),
@@ -9668,7 +9668,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         IVS(1),
         },
         {
-        BERNIE_SLUGMA(REMATCH_2_LEVEL_3),
+        BERNIE_HEATMOR(REMATCH_2_LEVEL_3),
         IVS(1),
         },
         {
@@ -9688,7 +9688,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         IVS(3),
         },
         {
-        BERNIE_SLUGMA(REMATCH_3_LEVEL_3),
+        BERNIE_HEATMOR(REMATCH_3_LEVEL_3),
         IVS(3),
         },
         {
@@ -9708,7 +9708,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         IVS(3),
         },
         {
-        BERNIE_SLUGMA(REMATCH_4_LEVEL_3),
+        BERNIE_HEATMOR(REMATCH_4_LEVEL_3),
         IVS(3),
         },
         {
@@ -9728,7 +9728,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         IVS(4),
         },
         {
-        BERNIE_SLUGMA(REMATCH_5_LEVEL_3),
+        BERNIE_HEATMOR(REMATCH_5_LEVEL_3),
         IVS(4),
         },
         {
@@ -9747,7 +9747,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 24,
-        .species = SPECIES_GEODUDE,
+        .species = SPECIES_NACLI,
         },
         {
         .lvl = 24,
@@ -9765,11 +9765,11 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 24,
-        .species = SPECIES_LOMBRE,
+        .species = SPECIES_TANGELA,
         },
         {
         .lvl = 24,
-        .species = SPECIES_MARILL,
+        .species = SPECIES_BUIZEL,
         }
     },
 },
@@ -9783,7 +9783,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 24,
-        .species = SPECIES_GEODUDE,
+        .species = SPECIES_ROGGENROLA,
         },
         {
         .lvl = 24,
@@ -9885,7 +9885,7 @@ COURTNEY_BATTLE(METEOR_FALLS, 28, 3),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = REMATCH_5_LEVEL_2,
-        .species = SPECIES_BLAZIKEN,
+        .species = SPECIES_POLIWRATH,
         IVS(17),
         },
         {
@@ -9909,11 +9909,11 @@ COURTNEY_BATTLE(METEOR_FALLS, 28, 3),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 25,
-        .species = SPECIES_LUNATONE,
+        .species = SPECIES_SPRITZEE,
         },
         {
         .lvl = 25,
-        .species = SPECIES_SOLROCK,
+        .species = SPECIES_SWIRLIX,
         }
     },
 },

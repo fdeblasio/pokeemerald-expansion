@@ -22,6 +22,7 @@ FallarborTown_EventScript_ExpertMNormal::
 	end
 
 FallarborTown_EventScript_Girl::
+	bufferspeciesname STR_VAR_1, SPECIES_FALLARBOR_TOWN
 	msgbox FallarborTown_Text_MyPreciousAzurill, MSGBOX_NPC
 	end
 
@@ -66,7 +67,7 @@ FallarborTown_Text_RegionKnownForMeteors:
 
 FallarborTown_Text_MyPreciousAzurill:
 	.string "See! Take a look!\n"
-	.string "This is my precious Azurill!\p"
+	.string "This is my precious {STR_VAR_1}!\p"
 	.string "It's slick and smooth and plushy, too!$"
 
 FallarborTown_Text_Azurill:

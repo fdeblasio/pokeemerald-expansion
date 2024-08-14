@@ -986,7 +986,7 @@ static const struct InGameTrade sIngameTrades[] =
 {
     [INGAME_TRADE_SEEDOT] =
     {
-        .nickname = _("Dots"),
+        .nickname = _("Makit"),
         .species = SPECIES_RUSTBORO_TRADE_GET,
         .ivs = {5, 4, 5, 4, 4, 4},
         .abilityNum = 1,
@@ -1002,7 +1002,7 @@ static const struct InGameTrade sIngameTrades[] =
     },
     [INGAME_TRADE_PLUSLE] =
     {
-        .nickname = _("Pluses"),
+        .nickname = _("Patches"),
         .species = SPECIES_FORTREE_TRADE_GET,
         .ivs = {4, 4, 4, 5, 5, 4},
         .abilityNum = 2,
@@ -1018,7 +1018,7 @@ static const struct InGameTrade sIngameTrades[] =
     },
     [INGAME_TRADE_HORSEA] =
     {
-        .nickname = _("Seasor"),
+        .nickname = _("Perlman"),
         .species = SPECIES_PACIFIDLOG_TRADE_GET,
         .ivs = {5, 4, 4, 4, 5, 4},
         .abilityNum = 0,
@@ -1034,7 +1034,7 @@ static const struct InGameTrade sIngameTrades[] =
     },
     [INGAME_TRADE_MEOWTH] =
     {
-        .nickname = _("Meowow"),
+        .nickname = _("Bowow"),
         .species = SPECIES_BATTLE_FRONTIER_TRADE_GET,
         .ivs = {4, 5, 4, 5, 4, 4},
         .abilityNum = 1,

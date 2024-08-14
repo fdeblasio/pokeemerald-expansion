@@ -93,6 +93,7 @@ upcoming
 - Xaman's TM Case: https://www.pokecommunity.com/showpost.php?p=10378278
 
 ### Trainers
+- Add ORAS team members (like a Picknicker getting a Gulpin)
 - Battle Archie/Courtney at Meteor Falls?
 - Give grunts consistent teams/genders?
     - Give them names?

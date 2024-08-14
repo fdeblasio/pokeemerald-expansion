@@ -6695,7 +6695,6 @@ static const u16 sRioluEggMoveLearnset[] = {
 #if P_FAMILY_HIPPOPOTAS
 static const u16 sHippopotasEggMoveLearnset[] = {
     MOVE_AMNESIA,
-    MOVE_BULLDOZE,
     MOVE_CONFIDE,
     MOVE_CURSE,
     MOVE_FIRE_FANG,
@@ -6709,7 +6708,6 @@ static const u16 sHippopotasEggMoveLearnset[] = {
     MOVE_SNORE,
     MOVE_SPIT_UP,
     MOVE_STOCKPILE,
-    MOVE_STOMPING_TANTRUM,
     MOVE_SUPERPOWER,
     MOVE_SWALLOW,
     MOVE_TERA_BLAST,

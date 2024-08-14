@@ -29,6 +29,7 @@ FallarborTown_Mart_Pokemart_Balls:
 	pokemartlistend
 
 FallarborTown_Mart_EventScript_Woman::
+	bufferspeciesname STR_VAR_1, SPECIES_FALLARBOR_MART
 	msgbox FallarborTown_Mart_Text_DecidingSkittyEvolve, MSGBOX_NPC
 	end
 
@@ -49,7 +50,7 @@ FallarborTown_Mart_EventScript_Skitty::
 
 FallarborTown_Mart_Text_DecidingSkittyEvolve:
 	.string "I'm having a hard time deciding if I\n"
-	.string "should make my Skitty evolve or not.\p"
+	.string "should make my {STR_VAR_1} evolve or not.\p"
 	.string "I only have to use this Moon Stone,\n"
 	.string "but it's so hard to decide…\p"
 	.string "If I make it evolve, it will become\n"

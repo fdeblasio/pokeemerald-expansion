@@ -34,6 +34,7 @@ FallarborTown_EventScript_Azurill::
 	faceplayer
 	waitse
 	playmoncry SPECIES_FALLARBOR_TOWN, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, SPECIES_FALLARBOR_TOWN
 	msgbox FallarborTown_Text_Azurill, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -69,7 +70,7 @@ FallarborTown_Text_MyPreciousAzurill:
 	.string "It's slick and smooth and plushy, too!$"
 
 FallarborTown_Text_Azurill:
-	.string "Azurill: Rooreelooo.$"
+	.string "{STR_VAR_1}: Rooreelooo.$"
 
 FallarborTown_Text_HaveYouChallengedFlannery:
 	.string "Have you already challenged Flannery,\n"

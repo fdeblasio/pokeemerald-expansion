@@ -46,6 +46,7 @@ MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene::
 	closemessage
 	applymovement LOCAL_ID_COURTNEY, MeteorFalls_1F_1R_Movement_MagmaGruntApproachPlayer
 	waitmovement 0
+	trainerbattle_no_intro TRAINER_COURTNEY_METEOR_FALLS, MeteorFalls_1F_1R_Text_CourtneyDefeat
 	msgbox MeteorFalls_1F_1R_Text_HoldItRightThereMagma, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
@@ -252,6 +253,10 @@ MeteorFalls_1F_1R_Text_DontExpectMercyFromMagma:
 	.string "I don't know who you are, but if you get\n"
 	.string "in the way of Team Magma, don't\l"
 	.string "expect any mercy!$"
+
+MeteorFalls_1F_1R_Text_CourtneyDefeat:
+	.string "Argh!\p"
+	.string "Get out of my way!$"
 
 MeteorFalls_1F_1R_Text_HoldItRightThereMagma:
 	.string "Hold it right there, Team Magma!\p"

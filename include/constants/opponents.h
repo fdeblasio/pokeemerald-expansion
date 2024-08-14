@@ -935,8 +935,8 @@
 #define TRAINER_BRANDON                   850
 #define TRAINER_RED                       851
 #define TRAINER_LEAF                      852
-#define TRAINER_BRENDAN_PLACEHOLDER       853
-#define TRAINER_MAY_PLACEHOLDER           854
+#define TRAINER_KYLE_PLACEHOLDER          853
+#define TRAINER_KELLI_PLACEHOLDER         854
 #define TRAINER_DUDLEY                    855
 #define TRAINER_KAYLEE                    856
 #define TRAINER_TERRY                     857

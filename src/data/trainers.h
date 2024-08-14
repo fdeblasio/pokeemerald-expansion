@@ -2825,6 +2825,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define TABITHA_SANDSHREW(Level)                                                  \
     .lvl = Level,                                                                 \
     .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_SANDSHREW : SPECIES_SANDSLASH, \
+    .ability = ABILITY_SAND_VEIL,                                                 \
     .gender = TRAINER_MON_MALE
 
 #define COURTNEY_INFO                                                          \
@@ -2833,6 +2834,24 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .trainerPic = TRAINER_PIC_MAGMA_ADMIN_F,                                   \
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MAGMA, \
     BOSS_AI_FLAGS
+
+#define COURTNEY_VULPIX(Level)                                                 \
+    .lvl = Level,                                                              \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_VULPIX : SPECIES_NINETALES, \
+    .ability = ABILITY_FLASH_FIRE,                                             \
+    .gender = TRAINER_MON_FEMALE
+
+#define COURTNEY_BALTOY(Level)                                               \
+    .lvl = Level,                                                            \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_BALTOY : SPECIES_CLAYDOL, \
+    .ability = ABILITY_LEVITATE,                                             \
+    .gender = TRAINER_MON_NONE
+
+#define COURTNEY_PHANPY(Level)                                               \
+    .lvl = Level,                                                            \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_PHANPY : SPECIES_DONPHAN, \
+    .ability = 0,                                                            \
+    .gender = TRAINER_MON_FEMALE
 
 #define SHELLY_INFO                                                           \
     .trainerName = _("Shelly"),                                               \
@@ -2898,13 +2917,6 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ball = ITEM_POKE_BALL,                                   \
     .nickname = COMPOUND_STRING("Humphrey")
 
-#define MAXIE_BALTOY(Level)                                   \
-    {                                                         \
-    .lvl = Level,                                             \
-    .species = Level < 36 ? SPECIES_BALTOY : SPECIES_CLAYDOL, \
-    IVS(18),                                                  \
-    }
-
 #define MAXIE_RHYHORN(Level)    \
     {                           \
     .lvl = Level,               \
@@ -2912,6 +2924,13 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ability = 2,               \
     IVS(18),                    \
     .gender = TRAINER_MON_MALE, \
+    }
+
+#define MAXIE_BALTOY(Level)                                   \
+    {                                                         \
+    .lvl = Level,                                             \
+    .species = Level < 36 ? SPECIES_BALTOY : SPECIES_CLAYDOL, \
+    IVS(18),                                                  \
     }
 
 #define MAXIE_SANDSHREW(Level)                                                    \
@@ -7996,12 +8015,33 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     },
 },
 
+//Meteor Falls
+[TRAINER_COURTNEY_METEOR_FALLS] =
+{
+    COURTNEY_INFO,
+    .partySize = 3,
+    .party = (const struct TrainerMon[]) {
+        {
+        COURTNEY_PHANPY(26),
+        IVS(3),
+        },
+        {
+        COURTNEY_BALTOY(26),
+        IVS(3),
+        },
+        {
+        COURTNEY_VULPIX(28),
+        IVS(3),
+        }
+    },
+},
+
+//Route 115 (south)
 #define NOB_INFO             \
     .trainerName = _("Nob"), \
     BLACK_BELT_INFO,         \
     MINI_BOSS_AI_FLAGS
 
-//Route 115 (south)
 [TRAINER_NOB_1] =
 {
     NOB_INFO,
@@ -8281,8 +8321,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         MAXIE_SANDSHREW(28),
-        MAXIE_RHYHORN(29),
         MAXIE_BALTOY(29),
+        MAXIE_RHYHORN(29),
         {
         HUMPHREY(30),
         }
@@ -13474,8 +13514,8 @@ MARINA_BATTLE(MT_PYRE, 42),
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         MAXIE_SANDSHREW(46),
-        MAXIE_RHYHORN(47),
         MAXIE_BALTOY(47),
+        MAXIE_RHYHORN(47),
         {
         HUMPHREY(48),
         }
@@ -14436,23 +14476,16 @@ MARINA_BATTLE(AQUA_HIDEOUT, AQUA_HIDEOUT_LEVEL_2),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = MAXIE_SPACE_CENTER_ACE_LEVEL - 3,
-        .species = SPECIES_DONPHAN,
+        COURTNEY_PHANPY(MAXIE_SPACE_CENTER_ACE_LEVEL - 3),
         IVS(12),
-        .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = MAXIE_SPACE_CENTER_ACE_LEVEL - 3,
-        .species = SPECIES_TORKOAL,
-        .ability = ABILITY_WHITE_SMOKE,
+        COURTNEY_BALTOY(MAXIE_SPACE_CENTER_ACE_LEVEL - 3),
         IVS(12),
-        .gender = TRAINER_MON_FEMALE,
         },
         {
-        .lvl = MAXIE_SPACE_CENTER_ACE_LEVEL - 1,
-        .species = SPECIES_NINETALES,
+        COURTNEY_VULPIX(MAXIE_SPACE_CENTER_ACE_LEVEL - 1),
         IVS(12),
-        .gender = TRAINER_MON_FEMALE,
         }
     },
 },
@@ -14482,8 +14515,8 @@ MARINA_BATTLE(AQUA_HIDEOUT, AQUA_HIDEOUT_LEVEL_2),
     MAXIE_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
-        MAXIE_RHYHORN(MAXIE_SPACE_CENTER_ACE_LEVEL - 1),
         MAXIE_BALTOY(MAXIE_SPACE_CENTER_ACE_LEVEL - 1),
+        MAXIE_RHYHORN(MAXIE_SPACE_CENTER_ACE_LEVEL - 1),
         {
         HUMPHREY(MAXIE_SPACE_CENTER_ACE_LEVEL),
         .heldItem = ITEM_CAMERUPTITE,
@@ -16152,7 +16185,7 @@ MARINA_BATTLE(SEAFLOOR_CAVERN, SEAFLOOR_CAVERN_LEVEL),
     },
 },
 
-//Meteor Falls
+//Meteor Falls (Waterfall)
 #define JOHN_AND_JAY_INFO                                                               \
     .trainerName = _("John & Jay"),                                                     \
     OLD_COUPLE_INFO,                                                                    \
@@ -17245,4 +17278,3 @@ MARINA_BATTLE(SEAFLOOR_CAVERN, SEAFLOOR_CAVERN_LEVEL),
 
 UNUSED_TRAINER(1),
 UNUSED_TRAINER(2),
-UNUSED_TRAINER(3),

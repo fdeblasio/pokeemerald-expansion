@@ -1435,13 +1435,13 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Ledyba (postgame):
     - Atk: 20->40
     - SpA: 40->20
-    - Learns Gust, Struggle Bug, and Bug Bite by level up
+    - Learns Gust, Struggle Bug, Bug Bite, Air Cutter, and Aerial Ace by level up
 
 - Ledian (postgame):
     - HP: 65->80
     - Atk: 35->80
     - SpA: 55->35
-    - Learns Gust, Struggle Bug, Bug Bite, Lunge, and Acrobatics by level up
+    - Learns Gust, Struggle Bug, Bug Bite, Air Cutter, Aerial Ace, Lunge, and Acrobatics by level up
 
 - Spinarak (postgame):
     - Atk: 60->65
@@ -2427,6 +2427,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Turtonator:
     - Learns Dragon Breath by Egg Move
+
+- Drampa:
+    - Learns Swift by level up
 
 - Tapu Koko:
     - Learns Supercell Slam, Play Rough, and Rising Voltage by TM

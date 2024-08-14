@@ -64,7 +64,7 @@ JaggedPass_EventScript_OpenMagmaHideout::
 	releaseall
 	end
 
-JaggedPass_EventScript_MagmaHideoutGuard::
+JaggedPass_EventScript_Terrance::
 	lockall
 	goto_if_set FLAG_BEAT_MAGMA_GRUNT_JAGGED_PASS, JaggedPass_EventScript_GuardDefeated
 	waitse
@@ -75,9 +75,9 @@ JaggedPass_EventScript_MagmaHideoutGuard::
 	waitmovement 0
 	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_FacePlayer
 	waitmovement 0
-	msgbox JaggedPass_Text_GruntIntro, MSGBOX_DEFAULT
+	msgbox JaggedPass_Text_TerranceIntro, MSGBOX_DEFAULT
 	closemessage
-	trainerbattle_no_intro TRAINER_GRUNT_JAGGED_PASS, JaggedPass_Text_GruntDefeat
+	trainerbattle_no_intro TRAINER_TERRANCE_JAGGED_PASS, JaggedPass_Text_TerranceDefeat
 	setflag FLAG_BEAT_MAGMA_GRUNT_JAGGED_PASS
 	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -222,13 +222,13 @@ JaggedPass_Text_EthanPostRematch:
 	.string "I should get an Acro Bike from Rydel\n"
 	.string "in Mauville City…$"
 
-JaggedPass_Text_GruntIntro:
+JaggedPass_Text_TerranceIntro:
 	.string "Wah!\n"
 	.string "What are you doing here?\p"
 	.string "What am I doing in a place like this?\p"
 	.string "What business is it of yours?$"
 
-JaggedPass_Text_GruntDefeat:
+JaggedPass_Text_TerranceDefeat:
 	.string "Urrrgh…\p"
 	.string "I should've ducked into our Hideout\n"
 	.string "right away…$"

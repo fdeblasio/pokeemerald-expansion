@@ -6841,7 +6841,12 @@
     "TutorMoves": []
   },
   "MARACTUS": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 36,
+        "Move": "MOVE_ENERGY_BALL"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -9701,7 +9706,9 @@
       }
     ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_STRENGTH"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },

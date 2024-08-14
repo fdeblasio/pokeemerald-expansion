@@ -57,6 +57,7 @@ VerdanturfTown_FriendshipRatersHouse_EventScript_Pikachu::
 	faceplayer
 	waitse
 	playmoncry SPECIES_VERDANTURF_FRIENDSHIP_RATER, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, SPECIES_VERDANTURF_FRIENDSHIP_RATER
 	msgbox VerdanturfTown_FriendshipRatersHouse_Text_Pikachu, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -100,5 +101,5 @@ VerdanturfTown_FriendshipRatersHouse_Text_DetestsYou:
 	.string "Doesn't that make you uncomfortable?$"
 
 VerdanturfTown_FriendshipRatersHouse_Text_Pikachu:
-	.string "Pikachu: Pika pika!$"
+	.string "{STR_VAR_1}: Pika pika!$"
 

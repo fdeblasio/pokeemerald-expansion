@@ -14,6 +14,7 @@ DewfordTown_House1_EventScript_Zigzagoon::
 	faceplayer
 	waitse
 	playmoncry SPECIES_DEWFORD_HOUSE, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, SPECIES_DEWFORD_HOUSE
 	msgbox DewfordTown_House1_Text_Zigzagoon, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -32,5 +33,5 @@ DewfordTown_House1_Text_LifeGoesSlowlyOnIsland:
 	.string "beautiful sea--that's happiness, too.$"
 
 DewfordTown_House1_Text_Zigzagoon:
-	.string "Zigzagoon: Guguuh!$"
+	.string "{STR_VAR_1}: Guguuh!$"
 

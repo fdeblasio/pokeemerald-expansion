@@ -6,6 +6,7 @@ RustboroCity_House3_EventScript_OldMan::
 	end
 
 RustboroCity_House3_EventScript_OldWoman::
+	bufferspeciesname STR_VAR_1, SPECIES_RUSTBORO_PEKACHU
 	msgbox RustboroCity_House3_Text_NamingPikachuPekachu, MSGBOX_NPC
 	end
 
@@ -28,7 +29,7 @@ RustboroCity_House3_Text_IGivePerfectlySuitedNicknames:
 
 RustboroCity_House3_Text_NamingPikachuPekachu:
 	.string "But giving the name Pekachu to\n"
-	.string "a Pikachu? It seems pointless.\p"
+	.string "a {STR_VAR_1}? It seems pointless.\p"
 	.string "I suppose it is good to use a name\n"
 	.string "that's easy to understand, but…$"
 

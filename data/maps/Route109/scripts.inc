@@ -353,6 +353,7 @@ Route109_EventScript_Woman::
 	end
 
 Route109_EventScript_OldMan::
+	bufferspeciesname STR_VAR_1, SPECIES_ROUTE_109_TRASH_COLLECTOR
 	msgbox Route109_Text_ZigzagoonPicksUpLitter, MSGBOX_NPC
 	end
 
@@ -361,6 +362,7 @@ Route109_EventScript_Zigzagoon::
 	faceplayer
 	waitse
 	playmoncry SPECIES_ROUTE_109_TRASH_COLLECTOR, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, SPECIES_ROUTE_109_TRASH_COLLECTOR
 	msgbox Route109_Text_ZigzagoonCry, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -541,7 +543,7 @@ Route109_Text_WereGoingToMakeBigCastle:
 
 Route109_Text_ZigzagoonPicksUpLitter:
 	.string "The water around these parts is clean.\p"
-	.string "But, I get my Zigzagoon to pick up\n"
+	.string "But, I get my {STR_VAR_1} to pick up\n"
 	.string "litter from the shoreline at times.\p"
 	.string "Dirty water becomes rain and joins our\n"
 	.string "rivers, which we drink from…\p"
@@ -549,7 +551,7 @@ Route109_Text_ZigzagoonPicksUpLitter:
 	.string "back to haunt us eventually.$"
 
 Route109_Text_ZigzagoonCry:
-	.string "Zigzagoon: Guguu?$"
+	.string "{STR_VAR_1}: Guguu?$"
 
 Route109_Text_SeashoreHouseSign:
 	.string "Seashore House\p"

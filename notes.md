@@ -57,6 +57,23 @@ upcoming
 - Edit contests?/Contests overhaul
 - Check that Waterfall replacement is good (getting item properly, etc.)
 
+### Misc notes (organize later)
+- After Cats
+    - Set BRENDAN to 1 and MAY to 2 so .gender can just be Rival
+        - Maybe set to TRAINER_MON_MALE and TRAINER_MON_FEMALE to be safe
+    - Update Brendan/May's scripts to use {RIVAL}
+    - Add new variable for Wally and Ralph's names (string_util.c/characters.h/charmap.txt)
+    - Turn into COMPOUND_STRINGs
+    - Try to get variables for Trainers who reference their Pokemon? Like Numel in Route 113 and Machop in Route 115
+    - Zigzagoon variable for Norman lending (used in Trick House)
+    - MAUVILLE_TRAINER for IVS(12) and SHOCK_WAVE? Or no custom moves for those trainers. Or make other gym trainers use the TM
+    - Hidden Power Kadabras should know Psybeam
+    - Seperate Abigail and Benjamin's Magnemites
+    - Some Magnemites never occur because 30 is less than REMATCH_2_LEVEL
+    - Add Abilities to single ability and TRAINER_MON_NONE to genderless to make more constistent
+- Get name of Pokemon speaking
+- Non-grass soot tiles should add to soot sack
+
 ### Meta
 - More simple modifications: https://www.pokecommunity.com/showthread.php?t=416647&page=1
 - Pret wiki tutorials:       https://github.com/pret/pokeemerald/wiki/Tutorials

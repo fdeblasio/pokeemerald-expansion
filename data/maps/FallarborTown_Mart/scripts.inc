@@ -43,6 +43,7 @@ FallarborTown_Mart_EventScript_Skitty::
 	faceplayer
 	waitse
 	playmoncry SPECIES_FALLARBOR_MART, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, SPECIES_FALLARBOR_MART
 	msgbox FallarborTown_Mart_Text_Skitty, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -58,7 +59,7 @@ FallarborTown_Mart_Text_DecidingSkittyEvolve:
 	.string "But it will look so different, too.$"
 
 FallarborTown_Mart_Text_Skitty:
-	.string "Skitty: Miyao?$"
+	.string "{STR_VAR_1}: Miyao?$"
 
 FallarborTown_Mart_Text_SellNuggetIFound:
 	.string "This Nugget I found here…\n"

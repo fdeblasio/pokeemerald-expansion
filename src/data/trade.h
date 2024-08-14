@@ -987,7 +987,7 @@ static const struct InGameTrade sIngameTrades[] =
     [INGAME_TRADE_SEEDOT] =
     {
         .nickname = _("Dots"),
-        .species = SPECIES_SEEDOT,
+        .species = SPECIES_RUSTBORO_TRADE_GET,
         .ivs = {5, 4, 5, 4, 4, 4},
         .abilityNum = 1,
         .otId = 38726,
@@ -998,12 +998,12 @@ static const struct InGameTrade sIngameTrades[] =
         .otName = _("Kobe"),
         .otGender = MALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_RALTS
+        .requestedSpecies = SPECIES_RUSTBORO_TRADE_GIVE
     },
     [INGAME_TRADE_PLUSLE] =
     {
         .nickname = _("Pluses"),
-        .species = SPECIES_PLUSLE,
+        .species = SPECIES_FORTREE_TRADE_GET,
         .ivs = {4, 4, 4, 5, 5, 4},
         .abilityNum = 2,
         .otId = 73996,
@@ -1014,12 +1014,12 @@ static const struct InGameTrade sIngameTrades[] =
         .otName = _("Roman"),
         .otGender = MALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_VOLBEAT
+        .requestedSpecies = SPECIES_FORTREE_TRADE_GIVE
     },
     [INGAME_TRADE_HORSEA] =
     {
         .nickname = _("Seasor"),
-        .species = SPECIES_HORSEA,
+        .species = SPECIES_PACIFIDLOG_TRADE_GET,
         .ivs = {5, 4, 4, 4, 5, 4},
         .abilityNum = 0,
         .otId = 46285,
@@ -1030,12 +1030,12 @@ static const struct InGameTrade sIngameTrades[] =
         .otName = _("Skylar"),
         .otGender = MALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_BAGON
+        .requestedSpecies = SPECIES_PACIFIDLOG_TRADE_GIVE
     },
     [INGAME_TRADE_MEOWTH] =
     {
         .nickname = _("Meowow"),
-        .species = SPECIES_MEOWTH,
+        .species = SPECIES_BATTLE_FRONTIER_TRADE_GET,
         .ivs = {4, 5, 4, 5, 4, 4},
         .abilityNum = 1,
         .otId = 91481,
@@ -1046,7 +1046,7 @@ static const struct InGameTrade sIngameTrades[] =
         .otName = _("Isis"),
         .otGender = FEMALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_SKITTY
+        .requestedSpecies = SPECIES_BATTLE_FRONTIER_TRADE_GIVE
     }
 };
 
@@ -1056,9 +1056,9 @@ static const u16 sIngameTradeMail[][MAIL_WORDS_COUNT + 1] =
         EC_WORD_BE,
         EC_WORD_NICE,
         EC_WORD_TO,
-        EC_POKEMON(PLUSLE),
+        EC_POKEMON(FORTREE_TRADE_GET),
         EC_WORD_EXCL,
-        EC_POKEMON(VOLBEAT),
+        EC_POKEMON(FORTREE_TRADE_GIVE),
         EC_WORD_WILL,
         EC_WORD_BE,
         EC_WORD_FANTASTIC
@@ -1066,17 +1066,17 @@ static const u16 sIngameTradeMail[][MAIL_WORDS_COUNT + 1] =
         EC_WORD_I,
         EC_WORD_WILL,
         EC_WORD_MAKE,
-        EC_POKEMON(BAGON),
+        EC_POKEMON(PACIFIDLOG_TRADE_GIVE),
         EC_WORD_TOUGH,
         EC_WORD_PLEASE,
         EC_WORD_TRAIN,
-        EC_POKEMON(HORSEA),
+        EC_POKEMON(PACIFIDLOG_TRADE_GET),
         EC_WORD_WELL
     }, {
         EC_WORD_THANK_YOU,
         EC_WORD_FOR,
-        EC_POKEMON(SKITTY),
-        EC_POKEMON_NATIONAL(MEOWTH),
+        EC_POKEMON(BATTLE_FRONTIER_TRADE_GIVE),
+        EC_POKEMON_NATIONAL(BATTLE_FRONTIER_TRADE_GET),
         EC_WORD_CRIES,
         EC_WORD_IN,
         EC_WORD_A,

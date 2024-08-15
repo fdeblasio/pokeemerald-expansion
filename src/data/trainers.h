@@ -1401,36 +1401,35 @@ FLANNERY_REMATCH(5),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 31,
-        .species = SPECIES_LINOONE,
-        .ability = ABILITY_QUICK_FEET,
+        .species = SPECIES_WATCHOG,
+        .ability = ABILITY_KEEN_EYE,
         IVS(24),
-        .moves = {MOVE_FACADE, MOVE_SLASH, MOVE_PLAY_ROUGH, MOVE_HONE_CLAWS},
+        .moves = {MOVE_FACADE, MOVE_CRUNCH, MOVE_CONFUSE_RAY, MOVE_HYPNOSIS},
         .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 33,
-        .species = SPECIES_ZANGOOSE,
-        .ability = ABILITY_POISON_HEAL,
+        .species = SPECIES_GLAMEOW,
+        .ability = ABILITY_LIMBER,
         IVS(24),
-        .moves = {MOVE_FACADE, MOVE_CRUSH_CLAW, MOVE_NIGHT_SLASH, MOVE_HONE_CLAWS},
-        .gender = TRAINER_MON_MALE,
+        .moves = {MOVE_FACADE, MOVE_FEINT_ATTACK, MOVE_FAKE_OUT, MOVE_ASSIST},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 33,
-        .species = SPECIES_SPINDA,
-        .ability = ABILITY_OWN_TEMPO,
-        .nature = NATURE_QUIRKY,
+        .species = SPECIES_PERSIAN,
+        .ability = ABILITY_TECHNICIAN,
         IVS(24),
-        .moves = {MOVE_FACADE, MOVE_TEETER_DANCE, MOVE_FEINT_ATTACK, MOVE_DIZZY_PUNCH},
+        .moves = {MOVE_FACADE, MOVE_BITE, MOVE_FAKE_OUT, MOVE_TAUNT},
         .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 35,
-        .species = SPECIES_VIGOROTH,
-        .ability = ABILITY_VITAL_SPIRIT,
+        .species = SPECIES_DELCATTY,
+        .ability = ABILITY_NORMALIZE,
         IVS(30),
-        .moves = {MOVE_FACADE, MOVE_THROAT_CHOP, MOVE_SLACK_OFF, MOVE_FOCUS_ENERGY},
-        .gender = TRAINER_MON_MALE,
+        .moves = {MOVE_FACADE, MOVE_WAKE_UP_SLAP, MOVE_CHARM, MOVE_ASSIST},
+        .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SITRUS_BERRY,
         .ball = ITEM_POKE_BALL,
         }
@@ -1646,12 +1645,12 @@ FLANNERY_REMATCH(5),
     NORMAN_INFO,                                \
     LEADER_REMATCH,                             \
     .party = (const struct TrainerMon[]) {      \
-        NORMAN_LINOONE(Rematch, TIER3),         \
-        NORMAN_KECLEON(Rematch, TIER3),         \
-        NORMAN_EXPLOUD(Rematch, TIER3),         \
-        NORMAN_ZANGOOSE(Rematch, TIER2),        \
-        NORMAN_SPINDA(Rematch, TIER2),          \
-        NORMAN_SLAKING(Rematch, ACE),           \
+        NORMAN_GUMSHOOS(Rematch, TIER3),         \
+        NORMAN_ZANGOOSE(Rematch, TIER3),         \
+        NORMAN_WATCHOG(Rematch, TIER3),         \
+        NORMAN_PURUGLY(Rematch, TIER2),        \
+        NORMAN_PERSIAN(Rematch, TIER2),          \
+        NORMAN_DELCATTY(Rematch, ACE),           \
     },                                          \
 }
 
@@ -11041,13 +11040,13 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     },                                                                                                    \
 }
 
-PETALBURG_GYM_TRAINER(RANDALL, "Randall", M, X_SPEED,      SWELLOW,    SALAC_BERRY,  QUICK_ATTACK, AGILITY,     WING_ATTACK,  NONE),
-PETALBURG_GYM_TRAINER(MARY,    "Mary",    F, X_ACCURACY,   DELCATTY,   MICLE_BERRY,  SWIFT,        SHOCK_WAVE,  FEINT_ATTACK, DISARMING_VOICE),
-PETALBURG_GYM_TRAINER(PARKER,  "Parker",  M, HYPER_POTION, SPINDA,     PERSIM_BERRY, TEETER_DANCE, DIZZY_PUNCH, PSYBEAM,      NONE),
-PETALBURG_GYM_TRAINER(ALEXIA,  "Alexia",  F, X_DEFENSE,    WIGGLYTUFF, GANLON_BERRY, DEFENSE_CURL, FACADE,      BODY_PRESS,   NONE),
-PETALBURG_GYM_TRAINER(GEORGE,  "George",  M, HYPER_POTION, VIGOROTH,   SITRUS_BERRY, SLACK_OFF,    DRAIN_PUNCH, ENDURE,       NONE),
-PETALBURG_GYM_TRAINER(JODY,    "Jody",    F, X_ATTACK,     ZANGOOSE,   LIECHI_BERRY, SWORDS_DANCE, CRUSH_CLAW,  NONE,         NONE),
-PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LENS,   SLASH,        NONE,        NONE,         NONE),
+PETALBURG_GYM_TRAINER(RANDALL, "Randall", M, X_SPEED,      PERISAN,  SALAC_BERRY,  FURY_SWIPES,  FAKE_OUT,    FEINT,        NONE),
+PETALBURG_GYM_TRAINER(MARY,    "Mary",    F, X_ACCURACY,   DODRIO,   MICLE_BERRY,  TRI_ATTACK,   DOUBLE_HIT,  AERIAL_ACE,   NONE),
+PETALBURG_GYM_TRAINER(PARKER,  "Parker",  M, HYPER_POTION, WATCHOG,  PERSIM_BERRY, CONFUSE_RAY,  DIZZY_PUNCH, NONE,         NONE),
+PETALBURG_GYM_TRAINER(ALEXIA,  "Alexia",  F, X_DEFENSE,    DUBWOOL,  GANLON_BERRY, DEFENSE_CURL, FACADE,      BODY_PRESS,   NONE),
+PETALBURG_GYM_TRAINER(GEORGE,  "George",  M, HYPER_POTION, CHANSEY,  SITRUS_BERRY, SOFT_BOILED,  LIFE_DEW,    ECHOED_VOICE, NONE),
+PETALBURG_GYM_TRAINER(JODY,    "Jody",    F, X_ATTACK,     ZANGOOSE, LIECHI_BERRY, SWORDS_DANCE, CRUSH_CLAW,  NONE,         NONE),
+PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     GUMSHOOS, SCOPE_LENS,   CHIP_AWAY,    NONE,        NONE,         NONE),
 
 //Route 103 (water)
 [DIFFICULTY_NORMAL][TRAINER_ISABELLE] =

@@ -730,14 +730,24 @@
     "TutorMoves": []
   },
   "DIGLETT": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 25,
+        "Move": "MOVE_STOMPING_TANTRUM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "DUGTRIO": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 25,
+        "Move": "MOVE_STOMPING_TANTRUM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -6541,14 +6551,40 @@
     "TutorMoves": []
   },
   "DRILBUR": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 12,
+        "Move": "MOVE_MUD_SHOT"
+      },
+      {
+        "Level": 16,
+        "Move": "MOVE_BULLDOZE"
+      },
+      {
+        "Level": 26,
+        "Move": "MOVE_STOMPING_TANTRUM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "EXCADRILL": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 12,
+        "Move": "MOVE_MUD_SHOT"
+      },
+      {
+        "Level": 16,
+        "Move": "MOVE_BULLDOZE"
+      },
+      {
+        "Level": 26,
+        "Move": "MOVE_STOMPING_TANTRUM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -9605,7 +9641,32 @@
     "TutorMoves": []
   },
   "SILICOBRA": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_MUD_SLAP"
+      },
+      {
+        "Level": 15,
+        "Move": "MOVE_MUD_SHOT"
+      },
+      {
+        "Level": 30,
+        "Move": "MOVE_SCORCHING_SANDS"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_DRILL_RUN"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_HIGH_HORSEPOWER"
+      },
+      {
+        "Level": 50,
+        "Move": "MOVE_EARTHQUAKE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [
@@ -9614,7 +9675,32 @@
     "TutorMoves": []
   },
   "SANDACONDA": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_MUD_SLAP"
+      },
+      {
+        "Level": 15,
+        "Move": "MOVE_MUD_SHOT"
+      },
+      {
+        "Level": 30,
+        "Move": "MOVE_SCORCHING_SANDS"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_DRILL_RUN"
+      },
+      {
+        "Level": 42,
+        "Move": "MOVE_HIGH_HORSEPOWER"
+      },
+      {
+        "Level": 51,
+        "Move": "MOVE_EARTHQUAKE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

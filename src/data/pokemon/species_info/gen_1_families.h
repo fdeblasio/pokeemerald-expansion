@@ -5758,7 +5758,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
     [SPECIES_DUGTRIO] =
     {
-        .baseHP        = 35,
+        .baseHP        = 50,
         .baseAttack    = DUGTRIO_ATTACK,
         .baseDefense   = 50,
         .baseSpeed     = 120,
@@ -5887,7 +5887,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
     [SPECIES_DUGTRIO_ALOLAN] =
     {
-        .baseHP        = 35,
+        .baseHP        = 50,
         .baseAttack    = DUGTRIO_ATTACK,
         .baseDefense   = 60,
         .baseSpeed     = 110,

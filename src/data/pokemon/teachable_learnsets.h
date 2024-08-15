@@ -39140,6 +39140,7 @@ static const u16 sSilicobraTeachableLearnset[] = {
     MOVE_EARTHQUAKE,
     MOVE_ENDURE,
     MOVE_FACADE,
+    MOVE_HIGH_HORSEPOWER,
     MOVE_PROTECT,
     MOVE_REST,
     MOVE_ROCK_SLIDE,

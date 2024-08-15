@@ -3245,7 +3245,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_WUGTRIO] =
     {
-        .baseHP        = 35,
+        .baseHP        = 50,
         .baseAttack    = 100,
         .baseDefense   = 50,
         .baseSpeed     = 120,

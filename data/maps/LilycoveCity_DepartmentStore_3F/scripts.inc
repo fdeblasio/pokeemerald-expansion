@@ -88,16 +88,15 @@ LilycoveCity_DepartmentStore_3F_EventScript_ClerkEvo::
 
 	.align 2
 LilycoveCity_DepartmentStore_3F_Pokemart_Evo:
-	.2byte ITEM_FIRE_STONE      @ Hoenn: Vulpix, Growlithe, Cubone, Eevee, Capsakid;                                   National: Growlithe-H
-	.2byte ITEM_WATER_STONE     @ Hoenn: Poliwhirl, Eevee
-	.2byte ITEM_THUNDER_STONE   @ Hoenn: Eevee, Nosepass, Eelektrik
+	.2byte ITEM_FIRE_STONE      @ Hoenn: Vulpix, Growlithe, Cubone, Capsakid;                                          National: Growlithe-H
+	.2byte ITEM_WATER_STONE     @ Hoenn: Poliwhirl
+	.2byte ITEM_THUNDER_STONE   @ Hoenn: Nosepass, Eelektrik
 	.2byte ITEM_LEAF_STONE      @ Hoenn: Weepinbell;                                                                   National: Gloom, Voltorb-H
 	.2byte ITEM_MOON_STONE      @ Hoenn: Jigglypuff, Clefairy, Eevee, Skitty
 	.2byte ITEM_SUN_STONE       @ Hoenn: Eevee;                                                                        National: Gloom, Sunkern
-	.2byte ITEM_SHINY_STONE     @ Hoenn: Koffing, Eevee, Togetic, Roselia
+	.2byte ITEM_SHINY_STONE     @ Hoenn: Koffing, Togetic, Roselia
 	.2byte ITEM_DAWN_STONE      @ Hoenn: Snorunt
 	.2byte ITEM_DUSK_STONE      @ Hoenn: Litwick
-	.2byte ITEM_ICE_STONE       @ Hoenn: Eevee;                                                                        National: Sandshrew-A, Vulpix-A
 	.2byte ITEM_LINKING_CORD    @ Hoenn: Kadabra, Machoke, Graveler, Haunter, Boldore, Karrablast, Shelmet, Pumpkaboo; National: Graveler-A
 	.2byte ITEM_KINGS_ROCK      @ Hoenn: Poliwhirl
 	.2byte ITEM_DEEP_SEA_TOOTH  @ Hoenn: Clamperl
@@ -113,6 +112,7 @@ LilycoveCity_DepartmentStore_3F_Pokemart_Evo:
 @ Unused shop that contains evo items for Pokemon not available in Emerald by default
 	.align 2
 LilycoveCity_DepartmentStore_3F_Pokemart_EvoUnused:
+	.2byte ITEM_ICE_STONE       @ Battle Frontier;   National: Sandshrew-A, Vulpix-A
 	.2byte ITEM_METAL_COAT                         @ Unused: Onix and Scyther
 	.2byte ITEM_BLACK_AUGURITE                     @ Unused: Scyther
 	.2byte ITEM_DRAGON_SCALE                       @ Unused: Seadra

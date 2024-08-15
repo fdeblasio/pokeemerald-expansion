@@ -1103,6 +1103,16 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Big Mushroom: 5%->50%
         - Balm Mushroom: 0%->5%
 
+- Diglett (not in main game):
+    - Learns Stomping Tantrum by level up
+
+- Dugtrio (not in main game):
+    - HP: 35->50
+    - Learns Stomping Tantrum by level up
+
+- Alolan Dugtrio (not in main game):
+    - HP: 35->50
+
 - Meowth (postgame):
     - Atk: 45->55
     - Learns Cut and Covet by level up
@@ -1171,10 +1181,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Machamp:
     - Learns Drain Punch by TM
 
-- Bellsprout/Weepinbell
+- Bellsprout/Weepinbell (not in main game):
     - Learn Absorb, Mega Drain, Magical Leaf, Giga Drain, Venoshock, and Seed Bomb by level up
 
-- Victreebel:
+- Victreebel (not in main game):
     - Learns Absorb, Mega Drain, Magical Leaf, Giga Drain, Venoshock, Seed Bomb, Poison Fang, and Solar Blade by level up
 
 - Golem/Alolan Golem:
@@ -2047,6 +2057,9 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Abilities: Unaware/Klutz/Simple->Unaware/Simple/Synchronize
     - Learns Psybeam and Psychic Noise by level up
 
+- Drilbur/Excadrill:
+    - Learn Mud Shot, Bulldoze, and Stomping Tantrum by level up
+
 - Audino:
     - HP: 103->105
     - Gender Ratio: 50/50 -> 25/75
@@ -2477,6 +2490,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Dragon Breath by Egg Move (Flapple, Dippin, and Hydrapple already learn it)
 
 - Silicobra/Sandaconda:
+    - Learns Mud-Slap, Mud Shot, Scorching Sands, Drill Run, High Horsepower, and Earthquake
     - Learn Dragon Breath by Egg Move
 
 - Arrokuda:
@@ -2616,6 +2630,9 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Spe: 94->95
     - Hidden Ability: Pickpocket->Steelworker
     - Learns Smack Down by level up
+
+- Wugtrio:
+    - HP: 35->50
 
 - Bombirdier:
     - Atk: 103->105

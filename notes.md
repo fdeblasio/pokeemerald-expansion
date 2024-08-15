@@ -270,9 +270,10 @@ upcoming
     - Make Thunder also accurate in Electric Terrain?
 - Calculate Electro Ball more similarly to Gyro Ball?
 - Make Water Veil also up evasion like Sand Veil?
-- Species-specific move effects?:
+- Species-specific move effects? (maybe look at code for Diglett immunity to Telekinesis):
     - Hypnosis always hits if Hypno is using it
     - Smack Down is super effective if a Tinkaton uses it against Corviknight
+    - Drilbur line Drill Run
 - Edit Slot odds (SLOT_MACHINE_)? Even though there's only three prizes?
 - Add Pokémon with dolls? (Togepi, Smoochum, Clefairy, Lapras, Snorlax, Venusaur, Charizard, Blastoise)
 - Add in Hoenn Pokédex regionals? (currently postgame Safari Zone)

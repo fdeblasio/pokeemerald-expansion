@@ -444,7 +444,6 @@ static const u16 sVulpixEggMoveLearnset[] = {
     MOVE_HOWL,
     MOVE_HYPNOSIS,
     MOVE_MEMENTO,
-    MOVE_MYSTICAL_FIRE,
     MOVE_PAIN_SPLIT,
     MOVE_POWER_SWAP,
     MOVE_ROLE_PLAY,

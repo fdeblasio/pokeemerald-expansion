@@ -973,7 +973,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     {                                                                       \
     REMATCH_MON(NINETALES, TIER3, rematch),                                 \
     .ability = ABILITY_DROUGHT,                                             \
-    .nature = NATURE_TIMID,                                                \
+    .nature = NATURE_TIMID,                                                 \
     EV_SPREAD_SPA_SPE_HP,                                                   \
     .moves = {MOVE_OVERHEAT, MOVE_GRUDGE, MOVE_NASTY_PLOT, MOVE_SUNNY_DAY}, \
     .gender = TRAINER_MON_FEMALE,                                           \

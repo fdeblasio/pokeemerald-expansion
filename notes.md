@@ -72,7 +72,6 @@ upcoming
     - Seperate Abigail and Benjamin's Magnemites
     - Some Magnemites never occur because 30 is less than REMATCH_2_LEVEL
     - Add Abilities to single ability and TRAINER_MON_NONE to genderless to make more constistent
-    - Make _BATTLE macro for Admins (possibly just need IV parameter)
 - Get name of Pokemon speaking
 - Non-grass soot tiles should add to soot sack
 

@@ -2204,6 +2204,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Litwick:
     - Evolution: 41->36
+    - Learns Incinerate, Burning Jealousy, Mystical Fire, Lava Plume, and Flamethrower by level up
+
+- Lampent/Chandelure:
+    - Learn Incinerate, Burning Jealousy, Mystical Fire, Lava Plume, and Flamethrower by level up
 
 - Axew:
     - Evolution: 38->35

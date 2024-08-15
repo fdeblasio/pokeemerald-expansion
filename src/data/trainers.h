@@ -1051,103 +1051,103 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 31,
-        .species = SPECIES_LINOONE,
-        .ability = ABILITY_QUICK_FEET,
+        .species = SPECIES_WATCHOG,
+        .ability = ABILITY_KEEN_EYE,
         IVS(24),
-        .moves = {MOVE_FACADE, MOVE_SLASH, MOVE_PLAY_ROUGH, MOVE_HONE_CLAWS},
+        .moves = {MOVE_FACADE, MOVE_CRUNCH, MOVE_CONFUSE_RAY, MOVE_HYPNOSIS},
         .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 33,
-        .species = SPECIES_ZANGOOSE,
-        .ability = ABILITY_POISON_HEAL,
+        .species = SPECIES_GLAMEOW,
+        .ability = ABILITY_LIMBER,
         IVS(24),
-        .moves = {MOVE_FACADE, MOVE_CRUSH_CLAW, MOVE_NIGHT_SLASH, MOVE_HONE_CLAWS},
-        .gender = TRAINER_MON_MALE,
+        .moves = {MOVE_FACADE, MOVE_FEINT_ATTACK, MOVE_FAKE_OUT, MOVE_ASSIST},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 33,
-        .species = SPECIES_SPINDA,
-        .ability = ABILITY_OWN_TEMPO,
-        .nature = NATURE_QUIRKY,
+        .species = SPECIES_PERSIAN,
+        .ability = ABILITY_TECHNICIAN,
         IVS(24),
-        .moves = {MOVE_FACADE, MOVE_TEETER_DANCE, MOVE_FEINT_ATTACK, MOVE_DIZZY_PUNCH},
+        .moves = {MOVE_FACADE, MOVE_BITE, MOVE_FAKE_OUT, MOVE_TAUNT},
         .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 35,
-        .species = SPECIES_VIGOROTH,
+        .species = SPECIES_DELCATTY,
+        .ability = ABILITY_NORMALIZE,
         IVS(30),
-        .moves = {MOVE_FACADE, MOVE_THROAT_CHOP, MOVE_SLACK_OFF, MOVE_FOCUS_ENERGY},
-        .gender = TRAINER_MON_MALE,
+        .moves = {MOVE_FACADE, MOVE_WAKE_UP_SLAP, MOVE_CHARM, MOVE_ASSIST},
+        .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SITRUS_BERRY,
         .ball = ITEM_POKE_BALL,
         }
     },
 },
 
-#define NORMAN_SLAKING(rematch)                                                        \
-    {                                                                                  \
-    REMATCH_MON(SLAKING, ACE, rematch),                                                \
-    .ability = ABILITY_TRUANT,                                                         \
-    .nature = NATURE_ADAMANT,                                                          \
-    EV_SPREAD_ATK_SPE_HP,                                                              \
-    .moves = {MOVE_GIGA_IMPACT, MOVE_HAMMER_ARM, MOVE_THROAT_CHOP, MOVE_SUCKER_PUNCH}, \
-    .gender = TRAINER_MON_MALE,                                                        \
-    .heldItem = ITEM_SITRUS_BERRY,                                                     \
-    .ball = ITEM_POKE_BALL,                                                            \
+#define NORMAN_DELCATTY(rematch)                                              \
+    {                                                                         \
+    REMATCH_MON(DELCATTY, ACE, rematch),                                      \
+    .ability = ABILITY_NORMALIZE,                                             \
+    .nature = NATURE_MODEST,                                                  \
+    EV_SPREAD_SPA_SPE_HP,                                                     \
+    .moves = {MOVE_HYPER_VOICE, MOVE_BLIZZARD, MOVE_ASSIST, MOVE_NASTY_PLOT}, \
+    .gender = TRAINER_MON_FEMALE,                                             \
+    .heldItem = ITEM_SITRUS_BERRY,                                            \
+    .ball = ITEM_POKE_BALL,                                                   \
     }
 
-#define NORMAN_SPINDA(rematch)                                                 \
-    {                                                                          \
-    REMATCH_MON(SPINDA, TIER2, rematch),                                       \
-    .ability = ABILITY_OWN_TEMPO,                                              \
-    .nature = NATURE_JOLLY,                                                    \
-    EV_SPREAD_ATK_SPE_HP,                                                      \
-    .moves = {MOVE_THRASH, MOVE_TEETER_DANCE, MOVE_HYPNOSIS, MOVE_SKILL_SWAP}, \
-    .gender = TRAINER_MON_MALE,                                                \
-    .heldItem = ITEM_LIECHI_BERRY,                                             \
+#define NORMAN_PERSIAN(rematch)                                       \
+    {                                                                 \
+    REMATCH_MON(PERSIAN, TIER2, rematch),                             \
+    .ability = ABILITY_TECHNICIAN,                                    \
+    .nature = NATURE_JOLLY,                                           \
+    EV_SPREAD_ATK_SPE_HP,                                             \
+    .moves = {MOVE_COVET, MOVE_BITE, MOVE_AERIAL_ACE, MOVE_FAKE_OUT}, \
+    .gender = TRAINER_MON_MALE,                                       \
+    .heldItem = ITEM_LIECHI_BERRY,                                    \
     }
 
-#define NORMAN_ZANGOOSE(rematch)                                                 \
-    {                                                                            \
-    REMATCH_MON(ZANGOOSE, TIER2, rematch),                                       \
-    .ability = ABILITY_POISON_HEAL,                                              \
-    .nature = NATURE_ADAMANT,                                                    \
-    EV_SPREAD_ATK_SPE_HP,                                                        \
-    .moves = {MOVE_FACADE, MOVE_X_SCISSOR, MOVE_NIGHT_SLASH, MOVE_SWORDS_DANCE}, \
-    .gender = TRAINER_MON_MALE,                                                  \
-    .heldItem = ITEM_TOXIC_ORB,                                                  \
+#define NORMAN_PURUGLY(rematch)                                                   \
+    {                                                                             \
+    REMATCH_MON(PURUGLY, TIER2, rematch),                                         \
+    .ability = ABILITY_THICK_FAT,                                                 \
+    .nature = NATURE_JOLLY,                                                       \
+    EV_SPREAD_ATK_SPE_HP,                                                         \
+    .moves = {MOVE_BODY_SLAM, MOVE_PLAY_ROUGH, MOVE_FEINT_ATTACK, MOVE_FAKE_OUT}, \
+    .gender = TRAINER_MON_FEMALE,                                                 \
+    .heldItem = ITEM_ASSAULT_VEST,                                                \
     }
 
-#define NORMAN_LINOONE(rematch)                                                \
-    {                                                                          \
-    REMATCH_MON(LINOONE, TIER3, rematch),                                      \
-    .ability = ABILITY_QUICK_FEET,                                             \
-    .nature = NATURE_JOLLY,                                                    \
-    EV_SPREAD_ATK_SPE_HP,                                                      \
-    .moves = {MOVE_SLASH, MOVE_PLAY_ROUGH, MOVE_PIN_MISSILE, MOVE_BELLY_DRUM}, \
-    .gender = TRAINER_MON_MALE,                                                \
+#define NORMAN_WATCHOG(rematch)                                                 \
+    {                                                                           \
+    REMATCH_MON(WATCHOG, TIER3, rematch),                                       \
+    .ability = ABILITY_ANALYTIC,                                                \
+    .nature = NATURE_ADAMANT,                                                   \
+    EV_SPREAD_ATK_SPE_HP,                                                       \
+    .moves = {MOVE_HYPER_FANG, MOVE_SUPER_FANG, MOVE_CRUNCH, MOVE_CONFUSE_RAY}, \
+    .gender = TRAINER_MON_MALE,                                                 \
     }
 
-#define NORMAN_EXPLOUD(rematch)                                                           \
-    {                                                                                     \
-    REMATCH_MON(EXPLOUD, TIER3, rematch),                                                 \
-    .ability = ABILITY_PUNK_ROCK,                                                         \
-    .nature = NATURE_MODEST,                                                              \
-    EV_SPREAD_SPA_SPE_HP,                                                                 \
-    .moves = {MOVE_HYPER_VOICE, MOVE_DISARMING_VOICE, MOVE_SHADOW_BALL, MOVE_SUPERSONIC}, \
-    .gender = TRAINER_MON_MALE,                                                           \
+#define NORMAN_ZANGOOSE(rematch)                                                \
+    {                                                                           \
+    REMATCH_MON(ZANGOOSE, TIER3, rematch),                                      \
+    .ability = ABILITY_SHARPNESS,                                               \
+    .nature = NATURE_ADAMANT,                                                   \
+    EV_SPREAD_ATK_SPE_HP,                                                       \
+    .moves = {MOVE_SLASH, MOVE_X_SCISSOR, MOVE_NIGHT_SLASH, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                 \
     }
 
-#define NORMAN_KECLEON(rematch)                                                \
-    {                                                                          \
-    REMATCH_MON(KECLEON, TIER3, rematch),                                      \
-    .ability = ABILITY_COLOR_CHANGE,                                           \
-    .nature = NATURE_ADAMANT,                                                  \
-    EV_SPREAD_ATK_SPD_HP,                                                      \
-    .moves = {MOVE_FACADE, MOVE_SHADOW_CLAW, MOVE_SUCKER_PUNCH, MOVE_DISABLE}, \
-    .gender = TRAINER_MON_MALE,                                                \
+#define NORMAN_GUMSHOOS(rematch)                                                  \
+    {                                                                             \
+    REMATCH_MON(GUMSHOOS, TIER3, rematch),                                        \
+    .ability = ABILITY_STRONG_JAW,                                                \
+    .nature = NATURE_ADAMANT,                                                     \
+    EV_SPREAD_ATK_SPE_HP,                                                         \
+    .moves = {MOVE_HYPER_FANG, MOVE_PSYCHIC_FANGS, MOVE_CRUNCH, MOVE_SCARY_FACE}, \
+    .gender = TRAINER_MON_MALE,                                                   \
     }
 
 [TRAINER_NORMAN_2] =
@@ -1155,11 +1155,11 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     NORMAN_INFO,
     LEADER_REMATCH(2),
     .party = (const struct TrainerMon[]) {
-        NORMAN_LINOONE(2),
-        NORMAN_EXPLOUD(2),
         NORMAN_ZANGOOSE(2),
-        NORMAN_SPINDA(2),
-        NORMAN_SLAKING(2),
+        NORMAN_WATCHOG(2),
+        NORMAN_PURUGLY(2),
+        NORMAN_PERSIAN(2),
+        NORMAN_DELCATTY(2),
     },
 },
 
@@ -1168,11 +1168,11 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     NORMAN_INFO,
     LEADER_REMATCH(3),
     .party = (const struct TrainerMon[]) {
-        NORMAN_LINOONE(3),
-        NORMAN_EXPLOUD(3),
         NORMAN_ZANGOOSE(3),
-        NORMAN_SPINDA(3),
-        NORMAN_SLAKING(3),
+        NORMAN_WATCHOG(3),
+        NORMAN_PURUGLY(3),
+        NORMAN_PERSIAN(3),
+        NORMAN_DELCATTY(3),
     },
 },
 
@@ -1181,12 +1181,12 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     NORMAN_INFO,
     LEADER_REMATCH(4),
     .party = (const struct TrainerMon[]) {
-        NORMAN_LINOONE(4),
-        NORMAN_KECLEON(4),
-        NORMAN_EXPLOUD(4),
+        NORMAN_GUMSHOOS(4),
         NORMAN_ZANGOOSE(4),
-        NORMAN_SPINDA(4),
-        NORMAN_SLAKING(4),
+        NORMAN_WATCHOG(4),
+        NORMAN_PURUGLY(4),
+        NORMAN_PERSIAN(4),
+        NORMAN_DELCATTY(4),
     },
 },
 
@@ -1195,12 +1195,12 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     NORMAN_INFO,
     LEADER_REMATCH(5),
     .party = (const struct TrainerMon[]) {
-        NORMAN_LINOONE(5),
-        NORMAN_KECLEON(5),
-        NORMAN_EXPLOUD(5),
+        NORMAN_GUMSHOOS(5),
         NORMAN_ZANGOOSE(5),
-        NORMAN_SPINDA(5),
-        NORMAN_SLAKING(5),
+        NORMAN_WATCHOG(5),
+        NORMAN_PURUGLY(5),
+        NORMAN_PERSIAN(5),
+        NORMAN_DELCATTY(5),
     },
 },
 
@@ -9484,13 +9484,13 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     },                                                                                                             \
 }
 
-PETALBURG_GYM_TRAINER(RANDALL, "Randall", M, X_SPEED,      SWELLOW,    SALAC_BERRY,  QUICK_ATTACK, AGILITY,     WING_ATTACK,  NONE),
-PETALBURG_GYM_TRAINER(MARY,    "Mary",    F, X_ACCURACY,   DELCATTY,   MICLE_BERRY,  SWIFT,        SHOCK_WAVE,  FEINT_ATTACK, DISARMING_VOICE),
-PETALBURG_GYM_TRAINER(PARKER,  "Parker",  M, HYPER_POTION, SPINDA,     PERSIM_BERRY, TEETER_DANCE, DIZZY_PUNCH, PSYBEAM,      NONE),
-PETALBURG_GYM_TRAINER(ALEXIA,  "Alexia",  F, X_DEFENSE,    WIGGLYTUFF, GANLON_BERRY, DEFENSE_CURL, FACADE,      BODY_PRESS,   NONE),
-PETALBURG_GYM_TRAINER(GEORGE,  "George",  M, HYPER_POTION, VIGOROTH,   SITRUS_BERRY, SLACK_OFF,    DRAIN_PUNCH, ENDURE,       NONE),
-PETALBURG_GYM_TRAINER(JODY,    "Jody",    F, X_ATTACK,     ZANGOOSE,   LIECHI_BERRY, SWORDS_DANCE, CRUSH_CLAW,  NONE,         NONE),
-PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LENS,   SLASH,        NONE,        NONE,         NONE),
+PETALBURG_GYM_TRAINER(RANDALL, "Randall", M, X_SPEED,      PERISAN,  SALAC_BERRY,  FURY_SWIPES,  FAKE_OUT,    FEINT,        NONE),
+PETALBURG_GYM_TRAINER(MARY,    "Mary",    F, X_ACCURACY,   DODRIO,   MICLE_BERRY,  TRI_ATTACK,   DOUBLE_HIT,  AERIAL_ACE,   NONE),
+PETALBURG_GYM_TRAINER(PARKER,  "Parker",  M, HYPER_POTION, WATCHOG,  PERSIM_BERRY, CONFUSE_RAY,  DIZZY_PUNCH, NONE,         NONE),
+PETALBURG_GYM_TRAINER(ALEXIA,  "Alexia",  F, X_DEFENSE,    DUBWOOL,  GANLON_BERRY, DEFENSE_CURL, FACADE,      BODY_PRESS,   NONE),
+PETALBURG_GYM_TRAINER(GEORGE,  "George",  M, HYPER_POTION, CHANSEY,  SITRUS_BERRY, SOFT_BOILED,  LIFE_DEW,    ECHOED_VOICE, NONE),
+PETALBURG_GYM_TRAINER(JODY,    "Jody",    F, X_ATTACK,     ZANGOOSE, LIECHI_BERRY, SWORDS_DANCE, CRUSH_CLAW,  NONE,         NONE),
+PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     GUMSHOOS, SCOPE_LENS,   CHIP_AWAY,    NONE,        NONE,         NONE),
 
 //Route 103 (water)
 [TRAINER_ISABELLE] =

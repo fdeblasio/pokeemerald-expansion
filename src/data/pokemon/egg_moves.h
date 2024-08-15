@@ -7033,6 +7033,7 @@ static const u16 sPatratEggMoveLearnset[] = {
     MOVE_ASSURANCE,
     MOVE_CONFIDE,
     MOVE_COVET,
+    MOVE_DIZZY_PUNCH,
     MOVE_ENDEAVOR,
     MOVE_FLAIL,
     MOVE_FLING,

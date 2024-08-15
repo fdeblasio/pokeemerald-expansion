@@ -1802,6 +1802,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Patrat/Watchog:
     - Partially based on the meerKAT which is in the same suborder as cats
     - Learn Cut, Headbutt and Body Slam by level up
+    - Learn Dizzy Punch by Egg Move
 
 - Purrloin:
     - HP: 41->45

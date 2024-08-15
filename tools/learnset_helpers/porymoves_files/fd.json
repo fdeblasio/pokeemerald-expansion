@@ -508,7 +508,12 @@
     "TutorMoves": []
   },
   "VULPIX": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 44,
+        "Move": "MOVE_MYSTICAL_FIRE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -516,6 +521,10 @@
   },
   "NINETALES": {
     "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_MYSTICAL_FIRE"
+      },
       {
         "Level": 2,
         "Move": "MOVE_FLAMETHROWER"

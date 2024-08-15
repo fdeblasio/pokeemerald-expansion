@@ -1280,17 +1280,20 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Eevee:
     - Def: 50->55
     - SpA: 45->55
+    - Gender Ratio: 87.5/12.5->50/50
     - Now evolves into only Espeon (with a Sun Stone) and Umbreon (with a Moon Stone)
     - Swift and Bite swap levels
     - Learns Body Slam at level 45
 
 - Espeon:
     - Based on Japanese mythical cats
+    - Gender Ratio: 87.5/12.5->50/50
     - Learns Hypnosis (replacing Swift), Psychic Terrain (replacing Power Swap), and Extrasensory (replacing Psychic) by level up
     - Learns Body Slam, Swift, Power Swap, and Power Gem at level 1
     - Learns Psychic at level 45
 
 - Umbreon:
+    - Gender Ratio: 87.5/12.5->50/50
     - Learns Pursuit (replacing Snarl) upon evolving
     - Learns Feint Attack (replacing Assurance) by level up
     - Learns Body Slam, Snarl and Assurance at level 1

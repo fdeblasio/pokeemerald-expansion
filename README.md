@@ -1102,6 +1102,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Clefairy/Clefable (not in main game):
     - Learn Fairy Wind and Alluring Voice by level up
 
+- Vulpix/Ninetales:
+    - Learn Mystical Fire by level up
+
 - Parasect (not in main game):
     - Held items:
         - Tiny Mushroom: 50%->0%

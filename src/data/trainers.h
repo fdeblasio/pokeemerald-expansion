@@ -920,68 +920,68 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     },
 },
 
-#define FLANNERY_TORKOAL(rematch)                                                  \
+#define FLANNERY_PYROAR(rematch)                                                   \
     {                                                                              \
-    REMATCH_MON(TORKOAL, ACE, rematch),                                            \
-    .ability = ABILITY_DROUGHT,                                                    \
+    REMATCH_MON(PYROAR, ACE, rematch),                                             \
+    .ability = ABILITY_COMPETITIVE,                                                \
     .nature = NATURE_MODEST,                                                       \
-    EV_SPREAD_SPA_DEF_HP,                                                          \
-    .moves = {MOVE_OVERHEAT, MOVE_IRON_DEFENSE, MOVE_SHELL_SMASH, MOVE_SUNNY_DAY}, \
+    EV_SPREAD_SPA_SPE_HP,                                                          \
+    .moves = {MOVE_FIRE_BLAST, MOVE_HYPER_VOICE, MOVE_DARK_PULSE, MOVE_SUNNY_DAY}, \
     .gender = TRAINER_MON_FEMALE,                                                  \
-    .heldItem = ITEM_WHITE_HERB,                                                   \
+    .heldItem = ITEM_WIDE_LENS,                                                    \
     .ball = ITEM_POKE_BALL,                                                        \
     }
 
-#define FLANNERY_CAMERUPT(rematch)                                            \
-    {                                                                         \
-    REMATCH_MON(CAMERUPT, TIER2, rematch),                                    \
-    .ability = ABILITY_MAGMA_ARMOR,                                           \
-    .nature = NATURE_MODEST,                                                  \
-    EV_SPREAD_SPA_SPE_HP,                                                     \
-    .moves = {MOVE_OVERHEAT, MOVE_EARTH_POWER, MOVE_AMNESIA, MOVE_SUNNY_DAY}, \
-    .gender = TRAINER_MON_FEMALE,                                             \
-    .heldItem = ITEM_WHITE_HERB,                                              \
-    }
-
-#define FLANNERY_BLAZIKEN(rematch)                                                 \
-    {                                                                              \
-    REMATCH_MON(BLAZIKEN, TIER2, rematch),                                         \
-    .ability = ABILITY_BLAZE,                                                      \
-    .nature = NATURE_MODEST,                                                       \
-    EV_SPREAD_SPA_SPE_HP,                                                          \
-    .moves = {MOVE_OVERHEAT, MOVE_AURA_SPHERE, MOVE_FOCUS_ENERGY, MOVE_SUNNY_DAY}, \
-    .gender = TRAINER_MON_FEMALE,                                                  \
-    .heldItem = ITEM_WHITE_HERB,                                                   \
-    }
-
-#define FLANNERY_CASTFORM(rematch)                                                \
-    {                                                                             \
-    REMATCH_MON(CASTFORM, TIER3, rematch),                                        \
-    .ability = ABILITY_FORECAST,                                                  \
-    .nature = NATURE_MODEST,                                                      \
-    EV_SPREAD_SPA_SPE_HP,                                                         \
-    .moves = {MOVE_OVERHEAT, MOVE_SOLAR_BEAM, MOVE_WEATHER_BALL, MOVE_SUNNY_DAY}, \
-    .gender = TRAINER_MON_FEMALE,                                                 \
-    }
-
-#define FLANNERY_MAGCARGO(rematch)                                         \
-    {                                                                      \
-    REMATCH_MON(MAGCARGO, TIER3, rematch),                                 \
-    .ability = ABILITY_FLAME_BODY,                                         \
-    .nature = NATURE_MODEST,                                               \
-    EV_SPREAD_SPA_DEF_HP,                                                  \
-    .moves = {MOVE_OVERHEAT, MOVE_YAWN, MOVE_SHELL_SMASH, MOVE_SUNNY_DAY}, \
-    .gender = TRAINER_MON_FEMALE,                                          \
+#define FLANNERY_TORKOAL(rematch)                                                     \
+    {                                                                                 \
+    REMATCH_MON(TORKOAL, TIER2, rematch),                                             \
+    .ability = ABILITY_DROUGHT,                                                       \
+    .nature = NATURE_MODEST,                                                          \
+    EV_SPREAD_SPA_DEF_HP,                                                             \
+    .moves = {MOVE_FLAMETHROWER, MOVE_BODY_PRESS, MOVE_IRON_DEFENSE, MOVE_SUNNY_DAY}, \
+    .gender = TRAINER_MON_FEMALE,                                                     \
+    .heldItem = ITEM_HEAT_ROCK,                                                       \
     }
 
 #define FLANNERY_NINETALES(rematch)                                         \
     {                                                                       \
-    REMATCH_MON(NINETALES, TIER3, rematch),                                 \
+    REMATCH_MON(NINETALES, TIER2, rematch),                                 \
     .ability = ABILITY_DROUGHT,                                             \
     .nature = NATURE_TIMID,                                                 \
     EV_SPREAD_SPA_SPE_HP,                                                   \
     .moves = {MOVE_OVERHEAT, MOVE_GRUDGE, MOVE_NASTY_PLOT, MOVE_SUNNY_DAY}, \
     .gender = TRAINER_MON_FEMALE,                                           \
+    .heldItem = ITEM_WHITE_HERB,                                            \
+    }
+
+#define FLANNERY_HEATMOR(rematch)                                                    \
+    {                                                                                \
+    REMATCH_MON(HEATMOR, TIER3, rematch),                                            \
+    .ability = ABILITY_FLASH_FIRE,                                                   \
+    .nature = NATURE_ADAMANT,                                                        \
+    EV_SPREAD_ATK_SPE_HP,                                                            \
+    .moves = {MOVE_FIRE_LASH, MOVE_DRAIN_PUNCH, MOVE_THUNDER_PUNCH, MOVE_SUNNY_DAY}, \
+    .gender = TRAINER_MON_FEMALE,                                                    \
+    }
+
+#define FLANNERY_ARCANINE(rematch)                                              \
+    {                                                                           \
+    REMATCH_MON(ARCANINE, TIER3, rematch),                                      \
+    .ability = ABILITY_FLASH_FIRE,                                              \
+    .nature = NATURE_ADAMANT,                                                   \
+    EV_SPREAD_ATK_SPE_HP,                                                       \
+    .moves = {MOVE_TEMPER_FLARE, MOVE_CRUNCH, MOVE_PLAY_ROUGH, MOVE_SUNNY_DAY}, \
+    .gender = TRAINER_MON_FEMALE,                                               \
+    }
+
+#define FLANNERY_MAROWAK_ALOLAN(rematch)                                             \
+    {                                                                                \
+    REMATCH_MON(MAROWAK_ALOLAN, TIER3, rematch),                                     \
+    .ability = ABILITY_ROCK_HEAD,                                                    \
+    .nature = NATURE_ADAMANT,                                                        \
+    EV_SPREAD_ATK_SPE_HP,                                                            \
+    .moves = {MOVE_FLARE_BLITZ, MOVE_SHADOW_BONE, MOVE_DOUBLE_EDGE, MOVE_SUNNY_DAY}, \
+    .gender = TRAINER_MON_FEMALE,                                                    \
     }
 
 [TRAINER_FLANNERY_2] =
@@ -989,11 +989,11 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     FLANNERY_INFO,
     LEADER_REMATCH(2),
     .party = (const struct TrainerMon[]) {
-        FLANNERY_MAGCARGO(2),
-        FLANNERY_CASTFORM(2),
-        FLANNERY_BLAZIKEN(2),
-        FLANNERY_CAMERUPT(2),
+        FLANNERY_ARCANINE(2),
+        FLANNERY_HEATMOR(2),
+        FLANNERY_NINETALES(2),
         FLANNERY_TORKOAL(2),
+        FLANNERY_PYROAR(2),
     },
 },
 
@@ -1002,11 +1002,11 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     FLANNERY_INFO,
     LEADER_REMATCH(3),
     .party = (const struct TrainerMon[]) {
-        FLANNERY_MAGCARGO(3),
-        FLANNERY_CASTFORM(3),
-        FLANNERY_BLAZIKEN(3),
-        FLANNERY_CAMERUPT(3),
+        FLANNERY_ARCANINE(3),
+        FLANNERY_HEATMOR(3),
+        FLANNERY_NINETALES(3),
         FLANNERY_TORKOAL(3),
+        FLANNERY_PYROAR(3),
     },
 },
 
@@ -1015,12 +1015,12 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     FLANNERY_INFO,
     LEADER_REMATCH(4),
     .party = (const struct TrainerMon[]) {
+        FLANNERY_MAROWAK_ALOLAN(4),
+        FLANNERY_ARCANINE(4),
+        FLANNERY_HEATMOR(4),
         FLANNERY_NINETALES(4),
-        FLANNERY_MAGCARGO(4),
-        FLANNERY_CASTFORM(4),
-        FLANNERY_BLAZIKEN(4),
-        FLANNERY_CAMERUPT(4),
         FLANNERY_TORKOAL(4),
+        FLANNERY_PYROAR(4),
     },
 },
 
@@ -1029,12 +1029,12 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     FLANNERY_INFO,
     LEADER_REMATCH(5),
     .party = (const struct TrainerMon[]) {
+        FLANNERY_MAROWAK_ALOLAN(5),
+        FLANNERY_ARCANINE(5),
+        FLANNERY_HEATMOR(5),
         FLANNERY_NINETALES(5),
-        FLANNERY_MAGCARGO(5),
-        FLANNERY_CASTFORM(5),
-        FLANNERY_BLAZIKEN(5),
-        FLANNERY_CAMERUPT(5),
         FLANNERY_TORKOAL(5),
+        FLANNERY_PYROAR(5),
     },
 },
 

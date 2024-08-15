@@ -9330,130 +9330,32 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
 },
 
 //Petalburg Gym
-[TRAINER_RANDALL] =
-{
-    .trainerName = _("Randall"),
-    ACE_TRAINER_M_INFO,
-    .items = {ITEM_X_SPEED, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 31,
-        .species = SPECIES_SWELLOW,
-        PERFECT_IVS,
-        .heldItem = ITEM_SALAC_BERRY,
-        .moves = {MOVE_QUICK_ATTACK, MOVE_AGILITY, MOVE_WING_ATTACK, MOVE_NONE}
-        }
-    },
-},
+#define PETALBURG_GYM_TRAINER(Variable, Name, Gender, Item, Species, HeldItem, Move1, Move2, Move3, Move4)                         \
+[TRAINER_##Variable] =                                                                                             \
+{                                                                                                                  \
+    .trainerName = _(Name),                                                                                        \
+    ACE_TRAINER_##Gender##_INFO,                                                                                   \
+    .items = {ITEM_##Item, ITEM_NONE, ITEM_NONE, ITEM_NONE},                                                       \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SETUP_FIRST_TURN, \
+    .partySize = 1,                                                                                                \
+    .party = (const struct TrainerMon[]) {                                                                         \
+        {                                                                                                          \
+        .lvl = 31,                                                                                                 \
+        .species = SPECIES_##Species,                                                                              \
+        PERFECT_IVS,                                                                                               \
+        .heldItem = ITEM_##HeldItem,                                                                               \
+        .moves = {MOVE_##Move1, MOVE_##Move2, MOVE_##Move3, MOVE_##Move4}                                          \
+        }                                                                                                          \
+    },                                                                                                             \
+}
 
-[TRAINER_MARY] =
-{
-    .trainerName = _("Mary"),
-    ACE_TRAINER_F_INFO,
-    .items = {ITEM_X_ACCURACY, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 31,
-        .species = SPECIES_DELCATTY,
-        PERFECT_IVS,
-        .heldItem = ITEM_MICLE_BERRY,
-        .moves = {MOVE_SWIFT, MOVE_SHOCK_WAVE, MOVE_FEINT_ATTACK, MOVE_DISARMING_VOICE}
-        }
-    },
-},
-
-[TRAINER_PARKER] =
-{
-    .trainerName = _("Parker"),
-    ACE_TRAINER_M_INFO,
-    .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 31,
-        .species = SPECIES_SPINDA,
-        PERFECT_IVS,
-        .moves = {MOVE_TEETER_DANCE, MOVE_DIZZY_PUNCH, MOVE_PSYBEAM, MOVE_NONE}
-        }
-    },
-},
-
-[TRAINER_ALEXIA] =
-{
-    .trainerName = _("Alexia"),
-    ACE_TRAINER_F_INFO,
-    .items = {ITEM_X_DEFENSE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 31,
-        .species = SPECIES_WIGGLYTUFF,
-        PERFECT_IVS,
-        .heldItem = ITEM_GANLON_BERRY,
-        .moves = {MOVE_DEFENSE_CURL, MOVE_FACADE, MOVE_BODY_PRESS, MOVE_NONE}
-        }
-    },
-},
-
-[TRAINER_GEORGE] =
-{
-    .trainerName = _("George"),
-    ACE_TRAINER_M_INFO,
-    .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 31,
-        .species = SPECIES_VIGOROTH,
-        PERFECT_IVS,
-        .heldItem = ITEM_SITRUS_BERRY,
-        .moves = {MOVE_SLACK_OFF, MOVE_DRAIN_PUNCH, MOVE_ENDURE, MOVE_NONE}
-        }
-    },
-},
-
-[TRAINER_JODY] =
-{
-    .trainerName = _("Jody"),
-    ACE_TRAINER_F_INFO,
-    .items = {ITEM_X_ATTACK, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 31,
-        .species = SPECIES_ZANGOOSE,
-        PERFECT_IVS,
-        .heldItem = ITEM_LIECHI_BERRY,
-        .moves = {MOVE_SWORDS_DANCE, MOVE_CRUSH_CLAW, MOVE_NONE, MOVE_NONE}
-        }
-    },
-},
-
-[TRAINER_BERKE] =
-{
-    .trainerName = _("Berke"),
-    ACE_TRAINER_M_INFO,
-    .items = {ITEM_DIRE_HIT, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 31,
-        .species = SPECIES_LINOONE,
-        PERFECT_IVS,
-        .heldItem = ITEM_SCOPE_LENS,
-        .moves = {MOVE_SLASH, MOVE_NONE, MOVE_NONE, MOVE_NONE}
-        }
-    },
-},
+PETALBURG_GYM_TRAINER(RANDALL, "Randall", M, X_SPEED,      SWELLOW,    SALAC_BERRY,  QUICK_ATTACK, AGILITY,     WING_ATTACK,  NONE),
+PETALBURG_GYM_TRAINER(MARY,    "Mary",    F, X_ACCURACY,   DELCATTY,   MICLE_BERRY,  SWIFT,        SHOCK_WAVE,  FEINT_ATTACK, DISARMING_VOICE),
+PETALBURG_GYM_TRAINER(PARKER,  "Parker",  M, HYPER_POTION, SPINDA,     PERSIM_BERRY, TEETER_DANCE, DIZZY_PUNCH, PSYBEAM,      NONE),
+PETALBURG_GYM_TRAINER(ALEXIA,  "Alexia",  F, X_DEFENSE,    WIGGLYTUFF, GANLON_BERRY, DEFENSE_CURL, FACADE,      BODY_PRESS,   NONE),
+PETALBURG_GYM_TRAINER(GEORGE,  "George",  M, HYPER_POTION, VIGOROTH,   SITRUS_BERRY, SLACK_OFF,    DRAIN_PUNCH, ENDURE,       NONE),
+PETALBURG_GYM_TRAINER(JODY,    "Jody",    F, X_ATTACK,     ZANGOOSE,   LIECHI_BERRY, SWORDS_DANCE, CRUSH_CLAW,  NONE,         NONE),
+PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LENS,   SLASH,        NONE,        NONE,         NONE),
 
 //Route 103 (water)
 [TRAINER_ISABELLE] =

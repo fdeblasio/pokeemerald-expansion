@@ -8107,7 +8107,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 },
 
 //Meteor Falls
-COURTNEY_BALTOY(METEOR_FALLS, 28, 3),
+COURTNEY_BATTLE(METEOR_FALLS, 28, 3),
 
 //Route 115 (south)
 #define NOB_INFO             \

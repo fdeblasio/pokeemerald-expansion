@@ -7463,14 +7463,56 @@
     "TutorMoves": []
   },
   "LITWICK": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 12,
+        "Move": "MOVE_INCINERATE"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_BURNING_JEALOUSY"
+      },
+      {
+        "Level": 28,
+        "Move": "MOVE_MYSTICAL_FIRE"
+      },
+      {
+        "Level": 36,
+        "Move": "MOVE_LAVA_PLUME"
+      },
+      {
+        "Level": 44,
+        "Move": "MOVE_FLAMETHROWER"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "LAMPENT": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 12,
+        "Move": "MOVE_INCINERATE"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_BURNING_JEALOUSY"
+      },
+      {
+        "Level": 28,
+        "Move": "MOVE_MYSTICAL_FIRE"
+      },
+      {
+        "Level": 36,
+        "Move": "MOVE_LAVA_PLUME"
+      },
+      {
+        "Level": 46,
+        "Move": "MOVE_FLAMETHROWER"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -7479,12 +7521,32 @@
   "CHANDELURE": {
     "LevelMoves": [
       {
+        "Level": 1,
+        "Move": "MOVE_INCINERATE"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_FLAME_BURST"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_BURNING_JEALOUSY"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_MYSTICAL_FIRE"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_LAVA_PLUME"
+      },
+      {
         "Level": 2,
         "Move": "MOVE_SHADOW_BALL"
       },
       {
         "Level": 2,
-        "Move": "MOVE_FLAME_BURST"
+        "Move": "MOVE_FLAMETHROWER"
       },
       {
         "Level": 2,

@@ -1307,14 +1307,13 @@ WATTSON_REMATCH(5),
     .gender = TRAINER_MON_FEMALE,                                                   \
     }
 
-//Can replace Bonemerang with Double-Edge
 #define FLANNERY_MAROWAK(rematch, tier)                                             \
     {                                                                               \
     REMATCH_MON(MAROWAK_ALOLA, tier, rematch),                                      \
     .ability = ABILITY_ROCK_HEAD,                                                   \
     .nature = NATURE_ADAMANT,                                                       \
     EV_SPREAD_ATK_DEF_HP,                                                           \
-    .moves = {MOVE_FLARE_BLITZ, MOVE_SHADOW_BONE, MOVE_BONEMERANG, MOVE_SUNNY_DAY}, \
+    .moves = {MOVE_FLARE_BLITZ, MOVE_SHADOW_BONE, MOVE_DOUBLE_EDGE, MOVE_SUNNY_DAY}, \
     .gender = TRAINER_MON_FEMALE,                                                   \
     }
 
@@ -1375,12 +1374,12 @@ WATTSON_REMATCH(5),
     FLANNERY_INFO,                                \
     LEADER_REMATCH,                               \
     .party = (const struct TrainerMon[]) {        \
-        FLANNERY_NINETALES(Rematch, TIER3),       \
-        FLANNERY_MAGCARGO(Rematch, TIER3),        \
-        FLANNERY_CASTFORM(Rematch, TIER3),        \
-        FLANNERY_BLAZIKEN(Rematch, TIER2),        \
-        FLANNERY_CAMERUPT(Rematch, TIER2),        \
-        FLANNERY_TORKOAL(Rematch, ACE),           \
+        FLANNERY_MAROWAK(Rematch, TIER3),       \
+        FLANNERY_ARCANINE(Rematch, TIER3),        \
+        FLANNERY_HEATMOR(Rematch, TIER3),        \
+        FLANNERY_NINETALES(Rematch, TIER2),        \
+        FLANNERY_TORKOAL(Rematch, TIER2),        \
+        FLANNERY_PYROAR(Rematch, ACE),           \
     },                                            \
 }
 

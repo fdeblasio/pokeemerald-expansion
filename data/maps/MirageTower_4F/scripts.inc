@@ -1,5 +1,5 @@
-.set LOCALID_ROOT_FOSSIL, 1
-.set LOCALID_CLAW_FOSSIL, 2
+.set LOCALID_LEFT_FOSSIL, 1
+.set LOCALID_RIGHT_FOSSIL, 2
 
 MirageTower_4F_MapScripts::
 	.byte 0
@@ -7,42 +7,39 @@ MirageTower_4F_MapScripts::
 MirageTower_4F_EventScript_RootFossil::
 	lock
 	faceplayer
-	msgbox MirageTower_4F_Text_TakeRootFossil, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, MirageTower_4F_EventScript_LeaveRootFossil
+	bufferitemname STR_VAR_1, LEFT_FOSSIL
+	msgbox MirageTower_4F_Text_TakeFossil, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MirageTower_4F_EventScript_LeaveFossil
 	giveitem LEFT_FOSSIL
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	closemessage
 	setflag FLAG_HIDE_MIRAGE_TOWER_ROOT_FOSSIL
 	setflag FLAG_HIDE_MIRAGE_TOWER_CLAW_FOSSIL
-	removeobject LOCALID_ROOT_FOSSIL
+	removeobject LOCALID_LEFT_FOSSIL
 	delay 30
 	setflag FLAG_CHOSE_ROOT_FOSSIL
 	goto MirageTower_4F_EventScript_CollapseMirageTower
 	end
 
-MirageTower_4F_EventScript_LeaveRootFossil::
-	msgbox MirageTower_4F_Text_LeftRootFossilAlone, MSGBOX_DEFAULT
-	release
-	end
-
 MirageTower_4F_EventScript_ClawFossil::
 	lock
 	faceplayer
-	msgbox MirageTower_4F_Text_TakeClawFossil, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, MirageTower_4F_EventScript_LeaveClawFossil
+	bufferitemname STR_VAR_1, RIGHT_FOSSIL
+	msgbox MirageTower_4F_Text_TakeFossil, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MirageTower_4F_EventScript_LeaveFossil
 	giveitem RIGHT_FOSSIL
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	closemessage
 	setflag FLAG_HIDE_MIRAGE_TOWER_CLAW_FOSSIL
 	setflag FLAG_HIDE_MIRAGE_TOWER_ROOT_FOSSIL
-	removeobject LOCALID_CLAW_FOSSIL
+	removeobject LOCALID_RIGHT_FOSSIL
 	delay 30
 	setflag FLAG_CHOSE_CLAW_FOSSIL
 	goto MirageTower_4F_EventScript_CollapseMirageTower
 	end
 
-MirageTower_4F_EventScript_LeaveClawFossil::
-	msgbox MirageTower_4F_Text_LeaveClawFossilAlone, MSGBOX_DEFAULT
+MirageTower_4F_EventScript_LeaveFossil::
+	msgbox MirageTower_4F_Text_LeaveFossilAlone, MSGBOX_DEFAULT
 	release
 	end
 
@@ -62,21 +59,12 @@ MirageTower_4F_EventScript_CollapseMirageTower::
 	release
 	end
 
-MirageTower_4F_Text_TakeRootFossil:
-	.string "You found the Root Fossil.\p"
+MirageTower_4F_Text_TakeFossil:
+	.string "You found the {STR_VAR_1}.\p"
 	.string "If this Fossil is taken, the ground\n"
 	.string "around it will likely crumble away…\p"
-	.string "Take the Root Fossil anyway?$"
+	.string "Take the {STR_VAR_1} anyway?$"
 
-MirageTower_4F_Text_LeftRootFossilAlone:
-	.string "{PLAYER} left the Root Fossil alone.$"
-
-MirageTower_4F_Text_TakeClawFossil:
-	.string "You found the Claw Fossil.\p"
-	.string "If this Fossil is taken, the ground\n"
-	.string "around it will likely crumble away…\p"
-	.string "Take the Claw Fossil anyway?$"
-
-MirageTower_4F_Text_LeaveClawFossilAlone:
-	.string "{PLAYER} left the Claw Fossil alone.$"
+MirageTower_4F_Text_LeaveFossilAlone:
+	.string "{PLAYER} left the {STR_VAR_1} alone.$"
 

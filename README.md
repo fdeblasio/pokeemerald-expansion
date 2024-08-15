@@ -306,6 +306,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 ### Items:
 - Eviolite now prevents Pokémon from evolving
+- Healing items go back to their values before their Gen7 nerf, except the Super Potion which stays at its higher Gen7+ value of 60
 - Some items, such as vitamins and hold items, are cheaper
 - Ability Capsules, Ability Patches, Mints, and EV-reducing berries are available to buy in Lilycove
 - The Good Rod is now obtained on the left side of Route 118 instead of the right

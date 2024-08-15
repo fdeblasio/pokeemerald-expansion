@@ -591,7 +591,7 @@ const struct Item gItemsInfo[] =
         #if I_HEALTH_RECOVERY >= GEN_7
             "60 points."),
         #else
-            "50 points."),
+            "60 points."),
         #endif
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,

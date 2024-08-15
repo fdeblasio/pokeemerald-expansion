@@ -10749,11 +10749,11 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 29,
-        .species = SPECIES_SANDSHREW,
+        .species = SPECIES_CACNEA,
         },
         {
         .lvl = 29,
-        .species = SPECIES_BALTOY,
+        .species = SPECIES_MARACTUS,
         }
     },
 },
@@ -10767,15 +10767,15 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_BALTOY,
+        .species = SPECIES_SANDILE,
         },
         {
         .lvl = 28,
-        .species = SPECIES_SANDSHREW,
+        .species = SPECIES_SILICOBRA,
         },
         {
         .lvl = 28,
-        .species = SPECIES_BALTOY,
+        .species = SPECIES_HELIOPTILE,
         }
     },
 },
@@ -10807,7 +10807,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
         },
         {
         .lvl = 29,
-        .species = SPECIES_MARILL,
+        .species = SPECIES_BUIZEL,
         }
     },
 },
@@ -10896,7 +10896,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = REMATCH_5_LEVEL_2,
-        .species = SPECIES_RELICANTH,
+        .species = SPECIES_ARCHEOPS,
         .gender = TRAINER_MON_MALE,
         },
         {
@@ -10917,11 +10917,11 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 29,
-        .species = SPECIES_AZUMARILL,
+        .species = SPECIES_BUIZEL,
         },
         {
         .lvl = 29,
-        .species = SPECIES_LOMBRE,
+        .species = SPECIES_CACNEA,
         }
     },
 },
@@ -10939,7 +10939,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
         },
         {
         .lvl = 29,
-        .species = SPECIES_SANDSHREW,
+        .species = SPECIES_SANDILE,
         }
     },
 },
@@ -10953,11 +10953,11 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_TAILLOW,
+        .species = SPECIES_CORVISQUIRE,
         },
         {
         .lvl = 28,
-        .species = SPECIES_NUZLEAF,
+        .species = SPECIES_WEEPINBELL,
         },
         {
         .lvl = 28,
@@ -11016,7 +11016,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
         },
         {
         .lvl = 28,
-        .species = SPECIES_GRAVELER,
+        .species = SPECIES_BOLDORE,
         }
     },
 },

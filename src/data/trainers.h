@@ -2720,20 +2720,20 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define MAGMA_HIDEOUT_LEVEL 45
 #define SPACE_CENTER_GRUNT_LEVEL 47
 
-#define LANDON_BATTLE(Location, Level)                                                   \
-[TRAINER_LANDON_##Location] =                                                            \
-{                                                                                        \
-    .trainerName = _("Landon"),                                                          \
-    MAGMA_GRUNT_M_INFO,                                                                  \
-    .partySize = 1,                                                                      \
-    .party = (const struct TrainerMon[]) {                                               \
-        {                                                                                \
-        .lvl = Level,                                                                    \
-        .species = Level < SPACE_CENTER_GRUNT_LEVEL ? SPECIES_SLUGMA : SPECIES_MAGCARGO, \
-        .ability = ABILITY_MAGMA_ARMOR,                                                  \
-        .gender = TRAINER_MON_MALE,                                                      \
-        }                                                                                \
-    },                                                                                   \
+#define LANDON_BATTLE(Location, Level)                                                     \
+[TRAINER_LANDON_##Location] =                                                              \
+{                                                                                          \
+    .trainerName = _("Landon"),                                                            \
+    MAGMA_GRUNT_M_INFO,                                                                    \
+    .partySize = 1,                                                                        \
+    .party = (const struct TrainerMon[]) {                                                 \
+        {                                                                                  \
+        .lvl = Level,                                                                      \
+        .species = Level < SPACE_CENTER_GRUNT_LEVEL ? SPECIES_DRILBUR : SPECIES_EXCADRILL, \
+        .ability = ABILITY_SAND_FORCE,                                                     \
+        .gender = TRAINER_MON_MALE,                                                        \
+        }                                                                                  \
+    },                                                                                     \
 }
 
 #define GINNY_BATTLE(Location, Level)                                                        \

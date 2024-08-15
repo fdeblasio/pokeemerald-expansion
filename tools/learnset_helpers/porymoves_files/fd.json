@@ -4481,6 +4481,10 @@
       {
         "Level": 31,
         "Move": "MOVE_HEADBUTT"
+      },
+      {
+        "Level": 46,
+        "Move": "MOVE_HYPER_VOICE"
       }
     ],
     "PreEvoMoves": [],
@@ -4497,6 +4501,10 @@
       {
         "Level": 1,
         "Move": "MOVE_HEADBUTT"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_HYPER_VOICE"
       },
       {
         "Level": 2,

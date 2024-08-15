@@ -1722,15 +1722,16 @@ There are some mechanics, moves and abilities that are missing and being develop
     - SpA: 35->55
     - SpD: 35->45
     - Spe: 50->55
-    - Learns Quick Attack, Swift and Headbutt by level up
+    - Learns Quick Attack, Swift, Headbutt, and Hyper Voice by level up
 
 - Delcatty:
+    - HP: 70->75
     - Atk: 65->55
     - Def: 65->55
-    - SpA: 55->85
+    - SpA: 55->95
     - SpD: 55->65
-    - Spe: 90->95
-    - Learns Quick Attack, Swift, and Headbutt by level up
+    - Spe: 90->105
+    - Learns Quick Attack, Swift, Headbutt, and Hyper Voice by level up
 
 - Sableye:
     - Loses Stall as an ability since it's worthless

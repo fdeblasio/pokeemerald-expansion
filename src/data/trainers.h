@@ -4343,30 +4343,30 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .trainerPic = TRAINER_PIC_MAGMA_ADMIN_M,                                             \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,                              \
     BOSS_AI_FLAGS,                                                                       \
-    .partySize = 3,                                                                      \
-    .party = (const struct TrainerMon[]) {                                               \
-        {                                                                                \
-        .lvl = (AceLevel - 2),                                                           \
-        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_SANDSHREW : SPECIES_SANDSLASH, \
-        .ability = ABILITY_SAND_VEIL,                                                    \
-        IVS(IVs),                                                                        \
-        .gender = TRAINER_MON_MALE,                                                      \
-        },                                                                               \
-        {                                                                                \
-        .lvl = (AceLevel - 2),                                                           \
-        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_SLUGMA : SPECIES_MAGCARGO,     \
-        .ability = ABILITY_MAGMA_ARMOR,                                                  \
-        IVS(IVs),                                                                        \
-        .gender = TRAINER_MON_MALE,                                                      \
-        },                                                                               \
-        {                                                                                \
-        .lvl = AceLevel,                                                                 \
-        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_HOUNDOUR : SPECIES_HOUNDOOM,   \
-        .ability = ABILITY_FLASH_FIRE,                                                   \
-        IVS(IVs),                                                                        \
-        .gender = TRAINER_MON_MALE,                                                      \
-        }                                                                                \
-    },                                                                                   \
+    .partySize = 3,                                                                       \
+    .party = (const struct TrainerMon[]) {                                                \
+        {                                                                                 \
+        .lvl = (AceLevel - 2),                                                            \
+        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_SANDSHREW : SPECIES_SANDSLASH,  \
+        .ability = ABILITY_SAND_VEIL,                                                     \
+        IVS(IVs),                                                                         \
+        .gender = TRAINER_MON_MALE,                                                       \
+        },                                                                                \
+        {                                                                                 \
+        .lvl = (AceLevel - 2),                                                            \
+        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_DRILBUR : SPECIES_EXCADRILL,    \
+        .ability = ABILITY_SAND_FORCE,                                                    \
+        IVS(IVs),                                                                         \
+        .gender = TRAINER_MON_MALE,                                                       \
+        },                                                                                \
+        {                                                                                 \
+        .lvl = AceLevel,                                                                  \
+        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_SILICOBRA : SPECIES_SANDACONDA, \
+        .ability = ABILITY_SAND_SPIT,                                                     \
+        IVS(IVs),                                                                         \
+        .gender = TRAINER_MON_MALE,                                                       \
+        }                                                                                 \
+    },                                                                                    \
 }
 
 #define COURTNEY_BATTLE(Location, AceLevel, IVs)                                      \
@@ -10048,8 +10048,8 @@ TABITHA_BATTLE(MT_CHIMNEY, 29, 6),
     .items = {ITEM_SUPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
-        MAXIE_SANDSHREW(28),
-        MAXIE_BALTOY(29),
+        MAXIE_SANDILE(28),
+        MAXIE_TRAPINCH(29),
         MAXIE_RHYHORN(29),
         {
         HUMPHREY(30),
@@ -10090,7 +10090,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .gender = TRAINER_MON_FEMALE
 
 #define DIANA_BELLSPROUT(Level) \
-    .lvl = Level,           \
+    .lvl = Level,               \
     .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_BELLSPROUT : (Level < REMATCH_3_LEVEL_6 ? SPECIES_WEEPINBELL : SPECIES_VICTREEBEL), \
     .gender = TRAINER_MON_FEMALE
 
@@ -10220,7 +10220,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         TRIATHLETE_MON(27, 0),
-        .species = SPECIES_MAGNEMITE,
+        .species = SPECIES_KLINK,
         }
     },
 },
@@ -10230,31 +10230,26 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     CAMPER_INFO,               \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define ETHAN_TAILLOW(Level)                                                  \
-    .lvl = Level,                                                             \
-    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_TAILLOW : SPECIES_SWELLOW, \
-    .gender = TRAINER_MON_MALE
-
 #define ETHAN_GULPIN(Level)                                                 \
     .lvl = Level,                                                           \
     .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_GULPIN : SPECIES_SWALOT, \
     .ability = ABILITY_LIQUID_OOZE,                                         \
     .gender = TRAINER_MON_MALE
 
-#define ETHAN_LINOONE(Level)    \
-    .lvl = Level,               \
-    .species = SPECIES_LINOONE, \
-    .ability = ABILITY_PICKUP,  \
+#define ETHAN_STUNKY(Level)                                                   \
+    .lvl = Level,                                                             \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_STUNKY : SPECIES_SKUNTANK, \
+    .ability = ABILITY_AFTERMATH,                                             \
     .gender = TRAINER_MON_MALE
 
-#define ETHAN_GOLBAT(Level)                                                 \
-    .lvl = Level,                                                           \
-    .species = Level < REMATCH_5_LEVEL_6 ? SPECIES_GOLBAT : SPECIES_CROBAT, \
+#define ETHAN_ZUBAT(Level) \
+    .lvl = Level,          \
+    .species = Level < REMATCH_5_LEVEL_6 ? SPECIES_ZUBAT : (Level < REMATCH_5_LEVEL_6 ? SPECIES_GOLBAT : SPECIES_CROBAT), \
     .gender = TRAINER_MON_MALE
 
-#define ETHAN_SANDSLASH(Level)    \
+#define ETHAN_SANDSHREW(Level)    \
     .lvl = Level,                 \
-    .species = SPECIES_SANDSLASH, \
+    .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_SANDSHREW : SPECIES_SANDSLASH, \
     .gender = TRAINER_MON_MALE
 
 //Extra for hacks
@@ -10266,10 +10261,10 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        ETHAN_GULPIN(26),
+        ETHAN_STUNKY(26),
         },
         {
-        ETHAN_TAILLOW(26),
+        ETHAN_GULPIN(26),
         }
     },
 },
@@ -10280,15 +10275,15 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        ETHAN_LINOONE(REMATCH_2_LEVEL_3),
+        ETHAN_ZUBAT(REMATCH_2_LEVEL_3),
+        IVS(2),
+        },
+        {
+        ETHAN_STUNKY(REMATCH_2_LEVEL_3),
         IVS(2),
         },
         {
         ETHAN_GULPIN(REMATCH_2_LEVEL_3),
-        IVS(2),
-        },
-        {
-        ETHAN_TAILLOW(REMATCH_2_LEVEL_3),
         IVS(2),
         }
     },
@@ -10300,19 +10295,19 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        ETHAN_GOLBAT(REMATCH_3_LEVEL_4),
+        ETHAN_SANDSHREW(REMATCH_3_LEVEL_4),
         IVS(3),
         },
         {
-        ETHAN_LINOONE(REMATCH_3_LEVEL_4),
+        ETHAN_ZUBAT(REMATCH_3_LEVEL_4),
+        IVS(3),
+        },
+        {
+        ETHAN_STUNKY(REMATCH_3_LEVEL_4),
         IVS(3),
         },
         {
         ETHAN_GULPIN(REMATCH_3_LEVEL_4),
-        IVS(3),
-        },
-        {
-        ETHAN_TAILLOW(REMATCH_3_LEVEL_4),
         IVS(3),
         }
     },
@@ -10321,26 +10316,22 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
 [DIFFICULTY_NORMAL][TRAINER_ETHAN_4] =
 {
     ETHAN_INFO,
-    .partySize = 5,
+    .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        ETHAN_SANDSLASH(REMATCH_4_LEVEL_5),
+        ETHAN_SANDSHREW(REMATCH_4_LEVEL_4),
         IVS(4),
         },
         {
-        ETHAN_GOLBAT(REMATCH_4_LEVEL_5),
+        ETHAN_ZUBAT(REMATCH_4_LEVEL_4),
         IVS(4),
         },
         {
-        ETHAN_LINOONE(REMATCH_4_LEVEL_5),
+        ETHAN_STUNKY(REMATCH_4_LEVEL_4),
         IVS(4),
         },
         {
-        ETHAN_GULPIN(REMATCH_4_LEVEL_5),
-        IVS(4),
-        },
-        {
-        ETHAN_TAILLOW(REMATCH_4_LEVEL_5),
+        ETHAN_GULPIN(REMATCH_4_LEVEL_4),
         IVS(4),
         }
     },
@@ -10352,23 +10343,19 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        ETHAN_SANDSLASH(REMATCH_5_LEVEL_5),
+        ETHAN_SANDSHREW(REMATCH_5_LEVEL_4),
         IVS(5),
         },
         {
-        ETHAN_GOLBAT(REMATCH_5_LEVEL_5),
+        ETHAN_ZUBAT(REMATCH_5_LEVEL_4),
         IVS(5),
         },
         {
-        ETHAN_LINOONE(REMATCH_5_LEVEL_5),
+        ETHAN_STUNKY(REMATCH_5_LEVEL_4),
         IVS(5),
         },
         {
-        ETHAN_GULPIN(REMATCH_5_LEVEL_5),
-        IVS(5),
-        },
-        {
-        ETHAN_TAILLOW(REMATCH_5_LEVEL_5),
+        ETHAN_GULPIN(REMATCH_5_LEVEL_4),
         IVS(5),
         }
     },
@@ -10384,12 +10371,12 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 27,
-        .species = SPECIES_NUMEL,
+        .species = SPECIES_MAROWAK_ALOLAN,
         IVS(12),
         },
         {
         .lvl = 27,
-        .species = SPECIES_SLUGMA,
+        .species = SPECIES_SCOVILLAIN,
         IVS(12),
         }
     },
@@ -10450,7 +10437,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_TORCHIC,
+        .species = SPECIES_GROWLITHE,
         IVS(12),
         }
     },
@@ -10465,7 +10452,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_NUMEL,
+        .species = SPECIES_HEATMOR,
         IVS(12),
         }
     },
@@ -10480,7 +10467,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_HOUNDOUR,
+        .species = SPECIES_LITWICK,
         IVS(14),
         }
     },
@@ -10495,7 +10482,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_COMBUSKEN,
+        .species = SPECIES_TORRACAT,
         IVS(12),
         }
     },
@@ -10748,7 +10735,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_MARILL,
+        .species = SPECIES_SWANNA,
         }
     },
 },
@@ -14906,8 +14893,8 @@ TABITHA_BATTLE(MAGMA_HIDEOUT, 47, 9),
     .items = {ITEM_HYPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
-        MAXIE_SANDSHREW(46),
-        MAXIE_BALTOY(47),
+        MAXIE_SANDILE(46),
+        MAXIE_TRAPINCH(47),
         MAXIE_RHYHORN(47),
         {
         HUMPHREY(48),
@@ -15595,7 +15582,7 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     MAXIE_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
-        MAXIE_BALTOY(MAXIE_SPACE_CENTER_ACE_LEVEL - 1),
+        MAXIE_TRAPINCH(MAXIE_SPACE_CENTER_ACE_LEVEL - 1),
         MAXIE_RHYHORN(MAXIE_SPACE_CENTER_ACE_LEVEL - 1),
         {
         HUMPHREY(MAXIE_SPACE_CENTER_ACE_LEVEL),

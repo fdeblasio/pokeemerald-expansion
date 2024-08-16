@@ -128,6 +128,7 @@ LilycoveCity_DepartmentStore_1F_EventScript_LittleGirl::
 	end
 
 LilycoveCity_DepartmentStore_1F_EventScript_PokefanM::
+	bufferspeciesname STR_VAR_1, SPECIES_LILYCOVE_DEPARTMENT_STORE
 	msgbox LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill, MSGBOX_NPC
 	end
 
@@ -159,7 +160,7 @@ LilycoveCity_DepartmentStore_1F_Text_MomBuyingMeFurniture:
 	.string "nice furniture.$"
 
 LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill:
-	.string "I'm buying something for my Azumarill\n"
+	.string "I'm buying something for my {STR_VAR_1}\n"
 	.string "as a reward for winning a Contest.$"
 
 LilycoveCity_DepartmentStore_1F_Text_Azumarill:

@@ -190,7 +190,6 @@ upcoming
     - Sprites are added but still need to be implemented. Overworld sprites may have duplicates for Pokémon and may need palettes
 - Replace Pokémon overworld sprites with follower sprites
     - Poochyena chasing Birch?
-    - All Zigzagoons?
     - Bonsly?
     - Mew?
 - Combine Centers and Marts?

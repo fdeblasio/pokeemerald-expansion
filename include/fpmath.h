@@ -14,6 +14,8 @@ typedef u32 uq4_12_t;
 #define Q_4_12(n)  ((q4_12_t)((n) * 4096))
 #define UQ_4_12(n)  ((uq4_12_t)((n) * 4096))
 
+#define UQ4_12_MULTIPLY(Num1, Num2) Num1 = uq4_12_multiply(Num1, UQ_4_12(Num2))
+
 // Converts a number to Q24.8 fixed-point format
 #define Q_24_8(n)  ((s32)((n) << 8))
 

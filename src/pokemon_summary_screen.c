@@ -3705,67 +3705,67 @@ static void PrintMovePowerAndAccuracy(u16 moveIndex)
         else if (effect == EFFECT_ACROBATICS && GetMonData(mon, MON_DATA_HELD_ITEM) == ITEM_NONE)
             power *= 2;
         else if (effect == EFFECT_FACADE && (GetMonData(mon, MON_DATA_STATUS) & (STATUS1_BURN | STATUS1_PSN_ANY | STATUS1_PARALYSIS | STATUS1_FROSTBITE)))
-            power = uq4_12_multiply(power, UQ_4_12(2.0));
+            UQ4_12_MULTIPLY(power, 2.0);
         else if (gMovesInfo[moveIndex].alwaysCriticalHit)
             power = uq4_12_multiply_half_down(power, B_CRIT_MULTIPLIER >= GEN_6 ? UQ_4_12(1.5) : UQ_4_12(2.0));
 
         u16 ability = GetMonAbility(mon);
         if (ability == ABILITY_TECHNICIAN && power > 1 && power <= 60)
-            power = uq4_12_multiply(power, UQ_4_12(1.5));
+            UQ4_12_MULTIPLY(power, 1.5);
         else if (ability == ABILITY_FLARE_BOOST && (GetMonData(mon, MON_DATA_STATUS) & STATUS1_BURN) && gMovesInfo[moveIndex].category == DAMAGE_CATEGORY_SPECIAL)
-            power = uq4_12_multiply(power, UQ_4_12(1.5));
+            UQ4_12_MULTIPLY(power, 1.5);
         else if (ability == ABILITY_TOXIC_BOOST && (GetMonData(mon, MON_DATA_STATUS) & STATUS1_PSN_ANY) && gMovesInfo[moveIndex].category == DAMAGE_CATEGORY_PHYSICAL)
-            power = uq4_12_multiply(power, UQ_4_12(1.5));
+            UQ4_12_MULTIPLY(power, 1.5);
         else if (ability == ABILITY_RECKLESS && IS_MOVE_RECOIL(moveIndex))
-            power = uq4_12_multiply(power, UQ_4_12(1.2));
+            UQ4_12_MULTIPLY(power, 1.2);
         else if (ability == ABILITY_IRON_FIST && gMovesInfo[moveIndex].punchingMove)
-            power = uq4_12_multiply(power, UQ_4_12(1.5));
+            UQ4_12_MULTIPLY(power, 1.5);
         else if (ability == ABILITY_SHEER_FORCE && MoveIsAffectedBySheerForce(moveIndex))
-            power = uq4_12_multiply(power, UQ_4_12(1.3));
+            UQ4_12_MULTIPLY(power, 1.3);
         else if (ability == ABILITY_TOUGH_CLAWS && gMovesInfo[moveIndex].makesContact
                 && !(ItemId_GetHoldEffect(GetMonData(mon, MON_DATA_HELD_ITEM)) == HOLD_EFFECT_PUNCHING_GLOVE && gMovesInfo[moveIndex].punchingMove))
-            power = uq4_12_multiply(power, UQ_4_12(1.3));
+            UQ4_12_MULTIPLY(power, 1.3);
         else if (ability == ABILITY_STRONG_JAW && gMovesInfo[moveIndex].bitingMove)
-            power = uq4_12_multiply(power, UQ_4_12(1.5));
+            UQ4_12_MULTIPLY(power, 1.5);
         else if (ability == ABILITY_MEGA_LAUNCHER && gMovesInfo[moveIndex].pulseMove)
-            power = uq4_12_multiply(power, UQ_4_12(1.5));
+            UQ4_12_MULTIPLY(power, 1.5);
         else if (ability == ABILITY_WATER_BUBBLE && type == TYPE_WATER)
-            power = uq4_12_multiply(power, UQ_4_12(2.0));
+            UQ4_12_MULTIPLY(power, 2.0);
         else if ((ability == ABILITY_STEELWORKER || ability == ABILITY_STEELY_SPIRIT)
                 && type == TYPE_STEEL)
-            power = uq4_12_multiply(power, UQ_4_12(1.5));
+            UQ4_12_MULTIPLY(power, 1.5);
         else if ((ability == ABILITY_AERILATE
                 || ability == ABILITY_REFRIGERATE
                 || ability == ABILITY_PIXILATE
                 || ability == ABILITY_GALVANIZE)
                 && gMovesInfo[moveIndex].type == TYPE_NORMAL)
-            power = uq4_12_multiply(power, UQ_4_12(1.2));
+            UQ4_12_MULTIPLY(power, 1.2);
         else if (ability == ABILITY_NORMALIZE)
-            power = uq4_12_multiply(power, UQ_4_12(1.5));
+            UQ4_12_MULTIPLY(power, 1.5);
         else if (ability == ABILITY_PUNK_ROCK && gMovesInfo[moveIndex].soundMove)
-            power = uq4_12_multiply(power, UQ_4_12(1.5));
+            UQ4_12_MULTIPLY(power, 1.5);
         else if (ability == ABILITY_TRANSISTOR && type == TYPE_ELECTRIC)
-            power = uq4_12_multiply(power, UQ_4_12(1.5));
+            UQ4_12_MULTIPLY(power, 1.5);
         else if (ability == ABILITY_DRAGONS_MAW && type == TYPE_DRAGON)
-            power = uq4_12_multiply(power, UQ_4_12(1.5));
+            UQ4_12_MULTIPLY(power, 1.5);
         else if (ability == ABILITY_ROCKY_PAYLOAD && type == TYPE_ROCK)
-            power = uq4_12_multiply(power, UQ_4_12(1.5));
+            UQ4_12_MULTIPLY(power, 1.5);
         else if (ability == ABILITY_SHARPNESS && gMovesInfo[moveIndex].slicingMove)
-            power = uq4_12_multiply(power, UQ_4_12(1.5));
+            UQ4_12_MULTIPLY(power, 1.5);
         else if (ability == ABILITY_HUSTLE && gMovesInfo[moveIndex].category == DAMAGE_CATEGORY_PHYSICAL)
             power = uq4_12_multiply_half_down(power, UQ_4_12(1.5));
         else if (ability == ABILITY_SNIPER && gMovesInfo[moveIndex].alwaysCriticalHit)
-            power = uq4_12_multiply(power, UQ_4_12(1.5));
+            UQ4_12_MULTIPLY(power, 1.5);
 
         if (ItemId_GetHoldEffect(GetMonData(mon, MON_DATA_HELD_ITEM)) == HOLD_EFFECT_PUNCHING_GLOVE && gMovesInfo[moveIndex].punchingMove)
-            power = uq4_12_multiply(power, UQ_4_12(1.1));
+            UQ4_12_MULTIPLY(power, 1.1);
 
         if (gSpeciesInfo[GetMonData(mon, MON_DATA_SPECIES)].types[0] == type
          || gSpeciesInfo[GetMonData(mon, MON_DATA_SPECIES)].types[1] == type){
             if (ability == ABILITY_ADAPTABILITY)
-                power = uq4_12_multiply(power, UQ_4_12(2.0));
+                UQ4_12_MULTIPLY(power, 2.0);
             else
-                power = uq4_12_multiply(power, UQ_4_12(1.5));
+                UQ4_12_MULTIPLY(power, 1.5);
         }
 
         if (gMovesInfo[moveIndex].strikeCount > 1 && effect == EFFECT_HIT)

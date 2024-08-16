@@ -52,6 +52,8 @@ static inline uq4_12_t uq4_12_multiply(uq4_12_t a, uq4_12_t b)
     return (product + UQ_4_12_ROUND) >> UQ_4_12_SHIFT;
 }
 
+#define UQ4_12_MULTIPLY(Num1, Num2) Num1 = uq4_12_multiply(Num1, UQ_4_12(Num2))
+
 static inline uq4_12_t uq4_12_multiply_half_down(uq4_12_t a, uq4_12_t b)
 {
     u32 product = (u32) a * b;

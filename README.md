@@ -121,7 +121,7 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
 - Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room
     - The door to Sealed Chamber and the Regis' inner rooms are now automatically open
 - Steven now gives out a Chien-Pao
-- Tickets for islands where Solgaleo, Zeraora, and Therian Landorus reside are given after beating the Elite Four
+- Tickets for islands where Cosmog, Zeraora, and Therian Landorus reside are given after beating the Elite Four
     - The Birth Island puzzle is much simpler
     - Navel Rock is slightly easier to navigate
 - SS Tidal trainers can be rebattled every trip
@@ -1967,6 +1967,9 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
 - Drampa:
     - Type: Normal/Dragon->Dragon/Normal
     - Learns Swift by level up
+
+- Cosmoem:
+    - Only evolves into Solgaleo, regardless of time of day
 
 - Solgaleo:
     - Learns Psychic Fangs by level up

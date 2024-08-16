@@ -135,7 +135,8 @@ LilycoveCity_DepartmentStore_1F_EventScript_Azumarill::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_AZUMARILL, CRY_MODE_NORMAL
+	playmoncry SPECIES_LILYCOVE_DEPARTMENT_STORE, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, SPECIES_LILYCOVE_DEPARTMENT_STORE
 	msgbox LilycoveCity_DepartmentStore_1F_Text_Azumarill, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -162,7 +163,7 @@ LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill:
 	.string "as a reward for winning a Contest.$"
 
 LilycoveCity_DepartmentStore_1F_Text_Azumarill:
-	.string "Azumarill: Maririroo!$"
+	.string "{STR_VAR_1}: Maririroo!$"
 
 LilycoveCity_DepartmentStore_1F_Text_FloorNamesSign:
 	.string "1F: Service Counter\n"

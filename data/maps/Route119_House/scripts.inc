@@ -10,6 +10,7 @@ Route119_House_EventScript_Wingull::
 	faceplayer
 	waitse
 	playmoncry SPECIES_ROUTE_119_HOUSE, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, SPECIES_ROUTE_119_HOUSE
 	msgbox Route119_House_Text_Wingull, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -23,5 +24,5 @@ Route119_House_Text_RumorAboutCaveOfOrigin:
 	.string "something like that really happen?$"
 
 Route119_House_Text_Wingull:
-	.string "Wingull: Pihyoh!$"
+	.string "{STR_VAR_1}: Pihyoh!$"
 

@@ -467,7 +467,7 @@ static void SetupRoomObjectEvents(void)
     u16 objGfx2;
 
     VarSet(VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_LINK_RECEPTIONIST);
-    VarSet(VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_SPECIES(DUSCLOPS));
+    VarSet(VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_SPECIES(BATTLE_PIKE_2));
     setObjGfx1 = TRUE;
     setObjGfx2 = FALSE;
     objGfx1 = 0;
@@ -488,9 +488,9 @@ static void SetupRoomObjectEvents(void)
     case PIKE_ROOM_STATUS:
         objGfx1 = OBJ_EVENT_GFX_GENTLEMAN;
         if (sStatusMon == PIKE_STATUSMON_DUSCLOPS)
-            objGfx2 = OBJ_EVENT_GFX_SPECIES(DUSCLOPS);
+            objGfx2 = OBJ_EVENT_GFX_SPECIES(BATTLE_PIKE_2);
         else
-            objGfx2 = OBJ_EVENT_GFX_SPECIES(KIRLIA);
+            objGfx2 = OBJ_EVENT_GFX_SPECIES(BATTLE_PIKE_1);
         setObjGfx2 = TRUE;
         break;
     case PIKE_ROOM_HEAL_PART:

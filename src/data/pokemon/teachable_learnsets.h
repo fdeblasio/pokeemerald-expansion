@@ -34209,6 +34209,7 @@ static const u16 sPumpkabooTeachableLearnset[] = {
 
 static const u16 sGourgeistTeachableLearnset[] = {
     MOVE_ATTRACT,
+    MOVE_BODY_PRESS,
     MOVE_BULLET_SEED,
     MOVE_DARK_PULSE,
     MOVE_DOUBLE_TEAM,
@@ -42380,6 +42381,7 @@ static const u16 sEspathraTeachableLearnset[] = {
 
 #if P_FAMILY_TINKATINK
 static const u16 sTinkatinkTeachableLearnset[] = {
+    MOVE_DAZZLING_GLEAM,
     MOVE_ENDURE,
     MOVE_FACADE,
     MOVE_FLASH_CANNON,
@@ -42405,6 +42407,7 @@ static const u16 sTinkatinkTeachableLearnset[] = {
 
 static const u16 sTinkatuffTeachableLearnset[] = {
     MOVE_BRICK_BREAK,
+    MOVE_DAZZLING_GLEAM,
     MOVE_ENDURE,
     MOVE_FACADE,
     MOVE_FLASH_CANNON,
@@ -42430,6 +42433,7 @@ static const u16 sTinkatuffTeachableLearnset[] = {
 
 static const u16 sTinkatonTeachableLearnset[] = {
     MOVE_BRICK_BREAK,
+    MOVE_DAZZLING_GLEAM,
     MOVE_ENDURE,
     MOVE_FACADE,
     MOVE_FLASH_CANNON,

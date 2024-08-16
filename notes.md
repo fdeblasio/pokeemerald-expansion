@@ -156,13 +156,17 @@ upcoming
 - Just make new tutors in towns or Battle Frontier
 - Update local Porymoves for automatic movepool updates (similar to Hail/Snowscape)
     - Any Pokémon that learns Drill Peck should learn Drill Run
-    - All Pokémon that can learn Flash Cannon should learn Dazzling Gleam and vice versa?
+    - Any Pokémon that can learn Flash Cannon should learn Dazzling Gleam and vice versa?
+        - Any Pokémon that learns Power Gem should learn both?
     - Any Pokémon that learns a biting move, should also learn a STAB version (for example, Eelektrik learning Crunch but not Thunder Fang)
+    - Any Pokémon that learns a horn move (Horn Attack, Megahorn, Smart Strike, etc), can learn them all?
 - Possible Move Updates:
     - Infestation: 20->35
     - Parabolic Charge: 65->75
     - Poison Sting: 20->40
     - Poison Fang: 60->65
+    - Shadow Punch: 60->75?
+        - Would need Ghost-type never miss replacement
 
 ### Field Moves
 - Edit moves that work in field

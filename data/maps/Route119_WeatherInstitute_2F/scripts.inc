@@ -88,8 +88,8 @@ Route119_WeatherInstitute_2F_EventScript_ShellyDefeated::
 
 Route119_WeatherInstitute_2F_EventScript_ReceiveCastform::
 	msgbox Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon, MSGBOX_DEFAULT
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_CASTFORM_NORMAL
-	givemon SPECIES_CASTFORM_NORMAL, 40, ITEM_MYSTIC_WATER
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_WEATHER_INSTITUTE
+	givemon SPECIES_WEATHER_INSTITUTE, WEATHER_INSTITUTE_LEVEL, ITEM_MYSTIC_WATER
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, Route119_WeatherInstitute_2F_EventScript_ReceiveCastformParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, Route119_WeatherInstitute_2F_EventScript_ReceiveCastformPC
 	goto Common_EventScript_NoMoreRoomForPokemon
@@ -119,10 +119,10 @@ Route119_WeatherInstitute_2F_EventScript_SendCastformToPC::
 
 Route119_WeatherInstitute_2F_EventScript_ReceivedCastformFanfare::
 	playfanfare MUS_OBTAIN_ITEM
+	bufferspeciesname STR_VAR_1, SPECIES_WEATHER_INSTITUTE
 	message Route119_WeatherInstitute_2F_Text_PlayerReceivedCastform
 	waitmessage
 	waitfanfare
-	bufferspeciesname STR_VAR_1, SPECIES_CASTFORM_NORMAL
 	return
 
 Route119_WeatherInstitute_2F_EventScript_ExplainCastform::
@@ -291,7 +291,7 @@ Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon:
 	.string "but take this Pokémon.$"
 
 Route119_WeatherInstitute_2F_Text_PlayerReceivedCastform:
-	.string "{PLAYER} received Castform!$"
+	.string "{PLAYER} received {STR_VAR_1}!$"
 
 Route119_WeatherInstitute_2F_Text_PokemonChangesWithWeather:
 	.string "That Pokémon changes shape according\n"

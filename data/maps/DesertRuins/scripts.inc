@@ -61,7 +61,7 @@ DesertRuins_EventScript_Regirock::
 	playmoncry SPECIES_DESERT_RUINS, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_DESERT_RUINS, 55
+	setwildbattle SPECIES_DESERT_RUINS, TRIO_LEVEL
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special StartRegiBattle
 	waitstate

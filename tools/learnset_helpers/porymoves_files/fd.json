@@ -8260,21 +8260,96 @@
     "TutorMoves": []
   },
   "ESPURR": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 27,
+        "Move": "MOVE_PSYCHIC_NOISE"
+      },
+      {
+        "Level": 33,
+        "Move": "MOVE_EXTRASENSORY"
+      },
+      {
+        "Level": 38,
+        "Move": "MOVE_MEAN_LOOK"
+      },
+      {
+        "Level": 38,
+        "Move": "MOVE_TEARFUL_LOOK"
+      },
+      {
+        "Level": 38,
+        "Move": "MOVE_BABY_DOLL_EYES"
+      },
+      {
+        "Level": 48,
+        "Move": "MOVE_PSYCHIC"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "MEOWSTIC": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_TEARFUL_LOOK"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_BABY_DOLL_EYES"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_MIRACLE_EYE"
+      },
+      {
+        "Level": 27,
+        "Move": "MOVE_PSYCHIC_NOISE"
+      },
+      {
+        "Level": 39,
+        "Move": "MOVE_EXTRASENSORY"
+      },
+      {
+        "Level": 59,
+        "Move": "MOVE_PSYCHIC_TERRAIN"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "MEOWSTIC_FEMALE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_MEAN_LOOK"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_TEARFUL_LOOK"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_BABY_DOLL_EYES"
+      },
+      {
+        "Level": 27,
+        "Move": "MOVE_PSYCHIC_NOISE"
+      },
+      {
+        "Level": 39,
+        "Move": "MOVE_EXTRASENSORY"
+      },
+      {
+        "Level": 44,
+        "Move": "MOVE_ENERGY_BALL"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -8616,17 +8691,35 @@
     "TutorMoves": []
   },
   "PUMPKABOO": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_LEAFAGE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "GOURGEIST": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_LEAFAGE"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_SHADOW_PUNCH"
+      },
+      {
+        "Level": 36,
+        "Move": "MOVE_SHADOW_CLAW"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_SHADOW_CLAW"
+      "MOVE_BODY_PRESS"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -9154,14 +9247,48 @@
     "TutorMoves": []
   },
   "SANDYGAST": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_MUD_SLAP"
+      },
+      {
+        "Level": 15,
+        "Move": "MOVE_MUD_SHOT"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_HEX"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_SCORCHING_SANDS"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "PALOSSAND": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_MUD_SLAP"
+      },
+      {
+        "Level": 15,
+        "Move": "MOVE_MUD_SHOT"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_HEX"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_SCORCHING_SANDS"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -10752,14 +10879,32 @@
     "TutorMoves": []
   },
   "TINKATINK": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 24,
+        "Move": "MOVE_SMART_STRIKE"
+      },
+      {
+        "Level": 31,
+        "Move": "MOVE_DAZZLING_GLEAM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "TINKATUFF": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 24,
+        "Move": "MOVE_SMART_STRIKE"
+      },
+      {
+        "Level": 31,
+        "Move": "MOVE_DAZZLING_GLEAM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -10770,6 +10915,14 @@
       {
         "Level": 1,
         "Move": "MOVE_SMACK_DOWN"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_SMART_STRIKE"
+      },
+      {
+        "Level": 31,
+        "Move": "MOVE_DAZZLING_GLEAM"
       }
     ],
     "PreEvoMoves": [],

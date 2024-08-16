@@ -12889,7 +12889,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     GUMSHOOS, SCOPE_LENS,
         },
         {
         .lvl = 33,
-        .species = SPECIES_TROPIUS,
+        .species = SPECIES_FLAMIGO,
         }
     },
 },

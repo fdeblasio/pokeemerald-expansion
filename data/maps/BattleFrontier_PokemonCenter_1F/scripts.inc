@@ -33,7 +33,8 @@ BattleFrontier_PokemonCenter_1F_EventScript_Skitty::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_SKITTY, CRY_MODE_NORMAL
+	playmoncry SPECIES_BATTLE_FRONTIER_POKE_CENTER, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, SPECIES_BATTLE_FRONTIER_POKE_CENTER
 	msgbox BattleFrontier_PokemonCenter_1F_Text_Skitty, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -57,5 +58,5 @@ BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge:
 	.string "challenge with just this baby!$"
 
 BattleFrontier_PokemonCenter_1F_Text_Skitty:
-	.string "Skitty: Mya myaaah!$"
+	.string "{STR_VAR_1}: Mya myaaah!$"
 

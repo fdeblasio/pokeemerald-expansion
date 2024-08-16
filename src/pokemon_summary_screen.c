@@ -3771,7 +3771,7 @@ static void PrintMovePowerAndAccuracy(u16 moveIndex)
         if (gMovesInfo[moveIndex].strikeCount > 1 && effect == EFFECT_HIT)
             power *= gMovesInfo[moveIndex].strikeCount;
 
-        if (power < 2 && power == gMovesInfo[moveIndex].power)
+        if (power <= 2 && effect != EFFECT_ERUPTION && effect != EFFECT_RETURN && effect != EFFECT_FRUSTRATION)
             text = gText_ThreeDashes;
         else {
             ConvertIntToDecimalStringN(gStringVar1, power, STR_CONV_MODE_RIGHT_ALIGN, 3);

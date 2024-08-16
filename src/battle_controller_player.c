@@ -1942,7 +1942,7 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     if (gMovesInfo[move].strikeCount > 1 && effect == EFFECT_HIT)
         power *= gMovesInfo[move].strikeCount;
 
-    if (power < 2 && power == gMovesInfo[move].power)
+    if (power <= 2 && effect != EFFECT_ERUPTION && effect != EFFECT_RETURN && effect != EFFECT_FRUSTRATION)
         StringCopy(power_num, gText_BattleSwitchWhich5);
     else
         ConvertIntToDecimalStringN(power_num, power, STR_CONV_MODE_LEFT_ALIGN, 3);

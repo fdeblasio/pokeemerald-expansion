@@ -94,7 +94,7 @@ IslandCave_EventScript_Regice::
 	playmoncry SPECIES_ISLAND_CAVE, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_ISLAND_CAVE, 55
+	setwildbattle SPECIES_ISLAND_CAVE, TRIO_LEVEL
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special StartRegiBattle
 	waitstate

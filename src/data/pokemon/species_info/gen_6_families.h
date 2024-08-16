@@ -2174,11 +2174,11 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #if P_FAMILY_ESPURR
     [SPECIES_ESPURR] =
     {
-        .baseHP        = 62,
-        .baseAttack    = 48,
-        .baseDefense   = 54,
-        .baseSpeed     = 68,
-        .baseSpAttack  = 63,
+        .baseHP        = 65,
+        .baseAttack    = 50,
+        .baseDefense   = 55,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 65,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_PSYCHIC),
         .catchRate = 190,
@@ -2237,12 +2237,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 
     [SPECIES_MEOWSTIC_MALE] =
     {
-        .baseHP        = 74,
-        .baseAttack    = 48,
-        .baseDefense   = 76,
-        .baseSpeed     = 104,
-        .baseSpAttack  = 83,
-        .baseSpDefense = 81,
+        .baseHP        = 75,
+        .baseAttack    = 50,
+        .baseDefense   = 80,
+        .baseSpeed     = 105,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_PSYCHIC),
         .catchRate = 75,
         .expYield = 163,
@@ -2298,12 +2298,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 
     [SPECIES_MEOWSTIC_FEMALE] =
     {
-        .baseHP        = 74,
-        .baseAttack    = 48,
-        .baseDefense   = 76,
-        .baseSpeed     = 104,
-        .baseSpAttack  = 83,
-        .baseSpDefense = 81,
+        .baseHP        = 75,
+        .baseAttack    = 50,
+        .baseDefense   = 80,
+        .baseSpeed     = 105,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_PSYCHIC),
         .catchRate = 75,
         .expYield = 163,
@@ -4440,14 +4440,22 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #endif //P_FAMILY_PHANTUMP
 
 #if P_FAMILY_PUMPKABOO
+#define PUMPKABOO_ATTACK          70
+#define PUMPKABOO_DEFENSE         70
+#define PUMPKABOO_SPECIAL_ATTACK  45
+#define PUMPKABOO_SPECIAL_DEFENSE 55
+
+#define PUMPKABOO_AVERAGE_HP    50
+#define PUMPKABOO_AVERAGE_SPEED 55
+
     [SPECIES_PUMPKABOO_AVERAGE] =
     {
-        .baseHP        = 49,
-        .baseAttack    = 66,
-        .baseDefense   = 70,
-        .baseSpeed     = 51,
-        .baseSpAttack  = 44,
-        .baseSpDefense = 55,
+        .baseHP        = PUMPKABOO_AVERAGE_HP,
+        .baseAttack    = PUMPKABOO_ATTACK,
+        .baseDefense   = PUMPKABOO_DEFENSE,
+        .baseSpeed     = PUMPKABOO_AVERAGE_SPEED,
+        .baseSpAttack  = PUMPKABOO_SPECIAL_ATTACK,
+        .baseSpDefense = PUMPKABOO_SPECIAL_DEFENSE,
         .types = MON_TYPES(TYPE_GHOST, TYPE_GRASS),
         .catchRate = 120,
         .expYield = 67,
@@ -4505,12 +4513,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 
     [SPECIES_PUMPKABOO_SMALL] =
     {
-        .baseHP        = 44,
-        .baseAttack    = 66,
-        .baseDefense   = 70,
-        .baseSpeed     = 56,
-        .baseSpAttack  = 44,
-        .baseSpDefense = 55,
+        .baseHP        = PUMPKABOO_AVERAGE_HP - 5,
+        .baseAttack    = PUMPKABOO_ATTACK,
+        .baseDefense   = PUMPKABOO_DEFENSE,
+        .baseSpeed     = PUMPKABOO_AVERAGE_SPEED + 5,
+        .baseSpAttack  = PUMPKABOO_SPECIAL_ATTACK,
+        .baseSpDefense = PUMPKABOO_SPECIAL_DEFENSE,
         .types = MON_TYPES(TYPE_GHOST, TYPE_GRASS),
         .catchRate = 120,
         .expYield = 67,
@@ -4559,12 +4567,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 
     [SPECIES_PUMPKABOO_LARGE] =
     {
-        .baseHP        = 54,
-        .baseAttack    = 66,
-        .baseDefense   = 70,
-        .baseSpeed     = 46,
-        .baseSpAttack  = 44,
-        .baseSpDefense = 55,
+        .baseHP        = PUMPKABOO_AVERAGE_HP + 5,
+        .baseAttack    = PUMPKABOO_ATTACK,
+        .baseDefense   = PUMPKABOO_DEFENSE,
+        .baseSpeed     = PUMPKABOO_AVERAGE_SPEED - 5,
+        .baseSpAttack  = PUMPKABOO_SPECIAL_ATTACK,
+        .baseSpDefense = PUMPKABOO_SPECIAL_DEFENSE,
         .types = MON_TYPES(TYPE_GHOST, TYPE_GRASS),
         .catchRate = 120,
         .expYield = 67,
@@ -4613,12 +4621,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 
     [SPECIES_PUMPKABOO_SUPER] =
     {
-        .baseHP        = 59,
-        .baseAttack    = 66,
-        .baseDefense   = 70,
-        .baseSpeed     = 41,
-        .baseSpAttack  = 44,
-        .baseSpDefense = 55,
+        .baseHP        = PUMPKABOO_AVERAGE_HP + 10,
+        .baseAttack    = PUMPKABOO_ATTACK,
+        .baseDefense   = PUMPKABOO_DEFENSE,
+        .baseSpeed     = PUMPKABOO_AVERAGE_SPEED - 10,
+        .baseSpAttack  = PUMPKABOO_SPECIAL_ATTACK,
+        .baseSpDefense = PUMPKABOO_SPECIAL_DEFENSE,
         .types = MON_TYPES(TYPE_GHOST, TYPE_GRASS),
         .catchRate = 120,
         .expYield = 67,
@@ -4667,14 +4675,22 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOURGEIST_SUPER}),
     },
 
+#define GOURGEIST_DEFENSE         125
+#define GOURGEIST_SPECIAL_ATTACK  60
+#define GOURGEIST_SPECIAL_DEFENSE 75
+
+#define GOURGEIST_AVERAGE_HP     65
+#define GOURGEIST_AVERAGE_ATTACK 90
+#define GOURGEIST_AVERAGE_SPEED  85
+
     [SPECIES_GOURGEIST_AVERAGE] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 90,
-        .baseDefense   = 122,
-        .baseSpeed     = 84,
-        .baseSpAttack  = 58,
-        .baseSpDefense = 75,
+        .baseHP        = GOURGEIST_AVERAGE_HP,
+        .baseAttack    = GOURGEIST_AVERAGE_ATTACK,
+        .baseDefense   = GOURGEIST_DEFENSE,
+        .baseSpeed     = GOURGEIST_AVERAGE_SPEED,
+        .baseSpAttack  = GOURGEIST_SPECIAL_ATTACK,
+        .baseSpDefense = GOURGEIST_SPECIAL_DEFENSE,
         .types = MON_TYPES(TYPE_GHOST, TYPE_GRASS),
         .catchRate = 60,
         .expYield = 173,
@@ -4730,12 +4746,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 
     [SPECIES_GOURGEIST_SMALL] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 85,
-        .baseDefense   = 122,
-        .baseSpeed     = 99,
-        .baseSpAttack  = 58,
-        .baseSpDefense = 75,
+        .baseHP        = GOURGEIST_AVERAGE_HP - 10,
+        .baseAttack    = GOURGEIST_AVERAGE_ATTACK - 5,
+        .baseDefense   = GOURGEIST_DEFENSE,
+        .baseSpeed     = GOURGEIST_AVERAGE_SPEED + 15,
+        .baseSpAttack  = GOURGEIST_SPECIAL_ATTACK,
+        .baseSpDefense = GOURGEIST_SPECIAL_DEFENSE,
         .types = MON_TYPES(TYPE_GHOST, TYPE_GRASS),
         .catchRate = 60,
         .expYield = 173,
@@ -4783,12 +4799,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 
     [SPECIES_GOURGEIST_LARGE] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 95,
-        .baseDefense   = 122,
-        .baseSpeed     = 69,
-        .baseSpAttack  = 58,
-        .baseSpDefense = 75,
+        .baseHP        = GOURGEIST_AVERAGE_HP + 10,
+        .baseAttack    = GOURGEIST_AVERAGE_ATTACK + 5,
+        .baseDefense   = GOURGEIST_DEFENSE,
+        .baseSpeed     = GOURGEIST_AVERAGE_SPEED - 15,
+        .baseSpAttack  = GOURGEIST_SPECIAL_ATTACK,
+        .baseSpDefense = GOURGEIST_SPECIAL_DEFENSE,
         .types = MON_TYPES(TYPE_GHOST, TYPE_GRASS),
         .catchRate = 60,
         .expYield = 173,
@@ -4836,12 +4852,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 
     [SPECIES_GOURGEIST_SUPER] =
     {
-        .baseHP        = 85,
-        .baseAttack    = 100,
-        .baseDefense   = 122,
-        .baseSpeed     = 54,
-        .baseSpAttack  = 58,
-        .baseSpDefense = 75,
+        .baseHP        = GOURGEIST_AVERAGE_HP + 20,
+        .baseAttack    = GOURGEIST_AVERAGE_ATTACK + 10,
+        .baseDefense   = GOURGEIST_DEFENSE,
+        .baseSpeed     = GOURGEIST_AVERAGE_SPEED - 30,
+        .baseSpAttack  = GOURGEIST_SPECIAL_ATTACK,
+        .baseSpDefense = GOURGEIST_SPECIAL_DEFENSE,
         .types = MON_TYPES(TYPE_GHOST, TYPE_GRASS),
         .catchRate = 60,
         .expYield = 173,

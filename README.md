@@ -1088,13 +1088,13 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Pikachu
     - Held item: Light Ball: 5%->100%
-    - Learns Volt Tackle at level 1
+    - Learns Volt Tackle by level up
 
 - Raichu:
-    - Learns Volt Tackle at level 1
+    - Learns Volt Tackle by level up
 
 - Alolan Raichu (postgame):
-    - Learns Volt Tackle at level 1
+    - Learns Volt Tackle by level up
 
 - Cleffa (not in main game):
     - Can also evolve at level 12
@@ -2337,6 +2337,28 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Received Grass Pelt as a second Ability and Grassy Surge as a Hidden Ability (previously Grass Pelt)
     - Learns Trailblaze, Grassy Terrain, Grassy Glide by level up
 
+- Espurr:
+    - HP: 62->65
+    - Atk: 48->50
+    - Def: 54->55
+    - SpA: 63->65
+    - Spe: 68->70
+    - Learns Psychic Noise, Extrasensory, Mean Look, Tearful Look, Baby-Doll Eyes, and Psychic by level up
+
+- Male Meowstic:
+    - HP: 74->75
+    - Atk: 48->50
+    - Def: 76->80
+    - SpA: 83->90
+    - SpD: 81->85
+    - Spe: 104->105
+    - Learns Tearful Look, Baby-Doll Eyes, Psychic Noise, Extrasensory, and Psychic Terrain by level up
+    - Learns Miracle Eye at level 1 instead of level 31
+
+- Female Meowstic:
+    - Learns Mean Look, Tearful Look, Baby-Doll Eyes, and Psychic Noise by level up
+    - Learns Extrasensory at level 39 and learns Energy Ball in its place at level 44
+
 - Spritzee:
     - Gender Ratio: 50/50->25/75
     - Learns Dazzling Gleam by level up
@@ -2384,8 +2406,19 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Goomy:
     - Evolution: 40->35
 
+- Pumpkaboo:
+    - HP: 44/49/54/59->45/50/55/60
+    - Atk: 66->70
+    - SpA: 44->45
+    - Spe: 56/51/46/41->60/55/50/45
+    - Learns Leafage by level up
+
 - Gourgeist:
-    - Learns Shadow Claw by TM
+    - Def: 122->125
+    - SpA: 58->60
+    - Spe: 99/84/69/54->100/85/70/55
+    - Learns Leafage, Shadow Punch, and Shadow Claw by level up
+    - Learns Body Press by TM
 
 - Noibat:
     - Evolution: 48->40
@@ -2444,6 +2477,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Tsareena:
     - Held item: Magost Berry: 0%->50%
     - Held item: Grassy Seed: 50%->5%
+
+- Sandygast/Palossand:
+    - Learn Mud-Slap, Mud Shot, Hex, and Scorching Sands by level up
 
 - Type: Null:
     - Can also evolve at level 45
@@ -2632,18 +2668,20 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Tinkatink:
     - SpD: 64->65
     - Spe: 58->60
+    - Learns Smart Strike and Dazzling Gleam by level up
 
 - Tinkatuff:
     - Atk: 55->70
     - SpD: 82->85
     - Spe: 78->80
+    - Learns Smart Strike and Dazzling Gleam by level up
 
 - Tinkaton:
     - Atk: 75->85
     - Def: 77->80
     - Spe: 94->95
     - Hidden Ability: Pickpocket->Steelworker
-    - Learns Smack Down by level up
+    - Learns Smack Down, Smart Strike, and Dazzling Gleam by level up
 
 - Wugtrio:
     - HP: 35->50

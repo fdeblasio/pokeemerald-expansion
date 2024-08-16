@@ -8291,7 +8291,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "MEOWSTIC": {
+  "MEOWSTIC_M": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -8323,7 +8323,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "MEOWSTIC_FEMALE": {
+  "MEOWSTIC_F": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -10145,14 +10145,14 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "INDEEDEE": {
+  "INDEEDEE_M": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
-  "INDEEDEE_FEMALE": {
+  "INDEEDEE_F": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
@@ -10270,14 +10270,14 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "URSHIFU": {
+  "URSHIFU_SINGLE_STRIKE": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
-  "URSHIFU_RAPID_STRIKE_STYLE": {
+  "URSHIFU_RAPID_STRIKE": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],

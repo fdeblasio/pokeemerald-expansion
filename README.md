@@ -1989,25 +1989,31 @@ There are some mechanics, moves and abilities that are missing and being develop
     - SpA: 95->100
     - SpD: 77->90
     - Spe: 91->100
+    - Catch rate: 45->90
     - Learns Parabolic Charge, Thunderbolt, and Shadow Ball by level up
 
 - Rotom Heat:
+    - Catch rate: 45->90
     - Now learns Flamethrower by form change and instead learns Overheat by TM
     - Learns Parabolic Charge, Thunderbolt, and Shadow Ball by level up
 
 - Rotom Wash:
+    - Catch rate: 45->90
     - Now learns Surf by form change
     - Learns Parabolic Charge, Thunderbolt, and Shadow Ball by level up
 
 - Rotom Frost:
+    - Catch rate: 45->90
     - Now learns Ice Beam by form change and instead learns Blizzard by TM
     - Learns Parabolic Charge, Thunderbolt, and Shadow Ball by level up
 
 - Rotom Fan:
+    - Catch rate: 45->90
     - Ability: Levitate->Wind Power
     - Learns Parabolic Charge, Thunderbolt, and Shadow Ball by level up
 
 - Rotom Mow:
+    - Catch rate: 45->90
     - Now learns Energy Ball by form change
     - Learns Parabolic Charge, Thunderbolt, and Shadow Ball by level up
 

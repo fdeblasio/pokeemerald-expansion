@@ -207,6 +207,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 ### Potentially just savefile issues due to merging upcoming/playing while hacking
 - Lilycove ladies crash the game
 - Some of the EV-reducing berries on Route 123 will randomly disappear and then come back
+    - This may be related to the amount of overworld sprites/palettes
 - Moving an Pokémon in the PC seems to duplicate its item in the bag
 - Items in the Battle Pyramid's Battle Bag/held items in the Battle Pike are turning into Poke Balls
     - Seems to happen after trainer battles?

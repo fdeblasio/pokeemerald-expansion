@@ -1967,7 +1967,7 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     if (GetMonData(mon, MON_DATA_HELD_ITEM) == ITEM_WIDE_LENS)
         accuracy = (accuracy * 110) / 100;
 
-    if (accuracy < 2)
+    if (accuracy == 0)
         StringCopy(accuracy_num, gText_BattleSwitchWhich5);
     else
         ConvertIntToDecimalStringN(accuracy_num, min(accuracy, 100), STR_CONV_MODE_LEFT_ALIGN, 3);

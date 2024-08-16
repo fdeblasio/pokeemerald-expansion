@@ -2093,16 +2093,18 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Dragon Breath by Egg Move
 
 - Pumpkaboo:
-    - HP: 44/49/54/59->45/50/55/60
+    - Only Average Size is available
+    - HP: 49->50
     - Atk: 66->70
     - SpA: 44->45
     - Spe: 56/51/46/41->60/55/50/45
     - Learns Leafage by level up
 
 - Gourgeist:
+    - Only Average Size is available
     - Def: 122->125
     - SpA: 58->60
-    - Spe: 99/84/69/54->100/85/70/55
+    - Spe: 84->85
     - Learns Leafage, Shadow Punch, and Shadow Claw by level up
     - Learns Body Press by TM
 

@@ -4237,39 +4237,39 @@
               },
               {
                 "range": "RANGE_SURF_INITIAL",
+                "species": "KLINK"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
+                "species": "TOXEL"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
+                "species": "TOXEL"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
+                "species": "ROTOM"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
                 "species": "PACHIRISU"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
+                "species": "VOLTORB"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
+                "species": "KLINK"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
                 "species": "TOXEL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
                 "species": "ROTOM"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "TOXEL"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "ROTOM"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "KLINK"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "KLINK"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "KLINK"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "KLINK"
               }
             ]
           }
@@ -4286,23 +4286,23 @@
               },
               {
                 "range": "RANGE_SURF_INITIAL",
+                "species": "KLINK"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
+                "species": "TOXEL"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
+                "species": "TOXEL"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
+                "species": "ROTOM"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
                 "species": "PACHIRISU"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "TOXEL"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "ROTOM"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "TOXEL"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "ROTOM"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
@@ -4310,7 +4310,7 @@
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PACHIRISU"
+                "species": "KLINK"
               },
               {
                 "range": "RANGE_SURF_INITIAL",

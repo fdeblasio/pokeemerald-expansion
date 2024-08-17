@@ -40,9 +40,9 @@ Route119_WeatherInstitute_2F_EventScript_Marina::
 	msgbox Route119_WeatherInstitute_2F_Text_MarinaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route119_WeatherInstitute_2F_EventScript_Grunt5::
-	trainerbattle_single TRAINER_GRUNT_WEATHER_INSTITUTE_5, Route119_WeatherInstitute_2F_Text_Grunt5Intro, Route119_WeatherInstitute_2F_Text_Grunt5Defeat
-	msgbox Route119_WeatherInstitute_2F_Text_Grunt5PostBattle, MSGBOX_AUTOCLOSE
+Route119_WeatherInstitute_2F_EventScript_Caspian::
+	trainerbattle_single TRAINER_CASPIAN_WEATHER_INSTITUTE, Route119_WeatherInstitute_2F_Text_CaspianIntro, Route119_WeatherInstitute_2F_Text_CaspianDefeat
+	msgbox Route119_WeatherInstitute_2F_Text_CaspianPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route119_WeatherInstitute_2F_EventScript_Shelly::
@@ -238,15 +238,15 @@ Route119_WeatherInstitute_2F_Text_MarinaPostBattle:
 	.string "What we really want isn't here…\n"
 	.string "Ihihihihi…$"
 
-Route119_WeatherInstitute_2F_Text_Grunt5Intro:
+Route119_WeatherInstitute_2F_Text_CaspianIntro:
 	.string "We're Team Aqua!\n"
 	.string "We appear wherever anything rare is\l"
 	.string "found!$"
 
-Route119_WeatherInstitute_2F_Text_Grunt5Defeat:
+Route119_WeatherInstitute_2F_Text_CaspianDefeat:
 	.string "You got me!$"
 
-Route119_WeatherInstitute_2F_Text_Grunt5PostBattle:
+Route119_WeatherInstitute_2F_Text_CaspianPostBattle:
 	.string "You don't have any idea what we of\n"
 	.string "Team Aqua are working towards!\l"
 	.string "You stay out of our way!$"

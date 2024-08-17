@@ -61,13 +61,13 @@ AquaHideout_B2F_Movement_SumbarineDepartLeft:
 	walk_left
 	step_end
 
-AquaHideout_B2F_EventScript_Grunt5::
-	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_5, AquaHideout_B2F_Text_Grunt5Intro, AquaHideout_B2F_Text_Grunt5Defeat, AquaHideout_B2F_EventScript_Grunt5Defeated
-	msgbox AquaHideout_B2F_Text_Grunt5PostBattle, MSGBOX_AUTOCLOSE
+AquaHideout_B2F_EventScript_Beryl::
+	trainerbattle_single TRAINER_BERYL_AQUA_HIDEOUT, AquaHideout_B2F_Text_BerylIntro, AquaHideout_B2F_Text_BerylDefeat, AquaHideout_B2F_EventScript_BerylDefeated
+	msgbox AquaHideout_B2F_Text_BerylPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-AquaHideout_B2F_EventScript_Grunt5Defeated::
-	msgbox AquaHideout_B2F_Text_Grunt5PostBattle, MSGBOX_DEFAULT
+AquaHideout_B2F_EventScript_BerylDefeated::
+	msgbox AquaHideout_B2F_Text_BerylPostBattle, MSGBOX_DEFAULT
 	release
 	end
 
@@ -110,15 +110,15 @@ AquaHideout_B2F_Text_MattPostBattle:
 	.string "But will you find it then?\n"
 	.string "Hehehe!$"
 
-AquaHideout_B2F_Text_Grunt5Intro:
+AquaHideout_B2F_Text_BerylIntro:
 	.string "Wahahah, I grew weary of waiting!\n"
 	.string "You owe me a battle, too!$"
 
-AquaHideout_B2F_Text_Grunt5Defeat:
+AquaHideout_B2F_Text_BerylDefeat:
 	.string "Tired of waiting…\n"
 	.string "Lost and dazed…$"
 
-AquaHideout_B2F_Text_Grunt5PostBattle:
+AquaHideout_B2F_Text_BerylPostBattle:
 	.string "Boss…\n"
 	.string "Is this good enough?$"
 

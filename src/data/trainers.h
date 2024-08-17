@@ -2783,32 +2783,56 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA, \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define GENERIC_AQUA_GRUNT_M_INFO \
-    GENERIC_GRUNT_NAME,           \
-    AQUA_GRUNT_M_INFO
-
 #define AQUA_GRUNT_F_INFO                                                     \
     .trainerClass = TRAINER_CLASS_TEAM_AQUA,                                  \
     .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,                                   \
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA, \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define GENERIC_AQUA_GRUNT_F_INFO \
-    GENERIC_GRUNT_NAME,           \
-    AQUA_GRUNT_F_INFO
-
 #define CASPIAN_INFO             \
     .trainerName = _("Caspian"), \
-    AQUA_GRUNT_M_INFO,           \
-    .partySize = 1
+    AQUA_GRUNT_M_INFO
 
-#define CASPIAN_CARVANHA(Level)    \
-    .lvl = Level,                  \
-    .species = SPECIES_CARVANHA,   \
-    .ability = ABILITY_ROUGH_SKIN, \
-    .gender = TRAINER_MON_MALE
+#define CASPIAN_CARVANHA(Level, Move1, Move3, Move4)                 \
+    {                                                                \
+    .lvl = Level,                                                    \
+    .species = SPECIES_CARVANHA,                                     \
+    .ability = ABILITY_ROUGH_SKIN,                                   \
+    .moves = {MOVE_##Move1, MOVE_THIEF, MOVE_##Move3, MOVE_##Move4}, \
+    .gender = TRAINER_MON_MALE,                                      \
+    }
 
+#define CASPIAN_CLAMPERL(Level)     \
+    {                               \
+    .lvl = Level,                   \
+    .species = SPECIES_CLAMPERL,    \
+    .ability = ABILITY_SHELL_ARMOR, \
+    .gender = TRAINER_MON_MALE,     \
+    }
+
+#define AQUA_HIDEOUT_LEVEL 45
 #define SEAFLOOR_CAVERN_LEVEL 52
+
+#define MARINA_BATTLE(Location, Level)                                                \
+[TRAINER_MARINA_##Location] =                                                         \
+{                                                                                     \
+    .trainerName = _("Marina"),                                                       \
+    AQUA_GRUNT_F_INFO,                                                                \
+    .partySize = 2,                                                                   \
+    .party = (const struct TrainerMon[]) {                                            \
+        {                                                                             \
+        .lvl = Level,                                                                 \
+        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_GOLDEEN : SPECIES_SEAKING, \
+        .ability = ABILITY_SWIFT_SWIM,                                                \
+        .gender = TRAINER_MON_FEMALE,                                                 \
+        },                                                                            \
+        {                                                                             \
+        .lvl = Level,                                                                 \
+        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_STARYU : SPECIES_STARMIE,  \
+        .ability = ABILITY_ILLUMINATE,                                                \
+        }                                                                             \
+    },                                                                                \
+}
 
 #define MALIK_BATTLE(Location, Level)                                                      \
 [TRAINER_MALIK_##Location] =                                                               \
@@ -2832,25 +2856,48 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },                                                                                     \
 }
 
-#define MARINA_BATTLE(Location, Level)                                                \
-[TRAINER_MARINA_##Location] =                                                         \
+#define BERYL_BATTLE(Location, Level)                                                 \
+[TRAINER_BERYL_##Location] =                                                          \
 {                                                                                     \
-    .trainerName = _("Marina"),                                                       \
-    AQUA_GRUNT_F_INFO,                                                                \
+    .trainerName = _("Beryl"),                                                        \
+    AQUA_GRUNT_M_INFO,                                                                \
     .partySize = 2,                                                                   \
     .party = (const struct TrainerMon[]) {                                            \
         {                                                                             \
         .lvl = Level,                                                                 \
-        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_GOLDEEN : SPECIES_SEAKING, \
-        .ability = ABILITY_SWIFT_SWIM,                                                \
-        .gender = TRAINER_MON_FEMALE,                                                 \
+        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_PSYDUCK : SPECIES_GOLDUCK, \
+        .ability = ABILITY_DAMP,                                                      \
+        .gender = TRAINER_MON_MALE,                                                   \
         },                                                                            \
         {                                                                             \
         .lvl = Level,                                                                 \
-        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_STARYU : SPECIES_STARMIE,  \
-        .ability = ABILITY_ILLUMINATE,                                                \
+        .species = Level < AQUA_HIDEOUT_LEVEL ? SPECIES_HORSEA : (Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_SEADRA : SPECIES_KINGDRA), \
+        .ability = ABILITY_SWIFT_SWIM,                                                \
+        .gender = TRAINER_MON_MALE,                                                   \
         }                                                                             \
     },                                                                                \
+}
+
+#define NERISSA_BATTLE(Location, Level)                                                \
+[TRAINER_NERISSA_##Location] =                                                         \
+{                                                                                      \
+    .trainerName = _("Nerissa"),                                                       \
+    AQUA_GRUNT_F_INFO,                                                                 \
+    .partySize = 2,                                                                    \
+    .party = (const struct TrainerMon[]) {                                             \
+        {                                                                              \
+        .lvl = Level,                                                                  \
+        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_WAILMER : SPECIES_WAILORD,  \
+        .ability = ABILITY_WATER_VEIL,                                                 \
+        .gender = TRAINER_MON_FEMALE,                                                  \
+        },                                                                             \
+        {                                                                              \
+        .lvl = Level,                                                                  \
+        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_MARILL : SPECIES_AZUMARILL, \
+        .ability = ABILITY_HUGE_POWER,                                                 \
+        .gender = TRAINER_MON_FEMALE,                                                  \
+        }                                                                              \
+    },                                                                                 \
 }
 
 
@@ -3433,11 +3480,9 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 [TRAINER_CASPIAN_PETALBURG_WOODS] =
 {
     CASPIAN_INFO,
+    .partySize = 1,
     .party = (const struct TrainerMon[]) {
-        {
-        CASPIAN_CARVANHA(9),
-        .moves = {MOVE_AQUA_JET, MOVE_RAGE, MOVE_LEER, MOVE_NONE},
-        }
+        CASPIAN_CARVANHA(8, AQUA_JET, RAGE, LEER),
     },
 },
 
@@ -4210,11 +4255,9 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 [TRAINER_CASPIAN_RUSTURF_TUNNEL] =
 {
     CASPIAN_INFO,
+    .partySize = 1,
     .party = (const struct TrainerMon[]) {
-        {
-        CASPIAN_CARVANHA(13),
-        .moves = {MOVE_AQUA_JET, MOVE_RAGE, MOVE_LEER, MOVE_SCARY_FACE},
-        }
+        CASPIAN_CARVANHA(13, AQUA_JET, RAGE, SCARY_FACE),
     },
 },
 
@@ -11187,54 +11230,19 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
 },
 
 //Weather Institute
-[TRAINER_GRUNT_WEATHER_INSTITUTE_1] =
-{
-    GENERIC_AQUA_GRUNT_F_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 38,
-        .species = SPECIES_CARVANHA,
-        }
-    },
-},
+#define WEATHER_INSTITUTE_AQUA_LEVEL 37
+NERISSA_BATTLE(WEATHER_INSTITUTE, WEATHER_INSTITUTE_AQUA_LEVEL),
+BERYL_BATTLE(WEATHER_INSTITUTE, WEATHER_INSTITUTE_AQUA_LEVEL),
+MALIK_BATTLE(WEATHER_INSTITUTE, WEATHER_INSTITUTE_AQUA_LEVEL),
+MARINA_BATTLE(WEATHER_INSTITUTE, WEATHER_INSTITUTE_AQUA_LEVEL),
 
-[TRAINER_GRUNT_WEATHER_INSTITUTE_2] =
+[TRAINER_CASPIAN_WEATHER_INSTITUTE] =
 {
-    GENERIC_AQUA_GRUNT_M_INFO,
+    CASPIAN_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 37,
-        .species = SPECIES_CARVANHA,
-        },
-        {
-        .lvl = 37,
-        .species = SPECIES_CORPHISH,
-        }
-    },
-},
-
-MALIK_BATTLE(WEATHER_INSTITUTE, 37),
-MARINA_BATTLE(WEATHER_INSTITUTE, 37),
-
-[TRAINER_GRUNT_WEATHER_INSTITUTE_5] =
-{
-    GENERIC_AQUA_GRUNT_M_INFO,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 36,
-        .species = SPECIES_CARVANHA,
-        },
-        {
-        .lvl = 36,
-        .species = SPECIES_CLAMPERL,
-        },
-        {
-        .lvl = 36,
-        .species = SPECIES_TENTACOOL,
-        }
+        CASPIAN_CLAMPERL(WEATHER_INSTITUTE_AQUA_LEVEL),
+        CASPIAN_CARVANHA(WEATHER_INSTITUTE_AQUA_LEVEL, AQUA_JET, POISON_FANG, ICE_FANG),
     },
 },
 
@@ -12683,30 +12691,8 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     },
 },
 
-[TRAINER_GRUNT_MT_PYRE_1] =
-{
-    GENERIC_AQUA_GRUNT_M_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 43,
-        .species = SPECIES_CORPHISH,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MT_PYRE_2] =
-{
-    GENERIC_AQUA_GRUNT_M_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 43,
-        .species = SPECIES_TENTACOOL,
-        }
-    },
-},
-
+NERISSA_BATTLE(MT_PYRE, 42),
+BERYL_BATTLE(MT_PYRE, 42),
 MALIK_BATTLE(MT_PYRE, 42),
 MARINA_BATTLE(MT_PYRE, 42),
 
@@ -13373,17 +13359,26 @@ TABITHA_BATTLE(MAGMA_HIDEOUT, 47, 9),
 },
 
 //Aqua Hideout
-#define AQUA_HIDEOUT_LEVEL 45
-#define AQUA_HIDEOUT_LEVEL_2 AQUA_HIDEOUT_LEVEL - 1
+#define GENERIC_AQUA_GRUNT_M_INFO \
+    GENERIC_GRUNT_NAME,           \
+    AQUA_GRUNT_M_INFO
+
+#define GENERIC_AQUA_GRUNT_F_INFO \
+    GENERIC_GRUNT_NAME,           \
+    AQUA_GRUNT_F_INFO
 
 [TRAINER_GRUNT_AQUA_HIDEOUT_1] =
 {
     GENERIC_AQUA_GRUNT_M_INFO,
-    .partySize = 1,
+    .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = AQUA_HIDEOUT_LEVEL,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_MAGIKARP,
+        },
+        {
+        .lvl = AQUA_HIDEOUT_LEVEL,
+        .species = SPECIES_LOTAD,
         }
     },
 },
@@ -13391,11 +13386,15 @@ TABITHA_BATTLE(MAGMA_HIDEOUT, 47, 9),
 [TRAINER_GRUNT_AQUA_HIDEOUT_2] =
 {
     GENERIC_AQUA_GRUNT_F_INFO,
-    .partySize = 1,
+    .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = AQUA_HIDEOUT_LEVEL,
-        .species = SPECIES_STARYU,
+        .species = SPECIES_LUVDISC,
+        },
+        {
+        .lvl = AQUA_HIDEOUT_LEVEL,
+        .species = SPECIES_CORSOLA,
         }
     },
 },
@@ -13403,53 +13402,34 @@ TABITHA_BATTLE(MAGMA_HIDEOUT, 47, 9),
 [TRAINER_GRUNT_AQUA_HIDEOUT_3] =
 {
     GENERIC_AQUA_GRUNT_M_INFO,
-    .partySize = 1,
+    .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = AQUA_HIDEOUT_LEVEL,
-        .species = SPECIES_CARVANHA,
+        .species = SPECIES_CHINCHOU,
+        },
+        {
+        .lvl = AQUA_HIDEOUT_LEVEL,
+        .species = SPECIES_WINGULL,
         }
     },
 },
 
-[TRAINER_GRUNT_AQUA_HIDEOUT_4] =
+NERISSA_BATTLE(AQUA_HIDEOUT, AQUA_HIDEOUT_LEVEL),
+BERYL_BATTLE(AQUA_HIDEOUT, AQUA_HIDEOUT_LEVEL),
+
+[TRAINER_CASPIAN_AQUA_HIDEOUT] =
 {
-    GENERIC_AQUA_GRUNT_F_INFO,
-    .partySize = 1,
+    CASPIAN_INFO,
+    .partySize = 2,
     .party = (const struct TrainerMon[]) {
-        {
-        .lvl = AQUA_HIDEOUT_LEVEL,
-        .species = SPECIES_GOLDEEN,
-        }
+        CASPIAN_CLAMPERL(AQUA_HIDEOUT_LEVEL),
+        CASPIAN_CARVANHA(AQUA_HIDEOUT_LEVEL, LIQUIDATION, POISON_FANG, ICE_FANG),
     },
 },
 
-[TRAINER_GRUNT_AQUA_HIDEOUT_5] =
-{
-    GENERIC_AQUA_GRUNT_M_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = AQUA_HIDEOUT_LEVEL,
-        .species = SPECIES_CLAMPERL,
-        }
-    },
-},
-
-[TRAINER_GRUNT_AQUA_HIDEOUT_6] =
-{
-    GENERIC_AQUA_GRUNT_M_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = AQUA_HIDEOUT_LEVEL,
-        .species = SPECIES_WAILMER,
-        }
-    },
-},
-
-MALIK_BATTLE(AQUA_HIDEOUT, AQUA_HIDEOUT_LEVEL_2),
-MARINA_BATTLE(AQUA_HIDEOUT, AQUA_HIDEOUT_LEVEL_2),
+MALIK_BATTLE(AQUA_HIDEOUT, AQUA_HIDEOUT_LEVEL),
+MARINA_BATTLE(AQUA_HIDEOUT, AQUA_HIDEOUT_LEVEL),
 MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
 
 //Route 124
@@ -14886,30 +14866,8 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
 },
 
 //Seafloor Cavern
-[TRAINER_GRUNT_SEAFLOOR_CAVERN_1] =
-{
-    GENERIC_AQUA_GRUNT_M_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = SEAFLOOR_CAVERN_LEVEL,
-        .species = SPECIES_WAILORD,
-        }
-    },
-},
-
-[TRAINER_GRUNT_SEAFLOOR_CAVERN_2] =
-{
-    GENERIC_AQUA_GRUNT_M_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = SEAFLOOR_CAVERN_LEVEL,
-        .species = SPECIES_TENTACRUEL,
-        }
-    },
-},
-
+NERISSA_BATTLE(SEAFLOOR_CAVERN, SEAFLOOR_CAVERN_LEVEL),
+BERYL_BATTLE(SEAFLOOR_CAVERN, SEAFLOOR_CAVERN_LEVEL),
 MALIK_BATTLE(SEAFLOOR_CAVERN, SEAFLOOR_CAVERN_LEVEL),
 MARINA_BATTLE(SEAFLOOR_CAVERN, SEAFLOOR_CAVERN_LEVEL),
 MATT_BATTLE(SEAFLOOR_CAVERN, 54, 12),

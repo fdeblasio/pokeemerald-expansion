@@ -1672,42 +1672,42 @@ NORMAN_REMATCH(5),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 40,
-        .species = SPECIES_MASQUERAIN,
-        .ability = ABILITY_INTIMIDATE,
+        .species = SPECIES_DODRIO,
+        .ability = ABILITY_EARLY_BIRD,
         IVS(25),
-        .moves = {MOVE_AERIAL_ACE, MOVE_SILVER_WIND, MOVE_SCARY_FACE, MOVE_STUN_SPORE},
+        .moves = {MOVE_AERIAL_ACE, MOVE_DOUBLE_HIT, MOVE_RAGE, MOVE_ACUPRESSURE},
         .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 40,
-        .species = SPECIES_TROPIUS,
-        .ability = ABILITY_CHLOROPHYLL,
+        .species = SPECIES_NOIVERN,
+        .ability = ABILITY_INFILTRATOR,
         IVS(25),
-        .moves = {MOVE_AERIAL_ACE, MOVE_LEAF_TORNADO, MOVE_STOMP, MOVE_SWEET_SCENT},
+        .moves = {MOVE_AERIAL_ACE, MOVE_DRAGON_BREATH, MOVE_SCREECH, MOVE_SUPERSONIC},
         .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 41,
-        .species = SPECIES_PELIPPER,
-        .ability = ABILITY_DRIZZLE,
+        .species = SPECIES_BOMBIRDIER,
+        .ability = ABILITY_BIG_PECKS,
         IVS(25),
-        .moves = {MOVE_AERIAL_ACE, MOVE_WATER_PULSE, MOVE_SUPERSONIC, MOVE_TAILWIND},
+        .moves = {MOVE_AERIAL_ACE, MOVE_FEINT_ATTACK, MOVE_ROCK_TOMB, MOVE_HONE_CLAWS},
         .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 41,
-        .species = SPECIES_SWELLOW,
+        .species = SPECIES_FLAMIGO,
         .ability = ABILITY_SCRAPPY,
         IVS(26),
-        .moves = {MOVE_AERIAL_ACE, MOVE_QUICK_ATTACK, MOVE_QUICK_GUARD, MOVE_AGILITY},
+        .moves = {MOVE_AERIAL_ACE, MOVE_BRICK_BREAK, MOVE_FOCUS_ENERGY, MOVE_ROOST},
         .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 43,
-        .species = SPECIES_ALTARIA,
-        .ability = ABILITY_NATURAL_CURE,
+        .species = SPECIES_CORVIKNIGHT,
+        .ability = ABILITY_PRESSURE,
         PERFECT_IVS,
-        .moves = {MOVE_AERIAL_ACE, MOVE_DRAGON_BREATH, MOVE_COTTON_GUARD, MOVE_DRAGON_DANCE},
+        .moves = {MOVE_AERIAL_ACE, MOVE_IRON_HEAD, MOVE_POWER_TRIP, MOVE_HONE_CLAWS},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SITRUS_BERRY,
         .ball = ITEM_POKE_BALL,
@@ -1815,14 +1815,13 @@ NORMAN_REMATCH(5),
     .moves = {MOVE_AIR_SLASH, MOVE_PARABOLIC_CHARGE, MOVE_SHADOW_BALL, MOVE_DOUBLE_TEAM}, \
     }
 
-//Can replace Tailwind with Flamethrower
 #define WINONA_NOIVERN(rematch, tier)                                        \
     {                                                                        \
     REMATCH_MON(NOIVERN, tier, rematch),                                     \
     .ability = ABILITY_INFILTRATOR,                                          \
     .nature = NATURE_TIMID,                                                  \
     EV_SPREAD_SPA_SPE_HP,                                                    \
-    .moves = {MOVE_AIR_SLASH, MOVE_DRAGON_PULSE, MOVE_TAILWIND, MOVE_ROOST}, \
+    .moves = {MOVE_AIR_SLASH, MOVE_DRAGON_PULSE, MOVE_FLAMETHROWER, MOVE_ROOST}, \
     .gender = TRAINER_MON_FEMALE,                                            \
     }
 
@@ -1845,18 +1844,16 @@ NORMAN_REMATCH(5),
     .gender = TRAINER_MON_FEMALE,                                       \
     }
 
-//Can replace Rocky Payload/Hone Claws with Big Pecks/Roost
 #define WINONA_BOMBIRDIER(rematch, tier)                                            \
     {                                                                               \
     REMATCH_MON(BOMBIRDIER, tier, rematch, ITEM_SHARP_BEAK),                        \
-    .ability = ABILITY_ROCKY_PAYLOAD,                                               \
+    .ability = ABILITY_BIG_PECKS,                                               \
     .nature = NATURE_ADAMANT,                                                       \
     EV_SPREAD_ATK_SPE_HP,                                                           \
-    .moves = {MOVE_DRILL_PECK, MOVE_THROAT_CHOP, MOVE_ROCK_SLIDE, MOVE_HONE_CLAWS}, \
+    .moves = {MOVE_DRILL_PECK, MOVE_THROAT_CHOP, MOVE_ROCK_SLIDE, MOVE_ROOST}, \
     .gender = TRAINER_MON_FEMALE,                                                   \
     }
 
-//Can replace Liquidation with Throat Chop
 #define WINONA_FLAMIGO(rematch, tier)                                              \
     {                                                                              \
     REMATCH_MON(FLAMIGO, tier, rematch, ITEM_FLYING_GEM),                          \
@@ -1873,12 +1870,12 @@ NORMAN_REMATCH(5),
     WINONA_INFO,                                \
     LEADER_REMATCH,                             \
     .party = (const struct TrainerMon[]) {      \
-        WINONA_NINJASK(Rematch, TIER3),         \
-        WINONA_MASQUERAIN(Rematch, TIER3),      \
-        WINONA_TROPIUS(Rematch, TIER3),         \
-        WINONA_PELIPPER(Rematch, TIER2),        \
-        WINONA_SWELLOW(Rematch, TIER2),         \
-        WINONA_ALTARIA(Rematch, ACE),           \
+        WINONA_XATU(Rematch, TIER3),         \
+        WINONA_DODRIO(Rematch, TIER3),      \
+        WINONA_NOIVERN(Rematch, TIER3),         \
+        WINONA_BOMBIRDIER(Rematch, TIER2),        \
+        WINONA_FLAMIGO(Rematch, TIER2),         \
+        WINONA_CORVIKNIGHT(Rematch, ACE),           \
     },                                          \
 }
 
@@ -13093,7 +13090,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 40,
-        .species = SPECIES_SKARMORY,
+        .species = SPECIES_ARCHEOPS,
         IVS(30),
         }
     },
@@ -13113,7 +13110,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
         },
         {
         .lvl = 38,
-        .species = SPECIES_SKARMORY,
+        .species = SPECIES_SWANNA,
         IVS(12),
         },
         {
@@ -13143,7 +13140,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
         },
         {
         .lvl = 38,
-        .species = SPECIES_BEAUTIFLY,
+        .species = SPECIES_BUTTERFREE,
         IVS(12),
         }
     },
@@ -13178,7 +13175,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 39,
-        .species = SPECIES_DODRIO,
+        .species = SPECIES_KILOWATTREL,
         IVS(18),
         },
         {

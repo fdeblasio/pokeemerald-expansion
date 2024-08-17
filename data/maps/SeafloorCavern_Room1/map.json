@@ -15,7 +15,7 @@
   "connections": null,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
       "x": 8,
       "y": 6,
       "elevation": 3,
@@ -24,7 +24,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "SeafloorCavern_Room1_EventScript_Grunt1",
+      "script": "SeafloorCavern_Room1_EventScript_Nerissa",
       "flag": "FLAG_HIDE_SEAFLOOR_CAVERN_AQUA_GRUNTS"
     },
     {
@@ -37,7 +37,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "SeafloorCavern_Room1_EventScript_Grunt2",
+      "script": "SeafloorCavern_Room1_EventScript_Beryl",
       "flag": "FLAG_HIDE_SEAFLOOR_CAVERN_AQUA_GRUNTS"
     }
   ],

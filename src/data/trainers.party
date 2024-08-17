@@ -137,7 +137,7 @@ Zubat
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_AQUA_HIDEOUT_4 ===
+=== TRAINER_NERISSA_AQUA_HIDEOUT ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -150,7 +150,7 @@ Carvanha
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_SEAFLOOR_CAVERN_1 ===
+=== TRAINER_NERISSA_SEAFLOOR_CAVERN ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -163,7 +163,7 @@ Poochyena
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_SEAFLOOR_CAVERN_2 ===
+=== TRAINER_BERYL_SEAFLOOR_CAVERN ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -326,7 +326,7 @@ Poochyena
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_WEATHER_INSTITUTE_1 ===
+=== TRAINER_NERISSA_WEATHER_INSTITUTE ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -343,7 +343,7 @@ Poochyena
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_WEATHER_INSTITUTE_2 ===
+=== TRAINER_BERYL_WEATHER_INSTITUTE ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -424,7 +424,7 @@ Numel
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MT_PYRE_1 ===
+=== TRAINER_NERISSA_MT_PYRE ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -437,7 +437,7 @@ Zubat
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MT_PYRE_2 ===
+=== TRAINER_BERYL_MT_PYRE ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -480,7 +480,7 @@ Carvanha
 Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_AQUA_HIDEOUT_5 ===
+=== TRAINER_BERYL_AQUA_HIDEOUT ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt F
@@ -493,7 +493,7 @@ Carvanha
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_AQUA_HIDEOUT_6 ===
+=== TRAINER_CASPIAN_AQUA_HIDEOUT ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt F

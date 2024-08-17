@@ -2865,6 +2865,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 2,                                                                   \
     .party = (const struct TrainerMon[]) {                                            \
         {                                                                             \
+        .lvl = Level,                                                                 \
         .species = Level < AQUA_HIDEOUT_LEVEL ? SPECIES_POLIWAG : (Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_POLIWHIRL : SPECIES_POLIWRATH), \
         .ability = ABILITY_SWIFT_SWIM,                                                \
         .gender = TRAINER_MON_FEMALE,                                                 \

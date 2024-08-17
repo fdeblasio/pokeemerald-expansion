@@ -2900,48 +2900,48 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },                                                                                     \
 }
 
-#define BERYL_BATTLE(Location, Level)                                                 \
-[TRAINER_BERYL_##Location] =                                                          \
+#define BERYL_BATTLE(Location, Level)                                                   \
+[TRAINER_BERYL_##Location] =                                                            \
+{                                                                                       \
+    .trainerName = _("Beryl"),                                                          \
+    AQUA_GRUNT_M_INFO,                                                                  \
+    .partySize = 2,                                                                     \
+    .party = (const struct TrainerMon[]) {                                              \
+        {                                                                               \
+        .lvl = Level,                                                                   \
+        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_WINGULL : SPECIES_PELIPPER,  \
+        .ability = 1,                                                                   \
+        .gender = TRAINER_MON_MALE,                                                     \
+        },                                                                              \
+        {                                                                               \
+        .lvl = Level,                                                                   \
+        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_BARBOACH : SPECIES_WHISCASH, \
+        .ability = ABILITY_OBLIVIOUS,                                                   \
+        .gender = TRAINER_MON_MALE,                                                     \
+        }                                                                               \
+    },                                                                                  \
+}
+
+#define NERISSA_BATTLE(Location, Level)                                               \
+[TRAINER_NERISSA_##Location] =                                                        \
 {                                                                                     \
-    .trainerName = _("Beryl"),                                                        \
-    AQUA_GRUNT_M_INFO,                                                                \
+    .trainerName = _("Nerissa"),                                                      \
+    AQUA_GRUNT_F_INFO,                                                                \
     .partySize = 2,                                                                   \
     .party = (const struct TrainerMon[]) {                                            \
         {                                                                             \
         .lvl = Level,                                                                 \
-        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_PSYDUCK : SPECIES_GOLDUCK, \
-        .ability = ABILITY_DAMP,                                                      \
-        .gender = TRAINER_MON_MALE,                                                   \
+        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_WAILMER : SPECIES_WAILORD, \
+        .ability = ABILITY_WATER_VEIL,                                                \
+        .gender = TRAINER_MON_FEMALE,                                                 \
         },                                                                            \
         {                                                                             \
         .lvl = Level,                                                                 \
-        .species = Level < AQUA_HIDEOUT_LEVEL ? SPECIES_HORSEA : (Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_SEADRA : SPECIES_KINGDRA), \
+        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_BUIZEL : SPECIES_FLOATZEL, \
         .ability = ABILITY_SWIFT_SWIM,                                                \
-        .gender = TRAINER_MON_MALE,                                                   \
+        .gender = TRAINER_MON_FEMALE,                                                 \
         }                                                                             \
     },                                                                                \
-}
-
-#define NERISSA_BATTLE(Location, Level)                                                \
-[TRAINER_NERISSA_##Location] =                                                         \
-{                                                                                      \
-    .trainerName = _("Nerissa"),                                                       \
-    AQUA_GRUNT_F_INFO,                                                                 \
-    .partySize = 2,                                                                    \
-    .party = (const struct TrainerMon[]) {                                             \
-        {                                                                              \
-        .lvl = Level,                                                                  \
-        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_WAILMER : SPECIES_WAILORD,  \
-        .ability = ABILITY_WATER_VEIL,                                                 \
-        .gender = TRAINER_MON_FEMALE,                                                  \
-        },                                                                             \
-        {                                                                              \
-        .lvl = Level,                                                                  \
-        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_MARILL : SPECIES_AZUMARILL, \
-        .ability = ABILITY_HUGE_POWER,                                                 \
-        .gender = TRAINER_MON_FEMALE,                                                  \
-        }                                                                              \
-    },                                                                                 \
 }
 
 
@@ -13334,9 +13334,9 @@ TABITHA_BATTLE(MAGMA_HIDEOUT, 47, 9),
     },                                                         \
 }
 
-AQUA_HIDEOUT_GRUNT(1, M, LOTAD, MAGIKARP),
-AQUA_HIDEOUT_GRUNT(2, F, CORSOLA, LUVDISC),
-AQUA_HIDEOUT_GRUNT(3, M, WINGULL, CHINCHOU),
+AQUA_HIDEOUT_GRUNT(1, M, WINGULL, MAGIKARP),
+AQUA_HIDEOUT_GRUNT(2, F, CLAMPERL, DUCKLETT),
+AQUA_HIDEOUT_GRUNT(3, M, WINGULL, BUIZEL),
 
 NERISSA_BATTLE(AQUA_HIDEOUT, AQUA_HIDEOUT_LEVEL),
 BERYL_BATTLE(AQUA_HIDEOUT, AQUA_HIDEOUT_LEVEL),

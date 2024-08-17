@@ -91,18 +91,18 @@ AquaHideout_B1F_EventScript_Grunt3Defeated::
 	release
 	end
 
-AquaHideout_B1F_EventScript_Grunt4::
-	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_4, AquaHideout_B1F_Text_Grunt4Intro, AquaHideout_B1F_Text_Grunt4Defeat
-	msgbox AquaHideout_B1F_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE
+AquaHideout_B1F_EventScript_Nerissa::
+	trainerbattle_single TRAINER_NERISSA_AQUA_HIDEOUT, AquaHideout_B1F_Text_NerissaIntro, AquaHideout_B1F_Text_NerissaDefeat
+	msgbox AquaHideout_B1F_Text_NerissaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-AquaHideout_B1F_EventScript_Grunt6::
-	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_6, AquaHideout_B1F_Text_Grunt6Intro, AquaHideout_B1F_Text_Grunt6Defeat, AquaHideout_B1F_EventScript_Grunt6Defeated
-	msgbox AquaHideout_B1F_Text_Grunt6PostBattle, MSGBOX_AUTOCLOSE
+AquaHideout_B1F_EventScript_Caspian::
+	trainerbattle_single TRAINER_CASPIAN_AQUA_HIDEOUT, AquaHideout_B1F_Text_CaspianIntro, AquaHideout_B1F_Text_CaspianDefeat, AquaHideout_B1F_EventScript_CaspianDefeated
+	msgbox AquaHideout_B1F_Text_CaspianPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-AquaHideout_B1F_EventScript_Grunt6Defeated::
-	msgbox AquaHideout_B1F_Text_Grunt6PostBattle, MSGBOX_DEFAULT
+AquaHideout_B1F_EventScript_CaspianDefeated::
+	msgbox AquaHideout_B1F_Text_CaspianPostBattle, MSGBOX_DEFAULT
 	release
 	end
 
@@ -132,29 +132,29 @@ AquaHideout_B1F_Text_Grunt3PostBattle:
 	.string "But, by now…\n"
 	.string "Kekekeke…$"
 
-AquaHideout_B1F_Text_Grunt4Intro:
+AquaHideout_B1F_Text_NerissaIntro:
 	.string "Hey!\n"
 	.string "You there!\p"
 	.string "Which do you think is cooler?\n"
 	.string "Team Aqua's uniform or Team Magma's?$"
 
-AquaHideout_B1F_Text_Grunt4Defeat:
+AquaHideout_B1F_Text_NerissaDefeat:
 	.string "I lost in a cool way…$"
 
-AquaHideout_B1F_Text_Grunt4PostBattle:
+AquaHideout_B1F_Text_NerissaPostBattle:
 	.string "If you have a cool uniform, you look\n"
 	.string "good even in a loss, don't you think?$"
 
-AquaHideout_B1F_Text_Grunt6Intro:
+AquaHideout_B1F_Text_CaspianIntro:
 	.string "Fuel supply loaded A-OK!\n"
 	.string "In-cruise snacks loaded A-OK!\p"
 	.string "Nothing left to do but KO a pesky\n"
 	.string "meddler!$"
 
-AquaHideout_B1F_Text_Grunt6Defeat:
+AquaHideout_B1F_Text_CaspianDefeat:
 	.string "I took a serious licking!$"
 
-AquaHideout_B1F_Text_Grunt6PostBattle:
+AquaHideout_B1F_Text_CaspianPostBattle:
 	.string "Humph!\n"
 	.string "This was supposed to happen!\p"
 	.string "My mission was to just hold you up!$"

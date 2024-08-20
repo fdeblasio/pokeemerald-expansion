@@ -411,7 +411,7 @@ Carvanha
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_SPACE_CENTER_1 ===
+=== TRAINER_WALKER_SPACE_CENTER ===
 Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
@@ -2153,7 +2153,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Take Down
 - Water Pulse
 
-=== TRAINER_GRUNT_SPACE_CENTER_2 ===
+=== TRAINER_JORDAN_SPACE_CENTER ===
 Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
@@ -10760,7 +10760,7 @@ Wobbuffet
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_SPACE_CENTER_3 ===
+=== TRAINER_GAETANO_SPACE_CENTER ===
 Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt F
@@ -13392,7 +13392,7 @@ Zubat
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MAGMA_HIDEOUT_10 ===
+=== TRAINER_GAETANO_MAGMA_HIDEOUT ===
 Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
@@ -13405,7 +13405,7 @@ Mightyena
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MAGMA_HIDEOUT_11 ===
+=== TRAINER_WALKER_MAGMA_HIDEOUT ===
 Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
@@ -13470,7 +13470,7 @@ Numel
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MAGMA_HIDEOUT_16 ===
+=== TRAINER_JORDAN_MAGMA_HIDEOUT ===
 Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt F

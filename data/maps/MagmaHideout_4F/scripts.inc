@@ -1,6 +1,6 @@
 .set LOCALID_GROUDON, 1
 .set LOCALID_GRUNT_1, 2
-.set LOCALID_GIANA, 3
+.set LOCALID_GINNY, 3
 .set LOCALID_LANDON, 4
 .set LOCALID_TABITHA, 5
 .set LOCALID_MAXIE, 6
@@ -73,7 +73,7 @@ MagmaHideout_4F_EventScript_Maxie::
 	fadescreen FADE_TO_BLACK
 	removeobject LOCALID_MAXIE
 	removeobject LOCALID_GRUNT_1
-	removeobject LOCALID_GIANA
+	removeobject LOCALID_GINNY
 	removeobject LOCALID_LANDON
 	removeobject LOCALID_TABITHA
 	setflag FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS
@@ -119,7 +119,7 @@ MagmaHideout_4F_EventScript_Terrance::
 	end
 
 MagmaHideout_4F_EventScript_Giana::
-	trainerbattle_single TRAINER_GIANA_MAGMA_HIDEOUT, MagmaHideout_4F_Text_GianaIntro, MagmaHideout_4F_Text_GianaDefeat
+	trainerbattle_single TRAINER_GINNY_MAGMA_HIDEOUT, MagmaHideout_4F_Text_GianaIntro, MagmaHideout_4F_Text_GianaDefeat
 	msgbox MagmaHideout_4F_Text_GianaPostBattle, MSGBOX_AUTOCLOSE
 	end
 

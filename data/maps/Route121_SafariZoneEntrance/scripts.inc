@@ -102,6 +102,10 @@ Route121_SafariZoneEntrance_EventScript_MovePlayerBackFromCounter::
 	releaseall
 	end
 
+Route121_SafariZoneEntrance_EventScript_ConstructionWorker::
+	msgbox Route121_SafariZoneEntrance_Text_AreaOffLimits, MSGBOX_NPC
+	end
+
 Route121_SafariZoneEntrance_Movement_BackAwayFromCounter:
 	walk_right
 	step_end

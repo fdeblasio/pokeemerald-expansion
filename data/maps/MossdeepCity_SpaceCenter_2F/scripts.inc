@@ -3,7 +3,7 @@
 .set LOCALID_SCIENTIST, 3
 .set LOCALID_STEVEN, 4
 @ Grunt names numbered like their Trainer values (which are for the full Space Center)
-.set LOCALID_GIANA, 5
+.set LOCALID_GINNY, 5
 .set LOCALID_TERRANCE, 6
 .set LOCALID_LANDON, 7
 .set LOCALID_TABITHA, 8
@@ -30,7 +30,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_MoveCivilians::
 	return
 
 MossdeepCity_SpaceCenter_2F_EventScript_MoveDefeatedGrunts::
-	setobjectxyperm LOCALID_GIANA, 11, 2
+	setobjectxyperm LOCALID_GINNY, 11, 2
 	setobjectxyperm LOCALID_LANDON, 15, 2
 	setobjectxyperm LOCALID_TERRANCE, 13, 4
 	return
@@ -68,8 +68,8 @@ MossdeepCity_SpaceCenter_2F_EventScript_BattleThreeMagmaGrunts::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	msgbox MossdeepCity_SpaceCenter_2F_Text_GianaIntro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_GIANA_SPACE_CENTER, MossdeepCity_SpaceCenter_2F_Text_GianaDefeat
-	applymovement LOCALID_GIANA, MossdeepCity_SpaceCenter_2F_Movement_GianaDefeated
+	trainerbattle_no_intro TRAINER_GINNY_SPACE_CENTER, MossdeepCity_SpaceCenter_2F_Text_GianaDefeat
+	applymovement LOCALID_GINNY, MossdeepCity_SpaceCenter_2F_Movement_GianaDefeated
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
@@ -78,7 +78,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_BattleThreeMagmaGrunts::
 	applymovement LOCALID_LANDON, MossdeepCity_SpaceCenter_2F_Movement_LandonDefeated
 	waitmovement 0
 	setvar VAR_MOSSDEEP_SPACE_CENTER_STATE, 2
-	copyobjectxytoperm LOCALID_GIANA
+	copyobjectxytoperm LOCALID_GINNY
 	copyobjectxytoperm LOCALID_LANDON
 	copyobjectxytoperm LOCALID_TERRANCE
 	releaseall
@@ -285,7 +285,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_DefeatedMaxieTabitha::
 	setflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_TEAM_MAGMA
 	setflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_TEAM_MAGMA
 	setflag FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA
-	removeobject LOCALID_GIANA
+	removeobject LOCALID_GINNY
 	removeobject LOCALID_LANDON
 	removeobject LOCALID_TERRANCE
 	removeobject LOCALID_TABITHA

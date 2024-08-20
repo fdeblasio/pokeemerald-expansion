@@ -2710,20 +2710,13 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA, \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define GENERIC_MAGMA_GRUNT_M_INFO \
-    GENERIC_GRUNT_NAME,            \
-    MAGMA_GRUNT_M_INFO
-
 #define MAGMA_GRUNT_F_INFO                                                     \
     .trainerClass = TRAINER_CLASS_TEAM_MAGMA,                                  \
     .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,                                   \
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MAGMA, \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define GENERIC_MAGMA_GRUNT_F_INFO \
-    GENERIC_GRUNT_NAME,            \
-    MAGMA_GRUNT_F_INFO
-
+#define MAGMA_HIDEOUT_LEVEL 45
 #define SPACE_CENTER_GRUNT_LEVEL 47
 
 #define LANDON_BATTLE(Location, Level)                                                   \
@@ -2742,10 +2735,10 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },                                                                                   \
 }
 
-#define GIANA_BATTLE(Location, Level)                                                        \
-[TRAINER_GIANA_##Location] =                                                                 \
+#define GINNY_BATTLE(Location, Level)                                                        \
+[TRAINER_GINNY_##Location] =                                                                 \
 {                                                                                            \
-    .trainerName = _("Giana"),                                                               \
+    .trainerName = _("Ginny"),                                                               \
     MAGMA_GRUNT_F_INFO,                                                                      \
     .partySize = 1,                                                                          \
     .party = (const struct TrainerMon[]) {                                                   \
@@ -2773,6 +2766,54 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         .gender = TRAINER_MON_NONE,                                                     \
         }                                                                               \
     },                                                                                  \
+}
+
+#define JORDAN_BATTLE(Location, Level)                                                  \
+[TRAINER_JORDAN_##Location] =                                                           \
+{                                                                                       \
+    .trainerName = _("Jordan"),                                                         \
+    MAGMA_GRUNT_F_INFO,                                                                 \
+    .partySize = 1,                                                                     \
+    .party = (const struct TrainerMon[]) {                                              \
+        {                                                                               \
+        .lvl = Level,                                                                   \
+        .species = Level < SPACE_CENTER_GRUNT_LEVEL ? SPECIES_RHYHORN : SPECIES_RHYDON, \
+        .ability = ABILITY_ROCK_HEAD,                                                   \
+        .gender = TRAINER_MON_FEMALE,                                                   \
+        }                                                                               \
+    },                                                                                  \
+}
+
+#define GAETANO_BATTLE(Location, Level)                                                 \
+[TRAINER_GAETANO_##Location] =                                                          \
+{                                                                                       \
+    .trainerName = _("Gaetano"),                                                        \
+    MAGMA_GRUNT_M_INFO,                                                                 \
+    .partySize = 1,                                                                     \
+    .party = (const struct TrainerMon[]) {                                              \
+        {                                                                               \
+        .lvl = Level,                                                                   \
+        .species = Level < SPACE_CENTER_GRUNT_LEVEL ? SPECIES_PHANPY : SPECIES_DONPHAN, \
+        .ability = 0,                                                                   \
+        .gender = TRAINER_MON_MALE,                                                     \
+        }                                                                               \
+    },                                                                                  \
+}
+
+#define WALKER_BATTLE(Location, Level)     \
+[TRAINER_WALKER_##Location] =              \
+{                                          \
+    .trainerName = _("Walker"),            \
+    MAGMA_GRUNT_M_INFO,                    \
+    .partySize = 1,                        \
+    .party = (const struct TrainerMon[]) { \
+        {                                  \
+        .lvl = Level,                      \
+        .species = SPECIES_TORKOAL,        \
+        .ability = ABILITY_DROUGHT,        \
+        .gender = TRAINER_MON_MALE,        \
+        }                                  \
+    },                                     \
 }
 
 
@@ -8386,7 +8427,7 @@ COURTNEY_BATTLE(METEOR_FALLS, 28, 3),
 },
 
 //Mt. Chimney (Magma)
-GIANA_BATTLE(MT_CHIMNEY, 27),
+GINNY_BATTLE(MT_CHIMNEY, 27),
 LANDON_BATTLE(MT_CHIMNEY, 27),
 TABITHA_BATTLE(MT_CHIMNEY, 29, 6),
 
@@ -13171,175 +13212,36 @@ MARINA_BATTLE(MT_PYRE, 42),
 },
 
 //Magma Hideout
-#define MAGMA_HIDEOUT_LEVEL 45
-#define MAGMA_HIDEOUT_LEVEL_2 MAGMA_HIDEOUT_LEVEL - 1
+#define MAGMA_HIDEOUT_GRUNT(Number, Gender, Species) \
+[TRAINER_GRUNT_MAGMA_HIDEOUT_##Number] =             \
+{                                                    \
+    GENERIC_GRUNT_NAME,                              \
+    MAGMA_GRUNT_##Gender##_INFO,                     \
+    .partySize = 1,                                  \
+    .party = (const struct TrainerMon[]) {           \
+        {                                            \
+        .lvl = MAGMA_HIDEOUT_LEVEL,                  \
+        .species = SPECIES_##Species,                \
+        }                                            \
+    },                                               \
+}
 
-[TRAINER_GRUNT_MAGMA_HIDEOUT_1] =
-{
-    GENERIC_MAGMA_GRUNT_M_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MAGMA_HIDEOUT_LEVEL,
-        .species = SPECIES_TORKOAL,
-        }
-    },
-},
+MAGMA_HIDEOUT_GRUNT(1, M, NUMEL),
+MAGMA_HIDEOUT_GRUNT(2, M, GEODUDE),
+MAGMA_HIDEOUT_GRUNT(3, F, VULPIX),
+MAGMA_HIDEOUT_GRUNT(4, M, BALTOY),
+MAGMA_HIDEOUT_GRUNT(5, M, RHYHORN),
+MAGMA_HIDEOUT_GRUNT(6, F, VULPIX),
+MAGMA_HIDEOUT_GRUNT(7, M, SANDSHREW),
+MAGMA_HIDEOUT_GRUNT(8, M, NUMEL),
+MAGMA_HIDEOUT_GRUNT(9, M, HOUNDOUR),
+MAGMA_HIDEOUT_GRUNT(10, M, PHANPY),
 
-[TRAINER_GRUNT_MAGMA_HIDEOUT_2] =
-{
-    GENERIC_MAGMA_GRUNT_M_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MAGMA_HIDEOUT_LEVEL,
-        .species = SPECIES_PHANPY,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_3] =
-{
-    GENERIC_MAGMA_GRUNT_M_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MAGMA_HIDEOUT_LEVEL,
-        .species = SPECIES_NUMEL,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_4] =
-{
-    GENERIC_MAGMA_GRUNT_M_INFO,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MAGMA_HIDEOUT_LEVEL_2,
-        .species = SPECIES_BALTOY,
-        },
-        {
-        .lvl = MAGMA_HIDEOUT_LEVEL_2,
-        .species = SPECIES_SLUGMA,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_5] =
-{
-    GENERIC_MAGMA_GRUNT_M_INFO,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MAGMA_HIDEOUT_LEVEL_2,
-        .species = SPECIES_RHYHORN,
-        },
-        {
-        .lvl = MAGMA_HIDEOUT_LEVEL_2,
-        .species = SPECIES_HOUNDOUR,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_6] =
-{
-    GENERIC_MAGMA_GRUNT_M_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MAGMA_HIDEOUT_LEVEL,
-        .species = SPECIES_SANDSHREW,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_7] =
-{
-    GENERIC_MAGMA_GRUNT_M_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MAGMA_HIDEOUT_LEVEL,
-        .species = SPECIES_NUMEL,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_8] =
-{
-    GENERIC_MAGMA_GRUNT_M_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MAGMA_HIDEOUT_LEVEL,
-        .species = SPECIES_HOUNDOUR,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_9] =
-{
-    GENERIC_MAGMA_GRUNT_M_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MAGMA_HIDEOUT_LEVEL,
-        .species = SPECIES_PHANPY,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_10] =
-{
-    GENERIC_MAGMA_GRUNT_M_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MAGMA_HIDEOUT_LEVEL,
-        .species = SPECIES_SANDSHREW,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_14] =
-{
-    GENERIC_MAGMA_GRUNT_F_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MAGMA_HIDEOUT_LEVEL,
-        .species = SPECIES_VULPIX,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_15] =
-{
-    GENERIC_MAGMA_GRUNT_F_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MAGMA_HIDEOUT_LEVEL,
-        .species = SPECIES_VULPIX,
-        }
-    },
-},
-
-[TRAINER_GRUNT_MAGMA_HIDEOUT_16] =
-{
-    GENERIC_MAGMA_GRUNT_F_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MAGMA_HIDEOUT_LEVEL,
-        .species = SPECIES_TORKOAL,
-        }
-    },
-},
-
+WALKER_BATTLE(MAGMA_HIDEOUT, MAGMA_HIDEOUT_LEVEL),
+GAETANO_BATTLE(MAGMA_HIDEOUT, MAGMA_HIDEOUT_LEVEL),
+JORDAN_BATTLE(MAGMA_HIDEOUT, MAGMA_HIDEOUT_LEVEL),
 TERRANCE_BATTLE(MAGMA_HIDEOUT, MAGMA_HIDEOUT_LEVEL),
-GIANA_BATTLE(MAGMA_HIDEOUT, MAGMA_HIDEOUT_LEVEL),
+GINNY_BATTLE(MAGMA_HIDEOUT, MAGMA_HIDEOUT_LEVEL),
 LANDON_BATTLE(MAGMA_HIDEOUT, MAGMA_HIDEOUT_LEVEL),
 TABITHA_BATTLE(MAGMA_HIDEOUT, 47, 9),
 
@@ -13359,61 +13261,27 @@ TABITHA_BATTLE(MAGMA_HIDEOUT, 47, 9),
 },
 
 //Aqua Hideout
-#define GENERIC_AQUA_GRUNT_M_INFO \
-    GENERIC_GRUNT_NAME,           \
-    AQUA_GRUNT_M_INFO
+#define AQUA_HIDEOUT_GRUNT(Number, Gender, Species1, Species2) \
+[TRAINER_GRUNT_AQUA_HIDEOUT_##Number] =                        \
+{                                                              \
+    GENERIC_GRUNT_NAME,                                        \
+    AQUA_GRUNT_##Gender##_INFO,                                \
+    .partySize = 2,                                            \
+    .party = (const struct TrainerMon[]) {                     \
+        {                                                      \
+        .lvl = AQUA_HIDEOUT_LEVEL,                             \
+        .species = SPECIES_##Species2,                         \
+        },                                                     \
+        {                                                      \
+        .lvl = AQUA_HIDEOUT_LEVEL,                             \
+        .species = SPECIES_##Species1,                         \
+        }                                                      \
+    },                                                         \
+}
 
-#define GENERIC_AQUA_GRUNT_F_INFO \
-    GENERIC_GRUNT_NAME,           \
-    AQUA_GRUNT_F_INFO
-
-[TRAINER_GRUNT_AQUA_HIDEOUT_1] =
-{
-    GENERIC_AQUA_GRUNT_M_INFO,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = AQUA_HIDEOUT_LEVEL,
-        .species = SPECIES_MAGIKARP,
-        },
-        {
-        .lvl = AQUA_HIDEOUT_LEVEL,
-        .species = SPECIES_LOTAD,
-        }
-    },
-},
-
-[TRAINER_GRUNT_AQUA_HIDEOUT_2] =
-{
-    GENERIC_AQUA_GRUNT_F_INFO,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = AQUA_HIDEOUT_LEVEL,
-        .species = SPECIES_LUVDISC,
-        },
-        {
-        .lvl = AQUA_HIDEOUT_LEVEL,
-        .species = SPECIES_CORSOLA,
-        }
-    },
-},
-
-[TRAINER_GRUNT_AQUA_HIDEOUT_3] =
-{
-    GENERIC_AQUA_GRUNT_M_INFO,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = AQUA_HIDEOUT_LEVEL,
-        .species = SPECIES_CHINCHOU,
-        },
-        {
-        .lvl = AQUA_HIDEOUT_LEVEL,
-        .species = SPECIES_WINGULL,
-        }
-    },
-},
+AQUA_HIDEOUT_GRUNT(1, M, LOTAD, MAGIKARP),
+AQUA_HIDEOUT_GRUNT(2, F, CORSOLA, LUVDISC),
+AQUA_HIDEOUT_GRUNT(3, M, WINGULL, CHINCHOU),
 
 NERISSA_BATTLE(AQUA_HIDEOUT, AQUA_HIDEOUT_LEVEL),
 BERYL_BATTLE(AQUA_HIDEOUT, AQUA_HIDEOUT_LEVEL),
@@ -14203,48 +14071,11 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
 },
 
 //Space Center
-[TRAINER_GRUNT_SPACE_CENTER_1] =
-{
-    GENERIC_MAGMA_GRUNT_M_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = SPACE_CENTER_GRUNT_LEVEL,
-        .species = SPECIES_NUMEL,
-        }
-    },
-},
-
-[TRAINER_GRUNT_SPACE_CENTER_2] =
-{
-    GENERIC_MAGMA_GRUNT_F_INFO,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = (SPACE_CENTER_GRUNT_LEVEL - 1),
-        .species = SPECIES_HOUNDOUR,
-        },
-        {
-        .lvl = (SPACE_CENTER_GRUNT_LEVEL - 1),
-        .species = SPECIES_VULPIX,
-        }
-    },
-},
-
-[TRAINER_GRUNT_SPACE_CENTER_3] =
-{
-    GENERIC_MAGMA_GRUNT_M_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = SPACE_CENTER_GRUNT_LEVEL,
-        .species = SPECIES_TORKOAL,
-        }
-    },
-},
-
+JORDAN_BATTLE(SPACE_CENTER, SPACE_CENTER_GRUNT_LEVEL),
+WALKER_BATTLE(SPACE_CENTER, SPACE_CENTER_GRUNT_LEVEL),
+GAETANO_BATTLE(SPACE_CENTER, SPACE_CENTER_GRUNT_LEVEL),
 TERRANCE_BATTLE(SPACE_CENTER, SPACE_CENTER_GRUNT_LEVEL),
-GIANA_BATTLE(SPACE_CENTER, SPACE_CENTER_GRUNT_LEVEL),
+GINNY_BATTLE(SPACE_CENTER, SPACE_CENTER_GRUNT_LEVEL),
 LANDON_BATTLE(SPACE_CENTER, SPACE_CENTER_GRUNT_LEVEL),
 COURTNEY_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
 TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),

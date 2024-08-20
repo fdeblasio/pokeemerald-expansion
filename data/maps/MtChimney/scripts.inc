@@ -2,7 +2,7 @@
 .set LOCALID_MAXIE, 2
 .set LOCALID_TABITHA, 3
 .set LOCALID_LANDON, 22
-.set LOCALID_GIANA, 29
+.set LOCALID_GINNY, 29
 
 
 MtChimney_MapScripts::
@@ -56,7 +56,7 @@ MtChimney_EventScript_Maxie::
 	delay 30
 	fadescreen FADE_TO_BLACK
 	removeobject LOCALID_MAXIE
-	removeobject LOCALID_GIANA
+	removeobject LOCALID_GINNY
 	removeobject LOCALID_TABITHA
 	removeobject LOCALID_LANDON
 	setflag FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA
@@ -509,7 +509,7 @@ MtChimney_EventScript_Shirley::
 	end
 
 MtChimney_EventScript_Giana::
-	trainerbattle_single TRAINER_GIANA_MT_CHIMNEY, MtChimney_Text_GianaIntro, MtChimney_Text_GianaDefeat
+	trainerbattle_single TRAINER_GINNY_MT_CHIMNEY, MtChimney_Text_GianaIntro, MtChimney_Text_GianaDefeat
 	msgbox MtChimney_Text_GianaPostBattle, MSGBOX_AUTOCLOSE
 	end
 

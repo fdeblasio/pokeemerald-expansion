@@ -1,14 +1,14 @@
 MagmaHideout_2F_1R_MapScripts::
 	.byte 0
 
-MagmaHideout_2F_1R_EventScript_Grunt14::
-	trainerbattle_single TRAINER_GRUNT_MAGMA_HIDEOUT_14, MagmaHideout_2F_1R_Text_Grunt14Intro, MagmaHideout_2F_1R_Text_Grunt14Defeat
-	msgbox MagmaHideout_2F_1R_Text_Grunt14PostBattle, MSGBOX_AUTOCLOSE
-	end
-
 MagmaHideout_2F_1R_EventScript_Grunt3::
 	trainerbattle_single TRAINER_GRUNT_MAGMA_HIDEOUT_3, MagmaHideout_2F_1R_Text_Grunt3Intro, MagmaHideout_2F_1R_Text_Grunt3Defeat
 	msgbox MagmaHideout_2F_1R_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+MagmaHideout_2F_1R_EventScript_Grunt2::
+	trainerbattle_single TRAINER_GRUNT_MAGMA_HIDEOUT_2, MagmaHideout_2F_1R_Text_Grunt2Intro, MagmaHideout_2F_1R_Text_Grunt2Defeat
+	msgbox MagmaHideout_2F_1R_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
 	end
 
 MagmaHideout_2F_1R_EventScript_Grunt4::
@@ -21,7 +21,7 @@ MagmaHideout_2F_1R_EventScript_Grunt5::
 	msgbox MagmaHideout_2F_1R_Text_Grunt5PostBattle, MSGBOX_AUTOCLOSE
 	end
 
-MagmaHideout_2F_1R_Text_Grunt14Intro:
+MagmaHideout_2F_1R_Text_Grunt3Intro:
 	.string "What, what, what?\p"
 	.string "Only Team Magma members are supposed\n"
 	.string "to be in here!\p"
@@ -30,24 +30,24 @@ MagmaHideout_2F_1R_Text_Grunt14Intro:
 	.string "You rouse my suspicion!\n"
 	.string "Battle with me!$"
 
-MagmaHideout_2F_1R_Text_Grunt14Defeat:
+MagmaHideout_2F_1R_Text_Grunt3Defeat:
 	.string "Aiyiyi…\n"
 	.string "My pride as a Team Magma member…$"
 
-MagmaHideout_2F_1R_Text_Grunt14PostBattle:
+MagmaHideout_2F_1R_Text_Grunt3PostBattle:
 	.string "If you suffer from chills, you should\n"
 	.string "join Team Magma.$"
 
-MagmaHideout_2F_1R_Text_Grunt3Intro:
+MagmaHideout_2F_1R_Text_Grunt2Intro:
 	.string "Hold it right there!\p"
 	.string "You don't really expect me to keep\n"
 	.string "my trap shut and let you waltz by me?$"
 
-MagmaHideout_2F_1R_Text_Grunt3Defeat:
+MagmaHideout_2F_1R_Text_Grunt2Defeat:
 	.string "Ooh wow!\n"
 	.string "I concede!$"
 
-MagmaHideout_2F_1R_Text_Grunt3PostBattle:
+MagmaHideout_2F_1R_Text_Grunt2PostBattle:
 	.string "Maybe it would've been better if I did\n"
 	.string "just let you go unchallenged…$"
 

@@ -2788,36 +2788,36 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },                                                                                  \
 }
 
-#define GAETANO_BATTLE(Location, Level)                                                 \
-[TRAINER_GAETANO_##Location] =                                                          \
+#define GAETANO_BATTLE(Location, Level)                                                  \
+[TRAINER_GAETANO_##Location] =                                                           \
+{                                                                                        \
+    .trainerName = _("Gaetano"),                                                         \
+    MAGMA_GRUNT_M_INFO,                                                                  \
+    .partySize = 1,                                                                      \
+    .party = (const struct TrainerMon[]) {                                               \
+        {                                                                                \
+        .lvl = Level,                                                                    \
+        .species = Level < SPACE_CENTER_GRUNT_LEVEL ? SPECIES_DIGLETT : SPECIES_DUGTRIO, \
+        .ability = ABILITY_SAND_VEIL,                                                    \
+        .gender = TRAINER_MON_MALE,                                                      \
+        }                                                                                \
+    },                                                                                   \
+}
+
+#define WALKER_BATTLE(Location, Level)                                                  \
+[TRAINER_WALKER_##Location] =                                                           \
 {                                                                                       \
-    .trainerName = _("Gaetano"),                                                        \
+    .trainerName = _("Walker"),                                                         \
     MAGMA_GRUNT_M_INFO,                                                                 \
     .partySize = 1,                                                                     \
     .party = (const struct TrainerMon[]) {                                              \
         {                                                                               \
         .lvl = Level,                                                                   \
-        .species = Level < SPACE_CENTER_GRUNT_LEVEL ? SPECIES_PHANPY : SPECIES_DONPHAN, \
-        .ability = 0,                                                                   \
+        .species = Level < SPACE_CENTER_GRUNT_LEVEL ? SPECIES_CUBONE : SPECIES_MAROWAK, \
+        .ability = ABILITY_ROCK_HEAD,                                                   \
         .gender = TRAINER_MON_MALE,                                                     \
         }                                                                               \
     },                                                                                  \
-}
-
-#define WALKER_BATTLE(Location, Level)     \
-[TRAINER_WALKER_##Location] =              \
-{                                          \
-    .trainerName = _("Walker"),            \
-    MAGMA_GRUNT_M_INFO,                    \
-    .partySize = 1,                        \
-    .party = (const struct TrainerMon[]) { \
-        {                                  \
-        .lvl = Level,                      \
-        .species = SPECIES_TORKOAL,        \
-        .ability = ABILITY_DROUGHT,        \
-        .gender = TRAINER_MON_MALE,        \
-        }                                  \
-    },                                     \
 }
 
 
@@ -13282,14 +13282,14 @@ MARINA_BATTLE(MT_PYRE, 42),
 
 MAGMA_HIDEOUT_GRUNT(1, M, NUMEL),
 MAGMA_HIDEOUT_GRUNT(2, M, GEODUDE),
-MAGMA_HIDEOUT_GRUNT(3, F, VULPIX),
+MAGMA_HIDEOUT_GRUNT(3, F, SANDYGAST),
 MAGMA_HIDEOUT_GRUNT(4, M, BALTOY),
 MAGMA_HIDEOUT_GRUNT(5, M, RHYHORN),
-MAGMA_HIDEOUT_GRUNT(6, F, VULPIX),
+MAGMA_HIDEOUT_GRUNT(6, F, CUBONE),
 MAGMA_HIDEOUT_GRUNT(7, M, SANDSHREW),
-MAGMA_HIDEOUT_GRUNT(8, M, NUMEL),
-MAGMA_HIDEOUT_GRUNT(9, M, HOUNDOUR),
-MAGMA_HIDEOUT_GRUNT(10, M, PHANPY),
+MAGMA_HIDEOUT_GRUNT(8, M, DIGLETT),
+MAGMA_HIDEOUT_GRUNT(9, M, DRILBUR),
+MAGMA_HIDEOUT_GRUNT(10, M, SANDILE),
 
 WALKER_BATTLE(MAGMA_HIDEOUT, MAGMA_HIDEOUT_LEVEL),
 GAETANO_BATTLE(MAGMA_HIDEOUT, MAGMA_HIDEOUT_LEVEL),

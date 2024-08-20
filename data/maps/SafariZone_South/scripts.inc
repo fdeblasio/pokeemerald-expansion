@@ -115,10 +115,6 @@ SafariZone_South_Movement_MoveExitAttendantEast:
 	walk_in_place_faster_up
 	step_end
 
-SafariZone_South_EventScript_ConstructionWorker::
-	msgbox SafariZone_South_Text_AreaOffLimits, MSGBOX_NPC
-	end
-
 SafariZone_Southeast_EventScript_ExpansionZoneAttendant::
 	msgbox SafariZone_Southeast_Text_ExpansionIsFinished, MSGBOX_NPC
 	end

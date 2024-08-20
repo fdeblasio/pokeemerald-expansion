@@ -244,7 +244,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Bird Keepers now use the overworld sprite of male Psychics since it looks more like them than the blond sprite
 - Houndour was added to the Hoenn Pokédex to give Team Magma more variety
 - Pokémon can now be listed as orange in the Pokédex
-- Safari Zone Pokémon have been moved to other locations
+- The Safari Zone is now in the postgame only. Its regular Pokémon have been moved to other locations
 - Underwater areas now connect better
 - Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)
 - Frontier Brains have updated teams

@@ -232,7 +232,7 @@
               },
               {
                 "range": "RANGE_LILYCOVE_CITY",
-                "species": "STARYU"
+                "species": "CARVANHA"
               },
               {
                 "range": "RANGE_LILYCOVE_CITY",
@@ -244,15 +244,15 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WAILMER"
+                "species": "WAILORD"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "STARMIE"
+                "species": "SHARPEDO"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WAILMER"
+                "species": "WAILORD"
               }
             ]
           }

@@ -2702,8 +2702,6 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 
 
 
-#define GENERIC_GRUNT_NAME .trainerName = _("Grunt")
-
 #define MAGMA_GRUNT_M_INFO                                  \
     .trainerClass = TRAINER_CLASS_TEAM_MAGMA,               \
     .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,                \
@@ -13215,7 +13213,7 @@ MARINA_BATTLE(MT_PYRE, 42),
 #define MAGMA_HIDEOUT_GRUNT(Number, Gender, Species) \
 [TRAINER_GRUNT_MAGMA_HIDEOUT_##Number] =             \
 {                                                    \
-    GENERIC_GRUNT_NAME,                              \
+    .trainerName = _("Grunt"),                       \
     MAGMA_GRUNT_##Gender##_INFO,                     \
     .partySize = 1,                                  \
     .party = (const struct TrainerMon[]) {           \
@@ -13264,7 +13262,7 @@ TABITHA_BATTLE(MAGMA_HIDEOUT, 47, 9),
 #define AQUA_HIDEOUT_GRUNT(Number, Gender, Species1, Species2) \
 [TRAINER_GRUNT_AQUA_HIDEOUT_##Number] =                        \
 {                                                              \
-    GENERIC_GRUNT_NAME,                                        \
+    .trainerName = _("Grunt"),                                 \
     AQUA_GRUNT_##Gender##_INFO,                                \
     .partySize = 2,                                            \
     .party = (const struct TrainerMon[]) {                     \

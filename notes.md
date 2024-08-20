@@ -43,7 +43,6 @@ upcoming
 - Consolidate flags
     - FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA, FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY
     - FLAG_HIDE_FALLARBOR_AZURILL might be unused
-- Move construction worker in order to make Safari Zone postgame-only
 - Get Exp. Share from Steven instead of from Mr. Stone after
     - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game
 - Include charms? (might go over Key Items amount)

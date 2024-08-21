@@ -1137,10 +1137,12 @@ There are some mechanics, moves and abilities that are missing and being develop
     - SpA: 50->55
     - Can also evolve at level 28
     - Learns Pursuit and Thief by level up
+    - Learns Cut by TM
 
 - Galarian Meowth (postgame):
     - Atk: 65->75
     - Learns Bullet Punch by level up
+    - Learns Cut by TM
 
 - Persian (postgame):
     - HP: 65->70
@@ -1151,11 +1153,13 @@ There are some mechanics, moves and abilities that are missing and being develop
     - HP: 65->70
     - Def: 60->65
     - Learns Pursuit and Thief by level up
+    - Learns Cut by TM
 
 - Perrserker (postgame):
     - Atk: 110->115
     - Spe: 50->55
     - Learns Bullet Punch by level up
+    - Learns Cut by TM
 
 - Igglybuff:
     - Can also evolve at level 12

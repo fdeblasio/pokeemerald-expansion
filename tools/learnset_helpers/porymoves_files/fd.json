@@ -3548,14 +3548,48 @@
     "TutorMoves": []
   },
   "SWINUB": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 18,
+        "Move": "MOVE_BULLDOZE"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_AVALANCHE"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_STOMPING_TANTRUM"
+      },
+      {
+        "Level": 30,
+        "Move": "MOVE_HIGH_HORSEPOWER"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "PILOSWINE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 18,
+        "Move": "MOVE_BULLDOZE"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_AVALANCHE"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_STOMPING_TANTRUM"
+      },
+      {
+        "Level": 30,
+        "Move": "MOVE_HIGH_HORSEPOWER"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -3564,8 +3598,24 @@
   "MAMOSWINE": {
     "LevelMoves": [
       {
-        "Level": 1,
+        "Level": 0,
         "Move": "MOVE_ICICLE_CRASH"
+      },
+      {
+        "Level": 18,
+        "Move": "MOVE_BULLDOZE"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_AVALANCHE"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_STOMPING_TANTRUM"
+      },
+      {
+        "Level": 30,
+        "Move": "MOVE_HIGH_HORSEPOWER"
       }
     ],
     "PreEvoMoves": [],
@@ -5857,21 +5907,48 @@
     "TutorMoves": []
   },
   "GIBLE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 30,
+        "Move": "MOVE_STOMPING_TANTRUM"
+      },
+      {
+        "Level": 54,
+        "Move": "MOVE_EARTHQUAKE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "GABITE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 34,
+        "Move": "MOVE_STOMPING_TANTRUM"
+      },
+      {
+        "Level": 66,
+        "Move": "MOVE_EARTHQUAKE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "GARCHOMP": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 34,
+        "Move": "MOVE_STOMPING_TANTRUM"
+      },
+      {
+        "Level": 72,
+        "Move": "MOVE_EARTHQUAKE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -7208,21 +7285,60 @@
     "TutorMoves": []
   },
   "VANILLITE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_POWDER_SNOW"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_AURORA_BEAM"
+      },
+      {
+        "Level": 32,
+        "Move": "MOVE_FREEZE_DRY"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "VANILLISH": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_POWDER_SNOW"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_AURORA_BEAM"
+      },
+      {
+        "Level": 32,
+        "Move": "MOVE_FREEZE_DRY"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "VANILLUXE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_POWDER_SNOW"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_AURORA_BEAM"
+      },
+      {
+        "Level": 32,
+        "Move": "MOVE_FREEZE_DRY"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -7603,14 +7719,36 @@
     "TutorMoves": []
   },
   "CUBCHOO": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 18,
+        "Move": "MOVE_ICE_FANG"
+      },
+      {
+        "Level": 27,
+        "Move": "MOVE_ICE_PUNCH"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "BEARTIC": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ICE_SHARD"
+      },
+      {
+        "Level": 18,
+        "Move": "MOVE_ICE_FANG"
+      },
+      {
+        "Level": 27,
+        "Move": "MOVE_ICE_PUNCH"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -10125,7 +10263,20 @@
     "TutorMoves": []
   },
   "FROSMOTH": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 21,
+        "Move": "MOVE_SILVER_WIND"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_SIGNAL_BEAM"
+      },
+      {
+        "Level": 32,
+        "Move": "MOVE_ICE_BEAM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -11102,7 +11253,16 @@
     "TutorMoves": []
   },
   "DONDOZO": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 25,
+        "Move": "MOVE_WATERFALL"
+      },
+      {
+        "Level": 30,
+        "Move": "MOVE_LIQUIDATION"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

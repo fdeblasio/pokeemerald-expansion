@@ -3799,9 +3799,7 @@ static const u16 sSlugmaEggMoveLearnset[] = {
 #if P_FAMILY_SWINUB
 static const u16 sSwinubEggMoveLearnset[] = {
     MOVE_ANCIENT_POWER,
-    MOVE_AVALANCHE,
     MOVE_BITE,
-    MOVE_BULLDOZE,
     MOVE_CHARM,
     MOVE_CONFIDE,
     MOVE_CURSE,
@@ -3819,7 +3817,6 @@ static const u16 sSwinubEggMoveLearnset[] = {
     MOVE_SCARY_FACE,
     MOVE_SMACK_DOWN,
     MOVE_SNORE,
-    MOVE_STOMPING_TANTRUM,
     MOVE_SUPERPOWER,
     MOVE_TERA_BLAST,
     MOVE_TRAILBLAZE,
@@ -8082,7 +8079,6 @@ static const u16 sVanilliteEggMoveLearnset[] = {
     MOVE_IMPRISON,
     MOVE_MAGIC_COAT,
     MOVE_MAGNET_RISE,
-    MOVE_POWDER_SNOW,
     MOVE_ROUND,
     MOVE_SELF_DESTRUCT,
     MOVE_SNORE,
@@ -8407,7 +8403,6 @@ static const u16 sCubchooEggMoveLearnset[] = {
     MOVE_ENDEAVOR,
     MOVE_FLING,
     MOVE_HEAVY_SLAM,
-    MOVE_ICE_FANG,
     MOVE_ICICLE_SPEAR,
     MOVE_LOW_KICK,
     MOVE_METAL_CLAW,

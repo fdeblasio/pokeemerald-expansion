@@ -820,7 +820,9 @@
       }
     ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_CUT"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -836,7 +838,9 @@
       }
     ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_CUT"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -848,7 +852,9 @@
       }
     ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_CUT"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -860,7 +866,9 @@
       }
     ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_CUT"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },

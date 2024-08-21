@@ -291,10 +291,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Both Shoal Cave items are now available in low tide, which is available more often
 - Mirage Island now always appears
     - Wynaut from Mirage Island will have their Hidden Ability
-- Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room
-    - The door to Sealed Chamber and the Regis' inner rooms are now automatically open
-- Steven now gives out a Chien-Pao
-- Tickets for islands where Cosmog, Zeraora, and Therian Landorus reside are given after beating the Elite Four
+- Sealed Chamber still needs to be completed to open the Legendary Beast areas, but it's solved by simply pressing A in the inner room
+    - The door to Sealed Chamber and the Legendary Beasts' inner rooms are now automatically open
+- Steven now gives something else
+- Tickets for Birth Island and Navel Rock reside are given after beating the Elite Four
     - The Birth Island puzzle is much simpler
     - Navel Rock is slightly easier to navigate
 - SS Tidal trainers can be rebattled every trip
@@ -315,56 +315,54 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Pokémon Breeders all have Pokémon with perfect IVs. They can also have Hidden Abilities and Egg Moves
 
 #### Bosses:
-|          BOSSES          |        VANILLA       |    UPDATED    |
-|:------------------------:|:--------------------:|:-------------:|
-|Rival 103                 |5||
-|Roxanne                   |12, 12, 15            |11, 11, 13|
-|Rival Rustboro            |13, 15||
-|Brawly                    |16, 16, 19            |16, 16, 18|
-|Archie Oceanic Museum     |N/A                   |17, 17, 19|
-|Rival 110                 |18, 18, 20||
-|Duncan Mauville           |16                    |19|
-|Duncan Verdanturf         |N/A                   |21, 23|
-|Wattson                   |20, 22, 22, 24||
-|Duncan Route 114          |N/A                   |25, 25, 27|
-|Courtney Meteor Falls     |N/A                   |26, 26, 28|
-|Tabitha Mt. Chimney       |18, 20, 22, 22        |27, 27, 29|
-|Maxie Mt. Chimney         |24, 24, 25            |28, 29, 29, 30|
-|Flannery                  |24, 24, 26, 29        |28, 30, 30, 32|
-|Norman                    |27, 27, 29, 31        |31, 33, 33, 35|
-|Shelly Weather Institute  |28, 28                |39, 39, 41|
-|Rival 119                 |29, 29, 31            |40, 40, 41, 42|
-|Winona                    |29, 29, 30, 31, 33    |40, 40, 41, 41, 43|
-|Rival Lilycove            |31, 32, 32, 34        |43, 43, 43, 44, 45|
-|Tabitha Magma Hideout     |26, 28, 30, 33        |45, 45, 47|
-|Maxie Magma Hideout       |37, 38, 39            |46, 47, 47, 48|
-|Matt Aqua Hideout         |34, 34                |47, 47, 49|
-|Tate/Liza                 |41, 41, 42, 42        |49, 49, 51, 51|
-|Courtney                  |N/A                   |50, 50, 52|
-|Tabitha/Maxie             |36, 38, 40/42, 43, 44 |50, 50, 52/52, 52, 53|
-|Matt/Shelly               |N/A/37, 37            |52, 52, 54/52, 52, 54|
-|Archie Seafloor Cavern    |41, 41, 43            |53, 53, 54, 55|
-|Regirock/Regice/Registeel |40                    |55|
-|Juan                      |41, 41, 43, 43, 46    |55, 55, 56, 56, 58|
-|Rayquaza                  |70                    |60|
-|Duncan Victory Road       |41, 43, 44, 44, 45    |56, 56, 57, 57, 59|
-|Sidney                    |46, 46, 48, 48, 49    |60, 60, 61, 61, 62|
-|Phoebe                    |48, 49, 49, 50, 51    |61, 61, 62, 62, 63|
-|Glacia                    |50, 50, 52, 52, 53    |62, 62, 63, 63, 64|
-|Drake                     |52, 53, 53, 54, 55    |63, 63, 64, 64, 66|
-|Wallace                   |55, 56, 56, 56, 57, 58|66, 66, 66, 67, 67, 69|
-|Groudon/Kyogre            |70||
-|Latios/Latias             |40                    |70|
-|Mew                       |N/A                   |70|
-|Deoxys                    |N/A                   |70|
-|Lugia/Ho-Oh               |N/A                   |70|
+|          BOSSES           |        VANILLA       |    UPDATED    |
+|:-------------------------:|:--------------------:|:-------------:|
+|Rival 103                  |5||
+|Roxanne                    |12, 12, 15            |11, 11, 13|
+|Rival Rustboro             |13, 15||
+|Brawly                     |16, 16, 19            |16, 16, 18|
+|Archie Oceanic Museum      |N/A                   |17, 17, 19|
+|Rival 110                  |18, 18, 20||
+|Duncan Mauville            |16                    |19|
+|Duncan Verdanturf          |N/A                   |21, 23|
+|Wattson                    |20, 22, 22, 24||
+|Duncan Route 114           |N/A                   |25, 25, 27|
+|Courtney Meteor Falls      |N/A                   |26, 26, 28|
+|Tabitha Mt. Chimney        |18, 20, 22, 22        |27, 27, 29|
+|Maxie Mt. Chimney          |24, 24, 25            |28, 29, 29, 30|
+|Flannery                   |24, 24, 26, 29        |28, 30, 30, 32|
+|Norman                     |27, 27, 29, 31        |31, 33, 33, 35|
+|Shelly Weather Institute   |28, 28                |39, 39, 41|
+|Rival 119                  |29, 29, 31            |40, 40, 41, 42|
+|Winona                     |29, 29, 30, 31, 33    |40, 40, 41, 41, 43|
+|Rival Lilycove             |31, 32, 32, 34        |43, 43, 43, 44, 45|
+|Tabitha Magma Hideout      |26, 28, 30, 33        |45, 45, 47|
+|Maxie Magma Hideout        |37, 38, 39            |46, 47, 47, 48|
+|Matt Aqua Hideout          |34, 34                |47, 47, 49|
+|Tate/Liza                  |41, 41, 42, 42        |49, 49, 51, 51|
+|Courtney                   |N/A                   |50, 50, 52|
+|Tabitha/Maxie              |36, 38, 40/42, 43, 44 |50, 50, 52/52, 52, 53|
+|Matt/Shelly                |N/A/37, 37            |52, 52, 54/52, 52, 54|
+|Archie Seafloor Cavern     |41, 41, 43            |53, 53, 54, 55|
+|Raikou/Entei/Suicune       |40                    |55|
+|Juan                       |41, 41, 43, 43, 46    |55, 55, 56, 56, 58|
+|Rayquaza                   |70                    |60|
+|Duncan Victory Road        |41, 43, 44, 44, 45    |56, 56, 57, 57, 59|
+|Sidney                     |46, 46, 48, 48, 49    |60, 60, 61, 61, 62|
+|Phoebe                     |48, 49, 49, 50, 51    |61, 61, 62, 62, 63|
+|Glacia                     |50, 50, 52, 52, 53    |62, 62, 63, 63, 64|
+|Drake                      |52, 53, 53, 54, 55    |63, 63, 64, 64, 66|
+|Wallace                    |55, 56, 56, 56, 57, 58|66, 66, 66, 67, 67, 69|
+|Groudon/Kyogre             |70||
+|Birth Island               |N/A                   |70|
+|Navel Rock                 |N/A                   |70|
 |Gym Leader/Duncan rematch 1|Various               |70, 70, 73, 73, 75|
 |Gym Leader/Duncan rematch 2|Various               |75, 75, 78, 78, 80|
 |Gym Leader/Duncan rematch 3|Various               |80, 80, 80, 83, 83, 85|
 |Gym Leader/Duncan rematch 4|Various               |85, 85, 85, 88, 88, 90|
-|Elite Four rematches      |N/A                   |86, 86, 86, 88, 88, 90|
-|Wallace rematches         |N/A                   |87, 87, 87, 88, 88, 90|
-|Steven                    |75, 76, 76, 76, 77, 78|87, 87, 88, 88, 89, 90|
+|Elite Four rematches       |N/A                   |86, 86, 86, 88, 88, 90|
+|Wallace rematches          |N/A                   |87, 87, 87, 88, 88, 90|
+|Steven                     |75, 76, 76, 76, 77, 78|87, 87, 88, 88, 89, 90|
 
 ### Berries:
 - All berries: min and max yields have been boosted to a minimum of 3/6

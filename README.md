@@ -1545,8 +1545,12 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Magcargo:
     - Learns Body Press by TM
 
+- Swinub/Piloswine (not in main game):
+    - Learn Avalanche, Bulldoze, Stomping Tantrum, and High Horsepower by level up
+
 - Mamoswine (not in main game):
-    - Learns Icicle Crash by level up
+    - Learns Icicle Crash upon evolving
+    - Learns Avalanche, Bulldoze, Stomping Tantrum, and High Horsepower by level up
 
 - Octillery (postgame):
     - HP: 75
@@ -1966,6 +1970,9 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Spe: 84->85
     - Learns Acid, Poison Tail, Poison Fang, Poison Jab, and Crunch by level up
 
+- Gible/Gabite/Garchomp:
+    - Learn Stomping Tantrum and Earthquake by level up
+
 - Riolu:
     - Can also evolve at level 20
 
@@ -2156,9 +2163,16 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Vanillite:
     - Evolution: 35->30
+    - Held item: Casteliacone: 0%->50%
+    - Learns Powder Snow, Aurora Beam, and Freeze-Dry by level up
 
 - Vanillish:
     - Evolution: 47->42
+    - Held item: Casteliacone: 0%->50%
+    - Learns Powder Snow, Aurora Beam, and Freeze-Dry by level up
+
+- Vanilluxe:
+    - Learns Powder Snow, Aurora Beam, and Freeze-Dry by level up
 
 - Karrablast:
     - Can also evolve with Linking Cord
@@ -2224,6 +2238,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Cubchoo:
     - Evolution: 37->35
+    - Learns Ice Fang and Ice Punch by level up
+
+- Beartic:
+    - Learns Ice Shard, Ice Fang, and Ice Punch by level up
 
 - Cryogonal:
     - Hidden Ability: None->Snow Warning
@@ -2591,6 +2609,11 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Snom:
     - Can also evolve at level 21
 
+- Frosmoth:
+    - SpD: 90->100
+    - Spe: 65->75
+    - Learns Silver Wind, Signal Beam, and Ice Beam by level up
+
 - Cufant/Copperajah:
     - Received Sturdy as a second ability
 
@@ -2702,3 +2725,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Flamigo:
     - Learns Brick Break, Dual Wingbeat, Jump Kick, and High Jump Kick by level up
+
+- Dondozo:
+    - Learns Waterfall and Liquidation by level up

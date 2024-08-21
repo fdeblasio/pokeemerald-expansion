@@ -39907,6 +39907,8 @@ static const u16 sFrosmothTeachableLearnset[] = {
     MOVE_REFLECT,
     MOVE_REST,
     MOVE_SAFEGUARD,
+    MOVE_SIGNAL_BEAM,
+    MOVE_SILVER_WIND,
     MOVE_SLEEP_TALK,
     MOVE_SNOWSCAPE,
     MOVE_SWIFT,

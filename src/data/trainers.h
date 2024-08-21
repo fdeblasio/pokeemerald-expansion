@@ -3016,38 +3016,38 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },                                                                                    \
 }
 
-#define SHELLY_BATTLE(Location, AceLevel, IVs)                                       \
-[TRAINER_SHELLY_##Location] =                                                        \
-{                                                                                    \
-    .trainerName = _("Shelly"),                                                      \
-    .trainerClass = TRAINER_CLASS_AQUA_ADMIN,                                        \
-    .trainerPic = TRAINER_PIC_AQUA_ADMIN_F,                                          \
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,        \
-    BOSS_AI_FLAGS,                                                                   \
-    .partySize = 3,                                                                  \
-    .party = (const struct TrainerMon[]) {                                           \
-        {                                                                            \
-        .lvl = (AceLevel - 2),                                                       \
-        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_STARYU : SPECIES_STARMIE,  \
-        .ability = ABILITY_ILLUMINATE,                                               \
-        IVS(IVs),                                                                    \
-        .gender = TRAINER_MON_NONE,                                                  \
-        },                                                                           \
-        {                                                                            \
-        .lvl = (AceLevel - 2),                                                       \
-        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_GOLDEEN : SPECIES_SEAKING, \
-        .ability = ABILITY_SWIFT_SWIM,                                               \
-        IVS(IVs),                                                                    \
-        .gender = TRAINER_MON_FEMALE,                                                \
-        },                                                                           \
-        {                                                                            \
-        .lvl = AceLevel,                                                             \
-        .species = SPECIES_GOREBYSS,                                                 \
-        .ability = ABILITY_SWIFT_SWIM,                                               \
-        IVS(IVs),                                                                    \
-        .gender = TRAINER_MON_FEMALE,                                                \
-        }                                                                            \
-    },                                                                               \
+#define SHELLY_BATTLE(Location, AceLevel, IVs)                                          \
+[TRAINER_SHELLY_##Location] =                                                           \
+{                                                                                       \
+    .trainerName = _("Shelly"),                                                         \
+    .trainerClass = TRAINER_CLASS_AQUA_ADMIN,                                           \
+    .trainerPic = TRAINER_PIC_AQUA_ADMIN_F,                                             \
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,           \
+    BOSS_AI_FLAGS,                                                                      \
+    .partySize = 3,                                                                     \
+    .party = (const struct TrainerMon[]) {                                              \
+        {                                                                               \
+        .lvl = (AceLevel - 2),                                                          \
+        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_DUCKLETT : SPECIES_SWANNA,    \
+        .ability = ABILITY_KEEN_EYE,                                                    \
+        IVS(IVs),                                                                       \
+        .gender = TRAINER_MON_NONE,                                                     \
+        },                                                                              \
+        {                                                                               \
+        .lvl = (AceLevel - 2),                                                          \
+        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_POLIWHIRL : SPECIES_POLITOED, \
+        .ability = ABILITY_WATER_ABSORB,                                                \
+        IVS(IVs),                                                                       \
+        .gender = TRAINER_MON_FEMALE,                                                   \
+        },                                                                              \
+        {                                                                               \
+        .lvl = AceLevel,                                                                \
+        .species = SPECIES_GOREBYSS,                                                    \
+        .ability = ABILITY_SWIFT_SWIM,                                                  \
+        IVS(IVs),                                                                       \
+        .gender = TRAINER_MON_FEMALE,                                                   \
+        }                                                                               \
+    },                                                                                  \
 }
 
 #define MATT_BATTLE(Location, AceLevel, IVs)               \
@@ -3069,8 +3069,8 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         },                                                 \
         {                                                  \
         .lvl = (AceLevel - 2),                             \
-        .species = SPECIES_CRAWDAUNT,                      \
-        .ability = ABILITY_SHELL_ARMOR,                    \
+        .species = SPECIES_POLIWRATH,                      \
+        .ability = ABILITY_DAMP,                           \
         IVS(IVs),                                          \
         .gender = TRAINER_MON_MALE,                        \
         },                                                 \

@@ -105,21 +105,21 @@ static const struct MenuAction MultichoiceList_LevelMode[] =
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q1[] =
 {
-    {gSpeciesInfo[SPECIES_TAILLOW].speciesName},
+    {gSpeciesInfo[SPECIES_YUNGOOS].speciesName},
     {gSpeciesInfo[SPECIES_POOCHYENA].speciesName},
-    {gSpeciesInfo[SPECIES_ODDISH].speciesName},
+    {gSpeciesInfo[SPECIES_WATTREL].speciesName},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q2[] =
 {
-    {gSpeciesInfo[SPECIES_HARIYAMA].speciesName},
-    {gSpeciesInfo[SPECIES_LOTAD].speciesName},
+    {gSpeciesInfo[SPECIES_CLOBBOPUS].speciesName},
+    {gSpeciesInfo[SPECIES_BUIZEL].speciesName},
     {gSpeciesInfo[SPECIES_WINGULL].speciesName},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q3[] =
 {
-    {gSpeciesInfo[SPECIES_WURMPLE].speciesName},
+    {gSpeciesInfo[SPECIES_CATERPIE].speciesName},
     {gSpeciesInfo[SPECIES_ZUBAT].speciesName},
     {gSpeciesInfo[SPECIES_NINCADA].speciesName},
 };
@@ -128,12 +128,12 @@ static const struct MenuAction MultichoiceList_Mechadoll2_Q1[] =
 {
     {gSpeciesInfo[SPECIES_WALLY_STARTER].speciesName},
     {gSpeciesInfo[SPECIES_NORMAN_LEND].speciesName},
-    {gSpeciesInfo[SPECIES_SLAKOTH].speciesName},
+    {gSpeciesInfo[SPECIES_MUNCHLAX].speciesName},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll2_Q2[] =
 {
-    {gSpeciesInfo[SPECIES_ZIGZAGOON].speciesName},
+    {gSpeciesInfo[SPECIES_YUNGOOS].speciesName},
     {gSpeciesInfo[SPECIES_SHROOMISH].speciesName},
     {gSpeciesInfo[SPECIES_POOCHYENA].speciesName},
 };

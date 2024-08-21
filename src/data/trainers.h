@@ -4399,40 +4399,6 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },                                                                                    \
 }
 
-<<<<<<< HEAD
-#define SHELLY_BATTLE(Location, AceLevel, IVs)                                       \
-[DIFFICULTY_NORMAL][TRAINER_SHELLY_##Location] =                                     \
-{                                                                                    \
-    .trainerName = _("Shelly"),                                                      \
-    .trainerClass = TRAINER_CLASS_AQUA_ADMIN,                                        \
-    .trainerPic = TRAINER_PIC_AQUA_ADMIN_F,                                          \
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,        \
-    BOSS_AI_FLAGS,                                                                   \
-    .partySize = 3,                                                                  \
-    .party = (const struct TrainerMon[]) {                                           \
-        {                                                                            \
-        .lvl = (AceLevel - 2),                                                       \
-        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_STARYU : SPECIES_STARMIE,  \
-        .ability = ABILITY_ILLUMINATE,                                               \
-        IVS(IVs),                                                                    \
-        .gender = TRAINER_MON_NONE,                                                  \
-        },                                                                           \
-        {                                                                            \
-        .lvl = (AceLevel - 2),                                                       \
-        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_GOLDEEN : SPECIES_SEAKING, \
-        .ability = ABILITY_SWIFT_SWIM,                                               \
-        IVS(IVs),                                                                    \
-        .gender = TRAINER_MON_FEMALE,                                                \
-        },                                                                           \
-        {                                                                            \
-        .lvl = AceLevel,                                                             \
-        .species = SPECIES_GOREBYSS,                                                 \
-        .ability = ABILITY_SWIFT_SWIM,                                               \
-        IVS(IVs),                                                                    \
-        .gender = TRAINER_MON_FEMALE,                                                \
-        }                                                                            \
-    },                                                                               \
-=======
 #define SHELLY_BATTLE(Location, AceLevel, IVs)                                          \
 [DIFFICULTY_NORMAL][TRAINER_SHELLY_##Location] =                                        \
 {                                                                                       \
@@ -4465,7 +4431,6 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         .gender = TRAINER_MON_FEMALE,                                                   \
         }                                                                               \
     },                                                                                  \
->>>>>>> a9a3438295 (Updated Aqua admins)
 }
 
 #define MATT_BATTLE(Location, AceLevel, IVs)               \
@@ -5965,7 +5930,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define ELLIOT_ARROKUDA(Level)                                      \
     .lvl = Level,                                                   \
     .species = Level < 26 ? SPECIES_ARROKUDA : SPECIES_BARRASKEWDA, \
-    .ability = ABILITY_CLEAR_BODY,                                  \
+    .ability = ABILITY_SWIFT_SWIM,                                  \
     .gender = TRAINER_MON_MALE
 
 #define ELLIOT_MAGIKARP(Level)                                   \
@@ -11795,7 +11760,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     GUMSHOOS, SCOPE_LENS,
 #define CORY_ARROKUDA(Level)                                                      \
     .lvl = Level,                                                                  \
     .species = Level < REMATCH_2_LEVEL_3 ? SPECIES_ARROKUDA : SPECIES_BARRASKEWDA, \
-    .ability = ABILITY_CLEAR_BODY,                                                 \
+    .ability = ABILITY_SWIFT_SWIM,                                                 \
     .gender = TRAINER_MON_MALE
 
 #define CORY_MACHOKE(Level)                                                   \
@@ -15008,16 +14973,16 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     SIS_AND_BRO_INFO,               \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define LILA_CHINCHOU(Level)                                    \
-    .lvl = Level,                                               \
-    .species = Level < 47 ? SPECIES_CHINCHOU : SPECIES_LANTURN, \
-    .ability = ABILITY_VOLT_ABSORB,                             \
+#define LILA_DUCKLETT(Level)                                   \
+    .lvl = Level,                                              \
+    .species = Level < 47 ? SPECIES_DUCKLETT : SPECIES_SWANNA, \
+    .ability = ABILITY_KEEN_EYE,                               \
     .gender = TRAINER_MON_FEMALE
 
-#define ROY_HORSEA(Level)                                                                                    \
-    .lvl = Level,                                                                                            \
-    .species = Level < 45 ? SPECIES_HORSEA : (Level < REMATCH_5_LEVEL_6 ? SPECIES_SEADRA : SPECIES_KINGDRA), \
-    .ability = ABILITY_SWIFT_SWIM,                                                                           \
+#define ROY_BUIZEL(Level)                                      \
+    .lvl = Level,                                              \
+    .species = Level < 45 ? SPECIES_BUIZEL : SPECIES_FLOATZEL, \
+    .ability = ABILITY_SWIFT_SWIM,                             \
     .gender = TRAINER_MON_MALE
 
 [DIFFICULTY_NORMAL][TRAINER_LILA_AND_ROY_1] =
@@ -15026,10 +14991,10 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        LILA_CHINCHOU(46),
+        LILA_DUCKLETT(46),
         },
         {
-        ROY_HORSEA(44),
+        ROY_BUIZEL(44),
         }
     },
 },
@@ -15040,10 +15005,10 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        LILA_CHINCHOU(47),
+        LILA_DUCKLETT(47),
         },
         {
-        ROY_HORSEA(45),
+        ROY_BUIZEL(45),
         }
     },
 },
@@ -15054,10 +15019,10 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        LILA_CHINCHOU(48),
+        LILA_DUCKLETT(48),
         },
         {
-        ROY_HORSEA(46),
+        ROY_BUIZEL(46),
         }
     },
 },
@@ -15068,10 +15033,10 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        LILA_CHINCHOU(REMATCH_4_LEVEL_1),
+        LILA_DUCKLETT(REMATCH_4_LEVEL_1),
         },
         {
-        ROY_HORSEA(REMATCH_4_LEVEL_3),
+        ROY_BUIZEL(REMATCH_4_LEVEL_3),
         }
     },
 },
@@ -15082,10 +15047,10 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        LILA_CHINCHOU(REMATCH_5_LEVEL_1),
+        LILA_DUCKLETT(REMATCH_5_LEVEL_1),
         },
         {
-        ROY_HORSEA(REMATCH_5_LEVEL_3),
+        ROY_BUIZEL(REMATCH_5_LEVEL_3),
         }
     },
 },
@@ -15119,14 +15084,14 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .ability = ABILITY_WATER_VEIL,                             \
     .gender = TRAINER_MON_FEMALE
 
-#define JENNY_STARYU(Level)                                   \
-    .lvl = Level,                                             \
-    .species = Level < 47 ? SPECIES_STARYU : SPECIES_STARMIE, \
+#define JENNY_BARBOACH(Level)                                    \
+    .lvl = Level,                                                \
+    .species = Level < 47 ? SPECIES_BARBOACH : SPECIES_WHISCASH, \
     .ability = ABILITY_ILLUMINATE
 
-#define JENNY_LUVDISC(Level)    \
-    .lvl = Level,               \
-    .species = SPECIES_LUVDISC, \
+#define JENNY_FLOATZEL(Level)    \
+    .lvl = Level,                \
+    .species = SPECIES_FLOATZEL, \
     .gender = TRAINER_MON_FEMALE
 
 //Extra for hacks
@@ -15149,7 +15114,7 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        JENNY_STARYU(46),
+        JENNY_BARBOACH(46),
         },
         {
         JENNY_WAILMER(46),
@@ -15163,10 +15128,10 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        JENNY_LUVDISC(47),
+        JENNY_FLOATZEL(47),
         },
         {
-        JENNY_STARYU(47),
+        JENNY_BARBOACH(47),
         },
         {
         JENNY_WAILMER(47),
@@ -15180,10 +15145,10 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        JENNY_LUVDISC(REMATCH_4_LEVEL_3),
+        JENNY_FLOATZEL(REMATCH_4_LEVEL_3),
         },
         {
-        JENNY_STARYU(REMATCH_4_LEVEL_3),
+        JENNY_BARBOACH(REMATCH_4_LEVEL_3),
         },
         {
         JENNY_WAILMER(REMATCH_4_LEVEL_3),
@@ -15197,10 +15162,10 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        JENNY_LUVDISC(REMATCH_5_LEVEL_3),
+        JENNY_FLOATZEL(REMATCH_5_LEVEL_3),
         },
         {
-        JENNY_STARYU(REMATCH_5_LEVEL_3),
+        JENNY_BARBOACH(REMATCH_5_LEVEL_3),
         },
         {
         JENNY_WAILMER(REMATCH_5_LEVEL_3),
@@ -15235,7 +15200,7 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .party = (const struct TrainerMon[]) {
         {
         TRIATHLETE_MON(46, 0),
-        .species = SPECIES_STARMIE,
+        .species = SPECIES_FLOATZEL,
         }
     },
 },
@@ -15279,9 +15244,9 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .gender = TRAINER_MON_MALE
 
 #define ERNEST_BARRASKEWDA(Level)   \
-    .lvl = Level,                  \
+    .lvl = Level,                   \
     .species = SPECIES_BARRASKEWDA, \
-    .ability = ABILITY_CLEAR_BODY, \
+    .ability = ABILITY_SWIFT_SWIM,  \
     .gender = TRAINER_MON_MALE
 
 [DIFFICULTY_NORMAL][TRAINER_ERNEST_1] =
@@ -15420,7 +15385,7 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 46,
-        .species = SPECIES_SEAKING,
+        .species = SPECIES_POLIWHIRL,
         }
     },
 },
@@ -15434,7 +15399,7 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 46,
-        .species = SPECIES_LUVDISC,
+        .species = SPECIES_SEALEO,
         }
     },
 },
@@ -15448,7 +15413,7 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 45,
-        .species = SPECIES_TROPIUS,
+        .species = SPECIES_KILOWATTREL,
         },
         {
         .lvl = 45,
@@ -15484,7 +15449,7 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 46,
-        .species = SPECIES_SEADRA,
+        .species = SPECIES_POLIWRATH,
         }
     },
 },
@@ -15528,18 +15493,18 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     },                                                      \
 }
 
-MOSSDEEP_GYM_TRAINER(PRESTON,  "Preston",  PSYCHIC_M,  GALLADE),
+MOSSDEEP_GYM_TRAINER(PRESTON,  "Preston",  PSYCHIC_M,  SWOOBAT),
 MOSSDEEP_GYM_TRAINER(MAURA,    "Maura",    PSYCHIC_F,  ALAKAZAM),
 MOSSDEEP_GYM_TRAINER(SAMANTHA, "Samantha", PSYCHIC_F,  XATU),
 MOSSDEEP_GYM_TRAINER(BLAKE,    "Blake",    PSYCHIC_M,  CLAYDOL),
-MOSSDEEP_GYM_TRAINER(MACEY,    "Macey",    PSYCHIC_F,  STARMIE),
-MOSSDEEP_GYM_TRAINER(CLIFFORD, "Clifford", GENTLEMAN,  FARIGIRAF),
+MOSSDEEP_GYM_TRAINER(MACEY,    "Macey",    PSYCHIC_F,  ESPATHRA),
+MOSSDEEP_GYM_TRAINER(CLIFFORD, "Clifford", GENTLEMAN,  ESPEON),
 MOSSDEEP_GYM_TRAINER(KATHLEEN, "Kathleen", PSYCHIC_F,  CHIMECHO),
-MOSSDEEP_GYM_TRAINER(NICHOLAS, "Nicholas", PSYCHIC_M,  WOBBUFFET),
+MOSSDEEP_GYM_TRAINER(NICHOLAS, "Nicholas", PSYCHIC_M,  ALAKAZAM),
 MOSSDEEP_GYM_TRAINER(NATE,     "Nate",     GENTLEMAN,  GRUMPIG),
-MOSSDEEP_GYM_TRAINER(VIRGIL,   "Virgil",   PSYCHIC_M,  GOLDUCK),
+MOSSDEEP_GYM_TRAINER(VIRGIL,   "Virgil",   PSYCHIC_M,  SWOOBAT),
 MOSSDEEP_GYM_TRAINER(SYLVIA,   "Sylvia",   HEX_MANIAC, MEDICHAM),
-MOSSDEEP_GYM_TRAINER(HANNAH,   "Hannah",   PSYCHIC_F,  GARDEVOIR),
+MOSSDEEP_GYM_TRAINER(HANNAH,   "Hannah",   PSYCHIC_F,  ESPEON),
 
 //Trick House 6
 [DIFFICULTY_NORMAL][TRAINER_SOPHIA] =

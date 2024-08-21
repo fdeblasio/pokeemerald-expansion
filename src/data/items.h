@@ -133,7 +133,7 @@ static const u8 sGenericMulchDesc[]   = _("A fertilizer that\n"
 
 #define ITEM_ICON(item)          \
     .iconPic = gItemIcon_##item, \
-    .iconPalette = gItemIconPalette_##item,
+    .iconPalette = gItemIconPalette_##item
 
 const struct Item gItemsInfo[] =
 {
@@ -145,7 +145,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(QuestionMark)
+        ITEM_ICON(QuestionMark),
     },
 
 // Poké Balls
@@ -178,7 +178,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_POKE,
-        ITEM_ICON(PokeBall)
+        ITEM_ICON(PokeBall),
     },
 
     [ITEM_GREAT_BALL] =
@@ -193,7 +193,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_GREAT,
-        ITEM_ICON(GreatBall)
+        ITEM_ICON(GreatBall),
     },
 
     [ITEM_ULTRA_BALL] =
@@ -208,7 +208,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_ULTRA,
-        ITEM_ICON(UltraBall)
+        ITEM_ICON(UltraBall),
     },
 
     [ITEM_MASTER_BALL] =
@@ -223,7 +223,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_MASTER,
-        ITEM_ICON(MasterBall)
+        ITEM_ICON(MasterBall),
     },
 
     [ITEM_PREMIER_BALL] =
@@ -254,7 +254,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_HEAL,
-        ITEM_ICON(HealBall)
+        ITEM_ICON(HealBall),
     },
 
     [ITEM_NET_BALL] =
@@ -269,7 +269,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_NET,
-        ITEM_ICON(NetBall)
+        ITEM_ICON(NetBall),
     },
 
     [ITEM_NEST_BALL] =
@@ -284,7 +284,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_NEST,
-        ITEM_ICON(NestBall)
+        ITEM_ICON(NestBall),
     },
 
     [ITEM_DIVE_BALL] =
@@ -299,7 +299,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_DIVE,
-        ITEM_ICON(DiveBall)
+        ITEM_ICON(DiveBall),
     },
 
     [ITEM_DUSK_BALL] =
@@ -314,7 +314,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_DUSK,
-        ITEM_ICON(DuskBall)
+        ITEM_ICON(DuskBall),
     },
 
     [ITEM_TIMER_BALL] =
@@ -345,7 +345,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_QUICK,
-        ITEM_ICON(QuickBall)
+        ITEM_ICON(QuickBall),
     },
 
     [ITEM_REPEAT_BALL] =
@@ -360,7 +360,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_REPEAT,
-        ITEM_ICON(RepeatBall)
+        ITEM_ICON(RepeatBall),
     },
 
     [ITEM_LUXURY_BALL] =
@@ -375,7 +375,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_LUXURY,
-        ITEM_ICON(LuxuryBall)
+        ITEM_ICON(LuxuryBall),
     },
 
     [ITEM_LEVEL_BALL] =
@@ -390,7 +390,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_LEVEL,
-        ITEM_ICON(LevelBall)
+        ITEM_ICON(LevelBall),
     },
 
     [ITEM_LURE_BALL] =
@@ -405,7 +405,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_LURE,
-        ITEM_ICON(LureBall)
+        ITEM_ICON(LureBall),
     },
 
     [ITEM_MOON_BALL] =
@@ -420,7 +420,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_MOON,
-        ITEM_ICON(MoonBall)
+        ITEM_ICON(MoonBall),
     },
 
     [ITEM_FRIEND_BALL] =
@@ -435,7 +435,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_FRIEND,
-        ITEM_ICON(FriendBall)
+        ITEM_ICON(FriendBall),
     },
 
     [ITEM_LOVE_BALL] =
@@ -450,7 +450,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_LOVE,
-        ITEM_ICON(LoveBall)
+        ITEM_ICON(LoveBall),
     },
 
     [ITEM_FAST_BALL] =
@@ -465,7 +465,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_FAST,
-        ITEM_ICON(FastBall)
+        ITEM_ICON(FastBall),
     },
 
     [ITEM_HEAVY_BALL] =
@@ -480,7 +480,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_HEAVY,
-        ITEM_ICON(HeavyBall)
+        ITEM_ICON(HeavyBall),
     },
 
     [ITEM_DREAM_BALL] =
@@ -500,7 +500,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_DREAM,
-        ITEM_ICON(DreamBall)
+        ITEM_ICON(DreamBall),
     },
 
     [ITEM_SAFARI_BALL] =
@@ -515,7 +515,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_SAFARI,
-        ITEM_ICON(SafariBall)
+        ITEM_ICON(SafariBall),
     },
 
     [ITEM_SPORT_BALL] =
@@ -530,7 +530,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_SPORT,
-        ITEM_ICON(SportBall)
+        ITEM_ICON(SportBall),
     },
 
     [ITEM_PARK_BALL] =
@@ -544,7 +544,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_PARK,
-        ITEM_ICON(ParkBall)
+        ITEM_ICON(ParkBall),
     },
 
     [ITEM_BEAST_BALL] =
@@ -558,7 +558,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_BEAST,
-        ITEM_ICON(BeastBall)
+        ITEM_ICON(BeastBall),
     },
 
     [ITEM_CHERISH_BALL] =
@@ -573,7 +573,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
         .secondaryId = BALL_CHERISH,
-        ITEM_ICON(CherishBall)
+        ITEM_ICON(CherishBall),
     },
 
 // Medicine
@@ -593,7 +593,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
         .effect = gItemEffect_Potion,
         .flingPower = 30,
-        ITEM_ICON(Potion)
+        ITEM_ICON(Potion),
     },
 
     [ITEM_SUPER_POTION] =
@@ -693,7 +693,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_REVIVE,
         .effect = gItemEffect_Revive,
         .flingPower = 30,
-        ITEM_ICON(Revive)
+        ITEM_ICON(Revive),
     },
 
     [ITEM_MAX_REVIVE] =
@@ -730,7 +730,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
         .effect = gItemEffect_FreshWater,
         .flingPower = 30,
-        ITEM_ICON(FreshWater)
+        ITEM_ICON(FreshWater),
     },
 
     [ITEM_SODA_POP] =
@@ -752,7 +752,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
         .effect = gItemEffect_SodaPop,
         .flingPower = 30,
-        ITEM_ICON(SodaPop)
+        ITEM_ICON(SodaPop),
     },
 
     [ITEM_LEMONADE] =
@@ -777,7 +777,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
         .effect = gItemEffect_Lemonade,
         .flingPower = 30,
-        ITEM_ICON(Lemonade)
+        ITEM_ICON(Lemonade),
     },
 
     [ITEM_MOOMOO_MILK] =
@@ -796,7 +796,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
         .effect = gItemEffect_MoomooMilk,
         .flingPower = 30,
-        ITEM_ICON(MoomooMilk)
+        ITEM_ICON(MoomooMilk),
     },
 
     [ITEM_ENERGY_POWDER] =
@@ -840,7 +840,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
         .effect = gItemEffect_EnergyRoot,
         .flingPower = 30,
-        ITEM_ICON(EnergyRoot)
+        ITEM_ICON(EnergyRoot),
     },
 
     [ITEM_HEAL_POWDER] =
@@ -876,7 +876,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_REVIVE,
         .effect = gItemEffect_RevivalHerb,
         .flingPower = 30,
-        ITEM_ICON(RevivalHerb)
+        ITEM_ICON(RevivalHerb),
     },
 
     [ITEM_ANTIDOTE] =
@@ -892,7 +892,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
         .effect = gItemEffect_Antidote,
         .flingPower = 30,
-        ITEM_ICON(Antidote)
+        ITEM_ICON(Antidote),
     },
 
     [ITEM_PARALYZE_HEAL] =
@@ -974,7 +974,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
         .effect = gItemEffect_FullHeal,
         .flingPower = 30,
-        ITEM_ICON(FullHeal)
+        ITEM_ICON(FullHeal),
     },
 
     [ITEM_ETHER] =
@@ -992,7 +992,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_PP,
         .effect = gItemEffect_Ether,
         .flingPower = 30,
-        ITEM_ICON(Ether)
+        ITEM_ICON(Ether),
     },
 
     [ITEM_MAX_ETHER] =
@@ -1068,7 +1068,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
         .effect = gItemEffect_Potion,
         .flingPower = 30,
-        ITEM_ICON(BerryJuice)
+        ITEM_ICON(BerryJuice),
     },
 
     [ITEM_SACRED_ASH] =
@@ -1086,7 +1086,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_REVIVE,
         .effect = gItemEffect_SacredAsh,
         .flingPower = 30,
-        ITEM_ICON(SacredAsh)
+        ITEM_ICON(SacredAsh),
     },
 
     [ITEM_SWEET_HEART] =
@@ -1104,7 +1104,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
         .effect = gItemEffect_Potion,
         .flingPower = 30,
-        ITEM_ICON(SweetHeart)
+        ITEM_ICON(SweetHeart),
     },
 
     [ITEM_MAX_HONEY] =
@@ -1119,7 +1119,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_REVIVE,
         .effect = gItemEffect_MaxRevive,
         .flingPower = 30,
-        ITEM_ICON(MaxHoney)
+        ITEM_ICON(MaxHoney),
     },
 
 // Regional Specialties
@@ -1139,7 +1139,7 @@ const struct Item gItemsInfo[] =
         .price = 250,
         .description = sFullHealDesc,
         REGIONAL_SPECIALTY_INFO,
-        ITEM_ICON(PewterCrunchies)
+        ITEM_ICON(PewterCrunchies),
     },
 
     [ITEM_RAGE_CANDY_BAR] =
@@ -1148,7 +1148,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 350 : 300,
         .description = sFullHealDesc,
         REGIONAL_SPECIALTY_INFO,
-        ITEM_ICON(RageCandyBar)
+        ITEM_ICON(RageCandyBar),
     },
 
     [ITEM_LAVA_COOKIE] =
@@ -1171,7 +1171,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 350 : 200,
         .description = sFullHealDesc,
         REGIONAL_SPECIALTY_INFO,
-        ITEM_ICON(OldGateau)
+        ITEM_ICON(OldGateau),
     },
 
     [ITEM_CASTELIACONE] =
@@ -1180,7 +1180,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 350 : 100,
         .description = sFullHealDesc,
         REGIONAL_SPECIALTY_INFO,
-        ITEM_ICON(Casteliacone)
+        ITEM_ICON(Casteliacone),
     },
 
     [ITEM_LUMIOSE_GALETTE] =
@@ -1189,7 +1189,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 350 : 200,
         .description = sFullHealDesc,
         REGIONAL_SPECIALTY_INFO,
-        ITEM_ICON(LumioseGalette)
+        ITEM_ICON(LumioseGalette),
     },
 
     [ITEM_SHALOUR_SABLE] =
@@ -1198,7 +1198,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 350 : 200,
         .description = sFullHealDesc,
         REGIONAL_SPECIALTY_INFO,
-        ITEM_ICON(ShalourSable)
+        ITEM_ICON(ShalourSable),
     },
 
     [ITEM_BIG_MALASADA] =
@@ -1207,7 +1207,7 @@ const struct Item gItemsInfo[] =
         .price = 350,
         .description = sFullHealDesc,
         REGIONAL_SPECIALTY_INFO,
-        ITEM_ICON(BigMalasada)
+        ITEM_ICON(BigMalasada),
     },
 
 // Vitamins
@@ -1224,7 +1224,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_HPUp,
         .flingPower = 30,
-        ITEM_ICON(HPUp)
+        ITEM_ICON(HPUp),
     },
 
     [ITEM_PROTEIN] =
@@ -1326,7 +1326,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_PPUp,
         .effect = gItemEffect_PPUp,
         .flingPower = 30,
-        ITEM_ICON(PPUp)
+        ITEM_ICON(PPUp),
     },
 
     [ITEM_PP_MAX] =
@@ -1343,7 +1343,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_PPUp,
         .effect = gItemEffect_PPMax,
         .flingPower = 30,
-        ITEM_ICON(PPMax)
+        ITEM_ICON(PPMax),
     },
 
 // EV Feathers
@@ -1358,7 +1358,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_HpFeather,
         .flingPower = 20,
-        ITEM_ICON(HealthFeather)
+        ITEM_ICON(HealthFeather),
     },
 
     [ITEM_MUSCLE_FEATHER] =
@@ -1371,7 +1371,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_AtkFeather,
         .flingPower = 20,
-        ITEM_ICON(MuscleFeather)
+        ITEM_ICON(MuscleFeather),
     },
 
     [ITEM_RESIST_FEATHER] =
@@ -1384,7 +1384,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_DefFeather,
         .flingPower = 20,
-        ITEM_ICON(ResistFeather)
+        ITEM_ICON(ResistFeather),
     },
 
     [ITEM_GENIUS_FEATHER] =
@@ -1397,7 +1397,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_SpatkFeather,
         .flingPower = 20,
-        ITEM_ICON(GeniusFeather)
+        ITEM_ICON(GeniusFeather),
     },
 
     [ITEM_CLEVER_FEATHER] =
@@ -1410,7 +1410,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_SpdefFeather,
         .flingPower = 20,
-        ITEM_ICON(CleverFeather)
+        ITEM_ICON(CleverFeather),
     },
 
     [ITEM_SWIFT_FEATHER] =
@@ -1423,7 +1423,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_SpeedFeather,
         .flingPower = 20,
-        ITEM_ICON(SwiftFeather)
+        ITEM_ICON(SwiftFeather),
     },
 
 // Ability Modifiers
@@ -1439,7 +1439,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_AbilityCapsule,
-        ITEM_ICON(AbilityCapsule)
+        ITEM_ICON(AbilityCapsule),
     },
 
     [ITEM_ABILITY_PATCH] =
@@ -1455,7 +1455,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_AbilityPatch,
-        ITEM_ICON(AbilityPatch)
+        ITEM_ICON(AbilityPatch),
     },
 
 // Mints
@@ -1835,7 +1835,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_RareCandy,
         .effect = gItemEffect_RareCandy,
         .flingPower = 30,
-        ITEM_ICON(RareCandy)
+        ITEM_ICON(RareCandy),
     },
 
     [ITEM_EXP_CANDY_XS] =
@@ -1946,7 +1946,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_DynamaxCandy,
         .flingPower = 30,
-        ITEM_ICON(DynamaxCandy)
+        ITEM_ICON(DynamaxCandy),
     },
 
 // Medicinal Flutes
@@ -2060,7 +2060,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Repel,
         .flingPower = 30,
-        ITEM_ICON(Repel)
+        ITEM_ICON(Repel),
     },
 
     [ITEM_SUPER_REPEL] =
@@ -2111,7 +2111,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_Lure,
         .secondaryId = 0,
         .flingPower = 30,
-        ITEM_ICON(Lure)
+        ITEM_ICON(Lure),
     },
 
     [ITEM_SUPER_LURE] =
@@ -2168,7 +2168,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_EscapeRope,
         .flingPower = 30,
-        ITEM_ICON(EscapeRope)
+        ITEM_ICON(EscapeRope),
     },
 
 // X Items
@@ -2269,7 +2269,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_INCREASE_STAT,
         .effect = gItemEffect_XSpecialDefense,
         .flingPower = 30,
-        ITEM_ICON(XSpecialDefense)
+        ITEM_ICON(XSpecialDefense),
     },
 
     [ITEM_X_SPEED] =
@@ -2370,7 +2370,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_ESCAPE,
         .flingPower = 30,
-        ITEM_ICON(PokeDoll)
+        ITEM_ICON(PokeDoll),
     },
 
     [ITEM_FLUFFY_TAIL] =
@@ -2383,7 +2383,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_ESCAPE,
         .flingPower = 30,
-        ITEM_ICON(FluffyTail)
+        ITEM_ICON(FluffyTail),
     },
 
     [ITEM_POKE_TOY] =
@@ -2396,7 +2396,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_ESCAPE,
         .flingPower = 30,
-        ITEM_ICON(PokeToy)
+        ITEM_ICON(PokeToy),
     },
 
     [ITEM_MAX_MUSHROOMS] =
@@ -2413,7 +2413,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_INCREASE_ALL_STATS,
         .flingPower = 30,
-        ITEM_ICON(MaxMushrooms)
+        ITEM_ICON(MaxMushrooms),
     },
 
 // Treasures
@@ -2430,7 +2430,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(BottleCap)
+        ITEM_ICON(BottleCap),
     },
 
     [ITEM_GOLD_BOTTLE_CAP] =
@@ -2461,7 +2461,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(Nugget)
+        ITEM_ICON(Nugget),
     },
 
     [ITEM_BIG_NUGGET] =
@@ -2476,7 +2476,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 130,
-        ITEM_ICON(BigNugget)
+        ITEM_ICON(BigNugget),
     },
 
     [ITEM_TINY_MUSHROOM] =
@@ -2517,7 +2517,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(BalmMushroom)
+        ITEM_ICON(BalmMushroom),
     },
 
     [ITEM_PEARL] =
@@ -2532,7 +2532,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(Pearl)
+        ITEM_ICON(Pearl),
     },
 
     [ITEM_BIG_PEARL] =
@@ -2563,7 +2563,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(PearlString)
+        ITEM_ICON(PearlString),
     },
 
     [ITEM_STARDUST] =
@@ -2611,7 +2611,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(CometShard)
+        ITEM_ICON(CometShard),
     },
 
     [ITEM_SHOAL_SALT] =
@@ -2696,7 +2696,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(HeartScale)
+        ITEM_ICON(HeartScale),
     },
 
     [ITEM_HONEY] =
@@ -2712,7 +2712,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_Honey,
         .flingPower = 30,
-        ITEM_ICON(Honey)
+        ITEM_ICON(Honey),
     },
 
     [ITEM_RARE_BONE] =
@@ -2727,7 +2727,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
-        ITEM_ICON(RareBone)
+        ITEM_ICON(RareBone),
     },
 
     [ITEM_ODD_KEYSTONE] =
@@ -2742,7 +2742,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(OddKeystone)
+        ITEM_ICON(OddKeystone),
     },
 
     [ITEM_PRETTY_FEATHER] =
@@ -2757,7 +2757,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 20,
-        ITEM_ICON(PrettyFeather)
+        ITEM_ICON(PrettyFeather),
     },
 
     [ITEM_RELIC_COPPER] =
@@ -2884,7 +2884,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(StrangeSouvenir)
+        ITEM_ICON(StrangeSouvenir),
     },
 
 // Fossils
@@ -2951,7 +2951,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
-        ITEM_ICON(OldAmber)
+        ITEM_ICON(OldAmber),
     },
 
     [ITEM_ROOT_FOSSIL] =
@@ -3004,7 +3004,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
-        ITEM_ICON(ArmorFossil)
+        ITEM_ICON(ArmorFossil),
     },
 
     [ITEM_SKULL_FOSSIL] =
@@ -3019,7 +3019,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
-        ITEM_ICON(SkullFossil)
+        ITEM_ICON(SkullFossil),
     },
 
     [ITEM_COVER_FOSSIL] =
@@ -3034,7 +3034,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
-        ITEM_ICON(CoverFossil)
+        ITEM_ICON(CoverFossil),
     },
 
     [ITEM_PLUME_FOSSIL] =
@@ -3049,7 +3049,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
-        ITEM_ICON(PlumeFossil)
+        ITEM_ICON(PlumeFossil),
     },
 
     [ITEM_JAW_FOSSIL] =
@@ -3064,7 +3064,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
-        ITEM_ICON(JawFossil)
+        ITEM_ICON(JawFossil),
     },
 
     [ITEM_SAIL_FOSSIL] =
@@ -3079,7 +3079,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
-        ITEM_ICON(SailFossil)
+        ITEM_ICON(SailFossil),
     },
 
     [ITEM_FOSSILIZED_BIRD] =
@@ -3094,7 +3094,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
-        ITEM_ICON(FossilizedBird)
+        ITEM_ICON(FossilizedBird),
     },
 
     [ITEM_FOSSILIZED_FISH] =
@@ -3107,7 +3107,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
-        ITEM_ICON(FossilizedFish)
+        ITEM_ICON(FossilizedFish),
     },
 
     [ITEM_FOSSILIZED_DRAKE] =
@@ -3122,7 +3122,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
-        ITEM_ICON(FossilizedDrake)
+        ITEM_ICON(FossilizedDrake),
     },
 
     [ITEM_FOSSILIZED_DINO] =
@@ -3134,7 +3134,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
-        ITEM_ICON(FossilizedDino)
+        ITEM_ICON(FossilizedDino),
     },
 
 // Mulch
@@ -3201,7 +3201,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = ITEM_TO_MULCH(ITEM_STABLE_MULCH),
         .flingPower = 30,
-        ITEM_ICON(StableMulch)
+        ITEM_ICON(StableMulch),
     },
 
     [ITEM_GOOEY_MULCH] =
@@ -3327,7 +3327,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(RedApricorn)
+        ITEM_ICON(RedApricorn),
     },
 
     [ITEM_BLUE_APRICORN] =
@@ -3341,7 +3341,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(BlueApricorn)
+        ITEM_ICON(BlueApricorn),
     },
 
     [ITEM_YELLOW_APRICORN] =
@@ -3355,7 +3355,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(YellowApricorn)
+        ITEM_ICON(YellowApricorn),
     },
 
     [ITEM_GREEN_APRICORN] =
@@ -3369,7 +3369,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(GreenApricorn)
+        ITEM_ICON(GreenApricorn),
     },
 
     [ITEM_PINK_APRICORN] =
@@ -3383,7 +3383,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(PinkApricorn)
+        ITEM_ICON(PinkApricorn),
     },
 
     [ITEM_WHITE_APRICORN] =
@@ -3397,7 +3397,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(WhiteApricorn)
+        ITEM_ICON(WhiteApricorn),
     },
 
     [ITEM_BLACK_APRICORN] =
@@ -3411,7 +3411,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(BlackApricorn)
+        ITEM_ICON(BlackApricorn),
     },
 
     [ITEM_WISHING_PIECE] =
@@ -3426,7 +3426,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse, // Todo
         .flingPower = 50,
-        ITEM_ICON(WishingPiece)
+        ITEM_ICON(WishingPiece),
     },
 
     [ITEM_GALARICA_TWIG] =
@@ -3458,7 +3458,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(ArmoriteOre)
+        ITEM_ICON(ArmoriteOre),
     },
 
     [ITEM_DYNITE_ORE] =
@@ -3474,7 +3474,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(DyniteOre)
+        ITEM_ICON(DyniteOre),
     },
 
 // Mail
@@ -3492,7 +3492,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_MAIL,
         .fieldUseFunc = ItemUseOutOfBattle_Mail,
         .secondaryId = ITEM_TO_MAIL(ITEM_ORANGE_MAIL),
-        ITEM_ICON(OrangeMail)
+        ITEM_ICON(OrangeMail),
     },
 
     [ITEM_HARBOR_MAIL] =
@@ -3508,7 +3508,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_MAIL,
         .fieldUseFunc = ItemUseOutOfBattle_Mail,
         .secondaryId = ITEM_TO_MAIL(ITEM_HARBOR_MAIL),
-        ITEM_ICON(HarborMail)
+        ITEM_ICON(HarborMail),
     },
 
     [ITEM_GLITTER_MAIL] =
@@ -3524,7 +3524,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_MAIL,
         .fieldUseFunc = ItemUseOutOfBattle_Mail,
         .secondaryId = ITEM_TO_MAIL(ITEM_GLITTER_MAIL),
-        ITEM_ICON(GlitterMail)
+        ITEM_ICON(GlitterMail),
     },
 
     [ITEM_MECH_MAIL] =
@@ -3540,7 +3540,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_MAIL,
         .fieldUseFunc = ItemUseOutOfBattle_Mail,
         .secondaryId = ITEM_TO_MAIL(ITEM_MECH_MAIL),
-        ITEM_ICON(MechMail)
+        ITEM_ICON(MechMail),
     },
 
     [ITEM_WOOD_MAIL] =
@@ -3556,7 +3556,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_MAIL,
         .fieldUseFunc = ItemUseOutOfBattle_Mail,
         .secondaryId = ITEM_TO_MAIL(ITEM_WOOD_MAIL),
-        ITEM_ICON(WoodMail)
+        ITEM_ICON(WoodMail),
     },
 
     [ITEM_WAVE_MAIL] =
@@ -3572,7 +3572,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_MAIL,
         .fieldUseFunc = ItemUseOutOfBattle_Mail,
         .secondaryId = ITEM_TO_MAIL(ITEM_WAVE_MAIL),
-        ITEM_ICON(WaveMail)
+        ITEM_ICON(WaveMail),
     },
 
     [ITEM_BEAD_MAIL] =
@@ -3585,7 +3585,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_MAIL,
         .fieldUseFunc = ItemUseOutOfBattle_Mail,
         .secondaryId = ITEM_TO_MAIL(ITEM_BEAD_MAIL),
-        ITEM_ICON(BeadMail)
+        ITEM_ICON(BeadMail),
     },
 
     [ITEM_SHADOW_MAIL] =
@@ -3601,7 +3601,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_MAIL,
         .fieldUseFunc = ItemUseOutOfBattle_Mail,
         .secondaryId = ITEM_TO_MAIL(ITEM_SHADOW_MAIL),
-        ITEM_ICON(ShadowMail)
+        ITEM_ICON(ShadowMail),
     },
 
     [ITEM_TROPIC_MAIL] =
@@ -3617,7 +3617,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_MAIL,
         .fieldUseFunc = ItemUseOutOfBattle_Mail,
         .secondaryId = ITEM_TO_MAIL(ITEM_TROPIC_MAIL),
-        ITEM_ICON(TropicMail)
+        ITEM_ICON(TropicMail),
     },
 
     [ITEM_DREAM_MAIL] =
@@ -3630,7 +3630,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_MAIL,
         .fieldUseFunc = ItemUseOutOfBattle_Mail,
         .secondaryId = ITEM_TO_MAIL(ITEM_DREAM_MAIL),
-        ITEM_ICON(DreamMail)
+        ITEM_ICON(DreamMail),
     },
 
     [ITEM_FAB_MAIL] =
@@ -3646,7 +3646,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_MAIL,
         .fieldUseFunc = ItemUseOutOfBattle_Mail,
         .secondaryId = ITEM_TO_MAIL(ITEM_FAB_MAIL),
-        ITEM_ICON(FabMail)
+        ITEM_ICON(FabMail),
     },
 
     [ITEM_RETRO_MAIL] =
@@ -3662,7 +3662,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_MAIL,
         .fieldUseFunc = ItemUseOutOfBattle_Mail,
         .secondaryId = ITEM_TO_MAIL(ITEM_RETRO_MAIL),
-        ITEM_ICON(RetroMail)
+        ITEM_ICON(RetroMail),
     },
 
 // Evolution Items
@@ -3754,7 +3754,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
         .flingPower = 30,
-        ITEM_ICON(SweetApple)
+        ITEM_ICON(SweetApple),
     },
 
     [ITEM_TART_APPLE] =
@@ -3770,7 +3770,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
         .flingPower = 30,
-        ITEM_ICON(TartApple)
+        ITEM_ICON(TartApple),
     },
 
     [ITEM_CRACKED_POT] =
@@ -3857,7 +3857,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
         .flingPower = 30,
-        ITEM_ICON(DragonScale)
+        ITEM_ICON(DragonScale),
     },
 
     [ITEM_UPGRADE] =
@@ -3873,7 +3873,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
         .flingPower = 30,
-        ITEM_ICON(Upgrade)
+        ITEM_ICON(Upgrade),
     },
 
     [ITEM_PROTECTOR] =
@@ -3889,7 +3889,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
         .flingPower = 80,
-        ITEM_ICON(Protector)
+        ITEM_ICON(Protector),
     },
 
     [ITEM_ELECTIRIZER] =
@@ -3905,7 +3905,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
         .flingPower = 80,
-        ITEM_ICON(Electirizer)
+        ITEM_ICON(Electirizer),
     },
 
     [ITEM_MAGMARIZER] =
@@ -3921,7 +3921,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
         .flingPower = 80,
-        ITEM_ICON(Magmarizer)
+        ITEM_ICON(Magmarizer),
     },
 
     [ITEM_DUBIOUS_DISC] =
@@ -3937,7 +3937,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
         .flingPower = 50,
-        ITEM_ICON(DubiousDisc)
+        ITEM_ICON(DubiousDisc),
     },
 
     [ITEM_REAPER_CLOTH] =
@@ -3954,7 +3954,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
         .flingPower = 10,
-        ITEM_ICON(ReaperCloth)
+        ITEM_ICON(ReaperCloth),
     },
 
     [ITEM_PRISM_SCALE] =
@@ -3970,7 +3970,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
         .flingPower = 30,
-        ITEM_ICON(PrismScale)
+        ITEM_ICON(PrismScale),
     },
 
     [ITEM_WHIPPED_DREAM] =
@@ -3987,7 +3987,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
         .flingPower = 80,
-        ITEM_ICON(WhippedDream)
+        ITEM_ICON(WhippedDream),
     },
 
     [ITEM_SACHET] =
@@ -4003,7 +4003,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
         .flingPower = 80,
-        ITEM_ICON(Sachet)
+        ITEM_ICON(Sachet),
     },
 
     [ITEM_OVAL_STONE] =
@@ -4019,7 +4019,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
         .flingPower = 80,
-        ITEM_ICON(OvalStone)
+        ITEM_ICON(OvalStone),
     },
 
     [ITEM_STRAWBERRY_SWEET] =
@@ -4034,7 +4034,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .flingPower = 10,
-        ITEM_ICON(StrawberrySweet)
+        ITEM_ICON(StrawberrySweet),
     },
 
     [ITEM_LOVE_SWEET] =
@@ -4049,7 +4049,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .flingPower = 10,
-        ITEM_ICON(LoveSweet)
+        ITEM_ICON(LoveSweet),
     },
 
     [ITEM_BERRY_SWEET] =
@@ -4064,7 +4064,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .flingPower = 10,
-        ITEM_ICON(BerrySweet)
+        ITEM_ICON(BerrySweet),
     },
 
     [ITEM_CLOVER_SWEET] =
@@ -4079,7 +4079,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .flingPower = 10,
-        ITEM_ICON(CloverSweet)
+        ITEM_ICON(CloverSweet),
     },
 
     [ITEM_FLOWER_SWEET] =
@@ -4094,7 +4094,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .flingPower = 10,
-        ITEM_ICON(FlowerSweet)
+        ITEM_ICON(FlowerSweet),
     },
 
     [ITEM_STAR_SWEET] =
@@ -4109,7 +4109,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .flingPower = 10,
-        ITEM_ICON(StarSweet)
+        ITEM_ICON(StarSweet),
     },
 
     [ITEM_RIBBON_SWEET] =
@@ -4124,7 +4124,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .flingPower = 10,
-        ITEM_ICON(RibbonSweet)
+        ITEM_ICON(RibbonSweet),
     },
 
     [ITEM_EVERSTONE] =
@@ -4140,7 +4140,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(Everstone)
+        ITEM_ICON(Everstone),
     },
 
 // Nectars
@@ -4155,7 +4155,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_FormChange_ConsumedOnUse,
         .flingPower = 10,
-        ITEM_ICON(RedNectar)
+        ITEM_ICON(RedNectar),
     },
 
     [ITEM_YELLOW_NECTAR] =
@@ -4168,7 +4168,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_FormChange_ConsumedOnUse,
         .flingPower = 10,
-        ITEM_ICON(YellowNectar)
+        ITEM_ICON(YellowNectar),
     },
 
     [ITEM_PINK_NECTAR] =
@@ -4181,7 +4181,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_FormChange_ConsumedOnUse,
         .flingPower = 10,
-        ITEM_ICON(PinkNectar)
+        ITEM_ICON(PinkNectar),
     },
 
     [ITEM_PURPLE_NECTAR] =
@@ -4194,7 +4194,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_FormChange_ConsumedOnUse,
         .flingPower = 10,
-        ITEM_ICON(PurpleNectar)
+        ITEM_ICON(PurpleNectar),
     },
 
 // Plates
@@ -4214,7 +4214,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FIRE,
         .flingPower = 90,
-        ITEM_ICON(FlamePlate)
+        ITEM_ICON(FlamePlate),
     },
 
     [ITEM_SPLASH_PLATE] =
@@ -4232,7 +4232,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_WATER,
         .flingPower = 90,
-        ITEM_ICON(SplashPlate)
+        ITEM_ICON(SplashPlate),
     },
 
     [ITEM_ZAP_PLATE] =
@@ -4250,7 +4250,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ELECTRIC,
         .flingPower = 90,
-        ITEM_ICON(ZapPlate)
+        ITEM_ICON(ZapPlate),
     },
 
     [ITEM_MEADOW_PLATE] =
@@ -4268,7 +4268,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GRASS,
         .flingPower = 90,
-        ITEM_ICON(MeadowPlate)
+        ITEM_ICON(MeadowPlate),
     },
 
     [ITEM_ICICLE_PLATE] =
@@ -4286,7 +4286,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ICE,
         .flingPower = 90,
-        ITEM_ICON(IciclePlate)
+        ITEM_ICON(IciclePlate),
     },
 
     [ITEM_FIST_PLATE] =
@@ -4304,7 +4304,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FIGHTING,
         .flingPower = 90,
-        ITEM_ICON(FistPlate)
+        ITEM_ICON(FistPlate),
     },
 
     [ITEM_TOXIC_PLATE] =
@@ -4322,7 +4322,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_POISON,
         .flingPower = 90,
-        ITEM_ICON(ToxicPlate)
+        ITEM_ICON(ToxicPlate),
     },
 
     [ITEM_EARTH_PLATE] =
@@ -4340,7 +4340,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GROUND,
         .flingPower = 90,
-        ITEM_ICON(EarthPlate)
+        ITEM_ICON(EarthPlate),
     },
 
     [ITEM_SKY_PLATE] =
@@ -4358,7 +4358,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FLYING,
         .flingPower = 90,
-        ITEM_ICON(SkyPlate)
+        ITEM_ICON(SkyPlate),
     },
 
     [ITEM_MIND_PLATE] =
@@ -4376,7 +4376,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_PSYCHIC,
         .flingPower = 90,
-        ITEM_ICON(MindPlate)
+        ITEM_ICON(MindPlate),
     },
 
     [ITEM_INSECT_PLATE] =
@@ -4394,7 +4394,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_BUG,
         .flingPower = 90,
-        ITEM_ICON(InsectPlate)
+        ITEM_ICON(InsectPlate),
     },
 
     [ITEM_STONE_PLATE] =
@@ -4412,7 +4412,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ROCK,
         .flingPower = 90,
-        ITEM_ICON(StonePlate)
+        ITEM_ICON(StonePlate),
     },
 
     [ITEM_SPOOKY_PLATE] =
@@ -4430,7 +4430,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GHOST,
         .flingPower = 90,
-        ITEM_ICON(SpookyPlate)
+        ITEM_ICON(SpookyPlate),
     },
 
     [ITEM_DRACO_PLATE] =
@@ -4448,7 +4448,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_DRAGON,
         .flingPower = 90,
-        ITEM_ICON(DracoPlate)
+        ITEM_ICON(DracoPlate),
     },
 
     [ITEM_DREAD_PLATE] =
@@ -4466,7 +4466,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_DARK,
         .flingPower = 90,
-        ITEM_ICON(DreadPlate)
+        ITEM_ICON(DreadPlate),
     },
 
     [ITEM_IRON_PLATE] =
@@ -4484,7 +4484,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_STEEL,
         .flingPower = 90,
-        ITEM_ICON(IronPlate)
+        ITEM_ICON(IronPlate),
     },
 
     [ITEM_PIXIE_PLATE] =
@@ -4502,7 +4502,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FAIRY,
         .flingPower = 90,
-        ITEM_ICON(PixiePlate)
+        ITEM_ICON(PixiePlate),
     },
 
 // Drives
@@ -4521,7 +4521,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_WATER,
         .flingPower = 70,
-        ITEM_ICON(DouseDrive)
+        ITEM_ICON(DouseDrive),
     },
 
     [ITEM_SHOCK_DRIVE] =
@@ -4538,7 +4538,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ELECTRIC,
         .flingPower = 70,
-        ITEM_ICON(ShockDrive)
+        ITEM_ICON(ShockDrive),
     },
 
     [ITEM_BURN_DRIVE] =
@@ -4555,7 +4555,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FIRE,
         .flingPower = 70,
-        ITEM_ICON(BurnDrive)
+        ITEM_ICON(BurnDrive),
     },
 
     [ITEM_CHILL_DRIVE] =
@@ -4572,7 +4572,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ICE,
         .flingPower = 70,
-        ITEM_ICON(ChillDrive)
+        ITEM_ICON(ChillDrive),
     },
 
 // Memories
@@ -4593,7 +4593,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FIRE,
         .flingPower = 50,
-        ITEM_ICON(FireMemory)
+        ITEM_ICON(FireMemory),
     },
 
     [ITEM_WATER_MEMORY] =
@@ -4612,7 +4612,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_WATER,
         .flingPower = 50,
-        ITEM_ICON(WaterMemory)
+        ITEM_ICON(WaterMemory),
     },
 
     [ITEM_ELECTRIC_MEMORY] =
@@ -4631,7 +4631,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ELECTRIC,
         .flingPower = 50,
-        ITEM_ICON(ElectricMemory)
+        ITEM_ICON(ElectricMemory),
     },
 
     [ITEM_GRASS_MEMORY] =
@@ -4650,7 +4650,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GRASS,
         .flingPower = 50,
-        ITEM_ICON(GrassMemory)
+        ITEM_ICON(GrassMemory),
     },
 
     [ITEM_ICE_MEMORY] =
@@ -4669,7 +4669,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ICE,
         .flingPower = 50,
-        ITEM_ICON(IceMemory)
+        ITEM_ICON(IceMemory),
     },
 
     [ITEM_FIGHTING_MEMORY] =
@@ -4688,7 +4688,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FIGHTING,
         .flingPower = 50,
-        ITEM_ICON(FightingMemory)
+        ITEM_ICON(FightingMemory),
     },
 
     [ITEM_POISON_MEMORY] =
@@ -4707,7 +4707,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_POISON,
         .flingPower = 50,
-        ITEM_ICON(PoisonMemory)
+        ITEM_ICON(PoisonMemory),
     },
 
     [ITEM_GROUND_MEMORY] =
@@ -4726,7 +4726,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GROUND,
         .flingPower = 50,
-        ITEM_ICON(GroundMemory)
+        ITEM_ICON(GroundMemory),
     },
 
     [ITEM_FLYING_MEMORY] =
@@ -4745,7 +4745,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FLYING,
         .flingPower = 50,
-        ITEM_ICON(FlyingMemory)
+        ITEM_ICON(FlyingMemory),
     },
 
     [ITEM_PSYCHIC_MEMORY] =
@@ -4764,7 +4764,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_PSYCHIC,
         .flingPower = 50,
-        ITEM_ICON(PsychicMemory)
+        ITEM_ICON(PsychicMemory),
     },
 
     [ITEM_BUG_MEMORY] =
@@ -4783,7 +4783,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_BUG,
         .flingPower = 50,
-        ITEM_ICON(BugMemory)
+        ITEM_ICON(BugMemory),
     },
 
     [ITEM_ROCK_MEMORY] =
@@ -4802,7 +4802,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ROCK,
         .flingPower = 50,
-        ITEM_ICON(RockMemory)
+        ITEM_ICON(RockMemory),
     },
 
     [ITEM_GHOST_MEMORY] =
@@ -4821,7 +4821,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GHOST,
         .flingPower = 50,
-        ITEM_ICON(GhostMemory)
+        ITEM_ICON(GhostMemory),
     },
 
     [ITEM_DRAGON_MEMORY] =
@@ -4840,7 +4840,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_DRAGON,
         .flingPower = 50,
-        ITEM_ICON(DragonMemory)
+        ITEM_ICON(DragonMemory),
     },
 
     [ITEM_DARK_MEMORY] =
@@ -4859,7 +4859,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_DARK,
         .flingPower = 50,
-        ITEM_ICON(DarkMemory)
+        ITEM_ICON(DarkMemory),
     },
 
     [ITEM_STEEL_MEMORY] =
@@ -4878,7 +4878,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_STEEL,
         .flingPower = 50,
-        ITEM_ICON(SteelMemory)
+        ITEM_ICON(SteelMemory),
     },
 
     [ITEM_FAIRY_MEMORY] =
@@ -4897,7 +4897,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FAIRY,
         .flingPower = 50,
-        ITEM_ICON(FairyMemory)
+        ITEM_ICON(FairyMemory),
     },
 
     [ITEM_RUSTED_SWORD] =
@@ -4944,7 +4944,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(RedOrb)
+        ITEM_ICON(RedOrb),
     },
 
     [ITEM_BLUE_ORB] =
@@ -4959,7 +4959,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(BlueOrb)
+        ITEM_ICON(BlueOrb),
     },
 
 // Mega Stones
@@ -4978,7 +4978,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Venusaurite)
+        ITEM_ICON(Venusaurite),
     },
 
     [ITEM_CHARIZARDITE_X] =
@@ -4992,7 +4992,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(CharizarditeX)
+        ITEM_ICON(CharizarditeX),
     },
 
     [ITEM_CHARIZARDITE_Y] =
@@ -5006,7 +5006,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(CharizarditeY)
+        ITEM_ICON(CharizarditeY),
     },
 
     [ITEM_BLASTOISINITE] =
@@ -5022,7 +5022,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Blastoisinite)
+        ITEM_ICON(Blastoisinite),
     },
 
     [ITEM_BEEDRILLITE] =
@@ -5038,7 +5038,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Beedrillite)
+        ITEM_ICON(Beedrillite),
     },
 
     [ITEM_PIDGEOTITE] =
@@ -5054,7 +5054,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Pidgeotite)
+        ITEM_ICON(Pidgeotite),
     },
 
     [ITEM_ALAKAZITE] =
@@ -5070,7 +5070,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Alakazite)
+        ITEM_ICON(Alakazite),
     },
 
     [ITEM_SLOWBRONITE] =
@@ -5086,7 +5086,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Slowbronite)
+        ITEM_ICON(Slowbronite),
     },
 
     [ITEM_GENGARITE] =
@@ -5102,7 +5102,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Gengarite)
+        ITEM_ICON(Gengarite),
     },
 
     [ITEM_KANGASKHANITE] =
@@ -5118,7 +5118,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Kangaskhanite)
+        ITEM_ICON(Kangaskhanite),
     },
 
     [ITEM_PINSIRITE] =
@@ -5134,7 +5134,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Pinsirite)
+        ITEM_ICON(Pinsirite),
     },
 
     [ITEM_GYARADOSITE] =
@@ -5150,7 +5150,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Gyaradosite)
+        ITEM_ICON(Gyaradosite),
     },
 
     [ITEM_AERODACTYLITE] =
@@ -5166,7 +5166,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Aerodactylite)
+        ITEM_ICON(Aerodactylite),
     },
 
     [ITEM_MEWTWONITE_X] =
@@ -5180,7 +5180,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(MewtwoniteX)
+        ITEM_ICON(MewtwoniteX),
     },
 
     [ITEM_MEWTWONITE_Y] =
@@ -5194,7 +5194,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(MewtwoniteY)
+        ITEM_ICON(MewtwoniteY),
     },
 
     [ITEM_AMPHAROSITE] =
@@ -5210,7 +5210,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Ampharosite)
+        ITEM_ICON(Ampharosite),
     },
 
     [ITEM_STEELIXITE] =
@@ -5226,7 +5226,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Steelixite)
+        ITEM_ICON(Steelixite),
     },
 
     [ITEM_SCIZORITE] =
@@ -5242,7 +5242,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Scizorite)
+        ITEM_ICON(Scizorite),
     },
 
     [ITEM_HERACRONITE] =
@@ -5258,7 +5258,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Heracronite)
+        ITEM_ICON(Heracronite),
     },
 
     [ITEM_HOUNDOOMINITE] =
@@ -5274,7 +5274,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Houndoominite)
+        ITEM_ICON(Houndoominite),
     },
 
     [ITEM_TYRANITARITE] =
@@ -5290,7 +5290,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Tyranitarite)
+        ITEM_ICON(Tyranitarite),
     },
 
     [ITEM_SCEPTILITE] =
@@ -5306,7 +5306,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Sceptilite)
+        ITEM_ICON(Sceptilite),
     },
 
     [ITEM_BLAZIKENITE] =
@@ -5322,7 +5322,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Blazikenite)
+        ITEM_ICON(Blazikenite),
     },
 
     [ITEM_SWAMPERTITE] =
@@ -5338,7 +5338,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Swampertite)
+        ITEM_ICON(Swampertite),
     },
 
     [ITEM_GARDEVOIRITE] =
@@ -5354,7 +5354,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Gardevoirite)
+        ITEM_ICON(Gardevoirite),
     },
 
     [ITEM_SABLENITE] =
@@ -5370,7 +5370,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Sablenite)
+        ITEM_ICON(Sablenite),
     },
 
     [ITEM_MAWILITE] =
@@ -5386,7 +5386,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Mawilite)
+        ITEM_ICON(Mawilite),
     },
 
     [ITEM_AGGRONITE] =
@@ -5402,7 +5402,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Aggronite)
+        ITEM_ICON(Aggronite),
     },
 
     [ITEM_MEDICHAMITE] =
@@ -5418,7 +5418,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Medichamite)
+        ITEM_ICON(Medichamite),
     },
 
     [ITEM_MANECTITE] =
@@ -5434,7 +5434,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Manectite)
+        ITEM_ICON(Manectite),
     },
 
     [ITEM_SHARPEDONITE] =
@@ -5450,7 +5450,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Sharpedonite)
+        ITEM_ICON(Sharpedonite),
     },
 
     [ITEM_CAMERUPTITE] =
@@ -5466,7 +5466,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Cameruptite)
+        ITEM_ICON(Cameruptite),
     },
 
     [ITEM_ALTARIANITE] =
@@ -5482,7 +5482,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Altarianite)
+        ITEM_ICON(Altarianite),
     },
 
     [ITEM_BANETTITE] =
@@ -5498,7 +5498,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Banettite)
+        ITEM_ICON(Banettite),
     },
 
     [ITEM_ABSOLITE] =
@@ -5514,7 +5514,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Absolite)
+        ITEM_ICON(Absolite),
     },
 
     [ITEM_GLALITITE] =
@@ -5530,7 +5530,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Glalitite)
+        ITEM_ICON(Glalitite),
     },
 
     [ITEM_SALAMENCITE] =
@@ -5546,7 +5546,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Salamencite)
+        ITEM_ICON(Salamencite),
     },
 
     [ITEM_METAGROSSITE] =
@@ -5562,7 +5562,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Metagrossite)
+        ITEM_ICON(Metagrossite),
     },
 
     [ITEM_LATIASITE] =
@@ -5578,7 +5578,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Latiasite)
+        ITEM_ICON(Latiasite),
     },
 
     [ITEM_LATIOSITE] =
@@ -5594,7 +5594,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Latiosite)
+        ITEM_ICON(Latiosite),
     },
 
     [ITEM_LOPUNNITE] =
@@ -5610,7 +5610,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Lopunnite)
+        ITEM_ICON(Lopunnite),
     },
 
     [ITEM_GARCHOMPITE] =
@@ -5626,7 +5626,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Garchompite)
+        ITEM_ICON(Garchompite),
     },
 
     [ITEM_LUCARIONITE] =
@@ -5642,7 +5642,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Lucarionite)
+        ITEM_ICON(Lucarionite),
     },
 
     [ITEM_ABOMASITE] =
@@ -5658,7 +5658,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Abomasite)
+        ITEM_ICON(Abomasite),
     },
 
     [ITEM_GALLADITE] =
@@ -5674,7 +5674,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Galladite)
+        ITEM_ICON(Galladite),
     },
 
     [ITEM_AUDINITE] =
@@ -5690,7 +5690,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Audinite)
+        ITEM_ICON(Audinite),
     },
 
     [ITEM_DIANCITE] =
@@ -5706,7 +5706,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(Diancite)
+        ITEM_ICON(Diancite),
     },
 
 // Gems
@@ -5725,7 +5725,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_NORMAL,
-        ITEM_ICON(NormalGem)
+        ITEM_ICON(NormalGem),
     },
 
     [ITEM_FIRE_GEM] =
@@ -5742,7 +5742,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FIRE,
-        ITEM_ICON(FireGem)
+        ITEM_ICON(FireGem),
     },
 
     [ITEM_WATER_GEM] =
@@ -5759,7 +5759,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_WATER,
-        ITEM_ICON(WaterGem)
+        ITEM_ICON(WaterGem),
     },
 
     [ITEM_ELECTRIC_GEM] =
@@ -5776,7 +5776,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ELECTRIC,
-        ITEM_ICON(ElectricGem)
+        ITEM_ICON(ElectricGem),
     },
 
     [ITEM_GRASS_GEM] =
@@ -5793,7 +5793,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GRASS,
-        ITEM_ICON(GrassGem)
+        ITEM_ICON(GrassGem),
     },
 
     [ITEM_ICE_GEM] =
@@ -5810,7 +5810,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ICE,
-        ITEM_ICON(IceGem)
+        ITEM_ICON(IceGem),
     },
 
     [ITEM_FIGHTING_GEM] =
@@ -5827,7 +5827,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FIGHTING,
-        ITEM_ICON(FightingGem)
+        ITEM_ICON(FightingGem),
     },
 
     [ITEM_POISON_GEM] =
@@ -5844,7 +5844,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_POISON,
-        ITEM_ICON(PoisonGem)
+        ITEM_ICON(PoisonGem),
     },
 
     [ITEM_GROUND_GEM] =
@@ -5861,7 +5861,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GROUND,
-        ITEM_ICON(GroundGem)
+        ITEM_ICON(GroundGem),
     },
 
     [ITEM_FLYING_GEM] =
@@ -5878,7 +5878,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FLYING,
-        ITEM_ICON(FlyingGem)
+        ITEM_ICON(FlyingGem),
     },
 
     [ITEM_PSYCHIC_GEM] =
@@ -5895,7 +5895,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_PSYCHIC,
-        ITEM_ICON(PsychicGem)
+        ITEM_ICON(PsychicGem),
     },
 
     [ITEM_BUG_GEM] =
@@ -5912,7 +5912,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_BUG,
-        ITEM_ICON(BugGem)
+        ITEM_ICON(BugGem),
     },
 
     [ITEM_ROCK_GEM] =
@@ -5929,7 +5929,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ROCK,
-        ITEM_ICON(RockGem)
+        ITEM_ICON(RockGem),
     },
 
     [ITEM_GHOST_GEM] =
@@ -5946,7 +5946,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GHOST,
-        ITEM_ICON(GhostGem)
+        ITEM_ICON(GhostGem),
     },
 
     [ITEM_DRAGON_GEM] =
@@ -5963,7 +5963,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_DRAGON,
-        ITEM_ICON(DragonGem)
+        ITEM_ICON(DragonGem),
     },
 
     [ITEM_DARK_GEM] =
@@ -5980,7 +5980,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_DARK,
-        ITEM_ICON(DarkGem)
+        ITEM_ICON(DarkGem),
     },
 
     [ITEM_STEEL_GEM] =
@@ -5997,7 +5997,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_STEEL,
-        ITEM_ICON(SteelGem)
+        ITEM_ICON(SteelGem),
     },
 
     [ITEM_FAIRY_GEM] =
@@ -6014,7 +6014,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FAIRY,
-        ITEM_ICON(FairyGem)
+        ITEM_ICON(FairyGem),
     },
 
 // Z-Crystals
@@ -6032,7 +6032,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_NORMAL,
-        ITEM_ICON(NormaliumZ)
+        ITEM_ICON(NormaliumZ),
     },
 
     [ITEM_FIRIUM_Z] =
@@ -6048,7 +6048,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FIRE,
-        ITEM_ICON(FiriumZ)
+        ITEM_ICON(FiriumZ),
     },
 
     [ITEM_WATERIUM_Z] =
@@ -6064,7 +6064,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_WATER,
-        ITEM_ICON(WateriumZ)
+        ITEM_ICON(WateriumZ),
     },
 
     [ITEM_ELECTRIUM_Z] =
@@ -6080,7 +6080,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ELECTRIC,
-        ITEM_ICON(ElectriumZ)
+        ITEM_ICON(ElectriumZ),
     },
 
     [ITEM_GRASSIUM_Z] =
@@ -6096,7 +6096,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GRASS,
-        ITEM_ICON(GrassiumZ)
+        ITEM_ICON(GrassiumZ),
     },
 
     [ITEM_ICIUM_Z] =
@@ -6112,7 +6112,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ICE,
-        ITEM_ICON(IciumZ)
+        ITEM_ICON(IciumZ),
     },
 
     [ITEM_FIGHTINIUM_Z] =
@@ -6128,7 +6128,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FIGHTING,
-        ITEM_ICON(FightiniumZ)
+        ITEM_ICON(FightiniumZ),
     },
 
     [ITEM_POISONIUM_Z] =
@@ -6144,7 +6144,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_POISON,
-        ITEM_ICON(PoisoniumZ)
+        ITEM_ICON(PoisoniumZ),
     },
 
     [ITEM_GROUNDIUM_Z] =
@@ -6160,7 +6160,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GROUND,
-        ITEM_ICON(GroundiumZ)
+        ITEM_ICON(GroundiumZ),
     },
 
     [ITEM_FLYINIUM_Z] =
@@ -6176,7 +6176,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FLYING,
-        ITEM_ICON(FlyiniumZ)
+        ITEM_ICON(FlyiniumZ),
     },
 
     [ITEM_PSYCHIUM_Z] =
@@ -6192,7 +6192,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_PSYCHIC,
-        ITEM_ICON(PsychiumZ)
+        ITEM_ICON(PsychiumZ),
     },
 
     [ITEM_BUGINIUM_Z] =
@@ -6208,7 +6208,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_BUG,
-        ITEM_ICON(BuginiumZ)
+        ITEM_ICON(BuginiumZ),
     },
 
     [ITEM_ROCKIUM_Z] =
@@ -6224,7 +6224,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ROCK,
-        ITEM_ICON(RockiumZ)
+        ITEM_ICON(RockiumZ),
     },
 
     [ITEM_GHOSTIUM_Z] =
@@ -6240,7 +6240,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GHOST,
-        ITEM_ICON(GhostiumZ)
+        ITEM_ICON(GhostiumZ),
     },
 
     [ITEM_DRAGONIUM_Z] =
@@ -6256,7 +6256,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_DRAGON,
-        ITEM_ICON(DragoniumZ)
+        ITEM_ICON(DragoniumZ),
     },
 
     [ITEM_DARKINIUM_Z] =
@@ -6272,7 +6272,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_DARK,
-        ITEM_ICON(DarkiniumZ)
+        ITEM_ICON(DarkiniumZ),
     },
 
     [ITEM_STEELIUM_Z] =
@@ -6288,7 +6288,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_STEEL,
-        ITEM_ICON(SteeliumZ)
+        ITEM_ICON(SteeliumZ),
     },
 
     [ITEM_FAIRIUM_Z] =
@@ -6304,7 +6304,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FAIRY,
-        ITEM_ICON(FairiumZ)
+        ITEM_ICON(FairiumZ),
     },
 
     [ITEM_PIKANIUM_Z] =
@@ -6320,7 +6320,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
-        ITEM_ICON(PikaniumZ)
+        ITEM_ICON(PikaniumZ),
     },
 
     [ITEM_EEVIUM_Z] =
@@ -6336,7 +6336,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
-        ITEM_ICON(EeviumZ)
+        ITEM_ICON(EeviumZ),
     },
 
     [ITEM_SNORLIUM_Z] =
@@ -6352,7 +6352,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
-        ITEM_ICON(SnorliumZ)
+        ITEM_ICON(SnorliumZ),
     },
 
     [ITEM_MEWNIUM_Z] =
@@ -6368,7 +6368,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
-        ITEM_ICON(MewniumZ)
+        ITEM_ICON(MewniumZ),
     },
 
     [ITEM_DECIDIUM_Z] =
@@ -6384,7 +6384,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
-        ITEM_ICON(DecidiumZ)
+        ITEM_ICON(DecidiumZ),
     },
 
     [ITEM_INCINIUM_Z] =
@@ -6400,7 +6400,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
-        ITEM_ICON(InciniumZ)
+        ITEM_ICON(InciniumZ),
     },
 
     [ITEM_PRIMARIUM_Z] =
@@ -6416,7 +6416,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
-        ITEM_ICON(PrimariumZ)
+        ITEM_ICON(PrimariumZ),
     },
 
     [ITEM_LYCANIUM_Z] =
@@ -6432,7 +6432,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
-        ITEM_ICON(LycaniumZ)
+        ITEM_ICON(LycaniumZ),
     },
 
     [ITEM_MIMIKIUM_Z] =
@@ -6448,7 +6448,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
-        ITEM_ICON(MimikiumZ)
+        ITEM_ICON(MimikiumZ),
     },
 
     [ITEM_KOMMONIUM_Z] =
@@ -6464,7 +6464,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
-        ITEM_ICON(KommoniumZ)
+        ITEM_ICON(KommoniumZ),
     },
 
     [ITEM_TAPUNIUM_Z] =
@@ -6480,7 +6480,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  //signature z move
-        ITEM_ICON(TapuniumZ)
+        ITEM_ICON(TapuniumZ),
     },
 
     [ITEM_SOLGANIUM_Z] =
@@ -6496,7 +6496,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
-        ITEM_ICON(SolganiumZ)
+        ITEM_ICON(SolganiumZ),
     },
 
     [ITEM_LUNALIUM_Z] =
@@ -6512,7 +6512,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
-        ITEM_ICON(LunaliumZ)
+        ITEM_ICON(LunaliumZ),
     },
 
     [ITEM_MARSHADIUM_Z] =
@@ -6528,7 +6528,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
-        ITEM_ICON(MarshadiumZ)
+        ITEM_ICON(MarshadiumZ),
     },
 
     [ITEM_ALORAICHIUM_Z] =
@@ -6544,7 +6544,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
-        ITEM_ICON(AloraichiumZ)
+        ITEM_ICON(AloraichiumZ),
     },
 
     [ITEM_PIKASHUNIUM_Z] =
@@ -6560,7 +6560,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
-        ITEM_ICON(PikashuniumZ)
+        ITEM_ICON(PikashuniumZ),
     },
 
     [ITEM_ULTRANECROZIUM_Z] =
@@ -6576,7 +6576,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255, //signature z move
-        ITEM_ICON(UltranecroziumZ)
+        ITEM_ICON(UltranecroziumZ),
     },
 
 // Species-specific Held Items
@@ -6594,7 +6594,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(LightBall)
+        ITEM_ICON(LightBall),
     },
 
     [ITEM_LEEK] =
@@ -6610,7 +6610,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
-        ITEM_ICON(Leek)
+        ITEM_ICON(Leek),
     },
 
     [ITEM_THICK_CLUB] =
@@ -6626,7 +6626,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 90,
-        ITEM_ICON(ThickClub)
+        ITEM_ICON(ThickClub),
     },
 
     [ITEM_LUCKY_PUNCH] =
@@ -6643,7 +6643,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 40,
-        ITEM_ICON(LuckyPunch)
+        ITEM_ICON(LuckyPunch),
     },
 
     [ITEM_METAL_POWDER] =
@@ -6660,7 +6660,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(MetalPowder)
+        ITEM_ICON(MetalPowder),
     },
 
     [ITEM_QUICK_POWDER] =
@@ -6677,7 +6677,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(QuickPowder)
+        ITEM_ICON(QuickPowder),
     },
 
     [ITEM_DEEP_SEA_SCALE] =
@@ -6694,7 +6694,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
         .flingPower = 30,
-        ITEM_ICON(DeepSeaScale)
+        ITEM_ICON(DeepSeaScale),
     },
 
     [ITEM_DEEP_SEA_TOOTH] =
@@ -6712,7 +6712,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
         .flingPower = 90,
-        ITEM_ICON(DeepSeaTooth)
+        ITEM_ICON(DeepSeaTooth),
     },
 
     [ITEM_SOUL_DEW] =
@@ -6735,7 +6735,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(SoulDew)
+        ITEM_ICON(SoulDew),
     },
 
     [ITEM_ADAMANT_ORB] =
@@ -6752,7 +6752,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
-        ITEM_ICON(AdamantOrb)
+        ITEM_ICON(AdamantOrb),
     },
 
     [ITEM_LUSTROUS_ORB] =
@@ -6769,7 +6769,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
-        ITEM_ICON(LustrousOrb)
+        ITEM_ICON(LustrousOrb),
     },
 
     [ITEM_GRISEOUS_ORB] =
@@ -6786,7 +6786,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
-        ITEM_ICON(GriseousOrb)
+        ITEM_ICON(GriseousOrb),
     },
 
 // Incenses
@@ -6802,7 +6802,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(SeaIncense)
+        ITEM_ICON(SeaIncense),
     },
 
     [ITEM_LAX_INCENSE] =
@@ -6819,7 +6819,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(LaxIncense)
+        ITEM_ICON(LaxIncense),
     },
 
     [ITEM_ODD_INCENSE] =
@@ -6833,7 +6833,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(OddIncense)
+        ITEM_ICON(OddIncense),
     },
 
     [ITEM_ROCK_INCENSE] =
@@ -6847,7 +6847,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(RockIncense)
+        ITEM_ICON(RockIncense),
     },
 
     [ITEM_FULL_INCENSE] =
@@ -6861,7 +6861,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(FullIncense)
+        ITEM_ICON(FullIncense),
     },
 
     [ITEM_WAVE_INCENSE] =
@@ -6875,7 +6875,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(WaveIncense)
+        ITEM_ICON(WaveIncense),
     },
 
     [ITEM_ROSE_INCENSE] =
@@ -6889,7 +6889,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(RoseIncense)
+        ITEM_ICON(RoseIncense),
     },
 
     [ITEM_LUCK_INCENSE] =
@@ -6902,7 +6902,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(LuckIncense)
+        ITEM_ICON(LuckIncense),
     },
 
     [ITEM_PURE_INCENSE] =
@@ -6915,7 +6915,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(PureIncense)
+        ITEM_ICON(PureIncense),
     },
 
 // Contest Scarves
@@ -7020,7 +7020,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
-        ITEM_ICON(MachoBrace)
+        ITEM_ICON(MachoBrace),
     },
 
     [ITEM_POWER_WEIGHT] =
@@ -7038,7 +7038,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = STAT_HP,
         .flingPower = 70,
-        ITEM_ICON(PowerWeight)
+        ITEM_ICON(PowerWeight),
     },
 
     [ITEM_POWER_BRACER] =
@@ -7056,7 +7056,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = STAT_ATK,
         .flingPower = 70,
-        ITEM_ICON(PowerBracer)
+        ITEM_ICON(PowerBracer),
     },
 
     [ITEM_POWER_BELT] =
@@ -7074,7 +7074,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = STAT_DEF,
         .flingPower = 70,
-        ITEM_ICON(PowerBelt)
+        ITEM_ICON(PowerBelt),
     },
 
     [ITEM_POWER_LENS] =
@@ -7093,7 +7093,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = STAT_SPATK,
         .flingPower = 70,
-        ITEM_ICON(PowerLens)
+        ITEM_ICON(PowerLens),
     },
 
     [ITEM_POWER_BAND] =
@@ -7111,7 +7111,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = STAT_SPDEF,
         .flingPower = 70,
-        ITEM_ICON(PowerBand)
+        ITEM_ICON(PowerBand),
     },
 
     [ITEM_POWER_ANKLET] =
@@ -7129,7 +7129,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = STAT_SPEED,
         .flingPower = 70,
-        ITEM_ICON(PowerAnklet)
+        ITEM_ICON(PowerAnklet),
     },
 
 // Type-boosting Held Items
@@ -7149,7 +7149,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(SilkScarf)
+        ITEM_ICON(SilkScarf),
     },
 
     [ITEM_CHARCOAL] =
@@ -7166,7 +7166,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(Charcoal)
+        ITEM_ICON(Charcoal),
     },
 
     [ITEM_MYSTIC_WATER] =
@@ -7184,7 +7184,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(MysticWater)
+        ITEM_ICON(MysticWater),
     },
 
     [ITEM_MAGNET] =
@@ -7201,7 +7201,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(Magnet)
+        ITEM_ICON(Magnet),
     },
 
     [ITEM_MIRACLE_SEED] =
@@ -7215,7 +7215,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(MiracleSeed)
+        ITEM_ICON(MiracleSeed),
     },
 
     [ITEM_NEVER_MELT_ICE] =
@@ -7233,7 +7233,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(NeverMeltIce)
+        ITEM_ICON(NeverMeltIce),
     },
 
     [ITEM_BLACK_BELT] =
@@ -7268,7 +7268,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 70,
-        ITEM_ICON(PoisonBarb)
+        ITEM_ICON(PoisonBarb),
     },
 
     [ITEM_SOFT_SAND] =
@@ -7286,7 +7286,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(SoftSand)
+        ITEM_ICON(SoftSand),
     },
 
     [ITEM_SHARP_BEAK] =
@@ -7303,7 +7303,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 50,
-        ITEM_ICON(SharpBeak)
+        ITEM_ICON(SharpBeak),
     },
 
     [ITEM_TWISTED_SPOON] =
@@ -7317,7 +7317,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(TwistedSpoon)
+        ITEM_ICON(TwistedSpoon),
     },
 
     [ITEM_SILVER_POWDER] =
@@ -7335,7 +7335,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(SilverPowder)
+        ITEM_ICON(SilverPowder),
     },
 
     [ITEM_HARD_STONE] =
@@ -7349,7 +7349,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
-        ITEM_ICON(HardStone)
+        ITEM_ICON(HardStone),
     },
 
     [ITEM_SPELL_TAG] =
@@ -7366,7 +7366,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(SpellTag)
+        ITEM_ICON(SpellTag),
     },
 
     [ITEM_DRAGON_FANG] =
@@ -7383,7 +7383,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 70,
-        ITEM_ICON(DragonFang)
+        ITEM_ICON(DragonFang),
     },
 
     [ITEM_BLACK_GLASSES] =
@@ -7420,7 +7420,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
         .flingPower = 30,
-        ITEM_ICON(MetalCoat)
+        ITEM_ICON(MetalCoat),
     },
 
 // Choice Items
@@ -7438,7 +7438,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(ChoiceBand)
+        ITEM_ICON(ChoiceBand),
     },
 
     [ITEM_CHOICE_SPECS] =
@@ -7455,7 +7455,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(ChoiceSpecs)
+        ITEM_ICON(ChoiceSpecs),
     },
 
     [ITEM_CHOICE_SCARF] =
@@ -7472,7 +7472,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(ChoiceScarf)
+        ITEM_ICON(ChoiceScarf),
     },
 
 // Status Orbs
@@ -7490,7 +7490,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(FlameOrb)
+        ITEM_ICON(FlameOrb),
     },
 
     [ITEM_TOXIC_ORB] =
@@ -7506,7 +7506,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(ToxicOrb)
+        ITEM_ICON(ToxicOrb),
     },
 
 // Weather Rocks
@@ -7524,7 +7524,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
-        ITEM_ICON(DampRock)
+        ITEM_ICON(DampRock),
     },
 
     [ITEM_HEAT_ROCK] =
@@ -7540,7 +7540,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
-        ITEM_ICON(HeatRock)
+        ITEM_ICON(HeatRock),
     },
 
     [ITEM_SMOOTH_ROCK] =
@@ -7556,7 +7556,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(SmoothRock)
+        ITEM_ICON(SmoothRock),
     },
 
     [ITEM_ICY_ROCK] =
@@ -7572,7 +7572,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 40,
-        ITEM_ICON(IcyRock)
+        ITEM_ICON(IcyRock),
     },
 
 // Terrain Seeds
@@ -7591,7 +7591,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(ElectricSeed)
+        ITEM_ICON(ElectricSeed),
     },
 
     [ITEM_PSYCHIC_SEED] =
@@ -7608,7 +7608,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(PsychicSeed)
+        ITEM_ICON(PsychicSeed),
     },
 
     [ITEM_MISTY_SEED] =
@@ -7625,7 +7625,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(MistySeed)
+        ITEM_ICON(MistySeed),
     },
 
     [ITEM_GRASSY_SEED] =
@@ -7642,7 +7642,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(GrassySeed)
+        ITEM_ICON(GrassySeed),
     },
 
 // Type-activated Stat Modifiers
@@ -7661,7 +7661,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(AbsorbBulb)
+        ITEM_ICON(AbsorbBulb),
     },
 
     [ITEM_CELL_BATTERY] =
@@ -7679,7 +7679,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(CellBattery)
+        ITEM_ICON(CellBattery),
     },
 
     [ITEM_LUMINOUS_MOSS] =
@@ -7697,7 +7697,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(LuminousMoss)
+        ITEM_ICON(LuminousMoss),
     },
 
     [ITEM_SNOWBALL] =
@@ -7714,7 +7714,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(Snowball)
+        ITEM_ICON(Snowball),
     },
 
 // Misc. Held Items
@@ -7734,7 +7734,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(BrightPowder)
+        ITEM_ICON(BrightPowder),
     },
 
     [ITEM_WHITE_HERB] =
@@ -7775,7 +7775,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_ExpShare,
         .flingPower = 30,
-        ITEM_ICON(ExpShare)
+        ITEM_ICON(ExpShare),
     },
 
     [ITEM_QUICK_CLAW] =
@@ -7792,7 +7792,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(QuickClaw)
+        ITEM_ICON(QuickClaw),
     },
 
     [ITEM_SOOTHE_BELL] =
@@ -7808,7 +7808,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(SootheBell)
+        ITEM_ICON(SootheBell),
     },
 
     [ITEM_MENTAL_HERB] =
@@ -7846,7 +7846,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
         .flingPower = 30,
-        ITEM_ICON(KingsRock)
+        ITEM_ICON(KingsRock),
     },
 
     [ITEM_AMULET_COIN] =
@@ -7859,7 +7859,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(AmuletCoin)
+        ITEM_ICON(AmuletCoin),
     },
 
     [ITEM_CLEANSE_TAG] =
@@ -7872,7 +7872,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(CleanseTag)
+        ITEM_ICON(CleanseTag),
     },
 
     [ITEM_SMOKE_BALL] =
@@ -7888,7 +7888,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(SmokeBall)
+        ITEM_ICON(SmokeBall),
     },
 
     [ITEM_FOCUS_BAND] =
@@ -7905,7 +7905,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(FocusBand)
+        ITEM_ICON(FocusBand),
     },
 
     [ITEM_LUCKY_EGG] =
@@ -7921,7 +7921,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(LuckyEgg)
+        ITEM_ICON(LuckyEgg),
     },
 
     [ITEM_SCOPE_LENS] =
@@ -7938,7 +7938,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(ScopeLens)
+        ITEM_ICON(ScopeLens),
     },
 
     [ITEM_LEFTOVERS] =
@@ -7956,7 +7956,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(Leftovers)
+        ITEM_ICON(Leftovers),
     },
 
     [ITEM_SHELL_BELL] =
@@ -7992,7 +7992,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(WideLens)
+        ITEM_ICON(WideLens),
     },
 
     [ITEM_MUSCLE_BAND] =
@@ -8009,7 +8009,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(MuscleBand)
+        ITEM_ICON(MuscleBand),
     },
 
     [ITEM_WISE_GLASSES] =
@@ -8027,7 +8027,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(WiseGlasses)
+        ITEM_ICON(WiseGlasses),
     },
 
     [ITEM_EXPERT_BELT] =
@@ -8044,7 +8044,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(ExpertBelt)
+        ITEM_ICON(ExpertBelt),
     },
 
     [ITEM_LIGHT_CLAY] =
@@ -8061,7 +8061,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(LightClay)
+        ITEM_ICON(LightClay),
     },
 
     [ITEM_LIFE_ORB] =
@@ -8077,7 +8077,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(LifeOrb)
+        ITEM_ICON(LifeOrb),
     },
 
     [ITEM_POWER_HERB] =
@@ -8093,7 +8093,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(PowerHerb)
+        ITEM_ICON(PowerHerb),
     },
 
     [ITEM_FOCUS_SASH] =
@@ -8110,7 +8110,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(FocusSash)
+        ITEM_ICON(FocusSash),
     },
 
     [ITEM_ZOOM_LENS] =
@@ -8128,7 +8128,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(ZoomLens)
+        ITEM_ICON(ZoomLens),
     },
 
     [ITEM_METRONOME] =
@@ -8145,7 +8145,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(Metronome)
+        ITEM_ICON(Metronome),
     },
 
     [ITEM_IRON_BALL] =
@@ -8161,7 +8161,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 130,
-        ITEM_ICON(IronBall)
+        ITEM_ICON(IronBall),
     },
 
     [ITEM_LAGGING_TAIL] =
@@ -8174,7 +8174,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(LaggingTail)
+        ITEM_ICON(LaggingTail),
     },
 
     [ITEM_DESTINY_KNOT] =
@@ -8190,7 +8190,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(DestinyKnot)
+        ITEM_ICON(DestinyKnot),
     },
 
     [ITEM_BLACK_SLUDGE] =
@@ -8207,7 +8207,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(BlackSludge)
+        ITEM_ICON(BlackSludge),
     },
 
     [ITEM_GRIP_CLAW] =
@@ -8223,7 +8223,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 90,
-        ITEM_ICON(GripClaw)
+        ITEM_ICON(GripClaw),
     },
 
     [ITEM_STICKY_BARB] =
@@ -8239,7 +8239,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(StickyBarb)
+        ITEM_ICON(StickyBarb),
     },
 
     [ITEM_SHED_SHELL] =
@@ -8255,7 +8255,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(ShedShell)
+        ITEM_ICON(ShedShell),
     },
 
     [ITEM_BIG_ROOT] =
@@ -8272,7 +8272,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(BigRoot)
+        ITEM_ICON(BigRoot),
     },
 
     [ITEM_RAZOR_CLAW] =
@@ -8289,7 +8289,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
         .flingPower = 80,
-        ITEM_ICON(RazorClaw)
+        ITEM_ICON(RazorClaw),
     },
 
     [ITEM_RAZOR_FANG] =
@@ -8304,7 +8304,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
         .flingPower = 30,
-        ITEM_ICON(RazorFang)
+        ITEM_ICON(RazorFang),
     },
 
     [ITEM_EVIOLITE] =
@@ -8321,7 +8321,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 40,
-        ITEM_ICON(Eviolite)
+        ITEM_ICON(Eviolite),
     },
 
     [ITEM_FLOAT_STONE] =
@@ -8337,7 +8337,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(FloatStone)
+        ITEM_ICON(FloatStone),
     },
 
     [ITEM_ROCKY_HELMET] =
@@ -8354,7 +8354,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
-        ITEM_ICON(RockyHelmet)
+        ITEM_ICON(RockyHelmet),
     },
 
     [ITEM_AIR_BALLOON] =
@@ -8371,7 +8371,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(AirBalloon)
+        ITEM_ICON(AirBalloon),
     },
 
     [ITEM_RED_CARD] =
@@ -8388,7 +8388,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(RedCard)
+        ITEM_ICON(RedCard),
     },
 
     [ITEM_RING_TARGET] =
@@ -8405,7 +8405,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(RingTarget)
+        ITEM_ICON(RingTarget),
     },
 
     [ITEM_BINDING_BAND] =
@@ -8421,7 +8421,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(BindingBand)
+        ITEM_ICON(BindingBand),
     },
 
     [ITEM_EJECT_BUTTON] =
@@ -8438,7 +8438,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(EjectButton)
+        ITEM_ICON(EjectButton),
     },
 
     [ITEM_WEAKNESS_POLICY] =
@@ -8456,7 +8456,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(WeaknessPolicy)
+        ITEM_ICON(WeaknessPolicy),
     },
 
     [ITEM_ASSAULT_VEST] =
@@ -8473,7 +8473,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(AssaultVest)
+        ITEM_ICON(AssaultVest),
     },
 
     [ITEM_SAFETY_GOGGLES] =
@@ -8490,7 +8490,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(SafetyGoggles)
+        ITEM_ICON(SafetyGoggles),
     },
 
     [ITEM_ADRENALINE_ORB] =
@@ -8506,7 +8506,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(AdrenalineOrb)
+        ITEM_ICON(AdrenalineOrb),
     },
 
     [ITEM_TERRAIN_EXTENDER] =
@@ -8522,7 +8522,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
-        ITEM_ICON(TerrainExtender)
+        ITEM_ICON(TerrainExtender),
     },
 
     [ITEM_PROTECTIVE_PADS] =
@@ -8539,7 +8539,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(ProtectivePads)
+        ITEM_ICON(ProtectivePads),
     },
 
     [ITEM_THROAT_SPRAY] =
@@ -8555,7 +8555,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(ThroatSpray)
+        ITEM_ICON(ThroatSpray),
     },
 
     [ITEM_EJECT_PACK] =
@@ -8571,7 +8571,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 50,
-        ITEM_ICON(EjectPack)
+        ITEM_ICON(EjectPack),
     },
 
     [ITEM_HEAVY_DUTY_BOOTS] =
@@ -8588,7 +8588,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(HeavyDutyBoots)
+        ITEM_ICON(HeavyDutyBoots),
     },
 
     [ITEM_BLUNDER_POLICY] =
@@ -8605,7 +8605,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        ITEM_ICON(BlunderPolicy)
+        ITEM_ICON(BlunderPolicy),
     },
 
     [ITEM_ROOM_SERVICE] =
@@ -8621,7 +8621,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
-        ITEM_ICON(RoomService)
+        ITEM_ICON(RoomService),
     },
 
     [ITEM_UTILITY_UMBRELLA] =
@@ -8637,7 +8637,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
-        ITEM_ICON(UtilityUmbrella)
+        ITEM_ICON(UtilityUmbrella),
     },
 
 // Berries
@@ -8658,7 +8658,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
         .effect = gItemEffect_ParalyzeHeal,
         .flingPower = 10,
-        ITEM_ICON(CheriBerry)
+        ITEM_ICON(CheriBerry),
     },
 
     [ITEM_CHESTO_BERRY] =
@@ -8677,7 +8677,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
         .effect = gItemEffect_Awakening,
         .flingPower = 10,
-        ITEM_ICON(ChestoBerry)
+        ITEM_ICON(ChestoBerry),
     },
 
     [ITEM_PECHA_BERRY] =
@@ -8696,7 +8696,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
         .effect = gItemEffect_Antidote,
         .flingPower = 10,
-        ITEM_ICON(PechaBerry)
+        ITEM_ICON(PechaBerry),
     },
 
     [ITEM_RAWST_BERRY] =
@@ -8715,7 +8715,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
         .effect = gItemEffect_BurnHeal,
         .flingPower = 10,
-        ITEM_ICON(RawstBerry)
+        ITEM_ICON(RawstBerry),
     },
 
     [ITEM_ASPEAR_BERRY] =
@@ -8734,7 +8734,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
         .effect = gItemEffect_IceHeal,
         .flingPower = 10,
-        ITEM_ICON(AspearBerry)
+        ITEM_ICON(AspearBerry),
     },
 
     [ITEM_LEPPA_BERRY] =
@@ -8754,7 +8754,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_PP,
         .effect = gItemEffect_LeppaBerry,
         .flingPower = 10,
-        ITEM_ICON(LeppaBerry)
+        ITEM_ICON(LeppaBerry),
     },
 
     [ITEM_ORAN_BERRY] =
@@ -8774,7 +8774,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
         .effect = gItemEffect_OranBerry,
         .flingPower = 10,
-        ITEM_ICON(OranBerry)
+        ITEM_ICON(OranBerry),
     },
 
     [ITEM_PERSIM_BERRY] =
@@ -8793,7 +8793,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
         .effect = gItemEffect_PersimBerry,
         .flingPower = 10,
-        ITEM_ICON(PersimBerry)
+        ITEM_ICON(PersimBerry),
     },
 
     [ITEM_LUM_BERRY] =
@@ -8812,7 +8812,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
         .effect = gItemEffect_FullHeal,
         .flingPower = 10,
-        ITEM_ICON(LumBerry)
+        ITEM_ICON(LumBerry),
     },
 
     [ITEM_SITRUS_BERRY] =
@@ -8841,7 +8841,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
         .effect = gItemEffect_SitrusBerry,
         .flingPower = 10,
-        ITEM_ICON(SitrusBerry)
+        ITEM_ICON(SitrusBerry),
     },
 
     [ITEM_FIGY_BERRY] =
@@ -8856,7 +8856,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(FigyBerry)
+        ITEM_ICON(FigyBerry),
     },
 
     [ITEM_WIKI_BERRY] =
@@ -8871,7 +8871,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(WikiBerry)
+        ITEM_ICON(WikiBerry),
     },
 
     [ITEM_MAGO_BERRY] =
@@ -8886,7 +8886,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(MagoBerry)
+        ITEM_ICON(MagoBerry),
     },
 
     [ITEM_AGUAV_BERRY] =
@@ -8901,7 +8901,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(AguavBerry)
+        ITEM_ICON(AguavBerry),
     },
 
     [ITEM_IAPAPA_BERRY] =
@@ -8916,7 +8916,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(IapapaBerry)
+        ITEM_ICON(IapapaBerry),
     },
 
     [ITEM_RAZZ_BERRY] =
@@ -8932,7 +8932,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(RazzBerry)
+        ITEM_ICON(RazzBerry),
     },
 
     [ITEM_BLUK_BERRY] =
@@ -8948,7 +8948,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(BlukBerry)
+        ITEM_ICON(BlukBerry),
     },
 
     [ITEM_NANAB_BERRY] =
@@ -8964,7 +8964,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(NanabBerry)
+        ITEM_ICON(NanabBerry),
     },
 
     [ITEM_WEPEAR_BERRY] =
@@ -8980,7 +8980,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(WepearBerry)
+        ITEM_ICON(WepearBerry),
     },
 
     [ITEM_PINAP_BERRY] =
@@ -8996,7 +8996,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(PinapBerry)
+        ITEM_ICON(PinapBerry),
     },
 
     [ITEM_POMEG_BERRY] =
@@ -9013,7 +9013,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_ReduceEV,
         .effect = gItemEffect_PomegBerry,
         .flingPower = 10,
-        ITEM_ICON(PomegBerry)
+        ITEM_ICON(PomegBerry),
     },
 
     [ITEM_KELPSY_BERRY] =
@@ -9030,7 +9030,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_ReduceEV,
         .effect = gItemEffect_KelpsyBerry,
         .flingPower = 10,
-        ITEM_ICON(KelpsyBerry)
+        ITEM_ICON(KelpsyBerry),
     },
 
     [ITEM_QUALOT_BERRY] =
@@ -9047,7 +9047,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_ReduceEV,
         .effect = gItemEffect_QualotBerry,
         .flingPower = 10,
-        ITEM_ICON(QualotBerry)
+        ITEM_ICON(QualotBerry),
     },
 
     [ITEM_HONDEW_BERRY] =
@@ -9064,7 +9064,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_ReduceEV,
         .effect = gItemEffect_HondewBerry,
         .flingPower = 10,
-        ITEM_ICON(HondewBerry)
+        ITEM_ICON(HondewBerry),
     },
 
     [ITEM_GREPA_BERRY] =
@@ -9081,7 +9081,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_ReduceEV,
         .effect = gItemEffect_GrepaBerry,
         .flingPower = 10,
-        ITEM_ICON(GrepaBerry)
+        ITEM_ICON(GrepaBerry),
     },
 
     [ITEM_TAMATO_BERRY] =
@@ -9098,7 +9098,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_ReduceEV,
         .effect = gItemEffect_TamatoBerry,
         .flingPower = 10,
-        ITEM_ICON(TamatoBerry)
+        ITEM_ICON(TamatoBerry),
     },
 
     [ITEM_CORNN_BERRY] =
@@ -9114,7 +9114,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(CornnBerry)
+        ITEM_ICON(CornnBerry),
     },
 
     [ITEM_MAGOST_BERRY] =
@@ -9130,7 +9130,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(MagostBerry)
+        ITEM_ICON(MagostBerry),
     },
 
     [ITEM_RABUTA_BERRY] =
@@ -9146,7 +9146,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(RabutaBerry)
+        ITEM_ICON(RabutaBerry),
     },
 
     [ITEM_NOMEL_BERRY] =
@@ -9162,7 +9162,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(NomelBerry)
+        ITEM_ICON(NomelBerry),
     },
 
     [ITEM_SPELON_BERRY] =
@@ -9178,7 +9178,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(SpelonBerry)
+        ITEM_ICON(SpelonBerry),
     },
 
     [ITEM_PAMTRE_BERRY] =
@@ -9194,7 +9194,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(PamtreBerry)
+        ITEM_ICON(PamtreBerry),
     },
 
     [ITEM_WATMEL_BERRY] =
@@ -9210,7 +9210,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(WatmelBerry)
+        ITEM_ICON(WatmelBerry),
     },
 
     [ITEM_DURIN_BERRY] =
@@ -9226,7 +9226,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(DurinBerry)
+        ITEM_ICON(DurinBerry),
     },
 
     [ITEM_BELUE_BERRY] =
@@ -9242,7 +9242,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(BelueBerry)
+        ITEM_ICON(BelueBerry),
     },
 
     [ITEM_CHILAN_BERRY] =
@@ -9260,7 +9260,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(ChilanBerry)
+        ITEM_ICON(ChilanBerry),
     },
 
     [ITEM_OCCA_BERRY] =
@@ -9278,7 +9278,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(OccaBerry)
+        ITEM_ICON(OccaBerry),
     },
 
     [ITEM_PASSHO_BERRY] =
@@ -9296,7 +9296,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(PasshoBerry)
+        ITEM_ICON(PasshoBerry),
     },
 
     [ITEM_WACAN_BERRY] =
@@ -9314,7 +9314,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(WacanBerry)
+        ITEM_ICON(WacanBerry),
     },
 
     [ITEM_RINDO_BERRY] =
@@ -9332,7 +9332,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(RindoBerry)
+        ITEM_ICON(RindoBerry),
     },
 
     [ITEM_YACHE_BERRY] =
@@ -9350,7 +9350,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(YacheBerry)
+        ITEM_ICON(YacheBerry),
     },
 
     [ITEM_CHOPLE_BERRY] =
@@ -9368,7 +9368,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(ChopleBerry)
+        ITEM_ICON(ChopleBerry),
     },
 
     [ITEM_KEBIA_BERRY] =
@@ -9386,7 +9386,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(KebiaBerry)
+        ITEM_ICON(KebiaBerry),
     },
 
     [ITEM_SHUCA_BERRY] =
@@ -9404,7 +9404,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(ShucaBerry)
+        ITEM_ICON(ShucaBerry),
     },
 
     [ITEM_COBA_BERRY] =
@@ -9422,7 +9422,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(CobaBerry)
+        ITEM_ICON(CobaBerry),
     },
 
     [ITEM_PAYAPA_BERRY] =
@@ -9440,7 +9440,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(PayapaBerry)
+        ITEM_ICON(PayapaBerry),
     },
 
     [ITEM_TANGA_BERRY] =
@@ -9458,7 +9458,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(TangaBerry)
+        ITEM_ICON(TangaBerry),
     },
 
     [ITEM_CHARTI_BERRY] =
@@ -9476,7 +9476,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(ChartiBerry)
+        ITEM_ICON(ChartiBerry),
     },
 
     [ITEM_KASIB_BERRY] =
@@ -9494,7 +9494,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(KasibBerry)
+        ITEM_ICON(KasibBerry),
     },
 
     [ITEM_HABAN_BERRY] =
@@ -9512,7 +9512,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(HabanBerry)
+        ITEM_ICON(HabanBerry),
     },
 
     [ITEM_COLBUR_BERRY] =
@@ -9530,7 +9530,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(ColburBerry)
+        ITEM_ICON(ColburBerry),
     },
 
     [ITEM_BABIRI_BERRY] =
@@ -9548,7 +9548,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(BabiriBerry)
+        ITEM_ICON(BabiriBerry),
     },
 
     [ITEM_ROSELI_BERRY] =
@@ -9566,7 +9566,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(RoseliBerry)
+        ITEM_ICON(RoseliBerry),
     },
 
     [ITEM_LIECHI_BERRY] =
@@ -9584,7 +9584,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(LiechiBerry)
+        ITEM_ICON(LiechiBerry),
     },
 
     [ITEM_GANLON_BERRY] =
@@ -9602,7 +9602,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(GanlonBerry)
+        ITEM_ICON(GanlonBerry),
     },
 
     [ITEM_SALAC_BERRY] =
@@ -9620,7 +9620,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(SalacBerry)
+        ITEM_ICON(SalacBerry),
     },
 
     [ITEM_PETAYA_BERRY] =
@@ -9638,7 +9638,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(PetayaBerry)
+        ITEM_ICON(PetayaBerry),
     },
 
     [ITEM_APICOT_BERRY] =
@@ -9656,7 +9656,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(ApicotBerry)
+        ITEM_ICON(ApicotBerry),
     },
 
     [ITEM_LANSAT_BERRY] =
@@ -9674,7 +9674,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(LansatBerry)
+        ITEM_ICON(LansatBerry),
     },
 
     [ITEM_STARF_BERRY] =
@@ -9692,7 +9692,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(StarfBerry)
+        ITEM_ICON(StarfBerry),
     },
 
     [ITEM_ENIGMA_BERRY] =
@@ -9709,7 +9709,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(EnigmaBerry)
+        ITEM_ICON(EnigmaBerry),
     },
 
     [ITEM_MICLE_BERRY] =
@@ -9727,7 +9727,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(MicleBerry)
+        ITEM_ICON(MicleBerry),
     },
 
     [ITEM_CUSTAP_BERRY] =
@@ -9745,7 +9745,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(CustapBerry)
+        ITEM_ICON(CustapBerry),
     },
 
     [ITEM_JABOCA_BERRY] =
@@ -9762,7 +9762,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(JabocaBerry)
+        ITEM_ICON(JabocaBerry),
     },
 
     [ITEM_ROWAP_BERRY] =
@@ -9779,7 +9779,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(RowapBerry)
+        ITEM_ICON(RowapBerry),
     },
 
     [ITEM_KEE_BERRY] =
@@ -9796,7 +9796,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(KeeBerry)
+        ITEM_ICON(KeeBerry),
     },
 
     [ITEM_MARANGA_BERRY] =
@@ -9813,7 +9813,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(MarangaBerry)
+        ITEM_ICON(MarangaBerry),
     },
 
     [ITEM_ENIGMA_BERRY_E_READER] =
@@ -9830,7 +9830,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_EnigmaBerry,
         .battleUsage = EFFECT_ITEM_ENIGMA_BERRY_EREADER,
         .flingPower = 10,
-        ITEM_ICON(EnigmaBerry)
+        ITEM_ICON(EnigmaBerry),
     },
 
 // TMs. They don't have a set flingPower, as that's handled by GetFlingPowerFromItemId.
@@ -11327,7 +11327,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(OvalCharm)
+        ITEM_ICON(OvalCharm),
     },
 
     [ITEM_SHINY_CHARM] =
@@ -11342,7 +11342,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(ShinyCharm)
+        ITEM_ICON(ShinyCharm),
     },
 
     [ITEM_CATCHING_CHARM] =
@@ -11357,7 +11357,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(CatchingCharm)
+        ITEM_ICON(CatchingCharm),
     },
 
     [ITEM_EXP_CHARM] =
@@ -11372,7 +11372,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(ExpCharm)
+        ITEM_ICON(ExpCharm),
     },
 
 // Form-changing Key Items
@@ -11389,7 +11389,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_RotomCatalog,
-        ITEM_ICON(RotomCatalog)
+        ITEM_ICON(RotomCatalog),
     },
 
     [ITEM_GRACIDEA] =
@@ -11404,7 +11404,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_FormChange,
-        ITEM_ICON(Gracidea)
+        ITEM_ICON(Gracidea),
     },
 
     [ITEM_REVEAL_GLASS] =
@@ -11420,7 +11420,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_FormChange,
-        ITEM_ICON(RevealGlass)
+        ITEM_ICON(RevealGlass),
     },
 
     [ITEM_DNA_SPLICERS] =
@@ -11436,7 +11436,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Fusion,
-        ITEM_ICON(DNASplicers)
+        ITEM_ICON(DNASplicers),
     },
 
     [ITEM_ZYGARDE_CUBE] =
@@ -11451,7 +11451,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_ZygardeCube,
-        ITEM_ICON(ZygardeCube)
+        ITEM_ICON(ZygardeCube),
     },
 
     [ITEM_PRISON_BOTTLE] =
@@ -11466,7 +11466,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_FormChange,
-        ITEM_ICON(PrisonBottle)
+        ITEM_ICON(PrisonBottle),
     },
 
     [ITEM_N_SOLARIZER] =
@@ -11514,7 +11514,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Fusion,
-        ITEM_ICON(ReinsOfUnity)
+        ITEM_ICON(ReinsOfUnity),
     },
 
 // Battle Mechanic Key Items
@@ -11531,7 +11531,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(MegaRing)
+        ITEM_ICON(MegaRing),
     },
 
     [ITEM_Z_POWER_RING] =
@@ -11546,7 +11546,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(ZPowerRing)
+        ITEM_ICON(ZPowerRing),
     },
 
     [ITEM_DYNAMAX_BAND] =
@@ -11560,7 +11560,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(DynamaxBand)
+        ITEM_ICON(DynamaxBand),
     },
 
 // Misc. Key Items
@@ -11577,7 +11577,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(Bicycle)
+        ITEM_ICON(Bicycle),
     },
 
     [ITEM_MACH_BIKE] =
@@ -11593,7 +11593,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_Bike,
         .secondaryId = MACH_BIKE,
-        ITEM_ICON(MachBike)
+        ITEM_ICON(MachBike),
     },
 
     [ITEM_ACRO_BIKE] =
@@ -11609,7 +11609,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_Bike,
         .secondaryId = ACRO_BIKE,
-        ITEM_ICON(AcroBike)
+        ITEM_ICON(AcroBike),
     },
 
     [ITEM_OLD_ROD] =
@@ -11625,7 +11625,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_Rod,
         .secondaryId = OLD_ROD,
-        ITEM_ICON(OldRod)
+        ITEM_ICON(OldRod),
     },
 
     [ITEM_GOOD_ROD] =
@@ -11641,7 +11641,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_Rod,
         .secondaryId = GOOD_ROD,
-        ITEM_ICON(GoodRod)
+        ITEM_ICON(GoodRod),
     },
 
     [ITEM_SUPER_ROD] =
@@ -11657,7 +11657,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_Rod,
         .secondaryId = SUPER_ROD,
-        ITEM_ICON(SuperRod)
+        ITEM_ICON(SuperRod),
     },
 
     [ITEM_DOWSING_MACHINE] =
@@ -11672,7 +11672,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_Itemfinder,
-        ITEM_ICON(DowsingMachine)
+        ITEM_ICON(DowsingMachine),
     },
 
     [ITEM_TOWN_MAP] =
@@ -11687,7 +11687,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TownMap,
-        ITEM_ICON(TownMap)
+        ITEM_ICON(TownMap),
     },
 
     [ITEM_VS_SEEKER] =
@@ -11706,7 +11706,7 @@ const struct Item gItemsInfo[] =
 #else
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
 #endif
-        ITEM_ICON(VsSeeker)
+        ITEM_ICON(VsSeeker),
     },
 
     [ITEM_TM_CASE] =
@@ -11720,7 +11720,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(TMCase)
+        ITEM_ICON(TMCase),
     },
 
     [ITEM_BERRY_POUCH] =
@@ -11736,7 +11736,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(BerryPouch)
+        ITEM_ICON(BerryPouch),
     },
 
     [ITEM_POKEMON_BOX_LINK] =
@@ -11751,7 +11751,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_PokemonBoxLink,
-        ITEM_ICON(PokemonBoxLink)
+        ITEM_ICON(PokemonBoxLink),
     },
 
     [ITEM_COIN_CASE] =
@@ -11765,7 +11765,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CoinCase,
-        ITEM_ICON(CoinCase)
+        ITEM_ICON(CoinCase),
     },
 
     [ITEM_POWDER_JAR] =
@@ -11780,7 +11780,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_PowderJar,
-        ITEM_ICON(PowderJar)
+        ITEM_ICON(PowderJar),
     },
 
     [ITEM_WAILMER_PAIL] =
@@ -11795,7 +11795,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_WailmerPail,
-        ITEM_ICON(WailmerPail)
+        ITEM_ICON(WailmerPail),
     },
 
     [ITEM_POKE_RADAR] =
@@ -11810,7 +11810,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(PokeRadar)
+        ITEM_ICON(PokeRadar),
     },
 
     [ITEM_POKEBLOCK_CASE] =
@@ -11825,7 +11825,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PBLOCK_CASE,
         .fieldUseFunc = ItemUseOutOfBattle_PokeblockCase,
-        ITEM_ICON(PokeblockCase)
+        ITEM_ICON(PokeblockCase),
     },
 
     [ITEM_SOOT_SACK] =
@@ -11841,7 +11841,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_SootSack,
         .secondaryId = 0,
-        ITEM_ICON(SootSack)
+        ITEM_ICON(SootSack),
     },
 
     [ITEM_POKE_FLUTE] =
@@ -11857,7 +11857,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_PokeFlute,
         .battleUsage = EFFECT_ITEM_USE_POKE_FLUTE,
-        ITEM_ICON(PokeFlute)
+        ITEM_ICON(PokeFlute),
     },
 
     [ITEM_FAME_CHECKER] =
@@ -11872,7 +11872,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(FameChecker)
+        ITEM_ICON(FameChecker),
     },
 
     [ITEM_TEACHY_TV] =
@@ -11887,7 +11887,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(TeachyTV)
+        ITEM_ICON(TeachyTV),
     },
 
 // Story Key Items
@@ -11904,7 +11904,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(SSTicket)
+        ITEM_ICON(SSTicket),
     },
 
     [ITEM_EON_TICKET] =
@@ -11920,7 +11920,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 1,
-        ITEM_ICON(EonTicket)
+        ITEM_ICON(EonTicket),
     },
 
     [ITEM_MYSTIC_TICKET] =
@@ -11935,7 +11935,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(MysticTicket)
+        ITEM_ICON(MysticTicket),
     },
 
     [ITEM_AURORA_TICKET] =
@@ -11950,7 +11950,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(AuroraTicket)
+        ITEM_ICON(AuroraTicket),
     },
 
     [ITEM_OLD_SEA_MAP] =
@@ -11965,7 +11965,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(OldSeaMap)
+        ITEM_ICON(OldSeaMap),
     },
 
     [ITEM_LETTER] =
@@ -11997,7 +11997,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(DevonParts)
+        ITEM_ICON(DevonParts),
     },
 
     [ITEM_GO_GOGGLES] =
@@ -12013,7 +12013,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(GoGoggles)
+        ITEM_ICON(GoGoggles),
     },
 
     [ITEM_DEVON_SCOPE] =
@@ -12028,7 +12028,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(DevonScope)
+        ITEM_ICON(DevonScope),
     },
 
     [ITEM_BASEMENT_KEY] =
@@ -12059,7 +12059,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(Scanner)
+        ITEM_ICON(Scanner),
     },
 
     [ITEM_STORAGE_KEY] =
@@ -12145,7 +12145,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_FormChange,
-        ITEM_ICON(Meteorite)
+        ITEM_ICON(Meteorite),
     },
 
     [ITEM_MAGMA_EMBLEM] =
@@ -12160,7 +12160,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(MagmaEmblem)
+        ITEM_ICON(MagmaEmblem),
     },
 
     [ITEM_CONTEST_PASS] =
@@ -12176,7 +12176,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(ContestPass)
+        ITEM_ICON(ContestPass),
     },
 
     [ITEM_PARCEL] =
@@ -12191,7 +12191,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(Parcel)
+        ITEM_ICON(Parcel),
     },
 
     [ITEM_SECRET_KEY] =
@@ -12206,7 +12206,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(SecretKey)
+        ITEM_ICON(SecretKey),
     },
 
     [ITEM_BIKE_VOUCHER] =
@@ -12221,7 +12221,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(BikeVoucher)
+        ITEM_ICON(BikeVoucher),
     },
 
     [ITEM_GOLD_TEETH] =
@@ -12237,7 +12237,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(GoldTeeth)
+        ITEM_ICON(GoldTeeth),
     },
 
     [ITEM_CARD_KEY] =
@@ -12252,7 +12252,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(CardKey)
+        ITEM_ICON(CardKey),
     },
 
     [ITEM_LIFT_KEY] =
@@ -12283,7 +12283,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(SilphScope)
+        ITEM_ICON(SilphScope),
     },
 
     [ITEM_TRI_PASS] =
@@ -12299,7 +12299,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(TriPass)
+        ITEM_ICON(TriPass),
     },
 
     [ITEM_RAINBOW_PASS] =
@@ -12315,7 +12315,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(RainbowPass)
+        ITEM_ICON(RainbowPass),
     },
 
     [ITEM_TEA] =
@@ -12331,7 +12331,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(Tea)
+        ITEM_ICON(Tea),
     },
 
     [ITEM_RUBY] =
@@ -12370,7 +12370,7 @@ const struct Item gItemsInfo[] =
     [ITEM_ABILITY_SHIELD] =
     {
         .name = _("Ability Shield"),
-        .price = 20000,
+        .price = 4000,
         .holdEffect = HOLD_EFFECT_ABILITY_SHIELD,
         .description = COMPOUND_STRING(
             "Ability changes are\n"
@@ -12380,7 +12380,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(AbilityShield)
+        ITEM_ICON(AbilityShield),
     },
 
 // GEN 9 ITEMS
@@ -12388,7 +12388,7 @@ const struct Item gItemsInfo[] =
     [ITEM_CLEAR_AMULET] =
     {
         .name = _("Clear Amulet"),
-        .price = 30000,
+        .price = 4000,
         .holdEffect = HOLD_EFFECT_CLEAR_AMULET,
         .description = COMPOUND_STRING(
             "Stat lowering is\n"
@@ -12398,7 +12398,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(ClearAmulet)
+        ITEM_ICON(ClearAmulet),
     },
 
     [ITEM_PUNCHING_GLOVE] =
@@ -12414,13 +12414,13 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(PunchingGlove)
+        ITEM_ICON(PunchingGlove),
     },
 
     [ITEM_COVERT_CLOAK] =
     {
         .name = _("Covert Cloak"),
-        .price = 20000,
+        .price = 4000,
         .holdEffect = HOLD_EFFECT_COVERT_CLOAK,
         .description = COMPOUND_STRING(
             "Protects holder\n"
@@ -12430,14 +12430,14 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(CovertCloak)
+        ITEM_ICON(CovertCloak),
     },
 
     [ITEM_LOADED_DICE] =
     {
         .name = _("Loaded Dice"),
         .pluralName = _("Loaded Dice"),
-        .price = 20000,
+        .price = 4000,
         .holdEffect = HOLD_EFFECT_LOADED_DICE,
         .description = COMPOUND_STRING(
             "Rolls high numbers.\n"
@@ -12447,7 +12447,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(LoadedDice)
+        ITEM_ICON(LoadedDice),
     },
 
     [ITEM_AUSPICIOUS_ARMOR] =
@@ -12463,7 +12463,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
         .flingPower = 30,
-        ITEM_ICON(AuspiciousArmor)
+        ITEM_ICON(AuspiciousArmor),
     },
 
     [ITEM_BOOSTER_ENERGY] =
@@ -12480,7 +12480,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(BoosterEnergy)
+        ITEM_ICON(BoosterEnergy),
     },
 
     [ITEM_BIG_BAMBOO_SHOOT] =
@@ -12495,7 +12495,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(BigBambooShoot)
+        ITEM_ICON(BigBambooShoot),
     },
 
     [ITEM_GIMMIGHOUL_COIN] =
@@ -12509,7 +12509,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(GimmighoulCoin)
+        ITEM_ICON(GimmighoulCoin),
     },
 
     [ITEM_LEADERS_CREST] =
@@ -12523,7 +12523,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(LeadersCrest)
+        ITEM_ICON(LeadersCrest),
     },
 
     [ITEM_MALICIOUS_ARMOR] =
@@ -12539,13 +12539,13 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
         .flingPower = 30,
-        ITEM_ICON(MaliciousArmor)
+        ITEM_ICON(MaliciousArmor),
     },
 
     [ITEM_MIRROR_HERB] =
     {
         .name = _("Mirror Herb"),
-        .price = 30000,
+        .price = 4000,
         .holdEffect = HOLD_EFFECT_MIRROR_HERB,
         .description = COMPOUND_STRING(
             "Mirrors an enemy's\n"
@@ -12555,7 +12555,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(MirrorHerb)
+        ITEM_ICON(MirrorHerb),
     },
 
     [ITEM_SCROLL_OF_DARKNESS] =
@@ -12572,7 +12572,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
-        ITEM_ICON(ScrollOfDarkness)
+        ITEM_ICON(ScrollOfDarkness),
     },
 
     [ITEM_SCROLL_OF_WATERS] =
@@ -12589,7 +12589,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
-        ITEM_ICON(ScrollOfWaters)
+        ITEM_ICON(ScrollOfWaters),
     },
 
     [ITEM_TERA_ORB] =
@@ -12604,7 +12604,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(TeraOrb)
+        ITEM_ICON(TeraOrb),
     },
 
     [ITEM_TINY_BAMBOO_SHOOT] =
@@ -12619,7 +12619,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
-        ITEM_ICON(TinyBambooShoot)
+        ITEM_ICON(TinyBambooShoot),
     },
 
 #define TERA_SHARD_INFO(Type)                     \
@@ -12634,109 +12634,109 @@ const struct Item gItemsInfo[] =
     [ITEM_BUG_TERA_SHARD] =
     {
         .name = _("Bug Tera Shard"),
-        TERA_SHARD_INFO(Bug)
+        TERA_SHARD_INFO(Bug),
     },
 
     [ITEM_DARK_TERA_SHARD] =
     {
         .name = _("Dark Tera Shard"),
-        TERA_SHARD_INFO(Dark)
+        TERA_SHARD_INFO(Dark),
     },
 
     [ITEM_DRAGON_TERA_SHARD] =
     {
         .name = _("Dragon Tera Shard"),
-        TERA_SHARD_INFO(Dragon)
+        TERA_SHARD_INFO(Dragon),
     },
 
     [ITEM_ELECTRIC_TERA_SHARD] =
     {
         .name = _("Electric Tera Shard"),
-        TERA_SHARD_INFO(Electric)
+        TERA_SHARD_INFO(Electric),
     },
 
     [ITEM_FAIRY_TERA_SHARD] =
     {
         .name = _("Fairy Tera Shard"),
-        TERA_SHARD_INFO(Fairy)
+        TERA_SHARD_INFO(Fairy),
     },
 
     [ITEM_FIGHTING_TERA_SHARD] =
     {
         .name = _("Fighting Tera Shard"),
-        TERA_SHARD_INFO(Fighting)
+        TERA_SHARD_INFO(Fighting),
     },
 
     [ITEM_FIRE_TERA_SHARD] =
     {
         .name = _("Fire Tera Shard"),
-        TERA_SHARD_INFO(Fire)
+        TERA_SHARD_INFO(Fire),
     },
 
     [ITEM_FLYING_TERA_SHARD] =
     {
         .name = _("Flying Tera Shard"),
-        TERA_SHARD_INFO(Flying)
+        TERA_SHARD_INFO(Flying),
     },
 
     [ITEM_GHOST_TERA_SHARD] =
     {
         .name = _("Ghost Tera Shard"),
-        TERA_SHARD_INFO(Ghost)
+        TERA_SHARD_INFO(Ghost),
     },
 
     [ITEM_GRASS_TERA_SHARD] =
     {
         .name = _("Grass Tera Shard"),
-        TERA_SHARD_INFO(Grass)
+        TERA_SHARD_INFO(Grass),
     },
 
     [ITEM_GROUND_TERA_SHARD] =
     {
         .name = _("Ground Tera Shard"),
-        TERA_SHARD_INFO(Ground)
+        TERA_SHARD_INFO(Ground),
     },
 
     [ITEM_ICE_TERA_SHARD] =
     {
         .name = _("Ice Tera Shard"),
-        TERA_SHARD_INFO(Ice)
+        TERA_SHARD_INFO(Ice),
     },
 
     [ITEM_NORMAL_TERA_SHARD] =
     {
         .name = _("Normal Tera Shard"),
-        TERA_SHARD_INFO(Normal)
+        TERA_SHARD_INFO(Normal),
     },
 
     [ITEM_POISON_TERA_SHARD] =
     {
         .name = _("Poison Tera Shard"),
-        TERA_SHARD_INFO(Poison)
+        TERA_SHARD_INFO(Poison),
     },
 
     [ITEM_PSYCHIC_TERA_SHARD] =
     {
         .name = _("Psychic Tera Shard"),
-        TERA_SHARD_INFO(Psychic)
+        TERA_SHARD_INFO(Psychic),
     },
 
     [ITEM_ROCK_TERA_SHARD] =
     {
         .name = _("Rock Tera Shard"),
-        TERA_SHARD_INFO(Rock)
+        TERA_SHARD_INFO(Rock),
     },
 
     [ITEM_STEEL_TERA_SHARD] =
     {
         .name = _("Steel Tera Shard"),
-        TERA_SHARD_INFO(Steel)
+        TERA_SHARD_INFO(Steel),
     },
 
     [ITEM_WATER_TERA_SHARD] =
     {
         .name = _("Water Tera Shard"),
-        TERA_SHARD_INFO(Water)
+        TERA_SHARD_INFO(Water),
     },
 
     [ITEM_ADAMANT_CRYSTAL] =
@@ -12751,7 +12751,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
-        ITEM_ICON(AdamantCrystal)
+        ITEM_ICON(AdamantCrystal),
     },
 
     [ITEM_GRISEOUS_CORE] =
@@ -12766,7 +12766,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
-        ITEM_ICON(GriseousCore)
+        ITEM_ICON(GriseousCore),
     },
 
     [ITEM_LUSTROUS_GLOBE] =
@@ -12781,7 +12781,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
-        ITEM_ICON(LustrousGlobe)
+        ITEM_ICON(LustrousGlobe),
     },
 
     [ITEM_BLACK_AUGURITE] =
@@ -12797,7 +12797,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
         .flingPower = 30,
-        ITEM_ICON(BlackAugurite)
+        ITEM_ICON(BlackAugurite),
     },
 
     [ITEM_LINKING_CORD] =
@@ -12813,7 +12813,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
         .flingPower = 30,
-        ITEM_ICON(LinkingCord)
+        ITEM_ICON(LinkingCord),
     },
 
     [ITEM_PEAT_BLOCK] =
@@ -12829,7 +12829,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
         .flingPower = 30,
-        ITEM_ICON(PeatBlock)
+        ITEM_ICON(PeatBlock),
     },
 
     [ITEM_BERSERK_GENE] =
@@ -12845,7 +12845,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(BerserkGene)
+        ITEM_ICON(BerserkGene),
     },
 
     [ITEM_FAIRY_FEATHER] =
@@ -12862,7 +12862,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
-        ITEM_ICON(FairyFeather)
+        ITEM_ICON(FairyFeather),
     },
 
     [ITEM_SYRUPY_APPLE] =
@@ -12878,7 +12878,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
         .flingPower = 30,
-        ITEM_ICON(SyrupyApple)
+        ITEM_ICON(SyrupyApple),
     },
 
     [ITEM_UNREMARKABLE_TEACUP] =
@@ -12894,7 +12894,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
         .flingPower = 80,
-        ITEM_ICON(UnremarkableTeacup)
+        ITEM_ICON(UnremarkableTeacup),
     },
 
     [ITEM_MASTERPIECE_TEACUP] =
@@ -12910,7 +12910,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
         .flingPower = 80,
-        ITEM_ICON(MasterpieceTeacup)
+        ITEM_ICON(MasterpieceTeacup),
     },
 
     [ITEM_CORNERSTONE_MASK] =
@@ -12926,7 +12926,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(CornerstoneMask)
+        ITEM_ICON(CornerstoneMask),
     },
 
     [ITEM_WELLSPRING_MASK] =
@@ -12942,7 +12942,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(WellspringMask)
+        ITEM_ICON(WellspringMask),
     },
 
     [ITEM_HEARTHFLAME_MASK] =
@@ -12958,7 +12958,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(HearthflameMask)
+        ITEM_ICON(HearthflameMask),
     },
 
     [ITEM_HEALTH_MOCHI] =
@@ -13081,7 +13081,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(GlimmeringCharm)
+        ITEM_ICON(GlimmeringCharm),
     },
 
     [ITEM_METAL_ALLOY] =
@@ -13096,7 +13096,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
-        ITEM_ICON(MetalAlloy)
+        ITEM_ICON(MetalAlloy),
     },
 
     [ITEM_STELLAR_TERA_SHARD] =
@@ -13107,7 +13107,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        ITEM_ICON(StellarTeraShard)
+        ITEM_ICON(StellarTeraShard),
     },
 
     [ITEM_JUBILIFE_MUFFIN] =
@@ -13121,7 +13121,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
         .effect = gItemEffect_FullHeal,
         .flingPower = 30,
-        ITEM_ICON(JubilifeMuffin)
+        ITEM_ICON(JubilifeMuffin),
     },
 
     [ITEM_REMEDY] =
@@ -13138,7 +13138,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
         .effect = gItemEffect_Remedy,
         .flingPower = 30,
-        ITEM_ICON(Remedy)
+        ITEM_ICON(Remedy),
     },
 
     [ITEM_FINE_REMEDY] =
@@ -13159,7 +13159,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
         .effect = gItemEffect_FineRemedy,
         .flingPower = 30,
-        ITEM_ICON(FineRemedy)
+        ITEM_ICON(FineRemedy),
     },
 
     [ITEM_SUPERB_REMEDY] =
@@ -13180,7 +13180,7 @@ const struct Item gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
         .effect = gItemEffect_SuperbRemedy,
         .flingPower = 30,
-        ITEM_ICON(SuperbRemedy)
+        ITEM_ICON(SuperbRemedy),
     },
 
     [ITEM_AUX_EVASION] =
@@ -13268,7 +13268,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         //.effect = currently missing
-        ITEM_ICON(AuxPowerguard)
+        ITEM_ICON(AuxPowerguard),
     },
 
     [ITEM_CHOICE_DUMPLING] =
@@ -13280,7 +13280,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         //.effect = currently missing
-        ITEM_ICON(ChoiceDumpling)
+        ITEM_ICON(ChoiceDumpling),
     },
 
     [ITEM_SWAP_SNACK] =
@@ -13292,7 +13292,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         //.effect = currently missing
-        ITEM_ICON(SwapSnack)
+        ITEM_ICON(SwapSnack),
     },
 
     [ITEM_TWICE_SPICED_RADISH] =
@@ -13304,7 +13304,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         //.effect = currently missing
-        ITEM_ICON(TwiceSpicedRadish)
+        ITEM_ICON(TwiceSpicedRadish),
     },
 
     [ITEM_POKESHI_DOLL] =
@@ -13319,6 +13319,6 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_ESCAPE,
-        ITEM_ICON(PokeshiDoll)
+        ITEM_ICON(PokeshiDoll),
     },
 };

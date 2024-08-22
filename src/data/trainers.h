@@ -1902,6 +1902,7 @@ WINONA_REMATCH(5),
         .ability = ABILITY_SYNCHRONIZE,
         IVS(30),
         .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_MORNING_SUN, MOVE_PSYCHIC_TERRAIN},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 49,

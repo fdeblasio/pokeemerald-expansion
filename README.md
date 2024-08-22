@@ -294,6 +294,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Much easier to make good Pokéblocks
 - Pokémon in the Safari Zone can't flee
 - Connected the north and northwest sections of the Safari Zone
+- Both Shoal Cave items are now available in low tide, which is available more often
 - Mirage Island now always appears
     - Wynaut from Mirage Island will have their Hidden Ability
 - Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room
@@ -2413,6 +2414,12 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Miracle Eye at level 1 instead of level 31
 
 - Female Meowstic:
+    - HP: 74->75
+    - Atk: 48->50
+    - Def: 76->80
+    - SpA: 83->90
+    - SpD: 81->85
+    - Spe: 104->105
     - Learns Mean Look, Tearful Look, Baby-Doll Eyes, and Psychic Noise by level up
     - Learns Extrasensory at level 39 and learns Energy Ball in its place at level 44
 

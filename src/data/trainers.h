@@ -1898,36 +1898,37 @@ WINONA_REMATCH(5),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 49,
-        .species = SPECIES_CLAYDOL,
-        .ability = ABILITY_LEVITATE,
+        .species = SPECIES_ESPEON,
+        .ability = ABILITY_SYNCHRONIZE,
         IVS(30),
-        .moves = {MOVE_PSYCHIC, MOVE_EARTH_POWER, MOVE_COSMIC_POWER, MOVE_LIGHT_SCREEN},
-        .gender = TRAINER_MON_NONE,
+        .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_MORNING_SUN, MOVE_PSYCHIC_TERRAIN},
         },
         {
         .lvl = 49,
-        .species = SPECIES_GRUMPIG,
-        .ability = ABILITY_THICK_FAT,
+        .species = SPECIES_ALAKAZAM,
+        .ability = ABILITY_INNER_FOCUS,
         IVS(30),
-        .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_CONFUSE_RAY, MOVE_MAGIC_COAT},
+        .moves = {MOVE_PSYCHIC, MOVE_KINESIS, MOVE_REFLECT, MOVE_RECOVER},
         .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 51,
-        .species = SPECIES_LUNATONE,
-        .ability = ABILITY_LEVITATE,
+        .species = SPECIES_MEOWSTIC_FEMALE,
+        .ability = ABILITY_KEEN_EYE,
         IVS(30),
-        .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_POWER_GEM, MOVE_ICY_WIND},
+        .moves = {MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_ENERGY_BALL, MOVE_SIGNAL_BEAM},
+        .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SITRUS_BERRY,
         .gender = TRAINER_MON_NONE,
         .ball = ITEM_POKE_BALL,
         },
         {
         .lvl = 51,
-        .species = SPECIES_SOLROCK,
-        .ability = ABILITY_LEVITATE,
+        .species = SPECIES_MEOWSTIC,
+        .ability = ABILITY_INFILTRATOR,
         IVS(30),
-        .moves = {MOVE_PSYCHIC, MOVE_ROCK_SLIDE, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN},
+        .moves = {MOVE_PSYCHIC, MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_TEARFUL_LOOK},
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
         .gender = TRAINER_MON_NONE,
         .ball = ITEM_POKE_BALL,
@@ -1993,14 +1994,13 @@ WINONA_REMATCH(5),
     }
 
 //Extra for hacks
-//Can replace Shadow Ball with Recover
 #define TATE_ALAKAZAM(rematch, tier)                                                \
     {                                                                               \
     REMATCH_MON(ALAKAZAM, tier, rematch, ITEM_TWISTED_SPOON),                       \
     .ability = ABILITY_MAGIC_GUARD,                                                 \
     .nature = NATURE_MODEST,                                                        \
     EV_SPREAD_SPA_SPE_HP,                                                           \
-    .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_SHADOW_BALL, MOVE_CALM_MIND}, \
+    .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_RECOVER, MOVE_CALM_MIND}, \
     .gender = TRAINER_MON_MALE,                                                     \
     }
 
@@ -2029,14 +2029,13 @@ WINONA_REMATCH(5),
     .gender = TRAINER_MON_MALE,                                                   \
     }
 
-//Can replace Morning Sun with Calm Mind
 #define LIZA_ESPEON(rematch, tier)                                                   \
     {                                                                                \
     REMATCH_MON(ESPEON, tier, rematch),                                              \
     .ability = ABILITY_MAGIC_BOUNCE,                                                 \
     .nature = NATURE_MODEST,                                                         \
     EV_SPREAD_SPA_SPE_HP,                                                            \
-    .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_MORNING_SUN, MOVE_PSYCHIC_TERRAIN}, \
+    .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_CALM_MIND, MOVE_PSYCHIC_TERRAIN}, \
     .gender = TRAINER_MON_FEMALE,                                                    \
     }
 
@@ -2120,12 +2119,12 @@ WINONA_REMATCH(5),
     TATE_AND_LIZA_INFO,                                \
     LEADER_REMATCH,                                    \
     .party = (const struct TrainerMon[]) {             \
-        LIZA_GARDEVOIR(Rematch, TIER3),                \
-        TATE_CHIMECHO(Rematch, TIER3),                 \
-        LIZA_CLAYDOL(Rematch, TIER2),                  \
-        TATE_GRUMPIG(Rematch, TIER2),                  \
-        LIZA_LUNATONE(Rematch, ACE),                   \
-        TATE_SOLROCK(Rematch, ACE),                    \
+        LIZA_ESPATHRA(Rematch, TIER3),                \
+        TATE_GRUMPIG(Rematch, TIER3),                 \
+        LIZA_ESPEON(Rematch, TIER2),                  \
+        TATE_ALAKAZAM(Rematch, TIER2),                  \
+        LIZA_MEOWSTIC(Rematch, ACE),                   \
+        TATE_MEOWSTIC(Rematch, ACE),                    \
     },                                                 \
 }
 

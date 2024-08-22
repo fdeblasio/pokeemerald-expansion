@@ -5446,7 +5446,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     [SPECIES_CHIEN_PAO] =
     {
         .baseHP        = 80,
-        .baseAttack    = 120,
+        .baseAttack    = 130,
         .baseDefense   = 80,
         .baseSpeed     = 135,
         .baseSpAttack  = 90,

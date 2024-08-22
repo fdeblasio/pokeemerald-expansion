@@ -4832,7 +4832,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         },
         {
         .lvl = 4,
-        .species = SPECIES_WINGULL,
+        .species = SPECIES_ROOKIDEE,
         }
     },
 },
@@ -5502,7 +5502,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 9,
-        .species = SPECIES_MACHOP,
+        .species = SPECIES_TRUBBISH,
         }
     },
 },
@@ -8753,10 +8753,10 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE}, \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY
 
-#define WILTON_MAKUHITA(Level)                                                  \
-    .lvl = Level,                                                               \
-    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_MAKUHITA : SPECIES_HARIYAMA, \
-    .ability = ABILITY_THICK_FAT,                                               \
+#define WILTON_GRIMER(Level)                                             \
+    .lvl = Level,                                                        \
+    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_GRIMER : SPECIES_MUK, \
+    .ability = ABILITY_STENCH,                                           \
     .gender = TRAINER_MON_MALE
 
 #define WILTON_WAILMER(Level)                                  \
@@ -8789,7 +8789,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         IVS(12),
         },
         {
-        WILTON_MAKUHITA(24),
+        WILTON_GRIMER(24),
         IVS(12),
         }
     },
@@ -8809,7 +8809,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         IVS(13),
         },
         {
-        WILTON_MAKUHITA(REMATCH_2_LEVEL_3),
+        WILTON_GRIMER(REMATCH_2_LEVEL_3),
         IVS(13),
         }
     },
@@ -8829,7 +8829,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         IVS(14),
         },
         {
-        WILTON_MAKUHITA(REMATCH_3_LEVEL_3),
+        WILTON_GRIMER(REMATCH_3_LEVEL_3),
         IVS(14),
         }
     },
@@ -8849,7 +8849,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         IVS(15),
         },
         {
-        WILTON_MAKUHITA(REMATCH_4_LEVEL_3),
+        WILTON_GRIMER(REMATCH_4_LEVEL_3),
         IVS(15),
         }
     },
@@ -8873,7 +8873,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         IVS(17),
         },
         {
-        WILTON_MAKUHITA(REMATCH_5_LEVEL_4),
+        WILTON_GRIMER(REMATCH_5_LEVEL_4),
         IVS(17),
         }
     },
@@ -9928,7 +9928,7 @@ COURTNEY_BATTLE(METEOR_FALLS, 28, 3),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 25,
-        .species = SPECIES_BALTOY,
+        .species = SPECIES_CHINGLING,
         },
         {
         .lvl = 25,
@@ -11746,7 +11746,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     GUMSHOOS, SCOPE_LENS,
         },
         {
         .lvl = 30,
-        .species = SPECIES_LUXIO,
+        .species = SPECIES_TINKATINK,
         IVS(6),
         }
     },
@@ -13232,7 +13232,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 41,
-        .species = SPECIES_LUXRAY,
+        .species = SPECIES_AXEW,
         IVS(12),
         }
     },
@@ -13581,11 +13581,11 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 41,
-        .species = SPECIES_DUSKULL,
+        .species = SPECIES_PUMPKABOO,
         },
         {
         .lvl = 41,
-        .species = SPECIES_SHUPPET,
+        .species = SPECIES_GASTLY,
         }
     },
 },
@@ -13918,12 +13918,12 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 41,
-        .species = SPECIES_LUXRAY,
+        .species = SPECIES_CUFANT,
         IVS(12),
         },
         {
         .lvl = 41,
-        .species = SPECIES_CACTURNE,
+        .species = SPECIES_ORTHWORM,
         IVS(12),
         }
     },
@@ -14510,11 +14510,11 @@ MARINA_BATTLE(MT_PYRE, 42),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 44,
-        .species = SPECIES_DUSKULL,
+        .species = SPECIES_ROTOM,
         },
         {
         .lvl = 44,
-        .species = SPECIES_SHUPPET,
+        .species = SPECIES_SANDYGAST,
         }
     },
 },
@@ -14557,7 +14557,7 @@ MARINA_BATTLE(MT_PYRE, 42),
         },
         {
         .lvl = 43,
-        .species = SPECIES_PELIPPER,
+        .species = SPECIES_GIBLE,
         IVS(12),
         }
     },

@@ -2523,6 +2523,12 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Tapu Bulu:
     - Learns Grassy Glide and Play Rough by TM
 
+- Solgaleo:
+    - Learns Psychic Fangs by level up
+
+- Lunala:
+    - Learns Shadow Claw and Hyper Beam by level up
+
 - Thwackey:
     - Evolution: 35->36
 
@@ -2732,3 +2738,15 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Dondozo:
     - Learns Waterfall and Liquidation by level up
+
+- Wo-Chien:
+    - Learns Grass Knot and Energy Ball by level up
+
+- Chien-Pao:
+    - Learns Ice Fang and Ice Spinner by level up
+
+- Ting-Lu:
+    - Learns Dig and High Horsepower by level up
+
+- Chi-Yu:
+    - Learns Burning Jealousy and Flamethrower by level up

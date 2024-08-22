@@ -3771,21 +3771,48 @@
     "TutorMoves": []
   },
   "RAIKOU": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 18,
+        "Move": "MOVE_SHOCK_WAVE"
+      },
+      {
+        "Level": 60,
+        "Move": "MOVE_THUNDERBOLT"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "ENTEI": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 18,
+        "Move": "MOVE_FLAME_BURST"
+      },
+      {
+        "Level": 60,
+        "Move": "MOVE_TEMPER_FLARE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "SUICUNE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 18,
+        "Move": "MOVE_BUBBLE_BEAM"
+      },
+      {
+        "Level": 60,
+        "Move": "MOVE_SCALD"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -8047,17 +8074,33 @@
     "TutorMoves": []
   },
   "TORNADUS": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 45,
+        "Move": "MOVE_ACROBATICS"
+      },
+      {
+        "Level": 75,
+        "Move": "MOVE_BLEAKWIND_STORM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "THUNDURUS": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 45,
+        "Move": "MOVE_EXTRASENSORY"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
-    "EggMoves": [],
+    "EggMoves": [
+      "MOVE_AIR_SLASH"
+    ],
     "TutorMoves": []
   },
   "RESHIRAM": {
@@ -8075,9 +8118,36 @@
     "TutorMoves": []
   },
   "LANDORUS": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 15,
+        "Move": "MOVE_ROCK_TOMB"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_BULLDOZE"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_SWORDS_DANCE"
+      },
+      {
+        "Level": 45,
+        "Move": "MOVE_STOMPING_TANTRUM"
+      },
+      {
+        "Level": 75,
+        "Move": "MOVE_SANDSEAR_STORM"
+      },
+      {
+        "Level": 77,
+        "Move": "MOVE_FISSURE"
+      }
+    ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_ACROBATICS"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -10514,10 +10584,17 @@
     "TutorMoves": []
   },
   "ENAMORUS": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 45,
+        "Move": "MOVE_PLAY_ROUGH"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
-    "EggMoves": [],
+    "EggMoves": [
+      "MOVE_AIR_SLASH"
+    ],
     "TutorMoves": []
   },
   "SPRIGATITO": {

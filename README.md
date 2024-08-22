@@ -2151,4 +2151,5 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
     - Learns Waterfall and Liquidation by level up
 
 - Chien-Pao:
+    - Atk: 120->130
     - Learns Ice Fang and Ice Spinner by level up

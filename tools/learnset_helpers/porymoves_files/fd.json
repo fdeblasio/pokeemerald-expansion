@@ -9597,14 +9597,28 @@
     "TutorMoves": []
   },
   "SOLGALEO": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 49,
+        "Move": "MOVE_PSYCHIC_FANGS"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "LUNALA": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 21,
+        "Move": "MOVE_SHADOW_CLAW"
+      },
+      {
+        "Level": 84,
+        "Move": "MOVE_HYPER_BEAM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -11403,28 +11417,64 @@
     "TutorMoves": []
   },
   "WO_CHIEN": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 30,
+        "Move": "MOVE_GRASS_KNOT"
+      },
+      {
+        "Level": 55,
+        "Move": "MOVE_ENERGY_BALL"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "CHIEN_PAO": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 30,
+        "Move": "MOVE_ICE_FANG"
+      },
+      {
+        "Level": 55,
+        "Move": "MOVE_ICE_SPINNER"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "TING_LU": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 30,
+        "Move": "MOVE_DIG"
+      },
+      {
+        "Level": 55,
+        "Move": "MOVE_HIGH_HORSEPOWER"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "CHI_YU": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 30,
+        "Move": "MOVE_BURNING_JEALOUSY"
+      },
+      {
+        "Level": 55,
+        "Move": "MOVE_FLAMETHROWER"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

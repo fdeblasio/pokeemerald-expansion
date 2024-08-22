@@ -14557,6 +14557,7 @@ static const u16 sEnteiTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_SWIFT,
+    MOVE_TEMPER_FLARE,
     MOVE_TOXIC,
     MOVE_WILL_O_WISP,
     MOVE_UNAVAILABLE,
@@ -31314,6 +31315,7 @@ static const u16 sTornadusTeachableLearnset[] = {
 #if P_FAMILY_THUNDURUS
 static const u16 sThundurusTeachableLearnset[] = {
     MOVE_ACROBATICS,
+    MOVE_AIR_SLASH,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,
@@ -31470,6 +31472,7 @@ static const u16 sZekromTeachableLearnset[] = {
 
 #if P_FAMILY_LANDORUS
 static const u16 sLandorusTeachableLearnset[] = {
+    MOVE_ACROBATICS,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,
@@ -40922,6 +40925,7 @@ static const u16 sCalyrexShadowRiderTeachableLearnset[] = {
 
 #if P_FAMILY_ENAMORUS
 static const u16 sEnamorusTeachableLearnset[] = {
+    MOVE_AIR_SLASH,
     MOVE_BODY_SLAM,
     MOVE_CALM_MIND,
     MOVE_DAZZLING_GLEAM,
@@ -43586,6 +43590,7 @@ static const u16 sTingLuTeachableLearnset[] = {
     MOVE_ENDURE,
     MOVE_FACADE,
     MOVE_GIGA_IMPACT,
+    MOVE_HIGH_HORSEPOWER,
     MOVE_HYPER_BEAM,
     MOVE_PAYBACK,
     MOVE_PROTECT,

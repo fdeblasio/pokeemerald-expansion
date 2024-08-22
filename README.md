@@ -1586,6 +1586,15 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Stantler (postgame):
     - Learns Psyshield Bash by level up
 
+- Raikou (not in main game):
+    - Learns Shock Wave and Thunderbolt by level up
+
+- Entei (not in main game):
+    - Learns Flame Burst and Temper Flare by level up
+
+- Suicune (not in main game):
+    - Learns Bubble Beam and Scald by level up
+
 - Lugia (postgame):
     - Learns Brave Bird by level up
 
@@ -2331,6 +2340,20 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Larvesta:
     - Evolution: 59->56
 
+- Tornadus:
+    - Learns Acrobatics by level up
+    - Learns Bleakwind Storm at level 75 instead of level 77 to match the rest of the group
+
+- Thundurus:
+    - Learns Extrasensory by level up
+    - Learns Air Slash by TM
+
+- Landorus:
+    - Swaps Bulldoze and Rock Tomb levels for consistency
+    - Learns Swords Dance and Stomping Tantrum by level up
+    - Swaps Sandsear Storm and Fissure levels for consistency
+    - Learns Acrobatics by TM
+
 - Kyurem:
     - Learns Icicle Crash by TM
 
@@ -2646,6 +2669,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Dragapult:
     - Learns Shadow Claw by TM
     - Learns Dragon Breath by Egg Move
+
+- Enamorus:
+    - Learns Play Rough by level up
+    - Learns Air Slash by TM
 
 - Sprigatito:
     - HP: 40->45

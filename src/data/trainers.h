@@ -1392,57 +1392,84 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 49,
-        .species = SPECIES_CLAYDOL,
+        .species = SPECIES_ESPEON,
+        .ability = ABILITY_SYNCHRONIZE,
         IVS(30),
-        .moves = {MOVE_PSYCHIC, MOVE_EARTH_POWER, MOVE_COSMIC_POWER, MOVE_LIGHT_SCREEN},
+        .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_MORNING_SUN, MOVE_PSYCHIC_TERRAIN},
         },
         {
         .lvl = 49,
-        .species = SPECIES_GRUMPIG,
-        .ability = ABILITY_THICK_FAT,
+        .species = SPECIES_ALAKAZAM,
+        .ability = ABILITY_INNER_FOCUS,
         IVS(30),
-        .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_CONFUSE_RAY, MOVE_MAGIC_COAT},
+        .moves = {MOVE_PSYCHIC, MOVE_KINESIS, MOVE_REFLECT, MOVE_RECOVER},
         .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 51,
-        .species = SPECIES_LUNATONE,
+        .species = SPECIES_MEOWSTIC_FEMALE,
+        .ability = ABILITY_KEEN_EYE,
         IVS(30),
-        .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_POWER_GEM, MOVE_ICY_WIND},
+        .moves = {MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_ENERGY_BALL, MOVE_SIGNAL_BEAM},
+        .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SITRUS_BERRY,
         .ball = ITEM_POKE_BALL,
         },
         {
         .lvl = 51,
-        .species = SPECIES_SOLROCK,
+        .species = SPECIES_MEOWSTIC,
+        .ability = ABILITY_INFILTRATOR,
         IVS(30),
-        .moves = {MOVE_PSYCHIC, MOVE_ROCK_SLIDE, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN},
+        .moves = {MOVE_PSYCHIC, MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_TEARFUL_LOOK},
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
         .ball = ITEM_POKE_BALL,
         }
     },
 },
 
-#define TATE_SOLROCK(rematch)                                                          \
-    {                                                                                  \
-    REMATCH_MON(SOLROCK, ACE, rematch),                                                \
-    .ability = ABILITY_LEVITATE,                                                       \
-    .nature = NATURE_ADAMANT,                                                          \
-    EV_SPREAD_ATK_DEF_HP,                                                              \
-    .moves = {MOVE_ZEN_HEADBUTT, MOVE_ROCK_SLIDE, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN}, \
-    .heldItem = ITEM_SITRUS_BERRY,                                                     \
-    .ball = ITEM_POKE_BALL,                                                            \
+#define TATE_MEOWSTIC(rematch)                                                          \
+    {                                                                                   \
+    REMATCH_MON(MEOWSTIC, ACE, rematch),                                                \
+    .ability = ABILITY_PRANKSTER,                                                       \
+    .nature = NATURE_TIMID,                                                             \
+    EV_SPREAD_SPA_SPE_HP,                                                               \
+    .moves = {MOVE_PSYCHIC, MOVE_PSYCHIC_TERRAIN, MOVE_TEARFUL_LOOK, MOVE_DOUBLE_TEAM}, \
+    .gender = TRAINER_MON_MALE,                                                         \
+    .heldItem = ITEM_SITRUS_BERRY,                                                      \
+    .ball = ITEM_POKE_BALL,                                                             \
     }
 
-#define LIZA_LUNATONE(rematch)                                                 \
-    {                                                                          \
-    REMATCH_MON(LUNATONE, ACE, rematch),                                       \
-    .ability = ABILITY_LEVITATE,                                               \
-    .nature = NATURE_MODEST,                                                   \
-    EV_SPREAD_SPA_SPD_HP,                                                      \
-    .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_ICY_WIND, MOVE_COSMIC_POWER}, \
-    .heldItem = ITEM_SITRUS_BERRY,                                             \
-    .ball = ITEM_POKE_BALL,                                                    \
+#define LIZA_MEOWSTIC(rematch)                                                   \
+    {                                                                            \
+    REMATCH_MON(MEOWSTIC_FEMALE, ACE, rematch),                                  \
+    .ability = ABILITY_COMPETITIVE,                                              \
+    .nature = NATURE_MODEST,                                                     \
+    EV_SPREAD_SPA_SPE_HP,                                                        \
+    .moves = {MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_SIGNAL_BEAM, MOVE_CALM_MIND}, \
+    .gender = TRAINER_MON_FEMALE,                                                \
+    .heldItem = ITEM_SITRUS_BERRY,                                               \
+    .ball = ITEM_POKE_BALL,                                                      \
+    }
+
+#define TATE_ALAKAZAM(rematch)                                                  \
+    {                                                                           \
+    REMATCH_MON(ALAKAZAM, TIER3, rematch),                                      \
+    .ability = ABILITY_MAGIC_GUARD,                                             \
+    .nature = NATURE_MODEST,                                                    \
+    EV_SPREAD_SPA_SPE_HP,                                                       \
+    .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_RECOVER, MOVE_CALM_MIND}, \
+    .gender = TRAINER_MON_MALE,                                                 \
+    }
+
+#define LIZA_ESPEON(rematch)                                                       \
+    {                                                                              \
+    REMATCH_MON(ESPEON, TIER2, rematch),                                           \
+    .ability = ABILITY_MAGIC_BOUNCE,                                               \
+    .nature = NATURE_MODEST,                                                       \
+    EV_SPREAD_SPA_SPE_HP,                                                          \
+    .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_PSYCHIC_TERRAIN, MOVE_CALM_MIND}, \
+    .gender = TRAINER_MON_FEMALE,                                                  \
     }
 
 #define TATE_GRUMPIG(rematch)                                                      \
@@ -1455,33 +1482,14 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     .gender = TRAINER_MON_MALE,                                                    \
     }
 
-#define LIZA_CLAYDOL(rematch)                                                       \
-    {                                                                               \
-    REMATCH_MON(CLAYDOL, TIER2, rematch),                                           \
-    .ability = ABILITY_LEVITATE,                                                    \
-    .nature = NATURE_CALM,                                                          \
-    EV_SPREAD_DEF_SPD_HP,                                                           \
-    .moves = {MOVE_PSYCHIC, MOVE_EARTH_POWER, MOVE_POWER_SPLIT, MOVE_COSMIC_POWER}, \
-    }
-
-#define TATE_CHIMECHO(rematch)                                                   \
-    {                                                                            \
-    REMATCH_MON(CHIMECHO, TIER3, rematch),                                       \
-    .ability = ABILITY_LEVITATE,                                                 \
-    .nature = NATURE_MODEST,                                                     \
-    EV_SPREAD_SPA_SPD_HP,                                                        \
-    .moves = {MOVE_PSYCHIC, MOVE_HEAL_PULSE, MOVE_LIGHT_SCREEN, MOVE_HEAL_BELL}, \
-    .gender = TRAINER_MON_MALE,                                                  \
-    }
-
-#define LIZA_GARDEVOIR(rematch)                                                        \
-    {                                                                                  \
-    REMATCH_MON(GARDEVOIR, TIER3, rematch),                                            \
-    .ability = ABILITY_SYNCHRONIZE,                                                    \
-    .nature = NATURE_MODEST,                                                           \
-    EV_SPREAD_SPA_SPE_SPD,                                                             \
-    .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_MYSTICAL_FIRE, MOVE_CALM_MIND},  \
-    .gender = TRAINER_MON_FEMALE,                                                      \
+#define LIZA_ESPATHRA(rematch)                                                           \
+    {                                                                                    \
+    REMATCH_MON(ESPATHRA, TIER3, rematch),                                               \
+    .ability = ABILITY_OPPORTUNIST,                                                      \
+    .nature = NATURE_TIMID,                                                              \
+    EV_SPREAD_SPA_SPE_HP,                                                                \
+    .moves = {MOVE_LUMINA_CRASH, MOVE_DAZZLING_GLEAM, MOVE_SHADOW_BALL, MOVE_CALM_MIND}, \
+    .gender = TRAINER_MON_FEMALE,                                                        \
     }
 
 [TRAINER_TATE_AND_LIZA_2] =
@@ -1489,11 +1497,11 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     TATE_AND_LIZA_INFO,
     LEADER_REMATCH(2),
     .party = (const struct TrainerMon[]) {
-        TATE_CHIMECHO(2),
-        LIZA_CLAYDOL(2),
         TATE_GRUMPIG(2),
-        LIZA_LUNATONE(2),
-        TATE_SOLROCK(2),
+        LIZA_ESPEON(2),
+        TATE_ALAKAZAM(2),
+        LIZA_MEOWSTIC(2),
+        TATE_MEOWSTIC(2),
     },
 },
 
@@ -1502,11 +1510,11 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     TATE_AND_LIZA_INFO,
     LEADER_REMATCH(3),
     .party = (const struct TrainerMon[]) {
-        TATE_CHIMECHO(3),
-        LIZA_CLAYDOL(3),
         TATE_GRUMPIG(3),
-        LIZA_LUNATONE(3),
-        TATE_SOLROCK(3),
+        LIZA_ESPEON(3),
+        TATE_ALAKAZAM(3),
+        LIZA_MEOWSTIC(3),
+        TATE_MEOWSTIC(3),
     },
 },
 
@@ -1515,12 +1523,12 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     TATE_AND_LIZA_INFO,
     LEADER_REMATCH(4),
     .party = (const struct TrainerMon[]) {
-        LIZA_GARDEVOIR(4),
-        TATE_CHIMECHO(4),
-        LIZA_CLAYDOL(4),
+        LIZA_ESPATHRA(4),
         TATE_GRUMPIG(4),
-        LIZA_LUNATONE(4),
-        TATE_SOLROCK(4),
+        LIZA_ESPEON(4),
+        TATE_ALAKAZAM(4),
+        LIZA_MEOWSTIC(4),
+        TATE_MEOWSTIC(4),
     },
 },
 
@@ -1529,12 +1537,12 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     TATE_AND_LIZA_INFO,
     LEADER_REMATCH(5),
     .party = (const struct TrainerMon[]) {
-        LIZA_GARDEVOIR(5),
-        TATE_CHIMECHO(5),
-        LIZA_CLAYDOL(5),
+        LIZA_ESPATHRA(5),
         TATE_GRUMPIG(5),
-        LIZA_LUNATONE(5),
-        TATE_SOLROCK(5),
+        LIZA_ESPEON(5),
+        TATE_ALAKAZAM(5),
+        LIZA_MEOWSTIC(5),
+        TATE_MEOWSTIC(5),
     },
 },
 

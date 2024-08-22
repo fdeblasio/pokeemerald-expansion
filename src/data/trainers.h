@@ -2286,9 +2286,8 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         .heldItem = ITEM_SHUCA_BERRY,
         },
         {
-        STEVEN_METAGROSS(90),
-        .moves = {MOVE_METEOR_MASH, MOVE_PSYCHIC_FANGS, MOVE_EARTHQUAKE, MOVE_BULLET_PUNCH},
-        .heldItem = ITEM_METAGROSSITE,
+        STEVEN_PERRSERKER(90),
+        .heldItem = ITEM_METAL_COAT,
         }
     },
 },

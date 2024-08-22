@@ -141,13 +141,15 @@ struct Trainer
     .trainerClass = TRAINER_CLASS_RIVAL, \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE
 
-#define STEVEN_METAGROSS(Level)                                 \
-    .lvl = Level,                                               \
-    .species = Level < 70 ? SPECIES_METANG : SPECIES_METAGROSS, \
-    .ability = ABILITY_CLEAR_BODY,                              \
-    .nature = NATURE_ADAMANT,                                   \
-    EV_SPREAD_ATK_DEF_HP,                                       \
-    PERFECT_IVS,                                                \
+#define STEVEN_PERRSERKER(Level)                                                 \
+    .lvl = Level,                                                                \
+    .species = SPECIES_PERRSERKER,                                               \
+    .ability = ABILITY_STEELY_SPIRIT,                                            \
+    .nature = NATURE_ADAMANT,                                                    \
+    EV_SPREAD_ATK_DEF_HP,                                                        \
+    PERFECT_IVS,                                                                 \
+    .moves = {MOVE_IRON_HEAD, MOVE_SEED_BOMB, MOVE_FAKE_OUT, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                  \
     .ball = ITEM_POKE_BALL
 
 #define STEVEN_AGGRON(Level)                                                                                   \

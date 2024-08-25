@@ -92,8 +92,8 @@ SootopolisCity_Gym_1F_EventScript_Juan::
 SootopolisCity_Gym_1F_EventScript_JuanDefeated::
 	message SootopolisCity_Gym_1F_Text_ReceivedRainBadge
 	waitmessage
-	giveitem ITEM_FAME_CHECKER
 	call Common_EventScript_PlayGymBadgeFanfare
+	giveitem ITEM_FAME_CHECKER
 	msgbox SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis, MSGBOX_DEFAULT
 	setflag FLAG_BADGE08_GET
 	clearflag FLAG_HIDE_ROUTE_118_GABBY_AND_TY_2

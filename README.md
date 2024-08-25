@@ -2233,6 +2233,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - SpD: 90->100
     - Spe: 65->75
     - Learns Silver Wind, Signal Beam, and Ice Beam by level up
+    - Learns Icicle Crash by TM
 
 - Cufant/Copperajah:
     - Received Sturdy as a second ability

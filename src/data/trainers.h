@@ -1547,175 +1547,178 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     },
 },
 
-#define JUAN_INFO             \
-    LEADER_INFO(JUAN),        \
-    .trainerName = _("Juan"), \
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE
+#define GLACIA_INFO             \
+    .trainerName = _("Glacia"), \
+    LEADER_INFO(GLACIA),        \
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE
 
 [TRAINER_JUAN_1] =
 {
-    JUAN_INFO,
+    GLACIA_INFO,
     .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE},
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 55,
-        .species = SPECIES_CASTFORM,
+        .species = SPECIES_VANILLUXE,
+        .ability = ABILITY_SNOW_WARNING,
         IVS(24),
-        .moves = {MOVE_ICICLE_CRASH, MOVE_WEATHER_BALL, MOVE_ICE_BEAM, MOVE_RAIN_DANCE},
-        .gender = TRAINER_MON_MALE,
+        .moves = {MOVE_ICICLE_CRASH, MOVE_FREEZE_DRY, MOVE_ACID_ARMOR, MOVE_MIRROR_COAT},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 55,
-        .species = SPECIES_HUNTAIL,
+        .species = SPECIES_MAMOSWINE,
+        .ability = ABILITY_SNOW_CLOAK,
         IVS(24),
-        .moves = {MOVE_ICICLE_CRASH, MOVE_CRUNCH, MOVE_ICE_FANG, MOVE_RAIN_DANCE},
-        .gender = TRAINER_MON_MALE,
+        .moves = {MOVE_ICICLE_CRASH, MOVE_EARTHQUAKE, MOVE_ICE_SHARD, MOVE_AMNESIA},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 56,
-        .species = SPECIES_CRAWDAUNT,
-        .ability = ABILITY_SHELL_ARMOR,
+        .species = SPECIES_FROSMOTH,
+        .ability = ABILITY_SHIELD_DUST,
         IVS(24),
-        .moves = {MOVE_ICICLE_CRASH, MOVE_NIGHT_SLASH, MOVE_PROTECT, MOVE_SWORDS_DANCE},
-        .gender = TRAINER_MON_MALE,
+        .moves = {MOVE_ICICLE_CRASH, MOVE_BUG_BUZZ, MOVE_TAILWIND, MOVE_QUIVER_DANCE},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 56,
-        .species = SPECIES_LUVDISC,
+        .species = SPECIES_FROSLASS,
+        .ability = ABILITY_SNOW_CLOAK,
         IVS(24),
-        .moves = {MOVE_ICICLE_CRASH, MOVE_DRAINING_KISS, MOVE_BABY_DOLL_EYES, MOVE_AQUA_RING},
+        .moves = {MOVE_ICICLE_CRASH, MOVE_SHADOW_BALL, MOVE_SNOWSCAPE, MOVE_AURORA_VEIL},
         .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 58,
-        .species = SPECIES_WHISCASH,
-        .ability = ABILITY_OBLIVIOUS,
+        .species = SPECIES_WALREIN,
+        .ability = ABILITY_ICE_BODY,
         IVS(30),
-        .moves = {MOVE_ICICLE_CRASH, MOVE_EARTHQUAKE, MOVE_AMNESIA, MOVE_DRAGON_DANCE},
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_SITRUS_BERRY,
+        .moves = {MOVE_ICICLE_CRASH, MOVE_SURF, MOVE_CRUNCH, MOVE_ROLLOUT},
+        .gender = TRAINER_MON_FEMALE,
+        .heldItem = ITEM_ICY_ROCK,
         .ball = ITEM_POKE_BALL,
         }
     },
 },
 
-#define JUAN_WHISCASH(rematch)                                                        \
-    {                                                                                 \
-    REMATCH_MON(WHISCASH, ACE, rematch),                                              \
-    .ability = ABILITY_OBLIVIOUS,                                                     \
-    .nature = NATURE_ADAMANT,                                                         \
-    EV_SPREAD_ATK_HP_SPE,                                                             \
-    .moves = {MOVE_AQUA_TAIL, MOVE_EARTHQUAKE, MOVE_ZEN_HEADBUTT, MOVE_DRAGON_DANCE}, \
-    .gender = TRAINER_MON_MALE,                                                       \
-    .heldItem = ITEM_SITRUS_BERRY,                                                    \
-    .ball = ITEM_POKE_BALL,                                                           \
+#define GLACIA_WALREIN(rematch)                                            \
+    {                                                                      \
+    REMATCH_MON(WALREIN, ACE, rematch),                                    \
+    .ability = ABILITY_ICE_BODY,                                           \
+    .nature = NATURE_MODEST,                                               \
+    EV_SPREAD_SPA_HP_SPE,                                                  \
+    .moves = {MOVE_BLIZZARD, MOVE_SURF, MOVE_SIGNAL_BEAM, MOVE_SNOWSCAPE}, \
+    .gender = TRAINER_MON_FEMALE,                                          \
+    .heldItem = ITEM_ICY_ROCK,                                             \
+    .ball = ITEM_POKE_BALL,                                                \
     }
 
-#define JUAN_LUVDISC(rematch)                                                             \
-    {                                                                                     \
-    REMATCH_MON(LUVDISC, TIER2, rematch),                                                 \
-    .ability = ABILITY_SWIFT_SWIM,                                                        \
-    .nature = NATURE_TIMID,                                                               \
-    EV_SPREAD_SPA_SPE_HP,                                                                 \
-    .moves = {MOVE_HYDRO_PUMP, MOVE_DRAINING_KISS, MOVE_BABY_DOLL_EYES, MOVE_RAIN_DANCE}, \
-    .gender = TRAINER_MON_FEMALE,                                                         \
-    .heldItem = ITEM_DAMP_ROCK,                                                           \
-    }
-
-#define JUAN_CRAWDAUNT(rematch)                                                \
-    {                                                                          \
-    REMATCH_MON(CRAWDAUNT, TIER2, rematch),                                    \
-    .ability = ABILITY_SHELL_ARMOR,                                            \
-    .nature = NATURE_ADAMANT,                                                  \
-    EV_SPREAD_ATK_SPE_HP,                                                      \
-    .moves = {MOVE_CRABHAMMER, MOVE_CRUNCH, MOVE_ENDEAVOR, MOVE_SWORDS_DANCE}, \
-    .gender = TRAINER_MON_MALE,                                                \
-    .heldItem = ITEM_MYSTIC_WATER,                                             \
-    }
-
-#define JUAN_HUNTAIL(rematch)                                           \
-    {                                                                   \
-    REMATCH_MON(HUNTAIL, TIER3, rematch),                               \
-    .ability = ABILITY_SWIFT_SWIM,                                      \
-    .nature = NATURE_ADAMANT,                                           \
-    EV_SPREAD_ATK_DEF_SPE,                                              \
-    .moves = {MOVE_AQUA_TAIL, MOVE_CRUNCH, MOVE_BATON_PASS, MOVE_COIL}, \
-    .gender = TRAINER_MON_MALE,                                         \
-    }
-
-#define JUAN_CASTFORM(rematch)                                                   \
-    {                                                                            \
-    REMATCH_MON(CASTFORM, TIER3, rematch),                                       \
-    .ability = ABILITY_FORECAST,                                                 \
-    .nature = NATURE_MODEST,                                                     \
-    EV_SPREAD_SPA_SPE_HP,                                                        \
-    .moves = {MOVE_WEATHER_BALL, MOVE_THUNDER, MOVE_HURRICANE, MOVE_RAIN_DANCE}, \
-    .gender = TRAINER_MON_MALE,                                                  \
-    }
-
-#define JUAN_SWAMPERT(rematch)                                                    \
+#define GLACIA_FROSLASS(rematch)                                                  \
     {                                                                             \
-    REMATCH_MON(SWAMPERT, TIER3, rematch),                                        \
-    .ability = ABILITY_SWIFT_SWIM,                                                \
+    REMATCH_MON(FROSLASS, TIER2, rematch),                                        \
+    .ability = ABILITY_SNOW_CLOAK,                                                \
+    .nature = NATURE_TIMID,                                                       \
+    EV_SPREAD_SPA_SPE_HP,                                                         \
+    .moves = {MOVE_BLIZZARD, MOVE_SHADOW_BALL, MOVE_SNOWSCAPE, MOVE_AURORA_VEIL}, \
+    .gender = TRAINER_MON_FEMALE,                                                 \
+    .heldItem = ITEM_LIGHT_CLAY,                                                  \
+    }
+
+#define GLACIA_FROSMOTH(rematch)                                                 \
+    {                                                                            \
+    REMATCH_MON(FROSMOTH, TIER2, rematch),                                       \
+    .ability = ABILITY_ICE_SCALES,                                               \
+    .nature = NATURE_MODEST,                                                     \
+    EV_SPREAD_SPA_SPD_SPE,                                                       \
+    .moves = {MOVE_BLIZZARD, MOVE_BUG_BUZZ, MOVE_GIGA_DRAIN, MOVE_QUIVER_DANCE}, \
+    .gender = TRAINER_MON_FEMALE,                                                \
+    .heldItem = ITEM_NEVER_MELT_ICE,                                             \
+    }
+
+#define GLACIA_MAMOSWINE(rematch)                                                       \
+    {                                                                                   \
+    REMATCH_MON(MAMOSWINE, TIER3, rematch),                                             \
+    .ability = ABILITY_SNOW_CLOAK,                                                      \
+    .nature = NATURE_ADAMANT,                                                           \
+    EV_SPREAD_ATK_SPE_HP,                                                               \
+    .moves = {MOVE_ICICLE_CRASH, MOVE_HIGH_HORSEPOWER, MOVE_ICE_SHARD, MOVE_SNOWSCAPE}, \
+    .gender = TRAINER_MON_FEMALE,                                                       \
+    }
+
+#define GLACIA_VANILLUXE(rematch)                                                    \
+    {                                                                                \
+    REMATCH_MON(VANILLUXE, TIER3, rematch),                                          \
+    .ability = ABILITY_SNOW_WARNING,                                                 \
+    .nature = NATURE_MODEST,                                                         \
+    EV_SPREAD_SPA_SPE_HP,                                                            \
+    .moves = {MOVE_BLIZZARD, MOVE_FLASH_CANNON, MOVE_HYPER_VOICE, MOVE_SIGNAL_BEAM}, \
+    .gender = TRAINER_MON_FEMALE,                                                    \
+    }
+
+#define GLACIA_BEARTIC(rematch)                                                   \
+    {                                                                             \
+    REMATCH_MON(BEARTIC, TIER3, rematch),                                         \
+    .ability = ABILITY_SNOW_CLOAK,                                                \
     .nature = NATURE_ADAMANT,                                                     \
-    EV_SPREAD_ATK_HP_SPE,                                                         \
-    .moves = {MOVE_AQUA_TAIL, MOVE_EARTHQUAKE, MOVE_HAMMER_ARM, MOVE_ROCK_SLIDE}, \
-    .gender = TRAINER_MON_MALE,                                                   \
+    EV_SPREAD_ATK_SPE_HP,                                                         \
+    .moves = {MOVE_ICICLE_CRASH, MOVE_PLAY_ROUGH, MOVE_AQUA_JET, MOVE_SNOWSCAPE}, \
+    .gender = TRAINER_MON_FEMALE,                                                 \
     }
 
 
 [TRAINER_JUAN_2] =
 {
-    JUAN_INFO,
+    GLACIA_INFO,
     LEADER_REMATCH(2),
     .party = (const struct TrainerMon[]) {
-        JUAN_CASTFORM(2),
-        JUAN_HUNTAIL(2),
-        JUAN_CRAWDAUNT(2),
-        JUAN_LUVDISC(2),
-        JUAN_WHISCASH(2),
+        GLACIA_VANILLUXE(2),
+        GLACIA_MAMOSWINE(2),
+        GLACIA_FROSMOTH(2),
+        GLACIA_FROSLASS(2),
+        GLACIA_WALREIN(2),
     },
 },
 
 [TRAINER_JUAN_3] =
 {
-    JUAN_INFO,
+    GLACIA_INFO,
     LEADER_REMATCH(3),
     .party = (const struct TrainerMon[]) {
-        JUAN_CASTFORM(3),
-        JUAN_HUNTAIL(3),
-        JUAN_CRAWDAUNT(3),
-        JUAN_LUVDISC(3),
-        JUAN_WHISCASH(3),
+        GLACIA_VANILLUXE(3),
+        GLACIA_MAMOSWINE(3),
+        GLACIA_FROSMOTH(3),
+        GLACIA_FROSLASS(3),
+        GLACIA_WALREIN(3),
     },
 },
 
 [TRAINER_JUAN_4] =
 {
-    JUAN_INFO,
+    GLACIA_INFO,
     LEADER_REMATCH(4),
     .party = (const struct TrainerMon[]) {
-        JUAN_SWAMPERT(4),
-        JUAN_CASTFORM(4),
-        JUAN_HUNTAIL(4),
-        JUAN_CRAWDAUNT(4),
-        JUAN_LUVDISC(4),
-        JUAN_WHISCASH(4),
+        GLACIA_BEARTIC(4),
+        GLACIA_VANILLUXE(4),
+        GLACIA_MAMOSWINE(4),
+        GLACIA_FROSMOTH(4),
+        GLACIA_FROSLASS(4),
+        GLACIA_WALREIN(4),
     },
 },
 
 [TRAINER_JUAN_5] =
 {
-    JUAN_INFO,
+    GLACIA_INFO,
     LEADER_REMATCH(5),
     .party = (const struct TrainerMon[]) {
-        JUAN_SWAMPERT(5),
-        JUAN_CASTFORM(5),
-        JUAN_HUNTAIL(5),
-        JUAN_CRAWDAUNT(5),
-        JUAN_LUVDISC(5),
-        JUAN_WHISCASH(5),
+        GLACIA_BEARTIC(5),
+        GLACIA_VANILLUXE(5),
+        GLACIA_MAMOSWINE(5),
+        GLACIA_FROSMOTH(5),
+        GLACIA_FROSLASS(5),
+        GLACIA_WALREIN(5),
     },
 },
 
@@ -1934,12 +1937,12 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     },
 },
 
-#define GLACIA_INFO               \
-    ELITE_FOUR_INFO(GLACIA, ICE), \
-    .trainerName = _("Glacia"),   \
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
+#define JUAN_INFO                 \
+    ELITE_FOUR_INFO(JUAN, GRASS), \
+    .trainerName = _("Juan"),     \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
 
-#define GLACIA_WALREIN(Level)                                              \
+#define JUAN_WALREIN(Level)                                              \
     {                                                                      \
     .lvl = Level,                                                          \
     .species = SPECIES_WALREIN,                                            \
@@ -1953,14 +1956,14 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     .ball = ITEM_POKE_BALL,                                                \
     }
 
-#define GLACIA_SUPPORTING_MON(Level) \
+#define JUAN_SUPPORTING_MON(Level) \
     .lvl = Level,                    \
     PERFECT_IVS,                     \
     .ball = ITEM_PREMIER_BALL
 
-#define GLACIA_FROSLASS(Level)                                                      \
+#define JUAN_FROSLASS(Level)                                                      \
     {                                                                               \
-    GLACIA_SUPPORTING_MON(Level),                                                   \
+    JUAN_SUPPORTING_MON(Level),                                                   \
     .species = SPECIES_FROSLASS,                                                    \
     .ability = ABILITY_SNOW_CLOAK,                                                  \
     .nature = NATURE_TIMID,                                                         \
@@ -1969,9 +1972,9 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     .gender = TRAINER_MON_FEMALE,                                                   \
     }
 
-#define GLACIA_GLALIE(Level)                                                        \
+#define JUAN_GLALIE(Level)                                                        \
     {                                                                               \
-    GLACIA_SUPPORTING_MON(Level),                                                   \
+    JUAN_SUPPORTING_MON(Level),                                                   \
     .species = SPECIES_GLALIE,                                                      \
     .ability = ABILITY_ICE_BODY,                                                    \
     .nature = NATURE_MODEST,                                                        \
@@ -1980,9 +1983,9 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     .gender = TRAINER_MON_MALE,                                                     \
     }
 
-#define GLACIA_CASTFORM(Level)                                                    \
+#define JUAN_CASTFORM(Level)                                                    \
     {                                                                             \
-    GLACIA_SUPPORTING_MON(Level),                                                 \
+    JUAN_SUPPORTING_MON(Level),                                                 \
     .species = SPECIES_CASTFORM,                                                  \
     .ability = ABILITY_FORECAST,                                                  \
     .nature = NATURE_MODEST,                                                      \
@@ -1991,9 +1994,9 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     .gender = TRAINER_MON_FEMALE,                                                 \
     }
 
-#define GLACIA_SEALEO(Level)                                                   \
+#define JUAN_SEALEO(Level)                                                   \
     {                                                                          \
-    GLACIA_SUPPORTING_MON(Level),                                              \
+    JUAN_SUPPORTING_MON(Level),                                              \
     .species = SPECIES_SEALEO,                                                 \
     .ability = ABILITY_ICE_BODY,                                               \
     .nature = NATURE_ADAMANT,                                                  \
@@ -2002,9 +2005,9 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     .gender = TRAINER_MON_MALE,                                                \
     }
 
-#define GLACIA_NINETALES(Level)                                                  \
+#define JUAN_NINETALES(Level)                                                  \
     {                                                                            \
-    GLACIA_SUPPORTING_MON(Level),                                                \
+    JUAN_SUPPORTING_MON(Level),                                                \
     .species = SPECIES_NINETALES_ALOLAN,                                         \
     .ability = ABILITY_SNOW_WARNING,                                             \
     .nature = NATURE_TIMID,                                                      \
@@ -2016,28 +2019,28 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
 
 [TRAINER_GLACIA] =
 {
-    GLACIA_INFO,
+    JUAN_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        GLACIA_SEALEO(62),
-        GLACIA_CASTFORM(62),
-        GLACIA_GLALIE(63),
-        GLACIA_FROSLASS(63),
-        GLACIA_WALREIN(64),
+        JUAN_SEALEO(62),
+        JUAN_CASTFORM(62),
+        JUAN_GLALIE(63),
+        JUAN_FROSLASS(63),
+        JUAN_WALREIN(64),
     },
 },
 
 [TRAINER_GLACIA_REMATCH] =
 {
-    GLACIA_INFO,
+    JUAN_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        GLACIA_SEALEO(86),
-        GLACIA_NINETALES(86),
-        GLACIA_CASTFORM(86),
-        GLACIA_GLALIE(88),
-        GLACIA_FROSLASS(88),
-        GLACIA_WALREIN(90),
+        JUAN_SEALEO(86),
+        JUAN_NINETALES(86),
+        JUAN_CASTFORM(86),
+        JUAN_GLALIE(88),
+        JUAN_FROSLASS(88),
+        JUAN_WALREIN(90),
     },
 },
 
@@ -15471,7 +15474,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 55,
-        .species = SPECIES_SEAKING,
+        .species = SPECIES_FROSLASS,
         IVS(12),
         }
     },
@@ -15486,7 +15489,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 55,
-        .species = SPECIES_LUVDISC,
+        .species = SPECIES_FROSMOTH,
         IVS(12),
         }
     },
@@ -15501,12 +15504,12 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         RICH_MON(54),
-        .species = SPECIES_CORSOLA,
+        .species = SPECIES_FROSLASS,
         IVS(12),
         },
         {
         RICH_MON(54),
-        .species = SPECIES_LUVDISC,
+        .species = SPECIES_GLALIE,
         IVS(12),
         }
     },
@@ -15521,15 +15524,13 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         POKE_FAN_MON(54),
-        .species = SPECIES_MAGIKARP,
+        .species = SPECIES_CUBCHOO,
         IVS(12),
-        .moves = {MOVE_HYDRO_PUMP, MOVE_BOUNCE, MOVE_FLAIL, MOVE_TACKLE}
         },
         {
         POKE_FAN_MON(54),
-        .species = SPECIES_FEEBAS,
+        .species = SPECIES_SNOM,
         IVS(12),
-        .moves = {MOVE_WATER_PULSE, MOVE_FLAIL, MOVE_RETURN, MOVE_ATTRACT}
         }
     },
 },
@@ -15543,12 +15544,12 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 54,
-        .species = SPECIES_BARRASKEWDA,
+        .species = SPECIES_WEAVILE,
         IVS(12),
         },
         {
         .lvl = 54,
-        .species = SPECIES_SHARPEDO,
+        .species = SPECIES_BEARTIC,
         IVS(12),
         }
     },
@@ -15563,12 +15564,12 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 54,
-        .species = SPECIES_LANTURN,
+        .species = SPECIES_SEALEO,
         IVS(12),
         },
         {
         .lvl = 54,
-        .species = SPECIES_WAILORD,
+        .species = SPECIES_VANILLUXE,
         IVS(12),
         }
     },
@@ -15583,17 +15584,17 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         POKE_FAN_MON(53),
-        .species = SPECIES_AZURILL,
+        .species = SPECIES_SWINUB,
         IVS(12),
         },
         {
         POKE_FAN_MON(53),
-        .species = SPECIES_MARILL,
+        .species = SPECIES_PILOSWINE,
         IVS(12),
         },
         {
         POKE_FAN_MON(53),
-        .species = SPECIES_AZUMARILL,
+        .species = SPECIES_MAMOSWINE,
         IVS(12),
         }
     },
@@ -15608,21 +15609,18 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 53,
-        .species = SPECIES_CLAMPERL,
+        .species = SPECIES_VANILLISH,
         IVS(12),
-        .moves = {MOVE_WATER_PULSE, MOVE_WHIRLPOOL, MOVE_RAIN_DANCE, MOVE_IRON_DEFENSE}
         },
         {
         .lvl = 53,
-        .species = SPECIES_CRAWDAUNT,
+        .species = SPECIES_CRABOMINABLE,
         IVS(12),
-        .moves = {MOVE_WATER_PULSE, MOVE_NIGHT_SLASH, MOVE_PROTECT, MOVE_TAUNT}
         },
         {
         .lvl = 53,
-        .species = SPECIES_LUDICOLO,
+        .species = SPECIES_WEAVILE,
         IVS(12),
-        .moves = {MOVE_WATER_PULSE, MOVE_GIGA_DRAIN, MOVE_NATURE_POWER, MOVE_TEETER_DANCE}
         }
     },
 },
@@ -15636,7 +15634,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         RICH_MON(55),
-        .species = SPECIES_MARSHTOMP,
+        .species = SPECIES_ROTOM_FROST,
         IVS(18),
         }
     },
@@ -15651,7 +15649,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 55,
-        .species = SPECIES_FLOATZEL,
+        .species = SPECIES_CRABOMINABLE,
         IVS(18),
         }
     },

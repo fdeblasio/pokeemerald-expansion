@@ -345,12 +345,12 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Matt/Shelly                |N/A/37, 37            |52, 52, 54/52, 52, 54|
 |Archie Seafloor Cavern     |41, 41, 43            |53, 53, 54, 55|
 |Raikou/Entei/Suicune       |40                    |55|
-|Juan                       |41, 41, 43, 43, 46    |55, 55, 56, 56, 58|
+|Glacia                     |41, 41, 43, 43, 46    |55, 55, 56, 56, 58|
 |Rayquaza                   |70                    |60|
 |Duncan Victory Road        |41, 43, 44, 44, 45    |56, 56, 57, 57, 59|
 |Sidney                     |46, 46, 48, 48, 49    |60, 60, 61, 61, 62|
 |Phoebe                     |48, 49, 49, 50, 51    |61, 61, 62, 62, 63|
-|Glacia                     |50, 50, 52, 52, 53    |62, 62, 63, 63, 64|
+|Juan                       |50, 50, 52, 52, 53    |62, 62, 63, 63, 64|
 |Drake                      |52, 53, 53, 54, 55    |63, 63, 64, 64, 66|
 |Wallace                    |55, 56, 56, 56, 57, 58|66, 66, 66, 67, 67, 69|
 |Groudon/Kyogre             |70||
@@ -395,7 +395,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 |:--:|   :--:   |:------:|
 |TM01|Focus Punch|Route 115|
 |TM02|Dragon Claw|Meteor Falls|
-|TM03|Water Pulse|Juan|
+|TM03|Water Pulse|Slateport TM Shop|
 |TM04|Calm Mind|Slateport TM Shop|
 |TM05|Roar|Route 114|
 |TM06|Toxic|Lavaridge TM Shop|
@@ -464,7 +464,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 |TM69|Play Rough|Lilycove TM Shop|
 |TM70|Leech Life|Lilycove TM Shop|
 |TM71|Stone Edge|Lilycove TM Shop|
-|TM72|Icicle Crash|Lilycove TM Shop|
+|TM72|Icicle Crash|Glacia|
 |TM73|Thunder Wave|Slateport TM Shop|
 |TM74|Nasty Plot|Lavaridge TM Shop|
 |TM75|Swords Dance|Lavaridge TM Shop|

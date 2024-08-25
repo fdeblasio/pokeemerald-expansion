@@ -574,6 +574,7 @@ SlateportCity_EventScript_TMClerk::
 
 	.align 2
 SlateportCity_Market_TMs:
+	.2byte ITEM_TM_WATER_PULSE
 	.2byte ITEM_TM_CALM_MIND
 	.2byte ITEM_TM_ROOST
 	.2byte ITEM_TM_FALSE_SWIPE

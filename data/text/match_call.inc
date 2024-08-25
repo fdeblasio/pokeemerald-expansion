@@ -2224,7 +2224,7 @@ MatchCall_Text_TateLiza4::
 	.string "Liza: We could all battle again!$"
 
 MatchCall_Text_Juan1::
-	.string "Juan: Hmm…\n"
+	.string "Glacia: Hmm…\n"
 	.string "{PLAYER}{KUN}… Was it?\p"
 	.string "Our battle together--it brought\n"
 	.string "to me memories of when I first\l"
@@ -2233,7 +2233,7 @@ MatchCall_Text_Juan1::
 	.string "yet surpass Wallace!$"
 
 MatchCall_Text_Juan2::
-	.string "Juan: Fufu… {PLAYER}{KUN}…\n"
+	.string "Glacia: Fufu… {PLAYER}{KUN}…\n"
 	.string "You've finally achieved your goal.\p"
 	.string "My eye for appraising talent wasn't\n"
 	.string "mistaken…\p"
@@ -2242,14 +2242,14 @@ MatchCall_Text_Juan2::
 	.string "of power and prestige.$"
 
 MatchCall_Text_Juan3::
-	.string "Juan: Hoho… {PLAYER}{KUN}…\p"
+	.string "Glacia: Hoho… {PLAYER}{KUN}…\p"
 	.string "Our Sootopolis Gym has finally\n"
 	.string "reopened.\p"
 	.string "If you wish to see me, you are\n"
 	.string "welcome to visit anytime.$"
 
 MatchCall_Text_Juan4::
-	.string "Juan: {PLAYER}{KUN}…\p"
+	.string "Glacia: {PLAYER}{KUN}…\p"
 	.string "Like the finest music, the battles\n"
 	.string "we wage together strike chords\l"
 	.string "of inspiration in my heart…\p"
@@ -2273,7 +2273,7 @@ MatchCall_Text_Phoebe::
 	.string "Pokémon.$"
 
 MatchCall_Text_Glacia::
-	.string "Glacia: Hello, {PLAYER}.\p"
+	.string "Juan: Hello, {PLAYER}.\p"
 	.string "I trust you haven't become\n"
 	.string "complacent with your power?\p"
 	.string "If you feel the need to cool your\n"

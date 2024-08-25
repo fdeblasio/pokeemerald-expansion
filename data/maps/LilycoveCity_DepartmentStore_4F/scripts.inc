@@ -131,7 +131,6 @@ LilycoveCity_DepartmentStore_4F_Pokemart_NewTMs:
 	.2byte ITEM_TM_PLAY_ROUGH
 	.2byte ITEM_TM_LEECH_LIFE
 	.2byte ITEM_TM_STONE_EDGE
-	.2byte ITEM_TM_ICICLE_CRASH
 	.2byte ITEM_TM_CRUNCH
 	.2byte ITEM_TM_DARK_PULSE
 	.2byte ITEM_TM_ROCK_SLIDE

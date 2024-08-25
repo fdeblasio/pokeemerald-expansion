@@ -189,9 +189,9 @@ MoveTutor_Text_DoubleEdgeTeach:
 	.string "Sootopolis's Gym Leader is really\n"
 	.string "lovably admirable.\p"
 	.string "But that also means I have many\n"
-	.string "rivals for his attention.\p"
-	.string "He's got appeal with a Double-Edge.\n"
-	.string "I couldn't even catch his eye.\p"
+	.string "rivals for her attention.\p"
+	.string "She's got appeal with a Double-Edge.\n"
+	.string "I couldn't even catch her eye.\p"
 	.string "Please, let me teach your Pokémon\n"
 	.string "the move Double-Edge!$"
 

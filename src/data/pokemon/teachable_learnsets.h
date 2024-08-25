@@ -54261,6 +54261,7 @@ static const u16 sFrosmothTeachableLearnset[] = {
     MOVE_HYPER_BEAM,
     MOVE_ICE_BEAM,
     MOVE_ICE_SPINNER,
+    MOVE_ICICLE_CRASH,
     MOVE_ICICLE_SPEAR,
     MOVE_ICY_WIND,
     MOVE_IMPRISON,

@@ -2050,6 +2050,7 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
     - SpD: 90->100
     - Spe: 65->75
     - Learns Silver Wind, Signal Beam, and Ice Beam by level up
+    - Learns Icicle Crash by TM
 
 - Cufant/Copperajah:
     - Received Sturdy as a second ability

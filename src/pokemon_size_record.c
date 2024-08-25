@@ -173,14 +173,14 @@ void GetSeedotSizeRecordInfo(void)
 {
     u16 *sizeRecord = GetVarPointer(VAR_SEEDOT_SIZE_RECORD);
 
-    GetMonSizeRecordInfo(SPECIES_SEEDOT, sizeRecord);
+    GetMonSizeRecordInfo(SOOTOPOLIS_SIZE_RIGHT, sizeRecord);
 }
 
 void CompareSeedotSize(void)
 {
     u16 *sizeRecord = GetVarPointer(VAR_SEEDOT_SIZE_RECORD);
 
-    gSpecialVar_Result = CompareMonSize(SPECIES_SEEDOT, sizeRecord);
+    gSpecialVar_Result = CompareMonSize(SOOTOPOLIS_SIZE_RIGHT, sizeRecord);
 }
 
 void InitLotadSizeRecord(void)
@@ -192,14 +192,14 @@ void GetLotadSizeRecordInfo(void)
 {
     u16 *sizeRecord = GetVarPointer(VAR_LOTAD_SIZE_RECORD);
 
-    GetMonSizeRecordInfo(SPECIES_LOTAD, sizeRecord);
+    GetMonSizeRecordInfo(SOOTOPOLIS_SIZE_LEFT, sizeRecord);
 }
 
 void CompareLotadSize(void)
 {
     u16 *sizeRecord = GetVarPointer(VAR_LOTAD_SIZE_RECORD);
 
-    gSpecialVar_Result = CompareMonSize(SPECIES_LOTAD, sizeRecord);
+    gSpecialVar_Result = CompareMonSize(SOOTOPOLIS_SIZE_LEFT, sizeRecord);
 }
 
 void GiveGiftRibbonToParty(u8 index, u8 ribbonId)

@@ -1588,12 +1588,15 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Psyshield Bash by level up
 
 - Raikou (not in main game):
+    - Hidden Ability: Inner Focus -> Volt Absorb
     - Learns Shock Wave and Thunderbolt by level up
 
 - Entei (not in main game):
+    - Hidden Ability: Inner Focus -> Flash Fire
     - Learns Flame Burst and Temper Flare by level up
 
 - Suicune (not in main game):
+    - Hidden Ability: Inner Focus -> Water Absorb
     - Learns Bubble Beam and Scald by level up
 
 - Lugia (postgame):

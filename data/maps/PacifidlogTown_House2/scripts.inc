@@ -34,6 +34,7 @@ PacifidlogTown_House2_EventScript_HappyAzurill::
 	faceplayer
 	waitse
 	playmoncry SPECIES_PACIFIDLOG_TM, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, SPECIES_PACIFIDLOG_TM
 	msgbox PacifidlogTown_House2_Text_Rurii, MSGBOX_DEFAULT
 	waitmoncry
 	msgbox PacifidlogTown_House2_Text_VeryFriendlyWithTrainer, MSGBOX_DEFAULT
@@ -45,6 +46,7 @@ PacifidlogTown_House2_EventScript_UnhappyAzurill::
 	faceplayer
 	waitse
 	playmoncry SPECIES_PACIFIDLOG_TM, CRY_MODE_ENCOUNTER
+	bufferspeciesname STR_VAR_1, SPECIES_PACIFIDLOG_TM
 	msgbox PacifidlogTown_House2_Text_Rururi, MSGBOX_DEFAULT
 	waitmoncry
 	msgbox PacifidlogTown_House2_Text_DoesntLikeTrainerVeryMuch, MSGBOX_DEFAULT
@@ -71,14 +73,14 @@ PacifidlogTown_House2_Text_ExplainReturnFrustration:
 	.string "power goes up.$"
 
 PacifidlogTown_House2_Text_Rurii:
-	.string "Azurill: Rurii.$"
+	.string "{STR_VAR_1}: Rurii.$"
 
 PacifidlogTown_House2_Text_VeryFriendlyWithTrainer:
 	.string "It appears to be very friendly with the\n"
 	.string "Trainer.$"
 
 PacifidlogTown_House2_Text_Rururi:
-	.string "Azurill: Rururi!$"
+	.string "{STR_VAR_1}: Rururi!$"
 
 PacifidlogTown_House2_Text_DoesntLikeTrainerVeryMuch:
 	.string "It doesn't appear to like the Trainer\n"

@@ -20,21 +20,26 @@ SootopolisCity_LotadAndSeedotHouse_EventScript_SeedotBrother::
 	end
 
 SootopolisCity_LotadAndSeedotHouse_EventScript_CancelShowSeedot::
+	bufferspeciesname STR_VAR_1, SOOTOPOLIS_SIZE_RIGHT
 	msgbox SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigSeedot, MSGBOX_DEFAULT
 	release
 	end
 
 SootopolisCity_LotadAndSeedotHouse_EventScript_NotSeedot::
+	bufferspeciesname STR_VAR_1, SOOTOPOLIS_SIZE_RIGHT
 	msgbox SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotSeedot, MSGBOX_DEFAULT
 	release
 	end
 
 SootopolisCity_LotadAndSeedotHouse_EventScript_SmallSeedot::
+	bufferspeciesname STR_VAR_1, SOOTOPOLIS_SIZE_RIGHT
 	msgbox SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerSeedot, MSGBOX_DEFAULT
 	release
 	end
 
 SootopolisCity_LotadAndSeedotHouse_EventScript_BigSeedot::
+	bufferspeciesname STR_VAR_1, SOOTOPOLIS_SIZE_RIGHT
+	bufferspeciesname STR_VAR_3, SOOTOPOLIS_SIZE_LEFT
 	msgbox SootopolisCity_LotadAndSeedotHouse_Text_GoshMightBeBiggerThanLotad, MSGBOX_DEFAULT
 	giveitem ITEM_ELIXIR
 	goto_if_eq VAR_RESULT, FALSE, SootopolisCity_LotadAndSeedotHouse_EventScript_NoRoomForElixir1
@@ -66,21 +71,26 @@ SootopolisCity_LotadAndSeedotHouse_EventScript_LotadBrother::
 	end
 
 SootopolisCity_LotadAndSeedotHouse_EventScript_CancelShowLotad::
+	bufferspeciesname STR_VAR_1, SOOTOPOLIS_SIZE_LEFT
 	msgbox SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigLotad, MSGBOX_DEFAULT
 	release
 	end
 
 SootopolisCity_LotadAndSeedotHouse_EventScript_NotLotad::
+	bufferspeciesname STR_VAR_1, SOOTOPOLIS_SIZE_LEFT
 	msgbox SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotLotad, MSGBOX_DEFAULT
 	release
 	end
 
 SootopolisCity_LotadAndSeedotHouse_EventScript_SmallLotad::
+	bufferspeciesname STR_VAR_1, SOOTOPOLIS_SIZE_LEFT
 	msgbox SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerLotad, MSGBOX_DEFAULT
 	release
 	end
 
 SootopolisCity_LotadAndSeedotHouse_EventScript_BigLotad::
+	bufferspeciesname STR_VAR_1, SOOTOPOLIS_SIZE_LEFT
+	bufferspeciesname STR_VAR_3, SOOTOPOLIS_SIZE_RIGHT
 	msgbox SootopolisCity_LotadAndSeedotHouse_Text_WowMightBeBiggerThanSeedot, MSGBOX_DEFAULT
 	giveitem ITEM_ELIXIR
 	goto_if_eq VAR_RESULT, FALSE, SootopolisCity_LotadAndSeedotHouse_EventScript_NoRoomForElixir2

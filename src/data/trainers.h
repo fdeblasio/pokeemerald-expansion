@@ -15605,7 +15605,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 55,
-        .species = SPECIES_KADABRA,
+        .species = SPECIES_ALAKAZAM,
         },
         {
         .lvl = 55,

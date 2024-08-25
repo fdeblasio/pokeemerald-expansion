@@ -6324,7 +6324,7 @@
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "LOUDRED"
+                "species": "FRAXURE"
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
@@ -6332,7 +6332,7 @@
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "LOUDRED"
+                "species": "FRAXURE"
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
@@ -6348,7 +6348,7 @@
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "LOUDRED"
+                "species": "FRAXURE"
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
@@ -6377,7 +6377,7 @@
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "GOLBAT"
+                "species": "NOIVERN"
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
@@ -6385,7 +6385,7 @@
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "GOLBAT"
+                "species": "NOIVERN"
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
@@ -6401,7 +6401,7 @@
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "GOLBAT"
+                "species": "NOIVERN"
               }
             ]
           }
@@ -6426,7 +6426,7 @@
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "SABLEYE"
+                "species": "NOIVERN"
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
@@ -6434,7 +6434,7 @@
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "SABLEYE"
+                "species": "NOIVERN"
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
@@ -6450,7 +6450,7 @@
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "SABLEYE"
+                "species": "NOIVERN"
               }
             ]
           },
@@ -6459,19 +6459,19 @@
             "mons": [
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "WHISCASH"
+                "species": "DONDOZO"
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "MILOTIC"
+                "species": "DONDOZO"
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "MILOTIC"
+                "species": "DONDOZO"
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "MILOTIC"
+                "species": "DONDOZO"
               }
             ]
           },
@@ -6491,19 +6491,19 @@
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "WHISCASH"
+                "species": "DONDOZO"
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "WHISCASH"
+                "species": "DONDOZO"
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "WHISCASH"
+                "species": "DONDOZO"
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "WHISCASH"
+                "species": "DONDOZO"
               }
             ]
           }

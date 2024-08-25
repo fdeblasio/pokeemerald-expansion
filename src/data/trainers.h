@@ -15669,7 +15669,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
         },
         {
         .lvl = 55,
-        .species = SPECIES_SOLROCK,
+        .species = SPECIES_MEOWSTIC,
         }
     },
 },
@@ -15713,7 +15713,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 56,
-        .species = SPECIES_WOBBUFFET,
+        .species = SPECIES_PYROAR,
         }
     },
 },
@@ -15727,11 +15727,11 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 55,
-        .species = SPECIES_GARDEVOIR,
+        .species = SPECIES_MEOWSTIC_FEMALE,
         },
         {
         .lvl = 55,
-        .species = SPECIES_XATU,
+        .species = SPECIES_ALAKAZAM,
         }
     },
 },
@@ -15744,11 +15744,11 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 55,
-        .species = SPECIES_LUNATONE,
+        .species = SPECIES_XATU,
         },
         {
         .lvl = 55,
-        .species = SPECIES_ALAKAZAM,
+        .species = SPECIES_GRUMPIG,
         }
     },
 },
@@ -15852,10 +15852,10 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     IVS(18),                         \
     .gender = TRAINER_MON_MALE
 
-#define NICOLAS_BAGON(Level)                                                                                     \
-    .lvl = Level,                                                                                                \
-    .species = Level < 56 ? SPECIES_BAGON : (Level < REMATCH_5_MINI_BOSS ? SPECIES_SHELGON : SPECIES_SALAMENCE), \
-    IVS(18),                                                                                                     \
+#define NICOLAS_GIBLE(Level)                                                                                   \
+    .lvl = Level,                                                                                              \
+    .species = Level < 56 ? SPECIES_GIBLE : (Level < REMATCH_5_MINI_BOSS ? SPECIES_GABITE : SPECIES_GARCHOMP), \
+    IVS(18),                                                                                                   \
     .gender = TRAINER_MON_MALE
 
 #define NICOLAS_FLYGON(Level)  \
@@ -15870,7 +15870,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        NICOLAS_BAGON(55),
+        NICOLAS_GIBLE(55),
         },
         {
         NICOLAS_ALTARIA(55),
@@ -15884,7 +15884,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        NICOLAS_BAGON(56),
+        NICOLAS_GIBLE(56),
         },
         {
         NICOLAS_ALTARIA(56),
@@ -15898,7 +15898,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        NICOLAS_BAGON(57),
+        NICOLAS_GIBLE(57),
         },
         {
         NICOLAS_ALTARIA(57),
@@ -15915,7 +15915,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
         NICOLAS_FLYGON(58),
         },
         {
-        NICOLAS_BAGON(58),
+        NICOLAS_GIBLE(58),
         },
         {
         NICOLAS_ALTARIA(58),
@@ -15932,7 +15932,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
         NICOLAS_FLYGON(REMATCH_5_LEVEL_1),
         },
         {
-        NICOLAS_BAGON(REMATCH_5_MINI_BOSS),
+        NICOLAS_GIBLE(REMATCH_5_MINI_BOSS),
         },
         {
         NICOLAS_ALTARIA(REMATCH_5_MINI_BOSS),
@@ -15952,7 +15952,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 56,
-        .species = SPECIES_MAGNETON,
+        .species = SPECIES_KLINKLANG,
         IVS(12),
         },
         {
@@ -16087,8 +16087,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
         },
         {
         .lvl = 56,
-        .species = SPECIES_LANTURN,
-        .moves = {MOVE_THUNDERBOLT, MOVE_BUBBLE_BEAM, MOVE_SIGNAL_BEAM, MOVE_THUNDER_WAVE}
+        .species = SPECIES_WEAVILE,
         }
     },
 },
@@ -16104,12 +16103,10 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
         {
         .lvl = 56,
         .species = SPECIES_MEDICHAM,
-        .moves = {MOVE_ZEN_HEADBUTT, MOVE_HIGH_JUMP_KICK, MOVE_THUNDER_PUNCH, MOVE_FIRE_PUNCH}
         },
         {
         .lvl = 56,
-        .species = SPECIES_CLAYDOL,
-        .moves = {MOVE_SKILL_SWAP, MOVE_EARTH_POWER, MOVE_PSYCHIC, MOVE_COSMIC_POWER}
+        .species = SPECIES_ROTOM_HEAT,
         }
     },
 },
@@ -16124,12 +16121,12 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 56,
-        .species = SPECIES_SKARMORY,
+        .species = SPECIES_HERACROSS,
         IVS(12),
         },
         {
         .lvl = 56,
-        .species = SPECIES_SABLEYE,
+        .species = SPECIES_ROTOM_WASH,
         IVS(12),
         }
     },
@@ -16176,7 +16173,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
         },
         {
         .lvl = 55,
-        .species = SPECIES_LUDICOLO,
+        .species = SPECIES_EELEKTROSS,
         IVS(12),
         }
     },
@@ -16192,13 +16189,11 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 56,
-        .species = SPECIES_LUNATONE,
-        .moves = {MOVE_EXPLOSION, MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_PSYCHIC}
+        .species = SPECIES_CLEFABLE,
         },
         {
         .lvl = 56,
-        .species = SPECIES_SOLROCK,
-        .moves = {MOVE_EXPLOSION, MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_SHADOW_BALL}
+        .species = SPECIES_CLAYDOL,
         }
     },
 },
@@ -16213,7 +16208,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 56,
-        .species = SPECIES_SABLEYE,
+        .species = SPECIES_KROOKODILE,
         },
         {
         .lvl = 56,
@@ -16258,7 +16253,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
         },
         {
         .lvl = 55,
-        .species = SPECIES_SHIFTRY,
+        .species = SPECIES_FLYGON,
         EV_SPREAD_ATK_SPE_HP,
         IVS(12),
         }
@@ -16275,15 +16270,13 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 56,
-        .species = SPECIES_GARDEVOIR,
+        .species = SPECIES_GENGAR,
         IVS(12),
-        .moves = {MOVE_SKILL_SWAP, MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_CALM_MIND}
         },
         {
         .lvl = 56,
-        .species = SPECIES_SLAKING,
+        .species = SPECIES_SNORLAX,
         IVS(12),
-        .moves = {MOVE_EARTHQUAKE, MOVE_SHADOW_CLAW, MOVE_AERIAL_ACE, MOVE_BRICK_BREAK}
         }
     },
 },
@@ -16298,15 +16291,13 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 56,
-        .species = SPECIES_SLAKING,
+        .species = SPECIES_UMBREON,
         IVS(12),
-        .moves = {MOVE_ATTRACT, MOVE_MEGA_KICK, MOVE_HAMMER_ARM, MOVE_THROAT_CHOP}
         },
         {
         .lvl = 56,
         .species = SPECIES_DUSCLOPS,
         IVS(12),
-        .moves = {MOVE_SKILL_SWAP, MOVE_PROTECT, MOVE_WILL_O_WISP, MOVE_TOXIC}
         }
     },
 },
@@ -16343,7 +16334,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 68,
-        .species = SPECIES_SABLEYE,
+        .species = SPECIES_ROTOM_MOW,
         IVS(12),
         },
         {
@@ -16374,7 +16365,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
         },
         {
         .lvl = 69,
-        .species = SPECIES_STARMIE,
+        .species = SPECIES_ACCELGOR,
         IVS(12),
         }
     },

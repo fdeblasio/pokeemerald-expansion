@@ -235,7 +235,7 @@ SootopolisCity_Gym_1F_Text_JuanDefeat:
 
 SootopolisCity_Gym_1F_Text_ReceivedRainBadge:
 	.string "{PLAYER} received the Snow Badge\n"
-	.string "from Juan.$"
+	.string "from Glacia.$"
 
 SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
 	.string "Having the Snow Badge shall assure you\n"
@@ -252,7 +252,7 @@ SootopolisCity_Gym_1F_Text_ExplainWaterPulse:
 	.string "… … … … … …$"
 
 SootopolisCity_Gym_1F_Text_RegisteredJuan:
-	.string "Registered Gym Leader Juan\n"
+	.string "Registered Gym Leader Glacia\n"
 	.string "in the PokéNav.$"
 
 SootopolisCity_Gym_1F_Text_JuanPostBattle:

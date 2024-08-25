@@ -5,6 +5,8 @@ SootopolisCity_LotadAndSeedotHouse_EventScript_SeedotBrother::
 	special GetSeedotSizeRecordInfo
 	lock
 	faceplayer
+	bufferspeciesname STR_VAR_1, SOOTOPOLIS_SIZE_RIGHT
+	bufferspeciesname STR_VAR_3, SOOTOPOLIS_SIZE_LEFT
 	msgbox SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigSeedot, MSGBOX_DEFAULT
 	special ChoosePartyMon
 	waitstate
@@ -49,6 +51,8 @@ SootopolisCity_LotadAndSeedotHouse_EventScript_LotadBrother::
 	special GetLotadSizeRecordInfo
 	lock
 	faceplayer
+	bufferspeciesname STR_VAR_1, SOOTOPOLIS_SIZE_LEFT
+	bufferspeciesname STR_VAR_3, SOOTOPOLIS_SIZE_RIGHT
 	msgbox SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigLotad, MSGBOX_DEFAULT
 	special ChoosePartyMon
 	waitstate
@@ -90,6 +94,7 @@ SootopolisCity_LotadAndSeedotHouse_EventScript_NoRoomForElixir2::
 	end
 
 SootopolisCity_LotadAndSeedotHouse_EventScript_SeedotSizeRecord::
+	bufferspeciesname STR_VAR_1, SOOTOPOLIS_SIZE_RIGHT
 	special GetSeedotSizeRecordInfo
 	lockall
 	msgbox SootopolisCity_LotadAndSeedotHouse_Text_BiggestSeedotInHistory, MSGBOX_DEFAULT
@@ -97,6 +102,7 @@ SootopolisCity_LotadAndSeedotHouse_EventScript_SeedotSizeRecord::
 	end
 
 SootopolisCity_LotadAndSeedotHouse_EventScript_LotadSizeRecord::
+	bufferspeciesname STR_VAR_1, SOOTOPOLIS_SIZE_LEFT
 	special GetLotadSizeRecordInfo
 	lockall
 	msgbox SootopolisCity_LotadAndSeedotHouse_Text_BiggestLotadInHistory, MSGBOX_DEFAULT
@@ -104,28 +110,24 @@ SootopolisCity_LotadAndSeedotHouse_EventScript_LotadSizeRecord::
 	end
 
 SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigSeedot:
-	.string "Do you know the Pokémon Seedot?\n"
+	.string "Do you know the Pokémon {STR_VAR_1}?\n"
 	.string "It's hardly ever seen in Sootopolis.\p"
-	.string "Anyway, I love big Seedot.\n"
+	.string "Anyway, I love big {STR_VAR_1}.\n"
 	.string "The bigger the better.\p"
 	.string "But my younger brother, he says that\n"
-	.string "Lotad is bigger.\p"
+	.string "{STR_VAR_3} is bigger.\p"
 	.string "That's silly.\n"
-	.string "Seedot has to be bigger than that!\p"
-	.string "Huh? Do you have a Seedot with you?\n"
+	.string "{STR_VAR_1} has to be bigger than that!\p"
+	.string "Huh? Do you have a {STR_VAR_1} with you?\n"
 	.string "P-p-please, show me!$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_GoshMightBeBiggerThanLotad:
 	.string "{STR_VAR_2}!\n"
 	.string "Oh, my gosh, this is a big one!\p"
-	.string "It might even beat the big Lotad\n"
+	.string "It might even beat the big {STR_VAR_3}\n"
 	.string "my younger brother saw!\p"
 	.string "Thanks for showing me.\n"
 	.string "This is my thanks!$"
-
-@ Unused
-SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion1:
-	.string "{PLAYER} received a Potion.$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull1:
 	.string "Hunh?\n"
@@ -133,47 +135,42 @@ SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull1:
 
 SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerSeedot:
 	.string "{STR_VAR_2}, is it?\p"
-	.string "Hmm… I've seen a bigger Seedot\n"
+	.string "Hmm… I've seen a bigger {STR_VAR_1}\n"
 	.string "than this one.$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotSeedot:
 	.string "Oh, now this is quite something…\n"
-	.string "But it's not a Seedot!$"
+	.string "But it's not a {STR_VAR_1}!$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigSeedot:
-	.string "You don't have a big Seedot?\n"
+	.string "You don't have a big {STR_VAR_1}?\n"
 	.string "That's too bad…\p"
-	.string "If you get a big Seedot, please\n"
+	.string "If you get a big {STR_VAR_1}, please\n"
 	.string "come show me.$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_BiggestSeedotInHistory:
-	.string "The biggest Seedot in history!\n"
+	.string "The biggest {STR_VAR_1} in history!\n"
 	.string "{STR_VAR_2}'s {STR_VAR_3} giant!\p"
-	.string "A Seedot bigger than a Lotad\n"
-	.string "always wanted!$"
+	.string "A big {STR_VAR_1} always wanted!$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigLotad:
-	.string "Do you know the Pokémon Lotad?\n"
+	.string "Do you know the Pokémon {STR_VAR_1}?\n"
 	.string "It's rarely seen in Sootopolis.\p"
-	.string "I love, I mean love, big Lotad!\p"
-	.string "My big brother says that Seedot is\n"
+	.string "I love, I mean love, big {STR_VAR_1}!\p"
+	.string "My big brother says that {STR_VAR_3} is\n"
 	.string "bigger.\p"
 	.string "But that's wrong! Everyone knows that\n"
-	.string "Lotad is a lot bigger.\p"
-	.string "Hunh? Do you have a Lotad?\n"
+	.string "{STR_VAR_1} is a lot bigger.\p"
+	.string "Hunh? Do you have a {STR_VAR_1}?\n"
 	.string "P-p-please show me!$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_WowMightBeBiggerThanSeedot:
 	.string "{STR_VAR_2}!\n"
 	.string "Wow, that is big!\p"
 	.string "It might be even bigger than the huge\n"
-	.string "Seedot my big brother saw.\p"
+	.string "{STR_VAR_3} my big brother saw.\p"
 	.string "Thanks for showing me!\n"
 	.string "This is my thanks!$"
-
-@ Unused
-SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion2:
-	.string "{PLAYER} received a Potion.$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull2:
 	.string "Hunh?\n"
@@ -181,22 +178,21 @@ SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull2:
 
 SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerLotad:
 	.string "{STR_VAR_2}?\p"
-	.string "Hmm… I've seen a bigger Lotad\n"
+	.string "Hmm… I've seen a bigger {STR_VAR_1}\n"
 	.string "than this one here.$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotLotad:
 	.string "Well, isn't this something!\n"
-	.string "But it's no Lotad!$"
+	.string "But it's no {STR_VAR_1}!$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigLotad:
-	.string "Don't you have a big Lotad?\n"
+	.string "Don't you have a big {STR_VAR_1}?\n"
 	.string "How disappointing…\p"
-	.string "If you get a big Lotad, please\n"
+	.string "If you get a big {STR_VAR_1}, please\n"
 	.string "come show me!$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_BiggestLotadInHistory:
-	.string "The biggest Lotad in history!\n"
+	.string "The biggest {STR_VAR_1} in history!\n"
 	.string "{STR_VAR_2}'s {STR_VAR_3} colossus!\p"
-	.string "A Lotad bigger than a Seedot\n"
-	.string "always wanted!$"
+	.string "A big {STR_VAR_1} always wanted!$"
 

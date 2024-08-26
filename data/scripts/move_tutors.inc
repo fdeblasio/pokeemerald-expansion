@@ -224,7 +224,7 @@ MoveTutor_EventScript_HyperVoiceTutor::
 	msgbox MoveTutor_Text_HyperVoiceTeach, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_EverGrandeMoveDeclined
 	msgbox MoveTutor_Text_EverGrandeWhichMon, MSGBOX_DEFAULT
-	setvar VAR_0x8005, MOVE_ROLLOUT
+	setvar VAR_0x8005, MOVE_HYPER_VOICE
 	call MoveTutor_EventScript_OpenPartyMenu
 	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_EverGrandeMoveDeclined
 	goto MoveTutor_EventScript_EverGrandeMoveTaught
@@ -236,7 +236,7 @@ MoveTutor_EventScript_AquaTailTutor::
 	msgbox MoveTutor_Text_AquaTailTeach, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_EverGrandeMoveDeclined
 	msgbox MoveTutor_Text_EverGrandeWhichMon, MSGBOX_DEFAULT
-	setvar VAR_0x8005, MOVE_ROLLOUT
+	setvar VAR_0x8005, MOVE_AQUA_TAIL
 	call MoveTutor_EventScript_OpenPartyMenu
 	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_EverGrandeMoveDeclined
 	goto MoveTutor_EventScript_EverGrandeMoveTaught
@@ -248,7 +248,7 @@ MoveTutor_EventScript_DrillRunTutor::
 	msgbox MoveTutor_Text_DrillRunTeach, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_EverGrandeMoveDeclined
 	msgbox MoveTutor_Text_EverGrandeWhichMon, MSGBOX_DEFAULT
-	setvar VAR_0x8005, MOVE_ROLLOUT
+	setvar VAR_0x8005, MOVE_DRILL_RUN
 	call MoveTutor_EventScript_OpenPartyMenu
 	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_EverGrandeMoveDeclined
 	goto MoveTutor_EventScript_EverGrandeMoveTaught
@@ -260,7 +260,7 @@ MoveTutor_EventScript_HighHorsepowerTutor::
 	msgbox MoveTutor_Text_HighHorsepowerTeach, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_EverGrandeMoveDeclined
 	msgbox MoveTutor_Text_EverGrandeWhichMon, MSGBOX_DEFAULT
-	setvar VAR_0x8005, MOVE_ROLLOUT
+	setvar VAR_0x8005, MOVE_HIGH_HORSEPOWER
 	call MoveTutor_EventScript_OpenPartyMenu
 	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_EverGrandeMoveDeclined
 	goto MoveTutor_EventScript_EverGrandeMoveTaught
@@ -272,7 +272,7 @@ MoveTutor_EventScript_TemperFlareTutor::
 	msgbox MoveTutor_Text_TemperFlareTeach, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_EverGrandeMoveDeclined
 	msgbox MoveTutor_Text_EverGrandeWhichMon, MSGBOX_DEFAULT
-	setvar VAR_0x8005, MOVE_ROLLOUT
+	setvar VAR_0x8005, MOVE_TEMPER_FLARE
 	call MoveTutor_EventScript_OpenPartyMenu
 	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_EverGrandeMoveDeclined
 	goto MoveTutor_EventScript_EverGrandeMoveTaught

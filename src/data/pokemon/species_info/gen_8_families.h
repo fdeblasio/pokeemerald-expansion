@@ -4922,7 +4922,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .levelUpLearnset = sSnomLevelUpLearnset,
         .teachableLearnset = sSnomTeachableLearnset,
         .eggMoveLearnset = sSnomEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP_NIGHT, 21, SPECIES_FROSMOTH}),
+        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 21, SPECIES_FROSMOTH}),
     },
 
     [SPECIES_FROSMOTH] =

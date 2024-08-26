@@ -3929,7 +3929,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sRioluLevelUpLearnset,
         .teachableLearnset = sRioluTeachableLearnset,
         .eggMoveLearnset = sRioluEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP_DAY, 20, SPECIES_LUCARIO}),
+        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 20, SPECIES_LUCARIO}),
     },
 
     [SPECIES_LUCARIO] =

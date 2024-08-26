@@ -194,8 +194,8 @@ static const struct {
     u8 location;
 } sPokeOutbreakSpeciesList[] = {
     {
-        .species = SPECIES_TOGEPI,
-        .moves = {MOVE_MYSTICAL_FIRE, MOVE_PSYSHOCK, MOVE_EXTRASENSORY, MOVE_BATON_PASS},
+        .species = SPECIES_YAMPER,
+        .moves = {MOVE_THUNDER_FANG, MOVE_FIRE_FANG, MOVE_FLAME_CHARGE, MOVE_SNARL},
         .location = MAP_NUM(ROUTE102)
     },
     {
@@ -209,13 +209,13 @@ static const struct {
         .location = MAP_NUM(ROUTE113),
     },
     {
-        .species = SPECIES_SANDILE,
-        .moves = {MOVE_AQUA_TAIL, MOVE_THUNDER_FANG, MOVE_FIRE_FANG, MOVE_SPITE},
-        .location = MAP_NUM(ROUTE111),
+        .species = SPECIES_WIGLETT,
+        .moves = {MOVE_CHILLING_WATER, MOVE_BULLDOZE, MOVE_HYDRO_PUMP, MOVE_FOUL_PLAY},
+        .location = MAP_NUM(ROUTE118),
     },
     {
-        .species = SPECIES_TANGELA,
-        .moves = {MOVE_NATURE_POWER, MOVE_CONFUSION, MOVE_LEECH_SEED, MOVE_AMNESIA},
+        .species = SPECIES_FOONGUS,
+        .moves = {MOVE_NATURE_POWER, MOVE_POLLEN_PUFF, MOVE_FOUL_PLAY, MOVE_GASTRO_ACID},
         .location = MAP_NUM(ROUTE123),
     }
 };

@@ -64,7 +64,6 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStones:
 	.2byte ITEM_ABSOLITE
 	.2byte ITEM_GLALITITE
 	.2byte ITEM_GARCHOMPITE
-	.2byte ITEM_ABOMASITE
 	.2byte ITEM_NONE
 	release
 	end
@@ -101,6 +100,7 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_LATIASITE		@ Battle Frontier
 	.2byte ITEM_LATIOSITE		@ Battle Frontier
 	.2byte ITEM_LOPUNNITE
+	.2byte ITEM_ABOMASITE
 	.2byte ITEM_AUDINITE
 	.2byte ITEM_DIANCITE
 	.2byte ITEM_NONE

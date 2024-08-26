@@ -62,7 +62,6 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStones:
 	.2byte ITEM_ABSOLITE        @ 0359
 	.2byte ITEM_GLALITITE       @ 0362
 	.2byte ITEM_GARCHOMPITE     @ 0445
-	.2byte ITEM_ABOMASITE       @ 0460
 	pokemartlistend
 
 @ Unused shop that contains Mega Stones for Pokemon not available in Emerald by default
@@ -108,6 +107,7 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_LATIOSITE       @ 0381 Battle Frontier
 	.2byte ITEM_LOPUNNITE       @ 0428
 	.2byte ITEM_LUCARIONITE     @ 0448
+	.2byte ITEM_ABOMASITE       @ 0460
 	.2byte ITEM_EMBOARITE       @ 0500
 	.2byte ITEM_EXCADRITE       @ 0530 (move to regular shop when implemented)
 	.2byte ITEM_AUDINITE        @ 0531

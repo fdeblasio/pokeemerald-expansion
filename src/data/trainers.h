@@ -2857,7 +2857,6 @@ JUAN_REMATCH(5),
     .nature = NATURE_MODEST,                                                         \
     EV_SPREAD_SPA_DEF_HP,                                                            \
     .moves = {MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_MOONBLAST, MOVE_COTTON_GUARD}, \
-    .gender = TRAINER_MON_MALE,                                                      \
     }
 
 #define DRAKE_KINGDRA(Level, Tier)                                        \
@@ -2911,7 +2910,6 @@ JUAN_REMATCH(5),
     .gender = TRAINER_MON_MALE,                                                      \
     }
 
-//Can replace Earthquake/Dragon Dance with Crunch/Swords Dance
 #define DRAKE_HAXORUS(Level, Tier)                                                   \
     {                                                                                \
     ELITE_FOUR_MON(Level, HAXORUS, Tier, DRAKE),                                     \
@@ -2922,7 +2920,6 @@ JUAN_REMATCH(5),
     .gender = TRAINER_MON_MALE,                                                      \
     }
 
-//Can replace Sheer Force/Crunch/Fire Punch with Rock Head/Head Smash/Hone Claws
 #define DRAKE_DRUDDIGON(Level, Tier)                                           \
     {                                                                          \
     ELITE_FOUR_MON(Level, DRUDDIGON, Tier, DRAKE),                             \
@@ -2943,7 +2940,6 @@ JUAN_REMATCH(5),
     .gender = TRAINER_MON_MALE,                                                   \
     }
 
-//Can replace Sap Sipper/Hyper Voice with Berserk/Calm Mind
 #define DRAKE_DRAMPA(Level, Tier)                                                        \
     {                                                                                    \
     ELITE_FOUR_MON(Level, DRAMPA, Tier, DRAKE),                                          \
@@ -2957,14 +2953,13 @@ JUAN_REMATCH(5),
 #define DRAKE_KOMMO_O
 #define DRAKE_DRAGAPULT
 
-//Can replace U-turn with Body Slam
 #define DRAKE_CYCLIZAR(Level, Tier)                                            \
     {                                                                          \
     ELITE_FOUR_MON(Level, CYCLIZAR, Tier, DRAKE),                              \
     .ability = ABILITY_REGENERATOR,                                            \
     .nature = NATURE_JOLLY,                                                    \
     EV_SPREAD_ATK_SPE_HP,                                                      \
-    .moves = {MOVE_DRAGON_CLAW, MOVE_U_TURN, MOVE_SHIFT_GEAR, MOVE_SHED_TAIL}, \
+    .moves = {MOVE_DRAGON_CLAW, MOVE_BODY_SLAM, MOVE_SHIFT_GEAR, MOVE_SHED_TAIL}, \
     .gender = TRAINER_MON_MALE,                                                \
     }
 
@@ -2976,11 +2971,11 @@ JUAN_REMATCH(5),
     DRAKE_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        DRAKE_SHELGON(63, TIER3),
-        DRAKE_KINGDRA(63, TIER3),
-        DRAKE_ALTARIA(64, TIER3),
-        DRAKE_FLYGON(64, TIER3),
-        DRAKE_SALAMENCE(66, ACE),
+        DRAKE_DRUDDIGON(63, TIER3),
+        DRAKE_ALTARIA(63, TIER3),
+        DRAKE_HAXORUS(64, TIER3),
+        DRAKE_DRAMPA(64, TIER3),
+        DRAKE_GARCHOMP(66, ACE),
     },
 },
 
@@ -2989,12 +2984,12 @@ JUAN_REMATCH(5),
     DRAKE_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        DRAKE_SHELGON(86, TIER3),
-        DRAKE_DRAGALGE(86, TIER3),
-        DRAKE_KINGDRA(86, TIER3),
-        DRAKE_ALTARIA(88, TIER3),
-        DRAKE_FLYGON(88, TIER3),
-        DRAKE_SALAMENCE(90, ACE),
+        DRAKE_CYCLIZAR(86, TIER3),
+        DRAKE_DRUDDIGON(86, TIER3),
+        DRAKE_ALTARIA(86, TIER3),
+        DRAKE_HAXORUS(88, TIER3),
+        DRAKE_DRAMPA(88, TIER3),
+        DRAKE_GARCHOMP(90, ACE),
     },
 },
 
@@ -3089,14 +3084,13 @@ JUAN_REMATCH(5),
     }
 
 //Fairy
-//Can replace Calm Mind/Moonlight with Misty Terrain/Life Dew
 #define WALLACE_CLEFABLE(Level)                                                   \
     {                                                                             \
     WALLACE_STEVEN_MON(Level, CLEFABLE),                                          \
     .ability = ABILITY_MAGIC_GUARD,                                               \
     .nature = NATURE_MODEST,                                                      \
     EV_SPREAD_SPA_HP_SPE,                                                         \
-    .moves = {MOVE_MOONBLAST, MOVE_FLAMETHROWER, MOVE_CALM_MIND, MOVE_MOONLIGHT}, \
+    .moves = {MOVE_MOONBLAST, MOVE_FLAMETHROWER, MOVE_MISTY_TERRAIN, MOVE_LIFE_DEW}, \
     .gender = TRAINER_MON_FEMALE,                                                 \
     .ball = ITEM_MOON_BALL,                                                       \
     }
@@ -3112,17 +3106,15 @@ JUAN_REMATCH(5),
     .ball = ITEM_ULTRA_BALL,                                                            \
     }
 
-//EVs can be SpA/HP/Spe
-//Aura Sphere/Sitrus Berry can by replaced by Life Dew/Leftovers
 #define WALLACE_TOGEKISS(Level)                                                        \
     {                                                                                  \
     WALLACE_STEVEN_MON(Level, TOGEKISS),                                               \
     .ability = ABILITY_SERENE_GRACE,                                                   \
     .nature = NATURE_MODEST,                                                           \
-    EV_SPREAD_SPA_SPE_HP,                                                              \
-    .moves = {MOVE_DAZZLING_GLEAM, MOVE_AIR_SLASH, MOVE_AURA_SPHERE, MOVE_NASTY_PLOT}, \
+    EV_SPREAD_SPA_HP_SPE,                                                              \
+    .moves = {MOVE_DAZZLING_GLEAM, MOVE_AIR_SLASH, MOVE_LIFE_DEW, MOVE_NASTY_PLOT}, \
     .gender = TRAINER_MON_MALE,                                                        \
-    .heldItem = ITEM_SITRUS_BERRY,                                                     \
+    .heldItem = ITEM_LEFTOVERS,                                                     \
     .ball = ITEM_ULTRA_BALL,                                                           \
     }
 
@@ -3212,12 +3204,12 @@ JUAN_REMATCH(5),
     BOSS_AI_FLAGS,                                                                         \
     .partySize = 6,                                                                        \
     .party = (const struct TrainerMon[]) {                                                 \
-        WALLACE_PELIPPER(AceLevel - 3),                                                    \
-        WALLACE_GOREBYSS(AceLevel - 3),                                                    \
-        WALLACE_RELICANTH(AceLevel - 3),                                                   \
-        WALLACE_LUDICOLO(AceLevel - 2),                                                    \
-        WALLACE_WAILORD(AceLevel - 2),                                                     \
-        WALLACE_MILOTIC(AceLevel),                                                         \
+        WALLACE_AROMATISSE(AceLevel - 3),                                                    \
+        WALLACE_SLURPUFF(AceLevel - 3),                                                    \
+        WALLACE_DACHSBUN(AceLevel - 3),                                                   \
+        WALLACE_CLEFABLE(AceLevel - 2),                                                    \
+        WALLACE_TOGEKISS(AceLevel - 2),                                                     \
+        WALLACE_TINKATON(AceLevel),                                                         \
     },                                                                                     \
 }
 

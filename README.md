@@ -877,6 +877,12 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
 - Butterfree:
     - Learns Air Cutter and Signal Beam by level up
 
+- Weedle (postgame):
+    - Learns Bug Bite at level 7 instead of 9
+
+- Beedrill (postgame):
+    - Learns Leech Life by level up
+
 - Cleffa:
     - Can also evolve at level 12
     - Learns Fairy Wind by level up
@@ -893,6 +899,9 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
 - Dugtrio:
     - HP: 35->50
     - Learns Stomping Tantrum by level up
+
+- Alolan Dugtrio (postgame):
+    - HP: 35->50
 
 - Meowth:
     - Atk: 45->55
@@ -936,6 +945,9 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
 - Golduck (Battle Tent/Battle Frontier only):
     - Type: Water->Water/Psychic
 
+- Igglybuff (postgame):
+    - Can also evolve at level 12
+
 - Zubat:
     - Learns Gust by level up
 
@@ -973,7 +985,7 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
     - Def: 130->145
     - Spe: 45->50
 
-- Alolan Golem (not in main game):
+- Alolan Golem (postgame):
     - Def: 130->145
     - Spe: 45->50
 
@@ -1714,6 +1726,9 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
     - Learns Metal Claw and Twineedle upon evolving
     - Learns Bug Bite and Smart Strike by level up
 
+- Foongus (postgame):
+    - Evolution: 39->36
+
 - Klink:
     - Atk: 55->60
     - Def: 70->75
@@ -1785,6 +1800,9 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
     - Hidden Ability: Mold Breaker->Rock Head
     - Learns Take Down, Double-Edge, and Head Smash by level up
     - Learns Dragon Breath by Egg Move
+
+- Golett (postgame):
+    - Evolution: 43->40
 
 - Heatmor:
     - Atk: 97->105

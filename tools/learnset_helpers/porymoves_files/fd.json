@@ -4360,6 +4360,10 @@
   "BRELOOM": {
     "LevelMoves": [
       {
+        "Level": 1,
+        "Move": "MOVE_ARM_THRUST"
+      },
+      {
         "Level": 61,
         "Move": "MOVE_DRAIN_PUNCH"
       }
@@ -4886,7 +4890,12 @@
     "TutorMoves": []
   },
   "CACTURNE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 44,
+        "Move": "MOVE_THROAT_CHOP"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -5142,7 +5151,9 @@
   "TROPIUS": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_EARTH_POWER"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -11090,7 +11101,8 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_EARTH_POWER"
+      "MOVE_EARTH_POWER",
+      "MOVE_NASTY_PLOT"
     ],
     "EggMoves": [],
     "TutorMoves": []

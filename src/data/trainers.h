@@ -15516,7 +15516,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
 {
     .trainerName = _("Bethany"),
     POKE_FAN_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_ACE_POKEMON,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -16375,7 +16375,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
 {
     .trainerName = _("Colton"),
     POKE_FAN_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_ACE_POKEMON,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         {

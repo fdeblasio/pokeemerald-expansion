@@ -3305,15 +3305,13 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define STEVEN_STEELIX
 #define STEVEN_BRONZONG
 
-//Impish/Atk/Def/Spe
-//Supercell Slam->Iron Defense
 #define STEVEN_KLINKLANG(Level)                                                        \
     {                                                                                  \
     WALLACE_STEVEN_MON(Level, KLINKLANG),                                              \
     .ability = ABILITY_CLEAR_BODY,                                                     \
-    .nature = NATURE_ADAMANT,                                                          \
-    EV_SPREAD_ATK_SPE_DEF,                                                             \
-    .moves = {MOVE_GEAR_GRIND, MOVE_SUPERCELL_SLAM, MOVE_BODY_PRESS, MOVE_SHIFT_GEAR}, \
+    .nature = NATURE_IMPISH,                                                          \
+    EV_SPREAD_ATK_DEF_SPE,                                                             \
+    .moves = {MOVE_GEAR_GRIND, MOVE_BODY_PRESS, MOVE_SHIFT_GEAR, MOVE_IRON_DEFENSE}, \
     .gender = TRAINER_MON_NONE,                                                        \
     .heldItem = ITEM_GANLON_BERRY,                                                     \
     .ball = ITEM_TIMER_BALL,                                                           \
@@ -3334,14 +3332,13 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define STEVEN_GOODRA
 #define STEVEN_KLEFKI
 
-//Curse can be replaced by Supercell Slam
 #define STEVEN_COPPERAJAH(Level)                                             \
     {                                                                        \
     WALLACE_STEVEN_MON(Level, COPPERAJAH),                                   \
     .ability = ABILITY_SHEER_FORCE,                                          \
     .nature = NATURE_ADAMANT,                                                \
     EV_SPREAD_ATK_HP_SPE,                                                    \
-    .moves = {MOVE_IRON_HEAD, MOVE_PLAY_ROUGH, MOVE_EARTHQUAKE, MOVE_CURSE}, \
+    .moves = {MOVE_IRON_HEAD, MOVE_PLAY_ROUGH, MOVE_EARTHQUAKE, }, \
     .gender = TRAINER_MON_MALE,                                              \
     .ball = ITEM_HEAVY_BALL,                                                 \
     }
@@ -3381,9 +3378,9 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     BOSS_AI_FLAGS,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        STEVEN_SKARMORY(87),
-        STEVEN_CLAYDOL(87),
-        STEVEN_JIRACHI(88),
+        STEVEN_KLINKLANG(87),
+        STEVEN_COPPERAJAH(87),
+        STEVEN_ORTHWORM(88),
         {
         STEVEN_MAWILE(88),
         .heldItem = ITEM_LIFE_ORB,
@@ -17634,11 +17631,11 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = POSTGAME_LEVEL - 1,
-        .species = SPECIES_LUVDISC,
+        .species = SPECIES_SLURPUFF,
         },
         {
         .lvl = POSTGAME_LEVEL - 1,
-        .species = SPECIES_LUVDISC,
+        .species = SPECIES_AROMATISSE,
         }
     },
 },
@@ -17652,7 +17649,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         RICH_BOY_MON(POSTGAME_LEVEL),
-        .species = SPECIES_FLOATZEL,
+        .species = SPECIES_TANGROWTH,
         }
     },
 },
@@ -17670,7 +17667,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
         },
         {
         .lvl = POSTGAME_LEVEL - 1,
-        .species = SPECIES_LUXRAY,
+        .species = SPECIES_PYROAR,
         }
     },
 },

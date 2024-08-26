@@ -36,12 +36,6 @@ upcoming
 
 ## To Do:
 ### Hack-specific
-- Replace Alolan Raichu, Meowth trio, Tangela, Ledyba, Togepi, Galarian Corsola, Galarian Zigzagoon, Skrelp in post-game safari zone
-    - Hisuian Growlithe
-    - Alolan Diglett
-    - Alolan Geodude
-    - Wiglett
-    - Unovan Samurott?
 - Merge README.md into CHANGES.md
 
 ### Megas:

@@ -285,6 +285,7 @@ BattleFrontier_Mart_EvolutionMega:
 	.2byte ITEM_MAGMARIZER      @ National: Magmar
 	.2byte ITEM_RAZOR_FANG      @ National: Gligar
 	.2byte ITEM_PEAT_BLOCK      @ National: Ursaring
+	.2byte ITEM_BEEDRILLITE     @ 0015
 	.2byte ITEM_AERODACTYLITE   @ 0142
 	.2byte ITEM_MEGANIUMITE     @ 0154
 	.2byte ITEM_FERALIGITE      @ 0160

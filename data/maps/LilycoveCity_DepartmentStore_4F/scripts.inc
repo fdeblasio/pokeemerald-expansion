@@ -71,7 +71,7 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_CHARIZARDITE_X  @ 0006
 	.2byte ITEM_CHARIZARDITE_Y  @ 0006
 	.2byte ITEM_BLASTOISINITE   @ 0009
-	.2byte ITEM_BEEDRILLITE     @ 0015
+	.2byte ITEM_BEEDRILLITE     @ 0015 Battle Frontier
 	.2byte ITEM_PIDGEOTITE      @ 0018
 	.2byte ITEM_NONE            @ 0026 Raichu X (move to regular shop when implemented)
 	.2byte ITEM_NONE            @ 0026 Raichu Y (move to regular shop when implemented)

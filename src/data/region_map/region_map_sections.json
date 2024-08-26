@@ -1021,7 +1021,7 @@
     },
     {
       "map_section": "MAPSEC_MT_MOON",
-      "name": "MT. MOON",
+      "name": "Mt. Moon",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1054,7 +1054,7 @@
     },
     {
       "map_section": "MAPSEC_DIGLETTS_CAVE",
-      "name": "DIGLETT'S CAVE",
+      "name": "Diglett's Cave",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1079,7 +1079,7 @@
     },
     {
       "map_section": "MAPSEC_SILPH_CO",
-      "name": "SILPH CO.",
+      "name": "Silph Co.",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1087,7 +1087,7 @@
     },
     {
       "map_section": "MAPSEC_POKEMON_MANSION",
-      "name": "POKéMON MANSION",
+      "name": "Pokémon Mansion",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1104,7 +1104,7 @@
     },
     {
       "map_section": "MAPSEC_POKEMON_LEAGUE",
-      "name": "POKéMON LEAGUE",
+      "name": "Pokémon League",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1128,7 +1128,7 @@
     },
     {
       "map_section": "MAPSEC_POKEMON_TOWER",
-      "name": "POKéMON TOWER",
+      "name": "Pokémon Tower",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1240,7 +1240,7 @@
     },
     {
       "map_section": "MAPSEC_THREE_ISLE_PORT",
-      "name": "THREE ISLE PORT",
+      "name": "Three Isle Port",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1248,7 +1248,7 @@
     },
     {
       "map_section": "MAPSEC_SEVII_ISLE_6",
-      "name": "SEVII ISLE 6",
+      "name": "Sevii Isle 6",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1256,7 +1256,7 @@
     },
     {
       "map_section": "MAPSEC_SEVII_ISLE_7",
-      "name": "SEVII ISLE 7",
+      "name": "Sevii Isle 7",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1264,7 +1264,7 @@
     },
     {
       "map_section": "MAPSEC_SEVII_ISLE_8",
-      "name": "SEVII ISLE 8",
+      "name": "Sevii Isle 8",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1272,7 +1272,7 @@
     },
     {
       "map_section": "MAPSEC_SEVII_ISLE_9",
-      "name": "SEVII ISLE 9",
+      "name": "Sevii Isle 9",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1296,7 +1296,7 @@
     },
     {
       "map_section": "MAPSEC_FIVE_ISLE_MEADOW",
-      "name": "FIVE ISLE MEADOW",
+      "name": "Five Isle Meadow",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1376,7 +1376,7 @@
     },
     {
       "map_section": "MAPSEC_SEVII_ISLE_22",
-      "name": "SEVII ISLE 22",
+      "name": "Sevii Isle 22",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1384,7 +1384,7 @@
     },
     {
       "map_section": "MAPSEC_SEVII_ISLE_23",
-      "name": "SEVII ISLE 23",
+      "name": "Sevii Isle 23",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1392,7 +1392,7 @@
     },
     {
       "map_section": "MAPSEC_SEVII_ISLE_24",
-      "name": "SEVII ISLE 24",
+      "name": "Sevii Isle 24",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1408,7 +1408,7 @@
     },
     {
       "map_section": "MAPSEC_MT_EMBER",
-      "name": "MT. EMBER",
+      "name": "Mt. Ember",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1489,7 +1489,7 @@
     },
     {
       "map_section": "MAPSEC_THREE_ISLE_PATH",
-      "name": "THREE ISLE PATH",
+      "name": "Three Isle Path",
       "x": 0,
       "y": 0,
       "width": 1,

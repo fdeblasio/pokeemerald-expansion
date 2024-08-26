@@ -2703,64 +2703,64 @@ JUAN_REMATCH(5),
     .trainerName = _("Juan"),     \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
 
-#define JUAN_WALREIN(Level, Tier)                                        \
+#define JUAN_BRELOOM(Level, Tier)                                        \
     {                                                                      \
-    ELITE_FOUR_MON(Level, WALREIN, Tier, GLACIA, ITEM_SITRUS_BERRY),       \
-    .ability = ABILITY_THICK_FAT,                                          \
-    .nature = NATURE_MODEST,                                               \
-    EV_SPREAD_SPA_HP_SPE,                                                  \
-    .moves = {MOVE_BLIZZARD, MOVE_SURF, MOVE_SIGNAL_BEAM, MOVE_SNOWSCAPE}, \
-    .gender = TRAINER_MON_FEMALE,                                          \
+    ELITE_FOUR_MON(Level, BRELOOM, Tier, GLACIA, ITEM_LOADED_DICE),       \
+    .ability = ABILITY_TECHNICIAN,                                            \
+    .nature = NATURE_ADAMANT,                                                 \
+    EV_SPREAD_ATK_SPE_HP,                                                     \
+    .moves = {MOVE_BULLET_SEED, MOVE_ARM_THRUST, MOVE_ROCK_TOMB, MOVE_SPORE}, \
+    .gender = TRAINER_MON_MALE,                                               \
     }
 
-#define JUAN_FROSLASS(Level, Tier)                                                \
+#define JUAN_ROSERADE(Level, Tier)                                                \
     {                                                                               \
-    ELITE_FOUR_MON(Level, FROSLASS, Tier, GLACIA),                                  \
-    .ability = ABILITY_SNOW_CLOAK,                                                  \
-    .nature = NATURE_TIMID,                                                         \
-    EV_SPREAD_SPA_SPE_HP,                                                           \
-    .moves = {MOVE_BLIZZARD, MOVE_SHADOW_BALL, MOVE_DRAINING_KISS, MOVE_SNOWSCAPE}, \
-    .gender = TRAINER_MON_FEMALE,                                                   \
+    ELITE_FOUR_MON(Level, ROSERADE, Tier, GLACIA),                                  \
+    .ability = ABILITY_NATURAL_CURE,                                                        \
+    .nature = NATURE_MODEST,                                                                \
+    EV_SPREAD_SPA_SPE_HP,                                                                   \
+    .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_DAZZLING_GLEAM, MOVE_GRASSY_TERRAIN}, \
+    .gender = TRAINER_MON_FEMALE,                                                           \
     }
 
-#define JUAN_GLALIE(Level, Tier)                                                  \
+#define JUAN_SCOVILLIAN(Level, Tier)                                                  \
     {                                                                               \
-    ELITE_FOUR_MON(Level, GLALIE, Tier, GLACIA),                                    \
-    .ability = ABILITY_ICE_BODY,                                                    \
-    .nature = NATURE_MODEST,                                                        \
-    EV_SPREAD_SPA_SPE_HP,                                                           \
-    .moves = {MOVE_FREEZE_DRY, MOVE_WEATHER_BALL, MOVE_DARK_PULSE, MOVE_SNOWSCAPE}, \
-    .gender = TRAINER_MON_MALE,                                                     \
+    ELITE_FOUR_MON(Level, SCOVILLAIN, Tier, GLACIA),                                    \
+    .ability = ABILITY_MOODY,                                                              \
+    .nature = NATURE_ADAMANT,                                                              \
+    EV_SPREAD_ATK_SPE_HP,                                                                  \
+    .moves = {MOVE_LEAF_BLADE, MOVE_TEMPER_FLARE, MOVE_ZEN_HEADBUTT, MOVE_GRASSY_TERRAIN}, \
+    .gender = TRAINER_MON_MALE,                                                            \
     }
 
-#define JUAN_CASTFORM(Level, Tier)                                              \
+#define JUAN_MARACTUS(Level, Tier)                                              \
     {                                                                             \
-    ELITE_FOUR_MON(Level, CASTFORM, Tier, GLACIA),                                \
-    .ability = ABILITY_FORECAST,                                                  \
-    .nature = NATURE_MODEST,                                                      \
-    EV_SPREAD_SPA_SPE_HP,                                                         \
-    .moves = {MOVE_BLIZZARD, MOVE_WEATHER_BALL, MOVE_HYDRO_PUMP, MOVE_SNOWSCAPE}, \
-    .gender = TRAINER_MON_FEMALE,                                                 \
+    ELITE_FOUR_MON(Level, MARACTUS, Tier, GLACIA),                                \
+    .ability = ABILITY_STORM_DRAIN,                                                       \
+    .nature = NATURE_MODEST,                                                              \
+    EV_SPREAD_SPA_SPE_HP,                                                                 \
+    .moves = {MOVE_GIGA_DRAIN, MOVE_HYPER_VOICE, MOVE_COTTON_GUARD, MOVE_GRASSY_TERRAIN}, \
+    .gender = TRAINER_MON_FEMALE,                                                         \
     }
 
-#define JUAN_SEALEO(Level, Tier)                                             \
+#define JUAN_CACTURNE(Level, Tier)                                             \
     {                                                                          \
-    ELITE_FOUR_MON(Level, SEALEO, Tier, GLACIA),                               \
-    .ability = ABILITY_ICE_BODY,                                               \
-    .nature = NATURE_ADAMANT,                                                  \
-    EV_SPREAD_ATK_HP_SPE,                                                      \
-    .moves = {MOVE_ICE_BALL, MOVE_ROLLOUT, MOVE_DEFENSE_CURL, MOVE_SNOWSCAPE}, \
-    .gender = TRAINER_MON_MALE,                                                \
+    ELITE_FOUR_MON(Level, CACTURNE, Tier, GLACIA),                               \
+    .ability = ABILITY_SAND_VEIL,                                                  \
+    .nature = NATURE_ADAMANT,                                                      \
+    EV_SPREAD_ATK_SPE_HP,                                                          \
+    .moves = {MOVE_SEED_BOMB, MOVE_THROAT_CHOP, MOVE_SPIKES, MOVE_GRASSY_TERRAIN}, \
+    .gender = TRAINER_MON_MALE,                                                    \
     }
 
-#define JUAN_NINETALES(Level, Tier)                                            \
+#define JUAN_TROPIUS(Level, Tier)                                            \
     {                                                                            \
-    ELITE_FOUR_MON(Level, NINETALES_ALOLA, Tier, GLACIA, ITEM_ICY_ROCK),         \
-    .ability = ABILITY_SNOW_WARNING,                                             \
-    .nature = NATURE_TIMID,                                                      \
-    EV_SPREAD_SPE_SPD_HP,                                                        \
-    .moves = {MOVE_BLIZZARD, MOVE_MOONBLAST, MOVE_AURORA_VEIL, MOVE_NASTY_PLOT}, \
-    .gender = TRAINER_MON_FEMALE,                                                \
+    ELITE_FOUR_MON(Level, TROPIUS, Tier, GLACIA, ITEM_ICY_ROCK),         \
+    .ability = ABILITY_CHLOROPHYLL,                                                \
+    .nature = NATURE_MODEST,                                                       \
+    EV_SPREAD_SPA_HP_SPD,                                                          \
+    .moves = {MOVE_GIGA_DRAIN, MOVE_AIR_SLASH, MOVE_DRAGON_PULSE, MOVE_SYNTHESIS}, \
+    .gender = TRAINER_MON_MALE,                                                    \
     }
 
 //Extra for hacks
@@ -2778,53 +2778,13 @@ JUAN_REMATCH(5),
     .gender = TRAINER_MON_FEMALE,                                                 \
     }
 
-//Can replace Thick Fat/Trailblaze with Snow Cloak/Ice Shard
-#define GLACIA_MAMOSWINE(Level, Tier)                                               \
-    {                                                                               \
-    ELITE_FOUR_MON(Level, MAMOSWINE, Tier, GLACIA, ITEM_SITRUS_BERRY),              \
-    .ability = ABILITY_THICK_FAT,                                                   \
-    .nature = NATURE_ADAMANT,                                                       \
-    EV_SPREAD_ATK_SPE_HP,                                                           \
-    .moves = {MOVE_ICICLE_CRASH, MOVE_EARTHQUAKE, MOVE_TRAILBLAZE, MOVE_SNOWSCAPE}, \
-    .gender = TRAINER_MON_FEMALE,                                                   \
-    }
 
 #define GLACIA_DELIBIRD
 #define GLACIA_DARMANITAN
 
-#define GLACIA_VANILLUXE(Level, Tier)                                                \
-    {                                                                                \
-    ELITE_FOUR_MON(Level, VANILLUXE, Tier, GLACIA),                                  \
-    .ability = ABILITY_SNOW_WARNING,                                                 \
-    .nature = NATURE_MODEST,                                                         \
-    EV_SPREAD_SPA_SPE_HP,                                                            \
-    .moves = {MOVE_BLIZZARD, MOVE_FLASH_CANNON, MOVE_HYPER_VOICE, MOVE_SIGNAL_BEAM}, \
-    .gender = TRAINER_MON_FEMALE,                                                    \
-    }
-
-#define GLACIA_BEARTIC(Level, Tier)                                               \
-    {                                                                             \
-    ELITE_FOUR_MON(Level, BEARTIC, Tier, GLACIA),                                 \
-    .ability = ABILITY_SNOW_CLOAK,                                                \
-    .nature = NATURE_ADAMANT,                                                     \
-    EV_SPREAD_ATK_SPE_HP,                                                         \
-    .moves = {MOVE_ICICLE_CRASH, MOVE_PLAY_ROUGH, MOVE_AQUA_JET, MOVE_SNOWSCAPE}, \
-    .gender = TRAINER_MON_FEMALE,                                                 \
-    }
-
 #define GLACIA_CRYOGONAL
 #define GLACIA_AVALUGG
 #define GLACIA_AVALUGG_HISUI
-
-#define GLACIA_FROSMOTH(Level, Tier)                                             \
-    {                                                                            \
-    ELITE_FOUR_MON(Level, FROSMOTH, Tier, GLACIA),                               \
-    .ability = ABILITY_ICE_SCALES,                                               \
-    .nature = NATURE_MODEST,                                                     \
-    EV_SPREAD_SPA_SPD_SPE,                                                       \
-    .moves = {MOVE_ICE_BEAM, MOVE_BUG_BUZZ, MOVE_GIGA_DRAIN, MOVE_QUIVER_DANCE}, \
-    .gender = TRAINER_MON_FEMALE,                                                \
-    }
 
 #define GLACIA_EISCUE(Level, Tier)                                                     \
     {                                                                                  \
@@ -2843,11 +2803,11 @@ JUAN_REMATCH(5),
     JUAN_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        JUAN_SEALEO(62, TIER3),
-        JUAN_CASTFORM(62, TIER3),
-        JUAN_GLALIE(63, TIER3),
-        JUAN_FROSLASS(63, TIER3),
-        JUAN_WALREIN(64, ACE),
+        JUAN_CACTURNE(62, TIER3),
+        JUAN_MARACTUS(62, TIER3),
+        JUAN_SCOVILLIAN(63, TIER3),
+        JUAN_ROSERADE(63, TIER3),
+        JUAN_BRELOOM(64, ACE),
     },
 },
 
@@ -2856,12 +2816,12 @@ JUAN_REMATCH(5),
     JUAN_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        JUAN_SEALEO(86, TIER3),
-        JUAN_NINETALES(86, TIER2),
-        JUAN_CASTFORM(86, TIER3),
-        JUAN_GLALIE(88, TIER3),
-        JUAN_FROSLASS(88, TIER3),
-        JUAN_WALREIN(90, ACE),
+        JUAN_TROPIUS(86, TIER3),
+        JUAN_CACTURNE(86, TIER2),
+        JUAN_MARACTUS(86, TIER3),
+        JUAN_SCOVILLIAN(88, TIER3),
+        JUAN_ROSERADE(88, TIER3),
+        JUAN_BRELOOM(90, ACE),
     },
 },
 
@@ -3458,10 +3418,6 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define JUAN_JUMPLUFF
 #define JUAN_SUNFLORA
 #define JUAN_SHIFTRY
-#define JUAN_BRELOOM //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1942
-#define JUAN_ROSERADE //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1961
-#define JUAN_CACTURNE //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1994
-#define JUAN_TROPIUS //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L2005
 #define JUAN_CHERRIM
 #define JUAN_CARNIVINE
 #define JUAN_ABOMASNOW
@@ -3469,7 +3425,6 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define JUAN_WHIMSICOTT
 #define JUAN_LILLIGANT_HISUI
 #define JUAN_LILLIGANT
-#define JUAN_MARACTUS //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1983
 #define JUAN_AMOONGUSS
 #define JUAN_FERRORTHORN
 #define JUAN_GOGOAT
@@ -3482,7 +3437,6 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define JUAN_HYDRAPPLE
 #define JUAN_ARBOLIVA
 #define JUAN_BRAMBLEGHAST
-#define JUAN_SCOVILLAIN //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1972
 #define JUAN_SINISTCHA
 
 #define REMATCH_2_LEVEL_1 35

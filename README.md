@@ -1698,7 +1698,7 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Tiny Mushroom: 50%->0%
         - Big Mushroom: 5%->50%
         - Balm Mushroom: 0%->5%
-    - Learns Drain Punch by level up
+    - Learns Arm Thrust and Drain Punch by level up
 
 - Slaking:
     - Learns Focus Punch and Giga Impact by level up
@@ -1811,6 +1811,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Trapinch:
     - Learns Dragon Breath by Egg Move
 
+- Cacturne:
+    - Learns Throat Chop by level up
+
 - Swablu:
     - Received Fluffy as a second Ability
 
@@ -1874,6 +1877,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - SpD: 87->90
     - Spe: 51->55
     - Held item: Nanab Berry: 0%->100%
+    - Learns Earth Power by TM
 
 - Chingling:
     - Can also evolve at level 19
@@ -2734,7 +2738,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - SpA: 108->110
     - Spe: 75->85
     - Learns Absorb, Ember, Mega Drain, Incinerate, Giga Drain, Flame Burst, Temper Flare, Leaf Blade, and Energy Ball by level up
-    - Learns Earth Power by TM
+    - Learns Earth Power and Nasty Plot by TM
 
 - Flittle:
     - Learns Psychic by level up

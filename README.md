@@ -1202,7 +1202,11 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Victreebel (not in main game):
     - Learns Absorb, Mega Drain, Magical Leaf, Giga Drain, Venoshock, Seed Bomb, Poison Fang, and Solar Blade by level up
 
-- Golem/Alolan Golem:
+- Golem:
+    - Def: 130->145
+    - Spe: 45->50
+
+- Alolan Golem (not in main game):
     - Def: 130->145
     - Spe: 45->50
 
@@ -1585,6 +1589,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learn Snarl by level up
 
 - Stantler (postgame):
+    - Evolves into Wyrdeer by simply knowing Psyshield Bash
     - Learns Psyshield Bash by level up
 
 - Raikou (not in main game):
@@ -2777,7 +2782,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Orthworm:
     - Atk: 85->90
-    - Learns Bullet Punch and Comet Punch by level up
+    - Learns Bullet Punch, Coil, and Comet Punch by level up
 
 - Flamigo:
     - Learns Brick Break, Dual Wingbeat, Jump Kick, and High Jump Kick by level up

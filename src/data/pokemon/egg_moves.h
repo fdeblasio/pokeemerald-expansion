@@ -11936,7 +11936,6 @@ static const u16 sCyclizarEggMoveLearnset[] = {
 
 #if P_FAMILY_ORTHWORM
 static const u16 sOrthwormEggMoveLearnset[] = {
-    MOVE_COIL,
     MOVE_CURSE,
     MOVE_HEAVY_SLAM,
     MOVE_HELPING_HAND,

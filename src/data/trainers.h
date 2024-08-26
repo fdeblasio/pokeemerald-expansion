@@ -1735,18 +1735,18 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     .trainerName = _("Sidney"),    \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
 
-#define SIDNEY_ABSOL(Level)                                                           \
-    {                                                                                 \
-    .lvl = Level,                                                                     \
-    .species = SPECIES_ABSOL,                                                         \
-    .ability = ABILITY_SHARPNESS,                                                     \
-    .nature = NATURE_ADAMANT,                                                         \
-    EV_SPREAD_ATK_SPE_HP,                                                             \
-    PERFECT_IVS,                                                                      \
-    .moves = {MOVE_NIGHT_SLASH, MOVE_PSYCHO_CUT, MOVE_AERIAL_ACE, MOVE_SWORDS_DANCE}, \
-    .gender = TRAINER_MON_MALE,                                                       \
-    .heldItem = Level < 85 ? ITEM_SITRUS_BERRY : ITEM_ABSOLITE,                       \
-    .ball = ITEM_POKE_BALL,                                                           \
+#define SIDNEY_LIEPARD(Level)                                                      \
+    {                                                                              \
+    .lvl = Level,                                                                  \
+    .species = SPECIES_LIEPARD,                                                    \
+    .ability = ABILITY_UNBURDEN,                                                   \
+    .nature = NATURE_JOLLY,                                                        \
+    EV_SPREAD_ATK_SPE_HP,                                                          \
+    PERFECT_IVS,                                                                   \
+    .moves = {MOVE_NIGHT_SLASH, MOVE_PSYCHO_CUT, MOVE_SEED_BOMB, MOVE_PLAY_ROUGH}, \
+    .gender = TRAINER_MON_MALE,                                                    \
+    .heldItem = ITEM_LIECHI_BERRY,                                                 \
+    .ball = ITEM_POKE_BALL,                                                        \
     }
 
 #define SIDNEY_SUPPORTING_MON(Level) \
@@ -1755,34 +1755,34 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     .gender = TRAINER_MON_MALE,      \
     .ball = ITEM_DUSK_BALL
 
-#define SIDNEY_CACTURNE(Level)                                                        \
+#define SIDNEY_PERSIAN(Level)                                                      \
+    {                                                                              \
+    SIDNEY_SUPPORTING_MON(Level),                                                  \
+    .species = SPECIES_PERSIAN_ALOLAN,                                             \
+    .ability = ABILITY_FUR_COAT,                                                   \
+    .nature = NATURE_MODEST,                                                       \
+    EV_SPREAD_SPA_SPE_DEF,                                                         \
+    .moves = {MOVE_DARK_PULSE, MOVE_POWER_GEM, MOVE_THUNDERBOLT, MOVE_NASTY_PLOT}, \
+    }
+
+#define SIDNEY_WEAVILE(Level)                                                          \
+    {                                                                                  \
+    SIDNEY_SUPPORTING_MON(Level),                                                      \
+    .species = SPECIES_WEAVILE,                                                        \
+    .ability = ABILITY_PRESSURE,                                                       \
+    .nature = NATURE_JOLLY,                                                            \
+    EV_SPREAD_ATK_SPE_HP,                                                              \
+    .moves = {MOVE_NIGHT_SLASH, MOVE_ICICLE_CRASH, MOVE_ICE_SHARD, MOVE_SWORDS_DANCE}, \
+    }
+
+#define SIDNEY_ABSOL(Level)                                                           \
     {                                                                                 \
     SIDNEY_SUPPORTING_MON(Level),                                                     \
-    .species = SPECIES_CACTURNE,                                                      \
-    .ability = ABILITY_WATER_ABSORB,                                                  \
-    .nature = NATURE_MODEST,                                                          \
-    EV_SPREAD_SPA_SPE_HP,                                                             \
-    .moves = {MOVE_DARK_PULSE, MOVE_ENERGY_BALL, MOVE_LEECH_SEED, MOVE_SPIKY_SHIELD}, \
-    }
-
-#define SIDNEY_CRAWDAUNT(Level)                                                 \
-    {                                                                           \
-    SIDNEY_SUPPORTING_MON(Level),                                               \
-    .species = SPECIES_CRAWDAUNT,                                               \
-    .ability = ABILITY_HYPER_CUTTER,                                            \
-    .nature = NATURE_ADAMANT,                                                   \
-    EV_SPREAD_ATK_SPE_HP,                                                       \
-    .moves = {MOVE_CRUNCH, MOVE_CRABHAMMER, MOVE_KNOCK_OFF, MOVE_SWORDS_DANCE}, \
-    }
-
-#define SIDNEY_SHIFTRY(Level)                                                  \
-    {                                                                          \
-    SIDNEY_SUPPORTING_MON(Level),                                              \
-    .species = SPECIES_SHIFTRY,                                                \
-    .ability = ABILITY_WIND_RIDER,                                             \
-    .nature = NATURE_ADAMANT,                                                  \
-    EV_SPREAD_ATK_SPE_HP,                                                      \
-    .moves = {MOVE_NIGHT_SLASH, MOVE_LEAF_BLADE, MOVE_FAKE_OUT, MOVE_ROLLOUT}, \
+    .species = SPECIES_ABSOL,                                                         \
+    .ability = ABILITY_SHARPNESS,                                                     \
+    .nature = NATURE_ADAMANT,                                                         \
+    EV_SPREAD_ATK_SPE_HP,                                                             \
+    .moves = {MOVE_NIGHT_SLASH, MOVE_PSYCHO_CUT, MOVE_AERIAL_ACE, MOVE_SWORDS_DANCE}, \
     }
 
 #define SIDNEY_MIGHTYENA(Level)                                                 \
@@ -1795,14 +1795,14 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     .moves = {MOVE_CRUNCH, MOVE_PLAY_ROUGH, MOVE_FIRE_FANG, MOVE_THUNDER_FANG}, \
     }
 
-#define SIDNEY_SHARPEDO(Level)                                                 \
-    {                                                                          \
-    SIDNEY_SUPPORTING_MON(Level),                                              \
-    .species = SPECIES_SHARPEDO,                                               \
-    .ability = ABILITY_ROUGH_SKIN,                                             \
-    .nature = NATURE_ADAMANT,                                                  \
-    EV_SPREAD_ATK_SPE_HP,                                                      \
-    .moves = {MOVE_CRUNCH, MOVE_LIQUIDATION, MOVE_POISON_FANG, MOVE_ICE_FANG}, \
+#define SIDNEY_UMBREON(Level)                                                \
+    {                                                                        \
+    SIDNEY_SUPPORTING_MON(Level),                                            \
+    .species = SPECIES_UMBREON,                                              \
+    .ability = ABILITY_SYNCHRONIZE,                                          \
+    .nature = NATURE_CALM,                                                   \
+    EV_SPREAD_SPD_DEF_HP,                                                    \
+    .moves = {MOVE_FOUL_PLAY, MOVE_TOXIC, MOVE_CONFUSE_RAY, MOVE_MEAN_LOOK}, \
     }
 
 [TRAINER_SIDNEY] =
@@ -1811,10 +1811,10 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         SIDNEY_MIGHTYENA(60),
-        SIDNEY_SHIFTRY(60),
-        SIDNEY_CRAWDAUNT(61),
-        SIDNEY_CACTURNE(61),
-        SIDNEY_ABSOL(62),
+        SIDNEY_ABSOL(60),
+        SIDNEY_WEAVILE(61),
+        SIDNEY_PERSIAN(61),
+        SIDNEY_LIEPARD(62),
     },
 },
 
@@ -1823,12 +1823,12 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     SIDNEY_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        SIDNEY_SHARPEDO(86),
+        SIDNEY_UMBREON(86),
         SIDNEY_MIGHTYENA(86),
-        SIDNEY_SHIFTRY(86),
-        SIDNEY_CRAWDAUNT(88),
-        SIDNEY_CACTURNE(88),
-        SIDNEY_ABSOL(90),
+        SIDNEY_ABSOL(86),
+        SIDNEY_WEAVILE(88),
+        SIDNEY_PERSIAN(88),
+        SIDNEY_LIEPARD(90),
     },
 },
 
@@ -1837,15 +1837,15 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     .trainerName = _("Phoebe"),     \
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
 
-#define PHOEBE_DUSKNOIR(Level)                                                      \
+#define PHOEBE_GOURGEIST(Level)                                                     \
     {                                                                               \
     .lvl = Level,                                                                   \
-    .species = SPECIES_DUSKNOIR,                                                    \
-    .ability = ABILITY_IRON_FIST,                                                   \
-    .nature = NATURE_ADAMANT,                                                       \
-    EV_SPREAD_ATK_SPD_HP,                                                           \
+    .species = SPECIES_GOURGEIST,                                                   \
+    .ability = ABILITY_INSOMNIA,                                                    \
+    .nature = NATURE_IMPISH,                                                        \
+    EV_SPREAD_ATK_DEF_HP,                                                           \
     PERFECT_IVS,                                                                    \
-    .moves = {MOVE_SHADOW_PUNCH, MOVE_EARTHQUAKE, MOVE_FIRE_PUNCH, MOVE_ICE_PUNCH}, \
+    .moves = {MOVE_SHADOW_CLAW, MOVE_SEED_BOMB, MOVE_BODY_PRESS, MOVE_WILL_O_WISP}, \
     .gender = TRAINER_MON_FEMALE,                                                   \
     .heldItem = ITEM_SITRUS_BERRY,                                                  \
     .ball = ITEM_POKE_BALL,                                                         \
@@ -1854,7 +1854,18 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
 #define PHOEBE_SUPPORTING_MON(Level) \
     .lvl = Level,                    \
     PERFECT_IVS,                     \
+    .gender = TRAINER_MON_FEMALE,    \
     .ball = ITEM_DUSK_BALL
+
+#define PHOEBE_DUSKNOIR(Level)                                                      \
+    {                                                                               \
+    PHOEBE_SUPPORTING_MON(Level),                                                   \
+    .species = SPECIES_DUSKNOIR,                                                    \
+    .ability = ABILITY_IRON_FIST,                                                   \
+    .nature = NATURE_ADAMANT,                                                       \
+    EV_SPREAD_ATK_SPD_HP,                                                           \
+    .moves = {MOVE_SHADOW_PUNCH, MOVE_EARTHQUAKE, MOVE_FIRE_PUNCH, MOVE_ICE_PUNCH}, \
+    }
 
 #define PHOEBE_BANETTE(Level)                                                          \
     {                                                                                  \
@@ -1864,50 +1875,36 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     .nature = NATURE_ADAMANT,                                                          \
     EV_SPREAD_ATK_SPE_HP,                                                              \
     .moves = {MOVE_SHADOW_CLAW, MOVE_BODY_SLAM, MOVE_SHADOW_SNEAK, MOVE_SWORDS_DANCE}, \
-    .gender = TRAINER_MON_FEMALE,                                                      \
     }
 
-#define PHOEBE_SABLEYE(Level)                                                     \
-    {                                                                             \
-    PHOEBE_SUPPORTING_MON(Level),                                                 \
-    .species = SPECIES_SABLEYE,                                                   \
-    .ability = ABILITY_PRANKSTER,                                                 \
-    .nature = NATURE_IMPISH,                                                      \
-    EV_SPREAD_DEF_HP_SPD,                                                         \
-    .moves = {MOVE_FOUL_PLAY, MOVE_CONFUSE_RAY, MOVE_WILL_O_WISP, MOVE_FAKE_OUT}, \
-    .gender = TRAINER_MON_FEMALE,                                                 \
+#define PHOEBE_CHANDELURE(Level)                                                      \
+    {                                                                                 \
+    PHOEBE_SUPPORTING_MON(Level),                                                     \
+    .species = SPECIES_CHANDELURE,                                                    \
+    .ability = ABILITY_INFILTRATOR,                                                   \
+    .nature = NATURE_MODEST,                                                          \
+    EV_SPREAD_SPA_SPE_HP,                                                             \
+    .moves = {MOVE_SHADOW_BALL, MOVE_FLAMETHROWER, MOVE_ENERGY_BALL, MOVE_CALM_MIND}, \
     }
 
-#define PHOEBE_SHEDINJA(Level)                                                 \
-    {                                                                          \
-    PHOEBE_SUPPORTING_MON(Level),                                              \
-    .species = SPECIES_SHEDINJA,                                               \
-    .ability = ABILITY_WONDER_GUARD,                                           \
-    .nature = NATURE_ADAMANT,                                                  \
-    EV_SPREAD_ATK_SPE_HP,                                                      \
-    .moves = {MOVE_SHADOW_CLAW, MOVE_LEECH_LIFE, MOVE_HEAL_BLOCK, MOVE_SPITE}, \
+#define PHOEBE_GENGAR(Level)                                                            \
+    {                                                                                   \
+    PHOEBE_SUPPORTING_MON(Level),                                                       \
+    .species = SPECIES_GENGAR,                                                          \
+    .ability = ABILITY_CURSED_BODY,                                                     \
+    .nature = NATURE_MODEST,                                                            \
+    EV_SPREAD_SPA_SPE_HP,                                                               \
+    .moves = {MOVE_SHADOW_BALL, MOVE_DAZZLING_GLEAM, MOVE_GIGA_DRAIN, MOVE_NASTY_PLOT}, \
     }
 
-#define PHOEBE_DUSCLOPS(Level)                                                 \
-    {                                                                          \
-    PHOEBE_SUPPORTING_MON(Level),                                              \
-    .species = SPECIES_DUSCLOPS,                                               \
-    .ability = ABILITY_PRESSURE,                                               \
-    .nature = NATURE_CALM,                                                     \
-    EV_SPREAD_SPD_HP_DEF,                                                      \
-    .moves = {MOVE_HEX, MOVE_CONFUSE_RAY, MOVE_NIGHT_SHADE, MOVE_WILL_O_WISP}, \
-    .gender = TRAINER_MON_MALE,                                                \
-    }
-
-#define PHOEBE_CURSOLA(Level)                                                   \
-    {                                                                           \
-    PHOEBE_SUPPORTING_MON(Level),                                               \
-    .species = SPECIES_CURSOLA,                                                 \
-    .ability = ABILITY_PERISH_BODY,                                             \
-    .nature = NATURE_MODEST,                                                    \
-    EV_SPREAD_SPA_SPD_DEF,                                                      \
-    .moves = {MOVE_SHADOW_BALL, MOVE_POWER_GEM, MOVE_SPITE, MOVE_STRENGTH_SAP}, \
-    .gender = TRAINER_MON_FEMALE,                                               \
+#define PHOEBE_PALOSSAND(Level)                                                    \
+    {                                                                              \
+    PHOEBE_SUPPORTING_MON(Level),                                                  \
+    .species = SPECIES_PALOSSAND,                                                  \
+    .ability = ABILITY_WATER_COMPACTION,                                           \
+    .nature = NATURE_BOLD,                                                         \
+    EV_SPREAD_SPA_DEF_HP,                                                          \
+    .moves = {MOVE_SHADOW_BALL, MOVE_EARTH_POWER, MOVE_GIGA_DRAIN, MOVE_SHORE_UP}, \
     }
 
 [TRAINER_PHOEBE] =
@@ -1915,11 +1912,11 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     PHOEBE_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        PHOEBE_DUSCLOPS(61),
-        PHOEBE_SHEDINJA(61),
-        PHOEBE_SABLEYE(62),
+        PHOEBE_GENGAR(61),
+        PHOEBE_CHANDELURE(61),
         PHOEBE_BANETTE(62),
-        PHOEBE_DUSKNOIR(63),
+        PHOEBE_DUSKNOIR(62),
+        PHOEBE_GOURGEIST(63),
     },
 },
 
@@ -1928,12 +1925,12 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     PHOEBE_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        PHOEBE_DUSCLOPS(86),
-        PHOEBE_CURSOLA(86),
-        PHOEBE_SHEDINJA(86),
-        PHOEBE_SABLEYE(88),
+        PHOEBE_PALOSSAND(86),
+        PHOEBE_GENGAR(86),
+        PHOEBE_CHANDELURE(86),
         PHOEBE_BANETTE(88),
-        PHOEBE_DUSKNOIR(90),
+        PHOEBE_DUSKNOIR(88),
+        PHOEBE_GOURGEIST(90),
     },
 },
 
@@ -2035,8 +2032,8 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     JUAN_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        JUAN_SEALEO(86),
         JUAN_NINETALES(86),
+        JUAN_SEALEO(86),
         JUAN_CASTFORM(86),
         JUAN_GLALIE(88),
         JUAN_FROSLASS(88),
@@ -2141,8 +2138,8 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     DRAKE_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        DRAKE_SHELGON(86),
         DRAKE_DRAGALGE(86),
+        DRAKE_SHELGON(86),
         DRAKE_KINGDRA(86),
         DRAKE_ALTARIA(88),
         DRAKE_FLYGON(88),

@@ -2369,7 +2369,6 @@ JUAN_REMATCH(5),
     .gender = TRAINER_MON_MALE,                                                    \
     }
 
-//Can replace Confuse Ray/Mean Look with Moonlight/Baby-Doll Eyes
 #define SIDNEY_UMBREON(Level, Tier)                                          \
     {                                                                        \
     ELITE_FOUR_MON(Level, UMBREON, Tier, SIDNEY),                            \
@@ -2479,10 +2478,10 @@ JUAN_REMATCH(5),
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         SIDNEY_MIGHTYENA(60, TIER3),
-        SIDNEY_SHIFTRY(60, TIER3),
-        SIDNEY_CRAWDAUNT(61, TIER3),
-        SIDNEY_CACTURNE(61, TIER3),
-        SIDNEY_ABSOL(62, ACE),
+        SIDNEY_ABSOL(60, TIER3),
+        SIDNEY_WEAVILE(61, TIER3),
+        SIDNEY_PERSIAN(61, TIER3),
+        SIDNEY_LIEPARD(62, ACE),
     },
 },
 
@@ -2491,12 +2490,12 @@ JUAN_REMATCH(5),
     SIDNEY_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        SIDNEY_SHARPEDO(86, TIER3),
+        SIDNEY_UMBREON(86, TIER3),
         SIDNEY_MIGHTYENA(86, TIER3),
-        SIDNEY_SHIFTRY(86, TIER3),
-        SIDNEY_CRAWDAUNT(88, TIER3),
-        SIDNEY_CACTURNE(88, TIER3),
-        SIDNEY_ABSOL(90, ACE),
+        SIDNEY_ABSOL(86, TIER3),
+        SIDNEY_WEAVILE(88, TIER3),
+        SIDNEY_PERSIAN(88, TIER3),
+        SIDNEY_LIEPARD(90, ACE),
     },
 },
 
@@ -2522,7 +2521,6 @@ JUAN_REMATCH(5),
     .nature = NATURE_ADAMANT,                                                          \
     EV_SPREAD_ATK_SPE_HP,                                                              \
     .moves = {MOVE_SHADOW_CLAW, MOVE_BODY_SLAM, MOVE_SHADOW_SNEAK, MOVE_SWORDS_DANCE}, \
-    .gender = TRAINER_MON_FEMALE,                                                      \
     }
 
 #define PHOEBE_SABLEYE(Level, Tier)                                               \
@@ -2599,7 +2597,6 @@ JUAN_REMATCH(5),
 
 #define PHOEBE_COFAGRIGUS
 
-//Can replace Infiltrator with Flame Body
 #define PHOEBE_CHANDELURE(Level, Tier)                                                \
     {                                                                                 \
     ELITE_FOUR_MON(Level, CHANDELURE, Tier, PHOEBE),                                  \
@@ -2679,11 +2676,11 @@ JUAN_REMATCH(5),
     PHOEBE_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        PHOEBE_DUSCLOPS(61, TIER3),
-        PHOEBE_SHEDINJA(61, TIER3),
-        PHOEBE_SABLEYE(62, TIER3),
+        PHOEBE_GENGAR(61, TIER3),
+        PHOEBE_CHANDELURE(61, TIER3),
         PHOEBE_BANETTE(62, TIER3),
-        PHOEBE_DUSKNOIR(63, ACE),
+        PHOEBE_DUSKNOIR(62, TIER3),
+        PHOEBE_GOURGEIST(63, ACE),
     },
 },
 
@@ -2692,12 +2689,12 @@ JUAN_REMATCH(5),
     PHOEBE_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        PHOEBE_DUSCLOPS(86, TIER3),
-        PHOEBE_CURSOLA(86, TIER3),
-        PHOEBE_SHEDINJA(86, TIER3),
-        PHOEBE_SABLEYE(88, TIER3),
+        PHOEBE_PALOSSAND(86, TIER3),
+        PHOEBE_GENGAR(86, TIER3),
+        PHOEBE_CHANDELURE(86, TIER3),
         PHOEBE_BANETTE(88, TIER3),
-        PHOEBE_DUSKNOIR(90, ACE),
+        PHOEBE_DUSKNOIR(88, TIER3),
+        PHOEBE_GOURGEIST(90, ACE),
     },
 },
 

@@ -39,14 +39,6 @@ upcoming
 ```
 
 ## To Do:
-### Hack-specific
-- Replace Alolan Raichu, Meowth trio, Tangela, Ledyba, Togepi, Galarian Corsola, Galarian Zigzagoon, Skrelp in post-game safari zone
-    - Hisuian Growlithe
-    - Alolan Diglett
-    - Alolan Geodude
-    - Wiglett
-    - Unovian Samurott?
-
 ### Next playthrough
 - Consolidate flags
     - FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA, FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY

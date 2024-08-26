@@ -6528,7 +6528,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "TOGEPI"
+                "species": "GROWLITHE_HISUIAN"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6536,23 +6536,23 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "TOGEPI"
+                "species": "GROWLITHE_HISUIAN"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "RAICHU_ALOLAN"
+                "species": "GEODUDE_ALOLAN"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "RAICHU_ALOLAN"
+                "species": "GEODUDE_ALOLAN"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "RAICHU_ALOLAN"
+                "species": "GEODUDE_ALOLAN"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "RAICHU_ALOLAN"
+                "species": "GEODUDE_ALOLAN"
               }
             ]
           }
@@ -6573,7 +6573,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "LEDYBA"
+                "species": "WEEDLE"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6581,7 +6581,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "LEDYBA"
+                "species": "WEEDLE"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6614,11 +6614,11 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "CORSOLA_GALARIAN"
+                "species": "SAMUROTT_UNOVAN"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "CORSOLA_GALARIAN"
+                "species": "SAMUROTT_UNOVAN"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6638,7 +6638,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SKRELP"
+                "species": "WIGLETT"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6646,7 +6646,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "DRAGALGE"
+                "species": "WUGTRIO"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6654,7 +6654,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "DRAGALGE"
+                "species": "WUGTRIO"
               }
             ]
           }
@@ -6671,7 +6671,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SANDILE"
+                "species": "DIGLETT_ALOLAN"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6691,19 +6691,19 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SNUBBULL"
+                "species": "SNEASEL_HISUIAN"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SNUBBULL"
+                "species": "SNEASEL_HISUIAN"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SNUBBULL"
+                "species": "SNEASEL_HISUIAN"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SNUBBULL"
+                "species": "SNEASEL_HISUIAN"
               }
             ]
           }
@@ -6716,7 +6716,7 @@
             "mons": [
               {
                 "range": "RANGE_POSTGAME",
-                "species": "TANGELA"
+                "species": "FOONGUSS"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6765,11 +6765,11 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "CORSOLA_GALARIAN"
+                "species": "SAMUROTT_UNOVAN"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "CORSOLA_GALARIAN"
+                "species": "SAMUROTT_UNOVAN"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6789,7 +6789,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SKRELP"
+                "species": "WIGLETT"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6797,7 +6797,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "DRAGALGE"
+                "species": "WUGTRIO"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6805,7 +6805,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "DRAGALGE"
+                "species": "WUGTRIO"
               }
             ]
           }
@@ -6818,7 +6818,7 @@
             "mons": [
               {
                 "range": "RANGE_POSTGAME",
-                "species": "MEOWTH"
+                "species": "YAMPER"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6826,19 +6826,19 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "MEOWTH_ALOLAN"
+                "species": "GOLETT"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "MEOWTH_GALARIAN"
+                "species": "IGGLYBUFF"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "MEOWTH_ALOLAN"
+                "species": "GOLETT"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "MEOWTH_GALARIAN"
+                "species": "IGGLYBUFF"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6867,11 +6867,11 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "CORSOLA_GALARIAN"
+                "species": "SAMUROTT_UNOVAN"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "CORSOLA_GALARIAN"
+                "species": "SAMUROTT_UNOVAN"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6891,7 +6891,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SKRELP"
+                "species": "WIGLETT"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6899,7 +6899,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "DRAGALGE"
+                "species": "WUGTRIO"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6907,7 +6907,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "DRAGALGE"
+                "species": "WUGTRIO"
               }
             ]
           }
@@ -6928,7 +6928,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "ZIGZAGOON_GALARIAN"
+                "species": "ODDISH"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6936,7 +6936,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "ZIGZAGOON_GALARIAN"
+                "species": "ODDISH"
               },
               {
                 "range": "RANGE_POSTGAME",

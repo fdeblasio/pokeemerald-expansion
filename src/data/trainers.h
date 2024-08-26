@@ -1939,79 +1939,78 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     .trainerName = _("Juan"),     \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
 
-#define JUAN_WALREIN(Level)                                              \
-    {                                                                      \
-    .lvl = Level,                                                          \
-    .species = SPECIES_WALREIN,                                            \
-    .ability = ABILITY_THICK_FAT,                                          \
-    .nature = NATURE_MODEST,                                               \
-    EV_SPREAD_SPA_HP_SPE,                                                  \
-    PERFECT_IVS,                                                           \
-    .moves = {MOVE_BLIZZARD, MOVE_SURF, MOVE_SIGNAL_BEAM, MOVE_SNOWSCAPE}, \
-    .gender = TRAINER_MON_FEMALE,                                          \
-    .heldItem = ITEM_SITRUS_BERRY,                                         \
-    .ball = ITEM_POKE_BALL,                                                \
+#define JUAN_BRELOOM(Level)                                                   \
+    {                                                                         \
+    .lvl = Level,                                                             \
+    .species = SPECIES_BRELOOM,                                               \
+    .ability = ABILITY_TECHNICIAN,                                            \
+    .nature = NATURE_ADAMANT,                                                 \
+    EV_SPREAD_ATK_SPE_HP,                                                     \
+    PERFECT_IVS,                                                              \
+    .moves = {MOVE_BULLET_SEED, MOVE_ARM_THRUST, MOVE_ROCK_TOMB, MOVE_SPORE}, \
+    .gender = TRAINER_MON_MALE,                                               \
+    .heldItem = ITEM_LOADED_DICE,                                             \
+    .ball = ITEM_POKE_BALL,                                                   \
     }
 
 #define JUAN_SUPPORTING_MON(Level) \
-    .lvl = Level,                    \
-    PERFECT_IVS,                     \
-    .ball = ITEM_PREMIER_BALL
+    .lvl = Level,                  \
+    PERFECT_IVS,                   \
+    .ball = ITEM_LUXURY_BALL
 
-#define JUAN_FROSLASS(Level)                                                      \
-    {                                                                               \
-    JUAN_SUPPORTING_MON(Level),                                                   \
-    .species = SPECIES_FROSLASS,                                                    \
-    .ability = ABILITY_SNOW_CLOAK,                                                  \
-    .nature = NATURE_TIMID,                                                         \
-    EV_SPREAD_SPA_SPE_HP,                                                           \
-    .moves = {MOVE_BLIZZARD, MOVE_SHADOW_BALL, MOVE_DRAINING_KISS, MOVE_SNOWSCAPE}, \
-    .gender = TRAINER_MON_FEMALE,                                                   \
+#define JUAN_ROSERADE(Level)                                                                \
+    {                                                                                       \
+    JUAN_SUPPORTING_MON(Level),                                                             \
+    .species = SPECIES_ROSERADE,                                                            \
+    .ability = ABILITY_NATURAL_CURE,                                                        \
+    .nature = NATURE_MODEST,                                                                \
+    EV_SPREAD_SPA_SPE_HP,                                                                   \
+    .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_DAZZLING_GLEAM, MOVE_GRASSY_TERRAIN}, \
+    .gender = TRAINER_MON_FEMALE,                                                           \
     }
 
-#define JUAN_GLALIE(Level)                                                        \
-    {                                                                               \
-    JUAN_SUPPORTING_MON(Level),                                                   \
-    .species = SPECIES_GLALIE,                                                      \
-    .ability = ABILITY_ICE_BODY,                                                    \
-    .nature = NATURE_MODEST,                                                        \
-    EV_SPREAD_SPA_SPE_HP,                                                           \
-    .moves = {MOVE_FREEZE_DRY, MOVE_WEATHER_BALL, MOVE_DARK_PULSE, MOVE_SNOWSCAPE}, \
-    .gender = TRAINER_MON_MALE,                                                     \
+#define JUAN_SCOVILLIAN(Level)                                                             \
+    {                                                                                      \
+    JUAN_SUPPORTING_MON(Level),                                                            \
+    .species = SPECIES_SCOVILLAIN,                                                         \
+    .ability = ABILITY_MOODY,                                                              \
+    .nature = NATURE_ADAMANT,                                                              \
+    EV_SPREAD_ATK_SPE_HP,                                                                  \
+    .moves = {MOVE_LEAF_BLADE, MOVE_TEMPER_FLARE, MOVE_ZEN_HEADBUTT, MOVE_GRASSY_TERRAIN}, \
+    .gender = TRAINER_MON_MALE,                                                            \
     }
 
-#define JUAN_CASTFORM(Level)                                                    \
-    {                                                                             \
-    JUAN_SUPPORTING_MON(Level),                                                 \
-    .species = SPECIES_CASTFORM,                                                  \
-    .ability = ABILITY_FORECAST,                                                  \
-    .nature = NATURE_MODEST,                                                      \
-    EV_SPREAD_SPA_SPE_HP,                                                         \
-    .moves = {MOVE_BLIZZARD, MOVE_WEATHER_BALL, MOVE_HYDRO_PUMP, MOVE_SNOWSCAPE}, \
-    .gender = TRAINER_MON_FEMALE,                                                 \
+#define JUAN_MARACTUS(Level)                                                              \
+    {                                                                                     \
+    JUAN_SUPPORTING_MON(Level),                                                           \
+    .species = SPECIES_MARACTUS,                                                          \
+    .ability = ABILITY_STORM_DRAIN,                                                       \
+    .nature = NATURE_MODEST,                                                              \
+    EV_SPREAD_SPA_SPE_HP,                                                                 \
+    .moves = {MOVE_GIGA_DRAIN, MOVE_HYPER_VOICE, MOVE_COTTON_GUARD, MOVE_GRASSY_TERRAIN}, \
+    .gender = TRAINER_MON_FEMALE,                                                         \
     }
 
-#define JUAN_SEALEO(Level)                                                   \
-    {                                                                          \
-    JUAN_SUPPORTING_MON(Level),                                              \
-    .species = SPECIES_SEALEO,                                                 \
-    .ability = ABILITY_ICE_BODY,                                               \
-    .nature = NATURE_ADAMANT,                                                  \
-    EV_SPREAD_ATK_HP_SPE,                                                      \
-    .moves = {MOVE_ICE_BALL, MOVE_ROLLOUT, MOVE_DEFENSE_CURL, MOVE_SNOWSCAPE}, \
-    .gender = TRAINER_MON_MALE,                                                \
+#define JUAN_CACTURNE(Level)                                                       \
+    {                                                                              \
+    JUAN_SUPPORTING_MON(Level),                                                    \
+    .species = SPECIES_CACTURNE,                                                   \
+    .ability = ABILITY_SAND_VEIL,                                                  \
+    .nature = NATURE_ADAMANT,                                                      \
+    EV_SPREAD_ATK_SPE_HP,                                                          \
+    .moves = {MOVE_SEED_BOMB, MOVE_THROAT_CHOP, MOVE_SPIKES, MOVE_GRASSY_TERRAIN}, \
+    .gender = TRAINER_MON_MALE,                                                    \
     }
 
-#define JUAN_NINETALES(Level)                                                  \
-    {                                                                            \
-    JUAN_SUPPORTING_MON(Level),                                                \
-    .species = SPECIES_NINETALES_ALOLAN,                                         \
-    .ability = ABILITY_SNOW_WARNING,                                             \
-    .nature = NATURE_TIMID,                                                      \
-    EV_SPREAD_SPE_SPD_HP,                                                        \
-    .moves = {MOVE_BLIZZARD, MOVE_MOONBLAST, MOVE_AURORA_VEIL, MOVE_NASTY_PLOT}, \
-    .gender = TRAINER_MON_FEMALE,                                                \
-    .heldItem = ITEM_ICY_ROCK,                                                   \
+#define JUAN_TROPIUS(Level)                                                        \
+    {                                                                              \
+    JUAN_SUPPORTING_MON(Level),                                                    \
+    .species = SPECIES_TROPIUS,                                                    \
+    .ability = ABILITY_CHLOROPHYLL,                                                \
+    .nature = NATURE_MODEST,                                                       \
+    EV_SPREAD_SPA_HP_SPD,                                                          \
+    .moves = {MOVE_GIGA_DRAIN, MOVE_AIR_SLASH, MOVE_DRAGON_PULSE, MOVE_SYNTHESIS}, \
+    .gender = TRAINER_MON_MALE,                                                    \
     }
 
 [TRAINER_GLACIA] =
@@ -2019,11 +2018,11 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     JUAN_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        JUAN_SEALEO(62),
-        JUAN_CASTFORM(62),
-        JUAN_GLALIE(63),
-        JUAN_FROSLASS(63),
-        JUAN_WALREIN(64),
+        JUAN_CACTURNE(62),
+        JUAN_MARACTUS(62),
+        JUAN_SCOVILLIAN(63),
+        JUAN_ROSERADE(63),
+        JUAN_BRELOOM(64),
     },
 },
 
@@ -2032,12 +2031,12 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     JUAN_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        JUAN_NINETALES(86),
-        JUAN_SEALEO(86),
-        JUAN_CASTFORM(86),
-        JUAN_GLALIE(88),
-        JUAN_FROSLASS(88),
-        JUAN_WALREIN(90),
+        JUAN_TROPIUS(86),
+        JUAN_CACTURNE(86),
+        JUAN_MARACTUS(86),
+        JUAN_SCOVILLIAN(88),
+        JUAN_ROSERADE(88),
+        JUAN_BRELOOM(90),
     },
 },
 

@@ -67,10 +67,10 @@ EverGrandeCity_GlaciasRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
-	.string "Welcome, my name is Glacia\n"
+	.string "Welcome, my name is Juan\n"
 	.string "of the Elite Four.\p"
 	.string "I've traveled from afar to Hoenn\n"
-	.string "so that I may hone my ice skills.\p"
+	.string "so that I may hone my grass skills.\p"
 	.string "But all I have seen are challenges by\n"
 	.string "weak Trainers and their Pokémon.\p"
 	.string "What about you?\p"
@@ -85,7 +85,7 @@ EverGrandeCity_GlaciasRoom_Text_Defeat:
 	.string "You and your Pokémon…\n"
 	.string "How hot your spirits burn!\p"
 	.string "The all-consuming heat overwhelms.\p"
-	.string "It's no surprise that my icy skills\n"
+	.string "It's no surprise that my grassy skills\n"
 	.string "failed to harm you.$"
 
 EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech:

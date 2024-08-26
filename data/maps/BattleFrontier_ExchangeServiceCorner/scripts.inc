@@ -281,7 +281,6 @@ BattleFrontier_ExchangeServiceCorner_EventScript_EvolutionMega::
 
 	.align 2
 BattleFrontier_Mart_EvolutionMega:
-	.2byte ITEM_ICE_STONE       @ National: Sandshrew-A, Vulpix-A
 	.2byte ITEM_ELECTIRIZER     @ National: Electabuzz
 	.2byte ITEM_MAGMARIZER      @ National: Magmar
 	.2byte ITEM_RAZOR_FANG      @ National: Gligar

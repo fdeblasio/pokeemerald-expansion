@@ -97,6 +97,7 @@ LilycoveCity_DepartmentStore_3F_Pokemart_Evo:
 	.2byte ITEM_SHINY_STONE     @ Hoenn: Koffing, Togetic, Roselia
 	.2byte ITEM_DAWN_STONE      @ Hoenn: Snorunt
 	.2byte ITEM_DUSK_STONE      @ Hoenn: Litwick
+	.2byte ITEM_ICE_STONE       @ Hoenn: Crawbrawler;                                                                  National: Sandshrew-A, Vulpix-A
 	.2byte ITEM_LINKING_CORD    @ Hoenn: Kadabra, Machoke, Graveler, Haunter, Boldore, Karrablast, Shelmet, Pumpkaboo; National: Graveler-A
 	.2byte ITEM_KINGS_ROCK      @ Hoenn: Poliwhirl
 	.2byte ITEM_DEEP_SEA_TOOTH  @ Hoenn: Clamperl
@@ -112,7 +113,6 @@ LilycoveCity_DepartmentStore_3F_Pokemart_Evo:
 @ Unused shop that contains evo items for Pokemon not available in Emerald by default
 	.align 2
 LilycoveCity_DepartmentStore_3F_Pokemart_EvoUnused:
-	.2byte ITEM_ICE_STONE       @ Battle Frontier;   National: Sandshrew-A, Vulpix-A
 	.2byte ITEM_METAL_COAT                         @ Unused: Onix and Scyther
 	.2byte ITEM_BLACK_AUGURITE                     @ Unused: Scyther
 	.2byte ITEM_DRAGON_SCALE                       @ Unused: Seadra

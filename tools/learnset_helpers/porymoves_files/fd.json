@@ -11281,6 +11281,10 @@
         "Move": "MOVE_BULLET_PUNCH"
       },
       {
+        "Level": 1,
+        "Move": "MOVE_COIL"
+      },
+      {
         "Level": 16,
         "Move": "MOVE_COMET_PUNCH"
       }

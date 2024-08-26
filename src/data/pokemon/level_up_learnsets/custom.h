@@ -23834,6 +23834,7 @@ static const struct LevelUpMove sCyclizarLevelUpLearnset[] = {
 #if P_FAMILY_ORTHWORM
 static const struct LevelUpMove sOrthwormLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_BULLET_PUNCH),
+    LEVEL_UP_MOVE( 1, MOVE_COIL),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_WRAP),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),

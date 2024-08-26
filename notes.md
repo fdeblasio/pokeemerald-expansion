@@ -37,6 +37,7 @@ upcoming
 ## To Do:
 ### Hack-specific
 - Merge README.md into CHANGES.md
+- Add postgame encounters into Hoenn Dex
 
 ### Megas:
 - Z-A Megas:

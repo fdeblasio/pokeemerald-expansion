@@ -1711,11 +1711,9 @@ static void MoveSelectionDisplayPpNumber(u32 battler)
 
 static u8 GetMoveSelectionMoveType(u32 battler, u16 move)
 {
-    u16 holdEffect = GetBattlerHoldEffect(battler, TRUE);
     u32 speciesId = gBattleMons[battler].species;
     u8 type = gMovesInfo[move].type;
     u16 effect = gMovesInfo[move].effect;
-    txtPtr = StringCopy(gDisplayedStringBattle, gText_MoveInterfaceType);
 
     if (move == MOVE_TERA_BLAST)
     {
@@ -1763,6 +1761,7 @@ static void MoveSelectionDisplayMoveType(u32 battler)
     txtPtr = StringCopy(gDisplayedStringBattle, gText_MoveInterfaceType);
 
     u8 type = GetMoveSelectionMoveType(battler, move);
+    end = StringCopy(txtPtr, gTypesInfo[type].name);
 
     PrependFontIdToFit(txtPtr, end, FONT_NORMAL, WindowWidthPx(B_WIN_MOVE_TYPE) - 25);
     BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_MOVE_TYPE);
@@ -1826,7 +1825,7 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
         UQ4_12_MULTIPLY(power, 2.0);
     else if (effect == EFFECT_SOLAR_BEAM && IsBattlerWeatherAffected(battler, (B_WEATHER_HAIL | B_WEATHER_SANDSTORM | B_WEATHER_RAIN | B_WEATHER_SNOW | B_WEATHER_FOG)))
         UQ4_12_MULTIPLY(power, 0.5);
-    else if (effect == EFFECT_STOMPING_TANTRUM && (gBattleStruct->lastMoveFailed & gBitTable[battler]))
+    else if (effect == EFFECT_STOMPING_TANTRUM && (gBattleStruct->lastMoveFailed & (1u << battler)))
         UQ4_12_MULTIPLY(power, 2.0);
     else if ((effect == EFFECT_EARTHQUAKE || effect == EFFECT_MAGNITUDE) && (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN))
         UQ4_12_MULTIPLY(power, 0.5);

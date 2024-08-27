@@ -1927,13 +1927,13 @@ static bool32 Fishing_GotBite(struct Task *task)
 {
     AlignFishingAnimationFrames();
     AddTextPrinterParameterized(0, FONT_NORMAL, gText_OhABite, 0, 17, 0, NULL);
-    task->tStep = FISHING_CHANGE_MINIGAME;
+    task->tStep++;
     task->tFrameCounter = 0;
     return FALSE;
 }
 
 // We have a bite. Now, wait for the player to press A
-static bool8 Fishing_WaitForA(struct Task *task)
+static bool32 Fishing_WaitForA(struct Task *task)
 {
     AlignFishingAnimationFrames();
     task->tFrameCounter++;

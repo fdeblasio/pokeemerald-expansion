@@ -65,7 +65,6 @@ upcoming
     - Seperate Abigail and Benjamin's Magnemites
     - Some Magnemites never occur because 30 is less than REMATCH_2_LEVEL
     - Add Abilities to single ability and TRAINER_MON_NONE to genderless to make more constistent
-- Get name of Pokemon speaking
 - Non-grass soot tiles should add to soot sack
 
 ### Meta
@@ -107,10 +106,8 @@ upcoming
 
 ### Trainers
 - Add ORAS team members (like a Picknicker getting a Gulpin)
-- Battle Archie/Courtney at Meteor Falls?
-- Give grunts consistent teams/genders?
-    - Give them names?
-        - Landon and Terrance for Magma males
+Now that Gym Leader rematch party size is consistent, maybe a macro can be made
+Get rid of Gym Leader rematches needing two Pokemon
 - More mugshots for other bosses?
 - Readjust wild/trainer levels so that parties aren't overpowered?
 - Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)
@@ -262,6 +259,7 @@ upcoming
 ### Big changes from Vanilla - low priority
 - Remove IVs? Maybe make boolean for either 0 or 31 added to stat
     - Would need to figure out Hidden Power
+- Beach sand has sunny weather? Or maybe just some routes with it like 109
 - Make seperate Pokédex for post-game similar to SwSh DLC Pokédexes?
 - Fire Blast/Hydro Pump/Stone Edge accurate in respective weathers?
     - Make Thunder also accurate in Electric Terrain?

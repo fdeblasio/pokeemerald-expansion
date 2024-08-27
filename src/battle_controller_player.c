@@ -1709,10 +1709,7 @@ static void MoveSelectionDisplayPpNumber(u32 battler)
 
 static u8 GetMoveSelectionMoveType(u32 battler, u16 move)
 {
-    u16 holdEffect = GetBattlerHoldEffect(battler, TRUE);
-    struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleResources->bufferA[battler][4]);
-    txtPtr = StringCopy(gDisplayedStringBattle, gText_MoveInterfaceType);
-    u32 move = moveInfo->moves[gMoveSelectionCursor[battler]];
+    u32 speciesId = gBattleMons[battler].species;
     u32 type = GetMoveType(move);
     u32 effect = GetMoveEffect(move);
 
@@ -1720,7 +1717,6 @@ static u8 GetMoveSelectionMoveType(u32 battler, u16 move)
     {
         if (IsGimmickSelected(battler, GIMMICK_TERA) || GetActiveGimmick(battler) == GIMMICK_TERA)
             type = GetBattlerTeraType(battler);
-            end = StringCopy(txtPtr, gTypesInfo[type].name);
     }
     else if (effect == EFFECT_IVY_CUDGEL)
     {
@@ -1750,7 +1746,6 @@ static u8 GetMoveSelectionMoveType(u32 battler, u16 move)
         struct Pokemon *mon = &gPlayerParty[gBattlerPartyIndexes[battler]];
         type = CheckDynamicMoveType(mon, move, battler);
     }
-    end = StringCopy(txtPtr, gTypesInfo[type].name);
     return type;
 }
 
@@ -1763,6 +1758,7 @@ static void MoveSelectionDisplayMoveType(u32 battler)
     txtPtr = StringCopy(gDisplayedStringBattle, gText_MoveInterfaceType);
 
     u8 type = GetMoveSelectionMoveType(battler, move);
+    end = StringCopy(txtPtr, gTypesInfo[type].name);
 
     PrependFontIdToFit(txtPtr, end, FONT_NORMAL, WindowWidthPx(B_WIN_MOVE_TYPE) - 25);
     BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_MOVE_TYPE);
@@ -1826,7 +1822,7 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
         UQ4_12_MULTIPLY(power, 2.0);
     else if (effect == EFFECT_SOLAR_BEAM && IsBattlerWeatherAffected(battler, (B_WEATHER_HAIL | B_WEATHER_SANDSTORM | B_WEATHER_RAIN | B_WEATHER_SNOW | B_WEATHER_FOG)))
         UQ4_12_MULTIPLY(power, 0.5);
-    else if (effect == EFFECT_STOMPING_TANTRUM && (gBattleStruct->lastMoveFailed & gBitTable[battler]))
+    else if (effect == EFFECT_STOMPING_TANTRUM && (gBattleStruct->lastMoveFailed & (1u << battler)))
         UQ4_12_MULTIPLY(power, 2.0);
     else if ((effect == EFFECT_EARTHQUAKE || effect == EFFECT_MAGNITUDE) && (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN))
         UQ4_12_MULTIPLY(power, 0.5);

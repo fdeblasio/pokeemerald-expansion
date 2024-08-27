@@ -281,7 +281,7 @@ static const struct MatchCallRival sMayMatchCallHeader =
     .type = MC_TYPE_RIVAL,
     .playerGender = MALE,
     .flag = FLAG_ENABLE_RIVAL_MATCH_CALL,
-    .desc = gText_MayKyleMatchCallDesc,
+    .desc = gText_MayBrendanMatchCallDesc,
     .name = gText_ExpandedPlaceholder_May,
     .textData = sMayTextScripts
 };
@@ -310,7 +310,7 @@ static const struct MatchCallRival sKyleMatchCallHeader =
     .type = MC_TYPE_RIVAL,
     .playerGender = FEMALE,
     .flag = FLAG_ENABLE_RIVAL_MATCH_CALL,
-    .desc = gText_MayKyleMatchCallDesc,
+    .desc = gText_MayBrendanMatchCallDesc,
     .name = gText_ExpandedPlaceholder_Kyle,
     .textData = sKyleTextScripts
 };
@@ -701,7 +701,7 @@ static const struct MatchCallCheckPageOverride sCheckPageOverrides[] = {
         .idx = MC_HEADER_KYLE,
         .facilityClass = FACILITY_CLASS_KYLE,
         .flag = 0xFFFF,
-        .flavorTexts = MCFLAVOR(Kyle)
+        .flavorTexts = MCFLAVOR(Brendan)
     },
     {
         .idx = MC_HEADER_KELLI,

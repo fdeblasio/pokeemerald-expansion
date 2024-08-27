@@ -1810,15 +1810,8 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
     - SpD: 66->70
     - Learns Ember, Flame Wheel, Fire Punch, and Lava Plume by level up
 
-- Tornadus:
-    - Learns Acrobatics by level up
-    - Learns Bleakwind Storm at level 75 instead of level 77 to match the rest of the group
-
-- Thundurus:
-    - Learns Extrasensory by level up
-    - Learns Air Slash by TM
-
 - Landorus:
+    - Therian form is vaguely based on a tiger
     - Swaps Bulldoze and Rock Tomb levels for consistency
     - Learns Swords Dance and Stomping Tantrum by level up
     - Swaps Sandsear Storm and Fissure levels for consistency
@@ -2072,10 +2065,6 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
 
 - Cufant/Copperajah:
     - Received Sturdy as a second ability
-
-- Enamorus:
-    - Learns Play Rough by level up
-    - Learns Air Slash by TM
 
 - Sprigatito:
     - HP: 40->45

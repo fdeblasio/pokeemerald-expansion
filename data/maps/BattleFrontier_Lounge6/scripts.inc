@@ -41,6 +41,7 @@ BattleFrontier_Lounge6_EventScript_NotRequestedMon::
 	end
 
 BattleFrontier_Lounge6_EventScript_TradeCompleted::
+	bufferspeciesname STR_VAR_1, SPECIES_BATTLE_FRONTIER_TRADE_GIVE
 	msgbox BattleFrontier_Lounge6_Text_SkittySoMuchCuterThanImagined, MSGBOX_DEFAULT
 	release
 	end
@@ -73,5 +74,5 @@ BattleFrontier_Lounge6_Text_WellThatsFineToo:
 
 BattleFrontier_Lounge6_Text_SkittySoMuchCuterThanImagined:
 	.string "Giggle!\n"
-	.string "A Skitty is so much cuter than I had\l"
+	.string "A {STR_VAR_1} is so much cuter than I had\l"
 	.string "imagined. I'm delighted!$"

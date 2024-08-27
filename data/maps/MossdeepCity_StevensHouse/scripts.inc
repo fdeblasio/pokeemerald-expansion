@@ -75,6 +75,7 @@ MossdeepCity_StevensHouse_Movement_StevenReturn:
 	step_end
 
 MossdeepCity_StevensHouse_EventScript_BeldumPokeball::
+	bufferspeciesname STR_VAR_1, SPECIES_STEVENS_HOUSE
 	lockall
 	msgbox MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, MossdeepCity_StevensHouse_EventScript_LeaveBeldum
@@ -117,13 +118,13 @@ MossdeepCity_StevensHouse_EventScript_BeldumTransferredToPC::
 	end
 
 MossdeepCity_StevensHouse_EventScript_ReceivedBeldumFanfare::
+	bufferspeciesname STR_VAR_1, SPECIES_STEVENS_HOUSE
 	bufferspeciesname STR_VAR_2, SPECIES_STEVENS_HOUSE
 	removeobject LOCALID_BELDUM_BALL
 	playfanfare MUS_OBTAIN_ITEM
 	message MossdeepCity_StevensHouse_Text_ObtainedBeldum
 	waitmessage
 	waitfanfare
-	bufferspeciesname STR_VAR_1, SPECIES_STEVENS_HOUSE
 	return
 
 MossdeepCity_StevensHouse_EventScript_ReceivedBeldum::
@@ -141,6 +142,7 @@ MossdeepCity_StevensHouse_EventScript_Steven::
 	end
 
 MossdeepCity_StevensHouse_EventScript_Letter::
+	bufferspeciesname STR_VAR_1, SPECIES_STEVENS_HOUSE
 	lockall
 	msgbox MossdeepCity_StevensHouse_Text_LetterFromSteven, MSGBOX_DEFAULT
 	releaseall
@@ -179,11 +181,11 @@ MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis:
 MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum:
 	.string "{PLAYER} checked the Poké Ball.\p"
 	.string "It contained the Pokémon\n"
-	.string "Jirachi.\p"
+	.string "{STR_VAR_1}.\p"
 	.string "Take the Poké Ball?$"
 
 MossdeepCity_StevensHouse_Text_ObtainedBeldum:
-	.string "{PLAYER} obtained a Jirachi.$"
+	.string "{PLAYER} obtained a {STR_VAR_1}.$"
 
 MossdeepCity_StevensHouse_Text_LeftPokeBallWhereItWas:
 	.string "{PLAYER} left the Poké Ball where\n"
@@ -200,7 +202,7 @@ MossdeepCity_StevensHouse_Text_LetterFromSteven:
 	.string "I have a favor to ask of you.\p"
 	.string "I want you to take the Poké Ball on\n"
 	.string "the desk.\p"
-	.string "Inside it is a Jirachi, a rare\n"
+	.string "Inside it is a {STR_VAR_1}, a rare\n"
 	.string "Pokémon.\p"
 	.string "I'm counting on you.\p"
 	.string "May our paths cross someday.\p"

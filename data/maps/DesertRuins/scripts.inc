@@ -63,7 +63,7 @@ DesertRuins_EventScript_Regirock::
 	waitmoncry
 	setwildbattle SPECIES_DESERT_RUINS, TRIO_LEVEL
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
-	special StartRegiBattle
+	special BattleSetup_StartLegendaryBattle
 	waitstate
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome

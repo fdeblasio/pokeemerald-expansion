@@ -1993,8 +1993,8 @@ There are some mechanics, moves and abilities that are missing and being develop
     - SpD: 66->70
     - Learns Ember, Flame Wheel, Fire Punch, and Lava Plume by level up
 
-- Landorus:
-    - Therian form is vaguely based on a tiger
+- Landorus (postgame):
+    - Therian form is based on a tiger
     - Swaps Bulldoze and Rock Tomb levels for consistency
     - Learns Swords Dance and Stomping Tantrum by level up
     - Swaps Sandsear Storm and Fissure levels for consistency
@@ -2162,10 +2162,10 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Type: Normal/Dragon->Dragon/Normal
     - Learns Swift by level up
 
-- Cosmoem:
+- Cosmoem (postgame):
     - Only evolves into Solgaleo, regardless of time of day
 
-- Solgaleo:
+- Solgaleo (postgame):
     - Learns Psychic Fangs by level up
 
 - Rookidee:

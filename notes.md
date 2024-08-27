@@ -50,7 +50,6 @@ upcoming
     - Late-game trainers like Nicolas or John and Jay too
     - Even just reducing to two or three rematches would save space
 - Edit contests?/Contests overhaul
-- Check that Waterfall replacement is good (getting item properly, etc.)
 
 ### Misc notes (organize later)
 - After Cats
@@ -85,6 +84,7 @@ upcoming
 - Once more changes are made, consolidate commits on develop branch again
 
 ### Pokémon
+- The events in Sootopolis should set the seen flag for the trio
 - Eventually remove RSE and/or BDSP teachable moves?
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?
 - For Egg Groups that share names with types, give moves of that type to Pokémon not of that type in the egg group

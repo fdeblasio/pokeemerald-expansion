@@ -2807,6 +2807,15 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .iconSprite = gMonIcon_Scovillain,
         .iconPalIndex = 1,
         FOOTPRINT(Scovillain)
+        OVERWORLD_SET_ANIM(
+            sPicTable_Scovillain,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following_Asym,
+            gOverworldPalette_Scovillain,
+            gShinyOverworldPalette_Scovillain
+        )
         .levelUpLearnset = sScovillainLevelUpLearnset,
         .teachableLearnset = sScovillainTeachableLearnset,
     },
@@ -3077,6 +3086,15 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .iconSprite = gMonIcon_Tinkatink,
         .iconPalIndex = 1,
         FOOTPRINT(Tinkatink)
+        OVERWORLD_SET_ANIM(
+            sPicTable_Tinkatink,
+            SIZE_32x32,
+            SHADOW_SIZE_S,
+            TRACKS_FOOT,
+            sAnimTable_Following_Asym,
+            gOverworldPalette_Tinkatink,
+            gShinyOverworldPalette_Tinkatink
+        )
         .levelUpLearnset = sTinkatinkLevelUpLearnset,
         .teachableLearnset = sTinkatinkTeachableLearnset,
         .eggMoveLearnset = sTinkatinkEggMoveLearnset,
@@ -3131,6 +3149,15 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .iconSprite = gMonIcon_Tinkatuff,
         .iconPalIndex = 1,
         FOOTPRINT(Tinkatuff)
+        OVERWORLD_SET_ANIM(
+            sPicTable_Tinkatuff,
+            SIZE_32x32,
+            SHADOW_SIZE_S,
+            TRACKS_FOOT,
+            sAnimTable_Following_Asym,
+            gOverworldPalette_Tinkatuff,
+            gShinyOverworldPalette_Tinkatuff
+        )
         .levelUpLearnset = sTinkatuffLevelUpLearnset,
         .teachableLearnset = sTinkatuffTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_TINKATON}),
@@ -3184,6 +3211,15 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .iconSprite = gMonIcon_Tinkaton,
         .iconPalIndex = 1,
         FOOTPRINT(Tinkaton)
+        OVERWORLD_SET_ANIM(
+            sPicTable_Tinkaton,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following_Asym,
+            gOverworldPalette_Tinkaton,
+            gShinyOverworldPalette_Tinkaton
+        )
         .levelUpLearnset = sTinkatonLevelUpLearnset,
         .teachableLearnset = sTinkatonTeachableLearnset,
     },

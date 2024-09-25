@@ -23,12 +23,12 @@ MgbaPrintf(MGBA_LOG_WARN, "XYZ: %d", mod);
 ```
 
 ## For release:
-- include/config.h:
+- include/config/general.h:
     - Uncomment `//#define NDEBUG`
 - include/config/debug.h:
     - #define DEBUG_OVERWORLD_MENU            FALSE
     - #define DEBUG_BATTLE_MENU               FALSE
-    - #define DEBUG_POKEMON_MENU              FALSE
+    - #define DEBUG_POKEMON_SPRITE_VISUALIZER FALSE
 
 ## Rebasing
 ```
@@ -36,6 +36,7 @@ upcoming
 └─ textDecapitalization
    └─ develop
       └─ All hacks
+         └─ Release version
 ```
 
 ## To Do:

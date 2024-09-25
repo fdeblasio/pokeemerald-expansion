@@ -5366,9 +5366,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
                 && IsBattlerAlive(gBattlerTarget))
                 {
-                    MgbaPrintf(MGBA_LOG_WARN, "Conditions passed");
                     gBattlescriptCurrInstr = BattleScript_WindPowerActivates;
-                    MgbaPrintf(MGBA_LOG_WARN, "Steps finished");
                 }
             }
 

@@ -661,6 +661,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             gOverworldPalette_Starly,
             gShinyOverworldPalette_Starly
         )
+        OVERWORLD_FEMALE(
+            sPicTable_StarlyF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT
+        )
         .levelUpLearnset = sStarlyLevelUpLearnset,
         .teachableLearnset = sStarlyTeachableLearnset,
         .eggMoveLearnset = sStarlyEggMoveLearnset,
@@ -726,6 +732,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             TRACKS_FOOT,
             gOverworldPalette_Staravia,
             gShinyOverworldPalette_Staravia
+        )
+        OVERWORLD_FEMALE(
+            sPicTable_StaraviaF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT
         )
         .levelUpLearnset = sStaraviaLevelUpLearnset,
         .teachableLearnset = sStaraviaTeachableLearnset,
@@ -798,6 +810,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             gOverworldPalette_Staraptor,
             gShinyOverworldPalette_Staraptor
         )
+        OVERWORLD_FEMALE(
+            sPicTable_StaraptorF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT
+        )
         .levelUpLearnset = sStaraptorLevelUpLearnset,
         .teachableLearnset = sStaraptorTeachableLearnset,
     },
@@ -864,6 +882,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             gOverworldPalette_Bidoof,
             gShinyOverworldPalette_Bidoof
         )
+        OVERWORLD_FEMALE(
+            sPicTable_BidoofF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT
+        )
         .levelUpLearnset = sBidoofLevelUpLearnset,
         .teachableLearnset = sBidoofTeachableLearnset,
         .eggMoveLearnset = sBidoofEggMoveLearnset,
@@ -927,6 +951,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             TRACKS_FOOT,
             gOverworldPalette_Bibarel,
             gShinyOverworldPalette_Bibarel
+        )
+        OVERWORLD_FEMALE(
+            sPicTable_BibarelF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT
         )
         .levelUpLearnset = sBibarelLevelUpLearnset,
         .teachableLearnset = sBibarelTeachableLearnset,
@@ -995,6 +1025,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             gOverworldPalette_Kricketot,
             gShinyOverworldPalette_Kricketot
         )
+        OVERWORLD_FEMALE(
+            sPicTable_KricketotF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT
+        )
         .tmIlliterate = TRUE,
         .levelUpLearnset = sKricketotLevelUpLearnset,
         .teachableLearnset = sKricketotTeachableLearnset,
@@ -1062,6 +1098,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             gOverworldPalette_Kricketune,
             gShinyOverworldPalette_Kricketune
         )
+        OVERWORLD_FEMALE(
+            sPicTable_KricketuneF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT
+        )
         .levelUpLearnset = sKricketuneLevelUpLearnset,
         .teachableLearnset = sKricketuneTeachableLearnset,
     },
@@ -1128,6 +1170,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             gOverworldPalette_Shinx,
             gShinyOverworldPalette_Shinx
         )
+        OVERWORLD_FEMALE(
+            sPicTable_ShinxF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT
+        )
         .levelUpLearnset = sShinxLevelUpLearnset,
         .teachableLearnset = sShinxTeachableLearnset,
         .eggMoveLearnset = sShinxEggMoveLearnset,
@@ -1193,6 +1241,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             TRACKS_FOOT,
             gOverworldPalette_Luxio,
             gShinyOverworldPalette_Luxio
+        )
+        OVERWORLD_FEMALE(
+            sPicTable_LuxioF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT
         )
         .levelUpLearnset = sLuxioLevelUpLearnset,
         .teachableLearnset = sLuxioTeachableLearnset,
@@ -1264,6 +1318,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             TRACKS_FOOT,
             gOverworldPalette_Luxray,
             gShinyOverworldPalette_Luxray
+        )
+        OVERWORLD_FEMALE(
+            sPicTable_LuxrayF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT
         )
         .levelUpLearnset = sLuxrayLevelUpLearnset,
         .teachableLearnset = sLuxrayTeachableLearnset,
@@ -2033,6 +2093,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             gOverworldPalette_Combee,
             gShinyOverworldPalette_Combee
         )
+        OVERWORLD_FEMALE(
+            sPicTable_CombeeF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT
+        )
         .tmIlliterate = TRUE,
         .levelUpLearnset = sCombeeLevelUpLearnset,
         .teachableLearnset = sCombeeTeachableLearnset,
@@ -2163,6 +2229,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             gOverworldPalette_Pachirisu,
             gShinyOverworldPalette_Pachirisu
         )
+        OVERWORLD_FEMALE(
+            sPicTable_PachirisuF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT
+        )
         .levelUpLearnset = sPachirisuLevelUpLearnset,
         .teachableLearnset = sPachirisuTeachableLearnset,
         .eggMoveLearnset = sPachirisuEggMoveLearnset,
@@ -2290,6 +2362,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             gOverworldPalette_Buizel,
             gShinyOverworldPalette_Buizel
         )
+        OVERWORLD_FEMALE(
+            sPicTable_BuizelF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT
+        )
         .levelUpLearnset = sBuizelLevelUpLearnset,
         .teachableLearnset = sBuizelTeachableLearnset,
         .eggMoveLearnset = sBuizelEggMoveLearnset,
@@ -2353,6 +2431,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             TRACKS_FOOT,
             gOverworldPalette_Floatzel,
             gShinyOverworldPalette_Floatzel
+        )
+        OVERWORLD_FEMALE(
+            sPicTable_FloatzelF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT
         )
         .levelUpLearnset = sFloatzelLevelUpLearnset,
         .teachableLearnset = sFloatzelTeachableLearnset,
@@ -3666,6 +3750,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             gOverworldPalette_Gible,
             gShinyOverworldPalette_Gible
         )
+        OVERWORLD_FEMALE(
+            sPicTable_GibleF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT
+        )
         .levelUpLearnset = sGibleLevelUpLearnset,
         .teachableLearnset = sGibleTeachableLearnset,
         .eggMoveLearnset = sGibleEggMoveLearnset,
@@ -3731,6 +3821,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             TRACKS_FOOT,
             gOverworldPalette_Gabite,
             gShinyOverworldPalette_Gabite
+        )
+        OVERWORLD_FEMALE(
+            sPicTable_GabiteF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT
         )
         .levelUpLearnset = sGabiteLevelUpLearnset,
         .teachableLearnset = sGabiteTeachableLearnset,
@@ -3800,6 +3896,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             TRACKS_FOOT,
             gOverworldPalette_Garchomp,
             gShinyOverworldPalette_Garchomp
+        )
+        OVERWORLD_FEMALE(
+            sPicTable_GarchompF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT
         )
         .levelUpLearnset = sGarchompLevelUpLearnset,
         .teachableLearnset = sGarchompTeachableLearnset,
@@ -4113,6 +4215,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             gOverworldPalette_Hippopotas,
             gShinyOverworldPalette_Hippopotas
         )
+        OVERWORLD_FEMALE(
+            sPicTable_HippopotasF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT
+        )
         .levelUpLearnset = sHippopotasLevelUpLearnset,
         .teachableLearnset = sHippopotasTeachableLearnset,
         .eggMoveLearnset = sHippopotasEggMoveLearnset,
@@ -4180,6 +4288,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             TRACKS_FOOT,
             gOverworldPalette_Hippowdon,
             gShinyOverworldPalette_Hippowdon
+        )
+        OVERWORLD_PAL_FEMALE(
+            gOverworldPalette_HippowdonF,
+            gShinyOverworldPalette_HippowdonF
         )
         .levelUpLearnset = sHippowdonLevelUpLearnset,
         .teachableLearnset = sHippowdonTeachableLearnset,
@@ -4374,6 +4486,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             gOverworldPalette_Croagunk,
             gShinyOverworldPalette_Croagunk
         )
+        OVERWORLD_FEMALE(
+            sPicTable_CroagunkF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT
+        )
         .levelUpLearnset = sCroagunkLevelUpLearnset,
         .teachableLearnset = sCroagunkTeachableLearnset,
         .eggMoveLearnset = sCroagunkEggMoveLearnset,
@@ -4440,6 +4558,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             TRACKS_FOOT,
             gOverworldPalette_Toxicroak,
             gShinyOverworldPalette_Toxicroak
+        )
+        OVERWORLD_FEMALE(
+            sPicTable_ToxicroakF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT
         )
         .levelUpLearnset = sToxicroakLevelUpLearnset,
         .teachableLearnset = sToxicroakTeachableLearnset,
@@ -4571,6 +4695,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             gOverworldPalette_Finneon,
             gShinyOverworldPalette_Finneon
         )
+        OVERWORLD_FEMALE(
+            sPicTable_FinneonF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT
+        )
         .levelUpLearnset = sFinneonLevelUpLearnset,
         .teachableLearnset = sFinneonTeachableLearnset,
         .eggMoveLearnset = sFinneonEggMoveLearnset,
@@ -4636,6 +4766,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             TRACKS_FOOT,
             gOverworldPalette_Lumineon,
             gShinyOverworldPalette_Lumineon
+        )
+        OVERWORLD_FEMALE(
+            sPicTable_LumineonF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT
         )
         .levelUpLearnset = sLumineonLevelUpLearnset,
         .teachableLearnset = sLumineonTeachableLearnset,
@@ -4704,6 +4840,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             gOverworldPalette_Snover,
             gShinyOverworldPalette_Snover
         )
+        OVERWORLD_FEMALE(
+            sPicTable_SnoverF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT
+        )
         .levelUpLearnset = sSnoverLevelUpLearnset,
         .teachableLearnset = sSnoverTeachableLearnset,
         .eggMoveLearnset = sSnoverEggMoveLearnset,
@@ -4769,6 +4911,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             TRACKS_FOOT,
             gOverworldPalette_Abomasnow,
             gShinyOverworldPalette_Abomasnow
+        )
+        OVERWORLD_FEMALE(
+            sPicTable_AbomasnowF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT
         )
         .levelUpLearnset = sAbomasnowLevelUpLearnset,
         .teachableLearnset = sAbomasnowTeachableLearnset,

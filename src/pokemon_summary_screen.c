@@ -1680,6 +1680,11 @@ static void Task_HandleInput(u8 taskId)
             }
             else if (sMonSummaryScreen->currPageIndex == PSS_PAGE_INFO)
             {
+                if (ShouldShowRename())
+                {
+                    sMonSummaryScreen->callback = CB2_PssChangePokemonNickname;
+                    gSpecialVar_0x8004 = sMonSummaryScreen->curMonIndex;
+                }
                 StopPokemonAnimations();
                 PlaySE(SE_SELECT);
                 BeginCloseSummaryScreen(taskId);
@@ -4156,7 +4161,6 @@ static void SetMoveTypeIcons(void)
         }
         else
             SetSpriteInvisibility(i + SPRITE_ARR_ID_TYPE, TRUE);
-        }
     }
 }
 

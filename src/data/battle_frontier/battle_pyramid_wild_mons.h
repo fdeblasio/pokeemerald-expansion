@@ -83,7 +83,7 @@ static const struct PyramidWildMon sBattlePyramidWildMons_Round2[] =
         .moves = {MOVE_TOXIC, MOVE_SLUDGE_BOMB, MOVE_MAGICAL_LEAF, MOVE_WORRY_SEED}
     },
     {
-        .species = SPECIES_MUK_ALOLAN,
+        .species = SPECIES_MUK_ALOLA,
         .lvl = 7,
         .abilityNum = 1,
         .moves = {MOVE_TOXIC, MOVE_POISON_JAB, MOVE_CRUNCH, MOVE_POISON_FANG}
@@ -199,7 +199,7 @@ static const struct PyramidWildMon sBattlePyramidWildMons_Round4[] =
         .moves = {MOVE_SPITE, MOVE_GRUDGE, MOVE_PROTECT, MOVE_SHADOW_PUNCH}
     },
     {
-        .species = SPECIES_SLOWKING_GALARIAN,
+        .species = SPECIES_SLOWKING_GALAR,
         .lvl = 5,
         .abilityNum = 1,
         .moves = {MOVE_EERIE_SPELL, MOVE_VENOSHOCK, MOVE_POWER_GEM, MOVE_DISABLE}
@@ -273,7 +273,7 @@ static const struct PyramidWildMon sBattlePyramidWildMons_Round6[] =
         .moves = {MOVE_BULLDOZE, MOVE_SAND_TOMB, MOVE_BITE, MOVE_NONE}
     },
     {
-        .species = SPECIES_GRAVELER_ALOLAN,
+        .species = SPECIES_GRAVELER_ALOLA,
         .lvl = 8,
         .abilityNum = 0,
         .moves = {MOVE_ROCK_TOMB, MOVE_SPARK, MOVE_BULLDOZE, MOVE_NONE}
@@ -313,7 +313,7 @@ static const struct PyramidWildMon sBattlePyramidWildMons_Round6[] =
 static const struct PyramidWildMon sBattlePyramidWildMons_Round7[] =
 {
     {
-        .species = SPECIES_DARUMAKA_GALARIAN,
+        .species = SPECIES_DARUMAKA_GALAR,
         .lvl = 10,
         .abilityNum = ABILITY_RANDOM,
         .moves = {MOVE_ICE_FANG, MOVE_HEADBUTT, MOVE_UPROAR, MOVE_NONE}
@@ -365,13 +365,13 @@ static const struct PyramidWildMon sBattlePyramidWildMons_Round7[] =
 static const struct PyramidWildMon sBattlePyramidWildMons_Round8[] =
 {
     {
-        .species = SPECIES_WEEZING_GALARIAN,
+        .species = SPECIES_WEEZING_GALAR,
         .lvl = 10,
         .abilityNum = ABILITY_RANDOM,
         .moves = {MOVE_MISTY_EXPLOSION, MOVE_SLUDGE, MOVE_FAIRY_WIND, MOVE_NONE}
     },
     {
-        .species = SPECIES_ELECTRODE_HISUIAN,
+        .species = SPECIES_ELECTRODE_HISUI,
         .lvl = 10,
         .abilityNum = ABILITY_RANDOM,
         .moves = {MOVE_SELF_DESTRUCT, MOVE_CHARGE_BEAM, MOVE_BULLET_SEED, MOVE_NONE}
@@ -453,7 +453,7 @@ static const struct PyramidWildMon sBattlePyramidWildMons_Round9[] =
         .moves = {MOVE_PSYCHIC, MOVE_AIR_SLASH, MOVE_COSMIC_POWER, MOVE_HYPNOSIS}
     },
     {
-        .species = SPECIES_BRAVIARY_HISUIAN,
+        .species = SPECIES_BRAVIARY_HISUI,
         .lvl = 5,
         .abilityNum = ABILITY_RANDOM,
         .moves = {MOVE_ESPER_WING, MOVE_AIR_SLASH, MOVE_SCARY_FACE, MOVE_TAILWIND}
@@ -689,7 +689,7 @@ static const struct PyramidWildMon sBattlePyramidWildMons_Round14[] =
         .moves = {MOVE_FALSE_SURRENDER, MOVE_PLAY_ROUGH, MOVE_FAKE_TEARS, MOVE_NONE}
     },
     {
-        .species = SPECIES_LINOONE_GALARIAN,
+        .species = SPECIES_LINOONE_GALAR,
         .lvl = 8,
         .abilityNum = ABILITY_RANDOM,
         .moves = {MOVE_NIGHT_SLASH, MOVE_HEADBUTT, MOVE_HONE_CLAWS, MOVE_NONE}
@@ -955,7 +955,7 @@ static const struct PyramidWildMon sBattlePyramidWildMons_Round19[] =
         .moves = {MOVE_VOLT_SWITCH, MOVE_PIN_MISSILE, MOVE_AGILITY, MOVE_NONE}
     },
     {
-        .species = SPECIES_MAROWAK_ALOLAN,
+        .species = SPECIES_MAROWAK_ALOLA,
         .lvl = 8,
         .abilityNum = ABILITY_RANDOM,
         .moves = {MOVE_FIRE_PUNCH, MOVE_SHADOW_BONE, MOVE_FOCUS_ENERGY, MOVE_NONE}

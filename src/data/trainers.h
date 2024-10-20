@@ -1990,7 +1990,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 #define GLACIA_NINETALES(Level)                                                  \
     {                                                                            \
     GLACIA_SUPPORTING_MON(Level),                                                \
-    .species = SPECIES_NINETALES_ALOLAN,                                         \
+    .species = SPECIES_NINETALES_ALOLA,                                          \
     .ability = ABILITY_SNOW_WARNING,                                             \
     .nature = NATURE_TIMID,                                                      \
     EV_SPREAD_SPE_SPD_HP,                                                        \
@@ -9412,13 +9412,13 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
 },
 
 //Petalburg Gym
-#define PETALBURG_GYM_TRAINER(Variable, Name, Gender, Item, Species, HeldItem, Move1, Move2, Move3, Move4)                         \
+#define PETALBURG_GYM_TRAINER(Variable, Name, Gender, Item, Species, HeldItem, Move1, Move2, Move3, Move4)         \
 [TRAINER_##Variable] =                                                                                             \
 {                                                                                                                  \
     .trainerName = _(Name),                                                                                        \
     ACE_TRAINER_##Gender##_INFO,                                                                                   \
     .items = {ITEM_##Item, ITEM_NONE, ITEM_NONE, ITEM_NONE},                                                       \
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SETUP_FIRST_TURN, \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_FORCE_SETUP_FIRST_TURN, \
     .partySize = 1,                                                                                                \
     .party = (const struct TrainerMon[]) {                                                                         \
         {                                                                                                          \
@@ -11685,7 +11685,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
 {
     .trainerName = _("Jenna"),
     POKEMON_RANGER_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -12900,7 +12900,7 @@ MARINA_BATTLE(MT_PYRE, 42),
     .trainerName = _("Wendy"),
     ACE_TRAINER_F_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -15105,7 +15105,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .trainerName = _("Jonathan"),
     ACE_TRAINER_M_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
@@ -16257,7 +16257,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .trainerName = _("Keira"),
     ACE_TRAINER_F_INFO,
     .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_FORCE_SETUP_FIRST_TURN,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {

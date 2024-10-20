@@ -6540,19 +6540,19 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "RAICHU_ALOLAN"
+                "species": "RAICHU_ALOLA"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "RAICHU_ALOLAN"
+                "species": "RAICHU_ALOLA"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "RAICHU_ALOLAN"
+                "species": "RAICHU_ALOLA"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "RAICHU_ALOLAN"
+                "species": "RAICHU_ALOLA"
               }
             ]
           }
@@ -6614,11 +6614,11 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "CORSOLA_GALARIAN"
+                "species": "CORSOLA_GALAR"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "CORSOLA_GALARIAN"
+                "species": "CORSOLA_GALAR"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6724,7 +6724,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "VOLTORB_HISUIAN"
+                "species": "VOLTORB_HISUI"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6732,7 +6732,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "VOLTORB_HISUIAN"
+                "species": "VOLTORB_HISUI"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6765,11 +6765,11 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "CORSOLA_GALARIAN"
+                "species": "CORSOLA_GALAR"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "CORSOLA_GALARIAN"
+                "species": "CORSOLA_GALAR"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6822,39 +6822,39 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "WOOPER_PALDEAN"
+                "species": "WOOPER_PALDEA"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "MEOWTH_ALOLAN"
+                "species": "MEOWTH_ALOLA"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "MEOWTH_GALARIAN"
+                "species": "MEOWTH_GALAR"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "MEOWTH_ALOLAN"
+                "species": "MEOWTH_ALOLA"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "MEOWTH_GALARIAN"
+                "species": "MEOWTH_GALAR"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "GRIMER_ALOLAN"
+                "species": "GRIMER_ALOLA"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "GRIMER_ALOLAN"
+                "species": "GRIMER_ALOLA"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "GRIMER_ALOLAN"
+                "species": "GRIMER_ALOLA"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "GRIMER_ALOLAN"
+                "species": "GRIMER_ALOLA"
               }
             ]
           },
@@ -6867,11 +6867,11 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "CORSOLA_GALARIAN"
+                "species": "CORSOLA_GALAR"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "CORSOLA_GALARIAN"
+                "species": "CORSOLA_GALAR"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6920,23 +6920,15 @@
             "mons": [
               {
                 "range": "RANGE_POSTGAME",
-                "species": "VULPIX_ALOLAN"
+                "species": "VULPIX_ALOLA"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SANDSHREW_ALOLAN"
+                "species": "SANDSHREW_ALOLA"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "ZIGZAGOON_GALARIAN"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "STANTLER"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "ZIGZAGOON_GALARIAN"
+                "species": "ZIGZAGOON_GALAR"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6944,19 +6936,27 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "WEEZING_GALARIAN"
+                "species": "ZIGZAGOON_GALAR"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "WEEZING_GALARIAN"
+                "species": "STANTLER"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "WEEZING_GALARIAN"
+                "species": "WEEZING_GALAR"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "WEEZING_GALARIAN"
+                "species": "WEEZING_GALAR"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "WEEZING_GALAR"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "WEEZING_GALAR"
               }
             ]
           }

@@ -1748,7 +1748,6 @@ static u8 GetMoveSelectionMoveType(u32 battler, u16 move)
         struct Pokemon *mon = &gPlayerParty[gBattlerPartyIndexes[battler]];
         type = CheckDynamicMoveType(mon, move, battler);
     }
-    end = StringCopy(txtPtr, gTypesInfo[type].name);
     return type;
 }
 

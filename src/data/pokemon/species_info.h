@@ -50,10 +50,6 @@
     .affineAnims = gDummySpriteAffineAnimTable,                                             \
 },                                                                                          \
     OVERWORLD_PAL(__VA_ARGS__)
-<<<<<<< HEAD
-#else
-#define OVERWORLD(picTable, _size, shadow, _tracks, ...)
-=======
 
 #define OVERWORLD_SET_ANIM(picTable, _size, shadow, _tracks, _anims, ...)                   \
 .overworldData = {                                                                          \
@@ -103,7 +99,6 @@
 #define OVERWORLD_FEMALE(picTable, _size, shadow, _tracks, ...)
 #define OVERWORLD_PAL(...)
 #define OVERWORLD_PAL_FEMALE(...)
->>>>>>> 19009c6d21 (Add support for overworld sprite gender differences + add all the sprites (#5394))
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 // Maximum value for a female Pokémon is 254 (MON_FEMALE) which is 100% female.

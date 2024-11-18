@@ -1372,9 +1372,9 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     },
 },
 
-#define TATE_AND_LIZA_INFO         \
-    LEADER_INFO(TATE_AND_LIZA),    \
-    .trainerName = _("Tate&Liza"), \
+#define TATE_AND_LIZA_INFO                                   \
+    LEADER_INFO(TATE_AND_LIZA) | AI_FLAG_DOUBLE_ACE_POKEMON, \
+    .trainerName = _("Tate&Liza"),                           \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE
 
 [DIFFICULTY_NORMAL][TRAINER_TATE_AND_LIZA_1] =

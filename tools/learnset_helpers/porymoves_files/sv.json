@@ -1548,7 +1548,7 @@
     ],
     "EggMoves": []
   },
-  "RAICHU_ALOLAN": {
+  "RAICHU_ALOLA": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -1830,7 +1830,7 @@
       "MOVE_HONE_CLAWS"
     ]
   },
-  "SANDSHREW_ALOLAN": {
+  "SANDSHREW_ALOLA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -2099,7 +2099,7 @@
     ],
     "EggMoves": []
   },
-  "SANDSLASH_ALOLAN": {
+  "SANDSLASH_ALOLA": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -2599,7 +2599,7 @@
       "MOVE_BABY_DOLL_EYES"
     ]
   },
-  "VULPIX_ALOLAN": {
+  "VULPIX_ALOLA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -2802,7 +2802,7 @@
     ],
     "EggMoves": []
   },
-  "NINETALES_ALOLAN": {
+  "NINETALES_ALOLA": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -3849,7 +3849,7 @@
       "MOVE_FINAL_GAMBIT"
     ]
   },
-  "DIGLETT_ALOLAN": {
+  "DIGLETT_ALOLA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -4074,7 +4074,7 @@
     ],
     "EggMoves": []
   },
-  "DUGTRIO_ALOLAN": {
+  "DUGTRIO_ALOLA": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -4312,7 +4312,7 @@
       "MOVE_LAST_RESORT"
     ]
   },
-  "MEOWTH_ALOLAN": {
+  "MEOWTH_ALOLA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -4428,7 +4428,7 @@
       "MOVE_PARTING_SHOT"
     ]
   },
-  "MEOWTH_GALARIAN": {
+  "MEOWTH_GALAR": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -4670,7 +4670,7 @@
     ],
     "EggMoves": []
   },
-  "PERSIAN_ALOLAN": {
+  "PERSIAN_ALOLA": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -5444,7 +5444,7 @@
       "MOVE_RAGING_FURY"
     ]
   },
-  "GROWLITHE_HISUIAN": {
+  "GROWLITHE_HISUI": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -5687,7 +5687,7 @@
     ],
     "EggMoves": []
   },
-  "ARCANINE_HISUIAN": {
+  "ARCANINE_HISUI": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -6737,7 +6737,7 @@
       "MOVE_WIDE_GUARD"
     ]
   },
-  "GEODUDE_ALOLAN": {
+  "GEODUDE_ALOLA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -6969,7 +6969,7 @@
     ],
     "EggMoves": []
   },
-  "GRAVELER_ALOLAN": {
+  "GRAVELER_ALOLA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -7201,7 +7201,7 @@
     ],
     "EggMoves": []
   },
-  "GOLEM_ALOLAN": {
+  "GOLEM_ALOLA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -7462,7 +7462,7 @@
       "MOVE_BELCH"
     ]
   },
-  "SLOWPOKE_GALARIAN": {
+  "SLOWPOKE_GALAR": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -7745,7 +7745,7 @@
     ],
     "EggMoves": []
   },
-  "SLOWBRO_GALARIAN": {
+  "SLOWBRO_GALAR": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -8699,7 +8699,7 @@
       "MOVE_ACID_SPRAY"
     ]
   },
-  "GRIMER_ALOLAN": {
+  "GRIMER_ALOLA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -8968,7 +8968,7 @@
     ],
     "EggMoves": []
   },
-  "MUK_ALOLAN": {
+  "MUK_ALOLA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -10076,7 +10076,7 @@
       "MOVE_METAL_SOUND"
     ]
   },
-  "VOLTORB_HISUIAN": {
+  "VOLTORB_HISUI": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -10307,7 +10307,7 @@
     ],
     "EggMoves": []
   },
-  "ELECTRODE_HISUIAN": {
+  "ELECTRODE_HISUI": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -10665,7 +10665,7 @@
     ],
     "EggMoves": []
   },
-  "EXEGGUTOR_ALOLAN": {
+  "EXEGGUTOR_ALOLA": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -11292,7 +11292,7 @@
     ],
     "EggMoves": []
   },
-  "WEEZING_GALARIAN": {
+  "WEEZING_GALAR": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -12481,7 +12481,7 @@
       "MOVE_ENDEAVOR"
     ]
   },
-  "TAUROS_PALDEAN_COMBAT_BREED": {
+  "TAUROS_PALDEA_COMBAT": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -12589,7 +12589,7 @@
       "MOVE_ENDEAVOR"
     ]
   },
-  "TAUROS_PALDEAN_BLAZE_BREED": {
+  "TAUROS_PALDEA_BLAZE": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -12703,7 +12703,7 @@
       "MOVE_ENDEAVOR"
     ]
   },
-  "TAUROS_PALDEAN_AQUA_BREED": {
+  "TAUROS_PALDEA_AQUA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -14052,7 +14052,7 @@
     ],
     "EggMoves": []
   },
-  "ARTICUNO_GALARIAN": {
+  "ARTICUNO_GALAR": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -14273,7 +14273,7 @@
     ],
     "EggMoves": []
   },
-  "ZAPDOS_GALARIAN": {
+  "ZAPDOS_GALAR": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -14498,7 +14498,7 @@
     ],
     "EggMoves": []
   },
-  "MOLTRES_GALARIAN": {
+  "MOLTRES_GALAR": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -16104,7 +16104,7 @@
     ],
     "EggMoves": []
   },
-  "TYPHLOSION_HISUIAN": {
+  "TYPHLOSION_HISUI": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -19688,7 +19688,7 @@
       "MOVE_AFTER_YOU"
     ]
   },
-  "WOOPER_PALDEAN": {
+  "WOOPER_PALDEA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -20505,7 +20505,7 @@
     ],
     "EggMoves": []
   },
-  "SLOWKING_GALARIAN": {
+  "SLOWKING_GALAR": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -21902,7 +21902,7 @@
       "MOVE_BARB_BARRAGE"
     ]
   },
-  "QWILFISH_HISUIAN": {
+  "QWILFISH_HISUI": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -22413,7 +22413,7 @@
       "MOVE_ICICLE_CRASH"
     ]
   },
-  "SNEASEL_HISUIAN": {
+  "SNEASEL_HISUI": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -48436,7 +48436,7 @@
     ],
     "EggMoves": []
   },
-  "SAMUROTT_HISUIAN": {
+  "SAMUROTT_HISUI": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -50029,7 +50029,7 @@
     ],
     "EggMoves": []
   },
-  "LILLIGANT_HISUIAN": {
+  "LILLIGANT_HISUI": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -51272,7 +51272,7 @@
       "MOVE_SUCKER_PUNCH"
     ]
   },
-  "ZORUA_HISUIAN": {
+  "ZORUA_HISUI": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -51509,7 +51509,7 @@
     ],
     "EggMoves": []
   },
-  "ZOROARK_HISUIAN": {
+  "ZOROARK_HISUI": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -55747,7 +55747,7 @@
     ],
     "EggMoves": []
   },
-  "BRAVIARY_HISUIAN": {
+  "BRAVIARY_HISUI": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -60862,7 +60862,7 @@
     ],
     "EggMoves": []
   },
-  "MEOWSTIC_FEMALE": {
+  "MEOWSTIC_F": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -62340,7 +62340,7 @@
     ],
     "EggMoves": []
   },
-  "SLIGGOO_HISUIAN": {
+  "SLIGGOO_HISUI": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -62569,7 +62569,7 @@
     ],
     "EggMoves": []
   },
-  "GOODRA_HISUIAN": {
+  "GOODRA_HISUI": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -63289,7 +63289,7 @@
     ],
     "EggMoves": []
   },
-  "AVALUGG_HISUIAN": {
+  "AVALUGG_HISUI": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -64544,7 +64544,7 @@
     ],
     "EggMoves": []
   },
-  "DECIDUEYE_HISUIAN": {
+  "DECIDUEYE_HISUI": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -75074,7 +75074,7 @@
       "MOVE_ICICLE_CRASH"
     ]
   },
-  "INDEEDEE": {
+  "INDEEDEE_M": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -76432,7 +76432,7 @@
     ],
     "EggMoves": []
   },
-  "URSHIFU": {
+  "URSHIFU_SINGLE_STRIKE": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -79850,6 +79850,52 @@
       "MOVE_STUFF_CHEEKS"
     ]
   },
+  "OINKOLOGNE": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [
+      "MOVE_TAKE_DOWN",
+      "MOVE_MUD_SLAP",
+      "MOVE_PROTECT",
+      "MOVE_THIEF",
+      "MOVE_DISARMING_VOICE",
+      "MOVE_TRAILBLAZE",
+      "MOVE_CHILLING_WATER",
+      "MOVE_FACADE",
+      "MOVE_BULLDOZE",
+      "MOVE_MUD_SHOT",
+      "MOVE_ENDURE",
+      "MOVE_SUNNY_DAY",
+      "MOVE_RAIN_DANCE",
+      "MOVE_DIG",
+      "MOVE_BULLET_SEED",
+      "MOVE_ZEN_HEADBUTT",
+      "MOVE_BODY_SLAM",
+      "MOVE_SLEEP_TALK",
+      "MOVE_SEED_BOMB",
+      "MOVE_STOMPING_TANTRUM",
+      "MOVE_REST",
+      "MOVE_BODY_PRESS",
+      "MOVE_IRON_HEAD",
+      "MOVE_SUBSTITUTE",
+      "MOVE_HYPER_VOICE",
+      "MOVE_ENERGY_BALL",
+      "MOVE_PLAY_ROUGH",
+      "MOVE_HELPING_HAND",
+      "MOVE_EARTH_POWER",
+      "MOVE_GIGA_IMPACT",
+      "MOVE_HYPER_BEAM",
+      "MOVE_TERA_BLAST",
+      "MOVE_SUPER_FANG",
+      "MOVE_HIGH_HORSEPOWER",
+      "MOVE_UPROAR",
+      "MOVE_LASH_OUT",
+      "MOVE_DOUBLE_EDGE",
+      "MOVE_ENDEAVOR",
+      "MOVE_CURSE"
+    ],
+    "EggMoves": []
+  },
   "OINKOLOGNE_M": {
     "LevelMoves": [
       {
@@ -79914,47 +79960,7 @@
       }
     ],
     "PreEvoMoves": [],
-    "TMMoves": [
-      "MOVE_TAKE_DOWN",
-      "MOVE_MUD_SLAP",
-      "MOVE_PROTECT",
-      "MOVE_THIEF",
-      "MOVE_DISARMING_VOICE",
-      "MOVE_TRAILBLAZE",
-      "MOVE_CHILLING_WATER",
-      "MOVE_FACADE",
-      "MOVE_BULLDOZE",
-      "MOVE_MUD_SHOT",
-      "MOVE_ENDURE",
-      "MOVE_SUNNY_DAY",
-      "MOVE_RAIN_DANCE",
-      "MOVE_DIG",
-      "MOVE_BULLET_SEED",
-      "MOVE_ZEN_HEADBUTT",
-      "MOVE_BODY_SLAM",
-      "MOVE_SLEEP_TALK",
-      "MOVE_SEED_BOMB",
-      "MOVE_STOMPING_TANTRUM",
-      "MOVE_REST",
-      "MOVE_BODY_PRESS",
-      "MOVE_IRON_HEAD",
-      "MOVE_SUBSTITUTE",
-      "MOVE_HYPER_VOICE",
-      "MOVE_ENERGY_BALL",
-      "MOVE_PLAY_ROUGH",
-      "MOVE_HELPING_HAND",
-      "MOVE_EARTH_POWER",
-      "MOVE_GIGA_IMPACT",
-      "MOVE_HYPER_BEAM",
-      "MOVE_TERA_BLAST",
-      "MOVE_SUPER_FANG",
-      "MOVE_HIGH_HORSEPOWER",
-      "MOVE_UPROAR",
-      "MOVE_LASH_OUT",
-      "MOVE_DOUBLE_EDGE",
-      "MOVE_ENDEAVOR",
-      "MOVE_CURSE"
-    ],
+    "TMMoves": [],
     "EggMoves": []
   },
   "OINKOLOGNE_F": {
@@ -80021,47 +80027,7 @@
       }
     ],
     "PreEvoMoves": [],
-    "TMMoves": [
-      "MOVE_TAKE_DOWN",
-      "MOVE_MUD_SLAP",
-      "MOVE_PROTECT",
-      "MOVE_THIEF",
-      "MOVE_DISARMING_VOICE",
-      "MOVE_TRAILBLAZE",
-      "MOVE_CHILLING_WATER",
-      "MOVE_FACADE",
-      "MOVE_BULLDOZE",
-      "MOVE_MUD_SHOT",
-      "MOVE_ENDURE",
-      "MOVE_SUNNY_DAY",
-      "MOVE_RAIN_DANCE",
-      "MOVE_DIG",
-      "MOVE_BULLET_SEED",
-      "MOVE_ZEN_HEADBUTT",
-      "MOVE_BODY_SLAM",
-      "MOVE_SLEEP_TALK",
-      "MOVE_SEED_BOMB",
-      "MOVE_STOMPING_TANTRUM",
-      "MOVE_REST",
-      "MOVE_BODY_PRESS",
-      "MOVE_IRON_HEAD",
-      "MOVE_SUBSTITUTE",
-      "MOVE_HYPER_VOICE",
-      "MOVE_ENERGY_BALL",
-      "MOVE_PLAY_ROUGH",
-      "MOVE_HELPING_HAND",
-      "MOVE_EARTH_POWER",
-      "MOVE_GIGA_IMPACT",
-      "MOVE_HYPER_BEAM",
-      "MOVE_TERA_BLAST",
-      "MOVE_SUPER_FANG",
-      "MOVE_HIGH_HORSEPOWER",
-      "MOVE_UPROAR",
-      "MOVE_LASH_OUT",
-      "MOVE_DOUBLE_EDGE",
-      "MOVE_ENDEAVOR",
-      "MOVE_CURSE"
-    ],
+    "TMMoves": [],
     "EggMoves": []
   },
   "TAROUNTULA": {

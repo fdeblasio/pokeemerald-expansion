@@ -1788,7 +1788,7 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     DrawStdWindowFrame(B_WIN_MOVE_DESCRIPTION, FALSE);
 
     //Power
-    if (effect == EFFECT_ERUPTION)
+    if (effect == EFFECT_POWER_BASED_ON_USER_HP)
         power = GetMonData(mon, MON_DATA_HP) * power / GetMonData(mon, MON_DATA_MAX_HP);
     else if (effect == EFFECT_RETURN)
         power = 10 * GetMonData(mon, MON_DATA_FRIENDSHIP) / 25;
@@ -1928,7 +1928,7 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     if (gMovesInfo[move].strikeCount > 1 && effect == EFFECT_HIT)
         power *= gMovesInfo[move].strikeCount;
 
-    if (power <= 2 && effect != EFFECT_ERUPTION && effect != EFFECT_RETURN && effect != EFFECT_FRUSTRATION)
+    if (power <= 2 && effect != EFFECT_POWER_BASED_ON_USER_HP && effect != EFFECT_RETURN && effect != EFFECT_FRUSTRATION)
         StringCopy(power_num, gText_BattleSwitchWhich5);
     else
         ConvertIntToDecimalStringN(power_num, power, STR_CONV_MODE_LEFT_ALIGN, 3);

@@ -3995,7 +3995,7 @@ static void PrintMovePowerAndAccuracy(u16 moveIndex)
         u16 power = GetMovePower(moveIndex);
         u8 type = CheckDynamicMoveType(mon, moveIndex, 0);
 
-        if (effect == EFFECT_ERUPTION)
+        if (effect == EFFECT_POWER_BASED_ON_USER_HP)
             power = GetMonData(mon, MON_DATA_HP) * power / GetMonData(mon, MON_DATA_MAX_HP);
         else if (effect == EFFECT_RETURN)
             power = 10 * GetMonData(mon, MON_DATA_FRIENDSHIP) / 20;
@@ -4070,7 +4070,7 @@ static void PrintMovePowerAndAccuracy(u16 moveIndex)
         if (gMovesInfo[moveIndex].strikeCount > 1 && effect == EFFECT_HIT)
             power *= gMovesInfo[moveIndex].strikeCount;
 
-        if (power <= 2 && effect != EFFECT_ERUPTION && effect != EFFECT_RETURN && effect != EFFECT_FRUSTRATION)
+        if (power <= 2 && effect != EFFECT_POWER_BASED_ON_USER_HP && effect != EFFECT_RETURN && effect != EFFECT_FRUSTRATION)
             text = gText_ThreeDashes;
         else {
             ConvertIntToDecimalStringN(gStringVar1, power, STR_CONV_MODE_RIGHT_ALIGN, 3);

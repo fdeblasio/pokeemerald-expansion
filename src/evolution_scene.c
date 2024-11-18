@@ -630,6 +630,7 @@ enum {
     MVSTATE_LEARNED_MOVE,
     MVSTATE_ASK_CANCEL,
     MVSTATE_CANCEL,
+    MVSTATE_RETRY_AFTER_HM,
 };
 
 // Task data from CycleEvolutionMonSprite
@@ -993,6 +994,7 @@ static void Task_EvolutionScene(u8 taskId)
                     {
                         // Forget move
                         PREPARE_MOVE_BUFFER(gBattleTextBuff2, move)
+                    }
 
                     // Forget move
                     PREPARE_MOVE_BUFFER(gBattleTextBuff2, move)
@@ -1034,6 +1036,10 @@ static void Task_EvolutionScene(u8 taskId)
             BattleStringExpandPlaceholdersToDisplayedString(gBattleStringsTable[STRINGID_DIDNOTLEARNMOVE]);
             BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_MSG);
             gTasks[taskId].tState = EVOSTATE_TRY_LEARN_MOVE;
+            break;
+        case MVSTATE_RETRY_AFTER_HM:
+            if (!IsTextPrinterActive(0) && !IsSEPlaying())
+                gTasks[taskId].tLearnMoveState = MVSTATE_SHOW_MOVE_SELECT;
             break;
         }
         break;
@@ -1078,6 +1084,7 @@ enum {
     T_MVSTATE_LEARNED_MOVE,
     T_MVSTATE_ASK_CANCEL,
     T_MVSTATE_CANCEL,
+    T_MVSTATE_RETRY_AFTER_HM,
 };
 
 // Compare to Task_EvolutionScene, very similar
@@ -1409,6 +1416,10 @@ static void Task_TradeEvolutionScene(u8 taskId)
             BattleStringExpandPlaceholdersToDisplayedString(gBattleStringsTable[STRINGID_DIDNOTLEARNMOVE]);
             DrawTextOnTradeWindow(0, gDisplayedStringBattle, 1);
             gTasks[taskId].tState = T_EVOSTATE_TRY_LEARN_MOVE;
+            break;
+        case T_MVSTATE_RETRY_AFTER_HM:
+            if (!IsTextPrinterActive(0) && !IsSEPlaying())
+                gTasks[taskId].tLearnMoveState = T_MVSTATE_SHOW_MOVE_SELECT;
             break;
         }
         break;

@@ -25,19 +25,7 @@ MossdeepCity_Mart_EventScript_Balls::
 MossdeepCity_Mart_Balls:
 	.2byte ITEM_NET_BALL
 	.2byte ITEM_DIVE_BALL
-<<<<<<< HEAD
-	.2byte ITEM_HYPER_POTION
-	.2byte ITEM_FULL_HEAL
-	.2byte ITEM_REVIVE
-	.2byte ITEM_MAX_REPEL
-	.2byte ITEM_X_ATTACK
-	.2byte ITEM_X_DEFENSE
 	pokemartlistend
-=======
-	.2byte ITEM_NONE
-	release
-	end
->>>>>>> a33312988d (Updated map events)
 
 MossdeepCity_Mart_EventScript_Woman::
 	msgbox MossdeepCity_Mart_Text_ReviveIsFantastic, MSGBOX_NPC

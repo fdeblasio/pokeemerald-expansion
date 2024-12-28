@@ -84,7 +84,8 @@ static const u8 sText_ItemFinderNearby[] = _("Huh?\nThe Itemfinder's responding!
 static const u8 sText_ItemFinderOnTop[] = _("Oh!\nThe Itemfinder's shaking wildly!{PAUSE_UNTIL_PRESS}");
 static const u8 sText_ItemFinderNothing[] = _("… … … …Nope!\nThere's no response.{PAUSE_UNTIL_PRESS}");
 static const u8 sText_CoinCase[] = _("Your Coins:\n{STR_VAR_1}{PAUSE_UNTIL_PRESS}");
-static const u8 sText_PowderQty[] = _("Powder Qty: {STR_VAR_1}{PAUSE_UNTIL_PRESS}");
+static const u8 sText_PowderQuantity[] = _("Powder Quantity:\n{STR_VAR_1}{PAUSE_UNTIL_PRESS}");
+static const u8 sText_AshQuantity[] = _("Ash Quantity:\n{STR_VAR_1}{PAUSE_UNTIL_PRESS}");
 static const u8 sText_BootedUpTM[] = _("Booted up a TM.");
 static const u8 sText_TMContainedVar1[] = _("It contained\n{STR_VAR_1}.\pTeach {STR_VAR_1}\nto a Pokémon?");
 static const u8 sText_UsedVar2WildLured[] = _("{PLAYER} used the\n{STR_VAR_2}.\pWild Pokémon will be lured.{PAUSE_UNTIL_PRESS}");
@@ -731,7 +732,7 @@ void ItemUseOutOfBattle_CoinCase(u8 taskId)
 void ItemUseOutOfBattle_SootSack(u8 taskId)
 {
 	ConvertIntToDecimalStringN(gStringVar1, GetAshCount(), STR_CONV_MODE_LEFT_ALIGN, 4);
-	StringExpandPlaceholders(gStringVar4, gText_AshQty);
+	StringExpandPlaceholders(gStringVar4, sText_AshQuantity);
 	if (!gTasks[taskId].tUsingRegisteredKeyItem)
 	{
 		DisplayItemMessage(taskId, 1, gStringVar4, CloseItemMessage);
@@ -752,7 +753,7 @@ u16 GetAshCount(void)
 void ItemUseOutOfBattle_PowderJar(u8 taskId)
 {
     ConvertIntToDecimalStringN(gStringVar1, GetBerryPowder(), STR_CONV_MODE_LEFT_ALIGN, 5);
-    StringExpandPlaceholders(gStringVar4, sText_PowderQty);
+    StringExpandPlaceholders(gStringVar4, sText_PowderQuantity);
 
     if (!gTasks[taskId].tUsingRegisteredKeyItem)
     {

@@ -5609,7 +5609,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 break;
             case MOVE_ABSORBED_BY_CHARGING:
                 gBattleStruct->pledgeMove = FALSE;
-                if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+                if (MoveResultHasEffect(gBattlerTarget)
                   && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
                   && IsBattlerAlive(gBattlerTarget))
                 {

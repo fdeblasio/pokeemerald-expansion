@@ -19822,7 +19822,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .argument = TYPE_STEEL,
         .cantUseTwice = TRUE,
         .battleAnimScript = gBattleAnimMove_GigatonHammer,
     },

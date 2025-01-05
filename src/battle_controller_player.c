@@ -1838,7 +1838,7 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
         UQ4_12_MULTIPLY(power, 1.5);
     else if (ability == ABILITY_TOXIC_BOOST && (gBattleMons[battler].status1 & STATUS1_PSN_ANY) && category == DAMAGE_CATEGORY_PHYSICAL)
         UQ4_12_MULTIPLY(power, 1.5);
-    else if (ability == ABILITY_RECKLESS && IS_MOVE_RECOIL(move))
+    else if (ability == ABILITY_RECKLESS && IsBattleMoveRecoil(move))
         UQ4_12_MULTIPLY(power, 1.2);
     else if (ability == ABILITY_IRON_FIST && gMovesInfo[move].punchingMove)
         UQ4_12_MULTIPLY(power, 1.5);

@@ -69,7 +69,7 @@
     }
 
 #define RIVAL_BATTLES(Rival, Type, Mon3, Evo3, Ability3, Mon4, Evo4, Ability4) \
-[DIFFICULTY_NORMAL][TRAINER_##Rival##_ROUTE_103_##Type] =                                         \
+[DIFFICULTY_NORMAL][TRAINER_##Rival##_ROUTE_103_##Type] =                      \
 {                                                                              \
     Rival##_INFO,                                                              \
     .partySize = 1,                                                            \
@@ -78,7 +78,7 @@
     },                                                                         \
 },                                                                             \
                                                                                \
-[DIFFICULTY_NORMAL][TRAINER_##Rival##_RUSTBORO_##Type] =                                          \
+[DIFFICULTY_NORMAL][TRAINER_##Rival##_RUSTBORO_##Type] =                       \
 {                                                                              \
     Rival##_INFO,                                                              \
     .partySize = 2,                                                            \
@@ -88,7 +88,7 @@
     },                                                                         \
 },                                                                             \
                                                                                \
-[DIFFICULTY_NORMAL][TRAINER_##Rival##_ROUTE_110_##Type] =                                         \
+[DIFFICULTY_NORMAL][TRAINER_##Rival##_ROUTE_110_##Type] =                      \
 {                                                                              \
     Rival##_INFO,                                                              \
     .partySize = 3,                                                            \
@@ -99,7 +99,7 @@
     },                                                                         \
 },                                                                             \
                                                                                \
-[DIFFICULTY_NORMAL][TRAINER_##Rival##_ROUTE_119_##Type] =                                         \
+[DIFFICULTY_NORMAL][TRAINER_##Rival##_ROUTE_119_##Type] =                      \
 {                                                                              \
     Rival##_INFO,                                                              \
     .partySize = 4,                                                            \
@@ -111,7 +111,7 @@
     },                                                                         \
 },                                                                             \
                                                                                \
-[DIFFICULTY_NORMAL][TRAINER_##Rival##_LILYCOVE_##Type] =                                          \
+[DIFFICULTY_NORMAL][TRAINER_##Rival##_LILYCOVE_##Type] =                       \
 {                                                                              \
     Rival##_INFO,                                                              \
     .partySize = 5,                                                            \
@@ -1708,7 +1708,6 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .trainerClass = TRAINER_CLASS_ELITE_FOUR,                              \
     .trainerPic = TRAINER_PIC_ELITE_FOUR_##Trainer,                        \
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE}, \
-    .mugshotEnabled = TRUE,                                                \
     .mugshotColor = MUGSHOT_TYPE_##MugshotColor,                           \
     BOSS_AI_FLAGS
 
@@ -2133,14 +2132,13 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 },
 
 #define WALLACE_BATTLE(Trainer, AceLevel)                                                  \
-[DIFFICULTY_NORMAL][TRAINER_##Trainer] =                                                                      \
+[DIFFICULTY_NORMAL][TRAINER_##Trainer] =                                                   \
 {                                                                                          \
     .trainerName = _("Wallace"),                                                           \
     .trainerClass = TRAINER_CLASS_CHAMPION,                                                \
     .trainerPic = TRAINER_PIC_CHAMPION_WALLACE,                                            \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,                                 \
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE}, \
-    .mugshotEnabled = TRUE,                                                                \
     .mugshotColor = MUGSHOT_TYPE_WATER,                                                    \
     BOSS_AI_FLAGS,                                                                         \
     .partySize = 6,                                                                        \
@@ -2718,7 +2716,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define SPACE_CENTER_GRUNT_LEVEL 47
 
 #define LANDON_BATTLE(Location, Level)                                                   \
-[DIFFICULTY_NORMAL][TRAINER_LANDON_##Location] =                                                            \
+[DIFFICULTY_NORMAL][TRAINER_LANDON_##Location] =                                         \
 {                                                                                        \
     .trainerName = _("Landon"),                                                          \
     MAGMA_GRUNT_M_INFO,                                                                  \
@@ -2734,7 +2732,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 }
 
 #define GINNY_BATTLE(Location, Level)                                                        \
-[DIFFICULTY_NORMAL][TRAINER_GINNY_##Location] =                                                                 \
+[DIFFICULTY_NORMAL][TRAINER_GINNY_##Location] =                                              \
 {                                                                                            \
     .trainerName = _("Ginny"),                                                               \
     MAGMA_GRUNT_F_INFO,                                                                      \
@@ -2750,7 +2748,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 }
 
 #define TERRANCE_BATTLE(Location, Level)                                                \
-[DIFFICULTY_NORMAL][TRAINER_TERRANCE_##Location] =                                                         \
+[DIFFICULTY_NORMAL][TRAINER_TERRANCE_##Location] =                                      \
 {                                                                                       \
     .trainerName = _("Terrance"),                                                       \
     MAGMA_GRUNT_M_INFO,                                                                 \
@@ -2767,7 +2765,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 }
 
 #define JORDAN_BATTLE(Location, Level)                                                  \
-[DIFFICULTY_NORMAL][TRAINER_JORDAN_##Location] =                                                           \
+[DIFFICULTY_NORMAL][TRAINER_JORDAN_##Location] =                                        \
 {                                                                                       \
     .trainerName = _("Jordan"),                                                         \
     MAGMA_GRUNT_F_INFO,                                                                 \
@@ -2783,7 +2781,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 }
 
 #define GAETANO_BATTLE(Location, Level)                                                 \
-[DIFFICULTY_NORMAL][TRAINER_GAETANO_##Location] =                                                          \
+[DIFFICULTY_NORMAL][TRAINER_GAETANO_##Location] =                                       \
 {                                                                                       \
     .trainerName = _("Gaetano"),                                                        \
     MAGMA_GRUNT_M_INFO,                                                                 \
@@ -2853,7 +2851,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define SEAFLOOR_CAVERN_LEVEL 52
 
 #define MARINA_BATTLE(Location, Level)                                                \
-[DIFFICULTY_NORMAL][TRAINER_MARINA_##Location] =                                                         \
+[DIFFICULTY_NORMAL][TRAINER_MARINA_##Location] =                                      \
 {                                                                                     \
     .trainerName = _("Marina"),                                                       \
     AQUA_GRUNT_F_INFO,                                                                \
@@ -2874,7 +2872,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 }
 
 #define MALIK_BATTLE(Location, Level)                                                      \
-[DIFFICULTY_NORMAL][TRAINER_MALIK_##Location] =                                                               \
+[DIFFICULTY_NORMAL][TRAINER_MALIK_##Location] =                                            \
 {                                                                                          \
     .trainerName = _("Malik"),                                                             \
     AQUA_GRUNT_M_INFO,                                                                     \
@@ -2896,7 +2894,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 }
 
 #define BERYL_BATTLE(Location, Level)                                                 \
-[DIFFICULTY_NORMAL][TRAINER_BERYL_##Location] =                                                          \
+[DIFFICULTY_NORMAL][TRAINER_BERYL_##Location] =                                       \
 {                                                                                     \
     .trainerName = _("Beryl"),                                                        \
     AQUA_GRUNT_M_INFO,                                                                \
@@ -2918,7 +2916,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 }
 
 #define NERISSA_BATTLE(Location, Level)                                                \
-[DIFFICULTY_NORMAL][TRAINER_NERISSA_##Location] =                                                         \
+[DIFFICULTY_NORMAL][TRAINER_NERISSA_##Location] =                                      \
 {                                                                                      \
     .trainerName = _("Nerissa"),                                                       \
     AQUA_GRUNT_F_INFO,                                                                 \
@@ -2942,7 +2940,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 
 
 #define TABITHA_BATTLE(Location, AceLevel, IVs)                                          \
-[DIFFICULTY_NORMAL][TRAINER_TABITHA_##Location] =                                                           \
+[DIFFICULTY_NORMAL][TRAINER_TABITHA_##Location] =                                        \
 {                                                                                        \
     .trainerName = _("Tabitha"),                                                         \
     .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,                                           \
@@ -2976,7 +2974,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 }
 
 #define COURTNEY_BATTLE(Location, AceLevel, IVs)                                      \
-[DIFFICULTY_NORMAL][TRAINER_COURTNEY_##Location] =                                                       \
+[DIFFICULTY_NORMAL][TRAINER_COURTNEY_##Location] =                                    \
 {                                                                                     \
     .trainerName = _("Courtney"),                                                     \
     .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,                                        \
@@ -3010,7 +3008,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 }
 
 #define SHELLY_BATTLE(Location, AceLevel, IVs)                                       \
-[DIFFICULTY_NORMAL][TRAINER_SHELLY_##Location] =                                                        \
+[DIFFICULTY_NORMAL][TRAINER_SHELLY_##Location] =                                     \
 {                                                                                    \
     .trainerName = _("Shelly"),                                                      \
     .trainerClass = TRAINER_CLASS_AQUA_ADMIN,                                        \
@@ -3044,7 +3042,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 }
 
 #define MATT_BATTLE(Location, AceLevel, IVs)               \
-[DIFFICULTY_NORMAL][TRAINER_MATT_##Location] =                                \
+[DIFFICULTY_NORMAL][TRAINER_MATT_##Location] =             \
 {                                                          \
     .trainerName = _("Matt"),                              \
     .trainerClass = TRAINER_CLASS_AQUA_ADMIN,              \
@@ -5708,7 +5706,7 @@ MARINA_BATTLE(MUSEUM, 17),
 },
 
 #define ISAAC_BATTLE(Match, Level)                                                                  \
-[TRAINER_ISAAC_##Match]                                                                             \
+[DIFFICULTY_NORMAL][TRAINER_ISAAC_##Match] =                                                        \
 {                                                                                                   \
     .trainerName = _("Isaac"),                                                                      \
     POKEMON_BREEDER_M_INFO,                                                                         \
@@ -5766,7 +5764,7 @@ ISAAC_BATTLE(4, REMATCH_4_LEVEL_3),
 ISAAC_BATTLE(5, REMATCH_5_LEVEL_3),
 
 #define LYDIA_BATTLE(Match, Level)                                                             \
-[TRAINER_LYDIA_##Match]                                                                        \
+[DIFFICULTY_NORMAL][TRAINER_LYDIA_##Match] =                                                   \
 {                                                                                              \
     .trainerName = _("Lydia"),                                                                 \
     POKEMON_BREEDER_F_INFO,                                                                    \
@@ -9413,7 +9411,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
 
 //Petalburg Gym
 #define PETALBURG_GYM_TRAINER(Variable, Name, Gender, Item, Species, HeldItem, Move1, Move2, Move3, Move4)         \
-[DIFFICULTY_NORMAL][TRAINER_##Variable] =                                                                                             \
+[DIFFICULTY_NORMAL][TRAINER_##Variable] =                                                                          \
 {                                                                                                                  \
     .trainerName = _(Name),                                                                                        \
     ACE_TRAINER_##Gender##_INFO,                                                                                   \
@@ -12493,7 +12491,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
 },
 
 #define GABRIELLE_BATTLE(Match, Level)                                                                              \
-[TRAINER_GABRIELLE_##Match]                                                                                         \
+[DIFFICULTY_NORMAL][TRAINER_GABRIELLE_##Match] =                                                                    \
 {                                                                                                                   \
     .trainerName = _("Gabrielle"),                                                                                  \
     POKEMON_BREEDER_F_INFO,                                                                                         \
@@ -13260,7 +13258,7 @@ TABITHA_BATTLE(MAGMA_HIDEOUT, 47, 9),
 
 //Aqua Hideout
 #define AQUA_HIDEOUT_GRUNT(Number, Gender, Species1, Species2) \
-[DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_##Number] =                        \
+[DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_##Number] =     \
 {                                                              \
     .trainerName = _("Grunt"),                                 \
     AQUA_GRUNT_##Gender##_INFO,                                \
@@ -14622,7 +14620,7 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
 },
 
 #define ISAIAH_BATTLE(Match, Level)                                 \
-[TRAINER_ISAIAH_##Match]                                            \
+[DIFFICULTY_NORMAL][TRAINER_ISAIAH_##Match] =                       \
 {                                                                   \
     .trainerName = _("Isaiah"),                                     \
     TRIATHLETE_M_SWIMMING_INFO,                                     \
@@ -14645,7 +14643,7 @@ ISAIAH_BATTLE(4, 53),
 ISAIAH_BATTLE(5, REMATCH_5_LEVEL_1),
 
 #define KATELYN_BATTLE(Match, Level)                              \
-[TRAINER_KATELYN_##Match]                                         \
+[DIFFICULTY_NORMAL][TRAINER_KATELYN_##Match] =                    \
 {                                                                 \
     .trainerName = _("Katelyn"),                                  \
     TRIATHLETE_F_SWIMMING_INFO,                                   \

@@ -4015,7 +4015,7 @@ static void PrintMovePowerAndAccuracy(u16 moveIndex)
             UQ4_12_MULTIPLY(power, 1.5);
         else if (ability == ABILITY_TOXIC_BOOST && (GetMonData(mon, MON_DATA_STATUS) & STATUS1_PSN_ANY) && gMovesInfo[moveIndex].category == DAMAGE_CATEGORY_PHYSICAL)
             UQ4_12_MULTIPLY(power, 1.5);
-        else if (ability == ABILITY_RECKLESS && IS_MOVE_RECOIL(moveIndex))
+        else if (ability == ABILITY_RECKLESS && IsBattleMoveRecoil(moveIndex))
             UQ4_12_MULTIPLY(power, 1.2);
         else if (ability == ABILITY_IRON_FIST && gMovesInfo[moveIndex].punchingMove)
             UQ4_12_MULTIPLY(power, 1.5);

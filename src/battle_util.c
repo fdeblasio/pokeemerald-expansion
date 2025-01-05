@@ -4535,7 +4535,8 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
         }
         else if ((GetCurrentWeather() == WEATHER_VERDANT || gBattleTerrain == BATTLE_TERRAIN_LONG_GRASS) && !(gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN))
         {
-            gFieldStatuses = (STATUS_FIELD_GRASSY_TERRAIN | STATUS_FIELD_TERRAIN_PERMANENT);
+            gFieldStatuses = STATUS_FIELD_GRASSY_TERRAIN;
+            gFieldTimers.terrainTimer = 0;
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_SET_GRASSY;
             BattleScriptPushCursorAndCallback(BattleScript_OverworldTerrain);
             effect++;
@@ -9928,7 +9929,7 @@ static inline u32 CalcAttackStat(struct DamageCalculationData *damageCalcData, u
         if (gBattleMons[battlerAtk].species == SPECIES_CLAMPERL && IsBattleMoveSpecial(move))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
         break;
-        if (gBattleMons[battlerAtk].species == SPECIES_HUNTAIL && IS_MOVE_PHYSICAL(move))
+        if (gBattleMons[battlerAtk].species == SPECIES_HUNTAIL && IsBattleMovePhysical(move))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
     case HOLD_EFFECT_LIGHT_BALL:

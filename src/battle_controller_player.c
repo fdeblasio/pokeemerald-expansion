@@ -1822,7 +1822,7 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
         UQ4_12_MULTIPLY(power, 2.0);
     else if (effect == EFFECT_SOLAR_BEAM && IsBattlerWeatherAffected(battler, (B_WEATHER_HAIL | B_WEATHER_SANDSTORM | B_WEATHER_RAIN | B_WEATHER_SNOW | B_WEATHER_FOG)))
         UQ4_12_MULTIPLY(power, 0.5);
-    else if (effect == EFFECT_STOMPING_TANTRUM && (gBattleStruct->lastMoveFailed & (1u << battler)))
+    else if (effect == EFFECT_STOMPING_TANTRUM && gBattleStruct->battlerState[battler].lastMoveFailed)
         UQ4_12_MULTIPLY(power, 2.0);
     else if ((effect == EFFECT_EARTHQUAKE || effect == EFFECT_MAGNITUDE) && (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN))
         UQ4_12_MULTIPLY(power, 0.5);

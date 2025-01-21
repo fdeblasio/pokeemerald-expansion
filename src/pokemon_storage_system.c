@@ -848,7 +848,7 @@ static void TilemapUtil_Draw(u8);
 void SetMonFormPSS(struct BoxPokemon *boxMon, u32 method);
 void UpdateSpeciesSpritePSS(struct BoxPokemon *boxmon);
 
-static const u8 gText_JustOnePkmn[] = _("There is just one POKéMON with you.");
+static const u8 gText_JustOnePkmn[] = _("There is just one Pokémon with you.");
 static const u8 gText_PartyFull[] = _("Your party is full!");
 static const u8 gText_Box[] = _("BOX");
 

@@ -105,21 +105,21 @@ static const struct MenuAction MultichoiceList_LevelMode[] =
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q1[] =
 {
-    {COMPOUND_STRING("Oddish")},
-    {COMPOUND_STRING("Poochyena")},
     {COMPOUND_STRING("Taillow")},
+    {COMPOUND_STRING("Poochyena")},
+    {COMPOUND_STRING("Oddish")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q2[] =
 {
-    {COMPOUND_STRING("Azurill")},
+    {COMPOUND_STRING("Hariyama")},
     {COMPOUND_STRING("Lotad")},
     {COMPOUND_STRING("Wingull")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q3[] =
 {
-    {COMPOUND_STRING("Dustox")},
+    {COMPOUND_STRING("Wurmple")},
     {COMPOUND_STRING("Zubat")},
     {COMPOUND_STRING("Nincada")},
 };
@@ -133,16 +133,16 @@ static const struct MenuAction MultichoiceList_Mechadoll2_Q1[] =
 
 static const struct MenuAction MultichoiceList_Mechadoll2_Q2[] =
 {
-    {COMPOUND_STRING("Poochyena")},
-    {COMPOUND_STRING("Shroomish")},
     {COMPOUND_STRING("Zigzagoon")},
+    {COMPOUND_STRING("Shroomish")},
+    {COMPOUND_STRING("Poochyena")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll2_Q3[] =
 {
-    {COMPOUND_STRING("Poochyena")},
-    {COMPOUND_STRING("Zubat")},
     {COMPOUND_STRING("Carvanha")},
+    {COMPOUND_STRING("Zubat")},
+    {COMPOUND_STRING("Poochyena")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll3_Q1[] =
@@ -259,26 +259,16 @@ static const struct MenuAction MultichoiceList_UnusedAshVendor[] =
 
 static const struct MenuAction MultichoiceList_GameCornerDolls[] =
 {
-    {COMPOUND_STRING("Treecko Doll 1,000 Coins")},
-    {COMPOUND_STRING("Torchic Doll 1,000 Coins")},
-    {COMPOUND_STRING("Mudkip Doll   1,000 Coins")},
-    {gText_Exit},
-};
-
-static const struct MenuAction MultichoiceList_GameCornerTMs[] =
-{
-    {COMPOUND_STRING("TM32{CLEAR_TO 0x48}1,500 Coins")},
-    {COMPOUND_STRING("TM29{CLEAR_TO 0x48}3,500 Coins")},
-    {COMPOUND_STRING("TM35{CLEAR_TO 0x48}4,000 Coins")},
-    {COMPOUND_STRING("TM24{CLEAR_TO 0x48}4,000 Coins")},
-    {COMPOUND_STRING("TM13{CLEAR_TO 0x48}4,000 Coins")},
+    {COMPOUND_STRING("Treecko Doll 500 Coins")},
+    {COMPOUND_STRING("Torchic Doll 500 Coins")},
+    {COMPOUND_STRING("Mudkip Doll   500 Coins")},
     {gText_Exit},
 };
 
 static const struct MenuAction MultichoiceList_GameCornerCoins[] =
 {
-    {COMPOUND_STRING("  50 Coins    ¥1,000")},
-    {COMPOUND_STRING("500 Coins  ¥10,000")},
+    {COMPOUND_STRING("  50 Coins    ¥50")},
+    {COMPOUND_STRING("500 Coins  ¥500")},
     {gText_Exit},
 };
 
@@ -846,7 +836,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_SSTIDAL_SLATEPORT_WITH_BF]  = MULTICHOICE(MultichoiceList_SSTidalSlateportWithBF),
     [MULTI_SSTIDAL_BATTLE_FRONTIER]    = MULTICHOICE(MultichoiceList_SSTidalBattleFrontier),
     [MULTI_RIGHTLEFT]                  = MULTICHOICE(MultichoiceList_RightLeft),
-    [MULTI_GAME_CORNER_TMS]            = MULTICHOICE(MultichoiceList_GameCornerTMs),
+    [MULTI_GAME_CORNER_TMS_UNUSED]     = MULTICHOICE(MultichoiceList_GameCornerCoins),
     [MULTI_SSTIDAL_SLATEPORT_NO_BF]    = MULTICHOICE(MultichoiceList_SSTidalSlateportNoBF),
     [MULTI_FLOORS]                     = MULTICHOICE(MultichoiceList_Floors),
     [MULTI_SHARDS_R]                   = MULTICHOICE(MultichoiceList_ShardsR),

@@ -67,7 +67,7 @@ TEST("Move names fit on Contest Screen")
 TEST("Move names fit on TMs & HMs Bag Screen")
 {
     u32 i;
-    const u32 fontId = FONT_NARROWER, widthPx = 61; 
+    const u32 fontId = FONT_NARROWER, widthPx = 61;
     u32 move = MOVE_NONE;
     for (i = 1; i < MOVES_COUNT; i++)
     {
@@ -111,7 +111,7 @@ TEST("Item names fit on Bag Screen (list)")
         PARAMETRIZE_LABEL("%S", gItemsInfo[i].name) { item = i; }
     }
     //DebugPrintf("Item %d: %S", GetStringWidth(fontId, gItemsInfo[item].name, 0), gItemsInfo[item].name);
-    if (gItemsInfo[item].pocket == POCKET_TM_HM || gItemsInfo[item].pocket == POCKET_BERRIES)
+    if (gItemsInfo[item].pocket == POCKET_TM || gItemsInfo[item].pocket == POCKET_BERRIES)
         EXPECT_LE(GetStringWidth(fontId, gItemsInfo[item].name, 0), tmHmBerryWidthPx);
     else
         EXPECT_LE(GetStringWidth(fontId, gItemsInfo[item].name, 0), restWidthPx);

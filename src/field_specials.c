@@ -1536,6 +1536,8 @@ void LoadWallyZigzagoon(void)
     SetMonData(&gParties[B_TRAINER_0][0], MON_DATA_MOVE2, &monData);
     SetMonData(&gParties[B_TRAINER_0][0], MON_DATA_MOVE3, &monData);
     SetMonData(&gParties[B_TRAINER_0][0], MON_DATA_MOVE4, &monData);
+    monData = ITEM_ULTRA_BALL;
+    SetMonData(&gParties[B_TRAINER_0][0], MON_DATA_POKEBALL, &monData);
 }
 
 bool8 IsStarterInParty(void)

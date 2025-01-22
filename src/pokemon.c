@@ -1941,8 +1941,8 @@ u16 GiveMoveToBoxMon(struct BoxPokemon *boxMon, enum Move move)
         enum Move existingMove = GetBoxMonData(boxMon, MON_DATA_MOVE1 + i);
         if (existingMove == MOVE_NONE)
         {
-            u8 maxPP = CalculateMaxPP(move);
             SetBoxMonData(boxMon, MON_DATA_MOVE1 + i, &move);
+            u8 maxPP = CalculateMaxPP(move);
             SetBoxMonData(boxMon, MON_DATA_PP1 + i, &maxPP);
             return move;
         }

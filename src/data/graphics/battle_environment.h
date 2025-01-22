@@ -50,6 +50,12 @@ const u16 gBattleEnvironmentPalette_StadiumGlacia[] = INCBIN_U16("graphics/battl
 const u16 gBattleEnvironmentPalette_StadiumDrake[] = INCBIN_U16("graphics/battle_environment/stadium/drake.gbapal");
 const u16 gBattleEnvironmentPalette_StadiumWallace[] = INCBIN_U16("graphics/battle_environment/stadium/wallace.gbapal");
 
+const u16 gBattleEnvironmentPalette_StadiumDark[] = INCBIN_U16("graphics/battle_environment/stadium/dark.gbapal");
+const u16 gBattleEnvironmentPalette_StadiumFlying[] = INCBIN_U16("graphics/battle_environment/stadium/flying.gbapal");
+const u16 gBattleEnvironmentPalette_StadiumGrass[] = INCBIN_U16("graphics/battle_environment/stadium/grass.gbapal");
+const u16 gBattleEnvironmentPalette_StadiumIce[] = INCBIN_U16("graphics/battle_environment/stadium/ice.gbapal");
+const u16 gBattleEnvironmentPalette_StadiumRock[] = INCBIN_U16("graphics/battle_environment/stadium/rock.gbapal");
+
 const u16 gBattleEnvironmentPalette_Kyogre[] = INCBIN_U16("graphics/battle_environment/water/kyogre.gbapal");
 const u16 gBattleEnvironmentPalette_Groudon[] = INCBIN_U16("graphics/battle_environment/cave/groudon.gbapal");
 

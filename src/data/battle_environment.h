@@ -42,6 +42,18 @@
 #define BUILDING_CAMOUFLAGE_BLEND    RGB_WHITE
 #define BUILDING_BATTLE_INTRO_SLIDE  BattleIntroSlide3
 
+#define TYPE_ENVIRONMENT(Type)                               \
+{                                                            \
+    .secretPowerAnimation = BUILDING_SECRET_POWER_ANIMATION, \
+    .secretPowerEffect = BUILDING_SECRET_POWER_EFFECT,       \
+    .camouflageType = BUILDING_CAMOUFLAGE_TYPE,
+    .camouflageBlend = BUILDING_CAMOUFLAGE_BLEND,
+    .entry = ENVIRONMENT_ENTRY(Building),
+    .background = ENVIRONMENT_BACKGROUND(Stadium),
+    .palette = gBattleEnvironmentPalette_StadiumWallace,
+    .battleIntroSlide = BUILDING_BATTLE_INTRO_SLIDE,
+}
+
 // Plain values. USED for BATTLE_ENVIRONMENT_PLAIN as well as BATTLE_ENVIRONMENT_RAYQUAZA
 // (BATTLE_ENVIRONMENT_SKY_PILLAR wasn't introduced until Gen6, so Sky Pillar's roof counts as a Route which uses Plain)
 #if B_NATURE_POWER_MOVES >= GEN_6
@@ -359,6 +371,41 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .background = ENVIRONMENT_BACKGROUND(Stadium),
         .palette = gBattleEnvironmentPalette_StadiumWallace,
         .battleIntroSlide = BUILDING_BATTLE_INTRO_SLIDE,
+    },
+
+    [BATTLE_ENVIRONMENT_TYPE_DARK] =
+    {
+        .entry = ENVIRONMENT_ENTRY(Building),
+        .background = ENVIRONMENT_BACKGROUND(Stadium),
+        .palette = gBattleEnvironmentPalette_StadiumDark,
+    },
+
+    [BATTLE_ENVIRONMENT_TYPE_FLYING] =
+    {
+        .entry = ENVIRONMENT_ENTRY(Building),
+        .background = ENVIRONMENT_BACKGROUND(Stadium),
+        .palette = gBattleEnvironmentPalette_StadiumFlying,
+    },
+
+    [BATTLE_ENVIRONMENT_TYPE_GRASS] =
+    {
+        .entry = ENVIRONMENT_ENTRY(Building),
+        .background = ENVIRONMENT_BACKGROUND(Stadium),
+        .palette = gBattleEnvironmentPalette_StadiumGrass,
+    },
+
+    [BATTLE_ENVIRONMENT_TYPE_ICE] =
+    {
+        .entry = ENVIRONMENT_ENTRY(Building),
+        .background = ENVIRONMENT_BACKGROUND(Stadium),
+        .palette = gBattleEnvironmentPalette_StadiumIce,
+    },
+
+    [BATTLE_ENVIRONMENT_TYPE_ROCK] =
+    {
+        .entry = ENVIRONMENT_ENTRY(Building),
+        .background = ENVIRONMENT_BACKGROUND(Stadium),
+        .palette = gBattleEnvironmentPalette_StadiumRock,
     },
 
     [BATTLE_ENVIRONMENT_GROUDON] =

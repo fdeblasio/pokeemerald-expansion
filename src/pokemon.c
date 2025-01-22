@@ -130,9 +130,6 @@ static const u16 sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
     HOENN_TO_NATIONAL(MIGHTYENA),
     HOENN_TO_NATIONAL(ZIGZAGOON),
     HOENN_TO_NATIONAL(LINOONE),
-#if P_NEW_EVOS_IN_REGIONAL_DEX && P_GALARIAN_FORMS
-    HOENN_TO_NATIONAL(OBSTAGOON),
-#endif
     HOENN_TO_NATIONAL(WURMPLE),
     HOENN_TO_NATIONAL(SILCOON),
     HOENN_TO_NATIONAL(BEAUTIFLY),
@@ -244,6 +241,8 @@ static const u16 sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
     HOENN_TO_NATIONAL(MUK),
     HOENN_TO_NATIONAL(KOFFING),
     HOENN_TO_NATIONAL(WEEZING),
+    HOENN_TO_NATIONAL(HOUNDOUR),
+    HOENN_TO_NATIONAL(HOUNDOOM),
     HOENN_TO_NATIONAL(SPOINK),
     HOENN_TO_NATIONAL(GRUMPIG),
     HOENN_TO_NATIONAL(SANDSHREW),
@@ -330,9 +329,6 @@ static const u16 sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
     HOENN_TO_NATIONAL(GOREBYSS),
     HOENN_TO_NATIONAL(RELICANTH),
     HOENN_TO_NATIONAL(CORSOLA),
-#if P_NEW_EVOS_IN_REGIONAL_DEX && P_GALARIAN_FORMS
-    HOENN_TO_NATIONAL(CURSOLA),
-#endif
     HOENN_TO_NATIONAL(CHINCHOU),
     HOENN_TO_NATIONAL(LANTURN),
     HOENN_TO_NATIONAL(LUVDISC),
@@ -682,7 +678,9 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
 #include "data/pokemon/trainer_class_lookups.h"
 #include "data/pokemon/experience_tables.h"
 
-#if P_LVL_UP_LEARNSETS >= GEN_9
+#if P_LVL_UP_LEARNSETS == GEN_LATEST
+#include "data/pokemon/level_up_learnsets/custom.h"
+#elif P_LVL_UP_LEARNSETS >= GEN_9
 #include "data/pokemon/level_up_learnsets/gen_9.h" // Scarlet/Violet
 #elif P_LVL_UP_LEARNSETS >= GEN_8
 #include "data/pokemon/level_up_learnsets/gen_8.h" // Sword/Shield

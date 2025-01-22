@@ -699,6 +699,8 @@ struct
 {
     [MENU_SUMMARY]         = {COMPOUND_STRING("Summary"),         CursorCb_Summary},
     [MENU_SWITCH]          = {COMPOUND_STRING("Switch"),          CursorCb_Switch},
+    [MENU_NICKNAME]        = {COMPOUND_STRING("Nickname"),        CursorCb_Nickname},
+    [MENU_MOVES]           = {COMPOUND_STRING("Change Moves"),    CursorCb_Moves},
     [MENU_CANCEL1]         = {gText_Cancel2,                      CursorCb_Cancel1},
     [MENU_ITEM]            = {COMPOUND_STRING("Item"),            CursorCb_Item},
     [MENU_GIVE]            = {gMenuText_Give,                     CursorCb_Give},
@@ -1104,17 +1106,21 @@ static const u8 *const sUnused_StatStrings[] =
 };
 
 #define ROTOM_BASE_MOVE  MOVE_THUNDER_SHOCK
-#define ROTOM_HEAT_MOVE  MOVE_OVERHEAT
-#define ROTOM_WASH_MOVE  MOVE_HYDRO_PUMP
-#define ROTOM_FROST_MOVE MOVE_BLIZZARD
+#define ROTOM_HEAT_MOVE  MOVE_FLAMETHROWER
+#define ROTOM_WASH_MOVE  MOVE_SURF
+#define ROTOM_FROST_MOVE MOVE_ICE_BEAM
 #define ROTOM_FAN_MOVE   MOVE_AIR_SLASH
-#define ROTOM_MOW_MOVE   MOVE_LEAF_STORM
+#define ROTOM_MOW_MOVE   MOVE_ENERGY_BALL
 
-static const u16 sRotomFormChangeMoves[5] =
+static const u16 sRotomFormChangeMoves[9] =
 {
     ROTOM_HEAT_MOVE,
     ROTOM_WASH_MOVE,
     ROTOM_FROST_MOVE,
     ROTOM_FAN_MOVE,
     ROTOM_MOW_MOVE,
+    MOVE_OVERHEAT,
+    MOVE_HYDRO_PUMP,
+    MOVE_BLIZZARD,
+    MOVE_LEAF_STORM,
 };

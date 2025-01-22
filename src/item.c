@@ -153,9 +153,9 @@ void SetBagItemsPointers(void)
     gBagPockets[POCKET_POKE_BALLS].capacity = BAG_POKEBALLS_COUNT;
     gBagPockets[POCKET_POKE_BALLS].id = POCKET_POKE_BALLS;
 
-    gBagPockets[POCKET_TM_HM].itemSlots = gSaveBlock1Ptr->bag.TMsHMs;
-    gBagPockets[POCKET_TM_HM].capacity = BAG_TMHM_COUNT;
-    gBagPockets[POCKET_TM_HM].id = POCKET_TM_HM;
+    gBagPockets[POCKET_TM].itemSlots = gSaveBlock1Ptr->bag.TMsHMs;
+    gBagPockets[POCKET_TM].capacity = BAG_TM_COUNT;
+    gBagPockets[POCKET_TM].id = POCKET_TM;
 
     gBagPockets[POCKET_BERRIES].itemSlots = gSaveBlock1Ptr->bag.berries;
     gBagPockets[POCKET_BERRIES].capacity = BAG_BERRIES_COUNT;

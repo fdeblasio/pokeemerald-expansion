@@ -209,7 +209,7 @@ struct TypeInfo
     u16 isSpecialCaseType:1;
     u16 isHiddenPowerType:1; // Changing this for any type will change the distribution of all Hidden Power types from vanilla.
     u16 padding:11;
-    const u16 *const paletteTMHM;
+    const u16 *const paletteTM;
     //u16 enhanceItem;
     //u16 berry;
     //u16 gem;

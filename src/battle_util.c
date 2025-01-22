@@ -9460,7 +9460,7 @@ enum DamageCategory GetCategoryBasedOnStats(u32 battler)
 
 static u32 GetFlingPowerFromItemId(u32 itemId)
 {
-    if (gItemsInfo[itemId].pocket == POCKET_TM_HM)
+    if (gItemsInfo[itemId].pocket == POCKET_TM)
     {
         u32 power = GetMovePower(ItemIdToBattleMoveId(itemId));
         if (power > 1)

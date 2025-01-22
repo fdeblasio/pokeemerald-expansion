@@ -1118,7 +1118,7 @@ static bool8 DisplayPartyPokemonDataForMoveTutorOrEvolutionItem(u8 slot)
         if (gPartyMenu.action != PARTY_ACTION_USE_ITEM)
             return FALSE;
 
-        switch (CheckIfItemIsTMHMOrEvolutionStone(item))
+        switch (CheckIfItemIsTMOrEvolutionStone(item))
         {
         default:
             return FALSE;
@@ -4569,7 +4569,7 @@ void CB2_ShowPartyMenuForItemUse(void)
     }
     else
     {
-        if (GetItemPocket(gSpecialVar_ItemId) == POCKET_TM_HM)
+        if (GetItemPocket(gSpecialVar_ItemId) == POCKET_TM)
             msgId = PARTY_MSG_TEACH_WHICH_MON;
         else
             msgId = PARTY_MSG_USE_ON_WHICH_MON;
@@ -5362,7 +5362,7 @@ void ItemUseCB_PPUp(u8 taskId, TaskFunc task)
 
 u16 ItemIdToBattleMoveId(u16 item)
 {
-    return (GetItemPocket(item) == POCKET_TM_HM) ? GetItemTMHMMoveId(item) : MOVE_NONE;
+    return (GetItemPocket(item) == POCKET_TM) ? GetItemTMHMMoveId(item) : MOVE_NONE;
 }
 
 bool8 MonKnowsMove(struct Pokemon *mon, u16 move)
@@ -5404,7 +5404,7 @@ static void DisplayLearnMoveMessageAndClose(u8 taskId, const u8 *str)
 
 // move[1] doesn't use constants cause I don't know if it's actually a move ID storage
 
-void ItemUseCB_TMHM(u8 taskId, TaskFunc task)
+void ItemUseCB_TM(u8 taskId, TaskFunc task)
 {
     struct Pokemon *mon;
     u16 item = gSpecialVar_ItemId;

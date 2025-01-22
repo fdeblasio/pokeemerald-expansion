@@ -588,6 +588,12 @@ static u8 GetNumberOfBadges(void)
 static void SetShopItemsForSale(const u16 *items)
 {
     u16 i = 0;
+    u8 badgeCount = GetNumberOfBadges();
+
+    if (items == NULL)
+        sMartInfo.itemList = sShopInventories[badgeCount];
+    else
+        sMartInfo.itemList = items;
 
     if (items == NULL)
         sMartInfo.itemList = sShopInventories[GetNumberOfBadges()];

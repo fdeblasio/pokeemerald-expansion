@@ -1669,7 +1669,7 @@ u16 GetMysteryGiftCardStat(void)
     }
 }
 
-bool8 BufferTMHMMoveName(void)
+bool8 BufferTMMoveName(void)
 {
     if (gItemsInfo[gSpecialVar_0x8004].pocket == POCKET_TM)
     {

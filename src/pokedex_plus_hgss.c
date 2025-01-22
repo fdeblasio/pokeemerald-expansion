@@ -292,7 +292,7 @@ static EWRAM_DATA struct PokedexListItem *sPokedexListItem = NULL;
 //Pokedex Plus HGSS_Ui
 #define MOVES_COUNT_TOTAL (EGG_MOVES_ARRAY_COUNT + MAX_LEVEL_UP_MOVES + NUM_ALL_MACHINES)
 EWRAM_DATA static u16 sStatsMoves[MOVES_COUNT_TOTAL] = {0};
-EWRAM_DATA static u16 sStatsMovesTMHM_ID[NUM_ALL_MACHINES] = {0};
+EWRAM_DATA static u16 sStatsMovesTM_ID[NUM_TECHNICAL_MACHINES] = {0};
 
 
 struct SearchOptionText
@@ -409,7 +409,7 @@ struct PokedexView
     u8 categoryIconSpriteId; //Physical/Special/Status category
     u8 numEggMoves;
     u8 numLevelUpMoves;
-    u8 numTMHMMoves;
+    u8 numTMMoves;
     u8 numTutorMoves;
     u8 numPreEvolutions;
     struct PokemonStats sPokemonStats;
@@ -4872,7 +4872,7 @@ static void Task_LoadStatsScreen(u8 taskId)
         sPokedexView->movesTotal = 0;
         sPokedexView->numEggMoves = 0;
         sPokedexView->numLevelUpMoves = 0;
-        sPokedexView->numTMHMMoves = 0;
+        sPokedexView->numTMMoves = 0;
         if (CalculateMoves())
             gMain.state++;
         break;
@@ -5138,7 +5138,7 @@ static bool8 CalculateMoves(void)
 
     u8 numEggMoves = 0;
     u8 numLevelUpMoves = 0;
-    u8 numTMHMMoves = 0;
+    u8 numTMMoves = 0;
     u8 numTutorMoves = 0;
     u16 movesTotal = 0;
     u8 i;
@@ -5181,7 +5181,7 @@ static bool8 CalculateMoves(void)
 
     sPokedexView->numEggMoves = numEggMoves;
     sPokedexView->numLevelUpMoves = numLevelUpMoves;
-    sPokedexView->numTMHMMoves = numTMHMMoves;
+    sPokedexView->numTMMoves = numTMMoves;
     sPokedexView->numTutorMoves = numTutorMoves;
     sPokedexView->movesTotal = movesTotal;
 
@@ -5192,7 +5192,7 @@ static void PrintStatsScreen_Moves_Top(u8 taskId)
 {
     u8 numEggMoves      = sPokedexView->numEggMoves;
     u8 numLevelUpMoves  = sPokedexView->numLevelUpMoves;
-    u8 numTMHMMoves     = sPokedexView->numTMHMMoves;
+    u8 numTMMoves     = sPokedexView->numTMMoves;
     u8 numTutorMoves    = sPokedexView->numTutorMoves;
     u16 movesTotal      = sPokedexView->movesTotal;
     u16 selected        = sPokedexView->moveSelected;
@@ -5244,13 +5244,13 @@ static void PrintStatsScreen_Moves_Top(u8 taskId)
         PrintStatsScreenTextSmall(WIN_STATS_MOVES_TOP, gStringVar1, moves_x + 113, moves_y + 14); //Print level
         item = ITEM_RARE_CANDY;
     }
-    else if (selected < (numEggMoves + numLevelUpMoves + numTMHMMoves))
+    else if (selected < (numEggMoves + numLevelUpMoves + numTMMoves))
     {
-        CopyItemName(sStatsMovesTMHM_ID[(selected-numEggMoves-numLevelUpMoves)], gStringVar1); //TM name
+        CopyItemName(sStatsMovesTM_ID[(selected-numEggMoves-numLevelUpMoves)], gStringVar1); //TM name
         PrintStatsScreenTextSmall(WIN_STATS_MOVES_TOP, gStringVar1, moves_x + 113, moves_y + 9);
-        item = sStatsMovesTMHM_ID[(selected-numEggMoves-numLevelUpMoves)];
+        item = sStatsMovesTM_ID[(selected-numEggMoves-numLevelUpMoves)];
     }
-    else if (selected < (numEggMoves + numLevelUpMoves + numTMHMMoves + numTutorMoves))
+    else if (selected < (numEggMoves + numLevelUpMoves + numTMMoves + numTutorMoves))
     {
         PrintStatsScreenTextSmall(WIN_STATS_MOVES_TOP, gText_ThreeDashes, moves_x + 113, moves_y + 9);
         item = ITEM_TEACHY_TV;

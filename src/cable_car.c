@@ -877,8 +877,8 @@ static void CreateCableCarSprites(void)
         gSprites[spriteId].y2 = 8;
     }
 
-    // 1/64 chance for an NPC to appear hiking on the ground below the Cable Car
-    if ((rval % 64) == 0)
+    // 100% chance for an NPC to appear hiking on the ground below the Cable Car
+    if ((rval % 1) == 0)
     {
         // BUGFIX: The - 1 in the below ARRAY_COUNT means the Zigzagoon is never used
 #ifdef BUGFIX

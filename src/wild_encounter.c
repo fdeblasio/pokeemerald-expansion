@@ -40,7 +40,6 @@ extern const u8 EventScript_SprayWoreOff[];
 enum {
     WILD_AREA_LAND,
     WILD_AREA_WATER,
-    WILD_AREA_ROCKS,
     WILD_AREA_FISHING,
 };
 
@@ -69,9 +68,66 @@ EWRAM_DATA bool8 gIsFishingEncounter = 0;
 EWRAM_DATA bool8 gIsSurfingEncounter = 0;
 EWRAM_DATA u8 gChainFishingDexNavStreak = 0;
 
+#define RANGE_ROUTE_101          3, 3
+#define RANGE_ROUTE_103          4, 4
+#define RANGE_ROUTE_102_104      5, 5
+#define RANGE_PETALBURG_WOODS    5, 6
+#define RANGE_PETALBURG_WOODS_COCOON 7, 7
+#define RANGE_ROUTE_116          7, 8
+#define RANGE_RUSTURF_TUNNEL     9, 9
+#define RANGE_OLD_ROD_INITIAL   10, 15
+#define RANGE_GRANITE_CAVE      12, 15
+#define RANGE_ROUTE_109_SLATEPORT_OLD_ROD 15, 20
+#define RANGE_ROUTE_110         14, 17
+#define RANGE_ROUTE_117         17, 19
+#define RANGE_GOOD_ROD_INITIAL  22, 25
+#define RANGE_ROUTE_112         23, 24
+#define RANGE_FIERY_PATH        24, 25
+#define RANGE_ROUTE_113         24, 25
+#define RANGE_ROUTE_114         24, 25
+#define RANGE_METEOR_FALLS      25, 27
+#define RANGE_JAGGED_PASS       26, 28
+#define RANGE_DESERT            28, 30
+#define RANGE_SURF_INITIAL      30, 32
+#define RANGE_ROUTE_119         33, 35
+#define RANGE_ROUTE_120         38, 40
+#define RANGE_ROUTE_121         40, 42
+#define RANGE_LILYCOVE_CITY     41, 43
+#define RANGE_ROUTE_122         42, 44
+#define RANGE_MT_PYRE           42, 44
+#define RANGE_ROUTE_123         42, 44
+#define RANGE_MAGMA_HIDEOUT     43, 45
+#define RANGE_ROUTE_124         45, 47
+#define RANGE_ROUTE_125         45, 47
+#define RANGE_MOSSDEEP_CITY     46, 48
+#define RANGE_SHOAL_CAVE        46, 48
+#define RANGE_SUPER_ROD_INITIAL 46, 48
+#define RANGE_DIVE_INITIAL      47, 49
+#define RANGE_ROUTE_127         47, 49
+#define RANGE_ROUTE_126         47, 49
+#define RANGE_SOOTOPOLIS_CITY   47, 49
+#define RANGE_ROUTE_128         48, 50
+#define RANGE_EVER_GRANDE_CITY  48, 50
+#define RANGE_SEAFLOOR_CAVERN   50, 52
+#define RANGE_CAVE_OF_ORIGIN    51, 53
+#define RANGE_ROUTE_129         51, 53
+#define RANGE_ROUTE_130         51, 53
+#define RANGE_ROUTE_131         51, 53
+#define RANGE_SKY_PILLAR        52, 54
+#define RANGE_PACIFIDLOG_TOWN   52, 54
+#define RANGE_ROUTE_132         52, 54
+#define RANGE_ROUTE_133         52, 54
+#define RANGE_ROUTE_134         52, 54
+#define RANGE_METEOR_FALLS_WATERFALL 54, 56
+#define RANGE_VICTORY_ROAD      55, 57
+#define RANGE_EVER_GRANDE_CITY_GRIND 60, 60
+#define RANGE_POSTGAME          70, 70
+#define RANGE_BATTLE_FRONTIER   5, 5
+#define RANGE_UNUSED            1, 1
+
 #include "data/wild_encounters.h"
 
-static const struct WildPokemon sWildFeebas = {20, 25, SPECIES_FEEBAS};
+static const struct WildPokemon sWildFeebas = {RANGE_ROUTE_119, SPECIES_FEEBAS};
 
 static const u16 sRoute119WaterTileData[] =
 {
@@ -140,10 +196,6 @@ static bool8 CheckFeebas(void)
         if (y >= sRoute119WaterTileData[3 * 2 + 0] && y <= sRoute119WaterTileData[3 * 2 + 1])
             route119Section = 2;
 
-        // 50% chance of encountering Feebas (assuming this is a Feebas spot)
-        if (Random() % 100 > 49)
-            return FALSE;
-
         FeebasSeedRng(gSaveBlock1Ptr->dewfordTrends[0].rand);
 
         // Assign each Feebas spot to a random fishing spot.
@@ -210,12 +262,8 @@ u8 ChooseWildMonIndex_Land(void)
         wildMonIndex = 7;
     else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_7 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_8)
         wildMonIndex = 8;
-    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_8 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_9)
-        wildMonIndex = 9;
-    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_9 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_10)
-        wildMonIndex = 10;
     else
-        wildMonIndex = 11;
+        wildMonIndex = 9;
 
     if (LURE_STEP_COUNT != 0 && (Random() % 10 < 2))
         swap = TRUE;
@@ -226,8 +274,8 @@ u8 ChooseWildMonIndex_Land(void)
     return wildMonIndex;
 }
 
-// ROCK_WILD_COUNT / WATER_WILD_COUNT
-u8 ChooseWildMonIndex_WaterRock(void)
+// WATER_WILD_COUNT
+u8 ChooseWildMonIndex_Water(void)
 {
     u8 wildMonIndex = 0;
     bool8 swap = FALSE;
@@ -239,10 +287,8 @@ u8 ChooseWildMonIndex_WaterRock(void)
         wildMonIndex = 1;
     else if (rand >= ENCOUNTER_CHANCE_WATER_MONS_SLOT_1 && rand < ENCOUNTER_CHANCE_WATER_MONS_SLOT_2)
         wildMonIndex = 2;
-    else if (rand >= ENCOUNTER_CHANCE_WATER_MONS_SLOT_2 && rand < ENCOUNTER_CHANCE_WATER_MONS_SLOT_3)
-        wildMonIndex = 3;
     else
-        wildMonIndex = 4;
+        wildMonIndex = 3;
 
     if (LURE_STEP_COUNT != 0 && (Random() % 10 < 2))
         swap = TRUE;
@@ -267,39 +313,32 @@ static u8 ChooseWildMonIndex_Fishing(u8 rod)
     switch (rod)
     {
     case OLD_ROD:
-        if (rand < ENCOUNTER_CHANCE_FISHING_MONS_OLD_ROD_SLOT_0)
-            wildMonIndex = 0;
-        else
-            wildMonIndex = 1;
+        wildMonIndex = 0;
 
         if (swap)
-            wildMonIndex = 1 - wildMonIndex;
+            wildMonIndex = 0 - wildMonIndex;
         break;
     case GOOD_ROD:
-        if (rand < ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_2)
+        if (rand < ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_1)
+            wildMonIndex = 1;
+        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_1 && rand < ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_2)
             wildMonIndex = 2;
-        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_2 && rand < ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_3)
-            wildMonIndex = 3;
-        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_3 && rand < ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_4)
-            wildMonIndex = 4;
 
         if (swap)
-            wildMonIndex = 6 - wildMonIndex;
+            wildMonIndex = 3 - wildMonIndex;
         break;
     case SUPER_ROD:
-        if (rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_5)
+        if (rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_3)
+            wildMonIndex = 3;
+        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_3 && rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_4)
+            wildMonIndex = 4;
+        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_4 && rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_5)
             wildMonIndex = 5;
         if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_5 && rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_6)
             wildMonIndex = 6;
-        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_6 && rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_7)
-            wildMonIndex = 7;
-        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_7 && rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_8)
-            wildMonIndex = 8;
-        if (rand >= ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_8 && rand < ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_9)
-            wildMonIndex = 9;
 
         if (swap)
-            wildMonIndex = 14 - wildMonIndex;
+            wildMonIndex = 7 - wildMonIndex;
         break;
     }
     return wildMonIndex;
@@ -496,10 +535,7 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo *wildMonInfo, u8 ar
         if (OW_STORM_DRAIN >= GEN_8 && TRY_GET_ABILITY_INFLUENCED_WILD_MON_INDEX(wildMonInfo->wildPokemon, TYPE_WATER, ABILITY_STORM_DRAIN, &wildMonIndex, WATER_WILD_COUNT))
             break;
 
-        wildMonIndex = ChooseWildMonIndex_WaterRock();
-        break;
-    case WILD_AREA_ROCKS:
-        wildMonIndex = ChooseWildMonIndex_WaterRock();
+        wildMonIndex = ChooseWildMonIndex_Water();
         break;
     }
 
@@ -527,6 +563,8 @@ static u16 GenerateFishingWildMon(const struct WildPokemonInfo *wildMonInfo, u8 
 static bool8 SetUpMassOutbreakEncounter(u8 flags)
 {
     u16 i;
+    int hiddenAbility;
+    u32 iv;
 
     if (flags & WILD_CHECK_REPEL && !IsWildLevelAllowedByRepel(gSaveBlock1Ptr->outbreakPokemonLevel))
         return FALSE;
@@ -534,6 +572,17 @@ static bool8 SetUpMassOutbreakEncounter(u8 flags)
     CreateWildMon(gSaveBlock1Ptr->outbreakPokemonSpecies, gSaveBlock1Ptr->outbreakPokemonLevel);
     for (i = 0; i < MAX_MON_MOVES; i++)
         SetMonMoveSlot(&gEnemyParty[0], gSaveBlock1Ptr->outbreakPokemonMoves[i], i);
+
+    hiddenAbility = 2;
+    SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &hiddenAbility);
+
+    iv = MAX_PER_STAT_IVS;
+    SetMonData(&gEnemyParty[0], MON_DATA_HP_IV, &iv);
+    SetMonData(&gEnemyParty[0], MON_DATA_ATK_IV, &iv);
+    SetMonData(&gEnemyParty[0], MON_DATA_DEF_IV, &iv);
+    SetMonData(&gEnemyParty[0], MON_DATA_SPEED_IV, &iv);
+    SetMonData(&gEnemyParty[0], MON_DATA_SPATK_IV, &iv);
+    SetMonData(&gEnemyParty[0], MON_DATA_SPDEF_IV, &iv);
 
     return TRUE;
 }
@@ -756,35 +805,6 @@ bool8 StandardWildEncounter(u16 curMetatileBehavior, u16 prevMetatileBehavior)
     return FALSE;
 }
 
-void RockSmashWildEncounter(void)
-{
-    u16 headerId = GetCurrentMapWildMonHeaderId();
-
-    if (headerId != HEADER_NONE)
-    {
-        const struct WildPokemonInfo *wildPokemonInfo = gWildMonHeaders[headerId].rockSmashMonsInfo;
-
-        if (wildPokemonInfo == NULL)
-        {
-            gSpecialVar_Result = FALSE;
-        }
-        else if (WildEncounterCheck(wildPokemonInfo->encounterRate, TRUE) == TRUE
-         && TryGenerateWildMon(wildPokemonInfo, WILD_AREA_ROCKS, WILD_CHECK_REPEL | WILD_CHECK_KEEN_EYE) == TRUE)
-        {
-            BattleSetup_StartWildBattle();
-            gSpecialVar_Result = TRUE;
-        }
-        else
-        {
-            gSpecialVar_Result = FALSE;
-        }
-    }
-    else
-    {
-        gSpecialVar_Result = FALSE;
-    }
-}
-
 bool8 SweetScentWildEncounter(void)
 {
     s16 x, y;
@@ -928,7 +948,7 @@ u16 GetLocalWildMon(bool8 *isWaterMon)
     else if (landMonsInfo == NULL && waterMonsInfo != NULL)
     {
         *isWaterMon = TRUE;
-        return waterMonsInfo->wildPokemon[ChooseWildMonIndex_WaterRock()].species;
+        return waterMonsInfo->wildPokemon[ChooseWildMonIndex_Water()].species;
     }
     // Either land or water Pokémon
     if ((Random() % 100) < 80)
@@ -938,7 +958,7 @@ u16 GetLocalWildMon(bool8 *isWaterMon)
     else
     {
         *isWaterMon = TRUE;
-        return waterMonsInfo->wildPokemon[ChooseWildMonIndex_WaterRock()].species;
+        return waterMonsInfo->wildPokemon[ChooseWildMonIndex_Water()].species;
     }
 }
 
@@ -951,7 +971,7 @@ u16 GetLocalWaterMon(void)
         const struct WildPokemonInfo *waterMonsInfo = gWildMonHeaders[headerId].waterMonsInfo;
 
         if (waterMonsInfo)
-            return waterMonsInfo->wildPokemon[ChooseWildMonIndex_WaterRock()].species;
+            return waterMonsInfo->wildPokemon[ChooseWildMonIndex_Water()].species;
     }
     return SPECIES_NONE;
 }
@@ -1064,9 +1084,6 @@ static u8 GetMaxLevelOfSpeciesInWildTable(const struct WildPokemon *wildMon, u16
         break;
     case WILD_AREA_WATER:
         numMon = WATER_WILD_COUNT;
-        break;
-    case WILD_AREA_ROCKS:
-        numMon = ROCK_WILD_COUNT;
         break;
     }
 

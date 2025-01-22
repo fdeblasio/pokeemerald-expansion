@@ -317,57 +317,57 @@ static const u8 *const sPartnerApprenticeTexts5[] =
 
 static const u8 *const sPartnerApprenticeTexts6[] =
 {
-     PARTNER_TEXTS(Apprentice6)
+    PARTNER_TEXTS(Apprentice6)
 };
 
 static const u8 *const sPartnerApprenticeTexts7[] =
 {
-     PARTNER_TEXTS(Apprentice7)
+    PARTNER_TEXTS(Apprentice7)
 };
 
 static const u8 *const sPartnerApprenticeTexts8[] =
 {
-     PARTNER_TEXTS(Apprentice8)
+    PARTNER_TEXTS(Apprentice8)
 };
 
 static const u8 *const sPartnerApprenticeTexts9[] =
 {
-     PARTNER_TEXTS(Apprentice9)
+    PARTNER_TEXTS(Apprentice9)
 };
 
 static const u8 *const sPartnerApprenticeTexts10[] =
 {
-     PARTNER_TEXTS(Apprentice10)
+    PARTNER_TEXTS(Apprentice10)
 };
 
 static const u8 *const sPartnerApprenticeTexts11[] =
 {
-     PARTNER_TEXTS(Apprentice11)
+    PARTNER_TEXTS(Apprentice11)
 };
 
 static const u8 *const sPartnerApprenticeTexts12[] =
 {
-     PARTNER_TEXTS(Apprentice12)
+    PARTNER_TEXTS(Apprentice12)
 };
 
 static const u8 *const sPartnerApprenticeTexts13[] =
 {
-     PARTNER_TEXTS(Apprentice13)
+    PARTNER_TEXTS(Apprentice13)
 };
 
 static const u8 *const sPartnerApprenticeTexts14[] =
 {
-     PARTNER_TEXTS(Apprentice14)
+    PARTNER_TEXTS(Apprentice14)
 };
 
 static const u8 *const sPartnerApprenticeTexts15[] =
 {
-     PARTNER_TEXTS(Apprentice15)
+    PARTNER_TEXTS(Apprentice15)
 };
 
 static const u8 *const sPartnerApprenticeTexts16[] =
 {
-     PARTNER_TEXTS(Apprentice16)
+    PARTNER_TEXTS(Apprentice16)
 };
 
 static const u8 *const sPartnerTextsLass[] =

@@ -200,12 +200,12 @@
 #define B_REDIRECT_ABILITY_IMMUNITY     GEN_LATEST // In Gen5+, Pokémon with Lightning Rod/Storm Drain are immune to Electric-/Water-type moves and raises their Sp. Atk by 1 stage ontop of the redirecting effect.
 #define B_REDIRECT_ABILITY_ALLIES       GEN_LATEST // In Gen4+, Lightning Rod and Storm Drain also redirect ally's moves.
 #define B_LEAF_GUARD_PREVENTS_REST      GEN_LATEST // In Gen5+, Leaf Guard prevents the use of Rest in the sun.
-#define B_TRANSISTOR_BOOST              GEN_LATEST // In Gen9+, Transistor increases the power of Electric-type moves by 1.3x instead of 1.5x.
+#define B_TRANSISTOR_BOOST              GEN_8      // In Gen9+, Transistor increases the power of Electric-type moves by 1.3x instead of 1.5x.
 #define B_ILLUMINATE_EFFECT             GEN_LATEST // In Gen9+, Illuminate prevents accuracy from being lowered and ignores the target's evasion. Previously, it had no in-battle effect.
 #define B_WEAK_ARMOR_SPEED              GEN_LATEST // In Gen7+, when hit by a physical move, Weak Armor raises Speed by 2 stages instead of 1.
-#define B_PROTEAN_LIBERO                GEN_LATEST // In Gen9+, Protean and Libero trigger only once per Battle.
-#define B_INTREPID_SWORD                GEN_LATEST // In Gen9+, Intrepid Sword triggers only once per battle.
-#define B_DAUNTLESS_SHIELD              GEN_LATEST // In Gen9+, Dauntless Shield triggers only once per battle.
+#define B_PROTEAN_LIBERO                GEN_8      // In Gen9+, Protean and Libero trigger only once per Battle.
+#define B_INTREPID_SWORD                GEN_8      // In Gen9+, Intrepid Sword triggers only once per battle.
+#define B_DAUNTLESS_SHIELD              GEN_8      // In Gen9+, Dauntless Shield triggers only once per battle.
 #define B_DISGUISE_HP_LOSS              GEN_LATEST // In Gen8+, when a disguised Mimikyu's Disguise is busted, upon changing to its Busted Form, it loses 1/8 of its max HP.
 #define B_ABILITY_TRIGGER_CHANCE        GEN_LATEST // In Gen4+, Shed Skin, Cute Charm, Flame Body, Static, and Poison Point have a 30% chance to trigger. Previously, it was 1/3.
                                                    // In Gen5+, Effect Spore has an 11% chance to sleep, a 9% chance to poison and a 10% chance to paralyze. In Gen4, Effect Spore has a 30% chance to sleep, poison, or paralyze, each with an equal chance. In Gen3, it's 10%.
@@ -241,15 +241,15 @@
 #define B_TORMENT_TIMER      3
 
 // Item settings
-#define B_CONFUSE_BERRIES_HEAL      GEN_LATEST // In Gen8+, Figy and similar Berries heal 1/3 of max HP and activate at 25% HP. In Gen7, they restore half HP and activate at 25% HP. In Gen6 and earlier, they restore 1/8 of max HP and activate at half HP.
+#define B_CONFUSE_BERRIES_HEAL      GEN_7      // In Gen8+, Figy and similar Berries heal 1/3 of max HP and activate at 25% HP. In Gen7, they restore half HP and activate at 25% HP. In Gen6 and earlier, they restore 1/8 of max HP and activate at half HP.
 #define B_X_ITEMS_BUFF              GEN_LATEST // In Gen7+, X items raise a stat by 2 stages instead of 1.
 #define B_X_ITEMS_CROSSUSE          TRUE       // In Gen3, you can only use X items on the current battler, but in Gen7 you can use an X item on any friendly battler in double battles (we are not sure in which gen the change occured)
 #define B_MENTAL_HERB               GEN_LATEST // In Gen5+, Mental Herb cures Taunt, Encore, Torment, Heal Block, and Disable in addition to Infatuation from before.
 #define B_TRAINERS_KNOCK_OFF_ITEMS  TRUE       // If TRUE, Trainers can steal/swap your items (non-berries are restored after battle). In vanilla games, Trainers cannot steal items outside of facilities.
-#define B_RETURN_STOLEN_NPC_ITEMS   GEN_LATEST // In Gen5+, Thief and Covet no longer permanently steal items from NPCs.
+#define B_RETURN_STOLEN_NPC_ITEMS   GEN_4      // In Gen5+, Thief and Covet no longer permanently steal items from NPCs.
 #define B_STEAL_WILD_ITEMS          GEN_LATEST // In Gen9+, Thief and Covet steal a wild Pokémon's item and send it to the Bag. In Gen8 and earlier, the stolen item would be held by the Thief/Covet user.
 #define B_RESTORE_HELD_BATTLE_ITEMS GEN_LATEST // In Gen9+, all non-Berry items are restored after battle.
-#define B_SOUL_DEW_BOOST            GEN_LATEST // In Gen7+, Soul Dew increases the power of the Latis' Psychic- and Dragon-type moves by ~20%. In Gen6 and earlier, it increased their Sp. Atk and Sp. Def by 50% each.
+#define B_SOUL_DEW_BOOST            GEN_6      // In Gen7+, Soul Dew increases the power of the Latis' Psychic- and Dragon-type moves by ~20%. In Gen6 and earlier, it increased their Sp. Atk and Sp. Def by 50% each.
 #define B_NET_BALL_MODIFIER         GEN_LATEST // In Gen7+, Net Ball's catch multiplier is 5x instead of 3x.
 #define B_DIVE_BALL_MODIFIER        GEN_LATEST // In Gen4+, Dive Ball's effectiveness increases when Surfing or Fishing in addition to Diving.
 #define B_NEST_BALL_MODIFIER        GEN_LATEST // Nest Ball's formula varies depending on the generation. See Cmd_handleballthrow.
@@ -260,9 +260,9 @@
 #define B_LURE_BALL_MODIFIER        GEN_LATEST // In Gen8+, Lure Ball's catch multiplier is 4x. In Gen7, it's 5x. In Gen6 and earlier, it's 3x.
 #define B_HEAVY_BALL_MODIFIER       GEN_LATEST // Heavy Ball's ranges. See Cmd_handleballthrow.
 #define B_DREAM_BALL_MODIFIER       GEN_LATEST // In Gen8+, Dream Ball's catch multiplier is 4x when the target is asleep or has the Ability Comatose.
-#define B_SPORT_BALL_MODIFIER       GEN_LATEST // In Gen8+, Sport Ball's catch multiplier was reduced from 1.5x to 1x.
-#define B_SAFARI_BALL_MODIFIER      GEN_LATEST // In Gen8+, Safari Ball's catch multiplier is 1x. In Gens2-6, it's 1.5x. In Gen1, it's 2x.
-#define B_FRIEND_BALL_MODIFIER      GEN_LATEST // In Gen8+, the initial friendship of Pokémon caught in a Friend Ball friendship was reduced from 200 to 150.
+#define B_SPORT_BALL_MODIFIER       GEN_7      // In Gen8+, Sport Ball's catch multiplier was reduced from 1.5x to 1x.
+#define B_SAFARI_BALL_MODIFIER      GEN_7      // In Gen8+, Safari Ball's catch multiplier is 1x. In Gens2-6, it's 1.5x. In Gen1, it's 2x.
+#define B_FRIEND_BALL_MODIFIER      GEN_7      // In Gen8+, the initial friendship of Pokémon caught in a Friend Ball friendship was reduced from 200 to 150.
 #define B_SERENE_GRACE_BOOST        GEN_LATEST // In Gen5+, Serene Grace boosts the added flinch chance of King's Rock and Razor Fang.
 #define B_IRON_BALL                 GEN_LATEST // In Gen5+, Flying-type Pokémon holding an Iron Ball take neutral damage from Ground-type moves regardless of their other types, except during Inverse Battles or if the Pokémon is grounded by any other effect.
 
@@ -373,9 +373,9 @@
 #define B_FLAG_VICTORY_CATCH_GUARANTEED 0          // If set, you will be prompted to throw a ball after the encounter has been defeated, guaranteed to catch. You can't capture the encounter in any other way.
 
 #define B_LAST_USED_BALL            TRUE       // If set to TRUE, the "last used Ball" feature from Gen7+ will be implemented
-#define B_LAST_USED_BALL_BUTTON     R_BUTTON   // If last used Ball is implemented, this button (or button combination) will trigger throwing the last used Ball.
+#define B_LAST_USED_BALL_BUTTON     L_BUTTON   // If last used Ball is implemented, this button (or button combination) will trigger throwing the last used Ball.
 #define B_LAST_USED_BALL_CYCLE      TRUE       // If set to TRUE, then holding B_LAST_USED_BALL_BUTTON while pressing the D-Pad cycles through the Balls.
-#define B_CATCH_SWAP_INTO_PARTY     GEN_LATEST // In Gen7+, the option to swap caught Pokémon into the party will appear, allowing you to send a different Pokémon to the Box.
+#define B_CATCH_SWAP_INTO_PARTY     GEN_6      // In Gen7+, the option to swap caught Pokémon into the party will appear, allowing you to send a different Pokémon to the Box.
 #define B_CATCH_SWAP_CHECK_HMS      TRUE       // If set to TRUE, the catch swap feature above will prevent returning Pokémon to the Box if they know HMs.
 
 // Other settings
@@ -389,7 +389,7 @@
 #define B_TOXIC_REVERSAL                GEN_LATEST // In Gen5+, bad poison will change to regular poison at the end of battles.
 #define B_TRY_CATCH_TRAINER_BALL        GEN_LATEST // In Gen4+, trying to catch a Trainer's Pokémon no longers consume the Poké Ball.
 #define B_SLEEP_CLAUSE                  FALSE      // Enables Sleep Clause all the time in every case, overriding B_FLAG_SLEEP_CLAUSE. Use that for modularity.
-#define B_PARTNER_MONS_MARKED_SEEN      FALSE      // If set to TRUE, if your Double Battle partner sends out a Pokémon you haven't encountered yet, it will be marked as SEEN in your Pokédex.
+#define B_PARTNER_MONS_MARKED_SEEN      TRUE       // If set to TRUE, if your Double Battle partner sends out a Pokémon you haven't encountered yet, it will be marked as SEEN in your Pokédex.
 #define B_MULTI_HALF_TEAMS              FALSE      // If TRUE, trainers will be capped at 3 Pokémon each when there are 2 trainers on one side in a battle. If FALSE, per-battle capping may still be set using `Multi Party: Half` in `trainers.party`
 #define B_TERA_ORB_ALWAYS_CHARGED       FALSE      // If TRUE, causes the Tera Orb to always be charged all the time in every case, overriding B_FLAG_TERA_ORB_CHARGED. Use that for modularity.
 
@@ -405,13 +405,13 @@
 #define B_NEW_ROCKS_PARTICLE            FALSE    // If set to TRUE, it updates rock particles.
 #define B_NEW_LEAF_PARTICLE             FALSE    // If set to TRUE, it updates the leaf particle.
 #define B_NEW_EMBER_PARTICLES           FALSE    // If set to TRUE, it updates Ember's fire particle.
-#define B_NEW_MEAN_LOOK_PARTICLE        FALSE    // If set to TRUE, it updates Mean Look's eye particle.
+#define B_NEW_MEAN_LOOK_PARTICLE        TRUE     // If set to TRUE, it updates Mean Look's eye particle.
 #define B_NEW_TEETH_PARTICLE            FALSE    // If set to TRUE, it updates Bite/Crunch teeth particle.
 #define B_NEW_HANDS_FEET_PARTICLE       FALSE    // If set to TRUE, it updates chop/kick/punch particles.
 #define B_NEW_SPIKES_PARTICLE           FALSE    // If set to TRUE, it updates Spikes' particle.
 #define B_NEW_FLY_BUBBLE_PARTICLE       FALSE    // If set to TRUE, it updates Fly's 'bubble' particle.
 #define B_NEW_CURSE_NAIL_PARTICLE       FALSE    // If set to TRUE, it updates Curse's nail particle.
-#define B_NEW_BATON_PASS_BALL_PARTICLE  FALSE    // If set to TRUE, it updates Baton Pass' Poké Ball particle.
+#define B_NEW_BATON_PASS_BALL_PARTICLE  TRUE     // If set to TRUE, it updates Baton Pass' Poké Ball particle.
 #define B_NEW_MORNING_SUN_STAR_PARTICLE FALSE    // If set to TRUE, it updates Morning Sun's star particles.
 #define B_NEW_IMPACT_PALETTE            FALSE    // If set to TRUE, it updates the basic impact palette.
 #define B_NEW_SURF_PARTICLE_PALETTE     FALSE    // If set to TRUE, it updates Surf's wave palette.
@@ -434,10 +434,10 @@
 #define B_SHOW_EFFECTIVENESS        SHOW_EFFECTIVENESS_SEEN // If not SHOW_EFFECTIVENESS_NEVER, the PP string is replaced by a type effectiveness indicator based on the move and the target.
 
 // Pokémon battle sprite settings
-#define B_ENEMY_MON_SHADOW_STYLE        GEN_LATEST // In Gen4+, all opposing Pokémon will have a shadow drawn beneath them.
+#define B_ENEMY_MON_SHADOW_STYLE        GEN_3  // In Gen4+, all opposing Pokémon will have a shadow drawn beneath them.
 
 //  Battle UI settings
-#define B_MOVE_REARRANGEMENT_IN_BATTLE  GEN_LATEST  //  In Gen4+, move slots can no longer be rearranged in battle.
+#define B_MOVE_REARRANGEMENT_IN_BATTLE  GEN_3  //  In Gen4+, move slots can no longer be rearranged in battle.
 
 #define B_POOL_SETTING_CONSISTENT_RNG       FALSE    // If set to TRUE, the same Trainer will always generate the same pool on the same save file.
 #define B_POOL_SETTING_USE_FIXED_SEED       FALSE    // If set to TRUE, RNG will use the fixed seed defined in B_POOL_SETTING_FIXED_SEED.

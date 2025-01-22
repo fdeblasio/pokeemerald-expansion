@@ -328,8 +328,8 @@ const u16 gTrainerPalette_SwimmerMFrlg[] = INCGFX_U16("graphics/trainers/palette
 const u32 gTrainerFrontPic_CueBallFrlg[] = INCGFX_U32("graphics/trainers/front_pics/cue_ball_frlg.png", ".4bpp.smol");
 const u16 gTrainerPalette_CueBallFrlg[] = INCGFX_U16("graphics/trainers/palettes/cue_ball_frlg.pal", ".gbapal");
 
-const u32 gTrainerFrontPic_GamerFrlg[] = INCGFX_U32("graphics/trainers/front_pics/gamer_frlg.png", ".4bpp.smol");
-const u16 gTrainerPalette_GamerFrlg[] = INCGFX_U16("graphics/trainers/palettes/gamer_frlg.pal", ".gbapal");
+const u32 gTrainerFrontPic_GamerFrlg[] = INCGFX_U32("graphics/trainers/front_pics/gambler_frlg.png", ".4bpp.smol");
+const u16 gTrainerPalette_GamerFrlg[] = INCGFX_U16("graphics/trainers/palettes/gambler_frlg.pal", ".gbapal");
 
 const u32 gTrainerFrontPic_BeautyFrlg[] = INCGFX_U32("graphics/trainers/front_pics/beauty_frlg.png", ".4bpp.smol");
 const u16 gTrainerPalette_BeautyFrlg[] = INCGFX_U16("graphics/trainers/palettes/beauty_frlg.pal", ".gbapal");

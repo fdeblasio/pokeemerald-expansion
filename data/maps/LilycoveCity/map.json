@@ -247,7 +247,7 @@
       "flag": "FLAG_HIDE_LILYCOVE_CITY_RIVAL"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SCHOOL_KID_M",
+      "graphics_id": "OBJ_EVENT_GFX_SCHOOLKID_M",
       "x": 16,
       "y": 23,
       "elevation": 3,
@@ -509,8 +509,8 @@
       "x": 61,
       "y": 7,
       "elevation": 0,
-      "item": "ITEM_PP_UP",
-      "flag": "FLAG_HIDDEN_ITEM_LILYCOVE_CITY_PP_UP"
+      "item": "ITEM_EXP_CANDY_L",
+      "flag": "FLAG_HIDDEN_ITEM_LILYCOVE_CITY_EXP_CANDY_L"
     },
     {
       "type": "hidden_item",

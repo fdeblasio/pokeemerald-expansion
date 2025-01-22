@@ -6,22 +6,33 @@ LavaridgeTown_Mart_EventScript_Clerk::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemart LavaridgeTown_Mart_Pokemart
+	pokemart 0
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+LavaridgeTown_Mart_EventScript_TMClerk::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart LavaridgeTown_Mart_TMs
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
 
 	.align 2
-LavaridgeTown_Mart_Pokemart:
-	.2byte ITEM_GREAT_BALL
-	.2byte ITEM_SUPER_POTION
-	.2byte ITEM_ANTIDOTE
-	.2byte ITEM_PARALYZE_HEAL
-	.2byte ITEM_AWAKENING
-	.2byte ITEM_BURN_HEAL
-	.2byte ITEM_REVIVE
-	.2byte ITEM_SUPER_REPEL
-	.2byte ITEM_X_SPEED
+LavaridgeTown_Mart_TMs:
+	.2byte ITEM_TM_TOXIC
+	.2byte ITEM_TM_BRINE
+	.2byte ITEM_TM_SIGNAL_BEAM
+	.2byte ITEM_TM_PAYBACK
+	.2byte ITEM_TM_NASTY_PLOT
+	.2byte ITEM_TM_SWORDS_DANCE
+	.2byte ITEM_TM_STEALTH_ROCK
+	.2byte ITEM_TM_GRASS_KNOT
+	.2byte ITEM_TM_U_TURN
+	.2byte ITEM_TM_TRICK_ROOM
 	pokemartlistend
 
 LavaridgeTown_Mart_EventScript_ExpertM::

@@ -1,5 +1,8 @@
 PlayersHouse_2F_EventScript_BlockStairsUntilClockIsSet::
-	setvar VAR_LITTLEROOT_INTRO_STATE, 5
+	setvar VAR_LITTLEROOT_INTRO_STATE, 6
+	setflag FLAG_SET_WALL_CLOCK
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_1
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_2
 	return
 
 PlayersHouse_1F_EventScript_EnterHouseMovingIn::
@@ -43,57 +46,14 @@ PlayersHouse_1F_EventScript_MomGoSeeRoom::
 LittlerootTown_BrendansHouse_2F_EventScript_WallClock::
 	lockall
 	setvar VAR_0x8004, MALE
-	goto PlayersHouse_2F_EventScript_WallClock
+	goto PlayersHouse_2F_EventScript_CheckWallClock
 	end
 
 LittlerootTown_MaysHouse_2F_EventScript_WallClock::
 	lockall
 	setvar VAR_0x8004, FEMALE
-	goto PlayersHouse_2F_EventScript_WallClock
+	goto PlayersHouse_2F_EventScript_CheckWallClock
 	end
-
-PlayersHouse_2F_EventScript_WallClock::
-	goto_if_set FLAG_SET_WALL_CLOCK, PlayersHouse_2F_EventScript_CheckWallClock
-	msgbox PlayersHouse_2F_Text_ClockIsStopped, MSGBOX_DEFAULT
-	call PlayersHouse_2F_EventScript_SetWallClock
-	delay 30
-	setvar VAR_LITTLEROOT_INTRO_STATE, 6
-	setflag FLAG_SET_WALL_CLOCK
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_1
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_2
-	checkplayergender
-	call_if_eq VAR_RESULT, MALE, PlayersHouse_2F_EventScript_MomComesUpstairsMale
-	call_if_eq VAR_RESULT, FEMALE, PlayersHouse_2F_EventScript_MomComesUpstairsFemale
-	playse SE_EXIT
-	removeobject VAR_0x8008
-	releaseall
-	end
-
-PlayersHouse_2F_EventScript_MomComesUpstairsMale::
-	setvar VAR_0x8008, LOCALID_PLAYERS_HOUSE_2F_MOM
-	addobject VAR_0x8008
-	applymovement VAR_0x8008, PlayersHouse_2F_Movement_MomEntersMale
-	waitmovement 0
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
-	waitmovement 0
-	msgbox PlayersHouse_2F_Text_HowDoYouLikeYourRoom, MSGBOX_DEFAULT
-	closemessage
-	applymovement VAR_0x8008, PlayersHouse_2F_Movement_MomExitsMale
-	waitmovement 0
-	return
-
-PlayersHouse_2F_EventScript_MomComesUpstairsFemale::
-	setvar VAR_0x8008, LOCALID_PLAYERS_HOUSE_2F_MOM
-	addobject VAR_0x8008
-	applymovement VAR_0x8008, PlayersHouse_2F_Movement_MomEntersFemale
-	waitmovement 0
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
-	waitmovement 0
-	msgbox PlayersHouse_2F_Text_HowDoYouLikeYourRoom, MSGBOX_DEFAULT
-	closemessage
-	applymovement VAR_0x8008, PlayersHouse_2F_Movement_MomExitsFemale
-	waitmovement 0
-	return
 
 PlayersHouse_2F_EventScript_CheckWallClock::
 	incrementgamestat GAME_STAT_CHECKED_CLOCK
@@ -161,6 +121,7 @@ PlayersHouse_1F_EventScript_PetalburgGymReportMale::
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	msgbox PlayersHouse_1F_Text_ItsOverWeMissedHim, MSGBOX_DEFAULT
+	msgbox PlayersHouse_1F_Text_HowDoYouLikeYourRoom, MSGBOX_DEFAULT
 	msgbox PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor, MSGBOX_DEFAULT
 	closemessage
 	setvar VAR_TEMP_1, 1
@@ -186,6 +147,7 @@ PlayersHouse_1F_EventScript_PetalburgGymReportFemale::
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	msgbox PlayersHouse_1F_Text_ItsOverWeMissedHim, MSGBOX_DEFAULT
+	msgbox PlayersHouse_1F_Text_HowDoYouLikeYourRoom, MSGBOX_DEFAULT
 	msgbox PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor, MSGBOX_DEFAULT
 	closemessage
 	setvar VAR_TEMP_1, 1
@@ -434,6 +396,14 @@ PlayersHouse_1F_EventScript_GetSSTicketAndSeeLatiTV::
 	call_if_eq VAR_0x8008, FEMALE, PlayersHouse_1F_EventScript_DadApproachPlayerFemale
 	msgbox PlayersHouse_1F_Text_TicketFromBrineyCameForYou, MSGBOX_DEFAULT
 	giveitem ITEM_SS_TICKET
+	giveitem ITEM_EON_TICKET
+	setflag FLAG_ENABLE_SHIP_SOUTHERN_ISLAND
+	giveitem ITEM_MYSTIC_TICKET
+	setflag FLAG_ENABLE_SHIP_NAVEL_ROCK
+	giveitem ITEM_AURORA_TICKET
+	setflag FLAG_ENABLE_SHIP_BIRTH_ISLAND
+	giveitem ITEM_OLD_SEA_MAP
+	setflag FLAG_ENABLE_SHIP_FARAWAY_ISLAND
 	msgbox PlayersHouse_1F_Text_PortsInSlateportLilycove, MSGBOX_DEFAULT
 	closemessage
 	delay 20
@@ -464,15 +434,9 @@ PlayersHouse_1F_EventScript_GetSSTicketAndSeeLatiTV::
 	msgbox PlayersHouse_1F_Text_LatiEmergencyNewsFlash, MSGBOX_DEFAULT
 	closemessage
 	clearflag FLAG_SYS_TV_LATIAS_LATIOS
-	setflag FLAG_LATIOS_OR_LATIAS_ROAMING
 	special TurnOffTVScreen
 	call_if_eq VAR_0x8008, MALE, PlayersHouse_1F_EventScript_MomApproachPlayerAfterTVMale
 	call_if_eq VAR_0x8008, FEMALE, PlayersHouse_1F_EventScript_MomApproachPlayerAfterTVFemale
-	msgbox PlayersHouse_1F_Text_WhatColorDidTheySay, MSGBOX_DEFAULT
-	multichoice 22, 8, MULTI_TV_LATI, TRUE
-	copyvar VAR_0x8004, VAR_RESULT
-	special InitRoamer
-	copyvar VAR_ROAMER_POKEMON, VAR_RESULT
 	msgbox PlayersHouse_1F_Text_StillUnknownPokemon, MSGBOX_DEFAULT
 	closemessage
 	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 4

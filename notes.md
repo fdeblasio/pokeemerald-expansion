@@ -162,10 +162,13 @@ Get rid of Gym Leader rematches needing two Pokemon
 
 ### Field Moves
 - Edit moves that work in field
+    - Might be tricky with new changes
     - Maybe edit so instead of "if has move" to "if can learn move"
         - Might not be simple since it's .inc and not C
     - Cut (only in Trick House):
         - Moves boosted by Sharpness
+    - Rock Smash (only in Rusturf Tunnel):
+        - Add Brick Break functionality back
     - Strength (only in Trick House):
         - Superpower?
         - Close Combat?

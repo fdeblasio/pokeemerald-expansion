@@ -131,7 +131,7 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle7::
 	msgbox Route110_TrickHouseEnd_Text_AllNightSettingUpArrows, MSGBOX_DEFAULT
 	msgbox Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward, MSGBOX_DEFAULT
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
-	giveitem ITEM_PP_MAX
+	giveitem ITEM_ABILITY_PATCH
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
 	msgbox Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou, MSGBOX_DEFAULT
 	closemessage
@@ -154,27 +154,14 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle8::
 	delay 30
 	msgbox Route110_TrickHouseEnd_Text_DefeatedMePreferWhichTent, MSGBOX_DEFAULT
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
-	call Route110_TrickHouseEnd_EventScript_ChooseTent
+	givedecoration DECOR_RED_TENT
+	givedecoration DECOR_BLUE_TENT
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_NoRoomForTent
 	msgbox Route110_TrickHouseEnd_Text_LeavingOnJourney, MSGBOX_DEFAULT
 	call Route110_TrickHouseEnd_EventScript_TrickMasterExit
 	special ResetTrickHouseNuggetFlag
 	release
 	end
-
-Route110_TrickHouseEnd_EventScript_ChooseTent::
-	multichoice 0, 0, MULTI_TENT, TRUE
-	switch VAR_RESULT
-	case 0, Route110_TrickHouseEnd_EventScript_GiveRedTent
-	goto Route110_TrickHouseEnd_EventScript_GiveBlueTent
-
-Route110_TrickHouseEnd_EventScript_GiveRedTent::
-	givedecoration DECOR_RED_TENT
-	return
-
-Route110_TrickHouseEnd_EventScript_GiveBlueTent::
-	givedecoration DECOR_BLUE_TENT
-	return
 
 Route110_TrickHouseEnd_EventScript_TrickMasterExit::
 	applymovement LOCALID_TRICK_MASTER_END, Route110_TrickHouse_Movement_TrickMasterSpin
@@ -315,8 +302,7 @@ Route110_TrickHouseEnd_Text_DefeatedMePreferWhichTent:
 	.string "that is myself, I demand that you take\l"
 	.string "this keepsake!\p"
 	.string "Actually there are two--\n"
-	.string "a Red Tent and a Blue Tent.\l"
-	.string "Which do you prefer?$"
+	.string "a Red Tent and a Blue Tent.$"
 
 Route110_TrickHouseEnd_Text_NoRoomInPC:
 	.string "What? No room in your PC?\n"

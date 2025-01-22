@@ -784,7 +784,7 @@ static void MoveRelearnerLoadBattleMoveDescription(u32 chosenMove)
     AddTextPrinterParameterized(RELEARNERWIN_DESC_BATTLE, FONT_NORMAL, str, 4, 25, TEXT_SKIP_DRAW, NULL);
 
     x = 4 + GetStringWidth(FONT_NORMAL, gText_MoveRelearnerPP, 0);
-    ConvertIntToDecimalStringN(buffer, GetMovePP(chosenMove), STR_CONV_MODE_LEFT_ALIGN, 2);
+    ConvertIntToDecimalStringN(buffer, CalculateMaxPP(chosenMove), STR_CONV_MODE_LEFT_ALIGN, 2);
     AddTextPrinterParameterized(RELEARNERWIN_DESC_BATTLE, FONT_NORMAL, buffer, x, 41, TEXT_SKIP_DRAW, NULL);
 
     if (GetMovePower(chosenMove) < 2)

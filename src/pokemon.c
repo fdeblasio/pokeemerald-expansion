@@ -1043,6 +1043,7 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
     u8 availableIVs[NUM_STATS];
     u8 selectedIvs[NUM_STATS];
     bool32 isShiny;
+    u8 ppBonus;
 
     ZeroBoxMonData(boxMon);
 
@@ -1211,6 +1212,9 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
     }
 
     GiveBoxMonInitialMoveset(boxMon);
+
+    ppBonus = 255;
+    SetBoxMonData(boxMon, MON_DATA_PP_BONUSES, &ppBonus);
 }
 
 void CreateMonWithNature(struct Pokemon *mon, u16 species, u8 level, u8 fixedIV, u8 nature)
@@ -1692,7 +1696,7 @@ static u16 CalculateBoxMonChecksumReencrypt(struct BoxPokemon *boxMon)
 #define CALC_STAT(base, iv, ev, statIndex, field)               \
 {                                                               \
     u8 baseStat = gSpeciesInfo[species].base;                   \
-    s32 n = (((2 * baseStat + iv + ev / 4) * level) / 100) + 5; \
+    s32 n = (((2 * baseStat + iv + ev) * level) / 100) + 5;     \
     n = ModifyStatByNature(nature, n, statIndex);               \
     if (B_FRIENDSHIP_BOOST == TRUE)                             \
         n = n + ((n * 10 * friendship) / (MAX_FRIENDSHIP * 100));\
@@ -1731,7 +1735,7 @@ void CalculateMonStats(struct Pokemon *mon)
     else
     {
         s32 n = 2 * GetSpeciesBaseHP(species) + hpIV;
-        newMaxHP = (((n + hpEV / 4) * level) / 100) + level + 10;
+        newMaxHP = (((n + hpEV) * level) / 100) + level + 10;
     }
 
     gBattleScripting.levelUpHP = newMaxHP - oldMaxHP;
@@ -1815,9 +1819,9 @@ u16 GiveMoveToBoxMon(struct BoxPokemon *boxMon, u16 move)
         u16 existingMove = GetBoxMonData(boxMon, MON_DATA_MOVE1 + i, NULL);
         if (existingMove == MOVE_NONE)
         {
-            u32 pp = GetMovePP(move);
+            u8 maxPP = CalculateMaxPP(move);
             SetBoxMonData(boxMon, MON_DATA_MOVE1 + i, &move);
-            SetBoxMonData(boxMon, MON_DATA_PP1 + i, &pp);
+            SetBoxMonData(boxMon, MON_DATA_PP1 + i, &maxPP);
             return move;
         }
         if (existingMove == move)
@@ -1835,7 +1839,7 @@ u16 GiveMoveToBattleMon(struct BattlePokemon *mon, u16 move)
         if (mon->moves[i] == MOVE_NONE)
         {
             mon->moves[i] = move;
-            mon->pp[i] = GetMovePP(move);
+            mon->pp[i] = CalculateMaxPP(move);
             return move;
         }
     }
@@ -1846,8 +1850,8 @@ u16 GiveMoveToBattleMon(struct BattlePokemon *mon, u16 move)
 void SetMonMoveSlot(struct Pokemon *mon, u16 move, u8 slot)
 {
     SetMonData(mon, MON_DATA_MOVE1 + slot, &move);
-    u32 pp = GetMovePP(move);
-    SetMonData(mon, MON_DATA_PP1 + slot, &pp);
+    u8 maxPP = CalculateMaxPP(move);
+    SetMonData(mon, MON_DATA_PP1 + slot, &maxPP);
 }
 
 static void SetMonMoveSlot_KeepPP(struct Pokemon *mon, u16 move, u8 slot)
@@ -1864,7 +1868,7 @@ static void SetMonMoveSlot_KeepPP(struct Pokemon *mon, u16 move, u8 slot)
 void SetBattleMonMoveSlot(struct BattlePokemon *mon, u16 move, u8 slot)
 {
     mon->moves[slot] = move;
-    mon->pp[slot] = GetMovePP(move);
+    mon->pp[slot] = CalculateMaxPP(move);
 }
 
 void GiveMonInitialMoveset(struct Pokemon *mon)
@@ -1918,8 +1922,8 @@ void GiveBoxMonInitialMoveset(struct BoxPokemon *boxMon) //Credit: AsparagusEdua
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
         SetBoxMonData(boxMon, MON_DATA_MOVE1 + i, &moves[i]);
-        u32 pp = GetMovePP(moves[i]);
-        SetBoxMonData(boxMon, MON_DATA_PP1 + i, &pp);
+        u8 maxPP = CalculateMaxPP(moves[i]);
+        SetBoxMonData(boxMon, MON_DATA_PP1 + i, &maxPP);
     }
 }
 
@@ -1984,7 +1988,6 @@ void DeleteFirstMoveAndGiveMoveToMon(struct Pokemon *mon, u16 move)
     s32 i;
     u16 moves[MAX_MON_MOVES];
     u8 pp[MAX_MON_MOVES];
-    u8 ppBonuses;
 
     for (i = 0; i < MAX_MON_MOVES - 1; i++)
     {
@@ -1992,18 +1995,14 @@ void DeleteFirstMoveAndGiveMoveToMon(struct Pokemon *mon, u16 move)
         pp[i] = GetMonData(mon, MON_DATA_PP2 + i, NULL);
     }
 
-    ppBonuses = GetMonData(mon, MON_DATA_PP_BONUSES, NULL);
-    ppBonuses >>= 2;
     moves[MAX_MON_MOVES - 1] = move;
-    pp[MAX_MON_MOVES - 1] = GetMovePP(move);
+    pp[MAX_MON_MOVES - 1] = CalculateMaxPP(move);
 
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
         SetMonData(mon, MON_DATA_MOVE1 + i, &moves[i]);
         SetMonData(mon, MON_DATA_PP1 + i, &pp[i]);
     }
-
-    SetMonData(mon, MON_DATA_PP_BONUSES, &ppBonuses);
 }
 
 void DeleteFirstMoveAndGiveMoveToBoxMon(struct BoxPokemon *boxMon, u16 move)
@@ -2011,7 +2010,6 @@ void DeleteFirstMoveAndGiveMoveToBoxMon(struct BoxPokemon *boxMon, u16 move)
     s32 i;
     u16 moves[MAX_MON_MOVES];
     u8 pp[MAX_MON_MOVES];
-    u8 ppBonuses;
 
     for (i = 0; i < MAX_MON_MOVES - 1; i++)
     {
@@ -2019,18 +2017,14 @@ void DeleteFirstMoveAndGiveMoveToBoxMon(struct BoxPokemon *boxMon, u16 move)
         pp[i] = GetBoxMonData(boxMon, MON_DATA_PP2 + i, NULL);
     }
 
-    ppBonuses = GetBoxMonData(boxMon, MON_DATA_PP_BONUSES, NULL);
-    ppBonuses >>= 2;
     moves[MAX_MON_MOVES - 1] = move;
-    pp[MAX_MON_MOVES - 1] = GetMovePP(move);
+    pp[MAX_MON_MOVES - 1] = CalculateMaxPP(move);
 
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
         SetBoxMonData(boxMon, MON_DATA_MOVE1 + i, &moves[i]);
         SetBoxMonData(boxMon, MON_DATA_PP1 + i, &pp[i]);
     }
-
-    SetBoxMonData(boxMon, MON_DATA_PP_BONUSES, &ppBonuses);
 }
 
 u8 CountAliveMonsInBattle(u8 caseId, u32 battler)
@@ -3619,16 +3613,9 @@ u8 CalculatePPWithBonus(u16 move, u8 ppBonuses, u8 moveIndex)
     return basePP + ((basePP * 20 * ((gPPUpGetMask[moveIndex] & ppBonuses) >> (2 * moveIndex))) / 100);
 }
 
-void RemoveMonPPBonus(struct Pokemon *mon, u8 moveIndex)
+u8 CalculateMaxPP(u16 move)
 {
-    u8 ppBonuses = GetMonData(mon, MON_DATA_PP_BONUSES, NULL);
-    ppBonuses &= gPPUpClearMask[moveIndex];
-    SetMonData(mon, MON_DATA_PP_BONUSES, &ppBonuses);
-}
-
-void RemoveBattleMonPPBonus(struct BattlePokemon *mon, u8 moveIndex)
-{
-    mon->ppBonuses &= gPPUpClearMask[moveIndex];
+    return GetMovePP(move) * 16 / 10;
 }
 
 void PokemonToBattleMon(struct Pokemon *src, struct BattlePokemon *dst)

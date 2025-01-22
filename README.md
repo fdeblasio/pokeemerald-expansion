@@ -194,6 +194,11 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
 >>>>>>> aa9aeb750b (Updated notes)
 
 ## Known bugs and other notes
+- Gabby and Ty logic needs testing
+    - Doesn't work for cheat start because the flags get cleared after gym battles
+    - However, if someone beats a gym but doesn't beat Gabby/Ty, then it might cause them to be two places at once
+    - Never thought about this before because I face every trainer when testing, but that's not always the case for other players
+    - Instead, maybe both gym battles AND G/T battles check both badges and existing flags/GabbyAndTyGetBattleNum?
 - Using the Exp. Share can cause your team to become overpowered
 - Followers will stop following you if you use the naming screen from the party menu. It will start to follow you again if you talk to it
 - Newer Pokémon don't have follower sprites
@@ -269,8 +274,8 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
 - HMs can now be forgotten
     - Fly can now be used from the Start Menu after getting Mauville's badge
     - Cut and Strength no longer need a badge to be used
-    - Cut trees and Strength boulders have been removed from everywhere but the Trick House
-    - Rock Smash rocks have been removed from everywhere but Rusturf Tunnel. Brick Break can now also break them
+        - Cut trees and Strength boulders have been removed from everywhere but the Trick House
+    - Rock Smash rocks have been removed from everywhere but Rusturf Tunnel
     - The Escape Rope can by used in the Trick Room puzzles that involve Cut/Strength
     - Flash is no longer needed anywhere
     - Surf, Dive and Waterfall have been replaced by a key item

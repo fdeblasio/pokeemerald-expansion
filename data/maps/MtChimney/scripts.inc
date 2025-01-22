@@ -49,9 +49,9 @@ MtChimney_EventScript_Maxie::
 	delay 30
 	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject LOCALID_MT_CHIMNEY_MAXIE
-	removeobject LOCALID_MT_CHIMNEY_MAGMA_GRUNT_1
+	removeobject LOCALID_MT_CHIMNEY_GINNY
 	removeobject LOCALID_MT_CHIMNEY_TABITHA
-	removeobject LOCALID_MT_CHIMNEY_MAGMA_GRUNT_2
+	removeobject LOCALID_MT_CHIMNEY_LANDON
 	setflag FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA
 	fadescreenswapbuffers FADE_FROM_BLACK
 	setobjectxyperm LOCALID_MT_CHIMNEY_ARCHIE, 10, 12
@@ -410,9 +410,9 @@ MtChimney_EventScript_Tabitha::
 	msgbox MtChimney_Text_TabithaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-MtChimney_EventScript_Grunt2::
-	trainerbattle_single TRAINER_GINNY_MT_CHIMNEY, MtChimney_Text_Grunt2Intro, MtChimney_Text_Grunt2Defeat
-	msgbox MtChimney_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
+MtChimney_EventScript_Landon::
+	trainerbattle_single TRAINER_LANDON_MT_CHIMNEY, MtChimney_Text_LandonIntro, MtChimney_Text_LandonDefeat
+	msgbox MtChimney_Text_LandonPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 MtChimney_EventScript_BusyMagmaGrunt1::
@@ -515,9 +515,9 @@ MtChimney_EventScript_Shirley::
 	msgbox MtChimney_Text_ShirleyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-MtChimney_EventScript_Grunt1::
-	trainerbattle_single TRAINER_GINNY_MT_CHIMNEY, MtChimney_Text_Grunt1Intro, MtChimney_Text_Grunt1Defeat
-	msgbox MtChimney_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
+MtChimney_EventScript_Ginny::
+	trainerbattle_single TRAINER_GINNY_MT_CHIMNEY, MtChimney_Text_GinnyIntro, MtChimney_Text_GinnyDefeat
+	msgbox MtChimney_Text_GinnyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 MtChimney_EventScript_Sawyer::
@@ -608,32 +608,32 @@ MtChimney_Text_TabithaPostBattle:
 	.string "Give it the Meteorite's energy!\p"
 	.string "Hehehe…$"
 
-MtChimney_Text_Grunt2Intro:
+MtChimney_Text_LandonIntro:
 	.string "We of Team Magma are working hard for\n"
 	.string "everyone's sake.\p"
 	.string "Like, if that thing's power made more\n"
 	.string "land, there'd be more places to live.\p"
 	.string "Everyone'd be happy!$"
 
-MtChimney_Text_Grunt2Defeat:
+MtChimney_Text_LandonDefeat:
 	.string "Hunh?\n"
 	.string "What do you mean I lost?$"
 
-MtChimney_Text_Grunt2PostBattle:
+MtChimney_Text_LandonPostBattle:
 	.string "Our Boss says, “It will make everyone\n"
 	.string "happy.”\p"
 	.string "But why does everyone keep getting\n"
 	.string "in our way?$"
 
-MtChimney_Text_Grunt1Intro:
+MtChimney_Text_GinnyIntro:
 	.string "If there were more land, I'd be able\n"
 	.string "to get a big house of my own!\p"
 	.string "I'm going to build it on hardened lava!$"
 
-MtChimney_Text_Grunt1Defeat:
+MtChimney_Text_GinnyDefeat:
 	.string "My dream of a big house…$"
 
-MtChimney_Text_Grunt1PostBattle:
+MtChimney_Text_GinnyPostBattle:
 	.string "A kid like you, you ought to be\n"
 	.string "splashing about in the waves!$"
 
@@ -652,8 +652,8 @@ MtChimney_Text_YouBetterNotMessWithUs:
 MtChimney_Text_AquasNameSimilar:
 	.string "We're Team Magma!\p"
 	.string "They're Team Aqua!\p"
-	.string "It totally annoys me that they'd\n"
-	.string "use a name like ours!$"
+	.string "It burns me up that they'd use such\n"
+	.string "a confusing name!$"
 
 MtChimney_Text_DouseThemInFire:
 	.string "Yeah!\n"
@@ -705,8 +705,8 @@ MtChimney_Text_LessHabitatForWaterPokemon:
 MtChimney_Text_MagmasNameSimilar:
 	.string "We're Team Aqua!\p"
 	.string "They're Team Magma!\p"
-	.string "It burns me up that they'd use such\n"
-	.string "a confusing name!$"
+	.string "It totally annoys me that they'd\n"
+	.string "use a name like ours!$"
 
 MtChimney_Text_Bushaa:
 	.string "Bushaa!$"

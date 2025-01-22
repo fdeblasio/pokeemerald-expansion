@@ -55,7 +55,6 @@ BattleFrontier_BattlePyramidTop_EventScript_ShowMapName::
 	end
 
 BattleFrontier_BattlePyramidTop_EventScript_ReadyChallenge::
-	pyramid_save CHALLENGE_STATUS_SAVING
 	special SavePlayerParty
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, 0
 	pyramid_settrainers

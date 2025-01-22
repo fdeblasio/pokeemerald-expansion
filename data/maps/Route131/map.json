@@ -140,5 +140,12 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "heal_locations": [
+    {
+      "id": "HEAL_LOCATION_ROUTE_131",
+      "x": 14,
+      "y": 6
+    }
+  ]
 }

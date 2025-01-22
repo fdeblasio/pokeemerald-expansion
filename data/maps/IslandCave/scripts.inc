@@ -15,7 +15,7 @@ IslandCave_EventScript_TryRemoveRegice::
 	return
 
 IslandCave_OnLoad:
-	call_if_unset FLAG_SYS_BRAILLE_REGICE_COMPLETED, IslandCave_EventScript_HideRegiEntrance
+	setflag FLAG_SYS_BRAILLE_REGICE_COMPLETED
 	end
 
 IslandCave_EventScript_HideRegiEntrance::
@@ -91,12 +91,12 @@ IslandCave_EventScript_Regice::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_REGICE, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_ISLAND_CAVE, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_REGICE, 40
+	setwildbattle SPECIES_ISLAND_CAVE, TRIO_LEVEL
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
-	special StartRegiBattle
+	special BattleSetup_StartLegendaryBattle
 	waitstate
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome
@@ -113,6 +113,6 @@ IslandCave_EventScript_DefeatedRegice::
 	end
 
 IslandCave_EventScript_RanFromRegice::
-	setvar VAR_0x8004, SPECIES_REGICE
+	setvar VAR_0x8004, SPECIES_ISLAND_CAVE
 	goto Common_EventScript_LegendaryFlewAway
 	end

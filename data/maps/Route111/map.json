@@ -46,7 +46,7 @@
     },
     {
       "local_id": "LOCALID_ROUTE111_VICTORIA",
-      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_F",
+      "graphics_id": "OBJ_EVENT_GFX_POKE_FAN_F",
       "x": 13,
       "y": 113,
       "elevation": 0,
@@ -219,32 +219,6 @@
       "flag": "FLAG_HIDE_ROUTE_111_GABBY_AND_TY_1"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
-      "x": 18,
-      "y": 101,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_RockSmash",
-      "flag": "FLAG_TEMP_11"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
-      "x": 19,
-      "y": 100,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_RockSmash",
-      "flag": "FLAG_TEMP_12"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_GIRL_1",
       "x": 23,
       "y": 8,
@@ -379,19 +353,6 @@
       "flag": "FLAG_ITEM_ROUTE_111_HP_UP"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
-      "x": 22,
-      "y": 21,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_CutTree",
-      "flag": "FLAG_TEMP_13"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
       "x": 10,
       "y": 82,
@@ -505,7 +466,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
-      "script": "Route111_EventScript_Celina",
+      "script": "Route111_EventScript_Lily",
       "flag": "0"
     },
     {
@@ -625,20 +586,6 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
       "flag": "FLAG_HIDE_ROUTE_111_PLAYER_DESCENT"
-    },
-    {
-      "local_id": "LOCALID_ROUTE111_ROCK_SMASH_MAN",
-      "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
-      "x": 19,
-      "y": 101,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route111_EventScript_RockSmashTipFatMan",
-      "flag": "FLAG_HIDE_ROUTE_111_ROCK_SMASH_TIP_GUY"
     }
   ],
   "warp_events": [
@@ -1122,6 +1069,13 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route111_EventScript_TrainerHillSign"
+    }
+  ],
+  "heal_locations": [
+    {
+      "id": "HEAL_LOCATION_ROUTE_111",
+      "x": 26,
+      "y": 19
     }
   ]
 }

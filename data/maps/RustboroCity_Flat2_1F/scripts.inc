@@ -9,7 +9,8 @@ RustboroCity_Flat2_1F_EventScript_Skitty::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_SKITTY, CRY_MODE_NORMAL
+	playmoncry SPECIES_RUSTBORO_HOUSE, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, SPECIES_RUSTBORO_HOUSE
 	msgbox RustboroCity_Flat2_1F_Text_Skitty, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -20,5 +21,5 @@ RustboroCity_Flat2_1F_Text_DevonWorkersLiveHere:
 	.string "this building.$"
 
 RustboroCity_Flat2_1F_Text_Skitty:
-	.string "Skitty: Gyaaaah!$"
+	.string "{STR_VAR_1}: Gyaaaah!$"
 

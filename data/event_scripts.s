@@ -176,11 +176,9 @@ gStdScripts_End::
 	.include "data/maps/OldaleTown_House1/scripts.inc"
 	.include "data/maps/OldaleTown_House2/scripts.inc"
 	.include "data/maps/OldaleTown_PokemonCenter_1F/scripts.inc"
-	.include "data/maps/OldaleTown_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/OldaleTown_Mart/scripts.inc"
 	.include "data/maps/DewfordTown_House1/scripts.inc"
 	.include "data/maps/DewfordTown_PokemonCenter_1F/scripts.inc"
-	.include "data/maps/DewfordTown_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/DewfordTown_Gym/scripts.inc"
 	.include "data/maps/DewfordTown_Hall/scripts.inc"
 	.include "data/maps/DewfordTown_House2/scripts.inc"
@@ -190,13 +188,11 @@ gStdScripts_End::
 	.include "data/maps/LavaridgeTown_House/scripts.inc"
 	.include "data/maps/LavaridgeTown_Mart/scripts.inc"
 	.include "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.inc"
-	.include "data/maps/LavaridgeTown_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/FallarborTown_Mart/scripts.inc"
 	.include "data/maps/FallarborTown_BattleTentLobby/scripts.inc"
 	.include "data/maps/FallarborTown_BattleTentCorridor/scripts.inc"
 	.include "data/maps/FallarborTown_BattleTentBattleRoom/scripts.inc"
 	.include "data/maps/FallarborTown_PokemonCenter_1F/scripts.inc"
-	.include "data/maps/FallarborTown_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/FallarborTown_CozmosHouse/scripts.inc"
 	.include "data/maps/FallarborTown_MoveRelearnersHouse/scripts.inc"
 	.include "data/maps/VerdanturfTown_BattleTentLobby/scripts.inc"
@@ -204,12 +200,10 @@ gStdScripts_End::
 	.include "data/maps/VerdanturfTown_BattleTentBattleRoom/scripts.inc"
 	.include "data/maps/VerdanturfTown_Mart/scripts.inc"
 	.include "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.inc"
-	.include "data/maps/VerdanturfTown_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/VerdanturfTown_WandasHouse/scripts.inc"
 	.include "data/maps/VerdanturfTown_FriendshipRatersHouse/scripts.inc"
 	.include "data/maps/VerdanturfTown_House/scripts.inc"
 	.include "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.inc"
-	.include "data/maps/PacifidlogTown_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/PacifidlogTown_House1/scripts.inc"
 	.include "data/maps/PacifidlogTown_House2/scripts.inc"
 	.include "data/maps/PacifidlogTown_House3/scripts.inc"
@@ -220,7 +214,6 @@ gStdScripts_End::
 	.include "data/maps/PetalburgCity_House1/scripts.inc"
 	.include "data/maps/PetalburgCity_House2/scripts.inc"
 	.include "data/maps/PetalburgCity_PokemonCenter_1F/scripts.inc"
-	.include "data/maps/PetalburgCity_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/PetalburgCity_Mart/scripts.inc"
 	.include "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc"
 	.include "data/maps/SlateportCity_SternsShipyard_2F/scripts.inc"
@@ -234,7 +227,6 @@ gStdScripts_End::
 	.include "data/maps/SlateportCity_Harbor/scripts.inc"
 	.include "data/maps/SlateportCity_House/scripts.inc"
 	.include "data/maps/SlateportCity_PokemonCenter_1F/scripts.inc"
-	.include "data/maps/SlateportCity_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/SlateportCity_Mart/scripts.inc"
 	.include "data/maps/MauvilleCity_Gym/scripts.inc"
 	.include "data/maps/MauvilleCity_BikeShop/scripts.inc"
@@ -242,7 +234,6 @@ gStdScripts_End::
 	.include "data/maps/MauvilleCity_GameCorner/scripts.inc"
 	.include "data/maps/MauvilleCity_House2/scripts.inc"
 	.include "data/maps/MauvilleCity_PokemonCenter_1F/scripts.inc"
-	.include "data/maps/MauvilleCity_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/MauvilleCity_Mart/scripts.inc"
 	.include "data/maps/RustboroCity_DevonCorp_1F/scripts.inc"
 	.include "data/maps/RustboroCity_DevonCorp_2F/scripts.inc"
@@ -250,7 +241,6 @@ gStdScripts_End::
 	.include "data/maps/RustboroCity_Gym/scripts.inc"
 	.include "data/maps/RustboroCity_PokemonSchool/scripts.inc"
 	.include "data/maps/RustboroCity_PokemonCenter_1F/scripts.inc"
-	.include "data/maps/RustboroCity_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/RustboroCity_Mart/scripts.inc"
 	.include "data/maps/RustboroCity_Flat1_1F/scripts.inc"
 	.include "data/maps/RustboroCity_Flat1_2F/scripts.inc"
@@ -264,7 +254,6 @@ gStdScripts_End::
 	.include "data/maps/FortreeCity_House1/scripts.inc"
 	.include "data/maps/FortreeCity_Gym/scripts.inc"
 	.include "data/maps/FortreeCity_PokemonCenter_1F/scripts.inc"
-	.include "data/maps/FortreeCity_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/FortreeCity_Mart/scripts.inc"
 	.include "data/maps/FortreeCity_House2/scripts.inc"
 	.include "data/maps/FortreeCity_House3/scripts.inc"
@@ -278,7 +267,6 @@ gStdScripts_End::
 	.include "data/maps/LilycoveCity_ContestLobby/scripts.inc"
 	.include "data/maps/LilycoveCity_ContestHall/scripts.inc"
 	.include "data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc"
-	.include "data/maps/LilycoveCity_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/LilycoveCity_UnusedMart/scripts.inc"
 	.include "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc"
 	.include "data/maps/LilycoveCity_Harbor/scripts.inc"
@@ -298,7 +286,6 @@ gStdScripts_End::
 	.include "data/maps/MossdeepCity_House1/scripts.inc"
 	.include "data/maps/MossdeepCity_House2/scripts.inc"
 	.include "data/maps/MossdeepCity_PokemonCenter_1F/scripts.inc"
-	.include "data/maps/MossdeepCity_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/MossdeepCity_Mart/scripts.inc"
 	.include "data/maps/MossdeepCity_House3/scripts.inc"
 	.include "data/maps/MossdeepCity_StevensHouse/scripts.inc"
@@ -310,7 +297,6 @@ gStdScripts_End::
 	.include "data/maps/SootopolisCity_Gym_1F/scripts.inc"
 	.include "data/maps/SootopolisCity_Gym_B1F/scripts.inc"
 	.include "data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc"
-	.include "data/maps/SootopolisCity_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/SootopolisCity_Mart/scripts.inc"
 	.include "data/maps/SootopolisCity_House1/scripts.inc"
 	.include "data/maps/SootopolisCity_House2/scripts.inc"
@@ -335,7 +321,6 @@ gStdScripts_End::
 	.include "data/maps/EverGrandeCity_PokemonLeague_1F/scripts.inc"
 	.include "data/maps/EverGrandeCity_HallOfFame/scripts.inc"
 	.include "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc"
-	.include "data/maps/EverGrandeCity_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/EverGrandeCity_PokemonLeague_2F/scripts.inc"
 	.include "data/maps/Route104_MrBrineysHouse/scripts.inc"
 	.include "data/maps/Route104_PrettyPetalFlowerShop/scripts.inc"
@@ -523,7 +508,6 @@ gStdScripts_End::
 	.include "data/maps/BattleFrontier_Lounge8/scripts.inc"
 	.include "data/maps/BattleFrontier_Lounge9/scripts.inc"
 	.include "data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc"
-	.include "data/maps/BattleFrontier_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/BattleFrontier_Mart/scripts.inc"
 	.include "data/maps/FarawayIsland_Entrance/scripts.inc"
 	.include "data/maps/FarawayIsland_Interior/scripts.inc"
@@ -598,8 +582,8 @@ EventScript_AfterWhiteOutHeal::
 	lockall
 	msgbox gText_FirstShouldRestoreMonsHealth
 	call EventScript_PkmnCenterNurse_TakeAndHealPkmn
-	call_if_unset FLAG_DEFEATED_RUSTBORO_GYM, EventScript_AfterWhiteOutHealMsgPreRoxanne
-	call_if_set FLAG_DEFEATED_RUSTBORO_GYM, EventScript_AfterWhiteOutHealMsg
+	call_if_unset FLAG_BADGE01_GET, EventScript_AfterWhiteOutHealMsgPreRoxanne
+	call_if_set FLAG_BADGE01_GET, EventScript_AfterWhiteOutHealMsg
 	applymovement VAR_LAST_TALKED, Movement_PkmnCenterNurse_Bow
 	waitmovement 0
 	fadedefaultbgm
@@ -673,7 +657,7 @@ EverGrandeCity_HallOfFame_EventScript_ResetEliteFour::
 
 Common_EventScript_UpdateBrineyLocation::
 	goto_if_unset FLAG_RECEIVED_POKENAV, Common_EventScript_NopReturn
-	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, Common_EventScript_NopReturn
+	goto_if_set FLAG_BADGE05_GET, Common_EventScript_NopReturn
 	goto_if_unset FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT, EventScript_SetBrineyLocation_House
 	goto_if_unset FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN, EventScript_SetBrineyLocation_Dewford
 	goto_if_unset FLAG_HIDE_ROUTE_109_MR_BRINEY, EventScript_SetBrineyLocation_Route109

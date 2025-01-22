@@ -93,9 +93,10 @@ SootopolisCity_Gym_1F_EventScript_JuanDefeated::
 	message SootopolisCity_Gym_1F_Text_ReceivedRainBadge
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
+	giveitem ITEM_FAME_CHECKER
 	msgbox SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis, MSGBOX_DEFAULT
-	setflag FLAG_DEFEATED_SOOTOPOLIS_GYM
 	setflag FLAG_BADGE08_GET
+	clearflag FLAG_HIDE_ROUTE_118_GABBY_AND_TY_2
 	setflag FLAG_HIDE_SOOTOPOLIS_CITY_RESIDENTS
 	setflag FLAG_HIDE_SOOTOPOLIS_CITY_STEVEN
 	setflag FLAG_HIDE_SOOTOPOLIS_CITY_WALLACE
@@ -143,7 +144,7 @@ SootopolisCity_Gym_1F_EventScript_JuanRematch::
 SootopolisCity_Gym_1F_EventScript_GymGuide::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_SOOTOPOLIS_GYM, SootopolisCity_Gym_1F_EventScript_GymGuidePostVictory
+	goto_if_set FLAG_BADGE08_GET, SootopolisCity_Gym_1F_EventScript_GymGuidePostVictory
 	msgbox SootopolisCity_Gym_1F_Text_GymGuideAdvice, MSGBOX_DEFAULT
 	release
 	end
@@ -240,8 +241,7 @@ SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
 	.string "Having the Rain Badge shall assure you\n"
 	.string "the full obedience of all your Pokémon\l"
 	.string "to your every command.\p"
-	.string "The Rain Badge also allows the use\n"
-	.string "of the HM move Waterfall to scale\l"
+	.string "The Fall Scaler allows you to scale\n"
 	.string "walls of cascading water.\p"
 	.string "And, so that you never forget the\n"
 	.string "battle we shared, take this…$"

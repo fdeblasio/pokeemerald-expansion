@@ -4,7 +4,6 @@ LittlerootTown_BrendansHouse_2F_MapScripts::
 	.byte 0
 
 LittlerootTown_BrendansHouse_2F_OnTransition:
-	call_if_lt VAR_LITTLEROOT_RIVAL_STATE, 2, LittlerootTown_BrendansHouse_2F_EventScript_CheckSetReadyToMeetBrendan
 	call_if_ge VAR_LITTLEROOT_RIVAL_STATE, 3, LittlerootTown_BrendansHouse_2F_EventScript_CheckShouldUpdateBrendanPos
 	call_if_eq VAR_LITTLEROOT_INTRO_STATE, 4, PlayersHouse_2F_EventScript_BlockStairsUntilClockIsSet
 	call SecretBase_EventScript_SetDecorationFlags
@@ -26,15 +25,6 @@ LittlerootTown_BrendansHouse_2F_EventScript_TryUpdateBrendanPos::
 	return
 
 LittlerootTown_BrendansHouse_2F_EventScript_Ret::
-	return
-
-LittlerootTown_BrendansHouse_2F_EventScript_CheckSetReadyToMeetBrendan::
-	checkplayergender
-	goto_if_eq VAR_RESULT, FEMALE, LittlerootTown_BrendansHouse_2F_EventScript_SetReadyToMeetBrendan
-	return
-
-LittlerootTown_BrendansHouse_2F_EventScript_SetReadyToMeetBrendan::
-	setvar VAR_LITTLEROOT_RIVAL_STATE, 2
 	return
 
 LittlerootTown_BrendansHouse_2F_OnWarp:
@@ -270,25 +260,11 @@ PlayersHouse_2F_EventScript_GameCube::
 	msgbox PlayersHouse_2F_Text_ItsAGameCube, MSGBOX_SIGN
 	end
 
-PlayersHouse_2F_Text_ClockIsStopped:
-	.string "The clock is stopped…\p"
-	.string "Better set it and start it!$"
-
-PlayersHouse_2F_Text_HowDoYouLikeYourRoom:
-	.string "Mom: {PLAYER}, how do you like your\n"
-	.string "new room?\p"
-	.string "Good! Everything's put away neatly!\p"
-	.string "They finished moving everything in\n"
-	.string "downstairs, too.\p"
-	.string "Pokémon movers are so convenient!\p"
-	.string "Oh, you should make sure that\n"
-	.string "everything's all there on your desk.$"
-
 PlayersHouse_2F_Text_Notebook:
 	.string "{PLAYER} flipped open the notebook.\p"
-	.string "Adventure Rule No. 1\n"
+	.string "Adventure Rule No. 1:\n"
 	.string "Open the Menu with Start.\p"
-	.string "Adventure Rule No. 2\n"
+	.string "Adventure Rule No. 2:\n"
 	.string "Record your progress with Save.\p"
 	.string "The remaining pages are blank…$"
 

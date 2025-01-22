@@ -488,7 +488,30 @@ void BattleSetup_StartLegendaryBattle(void)
 
     switch (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL))
     {
-    default:
+    case SPECIES_MEW:
+        CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_VS_MEW);
+        break;
+    case SPECIES_MEWTWO:
+        CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_RG_VS_MEWTWO);
+        break;
+    case SPECIES_RAIKOU:
+    case SPECIES_ENTEI:
+    case SPECIES_SUICUNE:
+        CreateBattleStartTask(B_TRANSITION_BLUR, MUS_C_VS_LEGEND_BEAST);
+        break;
+    case SPECIES_LUGIA:
+    case SPECIES_HO_OH:
+        CreateBattleStartTask(B_TRANSITION_BLUR, MUS_RG_VS_LEGEND);
+        break;
+    case SPECIES_REGIROCK:
+        CreateBattleStartTask(B_TRANSITION_REGIROCK, MUS_VS_REGI);
+        break;
+    case SPECIES_REGICE:
+        CreateBattleStartTask(B_TRANSITION_REGICE, MUS_VS_REGI);
+        break;
+    case SPECIES_REGISTEEL:
+        CreateBattleStartTask(B_TRANSITION_REGISTEEL, MUS_VS_REGI);
+        break;
     case SPECIES_GROUDON:
     case SPECIES_GROUDON_PRIMAL:
         CreateBattleStartTask(B_TRANSITION_GROUDON, MUS_VS_KYOGRE_GROUDON);
@@ -507,12 +530,17 @@ void BattleSetup_StartLegendaryBattle(void)
     case SPECIES_DEOXYS_SPEED:
         CreateBattleStartTask(B_TRANSITION_BLUR, MUS_RG_VS_DEOXYS);
         break;
-    case SPECIES_LUGIA:
-    case SPECIES_HO_OH:
-        CreateBattleStartTask(B_TRANSITION_BLUR, MUS_RG_VS_LEGEND);
+    case SPECIES_REGIGIGAS:
+    case SPECIES_REGIELEKI:
+    case SPECIES_REGIDRAGO:
+        CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_VS_REGI);
         break;
-    case SPECIES_MEW:
-        CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_VS_MEW);
+    case SPECIES_HOOPA:
+    case SPECIES_HOOPA_UNBOUND:
+        CreateBattleStartTask(B_TRANSITION_BLACKHOLE, MUS_RG_VS_LEGEND);
+        break;
+    default:
+        CreateBattleStartTask(B_TRANSITION_BLUR, MUS_RG_VS_LEGEND);
         break;
     }
 
@@ -1433,6 +1461,12 @@ void PlayTrainerEncounterMusic(void)
         case TRAINER_ENCOUNTER_MUSIC_RICH:
             music = MUS_ENCOUNTER_RICH;
             break;
+        /*case TRAINER_ENCOUNTER_MUSIC_BRENDAN:
+            music = MUS_ENCOUNTER_BRENDAN;
+            break;
+        case TRAINER_ENCOUNTER_MUSIC_MAY:
+            music = MUS_ENCOUNTER_MAY;
+            break;*/
         default:
             music = MUS_ENCOUNTER_SUSPICIOUS;
         }
@@ -1537,6 +1571,8 @@ static void SetRematchIdForTrainer(const struct RematchTrainer *table, u32 table
         u16 trainerId = table[tableId].trainerIds[i];
 
         if (trainerId == 0)
+            break;
+        if (!FlagGet(FLAG_BADGE05_GET + i))
             break;
         if (!HasTrainerBeenFought(trainerId))
             break;
@@ -1666,6 +1702,8 @@ u16 GetRematchTrainerIdFromTable(const struct RematchTrainer *table, u16 firstBa
     {
         if (trainerEntry->trainerIds[i] == 0) // previous entry was this trainer's last one
             return trainerEntry->trainerIds[i - 1];
+        if (!FlagGet(FLAG_BADGE05_GET + i))
+            return trainerEntry->trainerIds[i];
         if (!HasTrainerBeenFought(trainerEntry->trainerIds[i]))
             return trainerEntry->trainerIds[i];
     }

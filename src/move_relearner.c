@@ -735,9 +735,8 @@ static void DoMoveRelearnerMain(void)
             {
                 u16 moveId = GetMonData(&gPlayerParty[sMoveRelearnerStruct->partyMon], MON_DATA_MOVE1 + sMoveRelearnerStruct->moveSlot);
                 u8 originalPP = GetMonData(&gPlayerParty[sMoveRelearnerStruct->partyMon], MON_DATA_PP1 + sMoveRelearnerStruct->moveSlot);
-                
+
                 StringCopy(gStringVar3, GetMoveName(moveId));
-                RemoveMonPPBonus(&gPlayerParty[sMoveRelearnerStruct->partyMon], sMoveRelearnerStruct->moveSlot);
                 SetMonMoveSlot(&gPlayerParty[sMoveRelearnerStruct->partyMon], GetCurrentSelectedMove(), sMoveRelearnerStruct->moveSlot);
                 u8 newPP = GetMonData(&gPlayerParty[sMoveRelearnerStruct->partyMon], MON_DATA_PP1 + sMoveRelearnerStruct->moveSlot);
                 if (!P_SUMMARY_MOVE_RELEARNER_FULL_PP && gOriginSummaryScreenPage != 0 && originalPP < newPP)

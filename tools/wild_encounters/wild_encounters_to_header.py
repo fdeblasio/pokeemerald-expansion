@@ -73,7 +73,7 @@ class TimeOfDay():
 
     def __len__(self):
         return self.count
-    
+
     # for debugging purposes
     def __str__(self):
         return str([self.vals, self.lvals, self.fvals, self.count])
@@ -83,7 +83,7 @@ class TimeOfDay():
         self.lvals.append(val.lower())
         self.fvals.append(GetTimeLabelFromString(val).capitalize())
         self.count += 1
-    
+
     def indexOf(self, val):
         tempArr = [self.vals, self.lvals, self.fvals]
 
@@ -114,7 +114,7 @@ def ImportWildEncounterFile():
     if IsConfigEnabled():
         IS_ENABLED = True
         TIMES_OF_DAY_COUNT = len(TIME_OF_DAY)
-    
+
     global DEXNAV_ENABLED
     DEXNAV_ENABLED = IsDexnavEnabled()
 
@@ -173,7 +173,7 @@ def ImportWildEncounterFile():
                 if "groups" in field:
                     fieldData[fieldCounter]["groups"] = field["groups"]
 
-                """ 
+                """
                     hidden mons need a special bit of logic since they're not in the vanilla
                     wild_encounters.json file, but the code expects them to be there
                 """
@@ -204,7 +204,7 @@ def ImportWildEncounterFile():
 
             encounterCount[headerIndex] += 1
             headersArray = []
-            
+
             structTime = TIME_DEFAULT_INDEX
             if IS_ENABLED:
                 timeCounter = 0
@@ -215,7 +215,7 @@ def ImportWildEncounterFile():
                         structTime = timeCounter
 
                     timeCounter += 1
-                    
+
             fieldCounter = 0
             fieldInfoStrings = []
             while fieldCounter < len(fieldData):
@@ -237,7 +237,7 @@ def ImportWildEncounterFile():
                     else:
                         structMonType = ""
                         continue
-                
+
                     baseStructContent = []
                     for group in encounter[areaTable]:
                         if "mons" in group:
@@ -246,7 +246,7 @@ def ImportWildEncounterFile():
 
                         if "encounter_rate" in group:
                             infoStructRate = encounter[areaTable][group]
-                    
+
                     baseStructLabel = f"{baseStruct} {fieldStrings[fieldCounter]}{structArrayAssign}"
                     if printEncounterStructs:
                         print()
@@ -267,7 +267,13 @@ def ImportWildEncounterFile():
 
 def PrintStructContent(contentList):
     for monList in contentList:
-        print(f"{tabStr}{{ {monList[0]}, {monList[1]}, {monList[2]} }},")
+        prefix = tabStr + "{ " + monList[0] + ", "
+        species = monList[1]
+        suffix = species + " },"
+        if "_STARTER" in species:
+            print(f"{prefix}{suffix}")
+        else:
+            print(f"{prefix}SPECIES_{suffix}")
     return
 
 
@@ -277,7 +283,7 @@ def GetStructLabelWithoutTime(label):
 
     if not IS_ENABLED:
         return label
-    
+
     timeCounter = 0
     while timeCounter < TIMES_OF_DAY_COUNT:
         tempTime = TIME_OF_DAY.fvals[timeCounter]
@@ -292,7 +298,7 @@ def GetStructLabelWithoutTime(label):
 def GetStructTimeWithoutLabel(label):
     if not IS_ENABLED:
         return TIME_DEFAULT_INDEX
-    
+
     timeCounter = 0
     while timeCounter < TIMES_OF_DAY_COUNT:
         tempTime = f"_{TIME_OF_DAY.fvals[timeCounter]}"
@@ -309,7 +315,7 @@ def AssembleMonHeaderContent():
     tempHeaderLabel = GetWildMonHeadersLabel()
     tempHeaderTimeIndex = GetStructTimeWithoutLabel(structLabel)
     structLabelNoTime = GetStructLabelWithoutTime(structLabel)
-    
+
     if tempHeaderLabel not in headerStructTable:
         headerStructTable[tempHeaderLabel] = {}
         headerStructTable[tempHeaderLabel]["groupNum"] = headerIndex
@@ -438,7 +444,7 @@ def PrintEncounterRateMacros():
         return
 
     fieldCounter = 0
-    while fieldCounter < len(fieldData): 
+    while fieldCounter < len(fieldData):
         tempName = fieldData[fieldCounter]["name"].upper()
         if "groups" not in fieldData[fieldCounter]:
             rateCount = 0
@@ -515,7 +521,7 @@ def GetMapGroupEnum(string, index = 0):
 
 
 """
-get copied lhea :^ ) 
+get copied lhea :^ )
 - next four functions copied almost verbatim from @lhearachel's python scripts in tools/learnset_helpers
 """
 def PrintGeneratedWarningText():
@@ -680,7 +686,7 @@ if __name__ == "__main__":
 #define ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_TOTAL (ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_9)
 
 - if DEXNAV_ENABLED is TRUE
-- these macros are 1 and 0, respectively if hidden_mons isn't in the encounter 
+- these macros are 1 and 0, respectively if hidden_mons isn't in the encounter
   rate list at the top of wild_encounters.json
 #define ENCOUNTER_CHANCE_HIDDEN_MONS_SLOT_0 1
 #define ENCOUNTER_CHANCE_HIDDEN_MONS_SLOT_1 ENCOUNTER_CHANCE_HIDDEN_MONS_SLOT_0 + 0

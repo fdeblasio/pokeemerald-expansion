@@ -125,8 +125,8 @@ enum Language
 // Battle Frontier level modes.
 enum FrontierLevelMode
 {
-    FRONTIER_LVL_50,
     FRONTIER_LVL_OPEN,
+    FRONTIER_LVL_50,
     FRONTIER_LVL_TENT, // Special usage for indicating Battle Tent
     FRONTIER_LVL_MODE_COUNT = FRONTIER_LVL_TENT,
 };

@@ -795,11 +795,15 @@ static void CreateCableCarSprites(void)
         [FEMALE] = OBJ_EVENT_GFX_RIVAL_MAY_NORMAL
     };
     u16 rval = Random();
-    u16 hikerGraphicsIds[4] = {
+    u16 hikerGraphicsIds[8] = {
         OBJ_EVENT_GFX_HIKER,
         OBJ_EVENT_GFX_CAMPER,
         OBJ_EVENT_GFX_PICNICKER,
-        OBJ_EVENT_GFX_ZIGZAGOON_1
+        OBJ_EVENT_GFX_SPECIES(CABLE_CAR_1),
+        OBJ_EVENT_GFX_SPECIES(CABLE_CAR_2),
+        OBJ_EVENT_GFX_SPECIES(CABLE_CAR_3),
+        OBJ_EVENT_GFX_SPECIES(CABLE_CAR_4),
+        OBJ_EVENT_GFX_SPECIES(CABLE_CAR_5)
     };
     s16 hikerCoords[2][2] = {
         {   0,  80 }, // Going up

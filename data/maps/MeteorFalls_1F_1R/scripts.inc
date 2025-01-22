@@ -1,6 +1,11 @@
 MeteorFalls_1F_1R_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, MeteorFalls_1F_1R_OnLoad
+	map_script MAP_SCRIPT_ON_TRANSITION, MeteorFalls_1F_1R_OnTransition
 	.byte 0
+
+MeteorFalls_1F_1R_OnTransition:
+	setflag FLAG_LANDMARK_METEOR_FALLS
+	end
 
 MeteorFalls_1F_1R_OnLoad:
 	call_if_set FLAG_SYS_GAME_CLEAR, MeteorFalls_1F_1R_EventScript_OpenStevensCave
@@ -19,27 +24,28 @@ MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene::
 	applymovement LOCALID_PLAYER, Common_Movement_FaceDown
 	waitmovement 0
 	delay 30
-	applymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceDown
+	applymovement LOCALID_METEOR_FALLS_COURTNEY, Common_Movement_WalkInPlaceDown
 	waitmovement 0
 	msgbox MeteorFalls_1F_1R_Text_WithThisMeteorite, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceFasterUp
-	applymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_2, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_METEOR_FALLS_COURTNEY, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	playse SE_PIN
-	applymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, Common_Movement_ExclamationMark
+	applymovement LOCALID_METEOR_FALLS_COURTNEY, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, Common_Movement_Delay48
+	applymovement LOCALID_METEOR_FALLS_COURTNEY, Common_Movement_Delay48
 	waitmovement 0
 	msgbox MeteorFalls_1F_1R_Text_DontExpectMercyFromMagma, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, MeteorFalls_1F_1R_Movement_MagmaGruntApproachPlayer
+	applymovement LOCALID_METEOR_FALLS_COURTNEY, MeteorFalls_1F_1R_Movement_MagmaGruntApproachPlayer
 	waitmovement 0
+	trainerbattle_no_intro TRAINER_COURTNEY_METEOR_FALLS, MeteorFalls_1F_1R_Text_CourtneyDefeat
 	msgbox MeteorFalls_1F_1R_Text_HoldItRightThereMagma, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
-	applymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceFasterLeft
-	applymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_2, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_METEOR_FALLS_COURTNEY, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	addobject LOCALID_METEOR_FALLS_ARCHIE
 	addobject LOCALID_METEOR_FALLS_AQUA_GRUNT_1
@@ -49,17 +55,17 @@ MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene::
 	applymovement LOCALID_METEOR_FALLS_AQUA_GRUNT_1, MeteorFalls_1F_1R_Movement_AquaGrunt1Arrive
 	applymovement LOCALID_METEOR_FALLS_AQUA_GRUNT_2, MeteorFalls_1F_1R_Movement_AquaGrunt2Arrive
 	waitmovement 0
-	applymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, Common_Movement_WalkInPlaceFasterLeft
-	applymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_2, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_METEOR_FALLS_COURTNEY, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	msgbox MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_PLAYER, MeteorFalls_1F_1R_Movement_PushPlayerOutOfWay
-	applymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_1, MeteorFalls_1F_1R_Movement_MagmaGrunt1Exit
-	applymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT_2, MeteorFalls_1F_1R_Movement_MagmaGrunt2Exit
+	applymovement LOCALID_METEOR_FALLS_COURTNEY, MeteorFalls_1F_1R_Movement_MagmaGrunt1Exit
+	applymovement LOCALID_METEOR_FALLS_MAGMA_GRUNT, MeteorFalls_1F_1R_Movement_MagmaGrunt2Exit
 	waitmovement 0
-	removeobject LOCALID_METEOR_FALLS_MAGMA_GRUNT_1
-	removeobject LOCALID_METEOR_FALLS_MAGMA_GRUNT_2
+	removeobject LOCALID_METEOR_FALLS_COURTNEY
+	removeobject LOCALID_METEOR_FALLS_MAGMA_GRUNT
 	applymovement LOCALID_METEOR_FALLS_ARCHIE, MeteorFalls_1F_1R_Movement_ArchieApproachPlayer
 	waitmovement 0
 	msgbox MeteorFalls_1F_1R_Text_ArchieSeenYouBefore, MSGBOX_DEFAULT
@@ -241,6 +247,10 @@ MeteorFalls_1F_1R_Text_DontExpectMercyFromMagma:
 	.string "I don't know who you are, but if you get\n"
 	.string "in the way of Team Magma, don't\l"
 	.string "expect any mercy!$"
+
+MeteorFalls_1F_1R_Text_CourtneyDefeat:
+	.string "Argh!\p"
+	.string "Get out of my way!$"
 
 MeteorFalls_1F_1R_Text_HoldItRightThereMagma:
 	.string "Hold it right there, Team Magma!\p"

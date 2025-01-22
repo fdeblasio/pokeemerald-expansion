@@ -210,7 +210,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_F",
+      "graphics_id": "OBJ_EVENT_GFX_POKE_FAN_F",
       "x": 9,
       "y": 50,
       "elevation": 3,
@@ -223,7 +223,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_4",
       "x": 16,
       "y": 46,
       "elevation": 3,
@@ -351,12 +351,12 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SlateportCity_EventScript_PowerTMClerk",
+      "script": "SlateportCity_EventScript_TMClerk",
       "flag": "FLAG_HIDE_SLATEPORT_CITY_TM_SALESMAN"
     },
     {
       "local_id": "LOCALID_SLATEPORT_ENERGY_GURU",
-      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_M",
+      "graphics_id": "OBJ_EVENT_GFX_POKE_FAN_M",
       "x": 5,
       "y": 47,
       "elevation": 3,
@@ -480,7 +480,7 @@
       "flag": "FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_F",
+      "graphics_id": "OBJ_EVENT_GFX_POKE_FAN_F",
       "x": 11,
       "y": 37,
       "elevation": 3,

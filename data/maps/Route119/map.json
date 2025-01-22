@@ -195,7 +195,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
+      "graphics_id": "OBJ_EVENT_GFX_PSYCHIC_M",
       "x": 10,
       "y": 50,
       "elevation": 4,
@@ -208,7 +208,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
+      "graphics_id": "OBJ_EVENT_GFX_PSYCHIC_M",
       "x": 8,
       "y": 63,
       "elevation": 3,
@@ -509,7 +509,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
       "x": 8,
       "y": 68,
       "elevation": 3,
@@ -918,6 +918,13 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route119_EventScript_TrainerTipsDecoration"
+    }
+  ],
+  "heal_locations": [
+    {
+      "id": "HEAL_LOCATION_ROUTE_119",
+      "x": 6,
+      "y": 33
     }
   ]
 }

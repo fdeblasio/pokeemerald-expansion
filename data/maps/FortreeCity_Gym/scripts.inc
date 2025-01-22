@@ -31,8 +31,8 @@ FortreeCity_Gym_EventScript_WinonaDefeated::
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
 	msgbox FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis, MSGBOX_DEFAULT
-	setflag FLAG_DEFEATED_FORTREE_GYM
 	setflag FLAG_BADGE06_GET
+	clearflag FLAG_HIDE_ROUTE_120_GABBY_AND_TY_1
 	setvar VAR_0x8008, 6
 	call Common_EventScript_SetGymTrainers
 	call FortreeCity_Gym_EventScript_GiveAerialAce
@@ -102,7 +102,7 @@ FortreeCity_Gym_EventScript_Darius::
 FortreeCity_Gym_EventScript_GymGuide::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_FORTREE_GYM, FortreeCity_Gym_EventScript_GymGuidePostVictory
+	goto_if_set FLAG_BADGE06_GET, FortreeCity_Gym_EventScript_GymGuidePostVictory
 	msgbox FortreeCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
 	release
 	end
@@ -151,7 +151,7 @@ FortreeCity_Gym_Text_GymGuidePostVictory:
 
 FortreeCity_Gym_Text_JaredIntro:
 	.string "Behold the elegant battle style of\n"
-	.string "Bird Pokémon!$"
+	.string "Flying Pokémon!$"
 
 FortreeCity_Gym_Text_JaredDefeat:
 	.string "You…\n"
@@ -164,7 +164,7 @@ FortreeCity_Gym_Text_JaredPostBattle:
 	.string "our Leader?$"
 
 FortreeCity_Gym_Text_EdwardoIntro:
-	.string "The lovers of Bird Pokémon aspire\n"
+	.string "The lovers of Flying Pokémon aspire\n"
 	.string "to join this Gym.\p"
 	.string "As a member of the Fortree Gym,\n"
 	.string "I'm not allowed to lose!$"
@@ -235,12 +235,12 @@ FortreeCity_Gym_Text_DariusPostBattle:
 FortreeCity_Gym_Text_WinonaIntro:
 	.string "I am Winona. I am the Leader of\n"
 	.string "the Fortree Pokémon Gym.\p"
-	.string "I have become one with Bird Pokémon\n"
+	.string "I have become one with Flying Pokémon\n"
 	.string "and have soared the skies…\p"
 	.string "However grueling the battle, we have\n"
 	.string "triumphed with grace…\p"
 	.string "Witness the elegant choreography\n"
-	.string "of Bird Pokémon and I!$"
+	.string "of Flying Pokémon and I!$"
 
 FortreeCity_Gym_Text_WinonaDefeat:
 	.string "Never before have I seen a Trainer\n"
@@ -257,8 +257,6 @@ FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis:
 	.string "With the Feather Badge, all Pokémon up\n"
 	.string "to Lv 70, even those received through\l"
 	.string "trades, will obey your every command.\p"
-	.string "You will also be able to use\n"
-	.string "the HM move Fly outside of battle.\p"
 	.string "And this…\n"
 	.string "This is a gift from me.$"
 
@@ -274,7 +272,7 @@ FortreeCity_Gym_Text_RegisteredWinona:
 
 FortreeCity_Gym_Text_WinonaPostBattle:
 	.string "Though I fell to you, I will remain\n"
-	.string "devoted to Bird Pokémon.$"
+	.string "devoted to Flying Pokémon.$"
 
 FortreeCity_Gym_Text_GymStatue:
 	.string "Fortree City Pokémon Gym$"

@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "AquaHideout_B1F_EventScript_Grunt2",
+      "script": "AquaHideout_B1F_EventScript_Grunt3",
       "flag": "FLAG_HIDE_AQUA_HIDEOUT_GRUNTS"
     },
     {
@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
-      "script": "AquaHideout_B1F_EventScript_Grunt3",
+      "script": "AquaHideout_B1F_EventScript_Caspian",
       "flag": "FLAG_HIDE_AQUA_HIDEOUT_GRUNTS"
     },
     {
@@ -63,7 +63,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "AquaHideout_B1F_EventScript_Grunt5",
+      "script": "AquaHideout_B1F_EventScript_Grunt2",
       "flag": "FLAG_HIDE_AQUA_HIDEOUT_GRUNTS"
     },
     {
@@ -101,7 +101,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_NUGGET",
+      "trainer_sight_or_berry_tree_id": "ITEM_BIG_NUGGET",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_AQUA_HIDEOUT_B1F_NUGGET"
     },
@@ -128,7 +128,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "AquaHideout_B1F_EventScript_Grunt7",
+      "script": "AquaHideout_B1F_EventScript_Nerissa",
       "flag": "FLAG_HIDE_AQUA_HIDEOUT_GRUNTS"
     }
   ],

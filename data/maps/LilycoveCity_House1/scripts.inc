@@ -9,7 +9,8 @@ LilycoveCity_House1_EventScript_Kecleon::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_KECLEON, CRY_MODE_NORMAL
+	playmoncry SPECIES_LILYCOVE_HOUSE, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, SPECIES_LILYCOVE_HOUSE
 	msgbox LilycoveCity_House1_Text_Kecleon, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -22,5 +23,5 @@ LilycoveCity_House1_Text_PokemonPartnersNotTools:
 	.string "who fail to understand that…$"
 
 LilycoveCity_House1_Text_Kecleon:
-	.string "Kecleon: Ruroro?$"
+	.string "{STR_VAR_1}: Ruroro?$"
 

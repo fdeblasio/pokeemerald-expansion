@@ -657,7 +657,7 @@ static const struct MatchCallCheckPageOverride sCheckPageOverrides[] = {
     {
         .idx = MC_HEADER_STEVEN,
         .facilityClass = FACILITY_CLASS_STEVEN,
-        .flag = FLAG_DEFEATED_MOSSDEEP_GYM,
+        .flag = FLAG_BADGE07_GET,
         .flavorTexts = {
             [CHECK_PAGE_STRATEGY] = gText_MatchCallSteven_Strategy,
             [CHECK_PAGE_POKEMON]  = gText_MatchCallSteven_Pokemon,

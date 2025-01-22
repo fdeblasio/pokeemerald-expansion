@@ -213,7 +213,7 @@ static const struct TrainerHillTrainer sTrainerHillTrainerTemplates_JP[] = {
     },
     [2] = {
         .name = __("メイコ$$$$$   "),
-        .facilityClass = FACILITY_CLASS_SCHOOL_KID_F,
+        .facilityClass = FACILITY_CLASS_SCHOOLKID_F,
         .unused = 0x1,
         .speechBefore = { EC_WORD_SHINE, EC_WORD_POKEMON, EC_WORD_RELEASE, EC_WORD_WAS, EC_MOVE2(FRUSTRATION), EC_WORD_WITHOUT },
         .speechWin = { EC_WORD_SHINE, EC_WORD_POKEMON, EC_WORD_TO_HER, EC_MOVE2(PRESENT), EC_WORD_KNOWS, EC_WORD_WITHOUT },

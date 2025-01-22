@@ -427,7 +427,7 @@ static const u16 sMainMenuBgPal[] = INCBIN_U16("graphics/interface/main_menu_bg.
 static const u16 sMainMenuTextPal[] = INCBIN_U16("graphics/interface/main_menu_text.gbapal");
 
 static const u8 sTextColor_Headers[] = {TEXT_DYNAMIC_COLOR_1, TEXT_DYNAMIC_COLOR_2, TEXT_DYNAMIC_COLOR_3};
-static const u8 sTextColor_MenuInfo[] = {TEXT_DYNAMIC_COLOR_1, TEXT_COLOR_WHITE, TEXT_DYNAMIC_COLOR_3};
+static const u8 sTextColor_MenuInfo[] = {TEXT_DYNAMIC_COLOR_1, TEXT_COLOR_GREEN, TEXT_COLOR_LIGHT_GREEN};
 
 static const struct BgTemplate sMainMenuBgTemplates[] = {
     {
@@ -478,11 +478,11 @@ static const struct MenuAction sMenuActions_Gender[] = {
 };
 
 static const u8 *const sMalePresetNames[] = {
-    COMPOUND_STRING("Stu"),
-    COMPOUND_STRING("Milton"),
-    COMPOUND_STRING("Tom"),
-    COMPOUND_STRING("Kenny"),
-    COMPOUND_STRING("Reid"),
+    COMPOUND_STRING("Frank"),
+    COMPOUND_STRING("Felix"),
+    COMPOUND_STRING("Jake"),
+    COMPOUND_STRING("Junya"),
+    COMPOUND_STRING("Rafi"),
     COMPOUND_STRING("Jude"),
     COMPOUND_STRING("Jaxson"),
     COMPOUND_STRING("Easton"),
@@ -501,13 +501,13 @@ static const u8 *const sMalePresetNames[] = {
 };
 
 static const u8 *const sFemalePresetNames[] = {
-    COMPOUND_STRING("Kimmy"),
-    COMPOUND_STRING("Tiara"),
+    COMPOUND_STRING("Emily"),
+    COMPOUND_STRING("Kim"),
+    COMPOUND_STRING("Sara"),
     COMPOUND_STRING("Bella"),
     COMPOUND_STRING("Jayla"),
     COMPOUND_STRING("Allie"),
     COMPOUND_STRING("Lianna"),
-    COMPOUND_STRING("Sara"),
     COMPOUND_STRING("Monica"),
     COMPOUND_STRING("Camila"),
     COMPOUND_STRING("Aubree"),
@@ -1389,11 +1389,11 @@ static void Task_NewGameBirchSpeechSub_InitPokeBall(u8 taskId)
     u8 spriteId = gTasks[sBirchSpeechMainTaskId].tLotadSpriteId;
 
     gSprites[spriteId].x = 100;
-    gSprites[spriteId].y = 75;
+    gSprites[spriteId].y = 70;
     gSprites[spriteId].invisible = FALSE;
     gSprites[spriteId].data[0] = 0;
 
-    CreatePokeballSpriteToReleaseMon(spriteId, gSprites[spriteId].oam.paletteNum, 112, 58, 0, 0, 32, PALETTES_BG, SPECIES_LOTAD);
+    CreatePokeballSpriteToReleaseMon(spriteId, gSprites[spriteId].oam.paletteNum, 112, 58, 0, 0, 32, PALETTES_BG, BIRCH_INTRO_SPECIES);
     gTasks[taskId].func = Task_NewGameBirchSpeechSub_WaitForLotad;
     gTasks[sBirchSpeechMainTaskId].tTimer = 0;
 }
@@ -1688,7 +1688,7 @@ static void Task_NewGameBirchSpeech_ReshowBirchLotad(u8 taskId)
         gSprites[spriteId].oam.objMode = ST_OAM_OBJ_BLEND;
         spriteId = gTasks[taskId].tLotadSpriteId;
         gSprites[spriteId].x = 100;
-        gSprites[spriteId].y = 75;
+        gSprites[spriteId].y = 70;
         gSprites[spriteId].invisible = FALSE;
         gSprites[spriteId].oam.objMode = ST_OAM_OBJ_BLEND;
         NewGameBirchSpeech_StartFadeInTarget1OutTarget2(taskId, 2);
@@ -1895,7 +1895,7 @@ static void SpriteCB_MovePlayerDownWhileShrinking(struct Sprite *sprite)
 
 static u8 NewGameBirchSpeech_CreateLotadSprite(u8 x, u8 y)
 {
-    return CreateMonPicSprite_Affine(SPECIES_LOTAD, FALSE, 0, MON_PIC_AFFINE_FRONT, x, y, 14, TAG_NONE);
+    return CreateMonPicSprite_Affine(BIRCH_INTRO_SPECIES, FALSE, 0, MON_PIC_AFFINE_FRONT, x, y, 14, TAG_NONE);
 }
 
 static void AddBirchSpeechObjects(u8 taskId)

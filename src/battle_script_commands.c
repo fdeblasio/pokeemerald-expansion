@@ -5246,7 +5246,7 @@ static bool32 IsValidSwitchIn(enum BattleTrainer trainer, u32 index)
     if (index >= PARTY_SIZE)
         return FALSE;
 
-    struct Pokemon *party = GetTrainerParty(trainer); 
+    struct Pokemon *party = GetTrainerParty(trainer);
     if (!IsValidForBattle(&party[index]))
         return FALSE;
 
@@ -5395,14 +5395,14 @@ bool32 CanBattlerSwitch(enum BattlerId battler)
     bool32 ret = FALSE;
     struct Pokemon *party = GetBattlerParty(battler);
 
-    if (BattleSideHasTwoTrainers(GetBattlerSide(battler)) && !AreMultiPartiesFullTeams()) 
+    if (BattleSideHasTwoTrainers(GetBattlerSide(battler)) && !AreMultiPartiesFullTeams())
         lastMonId = MULTI_PARTY_SIZE;
     else
         lastMonId = PARTY_SIZE;
 
     battlerIn1 = GetBattlerAtPosition(GetBattlerPosition(battler));
     battlerIn2 = HasPartnerIgnoreFlags(battlerIn1) ? BATTLE_PARTNER(battlerIn1) : battlerIn1;
-    
+
     for (i = 0; i < lastMonId; i++)
     {
         if (GetMonData(&party[i], MON_DATA_HP) != 0
@@ -5989,19 +5989,16 @@ static void Cmd_yesnoboxlearnmove(void)
 
                     PREPARE_MOVE_BUFFER(gBattleTextBuff2, move)
 
-                    RemoveMonPPBonus(&gParties[B_TRAINER_0][gBattleStruct->expGetterMonId], movePosition);
                     SetMonMoveSlot(&gParties[B_TRAINER_0][gBattleStruct->expGetterMonId], gMoveToLearn, movePosition);
 
                     if (gBattlerPartyIndexes[0] == gBattleStruct->expGetterMonId && MOVE_IS_PERMANENT(0, movePosition))
                     {
-                        RemoveBattleMonPPBonus(&gBattleMons[0], movePosition);
                         SetBattleMonMoveSlot(&gBattleMons[0], gMoveToLearn, movePosition);
                     }
                     if (IsDoubleBattle()
                         && gBattlerPartyIndexes[2] == gBattleStruct->expGetterMonId
                         && MOVE_IS_PERMANENT(2, movePosition))
                     {
-                        RemoveBattleMonPPBonus(&gBattleMons[2], movePosition);
                         SetBattleMonMoveSlot(&gBattleMons[2], gMoveToLearn, movePosition);
                     }
                 }
@@ -8883,7 +8880,7 @@ static void Cmd_copymovepermanently(void)
             struct MovePpInfo movePpData;
 
             gBattleMons[gBattlerAttacker].moves[gCurrMovePos] = gLastPrintedMoves[gBattlerTarget];
-            gBattleMons[gBattlerAttacker].pp[gCurrMovePos] = GetMovePP(gLastPrintedMoves[gBattlerTarget]);
+            gBattleMons[gBattlerAttacker].pp[gCurrMovePos] = CalculateMaxPP(gLastPrintedMoves[gBattlerTarget]);
 
             for (i = 0; i < MAX_MON_MOVES; i++)
             {

@@ -566,7 +566,7 @@ static void InitPartyMenu(enum PartyMenuType menuType, enum PartyMenuLayout layo
         {
             gPartyMenu.slotId = 0;
         }
-        else if (gPartyMenu.slotId > PARTY_SIZE - 1 
+        else if (gPartyMenu.slotId > PARTY_SIZE - 1
          || GetMonData(GetPartyMonFromPartyMenuId(gPartyMenu.slotId), MON_DATA_SPECIES) == SPECIES_NONE)
         {
             gPartyMenu.slotId = 0;
@@ -1222,7 +1222,7 @@ static void DisplayPartyPokemonDataForMultiBattle(u8 slot)
 {
     struct PartyMenuBox *menuBox = &sPartyMenuBoxes[slot];
     u8 actualSlot = slot - MULTI_PARTY_SIZE;
-    
+
     if (gPartyMenu.layout == PARTY_LAYOUT_MULTI_FULL_SHOWCASE_PARTNER)
         actualSlot = slot;
 
@@ -1998,7 +1998,7 @@ static s8 GetNewSlotDoubleLayout(s8 slotId, s8 movementDir)
     while (TRUE)
     {
         slotId += movementDir;
-        
+
         if ((u8)slotId >= PARTY_SIZE)
             return -1;
         if (GetMonData(GetPartyMonFromPartyMenuId(slotId), MON_DATA_SPECIES) != SPECIES_NONE)
@@ -5750,7 +5750,6 @@ static void Task_PartyMenuReplaceMove(u8 taskId)
     if (IsPartyMenuTextPrinterActive() != TRUE)
     {
         mon = &gParties[B_TRAINER_0][gPartyMenu.slotId];
-        RemoveMonPPBonus(mon, GetMoveSlotToReplace());
         move = gPartyMenu.data1;
         SetMonMoveSlot(mon, move, GetMoveSlotToReplace());
         Task_LearnedMove(taskId);
@@ -6365,7 +6364,6 @@ void DeleteMove(struct Pokemon *mon, enum Move move)
             if (existingMove == move)
             {
                 SetMonMoveSlot(mon, MOVE_NONE, i);
-                RemoveMonPPBonus(mon, i);
                 for (j = i; j < MAX_MON_MOVES - 1; j++)
                     ShiftMoveSlot(&mon->box, j, j + 1);
                 break;
@@ -6502,9 +6500,9 @@ static void SwapFusionMonMoves(struct Pokemon *mon, const u16 moveTable[][2], u3
         {
             if (move == moveTable[j][oldMoveIndex])
             {
-                u32 pp = GetMovePP(moveTable[j][newMoveIndex]);
+                u8 maxPP = CalculateMaxPP(moveTable[j][newMoveIndex]);
                 SetMonData(mon, MON_DATA_MOVE1 + i, &moveTable[j][newMoveIndex]);
-                SetMonData(mon, MON_DATA_PP1 + i, &pp);
+                SetMonData(mon, MON_DATA_PP1 + i, &maxPP);
             }
         }
     }
@@ -7892,7 +7890,7 @@ static void UpdatePartyToFieldOrder(void)
     u8 i;
 
     const u8 *multiBattlePartyIdToMenuId = sMultiBattlePartyIdToMenuId_Left;
-    
+
     if ((gBattleTypeFlags & BATTLE_TYPE_LINK)
      && ((gBattlerInMenuId & BIT_FLANK) != B_FLANK_LEFT))
     {

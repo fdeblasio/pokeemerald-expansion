@@ -2727,7 +2727,7 @@ static void PrintTMHMMoveData(enum Item itemId)
         BagMenu_Print(WIN_TM_INFO, FONT_NORMAL, text, 7, 24, 0, 0, TEXT_SKIP_DRAW, COLORID_TM_INFO);
 
         // Print TM PP
-        ConvertIntToDecimalStringN(gStringVar1, GetMovePP(move), STR_CONV_MODE_RIGHT_ALIGN, 3);
+        ConvertIntToDecimalStringN(gStringVar1, CalculateMaxPP(move), STR_CONV_MODE_RIGHT_ALIGN, 3);
         BagMenu_Print(WIN_TM_INFO, FONT_NORMAL, gStringVar1, 7, 36, 0, 0, TEXT_SKIP_DRAW, COLORID_TM_INFO);
 
         CopyWindowToVram(WIN_TM_INFO, COPYWIN_GFX);

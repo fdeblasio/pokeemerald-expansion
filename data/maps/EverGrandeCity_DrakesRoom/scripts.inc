@@ -1,10 +1,10 @@
 EverGrandeCity_DrakesRoom_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, EverGrandeCity_DrakesRoom_OnFrame
 	map_script MAP_SCRIPT_ON_LOAD, EverGrandeCity_DrakesRoom_OnLoad
-	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, EverGrandeCity_SidneysRoom_OnWarp
+	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, EverGrandeCity_DrakesRoom_OnWarp
 	.byte 0
 
-@ Unused, Drake uses Sidneys identical OnWarp for some reason
+@ Unused, Drake uses Drakes identical OnWarp for some reason
 EverGrandeCity_DrakesRoom_OnWarp:
 	map_script_2 VAR_TEMP_1, 0, EverGrandeCity_DrakesRoom_EventScript_PlayerTurnNorth
 	.2byte 0
@@ -41,9 +41,17 @@ EverGrandeCity_DrakesRoom_EventScript_Drake::
 	lock
 	faceplayer
 	goto_if_set FLAG_DEFEATED_ELITE_4_DRAKE, EverGrandeCity_DrakesRoom_EventScript_PostBattleSpeech
+	goto_if_set FLAG_SYS_GAME_CLEAR, EverGrandeCity_DrakesRoom_EventScript_Rematch
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 	msgbox EverGrandeCity_DrakesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_DRAKE, EverGrandeCity_DrakesRoom_Text_Defeat
+	goto EverGrandeCity_DrakesRoom_EventScript_Defeated
+	end
+
+EverGrandeCity_DrakesRoom_EventScript_Rematch::
+	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
+	msgbox EverGrandeCity_DrakesRoom_Text_IntroSpeechRematch, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_DRAKE_REMATCH, EverGrandeCity_DrakesRoom_Text_Defeat
 	goto EverGrandeCity_DrakesRoom_EventScript_Defeated
 	end
 
@@ -64,6 +72,17 @@ EverGrandeCity_DrakesRoom_EventScript_Defeated::
 EverGrandeCity_DrakesRoom_Text_IntroSpeech:
 	.string "I am the last of the Pokémon League\n"
 	.string "Elite Four, Drake the Dragon master!\p"
+	.string "In their natural state, Pokémon are\n"
+	.string "wild living things. They are free.\p"
+	.string "At times, they hinder us.\n"
+	.string "At times, they help us.\p"
+	.string "For us to battle with Pokémon as\n"
+	.string "partners, do you know what it takes?\p"
+	.string "Do you know what is needed?\p"
+	.string "If you don't, then you will never\n"
+	.string "prevail over me!$"
+
+EverGrandeCity_DrakesRoom_Text_IntroSpeechRematch:
 	.string "In their natural state, Pokémon are\n"
 	.string "wild living things. They are free.\p"
 	.string "At times, they hinder us.\n"

@@ -22,7 +22,8 @@ SootopolisCity_House1_EventScript_Kecleon::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_KECLEON, CRY_MODE_NORMAL
+	playmoncry SPECIES_SOOTOPOLIS_HOUSE_1, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, SPECIES_SOOTOPOLIS_HOUSE_1
 	msgbox SootopolisCity_House1_Text_Kecleon, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -39,5 +40,5 @@ SootopolisCity_House1_Text_ExplainBrickBreak:
 	.string "so horrible that I can't describe it.$"
 
 SootopolisCity_House1_Text_Kecleon:
-	.string "Kecleon: Puu puhyaah.$"
+	.string "{STR_VAR_1}: Puu puhyaah.$"
 

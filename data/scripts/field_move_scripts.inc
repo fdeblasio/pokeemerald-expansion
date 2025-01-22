@@ -1,11 +1,14 @@
 @ Interact with cuttable tree
 EventScript_CutTree::
 	lockall
-	checkfieldmove FIELD_MOVE_CUT, TRUE
+	checkfieldmove FIELD_MOVE_CUT
 	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CheckTreeCantCut
 	setfieldeffectargument 0, VAR_RESULT
 	bufferpartymonnick STR_VAR_1, VAR_RESULT
 	buffermovename STR_VAR_2, MOVE_CUT
+	goto EventScript_WantToCut
+
+EventScript_WantToCut::
 	msgbox Text_WantToCut, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_CancelCut
 	msgbox Text_MonUsedFieldMove, MSGBOX_DEFAULT
@@ -85,9 +88,7 @@ EventScript_SmashRock:: @ fallthrough
 	waitmovement 0
 	removeobject VAR_LAST_TALKED
 	specialvar VAR_RESULT, TryUpdateRusturfTunnelState
-	goto_if_eq VAR_RESULT, TRUE, EventScript_EndSmash
-	special RockSmashWildEncounter
-	goto_if_eq VAR_RESULT, FALSE, EventScript_EndSmash
+	goto EventScript_EndSmash
 	waitstate
 	releaseall
 	end
@@ -215,7 +216,7 @@ EventScript_CancelSmash::
 
 Text_WantToSmash:
 	.string "This rock appears to be breakable.\n"
-	.string "Would you like to use Rock Smash?$"
+	.string "Would you like to break it?$"
 
 Text_CantSmash:
 	.string "It's a rugged rock, but a Pokémon\n"
@@ -283,14 +284,11 @@ Text_StrengthActivated:
 
 EventScript_UseWaterfall::
 	lockall
-	checkfieldmove FIELD_MOVE_WATERFALL
-	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantWaterfall
-	bufferpartymonnick STR_VAR_1, VAR_RESULT
-	setfieldeffectargument 0, VAR_RESULT
+	checkitem ITEM_FAME_CHECKER
+	goto_if_eq VAR_RESULT, FALSE, EventScript_CantWaterfall
 	msgbox Text_WantToWaterfall, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_EndWaterfall
-	msgbox Text_MonUsedWaterfall, MSGBOX_DEFAULT
-	hidefollowernpc
+	msgbox Text_ScaledWaterfall, MSGBOX_DEFAULT
 	dofieldeffect FLDEFF_USE_WATERFALL
 	callnative FollowerNPC_WarpSetEnd
 	goto EventScript_EndWaterfall
@@ -311,25 +309,18 @@ Text_CantWaterfall:
 
 Text_WantToWaterfall:
 	.string "It's a large waterfall.\n"
-	.string "Would you like to use Waterfall?$"
+	.string "Would you like to scale it?$"
 
-Text_MonUsedWaterfall:
-	.string "{STR_VAR_1} used Waterfall.$"
+Text_ScaledWaterfall:
+	.string "You scaled the waterfall.$"
 
 EventScript_UseDive::
 	lockall
-	checkfieldmove FIELD_MOVE_DIVE
-	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantDive
-	copyvar 0x8004 VAR_RESULT
-	bufferpartymonnick STR_VAR_1, VAR_RESULT
-	setfieldeffectargument 0, VAR_RESULT
-	setfieldeffectargument 1, 1
+	checkitem ITEM_SILPH_SCOPE
+	goto_if_eq VAR_RESULT, FALSE, EventScript_CantDive
 	msgbox Text_WantToDive, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_EndDive
-	msgbox Text_MonUsedDive, MSGBOX_DEFAULT
-	hidefollowernpc
-	setfieldeffectargument 0, VAR_0x8004
-	setfieldeffectargument 1, 1
+	msgbox Text_DiveUnder, MSGBOX_DEFAULT
 	dofieldeffect FLDEFF_USE_DIVE
 	goto EventScript_EndDive
 	end
@@ -345,22 +336,10 @@ EventScript_EndDive::
 
 EventScript_UseDiveUnderwater::
 	lockall
-	checkfieldmove FIELD_MOVE_DIVE
-	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantSurface
-	bufferpartymonnick STR_VAR_1, VAR_RESULT
-	setfieldeffectargument 0, VAR_RESULT
-	setfieldeffectargument 1, 1
 	msgbox Text_WantToSurface, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, EventScript_NoSurface
-	msgbox Text_MonUsedDive, MSGBOX_DEFAULT
-	hidefollowernpc
+	goto_if_eq VAR_RESULT, NO, EventScript_EndSurface
+	msgbox Text_DiveSurfaced, MSGBOX_DEFAULT
 	dofieldeffect FLDEFF_USE_DIVE
-	goto EventScript_EndSurface
-	end
-
-EventScript_CantSurface::
-	lockall
-	msgbox Text_CantSurface, MSGBOX_DEFAULT
 	goto EventScript_EndSurface
 	end
 
@@ -375,10 +354,8 @@ EventScript_DigCommon:
 	setfieldeffectargument 3, VAR_0x8004 @ skip pose if true
 	dofieldeffect FLDEFF_USE_DIG
 	waitstate
-EventScript_DigSealedChamber:: @ fallthrough
 	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
 	call_if_eq VAR_0x8004, TRUE, EventScript_FollowerFieldMove
-	callnative DoBrailleDigEffect
 	releaseall
 	end
 
@@ -400,23 +377,22 @@ EventScript_UseCutGrass::
 	goto EventScript_CutGrassCommon
 
 Text_CantDive:
-	.string "The sea is deep here. A Pokémon\n"
-	.string "may be able to go underwater.$"
+	.string "The sea is deep here. Someone with\n"
+	.string "Dive Goggles could go underwater.$"
 
 Text_WantToDive:
 	.string "The sea is deep here.\n"
-	.string "Would you like to use Dive?$"
+	.string "Would you like to Dive?$"
 
-Text_MonUsedDive:
-	.string "{STR_VAR_1} used Dive.$"
+Text_DiveUnder:
+	.string "You dove underwater.$"
 
-Text_CantSurface:
-	.string "Light is filtering down from above.\n"
-	.string "A Pokémon may be able to surface.$"
+Text_DiveSurfaced:
+	.string "You surfaced.$"
 
 Text_WantToSurface:
 	.string "Light is filtering down from above.\n"
-	.string "Would you like to use Dive?$"
+	.string "Would you like to surface?$"
 
 EventScript_FailSweetScent::
 	msgbox Text_FailSweetScent, MSGBOX_SIGN

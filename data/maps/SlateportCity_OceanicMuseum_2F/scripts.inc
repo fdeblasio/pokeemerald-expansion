@@ -7,14 +7,14 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	msgbox SlateportCity_OceanicMuseum_2F_Text_ThankYouForTheParts, MSGBOX_DEFAULT
 	closemessage
 	playbgm MUS_ENCOUNTER_AQUA, TRUE
-	addobject LOCALID_OCEANIC_MUSEUM_2F_GRUNT_1
-	applymovement LOCALID_OCEANIC_MUSEUM_2F_GRUNT_1, SlateportCity_OceanicMuseum_2F_Movement_FirstGruntEnter
+	addobject LOCALID_OCEANIC_MUSEUM_2F_MARINA
+	applymovement LOCALID_OCEANIC_MUSEUM_2F_MARINA, SlateportCity_OceanicMuseum_2F_Movement_MarinaEnter
 	waitmovement 0
-	addobject LOCALID_OCEANIC_MUSEUM_2F_GRUNT_2
-	applymovement LOCALID_OCEANIC_MUSEUM_2F_GRUNT_2, SlateportCity_OceanicMuseum_2F_Movement_SecondGruntEnter
+	addobject LOCALID_OCEANIC_MUSEUM_2F_MALIK
+	applymovement LOCALID_OCEANIC_MUSEUM_2F_MALIK, SlateportCity_OceanicMuseum_2F_Movement_MalikEnter
 	waitmovement 0
-	applymovement LOCALID_OCEANIC_MUSEUM_2F_GRUNT_1, SlateportCity_OceanicMuseum_2F_Movement_FirstGruntApproach
-	applymovement LOCALID_OCEANIC_MUSEUM_2F_GRUNT_2, SlateportCity_OceanicMuseum_2F_Movement_SecondGruntApproach
+	applymovement LOCALID_OCEANIC_MUSEUM_2F_MARINA, SlateportCity_OceanicMuseum_2F_Movement_MarinaApproach
+	applymovement LOCALID_OCEANIC_MUSEUM_2F_MALIK, SlateportCity_OceanicMuseum_2F_Movement_MalikApproach
 	waitmovement 0
 	call_if_eq VAR_FACING, DIR_SOUTH, SlateportCity_OceanicMuseum_2F_EventScript_PlayerFaceGrunts
 	call_if_eq VAR_FACING, DIR_EAST, SlateportCity_OceanicMuseum_2F_EventScript_PlayerFaceGrunts
@@ -23,43 +23,45 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	msgbox SlateportCity_OceanicMuseum_2F_Text_SternWhoAreYou, MSGBOX_DEFAULT
 	msgbox SlateportCity_OceanicMuseum_2F_Text_WereTeamAqua, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_OCEANIC_MUSEUM_2F_GRUNT_2, SlateportCity_OceanicMuseum_2F_Movement_GruntApproachToBattle
+	applymovement LOCALID_OCEANIC_MUSEUM_2F_MALIK, SlateportCity_OceanicMuseum_2F_Movement_GruntApproachToBattle
 	waitmovement 0
 	call_if_eq VAR_FACING, DIR_SOUTH, SlateportCity_OceanicMuseum_2F_EventScript_PlayerApproachGruntSouth
 	call_if_eq VAR_FACING, DIR_WEST, SlateportCity_OceanicMuseum_2F_EventScript_PlayerApproachGruntWest
-	trainerbattle_no_intro TRAINER_MALIK_MUSEUM, SlateportCity_OceanicMuseum_2F_Text_Grunt1Defeat
+	trainerbattle_no_intro TRAINER_MALIK_MUSEUM, SlateportCity_OceanicMuseum_2F_Text_MalikDefeat
 	msgbox SlateportCity_OceanicMuseum_2F_Text_BossGoingToBeFurious, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_OCEANIC_MUSEUM_2F_GRUNT_2, SlateportCity_OceanicMuseum_2F_Movement_GruntDefeated
+	applymovement LOCALID_OCEANIC_MUSEUM_2F_MALIK, SlateportCity_OceanicMuseum_2F_Movement_GruntDefeated
 	waitmovement 0
-	applymovement LOCALID_OCEANIC_MUSEUM_2F_GRUNT_1, SlateportCity_OceanicMuseum_2F_Movement_GruntApproachToBattle
+	applymovement LOCALID_OCEANIC_MUSEUM_2F_MARINA, SlateportCity_OceanicMuseum_2F_Movement_GruntApproachToBattle
 	waitmovement 0
 	msgbox SlateportCity_OceanicMuseum_2F_Text_LetMeTakeCareOfThis, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_MARINA_MUSEUM, SlateportCity_OceanicMuseum_2F_Text_Grunt2Defeat
-	applymovement LOCALID_OCEANIC_MUSEUM_2F_GRUNT_1, SlateportCity_OceanicMuseum_2F_Movement_GruntDefeated
+	trainerbattle_no_intro TRAINER_MARINA_MUSEUM, SlateportCity_OceanicMuseum_2F_Text_MarinaDefeat
+	applymovement LOCALID_OCEANIC_MUSEUM_2F_MARINA, SlateportCity_OceanicMuseum_2F_Movement_GruntDefeated
 	waitmovement 0
-	applymovement LOCALID_OCEANIC_MUSEUM_2F_GRUNT_1, Common_Movement_WalkInPlaceFasterDown
-	applymovement LOCALID_OCEANIC_MUSEUM_2F_GRUNT_2, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_OCEANIC_MUSEUM_2F_MARINA, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_OCEANIC_MUSEUM_2F_MALIK, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	msgbox SlateportCity_OceanicMuseum_2F_Text_MeddlingKid, MSGBOX_DEFAULT
 	closemessage
 	delay 35
 	addobject LOCALID_OCEANIC_MUSEUM_2F_ARCHIE
 	applymovement LOCALID_OCEANIC_MUSEUM_2F_ARCHIE, SlateportCity_OceanicMuseum_2F_Movement_ArchieEnter
-	applymovement LOCALID_OCEANIC_MUSEUM_2F_GRUNT_2, SlateportCity_OceanicMuseum_2F_Movement_GruntMoveForArchie
+	applymovement LOCALID_OCEANIC_MUSEUM_2F_MALIK, SlateportCity_OceanicMuseum_2F_Movement_GruntMoveForArchie
 	waitmovement 0
 	msgbox SlateportCity_OceanicMuseum_2F_Text_CameToSeeWhatsTakingSoLong, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_OCEANIC_MUSEUM_2F_ARCHIE, SlateportCity_OceanicMuseum_2F_Movement_ArchieApproachPlayer
 	waitmovement 0
 	msgbox SlateportCity_OceanicMuseum_2F_Text_ArchieWarning, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_ARCHIE_MUSEUM, SlateportCity_OceanicMuseum_2F_Text_ArchieDefeat
+	msgbox SlateportCity_OceanicMuseum_2F_Text_ArchieRetreat, MSGBOX_DEFAULT
 	closemessage
 	savebgm MUS_DUMMY
 	fadedefaultbgm
 	fadescreen FADE_TO_BLACK
 	removeobject LOCALID_OCEANIC_MUSEUM_2F_ARCHIE
-	removeobject LOCALID_OCEANIC_MUSEUM_2F_GRUNT_1
-	removeobject LOCALID_OCEANIC_MUSEUM_2F_GRUNT_2
+	removeobject LOCALID_OCEANIC_MUSEUM_2F_MARINA
+	removeobject LOCALID_OCEANIC_MUSEUM_2F_MALIK
 	fadescreen FADE_FROM_BLACK
 	delay 30
 	setflag FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_AQUA_GRUNTS
@@ -160,13 +162,13 @@ SlateportCity_OceanicMuseum_2F_Movement_GruntApproachToBattle:
 	walk_right
 	step_end
 
-SlateportCity_OceanicMuseum_2F_Movement_FirstGruntEnter:
+SlateportCity_OceanicMuseum_2F_Movement_MarinaEnter:
 	walk_down
 	walk_right
 	walk_in_place_faster_down
 	step_end
 
-SlateportCity_OceanicMuseum_2F_Movement_FirstGruntApproach:
+SlateportCity_OceanicMuseum_2F_Movement_MarinaApproach:
 	walk_down
 	walk_down
 	walk_down
@@ -181,11 +183,11 @@ SlateportCity_OceanicMuseum_2F_Movement_GruntDefeated:
 	unlock_facing_direction
 	step_end
 
-SlateportCity_OceanicMuseum_2F_Movement_SecondGruntEnter:
+SlateportCity_OceanicMuseum_2F_Movement_MalikEnter:
 	walk_down
 	step_end
 
-SlateportCity_OceanicMuseum_2F_Movement_SecondGruntApproach:
+SlateportCity_OceanicMuseum_2F_Movement_MalikApproach:
 	walk_down
 	walk_down
 	walk_down
@@ -289,7 +291,7 @@ SlateportCity_OceanicMuseum_2F_Text_WereTeamAqua:
 	.string "Our Boss wants those parts!\n"
 	.string "Shut your yap and fork them over!$"
 
-SlateportCity_OceanicMuseum_2F_Text_Grunt1Defeat:
+SlateportCity_OceanicMuseum_2F_Text_MalikDefeat:
 	.string "Awaaaah!\n"
 	.string "A kid beat me!$"
 
@@ -301,7 +303,7 @@ SlateportCity_OceanicMuseum_2F_Text_LetMeTakeCareOfThis:
 	.string "Humph, sniveling wimp!\n"
 	.string "Let me take care of this!$"
 
-SlateportCity_OceanicMuseum_2F_Text_Grunt2Defeat:
+SlateportCity_OceanicMuseum_2F_Text_MarinaDefeat:
 	.string "What?!\n"
 	.string "I lost, too!$"
 
@@ -333,7 +335,13 @@ SlateportCity_OceanicMuseum_2F_Text_ArchieWarning:
 	.string "So, Team Aqua is dedicated to\n"
 	.string "the expansion of the sea.\p"
 	.string "Don't you agree? What we are doing\n"
-	.string "is a magnificent undertaking.\p"
+	.string "is a magnificent undertaking.$"
+
+SlateportCity_OceanicMuseum_2F_Text_ArchieDefeat:
+	.string "… … … … … …\n"
+	.string "… … … … … …$"
+
+SlateportCity_OceanicMuseum_2F_Text_ArchieRetreat:
 	.string "Ah, fine…\n"
 	.string "You're still too young to understand\l"
 	.string "our noble objective.\p"

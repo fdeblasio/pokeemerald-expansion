@@ -14,7 +14,7 @@ BattleFrontier_BattlePyramidFloor_EventScript_UpdateLight::
 	lockall
 	@ pyramid_updatelight, cant use macro because it straddles the loop
 	setvar VAR_0x8004, BATTLE_PYRAMID_FUNC_UPDATE_LIGHT
-	setvar VAR_0x8005, 4
+	setvar VAR_0x8005, 8
 	setvar VAR_0x8006, PYRAMID_LIGHT_INCR_RADIUS
 	setvar VAR_0x8007, SE_SAVE
 	setvar VAR_RESULT, 0
@@ -68,7 +68,6 @@ BattleFrontier_BattlePyramid_EventScript_WarpToLobby::
 	end
 
 BattleFrontier_BattlePyramidFloor_EventScript_ReadyChallenge::
-	pyramid_save CHALLENGE_STATUS_SAVING
 	special SavePlayerParty
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, 0
 	pyramid_settrainers
@@ -82,7 +81,7 @@ BattleFrontier_BattlePyramidFloor_OnTransition:
 	end
 
 BattleFrontier_BattlePyramidFloor_EventScript_SetLightRadius::
-	pyramid_updatelight 32, PYRAMID_LIGHT_SET_RADIUS
+	pyramid_updatelight 40, PYRAMID_LIGHT_SET_RADIUS
 	return
 
 BattlePyramid_WarpToNextFloor::

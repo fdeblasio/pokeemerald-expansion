@@ -23,6 +23,7 @@ FortreeCity_House4_EventScript_Boy::
 FortreeCity_House4_EventScript_WingullOnErrand::
 	applymovement VAR_LAST_TALKED, Common_Movement_FacePlayer
 	waitmovement 0
+	bufferspeciesname STR_VAR_1, SPECIES_FORTREE_MOSSDEEP_MESSENGER
 	msgbox FortreeCity_House4_Text_AskedWingullToRunErrand, MSGBOX_DEFAULT
 	releaseall
 	end
@@ -30,6 +31,7 @@ FortreeCity_House4_EventScript_WingullOnErrand::
 FortreeCity_House4_EventScript_WingullReturned::
 	applymovement VAR_LAST_TALKED, Common_Movement_FacePlayer
 	waitmovement 0
+	bufferspeciesname STR_VAR_1, SPECIES_FORTREE_MOSSDEEP_MESSENGER
 	msgbox FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb, MSGBOX_DEFAULT
 	giveitem ITEM_MENTAL_HERB
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
@@ -40,6 +42,7 @@ FortreeCity_House4_EventScript_WingullReturned::
 FortreeCity_House4_EventScript_ReceivedMentalHerb::
 	applymovement VAR_LAST_TALKED, Common_Movement_FacePlayer
 	waitmovement 0
+	bufferspeciesname STR_VAR_1, SPECIES_FORTREE_MOSSDEEP_MESSENGER
 	msgbox FortreeCity_House4_Text_FriendsFarAwayThanksToWingull, MSGBOX_DEFAULT
 	releaseall
 	end
@@ -56,7 +59,8 @@ FortreeCity_House4_EventScript_Wingull::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_WINGULL, CRY_MODE_NORMAL
+	playmoncry SPECIES_FORTREE_MOSSDEEP_MESSENGER, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, SPECIES_FORTREE_MOSSDEEP_MESSENGER
 	msgbox FortreeCity_House4_Text_Wingull, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -73,12 +77,12 @@ FortreeCity_House4_Text_GoBirdPokemon:
 	.string "Go, Bird Pokémon!$"
 
 FortreeCity_House4_Text_AskedWingullToRunErrand:
-	.string "Heheh, I asked my Wingull to run\n"
+	.string "Heheh, I asked my {STR_VAR_1} to run\n"
 	.string "an errand for me.$"
 
 FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb:
 	.string "Good!\n"
-	.string "Welcome back, Wingull!\p"
+	.string "Welcome back, {STR_VAR_1}!\p"
 	.string "Huh? What is this?\n"
 	.string "What is it holding?\p"
 	.string "A Mental Herb?\n"
@@ -87,9 +91,9 @@ FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb:
 	.string "have it.$"
 
 FortreeCity_House4_Text_FriendsFarAwayThanksToWingull:
-	.string "Thanks to my Wingull, I have friends\n"
+	.string "Thanks to my {STR_VAR_1}, I have friends\n"
 	.string "who live far away.$"
 
 FortreeCity_House4_Text_Wingull:
-	.string "Wingull: Pihyoh!$"
+	.string "{STR_VAR_1}: Pihyoh!$"
 

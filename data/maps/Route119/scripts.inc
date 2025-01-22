@@ -76,23 +76,23 @@ Route119_EventScript_BattleMay::
 	end
 
 Route119_EventScript_BattleMayTreecko::
-	trainerbattle_no_intro TRAINER_MAY_ROUTE_119_GRASS, Route119_Text_MayDefeat
-	goto Route119_EventScript_DefeatedMay
-	end
-
-Route119_EventScript_BattleMayTorchic::
 	trainerbattle_no_intro TRAINER_MAY_ROUTE_119_FIRE, Route119_Text_MayDefeat
 	goto Route119_EventScript_DefeatedMay
 	end
 
-Route119_EventScript_BattleMayMudkip::
+Route119_EventScript_BattleMayTorchic::
 	trainerbattle_no_intro TRAINER_MAY_ROUTE_119_WATER, Route119_Text_MayDefeat
+	goto Route119_EventScript_DefeatedMay
+	end
+
+Route119_EventScript_BattleMayMudkip::
+	trainerbattle_no_intro TRAINER_MAY_ROUTE_119_GRASS, Route119_Text_MayDefeat
 	goto Route119_EventScript_DefeatedMay
 	end
 
 Route119_EventScript_DefeatedMay::
 	msgbox Route119_Text_MayPresentForYou, MSGBOX_DEFAULT
-	call Route119_EventScript_GiveFlyHM
+	call Route119_EventScript_GiveFlyTM
 	msgbox Route119_Text_MayExplainFly, MSGBOX_DEFAULT
 	goto Route119_EventScript_RivalExitScottArrive
 	end
@@ -106,30 +106,30 @@ Route119_EventScript_BattleBrendan::
 	end
 
 Route119_EventScript_BattleBrendanTreecko::
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_119_GRASS, Route119_Text_BrendanDefeat
-	goto Route119_EventScript_DefeatedBrendan
-	end
-
-Route119_EventScript_BattleBrendanTorchic::
 	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_119_FIRE, Route119_Text_BrendanDefeat
 	goto Route119_EventScript_DefeatedBrendan
 	end
 
-Route119_EventScript_BattleBrendanMudkip::
+Route119_EventScript_BattleBrendanTorchic::
 	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_119_WATER, Route119_Text_BrendanDefeat
+	goto Route119_EventScript_DefeatedBrendan
+	end
+
+Route119_EventScript_BattleBrendanMudkip::
+	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_119_GRASS, Route119_Text_BrendanDefeat
 	goto Route119_EventScript_DefeatedBrendan
 	end
 
 Route119_EventScript_DefeatedBrendan::
 	msgbox Route119_Text_BrendanIllGiveYouThis, MSGBOX_DEFAULT
-	call Route119_EventScript_GiveFlyHM
+	call Route119_EventScript_GiveFlyTM
 	msgbox Route119_Text_BrendanExplainFly, MSGBOX_DEFAULT
 	goto Route119_EventScript_RivalExitScottArrive
 	end
 
-Route119_EventScript_GiveFlyHM::
-	giveitem ITEM_HM_FLY
-	setflag FLAG_RECEIVED_HM_FLY
+Route119_EventScript_GiveFlyTM::
+	giveitem ITEM_TM_FLY
+	setflag FLAG_RECEIVED_TM_FLY
 	return
 
 Route119_EventScript_RivalExitScottArrive::
@@ -498,9 +498,6 @@ Route119_Text_MayExplainFly:
 	.string "May: Use Fly, and your Pokémon will\n"
 	.string "instantly carry you to any town you've\l"
 	.string "already visited.\p"
-	.string "But, to use Fly, you have to get\n"
-	.string "the Gym Badge from Fortree City.\l"
-	.string "That's important, so don't forget.\p"
 	.string "You should Fly home and visit\n"
 	.string "Littleroot for a change.\p"
 	.string "I bet your mom's worried about you,\n"
@@ -529,8 +526,6 @@ Route119_Text_BrendanExplainFly:
 	.string "Brendan: Use Fly, and your Pokémon\n"
 	.string "instantly carries you to any town\l"
 	.string "you've already visited.\p"
-	.string "But you need the Fortree Gym Badge \n"
-	.string "to do that.\p"
 	.string "Anyway, I have to move along.$"
 
 Route119_Text_ScottWayToGoBeSeeingYou:
@@ -577,7 +572,7 @@ Route119_Text_ThoughtFlyByCatchingBirdMons:
 	.string "I thought you Fly by catching a whole\n"
 	.string "flock of Bird Pokémon, and then\l"
 	.string "hanging on to them somehow.\p"
-	.string "But it turns out there's an HM move\n"
+	.string "But it turns out there's an TM move\n"
 	.string "called Fly!\p"
 	.string "I wish I'd known about that a long\n"
 	.string "time ago…$"

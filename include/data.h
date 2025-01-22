@@ -124,7 +124,7 @@ struct TrainerMon
 #define EV_SPREAD_SPE_DEF_HP    .ev = TRAINER_PARTY_EVS(EV_REMAINDER, 0, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, 0, 0)
 #define EV_SPREAD_SPE_SPD_HP    .ev = TRAINER_PARTY_EVS(EV_REMAINDER, 0, 0, 0, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS)
 
-enum TrainerBattleType 
+enum TrainerBattleType
 {
     TRAINER_BATTLE_TYPE_SINGLES,
     TRAINER_BATTLE_TYPE_DOUBLES,
@@ -209,7 +209,7 @@ struct TypeInfo
     u16 isSpecialCaseType:1;
     u16 isHiddenPowerType:1; // Changing this for any type will change the distribution of all Hidden Power types from vanilla.
     u16 padding:11;
-    const u16 *const paletteTMHM;
+    const u16 *const paletteTM;
     //u16 enhanceItem;
     //u16 berry;
     //u16 gem;

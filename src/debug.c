@@ -379,8 +379,6 @@ extern const u8 Debug_EventScript_FakeRTCNotEnabled[];
 extern const u8 Debug_BerryPestsDisabled[];
 extern const u8 Debug_BerryWeedsDisabled[];
 
-extern const u8 FallarborTown_MoveRelearnersHouse_EventScript_ChooseMon[];
-
 #include "data/map_group_count.h"
 
 // Text
@@ -657,15 +655,15 @@ static const struct DebugMenuOption sDebugMenu_Actions_Flags[] =
 
 static const struct DebugMenuOption sDebugMenu_Actions_Main[] =
 {
-    { COMPOUND_STRING("Utilities…"),    DebugAction_OpenSubMenu, sDebugMenu_Actions_Utilities, },
-    { COMPOUND_STRING("PC/Bag…"),       DebugAction_OpenSubMenu, sDebugMenu_Actions_PCBag, },
-    { COMPOUND_STRING("Party…"),        DebugAction_OpenSubMenu, sDebugMenu_Actions_Party, },
-    { COMPOUND_STRING("Give X…"),       DebugAction_OpenSubMenu, sDebugMenu_Actions_Give, },
-    { COMPOUND_STRING("Player…"),       DebugAction_OpenSubMenu, sDebugMenu_Actions_Player, },
-    { COMPOUND_STRING("Scripts…"),      DebugAction_OpenSubMenu, sDebugMenu_Actions_Scripts, },
+    { COMPOUND_STRING("Give X…"),       DebugAction_OpenSubMenu,          sDebugMenu_Actions_Give, },
+    { COMPOUND_STRING("Utilities…"),    DebugAction_OpenSubMenu,          sDebugMenu_Actions_Utilities, },
+    { COMPOUND_STRING("PC/Bag…"),       DebugAction_OpenSubMenu,          sDebugMenu_Actions_PCBag, },
     { COMPOUND_STRING("Flags & Vars…"), DebugAction_OpenSubMenuFlagsVars, sDebugMenu_Actions_Flags, },
-    { COMPOUND_STRING("Sound…"),        DebugAction_OpenSubMenu, sDebugMenu_Actions_Sound, },
-    { COMPOUND_STRING("ROM Info…"),     DebugAction_OpenSubMenu, sDebugMenu_Actions_ROMInfo2, },
+    { COMPOUND_STRING("Party…"),        DebugAction_OpenSubMenu,          sDebugMenu_Actions_Party, },
+    { COMPOUND_STRING("Player…"),       DebugAction_OpenSubMenu,          sDebugMenu_Actions_Player, },
+    { COMPOUND_STRING("Scripts…"),      DebugAction_OpenSubMenu,          sDebugMenu_Actions_Scripts, },
+    { COMPOUND_STRING("Sound…"),        DebugAction_OpenSubMenu,          sDebugMenu_Actions_Sound, },
+    { COMPOUND_STRING("ROM Info…"),     DebugAction_OpenSubMenu,          sDebugMenu_Actions_ROMInfo2, },
     { COMPOUND_STRING("Cancel"),        DebugAction_Cancel, },
     { NULL }
 };

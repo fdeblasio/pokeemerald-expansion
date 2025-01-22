@@ -1477,24 +1477,24 @@ extern const u16 gItemIconPalette_MarangaBerry[];
 // TMs/HMs
 extern const u32 gItemIcon_TM[];
 extern const u32 gItemIcon_HM[];
-extern const u16 gItemIconPalette_NormalTMHM[];
-extern const u16 gItemIconPalette_FireTMHM[];
-extern const u16 gItemIconPalette_WaterTMHM[];
-extern const u16 gItemIconPalette_ElectricTMHM[];
-extern const u16 gItemIconPalette_GrassTMHM[];
-extern const u16 gItemIconPalette_IceTMHM[];
-extern const u16 gItemIconPalette_FightingTMHM[];
-extern const u16 gItemIconPalette_PoisonTMHM[];
-extern const u16 gItemIconPalette_GroundTMHM[];
-extern const u16 gItemIconPalette_FlyingTMHM[];
-extern const u16 gItemIconPalette_PsychicTMHM[];
-extern const u16 gItemIconPalette_BugTMHM[];
-extern const u16 gItemIconPalette_RockTMHM[];
-extern const u16 gItemIconPalette_GhostTMHM[];
-extern const u16 gItemIconPalette_DragonTMHM[];
-extern const u16 gItemIconPalette_DarkTMHM[];
-extern const u16 gItemIconPalette_SteelTMHM[];
-extern const u16 gItemIconPalette_FairyTMHM[];
+extern const u16 gItemIconPalette_NormalTM[];
+extern const u16 gItemIconPalette_FireTM[];
+extern const u16 gItemIconPalette_WaterTM[];
+extern const u16 gItemIconPalette_ElectricTM[];
+extern const u16 gItemIconPalette_GrassTM[];
+extern const u16 gItemIconPalette_IceTM[];
+extern const u16 gItemIconPalette_FightingTM[];
+extern const u16 gItemIconPalette_PoisonTM[];
+extern const u16 gItemIconPalette_GroundTM[];
+extern const u16 gItemIconPalette_FlyingTM[];
+extern const u16 gItemIconPalette_PsychicTM[];
+extern const u16 gItemIconPalette_BugTM[];
+extern const u16 gItemIconPalette_RockTM[];
+extern const u16 gItemIconPalette_GhostTM[];
+extern const u16 gItemIconPalette_DragonTM[];
+extern const u16 gItemIconPalette_DarkTM[];
+extern const u16 gItemIconPalette_SteelTM[];
+extern const u16 gItemIconPalette_FairyTM[];
 // Charms
 extern const u32 gItemIcon_OvalCharm[];
 extern const u16 gItemIconPalette_OvalCharm[];
@@ -1754,6 +1754,7 @@ extern const u32 gBagScreen_Gfx[];
 extern const u32 gBagScreen_GfxTileMap[];
 extern const u16 gBagScreenFemale_Pal[];
 extern const u16 gBagScreenMale_Pal[];
+extern const u16 gBagScreenYellowBlack_Pal[];
 extern const u8 gBagMenuHMIcon_Gfx[];
 
 // item menu icons graphics
@@ -1805,6 +1806,8 @@ extern const u32 gIntroFlygon_Gfx[];
 extern const u32 gPartyMenuBg_Gfx[];
 extern const u32 gPartyMenuBg_Tilemap[];
 extern const u16 gPartyMenuBg_Pal[];
+extern const u16 gPartyMenuBgYb_Gfx[];
+extern const u16 gPartyMenuBgYb_Pal[];
 
 // berry pics
 extern const u32 gBerryPic_Cheri[];

@@ -756,7 +756,13 @@ static void DoMoveRelearnerMain(void)
             }
 
             FreeMoveRelearnerResources();
-            gRelearnMode = RELEARN_MODE_NONE;
+            gRelearnMode = RELEARN_MODE_NONE; //TODO Update this and remove below block maybe?
+            if (FlagGet(FLAG_PARTY_MOVES)) {
+                CB2_ReturnToPartyMenuFromSummaryScreen();
+                FlagClear(FLAG_PARTY_MOVES);
+            } else {
+                SetMainCallback2(CB2_ReturnToField);
+            }
         }
         break;
     case MENU_STATE_FADE_FROM_SUMMARY_SCREEN:

@@ -1798,7 +1798,7 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
         power = min(160, CalcFuryCutterBasePower(power, gDisableStructs[battler].furyCutterCounter + 1));
     else if (effect == EFFECT_SPIT_UP)
         power = 100 * gDisableStructs[battler].stockpileCounter;
-    else if (effect == EFFECT_WEATHER_BALL && WEATHER_HAS_EFFECT && (gBattleWeather & B_WEATHER_ANY))
+    else if (effect == EFFECT_WEATHER_BALL && HasWeatherEffect() && (gBattleWeather & B_WEATHER_ANY))
         power *= 2;
     else if (effect == EFFECT_ACROBATICS && GetMonData(mon, MON_DATA_HELD_ITEM) == ITEM_NONE)
         power *= 2;
@@ -1934,7 +1934,7 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
         ConvertIntToDecimalStringN(power_num, power, STR_CONV_MODE_LEFT_ALIGN, 3);
 
     //Accuracy
-    if (WEATHER_HAS_EFFECT){
+    if (HasWeatherEffect()){
         if ((gBattleWeather & B_WEATHER_SUN) && effect == EFFECT_THUNDER)
             accuracy = 50;
         else if ((gBattleWeather & B_WEATHER_RAIN) && (effect == EFFECT_THUNDER || effect == EFFECT_RAIN_ALWAYS_HIT))

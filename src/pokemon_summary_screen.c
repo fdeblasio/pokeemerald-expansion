@@ -318,7 +318,6 @@ static void SummaryScreen_DestroyAnimDelayTask(void);
 static bool32 ShouldShowMoveRelearner(void);
 static bool32 ShouldShowRename(void);
 static bool32 ShouldShowIvEvPrompt(void);
-static void BufferLeftColumnIvEvStats(void);
 static void CB2_ReturnToSummaryScreenFromNamingScreen(void);
 static void CB2_PssChangePokemonNickname(void);
 static void ShowUtilityPrompt(s16 mode);
@@ -329,7 +328,6 @@ void ExtractMonSkillIvData(struct Pokemon *mon, struct PokeSummary *sum);
 void ExtractMonSkillEvData(struct Pokemon *mon, struct PokeSummary *sum);
 static void PrintTextOnWindow(u8 windowId, const u8 *string, u8 x, u8 y, u8 lineSpacing, u8 colorId);
 static void PrintTextOnWindowWithFont(u8 windowId, const u8 *string, u8 x, u8 y, u8 lineSpacing, u8 colorId, u32 fontId);
-static const u8 *GetLetterGrade(u32 stat);
 static u8 AddWindowFromTemplateList(const struct WindowTemplate *template, u8 templateId);
 static u8 IncrementSkillsStatsMode(u8 mode);
 static void ClearStatLabel(u32 length, u32 statsCoordX, u32 statsCoordY);
@@ -1827,21 +1825,17 @@ static void ShowMonSkillsInfo(u8 taskId, s16 mode)
     if (mode == SUMMARY_SKILLS_MODE_STATS)
     {
         ExtractMonSkillStatsData(mon, sum);
-        BufferLeftColumnStats();
     }
     else if (mode == SUMMARY_SKILLS_MODE_IVS)
     {
         ExtractMonSkillIvData(mon, sum);
-        BufferLeftColumnIvEvStats();
     }
     else if (mode == SUMMARY_SKILLS_MODE_EVS)
     {
         ExtractMonSkillEvData(mon, sum);
-        BufferLeftColumnIvEvStats();
     }
 
     PrintLeftColumnStats();
-    BufferRightColumnStats();
     PrintRightColumnStats();
     gTasks[taskId].func = Task_HandleInput;
 }
@@ -2124,8 +2118,6 @@ static void ChangePage(u8 taskId, s8 delta)
 
         ShowUtilityPrompt(sMonSummaryScreen->skillsPageMode);
         ExtractMonSkillStatsData(mon, summary);
-        BufferLeftColumnStats();
-        BufferRightColumnStats();
     }
     else
     {
@@ -3764,11 +3756,7 @@ static void BufferStat(u8 *dst, u8 statIndex, u32 stat, u32 strId, u32 n)
     else
         txtPtr = StringCopy(dst, sTextNatureNeutral);
 
-    if (!P_SUMMARY_SCREEN_IV_EV_VALUES
-        && sMonSummaryScreen->skillsPageMode == SUMMARY_SKILLS_MODE_IVS)
-        StringAppend(dst, GetLetterGrade(stat));
-    else
-        ConvertIntToDecimalStringN(txtPtr, stat, STR_CONV_MODE_RIGHT_ALIGN, n);
+    ConvertIntToDecimalStringN(txtPtr, stat, STR_CONV_MODE_RIGHT_ALIGN, n);
 
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(strId, dst);
 }

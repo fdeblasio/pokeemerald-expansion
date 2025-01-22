@@ -5448,7 +5448,7 @@ static void Task_LearnedMove(u8 taskId)
 
     if (move[1] == 0)
     {
-        AdjustFriendship(mon, FRIENDSHIP_EVENT_LEARN_TMHM);
+        AdjustFriendship(mon, FRIENDSHIP_EVENT_LEARN_TM);
         if (!GetItemImportance(item))
             RemoveBagItem(item, 1);
     }

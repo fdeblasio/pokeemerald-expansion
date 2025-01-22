@@ -5,7 +5,7 @@
 #include "constants/item_effects.h"
 #include "constants/items.h"
 #include "constants/moves.h"
-#include "constants/tms_hms.h"
+#include "constants/tms.h"
 #include "constants/berries.h"
 #include "constants/item_effects.h"
 #include "constants/hold_effects.h"
@@ -231,6 +231,7 @@ static inline struct ItemSlot GetBagItemIdAndQuantity(enum Pocket pocketId, u32 
     return BagPocket_GetSlotData(&gBagPockets[pocketId], pocketPos);
 }
 
+u16 GetBagItemQuantity(u16 *quantity);
 void ApplyNewEncryptionKeyToBagItems(u32 newKey);
 void SetBagItemsPointers(void);
 u8 *CopyItemName(enum Item itemId, u8 *dst);

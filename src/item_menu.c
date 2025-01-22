@@ -57,8 +57,8 @@
 // The buffer for the bag item list needs to be large enough to hold the maximum
 // number of item slots that could fit in a single pocket, + 1 for Cancel.
 // This constant picks the max of the existing pocket sizes.
-// By default, the largest pocket is BAG_TMHM_COUNT at 64.
-#define MAX_POCKET_ITEMS  ((max(BAG_TMHM_COUNT,              \
+// By default, the largest pocket is BAG_TM_COUNT at 100.
+#define MAX_POCKET_ITEMS  ((max(BAG_TM_COUNT,                \
                             max(BAG_BERRIES_COUNT,           \
                             max(BAG_ITEMS_COUNT,             \
                             max(BAG_KEYITEMS_COUNT,          \
@@ -99,8 +99,8 @@ enum {
     WIN_ITEM_LIST,
     WIN_DESCRIPTION,
     WIN_POCKET_NAME,
-    WIN_TMHM_INFO_ICONS,
-    WIN_TMHM_INFO,
+    WIN_TM_INFO_ICONS,
+    WIN_TM_INFO,
     WIN_MESSAGE, // Identical to ITEMWIN_MESSAGE. Unused?
 };
 
@@ -137,7 +137,7 @@ static void DrawPocketIndicatorSquare(u8, bool8);
 static void CreatePocketScrollArrowPair(void);
 static void CreatePocketSwitchArrowPair(void);
 static void DestroyPocketSwitchArrowPair(void);
-static void PrepareTMHMMoveWindow(void);
+static void PrepareTMMoveWindow(void);
 static bool8 IsWallysBag(void);
 static void Task_WallyTutorialBagMenu(u8);
 static void Task_BagMenu_HandleInput(u8);
@@ -215,6 +215,21 @@ static void CancelToss(u8);
 static void ConfirmSell(u8);
 static void CancelSell(u8);
 static void Task_FadeAndCloseBagMenuIfMulch(u8 taskId);
+
+//Bag sorting
+static void Task_LoadBagSortOptions(u8 taskId);
+static void ItemMenu_SortByName(u8 taskId);
+static void ItemMenu_SortByType(u8 taskId);
+static void ItemMenu_SortByAmount(u8 taskId);
+static void ItemMenu_SortByIndex(u8 taskId);
+static void SortBagItems(u8 taskId);
+static void Task_SortFinish(u8 taskId);
+static void SortItemsInBag(u8 pocket, u8 type);
+static void MergeSort(struct ItemSlot* array, u32 low, u32 high, s8 (*comparator)(struct ItemSlot*, struct ItemSlot*));
+static void Merge(struct ItemSlot* array, u32 low, u32 mid, u32 high, s8 (*comparator)(struct ItemSlot*, struct ItemSlot*));
+static s8 CompareItemsAlphabetically(struct ItemSlot* itemSlot1, struct ItemSlot* itemSlot2);
+static s8 CompareItemsByMost(struct ItemSlot* itemSlot1, struct ItemSlot* itemSlot2);
+static s8 CompareItemsByType(struct ItemSlot* itemSlot1, struct ItemSlot* itemSlot2);
 
 static const u8 sText_Var1CantBeHeldHere[] = _("The {STR_VAR_1} can't be held\nhere.");
 static const u8 sText_DepositHowManyVar1[] = _("Deposit how many\n{STR_VAR_1}?");
@@ -407,7 +422,7 @@ enum {
     COLORID_POCKET_NAME,
     COLORID_GRAY_CURSOR,
     COLORID_UNUSED,
-    COLORID_TMHM_INFO,
+    COLORID_TM_INFO,
     COLORID_NONE = 0xFF
 };
 static const u8 sFontColorTable[][3] = {
@@ -416,7 +431,7 @@ static const u8 sFontColorTable[][3] = {
     [COLORID_POCKET_NAME] = {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_WHITE,      TEXT_COLOR_RED},
     [COLORID_GRAY_CURSOR] = {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_LIGHT_GRAY, TEXT_COLOR_GREEN},
     [COLORID_UNUSED]      = {TEXT_COLOR_DARK_GRAY,   TEXT_COLOR_WHITE,      TEXT_COLOR_LIGHT_GRAY},
-    [COLORID_TMHM_INFO]   = {TEXT_COLOR_TRANSPARENT, TEXT_DYNAMIC_COLOR_5,  TEXT_DYNAMIC_COLOR_1}
+    [COLORID_TM_INFO]   = {TEXT_COLOR_TRANSPARENT, TEXT_DYNAMIC_COLOR_5,  TEXT_DYNAMIC_COLOR_1}
 };
 
 static const struct WindowTemplate sDefaultBagWindows[] =
@@ -448,7 +463,7 @@ static const struct WindowTemplate sDefaultBagWindows[] =
         .paletteNum = 1,
         .baseBlock = 0x1A1,
     },
-    [WIN_TMHM_INFO_ICONS] = {
+    [WIN_TM_INFO_ICONS] = {
         .bg = 0,
         .tilemapLeft = 1,
         .tilemapTop = 13,
@@ -457,7 +472,7 @@ static const struct WindowTemplate sDefaultBagWindows[] =
         .paletteNum = 12,
         .baseBlock = 0x16B,
     },
-    [WIN_TMHM_INFO] = {
+    [WIN_TM_INFO] = {
         .bg = 0,
         .tilemapLeft = 7,
         .tilemapTop = 13,
@@ -805,7 +820,7 @@ static bool8 SetupBagMenu(void)
         gMain.state++;
         break;
     case 18:
-        PrepareTMHMMoveWindow();
+        PrepareTMMoveWindow();
         gMain.state++;
         break;
     case 19:
@@ -941,21 +956,12 @@ static void GetItemNameFromPocket(u8 *dest, enum Item itemId)
     u8 *end;
     switch (gBagPosition.pocket)
     {
-    case POCKET_TM_HM:
+    case POCKET_TM:
         end = StringCopy(gStringVar2, GetMoveName(ItemIdToBattleMoveId(itemId)));
         PrependFontIdToFit(gStringVar2, end, FONT_NARROW, NUM_TECHNICAL_MACHINES >= 100 ? 60 : 65);
-        if (GetItemTMHMIndex(itemId) > NUM_TECHNICAL_MACHINES)
-        {
-            // Get HM number
-            ConvertIntToDecimalStringN(gStringVar1, GetItemTMHMIndex(itemId) - NUM_TECHNICAL_MACHINES, STR_CONV_MODE_LEADING_ZEROS, 1);
-            StringExpandPlaceholders(dest, gText_NumberItem_HM);
-        }
-        else
-        {
-            // Get TM number
-            ConvertIntToDecimalStringN(gStringVar1, GetItemTMHMIndex(itemId), STR_CONV_MODE_LEADING_ZEROS, NUM_TECHNICAL_MACHINES >= 100 ? 3 : 2);
-            StringExpandPlaceholders(dest, gText_NumberItem_TMBerry);
-        }
+        // Get TM number
+        ConvertIntToDecimalStringN(gStringVar1, GetItemTMHMIndex(itemId), STR_CONV_MODE_LEADING_ZEROS, NUM_TECHNICAL_MACHINES >= 100 ? 3 : 2);
+        StringExpandPlaceholders(dest, gText_NumberItem_TMBerry);
         break;
     case POCKET_BERRIES:
         ConvertIntToDecimalStringN(gStringVar1, ItemIdToBerryType(itemId), STR_CONV_MODE_LEADING_ZEROS, 2);
@@ -1006,10 +1012,6 @@ static void BagMenu_ItemPrintCallback(u8 windowId, u32 itemIndex, u8 y)
         }
 
         struct ItemSlot itemSlot = GetBagItemIdAndQuantity(gBagPosition.pocket, itemIndex);
-
-        // Draw HM icon
-        if (gBagPosition.pocket == POCKET_TM_HM && GetItemTMHMIndex(itemSlot.itemId) > NUM_TECHNICAL_MACHINES)
-            BlitBitmapToWindow(windowId, gBagMenuHMIcon_Gfx, 8, y - 1, 16, 16);
 
         if (gBagPosition.pocket != POCKET_KEY_ITEMS && GetItemImportance(itemSlot.itemId) == FALSE)
         {
@@ -1163,7 +1165,7 @@ void UpdatePocketItemList(enum Pocket pocketId)
     struct BagPocket *pocket = &gBagPockets[pocketId];
     switch (pocketId)
     {
-    case POCKET_TM_HM:
+    case POCKET_TM:
     case POCKET_BERRIES:
         SortItemsInBag(pocket, SORT_BY_INDEX);
         break;
@@ -1361,8 +1363,8 @@ static void ReturnToItemList(u8 taskId)
 {
     CreatePocketScrollArrowPair();
     CreatePocketSwitchArrowPair();
-    ClearWindowTilemap(WIN_TMHM_INFO_ICONS);
-    ClearWindowTilemap(WIN_TMHM_INFO);
+    ClearWindowTilemap(WIN_TM_INFO_ICONS);
+    ClearWindowTilemap(WIN_TM_INFO);
     PutWindowTilemap(WIN_DESCRIPTION);
     ScheduleBgCopyTilemapToVram(0);
     gTasks[taskId].func = Task_BagMenu_HandleInput;
@@ -1521,7 +1523,7 @@ static bool8 CanSwapItems(void)
      || gBagPosition.location == ITEMMENULOCATION_BATTLE)
     {
         // TMHMs and berries are numbered, and so may not be swapped
-        if (gBagPosition.pocket != POCKET_TM_HM
+        if (gBagPosition.pocket != POCKET_TM
          && gBagPosition.pocket != POCKET_BERRIES)
             return TRUE;
     }
@@ -1747,7 +1749,7 @@ static void OpenContextMenu(u8 taskId)
                 gBagMenu->contextMenuItemsPtr = sContextMenuItems_BallsPocket;
                 gBagMenu->contextMenuNumItems = ARRAY_COUNT(sContextMenuItems_BallsPocket);
                 break;
-            case POCKET_TM_HM:
+            case POCKET_TM:
                 gBagMenu->contextMenuItemsPtr = sContextMenuItems_TmHmPocket;
                 gBagMenu->contextMenuNumItems = ARRAY_COUNT(sContextMenuItems_TmHmPocket);
                 break;
@@ -1758,12 +1760,12 @@ static void OpenContextMenu(u8 taskId)
             }
         }
     }
-    if (gBagPosition.pocket == POCKET_TM_HM)
+    if (gBagPosition.pocket == POCKET_TM)
     {
         ClearWindowTilemap(WIN_DESCRIPTION);
         PrintTMHMMoveData(gSpecialVar_ItemId);
-        PutWindowTilemap(WIN_TMHM_INFO_ICONS);
-        PutWindowTilemap(WIN_TMHM_INFO);
+        PutWindowTilemap(WIN_TM_INFO_ICONS);
+        PutWindowTilemap(WIN_TM_INFO);
         ScheduleBgCopyTilemapToVram(0);
     }
     else
@@ -2703,14 +2705,14 @@ static void RemoveMoneyWindow(void)
     RemoveMoneyLabelObject();
 }
 
-static void PrepareTMHMMoveWindow(void)
+static void PrepareTMMoveWindow(void)
 {
-    FillWindowPixelBuffer(WIN_TMHM_INFO_ICONS, PIXEL_FILL(0));
-    BlitMenuInfoIcon(WIN_TMHM_INFO_ICONS, MENU_INFO_ICON_TYPE, 0, 0);
-    BlitMenuInfoIcon(WIN_TMHM_INFO_ICONS, MENU_INFO_ICON_POWER, 0, 12);
-    BlitMenuInfoIcon(WIN_TMHM_INFO_ICONS, MENU_INFO_ICON_ACCURACY, 0, 24);
-    BlitMenuInfoIcon(WIN_TMHM_INFO_ICONS, MENU_INFO_ICON_PP, 0, 36);
-    CopyWindowToVram(WIN_TMHM_INFO_ICONS, COPYWIN_GFX);
+    FillWindowPixelBuffer(WIN_TM_INFO_ICONS, PIXEL_FILL(0));
+    BlitMenuInfoIcon(WIN_TM_INFO_ICONS, MENU_INFO_ICON_TYPE, 0, 0);
+    BlitMenuInfoIcon(WIN_TM_INFO_ICONS, MENU_INFO_ICON_POWER, 0, 12);
+    BlitMenuInfoIcon(WIN_TM_INFO_ICONS, MENU_INFO_ICON_ACCURACY, 0, 24);
+    BlitMenuInfoIcon(WIN_TM_INFO_ICONS, MENU_INFO_ICON_PP, 0, 36);
+    CopyWindowToVram(WIN_TM_INFO_ICONS, COPYWIN_GFX);
 }
 
 static void PrintTMHMMoveData(enum Item itemId)
@@ -2719,19 +2721,19 @@ static void PrintTMHMMoveData(enum Item itemId)
     enum Move move;
     const u8 *text;
 
-    FillWindowPixelBuffer(WIN_TMHM_INFO, PIXEL_FILL(0));
+    FillWindowPixelBuffer(WIN_TM_INFO, PIXEL_FILL(0));
     if (itemId == ITEM_NONE)
     {
         for (i = 0; i < 4; i++)
-            BagMenu_Print(WIN_TMHM_INFO, FONT_NORMAL, gText_ThreeDashes, 7, i * 12, 0, 0, TEXT_SKIP_DRAW, COLORID_TMHM_INFO);
-        CopyWindowToVram(WIN_TMHM_INFO, COPYWIN_GFX);
+            BagMenu_Print(WIN_TM_INFO, FONT_NORMAL, gText_ThreeDashes, 7, i * 12, 0, 0, TEXT_SKIP_DRAW, COLORID_TM_INFO);
+        CopyWindowToVram(WIN_TM_INFO, COPYWIN_GFX);
     }
     else
     {
         move = ItemIdToBattleMoveId(itemId);
-        BlitMenuInfoIcon(WIN_TMHM_INFO, GetMoveType(move) + 1, 0, 0);
+        BlitMenuInfoIcon(WIN_TM_INFO, GetMoveType(move) + 1, 0, 0);
 
-        // Print TMHM power
+        // Print TM power
         u32 power = GetMovePower(move);
         if (power <= 1)
         {
@@ -2742,10 +2744,10 @@ static void PrintTMHMMoveData(enum Item itemId)
             ConvertIntToDecimalStringN(gStringVar1, power, STR_CONV_MODE_RIGHT_ALIGN, 3);
             text = gStringVar1;
         }
-        BagMenu_Print(WIN_TMHM_INFO, FONT_NORMAL, text, 7, 12, 0, 0, TEXT_SKIP_DRAW, COLORID_TMHM_INFO);
+        BagMenu_Print(WIN_TM_INFO, FONT_NORMAL, text, 7, 12, 0, 0, TEXT_SKIP_DRAW, COLORID_TM_INFO);
 
         u32 accuracy = GetMoveAccuracy(move);
-        // Print TMHM accuracy
+        // Print TM accuracy
         if (accuracy == 0)
         {
             text = gText_ThreeDashes;
@@ -2755,13 +2757,13 @@ static void PrintTMHMMoveData(enum Item itemId)
             ConvertIntToDecimalStringN(gStringVar1, accuracy, STR_CONV_MODE_RIGHT_ALIGN, 3);
             text = gStringVar1;
         }
-        BagMenu_Print(WIN_TMHM_INFO, FONT_NORMAL, text, 7, 24, 0, 0, TEXT_SKIP_DRAW, COLORID_TMHM_INFO);
+        BagMenu_Print(WIN_TM_INFO, FONT_NORMAL, text, 7, 24, 0, 0, TEXT_SKIP_DRAW, COLORID_TM_INFO);
 
-        // Print TMHM pp
-        ConvertIntToDecimalStringN(gStringVar1, CalculateMaxPP(move), STR_CONV_MODE_RIGHT_ALIGN, 3);
-        BagMenu_Print(WIN_TMHM_INFO, FONT_NORMAL, gStringVar1, 7, 36, 0, 0, TEXT_SKIP_DRAW, COLORID_TMHM_INFO);
+        // Print TM PP
+        ConvertIntToDecimalStringN(gStringVar1, GetMovePP(move), STR_CONV_MODE_RIGHT_ALIGN, 3);
+        BagMenu_Print(WIN_TM_INFO, FONT_NORMAL, gStringVar1, 7, 36, 0, 0, TEXT_SKIP_DRAW, COLORID_TM_INFO);
 
-        CopyWindowToVram(WIN_TMHM_INFO, COPYWIN_GFX);
+        CopyWindowToVram(WIN_TM_INFO, COPYWIN_GFX);
     }
 }
 
@@ -2774,6 +2776,7 @@ static const u8 *const sSortTypeStrings[] =
     [SORT_BY_AMOUNT]      = COMPOUND_STRING("Amount"),
     [SORT_BY_INDEX]       = COMPOUND_STRING("Index")
 };
+
 
 static const u8 sBagMenuSortItems[] =
 {
@@ -2831,7 +2834,7 @@ static void AddBagSortSubMenu(void)
         SORT_INFO(sBagMenuSortPokeBalls)
     case POCKET_BERRIES:
         SORT_INFO(sBagMenuSortBerries)
-    case POCKET_TM_HM:
+    case POCKET_TM:
         SORT_INFO(sBagMenuSortTMs)
     default:
         SORT_INFO(sBagMenuSortItems)
@@ -2992,7 +2995,7 @@ static s32 CompareItemsAlphabetically(enum Pocket pocketId, struct ItemSlot item
     else if (item2.itemId == ITEM_NONE)
         return -1;
 
-    if (pocketId == POCKET_TM_HM)
+    if (pocketId == POCKET_TM)
     {
         name1 = GetMoveName(GetTMHMMoveId(GetItemTMHMIndex(item1.itemId)));
         name2 = GetMoveName(GetTMHMMoveId(GetItemTMHMIndex(item2.itemId)));
@@ -3055,7 +3058,7 @@ static s32 CompareItemsByIndex(enum Pocket pocketId, struct ItemSlot item1, stru
 
     switch (pocketId)
     {
-    case POCKET_TM_HM:
+    case POCKET_TM:
         index1 = GetItemTMHMIndex(item1.itemId);
         index2 = GetItemTMHMIndex(item2.itemId);
         break;

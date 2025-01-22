@@ -1378,6 +1378,8 @@ const struct ItemInfo gItemsInfo[] =
     .flingPower = 10,                        \
     .iconPic = gItemIcon_Mint
 
+#define MINT_PRICE (I_PRICE >= GEN_9) ? 2000 : 20
+
     [ITEM_LONELY_MINT] =
     {
         .name = ITEM_NAME("Lonely Mint"),
@@ -10012,12 +10014,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POKE_RADAR] =
     {
-        .name = ITEM_NAME("Poké Radar"),
+        .name = ITEM_NAME("Rent-a-Wail"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "A tool used to\n"
-            "search out Pokémon\n"
-            "hiding in grass."),
+            "Calls a Wailmer to\n"
+            "carry the user\n"
+            "across water."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -10074,12 +10076,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FAME_CHECKER] =
     {
-        .name = ITEM_NAME("Fame Checker"),
+        .name = ITEM_NAME("Fall Scaler"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "Stores information\n"
-            "on famous people\n"
-            "for instant recall."),
+            "Allows the user\n"
+            "to scale waterfalls\n"
+            "with ease."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -10485,7 +10487,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SILPH_SCOPE] =
     {
-        .name = ITEM_NAME("Silph Scope"),
+        .name = ITEM_NAME("Dive Goggles"),
         .price = 0,
         .description = COMPOUND_STRING(
             "Silph Co's scope\n"

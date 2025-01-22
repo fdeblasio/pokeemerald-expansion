@@ -67,10 +67,10 @@ static void ItemUseOnFieldCB_Berry(u8);
 static void ItemUseOnFieldCB_WailmerPailBerry(u8);
 static void ItemUseOnFieldCB_WailmerPailSudowoodo(u8);
 static bool8 TryToWaterSudowoodo(void);
-static void BootUpSoundTMHM(u8);
-static void Task_ShowTMHMContainedMessage(u8);
-static void UseTMHMYesNo(u8);
-static void UseTMHM(u8);
+static void BootUpSoundTM(u8);
+static void Task_ShowTMContainedMessage(u8);
+static void UseTMYesNo(u8);
+static void UseTM(u8);
 static void Task_StartUseRepel(u8);
 static void Task_StartUseLure(u8 taskId);
 static void Task_UseRepel(u8);
@@ -89,8 +89,7 @@ static const u8 sText_CoinCase[] = _("Your Coins:\n{STR_VAR_1}{PAUSE_UNTIL_PRESS
 static const u8 sText_PowderQuantity[] = _("Powder Quantity:\n{STR_VAR_1}{PAUSE_UNTIL_PRESS}");
 static const u8 sText_AshQuantity[] = _("Ash Quantity:\n{STR_VAR_1}{PAUSE_UNTIL_PRESS}");
 static const u8 sText_BootedUpTM[] = _("Booted up a TM.");
-static const u8 sText_BootedUpHM[] = _("Booted up a HM.");
-static const u8 sText_TMHMContainedVar1[] = _("It contained\n{STR_VAR_1}.\pTeach {STR_VAR_1}\nto a Pokémon?");
+static const u8 sText_TMContainedVar1[] = _("It contained\n{STR_VAR_1}.\pTeach {STR_VAR_1}\nto a Pokémon?");
 static const u8 sText_UsedVar2WildLured[] = _("{PLAYER} used the\n{STR_VAR_2}.\pWild Pokémon will be lured.{PAUSE_UNTIL_PRESS}");
 static const u8 sText_UsedVar2WildRepelled[] = _("{PLAYER} used the\n{STR_VAR_2}.\pWild Pokémon will be repelled.{PAUSE_UNTIL_PRESS}");
 static const u8 sText_PlayedPokeFluteCatchy[] = _("Played the Poké Flute.\pNow, that's a catchy tune!{PAUSE_UNTIL_PRESS}");
@@ -115,9 +114,9 @@ static const MainCallback sItemUseCallbacks[] =
 
 static const u8 sClockwiseDirections[] = {DIR_NORTH, DIR_EAST, DIR_SOUTH, DIR_WEST};
 
-static const struct YesNoFuncTable sUseTMHMYesNoFuncTable =
+static const struct YesNoFuncTable sUseTMYesNoFuncTable =
 {
-    .yesFunc = UseTMHM,
+    .yesFunc = UseTM,
     .noFunc = CloseItemMessage,
 };
 
@@ -222,7 +221,7 @@ static void Task_CloseCantUseKeyItemMessage(u8 taskId)
 
 u8 CheckIfItemIsTMHMOrEvolutionStone(enum Item itemId)
 {
-    if (GetItemFieldFunc(itemId) == ItemUseOutOfBattle_TMHM)
+    if (GetItemFieldFunc(itemId) == ItemUseOutOfBattle_TM)
         return ITEM_IS_TM_HM;
     else if (GetItemFieldFunc(itemId) == ItemUseOutOfBattle_EvolutionStone)
         return ITEM_IS_EVOLUTION_STONE;
@@ -942,38 +941,35 @@ void ItemUseOutOfBattle_DynamaxCandy(u8 taskId)
     SetUpItemUseCallback(taskId);
 }
 
-void ItemUseOutOfBattle_TMHM(u8 taskId)
+void ItemUseOutOfBattle_TM(u8 taskId)
 {
-    if (GetItemTMHMIndex(gSpecialVar_ItemId) > NUM_TECHNICAL_MACHINES)
-        DisplayItemMessage(taskId, FONT_NORMAL, sText_BootedUpHM, BootUpSoundTMHM); // HM
-    else
-        DisplayItemMessage(taskId, FONT_NORMAL, sText_BootedUpTM, BootUpSoundTMHM); // TM
+    DisplayItemMessage(taskId, FONT_NORMAL, sText_BootedUpTM, BootUpSoundTM);
 }
 
-static void BootUpSoundTMHM(u8 taskId)
+static void BootUpSoundTM(u8 taskId)
 {
     PlaySE(SE_PC_LOGIN);
-    gTasks[taskId].func = Task_ShowTMHMContainedMessage;
+    gTasks[taskId].func = Task_ShowTMContainedMessage;
 }
 
-static void Task_ShowTMHMContainedMessage(u8 taskId)
+static void Task_ShowTMContainedMessage(u8 taskId)
 {
     if (JOY_NEW(A_BUTTON | B_BUTTON))
     {
         StringCopy(gStringVar1, GetMoveName(ItemIdToBattleMoveId(gSpecialVar_ItemId)));
-        StringExpandPlaceholders(gStringVar4, sText_TMHMContainedVar1);
-        DisplayItemMessage(taskId, FONT_NORMAL, gStringVar4, UseTMHMYesNo);
+        StringExpandPlaceholders(gStringVar4, sText_TMContainedVar1);
+        DisplayItemMessage(taskId, FONT_NORMAL, gStringVar4, UseTMYesNo);
     }
 }
 
-static void UseTMHMYesNo(u8 taskId)
+static void UseTMYesNo(u8 taskId)
 {
-    BagMenu_YesNo(taskId, ITEMWIN_YESNO_HIGH, &sUseTMHMYesNoFuncTable);
+    BagMenu_YesNo(taskId, ITEMWIN_YESNO_HIGH, &sUseTMYesNoFuncTable);
 }
 
-static void UseTMHM(u8 taskId)
+static void UseTM(u8 taskId)
 {
-    gItemUseCB = ItemUseCB_TMHM;
+    gItemUseCB = ItemUseCB_TM;
     SetUpItemUseCallback(taskId);
 }
 

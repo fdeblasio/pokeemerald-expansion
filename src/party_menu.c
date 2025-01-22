@@ -4327,7 +4327,7 @@ static void Task_CancelAfterAorBPress(u8 taskId)
         CursorCb_Cancel1(taskId);
 }
 
-bool32 SetUpFieldMove_RockClimb(void)
+void CB2_ReturnToPartyMenuFromFlyMap(void)
 {
     s16 x, y;
 

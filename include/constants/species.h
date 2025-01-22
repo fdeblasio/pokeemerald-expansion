@@ -1700,4 +1700,10 @@ enum __attribute__((packed)) Species
 
 #define SPECIES_SHINY_TAG 5000
 
+#define GRASS_STARTER             SPECIES_TREECKO
+#define FIRE_STARTER              SPECIES_TORCHIC
+#define WATER_STARTER             SPECIES_MUDKIP
+
+#define SPECIES_WALLY_STARTER     SPECIES_RALTS
+
 #endif  // GUARD_CONSTANTS_SPECIES_H

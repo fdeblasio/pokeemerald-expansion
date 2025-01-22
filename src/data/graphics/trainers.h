@@ -211,8 +211,11 @@ const u16 gTrainerPalette_Twins[] = INCBIN_U16("graphics/trainers/front_pics/twi
 const u32 gTrainerFrontPic_Sailor[] = INCBIN_U32("graphics/trainers/front_pics/sailor.4bpp.smol");
 const u16 gTrainerPalette_Sailor[] = INCBIN_U16("graphics/trainers/front_pics/sailor.gbapal");
 
-const u32 gTrainerFrontPic_MagmaAdmin[] = INCBIN_U32("graphics/trainers/front_pics/magma_admin.4bpp.smol");
-const u16 gTrainerPalette_MagmaAdmin[] = INCBIN_U16("graphics/trainers/front_pics/magma_admin.gbapal");
+const u32 gTrainerFrontPic_MagmaAdminM[] = INCBIN_U32("graphics/trainers/front_pics/magma_admin_m.4bpp.lz");
+const u32 gTrainerPalette_MagmaAdminM[] = INCBIN_U32("graphics/trainers/front_pics/magma_admin_m.gbapal.lz");
+
+const u32 gTrainerFrontPic_MagmaAdminF[] = INCBIN_U32("graphics/trainers/front_pics/magma_admin_f.4bpp.lz");
+const u32 gTrainerPalette_MagmaAdminF[] = INCBIN_U32("graphics/trainers/front_pics/magma_admin_f.gbapal.lz");
 
 const u32 gTrainerFrontPic_Wally[] = INCBIN_U32("graphics/trainers/front_pics/wally.4bpp.smol");
 const u16 gTrainerPalette_Wally[] = INCBIN_U16("graphics/trainers/palettes/wally.gbapal");
@@ -470,6 +473,10 @@ const u32 gTrainerFrontPic_PainterFrlg[] = INCBIN_U32("graphics/trainers/front_p
 const u16 gTrainerPalette_PainterFrlg[] = INCBIN_U16("graphics/trainers/palettes/painter_frlg.gbapal");
 
 static const u8 gTrainerBackPic_None[] = INCBIN_U8("graphics/trainers/back_pics/none.4bpp");
+
+const u32 gTrainerFrontPic_Frank[] = INCBIN_U32("graphics/trainers/front_pics/frank.4bpp.smol");
+const u32 gTrainerPalette_Frank[] = INCBIN_U32("graphics/trainers/front_pics/frank.gbapal");
+
 const u8 gTrainerBackPic_Brendan[] = INCBIN_U8("graphics/trainers/back_pics/brendan.4bpp");
 const u8 gTrainerBackPic_May[] = INCBIN_U8("graphics/trainers/back_pics/may.4bpp");
 const u8 gTrainerBackPic_Red[] = INCBIN_U8("graphics/trainers/back_pics/red.4bpp");
@@ -650,7 +657,7 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_PokemonBreederF, gTrainerPalette_PokemonBreederF),
     },
-    [TRAINER_PIC_COOLTRAINER_M] =
+    [TRAINER_PIC_ACE_TRAINER_M] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CoolTrainerM, gTrainerPalette_CoolTrainerM),
     },
@@ -718,7 +725,7 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_TuberM, gTrainerPalette_TuberM),
     },
-    [TRAINER_PIC_COOLTRAINER_F] =
+    [TRAINER_PIC_ACE_TRAINER_F] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CoolTrainerF, gTrainerPalette_CoolTrainerF),
     },
@@ -738,7 +745,7 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_ExpertF, gTrainerPalette_ExpertF),
     },
-    [TRAINER_PIC_POKEMANIAC] =
+    [TRAINER_PIC_POKE_MANIAC] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Pokemaniac, gTrainerPalette_Pokemaniac),
     },
@@ -838,15 +845,15 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_SchoolKidF, gTrainerPalette_SchoolKidF),
     },
-    [TRAINER_PIC_SR_AND_JR] =
+    [TRAINER_PIC_TEAMMATES] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_SrAndJr, gTrainerPalette_SrAndJr),
     },
-    [TRAINER_PIC_POKEFAN_M] =
+    [TRAINER_PIC_POKE_FAN_M] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_PokefanM, gTrainerPalette_PokefanM),
     },
-    [TRAINER_PIC_POKEFAN_F] =
+    [TRAINER_PIC_POKE_FAN_F] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_PokefanF, gTrainerPalette_PokefanF),
     },
@@ -914,9 +921,13 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Sailor, gTrainerPalette_Sailor),
     },
-    [TRAINER_PIC_MAGMA_ADMIN] =
+    [TRAINER_PIC_MAGMA_ADMIN_M] =
     {
-        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_MagmaAdmin, gTrainerPalette_MagmaAdmin),
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_MagmaAdminM, gTrainerPalette_MagmaAdmin),
+    },
+    [TRAINER_PIC_MAGMA_ADMIN_F] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_MagmaAdminF, gTrainerPalette_MagmaAdmin),
     },
     [TRAINER_PIC_BUG_CATCHER] =
     {

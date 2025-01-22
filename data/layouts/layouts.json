@@ -458,8 +458,8 @@
       "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/Route130_MirageIsland/border.bin",
-      "blockdata_filepath": "data/layouts/Route130_MirageIsland/map.bin"
+      "border_filepath": "data/layouts/Route130_NoMirageIsland/border.bin",
+      "blockdata_filepath": "data/layouts/Route130_NoMirageIsland/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE131",

@@ -883,19 +883,19 @@ RustboroCity_EventScript_RestoreBgm::
 	return
 
 RustboroCity_EventScript_BattleMayTreecko::
-	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_GRASS, RustboroCity_Text_MayDefeat
-	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
-	goto RustboroCity_EventScript_MayBrineyHint
-	end
-
-RustboroCity_EventScript_BattleMayTorchic::
 	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_FIRE, RustboroCity_Text_MayDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
 	goto RustboroCity_EventScript_MayBrineyHint
 	end
 
-RustboroCity_EventScript_BattleMayMudkip::
+RustboroCity_EventScript_BattleMayTorchic::
 	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_WATER, RustboroCity_Text_MayDefeat
+	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
+	goto RustboroCity_EventScript_MayBrineyHint
+	end
+
+RustboroCity_EventScript_BattleMayMudkip::
+	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_GRASS, RustboroCity_Text_MayDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
 	goto RustboroCity_EventScript_MayBrineyHint
 	end
@@ -944,19 +944,19 @@ RustboroCity_EventScript_BrendanBrineyHint::
 	end
 
 RustboroCity_EventScript_BattleBrendanTreecko::
-	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_GRASS, RustboroCity_Text_BrendanDefeat
-	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
-	goto RustboroCity_EventScript_BrendanBrineyHint
-	end
-
-RustboroCity_EventScript_BattleBrendanTorchic::
 	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_FIRE, RustboroCity_Text_BrendanDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
 	goto RustboroCity_EventScript_BrendanBrineyHint
 	end
 
-RustboroCity_EventScript_BattleBrendanMudkip::
+RustboroCity_EventScript_BattleBrendanTorchic::
 	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_WATER, RustboroCity_Text_BrendanDefeat
+	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
+	goto RustboroCity_EventScript_BrendanBrineyHint
+	end
+
+RustboroCity_EventScript_BattleBrendanMudkip::
+	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_GRASS, RustboroCity_Text_BrendanDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
 	goto RustboroCity_EventScript_BrendanBrineyHint
 	end
@@ -1230,7 +1230,7 @@ RustboroCity_Text_BrendanMrBrineyHint:
 RustboroCity_Text_TunnelNearingCompletion:
 	.string "“Timesaving tunnel nearing\n"
 	.string "completion!”\p"
-	.string "…Is what it says on the sign, but\n"
+	.string "…is what it says on the sign, but\n"
 	.string "there's also a big “X” splashed\l"
 	.string "across it in red paint…$"
 

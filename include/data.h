@@ -80,7 +80,49 @@ struct TrainerMon
     u32 tags;
 };
 
-#define TRAINER_PARTY(partyArray) partyArray, .partySize = ARRAY_COUNT(partyArray)
+#define IVS(IV) .iv = TRAINER_PARTY_IVS(IV, IV, IV, IV, IV, IV)
+#define PERFECT_IVS IVS(MAX_PER_STAT_IVS)
+
+#define EV_SPREAD_ATK_HP_DEF    .ev = TRAINER_PARTY_EVS(MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, EV_REMAINDER, 0, 0, 0)
+#define EV_SPREAD_ATK_HP_SPD    .ev = TRAINER_PARTY_EVS(MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, 0, 0, 0, EV_REMAINDER)
+#define EV_SPREAD_ATK_HP_SPE    .ev = TRAINER_PARTY_EVS(MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, 0, EV_REMAINDER, 0, 0)
+#define EV_SPREAD_ATK_DEF_HP    .ev = TRAINER_PARTY_EVS(EV_REMAINDER, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, 0, 0, 0)
+#define EV_SPREAD_ATK_DEF_SPD   .ev = TRAINER_PARTY_EVS(0, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, 0, 0, EV_REMAINDER)
+#define EV_SPREAD_ATK_DEF_SPE   .ev = TRAINER_PARTY_EVS(0, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, EV_REMAINDER, 0, 0)
+#define EV_SPREAD_ATK_SPD_HP    .ev = TRAINER_PARTY_EVS(EV_REMAINDER, MAX_PER_STAT_EVS, 0, 0, 0, MAX_PER_STAT_EVS)
+#define EV_SPREAD_ATK_SPD_DEF   .ev = TRAINER_PARTY_EVS(0, MAX_PER_STAT_EVS, EV_REMAINDER, 0, 0, MAX_PER_STAT_EVS)
+#define EV_SPREAD_ATK_SPD_SPE   .ev = TRAINER_PARTY_EVS(0, MAX_PER_STAT_EVS, 0, EV_REMAINDER, 0, MAX_PER_STAT_EVS)
+#define EV_SPREAD_ATK_SPE_HP    .ev = TRAINER_PARTY_EVS(EV_REMAINDER, MAX_PER_STAT_EVS, 0, MAX_PER_STAT_EVS, 0, 0)
+#define EV_SPREAD_ATK_SPE_DEF   .ev = TRAINER_PARTY_EVS(0, MAX_PER_STAT_EVS, EV_REMAINDER, MAX_PER_STAT_EVS, 0, 0)
+#define EV_SPREAD_ATK_SPE_SPD   .ev = TRAINER_PARTY_EVS(0, MAX_PER_STAT_EVS, 0, MAX_PER_STAT_EVS, 0, 0)
+#define EV_SPREAD_DEF_HP_ATK    .ev = TRAINER_PARTY_EVS(MAX_PER_STAT_EVS, EV_REMAINDER, MAX_PER_STAT_EVS, 0, 0, 0)
+#define EV_SPREAD_DEF_HP_SPA    .ev = TRAINER_PARTY_EVS(MAX_PER_STAT_EVS, 0, MAX_PER_STAT_EVS, 0, EV_REMAINDER, 0)
+#define EV_SPREAD_DEF_HP_SPD    .ev = TRAINER_PARTY_EVS(MAX_PER_STAT_EVS, 0, MAX_PER_STAT_EVS, 0, 0, EV_REMAINDER)
+#define EV_SPREAD_DEF_HP_SPE    .ev = TRAINER_PARTY_EVS(MAX_PER_STAT_EVS, 0, MAX_PER_STAT_EVS, EV_REMAINDER, 0, 0)
+#define EV_SPREAD_DEF_SPD_HP    .ev = TRAINER_PARTY_EVS(EV_REMAINDER, 0, MAX_PER_STAT_EVS, 0, 0, MAX_PER_STAT_EVS)
+#define EV_SPREAD_DEF_SPD_ATK   .ev = TRAINER_PARTY_EVS(0, EV_REMAINDER, MAX_PER_STAT_EVS, 0, 0, MAX_PER_STAT_EVS)
+#define EV_SPREAD_DEF_SPD_SPA   .ev = TRAINER_PARTY_EVS(0, 0, MAX_PER_STAT_EVS, 0, EV_REMAINDER, MAX_PER_STAT_EVS)
+#define EV_SPREAD_SPA_HP_DEF    .ev = TRAINER_PARTY_EVS(MAX_PER_STAT_EVS, 0, EV_REMAINDER, 0, MAX_PER_STAT_EVS, 0)
+#define EV_SPREAD_SPA_HP_SPD    .ev = TRAINER_PARTY_EVS(MAX_PER_STAT_EVS, 0, 0, 0, MAX_PER_STAT_EVS, EV_REMAINDER)
+#define EV_SPREAD_SPA_HP_SPE    .ev = TRAINER_PARTY_EVS(MAX_PER_STAT_EVS, 0, 0, EV_REMAINDER, MAX_PER_STAT_EVS, 0)
+#define EV_SPREAD_SPA_DEF_HP    .ev = TRAINER_PARTY_EVS(EV_REMAINDER, 0, MAX_PER_STAT_EVS, 0, MAX_PER_STAT_EVS, 0)
+#define EV_SPREAD_SPA_DEF_SPD   .ev = TRAINER_PARTY_EVS(0, 0, MAX_PER_STAT_EVS, 0, MAX_PER_STAT_EVS, EV_REMAINDER)
+#define EV_SPREAD_SPA_DEF_SPE   .ev = TRAINER_PARTY_EVS(0, 0, MAX_PER_STAT_EVS, EV_REMAINDER, MAX_PER_STAT_EVS, 0)
+#define EV_SPREAD_SPA_SPD_HP    .ev = TRAINER_PARTY_EVS(EV_REMAINDER, 0, 0, 0, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS)
+#define EV_SPREAD_SPA_SPD_DEF   .ev = TRAINER_PARTY_EVS(0, 0, EV_REMAINDER, 0, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS)
+#define EV_SPREAD_SPA_SPD_SPE   .ev = TRAINER_PARTY_EVS(0, 0, 0, EV_REMAINDER, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS)
+#define EV_SPREAD_SPA_SPE_HP    .ev = TRAINER_PARTY_EVS(EV_REMAINDER, 0, 0, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, 0)
+#define EV_SPREAD_SPA_SPE_DEF   .ev = TRAINER_PARTY_EVS(0, 0, EV_REMAINDER, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, 0)
+#define EV_SPREAD_SPA_SPE_SPD   .ev = TRAINER_PARTY_EVS(0, 0, 0, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, EV_REMAINDER)
+#define EV_SPREAD_SPD_HP_ATK    .ev = TRAINER_PARTY_EVS(MAX_PER_STAT_EVS, EV_REMAINDER, 0, 0, 0, MAX_PER_STAT_EVS)
+#define EV_SPREAD_SPD_HP_DEF    .ev = TRAINER_PARTY_EVS(MAX_PER_STAT_EVS, 0, EV_REMAINDER, 0, 0, MAX_PER_STAT_EVS)
+#define EV_SPREAD_SPD_HP_SPA    .ev = TRAINER_PARTY_EVS(MAX_PER_STAT_EVS, 0, 0, 0, EV_REMAINDER, MAX_PER_STAT_EVS)
+#define EV_SPREAD_SPD_HP_SPE    .ev = TRAINER_PARTY_EVS(MAX_PER_STAT_EVS, 0, 0, EV_REMAINDER, 0, MAX_PER_STAT_EVS)
+#define EV_SPREAD_SPD_DEF_HP    EV_SPREAD_DEF_SPD_HP
+#define EV_SPREAD_SPD_DEF_ATK   EV_SPREAD_DEF_SPD_ATK
+#define EV_SPREAD_SPD_DEF_SPA   EV_SPREAD_DEF_SPD_SPA
+#define EV_SPREAD_SPE_DEF_HP    .ev = TRAINER_PARTY_EVS(EV_REMAINDER, 0, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS, 0, 0)
+#define EV_SPREAD_SPE_SPD_HP    .ev = TRAINER_PARTY_EVS(EV_REMAINDER, 0, 0, 0, MAX_PER_STAT_EVS, MAX_PER_STAT_EVS)
 
 enum TrainerBattleType
 {
@@ -108,6 +150,44 @@ struct Trainer
     /*0x25*/ u16 overrideTrainer;
     /*0x26*/ u8 trainerBackPic;
 };
+
+#define STEVEN_INFO                      \
+    .trainerName = _("Steven"),          \
+    .trainerClass = TRAINER_CLASS_RIVAL, \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE
+
+#define STEVEN_METAGROSS(Level)                                 \
+    .lvl = Level,                                               \
+    .species = Level < 70 ? SPECIES_METANG : SPECIES_METAGROSS, \
+    .ability = ABILITY_CLEAR_BODY,                              \
+    .nature = NATURE_ADAMANT,                                   \
+    EV_SPREAD_ATK_DEF_HP,                                       \
+    PERFECT_IVS,                                                \
+    .ball = ITEM_POKE_BALL
+
+#define STEVEN_AGGRON(Level)                                                                                   \
+    .lvl = Level,                                                                                              \
+    .species = SPECIES_AGGRON,                                                                                 \
+    .ability = ABILITY_STURDY,                                                                                 \
+    .nature = NATURE_IMPISH,                                                                                   \
+    EV_SPREAD_ATK_DEF_HP,                                                                                      \
+    PERFECT_IVS,                                                                                               \
+    .moves = {MOVE_IRON_HEAD, MOVE_ROCK_SLIDE, MOVE_BODY_PRESS, Level < 64 ? MOVE_HARDEN : MOVE_IRON_DEFENSE}, \
+    .gender = TRAINER_MON_MALE,                                                                                \
+    .ball = ITEM_HEAVY_BALL
+
+#define STEVEN_MAWILE(Level)                                                    \
+    .lvl = Level,                                                               \
+    .species = SPECIES_MAWILE,                                                  \
+    .ability = ABILITY_SHEER_FORCE,                                             \
+    .nature = NATURE_ADAMANT,                                                   \
+    EV_SPREAD_ATK_SPE_DEF,                                                      \
+    PERFECT_IVS,                                                                \
+    .moves = {MOVE_IRON_HEAD, MOVE_PLAY_ROUGH, MOVE_CRUNCH, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_FEMALE,                                               \
+    .ball = ITEM_ULTRA_BALL
+
+#define MAXIE_SPACE_CENTER_ACE_LEVEL 53
 
 struct TrainerClass
 {

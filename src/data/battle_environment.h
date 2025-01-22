@@ -49,6 +49,18 @@
     .camouflageBlend = RGB_WHITE,                                                \
     .battleIntroSlide = BattleIntroSlide3
 
+#define TYPE_ENVIRONMENT(Type)                               \
+{                                                            \
+    .secretPowerAnimation = BUILDING_SECRET_POWER_ANIMATION, \
+    .secretPowerEffect = BUILDING_SECRET_POWER_EFFECT,       \
+    .camouflageType = BUILDING_CAMOUFLAGE_TYPE,
+    .camouflageBlend = BUILDING_CAMOUFLAGE_BLEND,
+    .entry = ENVIRONMENT_ENTRY(Building),
+    .background = ENVIRONMENT_BACKGROUND(Stadium),
+    .palette = gBattleEnvironmentPalette_StadiumWallace,
+    .battleIntroSlide = BUILDING_BATTLE_INTRO_SLIDE,
+}
+
 // Plain values. USED for BATTLE_ENVIRONMENT_PLAIN as well as BATTLE_ENVIRONMENT_RAYQUAZA
 #if B_NATURE_POWER_MOVES >= GEN_6
     #define PLAIN_NATURE_POWER MOVE_TRI_ATTACK
@@ -342,6 +354,41 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .entry = ENVIRONMENT_ENTRY(Building),
         .background = ENVIRONMENT_BACKGROUND(Stadium),
         .palette = gBattleEnvironmentPalette_StadiumWallace,
+    },
+
+    [BATTLE_ENVIRONMENT_TYPE_DARK] =
+    {
+        .entry = ENVIRONMENT_ENTRY(Building),
+        .background = ENVIRONMENT_BACKGROUND(Stadium),
+        .palette = gBattleEnvironmentPalette_StadiumDark,
+    },
+
+    [BATTLE_ENVIRONMENT_TYPE_FLYING] =
+    {
+        .entry = ENVIRONMENT_ENTRY(Building),
+        .background = ENVIRONMENT_BACKGROUND(Stadium),
+        .palette = gBattleEnvironmentPalette_StadiumFlying,
+    },
+
+    [BATTLE_ENVIRONMENT_TYPE_GRASS] =
+    {
+        .entry = ENVIRONMENT_ENTRY(Building),
+        .background = ENVIRONMENT_BACKGROUND(Stadium),
+        .palette = gBattleEnvironmentPalette_StadiumGrass,
+    },
+
+    [BATTLE_ENVIRONMENT_TYPE_ICE] =
+    {
+        .entry = ENVIRONMENT_ENTRY(Building),
+        .background = ENVIRONMENT_BACKGROUND(Stadium),
+        .palette = gBattleEnvironmentPalette_StadiumIce,
+    },
+
+    [BATTLE_ENVIRONMENT_TYPE_ROCK] =
+    {
+        .entry = ENVIRONMENT_ENTRY(Building),
+        .background = ENVIRONMENT_BACKGROUND(Stadium),
+        .palette = gBattleEnvironmentPalette_StadiumRock,
     },
 
     [BATTLE_ENVIRONMENT_GROUDON] =

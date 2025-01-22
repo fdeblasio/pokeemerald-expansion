@@ -2274,6 +2274,7 @@ static void PrintCurrentSpeciesInfo(void)
     //current chain
 #if DEXNAV_ENABLED == TRUE
     ConvertIntToDecimalStringN(gStringVar1, gSaveBlock3Ptr->dexNavChain, STR_CONV_MODE_LEFT_ALIGN, 3);
+#endif
     AddTextPrinterParameterized3(WINDOW_INFO, FONT_SMALL, 0, CHAIN_BONUS_Y, sFontColor_Black, 0, gStringVar1);
 #endif
 

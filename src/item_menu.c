@@ -331,7 +331,7 @@ static const u8 sContextMenuItems_BallsPocket[] = {
     ACTION_TOSS,        ACTION_CANCEL
 };
 
-static const u8 sContextMenuItems_TmHmPocket[] = {
+static const u8 sContextMenuItems_TmPocket[] = {
     ACTION_USE,         ACTION_GIVE,
     ACTION_DUMMY,       ACTION_CANCEL
 };
@@ -1700,8 +1700,8 @@ static void OpenContextMenu(u8 taskId)
                 gBagMenu->contextMenuNumItems = ARRAY_COUNT(sContextMenuItems_BallsPocket);
                 break;
             case TM_POCKET:
-                gBagMenu->contextMenuItemsPtr = sContextMenuItems_TmHmPocket;
-                gBagMenu->contextMenuNumItems = ARRAY_COUNT(sContextMenuItems_TmHmPocket);
+                gBagMenu->contextMenuItemsPtr = sContextMenuItems_TmPocket;
+                gBagMenu->contextMenuNumItems = ARRAY_COUNT(sContextMenuItems_TmPocket);
                 break;
             case BERRIES_POCKET:
                 gBagMenu->contextMenuItemsPtr = sContextMenuItems_BerriesPocket;

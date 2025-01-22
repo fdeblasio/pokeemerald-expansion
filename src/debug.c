@@ -118,7 +118,7 @@ enum GivePCBagFillDebugMenu
     DEBUG_PCBAG_MENU_ITEM_FILL_PC_ITEMS,
     DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_ITEMS,
     DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_BALLS,
-    DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_TMHM,
+    DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_TM,
     DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_BERRIES,
     DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_KEY_ITEMS,
 };
@@ -377,7 +377,7 @@ static void DebugAction_PCBag_Fill_PCBoxes_Slow(u8 taskId);
 static void DebugAction_PCBag_Fill_PCItemStorage(u8 taskId);
 static void DebugAction_PCBag_Fill_PocketItems(u8 taskId);
 static void DebugAction_PCBag_Fill_PocketPokeBalls(u8 taskId);
-static void DebugAction_PCBag_Fill_PocketTMHM(u8 taskId);
+static void DebugAction_PCBag_Fill_PocketTM(u8 taskId);
 static void DebugAction_PCBag_Fill_PocketBerries(u8 taskId);
 static void DebugAction_PCBag_Fill_PocketKeyItems(u8 taskId);
 static void DebugAction_PCBag_AccessPC(u8 taskId);
@@ -598,7 +598,7 @@ static const struct ListMenuItem sDebugMenu_Items_PCBag_Fill[] =
     [DEBUG_PCBAG_MENU_ITEM_FILL_PC_ITEMS]         = {COMPOUND_STRING("Fill PC Items") ,            DEBUG_PCBAG_MENU_ITEM_FILL_PC_ITEMS},
     [DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_ITEMS]     = {COMPOUND_STRING("Fill Pocket Items"),         DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_ITEMS},
     [DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_BALLS]     = {COMPOUND_STRING("Fill Pocket Poké Balls"),    DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_BALLS},
-    [DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_TMHM]      = {COMPOUND_STRING("Fill Pocket TMHM"),          DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_TMHM},
+    [DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_TM]        = {COMPOUND_STRING("Fill Pocket TM"),            DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_TM},
     [DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_BERRIES]   = {COMPOUND_STRING("Fill Pocket Berries"),       DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_BERRIES},
     [DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_KEY_ITEMS] = {COMPOUND_STRING("Fill Pocket Key Items"),     DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_KEY_ITEMS},
 };
@@ -771,7 +771,7 @@ static void (*const sDebugMenu_Actions_PCBag_Fill[])(u8) =
     [DEBUG_PCBAG_MENU_ITEM_FILL_PC_ITEMS]         = DebugAction_PCBag_Fill_PCItemStorage,
     [DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_ITEMS]     = DebugAction_PCBag_Fill_PocketItems,
     [DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_BALLS]     = DebugAction_PCBag_Fill_PocketPokeBalls,
-    [DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_TMHM]      = DebugAction_PCBag_Fill_PocketTMHM,
+    [DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_TM]        = DebugAction_PCBag_Fill_PocketTM,
     [DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_BERRIES]   = DebugAction_PCBag_Fill_PocketBerries,
     [DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_KEY_ITEMS] = DebugAction_PCBag_Fill_PocketKeyItems,
 };
@@ -3632,7 +3632,7 @@ static void DebugAction_PCBag_Fill_PocketPokeBalls(u8 taskId)
     }
 }
 
-static void DebugAction_PCBag_Fill_PocketTMHM(u8 taskId)
+static void DebugAction_PCBag_Fill_PocketTM(u8 taskId)
 {
     u16 itemId;
 
@@ -3843,7 +3843,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_OBTAIN_BADGE) \
     X(MUS_OBTAIN_ITEM) \
     X(MUS_EVOLVED) \
-    X(MUS_OBTAIN_TMHM) \
+    X(MUS_OBTAIN_TM) \
     X(MUS_LILYCOVE_MUSEUM) \
     X(MUS_ROUTE122) \
     X(MUS_OCEANIC_MUSEUM) \

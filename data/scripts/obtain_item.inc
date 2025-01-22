@@ -76,7 +76,7 @@ EventScript_PlayFanfareObtainedItem::
 	return
 
 EventScript_PlayFanfareObtainedTM::
-	playfanfare MUS_OBTAIN_TMHM
+	playfanfare MUS_OBTAIN_TM
 	return
 
 Std_ObtainDecoration::
@@ -123,7 +123,7 @@ Std_FindItem::
 EventScript_PickUpItem::
 	removeobject VAR_LAST_TALKED
 	additem VAR_0x8004, VAR_0x8005
-	specialvar VAR_RESULT, BufferTMHMMoveName
+	specialvar VAR_RESULT, BufferTMMoveName
 	copyvar VAR_0x8008, VAR_RESULT
 	call_if_eq VAR_0x8008, TRUE, EventScript_FoundTM
 	call_if_eq VAR_0x8008, FALSE, EventScript_FoundItem
@@ -148,11 +148,11 @@ EventScript_FoundTM::
 	compare VAR_0x8005, 2
 	goto_if_lt EventScript_FoundTMMessage
 	buffernumberstring STR_VAR_3, VAR_0x8005
-	message gText_PlayerFoundTMHMs
+	message gText_PlayerFoundTMs
 	goto EventScript_BufferTMsPocket
 	return
 EventScript_FoundTMMessage::
-	message gText_PlayerFoundOneTMHM
+	message gText_PlayerFoundOneTM
 	return
 
 EventScript_FoundItem::
@@ -187,14 +187,14 @@ EventScript_HiddenItemScript::
 EventScript_PickUpHiddenItem::
 	copyvar VAR_0x8008, VAR_0x8004
 	copyvar VAR_0x8004, VAR_0x8005
-	specialvar VAR_RESULT, BufferTMHMMoveName
+	specialvar VAR_RESULT, BufferTMMoveName
 	goto_if_eq VAR_RESULT, TRUE, EventScript_FoundHiddenTM
 	goto_if_eq VAR_RESULT, FALSE, EventScript_FoundHiddenItem
 	end
 
 EventScript_FoundHiddenTM::
 	bufferitemnameplural STR_VAR_1, VAR_0x8004, 1
-	message gText_PlayerFoundOneTMHM
+	message gText_PlayerFoundOneTM
 	goto EventScript_PutHiddenItemInPocket
 	end
 

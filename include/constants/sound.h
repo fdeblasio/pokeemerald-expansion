@@ -4,7 +4,7 @@
 #define FANFARE_LEVEL_UP             0
 #define FANFARE_OBTAIN_ITEM          1
 #define FANFARE_EVOLVED              2
-#define FANFARE_OBTAIN_TMHM          3
+#define FANFARE_OBTAIN_TM            3
 #define FANFARE_HEAL                 4
 #define FANFARE_OBTAIN_BADGE         5
 #define FANFARE_MOVE_DELETED         6

@@ -1654,7 +1654,8 @@
 #define FIRE_STARTER              SPECIES_TORCHIC
 #define WATER_STARTER             SPECIES_MUDKIP
 
-#define NORMAN_LEND               SPECIES_ZIGZAGOON //Try to use this variable for the Trick House question once multichoices are refactored
+#define SPECIES_CHASE_BIRCH       SPECIES_POOCHYENA
+#define SPECIES_NORMAN_LEND       SPECIES_ZIGZAGOON //Try to use this variable for the Trick House question once multichoices are refactored
 #define SPECIES_WALLY_STARTER     SPECIES_RALTS
 
 #define SPECIES_PEEKO             SPECIES_WINGULL

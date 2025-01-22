@@ -812,15 +812,14 @@ enum __attribute__((packed)) Item
     ITEM_TM98 = 679,
     ITEM_TM99 = 680,
     ITEM_TM100 = 681,
-
-    ITEM_HM01 = 682,
-    ITEM_HM02 = 683,
-    ITEM_HM03 = 684,
-    ITEM_HM04 = 685,
-    ITEM_HM05 = 686,
-    ITEM_HM06 = 687,
-    ITEM_HM07 = 688,
-    ITEM_HM08 = 689,
+    ITEM_TM101 = 682,
+    ITEM_TM102 = 683,
+    ITEM_TM103 = 684,
+    ITEM_TM104 = 685,
+    ITEM_TM105 = 686,
+    ITEM_TM106 = 687,
+    ITEM_TM107 = 688,
+    ITEM_TM108 = 689,
 
 
     /* Expands to:

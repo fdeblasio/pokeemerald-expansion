@@ -21,7 +21,7 @@ EventScript_BufferPocketNameAndTryFanfare::
 	case POCKET_ITEMS,      EventScript_BufferItemsPocket
 	case POCKET_KEY_ITEMS,  EventScript_BufferKeyItemsPocket
 	case POCKET_POKE_BALLS, EventScript_BufferPokeballsPocket
-	case POCKET_TM_HM,      EventScript_BufferTMsPocket
+	case POCKET_TM,      EventScript_BufferTMsPocket
 	case POCKET_BERRIES,    EventScript_BufferBerriesPocket
 	end
 

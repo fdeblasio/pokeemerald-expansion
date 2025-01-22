@@ -160,6 +160,81 @@ MoveTutor_EventScript_ExplosionTaught::
 	release
 	end
 
+MoveTutor_EventScript_HyperVoiceTutor::
+	lock
+	faceplayer
+	msgbox MoveTutor_Text_HyperVoiceTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_EverGrandeMoveDeclined
+	msgbox MoveTutor_Text_EverGrandeWhichMon, MSGBOX_DEFAULT
+	setvar VAR_ITEM_ID, MOVE_HYPER_VOICE
+	buffermovename STR_VAR_1, MOVE_HYPER_VOICE
+	call MoveTutor_EventScript_OpenBox
+	goto_if_eq VAR_RESULT, 4, MoveTutor_EventScript_EverGrandeMoveDeclined
+	goto MoveTutor_EventScript_EverGrandeMoveTaught
+	end
+
+MoveTutor_EventScript_AquaTailTutor::
+	lock
+	faceplayer
+	msgbox MoveTutor_Text_AquaTailTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_EverGrandeMoveDeclined
+	msgbox MoveTutor_Text_EverGrandeWhichMon, MSGBOX_DEFAULT
+	setvar VAR_ITEM_ID, MOVE_AQUA_TAIL
+	buffermovename STR_VAR_1, MOVE_AQUA_TAIL
+	call MoveTutor_EventScript_OpenBox
+	goto_if_eq VAR_RESULT, 4, MoveTutor_EventScript_EverGrandeMoveDeclined
+	goto MoveTutor_EventScript_EverGrandeMoveTaught
+	end
+
+MoveTutor_EventScript_DrillRunTutor::
+	lock
+	faceplayer
+	msgbox MoveTutor_Text_DrillRunTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_EverGrandeMoveDeclined
+	msgbox MoveTutor_Text_EverGrandeWhichMon, MSGBOX_DEFAULT
+	setvar VAR_ITEM_ID, MOVE_DRILL_RUN
+	buffermovename STR_VAR_1, MOVE_DRILL_RUN
+	call MoveTutor_EventScript_OpenBox
+	goto_if_eq VAR_RESULT, 4, MoveTutor_EventScript_EverGrandeMoveDeclined
+	goto MoveTutor_EventScript_EverGrandeMoveTaught
+	end
+
+MoveTutor_EventScript_HighHorsepowerTutor::
+	lock
+	faceplayer
+	msgbox MoveTutor_Text_HighHorsepowerTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_EverGrandeMoveDeclined
+	msgbox MoveTutor_Text_EverGrandeWhichMon, MSGBOX_DEFAULT
+	setvar VAR_ITEM_ID, MOVE_HIGH_HORSEPOWER
+	buffermovename STR_VAR_1, MOVE_HIGH_HORSEPOWER
+	call MoveTutor_EventScript_OpenBox
+	goto_if_eq VAR_RESULT, 4, MoveTutor_EventScript_EverGrandeMoveDeclined
+	goto MoveTutor_EventScript_EverGrandeMoveTaught
+	end
+
+MoveTutor_EventScript_TemperFlareTutor::
+	lock
+	faceplayer
+	msgbox MoveTutor_Text_TemperFlareTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_EverGrandeMoveDeclined
+	msgbox MoveTutor_Text_EverGrandeWhichMon, MSGBOX_DEFAULT
+	setvar VAR_ITEM_ID, MOVE_TEMPER_FLARE
+	buffermovename STR_VAR_1, MOVE_TEMPER_FLARE
+	call MoveTutor_EventScript_OpenBox
+	goto_if_eq VAR_RESULT, 4, MoveTutor_EventScript_EverGrandeMoveDeclined
+	goto MoveTutor_EventScript_EverGrandeMoveTaught
+	end
+
+MoveTutor_EventScript_EverGrandeMoveDeclined::
+	msgbox MoveTutor_Text_EverGrandeDeclined, MSGBOX_DEFAULT
+	release
+	end
+
+MoveTutor_EventScript_EverGrandeMoveTaught::
+	msgbox MoveTutor_Text_EverGrandeTaught, MSGBOX_DEFAULT
+	release
+	end
+
 MoveTutor_EventScript_OpenPartyMenu::
 	special ChooseMonForMoveTutor
 	waitstate

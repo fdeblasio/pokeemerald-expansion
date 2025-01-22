@@ -26,13 +26,22 @@ BattleFrontier_Lounge1_EventScript_AlreadyMetBreeder::
 	msgbox BattleFrontier_Lounge1_Text_LetsLookAtYourPokemon, MSGBOX_DEFAULT
 	return
 
+BattleFrontier_Lounge1_EventScript_ShowMonToBreeder::
+	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
+	goto_if_eq VAR_RESULT, SPECIES_EGG, BattleFrontier_Lounge1_EventScript_ShowEggToBreeder
+	hypertrain STAT_HP, VAR_0x8004
+	hypertrain STAT_ATK, VAR_0x8004
+	hypertrain STAT_DEF, VAR_0x8004
+	hypertrain STAT_SPEED, VAR_0x8004
+	hypertrain STAT_SPATK, VAR_0x8004
+	hypertrain STAT_SPDEF, VAR_0x8004
+	end
+
 @ BufferVarsForIVRater buffers the following values
 @ VAR_0x8005: Sum of the mons IVs
 @ VAR_0x8006: Stat id of highest IV stat
 @ VAR_0x8007: IV of the highest IV stat
-BattleFrontier_Lounge1_EventScript_ShowMonToBreeder::
-	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
-	goto_if_eq VAR_RESULT, SPECIES_EGG, BattleFrontier_Lounge1_EventScript_ShowEggToBreeder
+BattleFrontier_Lounge1_EventScript_Unused::
 	special BufferVarsForIVRater
 	goto_if_le VAR_0x8005, 90, BattleFrontier_Lounge1_EventScript_AverageTotalIVs       @ Average of 15
 	goto_if_le VAR_0x8005, 120, BattleFrontier_Lounge1_EventScript_AboveAverageTotalIVs @ Average of 20
@@ -158,9 +167,15 @@ BattleFrontier_Lounge1_Text_PokemonBreederIntro:
 	.string "you'll see the abilities of Pokémon\l"
 	.string "at a glance.\p"
 	.string "You're a Trainer. Doesn't it interest\n"
-	.string "you to know your own Pokémon's\l"
-	.string "abilities?\p"
+	.string "you to know that you can improve\l"
+	.string "your Pokémon's abilities?\p"
 	.string "Here!\n"
+	.string "Let's have a look at your Pokémon!$"
+
+BattleFrontier_Lounge1_Text_LetsLookAtYourPokemon:
+	.string "Ah, youngster! Do your Pokémon's\n"
+	.string "abilities need improving?\p"
+	.string "Here, here!\n"
 	.string "Let's have a look at your Pokémon!$"
 
 BattleFrontier_Lounge1_Text_AverageAbility:
@@ -225,7 +240,7 @@ BattleFrontier_Lounge1_Text_StatFlawless:
 
 BattleFrontier_Lounge1_Text_NoTimeForMyAdvice:
 	.string "What?\n"
-	.string "You have no time for my advice?\p"
+	.string "You have no time for my services?\p"
 	.string "You should always be eager to learn\n"
 	.string "from the experiences of your elders!$"
 
@@ -235,15 +250,9 @@ BattleFrontier_Lounge1_Text_HaveBusinessNeedsTending:
 	.string "I have business that needs tending!\n"
 	.string "Save it for next time!$"
 
-BattleFrontier_Lounge1_Text_LetsLookAtYourPokemon:
-	.string "Ah, youngster! Do your Pokémon's\n"
-	.string "abilities intrigue you?\p"
-	.string "Here, here!\n"
-	.string "Let's have a look at your Pokémon!$"
-
 BattleFrontier_Lounge1_Text_EvenICantTell:
-	.string "An expert I am, but even I can't tell\n"
-	.string "anything about an unhatched Pokémon!\p"
+	.string "An expert I am, but even I can't help\n"
+	.string "improve an unhatched Pokémon!\p"
 	.string "Show me a Pokémon!\n"
 	.string "A Pokémon is what I need to see!$"
 

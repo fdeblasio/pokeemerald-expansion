@@ -128,7 +128,6 @@ static void ScrollableMultichoice_ProcessInput(u8);
 static void ScrollableMultichoice_UpdateScrollArrows(u8);
 static void ScrollableMultichoice_MoveCursor(s32, bool8, struct ListMenu *);
 static void HideFrontierExchangeCornerItemIcon(u16, u16);
-static void ShowBattleFrontierTutorMoveDescription(u8, u16);
 static void CloseScrollableMultichoice(u8);
 static void ScrollableMultichoice_RemoveScrollArrows(u8);
 static void Task_ScrollableMultichoice_WaitReturnToList(u8);
@@ -2665,7 +2664,6 @@ static void ScrollableMultichoice_MoveCursor(s32 itemIndex, bool8 onInit, struct
         ListMenuGetCurrentItemArrayId(task->tListTaskId, &selection);
         HideFrontierExchangeCornerItemIcon(task->tScrollMultiId, sFrontierExchangeCorner_NeverRead);
         FillFrontierExchangeCornerWindowAndItemIcon(task->tScrollMultiId, selection);
-        ShowBattleFrontierTutorMoveDescription(task->tScrollMultiId, selection);
         sFrontierExchangeCorner_NeverRead = selection;
     }
 }
@@ -3023,14 +3021,6 @@ static void FillFrontierExchangeCornerWindowAndItemIcon(u16 menu, u16 selection)
                 sScrollableMultichoice_ItemSpriteId = AddDecorationIconObject(sFrontierExchangeCorner_Decor2[selection], 33, 88, 0, TAG_ITEM_ICON, TAG_ITEM_ICON);
             }
             break;
-        case SCROLL_MULTI_BF_EXCHANGE_CORNER_VITAMIN_VENDOR:
-            AddTextPrinterParameterized2(0, FONT_NORMAL, sFrontierExchangeCorner_VitaminsDescriptions[selection], 0, NULL, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_WHITE, TEXT_COLOR_LIGHT_GRAY);
-            ShowFrontierExchangeCornerItemIcon(sFrontierExchangeCorner_Vitamins[selection]);
-            break;
-        case SCROLL_MULTI_BF_EXCHANGE_CORNER_HOLD_ITEM_VENDOR:
-            AddTextPrinterParameterized2(0, FONT_NORMAL, sFrontierExchangeCorner_HoldItemsDescriptions[selection], 0, NULL, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_WHITE, TEXT_COLOR_LIGHT_GRAY);
-            ShowFrontierExchangeCornerItemIcon(sFrontierExchangeCorner_HoldItems[selection]);
-            break;
         }
     }
 }
@@ -3057,8 +3047,6 @@ static void HideFrontierExchangeCornerItemIcon(u16 menu, u16 unused)
         {
         case SCROLL_MULTI_BF_EXCHANGE_CORNER_DECOR_VENDOR_1:
         case SCROLL_MULTI_BF_EXCHANGE_CORNER_DECOR_VENDOR_2:
-        case SCROLL_MULTI_BF_EXCHANGE_CORNER_VITAMIN_VENDOR:
-        case SCROLL_MULTI_BF_EXCHANGE_CORNER_HOLD_ITEM_VENDOR:
             // This makes sure deleting the icon will not clear palettes in use by object events
             FieldEffectFreeGraphicsResources(&gSprites[sScrollableMultichoice_ItemSpriteId]);
             break;
@@ -3092,49 +3080,6 @@ static void ShowBattleFrontierTutorWindow(u8 menu, u16 selection)
             sTutorMoveAndElevatorWindowId = AddWindow(&sBattleFrontierTutor_WindowTemplate);
             SetStandardWindowBorderStyle(sTutorMoveAndElevatorWindowId, FALSE);
         }
-        ShowBattleFrontierTutorMoveDescription(menu, selection);
-    }
-}
-
-static void ShowBattleFrontierTutorMoveDescription(u8 menu, u16 selection)
-{
-    static const u8 *const sBattleFrontier_TutorMoveDescriptions1[] =
-    {
-        BattleFrontier_Lounge7_Text_SoftboiledDesc,
-        BattleFrontier_Lounge7_Text_SeismicTossDesc,
-        BattleFrontier_Lounge7_Text_DreamEaterDesc,
-        BattleFrontier_Lounge7_Text_MegaPunchDesc,
-        BattleFrontier_Lounge7_Text_MegaKickDesc,
-        BattleFrontier_Lounge7_Text_BodySlamDesc,
-        BattleFrontier_Lounge7_Text_RockSlideDesc,
-        BattleFrontier_Lounge7_Text_CounterDesc,
-        BattleFrontier_Lounge7_Text_ThunderWaveDesc,
-        BattleFrontier_Lounge7_Text_SwordsDanceDesc,
-        gText_Exit,
-    };
-
-    static const u8 *const sBattleFrontier_TutorMoveDescriptions2[] =
-    {
-        BattleFrontier_Lounge7_Text_DefenseCurlDesc,
-        BattleFrontier_Lounge7_Text_SnoreDesc,
-        BattleFrontier_Lounge7_Text_MudSlapDesc,
-        BattleFrontier_Lounge7_Text_SwiftDesc,
-        BattleFrontier_Lounge7_Text_IcyWindDesc,
-        BattleFrontier_Lounge7_Text_EndureDesc,
-        BattleFrontier_Lounge7_Text_PsychUpDesc,
-        BattleFrontier_Lounge7_Text_IcePunchDesc,
-        BattleFrontier_Lounge7_Text_ThunderPunchDesc,
-        BattleFrontier_Lounge7_Text_FirePunchDesc,
-        gText_Exit,
-    };
-
-    if (menu == SCROLL_MULTI_BF_MOVE_TUTOR_1 || menu == SCROLL_MULTI_BF_MOVE_TUTOR_2)
-    {
-        FillWindowPixelRect(sTutorMoveAndElevatorWindowId, PIXEL_FILL(1), 0, 0, 96, 48);
-        if (menu == SCROLL_MULTI_BF_MOVE_TUTOR_2)
-            AddTextPrinterParameterized(sTutorMoveAndElevatorWindowId, FONT_NORMAL, sBattleFrontier_TutorMoveDescriptions2[selection], 0, 1, 0, NULL);
-        else
-            AddTextPrinterParameterized(sTutorMoveAndElevatorWindowId, FONT_NORMAL, sBattleFrontier_TutorMoveDescriptions1[selection], 0, 1, 0, NULL);
     }
 }
 

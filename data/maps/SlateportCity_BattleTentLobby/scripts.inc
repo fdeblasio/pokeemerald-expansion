@@ -110,24 +110,11 @@ SlateportCity_BattleTentLobby_EventScript_TryEnterChallenge::
 	setvar VAR_FRONTIER_FACILITY, FRONTIER_FACILITY_FACTORY
 	setvar VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_SINGLES
 	frontier_set FRONTIER_DATA_LVL_MODE, FRONTIER_LVL_TENT
-	msgbox SlateportCity_BattleTentLobby_Text_SaveBeforeChallenge, MSGBOX_YESNO
-	switch VAR_RESULT
-	case NO, SlateportCity_BattleTentLobby_EventScript_LoadPartyCancelChallenge
-	case YES, SlateportCity_BattleTentLobby_EventScript_SaveBeforeChallenge
-	case MULTI_B_PRESSED, SlateportCity_BattleTentLobby_EventScript_LoadPartyCancelChallenge
-
-SlateportCity_BattleTentLobby_EventScript_SaveBeforeChallenge::
 	setvar VAR_TEMP_CHALLENGE_STATUS, 0
 	frontier_set FRONTIER_DATA_SELECTED_MON_ORDER
 	slateporttent_init
-	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_SAVING
 	frontier_set FRONTIER_DATA_PAUSED, FALSE
 	closemessage
-	delay 2
-	call Common_EventScript_SaveGame
-	setvar VAR_TEMP_CHALLENGE_STATUS, 255
-	goto_if_eq VAR_RESULT, 0, SlateportCity_BattleTentLobby_EventScript_CancelChallengeSaveFailed
-	setvar VAR_0x8006, 0
 SlateportCity_BattleTentLobby_EventScript_EnterChallenge::
 	msgbox SlateportCity_BattleTentLobby_Text_StepThisWay, MSGBOX_DEFAULT
 	closemessage

@@ -406,9 +406,9 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
         .statDown = STAT_SPEED,
         .backAnim = 0,
         .pokeBlockAnim = {ANIM_BRAVE, AFFINE_TURN_UP},
-        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlAttackHighDefenseLow,
-        .battlePalacePercents = PALACE_STYLE(70, 15, 32, 60), //15%, 8%
-        .battlePalaceFlavorText = B_MSG_GETTING_IN_POS,
+        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow,
+        .battlePalacePercents = PALACE_STYLE(70, 15, 80, 15), // 15%,  5%
+        .battlePalaceFlavorText = B_MSG_GLINT_IN_EYE,
         .battlePalaceSmokescreen = PALACE_TARGET_WEAKER,
     },
     [NATURE_ADAMANT] =
@@ -419,8 +419,8 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
         .backAnim = 0,
         .pokeBlockAnim = {ANIM_ADAMANT, AFFINE_NONE},
         .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow,
-        .battlePalacePercents = PALACE_STYLE(38, 31, 70, 15), //31%, 15%
-        .battlePalaceFlavorText = B_MSG_GLINT_IN_EYE,
+        .battlePalacePercents = PALACE_STYLE(70, 15, 70, 15), //15%, 15%
+        .battlePalaceFlavorText = B_MSG_EAGER_FOR_MORE,
         .battlePalaceSmokescreen = PALACE_TARGET_STRONGER,
     },
     [NATURE_NAUGHTY] =
@@ -430,8 +430,8 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
         .statDown = STAT_SPDEF,
         .backAnim = 0,
         .pokeBlockAnim = {ANIM_NAUGHTY, AFFINE_NONE},
-        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlDefenseHighAttackLow,
-        .battlePalacePercents = PALACE_STYLE(20, 70, 70, 22), //10%, 8%
+        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlSupportHighSupportLow,
+        .battlePalacePercents = PALACE_STYLE(20, 10, 40, 10), //70%, 50%
         .battlePalaceFlavorText = B_MSG_GLINT_IN_EYE,
         .battlePalaceSmokescreen = PALACE_TARGET_WEAKER,
     },
@@ -454,8 +454,8 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
         .statDown = STAT_DEF,
         .backAnim = 1,
         .pokeBlockAnim = {ANIM_DOCILE, AFFINE_NONE},
-        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow,
-        .battlePalacePercents = PALACE_STYLE(56, 22, 56, 22), //22%, 22%
+        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlDefenseHighDefenseLow,
+        .battlePalacePercents = PALACE_STYLE(22, 56, 22, 56), //22%, 22%
         .battlePalaceFlavorText = B_MSG_EAGER_FOR_MORE,
         .battlePalaceSmokescreen = PALACE_TARGET_RANDOM,
     },
@@ -478,8 +478,8 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
         .statDown = STAT_SPATK,
         .backAnim = 0,
         .pokeBlockAnim = {ANIM_IMPISH, AFFINE_NONE},
-        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlAttackHighDefenseLow,
-        .battlePalacePercents = PALACE_STYLE(69, 6, 28, 55), //25%, 17%
+        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlSupportHighDefenseLow,
+        .battlePalacePercents = PALACE_STYLE(6, 25, 28, 55), //69%, 17%
         .battlePalaceFlavorText = B_MSG_GETTING_IN_POS,
         .battlePalaceSmokescreen = PALACE_TARGET_STRONGER,
     },
@@ -502,9 +502,9 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
         .statDown = STAT_ATK,
         .backAnim = 2,
         .pokeBlockAnim = {ANIM_TIMID, AFFINE_NONE},
-        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlAttackHighSupportLow,
-        .battlePalacePercents = PALACE_STYLE(62, 10, 30, 20), //28%, 50%
-        .battlePalaceFlavorText = B_MSG_GROWL_DEEPLY,
+        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlAttackHighDefenseLow,
+        .battlePalacePercents = PALACE_STYLE(42, 28, 20, 50), //30%, 30%
+        .battlePalaceFlavorText = B_MSG_GETTING_IN_POS,
         .battlePalaceSmokescreen = PALACE_TARGET_WEAKER,
     },
     [NATURE_HASTY] =
@@ -514,9 +514,9 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
         .statDown = STAT_DEF,
         .backAnim = 0,
         .pokeBlockAnim = {ANIM_HASTY, AFFINE_NONE},
-        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow,
-        .battlePalacePercents = PALACE_STYLE(58, 37, 88, 6), //5%, 6%
-        .battlePalaceFlavorText = B_MSG_GLINT_IN_EYE,
+        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlAttackHighSupportLow,
+        .battlePalacePercents = PALACE_STYLE(58, 37, 12, 6), //5%, 82%
+        .battlePalaceFlavorText = B_MSG_GROWL_DEEPLY,
         .battlePalaceSmokescreen = PALACE_TARGET_WEAKER,
     },
     [NATURE_SERIOUS] =
@@ -562,9 +562,9 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
         .statDown = STAT_ATK,
         .backAnim = 2,
         .pokeBlockAnim = {ANIM_MODEST, AFFINE_TURN_DOWN_SLOW},
-        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlDefenseHighDefenseLow,
-        .battlePalacePercents = PALACE_STYLE(35, 45, 34, 60), //20%, 6%
-        .battlePalaceFlavorText = B_MSG_GETTING_IN_POS,
+        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow,
+        .battlePalacePercents = PALACE_STYLE(55, 25, 60, 34), //20%, 6%
+        .battlePalaceFlavorText = B_MSG_GLINT_IN_EYE,
         .battlePalaceSmokescreen = PALACE_TARGET_WEAKER,
     },
     [NATURE_MILD] =
@@ -646,9 +646,9 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
         .statDown = STAT_SPEED,
         .backAnim = 1,
         .pokeBlockAnim = {ANIM_SASSY, AFFINE_TURN_UP_HIGH},
-        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlAttackHighSupportLow,
-        .battlePalacePercents = PALACE_STYLE(88, 6, 22, 20), //6%, 58%
-        .battlePalaceFlavorText = B_MSG_GROWL_DEEPLY,
+        .natureGirlMessage = BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow,
+        .battlePalacePercents = PALACE_STYLE(54, 6, 72, 6), //40%, 22%
+        .battlePalaceFlavorText = B_MSG_GLINT_IN_EYE,
         .battlePalaceSmokescreen = PALACE_TARGET_WEAKER,
     },
     [NATURE_CAREFUL] =
@@ -7033,7 +7033,7 @@ u32 GetRegionalFormByRegion(u32 species, u32 region)
         {
             if (firstFoundSpecies == 0)
                 firstFoundSpecies = formTable[formId];
-            
+
             if (IsSpeciesRegionalFormFromRegion(formTable[formId], region))
                 return formTable[formId];
         }

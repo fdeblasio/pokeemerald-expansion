@@ -19,7 +19,7 @@ VerdanturfTown_WandasHouse_EventScript_WallysUncle::
 	lock
 	faceplayer
 	goto_if_set FLAG_DEFEATED_WALLY_VICTORY_ROAD, VerdanturfTown_WandasHouse_EventScript_WallysUncleEverGrande
-	goto_if_set FLAG_DEFEATED_LAVARIDGE_GYM, VerdanturfTown_WandasHouse_EventScript_WallysUncleSlippedOff
+	goto_if_set FLAG_BADGE04_GET, VerdanturfTown_WandasHouse_EventScript_WallysUncleSlippedOff
 	msgbox VerdanturfTown_WandasHouse_Text_WallysNextDoor, MSGBOX_DEFAULT
 	release
 	end
@@ -41,7 +41,7 @@ VerdanturfTown_WandasHouse_EventScript_WandasBoyfriend::
 VerdanturfTown_WandasHouse_EventScript_Wanda::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_LAVARIDGE_GYM, VerdanturfTown_WandasHouse_EventScript_WandaDontWorry
+	goto_if_set FLAG_BADGE04_GET, VerdanturfTown_WandasHouse_EventScript_WandaDontWorry
 	goto_if_set FLAG_DEFEATED_WALLY_MAUVILLE, VerdanturfTown_WandasHouse_EventScript_MeetWanda
 	msgbox VerdanturfTown_WandasHouse_Text_DontWorryAboutWally, MSGBOX_DEFAULT
 	release
@@ -61,7 +61,7 @@ VerdanturfTown_WandasHouse_EventScript_WallysAunt::
 	lock
 	faceplayer
 	goto_if_set FLAG_DEFEATED_WALLY_VICTORY_ROAD, VerdanturfTown_WandasHouse_EventScript_WallysAuntEverGrande
-	goto_if_set FLAG_DEFEATED_LAVARIDGE_GYM, VerdanturfTown_WandasHouse_EventScript_WallysAuntAnythingHappened
+	goto_if_set FLAG_BADGE04_GET, VerdanturfTown_WandasHouse_EventScript_WallysAuntAnythingHappened
 	goto_if_set FLAG_RUSTURF_TUNNEL_OPENED, VerdanturfTown_WandasHouse_EventScript_WallysAuntTunnelOpen
 	msgbox VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendDriven, MSGBOX_DEFAULT
 	release
@@ -86,7 +86,7 @@ VerdanturfTown_WandasHouse_Text_StrongerSpeech:
 	.string "Wally: I lost to you, {PLAYER}, but I'm\n"
 	.string "not feeling down anymore.\p"
 	.string "Because I have a new purpose in life.\n"
-	.string "Together with my Ralts, I'm going\l"
+	.string "Together with Ralph, I'm going\l"
 	.string "to challenge Pokémon Gyms and become\l"
 	.string "a great Trainer.\p"
 	.string "Please watch me, {PLAYER}.\n"

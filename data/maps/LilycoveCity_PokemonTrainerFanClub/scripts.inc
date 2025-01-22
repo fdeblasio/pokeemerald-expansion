@@ -1,6 +1,6 @@
 .set LOCALID_LASS, 1
 .set LOCALID_MAN, 2
-.set LOCALID_POKEFAN_M, 3
+.set LOCALID_POKE_FAN_M, 3
 .set LOCALID_LITTLE_GIRL, 4
 .set LOCALID_NINJA_BOY, 5
 .set LOCALID_BOY, 6
@@ -161,7 +161,7 @@ LilycoveCity_PokemonTrainerFanClub_EventScript_MoveMember1ToFarTable::
 	return
 
 LilycoveCity_PokemonTrainerFanClub_EventScript_MoveMember2ToFarTable::
-	setobjectxyperm LOCALID_POKEFAN_M, 3, 4
+	setobjectxyperm LOCALID_POKE_FAN_M, 3, 4
 	return
 
 LilycoveCity_PokemonTrainerFanClub_EventScript_MoveMember3ToFarTable::

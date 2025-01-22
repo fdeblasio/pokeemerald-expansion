@@ -32,6 +32,7 @@ EverGrandeCity_ChampionsRoom_EventScript_EnterRoom::
 	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_ChampionsRoom_Movement_PlayerApproachWallace
 	waitmovement 0
 	setvar VAR_TEMP_1, 1
+	goto_if_set FLAG_SYS_GAME_CLEAR, EverGrandeCity_ChampionsRoom_EventScript_WallaceRematch
 	goto EverGrandeCity_ChampionsRoom_EventScript_Wallace
 	releaseall
 	end
@@ -45,6 +46,13 @@ EverGrandeCity_ChampionsRoom_EventScript_Wallace::
 	playbgm MUS_ENCOUNTER_CHAMPION, FALSE
 	msgbox EverGrandeCity_ChampionsRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_WALLACE, EverGrandeCity_ChampionsRoom_Text_Defeat
+	goto EverGrandeCity_ChampionsRoom_EventScript_Defeated
+	end
+
+EverGrandeCity_ChampionsRoom_EventScript_WallaceRematch::
+	playbgm MUS_ENCOUNTER_CHAMPION, FALSE
+	msgbox EverGrandeCity_ChampionsRoom_Text_IntroSpeechRematch, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_WALLACE_REMATCH, EverGrandeCity_ChampionsRoom_Text_Defeat
 	goto EverGrandeCity_ChampionsRoom_EventScript_Defeated
 	end
 
@@ -135,6 +143,7 @@ EverGrandeCity_ChampionsRoom_EventScript_BirchArrivesExitForHoF::
 	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_ChampionsRoom_Movement_PlayerExit
 	waitmovement 0
 	setflag FLAG_HIDE_PETALBURG_GYM_GREETER
+	clearflag FLAG_HIDE_ROUTE_120_GABBY_AND_TY_2
 	warp MAP_EVER_GRANDE_CITY_HALL_OF_FAME, 7, 16
 	waitstate
 	releaseall
@@ -239,6 +248,16 @@ EverGrandeCity_ChampionsRoom_Text_IntroSpeech:
 	.string "But we ourselves also learn many\n"
 	.string "things from Pokémon.\p"
 	.string "And this is where your achievements\n"
+	.string "are put to the test against what\l"
+	.string "others like you have achieved.\p"
+	.string "Now!\p"
+	.string "Who can most elegantly dance with\n"
+	.string "their Pokémon in Hoenn?\p"
+	.string "Show me right here and now!$"
+
+EverGrandeCity_ChampionsRoom_Text_IntroSpeechRematch:
+	.string "Wallace: Welcome, {PLAYER}.\p"
+	.string "This is where your achievements\n"
 	.string "are put to the test against what\l"
 	.string "others like you have achieved.\p"
 	.string "Now!\p"

@@ -37,10 +37,11 @@ LilycoveCity_DepartmentStore_1F_EventScript_LotteryClerk::
 	call_if_eq VAR_0x8006, 0, LilycoveCity_DepartmentStore_1F_EventScript_TicketMatchPartyMon
 	call_if_eq VAR_0x8006, 1, LilycoveCity_DepartmentStore_1F_EventScript_TicketMatchPCMon
 	bufferitemname STR_VAR_1, VAR_0x8005
-	call_if_eq VAR_0x8004, 1, LilycoveCity_DepartmentStore_1F_EventScript_TwoDigitMatch
-	call_if_eq VAR_0x8004, 2, LilycoveCity_DepartmentStore_1F_EventScript_ThreeDigitMatch
-	call_if_eq VAR_0x8004, 3, LilycoveCity_DepartmentStore_1F_EventScript_FourDigitMatch
-	call_if_eq VAR_0x8004, 4, LilycoveCity_DepartmentStore_1F_EventScript_FullMatch
+	call_if_eq VAR_0x8004, 1, LilycoveCity_DepartmentStore_1F_EventScript_OneDigitMatch
+	call_if_eq VAR_0x8004, 2, LilycoveCity_DepartmentStore_1F_EventScript_TwoDigitMatch
+	call_if_eq VAR_0x8004, 3, LilycoveCity_DepartmentStore_1F_EventScript_ThreeDigitMatch
+	call_if_eq VAR_0x8004, 4, LilycoveCity_DepartmentStore_1F_EventScript_FourDigitMatch
+	call_if_eq VAR_0x8004, 5, LilycoveCity_DepartmentStore_1F_EventScript_FullMatch
 	giveitem VAR_0x8005
 	goto_if_eq VAR_RESULT, FALSE, LilycoveCity_DepartmentStore_1F_EventScript_RecordPrizeNoRoom
 	special TryPutLotteryWinnerReportOnAir
@@ -74,6 +75,10 @@ LilycoveCity_DepartmentStore_1F_EventScript_PleaseVisitAgain2::
 	msgbox LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain2, MSGBOX_DEFAULT
 	release
 	end
+
+LilycoveCity_DepartmentStore_1F_EventScript_OneDigitMatch::
+	msgbox LilycoveCity_DepartmentStore_1F_Text_OneDigitMatched, MSGBOX_DEFAULT
+	return
 
 LilycoveCity_DepartmentStore_1F_EventScript_TwoDigitMatch::
 	msgbox LilycoveCity_DepartmentStore_1F_Text_TwoDigitsMatched, MSGBOX_DEFAULT
@@ -123,6 +128,7 @@ LilycoveCity_DepartmentStore_1F_EventScript_LittleGirl::
 	end
 
 LilycoveCity_DepartmentStore_1F_EventScript_PokefanM::
+	bufferspeciesname STR_VAR_1, SPECIES_LILYCOVE_DEPARTMENT_STORE
 	msgbox LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill, MSGBOX_NPC
 	end
 
@@ -130,7 +136,8 @@ LilycoveCity_DepartmentStore_1F_EventScript_Azumarill::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_AZUMARILL, CRY_MODE_NORMAL
+	playmoncry SPECIES_LILYCOVE_DEPARTMENT_STORE, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, SPECIES_LILYCOVE_DEPARTMENT_STORE
 	msgbox LilycoveCity_DepartmentStore_1F_Text_Azumarill, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -153,11 +160,11 @@ LilycoveCity_DepartmentStore_1F_Text_MomBuyingMeFurniture:
 	.string "nice furniture.$"
 
 LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill:
-	.string "I'm buying something for my Azumarill\n"
+	.string "I'm buying something for my {STR_VAR_1}\n"
 	.string "as a reward for winning a Contest.$"
 
 LilycoveCity_DepartmentStore_1F_Text_Azumarill:
-	.string "Azumarill: Maririroo!$"
+	.string "{STR_VAR_1}: Maririroo!$"
 
 LilycoveCity_DepartmentStore_1F_Text_FloorNamesSign:
 	.string "1F: Service Counter\n"

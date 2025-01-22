@@ -17,6 +17,8 @@ BattleFrontier_BattleTowerLobby_OnResume:
 	end
 
 BattleFrontier_BattleTowerLobby_OnTransition:
+	clearflag FLAG_DAILY_APPRENTICE_LEAVES
+	clearflag FLAG_HIDE_APPRENTICE
 	call BattleFrontier_BattleTowerLobby_EventScript_ShowOrHideReporter
 	apprentice_shouldcheckgone
 	goto_if_eq VAR_0x8004, FALSE, BattleFrontier_BattleTowerLobby_EventScript_ShowApprentice  @ VAR_0x8004 always TRUE here
@@ -209,13 +211,6 @@ BattleFrontier_BattleTowerLobby_EventScript_TryEnterSinglesChallenge::
 	special ChoosePartyForBattleFrontier
 	waitstate
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleTowerLobby_EventScript_LoadPartyCancelChallenge
-	msgbox BattleFrontier_BattleTowerLobby_Text_OkayToSaveBeforeEntering, MSGBOX_YESNO
-	switch VAR_RESULT
-	case NO, BattleFrontier_BattleTowerLobby_EventScript_LoadPartyCancelChallenge
-	case YES, BattleFrontier_BattleTowerLobby_EventScript_SaveBeforeSinglesChallenge
-	case MULTI_B_PRESSED, BattleFrontier_BattleTowerLobby_EventScript_LoadPartyCancelChallenge
-
-BattleFrontier_BattleTowerLobby_EventScript_SaveBeforeSinglesChallenge::
 	frontier_set FRONTIER_DATA_SELECTED_MON_ORDER
 	setvar VAR_TEMP_CHALLENGE_STATUS, 0
 	tower_init
@@ -223,11 +218,8 @@ BattleFrontier_BattleTowerLobby_EventScript_SaveBeforeSinglesChallenge::
 	frontier_set FRONTIER_DATA_PAUSED, FALSE
 	special LoadPlayerParty
 	closemessage
-	delay 2
-	call Common_EventScript_SaveGame
 	setvar VAR_TEMP_CHALLENGE_STATUS, 255
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleTowerLobby_EventScript_CancelChallengeSaveFailed
-	incrementgamestat GAME_STAT_ENTERED_BATTLE_TOWER
 	setvar VAR_BRAVO_TRAINER_BATTLE_TOWER_ON, TRUE
 	goto BattleFrontier_BattleTowerLobby_EventScript_EnterElevator
 	end
@@ -273,13 +265,6 @@ BattleFrontier_BattleTowerLobby_EventScript_TryEnterDoublesChallenge::
 	special ChoosePartyForBattleFrontier
 	waitstate
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleTowerLobby_EventScript_LoadPartyCancelChallenge
-	msgbox BattleFrontier_BattleTowerLobby_Text_OkayToSaveBeforeEntering, MSGBOX_YESNO
-	switch VAR_RESULT
-	case NO, BattleFrontier_BattleTowerLobby_EventScript_LoadPartyCancelChallenge
-	case YES, BattleFrontier_BattleTowerLobby_EventScript_SaveBeforeDoublesChallenge
-	case MULTI_B_PRESSED, BattleFrontier_BattleTowerLobby_EventScript_LoadPartyCancelChallenge
-
-BattleFrontier_BattleTowerLobby_EventScript_SaveBeforeDoublesChallenge::
 	frontier_set FRONTIER_DATA_SELECTED_MON_ORDER
 	setvar VAR_TEMP_CHALLENGE_STATUS, 0
 	tower_init
@@ -287,8 +272,6 @@ BattleFrontier_BattleTowerLobby_EventScript_SaveBeforeDoublesChallenge::
 	frontier_set FRONTIER_DATA_PAUSED, FALSE
 	special LoadPlayerParty
 	closemessage
-	delay 2
-	call Common_EventScript_SaveGame
 	setvar VAR_TEMP_CHALLENGE_STATUS, 255
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleTowerLobby_EventScript_CancelChallengeSaveFailed
 	incrementgamestat GAME_STAT_ENTERED_BATTLE_TOWER
@@ -338,13 +321,6 @@ BattleFrontier_BattleTowerLobby_EventScript_TryEnterMultisChallenge::
 	special ChoosePartyForBattleFrontier
 	waitstate
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleTowerLobby_EventScript_LoadPartyCancelChallenge
-	msgbox BattleFrontier_BattleTowerLobby_Text_OkayToSaveBeforeEntering, MSGBOX_YESNO
-	switch VAR_RESULT
-	case NO, BattleFrontier_BattleTowerLobby_EventScript_LoadPartyCancelChallenge
-	case YES, BattleFrontier_BattleTowerLobby_EventScript_SaveBeforeMultisChallenge
-	case MULTI_B_PRESSED, BattleFrontier_BattleTowerLobby_EventScript_LoadPartyCancelChallenge
-
-BattleFrontier_BattleTowerLobby_EventScript_SaveBeforeMultisChallenge::
 	frontier_set FRONTIER_DATA_SELECTED_MON_ORDER
 	setvar VAR_TEMP_CHALLENGE_STATUS, 0
 	tower_init
@@ -352,8 +328,6 @@ BattleFrontier_BattleTowerLobby_EventScript_SaveBeforeMultisChallenge::
 	frontier_set FRONTIER_DATA_PAUSED, FALSE
 	special LoadPlayerParty
 	closemessage
-	delay 2
-	call Common_EventScript_SaveGame
 	setvar VAR_TEMP_CHALLENGE_STATUS, 255
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleTowerLobby_EventScript_CancelChallengeSaveFailed
 	incrementgamestat GAME_STAT_ENTERED_BATTLE_TOWER
@@ -402,13 +376,6 @@ BattleFrontier_BattleTowerLobby_EventScript_TryEnterLinkMultisChallenge::
 	special ChoosePartyForBattleFrontier
 	waitstate
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleTowerLobby_EventScript_LoadPartyCancelChallenge
-	msgbox BattleFrontier_BattleTowerLobby_Text_OkayToSaveBeforeEntering, MSGBOX_YESNO
-	switch VAR_RESULT
-	case NO, BattleFrontier_BattleTowerLobby_EventScript_LoadPartyCancelChallenge
-	case YES, BattleFrontier_BattleTowerLobby_EventScript_SaveBeforeLinkMultisChallenge
-	case MULTI_B_PRESSED, BattleFrontier_BattleTowerLobby_EventScript_LoadPartyCancelChallenge
-
-BattleFrontier_BattleTowerLobby_EventScript_SaveBeforeLinkMultisChallenge::
 	frontier_set FRONTIER_DATA_SELECTED_MON_ORDER
 	setvar VAR_TEMP_CHALLENGE_STATUS, 0
 	tower_init
@@ -416,7 +383,6 @@ BattleFrontier_BattleTowerLobby_EventScript_SaveBeforeLinkMultisChallenge::
 	frontier_set FRONTIER_DATA_PAUSED, FALSE
 	special LoadPlayerParty
 	closemessage
-	delay 2
 @ The command tower_save ultimately calls TrySavingData(SAVE_LINK), which writes data in SaveBlock1 and SaveBlock2
 @ to the flash, but not data in PokemonStorage. The SaveGame script that follows asks the player to do a full save,
 @ which they can opt out of. As a result the player can save their party and quit without having saved the PC.
@@ -1065,15 +1031,6 @@ BattleFrontier_BattleTowerLobby_Text_WhichLevelMode:
 	.string "of challenge, Level 50 and Open Level.\l"
 	.string "Which is your choice?$"
 
-@ Unused
-BattleFrontier_BattleTowerLobby_Text_PleaseSelectMons:
-	.string "Please select the Pokémon you wish\n"
-	.string "to enter.$"
-
-BattleFrontier_BattleTowerLobby_Text_OkayToSaveBeforeEntering:
-	.string "Before entering a Battle Room, your\n"
-	.string "progress must be saved. Is that okay?$"
-
 BattleFrontier_BattleTowerLobby_Text_ShowYouToBattleRoom:
 	.string "I will now show you to the\n"
 	.string "{STR_VAR_1} Battle Room.$"
@@ -1081,28 +1038,6 @@ BattleFrontier_BattleTowerLobby_Text_ShowYouToBattleRoom:
 BattleFrontier_BattleTowerLobby_Text_RecordLastMatch:
 	.string "Shall I record your last Battle Tower\n"
 	.string "match on your Frontier Pass?$"
-
-@ Unused
-BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50:
-	.string "Excuse me!\p"
-	.string "You don't have {STR_VAR_2} eligible Pokémon.\p"
-	.string "You must have {STR_VAR_2} different Pokémon\n"
-	.string "of Level 50 or less to enter.\p"
-	.string "They also must be holding different\n"
-	.string "kinds of items.\p"
-	.string "Eggs{STR_VAR_1} ineligible.\p"
-	.string "Please come see me when you are ready.$"
-
-@ Unused
-BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpen:
-	.string "Excuse me!\p"
-	.string "You don't have {STR_VAR_2} eligible Pokémon.\p"
-	.string "You must have {STR_VAR_2} different Pokémon\n"
-	.string "to enter.\p"
-	.string "They also must be holding different\n"
-	.string "kinds of items.\p"
-	.string "Eggs{STR_VAR_1} ineligible.\p"
-	.string "Please come see me when you are ready.$"
 
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50Singles:
 	.string "Excuse me!\p"

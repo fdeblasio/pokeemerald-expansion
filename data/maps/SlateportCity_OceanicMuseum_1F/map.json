@@ -145,7 +145,7 @@
       "flag": "FLAG_HIDE_SLATEPORT_MUSEUM_POPULATION"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_M",
+      "graphics_id": "OBJ_EVENT_GFX_POKE_FAN_M",
       "x": 17,
       "y": 7,
       "elevation": 3,

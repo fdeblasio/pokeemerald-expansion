@@ -101,6 +101,7 @@ LittlerootTown_MaysHouse_1F_EventScript_YoureNewNeighbor::
 	msgbox RivalsHouse_1F_Text_OhYoureTheNewNeighbor, MSGBOX_DEFAULT
 	setflag FLAG_MET_RIVAL_MOM
 	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 2
+	setvar VAR_LITTLEROOT_RIVAL_STATE, 2
 	releaseall
 	end
 
@@ -184,7 +185,8 @@ LittlerootTown_MaysHouse_1F_EventScript_MeetRival::
 	waitmovement 0
 	applymovement LOCALID_RIVAL, Common_Movement_Delay48
 	waitmovement 0
-	call_if_ne VAR_0x8008, 1, LittlerootTown_MaysHouse_1F_EventScript_PlayerFaceMay
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
+	waitmovement 0
 	playbgm MUS_ENCOUNTER_MAY, TRUE
 	call_if_eq VAR_0x8008, 0, LittlerootTown_MaysHouse_1F_EventScript_MayApproachPlayer0
 	call_if_eq VAR_0x8008, 1, LittlerootTown_MaysHouse_1F_EventScript_MayApproachPlayer1
@@ -206,11 +208,6 @@ LittlerootTown_MaysHouse_1F_EventScript_MeetRival::
 	fadedefaultbgm
 	releaseall
 	end
-
-LittlerootTown_MaysHouse_1F_EventScript_PlayerFaceMay::
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
-	waitmovement 0
-	return
 
 LittlerootTown_MaysHouse_1F_EventScript_MayApproachPlayer0::
 	applymovement LOCALID_RIVAL, LittlerootTown_MaysHouse_1F_Movement_MayApproachPlayer0

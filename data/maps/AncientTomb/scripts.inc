@@ -24,7 +24,7 @@ AncientTomb_EventScript_ShowRegisteel::
 	return
 
 AncientTomb_OnLoad:
-	call_if_unset FLAG_SYS_REGISTEEL_PUZZLE_COMPLETED, AncientTomb_EventScript_HideRegiEntrance
+	setflag FLAG_SYS_REGISTEEL_PUZZLE_COMPLETED
 	end
 
 AncientTomb_EventScript_HideRegiEntrance::
@@ -58,12 +58,12 @@ AncientTomb_EventScript_Registeel::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_REGISTEEL, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_ANCIENT_TOMB, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_REGISTEEL, 40
+	setwildbattle SPECIES_ANCIENT_TOMB, TRIO_LEVEL
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
-	special StartRegiBattle
+	special BattleSetup_StartLegendaryBattle
 	waitstate
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome
@@ -80,7 +80,7 @@ AncientTomb_EventScript_DefeatedRegisteel::
 	end
 
 AncientTomb_EventScript_RanFromRegisteel::
-	setvar VAR_0x8004, SPECIES_REGISTEEL
+	setvar VAR_0x8004, SPECIES_ANCIENT_TOMB
 	goto Common_EventScript_LegendaryFlewAway
 	end
 

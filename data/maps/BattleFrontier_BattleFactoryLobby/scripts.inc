@@ -102,7 +102,6 @@ BattleFrontier_BattleFactoryLobby_EventScript_ResumeChallenge::
 	lockall
 	message BattleFrontier_BattleFactoryLobby_Text_WaitingForYouToResume
 	waitmessage
-	factory_save CHALLENGE_STATUS_SAVING
 	playse SE_SAVE
 	waitse
 	frontier_set FRONTIER_DATA_PAUSED, FALSE
@@ -147,23 +146,13 @@ BattleFrontier_BattleFactoryLobby_EventScript_TryEnterChallenge::
 	case FRONTIER_LVL_TENT, BattleFrontier_BattleFactoryLobby_EventScript_CancelChallenge
 	case MULTI_B_PRESSED, BattleFrontier_BattleFactoryLobby_EventScript_CancelChallenge
 	frontier_set FRONTIER_DATA_LVL_MODE, VAR_RESULT
-	msgbox BattleFrontier_BattleFactoryLobby_Text_OkayToSaveBeforeChallenge, MSGBOX_YESNO
-	switch VAR_RESULT
-	case NO, BattleFrontier_BattleFactoryLobby_EventScript_LoadPartyAndCancelChallenge
-	case YES, BattleFrontier_BattleFactoryLobby_EventScript_SaveBeforeChallenge
-	case MULTI_B_PRESSED, BattleFrontier_BattleFactoryLobby_EventScript_LoadPartyAndCancelChallenge
-
-BattleFrontier_BattleFactoryLobby_EventScript_SaveBeforeChallenge::
 	setvar VAR_TEMP_CHALLENGE_STATUS, 0
 	factory_init
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_SAVING
 	factory_set FACTORY_DATA_WIN_STREAK_ACTIVE, TRUE
 	frontier_set FRONTIER_DATA_PAUSED, FALSE
 	closemessage
-	delay 2
-	call Common_EventScript_SaveGame
 	setvar VAR_TEMP_CHALLENGE_STATUS, 255
-	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleFactoryLobby_EventScript_CancelChallengeSaveFailed
 	setvar VAR_0x8006, 0
 BattleFrontier_BattleFactoryLobby_EventScript_EnterChallenge::
 	special SavePlayerParty
@@ -360,10 +349,6 @@ BattleFrontier_BattleFactoryLobby_Text_LookForwardToNextVisit:
 BattleFrontier_BattleFactoryLobby_Text_WhichLevelMode:
 	.string "Which level do you wish to challenge?\n"
 	.string "Level 50 or Open Level?$"
-
-BattleFrontier_BattleFactoryLobby_Text_OkayToSaveBeforeChallenge:
-	.string "Before you begin your challenge,\n"
-	.string "I need to save the game. Is that okay?$"
 
 @ Unused
 BattleFrontier_BattleFactoryLobby_Text_WillHoldMonsForSafekeeping:

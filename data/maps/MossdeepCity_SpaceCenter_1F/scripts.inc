@@ -204,27 +204,27 @@ MossdeepCity_SpaceCenter_1F_EventScript_MagmaNote::
 	releaseall
 	end
 
-MossdeepCity_SpaceCenter_1F_EventScript_Grunt3::
-	trainerbattle_single TRAINER_JORDAN_SPACE_CENTER, MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro, MossdeepCity_SpaceCenter_1F_Text_Grunt3Defeat
-	msgbox MossdeepCity_SpaceCenter_1F_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
+MossdeepCity_SpaceCenter_1F_EventScript_Jordan::
+	trainerbattle_single TRAINER_JORDAN_SPACE_CENTER, MossdeepCity_SpaceCenter_1F_Text_JordanIntro, MossdeepCity_SpaceCenter_1F_Text_JordanDefeat
+	msgbox MossdeepCity_SpaceCenter_1F_Text_JordanPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 MossdeepCity_SpaceCenter_1F_EventScript_Grunt1::
-	trainerbattle_single TRAINER_JORDAN_SPACE_CENTER, MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro, MossdeepCity_SpaceCenter_1F_Text_Grunt1Defeat
+	trainerbattle_single TRAINER_WALKER_SPACE_CENTER, MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro, MossdeepCity_SpaceCenter_1F_Text_Grunt1Defeat
 	msgbox MossdeepCity_SpaceCenter_1F_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
 	end
 
-MossdeepCity_SpaceCenter_1F_EventScript_Grunt4::
-	trainerbattle_single TRAINER_JORDAN_SPACE_CENTER, MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro, MossdeepCity_SpaceCenter_1F_Text_Grunt4Defeat
-	msgbox MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE
+MossdeepCity_SpaceCenter_1F_EventScript_Gaetano::
+	trainerbattle_single TRAINER_GAETANO_SPACE_CENTER, MossdeepCity_SpaceCenter_1F_Text_GaetanoIntro, MossdeepCity_SpaceCenter_1F_Text_GaetanoDefeat
+	msgbox MossdeepCity_SpaceCenter_1F_Text_GaetanoPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-MossdeepCity_SpaceCenter_1F_EventScript_Grunt2::
+MossdeepCity_SpaceCenter_1F_EventScript_Courtney::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_GRUNT_SPACE_CENTER_1F, MossdeepCity_SpaceCenter_1F_EventScript_Grunt2Defeated
-	msgbox MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_JORDAN_SPACE_CENTER, MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat
+	goto_if_set FLAG_DEFEATED_GRUNT_SPACE_CENTER_1F, MossdeepCity_SpaceCenter_1F_EventScript_CourtneyDefeated
+	msgbox MossdeepCity_SpaceCenter_1F_Text_CourtneyIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_COURTNEY_SPACE_CENTER, MossdeepCity_SpaceCenter_1F_Text_CourtneyDefeat
 	setflag FLAG_DEFEATED_GRUNT_SPACE_CENTER_1F
 	copyobjectxytoperm LOCALID_STAIR_GRUNT
 	switch VAR_FACING
@@ -240,8 +240,8 @@ MossdeepCity_SpaceCenter_1F_EventScript_Grunt2::
 	release
 	end
 
-MossdeepCity_SpaceCenter_1F_EventScript_Grunt2Defeated::
-	msgbox MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle, MSGBOX_DEFAULT
+MossdeepCity_SpaceCenter_1F_EventScript_CourtneyDefeated::
+	msgbox MossdeepCity_SpaceCenter_1F_Text_CourtneyPostBattle, MSGBOX_DEFAULT
 	release
 	end
 
@@ -368,14 +368,14 @@ MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel:
 	.string "In the meantime, why don't you go\n"
 	.string "check out the town?$"
 
-MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro:
+MossdeepCity_SpaceCenter_1F_Text_JordanIntro:
 	.string "As promised, we've come for\n"
 	.string "the rocket fuel!$"
 
-MossdeepCity_SpaceCenter_1F_Text_Grunt3Defeat:
+MossdeepCity_SpaceCenter_1F_Text_JordanDefeat:
 	.string "Ran out of fuel…$"
 
-MossdeepCity_SpaceCenter_1F_Text_Grunt3PostBattle:
+MossdeepCity_SpaceCenter_1F_Text_JordanPostBattle:
 	.string "Don't think you're on a roll just\n"
 	.string "because you've beaten me!$"
 
@@ -391,29 +391,29 @@ MossdeepCity_SpaceCenter_1F_Text_Grunt1PostBattle:
 	.string "Okay, I get it already! The next time,\n"
 	.string "we'll come unannounced.$"
 
-MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro:
+MossdeepCity_SpaceCenter_1F_Text_GaetanoIntro:
 	.string "The rocket fuel the Space Center has\n"
 	.string "in storage--that's what we're after.\p"
 	.string "We mean to take every last bit of it!$"
 
-MossdeepCity_SpaceCenter_1F_Text_Grunt4Defeat:
+MossdeepCity_SpaceCenter_1F_Text_GaetanoDefeat:
 	.string "Please, can you spare some fuel?\n"
 	.string "Even a chintzy cup will do!$"
 
-MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle:
+MossdeepCity_SpaceCenter_1F_Text_GaetanoPostBattle:
 	.string "What are we going to do with\n"
 	.string "the rocket fuel?\p"
 	.string "How would I know?\n"
 	.string "Ask our leader upstairs!$"
 
-MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro:
+MossdeepCity_SpaceCenter_1F_Text_CourtneyIntro:
 	.string "Our leader said no one, but no one,\n"
 	.string "gets past me!$"
 
-MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat:
+MossdeepCity_SpaceCenter_1F_Text_CourtneyDefeat:
 	.string "Ack! Ack! Aaack!$"
 
-MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle:
+MossdeepCity_SpaceCenter_1F_Text_CourtneyPostBattle:
 	.string "Please, tell our leader that\n"
 	.string "I never abandoned my post.\l"
 	.string "That I stayed to the bitter end…$"

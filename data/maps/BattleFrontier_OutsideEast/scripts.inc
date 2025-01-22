@@ -71,7 +71,8 @@ BattleFrontier_OutsideEast_EventScript_Zigzagoon::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_ZIGZAGOON, CRY_MODE_NORMAL
+	playmoncry SPECIES_BATTLE_FRONTIER_OUTSIDE, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, SPECIES_BATTLE_FRONTIER_OUTSIDE
 	msgbox BattleFrontier_OutsideEast_Text_ZigzagoonLooksVacant, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -125,11 +126,11 @@ BattleFrontier_OutsideEast_EventScript_WaterSudowoodo::
 	msgbox gText_Sudowoodo_Attacked, MSGBOX_DEFAULT
 	closemessage
 	waitse
-	playmoncry SPECIES_SUDOWOODO, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_FAKE_TREE, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
 	setvar VAR_LAST_TALKED, LOCALID_SUDOWOODO
-	setwildbattle SPECIES_SUDOWOODO, 40
+	setwildbattle SPECIES_FAKE_TREE, POSTGAME_LEVEL
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	dowildbattle
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
@@ -306,7 +307,7 @@ BattleFrontier_OutsideEast_Text_BelieveInYouBuddy:
 	.string "tasty treats you like if you win!$"
 
 BattleFrontier_OutsideEast_Text_ZigzagoonLooksVacant:
-	.string "Zigzagoon looks vacant…$"
+	.string "{STR_VAR_1} looks vacant…$"
 
 BattleFrontier_OutsideEast_Text_PeopleCallMeBusybody:
 	.string "People call me a busybody,\n"

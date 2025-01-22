@@ -109,19 +109,16 @@ void FieldGetPlayerInput(struct FieldInput *input, u16 newKeys, u16 heldKeys)
 
     if ((tileTransitionState == T_TILE_CENTER && forcedMove == FALSE) || tileTransitionState == T_NOT_MOVING)
     {
-        if (GetPlayerSpeed() != PLAYER_SPEED_FASTEST)
-        {
-            if (newKeys & START_BUTTON)
-                input->pressedStartButton = TRUE;
-            if (newKeys & SELECT_BUTTON)
-                input->pressedSelectButton = TRUE;
-            if (newKeys & A_BUTTON)
-                input->pressedAButton = TRUE;
-            if (newKeys & B_BUTTON)
-                input->pressedBButton = TRUE;
-            if (newKeys & R_BUTTON && !FlagGet(DN_FLAG_SEARCHING))
-                input->pressedRButton = TRUE;
-        }
+        if (newKeys & START_BUTTON)
+            input->pressedStartButton = TRUE;
+        if (newKeys & SELECT_BUTTON)
+            input->pressedSelectButton = TRUE;
+        if (newKeys & A_BUTTON)
+            input->pressedAButton = TRUE;
+        if (newKeys & B_BUTTON)
+            input->pressedBButton = TRUE;
+        if (newKeys & R_BUTTON && !FlagGet(DN_FLAG_SEARCHING))
+            input->pressedRButton = TRUE;
 
         if (heldKeys & (DPAD_UP | DPAD_DOWN | DPAD_LEFT | DPAD_RIGHT))
         {
@@ -563,9 +560,7 @@ static const u8 *GetInteractedMetatileScript(struct MapPosition *position, u8 me
 
 static const u8 *GetInteractedWaterScript(struct MapPosition *unused1, u8 metatileBehavior, u8 direction)
 {
-    if (IsFieldMoveUnlocked(FIELD_MOVE_SURF) && PartyHasMonWithSurf() == TRUE && IsPlayerFacingSurfableFishableWater() == TRUE
-     && CheckFollowerNPCFlag(FOLLOWER_NPC_FLAG_CAN_SURF)
-     )
+    if (FlagGet(FLAG_BADGE05_GET) == TRUE && IsPlayerFacingSurfableFishableWater() == TRUE && CheckFollowerNPCFlag(FOLLOWER_NPC_FLAG_CAN_SURF))
         return EventScript_UseSurf;
 
     if (MetatileBehavior_IsWaterfall(metatileBehavior) == TRUE

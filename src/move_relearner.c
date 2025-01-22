@@ -722,6 +722,12 @@ static void DoMoveRelearnerMain(void)
             }
 
             FreeMoveRelearnerResources();
+            if (FlagGet(FLAG_PARTY_MOVES)) {
+                CB2_ReturnToPartyMenuFromSummaryScreen();
+                FlagClear(FLAG_PARTY_MOVES);
+            } else {
+                SetMainCallback2(CB2_ReturnToField);
+            }
         }
         break;
     case MENU_STATE_FADE_FROM_SUMMARY_SCREEN:

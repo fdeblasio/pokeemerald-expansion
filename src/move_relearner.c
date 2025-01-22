@@ -603,7 +603,7 @@ static void DoMoveRelearnerMain(void)
             }
             else if (selection == MENU_B_PRESSED || selection == 1)
             {
-                sMoveRelearnerStruct->state = MENU_STATE_PRINT_STOP_TEACHING;
+                sMoveRelearnerStruct->state = MENU_STATE_CHOOSE_SETUP_STATE;
             }
         }
         break;
@@ -708,6 +708,12 @@ static void DoMoveRelearnerMain(void)
             }
 
             FreeMoveRelearnerResources();
+            if (FlagGet(FLAG_PARTY_MOVES)) {
+                CB2_ReturnToPartyMenuFromSummaryScreen();
+                FlagClear(FLAG_PARTY_MOVES);
+            } else {
+                SetMainCallback2(CB2_ReturnToField);
+            }
         }
         break;
     case MENU_STATE_FADE_FROM_SUMMARY_SCREEN:
@@ -735,7 +741,7 @@ static void DoMoveRelearnerMain(void)
             {
                 u16 moveId = GetMonData(&gPlayerParty[sMoveRelearnerStruct->partyMon], MON_DATA_MOVE1 + sMoveRelearnerStruct->moveSlot);
                 u8 originalPP = GetMonData(&gPlayerParty[sMoveRelearnerStruct->partyMon], MON_DATA_PP1 + sMoveRelearnerStruct->moveSlot);
-
+                
                 StringCopy(gStringVar3, GetMoveName(moveId));
                 SetMonMoveSlot(&gPlayerParty[sMoveRelearnerStruct->partyMon], GetCurrentSelectedMove(), sMoveRelearnerStruct->moveSlot);
                 u8 newPP = GetMonData(&gPlayerParty[sMoveRelearnerStruct->partyMon], MON_DATA_PP1 + sMoveRelearnerStruct->moveSlot);

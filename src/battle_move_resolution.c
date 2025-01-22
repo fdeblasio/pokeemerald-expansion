@@ -1266,9 +1266,9 @@ static enum CancelerResult CancelerMoveFailure(struct BattleCalcValues *cv)
     case EFFECT_PRESENT:
     {
         u32 rand = RandomUniform(RNG_PRESENT, 0, 0xFF);
-        if (rand < 102)
-            gBattleStruct->presentBasePower = 40;
-        else if (rand < 178)
+        if (rand < 51)
+            gBattleStruct->presentBasePower = 60;
+        else if (rand < 153)
             gBattleStruct->presentBasePower = 80;
         else if (rand < 204)
             gBattleStruct->presentBasePower = 120;

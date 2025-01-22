@@ -45,6 +45,15 @@ const u32 gBattleEnvironmentTilemap_Building[] = INCBIN_U32("graphics/battle_env
     .palette = gBattleEnvironmentPalette_##background,          \
 }
 
+#define BUILDING_BACKGROUND(Tileset, Palette)               \
+{                                                           \
+    .tileset = gBattleEnvironmentTiles_##Tileset,           \
+    .tilemap = gBattleEnvironmentTilemap_##Tileset,         \
+    .entryTileset = gBattleEnvironmentAnimTiles_Building,   \
+    .entryTilemap = gBattleEnvironmentAnimTilemap_Building, \
+    .palette = gBattleEnvironmentPalette_##Palette,         \
+}
+
 const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] =
 {
     [BATTLE_ENVIRONMENT_GRASS] =
@@ -162,134 +171,82 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
     #endif
         .secretPowerEffect = MOVE_EFFECT_PARALYSIS,
         .camouflageType = B_CAMOUFLAGE_TYPES >= GEN_4 ? TYPE_GROUND : TYPE_NORMAL,
-        .background =
-        {
-            .tileset = gBattleEnvironmentTiles_Building,
-            .tilemap = gBattleEnvironmentTilemap_Building,
-            .entryTileset = gBattleEnvironmentAnimTiles_Building,
-            .entryTilemap = gBattleEnvironmentAnimTilemap_Building,
-            .palette = gBattleEnvironmentPalette_Plain,
-        },
+        .background = BUILDING_BACKGROUND(Building, Plain)
     },
 
     [BATTLE_ENVIRONMENT_FRONTIER] =
     {
-        .background =
-        {
-            .tileset = gBattleEnvironmentTiles_Building,
-            .tilemap = gBattleEnvironmentTilemap_Building,
-            .entryTileset = gBattleEnvironmentAnimTiles_Building,
-            .entryTilemap = gBattleEnvironmentAnimTilemap_Building,
-            .palette = gBattleEnvironmentPalette_Frontier,
-        },
+        .background = BUILDING_BACKGROUND(Building, Frontier)
     },
 
     [BATTLE_ENVIRONMENT_GYM] =
     {
-        .background =
-        {
-            .tileset = gBattleEnvironmentTiles_Building,
-            .tilemap = gBattleEnvironmentTilemap_Building,
-            .entryTileset = gBattleEnvironmentAnimTiles_Building,
-            .entryTilemap = gBattleEnvironmentAnimTilemap_Building,
-            .palette = gBattleEnvironmentPalette_BuildingGym,
-        },
+        .background = BUILDING_BACKGROUND(Building, BuildingGym)
     },
 
     [BATTLE_ENVIRONMENT_LEADER] =
     {
-        .background =
-        {
-            .tileset = gBattleEnvironmentTiles_Building,
-            .tilemap = gBattleEnvironmentTilemap_Building,
-            .entryTileset = gBattleEnvironmentAnimTiles_Building,
-            .entryTilemap = gBattleEnvironmentAnimTilemap_Building,
-            .palette = gBattleEnvironmentPalette_BuildingLeader,
-        },
+        .background = BUILDING_BACKGROUND(Building, BuildingLeader)
     },
 
     [BATTLE_ENVIRONMENT_MAGMA] =
     {
-        .background =
-        {
-            .tileset = gBattleEnvironmentTiles_Stadium,
-            .tilemap = gBattleEnvironmentTilemap_Stadium,
-            .entryTileset = gBattleEnvironmentAnimTiles_Building,
-            .entryTilemap = gBattleEnvironmentAnimTilemap_Building,
-            .palette = gBattleEnvironmentPalette_StadiumMagma,
-        },
+        .background = BUILDING_BACKGROUND(Stadium, StadiumMagma)
     },
 
     [BATTLE_ENVIRONMENT_AQUA] =
     {
-        .background =
-        {
-            .tileset = gBattleEnvironmentTiles_Stadium,
-            .tilemap = gBattleEnvironmentTilemap_Stadium,
-            .entryTileset = gBattleEnvironmentAnimTiles_Building,
-            .entryTilemap = gBattleEnvironmentAnimTilemap_Building,
-            .palette = gBattleEnvironmentPalette_StadiumAqua,
-        },
+        .background = BUILDING_BACKGROUND(Stadium, StadiumAqua)
     },
 
     [BATTLE_ENVIRONMENT_SIDNEY] =
     {
-        .background =
-        {
-            .tileset = gBattleEnvironmentTiles_Stadium,
-            .tilemap = gBattleEnvironmentTilemap_Stadium,
-            .entryTileset = gBattleEnvironmentAnimTiles_Building,
-            .entryTilemap = gBattleEnvironmentAnimTilemap_Building,
-            .palette = gBattleEnvironmentPalette_StadiumSidney,
-        },
+        .background = BUILDING_BACKGROUND(Stadium, StadiumSidney)
     },
 
     [BATTLE_ENVIRONMENT_PHOEBE] =
     {
-        .background =
-        {
-            .tileset = gBattleEnvironmentTiles_Stadium,
-            .tilemap = gBattleEnvironmentTilemap_Stadium,
-            .entryTileset = gBattleEnvironmentAnimTiles_Building,
-            .entryTilemap = gBattleEnvironmentAnimTilemap_Building,
-            .palette = gBattleEnvironmentPalette_StadiumPhoebe,
-        },
+        .background = BUILDING_BACKGROUND(Stadium, StadiumPhoebe)
     },
 
     [BATTLE_ENVIRONMENT_GLACIA] =
     {
-        .background =
-        {
-            .tileset = gBattleEnvironmentTiles_Stadium,
-            .tilemap = gBattleEnvironmentTilemap_Stadium,
-            .entryTileset = gBattleEnvironmentAnimTiles_Building,
-            .entryTilemap = gBattleEnvironmentAnimTilemap_Building,
-            .palette = gBattleEnvironmentPalette_StadiumGlacia,
-        },
+        .background = BUILDING_BACKGROUND(Stadium, StadiumGlacia)
     },
 
     [BATTLE_ENVIRONMENT_DRAKE] =
     {
-        .background =
-        {
-            .tileset = gBattleEnvironmentTiles_Stadium,
-            .tilemap = gBattleEnvironmentTilemap_Stadium,
-            .entryTileset = gBattleEnvironmentAnimTiles_Building,
-            .entryTilemap = gBattleEnvironmentAnimTilemap_Building,
-            .palette = gBattleEnvironmentPalette_StadiumDrake,
-        },
+        .background = BUILDING_BACKGROUND(Stadium, StadiumDrake)
     },
 
     [BATTLE_ENVIRONMENT_CHAMPION] =
     {
-        .background =
-        {
-            .tileset = gBattleEnvironmentTiles_Stadium,
-            .tilemap = gBattleEnvironmentTilemap_Stadium,
-            .entryTileset = gBattleEnvironmentAnimTiles_Building,
-            .entryTilemap = gBattleEnvironmentAnimTilemap_Building,
-            .palette = gBattleEnvironmentPalette_StadiumWallace,
-        },
+        .background = BUILDING_BACKGROUND(Stadium, StadiumWallace)
+    },
+
+    [BATTLE_ENVIRONMENT_DARK] =
+    {
+        .background = BUILDING_BACKGROUND(Stadium, StadiumDark)
+    },
+
+    [BATTLE_ENVIRONMENT_FLYING] =
+    {
+        .background = BUILDING_BACKGROUND(Stadium, StadiumFlying)
+    },
+
+    [BATTLE_ENVIRONMENT_GRASS] =
+    {
+        .background = BUILDING_BACKGROUND(Stadium, StadiumGrass)
+    },
+
+    [BATTLE_ENVIRONMENT_ICE] =
+    {
+        .background = BUILDING_BACKGROUND(Stadium, StadiumIce)
+    },
+
+    [BATTLE_ENVIRONMENT_ROCK] =
+    {
+        .background = BUILDING_BACKGROUND(Stadium, StadiumRock)
     },
 
     [BATTLE_ENVIRONMENT_GROUDON] =
@@ -318,14 +275,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_RAYQUAZA] =
     {
-        .background =
-        {
-            .tileset = gBattleEnvironmentTiles_Rayquaza,
-            .tilemap = gBattleEnvironmentTilemap_Rayquaza,
-            .entryTileset = gBattleEnvironmentAnimTiles_Rayquaza,
-            .entryTilemap = gBattleEnvironmentAnimTilemap_Rayquaza,
-            .palette = gBattleEnvironmentPalette_Rayquaza,
-        },
+        .background = ENVIRONMENT_BACKGROUND(Rayquaza),
     },
 
     [BATTLE_ENVIRONMENT_SOARING] =

@@ -363,7 +363,7 @@ enum BattleWeather
 #define B_WEATHER_LOW_LIGHT     (B_WEATHER_FOG | B_WEATHER_ICY_ANY | B_WEATHER_RAIN | B_WEATHER_SANDSTORM)
 #define B_WEATHER_PRIMAL_ANY    (B_WEATHER_RAIN_PRIMAL | B_WEATHER_SUN_PRIMAL | B_WEATHER_STRONG_WINDS)
 
-// Explicit numbers until frostbite because those shouldn't be shifted 
+// Explicit numbers until frostbite because those shouldn't be shifted
 enum __attribute__((packed)) MoveEffect
 {
     MOVE_EFFECT_NONE = 0,
@@ -533,6 +533,11 @@ enum BattleEnvironments
     BATTLE_ENVIRONMENT_GLACIA,
     BATTLE_ENVIRONMENT_DRAKE,
     BATTLE_ENVIRONMENT_CHAMPION,
+    BATTLE_ENVIRONMENT_DARK,
+    BATTLE_ENVIRONMENT_FLYING,
+    BATTLE_ENVIRONMENT_GRASS,
+    BATTLE_ENVIRONMENT_ICE,
+    BATTLE_ENVIRONMENT_ROCK,
     BATTLE_ENVIRONMENT_GROUDON,
     BATTLE_ENVIRONMENT_KYOGRE,
     BATTLE_ENVIRONMENT_RAYQUAZA,

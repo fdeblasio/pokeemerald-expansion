@@ -129,7 +129,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .levelUpLearnset = sThwackeyLevelUpLearnset,
         .teachableLearnset = sThwackeyTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_RILLABOOM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_RILLABOOM}),
     },
 
     [SPECIES_RILLABOOM] =
@@ -381,7 +381,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .levelUpLearnset = sRabootLevelUpLearnset,
         .teachableLearnset = sRabootTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_CINDERACE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_CINDERACE}),
     },
 
     [SPECIES_CINDERACE] =
@@ -636,7 +636,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .levelUpLearnset = sDrizzileLevelUpLearnset,
         .teachableLearnset = sDrizzileTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_INTELEON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_INTELEON}),
     },
 
     [SPECIES_INTELEON] =
@@ -898,11 +898,11 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_ROOKIDEE
     [SPECIES_ROOKIDEE] =
     {
-        .baseHP        = 38,
-        .baseAttack    = 47,
+        .baseHP        = 40,
+        .baseAttack    = 50,
         .baseDefense   = 35,
-        .baseSpeed     = 57,
-        .baseSpAttack  = 33,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 35,
         .baseSpDefense = 35,
         .types = MON_TYPES(TYPE_FLYING),
         .catchRate = 255,
@@ -971,11 +971,11 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 
     [SPECIES_CORVISQUIRE] =
     {
-        .baseHP        = 68,
-        .baseAttack    = 67,
+        .baseHP        = 70,
+        .baseAttack    = 70,
         .baseDefense   = 55,
-        .baseSpeed     = 77,
-        .baseSpAttack  = 43,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 45,
         .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_FLYING),
         .catchRate = 120,
@@ -1044,11 +1044,11 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 
     [SPECIES_CORVIKNIGHT] =
     {
-        .baseHP        = 98,
-        .baseAttack    = 87,
+        .baseHP        = 100,
+        .baseAttack    = 90,
         .baseDefense   = 105,
-        .baseSpeed     = 67,
-        .baseSpAttack  = 53,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 55,
         .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_FLYING, TYPE_STEEL),
         .catchRate = 45,
@@ -1758,10 +1758,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 
     [SPECIES_DUBWOOL] =
     {
-        .baseHP        = 72,
-        .baseAttack    = 80,
+        .baseHP        = 75,
+        .baseAttack    = 90,
         .baseDefense   = 100,
-        .baseSpeed     = 88,
+        .baseSpeed     = 90,
         .baseSpAttack  = 60,
         .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_NORMAL),
@@ -2793,7 +2793,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = 120,
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_GRASS, TYPE_DRAGON),
-        .catchRate = 10,
+        .catchRate = 30,
         .expYield = 270,
         .evYield_SpAttack = 3,
         .genderRatio = PERCENT_FEMALE(50),
@@ -3223,10 +3223,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_ARROKUDA
     [SPECIES_ARROKUDA] =
     {
-        .baseHP        = 41,
-        .baseAttack    = 63,
+        .baseHP        = 45,
+        .baseAttack    = 65,
         .baseDefense   = 40,
-        .baseSpeed     = 66,
+        .baseSpeed     = 70,
         .baseSpAttack  = 40,
         .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_WATER),
@@ -3288,10 +3288,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 
     [SPECIES_BARRASKEWDA] =
     {
-        .baseHP        = 61,
-        .baseAttack    = 123,
+        .baseHP        = 65,
+        .baseAttack    = 125,
         .baseDefense   = 60,
-        .baseSpeed     = 136,
+        .baseSpeed     = 140,
         .baseSpAttack  = 60,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_WATER),
@@ -3354,10 +3354,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     [SPECIES_TOXEL] =
     {
         .baseHP        = 40,
-        .baseAttack    = 38,
+        .baseAttack    = 40,
         .baseDefense   = 35,
         .baseSpeed     = 40,
-        .baseSpAttack  = 54,
+        .baseSpAttack  = 55,
         .baseSpDefense = 35,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_POISON),
         .catchRate = 75,
@@ -3420,10 +3420,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     [SPECIES_TOXTRICITY_AMPED] =
     {
         .baseHP        = 75,
-        .baseAttack    = 98,
+        .baseAttack    = 100,
         .baseDefense   = 70,
         .baseSpeed     = 75,
-        .baseSpAttack  = 114,
+        .baseSpAttack  = 115,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_POISON),
         .catchRate = 45,
@@ -3486,10 +3486,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     [SPECIES_TOXTRICITY_AMPED_GMAX] =
     {
         .baseHP        = 75,
-        .baseAttack    = 98,
+        .baseAttack    = 100,
         .baseDefense   = 70,
         .baseSpeed     = 75,
-        .baseSpAttack  = 114,
+        .baseSpAttack  = 115,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_POISON),
         .catchRate = 45,
@@ -3540,10 +3540,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     [SPECIES_TOXTRICITY_LOW_KEY] =
     {
         .baseHP        = 75,
-        .baseAttack    = 98,
+        .baseAttack    = 100,
         .baseDefense   = 70,
         .baseSpeed     = 75,
-        .baseSpAttack  = 114,
+        .baseSpAttack  = 115,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_POISON),
         .catchRate = 45,
@@ -3605,10 +3605,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     [SPECIES_TOXTRICITY_LOW_KEY_GMAX] =
     {
         .baseHP        = 75,
-        .baseAttack    = 98,
+        .baseAttack    = 100,
         .baseDefense   = 70,
         .baseSpeed     = 75,
-        .baseSpAttack  = 114,
+        .baseSpAttack  = 115,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_POISON),
         .catchRate = 45,
@@ -3873,7 +3873,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_LIMBER, ABILITY_NONE, ABILITY_TECHNICIAN },
+        .abilities = { ABILITY_LIMBER, ABILITY_SUCTION_CUPS, ABILITY_TECHNICIAN },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Clobbopus"),
         .cryId = CRY_CLOBBOPUS,
@@ -3924,9 +3924,9 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     [SPECIES_GRAPPLOCT] =
     {
         .baseHP        = 80,
-        .baseAttack    = 118,
+        .baseAttack    = 125,
         .baseDefense   = 90,
-        .baseSpeed     = 42,
+        .baseSpeed     = 50,
         .baseSpAttack  = 70,
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_FIGHTING),
@@ -3938,7 +3938,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_LIMBER, ABILITY_NONE, ABILITY_TECHNICIAN },
+        .abilities = { ABILITY_LIMBER, ABILITY_SUCTION_CUPS, ABILITY_TECHNICIAN },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Grapploct"),
         .cryId = CRY_GRAPPLOCT,
@@ -4309,7 +4309,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .levelUpLearnset = sHatennaLevelUpLearnset,
         .teachableLearnset = sHatennaTeachableLearnset,
         .eggMoveLearnset = sHatennaEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_HATTREM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_HATTREM}),
     },
 
     [SPECIES_HATTREM] =
@@ -4372,7 +4372,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .levelUpLearnset = sHattremLevelUpLearnset,
         .teachableLearnset = sHattremTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_HATTERENE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_HATTERENE}),
     },
 
     [SPECIES_HATTERENE] =
@@ -4561,7 +4561,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .levelUpLearnset = sImpidimpLevelUpLearnset,
         .teachableLearnset = sImpidimpTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_MORGREM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_MORGREM}),
     },
 
     [SPECIES_MORGREM] =
@@ -4625,7 +4625,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .levelUpLearnset = sMorgremLevelUpLearnset,
         .teachableLearnset = sMorgremTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_GRIMMSNARL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_GRIMMSNARL}),
     },
 
 
@@ -5373,7 +5373,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .levelUpLearnset = sSnomLevelUpLearnset,
         .teachableLearnset = sSnomTeachableLearnset,
         .eggMoveLearnset = sSnomEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_FROSMOTH, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD},{IF_TIME, TIME_NIGHT})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 21, SPECIES_FROSMOTH}),
     },
 
     [SPECIES_FROSMOTH] =
@@ -5381,9 +5381,9 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseHP        = 70,
         .baseAttack    = 65,
         .baseDefense   = 60,
-        .baseSpeed     = 65,
+        .baseSpeed     = 75,
         .baseSpAttack  = 125,
-        .baseSpDefense = 90,
+        .baseSpDefense = 100,
         .types = MON_TYPES(TYPE_ICE, TYPE_BUG),
         .catchRate = 75,
         .expYield = 166,
@@ -5642,7 +5642,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = 105,
         .baseSpDefense = 95,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_NORMAL),
-        .catchRate = 30,
+        .catchRate = 45,
         .expYield = 166,
         .evYield_SpAttack = 2,
         .genderRatio = MON_MALE,
@@ -5706,7 +5706,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = 95,
         .baseSpDefense = 105,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_NORMAL),
-        .catchRate = 30,
+        .catchRate = 45,
         .expYield = 166,
         .evYield_SpDefense = 2,
         .genderRatio = MON_FEMALE,
@@ -5907,8 +5907,8 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_MINERAL),
-        .abilities = { ABILITY_SHEER_FORCE, ABILITY_NONE, ABILITY_HEAVY_METAL },
-        .bodyColor = BODY_COLOR_YELLOW,
+        .abilities = { ABILITY_SHEER_FORCE, ABILITY_STURDY, ABILITY_HEAVY_METAL },
+        .bodyColor = BODY_COLOR_ORANGE,
         .speciesName = _("Cufant"),
         .cryId = CRY_CUFANT,
         .natDexNum = NATIONAL_DEX_CUFANT,
@@ -5973,7 +5973,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_MINERAL),
-        .abilities = { ABILITY_SHEER_FORCE, ABILITY_NONE, ABILITY_HEAVY_METAL },
+        .abilities = { ABILITY_SHEER_FORCE, ABILITY_STURDY, ABILITY_HEAVY_METAL },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Copperajah"),
         .cryId = CRY_COPPERAJAH,
@@ -6483,7 +6483,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = 125,
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_STEEL, TYPE_DRAGON),
-        .catchRate = 10,
+        .catchRate = 30,
         .expYield = 300,
         .evYield_Defense = 3,
         .genderRatio = PERCENT_FEMALE(50),
@@ -6603,7 +6603,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .levelUpLearnset = sDreepyLevelUpLearnset,
         .teachableLearnset = sDreepyTeachableLearnset,
         .eggMoveLearnset = sDreepyEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_DRAKLOAK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_DRAKLOAK}),
     },
 
     [SPECIES_DRAKLOAK] =
@@ -6667,7 +6667,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .levelUpLearnset = sDrakloakLevelUpLearnset,
         .teachableLearnset = sDrakloakTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_DRAGAPULT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_DRAGAPULT}),
     },
 
     [SPECIES_DRAGAPULT] =
@@ -6745,7 +6745,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = 80,
         .baseSpDefense = 115,
         .types = MON_TYPES(TYPE_FAIRY),
-        .catchRate = 10,
+        .catchRate = 30,
         .expYield = 335,
         .evYield_Speed = 3,
         .genderRatio = MON_GENDERLESS,
@@ -6812,7 +6812,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = 80,
         .baseSpDefense = 115,
         .types = MON_TYPES(TYPE_FAIRY, TYPE_STEEL),
-        .catchRate = 10,
+        .catchRate = 30,
         .expYield = 360,
         .evYield_Speed = 3,
         .genderRatio = MON_GENDERLESS,
@@ -6882,7 +6882,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = 80,
         .baseSpDefense = 115,
         .types = MON_TYPES(TYPE_FIGHTING),
-        .catchRate = 10,
+        .catchRate = 30,
         .expYield = 335,
         .evYield_Speed = 3,
         .genderRatio = MON_GENDERLESS,
@@ -6950,7 +6950,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = 80,
         .baseSpDefense = P_UPDATED_STATS >= GEN_9 ? 140 : 145,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_STEEL),
-        .catchRate = 10,
+        .catchRate = 30,
         .expYield = 360,
         .evYield_Speed = 3,
         .genderRatio = MON_GENDERLESS,
@@ -7149,7 +7149,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = 53,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_FIGHTING),
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = 77,
         .evYield_Attack = 1,
         .genderRatio = PERCENT_FEMALE(12.5),
@@ -7217,7 +7217,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = 63,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_DARK),
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = 275,
         .evYield_Attack = 3,
         .genderRatio = PERCENT_FEMALE(12.5),
@@ -7285,7 +7285,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = 63,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_DARK),
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = 275,
         .evYield_Attack = 3,
         .genderRatio = PERCENT_FEMALE(12.5),
@@ -7344,7 +7344,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = 63,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_WATER),
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = 275,
         .evYield_Attack = 3,
         .genderRatio = PERCENT_FEMALE(12.5),
@@ -7412,7 +7412,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = 63,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_WATER),
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = 275,
         .evYield_Attack = 3,
         .genderRatio = PERCENT_FEMALE(12.5),
@@ -7463,7 +7463,6 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_KUBFU
 
-
 #if P_FAMILY_ZARUDE
     [SPECIES_ZARUDE] =
     {
@@ -7474,7 +7473,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = 70,
         .baseSpDefense = 95,
         .types = MON_TYPES(TYPE_DARK, TYPE_GRASS),
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = 300,
         .evYield_Attack = 3,
         .genderRatio = MON_GENDERLESS,
@@ -7540,7 +7539,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = 70,
         .baseSpDefense = 95,
         .types = MON_TYPES(TYPE_DARK, TYPE_GRASS),
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = 300,
         .evYield_Attack = 3,
         .genderRatio = MON_GENDERLESS,
@@ -7600,7 +7599,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = 100,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_ELECTRIC),
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = 290,
         .evYield_Speed = 3,
         .genderRatio = MON_GENDERLESS,
@@ -7668,7 +7667,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = 100,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_DRAGON),
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = 290,
         .evYield_HP = 3,
         .genderRatio = MON_GENDERLESS,
@@ -7736,7 +7735,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = 65,
         .baseSpDefense = 110,
         .types = MON_TYPES(TYPE_ICE),
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = 290,
         .evYield_Attack = 3,
         .genderRatio = MON_GENDERLESS,
@@ -7802,7 +7801,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = 145,
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_GHOST),
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = 290,
         .evYield_SpAttack = 3,
         .genderRatio = MON_GENDERLESS,
@@ -7869,7 +7868,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = 80,
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_GRASS),
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = 250,
         .evYield_HP = 3,
         .genderRatio = MON_GENDERLESS,
@@ -7937,7 +7936,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = 85,
         .baseSpDefense = 130,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_ICE),
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = 340,
         .evYield_Attack = 3,
         .genderRatio = MON_GENDERLESS,
@@ -8005,7 +8004,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = 165,
         .baseSpDefense = 100,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_GHOST),
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = 340,
         .evYield_SpAttack = 3,
         .genderRatio = MON_GENDERLESS,
@@ -8076,7 +8075,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = 135,
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_FAIRY, TYPE_FLYING),
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = 116,
         .evYield_SpAttack = 3,
         .genderRatio = MON_FEMALE,
@@ -8144,7 +8143,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = 135,
         .baseSpDefense = 100,
         .types = MON_TYPES(TYPE_FAIRY, TYPE_FLYING),
-        .catchRate = 3,
+        .catchRate = 30,
         .expYield = 116,
         .evYield_SpAttack = 3,
         .genderRatio = MON_FEMALE,

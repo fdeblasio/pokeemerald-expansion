@@ -82,7 +82,6 @@ Please consider [crediting all contributors](CREDITS.md) involved in the project
             - Leaf, Ice and Thunder Stones may also be used.
         - Inkay just needs level 30 to evolve.
             - You can't physically have both the RTC and gyroscope, so we skip this requirement.
-        - Sylveon uses Gen8+'s evolution method (friendship + Fairy Move).
         - Option to use hold evolution items directly like stones.
     - Hidden Abilities.
         - Available via Ability Patch.
@@ -1086,7 +1085,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Pichu:
     - Held item: None->Light Ball
-    - Can also evolve at level 12
+    - Evolution: friendship->12
 
 - Pikachu
     - Held item: Light Ball: 5%->100%
@@ -1099,7 +1098,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Volt Tackle by level up
 
 - Cleffa (not in main game):
-    - Can also evolve at level 12
+    - Evolution: friendship->12
     - Learns Fairy Wind by level up
 
 - Clefairy/Clefable (not in main game):
@@ -1131,7 +1130,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Alolan Meowth (postgame):
     - Def: 35->40
     - SpA: 50->55
-    - Can also evolve at level 28
+    - Evolution: friendship->28
     - Learns Pursuit and Thief by level up
     - Learns Cut by TM
 
@@ -1158,7 +1157,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Cut by TM
 
 - Igglybuff:
-    - Can also evolve at level 12
+    - Evolution: friendship->12
 
 - Psyduck:
     - Type: Water->Water/Psychic
@@ -1173,7 +1172,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Gust by level up
 
 - Golbat:
-    - Can also evolve at level 33
+    - Evolution: friendship->33
     - Learns Gust by level up
 
 - Crobat:
@@ -1291,7 +1290,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Chansey (postgame):
     - Held item: Lucky Punch: 50%->100%
-    - Can also evolve at level 36
+    - Evolution: friendship->36
     - Learns Revival Blessing by level up
 
 - Blissey (postgame):
@@ -1436,7 +1435,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Dual Wingbeat, Double-Edge, Head Smash, and Brave Bird by level up
 
 - Munchlax (not in main game):
-    - Can also evolve at level 20
+    - Evolution: friendship->20
     - Learns Gastro Acid and Power-Up Punch by Egg Move
 
 - Snorlax (not in main game):
@@ -1477,7 +1476,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Togepi (postgame):
     - Ability: Hustle->Early Bird
-    - Can also evolve at level 16
+    - Evolution: friendship->16
     - Learns Fairy Wind, Draining Kiss, and Disarming Voice by level up
 
 - Togetic (postgame):
@@ -1499,7 +1498,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Tail Glow by level up
 
 - Azurill:
-    - Can also evolve at level 10
+    - Evolution: friendship->10
     - Type: Normal/Fairy->Water/Fairy
     - Gender Ratio: 25/75->50/50
     - Catch rate: 150->255
@@ -1785,7 +1784,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Tinted Lens->Oblivious
 
 - Budew:
-    - Can also evolve at level 13
+    - Evolution: friendship->13
     - Gender Ratio: 50/50->75/25
 
 - Roselia/Roserade:
@@ -1885,7 +1884,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Earth Power by TM
 
 - Chingling:
-    - Can also evolve at level 19
+    - Evolution: friendship->19
 
 - Absol:
     - Hidden Ability: Justified->Sharpness
@@ -1974,7 +1973,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learn Bubble by level up
 
 - Buneary:
-    - Can also evolve at level 23
+    - Evolution: friendship->23
 
 - Glameow:
     - Evolution: 38->34
@@ -2005,7 +2004,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learn Stomping Tantrum and Earthquake by level up
 
 - Riolu:
-    - Can also evolve at level 20
+    - Evolution: friendship->20
 
 - Hippopotas/Hippowdon:
     - Learn Bulldoze, Stomping Tantrum, Scorching Sands, and High Horsepower by level up
@@ -2096,7 +2095,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - SpD: 43->45
     - Spe: 72->75
     - Abilities: Unaware/Klutz/Simple->Unaware/Simple/Synchronize
-    - Can also evolve at level 24
+    - Evolution: friendship->24
     - Learns Psybeam and Psychic Noise by level up
 
 - Swoobat:
@@ -2119,7 +2118,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Base experience: 425->500
 
 - Swadloon:
-    - Can also evolve at level 30
+    - Evolution: friendship->30
 
 - Scolipede:
     - Learns Coil by level up
@@ -2553,7 +2552,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learn Mud-Slap, Mud Shot, Hex, and Scorching Sands by level up
 
 - Type: Null:
-    - Can also evolve at level 45
+    - Evolution: friendship->45
 
 - Turtonator:
     - Learns Dragon Breath by Egg Move
@@ -2664,7 +2663,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Evolution: 42->38
 
 - Snom:
-    - Can also evolve at level 21
+    - Evolution: friendship->21
 
 - Frosmoth:
     - SpD: 90->100

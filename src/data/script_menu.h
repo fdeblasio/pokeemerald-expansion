@@ -105,44 +105,44 @@ static const struct MenuAction MultichoiceList_LevelMode[] =
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q1[] =
 {
-    {COMPOUND_STRING("Taillow")},
-    {COMPOUND_STRING("Poochyena")},
-    {COMPOUND_STRING("Oddish")},
+    {gSpeciesInfo[SPECIES_TAILLOW].speciesName},
+    {gSpeciesInfo[SPECIES_POOCHYENA].speciesName},
+    {gSpeciesInfo[SPECIES_ODDISH].speciesName},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q2[] =
 {
-    {COMPOUND_STRING("Hariyama")},
-    {COMPOUND_STRING("Lotad")},
-    {COMPOUND_STRING("Wingull")},
+    {gSpeciesInfo[SPECIES_HARIYAMA].speciesName},
+    {gSpeciesInfo[SPECIES_LOTAD].speciesName},
+    {gSpeciesInfo[SPECIES_WINGULL].speciesName},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q3[] =
 {
-    {COMPOUND_STRING("Wurmple")},
-    {COMPOUND_STRING("Zubat")},
-    {COMPOUND_STRING("Nincada")},
+    {gSpeciesInfo[SPECIES_WURMPLE].speciesName},
+    {gSpeciesInfo[SPECIES_ZUBAT].speciesName},
+    {gSpeciesInfo[SPECIES_NINCADA].speciesName},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll2_Q1[] =
 {
-    {COMPOUND_STRING("Ralts")},
-    {COMPOUND_STRING("Zigzagoon")},
-    {COMPOUND_STRING("Slakoth")},
+    {gSpeciesInfo[SPECIES_RALTS].speciesName},
+    {gSpeciesInfo[SPECIES_NORMAN_LEND].speciesName},
+    {gSpeciesInfo[SPECIES_SLAKOTH].speciesName},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll2_Q2[] =
 {
-    {COMPOUND_STRING("Zigzagoon")},
-    {COMPOUND_STRING("Shroomish")},
-    {COMPOUND_STRING("Poochyena")},
+    {gSpeciesInfo[SPECIES_ZIGZAGOON].speciesName},
+    {gSpeciesInfo[SPECIES_SHROOMISH].speciesName},
+    {gSpeciesInfo[SPECIES_POOCHYENA].speciesName},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll2_Q3[] =
 {
-    {COMPOUND_STRING("Carvanha")},
-    {COMPOUND_STRING("Zubat")},
-    {COMPOUND_STRING("Poochyena")},
+    {gSpeciesInfo[SPECIES_CARVANHA].speciesName},
+    {gSpeciesInfo[SPECIES_ZUBAT].speciesName},
+    {gSpeciesInfo[SPECIES_POOCHYENA].speciesName},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll3_Q1[] =
@@ -240,18 +240,18 @@ static const struct MenuAction MultichoiceList_Satisfaction[] =
 
 static const struct MenuAction MultichoiceList_SternDeepSea[] =
 {
-    {COMPOUND_STRING("Deep Sea Tooth")},
-    {COMPOUND_STRING("Deep Sea Scale")},
+    {gItemsInfo[ITEM_DEEP_SEA_TOOTH].name},
+    {gItemsInfo[ITEM_DEEP_SEA_SCALE].name},
     {gText_Exit},
 };
 
 static const struct MenuAction MultichoiceList_UnusedAshVendor[] =
 {
-    {COMPOUND_STRING("Blue Flute")},
-    {COMPOUND_STRING("Yellow Flute")},
-    {COMPOUND_STRING("Red Flute")},
-    {COMPOUND_STRING("White Flute")},
-    {COMPOUND_STRING("Black Flute")},
+    {gItemsInfo[ITEM_BLUE_FLUTE].name},
+    {gItemsInfo[ITEM_YELLOW_FLUTE].name},
+    {gItemsInfo[ITEM_RED_FLUTE].name},
+    {gItemsInfo[ITEM_WHITE_FLUTE].name},
+    {gItemsInfo[ITEM_BLACK_FLUTE].name},
     {COMPOUND_STRING("Glass Chair")},
     {COMPOUND_STRING("Glass Desk")},
     {gText_Cancel2},
@@ -590,8 +590,8 @@ static const struct MenuAction MultichoiceList_UnusedSSTidal4[] =
 
 static const struct MenuAction MultichoiceList_Fossil[] =
 {
-    {COMPOUND_STRING("Claw Fossil")},
-    {COMPOUND_STRING("Root Fossil")},
+    {gItemsInfo[RIGHT_FOSSIL].name},
+    {gItemsInfo[LEFT_FOSSIL].name},
     {gText_Exit},
 };
 

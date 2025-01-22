@@ -697,6 +697,8 @@ struct
 {
     [MENU_SUMMARY] = {COMPOUND_STRING("Summary"), CursorCb_Summary},
     [MENU_SWITCH] = {COMPOUND_STRING("Switch"), CursorCb_Switch},
+    [MENU_NICKNAME] = {COMPOUND_STRING("Nickname"), CursorCb_Nickname},
+    [MENU_MOVES] = {COMPOUND_STRING("Change Moves"), CursorCb_Moves},
     [MENU_CANCEL1] = {gText_Cancel2, CursorCb_Cancel1},
     [MENU_ITEM] = {COMPOUND_STRING("Item"), CursorCb_Item},
     [MENU_GIVE] = {gMenuText_Give, CursorCb_Give},
@@ -785,13 +787,8 @@ static const u8 sPartyMenuActionCounts[] =
 static const u16 sFieldMoves[FIELD_MOVES_COUNT + 1] =
 {
     [FIELD_MOVE_CUT]          = MOVE_CUT,
-    [FIELD_MOVE_FLASH]        = MOVE_FLASH,
     [FIELD_MOVE_ROCK_SMASH]   = MOVE_ROCK_SMASH,
     [FIELD_MOVE_STRENGTH]     = MOVE_STRENGTH,
-    [FIELD_MOVE_SURF]         = MOVE_SURF,
-    [FIELD_MOVE_FLY]          = MOVE_FLY,
-    [FIELD_MOVE_DIVE]         = MOVE_DIVE,
-    [FIELD_MOVE_WATERFALL]    = MOVE_WATERFALL,
     [FIELD_MOVE_TELEPORT]     = MOVE_TELEPORT,
     [FIELD_MOVE_DIG]          = MOVE_DIG,
     [FIELD_MOVE_SECRET_POWER] = MOVE_SECRET_POWER,
@@ -810,13 +807,8 @@ struct
 } static const sFieldMoveCursorCallbacks[FIELD_MOVES_COUNT] =
 {
     [FIELD_MOVE_CUT]          = {SetUpFieldMove_Cut,         PARTY_MSG_NOTHING_TO_CUT},
-    [FIELD_MOVE_FLASH]        = {SetUpFieldMove_Flash,       PARTY_MSG_CANT_USE_HERE},
     [FIELD_MOVE_ROCK_SMASH]   = {SetUpFieldMove_RockSmash,   PARTY_MSG_CANT_USE_HERE},
     [FIELD_MOVE_STRENGTH]     = {SetUpFieldMove_Strength,    PARTY_MSG_CANT_USE_HERE},
-    [FIELD_MOVE_SURF]         = {SetUpFieldMove_Surf,        PARTY_MSG_CANT_SURF_HERE},
-    [FIELD_MOVE_FLY]          = {SetUpFieldMove_Fly,         PARTY_MSG_CANT_USE_HERE},
-    [FIELD_MOVE_DIVE]         = {SetUpFieldMove_Dive,        PARTY_MSG_CANT_USE_HERE},
-    [FIELD_MOVE_WATERFALL]    = {SetUpFieldMove_Waterfall,   PARTY_MSG_CANT_USE_HERE},
     [FIELD_MOVE_TELEPORT]     = {SetUpFieldMove_Teleport,    PARTY_MSG_CANT_USE_HERE},
     [FIELD_MOVE_DIG]          = {SetUpFieldMove_Dig,         PARTY_MSG_CANT_USE_HERE},
     [FIELD_MOVE_SECRET_POWER] = {SetUpFieldMove_SecretPower, PARTY_MSG_CANT_USE_HERE},
@@ -1144,17 +1136,21 @@ static const u8 *const sUnused_StatStrings[] =
 };
 
 #define ROTOM_BASE_MOVE  MOVE_THUNDER_SHOCK
-#define ROTOM_HEAT_MOVE  MOVE_OVERHEAT
-#define ROTOM_WASH_MOVE  MOVE_HYDRO_PUMP
-#define ROTOM_FROST_MOVE MOVE_BLIZZARD
+#define ROTOM_HEAT_MOVE  MOVE_FLAMETHROWER
+#define ROTOM_WASH_MOVE  MOVE_SURF
+#define ROTOM_FROST_MOVE MOVE_ICE_BEAM
 #define ROTOM_FAN_MOVE   MOVE_AIR_SLASH
-#define ROTOM_MOW_MOVE   MOVE_LEAF_STORM
+#define ROTOM_MOW_MOVE   MOVE_ENERGY_BALL
 
-static const u16 sRotomFormChangeMoves[5] =
+static const u16 sRotomFormChangeMoves[9] =
 {
     ROTOM_HEAT_MOVE,
     ROTOM_WASH_MOVE,
     ROTOM_FROST_MOVE,
     ROTOM_FAN_MOVE,
     ROTOM_MOW_MOVE,
+    MOVE_OVERHEAT,
+    MOVE_HYDRO_PUMP,
+    MOVE_BLIZZARD,
+    MOVE_LEAF_STORM,
 };

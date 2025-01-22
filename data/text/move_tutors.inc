@@ -1,7 +1,3 @@
-MoveTutor_Text_ThisMoveCanOnlyBeLearnedOnce:
-	.string "This move can be learned only\n"
-	.string "once. Is that okay?$"
-
 MoveTutor_Text_SwaggerTeach:
 	.string "Heh! My Pokémon totally rules!\n"
 	.string "It's cooler than any Pokémon!\p"
@@ -235,3 +231,32 @@ MoveTutor_Text_ExplosionTaught:
 	.string "to ignite my own Explosion…\p"
 	.string "Maybe it's because deep down,\n"
 	.string "I would rather stay here…$"
+
+MoveTutor_Text_HyperVoiceTeach:
+	.string "Do you want me to teach Hyper Voice\n"
+	.string "to one of your Pokémon?$"
+
+MoveTutor_Text_AquaTailTeach:
+	.string "Do you want me to teach Aqua Tail\n"
+	.string "to one of your Pokémon?$"
+
+MoveTutor_Text_DrillRunTeach:
+	.string "Do you want me to teach Drill Run\n"
+	.string "to one of your Pokémon?$"
+
+MoveTutor_Text_HighHorsepowerTeach:
+	.string "Do you want me to teach High Horsepower\n"
+	.string "to one of your Pokémon?$"
+
+MoveTutor_Text_TemperFlareTeach:
+	.string "Do you want me to teach Temper Flare\n"
+	.string "to one of your Pokémon?$"
+
+MoveTutor_Text_EverGrandeDeclined:
+	.string "Okie dokie!$"
+
+MoveTutor_Text_EverGrandeWhichMon:
+	.string "Which Pokémon do you want to learn it?$"
+
+MoveTutor_Text_EverGrandeTaught:
+	.string "Congrats!$"

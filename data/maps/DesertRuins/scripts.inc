@@ -15,7 +15,7 @@ DesertRuins_EventScript_TryRemoveRegirock::
 	return
 
 DesertRuins_OnLoad:
-	call_if_unset FLAG_SYS_REGIROCK_PUZZLE_COMPLETED, DesertRuins_EventScript_HideRegiEntrance
+	setflag FLAG_SYS_REGIROCK_PUZZLE_COMPLETED
 	end
 
 DesertRuins_EventScript_HideRegiEntrance::
@@ -58,12 +58,12 @@ DesertRuins_EventScript_Regirock::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_REGIROCK, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_DESERT_RUINS, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_REGIROCK, 40
+	setwildbattle SPECIES_DESERT_RUINS, TRIO_LEVEL
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
-	special StartRegiBattle
+	special BattleSetup_StartLegendaryBattle
 	waitstate
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome
@@ -80,7 +80,7 @@ DesertRuins_EventScript_DefeatedRegirock::
 	end
 
 DesertRuins_EventScript_RanFromRegirock::
-	setvar VAR_0x8004, SPECIES_REGIROCK
+	setvar VAR_0x8004, SPECIES_DESERT_RUINS
 	goto Common_EventScript_LegendaryFlewAway
 	end
 

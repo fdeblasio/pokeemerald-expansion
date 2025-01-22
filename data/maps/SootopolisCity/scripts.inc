@@ -194,7 +194,7 @@ SootopolisCity_EventScript_LegendariesSceneFromPokeCenter::
 	waitmovement 0
 	delay 60
 	waitse
-	playmoncry SPECIES_KYOGRE, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_MARINE_CAVE, CRY_MODE_ENCOUNTER
 	applymovement LOCALID_SOOTOPOLIS_KYOGRE, SootopolisCity_Movement_KyogreAttack
 	applymovement LOCALID_SOOTOPOLIS_GROUDON, SootopolisCity_Movement_GroudonDefend
 	waitmovement 0
@@ -208,7 +208,7 @@ SootopolisCity_EventScript_LegendariesSceneFromPokeCenter::
 	applymovement LOCALID_SOOTOPOLIS_GROUDON, SootopolisCity_Movement_GroudonMoveBack
 	waitmovement 0
 	waitse
-	playmoncry SPECIES_GROUDON, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_TERRA_CAVE, CRY_MODE_ENCOUNTER
 	applymovement LOCALID_SOOTOPOLIS_KYOGRE, SootopolisCity_Movement_KyogreDefend
 	applymovement LOCALID_SOOTOPOLIS_GROUDON, SootopolisCity_Movement_GroudonAttack
 	waitmovement 0
@@ -222,7 +222,7 @@ SootopolisCity_EventScript_LegendariesSceneFromPokeCenter::
 	applymovement LOCALID_SOOTOPOLIS_GROUDON, SootopolisCity_Movement_GroudonMoveBack
 	waitmovement 0
 	waitse
-	playmoncry SPECIES_KYOGRE, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_MARINE_CAVE, CRY_MODE_ENCOUNTER
 	applymovement LOCALID_SOOTOPOLIS_KYOGRE, SootopolisCity_Movement_KyogreAttack
 	applymovement LOCALID_SOOTOPOLIS_GROUDON, SootopolisCity_Movement_GroudonDefend
 	waitmovement 0
@@ -294,7 +294,7 @@ SootopolisCity_EventScript_LegendariesSceneFromDive::
 	waitmovement 0
 	delay 60
 	waitse
-	playmoncry SPECIES_KYOGRE, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_MARINE_CAVE, CRY_MODE_ENCOUNTER
 	applymovement LOCALID_SOOTOPOLIS_KYOGRE, SootopolisCity_Movement_KyogreAttack
 	applymovement LOCALID_SOOTOPOLIS_GROUDON, SootopolisCity_Movement_GroudonDefend
 	waitmovement 0
@@ -308,7 +308,7 @@ SootopolisCity_EventScript_LegendariesSceneFromDive::
 	applymovement LOCALID_SOOTOPOLIS_GROUDON, SootopolisCity_Movement_GroudonMoveBack
 	waitmovement 0
 	waitse
-	playmoncry SPECIES_GROUDON, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_TERRA_CAVE, CRY_MODE_ENCOUNTER
 	applymovement LOCALID_SOOTOPOLIS_KYOGRE, SootopolisCity_Movement_KyogreDefend
 	applymovement LOCALID_SOOTOPOLIS_GROUDON, SootopolisCity_Movement_GroudonAttack
 	waitmovement 0
@@ -322,7 +322,7 @@ SootopolisCity_EventScript_LegendariesSceneFromDive::
 	applymovement LOCALID_SOOTOPOLIS_GROUDON, SootopolisCity_Movement_GroudonMoveBack
 	waitmovement 0
 	waitse
-	playmoncry SPECIES_KYOGRE, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_TERRA_CAVE, CRY_MODE_ENCOUNTER
 	applymovement LOCALID_SOOTOPOLIS_KYOGRE, SootopolisCity_Movement_KyogreAttack
 	applymovement LOCALID_SOOTOPOLIS_GROUDON, SootopolisCity_Movement_GroudonDefend
 	waitmovement 0
@@ -486,7 +486,7 @@ SootopolisCity_EventScript_RayquazaSceneFromPokeCenter::
 	applymovement LOCALID_CAMERA, SootopolisCity_Movement_PanUp
 	waitmovement 0
 	waitse
-	playmoncry SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_SKY_PILLAR, CRY_MODE_ENCOUNTER
 	setvar VAR_0x8004, 1  @ vertical pan
 	setvar VAR_0x8005, 1  @ horizontal pan
 	setvar VAR_0x8006, 8  @ num shakes
@@ -494,7 +494,7 @@ SootopolisCity_EventScript_RayquazaSceneFromPokeCenter::
 	special ShakeCamera
 	waitstate
 	waitse
-	playmoncry SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_SKY_PILLAR, CRY_MODE_ENCOUNTER
 	setvar VAR_0x8004, 1  @ vertical pan
 	setvar VAR_0x8005, 2  @ horizontal pan
 	setvar VAR_0x8006, 8  @ num shakes
@@ -539,7 +539,7 @@ SootopolisCity_EventScript_RayquazaSceneFromDive::
 	applymovement LOCALID_PLAYER, SootopolisCity_Movement_PlayerApproachLegendaries
 	waitmovement 0
 	waitse
-	playmoncry SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_SKY_PILLAR, CRY_MODE_ENCOUNTER
 	setvar VAR_0x8004, 1  @ vertical pan
 	setvar VAR_0x8005, 1  @ horizontal pan
 	setvar VAR_0x8006, 8  @ num shakes
@@ -547,7 +547,7 @@ SootopolisCity_EventScript_RayquazaSceneFromDive::
 	special ShakeCamera
 	waitstate
 	waitse
-	playmoncry SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_SKY_PILLAR, CRY_MODE_ENCOUNTER
 	setvar VAR_0x8004, 1  @ vertical pan
 	setvar VAR_0x8005, 2  @ horizontal pan
 	setvar VAR_0x8006, 8  @ num shakes
@@ -1283,7 +1283,7 @@ SootopolisCity_EventScript_Wallace::
 	lock
 	faceplayer
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 4, SootopolisCity_EventScript_GoToSkyPillar
-	goto_if_set FLAG_RECEIVED_HM_WATERFALL, SootopolisCity_EventScript_GoToGym
+	goto_if_set FLAG_RECEIVED_TM_WATERFALL, SootopolisCity_EventScript_GoToGym
 	goto_if_set FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE, SootopolisCity_EventScript_GiveWaterfall
 	msgbox SootopolisCity_Text_AquaMagmaDidntMeanHarm, MSGBOX_DEFAULT
 	release
@@ -1291,8 +1291,8 @@ SootopolisCity_EventScript_Wallace::
 
 SootopolisCity_EventScript_GiveWaterfall::
 	msgbox SootopolisCity_Text_ThankYouForHelpAcceptThis, MSGBOX_DEFAULT
-	giveitem ITEM_HM_WATERFALL
-	setflag FLAG_RECEIVED_HM_WATERFALL
+	giveitem ITEM_TM_WATERFALL
+	setflag FLAG_RECEIVED_TM_WATERFALL
 	msgbox SootopolisCity_Text_ExplainWaterfallGoToGym, MSGBOX_DEFAULT
 	closemessage
 	call_if_eq VAR_FACING, DIR_NORTH, SootopolisCity_EventScript_WallaceMoveFromGym
@@ -1376,16 +1376,6 @@ SootopolisCity_EventScript_MaxieArchieLeave::
 	waitstate
 	releaseall
 	end
-
-@ Unused
-SootopolisCity_Movement_Levitate::
-	levitate
-	step_end
-
-@ Unused
-SootopolisCity_Movement_DestroyTask::
-	destroy_extra_task
-	step_end
 
 SootopolisCity_Text_GymSign:
 	.string "Sootopolis City Pokémon Gym\n"
@@ -1597,7 +1587,7 @@ SootopolisCity_Text_AfterAllOurScheming:
 
 SootopolisCity_Text_KyogreCalmDown:
 	.string "Archie: Kyogre! What's wrong?!\n"
-	.string "Look over here! It's the Red Orb!\l"
+	.string "Look over here! It's the Blue Orb!\l"
 	.string "Calm down! Kyogre!\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
@@ -1691,12 +1681,11 @@ SootopolisCity_Text_ThankYouForHelpAcceptThis:
 	.string "Please accept it.$"
 
 SootopolisCity_Text_ExplainWaterfallGoToGym:
-	.string "That Hidden Machine contains\n"
+	.string "That Technical Machine contains\n"
 	.string "Waterfall.\p"
-	.string "If you have the Rain Badge, a Pokémon\n"
-	.string "that has learned that HM move can\l"
-	.string "force its way up waterfalls.\p"
-	.string "And where does one get the Rain Badge?\n"
+	.string "If you have the Fall Scaler, you can\n"
+	.string "force your way up waterfalls.\p"
+	.string "And where does one get the Fall Scaler?\n"
 	.string "You know, don't you?\p"
 	.string "That's right! You have to beat\n"
 	.string "the Sootopolis Gym Leader.\p"

@@ -417,17 +417,6 @@ Route111_EventScript_HikerMirageTowerVisible::
 	release
 	end
 
-Route111_EventScript_RockSmashTipFatMan::
-	lockall
-	applymovement LOCALID_ROUTE111_ROCK_SMASH_MAN, Common_Movement_FacePlayer
-	waitmovement 0
-	msgbox Route111_Text_MauvilleUncleToldMeToTakeRockSmash, MSGBOX_DEFAULT
-	closemessage
-	applymovement LOCALID_ROUTE111_ROCK_SMASH_MAN, Common_Movement_FaceOriginalDirection
-	waitmovement 0
-	releaseall
-	end
-
 Route111_EventScript_Drew::
 	trainerbattle_single TRAINER_DREW, Route111_Text_DrewIntro, Route111_Text_DrewDefeat
 	msgbox Route111_Text_DrewPostBattle, MSGBOX_AUTOCLOSE
@@ -541,9 +530,9 @@ Route111_EventScript_Tyron::
 	msgbox Route111_Text_TyronPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route111_EventScript_Celina::
-	trainerbattle_single TRAINER_LILY, Route111_Text_CelinaIntro, Route111_Text_CelinaDefeat
-	msgbox Route111_Text_CelinaPostBattle, MSGBOX_AUTOCLOSE
+Route111_EventScript_Lily::
+	trainerbattle_single TRAINER_LILY, Route111_Text_LilyIntro, Route111_Text_LilyDefeat
+	msgbox Route111_Text_LilyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route111_EventScript_Celia::
@@ -705,14 +694,6 @@ Route111_Text_ClawFossilDisappeared:
 Route111_Text_RootFossilDisappeared:
 	.string "The Root Fossil disappeared into\n"
 	.string "the sand…$"
-
-Route111_Text_MauvilleUncleToldMeToTakeRockSmash:
-	.string "Oh, no!\p"
-	.string "My uncle in Mauville told me to take\n"
-	.string "Rock Smash with me if I was going to\l"
-	.string "Route 111!\p"
-	.string "My uncle? He lives across from\n"
-	.string "the bike shop in Mauville.$"
 
 Route111_Text_TrainerHillSign:
 	.string "{RIGHT_ARROW} Trainer Hill Entrance\p"

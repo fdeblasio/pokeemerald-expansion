@@ -3,6 +3,8 @@ Route119_WeatherInstitute_1F_MapScripts::
 	.byte 0
 
 Route119_WeatherInstitute_1F_OnTransition:
+	setrespawn HEAL_LOCATION_ROUTE_119
+	setflag FLAG_LANDMARK_WEATHER_INSTITUTE
 	call_if_eq VAR_WEATHER_INSTITUTE_STATE, 0, Route119_WeatherInstitute_1F_EventScript_SetLittleBoyPos
 	end
 
@@ -58,43 +60,43 @@ Route119_WeatherInstitute_1F_EventScript_Bed::
 	releaseall
 	end
 
-Route119_WeatherInstitute_1F_EventScript_Grunt1::
-	trainerbattle_single TRAINER_NERISSA_WEATHER_INSTITUTE, Route119_WeatherInstitute_1F_Text_Grunt1Intro, Route119_WeatherInstitute_1F_Text_Grunt1Defeat
-	msgbox Route119_WeatherInstitute_1F_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
+Route119_WeatherInstitute_1F_EventScript_Nerissa::
+	trainerbattle_single TRAINER_NERISSA_WEATHER_INSTITUTE, Route119_WeatherInstitute_1F_Text_NerissaIntro, Route119_WeatherInstitute_1F_Text_NerissaDefeat
+	msgbox Route119_WeatherInstitute_1F_Text_NerissaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route119_WeatherInstitute_1F_EventScript_Grunt4::
-	trainerbattle_single TRAINER_BERYL_WEATHER_INSTITUTE, Route119_WeatherInstitute_1F_Text_Grunt4Intro, Route119_WeatherInstitute_1F_Text_Grunt4Defeat
-	msgbox Route119_WeatherInstitute_1F_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE
+Route119_WeatherInstitute_1F_EventScript_Beryl::
+	trainerbattle_single TRAINER_BERYL_WEATHER_INSTITUTE, Route119_WeatherInstitute_1F_Text_BerylIntro, Route119_WeatherInstitute_1F_Text_BerylDefeat
+	msgbox Route119_WeatherInstitute_1F_Text_BerylPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route119_WeatherInstitute_1F_Text_Grunt1Intro:
+Route119_WeatherInstitute_1F_Text_NerissaIntro:
+	.string "Huh?\n"
+	.string "What's a kid doing here?$"
+
+Route119_WeatherInstitute_1F_Text_NerissaDefeat:
+	.string "Huh?\n"
+	.string "I lost?!$"
+
+Route119_WeatherInstitute_1F_Text_NerissaPostBattle:
+	.string "Oh, no…\n"
+	.string "I'll catch an earful for losing to a kid…\p"
+	.string "I should just take a nap in the bed…$"
+
+Route119_WeatherInstitute_1F_Text_BerylIntro:
 	.string "The Boss got interested in\n"
 	.string "the research they have going here,\l"
 	.string "so he sent us out.\p"
 	.string "You quit meddling!$"
 
-Route119_WeatherInstitute_1F_Text_Grunt1Defeat:
+Route119_WeatherInstitute_1F_Text_BerylDefeat:
 	.string "Blast it…\n"
 	.string "Blasted by a kid…$"
 
-Route119_WeatherInstitute_1F_Text_Grunt1PostBattle:
+Route119_WeatherInstitute_1F_Text_BerylPostBattle:
 	.string "Our Boss knows everything.\p"
 	.string "But I'm just a Grunt. What would I know\n"
 	.string "about what he's thinking?$"
-
-Route119_WeatherInstitute_1F_Text_Grunt4Intro:
-	.string "Huh?\n"
-	.string "What's a kid doing here?$"
-
-Route119_WeatherInstitute_1F_Text_Grunt4Defeat:
-	.string "Huh?\n"
-	.string "I lost?!$"
-
-Route119_WeatherInstitute_1F_Text_Grunt4PostBattle:
-	.string "Oh, no…\n"
-	.string "I'll catch an earful for losing to a kid…\p"
-	.string "I should just take a nap in the bed…$"
 
 Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs:
 	.string "While I was sleeping, everyone went\n"

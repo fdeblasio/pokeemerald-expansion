@@ -20,6 +20,7 @@
 #include "graphics.h"
 #include "international_string_util.h"
 #include "item_icon.h"
+#include "item.h"
 #include "link.h"
 #include "load_save.h"
 #include "list_menu.h"
@@ -2411,13 +2412,13 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
     },
     [SCROLL_MULTI_GLASS_WORKSHOP_VENDOR] =
     {
-        COMPOUND_STRING("Blue Flute"),
-        COMPOUND_STRING("Yellow Flute"),
-        COMPOUND_STRING("Red Flute"),
-        COMPOUND_STRING("White Flute"),
-        COMPOUND_STRING("Black Flute"),
-        COMPOUND_STRING("Pretty Chair"),
-        COMPOUND_STRING("Pretty Desk"),
+        gItemsInfo[ITEM_BLUE_FLUTE].name,
+        gItemsInfo[ITEM_YELLOW_FLUTE].name,
+        gItemsInfo[ITEM_RED_FLUTE].name,
+        gItemsInfo[ITEM_WHITE_FLUTE].name,
+        gItemsInfo[ITEM_BLACK_FLUTE].name,
+        gDecorations[DECOR_PRETTY_CHAIR].name,
+        gDecorations[DECOR_PRETTY_DESK].name,
         gText_Exit
     },
     [SCROLL_MULTI_POKEMON_FAN_CLUB_RATER] =

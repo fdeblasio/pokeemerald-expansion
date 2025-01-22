@@ -125,10 +125,12 @@ class WildEncounterAssembler:
         self.WriteLine("{")
         for mon in mons:
             species = mon["species"]
-            min_level = 2 if "min_level" not in mon else mon["min_level"]
-            max_level = 100 if "max_level" not in mon else mon["max_level"]
-            self.WriteLine(f"{{ {min_level}, {max_level}, {species} }},", 1)
-
+            prefix = "{ RANGE_" + mon["range"] + ", "
+            suffix = species + " },"
+            if species in ["GRASS_STARTER", "FIRE_STARTER", "WATER_STARTER"]:
+                self.WriteLine(f"{prefix}{suffix}", 1)
+            else:
+                self.WriteLine(f"{prefix}SPECIES_{suffix}", 1)
         self.WriteLine("};")
         self.WriteLine()
         self.WriteLine(f"const struct WildPokemonInfo {info_name} = {{ {encounter_rate}, {name} }};")

@@ -3610,6 +3610,7 @@ BattleScript_EffectAttract::
 	goto BattleScript_MoveEnd
 
 BattleScript_EffectPresent::
+	jumpiftargetally BattleScript_EffectHealPulse
 	attackcanceler
 	accuracycheck BattleScript_MoveMissedPause, ACC_CURR_MOVE
 	typecalc

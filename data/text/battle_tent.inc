@@ -36,12 +36,6 @@ FallarborTown_BattleTentLobby_Text_SaveBeforeChallenge:
 	.string "Before showing you to the Battle\n"
 	.string "Tent, I must save. Is that okay?$"
 
-@ Unused
-FallarborTown_BattleTentLobby_Text_WhichLevelMode:
-	.string "We offer two levels of challenge,\n"
-	.string "Level 50 and Open Level.\l"
-	.string "Which is your choice?$"
-
 FallarborTown_BattleTentLobby_Text_SelectThreeMons:
 	.string "Very well, now select your\n"
 	.string "three Pokémon, please.$"
@@ -242,20 +236,6 @@ SlateportCity_BattleTentLobby_Text_ExplainSlateportTent:
 
 SlateportCity_BattleTentLobby_Text_LookForwardToNextVisit:
 	.string "We look forward to your next visit.$"
-
-@ Unused
-SlateportCity_BattleTentLobby_Text_WhichLevelMode:
-	.string "Which level do you wish to challenge?\n"
-	.string "Level 50 or Level 100?$"
-
-SlateportCity_BattleTentLobby_Text_SaveBeforeChallenge:
-	.string "Before you begin your challenge,\n"
-	.string "I need to save data. Is that okay?$"
-
-@ Unused
-SlateportCity_BattleTentLobby_Text_HoldMonsForSafekeeping:
-	.string "Okay, I will hold your Pokémon for\n"
-	.string "safekeeping while you compete.$"
 
 SlateportCity_BattleTentLobby_Text_StepThisWay:
 	.string "Please step this way.$"

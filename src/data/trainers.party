@@ -137,7 +137,7 @@ Zubat
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_AQUA_HIDEOUT_4 ===
+=== TRAINER_NERISSA_AQUA_HIDEOUT ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -150,7 +150,7 @@ Carvanha
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_SEAFLOOR_CAVERN_1 ===
+=== TRAINER_NERISSA_SEAFLOOR_CAVERN ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -163,7 +163,7 @@ Poochyena
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_SEAFLOOR_CAVERN_2 ===
+=== TRAINER_BERYL_SEAFLOOR_CAVERN ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -176,7 +176,7 @@ Carvanha
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_SEAFLOOR_CAVERN_3 ===
+=== TRAINER_NERISSA_SEAFLOOR_CAVERN ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -222,7 +222,7 @@ Taillow
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_PETALBURG_WOODS ===
+=== TRAINER_CASPIAN_PETALBURG_WOODS ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -287,7 +287,7 @@ Seviper
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_SEAFLOOR_CAVERN_4 ===
+=== TRAINER_NERISSA_SEAFLOOR_CAVERN ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt F
@@ -313,7 +313,7 @@ Gyarados
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_RUSTURF_TUNNEL ===
+=== TRAINER_CASPIAN_RUSTURF_TUNNEL ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -326,7 +326,7 @@ Poochyena
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_WEATHER_INST_1 ===
+=== TRAINER_NERISSA_WEATHER_INSTITUTE ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -343,7 +343,7 @@ Poochyena
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_WEATHER_INST_2 ===
+=== TRAINER_BERYL_WEATHER_INSTITUTE ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -360,7 +360,7 @@ Carvanha
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_WEATHER_INST_3 ===
+=== TRAINER_GRUNT_WEATHER_INSTITUTE_3 ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -381,7 +381,7 @@ Carvanha
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MUSEUM_1 ===
+=== TRAINER_MALIK_MUSEUM ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -394,7 +394,7 @@ Carvanha
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MUSEUM_2 ===
+=== TRAINER_MARINA_MUSEUM ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -411,7 +411,7 @@ Carvanha
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_SPACE_CENTER_1 ===
+=== TRAINER_WALKER_SPACE_CENTER ===
 Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
@@ -424,7 +424,7 @@ Numel
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MT_PYRE_1 ===
+=== TRAINER_NERISSA_MT_PYRE ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -437,7 +437,7 @@ Zubat
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MT_PYRE_2 ===
+=== TRAINER_BERYL_MT_PYRE ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -450,7 +450,7 @@ Carvanha
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MT_PYRE_3 ===
+=== TRAINER_NERISSA_MT_PYRE ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -467,7 +467,7 @@ Carvanha
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_WEATHER_INST_4 ===
+=== TRAINER_GRUNT_WEATHER_INSTITUTE_4 ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt F
@@ -480,7 +480,7 @@ Carvanha
 Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_AQUA_HIDEOUT_5 ===
+=== TRAINER_BERYL_AQUA_HIDEOUT ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt F
@@ -493,7 +493,7 @@ Carvanha
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_AQUA_HIDEOUT_6 ===
+=== TRAINER_CASPIAN_AQUA_HIDEOUT ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt F
@@ -523,7 +523,7 @@ Machoke
 Level: 30
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_MATT ===
+=== TRAINER_MATT_AQUA_HIDEOUT ===
 Name: Matt
 Class: Aqua Admin
 Pic: Aqua Admin M
@@ -588,7 +588,7 @@ Mightyena
 Level: 37
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_ARCHIE ===
+=== TRAINER_ARCHIE_SEAFLOOR_CAVERN ===
 Name: Archie
 Class: Aqua Leader
 Pic: Aqua Leader Archie
@@ -2153,7 +2153,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Take Down
 - Water Pulse
 
-=== TRAINER_GRUNT_SPACE_CENTER_2 ===
+=== TRAINER_JORDAN_SPACE_CENTER ===
 Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
@@ -2665,7 +2665,7 @@ Rhyhorn
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MT_CHIMNEY_1 ===
+=== TRAINER_GINNY_MT_CHIMNEY ===
 Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt F
@@ -3378,7 +3378,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Shock Wave
 - Screech
 
-=== TRAINER_GRUNT_AQUA_HIDEOUT_7 ===
+=== TRAINER_NERISSA_AQUA_HIDEOUT ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt F
@@ -3395,7 +3395,7 @@ Zubat
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_AQUA_HIDEOUT_8 ===
+=== TRAINER_NERISSA_AQUA_HIDEOUT ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -8797,7 +8797,7 @@ Minun
 Level: 27
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_GINA_AND_MIA_1 ===
+=== TRAINER_GINA_AND_MIA ===
 Name: Gina & Mia
 Class: Twins
 Pic: Twins
@@ -9362,7 +9362,7 @@ Seviper
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_TABITHA_MOSSDEEP ===
+=== TRAINER_TABITHA_SPACE_CENTER ===
 Name: Tabitha
 Class: Magma Admin
 Pic: Magma Admin
@@ -9451,7 +9451,7 @@ Shiftry
 Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_WALLY_VR_1 ===
+=== TRAINER_WALLY_VICTORY_ROAD_1 ===
 Name: Wally
 Class: Rival
 Pic: Wally
@@ -9501,7 +9501,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Psychic
 - Future Sight
 
-=== TRAINER_BRENDAN_ROUTE_103_MUDKIP ===
+=== TRAINER_BRENDAN_ROUTE_103_GRASS ===
 Name: Brendan
 Class: Rival
 Pic: Brendan
@@ -9514,7 +9514,7 @@ Treecko
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRENDAN_ROUTE_110_MUDKIP ===
+=== TRAINER_BRENDAN_ROUTE_110_GRASS ===
 Name: Brendan
 Class: Rival
 Pic: Brendan
@@ -9535,7 +9535,7 @@ Grovyle
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_BRENDAN_ROUTE_119_MUDKIP ===
+=== TRAINER_BRENDAN_ROUTE_119_GRASS ===
 Name: Brendan
 Class: Rival
 Pic: Brendan
@@ -9556,7 +9556,7 @@ Grovyle
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_BRENDAN_ROUTE_103_TREECKO ===
+=== TRAINER_BRENDAN_ROUTE_103_FIRE ===
 Name: Brendan
 Class: Rival
 Pic: Brendan
@@ -9569,7 +9569,7 @@ Torchic
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRENDAN_ROUTE_110_TREECKO ===
+=== TRAINER_BRENDAN_ROUTE_110_FIRE ===
 Name: Brendan
 Class: Rival
 Pic: Brendan
@@ -9590,7 +9590,7 @@ Combusken
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_BRENDAN_ROUTE_119_TREECKO ===
+=== TRAINER_BRENDAN_ROUTE_119_FIRE ===
 Name: Brendan
 Class: Rival
 Pic: Brendan
@@ -9611,7 +9611,7 @@ Combusken
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_BRENDAN_ROUTE_103_TORCHIC ===
+=== TRAINER_BRENDAN_ROUTE_103_WATER ===
 Name: Brendan
 Class: Rival
 Pic: Brendan
@@ -9624,7 +9624,7 @@ Mudkip
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRENDAN_ROUTE_110_TORCHIC ===
+=== TRAINER_BRENDAN_ROUTE_110_WATER ===
 Name: Brendan
 Class: Rival
 Pic: Brendan
@@ -9645,7 +9645,7 @@ Marshtomp
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_BRENDAN_ROUTE_119_TORCHIC ===
+=== TRAINER_BRENDAN_ROUTE_119_WATER ===
 Name: Brendan
 Class: Rival
 Pic: Brendan
@@ -9666,7 +9666,7 @@ Marshtomp
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_MAY_ROUTE_103_MUDKIP ===
+=== TRAINER_MAY_ROUTE_103_GRASS ===
 Name: May
 Class: Rival
 Pic: May
@@ -9679,7 +9679,7 @@ Treecko
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MAY_ROUTE_110_MUDKIP ===
+=== TRAINER_MAY_ROUTE_110_GRASS ===
 Name: May
 Class: Rival
 Pic: May
@@ -9700,7 +9700,7 @@ Grovyle
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_MAY_ROUTE_119_MUDKIP ===
+=== TRAINER_MAY_ROUTE_119_GRASS ===
 Name: May
 Class: Rival
 Pic: May
@@ -9721,7 +9721,7 @@ Grovyle
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_MAY_ROUTE_103_TREECKO ===
+=== TRAINER_MAY_ROUTE_103_FIRE ===
 Name: May
 Class: Rival
 Pic: May
@@ -9734,7 +9734,7 @@ Torchic
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MAY_ROUTE_110_TREECKO ===
+=== TRAINER_MAY_ROUTE_110_FIRE ===
 Name: May
 Class: Rival
 Pic: May
@@ -9755,7 +9755,7 @@ Combusken
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_MAY_ROUTE_119_TREECKO ===
+=== TRAINER_MAY_ROUTE_119_FIRE ===
 Name: May
 Class: Rival
 Pic: May
@@ -9776,7 +9776,7 @@ Combusken
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_MAY_ROUTE_103_TORCHIC ===
+=== TRAINER_MAY_ROUTE_103_WATER ===
 Name: May
 Class: Rival
 Pic: May
@@ -9789,7 +9789,7 @@ Mudkip
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MAY_ROUTE_110_TORCHIC ===
+=== TRAINER_MAY_ROUTE_110_WATER ===
 Name: May
 Class: Rival
 Pic: May
@@ -9810,7 +9810,7 @@ Marshtomp
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_MAY_ROUTE_119_TORCHIC ===
+=== TRAINER_MAY_ROUTE_119_WATER ===
 Name: May
 Class: Rival
 Pic: May
@@ -10483,7 +10483,7 @@ Magnemite
 Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_SEAFLOOR_CAVERN_5 ===
+=== TRAINER_NERISSA_SEAFLOOR_CAVERN ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -10517,7 +10517,7 @@ Zubat
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MT_PYRE_4 ===
+=== TRAINER_NERISSA_MT_PYRE ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt F
@@ -10534,7 +10534,7 @@ Zubat
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_JAGGED_PASS ===
+=== TRAINER_TERRANCE_JAGGED_PASS ===
 Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
@@ -10669,7 +10669,7 @@ Tentacruel
 Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MT_CHIMNEY_2 ===
+=== TRAINER_GINNY_MT_CHIMNEY ===
 Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
@@ -10760,7 +10760,7 @@ Wobbuffet
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_SPACE_CENTER_3 ===
+=== TRAINER_GAETANO_SPACE_CENTER ===
 Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt F
@@ -10777,7 +10777,7 @@ Poochyena
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_SPACE_CENTER_4 ===
+=== TRAINER_JORDAN_SPACE_CENTER ===
 Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
@@ -10790,7 +10790,7 @@ Baltoy
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_SPACE_CENTER_5 ===
+=== TRAINER_JORDAN_SPACE_CENTER ===
 Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
@@ -10803,7 +10803,7 @@ Zubat
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_SPACE_CENTER_6 ===
+=== TRAINER_JORDAN_SPACE_CENTER ===
 Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
@@ -10816,7 +10816,7 @@ Mightyena
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_SPACE_CENTER_7 ===
+=== TRAINER_JORDAN_SPACE_CENTER ===
 Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
@@ -10842,7 +10842,7 @@ Natu
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRENDAN_RUSTBORO_TREECKO ===
+=== TRAINER_BRENDAN_RUSTBORO_FIRE ===
 Name: Brendan
 Class: Rival
 Pic: Brendan
@@ -10859,7 +10859,7 @@ Torchic
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_BRENDAN_RUSTBORO_MUDKIP ===
+=== TRAINER_BRENDAN_RUSTBORO_GRASS ===
 Name: Brendan
 Class: Rival
 Pic: Brendan
@@ -10906,7 +10906,7 @@ Staryu
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_WEATHER_INST_5 ===
+=== TRAINER_GRUNT_WEATHER_INSTITUTE_5 ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt F
@@ -10966,7 +10966,7 @@ Loudred
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRENDAN_RUSTBORO_TORCHIC ===
+=== TRAINER_BRENDAN_RUSTBORO_WATER ===
 Name: Brendan
 Class: Rival
 Pic: Brendan
@@ -10983,7 +10983,7 @@ Mudkip
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_MAY_RUSTBORO_MUDKIP ===
+=== TRAINER_MAY_RUSTBORO_GRASS ===
 Name: May
 Class: Rival
 Pic: May
@@ -11502,7 +11502,7 @@ Machop
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_LUCAS_1 ===
+=== TRAINER_LUCAS ===
 Name: Lucas
 Class: Hiker
 Pic: Hiker
@@ -11585,28 +11585,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Splash
 - Water Gun
 
-=== TRAINER_MIKE_1 ===
-Name: Mike
-Class: Hiker
-Pic: Hiker
-Gender: Male
-Music: Hiker
-Double Battle: No
-AI: Check Bad Move
-
-Pelipper
-Level: 10
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Gust
-- Growl
-
-Poochyena
-Level: 10
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Bite
-- Scary Face
-
-=== TRAINER_MIKE_2 ===
+=== TRAINER_MIKE ===
 Name: Mike
 Class: Hiker
 Pic: Hiker
@@ -12045,7 +12024,7 @@ Ralts
 Level: 16
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_WALLY_VR_2 ===
+=== TRAINER_WALLY_VICTORY_ROAD_2 ===
 Name: Wally
 Class: Rival
 Pic: Wally
@@ -12095,7 +12074,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Psychic
 - Future Sight
 
-=== TRAINER_WALLY_VR_3 ===
+=== TRAINER_WALLY_VICTORY_ROAD_3 ===
 Name: Wally
 Class: Rival
 Pic: Wally
@@ -12145,7 +12124,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Psychic
 - Future Sight
 
-=== TRAINER_WALLY_VR_4 ===
+=== TRAINER_WALLY_VICTORY_ROAD_4 ===
 Name: Wally
 Class: Rival
 Pic: Wally
@@ -12195,7 +12174,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Psychic
 - Future Sight
 
-=== TRAINER_WALLY_VR_5 ===
+=== TRAINER_WALLY_VICTORY_ROAD_5 ===
 Name: Wally
 Class: Rival
 Pic: Wally
@@ -12245,7 +12224,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Psychic
 - Future Sight
 
-=== TRAINER_BRENDAN_LILYCOVE_MUDKIP ===
+=== TRAINER_BRENDAN_LILYCOVE_GRASS ===
 Name: Brendan
 Class: Rival
 Pic: Brendan
@@ -12270,7 +12249,7 @@ Grovyle
 Level: 34
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_BRENDAN_LILYCOVE_TREECKO ===
+=== TRAINER_BRENDAN_LILYCOVE_FIRE ===
 Name: Brendan
 Class: Rival
 Pic: Brendan
@@ -12295,7 +12274,7 @@ Combusken
 Level: 34
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_BRENDAN_LILYCOVE_TORCHIC ===
+=== TRAINER_BRENDAN_LILYCOVE_WATER ===
 Name: Brendan
 Class: Rival
 Pic: Brendan
@@ -12320,7 +12299,7 @@ Marshtomp
 Level: 34
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_MAY_LILYCOVE_MUDKIP ===
+=== TRAINER_MAY_LILYCOVE_GRASS ===
 Name: May
 Class: Rival
 Pic: May
@@ -12345,7 +12324,7 @@ Grovyle
 Level: 34
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_MAY_LILYCOVE_TREECKO ===
+=== TRAINER_MAY_LILYCOVE_FIRE ===
 Name: May
 Class: Rival
 Pic: May
@@ -12370,7 +12349,7 @@ Combusken
 Level: 34
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_MAY_LILYCOVE_TORCHIC ===
+=== TRAINER_MAY_LILYCOVE_WATER ===
 Name: May
 Class: Rival
 Pic: May
@@ -13096,7 +13075,7 @@ Sandshrew
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_CELINA ===
+=== TRAINER_LILY ===
 Name: Celina
 Class: Aroma Lady
 Pic: Aroma Lady
@@ -13392,7 +13371,7 @@ Zubat
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MAGMA_HIDEOUT_10 ===
+=== TRAINER_GAETANO_MAGMA_HIDEOUT ===
 Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
@@ -13405,7 +13384,7 @@ Mightyena
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MAGMA_HIDEOUT_11 ===
+=== TRAINER_WALKER_MAGMA_HIDEOUT ===
 Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
@@ -13418,7 +13397,7 @@ Baltoy
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MAGMA_HIDEOUT_12 ===
+=== TRAINER_WALKER_MAGMA_HIDEOUT ===
 Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
@@ -13431,7 +13410,7 @@ Numel
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MAGMA_HIDEOUT_13 ===
+=== TRAINER_WALKER_MAGMA_HIDEOUT ===
 Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
@@ -13444,7 +13423,7 @@ Zubat
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MAGMA_HIDEOUT_14 ===
+=== TRAINER_WALKER_MAGMA_HIDEOUT ===
 Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt F
@@ -13457,7 +13436,7 @@ Mightyena
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MAGMA_HIDEOUT_15 ===
+=== TRAINER_WALKER_MAGMA_HIDEOUT ===
 Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt F
@@ -13470,7 +13449,7 @@ Numel
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GRUNT_MAGMA_HIDEOUT_16 ===
+=== TRAINER_JORDAN_MAGMA_HIDEOUT ===
 Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt F
@@ -13526,7 +13505,7 @@ Camerupt
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MAXIE_MOSSDEEP ===
+=== TRAINER_MAXIE_SPACE_CENTER ===
 Name: Maxie
 Class: Magma Leader
 Pic: Magma Leader Maxie
@@ -14119,7 +14098,7 @@ Vigoroth
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_MAY_RUSTBORO_TREECKO ===
+=== TRAINER_MAY_RUSTBORO_FIRE ===
 Name: May
 Class: Rival
 Pic: May
@@ -14136,7 +14115,7 @@ Torchic
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_MAY_RUSTBORO_TORCHIC ===
+=== TRAINER_MAY_RUSTBORO_WATER ===
 Name: May
 Class: Rival
 Pic: May

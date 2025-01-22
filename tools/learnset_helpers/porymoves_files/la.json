@@ -12755,7 +12755,7 @@
       "MOVE_X_SCISSOR"
     ]
   },
-  "SHAYMIN_LAND": {
+  "SHAYMIN": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -13401,7 +13401,14 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "BASCULIN": {
+  "BASCULIN_RED_STRIPED": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "BASCULIN_BLUE_STRIPED": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
@@ -14923,7 +14930,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "HOOPA_CONFINED": {
+  "HOOPA": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
@@ -15181,7 +15188,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "LYCANROC_MIDDAY": {
+  "LYCANROC": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
@@ -15874,7 +15881,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "TOXTRICITY_AMPED": {
+  "TOXTRICITY": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],

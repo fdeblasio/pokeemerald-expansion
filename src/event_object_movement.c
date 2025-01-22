@@ -5750,7 +5750,7 @@ bool8 FollowablePlayerMovement_Step(struct ObjectEvent *objectEvent, struct Spri
     }
     else
     {
-        objectEvent->movementActionId = GetWalkNormalMovementAction(direction);
+        objectEvent->movementActionId = GetWalkFastMovementAction(direction);
         if (OW_FOLLOWERS_BOBBING == TRUE)
             sprite->y2 = -1;
     }
@@ -7244,7 +7244,7 @@ static void InitJumpRegular(struct ObjectEvent *objectEvent, struct Sprite *spri
       && distance == JUMP_DISTANCE_FAR
       // In some areas (i.e Meteor Falls), the player can jump as the follower jumps, so preserve type in this case
       && PlayerGetCopyableMovement() != COPY_MOVE_JUMP2)
-        type = TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_DASH) ? JUMP_TYPE_FASTER : JUMP_TYPE_FAST;
+        type = TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_DASH) ? JUMP_TYPE_FASTER : JUMP_TYPE_FASTER;
     InitJump(objectEvent, sprite, direction, distance, type);
     SetStepAnimHandleAlternation(objectEvent, sprite, GetMoveDirectionAnimNum(objectEvent->facingDirection));
     DoShadowFieldEffect(objectEvent);
@@ -7586,7 +7586,7 @@ bool8 MovementAction_ExitPokeball_Step0(struct ObjectEvent *objectEvent, struct 
     u32 direction = gObjectEvents[gPlayerAvatar.objectEventId].facingDirection;
     u16 graphicsId = objectEvent->graphicsId;
     objectEvent->invisible = FALSE;
-    if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_DASH))
+    if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_DASH) || TRUE)
     {
         // If player is dashing, the pokemon must come out faster
         StartSpriteAnimInDirection(objectEvent, sprite, direction, GetJumpSpecialDirectionAnimNum(direction));

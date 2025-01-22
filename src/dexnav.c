@@ -498,6 +498,7 @@ static void AddSearchWindowText(enum Species species, u8 proximity, u8 searchLev
         }
     }
 
+#if DEXNAV_ENABLED == TRUE
     //chain level - always present
     ConvertIntToDecimalStringN(gStringVar1, gSaveBlock3Ptr->dexNavChain, STR_CONV_MODE_LEFT_ALIGN, 3);
     if (gSaveBlock3Ptr->dexNavChain > 99)
@@ -978,7 +979,9 @@ void EndDexNavSearch(void)
 
 static void EndDexNavSearchSetupScript(const u8 *script)
 {
+#if DEXNAV_ENABLED == TRUE
     gSaveBlock3Ptr->dexNavChain = 0;   //reset chain
+#endif
     EndDexNavSearch();
     ScriptContext_SetupScript(script);
 }
@@ -1204,6 +1207,7 @@ static void CreateDexNavWildMon(enum Species species, u8 potential, u8 level, u8
 //if it was a hidden encounter, updates the environment it is to be found from the wildheader encounterRate
 static u8 DexNavTryGenerateMonLevel(enum Species species, enum EncounterType environment)
 {
+#if DEXNAV_ENABLED == TRUE
     u8 levelBase = GetEncounterLevelFromMapData(species, environment);
     u8 levelBonus = gSaveBlock3Ptr->dexNavChain / 5;
 
@@ -1217,6 +1221,9 @@ static u8 DexNavTryGenerateMonLevel(enum Species species, enum EncounterType env
         return MAX_LEVEL;
     else
         return levelBase + levelBonus;
+#else
+    return 0;
+#endif
 }
 
 static void DexNavGenerateMoveset(enum Species species, u8 searchLevel, u8 encounterLevel, u16 *moveDst)
@@ -1755,7 +1762,7 @@ static bool8 CapturedAllHiddenMons(u32 headerId)
     u8 count = 0;
     enum TimeOfDay timeOfDay = GetTimeOfDayForEncounters(headerId, WILD_AREA_HIDDEN);
 
-        const struct WildPokemonInfo *hiddenMonsInfo = gWildMonHeaders[headerId].encounterTypes[timeOfDay].hiddenMonsInfo;
+    const struct WildPokemonInfo *hiddenMonsInfo = gWildMonHeaders[headerId].encounterTypes[timeOfDay].hiddenMonsInfo;
 
     if (hiddenMonsInfo != NULL)
     {
@@ -2129,7 +2136,9 @@ static void PrintCurrentSpeciesInfo(void)
     }
 
     //current chain
+#if DEXNAV_ENABLED == TRUE
     ConvertIntToDecimalStringN(gStringVar1, gSaveBlock3Ptr->dexNavChain, STR_CONV_MODE_LEFT_ALIGN, 3);
+#endif
     AddTextPrinterParameterized3(WINDOW_INFO, FONT_SMALL, 0, CHAIN_BONUS_Y, sFontColor_Black, 0, gStringVar1);
 
     CopyWindowToVram(WINDOW_INFO, 3);
@@ -2462,7 +2471,7 @@ bool32 TryFindHiddenPokemon(void)
 {
     u16 *stepPtr = GetVarPointer(DN_VAR_STEP_COUNTER);
 
-    if (DEXNAV_ENABLED == 0
+    if (DEXNAV_ENABLED == FALSE
             || !FlagGet(DN_FLAG_DETECTOR_MODE)
             || FlagGet(DN_FLAG_SEARCHING)
             || GetFlashLevel() > 0)
@@ -2629,12 +2638,16 @@ static void DexNavDrawHiddenIcons(void)
 /////////////////////////
 u32 CalculateDexNavShinyRolls(void)
 {
+#if DEXNAV_ENABLED == TRUE
     u32 chainBonus, rndBonus;
-    u8 chain = gSaveBlock3Ptr->dexNavChain;
+    u8 chain = DEXNAV_ENABLED == TRUE ? gSaveBlock3Ptr->dexNavChain : 0;
 
     chainBonus = (chain >= 100) ? 10 : (chain >= 50) ? 5 : 0;
     rndBonus = (Random() % 100 < 4) ? 4 : 0;
     return chainBonus + rndBonus;
+#else
+    return 0;
+#endif
 }
 
 void TryIncrementSpeciesSearchLevel()
@@ -2647,7 +2660,9 @@ void TryIncrementSpeciesSearchLevel()
 
 void ResetDexNavSearch(void)
 {
+#if DEXNAV_ENABLED == TRUE
     gSaveBlock3Ptr->dexNavChain = 0;    //reset dex nav chaining on new map
+#endif
     VarSet(DN_VAR_STEP_COUNTER, 0); //reset hidden pokemon step counter
     if (FlagGet(DN_FLAG_SEARCHING))
         EndDexNavSearch();   //moving to new map ends dexnav search
@@ -2655,6 +2670,8 @@ void ResetDexNavSearch(void)
 
 void IncrementDexNavChain(void)
 {
+#if DEXNAV_ENABLED == TRUE
     if (gSaveBlock3Ptr->dexNavChain < DEXNAV_CHAIN_MAX)
         gSaveBlock3Ptr->dexNavChain++;
+#endif
 }

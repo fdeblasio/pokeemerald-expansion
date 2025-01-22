@@ -95,10 +95,10 @@ enum FlagsVarsDebugMenu
     DEBUG_FLAGVAR_MENU_ITEM_DEXFLAGS_RESET,
     DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_POKEDEX,
     DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_NATDEX,
+    DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_LOCATIONS,
     DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_POKENAV,
     DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_MATCH_CALL,
     DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_RUN_SHOES,
-    DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_LOCATIONS,
     DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_BADGES_ALL,
     DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_GAME_CLEAR,
     DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_FRONTIER_PASS,
@@ -530,17 +530,17 @@ static const struct DebugMenuOption sDebugMenu_Actions_FollowerNPCMenu[] =
 
 static const struct DebugMenuOption sDebugMenu_Actions_Utilities[] =
 {
-    { COMPOUND_STRING("Fly to map…"),       DebugAction_Util_Fly },
-    { COMPOUND_STRING("Warp to map warp…"), DebugAction_Util_Warp_Warp },
-    { COMPOUND_STRING("Set weather…"),      DebugAction_Util_Weather },
-    { COMPOUND_STRING("Font Test…"),        DebugAction_ExecuteScript, Debug_EventScript_FontTest },
-    { COMPOUND_STRING("Time Functions…"),   DebugAction_OpenSubMenu, sDebugMenu_Actions_TimeMenu, },
-    { COMPOUND_STRING("Watch credits…"),    DebugAction_Util_WatchCredits },
-    { COMPOUND_STRING("Cheat start"),       DebugAction_Util_CheatStart },
-    { COMPOUND_STRING("Berry Functions…"),  DebugAction_OpenSubMenu, sDebugMenu_Actions_BerryFunctions },
-    { COMPOUND_STRING("EWRAM Counters…"),   DebugAction_ExecuteScript, Debug_EventScript_EWRAMCounters },
-    { COMPOUND_STRING("Follower NPC…"),     DebugAction_OpenSubMenu, sDebugMenu_Actions_FollowerNPCMenu },
-    { COMPOUND_STRING("Steven Multi"),      DebugAction_ExecuteScript, Debug_EventScript_Steven_Multi },
+    { COMPOUND_STRING("Fly to map"),       DebugAction_Util_Fly },
+    { COMPOUND_STRING("Warp to map warp"), DebugAction_Util_Warp_Warp },
+    { COMPOUND_STRING("Cheat start"),      DebugAction_Util_CheatStart },
+    { COMPOUND_STRING("Set weather…"),     DebugAction_Util_Weather },
+    { COMPOUND_STRING("Font Test…"),       DebugAction_ExecuteScript, Debug_EventScript_FontTest },
+    { COMPOUND_STRING("Time Functions…"),  DebugAction_OpenSubMenu, sDebugMenu_Actions_TimeMenu, },
+    { COMPOUND_STRING("Watch credits…"),   DebugAction_Util_WatchCredits },
+    { COMPOUND_STRING("Berry Functions…"), DebugAction_OpenSubMenu, sDebugMenu_Actions_BerryFunctions },
+    { COMPOUND_STRING("EWRAM Counters…"),  DebugAction_ExecuteScript, Debug_EventScript_EWRAMCounters },
+    { COMPOUND_STRING("Follower NPC…"),    DebugAction_OpenSubMenu, sDebugMenu_Actions_FollowerNPCMenu },
+    { COMPOUND_STRING("Steven Multi"),     DebugAction_ExecuteScript, Debug_EventScript_Steven_Multi },
     { NULL }
 };
 
@@ -948,6 +948,15 @@ static const u16 sLocationFlags[] =
     FLAG_VISITED_SOOTOPOLIS_CITY,
     FLAG_VISITED_EVER_GRANDE_CITY,
     FLAG_LANDMARK_POKEMON_LEAGUE,
+    FLAG_LANDMARK_ABANDONED_SHIP,
+    FLAG_LANDMARK_OLD_LADY_REST_SHOP,
+    FLAG_LANDMARK_FIERY_PATH,
+    FLAG_LANDMARK_METEOR_FALLS,
+    FLAG_LANDMARK_WEATHER_INSTITUTE,
+    FLAG_LANDMARK_SAFARI_ZONE,
+    FLAG_LANDMARK_MT_PYRE,
+    FLAG_LANDMARK_SKY_PILLAR,
+    FLAG_LANDMARK_SOUTHERN_ISLAND,
     FLAG_LANDMARK_BATTLE_FRONTIER,
 };
 

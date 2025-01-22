@@ -18,7 +18,7 @@
 #define TRAINER_PIC_HIKER                  0
 #define TRAINER_PIC_AQUA_GRUNT_M           1
 #define TRAINER_PIC_POKEMON_BREEDER_F      2
-#define TRAINER_PIC_COOLTRAINER_M          3
+#define TRAINER_PIC_ACE_TRAINER_M          3
 #define TRAINER_PIC_BIRD_KEEPER            4
 #define TRAINER_PIC_COLLECTOR              5
 #define TRAINER_PIC_AQUA_GRUNT_F           6
@@ -35,12 +35,12 @@
 #define TRAINER_PIC_INTERVIEWER           17
 #define TRAINER_PIC_TUBER_F               18
 #define TRAINER_PIC_TUBER_M               19
-#define TRAINER_PIC_COOLTRAINER_F         20
+#define TRAINER_PIC_ACE_TRAINER_F         20
 #define TRAINER_PIC_LADY                  21
 #define TRAINER_PIC_BEAUTY                22
 #define TRAINER_PIC_RICH_BOY              23
 #define TRAINER_PIC_EXPERT_F              24
-#define TRAINER_PIC_POKEMANIAC            25
+#define TRAINER_PIC_POKE_MANIAC           25
 #define TRAINER_PIC_MAGMA_GRUNT_F         26
 #define TRAINER_PIC_GUITARIST             27
 #define TRAINER_PIC_KINDLER               28
@@ -63,11 +63,11 @@
 #define TRAINER_PIC_LEADER_WINONA         45
 #define TRAINER_PIC_LEADER_TATE_AND_LIZA  46
 #define TRAINER_PIC_LEADER_JUAN           47
-#define TRAINER_PIC_SCHOOL_KID_M          48
-#define TRAINER_PIC_SCHOOL_KID_F          49
-#define TRAINER_PIC_SR_AND_JR             50
-#define TRAINER_PIC_POKEFAN_M             51
-#define TRAINER_PIC_POKEFAN_F             52
+#define TRAINER_PIC_SCHOOLKID_M           48
+#define TRAINER_PIC_SCHOOLKID_F           49
+#define TRAINER_PIC_TEAMMATES             50
+#define TRAINER_PIC_POKE_FAN_M            51
+#define TRAINER_PIC_POKE_FAN_F            52
 #define TRAINER_PIC_YOUNGSTER             53
 #define TRAINER_PIC_CHAMPION_WALLACE      54
 #define TRAINER_PIC_FISHERMAN             55
@@ -84,31 +84,49 @@
 #define TRAINER_PIC_SWIMMER_F             66
 #define TRAINER_PIC_TWINS                 67
 #define TRAINER_PIC_SAILOR                68
-#define TRAINER_PIC_MAGMA_ADMIN           69
-#define TRAINER_PIC_WALLY                 70
-#define TRAINER_PIC_BRENDAN               71
-#define TRAINER_PIC_MAY                   72
-#define TRAINER_PIC_BUG_CATCHER           73
-#define TRAINER_PIC_POKEMON_RANGER_M      74
-#define TRAINER_PIC_POKEMON_RANGER_F      75
-#define TRAINER_PIC_MAGMA_LEADER_MAXIE    76
-#define TRAINER_PIC_LASS                  77
-#define TRAINER_PIC_YOUNG_COUPLE          78
-#define TRAINER_PIC_OLD_COUPLE            79
-#define TRAINER_PIC_SIS_AND_BRO           80
-#define TRAINER_PIC_STEVEN                81
-#define TRAINER_PIC_SALON_MAIDEN_ANABEL   82
-#define TRAINER_PIC_DOME_ACE_TUCKER       83
-#define TRAINER_PIC_PALACE_MAVEN_SPENSER  84
-#define TRAINER_PIC_ARENA_TYCOON_GRETA    85
-#define TRAINER_PIC_FACTORY_HEAD_NOLAND   86
-#define TRAINER_PIC_PIKE_QUEEN_LUCY       87
-#define TRAINER_PIC_PYRAMID_KING_BRANDON  88
-#define TRAINER_PIC_RED                   89
-#define TRAINER_PIC_LEAF                  90
-#define TRAINER_PIC_RS_BRENDAN            91
-#define TRAINER_PIC_RS_MAY                92
-#define TRAINER_PIC_COUNT                 93
+#define TRAINER_PIC_MAGMA_ADMIN_M         69
+#define TRAINER_PIC_MAGMA_ADMIN_F         70
+#define TRAINER_PIC_WALLY                 71
+#define TRAINER_PIC_BRENDAN               72
+#define TRAINER_PIC_MAY                   73
+#define TRAINER_PIC_BUG_CATCHER           74
+#define TRAINER_PIC_POKEMON_RANGER_M      75
+#define TRAINER_PIC_POKEMON_RANGER_F      76
+#define TRAINER_PIC_MAGMA_LEADER_MAXIE    77
+#define TRAINER_PIC_LASS                  78
+#define TRAINER_PIC_YOUNG_COUPLE          79
+#define TRAINER_PIC_OLD_COUPLE            80
+#define TRAINER_PIC_SIS_AND_BRO           81
+#define TRAINER_PIC_STEVEN                82
+#define TRAINER_PIC_SALON_MAIDEN_ANABEL   83
+#define TRAINER_PIC_DOME_ACE_TUCKER       84
+#define TRAINER_PIC_PALACE_MAVEN_SPENSER  85
+#define TRAINER_PIC_ARENA_TYCOON_GRETA    86
+#define TRAINER_PIC_FACTORY_HEAD_NOLAND   87
+#define TRAINER_PIC_PIKE_QUEEN_LUCY       88
+#define TRAINER_PIC_PYRAMID_KING_BRANDON  89
+#define TRAINER_PIC_RED                   90
+#define TRAINER_PIC_LEAF                  91
+#define TRAINER_PIC_RS_BRENDAN            92
+#define TRAINER_PIC_RS_MAY                93
+#define TRAINER_PIC_FRANK                 94
+#define TRAINER_PIC_ROCKER                95
+#define TRAINER_PIC_COOL_COUPLE           96
+#define TRAINER_PIC_BIKER                 97
+#define TRAINER_PIC_LEADER_BROCK          98
+#define TRAINER_PIC_LEADER_MISTY          99
+#define TRAINER_PIC_LEADER_LT_SURGE       100
+#define TRAINER_PIC_LEADER_ERIKA          101
+#define TRAINER_PIC_LEADER_KOGA           102
+#define TRAINER_PIC_LEADER_SABRINA        103
+#define TRAINER_PIC_LEADER_BLAINE         104
+#define TRAINER_PIC_LEADER_GIOVANNI       105
+#define TRAINER_PIC_ELITE_FOUR_LORELEI    106
+#define TRAINER_PIC_ELITE_FOUR_BRUNO      107
+#define TRAINER_PIC_ELITE_FOUR_AGATHA     108
+#define TRAINER_PIC_ELITE_FOUR_LANCE      109
+#define TRAINER_PIC_BURGLAR               110
+#define TRAINER_PIC_COUNT                 111
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -123,7 +141,7 @@
 #define FACILITY_CLASS_HIKER                 0x0
 #define FACILITY_CLASS_AQUA_GRUNT_M          0x1
 #define FACILITY_CLASS_PKMN_BREEDER_F        0x2
-#define FACILITY_CLASS_COOLTRAINER_M         0x3
+#define FACILITY_CLASS_ACE_TRAINER_M         0x3
 #define FACILITY_CLASS_BIRD_KEEPER           0x4
 #define FACILITY_CLASS_COLLECTOR             0x5
 #define FACILITY_CLASS_AQUA_GRUNT_F          0x6
@@ -138,12 +156,12 @@
 #define FACILITY_CLASS_INTERVIEWER           0xf
 #define FACILITY_CLASS_TUBER_F               0x10
 #define FACILITY_CLASS_TUBER_M               0x11
-#define FACILITY_CLASS_COOLTRAINER_F         0x12
+#define FACILITY_CLASS_ACE_TRAINER_F         0x12
 #define FACILITY_CLASS_LADY                  0x13
 #define FACILITY_CLASS_BEAUTY                0x14
 #define FACILITY_CLASS_RICH_BOY              0x15
 #define FACILITY_CLASS_EXPERT_F              0x16
-#define FACILITY_CLASS_POKEMANIAC            0x17
+#define FACILITY_CLASS_POKE_MANIAC           0x17
 #define FACILITY_CLASS_MAGMA_GRUNT_F         0x18
 #define FACILITY_CLASS_GUITARIST             0x19
 #define FACILITY_CLASS_KINDLER               0x1a
@@ -158,11 +176,11 @@
 #define FACILITY_CLASS_LEADER_ROXANNE        0x23
 #define FACILITY_CLASS_LEADER_BRAWLY         0x24
 #define FACILITY_CLASS_LEADER_TATE_AND_LIZA  0x25
-#define FACILITY_CLASS_SCHOOL_KID_M          0x26
-#define FACILITY_CLASS_SCHOOL_KID_F          0x27
-#define FACILITY_CLASS_SR_AND_JR             0x28
-#define FACILITY_CLASS_POKEFAN_M             0x29
-#define FACILITY_CLASS_POKEFAN_F             0x2a
+#define FACILITY_CLASS_SCHOOLKID_M           0x26
+#define FACILITY_CLASS_SCHOOLKID_F           0x27
+#define FACILITY_CLASS_TEAMMATES             0x28
+#define FACILITY_CLASS_POKE_FAN_M            0x29
+#define FACILITY_CLASS_POKE_FAN_F            0x2a
 #define FACILITY_CLASS_YOUNGSTER             0x2b
 #define FACILITY_CLASS_CHAMPION_WALLACE      0x2c
 #define FACILITY_CLASS_FISHERMAN             0x2d
@@ -213,13 +231,13 @@
 #define RS_FACILITY_CLASS_INTERVIEWER           0x5
 #define RS_FACILITY_CLASS_TUBER_F               0x6
 #define RS_FACILITY_CLASS_TUBER_M               0x7
-#define RS_FACILITY_CLASS_COOLTRAINER_M         0x8
-#define RS_FACILITY_CLASS_COOLTRAINER_F         0x9
+#define RS_FACILITY_CLASS_ACE_TRAINER_M         0x8
+#define RS_FACILITY_CLASS_ACE_TRAINER_F         0x9
 #define RS_FACILITY_CLASS_HEX_MANIAC            0xA
 #define RS_FACILITY_CLASS_LADY                  0xB
 #define RS_FACILITY_CLASS_BEAUTY                0xC
 #define RS_FACILITY_CLASS_RICH_BOY              0xD
-#define RS_FACILITY_CLASS_POKEMANIAC            0xE
+#define RS_FACILITY_CLASS_POKE_MANIAC           0xE
 #define RS_FACILITY_CLASS_SWIMMER_M             0xF
 #define RS_FACILITY_CLASS_BLACK_BELT            0x10
 #define RS_FACILITY_CLASS_GUITARIST             0x11
@@ -234,11 +252,11 @@
 #define RS_FACILITY_CLASS_LEADER_F              0x1A
 #define RS_FACILITY_CLASS_LEADER_M              0x1B
 #define RS_FACILITY_CLASS_LEADER_MF             0x1C
-#define RS_FACILITY_CLASS_SCHOOL_KID_M          0x1D
-#define RS_FACILITY_CLASS_SCHOOL_KID_F          0x1E
-#define RS_FACILITY_CLASS_SR_AND_JR             0x1F
-#define RS_FACILITY_CLASS_POKEFAN_M             0x20
-#define RS_FACILITY_CLASS_POKEFAN_F             0x21
+#define RS_FACILITY_CLASS_SCHOOLKID_M           0x1D
+#define RS_FACILITY_CLASS_SCHOOLKID_F           0x1E
+#define RS_FACILITY_CLASS_TEAMMATES             0x1F
+#define RS_FACILITY_CLASS_POKE_FAN_M            0x20
+#define RS_FACILITY_CLASS_POKE_FAN_F            0x21
 #define RS_FACILITY_CLASS_EXPERT_M              0x22
 #define RS_FACILITY_CLASS_EXPERT_F              0x23
 #define RS_FACILITY_CLASS_YOUNGSTER             0x24
@@ -287,15 +305,15 @@
 
 enum TrainerClassID
 {
-    TRAINER_CLASS_PKMN_TRAINER_1, // Unused
+    TRAINER_CLASS_PKMN_TRAINER_1,
     TRAINER_CLASS_PKMN_TRAINER_2, // Unused
     TRAINER_CLASS_HIKER,
     TRAINER_CLASS_TEAM_AQUA,
     TRAINER_CLASS_PKMN_BREEDER,
-    TRAINER_CLASS_COOLTRAINER,
+    TRAINER_CLASS_ACE_TRAINER,
     TRAINER_CLASS_BIRD_KEEPER,
     TRAINER_CLASS_COLLECTOR,
-    TRAINER_CLASS_SWIMMER_M,
+    TRAINER_CLASS_SWIMMER,
     TRAINER_CLASS_TEAM_MAGMA,
     TRAINER_CLASS_EXPERT,
     TRAINER_CLASS_AQUA_ADMIN,
@@ -305,12 +323,11 @@ enum TrainerClassID
     TRAINER_CLASS_AROMA_LADY,
     TRAINER_CLASS_RUIN_MANIAC,
     TRAINER_CLASS_INTERVIEWER,
-    TRAINER_CLASS_TUBER_F,
-    TRAINER_CLASS_TUBER_M,
+    TRAINER_CLASS_TUBER,
     TRAINER_CLASS_LADY,
     TRAINER_CLASS_BEAUTY,
     TRAINER_CLASS_RICH_BOY,
-    TRAINER_CLASS_POKEMANIAC,
+    TRAINER_CLASS_POKE_MANIAC,
     TRAINER_CLASS_GUITARIST,
     TRAINER_CLASS_KINDLER,
     TRAINER_CLASS_CAMPER,
@@ -320,10 +337,10 @@ enum TrainerClassID
     TRAINER_CLASS_GENTLEMAN,
     TRAINER_CLASS_ELITE_FOUR,
     TRAINER_CLASS_LEADER,
-    TRAINER_CLASS_SCHOOL_KID,
-    TRAINER_CLASS_SR_AND_JR,
+    TRAINER_CLASS_SCHOOLKID,
+    TRAINER_CLASS_TEAMMATES,
     TRAINER_CLASS_WINSTRATE,
-    TRAINER_CLASS_POKEFAN,
+    TRAINER_CLASS_POKE_FAN,
     TRAINER_CLASS_YOUNGSTER,
     TRAINER_CLASS_CHAMPION,
     TRAINER_CLASS_FISHERMAN,
@@ -332,10 +349,9 @@ enum TrainerClassID
     TRAINER_CLASS_NINJA_BOY,
     TRAINER_CLASS_BATTLE_GIRL,
     TRAINER_CLASS_PARASOL_LADY,
-    TRAINER_CLASS_SWIMMER_F,
     TRAINER_CLASS_TWINS,
     TRAINER_CLASS_SAILOR,
-    TRAINER_CLASS_COOLTRAINER_2, // Used for only one trainer.
+    TRAINER_CLASS_COOL_TRAINER, // Used for only one trainer.
     TRAINER_CLASS_MAGMA_ADMIN,
     TRAINER_CLASS_RIVAL,
     TRAINER_CLASS_BUG_CATCHER,
@@ -353,27 +369,31 @@ enum TrainerClassID
     TRAINER_CLASS_PIKE_QUEEN,
     TRAINER_CLASS_PYRAMID_KING,
     TRAINER_CLASS_RS_PROTAG,
+    TRAINER_CLASS_BIKER,
     TRAINER_CLASS_COUNT,
 };
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music
 #define TRAINER_ENCOUNTER_MUSIC_FEMALE       1 // standard female encounter music
 #define TRAINER_ENCOUNTER_MUSIC_GIRL         2 // used for male Tubers and Young Couples too
-#define TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS   3
-#define TRAINER_ENCOUNTER_MUSIC_INTENSE      4
-#define TRAINER_ENCOUNTER_MUSIC_COOL         5
+#define TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS   3 // Used for Ninja Boys, Collectors, Hex Maniacs, Poké Maniacs, and Bug Maniacs
+#define TRAINER_ENCOUNTER_MUSIC_INTENSE      4 // Used for Guitarists, Psychics, Black Belts, Battle Girls, Dragon Tamers, Experts, and Old Couples
+#define TRAINER_ENCOUNTER_MUSIC_COOL         5 // Used for Cool Trainers, Pokémon Rangers, and Bird Keepers
 #define TRAINER_ENCOUNTER_MUSIC_AQUA         6
 #define TRAINER_ENCOUNTER_MUSIC_MAGMA        7
-#define TRAINER_ENCOUNTER_MUSIC_SWIMMER      8
-#define TRAINER_ENCOUNTER_MUSIC_TWINS        9 // used for other trainer classes too
+#define TRAINER_ENCOUNTER_MUSIC_SWIMMER      8 // Used for Swimmers, swimming Triathletes, and Sis and Bros
+#define TRAINER_ENCOUNTER_MUSIC_TWINS        9 // Used for Twins, PokéFans, and Teammates
 #define TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR  10
-#define TRAINER_ENCOUNTER_MUSIC_HIKER       11 // used for other trainer classes too
+#define TRAINER_ENCOUNTER_MUSIC_HIKER       11 // Used for Hikers, Ruin Maniacs, Kindlers, and Fishermen
 #define TRAINER_ENCOUNTER_MUSIC_INTERVIEWER 12
-#define TRAINER_ENCOUNTER_MUSIC_RICH        13 // Rich Boys and Gentlemen
+#define TRAINER_ENCOUNTER_MUSIC_RICH        13 // Used for Rich Boys and Gentlemen
+//#define TRAINER_ENCOUNTER_MUSIC_BRENDAN     14
+//#define TRAINER_ENCOUNTER_MUSIC_MAY         15
 
 #define F_TRAINER_FEMALE (1 << 7)
 
 // Trainer party defines
+#define TRAINER_MON_NONE          0
 #define TRAINER_MON_MALE          1
 #define TRAINER_MON_FEMALE        2
 #define TRAINER_MON_RANDOM_GENDER 3

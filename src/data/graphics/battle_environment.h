@@ -17,6 +17,11 @@ const u16 gBattleEnvironmentPalette_StadiumPhoebe[] = INCBIN_U16("graphics/battl
 const u16 gBattleEnvironmentPalette_StadiumGlacia[] = INCBIN_U16("graphics/battle_environment/stadium/palette5.gbapal");
 const u16 gBattleEnvironmentPalette_StadiumDrake[] = INCBIN_U16("graphics/battle_environment/stadium/palette6.gbapal");
 const u16 gBattleEnvironmentPalette_StadiumWallace[] = INCBIN_U16("graphics/battle_environment/stadium/palette7.gbapal");
+const u16 gBattleEnvironmentPalette_StadiumDark[] = INCBIN_U16("graphics/battle_environment/stadium/dark.gbapal");
+const u16 gBattleEnvironmentPalette_StadiumFlying[] = INCBIN_U16("graphics/battle_environment/stadium/flying.gbapal");
+const u16 gBattleEnvironmentPalette_StadiumGrass[] = INCBIN_U16("graphics/battle_environment/stadium/grass.gbapal");
+const u16 gBattleEnvironmentPalette_StadiumIce[] = INCBIN_U16("graphics/battle_environment/stadium/ice.gbapal");
+const u16 gBattleEnvironmentPalette_StadiumRock[] = INCBIN_U16("graphics/battle_environment/stadium/rock.gbapal");
 const u16 gBattleEnvironmentPalette_Rayquaza[] = INCBIN_U16("graphics/battle_environment/sky/palette.gbapal");
 
 const u32 gBattleEnvironmentAnimTiles_TallGrass[] = INCBIN_U32("graphics/battle_environment/tall_grass/anim_tiles.4bpp.smol");

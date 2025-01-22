@@ -45,36 +45,16 @@ void SetLilycoveLadyGfx(void)
 {
     LilycoveLady *lilycoveLady;
 
-    VarSet(VAR_OBJ_GFX_ID_0, sLilycoveLadyGfxId[GetLilycoveLadyId()]);
-    if (GetLilycoveLadyId() == LILYCOVE_LADY_CONTEST)
-    {
-        lilycoveLady = &gSaveBlock1Ptr->lilycoveLady;
-        VarSet(VAR_OBJ_GFX_ID_1, sContestLadyValues[lilycoveLady->contest.category].monGfxId);
-        gSpecialVar_Result = TRUE;
-    }
-    else
-    {
-        gSpecialVar_Result = FALSE;
-    }
+    lilycoveLady = &gSaveBlock1Ptr->lilycoveLady;
+    VarSet(VAR_OBJ_GFX_ID_1, sContestLadyValues[lilycoveLady->contest.category].monGfxId);
+    gSpecialVar_Result = TRUE;
 }
 
 void InitLilycoveLady(void)
 {
-    u16 id = ((gSaveBlock2Ptr->playerTrainerId[1] << 8) | gSaveBlock2Ptr->playerTrainerId[0]);
-    id %= 6;
-    id >>= 1;
-    switch (id)
-    {
-    case LILYCOVE_LADY_QUIZ:
-        InitLilycoveQuizLady();
-        break;
-    case LILYCOVE_LADY_FAVOR:
-        InitLilycoveFavorLady();
-        break;
-    case LILYCOVE_LADY_CONTEST:
-        InitLilycoveContestLady();
-        break;
-    }
+    InitLilycoveQuizLady();
+    InitLilycoveFavorLady();
+    InitLilycoveContestLady();
 }
 
 void ResetLilycoveLadyForRecordMix(void)
@@ -89,25 +69,6 @@ void ResetLilycoveLadyForRecordMix(void)
         break;
     case LILYCOVE_LADY_CONTEST:
         ResetContestLadyForRecordMix();
-        break;
-    }
-}
-
-// Unused
-void InitLilycoveLadyRandomly(void)
-{
-    u8 lady = Random() % LILYCOVE_LADY_COUNT;
-
-    switch (lady)
-    {
-    case LILYCOVE_LADY_QUIZ:
-        InitLilycoveQuizLady();
-        break;
-    case LILYCOVE_LADY_FAVOR:
-        InitLilycoveFavorLady();
-        break;
-    case LILYCOVE_LADY_CONTEST:
-        InitLilycoveContestLady();
         break;
     }
 }

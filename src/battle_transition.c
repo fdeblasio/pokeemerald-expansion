@@ -864,6 +864,25 @@ static const u16 sFieldEffectPal_Pokeball[] = INCGFX_U16("graphics/field_effects
 
 const struct SpritePalette gSpritePalette_Pokeball = {sFieldEffectPal_Pokeball, FLDEFF_PAL_TAG_POKEBALL_TRAIL};
 
+static const u16 sMugshotPal_Bug[]      = INCGFX_U16("graphics/battle_transitions/bug_bg.pal", ".gbapal");
+static const u16 sMugshotPal_Dark[]     = INCGFX_U16("graphics/battle_transitions/dark_bg.pal", ".gbapal");
+static const u16 sMugshotPal_Dragon[]   = INCGFX_U16("graphics/battle_transitions/dragon_bg.pal", ".gbapal");
+static const u16 sMugshotPal_Electric[] = INCGFX_U16("graphics/battle_transitions/electric_bg.pal", ".gbapal");
+static const u16 sMugshotPal_Fairy[]    = INCGFX_U16("graphics/battle_transitions/fairy_bg.pal", ".gbapal");
+static const u16 sMugshotPal_Fighting[] = INCGFX_U16("graphics/battle_transitions/fighting_bg.pal", ".gbapal");
+static const u16 sMugshotPal_Fire[]     = INCGFX_U16("graphics/battle_transitions/fire_bg.pal", ".gbapal");
+static const u16 sMugshotPal_Flying[]   = INCGFX_U16("graphics/battle_transitions/flying_bg.pal", ".gbapal");
+static const u16 sMugshotPal_Ghost[]    = INCGFX_U16("graphics/battle_transitions/ghost_bg.pal", ".gbapal");
+static const u16 sMugshotPal_Grass[]    = INCGFX_U16("graphics/battle_transitions/grass_bg.pal", ".gbapal");
+static const u16 sMugshotPal_Ground[]   = INCGFX_U16("graphics/battle_transitions/ground_bg.pal", ".gbapal");
+static const u16 sMugshotPal_Ice[]      = INCGFX_U16("graphics/battle_transitions/ice_bg.pal", ".gbapal");
+static const u16 sMugshotPal_Normal[]   = INCGFX_U16("graphics/battle_transitions/normal_bg.pal", ".gbapal");
+static const u16 sMugshotPal_Poison[]   = INCGFX_U16("graphics/battle_transitions/poison_bg.pal", ".gbapal");
+static const u16 sMugshotPal_Psychic[]  = INCGFX_U16("graphics/battle_transitions/psychic_bg.pal", ".gbapal");
+static const u16 sMugshotPal_Rock[]     = INCGFX_U16("graphics/battle_transitions/rock_bg.pal", ".gbapal");
+static const u16 sMugshotPal_Steel[]    = INCGFX_U16("graphics/battle_transitions/steel_bg.pal", ".gbapal");
+static const u16 sMugshotPal_Water[]    = INCGFX_U16("graphics/battle_transitions/water_bg.pal", ".gbapal");
+
 static const u16 sMugshotPal_Purple[] = INCGFX_U16("graphics/battle_transitions/purple_bg.pal", ".gbapal");
 static const u16 sMugshotPal_Green[]  = INCGFX_U16("graphics/battle_transitions/green_bg.pal", ".gbapal");
 static const u16 sMugshotPal_Pink[]   = INCGFX_U16("graphics/battle_transitions/pink_bg.pal", ".gbapal");
@@ -874,6 +893,24 @@ static const u16 sMugshotPal_May[] = INCGFX_U16("graphics/battle_transitions/may
 
 static const u16 *const sOpponentMugshotsPals[MUGSHOT_COLOR_COUNT] =
 {
+    [MUGSHOT_TYPE_BUG]      = sMugshotPal_Bug,
+    [MUGSHOT_TYPE_DARK]     = sMugshotPal_Dark,
+    [MUGSHOT_TYPE_DRAGON]   = sMugshotPal_Dragon,
+    [MUGSHOT_TYPE_ELECTRIC] = sMugshotPal_Electric,
+    [MUGSHOT_TYPE_FAIRY]    = sMugshotPal_Fairy,
+    [MUGSHOT_TYPE_FIGHTING] = sMugshotPal_Fighting,
+    [MUGSHOT_TYPE_FIRE]     = sMugshotPal_Fire,
+    [MUGSHOT_TYPE_FLYING]   = sMugshotPal_Flying,
+    [MUGSHOT_TYPE_GHOST]    = sMugshotPal_Ghost,
+    [MUGSHOT_TYPE_GRASS]    = sMugshotPal_Grass,
+    [MUGSHOT_TYPE_GROUND]   = sMugshotPal_Ground,
+    [MUGSHOT_TYPE_ICE]      = sMugshotPal_Ice,
+    [MUGSHOT_TYPE_NORMAL]   = sMugshotPal_Normal,
+    [MUGSHOT_TYPE_POISON]   = sMugshotPal_Poison,
+    [MUGSHOT_TYPE_PSYCHIC]  = sMugshotPal_Psychic,
+    [MUGSHOT_TYPE_ROCK]     = sMugshotPal_Rock,
+    [MUGSHOT_TYPE_STEEL]    = sMugshotPal_Steel,
+    [MUGSHOT_TYPE_WATER]    = sMugshotPal_Water,
     [MUGSHOT_COLOR_PURPLE] = sMugshotPal_Purple,
     [MUGSHOT_COLOR_GREEN]  = sMugshotPal_Green,
     [MUGSHOT_COLOR_PINK]   = sMugshotPal_Pink,

@@ -332,7 +332,7 @@ static const struct MatchCallWally sWallyMatchCallHeader =
     .type = MC_TYPE_WALLY,
     .mapSec = 0,
     .flag = FLAG_ENABLE_WALLY_MATCH_CALL,
-    .rematchTableIdx = REMATCH_WALLY_VR,
+    .rematchTableIdx = REMATCH_WALLY_VICTORY_ROAD,
     .desc = COMPOUND_STRING("{PKMN} Lover"),
     .textData = (const match_call_text_data_t[]) {
         { MatchCall_Text_Wally1, ALWAYS_AVAILABLE,                    NO_FLAG_TO_SET },

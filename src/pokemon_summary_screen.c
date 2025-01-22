@@ -319,11 +319,10 @@ static void SummaryScreen_DestroyAnimDelayTask(void);
 static bool32 ShouldShowMoveRelearner(void);
 static bool32 ShouldShowRename(void);
 static bool32 ShouldShowIvEvPrompt(void);
-static void BufferLeftColumnIvEvStats(void);
+static void BufferIvOrEvStats(u8 mode);
 static void CB2_ReturnToSummaryScreenFromNamingScreen(void);
 static void CB2_PssChangePokemonNickname(void);
 static void ShowUtilityPrompt(s16 mode);
-static void ShowMonSkillsInfo(u8 taskId, s16 mode);
 static void WriteToStatsTilemapBuffer(u32 length, u32 block, u32 statsCoordX, u32 statsCoordY);
 void ExtractMonSkillStatsData(struct Pokemon *mon, struct PokeSummary *sum);
 void ExtractMonSkillIvData(struct Pokemon *mon, struct PokeSummary *sum);
@@ -332,7 +331,6 @@ static void PrintTextOnWindow(u8 windowId, const u8 *string, u8 x, u8 y, u8 line
 static void PrintTextOnWindowWithFont(u8 windowId, const u8 *string, u8 x, u8 y, u8 lineSpacing, u8 colorId, u32 fontId);
 static const u8 *GetLetterGrade(u32 stat);
 static u8 AddWindowFromTemplateList(const struct WindowTemplate *template, u8 templateId);
-static u8 IncrementSkillsStatsMode(u8 mode);
 static void ClearStatLabel(u32 length, u32 statsCoordX, u32 statsCoordY);
 
 static const struct BgTemplate sBgTemplates[] =
@@ -506,7 +504,7 @@ static const struct WindowTemplate sSummaryTemplate[] =
     },
     [PSS_LABEL_WINDOW_POKEMON_SKILLS_STATS_RIGHT] = {
         .bg = 0,
-        .tilemapLeft = 22,
+        .tilemapLeft = 20,
         .tilemapTop = 7,
         .width = 5,
         .height = 6,
@@ -648,7 +646,7 @@ static const struct WindowTemplate sPageSkillsTemplate[] =
     },
     [PSS_DATA_WINDOW_SKILLS_STATS_LEFT] = {
         .bg = 0,
-        .tilemapLeft = 16,
+        .tilemapLeft = 14,
         .tilemapTop = 7,
         .width = 6,
         .height = 6,
@@ -657,9 +655,9 @@ static const struct WindowTemplate sPageSkillsTemplate[] =
     },
     [PSS_DATA_WINDOW_SKILLS_STATS_RIGHT] = {
         .bg = 0,
-        .tilemapLeft = 27,
+        .tilemapLeft = 25,
         .tilemapTop = 7,
-        .width = 3,
+        .width = 5,
         .height = 6,
         .paletteNum = 6,
         .baseBlock = 543,
@@ -671,7 +669,7 @@ static const struct WindowTemplate sPageSkillsTemplate[] =
         .width = 6,
         .height = 4,
         .paletteNum = 6,
-        .baseBlock = 561,
+        .baseBlock = 573,
     },
 };
 static const struct WindowTemplate sPageMovesTemplate[] = // This is used for both battle and contest moves
@@ -745,7 +743,7 @@ static void (*const sTextPrinterTasks[])(u8 taskId) =
 static const u8 sMemoNatureTextColor[] = _("{COLOR LIGHT_RED}{SHADOW GREEN}");
 static const u8 sMemoMiscTextColor[] = _("{COLOR WHITE}{SHADOW DARK_GRAY}"); // This is also affected by palettes, apparently
 static const u8 sStatsLeftColumnLayout[] = _("{DYNAMIC 0}/{DYNAMIC 1}\n{DYNAMIC 2}\n{DYNAMIC 3}");
-static const u8 sStatsLeftIVEVColumnLayout[] = _("{DYNAMIC 0}\n{DYNAMIC 1}\n{DYNAMIC 2}");
+static const u8 sStatsLeftColumnLayoutIVEV[] = _("{DYNAMIC 0}/{DYNAMIC 1}\n{DYNAMIC 2}/{DYNAMIC 3}\n{DYNAMIC 4}/{DYNAMIC 5}");
 static const u8 sStatsRightColumnLayout[] = _("{DYNAMIC 0}\n{DYNAMIC 1}\n{DYNAMIC 2}");
 static const u8 sMovesPPLayout[] = _("{PP}{DYNAMIC 0}/{DYNAMIC 1}");
 
@@ -1684,8 +1682,16 @@ static void ClearStatLabel(u32 length, u32 statsCoordX, u32 statsCoordY)
         FillBgTilemapBufferRect(1, blankStatsBlock, statsCoordX + blankOffset + i, statsCoordY, 1, 1, 2);
 }
 
+// Cycle summary page between stats and EVs/IVs
+static void ChangeSummaryState(s16 *taskData, u8 taskId)
+{
+    taskData[3] = (taskData[3] + 1) % 2;
+    gTasks[taskId].func = Task_HandleInput;
+}
+
 static void Task_HandleInput(u8 taskId)
 {
+    s16 *data = gTasks[taskId].data;
     if (MenuHelpers_ShouldWaitForLinkRecv() != TRUE && !gPaletteFade.active)
     {
         if (JOY_NEW(DPAD_UP))
@@ -1706,34 +1712,30 @@ static void Task_HandleInput(u8 taskId)
         }
         else if (JOY_NEW(A_BUTTON))
         {
-            if (sMonSummaryScreen->currPageIndex != PSS_PAGE_SKILLS)
+            if (sMonSummaryScreen->currPageIndex == PSS_PAGE_INFO)
             {
-                if (sMonSummaryScreen->currPageIndex == PSS_PAGE_INFO)
+                if (ShouldShowRename())
                 {
-                    if (ShouldShowRename())
-                    {
-                        sMonSummaryScreen->callback = CB2_PssChangePokemonNickname;
-                        gSpecialVar_0x8004 = sMonSummaryScreen->curMonIndex;
-                    }
+                    sMonSummaryScreen->callback = CB2_PssChangePokemonNickname;
+                    gSpecialVar_0x8004 = sMonSummaryScreen->curMonIndex;
+                }
 
-                    StopPokemonAnimations();
-                    PlaySE(SE_SELECT);
-                    BeginCloseSummaryScreen(taskId);
-                }
-                else if (sMonSummaryScreen->currPageIndex == PSS_PAGE_BATTLE_MOVES 
-                         || sMonSummaryScreen->currPageIndex == PSS_PAGE_CONTEST_MOVES)
-                {
-                    PlaySE(SE_SELECT);
-                    SwitchToMoveSelection(taskId);
-                }
+                StopPokemonAnimations();
+                PlaySE(SE_SELECT);
+                BeginCloseSummaryScreen(taskId);
             }
-            if (sMonSummaryScreen->currPageIndex == PSS_PAGE_SKILLS)
+            else if (sMonSummaryScreen->currPageIndex == PSS_PAGE_BATTLE_MOVES
+                        || sMonSummaryScreen->currPageIndex == PSS_PAGE_CONTEST_MOVES)
             {
-                if (ShouldShowIvEvPrompt())
-                {
-                    ShowMonSkillsInfo(taskId, IncrementSkillsStatsMode(sMonSummaryScreen->skillsPageMode));
-                    PlaySE(SE_SELECT);
-                }
+                PlaySE(SE_SELECT);
+                SwitchToMoveSelection(taskId);
+            }
+            else if (sMonSummaryScreen->currPageIndex == PSS_PAGE_SKILLS)
+            {
+                // Cycle through IVs/EVs/stats on pressing A
+                PlaySE(SE_SELECT);
+                ChangeSummaryState(data, taskId);
+                BufferIvOrEvStats(data[3]);
             }
         }
         else if (JOY_NEW(B_BUTTON))
@@ -1746,6 +1748,7 @@ static void Task_HandleInput(u8 taskId)
                 && ShouldShowMoveRelearner()
                 && (sMonSummaryScreen->currPageIndex == PSS_PAGE_BATTLE_MOVES || sMonSummaryScreen->currPageIndex == PSS_PAGE_CONTEST_MOVES))
         {
+	        FlagSet(FLAG_PARTY_MOVES);
             sMonSummaryScreen->callback = CB2_InitLearnMove;
             gSpecialVar_0x8004 = sMonSummaryScreen->curMonIndex;
             gOriginSummaryScreenPage = sMonSummaryScreen->currPageIndex;
@@ -1761,77 +1764,6 @@ static void Task_HandleInput(u8 taskId)
             CloseSummaryScreen(taskId);
         }
     }
-}
-
-static u8 IncrementSkillsStatsMode(u8 mode)
-{
-    switch (mode)
-    {
-    case SUMMARY_SKILLS_MODE_STATS:
-        if (P_SUMMARY_SCREEN_EV_ONLY)
-        {
-            sMonSummaryScreen->skillsPageMode = SUMMARY_SKILLS_MODE_EVS;
-            return SUMMARY_SKILLS_MODE_EVS;
-        }
-        else 
-        {
-            sMonSummaryScreen->skillsPageMode = SUMMARY_SKILLS_MODE_IVS;
-            return SUMMARY_SKILLS_MODE_IVS;
-        }
-
-    case SUMMARY_SKILLS_MODE_IVS:
-        if (P_SUMMARY_SCREEN_IV_ONLY)
-        {
-            sMonSummaryScreen->skillsPageMode = SUMMARY_SKILLS_MODE_STATS;
-            return SUMMARY_SKILLS_MODE_STATS;
-        }
-        else
-        {
-            sMonSummaryScreen->skillsPageMode = SUMMARY_SKILLS_MODE_EVS;
-            return SUMMARY_SKILLS_MODE_EVS;
-        }
-    case SUMMARY_SKILLS_MODE_EVS:
-    default:
-        sMonSummaryScreen->skillsPageMode = SUMMARY_SKILLS_MODE_STATS;
-        return SUMMARY_SKILLS_MODE_STATS;
-    }
-
-}
-
-static void ShowMonSkillsInfo(u8 taskId, s16 mode)
-{
-    struct PokeSummary *sum = &sMonSummaryScreen->summary;
-    struct Pokemon *mon = &sMonSummaryScreen->currentMon;
-
-    FillWindowPixelBuffer(sMonSummaryScreen->windowIds[PSS_DATA_WINDOW_SKILLS_STATS_LEFT], 0);
-    FillWindowPixelBuffer(sMonSummaryScreen->windowIds[PSS_DATA_WINDOW_SKILLS_STATS_RIGHT], 0);
-
-    if (sMonSummaryScreen->currPageIndex == PSS_PAGE_SKILLS)
-    {
-        ChangeStatLabel(mode);
-        ShowUtilityPrompt(mode);
-    }
-
-    if (mode == SUMMARY_SKILLS_MODE_STATS)
-    {
-        ExtractMonSkillStatsData(mon, sum);
-        BufferLeftColumnStats();
-    }
-    else if (mode == SUMMARY_SKILLS_MODE_IVS)
-    {
-        ExtractMonSkillIvData(mon, sum);
-        BufferLeftColumnIvEvStats();
-    }
-    else if (mode == SUMMARY_SKILLS_MODE_EVS)
-    {
-        ExtractMonSkillEvData(mon, sum);
-        BufferLeftColumnIvEvStats();
-    }
-
-    PrintLeftColumnStats();
-    BufferRightColumnStats();
-    PrintRightColumnStats();
-    gTasks[taskId].func = Task_HandleInput;
 }
 
 void ExtractMonSkillStatsData(struct Pokemon *mon, struct PokeSummary *sum)
@@ -1956,7 +1888,7 @@ static void Task_ChangeSummaryMon(u8 taskId)
         if (P_SUMMARY_SCREEN_RENAME && sMonSummaryScreen->currPageIndex == PSS_PAGE_INFO)
             ShowUtilityPrompt(SUMMARY_MODE_NORMAL);
         if (ShouldShowIvEvPrompt() && sMonSummaryScreen->currPageIndex == PSS_PAGE_SKILLS)
-        {   
+        {
             sMonSummaryScreen->skillsPageMode = SUMMARY_SKILLS_MODE_STATS;
             ChangeStatLabel(SUMMARY_SKILLS_MODE_STATS);
         }
@@ -2023,28 +1955,22 @@ static void Task_ChangeSummaryMon(u8 taskId)
 static s8 AdvanceMonIndex(s8 delta)
 {
     struct Pokemon *mon = sMonSummaryScreen->monList.mons;
+    u8 index = sMonSummaryScreen->curMonIndex;
+    u8 numMons = sMonSummaryScreen->maxMonIndex + 1;
+    delta += numMons;
 
-    if (sMonSummaryScreen->currPageIndex == PSS_PAGE_INFO)
-    {
-        if (delta == -1 && sMonSummaryScreen->curMonIndex == 0)
-            return -1;
-        else if (delta == 1 && sMonSummaryScreen->curMonIndex >= sMonSummaryScreen->maxMonIndex)
-            return -1;
-        else
-            return sMonSummaryScreen->curMonIndex + delta;
-    }
+    index = (index + delta) % numMons;
+
+    // skip over any Eggs unless on the Info Page
+    if (sMonSummaryScreen->currPageIndex != PSS_PAGE_INFO)
+        while (GetMonData(&mon[index], MON_DATA_IS_EGG))
+            index = (index + delta) % numMons;
+
+    // to avoid "scrolling" to the same Pokemon
+    if (index == sMonSummaryScreen->curMonIndex)
+        return -1;
     else
-    {
-        s8 index = sMonSummaryScreen->curMonIndex;
-
-        do
-        {
-            index += delta;
-            if (index < 0 || index > sMonSummaryScreen->maxMonIndex)
-                return -1;
-        } while (GetMonData(&mon[index], MON_DATA_IS_EGG));
         return index;
-    }
 }
 
 static s8 AdvanceMultiBattleMonIndex(s8 delta)
@@ -2108,7 +2034,7 @@ static void ChangePage(u8 taskId, s8 delta)
     CreateTextPrinterTask(sMonSummaryScreen->currPageIndex);
     HidePageSpecificSprites();
 
-    if (sMonSummaryScreen->currPageIndex == PSS_PAGE_SKILLS 
+    if (sMonSummaryScreen->currPageIndex == PSS_PAGE_SKILLS
         || (sMonSummaryScreen->currPageIndex + delta) == PSS_PAGE_SKILLS)
     {
         struct Pokemon *mon = &sMonSummaryScreen->currentMon;
@@ -2244,7 +2170,7 @@ static void SwitchToMoveSelection(u8 taskId)
     {
         if (ShouldShowMoveRelearner())
             ClearWindowTilemap(PSS_LABEL_WINDOW_PROMPT_RELEARN);
-        
+
         ShowUtilityPrompt(SUMMARY_MODE_SELECT_MOVE);
     }
     else
@@ -3212,11 +3138,11 @@ static void PrintPageNamesAndStats(void)
 
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_INFO_RENTAL, gText_RentalPkmn, 0, 1, 0, 1);
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_INFO_TYPE, gText_TypeSlash, 0, 1, 0, 0);
-    statsXPos = 6 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_HP4, 42);
+    statsXPos = GetStringCenterAlignXOffset(FONT_NORMAL, gText_HP4, 36);
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_STATS_LEFT, gText_HP4, statsXPos, 1, 0, 1);
-    statsXPos = 6 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_Attack3, 42);
+    statsXPos = GetStringCenterAlignXOffset(FONT_NORMAL, gText_Attack3, 36);
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_STATS_LEFT, gText_Attack3, statsXPos, 17, 0, 1);
-    statsXPos = 6 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_Defense3, 42);
+    statsXPos = GetStringCenterAlignXOffset(FONT_NORMAL, gText_Defense3, 36);
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_STATS_LEFT, gText_Defense3, statsXPos, 33, 0, 1);
     statsXPos = 2 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_SpAtk4, 36);
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_STATS_RIGHT, gText_SpAtk4, statsXPos, 1, 0, 1);
@@ -3665,12 +3591,7 @@ static void PrintSkillsPageText(void)
 {
     PrintHeldItemName();
     PrintRibbonCount();
-    if(ShouldShowIvEvPrompt())
-        ShowUtilityPrompt(SUMMARY_SKILLS_MODE_STATS);
-    BufferLeftColumnStats();
-    PrintLeftColumnStats();
-    BufferRightColumnStats();
-    PrintRightColumnStats();
+    BufferIvOrEvStats(gTasks[0].data[3]);
     PrintExpPointsNextLevel();
 }
 
@@ -3687,24 +3608,12 @@ static void Task_PrintSkillsPage(u8 taskId)
         PrintRibbonCount();
         break;
     case 3:
-        ChangeStatLabel(SUMMARY_SKILLS_MODE_STATS);
+        BufferIvOrEvStats(gTasks[0].data[3]);
         break;
     case 4:
-        BufferLeftColumnStats();
-        break;
-    case 5:
-        PrintLeftColumnStats();
-        break;
-    case 6:
-        BufferRightColumnStats();
-        break;
-    case 7:
-        PrintRightColumnStats();
-        break;
-    case 8:
         PrintExpPointsNextLevel();
         break;
-    case 9:
+    case 5:
         DestroyTask(taskId);
         return;
     }
@@ -3774,10 +3683,10 @@ static void BufferStat(u8 *dst, u8 statIndex, u32 stat, u32 strId, u32 n)
     else
         txtPtr = StringCopy(dst, sTextNatureNeutral);
 
-    if (!P_SUMMARY_SCREEN_IV_EV_VALUES 
+    if (!P_SUMMARY_SCREEN_IV_EV_VALUES
         && sMonSummaryScreen->skillsPageMode == SUMMARY_SKILLS_MODE_IVS)
         StringAppend(dst, GetLetterGrade(stat));
-    else 
+    else
         ConvertIntToDecimalStringN(txtPtr, stat, STR_CONV_MODE_RIGHT_ALIGN, n);
 
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(strId, dst);
@@ -3791,7 +3700,7 @@ static const u8 *GetLetterGrade(u32 stat)
     static const u8 gText_GradeB[] = _("B");
     static const u8 gText_GradeA[] = _("A");
     static const u8 gText_GradeS[] = _("S");
-    
+
     if (stat > 0 && stat <= 15)
         return gText_GradeD;
     else if (stat > 15 && stat <= 25)
@@ -3804,6 +3713,66 @@ static const u8 *GetLetterGrade(u32 stat)
         return gText_GradeS;
     else
         return gText_GradeF;
+}
+
+static void BufferIvOrEvStats(u8 mode)
+{
+    u8 *currHPString = Alloc(20);
+    u8 *HP_EV_STRING = Alloc(20);
+    u8 *ATK_EV_STRING = Alloc(20);
+    u8 *DEF_EV_STRING = Alloc(20);
+    u8 *SPATK_EV_STRING = Alloc(20);
+    u8 *SPDEF_EV_STRING = Alloc(20);
+    u8 *SPEED_EV_STRING = Alloc(20);
+
+    FillWindowPixelBuffer(sMonSummaryScreen->windowIds[PSS_DATA_WINDOW_SKILLS_STATS_LEFT], 0);
+    FillWindowPixelBuffer(sMonSummaryScreen->windowIds[PSS_DATA_WINDOW_SKILLS_STATS_RIGHT], 0);
+
+    switch (mode)
+    {
+    case 0: // Stats mode
+    default:
+        BufferStat(currHPString, 0, sMonSummaryScreen->summary.currentHP, 0, 3);
+        BufferStat(gStringVar1, 0, sMonSummaryScreen->summary.maxHP, 1, 3);
+        BufferStat(gStringVar2, STAT_ATK, sMonSummaryScreen->summary.atk, 2, 7);
+        BufferStat(gStringVar3, STAT_DEF, sMonSummaryScreen->summary.def, 3, 7);
+        DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsLeftColumnLayout);
+        PrintLeftColumnStats();
+        BufferStat(gStringVar1, STAT_SPATK, sMonSummaryScreen->summary.spatk, 0, 6);
+        BufferStat(gStringVar2, STAT_SPDEF, sMonSummaryScreen->summary.spdef, 1, 6);
+        BufferStat(gStringVar3, STAT_SPEED, sMonSummaryScreen->summary.speed, 2, 6);
+        DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsRightColumnLayout);
+        PrintRightColumnStats();
+        break;
+    case 1: // EV/IV mode
+        #define BUFFER_EV(stat) stat##_EV_STRING, STAT_##stat, GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_##stat##_EV)
+        #define BUFFER_IV(stat) STAT_##stat, GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_HYPER_TRAINED_##stat) ? MAX_PER_STAT_IVS : GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_##stat##_IV)
+
+        BufferStat(BUFFER_EV(HP), 0, 4);
+        BufferStat(gStringVar1, BUFFER_IV(HP), 1, 2);
+        BufferStat(BUFFER_EV(ATK), 2, 4);
+        BufferStat(gStringVar2, BUFFER_IV(ATK), 3, 2);
+        BufferStat(BUFFER_EV(DEF), 4, 4);
+        BufferStat(gStringVar3, BUFFER_IV(DEF), 5, 2);
+        DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsLeftColumnLayoutIVEV);
+        PrintLeftColumnStats();
+        BufferStat(BUFFER_EV(SPATK), 0, 3);
+        BufferStat(gStringVar1, BUFFER_IV(SPATK), 1, 2);
+        BufferStat(BUFFER_EV(SPDEF), 2, 3);
+        BufferStat(gStringVar2, BUFFER_IV(SPDEF), 3, 2);
+        BufferStat(BUFFER_EV(SPEED), 4, 3);
+        BufferStat(gStringVar3, BUFFER_IV(SPEED), 5, 2);
+        DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsLeftColumnLayoutIVEV);
+        PrintRightColumnStats();
+        break;
+    }
+    Free(currHPString);
+    Free(HP_EV_STRING);
+    Free(ATK_EV_STRING);
+    Free(DEF_EV_STRING);
+    Free(SPATK_EV_STRING);
+    Free(SPDEF_EV_STRING);
+    Free(SPEED_EV_STRING);
 }
 
 static void BufferLeftColumnStats(void)
@@ -3828,29 +3797,10 @@ static void BufferLeftColumnStats(void)
     Free(defenseString);
 }
 
-static void BufferLeftColumnIvEvStats(void)
-{
-    u8 *hpIvEvString = Alloc(20);
-    u8 *attackIvEvString = Alloc(20);
-    u8 *defenseIvEvString = Alloc(20);
-    
-    DynamicPlaceholderTextUtil_Reset();
-
-    BufferStat(hpIvEvString, STAT_HP, sMonSummaryScreen->summary.currentHP, 0, 7);
-    BufferStat(attackIvEvString, STAT_ATK, sMonSummaryScreen->summary.atk, 1, 7);
-    BufferStat(defenseIvEvString, STAT_DEF, sMonSummaryScreen->summary.def, 2, 7);
-
-    DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsLeftIVEVColumnLayout);
-
-    Free(hpIvEvString);
-    Free(attackIvEvString);
-    Free(defenseIvEvString);
-}
-
 static void PrintLeftColumnStats(void)
 {
     int x;
-    
+
     if (sMonSummaryScreen->skillsPageMode == SUMMARY_SKILLS_MODE_IVS && !P_SUMMARY_SCREEN_IV_EV_VALUES)
         x = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 46);
     else
@@ -3873,7 +3823,7 @@ static void BufferRightColumnStats(void)
 static void PrintRightColumnStats(void)
 {
     int x;
-    
+
     if (sMonSummaryScreen->skillsPageMode == SUMMARY_SKILLS_MODE_IVS && !P_SUMMARY_SCREEN_IV_EV_VALUES)
         x = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 20);
     else
@@ -4680,9 +4630,6 @@ static inline bool32 ShouldShowIvEvPrompt(void)
 static inline void ShowUtilityPrompt(s16 mode)
 {
     const u8* promptText = NULL;
-    const u8* gText_SkillPageIvs = COMPOUND_STRING("IVs");
-    const u8* gText_SkillPageEvs = COMPOUND_STRING("EVs");
-    const u8* gText_SkillPageStats = COMPOUND_STRING("STATS");
 
     if (sMonSummaryScreen->currPageIndex == PSS_PAGE_INFO)
     {
@@ -4693,27 +4640,7 @@ static inline void ShowUtilityPrompt(s16 mode)
     }
     else if (sMonSummaryScreen->currPageIndex == PSS_PAGE_SKILLS)
     {
-        if (ShouldShowIvEvPrompt())
-        {
-            if (mode == SUMMARY_SKILLS_MODE_STATS)
-            {
-                if (P_SUMMARY_SCREEN_EV_ONLY)
-                    promptText = gText_SkillPageEvs;
-                else
-                    promptText = gText_SkillPageIvs;
-            }
-            else if (mode == SUMMARY_SKILLS_MODE_IVS)
-            {
-                if (P_SUMMARY_SCREEN_IV_ONLY)
-                    promptText = gText_SkillPageStats;
-                else
-                    promptText = gText_SkillPageEvs;
-            }
-            else if (mode == SUMMARY_SKILLS_MODE_EVS)
-            {
-                promptText = gText_SkillPageStats;
-            }
-        }
+        promptText = gText_Switch;
     }
     else if (sMonSummaryScreen->currPageIndex == PSS_PAGE_BATTLE_MOVES
              || sMonSummaryScreen->currPageIndex == PSS_PAGE_CONTEST_MOVES)

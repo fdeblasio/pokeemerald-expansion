@@ -1876,8 +1876,8 @@ u16 GiveMoveToBoxMon(struct BoxPokemon *boxMon, u16 move)
         u16 existingMove = GetBoxMonData(boxMon, MON_DATA_MOVE1 + i, NULL);
         if (existingMove == MOVE_NONE)
         {
-            u8 maxPP = CalculateMaxPP(move);
             SetBoxMonData(boxMon, MON_DATA_MOVE1 + i, &move);
+            u8 maxPP = CalculateMaxPP(move);
             SetBoxMonData(boxMon, MON_DATA_PP1 + i, &maxPP);
             return move;
         }

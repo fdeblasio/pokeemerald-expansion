@@ -191,38 +191,32 @@ static void DoTVShowLilycoveContestLady(void);
 static const struct {
     u16 species;
     u16 moves[MAX_MON_MOVES];
-    u8 level;
     u8 location;
 } sPokeOutbreakSpeciesList[] = {
     {
-        .species = SPECIES_SEEDOT,
-        .moves = {MOVE_BIDE, MOVE_HARDEN, MOVE_LEECH_SEED},
-        .level = 3,
+        .species = SPECIES_TOGEPI,
+        .moves = {MOVE_MYSTICAL_FIRE, MOVE_PSYSHOCK, MOVE_EXTRASENSORY, MOVE_BATON_PASS},
         .location = MAP_NUM(ROUTE102)
     },
     {
-        .species = SPECIES_NUZLEAF,
-        .moves = {MOVE_HARDEN, MOVE_GROWTH, MOVE_NATURE_POWER, MOVE_LEECH_SEED},
-        .level = 15,
-        .location = MAP_NUM(ROUTE114),
+        .species = SPECIES_ELEKID,
+        .moves = {MOVE_CROSS_CHOP, MOVE_THUNDERBOLT, MOVE_FIRE_PUNCH, MOVE_ELECTRIC_TERRAIN},
+        .location = MAP_NUM(ROUTE110),
     },
     {
-        .species = SPECIES_SEEDOT,
-        .moves = {MOVE_HARDEN, MOVE_GROWTH, MOVE_NATURE_POWER, MOVE_LEECH_SEED},
-        .level = 13,
-        .location = MAP_NUM(ROUTE117),
+        .species = SPECIES_MAGBY,
+        .moves = {MOVE_MACH_PUNCH, MOVE_FLAMETHROWER, MOVE_THUNDER_PUNCH, MOVE_SUNNY_DAY},
+        .location = MAP_NUM(ROUTE113),
     },
     {
-        .species = SPECIES_SEEDOT,
-        .moves = {MOVE_GIGA_DRAIN, MOVE_FRUSTRATION, MOVE_SOLAR_BEAM, MOVE_LEECH_SEED},
-        .level = 25,
-        .location = MAP_NUM(ROUTE120),
+        .species = SPECIES_SANDILE,
+        .moves = {MOVE_AQUA_TAIL, MOVE_THUNDER_FANG, MOVE_FIRE_FANG, MOVE_SPITE},
+        .location = MAP_NUM(ROUTE111),
     },
     {
-        .species = SPECIES_SKITTY,
-        .moves = {MOVE_GROWL, MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_ATTRACT},
-        .level = 8,
-        .location = MAP_NUM(ROUTE116),
+        .species = SPECIES_TANGELA,
+        .moves = {MOVE_NATURE_POWER, MOVE_CONFUSION, MOVE_LEECH_SEED, MOVE_AMNESIA},
+        .location = MAP_NUM(ROUTE123),
     }
 };
 
@@ -1625,18 +1619,12 @@ static void InterviewAfter_PkmnFanClubOpinions(void)
 
 static void TryStartRandomMassOutbreak(void)
 {
-    u8 i;
     u16 outbreakIdx;
     TVShow *show;
 
     if (FlagGet(FLAG_SYS_GAME_CLEAR))
     {
-        for (i = 0; i < LAST_TVSHOW_IDX; i++)
-        {
-            if (gSaveBlock1Ptr->tvShows[i].common.kind == TVSHOW_MASS_OUTBREAK)
-                return;
-        }
-        if (!rbernoulli(1, 200))
+        if (!rbernoulli(1, 50))
         {
             sCurTVShowSlot = FindFirstEmptyNormalTVShowSlot(gSaveBlock1Ptr->tvShows);
             if (sCurTVShowSlot != -1)
@@ -1645,7 +1633,7 @@ static void TryStartRandomMassOutbreak(void)
                 show = &gSaveBlock1Ptr->tvShows[sCurTVShowSlot];
                 show->massOutbreak.kind = TVSHOW_MASS_OUTBREAK;
                 show->massOutbreak.active = TRUE;
-                show->massOutbreak.level = sPokeOutbreakSpeciesList[outbreakIdx].level;
+                show->massOutbreak.level = 70;
                 show->massOutbreak.unused1 = 0;
                 show->massOutbreak.unused3 = 0;
                 show->massOutbreak.species = sPokeOutbreakSpeciesList[outbreakIdx].species;
@@ -1657,7 +1645,7 @@ static void TryStartRandomMassOutbreak(void)
                 show->massOutbreak.locationMapNum = sPokeOutbreakSpeciesList[outbreakIdx].location;
                 show->massOutbreak.locationMapGroup = 0;
                 show->massOutbreak.unused4 = 0;
-                show->massOutbreak.probability = 50;
+                show->massOutbreak.probability = 75;
                 show->massOutbreak.unused5 = 0;
                 show->massOutbreak.daysLeft = 1;
                 StorePlayerIdInNormalShow(show);

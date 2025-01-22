@@ -67,6 +67,7 @@ upcoming
     - Some Magnemites never occur because 30 is less than REMATCH_2_LEVEL
     - Add Abilities to single ability and TRAINER_MON_NONE to genderless to make more constistent
 - Non-grass soot tiles should add to soot sack
+- Remove BP costs so that script_menu.h and field_specials.c can use item/move names directly?
 
 ### Meta
 - More simple modifications: https://www.pokecommunity.com/showthread.php?t=416647&page=1

@@ -328,7 +328,7 @@ static u16 GetRandomAlternateMove(u8 monId)
     if (PLAYER_APPRENTICE.lvlMode == APPRENTICE_LVL_MODE_50)
         level = FRONTIER_MAX_LEVEL_50;
     else // == APPRENTICE_LVL_MODE_OPEN
-        level = 60; // Despite being open level, level up moves are only read up to level 60
+        level = 100;
 
     for (j = 0; learnset[j].move != LEVEL_UP_MOVE_END; j++)
     {
@@ -442,7 +442,7 @@ static void GetLatestLearnedMoves(u16 species, u16 *moves)
     if (PLAYER_APPRENTICE.lvlMode == APPRENTICE_LVL_MODE_50)
         level = FRONTIER_MAX_LEVEL_50;
     else // == APPRENTICE_LVL_MODE_OPEN
-        level = 60;
+        level = 100;
 
     learnset = GetSpeciesLevelUpLearnset(species);
     for (i = 0; learnset[i].move != LEVEL_UP_MOVE_END; i++)
@@ -554,8 +554,8 @@ static void CreateApprenticeMenu(u8 menu)
     case APPRENTICE_ASK_WHICH_LEVEL:
         left = 18;
         top = 8;
-        strings[0] = gText_Lv50;
-        strings[1] = gText_OpenLevel;
+        strings[0] = gText_OpenLevel;
+        strings[1] = gText_Lv50;
         break;
     case APPRENTICE_ASK_3SPECIES:
         count = MULTI_PARTY_SIZE;

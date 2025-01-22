@@ -40,6 +40,7 @@ upcoming
 ```
 
 ## To Do:
+- Add RANGE_ to prefix in wild_encounters_to_header.py and remove it from wild_encounters.json
 ### Next playthrough
 - Consolidate flags
     - FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA, FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY

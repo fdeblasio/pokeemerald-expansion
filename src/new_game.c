@@ -233,5 +233,7 @@ static void ResetDexNav(void)
 #if USE_DEXNAV_SEARCH_LEVELS == TRUE
     memset(gSaveBlock3Ptr->dexNavSearchLevels, 0, sizeof(gSaveBlock3Ptr->dexNavSearchLevels));
 #endif
+#if DEXNAV_ENABLED == TRUE
     gSaveBlock3Ptr->dexNavChain = 0;
+#endif
 }

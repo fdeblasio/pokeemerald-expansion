@@ -214,7 +214,9 @@ struct SaveBlock3
 #if USE_DEXNAV_SEARCH_LEVELS == TRUE
     u8 dexNavSearchLevels[NUM_SPECIES];
 #endif
+#if DEXNAV_ENABLED == TRUE
     u8 dexNavChain;
+#endif
 }; /* max size 1624 bytes */
 
 extern struct SaveBlock3 *gSaveBlock3Ptr;

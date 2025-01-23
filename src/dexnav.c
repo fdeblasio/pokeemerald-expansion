@@ -149,7 +149,9 @@ static u16 DexNavGenerateHeldItem(enum Species species, u8 searchLevel);
 static u8 DexNavGetAbilityNum(enum Species species, u8 searchLevel);
 static u8 DexNavGeneratePotential(u8 searchLevel);
 static u8 DexNavTryGenerateMonLevel(enum Species species, enum EncounterType environment);
+#if DEXNAV_ENABLED == TRUE
 static u8 GetEncounterLevelFromMapData(enum Species species, enum EncounterType environment);
+#endif
 static void CreateDexNavWildMon(enum Species species, u8 potential, u8 level, u8 abilityNum, enum Item item, enum Move *moves);
 static u8 GetPlayerDistance(s16 x, s16 y);
 static u8 DexNavPickTile(enum EncounterType environment, u8 xSize, u8 ySize, bool8 smallScan);
@@ -1470,6 +1472,7 @@ static u8 DexNavGeneratePotential(u8 searchLevel)
     return 0;   // No potential
 }
 
+#if DEXNAV_ENABLED == TRUE
 static u8 GetEncounterLevelFromMapData(enum Species species, enum EncounterType environment)
 {
     u32 headerId = GetCurrentMapWildMonHeaderId();
@@ -1543,6 +1546,7 @@ static u8 GetEncounterLevelFromMapData(enum Species species, enum EncounterType 
 
     return RandomUniform(RNG_DEXNAV_ENCOUNTER_LEVEL, min, max);
 }
+#endif
 
 
 ///////////

@@ -4878,7 +4878,7 @@ BattleScript_AskToLearnMove::
 	yesnoboxstoplearningmove BattleScript_AskToLearnMove
 .endif
 	printstring STRINGID_DIDNOTLEARNMOVE
-	goto BattleScript_TryLearnMoveLoop
+	goto BattleScript_LearnMoveReturn
 BattleScript_ForgotAndLearnedNewMove::
 	printstring STRINGID_123POOF
 	printstring STRINGID_PKMNFORGOTMOVE

@@ -634,6 +634,10 @@ static const enum NationalDexOrder sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
 // Support percentages are listed in comments off to the side instead
 #define PALACE_STYLE(atk, def, atkLow, defLow) {atk, atk + def, atkLow, atkLow + defLow}
 
+//B_MSG_GLINT_IN_EYE    Attack increases
+//B_MSG_GETTING_IN_POS  Defense increases
+//B_MSG_GROWL_DEEPLY    Support increases
+//B_MSG_EAGER_FOR_MORE  Stats stay the same
 const struct NatureInfo gNaturesInfo[NUM_NATURES] =
 {
     [NATURE_HARDY] =
@@ -1413,6 +1417,10 @@ void CreateBoxMon(struct BoxPokemon *boxMon, enum Species species, u8 level, u32
             isShiny = FALSE;
         }
         else if (P_NO_SHINIES_WITHOUT_POKEBALLS && !HasAtLeastOnePokeBall())
+        {
+            isShiny = FALSE;
+        }
+        else if (!FlagGet(FLAG_ADVENTURE_STARTED))
         {
             isShiny = FALSE;
         }
@@ -4957,7 +4965,7 @@ enum Species GetEvolutionTargetSpecies(struct Pokemon *mon, enum EvolutionMode m
         holdEffect = GetItemHoldEffect(heldItem);
 
     // Prevent evolution with Everstone, unless we're just viewing the party menu with an evolution item
-    if (holdEffect == HOLD_EFFECT_PREVENT_EVOLVE
+    if ((holdEffect == HOLD_EFFECT_PREVENT_EVOLVE || holdEffect == HOLD_EFFECT_EVIOLITE)
         && mode != EVO_MODE_ITEM_CHECK
         && (P_KADABRA_EVERSTONE < GEN_4 || species != SPECIES_KADABRA))
         return SPECIES_NONE;
@@ -5497,7 +5505,9 @@ void MonGainEVs(struct Pokemon *mon, enum Species defeatedSpecies)
         switch (i)
         {
         case STAT_HP:
-            if (holdEffect == HOLD_EFFECT_POWER_ITEM && stat == STAT_HP)
+            if (GetMonData(mon, MON_DATA_SPECIES, 0) == SPECIES_SHEDINJA)
+                evIncrease = 0;
+            else if (holdEffect == HOLD_EFFECT_POWER_ITEM && stat == STAT_HP)
                 evIncrease = (gSpeciesInfo[defeatedSpecies].evYield_HP + bonus) * multiplier;
             else
                 evIncrease = gSpeciesInfo[defeatedSpecies].evYield_HP * multiplier;
@@ -5597,6 +5607,13 @@ u8 CanLearnTeachableMove(enum Species species, enum Move move)
         if (teachableLearnset[i] == move)
             return TRUE;
     }
+    if ((species == SPECIES_ROTOM_HEAT && (move == MOVE_FLAMETHROWER || move == MOVE_OVERHEAT))
+        || (species == SPECIES_ROTOM_WASH && (move == MOVE_SURF || move == MOVE_HYDRO_PUMP))
+        || (species == SPECIES_ROTOM_FROST && (move == MOVE_ICE_BEAM || move == MOVE_BLIZZARD))
+        || (species == SPECIES_ROTOM_FAN && move == MOVE_AIR_SLASH)
+        || (species == SPECIES_ROTOM_MOW && (move == MOVE_ENERGY_BALL || move == MOVE_LEAF_STORM))
+    )
+        return TRUE;
     return FALSE;
 }
 
@@ -5607,9 +5624,9 @@ u8 GetLevelUpMovesBySpecies(enum Species species, u16 *moves)
     const struct LevelUpMove *learnset = GetSpeciesLevelUpLearnset(species);
 
     for (i = 0; i < MAX_LEVEL_UP_MOVES && learnset[i].move != LEVEL_UP_MOVE_END; i++)
-         moves[numMoves++] = learnset[i].move;
+        moves[numMoves++] = learnset[i].move;
 
-     return numMoves;
+    return numMoves;
 }
 
 u16 SpeciesToPokedexNum(enum Species species)
@@ -5702,10 +5719,6 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_CHAMPION:
             return MUS_VS_CHAMPION;
         case TRAINER_CLASS_RIVAL:
-            if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
-                return MUS_VS_RIVAL;
-            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleWallyName))
-                return MUS_VS_TRAINER;
             return MUS_VS_RIVAL;
         case TRAINER_CLASS_ELITE_FOUR:
             return MUS_VS_ELITE_FOUR;
@@ -5963,7 +5976,7 @@ static inline bool32 CanFirstMonBoostHeldItemRarity(void)
 
 void SetWildMonHeldItem(void)
 {
-    if (!(gBattleTypeFlags & (BATTLE_TYPE_LEGENDARY | BATTLE_TYPE_TRAINER | BATTLE_TYPE_PYRAMID | BATTLE_TYPE_PIKE)))
+    if (!(gBattleTypeFlags & (BATTLE_TYPE_TRAINER | BATTLE_TYPE_PYRAMID | BATTLE_TYPE_PIKE)))
     {
         u16 rnd;
         enum Species species;

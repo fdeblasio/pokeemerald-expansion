@@ -2840,26 +2840,29 @@ bool32 TryFieldEffects(enum FieldEffectCases caseId)
 
         break;
     case FIELD_EFFECT_OVERWORLD_TERRAIN:   // terrain starting from overworld weather
+#define SET_TERRAIN(Terrain)                                                 \
+    gFieldStatuses = STATUS_FIELD_##Terrain##_TERRAIN;                       \
+    gFieldTimers.terrainTimer = 0;                                           \
+    gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_SET_##Terrain; \
+    BattleScriptPushCursorAndCallback(BattleScript_OverworldTerrain);        \
+    effect = TRUE;
+
         if (B_THUNDERSTORM_TERRAIN == TRUE
          && !(gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN)
          && GetCurrentWeather() == WEATHER_RAIN_THUNDERSTORM)
         {
             // overworld weather started rain, so just do electric terrain anim
-            gFieldStatuses = STATUS_FIELD_ELECTRIC_TERRAIN;
-            gFieldTimers.terrainTimer = 0;
-            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_SET_ELECTRIC;
-            BattleScriptPushCursorAndCallback(BattleScript_OverworldTerrain);
-            effect = TRUE;
+            SET_TERRAIN(ELECTRIC)
         }
         else if (B_OVERWORLD_FOG >= GEN_8
               && (GetCurrentWeather() == WEATHER_FOG_HORIZONTAL || GetCurrentWeather() == WEATHER_FOG_DIAGONAL)
               && !(gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN))
         {
-            gFieldStatuses = STATUS_FIELD_MISTY_TERRAIN;
-            gFieldTimers.terrainTimer = 0;
-            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_SET_MISTY;
-            BattleScriptPushCursorAndCallback(BattleScript_OverworldTerrain);
-            effect = TRUE;
+            SET_TERRAIN(MISTY)
+        }
+        else if ((gMapHeader.mapLayoutId == LAYOUT_VERDANTURF_TOWN || gBattleEnvironment == BATTLE_TERRAIN_LONG_GRASS) && !(gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN))
+        {
+            SET_TERRAIN(GRASSY)
         }
         break;
     case FIELD_EFFECT_OVERWORLD_WEATHER:

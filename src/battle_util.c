@@ -6923,6 +6923,9 @@ static inline u32 CalcAttackStat(struct DamageContext *ctx)
         if (gBattleMons[battlerAtk].species == SPECIES_HUNTAIL && IsBattleMovePhysical(move))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
+        if (gBattleMons[battlerAtk].species == SPECIES_HUNTAIL && IsBattleMovePhysical(move))
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+        break;
     case HOLD_EFFECT_LIGHT_BALL:
         if (atkBaseSpeciesId == SPECIES_PIKACHU && (GetConfig(B_LIGHT_BALL_ATTACK_BOOST) >= GEN_4 || IsBattleMoveSpecial(move)))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
@@ -7107,6 +7110,9 @@ static inline u32 CalcDefenseStat(struct DamageContext *ctx)
     case HOLD_EFFECT_DEEP_SEA_SCALE:
         if (gBattleMons[battlerDef].species == SPECIES_CLAMPERL && !usesDefStat)
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
+        if (gBattleMons[battlerDef].species == SPECIES_GOREBYSS && usesDefStat)
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+        break;
         if (gBattleMons[battlerDef].species == SPECIES_GOREBYSS && usesDefStat)
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;

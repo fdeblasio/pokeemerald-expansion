@@ -645,7 +645,6 @@ bool32 TryRunFromBattle(u32 battler)
 {
     bool32 effect = FALSE;
     u8 holdEffect;
-    u8 pyramidMultiplier;
     u8 speedVar;
 
     // If this flag is set, running will never be successful under any circumstances.
@@ -671,24 +670,9 @@ bool32 TryRunFromBattle(u32 battler)
     }
     else if (GetBattlerAbility(battler) == ABILITY_RUN_AWAY)
     {
-        if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE)
-        {
-            gBattleStruct->runTries++;
-            pyramidMultiplier = GetPyramidRunMultiplier();
-            speedVar = (gBattleMons[battler].speed * pyramidMultiplier) / (gBattleMons[BATTLE_OPPOSITE(battler)].speed) + (gBattleStruct->runTries * 30);
-            if (speedVar > (Random() & 0xFF))
-            {
-                gLastUsedAbility = ABILITY_RUN_AWAY;
-                gProtectStructs[battler].fleeType = FLEE_ABILITY;
-                effect++;
-            }
-        }
-        else
-        {
-            gLastUsedAbility = ABILITY_RUN_AWAY;
-            gProtectStructs[battler].fleeType = FLEE_ABILITY;
-            effect++;
-        }
+        gLastUsedAbility = ABILITY_RUN_AWAY;
+        gProtectStructs[battler].fleeType = FLEE_ABILITY;
+        effect++;
     }
     else if (gBattleTypeFlags & (BATTLE_TYPE_FRONTIER | BATTLE_TYPE_TRAINER_HILL) && gBattleTypeFlags & BATTLE_TYPE_TRAINER)
     {
@@ -698,20 +682,19 @@ bool32 TryRunFromBattle(u32 battler)
     {
         effect++;
     }
+    else if (gStatuses3[BATTLE_OPPOSITE(battler)] & STATUS3_SEMI_INVULNERABLE) {
+        effect++;
+    }
+    else if (gBattleMons[BATTLE_OPPOSITE(battler)].status1 & (STATUS1_SLEEP || STATUS1_FREEZE)) {
+        effect++;
+    }
     else
     {
         u8 runningFromBattler = BATTLE_OPPOSITE(battler);
         if (!IsBattlerAlive(runningFromBattler))
             runningFromBattler |= BIT_FLANK;
 
-        if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE)
-        {
-            pyramidMultiplier = GetPyramidRunMultiplier();
-            speedVar = (gBattleMons[battler].speed * pyramidMultiplier) / (gBattleMons[runningFromBattler].speed) + (gBattleStruct->runTries * 30);
-            if (speedVar > (Random() & 0xFF))
-                effect++;
-        }
-        else if (gBattleMons[battler].speed < gBattleMons[runningFromBattler].speed)
+        if (gBattleMons[battler].speed < gBattleMons[runningFromBattler].speed)
         {
             speedVar = (gBattleMons[battler].speed * 128) / (gBattleMons[runningFromBattler].speed) + (gBattleStruct->runTries * 30);
             if (speedVar > (Random() & 0xFF))

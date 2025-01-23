@@ -39,7 +39,6 @@ void HealPlayerParty(void)
     u32 i;
     for (i = 0; i < gPartiesCount[B_TRAINER_0]; i++)
         HealPokemon(&gParties[B_TRAINER_0][i]);
-    if (OW_PC_HEAL >= GEN_8)
         HealPlayerBoxes();
 
     // Recharge Tera Orb, if possible.

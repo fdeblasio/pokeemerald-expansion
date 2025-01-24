@@ -986,59 +986,65 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
     - Tera Starstorm
 
 - The following moves/abilities/other effects show the correct power both in battle and on the summary screen:
-    - STAB/Adaptability
-    - Eruption/Water Spout/Dragon Energy
-    - Return
-    - Frustration
-    - Acrobatics
-    - Facade
-    - Technician
-    - Toxic Boost
-    - Flare Boost
-    - Reckless
-    - Iron Fist
-    - Sheer Force
-    - Tough Claws
-    - Strong Jaw
-    - Mega Launcher
-    - Water Bubble
-    - Steelworker
-    - Steely Spirit
-    - Aerilate
-    - Refrigerate
-    - Pixilate
-    - Galvanize
-    - Normalize
-    - Punk Rock
-    - Transistor
-    - Dragon's Maw
-    - Rocky Payload
-    - Sharpness
-    - Punching Glove
-    - Hustle
-    - Moves that always crit (Frost Breath, Storm Throw, Surging Strikes, Wicked Blow, Flower Trick)/Sniper
-    - Strike count for regular moves
+    Moves:
+        - Eruption/Water Spout/Dragon Energy
+        - Return
+        - Frustration
+        - Weather Ball
+        - Acrobatics
+        - Damp
+        - Misty Explosion
+        - Terrain Pulse
+        - Expanding Force
+        - Rising Voltage
+        - Psyblade
+        - Facade
+        - Solar Beam/Solar Blade in non-sunny weather
+        - Earthquake/Magnitude in Grassy Terrain
+        - Hydro Steam
+    Abilities:
+        - Technician
+        - Reckless
+        - Iron Fist
+        - Sheer Force
+        - Sand Force
+        - Tough Claws
+        - Strong Jaw
+        - Mega Launcher
+        - Water Bubble
+        - Steelworker
+        - Steely Spirit
+        - Aerilate
+        - Refrigerate
+        - Pixilate
+        - Galvanize
+        - Normalize
+        - Punk Rock
+        - Transistor
+        - Dragon's Maw
+        - Rocky Payload
+        - Sharpness
+        - Hustle
+    Misc:
+        - Moves that always crit (Frost Breath, Storm Throw, Surging Strikes, Wicked Blow, Flower Trick)
+            - Sniper
+        - Strike count for regular moves
+        - Punching Glove
+        - STAB
+            - Adaptability
+        - Sun/Rain
+        - Terrain
 - The following moves/abilities/other effects show the correct power in battle:
-    - Fury Cutter
-    - Spit Up
-    - Weather Ball
-    - Stored Power
-    - Misty Explosion
-    - Grav Apple
-    - Terrain Pulse
-    - Expanding Force
-    - Rising Voltage
-    - Psyblade
-    - Rage Fist
-    - Solar Beam/Solar Blade in non-sunny weather
-    - Stomping Tantrum
-    - Earthquake/Magnitude in Grassy Terrain
-    - Sand Force
-    - Hydro Steam
-    - Sun/Rain
-    - Terrain
-    - Charge
-    - Mud Sport/Water Sport
+    Moves:
+        - Fury Cutter
+        - Spit Up
+        - Stored Power
+        - Grav Apple
+        - Rage Fist
+        - Stomping Tantrum
+    Misc:
+        - Charge
+        - Mud Sport/Water Sport
 
 - The following effects on accuracy are now reflected in battle and on the summary screen:
     - Thunder and Hurricane having 50% accuracy in sun

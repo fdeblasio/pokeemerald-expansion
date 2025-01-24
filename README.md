@@ -977,10 +977,10 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
     - Raging Bull
     - Ivy Cudgel
     - Terrain Pulse
-    - Moves affected by Aerilate, Refrigerate, Pixilate, Galvanize
-    - Moves affected by Normalize
     - Moves affected by Liquid Voice
     - Aura Wheel
+    - Moves affected by Aerilate, Refrigerate, Pixilate, and Galvanize
+    - Moves affected by Normalize
 - The following moves now show up as the right type in battle:
     - Tera Blast
     - Tera Starstorm

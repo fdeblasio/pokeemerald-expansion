@@ -16791,35 +16791,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .battleAnimScript = gBattleAnimMove_PhotonGeyser,
     },
 
-    [MOVE_PLACEHOLDER_676] =
-    {
-        .name = COMPOUND_STRING("Zippy Zap"),
-        .description = COMPOUND_STRING(
-            "Electric bursts always go\n"
-            "first and land a critical hit."),
-        .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_8 ? 80 : 50,
-        .type = TYPE_ELECTRIC,
-        .accuracy = 100,
-        .pp = B_UPDATED_MOVE_DATA >= GEN_8 ? 10 : 15,
-        .target = MOVE_TARGET_SELECTED,
-        .priority = 2,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
-        .mirrorMoveBanned = B_UPDATED_MOVE_FLAGS < GEN_8,
-        .alwaysCriticalHit = TRUE,
-        .metronomeBanned = TRUE,
-        #if B_UPDATED_MOVE_DATA >= GEN_8
-            .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_EVS_PLUS_1,
-            .chance = 100,
-            .sheerForceBoost = SHEER_FORCE_NO_BOOST,
-        }),
-        #endif
-        .battleAnimScript = gBattleAnimMove_ZippyZap,
-    },
-
     #define PLACEHOLDER_MOVE(Number) [MOVE_PLACEHOLDER_##Number] = {}
+    PLACEHOLDER_MOVE(676),
     PLACEHOLDER_MOVE(677),
     PLACEHOLDER_MOVE(678),
     PLACEHOLDER_MOVE(679),

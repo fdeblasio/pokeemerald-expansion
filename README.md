@@ -961,18 +961,20 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 ### Summary Screen
 - The following moves now show up as the right type both in battle and on the summary screen:
+    - Weather Ball
     - Hidden Power
     - Judgement
     - Techno Blast
-    - Revelation Dance
     - Multi-Attack
-    - Aura Wheel
+    - Revelation Dance
     - Raging Bull
     - Ivy Cudgel
-    - Moves affected by Normalize, Aerilate, Refrigerate, Pixilate, Galvanize, or Liquid Voice
-- The following moves now show up as the right type in battle:
-    - Weather Ball
     - Terrain Pulse
+    - Moves affected by Aerilate, Refrigerate, Pixilate, Galvanize
+    - Moves affected by Normalize
+    - Moves affected by Liquid Voice
+    - Aura Wheel
+- The following moves now show up as the right type in battle:
     - Tera Blast
     - Tera Starstorm
 
@@ -1032,14 +1034,13 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Mud Sport/Water Sport
 
 - The following effects on accuracy are now reflected in battle and on the summary screen:
+    - Thunder and Hurricane having 50% accuracy in sun
+    - Thunder, Hurricane, Bleakwind Storm, Wildbolt Storm, and Sandsear Storm having 100% accuracy in rain
+    - Blizzard having 100% accuracy in snow/hail
     - Compound Eyes
     - Hustle
     - Victory Star
     - Wide Lens
-- The effects of weather on accuracy is now reflected in battle:
-    - Thunder and Hurricane having 50% accuracy in sun
-    - Thunder, Hurricane, Bleakwind Storm, Wildbolt Storm, and Sandsear Storm having 100% accuracy in rain
-    - Blizzard having 100% accuracy in snow/hail
 
 ### Pokémon:
 - Pokémon have all their moves from their movesets from Gen 7 onwards, at the most recent levels

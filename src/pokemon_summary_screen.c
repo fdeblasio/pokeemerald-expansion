@@ -3955,6 +3955,8 @@ static void PrintMoveNameAndPP(u8 moveIndex)
 
 static void PrintMovePowerAndAccuracy(u16 moveIndex)
 {
+    struct Pokemon *mon = &sMonSummaryScreen->currentMon;
+
     const u8 *text;
     if (moveIndex != MOVE_NONE)
     {
@@ -3973,7 +3975,7 @@ static void PrintMovePowerAndAccuracy(u16 moveIndex)
 
         PrintTextOnWindow(PSS_LABEL_WINDOW_MOVES_POWER_ACC, text, 53, 1, 0, 0);
 
-        u32 accuracy = GetMoveAccuracy(moveIndex);
+        u32 accuracy = GetDynamicAccuracy(mon, moveIndex, 0);
         if (accuracy == 0)
         {
             text = gText_ThreeDashes;

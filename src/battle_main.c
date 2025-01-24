@@ -6180,6 +6180,64 @@ void SetTypeBeforeUsingMove(u32 move, u32 battler)
     }
 }
 
+u32 GetDynamicAccuracy(struct Pokemon *mon, u32 move, u32 battler){
+    u32 accuracy = GetMoveAccuracy(move);
+    u32 moveEffect = GetMoveEffect(move);
+    u32 holdEffect, ability;
+
+    if (gMain.inBattle)
+    {
+        holdEffect = GetBattlerHoldEffect(battler, TRUE);
+        ability = GetBattlerAbility(battler);
+    }
+    else
+    {
+        holdEffect = ItemId_GetHoldEffect(GetMonData(mon, MON_DATA_HELD_ITEM, 0));
+        ability = GetMonAbility(mon);
+    }
+
+
+    if (gMain.inBattle && HasWeatherEffect())
+    {
+        if (gBattleWeather & B_WEATHER_SUN && moveEffect == EFFECT_THUNDER)
+            accuracy = 50;
+        else if (gBattleWeather & B_WEATHER_RAIN && (moveEffect == EFFECT_THUNDER || moveEffect == EFFECT_RAIN_ALWAYS_HIT))
+            accuracy = 100;
+        else if (gBattleWeather & (B_WEATHER_SNOW | B_WEATHER_HAIL) && moveEffect == EFFECT_BLIZZARD)
+            accuracy = 100;
+    }
+    else
+    {
+        switch (gWeatherPtr->currWeather)
+        {
+        case WEATHER_DROUGHT:
+            if (moveEffect == EFFECT_THUNDER)
+                accuracy = 50;
+            break;
+        case WEATHER_RAIN:
+        case WEATHER_RAIN_THUNDERSTORM:
+            if (moveEffect == EFFECT_THUNDER || moveEffect == EFFECT_RAIN_ALWAYS_HIT)
+                accuracy = 100;
+            break;
+        case WEATHER_SNOW:
+            if (moveEffect == EFFECT_BLIZZARD)
+                accuracy = 100;
+        }
+    }
+
+    if (ability == ABILITY_COMPOUND_EYES)
+        accuracy = (accuracy * 130) / 100;
+    else if (ability == ABILITY_VICTORY_STAR)
+        accuracy = (accuracy * 110) / 100;
+    else if (ability == ABILITY_HUSTLE && GetMoveCategory(move) == DAMAGE_CATEGORY_PHYSICAL)
+        accuracy = (accuracy * 80) / 100;
+
+    if (holdEffect == HOLD_EFFECT_WIDE_LENS)
+        accuracy = (accuracy * 110) / 100;
+
+    return min(accuracy, 100);
+}
+
 // Queues stat boosts for a given battler for totem battles
 void ScriptSetTotemBoost(struct ScriptContext *ctx)
 {

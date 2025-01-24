@@ -109,6 +109,7 @@ void RunBattleScriptCommands(void);
 void SpecialStatusesClear(void);
 u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, enum MonState monInBattle);
 void SetTypeBeforeUsingMove(u32 move, u32 battlerAtk);
+u32 GetDynamicAccuracy(struct Pokemon *mon, u32 move, u32 battler);
 bool32 IsWildMonSmart(void);
 u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer *trainer, bool32 firstTrainer, u32 battleTypeFlags);
 void ModifyPersonalityForNature(u32 *personality, u32 newNature);

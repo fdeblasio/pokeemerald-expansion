@@ -1723,8 +1723,9 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
 {
     struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct*)(&gBattleResources->bufferA[battler][4]);
     u16 move = moveInfo->moves[gMoveSelectionCursor[battler]];
+    struct Pokemon *mon = &gPlayerParty[gBattlerPartyIndexes[battler]];
     u16 pwr = GetMovePower(move);
-    u16 acc = GetMoveAccuracy(move);
+    u32 acc = GetDynamicAccuracy(mon, move, battler);
 
     u8 pwr_num[3], acc_num[3];
     u8 cat_desc[7] = _("CAT: ");
@@ -1733,16 +1734,20 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     u8 cat_start[] = _("{CLEAR_TO 0x03}");
     u8 pwr_start[] = _("{CLEAR_TO 0x38}");
     u8 acc_start[] = _("{CLEAR_TO 0x6D}");
+
     LoadMessageBoxAndBorderGfx();
     DrawStdWindowFrame(B_WIN_MOVE_DESCRIPTION, FALSE);
+
     if (pwr < 2)
         StringCopy(pwr_num, gText_BattleSwitchWhich5);
     else
         ConvertIntToDecimalStringN(pwr_num, pwr, STR_CONV_MODE_LEFT_ALIGN, 3);
+
     if (acc < 2)
         StringCopy(acc_num, gText_BattleSwitchWhich5);
     else
         ConvertIntToDecimalStringN(acc_num, acc, STR_CONV_MODE_LEFT_ALIGN, 3);
+
     StringCopy(gDisplayedStringBattle, cat_start);
     StringAppend(gDisplayedStringBattle, cat_desc);
     StringAppend(gDisplayedStringBattle, pwr_start);

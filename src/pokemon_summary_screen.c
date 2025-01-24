@@ -3962,8 +3962,10 @@ static void PrintMovePowerAndAccuracy(u16 moveIndex)
     {
         FillWindowPixelRect(PSS_LABEL_WINDOW_MOVES_POWER_ACC, PIXEL_FILL(0), 53, 0, 19, 32);
 
-        u32 power = GetMovePower(moveIndex);
-        if (power < 2)
+        u32 power = GetDynamicPower(mon, moveIndex, 0);
+        u32 moveEffect = GetMoveEffect(moveIndex);
+
+        if (power <= 2 && moveEffect != EFFECT_POWER_BASED_ON_USER_HP && moveEffect != EFFECT_RETURN && moveEffect != EFFECT_FRUSTRATION)
         {
             text = gText_ThreeDashes;
         }

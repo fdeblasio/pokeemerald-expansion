@@ -6180,6 +6180,322 @@ void SetTypeBeforeUsingMove(u32 move, u32 battler)
     }
 }
 
+bool8 IsOverworldMonGrounded(struct Pokemon *mon)
+{
+    u32 holdEffect = ItemId_GetHoldEffect(GetMonData(mon, MON_DATA_HELD_ITEM, 0));
+
+    if (holdEffect == HOLD_EFFECT_IRON_BALL)
+        return TRUE;
+    if (holdEffect == HOLD_EFFECT_AIR_BALLOON)
+        return FALSE;
+    if (GetMonAbility(mon) == ABILITY_LEVITATE)
+        return FALSE;
+    if (gSpeciesInfo[GetMonData(mon, MON_DATA_SPECIES)].types[0] == TYPE_FLYING || gSpeciesInfo[GetMonData(mon, MON_DATA_SPECIES)].types[1] == TYPE_FLYING)
+        return FALSE;
+    return TRUE;
+}
+
+u32 GetDynamicPower(struct Pokemon *mon, u32 move, u32 battler){
+    u32 power = GetMovePower(move);
+    u32 moveEffect = GetMoveEffect(move);
+    u32 type = CheckDynamicMoveType(mon, move, battler);
+    u32 category = GetMoveCategory(move);
+    u32 species, heldItem, holdEffect, ability, type1, type2, type3, status;
+    bool8 isSunny, isRainy, isSandstorm, isSnowy;
+    bool8 isElectric, isMisty, isGrassy, isPsychic;
+
+    if (gMain.inBattle)
+    {
+        species = gBattleMons[battler].species;
+        heldItem = gBattleMons[battler].item;
+        holdEffect = GetBattlerHoldEffect(battler, TRUE);
+        ability = GetBattlerAbility(battler);
+        type1 = gBattleMons[battler].types[0];
+        type2 = gBattleMons[battler].types[1];
+        type3 = gBattleMons[battler].types[2];
+        status = gBattleMons[battler].status1;
+        isSunny = gBattleWeather & B_WEATHER_SUN;
+        isRainy = gBattleWeather & B_WEATHER_RAIN;
+        isSandstorm = gBattleWeather & B_WEATHER_SANDSTORM;
+        isSnowy = gBattleWeather & (B_WEATHER_HAIL | B_WEATHER_SNOW);
+        isElectric = IsBattlerTerrainAffected(battler, STATUS_FIELD_ELECTRIC_TERRAIN);
+        isMisty = IsBattlerTerrainAffected(battler, STATUS_FIELD_MISTY_TERRAIN);
+        isGrassy = IsBattlerTerrainAffected(battler, STATUS_FIELD_GRASSY_TERRAIN);
+        isPsychic = IsBattlerTerrainAffected(battler, STATUS_FIELD_PSYCHIC_TERRAIN);
+    }
+    else
+    {
+        species = GetMonData(mon, MON_DATA_SPECIES);
+        heldItem = GetMonData(mon, MON_DATA_HELD_ITEM, 0);
+        holdEffect = ItemId_GetHoldEffect(heldItem);
+        ability = GetMonAbility(mon);
+        type1 = gSpeciesInfo[species].types[0];
+        type2 = gSpeciesInfo[species].types[1];
+        type3 = TYPE_MYSTERY;
+        status = GetMonData(mon, MON_DATA_STATUS);
+        isSunny = gWeatherPtr->currWeather == WEATHER_DROUGHT;
+        isRainy = gWeatherPtr->currWeather == WEATHER_RAIN || gWeatherPtr->currWeather == WEATHER_RAIN_THUNDERSTORM;
+        isSandstorm = gWeatherPtr->currWeather == WEATHER_SANDSTORM;
+        isSnowy = gWeatherPtr->currWeather == WEATHER_SNOW;
+        isElectric = gWeatherPtr->currWeather == WEATHER_RAIN_THUNDERSTORM && B_THUNDERSTORM_TERRAIN && IsOverworldMonGrounded(mon);
+        isMisty = (gWeatherPtr->currWeather == WEATHER_FOG_HORIZONTAL || gWeatherPtr->currWeather == WEATHER_FOG_DIAGONAL) && B_OVERWORLD_FOG >= GEN_8 && IsOverworldMonGrounded(mon);
+        isGrassy = (gWeatherPtr->currWeather == WEATHER_VERDANT || gBattleTerrain == BATTLE_TERRAIN_LONG_GRASS) && IsOverworldMonGrounded(mon);
+        isPsychic = FALSE && IsOverworldMonGrounded(mon); //Can be changed if ever overworld weather or terrain that causes Psychic Terrain
+    }
+
+    switch (moveEffect)
+    {
+    case EFFECT_POWER_BASED_ON_USER_HP:
+        power = GetMonData(mon, MON_DATA_HP) * power / GetMonData(mon, MON_DATA_MAX_HP);
+        break;
+    case EFFECT_RETURN:
+        power = 10 * GetMonData(mon, MON_DATA_FRIENDSHIP) / 20; //Originally 25
+        break;
+    case EFFECT_FRUSTRATION:
+        power = 10 * (MAX_FRIENDSHIP - GetMonData(mon, MON_DATA_FRIENDSHIP)) / 20; //Originally 25
+        break;
+    case EFFECT_FURY_CUTTER:
+        if (gMain.inBattle)
+            power = min(160, CalcFuryCutterBasePower(power, gDisableStructs[battler].furyCutterCounter + 1));
+        break;
+    case EFFECT_SPIT_UP:
+        if (gMain.inBattle)
+            power = 100 * gDisableStructs[battler].stockpileCounter;
+        break;
+    case EFFECT_WEATHER_BALL:
+        if (gMain.inBattle)
+        {
+            if (gBattleWeather & B_WEATHER_ANY)
+                power *= 2;
+        }
+        else if (isSunny || isRainy || isSandstorm || isSnowy)
+            power *= 2;
+        break;
+    case EFFECT_ACROBATICS:
+        if (heldItem == ITEM_NONE)
+            power *= 2;
+        break;
+    case EFFECT_STORED_POWER:
+        if (gMain.inBattle)
+            power += (CountBattlerStatIncreases(battler, TRUE) * 20);
+        break;
+    case EFFECT_EXPLOSION:
+        if (ability == ABILITY_DAMP)
+            power = 0;
+        else if (isMisty && move == MOVE_MISTY_EXPLOSION)
+            UQ4_12_MULTIPLY(power, 1.5);
+    case EFFECT_GRAV_APPLE:
+        if (gMain.inBattle)
+        {
+            if (gFieldStatuses & STATUS_FIELD_GRAVITY)
+                UQ4_12_MULTIPLY(power, 1.5);
+        }
+        break;
+    case EFFECT_TERRAIN_PULSE:
+        if (isElectric || isMisty || isGrassy || isPsychic)
+            power *= 2;
+    case EFFECT_EXPANDING_FORCE:
+        if (isPsychic)
+            UQ4_12_MULTIPLY(power, 1.5);
+    case EFFECT_RISING_VOLTAGE:
+        if (isElectric) //Actually matters if opponent is affected by terrain
+            power *= 2;
+    case EFFECT_PSYBLADE:
+        if (gMain.inBattle)
+        {
+            if (gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN)
+                UQ4_12_MULTIPLY(power, 1.5);
+        }
+        else if (gWeatherPtr->currWeather == WEATHER_RAIN_THUNDERSTORM && B_THUNDERSTORM_TERRAIN)
+            UQ4_12_MULTIPLY(power, 1.5);
+    case EFFECT_RAGE_FIST:
+        if (gMain.inBattle)
+            power = min(350, 50 + (50 * gBattleStruct->timesGotHit[GetBattlerSide(battler)][gBattlerPartyIndexes[battler]]));
+    case EFFECT_FACADE:
+        if (status & (STATUS1_BURN | STATUS1_PSN_ANY | STATUS1_PARALYSIS | STATUS1_FROSTBITE))
+            UQ4_12_MULTIPLY(power, 2.0);
+        break;
+    case EFFECT_SOLAR_BEAM:
+        if (gMain.inBattle)
+        {
+            if (IsBattlerWeatherAffected(battler, (B_WEATHER_HAIL | B_WEATHER_SANDSTORM | B_WEATHER_RAIN | B_WEATHER_SNOW | B_WEATHER_FOG)))
+                UQ4_12_MULTIPLY(power, 0.5);
+        }
+        else if (isRainy || isSandstorm || isSnowy)
+            UQ4_12_MULTIPLY(power, 0.5);
+        break;
+    case EFFECT_STOMPING_TANTRUM:
+        if (gMain.inBattle)
+        {
+            if (gBattleStruct->battlerState[battler].lastMoveFailed)
+                UQ4_12_MULTIPLY(power, 2.0);
+        }
+        break;
+    case EFFECT_EARTHQUAKE:
+    case EFFECT_MAGNITUDE:
+        if (gMain.inBattle)
+        {
+            if (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN)
+                UQ4_12_MULTIPLY(power, 0.5);
+        }
+        else if (gWeatherPtr->currWeather == WEATHER_VERDANT || gBattleTerrain == BATTLE_TERRAIN_LONG_GRASS)
+            UQ4_12_MULTIPLY(power, 0.5);
+        break;
+    case EFFECT_HYDRO_STEAM:
+        if (isSunny && holdEffect != HOLD_EFFECT_UTILITY_UMBRELLA)
+            UQ4_12_MULTIPLY(power, 1.5);
+        break;
+    }
+
+    switch (ability)
+    {
+    case ABILITY_TECHNICIAN:
+        if (power <= 60)
+            UQ4_12_MULTIPLY(power, 1.5);
+        break;
+    case ABILITY_RECKLESS:
+        if (IsBattleMoveRecoil(move))
+            UQ4_12_MULTIPLY(power, 1.2);
+        break;
+    case ABILITY_IRON_FIST:
+        if (IsPunchingMove(move))
+            UQ4_12_MULTIPLY(power, 1.5); //Originally 1.2
+    case ABILITY_SHEER_FORCE:
+        if (MoveIsAffectedBySheerForce(move))
+            UQ4_12_MULTIPLY(power, 1.3);
+        break;
+    case ABILITY_SAND_FORCE:
+        if (isSandstorm && (type == TYPE_ROCK || type == TYPE_GROUND || type == TYPE_STEEL))
+            UQ4_12_MULTIPLY(power, 1.3);
+        break;
+    case ABILITY_TOUGH_CLAWS:
+        if (gMain.inBattle)
+        {
+            if (IsMoveMakingContact(move, battler))
+                UQ4_12_MULTIPLY(power, 1.3);
+        }
+        else if (MoveMakesContact(move) && !(holdEffect == HOLD_EFFECT_PUNCHING_GLOVE && IsPunchingMove(move)))
+            UQ4_12_MULTIPLY(power, 1.3);
+        break;
+    case ABILITY_STRONG_JAW:
+        if (IsBitingMove(move))
+            UQ4_12_MULTIPLY(power, 1.5);
+        break;
+    case ABILITY_MEGA_LAUNCHER:
+        if (IsPulseMove(move))
+            UQ4_12_MULTIPLY(power, 1.5);
+        break;
+    case ABILITY_WATER_BUBBLE:
+        if (type == TYPE_WATER)
+            UQ4_12_MULTIPLY(power, 2.0);
+        break;
+    case ABILITY_STEELWORKER:
+    case ABILITY_STEELY_SPIRIT:
+        if (type == TYPE_STEEL)
+            UQ4_12_MULTIPLY(power, 1.5);
+        break;
+    case ABILITY_AERILATE:
+    case ABILITY_REFRIGERATE:
+    case ABILITY_PIXILATE:
+    case ABILITY_GALVANIZE:
+        if (type == TYPE_NORMAL)
+            UQ4_12_MULTIPLY(power, 1.2);
+        break;
+    case ABILITY_NORMALIZE:
+        if (move != MOVE_HIDDEN_POWER
+         && move != MOVE_WEATHER_BALL
+         && move != MOVE_NATURAL_GIFT
+         && move != MOVE_JUDGMENT
+         && move != MOVE_TECHNO_BLAST
+         && move != MOVE_MULTI_ATTACK
+         && move != MOVE_TERRAIN_PULSE)
+            UQ4_12_MULTIPLY(power, 1.5);
+        break;
+    case ABILITY_PUNK_ROCK:
+        if (IsSoundMove(move))
+            UQ4_12_MULTIPLY(power, 1.5);
+        break;
+    case ABILITY_TRANSISTOR:
+        if (type == TYPE_ELECTRIC)
+            UQ4_12_MULTIPLY(power, 1.5);
+        break;
+    case ABILITY_DRAGONS_MAW:
+        if (type == TYPE_DRAGON)
+            UQ4_12_MULTIPLY(power, 1.5);
+        break;
+    case ABILITY_ROCKY_PAYLOAD:
+        if (type == TYPE_ROCK)
+            UQ4_12_MULTIPLY(power, 1.5);
+        break;
+    case ABILITY_SHARPNESS:
+        if (IsSlicingMove(move))
+            UQ4_12_MULTIPLY(power, 1.5);
+        break;
+    case ABILITY_HUSTLE:
+        if (category == DAMAGE_CATEGORY_PHYSICAL)
+            power = uq4_12_multiply_half_down(power, UQ_4_12(1.5));
+        break;
+    }
+
+    if (MoveAlwaysCrits(move))
+        power = uq4_12_multiply_half_down(power, B_CRIT_MULTIPLIER >= GEN_6 ? UQ_4_12(1.5) : UQ_4_12(2.0));
+        if (ability == ABILITY_SNIPER)
+            UQ4_12_MULTIPLY(power, 1.5);
+
+    if (GetMoveStrikeCount(move) > 1 && moveEffect == EFFECT_HIT)
+        power *= GetMoveStrikeCount(move);
+
+    if (holdEffect == HOLD_EFFECT_PUNCHING_GLOVE && IsPunchingMove(move))
+        UQ4_12_MULTIPLY(power, 1.1);
+
+    if (type1 == type || type2 == type || type3 == type){
+        if (ability == ABILITY_ADAPTABILITY)
+            UQ4_12_MULTIPLY(power, 2.0);
+        else
+            UQ4_12_MULTIPLY(power, 1.5);
+    }
+
+    if (holdEffect != HOLD_EFFECT_UTILITY_UMBRELLA){
+        if (isSunny){
+            if (type == TYPE_FIRE)
+                UQ4_12_MULTIPLY(power, 1.5);
+            else if (type == TYPE_WATER && moveEffect != EFFECT_HYDRO_STEAM)
+                UQ4_12_MULTIPLY(power, 0.5);
+        }
+        else if (isRainy){
+            if (type == TYPE_WATER)
+                UQ4_12_MULTIPLY(power, 1.5);
+            else if (type == TYPE_FIRE && moveEffect != EFFECT_HYDRO_STEAM)
+                UQ4_12_MULTIPLY(power, 0.5);
+        }
+    }
+
+    if (isGrassy && type == TYPE_GRASS)
+        UQ4_12_MULTIPLY(power, B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5));
+    else if (isElectric && type == TYPE_ELECTRIC)
+        UQ4_12_MULTIPLY(power, B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5));
+    else if (isMisty && type == TYPE_DRAGON) //Actually matters if opponent is affected by terrain
+        UQ4_12_MULTIPLY(power, 0.5);
+    else if (isPsychic && type == TYPE_PSYCHIC)
+        UQ4_12_MULTIPLY(power, B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5));
+
+    if (gMain.inBattle)
+    {
+        if (gStatuses3[battler] & STATUS3_CHARGED_UP && type == TYPE_ELECTRIC)
+            UQ4_12_MULTIPLY(power, 2.0);
+
+        if (type == TYPE_ELECTRIC && ((gFieldStatuses & STATUS_FIELD_MUDSPORT)
+        || AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_MUD_SPORT, 0)))
+            UQ4_12_MULTIPLY(power, B_SPORT_DMG_REDUCTION >= GEN_5 ? 0.33 : 0.5);
+
+        if (type == TYPE_FIRE && ((gFieldStatuses & STATUS_FIELD_WATERSPORT)
+        || AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_WATER_SPORT, 0)))
+            UQ4_12_MULTIPLY(power, B_SPORT_DMG_REDUCTION >= GEN_5 ? 0.33 : 0.5);
+    }
+
+    return power;
+}
+
 u32 GetDynamicAccuracy(struct Pokemon *mon, u32 move, u32 battler){
     u32 accuracy = GetMoveAccuracy(move);
     u32 moveEffect = GetMoveEffect(move);
@@ -6195,7 +6511,6 @@ u32 GetDynamicAccuracy(struct Pokemon *mon, u32 move, u32 battler){
         holdEffect = ItemId_GetHoldEffect(GetMonData(mon, MON_DATA_HELD_ITEM, 0));
         ability = GetMonAbility(mon);
     }
-
 
     if (gMain.inBattle && HasWeatherEffect())
     {

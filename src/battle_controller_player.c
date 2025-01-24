@@ -1731,8 +1731,9 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct*)(&gBattleResources->bufferA[battler][4]);
     u16 move = moveInfo->moves[gMoveSelectionCursor[battler]];
     struct Pokemon *mon = &gPlayerParty[gBattlerPartyIndexes[battler]];
-    u16 pwr = GetMovePower(move);
+    u16 pwr = GetDynamicPower(mon, move, battler);
     u32 acc = GetDynamicAccuracy(mon, move, battler);
+    u32 moveEffect = GetMoveEffect(move);
     enum DamageCategory cat = GetBattleMoveCategory(move);
 
     if (GetActiveGimmick(battler) == GIMMICK_DYNAMAX || IsGimmickSelected(battler, GIMMICK_DYNAMAX))
@@ -1753,7 +1754,7 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     LoadMessageBoxAndBorderGfx();
     DrawStdWindowFrame(B_WIN_MOVE_DESCRIPTION, FALSE);
 
-    if (pwr < 2)
+    if (pwr <= 2 && moveEffect != EFFECT_POWER_BASED_ON_USER_HP && moveEffect != EFFECT_RETURN && moveEffect != EFFECT_FRUSTRATION)
         StringCopy(pwr_num, gText_BattleSwitchWhich5);
     else
         ConvertIntToDecimalStringN(pwr_num, pwr, STR_CONV_MODE_LEFT_ALIGN, 3);

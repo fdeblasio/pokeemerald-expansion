@@ -161,6 +161,19 @@ Get rid of Gym Leader rematches needing two Pokemon
     - Poison Fang: 60->65
     - Shadow Punch: 60->75?
         - Would need Ghost-type never miss replacement
+    - Delta Stream Flying-type Weather Ball
+- Dynamic power/typing:
+    - Add more if statements for Utility Umbrella/Air Lock/Cloud Nine?
+    - IsBattleMovePhysical/Special/Status(move) vs category == DAMAGE_CATEGORY_XYZ
+    - More Abilities?:
+        - Flash Fire
+        - Swarm
+        - Torrent
+        - Blaze
+        - Overgrow
+        - Flower Gift
+        - Orichalum Pulse
+        - Hadron Engine
 
 ### Field Moves
 - Edit moves that work in field
@@ -193,6 +206,8 @@ Get rid of Gym Leader rematches needing two Pokemon
 - Combine Centers and Marts?
     - Use left wall where escalators used to be
     - Tileset doesn't seem to support it
+- Followers with weather abilities (or Cloud Nine/Air Lock) will change the overworld weather when following?
+    - Cloud Nine could do cloudy instead of clear
 
 ### Battle Frontier
 - Battle Tent Pokémon/EVs?

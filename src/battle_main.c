@@ -6044,11 +6044,27 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, u8 *ateBoost)
         return TYPE_DARK;
     }
     else if (moveType == TYPE_NORMAL
-          && ((!gMain.inBattle || TrySetAteType(move, battler, ability))
+          && ((TrySetAteType(move, battler, ability))
           && GetActiveGimmick(battler) != GIMMICK_DYNAMAX))
     {
         if (gMain.inBattle && ateBoost != NULL)
             *ateBoost = TRUE;
+
+        if (ability == ABILITY_PIXILATE){
+            return TYPE_FAIRY;
+        }
+        else if (ability == ABILITY_REFRIGERATE)
+        {
+            return TYPE_ICE;
+        }
+        else if (ability == ABILITY_AERILATE)
+        {
+            return TYPE_FLYING;
+        }
+        else if (ability == ABILITY_GALVANIZE)
+        {
+            return TYPE_ELECTRIC;
+        }
     }
     else if (moveType != TYPE_NORMAL
           && moveEffect != EFFECT_HIDDEN_POWER

@@ -66,6 +66,7 @@ static bool32 IsPowderMoveBlocked(struct DamageContext *ctx);
 const u8 *AbsorbedByDrainHpAbility(enum BattlerId battlerDef);
 const u8 *AbsorbedByStatIncreaseAbility(enum BattlerId battlerDef, enum Ability abilityDef, enum Stat statId, u32 statAmount);
 const u8 *AbsorbedByFlashFire(enum BattlerId battlerDef);
+const u8 *AbsorbedByCharging(enum BattlerId battlerDef);
 
 ARM_FUNC NOINLINE static uq4_12_t PercentToUQ4_12(u32 percent);
 ARM_FUNC NOINLINE static uq4_12_t PercentToUQ4_12_Floored(u32 percent);
@@ -2353,6 +2354,10 @@ bool32 CanAbilityAbsorbMove(struct DamageContext *ctx)
         if (IsWindMove(ctx->move))
             battleScript = AbsorbedByStatIncreaseAbility(ctx->battlerDef, ctx->abilityDef, STAT_ATK, 1);
         break;
+    case ABILITY_WIND_POWER:
+        if (IsWindMove(ctx->move))
+            battleScript = AbsorbedByCharging(ctx->battlerDef);
+        break;
     case ABILITY_FLASH_FIRE:
         if (ctx->moveType == TYPE_FIRE && (B_FLASH_FIRE_FROZEN >= GEN_5 || !(gBattleMons[ctx->battlerDef].status1 & STATUS1_FREEZE)))
             battleScript = AbsorbedByFlashFire(ctx->battlerDef);
@@ -2429,6 +2434,11 @@ const u8 *AbsorbedByFlashFire(enum BattlerId battlerDef)
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_FLASH_FIRE_NO_BOOST;
         return BattleScript_FlashFireBoost;
     }
+}
+
+const u8 *AbsorbedByCharging(enum BattlerId battlerDef)
+{
+    return = BattleScript_WindPowerActivates;
 }
 
 static u32 GetFirstBattlerOnSide(enum BattleSide side)
@@ -4218,15 +4228,11 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 effect++;
             }
             break;
-        case ABILITY_WIND_POWER:
-            if (!IsWindMove(gCurrentMove))
-                break;
-            // fall through
         case ABILITY_ELECTROMORPHOSIS:
             if (!gBattleStruct->unableToUseMove
              && IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES))
             {
-                BattleScriptCall(BattleScript_WindPowerActivates);
+                BattleScriptCall(BattleScript_ElectromorphosisActivates);
                 effect++;
             }
             break;

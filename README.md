@@ -1049,6 +1049,7 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
 - The following effects on accuracy are now reflected in battle and on the summary screen:
     - Thunder and Hurricane having 50% accuracy in sun
     - Thunder, Hurricane, Bleakwind Storm, Wildbolt Storm, and Sandsear Storm having 100% accuracy in rain
+        - Although the moves were boosted to have 100% accuracy all the time
     - Blizzard having 100% accuracy in snow/hail
     - Compound Eyes
     - Hustle

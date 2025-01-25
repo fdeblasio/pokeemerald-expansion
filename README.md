@@ -1038,6 +1038,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - The following effects on accuracy are now reflected in battle and on the summary screen:
     - Thunder and Hurricane having 50% accuracy in sun
     - Thunder, Hurricane, Bleakwind Storm, Wildbolt Storm, and Sandsear Storm having 100% accuracy in rain
+        - Although the moves were boosted to have 100% accuracy all the time
     - Blizzard having 100% accuracy in snow/hail
     - Compound Eyes
     - Hustle

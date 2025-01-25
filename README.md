@@ -739,6 +739,7 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Power: 65->75
         - Target: Both foes and ally->both foes
     - Thunderclap:
+        - Power: 70->80
         - PP: 5->10
     - Thunder Cage:
         - Accuracy: 90->100
@@ -787,6 +788,8 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Accuracy: 90->100
     - Crabhammer:
         - Accuracy: 90->100
+    - Hydro Steam:
+        - Power: 80->90
     - Octazooka:
         - Power: 65->90
         - Accuracy: 85->100
@@ -840,6 +843,8 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Accuracy: 90->100
     - Photon Geyser:
         - PP: 5->10
+    - Psyblade:
+        - Power: 80->90
     - Psycho Boost:
         - Accuracy: 90->100
         - PP: 5->10

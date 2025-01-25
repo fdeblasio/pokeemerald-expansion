@@ -139,7 +139,6 @@ Get rid of Gym Leader rematches needing two Pokemon
 - Gym leaders/Steven/Breeders can have Hidden Abilities
 
 ### Moves
-- Might need to increase MAX_LEVEL_UP_MOVES (at least to 25, but try to find largest moveset)
 - Find way for Rotom to learn special moves by level up (for relearning). Currently have TMs, but not all moves (Hydro Pump/Leaf Storm) are TMs
 - Find a way for newer gen TMs to be learned by Pokémon whose base forms don't learn the move (for example Eelektross or Toxtricity; or Capsakid not learning the Fire-type moves that Scovillain does)
     - Remove Snarl and Psychic Noise from Toxtricity's level up learnset once this is implemented

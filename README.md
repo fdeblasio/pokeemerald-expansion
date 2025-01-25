@@ -185,7 +185,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 - [Anon822 for removing map popups for the same map section](https://www.pokecommunity.com/showpost.php?p=10449889)
 - [Fyreeire for removing the extra save confirmation](https://github.com/pret/pokeemerald/wiki/Remove-the-extra-save-confirmation)
 - [hjk321 for extra save space](https://github.com/pret/pokeemerald/wiki/Extra-save-space-with-two-lines-of-code)
-- [ellabrella for increasing text speed beyond fast](https://www.pokecommunity.com/showpost.php?p=10400198)
 - [Mashanny for making text speed up without holding A/B](https://www.pokecommunity.com/showpost.php?p=10266385)
 - [Sapphire Jester for making the Soot Sack usuable](https://www.pokecommunity.com/showpost.php?p=10222284&postcount=178)
 
@@ -194,7 +193,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Followers will stop following you if you use the naming screen from the party menu. It will start to follow you again if you talk to it
 - Newer Pokémon don't have follower sprites
 - Newer moves don't have animations
-- When using items, the text box will be empty at the end. This is caused by some of the code changes from speeding up the text
 - AI_FLAG_ACE_POKEMON potentially broken in multi-battles (maybe only if both trainers have it)
 - If you help one of the Lilycove Pokémon Center ladies, the other lady thinks you've already helped her as well
     - Could have something to do with this: sContestLadyPtr->id = LILYCOVE_LADY_CONTEST
@@ -259,7 +257,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 - The naming screen automatically swaps to lowercase after the first letter
 - Rainy routes will automatically water berries
 - Premier Balls are now given for every multiple of 10 of any ball you buy (as opposed to only 1 for 10+ Poke Balls)
-- Faster text speed
 - Faster walking/surfing speed
 - Two Pokémon having the same original trainer no longer negatively affects breeding chances
 - HMs can now be forgotten

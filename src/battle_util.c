@@ -4357,6 +4357,10 @@ bool32 CanAbilityAbsorbMove(u32 battlerAtk, u32 battlerDef, u32 abilityDef, u32 
             statId = STAT_ATK;
         }
         break;
+    case ABILITY_WIND_POWER:
+        if (IsWindMove(move) && !(GetBattlerMoveTargetType(battlerAtk, move) & MOVE_TARGET_USER))
+            effect = MOVE_ABSORBED_BY_CHARGING;
+        break;
     case ABILITY_FLASH_FIRE:
         if (moveType == TYPE_FIRE && (B_FLASH_FIRE_FROZEN >= GEN_5 || !(gBattleMons[battlerDef].status1 & STATUS1_FREEZE)))
             effect = MOVE_ABSORBED_BY_BOOST_FLASH_FIRE;
@@ -4431,6 +4435,15 @@ bool32 CanAbilityAbsorbMove(u32 battlerAtk, u32 battlerDef, u32 abilityDef, u32 
                 battleScript = BattleScript_FlashFireBoost;
             else
                 battleScript = BattleScript_FlashFireBoost_PPLoss;
+        }
+        break;
+    case MOVE_ABSORBED_BY_CHARGING:
+        gBattleStruct->pledgeMove = FALSE;
+        if (MoveResultHasEffect(gBattlerTarget)
+            && !gProtectStructs[battlerAtk].confusionSelfDmg
+            && IsBattlerAlive(gBattlerTarget))
+        {
+            battleScript = BattleScript_WindPowerActivates;
         }
         break;
     }
@@ -6174,10 +6187,6 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
-        case ABILITY_WIND_POWER:
-            if (!IsWindMove(gCurrentMove))
-                break;
-            // fall through
         case ABILITY_ELECTROMORPHOSIS:
             if (!(gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_NO_EFFECT)
              && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
@@ -6185,7 +6194,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
              && IsBattlerAlive(gBattlerTarget))
             {
                 BattleScriptPushCursor();
-                gBattlescriptCurrInstr = BattleScript_WindPowerActivates;
+                gBattlescriptCurrInstr = BattleScript_ElectromorphosisActivates;
                 effect++;
             }
             break;

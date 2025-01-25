@@ -222,6 +222,7 @@ Get rid of Gym Leader rematches needing two Pokemon
 - New Mauville is Electric Terrain?
     - Could use metatiles (same as long grass) or try MAP_GROUP/MAP_NUM
     - Would need to update dynamics
+- Give Underwater the same type-effectiveness as rain?
 
 ### Battle Frontier
 - Battle Tent Pokémon/EVs?

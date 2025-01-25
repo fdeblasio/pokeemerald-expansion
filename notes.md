@@ -139,6 +139,7 @@ Get rid of Gym Leader rematches needing two Pokemon
 - Gym leaders/Steven/Breeders can have Hidden Abilities
 
 ### Moves
+- Might need to increase MAX_LEVEL_UP_MOVES (at least to 25, but try to find largest moveset)
 - Find way for Rotom to learn special moves by level up (for relearning). Currently have TMs, but not all moves (Hydro Pump/Leaf Storm) are TMs
 - Find a way for newer gen TMs to be learned by Pokémon whose base forms don't learn the move (for example Eelektross or Toxtricity; or Capsakid not learning the Fire-type moves that Scovillain does)
     - Remove Snarl and Psychic Noise from Toxtricity's level up learnset once this is implemented
@@ -162,6 +163,7 @@ Get rid of Gym Leader rematches needing two Pokemon
     - Shadow Punch: 60->75?
         - Would need Ghost-type never miss replacement
     - Delta Stream Flying-type Weather Ball
+    - Punk Rock makes Howl raise Attack by two?
 - Dynamic power/typing:
     - Add more if statements for Utility Umbrella/Air Lock/Cloud Nine?
     - IsBattleMovePhysical/Special/Status(move) vs category == DAMAGE_CATEGORY_XYZ
@@ -174,6 +176,12 @@ Get rid of Gym Leader rematches needing two Pokemon
         - Flower Gift
         - Orichalum Pulse
         - Hadron Engine
+    - In Battle:
+        - Laser Focus (with Sniper too)
+        - Accuracy modifiers
+    - Weather abilities count towards corresponding weather (for example, Drought would show the sunny boost)
+        - Include as part of isSunny?
+        - Same thing for Terrain/Surge abilities?
 
 ### Field Moves
 - Edit moves that work in field
@@ -208,6 +216,13 @@ Get rid of Gym Leader rematches needing two Pokemon
     - Tileset doesn't seem to support it
 - Followers with weather abilities (or Cloud Nine/Air Lock) will change the overworld weather when following?
     - Cloud Nine could do cloudy instead of clear
+- Try to get Verdanturf grass to start Grassy Terrain instead of messing with weather
+    - MB_SHORT_GRASS but unsure of what else uses that
+        - If it's fine, could use same technique as long grass
+    - Maybe could use MAP_GROUP/MAP_NUM instead
+- New Mauville is Electric Terrain?
+    - Could use metatiles (same as long grass) or try MAP_GROUP/MAP_NUM
+    - Would need to update dynamics
 
 ### Battle Frontier
 - Battle Tent Pokémon/EVs?
@@ -236,9 +251,6 @@ Get rid of Gym Leader rematches needing two Pokemon
     - Change Kirlia and Dusclops to fit the type of move used?
 
 ### Other
-- Try to get Verdanturf grass to start Grassy Terrain instead of messing with weather
-    - MB_SHORT_GRASS but unsure of what else uses that
-- Might need to increase MAX_LEVEL_UP_MOVES and/or MAX_RELEARNER_MOVES
 - Update palettes?:
     - Pokédex (and HGSS Pokédex)
     - look in graphics/ for more
@@ -271,6 +283,7 @@ Get rid of Gym Leader rematches needing two Pokemon
     - Now that Frontier mons are registered in the Pokédex, the National Pokédex is a bit less useless
 - In game trades
 - Edit max money?
+- If switching in battle, don't show "Switch" for current Pokémon
 - Debug menu improvements
 - Make inserting trainer sprites easier?
     - Wrapper for src/data/graphics/trainers.h?

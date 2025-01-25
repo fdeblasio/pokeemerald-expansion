@@ -65,8 +65,15 @@ bool32 IsPlayerSpinEntranceActive(void);
 bool32 IsPlayerSpinExitActive(void);
 void SetPlayerInvisibility(bool8 invisible);
 u8 player_get_pos_including_state_based_drift(s16 *x, s16 *y);
+<<<<<<< HEAD
 void SetPlayerAvatarFishing(enum Direction direction);
 bool8 ObjectMovingOnRockStairs(struct ObjectEvent *objectEvent, enum Direction direction);
+u16 GetPlayerCurMetatileBehavior(int);
+=======
+void SetPlayerAvatarFishing(u8 direction);
+bool8 ObjectMovingOnRockStairs(struct ObjectEvent *objectEvent, u8 direction);
+u16 GetPlayerCurMetatileBehavior(int);
+>>>>>>> 2627c6c8b8 (Dynamic power fixes)
 //sideways stairs
 enum Direction GetRightSideStairsDirection(enum Direction direction);
 enum Direction GetLeftSideStairsDirection(enum Direction direction);

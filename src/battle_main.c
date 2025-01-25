@@ -25,9 +25,10 @@
 #include "dma3.h"
 #include "event_data.h"
 #include "evolution_scene.h"
-#include "frontier_util.h"
+#include "field_player_avatar.h"
 #include "field_weather.h"
 #include "follower_npc.h"
+#include "frontier_util.h"
 #include "graphics.h"
 #include "gpu_regs.h"
 #include "international_string_util.h"
@@ -71,6 +72,7 @@
 #include "constants/battle_partner.h"
 #include "constants/battle_setup.h"
 #include "constants/items.h"
+#include "constants/metatile_behaviors.h"
 #include "constants/moves.h"
 #include "constants/party_menu.h"
 #include "constants/rgb.h"
@@ -5990,8 +5992,14 @@ enum Type GetDynamicMoveType(struct Pokemon *mon, enum Move move, enum BattlerId
             case WEATHER_FOG_DIAGONAL:
                 if (B_OVERWORLD_FOG >= GEN_8)
                     return TYPE_FAIRY;
+            case WEATHER_VERDANT:
+                return TYPE_GRASS;
                 break;
             }
+
+            if (GetPlayerCurMetatileBehavior(gPlayerAvatar.runningState) == MB_LONG_GRASS)
+                return TYPE_GRASS;
+
             return moveType;
         }
         break;
@@ -6136,12 +6144,12 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
         type3 = TYPE_MYSTERY;
         status = GetMonData(mon, MON_DATA_STATUS);
         isSunny = gWeatherPtr->currWeather == WEATHER_DROUGHT;
-        isRainy = gWeatherPtr->currWeather == WEATHER_RAIN || gWeatherPtr->currWeather == WEATHER_RAIN_THUNDERSTORM;
+        isRainy = gWeatherPtr->currWeather == WEATHER_RAIN || gWeatherPtr->currWeather == WEATHER_RAIN_THUNDERSTORM || gWeatherPtr->currWeather == WEATHER_DOWNPOUR;
         isSandstorm = gWeatherPtr->currWeather == WEATHER_SANDSTORM;
         isSnowy = gWeatherPtr->currWeather == WEATHER_SNOW;
         isElectric = gWeatherPtr->currWeather == WEATHER_RAIN_THUNDERSTORM && B_THUNDERSTORM_TERRAIN && IsOverworldMonGrounded(mon);
         isMisty = (gWeatherPtr->currWeather == WEATHER_FOG_HORIZONTAL || gWeatherPtr->currWeather == WEATHER_FOG_DIAGONAL) && B_OVERWORLD_FOG >= GEN_8 && IsOverworldMonGrounded(mon);
-        isGrassy = (gWeatherPtr->currWeather == WEATHER_VERDANT || gBattleTerrain == BATTLE_TERRAIN_LONG_GRASS) && IsOverworldMonGrounded(mon);
+        isGrassy = (gWeatherPtr->currWeather == WEATHER_VERDANT || GetPlayerCurMetatileBehavior(gPlayerAvatar.runningState) == MB_LONG_GRASS) && IsOverworldMonGrounded(mon);
         isPsychic = FALSE && IsOverworldMonGrounded(mon); //Can be changed if ever overworld weather or terrain that causes Psychic Terrain
     }
 
@@ -6186,6 +6194,7 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
             power = 0;
         else if (isMisty && move == MOVE_MISTY_EXPLOSION)
             UQ4_12_MULTIPLY(power, 1.5);
+        break;
     case EFFECT_GRAV_APPLE:
         if (gMain.inBattle)
         {
@@ -6196,12 +6205,15 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
     case EFFECT_TERRAIN_PULSE:
         if (isElectric || isMisty || isGrassy || isPsychic)
             power *= 2;
+        break;
     case EFFECT_EXPANDING_FORCE:
         if (isPsychic)
             UQ4_12_MULTIPLY(power, 1.5);
+        break;
     case EFFECT_RISING_VOLTAGE:
         if (isElectric) //Actually matters if opponent is affected by terrain
             power *= 2;
+        break;
     case EFFECT_PSYBLADE:
         if (gMain.inBattle)
         {
@@ -6210,9 +6222,11 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
         }
         else if (gWeatherPtr->currWeather == WEATHER_RAIN_THUNDERSTORM && B_THUNDERSTORM_TERRAIN)
             UQ4_12_MULTIPLY(power, 1.5);
+        break;
     case EFFECT_RAGE_FIST:
         if (gMain.inBattle)
             power = min(350, 50 + (50 * gBattleStruct->timesGotHit[GetBattlerSide(battler)][gBattlerPartyIndexes[battler]]));
+        break;
     case EFFECT_FACADE:
         if (status & (STATUS1_BURN | STATUS1_PSN_ANY | STATUS1_PARALYSIS | STATUS1_FROSTBITE))
             UQ4_12_MULTIPLY(power, 2.0);
@@ -6240,7 +6254,7 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
             if (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN)
                 UQ4_12_MULTIPLY(power, 0.5);
         }
-        else if (gWeatherPtr->currWeather == WEATHER_VERDANT || gBattleTerrain == BATTLE_TERRAIN_LONG_GRASS)
+        else if (gWeatherPtr->currWeather == WEATHER_VERDANT || GetPlayerCurMetatileBehavior(gPlayerAvatar.runningState) == MB_LONG_GRASS)
             UQ4_12_MULTIPLY(power, 0.5);
         break;
     case EFFECT_HYDRO_STEAM:
@@ -6262,6 +6276,7 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
     case ABILITY_IRON_FIST:
         if (IsPunchingMove(move))
             UQ4_12_MULTIPLY(power, 1.5); //Originally 1.2
+        break;
     case ABILITY_SHEER_FORCE:
         if (MoveIsAffectedBySheerForce(move))
             UQ4_12_MULTIPLY(power, 1.3);
@@ -6300,7 +6315,7 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
     case ABILITY_REFRIGERATE:
     case ABILITY_PIXILATE:
     case ABILITY_GALVANIZE:
-        if (type == TYPE_NORMAL)
+        if (GetMoveType(move) == TYPE_NORMAL)
             UQ4_12_MULTIPLY(power, 1.2);
         break;
     case ABILITY_NORMALIZE:
@@ -6373,13 +6388,13 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
     }
 
     if (isGrassy && type == TYPE_GRASS)
-        UQ4_12_MULTIPLY(power, B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5));
+        UQ4_12_MULTIPLY(power, B_TERRAIN_TYPE_BOOST >= GEN_8 ? 1.3 : 1.5);
     else if (isElectric && type == TYPE_ELECTRIC)
-        UQ4_12_MULTIPLY(power, B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5));
+        UQ4_12_MULTIPLY(power, B_TERRAIN_TYPE_BOOST >= GEN_8 ? 1.3 : 1.5);
     else if (isMisty && type == TYPE_DRAGON) //Actually matters if opponent is affected by terrain
         UQ4_12_MULTIPLY(power, 0.5);
     else if (isPsychic && type == TYPE_PSYCHIC)
-        UQ4_12_MULTIPLY(power, B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5));
+        UQ4_12_MULTIPLY(power, B_TERRAIN_TYPE_BOOST >= GEN_8 ? 1.3 : 1.5);
 
     if (gMain.inBattle)
     {
@@ -6433,6 +6448,7 @@ u32 GetDynamicAccuracy(struct Pokemon *mon, enum Move move, enum BattlerId battl
             break;
         case WEATHER_RAIN:
         case WEATHER_RAIN_THUNDERSTORM:
+        case WEATHER_DOWNPOUR:
             if (moveEffect == EFFECT_THUNDER || moveEffect == EFFECT_RAIN_ALWAYS_HIT)
                 accuracy = 100;
             break;

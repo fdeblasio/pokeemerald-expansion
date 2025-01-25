@@ -750,6 +750,7 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
         - Power: 65->75
         - Target: Both foes and ally->both foes
     - Thunderclap:
+        - Power: 70->80
         - PP: 5->10
     - Thunder Cage:
         - Accuracy: 90->100
@@ -798,6 +799,8 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
         - Accuracy: 90->100
     - Crabhammer:
         - Accuracy: 90->100
+    - Hydro Steam:
+        - Power: 80->90
     - Octazooka:
         - Power: 65->90
         - Accuracy: 85->100
@@ -851,6 +854,8 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
         - Accuracy: 90->100
     - Photon Geyser:
         - PP: 5->10
+    - Psyblade:
+        - Power: 80->90
     - Psycho Boost:
         - Accuracy: 90->100
         - PP: 5->10

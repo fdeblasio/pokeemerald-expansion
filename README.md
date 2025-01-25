@@ -649,6 +649,7 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
     - Air Slash:
         - Power: 75->80
         - Accuracy: 95->100
+        - Now a wind move
     - Bleakwind Storm:
         - Power: 100->120
         - Accuracy: 80->100

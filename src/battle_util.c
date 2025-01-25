@@ -3492,6 +3492,10 @@ bool32 CanAbilityAbsorbMove(u32 battlerAtk, u32 battlerDef, enum Ability ability
             statId = STAT_ATK;
         }
         break;
+    case ABILITY_WIND_POWER:
+        if (IsWindMove(move) && !(GetBattlerMoveTargetType(battlerAtk, move) & MOVE_TARGET_USER))
+            effect = MOVE_ABSORBED_BY_CHARGING;
+        break;
     case ABILITY_FLASH_FIRE:
         if (moveType == TYPE_FIRE && (B_FLASH_FIRE_FROZEN >= GEN_5 || !(gBattleMons[battlerDef].status1 & STATUS1_FREEZE)))
             effect = MOVE_ABSORBED_BY_BOOST_FLASH_FIRE;
@@ -3543,6 +3547,15 @@ bool32 CanAbilityAbsorbMove(u32 battlerAtk, u32 battlerDef, enum Ability ability
         {
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_FLASH_FIRE_NO_BOOST;
             battleScript = BattleScript_FlashFireBoost;
+        }
+        break;
+    case MOVE_ABSORBED_BY_CHARGING:
+        gBattleStruct->pledgeMove = FALSE;
+        if (MoveResultHasEffect(gBattlerTarget)
+            && !gProtectStructs[battlerAtk].confusionSelfDmg
+            && IsBattlerAlive(gBattlerTarget))
+        {
+            battleScript = BattleScript_WindPowerActivates;
         }
         break;
     }
@@ -5239,16 +5252,12 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, u32 battler, enum Ability ab
                 effect++;
             }
             break;
-        case ABILITY_WIND_POWER:
-            if (!IsWindMove(gCurrentMove))
-                break;
-            // fall through
         case ABILITY_ELECTROMORPHOSIS:
             if (!gProtectStructs[gBattlerAttacker].confusionSelfDmg
              && IsBattlerTurnDamaged(gBattlerTarget)
              && IsBattlerAlive(gBattlerTarget))
             {
-                BattleScriptCall(BattleScript_WindPowerActivates);
+                BattleScriptCall(BattleScript_ElectromorphosisActivates);
                 effect++;
             }
             break;

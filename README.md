@@ -638,6 +638,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Air Slash:
         - Power: 75->80
         - Accuracy: 95->100
+        - Now a wind move
     - Bleakwind Storm:
         - Power: 100->120
         - Accuracy: 80->100

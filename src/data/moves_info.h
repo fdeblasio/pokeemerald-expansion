@@ -20703,7 +20703,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "This move's power increases\n"
             "when on Electric Terrain."),
         .effect = EFFECT_TERRAIN_BOOST,
-        .power = 80,
+        .power = 90,
         .type = TYPE_PSYCHIC,
         .accuracy = 100,
         .pp = 15,
@@ -20727,7 +20727,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "This move's power increases\n"
             "under harsh sunlight."),
         .effect = EFFECT_HYDRO_STEAM,
-        .power = 80,
+        .power = 90,
         .type = TYPE_WATER,
         .accuracy = 100,
         .pp = 15,
@@ -20914,7 +20914,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Strikes first if the foe\n"
             "is preparing an attack."),
         .effect = EFFECT_SUCKER_PUNCH,
-        .power = 70,
+        .power = 80,
         .type = TYPE_ELECTRIC,
         .accuracy = 100,
         .pp = 10,

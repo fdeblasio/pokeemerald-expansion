@@ -529,6 +529,7 @@ upcoming
 - Combine Centers and Marts?
     - Use left wall where escalators used to be
     - Tileset doesn't seem to support it
+- Non-grass soot tiles should add to soot sack
 - Followers with weather abilities (or Cloud Nine/Air Lock) will change the overworld weather when following?
     - Cloud Nine could do cloudy instead of clear
 - Give Underwater the same type-effectiveness as rain?

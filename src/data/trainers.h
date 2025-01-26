@@ -23,8 +23,8 @@
 #define RIVAL_ROUTE_119_STARTER_LEVEL 42
 #define RIVAL_LILYCOVE_STARTER_LEVEL  45
 
-#define BRENDAN 0
-#define MAY     1
+#define BRENDAN 1
+#define MAY     2
 
 #define BRENDAN_INFO                                       \
     .trainerName = _("Brendan"),                           \
@@ -46,7 +46,7 @@
     .species = Type##_STARTER + (Location < RIVAL_ROUTE_110 ? 0 : (Location < RIVAL_ROUTE_119 ? 1 : 2)), \
     .nature = Rival == BRENDAN ? NATURE_SERIOUS : NATURE_QUIRKY,                                         \
     PERFECT_IVS,                                                                                         \
-    .gender = Rival == BRENDAN ? TRAINER_MON_MALE : TRAINER_MON_FEMALE,                                  \
+    .gender = Rival,                                                                                     \
     .heldItem = Location < RIVAL_LILYCOVE ? ITEM_NONE : (TYPE_##Type == TYPE_GRASS ? ITEM_SCEPTILITE : (TYPE_##Type == TYPE_FIRE ? ITEM_BLAZIKENITE : ITEM_SWAMPERTITE)), \
     }
 
@@ -56,7 +56,7 @@
     .species = Location < RIVAL_ROUTE_119 ? SPECIES_WHISMUR : (Location < RIVAL_LILYCOVE ? SPECIES_LOUDRED : SPECIES_EXPLOUD), \
     .ability = Rival == BRENDAN,                                            \
     IVS(18),                                                                \
-    .gender = Rival == BRENDAN ? TRAINER_MON_MALE : TRAINER_MON_FEMALE,     \
+    .gender = Rival,                                                        \
     }
 
 #define RIVAL_MON(Location, Species, Ability, Rival)                             \
@@ -65,7 +65,7 @@
     .species = SPECIES_##Species,                                                \
     .ability = ABILITY_##Ability,                                                \
     IVS(Location < RIVAL_ROUTE_119 ? 6 : (Location < RIVAL_LILYCOVE ? 12 : 18)), \
-    .gender = Rival == BRENDAN ? TRAINER_MON_MALE : TRAINER_MON_FEMALE,          \
+    .gender = Rival,                                                             \
     }
 
 #define RIVAL_BATTLES(Rival, Type, Mon3, Evo3, Ability3, Mon4, Evo4, Ability4) \
@@ -121,7 +121,7 @@
         .species = SPECIES_VIBRAVA,                                            \
         .ability = ABILITY_LEVITATE,                                           \
         IVS(18),                                                               \
-        .gender = Rival == BRENDAN ? TRAINER_MON_MALE : TRAINER_MON_FEMALE,    \
+        .gender = Rival,                                                       \
         },                                                                     \
         RIVAL_MON(RIVAL_LILYCOVE, Evo4, Ability4, Rival),                      \
         RIVAL_MON(RIVAL_LILYCOVE, Evo3, Ability3, Rival),                      \

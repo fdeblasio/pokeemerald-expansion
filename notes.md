@@ -262,8 +262,12 @@ Get rid of Gym Leader rematches needing two Pokemon
 - More save space editing
     - Medicine Pocket?
     - See if it's possible to give item PC and decoration PC have more room
-- Get PokeNav to work indoors?
-    - Stop trainers from calling you shortly after loading the game
+- PokeNav:
+    - Use layouts instead of maps to get more accurate nearby function? (Mainly useful for Gym Leaders in towns)
+    - Give trainers more accurate locations
+        - Scott at Battle Frontier once he's talked to there
+        - Steven at Meteor Falls once he's talked to there
+        - Wally in Victory Road after he's beaten there (this one might just be a flag issue on the current save)
 - Edit contests?
 - Simplify Walda codes?
 - Get all the weird Mauville men at once?
@@ -289,6 +293,7 @@ Get rid of Gym Leader rematches needing two Pokemon
 ### Big changes from Vanilla - low priority
 - Remove IVs? Maybe make boolean for either 0 or 31 added to stat
     - Would need to figure out Hidden Power
+        - Six stats times three values would equal 18 types (would need to figure out third value (16?) but also Normal Hidden Power sounds)
 - Beach sand has sunny weather? Or maybe just some routes with it like 109
 - Make seperate Pokédex for post-game similar to SwSh DLC Pokédexes?
 - Fire Blast/Hydro Pump/Stone Edge accurate in respective weathers?

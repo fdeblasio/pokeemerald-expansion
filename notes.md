@@ -56,7 +56,6 @@ upcoming
 - After Cats
     - Set BRENDAN to 1 and MAY to 2 so .gender can just be Rival
         - Maybe set to TRAINER_MON_MALE and TRAINER_MON_FEMALE to be safe
-    - Update Brendan/May's scripts to use {RIVAL}
     - Add new variable for Wally and Ralph's names (string_util.c/characters.h/charmap.txt)
     - Turn into COMPOUND_STRINGs
     - MAUVILLE_TRAINER for IVS(12) and SHOCK_WAVE? Or no custom moves for those trainers. Or make other gym trainers use the TM

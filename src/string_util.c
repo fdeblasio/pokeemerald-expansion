@@ -519,6 +519,12 @@ static const u8 *ExpandPlaceholder_Groudon(void)
     return gText_ExpandedPlaceholder_Groudon;
 }
 
+const u8 gText_ExpandedPlaceholder_Wally[] = _("Wally");
+static const u8 *ExpandPlaceholder_Wally(void)
+{
+    return gText_ExpandedPlaceholder_Wally;
+}
+
 const u8 *GetExpandedPlaceholder(u32 id)
 {
     typedef const u8 *(*ExpandPlaceholderFunc)(void);
@@ -539,6 +545,7 @@ const u8 *GetExpandedPlaceholder(u32 id)
         [PLACEHOLDER_ID_MAXIE]        = ExpandPlaceholder_Maxie,
         [PLACEHOLDER_ID_KYOGRE]       = ExpandPlaceholder_Kyogre,
         [PLACEHOLDER_ID_GROUDON]      = ExpandPlaceholder_Groudon,
+        [PLACEHOLDER_ID_WALLY]        = ExpandPlaceholder_Wally,
     };
 
     if (id >= ARRAY_COUNT(funcs))

@@ -30,6 +30,7 @@
 #include "constants/abilities.h"
 #include "constants/battle_frontier.h"
 #include "constants/event_objects.h"
+#include "constants/map_types.h"
 #include "constants/region_map_sections.h"
 #include "constants/songs.h"
 #include "constants/trainers.h"
@@ -1059,20 +1060,19 @@ static bool32 CheckMatchCallChance(void)
     if (!GetMonData(&gPlayerParty[0], MON_DATA_SANITY_IS_EGG) && GetMonAbility(&gPlayerParty[0]) == ABILITY_LIGHTNING_ROD)
         callChance = 2;
 
-    if (Random() % 10 < callChance * 3)
+    if (Random() % 10 < callChance * 2)
         return TRUE;
     else
         return FALSE;
 }
 
-static bool32 MapAllowsMatchCall(void)
+bool32 MapAllowsMatchCall(void)
 {
-    if (!Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType) || gMapHeader.regionMapSectionId == MAPSEC_SAFARI_ZONE)
+    if (gMapHeader.mapType == MAP_TYPE_UNDERWATER)
         return FALSE;
 
     if (gMapHeader.regionMapSectionId == MAPSEC_SOOTOPOLIS_CITY
-     && FlagGet(FLAG_HIDE_SOOTOPOLIS_CITY_RAYQUAZA) == TRUE
-     && FlagGet(FLAG_NEVER_SET_0x0DC) == FALSE)
+     && FlagGet(FLAG_HIDE_SOOTOPOLIS_CITY_RAYQUAZA) == TRUE)
         return FALSE;
 
     if (gMapHeader.regionMapSectionId == MAPSEC_MT_CHIMNEY
@@ -1150,8 +1150,8 @@ static u32 GetActiveMatchCallTrainerId(u32 activeMatchCallId)
     - If the player has match call
     - Every 10th step
     - Every 10 minutes
-    - 1/3 of the time (or 2/3 of the time, if the lead party Pokémon has Lightning Rod)
-    - If in a valid outdoor map (not Safari Zone, not underwater, not Mt Chimney with Team Magma, not Sootopolis with legendaries)
+    - 20% of the time (or 40% of the time, if the lead party Pokémon has Lightning Rod)
+    - If in a valid outdoor map (not underwater, not Mt Chimney with Team Magma, not Sootopolis with legendaries)
     - If an eligible trainer to call the player is selected
 */
 bool32 TryStartMatchCall(void)

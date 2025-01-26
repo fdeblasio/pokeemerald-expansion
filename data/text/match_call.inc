@@ -2587,19 +2587,19 @@ MatchCall_Text_Brendan15::
 	.string "envious!$"
 
 MatchCall_Text_Wally1::
-	.string "Wally: Oh, {PLAYER}!\p"
+	.string "{WALLY}: Oh, {PLAYER}!\p"
 	.string "I've been getting healthier and\n"
 	.string "more physically fit.\p"
 	.string "I hope I can become a Trainer like\n"
 	.string "you soon, {PLAYER}!$"
 
 MatchCall_Text_Wally2::
-	.string "Wally: {PLAYER}, hello!\p"
+	.string "{WALLY}: {PLAYER}, hello!\p"
 	.string "After Rusturf Tunnel went\n"
 	.string "through, Wanda's been very happy!$"
 
 MatchCall_Text_Wally3::
-	.string "Wally: Oh, {PLAYER}!\p"
+	.string "{WALLY}: Oh, {PLAYER}!\p"
 	.string "I… I left my uncle's place in\n"
 	.string "Verdanturf without telling anyone.\p"
 	.string "I wonder if he's furious with me…\p"
@@ -2607,7 +2607,7 @@ MatchCall_Text_Wally3::
 	.string "I feel, don't you?$"
 
 MatchCall_Text_Wally4::
-	.string "Wally: {PLAYER}?\n"
+	.string "{WALLY}: {PLAYER}?\n"
 	.string "It's me, Wally!\p"
 	.string "The world of Trainers is amazing!\p"
 	.string "When I have my Pokémon with me,\n"
@@ -2616,7 +2616,7 @@ MatchCall_Text_Wally4::
 	.string "connected through Pokémon!$"
 
 MatchCall_Text_Wally5::
-	.string "Wally: {PLAYER}? It's awesome!\n"
+	.string "{WALLY}: {PLAYER}? It's awesome!\n"
 	.string "Ralph evolved, {PLAYER}!\p"
 	.string "Maybe I'm talented…\p"
 	.string "Oh, but I shouldn't get a big head\n"
@@ -2631,7 +2631,7 @@ MatchCall_Text_Wally6::
 	.string "the PokéNav's service area…$"
 
 MatchCall_Text_Wally7::
-	.string "Wally: Oh, {PLAYER}!\p"
+	.string "{WALLY}: Oh, {PLAYER}!\p"
 	.string "Before I met you, I hardly ever\n"
 	.string "left my house…\p"
 	.string "But now, I'm on an adventure with\n"

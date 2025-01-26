@@ -7503,6 +7503,7 @@ static u8 GetPartyMenuActionsTypeInBattle(struct Pokemon *mon)
 {
     if (GetMonData(&gParties[B_TRAINER_0][1], MON_DATA_SPECIES) != SPECIES_NONE
      && GetMonData(mon, MON_DATA_IS_EGG) == FALSE
+     && mon != &gParties[B_TRAINER_0][0]
      && gPartyMenu.layout != PARTY_LAYOUT_MULTI_FULL_PARTNER)
     {
         if (gPartyMenu.action == PARTY_ACTION_SEND_OUT)

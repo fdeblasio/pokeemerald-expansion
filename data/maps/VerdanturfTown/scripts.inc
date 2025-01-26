@@ -114,16 +114,16 @@ VerdanturfTown_Movement_WallyEnterWandasHome:
 	step_end
 
 VerdanturfTown_Text_WallyIntro:
-	.string "Wally: Oh, {PLAYER}!\p"
+	.string "{WALLY}: Oh, {PLAYER}!\p"
 	.string "I caught a new Pokémon!\p"
 	.string "Let's have another battle!$"
 
 VerdanturfTown_Text_WallyDefeat:
-	.string "Wally: Aww… I guess I need to train\n"
+	.string "{WALLY}: Aww… I guess I need to train\n"
 	.string "more if I want to beat you, {PLAYER}.$"
 
 VerdanturfTown_Text_WallyPostBattle:
-	.string "Wally: Thanks for battling me,\n"
+	.string "{WALLY}: Thanks for battling me,\n"
 	.string "{PLAYER}! Just wait, I'll get stronger!$"
 
 VerdanturfTown_Text_ManTryingToDigTunnel:

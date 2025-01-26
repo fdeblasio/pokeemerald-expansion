@@ -351,6 +351,7 @@ MAXIE          = FD 0B
 KYOGRE         = FD 0C
 GROUDON        = FD 0D
 REGION         = FD 0E
+WALLY          = FD 0F
 
 @ battle string placeholders
 

@@ -284,7 +284,6 @@ Get rid of Gym Leader rematches needing two Pokemon
     - Now that Frontier mons are registered in the Pokédex, the National Pokédex is a bit less useless
 - In game trades
 - Edit max money?
-- If switching in battle, don't show "Switch" for current Pokémon
 - Debug menu improvements
 - Make inserting trainer sprites easier?
     - Wrapper for src/data/graphics/trainers.h?

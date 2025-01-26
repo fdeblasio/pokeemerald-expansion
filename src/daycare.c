@@ -1324,9 +1324,9 @@ u8 GetDaycareCompatibilityScore(struct DayCare *daycare)
             return PARENTS_INCOMPATIBLE;
 
         if (species[0] == species[1])
-            return PARENTS_MAX_COMPATIBILITY; // same species, different trainers
+            return PARENTS_MAX_COMPATIBILITY; // same species
         else
-            return PARENTS_MED_COMPATIBILITY; // different species, same trainer
+            return PARENTS_MED_COMPATIBILITY; // different species
     }
 }
 

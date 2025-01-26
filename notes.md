@@ -59,14 +59,11 @@ upcoming
     - Update Brendan/May's scripts to use {RIVAL}
     - Add new variable for Wally and Ralph's names (string_util.c/characters.h/charmap.txt)
     - Turn into COMPOUND_STRINGs
-    - Try to get variables for Trainers who reference their Pokemon? Like Numel in Route 113 and Machop in Route 115
-    - Zigzagoon variable for Norman lending (used in Trick House)
     - MAUVILLE_TRAINER for IVS(12) and SHOCK_WAVE? Or no custom moves for those trainers. Or make other gym trainers use the TM
     - Hidden Power Kadabras should know Psybeam
     - Seperate Abigail and Benjamin's Magnemites
     - Some Magnemites never occur because 30 is less than REMATCH_2_LEVEL
     - Add Abilities to single ability and TRAINER_MON_NONE to genderless to make more constistent
-- Non-grass soot tiles should add to soot sack
 - Remove BP costs so that script_menu.h and field_specials.c can use item/move names directly?
 
 ### Meta
@@ -136,6 +133,9 @@ Get rid of Gym Leader rematches needing two Pokemon
 - Use Good Ruby's palette shifting to give trainers more unique looks? (https://github.com/Doesnty/goodruby/commit/ff53bbab592865b49f345342205b41cb869abf27)
 - Vito can use TMs
 - Gym leaders/Steven/Breeders can have Hidden Abilities
+- Species define/buffer for trainers who mention a species
+    - Parasol Lady/Numel on Route 113
+    - Black Belt/Machoke on Route 115
 
 ### Moves
 - Find way for Rotom to learn special moves by level up (for relearning). Currently have TMs, but not all moves (Hydro Pump/Leaf Storm) are TMs
@@ -209,6 +209,7 @@ Get rid of Gym Leader rematches needing two Pokemon
 - Combine Centers and Marts?
     - Use left wall where escalators used to be
     - Tileset doesn't seem to support it
+- Non-grass soot tiles should add to soot sack
 - Followers with weather abilities (or Cloud Nine/Air Lock) will change the overworld weather when following?
     - Cloud Nine could do cloudy instead of clear
 - Try to get Verdanturf grass to start Grassy Terrain instead of messing with weather

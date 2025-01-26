@@ -226,18 +226,18 @@ Route114_Movement_WallyWalkAway:
 	step_end
 
 Route114_Text_WallyIntro:
-	.string "Wally: Hi, {PLAYER}!\p"
+	.string "{WALLY}: Hi, {PLAYER}!\p"
 	.string "I caught another Pokémon! I was going\n"
 	.string "to train it in Meteor Falls but there's\l"
 	.string "some weird people in there. Now I can\l"
 	.string "train against you though!$"
 
 Route114_Text_WallyDefeat:
-	.string "Wally: Aww… you beat me again,\n"
+	.string "{WALLY}: Aww… you beat me again,\n"
 	.string "{PLAYER}!$"
 
 Route114_Text_WallyPostBattle:
-	.string "Wally: Thanks again, {PLAYER}!\n"
+	.string "{WALLY}: Thanks again, {PLAYER}!\n"
 	.string "I'll have to catch more Pokémon!$"
 
 Route114_Text_AllMyMonDoesIsRoarTakeThis:

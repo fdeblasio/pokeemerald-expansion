@@ -12,6 +12,7 @@
 #include "sound.h"
 #include "string_util.h"
 #include "strings.h"
+#include "constants/layouts.h"
 #include "constants/songs.h"
 
 struct Pokenav_MatchCallMenu
@@ -358,7 +359,8 @@ const u8 *GetMatchCallMessageText(int index, bool8 *newRematchRequest)
 {
     struct Pokenav_MatchCallMenu *state = GetSubstructPtr(POKENAV_SUBSTRUCT_MATCH_CALL_MAIN);
     *newRematchRequest = FALSE;
-    if (!Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType))
+
+    if (!MapAllowsMatchCall())
         return gText_CallCantBeMadeHere;
 
     if (!state->matchCallEntries[index].isSpecialTrainer)
@@ -501,26 +503,21 @@ static bool32 ShouldDoNearbyMessage(void)
 #if FREE_MATCH_CALL == FALSE
     struct Pokenav_MatchCallMenu *state = GetSubstructPtr(POKENAV_SUBSTRUCT_MATCH_CALL_MAIN);
     int selection = PokenavList_GetSelectedIndex();
-    if (!state->matchCallEntries[selection].isSpecialTrainer)
+
+    if (GetMatchCallMapSec(selection) == gMapHeader.regionMapSectionId)
     {
-        if (GetMatchCallMapSec(selection) == gMapHeader.regionMapSectionId)
+        if (state->matchCallEntries[selection].headerId == MC_HEADER_MR_STONE)
         {
-            if (!gSaveBlock1Ptr->trainerRematches[state->matchCallEntries[selection].headerId])
+            if (gMapHeader.mapLayoutId == LAYOUT_RUSTBORO_CITY)
+                return FALSE;
+            else
                 return TRUE;
         }
+
+        if (!gSaveBlock1Ptr->trainerRematches[state->matchCallEntries[selection].headerId])
+            return TRUE;
     }
-    else
-    {
-        if (state->matchCallEntries[selection].headerId == MC_HEADER_WATTSON)
-        {
-            if (GetMatchCallMapSec(selection) == gMapHeader.regionMapSectionId
-             && FlagGet(FLAG_BADGE05_GET) == TRUE)
-            {
-                if (!FlagGet(FLAG_WATTSON_REMATCH_AVAILABLE))
-                    return TRUE;
-            }
-        }
-    }
+
 #endif //FREE_MATCH_CALL
     return FALSE;
 }

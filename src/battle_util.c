@@ -3355,7 +3355,7 @@ bool32 CanAbilityAbsorbMove(u32 battlerAtk, u32 battlerDef, u32 abilityDef, u32 
         break;
     case MOVE_ABSORBED_BY_CHARGING:
         gBattleStruct->pledgeMove = FALSE;
-        if (MoveResultHasEffect(gBattlerTarget)
+        if (!(gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_NO_EFFECT)
             && !gProtectStructs[battlerAtk].confusionSelfDmg
             && IsBattlerAlive(gBattlerTarget))
         {

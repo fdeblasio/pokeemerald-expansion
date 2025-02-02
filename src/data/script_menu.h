@@ -126,7 +126,7 @@ static const struct MenuAction MultichoiceList_Mechadoll1_Q3[] =
 
 static const struct MenuAction MultichoiceList_Mechadoll2_Q1[] =
 {
-    {gSpeciesInfo[SPECIES_RALTS].speciesName},
+    {gSpeciesInfo[SPECIES_WALLY_STARTER].speciesName},
     {gSpeciesInfo[SPECIES_NORMAN_LEND].speciesName},
     {gSpeciesInfo[SPECIES_SLAKOTH].speciesName},
 };

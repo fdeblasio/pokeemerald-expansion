@@ -490,18 +490,30 @@ static const u8 *ExpandPlaceholder_RivalName(void)
         return (IS_FRLG ? gText_ExpandedPlaceholder_Red : gText_ExpandedPlaceholder_Brendan);
 }
 
-const u8 gText_ExpandedPlaceholder_Wally[] = _("Wally");
-static const u8 *ExpandPlaceholder_Wally(void)
-{
-    return gText_ExpandedPlaceholder_Wally;
-}
-
 static const u8 *ExpandPlaceholder_Region(void)
 {
     if (IS_FRLG)
         return gText_Kanto;
     else
         return gText_Hoenn;
+}
+
+const u8 gText_ExpandedPlaceholder_Wally[] = _("Wally");
+static const u8 *ExpandPlaceholder_Wally(void)
+{
+    return gText_ExpandedPlaceholder_Wally;
+}
+
+const u8 gText_ExpandedPlaceholder_Ralph[] = _("Ralph");
+static const u8 *ExpandPlaceholder_Ralph(void)
+{
+    return gText_ExpandedPlaceholder_Ralph;
+}
+
+const u8 gText_ExpandedPlaceholder_Peeko[] = _("Peeko");
+static const u8 *ExpandPlaceholder_Peeko(void)
+{
+    return gText_ExpandedPlaceholder_Peeko;
 }
 
 const u8 *GetExpandedPlaceholder(u32 id)
@@ -517,8 +529,10 @@ const u8 *GetExpandedPlaceholder(u32 id)
         [PLACEHOLDER_ID_STRING_VAR_3] = ExpandPlaceholder_StringVar3,
         [PLACEHOLDER_ID_KUN]          = ExpandPlaceholder_KunChan,
         [PLACEHOLDER_ID_RIVAL]        = ExpandPlaceholder_RivalName,
-        [PLACEHOLDER_ID_WALLY]        = ExpandPlaceholder_Wally,
         [PLACEHOLDER_ID_REGION]       = ExpandPlaceholder_Region,
+        [PLACEHOLDER_ID_WALLY]        = ExpandPlaceholder_Wally,
+        [PLACEHOLDER_ID_RALPH]        = ExpandPlaceholder_Ralph,
+        [PLACEHOLDER_ID_PEEKO]        = ExpandPlaceholder_Peeko,
     };
 
     if (id >= ARRAY_COUNT(funcs))

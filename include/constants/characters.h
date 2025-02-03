@@ -261,8 +261,10 @@
 #define PLACEHOLDER_ID_STRING_VAR_3  0x4
 #define PLACEHOLDER_ID_KUN           0x5
 #define PLACEHOLDER_ID_RIVAL         0x6
-#define PLACEHOLDER_ID_WALLY         0x7
-#define PLACEHOLDER_ID_REGION        0x8
+#define PLACEHOLDER_ID_REGION        0x7
+#define PLACEHOLDER_ID_WALLY         0x8
+#define PLACEHOLDER_ID_RALPH         0x9
+#define PLACEHOLDER_ID_PEEKO         0xA
 
 // battle placeholders are located in battle_message.h
 

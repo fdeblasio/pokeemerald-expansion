@@ -1060,9 +1060,9 @@ RustboroCity_Text_MrBrineyLovesPeeko:
 	.string "The old sailor Mr. Briney lives in\n"
 	.string "a cottage by the sea.\p"
 	.string "He said he was going shopping in\n"
-	.string "Slateport for his pet, Peeko.\p"
+	.string "Slateport for his pet, {PEEKO}.\p"
 	.string "That old sea dog, he must really love\n"
-	.string "that Peeko.$"
+	.string "that {PEEKO}.$"
 
 RustboroCity_Text_WowYouHavePokemon:
 	.string "Wow, you have Pokémon with you, too.\p"

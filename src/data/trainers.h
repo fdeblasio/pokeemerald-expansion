@@ -3474,7 +3474,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 9,
-        .species = SPECIES_MAGIKARP,
+        .species = SPECIES_DARIAN,
         }
     },
 },
@@ -9349,7 +9349,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
         },
         {
         .lvl = 28,
-        .species = SPECIES_SANDSHREW,
+        .species = SPECIES_BRANDEN,
         }
     },
 },
@@ -9583,12 +9583,12 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 31,
-        .species = SPECIES_MACHOKE,
+        .species = SPECIES_KOICHI,
         IVS(12),
         },
         {
         .lvl = 31,
-        .species = SPECIES_MACHOKE,
+        .species = SPECIES_KOICHI,
         IVS(18),
         }
     },

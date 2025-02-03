@@ -424,7 +424,7 @@ Route104_Text_DarianDefeat:
 	.string "What the…$"
 
 Route104_Text_DarianPostBattle:
-	.string "Hey, Magikarp, you sure don't live up\n"
+	.string "Hey, {STR_VAR_1}, you sure don't live up\n"
 	.string "to your name, do you?$"
 
 Route105_Text_FosterIntro:
@@ -1458,7 +1458,7 @@ Route111_Text_BrandenDefeat:
 	.string "enough of a bribe…$"
 
 Route111_Text_BrandenPostBattle:
-	.string "My Sandshrew loves eating\n"
+	.string "My {STR_VAR_1} loves eating\n"
 	.string "my sandwiches.$"
 
 Route111_Text_TyronIntro:
@@ -2037,7 +2037,7 @@ Route115_Text_KoichiDefeat:
 	.string "Ouch, ouch, ouch!$"
 
 Route115_Text_KoichiPostBattle:
-	.string "My Machoke crew!\p"
+	.string "My {STR_VAR_1} crew!\p"
 	.string "So long as they seek power, I will\n"
 	.string "grow strong with them!$"
 

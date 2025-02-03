@@ -490,6 +490,18 @@ static const u8 *ExpandPlaceholder_Wally(void)
     return gText_ExpandedPlaceholder_Wally;
 }
 
+const u8 gText_ExpandedPlaceholder_Ralph[] = _("Ralph");
+static const u8 *ExpandPlaceholder_Ralph(void)
+{
+    return gText_ExpandedPlaceholder_Ralph;
+}
+
+const u8 gText_ExpandedPlaceholder_Peeko[] = _("Peeko");
+static const u8 *ExpandPlaceholder_Peeko(void)
+{
+    return gText_ExpandedPlaceholder_Peeko;
+}
+
 const u8 *GetExpandedPlaceholder(u32 id)
 {
     typedef const u8 *(*ExpandPlaceholderFunc)(void);
@@ -504,6 +516,8 @@ const u8 *GetExpandedPlaceholder(u32 id)
         [PLACEHOLDER_ID_KUN]          = ExpandPlaceholder_KunChan,
         [PLACEHOLDER_ID_RIVAL]        = ExpandPlaceholder_RivalName,
         [PLACEHOLDER_ID_WALLY]        = ExpandPlaceholder_Wally,
+        [PLACEHOLDER_ID_RALPH]        = ExpandPlaceholder_Ralph,
+        [PLACEHOLDER_ID_PEEKO]        = ExpandPlaceholder_Peeko,
     };
 
     if (id >= ARRAY_COUNT(funcs))

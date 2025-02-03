@@ -429,7 +429,7 @@ RusturfTunnel_Text_ComeAndGetSome:
 	.string "Come and get some, then!$"
 
 RusturfTunnel_Text_Peeko:
-	.string "Peeko: Pii pihyoh!$"
+	.string "{PEEKO}: Pii pihyoh!$"
 
 RusturfTunnel_Text_GruntIntro:
 	.string "Grah, keelhaul it all!\p"
@@ -454,11 +454,11 @@ RusturfTunnel_Text_GruntTakePackage:
 	.string "You want it back that badly, take it!$"
 
 RusturfTunnel_Text_PeekoGladToSeeYouSafe:
-	.string "Peeko!\n"
+	.string "{PEEKO}!\n"
 	.string "Am I glad to see you're safe!$"
 
 RusturfTunnel_Text_ThankYouLetsGoHomePeeko:
-	.string "Peeko owes her life to you!\p"
+	.string "{PEEKO} owes her life to you!\p"
 	.string "They call me Mr. Briney.\n"
 	.string "And, you are?\p"
 	.string "… … … … … … … …\n"
@@ -469,9 +469,9 @@ RusturfTunnel_Text_ThankYouLetsGoHomePeeko:
 	.string "you, don't hesitate to tell me!\p"
 	.string "You can usually find me in my cottage\n"
 	.string "by the sea near Petalburg Woods.\p"
-	.string "Come, Peeko, we should make our way\n"
+	.string "Come, {PEEKO}, we should make our way\n"
 	.string "home.\p"
-	.string "Peeko: Pihyoh!$"
+	.string "{PEEKO}: Pihyoh!$"
 
 RusturfTunnel_Text_WhyCantTheyKeepDigging:
 	.string "… …\p"

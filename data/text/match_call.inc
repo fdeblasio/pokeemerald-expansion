@@ -2339,7 +2339,7 @@ MatchCall_Text_May1::
 	.string "{RIVAL}: Hi, {PLAYER}{KUN}!\p"
 	.string "Mr. Briney retired as a Sailor,\n"
 	.string "but I still see him out on the sea\l"
-	.string "with his pet Peeko sometimes.\p"
+	.string "with his pet {PEEKO} sometimes.\p"
 	.string "He must love the sea still.$"
 
 MatchCall_Text_May2::
@@ -2464,7 +2464,7 @@ MatchCall_Text_Brendan1::
 	.string "{RIVAL}: Hey, {PLAYER}!\p"
 	.string "Mr. Briney retired as a Sailor,\n"
 	.string "but I still see him out on the sea\l"
-	.string "with his pet Peeko sometimes.\p"
+	.string "with his pet {PEEKO} sometimes.\p"
 	.string "I guess he must love\n"
 	.string "the sea still.$"
 
@@ -2617,7 +2617,7 @@ MatchCall_Text_Wally4::
 
 MatchCall_Text_Wally5::
 	.string "{WALLY}: {PLAYER}? It's awesome!\n"
-	.string "Ralph evolved, {PLAYER}!\p"
+	.string "{RALPH} evolved, {PLAYER}!\p"
 	.string "Maybe I'm talented…\p"
 	.string "Oh, but I shouldn't get a big head\n"
 	.string "like that!\p"

@@ -6211,8 +6211,9 @@ u32 GetDynamicPower(struct Pokemon *mon, u32 move, u32 battler){
     u32 species, heldItem, holdEffect, ability, type1, type2, type3, status;
     bool8 isSunny, isRainy, isSandstorm, isSnowy;
     bool8 isElectric, isMisty, isGrassy, isPsychic;
+    bool32 monInBattle = gMain.inBattle && gPartyMenu.menuType != PARTY_MENU_TYPE_IN_BATTLE;
 
-    if (gMain.inBattle)
+    if (monInBattle)
     {
         species = gBattleMons[battler].species;
         heldItem = gBattleMons[battler].item;
@@ -6263,11 +6264,11 @@ u32 GetDynamicPower(struct Pokemon *mon, u32 move, u32 battler){
         power = 10 * (MAX_FRIENDSHIP - GetMonData(mon, MON_DATA_FRIENDSHIP)) / 20; //Originally 25
         break;
     case EFFECT_FURY_CUTTER:
-        if (gMain.inBattle)
+        if (monInBattle)
             power = min(160, CalcFuryCutterBasePower(power, gDisableStructs[battler].furyCutterCounter + 1));
         break;
     case EFFECT_SPIT_UP:
-        if (gMain.inBattle)
+        if (monInBattle)
             power = 100 * gDisableStructs[battler].stockpileCounter;
         break;
     case EFFECT_WEATHER_BALL:
@@ -6284,7 +6285,7 @@ u32 GetDynamicPower(struct Pokemon *mon, u32 move, u32 battler){
             power *= 2;
         break;
     case EFFECT_STORED_POWER:
-        if (gMain.inBattle)
+        if (monInBattle)
             power += (CountBattlerStatIncreases(battler, TRUE) * 20);
         break;
     case EFFECT_EXPLOSION:
@@ -6322,7 +6323,7 @@ u32 GetDynamicPower(struct Pokemon *mon, u32 move, u32 battler){
             UQ4_12_MULTIPLY(power, 1.5);
         break;
     case EFFECT_RAGE_FIST:
-        if (gMain.inBattle)
+        if (monInBattle)
             power = min(350, 50 + (50 * gBattleStruct->timesGotHit[GetBattlerSide(battler)][gBattlerPartyIndexes[battler]]));
         break;
     case EFFECT_FACADE:
@@ -6339,7 +6340,7 @@ u32 GetDynamicPower(struct Pokemon *mon, u32 move, u32 battler){
             UQ4_12_MULTIPLY(power, 0.5);
         break;
     case EFFECT_STOMPING_TANTRUM:
-        if (gMain.inBattle)
+        if (monInBattle)
         {
             if (gBattleStruct->battlerState[battler].lastMoveFailed)
                 UQ4_12_MULTIPLY(power, 2.0);
@@ -6384,7 +6385,7 @@ u32 GetDynamicPower(struct Pokemon *mon, u32 move, u32 battler){
             UQ4_12_MULTIPLY(power, 1.3);
         break;
     case ABILITY_TOUGH_CLAWS:
-        if (gMain.inBattle)
+        if (monInBattle)
         {
             if (IsMoveMakingContact(move, battler))
                 UQ4_12_MULTIPLY(power, 1.3);
@@ -6494,11 +6495,13 @@ u32 GetDynamicPower(struct Pokemon *mon, u32 move, u32 battler){
     else if (isPsychic && type == TYPE_PSYCHIC)
         UQ4_12_MULTIPLY(power, B_TERRAIN_TYPE_BOOST >= GEN_8 ? 1.3 : 1.5);
 
-    if (gMain.inBattle)
+    if (monInBattle)
     {
         if (gStatuses3[battler] & STATUS3_CHARGED_UP && type == TYPE_ELECTRIC)
             UQ4_12_MULTIPLY(power, 2.0);
-
+    }
+    else if (gMain.inBattle)
+    {
         if (type == TYPE_ELECTRIC && ((gFieldStatuses & STATUS_FIELD_MUDSPORT)
         || AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_MUD_SPORT, 0)))
             UQ4_12_MULTIPLY(power, B_SPORT_DMG_REDUCTION >= GEN_5 ? 0.33 : 0.5);
@@ -6515,8 +6518,9 @@ u32 GetDynamicAccuracy(struct Pokemon *mon, u32 move, u32 battler){
     u32 accuracy = GetMoveAccuracy(move);
     u32 moveEffect = GetMoveEffect(move);
     u32 holdEffect, ability;
+    bool32 monInBattle = gMain.inBattle && gPartyMenu.menuType != PARTY_MENU_TYPE_IN_BATTLE;
 
-    if (gMain.inBattle)
+    if (monInBattle)
     {
         holdEffect = GetBattlerHoldEffect(battler, TRUE);
         ability = GetBattlerAbility(battler);
@@ -6527,14 +6531,16 @@ u32 GetDynamicAccuracy(struct Pokemon *mon, u32 move, u32 battler){
         ability = GetMonAbility(mon);
     }
 
-    if (gMain.inBattle && HasWeatherEffect())
+    if (gMain.inBattle)
     {
-        if (gBattleWeather & B_WEATHER_SUN && moveEffect == EFFECT_THUNDER)
-            accuracy = 50;
-        else if (gBattleWeather & B_WEATHER_RAIN && (moveEffect == EFFECT_THUNDER || moveEffect == EFFECT_RAIN_ALWAYS_HIT))
-            accuracy = 100;
-        else if (gBattleWeather & (B_WEATHER_SNOW | B_WEATHER_HAIL) && moveEffect == EFFECT_BLIZZARD)
-            accuracy = 100;
+        if (HasWeatherEffect()){
+            if (gBattleWeather & B_WEATHER_SUN && moveEffect == EFFECT_THUNDER)
+                accuracy = 50;
+            else if (gBattleWeather & B_WEATHER_RAIN && (moveEffect == EFFECT_THUNDER || moveEffect == EFFECT_RAIN_ALWAYS_HIT))
+                accuracy = 100;
+            else if (gBattleWeather & (B_WEATHER_SNOW | B_WEATHER_HAIL) && moveEffect == EFFECT_BLIZZARD)
+                accuracy = 100;
+        }
     }
     else
     {

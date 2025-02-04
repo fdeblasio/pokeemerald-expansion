@@ -2795,20 +2795,20 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },                                                                                  \
 }
 
-#define WALKER_BATTLE(Location, Level)     \
-[DIFFICULTY_NORMAL][TRAINER_WALKER_##Location] =              \
-{                                          \
-    .trainerName = _("Walker"),            \
-    MAGMA_GRUNT_M_INFO,                    \
-    .partySize = 1,                        \
-    .party = (const struct TrainerMon[]) { \
-        {                                  \
-        .lvl = Level,                      \
-        .species = SPECIES_TORKOAL,        \
-        .ability = ABILITY_DROUGHT,        \
-        .gender = TRAINER_MON_MALE,        \
-        }                                  \
-    },                                     \
+#define WALKER_BATTLE(Location, Level)            \
+[DIFFICULTY_NORMAL][TRAINER_WALKER_##Location] =  \
+{                                                 \
+    .trainerName = _("Walker"),                   \
+    MAGMA_GRUNT_M_INFO,                           \
+    .partySize = 1,                               \
+    .party = (const struct TrainerMon[]) {        \
+        {                                         \
+        .lvl = Level,                             \
+        .species = SPECIES_TORKOAL,               \
+        .ability = ABILITY_DROUGHT,               \
+        .gender = TRAINER_MON_MALE,               \
+        }                                         \
+    },                                            \
 }
 
 //Team Aqua

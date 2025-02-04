@@ -67,6 +67,8 @@ upcoming
     - Edit Winona's text to change Bird to Flying?
 - Lilycove:
     - Edit contests?/Contests overhaul
+- Mt. Pyre:
+    - Have the inside of Mt. Pyre use Burial Ground terrain?
 - Mossdeep:
 - Sootopolis:
     - The events in Sootopolis should set the seen flag for the trio
@@ -141,13 +143,14 @@ upcoming
 
 ### Moves
 - Find way for Rotom to learn special moves by level up (for relearning). Currently have TMs, but not all moves (Hydro Pump/Leaf Storm) are TMs
+    - This gets solved if the TM list is expanded to have Scarlet and Violet's
 - Find a way for newer gen TMs to be learned by Pokémon whose base forms don't learn the move (for example Eelektross or Toxtricity; or Capsakid not learning the Fire-type moves that Scovillain does)
     - Remove Snarl and Psychic Noise from Toxtricity's level up learnset once this is implemented
 - Nature Power:
     - Nature Power details on summary screen (power/accuracy would be for in-battle status screen only)
         - All moves are special so change category to special (if nothing changes)?
+        - This should wait for the battle terrain refactor
     - Revert some Nature Power moves for a more varied effect (waiting on refactor PR)
-    - Have the inside of Mt. Pyre use Burial Ground terrain?
 - Just make new tutors in towns or Battle Frontier
 - Update local Porymoves for automatic movepool updates (similar to Hail/Snowscape)
     - Any Pokémon that learns Drill Peck should learn Drill Run
@@ -284,7 +287,7 @@ upcoming
 - Make inserting trainer sprites easier?
     - Wrapper for src/data/graphics/trainers.h?
         - Something like this but for U32? #define COMPOUND_U16(file) (const u16[]) INCBIN_U16(file)
-- Contests overhaul
+- Summary screen should show type if changed (by Soak, etc.)
 
 ### Big changes from Vanilla - low priority
 - Remove IVs? Maybe make boolean for either 0 or 31 added to stat
@@ -324,4 +327,4 @@ upcoming
     - Replace green with yellow on player sprites?
     - If not enough, could also add black (Charmander line would have shiny palettes as they're both yellow and black)
 - Tropical:
-    - Tropius, Bellossom, Pau Oricorio, Tsareena, probably a lot of Alolan Pokémon, both forms of Exeggutor (Sun Stone for Alolan)
+    - Tropius, Bellossom, Pau Oricorio, Tsareena, probably a lot of Alolan Pokémon, both forms of Exeggutor (Sun Stone for Alolan), this is just Sun and Moon

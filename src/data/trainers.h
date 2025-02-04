@@ -2698,8 +2698,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     TRAINER_CLASS_PIC(DRAGON_TAMER), \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE
 
-
-
+//Team Magma
 #define MAGMA_GRUNT_M_INFO                                  \
     .trainerClass = TRAINER_CLASS_TEAM_MAGMA,               \
     .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,                \
@@ -2812,8 +2811,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },                                     \
 }
 
-
-
+//Team Aqua
 #define AQUA_GRUNT_M_INFO                                  \
     .trainerClass = TRAINER_CLASS_TEAM_AQUA,               \
     .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,                \
@@ -2937,8 +2935,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },                                                                                 \
 }
 
-
-
+//Team admins and leaders
 #define TABITHA_BATTLE(Location, AceLevel, IVs)                                          \
 [DIFFICULTY_NORMAL][TRAINER_TABITHA_##Location] =                                        \
 {                                                                                        \
@@ -5509,7 +5506,7 @@ MARINA_BATTLE(MUSEUM, 17),
         {
         .lvl = 19,
         .species = SPECIES_KADABRA,
-        .moves = {MOVE_HIDDEN_POWER, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+        .moves = {MOVE_PSYBEAM, MOVE_HIDDEN_POWER, MOVE_NONE, MOVE_NONE}
         }
     },
 },
@@ -6404,7 +6401,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         {
         .lvl = 22,
         .species = SPECIES_KADABRA,
-        .moves = {MOVE_HIDDEN_POWER, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+        .moves = {MOVE_PSYBEAM, MOVE_HIDDEN_POWER, MOVE_NONE, MOVE_NONE}
         }
     },
 },
@@ -6414,7 +6411,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     TRIATHLETE_F_CYCLING_INFO,   \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define ABIGAIL_BENJAMIN_MAGNEMITE(Level, IV)                                                                       \
+#define ABIGAIL_MAGNEMITE(Level, IV)                                                                                \
     TRIATHLETE_MON(Level, IV),                                                                                      \
     .species = Level < 30 ? SPECIES_MAGNEMITE : (Level < REMATCH_3_LEVEL_6 ? SPECIES_MAGNETON : SPECIES_MAGNEZONE), \
     .ability = ABILITY_STURDY
@@ -6436,7 +6433,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        ABIGAIL_BENJAMIN_MAGNEMITE(22, 1),
+        ABIGAIL_MAGNEMITE(22, 1),
         }
     },
 },
@@ -6450,7 +6447,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         ABIGAIL_PLUSLE(REMATCH_2_LEVEL_2, 2),
         },
         {
-        ABIGAIL_BENJAMIN_MAGNEMITE(REMATCH_2_LEVEL_2, 2),
+        ABIGAIL_MAGNEMITE(REMATCH_2_LEVEL_2, 2),
         }
     },
 },
@@ -6467,7 +6464,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         ABIGAIL_PLUSLE(REMATCH_3_LEVEL_3, 3),
         },
         {
-        ABIGAIL_BENJAMIN_MAGNEMITE(REMATCH_3_LEVEL_3, 3),
+        ABIGAIL_MAGNEMITE(REMATCH_3_LEVEL_3, 3),
         }
     },
 },
@@ -6484,7 +6481,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         ABIGAIL_PLUSLE(REMATCH_4_LEVEL_3, 4),
         },
         {
-        ABIGAIL_BENJAMIN_MAGNEMITE(REMATCH_4_LEVEL_3, 4),
+        ABIGAIL_MAGNEMITE(REMATCH_4_LEVEL_3, 4),
         }
     },
 },
@@ -6501,7 +6498,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         ABIGAIL_PLUSLE(REMATCH_5_LEVEL_3, 5),
         },
         {
-        ABIGAIL_BENJAMIN_MAGNEMITE(REMATCH_5_LEVEL_3, 5),
+        ABIGAIL_MAGNEMITE(REMATCH_5_LEVEL_3, 5),
         }
     },
 },
@@ -6510,6 +6507,11 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .trainerName = _("Benjamin"), \
     TRIATHLETE_M_CYCLING_INFO,    \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
+
+#define BENJAMIN_MAGNEMITE(Level, IV)                                                                               \
+    TRIATHLETE_MON(Level, IV),                                                                                      \
+    .species = Level < 30 ? SPECIES_MAGNEMITE : (Level < REMATCH_3_LEVEL_6 ? SPECIES_MAGNETON : SPECIES_MAGNEZONE), \
+    .ability = ABILITY_STURDY
 
 #define BENJAMIN_MINUN(Level, IV) \
     TRIATHLETE_MON(Level, IV),    \
@@ -6527,7 +6529,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        ABIGAIL_BENJAMIN_MAGNEMITE(22, 1),
+        BENJAMIN_MAGNEMITE(22, 1),
         }
     },
 },
@@ -6541,7 +6543,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         BENJAMIN_MINUN(REMATCH_2_LEVEL_2, 2),
         },
         {
-        ABIGAIL_BENJAMIN_MAGNEMITE(REMATCH_2_LEVEL_2, 2),
+        BENJAMIN_MAGNEMITE(REMATCH_2_LEVEL_2, 2),
         }
     },
 },
@@ -6558,7 +6560,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         BENJAMIN_MINUN(REMATCH_3_LEVEL_3, 3),
         },
         {
-        ABIGAIL_BENJAMIN_MAGNEMITE(REMATCH_3_LEVEL_3, 3),
+        BENJAMIN_MAGNEMITE(REMATCH_3_LEVEL_3, 3),
         }
     },
 },
@@ -6575,7 +6577,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         BENJAMIN_MINUN(REMATCH_4_LEVEL_3, 4),
         },
         {
-        ABIGAIL_BENJAMIN_MAGNEMITE(REMATCH_4_LEVEL_3, 4),
+        BENJAMIN_MAGNEMITE(REMATCH_4_LEVEL_3, 4),
         }
     },
 },
@@ -6592,7 +6594,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         BENJAMIN_MINUN(REMATCH_5_LEVEL_3, 5),
         },
         {
-        ABIGAIL_BENJAMIN_MAGNEMITE(REMATCH_5_LEVEL_3, 5),
+        BENJAMIN_MAGNEMITE(REMATCH_5_LEVEL_3, 5),
         }
     },
 },

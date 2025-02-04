@@ -42,38 +42,49 @@ upcoming
 ## To Do:
 - Add RANGE_ to prefix in wild_encounters_to_header.py and remove it from wild_encounters.json
 ### Next playthrough
-- Consolidate flags
-    - FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA, FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY
-    - FLAG_HIDE_FALLARBOR_AZURILL might be unused
-- Get Exp. Share from Steven instead of from Mr. Stone after
-    - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game
-- Include charms? (might go over Key Items amount)
-- Clear up trainer spots by having just one set of gym leader rematches?
-    - Late-game trainers like Nicolas or John and Jay too
-    - Even just reducing to two or three rematches would save space
-- Edit contests?/Contests overhaul
-
-### Misc notes (organize later)
-- After Cats
-    - Set BRENDAN to 1 and MAY to 2 so .gender can just be Rival
-        - Maybe set to TRAINER_MON_MALE and TRAINER_MON_FEMALE to be safe
-    - Add new variable for Ralph's names (string_util.c/characters.h/charmap.txt)
-    - Turn into COMPOUND_STRINGs
+- Rustboro:
+    - Simplify Walda codes?
+- Dewford:
+    - Get Exp. Share from Steven instead of from Mr. Stone after
+        - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game
+- Mauville:
     - MAUVILLE_TRAINER for IVS(12) and SHOCK_WAVE? Or no custom moves for those trainers. Or make other gym trainers use the TM
-    - Hidden Power Kadabras should know Psybeam
-    - Seperate Abigail and Benjamin's Magnemites
-    - Some Magnemites never occur because 30 is less than REMATCH_2_LEVEL
+    - Get all the weird Mauville men at once?
+- Verdanturf:
+    - Try to get Verdanturf grass to start Grassy Terrain instead of messing with weather
+        - MB_SHORT_GRASS but unsure of what else uses that
+            - If it's fine, could use same technique as long grass
+        - Maybe could use MAP_GROUP/MAP_NUM instead
+- Mt. Chimney:
+    - Consolidate flags: FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA, FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY
+- Fallarbor:
+    - FLAG_HIDE_FALLARBOR_AZURILL might be unused
+- New Mauville:
+    - New Mauville is Electric Terrain?
+        - Could use metatiles (same as long grass) or try MAP_GROUP/MAP_NUM
+        - Would need to update dynamics
+- Fortree:
+    - Edit Winona's text to change Bird to Flying?
+- Lilycove:
+    - Edit contests?/Contests overhaul
+- Mossdeep:
+- Sootopolis:
+    - The events in Sootopolis should set the seen flag for the trio
+- Victory Road:
+    - Vito can use TMs
+- Other:
+    - Clear up trainer spots by having just one set of gym leader rematches?
+        - Late-game trainers like Nicolas or John and Jay too
+        - Even just reducing to two or three rematches would save space
+        - For each badge after 5, one less rematch (for example, any trainer fought past Winona would have one less rematch)
     - Add Abilities to single ability and TRAINER_MON_NONE to genderless to make more constistent
-- Remove BP costs so that script_menu.h and field_specials.c can use item/move names directly?
+    - Remove BP costs so that script_menu.h and field_specials.c can use item/move names directly?
 
 ### Meta
 - More simple modifications: https://www.pokecommunity.com/showthread.php?t=416647&page=1
 - Pret wiki tutorials:       https://github.com/pret/pokeemerald/wiki/Tutorials
 - Combine two meta files (notes.md and README.md)?
     Include more changes, even if general like Battle Frontier edits
-- Consolidate flags
-    - FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA, FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY
-    - FLAG_HIDE_FALLARBOR_AZURILL might be unused
 - Remove unused code
     - Vanilla code
 - Organize changes better
@@ -82,7 +93,6 @@ upcoming
 - Once more changes are made, consolidate commits on develop branch again
 
 ### Pokémon
-- The events in Sootopolis should set the seen flag for the trio
 - Eventually remove RSE and/or BDSP teachable moves?
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?
 - For Egg Groups that share names with types, give moves of that type to Pokémon not of that type in the egg group
@@ -96,24 +106,20 @@ upcoming
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
 
 ### Items
-- Get Exp. Share from Steven instead of from Mr. Stone after
-    - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game
 - Ideally all SV TMs would be available if the bag was ever expanded greatly
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Include charms? (might go over Key Items amount)
-- Xaman's TM Case: https://www.pokecommunity.com/showpost.php?p=10378278
+- Xaman's TM Case? (https://www.pokecommunity.com/showpost.php?p=10378278)
 
 ### Trainers
 - Add ORAS team members (like a Picknicker getting a Gulpin)
-Now that Gym Leader rematch party size is consistent, maybe a macro can be made
-Get rid of Gym Leader rematches needing two Pokemon
+- Now that Gym Leader rematch party size is consistent, maybe a macro can be made
+- Get rid of Gym Leader rematches needing two Pokemon
+- Some Magnemites never occur because 30 is less than REMATCH_2_LEVEL
+    - Double check this?
 - More mugshots for other bosses?
 - Readjust wild/trainer levels so that parties aren't overpowered?
 - Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)
-- Edit Winona's text to change Bird to Flying?
-- Clear up trainer spots by having just one set of gym leader rematches?
-    - Late-game trainers like Nicolas or John and Jay too
-    - Even just reducing to two or three rematches would save space
 - Update Elite Four palettes
     - battle_terrain/stadium/palette3-7.pal to better match ypes
 - Brendan/May rematches? (Route 103?)
@@ -122,8 +128,8 @@ Get rid of Gym Leader rematches needing two Pokemon
     - Replace Claydol with a Steel-type?
 - Give Winstrates rematches?
 - Maybe add Brendan/May/Maxie/Archie/admins/Winstrate rematches in Battle Frontier?
-    - Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma. Mega Evo for Houndoom but unsure for Ninetales)
-        - Could swap out Huntail for Mega Gyarados and only it and Houndoom get items
+- Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma. Mega Evo for Houndoom but unsure for Ninetales)
+    - Could swap out Huntail for Mega Gyarados and only it and Houndoom get items
 - Try to get every Pokémon in Pokédex in at least one rematch?
 - Trainer customization:
     - All rematches should have consistent values (gender, IVs (unless maxed but only > level 50), etc.)
@@ -131,11 +137,7 @@ Get rid of Gym Leader rematches needing two Pokemon
     - Leaders would have optimal Abilities/EVs/IVs/Natures
     - Add Speed increasing natures to Triathletes
 - Use Good Ruby's palette shifting to give trainers more unique looks? (https://github.com/Doesnty/goodruby/commit/ff53bbab592865b49f345342205b41cb869abf27)
-- Vito can use TMs
 - Gym leaders/Steven/Breeders can have Hidden Abilities
-- Species define/buffer for trainers who mention a species
-    - Parasol Lady/Numel on Route 113
-    - Black Belt/Machoke on Route 115
 
 ### Moves
 - Find way for Rotom to learn special moves by level up (for relearning). Currently have TMs, but not all moves (Hydro Pump/Leaf Storm) are TMs
@@ -215,13 +217,6 @@ Get rid of Gym Leader rematches needing two Pokemon
 - Non-grass soot tiles should add to soot sack
 - Followers with weather abilities (or Cloud Nine/Air Lock) will change the overworld weather when following?
     - Cloud Nine could do cloudy instead of clear
-- Try to get Verdanturf grass to start Grassy Terrain instead of messing with weather
-    - MB_SHORT_GRASS but unsure of what else uses that
-        - If it's fine, could use same technique as long grass
-    - Maybe could use MAP_GROUP/MAP_NUM instead
-- New Mauville is Electric Terrain?
-    - Could use metatiles (same as long grass) or try MAP_GROUP/MAP_NUM
-    - Would need to update dynamics
 - Give Underwater the same type-effectiveness as rain?
 
 ### Battle Frontier
@@ -272,8 +267,6 @@ Get rid of Gym Leader rematches needing two Pokemon
         - Steven at Meteor Falls once he's talked to there
         - Wally in Victory Road after he's beaten there (this one might just be a flag issue on the current save)
 - Edit contests?
-- Simplify Walda codes?
-- Get all the weird Mauville men at once?
 - Update Favor Lady's items to include new items
 - Add 3 other Regis?
     - Add Regigigas to Sealed Chamber?

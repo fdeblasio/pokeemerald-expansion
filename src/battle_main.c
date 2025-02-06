@@ -6111,7 +6111,7 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
     u32 type = CheckDynamicMoveType(mon, move, battler);
     u32 category = GetMoveCategory(move);
     u32 species, heldItem, holdEffect, ability, type1, type2, type3, status;
-    bool8 isSunny, isRainy, isSandstorm, isSnowy;
+    bool8 isSunny, isRainy, isSandstorm, isSnowy, isFoggy;
     bool8 isElectric, isMisty, isGrassy, isPsychic;
     bool32 monInBattle = gMain.inBattle && gPartyMenu.menuType != PARTY_MENU_TYPE_IN_BATTLE;
 
@@ -6129,6 +6129,8 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
         isRainy = gBattleWeather & B_WEATHER_RAIN;
         isSandstorm = gBattleWeather & B_WEATHER_SANDSTORM;
         isSnowy = gBattleWeather & (B_WEATHER_HAIL | B_WEATHER_SNOW);
+        //isFoggy = gBattleWeather & B_WEATHER_FOG; This is failing for some reason
+        isFoggy = FALSE;
         isElectric = IsBattlerTerrainAffected(battler, STATUS_FIELD_ELECTRIC_TERRAIN);
         isMisty = IsBattlerTerrainAffected(battler, STATUS_FIELD_MISTY_TERRAIN);
         isGrassy = IsBattlerTerrainAffected(battler, STATUS_FIELD_GRASSY_TERRAIN);
@@ -6148,6 +6150,7 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
         isRainy = gWeatherPtr->currWeather == WEATHER_RAIN || gWeatherPtr->currWeather == WEATHER_RAIN_THUNDERSTORM || gWeatherPtr->currWeather == WEATHER_DOWNPOUR;
         isSandstorm = gWeatherPtr->currWeather == WEATHER_SANDSTORM;
         isSnowy = gWeatherPtr->currWeather == WEATHER_SNOW;
+        isFoggy = (gWeatherPtr->currWeather == WEATHER_FOG_HORIZONTAL || gWeatherPtr->currWeather == WEATHER_FOG_DIAGONAL) && B_OVERWORLD_FOG == GEN_4;
         isElectric = gWeatherPtr->currWeather == WEATHER_RAIN_THUNDERSTORM && B_THUNDERSTORM_TERRAIN && IsOverworldMonGrounded(mon);
         isMisty = (gWeatherPtr->currWeather == WEATHER_FOG_HORIZONTAL || gWeatherPtr->currWeather == WEATHER_FOG_DIAGONAL) && B_OVERWORLD_FOG >= GEN_8 && IsOverworldMonGrounded(mon);
         isGrassy = (gWeatherPtr->currWeather == WEATHER_VERDANT || GetPlayerCurMetatileBehavior(gPlayerAvatar.runningState) == MB_LONG_GRASS) && IsOverworldMonGrounded(mon);
@@ -6179,7 +6182,7 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
             if (gBattleWeather & B_WEATHER_ANY)
                 power *= 2;
         }
-        else if (isSunny || isRainy || isSandstorm || isSnowy)
+        else if (isSunny || isRainy || isSandstorm || isSnowy || isFoggy)
             power *= 2;
         break;
     case EFFECT_ACROBATICS:
@@ -6238,7 +6241,7 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
             if (IsBattlerWeatherAffected(battler, (B_WEATHER_HAIL | B_WEATHER_SANDSTORM | B_WEATHER_RAIN | B_WEATHER_SNOW | B_WEATHER_FOG)))
                 UQ4_12_MULTIPLY(power, 0.5);
         }
-        else if (isRainy || isSandstorm || isSnowy)
+        else if (isRainy || isSandstorm || isSnowy || isFoggy)
             UQ4_12_MULTIPLY(power, 0.5);
         break;
     case EFFECT_STOMPING_TANTRUM:
@@ -6419,29 +6422,51 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
 u32 GetDynamicAccuracy(struct Pokemon *mon, enum Move move, enum BattlerId battler){
     u32 accuracy = GetMoveAccuracy(move);
     u32 moveEffect = GetMoveEffect(move);
-    u32 holdEffect, ability;
+    u32 holdEffect, holdEffectParam, ability;
     bool32 monInBattle = gMain.inBattle && gPartyMenu.menuType != PARTY_MENU_TYPE_IN_BATTLE;
 
     if (monInBattle)
     {
         holdEffect = GetBattlerHoldEffect(battler, TRUE);
+        holdEffectParam = GetBattlerHoldEffectParam(battler);
         ability = GetBattlerAbility(battler);
     }
     else
     {
         holdEffect = ItemId_GetHoldEffect(GetMonData(mon, MON_DATA_HELD_ITEM, 0));
+        holdEffectParam = ItemId_GetHoldEffectParam(GetMonData(mon, MON_DATA_HELD_ITEM, 0));
         ability = GetMonAbility(mon);
     }
 
     if (gMain.inBattle)
     {
+        MgbaPrintf(MGBA_LOG_WARN, "inBattle");
         if (HasWeatherEffect()){
             if (gBattleWeather & B_WEATHER_SUN && moveEffect == EFFECT_THUNDER)
                 accuracy = 50;
             else if (gBattleWeather & B_WEATHER_RAIN && (moveEffect == EFFECT_THUNDER || moveEffect == EFFECT_RAIN_ALWAYS_HIT))
-                accuracy = 100;
+                return 100;
             else if (gBattleWeather & (B_WEATHER_SNOW | B_WEATHER_HAIL) && moveEffect == EFFECT_BLIZZARD)
-                accuracy = 100;
+                return 100;
+            else if (gBattleWeather & B_WEATHER_FOG)
+                accuracy = (accuracy * 60) / 100;
+        }
+
+        if (gFieldStatuses & STATUS_FIELD_GRAVITY)
+            accuracy = (accuracy * 5) / 3;
+
+        if (gPartyMenu.menuType != PARTY_MENU_TYPE_IN_BATTLE)
+        {
+            if (gBattleStruct->battlerState[battler].usedMicleBerry)
+            {
+                if (ability == ABILITY_RIPEN)
+                    accuracy = (accuracy * 140) / 100;
+                else
+                    accuracy = (accuracy * 120) / 100;
+            }
+            s8 buff = gBattleMons[battler].statStages[STAT_ACC];
+            accuracy = gAccuracyStageRatios[buff].dividend * accuracy;
+            accuracy /= gAccuracyStageRatios[buff].divisor;
         }
     }
     else
@@ -6461,6 +6486,10 @@ u32 GetDynamicAccuracy(struct Pokemon *mon, enum Move move, enum BattlerId battl
         case WEATHER_SNOW:
             if (moveEffect == EFFECT_BLIZZARD)
                 accuracy = 100;
+        case WEATHER_FOG_DIAGONAL:
+        case WEATHER_FOG_HORIZONTAL:
+            if (B_OVERWORLD_FOG == GEN_4)
+                accuracy = (accuracy * 60) / 100;
         }
     }
 
@@ -6472,7 +6501,7 @@ u32 GetDynamicAccuracy(struct Pokemon *mon, enum Move move, enum BattlerId battl
         accuracy = (accuracy * 80) / 100;
 
     if (holdEffect == HOLD_EFFECT_WIDE_LENS)
-        accuracy = (accuracy * 110) / 100;
+        accuracy = (accuracy * (100 + holdEffectParam)) / 100;
 
     return min(accuracy, 100);
 }

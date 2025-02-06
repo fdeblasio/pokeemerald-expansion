@@ -184,6 +184,9 @@ upcoming
     - Weather abilities count towards corresponding weather (for example, Drought would show the sunny boost)
         - Include as part of isSunny?
         - Same thing for Terrain/Surge abilities?
+- Dynamic accuracy:
+    - Micle Berry and accuracy stages will not show up on summary screen in battle. This might be unavoidable
+        - They also get reset upon looking at the summary screen
 
 ### Field Moves
 - Edit moves that work in field

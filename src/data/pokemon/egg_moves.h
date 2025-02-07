@@ -13,6 +13,7 @@ static const u16 sBulbasaurEggMoveLearnset[] = {
     MOVE_INGRAIN,
     MOVE_NATURE_POWER,
     MOVE_PETAL_DANCE,
+    MOVE_POISON_FANG,
     MOVE_ROUND,
     MOVE_SKULL_BASH,
     MOVE_SLUDGE,

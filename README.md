@@ -1066,8 +1066,18 @@ There are some mechanics, moves and abilities that are missing and being develop
 - All starters:
     - Any with a STAB attack at level 5 or below had it swapped with the next attack to prevent the rival battle from being too hard
 
+- Bulbasaur (not in main game):
+    - Learns Magical Leaf, Venoshock, Giga Drain, Energy Ball, and Sludge Bomb by level up
+    - Learns Poison Fang by Egg Move
+
 - Ivysaur (not in main game):
     - Evolution: 32->36
+    - Learns Magical Leaf, Venoshock, Giga Drain, Energy Ball, and Sludge Bomb by level up
+    - Learns Poison Fang by Egg Move
+
+- Venusaur (not in main game):
+    - Learns Magical Leaf, Venoshock, Giga Drain, Energy Ball, and Sludge Bomb by level up
+    - Learns Poison Fang by Egg Move
 
 - Charmander/Charmeleon/Charizard (not in main game):
     - Learn Metal Claw by level up
@@ -1256,6 +1266,13 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Thick Club: 5%->50%
         - Rare Bone: 0%->5%
     - Learns Fire Punch and Temper Flare by level up
+
+- Tyrogue:
+    - SpD: 35->55
+    - Learns Rock Smash by level up
+
+- Hitmonchan:
+    - Learns Dizzy Punch by level up
 
 - Farfetch'd (not in main game):
     - Held item: Leek: 5%->100%
@@ -1953,6 +1970,22 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Chimchar:
     - Evolution: 14->16
+    - Learns Incinerate, Fire Punch, and Lava Plume by level up
+
+- Monferno:
+    - Learns Incinerate, Karate Chop, Vacuum Wave, Fire Punch, Lava Plume, Flamethrower, and Drain Punch by level up
+
+- Infernape:
+    - Learns Incinerate, Karate Chop, Vacuum Wave, Fire Punch, Lava Plume, Flamethrower, Drain Punch, and Aura Sphere by level up
+
+- Starly:
+    - Learns Dual Wingbeat by level up
+
+- Staravia/Staraptor:
+    - Learn Slash/Dual Wingbeat by level up
+
+- Bibarel:
+    - Learns Waterfall, Aqua Tail, Body Slam, and Tail Slap by level up
 
 - Shinx/Luxio/Luxray:
     - Learn Supercell Slam by level up
@@ -2067,7 +2100,10 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Atk: 108->115
 
 - Patrat/Watchog:
-    - Learn Cut, Headbutt and Body Slam by level up
+    - Learn Cut, Headbutt, and Body Slam by level up
+
+- Lillipup/Herdier/Stoutland:
+    - Learn Covet and Body Slam by level up
 
 - Purrloin:
     - HP: 41->45
@@ -2123,7 +2159,12 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Swadloon:
     - Evolution: friendship->30
 
+- Venipede/Whirlipede:
+    - Learn Bug Bite at level 12 and Steamroller in its place at level 20
+
 - Scolipede:
+    - Learns X-Scissor and Poison Jab upon evolving
+    - Learns Bug Bite at level 12 and Steamroller in its place at level 20
     - Learns Coil by level up
     - Learns Lunge by move tutor
 
@@ -2371,6 +2412,27 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Kyurem:
     - Learns Icicle Crash by TM
+
+- Froakie/Frogadier
+    - Learn Bubble Beam and Surf by level up
+    - Hidden Ability: Protean->Water Bubble
+
+- Greninja
+    - Learns Bubble Beam, Dark Pulse, and Surf by level up
+
+- Fletchling:
+    - Spe: 62->65
+    - Learns Dual Wingbeat by level up
+
+- Fletchinder:
+    - Atk: 73->75
+    - Spe: 84->85
+    - Learns Flame Wheel, Temper Flare, and Dual Wingbeat by level up
+
+- Talonflame:
+    - Atk: 81->90
+    - Spe: 126->130
+    - Learns Flame Wheel, Temper Flare, and Dual Wingbeat by level up
 
 - Litleo:
     - HP: 62->65
@@ -2735,7 +2797,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Wattrel/Kilowattrel:
     - Learn Gust, Shock Wave, Air Cutter, Tailwind, Air Slash, and Thunder by level up
     - Learn Rain Dance by TM
-    - Learns Heat Wave by Egg Move
+    - Learn Heat Wave by Egg Move
 
 - Capsakid:
     - Hidden Ability: Klutz->Moody

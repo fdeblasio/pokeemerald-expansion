@@ -2576,6 +2576,7 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
     - Learns Dragon Breath by Egg Move
 
 - Drampa:
+    - Type: Normal/Dragon->Dragon/Normal
     - Learns Swift by level up
 
 - Tapu Koko:

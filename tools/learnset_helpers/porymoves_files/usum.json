@@ -51047,8 +51047,7 @@
       "MOVE_ROLE_PLAY",
       "MOVE_SNORE",
       "MOVE_STEALTH_ROCK",
-      "MOVE_THUNDER_PUNCH",
-      "MOVE_UPROAR"
+      "MOVE_THUNDER_PUNCH"
     ]
   },
   "MONFERNO": {
@@ -51121,8 +51120,7 @@
     "PreEvoMoves": [
       "MOVE_FACADE",
       "MOVE_FLAMETHROWER",
-      "MOVE_NASTY_PLOT",
-      "MOVE_UPROAR"
+      "MOVE_NASTY_PLOT"
     ],
     "TMMoves": [
       "MOVE_WORK_UP",
@@ -51279,7 +51277,6 @@
       "MOVE_NASTY_PLOT",
       "MOVE_SLACK_OFF",
       "MOVE_TORMENT",
-      "MOVE_UPROAR",
       "MOVE_MACH_PUNCH"
     ],
     "TMMoves": [

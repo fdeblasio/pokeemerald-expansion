@@ -1278,6 +1278,8 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
     if (species == SPECIES_MIRAGE_ISLAND && GetCurrentRegionMapSectionId() == MAPSEC_ROUTE_130){
         value = 2;
         SetBoxMonData(boxMon, MON_DATA_ABILITY_NUM, &value);
+        value = MAPSEC_MIRAGE_ISLAND;
+        SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &value);
     }
     else if (gSpeciesInfo[species].abilities[1])
     {

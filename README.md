@@ -218,7 +218,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Some areas made easier to navigate
     - Route 102/103: Path from Littleroot to rival is more direct
 - Some reversions back to Ruby and Sapphire
-    - Birch is chased by a Poochyena
     - Some trainers on Routes 104 and 117 go back to their original locations
 - Gym Leaders use more Hoenn Pokémon
 - Gym Leaders and Magma/Aqua Admins/Leaders no longer have underleveled evolutions

@@ -1315,7 +1315,7 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
     - Held item: Lucky Egg: 50%->100%
     - Learns Revival Blessing by level up
 
-- Tangela/Tangrowth:
+- Tangela/Tangrowth (postgame):
     - Learn Energy Ball by level up
 
 - Goldeen:
@@ -1535,7 +1535,7 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
     - Spe: 50->60
     - Learns Aqua Jet by level up
 
-- Sunflora:
+- Sunflora (postgame):
     - Learns Morning Sun by level up
 
 - Honchkrow (not in main game):
@@ -2030,38 +2030,30 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
 - Abomasnow:
     - Learns Icicle Crash by TM
 
+- All Rotom forms:
+    - Catch rate: 45->90
+    - Learn Parabolic Charge, Thunderbolt, and Shadow Ball by level up
+
 - Rotom:
     - Def: 77->90
     - SpA: 95->100
     - SpD: 77->90
     - Spe: 91->100
-    - Catch rate: 45->90
-    - Learns Parabolic Charge, Thunderbolt, and Shadow Ball by level up
 
 - Rotom Heat:
-    - Catch rate: 45->90
     - Now learns Flamethrower by form change and instead learns Overheat by TM
-    - Learns Parabolic Charge, Thunderbolt, and Shadow Ball by level up
 
 - Rotom Wash:
-    - Catch rate: 45->90
-    - Now learns Surf by form change
-    - Learns Parabolic Charge, Thunderbolt, and Shadow Ball by level up
+    - Now learns Surf by form change instead of Hydro Pump
 
 - Rotom Frost:
-    - Catch rate: 45->90
     - Now learns Ice Beam by form change and instead learns Blizzard by TM
-    - Learns Parabolic Charge, Thunderbolt, and Shadow Ball by level up
 
 - Rotom Fan:
-    - Catch rate: 45->90
     - Ability: Levitate->Wind Power
-    - Learns Parabolic Charge, Thunderbolt, and Shadow Ball by level up
 
 - Rotom Mow:
-    - Catch rate: 45->90
-    - Now learns Energy Ball by form change
-    - Learns Parabolic Charge, Thunderbolt, and Shadow Ball by level up
+    - Now learns Energy Ball by form change instead of Leaf Storm
 
 - Snivy:
     - Evolution: 17->16

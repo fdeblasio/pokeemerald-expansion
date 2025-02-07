@@ -562,19 +562,19 @@
               },
               {
                 "range": "RANGE_ROUTE_101",
-                "species": "EARLY_BUG_1"
+                "species": "EARLY_BIRD_2"
               },
               {
                 "range": "RANGE_ROUTE_101",
-                "species": "EARLY_BUG_2"
+                "species": "EARLY_BIRD_2"
               },
               {
                 "range": "RANGE_ROUTE_101",
-                "species": "EARLY_BUG_1"
+                "species": "EARLY_BIRD_2"
               },
               {
                 "range": "RANGE_ROUTE_101",
-                "species": "EARLY_BUG_2"
+                "species": "EARLY_BIRD_2"
               }
             ]
           }
@@ -595,35 +595,35 @@
               },
               {
                 "range": "RANGE_ROUTE_102_104",
+                "species": "WALLY_STARTER"
+              },
+              {
+                "range": "RANGE_ROUTE_102_104",
+                "species": "WALLY_STARTER"
+              },
+              {
+                "range": "RANGE_ROUTE_102_104",
+                "species": "SURSKIT"
+              },
+              {
+                "range": "RANGE_ROUTE_102_104",
+                "species": "SURSKIT"
+              },
+              {
+                "range": "RANGE_ROUTE_102_104",
+                "species": "EARLY_BUG_1"
+              },
+              {
+                "range": "RANGE_ROUTE_102_104",
+                "species": "EARLY_BUG_1"
+              },
+              {
+                "range": "RANGE_ROUTE_102_104",
                 "species": "SEEDOT"
               },
               {
                 "range": "RANGE_ROUTE_102_104",
                 "species": "LOTAD"
-              },
-              {
-                "range": "RANGE_ROUTE_102_104",
-                "species": "WALLY_STARTER"
-              },
-              {
-                "range": "RANGE_ROUTE_102_104",
-                "species": "WALLY_STARTER"
-              },
-              {
-                "range": "RANGE_ROUTE_102_104",
-                "species": "WALLY_STARTER"
-              },
-              {
-                "range": "RANGE_ROUTE_102_104",
-                "species": "WALLY_STARTER"
-              },
-              {
-                "range": "RANGE_ROUTE_102_104",
-                "species": "SURSKIT"
-              },
-              {
-                "range": "RANGE_ROUTE_102_104",
-                "species": "SURSKIT"
               }
             ]
           },
@@ -791,11 +791,11 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_102_104",
-                "species": "EARLY_BIRD_1"
+                "species": "WATTREL"
               },
               {
                 "range": "RANGE_ROUTE_102_104",
-                "species": "EARLY_BIRD_2"
+                "species": "EARLY_BIRD_1"
               },
               {
                 "range": "RANGE_ROUTE_102_104",
@@ -807,7 +807,7 @@
               },
               {
                 "range": "RANGE_ROUTE_102_104",
-                "species": "EARLY_BIRD_1"
+                "species": "WATTREL"
               },
               {
                 "range": "RANGE_ROUTE_102_104",
@@ -815,19 +815,19 @@
               },
               {
                 "range": "RANGE_ROUTE_102_104",
-                "species": "EARLY_BIRD_2"
-              },
-              {
-                "range": "RANGE_ROUTE_102_104",
                 "species": "EARLY_BIRD_1"
               },
               {
                 "range": "RANGE_ROUTE_102_104",
-                "species": "EARLY_BIRD_1"
+                "species": "WATTREL"
               },
               {
                 "range": "RANGE_ROUTE_102_104",
-                "species": "EARLY_BIRD_1"
+                "species": "WATTREL"
+              },
+              {
+                "range": "RANGE_ROUTE_102_104",
+                "species": "WATTREL"
               }
             ]
           },
@@ -3082,19 +3082,19 @@
               },
               {
                 "range": "RANGE_PETALBURG_WOODS_COCOON",
-                "species": "SILCOON"
+                "species": "KAKUNA"
+              },
+              {
+                "range": "RANGE_PETALBURG_WOODS",
+                "species": "VENIPEDE"
               },
               {
                 "range": "RANGE_PETALBURG_WOODS_COCOON",
-                "species": "CASCOON"
+                "species": "KAKUNA"
               },
               {
-                "range": "RANGE_PETALBURG_WOODS_COCOON",
-                "species": "SILCOON"
-              },
-              {
-                "range": "RANGE_PETALBURG_WOODS_COCOON",
-                "species": "CASCOON"
+                "range": "RANGE_PETALBURG_WOODS",
+                "species": "VENIPEDE"
               },
               {
                 "range": "RANGE_PETALBURG_WOODS",

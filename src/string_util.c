@@ -496,7 +496,7 @@ static const u8 *ExpandPlaceholder_Ralph(void)
     return gText_ExpandedPlaceholder_Ralph;
 }
 
-const u8 gText_ExpandedPlaceholder_Peeko[] = _("Peeko");
+const u8 gText_ExpandedPlaceholder_Peeko[] = _("Keelo");
 static const u8 *ExpandPlaceholder_Peeko(void)
 {
     return gText_ExpandedPlaceholder_Peeko;

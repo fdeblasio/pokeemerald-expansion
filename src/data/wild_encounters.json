@@ -538,43 +538,43 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_101",
-                "species": "ZIGZAGOON"
+                "species": "EARLY_BEAST_1"
               },
               {
                 "range": "RANGE_ROUTE_101",
-                "species": "POOCHYENA"
+                "species": "EARLY_BEAST_2"
               },
               {
                 "range": "RANGE_ROUTE_101",
-                "species": "ZIGZAGOON"
+                "species": "EARLY_BEAST_1"
               },
               {
                 "range": "RANGE_ROUTE_101",
-                "species": "POOCHYENA"
+                "species": "EARLY_BEAST_2"
               },
               {
                 "range": "RANGE_ROUTE_101",
-                "species": "ZIGZAGOON"
+                "species": "EARLY_BEAST_1"
               },
               {
                 "range": "RANGE_ROUTE_101",
-                "species": "POOCHYENA"
+                "species": "EARLY_BEAST_2"
               },
               {
                 "range": "RANGE_ROUTE_101",
-                "species": "WURMPLE"
+                "species": "EARLY_BUG_1"
               },
               {
                 "range": "RANGE_ROUTE_101",
-                "species": "WURMPLE"
+                "species": "EARLY_BUG_2"
               },
               {
                 "range": "RANGE_ROUTE_101",
-                "species": "WURMPLE"
+                "species": "EARLY_BUG_1"
               },
               {
                 "range": "RANGE_ROUTE_101",
-                "species": "WURMPLE"
+                "species": "EARLY_BUG_2"
               }
             ]
           }
@@ -689,43 +689,43 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_103",
-                "species": "WINGULL"
+                "species": "EARLY_BIRD_1"
               },
               {
                 "range": "RANGE_ROUTE_103",
-                "species": "WINGULL"
+                "species": "EARLY_BIRD_1"
               },
               {
                 "range": "RANGE_ROUTE_103",
-                "species": "WINGULL"
+                "species": "EARLY_BIRD_1"
               },
               {
                 "range": "RANGE_ROUTE_103",
-                "species": "POOCHYENA"
+                "species": "EARLY_BEAST_2"
               },
               {
                 "range": "RANGE_ROUTE_103",
-                "species": "ZIGZAGOON"
+                "species": "EARLY_BEAST_1"
               },
               {
                 "range": "RANGE_ROUTE_103",
-                "species": "POOCHYENA"
+                "species": "EARLY_BEAST_2"
               },
               {
                 "range": "RANGE_ROUTE_103",
-                "species": "ZIGZAGOON"
+                "species": "EARLY_BEAST_1"
               },
               {
                 "range": "RANGE_ROUTE_103",
-                "species": "ZIGZAGOON"
+                "species": "EARLY_BEAST_1"
               },
               {
                 "range": "RANGE_ROUTE_103",
-                "species": "POOCHYENA"
+                "species": "EARLY_BEAST_2"
               },
               {
                 "range": "RANGE_ROUTE_103",
-                "species": "ZIGZAGOON"
+                "species": "EARLY_BEAST_1"
               }
             ]
           },
@@ -791,23 +791,11 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_102_104",
-                "species": "WINGULL"
+                "species": "EARLY_BIRD_1"
               },
               {
                 "range": "RANGE_ROUTE_102_104",
-                "species": "TAILLOW"
-              },
-              {
-                "range": "RANGE_ROUTE_102_104",
-                "species": "AZURILL"
-              },
-              {
-                "range": "RANGE_ROUTE_102_104",
-                "species": "WURMPLE"
-              },
-              {
-                "range": "RANGE_ROUTE_102_104",
-                "species": "WINGULL"
+                "species": "EARLY_BIRD_2"
               },
               {
                 "range": "RANGE_ROUTE_102_104",
@@ -815,19 +803,31 @@
               },
               {
                 "range": "RANGE_ROUTE_102_104",
-                "species": "TAILLOW"
+                "species": "EARLY_BUG_1"
               },
               {
                 "range": "RANGE_ROUTE_102_104",
-                "species": "WINGULL"
+                "species": "EARLY_BIRD_1"
               },
               {
                 "range": "RANGE_ROUTE_102_104",
-                "species": "WINGULL"
+                "species": "AZURILL"
               },
               {
                 "range": "RANGE_ROUTE_102_104",
-                "species": "WINGULL"
+                "species": "EARLY_BIRD_2"
+              },
+              {
+                "range": "RANGE_ROUTE_102_104",
+                "species": "EARLY_BIRD_1"
+              },
+              {
+                "range": "RANGE_ROUTE_102_104",
+                "species": "EARLY_BIRD_1"
+              },
+              {
+                "range": "RANGE_ROUTE_102_104",
+                "species": "EARLY_BIRD_1"
               }
             ]
           },

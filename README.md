@@ -1110,9 +1110,6 @@ There are some mechanics, moves and abilities that are missing and being develop
     - SpD: 75->85
     - Learns Poison Tail, Venoshock, Poison Fang, Drill Run, and Earthquake by level up
 
-- Ekans/Arbok:
-    - Learn Dragon Breath by Egg Move
-
 - Pichu:
     - Held item: None->Light Ball
     - Can also evolve at level 12
@@ -1143,12 +1140,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Oddish/Gloom/Vileplume/Bellossom:
     - Learn Energy Ball by level up
 
-- Parasect:
-    - Held items:
-        - Tiny Mushroom: 50%->0%
-        - Big Mushroom: 5%->50%
-        - Balm Mushroom: 0%->5%
-
 - Venonat:
     - SpA: 40->55
     - Learns Bug Bite, Struggle Bug, Venoshock, and Sludge Bomb by level up
@@ -1156,76 +1147,11 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Venomoth:
     - Learns Bug Bite, Struggle Bug, Venoshock, and Sludge Bomb by level up
 
-- Diglett:
-    - Learns Stomping Tantrum by level up
-
-- Dugtrio:
-    - HP: 35->50
-    - Learns Stomping Tantrum by level up
-
-- Alolan Dugtrio:
-    - HP: 35->50
-
-- Meowth (postgame):
-    - Atk: 45->55
-    - Learns Cut and Covet by level up
-
-- Alolan Meowth (postgame):
-    - Def: 35->40
-    - SpA: 50->55
-    - Can also evolve at level 28
-    - Learns Pursuit and Thief by level up
-    - Learns Cut by TM
-
-- Galarian Meowth (postgame):
-    - Atk: 65->75
-    - Learns Bullet Punch by level up
-    - Learns Cut by TM
-
-- Persian (postgame):
-    - HP: 65->70
-    - Atk: 70->75
-    - Learns Cut and Covet by level up
-
-- Alolan Persian (postgame):
-    - HP: 65->70
-    - Def: 60->65
-    - Learns Pursuit and Thief by level up
-    - Learns Cut by TM
-
-- Perrserker (postgame):
-    - Atk: 110->115
-    - Spe: 50->55
-    - Learns Bullet Punch by level up
-    - Learns Cut by TM
-
 - Igglybuff:
     - Can also evolve at level 12
 
 - Jigglypuff/Wigglytuff:
     - Learn Alluring Voice by level up
-
-- Psyduck:
-    - Type: Water->Water/Psychic
-    - Learns Psybeam, Extrasensory, and Psychic by level up
-
-- Golduck:
-    - Type: Water->Water/Psychic
-    - Learns Power Gem upon evolving
-    - Learns Psybeam, Extrasensory, and Psychic by level up
-
-- Zubat:
-    - Learns Gust by level up
-
-- Golbat:
-    - Can also evolve at level 33
-    - Learns Gust by level up
-
-- Crobat:
-    - Learns Gust by level up
-
-- Growlithe/Arcanine:
-    - Learn Temper Flare by level up
 
 - Poliwag:
     - SpA: 40->50
@@ -1246,15 +1172,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Machop/Machoke/Machamp:
     - Learn Drain Punch by TM
-
-- Bellsprout/Weepinbell:
-    - Learn Absorb, Mega Drain, Magical Leaf, Giga Drain, Venoshock, and Seed Bomb by level up
-
-- Victreebel:
-    - Learns Absorb, Mega Drain, Magical Leaf, Giga Drain, Venoshock, Seed Bomb, Poison Fang, and Solar Blade by level up
-
-- Tentacool/Tentacruel:
-    - Learn Venoshock by level up
 
 - Geodude/Graveler:
     - Learn Rock Slide by level up
@@ -1289,18 +1206,11 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Gastly/Haunter/Gengar:
     - Type: Ghost/Poison->Ghost
 
-- Drowzee/Hypno:
-    Learn Dream Eater by level up
-
 - Voltorb/Electrode:
     - Learn Thunderbolt by level up
 
 - Hisuian Voltorb/Hisuian Electrode (postgame):
     - Learn Thunderbolt by level up
-
-- Alolan Exeggutor:
-    - Atk: 105->125
-    - SpA: 125->105
 
 - Cubone:
     - Speed: 35->40
@@ -1335,28 +1245,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Magnemite/Magneton/Magnezone:
     - Learn Shock Wave and Thunderbolt by level up
 
-- Farfetch'd:
-    - Held item: Leek: 5%->100%
-
-- Sirfetch'd:
-    - Held item: Leek: 5%->100%
-    - Learns Drain Punch by TM
-
-- Doduo/Dodrio:
-    - Learn Body Slam by level up
-
-- Lickitung:
-    - Atk: 55->65
-    - Spe: 30->50
-    - Learns Coil by level up
-    - Learns Sludge Bomb by TM
-    - Ability: Oblivious->Thick Fat
-
-- Lickilicky:
-    - Learns Coil by level up
-    - Learns Sludge Bomb by TM
-    - Ability: Oblivious->Thick Fat
-
 - Koffing:
     - Atk: 65->60
     - SpA: 60->65
@@ -1365,7 +1253,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Atk: 90->85
     - SpA: 85->90
 
-- Galarian Weezing (postgame):
+- Galarian Weezing:
     - Atk: 90->85
     - SpA: 85->90
     - Learns Misty Explosion by level up
@@ -1396,26 +1284,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Horsea/Seadra/Kingdra:
     - Learn Surf by level up
 
-- Goldeen:
-    - Learns Aqua Jet by level up
-
-- Seaking:
-    - Learns Aqua Jet by level up
-    - Learns Liquidation by TM
-
-- Pinsir:
-    - Catch rate: 45->90
-
-- Staryu/Starmie:
-    - Learns Water Pulse by level up
-
-- Mime Jr./Mr. Mime:
-    - Type: Psychic/Fairy->Psychic
-    - Gender Ratio: 50/50->100/0
-
-- Galarian Mr. Mime/Mr. Rime:
-    - Gender Ratio: 50/50->100/0
-
 - Scyther:
     - Catch rate: 45->90
     - Learns Pounce, Bug Bite, Aerial Ace, Dual Wingbeat, and Lunge by level up
@@ -1426,27 +1294,20 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Kleavor:
     - Learns Aerial Ace, Dual Wingbeat, Pounce, Bug Bite, Rock Tomb, and Lunge by level up
 
-- Smoochum:
-    - Def: 15->20
-    - Catch rate: 45->150
-
-- Jynx:
-    - Def: 35->40
-
-- Elekid (postgame):
+- Elekid:
     - Atk: 63->65
     - Def: 37->40
     - SpA: 65->70
     - Catch rate: 45->150
     - Learns Electric Terrain by level up
 
-- Electabuzz (postgame):
+- Electabuzz:
     - Atk: 83->85
     - Def: 57->60
     - SpA: 95->100
     - Learns Electric Terrain by level up
 
-- Electivire (postgame):
+- Electivire:
     - Atk: 123->125
     - Def: 67->70
     - SpA: 95->100
@@ -1483,29 +1344,12 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Eevee:
     - Def: 50->55
     - SpA: 45->55
-    - Now evolves into Espeon only with a Sun Stone
-    - Now evolves into Umbreon only with a Moon Stone
-    - Now evolves into Sylveon only with a Dawn Stone
+    - Now evolves into only Espeon (with a Sun Stone), Umbreon (with a Moon Stone), or Sylveon (with a Dawn Stone)
     - Swift and Bite swap levels
     - Learns Body Slam at level 45
 
 - All Eeveelutions:
     - Learn Body Slam by level up
-
-- Vaporeon:
-    - Learns Bubble Beam (replacing Aurora Beam), Rain Dance (replacing Aqua Ring), and Scald (replacing Muddy Water) by level up
-    - Learns Aurora Beam, Aqua Ring, and Muddy Water at level 1
-    - Learns Surf at level 45
-
-- Jolteon:
-    - Learns Shock Wave (replacing Double Kick) and Electric Terrain (replacing Pin Missile) by level up
-    - Learns Double Kick and Pin Missile at level 1
-    - Learns Thunderbolt at level 45
-
-- Flareon:
-    - Learns Will-O-Wisp (replacing Smog), Flame Wheel (replacing Bite), and Sunny Day (replacing Fire Spin) by level up
-    - Learns Smog, Bite, and Fire Spin at level 1
-    - Learns Temper Flare at level 45
 
 - Espeon:
     - Learns Hypnosis (replacing Swift), Psychic Terrain (replacing Power Swap), and Extrasensory (replacing Psychic) by level up
@@ -1518,18 +1362,6 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Snarl and Assurance at level 1
     - Learns Crunch at level 45
 
-- Leafeon:
-    - Learns Leafage (replacing Razor Leaf) upon evolving
-    - Learns Razor Leaf (replacing Magical Leaf), Leaf Tornado (replacing Synthesis), and Grassy Terrain (replacing Sunny Day) by level up
-    - Learns Magical Leaf, Synthesis, and Sunny Day at level 1
-    - Learns Seed Bomb at level 45
-
-- Glaceon:
-    - Learns Powder Snow (replacing Icy Wind) upon evolving
-    - Learns Aurora Veil (replacing Ice Shard) and Aurora Beam (replacing Bite) by level up
-    - Learns Ice Shard, Icy Wind, and Bite at level 1
-    - Learns Ice Beam at level 45
-
 - Sylveon:
     - Learns Fairy Wind (replacing Disarming Voice) upon evolving
     - Learns Mist (replacing Swift), Disarming Voice (replacing Light Screen), and Dazzling Gleam (replacing Skill Swap) by level up
@@ -1538,28 +1370,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Aerodactyl (postgame):
     - Learns Dual Wingbeat, Double-Edge, Head Smash, and Brave Bird by level up
-
-- Munchlax:
-    - Can also evolve at level 20
-    - Learns Gastro Acid and Power-Up Punch by Egg Move
-
-- Snorlax:
-    - Learns Slack Off by level up
-
-- Zapdos:
-    - Learns Air Slash by TM
-
-- Bayleef (postgame):
-    - Evolution: 32->36
-
-- Cyndaquil (postgame):
-    - Evolution: 14->16
-
-- Totodile (postgame):
-    - Evolution: 18->16
-
-- Crocnaw (postgame):
-    - Evolution: 30->36
 
 - Ledyba (postgame):
     - Atk: 20->40
@@ -1579,20 +1389,17 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Ariados (postgame):
     - Spe: 40->60
 
-- Chinchou/Lanturn:
-    - Learn Thunder Shock by level up
-
 - Togepi (postgame):
     - Ability: Hustle->Early Bird
     - Can also evolve at level 16
     - Learns Fairy Wind, Draining Kiss, and Disarming Voice by level up
 
-- Togetic (postgame):
+- Togetic:
     - Ability: Hustle->Early Bird
     - Learns Gust by evolving instead of Fairy Wind and learns Fairy Wind by level up instead
     - Learns Draining Kiss, Disarming Voice, and Air Cutter by level up
 
-- Togekiss (postgame):
+- Togekiss:
     - Ability: Hustle->Early Bird
     - Learns Fairy Wind, Gust, Draining Kiss, Disarming Voice, and Air Cutter by level up
 
@@ -1631,36 +1438,18 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Wooper/Quagsire:
     - Learn Water Pulse and Earth Power by level up
 
-- Honchkrow:
-    - Learns Drill Peck by level up
-
 - Misdreavus/Mismagius:
     - Gender Ratio: 50/50->25/75
 
-- Wynaut:
-    - HP: 95->100
-
-- Wobbuffet:
-    - HP: 190->200
-
-- Girafarig/Farigiraf:
-    - Learn Swift by level up
-
-- Gligar/Gliscor (postgame):
+- Gligar/Gliscor:
     - Learn Wing Attack, Bulldoze, Aerial Ace, Dual Wingbeat, and Earthquake by level up
 
-- Dunsparce:
-    - Learns Swift by move tutor
-
-- Snubbull (postgame):
+- Snubbull:
     - Learns Fairy Wind by level up
 
-- Granbull (postgame):
+- Granbull:
     - Hidden Ability: Rattled->Strong Jaw
     - Learns Fairy Wind by level up
-
-- Qwilfish/Hisuian Qwilfish/Overqwil:
-    - Learns Poison Tail by level up
 
 - Shuckle:
     - Learns Rock Tomb by level up
@@ -1693,9 +1482,6 @@ There are some mechanics, moves and abilities that are missing and being develop
     - SpD: 75->85
     - Spe: 45
 
-- Corsola:
-    - SpA: 65->80
-
 - Delibird:
     - Atk: 55->75
     - Catch rate: 45->90
@@ -1718,105 +1504,14 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Phanpy/Donphan:
     - Learn Mud Shot by level up
 
-- Stantler (postgame):
-    - Evolves into Wyrdeer by simply knowing Psyshield Bash
-    - Learns Psyshield Bash by level up
-
 - Smeargle:
     - Atk: 20->50
     - Def: 35->50
     - SpA: 20->50
     - SpD: 45->50
 
-- Raikou:
-    - Hidden Ability: Inner Focus -> Volt Absorb
-    - Learns Shock Wave and Thunderbolt by level up
-
-- Entei:
-    - Hidden Ability: Inner Focus -> Flash Fire
-    - Learns Flame Burst and Temper Flare by level up
-
-- Suicune:
-    - Hidden Ability: Inner Focus -> Water Absorb
-    - Learns Bubble Beam and Scald by level up
-
 - Larvitar/Pupitar/Tyranitar:
     - Learn Mud-Slap by level up
-
-- Lugia:
-    - Learns Brave Bird by level up
-
-- Treecko:
-    - Atk: 45->65
-    - SpA: 65->45
-
-- Grovyle:
-    - Atk: 65->85
-    - SpA: 85->65
-    - Hidden Ability: Unburden->Sharpness
-    - Learns Razor Leaf upon evolving
-
-- Sceptile:
-    - Atk: 85->105
-    - SpA: 105->85
-    - Hidden Ability: Unburden->Sharpness
-    - Learns Dual Chop upon evolving
-    - Learns Razor Leaf by level up
-
-- Mega Sceptile:
-    - Atk: 110->145
-    - SpA: 145->110
-    - Ability: Lightning Rod->Sharpness
-
-- Torchic:
-    - Atk: 60->70
-    - SpA: 70->60
-
-- Combusken:
-    - Learns Flame Wheel upon evolving
-
-- Blaziken:
-    - Learns Flame Wheel by level up
-    - Learns Drain Punch by TM
-
-- Mudkip:
-    - Hidden Ability: Damp->Swift Swim
-
-- Marshtomp:
-    - Hidden Ability: Damp->Swift Swim
-    - Learns Aqua Jet upon evolving
-    - Learns Surf and Earthquake later to avoid breaking the game
-
-- Swampert:
-    - Hidden Ability: Damp->Swift Swim
-    - Learns Aqua Tail upon evolving
-    - Learns Aqua Jet by level up
-    - Learns Surf and Earthquake later to avoid breaking the game
-
-- Poochyena:
-    - Speed: 35->40
-    - Hidden Ability: Rattled->Strong Jaw
-
-- Mightyena:
-    - Atk: 90->100
-    - Speed: 70->80
-    - Hidden Ability: Moxie->Strong Jaw
-
-- Zigzagoon/Linoone:
-    - Learn Body Slam by level up
-
-- Galarian Zigzagoon/Galarian Linoone (postgame):
-    - Abilities: Pickup/Gluttony/Quick Feet->Reckless/Guts/Defiant
-
-- Wurmple:
-    - Learns Bug Bite at level 7 instead of 15
-    - Evolution is now based on time of day
-
-- Beautifly:
-    - Learns Air Slash by TM
-
-- Dustox:
-    - Sp. Def: 90->100 to match Beautifly's stat increase
 
 - Lotad/Lombre/Ludicolo:
     - Learn Water Pulse by level up
@@ -1832,12 +1527,6 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Night Slash upon evolving
     - Learn Bullet Seed, Seed Bomb, Grass Whistle, and Pursuit by level up
 
-- Taillow/Swellow:
-    - Learn Acrobatics by TM
-
-- Wingull/Pelipper:
-    - Learn Gust by level up
-
 - Ralts/Kirlia/Gardevoir:
     - Due to Disarming Voice's boost in power, Fairy Wind is learned in its place at level 1 instead. Disarming Voice is now learned at level 17.
 
@@ -1846,9 +1535,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Mega Gallade:
     - Ability: Inner Focus->Sharpness
-
-- Surskit/Masquerain:
-    - Learn Struggle Bug by level up
 
 - Shroomish:
     - Atk: 40->50
@@ -1907,22 +1593,6 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Def: 145->150
     - SpD: 150->145
 
-- Skitty:
-    - Def: 45->35
-    - SpA: 35->55
-    - SpD: 35->45
-    - Spe: 50->55
-    - Learns Quick Attack, Swift, Headbutt, and Hyper Voice by level up
-
-- Delcatty:
-    - HP: 70->75
-    - Atk: 65->55
-    - Def: 65->55
-    - SpA: 55->95
-    - SpD: 55->65
-    - Spe: 90->105
-    - Learns Quick Attack, Swift, Headbutt, and Hyper Voice by level up
-
 - Sableye:
     - Loses Stall as an ability since it's worthless
     - Catch rate: 45->90
@@ -1937,39 +1607,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Meditite/Medicham:
     - Learn Rock Smash and Drain Punch by level up
-
-- Electrike:
-    - Learns Snarl by level up
-
-- Manectric:
-    - Learns Ice Fang and Snarl by level up
-
-- Plusle:
-    - SpD: 75->85
-
-- Minun:
-    - SpA: 75->85
-
-- Volbeat:
-    - Atk: 73->75
-    - SpA: 47->75
-    - Ability: Illuminate->Tinted Lens
-
-- Illumise:
-    - Atk: 47->75
-    - SpA: 73->75
-    - Abilities: Oblivious/Tinted Lens->Illuminate/Oblivious
-
-- Budew:
-    - Can also evolve at level 13
-    - Gender Ratio: 50/50->75/25
-
-- Roselia/Roserade:
-    - Gender Ratio: 50/50->75/25
-    - Learn Venoshock by level up
-    - Held items:
-        - Poison Barb: 5%->50%
-        - Absorb Bulb: 0%->5%
 
 - Gulpin:
     - Atk: 43->45
@@ -2007,9 +1644,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Cacnea:
     - Learns Seed Bomb by level up
 
-- Cacturne:
-    - Learns Seed Bomb and Throat Chop by level up
-
 - Swablu:
     - Received Fluffy as a second Ability
 
@@ -2021,44 +1655,8 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Mega Altaria:
     - SpD: 105->115
 
-- Zangoose:
-    - Learns Cut by TM
-    - Abilities: Immunity/Toxic Boost->Poison Heal/Sharpness/Guts
-    - Also in Human-Like Egg Group
-    - HP: 73->75
-    - Atk: 115->125
-    - Spe: 90->100
-
-- Seviper:
-    - HP: 73->75
-    - Spe: 65->75
-    - Learns Dragon Breath by Egg Move
-
-- Lunatone:
-    - Learns Icy Wind and Peck by level up
-
-- Solrock:
-    - Learns Power Gem and Solar Blade by level up
-
-- Barboach:
-    - Learns Dragon Dance by level up
-
-- Whiscash:
-    - Atk: 78->90
-    - Def: 73->75
-    - SpA: 76->80
-    - SpD: 71->75
-    - Spe: 60->70
-    - Learns Dragon Dance by level up
-
 - Baltoy/Claydol:
     - Learn Zen Headbutt by level up
-
-- Lileep/Cradily:
-    - Learn Absorb by level up
-
-- Anorith/Armaldo:
-    - Learn Rock Throw by level up
 
 - Feebas:
     - Learns Hydro Pump by level up
@@ -2086,16 +1684,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Banette:
     - Learns Astonish, Shadow Punch, and Shadow Claw by level up
 
-- Tropius:
-    - HP: 99->100
-    - Atk: 68->70
-    - Def: 83->85
-    - SpA: 72->80
-    - SpD: 87->90
-    - Spe: 51->55
-    - Held item: Nanab Berry: 0%->100%
-    - Learns Earth Power by TM
-
 - Chingling:
     - Can also evolve at level 19
 
@@ -2112,41 +1700,17 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Spheal/Sealeo/Walrein:
     - Learn Ice Beam by level up
 
-- Clamperl:
-    - Learns Dive by level up
-
-- Huntail:
-    - Holding a Deep Sea Tooth multiplies its Attack by 1.5
-    - Atk: 104->114
-
-- Gorebyss:
-    - Holding a Deep Sea Scale multiplies its Defense by 1.5
-    - Atk: 84->94
-    - Learns Leech Life by TM
-
-- Relicanth:
-    - Learns Rock Slide by level up
-
-- Luvdisc:
-    - HP: 43->50
-    - SpA: 40->80
-    - Spd: 97->100
-    - Held item: Heart Scale: 50%->100%
-
-- Bagon/Shelgon/Salamence:
+- Bagon/Shelgon/Salamence (postgame):
     - Learn Dragon Pulse by level up
 
-- Beldum:
+- Beldum (postgame):
     - Learns Metal Claw by level up
 
-- Metang/Metagross:
+- Metang/Metagross (postgame):
     - Learn Psybeam by level up
 
 - Regirock/Regice/Registeel:
     - Learn Rest and Endure by level up
-
-- Latios/Latias (postgame):
-    - Level up learnset slightly restructured to avoid a battle where they only have one attacking move
 
 - Kyogre:
     - Learns Aurora Beam, Surf, and Thunder by level up
@@ -2164,17 +1728,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Deoxys (postgame):
     - Can use the Meteorite item to change forms
-
-**NOTE: Nothing past here is in the main game**
-
-- Turtwig:
-    - Evolution: 18->16
-
-- Grotle:
-    - Evolution: 32->36
-
-- Torterra:
-    - Learns Shell Smash upon evolving
 
 - Chimchar:
     - Evolution: 14->16
@@ -2195,31 +1748,11 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Bibarel:
     - Learns Waterfall, Aqua Tail, Body Slam, and Tail Slap by level up
 
-- Shinx/Luxio/Luxray:
-    - Learn Supercell Slam by level up
-
-- Cranidos/Rampardos:
-    - Received Rock Head as a second ability
-    - Learn Rock Throw, Rock Tomb, Brick Break, and Rock Slide by level up
-
-- Shieldon/Bastiodon:
-    - Received Rock Head as a second ability
-
-- Vespiquen:
+- Vespiquen (postgame):
     - Held items:
         - Honey: 0%->50%
         - Max Honey: 0%->5%
         - Poison Barb: 5%->0%
-
-- Pachirisu:
-    - SpA: 45->55
-    - Learns Shock Wave and Thunder Fang by level up
-    - Learns Signal Beam by TM
-    - Learns Tail Slap by Egg Move
-
-- Cherrim Sunshine Form:
-    - Atk: 60->90
-    - Sp. Def: 78->117
 
 - Shellos/Gastrodon:
     - Learn Surf by level up
@@ -2227,48 +1760,14 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Drifloon/Drifblim:
     - Learn Air Cutter and Air Slash by level up
 
-- Buizel/Floatzel:
-    - Learn Bubble by level up
-
-- Buneary:
+- Buneary (postgame):
     - Can also evolve at level 23
-
-- Glameow:
-    - Evolution: 38->34
-    - Learns Covet by level up
-
-- Purugly:
-    - HP: 71->90
-    - Atk: 82->90
-    - Def: 64->65
-    - SpA: 64->65
-    - SpD: 59->65
-    - Spe: 112->115
-    - Learns Covet by level up
-
-- Stunky:
-    - Learns Acid, Poison Tail, Poison Fang, Poison Jab, and Crunch by level up
-
-- Skuntank:
-    - HP: 103->105
-    - Atk: 93->95
-    - Def: 67->70
-    - SpA: 71->80
-    - SpD: 61->65
-    - Spe: 84->85
-    - Learns Acid, Poison Tail, Poison Fang, Poison Jab, and Crunch by level up
 
 - Spiritomb:
     - Learns Astonish, Knock Off, and Foul Play by level up
 
-- Gible/Gabite/Garchomp:
+- Gible/Gabite/Garchomp (postgame):
     - Learn Stomping Tantrum and Earthquake by level up
-
-- Riolu:
-    - Can also evolve at level 20
-
-- Hippopotas/Hippowdon:
-    - Learn Bulldoze, Stomping Tantrum, Scorching Sands, and High Horsepower by level up
 
 - Skorupi/Drapion:
     - Learn Poison Tail by level up
@@ -2304,92 +1803,20 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Rotom Mow:
     - Now learns Energy Ball by form change instead of Leaf Storm
 
-- Palkia:
-    - Learns Dragon Claw by level up
-
-- Regigigas:
+- Regigigas (postgame):
     - Learns Rest, Endure, Body Slam, and Headbutt by level up
 
-- Giratina:
+- Giratina (postgame):
     - Level up learnset updated to be more consistent with Dialga and Palkia
-
-- Snivy:
-    - Evolution: 17->16
-
-- Tepig:
-    - Evolution: 17->16
-
-- Oshawott:
-    - Atk: 55->65
-    - SpA: 63->65
-    - Evolution: 17->16
-
-- Dewott:
-    - Atk: 75->80
-    - SpA: 83->85
-
-- Hisuian Samurott:
-    - Atk: 108->115
-
-- Patrat/Watchog:
-    - Learn Cut, Headbutt, and Body Slam by level up
 
 - Lillipup/Herdier/Stoutland:
     - Learn Howl, Covet, and Body Slam by level up
 
-- Purrloin:
-    - HP: 41->45
-    - Def: 37->40
-    - SpD: 37->40
-    - Learns Thief and Dark Pulse by level up
-
-- Liepard:
-    - HP: 64->65
-    - Atk: 88->90
-    - SpA: 88->90
-    - Spe: 106->110
-    - Learns Thief and Dark Pulse by level up
-
 - Munna/Musharna:
     - Learn Confusion by level up
 
-- Unfezant:
-    - Learns Acrobatics by TM
-
-- Roggenrola:
-    - Atk: 75->85
-    - SpA: 25->35
-    - Learns Rock Throw by level up
-
-- Boldore/Gigalith:
-    - Learn Rock Throw by level up
-
-- Woobat:
-    - Def: 43->45
-    - SpD: 43->45
-    - Spe: 72->75
-    - Abilities: Unaware/Klutz/Simple->Unaware/Simple/Synchronize
-    - Can also evolve at level 24
-    - Learns Psybeam and Psychic Noise by level up
-
-- Swoobat:
-    - HP: 67->80
-    - Atk: 57->60
-    - SpA: 77->90
-    - Spe: 114->115
-    - Abilities: Unaware/Klutz/Simple->Unaware/Simple/Synchronize
-    - Learns Psybeam and Psychic Noise by level up
-
 - Drilbur/Excadrill:
     - Learn Mud Shot, Bulldoze, and Stomping Tantrum by level up
-
-- Audino:
-    - HP: 103->105
-    - Gender Ratio: 50/50 -> 25/75
-    - Base experience: 390->395
-
-- Mega Audino:
-    - Base experience: 425->500
 
 - Tympole:
     - Learns Surf by level up
@@ -2402,114 +1829,35 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Mud Bomb, Bulldoze, Stomping Tantrum, Earth Power, Liquidation, Earthquake, and Surf by level up
     - Learns Waterfall by TM
 
-- Swadloon:
-    - Can also evolve at level 30
-
-- Venipede/Whirlipede:
-    - Learn Bug Bite at level 12 and Steamroller in its place at level 20
-
-- Scolipede:
-    - Learns X-Scissor and Poison Jab upon evolving
-    - Learns Bug Bite at level 12 and Steamroller in its place at level 20
-    - Learns Coil by level up
-    - Learns Lunge by move tutor
-
-- Cottonee:
-    - Learns Magical Leaf, Disarming Voice, and Dazzling Gleam by level up
-
 - Whimsicott:
     - Learns Magical Leaf, Disarming Voice, and Dazzling Gleam by level up
     - Learns Earth Power by TM
 
-- Lilligant:
+- Lilligant (postgame):
     - Learns Earth Power by TM
 
-- Sandile (postgame):
+- Sandile:
     - Atk: 72->75
     - Evolution: 29->25
     - Learns Bulldoze, Stomping Tantrum, and High Horsepower by level up
 
-- Krokorok (postgame):
+- Krokorok:
     - Atk: 82->85
     - Spe: 74->75
     - Evolution: 40->38
     - Learns Bulldoze, Stomping Tantrum, and High Horsepower by level up
 
-- Krookodile (postgame):
+- Krookodile:
     - Atk: 117->120
     - Spe: 92->95
     - Learns Bulldoze, Stomping Tantrum, and High Horsepower by level up
-
-- Darumaka:
-    - Evolution: 35->32
-
-- Galarian Darumaka/Darmanitan:
-    - Held item: Snowball: 0%->50%
-
-- Maractus:
-    - Learns Energy Ball by level up
-
-- Scraggy:
-    - Evolution: 39->35
-    - Learns Dragon Breath by Egg Move
-
-- Scrafty:
-    - Learns Dragon Breath by Egg Move
 
 - Tirtouga/Carracosta:
     - Learn Rock Throw, Rock Tomb, and Liquidation by level up
     - Learn Body Press by TM
 
-- Archen/Archeops:
-    - Hidden Ability: None->Early Bird
-    - Learn Dual Wingbeat by level up
-
-- Trubbish/Garbodor:
-    - Learn Poison Sting, Poison Fang, and Poison Jab by level up
-
-- Gothita:
-    - Evolution: 32->22
-
-- Gothorita:
-    - Evolution: 41->35
-
-- Solosis:
-    - Evolution: 32->22
-
-- Duosion:
-    - Evolution: 41->35
-
-- Ducklett:
-    - Evolution: 35->33
-    - Learns Surf and Dual Wingbeat by level up
-
-- Swanna:
-    - Learns Surf and Dual Wingbeat by level up
-
-- Vanillite:
-    - Evolution: 35->30
-    - Held item: Casteliacone: 0%->50%
-    - Learns Powder Snow, Aurora Beam, and Freeze-Dry by level up
-
-- Vanillish:
-    - Evolution: 47->42
-    - Held item: Casteliacone: 0%->50%
-    - Learns Powder Snow, Aurora Beam, and Freeze-Dry by level up
-
-- Vanilluxe:
-    - Learns Powder Snow, Aurora Beam, and Freeze-Dry by level up
-
 - Emolga:
     - Learns Gust, Aerial Ace, Air Cutter, Dual Wingbeat, and Air Slash by level up
-
-- Karrablast:
-    - Can also evolve with Linking Cord
-    - Learns Bug Bite by level up
-
-- Escavalier:
-    - HP: 70->80
-    - Learns Metal Claw and Twineedle upon evolving
-    - Learns Bug Bite and Smart Strike by level up
 
 - Foongus:
     - Evolution: 39->36
@@ -2550,15 +1898,6 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Metal Claw, Rapid Spin, and Magnet Bomb by level up
     - Learns Body Press and Supercell Slam by TM
 
-- Tynamo:
-    - Evolution: 39->32
-
-- Eelektrik:
-    - Learns Thunder Fang and Supercell Slam by level up
-
-- Eelektrik:
-    - Learns Thunder Fang, Thunder Punch, and Supercell Slam by level up
-
 - Litwick:
     - Evolution: 41->36
     - Learns Incinerate, Burning Jealousy, Mystical Fire, Lava Plume, and Flamethrower by level up
@@ -2576,45 +1915,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Haxorus:
     - Learns Dragon Breath by Egg Move
-
-- Cubchoo:
-    - Evolution: 37->35
-    - Learns Ice Fang and Ice Punch by level up
-
-- Beartic:
-    - Learns Ice Shard, Ice Fang, and Ice Punch by level up
-
-- Cryogonal:
-    - Hidden Ability: None->Snow Warning
-    - Learns Dazzling Gleam, Flash, and Power Gem by TM
-
-- Shelmet:
-    - SpA: 40->50
-    - Can also evolve with Linking Cord
-    - Learns Bug Bite and Signal Beam by level up
-
-- Accelgor:
-    - SpA: 100->110
-    - Abilities: Hydration/Sticky Hold/Unburden->Hydration/Dry Skin/Speed Boost
-    - Learns Water Shuriken upon evolving
-    - Learns Bug Bite and Signal Beam by level up
-
-- Stunfisk:
-    - HP: 109->110
-    - Atk: 66->85
-    - Def: 84->85
-    - SpA: 81->85
-    - SpD: 99->100
-    - Spe: 32->35
-
-- Galarian Stunfisk:
-    - HP: 109->110
-    - Atk: 81->85
-    - Def: 99->100
-    - SpA: 66->85
-    - SpD: 84->85
-    - Spe: 32->35
-    - Learns Terrain Pulse by level up
 
 - Mienfoo:
     - Evolution: 50->38
@@ -2635,33 +1935,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Golurk:
     - Learns Bulldoze by level up
 
-- Pawniard:
-    - Evolution: 52->40
-
-- Rufflet:
-    - Evolution: 54->35
-
-- Vullaby:
-    - Evolution: 54->35
-
-- Heatmor:
-    - Atk: 97->105
-    - Def: 66->70
-    - SpD: 66->70
-    - Learns Ember, Flame Wheel, Fire Punch, and Lava Plume by level up
-
-- Durant:
-    - HP: 58->65
-    - Atk: 109->110
-    - Def: 112->115
-    - SpA: 48->50
-    - SpD: 48->50
-    - Spe: 109->110
-
-- Deino:
+- Deino (postgame):
     - Evolution: 50->30
 
-- Zweilous:
+- Zweilous (postgame):
     - Evolution: 64->55
 
 - Larvesta:
@@ -2673,22 +1950,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Volcarona:
     - Learns Flame Burst, Signal Beam, and Flamethrower by level up
 
-- Tornadus:
-    - Learns Acrobatics by level up
-    - Learns Bleakwind Storm at level 75 instead of level 77 to match the rest of the group
-
-- Thundurus:
+- Thundurus (postgame):
     - Learns Extrasensory by level up
     - Learns Air Slash by TM
-
-- Landorus:
-    - Swaps Bulldoze and Rock Tomb levels for consistency
-    - Learns Swords Dance and Stomping Tantrum by level up
-    - Swaps Sandsear Storm and Fissure levels for consistency
-    - Learns Acrobatics by TM
-
-- Kyurem:
-    - Learns Icicle Crash by TM
 
 - Froakie/Frogadier:
     - Learn Bubble Beam and Surf by level up
@@ -2711,88 +1975,14 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Spe: 126->130
     - Learns Flame Wheel, Temper Flare, and Dual Wingbeat by level up
 
-- Litleo:
-    - HP: 62->65
-    - Def: 58->60
-    - SpA: 73->75
-    - SpD: 54->55
-    - Spe: 72->75
-    - Hidden Ability: Moxie->Competitive
-    - Learns Swift and Flame Burst by level up
-
-- Pyroar:
-    - HP: 86->90
-    - Atk: 68->70
-    - Def: 72->75
-    - SpA: 109->110
-    - SpD: 66->70
-    - Spe: 106->110
-    - Hidden Ability: Moxie->Competitive
-    - Learns Swift, Flame Burst, and Fire Blast by level up
-
-- Skiddo:
-    - Received Grass Pelt as a second Ability and Grassy Surge as a Hidden Ability (previously Grass Pelt)
-    - Learns Grassy Terrain by level up
-
-- Gogoat:
-    - HP: 123->125
-    - Def: 62->65
-    - SpA: 97->90
-    - SpD: 81->85
-    - Spe: 68->70
-    - Received Grass Pelt as a second Ability and Grassy Surge as a Hidden Ability (previously Grass Pelt)
-    - Learns Trailblaze, Grassy Terrain, Grassy Glide by level up
-
 - Pancham:
     - Learns Drain Punch by level up
 
 - Pangoro
     - Learns Dizzy Punch, Dynamic Punch, Drain Punch, and Throat Chop by level up
 
-- Espurr:
-    - HP: 62->65
-    - Atk: 48->50
-    - Def: 54->55
-    - SpA: 63->65
-    - Spe: 68->70
-    - Learns Psychic Noise, Extrasensory, Mean Look, Tearful Look, Baby-Doll Eyes, and Psychic by level up
-
-- Male Meowstic:
-    - HP: 74->75
-    - Atk: 48->50
-    - Def: 76->80
-    - SpA: 83->90
-    - SpD: 81->85
-    - Spe: 104->105
-    - Learns Tearful Look, Baby-Doll Eyes, Psychic Noise, Extrasensory, and Psychic Terrain by level up
-    - Learns Miracle Eye at level 1 instead of level 31
-
-- Female Meowstic:
-    - HP: 74->75
-    - Atk: 48->50
-    - Def: 76->80
-    - SpA: 83->90
-    - SpD: 81->85
-    - Spe: 104->105
-    - Learns Mean Look, Tearful Look, Baby-Doll Eyes, and Psychic Noise by level up
-    - Learns Extrasensory at level 39 and learns Energy Ball in its place at level 44
-
 - Honedge/Doublade/Aegislash:
     - Learn Metal Claw, Shadow Claw, and Smart Strike by level up
-
-- Spritzee:
-    - Gender Ratio: 50/50->25/75
-    - Learns Dazzling Gleam by level up
-
-- Aromatisse:
-    - Spe: 29->47
-    - Base experience: 162->168
-    - Gender Ratio: 50/50->25/75
-    - Learns Aromatic Mist by evolving
-    - Learns Dazzling Gleam by level up
-
-- Swirlix/Slurpuff:
-    - Learn Lick, Disarming Voice, and Dazzling Gleam by level up
 
 - Inkay:
     - Learn Feint Attack and Zen Headbutt by level up
@@ -2814,26 +2004,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Dragalge (postgame):
     - Learns Dragon Breath by Egg Move
 
-- Helioptile:
-    - HP: 44->45
-    - Atk: 38->40
-    - Def: 33->35
-    - SpA: 61->65
-    - SpD: 43->45
-    - Learns Shock Wave and Swift by level up
-    - Learns Dragon Breath by Egg Move
-
-- Heliolisk:
-    - HP: 62->65
-    - Def: 52->55
-    - SpA: 109->110
-    - SpD: 94->110
-    - Spe: 109->110
-    - Learns Weather Ball upon evolving
-    - Learns Shock Wave, Swift, Hyper Voice, Solar Beam, and Morning Sun by level up
-    - Learns Earth Power by TM
-    - Learns Dragon Breath by Egg Move
-
 - Tyrunt/Tyrantrum:
     - Learn Rock Throw, Smack Down, and Rock Tomb by level up
     - Learn Dragon Breath by Egg Move
@@ -2852,20 +2022,6 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Catch rate: 75->90
     - Learns Dazzling Gleam by level up
 
-- Pumpkaboo:
-    - HP: 44/49/54/59->45/50/55/60
-    - Atk: 66->70
-    - SpA: 44->45
-    - Spe: 56/51/46/41->60/55/50/45
-    - Learns Leafage by level up
-
-- Gourgeist:
-    - Def: 122->125
-    - SpA: 58->60
-    - Spe: 99/84/69/54->100/85/70/55
-    - Learns Leafage, Shadow Punch, and Shadow Claw by level up
-    - Learns Body Press by TM
-
 - Noibat:
     - Evolution: 48->40
     - Learns Twister and Dragon Breath by level up
@@ -2875,135 +2031,18 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Spe: 123->125
     - Learns Twister and Dragon Breath by level up
 
-- Rowlet:
-    - Evolution: 17->16
-
-- Dartrix:
-    - Evolution: 34->36
-
-- Litten:
-    - Evolution: 17->16
-
-- Torracat:
-    - Evolution: 34->36
-
-- Incineroar:
-    - Spe: 60->65
-    - Learns Incinerate and Blaze Kick by level up
-
-- Popplio:
-    - Evolution: 17->16
-
-- Brionne:
-    - Evolution: 34->36
-
-- Yungoos:
-    - HP: 48->50
-    - Learns Cut and Chip Away by level up
-
-- Gumshoos:
-    - HP: 88->90
-    - Learns Cut, Chip Away, Thunder Fang, Fire Fang, and Ice Fang by level up
-
-- Crabominable:
-    - HP: 97->100
-    - Atk: 132->135
-    - Def: 77->80
-    - SpA: 62->65
-    - SpD: 67->70
-    - Spe: 43->50
-    - Learns Icicle Crash by TM
-
-- Salandit/Salazzle:
-    - Learn Dragon Breath by Egg Move
-
-- Bounsweet/Steenee:
-    - Held item: Magost Berry: 0%->50%
-
-- Tsareena:
-    - Held item: Magost Berry: 0%->50%
-    - Held item: Grassy Seed: 50%->5%
-
 - Comfey
     - Learns Fairy Wind and Dazzling Gleam by level up
-
-- Sandygast/Palossand:
-    - Learn Mud-Slap, Mud Shot, Hex, and Scorching Sands by level up
-
-- Type: Null:
-    - Can also evolve at level 45
-
-- Turtonator:
-    - Learns Dragon Breath by Egg Move
 
 - Drampa:
     - Type: Normal/Dragon->Dragon/Normal
     - Learns Swift by level up
-
-- Tapu Koko:
-    - Learns Supercell Slam, Play Rough, and Rising Voltage by TM
-
-- Tapu Lele:
-    - Learns Expanding Force by TM
-
-- Tapu Bulu:
-    - Learns Grassy Glide and Play Rough by TM
-
-- Solgaleo:
-    - Learns Psychic Fangs by level up
-
-- Lunala:
-    - Learns Shadow Claw and Hyper Beam by level up
-
-- Thwackey:
-    - Evolution: 35->36
-
-- Raboot:
-    - Evolution: 35->36
-
-- Drizzile:
-    - Evolution: 35->36
-
-- Rookidee:
-    - HP: 38->40
-    - Atk: 47->50
-    - SpA: 33->35
-    - Spe: 57->60
-
-- Corvisquire:
-    - HP: 68->70
-    - Atk: 67->70
-    - SpA: 43->45
-    - Spe: 77->80
-
-- Corviknight:
-    - HP: 98->100
-    - Atk: 87->90
-    - SpA: 53->55
-    - Spe: 67->70
-    - Learns Iron Head by level up
-
-- Wooloo:
-    - Learns Rollout and Body Slam by level up
-
-- Dubwool:
-    - HP: 72->75
-    - Atk: 80->90
-    - Spe: 88->90
-    - Learns Rollout and Body Slam by level up
 
 - Rolycoly:
     - Learns Rock Throw, Rock Tomb, Rock Slide, and Power Gem by level up
 
 - Carkol/Coalossal:
     - Learn Rock Throw, Rock Tomb, Flame Wheel, Rock Slide, Power Gem, Temper Flare, Flame Burst, Lava Plume, and Flamethrower by level up
-
-- Applin/Appletun:
-    - Learn Dragon Breath by Egg Move (Note: Flapple, Dippin, and Hydrapple already learn it)
-
-- Silicobra/Sandaconda:
-    - Learns Mud-Slap, Mud Shot, Scorching Sands, Drill Run, High Horsepower, and Earthquake
-    - Learn Dragon Breath by Egg Move
 
 - Cramorant:
     - HP: 70->75
@@ -3024,25 +2063,6 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Spe: 136->140
     - Learns Aqua Cutter and Waterfall by level up
     - Learns Drill Peck by Egg Move
-
-- Toxel:
-    - Atk: 38->40
-    - SpA: 54->55
-
-- Toxtricity:
-    - Atk: 98->100
-    - SpA: 114->115
-    - Learns Snarl, Psychic Noise, Thunderbolt and Sludge Bomb by level up
-
-- Clobbopus:
-    - Received Suction Cups as a second ability
-
-- Grapploct:
-    - Atk: 118->125
-    - Spe: 42->50
-    - Received Suction Cups as a second ability
-    - Learns Circle Throw, Storm Throw, and Aqua Jet by level up
-    - Learns Strength by TM
 
 - Hatenna:
     - Evolution: 32->28
@@ -3081,40 +2101,18 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Cufant/Copperajah:
     - Received Sturdy as a second ability
 
-- Duraludon/Archaludon:
-    - Learn Dragon Breath by Egg Move
-
-- Dreepy:
-    - Evolution: 50->30
-    - Learns Dragon Breath by Egg Move
-
-- Drakloak:
-    - Evolution: 60->55
-    - Learns Dragon Breath by Egg Move
-
-- Dragapult:
-    - Learns Shadow Claw by TM
-    - Learns Dragon Breath by Egg Move
-
-- Regieleki/Regidrago:
-    - Learn Rest and Endure by level up
-
-- Enamorus:
-    - Learns Play Rough by level up
-    - Learns Air Slash by TM
-
-- Sprigatito:
+- Sprigatito (postgame):
     - HP: 40->45
     - Atk: 61->65
     - Def: 54->55
 
-- Floragato:
+- Floragato (postgame):
     - HP: 61->65
     - Def: 63->65
     - SpD: 63->65
     - Spe: 83->85
 
-- Meowscarada:
+- Meowscarada (postgame):
     - HP: 76->80
     - SpA: 81->80
     - Spe: 123->125
@@ -3136,12 +2134,6 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Body Press upon evolving
     - Learns Fairy Wind by level up
 
-- Garganacl:
-    - Learns Power Gem by level up
-
-- Ceruledge:
-    - Hidden Ability: Weak Armor->Sharpness
-
 - Tadbulb:
     - Hidden Ability: Damp->Volt Absorb
     - Learns Shock Wave and Parabolic Charge by level up
@@ -3161,44 +2153,6 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learn Rain Dance by TM
     - Learn Heat Wave by Egg Move
 
-- Capsakid:
-    - Hidden Ability: Klutz->Moody
-    - Learns Absorb, Mega Drain, Giga Drain, Leaf Blade, and Energy Ball by level up
-
-- Scovillain:
-    - Atk: 108->110
-    - SpA: 108->110
-    - Spe: 75->85
-    - Learns Absorb, Ember, Mega Drain, Incinerate, Giga Drain, Flame Burst, Temper Flare, Leaf Blade, and Energy Ball by level up
-    - Learns Earth Power and Nasty Plot by TM
-
-- Flittle:
-    - Learns Psychic by level up
-
-- Espathra:
-    - SpA: 101->105
-
-- Tinkatink:
-    - SpD: 64->65
-    - Spe: 58->60
-    - Learns Smart Strike and Dazzling Gleam by level up
-
-- Tinkatuff:
-    - Atk: 55->70
-    - SpD: 82->85
-    - Spe: 78->80
-    - Learns Smart Strike and Dazzling Gleam by level up
-
-- Tinkaton:
-    - Atk: 75->85
-    - Def: 77->80
-    - Spe: 94->95
-    - Hidden Ability: Pickpocket->Steelworker
-    - Learns Smack Down, Smart Strike, and Dazzling Gleam by level up
-
-- Wugtrio:
-    - HP: 35->50
-
 - Bombirdier:
     - Atk: 103->105
     - Spe: 82->85
@@ -3206,10 +2160,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Cyclizar:
     - Learns Headbutt and Body Slam by level up
-
-- Orthworm:
-    - Atk: 85->90
-    - Learns Bullet Punch, Coil, and Comet Punch by level up
 
 - Glimmet/Glimmora:
     - Learn Acid and Sludge Bomb by level up
@@ -3219,18 +2169,3 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Cetoddle/Cetitan:
     - Learn Ice Fang and Icicle Crash by level up
-
-- Dondozo:
-    - Learns Waterfall and Liquidation by level up
-
-- Wo-Chien:
-    - Learns Grass Knot and Energy Ball by level up
-
-- Chien-Pao:
-    - Learns Ice Fang and Ice Spinner by level up
-
-- Ting-Lu:
-    - Learns Dig and High Horsepower by level up
-
-- Chi-Yu:
-    - Learns Burning Jealousy and Flamethrower by level up

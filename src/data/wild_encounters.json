@@ -6561,7 +6561,7 @@
             "mons": [
               {
                 "range": "RANGE_POSTGAME",
-                "species": "ELEKID"
+                "species": "PONYTA_GALAR"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6569,19 +6569,19 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "AIPOM"
+                "species": "GIBLE"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "TOGEPI"
+                "species": "SNEASEL_HISUI"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "AIPOM"
+                "species": "GIBLE"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "TOGEPI"
+                "species": "SNEASEL_HISUI"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6614,7 +6614,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SHUCKLE"
+                "species": "BAGON"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6634,19 +6634,19 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "PINECO"
+                "species": "AIPOM"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "PINECO"
+                "species": "AIPOM"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "PINECO"
+                "species": "AIPOM"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "PINECO"
+                "species": "AIPOM"
               }
             ]
           },
@@ -6655,7 +6655,7 @@
             "mons": [
               {
                 "range": "RANGE_POSTGAME",
-                "species": "WOOPER"
+                "species": "WOOPER_PALDEA"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6667,7 +6667,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "QUAGSIRE"
+                "species": "CLODSIRE"
               }
             ]
           },
@@ -6716,19 +6716,11 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SANDILE"
+                "species": "BELDUM"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "GLIGAR"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "BONSLY"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "GLIGAR"
+                "species": "DEINO"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6736,19 +6728,27 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SNUBBULL"
+                "species": "DEINO"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SNUBBULL"
+                "species": "BONSLY"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SNUBBULL"
+                "species": "JANGMO_O"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SNUBBULL"
+                "species": "JANGMO_O"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "JANGMO_O"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "JANGMO_O"
               }
             ]
           }
@@ -6785,19 +6785,19 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "MILTANK"
+                "species": "COMBEE"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "MILTANK"
+                "species": "COMBEE"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "MILTANK"
+                "species": "COMBEE"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "MILTANK"
+                "species": "COMBEE"
               }
             ]
           },
@@ -6806,7 +6806,7 @@
             "mons": [
               {
                 "range": "RANGE_POSTGAME",
-                "species": "WOOPER"
+                "species": "WOOPER_PALDEA"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6818,7 +6818,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "QUAGSIRE"
+                "species": "CLODSIRE"
               }
             ]
           },
@@ -6863,7 +6863,7 @@
             "mons": [
               {
                 "range": "RANGE_POSTGAME",
-                "species": "MEOWTH"
+                "species": "MINCCINO"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6871,19 +6871,19 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "MEOWTH_ALOLA"
+                "species": "BUNEARY"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "MEOWTH_GALAR"
+                "species": "DRATINI"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "MEOWTH_ALOLA"
+                "species": "BUNEARY"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "MEOWTH_GALAR"
+                "species": "DRATINI"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6908,7 +6908,7 @@
             "mons": [
               {
                 "range": "RANGE_POSTGAME",
-                "species": "WOOPER"
+                "species": "WOOPER_PALDEA"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6920,7 +6920,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "QUAGSIRE"
+                "species": "CLODSIRE"
               }
             ]
           },
@@ -6973,35 +6973,35 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "ZIGZAGOON_GALAR"
+                "species": "PETILIL"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "STANTLER"
+                "species": "TANDEMAUS"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "ZIGZAGOON_GALAR"
+                "species": "PETILIL"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "STANTLER"
+                "species": "TANDEMAUS"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "WEEZING_GALAR"
+                "species": "PAWMI"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "WEEZING_GALAR"
+                "species": "PAWMI"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "WEEZING_GALAR"
+                "species": "PAWMI"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "WEEZING_GALAR"
+                "species": "PAWMI"
               }
             ]
           }
@@ -7014,7 +7014,27 @@
             "mons": [
               {
                 "range": "RANGE_POSTGAME",
-                "species": "DITTO"
+                "species": "OMANYTE"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "KABUTO"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "OMANYTE"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "KABUTO"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "OMANYTE"
+              },
+              {
+                "range": "RANGE_POSTGAME",
+                "species": "KABUTO"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -7022,23 +7042,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "OMANYTE"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "KABUTO"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "OMANYTE"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "KABUTO"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "DITTO"
+                "species": "AERODACTYL"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -7046,11 +7050,7 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "OMANYTE"
-              },
-              {
-                "range": "RANGE_POSTGAME",
-                "species": "KABUTO"
+                "species": "AERODACTYL"
               }
             ]
           }
@@ -7112,43 +7112,43 @@
             "mons": [
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SMEARGLE"
+                "species": "BLISSEY"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SMEARGLE"
+                "species": "BLISSEY"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SMEARGLE"
+                "species": "BLISSEY"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SMEARGLE"
+                "species": "BLISSEY"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SMEARGLE"
+                "species": "BLISSEY"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SMEARGLE"
+                "species": "BLISSEY"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SMEARGLE"
+                "species": "BLISSEY"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SMEARGLE"
+                "species": "BLISSEY"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SMEARGLE"
+                "species": "BLISSEY"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SMEARGLE"
+                "species": "BLISSEY"
               }
             ]
           }

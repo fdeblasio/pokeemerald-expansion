@@ -22481,6 +22481,7 @@ static const u16 sBibarelTeachableLearnset[] = {
     MOVE_AQUA_TAIL,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
+    MOVE_BODY_SLAM,
     MOVE_CRUNCH,
     MOVE_CUT,
     MOVE_DEFENSE_CURL,
@@ -25993,6 +25994,7 @@ static const u16 sWatchogTeachableLearnset[] = {
 static const u16 sLillipupTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
+    MOVE_BODY_SLAM,
     MOVE_CRUNCH,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
@@ -26022,6 +26024,7 @@ static const u16 sLillipupTeachableLearnset[] = {
 static const u16 sHerdierTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
+    MOVE_BODY_SLAM,
     MOVE_CRUNCH,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
@@ -26052,6 +26055,7 @@ static const u16 sHerdierTeachableLearnset[] = {
 static const u16 sStoutlandTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
+    MOVE_BODY_SLAM,
     MOVE_CRUNCH,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,

@@ -2135,9 +2135,6 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Spe: 123->125
     - Learns Throat Chop by level up
 
-- Tarountula/Spidops:
-    - Learn Spider Web by level up
-
 - Pawmot:
     - Learns Drain Punch by TM
 

@@ -37,19 +37,19 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PSYDUCK"
+                "species": "SLOWPOKE"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
+                "species": "WOOPER"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
+                "species": "WOOPER"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
                 "species": "AZUMARILL"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "MASQUERAIN"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "MASQUERAIN"
               }
             ]
           },
@@ -61,27 +61,27 @@
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
-                "species": "GOLDEEN"
+                "species": "SLOWPOKE"
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
-                "species": "CORPHISH"
+                "species": "POLIWAG"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "SEAKING"
+                "species": "POLIWHIRL"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WHISCASH"
+                "species": "PALPITOAD"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "SEAKING"
+                "species": "POLIWHIRL"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WHISCASH"
+                "species": "PALPITOAD"
               }
             ]
           }
@@ -94,19 +94,19 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "TENTACOOL"
+                "species": "WAILMER"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -118,7 +118,7 @@
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
-                "species": "TENTACOOL"
+                "species": "MANTYKE"
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
@@ -126,7 +126,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "MANTINE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -134,7 +134,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "MANTINE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -155,15 +155,15 @@
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -175,7 +175,7 @@
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
-                "species": "CARVANHA"
+                "species": "MANTYKE"
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
@@ -191,7 +191,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "SHARPEDO"
+                "species": "MANTINE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -212,15 +212,15 @@
               },
               {
                 "range": "RANGE_LILYCOVE_CITY",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_LILYCOVE_CITY",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_LILYCOVE_CITY",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -232,7 +232,7 @@
               },
               {
                 "range": "RANGE_LILYCOVE_CITY",
-                "species": "STARYU"
+                "species": "SHELLDER"
               },
               {
                 "range": "RANGE_LILYCOVE_CITY",
@@ -248,7 +248,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "STARMIE"
+                "species": "CLOYSTER"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -269,15 +269,15 @@
               },
               {
                 "range": "RANGE_MOSSDEEP_CITY",
-                "species": "WAILMER"
+                "species": "ARROKUDA"
               },
               {
                 "range": "RANGE_MOSSDEEP_CITY",
-                "species": "WAILMER"
+                "species": "ARROKUDA"
               },
               {
                 "range": "RANGE_MOSSDEEP_CITY",
-                "species": "WAILMER"
+                "species": "ARROKUDA"
               }
             ]
           },
@@ -289,7 +289,7 @@
               },
               {
                 "range": "RANGE_MOSSDEEP_CITY",
-                "species": "TENTACOOL"
+                "species": "ARROKUDA"
               },
               {
                 "range": "RANGE_MOSSDEEP_CITY",
@@ -297,7 +297,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "BARRASKEWDA"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -305,7 +305,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "BARRASKEWDA"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -383,15 +383,15 @@
               },
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
-                "species": "CORSOLA"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
-                "species": "CORSOLA"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
-                "species": "CORSOLA"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -403,7 +403,7 @@
               },
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
-                "species": "CORSOLA"
+                "species": "ARROKUDA"
               },
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
@@ -411,7 +411,7 @@
               },
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
-                "species": "CORSOLA"
+                "species": "BARRASKEWDA"
               },
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
@@ -419,7 +419,7 @@
               },
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
-                "species": "CORSOLA"
+                "species": "BARRASKEWDA"
               },
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
@@ -481,19 +481,19 @@
             "mons": [
               {
                 "range": "RANGE_EVER_GRANDE_CITY",
-                "species": "LUVDISC"
+                "species": "SHELLDER"
               },
               {
                 "range": "RANGE_EVER_GRANDE_CITY",
-                "species": "CORSOLA"
+                "species": "WAILORD"
               },
               {
                 "range": "RANGE_EVER_GRANDE_CITY",
-                "species": "CORSOLA"
+                "species": "WAILORD"
               },
               {
                 "range": "RANGE_EVER_GRANDE_CITY",
-                "species": "CORSOLA"
+                "species": "WAILORD"
               }
             ]
           },
@@ -505,27 +505,27 @@
               },
               {
                 "range": "RANGE_EVER_GRANDE_CITY",
-                "species": "LUVDISC"
+                "species": "SHELLDER"
               },
               {
                 "range": "RANGE_EVER_GRANDE_CITY",
-                "species": "CORSOLA"
+                "species": "WAILMER"
               },
               {
                 "range": "RANGE_EVER_GRANDE_CITY",
-                "species": "LUVDISC"
+                "species": "CLOYSTER"
               },
               {
                 "range": "RANGE_EVER_GRANDE_CITY",
-                "species": "CORSOLA"
+                "species": "WAILORD"
               },
               {
                 "range": "RANGE_EVER_GRANDE_CITY",
-                "species": "LUVDISC"
+                "species": "CLOYSTER"
               },
               {
                 "range": "RANGE_EVER_GRANDE_CITY",
-                "species": "CORSOLA"
+                "species": "WAILORD"
               }
             ]
           }
@@ -632,19 +632,19 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PSYDUCK"
+                "species": "SLOWPOKE"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
+                "species": "WOOPER"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
+                "species": "WOOPER"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
                 "species": "AZUMARILL"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "MASQUERAIN"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "MASQUERAIN"
               }
             ]
           },
@@ -656,27 +656,27 @@
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
-                "species": "GOLDEEN"
+                "species": "SLOWPOKE"
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
-                "species": "CORPHISH"
+                "species": "WOOPER"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "CRAWDAUNT"
+                "species": "QUAGSIRE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "CRAWDAUNT"
+                "species": "QUAGSIRE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "CRAWDAUNT"
+                "species": "QUAGSIRE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "CRAWDAUNT"
+                "species": "QUAGSIRE"
               }
             ]
           }
@@ -734,19 +734,19 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "TENTACOOL"
+                "species": "MANTYKE"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "TENTACOOL"
+                "species": "MANTYKE"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -758,7 +758,7 @@
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
-                "species": "TENTACOOL"
+                "species": "MANTYKE"
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
@@ -766,7 +766,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "MANTINE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -774,7 +774,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "MANTINE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -836,19 +836,19 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "WINGULL"
+                "species": "WATTREL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "STARYU"
+                "species": "WOOPER"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "STARYU"
+                "species": "WOOPER"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -860,27 +860,27 @@
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
-                "species": "TENTACOOL"
+                "species": "WOOPER"
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
-                "species": "STARYU"
+                "species": "POLIWAG"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "QUAGSIRE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "STARMIE"
+                "species": "POLIWHIRL"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "QUAGSIRE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "STARMIE"
+                "species": "POLIWHIRL"
               }
             ]
           }
@@ -938,19 +938,19 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "TENTACOOL"
+                "species": "WAILMER"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -962,27 +962,27 @@
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "TENTACOOL"
+                "species": "CARVANHA"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "WAILMER"
+                "species": "ARROKUDA"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "SHARPEDO"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WAILORD"
+                "species": "BARRASKEWDA"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "SHARPEDO"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WAILORD"
+                "species": "BARRASKEWDA"
               }
             ]
           }
@@ -995,19 +995,19 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "TENTACOOL"
+                "species": "WAILMER"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -1019,7 +1019,7 @@
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
-                "species": "TENTACOOL"
+                "species": "MANTYKE"
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
@@ -1027,7 +1027,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "MANTINE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -1035,7 +1035,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "MANTINE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -1097,19 +1097,19 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "TENTACOOL"
+                "species": "WAILMER"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -1121,7 +1121,7 @@
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
-                "species": "TENTACOOL"
+                "species": "MANTYKE"
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
@@ -1129,7 +1129,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "MANTINE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -1137,7 +1137,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "MANTINE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -1154,19 +1154,19 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "TENTACOOL"
+                "species": "WAILMER"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -1178,27 +1178,27 @@
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "TENTACOOL"
+                "species": "CARVANHA"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "WAILMER"
+                "species": "ARROKUDA"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "SHARPEDO"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WAILORD"
+                "species": "BARRASKEWDA"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "SHARPEDO"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WAILORD"
+                "species": "BARRASKEWDA"
               }
             ]
           }
@@ -1211,19 +1211,19 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "TENTACOOL"
+                "species": "WAILMER"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -1235,7 +1235,7 @@
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
-                "species": "TENTACOOL"
+                "species": "MANTYKE"
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
@@ -1243,7 +1243,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "MANTINE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -1251,7 +1251,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "MANTINE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -1415,19 +1415,19 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PSYDUCK"
+                "species": "SLOWPOKE"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
+                "species": "WOOPER"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
+                "species": "WOOPER"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
                 "species": "AZUMARILL"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "MASQUERAIN"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "MASQUERAIN"
               }
             ]
           },
@@ -1439,27 +1439,27 @@
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
-                "species": "GOLDEEN"
+                "species": "SLOWPOKE"
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
-                "species": "BARBOACH"
+                "species": "WOOPER"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "SEAKING"
+                "species": "QUAGSIRE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WHISCASH"
+                "species": "QUAGSIRE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "SEAKING"
+                "species": "QUAGSIRE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WHISCASH"
+                "species": "QUAGSIRE"
               }
             ]
           }
@@ -1602,7 +1602,7 @@
               },
               {
                 "range": "RANGE_ROUTE_114",
-                "species": "SURSKIT"
+                "species": "SHELLOS_WEST"
               },
               {
                 "range": "RANGE_ROUTE_114",
@@ -1615,19 +1615,19 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PSYDUCK"
+                "species": "SLOWPOKE"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
+                "species": "WOOPER"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
+                "species": "WOOPER"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
                 "species": "AZUMARILL"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "MASQUERAIN"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "MASQUERAIN"
               }
             ]
           },
@@ -1639,7 +1639,7 @@
               },
               {
                 "range": "RANGE_ROUTE_114",
-                "species": "GOLDEEN"
+                "species": "SLOWPOKE"
               },
               {
                 "range": "RANGE_ROUTE_114",
@@ -1717,19 +1717,19 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "TENTACOOL"
+                "species": "WAILMER"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -1741,7 +1741,7 @@
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
-                "species": "TENTACOOL"
+                "species": "MANTYKE"
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
@@ -1749,7 +1749,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "MANTINE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -1757,7 +1757,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "MANTINE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -1945,7 +1945,7 @@
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "WINGULL"
+                "species": "WATTREL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
@@ -1957,11 +1957,11 @@
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "WINGULL"
+                "species": "WATTREL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "WINGULL"
+                "species": "WATTREL"
               }
             ]
           },
@@ -1970,7 +1970,7 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "TENTACOOL"
+                "species": "WAILMER"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
@@ -1978,11 +1978,11 @@
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -1994,7 +1994,7 @@
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
-                "species": "TENTACOOL"
+                "species": "TADBULB"
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
@@ -2002,7 +2002,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "BELLIBOLT"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -2010,7 +2010,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "BELLIBOLT"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -2076,15 +2076,15 @@
               },
               {
                 "range": "RANGE_ROUTE_119",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_119",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_119",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -2133,7 +2133,7 @@
               },
               {
                 "range": "RANGE_ROUTE_120",
-                "species": "MASQUERAIN"
+                "species": "SHELLOS_EAST"
               },
               {
                 "range": "RANGE_ROUTE_120",
@@ -2174,11 +2174,11 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_120",
-                "species": "PSYDUCK"
+                "species": "SLOWPOKE"
               },
               {
                 "range": "RANGE_ROUTE_120",
-                "species": "GOLDEEN"
+                "species": "SLOWPOKE"
               },
               {
                 "range": "RANGE_ROUTE_120",
@@ -2198,7 +2198,7 @@
               },
               {
                 "range": "RANGE_ROUTE_120",
-                "species": "GOLDEEN"
+                "species": "SLOWPOKE"
               },
               {
                 "range": "RANGE_ROUTE_120",
@@ -2255,7 +2255,7 @@
               },
               {
                 "range": "RANGE_ROUTE_121",
-                "species": "GIRAFARIG"
+                "species": "SHELLOS_EAST"
               },
               {
                 "range": "RANGE_ROUTE_121",
@@ -2263,7 +2263,7 @@
               },
               {
                 "range": "RANGE_ROUTE_121",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_121",
@@ -2280,15 +2280,15 @@
               },
               {
                 "range": "RANGE_ROUTE_121",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_121",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_121",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -2337,15 +2337,15 @@
               },
               {
                 "range": "RANGE_ROUTE_122",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_122",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_122",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -2414,7 +2414,7 @@
               },
               {
                 "range": "RANGE_ROUTE_123",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_123",
@@ -2422,7 +2422,7 @@
               },
               {
                 "range": "RANGE_ROUTE_123",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_123",
@@ -2439,15 +2439,15 @@
               },
               {
                 "range": "RANGE_ROUTE_123",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_123",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_123",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -2496,15 +2496,15 @@
               },
               {
                 "range": "RANGE_ROUTE_124",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_124",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_124",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -2553,15 +2553,15 @@
               },
               {
                 "range": "RANGE_ROUTE_125",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_125",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_125",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -2610,15 +2610,15 @@
               },
               {
                 "range": "RANGE_ROUTE_126",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_126",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_126",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -2667,15 +2667,15 @@
               },
               {
                 "range": "RANGE_ROUTE_127",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_127",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_127",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -2724,15 +2724,15 @@
               },
               {
                 "range": "RANGE_ROUTE_128",
-                "species": "LUVDISC"
+                "species": "SHELLDER"
               },
               {
                 "range": "RANGE_ROUTE_128",
-                "species": "LUVDISC"
+                "species": "SHELLDER"
               },
               {
                 "range": "RANGE_ROUTE_128",
-                "species": "LUVDISC"
+                "species": "SHELLDER"
               }
             ]
           },
@@ -2744,7 +2744,7 @@
               },
               {
                 "range": "RANGE_ROUTE_128",
-                "species": "LUVDISC"
+                "species": "SHELLDER"
               },
               {
                 "range": "RANGE_ROUTE_128",
@@ -2752,7 +2752,7 @@
               },
               {
                 "range": "RANGE_ROUTE_128",
-                "species": "LUVDISC"
+                "species": "CLOYSTER"
               },
               {
                 "range": "RANGE_ROUTE_128",
@@ -2760,7 +2760,7 @@
               },
               {
                 "range": "RANGE_ROUTE_128",
-                "species": "LUVDISC"
+                "species": "CLOYSTER"
               },
               {
                 "range": "RANGE_ROUTE_128",
@@ -2777,11 +2777,11 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_129",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_129",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_129",
@@ -2883,15 +2883,15 @@
               },
               {
                 "range": "RANGE_ROUTE_130",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_130",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_130",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -2940,15 +2940,15 @@
               },
               {
                 "range": "RANGE_ROUTE_131",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_131",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_131",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -2997,15 +2997,15 @@
               },
               {
                 "range": "RANGE_ROUTE_132",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_132",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_132",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -3054,15 +3054,15 @@
               },
               {
                 "range": "RANGE_ROUTE_133",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_133",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_ROUTE_133",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -3107,19 +3107,19 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "TENTACOOL"
+                "species": "WAILMER"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -3576,7 +3576,7 @@
               },
               {
                 "range": "RANGE_METEOR_FALLS",
-                "species": "GOLDEEN"
+                "species": "SLOWPOKE"
               },
               {
                 "range": "RANGE_METEOR_FALLS",
@@ -3678,7 +3678,7 @@
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "GOLDEEN"
+                "species": "SLOWPOKE"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
@@ -3780,7 +3780,7 @@
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "GOLDEEN"
+                "species": "SLOWPOKE"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
@@ -3882,7 +3882,7 @@
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "GOLDEEN"
+                "species": "SLOWPOKE"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
@@ -4747,11 +4747,11 @@
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "PELIPPER"
+                "species": "KILOWATTREL"
               }
             ]
           }
@@ -6573,7 +6573,7 @@
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "GOLDEEN"
+                "species": "SLOWPOKE"
               },
               {
                 "range": "RANGE_VICTORY_ROAD",

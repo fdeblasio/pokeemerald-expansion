@@ -1069,6 +1069,8 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Any with a STAB attack at level 5 or below had it swapped with the next attack to prevent the rival battle from being too hard
 
 - Bulbasaur:
+    - Atk: 49->50
+    - Def: 49->50
     - Learns Magical Leaf, Venoshock, Giga Drain, Energy Ball, and Sludge Bomb by level up
     - Learns Poison Fang by Egg Move
 
@@ -1078,6 +1080,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Poison Fang by Egg Move
 
 - Venusaur:
+    - HP: 80->90
     - Learns Magical Leaf, Venoshock, Giga Drain, Energy Ball, and Sludge Bomb by level up
     - Learns Poison Fang by Egg Move
 
@@ -1730,6 +1733,12 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Can use the Meteorite item to change forms
 
 - Chimchar:
+    - HP: 44->45
+    - Atk: 58->60
+    - Def: 44->45
+    - SpA: 58->60
+    - SpD: 44->45
+    - Spe: 61->65
     - Evolution: 14->16
     - Learns Incinerate, Fire Punch, and Lava Plume by level up
 
@@ -1954,11 +1963,19 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Extrasensory by level up
     - Learns Air Slash by TM
 
-- Froakie/Frogadier:
-    - Learn Bubble Beam and Surf by level up
+- Froakie:
+    - SpA: 62->65
+    - Spe: 71->74
+    - Learns Bubble Beam and Surf by level up
+    - Hidden Ability: Protean->Water Bubble
+
+- Frogadier:
+    - Learns Bubble Beam and Surf by level up
     - Hidden Ability: Protean->Water Bubble
 
 - Greninja:
+    - SpA: 103->105
+    - Spe: 122->125
     - Learns Bubble Beam, Dark Pulse, and Surf by level up
 
 - Fletchling:

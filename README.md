@@ -1104,7 +1104,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Held item: None->Light Ball
     - Can also evolve at level 12
 
-- Pikachu
+- Pikachu:
     - Held item: Light Ball: 5%->100%
     - Learns Volt Tackle by level up
 
@@ -1198,11 +1198,11 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Growlithe/Arcanine:
     - Learn Temper Flare by level up
 
-- Poliwrath
+- Poliwrath:
     - Atk: 95->100
     - Learns Liquidation, Drain Punch, and Sky Uppercut by level up
 
-- Politoed
+- Politoed:
     - Def: 75->80
     - SpA: 90->100
 
@@ -1830,7 +1830,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - SpA: 73->85
     - SpD: 83->85
 
-- Numel/Camerupt
+- Numel/Camerupt:
     - Held item: Rawst Berry: 0%->100%
 
 - Spinda:
@@ -2122,7 +2122,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - SpA: 25->35
     - Learns Rock Throw by level up
 
-- Boldore/Gigalith
+- Boldore/Gigalith:
     - Learn Rock Throw by level up
 
 - Woobat:
@@ -2409,11 +2409,11 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Kyurem:
     - Learns Icicle Crash by TM
 
-- Froakie/Frogadier
+- Froakie/Frogadier:
     - Learn Bubble Beam and Surf by level up
     - Hidden Ability: Protean->Water Bubble
 
-- Greninja
+- Greninja:
     - Learns Bubble Beam, Dark Pulse, and Surf by level up
 
 - Fletchling:

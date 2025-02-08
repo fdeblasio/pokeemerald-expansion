@@ -1219,17 +1219,17 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
 - Growlithe/Arcanine:
     - Learn Temper Flare by level up
 
-- Poliwag:
+- Poliwag (not in main game):
     - SpA: 40->50
 
-- Poliwhirl:
+- Poliwhirl (not in main game):
     - SpA: 50->65
 
-- Poliwrath:
+- Poliwrath (not in main game):
     - Atk: 95->100
     - Learns Liquidation, Drain Punch, and Sky Uppercut by level up
 
-- Politoed:
+- Politoed (not in main game):
     - Def: 75->80
     - SpA: 90->100
 

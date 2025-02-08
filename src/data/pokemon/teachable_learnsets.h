@@ -26956,6 +26956,7 @@ static const u16 sSeismitoadTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_TOXIC,
     MOVE_WATER_PULSE,
+    MOVE_WATERFALL,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_TYMPOLE
@@ -32691,6 +32692,7 @@ static const u16 sPangoroTeachableLearnset[] = {
     MOVE_DOUBLE_TEAM,
     MOVE_DRAGON_CLAW,
     MOVE_DRAIN_PUNCH,
+    MOVE_DYNAMIC_PUNCH,
     MOVE_EARTHQUAKE,
     MOVE_ENDURE,
     MOVE_FACADE,
@@ -41822,6 +41824,7 @@ static const u16 sTadbulbTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REFLECT,
     MOVE_REST,
+    MOVE_SHOCK_WAVE,
     MOVE_SLEEP_TALK,
     MOVE_SWIFT,
     MOVE_THUNDER,
@@ -41832,6 +41835,7 @@ static const u16 sTadbulbTeachableLearnset[] = {
 };
 
 static const u16 sBelliboltTeachableLearnset[] = {
+    MOVE_EARTH_POWER,
     MOVE_ELECTRIC_TERRAIN,
     MOVE_ENDURE,
     MOVE_GIGA_IMPACT,
@@ -41842,8 +41846,10 @@ static const u16 sBelliboltTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REFLECT,
     MOVE_REST,
+    MOVE_SHOCK_WAVE,
     MOVE_SLEEP_TALK,
     MOVE_SUPERCELL_SLAM,
+    MOVE_SURF,
     MOVE_SWIFT,
     MOVE_THUNDER,
     MOVE_THUNDER_WAVE,

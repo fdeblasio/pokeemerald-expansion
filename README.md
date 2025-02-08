@@ -729,7 +729,7 @@ There are some mechanics, moves and abilities that are missing and being develop
         - PP: 5->10
     - Electro Drift:
         - PP: 5->10
-    - Electro Web:
+    - Electroweb:
         - Accuracy: 95->100
     - Fusion Bolt:
         - PP: 5->10
@@ -1124,11 +1124,21 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Vulpix/Ninetales:
     - Learn Mystical Fire by level up
 
+- Oddish/Gloom/Vileplume/Bellossom:
+    - Learn Energy Ball by level up
+
 - Parasect (not in main game):
     - Held items:
         - Tiny Mushroom: 50%->0%
         - Big Mushroom: 5%->50%
         - Balm Mushroom: 0%->5%
+
+- Venonat (not in main game):
+    - SpA: 40->55
+    - Learns Bug Bite, Struggle Bug, Venoshock, and Sludge Bomb by level up
+
+- Venomoth (not in main game):
+    - Learns Bug Bite, Struggle Bug, Venoshock, and Sludge Bomb by level up
 
 - Diglett (not in main game):
     - Learns Stomping Tantrum by level up
@@ -1197,6 +1207,12 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Growlithe/Arcanine:
     - Learn Temper Flare by level up
+
+- Poliwag:
+    - SpA: 40->50
+
+- Poliwhirl:
+    - SpA: 50->65
 
 - Poliwrath:
     - Atk: 95->100
@@ -2152,6 +2168,17 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Mega Audino:
     - Base experience: 425->500
 
+- Tympole:
+    - Learns Surf by level up
+
+- Palpitoad:
+    - Learns Mud Bomb upon evolving
+    - Learns Bulldoze, Earth Power, and Surf by level up
+
+- Seismitoad:
+    - Learns Mud Bomb, Bulldoze, Stomping Tantrum, Earth Power, Liquidation, Earthquake, and Surf by level up
+    - Learns Waterfall by TM
+
 - Swadloon:
     - Can also evolve at level 30
 
@@ -2164,7 +2191,11 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Coil by level up
     - Learns Lunge by move tutor
 
+- Cottonee:
+    - Learns Magical Leaf, Disarming Voice, and Dazzling Gleam by level up
+
 - Whimsicott:
+    - Learns Magical Leaf, Disarming Voice, and Dazzling Gleam by level up
     - Learns Earth Power by TM
 
 - Lilligant:
@@ -2244,6 +2275,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Vanilluxe:
     - Learns Powder Snow, Aurora Beam, and Freeze-Dry by level up
 
+- Emolga:
+    - Learns Gust, Aerial Ace, Air Cutter, Dual Wingbeat, and Air Slash by level up
+
 - Karrablast:
     - Can also evolve with Linking Cord
     - Learns Bug Bite by level up
@@ -2263,7 +2297,15 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Balm Mushroom: 0%->5%
 
 - Joltik:
+    - SpA: 57->60
     - Evolution: 36->32
+    - Learns Struggle Bug, Thunderbolt, and Thunder by level up
+
+- Galvantula:
+    - Atk: 77->80
+    - SpA: 97->100
+    - Spe: 108->110
+    - Learns Struggle Bug, Thunderbolt, and Thunder by level up
 
 - Klink:
     - Atk: 55->60
@@ -2461,6 +2503,12 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Spe: 68->70
     - Received Grass Pelt as a second Ability and Grassy Surge as a Hidden Ability (previously Grass Pelt)
     - Learns Trailblaze, Grassy Terrain, Grassy Glide by level up
+
+- Pancham:
+    - Learns Drain Punch by level up
+
+- Pangoro
+    - Learns Dizzy Punch, Dynamic Punch, Drain Punch, and Throat Chop by level up
 
 - Espurr:
     - HP: 62->65
@@ -2714,9 +2762,15 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Hatenna:
     - Evolution: 32->28
+    - Catch rate: 235->255
+    - Learns Extrasensory by level up
 
 - Hattrem:
     - Evolution: 42->38
+    - Learns Extrasensory by level up
+
+- Hatterene:
+    - Learns Extrasensory by level up
 
 - Impidimp:
     - Evolution: 32->28
@@ -2771,6 +2825,9 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Spe: 123->125
     - Learns Throat Chop by level up
 
+- Tarountula/Spidops:
+    - Learn Spider Web by level up
+
 - Pawmot:
     - Learns Drain Punch by TM
 
@@ -2789,6 +2846,19 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Ceruledge:
     - Hidden Ability: Weak Armor->Sharpness
+
+- Tadbulb:
+    - Hidden Ability: Damp->Volt Absorb
+    - Learns Shock Wave and Parabolic Charge by level up
+
+- Bellibolt:
+    - HP: 109->110
+    - Def: 91->95
+    - SpA: 103->105
+    - SpD: 83->85
+    - Hidden Ability: Damp->Volt Absorb
+    - Learns Shock Wave and Parabolic Charge by level up
+    - Learns Earth Power and Surf by TM
 
 - Wattrel/Kilowattrel:
     - Learn Gust, Shock Wave, Air Cutter, Tailwind, Air Slash, and Thunder by level up

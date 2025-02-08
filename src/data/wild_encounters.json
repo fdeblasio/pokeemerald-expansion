@@ -889,7 +889,7 @@
           "map": "MAP_ROUTE105",
           "base_label": "gRoute105",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 50,
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
@@ -1047,6 +1047,51 @@
         {
           "map": "MAP_ROUTE107",
           "base_label": "gRoute107",
+          "land_mons": {
+            "encounter_rate": 50,
+            "mons": [
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "TYROGUE"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "PANCHAM"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "TYROGUE"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "PANCHAM"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "TYROGUE"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "PANCHAM"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "TYROGUE"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "PANCHAM"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "TYROGUE"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "PANCHAM"
+              }
+            ]
+          },
           "water_mons": {
             "encounter_rate": 1,
             "mons": [
@@ -1227,7 +1272,23 @@
               },
               {
                 "range": "RANGE_ROUTE_110",
-                "species": "ELECTRIKE"
+                "species": "TADBULB"
+              },
+              {
+                "range": "RANGE_ROUTE_110",
+                "species": "PICHU"
+              },
+              {
+                "range": "RANGE_ROUTE_110",
+                "species": "EMOLGA"
+              },
+              {
+                "range": "RANGE_ROUTE_110",
+                "species": "PICHU"
+              },
+              {
+                "range": "RANGE_ROUTE_110",
+                "species": "EMOLGA"
               },
               {
                 "range": "RANGE_ROUTE_110",
@@ -1235,31 +1296,15 @@
               },
               {
                 "range": "RANGE_ROUTE_110",
-                "species": "ELECTRIKE"
+                "species": "TADBULB"
               },
               {
                 "range": "RANGE_ROUTE_110",
-                "species": "PLUSLE"
+                "species": "WATTREL"
               },
               {
                 "range": "RANGE_ROUTE_110",
-                "species": "MINUN"
-              },
-              {
-                "range": "RANGE_ROUTE_110",
-                "species": "PLUSLE"
-              },
-              {
-                "range": "RANGE_ROUTE_110",
-                "species": "MINUN"
-              },
-              {
-                "range": "RANGE_ROUTE_110",
-                "species": "ODDISH"
-              },
-              {
-                "range": "RANGE_ROUTE_110",
-                "species": "ODDISH"
+                "species": "WATTREL"
               }
             ]
           },
@@ -1268,19 +1313,19 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "TENTACOOL"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
                 "species": "WATTREL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "CHINCHOU"
+                "species": "TADBULB"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "CHINCHOU"
+                "species": "TADBULB"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
+                "species": "TADBULB"
               }
             ]
           },
@@ -1292,7 +1337,7 @@
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
-                "species": "CHINCHOU"
+                "species": "TADBULB"
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
@@ -1300,7 +1345,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "LANTURN"
+                "species": "BELLIBOLT"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -1308,7 +1353,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "LANTURN"
+                "species": "BELLIBOLT"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -1761,11 +1806,11 @@
               },
               {
                 "range": "RANGE_ROUTE_116",
-                "species": "TYROGUE"
+                "species": "JOLTIK"
               },
               {
                 "range": "RANGE_ROUTE_116",
-                "species": "TYROGUE"
+                "species": "JOLTIK"
               }
             ]
           }
@@ -1778,35 +1823,35 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_117",
-                "species": "BUDEW"
-              },
-              {
-                "range": "RANGE_ROUTE_117",
-                "species": "BUDEW"
-              },
-              {
-                "range": "RANGE_ROUTE_117",
-                "species": "VOLBEAT"
-              },
-              {
-                "range": "RANGE_ROUTE_117",
-                "species": "ILLUMISE"
-              },
-              {
-                "range": "RANGE_ROUTE_117",
-                "species": "VOLBEAT"
-              },
-              {
-                "range": "RANGE_ROUTE_117",
-                "species": "ILLUMISE"
-              },
-              {
-                "range": "RANGE_ROUTE_117",
-                "species": "SURSKIT"
-              },
-              {
-                "range": "RANGE_ROUTE_117",
                 "species": "ODDISH"
+              },
+              {
+                "range": "RANGE_ROUTE_117",
+                "species": "POLIWAG"
+              },
+              {
+                "range": "RANGE_ROUTE_117",
+                "species": "COTTONEE"
+              },
+              {
+                "range": "RANGE_ROUTE_117",
+                "species": "VENONAT"
+              },
+              {
+                "range": "RANGE_ROUTE_117",
+                "species": "TYMPOLE"
+              },
+              {
+                "range": "RANGE_ROUTE_117",
+                "species": "HATENNA"
+              },
+              {
+                "range": "RANGE_ROUTE_117",
+                "species": "FIDOUGH"
+              },
+              {
+                "range": "RANGE_ROUTE_117",
+                "species": "FIDOUGH"
               },
               {
                 "range": "RANGE_ROUTE_117",
@@ -1814,7 +1859,7 @@
               },
               {
                 "range": "RANGE_ROUTE_117",
-                "species": "SURSKIT"
+                "species": "MARILL"
               }
             ]
           },
@@ -1823,7 +1868,11 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PSYDUCK"
+                "species": "TYMPOLE"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
+                "species": "POLIWAG"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
@@ -1831,11 +1880,7 @@
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "MASQUERAIN"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "MASQUERAIN"
+                "species": "AZUMARILL"
               }
             ]
           },
@@ -1847,27 +1892,27 @@
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
-                "species": "GOLDEEN"
+                "species": "TYMPOLE"
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
-                "species": "CORPHISH"
+                "species": "POLIWAG"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "CRAWDAUNT"
+                "species": "PALPITOAD"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "CRAWDAUNT"
+                "species": "POLIWHIRL"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "CRAWDAUNT"
+                "species": "PALPITOAD"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "CRAWDAUNT"
+                "species": "POLIWHIRL"
               }
             ]
           }
@@ -3233,7 +3278,7 @@
               },
               {
                 "range": "RANGE_GRANITE_CAVE",
-                "species": "MAKUHITA"
+                "species": "MIENFOO"
               },
               {
                 "range": "RANGE_GRANITE_CAVE",
@@ -3241,11 +3286,11 @@
               },
               {
                 "range": "RANGE_GRANITE_CAVE",
-                "species": "MAKUHITA"
+                "species": "MIENFOO"
               },
               {
                 "range": "RANGE_GRANITE_CAVE",
-                "species": "MAKUHITA"
+                "species": "MIENFOO"
               },
               {
                 "range": "RANGE_GRANITE_CAVE",
@@ -3290,19 +3335,19 @@
               },
               {
                 "range": "RANGE_GRANITE_CAVE",
-                "species": "ARON"
+                "species": "CUFANT"
               },
               {
                 "range": "RANGE_GRANITE_CAVE",
-                "species": "ZUBAT"
+                "species": "DRILBUR"
               },
               {
                 "range": "RANGE_GRANITE_CAVE",
-                "species": "ZUBAT"
+                "species": "DRILBUR"
               },
               {
                 "range": "RANGE_GRANITE_CAVE",
-                "species": "ZUBAT"
+                "species": "DRILBUR"
               }
             ]
           }
@@ -3339,19 +3384,19 @@
               },
               {
                 "range": "RANGE_GRANITE_CAVE",
-                "species": "MAWILE"
+                "species": "CUFANT"
               },
               {
                 "range": "RANGE_GRANITE_CAVE",
-                "species": "SABLEYE"
+                "species": "CUFANT"
               },
               {
                 "range": "RANGE_GRANITE_CAVE",
-                "species": "ZUBAT"
+                "species": "DRILBUR"
               },
               {
                 "range": "RANGE_GRANITE_CAVE",
-                "species": "ARON"
+                "species": "DRILBUR"
               }
             ]
           }
@@ -3368,6 +3413,26 @@
               },
               {
                 "range": "RANGE_GRANITE_CAVE",
+                "species": "NOSEPASS"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "DRILBUR"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "CUFANT"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "DRILBUR"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
+                "species": "CUFANT"
+              },
+              {
+                "range": "RANGE_GRANITE_CAVE",
                 "species": "ARON"
               },
               {
@@ -3376,31 +3441,11 @@
               },
               {
                 "range": "RANGE_GRANITE_CAVE",
-                "species": "MAKUHITA"
+                "species": "DRILBUR"
               },
               {
                 "range": "RANGE_GRANITE_CAVE",
-                "species": "NOSEPASS"
-              },
-              {
-                "range": "RANGE_GRANITE_CAVE",
-                "species": "MAKUHITA"
-              },
-              {
-                "range": "RANGE_GRANITE_CAVE",
-                "species": "NOSEPASS"
-              },
-              {
-                "range": "RANGE_GRANITE_CAVE",
-                "species": "MAKUHITA"
-              },
-              {
-                "range": "RANGE_GRANITE_CAVE",
-                "species": "NOSEPASS"
-              },
-              {
-                "range": "RANGE_GRANITE_CAVE",
-                "species": "MAKUHITA"
+                "species": "CUFANT"
               }
             ]
           }
@@ -4286,27 +4331,11 @@
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PICHU"
+                "species": "ELEKID"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "PICHU"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "VOLTORB"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "MAGNEMITE"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "PICHU"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "PICHU"
+                "species": "ELEKID"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
@@ -4315,6 +4344,22 @@
               {
                 "range": "RANGE_SURF_INITIAL",
                 "species": "MAGNEMITE"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
+                "species": "ELEKID"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
+                "species": "ELEKID"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
+                "species": "ROTOM"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
+                "species": "ROTOM"
               }
             ]
           }

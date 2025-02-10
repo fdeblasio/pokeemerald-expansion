@@ -4540,7 +4540,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     {
         .baseHP        = 46,
         .baseAttack    = 57,
-        .baseDefense   = 40,
+        .baseDefense   = 42,
         .baseSpeed     = 50,
         .baseSpAttack  = 40,
         .baseSpDefense = 40,
@@ -4688,7 +4688,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseDefense   = 77,
         .baseSpeed     = 85,
         .baseSpAttack  = P_UPDATED_STATS >= GEN_2 ? 85 : 75,
-        .baseSpDefense = 75,
+        .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_POISON, TYPE_GROUND),
         .catchRate = 45,
     #if P_UPDATED_EXP_YIELDS >= GEN_8

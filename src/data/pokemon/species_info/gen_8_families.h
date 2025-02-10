@@ -3036,32 +3036,40 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_SILICOBRA
 
+#define CRAMORANT_INFO                                                 \
+    .baseHP        = 75,                                               \
+    .baseAttack    = 85,                                               \
+    .baseDefense   = 55,                                               \
+    .baseSpeed     = 95,                                               \
+    .baseSpAttack  = 95,                                               \
+    .baseSpDefense = 95,                                               \
+    .types = MON_TYPES(TYPE_FLYING, TYPE_WATER),                       \
+    .catchRate = 45,                                                   \
+    .expYield = 166,                                                   \
+    .evYield_SpDefense = 2,                                            \
+    .genderRatio = PERCENT_FEMALE(50),                                 \
+    .eggCycles = 20,                                                   \
+    .friendship = STANDARD_FRIENDSHIP,                                 \
+    .growthRate = GROWTH_MEDIUM_FAST,                                  \
+    .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FLYING),  \
+    .abilities = { ABILITY_GULP_MISSILE, ABILITY_NONE, ABILITY_NONE }, \
+    .bodyColor = BODY_COLOR_BLUE,                                      \
+    .speciesName = _("Cramorant"),                                     \
+    .cryId = CRY_CRAMORANT,                                            \
+    .natDexNum = NATIONAL_DEX_CRAMORANT,                               \
+    .categoryName = _("Gulp"),                                         \
+    .height = 8,                                                       \
+    .weight = 180,                                                     \
+    .levelUpLearnset = sCramorantLevelUpLearnset,                      \
+    .teachableLearnset = sCramorantTeachableLearnset,                  \
+    .eggMoveLearnset = sCramorantEggMoveLearnset,                      \
+    .formSpeciesIdTable = sCramorantFormSpeciesIdTable,                \
+    .formChangeTable = sCramorantFormChangeTable
+
 #if P_FAMILY_CRAMORANT
     [SPECIES_CRAMORANT] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 85,
-        .baseDefense   = 55,
-        .baseSpeed     = 85,
-        .baseSpAttack  = 85,
-        .baseSpDefense = 95,
-        .types = MON_TYPES(TYPE_FLYING, TYPE_WATER),
-        .catchRate = 45,
-        .expYield = 166,
-        .evYield_SpDefense = 2,
-        .genderRatio = PERCENT_FEMALE(50),
-        .eggCycles = 20,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FLYING),
-        .abilities = { ABILITY_GULP_MISSILE, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Cramorant"),
-        .cryId = CRY_CRAMORANT,
-        .natDexNum = NATIONAL_DEX_CRAMORANT,
-        .categoryName = _("Gulp"),
-        .height = 8,
-        .weight = 180,
+        CRAMORANT_INFO,
         .description = COMPOUND_STRING(
             "It's so strong that it can knock out some\n"
             "opponents in a single hit, but it also may\n"
@@ -3095,38 +3103,11 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
             gOverworldPalette_Cramorant,
             gShinyOverworldPalette_Cramorant
         )
-        .levelUpLearnset = sCramorantLevelUpLearnset,
-        .teachableLearnset = sCramorantTeachableLearnset,
-        .eggMoveLearnset = sCramorantEggMoveLearnset,
-        .formSpeciesIdTable = sCramorantFormSpeciesIdTable,
-        .formChangeTable = sCramorantFormChangeTable,
     },
 
     [SPECIES_CRAMORANT_GULPING] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 85,
-        .baseDefense   = 55,
-        .baseSpeed     = 85,
-        .baseSpAttack  = 85,
-        .baseSpDefense = 95,
-        .types = MON_TYPES(TYPE_FLYING, TYPE_WATER),
-        .catchRate = 45,
-        .expYield = 166,
-        .evYield_SpDefense = 2,
-        .genderRatio = PERCENT_FEMALE(50),
-        .eggCycles = 20,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FLYING),
-        .abilities = { ABILITY_GULP_MISSILE, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Cramorant"),
-        .cryId = CRY_CRAMORANT,
-        .natDexNum = NATIONAL_DEX_CRAMORANT,
-        .categoryName = _("Gulp"),
-        .height = 8,
-        .weight = 180,
+        CRAMORANT_INFO,
         .description = COMPOUND_STRING(
             "Cramorant's gluttony led it to try\n"
             "to swallow an Arrokuda whole, which\n"
@@ -3152,38 +3133,11 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(5, 14, SHADOW_SIZE_M)
         FOOTPRINT(Cramorant)
-        .levelUpLearnset = sCramorantLevelUpLearnset,
-        .teachableLearnset = sCramorantTeachableLearnset,
-        .eggMoveLearnset = sCramorantEggMoveLearnset,
-        .formSpeciesIdTable = sCramorantFormSpeciesIdTable,
-        .formChangeTable = sCramorantFormChangeTable,
     },
 
     [SPECIES_CRAMORANT_GORGING] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 85,
-        .baseDefense   = 55,
-        .baseSpeed     = 85,
-        .baseSpAttack  = 85,
-        .baseSpDefense = 95,
-        .types = MON_TYPES(TYPE_FLYING, TYPE_WATER),
-        .catchRate = 45,
-        .expYield = 166,
-        .evYield_SpDefense = 2,
-        .genderRatio = PERCENT_FEMALE(50),
-        .eggCycles = 20,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FLYING),
-        .abilities = { ABILITY_GULP_MISSILE, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Cramorant"),
-        .cryId = CRY_CRAMORANT,
-        .natDexNum = NATIONAL_DEX_CRAMORANT,
-        .categoryName = _("Gulp"),
-        .height = 8,
-        .weight = 180,
+        CRAMORANT_INFO,
         .description = COMPOUND_STRING(
             "This Cramorant has accidentally\n"
             "gotten a Pikachu lodged in its gullet.\n"
@@ -3209,11 +3163,6 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(5, 14, SHADOW_SIZE_M)
         FOOTPRINT(Cramorant)
-        .levelUpLearnset = sCramorantLevelUpLearnset,
-        .teachableLearnset = sCramorantTeachableLearnset,
-        .eggMoveLearnset = sCramorantEggMoveLearnset,
-        .formSpeciesIdTable = sCramorantFormSpeciesIdTable,
-        .formChangeTable = sCramorantFormChangeTable,
     },
 #endif //P_FAMILY_CRAMORANT
 

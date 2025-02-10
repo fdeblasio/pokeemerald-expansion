@@ -1276,11 +1276,15 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
 - Ponyta/Rapidash (not in main game):
     - Learn Temper Flare and Blaze Kick by level up
 
+- Shellder (not in main game):
+    - Learns Aqua Jet, Chilling Water, Bubble Beam, Waterfall, and Liquidation by level up
+
 - Cloyster (not in main game):
     - Held items:
         - Pearl: 50%->0%
         - Big Pearl: 5%->50%
         - Pearl String: 0%->5%
+    - Learns Aqua Jet, Chilling Water, Bubble Beam, Waterfall, and Liquidation by level up
     - Learns Body Press by TM
 
 - Gastly/Haunter/Gengar (not in main game):
@@ -1402,7 +1406,13 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
 
 - Scyther (not in main game):
     - Catch rate: 45->90
-    - Learns Dual Wingbeat by level up
+    - Learns Pounce, Bug Bite, Aerial Ace, Dual Wingbeat, and Lunge by level up
+
+- Scizor (not in main game):
+    - Learns Aerial Ace, Dual Wingbeat, Pounce, Bug Bite, Steel Wing, and Lunge by level up
+
+- Kleavor (not in main game):
+    - Learns Aerial Ace, Dual Wingbeat, Pounce, Bug Bite, Rock Tomb, and Lunge by level up
 
 - Smoochum (not in main game):
     - Def: 15->20
@@ -1680,6 +1690,12 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
 - Stantler (postgame):
     - Evolves into Wyrdeer by simply knowing Psyshield Bash
     - Learns Psyshield Bash by level up
+
+- Smeargle (not in main game):
+    - Atk: 20->50
+    - Def: 35->50
+    - SpA: 20->50
+    - SpD: 45->50
 
 - Raikou (not in main game):
     - Hidden Ability: Inner Focus -> Volt Absorb
@@ -2081,6 +2097,9 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
 - Shellos/Gastrodon:
     - Learn Surf by level up
 
+- Drifloon/Drifblim:
+    - Learn Air Cutter and Air Slash by level up
+
 - Buizel/Floatzel:
     - Learn Bubble by level up
 
@@ -2120,6 +2139,12 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
 
 - Hippopotas/Hippowdon:
     - Learn Bulldoze, Stomping Tantrum, Scorching Sands, and High Horsepower by level up
+
+- Skorupi/Drapion:
+    - Learn Poison Tail by level up
+
+- Croagunk/Toxicroak:
+    - Learn Rock Smash, Brick Break, and Drain Punch by level up
 
 - Abomasnow:
     - Learns Icicle Crash by TM
@@ -2292,8 +2317,9 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
 - Scrafty:
     - Learns Dragon Breath by Egg Move
 
-- Carracosta:
-    - Learns Body Press by TM
+- Tirtouga/Carracosta:
+    - Learn Rock Throw, Rock Tomb, and Liquidation by level up
+    - Learn Body Press by TM
 
 - Archen/Archeops:
     - Hidden Ability: None->Early Bird
@@ -2348,8 +2374,10 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
 
 - Foongus:
     - Evolution: 39->36
+    - Learns Venoshock by level up
 
 - Amoonguss:
+    - Learns Venoshock by level up
     - Held items:
         - Tiny Mushroom: 50%->0%
         - Big Mushroom: 5%->50%
@@ -2365,6 +2393,9 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
     - SpA: 97->100
     - Spe: 108->110
     - Learns Struggle Bug, Thunderbolt, and Thunder by level up
+
+- Ferroseed/Ferrothorn:
+    - Learn Seed Bomb by level up
 
 - Klink:
     - Atk: 55->60
@@ -2611,6 +2642,12 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
 - Swirlix/Slurpuff:
     - Learn Lick, Disarming Voice, and Dazzling Gleam by level up
 
+- Inkay:
+    - Learn Feint Attack and Zen Headbutt by level up
+
+- Malamar:
+    - Learn Feint Attack, Zen Headbutt, and Throat Chop by level up
+
 - Skrelp (postgame):
     - Evolution: 48->37
     - Learns Dragon Breath by Egg Move
@@ -2639,7 +2676,11 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
     - Learns Dragon Breath by Egg Move
 
 - Tyrunt/Tyrantrum:
+    - Learn Rock Throw, Smack Down, and Rock Tomb by level up
     - Learn Dragon Breath by Egg Move
+
+- Hawlucha:
+    - Learns Rolling Kick, Drain Punch, Sky Uppercut, Dual Wingbeat, and Acrobatics by level up
 
 - Goomy:
     - Evolution: 40->35
@@ -2715,6 +2756,9 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
 - Tsareena:
     - Held item: Magost Berry: 0%->50%
     - Held item: Grassy Seed: 50%->5%
+
+- Comfey
+    - Learns Fairy Wind and Dazzling Gleam by level up
 
 - Sandygast/Palossand:
     - Learn Mud-Slap, Mud Shot, Hex, and Scorching Sands by level up
@@ -2794,6 +2838,12 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
     - Learns Mud-Slap, Mud Shot, Scorching Sands, Drill Run, High Horsepower, and Earthquake
     - Learn Dragon Breath by Egg Move
 
+- Cramorant:
+    - HP: 70->75
+    - SpA: 85->95
+    - Spe: 85->95
+    - Learns Gust, Water Pulse, Air Cutter, Surf, and Air Slash by level up
+
 - Arrokuda:
     - HP: 41->45
     - Atk: 63->65
@@ -2841,9 +2891,14 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
 
 - Impidimp:
     - Evolution: 32->28
+    - Learns Fairy Wind by level up
 
 - Morgrem:
     - Evolution: 42->38
+    - Learns Fairy Wind by level up
+
+- Grimmsnarl:
+    - Learns Fairy Wind by level up
 
 - Snom:
     - Evolution: friendship->21

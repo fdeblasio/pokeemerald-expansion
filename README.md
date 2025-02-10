@@ -1283,12 +1283,18 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Rare Bone: 0%->5%
     - Learns Fire Punch and Temper Flare by level up
 
-- Tyrogue:
+- Tyrogue (not in main game):
     - SpD: 35->55
     - Learns Rock Smash by level up
 
-- Hitmonchan:
+- Hitmonchan (not in main game):
     - Learns Dizzy Punch by level up
+
+- Slowpoke/Slowbro/Slowking (not in main game):
+    - Learn Psybeam by level up
+
+- Magnemite/Magneton/Magnezone:
+    - Learn Shock Wave and Thunderbolt by level up
 
 - Farfetch'd (not in main game):
     - Held item: Leek: 5%->100%
@@ -1564,6 +1570,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Sunflora (postgame):
     - Learns Morning Sun by level up
 
+- Wooper/Quagsire (postgame):
+    - Learn Water Pulse and Earth Power by level up
+
 - Honchkrow (not in main game):
     - Learns Drill Peck by level up
 
@@ -1627,6 +1636,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Mantyke (not in main game):
     - Catch rate: 25->90
+    - Learns Gust, Surf, and Hurricane by level up
+
+- Mantine (not in main game):
+    - Learns Gust, Surf, and Hurricane by level up
 
 - Houndour/Houndoom:
     - Learn Snarl by level up
@@ -1753,14 +1766,17 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Nincada:
     - Learns Mud Slap at level 1 and now learns Mud Shot in its place at level 15
-    - Learns Bug Bite by level up
+    - Learns Bug Bite and Leech Life by level up
+    - Learns Hone Claws by Egg Move
 
 - Ninjask:
     - Learns Mud Shot and Leech Life by level up
     - Learns Steel Wing by TM
+    - Learns Hone Claws by Egg Move
 
 - Shedinja:
     - Learns Mud Shot, Fury Cutter, Bug Bite, Swords Dance, and Leech Life by level up
+    - Learns Hone Claws by Egg Move
 
 - Whismur:
     - Received Run Away as a second ability
@@ -2737,12 +2753,14 @@ There are some mechanics, moves and abilities that are missing and being develop
     - HP: 41->45
     - Atk: 63->65
     - Spe: 66->70
+    - Learns Aqua Cutter and Waterfall by level up
     - Learns Drill Peck by Egg Move
 
 - Barraskewda:
     - HP: 61->65
     - Atk: 123->125
     - Spe: 136->140
+    - Learns Aqua Cutter and Waterfall by level up
     - Learns Drill Peck by Egg Move
 
 - Toxel:

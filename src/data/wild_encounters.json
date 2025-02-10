@@ -1374,7 +1374,7 @@
               },
               {
                 "range": "RANGE_DESERT",
-                "species": "CACNEA"
+                "species": "SANDILE"
               },
               {
                 "range": "RANGE_DESERT",
@@ -1925,43 +1925,43 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "LINOONE"
+                "species": "CRAMORANT"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "MANECTRIC"
+                "species": "FLAMIGO"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "LINOONE"
+                "species": "BOMBIRDIER"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "MANECTRIC"
+                "species": "BOMBIRDIER"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "WATTREL"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "WATTREL"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "LINOONE"
+                "species": "CRAMORANT"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "MANECTRIC"
+                "species": "FLAMIGO"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "WATTREL"
+                "species": "BOMBIRDIER"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "WATTREL"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -1970,7 +1970,7 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "WAILMER"
+                "species": "ARROKUDA"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
@@ -1998,7 +1998,7 @@
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
-                "species": "CARVANHA"
+                "species": "ARROKUDA"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -2006,7 +2006,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "SHARPEDO"
+                "species": "BARRASKEWDA"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -2014,7 +2014,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "SHARPEDO"
+                "species": "BARRASKEWDA"
               }
             ]
           }
@@ -2027,15 +2027,23 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_119",
-                "species": "TROPIUS"
+                "species": "FOONGUS"
               },
               {
                 "range": "RANGE_ROUTE_119",
-                "species": "GLOOM"
+                "species": "FERROSEED"
               },
               {
                 "range": "RANGE_ROUTE_119",
-                "species": "PINSIR"
+                "species": "DRIFLOON"
+              },
+              {
+                "range": "RANGE_ROUTE_119",
+                "species": "DRIFLOON"
+              },
+              {
+                "range": "RANGE_ROUTE_119",
+                "species": "SCYTHER"
               },
               {
                 "range": "RANGE_ROUTE_119",
@@ -2043,27 +2051,19 @@
               },
               {
                 "range": "RANGE_ROUTE_119",
-                "species": "LINOONE"
+                "species": "GLOOM"
               },
               {
                 "range": "RANGE_ROUTE_119",
-                "species": "LINOONE"
+                "species": "GLOOM"
               },
               {
                 "range": "RANGE_ROUTE_119",
-                "species": "LINOONE"
+                "species": "FOONGUS"
               },
               {
                 "range": "RANGE_ROUTE_119",
-                "species": "LINOONE"
-              },
-              {
-                "range": "RANGE_ROUTE_119",
-                "species": "LINOONE"
-              },
-              {
-                "range": "RANGE_ROUTE_119",
-                "species": "LINOONE"
+                "species": "FERROSEED"
               }
             ]
           },
@@ -2072,7 +2072,7 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_119",
-                "species": "TENTACOOL"
+                "species": "CARVANHA"
               },
               {
                 "range": "RANGE_ROUTE_119",
@@ -2129,19 +2129,19 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_120",
+                "species": "CROAGUNK"
+              },
+              {
+                "range": "RANGE_ROUTE_120",
+                "species": "SKORUPI"
+              },
+              {
+                "range": "RANGE_ROUTE_120",
                 "species": "ABSOL"
               },
               {
                 "range": "RANGE_ROUTE_120",
-                "species": "SHELLOS_EAST"
-              },
-              {
-                "range": "RANGE_ROUTE_120",
-                "species": "MIGHTYENA"
-              },
-              {
-                "range": "RANGE_ROUTE_120",
-                "species": "LINOONE"
+                "species": "AXEW"
               },
               {
                 "range": "RANGE_ROUTE_120",
@@ -2154,6 +2154,10 @@
               {
                 "range": "RANGE_ROUTE_120",
                 "species": "ABSOL"
+              },
+              {
+                "range": "RANGE_ROUTE_120",
+                "species": "AXEW"
               },
               {
                 "range": "RANGE_ROUTE_120",
@@ -2161,11 +2165,7 @@
               },
               {
                 "range": "RANGE_ROUTE_120",
-                "species": "MIGHTYENA"
-              },
-              {
-                "range": "RANGE_ROUTE_120",
-                "species": "LINOONE"
+                "species": "HERDIER"
               }
             ]
           },
@@ -2182,11 +2182,11 @@
               },
               {
                 "range": "RANGE_ROUTE_120",
-                "species": "AZUMARILL"
+                "species": "TYMPOLE"
               },
               {
                 "range": "RANGE_ROUTE_120",
-                "species": "MASQUERAIN"
+                "species": "TYMPOLE"
               }
             ]
           },
@@ -2202,23 +2202,23 @@
               },
               {
                 "range": "RANGE_ROUTE_120",
-                "species": "BARBOACH"
+                "species": "TYMPOLE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "SEAKING"
+                "species": "PALPITOAD"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WHISCASH"
+                "species": "QUAGSIRE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "SEAKING"
+                "species": "PALPITOAD"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WHISCASH"
+                "species": "QUAGSIRE"
               }
             ]
           }
@@ -2231,27 +2231,11 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_121",
-                "species": "DUSKULL"
+                "species": "IMPIDIMP"
               },
               {
                 "range": "RANGE_ROUTE_121",
-                "species": "SHUPPET"
-              },
-              {
-                "range": "RANGE_ROUTE_121",
-                "species": "GIRAFARIG"
-              },
-              {
-                "range": "RANGE_ROUTE_121",
-                "species": "DODUO"
-              },
-              {
-                "range": "RANGE_ROUTE_121",
-                "species": "MIGHTYENA"
-              },
-              {
-                "range": "RANGE_ROUTE_121",
-                "species": "GLOOM"
+                "species": "INKAY"
               },
               {
                 "range": "RANGE_ROUTE_121",
@@ -2259,7 +2243,23 @@
               },
               {
                 "range": "RANGE_ROUTE_121",
-                "species": "DODUO"
+                "species": "SHELLOS_EAST"
+              },
+              {
+                "range": "RANGE_ROUTE_121",
+                "species": "CYCLIZAR"
+              },
+              {
+                "range": "RANGE_ROUTE_121",
+                "species": "HAWLUCHA"
+              },
+              {
+                "range": "RANGE_ROUTE_121",
+                "species": "SMEARGLE"
+              },
+              {
+                "range": "RANGE_ROUTE_121",
+                "species": "SMEARGLE"
               },
               {
                 "range": "RANGE_ROUTE_121",
@@ -2276,7 +2276,7 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_121",
-                "species": "TENTACRUEL"
+                "species": "CARVANHA"
               },
               {
                 "range": "RANGE_ROUTE_121",
@@ -2300,7 +2300,7 @@
               },
               {
                 "range": "RANGE_ROUTE_121",
-                "species": "TENTACOOL"
+                "species": "CARVANHA"
               },
               {
                 "range": "RANGE_ROUTE_121",
@@ -2308,7 +2308,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "SHARPEDO"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -2316,7 +2316,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "SHARPEDO"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -4209,19 +4209,19 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "TENTACOOL"
+                "species": "SHELLDER"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "TENTACOOL"
+                "species": "SHELLDER"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "TENTACOOL"
+                "species": "SHELLDER"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "CLOYSTER"
               }
             ]
           },
@@ -4233,27 +4233,27 @@
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "TENTACOOL"
+                "species": "SHELLDER"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "TENTACOOL"
+                "species": "SHELLDER"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "CLOYSTER"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "CLOYSTER"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "CLOYSTER"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "CLOYSTER"
               }
             ]
           }
@@ -4266,19 +4266,19 @@
             "mons": [
               {
                 "range": "RANGE_DIVE_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "CLOYSTER"
               },
               {
                 "range": "RANGE_DIVE_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "CLOYSTER"
               },
               {
                 "range": "RANGE_DIVE_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "CLOYSTER"
               },
               {
                 "range": "RANGE_DIVE_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "CLOYSTER"
               }
             ]
           },
@@ -4290,27 +4290,27 @@
               },
               {
                 "range": "RANGE_DIVE_INITIAL",
-                "species": "TENTACOOL"
+                "species": "SHELLDER"
               },
               {
                 "range": "RANGE_DIVE_INITIAL",
-                "species": "TENTACOOL"
+                "species": "SHELLDER"
               },
               {
                 "range": "RANGE_DIVE_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "CLOYSTER"
               },
               {
                 "range": "RANGE_DIVE_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "CLOYSTER"
               },
               {
                 "range": "RANGE_DIVE_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "CLOYSTER"
               },
               {
                 "range": "RANGE_DIVE_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "CLOYSTER"
               }
             ]
           }
@@ -4380,19 +4380,11 @@
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "VOLTORB"
+                "species": "ELEKID"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "MAGNEMITE"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "VOLTORB"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "MAGNEMITE"
+                "species": "ELEKID"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
@@ -4404,11 +4396,19 @@
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "VOLTORB"
+                "species": "ELEKID"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "MAGNEMITE"
+                "species": "ELEKID"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
+                "species": "ROTOM"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
+                "species": "ROTOM"
               }
             ]
           }
@@ -6169,11 +6169,11 @@
               },
               {
                 "range": "RANGE_CAVE_OF_ORIGIN",
-                "species": "GOLBAT"
+                "species": "GOLETT"
               },
               {
                 "range": "RANGE_CAVE_OF_ORIGIN",
-                "species": "GOLBAT"
+                "species": "STONJOURNER"
               },
               {
                 "range": "RANGE_CAVE_OF_ORIGIN",

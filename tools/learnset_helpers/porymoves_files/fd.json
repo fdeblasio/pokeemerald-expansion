@@ -1444,21 +1444,36 @@
     "TutorMoves": []
   },
   "SLOWPOKE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 24,
+        "Move": "MOVE_PSYBEAM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "SLOWBRO": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 24,
+        "Move": "MOVE_PSYBEAM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "SLOWKING": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 24,
+        "Move": "MOVE_PSYBEAM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -1486,21 +1501,48 @@
     "TutorMoves": []
   },
   "MAGNEMITE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 23,
+        "Move": "MOVE_SHOCK_WAVE"
+      },
+      {
+        "Level": 44,
+        "Move": "MOVE_THUNDERBOLT"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "MAGNETON": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 23,
+        "Move": "MOVE_SHOCK_WAVE"
+      },
+      {
+        "Level": 52,
+        "Move": "MOVE_THUNDERBOLT"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "MAGNEZONE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 23,
+        "Move": "MOVE_SHOCK_WAVE"
+      },
+      {
+        "Level": 52,
+        "Move": "MOVE_THUNDERBOLT"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -3287,14 +3329,32 @@
     "TutorMoves": []
   },
   "WOOPER": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 16,
+        "Move": "MOVE_WATER_PULSE"
+      },
+      {
+        "Level": 28,
+        "Move": "MOVE_EARTH_POWER"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "QUAGSIRE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 16,
+        "Move": "MOVE_WATER_PULSE"
+      },
+      {
+        "Level": 34,
+        "Move": "MOVE_EARTH_POWER"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -3801,14 +3861,40 @@
     "TutorMoves": []
   },
   "MANTYKE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_GUST"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_SURF"
+      },
+      {
+        "Level": 48,
+        "Move": "MOVE_HURRICANE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "MANTINE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_GUST"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_SURF"
+      },
+      {
+        "Level": 48,
+        "Move": "MOVE_HURRICANE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -4546,7 +4632,9 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [],
-    "EggMoves": [],
+    "EggMoves": [
+      "MOVE_HONE_CLAWS"
+    ],
     "TutorMoves": []
   },
   "NINJASK": {
@@ -10678,7 +10766,16 @@
     "TutorMoves": []
   },
   "ARROKUDA": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 30,
+        "Move": "MOVE_AQUA_CUTTER"
+      },
+      {
+        "Level": 36,
+        "Move": "MOVE_WATERFALL"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [
@@ -10687,7 +10784,16 @@
     "TutorMoves": []
   },
   "BARRASKEWDA": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 32,
+        "Move": "MOVE_AQUA_CUTTER"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_WATERFALL"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

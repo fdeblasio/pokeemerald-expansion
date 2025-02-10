@@ -346,7 +346,6 @@ static const u16 sNidoranFEggMoveLearnset[] = {
     MOVE_DISABLE,
     MOVE_ECHOED_VOICE,
     MOVE_FOCUS_ENERGY,
-    MOVE_POISON_TAIL,
     MOVE_PURSUIT,
     MOVE_ROUND,
     MOVE_SKULL_BASH,
@@ -355,7 +354,6 @@ static const u16 sNidoranFEggMoveLearnset[] = {
     MOVE_SUPERSONIC,
     MOVE_TAKE_DOWN,
     MOVE_VENOM_DRENCH,
-    MOVE_VENOSHOCK,
     MOVE_UNAVAILABLE,
 };
 
@@ -368,7 +366,6 @@ static const u16 sNidoranMEggMoveLearnset[] = {
     MOVE_DISABLE,
     MOVE_ECHOED_VOICE,
     MOVE_HEAD_SMASH,
-    MOVE_POISON_TAIL,
     MOVE_ROUND,
     MOVE_SMART_STRIKE,
     MOVE_SNORE,
@@ -378,7 +375,6 @@ static const u16 sNidoranMEggMoveLearnset[] = {
     MOVE_TAKE_DOWN,
     MOVE_THRASH,
     MOVE_VENOM_DRENCH,
-    MOVE_VENOSHOCK,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_NIDORAN
@@ -3506,7 +3502,6 @@ static const u16 sGligarEggMoveLearnset[] = {
     MOVE_BATON_PASS,
     MOVE_BREAKING_SWIPE,
     MOVE_BUG_BITE,
-    MOVE_BULLDOZE,
     MOVE_CONFIDE,
     MOVE_CROSS_POISON,
     MOVE_DEFOG,
@@ -3536,7 +3531,6 @@ static const u16 sGligarEggMoveLearnset[] = {
     MOVE_THUNDER_FANG,
     MOVE_TOXIC_SPIKES,
     MOVE_VENOSHOCK,
-    MOVE_WING_ATTACK,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_GLIGAR

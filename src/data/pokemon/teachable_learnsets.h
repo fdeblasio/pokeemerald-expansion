@@ -23396,6 +23396,7 @@ static const u16 sGastrodonTeachableLearnset[] = {
 static const u16 sDrifloonTeachableLearnset[] = {
     MOVE_ACROBATICS,
     MOVE_AERIAL_ACE,
+    MOVE_AIR_SLASH,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_CALM_MIND,
@@ -28364,6 +28365,7 @@ static const u16 sTirtougaTeachableLearnset[] = {
     MOVE_AQUA_TAIL,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
+    MOVE_BODY_PRESS,
     MOVE_BODY_SLAM,
     MOVE_BRINE,
     MOVE_CRUNCH,
@@ -33392,6 +33394,7 @@ static const u16 sInkayTeachableLearnset[] = {
     MOVE_TORMENT,
     MOVE_TOXIC,
     MOVE_TRICK_ROOM,
+    MOVE_ZEN_HEADBUTT,
     MOVE_UNAVAILABLE,
 };
 
@@ -33438,6 +33441,7 @@ static const u16 sMalamarTeachableLearnset[] = {
     MOVE_TORMENT,
     MOVE_TOXIC,
     MOVE_TRICK_ROOM,
+    MOVE_ZEN_HEADBUTT,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_INKAY

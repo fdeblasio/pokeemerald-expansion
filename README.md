@@ -1493,6 +1493,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Mantyke:
     - Catch rate: 25->90
+    - Now evolves at level 25 instead of needing a Remoraid (which isn't available until the postgame) in the party
     - Learns Gust, Surf, and Hurricane by level up
 
 - Mantine:

@@ -1476,7 +1476,7 @@
               },
               {
                 "range": "RANGE_ROUTE_112",
-                "species": "NUMEL"
+                "species": "CUBONE"
               },
               {
                 "range": "RANGE_ROUTE_112",
@@ -1496,19 +1496,19 @@
               },
               {
                 "range": "RANGE_ROUTE_112",
-                "species": "MACHOP"
-              },
-              {
-                "range": "RANGE_ROUTE_112",
-                "species": "MACHOP"
-              },
-              {
-                "range": "RANGE_ROUTE_112",
                 "species": "NUMEL"
               },
               {
                 "range": "RANGE_ROUTE_112",
                 "species": "NUMEL"
+              },
+              {
+                "range": "RANGE_ROUTE_112",
+                "species": "CUBONE"
+              },
+              {
+                "range": "RANGE_ROUTE_112",
+                "species": "CUBONE"
               }
             ]
           }
@@ -1525,35 +1525,35 @@
               },
               {
                 "range": "RANGE_ROUTE_113",
+                "species": "PONYTA"
+              },
+              {
+                "range": "RANGE_ROUTE_113",
+                "species": "GLIGAR"
+              },
+              {
+                "range": "RANGE_ROUTE_113",
+                "species": "GLIGAR"
+              },
+              {
+                "range": "RANGE_ROUTE_113",
+                "species": "SLUGMA"
+              },
+              {
+                "range": "RANGE_ROUTE_113",
+                "species": "SLUGMA"
+              },
+              {
+                "range": "RANGE_ROUTE_113",
                 "species": "SPINDA"
               },
               {
                 "range": "RANGE_ROUTE_113",
-                "species": "SKARMORY"
-              },
-              {
-                "range": "RANGE_ROUTE_113",
-                "species": "SKARMORY"
-              },
-              {
-                "range": "RANGE_ROUTE_113",
-                "species": "SANDSHREW"
-              },
-              {
-                "range": "RANGE_ROUTE_113",
                 "species": "SLUGMA"
               },
               {
                 "range": "RANGE_ROUTE_113",
                 "species": "SANDSHREW"
-              },
-              {
-                "range": "RANGE_ROUTE_113",
-                "species": "SLUGMA"
-              },
-              {
-                "range": "RANGE_ROUTE_113",
-                "species": "SKARMORY"
               },
               {
                 "range": "RANGE_ROUTE_113",
@@ -1570,19 +1570,35 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_114",
-                "species": "ZANGOOSE"
-              },
-              {
-                "range": "RANGE_ROUTE_114",
-                "species": "SEVIPER"
-              },
-              {
-                "range": "RANGE_ROUTE_114",
                 "species": "SWABLU"
               },
               {
                 "range": "RANGE_ROUTE_114",
-                "species": "SWABLU"
+                "species": "SHELLOS_WEST"
+              },
+              {
+                "range": "RANGE_ROUTE_114",
+                "species": "NIDORAN_M"
+              },
+              {
+                "range": "RANGE_ROUTE_114",
+                "species": "NIDORAN_F"
+              },
+              {
+                "range": "RANGE_ROUTE_114",
+                "species": "NIDORAN_M"
+              },
+              {
+                "range": "RANGE_ROUTE_114",
+                "species": "NIDORAN_F"
+              },
+              {
+                "range": "RANGE_ROUTE_114",
+                "species": "TOGEPI"
+              },
+              {
+                "range": "RANGE_ROUTE_114",
+                "species": "TOGEPI"
               },
               {
                 "range": "RANGE_ROUTE_114",
@@ -1591,22 +1607,6 @@
               {
                 "range": "RANGE_ROUTE_114",
                 "species": "LOMBRE"
-              },
-              {
-                "range": "RANGE_ROUTE_114",
-                "species": "ZANGOOSE"
-              },
-              {
-                "range": "RANGE_ROUTE_114",
-                "species": "SEVIPER"
-              },
-              {
-                "range": "RANGE_ROUTE_114",
-                "species": "SHELLOS_WEST"
-              },
-              {
-                "range": "RANGE_ROUTE_114",
-                "species": "SWABLU"
               }
             ]
           },
@@ -1615,15 +1615,15 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "SLOWPOKE"
+                "species": "SHELLOS_WEST"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "WOOPER"
+                "species": "TYMPOLE"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "WOOPER"
+                "species": "TYMPOLE"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
@@ -1639,27 +1639,27 @@
               },
               {
                 "range": "RANGE_ROUTE_114",
-                "species": "SLOWPOKE"
+                "species": "SHELLOS_WEST"
               },
               {
                 "range": "RANGE_ROUTE_114",
-                "species": "BARBOACH"
+                "species": "TYMPOLE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "SEAKING"
+                "species": "GASTRODON_WEST"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WHISCASH"
+                "species": "PALPITOAD"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "SEAKING"
+                "species": "GASTRODON_WEST"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WHISCASH"
+                "species": "PALPITOAD"
               }
             ]
           }
@@ -1700,15 +1700,15 @@
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "SWELLOW"
+                "species": "DRAMPA"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "SWELLOW"
+                "species": "DRAMPA"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "SWELLOW"
+                "species": "DRAMPA"
               }
             ]
           },
@@ -3474,7 +3474,7 @@
               },
               {
                 "range": "RANGE_FIERY_PATH",
-                "species": "NUMEL"
+                "species": "ROLYCOLY"
               },
               {
                 "range": "RANGE_FIERY_PATH",
@@ -3490,7 +3490,7 @@
               },
               {
                 "range": "RANGE_FIERY_PATH",
-                "species": "NUMEL"
+                "species": "ROLYCOLY"
               },
               {
                 "range": "RANGE_FIERY_PATH",
@@ -3507,43 +3507,43 @@
             "mons": [
               {
                 "range": "RANGE_METEOR_FALLS",
-                "species": "SOLROCK"
+                "species": "CLEFFA"
               },
               {
                 "range": "RANGE_METEOR_FALLS",
-                "species": "LUNATONE"
+                "species": "MUNNA"
               },
               {
                 "range": "RANGE_METEOR_FALLS",
-                "species": "SOLROCK"
+                "species": "NOIBAT"
               },
               {
                 "range": "RANGE_METEOR_FALLS",
-                "species": "LUNATONE"
+                "species": "DRUDDIGON"
               },
               {
                 "range": "RANGE_METEOR_FALLS",
-                "species": "SOLROCK"
+                "species": "NOIBAT"
               },
               {
                 "range": "RANGE_METEOR_FALLS",
-                "species": "LUNATONE"
+                "species": "DRUDDIGON"
               },
               {
                 "range": "RANGE_METEOR_FALLS",
-                "species": "ZUBAT"
+                "species": "CLEFFA"
               },
               {
                 "range": "RANGE_METEOR_FALLS",
-                "species": "ZUBAT"
+                "species": "MUNNA"
               },
               {
                 "range": "RANGE_METEOR_FALLS",
-                "species": "ZUBAT"
+                "species": "NOIBAT"
               },
               {
                 "range": "RANGE_METEOR_FALLS",
-                "species": "ZUBAT"
+                "species": "DRUDDIGON"
               }
             ]
           },
@@ -3552,19 +3552,19 @@
             "mons": [
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "SOLROCK"
+                "species": "NOIBAT"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "LUNATONE"
+                "species": "NOIBAT"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "LUNATONE"
+                "species": "NOIBAT"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
-                "species": "LUNATONE"
+                "species": "NOIBAT"
               }
             ]
           },
@@ -3654,19 +3654,19 @@
             "mons": [
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "SOLROCK"
+                "species": "NOIBAT"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
+                "species": "NOIBAT"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
+                "species": "NOIBAT"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
+                "species": "NOIBAT"
               }
             ]
           },
@@ -3756,19 +3756,19 @@
             "mons": [
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "SOLROCK"
+                "species": "NOIBAT"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
+                "species": "NOIBAT"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
+                "species": "NOIBAT"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
+                "species": "NOIBAT"
               }
             ]
           },
@@ -3813,43 +3813,43 @@
             "mons": [
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "BAGON"
+                "species": "LARVITAR"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "BELDUM"
+                "species": "GOOMY"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "BAGON"
+                "species": "LARVITAR"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "BELDUM"
+                "species": "GOOMY"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "BAGON"
+                "species": "LARVITAR"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "BELDUM"
+                "species": "GOOMY"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "BAGON"
+                "species": "LARVITAR"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "BELDUM"
+                "species": "GOOMY"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "BAGON"
+                "species": "LARVITAR"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "BELDUM"
+                "species": "GOOMY"
               }
             ]
           },
@@ -3858,19 +3858,19 @@
             "mons": [
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "SOLROCK"
+                "species": "NOIBAT"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
+                "species": "NOIBAT"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
+                "species": "NOIBAT"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
+                "species": "NOIBAT"
               }
             ]
           },
@@ -3915,43 +3915,43 @@
             "mons": [
               {
                 "range": "RANGE_POSTGAME",
-                "species": "METANG"
+                "species": "PUPITAR"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SHELGON"
+                "species": "SLIGGOO"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "METANG"
+                "species": "PUPITAR"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SHELGON"
+                "species": "SLIGGOO"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "METANG"
+                "species": "PUPITAR"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SHELGON"
+                "species": "SLIGGOO"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "METANG"
+                "species": "PUPITAR"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SHELGON"
+                "species": "SLIGGOO"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "METANG"
+                "species": "PUPITAR"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SHELGON"
+                "species": "SLIGGOO"
               }
             ]
           }
@@ -3980,11 +3980,11 @@
               },
               {
                 "range": "RANGE_JAGGED_PASS",
-                "species": "NUMEL"
+                "species": "SHUCKLE"
               },
               {
                 "range": "RANGE_JAGGED_PASS",
-                "species": "NUMEL"
+                "species": "SHUCKLE"
               },
               {
                 "range": "RANGE_JAGGED_PASS",

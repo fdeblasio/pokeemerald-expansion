@@ -7569,11 +7569,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_SMEARGLE] =
     {
         .baseHP        = 55,
-        .baseAttack    = 20,
-        .baseDefense   = 35,
+        .baseAttack    = 50,
+        .baseDefense   = 50,
         .baseSpeed     = 75,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 45,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 88 : 106,

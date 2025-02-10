@@ -157,6 +157,7 @@ upcoming
         - Any Pokémon that learns Power Gem should learn both?
     - Any Pokémon that learns a biting move, should also learn a STAB version (for example, Eelektrik learning Crunch but not Thunder Fang)
     - Any Pokémon that learns a horn move (Horn Attack, Megahorn, Smart Strike, etc), can learn them all?
+    - Any Poison type that learns Iron Tail should learn Poison Tail?
 - Possible Move Updates:
     - Infestation: 20->35
     - Parabolic Charge: 65->75

@@ -1265,11 +1265,15 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Ponyta/Rapidash (not in main game):
     - Learn Temper Flare and Blaze Kick by level up
 
+- Shellder (not in main game):
+    - Learns Aqua Jet, Chilling Water, Bubble Beam, Waterfall, and Liquidation by level up
+
 - Cloyster (not in main game):
     - Held items:
         - Pearl: 50%->0%
         - Big Pearl: 5%->50%
         - Pearl String: 0%->5%
+    - Learns Aqua Jet, Chilling Water, Bubble Beam, Waterfall, and Liquidation by level up
     - Learns Body Press by TM
 
 - Gastly/Haunter/Gengar (not in main game):
@@ -1391,7 +1395,13 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Scyther (not in main game):
     - Catch rate: 45->90
-    - Learns Dual Wingbeat by level up
+    - Learns Pounce, Bug Bite, Aerial Ace, Dual Wingbeat, and Lunge by level up
+
+- Scizor (not in main game):
+    - Learns Aerial Ace, Dual Wingbeat, Pounce, Bug Bite, Steel Wing, and Lunge by level up
+
+- Kleavor (not in main game):
+    - Learns Aerial Ace, Dual Wingbeat, Pounce, Bug Bite, Rock Tomb, and Lunge by level up
 
 - Smoochum (not in main game):
     - Def: 15->20
@@ -1669,6 +1679,12 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Stantler (postgame):
     - Evolves into Wyrdeer by simply knowing Psyshield Bash
     - Learns Psyshield Bash by level up
+
+- Smeargle (not in main game):
+    - Atk: 20->50
+    - Def: 35->50
+    - SpA: 20->50
+    - SpD: 45->50
 
 - Raikou (not in main game):
     - Hidden Ability: Inner Focus -> Volt Absorb
@@ -2070,6 +2086,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Shellos/Gastrodon:
     - Learn Surf by level up
 
+- Drifloon/Drifblim:
+    - Learn Air Cutter and Air Slash by level up
+
 - Buizel/Floatzel:
     - Learn Bubble by level up
 
@@ -2109,6 +2128,12 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Hippopotas/Hippowdon:
     - Learn Bulldoze, Stomping Tantrum, Scorching Sands, and High Horsepower by level up
+
+- Skorupi/Drapion:
+    - Learn Poison Tail by level up
+
+- Croagunk/Toxicroak:
+    - Learn Rock Smash, Brick Break, and Drain Punch by level up
 
 - Abomasnow:
     - Learns Icicle Crash by TM
@@ -2281,8 +2306,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Scrafty:
     - Learns Dragon Breath by Egg Move
 
-- Carracosta:
-    - Learns Body Press by TM
+- Tirtouga/Carracosta:
+    - Learn Rock Throw, Rock Tomb, and Liquidation by level up
+    - Learn Body Press by TM
 
 - Archen/Archeops:
     - Hidden Ability: None->Early Bird
@@ -2337,8 +2363,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Foongus:
     - Evolution: 39->36
+    - Learns Venoshock by level up
 
 - Amoonguss:
+    - Learns Venoshock by level up
     - Held items:
         - Tiny Mushroom: 50%->0%
         - Big Mushroom: 5%->50%
@@ -2354,6 +2382,9 @@ There are some mechanics, moves and abilities that are missing and being develop
     - SpA: 97->100
     - Spe: 108->110
     - Learns Struggle Bug, Thunderbolt, and Thunder by level up
+
+- Ferroseed/Ferrothorn:
+    - Learn Seed Bomb by level up
 
 - Klink:
     - Atk: 55->60
@@ -2600,6 +2631,12 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Swirlix/Slurpuff:
     - Learn Lick, Disarming Voice, and Dazzling Gleam by level up
 
+- Inkay:
+    - Learn Feint Attack and Zen Headbutt by level up
+
+- Malamar:
+    - Learn Feint Attack, Zen Headbutt, and Throat Chop by level up
+
 - Skrelp (postgame):
     - Evolution: 48->37
     - Learns Dragon Breath by Egg Move
@@ -2628,7 +2665,11 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Dragon Breath by Egg Move
 
 - Tyrunt/Tyrantrum:
+    - Learn Rock Throw, Smack Down, and Rock Tomb by level up
     - Learn Dragon Breath by Egg Move
+
+- Hawlucha:
+    - Learns Rolling Kick, Drain Punch, Sky Uppercut, Dual Wingbeat, and Acrobatics by level up
 
 - Goomy:
     - Evolution: 40->35
@@ -2704,6 +2745,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Tsareena:
     - Held item: Magost Berry: 0%->50%
     - Held item: Grassy Seed: 50%->5%
+
+- Comfey
+    - Learns Fairy Wind and Dazzling Gleam by level up
 
 - Sandygast/Palossand:
     - Learn Mud-Slap, Mud Shot, Hex, and Scorching Sands by level up
@@ -2783,6 +2827,12 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Mud-Slap, Mud Shot, Scorching Sands, Drill Run, High Horsepower, and Earthquake
     - Learn Dragon Breath by Egg Move
 
+- Cramorant:
+    - HP: 70->75
+    - SpA: 85->95
+    - Spe: 85->95
+    - Learns Gust, Water Pulse, Air Cutter, Surf, and Air Slash by level up
+
 - Arrokuda:
     - HP: 41->45
     - Atk: 63->65
@@ -2830,9 +2880,14 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Impidimp:
     - Evolution: 32->28
+    - Learns Fairy Wind by level up
 
 - Morgrem:
     - Evolution: 42->38
+    - Learns Fairy Wind by level up
+
+- Grimmsnarl:
+    - Learns Fairy Wind by level up
 
 - Snom:
     - Can also evolve at level 21

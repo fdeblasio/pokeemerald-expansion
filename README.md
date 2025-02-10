@@ -1105,8 +1105,28 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
     - Learn Peck by level up
     - Learn Acrobatics by TM
 
-- Nidorina/Nidoqueen (not in main game):
-    - Can now breed
+- Nidoran F (not in main game):
+    - Learns Poison Tail, Venoshock, and Poison Jab by level up
+
+- Nidorina (not in main game):
+    - Learns Poison Tail, Venoshock, and Poison Jab by level up
+    - Egg Groups: None->Monster/Field (can now breed)
+
+- Nidoqueen (not in main game):
+    - SpA: 75->85
+    - Learns Poison Tail, Venoshock, Poison Jab, Drill Run, and Earthquake by level up
+    - Egg Groups: None->Monster/Field (can now breed)
+
+- Nidoran M (not in main game):
+    - Def: 40->42
+    - Learns Poison Tail, Venoshock, and Poison Fang by level up
+
+- Nidorino (not in main game):
+    - Learns Poison Tail, Venoshock, and Poison Fang by level up
+
+- Nidoking (not in main game):
+    - SpD: 75->85
+    - Learns Poison Tail, Venoshock, Poison Fang, Drill Run, and Earthquake by level up
 
 - Ekans/Arbok (not in main game):
     - Learn Dragon Breath by Egg Move
@@ -1252,6 +1272,9 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
 - Alolan Golem (not in main game):
     - Def: 130->145
     - Spe: 45->50
+
+- Ponyta/Rapidash (not in main game):
+    - Learn Temper Flare and Blaze Kick by level up
 
 - Cloyster (not in main game):
     - Held items:
@@ -1590,7 +1613,7 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
     - Learn Swift by level up
 
 - Gligar/Gliscor (postgame):
-    - Learn Dual Wingbeat by level up
+    - Learn Wing Attack, Bulldoze, Aerial Ace, Dual Wingbeat, and Earthquake by level up
 
 - Dunsparce (not in main game):
     - Learns Swift by move tutor
@@ -1604,6 +1627,9 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
 
 - Qwilfish/Hisuian Qwilfish/Overqwil (not in main game):
     - Learns Poison Tail by level up
+
+- Shuckle:
+    - Learns Rock Tomb by level up
 
 - Heracross:
     - Learns X-Scissor by TM
@@ -2052,6 +2078,9 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
     - Atk: 60->90
     - Sp. Def: 78->117
 
+- Shellos/Gastrodon:
+    - Learn Surf by level up
+
 - Buizel/Floatzel:
     - Learn Bubble by level up
 
@@ -2156,6 +2185,9 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
     - SpA: 88->90
     - Spe: 106->110
     - Learns Thief and Dark Pulse by level up
+
+- Munna/Musharna:
+    - Learn Confusion by level up
 
 - Unfezant:
     - Learns Acrobatics by TM
@@ -2749,8 +2781,14 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
     - Spe: 88->90
     - Learns Rollout and Body Slam by level up
 
+- Rolycoly:
+    - Learns Rock Throw, Rock Tomb, Rock Slide, and Power Gem by level up
+
+- Carkol/Coalossal:
+    - Learn Rock Throw, Rock Tomb, Flame Wheel, Rock Slide, Power Gem, Temper Flare, Flame Burst, Lava Plume, and Flamethrower by level up
+
 - Applin/Appletun:
-    - Learns Dragon Breath by Egg Move (Flapple, Dippin, and Hydrapple already learn it)
+    - Learn Dragon Breath by Egg Move (Note: Flapple, Dippin, and Hydrapple already learn it)
 
 - Silicobra/Sandaconda:
     - Learns Mud-Slap, Mud Shot, Scorching Sands, Drill Run, High Horsepower, and Earthquake

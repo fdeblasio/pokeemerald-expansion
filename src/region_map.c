@@ -886,6 +886,10 @@ static u8 ProcessRegionMapInput_Full(void)
     {
         input = MAP_INPUT_B_BUTTON;
     }
+    else if (JOY_NEW(L_BUTTON))
+    {
+        input = MAP_INPUT_L_BUTTON;
+    }
     else if (JOY_NEW(R_BUTTON))
     {
         input = MAP_INPUT_R_BUTTON;
@@ -968,6 +972,10 @@ static u8 ProcessRegionMapInput_Zoomed(void)
     if (JOY_NEW(B_BUTTON))
     {
         input = MAP_INPUT_B_BUTTON;
+    }
+    else if (JOY_NEW(L_BUTTON))
+    {
+        input = MAP_INPUT_L_BUTTON;
     }
     else if (JOY_NEW(R_BUTTON))
     {

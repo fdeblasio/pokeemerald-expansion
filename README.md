@@ -2269,6 +2269,9 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
     - Spe: 84->85
     - Learns Acid, Poison Tail, Poison Fang, Poison Jab, and Crunch by level up
 
+- Spiritomb:
+    - Learns Astonish and Knock Off by level up
+
 - Gible/Gabite/Garchomp:
     - Learn Stomping Tantrum and Earthquake by level up
 
@@ -2632,6 +2635,10 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
 
 - Golett:
     - Evolution: 43->40
+    - Learns Bulldoze by level up
+
+- Golurk:
+    - Learns Bulldoze by level up
 
 - Pawniard:
     - Evolution: 52->40
@@ -2789,6 +2796,13 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
 - Malamar:
     - Learn Feint Attack, Zen Headbutt, and Throat Chop by level up
 
+- Binacle:
+    - Learns Rock Throw, Rock Tomb, Aqua Cutter, Rock Slide, and Liquidation by level up
+
+- Barbaracle:
+    - Learns Rock Throw, Rock Tomb, Aqua Cutter, Rock Slide, and Liquidation by level up
+    - Learns Body Press by TM
+
 - Skrelp (postgame):
     - Evolution: 48->37
     - Learns Dragon Breath by Egg Move
@@ -2825,6 +2839,9 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
 
 - Goomy:
     - Evolution: 40->35
+
+- Klefki:
+    - Learns Dazzling Gleam by level up
 
 - Pumpkaboo:
     - HP: 44/49/54/59->45/50/55/60

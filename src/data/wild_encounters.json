@@ -379,15 +379,15 @@
             "mons": [
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
-                "species": "CORSOLA"
+                "species": "MANTINE"
               },
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
-                "species": "KILOWATTREL"
+                "species": "WAILMER"
               },
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
-                "species": "KILOWATTREL"
+                "species": "HORSEA"
               },
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
@@ -403,7 +403,7 @@
               },
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
-                "species": "ARROKUDA"
+                "species": "MANTYKE"
               },
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
@@ -411,7 +411,7 @@
               },
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
-                "species": "BARRASKEWDA"
+                "species": "MANTINE"
               },
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
@@ -419,7 +419,7 @@
               },
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
-                "species": "BARRASKEWDA"
+                "species": "MANTINE"
               },
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
@@ -2280,11 +2280,11 @@
               },
               {
                 "range": "RANGE_ROUTE_121",
-                "species": "KILOWATTREL"
+                "species": "SHELLOS_EAST"
               },
               {
                 "range": "RANGE_ROUTE_121",
-                "species": "KILOWATTREL"
+                "species": "SHELLOS_EAST"
               },
               {
                 "range": "RANGE_ROUTE_121",
@@ -2304,7 +2304,7 @@
               },
               {
                 "range": "RANGE_ROUTE_121",
-                "species": "WAILMER"
+                "species": "SHELLOS_EAST"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -2312,7 +2312,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WAILORD"
+                "species": "GASTRODON_EAST"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -2320,7 +2320,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WAILORD"
+                "species": "GASTRODON_EAST"
               }
             ]
           }
@@ -2606,7 +2606,7 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_126",
-                "species": "TENTACRUEL"
+                "species": "MANTINE"
               },
               {
                 "range": "RANGE_ROUTE_126",
@@ -2630,7 +2630,7 @@
               },
               {
                 "range": "RANGE_ROUTE_126",
-                "species": "TENTACOOL"
+                "species": "MAGIKARP"
               },
               {
                 "range": "RANGE_ROUTE_126",
@@ -2638,7 +2638,7 @@
               },
               {
                 "range": "RANGE_ROUTE_126",
-                "species": "TENTACRUEL"
+                "species": "GYARADOS"
               },
               {
                 "range": "RANGE_ROUTE_126",
@@ -2646,7 +2646,7 @@
               },
               {
                 "range": "RANGE_ROUTE_126",
-                "species": "TENTACRUEL"
+                "species": "GYARADOS"
               },
               {
                 "range": "RANGE_ROUTE_126",
@@ -2663,11 +2663,11 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_127",
-                "species": "TENTACRUEL"
+                "species": "MANTINE"
               },
               {
                 "range": "RANGE_ROUTE_127",
-                "species": "KILOWATTREL"
+                "species": "WAILMER"
               },
               {
                 "range": "RANGE_ROUTE_127",
@@ -2687,7 +2687,7 @@
               },
               {
                 "range": "RANGE_ROUTE_127",
-                "species": "TENTACOOL"
+                "species": "MANTYKE"
               },
               {
                 "range": "RANGE_ROUTE_127",
@@ -2695,7 +2695,7 @@
               },
               {
                 "range": "RANGE_ROUTE_127",
-                "species": "TENTACRUEL"
+                "species": "MANTINE"
               },
               {
                 "range": "RANGE_ROUTE_127",
@@ -2703,7 +2703,7 @@
               },
               {
                 "range": "RANGE_ROUTE_127",
-                "species": "TENTACRUEL"
+                "species": "MANTINE"
               },
               {
                 "range": "RANGE_ROUTE_127",
@@ -2720,7 +2720,7 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_128",
-                "species": "CORSOLA"
+                "species": "CARVANHA"
               },
               {
                 "range": "RANGE_ROUTE_128",
@@ -2748,7 +2748,7 @@
               },
               {
                 "range": "RANGE_ROUTE_128",
-                "species": "CORSOLA"
+                "species": "CARVANHA"
               },
               {
                 "range": "RANGE_ROUTE_128",
@@ -2756,7 +2756,7 @@
               },
               {
                 "range": "RANGE_ROUTE_128",
-                "species": "CORSOLA"
+                "species": "SHARPEDO"
               },
               {
                 "range": "RANGE_ROUTE_128",
@@ -2764,7 +2764,7 @@
               },
               {
                 "range": "RANGE_ROUTE_128",
-                "species": "CORSOLA"
+                "species": "SHARPEDO"
               }
             ]
           }
@@ -2801,7 +2801,7 @@
               },
               {
                 "range": "RANGE_ROUTE_129",
-                "species": "TENTACOOL"
+                "species": "WAILMER"
               },
               {
                 "range": "RANGE_ROUTE_129",
@@ -2809,7 +2809,7 @@
               },
               {
                 "range": "RANGE_ROUTE_129",
-                "species": "TENTACRUEL"
+                "species": "WAILORD"
               },
               {
                 "range": "RANGE_ROUTE_129",
@@ -2817,7 +2817,7 @@
               },
               {
                 "range": "RANGE_ROUTE_129",
-                "species": "TENTACRUEL"
+                "species": "WAILORD"
               },
               {
                 "range": "RANGE_ROUTE_129",
@@ -2879,7 +2879,7 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_130",
-                "species": "TENTACRUEL"
+                "species": "BARRASKEWDA"
               },
               {
                 "range": "RANGE_ROUTE_130",
@@ -2903,7 +2903,7 @@
               },
               {
                 "range": "RANGE_ROUTE_130",
-                "species": "TENTACOOL"
+                "species": "ARROKUDA"
               },
               {
                 "range": "RANGE_ROUTE_130",
@@ -2911,7 +2911,7 @@
               },
               {
                 "range": "RANGE_ROUTE_130",
-                "species": "TENTACRUEL"
+                "species": "BARRASKEWDA"
               },
               {
                 "range": "RANGE_ROUTE_130",
@@ -2919,7 +2919,7 @@
               },
               {
                 "range": "RANGE_ROUTE_130",
-                "species": "TENTACRUEL"
+                "species": "BARRASKEWDA"
               },
               {
                 "range": "RANGE_ROUTE_130",
@@ -2936,11 +2936,11 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_131",
-                "species": "TENTACRUEL"
+                "species": "HORSEA"
               },
               {
                 "range": "RANGE_ROUTE_131",
-                "species": "KILOWATTREL"
+                "species": "SEADRA"
               },
               {
                 "range": "RANGE_ROUTE_131",
@@ -2960,7 +2960,7 @@
               },
               {
                 "range": "RANGE_ROUTE_131",
-                "species": "TENTACOOL"
+                "species": "HORSEA"
               },
               {
                 "range": "RANGE_ROUTE_131",
@@ -2968,7 +2968,7 @@
               },
               {
                 "range": "RANGE_ROUTE_131",
-                "species": "TENTACRUEL"
+                "species": "SEADRA"
               },
               {
                 "range": "RANGE_ROUTE_131",
@@ -2976,7 +2976,7 @@
               },
               {
                 "range": "RANGE_ROUTE_131",
-                "species": "TENTACRUEL"
+                "species": "SEADRA"
               },
               {
                 "range": "RANGE_ROUTE_131",
@@ -2993,11 +2993,11 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_132",
-                "species": "TENTACRUEL"
+                "species": "HORSEA"
               },
               {
                 "range": "RANGE_ROUTE_132",
-                "species": "KILOWATTREL"
+                "species": "SEADRA"
               },
               {
                 "range": "RANGE_ROUTE_132",
@@ -3049,19 +3049,19 @@
             "encounter_rate": 1,
             "mons": [
               {
-                "range": "RANGE_ROUTE_133",
-                "species": "TENTACRUEL"
+                "range": "RANGE_ROUTE_132",
+                "species": "HORSEA"
               },
               {
-                "range": "RANGE_ROUTE_133",
+                "range": "RANGE_ROUTE_132",
+                "species": "SEADRA"
+              },
+              {
+                "range": "RANGE_ROUTE_132",
                 "species": "KILOWATTREL"
               },
               {
-                "range": "RANGE_ROUTE_133",
-                "species": "KILOWATTREL"
-              },
-              {
-                "range": "RANGE_ROUTE_133",
+                "range": "RANGE_ROUTE_132",
                 "species": "KILOWATTREL"
               }
             ]
@@ -3106,19 +3106,19 @@
             "encounter_rate": 1,
             "mons": [
               {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "WAILMER"
+                "range": "RANGE_ROUTE_132",
+                "species": "HORSEA"
               },
               {
-                "range": "RANGE_SURF_INITIAL",
+                "range": "RANGE_ROUTE_132",
+                "species": "SEADRA"
+              },
+              {
+                "range": "RANGE_ROUTE_132",
                 "species": "KILOWATTREL"
               },
               {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "KILOWATTREL"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
+                "range": "RANGE_ROUTE_132",
                 "species": "KILOWATTREL"
               }
             ]
@@ -3580,23 +3580,23 @@
               },
               {
                 "range": "RANGE_METEOR_FALLS",
-                "species": "BARBOACH"
+                "species": "POLIWAG"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "SEAKING"
+                "species": "POLIWHIRL"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WHISCASH"
+                "species": "POLIWHIRL"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "SEAKING"
+                "species": "POLIWHIRL"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WHISCASH"
+                "species": "POLIWHIRL"
               }
             ]
           }
@@ -3609,43 +3609,43 @@
             "mons": [
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "SOLROCK"
+                "species": "CLEFAIRY"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
+                "species": "MUSHARNA"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "SOLROCK"
+                "species": "NOIVERN"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
+                "species": "DRUDDIGON"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "SOLROCK"
+                "species": "NOIVERN"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
+                "species": "DRUDDIGON"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "GOLBAT"
+                "species": "CLEFAIRY"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "GOLBAT"
+                "species": "CLEFAIRY"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "GOLBAT"
+                "species": "CLEFAIRY"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "GOLBAT"
+                "species": "CLEFAIRY"
               }
             ]
           },
@@ -3654,19 +3654,19 @@
             "mons": [
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "NOIBAT"
+                "species": "NOIVERN"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "NOIBAT"
+                "species": "POLIWHIRL"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "NOIBAT"
+                "species": "POLIWHIRL"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "NOIBAT"
+                "species": "POLIWHIRL"
               }
             ]
           },
@@ -3682,23 +3682,23 @@
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "BARBOACH"
+                "species": "POLIWAG"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "SEAKING"
+                "species": "POLIWHIRL"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "WHISCASH"
+                "species": "POLIWHIRL"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "SEAKING"
+                "species": "POLIWHIRL"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "WHISCASH"
+                "species": "POLIWHIRL"
               }
             ]
           }
@@ -3711,43 +3711,43 @@
             "mons": [
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "SOLROCK"
+                "species": "CLEFAIRY"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
+                "species": "MUSHARNA"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "SOLROCK"
+                "species": "NOIVERN"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
+                "species": "DRUDDIGON"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "SOLROCK"
+                "species": "NOIVERN"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "LUNATONE"
+                "species": "DRUDDIGON"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "GOLBAT"
+                "species": "CLEFAIRY"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "GOLBAT"
+                "species": "CLEFAIRY"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "GOLBAT"
+                "species": "CLEFAIRY"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "GOLBAT"
+                "species": "CLEFAIRY"
               }
             ]
           },
@@ -3756,19 +3756,19 @@
             "mons": [
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "NOIBAT"
+                "species": "NOIVERN"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "NOIBAT"
+                "species": "POLIWHIRL"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "NOIBAT"
+                "species": "POLIWHIRL"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "NOIBAT"
+                "species": "POLIWHIRL"
               }
             ]
           },
@@ -3784,23 +3784,23 @@
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "BARBOACH"
+                "species": "POLIWAG"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "SEAKING"
+                "species": "POLIWHIRL"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "WHISCASH"
+                "species": "POLIWHIRL"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "SEAKING"
+                "species": "POLIWHIRL"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "WHISCASH"
+                "species": "POLIWHIRL"
               }
             ]
           }
@@ -3862,15 +3862,15 @@
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "NOIBAT"
+                "species": "POLIWHIRL"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "NOIBAT"
+                "species": "POLIWHIRL"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "NOIBAT"
+                "species": "POLIWHIRL"
               }
             ]
           },
@@ -3886,23 +3886,23 @@
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "BARBOACH"
+                "species": "POLIWAG"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "SEAKING"
+                "species": "POLIWHIRL"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "WHISCASH"
+                "species": "POLIWHIRL"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "SEAKING"
+                "species": "POLIWHIRL"
               },
               {
                 "range": "RANGE_METEOR_FALLS_WATERFALL",
-                "species": "WHISCASH"
+                "species": "POLIWHIRL"
               }
             ]
           }
@@ -3947,11 +3947,11 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "PUPITAR"
+                "species": "CLEFABLE"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SLIGGOO"
+                "species": "CLEFABLE"
               }
             ]
           }
@@ -5610,15 +5610,15 @@
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "TENTACRUEL"
+                "species": "CARVANHA"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "TENTACRUEL"
+                "species": "CARVANHA"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "TENTACRUEL"
+                "species": "SHARPEDO"
               }
             ]
           },
@@ -5642,11 +5642,11 @@
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "WAILORD"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "TENTACRUEL"
+                "species": "SHARPEDO"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
@@ -5663,43 +5663,43 @@
             "mons": [
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "BARBARACLE"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "GOLDUCK"
+                "species": "GASTRODON_EAST"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "POLIWRATH"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "GOLDUCK"
+                "species": "POLITOED"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "SLOWBRO"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "GOLBAT"
+                "species": "SLOWKING"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "BELLIBOLT"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CORSOLA"
+                "species": "BELLIBOLT"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "SEISMITOAD"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CLAMPERL"
+                "species": "SEISMITOAD"
               }
             ]
           }
@@ -5712,43 +5712,43 @@
             "mons": [
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "BARBARACLE"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "GOLDUCK"
+                "species": "GASTRODON_EAST"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "POLIWRATH"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "GOLDUCK"
+                "species": "POLITOED"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "SLOWBRO"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "GOLBAT"
+                "species": "SLOWKING"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "BELLIBOLT"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CORSOLA"
+                "species": "BELLIBOLT"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "SEISMITOAD"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CLAMPERL"
+                "species": "SEISMITOAD"
               }
             ]
           }
@@ -5761,43 +5761,43 @@
             "mons": [
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "BARBARACLE"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "GOLDUCK"
+                "species": "GASTRODON_EAST"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "POLIWRATH"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "GOLDUCK"
+                "species": "POLITOED"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "SLOWBRO"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "GOLBAT"
+                "species": "SLOWKING"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "BELLIBOLT"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CORSOLA"
+                "species": "BELLIBOLT"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "SEISMITOAD"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CLAMPERL"
+                "species": "SEISMITOAD"
               }
             ]
           }
@@ -5810,43 +5810,43 @@
             "mons": [
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "BARBARACLE"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "GOLDUCK"
+                "species": "GASTRODON_EAST"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "POLIWRATH"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "GOLDUCK"
+                "species": "POLITOED"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "SLOWBRO"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "GOLBAT"
+                "species": "SLOWKING"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "BELLIBOLT"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CORSOLA"
+                "species": "BELLIBOLT"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "SEISMITOAD"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CLAMPERL"
+                "species": "SEISMITOAD"
               }
             ]
           }
@@ -5859,43 +5859,43 @@
             "mons": [
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "BARBARACLE"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "GOLDUCK"
+                "species": "GASTRODON_EAST"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "POLIWRATH"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "GOLDUCK"
+                "species": "POLITOED"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "SLOWBRO"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "GOLBAT"
+                "species": "SLOWKING"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "BELLIBOLT"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CORSOLA"
+                "species": "BELLIBOLT"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "SEISMITOAD"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CLAMPERL"
+                "species": "SEISMITOAD"
               }
             ]
           }
@@ -5908,43 +5908,43 @@
             "mons": [
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "BARBARACLE"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "GOLDUCK"
+                "species": "GASTRODON_EAST"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "POLIWRATH"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "GOLDUCK"
+                "species": "POLITOED"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "SLOWBRO"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "GOLBAT"
+                "species": "SLOWKING"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "BELLIBOLT"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CORSOLA"
+                "species": "BELLIBOLT"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "SEISMITOAD"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CLAMPERL"
+                "species": "SEISMITOAD"
               }
             ]
           },
@@ -5957,15 +5957,15 @@
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "TENTACRUEL"
+                "species": "ARROKUDA"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "TENTACRUEL"
+                "species": "ARROKUDA"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "TENTACRUEL"
+                "species": "ARROKUDA"
               }
             ]
           },
@@ -5981,7 +5981,7 @@
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "WAILMER"
+                "species": "ARROKUDA"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
@@ -5989,15 +5989,15 @@
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "BARRASKEWDA"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "TENTACRUEL"
+                "species": "SHARPEDO"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "WAILORD"
+                "species": "BARRASKEWDA"
               }
             ]
           }
@@ -6010,43 +6010,43 @@
             "mons": [
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "BARBARACLE"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "GOLDUCK"
+                "species": "GASTRODON_EAST"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "POLIWRATH"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "GOLDUCK"
+                "species": "POLITOED"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "SLOWBRO"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "GOLBAT"
+                "species": "SLOWKING"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "BELLIBOLT"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CORSOLA"
+                "species": "BELLIBOLT"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "SEISMITOAD"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CLAMPERL"
+                "species": "SEISMITOAD"
               }
             ]
           },
@@ -6059,15 +6059,15 @@
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "TENTACRUEL"
+                "species": "ARROKUDA"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "TENTACRUEL"
+                "species": "ARROKUDA"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "TENTACRUEL"
+                "species": "ARROKUDA"
               }
             ]
           },
@@ -6083,7 +6083,7 @@
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "WAILMER"
+                "species": "ARROKUDA"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
@@ -6091,15 +6091,15 @@
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "BARRASKEWDA"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "TENTACRUEL"
+                "species": "SHARPEDO"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "WAILORD"
+                "species": "BARRASKEWDA"
               }
             ]
           }
@@ -6112,43 +6112,43 @@
             "mons": [
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "BARBARACLE"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "GOLDUCK"
+                "species": "GASTRODON_EAST"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "POLIWRATH"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "GOLDUCK"
+                "species": "POLITOED"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "SLOWBRO"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "GOLBAT"
+                "species": "SLOWKING"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "BELLIBOLT"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CORSOLA"
+                "species": "BELLIBOLT"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
+                "species": "SEISMITOAD"
               },
               {
                 "range": "RANGE_SEAFLOOR_CAVERN",
-                "species": "CLAMPERL"
+                "species": "SEISMITOAD"
               }
             ]
           }
@@ -6165,7 +6165,7 @@
               },
               {
                 "range": "RANGE_CAVE_OF_ORIGIN",
-                "species": "GLIMMET"
+                "species": "SABLEYE"
               },
               {
                 "range": "RANGE_CAVE_OF_ORIGIN",
@@ -6177,11 +6177,7 @@
               },
               {
                 "range": "RANGE_CAVE_OF_ORIGIN",
-                "species": "MAWILE"
-              },
-              {
-                "range": "RANGE_CAVE_OF_ORIGIN",
-                "species": "SABLEYE"
+                "species": "GLIMMET"
               },
               {
                 "range": "RANGE_CAVE_OF_ORIGIN",
@@ -6189,15 +6185,19 @@
               },
               {
                 "range": "RANGE_CAVE_OF_ORIGIN",
-                "species": "GOLBAT"
+                "species": "GOLETT"
               },
               {
                 "range": "RANGE_CAVE_OF_ORIGIN",
-                "species": "GOLBAT"
+                "species": "STONJOURNER"
               },
               {
                 "range": "RANGE_CAVE_OF_ORIGIN",
-                "species": "GOLBAT"
+                "species": "GLIMMET"
+              },
+              {
+                "range": "RANGE_CAVE_OF_ORIGIN",
+                "species": "DITTO"
               }
             ]
           }
@@ -6218,35 +6218,35 @@
               },
               {
                 "range": "RANGE_CAVE_OF_ORIGIN",
-                "species": "GOLBAT"
+                "species": "GOLETT"
               },
               {
                 "range": "RANGE_CAVE_OF_ORIGIN",
-                "species": "GOLBAT"
+                "species": "STONJOURNER"
               },
               {
                 "range": "RANGE_CAVE_OF_ORIGIN",
-                "species": "MAWILE"
+                "species": "GLIMMET"
               },
               {
                 "range": "RANGE_CAVE_OF_ORIGIN",
-                "species": "SABLEYE"
+                "species": "DITTO"
               },
               {
                 "range": "RANGE_CAVE_OF_ORIGIN",
-                "species": "GOLBAT"
+                "species": "GOLETT"
               },
               {
                 "range": "RANGE_CAVE_OF_ORIGIN",
-                "species": "GOLBAT"
+                "species": "STONJOURNER"
               },
               {
                 "range": "RANGE_CAVE_OF_ORIGIN",
-                "species": "GOLBAT"
+                "species": "GLIMMET"
               },
               {
                 "range": "RANGE_CAVE_OF_ORIGIN",
-                "species": "GOLBAT"
+                "species": "DITTO"
               }
             ]
           }
@@ -6259,18 +6259,6 @@
             "mons": [
               {
                 "range": "RANGE_SKY_PILLAR",
-                "species": "MAWILE"
-              },
-              {
-                "range": "RANGE_SKY_PILLAR",
-                "species": "GLIMMET"
-              },
-              {
-                "range": "RANGE_SKY_PILLAR",
-                "species": "DITTO"
-              },
-              {
-                "range": "RANGE_SKY_PILLAR",
                 "species": "CLAYDOL"
               },
               {
@@ -6279,7 +6267,11 @@
               },
               {
                 "range": "RANGE_SKY_PILLAR",
-                "species": "BANETTE"
+                "species": "GLIMMET"
+              },
+              {
+                "range": "RANGE_SKY_PILLAR",
+                "species": "HONEDGE"
               },
               {
                 "range": "RANGE_SKY_PILLAR",
@@ -6291,11 +6283,19 @@
               },
               {
                 "range": "RANGE_SKY_PILLAR",
-                "species": "DUSCLOPS"
+                "species": "NOIBAT"
               },
               {
                 "range": "RANGE_SKY_PILLAR",
-                "species": "BANETTE"
+                "species": "NOIBAT"
+              },
+              {
+                "range": "RANGE_SKY_PILLAR",
+                "species": "DITTO"
+              },
+              {
+                "range": "RANGE_SKY_PILLAR",
+                "species": "DITTO"
               }
             ]
           }
@@ -6308,43 +6308,43 @@
             "mons": [
               {
                 "range": "RANGE_SKY_PILLAR",
-                "species": "MAWILE"
-              },
-              {
-                "range": "RANGE_SKY_PILLAR",
-                "species": "SABLEYE"
-              },
-              {
-                "range": "RANGE_SKY_PILLAR",
                 "species": "CLAYDOL"
               },
               {
                 "range": "RANGE_SKY_PILLAR",
-                "species": "CLAYDOL"
+                "species": "GOLETT"
               },
               {
                 "range": "RANGE_SKY_PILLAR",
-                "species": "DUSCLOPS"
+                "species": "GLIMMET"
               },
               {
                 "range": "RANGE_SKY_PILLAR",
-                "species": "BANETTE"
+                "species": "HONEDGE"
               },
               {
                 "range": "RANGE_SKY_PILLAR",
-                "species": "GOLBAT"
+                "species": "STONJOURNER"
               },
               {
                 "range": "RANGE_SKY_PILLAR",
-                "species": "GOLBAT"
+                "species": "LARVESTA"
               },
               {
                 "range": "RANGE_SKY_PILLAR",
-                "species": "DUSCLOPS"
+                "species": "NOIBAT"
               },
               {
                 "range": "RANGE_SKY_PILLAR",
-                "species": "BANETTE"
+                "species": "NOIBAT"
+              },
+              {
+                "range": "RANGE_SKY_PILLAR",
+                "species": "DITTO"
+              },
+              {
+                "range": "RANGE_SKY_PILLAR",
+                "species": "DITTO"
               }
             ]
           }
@@ -6365,35 +6365,35 @@
               },
               {
                 "range": "RANGE_SKY_PILLAR",
-                "species": "MAWILE"
+                "species": "GOLURK"
               },
               {
                 "range": "RANGE_SKY_PILLAR",
-                "species": "SABLEYE"
+                "species": "DOUBLADE"
               },
               {
                 "range": "RANGE_SKY_PILLAR",
-                "species": "DUSCLOPS"
+                "species": "NOIVERN"
               },
               {
                 "range": "RANGE_SKY_PILLAR",
-                "species": "BANETTE"
+                "species": "GLIMMET"
               },
               {
                 "range": "RANGE_SKY_PILLAR",
-                "species": "MAWILE"
+                "species": "LARVESTA"
               },
               {
                 "range": "RANGE_SKY_PILLAR",
-                "species": "SABLEYE"
+                "species": "LARVESTA"
               },
               {
                 "range": "RANGE_SKY_PILLAR",
-                "species": "DUSCLOPS"
+                "species": "DITTO"
               },
               {
                 "range": "RANGE_SKY_PILLAR",
-                "species": "BANETTE"
+                "species": "DITTO"
               }
             ]
           }
@@ -6418,7 +6418,7 @@
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "GLIMMET"
+                "species": "GLIMMORA"
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
@@ -6426,7 +6426,7 @@
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "GOLBAT"
+                "species": "GLIMMORA"
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
@@ -6442,7 +6442,7 @@
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "GOLBAT"
+                "species": "GLIMMORA"
               }
             ]
           }
@@ -6467,7 +6467,7 @@
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "GOLBAT"
+                "species": "GLIMMORA"
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
@@ -6475,7 +6475,7 @@
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "GOLBAT"
+                "species": "GLIMMORA"
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
@@ -6491,7 +6491,7 @@
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "GOLBAT"
+                "species": "GLIMMORA"
               }
             ]
           }
@@ -6536,11 +6536,11 @@
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "MAWILE"
+                "species": "GLIMMORA"
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "SABLEYE"
+                "species": "GLIMMORA"
               }
             ]
           },
@@ -6549,7 +6549,7 @@
             "mons": [
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "WHISCASH"
+                "species": "QUAGSIRE"
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
@@ -6573,27 +6573,27 @@
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "SLOWPOKE"
+                "species": "SHELLDER"
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "BARBOACH"
+                "species": "SHELLDER"
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "SEAKING"
+                "species": "CLOYSTER"
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "WHISCASH"
+                "species": "CLOYSTER"
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "SEAKING"
+                "species": "CLOYSTER"
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "WHISCASH"
+                "species": "CLOYSTER"
               }
             ]
           }

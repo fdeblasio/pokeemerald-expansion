@@ -120,7 +120,9 @@ struct DexNavGUI
     u8 cursorSpriteId;
     u16 landSpecies[LAND_WILD_COUNT];
     u16 waterSpecies[WATER_WILD_COUNT];
+#if CHECK_SPECIES == FALSE
     u16 hiddenSpecies[HIDDEN_WILD_COUNT];
+#endif
     u8 cursorRow;
     u8 cursorCol;
     u8 environment;
@@ -165,8 +167,13 @@ static void DrawHiddenSearchWindow(u8 width);
 
 //// Const Data
 // gui image data
+#if CHECK_SPECIES == FALSE
 static const u32 sDexNavGuiTiles[] = INCBIN_U32("graphics/dexnav/gui_tiles.4bpp.lz");
 static const u32 sDexNavGuiTilemap[] = INCBIN_U32("graphics/dexnav/gui_tilemap.bin.lz");
+#else
+static const u32 sDexNavGuiTilemap[] = INCBIN_U32("graphics/dexnav/gui_tilemap_simple.bin.lz");
+static const u32 sDexNavGuiTiles[] = INCBIN_U32("graphics/dexnav/gui_tiles_simple.4bpp.lz");
+#endif
 static const u32 sDexNavGuiPal[] = INCBIN_U32("graphics/dexnav/gui.gbapal");
 
 static const u32 sSelectionCursorGfx[] = INCBIN_U32("graphics/dexnav/cursor.4bpp.lz");
@@ -184,7 +191,11 @@ static const u32 sHiddenMonIconGfx[] = INCBIN_U32("graphics/dexnav/hidden.4bpp.l
 // strings
 static const u8 sText_DexNav_NoInfo[] = _("--------");
 static const u8 sText_DexNav_CaptureToSee[] = _("Capture first!");
-static const u8 sText_DexNav_PressRToRegister[] = _("R TO REGISTER!");
+#if CHECK_SPECIES == FALSE
+static const u8 sText_DexNav_PressRToRegister[] = _("R to Register!");
+#else
+static const u8 sText_DexNav_PressRToRegister[] = _("");
+#endif
 static const u8 sText_DexNav_SearchForRegisteredSpecies[] = _("Search {STR_VAR_1}");
 static const u8 sText_DexNav_NotFoundHere[] = _("This Pokémon cannot be found here!");
 static const u8 sText_ThreeQmarks[] = _("???");
@@ -1697,11 +1708,13 @@ static void UpdateCursorPosition(void)
         y = ROW_LAND_BOT_ICON_Y;
         sDexNavUiDataPtr->environment = ENCOUNTER_TYPE_LAND;
         break;
+#if CHECK_SPECIES == FALSE
     case ROW_HIDDEN:
         x = ROW_HIDDEN_ICON_X + (24 * sDexNavUiDataPtr->cursorCol);
         y = ROW_HIDDEN_ICON_Y;
         sDexNavUiDataPtr->environment = ENCOUNTER_TYPE_HIDDEN;
         break;
+#endif
     default:
         return;
     }
@@ -1799,6 +1812,7 @@ static bool8 CapturedAllWaterMons(u16 headerId)
     return FALSE;
 }
 
+#if CHECK_SPECIES == FALSE
 static bool8 CapturedAllHiddenMons(u16 headerId)
 {
     u32 i;
@@ -1816,7 +1830,7 @@ static bool8 CapturedAllHiddenMons(u16 headerId)
                 count++;
                 if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT))
                     break;
-            }
+           }
         }
 
         if (i >= HIDDEN_WILD_COUNT && count > 0)
@@ -1829,6 +1843,7 @@ static bool8 CapturedAllHiddenMons(u16 headerId)
 
     return FALSE;
 }
+#endif
 
 static void DexNavLoadCapturedAllSymbols(void)
 {
@@ -1842,8 +1857,10 @@ static void DexNavLoadCapturedAllSymbols(void)
     if (CapturedAllWaterMons(headerId))
         CreateSprite(&sCaptureAllMonsSpriteTemplate, 139, 17, 0);
 
+#if CHECK_SPECIES == FALSE
     if (CapturedAllHiddenMons(headerId))
         CreateSprite(&sCaptureAllMonsSpriteTemplate, 114, 123, 0);
+#endif
 }
 
 //#define WIN_DETAILS_TILE        0x3a3
@@ -1861,6 +1878,7 @@ static void DexNavGuiFreeResources(void)
     FreeAllWindowBuffers();
 }
 
+#if CHECK_SPECIES == FALSE
 static void CB1_InitDexNavSearch(void)
 {
     u8 taskId;
@@ -1886,6 +1904,7 @@ static void Task_DexNavExitAndSearch(u8 taskId)
     SetMainCallback1(CB1_DexNavSearchCallback);
     SetMainCallback2(CB2_ReturnToField);
 }
+#endif
 
 static void Task_DexNavFadeAndExit(u8 taskId)
 {
@@ -1926,6 +1945,7 @@ static bool8 SpeciesInArray(u16 species, u8 section)
                 return TRUE;
         }
         break;
+#if CHECK_SPECIES == FALSE
     case 2: //hidden
         for (i = 0; i < HIDDEN_WILD_COUNT; i++)
         {
@@ -1933,6 +1953,7 @@ static bool8 SpeciesInArray(u16 species, u8 section)
                 return TRUE;
         }
         break;
+#endif
     default:
         break;
     }
@@ -1945,18 +1966,24 @@ static void DexNavLoadEncounterData(void)
 {
     u8 grassIndex = 0;
     u8 waterIndex = 0;
+#if CHECK_SPECIES == FALSE
     u8 hiddenIndex = 0;
+#endif
     u16 species;
     u32 i;
     u16 headerId = GetCurrentMapWildMonHeaderId();
     const struct WildPokemonInfo* landMonsInfo = gWildMonHeaders[headerId].landMonsInfo;
     const struct WildPokemonInfo* waterMonsInfo = gWildMonHeaders[headerId].waterMonsInfo;
+#if CHECK_SPECIES == FALSE
     const struct WildPokemonInfo* hiddenMonsInfo = gWildMonHeaders[headerId].hiddenMonsInfo;
+#endif
 
     // nop struct data
     memset(sDexNavUiDataPtr->landSpecies, 0, sizeof(sDexNavUiDataPtr->landSpecies));
     memset(sDexNavUiDataPtr->waterSpecies, 0, sizeof(sDexNavUiDataPtr->waterSpecies));
+#if CHECK_SPECIES == FALSE
     memset(sDexNavUiDataPtr->hiddenSpecies, 0, sizeof(sDexNavUiDataPtr->hiddenSpecies));
+#endif
 
     // land mons
     if (landMonsInfo != NULL && landMonsInfo->encounterRate != 0)
@@ -1980,6 +2007,7 @@ static void DexNavLoadEncounterData(void)
         }
     }
 
+#if CHECK_SPECIES == FALSE
     // hidden mons
     if (hiddenMonsInfo != NULL) // no encounter rate check since 0 means land, 1 means water encounters
     {
@@ -1990,6 +2018,7 @@ static void DexNavLoadEncounterData(void)
                 sDexNavUiDataPtr->hiddenSpecies[hiddenIndex++] = hiddenMonsInfo->wildPokemon[i].species;
         }
     }
+#endif
 }
 
 static void TryDrawIconInSlot(u16 species, s16 x, s16 y)
@@ -2012,19 +2041,20 @@ static void DrawSpeciesIcons(void)
     for (i = 0; i < LAND_WILD_COUNT; i++)
     {
         species = sDexNavUiDataPtr->landSpecies[i];
-        x = 20 + (24 * (i % 6));
-        y = ROW_LAND_TOP_ICON_Y + (i > 5 ? 28 : 0);
+        x = ROW_LAND_ICON_X + (24 * (i % COL_LAND_COUNT));
+        y = ROW_LAND_TOP_ICON_Y + (i > COL_LAND_MAX ? 28 : 0);
         TryDrawIconInSlot(species, x, y);
     }
 
     for (i = 0; i < WATER_WILD_COUNT; i++)
     {
         species = sDexNavUiDataPtr->waterSpecies[i];
-        x = 30 + 24 * i;
+        x = ROW_WATER_ICON_X + 24 * i;
         y = ROW_WATER_ICON_Y;
         TryDrawIconInSlot(species, x, y);
     }
 
+#if CHECK_SPECIES == FALSE
     for (i = 0; i < HIDDEN_WILD_COUNT; i++)
     {
         species = sDexNavUiDataPtr->hiddenSpecies[i];
@@ -2037,6 +2067,7 @@ static void DrawSpeciesIcons(void)
         else
             CreateMonIcon(SPECIES_NONE, SpriteCB_MonIcon, x, y, 0, 0xFFFFFFFF); //question mark if detector mode inactive
     }
+#endif
 }
 
 static u16 DexNavGetSpecies(void)
@@ -2054,12 +2085,14 @@ static u16 DexNavGetSpecies(void)
     case ROW_LAND_BOT:
         species = sDexNavUiDataPtr->landSpecies[sDexNavUiDataPtr->cursorCol + COL_LAND_COUNT];
         break;
+#if CHECK_SPECIES == FALSE
     case ROW_HIDDEN:
         if (!FlagGet(DN_FLAG_DETECTOR_MODE))
             species = SPECIES_NONE;
         else
             species = sDexNavUiDataPtr->hiddenSpecies[sDexNavUiDataPtr->cursorCol];
         break;
+#endif
     default:
         return SPECIES_NONE;
     }
@@ -2139,15 +2172,16 @@ static void PrintCurrentSpeciesInfo(void)
 
     if (type1 == type2)
     {
-        SetTypeIconPosAndPal(type1, 186, 69, 0);
+        SetTypeIconPosAndPal(type1, 184, 69, 0);
         SetSpriteInvisibility(1, TRUE);
     }
     else
     {
-        SetTypeIconPosAndPal(type1, 168, 69, 0);
-        SetTypeIconPosAndPal(type2, 168 + 33, 69, 1);
+        SetTypeIconPosAndPal(type1, 167, 69, 0);
+        SetTypeIconPosAndPal(type2, 167 + 36, 69, 1);
     }
 
+#if CHECK_SPECIES == FALSE
     //search level
     if (species == SPECIES_NONE)
     {
@@ -2175,12 +2209,13 @@ static void PrintCurrentSpeciesInfo(void)
     {
         AddTextPrinterParameterized3(WINDOW_INFO, 0, 0, HA_INFO_Y, sFontColor_Black, 0, sText_DexNav_CaptureToSee);
     }
+#endif
 
     //current chain
 #if DEXNAV_ENABLED == TRUE
     ConvertIntToDecimalStringN(gStringVar1, gSaveBlock3Ptr->dexNavChain, STR_CONV_MODE_LEFT_ALIGN, 3);
-#endif
     AddTextPrinterParameterized3(WINDOW_INFO, 0, 0, CHAIN_BONUS_Y, sFontColor_Black, 0, gStringVar1);
+#endif
 
     CopyWindowToVram(WINDOW_INFO, 3);
     PutWindowTilemap(WINDOW_INFO);
@@ -2323,7 +2358,7 @@ static void DexNav_RunSetup(void)
 }
 
 // Entry point for the dexnav GUI
-static void DexNavGuiInit(MainCallback callback)
+void DexNavGuiInit(MainCallback callback)
 {
     if ((sDexNavUiDataPtr = AllocZeroed(sizeof(struct DexNavGUI))) == NULL)
     {
@@ -2338,12 +2373,16 @@ static void DexNavGuiInit(MainCallback callback)
 
 void Task_OpenDexNavFromStartMenu(u8 taskId)
 {
+#if CHECK_SPECIES == TRUE
+    if (!gPaletteFade.active)
+#else
     if (DEXNAV_ENABLED == FALSE)
     {   // must have it enabled to enter
         DebugPrintfLevel(MGBA_LOG_ERROR, "DexNav was opened when DEXNAV_ENABLED config was disabled! Check include/config/dexnav.h");
         DestroyTask(taskId);
     }
     else if (!gPaletteFade.active)
+#endif
     {
         CleanupOverworldWindowsAndTilemaps();
         DexNavGuiInit(CB2_ReturnToFieldWithOpenMenu);
@@ -2360,7 +2399,9 @@ static void Task_DexNavWaitFadeIn(u8 taskId)
 static void Task_DexNavMain(u8 taskId)
 {
     struct Task *task = &gTasks[taskId];
+#if CHECK_SPECIES == FALSE
     u16 species;
+#endif
 
     if (IsSEPlaying())
         return;
@@ -2375,9 +2416,15 @@ static void Task_DexNavMain(u8 taskId)
     {
         if (sDexNavUiDataPtr->cursorRow == ROW_WATER)
         {
+#if CHECK_SPECIES == FALSE
             sDexNavUiDataPtr->cursorRow = ROW_HIDDEN;
             if (sDexNavUiDataPtr->cursorCol >= COL_HIDDEN_COUNT)
                 sDexNavUiDataPtr->cursorCol = COL_HIDDEN_MAX;
+#else
+            sDexNavUiDataPtr->cursorRow = ROW_LAND_BOT;
+            if (sDexNavUiDataPtr->cursorCol >= COL_LAND_COUNT)
+                sDexNavUiDataPtr->cursorCol = COL_LAND_MAX;
+#endif
         }
         else
         {
@@ -2392,6 +2439,7 @@ static void Task_DexNavMain(u8 taskId)
     }
     else if (JOY_NEW(DPAD_DOWN))
     {
+#if CHECK_SPECIES == FALSE
         if (sDexNavUiDataPtr->cursorRow == ROW_HIDDEN)
         {
             sDexNavUiDataPtr->cursorRow = ROW_WATER;
@@ -2402,6 +2450,13 @@ static void Task_DexNavMain(u8 taskId)
                 sDexNavUiDataPtr->cursorCol = COL_HIDDEN_MAX;
 
             sDexNavUiDataPtr->cursorRow++;
+#else
+        if (sDexNavUiDataPtr->cursorRow == ROW_LAND_BOT)
+        {
+            sDexNavUiDataPtr->cursorRow = ROW_WATER;
+            if (sDexNavUiDataPtr->cursorCol >= COL_WATER_COUNT)
+                sDexNavUiDataPtr->cursorCol = COL_WATER_MAX;
+#endif
         }
         else
         {
@@ -2420,9 +2475,11 @@ static void Task_DexNavMain(u8 taskId)
             case ROW_WATER:
                 sDexNavUiDataPtr->cursorCol = COL_WATER_MAX;
                 break;
+#if CHECK_SPECIES == FALSE
             case ROW_HIDDEN:
                 sDexNavUiDataPtr->cursorCol = COL_HIDDEN_MAX;
                 break;
+#endif
             default:
                 sDexNavUiDataPtr->cursorCol = COL_LAND_MAX;
                 break;
@@ -2446,12 +2503,14 @@ static void Task_DexNavMain(u8 taskId)
             else
                 sDexNavUiDataPtr->cursorCol++;
             break;
+#if CHECK_SPECIES == FALSE
         case ROW_HIDDEN:
             if (sDexNavUiDataPtr->cursorCol == COL_HIDDEN_MAX)
                 sDexNavUiDataPtr->cursorCol = 0;
             else
                 sDexNavUiDataPtr->cursorCol++;
             break;
+#endif
         default:
             if (sDexNavUiDataPtr->cursorCol == COL_LAND_MAX)
                 sDexNavUiDataPtr->cursorCol = 0;
@@ -2462,7 +2521,7 @@ static void Task_DexNavMain(u8 taskId)
 
         PlaySE(SE_RG_BAG_CURSOR);
         UpdateCursorPosition();
-    }
+#if CHECK_SPECIES == FALSE
     else if (JOY_NEW(R_BUTTON))
     {
         // check selection is valid. Play sound if invalid
@@ -2498,6 +2557,8 @@ static void Task_DexNavMain(u8 taskId)
             BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 16, RGB_BLACK);
             task->func = Task_DexNavExitAndSearch;
         }
+    }
+#endif
     }
 }
 

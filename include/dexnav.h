@@ -2,6 +2,7 @@
 #define GUARD_DEXNAV_H
 
 #include "config/dexnav.h"
+#include "main.h"
 
 // GUI Info
 #define ROW_WATER       0
@@ -10,10 +11,16 @@
 #define ROW_HIDDEN      3
 #define ROWS_COUNT      4
 
-#define ROW_WATER_ICON_X        30
+#if CHECK_SPECIES == FALSE
+    #define ROW_WATER_ICON_X        30
+    #define ROW_LAND_ICON_X         20
+#else
+    #define ROW_WATER_ICON_X        42
+    #define ROW_LAND_ICON_X         32
+#endif
+
 #define ROW_WATER_ICON_Y        35
 
-#define ROW_LAND_ICON_X         20
 #define ROW_LAND_TOP_ICON_Y     72
 #define ROW_LAND_BOT_ICON_Y     (ROW_LAND_TOP_ICON_Y + 28)
 
@@ -24,8 +31,8 @@
 #define ENCOUNTER_TYPE_WATER    1
 #define ENCOUNTER_TYPE_HIDDEN   2   // Get from species
 
-#define COL_WATER_COUNT         5
-#define COL_LAND_COUNT          6
+#define COL_WATER_COUNT         4
+#define COL_LAND_COUNT          5
 #define COL_HIDDEN_COUNT        3
 
 #define COL_WATER_MAX           (COL_WATER_COUNT - 1)
@@ -71,6 +78,7 @@ void ResetDexNavSearch(void);
 bool8 TryFindHiddenPokemon(void);
 u32 CalculateDexNavShinyRolls(void);
 void IncrementDexNavChain(void);
+void DexNavGuiInit(MainCallback callback);
 
 extern bool8 gDexNavBattle;
 

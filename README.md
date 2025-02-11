@@ -156,38 +156,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 ### Please consider crediting the entire [list of contributors](https://github.com/rh-hideout/pokeemerald-expansion/wiki/Credits) in your project, as they have all worked hard to develop this project :)
 
-## Contributions/Acknowledgements
-- [pret's initial decompilation](https://github.com/pret/pokeemerald)
-- [RHH's Emerald Expansion](https://github.com/rh-hideout/pokeemerald-expansion)
-    - Fill out individual contributers (https://github.com/rh-hideout/pokeemerald-expansion/wiki/Credits)
-- DizzyEgg
-    - Starting the Emerald Expansion
-- [Porymaps](https://github.com/huderlem/porymap/releases/tag/5.1.1)
-- Lunos
-    - [Fixing Snow weather](https://github.com/pret/pokeemerald/wiki/Fix-Snow-Weather)
-    - [Swapping party using Select](https://www.pokecommunity.com/showpost.php?p=10420662)
-    - [Displaying Return/Frustration power in summary screen](https://www.pokecommunity.com/showpost.php?p=10575976&postcount=420)
-- AsparagusEduardo
-    - [Not showing dex entries until the Pokédex is received](https://github.com/pret/pokeemerald/wiki/Not-showing-dex-entries-until-getting-the-Pok%C3%A9dex)
-- Ghoulslash
-    - [Fixing the surfing dismount bug](https://github.com/pret/pokeemerald/wiki/Surfing-Dismount-Ground-Effects)
-    - [Implementing shops using badge count](https://github.com/pret/pokeemerald/wiki/Shop-Items-By-Badge-Count)
-    - [Bag sorting](https://www.pokecommunity.com/showpost.php?p=10167488&postcount=84)
-- Jaizu
-    - [Implementing the FRLG bag sound](https://www.pokecommunity.com/showpost.php?p=10205757)
-- Buffel Saft
-    - [Showing EVs/IVs in the summary screen](https://www.pokecommunity.com/showpost.php?p=10410302)
-    - [Removing the need to water berries on rainy routes](https://www.pokecommunity.com/showpost.php?p=10349397&postcount=258)
-- [Zeturic for a wrapping summary screen](https://www.pokecommunity.com/showpost.php?p=10060875&postcount=27)
-- [Diego Mertens for adding the Move Relearner to the summary screen](https://www.pokecommunity.com/showpost.php?p=10470602)
-- [Flametix for fixing the RESET_FONT bug](https://github.com/pret/pokeemerald/wiki/Implement-Missing-Text-Function-RESET_FONT)
-- [devolov for removing Use on Key Items with no field use](https://github.com/pret/pokeemerald/wiki/Make-Key-Items-That-Cannot-Be-Used-In-The-Field-Not-Show-A-Use-or-Register-Option)
-- [Anon822 for removing map popups for the same map section](https://www.pokecommunity.com/showpost.php?p=10449889)
-- [Fyreeire for removing the extra save confirmation](https://github.com/pret/pokeemerald/wiki/Remove-the-extra-save-confirmation)
-- [hjk321 for extra save space](https://github.com/pret/pokeemerald/wiki/Extra-save-space-with-two-lines-of-code)
-- [Mashanny for making text speed up without holding A/B](https://www.pokecommunity.com/showpost.php?p=10266385)
-- [Sapphire Jester for making the Soot Sack usuable](https://www.pokecommunity.com/showpost.php?p=10222284&postcount=178)
-
 ## Known bugs and other notes
 - With the higher levels, using the Exp. Share can cause your team to become overpowered
 - Checking wild encounters doesn't differentiate between what's been caught and what hasn't
@@ -200,7 +168,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - If you help one of the Lilycove Pokémon Center ladies, the other lady thinks you've already helped her as well
     - Could have something to do with this: sContestLadyPtr->id = LILYCOVE_LADY_CONTEST
 
-### Potentially just savefile issues due to merging upcoming/playing while hacking
+### Potentially just savefile issues due to merging code/playing while hacking
 - Lilycove ladies crash the game
 - Some of the EV-reducing berries on Route 123 will randomly disappear and then come back
     - This may be related to the amount of overworld sprites/palettes
@@ -211,7 +179,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - The corresponding TV report thinks a winning Pokémon came in last
 
 ## Changes
-- NOTE: This all assumes there are no rebasing errors
+- NOTE: This all assumes there are no merging errors
 - Wild Pokémon and Trainers have their levels increased to make grinding less of a pain
     - However, with the Exp Share now affecting all party members, this can lead to becoming overleveled
 - Decapitalization
@@ -219,7 +187,6 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Route 102/103: Path from Littleroot to rival is more direct
 - Some reversions back to Ruby and Sapphire
     - Some trainers on Routes 104 and 117 go back to their original locations
-- Gym Leaders use more Hoenn Pokémon
 - Gym Leaders and Magma/Aqua Admins/Leaders no longer have underleveled evolutions
 - Team Magma are more focused on Ground types than Fire types to avoid overlap with Flannery
 - Pokémon have a more even encounter distribution
@@ -232,11 +199,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Pokémon that evolve with an item at day or night now can evolve at any time
 - EVs now give one stat increase for every EV but cap out at 63 (individual)/127 (total). This will lead to the same stats as the old system but easier to train
 - Bird Keepers now use the overworld sprite of male Psychics since it looks more like them than the blond sprite
-- Houndour was added to the Hoenn Pokédex to give Team Magma more variety
 - Pokémon can now be listed as orange in the Pokédex
 - The Safari Zone is now in the postgame only. Its regular Pokémon have been moved to other locations
 - Underwater areas now connect better
-- Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)
 - Frontier Brains have updated teams
 - Battle Pyramid wild Pokémon have been updated
 - Battle Frontier no longer requires saving
@@ -290,8 +255,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Pokémon from Mirage Island will have their Hidden Ability. In addition, their met location will be Mirage Island instead of Route 130
 - Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply reading the braille at the back of the inner room
     - The door to Sealed Chamber and the Regis' inner rooms are now automatically open
-- Tickets for islands where Latios, Latias, Deoxys, Lugia, Ho-Oh, and Mew reside are given after beating the Elite Four
-    - Latios and Latias no longer roam and instead both show up on Southern Island
+- Tickets for islands where Regigigas, Thundurus, and Giratina reside are given after beating the Elite Four
     - The Birth Island puzzle is much simpler
     - Navel Rock is slightly easier to navigate
 - SS Tidal trainers can be rebattled every trip
@@ -351,10 +315,8 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Drake                      |52, 53, 53, 54, 55    |63, 63, 64, 64, 66|
 |Wallace                    |55, 56, 56, 56, 57, 58|66, 66, 66, 67, 67, 69|
 |Groudon/Kyogre             |70||
-|Latios/Latias              |40                    |70|
-|Mew                        |N/A                   |70|
-|Deoxys                     |N/A                   |70|
-|Lugia/Ho-Oh                |N/A                   |70|
+|Regigigas                  |N/A                   |70|
+|Thundurus/Giratina         |N/A                   |70|
 |Gym Leader/Wally rematch 1 |Various               |70, 70, 73, 73, 75|
 |Gym Leader/Wally rematch 2 |Various               |75, 75, 78, 78, 80|
 |Gym Leader/Wally rematch 3 |Various               |80, 80, 80, 83, 83, 85|

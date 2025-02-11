@@ -7001,7 +7001,16 @@
     "TutorMoves": []
   },
   "SPIRITOMB": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ASTONISH"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_KNOCK_OFF"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -9264,14 +9273,24 @@
     "TutorMoves": []
   },
   "GOLETT": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 12,
+        "Move": "MOVE_BULLDOZE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "GOLURK": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 12,
+        "Move": "MOVE_BULLDOZE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -10155,16 +10174,60 @@
     "TutorMoves": []
   },
   "BINACLE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ROCK_THROW"
+      },
+      {
+        "Level": 16,
+        "Move": "MOVE_ROCK_TOMB"
+      },
+      {
+        "Level": 28,
+        "Move": "MOVE_AQUA_CUTTER"
+      },
+      {
+        "Level": 36,
+        "Move": "MOVE_ROCK_SLIDE"
+      },
+      {
+        "Level": 44,
+        "Move": "MOVE_LIQUIDATION"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "BARBARACLE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ROCK_THROW"
+      },
+      {
+        "Level": 16,
+        "Move": "MOVE_ROCK_TOMB"
+      },
+      {
+        "Level": 28,
+        "Move": "MOVE_AQUA_CUTTER"
+      },
+      {
+        "Level": 36,
+        "Move": "MOVE_ROCK_SLIDE"
+      },
+      {
+        "Level": 48,
+        "Move": "MOVE_LIQUIDATION"
+      }
+    ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_BODY_PRESS"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -10396,7 +10459,12 @@
     "TutorMoves": []
   },
   "KLEFKI": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 36,
+        "Move": "MOVE_DAZZLING_GLEAM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

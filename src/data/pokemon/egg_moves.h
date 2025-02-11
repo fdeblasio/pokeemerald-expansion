@@ -8546,7 +8546,6 @@ static const u16 sDruddigonEggMoveLearnset[] = {
 static const u16 sGolettEggMoveLearnset[] = {
     MOVE_ALLY_SWITCH,
     MOVE_BLOCK,
-    MOVE_BULLDOZE,
     MOVE_CONFIDE,
     MOVE_CONFUSE_RAY,
     MOVE_FLING,

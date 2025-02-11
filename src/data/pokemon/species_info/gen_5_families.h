@@ -11964,10 +11964,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     [SPECIES_LARVESTA] =
     {
         .baseHP        = 55,
-        .baseAttack    = 85,
+        .baseAttack    = 50,
         .baseDefense   = 55,
         .baseSpeed     = 60,
-        .baseSpAttack  = 50,
+        .baseSpAttack  = 85,
         .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_BUG, TYPE_FIRE),
         .catchRate = 45,

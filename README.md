@@ -663,6 +663,8 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
         - Accuracy: 90->100
     - Malignant Chain:
         - PP: 5->10
+    - Mortal Spin:
+        - Power: 30->50
     - Poison Sting:
         - Power: 15->20
     - Poison Fang:
@@ -1495,6 +1497,9 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
     - Learns Bounce by level up
     - Learns Dragon Breath by Egg Move
 
+- Ditto:
+    - All stats: 48->50
+
 - Eevee (not in main game):
     - Def: 50->55
     - SpA: 45->55
@@ -1753,6 +1758,9 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
 - Suicune (not in main game):
     - Hidden Ability: Inner Focus -> Water Absorb
     - Learns Bubble Beam and Scald by level up
+
+- Larvitar/Pupitar/Tyranitar (not in main game):
+    - Learn Mud-Slap by level up
 
 - Lugia (postgame):
     - Learns Brave Bird by level up
@@ -2287,8 +2295,8 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
 - Croagunk/Toxicroak:
     - Learn Rock Smash, Brick Break, and Drain Punch by level up
 
-- Abomasnow:
-    - Learns Icicle Crash by TM
+- Snover/Abomasnow:
+    - Learn Seed Bomb and Icicle Crash by level up
 
 - All Rotom forms:
     - Catch rate: 45->90
@@ -2315,8 +2323,14 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
 - Rotom Mow:
     - Now learns Energy Ball by form change instead of Leaf Storm
 
+- Palkia:
+    - Learns Dragon Claw by level up
+
 - Regigigas:
-    - Learns Rest and Endure by level up
+    - Learns Rest, Endure, Body Slam, and Headbutt by level up
+
+- Giratina:
+    - Level up learnset updated to be more consistent with Dialga and Palkia
 
 - Snivy:
     - Evolution: 17->16
@@ -2670,7 +2684,13 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
     - Evolution: 64->55
 
 - Larvesta:
+    - Atk: 85->50
+    - SpA: 50->85
     - Evolution: 59->56
+    - Learns Flame Burst, Signal Beam, and Flamethrower by level up
+
+- Volcarona:
+    - Learns Flame Burst, Signal Beam, and Flamethrower by level up
 
 - Tornadus:
     - Learns Acrobatics by level up
@@ -2775,6 +2795,9 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
     - Spe: 104->105
     - Learns Mean Look, Tearful Look, Baby-Doll Eyes, and Psychic Noise by level up
     - Learns Extrasensory at level 39 and learns Energy Ball in its place at level 44
+
+- Honedge/Doublade/Aegislash:
+    - Learn Metal Claw, Shadow Claw, and Smart Strike by level up
 
 - Spritzee:
     - Gender Ratio: 50/50->25/75
@@ -3066,6 +3089,9 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
     - Spe: 65->75
     - Learns Silver Wind, Signal Beam, and Ice Beam by level up
 
+- Stonjourner:
+    - Learns Ancient Power and Curse by level up
+
 - Cufant/Copperajah:
     - Received Sturdy as a second ability
 
@@ -3198,8 +3224,14 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
     - Atk: 85->90
     - Learns Bullet Punch, Coil, and Comet Punch by level up
 
+- Glimmet/Glimmora:
+    - Learn Acid and Sludge Bomb by level up
+
 - Flamigo:
     - Learns Brick Break, Dual Wingbeat, Jump Kick, and High Jump Kick by level up
+
+- Cetoddle/Cetitan:
+    - Learn Ice Fang and Icicle Crash by level up
 
 - Dondozo:
     - Learns Waterfall and Liquidation by level up

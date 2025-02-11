@@ -223,7 +223,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Some trainers on Routes 104 and 117 go back to their original locations
 - Gym Leaders use more Hoenn Pokémon
 - Gym Leaders and Magma/Aqua Admins/Leaders no longer have underleveled evolutions
-- Team Magma are also focused on Ground types than Fire types to avoid overlap with Flannery
+- Team Magma are more focused on Ground types than Fire types to avoid overlap with Flannery
 - Pokémon have a more even encounter distribution
 - Trainer rematches (including Gabby and Ty) are now based on number of badges
 - Tate and Liza give out Psychic instead of Calm Mind (Calm Mind can be found in Slateport)
@@ -287,12 +287,12 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Connected the north and northwest sections of the Safari Zone
 - Both Shoal Cave items are now available in low tide, which is available more often
 - Mirage Island now always appears
-    - Wynaut from Mirage Island will have their Hidden Ability
+    - Pokémon from Mirage Island will have their Hidden Ability. In addition, their met location will be Mirage Island instead of Route 130
 - Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room
     - The door to Sealed Chamber and the Regis' inner rooms are now automatically open
 - Tickets for islands where Latios, Latias, Deoxys, Lugia, Ho-Oh, and Mew reside are given after beating the Elite Four
     - Latios and Latias no longer roam and instead both show up on Southern Island
-    - The Deoxys puzzle is much simpler
+    - The Birth Island puzzle is much simpler
     - Navel Rock is slightly easier to navigate
 - SS Tidal trainers can be rebattled every trip
 - Pokémon in the Battle Frontier/Trainer Hill now register in the Pokédex
@@ -302,7 +302,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Healing items go back to their values before their Gen7 nerf, except the Super Potion which stays at its higher Gen7+ value of 60
 - Some items, such as vitamins and hold items, are cheaper
 - Ability Capsules, Ability Patches, Mints, and EV-reducing berries are available to buy in Lilycove
-- The Good Rod is now obtained on the left side of Route 118 instead of the right
+- The Good Rod is now obtained on the left side of Route 118 instead of the right, meaning it is available before getting Surf
 - Sacred Ash now works in battles although it only revives one Pokémon
 - Soul Dew uses its Gen 6 effect
 

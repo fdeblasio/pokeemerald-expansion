@@ -263,6 +263,7 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
 - Bag sorting with Start button
 - More bag space
 - The naming screen automatically swaps to lowercase after the first letter
+- You can check which wild Pokémon appear through the PokéNav
 - Rainy routes will automatically water berries
 - Premier Balls are now given for every multiple of 10 of any ball you buy (as opposed to only 1 for 10+ Poke Balls)
 - Faster walking/surfing speed

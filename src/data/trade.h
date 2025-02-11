@@ -1002,7 +1002,7 @@ static const struct InGameTrade sIngameTrades[] =
     },
     [INGAME_TRADE_PLUSLE] =
     {
-        .nickname = _("Pluses"),
+        .nickname = _("Flap"),
         .species = SPECIES_FORTREE_TRADE_GET,
         .ivs = {4, 4, 4, 5, 5, 4},
         .abilityNum = 2,
@@ -1034,7 +1034,7 @@ static const struct InGameTrade sIngameTrades[] =
     },
     [INGAME_TRADE_MEOWTH] =
     {
-        .nickname = _("Meowow"),
+        .nickname = _("Emar"),
         .species = SPECIES_BATTLE_FRONTIER_TRADE_GET,
         .ivs = {4, 5, 4, 5, 4, 4},
         .abilityNum = 1,

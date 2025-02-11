@@ -379,19 +379,19 @@
             "mons": [
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
-                "species": "WAILMER"
+                "species": "CORSOLA"
               },
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
-                "species": "PELIPPER"
+                "species": "CORSOLA"
               },
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
-                "species": "PELIPPER"
+                "species": "CORSOLA"
               },
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
-                "species": "PELIPPER"
+                "species": "CORSOLA"
               }
             ]
           },
@@ -403,7 +403,7 @@
               },
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
-                "species": "CARVANHA"
+                "species": "CORSOLA"
               },
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
@@ -411,7 +411,7 @@
               },
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
-                "species": "SHARPEDO"
+                "species": "CORSOLA"
               },
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
@@ -419,7 +419,7 @@
               },
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",
-                "species": "SHARPEDO"
+                "species": "CORSOLA"
               },
               {
                 "range": "RANGE_PACIFIDLOG_TOWN",

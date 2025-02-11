@@ -1213,6 +1213,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Koffing:
     - Atk: 65->60
     - SpA: 60->65
+    - Evolves into Galarian Weezing with a Shiny Stone
 
 - Weezing:
     - Atk: 90->85

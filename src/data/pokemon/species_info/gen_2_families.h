@@ -4064,7 +4064,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_GEN_3_CROSS_EVOS
     [SPECIES_WYNAUT] =
     {
-        .baseHP        = 95,
+        .baseHP        = 100,
         .baseAttack    = 23,
         .baseDefense   = 48,
         .baseSpeed     = 23,
@@ -4137,7 +4137,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_WOBBUFFET] =
     {
-        .baseHP        = 190,
+        .baseHP        = 200,
         .baseAttack    = 33,
         .baseDefense   = 58,
         .baseSpeed     = 33,

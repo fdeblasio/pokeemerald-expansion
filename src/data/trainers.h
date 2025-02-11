@@ -1277,25 +1277,25 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .heldItem = ITEM_SHARP_BEAK,                                                \
     }
 
-#define WINONA_PELIPPER(rematch)                                                        \
-    {                                                                                   \
-    REMATCH_MON(PELIPPER, TIER2, rematch),                                              \
-    .ability = ABILITY_DRIZZLE,                                                         \
-    .nature = NATURE_MODEST,                                                            \
-    EV_SPREAD_SPA_SPE_DEF,                                                              \
-    .moves = {MOVE_HURRICANE, MOVE_HYDRO_PUMP, MOVE_TAILWIND, MOVE_ROOST},              \
-    .gender = TRAINER_MON_FEMALE,                                                       \
-    .heldItem = ITEM_DAMP_ROCK,                                                         \
+#define WINONA_PELIPPER(rematch)                                           \
+    {                                                                      \
+    REMATCH_MON(PELIPPER, TIER2, rematch),                                 \
+    .ability = ABILITY_DRIZZLE,                                            \
+    .nature = NATURE_MODEST,                                               \
+    EV_SPREAD_SPA_SPE_DEF,                                                 \
+    .moves = {MOVE_HURRICANE, MOVE_HYDRO_PUMP, MOVE_TAILWIND, MOVE_ROOST}, \
+    .gender = TRAINER_MON_FEMALE,                                          \
+    .heldItem = ITEM_DAMP_ROCK,                                            \
     }
 
-#define WINONA_TROPIUS(rematch)                                                         \
-    {                                                                                   \
-    REMATCH_MON(TROPIUS, TIER3, rematch),                                               \
-    .ability = ABILITY_CHLOROPHYLL,                                                     \
-    .nature = NATURE_MODEST,                                                            \
-    EV_SPREAD_SPA_HP_SPE,                                                               \
-    .moves = {MOVE_AIR_SLASH, MOVE_ENERGY_BALL, MOVE_BODY_SLAM, MOVE_SYNTHESIS},        \
-    .gender = TRAINER_MON_FEMALE,                                                       \
+#define WINONA_TROPIUS(rematch)                                                  \
+    {                                                                            \
+    REMATCH_MON(TROPIUS, TIER3, rematch),                                        \
+    .ability = ABILITY_CHLOROPHYLL,                                              \
+    .nature = NATURE_MODEST,                                                     \
+    EV_SPREAD_SPA_HP_SPE,                                                        \
+    .moves = {MOVE_AIR_SLASH, MOVE_ENERGY_BALL, MOVE_BODY_SLAM, MOVE_SYNTHESIS}, \
+    .gender = TRAINER_MON_FEMALE,                                                \
     }
 
 #define WINONA_MASQUERAIN(rematch)                                                \

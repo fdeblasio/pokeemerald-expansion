@@ -2011,9 +2011,6 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Spe: 123->125
     - Learns Twister and Dragon Breath by level up
 
-- Comfey
-    - Learns Fairy Wind and Dazzling Gleam by level up
-
 - Drampa:
     - Type: Normal/Dragon->Dragon/Normal
     - Learns Swift by level up

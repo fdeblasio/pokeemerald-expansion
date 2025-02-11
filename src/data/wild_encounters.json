@@ -888,51 +888,6 @@
         {
           "map": "MAP_ROUTE105",
           "base_label": "gRoute105",
-          "land_mons": {
-            "encounter_rate": 50,
-            "mons": [
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "COMFEY"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "COMFEY"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "COMFEY"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "COMFEY"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "COMFEY"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "COMFEY"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "COMFEY"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "COMFEY"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "COMFEY"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "COMFEY"
-              }
-            ]
-          },
           "water_mons": {
             "encounter_rate": 1,
             "mons": [

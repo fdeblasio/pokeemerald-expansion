@@ -4179,7 +4179,6 @@ static const u16 sLarvitarEggMoveLearnset[] = {
     MOVE_FOCUS_ENERGY,
     MOVE_HELPING_HAND,
     MOVE_MUD_SHOT,
-    MOVE_MUD_SLAP,
     MOVE_MUDDY_WATER,
     MOVE_OUTRAGE,
     MOVE_PURSUIT,
@@ -9459,7 +9458,6 @@ static const u16 sGoomyEggMoveLearnset[] = {
     MOVE_CONFIDE,
     MOVE_DRACO_METEOR,
     MOVE_INFESTATION,
-    MOVE_LIFE_DEW,
     MOVE_MUD_SHOT,
     MOVE_OUTRAGE,
     MOVE_POISON_TAIL,
@@ -11104,11 +11102,9 @@ static const u16 sSnomEggMoveLearnset[] = {
 
 #if P_FAMILY_STONJOURNER
 static const u16 sStonjournerEggMoveLearnset[] = {
-    MOVE_ANCIENT_POWER,
     MOVE_ASSURANCE,
     MOVE_BRUTAL_SWING,
     MOVE_BULLDOZE,
-    MOVE_CURSE,
     MOVE_ENDEAVOR,
     MOVE_HARD_PRESS,
     MOVE_HEAT_CRASH,
@@ -11999,7 +11995,6 @@ static const u16 sCetoddleEggMoveLearnset[] = {
     MOVE_ENTRAINMENT,
     MOVE_HEAVY_SLAM,
     MOVE_HELPING_HAND,
-    MOVE_ICE_FANG,
     MOVE_ICICLE_SPEAR,
     MOVE_STOMPING_TANTRUM,
     MOVE_SUPERPOWER,

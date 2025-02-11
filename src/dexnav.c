@@ -1806,7 +1806,7 @@ static bool8 CapturedAllHiddenMons(u32 headerId)
                 count++;
                 if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT))
                     break;
-            }
+           }
         }
 
         if (i >= HIDDEN_WILD_COUNT && count > 0)
@@ -1867,6 +1867,7 @@ static void DexNavLoadCapturedAllSymbols(void)
 #if CHECK_SPECIES == FALSE
         CreateSprite(&sCaptureAllMonsSpriteTemplate, 139, 17, 0);
 
+#if CHECK_SPECIES == FALSE
     if (CapturedAllHiddenMons(headerId))
         CreateSprite(&sCaptureAllMonsSpriteTemplate, 114, 123, 0);
 #else
@@ -2274,7 +2275,6 @@ static void PrintCurrentSpeciesInfo(void)
     //current chain
 #if DEXNAV_ENABLED == TRUE
     ConvertIntToDecimalStringN(gStringVar1, gSaveBlock3Ptr->dexNavChain, STR_CONV_MODE_LEFT_ALIGN, 3);
-#endif
     AddTextPrinterParameterized3(WINDOW_INFO, FONT_SMALL, 0, CHAIN_BONUS_Y, sFontColor_Black, 0, gStringVar1);
 #endif
 

@@ -212,7 +212,7 @@
               },
               {
                 "range": "RANGE_LILYCOVE_CITY",
-                "species": "KILOWATTREL"
+                "species": "BINACLE"
               },
               {
                 "range": "RANGE_LILYCOVE_CITY",
@@ -1545,11 +1545,11 @@
               },
               {
                 "range": "RANGE_ROUTE_113",
-                "species": "SPINDA"
+                "species": "KLEFKI"
               },
               {
                 "range": "RANGE_ROUTE_113",
-                "species": "SLUGMA"
+                "species": "KLEFKI"
               },
               {
                 "range": "RANGE_ROUTE_113",
@@ -2129,7 +2129,7 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_120",
-                "species": "CROAGUNK"
+                "species": "ABSOL"
               },
               {
                 "range": "RANGE_ROUTE_120",
@@ -2137,7 +2137,7 @@
               },
               {
                 "range": "RANGE_ROUTE_120",
-                "species": "ABSOL"
+                "species": "AXEW"
               },
               {
                 "range": "RANGE_ROUTE_120",
@@ -2157,7 +2157,7 @@
               },
               {
                 "range": "RANGE_ROUTE_120",
-                "species": "AXEW"
+                "species": "SKORUPI"
               },
               {
                 "range": "RANGE_ROUTE_120",
@@ -2333,7 +2333,7 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_122",
-                "species": "TENTACRUEL"
+                "species": "CARVANHA"
               },
               {
                 "range": "RANGE_ROUTE_122",
@@ -2341,11 +2341,11 @@
               },
               {
                 "range": "RANGE_ROUTE_122",
-                "species": "KILOWATTREL"
+                "species": "GASTLY"
               },
               {
                 "range": "RANGE_ROUTE_122",
-                "species": "KILOWATTREL"
+                "species": "MISDREAVUS"
               }
             ]
           },
@@ -2357,7 +2357,7 @@
               },
               {
                 "range": "RANGE_ROUTE_122",
-                "species": "TENTACOOL"
+                "species": "CARVANHA"
               },
               {
                 "range": "RANGE_ROUTE_122",
@@ -2365,7 +2365,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "SHARPEDO"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -2373,7 +2373,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "SHARPEDO"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -2394,23 +2394,23 @@
               },
               {
                 "range": "RANGE_ROUTE_123",
-                "species": "MIGHTYENA"
+                "species": "SKORUPI"
               },
               {
                 "range": "RANGE_ROUTE_123",
-                "species": "LINOONE"
+                "species": "HERDIER"
               },
               {
                 "range": "RANGE_ROUTE_123",
-                "species": "LINOONE"
+                "species": "HERDIER"
               },
               {
                 "range": "RANGE_ROUTE_123",
-                "species": "DUSKULL"
+                "species": "GASTLY"
               },
               {
                 "range": "RANGE_ROUTE_123",
-                "species": "SHUPPET"
+                "species": "MISDREAVUS"
               },
               {
                 "range": "RANGE_ROUTE_123",
@@ -2435,11 +2435,11 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_123",
-                "species": "TENTACRUEL"
+                "species": "BINACLE"
               },
               {
                 "range": "RANGE_ROUTE_123",
-                "species": "KILOWATTREL"
+                "species": "BIBAREL"
               },
               {
                 "range": "RANGE_ROUTE_123",
@@ -2459,7 +2459,7 @@
               },
               {
                 "range": "RANGE_ROUTE_123",
-                "species": "TENTACOOL"
+                "species": "ARROKUDA"
               },
               {
                 "range": "RANGE_ROUTE_123",
@@ -2467,7 +2467,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "BARRASKEWDA"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -2475,7 +2475,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "BARRASKEWDA"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -3980,11 +3980,11 @@
               },
               {
                 "range": "RANGE_JAGGED_PASS",
-                "species": "SHUCKLE"
+                "species": "CROAGUNK"
               },
               {
                 "range": "RANGE_JAGGED_PASS",
-                "species": "SHUCKLE"
+                "species": "CROAGUNK"
               },
               {
                 "range": "RANGE_JAGGED_PASS",
@@ -4339,19 +4339,19 @@
               },
               {
                 "range": "RANGE_SURF_INITIAL",
+                "species": "KLINK"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
+                "species": "KLINK"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
                 "species": "VOLTORB"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
                 "species": "MAGNEMITE"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "ELEKID"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "ELEKID"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
@@ -4388,19 +4388,19 @@
               },
               {
                 "range": "RANGE_SURF_INITIAL",
+                "species": "KLINK"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
+                "species": "KLINK"
+              },
+              {
+                "range": "RANGE_SURF_INITIAL",
                 "species": "VOLTORB"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
                 "species": "MAGNEMITE"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "ELEKID"
-              },
-              {
-                "range": "RANGE_SURF_INITIAL",
-                "species": "ELEKID"
               },
               {
                 "range": "RANGE_SURF_INITIAL",
@@ -4429,35 +4429,35 @@
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "GASTLY"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "MISDREAVUS"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "GASTLY"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "MISDREAVUS"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "LITWICK"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "LITWICK"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "LITWICK"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "SPIRITOMB"
               }
             ]
           }
@@ -4478,35 +4478,35 @@
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "GASTLY"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "MISDREAVUS"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "LITWICK"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "GASTLY"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "MISDREAVUS"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "LITWICK"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "SPIRITOMB"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "SPIRITOMB"
               }
             ]
           }
@@ -4527,35 +4527,35 @@
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "GASTLY"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "MISDREAVUS"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "LITWICK"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "GASTLY"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "MISDREAVUS"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "LITWICK"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "SPIRITOMB"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "SPIRITOMB"
               }
             ]
           }
@@ -4576,35 +4576,35 @@
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "GASTLY"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "MISDREAVUS"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "LITWICK"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "GASTLY"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "MISDREAVUS"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "LITWICK"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "SPIRITOMB"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "SPIRITOMB"
               }
             ]
           }
@@ -4625,35 +4625,35 @@
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "GASTLY"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "MISDREAVUS"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "LITWICK"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "GASTLY"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "MISDREAVUS"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "LITWICK"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "SPIRITOMB"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "SPIRITOMB"
               }
             ]
           }
@@ -4674,35 +4674,35 @@
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "GASTLY"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "MISDREAVUS"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "LITWICK"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "GASTLY"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "MISDREAVUS"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "LITWICK"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "SPIRITOMB"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "SPIRITOMB"
               }
             ]
           }
@@ -4731,23 +4731,23 @@
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "GOLETT"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "GOLETT"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "LITWICK"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "GASTLY"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "KILOWATTREL"
+                "species": "MISDREAVUS"
               },
               {
                 "range": "RANGE_MT_PYRE",
@@ -4780,27 +4780,27 @@
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "GOLETT"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "GOLETT"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "GASTLY"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "LITWICK"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "DUSKULL"
+                "species": "MISDREAVUS"
               },
               {
                 "range": "RANGE_MT_PYRE",
-                "species": "SHUPPET"
+                "species": "SPIRITOMB"
               }
             ]
           }
@@ -4825,7 +4825,7 @@
               },
               {
                 "range": "RANGE_MAGMA_HIDEOUT",
-                "species": "TORKOAL"
+                "species": "GOLETT"
               },
               {
                 "range": "RANGE_MAGMA_HIDEOUT",
@@ -4874,7 +4874,7 @@
               },
               {
                 "range": "RANGE_MAGMA_HIDEOUT",
-                "species": "TORKOAL"
+                "species": "GOLETT"
               },
               {
                 "range": "RANGE_MAGMA_HIDEOUT",
@@ -4923,7 +4923,7 @@
               },
               {
                 "range": "RANGE_MAGMA_HIDEOUT",
-                "species": "TORKOAL"
+                "species": "GOLETT"
               },
               {
                 "range": "RANGE_MAGMA_HIDEOUT",
@@ -4972,7 +4972,7 @@
               },
               {
                 "range": "RANGE_MAGMA_HIDEOUT",
-                "species": "TORKOAL"
+                "species": "GOLETT"
               },
               {
                 "range": "RANGE_MAGMA_HIDEOUT",
@@ -5021,7 +5021,7 @@
               },
               {
                 "range": "RANGE_MAGMA_HIDEOUT",
-                "species": "TORKOAL"
+                "species": "GOLETT"
               },
               {
                 "range": "RANGE_MAGMA_HIDEOUT",
@@ -5070,7 +5070,7 @@
               },
               {
                 "range": "RANGE_MAGMA_HIDEOUT",
-                "species": "TORKOAL"
+                "species": "GOLETT"
               },
               {
                 "range": "RANGE_MAGMA_HIDEOUT",
@@ -5119,7 +5119,7 @@
               },
               {
                 "range": "RANGE_MAGMA_HIDEOUT",
-                "species": "TORKOAL"
+                "species": "GOLETT"
               },
               {
                 "range": "RANGE_MAGMA_HIDEOUT",
@@ -5168,7 +5168,7 @@
               },
               {
                 "range": "RANGE_MAGMA_HIDEOUT",
-                "species": "TORKOAL"
+                "species": "GOLETT"
               },
               {
                 "range": "RANGE_MAGMA_HIDEOUT",
@@ -6283,11 +6283,11 @@
               },
               {
                 "range": "RANGE_SKY_PILLAR",
-                "species": "GOLBAT"
+                "species": "GOLETT"
               },
               {
                 "range": "RANGE_SKY_PILLAR",
-                "species": "GOLBAT"
+                "species": "LARVESTA"
               },
               {
                 "range": "RANGE_SKY_PILLAR",

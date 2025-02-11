@@ -289,7 +289,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Both Shoal Cave items are now available in low tide, which is available more often
 - Mirage Island now always appears
     - Pokémon from Mirage Island will have their Hidden Ability. In addition, their met location will be Mirage Island instead of Route 130
-- Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply pressing A in the inner room
+- Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply reading the braille at the back of the inner room
     - The door to Sealed Chamber and the Regis' inner rooms are now automatically open
 - Tickets for islands where Latios, Latias, Deoxys, Lugia, Ho-Oh, and Mew reside are given after beating the Elite Four
     - Latios and Latias no longer roam and instead both show up on Southern Island

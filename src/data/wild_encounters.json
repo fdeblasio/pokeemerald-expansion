@@ -212,7 +212,7 @@
               },
               {
                 "range": "RANGE_LILYCOVE_CITY",
-                "species": "BINACLE"
+                "species": "KILOWATTREL"
               },
               {
                 "range": "RANGE_LILYCOVE_CITY",
@@ -269,15 +269,15 @@
               },
               {
                 "range": "RANGE_MOSSDEEP_CITY",
-                "species": "ARROKUDA"
+                "species": "MANTYKE"
               },
               {
                 "range": "RANGE_MOSSDEEP_CITY",
-                "species": "ARROKUDA"
+                "species": "MANTYKE"
               },
               {
                 "range": "RANGE_MOSSDEEP_CITY",
-                "species": "ARROKUDA"
+                "species": "KILOWATTREL"
               }
             ]
           },
@@ -289,7 +289,7 @@
               },
               {
                 "range": "RANGE_MOSSDEEP_CITY",
-                "species": "ARROKUDA"
+                "species": "MANTYKE"
               },
               {
                 "range": "RANGE_MOSSDEEP_CITY",
@@ -297,7 +297,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "BARRASKEWDA"
+                "species": "MANTINE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -305,7 +305,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "BARRASKEWDA"
+                "species": "MANTINE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -2435,7 +2435,7 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_123",
-                "species": "BINACLE"
+                "species": "BIBAREL"
               },
               {
                 "range": "RANGE_ROUTE_123",
@@ -2492,11 +2492,11 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_124",
-                "species": "TENTACRUEL"
+                "species": "MANTYKE"
               },
               {
                 "range": "RANGE_ROUTE_124",
-                "species": "KILOWATTREL"
+                "species": "WAILMER"
               },
               {
                 "range": "RANGE_ROUTE_124",
@@ -2516,7 +2516,7 @@
               },
               {
                 "range": "RANGE_ROUTE_124",
-                "species": "TENTACOOL"
+                "species": "MANTYKE"
               },
               {
                 "range": "RANGE_ROUTE_124",
@@ -2524,7 +2524,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "MANTINE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -2532,7 +2532,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "MANTINE"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -2549,19 +2549,19 @@
             "mons": [
               {
                 "range": "RANGE_ROUTE_125",
-                "species": "TENTACRUEL"
+                "species": "SHELLDER"
               },
               {
                 "range": "RANGE_ROUTE_125",
-                "species": "KILOWATTREL"
+                "species": "ARROKUDA"
               },
               {
                 "range": "RANGE_ROUTE_125",
-                "species": "KILOWATTREL"
+                "species": "MANTYKE"
               },
               {
                 "range": "RANGE_ROUTE_125",
-                "species": "KILOWATTREL"
+                "species": "MANTYKE"
               }
             ]
           },
@@ -2573,27 +2573,27 @@
               },
               {
                 "range": "RANGE_ROUTE_125",
-                "species": "TENTACOOL"
+                "species": "ARROKUDA"
               },
               {
                 "range": "RANGE_ROUTE_125",
-                "species": "WAILMER"
+                "species": "SHELLDER"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "BARRASKEWDA"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WAILORD"
+                "species": "CLOYSTER"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
+                "species": "BARRASKEWDA"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WAILORD"
+                "species": "CLOYSTER"
               }
             ]
           }
@@ -5209,7 +5209,23 @@
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
-                "species": "SPHEAL"
+                "species": "SWINUB"
+              },
+              {
+                "range": "RANGE_SHOAL_CAVE",
+                "species": "DELIBIRD"
+              },
+              {
+                "range": "RANGE_SHOAL_CAVE",
+                "species": "DELIBIRD"
+              },
+              {
+                "range": "RANGE_SHOAL_CAVE",
+                "species": "SNEASEL"
+              },
+              {
+                "range": "RANGE_SHOAL_CAVE",
+                "species": "SNEASEL"
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
@@ -5221,23 +5237,7 @@
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
-                "species": "GOLBAT"
-              },
-              {
-                "range": "RANGE_SHOAL_CAVE",
                 "species": "SPHEAL"
-              },
-              {
-                "range": "RANGE_SHOAL_CAVE",
-                "species": "GOLBAT"
-              },
-              {
-                "range": "RANGE_SHOAL_CAVE",
-                "species": "SPHEAL"
-              },
-              {
-                "range": "RANGE_SHOAL_CAVE",
-                "species": "GOLBAT"
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
@@ -5258,7 +5258,23 @@
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
-                "species": "SPHEAL"
+                "species": "SWINUB"
+              },
+              {
+                "range": "RANGE_SHOAL_CAVE",
+                "species": "DELIBIRD"
+              },
+              {
+                "range": "RANGE_SHOAL_CAVE",
+                "species": "DELIBIRD"
+              },
+              {
+                "range": "RANGE_SHOAL_CAVE",
+                "species": "SNEASEL"
+              },
+              {
+                "range": "RANGE_SHOAL_CAVE",
+                "species": "SNEASEL"
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
@@ -5270,23 +5286,7 @@
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
-                "species": "GOLBAT"
-              },
-              {
-                "range": "RANGE_SHOAL_CAVE",
                 "species": "SPHEAL"
-              },
-              {
-                "range": "RANGE_SHOAL_CAVE",
-                "species": "GOLBAT"
-              },
-              {
-                "range": "RANGE_SHOAL_CAVE",
-                "species": "SPHEAL"
-              },
-              {
-                "range": "RANGE_SHOAL_CAVE",
-                "species": "GOLBAT"
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
@@ -5307,7 +5307,23 @@
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
-                "species": "SPHEAL"
+                "species": "SWINUB"
+              },
+              {
+                "range": "RANGE_SHOAL_CAVE",
+                "species": "DELIBIRD"
+              },
+              {
+                "range": "RANGE_SHOAL_CAVE",
+                "species": "DELIBIRD"
+              },
+              {
+                "range": "RANGE_SHOAL_CAVE",
+                "species": "SNEASEL"
+              },
+              {
+                "range": "RANGE_SHOAL_CAVE",
+                "species": "SNEASEL"
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
@@ -5319,23 +5335,7 @@
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
-                "species": "GOLBAT"
-              },
-              {
-                "range": "RANGE_SHOAL_CAVE",
                 "species": "SPHEAL"
-              },
-              {
-                "range": "RANGE_SHOAL_CAVE",
-                "species": "GOLBAT"
-              },
-              {
-                "range": "RANGE_SHOAL_CAVE",
-                "species": "SPHEAL"
-              },
-              {
-                "range": "RANGE_SHOAL_CAVE",
-                "species": "GOLBAT"
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
@@ -5348,19 +5348,19 @@
             "mons": [
               {
                 "range": "RANGE_SHOAL_CAVE",
-                "species": "WAILMER"
-              },
-              {
-                "range": "RANGE_SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
-                "species": "SPHEAL"
+                "species": "SHELLDER"
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
-                "species": "SPHEAL"
+                "species": "SHELLDER"
+              },
+              {
+                "range": "RANGE_SHOAL_CAVE",
+                "species": "SHELLDER"
               }
             ]
           },
@@ -5376,23 +5376,23 @@
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
-                "species": "WAILMER"
+                "species": "SHELLDER"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WAILORD"
+                "species": "SEALEO"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WAILORD"
+                "species": "CLOYSTER"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WAILORD"
+                "species": "SEALEO"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WAILORD"
+                "species": "CLOYSTER"
               }
             ]
           }
@@ -5409,7 +5409,23 @@
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
-                "species": "SPHEAL"
+                "species": "SWINUB"
+              },
+              {
+                "range": "RANGE_SHOAL_CAVE",
+                "species": "DELIBIRD"
+              },
+              {
+                "range": "RANGE_SHOAL_CAVE",
+                "species": "DELIBIRD"
+              },
+              {
+                "range": "RANGE_SHOAL_CAVE",
+                "species": "SNEASEL"
+              },
+              {
+                "range": "RANGE_SHOAL_CAVE",
+                "species": "SNEASEL"
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
@@ -5421,23 +5437,7 @@
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
-                "species": "GOLBAT"
-              },
-              {
-                "range": "RANGE_SHOAL_CAVE",
                 "species": "SPHEAL"
-              },
-              {
-                "range": "RANGE_SHOAL_CAVE",
-                "species": "GOLBAT"
-              },
-              {
-                "range": "RANGE_SHOAL_CAVE",
-                "species": "SPHEAL"
-              },
-              {
-                "range": "RANGE_SHOAL_CAVE",
-                "species": "GOLBAT"
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
@@ -5450,19 +5450,19 @@
             "mons": [
               {
                 "range": "RANGE_SHOAL_CAVE",
-                "species": "WAILMER"
-              },
-              {
-                "range": "RANGE_SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
-                "species": "SPHEAL"
+                "species": "SHELLDER"
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
-                "species": "SPHEAL"
+                "species": "SHELLDER"
+              },
+              {
+                "range": "RANGE_SHOAL_CAVE",
+                "species": "SHELLDER"
               }
             ]
           },
@@ -5478,23 +5478,23 @@
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
-                "species": "WAILMER"
+                "species": "SHELLDER"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WAILORD"
+                "species": "SEALEO"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WAILORD"
+                "species": "CLOYSTER"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WAILORD"
+                "species": "SEALEO"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "WAILORD"
+                "species": "CLOYSTER"
               }
             ]
           }
@@ -5511,23 +5511,23 @@
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
-                "species": "SPHEAL"
+                "species": "SNOM"
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
-                "species": "SNORUNT"
+                "species": "CETODDLE"
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
-                "species": "SPHEAL"
+                "species": "SNOVER"
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
-                "species": "SNORUNT"
+                "species": "CETODDLE"
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
-                "species": "SPHEAL"
+                "species": "SNOVER"
               },
               {
                 "range": "RANGE_SHOAL_CAVE",
@@ -5556,19 +5556,19 @@
             "mons": [
               {
                 "range": "RANGE_DIVE_INITIAL",
-                "species": "CLAMPERL"
+                "species": "BINACLE"
               },
               {
                 "range": "RANGE_DIVE_INITIAL",
-                "species": "CHINCHOU"
+                "species": "HORSEA"
               },
               {
                 "range": "RANGE_DIVE_INITIAL",
-                "species": "RELICANTH"
+                "species": "SHELLDER"
               },
               {
                 "range": "RANGE_DIVE_INITIAL",
-                "species": "RELICANTH"
+                "species": "SHELLDER"
               }
             ]
           }
@@ -5581,19 +5581,19 @@
             "mons": [
               {
                 "range": "RANGE_DIVE_INITIAL",
-                "species": "CLAMPERL"
+                "species": "BINACLE"
               },
               {
                 "range": "RANGE_DIVE_INITIAL",
-                "species": "CHINCHOU"
+                "species": "HORSEA"
               },
               {
                 "range": "RANGE_DIVE_INITIAL",
-                "species": "RELICANTH"
+                "species": "SHELLDER"
               },
               {
                 "range": "RANGE_DIVE_INITIAL",
-                "species": "RELICANTH"
+                "species": "SHELLDER"
               }
             ]
           }
@@ -6165,7 +6165,7 @@
               },
               {
                 "range": "RANGE_CAVE_OF_ORIGIN",
-                "species": "SABLEYE"
+                "species": "GLIMMET"
               },
               {
                 "range": "RANGE_CAVE_OF_ORIGIN",
@@ -6185,7 +6185,7 @@
               },
               {
                 "range": "RANGE_CAVE_OF_ORIGIN",
-                "species": "GOLBAT"
+                "species": "DITTO"
               },
               {
                 "range": "RANGE_CAVE_OF_ORIGIN",
@@ -6263,7 +6263,11 @@
               },
               {
                 "range": "RANGE_SKY_PILLAR",
-                "species": "SABLEYE"
+                "species": "GLIMMET"
+              },
+              {
+                "range": "RANGE_SKY_PILLAR",
+                "species": "DITTO"
               },
               {
                 "range": "RANGE_SKY_PILLAR",
@@ -6271,11 +6275,7 @@
               },
               {
                 "range": "RANGE_SKY_PILLAR",
-                "species": "CLAYDOL"
-              },
-              {
-                "range": "RANGE_SKY_PILLAR",
-                "species": "DUSCLOPS"
+                "species": "STONJOURNER"
               },
               {
                 "range": "RANGE_SKY_PILLAR",
@@ -6418,7 +6418,7 @@
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
-                "species": "GOLBAT"
+                "species": "GLIMMET"
               },
               {
                 "range": "RANGE_VICTORY_ROAD",
@@ -6663,19 +6663,19 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "LEDYBA"
+                "species": "SHUCKLE"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SPINARAK"
+                "species": "GEODUDE_ALOLA"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "LEDYBA"
+                "species": "SHUCKLE"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "SPINARAK"
+                "species": "GEODUDE_ALOLA"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6704,11 +6704,11 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "CORSOLA_GALAR"
+                "species": "WIGLETT"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "CORSOLA_GALAR"
+                "species": "WIGLETT"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6855,11 +6855,11 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "CORSOLA_GALAR"
+                "species": "WIGLETT"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "CORSOLA_GALAR"
+                "species": "WIGLETT"
               },
               {
                 "range": "RANGE_POSTGAME",
@@ -6957,11 +6957,11 @@
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "CORSOLA_GALAR"
+                "species": "WIGLETT"
               },
               {
                 "range": "RANGE_POSTGAME",
-                "species": "CORSOLA_GALAR"
+                "species": "WIGLETT"
               },
               {
                 "range": "RANGE_POSTGAME",

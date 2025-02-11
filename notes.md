@@ -158,6 +158,7 @@ upcoming
     - Any Pokémon that learns a biting move, should also learn a STAB version (for example, Eelektrik learning Crunch but not Thunder Fang)
     - Any Pokémon that learns a horn move (Horn Attack, Megahorn, Smart Strike, etc), can learn them all?
     - Any Poison type that learns Iron Tail should learn Poison Tail?
+    - Any Psychic/Steel type that learns Headbutt should learn Zen Headbutt/Iron Head?
 - Possible Move Updates:
     - Infestation: 20->35
     - Parabolic Charge: 65->75
@@ -249,6 +250,7 @@ upcoming
     - Change Kirlia and Dusclops to fit the type of move used?
 
 ### Other
+- Update White Smoke/Clear Body to prevent self-inflicted stat drops like Shell Smash?
 - Update palettes?:
     - Pokédex (and HGSS Pokédex)
     - look in graphics/ for more

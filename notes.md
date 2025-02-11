@@ -122,7 +122,7 @@ upcoming
 - Readjust wild/trainer levels so that parties aren't overpowered?
 - Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)
 - Update Elite Four palettes
-    - battle_terrain/stadium/palette3-7.pal to better match ypes
+    - battle_terrain/stadium/palette3-7.pal to better match types
 - Brendan/May rematches? (Route 103?)
 - Steven rematches? (Would be the same team but re-battleable)
     - Could make his flag a daily one?

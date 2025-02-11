@@ -19264,7 +19264,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "Erases trap moves and Leech\n"
             "Seed. Poisons adjacent foes."),
         .effect = EFFECT_RAPID_SPIN,
-        .power = 30,
+        .power = 50,
         .type = TYPE_POISON,
         .accuracy = 100,
         .pp = 15,

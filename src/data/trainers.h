@@ -4897,9 +4897,14 @@ MARINA_BATTLE(MUSEUM, 17),
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE, \
     .partySize = 2
 
-#define ISABEL_MON(Level, Species) \
-    POKE_FAN_MON(Level),           \
-    .species = SPECIES_##Species,  \
+#define ISABEL_MINUN(Level)   \
+    POKE_FAN_MON(Level),      \
+    .species = SPECIES_MINUN, \
+    .gender = TRAINER_MON_FEMALE
+
+#define ISABEL_PLUSLE(Level)   \
+    POKE_FAN_MON(Level),       \
+    .species = SPECIES_PLUSLE, \
     .gender = TRAINER_MON_FEMALE
 
 [DIFFICULTY_NORMAL][TRAINER_ISABEL_1] =
@@ -4907,10 +4912,10 @@ MARINA_BATTLE(MUSEUM, 17),
     ISABEL_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        ISABEL_MON(17, PLUSLE),
+        ISABEL_PLUSLE(17),
         },
         {
-        ISABEL_MON(17, MINUN),
+        ISABEL_MINUN(17),
         }
     },
 },
@@ -4920,11 +4925,11 @@ MARINA_BATTLE(MUSEUM, 17),
     ISABEL_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        ISABEL_MON(REMATCH_2_LEVEL_2, PLUSLE),
+        ISABEL_PLUSLE(REMATCH_2_LEVEL_2),
         IVS(2),
         },
         {
-        ISABEL_MON(REMATCH_2_LEVEL_2, MINUN),
+        ISABEL_MINUN(REMATCH_2_LEVEL_2),
         IVS(2),
         }
     },
@@ -4935,11 +4940,11 @@ MARINA_BATTLE(MUSEUM, 17),
     ISABEL_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        ISABEL_MON(REMATCH_3_LEVEL_2, PLUSLE),
+        ISABEL_PLUSLE(REMATCH_3_LEVEL_2),
         IVS(3),
         },
         {
-        ISABEL_MON(REMATCH_3_LEVEL_2, MINUN),
+        ISABEL_MINUN(REMATCH_3_LEVEL_2),
         IVS(3),
         }
     },
@@ -4950,11 +4955,11 @@ MARINA_BATTLE(MUSEUM, 17),
     ISABEL_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        ISABEL_MON(REMATCH_4_LEVEL_2, PLUSLE),
+        ISABEL_PLUSLE(REMATCH_4_LEVEL_2),
         IVS(4),
         },
         {
-        ISABEL_MON(REMATCH_4_LEVEL_2, MINUN),
+        ISABEL_MINUN(REMATCH_4_LEVEL_2),
         IVS(4),
         }
     },
@@ -4965,11 +4970,11 @@ MARINA_BATTLE(MUSEUM, 17),
     ISABEL_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        ISABEL_MON(REMATCH_5_LEVEL_2, PLUSLE),
+        ISABEL_PLUSLE(REMATCH_5_LEVEL_2),
         IVS(5),
         },
         {
-        ISABEL_MON(REMATCH_5_LEVEL_2, MINUN),
+        ISABEL_MINUN(REMATCH_5_LEVEL_2),
         IVS(5),
         }
     },

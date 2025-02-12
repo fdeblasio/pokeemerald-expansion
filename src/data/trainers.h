@@ -3093,7 +3093,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     {                           \
     .lvl = Level,               \
     .species = Level < 42 ? SPECIES_RHYHORN : (Level < (MAXIE_SPACE_CENTER_ACE_LEVEL - 1) ? SPECIES_RHYDON : SPECIES_RHYPERIOR), \
-    .ability = 2,               \
+    .ability = 1,               \
     IVS(18),                    \
     .gender = TRAINER_MON_MALE, \
     }
@@ -8158,16 +8158,37 @@ COURTNEY_BATTLE(METEOR_FALLS, 28, 3),
     BLACK_BELT_INFO,         \
     MINI_BOSS_AI_FLAGS
 
+#define NOB_MACHOP(Level)        \
+    {                            \
+    .lvl = Level,                \
+    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_MACHOP : (Level < REMATCH_3_LEVEL_6 ? SPECIES_MACHOKE : SPECIES_MACHAMP), \
+    .nature = NATURE_ADAMANT,    \
+    .ability = ABILITY_NO_GUARD, \
+    PERFECT_IVS,                 \
+    .gender = TRAINER_MON_MALE,  \
+    .heldItem = ITEM_BLACK_BELT  \
+    }
+
+#define NOB_BRELOOM(Level)          \
+    .lvl = Level,                   \
+    .species = SPECIES_BRELOOM,     \
+    .nature = NATURE_ADAMANT,       \
+    .ability = ABILITY_POISON_HEAL, \
+    .gender = TRAINER_MON_MALE
+
+#define NOB_HERACROSS(Level)      \
+    .lvl = Level,                 \
+    .species = SPECIES_HERACROSS, \
+    .nature = NATURE_ADAMANT,     \
+    .ability = ABILITY_GUTS,      \
+    .gender = TRAINER_MON_MALE
+
 [DIFFICULTY_NORMAL][TRAINER_NOB_1] =
 {
     NOB_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 27,
-        .species = SPECIES_MACHOP,
-        IVS(12),
-        }
+        NOB_MACHOP(27),
     },
 },
 
@@ -8176,11 +8197,7 @@ COURTNEY_BATTLE(METEOR_FALLS, 28, 3),
     NOB_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
-        {
-        .lvl = REMATCH_2_LEVEL_1,
-        .species = SPECIES_MACHOKE,
-        IVS(13),
-        }
+        NOB_MACHOP(REMATCH_2_LEVEL_1),
     },
 },
 
@@ -8190,15 +8207,10 @@ COURTNEY_BATTLE(METEOR_FALLS, 28, 3),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_3_LEVEL_2,
-        .species = SPECIES_BRELOOM,
+        NOB_BRELOOM(REMATCH_3_LEVEL_2),
         IVS(14),
         },
-        {
-        .lvl = REMATCH_3_LEVEL_1,
-        .species = SPECIES_MACHOKE,
-        IVS(14),
-        }
+        NOB_MACHOP(REMATCH_3_LEVEL_1),
     },
 },
 
@@ -8208,20 +8220,14 @@ COURTNEY_BATTLE(METEOR_FALLS, 28, 3),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_4_LEVEL_2,
-        .species = SPECIES_HERACROSS,
+        NOB_HERACROSS(REMATCH_4_LEVEL_2),
         IVS(15),
         },
         {
-        .lvl = REMATCH_4_LEVEL_2,
-        .species = SPECIES_BRELOOM,
+        NOB_BRELOOM(REMATCH_4_LEVEL_2),
         IVS(15),
         },
-        {
-        .lvl = REMATCH_4_LEVEL_1,
-        .species = SPECIES_MACHAMP,
-        IVS(15),
-        }
+        NOB_MACHOP(REMATCH_4_LEVEL_1),
     },
 },
 
@@ -8236,21 +8242,14 @@ COURTNEY_BATTLE(METEOR_FALLS, 28, 3),
         IVS(17),
         },
         {
-        .lvl = REMATCH_5_LEVEL_2,
-        .species = SPECIES_HERACROSS,
+        NOB_HERACROSS(REMATCH_5_LEVEL_2),
         IVS(17),
         },
         {
-        .lvl = REMATCH_5_LEVEL_2,
-        .species = SPECIES_BRELOOM,
+        NOB_BRELOOM(REMATCH_5_LEVEL_2),
         IVS(17),
         },
-        {
-        .lvl = REMATCH_5_MINI_BOSS,
-        .species = SPECIES_MACHAMP,
-        IVS(17),
-        .heldItem = ITEM_BLACK_BELT
-        }
+        NOB_MACHOP(REMATCH_5_MINI_BOSS),
     },
 },
 
@@ -8295,19 +8294,30 @@ COURTNEY_BATTLE(METEOR_FALLS, 28, 3),
     BATTLE_GIRL_INFO,          \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
+#define CYNDY_MEDITITE(Level)                                                   \
+    .lvl = Level,                                                               \
+    .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_MEDITITE : SPECIES_MEDICHAM, \
+    .nature = NATURE_ADAMANT,                                                   \
+    .gender = TRAINER_MON_FEMALE
+
+#define CYNDY_MAKUHITA(Level)                                                   \
+    .lvl = Level,                                                               \
+    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_MAKUHITA : SPECIES_HARIYAMA, \
+    .nature = NATURE_ADAMANT,                                                   \
+    .ability = ABILITY_GUTS,                                                    \
+    .gender = TRAINER_MON_FEMALE
+
 [DIFFICULTY_NORMAL][TRAINER_CYNDY_1] =
 {
     CYNDY_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 25,
-        .species = SPECIES_MAKUHITA,
+        CYNDY_MEDITITE(25),
         IVS(12),
         },
         {
-        .lvl = 25,
-        .species = SPECIES_MEDITITE,
+        CYNDY_MAKUHITA(25),
         IVS(12),
         }
     },
@@ -8319,13 +8329,11 @@ COURTNEY_BATTLE(METEOR_FALLS, 28, 3),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_2_LEVEL_2,
-        .species = SPECIES_HARIYAMA,
+        CYNDY_MEDITITE(REMATCH_2_LEVEL_2),
         IVS(13),
         },
         {
-        .lvl = REMATCH_2_LEVEL_2,
-        .species = SPECIES_MEDITITE,
+        CYNDY_MAKUHITA(REMATCH_2_LEVEL_2),
         IVS(13),
         }
     },
@@ -8337,13 +8345,11 @@ COURTNEY_BATTLE(METEOR_FALLS, 28, 3),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_3_LEVEL_2,
-        .species = SPECIES_HARIYAMA,
+        CYNDY_MEDITITE(REMATCH_3_LEVEL_2),
         IVS(14),
         },
         {
-        .lvl = REMATCH_3_LEVEL_2,
-        .species = SPECIES_MEDITITE,
+        CYNDY_MAKUHITA(REMATCH_3_LEVEL_2),
         IVS(14),
         }
     },
@@ -8355,13 +8361,11 @@ COURTNEY_BATTLE(METEOR_FALLS, 28, 3),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_4_LEVEL_2,
-        .species = SPECIES_HARIYAMA,
+        CYNDY_MEDITITE(REMATCH_4_LEVEL_2),
         IVS(15),
         },
         {
-        .lvl = REMATCH_4_LEVEL_2,
-        .species = SPECIES_MEDICHAM,
+        CYNDY_MAKUHITA(REMATCH_4_LEVEL_2),
         IVS(15),
         }
     },
@@ -8373,13 +8377,11 @@ COURTNEY_BATTLE(METEOR_FALLS, 28, 3),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_5_LEVEL_2,
-        .species = SPECIES_HARIYAMA,
+        CYNDY_MEDITITE(REMATCH_5_LEVEL_2),
         IVS(17),
         },
         {
-        .lvl = REMATCH_5_LEVEL_2,
-        .species = SPECIES_MEDICHAM,
+        CYNDY_MAKUHITA(REMATCH_5_LEVEL_2),
         IVS(17),
         }
     },

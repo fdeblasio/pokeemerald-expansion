@@ -49,11 +49,11 @@
     .gender = Rival,                                                                                     \
     }
 
-#define RIVAL_WHISMUR(Location, Rival)                                      \
+#define RIVAL_NIDO(Location, Rival)                                         \
     {                                                                       \
     .lvl = Location##_STARTER_LEVEL - (Location < RIVAL_ROUTE_119 ? 2 : 1), \
-    .species = Location < RIVAL_ROUTE_119 ? SPECIES_WHISMUR : (Location < RIVAL_LILYCOVE ? SPECIES_LOUDRED : SPECIES_EXPLOUD), \
-    .ability = Rival == BRENDAN,                                            \
+    .species = (Rival == BRENDAN ? SPECIES_NIDORAN_M : SPECIES_NIDORAN_F) + (Location < RIVAL_ROUTE_119 ? 0 : (Location < RIVAL_LILYCOVE ? 1 : 2)), \
+    .ability = ABILITY_POISON_POINT,                                        \
     IVS(18),                                                                \
     .gender = Rival,                                                        \
     }
@@ -82,7 +82,7 @@
     Rival##_INFO,                                                              \
     .partySize = 2,                                                            \
     .party = (const struct TrainerMon[]) {                                     \
-        RIVAL_WHISMUR(RIVAL_RUSTBORO, Rival),                                  \
+        RIVAL_NIDO(RIVAL_RUSTBORO, Rival),                                     \
         RIVAL_STARTER(RIVAL_RUSTBORO, Type, Rival),                            \
     },                                                                         \
 },                                                                             \
@@ -93,7 +93,7 @@
     .partySize = 3,                                                            \
     .party = (const struct TrainerMon[]) {                                     \
         RIVAL_MON(RIVAL_ROUTE_110, Mon3, Ability3, Rival),                     \
-        RIVAL_WHISMUR(RIVAL_ROUTE_110, Rival),                                 \
+        RIVAL_NIDO(RIVAL_ROUTE_110, Rival),                                    \
         RIVAL_STARTER(RIVAL_ROUTE_110, Type, Rival),                           \
     },                                                                         \
 },                                                                             \
@@ -105,7 +105,7 @@
     .party = (const struct TrainerMon[]) {                                     \
         RIVAL_MON(RIVAL_ROUTE_119, Mon4, Ability4, Rival),                     \
         RIVAL_MON(RIVAL_ROUTE_119, Evo3, Ability3, Rival),                     \
-        RIVAL_WHISMUR(RIVAL_ROUTE_119, Rival),                                 \
+        RIVAL_NIDO(RIVAL_ROUTE_119, Rival),                                    \
         RIVAL_STARTER(RIVAL_ROUTE_119, Type, Rival),                           \
     },                                                                         \
 },                                                                             \
@@ -117,14 +117,14 @@
     .party = (const struct TrainerMon[]) {                                     \
         {                                                                      \
         .lvl = RIVAL_LILYCOVE_STARTER_LEVEL - 2,                               \
-        .species = Rival == BRENDAN ? SPECIES_NIDOKING : SPECIES_NIDOQUEEN,    \
-        .ability = ABILITY_POISON_POINT,                                       \
+        .species = Rival == BRENDAN ? SPECIES_SLIGGOO : SPECIES_PUPITAR,       \
+        .ability = 0,                                                          \
         IVS(18),                                                               \
         .gender = Rival,                                                       \
         },                                                                     \
         RIVAL_MON(RIVAL_LILYCOVE, Evo4, Ability4, Rival),                      \
         RIVAL_MON(RIVAL_LILYCOVE, Evo3, Ability3, Rival),                      \
-        RIVAL_WHISMUR(RIVAL_LILYCOVE, Rival),                                  \
+        RIVAL_NIDO(RIVAL_LILYCOVE, Rival),                                     \
         RIVAL_STARTER(RIVAL_LILYCOVE, Type, Rival),                            \
     },                                                                         \
 }

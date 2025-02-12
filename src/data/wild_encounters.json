@@ -1533,19 +1533,19 @@
               },
               {
                 "range": "RANGE_ROUTE_114",
-                "species": "NIDORAN_M"
+                "species": "JOLTIK"
               },
               {
                 "range": "RANGE_ROUTE_114",
-                "species": "NIDORAN_F"
+                "species": "JOLTIK"
               },
               {
                 "range": "RANGE_ROUTE_114",
-                "species": "NIDORAN_M"
+                "species": "SKORUPI"
               },
               {
                 "range": "RANGE_ROUTE_114",
-                "species": "NIDORAN_F"
+                "species": "SKORUPI"
               },
               {
                 "range": "RANGE_ROUTE_114",
@@ -1737,7 +1737,11 @@
               },
               {
                 "range": "RANGE_ROUTE_116",
-                "species": "EARLY_BIRD_2"
+                "species": "NIDORAN_M"
+              },
+              {
+                "range": "RANGE_ROUTE_116",
+                "species": "NIDORAN_F"
               },
               {
                 "range": "RANGE_ROUTE_116",
@@ -1745,15 +1749,15 @@
               },
               {
                 "range": "RANGE_ROUTE_116",
-                "species": "EARLY_BEAST_1"
-              },
-              {
-                "range": "RANGE_ROUTE_116",
                 "species": "EARLY_BIRD_2"
               },
               {
                 "range": "RANGE_ROUTE_116",
-                "species": "ABRA"
+                "species": "NIDORAN_M"
+              },
+              {
+                "range": "RANGE_ROUTE_116",
+                "species": "NIDORAN_F"
               },
               {
                 "range": "RANGE_ROUTE_116",
@@ -1761,11 +1765,7 @@
               },
               {
                 "range": "RANGE_ROUTE_116",
-                "species": "JOLTIK"
-              },
-              {
-                "range": "RANGE_ROUTE_116",
-                "species": "JOLTIK"
+                "species": "EARLY_BEAST_1"
               }
             ]
           }
@@ -2088,14 +2088,6 @@
               },
               {
                 "range": "RANGE_ROUTE_120",
-                "species": "SKORUPI"
-              },
-              {
-                "range": "RANGE_ROUTE_120",
-                "species": "AXEW"
-              },
-              {
-                "range": "RANGE_ROUTE_120",
                 "species": "AXEW"
               },
               {
@@ -2112,7 +2104,15 @@
               },
               {
                 "range": "RANGE_ROUTE_120",
-                "species": "SKORUPI"
+                "species": "AXEW"
+              },
+              {
+                "range": "RANGE_ROUTE_120",
+                "species": "GLOOM"
+              },
+              {
+                "range": "RANGE_ROUTE_120",
+                "species": "HERDIER"
               },
               {
                 "range": "RANGE_ROUTE_120",

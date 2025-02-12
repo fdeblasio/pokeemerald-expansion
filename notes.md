@@ -50,10 +50,12 @@ upcoming
 - Mauville:
     - Get all the weird Mauville men at once?
 - Verdanturf:
+    - Wally battle glitches if you white out
     - Try to get Verdanturf grass to start Grassy Terrain instead of messing with weather
         - MB_SHORT_GRASS but unsure of what else uses that
             - If it's fine, could use same technique as long grass
         - Maybe could use MAP_GROUP/MAP_NUM instead
+        - Start Verdanturf battle with Grassy Terrain with settings instead of making new weather? (Reverse engineer tests/starting_status/terrain.c)
 - Mt. Chimney:
     - Consolidate flags: FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA, FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY
 - Fallarbor:
@@ -114,6 +116,7 @@ upcoming
 
 ### Trainers
 - Should Roxanne's trainers be Schoolkids?
+- Update Tabitha (and maybe others?) macros to use Magma levels instead of Rematch levels?
 - Add ORAS team members (like a Picknicker getting a Gulpin)
 - Now that Gym Leader rematch party size is consistent, maybe a macro can be made
 - Get rid of Gym Leader rematches needing two Pokemon
@@ -122,6 +125,7 @@ upcoming
 - More mugshots for other bosses?
 - Readjust wild/trainer levels so that parties aren't overpowered?
 - Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)
+- Add macros for ORAS rematch mons even if they don't exist (like Wilton's Fraxure/Haxorus)
 - Update Elite Four palettes
     - battle_terrain/stadium/palette3-7.pal to better match types
 - Brendan/May rematches? (Route 103?)
@@ -142,6 +146,7 @@ upcoming
 - Gym leaders/Steven/Breeders can have Hidden Abilities
 
 ### Moves
+- Tailwind tutor?
 - Find way for Rotom to learn special moves by level up (for relearning). Currently have TMs, but not all moves (Hydro Pump/Leaf Storm) are TMs
     - This gets solved if the TM list is expanded to have Scarlet and Violet's
 - Find a way for newer gen TMs to be learned by Pokémon whose base forms don't learn the move (for example Eelektross or Toxtricity; or Capsakid not learning the Fire-type moves that Scovillain does)
@@ -226,6 +231,7 @@ upcoming
 - Followers with weather abilities (or Cloud Nine/Air Lock) will change the overworld weather when following?
     - Cloud Nine could do cloudy instead of clear
 - Give Underwater the same type-effectiveness as rain?
+- Update Underwater grass to be land encounters for more variation?
 
 ### Battle Frontier
 - Battle Tent Pokémon/EVs?

@@ -718,31 +718,34 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 20,
-        .species = SPECIES_MAGNEMITE,
-        .ability = ABILITY_MAGNET_PULL,
+        .species = SPECIES_PICHU,
+        .ability = ABILITY_STATIC,
         IVS(24),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_SONIC_BOOM, MOVE_MAGNET_BOMB, MOVE_THUNDER_WAVE},
-        },
-        {
-        .lvl = 22,
-        .species = SPECIES_MINUN,
-        IVS(24),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_SWIFT, MOVE_SKILL_SWAP, MOVE_NUZZLE},
+        .moves = {MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_SWEET_KISS, MOVE_NASTY_PLOT},
         .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 22,
-        .species = SPECIES_PLUSLE,
+        .species = SPECIES_WATTREL,
+        .ability = ABILITY_WIND_POWER,
+        IVS(24),
+        .moves = {MOVE_SHOCK_WAVE, MOVE_AIR_CUTTER, MOVE_SKILL_SWAP, MOVE_NUZZLE},
+        .gender = TRAINER_MON_MALE,
+        },
+        {
+        .lvl = 22,
+        .species = SPECIES_ELEKID,
+        .ability = ABILITY_STATIC,
         IVS(26),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_SWIFT, MOVE_SKILL_SWAP, MOVE_THUNDER_WAVE},
-        .gender = TRAINER_MON_FEMALE,
+        .moves = {MOVE_SHOCK_WAVE, MOVE_SWIFT, MOVE_THUNDER_WAVE, MOVE_CHARGE},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 24,
-        .species = SPECIES_ELECTRIKE,
+        .species = SPECIES_TADBULB,
         .ability = ABILITY_STATIC,
         IVS(30),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_QUICK_ATTACK, MOVE_BITE, MOVE_THUNDER_WAVE},
+        .moves = {MOVE_SHOCK_WAVE, MOVE_MUD_SHOT, MOVE_WATER_GUN, MOVE_CHARGE},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
         .ball = ITEM_POKE_BALL,
@@ -750,57 +753,56 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     },
 },
 
-#define WATTSON_MANECTRIC(rematch)                                                \
-    {                                                                             \
-    REMATCH_MON(MANECTRIC, ACE, rematch),                                         \
-    .ability = ABILITY_MINUS,                                                     \
-    .nature = NATURE_MODEST,                                                      \
-    EV_SPREAD_SPA_SPE_HP,                                                         \
-    .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_SIGNAL_BEAM, MOVE_SNARL}, \
-    .gender = TRAINER_MON_MALE,                                                   \
-    .heldItem = ITEM_SITRUS_BERRY,                                                \
-    .ball = ITEM_POKE_BALL,                                                       \
+#define WATTSON_BELLIBOLT(rematch)                                                        \
+    {                                                                                     \
+    REMATCH_MON(BELLIBOLT, ACE, rematch),                                                 \
+    .ability = ABILITY_ELECTROMORPHOSIS,                                                  \
+    .nature = NATURE_MODEST,                                                              \
+    EV_SPREAD_SPA_HP_SPD,                                                                 \
+    .moves = {MOVE_PARABOLIC_CHARGE, MOVE_SURF, MOVE_EARTH_POWER, MOVE_ELECTRIC_TERRAIN}, \
+    .gender = TRAINER_MON_MALE,                                                           \
+    .heldItem = ITEM_SITRUS_BERRY,                                                        \
+    .ball = ITEM_POKE_BALL,                                                               \
     }
 
-#define WATTSON_PLUSLE(rematch)                                                  \
-    {                                                                            \
-    REMATCH_MON(PLUSLE, TIER2, rematch),                                         \
-    .ability = ABILITY_PLUS,                                                     \
-    .nature = NATURE_TIMID,                                                      \
-    EV_SPREAD_SPA_SPE_SPD,                                                       \
-    .moves = {MOVE_THUNDERBOLT, MOVE_HELPING_HAND, MOVE_CHARM, MOVE_NASTY_PLOT}, \
-    .gender = TRAINER_MON_FEMALE,                                                \
-    .heldItem = ITEM_MAGNET,                                                     \
+#define WATTSON_ELECTIVIRE(rematch)                                                           \
+    {                                                                                         \
+    REMATCH_MON(ELECTIVIRE, TIER2, rematch),                                                  \
+    .nature = NATURE_ADAMANT,                                                                 \
+    EV_SPREAD_ATK_SPE_HP,                                                                     \
+    .moves = {MOVE_SUPERCELL_SLAM, MOVE_FIRE_PUNCH, MOVE_DRAIN_PUNCH, MOVE_ELECTRIC_TERRAIN}, \
+    .gender = TRAINER_MON_MALE,                                                               \
+    .heldItem = ITEM_MAGNET,                                                                  \
     }
 
-#define WATTSON_MINUN(rematch)                                                        \
-    {                                                                                 \
-    REMATCH_MON(MINUN, TIER2, rematch),                                               \
-    .ability = ABILITY_MINUS,                                                         \
-    .nature = NATURE_TIMID,                                                           \
-    EV_SPREAD_SPA_SPE_SPD,                                                            \
-    .moves = {MOVE_THUNDERBOLT, MOVE_THUNDER_WAVE, MOVE_FAKE_TEARS, MOVE_NASTY_PLOT}, \
-    .gender = TRAINER_MON_MALE,                                                       \
-    .heldItem = ITEM_MAGNET,                                                          \
+#define WATTSON_KILOWATTREL(rematch)                                               \
+    {                                                                              \
+    REMATCH_MON(KILOWATTREL, TIER2, rematch),                                      \
+    .ability = ABILITY_WIND_POWER,                                                 \
+    .nature = NATURE_TIMID,                                                        \
+    EV_SPREAD_SPA_SPE_HP,                                                          \
+    .moves = {MOVE_THUNDERBOLT, MOVE_AIR_SLASH, MOVE_WEATHER_BALL, MOVE_TAILWIND}, \
+    .gender = TRAINER_MON_MALE,                                                    \
+    .heldItem = ITEM_MAGNET,                                                       \
     }
 
-#define WATTSON_MAGNEZONE(rematch)                                                       \
-    {                                                                                    \
-    REMATCH_MON(MAGNEZONE, TIER3, rematch),                                              \
-    .ability = ABILITY_MAGNET_PULL,                                                      \
-    .nature = NATURE_MODEST,                                                             \
-    EV_SPREAD_SPA_DEF_SPD,                                                               \
-    .moves = {MOVE_THUNDERBOLT, MOVE_FLASH_CANNON, MOVE_BODY_PRESS, MOVE_MAGNETIC_FLUX}, \
+#define WATTSON_RAICHU(rematch)                                                 \
+    {                                                                           \
+    REMATCH_MON(RAICHU, TIER3, rematch),                                        \
+    .ability = ABILITY_STATIC,                                                  \
+    .nature = NATURE_TIMID,                                                     \
+    EV_SPREAD_SPA_SPE_HP,                                                       \
+    .moves = {MOVE_THUNDERBOLT, MOVE_SURF, MOVE_THUNDER_WAVE, MOVE_NASTY_PLOT}, \
+    .gender = TRAINER_MON_MALE,                                                 \
     }
 
-#define WATTSON_LANTURN(rematch)                                                        \
-    {                                                                                   \
-    REMATCH_MON(LANTURN, TIER3, rematch),                                               \
-    .ability = ABILITY_VOLT_ABSORB,                                                     \
-    .nature = NATURE_MODEST,                                                            \
-    EV_SPREAD_SPA_HP_SPD,                                                               \
-    .moves = {MOVE_THUNDER, MOVE_HYDRO_PUMP, MOVE_ELECTRIC_TERRAIN, MOVE_RAIN_DANCE},   \
-    .gender = TRAINER_MON_MALE,                                                         \
+#define WATTSON_ROTOM(rematch)                                                     \
+    {                                                                              \
+    REMATCH_MON(ROTOM, TIER3, rematch),                                            \
+    .ability = ABILITY_LEVITATE,                                                   \
+    .nature = NATURE_MODEST,                                                       \
+    EV_SPREAD_SPA_SPE_HP,                                                          \
+    .moves = {MOVE_PARABOLIC_CHARGE, MOVE_SHADOW_BALL, MOVE_HEX, MOVE_NASTY_PLOT}, \
     }
 
 #define WATTSON_ELECTRODE(rematch)                                                  \
@@ -817,11 +819,11 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     WATTSON_INFO,
     LEADER_REMATCH(2),
     .party = (const struct TrainerMon[]) {
-        WATTSON_LANTURN(2),
-        WATTSON_MAGNEZONE(2),
-        WATTSON_MINUN(2),
-        WATTSON_PLUSLE(2),
-        WATTSON_MANECTRIC(2),
+        WATTSON_ROTOM(2),
+        WATTSON_RAICHU(2),
+        WATTSON_KILOWATTREL(2),
+        WATTSON_ELECTIVIRE(2),
+        WATTSON_BELLIBOLT(2),
     },
 },
 
@@ -830,11 +832,11 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     WATTSON_INFO,
     LEADER_REMATCH(3),
     .party = (const struct TrainerMon[]) {
-        WATTSON_LANTURN(3),
-        WATTSON_MAGNEZONE(3),
-        WATTSON_MINUN(3),
-        WATTSON_PLUSLE(3),
-        WATTSON_MANECTRIC(3),
+        WATTSON_ROTOM(3),
+        WATTSON_RAICHU(3),
+        WATTSON_KILOWATTREL(3),
+        WATTSON_ELECTIVIRE(3),
+        WATTSON_BELLIBOLT(3),
     },
 },
 
@@ -844,11 +846,11 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     LEADER_REMATCH(4),
     .party = (const struct TrainerMon[]) {
         WATTSON_ELECTRODE(4),
-        WATTSON_LANTURN(4),
-        WATTSON_MAGNEZONE(4),
-        WATTSON_MINUN(4),
-        WATTSON_PLUSLE(4),
-        WATTSON_MANECTRIC(4),
+        WATTSON_ROTOM(4),
+        WATTSON_RAICHU(4),
+        WATTSON_KILOWATTREL(4),
+        WATTSON_ELECTIVIRE(4),
+        WATTSON_BELLIBOLT(4),
     },
 },
 
@@ -858,11 +860,11 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     LEADER_REMATCH(5),
     .party = (const struct TrainerMon[]) {
         WATTSON_ELECTRODE(5),
-        WATTSON_LANTURN(5),
-        WATTSON_MAGNEZONE(5),
-        WATTSON_MINUN(5),
-        WATTSON_PLUSLE(5),
-        WATTSON_MANECTRIC(5),
+        WATTSON_ROTOM(5),
+        WATTSON_RAICHU(5),
+        WATTSON_KILOWATTREL(5),
+        WATTSON_ELECTIVIRE(5),
+        WATTSON_BELLIBOLT(5),
     },
 },
 
@@ -6018,8 +6020,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .trainerName = _("Vivian"),
     MAUVILLE_GYM_TRAINER_INFO(BEAUTY),
     .party = (const struct TrainerMon[]) {
-        MAUVILLE_GYM_MON(MINUN, SWIFT, NUZZLE, ENCORE),
-        MAUVILLE_GYM_MON(PLUSLE, SWIFT, NUZZLE, SKILL_SWAP)
+        MAUVILLE_GYM_MON(WATTREL, GUST, QUICK_ATTACK, GROWL),
+        MAUVILLE_GYM_MON(EMOLGA, GUST, QUICK_ATTACK, NUZZLE)
     },
 },
 
@@ -6028,7 +6030,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .trainerName = _("Kirk"),
     MAUVILLE_GYM_TRAINER_INFO(GUITARIST),
     .party = (const struct TrainerMon[]) {
-        MAUVILLE_GYM_MON(ELECTRIKE, QUICK_ATTACK, THUNDER_WAVE, LEER),
+        MAUVILLE_GYM_MON(ELEKID, SWIFT, THUNDER_WAVE, CHARGE),
         MAUVILLE_GYM_MON(VOLTORB, CHARGE, SCREECH, ROLLOUT)
     },
 },
@@ -6039,7 +6041,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     MAUVILLE_GYM_TRAINER_INFO(YOUNGSTER),
     .party = (const struct TrainerMon[]) {
         MAUVILLE_GYM_MON(PICHU, NASTY_PLOT, NUZZLE, SWEET_KISS),
-        MAUVILLE_GYM_MON(ELECTRIKE, QUICK_ATTACK, THUNDER_WAVE, HOWL)
+        MAUVILLE_GYM_MON(JOLTIK, STRUGGLE_BUG, THUNDER_WAVE, STRING_SHOT)
     },
 },
 
@@ -6048,8 +6050,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .trainerName = _("Angelo"),
     MAUVILLE_GYM_TRAINER_INFO(POKE_MANIAC),
     .party = (const struct TrainerMon[]) {
-        MAUVILLE_GYM_MON(CHINCHOU, BUBBLE_BEAM, THUNDER_WAVE, CONFUSE_RAY),
-        MAUVILLE_GYM_MON(MAGNEMITE, MAGNET_BOMB, THUNDER_WAVE, SUPERSONIC)
+        MAUVILLE_GYM_MON(MAGNEMITE, MAGNET_BOMB, THUNDER_WAVE, SUPERSONIC),
+        MAUVILLE_GYM_MON(ELEKID, SWIFT, THUNDER_WAVE, CHARGE)
     },
 },
 
@@ -6058,8 +6060,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .trainerName = _("Shawn"),
     MAUVILLE_GYM_TRAINER_INFO(GUITARIST),
     .party = (const struct TrainerMon[]) {
-        MAUVILLE_GYM_MON(MAGNEMITE, MAGNET_BOMB, THUNDER_WAVE, SUPERSONIC),
-        MAUVILLE_GYM_MON(ELECTRIKE, THUNDER_WAVE, QUICK_ATTACK, LEER)
+        MAUVILLE_GYM_MON(VOLTORB, CHARGE, SCREECH, ROLLOUT),
+        MAUVILLE_GYM_MON(MAGNEMITE, MAGNET_BOMB, THUNDER_WAVE, SUPERSONIC)
     },
 },
 

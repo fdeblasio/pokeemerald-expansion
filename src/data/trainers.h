@@ -758,7 +758,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(MANECTRIC, ACE, rematch),                                         \
     .ability = ABILITY_MINUS,                                                     \
     .nature = NATURE_MODEST,                                                      \
-    EV_SPREAD_ATK_SPE_HP,                                                         \
+    EV_SPREAD_SPA_SPE_HP,                                                         \
     .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_SIGNAL_BEAM, MOVE_SNARL}, \
     .gender = TRAINER_MON_MALE,                                                   \
     .heldItem = ITEM_SITRUS_BERRY,                                                \
@@ -770,7 +770,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(PLUSLE, TIER2, rematch),                                         \
     .ability = ABILITY_PLUS,                                                     \
     .nature = NATURE_TIMID,                                                      \
-    EV_SPREAD_ATK_SPE_SPD,                                                       \
+    EV_SPREAD_SPA_SPE_SPD,                                                       \
     .moves = {MOVE_THUNDERBOLT, MOVE_HELPING_HAND, MOVE_CHARM, MOVE_NASTY_PLOT}, \
     .gender = TRAINER_MON_FEMALE,                                                \
     .heldItem = ITEM_MAGNET,                                                     \
@@ -781,7 +781,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     REMATCH_MON(MINUN, TIER2, rematch),                                               \
     .ability = ABILITY_MINUS,                                                         \
     .nature = NATURE_TIMID,                                                           \
-    EV_SPREAD_ATK_SPE_SPD,                                                            \
+    EV_SPREAD_SPA_SPE_SPD,                                                            \
     .moves = {MOVE_THUNDERBOLT, MOVE_THUNDER_WAVE, MOVE_FAKE_TEARS, MOVE_NASTY_PLOT}, \
     .gender = TRAINER_MON_MALE,                                                       \
     .heldItem = ITEM_MAGNET,                                                          \

@@ -1733,7 +1733,7 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
     - Learns Dual Wingbeat by level up
 
 - Houndour/Houndoom:
-    - Learn Snarl by level up
+    - Learn Snarl and Dark Pulse by level up
 
 - Phanpy/Donphan:
     - Learn Mud Shot by level up
@@ -2355,7 +2355,7 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
     - Learn Cut, Headbutt, and Body Slam by level up
 
 - Lillipup/Herdier/Stoutland:
-    - Learn Covet and Body Slam by level up
+    - Learn Howl, Covet, and Body Slam by level up
 
 - Purrloin:
     - HP: 41->45

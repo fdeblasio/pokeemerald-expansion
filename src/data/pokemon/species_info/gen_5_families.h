@@ -3220,10 +3220,10 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 
     [SPECIES_SEISMITOAD] =
     {
-        .baseHP        = 105,
+        .baseHP        = 110,
         .baseAttack    = P_UPDATED_STATS >= GEN_6 ? 95 : 85,
         .baseDefense   = 75,
-        .baseSpeed     = 74,
+        .baseSpeed     = 75,
         .baseSpAttack  = 85,
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_WATER, TYPE_GROUND),

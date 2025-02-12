@@ -1745,8 +1745,16 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Skorupi/Drapion:
     - Learn Poison Tail by level up
 
-- Croagunk/Toxicroak:
-    - Learn Rock Smash, Brick Break, and Drain Punch by level up
+- Croagunk:
+    - Learns Rock Smash, Brick Break, and Drain Punch by level up
+
+- Toxicroak:
+    - HP: 83->85
+    - Atk: 106->110
+    - Def: 65->70
+    - SpA: 86->90
+    - SpD: 65->75
+    - Learns Rock Smash, Brick Break, and Drain Punch by level up
 
 - Snover/Abomasnow:
     - Learn Seed Bomb and Icicle Crash by level up
@@ -1799,6 +1807,8 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Bulldoze, Earth Power, and Surf by level up
 
 - Seismitoad:
+    - HP: 105->110
+    - Spe: 74->75
     - Learns Mud Bomb, Bulldoze, Stomping Tantrum, Earth Power, Liquidation, Earthquake, and Surf by level up
     - Learns Waterfall by TM
 

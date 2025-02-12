@@ -3163,9 +3163,10 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
 
 - Bellibolt:
     - HP: 109->110
+    - Atk: 64->65
     - Def: 91->95
     - SpA: 103->105
-    - SpD: 83->85
+    - SpD: 83->95
     - Hidden Ability: Damp->Volt Absorb
     - Learns Shock Wave and Parabolic Charge by level up
     - Learns Earth Power and Surf by TM

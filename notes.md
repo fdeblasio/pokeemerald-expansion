@@ -47,7 +47,6 @@ upcoming
     - Get Exp. Share from Steven instead of from Mr. Stone after
         - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game
 - Mauville:
-    - MAUVILLE_TRAINER for IVS(12) and SHOCK_WAVE? Or no custom moves for those trainers. Or make other gym trainers use the TM
     - Get all the weird Mauville men at once?
 - Verdanturf:
     - Try to get Verdanturf grass to start Grassy Terrain instead of messing with weather

@@ -1726,7 +1726,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Dual Wingbeat by level up
 
 - Houndour/Houndoom:
-    - Learn Snarl by level up
+    - Learn Snarl and Dark Pulse by level up
 
 - Phanpy/Donphan:
     - Learn Mud Shot by level up
@@ -2348,7 +2348,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learn Cut, Headbutt, and Body Slam by level up
 
 - Lillipup/Herdier/Stoutland:
-    - Learn Covet and Body Slam by level up
+    - Learn Howl, Covet, and Body Slam by level up
 
 - Purrloin:
     - HP: 41->45

@@ -3984,7 +3984,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         },
         {
         RICH_BOY_MON(8),
-        .species = SPECIES_POOCHYENA,
+        .species = SPECIES_EARLY_BEAST_2,
         }
     },
 },
@@ -4002,7 +4002,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         },
         {
         RICH_MON(8),
-        .species = SPECIES_ZIGZAGOON,
+        .species = SPECIES_EARLY_BEAST_1,
         }
     },
 },

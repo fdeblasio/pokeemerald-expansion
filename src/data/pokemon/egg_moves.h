@@ -7031,7 +7031,6 @@ static const u16 sLillipupEggMoveLearnset[] = {
     MOVE_CHARM,
     MOVE_CONFIDE,
     MOVE_FIRE_FANG,
-    MOVE_HOWL,
     MOVE_ICE_FANG,
     MOVE_LICK,
     MOVE_MUD_SLAP,

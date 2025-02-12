@@ -2473,11 +2473,11 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     [SPECIES_BELLIBOLT] =
     {
         .baseHP        = 110,
-        .baseAttack    = 64,
+        .baseAttack    = 65,
         .baseDefense   = 95,
         .baseSpeed     = 45,
         .baseSpAttack  = 105,
-        .baseSpDefense = 85,
+        .baseSpDefense = 95,
         .types = MON_TYPES(TYPE_ELECTRIC),
         .catchRate = 50,
         .expYield = 173,

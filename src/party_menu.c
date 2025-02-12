@@ -1691,8 +1691,7 @@ static bool8 IsInvalidPartyMenuActionType(u8 partyMenuType)
          || partyMenuType == PARTY_ACTION_SOFTBOILED
          || partyMenuType == PARTY_ACTION_CHOOSE_AND_CLOSE
          || partyMenuType == PARTY_ACTION_MOVE_TUTOR
-         || partyMenuType == PARTY_ACTION_MINIGAME
-         || partyMenuType == PARTY_ACTION_REUSABLE_ITEM);
+         || partyMenuType == PARTY_ACTION_MINIGAME);
 }
 
 static u16 PartyMenuButtonHandler(s8 *slotPtr)
@@ -7162,7 +7161,7 @@ void OpenPartyMenuInBattle(u8 partyAction)
         partyMessage = PARTY_MSG_CHOOSE_MON_FOR_BOX;
     else
         partyMessage = PARTY_MSG_CHOOSE_MON;
-    
+
     InitPartyMenu(PARTY_MENU_TYPE_IN_BATTLE, GetPartyLayoutFromBattleType(), partyAction, FALSE, partyMessage, Task_HandleChooseMonInput, CB2_SetUpReshowBattleScreenAfterMenu);
     ReshowBattleScreenDummy();
     UpdatePartyToBattleOrder();

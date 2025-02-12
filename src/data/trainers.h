@@ -5562,10 +5562,10 @@ MARINA_BATTLE(MUSEUM, 17),
     TRIATHLETE_M_RUNNING_INFO, \
     MINI_BOSS_AI_FLAGS
 
-#define DYLAN_DODUO(Level, IV)                             \
-    TRIATHLETE_MON(Level, IV),                             \
-    .species = Level < 31 ? SPECIES_DODUO: SPECIES_DODRIO, \
-    .ability = ABILITY_TANGLED_FEET,                       \
+#define DYLAN_DODUO(Level, IV)                              \
+    TRIATHLETE_MON(Level, IV),                              \
+    .species = Level < 31 ? SPECIES_DODUO : SPECIES_DODRIO, \
+    .ability = ABILITY_TANGLED_FEET,                        \
     .gender = TRAINER_MON_MALE
 
 [DIFFICULTY_NORMAL][TRAINER_DYLAN_1] =
@@ -5637,10 +5637,10 @@ MARINA_BATTLE(MUSEUM, 17),
     TRIATHLETE_F_RUNNING_INFO, \
     MINI_BOSS_AI_FLAGS
 
-#define MARIA_DODUO(Level, IV)                             \
-    TRIATHLETE_MON(Level, IV),                             \
-    .species = Level < 31 ? SPECIES_DODUO: SPECIES_DODRIO, \
-    .ability = ABILITY_EARLY_BIRD,                         \
+#define MARIA_DODUO(Level, IV)                              \
+    TRIATHLETE_MON(Level, IV),                              \
+    .species = Level < 31 ? SPECIES_DODUO : SPECIES_DODRIO, \
+    .ability = ABILITY_EARLY_BIRD,                          \
     .gender = TRAINER_MON_FEMALE
 
 [DIFFICULTY_NORMAL][TRAINER_MARIA_1] =

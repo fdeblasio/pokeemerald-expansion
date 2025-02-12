@@ -6010,111 +6010,67 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 },
 
 //Mauville Gym
+#define MAUVILLE_GYM_TRAINER_INFO(Class) \
+    Class##_INFO,                        \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,   \
+    .partySize = 2                       \
+
+
+#define MAUVILLE_GYM_MON(Species, Move2, Move3, Move4)                    \
+    {                                                                     \
+    .lvl = 21,                                                            \
+    .species = SPECIES_##Species,                                         \
+    IVS(12),                                                              \
+    .moves = {MOVE_SHOCK_WAVE, MOVE_##Move2, MOVE_##Move3, MOVE_##Move4}, \
+    }
+
 [DIFFICULTY_NORMAL][TRAINER_VIVIAN] =
 {
     .trainerName = _("Vivian"),
-    BEAUTY_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
+    MAUVILLE_GYM_TRAINER_INFO(BEAUTY),
     .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 21,
-        .species = SPECIES_MINUN,
-        IVS(12),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_SWIFT, MOVE_NUZZLE, MOVE_ENCORE}
-        },
-        {
-        .lvl = 21,
-        .species = SPECIES_PLUSLE,
-        IVS(12),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_SWIFT, MOVE_NUZZLE, MOVE_SKILL_SWAP}
-        }
+        MAUVILLE_GYM_MON(MINUN, SWIFT, NUZZLE, ENCORE),
+        MAUVILLE_GYM_MON(PLUSLE, SWIFT, NUZZLE, SKILL_SWAP)
     },
 },
 
 [DIFFICULTY_NORMAL][TRAINER_KIRK] =
 {
     .trainerName = _("Kirk"),
-    GUITARIST_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
+    MAUVILLE_GYM_TRAINER_INFO(GUITARIST),
     .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 21,
-        .species = SPECIES_ELECTRIKE,
-        IVS(12),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_QUICK_ATTACK, MOVE_LEER}
-        },
-        {
-        .lvl = 21,
-        .species = SPECIES_VOLTORB,
-        IVS(12),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_CHARGE, MOVE_SCREECH, MOVE_ROLLOUT}
-        }
+        MAUVILLE_GYM_MON(ELECTRIKE, QUICK_ATTACK, THUNDER_WAVE, LEER),
+        MAUVILLE_GYM_MON(VOLTORB, CHARGE, SCREECH, ROLLOUT)
     },
 },
 
 [DIFFICULTY_NORMAL][TRAINER_BEN] =
 {
     .trainerName = _("Ben"),
-    YOUNGSTER_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
+    MAUVILLE_GYM_TRAINER_INFO(YOUNGSTER),
     .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 21,
-        .species = SPECIES_PICHU,
-        IVS(18),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_NASTY_PLOT, MOVE_NUZZLE, MOVE_SWEET_KISS}
-        },
-        {
-        .lvl = 21,
-        .species = SPECIES_ELECTRIKE,
-        IVS(18),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_QUICK_ATTACK, MOVE_THUNDER_WAVE, MOVE_HOWL}
-        }
+        MAUVILLE_GYM_MON(PICHU, NASTY_PLOT, NUZZLE, SWEET_KISS),
+        MAUVILLE_GYM_MON(ELECTRIKE, QUICK_ATTACK, THUNDER_WAVE, HOWL)
     },
 },
 
 [DIFFICULTY_NORMAL][TRAINER_ANGELO] =
 {
     .trainerName = _("Angelo"),
-    POKE_MANIAC_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 2,
+    MAUVILLE_GYM_TRAINER_INFO(POKE_MANIAC),
     .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 21,
-        .species = SPECIES_CHINCHOU,
-        IVS(12),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_BUBBLE_BEAM, MOVE_THUNDER_WAVE, MOVE_CONFUSE_RAY}
-        },
-        {
-        .lvl = 21,
-        .species = SPECIES_MAGNEMITE,
-        IVS(12),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_MAGNET_BOMB, MOVE_THUNDER_WAVE, MOVE_SUPERSONIC}
-        }
+        MAUVILLE_GYM_MON(CHINCHOU, BUBBLE_BEAM, THUNDER_WAVE, CONFUSE_RAY),
+        MAUVILLE_GYM_MON(MAGNEMITE, MAGNET_BOMB, THUNDER_WAVE, SUPERSONIC)
     },
 },
 
 [DIFFICULTY_NORMAL][TRAINER_SHAWN] =
 {
     .trainerName = _("Shawn"),
-    GUITARIST_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
+    MAUVILLE_GYM_TRAINER_INFO(GUITARIST),
     .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 21,
-        .species = SPECIES_MAGNEMITE,
-        IVS(12),
-        },
-        {
-        .lvl = 21,
-        .species = SPECIES_ELECTRIKE,
-        IVS(12),
-        }
+        MAUVILLE_GYM_MON(MAGNEMITE, MAGNET_BOMB, THUNDER_WAVE, SUPERSONIC),
+        MAUVILLE_GYM_MON(ELECTRIKE, THUNDER_WAVE, QUICK_ATTACK, LEER)
     },
 },
 

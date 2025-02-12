@@ -1054,6 +1054,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Nidoran F:
     - Learns Poison Tail, Venoshock, and Poison Jab by level up
+    - Learns Double Kick at level 12 instead of level 25 to help against Roxanne
 
 - Nidorina:
     - Learns Poison Tail, Venoshock, and Poison Jab by level up
@@ -1067,6 +1068,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Nidoran M:
     - Def: 40->42
     - Learns Poison Tail, Venoshock, and Poison Fang by level up
+    - Learns Double Kick at level 12 instead of level 25 to help against Roxanne
 
 - Nidorino:
     - Learns Poison Tail, Venoshock, and Poison Fang by level up

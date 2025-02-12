@@ -404,18 +404,18 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 11,
-        .species = SPECIES_LILEEP,
+        .species = SPECIES_TYRUNT,
         IVS(12),
-        .moves = {MOVE_ROCK_TOMB, MOVE_ASTONISH, MOVE_CONSTRICT, MOVE_ACID},
+        .moves = {MOVE_ROCK_TOMB, MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_ROAR},
         .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 11,
-        .species = SPECIES_ANORITH,
-        .ability = ABILITY_SWIFT_SWIM,
+        .species = SPECIES_TIRTOUGA,
+        .ability = ABILITY_STURDY,
         IVS(12),
-        .moves = {MOVE_ROCK_TOMB, MOVE_SCRATCH, MOVE_HARDEN, MOVE_WATER_GUN},
-        .gender = TRAINER_MON_MALE,
+        .moves = {MOVE_ROCK_TOMB, MOVE_WATER_GUN, MOVE_WITHDRAW, MOVE_BIDE},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 13,
@@ -441,56 +441,56 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     .ball = ITEM_POKE_BALL,                                                             \
     }
 
-#define ROXANNE_ARMALDO(rematch)                                                    \
+#define ROXANNE_CARRACOSTA(rematch)                                            \
+    {                                                                          \
+    REMATCH_MON(CARRACOSTA, TIER2, rematch),                                   \
+    .ability = ABILITY_SOLID_ROCK,                                             \
+    .nature = NATURE_IMPISH,                                                   \
+    EV_SPREAD_ATK_DEF_HP,                                                      \
+    .moves = {MOVE_ROCK_SLIDE, MOVE_LIQUIDATION, MOVE_BODY_PRESS, MOVE_CURSE}, \
+    .gender = TRAINER_MON_FEMALE,                                              \
+    .heldItem = ITEM_QUICK_CLAW,                                               \
+    }
+
+#define ROXANNE_TYRANTRUM(rematch)                                                       \
+    {                                                                                    \
+    REMATCH_MON(TYRANTRUM, TIER2, rematch),                                              \
+    .ability = ABILITY_ROCK_HEAD,                                                        \
+    .nature = NATURE_ADAMANT,                                                            \
+    EV_SPREAD_ATK_DEF_HP,                                                                \
+    .moves = {MOVE_HEAD_SMASH, MOVE_DRAGON_CLAW, MOVE_PSYCHIC_FANGS, MOVE_DRAGON_DANCE}, \
+    .gender = TRAINER_MON_FEMALE,                                                        \
+    .heldItem = ITEM_ROCKY_HELMET,                                                       \
+    }
+
+#define ROXANNE_TYRANITAR(rematch)                                                    \
+    {                                                                                 \
+    REMATCH_MON(TYRANITAR, TIER3, rematch),                                           \
+    .ability = ABILITY_SAND_STREAM,                                                   \
+    .nature = NATURE_ADAMANT,                                                         \
+    EV_SPREAD_ATK_DEF_HP,                                                             \
+    .moves = {MOVE_ROCK_SLIDE, MOVE_CRUNCH, MOVE_HIGH_HORSEPOWER, MOVE_DRAGON_DANCE}, \
+    .gender = TRAINER_MON_FEMALE,                                                     \
+    }
+
+#define ROXANNE_GLIMMORA(rematch)                                                   \
     {                                                                               \
-    REMATCH_MON(ARMALDO, TIER2, rematch),                                           \
-    .ability = ABILITY_BATTLE_ARMOR,                                                \
-    .nature = NATURE_ADAMANT,                                                       \
-    EV_SPREAD_ATK_DEF_HP,                                                           \
-    .moves = {MOVE_ROCK_SLIDE, MOVE_X_SCISSOR, MOVE_CRUSH_CLAW, MOVE_SWORDS_DANCE}, \
-    .gender = TRAINER_MON_MALE,                                                     \
-    .heldItem = ITEM_QUICK_CLAW,                                                    \
+    REMATCH_MON(GLIMMORA, TIER3, rematch),                                          \
+    .ability = ABILITY_TOXIC_DEBRIS,                                                \
+    .nature = NATURE_MODEST,                                                        \
+    EV_SPREAD_SPA_SPE_HP,                                                           \
+    .moves = {MOVE_POWER_GEM, MOVE_VENOSHOCK, MOVE_MORTAL_SPIN, MOVE_STEALTH_ROCK}, \
+    .gender = TRAINER_MON_FEMALE,                                                   \
     }
 
-#define ROXANNE_CRADILY(rematch)                                                \
+#define ROXANNE_STONJOURNER(rematch)                                            \
     {                                                                           \
-    REMATCH_MON(CRADILY, TIER2, rematch),                                       \
-    .ability = ABILITY_STORM_DRAIN,                                             \
-    .nature = NATURE_CALM,                                                      \
-    EV_SPREAD_SPA_SPD_DEF,                                                      \
-    .moves = {MOVE_GIGA_DRAIN, MOVE_ANCIENT_POWER, MOVE_INGRAIN, MOVE_AMNESIA}, \
+    REMATCH_MON(STONJOURNER, TIER3, rematch),                                   \
+    .ability = ABILITY_POWER_SPOT,                                              \
+    .nature = NATURE_IMPISH,                                                    \
+    EV_SPREAD_ATK_DEF_HP,                                                       \
+    .moves = {MOVE_ROCK_SLIDE, MOVE_BODY_PRESS, MOVE_CURSE, MOVE_STEALTH_ROCK}, \
     .gender = TRAINER_MON_FEMALE,                                               \
-    .heldItem = ITEM_BIG_ROOT,                                                  \
-    }
-
-#define ROXANNE_RELICANTH(rematch)                                               \
-    {                                                                            \
-    REMATCH_MON(RELICANTH, TIER3, rematch),                                      \
-    .ability = ABILITY_ROCK_HEAD,                                                \
-    .nature = NATURE_IMPISH,                                                     \
-    EV_SPREAD_ATK_DEF_HP,                                                        \
-    .moves = {MOVE_HEAD_SMASH, MOVE_AQUA_TAIL, rematch < 5 ? MOVE_DOUBLE_EDGE : MOVE_BODY_PRESS, MOVE_IRON_DEFENSE}, \
-    .gender = TRAINER_MON_FEMALE,                                                \
-    }
-
-#define ROXANNE_AGGRON(rematch, move1, move2, move3)                        \
-    {                                                                       \
-    REMATCH_MON(AGGRON, TIER3, rematch),                                    \
-    .ability = ABILITY_ROCK_HEAD,                                           \
-    .nature = NATURE_IMPISH,                                                \
-    EV_SPREAD_ATK_DEF_HP,                                                   \
-    .moves = {MOVE_##move1, MOVE_##move2, MOVE_##move3, MOVE_STEALTH_ROCK}, \
-    .gender = TRAINER_MON_FEMALE,                                           \
-    }
-
-#define ROXANNE_CORSOLA(rematch)                                          \
-    {                                                                     \
-    REMATCH_MON(CORSOLA, TIER3, rematch),                                 \
-    .ability = ABILITY_REGENERATOR,                                       \
-    .nature = NATURE_CALM,                                                \
-    EV_SPREAD_SPA_SPD_HP,                                                 \
-    .moves = {MOVE_POWER_GEM, MOVE_SCALD, MOVE_LIFE_DEW, MOVE_SANDSTORM}, \
-    .gender = TRAINER_MON_FEMALE,                                         \
     }
 
 [DIFFICULTY_NORMAL][TRAINER_ROXANNE_2] =
@@ -498,10 +498,10 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     ROXANNE_INFO,
     LEADER_REMATCH(2),
     .party = (const struct TrainerMon[]) {
-        ROXANNE_AGGRON(2, IRON_HEAD, ROCK_SLIDE, SANDSTORM),
-        ROXANNE_RELICANTH(2),
-        ROXANNE_CRADILY(2),
-        ROXANNE_ARMALDO(2),
+        ROXANNE_GLIMMORA(2, IRON_HEAD, ROCK_SLIDE, SANDSTORM),
+        ROXANNE_TYRANITAR(2),
+        ROXANNE_TYRANTRUM(2),
+        ROXANNE_CARRACOSTA(2),
         ROXANNE_PROBOPASS(2),
     },
 },
@@ -511,10 +511,10 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     ROXANNE_INFO,
     LEADER_REMATCH(3),
     .party = (const struct TrainerMon[]) {
-        ROXANNE_AGGRON(3, IRON_HEAD, ROCK_SLIDE, SANDSTORM),
-        ROXANNE_RELICANTH(3),
-        ROXANNE_CRADILY(3),
-        ROXANNE_ARMALDO(3),
+        ROXANNE_GLIMMORA(3, IRON_HEAD, ROCK_SLIDE, SANDSTORM),
+        ROXANNE_TYRANITAR(3),
+        ROXANNE_TYRANTRUM(3),
+        ROXANNE_CARRACOSTA(3),
         ROXANNE_PROBOPASS(3),
     },
 },
@@ -524,11 +524,11 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     ROXANNE_INFO,
     LEADER_REMATCH(4),
     .party = (const struct TrainerMon[]) {
-        ROXANNE_CORSOLA(4),
-        ROXANNE_AGGRON(4, IRON_HEAD, ROCK_SLIDE, SANDSTORM),
-        ROXANNE_RELICANTH(4),
-        ROXANNE_CRADILY(4),
-        ROXANNE_ARMALDO(4),
+        ROXANNE_STONJOURNER(4),
+        ROXANNE_GLIMMORA(4),
+        ROXANNE_TYRANITAR(4),
+        ROXANNE_TYRANTRUM(4),
+        ROXANNE_CARRACOSTA(4),
         ROXANNE_PROBOPASS(4),
     },
 },
@@ -538,11 +538,11 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     ROXANNE_INFO,
     LEADER_REMATCH(5),
     .party = (const struct TrainerMon[]) {
-        ROXANNE_CORSOLA(5),
-        ROXANNE_AGGRON(5, HEAD_SMASH, BODY_PRESS, IRON_DEFENSE),
-        ROXANNE_RELICANTH(5),
-        ROXANNE_CRADILY(5),
-        ROXANNE_ARMALDO(5),
+        ROXANNE_STONJOURNER(5),
+        ROXANNE_GLIMMORA(5),
+        ROXANNE_TYRANITAR(5),
+        ROXANNE_TYRANTRUM(5),
+        ROXANNE_CARRACOSTA(5),
         ROXANNE_PROBOPASS(5),
     },
 },
@@ -621,34 +621,34 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     .heldItem = ITEM_BLACK_BELT,                                              \
     }
 
-#define BRAWLY_BRELOOM(rematch)                                                   \
-    {                                                                             \
-    REMATCH_MON(BRELOOM, TIER3, rematch),                                         \
-    .ability = ABILITY_TECHNICIAN,                                                \
-    .nature = NATURE_ADAMANT,                                                     \
-    EV_SPREAD_ATK_SPE_HP,                                                         \
-    .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_BULLET_SEED, MOVE_MACH_PUNCH}, \
-    .gender = TRAINER_MON_MALE,                                                   \
+#define BRAWLY_MIENSHAO(rematch)                                              \
+    {                                                                         \
+    REMATCH_MON(MIENSHAO, TIER3, rematch),                                    \
+    .ability = ABILITY_REGENERATOR,                                           \
+    .nature = NATURE_ADAMANT,                                                 \
+    EV_SPREAD_ATK_SPE_HP,                                                     \
+    .moves = {MOVE_BULK_UP, MOVE_HIGH_JUMP_KICK, MOVE_U_TURN, MOVE_FAKE_OUT}, \
+    .gender = TRAINER_MON_MALE,                                               \
     }
 
-#define BRAWLY_BLAZIKEN(rematch)                                                   \
-    {                                                                              \
-    REMATCH_MON(BLAZIKEN, TIER3, rematch),                                         \
-    .ability = ABILITY_BLAZE,                                                      \
-    .nature = NATURE_ADAMANT,                                                      \
-    EV_SPREAD_ATK_SPE_HP,                                                          \
-    .moves = {MOVE_BULK_UP, MOVE_SKY_UPPERCUT, MOVE_BLAZE_KICK, MOVE_MIRROR_MOVE}, \
-    .gender = TRAINER_MON_MALE,                                                    \
+#define BRAWLY_PANGORO(rematch)                                                     \
+    {                                                                               \
+    REMATCH_MON(PANGORO, TIER3, rematch),                                           \
+    .ability = ABILITY_IRON_FIST,                                                   \
+    .nature = NATURE_ADAMANT,                                                       \
+    EV_SPREAD_ATK_SPE_HP,                                                           \
+    .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_THROAT_CHOP, MOVE_BULLET_PUNCH}, \
+    .gender = TRAINER_MON_MALE,                                                     \
     }
 
-#define BRAWLY_GALLADE(rematch)                                                   \
-    {                                                                             \
-    REMATCH_MON(GALLADE, TIER3, rematch),                                         \
-    .ability = ABILITY_JUSTIFIED,                                                 \
-    .nature = NATURE_ADAMANT,                                                     \
-    EV_SPREAD_ATK_SPE_HP,                                                         \
-    .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_PSYCHO_CUT, MOVE_NIGHT_SLASH}, \
-    .gender = TRAINER_MON_MALE,                                                   \
+#define BRAWLY_HAWLUCHA(rematch)                                             \
+    {                                                                        \
+    REMATCH_MON(HAWLUCHA, TIER3, rematch),                                   \
+    .ability = ABILITY_LIMBER,                                               \
+    .nature = NATURE_JOLLY,                                                  \
+    EV_SPREAD_ATK_SPE_HP,                                                    \
+    .moves = {MOVE_BULK_UP, MOVE_FLYING_PRESS, MOVE_ACROBATICS, MOVE_LUNGE}, \
+    .gender = TRAINER_MON_MALE,                                              \
     }
 
 [DIFFICULTY_NORMAL][TRAINER_BRAWLY_2] =
@@ -656,8 +656,8 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     BRAWLY_INFO,
     LEADER_REMATCH(2),
     .party = (const struct TrainerMon[]) {
-        BRAWLY_BLAZIKEN(2),
-        BRAWLY_BRELOOM(2),
+        BRAWLY_PANGORO(2),
+        BRAWLY_MIENSHAO(2),
         BRAWLY_MACHAMP(2),
         BRAWLY_MEDICHAM(2),
         BRAWLY_HARIYAMA(2),
@@ -669,8 +669,8 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     BRAWLY_INFO,
     LEADER_REMATCH(3),
     .party = (const struct TrainerMon[]) {
-        BRAWLY_BLAZIKEN(3),
-        BRAWLY_BRELOOM(3),
+        BRAWLY_PANGORO(3),
+        BRAWLY_MIENSHAO(3),
         BRAWLY_MACHAMP(3),
         BRAWLY_MEDICHAM(3),
         BRAWLY_HARIYAMA(3),
@@ -682,9 +682,9 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     BRAWLY_INFO,
     LEADER_REMATCH(4),
     .party = (const struct TrainerMon[]) {
-        BRAWLY_GALLADE(4),
-        BRAWLY_BLAZIKEN(4),
-        BRAWLY_BRELOOM(4),
+        BRAWLY_HAWLUCHA(4),
+        BRAWLY_PANGORO(4),
+        BRAWLY_MIENSHAO(4),
         BRAWLY_MACHAMP(4),
         BRAWLY_MEDICHAM(4),
         BRAWLY_HARIYAMA(4),
@@ -696,9 +696,9 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     BRAWLY_INFO,
     LEADER_REMATCH(5),
     .party = (const struct TrainerMon[]) {
-        BRAWLY_GALLADE(5),
-        BRAWLY_BLAZIKEN(5),
-        BRAWLY_BRELOOM(5),
+        BRAWLY_HAWLUCHA(5),
+        BRAWLY_PANGORO(5),
+        BRAWLY_MIENSHAO(5),
         BRAWLY_MACHAMP(5),
         BRAWLY_MEDICHAM(5),
         BRAWLY_HARIYAMA(5),
@@ -1224,7 +1224,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
         },
         {
         .lvl = 41,
-        .species = SPECIES_PELIPPER,
+        .species = SPECIES_KILOWATTREL,
         .ability = ABILITY_DRIZZLE,
         IVS(25),
         .moves = {MOVE_AERIAL_ACE, MOVE_WATER_PULSE, MOVE_SUPERSONIC, MOVE_TAILWIND},
@@ -1274,9 +1274,9 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     .heldItem = ITEM_SHARP_BEAK,                                                \
     }
 
-#define WINONA_PELIPPER(rematch)                                           \
+#define WINONA_KILOWATTREL(rematch)                                           \
     {                                                                      \
-    REMATCH_MON(PELIPPER, TIER2, rematch),                                 \
+    REMATCH_MON(KILOWATTREL, TIER2, rematch),                                 \
     .ability = ABILITY_DRIZZLE,                                            \
     .nature = NATURE_MODEST,                                               \
     EV_SPREAD_SPA_SPE_DEF,                                                 \
@@ -1322,7 +1322,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     .party = (const struct TrainerMon[]) {
         WINONA_MASQUERAIN(2),
         WINONA_TROPIUS(2),
-        WINONA_PELIPPER(2),
+        WINONA_KILOWATTREL(2),
         WINONA_SWELLOW(2),
         WINONA_ALTARIA(2),
     },
@@ -1335,7 +1335,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     .party = (const struct TrainerMon[]) {
         WINONA_MASQUERAIN(3),
         WINONA_TROPIUS(3),
-        WINONA_PELIPPER(3),
+        WINONA_KILOWATTREL(3),
         WINONA_SWELLOW(3),
         WINONA_ALTARIA(3),
     },
@@ -1349,7 +1349,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
         WINONA_NINJASK(4),
         WINONA_MASQUERAIN(4),
         WINONA_TROPIUS(4),
-        WINONA_PELIPPER(4),
+        WINONA_KILOWATTREL(4),
         WINONA_SWELLOW(4),
         WINONA_ALTARIA(4),
     },
@@ -1363,7 +1363,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
         WINONA_NINJASK(5),
         WINONA_MASQUERAIN(5),
         WINONA_TROPIUS(5),
-        WINONA_PELIPPER(5),
+        WINONA_KILOWATTREL(5),
         WINONA_SWELLOW(5),
         WINONA_ALTARIA(5),
     },
@@ -2710,20 +2710,20 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define MAGMA_HIDEOUT_LEVEL 45
 #define SPACE_CENTER_GRUNT_LEVEL 47
 
-#define LANDON_BATTLE(Location, Level)                                                   \
-[DIFFICULTY_NORMAL][TRAINER_LANDON_##Location] =                                         \
-{                                                                                        \
-    .trainerName = _("Landon"),                                                          \
-    MAGMA_GRUNT_M_INFO,                                                                  \
-    .partySize = 1,                                                                      \
-    .party = (const struct TrainerMon[]) {                                               \
-        {                                                                                \
-        .lvl = Level,                                                                    \
-        .species = Level < SPACE_CENTER_GRUNT_LEVEL ? SPECIES_SLUGMA : SPECIES_MAGCARGO, \
-        .ability = ABILITY_MAGMA_ARMOR,                                                  \
-        .gender = TRAINER_MON_MALE,                                                      \
-        }                                                                                \
-    },                                                                                   \
+#define LANDON_BATTLE(Location, Level)                                                  \
+[DIFFICULTY_NORMAL][TRAINER_LANDON_##Location] =                                        \
+{                                                                                       \
+    .trainerName = _("Landon"),                                                         \
+    MAGMA_GRUNT_M_INFO,                                                                 \
+    .partySize = 1,                                                                     \
+    .party = (const struct TrainerMon[]) {                                              \
+        {                                                                               \
+        .lvl = Level,                                                                   \
+        .species = Level < SPACE_CENTER_GRUNT_LEVEL ? SPECIES_GLIGAR : SPECIES_GLISCOR, \
+        .ability = ABILITY_SAND_VEIL,                                                   \
+        .gender = TRAINER_MON_MALE,                                                     \
+        }                                                                               \
+    },                                                                                  \
 }
 
 #define GINNY_BATTLE(Location, Level)                                                        \
@@ -2791,20 +2791,19 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },                                                                                  \
 }
 
-#define WALKER_BATTLE(Location, Level)            \
-[DIFFICULTY_NORMAL][TRAINER_WALKER_##Location] =  \
-{                                                 \
-    .trainerName = _("Walker"),                   \
-    MAGMA_GRUNT_M_INFO,                           \
-    .partySize = 1,                               \
-    .party = (const struct TrainerMon[]) {        \
-        {                                         \
-        .lvl = Level,                             \
-        .species = SPECIES_TORKOAL,               \
-        .ability = ABILITY_DROUGHT,               \
-        .gender = TRAINER_MON_MALE,               \
-        }                                         \
-    },                                            \
+#define WALKER_BATTLE(Location, Level)                                                 \
+[DIFFICULTY_NORMAL][TRAINER_WALKER_##Location] =                                       \
+{                                                                                      \
+    .trainerName = _("Walker"),                                                        \
+    MAGMA_GRUNT_M_INFO,                                                                \
+    .partySize = 1,                                                                    \
+    .party = (const struct TrainerMon[]) {                                             \
+        {                                                                              \
+        .lvl = Level,                                                                  \
+        .species = Level < SPACE_CENTER_GRUNT_LEVEL ? SPECIES_GOLETT : SPECIES_GOLURK, \
+        .ability = ABILITY_IRON_FIST,                                                  \
+        }                                                                              \
+    },                                                                                 \
 }
 
 //Team Aqua
@@ -2833,12 +2832,12 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .gender = TRAINER_MON_MALE,                                      \
     }
 
-#define CASPIAN_CLAMPERL(Level)     \
-    {                               \
-    .lvl = Level,                   \
-    .species = SPECIES_CLAMPERL,    \
-    .ability = ABILITY_SHELL_ARMOR, \
-    .gender = TRAINER_MON_MALE,     \
+#define CASPIAN_SLOWPOKE(Level)   \
+    {                             \
+    .lvl = Level,                 \
+    .species = SPECIES_SLOWPOKE,  \
+    .ability = ABILITY_OWN_TEMPO, \
+    .gender = TRAINER_MON_MALE,   \
     }
 
 #define AQUA_HIDEOUT_LEVEL 45
@@ -2853,14 +2852,15 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {                                            \
         {                                                                             \
         .lvl = Level,                                                                 \
-        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_GOLDEEN : SPECIES_SEAKING, \
-        .ability = ABILITY_SWIFT_SWIM,                                                \
+        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_WAILMER : SPECIES_WAILORD, \
+        .ability = ABILITY_WATER_VEIL,                                                \
         .gender = TRAINER_MON_FEMALE,                                                 \
         },                                                                            \
         {                                                                             \
         .lvl = Level,                                                                 \
-        .species = SPECIES_MARINA_ACE + (Level < SEAFLOOR_CAVERN_LEVEL ? 0 : 1),      \
-        .ability = ABILITY_ILLUMINATE,                                                \
+        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_MANTYKE : SPECIES_MANTINE, \
+        .ability = ABILITY_SWIFT_SWIM,                                                \
+        .gender = TRAINER_MON_FEMALE,                                                 \
         }                                                                             \
     },                                                                                \
 }
@@ -2874,39 +2874,39 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {                                                 \
         {                                                                                  \
         .lvl = Level,                                                                      \
-        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_TENTACOOL : SPECIES_TENTACRUEL, \
-        .ability = ABILITY_CLEAR_BODY,                                                     \
+        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_SHELLDER : SPECIES_CLOYSTER,    \
+        .ability = ABILITY_SHELL_ARMOR,                                                    \
         .gender = TRAINER_MON_MALE,                                                        \
         },                                                                                 \
         {                                                                                  \
         .lvl = Level,                                                                      \
         .species = SPECIES_MALIK_ACE + (Level < SEAFLOOR_CAVERN_LEVEL ? 0 : 1),            \
-        .ability = ABILITY_SHELL_ARMOR,                                                    \
+        .ability = ABILITY_SWIFT_SWIM,                                                     \
         .gender = TRAINER_MON_MALE,                                                        \
         }                                                                                  \
     },                                                                                     \
 }
 
-#define BERYL_BATTLE(Location, Level)                                                 \
-[DIFFICULTY_NORMAL][TRAINER_BERYL_##Location] =                                       \
-{                                                                                     \
-    .trainerName = _("Beryl"),                                                        \
-    AQUA_GRUNT_M_INFO,                                                                \
-    .partySize = 2,                                                                   \
-    .party = (const struct TrainerMon[]) {                                            \
-        {                                                                             \
-        .lvl = Level,                                                                 \
-        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_PSYDUCK : SPECIES_GOLDUCK, \
-        .ability = ABILITY_DAMP,                                                      \
-        .gender = TRAINER_MON_MALE,                                                   \
-        },                                                                            \
-        {                                                                             \
-        .lvl = Level,                                                                 \
+#define BERYL_BATTLE(Location, Level)           \
+[DIFFICULTY_NORMAL][TRAINER_BERYL_##Location] = \
+{                                               \
+    .trainerName = _("Beryl"),                  \
+    AQUA_GRUNT_M_INFO,                          \
+    .partySize = 2,                             \
+    .party = (const struct TrainerMon[]) {      \
+        {                                       \
+        .lvl = Level,                           \
         .species = Level < AQUA_HIDEOUT_LEVEL ? SPECIES_HORSEA : (Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_SEADRA : SPECIES_KINGDRA), \
-        .ability = ABILITY_SWIFT_SWIM,                                                \
-        .gender = TRAINER_MON_MALE,                                                   \
-        }                                                                             \
-    },                                                                                \
+        .ability = ABILITY_SWIFT_SWIM,          \
+        .gender = TRAINER_MON_MALE,             \
+        },                                      \
+        {                                       \
+        .lvl = Level,                           \
+        .species = SPECIES_GYARADOS,            \
+        .ability = ABILITY_INTIMIDATE,          \
+        .gender = TRAINER_MON_MALE,             \
+        }                                       \
+    },                                          \
 }
 
 #define NERISSA_BATTLE(Location, Level)                                                \
@@ -2918,14 +2918,14 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {                                             \
         {                                                                              \
         .lvl = Level,                                                                  \
-        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_WAILMER : SPECIES_WAILORD,  \
-        .ability = ABILITY_WATER_VEIL,                                                 \
+        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_MARILL : SPECIES_AZUMARILL, \
+        .ability = ABILITY_HUGE_POWER,                                                 \
         .gender = TRAINER_MON_FEMALE,                                                  \
         },                                                                             \
         {                                                                              \
         .lvl = Level,                                                                  \
-        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_MARILL : SPECIES_AZUMARILL, \
-        .ability = ABILITY_HUGE_POWER,                                                 \
+        .species = SPECIES_MILOTIC,                                                    \
+        .ability = ABILITY_MARVEL_SCALE,                                               \
         .gender = TRAINER_MON_FEMALE,                                                  \
         }                                                                              \
     },                                                                                 \
@@ -3126,6 +3126,15 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ball = ITEM_POKE_BALL,                            \
     .nickname = COMPOUND_STRING("Finneas")
 
+#define ARCHIE_TYMPOLE(Level)                                     \
+    {                                                             \
+    .lvl = Level,                                                 \
+    .species = Level < 36 ? SPECIES_TYMPOLE : SPECIES_SEISMITOAD, \
+    .ability = ABILITY_SWIFT_SWIM,                                \
+    IVS(18),                                                      \
+    .gender = TRAINER_MON_MALE,                                   \
+    }
+
 #define ARCHIE_WAILMER(Level)                                  \
     {                                                          \
     .lvl = Level,                                              \
@@ -3133,15 +3142,6 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ability = ABILITY_OBLIVIOUS,                              \
     IVS(18),                                                   \
     .gender = TRAINER_MON_MALE,                                \
-    }
-
-#define ARCHIE_TENTACOOL(Level)                                     \
-    {                                                               \
-    .lvl = Level,                                                   \
-    .species = Level < 30 ? SPECIES_TENTACOOL : SPECIES_TENTACRUEL, \
-    .ability = ABILITY_CLEAR_BODY,                                  \
-    IVS(18),                                                        \
-    .gender = TRAINER_MON_MALE,                                     \
     }
 
 
@@ -4253,7 +4253,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 9,
-        .species = SPECIES_GEODUDE,
+        .species = SPECIES_BINACLE,
         IVS(13),
         },
         {
@@ -4273,7 +4273,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 9,
-        .species = SPECIES_GEODUDE,
+        .species = SPECIES_ROLYCOLY,
         IVS(14),
         },
         {
@@ -4304,7 +4304,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 14,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_MANTYKE,
         IVS(1),
         }
     },
@@ -4321,10 +4321,10 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ability = ABILITY_OBLIVIOUS,                              \
     .gender = TRAINER_MON_MALE
 
-#define ELLIOT_TENTACOOL(Level)                                     \
+#define ELLIOT_ARROKUDA(Level)                                      \
     .lvl = Level,                                                   \
-    .species = Level < 30 ? SPECIES_TENTACOOL : SPECIES_TENTACRUEL, \
-    .ability = ABILITY_CLEAR_BODY,                                  \
+    .species = Level < 26 ? SPECIES_ARROKUDA : SPECIES_BARRASKEWDA, \
+    .ability = ABILITY_SWIFT_SWIM,                                  \
     .gender = TRAINER_MON_MALE
 
 #define ELLIOT_MAGIKARP(Level)                                   \
@@ -4337,10 +4337,10 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_CARVANHA : SPECIES_SHARPEDO, \
     .gender = TRAINER_MON_MALE
 
-#define ELLIOT_BARBOACH(Level)                                                  \
-    .lvl = Level,                                                               \
-    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_BARBOACH : SPECIES_WHISCASH, \
-    .ability = ABILITY_OBLIVIOUS,                                               \
+#define ELLIOT_MANTYKE(Level)                                                 \
+    .lvl = Level,                                                             \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_MANTYKE : SPECIES_MANTINE, \
+    .ability = ABILITY_SWIFT_SWIM,                                            \
     .gender = TRAINER_MON_MALE
 
 [DIFFICULTY_NORMAL][TRAINER_ELLIOT_1] =
@@ -4352,7 +4352,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         ELLIOT_MAGIKARP(13),
         },
         {
-        ELLIOT_TENTACOOL(13),
+        ELLIOT_ARROKUDA(13),
         },
         {
         ELLIOT_WAILMER(13),
@@ -4366,7 +4366,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        ELLIOT_BARBOACH(REMATCH_2_LEVEL_5),
+        ELLIOT_MANTYKE(REMATCH_2_LEVEL_5),
         IVS(2),
         },
         {
@@ -4378,7 +4378,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(2),
         },
         {
-        ELLIOT_TENTACOOL(REMATCH_2_LEVEL_5),
+        ELLIOT_ARROKUDA(REMATCH_2_LEVEL_5),
         IVS(2),
         },
         {
@@ -4394,7 +4394,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        ELLIOT_BARBOACH(REMATCH_3_LEVEL_5),
+        ELLIOT_MANTYKE(REMATCH_3_LEVEL_5),
         IVS(3),
         },
         {
@@ -4406,7 +4406,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(3),
         },
         {
-        ELLIOT_TENTACOOL(REMATCH_3_LEVEL_5),
+        ELLIOT_ARROKUDA(REMATCH_3_LEVEL_5),
         IVS(3),
         },
         {
@@ -4422,7 +4422,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        ELLIOT_BARBOACH(REMATCH_4_LEVEL_5),
+        ELLIOT_MANTYKE(REMATCH_4_LEVEL_5),
         IVS(4),
         },
         {
@@ -4434,7 +4434,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(4),
         },
         {
-        ELLIOT_TENTACOOL(REMATCH_4_LEVEL_5),
+        ELLIOT_ARROKUDA(REMATCH_4_LEVEL_5),
         IVS(4),
         },
         {
@@ -4450,7 +4450,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        ELLIOT_BARBOACH(REMATCH_5_LEVEL_5),
+        ELLIOT_MANTYKE(REMATCH_5_LEVEL_5),
         IVS(5),
         },
         {
@@ -4462,7 +4462,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(5),
         },
         {
-        ELLIOT_TENTACOOL(REMATCH_5_LEVEL_5),
+        ELLIOT_ARROKUDA(REMATCH_5_LEVEL_5),
         IVS(5),
         },
         {
@@ -4482,7 +4482,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 16,
-        .species = SPECIES_COMBUSKEN,
+        .species = SPECIES_MONFERNO,
         IVS(18),
         }
     },
@@ -4497,7 +4497,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 15,
-        .species = SPECIES_MEDITITE,
+        .species = SPECIES_TYROGUE,
         IVS(18),
         }
     },
@@ -4512,7 +4512,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 15,
-        .species = SPECIES_MACHOP,
+        .species = SPECIES_PANCHAM,
         IVS(15),
         }
     },
@@ -4542,7 +4542,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 15,
-        .species = SPECIES_MAKUHITA,
+        .species = SPECIES_CROAGUNK,
         IVS(24),
         }
     },
@@ -4557,7 +4557,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 15,
-        .species = SPECIES_MEDITITE,
+        .species = SPECIES_MIENFOO,
         IVS(15),
         }
     },
@@ -4573,7 +4573,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 16,
-        .species = SPECIES_WINGULL,
+        .species = SPECIES_WATTREL,
         IVS(1),
         },
         {
@@ -4593,7 +4593,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 17,
-        .species = SPECIES_BARBOACH,
+        .species = SPECIES_BINACLE,
         }
     },
 },
@@ -4621,11 +4621,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 16,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_SLOWPOKE,
         },
         {
         .lvl = 16,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_MANTYKE,
         }
     },
 },
@@ -4726,11 +4726,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     TUBER_M_INFO,              \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define RICKY_ZIGZAGOON(Level)                                               \
-    .lvl = Level,                                                            \
-    .species = Level < 20 ? SPECIES_ZIGZAGOON : SPECIES_LINOONE,             \
-    .ability = ABILITY_GLUTTONY,                                             \
-    .moves = {MOVE_SURF, MOVE_HEADBUTT, MOVE_PIN_MISSILE, MOVE_SAND_ATTACK}, \
+#define RICKY_BIBAREL(Level)                                            \
+    .lvl = Level,                                                       \
+    .species = SPECIES_BIBAREL,                                         \
+    .ability = ABILITY_SIMPLE,                                          \
+    .moves = {MOVE_SURF, MOVE_HYPER_FANG, MOVE_AQUA_JET, MOVE_ROLLOUT}, \
     .gender = TRAINER_MON_MALE
 
 #define RICKY_LOMBRE(Level, Move2, Move3)                                     \
@@ -4746,7 +4746,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        RICKY_ZIGZAGOON(18),
+        RICKY_BIBAREL(18),
         IVS(1),
         }
     },
@@ -4762,7 +4762,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(2),
         },
         {
-        RICKY_ZIGZAGOON(REMATCH_2_LEVEL_2),
+        RICKY_BIBAREL(REMATCH_2_LEVEL_2),
         IVS(2),
         }
     },
@@ -4778,7 +4778,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(3),
         },
         {
-        RICKY_ZIGZAGOON(REMATCH_3_LEVEL_2),
+        RICKY_BIBAREL(REMATCH_3_LEVEL_2),
         IVS(3),
         }
     },
@@ -4794,7 +4794,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(4),
         },
         {
-        RICKY_ZIGZAGOON(REMATCH_4_LEVEL_2),
+        RICKY_BIBAREL(REMATCH_4_LEVEL_2),
         IVS(4),
         }
     },
@@ -4810,7 +4810,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(5),
         },
         {
-        RICKY_ZIGZAGOON(REMATCH_5_LEVEL_2),
+        RICKY_BIBAREL(REMATCH_5_LEVEL_2),
         IVS(5),
         }
     },
@@ -4826,7 +4826,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 16,
-        .species = SPECIES_MARILL,
+        .species = SPECIES_TYMPOLE,
         },
         {
         .lvl = 16,
@@ -4844,7 +4844,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 17,
-        .species = SPECIES_GOLDEEN,
+        .species = SPECIES_SHELLOS_WEST,
         }
     },
 },
@@ -4858,7 +4858,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 15,
-        .species = SPECIES_WINGULL,
+        .species = SPECIES_WATTREL,
         },
         {
         .lvl = 15,
@@ -4866,7 +4866,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         },
         {
         .lvl = 15,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_SHELLDER,
         }
     },
 },
@@ -4880,8 +4880,8 @@ MARINA_BATTLE(MUSEUM, 17),
     ARCHIE_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
-        ARCHIE_TENTACOOL(17),
         ARCHIE_WAILMER(17),
+        ARCHIE_TYMPOLE(17),
         {
         FINNEAS(19),
         .moves = {MOVE_AQUA_JET, MOVE_BITE, MOVE_POISON_FANG, MOVE_FOCUS_ENERGY},
@@ -4988,12 +4988,12 @@ MARINA_BATTLE(MUSEUM, 17),
     .party = (const struct TrainerMon[]) {
         {
         POKE_FAN_MON(17),
-        .species = SPECIES_MINUN,
+        .species = SPECIES_AZURILL,
         .gender = TRAINER_MON_MALE,
         },
         {
         POKE_FAN_MON(17),
-        .species = SPECIES_PLUSLE,
+        .species = SPECIES_PICHU,
         .gender = TRAINER_MON_MALE,
         }
     },
@@ -5773,7 +5773,7 @@ ISAAC_BATTLE(5, REMATCH_5_LEVEL_3),
     .party = (const struct TrainerMon[]) {                                                     \
         {                                                                                      \
         POKEMON_BREEDER_MON(Level),                                                            \
-        .species = Level < 25 ? SPECIES_WINGULL : SPECIES_PELIPPER,                            \
+        .species = Level < 25 ? SPECIES_WATTREL : SPECIES_KILOWATTREL,                            \
         .ability = ABILITY_RAIN_DISH,                                                          \
         .moves = {MOVE_CHILLING_WATER, MOVE_TWISTER, MOVE_TAILWIND, MOVE_AQUA_RING},           \
         .gender = TRAINER_MON_FEMALE                                                           \
@@ -6656,7 +6656,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         },
         {
         .lvl = 21,
-        .species = SPECIES_WINGULL,
+        .species = SPECIES_WATTREL,
         IVS(1),
         }
     },
@@ -7266,9 +7266,9 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .ability = ABILITY_OBLIVIOUS,                             \
     .gender = TRAINER_MON_FEMALE
 
-#define BROOKE_WINGULL(Level)                                                  \
+#define BROOKE_WATTREL(Level)                                                  \
     .lvl = Level,                                                              \
-    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_WINGULL : SPECIES_PELIPPER, \
+    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_WATTREL : SPECIES_KILOWATTREL, \
     .ability = ABILITY_KEEN_EYE,                                               \
     .gender = TRAINER_MON_FEMALE
 
@@ -7278,7 +7278,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        BROOKE_WINGULL(24),
+        BROOKE_WATTREL(24),
         IVS(12),
         },
         {
@@ -7298,7 +7298,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        BROOKE_WINGULL(REMATCH_2_LEVEL_3),
+        BROOKE_WATTREL(REMATCH_2_LEVEL_3),
         IVS(13),
         },
         {
@@ -7318,7 +7318,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        BROOKE_WINGULL(REMATCH_3_LEVEL_3),
+        BROOKE_WATTREL(REMATCH_3_LEVEL_3),
         IVS(14),
         },
         {
@@ -7338,7 +7338,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        BROOKE_WINGULL(REMATCH_4_LEVEL_3),
+        BROOKE_WATTREL(REMATCH_4_LEVEL_3),
         IVS(15),
         },
         {
@@ -7358,7 +7358,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        BROOKE_WINGULL(REMATCH_5_LEVEL_3),
+        BROOKE_WATTREL(REMATCH_5_LEVEL_3),
         IVS(17),
         },
         {
@@ -7982,9 +7982,9 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     KINDLER_INFO,               \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define BERNIE_WINGULL(Level)                                                  \
+#define BERNIE_WATTREL(Level)                                                  \
     .lvl = Level,                                                              \
-    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_WINGULL : SPECIES_PELIPPER, \
+    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_WATTREL : SPECIES_KILOWATTREL, \
     .ability = ABILITY_KEEN_EYE,                                               \
     .gender = TRAINER_MON_MALE
 
@@ -8009,7 +8009,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         BERNIE_SLUGMA(24),
         },
         {
-        BERNIE_WINGULL(24),
+        BERNIE_WATTREL(24),
         }
     },
 },
@@ -8028,7 +8028,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         IVS(1),
         },
         {
-        BERNIE_WINGULL(REMATCH_2_LEVEL_3),
+        BERNIE_WATTREL(REMATCH_2_LEVEL_3),
         IVS(1),
         }
     },
@@ -8048,7 +8048,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         IVS(3),
         },
         {
-        BERNIE_WINGULL(REMATCH_3_LEVEL_3),
+        BERNIE_WATTREL(REMATCH_3_LEVEL_3),
         IVS(3),
         }
     },
@@ -8068,7 +8068,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         IVS(3),
         },
         {
-        BERNIE_WINGULL(REMATCH_4_LEVEL_3),
+        BERNIE_WATTREL(REMATCH_4_LEVEL_3),
         IVS(3),
         }
     },
@@ -8088,7 +8088,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         IVS(4),
         },
         {
-        BERNIE_WINGULL(REMATCH_5_LEVEL_3),
+        BERNIE_WATTREL(REMATCH_5_LEVEL_3),
         IVS(4),
         }
     },
@@ -9652,7 +9652,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 31,
-        .species = SPECIES_PELIPPER,
+        .species = SPECIES_KILOWATTREL,
         },
         {
         .lvl = 31,
@@ -9787,7 +9787,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
         },
         {
         .lvl = 31,
-        .species = SPECIES_PELIPPER,
+        .species = SPECIES_KILOWATTREL,
         IVS(6),
         }
     },
@@ -9856,7 +9856,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 31,
-        .species = SPECIES_WINGULL,
+        .species = SPECIES_WATTREL,
         },
         {
         .lvl = 31,
@@ -9983,7 +9983,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
         },
         {
         .lvl = 30,
-        .species = SPECIES_WINGULL,
+        .species = SPECIES_WATTREL,
         IVS(1),
         },
         {
@@ -10112,9 +10112,9 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .ability = ABILITY_GUTS,                                                  \
     .gender = TRAINER_MON_MALE
 
-#define CORY_PELIPPER(Level)     \
+#define CORY_KILOWATTREL(Level)     \
     .lvl = Level,                \
-    .species = SPECIES_PELIPPER, \
+    .species = SPECIES_KILOWATTREL, \
     .ability = ABILITY_KEEN_EYE, \
     .gender = TRAINER_MON_MALE
 
@@ -10124,7 +10124,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        CORY_PELIPPER(30),
+        CORY_KILOWATTREL(30),
         },
         {
         CORY_MACHOKE(30),
@@ -10141,7 +10141,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        CORY_PELIPPER(REMATCH_2_LEVEL_3),
+        CORY_KILOWATTREL(REMATCH_2_LEVEL_3),
         IVS(1),
         },
         {
@@ -10161,7 +10161,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        CORY_PELIPPER(REMATCH_3_LEVEL_3),
+        CORY_KILOWATTREL(REMATCH_3_LEVEL_3),
         IVS(3),
         },
         {
@@ -10181,7 +10181,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        CORY_PELIPPER(REMATCH_4_LEVEL_3),
+        CORY_KILOWATTREL(REMATCH_4_LEVEL_3),
         IVS(4),
         },
         {
@@ -10201,7 +10201,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        CORY_PELIPPER(REMATCH_5_LEVEL_3),
+        CORY_KILOWATTREL(REMATCH_5_LEVEL_3),
         IVS(5),
         },
         {
@@ -10572,7 +10572,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
         },
         {
         .lvl = 30,
-        .species = SPECIES_WINGULL,
+        .species = SPECIES_WATTREL,
         },
         {
         .lvl = 30,
@@ -10611,7 +10611,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 31,
-        .species = SPECIES_PELIPPER,
+        .species = SPECIES_KILOWATTREL,
         },
         {
         .lvl = 31,
@@ -10737,7 +10737,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 34,
-        .species = SPECIES_PELIPPER,
+        .species = SPECIES_KILOWATTREL,
         }
     },
 },
@@ -11221,7 +11221,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 33,
-        .species = SPECIES_WINGULL,
+        .species = SPECIES_WATTREL,
         },
         {
         .lvl = 33,
@@ -11242,7 +11242,7 @@ MARINA_BATTLE(WEATHER_INSTITUTE, WEATHER_INSTITUTE_AQUA_LEVEL),
     CASPIAN_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
-        CASPIAN_CLAMPERL(WEATHER_INSTITUTE_AQUA_LEVEL),
+        CASPIAN_SLOWPOKE(WEATHER_INSTITUTE_AQUA_LEVEL),
         CASPIAN_CARVANHA(WEATHER_INSTITUTE_AQUA_LEVEL, AQUA_JET, POISON_FANG, ICE_FANG),
     },
 },
@@ -11514,7 +11514,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
         },
         {
         .lvl = 39,
-        .species = SPECIES_PELIPPER,
+        .species = SPECIES_KILOWATTREL,
         IVS(18),
         }
     },
@@ -11545,7 +11545,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 40,
-        .species = SPECIES_PELIPPER,
+        .species = SPECIES_KILOWATTREL,
         .moves = {MOVE_FLY, MOVE_AIR_SLASH, MOVE_BRINE, MOVE_TAILWIND}
         },
         {
@@ -12877,7 +12877,7 @@ MARINA_BATTLE(MT_PYRE, 42),
         },
         {
         .lvl = 43,
-        .species = SPECIES_PELIPPER,
+        .species = SPECIES_KILOWATTREL,
         IVS(12),
         }
     },
@@ -13049,7 +13049,7 @@ MARINA_BATTLE(MT_PYRE, 42),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 44,
-        .species = SPECIES_PELIPPER,
+        .species = SPECIES_KILOWATTREL,
         },
         {
         .lvl = 44,
@@ -13241,7 +13241,7 @@ TABITHA_BATTLE(MAGMA_HIDEOUT, 47, 9),
 
 AQUA_HIDEOUT_GRUNT(1, M, LOTAD, MAGIKARP),
 AQUA_HIDEOUT_GRUNT(2, F, CORSOLA, LUVDISC),
-AQUA_HIDEOUT_GRUNT(3, M, WINGULL, CHINCHOU),
+AQUA_HIDEOUT_GRUNT(3, M, WATTREL, CHINCHOU),
 
 NERISSA_BATTLE(AQUA_HIDEOUT, AQUA_HIDEOUT_LEVEL),
 BERYL_BATTLE(AQUA_HIDEOUT, AQUA_HIDEOUT_LEVEL),
@@ -13251,7 +13251,7 @@ BERYL_BATTLE(AQUA_HIDEOUT, AQUA_HIDEOUT_LEVEL),
     CASPIAN_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
-        CASPIAN_CLAMPERL(AQUA_HIDEOUT_LEVEL),
+        CASPIAN_SLOWPOKE(AQUA_HIDEOUT_LEVEL),
         CASPIAN_CARVANHA(AQUA_HIDEOUT_LEVEL, LIQUIDATION, POISON_FANG, ICE_FANG),
     },
 },
@@ -13389,7 +13389,7 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
         },
         {
         .lvl = 45,
-        .species = SPECIES_PELIPPER,
+        .species = SPECIES_KILOWATTREL,
         }
     },
 },
@@ -13555,9 +13555,9 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .ability = ABILITY_WATER_VEIL,                             \
     .gender = TRAINER_MON_MALE
 
-#define ERNEST_PELIPPER(Level)   \
+#define ERNEST_KILOWATTREL(Level)   \
     .lvl = Level,                \
-    .species = SPECIES_PELIPPER, \
+    .species = SPECIES_KILOWATTREL, \
     .ability = ABILITY_KEEN_EYE, \
     .gender = TRAINER_MON_MALE
 
@@ -13573,7 +13573,7 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        ERNEST_PELIPPER(44),
+        ERNEST_KILOWATTREL(44),
         },
         {
         ERNEST_WAILMER(44),
@@ -13594,7 +13594,7 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
         IVS(2),
         },
         {
-        ERNEST_PELIPPER(44),
+        ERNEST_KILOWATTREL(44),
         IVS(2),
         },
         {
@@ -13618,7 +13618,7 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
         IVS(3),
         },
         {
-        ERNEST_PELIPPER(45),
+        ERNEST_KILOWATTREL(45),
         IVS(3),
         },
         {
@@ -13642,7 +13642,7 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
         IVS(4),
         },
         {
-        ERNEST_PELIPPER(REMATCH_4_LEVEL_4),
+        ERNEST_KILOWATTREL(REMATCH_4_LEVEL_4),
         IVS(4),
         },
         {
@@ -13666,7 +13666,7 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
         IVS(5),
         },
         {
-        ERNEST_PELIPPER(REMATCH_5_LEVEL_4),
+        ERNEST_KILOWATTREL(REMATCH_5_LEVEL_4),
         IVS(5),
         },
         {
@@ -13873,7 +13873,7 @@ MOSSDEEP_GYM_TRAINER(HANNAH,   "Hannah",   PSYCHIC_F,  GARDEVOIR),
         },
         {
         .lvl = 45,
-        .species = SPECIES_PELIPPER,
+        .species = SPECIES_KILOWATTREL,
         },
         {
         .lvl = 45,
@@ -14145,7 +14145,7 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     .party = (const struct TrainerMon[]) {
         {
         TRIATHLETE_MON(49, 0),
-        .species = SPECIES_PELIPPER,
+        .species = SPECIES_KILOWATTREL,
         },
         {
         TRIATHLETE_MON(49, 0),
@@ -14196,7 +14196,7 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
         },
         {
         .lvl = 48,
-        .species = SPECIES_PELIPPER,
+        .species = SPECIES_KILOWATTREL,
         },
         {
         .lvl = 48,
@@ -14271,9 +14271,9 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     .ability = ABILITY_SHELL_ARMOR,                               \
     .gender = TRAINER_MON_MALE
 
-#define PABLO_PELIPPER(Level, IV) \
+#define PABLO_KILOWATTREL(Level, IV) \
     TRIATHLETE_MON(Level, IV),    \
-    .species = SPECIES_PELIPPER,  \
+    .species = SPECIES_KILOWATTREL,  \
     .ability = ABILITY_KEEN_EYE,  \
     .gender = TRAINER_MON_MALE
 
@@ -14311,7 +14311,7 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        PABLO_PELIPPER(51, 3),
+        PABLO_KILOWATTREL(51, 3),
         },
         {
         PABLO_CORPHISH(51, 3),
@@ -14328,7 +14328,7 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        PABLO_PELIPPER(52, 4),
+        PABLO_KILOWATTREL(52, 4),
         },
         {
         PABLO_CORPHISH(52, 4),
@@ -14345,7 +14345,7 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        PABLO_PELIPPER(REMATCH_5_LEVEL_3, 5),
+        PABLO_KILOWATTREL(REMATCH_5_LEVEL_3, 5),
         },
         {
         PABLO_CORPHISH(REMATCH_5_LEVEL_3, 5),
@@ -14524,13 +14524,13 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 53,
-        .species = SPECIES_GOLDUCK,
-        .ability = ABILITY_DAMP,
+        .species = SPECIES_BARRASKEWDA,
+        .ability = ABILITY_SWIFT_SWIM,
         IVS(18),
         .gender = TRAINER_MON_MALE,
         },
-        ARCHIE_TENTACOOL(53),
-        ARCHIE_WAILMER(54),
+        ARCHIE_WAILMER(53),
+        ARCHIE_TYMPOLE(54),
         {
         FINNEAS(55),
         .moves = {MOVE_LIQUIDATION, MOVE_CRUNCH, MOVE_ICE_FANG, MOVE_POISON_FANG},
@@ -14571,7 +14571,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
         },
         {
         TRIATHLETE_MON(52, 0),
-        .species = SPECIES_PELIPPER,
+        .species = SPECIES_KILOWATTREL,
         }
     },
 },
@@ -14585,7 +14585,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         TRIATHLETE_MON(52, 0),
-        .species = SPECIES_PELIPPER,
+        .species = SPECIES_KILOWATTREL,
         },
         {
         TRIATHLETE_MON(52, 0),
@@ -14711,7 +14711,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 53,
-        .species = SPECIES_PELIPPER,
+        .species = SPECIES_KILOWATTREL,
         }
     },
 },
@@ -14739,7 +14739,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 52,
-        .species = SPECIES_PELIPPER,
+        .species = SPECIES_KILOWATTREL,
         },
         {
         .lvl = 52,
@@ -14775,7 +14775,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
         },
         {
         .lvl = 51,
-        .species = SPECIES_PELIPPER,
+        .species = SPECIES_KILOWATTREL,
         }
     },
 },
@@ -14886,7 +14886,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 53,
-        .species = SPECIES_PELIPPER,
+        .species = SPECIES_KILOWATTREL,
         },
         {
         .lvl = 53,
@@ -15904,7 +15904,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
         },
         {
         .lvl = 56,
-        .species = SPECIES_PELIPPER,
+        .species = SPECIES_KILOWATTREL,
         IVS(12),
         }
     },
@@ -16268,7 +16268,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
         },
         {
         .lvl = POSTGAME_LEVEL - 2,
-        .species = SPECIES_PELIPPER,
+        .species = SPECIES_KILOWATTREL,
         },
         {
         .lvl = POSTGAME_LEVEL - 2,
@@ -16452,7 +16452,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
         },
         {
         .lvl = 33,
-        .species = SPECIES_WINGULL,
+        .species = SPECIES_WATTREL,
         },
         {
         .lvl = 33,
@@ -16474,7 +16474,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
         },
         {
         .lvl = 34,
-        .species = SPECIES_PELIPPER,
+        .species = SPECIES_KILOWATTREL,
         }
     },
 },

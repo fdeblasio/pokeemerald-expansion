@@ -4295,6 +4295,10 @@
       {
         "Level": 28,
         "Move": "MOVE_SNARL"
+      },
+      {
+        "Level": 49,
+        "Move": "MOVE_DARK_PULSE"
       }
     ],
     "PreEvoMoves": [],
@@ -4307,6 +4311,10 @@
       {
         "Level": 30,
         "Move": "MOVE_SNARL"
+      },
+      {
+        "Level": 56,
+        "Move": "MOVE_DARK_PULSE"
       }
     ],
     "PreEvoMoves": [],
@@ -7601,6 +7609,10 @@
   "LILLIPUP": {
     "LevelMoves": [
       {
+        "Level": 4,
+        "Move": "MOVE_HOWL"
+      },
+      {
         "Level": 12,
         "Move": "MOVE_COVET"
       },
@@ -7617,6 +7629,10 @@
   "HERDIER": {
     "LevelMoves": [
       {
+        "Level": 1,
+        "Move": "MOVE_HOWL"
+      },
+      {
         "Level": 12,
         "Move": "MOVE_COVET"
       },
@@ -7632,6 +7648,10 @@
   },
   "STOUTLAND": {
     "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_HOWL"
+      },
       {
         "Level": 12,
         "Move": "MOVE_COVET"

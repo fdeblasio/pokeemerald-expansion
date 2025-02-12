@@ -5556,10 +5556,10 @@ MARINA_BATTLE(MUSEUM, 17),
     TRIATHLETE_M_RUNNING_INFO, \
     MINI_BOSS_AI_FLAGS
 
-#define DYLAN_DODUO(Level, IV)                              \
-    TRIATHLETE_MON(Level, IV),                              \
-    .species = Level < 31 ? SPECIES_DODUO : SPECIES_DODRIO, \
-    .ability = ABILITY_TANGLED_FEET,                        \
+#define DYLAN_HERDIER(Level, IV)                                 \
+    TRIATHLETE_MON(Level, IV),                                   \
+    .species = Level < 32 ? SPECIES_HERDIER : SPECIES_STOUTLAND, \
+    .ability = ABILITY_SAND_RUSH,                                \
     .gender = TRAINER_MON_MALE
 
 [DIFFICULTY_NORMAL][TRAINER_DYLAN_1] =
@@ -5568,7 +5568,7 @@ MARINA_BATTLE(MUSEUM, 17),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        DYLAN_DODUO(21, 1),
+        DYLAN_HERDIER(21, 1),
         }
     },
 },
@@ -5579,7 +5579,7 @@ MARINA_BATTLE(MUSEUM, 17),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        DYLAN_DODUO(REMATCH_2_LEVEL_1, 2),
+        DYLAN_HERDIER(REMATCH_2_LEVEL_1, 2),
         }
     },
 },
@@ -5590,7 +5590,7 @@ MARINA_BATTLE(MUSEUM, 17),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        DYLAN_DODUO(REMATCH_3_LEVEL_1, 3),
+        DYLAN_HERDIER(REMATCH_3_LEVEL_1, 3),
         }
     },
 },
@@ -5601,7 +5601,7 @@ MARINA_BATTLE(MUSEUM, 17),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        DYLAN_DODUO(REMATCH_4_LEVEL_1, 4),
+        DYLAN_HERDIER(REMATCH_4_LEVEL_1, 4),
         }
     },
 },
@@ -5620,8 +5620,8 @@ MARINA_BATTLE(MUSEUM, 17),
         .species = SPECIES_SHARPEDO,
         },
         {
-        DYLAN_DODUO(REMATCH_5_MINI_BOSS, 5),
-        .moves = {MOVE_THRASH, MOVE_DRILL_PECK, MOVE_DRILL_RUN, MOVE_SWORDS_DANCE},
+        DYLAN_HERDIER(REMATCH_5_MINI_BOSS, 5),
+        .moves = {MOVE_BODY_SLAM, MOVE_CRUNCH, MOVE_PLAY_ROUGH, MOVE_HOWL},
         }
     },
 },
@@ -5631,10 +5631,10 @@ MARINA_BATTLE(MUSEUM, 17),
     TRIATHLETE_F_RUNNING_INFO, \
     MINI_BOSS_AI_FLAGS
 
-#define MARIA_DODUO(Level, IV)                              \
-    TRIATHLETE_MON(Level, IV),                              \
-    .species = Level < 31 ? SPECIES_DODUO : SPECIES_DODRIO, \
-    .ability = ABILITY_EARLY_BIRD,                          \
+#define MARIA_SCYTHER(Level, IV)                                             \
+    TRIATHLETE_MON(Level, IV),                                               \
+    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_SCYTHER : SPECIES_SCIZOR, \
+    .ability = ABILITY_SWARM,                                                \
     .gender = TRAINER_MON_FEMALE
 
 [DIFFICULTY_NORMAL][TRAINER_MARIA_1] =
@@ -5643,7 +5643,7 @@ MARINA_BATTLE(MUSEUM, 17),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        MARIA_DODUO(21, 1),
+        MARIA_SCYTHER(21, 1),
         }
     },
 },
@@ -5654,7 +5654,7 @@ MARINA_BATTLE(MUSEUM, 17),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        MARIA_DODUO(REMATCH_2_LEVEL_1, 2),
+        MARIA_SCYTHER(REMATCH_2_LEVEL_1, 2),
         }
     },
 },
@@ -5665,7 +5665,7 @@ MARINA_BATTLE(MUSEUM, 17),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        MARIA_DODUO(REMATCH_3_LEVEL_1, 3),
+        MARIA_SCYTHER(REMATCH_3_LEVEL_1, 3),
         }
     },
 },
@@ -5676,7 +5676,7 @@ MARINA_BATTLE(MUSEUM, 17),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        MARIA_DODUO(REMATCH_4_LEVEL_1, 4),
+        MARIA_SCYTHER(REMATCH_4_LEVEL_1, 4),
         }
     },
 },
@@ -5692,11 +5692,11 @@ MARINA_BATTLE(MUSEUM, 17),
         },
         {
         TRIATHLETE_MON(REMATCH_5_LEVEL_2, 5),
-        .species = SPECIES_STARMIE,
+        .species = SPECIES_WEAVILE,
         },
         {
-        MARIA_DODUO(REMATCH_5_MINI_BOSS, 5),
-        .moves = {MOVE_BODY_SLAM, MOVE_DRILL_PECK, MOVE_DRILL_RUN, MOVE_REST},
+        MARIA_SCYTHER(REMATCH_5_MINI_BOSS, 5),
+        .moves = {MOVE_LUNGE, MOVE_IRON_HEAD, MOVE_BULLET_PUNCH, MOVE_LASER_FOCUS},
         }
     },
 },
@@ -5717,9 +5717,9 @@ MARINA_BATTLE(MUSEUM, 17),
         },                                                                                          \
         {                                                                                           \
         POKEMON_BREEDER_MON(Level),                                                                 \
-        .species = Level < 20 ? SPECIES_ZIGZAGOON : SPECIES_LINOONE,                                \
-        .ability = ABILITY_QUICK_FEET,                                                              \
-        .moves = {MOVE_EXTREME_SPEED, MOVE_MUD_SLAP, MOVE_SIMPLE_BEAM, MOVE_TICKLE},                \
+        .species = Level < 31 ? SPECIES_VENONAT : SPECIES_VENOMOTH,                                 \
+        .ability = 2,                                                                               \
+        .moves = {MOVE_SKITTER_SMACK, MOVE_ACID_SPRAY, MOVE_PSYCHIC_NOISE, MOVE_CONFUSE_RAY},       \
         .gender = TRAINER_MON_MALE                                                                  \
         },                                                                                          \
         {                                                                                           \
@@ -5731,16 +5731,16 @@ MARINA_BATTLE(MUSEUM, 17),
         },                                                                                          \
         {                                                                                           \
         POKEMON_BREEDER_MON(Level),                                                                 \
-        .species = Level < 18 ? SPECIES_POOCHYENA : SPECIES_MIGHTYENA,                              \
-        .ability = ABILITY_STRONG_JAW,                                                              \
-        .moves = {MOVE_LASH_OUT, MOVE_POISON_FANG, MOVE_THUNDER_FANG, MOVE_FIRE_FANG},              \
+        .species = Level < 28 ? SPECIES_DRIFLOON : SPECIES_DRIFBLIM,                                \
+        .ability = ABILITY_FLARE_BOOST,                                                             \
+        .moves = {MOVE_CHARGE_BEAM, MOVE_PSYBEAM, MOVE_WEATHER_BALL, MOVE_HYPNOSIS},                \
         .gender = TRAINER_MON_MALE                                                                  \
         },                                                                                          \
         {                                                                                           \
         POKEMON_BREEDER_MON(Level),                                                                 \
-        .species = Level < 22 ? SPECIES_TAILLOW : SPECIES_SWELLOW,                                  \
-        .ability = ABILITY_SCRAPPY,                                                                 \
-        .moves = {MOVE_BOOMBURST, MOVE_HURRICANE, MOVE_HEAT_WAVE, MOVE_ROOST},                      \
+        .species = Level < 20 ? SPECIES_WOOPER : SPECIES_QUAGSIRE,                                  \
+        .ability = ABILITY_UNAWARE,                                                                 \
+        .moves = {MOVE_CHILLING_WATER, MOVE_STOMPING_TANTRUM, MOVE_DOUBLE_KICK, MOVE_EERIE_IMPULSE},\
         .gender = TRAINER_MON_MALE                                                                  \
         },                                                                                          \
         {                                                                                           \
@@ -5768,9 +5768,16 @@ ISAAC_BATTLE(5, REMATCH_5_LEVEL_3),
     .party = (const struct TrainerMon[]) {                                                     \
         {                                                                                      \
         POKEMON_BREEDER_MON(Level),                                                            \
-        .species = Level < 25 ? SPECIES_WATTREL : SPECIES_KILOWATTREL,                            \
-        .ability = ABILITY_RAIN_DISH,                                                          \
-        .moves = {MOVE_CHILLING_WATER, MOVE_TWISTER, MOVE_TAILWIND, MOVE_AQUA_RING},           \
+        .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_COTTONEE : SPECIES_WHIMSICOTT,          \
+        .ability = ABILITY_CHLOROPHYLL,                                                        \
+        .moves = {MOVE_NATURE_POWER, MOVE_TICKLE, MOVE_TAILWIND, MOVE_FAKE_TEARS},             \
+        .gender = TRAINER_MON_FEMALE                                                           \
+        },                                                                                     \
+        {                                                                                      \
+        POKEMON_BREEDER_MON(Level),                                                            \
+        .species = Level < 25 ? SPECIES_WATTREL : SPECIES_KILOWATTREL,                         \
+        .ability = ABILITY_COMPETITIVE,                                                        \
+        .moves = {MOVE_HEAT_WAVE, MOVE_CHARGE_BEAM, MOVE_WEATHER_BALL, MOVE_HURRICANE},        \
         .gender = TRAINER_MON_FEMALE                                                           \
         },                                                                                     \
         {                                                                                      \
@@ -5789,23 +5796,16 @@ ISAAC_BATTLE(5, REMATCH_5_LEVEL_3),
         },                                                                                     \
         {                                                                                      \
         POKEMON_BREEDER_MON(Level),                                                            \
-        .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_BUDEW : (Level < REMATCH_3_LEVEL_6 ? SPECIES_ROSELIA : SPECIES_ROSERADE), \
+        .species = Level < 23 ? SPECIES_SNUBBULL : SPECIES_GRANBULL,                           \
         .ability = 2,                                                                          \
-        .moves = {MOVE_RAZOR_LEAF, MOVE_EXTRASENSORY, MOVE_LIFE_DEW, MOVE_GRASS_WHISTLE},      \
+        .moves = {MOVE_STOMPING_TANTRUM, MOVE_TRAILBLAZE, MOVE_WILD_CHARGE, MOVE_FIRE_FANG},   \
         .gender = TRAINER_MON_FEMALE                                                           \
         },                                                                                     \
         {                                                                                      \
         POKEMON_BREEDER_MON(Level),                                                            \
-        .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_SKITTY : SPECIES_DELCATTY,              \
-        .ability = ABILITY_WONDER_SKIN,                                                        \
-        .moves = {MOVE_UPROAR, MOVE_SIMPLE_BEAM, MOVE_FAKE_TEARS, MOVE_COSMIC_POWER},          \
-        .gender = TRAINER_MON_FEMALE                                                           \
-        },                                                                                     \
-        {                                                                                      \
-        POKEMON_BREEDER_MON(Level),                                                            \
-        .species = Level < 33 ? SPECIES_GOLDEEN : SPECIES_SEAKING,                             \
-        .ability = ABILITY_LIGHTNING_ROD,                                                      \
-        .moves = {MOVE_AQUA_TAIL, MOVE_SMART_STRIKE, MOVE_DRILL_RUN, MOVE_MEGAHORN},           \
+        .species = Level < 40 ? SPECIES_PONYTA : SPECIES_RAPIDASH,                             \
+        .ability = ABILITY_FLAME_BODY,                                                         \
+        .moves = {MOVE_DOUBLE_KICK, MOVE_MYSTICAL_FIRE, MOVE_WILD_CHARGE, MOVE_HYPNOSIS},      \
         .gender = TRAINER_MON_FEMALE                                                           \
         },                                                                                     \
     },                                                                                         \
@@ -5829,10 +5829,10 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .ability = ABILITY_THICK_FAT,                                \
     .gender = TRAINER_MON_FEMALE
 
-#define MEG_ZIGZAGOON(Level)                                     \
-    .lvl = Level,                                                \
-    .species = Level < 20 ? SPECIES_ZIGZAGOON : SPECIES_LINOONE, \
-    .ability = ABILITY_PICKUP,                                   \
+#define MEG_BIDOOF(Level)                                                    \
+    .lvl = Level,                                                            \
+    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_BIDOOF : SPECIES_BIBAREL, \
+    .ability = ABILITY_SIMPLE,                                               \
     .gender = TRAINER_MON_FEMALE
 
 [DIFFICULTY_NORMAL][TRAINER_ANNA_AND_MEG_1] =
@@ -5840,8 +5840,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     ANNA_AND_MEG_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        MEG_ZIGZAGOON(19),
-        .moves = {MOVE_HEADBUTT, MOVE_BABY_DOLL_EYES, MOVE_SAND_ATTACK, MOVE_ODOR_SLEUTH},
+        MEG_BIDOOF(19),
         },
         {
         ANNA_MAKUHITA(21),
@@ -5855,9 +5854,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     ANNA_AND_MEG_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        MEG_ZIGZAGOON(REMATCH_2_LEVEL_3),
+        MEG_BIDOOF(REMATCH_2_LEVEL_3),
         IVS(2),
-        .moves = {MOVE_SLASH, MOVE_TAIL_WHIP, MOVE_HONE_CLAWS, MOVE_ODOR_SLEUTH},
         },
         {
         ANNA_MAKUHITA(REMATCH_2_LEVEL_1),
@@ -5872,9 +5870,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     ANNA_AND_MEG_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        MEG_ZIGZAGOON(REMATCH_3_LEVEL_3),
+        MEG_BIDOOF(REMATCH_3_LEVEL_3),
         IVS(3),
-        .moves = {MOVE_SLASH, MOVE_TAIL_WHIP, MOVE_HONE_CLAWS, MOVE_ODOR_SLEUTH},
         },
         {
         ANNA_MAKUHITA(REMATCH_3_LEVEL_1),
@@ -5889,9 +5886,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     ANNA_AND_MEG_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        MEG_ZIGZAGOON(REMATCH_4_LEVEL_3),
+        MEG_BIDOOF(REMATCH_4_LEVEL_3),
         IVS(4),
-        .moves = {MOVE_SLASH, MOVE_TAIL_WHIP, MOVE_HONE_CLAWS, MOVE_ODOR_SLEUTH},
         },
         {
         ANNA_MAKUHITA(REMATCH_4_LEVEL_1),
@@ -5906,9 +5902,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     ANNA_AND_MEG_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        MEG_ZIGZAGOON(REMATCH_5_LEVEL_3),
+        MEG_BIDOOF(REMATCH_5_LEVEL_3),
         IVS(5),
-        .moves = {MOVE_SLASH, MOVE_TAIL_WHIP, MOVE_HONE_CLAWS, MOVE_ODOR_SLEUTH},
         },
         {
         ANNA_MAKUHITA(REMATCH_5_LEVEL_1),
@@ -5927,12 +5922,12 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 19,
-        .species = SPECIES_DUSTOX,
+        .species = SPECIES_KAKUNA,
         IVS(18),
         },
         {
         .lvl = 19,
-        .species = SPECIES_BEAUTIFLY,
+        .species = SPECIES_BEEDRILL,
         IVS(18),
         }
     },
@@ -5947,7 +5942,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 20,
-        .species = SPECIES_PSYDUCK,
+        .species = SPECIES_HATENNA,
         }
     },
 },

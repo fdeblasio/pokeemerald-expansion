@@ -7995,10 +7995,10 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     KINDLER_INFO,               \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define BERNIE_BIDOOF(Level)                                                \
-    .lvl = Level,                                                           \
-    .species = Level < REMATCH_2_LEVEL_6 ? SPECIESBIDOOF : SPECIES_BIBAREL, \
-    .ability = ABILITY_SIMPLE,                                              \
+#define BERNIE_BIDOOF(Level)                                                 \
+    .lvl = Level,                                                            \
+    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_BIDOOF : SPECIES_BIBAREL, \
+    .ability = ABILITY_SIMPLE,                                               \
     .gender = TRAINER_MON_MALE
 
 #define BERNIE_SLUGMA(Level)                                   \
@@ -8246,11 +8246,17 @@ COURTNEY_BATTLE(METEOR_FALLS, 28, 3),
 [DIFFICULTY_NORMAL][TRAINER_NOB_5] =
 {
     NOB_INFO,
-    .partySize = 4,
+    .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = REMATCH_5_LEVEL_2,
-        .species = SPECIES_BLAZIKEN,
+        .species = SPECIES_INFERNAPE,
+        IVS(17),
+        },
+        {
+        .lvl = REMATCH_5_LEVEL_2,
+        .species = SPECIES_HITMONLEE,
+        .ability = ABILITY_LIMBER,
         IVS(17),
         },
         {
@@ -8386,8 +8392,14 @@ COURTNEY_BATTLE(METEOR_FALLS, 28, 3),
 [DIFFICULTY_NORMAL][TRAINER_CYNDY_5] =
 {
     CYNDY_INFO,
-    .partySize = 2,
+    .partySize = 3,
     .party = (const struct TrainerMon[]) {
+        {
+        .lvl = REMATCH_5_LEVEL_2,
+        .species = SPECIES_HITMONCHAN,
+        .ability = ABILITY_IRON_FIST,
+        IVS(17),
+        },
         {
         CYNDY_MEDITITE(REMATCH_5_LEVEL_2),
         IVS(17),

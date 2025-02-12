@@ -114,6 +114,7 @@ upcoming
 - Xaman's TM Case? (https://www.pokecommunity.com/showpost.php?p=10378278)
 
 ### Trainers
+- Should Roxanne's trainers be Schoolkids?
 - Add ORAS team members (like a Picknicker getting a Gulpin)
 - Now that Gym Leader rematch party size is consistent, maybe a macro can be made
 - Get rid of Gym Leader rematches needing two Pokemon

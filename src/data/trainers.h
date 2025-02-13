@@ -1738,54 +1738,54 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     .gender = TRAINER_MON_MALE,      \
     .ball = ITEM_DUSK_BALL
 
-#define SIDNEY_CACTURNE(Level)                                                        \
+#define SIDNEY_GRIMMSNARL(Level)                                                     \
+    {                                                                                \
+    SIDNEY_SUPPORTING_MON(Level),                                                    \
+    .species = SPECIES_GRIMMSNARL,                                                   \
+    .ability = ABILITY_PRANKSTER,                                                    \
+    .nature = NATURE_ADAMANT,                                                        \
+    EV_SPREAD_ATK_SPE_HP,                                                            \
+    .moves = {MOVE_FALSE_SURRENDER, MOVE_PLAY_ROUGH, MOVE_LEECH_LIFE, MOVE_BULK_UP}, \
+    }
+
+#define SIDNEY_HOUNDOOM(Level)                                                        \
     {                                                                                 \
     SIDNEY_SUPPORTING_MON(Level),                                                     \
-    .species = SPECIES_CACTURNE,                                                      \
-    .ability = ABILITY_WATER_ABSORB,                                                  \
+    .species = SPECIES_HOUNDOOM,                                                      \
+    .ability = ABILITY_FLASH_FIRE,                                                    \
     .nature = NATURE_MODEST,                                                          \
     EV_SPREAD_SPA_SPE_HP,                                                             \
-    .moves = {MOVE_DARK_PULSE, MOVE_ENERGY_BALL, MOVE_LEECH_SEED, MOVE_SPIKY_SHIELD}, \
+    .moves = {MOVE_DARK_PULSE, MOVE_FLAMETHROWER, MOVE_SLUDGE_BOMB, MOVE_NASTY_PLOT}, \
     }
 
-#define SIDNEY_CRAWDAUNT(Level)                                                 \
+#define SIDNEY_WEAVILE(Level)                                                          \
+    {                                                                                  \
+    SIDNEY_SUPPORTING_MON(Level),                                                      \
+    .species = SPECIES_WEAVILE,                                                        \
+    .ability = ABILITY_PRESSURE,                                                       \
+    .nature = NATURE_JOLLY,                                                            \
+    EV_SPREAD_ATK_SPE_HP,                                                              \
+    .moves = {MOVE_NIGHT_SLASH, MOVE_ICICLE_CRASH, MOVE_ICE_SHARD, MOVE_SWORDS_DANCE}, \
+    }
+
+#define SIDNEY_MALAMAR(Level)                                                          \
+    {                                                                                  \
+    SIDNEY_SUPPORTING_MON(Level),                                                      \
+    .species = SPECIES_MALAMAR,                                                        \
+    .ability = ABILITY_CONTRARY,                                                       \
+    .nature = NATURE_ADAMANT,                                                          \
+    EV_SPREAD_ATK_SPE_HP,                                                              \
+    .moves = {MOVE_THROAT_CHOP, MOVE_ZEN_HEADBUTT, MOVE_SUPERPOWER, MOVE_TOPSY_TURVY}, \
+    }
+
+#define SIDNEY_UMBREON(Level)                                                   \
     {                                                                           \
     SIDNEY_SUPPORTING_MON(Level),                                               \
-    .species = SPECIES_CRAWDAUNT,                                               \
-    .ability = ABILITY_HYPER_CUTTER,                                            \
-    .nature = NATURE_ADAMANT,                                                   \
-    EV_SPREAD_ATK_SPE_HP,                                                       \
-    .moves = {MOVE_CRUNCH, MOVE_CRABHAMMER, MOVE_KNOCK_OFF, MOVE_SWORDS_DANCE}, \
-    }
-
-#define SIDNEY_SHIFTRY(Level)                                                  \
-    {                                                                          \
-    SIDNEY_SUPPORTING_MON(Level),                                              \
-    .species = SPECIES_SHIFTRY,                                                \
-    .ability = ABILITY_WIND_RIDER,                                             \
-    .nature = NATURE_ADAMANT,                                                  \
-    EV_SPREAD_ATK_SPE_HP,                                                      \
-    .moves = {MOVE_NIGHT_SLASH, MOVE_LEAF_BLADE, MOVE_FAKE_OUT, MOVE_ROLLOUT}, \
-    }
-
-#define SIDNEY_MIGHTYENA(Level)                                                 \
-    {                                                                           \
-    SIDNEY_SUPPORTING_MON(Level),                                               \
-    .species = SPECIES_MIGHTYENA,                                               \
-    .ability = ABILITY_INTIMIDATE,                                              \
-    .nature = NATURE_ADAMANT,                                                   \
-    EV_SPREAD_ATK_SPE_HP,                                                       \
-    .moves = {MOVE_CRUNCH, MOVE_PLAY_ROUGH, MOVE_FIRE_FANG, MOVE_THUNDER_FANG}, \
-    }
-
-#define SIDNEY_SHARPEDO(Level)                                                 \
-    {                                                                          \
-    SIDNEY_SUPPORTING_MON(Level),                                              \
-    .species = SPECIES_SHARPEDO,                                               \
-    .ability = ABILITY_ROUGH_SKIN,                                             \
-    .nature = NATURE_ADAMANT,                                                  \
-    EV_SPREAD_ATK_SPE_HP,                                                      \
-    .moves = {MOVE_CRUNCH, MOVE_LIQUIDATION, MOVE_POISON_FANG, MOVE_ICE_FANG}, \
+    .species = SPECIES_UMBREON,                                                 \
+    .ability = ABILITY_SYNCHRONIZE,                                             \
+    .nature = NATURE_CALM,                                                      \
+    EV_SPREAD_SPD_DEF_HP,                                                       \
+    .moves = {MOVE_FOUL_PLAY, MOVE_TOXIC, MOVE_MOONLIGHT, MOVE_BABY_DOLL_EYES}, \
     }
 
 [DIFFICULTY_NORMAL][TRAINER_SIDNEY] =
@@ -1793,10 +1793,10 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     SIDNEY_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        SIDNEY_MIGHTYENA(60),
-        SIDNEY_SHIFTRY(60),
-        SIDNEY_CRAWDAUNT(61),
-        SIDNEY_CACTURNE(61),
+        SIDNEY_MALAMAR(60),
+        SIDNEY_WEAVILE(60),
+        SIDNEY_HOUNDOOM(61),
+        SIDNEY_GRIMMSNARL(61),
         SIDNEY_ABSOL(62),
     },
 },
@@ -1806,11 +1806,11 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     SIDNEY_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        SIDNEY_SHARPEDO(86),
-        SIDNEY_MIGHTYENA(86),
-        SIDNEY_SHIFTRY(86),
-        SIDNEY_CRAWDAUNT(88),
-        SIDNEY_CACTURNE(88),
+        SIDNEY_UMBREON(86),
+        SIDNEY_MALAMAR(86),
+        SIDNEY_WEAVILE(86),
+        SIDNEY_HOUNDOOM(88),
+        SIDNEY_GRIMMSNARL(88),
         SIDNEY_ABSOL(90),
     },
 },
@@ -1837,60 +1837,54 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
 #define PHOEBE_SUPPORTING_MON(Level) \
     .lvl = Level,                    \
     PERFECT_IVS,                     \
+    .gender = TRAINER_MON_FEMALE,    \
     .ball = ITEM_DUSK_BALL
 
 #define PHOEBE_BANETTE(Level)                                                          \
     {                                                                                  \
     PHOEBE_SUPPORTING_MON(Level),                                                      \
     .species = SPECIES_BANETTE,                                                        \
-    .ability = ABILITY_CURSED_BODY,                                                    \
     .nature = NATURE_ADAMANT,                                                          \
     EV_SPREAD_ATK_SPE_HP,                                                              \
     .moves = {MOVE_SHADOW_CLAW, MOVE_BODY_SLAM, MOVE_SHADOW_SNEAK, MOVE_SWORDS_DANCE}, \
-    .gender = TRAINER_MON_FEMALE,                                                      \
     }
 
-#define PHOEBE_SABLEYE(Level)                                                     \
-    {                                                                             \
-    PHOEBE_SUPPORTING_MON(Level),                                                 \
-    .species = SPECIES_SABLEYE,                                                   \
-    .ability = ABILITY_PRANKSTER,                                                 \
-    .nature = NATURE_IMPISH,                                                      \
-    EV_SPREAD_DEF_HP_SPD,                                                         \
-    .moves = {MOVE_FOUL_PLAY, MOVE_CONFUSE_RAY, MOVE_WILL_O_WISP, MOVE_FAKE_OUT}, \
-    .gender = TRAINER_MON_FEMALE,                                                 \
+#define PHOEBE_GENGAR(Level)                                                            \
+    {                                                                                   \
+    PHOEBE_SUPPORTING_MON(Level),                                                       \
+    .species = SPECIES_GENGAR,                                                          \
+    .nature = NATURE_MODEST,                                                            \
+    EV_SPREAD_SPA_SPE_HP,                                                               \
+    .moves = {MOVE_SHADOW_BALL, MOVE_GIGA_DRAIN, MOVE_DAZZLING_GLEAM, MOVE_NASTY_PLOT}, \
     }
 
-#define PHOEBE_SHEDINJA(Level)                                                 \
+#define PHOEBE_CHANDELURE(Level)                                                      \
+    {                                                                                 \
+    PHOEBE_SUPPORTING_MON(Level),                                                     \
+    .species = SPECIES_CHANDELURE,                                                    \
+    .ability = ABILITY_FLAME_BODY,                                                    \
+    .nature = NATURE_MODEST,                                                          \
+    EV_SPREAD_SPA_SPE_HP,                                                             \
+    .moves = {MOVE_SHADOW_BALL, MOVE_FLAMETHROWER, MOVE_ENERGY_BALL, MOVE_CALM_MIND}, \
+    }
+
+#define PHOEBE_MISMAGIUS(Level)                                                        \
+    {                                                                                  \
+    PHOEBE_SUPPORTING_MON(Level),                                                      \
+    .species = SPECIES_MISMAGIUS,                                                      \
+    .nature = NATURE_MODEST,                                                           \
+    EV_SPREAD_SPA_SPE_SPD,                                                             \
+    .moves = {MOVE_SHADOW_BALL, MOVE_POWER_GEM, MOVE_MYSTICAL_FIRE, MOVE_PERISH_SONG}, \
+    }
+
+#define PHOEBE_SPIRITOMB(Level)                                                \
     {                                                                          \
     PHOEBE_SUPPORTING_MON(Level),                                              \
-    .species = SPECIES_SHEDINJA,                                               \
-    .ability = ABILITY_WONDER_GUARD,                                           \
-    .nature = NATURE_ADAMANT,                                                  \
-    EV_SPREAD_ATK_SPE_HP,                                                      \
-    .moves = {MOVE_SHADOW_CLAW, MOVE_LEECH_LIFE, MOVE_HEAL_BLOCK, MOVE_SPITE}, \
-    }
-
-#define PHOEBE_DUSCLOPS(Level)                                                 \
-    {                                                                          \
-    PHOEBE_SUPPORTING_MON(Level),                                              \
-    .species = SPECIES_DUSCLOPS,                                               \
+    .species = SPECIES_SPIRITOMB,                                              \
     .ability = ABILITY_PRESSURE,                                               \
     .nature = NATURE_CALM,                                                     \
-    EV_SPREAD_SPD_HP_DEF,                                                      \
-    .moves = {MOVE_HEX, MOVE_CONFUSE_RAY, MOVE_NIGHT_SHADE, MOVE_WILL_O_WISP}, \
-    .gender = TRAINER_MON_MALE,                                                \
-    }
-
-#define PHOEBE_CURSOLA(Level)                                                   \
-    {                                                                           \
-    PHOEBE_SUPPORTING_MON(Level),                                               \
-    .species = SPECIES_CURSOLA,                                                 \
-    .ability = ABILITY_PERISH_BODY,                                             \
-    .nature = NATURE_MODEST,                                                    \
-    EV_SPREAD_SPA_SPD_DEF,                                                      \
-    .moves = {MOVE_SHADOW_BALL, MOVE_POWER_GEM, MOVE_SPITE, MOVE_STRENGTH_SAP}, \
-    .gender = TRAINER_MON_FEMALE,                                               \
+    EV_SPREAD_SPD_DEF_HP,                                                      \
+    .moves = {MOVE_SHADOW_BALL, MOVE_FOUL_PLAY, MOVE_CURSE, MOVE_CONFUSE_RAY}, \
     }
 
 [DIFFICULTY_NORMAL][TRAINER_PHOEBE] =
@@ -1898,9 +1892,9 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     PHOEBE_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        PHOEBE_DUSCLOPS(61),
-        PHOEBE_SHEDINJA(61),
-        PHOEBE_SABLEYE(62),
+        PHOEBE_MISMAGIUS(61),
+        PHOEBE_CHANDELURE(61),
+        PHOEBE_GENGAR(62),
         PHOEBE_BANETTE(62),
         PHOEBE_DUSKNOIR(63),
     },
@@ -1911,10 +1905,10 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     PHOEBE_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        PHOEBE_DUSCLOPS(86),
-        PHOEBE_CURSOLA(86),
-        PHOEBE_SHEDINJA(86),
-        PHOEBE_SABLEYE(88),
+        PHOEBE_MISMAGIUS(86),
+        PHOEBE_SPIRITOMB(86),
+        PHOEBE_CHANDELURE(86),
+        PHOEBE_GENGAR(88),
         PHOEBE_BANETTE(88),
         PHOEBE_DUSKNOIR(90),
     },
@@ -1977,7 +1971,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     .gender = TRAINER_MON_FEMALE,                                                 \
     }
 
-#define GLACIA_SEALEO(Level)                                                   \
+#define GLACIA_MAMOSWINE(Level)                                                   \
     {                                                                          \
     GLACIA_SUPPORTING_MON(Level),                                              \
     .species = SPECIES_SEALEO,                                                 \
@@ -2005,7 +1999,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     GLACIA_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        GLACIA_SEALEO(62),
+        GLACIA_MAMOSWINE(62),
         GLACIA_CASTFORM(62),
         GLACIA_GLALIE(63),
         GLACIA_FROSLASS(63),
@@ -2018,7 +2012,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     GLACIA_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        GLACIA_SEALEO(86),
+        GLACIA_MAMOSWINE(86),
         GLACIA_NINETALES(86),
         GLACIA_CASTFORM(86),
         GLACIA_GLALIE(88),
@@ -2032,7 +2026,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     .trainerName = _("Drake"),      \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
 
-#define DRAKE_SALAMENCE(Level)                                                           \
+#define DRAKE_GOODRA(Level)                                                           \
     {                                                                                    \
     .lvl = Level,                                                                        \
     .species = SPECIES_SALAMENCE,                                                        \
@@ -2051,7 +2045,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     PERFECT_IVS,                    \
     .ball = ITEM_HEAVY_BALL
 
-#define DRAKE_FLYGON(Level)                                                           \
+#define DRAKE_HAXORUS(Level)                                                           \
     {                                                                                 \
     DRAKE_SUPPORTING_MON(Level),                                                      \
     .species = SPECIES_FLYGON,                                                        \
@@ -2073,7 +2067,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     .gender = TRAINER_MON_MALE,                                                      \
     }
 
-#define DRAKE_KINGDRA(Level)                                              \
+#define DRAKE_DRAMPA(Level)                                              \
     {                                                                     \
     DRAKE_SUPPORTING_MON(Level),                                          \
     .species = SPECIES_KINGDRA,                                           \
@@ -2084,7 +2078,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     .gender = TRAINER_MON_MALE,                                           \
     }
 
-#define DRAKE_SHELGON(Level)                                                        \
+#define DRAKE_DRUDDIGON(Level)                                                        \
     {                                                                               \
     DRAKE_SUPPORTING_MON(Level),                                                    \
     .species = SPECIES_SHELGON,                                                     \
@@ -2095,7 +2089,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     .gender = TRAINER_MON_FEMALE,                                                   \
     }
 
-#define DRAKE_DRAGALGE(Level)                                                            \
+#define DRAKE_CYCLIZAR(Level)                                                            \
     {                                                                                    \
     DRAKE_SUPPORTING_MON(Level),                                                         \
     .species = SPECIES_DRAGALGE,                                                         \
@@ -2111,11 +2105,11 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     DRAKE_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        DRAKE_SHELGON(63),
-        DRAKE_KINGDRA(63),
+        DRAKE_DRUDDIGON(63),
+        DRAKE_DRAMPA(63),
         DRAKE_ALTARIA(64),
-        DRAKE_FLYGON(64),
-        DRAKE_SALAMENCE(66),
+        DRAKE_HAXORUS(64),
+        DRAKE_GOODRA(66),
     },
 },
 
@@ -2124,12 +2118,12 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     DRAKE_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        DRAKE_SHELGON(86),
-        DRAKE_DRAGALGE(86),
-        DRAKE_KINGDRA(86),
+        DRAKE_DRUDDIGON(86),
+        DRAKE_CYCLIZAR(86),
+        DRAKE_DRAMPA(86),
         DRAKE_ALTARIA(88),
-        DRAKE_FLYGON(88),
-        DRAKE_SALAMENCE(90),
+        DRAKE_HAXORUS(88),
+        DRAKE_GOODRA(90),
     },
 },
 
@@ -2147,7 +2141,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     .party = (const struct TrainerMon[]) {                                                 \
         {                                                                                  \
         .lvl = AceLevel - 3,                                                               \
-        .species = SPECIES_AZUMARILL,                                                       \
+        .species = SPECIES_AZUMARILL,                                                           \
         .ability = ABILITY_DRIZZLE,                                                        \
         .nature = NATURE_MODEST,                                                           \
         EV_SPREAD_SPA_DEF_SPE,                                                             \
@@ -2159,7 +2153,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
         },                                                                                 \
         {                                                                                  \
         .lvl = AceLevel - 3,                                                               \
-        .species = SPECIES_GOREBYSS,                                                       \
+        .species = SPECIES_DACHSBUN,                                                                \
         .ability = ABILITY_SWIFT_SWIM,                                                     \
         .nature = NATURE_MODEST,                                                           \
         EV_SPREAD_SPA_SPE_DEF,                                                             \
@@ -2170,7 +2164,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
         },                                                                                 \
         {                                                                                  \
         .lvl = AceLevel - 3,                                                               \
-        .species = SPECIES_RELICANTH,                                                      \
+        .species = SPECIES_GRANBULL,                                                                   \
         .ability = ABILITY_SWIFT_SWIM,                                                     \
         .nature = NATURE_IMPISH,                                                           \
         EV_SPREAD_ATK_DEF_HP,                                                              \
@@ -2183,7 +2177,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
         },                                                                                 \
         {                                                                                  \
         .lvl = AceLevel - 2,                                                               \
-        .species = SPECIES_LUDICOLO,                                                       \
+        .species = SPECIES_CLEFABLE,                                                                    \
         .ability = ABILITY_SWIFT_SWIM,                                                     \
         .nature = NATURE_MODEST,                                                           \
         EV_SPREAD_SPA_SPE_HP,                                                              \
@@ -2194,7 +2188,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
         },                                                                                 \
         {                                                                                  \
         .lvl = AceLevel - 2,                                                               \
-        .species = SPECIES_WAILORD,                                                        \
+        .species = SPECIES_SYLVEON,                                                                  \
         .ability = ABILITY_OBLIVIOUS,                                                      \
         .nature = NATURE_MODEST,                                                           \
         EV_SPREAD_SPA_HP_SPE,                                                              \
@@ -2206,7 +2200,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
         },                                                                                 \
         {                                                                                  \
         .lvl = AceLevel,                                                                   \
-        .species = SPECIES_MILOTIC,                                                        \
+        .species = SPECIES_TOGEKISS,                                                                   \
         .ability = ABILITY_MARVEL_SCALE,                                                   \
         .nature = NATURE_MODEST,                                                           \
         EV_SPREAD_SPA_SPD_SPE,                                                             \

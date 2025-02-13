@@ -12,7 +12,6 @@
 #include "battle_gimmick.h"
 #include "battle_hold_effects.h"
 #include "generational_changes.h"
-#include "overworld.h"
 #include "party_menu.h"
 #include "pokemon.h"
 #include "international_string_util.h"
@@ -40,6 +39,7 @@
 #include "pokedex.h"
 #include "mail.h"
 #include "field_weather.h"
+#include "overworld.h"
 #include "constants/abilities.h"
 #include "constants/battle_anim.h"
 #include "constants/battle_move_effects.h"
@@ -47,6 +47,7 @@
 #include "constants/battle_string_ids.h"
 #include "constants/items.h"
 #include "constants/item_effects.h"
+#include "constants/layouts.h"
 #include "constants/moves.h"
 #include "constants/songs.h"
 #include "constants/species.h"
@@ -3771,7 +3772,8 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, enum Ability ability, u32 spec
     BattleScriptPushCursorAndCallback(BattleScript_OverworldTerrain);        \
     effect++;
 
-        if ((B_THUNDERSTORM_TERRAIN == TRUE && GetCurrentWeather() == WEATHER_RAIN_THUNDERSTORM)
+        if (((B_THUNDERSTORM_TERRAIN == TRUE && GetCurrentWeather() == WEATHER_RAIN_THUNDERSTORM)
+         || GetCurrentRegionMapSectionId() == MAPSEC_NEW_MAUVILLE)
          && !(gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN)
          )
         {
@@ -3784,7 +3786,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, enum Ability ability, u32 spec
         {
             SET_TERRAIN(MISTY)
         }
-        else if ((GetCurrentRegionMapSectionId() == MAPSEC_VERDANTURF_TOWN || gBattleTerrain == BATTLE_TERRAIN_LONG_GRASS) && !(gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN))
+        else if ((gMapHeader.mapLayoutId == LAYOUT_VERDANTURF_TOWN || gBattleTerrain == BATTLE_TERRAIN_LONG_GRASS) && !(gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN))
         {
             SET_TERRAIN(GRASSY)
         }

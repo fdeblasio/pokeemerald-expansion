@@ -1120,6 +1120,15 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Jigglypuff/Wigglytuff:
     - Learn Alluring Voice by level up
 
+- Psyduck (postgame):
+    - Type: Water->Water/Psychic
+    - Learns Psybeam, Extrasensory, and Psychic by level up
+
+- Golduck (postgame):
+    - Type: Water->Water/Psychic
+    - Learns Power Gem upon evolving
+    - Learns Psybeam, Extrasensory, and Psychic by level up
+
 - Poliwag:
     - SpA: 40->50
 

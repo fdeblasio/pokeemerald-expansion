@@ -16087,11 +16087,11 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = POSTGAME_LEVEL - 1,
-        .species = SPECIES_LUVDISC,
+        .species = SPECIES_VESPIQUEN,
         },
         {
         .lvl = POSTGAME_LEVEL - 1,
-        .species = SPECIES_LUVDISC,
+        .species = SPECIES_BEEDRILL,
         }
     },
 },
@@ -16105,7 +16105,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         RICH_BOY_MON(POSTGAME_LEVEL),
-        .species = SPECIES_AZUMARILL,
+        .species = SPECIES_TANGROWTH,
         }
     },
 },
@@ -16119,11 +16119,11 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = POSTGAME_LEVEL - 1,
-        .species = SPECIES_PERSIAN,
+        .species = SPECIES_SNEASLER,
         },
         {
         .lvl = POSTGAME_LEVEL - 1,
-        .species = SPECIES_MANECTRIC,
+        .species = SPECIES_AMPHAROS,
         }
     },
 },
@@ -16132,7 +16132,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     {                                                                     \
     POKE_FAN_MON(POSTGAME_LEVEL - 5),                                     \
     .species = SPECIES_##Species,                                         \
-    .moves = {MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK, MOVE_HEAL_BELL} \
+    .moves = {MOVE_TAIL_SLAP, MOVE_WAKE_UP_SLAP, MOVE_CHARM, MOVE_TICKLE} \
     }
 
 [DIFFICULTY_NORMAL][TRAINER_COLTON] =
@@ -16142,12 +16142,12 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_ACE_POKEMON,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        COLTON_MON(SKITTY),
-        COLTON_MON(SKITTY),
-        COLTON_MON(SKITTY),
-        COLTON_MON(SKITTY),
-        COLTON_MON(SKITTY),
-        COLTON_MON(DELCATTY),
+        COLTON_MON(MINCCINO),
+        COLTON_MON(MINCCINO),
+        COLTON_MON(MINCCINO),
+        COLTON_MON(MINCCINO),
+        COLTON_MON(MINCCINO),
+        COLTON_MON(CINCCINO),
     },
 },
 
@@ -16160,7 +16160,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         RICH_MON(POSTGAME_LEVEL),
-        .species = SPECIES_ROSERADE,
+        .species = SPECIES_LILLIGANT,
         IVS(12),
         }
     },
@@ -16175,7 +16175,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = POSTGAME_LEVEL,
-        .species = SPECIES_ZANGOOSE,
+        .species = SPECIES_EMPOLEON,
         }
     },
 },
@@ -16189,11 +16189,11 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = POSTGAME_LEVEL - 1,
-        .species = SPECIES_TENTACRUEL,
+        .species = SPECIES_DRAGALGE,
         },
         {
         .lvl = POSTGAME_LEVEL - 1,
-        .species = SPECIES_MACHAMP,
+        .species = SPECIES_OCTILLERY,
         }
     },
 },
@@ -16207,15 +16207,15 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = POSTGAME_LEVEL - 2,
-        .species = SPECIES_QUAGSIRE,
+        .species = SPECIES_CLODSIRE,
         },
         {
         .lvl = POSTGAME_LEVEL - 2,
-        .species = SPECIES_KILOWATTREL,
+        .species = SPECIES_WUGTRIO,
         },
         {
         .lvl = POSTGAME_LEVEL - 2,
-        .species = SPECIES_FERALIGATR,
+        .species = SPECIES_GOLDUCK,
         }
     },
 },

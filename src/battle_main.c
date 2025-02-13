@@ -36,6 +36,7 @@
 #include "main.h"
 #include "malloc.h"
 #include "m4a.h"
+#include "overworld.h"
 #include "palette.h"
 #include "party_menu.h"
 #include "pokeball.h"
@@ -6022,12 +6023,9 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, u8 *ateBoost)
             case WEATHER_FOG_DIAGONAL:
                 if (B_OVERWORLD_FOG >= GEN_8)
                     return TYPE_FAIRY;
-            case WEATHER_VERDANT:
-                return TYPE_GRASS;
-                break;
             }
 
-            if (GetPlayerCurMetatileBehavior(gPlayerAvatar.runningState) == MB_LONG_GRASS)
+            if (GetCurrentRegionMapSectionId() == MAPSEC_VERDANTURF_TOWN || GetPlayerCurMetatileBehavior(gPlayerAvatar.runningState) == MB_LONG_GRASS)
                 return TYPE_GRASS;
 
             return moveType;
@@ -6181,7 +6179,7 @@ u32 GetDynamicPower(struct Pokemon *mon, u32 move, u32 battler){
         isFoggy = (gWeatherPtr->currWeather == WEATHER_FOG_HORIZONTAL || gWeatherPtr->currWeather == WEATHER_FOG_DIAGONAL) && B_OVERWORLD_FOG == GEN_4;
         isElectric = gWeatherPtr->currWeather == WEATHER_RAIN_THUNDERSTORM && B_THUNDERSTORM_TERRAIN && IsOverworldMonGrounded(mon);
         isMisty = (gWeatherPtr->currWeather == WEATHER_FOG_HORIZONTAL || gWeatherPtr->currWeather == WEATHER_FOG_DIAGONAL) && B_OVERWORLD_FOG >= GEN_8 && IsOverworldMonGrounded(mon);
-        isGrassy = (gWeatherPtr->currWeather == WEATHER_VERDANT || GetPlayerCurMetatileBehavior(gPlayerAvatar.runningState) == MB_LONG_GRASS) && IsOverworldMonGrounded(mon);
+        isGrassy = (GetCurrentRegionMapSectionId() == MAPSEC_VERDANTURF_TOWN || GetPlayerCurMetatileBehavior(gPlayerAvatar.runningState) == MB_LONG_GRASS) && IsOverworldMonGrounded(mon);
         isPsychic = FALSE && IsOverworldMonGrounded(mon); //Can be changed if ever overworld weather or terrain that causes Psychic Terrain
     }
 
@@ -6286,7 +6284,7 @@ u32 GetDynamicPower(struct Pokemon *mon, u32 move, u32 battler){
             if (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN)
                 UQ4_12_MULTIPLY(power, 0.5);
         }
-        else if (gWeatherPtr->currWeather == WEATHER_VERDANT || GetPlayerCurMetatileBehavior(gPlayerAvatar.runningState) == MB_LONG_GRASS)
+        else if (GetCurrentRegionMapSectionId() == MAPSEC_VERDANTURF_TOWN || GetPlayerCurMetatileBehavior(gPlayerAvatar.runningState) == MB_LONG_GRASS)
             UQ4_12_MULTIPLY(power, 0.5);
         break;
     case EFFECT_HYDRO_STEAM:

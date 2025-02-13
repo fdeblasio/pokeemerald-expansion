@@ -9,6 +9,7 @@
 #include "battle_setup.h"
 #include "battle_z_move.h"
 #include "battle_gimmick.h"
+#include "overworld.h"
 #include "party_menu.h"
 #include "pokemon.h"
 #include "international_string_util.h"
@@ -4639,34 +4640,29 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
         }
         break;
     case ABILITYEFFECT_SWITCH_IN_TERRAIN:   // terrain starting from overworld weather
-        if (B_THUNDERSTORM_TERRAIN == TRUE
+#define SET_TERRAIN(Terrain)                                                 \
+    gFieldStatuses = STATUS_FIELD_##Terrain##_TERRAIN;                       \
+    gFieldTimers.terrainTimer = 0;                                           \
+    gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_SET_##Terrain; \
+    BattleScriptPushCursorAndCallback(BattleScript_OverworldTerrain);        \
+    effect++;
+
+        if ((B_THUNDERSTORM_TERRAIN == TRUE && GetCurrentWeather() == WEATHER_RAIN_THUNDERSTORM)
          && !(gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN)
-         && GetCurrentWeather() == WEATHER_RAIN_THUNDERSTORM)
+         )
         {
             // overworld weather started rain, so just do electric terrain anim
-            gFieldStatuses = STATUS_FIELD_ELECTRIC_TERRAIN;
-            gFieldTimers.terrainTimer = 0;
-            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_SET_ELECTRIC;
-            BattleScriptPushCursorAndCallback(BattleScript_OverworldTerrain);
-            effect++;
+            SET_TERRAIN(ELECTRIC)
         }
         else if (B_OVERWORLD_FOG >= GEN_8
               && (GetCurrentWeather() == WEATHER_FOG_HORIZONTAL || GetCurrentWeather() == WEATHER_FOG_DIAGONAL)
               && !(gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN))
         {
-            gFieldStatuses = STATUS_FIELD_MISTY_TERRAIN;
-            gFieldTimers.terrainTimer = 0;
-            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_SET_MISTY;
-            BattleScriptPushCursorAndCallback(BattleScript_OverworldTerrain);
-            effect++;
+            SET_TERRAIN(MISTY)
         }
-        else if ((GetCurrentWeather() == WEATHER_VERDANT || gBattleTerrain == BATTLE_TERRAIN_LONG_GRASS) && !(gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN))
+        else if ((GetCurrentRegionMapSectionId() == MAPSEC_VERDANTURF_TOWN || gBattleTerrain == BATTLE_TERRAIN_LONG_GRASS) && !(gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN))
         {
-            gFieldStatuses = STATUS_FIELD_GRASSY_TERRAIN;
-            gFieldTimers.terrainTimer = 0;
-            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_SET_GRASSY;
-            BattleScriptPushCursorAndCallback(BattleScript_OverworldTerrain);
-            effect++;
+            SET_TERRAIN(GRASSY)
         }
         break;
     case ABILITYEFFECT_SWITCH_IN_WEATHER:

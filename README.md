@@ -2877,6 +2877,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Goomy:
     - Evolution: 40->35
+    - Learns Life Dew by level up
+
+- Sliggoo/Goodra:
+    - Learns Life Dew by level up
 
 - Klefki:
     - Learns Dazzling Gleam by level up

@@ -2203,7 +2203,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Dual Wingbeat by level up
 
 - Staravia/Staraptor:
-    - Learn Slash/Dual Wingbeat by level up
+    - Learn Slash and Dual Wingbeat by level up
 
 - Bibarel:
     - Learns Waterfall, Aqua Tail, Body Slam, and Tail Slap by level up

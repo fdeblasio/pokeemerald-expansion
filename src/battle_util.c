@@ -12,7 +12,6 @@
 #include "battle_gimmick.h"
 #include "battle_hold_effects.h"
 #include "config_changes.h"
-#include "overworld.h"
 #include "party_menu.h"
 #include "pokemon.h"
 #include "international_string_util.h"

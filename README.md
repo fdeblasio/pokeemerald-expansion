@@ -248,6 +248,7 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
 - Battle Frontier no longer requires saving
 - Certain sections are blocked off until gyms or rivals are defeated
 - Wally is given more battles. The battle in Verdanturf starts with Grassy Terrain
+- Battles in New Mauville start with Electric Terrain
 - Battles in long grass on Routes 119 and 120 start with Grassy Terrain (unless it's a thunderstorm)
 - All Pokémon in the Dragon egg group that could not already learn Dragon Breath now get it as an egg move. This is reflected in the species changes below
 - Moves are no longer replaced if a Pokémon levels up in the daycare

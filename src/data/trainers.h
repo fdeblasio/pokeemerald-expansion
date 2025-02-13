@@ -6661,7 +6661,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 22,
-        .species = SPECIES_SHROOMISH,
+        .species = SPECIES_TOGEPI,
         IVS(1),
         },
         {
@@ -11550,7 +11550,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
         {
         .lvl = 40,
         .species = SPECIES_KILOWATTREL,
-        .moves = {MOVE_FLY, MOVE_AIR_SLASH, MOVE_BRINE, MOVE_TAILWIND}
+        .moves = {MOVE_FLY, MOVE_AIR_SLASH, MOVE_SHOCK_WAVE, MOVE_TAILWIND}
         },
         {
         .lvl = 40,
@@ -11570,9 +11570,9 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 41,
-        .species = SPECIES_MANECTRIC,
+        .species = SPECIES_ROTOM_WASH,
         IVS(12),
-        .moves = {MOVE_THUNDER, MOVE_QUICK_ATTACK, MOVE_THUNDER_WAVE, MOVE_ROAR}
+        .moves = {MOVE_THUNDER, MOVE_SURF, MOVE_THUNDER_WAVE, MOVE_HEX}
         }
     },
 },
@@ -11626,7 +11626,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
         },
         {
         .lvl = 40,
-        .species = SPECIES_MAKUHITA,
+        .species = SPECIES_HITMONCHAN,
         }
     },
 },
@@ -11681,7 +11681,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 39,
-        .species = SPECIES_SHROOMISH,
+        .species = SPECIES_FOONGUS,
         IVS(6),
         },
         {
@@ -11702,17 +11702,18 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     BUG_MANIAC_INFO,             \
     MINI_BOSS_AI_FLAGS
 
-#define JEFFREY_MASQUERAIN(Level)  \
-    .lvl = Level,                  \
-    .species = SPECIES_MASQUERAIN, \
-    IVS(10),                       \
+#define JEFFREY_GALVANTULA(Level)     \
+    .lvl = Level,                     \
+    .species = SPECIES_GALVANTULA,    \
+    .ability = ABILITY_COMPOUND_EYES, \
+    IVS(10),                          \
     .gender = TRAINER_MON_MALE
 
-#define JEFFREY_PINSIR(Level)        \
-    .lvl = Level,                    \
-    .species = SPECIES_PINSIR,       \
-    .ability = ABILITY_HYPER_CUTTER, \
-    IVS(10),                         \
+#define JEFFREY_SCOLIPEDE(Level)  \
+    .lvl = Level,                 \
+    .species = SPECIES_SCOLIPEDE, \
+    .ability = ABILITY_SWARM,     \
+    IVS(10),                      \
     .gender = TRAINER_MON_MALE
 
 #define JEFFREY_HERACROSS(Level)  \
@@ -11722,17 +11723,19 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     IVS(10),                      \
     .gender = TRAINER_MON_MALE
 
-#define JEFFREY_DUSTOX(Level)  \
+#define JEFFREY_SCIZOR(Level)  \
     .lvl = Level,              \
-    .species = SPECIES_DUSTOX, \
+    .species = SPECIES_SCIZOR, \
+    .ability = ABILITY_SWARM,  \
     IVS(10),                   \
     .gender = TRAINER_MON_MALE
 
-#define JEFFREY_BEAUTIFLY(Level)  \
-    .lvl = Level,                 \
-    .species = SPECIES_BEAUTIFLY, \
-    IVS(10),                      \
-    .gender = TRAINER_MON_FEMALE
+#define JEFFREY_KLEAVOR(Level)  \
+    .lvl = Level,               \
+    .species = SPECIES_KLEAVOR, \
+    .ability = ABILITY_SWARM,   \
+    IVS(10),                    \
+    .gender = TRAINER_MON_MALE
 
 [DIFFICULTY_NORMAL][TRAINER_JEFFREY_1] =
 {
@@ -11743,10 +11746,10 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
         JEFFREY_HERACROSS(40),
         },
         {
-        JEFFREY_PINSIR(40),
+        JEFFREY_SCOLIPEDE(40),
         },
         {
-        JEFFREY_MASQUERAIN(40),
+        JEFFREY_GALVANTULA(40),
         }
     },
 },
@@ -11757,19 +11760,19 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        JEFFREY_BEAUTIFLY(42),
+        JEFFREY_KLEAVOR(42),
         },
         {
-        JEFFREY_DUSTOX(42),
+        JEFFREY_SCIZOR(42),
         },
         {
         JEFFREY_HERACROSS(42),
         },
         {
-        JEFFREY_PINSIR(42),
+        JEFFREY_SCOLIPEDE(42),
         },
         {
-        JEFFREY_MASQUERAIN(42),
+        JEFFREY_GALVANTULA(42),
         }
     },
 },
@@ -11780,19 +11783,19 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        JEFFREY_BEAUTIFLY(45),
+        JEFFREY_KLEAVOR(45),
         },
         {
-        JEFFREY_DUSTOX(45),
+        JEFFREY_SCIZOR(45),
         },
         {
         JEFFREY_HERACROSS(45),
         },
         {
-        JEFFREY_PINSIR(45),
+        JEFFREY_SCOLIPEDE(45),
         },
         {
-        JEFFREY_MASQUERAIN(45),
+        JEFFREY_GALVANTULA(45),
         }
     },
 },
@@ -11803,19 +11806,19 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        JEFFREY_BEAUTIFLY(REMATCH_4_LEVEL_2),
+        JEFFREY_KLEAVOR(REMATCH_4_LEVEL_2),
         },
         {
-        JEFFREY_DUSTOX(REMATCH_4_LEVEL_2),
+        JEFFREY_SCIZOR(REMATCH_4_LEVEL_2),
         },
         {
         JEFFREY_HERACROSS(REMATCH_4_LEVEL_2),
         },
         {
-        JEFFREY_PINSIR(REMATCH_4_LEVEL_2),
+        JEFFREY_SCOLIPEDE(REMATCH_4_LEVEL_2),
         },
         {
-        JEFFREY_MASQUERAIN(REMATCH_4_LEVEL_1),
+        JEFFREY_GALVANTULA(REMATCH_4_LEVEL_1),
         }
     },
 },
@@ -11826,19 +11829,19 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        JEFFREY_BEAUTIFLY(REMATCH_5_LEVEL_2),
+        JEFFREY_KLEAVOR(REMATCH_5_LEVEL_2),
         },
         {
-        JEFFREY_DUSTOX(REMATCH_5_LEVEL_2),
+        JEFFREY_SCIZOR(REMATCH_5_LEVEL_2),
         },
         {
         JEFFREY_HERACROSS(REMATCH_5_LEVEL_2),
         },
         {
-        JEFFREY_PINSIR(REMATCH_5_LEVEL_2),
+        JEFFREY_SCOLIPEDE(REMATCH_5_LEVEL_2),
         },
         {
-        JEFFREY_MASQUERAIN(REMATCH_5_MINI_BOSS),
+        JEFFREY_GALVANTULA(REMATCH_5_MINI_BOSS),
         .heldItem = ITEM_SILVER_POWDER
         }
     },
@@ -11899,11 +11902,11 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 41,
-        .species = SPECIES_DUSTOX,
+        .species = SPECIES_BEEDRILL,
         },
         {
         .lvl = 41,
-        .species = SPECIES_BEAUTIFLY,
+        .species = SPECIES_VENOMOTH,
         }
     },
 },
@@ -11931,10 +11934,11 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     BEAUTY_INFO,                 \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define JESSICA_SEVIPER(Level)  \
-    .lvl = Level,               \
-    .species = SPECIES_SEVIPER, \
-    IVS(10),                    \
+#define JESSICA_CLEFABLE(Level)     \
+    .lvl = Level,                   \
+    .species = SPECIES_CLEFABLE,    \
+    .ability = ABILITY_MAGIC_GUARD, \
+    IVS(10),                        \
     .gender = TRAINER_MON_FEMALE
 
 #define JESSICA_KECLEON(Level)  \
@@ -11952,7 +11956,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
         JESSICA_KECLEON(41),
         },
         {
-        JESSICA_SEVIPER(41),
+        JESSICA_CLEFABLE(41),
         }
     },
 },
@@ -11966,7 +11970,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
         JESSICA_KECLEON(43),
         },
         {
-        JESSICA_SEVIPER(43),
+        JESSICA_CLEFABLE(43),
         }
     },
 },
@@ -11980,7 +11984,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
         JESSICA_KECLEON(45),
         },
         {
-        JESSICA_SEVIPER(45),
+        JESSICA_CLEFABLE(45),
         }
     },
 },
@@ -11994,7 +11998,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
         JESSICA_KECLEON(REMATCH_4_LEVEL_2),
         },
         {
-        JESSICA_SEVIPER(REMATCH_4_LEVEL_2),
+        JESSICA_CLEFABLE(REMATCH_4_LEVEL_2),
         }
     },
 },
@@ -12008,7 +12012,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
         JESSICA_KECLEON(REMATCH_5_LEVEL_2),
         },
         {
-        JESSICA_SEVIPER(REMATCH_5_LEVEL_2),
+        JESSICA_CLEFABLE(REMATCH_5_LEVEL_2),
         }
     },
 },
@@ -12041,9 +12045,9 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         POKEMON_BREEDER_MON(37),
-        .species = SPECIES_MANECTRIC,
-        .ability = ABILITY_STATIC,
-        .moves = {MOVE_CHARGE_BEAM, MOVE_SNARL, MOVE_FLAME_BURST, MOVE_UPROAR},
+        .species = SPECIES_CETITAN,
+        .ability = ABILITY_SHEER_FORCE,
+        .moves = {MOVE_ICICLE_SPEAR, MOVE_BULLDOZE, MOVE_BELLY_DRUM, MOVE_CURSE},
         },
         {
         POKEMON_BREEDER_MON(37),
@@ -12116,9 +12120,9 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
         },
         {
         POKEMON_BREEDER_MON(37),
-        .species = SPECIES_TROPIUS,
-        .ability = ABILITY_HARVEST,
-        .moves = {MOVE_NATURE_POWER, MOVE_AIR_CUTTER, MOVE_TRAILBLAZE, MOVE_TAILWIND},
+        .species = SPECIES_PILOSWINE,
+        .ability = ABILITY_THICK_FAT,
+        .moves = {MOVE_ICE_FANG, MOVE_BITE, MOVE_FISSURE, MOVE_SUPERPOWER},
         }
     },
 },
@@ -12128,25 +12132,25 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     GENTLEMAN_INFO,             \
     MINI_BOSS_AI_FLAGS
 
-#define WALTER_MANECTRIC(Level)       \
-    RICH_MON(Level),                  \
-    .species = SPECIES_MANECTRIC,     \
-    .ability = ABILITY_LIGHTNING_ROD, \
-    IVS(10),                          \
-    .gender = TRAINER_MON_MALE
-
-#define WALTER_GOLDUCK(Level)      \
+#define WALTER_DRAMPA(Level)       \
     RICH_MON(Level),               \
-    .species = SPECIES_GOLDUCK,    \
-    .ability = ABILITY_CLOUD_NINE, \
+    .species = SPECIES_DRAMPA,     \
+    .ability = ABILITY_SAP_SIPPER, \
     IVS(10),                       \
     .gender = TRAINER_MON_MALE
 
-#define WALTER_LINOONE(Level)   \
-    RICH_MON(Level),            \
-    .species = SPECIES_LINOONE, \
-    .ability = ABILITY_PICKUP,  \
-    IVS(10),                    \
+#define WALTER_RAPIDASH(Level)     \
+    RICH_MON(Level),               \
+    .species = SPECIES_RAPIDASH,   \
+    .ability = ABILITY_FLASH_FIRE, \
+    IVS(10),                       \
+    .gender = TRAINER_MON_MALE
+
+#define WALTER_STONJOURNER(Level)   \
+    RICH_MON(Level),                \
+    .species = SPECIES_STONJOURNER, \
+    .ability = ABILITY_POWER_SPOT,  \
+    IVS(10),                        \
     .gender = TRAINER_MON_MALE
 
 [DIFFICULTY_NORMAL][TRAINER_WALTER_1] =
@@ -12155,7 +12159,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        WALTER_MANECTRIC(42),
+        WALTER_DRAMPA(42),
         }
     },
 },
@@ -12166,10 +12170,10 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        WALTER_GOLDUCK(44),
+        WALTER_RAPIDASH(44),
         },
         {
-        WALTER_MANECTRIC(44),
+        WALTER_DRAMPA(44),
         }
     },
 },
@@ -12180,10 +12184,10 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        WALTER_GOLDUCK(46),
+        WALTER_RAPIDASH(46),
         },
         {
-        WALTER_MANECTRIC(46),
+        WALTER_DRAMPA(46),
         }
     },
 },
@@ -12194,13 +12198,13 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        WALTER_LINOONE(REMATCH_4_LEVEL_2),
+        WALTER_STONJOURNER(REMATCH_4_LEVEL_2),
         },
         {
-        WALTER_GOLDUCK(REMATCH_4_LEVEL_2),
+        WALTER_RAPIDASH(REMATCH_4_LEVEL_2),
         },
         {
-        WALTER_MANECTRIC(REMATCH_4_LEVEL_1),
+        WALTER_DRAMPA(REMATCH_4_LEVEL_1),
         }
     },
 },
@@ -12211,16 +12215,13 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        WALTER_LINOONE(REMATCH_5_LEVEL_2),
-        .moves = {MOVE_HEADBUTT, MOVE_PLAY_ROUGH, MOVE_PIN_MISSILE, MOVE_BELLY_DRUM}
+        WALTER_STONJOURNER(REMATCH_5_LEVEL_2),
         },
         {
-        WALTER_GOLDUCK(REMATCH_5_LEVEL_2),
-        .moves = {MOVE_HYDRO_PUMP, MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_AMNESIA}
+        WALTER_RAPIDASH(REMATCH_5_LEVEL_2),
         },
         {
-        WALTER_MANECTRIC(REMATCH_5_MINI_BOSS),
-        .moves = {MOVE_DISCHARGE, MOVE_SNARL, MOVE_CHARGE, MOVE_ROAR}
+        WALTER_DRAMPA(REMATCH_5_MINI_BOSS),
         }
     },
 },
@@ -12249,7 +12250,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 41,
-        .species = SPECIES_MANECTRIC,
+        .species = SPECIES_ELECTABUZZ,
         IVS(12),
         },
         {
@@ -12427,11 +12428,11 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 42,
-        .species = SPECIES_DELCATTY,
+        .species = SPECIES_DACHSBUN,
         },
         {
         .lvl = 42,
-        .species = SPECIES_MANECTRIC,
+        .species = SPECIES_HOUNDOOM,
         }
     },
 },
@@ -12445,15 +12446,15 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 41,
-        .species = SPECIES_WOBBUFFET,
-        },
-        {
-        .lvl = 41,
         .species = SPECIES_NATU,
         },
         {
         .lvl = 41,
         .species = SPECIES_KADABRA,
+        },
+        {
+        .lvl = 41,
+        .species = SPECIES_HATTERENE,
         }
     },
 },
@@ -12481,9 +12482,9 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
         },                                                                                                          \
         {                                                                                                           \
         POKEMON_BREEDER_MON(Level),                                                                                 \
-        .species = SPECIES_CORSOLA,                                                                                 \
-        .ability = ABILITY_REGENERATOR,                                                                             \
-        .moves = {MOVE_HYDRO_PUMP, MOVE_ROCK_BLAST, MOVE_AQUA_RING, MOVE_CAMOUFLAGE},                               \
+        .species = SPECIES_KLEFKI,                                                                                  \
+        .ability = ABILITY_MAGICIAN,                                                                                \
+        .moves = {MOVE_PSYSHOCK, MOVE_SKITTER_SMACK, MOVE_DEFOG, MOVE_CONFIDE},                                     \
         .gender = TRAINER_MON_FEMALE                                                                                \
         },                                                                                                          \
         {                                                                                                           \
@@ -12690,8 +12691,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 43,
-        .species = SPECIES_WOBBUFFET,
-        .moves = {MOVE_DESTINY_BOND, MOVE_SAFEGUARD, MOVE_COUNTER, MOVE_MIRROR_COAT}
+        .species = SPECIES_MUSHARNA,
         }
     },
 },
@@ -12707,9 +12707,11 @@ MARINA_BATTLE(MT_PYRE, 42),
     PSYCHIC_M_INFO,              \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define CAMERON_SOLROCK(Level) \
-    .lvl = Level,              \
-    .species = SPECIES_SOLROCK
+#define CAMERON_SLOWBRO(Level)    \
+    .lvl = Level,                 \
+    .species = SPECIES_SLOWBRO,   \
+    .ability = ABILITY_OWN_TEMPO, \
+    .gender = TRAINER_MON_MALE
 
 #define CAMERON_KADABRA(Level)                                  \
     .lvl = Level,                                               \
@@ -12726,7 +12728,7 @@ MARINA_BATTLE(MT_PYRE, 42),
         CAMERON_KADABRA(44),
         },
         {
-        CAMERON_SOLROCK(44),
+        CAMERON_SLOWBRO(44),
         }
     },
 },
@@ -12741,7 +12743,7 @@ MARINA_BATTLE(MT_PYRE, 42),
         IVS(2),
         },
         {
-        CAMERON_SOLROCK(46),
+        CAMERON_SLOWBRO(46),
         IVS(2),
         }
     },
@@ -12757,7 +12759,7 @@ MARINA_BATTLE(MT_PYRE, 42),
         IVS(3),
         },
         {
-        CAMERON_SOLROCK(48),
+        CAMERON_SLOWBRO(48),
         IVS(3),
         }
     },
@@ -12773,7 +12775,7 @@ MARINA_BATTLE(MT_PYRE, 42),
         IVS(4),
         },
         {
-        CAMERON_SOLROCK(REMATCH_4_LEVEL_2),
+        CAMERON_SLOWBRO(REMATCH_4_LEVEL_2),
         IVS(4),
         }
     },
@@ -12789,7 +12791,7 @@ MARINA_BATTLE(MT_PYRE, 42),
         IVS(5),
         },
         {
-        CAMERON_SOLROCK(REMATCH_5_LEVEL_2),
+        CAMERON_SLOWBRO(REMATCH_5_LEVEL_2),
         IVS(5),
         }
     },
@@ -12834,11 +12836,11 @@ MARINA_BATTLE(MT_PYRE, 42),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 44,
-        .species = SPECIES_DUSKULL,
+        .species = SPECIES_GASTLY,
         },
         {
         .lvl = 44,
-        .species = SPECIES_SHUPPET,
+        .species = SPECIES_MISDREAVUS,
         }
     },
 },
@@ -12852,11 +12854,11 @@ MARINA_BATTLE(MT_PYRE, 42),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 44,
-        .species = SPECIES_ZANGOOSE,
+        .species = SPECIES_GASTRODON_EAST,
         },
         {
         .lvl = 44,
-        .species = SPECIES_SEVIPER,
+        .species = SPECIES_GASTRODON_WEST,
         }
     },
 },
@@ -12876,12 +12878,12 @@ MARINA_BATTLE(MT_PYRE, 42),
         },
         {
         .lvl = 43,
-        .species = SPECIES_ROSELIA,
+        .species = SPECIES_GRIMER,
         IVS(12),
         },
         {
         .lvl = 43,
-        .species = SPECIES_KILOWATTREL,
+        .species = SPECIES_GLIMMET,
         IVS(12),
         }
     },
@@ -12897,9 +12899,8 @@ MARINA_BATTLE(MT_PYRE, 42),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 41,
-        .species = SPECIES_SWELLOW,
+        .species = SPECIES_SNEASEL,
         IVS(12),
-        .moves = {MOVE_AERIAL_ACE, MOVE_QUICK_ATTACK, MOVE_FOCUS_ENERGY, MOVE_ENDEAVOR}
         },
         {
         .lvl = 41,
@@ -12939,10 +12940,9 @@ MARINA_BATTLE(MT_PYRE, 42),
     .ability = ABILITY_PUNK_ROCK,                              \
     .gender = TRAINER_MON_MALE
 
-#define FERNANDO_MANECTRIC(Level)     \
-    .lvl = Level,                     \
-    .species = SPECIES_MANECTRIC,     \
-    .ability = ABILITY_LIGHTNING_ROD, \
+#define FERNANDO_ELECTABUZZ(Level) \
+    .lvl = Level,                  \
+    .species = SPECIES_ELECTABUZZ, \
     .gender = TRAINER_MON_MALE
 
 #define FERNANDO_ELECTRODE(Level) \
@@ -12956,7 +12956,7 @@ MARINA_BATTLE(MT_PYRE, 42),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        FERNANDO_MANECTRIC(44),
+        FERNANDO_ELECTABUZZ(44),
         },
         {
         FERNANDO_LOUDRED(44),
@@ -12974,7 +12974,7 @@ MARINA_BATTLE(MT_PYRE, 42),
         IVS(2),
         },
         {
-        FERNANDO_MANECTRIC(45),
+        FERNANDO_ELECTABUZZ(45),
         IVS(2),
         },
         {
@@ -12994,7 +12994,7 @@ MARINA_BATTLE(MT_PYRE, 42),
         IVS(3),
         },
         {
-        FERNANDO_MANECTRIC(47),
+        FERNANDO_ELECTABUZZ(47),
         IVS(3),
         },
         {
@@ -13014,7 +13014,7 @@ MARINA_BATTLE(MT_PYRE, 42),
         IVS(4),
         },
         {
-        FERNANDO_MANECTRIC(REMATCH_4_LEVEL_3),
+        FERNANDO_ELECTABUZZ(REMATCH_4_LEVEL_3),
         IVS(4),
         },
         {
@@ -13034,7 +13034,7 @@ MARINA_BATTLE(MT_PYRE, 42),
         IVS(5),
         },
         {
-        FERNANDO_MANECTRIC(REMATCH_5_LEVEL_3),
+        FERNANDO_ELECTABUZZ(REMATCH_5_LEVEL_3),
         IVS(5),
         },
         {
@@ -13067,9 +13067,11 @@ MARINA_BATTLE(MT_PYRE, 42),
     PSYCHIC_F_INFO,            \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define JACKI_LUNATONE(Level) \
-    .lvl = Level,             \
-    .species = SPECIES_LUNATONE
+#define JACKI_SLOWKING(Level)     \
+    .lvl = Level,                 \
+    .species = SPECIES_SLOWKING,  \
+    .ability = ABILITY_OWN_TEMPO, \
+    .gender = TRAINER_MON_MALE
 
 #define JACKI_KADABRA(Level)                                    \
     .lvl = Level,                                               \
@@ -13086,7 +13088,7 @@ MARINA_BATTLE(MT_PYRE, 42),
         JACKI_KADABRA(44),
         },
         {
-        JACKI_LUNATONE(44),
+        JACKI_SLOWKING(44),
         }
     },
 },
@@ -13101,7 +13103,7 @@ MARINA_BATTLE(MT_PYRE, 42),
         IVS(2),
         },
         {
-        JACKI_LUNATONE(39),
+        JACKI_SLOWKING(39),
         IVS(2),
         }
     },
@@ -13117,7 +13119,7 @@ MARINA_BATTLE(MT_PYRE, 42),
         IVS(3),
         },
         {
-        JACKI_LUNATONE(41),
+        JACKI_SLOWKING(41),
         IVS(3),
         }
     },
@@ -13133,7 +13135,7 @@ MARINA_BATTLE(MT_PYRE, 42),
         IVS(4),
         },
         {
-        JACKI_LUNATONE(REMATCH_4_LEVEL_2),
+        JACKI_SLOWKING(REMATCH_4_LEVEL_2),
         IVS(4),
         }
     },
@@ -13149,7 +13151,7 @@ MARINA_BATTLE(MT_PYRE, 42),
         IVS(5),
         },
         {
-        JACKI_LUNATONE(REMATCH_5_LEVEL_2),
+        JACKI_SLOWKING(REMATCH_5_LEVEL_2),
         IVS(5),
         }
     },
@@ -13190,16 +13192,16 @@ MARINA_BATTLE(MT_PYRE, 42),
     },                                                      \
 }
 
-MAGMA_HIDEOUT_GRUNT(1, M, NUMEL),
-MAGMA_HIDEOUT_GRUNT(2, M, GEODUDE),
-MAGMA_HIDEOUT_GRUNT(3, F, VULPIX),
-MAGMA_HIDEOUT_GRUNT(4, M, BALTOY),
-MAGMA_HIDEOUT_GRUNT(5, M, RHYHORN),
-MAGMA_HIDEOUT_GRUNT(6, F, VULPIX),
-MAGMA_HIDEOUT_GRUNT(7, M, SANDSHREW),
-MAGMA_HIDEOUT_GRUNT(8, M, NUMEL),
-MAGMA_HIDEOUT_GRUNT(9, M, HOUNDOUR),
-MAGMA_HIDEOUT_GRUNT(10, M, PHANPY),
+MAGMA_HIDEOUT_GRUNT( 1, M, BALTOY),
+MAGMA_HIDEOUT_GRUNT( 2, M, PHANPY),
+MAGMA_HIDEOUT_GRUNT( 3, F, DRILBUR),
+MAGMA_HIDEOUT_GRUNT( 4, M, TRAPINCH),
+MAGMA_HIDEOUT_GRUNT( 5, M, GLIGAR),
+MAGMA_HIDEOUT_GRUNT( 6, F, SANDSHREW),
+MAGMA_HIDEOUT_GRUNT( 7, M, GOLETT),
+MAGMA_HIDEOUT_GRUNT( 8, M, SANDILE),
+MAGMA_HIDEOUT_GRUNT( 9, M, CUBONE),
+MAGMA_HIDEOUT_GRUNT(10, M, RHYHORN),
 
 WALKER_BATTLE(MAGMA_HIDEOUT, MAGMA_HIDEOUT_LEVEL),
 GAETANO_BATTLE(MAGMA_HIDEOUT, MAGMA_HIDEOUT_LEVEL),
@@ -13243,9 +13245,9 @@ TABITHA_BATTLE(MAGMA_HIDEOUT, 47, 9),
     },                                                         \
 }
 
-AQUA_HIDEOUT_GRUNT(1, M, LOTAD, MAGIKARP),
-AQUA_HIDEOUT_GRUNT(2, F, CORSOLA, LUVDISC),
-AQUA_HIDEOUT_GRUNT(3, M, WATTREL, CHINCHOU),
+AQUA_HIDEOUT_GRUNT(1, M, BIBAREL,  MAGIKARP),
+AQUA_HIDEOUT_GRUNT(2, F, SEALEO,   CRAMORANT),
+AQUA_HIDEOUT_GRUNT(3, M, SLOWKING, SLOWBRO),
 
 NERISSA_BATTLE(AQUA_HIDEOUT, AQUA_HIDEOUT_LEVEL),
 BERYL_BATTLE(AQUA_HIDEOUT, AQUA_HIDEOUT_LEVEL),
@@ -13298,10 +13300,10 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     SIS_AND_BRO_INFO,               \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define LILA_CHINCHOU(Level)                                    \
-    .lvl = Level,                                               \
-    .species = Level < 47 ? SPECIES_CHINCHOU : SPECIES_LANTURN, \
-    .ability = ABILITY_VOLT_ABSORB,                             \
+#define LILA_MANTYKE(Level)                                    \
+    .lvl = Level,                                              \
+    .species = Level < 47 ? SPECIES_MANTYKE : SPECIES_MANTINE, \
+    .ability = ABILITY_SWIFT_SWIM,                             \
     .gender = TRAINER_MON_FEMALE
 
 #define ROY_HORSEA(Level)                                                                                    \
@@ -13316,7 +13318,7 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        LILA_CHINCHOU(46),
+        LILA_MANTYKE(46),
         },
         {
         ROY_HORSEA(44),
@@ -13330,7 +13332,7 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        LILA_CHINCHOU(47),
+        LILA_MANTYKE(47),
         },
         {
         ROY_HORSEA(45),
@@ -13344,7 +13346,7 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        LILA_CHINCHOU(48),
+        LILA_MANTYKE(48),
         },
         {
         ROY_HORSEA(46),
@@ -13358,7 +13360,7 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        LILA_CHINCHOU(REMATCH_4_LEVEL_1),
+        LILA_MANTYKE(REMATCH_4_LEVEL_1),
         },
         {
         ROY_HORSEA(REMATCH_4_LEVEL_3),
@@ -13372,7 +13374,7 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        LILA_CHINCHOU(REMATCH_5_LEVEL_1),
+        LILA_MANTYKE(REMATCH_5_LEVEL_1),
         },
         {
         ROY_HORSEA(REMATCH_5_LEVEL_3),
@@ -13389,11 +13391,11 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 45,
-        .species = SPECIES_TENTACRUEL,
+        .species = SPECIES_BARBARACLE,
         },
         {
         .lvl = 45,
-        .species = SPECIES_KILOWATTREL,
+        .species = SPECIES_SEALEO,
         }
     },
 },
@@ -13407,16 +13409,6 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .lvl = Level,                                              \
     .species = Level < 47 ? SPECIES_WAILMER : SPECIES_WAILORD, \
     .ability = ABILITY_WATER_VEIL,                             \
-    .gender = TRAINER_MON_FEMALE
-
-#define JENNY_STARYU(Level)                                   \
-    .lvl = Level,                                             \
-    .species = Level < 47 ? SPECIES_STARYU : SPECIES_STARMIE, \
-    .ability = ABILITY_ILLUMINATE
-
-#define JENNY_LUVDISC(Level)    \
-    .lvl = Level,               \
-    .species = SPECIES_LUVDISC, \
     .gender = TRAINER_MON_FEMALE
 
 [DIFFICULTY_NORMAL][TRAINER_JENNY_1] =
@@ -13433,11 +13425,8 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
 [DIFFICULTY_NORMAL][TRAINER_JENNY_2] =
 {
     JENNY_INFO,
-    .partySize = 2,
+    .partySize = 1,
     .party = (const struct TrainerMon[]) {
-        {
-        JENNY_STARYU(46),
-        },
         {
         JENNY_WAILMER(46),
         }
@@ -13447,14 +13436,8 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
 [DIFFICULTY_NORMAL][TRAINER_JENNY_3] =
 {
     JENNY_INFO,
-    .partySize = 3,
+    .partySize = 1,
     .party = (const struct TrainerMon[]) {
-        {
-        JENNY_LUVDISC(47),
-        },
-        {
-        JENNY_STARYU(47),
-        },
         {
         JENNY_WAILMER(47),
         }
@@ -13464,14 +13447,8 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
 [DIFFICULTY_NORMAL][TRAINER_JENNY_4] =
 {
     JENNY_INFO,
-    .partySize = 3,
+    .partySize = 1,
     .party = (const struct TrainerMon[]) {
-        {
-        JENNY_LUVDISC(REMATCH_4_LEVEL_3),
-        },
-        {
-        JENNY_STARYU(REMATCH_4_LEVEL_3),
-        },
         {
         JENNY_WAILMER(REMATCH_4_LEVEL_3),
         }
@@ -13481,14 +13458,8 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
 [DIFFICULTY_NORMAL][TRAINER_JENNY_5] =
 {
     JENNY_INFO,
-    .partySize = 3,
+    .partySize = 1,
     .party = (const struct TrainerMon[]) {
-        {
-        JENNY_LUVDISC(REMATCH_5_LEVEL_3),
-        },
-        {
-        JENNY_STARYU(REMATCH_5_LEVEL_3),
-        },
         {
         JENNY_WAILMER(REMATCH_5_LEVEL_3),
         }
@@ -13504,7 +13475,7 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 45,
-        .species = SPECIES_TENTACRUEL,
+        .species = SPECIES_BARRASKEWDA,
         },
         {
         .lvl = 45,
@@ -13522,7 +13493,7 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .party = (const struct TrainerMon[]) {
         {
         TRIATHLETE_MON(46, 0),
-        .species = SPECIES_STARMIE,
+        .species = SPECIES_QUAGSIRE,
         }
     },
 },
@@ -13560,15 +13531,9 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .gender = TRAINER_MON_MALE
 
 #define ERNEST_KILOWATTREL(Level)   \
-    .lvl = Level,                \
+    .lvl = Level,                   \
     .species = SPECIES_KILOWATTREL, \
-    .ability = ABILITY_KEEN_EYE, \
-    .gender = TRAINER_MON_MALE
-
-#define ERNEST_TENTACRUEL(Level)   \
-    .lvl = Level,                  \
-    .species = SPECIES_TENTACRUEL, \
-    .ability = ABILITY_CLEAR_BODY, \
+    .ability = ABILITY_WIND_POWER,  \
     .gender = TRAINER_MON_MALE
 
 [DIFFICULTY_NORMAL][TRAINER_ERNEST_1] =
@@ -13591,12 +13556,8 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
 [DIFFICULTY_NORMAL][TRAINER_ERNEST_2] =
 {
     ERNEST_INFO,
-    .partySize = 4,
+    .partySize = 3,
     .party = (const struct TrainerMon[]) {
-        {
-        ERNEST_TENTACRUEL(44),
-        IVS(2),
-        },
         {
         ERNEST_KILOWATTREL(44),
         IVS(2),
@@ -13615,12 +13576,8 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
 [DIFFICULTY_NORMAL][TRAINER_ERNEST_3] =
 {
     ERNEST_INFO,
-    .partySize = 4,
+    .partySize = 3,
     .party = (const struct TrainerMon[]) {
-        {
-        ERNEST_TENTACRUEL(45),
-        IVS(3),
-        },
         {
         ERNEST_KILOWATTREL(45),
         IVS(3),
@@ -13639,12 +13596,8 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
 [DIFFICULTY_NORMAL][TRAINER_ERNEST_4] =
 {
     ERNEST_INFO,
-    .partySize = 4,
+    .partySize = 3,
     .party = (const struct TrainerMon[]) {
-        {
-        ERNEST_TENTACRUEL(REMATCH_4_LEVEL_4),
-        IVS(4),
-        },
         {
         ERNEST_KILOWATTREL(REMATCH_4_LEVEL_4),
         IVS(4),
@@ -13663,12 +13616,8 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
 [DIFFICULTY_NORMAL][TRAINER_ERNEST_5] =
 {
     ERNEST_INFO,
-    .partySize = 4,
+    .partySize = 3,
     .party = (const struct TrainerMon[]) {
-        {
-        ERNEST_TENTACRUEL(REMATCH_5_LEVEL_4),
-        IVS(5),
-        },
         {
         ERNEST_KILOWATTREL(REMATCH_5_LEVEL_4),
         IVS(5),
@@ -13693,7 +13642,7 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 46,
-        .species = SPECIES_TENTACRUEL,
+        .species = SPECIES_BARRASKEWDA,
         }
     },
 },
@@ -13707,7 +13656,7 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 46,
-        .species = SPECIES_SEAKING,
+        .species = SPECIES_MANTINE,
         }
     },
 },
@@ -13721,7 +13670,7 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 46,
-        .species = SPECIES_LUVDISC,
+        .species = SPECIES_SHELLDER,
         }
     },
 },
@@ -13735,7 +13684,7 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 45,
-        .species = SPECIES_TROPIUS,
+        .species = SPECIES_CRAMORANT,
         },
         {
         .lvl = 45,
@@ -13753,7 +13702,7 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 45,
-        .species = SPECIES_MANECTRIC,
+        .species = SPECIES_DONPHAN,
         },
         {
         .lvl = 45,
@@ -13819,12 +13768,12 @@ MOSSDEEP_GYM_TRAINER(PRESTON,  "Preston",  PSYCHIC_M,  GALLADE),
 MOSSDEEP_GYM_TRAINER(MAURA,    "Maura",    PSYCHIC_F,  ALAKAZAM),
 MOSSDEEP_GYM_TRAINER(SAMANTHA, "Samantha", PSYCHIC_F,  XATU),
 MOSSDEEP_GYM_TRAINER(BLAKE,    "Blake",    PSYCHIC_M,  CLAYDOL),
-MOSSDEEP_GYM_TRAINER(MACEY,    "Macey",    PSYCHIC_F,  STARMIE),
-MOSSDEEP_GYM_TRAINER(CLIFFORD, "Clifford", GENTLEMAN,  FARIGIRAF),
+MOSSDEEP_GYM_TRAINER(MACEY,    "Macey",    PSYCHIC_F,  MALAMAR),
+MOSSDEEP_GYM_TRAINER(CLIFFORD, "Clifford", GENTLEMAN,  ESPEON),
 MOSSDEEP_GYM_TRAINER(KATHLEEN, "Kathleen", PSYCHIC_F,  CHIMECHO),
-MOSSDEEP_GYM_TRAINER(NICHOLAS, "Nicholas", PSYCHIC_M,  WOBBUFFET),
+MOSSDEEP_GYM_TRAINER(NICHOLAS, "Nicholas", PSYCHIC_M,  MUSHARNA),
 MOSSDEEP_GYM_TRAINER(NATE,     "Nate",     GENTLEMAN,  GRUMPIG),
-MOSSDEEP_GYM_TRAINER(VIRGIL,   "Virgil",   PSYCHIC_M,  GOLDUCK),
+MOSSDEEP_GYM_TRAINER(VIRGIL,   "Virgil",   PSYCHIC_M,  HATTERENE),
 MOSSDEEP_GYM_TRAINER(SYLVIA,   "Sylvia",   HEX_MANIAC, MEDICHAM),
 MOSSDEEP_GYM_TRAINER(HANNAH,   "Hannah",   PSYCHIC_F,  GARDEVOIR),
 
@@ -13843,7 +13792,7 @@ MOSSDEEP_GYM_TRAINER(HANNAH,   "Hannah",   PSYCHIC_F,  GARDEVOIR),
         },
         {
         .lvl = 46,
-        .species = SPECIES_ROSELIA,
+        .species = SPECIES_FERROTHORN,
         IVS(6),
         }
     },
@@ -13858,7 +13807,7 @@ MOSSDEEP_GYM_TRAINER(HANNAH,   "Hannah",   PSYCHIC_F,  GARDEVOIR),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 47,
-        .species = SPECIES_CACTURNE,
+        .species = SPECIES_SHIFTRY,
         IVS(6),
         }
     },
@@ -13873,7 +13822,7 @@ MOSSDEEP_GYM_TRAINER(HANNAH,   "Hannah",   PSYCHIC_F,  GARDEVOIR),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 45,
-        .species = SPECIES_SWELLOW,
+        .species = SPECIES_DELIBIRD,
         },
         {
         .lvl = 45,
@@ -13920,11 +13869,11 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 49,
-        .species = SPECIES_SWELLOW,
+        .species = SPECIES_HAWLUCHA,
         },
         {
         .lvl = 49,
-        .species = SPECIES_SKARMORY,
+        .species = SPECIES_BOMBIRDIER,
         }
     },
 },
@@ -13939,14 +13888,13 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 49,
-        .species = SPECIES_MANECTRIC,
+        .species = SPECIES_HAUNTER,
         IVS(12),
         },
         {
         .lvl = 49,
-        .species = SPECIES_LINOONE,
+        .species = SPECIES_SEISMITOAD,
         IVS(12),
-        .moves = {MOVE_SURF, MOVE_THIEF, MOVE_NONE, MOVE_NONE}
         }
     },
 },
@@ -13964,7 +13912,7 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
         },
         {
         .lvl = 48,
-        .species = SPECIES_TENTACRUEL,
+        .species = SPECIES_SEADRA,
         },
         {
         .lvl = 48,
@@ -13986,7 +13934,7 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
         },
         {
         .lvl = 48,
-        .species = SPECIES_LUVDISC,
+        .species = SPECIES_GYARADOS,
         },
         {
         .lvl = 48,
@@ -14008,7 +13956,7 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
         },
         {
         .lvl = 49,
-        .species = SPECIES_TENTACRUEL,
+        .species = SPECIES_BARRASKEWDA,
         }
     },
 },
@@ -14022,11 +13970,11 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     .party = (const struct TrainerMon[]) {
         {
         TRIATHLETE_MON(49, 0),
-        .species = SPECIES_LANTURN,
+        .species = SPECIES_CLOYSTER,
         },
         {
         TRIATHLETE_MON(49, 0),
-        .species = SPECIES_STARMIE,
+        .species = SPECIES_MANTINE,
         }
     },
 },
@@ -14149,11 +14097,11 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     .party = (const struct TrainerMon[]) {
         {
         TRIATHLETE_MON(49, 0),
-        .species = SPECIES_KILOWATTREL,
+        .species = SPECIES_GASTRODON_EAST,
         },
         {
         TRIATHLETE_MON(49, 0),
-        .species = SPECIES_STARMIE,
+        .species = SPECIES_POLITOED,
         }
     },
 },
@@ -14182,7 +14130,7 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     .party = (const struct TrainerMon[]) {
         {
         TRIATHLETE_MON(50, 0),
-        .species = SPECIES_STARMIE,
+        .species = SPECIES_POLIWRATH,
         }
     },
 },
@@ -14196,11 +14144,11 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 48,
-        .species = SPECIES_TENTACRUEL,
+        .species = SPECIES_CLOYSTER,
         },
         {
         .lvl = 48,
-        .species = SPECIES_KILOWATTREL,
+        .species = SPECIES_GASTRODON_WEST,
         },
         {
         .lvl = 48,
@@ -14250,11 +14198,11 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 49,
-        .species = SPECIES_CORSOLA,
+        .species = SPECIES_SEADRA,
         },
         {
         .lvl = 49,
-        .species = SPECIES_LUVDISC,
+        .species = SPECIES_WAILORD,
         }
     },
 },
@@ -14264,21 +14212,22 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     TRIATHLETE_M_SWIMMING_INFO, \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define PABLO_STARYU(Level, IV)                               \
-    TRIATHLETE_MON(Level, IV),                                \
-    .species = Level < 50 ? SPECIES_STARYU : SPECIES_STARMIE, \
-    .ability = ABILITY_ILLUMINATE
-
-#define PABLO_CORPHISH(Level, IV)                                 \
-    TRIATHLETE_MON(Level, IV),                                    \
-    .species = Level < 50 ? SPECIES_CORPHISH : SPECIES_CRAWDAUNT, \
-    .ability = ABILITY_SHELL_ARMOR,                               \
+#define PABLO_BARRASKEWDA(Level, IV) \
+    TRIATHLETE_MON(Level, IV),       \
+    .species = SPECIES_BARRASKEWDA,  \
+    .ability = ABILITY_SWIFT_SWIM,   \
     .gender = TRAINER_MON_MALE
 
-#define PABLO_KILOWATTREL(Level, IV) \
-    TRIATHLETE_MON(Level, IV),    \
-    .species = SPECIES_KILOWATTREL,  \
-    .ability = ABILITY_KEEN_EYE,  \
+#define PABLO_CLOYSTER(Level, IV)   \
+    TRIATHLETE_MON(Level, IV),      \
+    .species = SPECIES_CLOYSTER,    \
+    .ability = ABILITY_SHELL_ARMOR, \
+    .gender = TRAINER_MON_MALE
+
+#define PABLO_MANTINE(Level, IV)   \
+    TRIATHLETE_MON(Level, IV),     \
+    .species = SPECIES_MANTINE,    \
+    .ability = ABILITY_SWIFT_SWIM, \
     .gender = TRAINER_MON_MALE
 
 [DIFFICULTY_NORMAL][TRAINER_PABLO_1] =
@@ -14287,10 +14236,10 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        PABLO_CORPHISH(49, 0),
+        PABLO_CLOYSTER(49, 0),
         },
         {
-        PABLO_STARYU(49, 0),
+        PABLO_BARRASKEWDA(49, 0),
         }
     },
 },
@@ -14301,10 +14250,10 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        PABLO_CORPHISH(50, 2),
+        PABLO_CLOYSTER(50, 2),
         },
         {
-        PABLO_STARYU(50, 2),
+        PABLO_BARRASKEWDA(50, 2),
         }
     },
 },
@@ -14315,13 +14264,13 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        PABLO_KILOWATTREL(51, 3),
+        PABLO_MANTINE(51, 3),
         },
         {
-        PABLO_CORPHISH(51, 3),
+        PABLO_CLOYSTER(51, 3),
         },
         {
-        PABLO_STARYU(51, 3),
+        PABLO_BARRASKEWDA(51, 3),
         }
     },
 },
@@ -14332,13 +14281,13 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        PABLO_KILOWATTREL(52, 4),
+        PABLO_MANTINE(52, 4),
         },
         {
-        PABLO_CORPHISH(52, 4),
+        PABLO_CLOYSTER(52, 4),
         },
         {
-        PABLO_STARYU(52, 4),
+        PABLO_BARRASKEWDA(52, 4),
         }
     },
 },
@@ -14349,13 +14298,13 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        PABLO_KILOWATTREL(REMATCH_5_LEVEL_3, 5),
+        PABLO_MANTINE(REMATCH_5_LEVEL_3, 5),
         },
         {
-        PABLO_CORPHISH(REMATCH_5_LEVEL_3, 5),
+        PABLO_CLOYSTER(REMATCH_5_LEVEL_3, 5),
         },
         {
-        PABLO_STARYU(REMATCH_5_LEVEL_3, 5),
+        PABLO_BARRASKEWDA(REMATCH_5_LEVEL_3, 5),
         }
     },
 },
@@ -14369,7 +14318,7 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 50,
-        .species = SPECIES_SEAKING,
+        .species = SPECIES_MANTINE,
         }
     },
 },
@@ -14411,7 +14360,7 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
         },
         {
         .lvl = 49,
-        .species = SPECIES_AZUMARILL,
+        .species = SPECIES_HONEDGE,
         IVS(12),
         }
     },
@@ -14426,11 +14375,11 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 48,
-        .species = SPECIES_LANTURN,
+        .species = SPECIES_CLOYSTER,
         },
         {
         .lvl = 48,
-        .species = SPECIES_TENTACRUEL,
+        .species = SPECIES_SEADRA,
         },
         {
         .lvl = 48,
@@ -14439,21 +14388,21 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     },
 },
 
-#define ISAIAH_BATTLE(Match, Level)                                 \
-[DIFFICULTY_NORMAL][TRAINER_ISAIAH_##Match] =                       \
-{                                                                   \
-    .trainerName = _("Isaiah"),                                     \
-    TRIATHLETE_M_SWIMMING_INFO,                                     \
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,                              \
-    .partySize = 1,                                                 \
-    .party = (const struct TrainerMon[]) {                          \
-        {                                                           \
-        TRIATHLETE_MON(Level, Match),                               \
-        .species = Level < 51 ? SPECIES_CHINCHOU : SPECIES_LANTURN, \
-        .ability = ABILITY_VOLT_ABSORB,                             \
-        .gender = TRAINER_MON_MALE,                                 \
-        }                                                           \
-    }                                                               \
+#define ISAIAH_BATTLE(Match, Level)           \
+[DIFFICULTY_NORMAL][TRAINER_ISAIAH_##Match] = \
+{                                             \
+    .trainerName = _("Isaiah"),               \
+    TRIATHLETE_M_SWIMMING_INFO,               \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,        \
+    .partySize = 1,                           \
+    .party = (const struct TrainerMon[]) {    \
+        {                                     \
+        TRIATHLETE_MON(Level, Match),         \
+        .species = SPECIES_GYARADOS,          \
+        .ability = ABILITY_INTIMIDATE,        \
+        .gender = TRAINER_MON_MALE,           \
+        }                                     \
+    }                                         \
 }
 
 ISAIAH_BATTLE(1, 50),
@@ -14462,20 +14411,20 @@ ISAIAH_BATTLE(3, 52),
 ISAIAH_BATTLE(4, 53),
 ISAIAH_BATTLE(5, REMATCH_5_LEVEL_1),
 
-#define KATELYN_BATTLE(Match, Level)                              \
-[DIFFICULTY_NORMAL][TRAINER_KATELYN_##Match] =                    \
-{                                                                 \
-    .trainerName = _("Katelyn"),                                  \
-    TRIATHLETE_F_SWIMMING_INFO,                                   \
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,                            \
-    .partySize = 1,                                               \
-    .party = (const struct TrainerMon[]) {                        \
-        {                                                         \
-        TRIATHLETE_MON(Level, Match),                             \
-        .species = Level < 51 ? SPECIES_STARYU : SPECIES_STARMIE, \
-        .ability = ABILITY_ILLUMINATE,                            \
-        }                                                         \
-    }                                                             \
+#define KATELYN_BATTLE(Match, Level)           \
+[DIFFICULTY_NORMAL][TRAINER_KATELYN_##Match] = \
+{                                              \
+    .trainerName = _("Katelyn"),               \
+    TRIATHLETE_F_SWIMMING_INFO,                \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,         \
+    .partySize = 1,                            \
+    .party = (const struct TrainerMon[]) {     \
+        {                                      \
+        TRIATHLETE_MON(Level, Match),          \
+        .species = SPECIES_MILOTIC,            \
+        .ability = ABILITY_MARVEL_SCALE,       \
+        }                                      \
+    }                                          \
 }
 
 KATELYN_BATTLE(1, 50),
@@ -14493,7 +14442,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 50,
-        .species = SPECIES_SEAKING,
+        .species = SPECIES_MANTINE,
         }
     },
 },
@@ -14507,7 +14456,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 50,
-        .species = SPECIES_TENTACRUEL,
+        .species = SPECIES_BARRASKEWDA,
         }
     },
 },
@@ -14571,11 +14520,11 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         TRIATHLETE_MON(52, 0),
-        .species = SPECIES_STARMIE,
+        .species = SPECIES_CLOYSTER,
         },
         {
         TRIATHLETE_MON(52, 0),
-        .species = SPECIES_KILOWATTREL,
+        .species = SPECIES_SEISMITOAD,
         }
     },
 },
@@ -14589,11 +14538,11 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         TRIATHLETE_MON(52, 0),
-        .species = SPECIES_KILOWATTREL,
+        .species = SPECIES_SLOWKING,
         },
         {
         TRIATHLETE_MON(52, 0),
-        .species = SPECIES_STARMIE,
+        .species = SPECIES_SLOWBRO,
         }
     },
 },
@@ -14621,7 +14570,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 53,
-        .species = SPECIES_LANTURN,
+        .species = SPECIES_POLIWRATH,
         }
     },
 },
@@ -14650,7 +14599,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 52,
-        .species = SPECIES_SEAKING,
+        .species = SPECIES_POLIWHIRL,
         },
         {
         .lvl = 52,
@@ -14668,7 +14617,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 52,
-        .species = SPECIES_TENTACRUEL,
+        .species = SPECIES_BARRASKEWDA,
         },
         {
         .lvl = 52,
@@ -14701,7 +14650,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         TRIATHLETE_MON(53, 0),
-        .species = SPECIES_STARMIE,
+        .species = SPECIES_SEADRA,
         }
     },
 },
@@ -14715,7 +14664,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 53,
-        .species = SPECIES_KILOWATTREL,
+        .species = SPECIES_CRAMORANT,
         }
     },
 },
@@ -14729,7 +14678,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 53,
-        .species = SPECIES_SEAKING,
+        .species = SPECIES_MANTINE,
         }
     },
 },
@@ -14743,11 +14692,11 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 52,
-        .species = SPECIES_KILOWATTREL,
+        .species = SPECIES_CRAMORANT,
         },
         {
         .lvl = 52,
-        .species = SPECIES_TENTACRUEL,
+        .species = SPECIES_BARRASKEWDA,
         }
     },
 },
@@ -14761,7 +14710,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 53,
-        .species = SPECIES_LUVDISC,
+        .species = SPECIES_CLOYSTER,
         }
     },
 },
@@ -14779,7 +14728,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
         },
         {
         .lvl = 51,
-        .species = SPECIES_KILOWATTREL,
+        .species = SPECIES_CRAMORANT,
         }
     },
 },
@@ -14871,7 +14820,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 53,
-        .species = SPECIES_SWELLOW,
+        .species = SPECIES_DOUBLADE,
         },
         {
         .lvl = 53,
@@ -14890,7 +14839,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 53,
-        .species = SPECIES_KILOWATTREL,
+        .species = SPECIES_MORGREM,
         },
         {
         .lvl = 53,
@@ -14909,7 +14858,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 53,
-        .species = SPECIES_ROSELIA,
+        .species = SPECIES_FROSMOTH,
         },
         {
         .lvl = 53,
@@ -14947,7 +14896,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 53,
-        .species = SPECIES_CORSOLA,
+        .species = SPECIES_MANTINE,
         },
         {
         .lvl = 53,
@@ -14965,7 +14914,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 54,
-        .species = SPECIES_BLAZIKEN,
+        .species = SPECIES_TALONFLAME,
         }
     },
 },
@@ -14979,7 +14928,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 53,
-        .species = SPECIES_LANTURN,
+        .species = SPECIES_NIDOKING,
         },
         {
         .lvl = 53,
@@ -14998,7 +14947,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 53,
-        .species = SPECIES_WHISCASH,
+        .species = SPECIES_NIDOQUEEN,
         },
         {
         .lvl = 53,
@@ -15018,7 +14967,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 53,
-        .species = SPECIES_GOLEM,
+        .species = SPECIES_COALOSSAL,
         IVS(12),
         },
         {
@@ -15038,7 +14987,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 54,
-        .species = SPECIES_SEAKING,
+        .species = SPECIES_MANTINE,
         }
     },
 },
@@ -15067,11 +15016,11 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 53,
-        .species = SPECIES_LUVDISC,
+        .species = SPECIES_CLOYSTER,
         },
         {
         .lvl = 53,
-        .species = SPECIES_LUVDISC,
+        .species = SPECIES_MANTINE,
         }
     },
 },
@@ -15154,9 +15103,8 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 54,
-        .species = SPECIES_SHELGON,
+        .species = SPECIES_SLIGGOO,
         PERFECT_IVS,
-        .moves = {MOVE_DRAGON_CLAW, MOVE_ZEN_HEADBUTT, MOVE_CRUNCH, MOVE_SCARY_FACE}
         }
     },
 },
@@ -15171,7 +15119,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 54,
-        .species = SPECIES_MANECTRIC,
+        .species = SPECIES_AMOONGUSS,
         PERFECT_IVS,
         }
     },
@@ -15191,7 +15139,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
         },
         {
         .lvl = 53,
-        .species = SPECIES_SWELLOW,
+        .species = SPECIES_FLAMIGO,
         IVS(18),
         }
     },

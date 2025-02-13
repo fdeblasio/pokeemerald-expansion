@@ -80,6 +80,7 @@ upcoming
         - Even just reducing to two or three rematches would save space
         - For each badge after 5, one less rematch (for example, any trainer fought past Winona would have one less rematch)
     - Add Abilities to single ability and TRAINER_MON_NONE to genderless to make more constistent
+    - Add trailing commas wherever possible
     - Remove BP costs so that script_menu.h and field_specials.c can use item/move names directly?
 
 ### Meta

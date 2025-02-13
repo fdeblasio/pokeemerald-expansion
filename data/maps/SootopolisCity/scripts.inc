@@ -1398,8 +1398,7 @@ SootopolisCity_EventScript_MaxieArchieLeave::
 SootopolisCity_Text_GymSign:
 	.string "Sootopolis City Pokémon Gym\n"
 	.string "Leader: Juan\p"
-	.string "“The Gym Leader with the beauty\n"
-	.string "of pure water!”$"
+	.string "“The Gym Leader with pure poison!”$"
 
 SootopolisCity_Text_CitySign:
 	.string "Sootopolis City\p"

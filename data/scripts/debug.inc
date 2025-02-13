@@ -17,9 +17,9 @@ Debug_CheatStart::
 	setflag FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG
 	setvar VAR_BIRCH_LAB_STATE, 2
 	setvar VAR_ROUTE101_STATE, 3
-	givemon GRASS_STARTER, 20, ITEM_NONE
-	givemon FIRE_STARTER, 20, ITEM_NONE
-	givemon WATER_STARTER, 20, ITEM_NONE
+	givemon GRASS_STARTER+2, 40, ITEM_NONE
+	givemon FIRE_STARTER+2,  40, ITEM_NONE
+	givemon WATER_STARTER+2, 40, ITEM_NONE
 	setflag FLAG_SYS_POKEDEX_GET
 	special SetUnlockedPokedexFlags
 	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
@@ -28,15 +28,19 @@ Debug_CheatStart::
 	special EnableNationalPokedex
 	setflag FLAG_RECEIVED_RUNNING_SHOES
 	setflag FLAG_SYS_B_DASH
-	setvar VAR_LITTLEROOT_TOWN_STATE, 4 @ 4: Received Running Shoes
-	setvar VAR_LITTLEROOT_INTRO_STATE, 7 @ 7: Told to go meet rival
+	setvar VAR_LITTLEROOT_TOWN_STATE,           4 @ 4: Received Running Shoes
+	setvar VAR_LITTLEROOT_INTRO_STATE,          7 @ 7: Told to go meet rival
 	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 2 @ 2: Met Rival's Mom (and is corresponding gender)
-	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 2 @ 2: Met Rival's Mom (and is corresponding gender)
-	setvar VAR_LITTLEROOT_RIVAL_STATE, 4 @ 4: Received Pokedex
+	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY,     2 @ 2: Met Rival's Mom (and is corresponding gender)
+	setvar VAR_LITTLEROOT_RIVAL_STATE,          4 @ 4: Received Pokedex
 	setflag FLAG_RECEIVED_BIKE
 	additem ITEM_ACRO_BIKE
+	additem ITEM_MACH_BIKE
+	additem ITEM_POKE_RADAR
+	additem ITEM_FAME_CHECKER
+	additem ITEM_SILPH_SCOPE
 	setvar VAR_BRINEY_HOUSE_STATE, 1
-	setvar VAR_ROUTE116_STATE, 2
+	setvar VAR_ROUTE116_STATE,     2
 	setflag FLAG_HIDE_ROUTE_116_MR_BRINEY
 	setflag FLAG_BADGE01_GET
 	setflag FLAG_BADGE02_GET

@@ -73,6 +73,7 @@
 #include "constants/battle_partner.h"
 #include "constants/battle_setup.h"
 #include "constants/items.h"
+#include "constants/layouts.h"
 #include "constants/metatile_behaviors.h"
 #include "constants/moves.h"
 #include "constants/party_menu.h"
@@ -5995,7 +5996,9 @@ enum Type GetDynamicMoveType(struct Pokemon *mon, enum Move move, enum BattlerId
                     return TYPE_FAIRY;
             }
 
-            if (GetCurrentRegionMapSectionId() == MAPSEC_VERDANTURF_TOWN || GetPlayerCurMetatileBehavior(gPlayerAvatar.runningState) == MB_LONG_GRASS)
+            if (GetCurrentRegionMapSectionId() == MAPSEC_NEW_MAUVILLE)
+                return TYPE_ELECTRIC;
+            if (gMapHeader.mapLayoutId == LAYOUT_VERDANTURF_TOWN || GetPlayerCurMetatileBehavior(gPlayerAvatar.runningState) == MB_LONG_GRASS)
                 return TYPE_GRASS;
 
             return moveType;
@@ -6149,9 +6152,9 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
         isSandstorm = gWeatherPtr->currWeather == WEATHER_SANDSTORM;
         isSnowy = gWeatherPtr->currWeather == WEATHER_SNOW;
         isFoggy = (gWeatherPtr->currWeather == WEATHER_FOG_HORIZONTAL || gWeatherPtr->currWeather == WEATHER_FOG_DIAGONAL) && B_OVERWORLD_FOG == GEN_4;
-        isElectric = gWeatherPtr->currWeather == WEATHER_RAIN_THUNDERSTORM && B_THUNDERSTORM_TERRAIN && IsOverworldMonGrounded(mon);
+        isElectric = ((gWeatherPtr->currWeather == WEATHER_RAIN_THUNDERSTORM && B_THUNDERSTORM_TERRAIN) || GetCurrentRegionMapSectionId() == MAPSEC_NEW_MAUVILLE) && IsOverworldMonGrounded(mon);
         isMisty = (gWeatherPtr->currWeather == WEATHER_FOG_HORIZONTAL || gWeatherPtr->currWeather == WEATHER_FOG_DIAGONAL) && B_OVERWORLD_FOG >= GEN_8 && IsOverworldMonGrounded(mon);
-        isGrassy = (GetCurrentRegionMapSectionId() == MAPSEC_VERDANTURF_TOWN || GetPlayerCurMetatileBehavior(gPlayerAvatar.runningState) == MB_LONG_GRASS) && IsOverworldMonGrounded(mon);
+        isGrassy = (gMapHeader.mapLayoutId == LAYOUT_VERDANTURF_TOWN || GetPlayerCurMetatileBehavior(gPlayerAvatar.runningState) == MB_LONG_GRASS) && IsOverworldMonGrounded(mon);
         isPsychic = FALSE && IsOverworldMonGrounded(mon); //Can be changed if ever overworld weather or terrain that causes Psychic Terrain
     }
 
@@ -6222,7 +6225,7 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
             if (gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN)
                 UQ4_12_MULTIPLY(power, 1.5);
         }
-        else if (gWeatherPtr->currWeather == WEATHER_RAIN_THUNDERSTORM && B_THUNDERSTORM_TERRAIN)
+        else if ((gWeatherPtr->currWeather == WEATHER_RAIN_THUNDERSTORM && B_THUNDERSTORM_TERRAIN) || GetCurrentRegionMapSectionId() == MAPSEC_NEW_MAUVILLE)
             UQ4_12_MULTIPLY(power, 1.5);
         break;
     case EFFECT_RAGE_FIST:
@@ -6256,7 +6259,7 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
             if (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN)
                 UQ4_12_MULTIPLY(power, 0.5);
         }
-        else if (GetCurrentRegionMapSectionId() == MAPSEC_VERDANTURF_TOWN || GetPlayerCurMetatileBehavior(gPlayerAvatar.runningState) == MB_LONG_GRASS)
+        else if (gMapHeader.mapLayoutId == LAYOUT_VERDANTURF_TOWN || GetPlayerCurMetatileBehavior(gPlayerAvatar.runningState) == MB_LONG_GRASS)
             UQ4_12_MULTIPLY(power, 0.5);
         break;
     case EFFECT_HYDRO_STEAM:

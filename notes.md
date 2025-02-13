@@ -115,6 +115,7 @@ upcoming
 - Readjust wild/trainer levels so that parties aren't overpowered?
 - Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)
 - Add macros for ORAS rematch mons even if they don't exist (like Wilton's Fraxure/Haxorus)
+- Add _INFO for classes not in main game like Biker or Rocker?
 - Update Elite Four palettes
     - battle_terrain/stadium/palette3-7.pal to better match types
 - Brendan/May rematches? (Route 103?)
@@ -281,6 +282,10 @@ upcoming
     - Now that Frontier mons are registered in the Pokédex, the National Pokédex is a bit less useless
 - In game trades
 - Edit max money?
+- Utilize FRLG sounds/music more
+    - Champion theme is good
+    - Maybe Wally gets his own theme?
+    - Use other encounter themes?
 - Debug menu improvements
 - Make inserting trainer sprites easier?
     - Wrapper for src/data/graphics/trainers.h?

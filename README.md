@@ -1536,7 +1536,7 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
 
 - Umbreon (not in main game):
     - Learns Pursuit (replacing Snarl) upon evolving
-    - Learns Feint Attack (replacing Assurance) by level up
+    - Learns Feint Attack (replacing Assurance) and Foul Play by level up
     - Learns Snarl and Assurance at level 1
     - Learns Crunch at level 45
 
@@ -2280,7 +2280,7 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
     - Learns Acid, Poison Tail, Poison Fang, Poison Jab, and Crunch by level up
 
 - Spiritomb:
-    - Learns Astonish and Knock Off by level up
+    - Learns Astonish, Knock Off, and Foul Play by level up
 
 - Gible/Gabite/Garchomp:
     - Learn Stomping Tantrum and Earthquake by level up

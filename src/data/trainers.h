@@ -1212,41 +1212,41 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 40,
-        .species = SPECIES_MASQUERAIN,
+        .species = SPECIES_NOIBAT,
+        .ability = ABILITY_INFILTRATOR,
         IVS(25),
-        .moves = {MOVE_AERIAL_ACE, MOVE_SILVER_WIND, MOVE_SCARY_FACE, MOVE_STUN_SPORE},
+        .moves = {MOVE_AERIAL_ACE, MOVE_DRAGON_BREATH, MOVE_RAZOR_WIND, MOVE_SUPERSONIC},
         .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 40,
-        .species = SPECIES_TROPIUS,
-        .ability = ABILITY_CHLOROPHYLL,
+        .species = SPECIES_STARAPTOR,
+        .ability = ABILITY_INTIMIDATE,
         IVS(25),
-        .moves = {MOVE_AERIAL_ACE, MOVE_LEAF_TORNADO, MOVE_STOMP, MOVE_SWEET_SCENT},
+        .moves = {MOVE_AERIAL_ACE, MOVE_SLASH, MOVE_CLOSE_COMBAT, MOVE_DOUBLE_TEAM},
         .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 41,
-        .species = SPECIES_KILOWATTREL,
-        .ability = ABILITY_DRIZZLE,
+        .species = SPECIES_BOMBIRDIER,
+        .ability = ABILITY_BIG_PECKS,
         IVS(25),
-        .moves = {MOVE_AERIAL_ACE, MOVE_WATER_PULSE, MOVE_SUPERSONIC, MOVE_TAILWIND},
+        .moves = {MOVE_AERIAL_ACE, MOVE_FEINT_ATTACK, MOVE_ROCK_TOMB, MOVE_HONE_CLAWS},
         .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 41,
-        .species = SPECIES_SWELLOW,
-        .ability = ABILITY_SCRAPPY,
+        .species = SPECIES_CRAMORANT,
         IVS(26),
-        .moves = {MOVE_AERIAL_ACE, MOVE_QUICK_ATTACK, MOVE_QUICK_GUARD, MOVE_AGILITY},
+        .moves = {MOVE_AERIAL_ACE, MOVE_SURF, MOVE_STOCKPILE, MOVE_SPIT_UP},
         .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 43,
-        .species = SPECIES_ALTARIA,
-        .ability = ABILITY_NATURAL_CURE,
+        .species = SPECIES_FLAMIGO,
+        .ability = ABILITY_SCRAPPY,
         PERFECT_IVS,
-        .moves = {MOVE_AERIAL_ACE, MOVE_DRAGON_BREATH, MOVE_COTTON_GUARD, MOVE_DRAGON_DANCE},
+        .moves = {MOVE_AERIAL_ACE, MOVE_JUMP_KICK, MOVE_MEGA_KICK, MOVE_ROOST},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SITRUS_BERRY,
         .ball = ITEM_POKE_BALL,
@@ -1254,68 +1254,66 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     },
 },
 
-#define WINONA_ALTARIA(rematch)                                                      \
-    {                                                                                \
-    REMATCH_MON(ALTARIA, ACE, rematch),                                              \
-    .ability = ABILITY_NATURAL_CURE,                                                 \
-    .nature = NATURE_MODEST,                                                         \
-    EV_SPREAD_SPA_SPE_SPD,                                                           \
-    .moves = {MOVE_AIR_SLASH, MOVE_DRAGON_PULSE, MOVE_MOONBLAST, MOVE_COTTON_GUARD}, \
-    .gender = TRAINER_MON_FEMALE,                                                    \
-    .heldItem = ITEM_SITRUS_BERRY,                                                   \
-    .ball = ITEM_POKE_BALL,                                                          \
+#define WINONA_FLAMIGO(rematch)                                                       \
+    {                                                                                 \
+    REMATCH_MON(FLAMIGO, ACE, rematch),                                               \
+    .ability = ABILITY_SCRAPPY,                                                       \
+    .nature = NATURE_ADAMANT,                                                         \
+    EV_SPREAD_ATK_SPE_HP,                                                             \
+    .moves = {MOVE_DUAL_WINGBEAT, MOVE_HIGH_JUMP_KICK, MOVE_THROAT_CHOP, MOVE_ROOST}, \
+    .gender = TRAINER_MON_FEMALE,                                                     \
+    .heldItem = ITEM_SITRUS_BERRY,                                                    \
+    .ball = ITEM_POKE_BALL,                                                           \
     }
 
-#define WINONA_SWELLOW(rematch)                                                 \
+#define WINONA_CRAMORANT(rematch)                                       \
+    {                                                                   \
+    REMATCH_MON(CRAMORANT, TIER2, rematch),                             \
+    .nature = NATURE_MODEST,                                            \
+    EV_SPREAD_SPA_SPE_HP,                                               \
+    .moves = {MOVE_AIR_SLASH, MOVE_SURF, MOVE_ICE_BEAM, MOVE_TAILWIND}, \
+    .gender = TRAINER_MON_FEMALE,                                       \
+    .heldItem = ITEM_SHARP_BEAK,                                        \
+    }
+
+#define WINONA_BOMBIRDIER(rematch)                                                  \
+    {                                                                               \
+    REMATCH_MON(BOMBIRDIER, TIER2, rematch),                                        \
+    .ability = ABILITY_ROCKY_PAYLOAD,                                               \
+    .nature = NATURE_ADAMANT,                                                       \
+    EV_SPREAD_ATK_SPE_HP,                                                           \
+    .moves = {MOVE_DRILL_PECK, MOVE_THROAT_CHOP, MOVE_ROCK_SLIDE, MOVE_HONE_CLAWS}, \
+    .gender = TRAINER_MON_FEMALE,                                                   \
+    .heldItem = ITEM_SHARP_BEAK,                                                    \
+    }
+
+#define WINONA_STARAPTOR(rematch)                                               \
     {                                                                           \
-    REMATCH_MON(SWELLOW, TIER2, rematch),                                       \
-    .ability = ABILITY_SCRAPPY,                                                 \
-    .nature = NATURE_JOLLY,                                                     \
+    REMATCH_MON(STARAPTOR, TIER3, rematch),                                     \
+    .ability = ABILITY_INTIMIDATE,                                              \
+    .nature = NATURE_ADAMANT,                                                   \
     EV_SPREAD_ATK_SPE_HP,                                                       \
-    .moves = {MOVE_BRAVE_BIRD, MOVE_ENDEAVOR, MOVE_REVERSAL, MOVE_DOUBLE_TEAM}, \
+    .moves = {MOVE_DUAL_WINGBEAT, MOVE_SLASH, MOVE_CLOSE_COMBAT, MOVE_AGILITY}, \
     .gender = TRAINER_MON_FEMALE,                                               \
-    .heldItem = ITEM_SHARP_BEAK,                                                \
     }
 
-#define WINONA_KILOWATTREL(rematch)                                           \
-    {                                                                      \
-    REMATCH_MON(KILOWATTREL, TIER2, rematch),                                 \
-    .ability = ABILITY_DRIZZLE,                                            \
-    .nature = NATURE_MODEST,                                               \
-    EV_SPREAD_SPA_SPE_DEF,                                                 \
-    .moves = {MOVE_HURRICANE, MOVE_HYDRO_PUMP, MOVE_TAILWIND, MOVE_ROOST}, \
-    .gender = TRAINER_MON_FEMALE,                                          \
-    .heldItem = ITEM_DAMP_ROCK,                                            \
+#define WINONA_NOIVERN(rematch)                                              \
+    {                                                                        \
+    REMATCH_MON(NOIVERN, TIER3, rematch),                                    \
+    .ability = ABILITY_INFILTRATOR,                                          \
+    .nature = NATURE_TIMID,                                                  \
+    EV_SPREAD_SPA_SPE_HP,                                                    \
+    .moves = {MOVE_AIR_SLASH, MOVE_DRAGON_PULSE, MOVE_ROOST, MOVE_TAILWIND}, \
+    .gender = TRAINER_MON_FEMALE,                                            \
     }
 
-#define WINONA_TROPIUS(rematch)                                                  \
-    {                                                                            \
-    REMATCH_MON(TROPIUS, TIER3, rematch),                                        \
-    .ability = ABILITY_CHLOROPHYLL,                                              \
-    .nature = NATURE_MODEST,                                                     \
-    EV_SPREAD_SPA_HP_SPE,                                                        \
-    .moves = {MOVE_AIR_SLASH, MOVE_ENERGY_BALL, MOVE_BODY_SLAM, MOVE_SYNTHESIS}, \
-    .gender = TRAINER_MON_FEMALE,                                                \
-    }
-
-#define WINONA_MASQUERAIN(rematch)                                                \
-    {                                                                             \
-    REMATCH_MON(MASQUERAIN, TIER3, rematch),                                      \
-    .ability = ABILITY_INTIMIDATE,                                                \
-    .nature = NATURE_MODEST,                                                      \
-    EV_SPREAD_SPA_SPE_SPD,                                                        \
-    .moves = {MOVE_AIR_SLASH, MOVE_BUG_BUZZ, MOVE_GIGA_DRAIN, MOVE_QUIVER_DANCE}, \
-    .gender = TRAINER_MON_FEMALE,                                                 \
-    }
-
-#define WINONA_NINJASK(rematch)                                                      \
-    {                                                                                \
-    REMATCH_MON(NINJASK, TIER3, rematch),                                            \
-    .ability = ABILITY_SPEED_BOOST,                                                  \
-    .nature = NATURE_JOLLY,                                                          \
-    EV_SPREAD_ATK_SPE_HP,                                                            \
-    .moves = {MOVE_ACROBATICS, MOVE_LEECH_LIFE, MOVE_BATON_PASS, MOVE_SWORDS_DANCE}, \
-    .gender = TRAINER_MON_FEMALE,                                                    \
+#define WINONA_ROTOM(rematch)                                                             \
+    {                                                                                     \
+    REMATCH_MON(ROTOM_FAN, TIER3, rematch),                                               \
+    .ability = ABILITY_WIND_POWER,                                                        \
+    .nature = NATURE_MODEST,                                                              \
+    EV_SPREAD_SPA_SPE_HP,                                                                 \
+    .moves = {MOVE_AIR_SLASH, MOVE_PARABOLIC_CHARGE, MOVE_SHADOW_BALL, MOVE_DOUBLE_TEAM}, \
     }
 
 [DIFFICULTY_NORMAL][TRAINER_WINONA_2] =
@@ -1323,11 +1321,11 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     WINONA_INFO,
     LEADER_REMATCH(2),
     .party = (const struct TrainerMon[]) {
-        WINONA_MASQUERAIN(2),
-        WINONA_TROPIUS(2),
-        WINONA_KILOWATTREL(2),
-        WINONA_SWELLOW(2),
-        WINONA_ALTARIA(2),
+        WINONA_NOIVERN(2),
+        WINONA_STARAPTOR(2),
+        WINONA_BOMBIRDIER(2),
+        WINONA_CRAMORANT(2),
+        WINONA_FLAMIGO(2),
     },
 },
 
@@ -1336,11 +1334,11 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     WINONA_INFO,
     LEADER_REMATCH(3),
     .party = (const struct TrainerMon[]) {
-        WINONA_MASQUERAIN(3),
-        WINONA_TROPIUS(3),
-        WINONA_KILOWATTREL(3),
-        WINONA_SWELLOW(3),
-        WINONA_ALTARIA(3),
+        WINONA_NOIVERN(3),
+        WINONA_STARAPTOR(3),
+        WINONA_BOMBIRDIER(3),
+        WINONA_CRAMORANT(3),
+        WINONA_FLAMIGO(3),
     },
 },
 
@@ -1349,12 +1347,12 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     WINONA_INFO,
     LEADER_REMATCH(4),
     .party = (const struct TrainerMon[]) {
-        WINONA_NINJASK(4),
-        WINONA_MASQUERAIN(4),
-        WINONA_TROPIUS(4),
-        WINONA_KILOWATTREL(4),
-        WINONA_SWELLOW(4),
-        WINONA_ALTARIA(4),
+        WINONA_ROTOM(4),
+        WINONA_NOIVERN(4),
+        WINONA_STARAPTOR(4),
+        WINONA_BOMBIRDIER(4),
+        WINONA_CRAMORANT(4),
+        WINONA_FLAMIGO(4),
     },
 },
 
@@ -1363,12 +1361,12 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     WINONA_INFO,
     LEADER_REMATCH(5),
     .party = (const struct TrainerMon[]) {
-        WINONA_NINJASK(5),
-        WINONA_MASQUERAIN(5),
-        WINONA_TROPIUS(5),
-        WINONA_KILOWATTREL(5),
-        WINONA_SWELLOW(5),
-        WINONA_ALTARIA(5),
+        WINONA_ROTOM(5),
+        WINONA_NOIVERN(5),
+        WINONA_STARAPTOR(5),
+        WINONA_BOMBIRDIER(5),
+        WINONA_CRAMORANT(5),
+        WINONA_FLAMIGO(5),
     },
 },
 
@@ -11430,7 +11428,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 40,
-        .species = SPECIES_SKARMORY,
+        .species = SPECIES_BOMBIRDIER,
         IVS(30),
         }
     },
@@ -11445,17 +11443,17 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 38,
-        .species = SPECIES_DODRIO,
+        .species = SPECIES_DELIBIRD,
         IVS(12),
         },
         {
         .lvl = 38,
-        .species = SPECIES_SKARMORY,
+        .species = SPECIES_KILOWATTREL,
         IVS(12),
         },
         {
         .lvl = 38,
-        .species = SPECIES_SWELLOW,
+        .species = SPECIES_TALONFLAME,
         IVS(12),
         }
     },
@@ -11470,7 +11468,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 38,
-        .species = SPECIES_MASQUERAIN,
+        .species = SPECIES_EMOLGA,
         IVS(12),
         },
         {
@@ -11480,7 +11478,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
         },
         {
         .lvl = 38,
-        .species = SPECIES_BEAUTIFLY,
+        .species = SPECIES_TOGETIC,
         IVS(12),
         }
     },
@@ -11500,7 +11498,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
         },
         {
         .lvl = 39,
-        .species = SPECIES_GOLBAT,
+        .species = SPECIES_DRIFBLIM,
         IVS(18),
         }
     },
@@ -11515,12 +11513,12 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 39,
-        .species = SPECIES_DODRIO,
+        .species = SPECIES_STARAPTOR,
         IVS(18),
         },
         {
         .lvl = 39,
-        .species = SPECIES_KILOWATTREL,
+        .species = SPECIES_HAWLUCHA,
         IVS(18),
         }
     },

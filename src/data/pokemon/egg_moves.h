@@ -6633,7 +6633,6 @@ static const u16 sSpiritombEggMoveLearnset[] = {
     MOVE_CONFIDE,
     MOVE_DESTINY_BOND,
     MOVE_DISABLE,
-    MOVE_FOUL_PLAY,
     MOVE_GRUDGE,
     MOVE_HELPING_HAND,
     MOVE_IMPRISON,

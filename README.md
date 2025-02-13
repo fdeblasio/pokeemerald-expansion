@@ -2864,6 +2864,10 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
 
 - Goomy:
     - Evolution: 40->35
+    - Learns Life Dew by level up
+
+- Sliggoo/Goodra:
+    - Learns Life Dew by level up
 
 - Klefki:
     - Learns Dazzling Gleam by level up

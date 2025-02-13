@@ -1649,7 +1649,6 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .gender = TRAINER_MON_MALE,                                                   \
     }
 
-
 [DIFFICULTY_NORMAL][TRAINER_JUAN_2] =
 {
     JUAN_INFO,
@@ -16076,12 +16075,12 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 69,
+        .lvl = POSTGAME_LEVEL - 1,
         .species = SPECIES_AGGRON,
         IVS(12),
         },
         {
-        .lvl = 69,
+        .lvl = POSTGAME_LEVEL - 1,
         .species = SPECIES_MANECTRIC,
         IVS(12),
         }
@@ -16097,17 +16096,17 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 68,
+        .lvl = POSTGAME_LEVEL - 2,
         .species = SPECIES_SABLEYE,
         IVS(12),
         },
         {
-        .lvl = 68,
+        .lvl = POSTGAME_LEVEL - 2,
         .species = SPECIES_MEDICHAM,
         IVS(12),
         },
         {
-        .lvl = 68,
+        .lvl = POSTGAME_LEVEL - 2,
         .species = SPECIES_SHARPEDO,
         IVS(12),
         }
@@ -16123,12 +16122,12 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 69,
+        .lvl = POSTGAME_LEVEL - 1,
         .species = SPECIES_MAWILE,
         IVS(12),
         },
         {
-        .lvl = 69,
+        .lvl = POSTGAME_LEVEL - 1,
         .species = SPECIES_STARMIE,
         IVS(12),
         }
@@ -16144,11 +16143,11 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 69,
+        .lvl = POSTGAME_LEVEL - 1,
         .species = SPECIES_LUVDISC,
         },
         {
-        .lvl = 69,
+        .lvl = POSTGAME_LEVEL - 1,
         .species = SPECIES_LUVDISC,
         }
     },
@@ -16162,7 +16161,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        RICH_BOY_MON(70),
+        RICH_BOY_MON(POSTGAME_LEVEL),
         .species = SPECIES_AZUMARILL,
         }
     },
@@ -16176,15 +16175,22 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 69,
+        .lvl = POSTGAME_LEVEL - 1,
         .species = SPECIES_PERSIAN,
         },
         {
-        .lvl = 69,
+        .lvl = POSTGAME_LEVEL - 1,
         .species = SPECIES_MANECTRIC,
         }
     },
 },
+
+#define COLTON_MON(Species)                                               \
+    {                                                                     \
+    POKE_FAN_MON(POSTGAME_LEVEL - 5),                                     \
+    .species = SPECIES_##Species,                                         \
+    .moves = {MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK, MOVE_HEAL_BELL} \
+    }
 
 [DIFFICULTY_NORMAL][TRAINER_COLTON] =
 {
@@ -16193,36 +16199,12 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_ACE_POKEMON,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        {
-        POKE_FAN_MON(65),
-        .species = SPECIES_SKITTY,
-        .moves = {MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK, MOVE_HEAL_BELL}
-        },
-        {
-        POKE_FAN_MON(65),
-        .species = SPECIES_SKITTY,
-        .moves = {MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK, MOVE_HEAL_BELL}
-        },
-        {
-        POKE_FAN_MON(65),
-        .species = SPECIES_SKITTY,
-        .moves = {MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK, MOVE_HEAL_BELL}
-        },
-        {
-        POKE_FAN_MON(65),
-        .species = SPECIES_SKITTY,
-        .moves = {MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK, MOVE_HEAL_BELL}
-        },
-        {
-        POKE_FAN_MON(65),
-        .species = SPECIES_SKITTY,
-        .moves = {MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK, MOVE_HEAL_BELL}
-        },
-        {
-        POKE_FAN_MON(65),
-        .species = SPECIES_DELCATTY,
-        .moves = {MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK, MOVE_HEAL_BELL}
-        }
+        COLTON_MON(SKITTY),
+        COLTON_MON(SKITTY),
+        COLTON_MON(SKITTY),
+        COLTON_MON(SKITTY),
+        COLTON_MON(SKITTY),
+        COLTON_MON(DELCATTY),
     },
 },
 
@@ -16234,7 +16216,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        RICH_MON(70),
+        RICH_MON(POSTGAME_LEVEL),
         .species = SPECIES_ROSERADE,
         IVS(12),
         }
@@ -16249,7 +16231,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 70,
+        .lvl = POSTGAME_LEVEL,
         .species = SPECIES_ZANGOOSE,
         }
     },
@@ -16263,11 +16245,11 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 69,
+        .lvl = POSTGAME_LEVEL - 1,
         .species = SPECIES_TENTACRUEL,
         },
         {
-        .lvl = 69,
+        .lvl = POSTGAME_LEVEL - 1,
         .species = SPECIES_MACHAMP,
         }
     },
@@ -16281,195 +16263,122 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 68,
+        .lvl = POSTGAME_LEVEL - 2,
         .species = SPECIES_QUAGSIRE,
         },
         {
-        .lvl = 68,
+        .lvl = POSTGAME_LEVEL - 2,
         .species = SPECIES_PELIPPER,
         },
         {
-        .lvl = 68,
+        .lvl = POSTGAME_LEVEL - 2,
         .species = SPECIES_FERALIGATR,
         }
     },
 },
 
-//Other
+//Frontier Brains
+#define FRONTIER_BRAIN_INFO(Class, Name)        \
+    .trainerClass = TRAINER_CLASS_##Class,      \
+    .trainerPic = TRAINER_PIC_##Class##_##Name, \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY
+
+#define FRONTIER_BRAIN_MON(Level, Species) \
+    {                                      \
+    .lvl = 50,                             \
+    .species = SPECIES_##Species,          \
+    PERFECT_IVS,                           \
+    }
+
 [DIFFICULTY_NORMAL][TRAINER_ANABEL] =
 {
     .trainerName = _("Anabel"),
-    .trainerClass = TRAINER_CLASS_SALON_MAIDEN,
-    .trainerPic = TRAINER_PIC_SALON_MAIDEN_ANABEL,
+    FRONTIER_BRAIN_INFO(SALON_MAIDEN, ANABEL),
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MALE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 50,
-        .species = SPECIES_SNORLAX,
-        PERFECT_IVS,
-        }
+        FRONTIER_BRAIN_MON(50, SNORLAX),
     },
 },
 
 [DIFFICULTY_NORMAL][TRAINER_TUCKER] =
 {
     .trainerName = _("Tucker"),
-    .trainerClass = TRAINER_CLASS_DOME_ACE,
-    .trainerPic = TRAINER_PIC_DOME_ACE_TUCKER,
+    FRONTIER_BRAIN_INFO(DOME_ACE, TUCKER),
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 50,
-        .species = SPECIES_SWAMPERT,
-        PERFECT_IVS,
-        }
+        FRONTIER_BRAIN_MON(50, SWAMPERT),
     },
 },
 
 [DIFFICULTY_NORMAL][TRAINER_SPENSER] =
 {
     .trainerName = _("Spenser"),
-    .trainerClass = TRAINER_CLASS_PALACE_MAVEN,
-    .trainerPic = TRAINER_PIC_PALACE_MAVEN_SPENSER,
+    FRONTIER_BRAIN_INFO(PALACE_MAVEN, SPENSER),
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 5,
-        .species = SPECIES_AZURILL,
-        PERFECT_IVS,
-        },
-        {
-        .lvl = 5,
-        .species = SPECIES_UNOWN,
-        PERFECT_IVS,
-        },
-        {
-        .lvl = 40,
-        .species = SPECIES_DUSCLOPS,
-        PERFECT_IVS,
-        },
-        {
-        .lvl = 70,
-        .species = SPECIES_KYOGRE,
-        PERFECT_IVS,
-        }
+        FRONTIER_BRAIN_MON(5, AZURILL),
+        FRONTIER_BRAIN_MON(5, UNOWN),
+        FRONTIER_BRAIN_MON(40, DUSCLOPS),
+        FRONTIER_BRAIN_MON(POSTGAME_LEVEL, KYOGRE),
     },
 },
 
 [DIFFICULTY_NORMAL][TRAINER_GRETA] =
 {
     .trainerName = _("Greta"),
-    .trainerClass = TRAINER_CLASS_ARENA_TYCOON,
-    .trainerPic = TRAINER_PIC_ARENA_TYCOON_GRETA,
+    FRONTIER_BRAIN_INFO(ARENA_TYCOON, GRETA),
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MALE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 50,
-        .species = SPECIES_HERACROSS,
-        PERFECT_IVS,
-        },
-        {
-        .lvl = 50,
-        .species = SPECIES_MIENSHAO,
-        PERFECT_IVS,
-        },
-        {
-        .lvl = 50,
-        .species = SPECIES_BRELOOM,
-        PERFECT_IVS,
-        },
-        {
-        .lvl = 50,
-        .species = SPECIES_MEDICHAM,
-        PERFECT_IVS,
-        }
+        FRONTIER_BRAIN_MON(50, HERACROSS),
+        FRONTIER_BRAIN_MON(50, MIENSHAO),
+        FRONTIER_BRAIN_MON(50, BRELOOM),
+        FRONTIER_BRAIN_MON(50, MEDICHAM),
     },
 },
 
 [DIFFICULTY_NORMAL][TRAINER_NOLAND] =
 {
     .trainerName = _("Noland"),
-    .trainerClass = TRAINER_CLASS_FACTORY_HEAD,
-    .trainerPic = TRAINER_PIC_FACTORY_HEAD_NOLAND,
+    FRONTIER_BRAIN_INFO(FACTORY_HEAD, NOLAND),
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 50,
-        .species = SPECIES_PINSIR,
-        PERFECT_IVS,
-        }
+        FRONTIER_BRAIN_MON(50, PINSIR),
     },
 },
 
 [DIFFICULTY_NORMAL][TRAINER_LUCY] =
 {
     .trainerName = _("Lucy"),
-    .trainerClass = TRAINER_CLASS_PIKE_QUEEN,
-    .trainerPic = TRAINER_PIC_PIKE_QUEEN_LUCY,
+    FRONTIER_BRAIN_INFO(PIKE_QUEEN, LUCY),
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MALE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 60,
-        .species = SPECIES_SEVIPER,
-        PERFECT_IVS,
-        }
+        FRONTIER_BRAIN_MON(60, SEVIPER),
     },
 },
 
 [DIFFICULTY_NORMAL][TRAINER_BRANDON] =
 {
     .trainerName = _("Brandon"),
-    .trainerClass = TRAINER_CLASS_PYRAMID_KING,
-    .trainerPic = TRAINER_PIC_PYRAMID_KING_BRANDON,
+    FRONTIER_BRAIN_INFO(PYRAMID_KING, BRANDON),
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 50,
-        .species = SPECIES_REGIDRAGO,
-        PERFECT_IVS,
-        },
-        {
-        .lvl = 50,
-        .species = SPECIES_REGIELEKI,
-        PERFECT_IVS,
-        },
-        {
-        .lvl = 50,
-        .species = SPECIES_REGIROCK,
-        PERFECT_IVS,
-        },
-        {
-        .lvl = 50,
-        .species = SPECIES_REGICE,
-        PERFECT_IVS,
-        },
-        {
-        .lvl = 50,
-        .species = SPECIES_REGISTEEL,
-        PERFECT_IVS,
-        },
-        {
-        .lvl = 70,
-        .species = SPECIES_REGIGIGAS,
-        PERFECT_IVS,
-        }
+        FRONTIER_BRAIN_MON(50, REGIDRAGO),
+        FRONTIER_BRAIN_MON(50, REGIELEKI),
+        FRONTIER_BRAIN_MON(50, REGIROCK),
+        FRONTIER_BRAIN_MON(50, REGICE),
+        FRONTIER_BRAIN_MON(50, REGISTEEL),
+        FRONTIER_BRAIN_MON(POSTGAME_LEVEL, REGIGIGAS),
     },
 },
 
+//Other
 [DIFFICULTY_NORMAL][TRAINER_RED] =
 {
     .trainerName = _("Red"),
@@ -16594,7 +16503,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {        \
         {                                         \
         .lvl = 1,                                 \
-        .species = SPECIES_BULBASAUR,             \
+        .species = SPECIES_NONE,                  \
         }                                         \
     },                                            \
 }

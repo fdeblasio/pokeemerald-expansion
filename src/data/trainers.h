@@ -1046,18 +1046,18 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 31,
-        .species = SPECIES_LINOONE,
-        .ability = ABILITY_QUICK_FEET,
+        .species = SPECIES_BIBAREL,
+        .ability = ABILITY_UNAWARE,
         IVS(24),
-        .moves = {MOVE_FACADE, MOVE_SLASH, MOVE_PLAY_ROUGH, MOVE_HONE_CLAWS},
+        .moves = {MOVE_FACADE, MOVE_WATERFALL, MOVE_CRUNCH, MOVE_YAWN},
         .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 33,
-        .species = SPECIES_ZANGOOSE,
-        .ability = ABILITY_POISON_HEAL,
+        .species = SPECIES_HERDIER,
+        .ability = ABILITY_INTIMIDATE,
         IVS(24),
-        .moves = {MOVE_FACADE, MOVE_CRUSH_CLAW, MOVE_NIGHT_SLASH, MOVE_HONE_CLAWS},
+        .moves = {MOVE_FACADE, MOVE_CRUNCH, MOVE_PLAY_ROUGH, MOVE_HOWL},
         .gender = TRAINER_MON_MALE,
         },
         {
@@ -1104,25 +1104,25 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     .heldItem = ITEM_LIECHI_BERRY,                                             \
     }
 
-#define NORMAN_ZANGOOSE(rematch)                                                 \
-    {                                                                            \
-    REMATCH_MON(ZANGOOSE, TIER2, rematch),                                       \
-    .ability = ABILITY_POISON_HEAL,                                              \
-    .nature = NATURE_ADAMANT,                                                    \
-    EV_SPREAD_ATK_SPE_HP,                                                        \
-    .moves = {MOVE_FACADE, MOVE_X_SCISSOR, MOVE_NIGHT_SLASH, MOVE_SWORDS_DANCE}, \
-    .gender = TRAINER_MON_MALE,                                                  \
-    .heldItem = ITEM_TOXIC_ORB,                                                  \
+#define NORMAN_STOUTLAND(rematch)                                       \
+    {                                                                   \
+    REMATCH_MON(STOUTLAND, TIER2, rematch),                             \
+    .ability = ABILITY_SCRAPPY,                                         \
+    .nature = NATURE_ADAMANT,                                           \
+    EV_SPREAD_ATK_SPE_HP,                                               \
+    .moves = {MOVE_BODY_SLAM, MOVE_CRUNCH, MOVE_PLAY_ROUGH, MOVE_HOWL}, \
+    .gender = TRAINER_MON_MALE,                                         \
+    .heldItem = ITEM_SILK_SCARF,                                        \
     }
 
-#define NORMAN_LINOONE(rematch)                                                \
-    {                                                                          \
-    REMATCH_MON(LINOONE, TIER3, rematch),                                      \
-    .ability = ABILITY_QUICK_FEET,                                             \
-    .nature = NATURE_JOLLY,                                                    \
-    EV_SPREAD_ATK_SPE_HP,                                                      \
-    .moves = {MOVE_SLASH, MOVE_PLAY_ROUGH, MOVE_PIN_MISSILE, MOVE_BELLY_DRUM}, \
-    .gender = TRAINER_MON_MALE,                                                \
+#define NORMAN_BIBAREL(rematch)                                                    \
+    {                                                                              \
+    REMATCH_MON(BIBAREL, TIER3, rematch),                                          \
+    .ability = ABILITY_MOODY,                                                      \
+    .nature = NATURE_ADAMANT,                                                      \
+    EV_SPREAD_ATK_SPE_HP,                                                          \
+    .moves = {MOVE_BODY_SLAM, MOVE_AQUA_TAIL, MOVE_SUPER_FANG, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                    \
     }
 
 #define NORMAN_EXPLOUD(rematch)                                                           \
@@ -1150,9 +1150,9 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     NORMAN_INFO,
     LEADER_REMATCH(2),
     .party = (const struct TrainerMon[]) {
-        NORMAN_LINOONE(2),
         NORMAN_EXPLOUD(2),
-        NORMAN_ZANGOOSE(2),
+        NORMAN_BIBAREL(2),
+        NORMAN_STOUTLAND(2),
         NORMAN_SPINDA(2),
         NORMAN_SLAKING(2),
     },
@@ -1163,9 +1163,9 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     NORMAN_INFO,
     LEADER_REMATCH(3),
     .party = (const struct TrainerMon[]) {
-        NORMAN_LINOONE(3),
         NORMAN_EXPLOUD(3),
-        NORMAN_ZANGOOSE(3),
+        NORMAN_BIBAREL(3),
+        NORMAN_STOUTLAND(3),
         NORMAN_SPINDA(3),
         NORMAN_SLAKING(3),
     },
@@ -1176,10 +1176,10 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     NORMAN_INFO,
     LEADER_REMATCH(4),
     .party = (const struct TrainerMon[]) {
-        NORMAN_LINOONE(4),
         NORMAN_KECLEON(4),
         NORMAN_EXPLOUD(4),
-        NORMAN_ZANGOOSE(4),
+        NORMAN_BIBAREL(4),
+        NORMAN_STOUTLAND(4),
         NORMAN_SPINDA(4),
         NORMAN_SLAKING(4),
     },
@@ -1190,10 +1190,10 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     NORMAN_INFO,
     LEADER_REMATCH(5),
     .party = (const struct TrainerMon[]) {
-        NORMAN_LINOONE(5),
         NORMAN_KECLEON(5),
         NORMAN_EXPLOUD(5),
-        NORMAN_ZANGOOSE(5),
+        NORMAN_BIBAREL(5),
+        NORMAN_STOUTLAND(5),
         NORMAN_SPINDA(5),
         NORMAN_SLAKING(5),
     },
@@ -3013,22 +3013,22 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {                                           \
         {                                                                            \
         .lvl = (AceLevel - 2),                                                       \
-        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_STARYU : SPECIES_STARMIE,  \
-        .ability = ABILITY_ILLUMINATE,                                               \
+        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_MANTYKE : SPECIES_MANTINE, \
+        .ability = ABILITY_SWIFT_SWIM,                                               \
         IVS(IVs),                                                                    \
         .gender = TRAINER_MON_NONE,                                                  \
         },                                                                           \
         {                                                                            \
         .lvl = (AceLevel - 2),                                                       \
-        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_GOLDEEN : SPECIES_SEAKING, \
-        .ability = ABILITY_SWIFT_SWIM,                                               \
+        .species = SPECIES_MILOTIC,                                                  \
+        .ability = ABILITY_COMPETITIVE,                                              \
         IVS(IVs),                                                                    \
         .gender = TRAINER_MON_FEMALE,                                                \
         },                                                                           \
         {                                                                            \
         .lvl = AceLevel,                                                             \
-        .species = SPECIES_GOREBYSS,                                                 \
-        .ability = ABILITY_SWIFT_SWIM,                                               \
+        .species = SPECIES_POLITOED,                                                 \
+        .ability = ABILITY_DRIZZLE,                                                  \
         IVS(IVs),                                                                    \
         .gender = TRAINER_MON_FEMALE,                                                \
         }                                                                            \
@@ -3047,21 +3047,21 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {                 \
         {                                                  \
         .lvl = (AceLevel - 2),                             \
+        .species = SPECIES_CLOYSTER,                       \
+        .ability = ABILITY_SHELL_ARMOR,                    \
+        IVS(IVs),                                          \
+        .gender = TRAINER_MON_MALE,                        \
+        },                                                 \
+        {                                                  \
+        .lvl = (AceLevel - 2),                             \
         .species = SPECIES_GYARADOS,                       \
         .ability = ABILITY_INTIMIDATE,                     \
         IVS(IVs),                                          \
         .gender = TRAINER_MON_MALE,                        \
         },                                                 \
         {                                                  \
-        .lvl = (AceLevel - 2),                             \
-        .species = SPECIES_CRAWDAUNT,                      \
-        .ability = ABILITY_SHELL_ARMOR,                    \
-        IVS(IVs),                                          \
-        .gender = TRAINER_MON_MALE,                        \
-        },                                                 \
-        {                                                  \
         .lvl = AceLevel,                                   \
-        .species = SPECIES_HUNTAIL,                        \
+        .species = SPECIES_POLIWRATH,                      \
         .ability = ABILITY_SWIFT_SWIM,                     \
         IVS(IVs),                                          \
         .gender = TRAINER_MON_MALE,                        \
@@ -3905,7 +3905,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 9,
-        .species = SPECIES_MACHOP,
+        .species = SPECIES_NIDORAN_M,
         }
     },
 },
@@ -3919,7 +3919,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 9,
-        .species = SPECIES_AZURILL,
+        .species = SPECIES_NIDORAN_F,
         }
     },
 },
@@ -6209,7 +6209,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         },
         {
         .lvl = 20,
-        .species = SPECIES_NIDORAN_M,
+        .species = SPECIES_SLAKOTH,
         }
     },
 },
@@ -9386,32 +9386,32 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
 },
 
 //Petalburg Gym
-#define PETALBURG_GYM_TRAINER(Trainer, Name, Gender, Item, Species, HeldItem, Move1, Move2, Move3, Move4) \
-[DIFFICULTY_NORMAL][TRAINER_##Trainer] =                                                                  \
-{                                                                                                         \
-    .trainerName = _(Name),                                                                               \
-    ACE_TRAINER_##Gender##_INFO,                                                                          \
-    .items = {ITEM_##Item, ITEM_NONE, ITEM_NONE, ITEM_NONE},                                              \
+#define PETALBURG_GYM_TRAINER(Trainer, Name, Gender, Item, Species, HeldItem, Move1, Move2, Move3) \
+[DIFFICULTY_NORMAL][TRAINER_##Trainer] =                                                           \
+{                                                                                                  \
+    .trainerName = _(Name),                                                                        \
+    ACE_TRAINER_##Gender##_INFO,                                                                   \
+    .items = {ITEM_##Item, ITEM_NONE, ITEM_NONE, ITEM_NONE},                                       \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_FORCE_SETUP_FIRST_TURN, \
-    .partySize = 1,                                                                                       \
-    .party = (const struct TrainerMon[]) {                                                                \
-        {                                                                                                 \
-        .lvl = 31,                                                                                        \
-        .species = SPECIES_##Species,                                                                     \
-        PERFECT_IVS,                                                                                      \
-        .heldItem = ITEM_##HeldItem,                                                                      \
-        .moves = {MOVE_##Move1, MOVE_##Move2, MOVE_##Move3, MOVE_##Move4}                                 \
-        }                                                                                                 \
-    },                                                                                                    \
+    .partySize = 1,                                                                                \
+    .party = (const struct TrainerMon[]) {                                                         \
+        {                                                                                          \
+        .lvl = 31,                                                                                 \
+        .species = SPECIES_##Species,                                                              \
+        PERFECT_IVS,                                                                               \
+        .heldItem = ITEM_##HeldItem,                                                               \
+        .moves = {MOVE_##Move1, MOVE_##Move2, MOVE_##Move3, MOVE_NONE}                             \
+        }                                                                                          \
+    },                                                                                             \
 }
 
-PETALBURG_GYM_TRAINER(RANDALL, "Randall", M, X_SPEED,      SWELLOW,    SALAC_BERRY,  QUICK_ATTACK, AGILITY,     WING_ATTACK,  NONE),
-PETALBURG_GYM_TRAINER(MARY,    "Mary",    F, X_ACCURACY,   DELCATTY,   MICLE_BERRY,  SWIFT,        SHOCK_WAVE,  FEINT_ATTACK, DISARMING_VOICE),
-PETALBURG_GYM_TRAINER(PARKER,  "Parker",  M, HYPER_POTION, SPINDA,     PERSIM_BERRY, TEETER_DANCE, DIZZY_PUNCH, PSYBEAM,      NONE),
-PETALBURG_GYM_TRAINER(ALEXIA,  "Alexia",  F, X_DEFENSE,    WIGGLYTUFF, GANLON_BERRY, DEFENSE_CURL, FACADE,      BODY_PRESS,   NONE),
-PETALBURG_GYM_TRAINER(GEORGE,  "George",  M, HYPER_POTION, VIGOROTH,   SITRUS_BERRY, SLACK_OFF,    DRAIN_PUNCH, ENDURE,       NONE),
-PETALBURG_GYM_TRAINER(JODY,    "Jody",    F, X_ATTACK,     ZANGOOSE,   LIECHI_BERRY, SWORDS_DANCE, CRUSH_CLAW,  NONE,         NONE),
-PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LENS,   SLASH,        NONE,        NONE,         NONE),
+PETALBURG_GYM_TRAINER(RANDALL, "Randall", M, X_SPEED,      CYCLIZAR,   SALAC_BERRY,  QUICK_ATTACK, RAPID_SPIN,      NONE),
+PETALBURG_GYM_TRAINER(MARY,    "Mary",    F, X_ACCURACY,   LOUDRED,    MICLE_BERRY,  SHOCK_WAVE,   DISARMING_VOICE, FACADE),
+PETALBURG_GYM_TRAINER(PARKER,  "Parker",  M, HYPER_POTION, SPINDA,     PERSIM_BERRY, TEETER_DANCE, DIZZY_PUNCH,     PSYBEAM),
+PETALBURG_GYM_TRAINER(ALEXIA,  "Alexia",  F, X_DEFENSE,    WIGGLYTUFF, GANLON_BERRY, DEFENSE_CURL, FACADE,          BODY_PRESS),
+PETALBURG_GYM_TRAINER(GEORGE,  "George",  M, HYPER_POTION, VIGOROTH,   SITRUS_BERRY, SLACK_OFF,    DRAIN_PUNCH,     ENDURE),
+PETALBURG_GYM_TRAINER(JODY,    "Jody",    F, X_ATTACK,     HERDIER,    LIECHI_BERRY, HOWL,         RETALIATE,       NONE),
+PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     STARAVIA,   SCOPE_LENS,   SLASH,        NONE,            NONE),
 
 //Route 103 (water)
 [DIFFICULTY_NORMAL][TRAINER_ISABELLE] =
@@ -9437,7 +9437,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 32,
-        .species = SPECIES_TENTACRUEL,
+        .species = SPECIES_MANTINE,
         }
     },
 },
@@ -9466,10 +9466,10 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     EXPERT_M_INFO,               \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY
 
-#define TIMOTHY_HARIYAMA(Level)  \
-    .lvl = Level,                \
-    .species = SPECIES_HARIYAMA, \
-    .ability = ABILITY_GUTS,     \
+#define TIMOTHY_HITMONLEE(Level)  \
+    .lvl = Level,                 \
+    .species = SPECIES_HITMONLEE, \
+    .ability = ABILITY_LIMBER,    \
     .gender = TRAINER_MON_MALE
 
 [DIFFICULTY_NORMAL][TRAINER_TIMOTHY_1] =
@@ -9478,7 +9478,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        TIMOTHY_HARIYAMA(32),
+        TIMOTHY_HITMONLEE(32),
         IVS(24),
         }
     },
@@ -9490,7 +9490,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        TIMOTHY_HARIYAMA(REMATCH_2_LEVEL_1),
+        TIMOTHY_HITMONLEE(REMATCH_2_LEVEL_1),
         IVS(25),
         }
     },
@@ -9502,7 +9502,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        TIMOTHY_HARIYAMA(REMATCH_3_LEVEL_1),
+        TIMOTHY_HITMONLEE(REMATCH_3_LEVEL_1),
         IVS(26),
         }
     },
@@ -9514,7 +9514,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        TIMOTHY_HARIYAMA(REMATCH_4_LEVEL_1),
+        TIMOTHY_HITMONLEE(REMATCH_4_LEVEL_1),
         IVS(27),
         }
     },
@@ -9526,7 +9526,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        TIMOTHY_HARIYAMA(REMATCH_5_LEVEL_1),
+        TIMOTHY_HITMONLEE(REMATCH_5_LEVEL_1),
         IVS(29),
         }
     },
@@ -9545,7 +9545,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
         },
         {
         TRIATHLETE_MON(31, 0),
-        .species = SPECIES_DODUO,
+        .species = SPECIES_HITMONTOP,
         }
     },
 },
@@ -9579,11 +9579,11 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 31,
-        .species = SPECIES_MAKUHITA,
+        .species = SPECIES_MEDITITE,
         },
         {
         .lvl = 31,
-        .species = SPECIES_MEDITITE,
+        .species = SPECIES_HITMONCHAN,
         }
     },
 },
@@ -9597,11 +9597,11 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 31,
-        .species = SPECIES_KADABRA,
+        .species = SPECIES_KIRLIA,
         },
         {
         .lvl = 31,
-        .species = SPECIES_KIRLIA,
+        .species = SPECIES_HATTREM,
         }
     },
 },
@@ -9630,7 +9630,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 32,
-        .species = SPECIES_TENTACRUEL,
+        .species = SPECIES_SLOWKING,
         }
     },
 },
@@ -9649,7 +9649,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
         },
         {
         .lvl = 31,
-        .species = SPECIES_SANDSLASH,
+        .species = SPECIES_MAROWAK,
         IVS(12),
         }
     },
@@ -9664,7 +9664,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 31,
-        .species = SPECIES_KILOWATTREL,
+        .species = SPECIES_FEEBAS,
         },
         {
         .lvl = 31,
@@ -9794,7 +9794,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 31,
-        .species = SPECIES_SWELLOW,
+        .species = SPECIES_FLETCHINDER,
         IVS(6),
         },
         {
@@ -9829,7 +9829,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 31,
-        .species = SPECIES_STARYU,
+        .species = SPECIES_SLOWPOKE,
         IVS(1),
         },
         {
@@ -9849,7 +9849,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 31,
-        .species = SPECIES_GOLDEEN,
+        .species = SPECIES_MANTYKE,
         },
         {
         .lvl = 31,
@@ -9868,11 +9868,11 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 31,
-        .species = SPECIES_WATTREL,
+        .species = SPECIES_HORSEA,
         },
         {
         .lvl = 31,
-        .species = SPECIES_GOLDEEN,
+        .species = SPECIES_PALPITOAD,
         }
     },
 },
@@ -9887,10 +9887,10 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .species = Level < REMATCH_2_LEVEL_1 ? SPECIES_CARVANHA : SPECIES_SHARPEDO, \
     .gender = TRAINER_MON_MALE
 
-#define TONY_STARYU(Level)                                                   \
-    .lvl = Level,                                                            \
-    .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_STARYU : SPECIES_STARMIE, \
-    .ability = ABILITY_ILLUMINATE
+#define TONY_SHELLDER(Level)                                                    \
+    .lvl = Level,                                                               \
+    .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_SHELLDER : SPECIES_CLOYSTER, \
+    .ability = ABILITY_SHELL_ARMOR
 
 [DIFFICULTY_NORMAL][TRAINER_TONY_1] =
 {
@@ -9921,7 +9921,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        TONY_STARYU(REMATCH_3_LEVEL_2),
+        TONY_SHELLDER(REMATCH_3_LEVEL_2),
         IVS(3),
         },
         {
@@ -9937,7 +9937,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        TONY_STARYU(REMATCH_4_LEVEL_2),
+        TONY_SHELLDER(REMATCH_4_LEVEL_2),
         IVS(4),
         },
         {
@@ -9953,7 +9953,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        TONY_STARYU(REMATCH_5_LEVEL_2),
+        TONY_SHELLDER(REMATCH_5_LEVEL_2),
         IVS(5),
         },
         {
@@ -9972,11 +9972,11 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 32,
-        .species = SPECIES_GOLDEEN,
+        .species = SPECIES_SHELLOS_WEST,
         },
         {
         .lvl = 30,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_SHELLOS_EAST,
         }
     },
 },
@@ -9990,17 +9990,17 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 30,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_HORSEA,
         IVS(1),
         },
         {
         .lvl = 30,
-        .species = SPECIES_WATTREL,
+        .species = SPECIES_POLIWHIRL,
         IVS(1),
         },
         {
         .lvl = 30,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_BINACLE,
         IVS(1),
         }
     },
@@ -10015,7 +10015,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 32,
-        .species = SPECIES_GOLDEEN,
+        .species = SPECIES_MANTYKE,
         }
     },
 },
@@ -10029,7 +10029,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         TRIATHLETE_MON(32, 0),
-        .species = SPECIES_STARYU,
+        .species = SPECIES_SHELLDER,
         }
     },
 },
@@ -10044,7 +10044,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 32,
-        .species = SPECIES_GOLDEEN,
+        .species = SPECIES_CARVANHA,
         }
     },
 },
@@ -10091,17 +10091,17 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 30,
-        .species = SPECIES_SEVIPER,
+        .species = SPECIES_DRAMPA,
         IVS(6),
         },
         {
         .lvl = 30,
-        .species = SPECIES_SWELLOW,
+        .species = SPECIES_IMPIDIMP,
         IVS(6),
         },
         {
         .lvl = 30,
-        .species = SPECIES_MANECTRIC,
+        .species = SPECIES_DRUDDIGON,
         IVS(6),
         }
     },
@@ -10112,10 +10112,9 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     SAILOR_INFO,              \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define CORY_TENTACOOL(Level)                                                      \
-    .lvl = Level,                                                                  \
-    .species = Level < REMATCH_2_LEVEL_3 ? SPECIES_TENTACOOL : SPECIES_TENTACRUEL, \
-    .ability = ABILITY_CLEAR_BODY,                                                 \
+#define CORY_FROGADIER(Level)                                     \
+    .lvl = Level,                                                 \
+    .species = Level < 36 ? SPECIES_FROGADIER : SPECIES_GRENINJA, \
     .gender = TRAINER_MON_MALE
 
 #define CORY_MACHOKE(Level)                                                   \
@@ -10142,7 +10141,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
         CORY_MACHOKE(30),
         },
         {
-        CORY_TENTACOOL(30),
+        CORY_FROGADIER(30),
         }
     },
 },
@@ -10161,7 +10160,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
         IVS(1),
         },
         {
-        CORY_TENTACOOL(REMATCH_2_LEVEL_3),
+        CORY_FROGADIER(REMATCH_2_LEVEL_3),
         IVS(1),
         }
     },
@@ -10181,7 +10180,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
         IVS(3),
         },
         {
-        CORY_TENTACOOL(REMATCH_3_LEVEL_3),
+        CORY_FROGADIER(REMATCH_3_LEVEL_3),
         IVS(3),
         }
     },
@@ -10201,7 +10200,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
         IVS(4),
         },
         {
-        CORY_TENTACOOL(REMATCH_4_LEVEL_3),
+        CORY_FROGADIER(REMATCH_4_LEVEL_3),
         IVS(4),
         }
     },
@@ -10221,7 +10220,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
         IVS(5),
         },
         {
-        CORY_TENTACOOL(REMATCH_5_LEVEL_3),
+        CORY_FROGADIER(REMATCH_5_LEVEL_3),
         IVS(5),
         }
     },
@@ -10236,7 +10235,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 32,
-        .species = SPECIES_TENTACRUEL,
+        .species = SPECIES_BARRASKEWDA,
         }
     },
 },
@@ -10259,9 +10258,9 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .ability = ABILITY_WATER_VEIL,                             \
     .gender = TRAINER_MON_FEMALE
 
-#define THALIA_LUVDISC(Level)    \
+#define THALIA_SYLVEON(Level)    \
     .lvl = Level,                \
-    .species = SPECIES_LUVDISC,  \
+    .species = SPECIES_SYLVEON,  \
     .gender = TRAINER_MON_FEMALE
 
 [DIFFICULTY_NORMAL][TRAINER_THALIA_1] =
@@ -10300,7 +10299,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        THALIA_LUVDISC(REMATCH_3_LEVEL_3),
+        THALIA_SYLVEON(REMATCH_3_LEVEL_3),
         IVS(3),
         },
         {
@@ -10320,7 +10319,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        THALIA_LUVDISC(REMATCH_4_LEVEL_3),
+        THALIA_SYLVEON(REMATCH_4_LEVEL_3),
         IVS(4),
         },
         {
@@ -10340,7 +10339,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        THALIA_LUVDISC(REMATCH_5_LEVEL_3),
+        THALIA_SYLVEON(REMATCH_5_LEVEL_3),
         IVS(5),
         },
         {
@@ -10363,11 +10362,11 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 31,
-        .species = SPECIES_LINOONE,
+        .species = SPECIES_IMPIDIMP,
         },
         {
         .lvl = 31,
-        .species = SPECIES_MANECTRIC,
+        .species = SPECIES_HOUNDOUR,
         }
     },
 },
@@ -10436,15 +10435,13 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     YOUNG_COUPLE_INFO,              \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define KIRA_ILLUMISE(Level)     \
-    .lvl = Level,                \
-    .species = SPECIES_ILLUMISE, \
-    .ability = ABILITY_ILLUMINATE
+#define KIRA_ESPEON(Level) \
+    .lvl = Level,          \
+    .species = SPECIES_ESPEON
 
-#define DAN_VOLBEAT(Level)      \
-    .lvl = Level,               \
-    .species = SPECIES_VOLBEAT, \
-    .ability = ABILITY_SWARM
+#define DAN_UMBREON(Level) \
+    .lvl = Level,          \
+    .species = SPECIES_UMBREON
 
 [DIFFICULTY_NORMAL][TRAINER_KIRA_AND_DAN_1] =
 {
@@ -10452,10 +10449,10 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        DAN_VOLBEAT(31),
+        DAN_UMBREON(31),
         },
         {
-        KIRA_ILLUMISE(31),
+        KIRA_ESPEON(31),
         }
     },
 },
@@ -10466,11 +10463,11 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        DAN_VOLBEAT(REMATCH_2_LEVEL_2),
+        DAN_UMBREON(REMATCH_2_LEVEL_2),
         IVS(1),
         },
         {
-        KIRA_ILLUMISE(REMATCH_2_LEVEL_2),
+        KIRA_ESPEON(REMATCH_2_LEVEL_2),
         IVS(1),
         }
     },
@@ -10482,11 +10479,11 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        DAN_VOLBEAT(REMATCH_3_LEVEL_2),
+        DAN_UMBREON(REMATCH_3_LEVEL_2),
         IVS(3),
         },
         {
-        KIRA_ILLUMISE(REMATCH_3_LEVEL_2),
+        KIRA_ESPEON(REMATCH_3_LEVEL_2),
         IVS(3),
         }
     },
@@ -10498,11 +10495,11 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        DAN_VOLBEAT(REMATCH_4_LEVEL_2),
+        DAN_UMBREON(REMATCH_4_LEVEL_2),
         IVS(4),
         },
         {
-        KIRA_ILLUMISE(REMATCH_4_LEVEL_2),
+        KIRA_ESPEON(REMATCH_4_LEVEL_2),
         IVS(4),
         }
     },
@@ -10514,11 +10511,11 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        DAN_VOLBEAT(REMATCH_5_LEVEL_2),
+        DAN_UMBREON(REMATCH_5_LEVEL_2),
         IVS(5),
         },
         {
-        KIRA_ILLUMISE(REMATCH_5_LEVEL_2),
+        KIRA_ESPEON(REMATCH_5_LEVEL_2),
         IVS(5),
         }
     },
@@ -10562,7 +10559,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 31,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_ARROKUDA,
         },
         {
         .lvl = 31,
@@ -10580,7 +10577,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 30,
-        .species = SPECIES_STARYU,
+        .species = SPECIES_MANTINE,
         },
         {
         .lvl = 30,
@@ -10588,7 +10585,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
         },
         {
         .lvl = 30,
-        .species = SPECIES_GOLDEEN,
+        .species = SPECIES_HORSEA,
         }
     },
 },
@@ -10608,7 +10605,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
         },
         {
         .lvl = 31,
-        .species = SPECIES_TENTACRUEL,
+        .species = SPECIES_BARRASKEWDA,
         IVS(1),
         }
     },
@@ -10627,7 +10624,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
         },
         {
         .lvl = 31,
-        .species = SPECIES_SKARMORY,
+        .species = SPECIES_STARAVIA,
         }
     },
 },
@@ -10641,13 +10638,11 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 31,
-        .species = SPECIES_DUSTOX,
-        .moves = {MOVE_SILVER_WIND, MOVE_VENOSHOCK, MOVE_TOXIC, MOVE_PROTECT}
+        .species = SPECIES_NIDORINO
         },
         {
         .lvl = 31,
-        .species = SPECIES_BEAUTIFLY,
-        .moves = {MOVE_LEECH_LIFE, MOVE_AIR_CUTTER, MOVE_ATTRACT, MOVE_STUN_SPORE}
+        .species = SPECIES_NIDORINA
         }
     },
 },
@@ -10713,7 +10708,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 33,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_INKAY,
         },
         {
         .lvl = 33,
@@ -10731,11 +10726,11 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 33,
-        .species = SPECIES_GOLDUCK,
+        .species = SPECIES_DELIBIRD,
         },
         {
         .lvl = 33,
-        .species = SPECIES_SWELLOW,
+        .species = SPECIES_CRAMORANT,
         }
     },
 },
@@ -10764,7 +10759,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 34,
-        .species = SPECIES_PINSIR,
+        .species = SPECIES_SCYTHER,
         }
     },
 },
@@ -10785,7 +10780,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
         },
         {
         .lvl = 34,
-        .species = SPECIES_TROPIUS,
+        .species = SPECIES_LARVESTA,
         }
     },
 },
@@ -10799,11 +10794,11 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 33,
-        .species = SPECIES_ROSELIA,
+        .species = SPECIES_COTTONEE,
         },
         {
         .lvl = 33,
-        .species = SPECIES_GLOOM,
+        .species = SPECIES_FOONGUS,
         }
     },
 },
@@ -10817,11 +10812,11 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 33,
-        .species = SPECIES_BEAUTIFLY,
+        .species = SPECIES_HITMONCHAN,
         },
         {
         .lvl = 33,
-        .species = SPECIES_DUSTOX,
+        .species = SPECIES_HITMONLEE,
         }
     },
 },
@@ -10836,7 +10831,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 34,
-        .species = SPECIES_NINJASK,
+        .species = SPECIES_SCYTHER,
         }
     },
 },
@@ -10850,17 +10845,17 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 32,
-        .species = SPECIES_WURMPLE,
+        .species = SPECIES_WEEDLE,
         IVS(12),
         },
         {
         .lvl = 32,
-        .species = SPECIES_SILCOON,
+        .species = SPECIES_KAKUNA,
         IVS(12),
         },
         {
         .lvl = 32,
-        .species = SPECIES_BEAUTIFLY,
+        .species = SPECIES_BEEDRILL,
         IVS(12),
         }
     },
@@ -10875,11 +10870,11 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 33,
-        .species = SPECIES_ILLUMISE,
+        .species = SPECIES_JOLTIK,
         },
         {
         .lvl = 33,
-        .species = SPECIES_VOLBEAT,
+        .species = SPECIES_VENOMOTH,
         }
     },
 },
@@ -10893,17 +10888,17 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 32,
-        .species = SPECIES_WURMPLE,
+        .species = SPECIES_VENIPEDE,
         IVS(12),
         },
         {
         .lvl = 32,
-        .species = SPECIES_CASCOON,
+        .species = SPECIES_WHIRLIPEDE,
         IVS(12),
         },
         {
         .lvl = 32,
-        .species = SPECIES_DUSTOX,
+        .species = SPECIES_SCOLIPEDE,
         IVS(12),
         }
     },
@@ -10936,7 +10931,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 34,
-        .species = SPECIES_MASQUERAIN,
+        .species = SPECIES_LARVESTA,
         IVS(12),
         }
     },
@@ -10955,7 +10950,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
         },
         {
         .lvl = 31,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_ARROKUDA,
         },
         {
         .lvl = 31,
@@ -10973,11 +10968,10 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     POKEMON_RANGER_F_INFO,         \
     MINI_BOSS_AI_FLAGS
 
-#define CATHERINE_ROSELIA(Level)                                               \
-    .lvl = Level,                                                              \
-    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_ROSELIA : SPECIES_ROSERADE, \
-    .ability = ABILITY_NATURAL_CURE,                                           \
-    IVS(10),                                                                   \
+#define CATHERINE_COTTONEE(Level)                                                 \
+    .lvl = Level,                                                                 \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_COTTONEE : SPECIES_WHIMSICOTT, \
+    IVS(10),                                                                      \
     .gender = TRAINER_MON_FEMALE
 
 #define CATHERINE_GLOOM(Level)                                                \
@@ -10996,7 +10990,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
         CATHERINE_GLOOM(34),
         },
         {
-        CATHERINE_ROSELIA(34),
+        CATHERINE_COTTONEE(34),
         }
     },
 },
@@ -11010,7 +11004,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
         CATHERINE_GLOOM(REMATCH_2_LEVEL_1),
         },
         {
-        CATHERINE_ROSELIA(REMATCH_2_LEVEL_1),
+        CATHERINE_COTTONEE(REMATCH_2_LEVEL_1),
         }
     },
 },
@@ -11024,7 +11018,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
         CATHERINE_GLOOM(REMATCH_3_LEVEL_1),
         },
         {
-        CATHERINE_ROSELIA(REMATCH_3_LEVEL_1),
+        CATHERINE_COTTONEE(REMATCH_3_LEVEL_1),
         }
     },
 },
@@ -11038,7 +11032,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
         CATHERINE_GLOOM(REMATCH_4_LEVEL_1),
         },
         {
-        CATHERINE_ROSELIA(REMATCH_4_LEVEL_1),
+        CATHERINE_COTTONEE(REMATCH_4_LEVEL_1),
         }
     },
 },
@@ -11052,7 +11046,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
         CATHERINE_GLOOM(REMATCH_5_MINI_BOSS),
         },
         {
-        CATHERINE_ROSELIA(REMATCH_5_MINI_BOSS),
+        CATHERINE_COTTONEE(REMATCH_5_MINI_BOSS),
         }
     },
 },
@@ -11069,10 +11063,10 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     IVS(10),                        \
     .gender = TRAINER_MON_MALE
 
-#define JACKSON_TREECKO(Level) \
-    .lvl = Level,              \
-    .species = Level < REMATCH_2_LEVEL_1 ? SPECIES_TREECKO : (Level < REMATCH_4_LEVEL_6 ? SPECIES_GROVYLE : SPECIES_SCEPTILE), \
-    IVS(10),                   \
+#define JACKSON_BULBASAUR(Level) \
+    .lvl = Level,                \
+    .species = Level < REMATCH_2_LEVEL_1 ? SPECIES_BULBASAUR : (Level < REMATCH_4_LEVEL_6 ? SPECIES_IVYSAUR : SPECIES_VENUSAUR), \
+    IVS(10),                     \
     .gender = TRAINER_MON_MALE
 
 #define JACKSON_KECLEON(Level)  \
@@ -11087,7 +11081,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        JACKSON_TREECKO(34),
+        JACKSON_BULBASAUR(34),
         },
         {
         JACKSON_BRELOOM(34),
@@ -11101,7 +11095,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        JACKSON_TREECKO(REMATCH_2_LEVEL_1),
+        JACKSON_BULBASAUR(REMATCH_2_LEVEL_1),
         },
         {
         JACKSON_BRELOOM(REMATCH_2_LEVEL_1),
@@ -11118,7 +11112,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
         JACKSON_KECLEON(REMATCH_3_LEVEL_2),
         },
         {
-        JACKSON_TREECKO(REMATCH_3_LEVEL_1),
+        JACKSON_BULBASAUR(REMATCH_3_LEVEL_1),
         },
         {
         JACKSON_BRELOOM(REMATCH_3_LEVEL_1),
@@ -11135,7 +11129,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
         JACKSON_KECLEON(REMATCH_4_LEVEL_2),
         },
         {
-        JACKSON_TREECKO(REMATCH_4_LEVEL_1),
+        JACKSON_BULBASAUR(REMATCH_4_LEVEL_1),
         },
         {
         JACKSON_BRELOOM(REMATCH_4_LEVEL_1),
@@ -11152,7 +11146,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
         JACKSON_KECLEON(REMATCH_5_LEVEL_2),
         },
         {
-        JACKSON_TREECKO(REMATCH_5_MINI_BOSS),
+        JACKSON_BULBASAUR(REMATCH_5_MINI_BOSS),
         },
         {
         JACKSON_BRELOOM(REMATCH_5_MINI_BOSS),
@@ -11169,7 +11163,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 34,
-        .species = SPECIES_GOLDEEN,
+        .species = SPECIES_SNOVER,
         }
     },
 },
@@ -11183,7 +11177,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 34,
-        .species = SPECIES_SWELLOW,
+        .species = SPECIES_SWABLU,
         }
     },
 },
@@ -11219,7 +11213,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
         },
         {
         .lvl = 33,
-        .species = SPECIES_NUMEL,
+        .species = SPECIES_ROLYCOLY,
         }
     },
 },
@@ -11237,7 +11231,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
         },
         {
         .lvl = 33,
-        .species = SPECIES_TROPIUS,
+        .species = SPECIES_HAWLUCHA,
         }
     },
 },
@@ -11271,7 +11265,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 39,
-        .species = SPECIES_MANECTRIC,
+        .species = SPECIES_ROTOM,
         }
     },
 },
@@ -11320,7 +11314,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 39,
-        .species = SPECIES_ROSELIA,
+        .species = SPECIES_VULPIX,
         },
         {
         .lvl = 39,

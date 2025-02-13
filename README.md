@@ -2210,7 +2210,7 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
     - Learns Dual Wingbeat by level up
 
 - Staravia/Staraptor:
-    - Learn Slash/Dual Wingbeat by level up
+    - Learn Slash and Dual Wingbeat by level up
 
 - Bibarel:
     - Learns Waterfall, Aqua Tail, Body Slam, and Tail Slap by level up

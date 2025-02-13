@@ -9375,23 +9375,23 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
 },
 
 //Petalburg Gym
-#define PETALBURG_GYM_TRAINER(Variable, Name, Gender, Item, Species, HeldItem, Move1, Move2, Move3, Move4)         \
-[DIFFICULTY_NORMAL][TRAINER_##Variable] =                                                                          \
-{                                                                                                                  \
-    .trainerName = _(Name),                                                                                        \
-    ACE_TRAINER_##Gender##_INFO,                                                                                   \
-    .items = {ITEM_##Item, ITEM_NONE, ITEM_NONE, ITEM_NONE},                                                       \
+#define PETALBURG_GYM_TRAINER(Trainer, Name, Gender, Item, Species, HeldItem, Move1, Move2, Move3, Move4) \
+[DIFFICULTY_NORMAL][TRAINER_##Trainer] =                                                                  \
+{                                                                                                         \
+    .trainerName = _(Name),                                                                               \
+    ACE_TRAINER_##Gender##_INFO,                                                                          \
+    .items = {ITEM_##Item, ITEM_NONE, ITEM_NONE, ITEM_NONE},                                              \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_FORCE_SETUP_FIRST_TURN, \
-    .partySize = 1,                                                                                                \
-    .party = (const struct TrainerMon[]) {                                                                         \
-        {                                                                                                          \
-        .lvl = 31,                                                                                                 \
-        .species = SPECIES_##Species,                                                                              \
-        PERFECT_IVS,                                                                                               \
-        .heldItem = ITEM_##HeldItem,                                                                               \
-        .moves = {MOVE_##Move1, MOVE_##Move2, MOVE_##Move3, MOVE_##Move4}                                          \
-        }                                                                                                          \
-    },                                                                                                             \
+    .partySize = 1,                                                                                       \
+    .party = (const struct TrainerMon[]) {                                                                \
+        {                                                                                                 \
+        .lvl = 31,                                                                                        \
+        .species = SPECIES_##Species,                                                                     \
+        PERFECT_IVS,                                                                                      \
+        .heldItem = ITEM_##HeldItem,                                                                      \
+        .moves = {MOVE_##Move1, MOVE_##Move2, MOVE_##Move3, MOVE_##Move4}                                 \
+        }                                                                                                 \
+    },                                                                                                    \
 }
 
 PETALBURG_GYM_TRAINER(RANDALL, "Randall", M, X_SPEED,      SWELLOW,    SALAC_BERRY,  QUICK_ATTACK, AGILITY,     WING_ATTACK,  NONE),
@@ -13174,17 +13174,17 @@ MARINA_BATTLE(MT_PYRE, 42),
 
 //Magma Hideout
 #define MAGMA_HIDEOUT_GRUNT(Number, Gender, Species) \
-[DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_##Number] =             \
-{                                                    \
-    .trainerName = _("Grunt"),                       \
-    MAGMA_GRUNT_##Gender##_INFO,                     \
-    .partySize = 1,                                  \
-    .party = (const struct TrainerMon[]) {           \
-        {                                            \
-        .lvl = MAGMA_HIDEOUT_LEVEL,                  \
-        .species = SPECIES_##Species,                \
-        }                                            \
-    },                                               \
+[DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_##Number] = \
+{                                                           \
+    .trainerName = _("Grunt"),                              \
+    MAGMA_GRUNT_##Gender##_INFO,                            \
+    .partySize = 1,                                         \
+    .party = (const struct TrainerMon[]) {                  \
+        {                                                   \
+        .lvl = MAGMA_HIDEOUT_LEVEL,                         \
+        .species = SPECIES_##Species,                       \
+        }                                                   \
+    },                                                      \
 }
 
 MAGMA_HIDEOUT_GRUNT(1, M, NUMEL),
@@ -13796,182 +13796,34 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
 //Mossdeep Gym
 #define MOSSDEEP_GYM_LEVEL 46
 
-[DIFFICULTY_NORMAL][TRAINER_PRESTON] =
-{
-    .trainerName = _("Preston"),
-    PSYCHIC_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MOSSDEEP_GYM_LEVEL,
-        .species = SPECIES_GALLADE,
-        IVS(12),
-        }
-    },
-},
+#define MOSSDEEP_GYM_TRAINER(Trainer, Name, Class, Species) \
+[DIFFICULTY_NORMAL][TRAINER_##Trainer] =                    \
+{                                                           \
+    .trainerName = _(Name),                                 \
+    Class##_INFO,                                           \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,                      \
+    .partySize = 1,                                         \
+    .party = (const struct TrainerMon[]) {                  \
+        {                                                   \
+        .lvl = MOSSDEEP_GYM_LEVEL,                          \
+        .species = SPECIES_##Species,                       \
+        IVS(12),                                            \
+        }                                                   \
+    },                                                      \
+}
 
-[DIFFICULTY_NORMAL][TRAINER_MAURA] =
-{
-    .trainerName = _("Maura"),
-    PSYCHIC_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MOSSDEEP_GYM_LEVEL,
-        .species = SPECIES_ALAKAZAM,
-        IVS(12),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_SAMANTHA] =
-{
-    .trainerName = _("Samantha"),
-    PSYCHIC_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MOSSDEEP_GYM_LEVEL,
-        .species = SPECIES_XATU,
-        IVS(12),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_BLAKE] =
-{
-    .trainerName = _("Blake"),
-    PSYCHIC_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MOSSDEEP_GYM_LEVEL,
-        .species = SPECIES_CLAYDOL,
-        IVS(12),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_MACEY] =
-{
-    .trainerName = _("Macey"),
-    PSYCHIC_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MOSSDEEP_GYM_LEVEL,
-        .species = SPECIES_STARMIE,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_CLIFFORD] =
-{
-    .trainerName = _("Clifford"),
-    GENTLEMAN_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MOSSDEEP_GYM_LEVEL,
-        .species = SPECIES_FARIGIRAF,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_KATHLEEN] =
-{
-    .trainerName = _("Kathleen"),
-    PSYCHIC_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MOSSDEEP_GYM_LEVEL,
-        .species = SPECIES_CHIMECHO,
-        IVS(12),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_NICHOLAS] =
-{
-    .trainerName = _("Nicholas"),
-    PSYCHIC_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MOSSDEEP_GYM_LEVEL,
-        .species = SPECIES_WOBBUFFET,
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_NATE] =
-{
-    .trainerName = _("Nate"),
-    GENTLEMAN_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MOSSDEEP_GYM_LEVEL,
-        .species = SPECIES_GRUMPIG,
-        IVS(12),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_VIRGIL] =
-{
-    .trainerName = _("Virgil"),
-    PSYCHIC_M_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MOSSDEEP_GYM_LEVEL,
-        .species = SPECIES_GOLDUCK,
-        IVS(12),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_SYLVIA] =
-{
-    .trainerName = _("Sylvia"),
-    HEX_MANIAC_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MOSSDEEP_GYM_LEVEL,
-        .species = SPECIES_MEDICHAM,
-        IVS(12),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_HANNAH] =
-{
-    .trainerName = _("Hannah"),
-    PSYCHIC_F_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 1,
-    .party = (const struct TrainerMon[]) {
-        {
-        .lvl = MOSSDEEP_GYM_LEVEL,
-        .species = SPECIES_GARDEVOIR,
-        IVS(12),
-        }
-    },
-},
+MOSSDEEP_GYM_TRAINER(PRESTON,  "Preston",  PSYCHIC_M,  GALLADE),
+MOSSDEEP_GYM_TRAINER(MAURA,    "Maura",    PSYCHIC_F,  ALAKAZAM),
+MOSSDEEP_GYM_TRAINER(SAMANTHA, "Samantha", PSYCHIC_F,  XATU),
+MOSSDEEP_GYM_TRAINER(BLAKE,    "Blake",    PSYCHIC_M,  CLAYDOL),
+MOSSDEEP_GYM_TRAINER(MACEY,    "Macey",    PSYCHIC_F,  STARMIE),
+MOSSDEEP_GYM_TRAINER(CLIFFORD, "Clifford", GENTLEMAN,  FARIGIRAF),
+MOSSDEEP_GYM_TRAINER(KATHLEEN, "Kathleen", PSYCHIC_F,  CHIMECHO),
+MOSSDEEP_GYM_TRAINER(NICHOLAS, "Nicholas", PSYCHIC_M,  WOBBUFFET),
+MOSSDEEP_GYM_TRAINER(NATE,     "Nate",     GENTLEMAN,  GRUMPIG),
+MOSSDEEP_GYM_TRAINER(VIRGIL,   "Virgil",   PSYCHIC_M,  GOLDUCK),
+MOSSDEEP_GYM_TRAINER(SYLVIA,   "Sylvia",   HEX_MANIAC, MEDICHAM),
+MOSSDEEP_GYM_TRAINER(HANNAH,   "Hannah",   PSYCHIC_F,  GARDEVOIR),
 
 //Trick House 6
 [DIFFICULTY_NORMAL][TRAINER_SOPHIA] =

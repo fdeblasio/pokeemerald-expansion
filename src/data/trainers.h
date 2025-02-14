@@ -2122,91 +2122,88 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     },
 },
 
-#define WALLACE_BATTLE(Trainer, AceLevel)                                                  \
-[DIFFICULTY_NORMAL][TRAINER_##Trainer] =                                                   \
-{                                                                                          \
-    .trainerName = _("Wallace"),                                                           \
-    .trainerClass = TRAINER_CLASS_CHAMPION,                                                \
-    .trainerPic = TRAINER_PIC_CHAMPION_WALLACE,                                            \
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,                                 \
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE}, \
-    .mugshotColor = MUGSHOT_TYPE_WATER,                                                    \
-    BOSS_AI_FLAGS,                                                                         \
-    .partySize = 6,                                                                        \
-    .party = (const struct TrainerMon[]) {                                                 \
-        {                                                                                  \
-        .lvl = AceLevel - 3,                                                               \
-        .species = SPECIES_AZUMARILL,                                                           \
-        .ability = ABILITY_DRIZZLE,                                                        \
-        .nature = NATURE_MODEST,                                                           \
-        EV_SPREAD_SPA_DEF_SPE,                                                             \
-        PERFECT_IVS,                                                                       \
-        .moves = {MOVE_HYDRO_PUMP, MOVE_HURRICANE, MOVE_AQUA_JET, MOVE_BELLY_DRUM},             \
-        .gender = TRAINER_MON_MALE,                                                        \
-        .heldItem = ITEM_DAMP_ROCK,                                                        \
-        .ball = ITEM_ULTRA_BALL,                                                           \
-        },                                                                                 \
-        {                                                                                  \
-        .lvl = AceLevel - 3,                                                               \
-        .species = SPECIES_DACHSBUN,                                                                \
-        .ability = ABILITY_SWIFT_SWIM,                                                     \
-        .nature = NATURE_MODEST,                                                           \
-        EV_SPREAD_SPA_SPE_DEF,                                                             \
-        PERFECT_IVS,                                                                       \
-        .moves = {MOVE_SURF, MOVE_PSYCHIC, MOVE_DRAINING_KISS, MOVE_SHELL_SMASH},          \
-        .gender = TRAINER_MON_FEMALE,                                                      \
-        .ball = ITEM_DIVE_BALL,                                                            \
-        },                                                                                 \
-        {                                                                                  \
-        .lvl = AceLevel - 3,                                                               \
-        .species = SPECIES_GRANBULL,                                                                   \
-        .ability = ABILITY_SWIFT_SWIM,                                                     \
-        .nature = NATURE_IMPISH,                                                           \
-        EV_SPREAD_ATK_DEF_HP,                                                              \
-        PERFECT_IVS,                                                                       \
-        .moves = {MOVE_AQUA_TAIL, MOVE_ROCK_SLIDE, MOVE_YAWN, MOVE_REST},                  \
-        .gender = TRAINER_MON_MALE,                                                        \
-        .heldItem = ITEM_CHESTO_BERRY,                                                     \
-        .ball = ITEM_DIVE_BALL,                                                            \
-        .isShiny = TRUE,                                                                   \
-        },                                                                                 \
-        {                                                                                  \
-        .lvl = AceLevel - 2,                                                               \
-        .species = SPECIES_CLEFABLE,                                                                    \
-        .ability = ABILITY_SWIFT_SWIM,                                                     \
-        .nature = NATURE_MODEST,                                                           \
-        EV_SPREAD_SPA_SPE_HP,                                                              \
-        PERFECT_IVS,                                                                       \
-        .moves = {MOVE_SURF, MOVE_GIGA_DRAIN, MOVE_LEECH_SEED, MOVE_RAIN_DANCE},           \
-        .gender = TRAINER_MON_MALE,                                                        \
-        .ball = ITEM_ULTRA_BALL,                                                           \
-        },                                                                                 \
-        {                                                                                  \
-        .lvl = AceLevel - 2,                                                               \
-        .species = SPECIES_SYLVEON,                                                                  \
-        .ability = ABILITY_OBLIVIOUS,                                                      \
-        .nature = NATURE_MODEST,                                                           \
-        EV_SPREAD_SPA_HP_SPE,                                                              \
-        PERFECT_IVS,                                                                       \
-        .moves = {MOVE_WATER_SPOUT, MOVE_ICE_BEAM, MOVE_AQUA_RING, MOVE_AMNESIA},          \
-        .gender = TRAINER_MON_MALE,                                                        \
-        .heldItem = ITEM_LEFTOVERS,                                                        \
-        .ball = ITEM_DIVE_BALL,                                                            \
-        },                                                                                 \
-        {                                                                                  \
-        .lvl = AceLevel,                                                                   \
-        .species = SPECIES_TOGEKISS,                                                                   \
-        .ability = ABILITY_MARVEL_SCALE,                                                   \
-        .nature = NATURE_MODEST,                                                           \
-        EV_SPREAD_SPA_SPD_SPE,                                                             \
-        PERFECT_IVS,                                                                       \
-        .moves = {MOVE_HYDRO_PUMP, MOVE_ICE_BEAM, MOVE_COIL, MOVE_RECOVER},                \
-        .gender = TRAINER_MON_FEMALE,                                                      \
-        .heldItem = ITEM_SITRUS_BERRY,                                                     \
-        .ball = ITEM_POKE_BALL,                                                            \
-        },                                                                                 \
-    },                                                                                     \
-}                                                                                          \
+#define WALLACE_BATTLE(Trainer, AceLevel)                                                   \
+[DIFFICULTY_NORMAL][TRAINER_##Trainer] =                                                    \
+{                                                                                           \
+    .trainerName = _("Wallace"),                                                            \
+    .trainerClass = TRAINER_CLASS_CHAMPION,                                                 \
+    .trainerPic = TRAINER_PIC_CHAMPION_WALLACE,                                             \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,                                  \
+    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},  \
+    .mugshotColor = MUGSHOT_TYPE_FAIRY,                                                     \
+    BOSS_AI_FLAGS,                                                                          \
+    .partySize = 6,                                                                         \
+    .party = (const struct TrainerMon[]) {                                                  \
+        {                                                                                   \
+        .lvl = AceLevel - 3,                                                                \
+        .species = SPECIES_AZUMARILL,                                                       \
+        .ability = ABILITY_HUGE_POWER,                                                      \
+        .nature = NATURE_MODEST,                                                            \
+        EV_SPREAD_SPA_DEF_SPE,                                                              \
+        PERFECT_IVS,                                                                        \
+        .moves = {MOVE_PLAY_ROUGH, MOVE_AQUA_TAIL, MOVE_BULLDOZE, MOVE_BELLY_DRUM},         \
+        .gender = TRAINER_MON_MALE,                                                         \
+        .heldItem = ITEM_LEFTOVERS,                                                         \
+        .ball = ITEM_DIVE_BALL,                                                             \
+        },                                                                                  \
+        {                                                                                   \
+        .lvl = AceLevel - 3,                                                                \
+        .species = SPECIES_DACHSBUN,                                                        \
+        .ability = ABILITY_WELL_BAKED_BODY,                                                 \
+        .nature = NATURE_IMPISH,                                                            \
+        EV_SPREAD_ATK_DEF_HP,                                                               \
+        PERFECT_IVS,                                                                        \
+        .moves = {MOVE_PLAY_ROUGH, MOVE_BODY_PRESS, MOVE_WORK_UP, MOVE_BATON_PASS},         \
+        .gender = TRAINER_MON_FEMALE,                                                       \
+        .ball = ITEM_ULTRA_BALL,                                                            \
+        },                                                                                  \
+        {                                                                                   \
+        .lvl = AceLevel - 3,                                                                \
+        .species = SPECIES_GRANBULL,                                                        \
+        .ability = ABILITY_STRONG_JAW,                                                      \
+        .nature = NATURE_ADAMANT,                                                           \
+        EV_SPREAD_ATK_SPE_HP,                                                               \
+        PERFECT_IVS,                                                                        \
+        .moves = {MOVE_PLAY_ROUGH, MOVE_CRUNCH, MOVE_FIRE_FANG, MOVE_PSYCHIC_FANGS},        \
+        .gender = TRAINER_MON_MALE,                                                         \
+        .ball = ITEM_ULTRA_BALL,                                                            \
+        },                                                                                  \
+        {                                                                                   \
+        .lvl = AceLevel - 2,                                                                \
+        .species = SPECIES_CLEFABLE,                                                        \
+        .ability = ABILITY_MAGIC_GUARD,                                                     \
+        .nature = NATURE_MODEST,                                                            \
+        EV_SPREAD_SPA_SPE_HP,                                                               \
+        PERFECT_IVS,                                                                        \
+        .moves = {MOVE_MOONBLAST, MOVE_FLAMETHROWER, MOVE_CALM_MIND, MOVE_MOONLIGHT},       \
+        .gender = TRAINER_MON_FEMALE,                                                       \
+        .ball = ITEM_MOON_BALL,                                                             \
+        },                                                                                  \
+        {                                                                                   \
+        .lvl = AceLevel - 2,                                                                \
+        .species = SPECIES_SYLVEON,                                                         \
+        .ability = ABILITY_PIXILATE,                                                        \
+        .nature = NATURE_MODEST,                                                            \
+        EV_SPREAD_SPA_SPD_SPE,                                                              \
+        PERFECT_IVS,                                                                        \
+        .moves = {MOVE_HYPER_VOICE, MOVE_STORED_POWER, MOVE_CALM_MIND, MOVE_MISTY_TERRAIN}, \
+        .gender = TRAINER_MON_FEMALE,                                                       \
+        .ball = ITEM_ULTRA_BALL,                                                            \
+        },                                                                                  \
+        {                                                                                   \
+        .lvl = AceLevel,                                                                    \
+        .species = SPECIES_TOGEKISS,                                                        \
+        .ability = ABILITY_SERENE_GRACE,                                                    \
+        .nature = NATURE_MODEST,                                                            \
+        EV_SPREAD_SPA_SPE_HP,                                                               \
+        PERFECT_IVS,                                                                        \
+        .moves = {MOVE_DAZZLING_GLEAM, MOVE_AIR_SLASH, MOVE_AURA_SPHERE, MOVE_NASTY_PLOT},  \
+        .gender = TRAINER_MON_MALE,                                                         \
+        .heldItem = ITEM_SITRUS_BERRY,                                                      \
+        .ball = ITEM_POKE_BALL,                                                             \
+        },                                                                                  \
+    },                                                                                      \
+}                                                                                           \
 
 WALLACE_BATTLE(WALLACE, 69),
 WALLACE_BATTLE(WALLACE_REMATCH, 90),
@@ -2221,24 +2218,23 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 87,
-        .species = SPECIES_SKARMORY,
-        .ability = ABILITY_STURDY,
-        .nature = NATURE_IMPISH,
-        EV_SPREAD_ATK_DEF_HP,
+        .species = SPECIES_COPPERAJAH,
+        .ability = ABILITY_SHEER_FORCE,
+        .nature = NATURE_ADAMANT,
+        EV_SPREAD_ATK_HP_SPE,
         PERFECT_IVS,
-        .moves = {MOVE_STEEL_WING, MOVE_DRILL_PECK, MOVE_BODY_PRESS, MOVE_SPIKES},
+        .moves = {MOVE_IRON_HEAD, MOVE_PLAY_ROUGH, MOVE_HIGH_HORSEPOWER, MOVE_CURSE},
         .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_GANLON_BERRY,
-        .ball = ITEM_LUXURY_BALL,
+        .ball = ITEM_HEAVY_BALL,
         },
         {
         .lvl = 87,
-        .species = SPECIES_CLAYDOL,
-        .nature = NATURE_CALM,
-        EV_SPREAD_DEF_SPD_SPA,
+        .species = SPECIES_KLINKLANG,
+        .nature = NATURE_ADAMANT,
+        EV_SPREAD_ATK_SPE_DEF,
         PERFECT_IVS,
-        .moves = {MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_ANCIENT_POWER, MOVE_EARTHQUAKE},
-        .ball = ITEM_HEAVY_BALL,
+        .moves = {MOVE_GEAR_GRIND, MOVE_SUPERCELL_SLAM, MOVE_BODY_PRESS, MOVE_SHIFT_GEAR},
+        .ball = ITEM_ULTRA_BALL,
         },
         {
         .lvl = 88,
@@ -2252,17 +2248,17 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         .nickname = COMPOUND_STRING("Devon"),
         },
         {
-        STEVEN_MAWILE(88),
+        STEVEN_AEGISLASH(88),
+        .heldItem = ITEM_LEFTOVERS,
+        },
+        {
+        STEVEN_MAWILE(89),
         .heldItem = ITEM_LIFE_ORB,
         },
         {
-        STEVEN_AGGRON(89),
-        .heldItem = ITEM_SHUCA_BERRY,
-        },
-        {
-        STEVEN_METAGROSS(90),
-        .moves = {MOVE_METEOR_MASH, MOVE_PSYCHIC_FANGS, MOVE_EARTHQUAKE, MOVE_BULLET_PUNCH},
-        .heldItem = ITEM_METAGROSSITE,
+        STEVEN_AGGRON(90),
+        .moves = {MOVE_IRON_HEAD, MOVE_ROCK_SLIDE, MOVE_BODY_PRESS, MOVE_IRON_DEFENSE},
+        .heldItem = ITEM_AGGRONITE,
         }
     },
 },

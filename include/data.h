@@ -148,25 +148,15 @@ struct Trainer
     .trainerClass = TRAINER_CLASS_RIVAL, \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE
 
-#define STEVEN_METAGROSS(Level)                                 \
-    .lvl = Level,                                               \
-    .species = Level < 70 ? SPECIES_METANG : SPECIES_METAGROSS, \
-    .ability = ABILITY_CLEAR_BODY,                              \
-    .nature = NATURE_ADAMANT,                                   \
-    EV_SPREAD_ATK_DEF_HP,                                       \
-    PERFECT_IVS,                                                \
+#define STEVEN_AGGRON(Level)    \
+    .lvl = Level,               \
+    .species = SPECIES_AGGRON,  \
+    .ability = ABILITY_STURDY,  \
+    .nature = NATURE_IMPISH,    \
+    EV_SPREAD_ATK_DEF_HP,       \
+    PERFECT_IVS,                \
+    .gender = TRAINER_MON_MALE, \
     .ball = ITEM_POKE_BALL
-
-#define STEVEN_AGGRON(Level)                                                                                   \
-    .lvl = Level,                                                                                              \
-    .species = SPECIES_AGGRON,                                                                                 \
-    .ability = ABILITY_STURDY,                                                                                 \
-    .nature = NATURE_IMPISH,                                                                                   \
-    EV_SPREAD_ATK_DEF_HP,                                                                                      \
-    PERFECT_IVS,                                                                                               \
-    .moves = {MOVE_IRON_HEAD, MOVE_ROCK_SLIDE, MOVE_BODY_PRESS, Level < 64 ? MOVE_HARDEN : MOVE_IRON_DEFENSE}, \
-    .gender = TRAINER_MON_MALE,                                                                                \
-    .ball = ITEM_HEAVY_BALL
 
 #define STEVEN_MAWILE(Level)                                                    \
     .lvl = Level,                                                               \
@@ -178,6 +168,16 @@ struct Trainer
     .moves = {MOVE_IRON_HEAD, MOVE_PLAY_ROUGH, MOVE_CRUNCH, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_FEMALE,                                               \
     .ball = ITEM_ULTRA_BALL
+
+#define STEVEN_AEGISLASH(Level)                                   \
+    .lvl = Level,                                                 \
+    .species = Level < 70 ? SPECIES_DOUBLADE : SPECIES_AEGISLASH, \
+    .nature = NATURE_ADAMANT,                                     \
+    EV_SPREAD_ATK_DEF_HP,                                         \
+    PERFECT_IVS,                                                  \
+    .moves = {MOVE_IRON_HEAD, MOVE_SHADOW_CLAW, Level < 70 ? MOVE_SHADOW_SNEAK : MOVE_KINGS_SHIELD, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                   \
+    .ball = ITEM_LUXURY_BALL
 
 #define MAXIE_SPACE_CENTER_ACE_LEVEL 53
 

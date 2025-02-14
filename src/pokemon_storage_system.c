@@ -244,7 +244,6 @@ enum {
     PALTAG_ITEM_ICON_1, // Used implicitly in CreateItemIconSprites
     PALTAG_ITEM_ICON_2, // Used implicitly in CreateItemIconSprites
     PALTAG_MARKING_MENU,
-    PALTAG_SILHOUETTE, // Used implicitly in CreateMonIconSpriteSilhouette
 };
 
 enum {

@@ -9028,7 +9028,8 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_BODY_PRESS"
+      "MOVE_BODY_PRESS",
+      "MOVE_SUPERCELL_SLAM"
     ],
     "EggMoves": [],
     "TutorMoves": []

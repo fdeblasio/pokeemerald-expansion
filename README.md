@@ -2558,7 +2558,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Klinklang:
     - Learns Metal Claw, Rapid Spin, and Magnet Bomb by level up
-    - Learns Body Press by TM
+    - Learns Body Press and Supercell Slam by TM
 
 - Tynamo:
     - Evolution: 39->32

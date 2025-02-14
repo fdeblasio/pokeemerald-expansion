@@ -176,10 +176,10 @@ Debug_EventScript_CheckEVs_End::
 	end
 
 Debug_EventScript_Text_OffensiveEVs:
-	.string "ATK EVs: {STR_VAR_1}, SPATK EVs: {STR_VAR_2}, SPEED EVs: {STR_VAR_3}$"
+	.string "Atk EVs: {STR_VAR_1}, SpAtk EVs: {STR_VAR_2}, Speed EVs: {STR_VAR_3}$"
 
 Debug_EventScript_Text_DefensiveEVs:
-	.string "HP EVs: {STR_VAR_1}, DEF EVs: {STR_VAR_2}, SPDEF EVs: {STR_VAR_3}$"
+	.string "HP EVs: {STR_VAR_1}, Def EVs: {STR_VAR_2}, SpDef EVs: {STR_VAR_3}$"
 
 Debug_EventScript_CheckIVs::
 	lockall
@@ -197,10 +197,10 @@ Debug_EventScript_CheckIVs_End::
 	end
 
 Debug_EventScript_Text_OffensiveIVs:
-	.string "ATK IVs: {STR_VAR_1}, SPATK IVs: {STR_VAR_2}, SPEED IVs: {STR_VAR_3}$"
+	.string "Atk IVs: {STR_VAR_1}, SpAtk IVs: {STR_VAR_2}, Speed IVs: {STR_VAR_3}$"
 
 Debug_EventScript_Text_DefensiveIVs:
-	.string "HP IVs: {STR_VAR_1}, DEF IVs: {STR_VAR_2}, SPDEF IVs: {STR_VAR_3}$"
+	.string "HP IVs: {STR_VAR_1}, Def IVs: {STR_VAR_2}, SpDef IVs: {STR_VAR_3}$"
 
 Debug_EventScript_Script_1::
 	release

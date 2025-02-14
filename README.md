@@ -1889,16 +1889,16 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
 
 - Nincada:
     - Learns Mud Slap at level 1 and now learns Mud Shot in its place at level 15
-    - Learns Bug Bite and Leech Life by level up
+    - Learns Struggle Bug, Bug Bite, and Leech Life by level up
     - Learns Hone Claws by Egg Move
 
 - Ninjask:
-    - Learns Mud Shot and Leech Life by level up
+    - Learns Struggle Bug, Mud Shot, and Leech Life by level up
     - Learns Steel Wing by TM
     - Learns Hone Claws by Egg Move
 
 - Shedinja:
-    - Learns Mud Shot, Fury Cutter, Bug Bite, Swords Dance, and Leech Life by level up
+    - Learns Struggle Bug, Mud Shot, Fury Cutter, Bug Bite, Swords Dance, and Leech Life by level up
     - Learns Hone Claws by Egg Move
 
 - Whismur:

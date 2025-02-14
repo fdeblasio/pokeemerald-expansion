@@ -64,6 +64,13 @@ VerdanturfTown_EventScript_RusturfTunnelSign::
 	msgbox VerdanturfTown_Text_RusturfTunnelSign, MSGBOX_SIGN
 	end
 
+VerdanturfTown_EventScript_Wally::
+	lockall
+	@setvar VAR_0x8008, 1
+	applymovement LOCALID_WALLY, Common_Movement_FacePlayer
+	waitmovement 0
+	goto VerdanturfTown_EventScript_BattleWally
+
 VerdanturfTown_EventScript_WallyTrigger::
 	lockall
 	setvar VAR_0x8004, 10
@@ -74,6 +81,7 @@ VerdanturfTown_EventScript_WallyTrigger::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	delay 10
+	setobjectxyperm LOCALID_WALLY, 10, 14
 	addobject LOCALID_WALLY
 	clearflag FLAG_HIDE_VERDANTURF_TOWN_WALLY
 	applymovement OBJ_EVENT_ID_PLAYER, VerdanturfTown_Movement_PlayerBackUp
@@ -86,6 +94,10 @@ VerdanturfTown_EventScript_WallyTrigger::
 	playse SE_PIN
 	applymovement LOCALID_WALLY, Common_Movement_ExclamationMark
 	waitmovement 0
+	copyobjectxytoperm LOCALID_WALLY
+	goto VerdanturfTown_EventScript_BattleWally
+
+VerdanturfTown_EventScript_BattleWally::
 	msgbox VerdanturfTown_Text_WallyIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_WALLY_VERDANTURF, VerdanturfTown_Text_WallyDefeat
 	msgbox VerdanturfTown_Text_WallyPostBattle, MSGBOX_DEFAULT
@@ -101,7 +113,6 @@ VerdanturfTown_EventScript_WallyTrigger::
 	setflag FLAG_HIDE_VERDANTURF_TOWN_WALLY
 	setflag FLAG_HIDE_MAUVILLE_CITY_SCOTT
 	releaseall
-	end
 
 VerdanturfTown_Movement_PlayerBackUp:
 	lock_facing_direction

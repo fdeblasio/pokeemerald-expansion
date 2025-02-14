@@ -18,7 +18,7 @@ enum {
     WALLPAPER_FRIENDS, // The one received as a gift from Walda's parents.
     WALLPAPER_COUNT
 };
-#define MAX_DEFAULT_WALLPAPER WALLPAPER_SKY
+#define MAX_DEFAULT_WALLPAPER WALLPAPER_POKECENTER
 
 static const u16 sWallpaperPalettes_Forest[][16] =
 {

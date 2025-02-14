@@ -5078,6 +5078,10 @@
         "Move": "MOVE_MUD_SLAP"
       },
       {
+        "Level": 1,
+        "Move": "MOVE_STRUGGLE_BUG"
+      },
+      {
         "Level": 15,
         "Move": "MOVE_BUG_BITE"
       },
@@ -5101,6 +5105,10 @@
     "LevelMoves": [
       {
         "Level": 1,
+        "Move": "MOVE_STRUGGLE_BUG"
+      },
+      {
+        "Level": 1,
         "Move": "MOVE_MUD_SHOT"
       },
       {
@@ -5117,6 +5125,10 @@
   },
   "SHEDINJA": {
     "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_STRUGGLE_BUG"
+      },
       {
         "Level": 1,
         "Move": "MOVE_BUG_BITE"

@@ -29,7 +29,6 @@ const struct SpritePalette gMonIconPaletteTable[] =
     { gMonIconPalettes[3], POKE_ICON_BASE_PAL_TAG + 3 },
     { gMonIconPalettes[4], POKE_ICON_BASE_PAL_TAG + 4 },
     { gMonIconPalettes[5], POKE_ICON_BASE_PAL_TAG + 5 },
-    { gMonIconPalettes[6], POKE_ICON_BASE_PAL_TAG + 15 },
 };
 
 static const struct OamData sMonIconOamData =
@@ -173,7 +172,8 @@ u8 CreateMonIconSilhouette(u16 species, void (*callback)(struct Sprite *), s16 x
         .anims = sMonIconAnims,
         .affineAnims = sMonIconAffineAnims,
         .callback = callback,
-        .paletteTag = POKE_ICON_BASE_PAL_TAG + 15,
+        //Should use silhouette palette, but can't get it to work without messing with PC
+        .paletteTag = POKE_ICON_BASE_PAL_TAG + gSpeciesInfo[species].iconPalIndex,
     };
 
     spriteId = CreateMonIconSprite(&iconTemplate, x, y, subpriority);

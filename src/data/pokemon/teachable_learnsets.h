@@ -29798,6 +29798,7 @@ static const u16 sKlinklangTeachableLearnset[] = {
     MOVE_SHOCK_WAVE,
     MOVE_SIGNAL_BEAM,
     MOVE_SLEEP_TALK,
+    MOVE_SUPERCELL_SLAM,
     MOVE_SWAGGER,
     MOVE_THUNDER,
     MOVE_THUNDER_WAVE,

@@ -2569,7 +2569,7 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
 
 - Klinklang:
     - Learns Metal Claw, Rapid Spin, and Magnet Bomb by level up
-    - Learns Body Press by TM
+    - Learns Body Press and Supercell Slam by TM
 
 - Tynamo:
     - Evolution: 39->32

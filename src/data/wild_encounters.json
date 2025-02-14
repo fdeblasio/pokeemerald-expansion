@@ -546,6 +546,14 @@
               },
               {
                 "range": "RANGE_ROUTE_101",
+                "species": "EARLY_BIRD_2"
+              },
+              {
+                "range": "RANGE_ROUTE_101",
+                "species": "EARLY_BIRD_2"
+              },
+              {
+                "range": "RANGE_ROUTE_101",
                 "species": "EARLY_BEAST_1"
               },
               {
@@ -559,14 +567,6 @@
               {
                 "range": "RANGE_ROUTE_101",
                 "species": "EARLY_BEAST_2"
-              },
-              {
-                "range": "RANGE_ROUTE_101",
-                "species": "EARLY_BIRD_2"
-              },
-              {
-                "range": "RANGE_ROUTE_101",
-                "species": "EARLY_BIRD_2"
               },
               {
                 "range": "RANGE_ROUTE_101",

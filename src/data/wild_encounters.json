@@ -603,27 +603,27 @@
               },
               {
                 "range": "RANGE_ROUTE_102_104",
-                "species": "SURSKIT"
-              },
-              {
-                "range": "RANGE_ROUTE_102_104",
-                "species": "SURSKIT"
-              },
-              {
-                "range": "RANGE_ROUTE_102_104",
-                "species": "EARLY_BUG_1"
-              },
-              {
-                "range": "RANGE_ROUTE_102_104",
-                "species": "EARLY_BUG_1"
-              },
-              {
-                "range": "RANGE_ROUTE_102_104",
                 "species": "SEEDOT"
               },
               {
                 "range": "RANGE_ROUTE_102_104",
                 "species": "LOTAD"
+              },
+              {
+                "range": "RANGE_ROUTE_102_104",
+                "species": "EARLY_BUG_1"
+              },
+              {
+                "range": "RANGE_ROUTE_102_104",
+                "species": "EARLY_BUG_1"
+              },
+              {
+                "range": "RANGE_ROUTE_102_104",
+                "species": "EARLY_BUG_1"
+              },
+              {
+                "range": "RANGE_ROUTE_102_104",
+                "species": "WALLY_STARTER"
               }
             ]
           },
@@ -795,7 +795,7 @@
               },
               {
                 "range": "RANGE_ROUTE_102_104",
-                "species": "EARLY_BIRD_1"
+                "species": "EARLY_BUG_1"
               },
               {
                 "range": "RANGE_ROUTE_102_104",
@@ -803,7 +803,7 @@
               },
               {
                 "range": "RANGE_ROUTE_102_104",
-                "species": "EARLY_BUG_1"
+                "species": "EARLY_BIRD_1"
               },
               {
                 "range": "RANGE_ROUTE_102_104",

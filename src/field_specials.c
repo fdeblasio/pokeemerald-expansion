@@ -1456,7 +1456,7 @@ void SetShoalItemFlag(u16 unused)
 void LoadWallyZigzagoon(void)
 {
     u16 monData;
-    CreateMon(&gPlayerParty[0], SPECIES_NORMAN_LEND, 5, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
+    CreateMon(&gPlayerParty[0], SPECIES_NORMAN_LEND, 4, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
     monData = TRUE;
     SetMonData(&gPlayerParty[0], MON_DATA_ABILITY_NUM, &monData);
     monData = MOVE_TACKLE;
@@ -1467,6 +1467,8 @@ void LoadWallyZigzagoon(void)
     SetMonData(&gPlayerParty[0], MON_DATA_MOVE4, &monData);
     monData = ITEM_ULTRA_BALL;
     SetMonData(&gPlayerParty[0], MON_DATA_POKEBALL, &monData);
+    monData = 56;
+    SetMonData(&gPlayerParty[0], MON_DATA_PP1, &monData);
 }
 
 bool8 IsStarterInParty(void)

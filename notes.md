@@ -47,6 +47,7 @@ upcoming
 - Dewford:
     - Get Exp. Share from Steven instead of from Mr. Stone after
         - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game
+            - It isn't on by default though, so could still be Steven
 - Mauville:
     - Get all the weird Mauville men at once?
 - Verdanturf:

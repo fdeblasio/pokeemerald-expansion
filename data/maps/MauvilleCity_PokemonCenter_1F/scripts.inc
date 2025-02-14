@@ -49,8 +49,7 @@ MauvilleCity_PokemonCenter_1F_Text_MyDataUpdatedFromRecordCorner:
 	.string "as my friend's!$"
 
 MauvilleCity_PokemonCenter_1F_Text_RecordCornerSoundsFun:
-	.string "A Record Corner opened upstairs in\n"
-	.string "the Pokémon Center.\p"
+	.string "A Game Corner opened in Mauville.\p"
 	.string "I don't know what it's about, but it\n"
 	.string "sounds fun. I'll go check it out!$"
 

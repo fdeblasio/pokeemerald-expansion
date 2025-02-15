@@ -2870,6 +2870,7 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
     - Learns Life Dew by level up
 
 - Klefki:
+    - Catch rate: 75->90
     - Learns Dazzling Gleam by level up
 
 - Pumpkaboo:

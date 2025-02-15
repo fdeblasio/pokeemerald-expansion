@@ -175,7 +175,7 @@
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
-                "species": "MANTYKE"
+                "species": "CARVANHA"
               },
               {
                 "range": "RANGE_GOOD_ROD_INITIAL",
@@ -183,7 +183,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "SHARPEDO"
+                "species": "CARVANHA"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -191,7 +191,7 @@
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
-                "species": "MANTINE"
+                "species": "WAILORD"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",
@@ -208,7 +208,7 @@
             "mons": [
               {
                 "range": "RANGE_LILYCOVE_CITY",
-                "species": "CARVANHA"
+                "species": "WAILMER"
               },
               {
                 "range": "RANGE_LILYCOVE_CITY",
@@ -236,7 +236,7 @@
               },
               {
                 "range": "RANGE_LILYCOVE_CITY",
-                "species": "WAILMER"
+                "species": "CARVANHA"
               },
               {
                 "range": "RANGE_SUPER_ROD_INITIAL",

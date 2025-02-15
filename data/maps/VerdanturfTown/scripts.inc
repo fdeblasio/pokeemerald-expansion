@@ -110,6 +110,7 @@ VerdanturfTown_EventScript_BattleWally::
 	setflag FLAG_HIDE_VERDANTURF_TOWN_WALLY
 	setflag FLAG_HIDE_MAUVILLE_CITY_SCOTT
 	releaseall
+	end
 
 VerdanturfTown_Movement_PlayerBackUp:
 	lock_facing_direction

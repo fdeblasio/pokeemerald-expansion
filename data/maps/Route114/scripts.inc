@@ -178,12 +178,20 @@ Route114_EventScript_Kai::
 	msgbox Route114_Text_KaiPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+Route114_EventScript_Wally::
+	lockall
+	@setvar VAR_0x8008, 1
+	applymovement LOCALID_WALLY, Common_Movement_FacePlayer
+	waitmovement 0
+	goto Route114_EventScript_BattleWally
+
 Route114_EventScript_WallyTrigger::
 	lockall
 	setvar VAR_ROUTE114_STATE, 1
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	delay 10
+	setobjectxyperm LOCALID_WALLY, 8, 63
 	addobject LOCALID_WALLY
 	clearflag FLAG_HIDE_ROUTE_114_WALLY
 	applymovement OBJ_EVENT_ID_PLAYER, Route114_Movement_PlayerBackUp
@@ -194,6 +202,10 @@ Route114_EventScript_WallyTrigger::
 	playse SE_PIN
 	applymovement LOCALID_WALLY, Common_Movement_ExclamationMark
 	waitmovement 0
+	copyobjectxytoperm LOCALID_WALLY
+	goto Route114_EventScript_BattleWally
+
+Route114_EventScript_BattleWally::
 	msgbox Route114_Text_WallyIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_WALLY_ROUTE_114, Route114_Text_WallyDefeat
 	msgbox Route114_Text_WallyPostBattle, MSGBOX_DEFAULT

@@ -1419,6 +1419,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Gender Ratio: 50/50->25/75
 
 - Gligar/Gliscor:
+    - Held item: None->Poison Barb (mainly so Acrobatics doesn't wipe out a team)
     - Learn Wing Attack, Bulldoze, Aerial Ace, Dual Wingbeat, and Earthquake by level up
 
 - Snubbull:

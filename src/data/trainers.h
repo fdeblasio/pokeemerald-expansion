@@ -3099,6 +3099,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ability = ABILITY_SAND_VEIL,                                            \
     IVS(18),                                                                 \
     .gender = TRAINER_MON_MALE,                                              \
+    .heldItem = ITEM_POISON_BARB,                                            \
     }
 
 #define ARCHIE_INFO                                        \

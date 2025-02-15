@@ -122,6 +122,8 @@ struct DexNavGUI
     u16 waterSpecies[WATER_WILD_COUNT];
 #if CHECK_SPECIES == FALSE
     u16 hiddenSpecies[HIDDEN_WILD_COUNT];
+#else
+    u16 fishingSpecies[FISH_WILD_COUNT];
 #endif
     u8 cursorRow;
     u8 cursorCol;
@@ -1721,6 +1723,12 @@ static void UpdateCursorPosition(void)
         y = ROW_HIDDEN_ICON_Y;
         sDexNavUiDataPtr->environment = ENCOUNTER_TYPE_HIDDEN;
         break;
+#else
+    case ROW_FISHING:
+        x = ROW_FISHING_ICON_X + (24 * sDexNavUiDataPtr->cursorCol);
+        y = ROW_FISHING_ICON_Y;
+        sDexNavUiDataPtr->environment = ENCOUNTER_TYPE_FISHING;
+        break;
 #endif
     default:
         return;
@@ -1856,6 +1864,37 @@ static bool8 CapturedAllHiddenMons(u32 headerId)
 
     return FALSE;
 }
+#else
+static bool8 CapturedAllFishingMons(u16 headerId)
+{
+    u32 i;
+    u16 species;
+    u8 count = 0;
+    const struct WildPokemonInfo* fishingMonsInfo = gWildMonHeaders[headerId].fishingMonsInfo;
+
+    if (fishingMonsInfo != NULL)
+    {
+        for (i = 0; i < FISH_WILD_COUNT; ++i)
+        {
+            species = fishingMonsInfo->wildPokemon[i].species;
+            if (species != SPECIES_NONE)
+            {
+                count++;
+                if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT))
+                    break;
+            }
+        }
+
+        if (i >= FISH_WILD_COUNT && count > 0)
+            return TRUE;
+    }
+    else
+    {
+        return TRUE;    //technically, no mon data means you caught them all
+    }
+
+    return FALSE;
+}
 #endif
 
 static void DexNavLoadCapturedAllSymbols(void)
@@ -1873,6 +1912,9 @@ static void DexNavLoadCapturedAllSymbols(void)
 #if CHECK_SPECIES == FALSE
     if (CapturedAllHiddenMons(headerId))
         CreateSprite(&sCaptureAllMonsSpriteTemplate, 114, 123, 0);
+#else
+//    if (CapturedAllFishingMons(headerId))
+//        CreateSprite(&sCaptureAllMonsSpriteTemplate, ???, ???, 0);
 #endif
 }
 
@@ -1966,6 +2008,14 @@ static bool8 SpeciesInArray(u16 species, u8 section)
                 return TRUE;
         }
         break;
+#else
+    case 2: //fishing
+        for (i = 0; i < FISH_WILD_COUNT; i++)
+        {
+            if (SpeciesToNationalPokedexNum(sDexNavUiDataPtr->fishingSpecies[i]) == dexNum)
+                return TRUE;
+        }
+        break;
 #endif
     default:
         break;
@@ -1981,6 +2031,8 @@ static void DexNavLoadEncounterData(void)
     u8 waterIndex = 0;
 #if CHECK_SPECIES == FALSE
     u8 hiddenIndex = 0;
+#else
+    u8 fishingIndex = 0;
 #endif
     u16 species;
     u32 i;
@@ -1994,6 +2046,9 @@ static void DexNavLoadEncounterData(void)
 #if CHECK_SPECIES == FALSE
     timeOfDay = GetTimeOfDayForEncounters(headerId, WILD_AREA_HIDDEN);
     const struct WildPokemonInfo *hiddenMonsInfo = gWildMonHeaders[headerId].encounterTypes[timeOfDay].hiddenMonsInfo;
+#else
+    timeOfDay = GetTimeOfDayForEncounters(headerId, WILD_AREA_FISHING);
+    const struct WildPokemonInfo *fishingMonsInfo = gWildMonHeaders[headerId].encounterTypes[timeOfDay].fishingMonsInfo;
 #endif
 
     // nop struct data
@@ -2001,6 +2056,8 @@ static void DexNavLoadEncounterData(void)
     memset(sDexNavUiDataPtr->waterSpecies, 0, sizeof(sDexNavUiDataPtr->waterSpecies));
 #if CHECK_SPECIES == FALSE
     memset(sDexNavUiDataPtr->hiddenSpecies, 0, sizeof(sDexNavUiDataPtr->hiddenSpecies));
+#else
+    memset(sDexNavUiDataPtr->fishingSpecies, 0, sizeof(sDexNavUiDataPtr->fishingSpecies));
 #endif
 
     // land mons
@@ -2034,6 +2091,17 @@ static void DexNavLoadEncounterData(void)
             species = hiddenMonsInfo->wildPokemon[i].species;
             if (species != SPECIES_NONE && !SpeciesInArray(species, 2))
                 sDexNavUiDataPtr->hiddenSpecies[hiddenIndex++] = hiddenMonsInfo->wildPokemon[i].species;
+        }
+    }
+#else
+    // fishing mons
+    if (fishingMonsInfo != NULL && fishingMonsInfo->encounterRate != 0)
+    {
+        for (i = 0; i < WATER_WILD_COUNT; i++)
+        {
+            species = fishingMonsInfo->wildPokemon[i].species;
+            if (species != SPECIES_NONE && !SpeciesInArray(species, 2))
+                sDexNavUiDataPtr->fishingSpecies[fishingIndex++] = fishingMonsInfo->wildPokemon[i].species;
         }
     }
 #endif
@@ -2087,6 +2155,14 @@ static void DrawSpeciesIcons(void)
         else
             CreateMonIcon(SPECIES_NONE, SpriteCB_MonIcon, x, y, 0, 0xFFFFFFFF); //question mark if detector mode inactive
     }
+#else
+    for (i = 0; i < FISH_WILD_COUNT; i++)
+    {
+        species = sDexNavUiDataPtr->fishingSpecies[i];
+        x = ROW_FISHING_ICON_X + 24 * i;
+        y = ROW_FISHING_ICON_Y;
+        TryDrawIconInSlot(species, x, y);
+    }
 #endif
 }
 
@@ -2111,6 +2187,10 @@ static u16 DexNavGetSpecies(void)
             species = SPECIES_NONE;
         else
             species = sDexNavUiDataPtr->hiddenSpecies[sDexNavUiDataPtr->cursorCol];
+        break;
+#else
+    case ROW_FISHING:
+        species = sDexNavUiDataPtr->fishingSpecies[sDexNavUiDataPtr->cursorCol];
         break;
 #endif
     default:

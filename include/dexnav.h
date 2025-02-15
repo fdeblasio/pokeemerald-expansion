@@ -11,6 +11,11 @@ enum RowGUIInfo
     ROW_LAND_TOP,
     ROW_LAND_BOT,
     ROW_HIDDEN,
+#if CHECK_SPECIES == FALSE
+    ROW_HIDDEN
+#else
+    ROW_FISHING
+#endif
     ROWS_COUNT
 };
 
@@ -30,11 +35,15 @@ enum RowGUIInfo
 #define ROW_HIDDEN_ICON_X       52
 #define ROW_HIDDEN_ICON_Y       138
 
+#define ROW_FISHING_ICON_X      52
+#define ROW_FISHING_ICON_Y      138
+
 enum EncounterType
 {
     ENCOUNTER_TYPE_LAND,
     ENCOUNTER_TYPE_WATER,
-    ENCOUNTER_TYPE_HIDDEN // Get from species
+    ENCOUNTER_TYPE_HIDDEN, // Get from species
+    ENCOUNTER_TYPE_FISHING
 };
 
 #define COL_WATER_COUNT         4

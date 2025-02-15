@@ -13172,7 +13172,7 @@ MARINA_BATTLE(MT_PYRE, 42),
 },
 
 //Magma Hideout
-#define MAGMA_HIDEOUT_GRUNT(Number, Gender, Species) \
+#define MAGMA_HIDEOUT_GRUNT(Number, Gender, Species)        \
 [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_##Number] = \
 {                                                           \
     .trainerName = _("Grunt"),                              \

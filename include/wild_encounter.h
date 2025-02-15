@@ -9,7 +9,11 @@
 enum WildPokemonArea {
     WILD_AREA_LAND,
     WILD_AREA_WATER,
+#if CHECK_SPECIES == FALSE
+    WILD_AREA_HIDDEN
+#else
     WILD_AREA_FISHING
+#endif
 };
 
 struct WildPokemon

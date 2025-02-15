@@ -197,7 +197,7 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
     - However, if someone beats a gym but doesn't beat Gabby/Ty, then it might cause them to be two places at once
     - Never thought about this before because I face every trainer when testing, but that's not always the case for other players
     - Instead, maybe both gym battles AND G/T battles check both badges and existing flags/GabbyAndTyGetBattleNum?
-- Using the Exp. Share can cause your team to become overpowered
+- With the higher levels, using the Exp. Share can cause your team to become overpowered
 - Followers will stop following you if you use the naming screen from the party menu. It will start to follow you again if you talk to it
 - One of the sprites on Mt. Chimney sometimes glitches
 - Newer moves don't have animations

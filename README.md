@@ -1348,17 +1348,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Aerodactyl (postgame):
     - Learns Dual Wingbeat, Double-Edge, Head Smash, and Brave Bird by level up
 
-- Ledyba (postgame):
-    - Atk: 20->40
-    - SpA: 40->20
-    - Learns Gust, Struggle Bug, Bug Bite, Air Cutter, and Aerial Ace by level up
-
-- Ledian (postgame):
-    - HP: 65->80
-    - Atk: 35->80
-    - SpA: 55->35
-    - Learns Gust, Struggle Bug, Bug Bite, Air Cutter, Aerial Ace, Lunge, and Acrobatics by level up
-
 - Spinarak (postgame):
     - Atk: 60->65
     - Spe: 30->40

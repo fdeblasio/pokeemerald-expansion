@@ -191,7 +191,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 ## Known bugs and other notes
 - Using the Exp. Share can cause your team to become overpowered
 - Followers will stop following you if you use the naming screen from the party menu. It will start to follow you again if you talk to it
-- Newer Pokémon don't have follower sprites
+- One of the sprites on Mt. Chimney sometimes glitches
 - Newer moves don't have animations
 - AI_FLAG_ACE_POKEMON potentially broken in multi-battles (maybe only if both trainers have it)
 - If you help one of the Lilycove Pokémon Center ladies, the other lady thinks you've already helped her as well

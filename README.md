@@ -2859,6 +2859,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Life Dew by level up
 
 - Klefki:
+    - Catch rate: 75->90
     - Learns Dazzling Gleam by level up
 
 - Pumpkaboo:

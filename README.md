@@ -189,7 +189,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - [Sapphire Jester for making the Soot Sack usuable](https://www.pokecommunity.com/showpost.php?p=10222284&postcount=178)
 
 ## Known bugs and other notes
-- Using the Exp. Share can cause your team to become overpowered
+- With the higher levels, using the Exp. Share can cause your team to become overpowered
 - Followers will stop following you if you use the naming screen from the party menu. It will start to follow you again if you talk to it
 - One of the sprites on Mt. Chimney sometimes glitches
 - Newer moves don't have animations

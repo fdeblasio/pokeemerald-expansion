@@ -2745,37 +2745,37 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },                                                                                       \
 }
 
-#define TERRANCE_BATTLE(Location, Level)                                                \
-[DIFFICULTY_NORMAL][TRAINER_TERRANCE_##Location] =                                      \
-{                                                                                       \
-    .trainerName = _("Terrance"),                                                       \
-    MAGMA_GRUNT_M_INFO,                                                                 \
-    .partySize = 1,                                                                     \
-    .party = (const struct TrainerMon[]) {                                              \
-        {                                                                               \
-        .lvl = Level,                                                                   \
-        .species = Level < SPACE_CENTER_GRUNT_LEVEL ? SPECIES_BALTOY : SPECIES_CLAYDOL, \
-        .ability = ABILITY_LEVITATE,                                                    \
-        IVS(6),                                                                         \
-        .gender = TRAINER_MON_NONE,                                                     \
-        }                                                                               \
-    },                                                                                  \
+#define TERRANCE_BATTLE(Location, Level)                                           \
+[DIFFICULTY_NORMAL][TRAINER_TERRANCE_##Location] =                                 \
+{                                                                                  \
+    .trainerName = _("Terrance"),                                                  \
+    MAGMA_GRUNT_M_INFO,                                                            \
+    .partySize = 1,                                                                \
+    .party = (const struct TrainerMon[]) {                                         \
+        {                                                                          \
+        .lvl = Level,                                                              \
+        .species = SPECIES_TERRANCE_ACE + (Level < SEAFLOOR_CAVERN_LEVEL ? 0 : 1), \
+        .ability = ABILITY_LEVITATE,                                               \
+        IVS(6),                                                                    \
+        .gender = TRAINER_MON_NONE,                                                \
+        }                                                                          \
+    },                                                                             \
 }
 
-#define JORDAN_BATTLE(Location, Level)                                                  \
-[DIFFICULTY_NORMAL][TRAINER_JORDAN_##Location] =                                        \
-{                                                                                       \
-    .trainerName = _("Jordan"),                                                         \
-    MAGMA_GRUNT_F_INFO,                                                                 \
-    .partySize = 1,                                                                     \
-    .party = (const struct TrainerMon[]) {                                              \
-        {                                                                               \
-        .lvl = Level,                                                                   \
-        .species = Level < SPACE_CENTER_GRUNT_LEVEL ? SPECIES_RHYHORN : SPECIES_RHYDON, \
-        .ability = ABILITY_ROCK_HEAD,                                                   \
-        .gender = TRAINER_MON_FEMALE,                                                   \
-        }                                                                               \
-    },                                                                                  \
+#define JORDAN_BATTLE(Location, Level)                                           \
+[DIFFICULTY_NORMAL][TRAINER_JORDAN_##Location] =                                 \
+{                                                                                \
+    .trainerName = _("Jordan"),                                                  \
+    MAGMA_GRUNT_F_INFO,                                                          \
+    .partySize = 1,                                                              \
+    .party = (const struct TrainerMon[]) {                                       \
+        {                                                                        \
+        .lvl = Level,                                                            \
+        .species = SPECIES_JORDAN_ACE + (Level < SEAFLOOR_CAVERN_LEVEL ? 0 : 1), \
+        .ability = ABILITY_ROCK_HEAD,                                            \
+        .gender = TRAINER_MON_FEMALE,                                            \
+        }                                                                        \
+    },                                                                           \
 }
 
 #define GAETANO_BATTLE(Location, Level)                                                 \
@@ -2862,7 +2862,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         },                                                                            \
         {                                                                             \
         .lvl = Level,                                                                 \
-        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_STARYU : SPECIES_STARMIE,  \
+        .species = SPECIES_MARINA_ACE + (Level < SEAFLOOR_CAVERN_LEVEL ? 0 : 1),      \
         .ability = ABILITY_ILLUMINATE,                                                \
         }                                                                             \
     },                                                                                \
@@ -2883,7 +2883,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         },                                                                                 \
         {                                                                                  \
         .lvl = Level,                                                                      \
-        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_CORPHISH : SPECIES_CRAWDAUNT,   \
+        .species = SPECIES_MALIK_ACE + (Level < SEAFLOOR_CAVERN_LEVEL ? 0 : 1),            \
         .ability = ABILITY_SHELL_ARMOR,                                                    \
         .gender = TRAINER_MON_MALE,                                                        \
         }                                                                                  \
@@ -3119,14 +3119,14 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA, \
     BOSS_AI_FLAGS
 
-#define FINNEAS(Level)                                           \
-    .lvl = Level,                                                \
-    .species = Level < 30 ? SPECIES_CARVANHA : SPECIES_SHARPEDO, \
-    .ability = ABILITY_ROUGH_SKIN,                               \
-    .nature = NATURE_ADAMANT,                                    \
-    PERFECT_IVS,                                                 \
-    .gender = TRAINER_MON_MALE,                                  \
-    .ball = ITEM_POKE_BALL,                                      \
+#define FINNEAS(Level)                                 \
+    .lvl = Level,                                      \
+    .species = SPECIES_FINNEAS - (Level < 30 ? 1 : 0), \
+    .ability = ABILITY_ROUGH_SKIN,                     \
+    .nature = NATURE_ADAMANT,                          \
+    PERFECT_IVS,                                       \
+    .gender = TRAINER_MON_MALE,                        \
+    .ball = ITEM_POKE_BALL,                            \
     .nickname = COMPOUND_STRING("Finneas")
 
 #define ARCHIE_WAILMER(Level)                                  \

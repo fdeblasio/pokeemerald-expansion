@@ -49,6 +49,8 @@ upcoming
     - Exclude Magikarp?
     - Row per rod?
     - X's not symmetrical
+    - Add silhouettes
+        - Find way to not mess up PC palette (quitting after moving a mon)
 ### Next playthrough
 - Rustboro:
     - Simplify Walda codes?

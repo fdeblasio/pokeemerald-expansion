@@ -8,7 +8,11 @@
 #define ROW_WATER       0
 #define ROW_LAND_TOP    1
 #define ROW_LAND_BOT    2
+#if CHECK_SPECIES == FALSE
 #define ROW_HIDDEN      3
+#else
+#define ROW_FISHING     3
+#endif
 #define ROWS_COUNT      4
 
 #if CHECK_SPECIES == FALSE
@@ -27,9 +31,13 @@
 #define ROW_HIDDEN_ICON_X       52
 #define ROW_HIDDEN_ICON_Y       138
 
+#define ROW_FISHING_ICON_X      52
+#define ROW_FISHING_ICON_Y      138
+
 #define ENCOUNTER_TYPE_LAND     0
 #define ENCOUNTER_TYPE_WATER    1
 #define ENCOUNTER_TYPE_HIDDEN   2   // Get from species
+#define ENCOUNTER_TYPE_FISHING  3
 
 #define COL_WATER_COUNT         4
 #define COL_LAND_COUNT          5

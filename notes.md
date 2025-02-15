@@ -40,6 +40,14 @@ upcoming
 ```
 
 ## To Do:
+- Finish adding fishing encounters to DexNav
+    - One row?:
+        - Screen: 720 pixels wide
+        - Icons: 87 pixels wide?
+    - Could reduce space between land's two rows so fishing can have two rows
+    - Exclude Magikarp?
+    - Row per rod?
+    - X's not symmetrical
 ### Next playthrough
 - Rustboro:
     - Simplify Walda codes?

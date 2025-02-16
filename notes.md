@@ -58,9 +58,12 @@ upcoming
 - Verdanturf:
     - Wally battle glitches if you white out
 - Mt. Chimney:
-    - Consolidate flags: FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA, FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY
+    - Consolidate flags: FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA, FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY?
+    - Update last Mt. Chimney pair to be based off grunts and change text to "douse in sand"?
 - Fallarbor:
     - FLAG_HIDE_FALLARBOR_AZURILL might be unused
+- Petalburg:
+    - Norman's Spinda's left ear might be off?
 - Lilycove:
     - Edit contests?/Contests overhaul
 - Mt. Pyre:
@@ -199,6 +202,7 @@ upcoming
         - They also get reset upon looking at the summary screen
 
 ### Field Moves
+- Try to remove Waterfall prompt. Just have it work like going down
 - Edit moves that work in field
     - Maybe edit so instead of "if has move" to "if can learn move"
         - Might not be simple since it's .inc and not C
@@ -211,14 +215,17 @@ upcoming
 - Fly to routes:
     - Route 103: Altering Cave
     - Route 110: Trick House or New Mauville
+    - Route 117: Daycare?
     - Route 128: Where Steven flies to?
 
 ### Overworld
+- See what makes the 119 house Pokemon move and apply it other places
 - Fly from Lilycove Department Store roof?
-- Add accurate overworld sprites (https://github.com/pret/pokeemerald/wiki/Adding-new-event-object-or-overworld-sprites, https://www.pokecommunity.com/showthread.php?t=407124)
-    - Overworld sprites to match trainer sprites (for example, Rangers red clothes, Dragon Tamers capes and correct hair color, or Rich Boys correct clothes and hair color)
+- Let the player leave the first E4 hallway
 - Add FRLG trainer sprites/overworld sprites
     - Sprites are added but still need to be implemented. Overworld sprites may have duplicates for Pokémon and may need palettes
+- Add accurate overworld sprites (https://github.com/pret/pokeemerald/wiki/Adding-new-event-object-or-overworld-sprites, https://www.pokecommunity.com/showthread.php?t=407124)
+    - Overworld sprites to match trainer sprites (for example, Rangers red clothes, Dragon Tamers capes and correct hair color, or Rich Boys correct clothes and hair color)
 - Replace Pokémon overworld sprites with follower sprites
     - Poochyena chasing Birch?
     - Bonsly?

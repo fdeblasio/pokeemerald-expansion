@@ -190,6 +190,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 ## Known bugs and other notes
 - With the higher levels, using the Exp. Share can cause your team to become overpowered
+- Checking wild encounters doesn't differentiate between what's been caught and what hasn't
+    - I found a way to do so, but it causes a graphical glitch in the PC so it's not implemented yet
+- The fishing portion of checking the wild encounters is incomplete
 - Followers will stop following you if you use the naming screen from the party menu. It will start to follow you again if you talk to it
 - One of the sprites on Mt. Chimney sometimes glitches
 - Newer moves don't have animations

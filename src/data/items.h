@@ -14,7 +14,7 @@
 
 #define TREASURE_FACTOR ((I_SELL_VALUE_FRACTION >= GEN_9) ? 2 : 1)
 
-#define LEGENDARY_ITEM_COST 1000
+#define LEGENDARY_ITEM_COST 10000
 
 // Shared Item Description entries
 

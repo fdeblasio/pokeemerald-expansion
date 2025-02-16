@@ -14,6 +14,8 @@
 
 #define TREASURE_FACTOR ((I_SELL_VALUE_FRACTION >= GEN_9) ? 2 : 1)
 
+#define LEGENDARY_ITEM_COST 1000
+
 #define ITEM_NAME(str) COMPOUND_STRING_SIZE_LIMIT(str, ITEM_NAME_LENGTH)
 #define ITEM_PLURAL_NAME(str) COMPOUND_STRING_SIZE_LIMIT(str, ITEM_NAME_PLURAL_LENGTH)
 
@@ -8003,7 +8005,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_ADAMANT_ORB] =
     {
         .name = ITEM_NAME("Adamant Orb"),
-        .price = (I_PRICE >= GEN_7) ? 0 : 10000,
+        .price = (I_PRICE >= GEN_7) ? LEGENDARY_ITEM_COST : 10000,
         .holdEffect = HOLD_EFFECT_ADAMANT_ORB,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
@@ -8021,7 +8023,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_LUSTROUS_ORB] =
     {
         .name = ITEM_NAME("Lustrous Orb"),
-        .price = (I_PRICE >= GEN_7) ? 0 : 10000,
+        .price = (I_PRICE >= GEN_7) ? LEGENDARY_ITEM_COST : 10000,
         .holdEffect = HOLD_EFFECT_LUSTROUS_ORB,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
@@ -8039,7 +8041,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_GRISEOUS_ORB] =
     {
         .name = ITEM_NAME("Griseous Orb"),
-        .price = (I_PRICE >= GEN_7) ? 0 : 10000,
+        .price = (I_PRICE >= GEN_7) ? LEGENDARY_ITEM_COST : 10000,
         .holdEffect = HOLD_EFFECT_GRISEOUS_ORB,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
@@ -13042,7 +13044,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_ROTOM_CATALOG] =
     {
         .name = ITEM_NAME("Rotom Catalog"),
-        .price = 0,
+        .price = LEGENDARY_ITEM_COST,
         .importance = 1,
         .description = COMPOUND_STRING(
             "A catalog full of\n"
@@ -13057,7 +13059,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_GRACIDEA] =
     {
         .name = ITEM_NAME("Gracidea"),
-        .price = 0,
+        .price = LEGENDARY_ITEM_COST,
         .importance = 1,
         .description = COMPOUND_STRING(
             "Bouquets made with\n"
@@ -13073,7 +13075,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Reveal Glass"),
         .pluralName = ITEM_PLURAL_NAME("Reveal Glasses"),
-        .price = 0,
+        .price = LEGENDARY_ITEM_COST,
         .importance = 1,
         .description = COMPOUND_STRING(
             "This glass returns\n"
@@ -13089,7 +13091,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("DNA Splicers"),
         .pluralName = ITEM_PLURAL_NAME("DNA Splicers"),
-        .price = 0,
+        .price = LEGENDARY_ITEM_COST,
         .importance = 1,
         .description = COMPOUND_STRING(
             "Splicer that fuses\n"
@@ -13104,7 +13106,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_ZYGARDE_CUBE] =
     {
         .name = ITEM_NAME("Zygarde Cube"),
-        .price = 0,
+        .price = LEGENDARY_ITEM_COST,
         .importance = 1,
         .description = COMPOUND_STRING(
             "An item to store\n"
@@ -13119,7 +13121,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_PRISON_BOTTLE] =
     {
         .name = ITEM_NAME("Prison Bottle"),
-        .price = 0,
+        .price = LEGENDARY_ITEM_COST,
         .importance = 1,
         .description = COMPOUND_STRING(
             "A bottle used to\n"
@@ -13134,7 +13136,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_N_SOLARIZER] =
     {
         .name = ITEM_NAME("N-Solarizer"),
-        .price = 0,
+        .price = LEGENDARY_ITEM_COST,
         .importance = 1,
         .description = COMPOUND_STRING(
             "A device to fuse\n"
@@ -13150,7 +13152,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_N_LUNARIZER] =
     {
         .name = ITEM_NAME("N-Lunarizer"),
-        .price = 0,
+        .price = LEGENDARY_ITEM_COST,
         .importance = 1,
         .description = COMPOUND_STRING(
             "A device to fuse\n"
@@ -13167,7 +13169,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Reins of Unity"),
         .pluralName = ITEM_PLURAL_NAME("Reins of Unity"),
-        .price = 0,
+        .price = LEGENDARY_ITEM_COST,
         .importance = 1,
         .description = COMPOUND_STRING(
             "Reins that unite\n"
@@ -14416,7 +14418,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_ADAMANT_CRYSTAL] =
     {
         .name = ITEM_NAME("Adamant Crystal"),
-        .price = 0,
+        .price = LEGENDARY_ITEM_COST,
         .holdEffect = HOLD_EFFECT_ADAMANT_ORB,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
@@ -14434,7 +14436,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_GRISEOUS_CORE] =
     {
         .name = ITEM_NAME("Griseous Core"),
-        .price = 0,
+        .price = LEGENDARY_ITEM_COST,
         .holdEffect = HOLD_EFFECT_GRISEOUS_ORB,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
@@ -14452,7 +14454,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_LUSTROUS_GLOBE] =
     {
         .name = ITEM_NAME("Lustrous Globe"),
-        .price = 0,
+        .price = LEGENDARY_ITEM_COST,
         .holdEffect = HOLD_EFFECT_LUSTROUS_ORB,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(

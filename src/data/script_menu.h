@@ -240,8 +240,8 @@ static const struct MenuAction MultichoiceList_Satisfaction[] =
 
 static const struct MenuAction MultichoiceList_SternDeepSea[] =
 {
-    {gItemsInfo[ITEM_DEEP_SEA_TOOTH].name},
-    {gItemsInfo[ITEM_DEEP_SEA_SCALE].name},
+    {gItemsInfo[SCANNER_REWARD_1].name},
+    {gItemsInfo[SCANNER_REWARD_2].name},
     {gText_Exit},
 };
 

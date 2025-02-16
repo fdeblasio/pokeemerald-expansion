@@ -2745,37 +2745,37 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },                                                                                       \
 }
 
-#define TERRANCE_BATTLE(Location, Level)                                           \
-[DIFFICULTY_NORMAL][TRAINER_TERRANCE_##Location] =                                 \
-{                                                                                  \
-    .trainerName = _("Terrance"),                                                  \
-    MAGMA_GRUNT_M_INFO,                                                            \
-    .partySize = 1,                                                                \
-    .party = (const struct TrainerMon[]) {                                         \
-        {                                                                          \
-        .lvl = Level,                                                              \
-        .species = SPECIES_TERRANCE_ACE + (Level < SEAFLOOR_CAVERN_LEVEL ? 0 : 1), \
-        .ability = ABILITY_LEVITATE,                                               \
-        IVS(6),                                                                    \
-        .gender = TRAINER_MON_NONE,                                                \
-        }                                                                          \
-    },                                                                             \
+#define TERRANCE_BATTLE(Location, Level)                                              \
+[DIFFICULTY_NORMAL][TRAINER_TERRANCE_##Location] =                                    \
+{                                                                                     \
+    .trainerName = _("Terrance"),                                                     \
+    MAGMA_GRUNT_M_INFO,                                                               \
+    .partySize = 1,                                                                   \
+    .party = (const struct TrainerMon[]) {                                            \
+        {                                                                             \
+        .lvl = Level,                                                                 \
+        .species = SPECIES_TERRANCE_ACE + (Level < SPACE_CENTER_GRUNT_LEVEL ? 0 : 1), \
+        .ability = ABILITY_LEVITATE,                                                  \
+        IVS(6),                                                                       \
+        .gender = TRAINER_MON_NONE,                                                   \
+        }                                                                             \
+    },                                                                                \
 }
 
-#define JORDAN_BATTLE(Location, Level)                                           \
-[DIFFICULTY_NORMAL][TRAINER_JORDAN_##Location] =                                 \
-{                                                                                \
-    .trainerName = _("Jordan"),                                                  \
-    MAGMA_GRUNT_F_INFO,                                                          \
-    .partySize = 1,                                                              \
-    .party = (const struct TrainerMon[]) {                                       \
-        {                                                                        \
-        .lvl = Level,                                                            \
-        .species = SPECIES_JORDAN_ACE + (Level < SEAFLOOR_CAVERN_LEVEL ? 0 : 1), \
-        .ability = ABILITY_ROCK_HEAD,                                            \
-        .gender = TRAINER_MON_FEMALE,                                            \
-        }                                                                        \
-    },                                                                           \
+#define JORDAN_BATTLE(Location, Level)                                              \
+[DIFFICULTY_NORMAL][TRAINER_JORDAN_##Location] =                                    \
+{                                                                                   \
+    .trainerName = _("Jordan"),                                                     \
+    MAGMA_GRUNT_F_INFO,                                                             \
+    .partySize = 1,                                                                 \
+    .party = (const struct TrainerMon[]) {                                          \
+        {                                                                           \
+        .lvl = Level,                                                               \
+        .species = SPECIES_JORDAN_ACE + (Level < SPACE_CENTER_GRUNT_LEVEL ? 0 : 1), \
+        .ability = ABILITY_ROCK_HEAD,                                               \
+        .gender = TRAINER_MON_FEMALE,                                               \
+        }                                                                           \
+    },                                                                              \
 }
 
 #define GAETANO_BATTLE(Location, Level)                                                 \

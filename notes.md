@@ -25,8 +25,6 @@ MgbaPrintf(MGBA_LOG_WARN, "XYZ: %d", mod);
 ## For release:
 - include/config/general.h:
     - Uncomment `//#define NDEBUG`
-- include/config/debug.h:
-    - `#define RELEASE TRUE`
 
 ## Rebasing
 ```

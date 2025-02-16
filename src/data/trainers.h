@@ -1468,14 +1468,14 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .gender = TRAINER_MON_MALE,                                                  \
     }
 
-#define LIZA_GARDEVOIR(rematch)                                                        \
-    {                                                                                  \
-    REMATCH_MON(GARDEVOIR, TIER3, rematch),                                            \
-    .ability = ABILITY_SYNCHRONIZE,                                                    \
-    .nature = NATURE_MODEST,                                                           \
-    EV_SPREAD_SPA_SPE_SPD,                                                             \
-    .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_MYSTICAL_FIRE, MOVE_CALM_MIND},  \
-    .gender = TRAINER_MON_FEMALE,                                                      \
+#define LIZA_GARDEVOIR(rematch)                                                       \
+    {                                                                                 \
+    REMATCH_MON(GARDEVOIR, TIER3, rematch),                                           \
+    .ability = ABILITY_SYNCHRONIZE,                                                   \
+    .nature = NATURE_MODEST,                                                          \
+    EV_SPREAD_SPA_SPE_SPD,                                                            \
+    .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_MYSTICAL_FIRE, MOVE_CALM_MIND}, \
+    .gender = TRAINER_MON_FEMALE,                                                     \
     }
 
 [DIFFICULTY_NORMAL][TRAINER_TATE_AND_LIZA_2] =
@@ -1725,7 +1725,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     PERFECT_IVS,                                                                      \
     .moves = {MOVE_NIGHT_SLASH, MOVE_PSYCHO_CUT, MOVE_AERIAL_ACE, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                       \
-    .heldItem = Level < 85 ? ITEM_SITRUS_BERRY : ITEM_ABSOLITE,                       \
+    .heldItem = Level < POSTGAME_LEVEL ? ITEM_SITRUS_BERRY : ITEM_ABSOLITE,           \
     .ball = ITEM_POKE_BALL,                                                           \
     }
 

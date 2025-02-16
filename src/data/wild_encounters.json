@@ -3004,19 +3004,19 @@
             "encounter_rate": 1,
             "mons": [
               {
-                "range": "RANGE_ROUTE_132",
+                "range": "RANGE_ROUTE_133",
                 "species": "HORSEA"
               },
               {
-                "range": "RANGE_ROUTE_132",
+                "range": "RANGE_ROUTE_133",
                 "species": "SEADRA"
               },
               {
-                "range": "RANGE_ROUTE_132",
+                "range": "RANGE_ROUTE_133",
                 "species": "KILOWATTREL"
               },
               {
-                "range": "RANGE_ROUTE_132",
+                "range": "RANGE_ROUTE_133",
                 "species": "KILOWATTREL"
               }
             ]
@@ -3061,19 +3061,19 @@
             "encounter_rate": 1,
             "mons": [
               {
-                "range": "RANGE_ROUTE_132",
+                "range": "RANGE_SURF_INITIAL",
                 "species": "HORSEA"
               },
               {
-                "range": "RANGE_ROUTE_132",
-                "species": "SEADRA"
+                "range": "RANGE_SURF_INITIAL",
+                "species": "HORSEA"
               },
               {
-                "range": "RANGE_ROUTE_132",
-                "species": "KILOWATTREL"
+                "range": "RANGE_SURF_INITIAL",
+                "species": "HORSEA"
               },
               {
-                "range": "RANGE_ROUTE_132",
+                "range": "RANGE_SURF_INITIAL",
                 "species": "KILOWATTREL"
               }
             ]

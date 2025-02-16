@@ -156,6 +156,8 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 ### Please consider crediting the entire [list of contributors](https://github.com/rh-hideout/pokeemerald-expansion/wiki/Credits) in your project, as they have all worked hard to develop this project :)
 
+
+# Frank notes
 ## Known bugs and other notes
 - With the higher levels, using the Exp. Share can cause your team to become overpowered
 - Checking wild encounters doesn't differentiate between what's been caught and what hasn't
@@ -164,9 +166,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Followers will stop following you if you use the naming screen from the party menu. It will start to follow you again if you talk to it
 - One of the sprites on Mt. Chimney sometimes glitches
 - Newer moves don't have animations
-- AI_FLAG_ACE_POKEMON potentially broken in multi-battles (maybe only if both trainers have it)
 - If you help one of the Lilycove Pokémon Center ladies, the other lady thinks you've already helped her as well
-    - Could have something to do with this: sContestLadyPtr->id = LILYCOVE_LADY_CONTEST
 
 ### Potentially just savefile issues due to merging code/playing while hacking
 - Lilycove ladies crash the game
@@ -245,7 +245,6 @@ There are some mechanics, moves and abilities that are missing and being develop
     - The Safari Zone on Route 121
     - Mt. Pyre on Route 122
     - Sky Pillar on Route 131
-    - Southern Island
 - Can now use Soot Sack to see how much ash you have
 - Much easier to make good Pokéblocks
 - Pokémon in the Safari Zone can't flee
@@ -268,7 +267,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Ability Capsules, Ability Patches, Mints, and EV-reducing berries are available to buy in Lilycove
 - The Good Rod is now obtained on the left side of Route 118 instead of the right, meaning it is available before getting Surf
 - Sacred Ash now works in battles although it only revives one Pokémon
-- Soul Dew uses its Gen 6 effect
 
 ### Trainers:
 - Rich Boys all have shiny Pokémon

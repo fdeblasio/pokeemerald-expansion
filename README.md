@@ -198,6 +198,9 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
     - Never thought about this before because I face every trainer when testing, but that's not always the case for other players
     - Instead, maybe both gym battles AND G/T battles check both badges and existing flags/GabbyAndTyGetBattleNum?
 - With the higher levels, using the Exp. Share can cause your team to become overpowered
+- Checking wild encounters doesn't differentiate between what's been caught and what hasn't
+    - I found a way to do so, but it causes a graphical glitch in the PC so it's not implemented yet
+- The fishing portion of checking the wild encounters is incomplete
 - Followers will stop following you if you use the naming screen from the party menu. It will start to follow you again if you talk to it
 - One of the sprites on Mt. Chimney sometimes glitches
 - Newer moves don't have animations

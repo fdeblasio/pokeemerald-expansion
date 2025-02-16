@@ -10833,7 +10833,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
 {
     .trainerName = _("Donald"),
     BUG_MANIAC_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_ACE_POKEMON,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
@@ -10876,7 +10876,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
 {
     .trainerName = _("Taylor"),
     BUG_MANIAC_INFO,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_ACE_POKEMON,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {

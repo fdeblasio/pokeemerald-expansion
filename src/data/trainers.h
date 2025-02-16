@@ -1386,9 +1386,11 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 49,
-        .species = SPECIES_CLAYDOL,
+        .species = SPECIES_ESPEON,
+        .ability = ABILITY_SYNCHRONIZE,
         IVS(30),
-        .moves = {MOVE_PSYCHIC, MOVE_EARTH_POWER, MOVE_COSMIC_POWER, MOVE_LIGHT_SCREEN},
+        .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_MORNING_SUN, MOVE_PSYCHIC_TERRAIN},
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 49,
@@ -1400,43 +1402,47 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
         },
         {
         .lvl = 51,
-        .species = SPECIES_LUNATONE,
+        .species = SPECIES_HATTERENE,
+        .ability = ABILITY_ANTICIPATION,
         IVS(30),
-        .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_POWER_GEM, MOVE_ICY_WIND},
+        .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_LIFE_DEW, MOVE_CALM_MIND},
+        .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SITRUS_BERRY,
         .ball = ITEM_POKE_BALL,
         },
         {
         .lvl = 51,
-        .species = SPECIES_SOLROCK,
+        .species = SPECIES_ALAKAZAM,
+        .ability = ABILITY_INNER_FOCUS,
         IVS(30),
-        .moves = {MOVE_PSYCHIC, MOVE_ROCK_SLIDE, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN},
+        .moves = {MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_REFLECT, MOVE_TELEKINESIS},
+        .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
         .ball = ITEM_POKE_BALL,
         }
     },
 },
 
-#define TATE_SOLROCK(rematch)                                                          \
-    {                                                                                  \
-    REMATCH_MON(SOLROCK, ACE, rematch),                                                \
-    .ability = ABILITY_LEVITATE,                                                       \
-    .nature = NATURE_ADAMANT,                                                          \
-    EV_SPREAD_ATK_DEF_HP,                                                              \
-    .moves = {MOVE_ZEN_HEADBUTT, MOVE_ROCK_SLIDE, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN}, \
-    .heldItem = ITEM_SITRUS_BERRY,                                                     \
-    .ball = ITEM_POKE_BALL,                                                            \
+#define TATE_ALAKAZAM(rematch)                                                      \
+    {                                                                               \
+    REMATCH_MON(ALAKAZAM, ACE, rematch),                                            \
+    .ability = ABILITY_MAGIC_GUARD,                                                 \
+    .nature = NATURE_MODEST,                                                        \
+    EV_SPREAD_SPA_SPE_HP,                                                           \
+    .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_SHADOW_BALL, MOVE_CALM_MIND}, \
+    .heldItem = ITEM_SITRUS_BERRY,                                                  \
+    .ball = ITEM_POKE_BALL,                                                         \
     }
 
-#define LIZA_LUNATONE(rematch)                                                 \
-    {                                                                          \
-    REMATCH_MON(LUNATONE, ACE, rematch),                                       \
-    .ability = ABILITY_LEVITATE,                                               \
-    .nature = NATURE_MODEST,                                                   \
-    EV_SPREAD_SPA_SPD_HP,                                                      \
-    .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_ICY_WIND, MOVE_COSMIC_POWER}, \
-    .heldItem = ITEM_SITRUS_BERRY,                                             \
-    .ball = ITEM_POKE_BALL,                                                    \
+#define LIZA_HATTERENE(rematch)                                                  \
+    {                                                                            \
+    REMATCH_MON(HATTERENE, ACE, rematch),                                        \
+    .ability = ABILITY_MAGIC_BOUNCE,                                             \
+    .nature = NATURE_MODEST,                                                     \
+    EV_SPREAD_SPA_SPD_HP,                                                        \
+    .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_LIFE_DEW, MOVE_CALM_MIND}, \
+    .heldItem = ITEM_SITRUS_BERRY,                                               \
+    .ball = ITEM_POKE_BALL,                                                      \
     }
 
 #define TATE_GRUMPIG(rematch)                                                      \
@@ -1449,13 +1455,14 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     .gender = TRAINER_MON_MALE,                                                    \
     }
 
-#define LIZA_CLAYDOL(rematch)                                                       \
-    {                                                                               \
-    REMATCH_MON(CLAYDOL, TIER2, rematch),                                           \
-    .ability = ABILITY_LEVITATE,                                                    \
-    .nature = NATURE_CALM,                                                          \
-    EV_SPREAD_DEF_SPD_HP,                                                           \
-    .moves = {MOVE_PSYCHIC, MOVE_EARTH_POWER, MOVE_POWER_SPLIT, MOVE_COSMIC_POWER}, \
+#define LIZA_ESPEON(rematch)                                                         \
+    {                                                                                \
+    REMATCH_MON(ESPEON, TIER2, rematch),                                             \
+    .ability = ABILITY_MAGIC_BOUNCE,                                                 \
+    .nature = NATURE_MODEST,                                                         \
+    EV_SPREAD_SPA_SPE_HP,                                                            \
+    .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_MORNING_SUN, MOVE_PSYCHIC_TERRAIN}, \
+    .gender = TRAINER_MON_FEMALE,                                                    \
     }
 
 #define TATE_CHIMECHO(rematch)                                                   \
@@ -1484,10 +1491,10 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     LEADER_REMATCH(2),
     .party = (const struct TrainerMon[]) {
         TATE_CHIMECHO(2),
-        LIZA_CLAYDOL(2),
+        LIZA_ESPEON(2),
         TATE_GRUMPIG(2),
-        LIZA_LUNATONE(2),
-        TATE_SOLROCK(2),
+        LIZA_HATTERENE(2),
+        TATE_ALAKAZAM(2),
     },
 },
 
@@ -1497,10 +1504,10 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     LEADER_REMATCH(3),
     .party = (const struct TrainerMon[]) {
         TATE_CHIMECHO(3),
-        LIZA_CLAYDOL(3),
+        LIZA_ESPEON(3),
         TATE_GRUMPIG(3),
-        LIZA_LUNATONE(3),
-        TATE_SOLROCK(3),
+        LIZA_HATTERENE(3),
+        TATE_ALAKAZAM(3),
     },
 },
 
@@ -1511,10 +1518,10 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     .party = (const struct TrainerMon[]) {
         LIZA_GARDEVOIR(4),
         TATE_CHIMECHO(4),
-        LIZA_CLAYDOL(4),
+        LIZA_ESPEON(4),
         TATE_GRUMPIG(4),
-        LIZA_LUNATONE(4),
-        TATE_SOLROCK(4),
+        LIZA_HATTERENE(4),
+        TATE_ALAKAZAM(4),
     },
 },
 
@@ -1525,10 +1532,10 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
     .party = (const struct TrainerMon[]) {
         LIZA_GARDEVOIR(5),
         TATE_CHIMECHO(5),
-        LIZA_CLAYDOL(5),
+        LIZA_ESPEON(5),
         TATE_GRUMPIG(5),
-        LIZA_LUNATONE(5),
-        TATE_SOLROCK(5),
+        LIZA_HATTERENE(5),
+        TATE_ALAKAZAM(5),
     },
 },
 

@@ -238,7 +238,7 @@ SootopolisCity_Gym_1F_Text_ReceivedRainBadge:
 	.string "from Juan.$"
 
 SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
-	.string "Having the Rain Badge shall assure you\n"
+	.string "Having the Acid Badge shall assure you\n"
 	.string "the full obedience of all your Pokémon\l"
 	.string "to your every command.\p"
 	.string "The Fall Scaler allows you to scale\n"

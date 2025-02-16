@@ -6,7 +6,7 @@ Find/replace:
 $1\L$2
 
 Merge conflicts:
-<<<<<<< HEAD
+<*EAD
 ((.*\n)*?)=======
 ((.*\n)*?)>>>>>>>.*\n
 $1

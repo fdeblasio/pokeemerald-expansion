@@ -16158,7 +16158,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .trainerName = _("Garret"),
     RICH_BOY_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 2,
+    .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
         RICH_BOY_MON(POSTGAME_LEVEL),

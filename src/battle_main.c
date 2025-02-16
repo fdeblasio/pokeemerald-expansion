@@ -6474,7 +6474,6 @@ u32 GetDynamicAccuracy(struct Pokemon *mon, u32 move, u32 battler){
 
     if (gMain.inBattle)
     {
-        MgbaPrintf(MGBA_LOG_WARN, "inBattle");
         if (HasWeatherEffect()){
             if (gBattleWeather & B_WEATHER_SUN && moveEffect == EFFECT_THUNDER)
                 accuracy = 50;

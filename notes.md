@@ -87,6 +87,7 @@ upcoming
 ### Meta
 - More simple modifications: https://www.pokecommunity.com/showthread.php?t=416647&page=1
 - Pret wiki tutorials:       https://github.com/pret/pokeemerald/wiki/Tutorials
+- Fix dynamic README lines (work in VS code but not GitHub)
 - Combine two meta files (notes.md and README.md)?
     Include more changes, even if general like Battle Frontier edits
 - Remove unused code
@@ -97,6 +98,8 @@ upcoming
 - Once more changes are made, consolidate commits on develop branch again
 
 ### Pokémon
+- Use Cable Car defines in wild_encounters
+- Add Geodude-A to Safari Zone?
 - Eventually remove RSE and/or BDSP teachable moves?
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?
 - For Egg Groups that share names with types, give moves of that type to Pokémon not of that type in the egg group
@@ -110,12 +113,14 @@ upcoming
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
 
 ### Items
+- Add EVO_ITEM_PRICE define
 - Ideally all SV TMs would be available if the bag was ever expanded greatly
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Include charms? (might go over Key Items amount)
 - Xaman's TM Case? (https://www.pokecommunity.com/showpost.php?p=10378278)
 
 ### Trainers
+- Add level defines per route/group of routes?
 - Should Roxanne's trainers be Schoolkids?
 - Update Tabitha (and maybe others?) macros to use Magma levels instead of Rematch levels?
 - Add ORAS team members (like a Picknicker getting a Gulpin)
@@ -217,7 +222,7 @@ upcoming
     - Route 128: Where Steven flies to?
 
 ### Overworld
-- Make both parts of Shoal Cave always accessible?
+- Fly from Lilycove Department Store roof?
 - Add accurate overworld sprites (https://github.com/pret/pokeemerald/wiki/Adding-new-event-object-or-overworld-sprites, https://www.pokecommunity.com/showthread.php?t=407124)
     - Overworld sprites to match trainer sprites (for example, Rangers red clothes, Dragon Tamers capes and correct hair color, or Rich Boys correct clothes and hair color)
 - Add FRLG trainer sprites/overworld sprites
@@ -262,7 +267,8 @@ upcoming
     - Change Kirlia and Dusclops to fit the type of move used?
 
 ### Other
-- Update White Smoke/Clear Body to prevent self-inflicted stat drops like Shell Smash?
+- Decap easy chat species/moves/multi-word choices?
+- Have Gabby and Ty's TV show use nicknames?
 - Update palettes?:
     - Pokédex (and HGSS Pokédex)
     - look in graphics/ for more
@@ -308,6 +314,7 @@ upcoming
 - Summary screen should show type if changed (by Soak, etc.)
 
 ### Big changes from Vanilla - low priority
+- Update White Smoke/Clear Body to prevent self-inflicted stat drops like Shell Smash?
 - Remove IVs? Maybe make boolean for either 0 or 31 added to stat
     - Would need to figure out Hidden Power
         - Six stats times three values would equal 18 types (would need to figure out third value (16?) but also Normal Hidden Power sounds)

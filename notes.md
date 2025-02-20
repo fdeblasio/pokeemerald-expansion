@@ -55,13 +55,15 @@ upcoming
             - It isn't on by default though, so could still be Steven
 - Mauville:
     - Get all the weird Mauville men at once?
-- Verdanturf:
-    - Wally battle glitches if you white out
 - Mt. Chimney:
     - Consolidate flags: FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA, FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY?
     - Update last Mt. Chimney pair to be based off grunts and change text to "douse in sand"?
 - Fallarbor:
     - FLAG_HIDE_FALLARBOR_AZURILL might be unused
+- Route 114:
+    - Check what happens if you white out to Wally
+- Meteor Falls:
+    - Check what happens if you white out to Courtney
 - Petalburg:
     - Norman's Spinda's left ear might be off?
 - Lilycove:
@@ -259,6 +261,7 @@ upcoming
 - Make resting not a soft save (CHALLENGE_STATUS_SAVING)
 - Make retiring not reset streak
     - Perhaps combine the two to take a pause like in SwSh
+- Use variable for the guy who talks about the teams?
 - Battle Tower
     - Apprentices
 - Battle Factory

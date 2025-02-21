@@ -21,22 +21,25 @@ enum RowGUIInfo
 
 #if CHECK_SPECIES == FALSE
     #define ROW_WATER_ICON_X        30
+    #define ROW_WATER_ICON_Y        35
     #define ROW_LAND_ICON_X         20
+    #define ROW_LAND_TOP_ICON_Y     72
+    #define LAND_DIFFERENCE         28
 #else
-    #define ROW_WATER_ICON_X        42
-    #define ROW_LAND_ICON_X         32
+    #define ROW_WATER_ICON_X        38
+    #define ROW_WATER_ICON_Y        34
+    #define ROW_LAND_ICON_X         31
+    #define ROW_LAND_TOP_ICON_Y     75
+    #define LAND_DIFFERENCE         24
 #endif
 
-#define ROW_WATER_ICON_Y        35
-
-#define ROW_LAND_TOP_ICON_Y     72
-#define ROW_LAND_BOT_ICON_Y     (ROW_LAND_TOP_ICON_Y + 28)
+#define ROW_LAND_BOT_ICON_Y     (ROW_LAND_TOP_ICON_Y + LAND_DIFFERENCE)
 
 #define ROW_HIDDEN_ICON_X       52
 #define ROW_HIDDEN_ICON_Y       138
 
-#define ROW_FISHING_ICON_X      52
-#define ROW_FISHING_ICON_Y      138
+#define ROW_FISHING_ICON_X      19
+#define ROW_FISHING_ICON_Y      140
 
 enum EncounterType
 {

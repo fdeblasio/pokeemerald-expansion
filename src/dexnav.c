@@ -1867,7 +1867,6 @@ static void DexNavLoadCapturedAllSymbols(void)
 #if CHECK_SPECIES == FALSE
         CreateSprite(&sCaptureAllMonsSpriteTemplate, 139, 17, 0);
 
-#if CHECK_SPECIES == FALSE
     if (CapturedAllHiddenMons(headerId))
         CreateSprite(&sCaptureAllMonsSpriteTemplate, 114, 123, 0);
 #else

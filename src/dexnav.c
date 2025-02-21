@@ -2096,7 +2096,7 @@ static void DexNavLoadEncounterData(void)
     // fishing mons
     if (fishingMonsInfo != NULL && fishingMonsInfo->encounterRate != 0)
     {
-        for (i = 0; i < WATER_WILD_COUNT; i++)
+        for (i = 0; i < FISH_WILD_COUNT; i++)
         {
             species = fishingMonsInfo->wildPokemon[i].species;
             if (species != SPECIES_NONE && !SpeciesInArray(species, 2))
@@ -2129,7 +2129,7 @@ static void DrawSpeciesIcons(void)
     {
         species = sDexNavUiDataPtr->landSpecies[i];
         x = ROW_LAND_ICON_X + (24 * (i % COL_LAND_COUNT));
-        y = ROW_LAND_TOP_ICON_Y + (i > COL_LAND_MAX ? 28 : 0);
+        y = ROW_LAND_TOP_ICON_Y + (i > COL_LAND_MAX ? LAND_DIFFERENCE : 0);
         TryDrawIconInSlot(species, x, y);
     }
 

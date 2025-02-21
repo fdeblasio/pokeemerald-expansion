@@ -52,10 +52,12 @@ enum EncounterType
 #define COL_WATER_COUNT         4
 #define COL_LAND_COUNT          5
 #define COL_HIDDEN_COUNT        3
+#define COL_FISHING_COUNT       7
 
 #define COL_WATER_MAX           (COL_WATER_COUNT - 1)
 #define COL_LAND_MAX            (COL_LAND_COUNT - 1)
 #define COL_HIDDEN_MAX          (COL_HIDDEN_COUNT - 1)
+#define COL_FISHING_MAX         (COL_FISHING_COUNT - 1)
 
 // SEARCH INFO
 #define SCANSTART_X             0

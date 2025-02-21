@@ -1906,14 +1906,16 @@ static void DexNavLoadCapturedAllSymbols(void)
         CreateSprite(&sCaptureAllMonsSpriteTemplate, 152, 58, 0);
 
     if (CapturedAllWaterMons(headerId))
+#if CHECK_SPECIES == FALSE
         CreateSprite(&sCaptureAllMonsSpriteTemplate, 139, 17, 0);
 
-#if CHECK_SPECIES == FALSE
     if (CapturedAllHiddenMons(headerId))
         CreateSprite(&sCaptureAllMonsSpriteTemplate, 114, 123, 0);
 #else
-//    if (CapturedAllFishingMons(headerId))
-//        CreateSprite(&sCaptureAllMonsSpriteTemplate, ???, ???, 0);
+        CreateSprite(&sCaptureAllMonsSpriteTemplate, 142, 17, 0);
+
+    if (CapturedAllFishingMons(headerId))
+        CreateSprite(&sCaptureAllMonsSpriteTemplate, 176, 123, 0);
 #endif
 }
 
@@ -2520,9 +2522,9 @@ static void Task_DexNavMain(u8 taskId)
             if (sDexNavUiDataPtr->cursorCol >= COL_HIDDEN_COUNT)
                 sDexNavUiDataPtr->cursorCol = COL_HIDDEN_MAX;
 #else
-            sDexNavUiDataPtr->cursorRow = ROW_LAND_BOT;
-            if (sDexNavUiDataPtr->cursorCol >= COL_LAND_COUNT)
-                sDexNavUiDataPtr->cursorCol = COL_LAND_MAX;
+            sDexNavUiDataPtr->cursorRow = ROW_FISHING;
+            if (sDexNavUiDataPtr->cursorCol >= COL_FISHING_COUNT)
+                sDexNavUiDataPtr->cursorCol = COL_FISHING_MAX;
 #endif
         }
         else
@@ -2547,15 +2549,20 @@ static void Task_DexNavMain(u8 taskId)
         {
             if (sDexNavUiDataPtr->cursorCol >= COL_HIDDEN_COUNT)
                 sDexNavUiDataPtr->cursorCol = COL_HIDDEN_MAX;
-
-            sDexNavUiDataPtr->cursorRow++;
 #else
-        if (sDexNavUiDataPtr->cursorRow == ROW_LAND_BOT)
+        if (sDexNavUiDataPtr->cursorRow == ROW_FISHING)
         {
             sDexNavUiDataPtr->cursorRow = ROW_WATER;
             if (sDexNavUiDataPtr->cursorCol >= COL_WATER_COUNT)
                 sDexNavUiDataPtr->cursorCol = COL_WATER_MAX;
+        }
+        else if (sDexNavUiDataPtr->cursorRow == ROW_LAND_BOT)
+        {
+            if (sDexNavUiDataPtr->cursorCol >= COL_FISHING_COUNT)
+                sDexNavUiDataPtr->cursorCol = COL_FISHING_MAX;
 #endif
+
+            sDexNavUiDataPtr->cursorRow++;
         }
         else
         {
@@ -2577,6 +2584,10 @@ static void Task_DexNavMain(u8 taskId)
 #if CHECK_SPECIES == FALSE
             case ROW_HIDDEN:
                 sDexNavUiDataPtr->cursorCol = COL_HIDDEN_MAX;
+                break;
+#else
+            case ROW_FISHING:
+                sDexNavUiDataPtr->cursorCol = COL_FISHING_MAX;
                 break;
 #endif
             default:
@@ -2605,6 +2616,13 @@ static void Task_DexNavMain(u8 taskId)
 #if CHECK_SPECIES == FALSE
         case ROW_HIDDEN:
             if (sDexNavUiDataPtr->cursorCol == COL_HIDDEN_MAX)
+                sDexNavUiDataPtr->cursorCol = 0;
+            else
+                sDexNavUiDataPtr->cursorCol++;
+            break;
+#else
+        case ROW_FISHING:
+            if (sDexNavUiDataPtr->cursorCol == COL_FISHING_MAX)
                 sDexNavUiDataPtr->cursorCol = 0;
             else
                 sDexNavUiDataPtr->cursorCol++;

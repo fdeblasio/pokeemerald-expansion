@@ -270,7 +270,7 @@ def PrintStructContent(contentList):
         prefix = tabStr + "{ " + monList[0] + ", "
         species = monList[1]
         suffix = species + " },"
-        if "_STARTER" in species:
+        if species in ["GRASS_STARTER", "FIRE_STARTER", "WATER_STARTER"]:
             print(f"{prefix}{suffix}")
         else:
             print(f"{prefix}SPECIES_{suffix}")

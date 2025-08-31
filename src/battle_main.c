@@ -4109,7 +4109,7 @@ u8 IsRunningFromBattleImpossible(u32 battler)
         return BATTLE_RUN_SUCCESS;
     if (GetBattlerAbility(battler) == ABILITY_RUN_AWAY)
         return BATTLE_RUN_SUCCESS;
-    if (gStatuses3[BATTLE_OPPOSITE(battler)] & STATUS3_SEMI_INVULNERABLE)
+    if (IsSemiInvulnerable(BATTLE_OPPOSITE(battler), CHECK_ALL))
         return BATTLE_RUN_SUCCESS;
     if (gBattleMons[BATTLE_OPPOSITE(battler)].status1 & (STATUS1_SLEEP || STATUS1_FREEZE))
         return BATTLE_RUN_SUCCESS;
@@ -5585,8 +5585,11 @@ static void HandleEndTurn_FinishBattle(void)
             TryPutPokemonTodayOnAir();
         }
 
-        if (!IsOnPlayerSide(battler))
-            HandleSetPokedexFlag(SpeciesToNationalPokedexNum(gBattleMons[battler].species), FLAG_SET_SEEN, gBattleMons[battler].personality);
+        for (battler = 0; battler < gBattlersCount; battler++)
+        {
+            if (!IsOnPlayerSide(battler))
+                HandleSetPokedexFlag(SpeciesToNationalPokedexNum(gBattleMons[battler].species), FLAG_SET_SEEN, gBattleMons[battler].personality);
+        }
 
         if (!(gBattleTypeFlags & (BATTLE_TYPE_LINK
                                   | BATTLE_TYPE_RECORDED_LINK
@@ -6126,7 +6129,7 @@ void SetTypeBeforeUsingMove(u32 move, u32 battler)
 
 bool8 IsOverworldMonGrounded(struct Pokemon *mon)
 {
-    u32 holdEffect = ItemId_GetHoldEffect(GetMonData(mon, MON_DATA_HELD_ITEM, 0));
+    u32 holdEffect = GetItemHoldEffect(GetMonData(mon, MON_DATA_HELD_ITEM, 0));
 
     if (holdEffect == HOLD_EFFECT_IRON_BALL)
         return TRUE;
@@ -6142,7 +6145,8 @@ bool8 IsOverworldMonGrounded(struct Pokemon *mon)
 u32 GetDynamicPower(struct Pokemon *mon, u32 move, u32 battler){
     u32 power = GetMovePower(move);
     u32 moveEffect = GetMoveEffect(move);
-    u32 type = CheckDynamicMoveType(mon, move, battler);
+    enum MonState state = gMain.inBattle ? MON_IN_BATTLE : MON_OUTSIDE_BATTLE;
+    u32 type = CheckDynamicMoveType(mon, move, battler, state);
     u32 category = GetMoveCategory(move);
     u32 species, heldItem, holdEffect, ability, type1, type2, type3, status;
     bool8 isSunny, isRainy, isSandstorm, isSnowy, isFoggy;
@@ -6174,7 +6178,7 @@ u32 GetDynamicPower(struct Pokemon *mon, u32 move, u32 battler){
     {
         species = GetMonData(mon, MON_DATA_SPECIES);
         heldItem = GetMonData(mon, MON_DATA_HELD_ITEM, 0);
-        holdEffect = ItemId_GetHoldEffect(heldItem);
+        holdEffect = GetItemHoldEffect(heldItem);
         ability = GetMonAbility(mon);
         type1 = gSpeciesInfo[species].types[0];
         type2 = gSpeciesInfo[species].types[1];
@@ -6263,7 +6267,7 @@ u32 GetDynamicPower(struct Pokemon *mon, u32 move, u32 battler){
         break;
     case EFFECT_RAGE_FIST:
         if (monInBattle)
-            power = min(350, 50 + (50 * gBattleStruct->timesGotHit[GetBattlerSide(battler)][gBattlerPartyIndexes[battler]]));
+            power = max(350, 50 + (50 * GetBattlerPartyState(battler)->timesGotHit));
         break;
     case EFFECT_FACADE:
         if (status & (STATUS1_BURN | STATUS1_PSN_ANY | STATUS1_PARALYSIS | STATUS1_FROSTBITE))
@@ -6281,7 +6285,7 @@ u32 GetDynamicPower(struct Pokemon *mon, u32 move, u32 battler){
     case EFFECT_STOMPING_TANTRUM:
         if (monInBattle)
         {
-            if (gBattleStruct->battlerState[battler].lastMoveFailed)
+            if (gBattleStruct->battlerState[battler].stompingTantrumTimer == 1)
                 UQ4_12_MULTIPLY(power, 2.0);
         }
         break;
@@ -6308,7 +6312,7 @@ u32 GetDynamicPower(struct Pokemon *mon, u32 move, u32 battler){
             UQ4_12_MULTIPLY(power, 1.5);
         break;
     case ABILITY_RECKLESS:
-        if (IsBattleMoveRecoil(move))
+        if (moveEffect == EFFECT_RECOIL || moveEffect == EFFECT_RECOIL_IF_MISS)
             UQ4_12_MULTIPLY(power, 1.2);
         break;
     case ABILITY_IRON_FIST:
@@ -6326,7 +6330,7 @@ u32 GetDynamicPower(struct Pokemon *mon, u32 move, u32 battler){
     case ABILITY_TOUGH_CLAWS:
         if (monInBattle)
         {
-            if (IsMoveMakingContact(move, battler))
+            if (IsMoveMakingContact(battler, BATTLE_OPPOSITE(battler), ability, holdEffect, move))
                 UQ4_12_MULTIPLY(power, 1.3);
         }
         else if (MoveMakesContact(move) && !(holdEffect == HOLD_EFFECT_PUNCHING_GLOVE && IsPunchingMove(move)))
@@ -6434,20 +6438,16 @@ u32 GetDynamicPower(struct Pokemon *mon, u32 move, u32 battler){
     else if (isPsychic && type == TYPE_PSYCHIC)
         UQ4_12_MULTIPLY(power, B_TERRAIN_TYPE_BOOST >= GEN_8 ? 1.3 : 1.5);
 
-    if (monInBattle)
+    if (gMain.inBattle)
     {
-        if (gStatuses3[battler] & STATUS3_CHARGED_UP && type == TYPE_ELECTRIC)
-            UQ4_12_MULTIPLY(power, 2.0);
-    }
-    else if (gMain.inBattle)
-    {
-        if (type == TYPE_ELECTRIC && ((gFieldStatuses & STATUS_FIELD_MUDSPORT)
-        || AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_MUD_SPORT, 0)))
+        if (type == TYPE_ELECTRIC && (gFieldStatuses & STATUS_FIELD_MUDSPORT))
             UQ4_12_MULTIPLY(power, B_SPORT_DMG_REDUCTION >= GEN_5 ? 0.33 : 0.5);
 
-        if (type == TYPE_FIRE && ((gFieldStatuses & STATUS_FIELD_WATERSPORT)
-        || AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_WATER_SPORT, 0)))
+        if (type == TYPE_FIRE && (gFieldStatuses & STATUS_FIELD_WATERSPORT))
             UQ4_12_MULTIPLY(power, B_SPORT_DMG_REDUCTION >= GEN_5 ? 0.33 : 0.5);
+
+        if (monInBattle && gBattleMons[battler].volatiles.charge && type == TYPE_ELECTRIC)
+            UQ4_12_MULTIPLY(power, 2.0);
     }
 
     return power;
@@ -6455,7 +6455,6 @@ u32 GetDynamicPower(struct Pokemon *mon, u32 move, u32 battler){
 
 u32 GetDynamicAccuracy(struct Pokemon *mon, u32 move, u32 battler){
     u32 accuracy = GetMoveAccuracy(move);
-    u32 moveEffect = GetMoveEffect(move);
     u32 holdEffect, holdEffectParam, ability;
     bool32 monInBattle = gMain.inBattle && gPartyMenu.menuType != PARTY_MENU_TYPE_IN_BATTLE;
 
@@ -6467,19 +6466,20 @@ u32 GetDynamicAccuracy(struct Pokemon *mon, u32 move, u32 battler){
     }
     else
     {
-        holdEffect = ItemId_GetHoldEffect(GetMonData(mon, MON_DATA_HELD_ITEM, 0));
-        holdEffectParam = ItemId_GetHoldEffectParam(GetMonData(mon, MON_DATA_HELD_ITEM, 0));
+        holdEffect = GetItemHoldEffect(GetMonData(mon, MON_DATA_HELD_ITEM, 0));
+        holdEffectParam = GetItemHoldEffectParam(GetMonData(mon, MON_DATA_HELD_ITEM, 0));
         ability = GetMonAbility(mon);
     }
 
     if (gMain.inBattle)
     {
         if (HasWeatherEffect()){
-            if (gBattleWeather & B_WEATHER_SUN && moveEffect == EFFECT_THUNDER)
+
+            if (IsBattlerWeatherAffected(BATTLE_OPPOSITE(battler), B_WEATHER_SUN) && MoveHas50AccuracyInSun(move))
                 accuracy = 50;
-            else if (gBattleWeather & B_WEATHER_RAIN && (moveEffect == EFFECT_THUNDER || moveEffect == EFFECT_RAIN_ALWAYS_HIT))
+            else if (IsBattlerWeatherAffected(BATTLE_OPPOSITE(battler), B_WEATHER_RAIN) && MoveAlwaysHitsInRain(move))
                 return 100;
-            else if (gBattleWeather & (B_WEATHER_SNOW | B_WEATHER_HAIL) && moveEffect == EFFECT_BLIZZARD)
+            else if (gBattleWeather & (B_WEATHER_SNOW | B_WEATHER_HAIL) && MoveAlwaysHitsInHailSnow(move))
                 return 100;
             else if (gBattleWeather & B_WEATHER_FOG)
                 accuracy = (accuracy * 60) / 100;
@@ -6507,17 +6507,17 @@ u32 GetDynamicAccuracy(struct Pokemon *mon, u32 move, u32 battler){
         switch (gWeatherPtr->currWeather)
         {
         case WEATHER_DROUGHT:
-            if (moveEffect == EFFECT_THUNDER)
+            if (MoveHas50AccuracyInSun(move))
                 accuracy = 50;
             break;
         case WEATHER_RAIN:
         case WEATHER_RAIN_THUNDERSTORM:
         case WEATHER_DOWNPOUR:
-            if (moveEffect == EFFECT_THUNDER || moveEffect == EFFECT_RAIN_ALWAYS_HIT)
+            if (MoveAlwaysHitsInRain(move))
                 accuracy = 100;
             break;
         case WEATHER_SNOW:
-            if (moveEffect == EFFECT_BLIZZARD)
+            if (MoveAlwaysHitsInHailSnow(move))
                 accuracy = 100;
         case WEATHER_FOG_DIAGONAL:
         case WEATHER_FOG_HORIZONTAL:

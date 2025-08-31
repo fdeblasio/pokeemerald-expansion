@@ -5938,7 +5938,7 @@ const u16 *GetMonSpritePalFromSpecies(u16 species, bool32 isShiny, bool32 isFema
 
 bool32 IsMoveHM(u16 move)
 {
-    return FALSE FOREACH_HM(OR_MOVE_IS_HM);
+    return FALSE;
 }
 
 #undef OR_MOVE_IS_HM

@@ -659,7 +659,7 @@ bool32 TryRunFromBattle(u32 battler)
     {
         effect++;
     }
-    else if (gStatuses3[BATTLE_OPPOSITE(battler)] & STATUS3_SEMI_INVULNERABLE) {
+    else if (IsSemiInvulnerable(BATTLE_OPPOSITE(battler), CHECK_ALL)) {
         effect++;
     }
     else if (gBattleMons[BATTLE_OPPOSITE(battler)].status1 & (STATUS1_SLEEP || STATUS1_FREEZE)) {
@@ -3582,7 +3582,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
         {
             SET_TERRAIN(MISTY)
         }
-        else if ((gMapHeader.mapLayoutId == LAYOUT_VERDANTURF_TOWN || gBattleTerrain == BATTLE_TERRAIN_LONG_GRASS) && !(gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN))
+        else if ((gMapHeader.mapLayoutId == LAYOUT_VERDANTURF_TOWN || gBattleEnvironment == BATTLE_ENVIRONMENT_LONG_GRASS) && !(gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN))
         {
             SET_TERRAIN(GRASSY)
         }

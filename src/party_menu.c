@@ -4327,6 +4327,21 @@ static void Task_CancelAfterAorBPress(u8 taskId)
         CursorCb_Cancel1(taskId);
 }
 
+bool32 SetUpFieldMove_RockClimb(void)
+{
+    s16 x, y;
+
+    GetXYCoordsOneStepInFrontOfPlayer(&x, &y);
+    if (MetatileBehavior_IsRockClimbable(MapGridGetMetatileBehaviorAt(x, y)))
+    {
+        gFieldCallback2 = FieldCallback_PrepareFadeInFromMenu;
+        gPostMenuFieldCallback = FieldCallback_RockClimb;
+        return TRUE;
+    }
+
+    return FALSE;
+}
+
 void CB2_ReturnToPartyMenuFromFlyMap(void)
 {
     s16 x, y;

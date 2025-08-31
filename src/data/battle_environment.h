@@ -224,27 +224,27 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .background = BUILDING_BACKGROUND(Stadium, StadiumWallace)
     },
 
-    [BATTLE_ENVIRONMENT_DARK] =
+    [BATTLE_ENVIRONMENT_TYPE_DARK] =
     {
         .background = BUILDING_BACKGROUND(Stadium, StadiumDark)
     },
 
-    [BATTLE_ENVIRONMENT_FLYING] =
+    [BATTLE_ENVIRONMENT_TYPE_FLYING] =
     {
         .background = BUILDING_BACKGROUND(Stadium, StadiumFlying)
     },
 
-    [BATTLE_ENVIRONMENT_GRASS] =
+    [BATTLE_ENVIRONMENT_TYPE_GRASS] =
     {
         .background = BUILDING_BACKGROUND(Stadium, StadiumGrass)
     },
 
-    [BATTLE_ENVIRONMENT_ICE] =
+    [BATTLE_ENVIRONMENT_TYPE_ICE] =
     {
         .background = BUILDING_BACKGROUND(Stadium, StadiumIce)
     },
 
-    [BATTLE_ENVIRONMENT_ROCK] =
+    [BATTLE_ENVIRONMENT_TYPE_ROCK] =
     {
         .background = BUILDING_BACKGROUND(Stadium, StadiumRock)
     },

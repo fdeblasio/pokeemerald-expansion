@@ -391,7 +391,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 
 #define LEADER_REMATCH(rematch)                                                    \
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE}, \
-    .doubleBattle = TRUE,                                                          \
+    .battleType = TRAINER_BATTLE_TYPE_DOUBLES,                                     \
     .partySize = rematch < 4 ? 5 : 6
 
 #define ROXANNE_INFO                                                            \
@@ -1380,7 +1380,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 [DIFFICULTY_NORMAL][TRAINER_TATE_AND_LIZA_1] =
 {
     TATE_AND_LIZA_INFO,
-    .doubleBattle = TRUE,
+    .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_HYPER_POTION},
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
@@ -2309,7 +2309,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .trainerClass = TRAINER_CLASS_INTERVIEWER,                    \
     .trainerPic = TRAINER_PIC_INTERVIEWER,                        \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTERVIEWER, \
-    .doubleBattle = TRUE,                                         \
+    .battleType = TRAINER_BATTLE_TYPE_DOUBLES,                    \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY,  \
     .partySize = 2
 
@@ -2458,7 +2458,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define TWINS_INFO                                                             \
     TRAINER_CLASS_PIC(TWINS),                                                  \
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS, \
-    .doubleBattle = TRUE
+    .battleType = TRAINER_BATTLE_TYPE_DOUBLES
 
 #define HIKER_INFO            \
     TRAINER_CLASS_PIC(HIKER), \
@@ -2586,7 +2586,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define TEAMMATES_INFO                                                         \
     TRAINER_CLASS_PIC(TEAMMATES),                                              \
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS, \
-    .doubleBattle = TRUE
+    .battleType = TRAINER_BATTLE_TYPE_DOUBLES
 
 #define BUG_MANIAC_INFO            \
     TRAINER_CLASS_PIC(BUG_MANIAC), \
@@ -2661,12 +2661,12 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define SIS_AND_BRO_INFO                                      \
     TRAINER_CLASS_PIC(SIS_AND_BRO),                           \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER, \
-    .doubleBattle = TRUE
+    .battleType = TRAINER_BATTLE_TYPE_DOUBLES
 
 #define YOUNG_COUPLE_INFO                                  \
     TRAINER_CLASS_PIC(YOUNG_COUPLE),                       \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_GIRL, \
-    .doubleBattle = TRUE
+    .battleType = TRAINER_BATTLE_TYPE_DOUBLES
 
 #define POKEMON_RANGER_F_INFO                                                 \
     .trainerClass = TRAINER_CLASS_PKMN_RANGER,                                \
@@ -2691,7 +2691,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define OLD_COUPLE_INFO                                       \
     TRAINER_CLASS_PIC(OLD_COUPLE),                            \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE, \
-    .doubleBattle = TRUE
+    .battleType = TRAINER_BATTLE_TYPE_DOUBLES
 
 #define DRAGON_TAMER_INFO            \
     TRAINER_CLASS_PIC(DRAGON_TAMER), \

@@ -1,6 +1,6 @@
 #define FACILITY_CLASS_PIC(class) [FACILITY_CLASS_##class] = TRAINER_PIC_##class
 
-const u8 gFacilityClassToPicIndex[] =
+const u16 gFacilityClassToPicIndex[] =
 {
     FACILITY_CLASS_PIC(HIKER),
     FACILITY_CLASS_PIC(AQUA_GRUNT_M),
@@ -88,7 +88,7 @@ const u8 gFacilityClassToPicIndex[] =
 
 #define FACILITY_TO_TRAINER(class) [FACILITY_CLASS_##class] = TRAINER_CLASS_##class
 
-const u8 gFacilityClassToTrainerClass[] =
+const enum TrainerClassID gFacilityClassToTrainerClass[] =
 {
     FACILITY_TO_TRAINER(HIKER),
     [FACILITY_CLASS_AQUA_GRUNT_M] = TRAINER_CLASS_TEAM_AQUA,

@@ -1050,7 +1050,7 @@ bool32 TryGenerateBattlePikeWildMon(bool8 checkKeenEyeIntimidate)
                MON_DATA_EXP,
                &gExperienceTables[gSpeciesInfo[wildMons[pikeMonId].species].growthRate][monLevel]);
 
-    if (GetSpeciesAbility(wildMons[headerId][pikeMonId].species, 1))
+    if (GetSpeciesAbility(wildMons[pikeMonId].species, 1))
         abilityNum = Random() % 2;
     else
         abilityNum = 0;

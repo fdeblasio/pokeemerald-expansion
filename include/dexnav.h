@@ -10,11 +10,10 @@ enum RowGUIInfo
     ROW_WATER,
     ROW_LAND_TOP,
     ROW_LAND_BOT,
-    ROW_HIDDEN,
 #if CHECK_SPECIES == FALSE
-    ROW_HIDDEN
+    ROW_HIDDEN,
 #else
-    ROW_FISHING
+    ROW_FISHING,
 #endif
     ROWS_COUNT
 };
@@ -95,7 +94,9 @@ void Task_OpenDexNavFromStartMenu(u8 taskId);
 bool32 TryStartDexNavSearch(void);
 void TryIncrementSpeciesSearchLevel(void);
 void ResetDexNavSearch(void);
+#if CHECK_SPECIES == FALSE
 bool32 TryFindHiddenPokemon(void);
+#endif
 u32 CalculateDexNavShinyRolls(void);
 void IncrementDexNavChain(void);
 bool32 OnStep_DexNavSearch(void);

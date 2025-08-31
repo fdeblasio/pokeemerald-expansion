@@ -611,7 +611,6 @@ static const struct DebugMenuOption sDebugMenu_Actions_EditPokemon[] =
 
 static const struct DebugMenuOption sDebugMenu_Actions_Party[] =
 {
-    { COMPOUND_STRING("Move Relearner"),     DebugAction_ExecuteScript, Common_EventScript_MoveRelearner },
     { COMPOUND_STRING("Hatch an Egg"),       DebugAction_ExecuteScript, Debug_HatchAnEgg },
     { COMPOUND_STRING("Heal party"),         DebugAction_Party_HealParty },
     { COMPOUND_STRING("Edit Pokemon"),       DebugAction_OpenSubMenu, sDebugMenu_Actions_EditPokemon },

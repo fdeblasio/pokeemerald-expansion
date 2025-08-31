@@ -5860,7 +5860,7 @@ const u16 *GetMonSpritePalFromSpeciesIsEgg(enum Species species, bool32 isShiny,
 
 bool32 IsMoveHM(enum Move move)
 {
-    return FALSE FOREACH_HM(OR_MOVE_IS_HM);
+    return FALSE;
 }
 
 #undef OR_MOVE_IS_HM

@@ -18,16 +18,13 @@
  *   ...
  * }; */
 #define ENUM_TM(n, id) CAT(ITEM_TM_, id) = CAT(ITEM_TM, n),
-#define ENUM_HM(n, id) CAT(ITEM_HM_, id) = CAT(ITEM_HM, n),
 #define TO_TMHM_NUMS(a, ...) (__VA_ARGS__)
 enum TMHMItemId
 {
     RECURSIVELY(R_ZIP(ENUM_TM, TO_TMHM_NUMS NUMBERS_256, (FOREACH_TM(APPEND_COMMA))))
-    RECURSIVELY(R_ZIP(ENUM_HM, TO_TMHM_NUMS NUMBERS_256, (FOREACH_HM(APPEND_COMMA))))
 };
 
 #undef ENUM_TM
-#undef ENUM_HM
 #undef TO_TMHM_NUMS
 
 /* Each of these TM_HM enums corresponds an index in the list of TMs + HMs item ids in
@@ -36,10 +33,9 @@ enum TMHMItemId
 #define UNPACK_TM_HM_ENUM(_tmHm) CAT(ENUM_TM_HM_, _tmHm),
 enum TMHMIndex
 {
-    FOREACH_TMHM(UNPACK_TM_HM_ENUM)
+    FOREACH_TM(UNPACK_TM_HM_ENUM)
     NUM_ALL_MACHINES,
     NUM_TECHNICAL_MACHINES = (0 FOREACH_TM(PLUS_ONE)),
-    NUM_HIDDEN_MACHINES = (0 FOREACH_HM(PLUS_ONE)),
 };
 
 #undef UNPACK_TM_HM_ENUM
@@ -142,7 +138,6 @@ static inline enum TMHMIndex GetItemTMHMIndex(u16 item)
          *      return 2;
          * etc */
         FOREACH_TM(UNPACK_ITEM_TO_TM_INDEX)
-        FOREACH_HM(UNPACK_ITEM_TO_HM_INDEX)
         default:
             return 0;
     }
@@ -159,7 +154,6 @@ static inline u16 GetItemTMHMMoveId(u16 item)
          *      return MOVE_DRAGON_CLAW;
          * etc */
         FOREACH_TM(UNPACK_ITEM_TO_TM_MOVE_ID)
-        FOREACH_HM(UNPACK_ITEM_TO_HM_MOVE_ID)
         default:
             return MOVE_NONE;
     }
@@ -203,7 +197,6 @@ static inline struct ItemSlot GetBagItemIdAndQuantity(enum Pocket pocketId, u32 
     return BagPocket_GetSlotData(&gBagPockets[pocketId], pocketPos);
 }
 
-u16 GetBagItemQuantity(u16 *quantity);
 void ApplyNewEncryptionKeyToBagItems(u32 newKey);
 void SetBagItemsPointers(void);
 u8 *CopyItemName(u16 itemId, u8 *dst);

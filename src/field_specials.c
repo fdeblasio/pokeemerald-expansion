@@ -2413,11 +2413,16 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
     },
     [SCROLL_MULTI_GLASS_WORKSHOP_VENDOR] =
     {
-        gItemsInfo[ITEM_BLUE_FLUTE].name,
-        gItemsInfo[ITEM_YELLOW_FLUTE].name,
-        gItemsInfo[ITEM_RED_FLUTE].name,
-        gItemsInfo[ITEM_WHITE_FLUTE].name,
-        gItemsInfo[ITEM_BLACK_FLUTE].name,
+        COMPOUND_STRING("Blue Flute"),
+        COMPOUND_STRING("Yellow Flute"),
+        COMPOUND_STRING("Red Flute"),
+        COMPOUND_STRING("White Flute"),
+        COMPOUND_STRING("Black Flute"),
+        //gItemsInfo[ITEM_BLUE_FLUTE].name,
+        //gItemsInfo[ITEM_YELLOW_FLUTE].name,
+        //gItemsInfo[ITEM_RED_FLUTE].name,
+        //gItemsInfo[ITEM_WHITE_FLUTE].name,
+        //gItemsInfo[ITEM_BLACK_FLUTE].name,
         gDecorations[DECOR_PRETTY_CHAIR].name,
         gDecorations[DECOR_PRETTY_DESK].name,
         gText_Exit

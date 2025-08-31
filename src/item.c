@@ -40,13 +40,11 @@ EWRAM_DATA struct BagPocket gBagPockets[POCKETS_COUNT] = {0};
 #include "data/items.h"
 
 #define UNPACK_TM_ITEM_ID(_tm) [CAT(ENUM_TM_HM_, _tm) + 1] = { CAT(ITEM_TM_, _tm), CAT(MOVE_, _tm) },
-#define UNPACK_HM_ITEM_ID(_hm) [CAT(ENUM_TM_HM_, _hm) + 1] = { CAT(ITEM_HM_, _hm), CAT(MOVE_, _hm) },
 
 const struct TmHmIndexKey gTMHMItemMoveIds[NUM_ALL_MACHINES + 1] =
 {
     [0] = { ITEM_NONE, MOVE_NONE }, // Failsafe
     FOREACH_TM(UNPACK_TM_ITEM_ID)
-    FOREACH_HM(UNPACK_HM_ITEM_ID)
     /*
      * Expands to the following:
      *
@@ -58,7 +56,6 @@ const struct TmHmIndexKey gTMHMItemMoveIds[NUM_ALL_MACHINES + 1] =
 };
 
 #undef UNPACK_TM_ITEM_ID
-#undef UNPACK_HM_ITEM_ID
 
 static inline struct ItemSlot NONNULL BagPocket_GetSlotDataGeneric(struct BagPocket *pocket, u32 pocketPos)
 {
@@ -95,7 +92,7 @@ struct ItemSlot NONNULL BagPocket_GetSlotData(struct BagPocket *pocket, u32 pock
     case POCKET_ITEMS:
     case POCKET_KEY_ITEMS:
     case POCKET_POKE_BALLS:
-    case POCKET_TM_HM:
+    case POCKET_TM:
     case POCKET_BERRIES:
         return BagPocket_GetSlotDataGeneric(pocket, pocketPos);
     case POCKET_DUMMY:
@@ -118,7 +115,7 @@ void NONNULL BagPocket_SetSlotData(struct BagPocket *pocket, u32 pocketPos, stru
     case POCKET_ITEMS:
     case POCKET_KEY_ITEMS:
     case POCKET_POKE_BALLS:
-    case POCKET_TM_HM:
+    case POCKET_TM:
     case POCKET_BERRIES:
         BagPocket_SetSlotDataGeneric(pocket, pocketPos, newSlot);
         break;
@@ -310,7 +307,7 @@ static bool32 NONNULL BagPocket_AddItem(struct BagPocket *pocket, u16 itemId, u1
 
     switch (pocket->id)
     {
-        case POCKET_TM_HM:
+        case POCKET_TM:
         case POCKET_BERRIES:
             for (itemLookupIndex = 0; itemLookupIndex < pocket->capacity && count > 0; itemLookupIndex++)
             {

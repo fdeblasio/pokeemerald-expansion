@@ -1869,7 +1869,9 @@ static bool8 CapturedAllFishingMons(u16 headerId)
     u32 i;
     u16 species;
     u8 count = 0;
-    const struct WildPokemonInfo* fishingMonsInfo = gWildMonHeaders[headerId].fishingMonsInfo;
+    enum TimeOfDay timeOfDay = GetTimeOfDayForEncounters(headerId, WILD_AREA_FISHING);
+
+    const struct WildPokemonInfo *fishingMonsInfo = gWildMonHeaders[headerId].encounterTypes[timeOfDay].fishingMonsInfo;
 
     if (fishingMonsInfo != NULL)
     {
@@ -2679,6 +2681,7 @@ static void Task_DexNavMain(u8 taskId)
     }
 }
 
+#if CHECK_SPECIES == FALSE
 /////////////////////////
 //// HIDDEN POKEMON /////
 /////////////////////////
@@ -2807,6 +2810,7 @@ bool8 TryFindHiddenPokemon(void)
 
     return FALSE;
 }
+#endif
 
 static void DrawSearchIcon(void)
 {

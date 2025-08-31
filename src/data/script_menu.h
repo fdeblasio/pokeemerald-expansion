@@ -240,18 +240,25 @@ static const struct MenuAction MultichoiceList_Satisfaction[] =
 
 static const struct MenuAction MultichoiceList_SternDeepSea[] =
 {
-    {gItemsInfo[SCANNER_REWARD_1].name},
-    {gItemsInfo[SCANNER_REWARD_2].name},
+    {COMPOUND_STRING("Deep Sea Tooth")},
+    {COMPOUND_STRING("Deep Sea Scale")},
+    //{gItemsInfo[SCANNER_REWARD_1].name},
+    //{gItemsInfo[SCANNER_REWARD_2].name},
     {gText_Exit},
 };
 
 static const struct MenuAction MultichoiceList_UnusedAshVendor[] =
 {
-    {gItemsInfo[ITEM_BLUE_FLUTE].name},
-    {gItemsInfo[ITEM_YELLOW_FLUTE].name},
-    {gItemsInfo[ITEM_RED_FLUTE].name},
-    {gItemsInfo[ITEM_WHITE_FLUTE].name},
-    {gItemsInfo[ITEM_BLACK_FLUTE].name},
+    {COMPOUND_STRING("Blue Flute")},
+    {COMPOUND_STRING("Yellow Flute")},
+    {COMPOUND_STRING("Red Flute")},
+    {COMPOUND_STRING("White Flute")},
+    {COMPOUND_STRING("Black Flute")},
+    //{gItemsInfo[ITEM_BLUE_FLUTE].name},
+    //{gItemsInfo[ITEM_YELLOW_FLUTE].name},
+    //{gItemsInfo[ITEM_RED_FLUTE].name},
+    //{gItemsInfo[ITEM_WHITE_FLUTE].name},
+    //{gItemsInfo[ITEM_BLACK_FLUTE].name},
     {COMPOUND_STRING("Glass Chair")},
     {COMPOUND_STRING("Glass Desk")},
     {gText_Cancel2},
@@ -590,8 +597,10 @@ static const struct MenuAction MultichoiceList_UnusedSSTidal4[] =
 
 static const struct MenuAction MultichoiceList_Fossil[] =
 {
-    {gItemsInfo[RIGHT_FOSSIL].name},
-    {gItemsInfo[LEFT_FOSSIL].name},
+    {COMPOUND_STRING("Claw Fossil")},
+    {COMPOUND_STRING("Root Fossil")},
+    //{gItemsInfo[RIGHT_FOSSIL].name},
+    //{gItemsInfo[LEFT_FOSSIL].name},
     {gText_Exit},
 };
 

@@ -36,7 +36,6 @@ upcoming
 ```
 
 ## To Do:
-- Add RANGE_ to prefix in wild_encounters_to_header.py and remove it from wild_encounters.json
 - Finish adding fishing encounters to DexNav
     - One row?:
         - Screen: 720 pixels wide

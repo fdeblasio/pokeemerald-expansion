@@ -267,7 +267,7 @@ def ImportWildEncounterFile():
 
 def PrintStructContent(contentList):
     for monList in contentList:
-        prefix = tabStr + "{ " + monList[0] + ", "
+        prefix = tabStr + "{ RANGE_" + monList[0] + ", "
         species = monList[1]
         suffix = species + " },"
         if species in ["GRASS_STARTER", "FIRE_STARTER", "WATER_STARTER"]:

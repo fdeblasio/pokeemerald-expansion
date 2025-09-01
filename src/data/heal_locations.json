@@ -186,6 +186,78 @@
       "y": 52,
       "respawn_map": "MAP_BATTLE_FRONTIER_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_FRONTIER_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE_108",
+      "map": "MAP_ROUTE108",
+      "x": 29,
+      "y": 6,
+      "respawn_map": "MAP_ROUTE108",
+      "respawn_x": 29,
+      "respawn_y": 6
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE_111",
+      "map": "MAP_ROUTE111",
+      "x": 26,
+      "y": 19,
+      "respawn_map": "MAP_ROUTE111",
+      "respawn_x": 26,
+      "respawn_y": 19
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE_112",
+      "map": "MAP_ROUTE112",
+      "x": 11,
+      "y": 37,
+      "respawn_map": "MAP_ROUTE112",
+      "respawn_x": 11,
+      "respawn_y": 37
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE_114",
+      "map": "MAP_ROUTE114",
+      "x": 8,
+      "y": 64,
+      "respawn_map": "MAP_ROUTE114",
+      "respawn_x": 8,
+      "respawn_y": 64
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE_119",
+      "map": "MAP_ROUTE119",
+      "x": 6,
+      "y": 33,
+      "respawn_map": "MAP_ROUTE119",
+      "respawn_x": 6,
+      "respawn_y": 33
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE_121",
+      "map": "MAP_ROUTE121",
+      "x": 37,
+      "y": 6,
+      "respawn_map": "MAP_ROUTE121",
+      "respawn_x": 37,
+      "respawn_y": 6
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE_122",
+      "map": "MAP_ROUTE122",
+      "x": 22,
+      "y": 30,
+      "respawn_map": "MAP_ROUTE122",
+      "respawn_x": 22,
+      "respawn_y": 30
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE_131",
+      "map": "MAP_SKY_PILLAR_OUTSIDE",
+      "x": 14,
+      "y": 6,
+      "respawn_map": "MAP_SKY_PILLAR_OUTSIDE",
+      "respawn_x": 14,
+      "respawn_y": 6
     }
   ]
 }

@@ -356,4 +356,31 @@ upcoming
     - Replace green with yellow on player sprites?
     - If not enough, could also add black (Charmander line would have shiny palettes as they're both yellow and black)
 - Tropical:
-    - Tropius, Bellossom, Pau Oricorio, Tsareena, probably a lot of Alolan Pokémon, both forms of Exeggutor (Sun Stone for Alolan), this is just Sun and Moon
+    - Tropius, Bellossom, Pau Oricorio, Tsareena, probably a lot of Alolan Pokémon, both forms of Exeggutor (Sun Stone for Alolan)
+    - This is just Sun and Moon
+- Massachusetts:
+    - Braviary
+    - Mismagius
+    - Swanna
+    - Greedent/Pachirisu
+    - Bouffalant?
+    - Meganium
+    - Ledian/Orbeetle
+    - Corviknight/Pidgeot
+    - Applin
+    - Wailord/Cetitan/Kyogre
+    - Stoutland
+    - Purugly/Incineroar
+    - Walking Wake?
+    - Unfezant
+    - Pelipper
+    - Sawsbuck
+    - Ninetales
+    - Linoone
+    - Skuntank
+    - Samurott/Floatzel
+    - Ting-Lu
+    - Bibarel
+    - Cinderace/Diggersby/Lopunny
+    - Raticate
+    - Watchog

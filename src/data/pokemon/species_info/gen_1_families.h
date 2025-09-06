@@ -423,8 +423,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Charmander,
-            gShinyOverworldPalette_Charmander
+            gShinyOverworldPalette_Charmander,
+            gOverworldPalette_Charmander
         )
         .levelUpLearnset = sCharmanderLevelUpLearnset,
         .teachableLearnset = sCharmanderTeachableLearnset,
@@ -493,8 +493,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Charmeleon,
-            gShinyOverworldPalette_Charmeleon
+            gShinyOverworldPalette_Charmeleon,
+            gOverworldPalette_Charmeleon
         )
         .levelUpLearnset = sCharmeleonLevelUpLearnset,
         .teachableLearnset = sCharmeleonTeachableLearnset,
@@ -566,8 +566,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Charizard,
-            gShinyOverworldPalette_Charizard
+            gShinyOverworldPalette_Charizard,
+            gOverworldPalette_Charizard
         )
         .levelUpLearnset = sCharizardLevelUpLearnset,
         .teachableLearnset = sCharizardTeachableLearnset,
@@ -632,8 +632,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_CharizardMegaX,
-            gShinyOverworldPalette_CharizardMegaX
+            gShinyOverworldPalette_CharizardMegaX,
+            gOverworldPalette_CharizardMegaX
         )
     #endif //OW_BATTLE_ONLY_FORMS
         .isMegaEvolution = TRUE,
@@ -700,8 +700,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_CharizardMegaY,
-            gShinyOverworldPalette_CharizardMegaY
+            gShinyOverworldPalette_CharizardMegaY,
+            gOverworldPalette_CharizardMegaY
         )
     #endif //OW_BATTLE_ONLY_FORMS
         .isMegaEvolution = TRUE,
@@ -13799,8 +13799,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Lickitung,
-            gShinyOverworldPalette_Lickitung
+            gShinyOverworldPalette_Lickitung,
+            gOverworldPalette_Lickitung
         )
         .levelUpLearnset = sLickitungLevelUpLearnset,
         .teachableLearnset = sLickitungTeachableLearnset,
@@ -13876,8 +13876,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Lickilicky,
-            gShinyOverworldPalette_Lickilicky
+            gShinyOverworldPalette_Lickilicky,
+            gOverworldPalette_Lickilicky
         )
         .levelUpLearnset = sLickilickyLevelUpLearnset,
         .teachableLearnset = sLickilickyTeachableLearnset,

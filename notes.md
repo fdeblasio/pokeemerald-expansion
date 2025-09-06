@@ -394,7 +394,7 @@ Yellow/Black:
     - Zapdos
     - Murkrow
     - Unown
-    - Sneasel (swap feather colors with shiny)
+    - Sneasel (swap feather colors with shiny in icon/overworld)
     - Houndour
     - Raikou
     - Mawile
@@ -432,7 +432,7 @@ Yellow/Black:
     - Tatsugiri Yellow
     - Paldean Tauros
 
-Yellow/Black shiny (need to edit) icons:
+Yellow/Black shiny (need to edit icons and overworld):
     - Charmander
     - Beedrill (Weedle)
     - Growlithe

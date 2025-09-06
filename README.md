@@ -155,9 +155,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 ### Please consider crediting the entire [list of contributors](https://github.com/rh-hideout/pokeemerald-expansion/wiki/Credits) in your project, as they have all worked hard to develop this project :)
 
-<<<<<<< HEAD
-If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/) has a [guide to forking and cloning the repository](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/The-Basics-of-GitHub). Then you can follow one of the following guides:
-=======
 ## Contributions/Acknowledgements
 - [pret's initial decompilation](https://github.com/pret/pokeemerald)
 - [RHH's Emerald Expansion](https://github.com/rh-hideout/pokeemerald-expansion)
@@ -189,7 +186,6 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
 - [hjk321 for extra save space](https://github.com/pret/pokeemerald/wiki/Extra-save-space-with-two-lines-of-code)
 - [Mashanny for making text speed up without holding A/B](https://www.pokecommunity.com/showpost.php?p=10266385)
 - [Sapphire Jester for making the Soot Sack usuable](https://www.pokecommunity.com/showpost.php?p=10222284&postcount=178)
->>>>>>> aa9aeb750b (Updated notes)
 
 ## Known bugs and other notes
 - Gabby and Ty logic needs testing
@@ -320,9 +316,6 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
 - Triathletes all have Pokémon with maxed HP and Speed EVs and IVs (to reflect training for endurance and speed)
 - Pokémon Breeders all have Pokémon with perfect IVs. They can also have Hidden Abilities and Egg Moves
 
-<<<<<<< HEAD
-Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discord.gg/6CzjAG6GZk) to communicate and organize. Most of our discussions take place there, and we welcome anybody to join us!
-=======
 #### Bosses:
 |          BOSSES           |        VANILLA       |    UPDATED    |
 |:-------------------------:|:--------------------:|:-------------:|
@@ -3259,4 +3252,3 @@ Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discor
 
 - Chi-Yu:
     - Learns Burning Jealousy and Flamethrower by level up
->>>>>>> aa9aeb750b (Updated notes)

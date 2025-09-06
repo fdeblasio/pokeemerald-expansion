@@ -432,8 +432,8 @@ Yellow/Black:
     - Tatsugiri Yellow
     - Paldean Tauros
 
-Yellow/Black shiny:
-    - Charmander (except for maybe Mega X)
+Yellow/Black shiny (need to edit) icons:
+    - Charmander
     - Beedrill (Weedle)
     - Growlithe
     - Hisuian Growlithe

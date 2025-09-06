@@ -5346,7 +5346,7 @@ BattleScript_ElectromorphosisActivates::
 	return
 
 BattleScript_WindPowerActivates::
-	attackstring
+	printattackstring
 	pause B_WAIT_TIME_SHORT
 	call BattleScript_AbilityPopUp
 	setcharge BS_TARGET

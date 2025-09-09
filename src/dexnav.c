@@ -1806,7 +1806,7 @@ static bool8 CapturedAllHiddenMons(u32 headerId)
                 count++;
                 if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT))
                     break;
-           }
+            }
         }
 
         if (i >= HIDDEN_WILD_COUNT && count > 0)

@@ -1758,10 +1758,12 @@ static void CreateSelectionCursor(void)
     UpdateCursorPosition();
 }
 
+#if CHECK_SPECIES == FALSE
 static void CreateNoDataIcon(s16 x, s16 y)
 {
     CreateSprite(&sNoDataIconTemplate, x, y, 0);
 }
+#endif
 
 static bool8 CapturedAllLandMons(u32 headerId)
 {
@@ -1850,7 +1852,7 @@ static bool8 CapturedAllHiddenMons(u32 headerId)
                 count++;
                 if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT))
                     break;
-           }
+            }
         }
 
         if (i >= HIDDEN_WILD_COUNT && count > 0)
@@ -2112,14 +2114,17 @@ static void DexNavLoadEncounterData(void)
 
 static void TryDrawIconInSlot(u16 species, s16 x, s16 y)
 {
-    if (species == SPECIES_NONE || species > NUM_SPECIES)
-        CreateNoDataIcon(x, y);   //'X' in slot
-    else if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_SEEN))
-        CreateMonIcon(SPECIES_NONE, SpriteCB_MonIcon, x, y, 0, 0xFFFFFFFF); //question mark
-    else if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT))
-        CreateMonIconSilhouette(species, SpriteCB_MonIcon, x, y, 0, 0xFFFFFFFF);
-    else
-        CreateMonIcon(species, SpriteCB_MonIcon, x, y, 0, 0xFFFFFFFF);
+    if (species != SPECIES_NONE && species <= NUM_SPECIES)
+    {
+        if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_SEEN))
+            CreateMonIcon(SPECIES_NONE, SpriteCB_MonIcon, x, y, 0, 0xFFFFFFFF); //question mark
+        else if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT))
+            CreateMonIconSilhouette(species, SpriteCB_MonIcon, x, y, 0, 0xFFFFFFFF);
+            //CreateNoDataIcon(x, y);   //'X' in slot
+        else
+            CreateMonIcon(species, SpriteCB_MonIcon, x, y, 0, 0xFFFFFFFF);
+
+    }
 }
 
 static void DrawSpeciesIcons(void)

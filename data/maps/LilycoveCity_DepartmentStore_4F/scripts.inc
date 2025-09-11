@@ -82,10 +82,12 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_BLASTOISINITE
 	.2byte ITEM_BEEDRILLITE
 	.2byte ITEM_PIDGEOTITE
+	.2byte ITEM_NONE            @ Victreebel
 	.2byte ITEM_SLOWBRONITE
 	.2byte ITEM_GENGARITE
 	.2byte ITEM_KANGASKHANITE
 	.2byte ITEM_AERODACTYLITE	@ Battle Frontier
+	.2byte ITEM_NONE            @ Dragonite
 	.2byte ITEM_MEWTWONITE_X
 	.2byte ITEM_MEWTWONITE_Y
 	.2byte ITEM_AMPHAROSITE		@ Battle Frontier
@@ -98,6 +100,8 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_GARCHOMPITE
 	.2byte ITEM_ABOMASITE
 	.2byte ITEM_AUDINITE
+	.2byte ITEM_NONE            @ Malamar
+	.2byte ITEM_NONE            @ Hawlucha
 	.2byte ITEM_DIANCITE
 	.2byte ITEM_NONE
 	release

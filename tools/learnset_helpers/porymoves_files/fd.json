@@ -3108,14 +3108,30 @@
     "TutorMoves": []
   },
   "DRAGONAIR": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 0,
+        "Move": "MOVE_DRAGON_BREATH"
+      }
+    ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_FLY"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
   "DRAGONITE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 0,
+        "Move": "MOVE_DUAL_WINGBEAT"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_DRAGON_BREATH"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

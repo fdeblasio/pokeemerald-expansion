@@ -1567,6 +1567,14 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Zapdos (not in main game):
     - Learns Air Slash by TM
 
+- Dragonair (not in main game):
+    - Learns Dragon Breath upon evolving
+    - Learns Fly by TM
+
+- Dragonite (not in main game):
+    - Learns Dragon Breath by level up
+    - Learns Dual Wingbeat upon evolving
+
 - Bayleef (postgame):
     - Evolution: 32->36
 

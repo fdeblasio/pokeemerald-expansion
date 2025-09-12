@@ -82,6 +82,8 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_BLASTOISINITE
 	.2byte ITEM_BEEDRILLITE
 	.2byte ITEM_PIDGEOTITE
+	.2byte ITEM_NONE            @ Raichu X (move to regular shop when implemented)
+	.2byte ITEM_NONE            @ Raichu Y (move to regular shop when implemented)
 	.2byte ITEM_NONE            @ Victreebel
 	.2byte ITEM_SLOWBRONITE
 	.2byte ITEM_GENGARITE
@@ -100,6 +102,9 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_GARCHOMPITE
 	.2byte ITEM_ABOMASITE
 	.2byte ITEM_AUDINITE
+	.2byte ITEM_NONE            @ Chesnaught
+	.2byte ITEM_NONE            @ Delphox
+	.2byte ITEM_NONE            @ Greninja
 	.2byte ITEM_NONE            @ Malamar
 	.2byte ITEM_NONE            @ Hawlucha
 	.2byte ITEM_DIANCITE

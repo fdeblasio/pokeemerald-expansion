@@ -9561,11 +9561,11 @@ static const struct LevelUpMove sManectricLevelUpLearnset[] = {
 
 #if P_FAMILY_PLUSLE
 static const struct LevelUpMove sPlusleLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_NUZZLE),
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_PLAY_NICE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_WAVE),
-    LEVEL_UP_MOVE( 1, MOVE_NUZZLE),
     LEVEL_UP_MOVE( 4, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE( 7, MOVE_SPARK),
     LEVEL_UP_MOVE(10, MOVE_ENCORE),
@@ -9589,11 +9589,11 @@ static const struct LevelUpMove sPlusleLevelUpLearnset[] = {
 
 #if P_FAMILY_MINUN
 static const struct LevelUpMove sMinunLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_NUZZLE),
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_PLAY_NICE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_WAVE),
-    LEVEL_UP_MOVE( 1, MOVE_NUZZLE),
     LEVEL_UP_MOVE( 4, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE( 7, MOVE_SPARK),
     LEVEL_UP_MOVE(10, MOVE_ENCORE),
@@ -21808,11 +21808,11 @@ static const struct LevelUpMove sSandacondaLevelUpLearnset[] = {
 #if P_FAMILY_CRAMORANT
 static const struct LevelUpMove sCramorantLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GUST),
+    LEVEL_UP_MOVE( 1, MOVE_BELCH),
     LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 1, MOVE_STOCKPILE),
     LEVEL_UP_MOVE( 1, MOVE_SPIT_UP),
     LEVEL_UP_MOVE( 1, MOVE_SWALLOW),
-    LEVEL_UP_MOVE( 1, MOVE_BELCH),
     LEVEL_UP_MOVE( 7, MOVE_WATER_GUN),
     LEVEL_UP_MOVE(14, MOVE_FURY_ATTACK),
     LEVEL_UP_MOVE(21, MOVE_WATER_PULSE),

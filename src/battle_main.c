@@ -6234,10 +6234,10 @@ u32 GetDynamicPower(struct Pokemon *mon, u32 move, u32 battler){
         isSnowy = gBattleWeather & (B_WEATHER_HAIL | B_WEATHER_SNOW);
         //isFoggy = gBattleWeather & B_WEATHER_FOG; This is failing for some reason
         isFoggy = FALSE;
-        isElectric = IsBattlerTerrainAffected(battler, STATUS_FIELD_ELECTRIC_TERRAIN);
-        isMisty = IsBattlerTerrainAffected(battler, STATUS_FIELD_MISTY_TERRAIN);
-        isGrassy = IsBattlerTerrainAffected(battler, STATUS_FIELD_GRASSY_TERRAIN);
-        isPsychic = IsBattlerTerrainAffected(battler, STATUS_FIELD_PSYCHIC_TERRAIN);
+        isElectric = IsBattlerTerrainAffected(battler, ability, holdEffect, STATUS_FIELD_ELECTRIC_TERRAIN);
+        isMisty = IsBattlerTerrainAffected(battler, ability, holdEffect, STATUS_FIELD_MISTY_TERRAIN);
+        isGrassy = IsBattlerTerrainAffected(battler, ability, holdEffect, STATUS_FIELD_GRASSY_TERRAIN);
+        isPsychic = IsBattlerTerrainAffected(battler, ability, holdEffect, STATUS_FIELD_PSYCHIC_TERRAIN);
     }
     else
     {

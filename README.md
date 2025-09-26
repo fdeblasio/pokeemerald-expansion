@@ -1656,8 +1656,14 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Spe: 50->60
     - Learns Aqua Jet by level up
 
+- Sunkern (postgame):
+    - SpA: 30->50
+    - Learns Magical Leaf and Energy Ball by level up
+
 - Sunflora (postgame):
-    - Learns Morning Sun by level up
+    - Spe: 30->55
+    - Learns Morning Sun upon evolving
+    - Learns Magical Leaf and Energy Ball by level up
 
 - Wooper/Quagsire (postgame):
     - Learn Water Pulse and Earth Power by level up
@@ -2391,6 +2397,15 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Spe: 106->110
     - Learns Thief and Dark Pulse by level up
 
+- Pansage/Simisage:
+    - Learn Energy Ball by level up
+
+- Pansear/Simisear:
+    - Learn Flamethrower by level up
+
+- Panpour/Simipour:
+    - Learn Surf by level up
+
 - Munna/Musharna:
     - Learn Confusion by level up
 
@@ -2745,6 +2760,16 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Greninja:
     - Learns Bubble Beam, Dark Pulse, and Surf by level up
 
+- Bunnelby:
+    - Learns Dizzy Punch and Body Slam by level up
+
+- Diggersby:
+    - Atk: 56->80
+    - Def: 77->80
+    - SpD: 77->80
+    - Spe: 78->80
+    - Learns Dizzy Punch, Body Slam, and Stomping Tantrum by level up
+
 - Fletchling:
     - Spe: 62->65
     - Learns Dual Wingbeat by level up
@@ -2794,7 +2819,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Pancham:
     - Learns Drain Punch by level up
 
-- Pangoro
+- Pangoro:
     - Learns Dizzy Punch, Dynamic Punch, Drain Punch, and Throat Chop by level up
 
 - Espurr:
@@ -2977,7 +3002,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Held item: Magost Berry: 0%->50%
     - Held item: Grassy Seed: 50%->5%
 
-- Comfey
+- Comfey:
     - Learns Fairy Wind and Dazzling Gleam by level up
 
 - Sandygast/Palossand:
@@ -3027,8 +3052,8 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Drizzile:
     - Evolution: 35->36
 
-- Skwovet/Greedent
-    - Learn Headbutt and Tail Slap by level up
+- Skwovet/Greedent:
+    - Learn Headbutt, Tail Slap, Seed Bomb, and Crunch by level up
 
 - Rookidee:
     - HP: 38->40
@@ -3048,6 +3073,14 @@ There are some mechanics, moves and abilities that are missing and being develop
     - SpA: 53->55
     - Spe: 67->70
     - Learns Iron Head by level up
+
+- Gossifleur:
+    - SpA: 40->60
+    - Learns Absorb, Mega Drain, Magical Leaf, Giga Drain, Energy Ball
+
+- Eldegoss:
+    - SpA: 80->100
+    - Learns Absorb, Mega Drain, Magical Leaf, Giga Drain, Energy Ball
 
 - Wooloo:
     - Learns Rollout and Body Slam by level up
@@ -3226,6 +3259,9 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learn Gust, Shock Wave, Air Cutter, Tailwind, Air Slash, and Thunder by level up
     - Learn Rain Dance by TM
     - Learn Heat Wave by Egg Move
+
+- Maschiff/Mabosstiff:
+    - Learn Pursuit by level up
 
 - Capsakid:
     - Hidden Ability: Klutz->Moody

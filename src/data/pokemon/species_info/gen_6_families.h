@@ -834,11 +834,11 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     [SPECIES_DIGGERSBY] =
     {
         .baseHP        = 85,
-        .baseAttack    = 56,
-        .baseDefense   = 77,
-        .baseSpeed     = 78,
+        .baseAttack    = 80,
+        .baseDefense   = 80,
+        .baseSpeed     = 50,
         .baseSpAttack  = 50,
-        .baseSpDefense = 77,
+        .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_GROUND),
         .catchRate = 127,
         .expYield = 148,

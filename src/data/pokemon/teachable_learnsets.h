@@ -32132,6 +32132,7 @@ static const u16 sGreninjaTeachableLearnset[] = {
 #if P_FAMILY_BUNNELBY
 static const u16 sBunnelbyTeachableLearnset[] = {
     MOVE_ATTRACT,
+    MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
     MOVE_DEFENSE_CURL,

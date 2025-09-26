@@ -3166,13 +3166,13 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define CALVIN_TAILLOW(Level)                                                 \
     .lvl = Level,                                                             \
     .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_TAILLOW : SPECIES_SWELLOW, \
-    .gender = TRAINER_MON_MALE                                                \
+    .gender = TRAINER_MON_MALE
 
 #define CALVIN_MIGHTYENA(Level)    \
     .lvl = Level,                  \
     .species = SPECIES_MIGHTYENA,  \
     .ability = ABILITY_INTIMIDATE, \
-    .gender = TRAINER_MON_MALE     \
+    .gender = TRAINER_MON_MALE
 
 [DIFFICULTY_NORMAL][TRAINER_CALVIN_1] =
 {

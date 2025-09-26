@@ -755,6 +755,9 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Accuracy: 90->100
     - Shadow Force:
         - PP: 5->10
+    - Spirit Shackle:
+        - Power: 80->90
+        - PP: 10->15
 - Electric:
     - Bolt Strike:
         - Accuracy: 85->100
@@ -806,6 +809,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Pyro Ball:
         - Accuracy: 90->100
         - PP: 5->10
+        - Chance to burn: 10%->20%
     - Sacred Fire:
         - Accuracy: 95->100
         - PP: 5->10
@@ -1263,7 +1267,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Crobat:
     - Learns Gust by level up
 
-- Growlithe/Arcanine:
+- Growlithe/Arcanine (not in game):
     - Learn Temper Flare by level up
 
 - Poliwag (not in main game):
@@ -1334,7 +1338,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Voltorb/Electrode:
     - Learn Thunderbolt by level up
 
-- Hisuian Voltorb/Hisuian Electrode (not in main game):
+- Hisuian Voltorb/Hisuian Electrode (postgame):
     - Learn Thunderbolt by level up
 
 - Alolan Exeggutor (not in main game):
@@ -1516,7 +1520,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Bounce by level up
     - Learns Dragon Breath by Egg Move
 
-- Ditto:
+- Ditto (postgame):
     - All stats: 48->50
 
 - Eevee (not in main game):
@@ -1709,7 +1713,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Qwilfish/Hisuian Qwilfish/Overqwil (not in main game):
     - Learns Poison Tail by level up
 
-- Shuckle:
+- Shuckle (postgame):
     - Learns Rock Tomb by level up
 
 - Heracross:
@@ -2233,6 +2237,16 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Infernape:
     - Learns Incinerate, Karate Chop, Vacuum Wave, Fire Punch, Lava Plume, Flamethrower, Drain Punch, and Aura Sphere by level up
 
+- Piplup:
+    - Learns Surf by level up
+
+- Prinplup:
+    - Learns Chilling Water upon evolving
+    - Learns Surf by level up
+
+- Empoleon:
+    - Learns Chilling Water, Mirror Shot, Surf, and Flash Cannon by level up
+
 - Starly:
     - Learns Dual Wingbeat by level up
 
@@ -2449,8 +2463,15 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Mud Bomb, Bulldoze, Stomping Tantrum, Earth Power, Liquidation, Earthquake, and Surf by level up
     - Learns Waterfall by TM
 
+- Sewaddle:
+    - Learns Leafage by level up
+
 - Swadloon:
     - Evolution: friendship->30
+    - Learns Leafage by level up
+
+- Leavanny:
+    - Learns Leafage by level up
 
 - Venipede/Whirlipede:
     - Learn Bug Bite at level 12 and Steamroller in its place at level 20
@@ -2490,7 +2511,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Darumaka:
     - Evolution: 35->32
 
-- Galarian Darumaka/Darmanitan:
+- Galarian Darumaka/Galarian Darmanitan:
     - Held item: Snowball: 0%->50%
 
 - Maractus:
@@ -2924,9 +2945,14 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Rowlet:
     - Evolution: 17->16
+    - Learns Dual Wingbeat by level up
 
 - Dartrix:
     - Evolution: 34->36
+    - Learns Dual Wingbeat by level up
+
+- Decidueye:
+    - Learns Dual Wingbeat by level up
 
 - Litten:
     - Evolution: 17->16
@@ -3005,11 +3031,24 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Thwackey:
     - Evolution: 35->36
 
+- Scorbunny:
+    - Learns Flame Charge at level 8 and Fire Fang in its place at level 17
+    - Learns Flame Wheel, Fire Punch, and Blaze Kick by level up
+
 - Raboot:
     - Evolution: 35->36
+    - Learns Flame Charge at level 8 and Fire Fang in its place at level 19
+    - Learns Flame Wheel, Fire Punch, and Blaze Kick by level up
+
+- Cinderace:
+    - Learns Flame Charge at level 8 and Fire Fang in its place at level 19
+    - Learns Flame Wheel, Fire Punch, and Blaze Kick by level up
 
 - Drizzile:
     - Evolution: 35->36
+
+- Skwovet/Greedent
+    - Learn Headbutt and Tail Slap by level up
 
 - Rookidee:
     - HP: 38->40

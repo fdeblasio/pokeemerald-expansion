@@ -35,6 +35,7 @@ upcoming
 ```
 
 ## To Do:
+- Add Golem-A to postgame?
 - Finish adding fishing encounters to DexNav
     - One row?:
         - Screen: 720 pixels wide

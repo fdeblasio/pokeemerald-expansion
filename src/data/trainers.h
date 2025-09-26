@@ -4554,23 +4554,23 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     YOUNGSTER_INFO,             \
     MINI_BOSS_AI_FLAGS
 
-#define LINUS(Level)                                             \
-    .lvl = Level,                                                \
-    .species = Level < 20 ? SPECIES_ZIGZAGOON : SPECIES_LINOONE, \
-    .ability = ABILITY_GLUTTONY,                                 \
-    .nature = NATURE_JOLLY,                                      \
-    .gender = TRAINER_MON_MALE,                                  \
-    .nickname = COMPOUND_STRING("Linus")
+#define BIG_GREG(Level)                                         \
+    .lvl = Level,                                               \
+    .species = Level < 24 ? SPECIES_SKWOVET : SPECIES_GREEDENT, \
+    .ability = ABILITY_CHEEK_POUCH,                             \
+    .nature = NATURE_ADAMANT,                                   \
+    .gender = TRAINER_MON_MALE,                                 \
+    .nickname = COMPOUND_STRING("Big Greg")
 
-#define CALVIN_TAILLOW(Level)                                                 \
-    .lvl = Level,                                                             \
-    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_TAILLOW : SPECIES_SWELLOW, \
+#define CALVIN_MASCHIFF(Level)                                                    \
+    .lvl = Level,                                                                 \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_MASCHIFF : SPECIES_MABOSSTIFF, \
+    .ability = ABILITY_INTIMIDATE,                                                \
     .gender = TRAINER_MON_MALE
 
-#define CALVIN_MIGHTYENA(Level)    \
-    .lvl = Level,                  \
-    .species = SPECIES_MIGHTYENA,  \
-    .ability = ABILITY_INTIMIDATE, \
+#define CALVIN_FLYGON(Level)   \
+    .lvl = Level,              \
+    .species = SPECIES_FLYGON, \
     .gender = TRAINER_MON_MALE
 
 //Extra for hacks
@@ -4582,7 +4582,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        LINUS(5),
+        BIG_GREG(5),
         }
     },
 },
@@ -4593,11 +4593,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        CALVIN_TAILLOW(REMATCH_2_LEVEL_2),
+        CALVIN_MASCHIFF(REMATCH_2_LEVEL_2),
         IVS(2),
         },
         {
-        LINUS(REMATCH_2_LEVEL_1),
+        BIG_GREG(REMATCH_2_LEVEL_1),
         IVS(2),
         }
     },
@@ -4609,11 +4609,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        CALVIN_TAILLOW(REMATCH_3_LEVEL_2),
+        CALVIN_MASCHIFF(REMATCH_3_LEVEL_2),
         IVS(3),
         },
         {
-        LINUS(REMATCH_3_LEVEL_1),
+        BIG_GREG(REMATCH_3_LEVEL_1),
         IVS(3),
         }
     },
@@ -4625,15 +4625,15 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        CALVIN_MIGHTYENA(REMATCH_4_LEVEL_2),
+        CALVIN_FLYGON(REMATCH_4_LEVEL_2),
         IVS(4),
         },
         {
-        CALVIN_TAILLOW(REMATCH_4_LEVEL_2),
+        CALVIN_MASCHIFF(REMATCH_4_LEVEL_2),
         IVS(4),
         },
         {
-        LINUS(REMATCH_4_LEVEL_1),
+        BIG_GREG(REMATCH_4_LEVEL_1),
         IVS(4),
         }
     },
@@ -4646,24 +4646,24 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = REMATCH_5_LEVEL_2,
-        .species = SPECIES_FLYGON,
+        .species = SPECIES_DRAGONITE,
         IVS(5),
         .gender = TRAINER_MON_MALE,
         },
         {
-        CALVIN_MIGHTYENA(REMATCH_5_LEVEL_2),
+        CALVIN_FLYGON(REMATCH_5_LEVEL_2),
         IVS(5),
         },
         {
-        CALVIN_TAILLOW(REMATCH_5_LEVEL_2),
+        CALVIN_MASCHIFF(REMATCH_5_LEVEL_2),
         IVS(5),
         },
         {
-        LINUS(REMATCH_5_MINI_BOSS),
-        EV_SPREAD_ATK_SPE_HP,
+        BIG_GREG(REMATCH_5_MINI_BOSS),
+        EV_SPREAD_ATK_HP_DEF,
         PERFECT_IVS,
-        .moves = {MOVE_BODY_SLAM, MOVE_PLAY_ROUGH, MOVE_PIN_MISSILE, MOVE_HONE_CLAWS},
-        .heldItem = ITEM_FIGY_BERRY,
+        .moves = {MOVE_BODY_SLAM, MOVE_CRUNCH, MOVE_SEED_BOMB, MOVE_STUFF_CHEEKS},
+        .heldItem = ITEM_LIECHI_BERRY,
         }
     },
 },
@@ -4677,11 +4677,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 4,
-        .species = SPECIES_WURMPLE,
+        .species = SPECIES_SEWADDLE,
         },
         {
         .lvl = 4,
-        .species = SPECIES_WURMPLE,
+        .species = SPECIES_LEDYBA,
         }
     },
 },
@@ -4695,11 +4695,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 4,
-        .species = SPECIES_POOCHYENA,
+        .species = SPECIES_LILLIPUP,
         },
         {
         .lvl = 4,
-        .species = SPECIES_TAILLOW,
+        .species = SPECIES_FLETCHLING,
         }
     },
 },
@@ -4713,7 +4713,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 4,
-        .species = SPECIES_ZIGZAGOON,
+        .species = SPECIES_SKWOVET,
         },
         {
         .lvl = 4,

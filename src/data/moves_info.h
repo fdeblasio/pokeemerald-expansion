@@ -15957,10 +15957,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "After being hit, foes can\n"
             "no longer escape."),
         .effect = EFFECT_HIT,
-        .power = 80,
+        .power = 90,
         .type = TYPE_GHOST,
         .accuracy = 100,
-        .pp = 10,
+        .pp = 15,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
@@ -17714,7 +17714,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .metronomeBanned = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_BURN,
-            .chance = 10,
+            .chance = 20,
         }),
         .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,

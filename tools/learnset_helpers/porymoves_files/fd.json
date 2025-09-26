@@ -3657,7 +3657,16 @@
     "TutorMoves": []
   },
   "SUNKERN": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 16,
+        "Move": "MOVE_MAGICAL_LEAF"
+      },
+      {
+        "Level": 39,
+        "Move": "MOVE_ENERGY_BALL"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -3666,8 +3675,16 @@
   "SUNFLORA": {
     "LevelMoves": [
       {
-        "Level": 1,
+        "Level": 0,
         "Move": "MOVE_MORNING_SUN"
+      },
+      {
+        "Level": 16,
+        "Move": "MOVE_MAGICAL_LEAF"
+      },
+      {
+        "Level": 43,
+        "Move": "MOVE_ENERGY_BALL"
       }
     ],
     "PreEvoMoves": [],
@@ -7767,7 +7784,12 @@
     "TutorMoves": []
   },
   "PANSAGE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 43,
+        "Move": "MOVE_ENERGY_BALL"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -7775,6 +7797,10 @@
   },
   "SIMISAGE": {
     "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ENERGY_BALL"
+      },
       {
         "Level": 2,
         "Move": "MOVE_SEED_BOMB"
@@ -7798,7 +7824,12 @@
     "TutorMoves": []
   },
   "PANSEAR": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 43,
+        "Move": "MOVE_FLAMETHROWER"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -7806,6 +7837,10 @@
   },
   "SIMISEAR": {
     "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_FLAMETHROWER"
+      },
       {
         "Level": 2,
         "Move": "MOVE_FLAME_BURST"
@@ -7829,7 +7864,12 @@
     "TutorMoves": []
   },
   "PANPOUR": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 43,
+        "Move": "MOVE_SURF"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -7837,6 +7877,10 @@
   },
   "SIMIPOUR": {
     "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_SURF"
+      },
       {
         "Level": 2,
         "Move": "MOVE_SCALD"
@@ -9908,14 +9952,36 @@
     "TutorMoves": []
   },
   "BUNNELBY": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 18,
+        "Move": "MOVE_DIZZY_PUNCH"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_BODY_SLAM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "DIGGERSBY": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 18,
+        "Move": "MOVE_DIZZY_PUNCH"
+      },
+      {
+        "Level": 28,
+        "Move": "MOVE_BODY_SLAM"
+      },
+      {
+        "Level": 38,
+        "Move": "MOVE_STOMPING_TANTRUM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -11813,6 +11879,14 @@
       {
         "Level": 30,
         "Move": "MOVE_TAIL_SLAP"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_SEED_BOMB"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_CRUNCH"
       }
     ],
     "PreEvoMoves": [],
@@ -11829,6 +11903,14 @@
       {
         "Level": 34,
         "Move": "MOVE_TAIL_SLAP"
+      },
+      {
+        "Level": 41,
+        "Move": "MOVE_SEED_BOMB"
+      },
+      {
+        "Level": 48,
+        "Move": "MOVE_CRUNCH"
       }
     ],
     "PreEvoMoves": [],
@@ -11898,14 +11980,56 @@
     "TutorMoves": []
   },
   "GOSSIFLEUR": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ABSORB"
+      },
+      {
+        "Level": 8,
+        "Move": "MOVE_MEGA_DRAIN"
+      },
+      {
+        "Level": 16,
+        "Move": "MOVE_MAGICAL_LEAF"
+      },
+      {
+        "Level": 28,
+        "Move": "MOVE_GIGA_DRAIN"
+      },
+      {
+        "Level": 32,
+        "Move": "MOVE_ENERGY_BALL"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "ELDEGOSS": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ABSORB"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_MEGA_DRAIN"
+      },
+      {
+        "Level": 16,
+        "Move": "MOVE_MAGICAL_LEAF"
+      },
+      {
+        "Level": 34,
+        "Move": "MOVE_GIGA_DRAIN"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_ENERGY_BALL"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -13144,14 +13268,24 @@
     "TutorMoves": []
   },
   "MASCHIFF": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_PURSUIT"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "MABOSSTIFF": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_PURSUIT"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

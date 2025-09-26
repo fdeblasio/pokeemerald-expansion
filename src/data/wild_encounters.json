@@ -639,25 +639,25 @@
                 "species": "EARLY_BIRD_2"
               },
               {
-                "species": "AZURILL"
+                "species": "BUNNELBY"
               },
               {
-                "species": "EARLY_BUG_1"
+                "species": "GOSSIFLEUR"
               },
               {
-                "species": "EARLY_BIRD_1"
+                "species": "SUNKERN"
               },
               {
-                "species": "AZURILL"
+                "species": "EARLY_BUG_2"
               },
               {
-                "species": "EARLY_BIRD_2"
+                "species": "BUNNELBY"
               },
               {
-                "species": "EARLY_BIRD_1"
+                "species": "GOSSIFLEUR"
               },
               {
-                "species": "EARLY_BIRD_1"
+                "species": "SUNKERN"
               },
               {
                 "species": "EARLY_BIRD_1"
@@ -1353,34 +1353,34 @@
             "range": "ROUTE_116",
             "mons": [
               {
-                "species": "SKITTY"
+                "species": "SNUBBULL"
               },
               {
-                "species": "NINCADA"
-              },
-              {
-                "species": "EARLY_BIRD_2"
+                "species": "MASCHIFF"
               },
               {
                 "species": "ABRA"
               },
               {
-                "species": "EARLY_BEAST_1"
+                "species": "PANSAGE"
               },
               {
-                "species": "EARLY_BIRD_2"
+                "species": "PANSEAR"
+              },
+              {
+                "species": "PANPOUR"
               },
               {
                 "species": "ABRA"
               },
               {
-                "species": "EARLY_BEAST_1"
+                "species": "EARLY_BIRD_2"
               },
               {
-                "species": "SKITTY"
+                "species": "EARLY_BIRD_2"
               },
               {
-                "species": "SKITTY"
+                "species": "EARLY_BIRD_2"
               }
             ]
           }
@@ -2438,45 +2438,36 @@
           "base_label": "gPetalburgWoods",
           "land_mons": {
             "encounter_rate": 20,
+            "range": "PETALBURG_WOODS",
             "mons": [
               {
-                "range": "PETALBURG_WOODS",
+                "species": "EARLY_BUG_1"
+              },
+              {
+                "species": "EARLY_BUG_2"
+              },
+              {
                 "species": "SHROOMISH"
               },
               {
-                "range": "PETALBURG_WOODS",
-                "species": "NINCADA"
-              },
-              {
-                "range": "PETALBURG_WOODS_COCOON",
-                "species": "SILCOON"
-              },
-              {
-                "range": "PETALBURG_WOODS_COCOON",
-                "species": "CASCOON"
-              },
-              {
-                "range": "PETALBURG_WOODS_COCOON",
-                "species": "SILCOON"
-              },
-              {
-                "range": "PETALBURG_WOODS_COCOON",
-                "species": "CASCOON"
-              },
-              {
-                "range": "PETALBURG_WOODS",
                 "species": "SHROOMISH"
               },
               {
-                "range": "PETALBURG_WOODS",
+                "species": "VENONAT"
+              },
+              {
+                "species": "VENONAT"
+              },
+              {
                 "species": "SLAKOTH"
               },
               {
-                "range": "PETALBURG_WOODS",
                 "species": "SLAKOTH"
               },
               {
-                "range": "PETALBURG_WOODS",
+                "species": "SLAKOTH"
+              },
+              {
                 "species": "SLAKOTH"
               }
             ]

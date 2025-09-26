@@ -957,10 +957,10 @@
                 "species": "ELECTRIKE"
               },
               {
-                "species": "PLUSLE"
+                "species": "TADBULB"
               },
               {
-                "species": "MINUN"
+                "species": "DEWPIDER"
               },
               {
                 "species": "PLUSLE"
@@ -2465,10 +2465,10 @@
                 "species": "SLAKOTH"
               },
               {
-                "species": "SLAKOTH"
+                "species": "PICHU"
               },
               {
-                "species": "SLAKOTH"
+                "species": "PAWMI"
               }
             ]
           }
@@ -3374,25 +3374,25 @@
                 "species": "PICHU"
               },
               {
-                "species": "PICHU"
+                "species": "PAWMI"
               },
               {
-                "species": "VOLTORB"
+                "species": "TOXEL"
               },
               {
-                "species": "MAGNEMITE"
-              },
-              {
-                "species": "PICHU"
+                "species": "ROTOM"
               },
               {
                 "species": "PICHU"
               },
               {
-                "species": "VOLTORB"
+                "species": "PAWMI"
               },
               {
-                "species": "MAGNEMITE"
+                "species": "TOXEL"
+              },
+              {
+                "species": "ROTOM"
               }
             ]
           }

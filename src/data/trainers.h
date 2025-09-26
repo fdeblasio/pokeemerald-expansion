@@ -4728,32 +4728,32 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     RICH_BOY_INFO,               \
     MINI_BOSS_AI_FLAGS
 
-#define MR_ZIG(Level)                                            \
+#define MR_BUN(Level)                                            \
     RICH_BOY_MON(Level),                                         \
-    .species = Level < 20 ? SPECIES_ZIGZAGOON : SPECIES_LINOONE, \
-    .ability = ABILITY_QUICK_FEET,                               \
+    .species = Level < 20 ? SPECIES_BUNNELBY : SPECIES_DIGGERSBY, \
+    .ability = ABILITY_HUGE_POWER,                               \
     .gender = TRAINER_MON_MALE,                                  \
-    .nickname = COMPOUND_STRING("Mr. Zig")
+    .nickname = COMPOUND_STRING("Mr. Bun")
 
-#define MR_PIG(Level)                                                        \
-    RICH_BOY_MON(Level),                                                     \
-    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_SPOINK : SPECIES_GRUMPIG, \
-    .ability = ABILITY_THICK_FAT,                                            \
-    .gender = TRAINER_MON_MALE,                                              \
-    .nickname = COMPOUND_STRING("Mr. Pig")
+#define MR_SKUN(Level)                                                        \
+    RICH_BOY_MON(Level),                                                      \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_STUNKY : SPECIES_SKUNTANK, \
+    .ability = ABILITY_AFTERMATH,                                             \
+    .gender = TRAINER_MON_MALE,                                               \
+    .nickname = COMPOUND_STRING("Mr. Skun")
 
-#define MR_DIG(Level)             \
-    RICH_BOY_MON(Level),          \
-    .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_TRAPINCH : (Level < REMATCH_5_LEVEL_6 ? SPECIES_VIBRAVA : SPECIES_FLYGON), \
-    .gender = TRAINER_MON_MALE,   \
-    .nickname = COMPOUND_STRING("Mr. Dig")
+#define MR_STUN(Level)          \
+    RICH_BOY_MON(Level),        \
+    .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_PAWMI : (Level < REMATCH_5_LEVEL_6 ? SPECIES_PAWMO : SPECIES_PAWMOT), \
+    .gender = TRAINER_MON_MALE, \
+    .nickname = COMPOUND_STRING("Mr. Stun")
 
-#define MR_GIG(Level)                                                             \
+#define MR_RUN(Level)                                                             \
     RICH_BOY_MON(Level),                                                          \
-    .species = Level < REMATCH_5_LEVEL_6 ? SPECIES_GIRAFARIG : SPECIES_FARIGIRAF, \
-    .ability = ABILITY_SAP_SIPPER,                                                \
+    .species = SPECIES_TAUROS, \
+    .ability = ABILITY_SHEER_FORCE,                                                \
     .gender = TRAINER_MON_MALE,                                                   \
-    .nickname = COMPOUND_STRING("Mr. Gig")
+    .nickname = COMPOUND_STRING("Mr. Run")
 
 //Extra for hacks
 #define WINSTON_LITLEO
@@ -4764,7 +4764,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        MR_ZIG(8),
+        MR_BUN(8),
         }
     },
 },
@@ -4775,10 +4775,10 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        MR_PIG(REMATCH_2_LEVEL_2),
+        MR_SKUN(REMATCH_2_LEVEL_2),
         },
         {
-        MR_ZIG(REMATCH_2_LEVEL_1),
+        MR_BUN(REMATCH_2_LEVEL_1),
         }
     },
 },
@@ -4789,13 +4789,13 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        MR_DIG(REMATCH_3_LEVEL_2),
+        MR_STUN(REMATCH_3_LEVEL_2),
         },
         {
-        MR_PIG(REMATCH_3_LEVEL_2),
+        MR_SKUN(REMATCH_3_LEVEL_2),
         },
         {
-        MR_ZIG(REMATCH_3_LEVEL_1),
+        MR_BUN(REMATCH_3_LEVEL_1),
         }
     },
 },
@@ -4806,16 +4806,16 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        MR_GIG(REMATCH_4_LEVEL_2),
+        MR_RUN(REMATCH_4_LEVEL_2),
         },
         {
-        MR_DIG(REMATCH_4_LEVEL_2),
+        MR_STUN(REMATCH_4_LEVEL_2),
         },
         {
-        MR_PIG(REMATCH_4_LEVEL_2),
+        MR_SKUN(REMATCH_4_LEVEL_2),
         },
         {
-        MR_ZIG(REMATCH_4_LEVEL_1),
+        MR_BUN(REMATCH_4_LEVEL_1),
         }
     },
 },
@@ -4826,24 +4826,24 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        MR_GIG(REMATCH_5_LEVEL_2),
+        MR_RUN(REMATCH_5_LEVEL_2),
         IVS(24),
-        .moves = {MOVE_TWIN_BEAM, MOVE_ENERGY_BALL, MOVE_SHADOW_BALL, MOVE_NASTY_PLOT},
+        .moves = {MOVE_RAGING_BULL, MOVE_ZEN_HEADBUTT, MOVE_IRON_HEAD, MOVE_STOMPING_TANTRUM},
         },
         {
-        MR_DIG(REMATCH_5_LEVEL_2),
+        MR_STUN(REMATCH_5_LEVEL_2),
         IVS(24),
-        .moves = {MOVE_DIG, MOVE_DRAGON_CLAW, MOVE_CRUNCH, MOVE_DRAGON_DANCE},
+        .moves = {MOVE_THUNDER_PUNCH, MOVE_DRAIN_PUNCH, MOVE_THUNDER_WAVE, MOVE_REVIVAL_BLESSING},
         },
         {
-        MR_PIG(REMATCH_5_LEVEL_2),
+        MR_SKUN(REMATCH_5_LEVEL_2),
         IVS(24),
-        .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_DAZZLING_GLEAM, MOVE_FLASH_CANNON},
+        .moves = {MOVE_POISON_JAB, MOVE_CRUNCH, MOVE_FLAMETHROWER, MOVE_TOXIC},
         },
         {
-        MR_ZIG(REMATCH_5_MINI_BOSS),
+        MR_BUN(REMATCH_5_MINI_BOSS),
         PERFECT_IVS,
-        .moves = {MOVE_BODY_SLAM, MOVE_PLAY_ROUGH, MOVE_SEED_BOMB, MOVE_HONE_CLAWS},
+        .moves = {MOVE_BODY_SLAM, MOVE_EARTHQUAKE, MOVE_BOUNCE, MOVE_SWORDS_DANCE},
         }
     },
 },
@@ -4857,11 +4857,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 6,
-        .species = SPECIES_ZIGZAGOON,
+        .species = SPECIES_SKWOVET,
         },
         {
         .lvl = 6,
-        .species = SPECIES_NINCADA,
+        .species = SPECIES_SUNKERN,
         }
     },
 },
@@ -4890,27 +4890,27 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 3,
-        .species = SPECIES_WURMPLE,
+        .species = SPECIES_SEWADDLE,
         },
         {
         .lvl = 3,
-        .species = SPECIES_WURMPLE,
+        .species = SPECIES_VENONAT,
         },
         {
         .lvl = 3,
-        .species = SPECIES_WURMPLE,
+        .species = SPECIES_LEDYBA,
         },
         {
         .lvl = 3,
-        .species = SPECIES_WURMPLE,
+        .species = SPECIES_LEDYBA,
         },
         {
         .lvl = 3,
-        .species = SPECIES_WURMPLE,
+        .species = SPECIES_VENONAT,
         },
         {
         .lvl = 3,
-        .species = SPECIES_WURMPLE,
+        .species = SPECIES_SEWADDLE,
         }
     },
 },
@@ -4929,23 +4929,19 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     BUG_CATCHER_INFO,          \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define JAMES_NINCADA(Level)                                   \
-    .lvl = Level,                                              \
-    .species = Level < 20 ? SPECIES_NINCADA : SPECIES_NINJASK, \
+#define JAMES_VENONAT(Level)                                    \
+    .lvl = Level,                                               \
+    .species = Level < 31 ? SPECIES_VENONAT : SPECIES_VENOMOTH, \
     .gender = TRAINER_MON_MALE
 
-#define JAMES_SHEDINJA(Level) \
+#define JAMES_LEDIAN(Level) \
     .lvl = Level,             \
-    .species = SPECIES_SHEDINJA
-
-#define JAMES_DUSTOX(Level)    \
-    .lvl = Level,              \
-    .species = SPECIES_DUSTOX, \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_LEDYBA : SPECIES_LEDIAN, \
     .gender = TRAINER_MON_MALE
 
-#define JAMES_SURSKIT(Level)                                                     \
-    .lvl = Level,                                                                \
-    .species = Level < REMATCH_5_LEVEL_6 ? SPECIES_SURSKIT : SPECIES_MASQUERAIN, \
+#define JAMES_SEWADDLE(Level) \
+    .lvl = Level,             \
+    .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_SEWADDLE : (Level < REMATCH_5_LEVEL_6 ? SPECIES_SWADLOON : SPECIES_LEAVANNY), \
     .gender = TRAINER_MON_FEMALE
 
 //Extra for hacks
@@ -4958,7 +4954,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        JAMES_NINCADA(8),
+        JAMES_VENONAT(8),
         }
     },
 },
@@ -4969,11 +4965,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        JAMES_SHEDINJA(REMATCH_2_LEVEL_2),
+        JAMES_LEDIAN(REMATCH_2_LEVEL_2),
         IVS(2),
         },
         {
-        JAMES_NINCADA(REMATCH_2_LEVEL_2),
+        JAMES_VENONAT(REMATCH_2_LEVEL_2),
         IVS(2),
         }
     },
@@ -4985,15 +4981,15 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        JAMES_DUSTOX(REMATCH_3_LEVEL_3),
+        JAMES_SEWADDLE(REMATCH_3_LEVEL_3),
         IVS(3),
         },
         {
-        JAMES_SHEDINJA(REMATCH_3_LEVEL_3),
+        JAMES_LEDIAN(REMATCH_3_LEVEL_3),
         IVS(3),
         },
         {
-        JAMES_NINCADA(REMATCH_3_LEVEL_3),
+        JAMES_VENONAT(REMATCH_3_LEVEL_3),
         IVS(3),
         }
     },
@@ -5005,19 +5001,20 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        JAMES_SURSKIT(REMATCH_4_LEVEL_4),
+        .lvl = REMATCH_4_LEVEL_4,
+        .species = SPECIES_COMBEE,
         IVS(4),
         },
         {
-        JAMES_DUSTOX(REMATCH_4_LEVEL_4),
+        JAMES_SEWADDLE(REMATCH_4_LEVEL_4),
         IVS(4),
         },
         {
-        JAMES_SHEDINJA(REMATCH_4_LEVEL_4),
+        JAMES_LEDIAN(REMATCH_4_LEVEL_4),
         IVS(4),
         },
         {
-        JAMES_NINCADA(REMATCH_4_LEVEL_4),
+        JAMES_VENONAT(REMATCH_4_LEVEL_4),
         IVS(4),
         }
     },
@@ -5029,25 +5026,27 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        JAMES_SURSKIT(REMATCH_5_LEVEL_5),
+        .lvl = REMATCH_5_LEVEL_5,
+        .species = SPECIES_CRUSTLE,
         IVS(5),
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = REMATCH_5_LEVEL_5,
-        .species = SPECIES_BEAUTIFLY,
+        .species = SPECIES_VESPIQUEN,
         IVS(5),
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        JAMES_DUSTOX(REMATCH_5_LEVEL_5),
+        JAMES_SEWADDLE(REMATCH_5_LEVEL_5),
         IVS(5),
         },
         {
-        JAMES_SHEDINJA(REMATCH_5_LEVEL_5),
+        JAMES_LEDIAN(REMATCH_5_LEVEL_5),
         IVS(5),
         },
         {
-        JAMES_NINCADA(REMATCH_5_LEVEL_5),
+        JAMES_VENONAT(REMATCH_5_LEVEL_5),
         IVS(5),
         }
     },
@@ -5059,10 +5058,10 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     LADY_INFO,                 \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define CINDY_ZIGZAGOON(Level)                                   \
-    RICH_MON(Level),                                             \
-    .species = Level < 20 ? SPECIES_ZIGZAGOON : SPECIES_LINOONE, \
-    .ability = ABILITY_QUICK_FEET,                               \
+#define CINDY_SKWOVET(Level)                                    \
+    RICH_MON(Level),                                            \
+    .species = Level < 20 ? SPECIES_SKWOVET : SPECIES_GREEDENT, \
+    .ability = ABILITY_CHEEK_POUCH,                             \
     .gender = TRAINER_MON_FEMALE
 
 //Extra for hacks
@@ -5074,7 +5073,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        CINDY_ZIGZAGOON(8),
+        CINDY_SKWOVET(8),
         }
     },
 },
@@ -5085,7 +5084,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        CINDY_ZIGZAGOON(REMATCH_2_LEVEL_1),
+        CINDY_SKWOVET(REMATCH_2_LEVEL_1),
         IVS(2),
         }
     },
@@ -5097,7 +5096,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        CINDY_ZIGZAGOON(REMATCH_3_LEVEL_1),
+        CINDY_SKWOVET(REMATCH_3_LEVEL_1),
         IVS(3),
         }
     },
@@ -5109,7 +5108,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        CINDY_ZIGZAGOON(REMATCH_4_LEVEL_1),
+        CINDY_SKWOVET(REMATCH_4_LEVEL_1),
         IVS(4),
         }
     },
@@ -5121,9 +5120,9 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        CINDY_ZIGZAGOON(REMATCH_5_LEVEL_1),
+        CINDY_SKWOVET(REMATCH_5_LEVEL_1),
         IVS(5),
-        .moves = {MOVE_HEADBUTT, MOVE_PLAY_ROUGH, MOVE_PIN_MISSILE, MOVE_BESTOW},
+        .moves = {MOVE_BODY_SLAM, MOVE_SEED_BOMB, MOVE_CRUNCH, MOVE_TAIL_SLAP},
         }
     },
 },
@@ -5145,9 +5144,10 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ability = ABILITY_SWIFT_SWIM,                                                                           \
     .gender = TRAINER_MON_FEMALE
 
-#define HALEY_TAILLOW(Level)                                                  \
-    .lvl = Level,                                                             \
-    .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_TAILLOW : SPECIES_SWELLOW, \
+#define HALEY_BOUNSWEET(Level) \
+    .lvl = Level,              \
+    .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_BOUNSWEET : (Level < REMATCH_5_LEVEL_6 ? SPECIES_STEENEE : SPECIES_TSAREENA), \
+    .ability = 1,              \
     .gender = TRAINER_MON_FEMALE
 
 //Extra for hacks
@@ -5173,7 +5173,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        HALEY_TAILLOW(REMATCH_2_LEVEL_3),
+        HALEY_BOUNSWEET(REMATCH_2_LEVEL_3),
         IVS(2),
         },
         {
@@ -5193,7 +5193,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        HALEY_TAILLOW(REMATCH_3_LEVEL_3),
+        HALEY_BOUNSWEET(REMATCH_3_LEVEL_3),
         IVS(3),
         },
         {
@@ -5213,7 +5213,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        HALEY_TAILLOW(REMATCH_4_LEVEL_3),
+        HALEY_BOUNSWEET(REMATCH_4_LEVEL_3),
         IVS(4),
         },
         {
@@ -5233,7 +5233,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        HALEY_TAILLOW(REMATCH_5_LEVEL_3),
+        HALEY_BOUNSWEET(REMATCH_5_LEVEL_3),
         IVS(5),
         },
         {
@@ -5274,7 +5274,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 6,
-        .species = SPECIES_AZURILL,
+        .species = SPECIES_PANPOUR,
         },
         {
         .lvl = 6,
@@ -5297,12 +5297,12 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 8,
-        .species = SPECIES_WURMPLE,
+        .species = SPECIES_LEDYBA,
         IVS(6),
         },
         {
         .lvl = 8,
-        .species = SPECIES_NINCADA,
+        .species = SPECIES_SEWADDLE,
         IVS(6),
         }
     },
@@ -5331,7 +5331,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 9,
-        .species = SPECIES_AZURILL,
+        .species = SPECIES_GOSSIFLEUR,
         }
     },
 },
@@ -5359,11 +5359,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 8,
-        .species = SPECIES_GEODUDE,
+        .species = SPECIES_NACLI,
         },
         {
         .lvl = 8,
-        .species = SPECIES_GEODUDE,
+        .species = SPECIES_ROGGENROLA,
         }
     },
 },
@@ -5438,10 +5438,10 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .species = Level < 37 ? SPECIES_MEDITITE: SPECIES_MEDICHAM, \
     .gender = TRAINER_MON_MALE
 
-#define JERRY_SHUPPET(Level)                                                 \
+#define JERRY_MIME_JR(Level)                                                 \
     .lvl = Level,                                                            \
-    .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_SHUPPET: SPECIES_BANETTE, \
-    .ability = ABILITY_INSOMNIA,                                             \
+    .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_MIME_JR: SPECIES_MR_MIME, \
+    .ability = ABILITY_FILTER,                                               \
     .gender = TRAINER_MON_MALE
 
 //Extra for hacks
@@ -5481,7 +5481,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        JERRY_SHUPPET(REMATCH_3_LEVEL_3),
+        JERRY_MIME_JR(REMATCH_3_LEVEL_3),
         IVS(3),
         },
         {
@@ -5501,7 +5501,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        JERRY_SHUPPET(REMATCH_4_LEVEL_3),
+        JERRY_MIME_JR(REMATCH_4_LEVEL_3),
         IVS(4),
         },
         {
@@ -5521,7 +5521,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        JERRY_SHUPPET(REMATCH_5_LEVEL_3),
+        JERRY_MIME_JR(REMATCH_5_LEVEL_3),
         IVS(5),
         },
         {
@@ -5552,10 +5552,10 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ability = ABILITY_SOUNDPROOF,                                                              \
     .gender = TRAINER_MON_FEMALE
 
-#define KAREN_SKITTY(Level)                                                   \
-    .lvl = Level,                                                             \
-    .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_SKITTY : SPECIES_DELCATTY, \
-    .ability = ABILITY_NORMALIZE,                                             \
+#define KAREN_AIPOM(Level)                                                  \
+    .lvl = Level,                                                           \
+    .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_AIPOM : SPECIES_AMBIPOM, \
+    .ability = 0,                                                           \
     .gender = TRAINER_MON_FEMALE
 
 //Extra for hacks
@@ -5595,7 +5595,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        KAREN_SKITTY(REMATCH_3_LEVEL_3),
+        KAREN_AIPOM(REMATCH_3_LEVEL_3),
         IVS(3),
         },
         {
@@ -5615,7 +5615,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        KAREN_SKITTY(REMATCH_4_LEVEL_3),
+        KAREN_AIPOM(REMATCH_4_LEVEL_3),
         IVS(4),
         },
         {
@@ -5635,7 +5635,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        KAREN_SKITTY(REMATCH_5_LEVEL_3),
+        KAREN_AIPOM(REMATCH_5_LEVEL_3),
         IVS(5),
         },
         {

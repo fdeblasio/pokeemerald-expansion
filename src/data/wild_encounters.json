@@ -6528,7 +6528,7 @@
               },
               {
                 "range": "POSTGAME",
-                "species": "TOGEPI"
+                "species": "GEODUDE_ALOLA"
               },
               {
                 "range": "POSTGAME",
@@ -6536,7 +6536,7 @@
               },
               {
                 "range": "POSTGAME",
-                "species": "TOGEPI"
+                "species": "GEODUDE_ALOLA"
               },
               {
                 "range": "POSTGAME",
@@ -6822,7 +6822,7 @@
               },
               {
                 "range": "POSTGAME",
-                "species": "WOOPER_PALDEA"
+                "species": "TOGEPI"
               },
               {
                 "range": "POSTGAME",
@@ -6863,7 +6863,7 @@
             "mons": [
               {
                 "range": "POSTGAME",
-                "species": "WOOPER"
+                "species": "WOOPER_PALDEA"
               },
               {
                 "range": "POSTGAME",
@@ -6875,7 +6875,7 @@
               },
               {
                 "range": "POSTGAME",
-                "species": "QUAGSIRE"
+                "species": "CLODSIRE"
               }
             ]
           },

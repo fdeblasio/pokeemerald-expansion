@@ -35,7 +35,6 @@ upcoming
 ```
 
 ## To Do:
-- Add Golem-A to postgame?
 - Finish adding fishing encounters to DexNav
     - One row?:
         - Screen: 720 pixels wide
@@ -46,9 +45,11 @@ upcoming
     - X's not symmetrical
     - Add silhouettes
         - Find way to not mess up PC palette (quitting after moving a mon)
+
 ### Next playthrough
 - Rustboro:
     - Simplify Walda codes?
+    - Should Roxanne's trainers be Schoolkids?
 - Dewford:
     - Get Exp. Share from Steven instead of from Mr. Stone after
         - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game
@@ -99,7 +100,6 @@ upcoming
 
 ### Pokémon
 - Use Cable Car defines in wild_encounters
-- Add Geodude-A to Safari Zone?
 - Eventually remove RSE and/or BDSP teachable moves?
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?
 - For Egg Groups that share names with types, give moves of that type to Pokémon not of that type in the egg group
@@ -113,7 +113,6 @@ upcoming
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
 
 ### Items
-- Add EVO_ITEM_PRICE define
 - Ideally all SV TMs would be available if the bag was ever expanded greatly
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Include charms? (might go over Key Items amount)
@@ -121,7 +120,6 @@ upcoming
 
 ### Trainers
 - Add level defines per route/group of routes?
-- Should Roxanne's trainers be Schoolkids?
 - Update Tabitha (and maybe others?) macros to use Magma levels instead of Rematch levels?
 - Add ORAS team members (like a Picknicker getting a Gulpin)
 - Now that Gym Leader rematch party size is consistent, maybe a macro can be made
@@ -132,7 +130,6 @@ upcoming
 - Readjust wild/trainer levels so that parties aren't overpowered?
 - Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)
 - Add macros for ORAS rematch mons even if they don't exist (like Wilton's Fraxure/Haxorus)
-- Add _INFO for classes not in main game like Biker or Rocker?
 - Update Elite Four palettes
     - battle_terrain/stadium/palette3-7.pal to better match types
 - Brendan/May rematches? (Route 103?)
@@ -162,7 +159,7 @@ upcoming
     - Nature Power details on summary screen (power/accuracy would be for in-battle status screen only)
         - All moves are special so change category to special (if nothing changes)?
         - This should wait for the battle terrain refactor
-    - Revert some Nature Power moves for a more varied effect (waiting on refactor PR)
+    - Revert some Nature Power moves for a more varied effect
 - Just make new tutors in towns or Battle Frontier
 - Update local Porymoves for automatic movepool updates (similar to Hail/Snowscape)
     - Any Pokémon that learns Drill Peck should learn Drill Run

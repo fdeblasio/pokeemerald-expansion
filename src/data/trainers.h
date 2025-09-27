@@ -2697,6 +2697,23 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     TRAINER_CLASS_PIC(DRAGON_TAMER), \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE
 
+//FRLG
+#define ROCKER_INFO            \
+    TRAINER_CLASS_PIC(ROCKER), \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE
+
+#define COOL_COUPLE_INFO            \
+    TRAINER_CLASS_PIC(COOL_COUPLE), \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL
+
+#define BIKER_INFO            \
+    TRAINER_CLASS_PIC(BIKER), \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE
+
+#define BURGLAR_INFO            \
+    TRAINER_CLASS_PIC(BURGLAR), \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
+
 //Team Magma
 #define MAGMA_GRUNT_M_INFO                                  \
     .trainerClass = TRAINER_CLASS_TEAM_MAGMA,               \

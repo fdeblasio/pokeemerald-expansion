@@ -170,7 +170,7 @@
           "fishing_mons": {
             "mons": [
               {
-                "range": "ROUTE_109_SLATEPORT_OLD_ROD",
+                "range": "SLATEPORT_OLD_ROD",
                 "species": "MAGIKARP"
               },
               {
@@ -586,43 +586,43 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "range": "ROUTE_102_104",
+                "range": "ROUTE_102",
                 "species": "SEEDOT"
               },
               {
-                "range": "ROUTE_102_104",
+                "range": "ROUTE_102",
                 "species": "LOTAD"
               },
               {
-                "range": "ROUTE_102_104",
+                "range": "ROUTE_102",
                 "species": "SEEDOT"
               },
               {
-                "range": "ROUTE_102_104",
+                "range": "ROUTE_102",
                 "species": "LOTAD"
               },
               {
-                "range": "ROUTE_102_104",
+                "range": "ROUTE_102",
                 "species": "WALLY_STARTER"
               },
               {
-                "range": "ROUTE_102_104",
+                "range": "ROUTE_102",
                 "species": "WALLY_STARTER"
               },
               {
-                "range": "ROUTE_102_104",
+                "range": "ROUTE_102",
                 "species": "WALLY_STARTER"
               },
               {
-                "range": "ROUTE_102_104",
+                "range": "ROUTE_102",
                 "species": "WALLY_STARTER"
               },
               {
-                "range": "ROUTE_102_104",
+                "range": "ROUTE_102",
                 "species": "SURSKIT"
               },
               {
-                "range": "ROUTE_102_104",
+                "range": "ROUTE_102",
                 "species": "SURSKIT"
               }
             ]
@@ -790,43 +790,43 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "range": "ROUTE_102_104",
+                "range": "ROUTE_104",
                 "species": "EARLY_BIRD_1"
               },
               {
-                "range": "ROUTE_102_104",
+                "range": "ROUTE_104",
                 "species": "EARLY_BIRD_2"
               },
               {
-                "range": "ROUTE_102_104",
+                "range": "ROUTE_104",
                 "species": "AZURILL"
               },
               {
-                "range": "ROUTE_102_104",
+                "range": "ROUTE_104",
                 "species": "EARLY_BUG_1"
               },
               {
-                "range": "ROUTE_102_104",
+                "range": "ROUTE_104",
                 "species": "EARLY_BIRD_1"
               },
               {
-                "range": "ROUTE_102_104",
+                "range": "ROUTE_104",
                 "species": "AZURILL"
               },
               {
-                "range": "ROUTE_102_104",
+                "range": "ROUTE_104",
                 "species": "EARLY_BIRD_2"
               },
               {
-                "range": "ROUTE_102_104",
+                "range": "ROUTE_104",
                 "species": "EARLY_BIRD_1"
               },
               {
-                "range": "ROUTE_102_104",
+                "range": "ROUTE_104",
                 "species": "EARLY_BIRD_1"
               },
               {
-                "range": "ROUTE_102_104",
+                "range": "ROUTE_104",
                 "species": "EARLY_BIRD_1"
               }
             ]
@@ -1140,7 +1140,7 @@
           "fishing_mons": {
             "mons": [
               {
-                "range": "ROUTE_109_SLATEPORT_OLD_ROD",
+                "range": "ROUTE_109_OLD_ROD",
                 "species": "MAGIKARP"
               },
               {
@@ -1227,7 +1227,7 @@
               },
               {
                 "range": "SURF_INITIAL",
-                "species": "WATTREL"
+                "species": "CHINCHOU"
               },
               {
                 "range": "SURF_INITIAL",
@@ -1610,15 +1610,15 @@
               },
               {
                 "range": "SURF_INITIAL",
-                "species": "SWELLOW"
+                "species": "EARLY_BIRD_2 + 1"
               },
               {
                 "range": "SURF_INITIAL",
-                "species": "SWELLOW"
+                "species": "EARLY_BIRD_2 + 1"
               },
               {
                 "range": "SURF_INITIAL",
-                "species": "SWELLOW"
+                "species": "EARLY_BIRD_2 + 1"
               }
             ]
           },
@@ -1835,7 +1835,7 @@
             "mons": [
               {
                 "range": "SURF_INITIAL",
-                "species": "LINOONE"
+                "species": "EARLY_BEAST_1 + 1"
               },
               {
                 "range": "SURF_INITIAL",
@@ -1843,7 +1843,7 @@
               },
               {
                 "range": "SURF_INITIAL",
-                "species": "LINOONE"
+                "species": "EARLY_BEAST_1 + 1"
               },
               {
                 "range": "SURF_INITIAL",
@@ -1851,15 +1851,15 @@
               },
               {
                 "range": "SURF_INITIAL",
-                "species": "WATTREL"
+                "species": "PELIPPER"
               },
               {
                 "range": "SURF_INITIAL",
-                "species": "WINGULL"
+                "species": "PELIPPER"
               },
               {
                 "range": "SURF_INITIAL",
-                "species": "LINOONE"
+                "species": "EARLY_BEAST_1 + 1"
               },
               {
                 "range": "SURF_INITIAL",
@@ -1867,11 +1867,11 @@
               },
               {
                 "range": "SURF_INITIAL",
-                "species": "WINGULL"
+                "species": "PELIPPER"
               },
               {
                 "range": "SURF_INITIAL",
-                "species": "WINGULL"
+                "species": "PELIPPER"
               }
             ]
           },
@@ -1884,7 +1884,7 @@
               },
               {
                 "range": "SURF_INITIAL",
-                "species": "KILOWATTREL"
+                "species": "PELIPPER"
               },
               {
                 "range": "SURF_INITIAL",
@@ -1953,27 +1953,27 @@
               },
               {
                 "range": "ROUTE_119",
-                "species": "LINOONE"
+                "species": "EARLY_BEAST_1 + 1"
               },
               {
                 "range": "ROUTE_119",
-                "species": "LINOONE"
+                "species": "EARLY_BEAST_1 + 1"
               },
               {
                 "range": "ROUTE_119",
-                "species": "LINOONE"
+                "species": "EARLY_BEAST_1 + 1"
               },
               {
                 "range": "ROUTE_119",
-                "species": "LINOONE"
+                "species": "EARLY_BEAST_1 + 1"
               },
               {
                 "range": "ROUTE_119",
-                "species": "LINOONE"
+                "species": "EARLY_BEAST_1 + 1"
               },
               {
                 "range": "ROUTE_119",
-                "species": "LINOONE"
+                "species": "EARLY_BEAST_1 + 1"
               }
             ]
           },
@@ -2047,11 +2047,11 @@
               },
               {
                 "range": "ROUTE_120",
-                "species": "MIGHTYENA"
+                "species": "EARLY_BEAST_2 + 1"
               },
               {
                 "range": "ROUTE_120",
-                "species": "LINOONE"
+                "species": "EARLY_BEAST_1 + 1"
               },
               {
                 "range": "ROUTE_120",
@@ -2071,11 +2071,11 @@
               },
               {
                 "range": "ROUTE_120",
-                "species": "MIGHTYENA"
+                "species": "EARLY_BEAST_2 + 1"
               },
               {
                 "range": "ROUTE_120",
-                "species": "LINOONE"
+                "species": "EARLY_BEAST_1 + 1"
               }
             ]
           },
@@ -2157,7 +2157,7 @@
               },
               {
                 "range": "ROUTE_121",
-                "species": "MIGHTYENA"
+                "species": "EARLY_BEAST_2 + 1"
               },
               {
                 "range": "ROUTE_121",
@@ -2304,15 +2304,15 @@
               },
               {
                 "range": "ROUTE_123",
-                "species": "MIGHTYENA"
+                "species": "EARLY_BEAST_2 + 1"
               },
               {
                 "range": "ROUTE_123",
-                "species": "LINOONE"
+                "species": "EARLY_BEAST_1 + 1"
               },
               {
                 "range": "ROUTE_123",
-                "species": "LINOONE"
+                "species": "EARLY_BEAST_1 + 1"
               },
               {
                 "range": "ROUTE_123",
@@ -3723,43 +3723,43 @@
             "mons": [
               {
                 "range": "METEOR_FALLS_WATERFALL",
-                "species": "BAGON"
+                "species": "PSEUDO_LEGENDARY_1"
               },
               {
                 "range": "METEOR_FALLS_WATERFALL",
-                "species": "BELDUM"
+                "species": "PSEUDO_LEGENDARY_2"
               },
               {
                 "range": "METEOR_FALLS_WATERFALL",
-                "species": "BAGON"
+                "species": "PSEUDO_LEGENDARY_1"
               },
               {
                 "range": "METEOR_FALLS_WATERFALL",
-                "species": "BELDUM"
+                "species": "PSEUDO_LEGENDARY_2"
               },
               {
                 "range": "METEOR_FALLS_WATERFALL",
-                "species": "BAGON"
+                "species": "PSEUDO_LEGENDARY_1"
               },
               {
                 "range": "METEOR_FALLS_WATERFALL",
-                "species": "BELDUM"
+                "species": "PSEUDO_LEGENDARY_2"
               },
               {
                 "range": "METEOR_FALLS_WATERFALL",
-                "species": "BAGON"
+                "species": "PSEUDO_LEGENDARY_1"
               },
               {
                 "range": "METEOR_FALLS_WATERFALL",
-                "species": "BELDUM"
+                "species": "PSEUDO_LEGENDARY_2"
               },
               {
                 "range": "METEOR_FALLS_WATERFALL",
-                "species": "BAGON"
+                "species": "PSEUDO_LEGENDARY_1"
               },
               {
                 "range": "METEOR_FALLS_WATERFALL",
-                "species": "BELDUM"
+                "species": "PSEUDO_LEGENDARY_2"
               }
             ]
           },
@@ -3825,43 +3825,43 @@
             "mons": [
               {
                 "range": "POSTGAME",
-                "species": "METANG"
+                "species": "PSEUDO_LEGENDARY_2 + 1"
               },
               {
                 "range": "POSTGAME",
-                "species": "SHELGON"
+                "species": "PSEUDO_LEGENDARY_1 + 1"
               },
               {
                 "range": "POSTGAME",
-                "species": "METANG"
+                "species": "PSEUDO_LEGENDARY_2 + 1"
               },
               {
                 "range": "POSTGAME",
-                "species": "SHELGON"
+                "species": "PSEUDO_LEGENDARY_1 + 1"
               },
               {
                 "range": "POSTGAME",
-                "species": "METANG"
+                "species": "PSEUDO_LEGENDARY_2 + 1"
               },
               {
                 "range": "POSTGAME",
-                "species": "SHELGON"
+                "species": "PSEUDO_LEGENDARY_1 + 1"
               },
               {
                 "range": "POSTGAME",
-                "species": "METANG"
+                "species": "PSEUDO_LEGENDARY_2 + 1"
               },
               {
                 "range": "POSTGAME",
-                "species": "SHELGON"
+                "species": "PSEUDO_LEGENDARY_1 + 1"
               },
               {
                 "range": "POSTGAME",
-                "species": "METANG"
+                "species": "PSEUDO_LEGENDARY_2 + 1"
               },
               {
                 "range": "POSTGAME",
-                "species": "SHELGON"
+                "species": "PSEUDO_LEGENDARY_1 + 1"
               }
             ]
           }

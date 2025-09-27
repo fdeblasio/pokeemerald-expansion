@@ -3538,6 +3538,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .species = SPECIES_DUSTOX, \
     .gender = TRAINER_MON_MALE
 
+#define JAMES_SURSKIT(Level)                                                     \
+    .lvl = Level,                                                                \
+    .species = Level < REMATCH_5_LEVEL_6 ? SPECIES_SURSKIT : SPECIES_MASQUERAIN, \
+    .gender = TRAINER_MON_FEMALE
+
 [DIFFICULTY_NORMAL][TRAINER_JAMES_1] =
 {
     JAMES_INFO,
@@ -3591,10 +3596,8 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_4_LEVEL_4,
-        .species = SPECIES_SURSKIT,
+        JAMES_SURSKIT(REMATCH_4_LEVEL_4),
         IVS(4),
-        .gender = TRAINER_MON_FEMALE,
         },
         {
         JAMES_DUSTOX(REMATCH_4_LEVEL_4),
@@ -3617,10 +3620,8 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = REMATCH_5_LEVEL_5,
-        .species = SPECIES_MASQUERAIN,
+        JAMES_SURSKIT(REMATCH_5_LEVEL_5),
         IVS(5),
-        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = REMATCH_5_LEVEL_5,
@@ -3629,15 +3630,15 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         .gender = TRAINER_MON_FEMALE,
         },
         {
-        JAMES_DUSTOX(REMATCH_5_LEVEL_4),
+        JAMES_DUSTOX(REMATCH_5_LEVEL_5),
         IVS(5),
         },
         {
-        JAMES_SHEDINJA(REMATCH_5_LEVEL_4),
+        JAMES_SHEDINJA(REMATCH_5_LEVEL_5),
         IVS(5),
         },
         {
-        JAMES_NINCADA(REMATCH_5_LEVEL_4),
+        JAMES_NINCADA(REMATCH_5_LEVEL_5),
         IVS(5),
         }
     },
@@ -3866,7 +3867,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         },
         {
         .lvl = 6,
-        .species = SPECIES_MUDKIP,
+        .species = WATER_STARTER,
         }
     },
 },

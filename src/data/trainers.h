@@ -5050,6 +5050,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define JAMES_SPINARAK
 #define JAMES_LEDYBA
 
+#define JAMES_SURSKIT(Level)                                                     \
+    .lvl = Level,                                                                \
+    .species = Level < REMATCH_5_LEVEL_6 ? SPECIES_SURSKIT : SPECIES_MASQUERAIN, \
+    .gender = TRAINER_MON_FEMALE
+
 [DIFFICULTY_NORMAL][TRAINER_JAMES_1] =
 {
     JAMES_INFO,

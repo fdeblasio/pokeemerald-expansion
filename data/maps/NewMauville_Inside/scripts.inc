@@ -22,6 +22,7 @@ NewMauville_Inside_OnTransition:
 	call_if_unset FLAG_DEFEATED_VOLTORB_1_NEW_MAUVILLE, NewMauville_Inside_EventScript_ShowVoltorb1
 	call_if_unset FLAG_DEFEATED_VOLTORB_2_NEW_MAUVILLE, NewMauville_Inside_EventScript_ShowVoltorb2
 	call_if_unset FLAG_DEFEATED_VOLTORB_3_NEW_MAUVILLE, NewMauville_Inside_EventScript_ShowVoltorb3
+	call_if_unset FLAG_DEFEATED_REGIELEKI, NewMauville_Inside_EventScript_ShowRegieleki
 	end
 
 NewMauville_Inside_EventScript_ShowVoltorb1::
@@ -34,6 +35,10 @@ NewMauville_Inside_EventScript_ShowVoltorb2::
 
 NewMauville_Inside_EventScript_ShowVoltorb3::
 	clearflag FLAG_HIDE_NEW_MAUVILLE_VOLTORB_3
+	return
+
+NewMauville_Inside_EventScript_ShowRegieleki::
+	clearflag FLAG_HIDE_REGIELEKI
 	return
 
 NewMauville_Inside_OnLoad:
@@ -243,6 +248,36 @@ NewMauville_Inside_EventScript_Voltorb3::
 NewMauville_Inside_EventScript_DefeatedVoltorb3::
 	setflag FLAG_DEFEATED_VOLTORB_3_NEW_MAUVILLE
 	goto Common_EventScript_RemoveStaticPokemon
+	end
+
+NewMauville_Inside_EventScript_Regieleki::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_NEW_MAUVILLE_2, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_NEW_MAUVILLE_2, TRIO_LEVEL
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartLegendaryBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, NewMauville_Inside_EventScript_DefeatedRegieleki
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, NewMauville_Inside_EventScript_RanFromRegieleki
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, NewMauville_Inside_EventScript_RanFromRegieleki
+	setflag FLAG_DEFEATED_REGIELEKI
+	release
+	end
+
+NewMauville_Inside_EventScript_DefeatedRegieleki::
+	setflag FLAG_DEFEATED_REGIELEKI
+	goto Common_EventScript_RemoveStaticPokemon
+	end
+
+NewMauville_Inside_EventScript_RanFromRegieleki::
+	setvar VAR_0x8004, SPECIES_NEW_MAUVILLE_2
+	goto Common_EventScript_LegendaryFlewAway
 	end
 
 NewMauville_Inside_Text_GeneratorRadiatingHeat:

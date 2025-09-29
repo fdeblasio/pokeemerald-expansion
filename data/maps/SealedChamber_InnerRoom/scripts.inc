@@ -26,6 +26,8 @@ SealedChamber_InnerRoom_EventScript_BrailleBackWall::
 	closemessage
 	fadeinbgm 0
 	setflag FLAG_REGI_DOORS_OPENED
+	clearflag FLAG_HIDE_REGIELEKI
+	clearflag FLAG_HIDE_REGIDRAGO
 	releaseall
 	end
 

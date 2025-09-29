@@ -1,11 +1,27 @@
 MeteorFalls_1F_1R_MapScripts::
+	map_script MAP_SCRIPT_ON_RESUME, MeteorFalls_1F_1R_OnResume
 	map_script MAP_SCRIPT_ON_LOAD, MeteorFalls_1F_1R_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, MeteorFalls_1F_1R_OnTransition
 	.byte 0
 
+MeteorFalls_1F_1R_OnResume:
+	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, MeteorFalls_1F_1R_EventScript_TryRemoveRegidrago
+	end
+
+MeteorFalls_1F_1R_EventScript_TryRemoveRegidrago::
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn
+	removeobject VAR_LAST_TALKED
+	return
+
 MeteorFalls_1F_1R_OnTransition:
 	setflag FLAG_LANDMARK_METEOR_FALLS
+	call_if_unset FLAG_DEFEATED_REGIDRAGO, MeteorFalls_1F_1R_EventScript_ShowRegidrago
 	end
+
+MeteorFalls_1F_1R_EventScript_ShowRegidrago::
+	clearflag FLAG_HIDE_REGIDRAGO
+	return
 
 MeteorFalls_1F_1R_OnLoad:
 	call_if_set FLAG_SYS_GAME_CLEAR, MeteorFalls_1F_1R_EventScript_OpenStevensCave
@@ -235,6 +251,36 @@ MeteorFalls_1F_1R_EventScript_ProfCozmo::
 MeteorFalls_1F_1R_EventScript_MetCozmo::
 	msgbox MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney, MSGBOX_DEFAULT
 	release
+	end
+
+MeteorFalls_1F_1R_EventScript_Regidrago::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_METEOR_FALLS, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_METEOR_FALLS, TRIO_LEVEL
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartLegendaryBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, MeteorFalls_1F_1R_EventScript_DefeatedRegidrago
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, MeteorFalls_1F_1R_EventScript_RanFromRegidrago
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, MeteorFalls_1F_1R_EventScript_RanFromRegidrago
+	setflag FLAG_DEFEATED_REGIDRAGO
+	release
+	end
+
+MeteorFalls_1F_1R_EventScript_DefeatedRegidrago::
+	setflag FLAG_DEFEATED_REGIDRAGO
+	goto Common_EventScript_RemoveStaticPokemon
+	end
+
+MeteorFalls_1F_1R_EventScript_RanFromRegidrago::
+	setvar VAR_0x8004, SPECIES_METEOR_FALLS
+	goto Common_EventScript_LegendaryFlewAway
 	end
 
 MeteorFalls_1F_1R_Text_WithThisMeteorite:

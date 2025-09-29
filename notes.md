@@ -269,6 +269,7 @@ upcoming
     - Change Kirlia and Dusclops to fit the type of move used?
 
 ### Other
+- Add Regigigas to Sealed Chamber?
 - Decap easy chat species/moves/multi-word choices?
 - Have Gabby and Ty's TV show use nicknames?
 - Update palettes?:
@@ -292,11 +293,6 @@ upcoming
         - Wally in Victory Road after he's beaten there (this one might just be a flag issue on the current save)
 - Edit contests?
 - Update Favor Lady's items to include new items
-- Add 3 other Regis?
-    - Add Regigigas to Sealed Chamber?
-    - Regieleki near New Mauville?
-    - Regidrago near Meteor Falls?
-    - Edit Pacifidlog house text
 - Diversify water routes instead of just Tentacool/Wingull (definitely add more Carvanha, especially around Team Aqua-related areas; bring some fishing encounters to Surf)
 - Add postgame Pokémon to Hoenn Pokédex? National Pokédex is useless due to no connectivity with other games
     - Johto starters need Hoenn Pokédex completed to get, but could have them act similarly to Jirachi/Deoxys

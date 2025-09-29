@@ -2362,7 +2362,6 @@ static const u16 sLaprasEggMoveLearnset[] = {
     MOVE_BLOCK,
     MOVE_BULLDOZE,
     MOVE_CHARM,
-    MOVE_CHILLING_WATER,
     MOVE_CONFIDE,
     MOVE_CURSE,
     MOVE_DISARMING_VOICE,

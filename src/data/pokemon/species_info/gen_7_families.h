@@ -2688,12 +2688,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_DEWPIDER
     [SPECIES_DEWPIDER] =
     {
-        .baseHP        = 38,
+        .baseHP        = 40,
         .baseAttack    = 40,
-        .baseDefense   = 52,
-        .baseSpeed     = 27,
+        .baseDefense   = 55,
+        .baseSpeed     = 30,
         .baseSpAttack  = 40,
-        .baseSpDefense = 72,
+        .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_WATER, TYPE_BUG),
         .catchRate = 200,
         .expYield = 54,
@@ -2762,12 +2762,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
     [SPECIES_ARAQUANID] =
     {
-        .baseHP        = 68,
-        .baseAttack    = 70,
-        .baseDefense   = 92,
-        .baseSpeed     = 42,
+        .baseHP        = 70,
+        .baseAttack    = 80,
+        .baseDefense   = 95,
+        .baseSpeed     = 45,
         .baseSpAttack  = 50,
-        .baseSpDefense = 132,
+        .baseSpDefense = 135,
         .types = MON_TYPES(TYPE_WATER, TYPE_BUG),
         .catchRate = 100,
         .expYield = 159,
@@ -2823,12 +2823,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
     [SPECIES_ARAQUANID_TOTEM] =
     {
-        .baseHP        = 68,
-        .baseAttack    = 70,
-        .baseDefense   = 92,
-        .baseSpeed     = 42,
+        .baseHP        = 70,
+        .baseAttack    = 80,
+        .baseDefense   = 95,
+        .baseSpeed     = 45,
         .baseSpAttack  = 50,
-        .baseSpDefense = 132,
+        .baseSpDefense = 135,
         .types = MON_TYPES(TYPE_WATER, TYPE_BUG),
         .catchRate = 100,
         .expYield = 159,
@@ -3555,7 +3555,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     [SPECIES_BOUNSWEET] =
     {
         .baseHP        = 42,
-        .baseAttack    = 30,
+        .baseAttack    = 40,
         .baseDefense   = 38,
         .baseSpeed     = 32,
         .baseSpAttack  = 30,
@@ -3622,7 +3622,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     [SPECIES_STEENEE] =
     {
         .baseHP        = 52,
-        .baseAttack    = 40,
+        .baseAttack    = 50,
         .baseDefense   = 48,
         .baseSpeed     = 62,
         .baseSpAttack  = 40,

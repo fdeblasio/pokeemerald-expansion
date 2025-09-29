@@ -2254,11 +2254,19 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Shieldon/Bastiodon:
     - Received Rock Head as a second ability
 
+- Combee:
+    - SpA: 30->40
+    - Learns Air Slash by level up
+
 - Vespiquen:
+    - Atk: 80->90
+    - Def: 102->105
+    - SpD: 102->105
     - Held items:
         - Honey: 0%->50%
         - Max Honey: 0%->5%
         - Poison Barb: 5%->0%
+    - Learns Wing Attack, Aerial Ace, Dual Wingbeat, and Acrobatics by level up
 
 - Pachirisu:
     - SpA: 45->55
@@ -2514,6 +2522,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Maractus:
     - Learns Energy Ball by level up
 
+- Dwebble/Crustle:
+    - Learn Rock Throw and Rock Tomb by level up
+
 - Scraggy:
     - Evolution: 39->35
     - Learns Dragon Breath by Egg Move
@@ -2581,11 +2592,11 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Venoshock by level up
 
 - Amoonguss:
-    - Learns Venoshock by level up
     - Held items:
         - Tiny Mushroom: 50%->0%
         - Big Mushroom: 5%->50%
         - Balm Mushroom: 0%->5%
+    - Learns Venoshock by level up
 
 - Joltik:
     - SpA: 57->60
@@ -3183,7 +3194,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Received Sturdy as a second ability
 
 - Duraludon/Archaludon:
-    - Learn Dragon Breath by Egg Move
+    - Learn Twister, Dragon Breath, Mirror Shot, Smart Strike, Dragon Pulse, and Steel Beam by level up
 
 - Dreepy:
     - Evolution: 50->30

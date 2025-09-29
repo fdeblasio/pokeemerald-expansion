@@ -42,7 +42,7 @@ upcoming
     - Could reduce space between land's two rows so fishing can have two rows
     - Exclude Magikarp?
     - Row per rod?
-    - X's not symmetrical
+    - Skip over blank spots
     - Add silhouettes
         - Find way to not mess up PC palette (quitting after moving a mon)
 
@@ -99,6 +99,9 @@ upcoming
 - Once more changes are made, consolidate commits on develop branch again
 
 ### Pokémon
+- Double check that all Gen3 Pokemon have updated movesets. Next do Gen1-2
+- Turn some Normal/Flying types into either pure Flying or Flying/Normal?
+- Add in GMax forms as Megas with +20 to every non-HP stat?
 - Use Cable Car defines in wild_encounters
 - Eventually remove RSE and/or BDSP teachable moves?
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?
@@ -151,6 +154,7 @@ upcoming
 
 ### Moves
 - Tailwind tutor?
+- Add regular moves with GMax effects?
 - Find way for Rotom to learn special moves by level up (for relearning). Currently have TMs, but not all moves (Hydro Pump/Leaf Storm) are TMs
     - This gets solved if the TM list is expanded to have Scarlet and Violet's
 - Find a way for newer gen TMs to be learned by Pokémon whose base forms don't learn the move (for example Eelektross or Toxtricity; or Capsakid not learning the Fire-type moves that Scovillain does)
@@ -269,9 +273,6 @@ upcoming
     - Change Kirlia and Dusclops to fit the type of move used?
 
 ### Other
-- Double check that all Gen3 Pokemon have updated movesets. Next do Gen1-2
-- Add in GMax forms as Megas with +20 to every non-HP stat?
-- Add regular moves with GMax effects?
 - Decap easy chat species/moves/multi-word choices?
 - Have Gabby and Ty's TV show use nicknames?
 - Update palettes?:

@@ -2612,7 +2612,36 @@
     "TutorMoves": []
   },
   "LAPRAS": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_POWDER_SNOW"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_CHILLING_WATER"
+      },
+      {
+        "Level": 30,
+        "Move": "MOVE_ICY_WIND"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_AURORA_BEAM"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_WATERFALL"
+      },
+      {
+        "Level": 45,
+        "Move": "MOVE_SURF"
+      },
+      {
+        "Level": 50,
+        "Move": "MOVE_LIQUIDATION"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -11297,14 +11326,24 @@
     "TutorMoves": []
   },
   "DEWPIDER": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 24,
+        "Move": "MOVE_WATERFALL"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "ARAQUANID": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 26,
+        "Move": "MOVE_WATERFALL"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -11369,21 +11408,60 @@
     "TutorMoves": []
   },
   "BOUNSWEET": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_LEAFAGE"
+      },
+      {
+        "Level": 28,
+        "Move": "MOVE_LEAF_TORNADO"
+      },
+      {
+        "Level": 32,
+        "Move": "MOVE_SEED_BOMB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "STEENEE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_LEAFAGE"
+      },
+      {
+        "Level": 34,
+        "Move": "MOVE_LEAF_TORNADO"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_SEED_BOMB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "TSAREENA": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_LEAFAGE"
+      },
+      {
+        "Level": 34,
+        "Move": "MOVE_LEAF_TORNADO"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_SEED_BOMB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -12597,14 +12675,32 @@
     "TutorMoves": []
   },
   "MILCERY": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_FAIRY_WIND"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_DISARMING_VOICE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "ALCREMIE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_FAIRY_WIND"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_DISARMING_VOICE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -13204,14 +13300,24 @@
     "TutorMoves": []
   },
   "NACLI": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 16,
+        "Move": "MOVE_ROCK_TOMB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "NACLSTACK": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 16,
+        "Move": "MOVE_ROCK_TOMB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

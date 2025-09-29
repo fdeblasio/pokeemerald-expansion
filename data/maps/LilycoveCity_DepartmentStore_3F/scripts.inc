@@ -131,6 +131,7 @@ LilycoveCity_DepartmentStore_3F_Pokemart_EvoUnused:
 	.2byte ITEM_PEAT_BLOCK		@ Battle Frontier
 	.2byte ITEM_AUSPICIOUS_ARMOR
 	.2byte ITEM_MALICIOUS_ARMOR
+	.2byte ITEM_METAL_ALLOY
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_3F_EventScript_ClerkRight::

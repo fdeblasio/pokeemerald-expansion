@@ -11266,7 +11266,6 @@ static const u16 sCufantEggMoveLearnset[] = {
 #if P_FAMILY_DURALUDON
 static const u16 sDuraludonEggMoveLearnset[] = {
     MOVE_DRACO_METEOR,
-    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_FOUL_PLAY,
     MOVE_GYRO_BALL,
@@ -11279,7 +11278,6 @@ static const u16 sDuraludonEggMoveLearnset[] = {
     MOVE_SLASH,
     MOVE_SNARL,
     MOVE_SNORE,
-    MOVE_STEEL_BEAM,
     MOVE_STEEL_ROLLER,
     MOVE_STOMPING_TANTRUM,
     MOVE_TAKE_DOWN,

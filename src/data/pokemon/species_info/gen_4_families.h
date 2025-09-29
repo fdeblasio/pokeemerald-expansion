@@ -2286,7 +2286,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .baseAttack    = 30,
         .baseDefense   = 42,
         .baseSpeed     = 70,
-        .baseSpAttack  = 30,
+        .baseSpAttack  = 40,
         .baseSpDefense = 42,
         .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),
         .catchRate = 120,
@@ -2369,11 +2369,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     [SPECIES_VESPIQUEN] =
     {
         .baseHP        = 70,
-        .baseAttack    = 80,
-        .baseDefense   = 102,
+        .baseAttack    = 90,
+        .baseDefense   = 105,
         .baseSpeed     = 40,
         .baseSpAttack  = 80,
-        .baseSpDefense = 102,
+        .baseSpDefense = 105,
         .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 166 : 188,

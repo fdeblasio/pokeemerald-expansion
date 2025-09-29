@@ -6844,14 +6844,36 @@
     "TutorMoves": []
   },
   "COMBEE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 28,
+        "Move": "MOVE_AIR_SLASH"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "VESPIQUEN": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 12,
+        "Move": "MOVE_WING_ATTACK"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_AERIAL_ACE"
+      },
+      {
+        "Level": 36,
+        "Move": "MOVE_DUAL_WINGBEAT"
+      },
+      {
+        "Level": 44,
+        "Move": "MOVE_ACROBATICS"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -8538,14 +8560,32 @@
     "TutorMoves": []
   },
   "DWEBBLE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ROCK_THROW"
+      },
+      {
+        "Level": 16,
+        "Move": "MOVE_ROCK_TOMB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "CRUSTLE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ROCK_THROW"
+      },
+      {
+        "Level": 16,
+        "Move": "MOVE_ROCK_TOMB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -12698,16 +12738,64 @@
     "TutorMoves": []
   },
   "DURALUDON": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_TWISTER"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_DRAGON_BREATH"
+      },
+      {
+        "Level": 30,
+        "Move": "MOVE_MIRROR_SHOT"
+      },
+      {
+        "Level": 42,
+        "Move": "MOVE_SMART_STRIKE"
+      },
+      {
+        "Level": 48,
+        "Move": "MOVE_DRAGON_PULSE"
+      },
+      {
+        "Level": 66,
+        "Move": "MOVE_STEEL_BEAM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
-    "EggMoves": [
-      "MOVE_DRAGON_BREATH"
-    ],
+    "EggMoves": [],
     "TutorMoves": []
   },
   "ARCHALUDON": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_TWISTER"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_DRAGON_BREATH"
+      },
+      {
+        "Level": 30,
+        "Move": "MOVE_MIRROR_SHOT"
+      },
+      {
+        "Level": 42,
+        "Move": "MOVE_SMART_STRIKE"
+      },
+      {
+        "Level": 48,
+        "Move": "MOVE_DRAGON_PULSE"
+      },
+      {
+        "Level": 66,
+        "Move": "MOVE_STEEL_BEAM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

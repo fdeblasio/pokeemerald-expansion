@@ -22890,6 +22890,7 @@ static const u16 sMothimTeachableLearnset[] = {
 
 #if P_FAMILY_COMBEE
 static const u16 sCombeeTeachableLearnset[] = {
+    MOVE_AIR_SLASH,
     MOVE_BUG_BUZZ,
     MOVE_DUAL_WINGBEAT,
     MOVE_LUNGE,

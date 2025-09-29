@@ -269,6 +269,9 @@ upcoming
     - Change Kirlia and Dusclops to fit the type of move used?
 
 ### Other
+- Double check that all Gen3 Pokemon have updated movesets. Next do Gen1-2
+- Add in GMax forms as Megas with +20 to every non-HP stat?
+- Add regular moves with GMax effects?
 - Decap easy chat species/moves/multi-word choices?
 - Have Gabby and Ty's TV show use nicknames?
 - Update palettes?:

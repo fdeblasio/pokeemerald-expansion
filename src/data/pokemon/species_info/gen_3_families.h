@@ -3109,10 +3109,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     {
         .baseHP        = 40,
         .baseAttack    = 30,
-        .baseDefense   = 32,
-        .baseSpeed     = 65,
+        .baseDefense   = 35,
+        .baseSpeed     = 70,
         .baseSpAttack  = 50,
-        .baseSpDefense = 52,
+        .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_BUG, TYPE_WATER),
         .catchRate = 200,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 54 : 63,
@@ -3180,11 +3180,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_MASQUERAIN] =
     {
         .baseHP        = 70,
-        .baseAttack    = 60,
-        .baseDefense   = 62,
-        .baseSpeed     = P_UPDATED_STATS >= GEN_7 ? 80 : 60,
+        .baseAttack    = 70,
+        .baseDefense   = 65,
+        .baseSpeed     = P_UPDATED_STATS >= GEN_7 ? 85 : 60,
         .baseSpAttack  = P_UPDATED_STATS >= GEN_7 ? 100 : 80,
-        .baseSpDefense = 82,
+        .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),
         .catchRate = 75,
     #if P_UPDATED_EXP_YIELDS >= GEN_7

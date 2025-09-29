@@ -1500,7 +1500,7 @@ gText_Sudowoodo_Attacked::
 	.string "The weird tree attacked!$"
 
 gText_LegendaryFlewAway::
-	.string "The {STR_VAR_1} flew away!$"
+	.string "The {STR_VAR_1} ran away!$"
 
 gText_WantWhichFloor::
 	.string "Which floor do you want?$"

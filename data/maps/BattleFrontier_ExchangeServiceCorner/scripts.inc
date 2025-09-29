@@ -281,24 +281,27 @@ BattleFrontier_ExchangeServiceCorner_EventScript_EvolutionMega::
 
 	.align 2
 BattleFrontier_Mart_EvolutionMega:
-	.2byte ITEM_ICE_STONE       @ Postgame: Sandshrew-A, Vulpix-A; Unused: Mime Jr., Eevee, Darumaka-G, Bergmite, Crabrawler, Cetoddle
-	.2byte ITEM_KINGS_ROCK      @ Postgame: Poliwhirl, Slowpoke
-	.2byte ITEM_ELECTIRIZER     @ Postgame: Electabuzz
-	.2byte ITEM_MAGMARIZER      @ Postgame: Magmar
-	.2byte ITEM_OVAL_STONE      @ Postgame: Happiny
-	.2byte ITEM_RAZOR_FANG      @ Postgame: Gligar
-	.2byte ITEM_RAZOR_CLAW      @ Postgame: Snesasel, Sneasel-H
-	.2byte ITEM_GALARICA_CUFF   @ Postgame: Slowpoke-G
-	.2byte ITEM_GALARICA_WREATH @ Postgame: Slowpoke-G
-	.2byte ITEM_PEAT_BLOCK      @ Postgame: Ursaring
-	.2byte ITEM_AERODACTYLITE   @ 0142
-	.2byte ITEM_MEGANIUMITE     @ 0154
-	.2byte ITEM_FERALIGITE      @ 0160
-	.2byte ITEM_AMPHAROSITE     @ 0181
-	.2byte ITEM_LATIASITE       @ 0380
-	.2byte ITEM_LATIOSITE       @ 0381
-	.2byte ITEM_EXCADRITE       @ 0530
-	.2byte ITEM_DRAGALGITE      @ 0691
+	.2byte ITEM_ELECTIRIZER      @ National: Electabuzz
+	.2byte ITEM_MAGMARIZER       @ National: Magmar
+	.2byte ITEM_RAZOR_CLAW       @ National: Snesasel, Sneasel-H
+	.2byte ITEM_PEAT_BLOCK       @ National: Ursaring
+	.2byte ITEM_GALARICA_CUFF    @ National: Slowpoke-G
+	.2byte ITEM_GALARICA_WREATH  @ National: Slowpoke-G
+	.2byte ITEM_VENUSAURITE      @ 0003
+	.2byte ITEM_CHARIZARDITE_X   @ 0006
+	.2byte ITEM_CHARIZARDITE_Y   @ 0006
+	.2byte ITEM_BLASTOISINITE    @ 0009
+	.2byte ITEM_AERODACTYLITE    @ 0142
+	.2byte ITEM_MEWTWONITE_X     @ 0150
+	.2byte ITEM_MEWTWONITE_Y     @ 0150
+	.2byte ITEM_AMPHAROSITE      @ 0181
+	.2byte ITEM_SCEPTILITE       @ 0254
+	.2byte ITEM_BLAZIKENITE      @ 0257
+	.2byte ITEM_SWAMPERTITE      @ 0260
+	.2byte ITEM_GLALITITE        @ 0362 Battle Frontier
+	.2byte ITEM_SALAMENCITE      @ 0373 Battle Frontier
+	.2byte ITEM_LATIASITE        @ 0380
+	.2byte ITEM_LATIOSITE        @ 0381
 	.2byte ITEM_RARE_CANDY
 	.2byte ITEM_EXP_CANDY_L
 	.2byte ITEM_EXP_CANDY_XL

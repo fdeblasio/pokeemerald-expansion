@@ -2484,7 +2484,7 @@
 - Swirlix/Slurpuff:
     - Learn Lick, Disarming Voice, and Dazzling Gleam by level up
 
-- Skrelp:
+- Skrelp (postgame):
     - Evolution: 48->37
     - Learns Sludge and Surf by level up
     - Learns Dragon Breath by Egg Move

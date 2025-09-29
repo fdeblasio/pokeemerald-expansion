@@ -1793,19 +1793,21 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Treecko:
     - Atk: 45->65
     - SpA: 65->45
+    - Learns Seed Bomb by level up
 
 - Grovyle:
     - Atk: 65->85
     - SpA: 85->65
     - Hidden Ability: Unburden->Sharpness
     - Learns Razor Leaf upon evolving
+    - Learns Seed Bomb by level up
 
 - Sceptile:
     - Atk: 85->105
     - SpA: 105->85
     - Hidden Ability: Unburden->Sharpness
     - Learns Dual Chop upon evolving
-    - Learns Razor Leaf by level up
+    - Learns Razor Leaf, Seed Bomb, and Dragon Claw by level up
 
 - Mega Sceptile:
     - Atk: 110->145
@@ -1818,49 +1820,59 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Combusken:
     - Learns Flame Wheel upon evolving
+    - Learns Low Sweep and Fire Punch by level up
 
 - Blaziken:
-    - Learns Flame Wheel by level up
-    - Learns Drain Punch by TM
+    - Learns Flame Wheel, Low Sweep, Drain Punch, Jump Kick, and High Jump Kick by level up
 
 - Mudkip:
     - Hidden Ability: Damp->Swift Swim
+    - Learns Waterfall and Liquidation by level up
 
 - Marshtomp:
     - Hidden Ability: Damp->Swift Swim
     - Learns Aqua Jet upon evolving
+    - Learns Waterfall and Liquidation by level up
     - Learns Surf and Earthquake later to avoid breaking the game
 
 - Swampert:
     - Hidden Ability: Damp->Swift Swim
     - Learns Aqua Tail upon evolving
-    - Learns Aqua Jet by level up
+    - Learns Aqua Jet, Waterfall, and Liquidation by level up
     - Learns Surf and Earthquake later to avoid breaking the game
 
 - Poochyena:
     - Speed: 35->40
     - Hidden Ability: Rattled->Strong Jaw
+    - Learns Lash Out by level up
 
 - Mightyena:
     - Atk: 90->100
     - Speed: 70->80
     - Hidden Ability: Moxie->Strong Jaw
+    - Learns Lash Out by level up
 
 - Zigzagoon/Linoone:
     - Learn Body Slam by level up
 
 - Galarian Zigzagoon/Galarian Linoone (postgame):
     - Abilities: Pickup/Gluttony/Quick Feet->Reckless/Guts/Defiant
+    - Learn Thief and Body Slam by level up
+
+- Obstagoon (postgame):
+    - Learns Thief, Body Slam, Throat Chop, and Darkest Lariat by level up
 
 - Wurmple:
     - Learns Bug Bite at level 7 instead of 15
     - Evolution is now based on time of day
 
 - Beautifly:
-    - Learns Air Slash by TM
+    - Learns Signal Beam and Air Slash by level up
 
 - Dustox:
-    - Sp. Def: 90->100 to match Beautifly's stat increase
+    - Sp. Def: 90->100 (to match Beautifly's stat increase)
+    - Learns Acid by evolving
+    - Learns Signal Beam and Sludge Bomb by level up
 
 - Lotad/Lombre/Ludicolo:
     - Learn Water Pulse by level up
@@ -1877,10 +1889,10 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learn Bullet Seed, Seed Bomb, Grass Whistle, and Pursuit by level up
 
 - Taillow/Swellow:
-    - Learn Acrobatics by TM
+    - Learn Facade, Dual Wingbeat, and Acrobatics by level up
 
 - Wingull/Pelipper:
-    - Learn Gust by level up
+    - Learn Gust and Brine by level up
 
 - Ralts/Kirlia/Gardevoir:
     - Due to Disarming Voice's boost in power, Fairy Wind is learned in its place at level 1 instead. Disarming Voice is now learned at level 17.
@@ -1895,24 +1907,26 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Def: 32->35
     - SpD: 52->55
     - Spe: 65->70
-    - Learns Struggle Bug by level up
+    - Learns Struggle Bug and Signal Beam by level up
 
 - Masquerain:
     - Atk: 60->70
     - Def: 62->65
     - SpD: 82->85
     - Spe: 80->85
-    - Learns Struggle Bug by level up
+    - Learns Struggle Bug and Signal Beam by level up
+    - Learns Steel Wing by TM
 
 - Shroomish:
     - Atk: 40->50
+    - Learns Bullet Seed by level up
 
 - Breloom:
     - Held items:
         - Tiny Mushroom: 50%->0%
         - Big Mushroom: 5%->50%
         - Balm Mushroom: 0%->5%
-    - Learns Arm Thrust and Drain Punch by level up
+    - Learns Bullet Seed, Arm Thrust, and Drain Punch by level up
 
 - Slakoth/Vigoroth:
     - Learn Body Slam by level up
@@ -1956,10 +1970,12 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Nosepass:
     - SpA: 45->55
+    - Learns Rock Tomb by level up
 
 - Probopass:
     - Def: 145->150
     - SpD: 150->145
+    - Learns Rock Tomb, Mirror Shot, and Flash Cannon by level up
 
 - Skitty:
     - Def: 45->35
@@ -1979,12 +1995,19 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Sableye:
     - Loses Stall as an ability since it's worthless
+    - Atk: 75->65
+    - SpA: 65->75
     - Catch rate: 45->90
+    - Learns Snarl, Hex, and Dark Pulse by level up
+
+- Mega Sableye:
+    - Atk: 85->75
+    - SpA: 85->95
 
 - Mawile:
     - Catch rate: 45->90
     - Held item: Occa Berry: 0%->50%
-    - Learns Metal Claw and Smart Strike by level up
+    - Learns Metal Claw, Smart Strike, and Spirit Break by level up
 
 - Aron/Lairon/Aggron:
     - Learn Rock Throw by level up

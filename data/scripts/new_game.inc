@@ -273,5 +273,6 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL
 	setflag FLAG_HIDE_REGIELEKI
 	setflag FLAG_HIDE_REGIDRAGO
+	setflag FLAG_HIDE_REGIGIGAS
 	call EventScript_ResetAllBerries
 	end

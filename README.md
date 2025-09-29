@@ -348,6 +348,8 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Matt/Shelly Seafloor Cavern|N/A/37, 37            |52, 52, 54/52, 52, 54|
 |Archie Seafloor Cavern     |41, 41, 43            |53, 53, 54, 55|
 |Regirock/Regice/Registeel  |40                    |55|
+|Regieleki/Regidrago        |N/A                   |55|
+|Regigigas                  |N/A                   |60|
 |Juan                       |41, 41, 43, 43, 46    |55, 55, 56, 56, 58|
 |Rayquaza                   |70                    |60|
 |Wally Victory Road         |41, 43, 44, 44, 45    |56, 56, 57, 57, 59|
@@ -2202,7 +2204,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Deoxys (postgame):
     - Can use the Meteorite item to change forms
 
-**NOTE: Nothing past here is in the main game**
+**NOTE: Nothing past here is in the main game except Regigigas, Regieleki, and Regidrago**
 
 - Turtwig:
     - Evolution: 18->16
@@ -2355,7 +2357,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Dragon Claw by level up
 
 - Regigigas:
-    - Learns Rest, Endure, Body Slam, and Headbutt by level up
+    - Learns Rest, Endure, Headbutt, and Body Slam by level up
 
 - Giratina:
     - Level up learnset updated to be more consistent with Dialga and Palkia
@@ -3195,8 +3197,11 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Shadow Claw by TM
     - Learns Dragon Breath by Egg Move
 
-- Regieleki/Regidrago:
+- Regieleki:
     - Learn Rest and Endure by level up
+
+- Regidrago:
+    - Learns Rest and Endure by level up
 
 - Enamorus:
     - Learns Play Rough by level up

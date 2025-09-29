@@ -7465,11 +7465,11 @@
       },
       {
         "Level": 42,
-        "Move": "MOVE_BODY_SLAM"
+        "Move": "MOVE_HEADBUTT"
       },
       {
         "Level": 54,
-        "Move": "MOVE_HEADBUTT"
+        "Move": "MOVE_BODY_SLAM"
       }
     ],
     "PreEvoMoves": [],

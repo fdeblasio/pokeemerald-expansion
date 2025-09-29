@@ -269,7 +269,6 @@ upcoming
     - Change Kirlia and Dusclops to fit the type of move used?
 
 ### Other
-- Add Regigigas to Sealed Chamber?
 - Decap easy chat species/moves/multi-word choices?
 - Have Gabby and Ty's TV show use nicknames?
 - Update palettes?:

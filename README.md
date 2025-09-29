@@ -864,6 +864,8 @@ There are some mechanics, moves and abilities that are missing and being develop
         - PP: 5->10
     - Syrup Bomb:
         - Accuracy: 85->100
+    - Trop Kick:
+        - Power: 70->90
 - Psychic:
     - Eerie Spell:
         - PP: 5->10
@@ -1170,7 +1172,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Volt Tackle by level up
 
 - Alolan Raichu (postgame):
-    - Learns Volt Tackle by level up
+    - Learns Volt Tackle and Psybeam by level up
 
 - Sandshrew/Sandslash:
     - Learn Earth Power by level up
@@ -1521,6 +1523,9 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Type: Water/Flying->Water
     - Learns Bounce by level up
     - Learns Dragon Breath by Egg Move
+
+- Lapras (not in main game):
+    - Learns Powder Snow, Chilling Water, Icy Wind, Aurora Beam, Waterfall, Surf, and Liquidation by level up
 
 - Ditto (postgame):
     - All stats: 48->50
@@ -1906,8 +1911,18 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Mega Gallade:
     - Ability: Inner Focus->Sharpness
 
-- Surskit/Masquerain:
-    - Learn Struggle Bug by level up
+- Surskit:
+    - Def: 32->35
+    - SpD: 52->55
+    - Spe: 65->70
+    - Learns Struggle Bug by level up
+
+- Masquerain:
+    - Atk: 60->70
+    - Def: 62->65
+    - SpD: 82->85
+    - Spe: 80->85
+    - Learns Struggle Bug by level up
 
 - Shroomish:
     - Atk: 40->50
@@ -3025,15 +3040,38 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Spe: 43->50
     - Learns Icicle Crash by TM
 
+- Dewpider:
+    - HP: 38->40
+    - Def: 52->55
+    - SpD: 72->75
+    - Spe: 27->30
+    - Learns Waterfall by level up
+
+- Araquanid:
+    - HP: 68->70
+    - Atk: 70->80
+    - Def: 92->95
+    - SpD: 132->135
+    - Spe: 42->45
+    - Learns Waterfall by level up
+
 - Salandit/Salazzle:
     - Learn Dragon Breath by Egg Move
 
-- Bounsweet/Steenee:
+- Bounsweet:
+    - Atk: 30->40
     - Held item: Magost Berry: 0%->50%
+    - Learns Leafage, Leaf Tornado, and Seed Bomb by level up
+
+- Steenee:
+    - Atk: 40->50
+    - Held item: Magost Berry: 0%->50%
+    - Learns Leafage, Leaf Tornado, and Seed Bomb by level up
 
 - Tsareena:
     - Held item: Magost Berry: 0%->50%
     - Held item: Grassy Seed: 50%->5%
+    - Learns Leafage, Leaf Tornado, and Seed Bomb by level up
 
 - Comfey:
     - Learns Fairy Wind and Dazzling Gleam by level up
@@ -3199,6 +3237,16 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Grimmsnarl:
     - Learns Fairy Wind by level up
 
+- Milcery
+    - SpD: 61->65
+    - Speed: 34->35
+    - Learns Fairy Wind and Disarming Voice by level up
+
+- Alcremie:
+    - SpD: 121->125
+    - Speed: 64->65
+    - Learns Fairy Wind and Disarming Voice by level up
+
 - Snom:
     - Evolution: friendship->21
 
@@ -3270,6 +3318,9 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Atk: 80->90
     - Learns Body Press upon evolving
     - Learns Fairy Wind by level up
+
+- Nacli/Naclstack:
+    - Learn Rock Tomb by level up
 
 - Garganacl:
     - Learns Power Gem by level up

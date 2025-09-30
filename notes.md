@@ -158,13 +158,13 @@ upcoming
 - Find way for Rotom to learn special moves by level up (for relearning). Currently have TMs, but not all moves (Hydro Pump/Leaf Storm) are TMs
     - This gets solved if the TM list is expanded to have Scarlet and Violet's
 - Find a way for newer gen TMs to be learned by Pokémon whose base forms don't learn the move (for example Eelektross or Toxtricity; or Capsakid not learning the Fire-type moves that Scovillain does)
+    - Just make new tutors in towns or Battle Frontier?
     - Remove Snarl and Psychic Noise from Toxtricity's level up learnset once this is implemented
 - Nature Power:
     - Nature Power details on summary screen (power/accuracy would be for in-battle status screen only)
         - All moves are special so change category to special (if nothing changes)?
         - This should wait for the battle terrain refactor
     - Revert some Nature Power moves for a more varied effect
-- Just make new tutors in towns or Battle Frontier
 - Update local Porymoves for automatic movepool updates (similar to Hail/Snowscape)
     - Any Pokémon that learns Drill Peck should learn Drill Run
     - Any Pokémon that can learn Flash Cannon should learn Dazzling Gleam and vice versa?
@@ -182,6 +182,8 @@ upcoming
         - Would need Ghost-type never miss replacement
     - Delta Stream Flying-type Weather Ball
     - Punk Rock makes Howl raise Attack by two?
+    - Add back 5 remaining missing moves? (Natural Gift, Lucky Chant, Wring Out, Synchronoise, and Embargo)
+        - Or remove Last Resort, Bestow, and others instead?
 - Dynamic power/typing:
     - Add more if statements for Utility Umbrella/Air Lock/Cloud Nine?
     - IsBattleMovePhysical/Special/Status(move) vs category == DAMAGE_CATEGORY_XYZ
@@ -315,6 +317,7 @@ upcoming
 
 ### Big changes from Vanilla - low priority
 - Update White Smoke/Clear Body to prevent self-inflicted stat drops like Shell Smash?
+- Add more basic moves for level up coverage (like a 40 power Ground move or a 60 power physical Fairy move)
 - Remove IVs? Maybe make boolean for either 0 or 31 added to stat
     - Would need to figure out Hidden Power
         - Six stats times three values would equal 18 types (would need to figure out third value (16?) but also Normal Hidden Power sounds)

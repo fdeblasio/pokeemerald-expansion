@@ -31632,7 +31632,9 @@
         "Move": "MOVE_BELCH"
       }
     ],
-    "PreEvoMoves": [],
+    "PreEvoMoves": [
+      "MOVE_PAIN_SPLIT"
+    ],
     "TMMoves": [
       "MOVE_TAKE_DOWN",
       "MOVE_MUD_SLAP",

@@ -1118,13 +1118,13 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Poison Tail, Venoshock, and Poison Jab by level up
 
 - Nidorina (not in main game):
-    - Learns Poison Tail, Venoshock, and Poison Jab by level up
     - Egg Groups: None->Monster/Field (can now breed)
+    - Learns Poison Tail, Venoshock, and Poison Jab by level up
 
 - Nidoqueen (not in main game):
     - SpA: 75->85
-    - Learns Poison Tail, Venoshock, Poison Jab, Drill Run, and Earthquake by level up
     - Egg Groups: None->Monster/Field (can now breed)
+    - Learns Poison Tail, Venoshock, Poison Jab, Drill Run, and Earthquake by level up
 
 - Nidoran M (not in main game):
     - Def: 40->42
@@ -2016,16 +2016,19 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learn Rock Smash and Drain Punch by level up
 
 - Electrike:
-    - Learns Snarl by level up
+    - Learns Thunder Shock, Snarl, and Thunderbolt by level up
 
 - Manectric:
-    - Learns Ice Fang and Snarl by level up
+    - Learns Ice Fang, Thunder Shock, Snarl, and Thunderbolt by level up
 
 - Plusle:
     - SpD: 75->85
+    - Learns Thunder Shock and Shock Wave by level up
 
 - Minun:
     - SpA: 75->85
+    - Learns Thunder Shock and Shock Wave by level up
+    - Learns Bestow and Trump Card by level up to match Plusle learning Switcheroo and Last Resort
 
 - Volbeat:
     - Atk: 73->75
@@ -2043,7 +2046,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Roselia/Roserade:
     - Gender Ratio: 50/50->75/25
-    - Learn Venoshock by level up
+    - Learn Venoshock and Energy Ball by level up
     - Held items:
         - Poison Barb: 5%->50%
         - Absorb Bulb: 0%->5%
@@ -2053,33 +2056,41 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Def: 53->55
     - SpA: 43->45
     - SpD: 53->55
+    - Learns Acid, Poison Jab, and Sludge Wave by level up
 
 - Swalot:
     - Atk: 73->85
     - Def: 83->85
     - SpA: 73->85
     - SpD: 83->85
+    - Learns Acid, Poison Jab, and Sludge Wave by level up
 
 - Carvanha/Sharpedo:
     - Learn Waterfall by level up
 
 - Wailmer/Wailord:
-    - Learn Surf by level up
+    - Learn Bubble, Waterfall, Liquidation, and Surf by level up
 
 - Numel/Camerupt:
     - Held item: Rawst Berry: 0%->100%
+    - Learn Mud-Slap, Mud Shot, and Scorching Sands by level up
 
 - Torkoal:
-    - Learns Incinerate by level up
+    - Learns Incinerate and Flame Burst by level up
 
 - Spoink/Grumpig:
     - Learn Dazzling Gleam by level up
 
 - Spinda:
     - All stats: 60->80
+    - Learns Swift, Rapid Spin, and Body Slam by level up
 
-- Trapinch/Vibrava/Flygon:
-    - Learn Dragon Breath by Egg Move
+- Trapinch:
+    - Learns Mud Shot by level up
+    - Learns Dragon Breath by Egg Move
+
+- Vibrava/Flygon:
+    - Learn Mud Shot and Breaking Swipe by level up
 
 - Cacnea:
     - Learns Seed Bomb by level up
@@ -2088,27 +2099,33 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Seed Bomb and Throat Chop by level up
 
 - Swablu:
+    - SpA: 40->50
     - Received Fluffy as a second Ability
+    - Learns Gust, Air Cutter, Hyper Voice, and Air Slash by level up
 
 - Altaria:
-    - SpA: 70->80
+    - Atk: 70->60
+    - SpA: 70->90
     - Received Fluffy as a second Ability
-    - Learns Air Slash by TM
+    - Learns Gust, Air Cutter, Hyper Voice, and Air Slash by level up
 
 - Mega Altaria:
-    - SpD: 105->115
+    - Atk: 110->100
+    - SpA: 110->115
+    - SpD: 105->120
 
 - Zangoose:
-    - Learns Cut by TM
-    - Abilities: Immunity/Toxic Boost->Poison Heal/Sharpness/Guts
-    - Also in Human-Like Egg Group
     - HP: 73->75
     - Atk: 115->125
     - Spe: 90->100
+    - Abilities: Immunity/Toxic Boost->Poison Heal/Sharpness/Guts
+    - Egg Groups: Field->Field/Human-Like
+    - Learns Cut and Body Slam by level up
 
 - Seviper:
     - HP: 73->75
-    - Spe: 65->75
+    - Spe: 65->85
+    - Learns Poison Sting by level up
     - Learns Dragon Breath by Egg Move
 
 - Lunatone:

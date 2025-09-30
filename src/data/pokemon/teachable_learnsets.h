@@ -18337,6 +18337,7 @@ static const u16 sWailmerTeachableLearnset[] = {
     MOVE_HYPER_VOICE,
     MOVE_ICE_BEAM,
     MOVE_ICY_WIND,
+    MOVE_LIQUIDATION,
     MOVE_PROTECT,
     MOVE_RAIN_DANCE,
     MOVE_REST,
@@ -18945,6 +18946,7 @@ static const u16 sCacturneTeachableLearnset[] = {
 static const u16 sSwabluTeachableLearnset[] = {
     MOVE_ACROBATICS,
     MOVE_AERIAL_ACE,
+    MOVE_AIR_SLASH,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_DAZZLING_GLEAM,

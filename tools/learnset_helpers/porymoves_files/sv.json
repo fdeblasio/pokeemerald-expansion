@@ -34342,7 +34342,9 @@
         "Move": "MOVE_PHANTOM_FORCE"
       }
     ],
-    "PreEvoMoves": [],
+    "PreEvoMoves": [
+      "MOVE_ASTONISH"
+    ],
     "TMMoves": [
       "MOVE_SCARY_FACE",
       "MOVE_PROTECT",

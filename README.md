@@ -2135,7 +2135,11 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Power Gem and Solar Blade by level up
 
 - Barboach:
-    - Learns Dragon Dance by level up
+    - Atk: 48->55
+    - Def: 43->45
+    - SpA: 46->50
+    - SpD: 41->45
+    - Learns Mud Shot, Waterfall, and Dragon Dance by level up
 
 - Whiscash:
     - Atk: 78->90
@@ -2143,16 +2147,23 @@ There are some mechanics, moves and abilities that are missing and being develop
     - SpA: 76->80
     - SpD: 71->75
     - Spe: 60->70
-    - Learns Dragon Dance by level up
+    - Learns Mud Shot, Waterfall, and Dragon Dance by level up
+
+- Corphish/Crawdaunt:
+    - Learn Aqua Cutter by level up
 
 - Baltoy/Claydol:
-    - Learn Zen Headbutt by level up
+    - Learn Mud Shot, Mud Bomb, Zen Headbutt, Drill Run, and Earthquake by level up
 
-- Lileep/Cradily:
-    - Learn Absorb by level up
+- Lileep:
+    - Learns Absorb and Power Gem by level up
+
+- Cradily:
+    - SpA: 81->90
+    - Learns Absorb and Power Gem by level up
 
 - Anorith/Armaldo:
-    - Learn Rock Throw by level up
+    - Learn Rock Throw and Rock Slide by level up
 
 - Feebas:
     - Learns Hydro Pump by level up
@@ -2162,12 +2173,15 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Castform:
     - All stats: 70->80
-    - Learns Surf, Flamethrower, Ice Beam, Thunder, and Solar Beam by level up
-    - Learns Surf and Overheat by TM
+    - Learns Swift, Surf, Flamethrower, Ice Beam, Thunder, and Solar Beam by level up
+    - Learns Overheat by TM
     - Learns Gust, Twister, Heat Wave, and Fairy Wind by Egg Move
 
 - Kecleon:
-    - Learns Body Slam by level up
+    - Learns Covet and Body Slam by level up
+
+- Banette:
+    - Learns Astonish, Shadow Punch, and Shadow Claw by level up
 
 - Duskull/Dusclops:
     - Learn Spite by level up
@@ -2177,34 +2191,32 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Drain Punch by TM
     - Received Iron Fist as second Ability
 
-- Banette:
-    - Learns Astonish, Shadow Punch, and Shadow Claw by level up
-
 - Tropius:
     - HP: 99->100
     - Atk: 68->70
     - Def: 83->85
-    - SpA: 72->80
+    - SpA: 72->90
     - SpD: 87->90
     - Spe: 51->55
     - Held item: Nanab Berry: 0%->100%
+    - Learns Absorb, Mega Drain, Air Cutter, and Giga Drain by level up
     - Learns Earth Power by TM
 
 - Chingling:
     - Evolution: friendship->19
 
 - Chimecho:
-    - Learns Psychic by level up
+    - Learns Psybeam and Psychic by level up
 
 - Absol:
     - Hidden Ability: Justified->Sharpness
     - Learns Spite by Egg Move
 
 - Snorunt/Glalie/Froslass:
-    - Learn Aurora Beam by level up
+    - Learn Aurora Beam and Ice Beam by level up
 
 - Spheal/Sealeo/Walrein:
-    - Learn Ice Beam by level up
+    - Learn Bubble Beam and Ice Beam by level up
 
 - Clamperl:
     - Learns Dive by level up
@@ -2212,10 +2224,12 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Huntail:
     - Holding a Deep Sea Tooth multiplies its Attack by 1.5
     - Atk: 104->114
+    - Learns Waterfall by level up
 
 - Gorebyss:
     - Holding a Deep Sea Scale multiplies its Defense by 1.5
     - Atk: 84->94
+    - Learns Waterfall by level up
     - Learns Leech Life by TM
 
 - Relicanth:
@@ -2226,6 +2240,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - SpA: 40->80
     - Spd: 97->100
     - Held item: Heart Scale: 50%->100%
+    - Learns Surf by level up
 
 - Bagon/Shelgon/Salamence:
     - Learn Dragon Pulse by level up
@@ -2234,12 +2249,19 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Metal Claw by level up
 
 - Metang/Metagross:
-    - Learn Psybeam by level up
+    - Learn Psybeam and Iron Head by level up
 
-- Regirock/Regice/Registeel:
-    - Learn Rest and Endure by level up
+- Regirock:
+    - Learns Rest and Endure by level up
+
+- Regice:
+    - Learns Rest and Endure by level up
+
+- Registeel:
+    - Learns Rest and Endure by level up
 
 - Latios/Latias (postgame):
+    - Learn Psybeam by level up
     - Level up learnset slightly restructured to avoid a battle where they only have one attacking move
 
 - Kyogre:
@@ -2251,12 +2273,14 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Precipice Blades at level 63 instead of level 1
 
 - Rayquaza:
+    - Learns Dragon Claw by level up
     - Swaps Dragon Ascent and Fly levels
 
 - Jirachi (postgame):
-    - Learns Flash Cannon by level up
+    - Learns Mirror Shot, Psybeam, and Flash Cannon by level up
 
 - Deoxys (postgame):
+    - Learns Confusion by level up
     - Can use the Meteorite item to change forms
 
 **NOTE: Nothing past here is in the main game except Regigigas, Regieleki, and Regidrago**

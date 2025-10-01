@@ -711,6 +711,8 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Power: 100->120
         - Accuracy: 80->100
 - Rock:
+    - Accelrock:
+        - PP: 20->30
     - Ancient Power:
         - PP: 5->10
     - Diamond Storm:
@@ -824,6 +826,8 @@ There are some mechanics, moves and abilities that are missing and being develop
     - V-create:
         - Accuracy: 95->100
 - Water:
+    - Aqua Jet:
+        - PP: 20->30
     - Aqua Tail:
         - Accuracy: 90->100
     - Crabhammer:

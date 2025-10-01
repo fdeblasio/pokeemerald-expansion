@@ -11684,6 +11684,7 @@ static const u16 sSudowoodoTeachableLearnset[] = {
 static const u16 sHoppipTeachableLearnset[] = {
     MOVE_ACROBATICS,
     MOVE_AERIAL_ACE,
+    MOVE_AIR_SLASH,
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_DAZZLING_GLEAM,
@@ -11719,6 +11720,7 @@ static const u16 sHoppipTeachableLearnset[] = {
 static const u16 sSkiploomTeachableLearnset[] = {
     MOVE_ACROBATICS,
     MOVE_AERIAL_ACE,
+    MOVE_AIR_SLASH,
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_DAZZLING_GLEAM,
@@ -11754,6 +11756,7 @@ static const u16 sSkiploomTeachableLearnset[] = {
 static const u16 sJumpluffTeachableLearnset[] = {
     MOVE_ACROBATICS,
     MOVE_AERIAL_ACE,
+    MOVE_AIR_SLASH,
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_DAZZLING_GLEAM,
@@ -11852,6 +11855,7 @@ static const u16 sAmbipomTeachableLearnset[] = {
     MOVE_ACROBATICS,
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
+    MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,
     MOVE_COUNTER,
     MOVE_CUT,
@@ -12235,6 +12239,7 @@ static const u16 sMurkrowTeachableLearnset[] = {
     MOVE_HYPER_BEAM,
     MOVE_ICY_WIND,
     MOVE_NASTY_PLOT,
+    MOVE_NIGHT_SLASH,
     MOVE_PAYBACK,
     MOVE_PROTECT,
     MOVE_PSYCH_UP,
@@ -41804,6 +41809,7 @@ static const u16 sCharcadetTeachableLearnset[] = {
     MOVE_REST,
     MOVE_SLEEP_TALK,
     MOVE_SUNNY_DAY,
+    MOVE_TEMPER_FLARE,
     MOVE_WILL_O_WISP,
     MOVE_UNAVAILABLE,
 };
@@ -41836,6 +41842,7 @@ static const u16 sArmarougeTeachableLearnset[] = {
     MOVE_SOLAR_BEAM,
     MOVE_SUNNY_DAY,
     MOVE_TAUNT,
+    MOVE_TEMPER_FLARE,
     MOVE_TRICK_ROOM,
     MOVE_WILL_O_WISP,
     MOVE_UNAVAILABLE,
@@ -41867,6 +41874,7 @@ static const u16 sCeruledgeTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWORDS_DANCE,
     MOVE_TAUNT,
+    MOVE_TEMPER_FLARE,
     MOVE_THROAT_CHOP,
     MOVE_WILL_O_WISP,
     MOVE_X_SCISSOR,

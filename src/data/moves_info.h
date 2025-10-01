@@ -16320,7 +16320,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Strangles the foe with a\n"
             "chain. The foe can't escape."),
         .effect = EFFECT_HIT,
-        .power = 80,
+        .power = 90,
         .type = TYPE_STEEL,
         .accuracy = 100,
         .pp = 20,
@@ -20155,7 +20155,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .power = 120,
         .type = TYPE_FIRE,
         .accuracy = 100,
-        .pp = 5,
+        .pp = 10,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,

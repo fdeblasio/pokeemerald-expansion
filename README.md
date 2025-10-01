@@ -769,6 +769,8 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Zap Cannon:
         - Power: 120->150
 - Fire:
+    - Armor Cannon:
+        - PP: 5->10
     - Blaze Kick:
         - Accuracy: 90->100
     - Blue Flare:
@@ -929,6 +931,8 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Wicked Blow:
         - PP: 5->10
 - Steel:
+    - Anchor Shot:
+        - Power: 80->90
     - Behemoth Bash:
         - PP: 5->10
     - Behemoth Blade:
@@ -1432,6 +1436,18 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Pinsir:
     - Catch rate: 45->90
+
+- Tauros (not in main game):
+    - Learns Headbutt by level up
+
+- Paldean Tauros (Combat) (not in main game):
+    - Learns Rock Smash and Brick Break by level up
+
+- Paldean Tauros (Blaze) (not in main game):
+    - Learns Rock Smash, Temper Flare, and Brick Break by level up
+
+- Paldean Tauros (Aqua) (not in main game):
+    - Learns Rock Smash, Liquidation and Brick Break by level up
 
 - Staryu/Starmie:
     - Learns Water Pulse by level up
@@ -2402,6 +2418,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Riolu:
     - Evolution: friendship->20
+    - Learns Drain Punch by level up
+
+- Lucario:
+    - learns Mach Punch, Bullet Punch, Flash Cannon, and Drain Punch by level up
 
 - Hippopotas/Hippowdon:
     - Learn Bulldoze, Stomping Tantrum, Scorching Sands, and High Horsepower by level up
@@ -3017,6 +3037,9 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Catch rate: 75->90
     - Learns Dazzling Gleam by level up
 
+- Phantump/Trevenant:
+    - Learn Razor Leaf, Shadow Punch, and Seed Bomb by level up
+
 - Pumpkaboo:
     - HP: 44/49/54/59->45/50/55/60
     - Atk: 66->70
@@ -3129,9 +3152,15 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Turtonator:
     - Learns Dragon Breath by Egg Move
 
+- Mimikyu:
+    - Learns Fairy Wind, Draining Kiss, Shadow Punch, and Spirit Break by level up
+
 - Drampa:
     - Type: Normal/Dragon->Dragon/Normal
     - Learns Swift by level up
+
+- Dhelmise:
+    - Learns Metal Claw and Shadow Claw by level up
 
 - Tapu Koko:
     - Learns Supercell Slam, Play Rough, and Rising Voltage by TM
@@ -3291,6 +3320,11 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Speed: 64->65
     - Learns Fairy Wind and Disarming Voice by level up
 
+- Falinks:
+    - HP: 65->75
+    - Def: 100->110
+    - Learns Smart Strike, Brick Break, Iron Head, Spiky Shield, and Body Press by level up
+
 - Snom:
     - Evolution: friendship->21
 
@@ -3300,7 +3334,15 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Silver Wind, Signal Beam, and Ice Beam by level up
 
 - Stonjourner:
+    - SpD: 20->30
     - Learns Ancient Power and Curse by level up
+
+- Eiscue:
+    - Atk: 80->90
+    - Learns Avalanche, Ice Punch, and Icicle Crash by level up
+
+- Indeedee:
+    - Learns Confusion, Pound, Swift, and Hyper Voice by level up
 
 - Cufant/Copperajah:
     - Received Sturdy as a second ability
@@ -3369,8 +3411,15 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Garganacl:
     - Learns Power Gem by level up
 
+- Charcadet:
+    - Learns Flame Burst, Flame Wheel, Temper Flare, and Flamethrower by level up
+
+- Armarouge:
+    - Learns Flame Burst, Flame Wheel, and Temper Flare by level up
+
 - Ceruledge:
     - Hidden Ability: Weak Armor->Sharpness
+    - Learns Flame Burst, Flame Wheel, and Temper Flare by level up
 
 - Tadbulb:
     - Hidden Ability: Damp->Volt Absorb

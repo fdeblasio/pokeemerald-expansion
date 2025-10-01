@@ -69,6 +69,7 @@ upcoming
     - Norman's Spinda's left ear might be off?
 - Lilycove:
     - Edit contests?/Contests overhaul
+        - Update Pledge moves to combo with each other like the elemental fangs
 - Mt. Pyre:
     - Have the inside of Mt. Pyre use Burial Ground terrain?
 - Mossdeep:

@@ -2557,28 +2557,68 @@
     "TutorMoves": []
   },
   "TAUROS": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 30,
+        "Move": "MOVE_HEADBUTT"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "TAUROS_PALDEA_COMBAT_BREED": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ROCK_SMASH"
+      },
+      {
+        "Level": 30,
+        "Move": "MOVE_BRICK_BREAK"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "TAUROS_PALDEA_BLAZE_BREED": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ROCK_SMASH"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_TEMPER_FLARE"
+      },
+      {
+        "Level": 30,
+        "Move": "MOVE_BRICK_BREAK"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "TAUROS_PALDEA_AQUA_BREED": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ROCK_SMASH"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_LIQUIDATION"
+      },
+      {
+        "Level": 30,
+        "Move": "MOVE_BRICK_BREAK"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -7830,14 +7870,36 @@
     "TutorMoves": []
   },
   "RIOLU": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 40,
+        "Move": "MOVE_DRAIN_PUNCH"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "LUCARIO": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_MACH_PUNCH"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_BULLET_PUNCH"
+      },
+      {
+        "Level": 36,
+        "Move": "MOVE_FLASH_CANNON"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_DRAIN_PUNCH"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -11476,14 +11538,40 @@
     "TutorMoves": []
   },
   "PHANTUMP": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 16,
+        "Move": "MOVE_RAZOR_LEAF"
+      },
+      {
+        "Level": 19,
+        "Move": "MOVE_SHADOW_PUNCH"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_SEED_BOMB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "TREVENANT": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 16,
+        "Move": "MOVE_RAZOR_LEAF"
+      },
+      {
+        "Level": 19,
+        "Move": "MOVE_SHADOW_PUNCH"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_SEED_BOMB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -12217,7 +12305,24 @@
     "TutorMoves": []
   },
   "MIMIKYU": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_FAIRY_WIND"
+      },
+      {
+        "Level": 18,
+        "Move": "MOVE_DRAINING_KISS"
+      },
+      {
+        "Level": 23,
+        "Move": "MOVE_SHADOW_PUNCH"
+      },
+      {
+        "Level": 36,
+        "Move": "MOVE_SPIRIT_BREAK"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -12243,7 +12348,16 @@
     "TutorMoves": []
   },
   "DHELMISE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_METAL_CLAW"
+      },
+      {
+        "Level": 44,
+        "Move": "MOVE_SHADOW_CLAW"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -13313,7 +13427,28 @@
     "TutorMoves": []
   },
   "FALINKS": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 15,
+        "Move": "MOVE_SMART_STRIKE"
+      },
+      {
+        "Level": 30,
+        "Move": "MOVE_BRICK_BREAK"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_IRON_HEAD"
+      },
+      {
+        "Level": 45,
+        "Move": "MOVE_SPIKY_SHIELD"
+      },
+      {
+        "Level": 50,
+        "Move": "MOVE_BODY_PRESS"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -13370,21 +13505,68 @@
     "TutorMoves": []
   },
   "EISCUE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 18,
+        "Move": "MOVE_AVALANCHE"
+      },
+      {
+        "Level": 36,
+        "Move": "MOVE_ICE_PUNCH"
+      },
+      {
+        "Level": 54,
+        "Move": "MOVE_ICICLE_CRASH"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "INDEEDEE_M": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_CONFUSION"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_POUND"
+      },
+      {
+        "Level": 15,
+        "Move": "MOVE_SWIFT"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_HYPER_VOICE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "INDEEDEE_F": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_CONFUSION"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_POUND"
+      },
+      {
+        "Level": 15,
+        "Move": "MOVE_SWIFT"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_HYPER_VOICE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -13942,21 +14124,64 @@
     "TutorMoves": []
   },
   "CHARCADET": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 24,
+        "Move": "MOVE_FLAME_BURST"
+      },
+      {
+        "Level": 28,
+        "Move": "MOVE_FLAME_WHEEL"
+      },
+      {
+        "Level": 32,
+        "Move": "MOVE_TEMPER_FLARE"
+      },
+      {
+        "Level": 48,
+        "Move": "MOVE_FLAMETHROWER"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "ARMAROUGE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 24,
+        "Move": "MOVE_FLAME_BURST"
+      },
+      {
+        "Level": 28,
+        "Move": "MOVE_FLAME_WHEEL"
+      },
+      {
+        "Level": 32,
+        "Move": "MOVE_TEMPER_FLARE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "CERULEDGE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 24,
+        "Move": "MOVE_FLAME_BURST"
+      },
+      {
+        "Level": 28,
+        "Move": "MOVE_FLAME_WHEEL"
+      },
+      {
+        "Level": 32,
+        "Move": "MOVE_TEMPER_FLARE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

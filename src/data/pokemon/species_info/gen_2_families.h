@@ -3445,8 +3445,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_QUAGSIRE] =
     {
-        .baseHP        = 95,
-        .baseAttack    = 85,
+        .baseHP        = 105,
+        .baseAttack    = 95,
         .baseDefense   = 85,
         .baseSpeed     = 35,
         .baseSpAttack  = 65,
@@ -3593,7 +3593,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_CLODSIRE] =
     {
         .baseHP        = 130,
-        .baseAttack    = 75,
+        .baseAttack    = 95,
         .baseDefense   = 60,
         .baseSpeed     = 20,
         .baseSpAttack  = 45,
@@ -3978,12 +3978,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_UNOWN
 #define UNOWN_MISC_INFO(letter, _noFlip, frontWidth, frontHeight, backWidth, backHeight, backYOffset)   \
     {                                                                                                   \
-        .baseHP        = 48,                                                                            \
-        .baseAttack    = 72,                                                                            \
-        .baseDefense   = 48,                                                                            \
-        .baseSpeed     = 48,                                                                            \
-        .baseSpAttack  = 72,                                                                            \
-        .baseSpDefense = 48,                                                                            \
+        .baseHP        = 50,                                                                            \
+        .baseAttack    = 75,                                                                            \
+        .baseDefense   = 50,                                                                            \
+        .baseSpeed     = 75,                                                                            \
+        .baseSpAttack  = 75,                                                                            \
+        .baseSpDefense = 50,                                                                            \
         .types = MON_TYPES(TYPE_PSYCHIC),                                                               \
         .catchRate = 225,                                                                               \
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 118 : 61,                                         \

@@ -729,6 +729,8 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Power: 30->40
     - Astral Barrage:
         - PP: 5->10
+    - Infernal Parade:
+        - Power: 60->75
     - Moongeist Beam:
         - PP: 5->10
     - Ominous Wind:
@@ -1603,17 +1605,45 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Dragon Breath by level up
     - Learns Dual Wingbeat upon evolving
 
+- Chikorita (postgame):
+    - Learns Vine Whip, Seed Bomb, and Energy Ball by level up
+
 - Bayleef (postgame):
     - Evolution: 32->36
+    - Learns Vine Whip, Seed Bomb, and Energy Ball by level up
+
+- Meganium (postgame):
+    - Learns Vine Whip, Seed Bomb, and Energy Ball by level up
 
 - Cyndaquil (postgame):
     - Evolution: 14->16
+    - Learns Incinerate by level up
+
+- Quilava (postgame):
+    - Learns Incinerate by level up
+
+- Typhlosion (postgame):
+    - Learns Incinerate by level up
+
+- Hisuian Typhlosion (not in main game):
+    - Learns Incinerate, Hex, and Shadow Ball by level up
 
 - Totodile (postgame):
     - Evolution: 18->16
+    - Learns Waterfall and Liquidation by level up
 
 - Crocnaw (postgame):
     - Evolution: 30->36
+    - Learns Waterfall and Liquidation by level up
+
+- Feraligatr (postgame):
+    - Learns Waterfall and Liquidation by level up
+
+- Sentret/Furret (not in main game):
+    - Learn Covet and Body Slam by level up
+
+- Hoothoot/Noctowl (postgame):
+    - Learn Gust, Air Cutter, Swift, and Hyper Voice by level up
 
 - Ledyba (postgame):
     - Atk: 20->40
@@ -1629,12 +1659,14 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Spinarak (postgame):
     - Atk: 60->65
     - Spe: 30->40
+    - Learns Pounce, Poison Fang, Bug Bite, and Leech Life by level up
 
 - Ariados (postgame):
     - Spe: 40->60
+    - Learns Pounce, Poison Fang, Bug Bite, and Leech Life by level up
 
 - Chinchou/Lanturn:
-    - Learn Thunder Shock by level up
+    - Learn Thunder Shock, Shock Wave, Surf, Thunderbolt, and Thunder by level up
 
 - Togepi (postgame):
     - Ability: Hustle->Early Bird
@@ -1651,20 +1683,21 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Fairy Wind, Gust, Draining Kiss, Disarming Voice, and Air Cutter by level up
 
 - Natu/Xatu:
-    - Learn Confusion and Psybeam by level up
+    - Learn Confusion, Gust, Psybeam, and Air Cutter by level up
 
 - Mareep/Flaaffy (postgame):
+    - Learns Shock Wave and Thunderbolt by level up
     - Learn Tail Glow by Egg Move
 
 - Ampharos (postgame):
-    - Learns Tail Glow by level up
+    - Learns Tail Glow, Shock Wave, and Thunderbolt by level up
 
 - Azurill:
     - Evolution: friendship->10
     - Type: Normal/Fairy->Water/Fairy
     - Gender Ratio: 25/75->50/50
     - Catch rate: 150->255
-    - Learns Aqua Jet by level up
+    - Learns Fairy Wind and Aqua Jet by level up
 
 - Marill:
     - HP: 70->75
@@ -1672,12 +1705,21 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Def: 50->60
     - SpA: 20->40
     - SpD: 50->60
-    - Learns Aqua Jet by level up
+    - Learns Fairy Wind and Aqua Jet by level up
 
 - Azumarill:
     - Atk: 50->60
     - Spe: 50->60
-    - Learns Aqua Jet by level up
+    - Learns Fairy Wind and Aqua Jet by level up
+
+- Bonsly/Sudowoodo (postgame):
+    - Learn Rock Blast by level up
+
+- Hoppip/Skiploom/Jumpluff:
+    - Learn Gust, Magical Leaf, Air Cutter, Seed Bomb, Energy Ball, Air Slash, and Pollen Puff by level up
+
+- Aipom/Ambipom (postgame):
+    - Learn Double Slap, Headbutt, and Body Slam by level up
 
 - Sunkern (postgame):
     - SpA: 30->50
@@ -1688,14 +1730,41 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Morning Sun upon evolving
     - Learns Magical Leaf and Energy Ball by level up
 
-- Wooper/Quagsire (postgame):
-    - Learn Water Pulse and Earth Power by level up
+- Yanma/Yanmega (not in main game):
+    - Learn Struggle Bug, Gust, and Signal Beam by level up
+
+- Wooper (postgame):
+    - Learn Water Pulse, Waterfall, and Earth Power by level up
+
+- Quagsire (postgame):
+    - HP: 95->105
+    - Atk: 85->95
+    - Learn Water Pulse, Waterfall, and Earth Power by level up
+
+- Paldean Wooper (postgame):
+    - Learns Poison Sting and Earth Power by level up
+
+- Clodsire (postgame):
+    - Atk: 75->95
+    - Learns Earth Power by level up
+
+- Murkrow (not in main game):
+    - Learns Pluck, Dual Wingbeat, and Night Slash by level up
 
 - Honchkrow (not in main game):
-    - Learns Drill Peck by level up
+    - Learns Pluck and Dual Wingbeat by level up
 
 - Misdreavus/Mismagius (not in main game):
     - Gender Ratio: 50/50->25/75
+    - Learn Ominous Wind by level up
+
+- Unown:
+    - HP: 48->50
+    - Atk: 72->75
+    - Def: 48->50
+    - SpA: 72->75
+    - SpD: 48->50
+    - Spe: 48->75
 
 - Wynaut:
     - HP: 95->100
@@ -3220,11 +3289,11 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Gossifleur:
     - SpA: 40->60
-    - Learns Absorb, Mega Drain, Magical Leaf, Giga Drain, Energy Ball
+    - Learns Absorb, Mega Drain, Magical Leaf, Giga Drain, Energy Ball, and Pollen Puff by level up
 
 - Eldegoss:
     - SpA: 80->100
-    - Learns Absorb, Mega Drain, Magical Leaf, Giga Drain, Energy Ball
+    - Learns Absorb, Mega Drain, Magical Leaf, Giga Drain, Energy Ball, and Pollen Puff by level up
 
 - Wooloo:
     - Learns Rollout and Body Slam by level up

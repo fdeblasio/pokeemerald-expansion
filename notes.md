@@ -101,6 +101,7 @@ upcoming
 ### Pokémon
 - Double check that all Gen1-2 Pokemon have updated movesets
     - Can start with Gen2 since there's less
+    - Next do all starters/beasts/bugs/birds/etc.
 - Turn some Normal/Flying types into either pure Flying or Flying/Normal?
 - Add in GMax forms as Megas with +20 to every non-HP stat?
 - Use Cable Car defines in wild_encounters

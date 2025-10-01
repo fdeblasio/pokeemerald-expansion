@@ -5503,7 +5503,6 @@ static const u16 sBarboachEggMoveLearnset[] = {
     MOVE_HAIL,
     MOVE_HELPING_HAND,
     MOVE_HYDRO_PUMP,
-    MOVE_MUD_SHOT,
     MOVE_OUTRAGE,
     MOVE_ROUND,
     MOVE_SPARK,
@@ -5756,7 +5755,6 @@ static const u16 sDuskullEggMoveLearnset[] = {
 
 #if P_FAMILY_TROPIUS
 static const u16 sTropiusEggMoveLearnset[] = {
-    MOVE_AIR_CUTTER,
     MOVE_BRUTAL_SWING,
     MOVE_BULLDOZE,
     MOVE_CONFIDE,
@@ -5846,7 +5844,6 @@ static const u16 sChimechoEggMoveLearnset[] = {
     MOVE_LASER_FOCUS,
     MOVE_MAGIC_COAT,
     MOVE_PERISH_SONG,
-    MOVE_PSYBEAM,
     MOVE_PSYCHIC_NOISE,
     MOVE_PSYSHOCK,
     MOVE_RECOVER,

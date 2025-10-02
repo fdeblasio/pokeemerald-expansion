@@ -660,8 +660,12 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Sky Attack:
         - Accuracy: 90->100
 - Poison:
+    - Barb Barrage:
+        - Power: 60->75
     - Belch:
         - Accuracy: 90->100
+    - Dire Claw:
+        - Power: 80->90
     - Malignant Chain:
         - PP: 5->10
     - Mortal Spin:
@@ -876,6 +880,8 @@ There are some mechanics, moves and abilities that are missing and being develop
         - PP: 5->10
     - Psyshield Bash:
         - Accuracy: 90->100
+    - Twin Beam:
+        - Power: 40->50
     - Zen Headbutt:
         - Accuracy: 90->100
 - Ice:
@@ -1777,33 +1783,57 @@ There are some mechanics, moves and abilities that are missing and being develop
     - HP: 190->200
 
 - Girafarig/Farigiraf:
-    - Learn Swift by level up
+    - Learn Swift and Hyper Voice by level up
+
+- Pineco (postgame):
+    - Learns Lunge by level up
+
+- Forretress (postgame):
+    - Learns Metal Claw, Smart Strike, Lunge, and Iron Head by level up
 
 - Gligar/Gliscor (postgame):
     - Learn Wing Attack, Bulldoze, Aerial Ace, Dual Wingbeat, and Earthquake by level up
 
-- Dunsparce (not in main game):
-    - Learns Swift by move tutor
+- Dunsparce/Dundunsparce (not in main game):
+    - Learn Swift and Headbutt by level up
 
 - Snubbull (postgame):
-    - Learns Fairy Wind by level up
+    - Learns Fairy Wind and Spirit Break by level up
 
 - Granbull (postgame):
     - Hidden Ability: Rattled->Strong Jaw
-    - Learns Fairy Wind by level up
+    - Learns Fairy Wind and Spirit Break by level up
 
-- Qwilfish/Hisuian Qwilfish/Overqwil (not in main game):
-    - Learns Poison Tail by level up
+- Qwilfish (not in main game):
+    - Learns Poison Tail and Waterfall by level up
+
+- Hisuian Qwilfish/Overqwil (not in main game):
+    - Learn Poison Tail, Night Slash, and Poison Jab by level up
 
 - Shuckle (postgame):
+    - Def: 230->255
+    - SpD: 230->255
     - Learns Rock Tomb by level up
 
 - Heracross:
-    - Learns X-Scissor by TM
+    - Learns Fury Cutter, Bug Bite, and Lunge by level up
     - Catch rate: 45->90
 
 - Sneasel/Weavile (not in main game):
     - Learn Powder Snow, Bite, Ice Fang, Ice Punch, and Razor Wind by level up
+
+- Hisuian Sneasel/Sneasler (not in main game):
+    - Learn Poison Sting, Cross Poison, Double Kick, and Drain Punch by level up
+
+- Teddiursa/Ursaring (postgame):
+    - Learn Body Slam by level up
+
+- Ursaluna (postgame):
+    - Spe: 50->55
+    - Learns Bulldoze, Stomping Tantrum, Body Slam, and Earthquake by level up
+
+- Bloodmoon Ursaluna (not in main game):
+    - Learns Mud-Slap, Swift, Mud Shot, Mud Bomb, and Earth Power by level up
 
 - Slugma:
     - Evolution: 38->32
@@ -1818,16 +1848,17 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Icicle Crash upon evolving
     - Learns Avalanche, Bulldoze, Stomping Tantrum, and High Horsepower by level up
 
+- Corsola:
+    - SpA: 65->80
+
+- Galarian Corsola (postgame):
+- Cursola (postgame):
+
 - Octillery (postgame):
-    - HP: 75
     - Atk: 105->100
     - Def: 75->85
     - SpA: 105->110
     - SpD: 75->85
-    - Spe: 45
-
-- Corsola:
-    - SpA: 65->80
 
 - Delibird (not in main game):
     - Atk: 55->75
@@ -1842,6 +1873,8 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Mantine (not in main game):
     - Learns Gust, Surf, and Hurricane by level up
 
+- Mantine (not in main game):
+
 - Skarmory:
     - Learns Dual Wingbeat by level up
 
@@ -1855,11 +1888,15 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Evolves into Wyrdeer by simply knowing Psyshield Bash
     - Learns Psyshield Bash by level up
 
+- Wyrdeer (postgame):
+
 - Smeargle (not in main game):
     - Atk: 20->50
     - Def: 35->50
     - SpA: 20->50
     - SpD: 45->50
+
+- Miltank (postgame):
 
 - Raikou (not in main game):
     - Hidden Ability: Inner Focus -> Volt Absorb
@@ -1878,6 +1915,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Lugia (postgame):
     - Learns Brave Bird by level up
+
+- Ho-Oh (postgame):
+
+- Celebi (not in main game):
 
 - Treecko:
     - Atk: 45->65

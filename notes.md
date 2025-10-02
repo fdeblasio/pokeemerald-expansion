@@ -35,6 +35,7 @@ upcoming
 ```
 
 ## To Do:
+- Move README.md to FEATURES.md
 - Finish adding fishing encounters to DexNav
     - One row?:
         - Screen: 720 pixels wide

@@ -18809,7 +18809,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "High critical hit chance. May\n"
             "paralyze, poison or drowse."),
         .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_9 ? 80 : 60,
+        .power = B_UPDATED_MOVE_DATA >= GEN_9 ? 90 : 60,
         .type = TYPE_POISON,
         .accuracy = 100,
         .pp = 15,
@@ -19059,7 +19059,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Can poison on impact. Powers\n"
             "up against poisoned foes."),
         .effect = EFFECT_DOUBLE_POWER_ON_ARG_STATUS,
-        .power = 60,
+        .power = 75,
         .type = TYPE_POISON,
         .accuracy = 100,
         .pp = B_UPDATED_MOVE_DATA >= GEN_9 ? 10 : 15,
@@ -20045,7 +20045,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Mystical eye-beams that hit\n"
             "the target twice in a row."),
         .effect = EFFECT_HIT,
-        .power = 40,
+        .power = 50,
         .type = TYPE_PSYCHIC,
         .accuracy = 100,
         .pp = 10,

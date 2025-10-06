@@ -5808,6 +5808,7 @@ static const u16 sFlabebeEggMoveLearnset[] = {
 static const u16 sSkiddoEggMoveLearnset[] = {
     MOVE_CONFIDE,
     MOVE_NATURE_POWER,
+    MOVE_ROCK_CLIMB,
     MOVE_ROUND,
     MOVE_SNORE,
     MOVE_TERA_BLAST,

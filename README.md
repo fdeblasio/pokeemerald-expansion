@@ -1162,12 +1162,13 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Pikachu:
     - Held item: Light Ball: 5%->100%
+    - Evolves into Alolan Raichu with a Sun Stone
     - Learns Volt Tackle by level up
 
 - Raichu:
     - Learns Volt Tackle by level up
 
-- Alolan Raichu (postgame):
+- Alolan Raichu:
     - Learns Volt Tackle and Psybeam by level up
 
 - Sandshrew/Sandslash:
@@ -1403,12 +1404,13 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Koffing:
     - Atk: 65->60
     - SpA: 60->65
+    - Evolves into Galarian Weezing with a Shiny Stone
 
 - Weezing:
     - Atk: 90->85
     - SpA: 85->90
 
-- Galarian Weezing (postgame):
+- Galarian Weezing:
     - Atk: 90->85
     - SpA: 85->90
     - Learns Misty Explosion by level up
@@ -1423,15 +1425,17 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Happiny (postgame):
     - Base exp: 110->250
     - Held item: Lucky Egg: 0%->5%
+    - Learns Swift by level up
 
 - Chansey (postgame):
     - Held item: Lucky Punch: 50%->100%
     - Evolution: friendship->36
-    - Learns Revival Blessing by level up
+    - Learns Swift, Hyper Voice, and Revival Blessing by level up
 
 - Blissey (postgame):
     - Held item: Lucky Egg: 50%->100%
-    - Learns Revival Blessing by level up
+    - Learns Swift, Hyper Voice, and Revival Blessing by level up
+    - Lucky Punch works on Blissey now
 
 - Tangela/Tangrowth (postgame):
     - Learn Energy Ball by level up
@@ -1464,12 +1468,26 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Staryu/Starmie:
     - Learns Water Pulse by level up
 
-- Mime Jr./Mr. Mime (not in main game):
+- Mime Jr. (not in main game):
     - Type: Psychic/Fairy->Psychic
     - Gender Ratio: 50/50->100/0
+    - Evolves into Galarian Mr. Mime with an Ice Stone
+    - Learns Expanding Force by level up
 
-- Galarian Mr. Mime/Mr. Rime (not in main game):
+- Mr. Mime (not in main game):
+    - Type: Psychic/Fairy->Psychic
     - Gender Ratio: 50/50->100/0
+    - Learns Expanding Force by level up
+
+- Galarian Mr. Mime (not in main game):
+    - Gender Ratio: 50/50->100/0
+    - Learns Powder Snow, Aurora Beam, Expanding Force, and Ice Beam by level up
+
+- Mr. Rime (not in main game):
+    - Atk: 85->75
+    - Spe: 70->90
+    - Gender Ratio: 50/50->100/0
+    - Learns Powder Snow, Aurora Beam, Expanding Force, and Ice Beam by level up
 
 - Scyther (not in main game):
     - Catch rate: 45->90
@@ -1597,12 +1615,12 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Aerodactyl (postgame):
     - Learns Dual Wingbeat, Double-Edge, Head Smash, and Brave Bird by level up
 
-- Munchlax (not in main game):
+- Munchlax (postgame):
     - Evolution: friendship->20
     - Learns Gastro Acid and Power-Up Punch by Egg Move
 
-- Snorlax (not in main game):
-    - Learns Slack Off by level up
+- Snorlax (postgame):
+    - Learns Slack Off upon evolving
 
 - Zapdos (not in main game):
     - Learns Air Slash by TM
@@ -2963,6 +2981,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Pawniard:
     - Evolution: 52->40
 
+- Bouffalant:
+    - Learns Headbutt and Body Slam by level up
+
 - Rufflet:
     - Evolution: 54->35
 
@@ -3150,6 +3171,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Dragalge (postgame):
     - Learns Dragon Breath by Egg Move
+
+- Clauncher/Clawitzer (postgame):
+    - Learn Scald and Surf by level up
 
 - Helioptile:
     - HP: 44->45

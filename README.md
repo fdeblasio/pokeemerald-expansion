@@ -879,6 +879,7 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Accuracy: 90->100
         - PP: 5->10
     - Psyshield Bash:
+        - Power: 70->90
         - Accuracy: 90->100
     - Twin Beam:
         - Power: 40->50
@@ -1837,9 +1838,15 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Slugma:
     - Evolution: 38->32
+    - Learns Heat Wave by level up
 
 - Magcargo:
+    - HP: 60->70
+    - SpA: 90->100
+    - Learns Power Gem upon evolving
+    - Learns Heat Wave by level up
     - Learns Body Press by TM
+    - Learns High Horsepower by move tutor (since Slugma can)
 
 - Swinub/Piloswine (not in main game):
     - Learn Avalanche, Bulldoze, Stomping Tantrum, and High Horsepower by level up
@@ -1850,53 +1857,73 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Corsola:
     - SpA: 65->80
+    - Learns Water Pulse and Surf by level up
 
 - Galarian Corsola (postgame):
+    - SpA: 65->80
+    - Learns Shadow Ball by level up
+
 - Cursola (postgame):
+    - Learns Shadow Ball by level up
+
+- Remoraid (postgame):
+    - Atk: 65->60
+    - SpA: 65->70
+    - Learns Surf and Snipe Shot by level up
 
 - Octillery (postgame):
     - Atk: 105->100
     - Def: 75->85
     - SpA: 105->110
     - SpD: 75->85
+    - Learns Surf and Snipe Shot by level up
 
 - Delibird (not in main game):
+    - HP: 45->75
     - Atk: 55->75
+    - Spe: 75->95
     - Catch rate: 45->90
     - Hidden Ability: Insomnia->Technician
     - Learns Ice Punch by level up
 
 - Mantyke (not in main game):
+    - Catch rate: 25->180
+    - Learns Gust, Surf, and Hurricane by level up
+
+- Mantine (not in main game):
+    - HP: 85->90
+    - SpA: 80->90
     - Catch rate: 25->90
     - Learns Gust, Surf, and Hurricane by level up
 
-- Mantine (not in main game):
-    - Learns Gust, Surf, and Hurricane by level up
-
-- Mantine (not in main game):
-
 - Skarmory:
-    - Learns Dual Wingbeat by level up
+    - Catch rate: 25->90
+    - Learns Dual Wingbeat and Iron Head by level up
 
 - Houndour/Houndoom:
-    - Learn Snarl and Dark Pulse by level up
+    - Learn Snarl, Burning Jealousy, and Dark Pulse by level up
 
 - Phanpy/Donphan:
-    - Learn Mud Shot by level up
+    - Learn Mud-Slap, Mud Shot, and High Horsepower by level up
 
 - Stantler (postgame):
     - Evolves into Wyrdeer by simply knowing Psyshield Bash
-    - Learns Psyshield Bash by level up
+    - Learns Psyshield Bash, Headbutt, and Body Slam by level up
 
 - Wyrdeer (postgame):
+    - SpA: 105->95
+    - Spe: 65->75
+    - Learns Me First, Headbutt, Body Slam, Jump Kick, and Captivate by level up
 
-- Smeargle (not in main game):
+- Smeargle (postgame):
     - Atk: 20->50
     - Def: 35->50
     - SpA: 20->50
     - SpD: 45->50
+    - Ability: Own Tempo->Trace
 
 - Miltank (postgame):
+    - Learns Mega Kick by level up
 
 - Raikou (not in main game):
     - Hidden Ability: Inner Focus -> Volt Absorb
@@ -1904,21 +1931,23 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Entei (not in main game):
     - Hidden Ability: Inner Focus -> Flash Fire
-    - Learns Flame Burst and Temper Flare by level up
+    - Learns Flame Burst and Blaze Kick by level up
 
 - Suicune (not in main game):
     - Hidden Ability: Inner Focus -> Water Absorb
     - Learns Bubble Beam and Scald by level up
 
 - Larvitar/Pupitar/Tyranitar (not in main game):
-    - Learn Mud-Slap by level up
+    - Learn Mud-Slap, Rock Tomb, and Mud Shot by level up
 
 - Lugia (postgame):
-    - Learns Brave Bird by level up
+    - Learns Wing Attack, Dual Wingbeat, Brave Bird, Psychic, and Psychic Fangs by level up
 
 - Ho-Oh (postgame):
+    - Learns Peck, Wing Attack, Flame Charge, and Dual Wingbeat by level up
 
 - Celebi (not in main game):
+    - Learns Absorb, Psybeam, Giga Drain, Psychic, and Energy Ball by level up
 
 - Treecko:
     - Atk: 45->65
@@ -2697,8 +2726,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Scolipede:
     - Learns X-Scissor and Poison Jab upon evolving
     - Learns Bug Bite at level 12 and Steamroller in its place at level 20
-    - Learns Coil by level up
-    - Learns Lunge by move tutor
+    - Learns Coil and Lunge by level up
 
 - Cottonee:
     - Learns Magical Leaf, Disarming Voice, and Dazzling Gleam by level up
@@ -3032,6 +3060,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Skiddo:
     - Received Grass Pelt as a second Ability and Grassy Surge as a Hidden Ability (previously Grass Pelt)
     - Learns Grassy Terrain by level up
+    - Learns Rock Climb by breeding
 
 - Gogoat:
     - HP: 123->125
@@ -3041,6 +3070,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Spe: 68->70
     - Received Grass Pelt as a second Ability and Grassy Surge as a Hidden Ability (previously Grass Pelt)
     - Learns Trailblaze, Grassy Terrain, Grassy Glide by level up
+    - Learns Rock Climb by breeding
 
 - Pancham:
     - Learns Drain Punch by level up

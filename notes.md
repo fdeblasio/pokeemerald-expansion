@@ -36,6 +36,7 @@ upcoming
 
 ## To Do:
 - Move README.md to FEATURES.md
+- Mega Pyroar and Falinks will need their HP adjusted to match their regular HP as well as their BST updated
 - Finish adding fishing encounters to DexNav
     - One row?:
         - Screen: 720 pixels wide

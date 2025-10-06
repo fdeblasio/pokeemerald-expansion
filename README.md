@@ -907,7 +907,6 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Accuracy: 95->100
     - Mountain Gale:
         - Accuracy: 85->100
-        - PP: 5->10
 - Dragon:
     - Clanging Scales:
         - PP: 5->10
@@ -2693,10 +2692,16 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Audino:
     - HP: 103->105
+    - Def: 86->90
+    - SpD: 86->90
     - Gender Ratio: 50/50 -> 25/75
     - Base experience: 390->395
+    - Learns Fairy Wind, Swift, and Dazzling Gleam by level up
 
 - Mega Audino:
+    - HP: 103->105
+    - Def: 126->130
+    - SpD: 126->130
     - Base experience: 425->500
 
 - Tympole:
@@ -2783,6 +2788,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Trubbish/Garbodor:
     - Learn Poison Sting, Poison Fang, and Poison Jab by level up
+
+- Zorua/Zoroark:
+    - Learn Snarl and Dark Pulse by level up
 
 - Gothita:
     - Evolution: 32->22
@@ -3197,6 +3205,16 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Spe: 99/84/69/54->100/85/70/55
     - Learns Leafage, Shadow Punch, and Shadow Claw by level up
     - Learns Body Press by TM
+
+- Bergmite:
+    - Evolves into Hisuian Avalugg with an Ice Stone
+    - Learns Ice Spinner by level up
+
+- Avalugg:
+    - Learns Ice Spinner by level up
+
+- Hisuian Avalugg:
+    - Learns Rock Throw, Rock Tomb, and Ice Spinner by level up
 
 - Noibat:
     - Evolution: 48->40

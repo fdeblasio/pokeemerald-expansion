@@ -7877,7 +7877,6 @@ static const u16 sZoruaEggMoveLearnset[] = {
     MOVE_REVENGE,
     MOVE_ROUND,
     MOVE_SKITTER_SMACK,
-    MOVE_SNARL,
     MOVE_SNORE,
     MOVE_SPITE,
     MOVE_SUCKER_PUNCH,

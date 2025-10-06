@@ -6540,19 +6540,19 @@
               },
               {
                 "range": "POSTGAME",
-                "species": "RAICHU_ALOLA"
+                "species": "MUNCHLAX"
               },
               {
                 "range": "POSTGAME",
-                "species": "RAICHU_ALOLA"
+                "species": "MUNCHLAX"
               },
               {
                 "range": "POSTGAME",
-                "species": "RAICHU_ALOLA"
+                "species": "MUNCHLAX"
               },
               {
                 "range": "POSTGAME",
-                "species": "RAICHU_ALOLA"
+                "species": "MUNCHLAX"
               }
             ]
           }
@@ -6859,7 +6859,7 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 9,
+            "encounter_rate": 25,
             "mons": [
               {
                 "range": "POSTGAME",
@@ -6867,11 +6867,11 @@
               },
               {
                 "range": "POSTGAME",
-                "species": "CORSOLA_GALAR"
+                "species": "CLAUNCHER"
               },
               {
                 "range": "POSTGAME",
-                "species": "CORSOLA_GALAR"
+                "species": "CLAUNCHER"
               },
               {
                 "range": "POSTGAME",

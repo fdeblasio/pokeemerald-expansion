@@ -80,6 +80,7 @@ upcoming
 - Victory Road:
     - Vito can use TMs
 - Other:
+    - Diversify Safari Zone water/fishing encounters
     - Clear up trainer spots by having just one set of gym leader rematches?
         - Late-game trainers like Nicolas or John and Jay too
         - Even just reducing to two or three rematches would save space
@@ -102,9 +103,16 @@ upcoming
 - Once more changes are made, consolidate commits on develop branch again
 
 ### Pokémon
-- Double check that all Gen1-2 Pokemon have updated movesets
-    - Can start with Gen2 since there's less
+- Double check that all Gen1 Pokemon have updated movesets
     - Next do all starters/beasts/bugs/birds/etc.
+    - Not including cross-gen evos or regionals or already updated:
+        6 72
+        7 88
+        8 96
+        4 107
+        9 120
+        1 151
+        5 156
 - Update Skarmory's HP and Atk to 90 once Mega Skarmory is out. Will need to update Mega Skarmory's stats to have +100 BST
 - Turn some Normal/Flying types into either pure Flying or Flying/Normal?
 - Add in GMax forms as Megas with +20 to every non-HP stat?
@@ -340,10 +348,8 @@ upcoming
 - Edit Slot odds (SLOT_MACHINE_)? Even though there's only three prizes?
 - Add Pokémon with dolls? (Togepi, Smoochum, Clefairy, Lapras, Snorlax, Venusaur, Charizard, Blastoise)
 - Add in Hoenn Pokédex regionals? (currently postgame Safari Zone)
-    - Sun/Shiny Stone for Alolan Raichu
     - Alolan Sandshrew/Vulpix at Shoal Cave
     - Alolan Muk
-    - Shiny/Dawn Stone for Galarian Weezing
     - Cursola
     - Obstagoon
     - Hisui Voltorb

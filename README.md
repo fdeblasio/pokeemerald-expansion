@@ -772,6 +772,9 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Bolt Strike:
         - Accuracy: 85->100
         - PP: 5->10
+    - Double Shock:
+        - Power: 120->130
+        - PP: 5->10
     - Electro Drift:
         - PP: 5->10
     - Electroweb:
@@ -1204,6 +1207,12 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Vulpix/Ninetales:
     - Learn Mystical Fire by level up
 
+- Alolan Vulpix (postgame):
+    - Learns Fairy Wind by level up
+
+- Alolan Ninetales (postgame):
+    - Learns Fairy Wind, Disarming Voice, and Alluring Voice by level up
+
 - Oddish/Gloom/Vileplume/Bellossom:
     - Learn Energy Ball by level up
 
@@ -1238,7 +1247,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Def: 35->40
     - SpA: 50->55
     - Evolution: friendship->28
-    - Learns Pursuit and Thief by level up
+    - Learns Pursuit, Snarl, and Thief by level up
     - Learns Cut by TM
 
 - Galarian Meowth (postgame):
@@ -1254,7 +1263,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Alolan Persian (postgame):
     - HP: 65->70
     - Def: 60->65
-    - Learns Pursuit and Thief by level up
+    - Learns Pursuit, Snarl, and Thief by level up
     - Learns Cut by TM
 
 - Perrserker (postgame):
@@ -1335,6 +1344,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Ponyta/Rapidash (not in main game):
     - Learn Temper Flare and Blaze Kick by level up
+
+- Galarian Ponyta/Galarian Rapidash (not in main game):
+    - Learn Heart Stamp, Spirit Break, Zen Headbutt, and Play Rough by level up
 
 - Grimer/Muk:
     - Learn Poison Jab by level up
@@ -3598,8 +3610,14 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Tarountula/Spidops:
     - Learn Spider Web by level up
 
+- Pawmi:
+    - Learns Thunder Punch by level up
+
+- Pawmo:
+    - Learns Mach Punch, Power-Up Punch, Drain Punch, and Thunder Punch by level up
+
 - Pawmot:
-    - Learns Drain Punch by TM
+    - Learns Mach Punch, Power-Up Punch, Drain Punch, Thunder Punch, Mega Punch, and Supercell Slam by level up
 
 - Fidough:
     - HP: 37->40

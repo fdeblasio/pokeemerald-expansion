@@ -20403,10 +20403,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Discharges all electricity,\n"
             "losing the Electric type."),
         .effect = EFFECT_FAIL_IF_NOT_ARG_TYPE,
-        .power = 120,
+        .power = 130,
         .type = TYPE_ELECTRIC,
         .accuracy = 100,
-        .pp = 5,
+        .pp = 10,
         .target = TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,

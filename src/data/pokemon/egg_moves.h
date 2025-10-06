@@ -3779,7 +3779,6 @@ static const u16 sSlugmaEggMoveLearnset[] = {
     MOVE_FLAME_CHARGE,
     MOVE_GUARD_SWAP,
     MOVE_HEAT_CRASH,
-    MOVE_HEAT_WAVE,
     MOVE_INFERNO,
     MOVE_INFESTATION,
     MOVE_MEMENTO,
@@ -4034,7 +4033,6 @@ static const u16 sSkarmoryEggMoveLearnset[] = {
 
 #if P_FAMILY_HOUNDOUR
 static const u16 sHoundourEggMoveLearnset[] = {
-    MOVE_BURNING_JEALOUSY,
     MOVE_CONFIDE,
     MOVE_DESTINY_BOND,
     MOVE_FEINT,
@@ -4082,7 +4080,6 @@ static const u16 sPhanpyEggMoveLearnset[] = {
     MOVE_HEAVY_SLAM,
     MOVE_HELPING_HAND,
     MOVE_ICE_SHARD,
-    MOVE_MUD_SLAP,
     MOVE_ROUND,
     MOVE_SAND_TOMB,
     MOVE_SMACK_DOWN,
@@ -4113,7 +4110,6 @@ static const u16 sDonphanEggMoveLearnset[] = {
     MOVE_HELPING_HAND,
     MOVE_ICE_FANG,
     MOVE_ICE_SHARD,
-    MOVE_MUD_SLAP,
     MOVE_ROCK_POLISH,
     MOVE_ROUND,
     MOVE_SAND_TOMB,
@@ -4203,7 +4199,6 @@ static const u16 sLarvitarEggMoveLearnset[] = {
     MOVE_CURSE,
     MOVE_FOCUS_ENERGY,
     MOVE_HELPING_HAND,
-    MOVE_MUD_SHOT,
     MOVE_MUDDY_WATER,
     MOVE_OUTRAGE,
     MOVE_PURSUIT,
@@ -9012,6 +9007,7 @@ static const u16 sSkiddoEggMoveLearnset[] = {
     MOVE_MUD_SHOT,
     MOVE_MUD_SLAP,
     MOVE_NATURE_POWER,
+    MOVE_ROCK_CLIMB,
     MOVE_ROUND,
     MOVE_SNORE,
     MOVE_STOMPING_TANTRUM,

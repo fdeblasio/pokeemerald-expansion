@@ -135,6 +135,11 @@ upcoming
 - Xaman's TM Case? (https://www.pokecommunity.com/showpost.php?p=10378278)
 
 ### Trainers
+- Remove type duplicates:
+    - Turn Wallace into a Fairy specialist and turn Milotic into Water/Fairy?
+    - Turn Juan into a Poison specialist (Swalot as Ace since both have mustaches)?
+        - Would need to update gym palette
+    - Turn Team Magma into Ground specialists (Camerupt still works as other people like Winona and Sidney use the secondary typing for their aces)?
 - Add level defines per route/group of routes?
 - Update Tabitha (and maybe others?) macros to use Magma levels instead of Rematch levels?
 - Add ORAS team members (like a Picknicker getting a Gulpin)

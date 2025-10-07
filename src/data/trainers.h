@@ -496,6 +496,82 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .gender = TRAINER_MON_FEMALE,                                         \
     }
 
+//Roxanne for hacks
+#define ROXANNE_(rematch)                                                 \
+    {                                                                     \
+    REMATCH_MON(, TIER3, rematch),                                 \
+    .ability = ABILITY_,                                       \
+    .nature = NATURE_,                                                \
+    EV_SPREAD_,                                                 \
+    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
+    .gender = TRAINER_MON_FEMALE,                                         \
+    }
+
+//Sand Veil/replace Double Edge with Body Press if paired with Sand Stream
+#define ROXANNE_GOLEM(rematch)                                                             \
+    {                                                                                      \
+    REMATCH_MON(GOLEM, TIER3, rematch),                                                    \
+    .ability = ABILITY_ROCK_HEAD,                                                          \
+    .nature = NATURE_IMPISH,                                                               \
+    EV_SPREAD_ATK_DEF_HP,                                                                  \
+    .moves = {MOVE_ROCK_SLIDE, MOVE_HIGH_HORSEPOWER, MOVE_DOUBLE_EDGE, MOVE_STEALTH_ROCK}, \
+    .gender = TRAINER_MON_FEMALE,                                                          \
+    }
+
+#define ROXANNE_ALOLAN_GOLEM
+#define ROXANNE_OMASTAR
+#define ROXANNE_KABUTOPS
+#define ROXANNE_AERODACTYL
+#define ROXANNE_SUDOWOODO
+#define ROXANNE_TYRANITAR //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L457
+#define ROXANNE_RAMPARDOS //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L457
+#define ROXANNE_BASTIODON
+
+#define ROXANNE_GIGALITH(rematch)                                                  \
+    {                                                                              \
+    REMATCH_MON(GIGALITH, TIER3, rematch),                                         \
+    .ability = ABILITY_SAND_STREAM,                                                \
+    .nature = NATURE_ADAMANT,                                                      \
+    EV_SPREAD_ATK_SPD_HP,                                                          \
+    .moves = {MOVE_ROCK_SLIDE, MOVE_IRON_HEAD, MOVE_SANDSTORM, MOVE_STEALTH_ROCK}, \
+    .gender = TRAINER_MON_FEMALE,                                                  \
+    }
+
+//ROXANNE_CARRACOSTA: https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L446
+#define ROXANNE_ARCHEOPS //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L457
+#define ROXANNE_BARBARACLE
+#define ROXANNE_TYRANTRUM //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L457
+#define ROXANNE_AURORUS
+#define ROXANNE_CARBINK
+#define ROXANNE_LYCANROC_MIDDAY
+#define ROXANNE_LYCANROC_MIDNIGHT
+#define ROXANNE_LYCANROC_DUSK
+#define ROXANNE_MINIOR
+#define ROXANNE_COALOSSAL
+
+#define ROXANNE_STONJOURNER(rematch)                                            \
+    {                                                                           \
+    REMATCH_MON(STONJOURNER, TIER3, rematch),                                   \
+    .ability = ABILITY_POWER_SPOT,                                              \
+    .nature = NATURE_IMPISH,                                                    \
+    EV_SPREAD_ATK_DEF_HP,                                                       \
+    .moves = {MOVE_ROCK_SLIDE, MOVE_BODY_PRESS, MOVE_CURSE, MOVE_STEALTH_ROCK}, \
+    .gender = TRAINER_MON_FEMALE,                                               \
+    }
+
+#define ROXANNE_GARGANACL(rematch)                                                \
+    {                                                                             \
+    REMATCH_MON(GARGANACL, TIER3, rematch),                                       \
+    .ability = ABILITY_PURIFYING_SALT,                                            \
+    .nature = NATURE_IMPISH,                                                      \
+    EV_SPREAD_ATK_DEF_HP,                                                         \
+    .moves = {MOVE_ROCK_SLIDE, MOVE_SALT_CURE, MOVE_BODY_PRESS, MOVE_WIDE_GUARD}, \
+    .gender = TRAINER_MON_FEMALE,                                                 \
+    }
+
+#define ROXANNE_KLAWF
+#define ROXANNE_GLIMMORA //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L457
+
 [DIFFICULTY_NORMAL][TRAINER_ROXANNE_2] =
 {
     ROXANNE_INFO,
@@ -4249,7 +4325,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 [DIFFICULTY_NORMAL][TRAINER_JOSH] =
 {
     .trainerName = _("Josh"),
-    YOUNGSTER_INFO,
+    SCHOOLKID_M_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
@@ -4265,7 +4341,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 [DIFFICULTY_NORMAL][TRAINER_TOMMY] =
 {
     .trainerName = _("Tommy"),
-    YOUNGSTER_INFO,
+    SCHOOLKID_M_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
@@ -4282,10 +4358,10 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },
 },
 
-[DIFFICULTY_NORMAL][TRAINER_MARC] =
+[DIFFICULTY_NORMAL][TRAINER_MARCIA] =
 {
-    .trainerName = _("Marc"),
-    HIKER_INFO,
+    .trainerName = _("Marcia"),
+    SCHOOLKID_F_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {

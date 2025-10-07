@@ -158,7 +158,7 @@
 //Rustboro Gym
 #define TRAINER_JOSH                      148
 #define TRAINER_TOMMY                     149
-#define TRAINER_MARC                      150
+#define TRAINER_MARCIA                    150
 //Rusturf Tunnel
 #define TRAINER_CASPIAN_RUSTURF_TUNNEL    151
 //Route 106 (land)

@@ -47,9 +47,9 @@ RustboroCity_Gym_EventScript_Tommy::
 	msgbox RustboroCity_Gym_Text_TommyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-RustboroCity_Gym_EventScript_Marc::
-	trainerbattle_single TRAINER_MARC, RustboroCity_Gym_Text_MarcIntro, RustboroCity_Gym_Text_MarcDefeat
-	msgbox RustboroCity_Gym_Text_MarcPostBattle, MSGBOX_AUTOCLOSE
+RustboroCity_Gym_EventScript_Marcia::
+	trainerbattle_single TRAINER_MARCIA, RustboroCity_Gym_Text_MarciaIntro, RustboroCity_Gym_Text_MarciaDefeat
+	msgbox RustboroCity_Gym_Text_MarciaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 RustboroCity_Gym_EventScript_GymGuide::
@@ -159,17 +159,17 @@ RustboroCity_Gym_Text_TommyPostBattle:
 	.string "several times.\p"
 	.string "You'd better be on your guard!$"
 
-RustboroCity_Gym_Text_MarcIntro:
+RustboroCity_Gym_Text_MarciaIntro:
 	.string "We might be in the middle of town,\n"
 	.string "but so what?\p"
 	.string "My Rock Pokémon need room to\n"
 	.string "rampage!$"
 
-RustboroCity_Gym_Text_MarcDefeat:
+RustboroCity_Gym_Text_MarciaDefeat:
 	.string "Oh, man oh man!\n"
 	.string "Our challenger is one feisty customer!$"
 
-RustboroCity_Gym_Text_MarcPostBattle:
+RustboroCity_Gym_Text_MarciaPostBattle:
 	.string "I have to hand it to our Leader.\p"
 	.string "It took smarts and sense for her to\n"
 	.string "pick the Rock type at her young age.$"

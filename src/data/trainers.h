@@ -496,17 +496,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .gender = TRAINER_MON_FEMALE,                                         \
     }
 
-//Roxanne for hacks
-#define ROXANNE_(rematch)                                                 \
-    {                                                                     \
-    REMATCH_MON(, TIER3, rematch),                                 \
-    .ability = ABILITY_,                                       \
-    .nature = NATURE_,                                                \
-    EV_SPREAD_,                                                 \
-    .moves = {MOVE_, MOVE_, MOVE_, MOVE_}, \
-    .gender = TRAINER_MON_FEMALE,                                         \
-    }
-
+//Extra for hacks
 //Sand Veil/replace Double Edge with Body Press if paired with Sand Stream
 #define ROXANNE_GOLEM(rematch)                                                             \
     {                                                                                      \
@@ -518,13 +508,33 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .gender = TRAINER_MON_FEMALE,                                                          \
     }
 
-#define ROXANNE_ALOLAN_GOLEM
+#define ROXANNE_GOLEM_ALOLA
 #define ROXANNE_OMASTAR
 #define ROXANNE_KABUTOPS
 #define ROXANNE_AERODACTYL
 #define ROXANNE_SUDOWOODO
-#define ROXANNE_TYRANITAR //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L457
-#define ROXANNE_RAMPARDOS //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L457
+
+#define ROXANNE_TYRANITAR(rematch)                                                    \
+    {                                                                                 \
+    REMATCH_MON(TYRANITAR, TIER3, rematch),                                           \
+    .ability = ABILITY_SAND_STREAM,                                                   \
+    .nature = NATURE_ADAMANT,                                                         \
+    EV_SPREAD_ATK_DEF_HP,                                                             \
+    .moves = {MOVE_ROCK_SLIDE, MOVE_CRUNCH, MOVE_HIGH_HORSEPOWER, MOVE_DRAGON_DANCE}, \
+    .gender = TRAINER_MON_FEMALE,                                                     \
+    }
+
+#define ROXANNE_RAMPARDOS(rematch, tier)                                             \
+    {                                                                                \
+    REMATCH_MON(RAMPARDOS, tier, rematch),                                          \
+    .ability = ABILITY_ROCK_HEAD,                                                    \
+    .nature = NATURE_ADAMANT,                                                        \
+    EV_SPREAD_ATK_SPE_HP,                                                            \
+    .moves = {MOVE_HEAD_SMASH, MOVE_ZEN_HEADBUTT, MOVE_IRON_HEAD, MOVE_BRICK_BREAK}, \
+    .gender = TRAINER_MON_FEMALE,                                                    \
+    .heldItem = tier == TIER2 ? ITEM_QUICK_CLAW : ITEM_NONE,                         \
+    }
+
 #define ROXANNE_BASTIODON
 
 #define ROXANNE_GIGALITH(rematch)                                                  \
@@ -538,9 +548,31 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     }
 
 //ROXANNE_CARRACOSTA: https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L446
-#define ROXANNE_ARCHEOPS //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L457
+
+#define ROXANNE_ARCHEOPS(rematch, tier)                                            \
+    {                                                                              \
+    REMATCH_MON(ARCHEOPS, tier, rematch),                                          \
+    .ability = ABILITY_EARLY_BIRD,                                                 \
+    .nature = NATURE_ADAMANT,                                                      \
+    EV_SPREAD_ATK_SPE_HP,                                                          \
+    .moves = {MOVE_ROCK_SLIDE, MOVE_DUAL_WINGBEAT, MOVE_CRUNCH, MOVE_DRAGON_CLAW}, \
+    .gender = TRAINER_MON_FEMALE,                                                  \
+    .heldItem = tier == TIER2 ? ITEM_SHELL_BELL : ITEM_NONE,                       \
+    }
+
 #define ROXANNE_BARBARACLE
-#define ROXANNE_TYRANTRUM //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L457
+
+#define ROXANNE_TYRANTRUM(rematch, tier)                                                 \
+    {                                                                                    \
+    REMATCH_MON(TYRANTRUM, tier, rematch),                                               \
+    .ability = ABILITY_ROCK_HEAD,                                                        \
+    .nature = NATURE_ADAMANT,                                                            \
+    EV_SPREAD_ATK_DEF_HP,                                                                \
+    .moves = {MOVE_HEAD_SMASH, MOVE_DRAGON_CLAW, MOVE_PSYCHIC_FANGS, MOVE_DRAGON_DANCE}, \
+    .gender = TRAINER_MON_FEMALE,                                                        \
+    .heldItem = tier == TIER2 ? ITEM_ROCKY_HELMET : ITEM_NONE,                           \
+    }
+
 #define ROXANNE_AURORUS
 #define ROXANNE_CARBINK
 #define ROXANNE_LYCANROC_MIDDAY
@@ -570,7 +602,16 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     }
 
 #define ROXANNE_KLAWF
-#define ROXANNE_GLIMMORA //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L457
+
+#define ROXANNE_GLIMMORA(rematch)                                                   \
+    {                                                                               \
+    REMATCH_MON(GLIMMORA, TIER3, rematch),                                          \
+    .ability = ABILITY_TOXIC_DEBRIS,                                                \
+    .nature = NATURE_MODEST,                                                        \
+    EV_SPREAD_SPA_SPE_HP,                                                           \
+    .moves = {MOVE_POWER_GEM, MOVE_VENOSHOCK, MOVE_MORTAL_SPIN, MOVE_STEALTH_ROCK}, \
+    .gender = TRAINER_MON_FEMALE,                                                   \
+    }
 
 [DIFFICULTY_NORMAL][TRAINER_ROXANNE_2] =
 {
@@ -729,6 +770,28 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_PSYCHO_CUT, MOVE_NIGHT_SLASH}, \
     .gender = TRAINER_MON_MALE,                                                   \
     }
+
+//Extra for hacks
+#define BRAWLY_ANNIHILAPE
+#define BRAWLY_SIRFETCHD
+#define BRAWLY_HITMONLEE
+#define BRAWLY_HITMONCHAN
+#define BRAWLY_HITMONTOP
+#define BRAWLY_TAUROS_PALDEA
+#define BRAWLY_TAUROS_BLAZE
+#define BRAWLY_TAUROS_AQUA
+#define BRAWLY_SNEASLER
+#define BRAWLY_LUCARIO
+#define BRAWLY_CONKELDURR
+#define BRAWLY_THROH
+#define BRAWLY_SAWK
+#define BRAWLY_MIENSHAO //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L626
+#define BRAWLY_PANGORO //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L636
+#define BRAWLY_HAWLUCHA //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L646
+#define BRAWLY_CRABOMINABLE //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L607
+#define BRAWLY_PASSIMIAN
+#define BRAWLY_GRAPPLOCT //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L595
+#define BRAWLY_FALINKS
 
 [DIFFICULTY_NORMAL][TRAINER_BRAWLY_2] =
 {
@@ -890,6 +953,36 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     EV_SPREAD_SPA_SPE_HP,                                                           \
     .moves = {MOVE_DISCHARGE, MOVE_EERIE_IMPULSE, MOVE_LIGHT_SCREEN, MOVE_SCREECH}, \
     }
+
+//Extra for hacks
+#define WATTSON_RAICHU //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L791
+#define WATTSON_RAICHU_ALOLA
+#define WATTSON_ELECTRODE_HISUI
+#define WATTSON_ELECTIVIRE //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L770
+#define WATTSON_JOLTEON
+#define WATTSON_AMPHAROS
+#define WATTSON_LUXRAY //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L760
+#define WATTSON_PACHIRISU
+#define WATTSON_ROTOM //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L801 (Cats' is the same with Hex replaced by Hyper Voice)
+#define WATTSON_ROTOM_HEAT
+#define WATTSON_ROTOM_WASH
+#define WATTSON_ROTOM_FROST
+#define WATTSON_ROTOM_FAN
+#define WATTSON_ROTOM_MOW
+#define WATTSON_ZEBSTRIKA
+#define WATTSON_EMOLGA
+#define WATTSON_EELEKTROSS //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L794
+#define WATTSON_HELIOLISK //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L772
+#define WATTSON_DEDENNE
+#define WATTSON_ORICORIO
+#define WATTSON_TOGEDEMARU
+#define WATTSON_BOLTUND
+#define WATTSON_TOXTRICITY
+#define WATTSON_PINCURCHIN
+#define WATTSON_MORPEKO
+#define WATTSON_PAWMOT
+#define WATTSON_BELLIBOLT //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L758
+#define WATTSON_KILOWATTREL //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L780 and https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L783
 
 [DIFFICULTY_NORMAL][TRAINER_WATTSON_2] =
 {
@@ -1054,6 +1147,24 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .moves = {MOVE_OVERHEAT, MOVE_GRUDGE, MOVE_NASTY_PLOT, MOVE_SUNNY_DAY}, \
     .gender = TRAINER_MON_FEMALE,                                           \
     }
+
+//Extra for hacks
+#define FLANNERY_ARCANINE //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L967
+#define FLANNERY_ARCANINE_HISUI
+#define FLANNERY_RAPIDASH //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L943
+#define FLANNERY_MAROWAK //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L964 (Cats' is the same with Bonemerang replaced by Double-Edge)
+#define FLANNERY_MAGMORTAR
+#define FLANNERY_FLAREON
+#define FLANNERY_SIMISEAR
+#define FLANNERY_DARMANITAN
+#define FLANNERY_HEATMOR //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L957
+#define FLANNERY_TALONFLAME //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L974
+#define FLANNERY_PYROAR //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L923
+#define FLANNERY_ORICORIO
+#define FLANNERY_TURTONATOR
+#define FLANNERY_CENTISKORCH
+#define FLANNERY_ARMAROUGE
+#define FLANNERY_CERULEDGE
 
 [DIFFICULTY_NORMAL][TRAINER_FLANNERY_2] =
 {
@@ -1220,6 +1331,60 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .moves = {MOVE_FACADE, MOVE_SHADOW_CLAW, MOVE_SUCKER_PUNCH, MOVE_DISABLE}, \
     .gender = TRAINER_MON_MALE,                                                \
     }
+
+//Extra for hacks
+#define NORMAN_PIDGEOT
+#define NORMAN_RATICATE
+#define NORMAN_FEAROW
+#define NORMAN_WIGGLYTUFF
+#define NORMAN_PERSIAN //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1101
+#define NORMAN_FARFETCHD
+#define NORMAN_DODRIO
+#define NORMAN_LICKILICKY
+#define NORMAN_BLISSEY
+#define NORMAN_KANGASKHAN
+#define NORMAN_TAUROS
+#define NORMAN_DITTO
+#define NORMAN_PORYGON_Z
+#define NORMAN_SNORLAX
+#define NORMAN_FURRET
+#define NORMAN_NOCTOWL
+#define NORMAN_AMBIPOM
+#define NORMAN_FARIGIRAF
+#define NORMAN_DUDUNSPARCE
+#define NORMAN_URSALUNA
+#define NORMAN_WYRDEER
+#define NORMAN_SMEARGLE
+#define NORMAN_MILTANK
+#define NORMAN_SWELLOW
+#define NORMAN_DELCATTY //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1089
+#define NORMAN_CASTFORM
+#define NORMAN_STARAPTOR
+#define NORMAN_BIBAREL //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1120
+#define NORMAN_LOPUNNY
+#define NORMAN_PURUGLY //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1112
+#define NORMAN_CHATOT
+#define NORMAN_WATCHOG //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1123
+#define NORMAN_STOUTLAND //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1109
+#define NORMAN_UNFEZANT
+#define NORMAN_AUDINO
+#define NORMAN_ZOROARK
+#define NORMAN_CINCCINO
+#define NORMAN_SAWSBUCK
+#define NORMAN_BOUFFALANT
+#define NORMAN_BRAVIARY
+#define NORMAN_DIGGERSBY
+#define NORMAN_FURFROU
+#define NORMAN_TOUCANNON
+#define NORMAN_GUMSHOOS //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1143
+#define NORMAN_BEWEAR
+#define NORMAN_ORANGURU
+#define NORMAN_KOMALA
+#define NORMAN_GREEDENT
+#define NORMAN_DUBWOOL
+#define NORMAN_OINKOLOGNE
+#define NORMAN_MAUSHOLD
+#define NORMAN_SQUAWKABILLY
 
 [DIFFICULTY_NORMAL][TRAINER_NORMAN_2] =
 {
@@ -1394,6 +1559,17 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .gender = TRAINER_MON_FEMALE,                                                    \
     }
 
+//Extra for hacks
+//WINONA_DODRIO https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1312
+//WINONA_XATU https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1317
+//WINONA_STARAPTOR https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1292
+//WINONA_ROTOM https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1312
+#define WINONA_NOIVERN //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1302 (Cats' has Roost/Tailwind replaced by Flamethrower/Roost)
+#define WINONA_CORVIKNIGHT //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1263
+#define WINONA_CRAMORANT //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1271
+#define WINONA_BOMBIRDIER //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1281 (Cats' has Rocky Payload/Hone Claws replaced by Big Pecks/Roost)
+#define WINONA_FLAMIGO //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1259 (Cats' has Dual Wingbeat/Throat Chop/Sitrus Berry replaced by Acrobatics/Liquidation/Flying Gem)
+
 [DIFFICULTY_NORMAL][TRAINER_WINONA_2] =
 {
     WINONA_INFO,
@@ -1553,6 +1729,33 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_MYSTICAL_FIRE, MOVE_CALM_MIND}, \
     .gender = TRAINER_MON_FEMALE,                                                     \
     }
+
+//Extra for hacks
+#define TATE_ALAKAZAM //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1426 (Cats' has Shadow Ball replaced with Recover)
+#define LIZA_RAPIDASH
+#define TATE_LIZA_SLOWBRO
+#define TATE_LIZA_SLOWKING
+#define TATE_LIZA_HYPNO
+#define TATE_MR_MIME
+#define LIZA_ESPEON //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1458 (Cats' has Morning Sun/Psychic Terrain replaced with Psychic Terrain/Calm Mind)
+#define TATE_LIZA_XATU
+#define TATE_LIZA_UNOWN
+#define TATE_LIZA_WOBBUFFET
+#define TATE_GALLADE
+#define TATE_LIZA_MUSHARNA
+#define TATE_LIZA_SWOOBAT
+#define TATE_LIZA_SIGILYPH
+#define LIZA_GOTHITELLE
+#define TATE_REUNICLUS
+#define TATE_LIZA_BEHEEYEM
+#define TATE_BRAVIARY
+#define TATE_MEOWSTIC //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1432
+#define LIZA_MEOWSTIC //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1444
+#define TATE_LIZA_ORICORIO
+#define LIZA_HATTERENE //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1437
+#define TATE_INDEEDEE
+#define LIZA_INDEEDEE
+#define LIZA_ESPATHRA //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1486
 
 [DIFFICULTY_NORMAL][TRAINER_TATE_AND_LIZA_2] =
 {
@@ -1861,6 +2064,27 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .moves = {MOVE_CRUNCH, MOVE_LIQUIDATION, MOVE_POISON_FANG, MOVE_ICE_FANG}, \
     }
 
+//Extra for hacks
+#define SIDNEY_RATICATE
+#define SIDNEY_PERSIAN //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1758
+#define SIDNEY_UMBREON //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1788 (Cats' replaced Moonlight/Baby Doll Eyes with Confuse Ray/Mean Look)
+#define SIDNEY_HONCHKROW
+#define SIDNEY_OVERQWIL
+#define SIDNEY_WEAVILE //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1768
+#define SIDNEY_HOUNDOOM //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1758
+#define SIDNEY_OBSTAGOON
+#define SIDNEY_SABLEYE
+#define SIDNEY_LIEPARD //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1738
+#define SIDNEY_SCRAFTY
+#define SIDNEY_ZOROARK
+#define SIDNEY_KINGAMBIT
+#define SIDNEY_MANDIBUZZ
+#define SIDNEY_HYDREIGON
+#define SIDNEY_MALAMAR //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1778
+#define SIDNEY_THIEVUL
+#define SIDNEY_GRIMMSNARL //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1748
+#define SIDNEY_MABOSSTIFF
+
 [DIFFICULTY_NORMAL][TRAINER_SIDNEY] =
 {
     SIDNEY_INFO,
@@ -1965,6 +2189,22 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .moves = {MOVE_SHADOW_BALL, MOVE_POWER_GEM, MOVE_SPITE, MOVE_STRENGTH_SAP}, \
     .gender = TRAINER_MON_FEMALE,                                               \
     }
+
+//Extra for hacks
+#define PHOEBE_GENGAR //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1859 (Cats' specifies Cursed Body as the Ability and swaps the order of Giga Drain/Dazzling Gleam)
+#define PHOEBE_MISMAGIUS //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1878
+#define PHOEBE_DRIFBLIM
+#define PHOEBE_SPIRITOMB //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1887
+#define PHOEBE_COFAGRIGUS
+#define PHOEBE_CHANDELURE //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1868 (Cats' replaces Flame Body with Infiltrator)
+#define PHOEBE_TREVENANT
+#define PHOEBE_GOURGEIST //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1840
+#define PHOEBE_ORICORIO
+#define PHOEBE_PALOSSAND //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1900
+#define PHOEBE_MIMIKYU
+#define PHOEBE_DHELMISE
+#define PHOEBE_POLTEAGEIST
+#define PHOEBE_HOUNDSTONE
 
 [DIFFICULTY_NORMAL][TRAINER_PHOEBE] =
 {
@@ -2073,6 +2313,23 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .heldItem = ITEM_ICY_ROCK,                                                   \
     }
 
+//Extra for hacks
+#define GLACIA_SANDSLASH
+#define GLACIA_MR_RIME
+#define GLACIA_JYNX
+#define GLACIA_GLACEON
+#define GLACIA_MAMOSWINE //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1970 (Cats' replaces Thick Fat/Trailblaze with Snow Cloak/Ice Shard)
+#define GLACIA_DELIBIRD
+#define GLACIA_DARMANITAN
+#define GLACIA_VANILLUXE //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1650
+#define GLACIA_BEARTIC //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1660
+#define GLACIA_CRYOGONAL
+#define GLACIA_AVALUGG
+#define GLACIA_AVALUGG_HISUI
+#define GLACIA_FROSMOTH //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1981
+#define GLACIA_EISCUE
+#define GLACIA_CETITAN
+
 [DIFFICULTY_NORMAL][TRAINER_GLACIA] =
 {
     GLACIA_INFO,
@@ -2178,6 +2435,19 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .moves = {MOVE_DRAGON_PULSE, MOVE_SLUDGE_BOMB, MOVE_DRAGON_TAIL, MOVE_TOXIC_SPIKES}, \
     .gender = TRAINER_MON_MALE,                                                          \
     }
+
+//Extra for hacks
+#define DRAKE_DRAGONITE
+#define DRAKE_GARCHOMP //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L2048
+#define DRAKE_HAXORUS //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L2055 and https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L2078
+#define DRAKE_DRUDDIGON //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L2085 and https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L2098
+#define DRAKE_GOODRA //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L2035
+#define DRAKE_DRAMPA //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L2075 and https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L2048
+#define DRAKE_KOMMO_O
+#define DRAKE_DRAGAPULT
+#define DRAKE_CYCLIZAR //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L2095 (Cats' replaces U-turn with Body Slam)
+#define DRAKE_TATSUGIRI
+#define DRAKE_BAXCALIBUR
 
 [DIFFICULTY_NORMAL][TRAINER_DRAKE] =
 {
@@ -2295,6 +2565,28 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 WALLACE_BATTLE(WALLACE, 69),
 WALLACE_BATTLE(WALLACE_REMATCH, 90),
 
+//Turn current party into defines
+//#define STEVEN_METAGROSS
+//#define STEVEN_AGGRON
+//#define STEVEN_MAWILE
+#define STEVEN_JIRACHI
+#define STEVEN_CLAYDOL //Add new Steel type?
+#define STEVEN_SKARMORY
+
+//Extra for hacks
+#define STEVEN_PERRSERKER //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/include/data.h#L144
+#define STEVEN_STEELIX
+#define STEVEN_BRONZONG
+#define STEVEN_KLINKLANG //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L2239 and https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L2244
+#define STEVEN_AEGISLASH //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/include/data.h#L172
+#define STEVEN_GOODRA
+#define STEVEN_KLEFKI
+#define STEVEN_COPPERAJAH //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L2228 and https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L2255
+#define STEVEN_ARCHALUDON
+#define STEVEN_REVAVROOM
+#define STEVEN_ORTHWORM //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L2266
+#define STEVEN_GHOLDENGO
+
 [DIFFICULTY_NORMAL][TRAINER_STEVEN] =
 {
     STEVEN_INFO,
@@ -2351,6 +2643,80 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },
 },
 
+//Poison
+#define JUAN_ARBOK
+#define JUAN_NIDOQUEEN
+#define JUAN_NIDOKING //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1652
+#define JUAN_CROBAT
+#define JUAN_SLOWBRO_GALAR
+#define JUAN_SLOWKING_GALAR
+#define JUAN_MUK //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1621
+#define JUAN_MUK_ALOLA
+#define JUAN_WEEZING //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1610
+#define JUAN_WEEZING_GALAR
+#define JUAN_CLODSIRE
+#define JUAN_SWALOT //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1632
+#define JUAN_SEVIPER
+#define JUAN_SKUNTANK
+#define JUAN_DRAPION //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1642
+#define JUAN_TOXICROAK //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1598
+#define JUAN_GARDBODOR
+#define JUAN_DRAGALGE
+#define JUAN_TOXAPEX
+#define JUAN_SALAZZLE
+#define JUAN_GRAFAIAI
+
+//Grass
+#define JUAN_VILEPLUME
+#define JUAN_BELLOSSOM
+#define JUAN_VICTREEBEL
+#define JUAN_EXEGGUTOR
+#define JUAN_EXEGGUTOR_ALOLA
+#define JUAN_TANGROWTH
+#define JUAN_LEAFEON
+#define JUAN_JUMPLUFF
+#define JUAN_SUNFLORA
+#define JUAN_SHIFTRY
+#define JUAN_BRELOOM //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1942
+#define JUAN_ROSERADE //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1961
+#define JUAN_CACTURNE //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1994
+#define JUAN_TROPIUS //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L2005
+#define JUAN_CHERRIM
+#define JUAN_CARNIVINE
+#define JUAN_ABOMASNOW
+#define JUAN_SIMISAGE
+#define JUAN_WHIMSICOTT
+#define JUAN_LILLIGANT_HISUI
+#define JUAN_LILLIGANT
+#define JUAN_MARACTUS //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1983
+#define JUAN_AMOONGUSS
+#define JUAN_FERRORTHORN
+#define JUAN_GOGOAT
+#define JUAN_LURANTIS
+#define JUAN_SHIINOTIC
+#define JUAN_TSAREENA
+#define JUAN_ELDEGOSS
+#define JUAN_FLAPPLE
+#define JUAN_APPLETUN
+#define JUAN_HYDRAPPLE
+#define JUAN_ARBOLIVA
+#define JUAN_BRAMBLEGHAST
+#define JUAN_SCOVILLAIN //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1972
+#define JUAN_SINISTCHA
+
+//Fairy
+#define WALLACE_CLEFABLE //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L2180 (Cats' replaces Calm Mind/Moonlight with Misty Terrain/Life Dew)
+#define WALLACE_SYLVEON //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L2191
+#define WALLACE_TOGEKISS //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L2202 and https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L2206
+#define WALLACE_GRANBULL //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L2169
+#define WALLACE_FLORGES
+#define WALLACE_AROMATISSE //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L2160
+#define WALLACE_SLURPUFF //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L2172
+#define WALLACE_COMFEY
+#define WALLACE_ALCREMIE
+#define WALLACE_DACHSBUN //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L2158
+#define WALLACE_TINKATON //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L2218
+
 #define REMATCH_2_LEVEL_1 35
 #define REMATCH_2_LEVEL_2 REMATCH_2_LEVEL_1 - 1
 #define REMATCH_2_LEVEL_3 REMATCH_2_LEVEL_1 - 2
@@ -2389,14 +2755,14 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY,  \
     .partySize = 2
 
-#define GABBY_WHISMUR(Level)                                                                                   \
-    .lvl = Level,                                                                                              \
+#define GABBY_WHISMUR(Level)    \
+    .lvl = Level,               \
     .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_WHISMUR : (Level < ENDGAME_REMATCH_2_LEVEL ? SPECIES_LOUDRED : SPECIES_EXPLOUD), \
-    .ability = ABILITY_SCRAPPY,                                                                                \
+    .ability = ABILITY_SCRAPPY, \
     .gender = TRAINER_MON_FEMALE
 
-#define TY_MAGNEMITE(Level)                                                                                         \
-    .lvl = Level,                                                                                                   \
+#define TY_MAGNEMITE(Level) \
+    .lvl = Level,           \
     .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_MAGNEMITE : (Level < ENDGAME_REMATCH_2_LEVEL ? SPECIES_MAGNETON : SPECIES_MAGNEZONE), \
     .ability = ABILITY_ANALYTIC
 

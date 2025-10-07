@@ -6225,7 +6225,7 @@ u32 GetDynamicPower(struct Pokemon *mon, u32 move, u32 battler){
     {
         species = gBattleMons[battler].species;
         heldItem = gBattleMons[battler].item;
-        holdEffect = GetBattlerHoldEffect(battler, TRUE);
+        holdEffect = GetBattlerHoldEffect(battler);
         ability = GetBattlerAbility(battler);
         type1 = gBattleMons[battler].types[0];
         type2 = gBattleMons[battler].types[1];
@@ -6528,7 +6528,7 @@ u32 GetDynamicAccuracy(struct Pokemon *mon, u32 move, u32 battler){
 
     if (monInBattle)
     {
-        holdEffect = GetBattlerHoldEffect(battler, TRUE);
+        holdEffect = GetBattlerHoldEffect(battler);
         holdEffectParam = GetBattlerHoldEffectParam(battler);
         ability = GetBattlerAbility(battler);
     }

@@ -2920,6 +2920,27 @@ JUAN_REMATCH(4),
     .gender = TRAINER_MON_MALE,                                             \
     }
 
+//Extra for hacks
+#define SIDNEY_RATICATE
+#define SIDNEY_PERSIAN //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1758
+#define SIDNEY_UMBREON //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1788 (Cats' replaced Moonlight/Baby Doll Eyes with Confuse Ray/Mean Look)
+#define SIDNEY_HONCHKROW
+#define SIDNEY_OVERQWIL
+#define SIDNEY_WEAVILE //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1768
+#define SIDNEY_HOUNDOOM //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1758
+#define SIDNEY_OBSTAGOON
+#define SIDNEY_SABLEYE
+#define SIDNEY_LIEPARD //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1738
+#define SIDNEY_SCRAFTY
+#define SIDNEY_ZOROARK
+#define SIDNEY_KINGAMBIT
+#define SIDNEY_MANDIBUZZ
+#define SIDNEY_HYDREIGON
+#define SIDNEY_MALAMAR //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1778
+#define SIDNEY_THIEVUL
+#define SIDNEY_GRIMMSNARL //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1748
+#define SIDNEY_MABOSSTIFF
+
 [DIFFICULTY_NORMAL][TRAINER_SIDNEY] =
 {
     SIDNEY_INFO,

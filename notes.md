@@ -51,7 +51,6 @@ upcoming
 ### Next playthrough
 - Rustboro:
     - Simplify Walda codes?
-    - Should Roxanne's trainers be Schoolkids?
 - Dewford:
     - Get Exp. Share from Steven instead of from Mr. Stone after
         - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game

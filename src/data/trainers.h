@@ -538,14 +538,13 @@ WALLY_REMATCH(5),
     }
 
 //Extra for hacks
-//Sand Veil/replace Double Edge with Body Press if paired with Sand Stream
 #define ROXANNE_GOLEM(rematch, tier)                                                       \
     {                                                                                      \
     REMATCH_MON(GOLEM, tier, rematch),                                                     \
-    .ability = ABILITY_ROCK_HEAD,                                                          \
+    .ability = ABILITY_SAND_VEIL,                                                          \
     .nature = NATURE_IMPISH,                                                               \
     EV_SPREAD_ATK_DEF_HP,                                                                  \
-    .moves = {MOVE_ROCK_SLIDE, MOVE_HIGH_HORSEPOWER, MOVE_DOUBLE_EDGE, MOVE_STEALTH_ROCK}, \
+    .moves = {MOVE_ROCK_SLIDE, MOVE_HIGH_HORSEPOWER, MOVE_BODY_PRESS, MOVE_STEALTH_ROCK},  \
     .gender = TRAINER_MON_FEMALE,                                                          \
     }
 
@@ -654,9 +653,9 @@ WALLY_REMATCH(5),
     ROXANNE_INFO,                                \
     LEADER_REMATCH,                              \
     .party = (const struct TrainerMon[]) {       \
-        ROXANNE_CORSOLA(Rematch, TIER3),         \
-        ROXANNE_AGGRON(Rematch, TIER3),          \
-        ROXANNE_RELICANTH(Rematch, TIER3),       \
+        ROXANNE_STONJOURNER(Rematch, TIER3),     \
+        ROXANNE_GIGALITH(Rematch, TIER3),        \
+        ROXANNE_GOLEM(Rematch, TIER3),           \
         ROXANNE_CRADILY(Rematch, TIER2),         \
         ROXANNE_ARMALDO(Rematch, TIER2),         \
         ROXANNE_PROBOPASS(Rematch, ACE),         \
@@ -5675,12 +5674,12 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 9,
-        .species = SPECIES_GEODUDE,
+        .species = SPECIES_NACLI,
         IVS(13),
         },
         {
         .lvl = 9,
-        .species = SPECIES_ARON,
+        .species = SPECIES_ROGGENROLA,
         IVS(14),
         }
     },
@@ -5700,7 +5699,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         },
         {
         .lvl = 9,
-        .species = SPECIES_RHYHORN,
+        .species = SPECIES_NACLI,
         IVS(15),
         }
     },

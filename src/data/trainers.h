@@ -5699,7 +5699,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         },
         {
         .lvl = 9,
-        .species = SPECIES_NACLI,
+        .species = SPECIES_GEODUDE,
         IVS(15),
         }
     },
@@ -5725,7 +5725,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 14,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_ARROKUDA,
         IVS(1),
         }
     },
@@ -5742,10 +5742,10 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ability = ABILITY_OBLIVIOUS,                              \
     .gender = TRAINER_MON_MALE
 
-#define ELLIOT_TENTACOOL(Level)                                     \
+#define ELLIOT_ARROKUDA(Level)                                     \
     .lvl = Level,                                                   \
-    .species = Level < 30 ? SPECIES_TENTACOOL : SPECIES_TENTACRUEL, \
-    .ability = ABILITY_CLEAR_BODY,                                  \
+    .species = Level < 26 ? SPECIES_ARROKUDA : SPECIES_BARRASKEWDA, \
+    .ability = ABILITY_SWIFT_SWIM,                                  \
     .gender = TRAINER_MON_MALE
 
 #define ELLIOT_MAGIKARP(Level)                                   \
@@ -5758,10 +5758,10 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_CARVANHA : SPECIES_SHARPEDO, \
     .gender = TRAINER_MON_MALE
 
-#define ELLIOT_BARBOACH(Level)                                                  \
-    .lvl = Level,                                                               \
-    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_BARBOACH : SPECIES_WHISCASH, \
-    .ability = ABILITY_OBLIVIOUS,                                               \
+#define ELLIOT_CHEWTLE(Level)                                                 \
+    .lvl = Level,                                                             \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_CHEWTLE : SPECIES_DREDNAW, \
+    .ability = ABILITY_STRONG_JAW,                                            \
     .gender = TRAINER_MON_MALE
 
 //Extra for hacks
@@ -5776,7 +5776,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         ELLIOT_MAGIKARP(13),
         },
         {
-        ELLIOT_TENTACOOL(13),
+        ELLIOT_ARROKUDA(13),
         },
         {
         ELLIOT_WAILMER(13),
@@ -5790,7 +5790,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        ELLIOT_BARBOACH(REMATCH_2_LEVEL_5),
+        ELLIOT_CHEWTLE(REMATCH_2_LEVEL_5),
         IVS(2),
         },
         {
@@ -5802,7 +5802,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(2),
         },
         {
-        ELLIOT_TENTACOOL(REMATCH_2_LEVEL_5),
+        ELLIOT_ARROKUDA(REMATCH_2_LEVEL_5),
         IVS(2),
         },
         {
@@ -5818,7 +5818,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        ELLIOT_BARBOACH(REMATCH_3_LEVEL_5),
+        ELLIOT_CHEWTLE(REMATCH_3_LEVEL_5),
         IVS(3),
         },
         {
@@ -5830,7 +5830,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(3),
         },
         {
-        ELLIOT_TENTACOOL(REMATCH_3_LEVEL_5),
+        ELLIOT_ARROKUDA(REMATCH_3_LEVEL_5),
         IVS(3),
         },
         {
@@ -5846,7 +5846,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        ELLIOT_BARBOACH(REMATCH_4_LEVEL_5),
+        ELLIOT_CHEWTLE(REMATCH_4_LEVEL_5),
         IVS(4),
         },
         {
@@ -5858,7 +5858,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(4),
         },
         {
-        ELLIOT_TENTACOOL(REMATCH_4_LEVEL_5),
+        ELLIOT_ARROKUDA(REMATCH_4_LEVEL_5),
         IVS(4),
         },
         {
@@ -5874,7 +5874,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        ELLIOT_BARBOACH(REMATCH_5_LEVEL_5),
+        ELLIOT_CHEWTLE(REMATCH_5_LEVEL_5),
         IVS(5),
         },
         {
@@ -5886,7 +5886,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(5),
         },
         {
-        ELLIOT_TENTACOOL(REMATCH_5_LEVEL_5),
+        ELLIOT_ARROKUDA(REMATCH_5_LEVEL_5),
         IVS(5),
         },
         {
@@ -5905,8 +5905,8 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 16,
-        .species = SPECIES_COMBUSKEN,
+        .lvl = 15,
+        .species = SPECIES_RIOLU,
         IVS(18),
         }
     },
@@ -5951,7 +5951,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 13,
-        .species = SPECIES_HERACROSS,
+        .species = SPECIES_TAUROS_PALDEA_COMBAT,
         IVS(12),
         }
     },
@@ -6017,7 +6017,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 17,
-        .species = SPECIES_BARBOACH,
+        .species = SPECIES_CHEWTLE,
         }
     },
 },
@@ -6045,11 +6045,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 16,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_PSYDUCK,
         },
         {
         .lvl = 16,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_SLOWPOKE,
         }
     },
 },
@@ -6150,11 +6150,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     TUBER_M_INFO,              \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define RICKY_ZIGZAGOON(Level)                                               \
+#define RICKY_BUNNELBY(Level)                                                \
     .lvl = Level,                                                            \
-    .species = Level < 20 ? SPECIES_ZIGZAGOON : SPECIES_LINOONE,             \
-    .ability = ABILITY_GLUTTONY,                                             \
-    .moves = {MOVE_SURF, MOVE_HEADBUTT, MOVE_PIN_MISSILE, MOVE_SAND_ATTACK}, \
+    .species = Level < 20 ? SPECIES_BUNNELBY : SPECIES_DIGGERSNY,            \
+    .ability = ABILITY_CHEEK_POUCH,                                          \
+    .moves = {MOVE_SURF, MOVE_DIZZY_PUNCH, MOVE_DOUBLE_KICK, MOVE_MUD_SLAP}, \
     .gender = TRAINER_MON_MALE
 
 #define RICKY_LOMBRE(Level, Move2, Move3)                                     \
@@ -6170,7 +6170,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
         {
-        RICKY_ZIGZAGOON(18),
+        RICKY_BUNNELBY(18),
         IVS(1),
         }
     },
@@ -6186,7 +6186,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(2),
         },
         {
-        RICKY_ZIGZAGOON(REMATCH_2_LEVEL_2),
+        RICKY_BUNNELBY(REMATCH_2_LEVEL_2),
         IVS(2),
         }
     },
@@ -6202,7 +6202,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(3),
         },
         {
-        RICKY_ZIGZAGOON(REMATCH_3_LEVEL_2),
+        RICKY_BUNNELBY(REMATCH_3_LEVEL_2),
         IVS(3),
         }
     },
@@ -6218,7 +6218,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(4),
         },
         {
-        RICKY_ZIGZAGOON(REMATCH_4_LEVEL_2),
+        RICKY_BUNNELBY(REMATCH_4_LEVEL_2),
         IVS(4),
         }
     },
@@ -6234,7 +6234,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(5),
         },
         {
-        RICKY_ZIGZAGOON(REMATCH_5_LEVEL_2),
+        RICKY_BUNNELBY(REMATCH_5_LEVEL_2),
         IVS(5),
         }
     },
@@ -6254,7 +6254,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         },
         {
         .lvl = 16,
-        .species = SPECIES_MARILL,
+        .species = SPECIES_CHEWTLE,
         }
     },
 },
@@ -6268,7 +6268,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 17,
-        .species = SPECIES_GOLDEEN,
+        .species = SPECIES_FEEBAS,
         }
     },
 },
@@ -6290,7 +6290,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         },
         {
         .lvl = 15,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_PSYDUCK,
         }
     },
 },

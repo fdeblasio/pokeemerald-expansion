@@ -2523,6 +2523,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Combee:
     - SpA: 30->40
+    - Gender Ratio: 87.5/12.5->50/50
     - Learns Air Slash by level up
 
 - Vespiquen:
@@ -3333,7 +3334,10 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Leafage, Leaf Tornado, and Seed Bomb by level up
 
 - Steenee:
-    - Atk: 40->50
+    - HP: 52->57
+    - Atk: 40->70
+    - Def: 48->68
+    - SpD: 48->68
     - Held item: Magost Berry: 0%->50%
     - Learns Leafage, Leaf Tornado, and Seed Bomb by level up
 

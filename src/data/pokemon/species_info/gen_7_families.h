@@ -3621,12 +3621,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
     [SPECIES_STEENEE] =
     {
-        .baseHP        = 52,
-        .baseAttack    = 50,
-        .baseDefense   = 48,
+        .baseHP        = 57,
+        .baseAttack    = 70,
+        .baseDefense   = 68,
         .baseSpeed     = 62,
         .baseSpAttack  = 40,
-        .baseSpDefense = 48,
+        .baseSpDefense = 68,
         .types = MON_TYPES(TYPE_GRASS),
         .catchRate = 120,
         .expYield = 102,

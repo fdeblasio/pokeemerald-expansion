@@ -654,7 +654,7 @@ WALLY_REMATCH(5),
     LEADER_REMATCH,                              \
     .party = (const struct TrainerMon[]) {       \
         ROXANNE_STONJOURNER(Rematch, TIER3),     \
-        ROXANNE_GIGALITH(Rematch, TIER3),        \
+        ROXANNE_TYRANITAR(Rematch, TIER3),       \
         ROXANNE_GOLEM(Rematch, TIER3),           \
         ROXANNE_CRADILY(Rematch, TIER2),         \
         ROXANNE_ARMALDO(Rematch, TIER2),         \

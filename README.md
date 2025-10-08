@@ -2595,6 +2595,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Lucario:
     - learns Mach Punch, Bullet Punch, Flash Cannon, and Drain Punch by level up
 
+- Mega Lucario:
+    - Atk: 145->140
+    - SpA: 140->145
+
 - Hippopotas/Hippowdon:
     - Learn Bulldoze, Stomping Tantrum, Scorching Sands, and High Horsepower by level up
 

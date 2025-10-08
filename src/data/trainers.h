@@ -2644,6 +2644,8 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 },
 
 //Poison
+//Hoenn Dex: Crobat, Swalot, Muk, Weezing, Weezing-G, Seviper
+//Hoenn Dex secondary: Dustox, Tentacruel, Vileplume, Roserade
 #define JUAN_ARBOK
 #define JUAN_NIDOQUEEN
 #define JUAN_NIDOKING //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1652

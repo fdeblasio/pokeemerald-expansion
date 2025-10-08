@@ -140,6 +140,7 @@ upcoming
     - Turn Juan into a Poison specialist (Swalot as Ace since both have mustaches)?
         - Would need to update gym palette
     - Turn Team Magma into Ground specialists (Camerupt still works as other people like Winona and Sidney use the secondary typing for their aces)?
+        - Would cancel out the addition of Houndoom?
 - Add level defines per route/group of routes?
 - Update Tabitha (and maybe others?) macros to use Magma levels instead of Rematch levels?
 - Add ORAS team members (like a Picknicker getting a Gulpin)

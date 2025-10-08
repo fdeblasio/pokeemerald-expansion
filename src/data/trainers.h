@@ -857,9 +857,9 @@ ROXANNE_REMATCH(5),
     BRAWLY_INFO,                                \
     LEADER_REMATCH,                             \
     .party = (const struct TrainerMon[]) {      \
-        BRAWLY_GALLADE(Rematch, TIER3),         \
-        BRAWLY_BLAZIKEN(Rematch, TIER3),        \
-        BRAWLY_BRELOOM(Rematch, TIER3),         \
+        BRAWLY_TAUROS_PALDEA(Rematch, TIER3),   \
+        BRAWLY_FALINKS(Rematch, TIER3),         \
+        BRAWLY_LUCARIO(Rematch, TIER3),         \
         BRAWLY_MACHAMP(Rematch, TIER2),         \
         BRAWLY_MEDICHAM(Rematch, TIER2),        \
         BRAWLY_HARIYAMA(Rematch, ACE),          \

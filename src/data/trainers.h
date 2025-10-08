@@ -526,7 +526,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 
 #define ROXANNE_RAMPARDOS(rematch, tier)                                             \
     {                                                                                \
-    REMATCH_MON(RAMPARDOS, tier, rematch),                                          \
+    REMATCH_MON(RAMPARDOS, tier, rematch),                                           \
     .ability = ABILITY_ROCK_HEAD,                                                    \
     .nature = NATURE_ADAMANT,                                                        \
     EV_SPREAD_ATK_SPE_HP,                                                            \
@@ -777,21 +777,98 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 #define BRAWLY_HITMONLEE
 #define BRAWLY_HITMONCHAN
 #define BRAWLY_HITMONTOP
-#define BRAWLY_TAUROS_PALDEA
+
+#define BRAWLY_TAUROS_PALDEA(rematch)                                           \
+    {                                                                           \
+    REMATCH_MON(TAUROS_PALDEA_COMBAT, TIER3, rematch),                          \
+    .ability = ABILITY_INTIMIDATE,                                              \
+    .nature = NATURE_ADAMANT,                                                   \
+    EV_SPREAD_ATK_SPE_HP,                                                       \
+    .moves = {MOVE_BULK_UP, MOVE_RAGING_BULL, MOVE_IRON_HEAD, MOVE_ROCK_SLIDE}, \
+    .gender = TRAINER_MON_MALE,                                                 \
+    }
+
 #define BRAWLY_TAUROS_BLAZE
 #define BRAWLY_TAUROS_AQUA
 #define BRAWLY_SNEASLER
-#define BRAWLY_LUCARIO
+
+#define BRAWLY_LUCARIO(rematch)                                                        \
+    {                                                                                  \
+    REMATCH_MON(LUCARIO, TIER3, rematch),                                              \
+    .ability = ABILITY_INNER_FOCUS,                                                    \
+    .nature = NATURE_MODEST,                                                           \
+    EV_SPREAD_SPA_SPE_HP,                                                              \
+    .moves = {MOVE_AURA_SPHERE, MOVE_FLASH_CANNON, MOVE_SHADOW_BALL, MOVE_NASTY_PLOT}, \
+    .gender = TRAINER_MON_MALE,                                                        \
+    }
+
 #define BRAWLY_CONKELDURR
 #define BRAWLY_THROH
 #define BRAWLY_SAWK
-#define BRAWLY_MIENSHAO //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L626
-#define BRAWLY_PANGORO //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L636
-#define BRAWLY_HAWLUCHA //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L646
-#define BRAWLY_CRABOMINABLE //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L607
+
+#define BRAWLY_MIENSHAO(rematch)                                              \
+    {                                                                         \
+    REMATCH_MON(MIENSHAO, TIER3, rematch),                                    \
+    .ability = ABILITY_REGENERATOR,                                           \
+    .nature = NATURE_ADAMANT,                                                 \
+    EV_SPREAD_ATK_SPE_HP,                                                     \
+    .moves = {MOVE_BULK_UP, MOVE_HIGH_JUMP_KICK, MOVE_U_TURN, MOVE_FAKE_OUT}, \
+    .gender = TRAINER_MON_MALE,                                               \
+    }
+
+#define BRAWLY_PANGORO(rematch)                                                     \
+    {                                                                               \
+    REMATCH_MON(PANGORO, TIER3, rematch),                                           \
+    .ability = ABILITY_IRON_FIST,                                                   \
+    .nature = NATURE_ADAMANT,                                                       \
+    EV_SPREAD_ATK_SPE_HP,                                                           \
+    .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_THROAT_CHOP, MOVE_BULLET_PUNCH}, \
+    .gender = TRAINER_MON_MALE,                                                     \
+    }
+
+#define BRAWLY_HAWLUCHA(rematch)                                             \
+    {                                                                        \
+    REMATCH_MON(HAWLUCHA, TIER3, rematch),                                   \
+    .ability = ABILITY_LIMBER,                                               \
+    .nature = NATURE_JOLLY,                                                  \
+    EV_SPREAD_ATK_SPE_HP,                                                    \
+    .moves = {MOVE_BULK_UP, MOVE_FLYING_PRESS, MOVE_ACROBATICS, MOVE_LUNGE}, \
+    .gender = TRAINER_MON_MALE,                                              \
+    }
+
+#define BRAWLY_CRABOMINABLE(rematch, tier)                                              \
+    {                                                                                   \
+    REMATCH_MON(CRABOMINABLE, tier, rematch),                                           \
+    .ability = ABILITY_IRON_FIST,                                                       \
+    .nature = NATURE_ADAMANT,                                                           \
+    EV_SPREAD_ATK_HP_SPD,                                                               \
+    .moves = {MOVE_DRAIN_PUNCH, MOVE_ICE_HAMMER, MOVE_CRABHAMMER, MOVE_POWER_UP_PUNCH}, \
+    .gender = TRAINER_MON_MALE,                                                         \
+    .heldItem = tier == TIER2 ? ITEM_ASSAULT_VEST : ITEM_NONE,                          \
+    }
+
 #define BRAWLY_PASSIMIAN
-#define BRAWLY_GRAPPLOCT //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L595
-#define BRAWLY_FALINKS
+
+#define BRAWLY_GRAPPLOCT(rematch, tier)                                      \
+    {                                                                        \
+    REMATCH_MON(GRAPPLOCT, tier, rematch),                                   \
+    .ability = ABILITY_TECHNICIAN,                                           \
+    .nature = NATURE_ADAMANT,                                                \
+    EV_SPREAD_ATK_SPE_HP,                                                    \
+    .moves = {MOVE_BULK_UP, MOVE_STORM_THROW, MOVE_AQUA_JET, MOVE_OCTOLOCK}, \
+    .gender = TRAINER_MON_MALE,                                              \
+    .heldItem = tier == TIER2 ? ITEM_SITRUS_BERRY : ITEM_NONE,               \
+    }
+
+#define BRAWLY_FALINKS(rematch)                                                     \
+    {                                                                               \
+    REMATCH_MON(FALINKS, TIER3, rematch),                                           \
+    .ability = ABILITY_DEFIANT,                                                     \
+    .nature = NATURE_ADAMANT,                                                       \
+    EV_SPREAD_ATK_SPE_HP,                                                           \
+    .moves = {MOVE_BODY_PRESS, MOVE_IRON_HEAD, MOVE_SPIKY_SHIELD, MOVE_NO_RETREAT}, \
+    }
+
 
 [DIFFICULTY_NORMAL][TRAINER_BRAWLY_2] =
 {

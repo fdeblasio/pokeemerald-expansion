@@ -4643,10 +4643,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     [SPECIES_LUCARIO_MEGA] =
     {
         .baseHP        = 70,
-        .baseAttack    = 145,
+        .baseAttack    = 140,
         .baseDefense   = 88,
         .baseSpeed     = 112,
-        .baseSpAttack  = 140,
+        .baseSpAttack  = 145,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_STEEL),
         .catchRate = 45,

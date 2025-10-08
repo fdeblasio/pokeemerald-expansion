@@ -3138,6 +3138,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 },
 
 //Poison
+//https://github.com/fdeblasio/pokeemerald-expansion/commit/1fedffd1661725bee4ca53e3c075648845ae5bdb#diff-88875e8057a9b6785829a46de9aede7c3504ffd16b0900dacee185eb263e4bacR2-L8
 //Hoenn Dex: Crobat, Swalot, Muk, Weezing, Weezing-G, Seviper
 //Hoenn Dex secondary: Dustox, Tentacruel, Vileplume, Roserade
 #define JUAN_ARBOK

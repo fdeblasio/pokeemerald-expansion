@@ -243,7 +243,7 @@ DewfordTown_Hall_EventScript_SludgeBombMan::
 	call Common_EventScript_BufferTrendyPhrase
 	goto_if_set FLAG_RECEIVED_TM_SLUDGE_BOMB, DewfordTown_Hall_EventScript_ReceivedSludgeBomb
 	msgbox DewfordTown_Hall_Text_GiveYouSludgeBomb, MSGBOX_DEFAULT
-	giveitem ITEM_TM_SLUDGE_BOMB
+	giveitem TRENDY_TM
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_TM_SLUDGE_BOMB
 	release
@@ -425,6 +425,17 @@ DewfordTown_Hall_Text_WellBeTrendDuo:
 	.string "Hahahah!$"
 
 DewfordTown_Hall_Text_GiveYouSludgeBomb:
+.if JUAN_POISON == TRUE
+	.string "For me, Water Pulse is at the peak\n"
+	.string "of popularity. It's the one.\p"
+	.string "Hunh? You're telling me that you don't\n"
+	.string "know about Water Pulse?\p"
+	.string "That's outright pitiful.\n"
+	.string "I'll give you one.$"
+
+DewfordTown_Hall_Text_LoveSludgeBombButTrendInToo:
+	.string "I love Water Pulse.\p"
+.else
 	.string "For me, Sludge Bomb is at the peak\n"
 	.string "of popularity. It's the one.\p"
 	.string "Hunh? You're telling me that you don't\n"
@@ -434,7 +445,7 @@ DewfordTown_Hall_Text_GiveYouSludgeBomb:
 
 DewfordTown_Hall_Text_LoveSludgeBombButTrendInToo:
 	.string "I love Sludge Bomb.\p"
+.endif
 	.string "But Pokémon with the move\n"
 	.string "“{STR_VAR_1}”\l"
 	.string "are in, too.$"
-

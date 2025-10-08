@@ -1381,7 +1381,11 @@ SootopolisCity_Text_GymSign:
 	.string "Sootopolis City Pokémon Gym\n"
 	.string "Leader: Juan\p"
 	.string "“The Gym Leader with the beauty\n"
+.if JUAN_POISON == TRUE
+	.string "of pure poison!”$"
+.else
 	.string "of pure water!”$"
+.endif
 
 SootopolisCity_Text_CitySign:
 	.string "Sootopolis City\p"

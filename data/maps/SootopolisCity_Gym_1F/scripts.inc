@@ -117,14 +117,14 @@ SootopolisCity_Gym_1F_EventScript_JuanDefeated::
 	end
 
 SootopolisCity_Gym_1F_EventScript_GiveWaterPulse::
-	giveitem ITEM_TM_WATER_PULSE
+	giveitem JUAN_TM
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
 	msgbox SootopolisCity_Gym_1F_Text_ExplainWaterPulse, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM_WATER_PULSE
 	return
 
 SootopolisCity_Gym_1F_EventScript_GiveWaterPulse2::
-	giveitem ITEM_TM_WATER_PULSE
+	giveitem JUAN_TM
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	msgbox SootopolisCity_Gym_1F_Text_ExplainWaterPulse, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM_WATER_PULSE
@@ -180,9 +180,15 @@ SootopolisCity_Gym_1F_Text_GymGuideAdvice:
 	.string "Yo! How's it going, Champion-\n"
 	.string "bound {PLAYER}?\p"
 	.string "Sootopolis's Gym Leader Juan is\n"
+.if JUAN_POISON == TRUE
 	.string "a master of Water-type Pokémon.\p"
+	.string "And, to get to Juan, a floor of frozen\n"
+	.string "acid will hamper your progress…\p"
+.else
+	.string "a master of Poison-type Pokémon.\p"
 	.string "And, to get to Juan, an icy floor\n"
 	.string "will hamper your progress…\p"
+.endif
 	.string "Listen, I'm sorry, but that's all the\n"
 	.string "advice that I have for you.\p"
 	.string "The rest of the way, you have to\n"
@@ -211,7 +217,11 @@ SootopolisCity_Gym_1F_Text_JuanIntro:
 	.string "Let us begin our match, shall we?\p"
 	.string "Please, you shall bear witness to\n"
 	.string "our artistry.\p"
+.if JUAN_POISON == TRUE
+	.string "A grand illusion of poison sculpted\n"
+.else
 	.string "A grand illusion of water sculpted\n"
+.endif
 	.string "by Pokémon and myself!$"
 
 @ NOTE: This defeat text actually causes a buffer overflow. It's about 50 bytes too long for
@@ -231,6 +241,16 @@ SootopolisCity_Gym_1F_Text_JuanDefeat:
 	.string "… … … … … …\p"
 	.string "Hahaha, I merely jest!\p"
 	.string "Rather than my clothes, I shall reward\n"
+.if JUAN_POISON == TRUE
+	.string "you with this, the Acid Badge!$"
+
+SootopolisCity_Gym_1F_Text_ReceivedRainBadge:
+	.string "{PLAYER} received the Acid Badge\n"
+	.string "from Juan.$"
+
+SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
+	.string "Having the Acid Badge shall assure you\n"
+.else
 	.string "you with this, the Rain Badge!$"
 
 SootopolisCity_Gym_1F_Text_ReceivedRainBadge:
@@ -239,6 +259,7 @@ SootopolisCity_Gym_1F_Text_ReceivedRainBadge:
 
 SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
 	.string "Having the Rain Badge shall assure you\n"
+.endif
 	.string "the full obedience of all your Pokémon\l"
 	.string "to your every command.\p"
 	.string "The Fall Scaler allows you to scale\n"
@@ -248,7 +269,11 @@ SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
 
 SootopolisCity_Gym_1F_Text_ExplainWaterPulse:
 	.string "The Technical Machine I handed you\n"
+.if JUAN_POISON == TRUE
+	.string "contains Sludge bomb.\p"
+.else
 	.string "contains Water Pulse.\p"
+.endif
 	.string "In use, it will occasionally confuse\n"
 	.string "the target with ultrasonic waves.\p"
 	.string "… … … … … …$"

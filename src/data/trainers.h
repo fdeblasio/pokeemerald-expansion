@@ -4287,7 +4287,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {                                             \
         {                                                                              \
         .lvl = (AceLevel - 2),                                                         \
-        .species = LAPRAS,                                                             \
+        .species = SPECIES_LAPRAS,                                                     \
         .ability = ABILITY_WATER_ABSORB,                                               \
         IVS(IVs),                                                                      \
         .gender = TRAINER_MON_FEMALE,                                                  \
@@ -6320,14 +6320,16 @@ MARINA_BATTLE(MUSEUM, 17),
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE, \
     .partySize = 2
 
-#define ISABEL_MINUN(Level)   \
-    POKE_FAN_MON(Level),      \
-    .species = SPECIES_MINUN, \
+#define ISABEL_CLEFFA(Level)       \
+    POKE_FAN_MON(Level),           \
+    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_CLEFFA : (Level < REMATCH_4_LEVEL_6 ? SPECIES_CLEFAIRY : SPECIES_CLEFABLE), \
+    .ability = ABILITY_CUTE_CHARM, \
     .gender = TRAINER_MON_FEMALE
 
-#define ISABEL_PLUSLE(Level)   \
-    POKE_FAN_MON(Level),       \
-    .species = SPECIES_PLUSLE, \
+#define ISABEL_IGGLYBUFF(Level)    \
+    POKE_FAN_MON(Level),           \
+    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_IGGLYBUFF : (Level < REMATCH_4_LEVEL_6 ? SPECIES_JIGGLYPUFF : SPECIES_WIGGLYTUFF), \
+    .ability = ABILITY_CUTE_CHARM, \
     .gender = TRAINER_MON_FEMALE
 
 [DIFFICULTY_NORMAL][TRAINER_ISABEL_1] =
@@ -6335,10 +6337,10 @@ MARINA_BATTLE(MUSEUM, 17),
     ISABEL_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        ISABEL_PLUSLE(17),
+        ISABEL_IGGLYBUFF(17),
         },
         {
-        ISABEL_MINUN(17),
+        ISABEL_CLEFFA(17),
         }
     },
 },
@@ -6348,11 +6350,11 @@ MARINA_BATTLE(MUSEUM, 17),
     ISABEL_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        ISABEL_PLUSLE(REMATCH_2_LEVEL_2),
+        ISABEL_IGGLYBUFF(REMATCH_2_LEVEL_2),
         IVS(2),
         },
         {
-        ISABEL_MINUN(REMATCH_2_LEVEL_2),
+        ISABEL_CLEFFA(REMATCH_2_LEVEL_2),
         IVS(2),
         }
     },
@@ -6363,11 +6365,11 @@ MARINA_BATTLE(MUSEUM, 17),
     ISABEL_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        ISABEL_PLUSLE(REMATCH_3_LEVEL_2),
+        ISABEL_IGGLYBUFF(REMATCH_3_LEVEL_2),
         IVS(3),
         },
         {
-        ISABEL_MINUN(REMATCH_3_LEVEL_2),
+        ISABEL_CLEFFA(REMATCH_3_LEVEL_2),
         IVS(3),
         }
     },
@@ -6378,11 +6380,11 @@ MARINA_BATTLE(MUSEUM, 17),
     ISABEL_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        ISABEL_PLUSLE(REMATCH_4_LEVEL_2),
+        ISABEL_IGGLYBUFF(REMATCH_4_LEVEL_2),
         IVS(4),
         },
         {
-        ISABEL_MINUN(REMATCH_4_LEVEL_2),
+        ISABEL_CLEFFA(REMATCH_4_LEVEL_2),
         IVS(4),
         }
     },
@@ -6393,11 +6395,11 @@ MARINA_BATTLE(MUSEUM, 17),
     ISABEL_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        ISABEL_PLUSLE(REMATCH_5_LEVEL_2),
+        ISABEL_IGGLYBUFF(REMATCH_5_LEVEL_2),
         IVS(5),
         },
         {
-        ISABEL_MINUN(REMATCH_5_LEVEL_2),
+        ISABEL_CLEFFA(REMATCH_5_LEVEL_2),
         IVS(5),
         }
     },
@@ -6412,12 +6414,12 @@ MARINA_BATTLE(MUSEUM, 17),
     .party = (const struct TrainerMon[]) {
         {
         POKE_FAN_MON(17),
-        .species = SPECIES_MINUN,
+        .species = SPECIES_PIKACHU,
         .gender = TRAINER_MON_MALE,
         },
         {
         POKE_FAN_MON(17),
-        .species = SPECIES_PLUSLE,
+        .species = SPECIES_MARILL,
         .gender = TRAINER_MON_MALE,
         }
     },
@@ -6433,7 +6435,7 @@ MARINA_BATTLE(MUSEUM, 17),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 18,
-        .species = SPECIES_ODDISH,
+        .species = SPECIES_BELLSPROUT,
         }
     },
 },
@@ -6447,7 +6449,7 @@ MARINA_BATTLE(MUSEUM, 17),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 16,
-        .species = SPECIES_SKITTY,
+        .species = SPECIES_BUNNELBY,
         },
         {
         .lvl = 16,
@@ -6469,11 +6471,11 @@ MARINA_BATTLE(MUSEUM, 17),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 17,
-        .species = SPECIES_POOCHYENA,
+        .species = SPECIES_LILLIPUP,
         },
         {
         .lvl = 17,
-        .species = SPECIES_ZIGZAGOON,
+        .species = SPECIES_SKWOVET,
         }
     },
 },
@@ -6488,11 +6490,11 @@ MARINA_BATTLE(MUSEUM, 17),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 17,
-        .species = SPECIES_SHROOMISH,
+        .species = SPECIES_SUNKERN,
         },
         {
         .lvl = 17,
-        .species = SPECIES_ROSELIA,
+        .species = SPECIES_GOSSIFLEUR,
         }
     },
 },
@@ -6506,7 +6508,7 @@ MARINA_BATTLE(MUSEUM, 17),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 18,
-        .species = SPECIES_VOLTORB,
+        .species = SPECIES_PAWMI,
         IVS(12),
         }
     },
@@ -6533,14 +6535,14 @@ MARINA_BATTLE(MUSEUM, 17),
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE, \
     .partySize = 2
 
-#define AMY_MINUN(Level)      \
-    .lvl = Level,             \
-    .species = SPECIES_MINUN, \
+#define AMY_VULPIX(Level)                                                                  \
+    .lvl = Level,                                                                          \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_VULPIX_ALOLA : SPECIES_NINETALES_ALOLA, \
     .gender = TRAINER_MON_FEMALE
 
-#define LIV_PLUSLE(Level)      \
-    .lvl = Level,              \
-    .species = SPECIES_PLUSLE, \
+#define LIV_VULPIX(Level)                                                      \
+    .lvl = Level,                                                              \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_VULPIX : SPECIES_NINETALES, \
     .gender = TRAINER_MON_FEMALE
 
 [DIFFICULTY_NORMAL][TRAINER_AMY_AND_LIV_1] =
@@ -6548,10 +6550,10 @@ MARINA_BATTLE(MUSEUM, 17),
     AMY_AND_LIV_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        LIV_PLUSLE(17),
+        LIV_VULPIX(17),
         },
         {
-        AMY_MINUN(17),
+        AMY_VULPIX(17),
         }
     },
 },
@@ -6561,11 +6563,11 @@ MARINA_BATTLE(MUSEUM, 17),
     AMY_AND_LIV_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        LIV_PLUSLE(REMATCH_2_LEVEL_2),
+        LIV_VULPIX(REMATCH_2_LEVEL_2),
         IVS(2),
         },
         {
-        AMY_MINUN(REMATCH_2_LEVEL_2),
+        AMY_VULPIX(REMATCH_2_LEVEL_2),
         IVS(2),
         }
     },
@@ -6576,11 +6578,11 @@ MARINA_BATTLE(MUSEUM, 17),
     AMY_AND_LIV_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        LIV_PLUSLE(REMATCH_3_LEVEL_2),
+        LIV_VULPIX(REMATCH_3_LEVEL_2),
         IVS(3),
         },
         {
-        AMY_MINUN(REMATCH_3_LEVEL_2),
+        AMY_VULPIX(REMATCH_3_LEVEL_2),
         IVS(3),
         }
     },
@@ -6591,14 +6593,12 @@ MARINA_BATTLE(MUSEUM, 17),
     AMY_AND_LIV_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        LIV_PLUSLE(REMATCH_4_LEVEL_2),
+        LIV_VULPIX(REMATCH_4_LEVEL_2),
         IVS(4),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_CHARGE, MOVE_FAKE_TEARS, MOVE_HELPING_HAND},
         },
         {
-        AMY_MINUN(REMATCH_4_LEVEL_2),
+        AMY_VULPIX(REMATCH_4_LEVEL_2),
         IVS(4),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_CHARGE, MOVE_CHARM, MOVE_HELPING_HAND},
         }
     },
 },
@@ -6608,14 +6608,12 @@ MARINA_BATTLE(MUSEUM, 17),
     AMY_AND_LIV_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        LIV_PLUSLE(REMATCH_5_LEVEL_2),
+        LIV_VULPIX(REMATCH_5_LEVEL_2),
         IVS(5),
-        .moves = {MOVE_THUNDERBOLT, MOVE_CHARGE, MOVE_FAKE_TEARS, MOVE_HELPING_HAND},
         },
         {
-        AMY_MINUN(REMATCH_5_LEVEL_2),
+        AMY_VULPIX(REMATCH_5_LEVEL_2),
         IVS(5),
-        .moves = {MOVE_THUNDERBOLT, MOVE_CHARGE, MOVE_CHARM, MOVE_HELPING_HAND},
         }
     },
 },
@@ -6626,10 +6624,10 @@ MARINA_BATTLE(MUSEUM, 17),
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE, \
     .partySize = 1
 
-#define MIGUEL_SKITTY(Level)                                                  \
-    POKE_FAN_MON(Level),                                                      \
-    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_SKITTY : SPECIES_DELCATTY, \
-    .ability = ABILITY_CUTE_CHARM,                                            \
+#define MIGUEL_SNUBBULL(Level)                                                  \
+    POKE_FAN_MON(Level),                                                        \
+    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_SNUBBULL : SPECIES_GRANBULL, \
+    .ability = 1,                                                               \
     .gender = TRAINER_MON_FEMALE
 
 #define MIGUEL_IGGLYBUFF(Level)                                               \
@@ -6648,7 +6646,7 @@ MARINA_BATTLE(MUSEUM, 17),
     MIGUEL_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        MIGUEL_SKITTY(18),
+        MIGUEL_SNUBBULL(18),
         }
     },
 },
@@ -6661,7 +6659,7 @@ MARINA_BATTLE(MUSEUM, 17),
         MIGUEL_IGGLYBUFF(REMATCH_2_LEVEL_2),
         },
         {
-        MIGUEL_SKITTY(REMATCH_2_LEVEL_2),
+        MIGUEL_SNUBBULL(REMATCH_2_LEVEL_2),
         }
     },
 },
@@ -6677,7 +6675,7 @@ MARINA_BATTLE(MUSEUM, 17),
         MIGUEL_IGGLYBUFF(REMATCH_3_LEVEL_3),
         },
         {
-        MIGUEL_SKITTY(REMATCH_3_LEVEL_3),
+        MIGUEL_SNUBBULL(REMATCH_3_LEVEL_3),
         }
     },
 },
@@ -6693,7 +6691,7 @@ MARINA_BATTLE(MUSEUM, 17),
         MIGUEL_IGGLYBUFF(REMATCH_4_LEVEL_3),
         },
         {
-        MIGUEL_SKITTY(REMATCH_4_LEVEL_3),
+        MIGUEL_SNUBBULL(REMATCH_4_LEVEL_3),
         }
     },
 },
@@ -6709,7 +6707,7 @@ MARINA_BATTLE(MUSEUM, 17),
         MIGUEL_IGGLYBUFF(REMATCH_5_LEVEL_3),
         },
         {
-        MIGUEL_SKITTY(REMATCH_5_LEVEL_3),
+        MIGUEL_SNUBBULL(REMATCH_5_LEVEL_3),
         }
     },
 },
@@ -6727,11 +6725,11 @@ MARINA_BATTLE(MUSEUM, 17),
         },
         {
         .lvl = 16,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_WAILMER,
         },
         {
         .lvl = 16,
-        .species = SPECIES_MAGIKARP,
+        .species = SPECIES_ARROKUDA,
         }
     },
 },
@@ -6750,7 +6748,7 @@ MARINA_BATTLE(MUSEUM, 17),
         },
         {
         .lvl = 17,
-        .species = SPECIES_ELECTRIKE,
+        .species = SPECIES_TADBULB,
         }
     },
 },
@@ -6915,7 +6913,7 @@ MARINA_BATTLE(MUSEUM, 17),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 18,
-        .species = SPECIES_ELECTRIKE,
+        .species = SPECIES_TOXEL,
         },
         {
         .lvl = 18,
@@ -6962,15 +6960,15 @@ MARINA_BATTLE(MUSEUM, 17),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 16,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_MAGIKARP,
         },
         {
         .lvl = 16,
-        .species = SPECIES_WAILMER,
+        .species = SPECIES_PSYDUCK,
         },
         {
         .lvl = 16,
-        .species = SPECIES_TENTACOOL,
+        .species = SPECIES_CHEWTLE,
         },
         {
         .lvl = 16,
@@ -7124,7 +7122,7 @@ MARINA_BATTLE(MUSEUM, 17),
         },
         {
         TRIATHLETE_MON(REMATCH_5_LEVEL_2, 5),
-        .species = SPECIES_STARMIE,
+        .species = SPECIES_PERSIAN,
         },
         {
         MARIA_DODUO(REMATCH_5_MINI_BOSS, 5),
@@ -7261,10 +7259,9 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .ability = ABILITY_THICK_FAT,                                \
     .gender = TRAINER_MON_FEMALE
 
-#define MEG_ZIGZAGOON(Level)                                     \
-    .lvl = Level,                                                \
-    .species = Level < 20 ? SPECIES_ZIGZAGOON : SPECIES_LINOONE, \
-    .ability = ABILITY_PICKUP,                                   \
+#define MEG_SKWOVET(Level)                                    \
+    .lvl = Level,                                               \
+    .species = Level < 20 ? SPECIES_SKWOVET : SPECIES_GREEDENT, \
     .gender = TRAINER_MON_FEMALE
 
 [DIFFICULTY_NORMAL][TRAINER_ANNA_AND_MEG_1] =
@@ -7272,8 +7269,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     ANNA_AND_MEG_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        MEG_ZIGZAGOON(19),
-        .moves = {MOVE_HEADBUTT, MOVE_BABY_DOLL_EYES, MOVE_SAND_ATTACK, MOVE_ODOR_SLEUTH},
+        MEG_SKWOVET(19),
         },
         {
         ANNA_MAKUHITA(21),
@@ -7287,9 +7283,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     ANNA_AND_MEG_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        MEG_ZIGZAGOON(REMATCH_2_LEVEL_3),
+        MEG_SKWOVET(REMATCH_2_LEVEL_3),
         IVS(2),
-        .moves = {MOVE_SLASH, MOVE_TAIL_WHIP, MOVE_HONE_CLAWS, MOVE_ODOR_SLEUTH},
         },
         {
         ANNA_MAKUHITA(REMATCH_2_LEVEL_1),
@@ -7304,9 +7299,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     ANNA_AND_MEG_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        MEG_ZIGZAGOON(REMATCH_3_LEVEL_3),
+        MEG_SKWOVET(REMATCH_3_LEVEL_3),
         IVS(3),
-        .moves = {MOVE_SLASH, MOVE_TAIL_WHIP, MOVE_HONE_CLAWS, MOVE_ODOR_SLEUTH},
         },
         {
         ANNA_MAKUHITA(REMATCH_3_LEVEL_1),
@@ -7321,9 +7315,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     ANNA_AND_MEG_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        MEG_ZIGZAGOON(REMATCH_4_LEVEL_3),
+        MEG_SKWOVET(REMATCH_4_LEVEL_3),
         IVS(4),
-        .moves = {MOVE_SLASH, MOVE_TAIL_WHIP, MOVE_HONE_CLAWS, MOVE_ODOR_SLEUTH},
         },
         {
         ANNA_MAKUHITA(REMATCH_4_LEVEL_1),
@@ -7338,9 +7331,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     ANNA_AND_MEG_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        MEG_ZIGZAGOON(REMATCH_5_LEVEL_3),
+        MEG_SKWOVET(REMATCH_5_LEVEL_3),
         IVS(5),
-        .moves = {MOVE_SLASH, MOVE_TAIL_WHIP, MOVE_HONE_CLAWS, MOVE_ODOR_SLEUTH},
         },
         {
         ANNA_MAKUHITA(REMATCH_5_LEVEL_1),
@@ -7359,12 +7351,12 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 19,
-        .species = SPECIES_DUSTOX,
+        .species = SPECIES_SWADLOON,
         IVS(18),
         },
         {
         .lvl = 19,
-        .species = SPECIES_BEAUTIFLY,
+        .species = SPECIES_LEDIAN,
         IVS(18),
         }
     },
@@ -7511,9 +7503,9 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .ability = ABILITY_POISON_POINT,                                           \
     .gender = TRAINER_MON_FEMALE
 
-#define ROSE_ODDISH(Level)                                                                                                   \
-    .lvl = Level,                                                                                                            \
-    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_ODDISH : (Level < REMATCH_4_LEVEL_6 ? SPECIES_GLOOM : SPECIES_BELLOSSOM), \
+#define ROSE_BELLSPROUT(Level) \
+    .lvl = Level,              \
+    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_BELLSPROUT : (Level < REMATCH_4_LEVEL_6 ? SPECIES_WEEPINBELL : SPECIES_BELLOSSOM), \
     .gender = TRAINER_MON_FEMALE
 
 #define ROSE_SHROOMISH(Level)                                    \
@@ -7534,7 +7526,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         ROSE_SHROOMISH(21),
         },
         {
-        ROSE_ODDISH(21),
+        ROSE_BELLSPROUT(21),
         },
         {
         ROSE_ROSELIA(21),
@@ -7552,7 +7544,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         IVS(2),
         },
         {
-        ROSE_ODDISH(REMATCH_2_LEVEL_3),
+        ROSE_BELLSPROUT(REMATCH_2_LEVEL_3),
         IVS(2),
         },
         {
@@ -7572,7 +7564,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         IVS(3),
         },
         {
-        ROSE_ODDISH(REMATCH_3_LEVEL_3),
+        ROSE_BELLSPROUT(REMATCH_3_LEVEL_3),
         IVS(3),
         },
         {
@@ -7592,7 +7584,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         IVS(4),
         },
         {
-        ROSE_ODDISH(REMATCH_4_LEVEL_3),
+        ROSE_BELLSPROUT(REMATCH_4_LEVEL_3),
         IVS(4),
         },
         {
@@ -7618,7 +7610,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         IVS(5),
         },
         {
-        ROSE_ODDISH(REMATCH_5_LEVEL_4),
+        ROSE_BELLSPROUT(REMATCH_5_LEVEL_4),
         IVS(5),
         },
         {
@@ -8087,7 +8079,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         },
         {
         .lvl = 21,
-        .species = SPECIES_ODDISH,
+        .species = SPECIES_BELLSPROUT,
         IVS(1),
         },
         {
@@ -9897,9 +9889,9 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .ability = ABILITY_FLUFFY,                                \
     .gender = TRAINER_MON_FEMALE
 
-#define DIANA_ODDISH(Level) \
-    .lvl = Level,           \
-    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_ODDISH : (Level < REMATCH_3_LEVEL_6 ? SPECIES_GLOOM : SPECIES_VILEPLUME), \
+#define DIANA_BELLSPROUT(Level) \
+    .lvl = Level,               \
+    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_BELLSPROUT : (Level < REMATCH_3_LEVEL_6 ? SPECIES_WEEPINBELL : SPECIES_VICTREEBEL), \
     .gender = TRAINER_MON_FEMALE
 
 #define DIANA_SHROOMISH(Level)                                                  \
@@ -9917,7 +9909,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
         DIANA_SHROOMISH(25),
         },
         {
-        DIANA_ODDISH(25),
+        DIANA_BELLSPROUT(25),
         },
         {
         DIANA_SWABLU(25),
@@ -9935,7 +9927,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
         IVS(2),
         },
         {
-        DIANA_ODDISH(REMATCH_2_LEVEL_3),
+        DIANA_BELLSPROUT(REMATCH_2_LEVEL_3),
         IVS(2),
         },
         {
@@ -9955,7 +9947,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
         IVS(3),
         },
         {
-        DIANA_ODDISH(REMATCH_3_LEVEL_3),
+        DIANA_BELLSPROUT(REMATCH_3_LEVEL_3),
         IVS(3),
         },
         {
@@ -9975,7 +9967,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
         IVS(4),
         },
         {
-        DIANA_ODDISH(REMATCH_4_LEVEL_3),
+        DIANA_BELLSPROUT(REMATCH_4_LEVEL_3),
         IVS(4),
         },
         {
@@ -9995,7 +9987,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
         IVS(5),
         },
         {
-        DIANA_ODDISH(REMATCH_5_LEVEL_3),
+        DIANA_BELLSPROUT(REMATCH_5_LEVEL_3),
         IVS(5),
         },
         {
@@ -12267,7 +12259,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
         },
         {
         .lvl = 33,
-        .species = SPECIES_GLOOM,
+        .species = SPECIES_WEEPINBELL,
         }
     },
 },
@@ -12444,10 +12436,10 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     IVS(10),                                                                   \
     .gender = TRAINER_MON_FEMALE
 
-#define CATHERINE_GLOOM(Level)                                                \
-    .lvl = Level,                                                             \
-    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_GLOOM : SPECIES_BELLOSSOM, \
-    IVS(10),                                                                  \
+#define CATHERINE_WEEPINBELL(Level)                                                 \
+    .lvl = Level,                                                                   \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_WEEPINBELL : SPECIES_VICTREEBEL, \
+    IVS(10),                                                                        \
     .gender = TRAINER_MON_FEMALE
 
 //Extra for hacks
@@ -12460,7 +12452,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        CATHERINE_GLOOM(34),
+        CATHERINE_WEEPINBELL(34),
         },
         {
         CATHERINE_ROSELIA(34),
@@ -12474,7 +12466,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        CATHERINE_GLOOM(REMATCH_2_LEVEL_1),
+        CATHERINE_WEEPINBELL(REMATCH_2_LEVEL_1),
         },
         {
         CATHERINE_ROSELIA(REMATCH_2_LEVEL_1),
@@ -12488,7 +12480,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        CATHERINE_GLOOM(REMATCH_3_LEVEL_1),
+        CATHERINE_WEEPINBELL(REMATCH_3_LEVEL_1),
         },
         {
         CATHERINE_ROSELIA(REMATCH_3_LEVEL_1),
@@ -12502,7 +12494,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        CATHERINE_GLOOM(REMATCH_4_LEVEL_1),
+        CATHERINE_WEEPINBELL(REMATCH_4_LEVEL_1),
         },
         {
         CATHERINE_ROSELIA(REMATCH_4_LEVEL_1),
@@ -12516,7 +12508,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        CATHERINE_GLOOM(REMATCH_5_MINI_BOSS),
+        CATHERINE_WEEPINBELL(REMATCH_5_MINI_BOSS),
         },
         {
         CATHERINE_ROSELIA(REMATCH_5_MINI_BOSS),
@@ -15908,7 +15900,7 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 49,
-        .species = SPECIES_BELLOSSOM,
+        .species = SPECIES_VICTREEBEL,
         IVS(12),
         },
         {

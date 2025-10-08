@@ -3252,7 +3252,7 @@ JUAN_REMATCH(5),
     .trainerPic = TRAINER_PIC_CHAMPION_WALLACE,                                            \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,                                 \
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE}, \
-    .mugshotColor = MUGSHOT_TYPE_WATER,                                                    \
+    .mugshotColor = MUGSHOT_TYPE_FAIRY,                                                    \
     BOSS_AI_FLAGS,                                                                         \
     .partySize = 6,                                                                        \
     .party = (const struct TrainerMon[]) {                                                 \
@@ -4108,58 +4108,58 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .gender = TRAINER_MON_MALE,                                      \
     }
 
-#define CASPIAN_CLAMPERL(Level)     \
-    {                               \
-    .lvl = Level,                   \
-    .species = SPECIES_CLAMPERL,    \
-    .ability = ABILITY_SHELL_ARMOR, \
-    .gender = TRAINER_MON_MALE,     \
+#define CASPIAN_PANPOUR(Level)   \
+    {                            \
+    .lvl = Level,                \
+    .species = SPECIES_PANPOUR,  \
+    .ability = ABILITY_GLUTTONY, \
+    .gender = TRAINER_MON_MALE,  \
     }
 
 #define AQUA_HIDEOUT_LEVEL 45
 #define SEAFLOOR_CAVERN_LEVEL 52
 
-#define MARINA_BATTLE(Location, Level)                                                \
-[DIFFICULTY_NORMAL][TRAINER_MARINA_##Location] =                                      \
-{                                                                                     \
-    .trainerName = _("Marina"),                                                       \
-    AQUA_GRUNT_F_INFO,                                                                \
-    .partySize = 2,                                                                   \
-    .party = (const struct TrainerMon[]) {                                            \
-        {                                                                             \
-        .lvl = Level,                                                                 \
-        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_GOLDEEN : SPECIES_SEAKING, \
-        .ability = ABILITY_SWIFT_SWIM,                                                \
-        .gender = TRAINER_MON_FEMALE,                                                 \
-        },                                                                            \
-        {                                                                             \
-        .lvl = Level,                                                                 \
-        .species = SPECIES_MARINA_ACE + (Level < SEAFLOOR_CAVERN_LEVEL ? 0 : 1),      \
-        .ability = ABILITY_ILLUMINATE,                                                \
-        }                                                                             \
-    },                                                                                \
-}
-
-#define MALIK_BATTLE(Location, Level)                                                      \
-[DIFFICULTY_NORMAL][TRAINER_MALIK_##Location] =                                            \
+#define MARINA_BATTLE(Location, Level)                                                     \
+[DIFFICULTY_NORMAL][TRAINER_MARINA_##Location] =                                           \
 {                                                                                          \
-    .trainerName = _("Malik"),                                                             \
-    AQUA_GRUNT_M_INFO,                                                                     \
+    .trainerName = _("Marina"),                                                            \
+    AQUA_GRUNT_F_INFO,                                                                     \
     .partySize = 2,                                                                        \
     .party = (const struct TrainerMon[]) {                                                 \
         {                                                                                  \
         .lvl = Level,                                                                      \
-        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_TENTACOOL : SPECIES_TENTACRUEL, \
-        .ability = ABILITY_CLEAR_BODY,                                                     \
-        .gender = TRAINER_MON_MALE,                                                        \
+        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_ARROKUDA : SPECIES_BARRASKEWDA, \
+        .ability = ABILITY_SWIFT_SWIM,                                                     \
+        .gender = TRAINER_MON_FEMALE,                                                      \
         },                                                                                 \
         {                                                                                  \
         .lvl = Level,                                                                      \
-        .species = SPECIES_MALIK_ACE + (Level < SEAFLOOR_CAVERN_LEVEL ? 0 : 1),            \
-        .ability = ABILITY_SHELL_ARMOR,                                                    \
-        .gender = TRAINER_MON_MALE,                                                        \
+        .species = SPECIES_MARINA_ACE + (Level < SEAFLOOR_CAVERN_LEVEL ? 0 : 1),           \
+        .ability = ABILITY_STRONG_JAW,                                                     \
         }                                                                                  \
     },                                                                                     \
+}
+
+#define MALIK_BATTLE(Location, Level)                                                    \
+[DIFFICULTY_NORMAL][TRAINER_MALIK_##Location] =                                          \
+{                                                                                        \
+    .trainerName = _("Malik"),                                                           \
+    AQUA_GRUNT_M_INFO,                                                                   \
+    .partySize = 2,                                                                      \
+    .party = (const struct TrainerMon[]) {                                               \
+        {                                                                                \
+        .lvl = Level,                                                                    \
+        .species = Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_DEWPIDER : SPECIES_ARAQUANID, \
+        .ability = ABILITY_WATER_BUBBLE,                                                 \
+        .gender = TRAINER_MON_MALE,                                                      \
+        },                                                                               \
+        {                                                                                \
+        .lvl = Level,                                                                    \
+        .species = SPECIES_MALIK_ACE + (Level < SEAFLOOR_CAVERN_LEVEL ? 0 : 1),          \
+        .ability = ABILITY_SHELL_ARMOR,                                                  \
+        .gender = TRAINER_MON_MALE,                                                      \
+        }                                                                                \
+    },                                                                                   \
 }
 
 #define BERYL_BATTLE(Location, Level)                                                 \
@@ -4177,7 +4177,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         },                                                                            \
         {                                                                             \
         .lvl = Level,                                                                 \
-        .species = Level < AQUA_HIDEOUT_LEVEL ? SPECIES_HORSEA : (Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_SEADRA : SPECIES_KINGDRA), \
+        .species = Level < AQUA_HIDEOUT_LEVEL ? SPECIES_LOTAD : (Level < SEAFLOOR_CAVERN_LEVEL ? SPECIES_LOMBRE : SPECIES_LUDICOLO), \
         .ability = ABILITY_SWIFT_SWIM,                                                \
         .gender = TRAINER_MON_MALE,                                                   \
         }                                                                             \
@@ -4275,38 +4275,38 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },                                                                                \
 }
 
-#define SHELLY_BATTLE(Location, AceLevel, IVs)                                       \
-[DIFFICULTY_NORMAL][TRAINER_SHELLY_##Location] =                                     \
-{                                                                                    \
-    .trainerName = _("Shelly"),                                                      \
-    .trainerClass = TRAINER_CLASS_AQUA_ADMIN,                                        \
-    .trainerPic = TRAINER_PIC_AQUA_ADMIN_F,                                          \
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,        \
-    BOSS_AI_FLAGS,                                                                   \
-    .partySize = 3,                                                                  \
-    .party = (const struct TrainerMon[]) {                                           \
-        {                                                                            \
-        .lvl = (AceLevel - 2),                                                       \
-        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_STARYU : SPECIES_STARMIE,  \
-        .ability = ABILITY_ILLUMINATE,                                               \
-        IVS(IVs),                                                                    \
-        .gender = TRAINER_MON_NONE,                                                  \
-        },                                                                           \
-        {                                                                            \
-        .lvl = (AceLevel - 2),                                                       \
-        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_GOLDEEN : SPECIES_SEAKING, \
-        .ability = ABILITY_SWIFT_SWIM,                                               \
-        IVS(IVs),                                                                    \
-        .gender = TRAINER_MON_FEMALE,                                                \
-        },                                                                           \
-        {                                                                            \
-        .lvl = AceLevel,                                                             \
-        .species = SPECIES_GOREBYSS,                                                 \
-        .ability = ABILITY_SWIFT_SWIM,                                               \
-        IVS(IVs),                                                                    \
-        .gender = TRAINER_MON_FEMALE,                                                \
-        }                                                                            \
-    },                                                                               \
+#define SHELLY_BATTLE(Location, AceLevel, IVs)                                         \
+[DIFFICULTY_NORMAL][TRAINER_SHELLY_##Location] =                                       \
+{                                                                                      \
+    .trainerName = _("Shelly"),                                                        \
+    .trainerClass = TRAINER_CLASS_AQUA_ADMIN,                                          \
+    .trainerPic = TRAINER_PIC_AQUA_ADMIN_F,                                            \
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,          \
+    BOSS_AI_FLAGS,                                                                     \
+    .partySize = 3,                                                                    \
+    .party = (const struct TrainerMon[]) {                                             \
+        {                                                                              \
+        .lvl = (AceLevel - 2),                                                         \
+        .species = LAPRAS,                                                             \
+        .ability = ABILITY_WATER_ABSORB,                                               \
+        IVS(IVs),                                                                      \
+        .gender = TRAINER_MON_FEMALE,                                                  \
+        },                                                                             \
+        {                                                                              \
+        .lvl = (AceLevel - 2),                                                         \
+        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_SLOWPOKE : SPECIES_SLOWKING, \
+        .ability = ABILITY_OWN_TEMPO,                                                  \
+        IVS(IVs),                                                                      \
+        .gender = TRAINER_MON_FEMALE,                                                  \
+        },                                                                             \
+        {                                                                              \
+        .lvl = AceLevel,                                                               \
+        .species = SPECIES_MILOTIC,                                                    \
+        .ability = ABILITY_MARVEL_SCALE,                                               \
+        IVS(IVs),                                                                      \
+        .gender = TRAINER_MON_FEMALE,                                                  \
+        }                                                                              \
+    },                                                                                 \
 }
 
 #define MATT_BATTLE(Location, AceLevel, IVs)               \
@@ -4321,22 +4321,22 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {                 \
         {                                                  \
         .lvl = (AceLevel - 2),                             \
-        .species = SPECIES_GYARADOS,                       \
-        .ability = ABILITY_INTIMIDATE,                     \
+        .species = SPECIES_VAPOREON,                       \
+        .ability = ABILITY_WATER_ABSORB,                   \
         IVS(IVs),                                          \
         .gender = TRAINER_MON_MALE,                        \
         },                                                 \
         {                                                  \
         .lvl = (AceLevel - 2),                             \
-        .species = SPECIES_CRAWDAUNT,                      \
-        .ability = ABILITY_SHELL_ARMOR,                    \
+        .species = SPECIES_SLOWBRO,                        \
+        .ability = ABILITY_OWN_TEMPO,                      \
         IVS(IVs),                                          \
         .gender = TRAINER_MON_MALE,                        \
         },                                                 \
         {                                                  \
         .lvl = AceLevel,                                   \
-        .species = SPECIES_HUNTAIL,                        \
-        .ability = ABILITY_SWIFT_SWIM,                     \
+        .species = SPECIES_GYARADOS,                       \
+        .ability = ABILITY_INTIMIDATE,                     \
         IVS(IVs),                                          \
         .gender = TRAINER_MON_MALE,                        \
         }                                                  \
@@ -6304,7 +6304,7 @@ MARINA_BATTLE(MUSEUM, 17),
     ARCHIE_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
-        ARCHIE_TENTACOOL(17),
+        ARCHIE_ARROKUDA(17),
         ARCHIE_WAILMER(17),
         {
         FINNEAS(19),
@@ -12725,7 +12725,7 @@ MARINA_BATTLE(WEATHER_INSTITUTE, WEATHER_INSTITUTE_AQUA_LEVEL),
     CASPIAN_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
-        CASPIAN_CLAMPERL(WEATHER_INSTITUTE_AQUA_LEVEL),
+        CASPIAN_PANPOUR(WEATHER_INSTITUTE_AQUA_LEVEL),
         CASPIAN_CARVANHA(WEATHER_INSTITUTE_AQUA_LEVEL, AQUA_JET, POISON_FANG, ICE_FANG),
     },
 },
@@ -14754,7 +14754,7 @@ BERYL_BATTLE(AQUA_HIDEOUT, AQUA_HIDEOUT_LEVEL),
     CASPIAN_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
-        CASPIAN_CLAMPERL(AQUA_HIDEOUT_LEVEL),
+        CASPIAN_PANPOUR(AQUA_HIDEOUT_LEVEL),
         CASPIAN_CARVANHA(AQUA_HIDEOUT_LEVEL, LIQUIDATION, POISON_FANG, ICE_FANG),
     },
 },
@@ -16038,7 +16038,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
         IVS(18),
         .gender = TRAINER_MON_MALE,
         },
-        ARCHIE_TENTACOOL(53),
+        ARCHIE_ARROKUDA(53),
         ARCHIE_WAILMER(54),
         {
         FINNEAS(55),

@@ -5694,7 +5694,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 9,
-        .species = SPECIES_GEODUDE,
+        .species = SPECIES_LARVITAR,
         IVS(14),
         },
         {

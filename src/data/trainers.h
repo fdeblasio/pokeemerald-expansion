@@ -6152,7 +6152,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 
 #define RICKY_BUNNELBY(Level)                                                \
     .lvl = Level,                                                            \
-    .species = Level < 20 ? SPECIES_BUNNELBY : SPECIES_DIGGERSNY,            \
+    .species = Level < 20 ? SPECIES_BUNNELBY : SPECIES_DIGGERSBY,            \
     .ability = ABILITY_CHEEK_POUCH,                                          \
     .moves = {MOVE_SURF, MOVE_DIZZY_PUNCH, MOVE_DOUBLE_KICK, MOVE_MUD_SLAP}, \
     .gender = TRAINER_MON_MALE

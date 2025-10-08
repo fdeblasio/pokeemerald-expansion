@@ -13955,14 +13955,60 @@
     "TutorMoves": []
   },
   "CHEWTLE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_AQUA_JET"
+      },
+      {
+        "Level": 14,
+        "Move": "MOVE_ICE_FANG"
+      },
+      {
+        "Level": 28,
+        "Move": "MOVE_WATERFALL"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_CRUNCH"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "DREDNAW": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_AQUA_JET"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_ROCK_THROW"
+      },
+      {
+        "Level": 14,
+        "Move": "MOVE_ICE_FANG"
+      },
+      {
+        "Level": 30,
+        "Move": "MOVE_WATERFALL"
+      },
+      {
+        "Level": 39,
+        "Move": "MOVE_ROCK_SLIDE"
+      },
+      {
+        "Level": 57,
+        "Move": "MOVE_AQUA_TAIL"
+      },
+      {
+        "Level": 66,
+        "Move": "MOVE_SHELL_SMASH"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

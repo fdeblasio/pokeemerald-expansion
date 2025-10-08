@@ -3433,6 +3433,16 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Spe: 88->90
     - Learns Rollout and Body Slam by level up
 
+- Chewtle:
+    - Learns Aqua Jet, Ice Fang, Waterfall, and Crunch by level up
+
+- Drednaw:
+    - Def: 90->100
+    - SpA: 48->50
+    - SpD: 68->70
+    - Spe: 74->75
+    - Learns Aqua Jet, Rock Throw, Ice Fang, Waterfall, Rock Slide, Aqua Tail, and Shell Smash by level up
+
 - Rolycoly:
     - Learns Rock Throw, Rock Tomb, Rock Slide, and Power Gem by level up
 

@@ -38862,6 +38862,7 @@ static const u16 sChewtleTeachableLearnset[] = {
 };
 
 static const u16 sDrednawTeachableLearnset[] = {
+    MOVE_AQUA_TAIL,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BODY_PRESS,

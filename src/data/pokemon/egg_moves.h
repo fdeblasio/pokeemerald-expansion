@@ -10716,7 +10716,6 @@ static const u16 sChewtleEggMoveLearnset[] = {
     MOVE_DRAGON_TAIL,
     MOVE_GASTRO_ACID,
     MOVE_HYDRO_PUMP,
-    MOVE_ICE_FANG,
     MOVE_MUD_SHOT,
     MOVE_REVENGE,
     MOVE_ROUND,

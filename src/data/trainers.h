@@ -7147,9 +7147,9 @@ MARINA_BATTLE(MUSEUM, 17),
         },                                                                                          \
         {                                                                                           \
         POKEMON_BREEDER_MON(Level),                                                                 \
-        .species = Level < 20 ? SPECIES_ZIGZAGOON : SPECIES_LINOONE,                                \
-        .ability = ABILITY_QUICK_FEET,                                                              \
-        .moves = {MOVE_EXTREME_SPEED, MOVE_MUD_SLAP, MOVE_SIMPLE_BEAM, MOVE_TICKLE},                \
+        .species = Level < 34 ? SPECIES_DWEBBLE : SPECIES_CRUSTLE,                                  \
+        .ability = ABILITY_WEAK_ARMOR,                                                              \
+        .moves = {MOVE_SKITTER_SMACK, MOVE_BULLDOZE, MOVE_CURSE, MOVE_SPIKES},                      \
         .gender = TRAINER_MON_MALE                                                                  \
         },                                                                                          \
         {                                                                                           \
@@ -7161,16 +7161,16 @@ MARINA_BATTLE(MUSEUM, 17),
         },                                                                                          \
         {                                                                                           \
         POKEMON_BREEDER_MON(Level),                                                                 \
-        .species = Level < 18 ? SPECIES_POOCHYENA : SPECIES_MIGHTYENA,                              \
-        .ability = ABILITY_STRONG_JAW,                                                              \
-        .moves = {MOVE_LASH_OUT, MOVE_POISON_FANG, MOVE_THUNDER_FANG, MOVE_FIRE_FANG},              \
+        .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_TADBULB : SPECIES_BELLIBOLT,                 \
+        .ability = ABILITY_VOLT_ABSORB,                                                             \
+        .moves = {MOVE_CHARGE_BEAM, MOVE_ACID_SPRAY, MOVE_CHILLING_WATER, MOVE_CONFUSE_RAY},        \
         .gender = TRAINER_MON_MALE                                                                  \
         },                                                                                          \
         {                                                                                           \
         POKEMON_BREEDER_MON(Level),                                                                 \
-        .species = Level < 22 ? SPECIES_TAILLOW : SPECIES_SWELLOW,                                  \
-        .ability = ABILITY_SCRAPPY,                                                                 \
-        .moves = {MOVE_BOOMBURST, MOVE_HURRICANE, MOVE_HEAT_WAVE, MOVE_ROOST},                      \
+        .species = Level < 37 ? SPECIES_SLOWPOKE : SPECIES_SLOWBRO,                                 \
+        .ability = ABILITY_REGENERATOR,                                                             \
+        .moves = {MOVE_HYDRO_PUMP, MOVE_PSYSHOCK, MOVE_TRI_ATTACK, MOVE_MUD_SHOT},                  \
         .gender = TRAINER_MON_MALE                                                                  \
         },                                                                                          \
         {                                                                                           \
@@ -7226,16 +7226,16 @@ ISAAC_BATTLE(5, REMATCH_5_LEVEL_3),
         },                                                                                     \
         {                                                                                      \
         POKEMON_BREEDER_MON(Level),                                                            \
-        .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_SKITTY : SPECIES_DELCATTY,              \
-        .ability = ABILITY_WONDER_SKIN,                                                        \
-        .moves = {MOVE_UPROAR, MOVE_SIMPLE_BEAM, MOVE_FAKE_TEARS, MOVE_COSMIC_POWER},          \
+        .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_SNOM : SPECIES_FROSMOTH,                \
+        .ability = ABILITY_ICE_SCALES,                                                         \
+        .moves = {MOVE_SKITTER_SMACK, MOVE_ICICLE_SPEAR, MOVE_ROUND, MOVE_FAIRY_WIND},         \
         .gender = TRAINER_MON_FEMALE                                                           \
         },                                                                                     \
         {                                                                                      \
         POKEMON_BREEDER_MON(Level),                                                            \
-        .species = Level < 33 ? SPECIES_GOLDEEN : SPECIES_SEAKING,                             \
-        .ability = ABILITY_LIGHTNING_ROD,                                                      \
-        .moves = {MOVE_AQUA_TAIL, MOVE_SMART_STRIKE, MOVE_DRILL_RUN, MOVE_MEGAHORN},           \
+        .species = Level < 40 ? SPECIES_PONYTA : SPECIES_RAPIDASH,                             \
+        .ability = ABILITY_FLAME_BODY,                                                         \
+        .moves = {MOVE_HEAT_WAVE, MOVE_DOUBLE_KICK, MOVE_WILD_CHARGE, MOVE_HYPNOSIS},          \
         .gender = TRAINER_MON_FEMALE                                                           \
         },                                                                                     \
     },                                                                                         \

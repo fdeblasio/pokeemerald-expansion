@@ -781,6 +781,8 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Accuracy: 95->100
     - Fusion Bolt:
         - PP: 5->10
+    - Overdrive:
+        - Power: 80->90
     - Parabolic Charge:
         - Power: 65->75
         - Target: Both foes and ally->both foes
@@ -2936,7 +2938,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Eelektrik:
     - Learns Thunder Fang and Supercell Slam by level up
 
-- Eelektrik:
+- Eelektross:
     - Learns Thunder Fang, Thunder Punch, and Supercell Slam by level up
 
 - Litwick:

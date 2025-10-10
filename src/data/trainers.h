@@ -146,10 +146,11 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 #define TIER2 2
 #define TIER3 5
 
-#define REMATCH_MON(Species, Tier, Rematch)          \
-    .lvl = ENDGAME_REMATCH_##Rematch##_LEVEL - Tier, \
-    .species = SPECIES_##Species,                    \
-    PERFECT_IVS,                                     \
+#define REMATCH_MON(Species, Tier, Rematch, ...)                             \
+    .lvl = ENDGAME_REMATCH_##Rematch##_LEVEL - Tier,                         \
+    .species = SPECIES_##Species,                                            \
+    PERFECT_IVS,                                                             \
+    .heldItem = Tier <= TIER2 ? DEFAULT(ITEM_NONE, __VA_ARGS__) : ITEM_NONE, \
     .ball = Tier == ACE ? ITEM_POKE_BALL : ITEM_NONE
 
 #define WALLY_INFO                                         \
@@ -266,26 +267,24 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 
 #define REMATCH_RALPH(rematch)                                                         \
     {                                                                                  \
-    REMATCH_MON(GALLADE, ACE, rematch),                                                \
+    REMATCH_MON(GALLADE, ACE, rematch, ITEM_GALLADITE),                                \
     .ability = ABILITY_SHARPNESS,                                                      \
     .nature = NATURE_ADAMANT,                                                          \
     EV_SPREAD_ATK_SPE_HP,                                                              \
     .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                        \
-    .heldItem = ITEM_GALLADITE,                                                        \
     .nickname = COMPOUND_STRING("Ralph"),                                              \
-    .friendship = 255,                                                                 \
+    .friendship = MAX_FRIENDSHIP,                                                      \
     }
 
 #define WALLY_ROSERADE(rematch)                                                \
     {                                                                          \
-    REMATCH_MON(ROSERADE, TIER2, rematch),                                     \
+    REMATCH_MON(ROSERADE, TIER2, rematch, ITEM_MIRACLE_SEED),                  \
     .ability = ABILITY_NATURAL_CURE,                                           \
     .nature = NATURE_MODEST,                                                   \
     EV_SPREAD_SPA_SPE_SPD,                                                     \
     .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_LEECH_SEED, MOVE_TOXIC}, \
     .gender = TRAINER_MON_FEMALE,                                              \
-    .heldItem = ITEM_MIRACLE_SEED,                                             \
     }
 
 #define WALLY_ALTARIA(rematch)                                                       \
@@ -330,24 +329,22 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 //Extra for hacks
 #define WALLY_VILEPLUME(rematch, tier)                                        \
     {                                                                         \
-    REMATCH_MON(VILEPLUME, tier, rematch),                                    \
+    REMATCH_MON(VILEPLUME, tier, rematch, ITEM_MIRACLE_SEED),                 \
     .ability = ABILITY_CHLOROPHYLL,                                           \
     .nature = NATURE_MODEST,                                                  \
     EV_SPREAD_SPA_SPE_SPD,                                                    \
     .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_MOONBLAST, MOVE_TOXIC}, \
     .gender = TRAINER_MON_MALE,                                               \
-    .heldItem = tier <= TIER2 ? ITEM_MIRACLE_SEED : ITEM_NONE,                \
     }
 
 #define WALLY_VICTREEBEL(rematch, tier)                                              \
     {                                                                                \
-    REMATCH_MON(VICTREEBEL, tier, rematch),                                          \
+    REMATCH_MON(VICTREEBEL, tier, rematch, ITEM_MIRACLE_SEED),                       \
     .ability = ABILITY_NATURAL_CURE,                                                 \
     .nature = NATURE_ADAMANT,                                                        \
     EV_SPREAD_ATK_SPE_HP,                                                            \
     .moves = {MOVE_LEAF_BLADE, MOVE_POISON_JAB, MOVE_LEECH_LIFE, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                      \
-    .heldItem = tier <= TIER2 ? ITEM_MIRACLE_SEED : ITEM_NONE,                       \
     }
 
 #define WALLY_KLEAVOR(rematch)                                                      \
@@ -508,35 +505,32 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 
 #define ROXANNE_PROBOPASS(rematch)                                                      \
     {                                                                                   \
-    REMATCH_MON(PROBOPASS, ACE, rematch),                                               \
+    REMATCH_MON(PROBOPASS, ACE, rematch, ITEM_SITRUS_BERRY),                            \
     .ability = ABILITY_SAND_FORCE,                                                      \
     .nature = NATURE_IMPISH,                                                            \
     EV_SPREAD_SPA_DEF_SPD,                                                              \
     .moves = {MOVE_POWER_GEM, MOVE_FLASH_CANNON, rematch < 5 ? MOVE_SANDSTORM : MOVE_BODY_PRESS, MOVE_IRON_DEFENSE}, \
     .gender = TRAINER_MON_FEMALE,                                                       \
-    .heldItem = ITEM_SITRUS_BERRY,                                                      \
     }
 
 #define ROXANNE_ARMALDO(rematch)                                                    \
     {                                                                               \
-    REMATCH_MON(ARMALDO, TIER2, rematch),                                           \
+    REMATCH_MON(ARMALDO, TIER2, rematch, ITEM_QUICK_CLAW),                          \
     .ability = ABILITY_BATTLE_ARMOR,                                                \
     .nature = NATURE_ADAMANT,                                                       \
     EV_SPREAD_ATK_DEF_HP,                                                           \
     .moves = {MOVE_ROCK_SLIDE, MOVE_X_SCISSOR, MOVE_CRUSH_CLAW, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                     \
-    .heldItem = ITEM_QUICK_CLAW,                                                    \
     }
 
 #define ROXANNE_CRADILY(rematch)                                                \
     {                                                                           \
-    REMATCH_MON(CRADILY, TIER2, rematch),                                       \
+    REMATCH_MON(CRADILY, TIER2, rematch, ITEM_BIG_ROOT),                        \
     .ability = ABILITY_STORM_DRAIN,                                             \
     .nature = NATURE_CALM,                                                      \
     EV_SPREAD_SPA_SPD_DEF,                                                      \
     .moves = {MOVE_GIGA_DRAIN, MOVE_ANCIENT_POWER, MOVE_INGRAIN, MOVE_AMNESIA}, \
     .gender = TRAINER_MON_FEMALE,                                               \
-    .heldItem = ITEM_BIG_ROOT,                                                  \
     }
 
 #define ROXANNE_RELICANTH(rematch)                                               \
@@ -599,13 +593,12 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 
 #define ROXANNE_RAMPARDOS(rematch, tier)                                             \
     {                                                                                \
-    REMATCH_MON(RAMPARDOS, tier, rematch),                                           \
+    REMATCH_MON(RAMPARDOS, tier, rematch, ITEM_QUICK_CLAW),                          \
     .ability = ABILITY_ROCK_HEAD,                                                    \
     .nature = NATURE_ADAMANT,                                                        \
     EV_SPREAD_ATK_SPE_HP,                                                            \
     .moves = {MOVE_HEAD_SMASH, MOVE_ZEN_HEADBUTT, MOVE_IRON_HEAD, MOVE_BRICK_BREAK}, \
     .gender = TRAINER_MON_FEMALE,                                                    \
-    .heldItem = tier <= TIER2 ? ITEM_QUICK_CLAW : ITEM_NONE,                         \
     }
 
 #define ROXANNE_BASTIODON
@@ -624,26 +617,24 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 
 #define ROXANNE_ARCHEOPS(rematch, tier)                                            \
     {                                                                              \
-    REMATCH_MON(ARCHEOPS, tier, rematch),                                          \
+    REMATCH_MON(ARCHEOPS, tier, rematch, ITEM_SHELL_BELL),                         \
     .ability = ABILITY_EARLY_BIRD,                                                 \
     .nature = NATURE_ADAMANT,                                                      \
     EV_SPREAD_ATK_SPE_HP,                                                          \
     .moves = {MOVE_ROCK_SLIDE, MOVE_DUAL_WINGBEAT, MOVE_CRUNCH, MOVE_DRAGON_CLAW}, \
     .gender = TRAINER_MON_FEMALE,                                                  \
-    .heldItem = tier <= TIER2 ? ITEM_SHELL_BELL : ITEM_NONE,                       \
     }
 
 #define ROXANNE_BARBARACLE
 
 #define ROXANNE_TYRANTRUM(rematch, tier)                                                 \
     {                                                                                    \
-    REMATCH_MON(TYRANTRUM, tier, rematch),                                               \
+    REMATCH_MON(TYRANTRUM, tier, rematch, ITEM_ROCKY_HELMET),                            \
     .ability = ABILITY_ROCK_HEAD,                                                        \
     .nature = NATURE_ADAMANT,                                                            \
     EV_SPREAD_ATK_DEF_HP,                                                                \
     .moves = {MOVE_HEAD_SMASH, MOVE_DRAGON_CLAW, MOVE_PSYCHIC_FANGS, MOVE_DRAGON_DANCE}, \
     .gender = TRAINER_MON_FEMALE,                                                        \
-    .heldItem = tier <= TIER2 ? ITEM_ROCKY_HELMET : ITEM_NONE,                           \
     }
 
 #define ROXANNE_AURORUS
@@ -782,35 +773,32 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 
 #define BRAWLY_HARIYAMA(rematch)                                               \
     {                                                                          \
-    REMATCH_MON(HARIYAMA, ACE, rematch),                                       \
+    REMATCH_MON(HARIYAMA, ACE, rematch, ITEM_SITRUS_BERRY),                    \
     .ability = ABILITY_THICK_FAT,                                              \
     .nature = NATURE_ADAMANT,                                                  \
     EV_SPREAD_ATK_HP_SPE,                                                      \
     .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_BELLY_DRUM, MOVE_FAKE_OUT}, \
     .gender = TRAINER_MON_MALE,                                                \
-    .heldItem = ITEM_SITRUS_BERRY,                                             \
     }
 
 #define BRAWLY_MEDICHAM(rematch)                                                  \
     {                                                                             \
-    REMATCH_MON(MEDICHAM, TIER2, rematch),                                        \
+    REMATCH_MON(MEDICHAM, TIER2, rematch, ITEM_MUSCLE_BAND),                      \
     .ability = ABILITY_PURE_POWER,                                                \
     .nature = NATURE_ADAMANT,                                                     \
     EV_SPREAD_ATK_SPE_HP,                                                         \
     .moves = {MOVE_BULK_UP, MOVE_HIGH_JUMP_KICK, MOVE_ZEN_HEADBUTT, MOVE_DETECT}, \
     .gender = TRAINER_MON_FEMALE,                                                 \
-    .heldItem = ITEM_MUSCLE_BAND,                                                 \
     }
 
 #define BRAWLY_MACHAMP(rematch)                                               \
     {                                                                         \
-    REMATCH_MON(MACHAMP, TIER2, rematch),                                     \
+    REMATCH_MON(MACHAMP, TIER2, rematch, ITEM_BLACK_BELT),                    \
     .ability = ABILITY_NO_GUARD,                                              \
     .nature = NATURE_ADAMANT,                                                 \
     EV_SPREAD_ATK_SPE_HP,                                                     \
     .moves = {MOVE_BULK_UP, MOVE_CROSS_CHOP, MOVE_KNOCK_OFF, MOVE_DUAL_CHOP}, \
     .gender = TRAINER_MON_MALE,                                               \
-    .heldItem = ITEM_BLACK_BELT,                                              \
     }
 
 #define BRAWLY_BRELOOM(rematch)                                                   \
@@ -910,26 +898,24 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 
 #define BRAWLY_CRABOMINABLE(rematch, tier)                                              \
     {                                                                                   \
-    REMATCH_MON(CRABOMINABLE, tier, rematch),                                           \
+    REMATCH_MON(CRABOMINABLE, tier, rematch, ITEM_ASSAULT_VEST),                        \
     .ability = ABILITY_IRON_FIST,                                                       \
     .nature = NATURE_ADAMANT,                                                           \
     EV_SPREAD_ATK_HP_SPD,                                                               \
     .moves = {MOVE_DRAIN_PUNCH, MOVE_ICE_HAMMER, MOVE_CRABHAMMER, MOVE_POWER_UP_PUNCH}, \
     .gender = TRAINER_MON_MALE,                                                         \
-    .heldItem = tier <= TIER2 ? ITEM_ASSAULT_VEST : ITEM_NONE,                          \
     }
 
 #define BRAWLY_PASSIMIAN
 
 #define BRAWLY_GRAPPLOCT(rematch, tier)                                      \
     {                                                                        \
-    REMATCH_MON(GRAPPLOCT, tier, rematch),                                   \
+    REMATCH_MON(GRAPPLOCT, tier, rematch, ITEM_SITRUS_BERRY),                \
     .ability = ABILITY_TECHNICIAN,                                           \
     .nature = NATURE_ADAMANT,                                                \
     EV_SPREAD_ATK_SPE_HP,                                                    \
     .moves = {MOVE_BULK_UP, MOVE_STORM_THROW, MOVE_AQUA_JET, MOVE_OCTOLOCK}, \
     .gender = TRAINER_MON_MALE,                                              \
-    .heldItem = tier <= TIER2 ? ITEM_SITRUS_BERRY : ITEM_NONE,               \
     }
 
 #define BRAWLY_FALINKS(rematch)                                                     \
@@ -1043,35 +1029,32 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 
 #define WATTSON_MANECTRIC(rematch)                                                \
     {                                                                             \
-    REMATCH_MON(MANECTRIC, ACE, rematch),                                         \
+    REMATCH_MON(MANECTRIC, ACE, rematch, ITEM_SITRUS_BERRY),                      \
     .ability = ABILITY_MINUS,                                                     \
     .nature = NATURE_MODEST,                                                      \
     EV_SPREAD_SPA_SPE_HP,                                                         \
     .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_SIGNAL_BEAM, MOVE_SNARL}, \
     .gender = TRAINER_MON_MALE,                                                   \
-    .heldItem = ITEM_SITRUS_BERRY,                                                \
     }
 
 #define WATTSON_PLUSLE(rematch)                                                  \
     {                                                                            \
-    REMATCH_MON(PLUSLE, TIER2, rematch),                                         \
+    REMATCH_MON(PLUSLE, TIER2, rematch, ITEM_MAGNET),                            \
     .ability = ABILITY_PLUS,                                                     \
     .nature = NATURE_TIMID,                                                      \
     EV_SPREAD_SPA_SPE_SPD,                                                       \
     .moves = {MOVE_THUNDERBOLT, MOVE_HELPING_HAND, MOVE_CHARM, MOVE_NASTY_PLOT}, \
     .gender = TRAINER_MON_FEMALE,                                                \
-    .heldItem = ITEM_MAGNET,                                                     \
     }
 
 #define WATTSON_MINUN(rematch)                                                        \
     {                                                                                 \
-    REMATCH_MON(MINUN, TIER2, rematch),                                               \
+    REMATCH_MON(MINUN, TIER2, rematch, ITEM_MAGNET),                                  \
     .ability = ABILITY_MINUS,                                                         \
     .nature = NATURE_TIMID,                                                           \
     EV_SPREAD_SPA_SPE_SPD,                                                            \
     .moves = {MOVE_THUNDERBOLT, MOVE_THUNDER_WAVE, MOVE_FAKE_TEARS, MOVE_NASTY_PLOT}, \
     .gender = TRAINER_MON_MALE,                                                       \
-    .heldItem = ITEM_MAGNET,                                                          \
     }
 
 #define WATTSON_MAGNEZONE(rematch)                                                       \
@@ -1115,25 +1098,23 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 
 #define WATTSON_RAICHU_ALOLA(rematch, tier)                                \
     {                                                                      \
-    REMATCH_MON(RAICHU_ALOLA, tier, rematch),                              \
+    REMATCH_MON(RAICHU_ALOLA, tier, rematch, ITEM_ELECTRIC_SEED),          \
     .ability = ABILITY_SURGE_SURFER,                                       \
     .nature = NATURE_TIMID,                                                \
     EV_SPREAD_SPA_SPE_HP,                                                  \
     .moves = {MOVE_THUNDERBOLT, MOVE_PSYCHIC, MOVE_SURF, MOVE_NASTY_PLOT}, \
     .gender = TRAINER_MON_MALE,                                            \
-    .heldItem = tier <= TIER2 ? ITEM_ELECTRIC_SEED : ITEM_NONE,            \
     }
 
 #define WATTSON_ELECTRODE_HISUI
 
 #define WATTSON_ELECTIVIRE(rematch, tier)                                                     \
     {                                                                                         \
-    REMATCH_MON(ELECTIVIRE, tier, rematch),                                                   \
+    REMATCH_MON(ELECTIVIRE, tier, rematch, ITEM_MAGNET),                                      \
     .nature = NATURE_ADAMANT,                                                                 \
     EV_SPREAD_ATK_SPE_HP,                                                                     \
     .moves = {MOVE_SUPERCELL_SLAM, MOVE_FIRE_PUNCH, MOVE_DRAIN_PUNCH, MOVE_ELECTRIC_TERRAIN}, \
     .gender = TRAINER_MON_MALE,                                                               \
-    .heldItem = tier <= TIER2 ? ITEM_MAGNET : ITEM_NONE,                                      \
     }
 
 #define WATTSON_JOLTEON
@@ -1141,13 +1122,12 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 
 #define WATTSON_LUXRAY(rematch, tier)                                                       \
     {                                                                                       \
-    REMATCH_MON(LUXRAY, tier, rematch),                                                     \
+    REMATCH_MON(LUXRAY, tier, rematch, ITEM_ELECTRIC_SEED),                                 \
     .ability = ABILITY_INTIMIDATE,                                                          \
     .nature = NATURE_ADAMANT,                                                               \
     EV_SPREAD_ATK_SPE_HP,                                                                   \
     .moves = {MOVE_SUPERCELL_SLAM, MOVE_CRUNCH, MOVE_PSYCHIC_FANGS, MOVE_ELECTRIC_TERRAIN}, \
     .gender = TRAINER_MON_MALE,                                                             \
-    .heldItem = tier <= TIER2 ? ITEM_ELECTRIC_SEED : ITEM_NONE,                             \
     }
 
 #define WATTSON_PACHIRISU
@@ -1181,13 +1161,12 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 
 #define WATTSON_HELIOLISK(rematch, tier)                                                     \
     {                                                                                        \
-    REMATCH_MON(HELIOLISK, tier, rematch),                                                   \
+    REMATCH_MON(HELIOLISK, tier, rematch, ITEM_BIG_ROOT),                                    \
     .ability = ABILITY_DRY_SKIN,                                                             \
     .nature = NATURE_MODEST,                                                                 \
     EV_SPREAD_ATK_SPE_SPD,                                                                   \
     .moves = {MOVE_PARABOLIC_CHARGE, MOVE_HYPER_VOICE, MOVE_WEATHER_BALL, MOVE_EARTH_POWER}, \
     .gender = TRAINER_MON_MALE,                                                              \
-    .heldItem = tier <= TIER2 ? ITEM_BIG_ROOT : ITEM_NONE,                                   \
     }
 
 #define WATTSON_DEDENNE
@@ -1210,34 +1189,31 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 
 #define WATTSON_PAWMOT(rematch, tier)                                                 \
     {                                                                                 \
-    REMATCH_MON(PAWMOT, tier, rematch),                                               \
+    REMATCH_MON(PAWMOT, tier, rematch, ITEM_PUNCHING_GLOVE),                          \
     .ability = ABILITY_IRON_FIST,                                                     \
     .nature = NATURE_ADAMANT,                                                         \
     EV_SPREAD_ATK_SPE_HP,                                                             \
     .moves = {MOVE_THUNDER_PUNCH, MOVE_DRAIN_PUNCH, MOVE_ICE_PUNCH, MOVE_MACH_PUNCH}, \
     .gender = TRAINER_MON_MALE,                                                       \
-    .heldItem = tier <= TIER2 ? ITEM_PUNCHING_GLOVE : ITEM_NONE,                      \
     }
 
 
 #define WATTSON_BELLIBOLT(rematch, tier)                                                  \
     {                                                                                     \
-    REMATCH_MON(BELLIBOLT, tier, rematch),                                                \
+    REMATCH_MON(BELLIBOLT, tier, rematch, ITEM_MAGNET),                                   \
     .ability = ABILITY_ELECTROMORPHOSIS,                                                  \
     .nature = NATURE_MODEST,                                                              \
     EV_SPREAD_SPA_HP_SPD,                                                                 \
     .moves = {MOVE_PARABOLIC_CHARGE, MOVE_SURF, MOVE_EARTH_POWER, MOVE_ELECTRIC_TERRAIN}, \
     .gender = TRAINER_MON_MALE,                                                           \
-    .heldItem = tier <= TIER2 ? ITEM_MAGNET : ITEM_NONE,                                  \
     }
 
 #define WATTSON_KILOWATTREL_INFO(rematch, tier, item) \
-    REMATCH_MON(KILOWATTREL, tier, rematch),          \
+    REMATCH_MON(KILOWATTREL, tier, rematch, item),    \
     .ability = ABILITY_WIND_POWER,                    \
     .nature = NATURE_TIMID,                           \
     EV_SPREAD_SPA_SPE_HP,                             \
-    .gender = TRAINER_MON_MALE,                       \
-    .heldItem = tier <= TIER2 ? item : ITEM_NONE
+    .gender = TRAINER_MON_MALE
 
 #define WATTSON_KILOWATTREL_1(rematch)                                             \
     {                                                                              \
@@ -1353,35 +1329,32 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 
 #define FLANNERY_TORKOAL(rematch)                                                  \
     {                                                                              \
-    REMATCH_MON(TORKOAL, ACE, rematch),                                            \
+    REMATCH_MON(TORKOAL, ACE, rematch, ITEM_WHITE_HERB),                           \
     .ability = ABILITY_DROUGHT,                                                    \
     .nature = NATURE_MODEST,                                                       \
     EV_SPREAD_SPA_DEF_HP,                                                          \
     .moves = {MOVE_OVERHEAT, MOVE_IRON_DEFENSE, MOVE_SHELL_SMASH, MOVE_SUNNY_DAY}, \
     .gender = TRAINER_MON_FEMALE,                                                  \
-    .heldItem = ITEM_WHITE_HERB,                                                   \
     }
 
 #define FLANNERY_CAMERUPT(rematch)                                            \
     {                                                                         \
-    REMATCH_MON(CAMERUPT, TIER2, rematch),                                    \
+    REMATCH_MON(CAMERUPT, TIER2, rematch, ITEM_WHITE_HERB),                   \
     .ability = ABILITY_MAGMA_ARMOR,                                           \
     .nature = NATURE_MODEST,                                                  \
     EV_SPREAD_SPA_SPE_HP,                                                     \
     .moves = {MOVE_OVERHEAT, MOVE_EARTH_POWER, MOVE_AMNESIA, MOVE_SUNNY_DAY}, \
     .gender = TRAINER_MON_FEMALE,                                             \
-    .heldItem = ITEM_WHITE_HERB,                                              \
     }
 
 #define FLANNERY_BLAZIKEN(rematch)                                                 \
     {                                                                              \
-    REMATCH_MON(BLAZIKEN, TIER2, rematch),                                         \
+    REMATCH_MON(BLAZIKEN, TIER2, rematch, ITEM_WHITE_HERB),                        \
     .ability = ABILITY_BLAZE,                                                      \
     .nature = NATURE_MODEST,                                                       \
     EV_SPREAD_SPA_SPE_HP,                                                          \
     .moves = {MOVE_OVERHEAT, MOVE_AURA_SPHERE, MOVE_FOCUS_ENERGY, MOVE_SUNNY_DAY}, \
     .gender = TRAINER_MON_FEMALE,                                                  \
-    .heldItem = ITEM_WHITE_HERB,                                                   \
     }
 
 #define FLANNERY_CASTFORM(rematch)                                                \
@@ -1536,35 +1509,32 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 
 #define NORMAN_SLAKING(rematch)                                                        \
     {                                                                                  \
-    REMATCH_MON(SLAKING, ACE, rematch),                                                \
+    REMATCH_MON(SLAKING, ACE, rematch, ITEM_SITRUS_BERRY),                             \
     .ability = ABILITY_TRUANT,                                                         \
     .nature = NATURE_ADAMANT,                                                          \
     EV_SPREAD_ATK_SPE_HP,                                                              \
     .moves = {MOVE_GIGA_IMPACT, MOVE_HAMMER_ARM, MOVE_THROAT_CHOP, MOVE_SUCKER_PUNCH}, \
     .gender = TRAINER_MON_MALE,                                                        \
-    .heldItem = ITEM_SITRUS_BERRY,                                                     \
     }
 
 #define NORMAN_SPINDA(rematch)                                                 \
     {                                                                          \
-    REMATCH_MON(SPINDA, TIER2, rematch),                                       \
+    REMATCH_MON(SPINDA, TIER2, rematch, ITEM_LIECHI_BERRY),                    \
     .ability = ABILITY_OWN_TEMPO,                                              \
     .nature = NATURE_JOLLY,                                                    \
     EV_SPREAD_ATK_SPE_HP,                                                      \
     .moves = {MOVE_THRASH, MOVE_TEETER_DANCE, MOVE_HYPNOSIS, MOVE_SKILL_SWAP}, \
     .gender = TRAINER_MON_MALE,                                                \
-    .heldItem = ITEM_LIECHI_BERRY,                                             \
     }
 
 #define NORMAN_ZANGOOSE(rematch)                                                 \
     {                                                                            \
-    REMATCH_MON(ZANGOOSE, TIER2, rematch),                                       \
+    REMATCH_MON(ZANGOOSE, TIER2, rematch, ITEM_TOXIC_ORB),                       \
     .ability = ABILITY_POISON_HEAL,                                              \
     .nature = NATURE_ADAMANT,                                                    \
     EV_SPREAD_ATK_SPE_HP,                                                        \
     .moves = {MOVE_FACADE, MOVE_X_SCISSOR, MOVE_NIGHT_SLASH, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                  \
-    .heldItem = ITEM_TOXIC_ORB,                                                  \
     }
 
 #define NORMAN_LINOONE(rematch)                                                \
@@ -1762,35 +1732,32 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 
 #define WINONA_ALTARIA(rematch)                                                      \
     {                                                                                \
-    REMATCH_MON(ALTARIA, ACE, rematch),                                              \
+    REMATCH_MON(ALTARIA, ACE, rematch, ITEM_SITRUS_BERRY),                           \
     .ability = ABILITY_NATURAL_CURE,                                                 \
     .nature = NATURE_MODEST,                                                         \
     EV_SPREAD_SPA_SPE_SPD,                                                           \
     .moves = {MOVE_AIR_SLASH, MOVE_DRAGON_PULSE, MOVE_MOONBLAST, MOVE_COTTON_GUARD}, \
     .gender = TRAINER_MON_FEMALE,                                                    \
-    .heldItem = ITEM_SITRUS_BERRY,                                                   \
     }
 
 #define WINONA_SWELLOW(rematch)                                                 \
     {                                                                           \
-    REMATCH_MON(SWELLOW, TIER2, rematch),                                       \
+    REMATCH_MON(SWELLOW, TIER2, rematch, ITEM_SHARP_BEAK),                      \
     .ability = ABILITY_SCRAPPY,                                                 \
     .nature = NATURE_JOLLY,                                                     \
     EV_SPREAD_ATK_SPE_HP,                                                       \
     .moves = {MOVE_BRAVE_BIRD, MOVE_ENDEAVOR, MOVE_REVERSAL, MOVE_DOUBLE_TEAM}, \
     .gender = TRAINER_MON_FEMALE,                                               \
-    .heldItem = ITEM_SHARP_BEAK,                                                \
     }
 
 #define WINONA_PELIPPER(rematch)                                           \
     {                                                                      \
-    REMATCH_MON(PELIPPER, TIER2, rematch),                                 \
+    REMATCH_MON(PELIPPER, TIER2, rematch, ITEM_DAMP_ROCK),                 \
     .ability = ABILITY_DRIZZLE,                                            \
     .nature = NATURE_MODEST,                                               \
     EV_SPREAD_SPA_SPE_DEF,                                                 \
     .moves = {MOVE_HURRICANE, MOVE_HYDRO_PUMP, MOVE_TAILWIND, MOVE_ROOST}, \
     .gender = TRAINER_MON_FEMALE,                                          \
-    .heldItem = ITEM_DAMP_ROCK,                                            \
     }
 
 #define WINONA_TROPIUS(rematch)                                                  \
@@ -1935,22 +1902,20 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 
 #define TATE_SOLROCK(rematch)                                                          \
     {                                                                                  \
-    REMATCH_MON(SOLROCK, ACE, rematch),                                                \
+    REMATCH_MON(SOLROCK, ACE, rematch, ITEM_SITRUS_BERRY),                             \
     .ability = ABILITY_LEVITATE,                                                       \
     .nature = NATURE_ADAMANT,                                                          \
     EV_SPREAD_ATK_DEF_HP,                                                              \
     .moves = {MOVE_ZEN_HEADBUTT, MOVE_ROCK_SLIDE, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN}, \
-    .heldItem = ITEM_SITRUS_BERRY,                                                     \
     }
 
 #define LIZA_LUNATONE(rematch)                                                 \
     {                                                                          \
-    REMATCH_MON(LUNATONE, ACE, rematch),                                       \
+    REMATCH_MON(LUNATONE, ACE, rematch, ITEM_SITRUS_BERRY),                    \
     .ability = ABILITY_LEVITATE,                                               \
     .nature = NATURE_MODEST,                                                   \
     EV_SPREAD_SPA_SPD_HP,                                                      \
     .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_ICY_WIND, MOVE_COSMIC_POWER}, \
-    .heldItem = ITEM_SITRUS_BERRY,                                             \
     }
 
 #define TATE_GRUMPIG(rematch)                                                      \
@@ -2128,35 +2093,32 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 
 #define JUAN_WHISCASH(rematch)                                                        \
     {                                                                                 \
-    REMATCH_MON(WHISCASH, ACE, rematch),                                              \
+    REMATCH_MON(WHISCASH, ACE, rematch, ITEM_SITRUS_BERRY),                           \
     .ability = ABILITY_OBLIVIOUS,                                                     \
     .nature = NATURE_ADAMANT,                                                         \
     EV_SPREAD_ATK_HP_SPE,                                                             \
     .moves = {MOVE_AQUA_TAIL, MOVE_EARTHQUAKE, MOVE_ZEN_HEADBUTT, MOVE_DRAGON_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                       \
-    .heldItem = ITEM_SITRUS_BERRY,                                                    \
     }
 
 #define JUAN_LUVDISC(rematch)                                                             \
     {                                                                                     \
-    REMATCH_MON(LUVDISC, TIER2, rematch),                                                 \
+    REMATCH_MON(LUVDISC, TIER2, rematch, ITEM_DAMP_ROCK),                                 \
     .ability = ABILITY_SWIFT_SWIM,                                                        \
     .nature = NATURE_TIMID,                                                               \
     EV_SPREAD_SPA_SPE_HP,                                                                 \
     .moves = {MOVE_HYDRO_PUMP, MOVE_DRAINING_KISS, MOVE_BABY_DOLL_EYES, MOVE_RAIN_DANCE}, \
     .gender = TRAINER_MON_FEMALE,                                                         \
-    .heldItem = ITEM_DAMP_ROCK,                                                           \
     }
 
 #define JUAN_CRAWDAUNT(rematch)                                                \
     {                                                                          \
-    REMATCH_MON(CRAWDAUNT, TIER2, rematch),                                    \
+    REMATCH_MON(CRAWDAUNT, TIER2, rematch, ITEM_MYSTIC_WATER),                 \
     .ability = ABILITY_SHELL_ARMOR,                                            \
     .nature = NATURE_ADAMANT,                                                  \
     EV_SPREAD_ATK_SPE_HP,                                                      \
     .moves = {MOVE_CRABHAMMER, MOVE_CRUNCH, MOVE_ENDEAVOR, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                \
-    .heldItem = ITEM_MYSTIC_WATER,                                             \
     }
 
 #define JUAN_HUNTAIL(rematch)                                           \

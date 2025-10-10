@@ -303,12 +303,12 @@ static const s8 sCenterToCornerVecXs[8] ={-32, -16, -16, -32, -32};
 #include "data/types_info.h"
 
 // extra args are money and ball
-#define TRAINER_CLASS(trainerClass, trainerName, ...)   \
-    [TRAINER_CLASS_##trainerClass] =                    \
-    {                                                   \
-        .name = _(trainerName),                         \
-        .money = DEFAULT(5, __VA_ARGS__),               \
-        .ball = DEFAULT_2(BALL_POKE, __VA_ARGS__), \
+#define TRAINER_CLASS(trainerClass, trainerName, ...) \
+    [TRAINER_CLASS_##trainerClass] =                  \
+    {                                                 \
+        .name = _(trainerName),                       \
+        .money = DEFAULT(5, __VA_ARGS__),             \
+        .ball = DEFAULT_2(BALL_POKE, __VA_ARGS__),    \
     }
 
 const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =

@@ -3565,6 +3565,9 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ability = ABILITY_INTIMIDATE, \
     .gender = TRAINER_MON_MALE
 
+//Extra for hacks
+#define CALVIN_LICKITUNG
+
 [DIFFICULTY_NORMAL][TRAINER_CALVIN_1] =
 {
     CALVIN_INFO,
@@ -3743,6 +3746,9 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ability = ABILITY_SAP_SIPPER,                                                \
     .gender = TRAINER_MON_MALE,                                                   \
     .nickname = COMPOUND_STRING("Mr. Gig")
+
+//Extra for hacks
+#define WINSTON_LITLEO
 
 [DIFFICULTY_NORMAL][TRAINER_WINSTON_1] =
 {
@@ -3934,6 +3940,10 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .species = Level < REMATCH_5_LEVEL_6 ? SPECIES_SURSKIT : SPECIES_MASQUERAIN, \
     .gender = TRAINER_MON_FEMALE
 
+//Extra for hacks
+#define JAMES_SPINARAK
+#define JAMES_LEDYBA
+
 [DIFFICULTY_NORMAL][TRAINER_JAMES_1] =
 {
     JAMES_INFO,
@@ -4047,6 +4057,9 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ability = ABILITY_QUICK_FEET,                               \
     .gender = TRAINER_MON_FEMALE
 
+//Extra for hacks
+#define CINDY_LITLEO
+
 [DIFFICULTY_NORMAL][TRAINER_CINDY_1] =
 {
     CINDY_INFO,
@@ -4128,6 +4141,9 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .lvl = Level,                                                             \
     .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_TAILLOW : SPECIES_SWELLOW, \
     .gender = TRAINER_MON_FEMALE
+
+//Extra for hacks
+#define HALEY_COTTONEE
 
 [DIFFICULTY_NORMAL][TRAINER_HALEY_1] =
 {
@@ -4420,6 +4436,9 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ability = ABILITY_INSOMNIA,                                             \
     .gender = TRAINER_MON_MALE
 
+//Extra for hacks
+#define JERRY_PAWNIARD
+
 [DIFFICULTY_NORMAL][TRAINER_JERRY_1] =
 {
     JERRY_INFO,
@@ -4530,6 +4549,9 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_SKITTY : SPECIES_DELCATTY, \
     .ability = ABILITY_NORMALIZE,                                             \
     .gender = TRAINER_MON_FEMALE
+
+//Extra for hacks
+#define KAREN_SEEL
 
 [DIFFICULTY_NORMAL][TRAINER_KAREN_1] =
 {
@@ -4734,6 +4756,9 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_BARBOACH : SPECIES_WHISCASH, \
     .ability = ABILITY_OBLIVIOUS,                                               \
     .gender = TRAINER_MON_MALE
+
+//Extra for hacks
+#define ELLIOT_REMORAID
 
 [DIFFICULTY_NORMAL][TRAINER_ELLIOT_1] =
 {
@@ -5959,6 +5984,9 @@ MARINA_BATTLE(MUSEUM, 17),
     .ability = ABILITY_TANGLED_FEET,                        \
     .gender = TRAINER_MON_MALE
 
+//Extra for hacks
+#define DYLAN_GROWLITHE
+
 [DIFFICULTY_NORMAL][TRAINER_DYLAN_1] =
 {
     DYLAN_INFO,
@@ -6487,6 +6515,9 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .ability = ABILITY_POISON_HEAL,                              \
     .gender = TRAINER_MON_FEMALE
 
+//Extra for hacks
+#define ROSE_SUNKERN
+
 [DIFFICULTY_NORMAL][TRAINER_ROSE_1] =
 {
     ROSE_INFO,
@@ -6632,6 +6663,9 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .lvl = Level,                                                                                                   \
     .species = Level < 30 ? SPECIES_MAGNEMITE : (Level < REMATCH_5_LEVEL_6 ? SPECIES_MAGNETON : SPECIES_MAGNEZONE), \
     .ability = ABILITY_STURDY
+
+//Extra for hacks
+#define DALTON_CHATOT
 
 [DIFFICULTY_NORMAL][TRAINER_DALTON_1] =
 {
@@ -6873,6 +6907,9 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     TRIATHLETE_MON(Level, IV),                                                  \
     .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_VOLTORB : SPECIES_ELECTRODE, \
     .ability = ABILITY_SOUNDPROOF
+
+//Extra for hacks
+#define BENJAMIN_KLINK
 
 [DIFFICULTY_NORMAL][TRAINER_BENJAMIN_1] =
 {
@@ -7539,6 +7576,10 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .ability = ABILITY_STATIC,                                                    \
     .gender = TRAINER_MON_MALE
 
+//Extra for hacks
+#define WILTON_AXEW
+#define WILTON_FLETCHLING
+
 [DIFFICULTY_NORMAL][TRAINER_WILTON_1] =
 {
     WILTON_INFO,
@@ -7662,6 +7703,10 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_WINGULL : SPECIES_PELIPPER, \
     .ability = ABILITY_KEEN_EYE,                                               \
     .gender = TRAINER_MON_FEMALE
+
+//Extra for hacks
+#define BROOKE_LAPRAS
+#define BROOKE_GLAMEOW
 
 [DIFFICULTY_NORMAL][TRAINER_BROOKE_1] =
 {
@@ -7864,6 +7909,10 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .ability = ABILITY_POISON_POINT,                                           \
     .gender = TRAINER_MON_FEMALE,                                              \
     .moves = {MOVE_GIGA_DRAIN, MOVE_LEECH_SEED, MOVE_GROWTH, MOVE_SUNNY_DAY}
+
+//Extra for hacks
+#define MADELINE_STARYU
+#define MADELINE_SPHEAL
 
 [DIFFICULTY_NORMAL][TRAINER_MADELINE_1] =
 {
@@ -8297,6 +8346,10 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .ability = 1,                                                                                               \
     .gender = TRAINER_MON_MALE
 
+//Extra for hacks
+#define STEVE_SLOWPOKE
+#define STEVE_MAREEP
+
 [DIFFICULTY_NORMAL][TRAINER_STEVE_1] =
 {
     STEVE_INFO,
@@ -8573,6 +8626,10 @@ COURTNEY_BATTLE(METEOR_FALLS, 28, 3),
     .ability = ABILITY_GUTS,      \
     .gender = TRAINER_MON_MALE
 
+//Extra for hacks
+#define NOB_MANKEY
+#define NOB_HITMONLEE
+
 [DIFFICULTY_NORMAL][TRAINER_NOB_1] =
 {
     NOB_INFO,
@@ -8696,6 +8753,9 @@ COURTNEY_BATTLE(METEOR_FALLS, 28, 3),
     .nature = NATURE_ADAMANT,                                                   \
     .ability = ABILITY_GUTS,                                                    \
     .gender = TRAINER_MON_FEMALE
+
+//Extra for hacks
+#define CYNDY_HITMONCHAN
 
 [DIFFICULTY_NORMAL][TRAINER_CYNDY_1] =
 {
@@ -8997,6 +9057,9 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .species = SPECIES_SANDSLASH, \
     .gender = TRAINER_MON_MALE
 
+//Extra for hacks
+#define ETHAN_STUNKY
+
 [DIFFICULTY_NORMAL][TRAINER_ETHAN_1] =
 {
     ETHAN_INFO,
@@ -9283,6 +9346,9 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .ability = ABILITY_GUTS,                                                    \
     .gender = TRAINER_MON_FEMALE
 
+//Extra for hacks
+#define SHELBY_RIOLU
+
 [DIFFICULTY_NORMAL][TRAINER_SHELBY_1] =
 {
     SHELBY_INFO,
@@ -9565,16 +9631,21 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     RUIN_MANIAC_INFO,          \
     MINI_BOSS_AI_FLAGS
 
-#define DUSTY_BALTOY(Level)                                   \
-    .lvl = Level,                                             \
-    .species = Level < 36 ? SPECIES_BALTOY : SPECIES_CLAYDOL, \
-    IVS(10)
-
 #define DUSTY_SANDSLASH(Level)    \
     .lvl = Level,                 \
     .species = SPECIES_SANDSLASH, \
     IVS(10),                      \
     .gender = TRAINER_MON_MALE
+
+#define DUSTY_BALTOY(Level)                                   \
+    .lvl = Level,                                             \
+    .species = Level < 36 ? SPECIES_BALTOY : SPECIES_CLAYDOL, \
+    IVS(10)
+
+//Extra for hacks
+#define DUSTY_AERODACTYL
+#define DUSTY_TYRUNT
+#define DUSTY_AMAURA
 
 [DIFFICULTY_NORMAL][TRAINER_DUSTY_1] =
 {
@@ -9582,10 +9653,10 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        DUSTY_SANDSLASH(30),
+        DUSTY_BALTOY(30),
         },
         {
-        DUSTY_BALTOY(30),
+        DUSTY_SANDSLASH(30),
         }
     },
 },
@@ -9596,10 +9667,10 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        DUSTY_SANDSLASH(REMATCH_2_LEVEL_1),
+        DUSTY_BALTOY(REMATCH_2_LEVEL_1),
         },
         {
-        DUSTY_BALTOY(REMATCH_2_LEVEL_1),
+        DUSTY_SANDSLASH(REMATCH_2_LEVEL_1),
         }
     },
 },
@@ -9610,10 +9681,10 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        DUSTY_SANDSLASH(REMATCH_3_LEVEL_1),
+        DUSTY_BALTOY(REMATCH_3_LEVEL_1),
         },
         {
-        DUSTY_BALTOY(REMATCH_3_LEVEL_1),
+        DUSTY_SANDSLASH(REMATCH_3_LEVEL_1),
         }
     },
 },
@@ -9624,10 +9695,10 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        DUSTY_SANDSLASH(REMATCH_4_LEVEL_1),
+        DUSTY_BALTOY(REMATCH_4_LEVEL_1),
         },
         {
-        DUSTY_BALTOY(REMATCH_4_LEVEL_1),
+        DUSTY_SANDSLASH(REMATCH_4_LEVEL_1),
         }
     },
 },
@@ -9643,10 +9714,10 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
         .gender = TRAINER_MON_MALE,
         },
         {
-        DUSTY_SANDSLASH(REMATCH_5_MINI_BOSS),
+        DUSTY_BALTOY(REMATCH_5_MINI_BOSS),
         },
         {
-        DUSTY_BALTOY(REMATCH_5_MINI_BOSS),
+        DUSTY_SANDSLASH(REMATCH_5_MINI_BOSS),
         }
     },
 },
@@ -9850,6 +9921,10 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .species = SPECIES_HARIYAMA, \
     .ability = ABILITY_GUTS,     \
     .gender = TRAINER_MON_MALE
+
+//Extra for hacks
+#define TIMOTHY_TIMBURR
+#define TIMOTHY_HAWLUCHA
 
 [DIFFICULTY_NORMAL][TRAINER_TIMOTHY_1] =
 {
@@ -10270,6 +10345,9 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .lvl = Level,                                                            \
     .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_STARYU : SPECIES_STARMIE, \
     .ability = ABILITY_ILLUMINATE
+
+//Extra for hacks
+#define TONY_FRILLISH
 
 [DIFFICULTY_NORMAL][TRAINER_TONY_1] =
 {
@@ -11364,6 +11442,10 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     IVS(10),                                                                  \
     .gender = TRAINER_MON_FEMALE
 
+//Extra for hacks
+#define CATHERINE_PICHU
+#define CATHERINE_DRILBUR
+
 [DIFFICULTY_NORMAL][TRAINER_CATHERINE_1] =
 {
     CATHERINE_INFO,
@@ -11457,6 +11539,10 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .species = SPECIES_KECLEON, \
     IVS(10),                    \
     .gender = TRAINER_MON_MALE
+
+//Extra for hacks
+#define JACKSON_SLAKOTH
+#define JACKSON_PIDOVE
 
 [DIFFICULTY_NORMAL][TRAINER_JACKSON_1] =
 {
@@ -11722,6 +11808,10 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .species = Level < REMATCH_3_LEVEL_2 ? SPECIES_NATU : SPECIES_XATU, \
     .ability = ABILITY_EARLY_BIRD,                                      \
     .gender = TRAINER_MON_MALE
+
+//Extra for hacks
+#define ROBERT_SPEAROW
+#define ROBERT_STARLY
 
 [DIFFICULTY_NORMAL][TRAINER_ROBERT_1] =
 {
@@ -12119,6 +12209,10 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     IVS(10),                      \
     .gender = TRAINER_MON_FEMALE
 
+//Extra for hacks
+#define JEFFREY_KRICKETOT
+#define JEFFREY_COMBEE
+
 [DIFFICULTY_NORMAL][TRAINER_JEFFREY_1] =
 {
     JEFFREY_INFO,
@@ -12328,6 +12422,9 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     IVS(10),                    \
     .gender = TRAINER_MON_FEMALE
 
+//Extra for hacks
+#define JESSICA_SANDILE
+
 [DIFFICULTY_NORMAL][TRAINER_JESSICA_1] =
 {
     JESSICA_INFO,
@@ -12533,6 +12630,9 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .ability = ABILITY_PICKUP,  \
     IVS(10),                    \
     .gender = TRAINER_MON_MALE
+
+//Extra for hacks
+#define WALTER_LILLIPUP
 
 [DIFFICULTY_NORMAL][TRAINER_WALTER_1] =
 {
@@ -12975,6 +13075,9 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .ability = 0,                                                                                                \
     .gender = TRAINER_MON_FEMALE
 
+//Extra for hacks
+#define VALERIE_MISDREAVUS
+
 [DIFFICULTY_NORMAL][TRAINER_VALERIE_1] =
 {
     VALERIE_INFO,
@@ -13101,6 +13204,9 @@ MARINA_BATTLE(MT_PYRE, 42),
     .species = Level < 46 ? SPECIES_KADABRA : SPECIES_ALAKAZAM, \
     .ability = ABILITY_SYNCHRONIZE,                             \
     .gender = TRAINER_MON_MALE
+
+//Extra for hacks
+#define CAMERON_EXEGGCUTE
 
 [DIFFICULTY_NORMAL][TRAINER_CAMERON_1] =
 {
@@ -13803,6 +13909,9 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .lvl = Level,               \
     .species = SPECIES_LUVDISC, \
     .gender = TRAINER_MON_FEMALE
+
+//Extra for hacks
+#define JENNY_ALOMOMOLA
 
 [DIFFICULTY_NORMAL][TRAINER_JENNY_1] =
 {
@@ -14840,6 +14949,9 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
         }                                                           \
     }                                                               \
 }
+
+//Extra for hacks
+#define ISAIAH_BUIZEL
 
 ISAIAH_BATTLE(1, 50),
 ISAIAH_BATTLE(2, 51),
@@ -16005,6 +16117,10 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .species = SPECIES_FLYGON, \
     IVS(18),                   \
     .gender = TRAINER_MON_MALE
+
+//Extra for hacks
+#define NICOLAS_DRUDDIGON
+#define NICOLAS_NOIBAT
 
 [DIFFICULTY_NORMAL][TRAINER_NICOLAS_1] =
 {

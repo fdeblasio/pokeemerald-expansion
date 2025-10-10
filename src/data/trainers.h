@@ -397,73 +397,36 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .gender = TRAINER_MON_MALE,                                                       \
     }
 
-[DIFFICULTY_NORMAL][TRAINER_WALLY_VICTORY_ROAD_2] =
-{
-    WALLY_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
-    .partySize = 5,
-    .party = (const struct TrainerMon[]) {
-        WALLY_DELCATTY(2, TIER3),
-        WALLY_MAGNEZONE(2, TIER3),
-        WALLY_ALTARIA(2, TIER2),
-        WALLY_ROSERADE(2, TIER2),
-        REMATCH_RALPH(2, ACE),
-    },
-},
+#define WALLY_REMATCH(Rematch)                                             \
+[DIFFICULTY_NORMAL][TRAINER_WALLY_VICTORY_ROAD_##Rematch] =                \
+{                                                                          \
+    WALLY_INFO,                                                            \
+    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE}, \
+    .partySize = 6,                                                        \
+    .party = (const struct TrainerMon[]) {                                 \
+        WALLY_GARDEVOIR(Rematch, TIER3),                                   \
+        WALLY_DELCATTY(Rematch, TIER3),                                    \
+        WALLY_MAGNEZONE(Rematch, TIER3),                                   \
+        WALLY_ALTARIA(Rematch, TIER2),                                     \
+        WALLY_ROSERADE(Rematch, TIER2),                                    \
+        REMATCH_RALPH(Rematch, ACE),                                       \
+    },                                                                     \
+}
 
-[DIFFICULTY_NORMAL][TRAINER_WALLY_VICTORY_ROAD_3] =
-{
-    WALLY_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
-    .partySize = 5,
-    .party = (const struct TrainerMon[]) {
-        WALLY_DELCATTY(3, TIER3),
-        WALLY_MAGNEZONE(3, TIER3),
-        WALLY_ALTARIA(3, TIER2),
-        WALLY_ROSERADE(3, TIER2),
-        REMATCH_RALPH(3, ACE),
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_WALLY_VICTORY_ROAD_4] =
-{
-    WALLY_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
-    .partySize = 6,
-    .party = (const struct TrainerMon[]) {
-        WALLY_GARDEVOIR(4, TIER3),
-        WALLY_DELCATTY(4, TIER3),
-        WALLY_MAGNEZONE(4, TIER3),
-        WALLY_ALTARIA(4, TIER2),
-        WALLY_ROSERADE(4, TIER2),
-        REMATCH_RALPH(4, ACE),
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_WALLY_VICTORY_ROAD_5] =
-{
-    WALLY_INFO,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
-    .partySize = 6,
-    .party = (const struct TrainerMon[]) {
-        WALLY_GARDEVOIR(5, TIER3),
-        WALLY_DELCATTY(5, TIER3),
-        WALLY_MAGNEZONE(5, TIER3),
-        WALLY_ALTARIA(5, TIER2),
-        WALLY_ROSERADE(5, TIER2),
-        REMATCH_RALPH(5, ACE),
-    },
-},
+WALLY_REMATCH(2),
+WALLY_REMATCH(3),
+WALLY_REMATCH(4),
+WALLY_REMATCH(5),
 
 #define LEADER_INFO(Trainer)                    \
     .trainerClass = TRAINER_CLASS_LEADER,       \
     .trainerPic = TRAINER_PIC_LEADER_##Trainer, \
     BOSS_AI_FLAGS
 
-#define LEADER_REMATCH(rematch)                                                    \
+#define LEADER_REMATCH                                                             \
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE}, \
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,                                     \
-    .partySize = rematch < 4 ? 5 : 6
+    .partySize = 6
 
 #define ROXANNE_INFO                                                            \
     LEADER_INFO(ROXANNE),                                                       \
@@ -677,59 +640,25 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .gender = TRAINER_MON_FEMALE,                                                   \
     }
 
-[DIFFICULTY_NORMAL][TRAINER_ROXANNE_2] =
-{
-    ROXANNE_INFO,
-    LEADER_REMATCH(2),
-    .party = (const struct TrainerMon[]) {
-        ROXANNE_AGGRON(2, TIER3),
-        ROXANNE_RELICANTH(2, TIER3),
-        ROXANNE_CRADILY(2, TIER2),
-        ROXANNE_ARMALDO(2, TIER2),
-        ROXANNE_PROBOPASS(2, ACE),
-    },
-},
+#define ROXANNE_REMATCH(Rematch)                 \
+[DIFFICULTY_NORMAL][TRAINER_ROXANNE_##Rematch] = \
+{                                                \
+    ROXANNE_INFO,                                \
+    LEADER_REMATCH,                              \
+    .party = (const struct TrainerMon[]) {       \
+        ROXANNE_CORSOLA(Rematch, TIER3),         \
+        ROXANNE_AGGRON(Rematch, TIER3),          \
+        ROXANNE_RELICANTH(Rematch, TIER3),       \
+        ROXANNE_CRADILY(Rematch, TIER2),         \
+        ROXANNE_ARMALDO(Rematch, TIER2),         \
+        ROXANNE_PROBOPASS(Rematch, ACE),         \
+    },                                           \
+}
 
-[DIFFICULTY_NORMAL][TRAINER_ROXANNE_3] =
-{
-    ROXANNE_INFO,
-    LEADER_REMATCH(3),
-    .party = (const struct TrainerMon[]) {
-        ROXANNE_AGGRON(3, TIER3),
-        ROXANNE_RELICANTH(3, TIER3),
-        ROXANNE_CRADILY(3, TIER2),
-        ROXANNE_ARMALDO(3, TIER2),
-        ROXANNE_PROBOPASS(3, ACE),
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_ROXANNE_4] =
-{
-    ROXANNE_INFO,
-    LEADER_REMATCH(4),
-    .party = (const struct TrainerMon[]) {
-        ROXANNE_CORSOLA(4, TIER3),
-        ROXANNE_AGGRON(4, TIER3),
-        ROXANNE_RELICANTH(4, TIER3),
-        ROXANNE_CRADILY(4, TIER2),
-        ROXANNE_ARMALDO(4, TIER2),
-        ROXANNE_PROBOPASS(4, ACE),
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_ROXANNE_5] =
-{
-    ROXANNE_INFO,
-    LEADER_REMATCH(5),
-    .party = (const struct TrainerMon[]) {
-        ROXANNE_CORSOLA(5, TIER3),
-        ROXANNE_AGGRON(5, TIER3),
-        ROXANNE_RELICANTH(5, TIER3),
-        ROXANNE_CRADILY(5, TIER2),
-        ROXANNE_ARMALDO(5, TIER2),
-        ROXANNE_PROBOPASS(5, ACE),
-    },
-},
+ROXANNE_REMATCH(2),
+ROXANNE_REMATCH(3),
+ROXANNE_REMATCH(4),
+ROXANNE_REMATCH(5),
 
 #define BRAWLY_INFO             \
     LEADER_INFO(BRAWLY),        \
@@ -927,60 +856,25 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .moves = {MOVE_BODY_PRESS, MOVE_IRON_HEAD, MOVE_SPIKY_SHIELD, MOVE_NO_RETREAT}, \
     }
 
+#define BRAWLY_REMATCH(Rematch)                 \
+[DIFFICULTY_NORMAL][TRAINER_BRAWLY_##Rematch] = \
+{                                               \
+    BRAWLY_INFO,                                \
+    LEADER_REMATCH,                             \
+    .party = (const struct TrainerMon[]) {      \
+        BRAWLY_GALLADE(Rematch, TIER3),         \
+        BRAWLY_BLAZIKEN(Rematch, TIER3),        \
+        BRAWLY_BRELOOM(Rematch, TIER3),         \
+        BRAWLY_MACHAMP(Rematch, TIER2),         \
+        BRAWLY_MEDICHAM(Rematch, TIER2),        \
+        BRAWLY_HARIYAMA(Rematch, ACE),          \
+    },                                          \
+}
 
-[DIFFICULTY_NORMAL][TRAINER_BRAWLY_2] =
-{
-    BRAWLY_INFO,
-    LEADER_REMATCH(2),
-    .party = (const struct TrainerMon[]) {
-        BRAWLY_BLAZIKEN(2, TIER3),
-        BRAWLY_BRELOOM(2, TIER3),
-        BRAWLY_MACHAMP(2, TIER2),
-        BRAWLY_MEDICHAM(2, TIER2),
-        BRAWLY_HARIYAMA(2, ACE),
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_BRAWLY_3] =
-{
-    BRAWLY_INFO,
-    LEADER_REMATCH(3),
-    .party = (const struct TrainerMon[]) {
-        BRAWLY_BLAZIKEN(3, TIER3),
-        BRAWLY_BRELOOM(3, TIER3),
-        BRAWLY_MACHAMP(3, TIER2),
-        BRAWLY_MEDICHAM(3, TIER2),
-        BRAWLY_HARIYAMA(3, ACE),
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_BRAWLY_4] =
-{
-    BRAWLY_INFO,
-    LEADER_REMATCH(4),
-    .party = (const struct TrainerMon[]) {
-        BRAWLY_GALLADE(4, TIER3),
-        BRAWLY_BLAZIKEN(4, TIER3),
-        BRAWLY_BRELOOM(4, TIER3),
-        BRAWLY_MACHAMP(4, TIER2),
-        BRAWLY_MEDICHAM(4, TIER2),
-        BRAWLY_HARIYAMA(4, ACE),
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_BRAWLY_5] =
-{
-    BRAWLY_INFO,
-    LEADER_REMATCH(5),
-    .party = (const struct TrainerMon[]) {
-        BRAWLY_GALLADE(5, TIER3),
-        BRAWLY_BLAZIKEN(5, TIER3),
-        BRAWLY_BRELOOM(5, TIER3),
-        BRAWLY_MACHAMP(5, TIER2),
-        BRAWLY_MEDICHAM(5, TIER2),
-        BRAWLY_HARIYAMA(5, ACE),
-    },
-},
+BRAWLY_REMATCH(2),
+BRAWLY_REMATCH(3),
+BRAWLY_REMATCH(4),
+BRAWLY_REMATCH(5),
 
 #define WATTSON_INFO             \
     LEADER_INFO(WATTSON),        \
@@ -1197,7 +1091,6 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .gender = TRAINER_MON_MALE,                                                       \
     }
 
-
 #define WATTSON_BELLIBOLT(rematch, tier)                                                  \
     {                                                                                     \
     REMATCH_MON(BELLIBOLT, tier, rematch, ITEM_MAGNET),                                   \
@@ -1215,7 +1108,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     EV_SPREAD_SPA_SPE_HP,                             \
     .gender = TRAINER_MON_MALE
 
-#define WATTSON_KILOWATTREL_1(rematch, tier)                                       \
+#define WATTSON_KILOWATTREL(rematch, tier)                                         \
     {                                                                              \
     WATTSON_KILOWATTREL_INFO(rematch, tier, ITEM_MAGNET),                          \
     .moves = {MOVE_THUNDERBOLT, MOVE_AIR_SLASH, MOVE_WEATHER_BALL, MOVE_TAILWIND}, \
@@ -1227,59 +1120,25 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .moves = {MOVE_THUNDER, MOVE_HURRICANE, MOVE_WEATHER_BALL, MOVE_RAIN_DANCE}, \
     }
 
-[DIFFICULTY_NORMAL][TRAINER_WATTSON_2] =
-{
-    WATTSON_INFO,
-    LEADER_REMATCH(2),
-    .party = (const struct TrainerMon[]) {
-        WATTSON_LANTURN(2, TIER3),
-        WATTSON_MAGNEZONE(2, TIER3),
-        WATTSON_MINUN(2, TIER2),
-        WATTSON_PLUSLE(2, TIER2),
-        WATTSON_MANECTRIC(2, ACE),
-    },
-},
+#define WATTSON_REMATCH(Rematch)                 \
+[DIFFICULTY_NORMAL][TRAINER_WATTSON_##Rematch] = \
+{                                                \
+    WATTSON_INFO,                                \
+    LEADER_REMATCH,                              \
+    .party = (const struct TrainerMon[]) {       \
+        WATTSON_ELECTRODE(Rematch, TIER3),       \
+        WATTSON_LANTURN(Rematch, TIER3),         \
+        WATTSON_MAGNEZONE(Rematch, TIER3),       \
+        WATTSON_MINUN(Rematch, TIER2),           \
+        WATTSON_PLUSLE(Rematch, TIER2),          \
+        WATTSON_MANECTRIC(Rematch, ACE),         \
+    },                                           \
+}
 
-[DIFFICULTY_NORMAL][TRAINER_WATTSON_3] =
-{
-    WATTSON_INFO,
-    LEADER_REMATCH(3),
-    .party = (const struct TrainerMon[]) {
-        WATTSON_LANTURN(3, TIER3),
-        WATTSON_MAGNEZONE(3, TIER3),
-        WATTSON_MINUN(3, TIER2),
-        WATTSON_PLUSLE(3, TIER2),
-        WATTSON_MANECTRIC(3, ACE),
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_WATTSON_4] =
-{
-    WATTSON_INFO,
-    LEADER_REMATCH(4),
-    .party = (const struct TrainerMon[]) {
-        WATTSON_ELECTRODE(4, TIER3),
-        WATTSON_LANTURN(4, TIER3),
-        WATTSON_MAGNEZONE(4, TIER3),
-        WATTSON_MINUN(4, TIER2),
-        WATTSON_PLUSLE(4, TIER2),
-        WATTSON_MANECTRIC(4, ACE),
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_WATTSON_5] =
-{
-    WATTSON_INFO,
-    LEADER_REMATCH(5),
-    .party = (const struct TrainerMon[]) {
-        WATTSON_ELECTRODE(5, TIER3),
-        WATTSON_LANTURN(5, TIER3),
-        WATTSON_MAGNEZONE(5, TIER3),
-        WATTSON_MINUN(5, TIER2),
-        WATTSON_PLUSLE(5, TIER2),
-        WATTSON_MANECTRIC(5, ACE),
-    },
-},
+WATTSON_REMATCH(2),
+WATTSON_REMATCH(3),
+WATTSON_REMATCH(4),
+WATTSON_REMATCH(5),
 
 #define FLANNERY_INFO             \
     LEADER_INFO(FLANNERY),        \
@@ -1405,59 +1264,25 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 #define FLANNERY_ARMAROUGE
 #define FLANNERY_CERULEDGE
 
-[DIFFICULTY_NORMAL][TRAINER_FLANNERY_2] =
-{
-    FLANNERY_INFO,
-    LEADER_REMATCH(2),
-    .party = (const struct TrainerMon[]) {
-        FLANNERY_MAGCARGO(2, TIER3),
-        FLANNERY_CASTFORM(2, TIER3),
-        FLANNERY_BLAZIKEN(2, TIER2),
-        FLANNERY_CAMERUPT(2, TIER2),
-        FLANNERY_TORKOAL(2, ACE),
-    },
-},
+#define FLANNERY_REMATCH(Rematch)                 \
+[DIFFICULTY_NORMAL][TRAINER_FLANNERY_##Rematch] = \
+{                                                 \
+    FLANNERY_INFO,                                \
+    LEADER_REMATCH,                               \
+    .party = (const struct TrainerMon[]) {        \
+        FLANNERY_NINETALES(Rematch, TIER3),       \
+        FLANNERY_MAGCARGO(Rematch, TIER3),        \
+        FLANNERY_CASTFORM(Rematch, TIER3),        \
+        FLANNERY_BLAZIKEN(Rematch, TIER2),        \
+        FLANNERY_CAMERUPT(Rematch, TIER2),        \
+        FLANNERY_TORKOAL(Rematch, ACE),           \
+    },                                            \
+}
 
-[DIFFICULTY_NORMAL][TRAINER_FLANNERY_3] =
-{
-    FLANNERY_INFO,
-    LEADER_REMATCH(3),
-    .party = (const struct TrainerMon[]) {
-        FLANNERY_MAGCARGO(3, TIER3),
-        FLANNERY_CASTFORM(3, TIER3),
-        FLANNERY_BLAZIKEN(3, TIER2),
-        FLANNERY_CAMERUPT(3, TIER2),
-        FLANNERY_TORKOAL(3, ACE),
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_FLANNERY_4] =
-{
-    FLANNERY_INFO,
-    LEADER_REMATCH(4),
-    .party = (const struct TrainerMon[]) {
-        FLANNERY_NINETALES(4, TIER3),
-        FLANNERY_MAGCARGO(4, TIER3),
-        FLANNERY_CASTFORM(4, TIER3),
-        FLANNERY_BLAZIKEN(4, TIER2),
-        FLANNERY_CAMERUPT(4, TIER2),
-        FLANNERY_TORKOAL(4, ACE),
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_FLANNERY_5] =
-{
-    FLANNERY_INFO,
-    LEADER_REMATCH(5),
-    .party = (const struct TrainerMon[]) {
-        FLANNERY_NINETALES(5, TIER3),
-        FLANNERY_MAGCARGO(5, TIER3),
-        FLANNERY_CASTFORM(5, TIER3),
-        FLANNERY_BLAZIKEN(5, TIER2),
-        FLANNERY_CAMERUPT(5, TIER2),
-        FLANNERY_TORKOAL(5, ACE),
-    },
-},
+FLANNERY_REMATCH(2),
+FLANNERY_REMATCH(3),
+FLANNERY_REMATCH(4),
+FLANNERY_REMATCH(5),
 
 #define NORMAN_INFO             \
     LEADER_INFO(NORMAN),        \
@@ -1621,59 +1446,25 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 #define NORMAN_MAUSHOLD
 #define NORMAN_SQUAWKABILLY
 
-[DIFFICULTY_NORMAL][TRAINER_NORMAN_2] =
-{
-    NORMAN_INFO,
-    LEADER_REMATCH(2),
-    .party = (const struct TrainerMon[]) {
-        NORMAN_LINOONE(2, TIER3),
-        NORMAN_EXPLOUD(2, TIER3),
-        NORMAN_ZANGOOSE(2, TIER2),
-        NORMAN_SPINDA(2, TIER2),
-        NORMAN_SLAKING(2, ACE),
-    },
-},
+#define NORMAN_REMATCH(Rematch)                 \
+[DIFFICULTY_NORMAL][TRAINER_NORMAN_##Rematch] = \
+{                                               \
+    NORMAN_INFO,                                \
+    LEADER_REMATCH,                             \
+    .party = (const struct TrainerMon[]) {      \
+        NORMAN_LINOONE(Rematch, TIER3),         \
+        NORMAN_KECLEON(Rematch, TIER3),         \
+        NORMAN_EXPLOUD(Rematch, TIER3),         \
+        NORMAN_ZANGOOSE(Rematch, TIER2),        \
+        NORMAN_SPINDA(Rematch, TIER2),          \
+        NORMAN_SLAKING(Rematch, ACE),           \
+    },                                          \
+}
 
-[DIFFICULTY_NORMAL][TRAINER_NORMAN_3] =
-{
-    NORMAN_INFO,
-    LEADER_REMATCH(3),
-    .party = (const struct TrainerMon[]) {
-        NORMAN_LINOONE(3, TIER3),
-        NORMAN_EXPLOUD(3, TIER3),
-        NORMAN_ZANGOOSE(3, TIER2),
-        NORMAN_SPINDA(3, TIER2),
-        NORMAN_SLAKING(3, ACE),
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_NORMAN_4] =
-{
-    NORMAN_INFO,
-    LEADER_REMATCH(4),
-    .party = (const struct TrainerMon[]) {
-        NORMAN_LINOONE(4, TIER3),
-        NORMAN_KECLEON(4, TIER3),
-        NORMAN_EXPLOUD(4, TIER3),
-        NORMAN_ZANGOOSE(4, TIER2),
-        NORMAN_SPINDA(4, TIER2),
-        NORMAN_SLAKING(4, ACE),
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_NORMAN_5] =
-{
-    NORMAN_INFO,
-    LEADER_REMATCH(5),
-    .party = (const struct TrainerMon[]) {
-        NORMAN_LINOONE(5, TIER3),
-        NORMAN_KECLEON(5, TIER3),
-        NORMAN_EXPLOUD(5, TIER3),
-        NORMAN_ZANGOOSE(5, TIER2),
-        NORMAN_SPINDA(5, TIER2),
-        NORMAN_SLAKING(5, ACE),
-    },
-},
+NORMAN_REMATCH(2),
+NORMAN_REMATCH(3),
+NORMAN_REMATCH(4),
+NORMAN_REMATCH(5),
 
 #define WINONA_INFO             \
     LEADER_INFO(WINONA),        \
@@ -1801,59 +1592,25 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 #define WINONA_BOMBIRDIER //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1281 (Cats' has Rocky Payload/Hone Claws replaced by Big Pecks/Roost)
 #define WINONA_FLAMIGO //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1259 (Cats' has Dual Wingbeat/Throat Chop/Sitrus Berry replaced by Acrobatics/Liquidation/Flying Gem)
 
-[DIFFICULTY_NORMAL][TRAINER_WINONA_2] =
-{
-    WINONA_INFO,
-    LEADER_REMATCH(2),
-    .party = (const struct TrainerMon[]) {
-        WINONA_MASQUERAIN(2, TIER3),
-        WINONA_TROPIUS(2, TIER3),
-        WINONA_PELIPPER(2, TIER2),
-        WINONA_SWELLOW(2, TIER2),
-        WINONA_ALTARIA(2, ACE),
-    },
-},
+#define WINONA_REMATCH(Rematch)                 \
+[DIFFICULTY_NORMAL][TRAINER_WINONA_##Rematch] = \
+{                                               \
+    WINONA_INFO,                                \
+    LEADER_REMATCH,                             \
+    .party = (const struct TrainerMon[]) {      \
+        WINONA_NINJASK(Rematch, TIER3),         \
+        WINONA_MASQUERAIN(Rematch, TIER3),      \
+        WINONA_TROPIUS(Rematch, TIER3),         \
+        WINONA_PELIPPER(Rematch, TIER2),        \
+        WINONA_SWELLOW(Rematch, TIER2),         \
+        WINONA_ALTARIA(Rematch, ACE),           \
+    },                                          \
+}
 
-[DIFFICULTY_NORMAL][TRAINER_WINONA_3] =
-{
-    WINONA_INFO,
-    LEADER_REMATCH(3),
-    .party = (const struct TrainerMon[]) {
-        WINONA_MASQUERAIN(3, TIER3),
-        WINONA_TROPIUS(3, TIER3),
-        WINONA_PELIPPER(3, TIER2),
-        WINONA_SWELLOW(3, TIER2),
-        WINONA_ALTARIA(3, ACE),
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_WINONA_4] =
-{
-    WINONA_INFO,
-    LEADER_REMATCH(4),
-    .party = (const struct TrainerMon[]) {
-        WINONA_NINJASK(4, TIER3),
-        WINONA_MASQUERAIN(4, TIER3),
-        WINONA_TROPIUS(4, TIER3),
-        WINONA_PELIPPER(4, TIER2),
-        WINONA_SWELLOW(4, TIER2),
-        WINONA_ALTARIA(4, ACE),
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_WINONA_5] =
-{
-    WINONA_INFO,
-    LEADER_REMATCH(5),
-    .party = (const struct TrainerMon[]) {
-        WINONA_NINJASK(5, TIER3),
-        WINONA_MASQUERAIN(5, TIER3),
-        WINONA_TROPIUS(5, TIER3),
-        WINONA_PELIPPER(5, TIER2),
-        WINONA_SWELLOW(5, TIER2),
-        WINONA_ALTARIA(5, ACE),
-    },
-},
+WINONA_REMATCH(2),
+WINONA_REMATCH(3),
+WINONA_REMATCH(4),
+WINONA_REMATCH(5),
 
 #define TATE_AND_LIZA_INFO                                   \
     LEADER_INFO(TATE_AND_LIZA) | AI_FLAG_DOUBLE_ACE_POKEMON, \
@@ -1984,59 +1741,25 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 #define LIZA_INDEEDEE
 #define LIZA_ESPATHRA //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1486
 
-[DIFFICULTY_NORMAL][TRAINER_TATE_AND_LIZA_2] =
-{
-    TATE_AND_LIZA_INFO,
-    LEADER_REMATCH(2),
-    .party = (const struct TrainerMon[]) {
-        TATE_CHIMECHO(2, TIER3),
-        LIZA_CLAYDOL(2, TIER2),
-        TATE_GRUMPIG(2, TIER2),
-        LIZA_LUNATONE(2, ACE),
-        TATE_SOLROCK(2, ACE),
-    },
-},
+#define TATE_AND_LIZA_REMATCH(Rematch)                 \
+[DIFFICULTY_NORMAL][TRAINER_TATE_AND_LIZA_##Rematch] = \
+{                                                      \
+    TATE_AND_LIZA_INFO,                                \
+    LEADER_REMATCH,                                    \
+    .party = (const struct TrainerMon[]) {             \
+        LIZA_GARDEVOIR(Rematch, TIER3),                \
+        TATE_CHIMECHO(Rematch, TIER3),                 \
+        LIZA_CLAYDOL(Rematch, TIER2),                  \
+        TATE_GRUMPIG(Rematch, TIER2),                  \
+        LIZA_LUNATONE(Rematch, ACE),                   \
+        TATE_SOLROCK(Rematch, ACE),                    \
+    },                                                 \
+}
 
-[DIFFICULTY_NORMAL][TRAINER_TATE_AND_LIZA_3] =
-{
-    TATE_AND_LIZA_INFO,
-    LEADER_REMATCH(3),
-    .party = (const struct TrainerMon[]) {
-        TATE_CHIMECHO(3, TIER3),
-        LIZA_CLAYDOL(3, TIER2),
-        TATE_GRUMPIG(3, TIER2),
-        LIZA_LUNATONE(3, ACE),
-        TATE_SOLROCK(3, ACE),
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_TATE_AND_LIZA_4] =
-{
-    TATE_AND_LIZA_INFO,
-    LEADER_REMATCH(4),
-    .party = (const struct TrainerMon[]) {
-        LIZA_GARDEVOIR(4, TIER3),
-        TATE_CHIMECHO(4, TIER3),
-        LIZA_CLAYDOL(4, TIER2),
-        TATE_GRUMPIG(4, TIER2),
-        LIZA_LUNATONE(4, ACE),
-        TATE_SOLROCK(4, ACE),
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_TATE_AND_LIZA_5] =
-{
-    TATE_AND_LIZA_INFO,
-    LEADER_REMATCH(5),
-    .party = (const struct TrainerMon[]) {
-        LIZA_GARDEVOIR(5, TIER3),
-        TATE_CHIMECHO(5, TIER3),
-        LIZA_CLAYDOL(5, TIER2),
-        TATE_GRUMPIG(5, TIER2),
-        LIZA_LUNATONE(5, ACE),
-        TATE_SOLROCK(5, ACE),
-    },
-},
+TATE_AND_LIZA_REMATCH(2),
+TATE_AND_LIZA_REMATCH(3),
+TATE_AND_LIZA_REMATCH(4),
+TATE_AND_LIZA_REMATCH(5),
 
 #define JUAN_INFO             \
     LEADER_INFO(JUAN),        \
@@ -2151,59 +1874,25 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .gender = TRAINER_MON_MALE,                                                   \
     }
 
-[DIFFICULTY_NORMAL][TRAINER_JUAN_2] =
-{
-    JUAN_INFO,
-    LEADER_REMATCH(2),
-    .party = (const struct TrainerMon[]) {
-        JUAN_CASTFORM(2, TIER3),
-        JUAN_HUNTAIL(2, TIER3),
-        JUAN_CRAWDAUNT(2, TIER2),
-        JUAN_LUVDISC(2, TIER2),
-        JUAN_WHISCASH(2, ACE),
-    },
-},
+#define JUAN_REMATCH(Rematch)                 \
+[DIFFICULTY_NORMAL][TRAINER_JUAN_##Rematch] = \
+{                                             \
+    JUAN_INFO,                                \
+    LEADER_REMATCH,                           \
+    .party = (const struct TrainerMon[]) {    \
+        JUAN_SWAMPERT(Rematch, TIER3),        \
+        JUAN_CASTFORM(Rematch, TIER3),        \
+        JUAN_HUNTAIL(Rematch, TIER3),         \
+        JUAN_CRAWDAUNT(Rematch, TIER2),       \
+        JUAN_LUVDISC(Rematch, TIER2),         \
+        JUAN_WHISCASH(Rematch, ACE),          \
+    },                                        \
+}
 
-[DIFFICULTY_NORMAL][TRAINER_JUAN_3] =
-{
-    JUAN_INFO,
-    LEADER_REMATCH(3),
-    .party = (const struct TrainerMon[]) {
-        JUAN_CASTFORM(3, TIER3),
-        JUAN_HUNTAIL(3, TIER3),
-        JUAN_CRAWDAUNT(3, TIER2),
-        JUAN_LUVDISC(3, TIER2),
-        JUAN_WHISCASH(3, ACE),
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_JUAN_4] =
-{
-    JUAN_INFO,
-    LEADER_REMATCH(4),
-    .party = (const struct TrainerMon[]) {
-        JUAN_SWAMPERT(4, TIER3),
-        JUAN_CASTFORM(4, TIER3),
-        JUAN_HUNTAIL(4, TIER3),
-        JUAN_CRAWDAUNT(4, TIER2),
-        JUAN_LUVDISC(4, TIER2),
-        JUAN_WHISCASH(4, ACE),
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_JUAN_5] =
-{
-    JUAN_INFO,
-    LEADER_REMATCH(5),
-    .party = (const struct TrainerMon[]) {
-        JUAN_SWAMPERT(5, TIER3),
-        JUAN_CASTFORM(5, TIER3),
-        JUAN_HUNTAIL(5, TIER3),
-        JUAN_CRAWDAUNT(5, TIER2),
-        JUAN_LUVDISC(5, TIER2),
-        JUAN_WHISCASH(5, ACE),
-    },
-},
+JUAN_REMATCH(2),
+JUAN_REMATCH(3),
+JUAN_REMATCH(4),
+JUAN_REMATCH(5),
 
 #define ELITE_FOUR_INFO(Trainer, MugshotColor)                             \
     .trainerClass = TRAINER_CLASS_ELITE_FOUR,                              \
@@ -6698,7 +6387,6 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     Class##_INFO,                        \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,   \
     .partySize = 2                       \
-
 
 #define MAUVILLE_GYM_MON(Species, Move2, Move3, Move4)                    \
     {                                                                     \
@@ -11266,7 +10954,6 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     },
 },
 
-
 [DIFFICULTY_NORMAL][TRAINER_CARTER] =
 {
     .trainerName = _("Carter"),
@@ -11658,7 +11345,6 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_GLOOM : SPECIES_BELLOSSOM, \
     IVS(10),                                                                  \
     .gender = TRAINER_MON_FEMALE
-
 
 [DIFFICULTY_NORMAL][TRAINER_CATHERINE_1] =
 {
@@ -15770,7 +15456,6 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
         }
     },
 },
-
 
 [DIFFICULTY_NORMAL][TRAINER_HITOSHI] =
 {

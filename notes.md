@@ -81,6 +81,7 @@ upcoming
 - Other:
     - Diversify Safari Zone water/fishing encounters
     - Clear up trainer spots by having just one set of gym leader rematches?
+        - Now that gym/Wally rematches are more consistent, the only difference is the level and a couple moves, so not really a point to having as many rematches
         - Late-game trainers like Nicolas or John and Jay too
         - Even just reducing to two or three rematches would save space
         - For each badge after 5, one less rematch (for example, any trainer fought past Winona would have one less rematch)

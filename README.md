@@ -363,8 +363,8 @@ There are some mechanics, moves and abilities that are missing and being develop
 |Mew                        |N/A                   |70|
 |Deoxys                     |N/A                   |70|
 |Lugia/Ho-Oh                |N/A                   |70|
-|Gym Leader/Wally rematch 1 |Various               |70, 70, 73, 73, 75|
-|Gym Leader/Wally rematch 2 |Various               |75, 75, 78, 78, 80|
+|Gym Leader/Wally rematch 1 |Various               |70, 70, 70, 73, 73, 75|
+|Gym Leader/Wally rematch 2 |Various               |75, 75, 75, 78, 78, 80|
 |Gym Leader/Wally rematch 3 |Various               |80, 80, 80, 83, 83, 85|
 |Gym Leader/Wally rematch 4 |Various               |85, 85, 85, 88, 88, 90|
 |Elite Four rematches       |N/A                   |86, 86, 86, 88, 88, 90|

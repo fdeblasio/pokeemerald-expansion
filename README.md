@@ -2144,12 +2144,12 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Loudred:
     - Received Amplify (Punk Rock) as a second ability
-    - Learns Disarming Voice, Teeter Dance, and Dizzy Punch by level up
+    - Learns Disarming Voice and Dizzy Punch by level up
 
 - Exploud:
     - Received Amplify (Punk Rock) as a second ability
     - Learns Hyper Voice upon evolving
-    - Learn Disarming Voice, Teeter Dance, and Dizzy Punch by level up
+    - Learn Disarming Voice and Dizzy Punch by level up
 
 - Makuhita:
     - Catch rate: 180->220

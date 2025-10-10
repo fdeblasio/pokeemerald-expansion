@@ -17808,7 +17808,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "The user twangs its guitar,\n"
             "causing strong vibrations."),
         .effect = EFFECT_HIT,
-        .power = 80,
+        .power = 90,
         .type = TYPE_ELECTRIC,
         .accuracy = 100,
         .pp = 10,

@@ -149,7 +149,8 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 #define REMATCH_MON(Species, Tier, Rematch)          \
     .lvl = ENDGAME_REMATCH_##Rematch##_LEVEL - Tier, \
     .species = SPECIES_##Species,                    \
-    PERFECT_IVS
+    PERFECT_IVS,                                     \
+    .ball = Tier == ACE ? ITEM_POKE_BALL : ITEM_NONE
 
 #define WALLY_INFO                                         \
     .trainerName = _("Wally"),                             \
@@ -335,7 +336,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     EV_SPREAD_SPA_SPE_SPD,                                                    \
     .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_MOONBLAST, MOVE_TOXIC}, \
     .gender = TRAINER_MON_MALE,                                               \
-    .heldItem = tier == TIER2 ? ITEM_MIRACLE_SEED : ITEM_NONE,                \
+    .heldItem = tier <= TIER2 ? ITEM_MIRACLE_SEED : ITEM_NONE,                \
     }
 
 #define WALLY_VICTREEBEL(rematch, tier)                                              \
@@ -346,7 +347,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     EV_SPREAD_ATK_SPE_HP,                                                            \
     .moves = {MOVE_LEAF_BLADE, MOVE_POISON_JAB, MOVE_LEECH_LIFE, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                      \
-    .heldItem = tier == TIER2 ? ITEM_MIRACLE_SEED : ITEM_NONE,                       \
+    .heldItem = tier <= TIER2 ? ITEM_MIRACLE_SEED : ITEM_NONE,                       \
     }
 
 #define WALLY_KLEAVOR(rematch)                                                      \
@@ -514,7 +515,6 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .moves = {MOVE_POWER_GEM, MOVE_FLASH_CANNON, rematch < 5 ? MOVE_SANDSTORM : MOVE_BODY_PRESS, MOVE_IRON_DEFENSE}, \
     .gender = TRAINER_MON_FEMALE,                                                       \
     .heldItem = ITEM_SITRUS_BERRY,                                                      \
-    .ball = ITEM_POKE_BALL,                                                             \
     }
 
 #define ROXANNE_ARMALDO(rematch)                                                    \
@@ -605,7 +605,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     EV_SPREAD_ATK_SPE_HP,                                                            \
     .moves = {MOVE_HEAD_SMASH, MOVE_ZEN_HEADBUTT, MOVE_IRON_HEAD, MOVE_BRICK_BREAK}, \
     .gender = TRAINER_MON_FEMALE,                                                    \
-    .heldItem = tier == TIER2 ? ITEM_QUICK_CLAW : ITEM_NONE,                         \
+    .heldItem = tier <= TIER2 ? ITEM_QUICK_CLAW : ITEM_NONE,                         \
     }
 
 #define ROXANNE_BASTIODON
@@ -630,7 +630,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     EV_SPREAD_ATK_SPE_HP,                                                          \
     .moves = {MOVE_ROCK_SLIDE, MOVE_DUAL_WINGBEAT, MOVE_CRUNCH, MOVE_DRAGON_CLAW}, \
     .gender = TRAINER_MON_FEMALE,                                                  \
-    .heldItem = tier == TIER2 ? ITEM_SHELL_BELL : ITEM_NONE,                       \
+    .heldItem = tier <= TIER2 ? ITEM_SHELL_BELL : ITEM_NONE,                       \
     }
 
 #define ROXANNE_BARBARACLE
@@ -643,7 +643,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     EV_SPREAD_ATK_DEF_HP,                                                                \
     .moves = {MOVE_HEAD_SMASH, MOVE_DRAGON_CLAW, MOVE_PSYCHIC_FANGS, MOVE_DRAGON_DANCE}, \
     .gender = TRAINER_MON_FEMALE,                                                        \
-    .heldItem = tier == TIER2 ? ITEM_ROCKY_HELMET : ITEM_NONE,                           \
+    .heldItem = tier <= TIER2 ? ITEM_ROCKY_HELMET : ITEM_NONE,                           \
     }
 
 #define ROXANNE_AURORUS
@@ -789,7 +789,6 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_BELLY_DRUM, MOVE_FAKE_OUT}, \
     .gender = TRAINER_MON_MALE,                                                \
     .heldItem = ITEM_SITRUS_BERRY,                                             \
-    .ball = ITEM_POKE_BALL,                                                    \
     }
 
 #define BRAWLY_MEDICHAM(rematch)                                                  \
@@ -917,7 +916,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     EV_SPREAD_ATK_HP_SPD,                                                               \
     .moves = {MOVE_DRAIN_PUNCH, MOVE_ICE_HAMMER, MOVE_CRABHAMMER, MOVE_POWER_UP_PUNCH}, \
     .gender = TRAINER_MON_MALE,                                                         \
-    .heldItem = tier == TIER2 ? ITEM_ASSAULT_VEST : ITEM_NONE,                          \
+    .heldItem = tier <= TIER2 ? ITEM_ASSAULT_VEST : ITEM_NONE,                          \
     }
 
 #define BRAWLY_PASSIMIAN
@@ -930,7 +929,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     EV_SPREAD_ATK_SPE_HP,                                                    \
     .moves = {MOVE_BULK_UP, MOVE_STORM_THROW, MOVE_AQUA_JET, MOVE_OCTOLOCK}, \
     .gender = TRAINER_MON_MALE,                                              \
-    .heldItem = tier == TIER2 ? ITEM_SITRUS_BERRY : ITEM_NONE,               \
+    .heldItem = tier <= TIER2 ? ITEM_SITRUS_BERRY : ITEM_NONE,               \
     }
 
 #define BRAWLY_FALINKS(rematch)                                                     \
@@ -1051,7 +1050,6 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_SIGNAL_BEAM, MOVE_SNARL}, \
     .gender = TRAINER_MON_MALE,                                                   \
     .heldItem = ITEM_SITRUS_BERRY,                                                \
-    .ball = ITEM_POKE_BALL,                                                       \
     }
 
 #define WATTSON_PLUSLE(rematch)                                                  \
@@ -1105,15 +1103,65 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     }
 
 //Extra for hacks
-#define WATTSON_RAICHU //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L791
-#define WATTSON_RAICHU_ALOLA
+#define WATTSON_RAICHU(rematch)                                                 \
+    {                                                                           \
+    REMATCH_MON(RAICHU, TIER3, rematch),                                        \
+    .ability = ABILITY_STATIC,                                                  \
+    .nature = NATURE_TIMID,                                                     \
+    EV_SPREAD_SPA_SPE_HP,                                                       \
+    .moves = {MOVE_THUNDERBOLT, MOVE_SURF, MOVE_THUNDER_WAVE, MOVE_NASTY_PLOT}, \
+    .gender = TRAINER_MON_MALE,                                                 \
+    }
+
+#define WATTSON_RAICHU_ALOLA(rematch, tier)                                \
+    {                                                                      \
+    REMATCH_MON(RAICHU_ALOLA, tier, rematch),                              \
+    .ability = ABILITY_SURGE_SURFER,                                       \
+    .nature = NATURE_TIMID,                                                \
+    EV_SPREAD_SPA_SPE_HP,                                                  \
+    .moves = {MOVE_THUNDERBOLT, MOVE_PSYCHIC, MOVE_SURF, MOVE_NASTY_PLOT}, \
+    .gender = TRAINER_MON_MALE,                                            \
+    .heldItem = tier <= TIER2 ? ITEM_ELECTRIC_SEED : ITEM_NONE,            \
+    }
+
 #define WATTSON_ELECTRODE_HISUI
-#define WATTSON_ELECTIVIRE //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L770
+
+#define WATTSON_ELECTIVIRE(rematch, tier)                                                     \
+    {                                                                                         \
+    REMATCH_MON(ELECTIVIRE, tier, rematch),                                                   \
+    .nature = NATURE_ADAMANT,                                                                 \
+    EV_SPREAD_ATK_SPE_HP,                                                                     \
+    .moves = {MOVE_SUPERCELL_SLAM, MOVE_FIRE_PUNCH, MOVE_DRAIN_PUNCH, MOVE_ELECTRIC_TERRAIN}, \
+    .gender = TRAINER_MON_MALE,                                                               \
+    .heldItem = tier <= TIER2 ? ITEM_MAGNET : ITEM_NONE,                                      \
+    }
+
 #define WATTSON_JOLTEON
 #define WATTSON_AMPHAROS
-#define WATTSON_LUXRAY //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L760
+
+#define WATTSON_LUXRAY(rematch, tier)                                                       \
+    {                                                                                       \
+    REMATCH_MON(LUXRAY, tier, rematch),                                                     \
+    .ability = ABILITY_INTIMIDATE,                                                          \
+    .nature = NATURE_ADAMANT,                                                               \
+    EV_SPREAD_ATK_SPE_HP,                                                                   \
+    .moves = {MOVE_SUPERCELL_SLAM, MOVE_CRUNCH, MOVE_PSYCHIC_FANGS, MOVE_ELECTRIC_TERRAIN}, \
+    .gender = TRAINER_MON_MALE,                                                             \
+    .heldItem = tier <= TIER2 ? ITEM_ELECTRIC_SEED : ITEM_NONE,                             \
+    }
+
 #define WATTSON_PACHIRISU
-#define WATTSON_ROTOM //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L801 (Cats' is the same with Hex replaced by Hyper Voice)
+
+#define WATTSON_ROTOM(rematch)                                                             \
+    {                                                                                      \
+    REMATCH_MON(ROTOM, TIER3, rematch),                                                    \
+    .ability = ABILITY_LEVITATE,                                                           \
+    .nature = NATURE_MODEST,                                                               \
+    EV_SPREAD_SPA_SPE_HP,                                                                  \
+    .moves = {MOVE_PARABOLIC_CHARGE, MOVE_SHADOW_BALL, MOVE_HYPER_VOICE, MOVE_NASTY_PLOT}, \
+    .gender = TRAINER_MON_NONE,                                                            \
+    }
+
 #define WATTSON_ROTOM_HEAT
 #define WATTSON_ROTOM_WASH
 #define WATTSON_ROTOM_FROST
@@ -1121,18 +1169,87 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 #define WATTSON_ROTOM_MOW
 #define WATTSON_ZEBSTRIKA
 #define WATTSON_EMOLGA
-#define WATTSON_EELEKTROSS //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L794
-#define WATTSON_HELIOLISK //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L772
+
+#define WATTSON_EELEKTROSS(rematch)                                                \
+    {                                                                              \
+    REMATCH_MON(EELEKTROSS, TIER3, rematch),                                       \
+    .ability = ABILITY_LEVITATE,                                                   \
+    .nature = NATURE_ADAMANT,                                                      \
+    EV_SPREAD_SPA_SPE_DEF,                                                         \
+    .moves = {MOVE_SUPERCELL_SLAM, MOVE_DRAIN_PUNCH, MOVE_LIQUIDATION, MOVE_COIL}, \
+    }
+
+#define WATTSON_HELIOLISK(rematch, tier)                                                     \
+    {                                                                                        \
+    REMATCH_MON(HELIOLISK, tier, rematch),                                                   \
+    .ability = ABILITY_DRY_SKIN,                                                             \
+    .nature = NATURE_MODEST,                                                                 \
+    EV_SPREAD_ATK_SPE_SPD,                                                                   \
+    .moves = {MOVE_PARABOLIC_CHARGE, MOVE_HYPER_VOICE, MOVE_WEATHER_BALL, MOVE_EARTH_POWER}, \
+    .gender = TRAINER_MON_MALE,                                                              \
+    .heldItem = tier <= TIER2 ? ITEM_BIG_ROOT : ITEM_NONE,                                   \
+    }
+
 #define WATTSON_DEDENNE
 #define WATTSON_ORICORIO
 #define WATTSON_TOGEDEMARU
 #define WATTSON_BOLTUND
-#define WATTSON_TOXTRICITY
+
+#define WATTSON_TOXTRICITY(rematch)                                          \
+    {                                                                        \
+    REMATCH_MON(TOXTRICITY, TIER3, rematch),                                 \
+    .ability = ABILITY_PUNK_ROCK,                                            \
+    .nature = NATURE_MODEST,                                                 \
+    EV_SPREAD_SPA_SPE_HP,                                                    \
+    .moves = {MOVE_OVERDRIVE, MOVE_SLUDGE_BOMB, MOVE_BOOMBURST, MOVE_SNARL}, \
+    .gender = TRAINER_MON_NONE,                                              \
+    }
+
 #define WATTSON_PINCURCHIN
 #define WATTSON_MORPEKO
-#define WATTSON_PAWMOT
-#define WATTSON_BELLIBOLT //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L758
-#define WATTSON_KILOWATTREL //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L780 and https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L783
+
+#define WATTSON_PAWMOT(rematch, tier)                                                 \
+    {                                                                                 \
+    REMATCH_MON(PAWMOT, tier, rematch),                                               \
+    .ability = ABILITY_IRON_FIST,                                                     \
+    .nature = NATURE_ADAMANT,                                                         \
+    EV_SPREAD_ATK_SPE_HP,                                                             \
+    .moves = {MOVE_THUNDER_PUNCH, MOVE_DRAIN_PUNCH, MOVE_ICE_PUNCH, MOVE_MACH_PUNCH}, \
+    .gender = TRAINER_MON_MALE,                                                       \
+    .heldItem = tier <= TIER2 ? ITEM_PUNCHING_GLOVE : ITEM_NONE,                      \
+    }
+
+
+#define WATTSON_BELLIBOLT(rematch, tier)                                                  \
+    {                                                                                     \
+    REMATCH_MON(BELLIBOLT, tier, rematch),                                                \
+    .ability = ABILITY_ELECTROMORPHOSIS,                                                  \
+    .nature = NATURE_MODEST,                                                              \
+    EV_SPREAD_SPA_HP_SPD,                                                                 \
+    .moves = {MOVE_PARABOLIC_CHARGE, MOVE_SURF, MOVE_EARTH_POWER, MOVE_ELECTRIC_TERRAIN}, \
+    .gender = TRAINER_MON_MALE,                                                           \
+    .heldItem = tier <= TIER2 ? ITEM_MAGNET : ITEM_NONE,                                  \
+    }
+
+#define WATTSON_KILOWATTREL_INFO(rematch, tier, item) \
+    REMATCH_MON(KILOWATTREL, tier, rematch),          \
+    .ability = ABILITY_WIND_POWER,                    \
+    .nature = NATURE_TIMID,                           \
+    EV_SPREAD_SPA_SPE_HP,                             \
+    .gender = TRAINER_MON_MALE,                       \
+    .heldItem = tier <= TIER2 ? item : ITEM_NONE
+
+#define WATTSON_KILOWATTREL_1(rematch)                                             \
+    {                                                                              \
+    WATTSON_KILOWATTREL_INFO(rematch, tier, ITEM_MAGNET),                          \
+    .moves = {MOVE_THUNDERBOLT, MOVE_AIR_SLASH, MOVE_WEATHER_BALL, MOVE_TAILWIND}, \
+    }
+
+#define WATTSON_KILOWATTREL_RAIN(rematch, tier)                                  \
+    {                                                                            \
+    WATTSON_KILOWATTREL_INFO(rematch, tier, ITEM_DAMP_ROCK),                     \
+    .moves = {MOVE_THUNDER, MOVE_HURRICANE, MOVE_WEATHER_BALL, MOVE_RAIN_DANCE}, \
+    }
 
 [DIFFICULTY_NORMAL][TRAINER_WATTSON_2] =
 {
@@ -1243,7 +1360,6 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .moves = {MOVE_OVERHEAT, MOVE_IRON_DEFENSE, MOVE_SHELL_SMASH, MOVE_SUNNY_DAY}, \
     .gender = TRAINER_MON_FEMALE,                                                  \
     .heldItem = ITEM_WHITE_HERB,                                                   \
-    .ball = ITEM_POKE_BALL,                                                        \
     }
 
 #define FLANNERY_CAMERUPT(rematch)                                            \
@@ -1427,7 +1543,6 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .moves = {MOVE_GIGA_IMPACT, MOVE_HAMMER_ARM, MOVE_THROAT_CHOP, MOVE_SUCKER_PUNCH}, \
     .gender = TRAINER_MON_MALE,                                                        \
     .heldItem = ITEM_SITRUS_BERRY,                                                     \
-    .ball = ITEM_POKE_BALL,                                                            \
     }
 
 #define NORMAN_SPINDA(rematch)                                                 \
@@ -1654,7 +1769,6 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .moves = {MOVE_AIR_SLASH, MOVE_DRAGON_PULSE, MOVE_MOONBLAST, MOVE_COTTON_GUARD}, \
     .gender = TRAINER_MON_FEMALE,                                                    \
     .heldItem = ITEM_SITRUS_BERRY,                                                   \
-    .ball = ITEM_POKE_BALL,                                                          \
     }
 
 #define WINONA_SWELLOW(rematch)                                                 \
@@ -1827,7 +1941,6 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     EV_SPREAD_ATK_DEF_HP,                                                              \
     .moves = {MOVE_ZEN_HEADBUTT, MOVE_ROCK_SLIDE, MOVE_FLARE_BLITZ, MOVE_MORNING_SUN}, \
     .heldItem = ITEM_SITRUS_BERRY,                                                     \
-    .ball = ITEM_POKE_BALL,                                                            \
     }
 
 #define LIZA_LUNATONE(rematch)                                                 \
@@ -1838,7 +1951,6 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     EV_SPREAD_SPA_SPD_HP,                                                      \
     .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_ICY_WIND, MOVE_COSMIC_POWER}, \
     .heldItem = ITEM_SITRUS_BERRY,                                             \
-    .ball = ITEM_POKE_BALL,                                                    \
     }
 
 #define TATE_GRUMPIG(rematch)                                                      \
@@ -2023,7 +2135,6 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .moves = {MOVE_AQUA_TAIL, MOVE_EARTHQUAKE, MOVE_ZEN_HEADBUTT, MOVE_DRAGON_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                       \
     .heldItem = ITEM_SITRUS_BERRY,                                                    \
-    .ball = ITEM_POKE_BALL,                                                           \
     }
 
 #define JUAN_LUVDISC(rematch)                                                             \

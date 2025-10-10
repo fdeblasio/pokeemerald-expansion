@@ -1123,11 +1123,11 @@ BRAWLY_REMATCH(5),
     LEADER_REMATCH,                              \
     .party = (const struct TrainerMon[]) {       \
         WATTSON_ELECTRODE(Rematch, TIER3),       \
-        WATTSON_LANTURN(Rematch, TIER3),         \
+        WATTSON_TOXTRICITY(Rematch, TIER3),      \
         WATTSON_MAGNEZONE(Rematch, TIER3),       \
-        WATTSON_MINUN(Rematch, TIER2),           \
-        WATTSON_PLUSLE(Rematch, TIER2),          \
-        WATTSON_MANECTRIC(Rematch, ACE),         \
+        WATTSON_BELLIBOLT(Rematch, TIER2),       \
+        WATTSON_RAICHU_ALOLA(Rematch, TIER2),    \
+        WATTSON_PAWMOT(Rematch, ACE),            \
     },                                           \
 }
 

@@ -4696,6 +4696,9 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .gender = TRAINER_MON_MALE,                                                    \
     }
 
+//Extra for hacks
+#define CALVIN_LICKITUNG
+
 [DIFFICULTY_NORMAL][TRAINER_CALVIN_1] =
 {
     CALVIN_INFO,
@@ -5075,6 +5078,10 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .lvl = Level,                                                                \
     .species = Level < REMATCH_5_LEVEL_6 ? SPECIES_SURSKIT : SPECIES_MASQUERAIN, \
     .gender = TRAINER_MON_FEMALE
+
+//Extra for hacks
+#define JAMES_SPINARAK
+#define JAMES_LEDYBA
 
 [DIFFICULTY_NORMAL][TRAINER_JAMES_1] =
 {

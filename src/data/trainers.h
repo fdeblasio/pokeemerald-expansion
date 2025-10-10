@@ -594,7 +594,7 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
 
 #define BRAWLY_GRAPPLOCT(rematch)                                            \
     {                                                                        \
-    REMATCH_MON(GRAPPLOCT, TIER3, rematch),                                  \
+    REMATCH_MON(GRAPPLOCT, ACE, rematch),                                    \
     .ability = ABILITY_TECHNICIAN,                                           \
     .nature = NATURE_ADAMANT,                                                \
     EV_SPREAD_ATK_SPE_HP,                                                    \
@@ -606,7 +606,7 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
 
 #define BRAWLY_CRABOMINABLE(rematch)                                                    \
     {                                                                                   \
-    REMATCH_MON(CRABOMINABLE, TIER3, rematch),                                          \
+    REMATCH_MON(CRABOMINABLE, TIER2, rematch),                                          \
     .ability = ABILITY_IRON_FIST,                                                       \
     .nature = NATURE_ADAMANT,                                                           \
     EV_SPREAD_ATK_HP_SPD,                                                               \
@@ -617,7 +617,7 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
 
 #define BRAWLY_HARIYAMA(rematch)                                               \
     {                                                                          \
-    REMATCH_MON(HARIYAMA, ACE, rematch),                                       \
+    REMATCH_MON(HARIYAMA, TIER2, rematch),                                     \
     .ability = ABILITY_THICK_FAT,                                              \
     .nature = NATURE_ADAMANT,                                                  \
     EV_SPREAD_ATK_HP_SPE,                                                      \
@@ -628,7 +628,7 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
 
 #define BRAWLY_MEDICHAM(rematch)                                                  \
     {                                                                             \
-    REMATCH_MON(MEDICHAM, TIER2, rematch),                                        \
+    REMATCH_MON(MEDICHAM, TIER3, rematch),                                        \
     .ability = ABILITY_PURE_POWER,                                                \
     .nature = NATURE_ADAMANT,                                                     \
     EV_SPREAD_ATK_SPE_HP,                                                         \
@@ -638,7 +638,7 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
 
 #define BRAWLY_MACHAMP(rematch)                                               \
     {                                                                         \
-    REMATCH_MON(MACHAMP, TIER2, rematch),                                     \
+    REMATCH_MON(MACHAMP, TIER3, rematch),                                     \
     .ability = ABILITY_NO_GUARD,                                              \
     .nature = NATURE_ADAMANT,                                                 \
     EV_SPREAD_ATK_SPE_HP,                                                     \
@@ -3697,13 +3697,13 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     RICH_MON(Level),                                         \
     .species = Level < 35 ? SPECIES_LITLEO : SPECIES_PYROAR, \
     .ability = ABILITY_UNNERVE,                              \
-    .gender = TRAINER_MON_FEMALE 
+    .gender = TRAINER_MON_FEMALE
 
 #define CINDY_MEOWTH(Level)                                   \
     RICH_MON(Level),                                          \
     .species = Level < 28 ? SPECIES_MEOWTH : SPECIES_PERSIAN, \
     .ability = ABILITY_TECHNICIAN,                            \
-    .gender = TRAINER_MON_FEMALE 
+    .gender = TRAINER_MON_FEMALE
 
 [TRAINER_CINDY_1] =
 {
@@ -5703,7 +5703,7 @@ MARINA_BATTLE(MUSEUM, 17),
     .trainerName = _("Maria"), \
     TRIATHLETE_F_RUNNING_INFO, \
     MINI_BOSS_AI_FLAGS
-    
+
 #define MARIA_DODUO(Level, IV)                             \
     TRIATHLETE_MON(Level, IV),                             \
     .species = Level < 31 ? SPECIES_DODUO: SPECIES_DODRIO, \

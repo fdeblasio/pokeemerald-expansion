@@ -326,6 +326,79 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .gender = TRAINER_MON_FEMALE,                                                \
     }
 
+//Extra for hacks
+#define WALLY_VILEPLUME(rematch, tier)                                        \
+    {                                                                         \
+    REMATCH_MON(VILEPLUME, tier, rematch),                                    \
+    .ability = ABILITY_CHLOROPHYLL,                                           \
+    .nature = NATURE_MODEST,                                                  \
+    EV_SPREAD_SPA_SPE_SPD,                                                    \
+    .moves = {MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_MOONBLAST, MOVE_TOXIC}, \
+    .gender = TRAINER_MON_MALE,                                               \
+    .heldItem = tier == TIER2 ? ITEM_MIRACLE_SEED : ITEM_NONE,                \
+    }
+
+#define WALLY_VICTREEBEL(rematch, tier)                                              \
+    {                                                                                \
+    REMATCH_MON(VICTREEBEL, tier, rematch),                                          \
+    .ability = ABILITY_NATURAL_CURE,                                                 \
+    .nature = NATURE_ADAMANT,                                                        \
+    EV_SPREAD_ATK_SPE_HP,                                                            \
+    .moves = {MOVE_LEAF_BLADE, MOVE_POISON_JAB, MOVE_LEECH_LIFE, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                      \
+    .heldItem = tier == TIER2 ? ITEM_MIRACLE_SEED : ITEM_NONE,                       \
+    }
+
+#define WALLY_KLEAVOR(rematch)                                                      \
+    {                                                                               \
+    REMATCH_MON(KLEAVOR, TIER3, rematch),                                           \
+    .ability = ABILITY_SHARPNESS,                                                   \
+    .nature = NATURE_ADAMANT,                                                       \
+    EV_SPREAD_ATK_SPE_HP,                                                           \
+    .moves = {MOVE_X_SCISSOR, MOVE_STONE_AXE, MOVE_NIGHT_SLASH, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                     \
+    }
+
+#define WALLY_SWALOT(rematch)                                                    \
+    {                                                                             \
+    REMATCH_MON(SWALOT, TIER3, rematch),                                          \
+    .ability = ABILITY_LIQUID_OOZE,                                               \
+    .nature = NATURE_MODEST,                                                      \
+    EV_SPREAD_SPA_HP_SPE,                                                         \
+    .moves = {MOVE_SLUDGE_BOMB, MOVE_GIGA_DRAIN, MOVE_ICE_BEAM, MOVE_BODY_PRESS}, \
+    .gender = TRAINER_MON_MALE,                                                   \
+    }
+
+#define WALLY_SWOOBAT(rematch)                                                 \
+    {                                                                          \
+    REMATCH_MON(SWOOBAT, TIER3, rematch),                                      \
+    .ability = ABILITY_SIMPLE,                                                 \
+    .nature = NATURE_TIMID,                                                    \
+    EV_SPREAD_SPA_SPE_HP,                                                      \
+    .moves = {MOVE_PSYCHIC, MOVE_AIR_SLASH, MOVE_SIGNAL_BEAM, MOVE_CALM_MIND}, \
+    .gender = TRAINER_MON_MALE,                                                \
+    }
+
+#define WALLY_TALONFLAME(rematch)                                                     \
+    {                                                                                 \
+    REMATCH_MON(TALONFLAME, TIER3, rematch),                                          \
+    .ability = ABILITY_GALE_WINGS,                                                    \
+    .nature = NATURE_JOLLY,                                                           \
+    EV_SPREAD_ATK_SPE_HP,                                                             \
+    .moves = {MOVE_TEMPER_FLARE, MOVE_DUAL_WINGBEAT, MOVE_STEEL_WING, MOVE_TAILWIND}, \
+    .gender = TRAINER_MON_MALE,                                                       \
+    }
+
+#define WALLY_DUBWOOL(rematch)                                                        \
+    {                                                                                 \
+    REMATCH_MON(DUBWOOL, TIER3, rematch),                                             \
+    .ability = ABILITY_FLUFFY,                                                        \
+    .nature = NATURE_MODEST,                                                          \
+    EV_SPREAD_ATK_DEF_HP,                                                             \
+    .moves = {MOVE_BODY_SLAM, MOVE_BODY_PRESS, MOVE_ZEN_HEADBUTT, MOVE_COTTON_GUARD}, \
+    .gender = TRAINER_MON_MALE,                                                       \
+    }
+
 [DIFFICULTY_NORMAL][TRAINER_WALLY_VICTORY_ROAD_2] =
 {
     WALLY_INFO,

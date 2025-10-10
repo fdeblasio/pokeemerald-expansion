@@ -6403,10 +6403,6 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_TEETER_DANCE"
-      },
-      {
-        "Level": 1,
         "Move": "MOVE_DIZZY_PUNCH"
       },
       {
@@ -6424,10 +6420,6 @@
       {
         "Level": 0,
         "Move": "MOVE_HYPER_VOICE"
-      },
-      {
-        "Level": 1,
-        "Move": "MOVE_TEETER_DANCE"
       },
       {
         "Level": 1,

@@ -6653,19 +6653,20 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .species = Level < 30 ? SPECIES_VOLTORB : SPECIES_ELECTRODE, \
     .ability = ABILITY_SOUNDPROOF
 
-#define DALTON_WHISMUR(Level)                                                                   \
-    .lvl = Level,                                                                               \
-    .species = Level < 20 ? SPECIES_WHISMUR : (Level < 40 ? SPECIES_LOUDRED : SPECIES_EXPLOUD), \
-    .ability = ABILITY_SOUNDPROOF,                                                              \
+#define DALTON_WHISMUR(Level)                                                                                  \
+    .lvl = Level,                                                                                              \
+    .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_WHISMUR : (Level < 40 ? SPECIES_LOUDRED : SPECIES_EXPLOUD), \
+    .ability = ABILITY_SOUNDPROOF,                                                                             \
     .gender = TRAINER_MON_MALE
 
-#define DALTON_MAGNEMITE(Level)                                                                                     \
-    .lvl = Level,                                                                                                   \
-    .species = Level < 30 ? SPECIES_MAGNEMITE : (Level < REMATCH_5_LEVEL_6 ? SPECIES_MAGNETON : SPECIES_MAGNEZONE), \
+#define DALTON_MAGNEMITE(Level) \
+    .lvl = Level,               \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_MAGNEMITE : (Level < REMATCH_5_LEVEL_6 ? SPECIES_MAGNETON : SPECIES_MAGNEZONE), \
     .ability = ABILITY_STURDY
 
 //Extra for hacks
 #define DALTON_CHATOT
+#define DALTON_TOXEL
 
 [DIFFICULTY_NORMAL][TRAINER_DALTON_1] =
 {

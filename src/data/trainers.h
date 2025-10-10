@@ -785,7 +785,7 @@ RIVAL_BATTLES(KELLI, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, C
     REMATCH_MON(KILOWATTREL, TIER2, rematch),                                    \
     .ability = ABILITY_WIND_POWER,                                               \
     .nature = NATURE_TIMID,                                                      \
-    EV_SPREAD_ATK_SPE_HP,                                                        \
+    EV_SPREAD_SPA_SPE_HP,                                                        \
     .moves = {MOVE_THUNDER, MOVE_HURRICANE, MOVE_WEATHER_BALL, MOVE_RAIN_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                  \
     .heldItem = ITEM_DAMP_ROCK,                                                  \

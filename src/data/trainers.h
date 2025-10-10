@@ -892,26 +892,26 @@ BRAWLY_REMATCH(5),
         },
         {
         .lvl = 22,
-        .species = SPECIES_MINUN,
-        .ability = ABILITY_MINUS,
+        .species = SPECIES_TADBULB,
+        .ability = ABILITY_STATIC,
         IVS(24),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_SWIFT, MOVE_SKILL_SWAP, MOVE_NUZZLE},
+        .moves = {MOVE_SHOCK_WAVE, MOVE_WATER_GUN, MOVE_MUD_SLAP, MOVE_CHARGE},
         .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 22,
-        .species = SPECIES_PLUSLE,
-        .ability = ABILITY_PLUS,
+        .species = SPECIES_PICHU,
+        .ability = ABILITY_STATIC,
         IVS(26),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_SWIFT, MOVE_SKILL_SWAP, MOVE_THUNDER_WAVE},
-        .gender = TRAINER_MON_FEMALE,
+        .moves = {MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_SWEET_KISS, MOVE_NASTY_PLOT},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 24,
-        .species = SPECIES_ELECTRIKE,
-        .ability = ABILITY_STATIC,
+        .species = SPECIES_PAWMO,
+        .ability = ABILITY_VOLT_ABSORB,
         IVS(30),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_QUICK_ATTACK, MOVE_BITE, MOVE_THUNDER_WAVE},
+        .moves = {MOVE_SHOCK_WAVE, MOVE_POWER_UP_PUNCH, MOVE_BITE, MOVE_CHARGE},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
         .ball = ITEM_POKE_BALL,
@@ -7446,8 +7446,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .trainerName = _("Vivian"),
     MAUVILLE_GYM_TRAINER_INFO(BEAUTY),
     .party = (const struct TrainerMon[]) {
-        MAUVILLE_GYM_MON(MINUN, SWIFT, NUZZLE, ENCORE),
-        MAUVILLE_GYM_MON(PLUSLE, SWIFT, NUZZLE, SKILL_SWAP)
+        MAUVILLE_GYM_MON(TADBULB, WATER_GUN, MUD_SLAP, TACKLE),
+        MAUVILLE_GYM_MON(TOXEL, ACID, NUZZLE, GROWL)
     },
 },
 
@@ -7456,7 +7456,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .trainerName = _("Kirk"),
     MAUVILLE_GYM_TRAINER_INFO(GUITARIST),
     .party = (const struct TrainerMon[]) {
-        MAUVILLE_GYM_MON(ELECTRIKE, QUICK_ATTACK, THUNDER_WAVE, LEER),
+        MAUVILLE_GYM_MON(PICHU, NASTY_PLOT, NUZZLE, SWEET_KISS),
         MAUVILLE_GYM_MON(VOLTORB, CHARGE, SCREECH, ROLLOUT)
     },
 },
@@ -7467,7 +7467,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     MAUVILLE_GYM_TRAINER_INFO(YOUNGSTER),
     .party = (const struct TrainerMon[]) {
         MAUVILLE_GYM_MON(PICHU, NASTY_PLOT, NUZZLE, SWEET_KISS),
-        MAUVILLE_GYM_MON(ELECTRIKE, QUICK_ATTACK, THUNDER_WAVE, HOWL)
+        MAUVILLE_GYM_MON(PAWMI, BITE, NUZZLE, GROWL)
     },
 },
 
@@ -7476,7 +7476,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .trainerName = _("Angelo"),
     MAUVILLE_GYM_TRAINER_INFO(POKE_MANIAC),
     .party = (const struct TrainerMon[]) {
-        MAUVILLE_GYM_MON(CHINCHOU, BUBBLE_BEAM, THUNDER_WAVE, CONFUSE_RAY),
+        MAUVILLE_GYM_MON(TADBULB, WATER_GUN, MUD_SLAP, TACKLE),
         MAUVILLE_GYM_MON(MAGNEMITE, MAGNET_BOMB, THUNDER_WAVE, SUPERSONIC)
     },
 },
@@ -7487,7 +7487,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     MAUVILLE_GYM_TRAINER_INFO(GUITARIST),
     .party = (const struct TrainerMon[]) {
         MAUVILLE_GYM_MON(MAGNEMITE, MAGNET_BOMB, THUNDER_WAVE, SUPERSONIC),
-        MAUVILLE_GYM_MON(ELECTRIKE, THUNDER_WAVE, QUICK_ATTACK, LEER)
+        MAUVILLE_GYM_MON(VOLTORB, CHARGE, EERIE_IMPULSE, SWIFT)
     },
 },
 

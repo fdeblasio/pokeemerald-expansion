@@ -249,11 +249,11 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, GOSSIFLEUR, ELDEGOSS, C
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 56,
-        .species = SPECIES_DELCATTY,
-        .ability = ABILITY_NORMALIZE,
+        .species = SPECIES_TALONFLAME,
+        .ability = ABILITY_FLAME_BODY,
         IVS(18),
-        .moves = {MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_ASSIST, MOVE_CHARM},
-        .gender = TRAINER_MON_FEMALE,
+        .moves = {MOVE_TEMPER_FLARE, MOVE_DUAL_WINGBEAT, MOVE_STEEL_WING, MOVE_TAILWIND},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 56,
@@ -413,8 +413,8 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, GOSSIFLEUR, ELDEGOSS, C
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE}, \
     .partySize = 6,                                                        \
     .party = (const struct TrainerMon[]) {                                 \
-        WALLY_GARDEVOIR(Rematch, TIER3),                                   \
-        WALLY_DELCATTY(Rematch, TIER3),                                    \
+        WALLY_KLEAVOR(Rematch, TIER3),                                     \
+        WALLY_TALONFLAME(Rematch, TIER3),                                  \
         WALLY_MAGNEZONE(Rematch, TIER3),                                   \
         WALLY_ALTARIA(Rematch, TIER2),                                     \
         WALLY_ROSERADE(Rematch, TIER2),                                    \

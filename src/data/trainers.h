@@ -277,7 +277,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
 
 #define WALLY_VILEPLUME(rematch)                                              \
     {                                                                         \
-    REMATCH_MON(ROSERADE, TIER2, rematch),                                    \
+    REMATCH_MON(VILEPLUME, TIER2, rematch),                                   \
     .ability = ABILITY_CHLOROPHYLL,                                           \
     .nature = NATURE_MODEST,                                                  \
     EV_SPREAD_SPA_SPE_SPD,                                                    \

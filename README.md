@@ -1928,6 +1928,8 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Gust, Surf, and Hurricane by level up
 
 - Skarmory:
+    - HP: 65->90
+    - Atk: 80->90
     - Catch rate: 25->90
     - Learns Dual Wingbeat and Iron Head by level up
 

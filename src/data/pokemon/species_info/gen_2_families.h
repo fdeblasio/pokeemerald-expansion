@@ -7104,8 +7104,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_SKARMORY
     [SPECIES_SKARMORY] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 80,
+        .baseHP        = 90,
+        .baseAttack    = 90,
         .baseDefense   = 140,
         .baseSpeed     = 70,
         .baseSpAttack  = 40,

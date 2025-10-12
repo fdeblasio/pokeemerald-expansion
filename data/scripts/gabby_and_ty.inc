@@ -24,42 +24,111 @@ GabbyAndTy_EventScript_UpdateLocation::
 	end
 
 GabbyAndTy_EventScript_MoveForBattle1::
-	clearflag FLAG_HIDE_ROUTE_111_GABBY_AND_TY_1
+	call GabbyAndTy_EventScript_ShowAtRoute111_1
 	return
 
 GabbyAndTy_EventScript_MoveForBattle2::
-	setflag FLAG_HIDE_ROUTE_111_GABBY_AND_TY_1
+	call GabbyAndTy_EventScript_ShowAtRoute118_1
+	call GabbyAndTy_EventScript_HideAtRoute111_1
 	return
 
 GabbyAndTy_EventScript_MoveForBattle3::
-	setflag FLAG_HIDE_ROUTE_118_GABBY_AND_TY_1
+	call GabbyAndTy_EventScript_ShowAtRoute120_1
+	call GabbyAndTy_EventScript_HideAtRoute118_1
 	return
 
 GabbyAndTy_EventScript_MoveForBattle4::
-	setflag FLAG_HIDE_ROUTE_120_GABBY_AND_TY_1
+	call GabbyAndTy_EventScript_ShowAtRoute111_2
+	call GabbyAndTy_EventScript_HideAtRoute120_1
 	return
 
 GabbyAndTy_EventScript_MoveForBattle5::
-	setflag FLAG_HIDE_ROUTE_111_GABBY_AND_TY_2
+	call GabbyAndTy_EventScript_ShowAtRoute118_2
+	call GabbyAndTy_EventScript_HideAtRoute111_2
 	return
 
 GabbyAndTy_EventScript_MoveForBattle6::
-	setflag FLAG_HIDE_ROUTE_118_GABBY_AND_TY_2
+	call GabbyAndTy_EventScript_ShowAtRoute120_2
+	call GabbyAndTy_EventScript_HideAtRoute118_2
 	return
 
 GabbyAndTy_EventScript_MoveForBattle7::
-	clearflag FLAG_HIDE_ROUTE_111_GABBY_AND_TY_3
-	setflag FLAG_HIDE_ROUTE_120_GABBY_AND_TY_2
+	call GabbyAndTy_EventScript_ShowAtRoute111_3
+	call GabbyAndTy_EventScript_HideAtRoute120_2
 	return
 
 GabbyAndTy_EventScript_MoveForBattle8::
-	clearflag FLAG_HIDE_ROUTE_118_GABBY_AND_TY_3
-	setflag FLAG_HIDE_ROUTE_111_GABBY_AND_TY_3
+	call GabbyAndTy_EventScript_ShowAtRoute118_3
+	call GabbyAndTy_EventScript_HideAtRoute111_3
 	return
 
 GabbyAndTy_EventScript_MoveForBattle9::
+	call GabbyAndTy_EventScript_ShowAtRoute120_2
+	call GabbyAndTy_EventScript_HideAtRoute118_3
+	return
+
+GabbyAndTy_EventScript_HideAtRoute111_1::
+	setflag FLAG_HIDE_ROUTE_111_GABBY_AND_TY_1
+	return
+
+GabbyAndTy_EventScript_ShowAtRoute111_1::
+	clearflag FLAG_HIDE_ROUTE_111_GABBY_AND_TY_1
+	return
+
+GabbyAndTy_EventScript_HideAtRoute118_1::
+	setflag FLAG_HIDE_ROUTE_118_GABBY_AND_TY_1
+	return
+
+GabbyAndTy_EventScript_ShowAtRoute118_1::
+	clearflag FLAG_HIDE_ROUTE_118_GABBY_AND_TY_1
+	return
+
+GabbyAndTy_EventScript_HideAtRoute120_1::
+	setflag FLAG_HIDE_ROUTE_120_GABBY_AND_TY_1
+	return
+
+GabbyAndTy_EventScript_ShowAtRoute120_1::
+	clearflag FLAG_HIDE_ROUTE_120_GABBY_AND_TY_1
+	return
+
+GabbyAndTy_EventScript_HideAtRoute111_2::
+	setflag FLAG_HIDE_ROUTE_111_GABBY_AND_TY_2
+	return
+
+GabbyAndTy_EventScript_ShowAtRoute111_2::
+	clearflag FLAG_HIDE_ROUTE_111_GABBY_AND_TY_2
+	return
+
+GabbyAndTy_EventScript_HideAtRoute118_2::
+	setflag FLAG_HIDE_ROUTE_118_GABBY_AND_TY_2
+	return
+
+GabbyAndTy_EventScript_ShowAtRoute118_2::
+	clearflag FLAG_HIDE_ROUTE_118_GABBY_AND_TY_2
+	return
+
+GabbyAndTy_EventScript_HideAtRoute120_2::
+	setflag FLAG_HIDE_ROUTE_120_GABBY_AND_TY_2
+	return
+
+GabbyAndTy_EventScript_ShowAtRoute120_2::
 	clearflag FLAG_HIDE_ROUTE_120_GABBY_AND_TY_2
+	return
+
+GabbyAndTy_EventScript_HideAtRoute111_3::
+	setflag FLAG_HIDE_ROUTE_111_GABBY_AND_TY_3
+	return
+
+GabbyAndTy_EventScript_ShowAtRoute111_3::
+	clearflag FLAG_HIDE_ROUTE_111_GABBY_AND_TY_3
+	return
+
+GabbyAndTy_EventScript_HideAtRoute118_3::
 	setflag FLAG_HIDE_ROUTE_118_GABBY_AND_TY_3
+	return
+
+GabbyAndTy_EventScript_ShowAtRoute118_3::
+	clearflag FLAG_HIDE_ROUTE_118_GABBY_AND_TY_3
 	return
 
 GabbyAndTy_EventScript_GabbyBattle1::

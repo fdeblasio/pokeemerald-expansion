@@ -175,6 +175,7 @@ upcoming
     - Turn Wallace into a Fairy specialist and turn Milotic into Water/Fairy?
     - Turn Juan into a Poison specialist (Swalot as Ace since both have mustaches)?
         - Would need to update gym palette
+    - Swap Juan and Glacia and turn Juan into Grass specialist?
     - Turn Team Magma into Ground specialists (Camerupt still works as other people like Winona and Sidney use the secondary typing for their aces)?
         - Would cancel out the addition of Houndoom?
 - Add level defines per route/group of routes?
@@ -206,6 +207,12 @@ upcoming
     - Add Speed increasing natures to Triathletes
 - Use Good Ruby's palette shifting to give trainers more unique looks? (https://github.com/Doesnty/goodruby/commit/ff53bbab592865b49f345342205b41cb869abf27)
 - Gym leaders/Steven/Breeders can have Hidden Abilities
+- Update Gabby and Ty to have rematches blocked by badges, like other trainers
+    - Old logic didn't work:
+        - Doesn't work for cheat start because the flags get cleared after gym battles
+        - However, if someone beats a gym but doesn't beat Gabby/Ty, then it might cause them to be two places at once
+        - Never thought about this before because I face every trainer when testing, but that's not always the case for other players
+        - Instead, maybe both gym battles AND G/T battles check both badges and existing flags/GabbyAndTyGetBattleNum?
 
 ### Moves
 - Tailwind tutor?

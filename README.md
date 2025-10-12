@@ -188,11 +188,6 @@ There are some mechanics, moves and abilities that are missing and being develop
 - [Sapphire Jester for making the Soot Sack usuable](https://www.pokecommunity.com/showpost.php?p=10222284&postcount=178)
 
 ## Known bugs and other notes
-- Gabby and Ty logic needs testing
-    - Doesn't work for cheat start because the flags get cleared after gym battles
-    - However, if someone beats a gym but doesn't beat Gabby/Ty, then it might cause them to be two places at once
-    - Never thought about this before because I face every trainer when testing, but that's not always the case for other players
-    - Instead, maybe both gym battles AND G/T battles check both badges and existing flags/GabbyAndTyGetBattleNum?
 - With the higher levels, using the Exp. Share can cause your team to become overpowered
 - Some egg moves are missing from the teachable learnsets of the evolved forms (such as Hydrapple being unable to learn Rollout via the tutor)
 - Checking wild encounters doesn't differentiate between what's been caught and what hasn't

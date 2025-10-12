@@ -108,12 +108,12 @@ upcoming
         - Make attacking stats more consistent? (Regular has 10 more Atk, but Mega has 55 more SpA)
     - Clefable:
         - Give Flying moves
-    - Victreebel:
+    - Victreebel line:
         - Make attacking stats more consistent? (Regular has 5 more Atk, but Mega has 10 more SpA)
     - Starmie:
         - Make attacking stats more consistent? (Regular has 25 more SpA, but Mega has 10 more Atk)
-            - It has +140 to BST instead of +100 so there could also be an error in the stats
-    - Dragonite:
+            - It seems like it might actually have 30 more SpA but Pure Power
+    - Dragonite line:
         - Make attacking stats more consistent? (Regular has 34 more Atk, but Mega has 21 more SpA)
     - Meganium:
         - Give Fairy moves

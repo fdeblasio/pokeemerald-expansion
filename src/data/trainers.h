@@ -4066,20 +4066,20 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },                                                                                  \
 }
 
-#define WALKER_BATTLE(Location, Level)            \
-[DIFFICULTY_NORMAL][TRAINER_WALKER_##Location] =  \
-{                                                 \
-    .trainerName = _("Walker"),                   \
-    MAGMA_GRUNT_M_INFO,                           \
-    .partySize = 1,                               \
-    .party = (const struct TrainerMon[]) {        \
-        {                                         \
-        .lvl = Level,                             \
-        .species = SPECIES_TORKOAL,               \
-        .ability = ABILITY_DROUGHT,               \
-        .gender = TRAINER_MON_MALE,               \
-        }                                         \
-    },                                            \
+#define WALKER_BATTLE(Location, Level)                                                  \
+[DIFFICULTY_NORMAL][TRAINER_WALKER_##Location] =                                        \
+{                                                                                       \
+    .trainerName = _("Walker"),                                                         \
+    MAGMA_GRUNT_M_INFO,                                                                 \
+    .partySize = 1,                                                                     \
+    .party = (const struct TrainerMon[]) {                                              \
+        {                                                                               \
+        .lvl = Level,                                                                   \
+        .species = Level < SPACE_CENTER_GRUNT_LEVEL ? SPECIES_GLIGAR : SPECIES_GLISCOR, \
+        .ability = ABILITY_SAND_VEIL,                                                   \
+        .gender = TRAINER_MON_MALE,                                                     \
+        }                                                                               \
+    },                                                                                  \
 }
 
 //Team Aqua
@@ -4226,14 +4226,14 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         },                                                                               \
         {                                                                                \
         .lvl = (AceLevel - 2),                                                           \
-        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_SLUGMA : SPECIES_MAGCARGO,     \
-        .ability = ABILITY_MAGMA_ARMOR,                                                  \
+        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_GLIGAR : SPECIES_GLISCOR,      \
+        .ability = ABILITY_SAND_VEIL,                                                    \
         IVS(IVs),                                                                        \
         .gender = TRAINER_MON_MALE,                                                      \
         },                                                                               \
         {                                                                                \
         .lvl = AceLevel,                                                                 \
-        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_HOUNDOUR : SPECIES_HOUNDOOM,   \
+        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_CHARCADET : SPECIES_ARMAROUGE, \
         .ability = ABILITY_FLASH_FIRE,                                                   \
         IVS(IVs),                                                                        \
         .gender = TRAINER_MON_MALE,                                                      \
@@ -4241,38 +4241,38 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },                                                                                   \
 }
 
-#define COURTNEY_BATTLE(Location, AceLevel, IVs)                                      \
-[DIFFICULTY_NORMAL][TRAINER_COURTNEY_##Location] =                                    \
-{                                                                                     \
-    .trainerName = _("Courtney"),                                                     \
-    .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,                                        \
-    .trainerPic = TRAINER_PIC_MAGMA_ADMIN_F,                                          \
-    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MAGMA,        \
-    BOSS_AI_FLAGS,                                                                    \
-    .partySize = 3,                                                                   \
-    .party = (const struct TrainerMon[]) {                                            \
-        {                                                                             \
-        .lvl = (AceLevel - 2),                                                        \
-        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_PHANPY : SPECIES_DONPHAN,   \
-        .ability = 0,                                                                 \
-        IVS(IVs),                                                                     \
-        .gender = TRAINER_MON_FEMALE,                                                 \
-        },                                                                            \
-        {                                                                             \
-        .lvl = (AceLevel - 2),                                                        \
-        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_BALTOY : SPECIES_CLAYDOL,   \
-        .ability = ABILITY_LEVITATE,                                                  \
-        IVS(IVs),                                                                     \
-        .gender = TRAINER_MON_NONE,                                                   \
-        },                                                                            \
-        {                                                                             \
-        .lvl = AceLevel,                                                              \
-        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_VULPIX : SPECIES_NINETALES, \
-        .ability = ABILITY_FLASH_FIRE,                                                \
-        IVS(IVs),                                                                     \
-        .gender = TRAINER_MON_FEMALE,                                                 \
-        }                                                                             \
-    },                                                                                \
+#define COURTNEY_BATTLE(Location, AceLevel, IVs)                                         \
+[DIFFICULTY_NORMAL][TRAINER_COURTNEY_##Location] =                                       \
+{                                                                                        \
+    .trainerName = _("Courtney"),                                                        \
+    .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,                                           \
+    .trainerPic = TRAINER_PIC_MAGMA_ADMIN_F,                                             \
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MAGMA,           \
+    BOSS_AI_FLAGS,                                                                       \
+    .partySize = 3,                                                                      \
+    .party = (const struct TrainerMon[]) {                                               \
+        {                                                                                \
+        .lvl = (AceLevel - 2),                                                           \
+        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_PHANPY : SPECIES_DONPHAN,      \
+        .ability = 0,                                                                    \
+        IVS(IVs),                                                                        \
+        .gender = TRAINER_MON_FEMALE,                                                    \
+        },                                                                               \
+        {                                                                                \
+        .lvl = (AceLevel - 2),                                                           \
+        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_BALTOY : SPECIES_CLAYDOL,      \
+        .ability = ABILITY_LEVITATE,                                                     \
+        IVS(IVs),                                                                        \
+        .gender = TRAINER_MON_NONE,                                                      \
+        },                                                                               \
+        {                                                                                \
+        .lvl = AceLevel,                                                                 \
+        .species = AceLevel < REMATCH_3_LEVEL_6 ? SPECIES_CHARCADET : SPECIES_CERULEDGE, \
+        .ability = ABILITY_FLASH_FIRE,                                                   \
+        IVS(IVs),                                                                        \
+        .gender = TRAINER_MON_FEMALE,                                                    \
+        }                                                                                \
+    },                                                                                   \
 }
 
 #define SHELLY_BATTLE(Location, AceLevel, IVs)                                         \
@@ -9842,8 +9842,8 @@ TABITHA_BATTLE(MT_CHIMNEY, 29, 6),
     .items = {ITEM_SUPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
-        MAXIE_SANDSHREW(28),
-        MAXIE_BALTOY(29),
+        MAXIE_SANDILE(28),
+        MAXIE_TRAPINCH(29),
         MAXIE_RHYHORN(29),
         {
         HUMPHREY(30),
@@ -14697,8 +14697,8 @@ TABITHA_BATTLE(MAGMA_HIDEOUT, 47, 9),
     .items = {ITEM_HYPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
-        MAXIE_SANDSHREW(46),
-        MAXIE_BALTOY(47),
+        MAXIE_SANDILE(46),
+        MAXIE_TRAPINCH(47),
         MAXIE_RHYHORN(47),
         {
         HUMPHREY(48),
@@ -15386,7 +15386,7 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     MAXIE_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
-        MAXIE_BALTOY(MAXIE_SPACE_CENTER_ACE_LEVEL - 1),
+        MAXIE_TRAPINCH(MAXIE_SPACE_CENTER_ACE_LEVEL - 1),
         MAXIE_RHYHORN(MAXIE_SPACE_CENTER_ACE_LEVEL - 1),
         {
         HUMPHREY(MAXIE_SPACE_CENTER_ACE_LEVEL),

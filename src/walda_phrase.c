@@ -31,6 +31,21 @@ static const u8 sWaldaLettersTable[1 << BITS_PER_LETTER] =
     CHAR_b, CHAR_c, CHAR_d, CHAR_f, CHAR_g, CHAR_h, CHAR_j, CHAR_k,         CHAR_m, CHAR_n, CHAR_p, CHAR_q,         CHAR_s
 };
 
+static const u8 sWaldaLettersTable2[1 << BITS_PER_LETTER] =
+{
+    CHAR_0, CHAR_1, CHAR_2, CHAR_3, CHAR_4, CHAR_5, CHAR_6, CHAR_7, CHAR_8, CHAR_9, CHAR_PERIOD, CHAR_COMMA,
+    CHAR_A, CHAR_E, CHAR_I,         CHAR_O,                 CHAR_U,                 CHAR_X, CHAR_Y,
+    CHAR_a, CHAR_e, CHAR_i, CHAR_l, CHAR_o, CHAR_r, CHAR_t, CHAR_u, CHAR_v, CHAR_w, CHAR_x, CHAR_y, CHAR_z
+};
+
+#define SYMBOL_COUNT 12
+static const u8 sWaldaLettersTable3[SYMBOL_COUNT] =
+{
+    CHAR_SPACE,
+    CHAR_EXCL_MARK, CHAR_QUESTION_MARK,  CHAR_MALE,            CHAR_FEMALE,         CHAR_SLASH,          CHAR_HYPHEN,
+    CHAR_ELLIPSIS,  CHAR_DBL_QUOTE_LEFT, CHAR_DBL_QUOTE_RIGHT, CHAR_SGL_QUOTE_LEFT, CHAR_SGL_QUOTE_RIGHT
+};
+
 enum
 {
     PHRASE_CHANGED,
@@ -117,8 +132,14 @@ static u8 GetLetterTableId(u8 letter)
 
     for (i = 0; i < ARRAY_COUNT(sWaldaLettersTable); i++)
     {
-        if (sWaldaLettersTable[i] == letter)
+        if (sWaldaLettersTable[i] == letter || sWaldaLettersTable2[i] == letter)
             return i;
+
+        if (i < SYMBOL_COUNT)
+        {
+            if (sWaldaLettersTable3[i] == letter)
+                return i;
+        }
     }
 
     return ARRAY_COUNT(sWaldaLettersTable);
@@ -151,7 +172,7 @@ static bool32 TryCalculateWallpaper(u16 *backgroundClr, u16 *foregroundClr, u8 *
     if (StringLength(phrase) != WALDA_PHRASE_LENGTH)
         return FALSE;
 
-    // Reject any phrase that uses characters not in sWaldaLettersTable
+    // Reject any phrase that uses characters not in sWaldaLettersTable, sWaldaLettersTable2, or sWaldaLettersTable3
     for (i = 0; i < WALDA_PHRASE_LENGTH; i++)
     {
         charsByTableId[i] = GetLetterTableId(phrase[i]);
@@ -178,12 +199,6 @@ static bool32 TryCalculateWallpaper(u16 *backgroundClr, u16 *foregroundClr, u8 *
     RotateWallpaperDataLeft(data, NUM_WALLPAPER_DATA_BYTES,     21);
     RotateWallpaperDataLeft(data, NUM_WALLPAPER_DATA_BYTES - 1, KEY & 0xF);
     MaskWallpaperData(data, NUM_WALLPAPER_DATA_BYTES - 1, KEY >> 4);
-
-    // Reject the results of any phrase that are 'incompatible' with the player's trainer id
-    if (TID_CHECK_HI != (BG_COLOR_LO ^ FG_COLOR_LO ^ ICON_ID ^ (trainerId >> 8)))
-        return FALSE;
-    if (TID_CHECK_LO != (BG_COLOR_HI ^ FG_COLOR_HI ^ PATTERN_ID ^ (trainerId & 0xFF)))
-        return FALSE;
 
     // Successful phrase, save resulting wallpaper
     ptr = (u16 *) &BG_COLOR_LO;

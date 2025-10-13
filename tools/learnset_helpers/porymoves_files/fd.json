@@ -9409,6 +9409,10 @@
         "Move": "MOVE_COVET"
       },
       {
+        "Level": 38,
+        "Move": "MOVE_STRENGTH"
+      },
+      {
         "Level": 54,
         "Move": "MOVE_BODY_SLAM"
       }
@@ -11272,6 +11276,10 @@
       },
       {
         "Level": 50,
+        "Move": "MOVE_STRENGTH"
+      },
+      {
+        "Level": 55,
         "Move": "MOVE_BODY_SLAM"
       }
     ],
@@ -11685,7 +11693,7 @@
         "Move": "MOVE_DIZZY_PUNCH"
       },
       {
-        "Level": 24,
+        "Level": 36,
         "Move": "MOVE_BODY_SLAM"
       }
     ],
@@ -11702,11 +11710,15 @@
       },
       {
         "Level": 28,
-        "Move": "MOVE_BODY_SLAM"
+        "Move": "MOVE_STRENGTH"
       },
       {
         "Level": 38,
         "Move": "MOVE_STOMPING_TANTRUM"
+      },
+      {
+        "Level": 48,
+        "Move": "MOVE_BODY_SLAM"
       }
     ],
     "PreEvoMoves": [],

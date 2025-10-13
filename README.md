@@ -1484,15 +1484,19 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Catch rate: 45->90
 
 - Tauros (not in main game):
+    - Catch rate: 45->90
     - Learns Headbutt by level up
 
 - Paldean Tauros (Combat) (not in main game):
+    - Catch rate: 45->90
     - Learns Rock Smash and Brick Break by level up
 
 - Paldean Tauros (Blaze) (not in main game):
+    - Catch rate: 45->90
     - Learns Rock Smash, Temper Flare, and Brick Break by level up
 
 - Paldean Tauros (Aqua) (not in main game):
+    - Catch rate: 45->90
     - Learns Rock Smash, Liquidation and Brick Break by level up
 
 - Staryu/Starmie:
@@ -1589,6 +1593,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Eevee (not in main game):
     - Def: 50->55
     - SpA: 45->55
+    - Catch rate: 45->90
     - Now evolves into Espeon only with a Sun Stone
     - Now evolves into Umbreon only with a Moon Stone
     - Now evolves into Sylveon only with a Dawn Stone
@@ -3019,6 +3024,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Evolution: 52->40
 
 - Bouffalant:
+    - Catch rate: 45->90
     - Learns Headbutt and Body Slam by level up
 
 - Rufflet:
@@ -3726,6 +3732,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Bombirdier:
     - Atk: 103->105
     - Spe: 82->85
+    - Catch rate: 45->90
     - Learns Aerial Ace, Feint Attack, Drill Peck, and Throat Chop by level up
 
 - Cyclizar:

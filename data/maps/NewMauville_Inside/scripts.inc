@@ -38,6 +38,7 @@ NewMauville_Inside_EventScript_ShowVoltorb3::
 	return
 
 NewMauville_Inside_EventScript_ShowRegieleki::
+	goto_if_unset FLAG_REGI_DOORS_OPENED, Common_EventScript_NopReturn
 	clearflag FLAG_HIDE_REGIELEKI
 	return
 

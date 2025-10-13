@@ -1149,26 +1149,26 @@ WATTSON_REMATCH(5),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_CASTFORM,
-        .ability = ABILITY_FORECAST,
+        .species = SPECIES_FLETCHINDER,
+        .ability = ABILITY_FLAME_BODY,
         IVS(24),
-        .moves = {MOVE_OVERHEAT, MOVE_WEATHER_BALL, MOVE_HEADBUTT, MOVE_SUNNY_DAY},
+        .moves = {MOVE_OVERHEAT, MOVE_RAZOR_WIND, MOVE_FLAME_CHARGE, MOVE_QUICK_ATTACK},
         .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 30,
-        .species = SPECIES_COMBUSKEN,
-        .ability = ABILITY_BLAZE,
+        .species = SPECIES_PONYTA,
+        .ability = ABILITY_FLASH_FIRE,
         IVS(24),
-        .moves = {MOVE_OVERHEAT, MOVE_DOUBLE_KICK, MOVE_FEATHER_DANCE, MOVE_SUNNY_DAY},
+        .moves = {MOVE_OVERHEAT, MOVE_STOMP, MOVE_FLAME_WHEEL, MOVE_AGILITY},
         .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 30,
-        .species = SPECIES_NUMEL,
-        .ability = ABILITY_OBLIVIOUS,
+        .species = SPECIES_VULPIX,
+        .ability = ABILITY_FLASH_FIRE,
         IVS(30),
-        .moves = {MOVE_OVERHEAT, MOVE_EARTH_POWER, MOVE_SUNNY_DAY, MOVE_AMNESIA},
+        .moves = {MOVE_OVERHEAT, MOVE_EXTRASENSORY, MOVE_HEX, MOVE_WILL_O_WISP},
         .gender = TRAINER_MON_FEMALE,
         },
         {
@@ -1326,11 +1326,11 @@ WATTSON_REMATCH(5),
     FLANNERY_INFO,                                \
     LEADER_REMATCH,                               \
     .party = (const struct TrainerMon[]) {        \
-        FLANNERY_NINETALES(Rematch, TIER3),       \
+        FLANNERY_FLAREON(Rematch, TIER3),         \
         FLANNERY_MAGCARGO(Rematch, TIER3),        \
-        FLANNERY_CASTFORM(Rematch, TIER3),        \
-        FLANNERY_BLAZIKEN(Rematch, TIER2),        \
-        FLANNERY_CAMERUPT(Rematch, TIER2),        \
+        FLANNERY_TALONFLAME(Rematch, TIER3),      \
+        FLANNERY_RAPIDASH(Rematch, TIER2),        \
+        FLANNERY_NINETALES(Rematch, TIER2),       \
         FLANNERY_TORKOAL(Rematch, ACE),           \
     },                                            \
 }
@@ -10211,7 +10211,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_NUMEL,
+        .species = SPECIES_PONYTA,
         IVS(12),
         }
     },
@@ -10226,7 +10226,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_TORKOAL,
+        .species = SPECIES_PANSEAR,
         IVS(12),
         }
     },
@@ -10242,7 +10242,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_TORCHIC,
+        .species = SPECIES_SCORBUNNY,
         IVS(12),
         }
     },
@@ -10257,7 +10257,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_NUMEL,
+        .species = SPECIES_FLETCHINDER,
         IVS(12),
         }
     },
@@ -10272,7 +10272,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_HOUNDOUR,
+        .species = SPECIES_CHARCADET,
         IVS(14),
         }
     },
@@ -10287,7 +10287,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_COMBUSKEN,
+        .species = SPECIES_RABOOT,
         IVS(12),
         }
     },

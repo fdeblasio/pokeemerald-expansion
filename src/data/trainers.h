@@ -3462,6 +3462,10 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },                                                     \
 }
 
+#define TEAM_LEADER_SUPPORTING_MON(Level) \
+    .lvl = Level,                         \
+    IVS(18)
+
 #define MAXIE_INFO                                          \
     .trainerName = _("Maxie"),                              \
     .trainerClass = TRAINER_CLASS_MAGMA_LEADER,             \
@@ -3479,29 +3483,79 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ball = ITEM_POKE_BALL,                                   \
     .nickname = COMPOUND_STRING("Humphrey")
 
-#define MAXIE_RHYHORN(Level)    \
-    {                           \
-    .lvl = Level,               \
+#define MAXIE_RHYHORN(Level)           \
+    {                                  \
+    TEAM_LEADER_SUPPORTING_MON(Level), \
     .species = Level < 42 ? SPECIES_RHYHORN : (Level < (MAXIE_SPACE_CENTER_ACE_LEVEL - 1) ? SPECIES_RHYDON : SPECIES_RHYPERIOR), \
-    .ability = 1,               \
-    IVS(18),                    \
-    .gender = TRAINER_MON_MALE, \
+    .ability = 1,                      \
+    .gender = TRAINER_MON_MALE,        \
     }
 
 #define MAXIE_BALTOY(Level)                                   \
     {                                                         \
-    .lvl = Level,                                             \
+    TEAM_LEADER_SUPPORTING_MON(Level),                        \
     .species = Level < 36 ? SPECIES_BALTOY : SPECIES_CLAYDOL, \
-    IVS(18),                                                  \
+    .ability = ABILITY_LEVITATE,                              \
+    .gender = TRAINER_MON_NONE,                               \
     }
 
 #define MAXIE_SANDSHREW(Level)                                                    \
     {                                                                             \
-    .lvl = Level,                                                                 \
+    TEAM_LEADER_SUPPORTING_MON(Level),                                            \
     .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_SANDSHREW : SPECIES_SANDSLASH, \
-    IVS(18),                                                                      \
+    .ability = ABILITY_SAND_VEIL,                                                 \
     .gender = TRAINER_MON_MALE,                                                   \
     }
+
+//Extra for hacks
+#define MAXIE_DIGLETT
+#define MAXIE_DIGLETT_ALOLA
+#define MAXIE_CUBONE
+
+#define MAXIE_GLIGAR(Level)                                                  \
+    {                                                                        \
+    TEAM_LEADER_SUPPORTING_MON(Level),                                       \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_GLIGAR : SPECIES_GLISCOR, \
+    .ability = ABILITY_SAND_VEIL,                                            \
+    .gender = TRAINER_MON_MALE,                                              \
+    .heldItem = ITEM_POISON_BARB,                                            \
+    }
+
+#define MAXIE_PHANPY
+
+#define MAXIE_TRAPINCH(Level)          \
+    {                                  \
+    TEAM_LEADER_SUPPORTING_MON(Level), \
+    .species = Level < 35 ? SPECIES_TRAPINCH : (Level < (MAXIE_SPACE_CENTER_ACE_LEVEL - 1) ? SPECIES_VIBRAVA : SPECIES_FLYGON), \
+    .ability = 1,                      \
+    .gender = TRAINER_MON_MALE,        \
+    }
+
+#define MAXIE_HIPPOPOTAS
+
+#define MAXIE_DRILBUR(Level)                                     \
+    {                                                            \
+    TEAM_LEADER_SUPPORTING_MON(Level),                           \
+    .species = Level < 36 ? SPECIES_DRILBUR : SPECIES_EXCADRILL, \
+    .ability = ABILITY_SAND_FORCE,                               \
+    .gender = TRAINER_MON_MALE,                                  \
+    }
+
+#define MAXIE_SANDILE(Level)           \
+    {                                  \
+    TEAM_LEADER_SUPPORTING_MON(Level), \
+    .species = Level < 29 ? SPECIES_SANDILE : (Level < (MAXIE_SPACE_CENTER_ACE_LEVEL - 1) ? SPECIES_KROKOROK : SPECIES_KROOKODILE), \
+    .ability = ABILITY_INTIMIDATE,     \
+    .gender = TRAINER_MON_MALE,        \
+    }
+
+#define MAXIE_YAMASK_GALAR
+#define MAXIE_STUNFISK
+#define MAXIE_STUNFISK_ALOLA
+#define MAXIE_GOLETT
+#define MAXIE_MUDBRAY
+#define MAXIE_SILICOBRA
+#define MAXIE_TOEDSCOOL
 
 #define ARCHIE_INFO                                        \
     .trainerName = _("Archie"),                            \
@@ -3522,22 +3576,94 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 
 #define ARCHIE_WAILMER(Level)                                  \
     {                                                          \
-    .lvl = Level,                                              \
+    TEAM_LEADER_SUPPORTING_MON(Level),                         \
     .species = Level < 40 ? SPECIES_WAILMER : SPECIES_WAILORD, \
     .ability = ABILITY_OBLIVIOUS,                              \
-    IVS(18),                                                   \
     .gender = TRAINER_MON_MALE,                                \
     }
 
 #define ARCHIE_TENTACOOL(Level)                                     \
     {                                                               \
-    .lvl = Level,                                                   \
+    TEAM_LEADER_SUPPORTING_MON(Level),                              \
     .species = Level < 30 ? SPECIES_TENTACOOL : SPECIES_TENTACRUEL, \
     .ability = ABILITY_CLEAR_BODY,                                  \
-    IVS(18),                                                        \
     .gender = TRAINER_MON_MALE,                                     \
     }
 
+//Extra for hacks
+#define ARCHIE_PSYDUCK
+#define ARCHIE_POLIWAG
+#define ARCHIE_POLIWAG_2
+#define ARCHIE_SLOWPOKE
+#define ARCHIE_SLOWPOKE_2
+#define ARCHIE_SEEL
+#define ARCHIE_SHELLDER
+#define ARCHIE_KRABBY
+#define ARCHIE_HORSEA
+#define ARCHIE_GOLDEEN
+#define ARCHIE_STARYU
+#define ARCHIE_MAGIKARP
+#define ARCHIE_LAPRAS
+#define ARCHIE_CHINCHOU
+#define ARCHIE_AZURILL
+#define ARCHIE_WOOPER
+#define ARCHIE_QWILFISH
+#define ARCHIE_CORSOLA
+#define ARCHIE_REMORAID
+#define ARCHIE_MANTYKE
+#define ARCHIE_LOTAD
+#define ARCHIE_WINGULL
+#define ARCHIE_BARBOACH
+#define ARCHIE_CORPHISH
+#define ARCHIE_FEEBAS
+#define ARCHIE_CASTFORM
+#define ARCHIE_CLAMPERL
+#define ARCHIE_CLAMPERL_2
+#define ARCHIE_RELICANTH
+#define ARCHIE_LUVDISC
+#define ARCHIE_BUIZEL
+#define ARCHIE_SHELLOS_EAST
+#define ARCHIE_SHELLOS_WEST
+#define ARCHIE_FINNEON
+#define ARCHIE_PANPOUR
+
+#define ARCHIE_TYMPOLE(Level)                                     \
+    {                                                             \
+    TEAM_LEADER_SUPPORTING_MON(Level),                            \
+    .species = Level < 36 ? SPECIES_TYMPOLE : SPECIES_SEISMITOAD, \
+    .ability = ABILITY_SWIFT_SWIM,                                \
+    .gender = TRAINER_MON_MALE,                                   \
+    }
+
+#define ARCHIE_BASCULIN_RED
+#define ARCHIE_BASCULIN_BLUE
+#define ARCHIE_BASCULIN_WHITE_MALE
+#define ARCHIE_BASCULIN_WHITE_FEMALE
+#define ARCHIE_TIRTOUGA
+#define ARCHIE_DUCKLETT
+#define ARCHIE_FRILLISH
+#define ARCHIE_ALOMOMOLA
+#define ARCHIE_CLAUNCHER
+#define ARCHIE_WISHIWASHI
+#define ARCHIE_DEWPIDER
+#define ARCHIE_PYUKUMUKU
+#define ARCHIE_BRUXISH
+#define ARCHIE_CHEWTLE
+
+#define ARCHIE_ARROKUDA(Level)                                      \
+    {                                                               \
+    TEAM_LEADER_SUPPORTING_MON(Level),                              \
+    .species = Level < 26 ? SPECIES_ARROKUDA : SPECIES_BARRASKEWDA, \
+    .ability = ABILITY_SWIFT_SWIM,                                  \
+    .gender = TRAINER_MON_MALE,                                     \
+    }
+
+#define ARCHIE_DRACOVISH
+#define ARCHIE_ARCTOVISH
+#define ARCHIE_WIGLETT
+#define ARCHIE_FINIZEN
+#define ARCHIE_VELUZA
+#define ARCHIE_DONDOZO
 
 
 //Route 102

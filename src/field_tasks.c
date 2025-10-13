@@ -7,6 +7,7 @@
 #include "field_player_avatar.h"
 #include "field_special_scene.h"
 #include "field_tasks.h"
+#include "field_weather.h"
 #include "fieldmap.h"
 #include "item.h"
 #include "main.h"
@@ -20,6 +21,7 @@
 #include "constants/items.h"
 #include "constants/songs.h"
 #include "constants/metatile_labels.h"
+#include "constants/weather.h"
 
 /*  This file handles some persistent tasks that run in the overworld.
  *  - Task_RunTimeBasedEvents: Periodically updates local time and RTC events. Also triggers ambient cries.
@@ -766,6 +768,14 @@ static void AshGrassPerStepCallback(u8 taskId)
         else
             StartAshFieldEffect(x, y, METATILE_Lavaridge_NormalGrass, 4);
 
+        // Try to gather ash
+        if (CheckBagHasItem(ITEM_SOOT_SACK, 1))
+        {
+            ashGatherCount = GetVarPointer(VAR_ASH_GATHER_COUNT);
+            if (*ashGatherCount < 9999)
+                (*ashGatherCount)++;
+        }
+    } else if (GetCurrentWeather() == WEATHER_VOLCANIC_ASH) {
         // Try to gather ash
         if (CheckBagHasItem(ITEM_SOOT_SACK, 1))
         {

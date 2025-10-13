@@ -766,6 +766,7 @@ upcoming
 - Tropical:
     - Tropius, Bellossom, Pau Oricorio, Tsareena, probably a lot of Alolan Pokémon, both forms of Exeggutor (Sun Stone for Alolan)
     - This is just Sun and Moon
+- Magma gets Diglett, Aqua gets Wiglett
 - Massachusetts:
     - Braviary
     - Mismagius

@@ -1193,78 +1193,145 @@ WATTSON_REMATCH(5),
     },
 },
 
-#define FLANNERY_TORKOAL(rematch, tier)                                            \
-    {                                                                              \
-    REMATCH_MON(TORKOAL, tier, rematch, ITEM_WHITE_HERB),                          \
-    .ability = ABILITY_DROUGHT,                                                    \
-    .nature = NATURE_MODEST,                                                       \
-    EV_SPREAD_SPA_DEF_HP,                                                          \
-    .moves = {MOVE_OVERHEAT, MOVE_IRON_DEFENSE, MOVE_SHELL_SMASH, MOVE_SUNNY_DAY}, \
-    .gender = TRAINER_MON_FEMALE,                                                  \
+#define FLANNERY_TORKOAL(rematch, tier)                                                                                \
+    {                                                                                                                  \
+    REMATCH_MON(TORKOAL, tier, rematch, ITEM_WHITE_HERB),                                                              \
+    .ability = ABILITY_DROUGHT,                                                                                        \
+    .nature = NATURE_MODEST,                                                                                           \
+    EV_SPREAD_SPA_DEF_HP,                                                                                              \
+    .moves = {tier <= TIER2 ? MOVE_OVERHEAT : MOVE_FLAMETHROWER, MOVE_IRON_DEFENSE, MOVE_SHELL_SMASH, MOVE_SUNNY_DAY}, \
+    .gender = TRAINER_MON_FEMALE,                                                                                      \
     }
 
-#define FLANNERY_CAMERUPT(rematch, tier)                                      \
-    {                                                                         \
-    REMATCH_MON(CAMERUPT, tier, rematch, ITEM_WHITE_HERB),                    \
-    .ability = ABILITY_MAGMA_ARMOR,                                           \
-    .nature = NATURE_MODEST,                                                  \
-    EV_SPREAD_SPA_SPE_HP,                                                     \
-    .moves = {MOVE_OVERHEAT, MOVE_EARTH_POWER, MOVE_AMNESIA, MOVE_SUNNY_DAY}, \
-    .gender = TRAINER_MON_FEMALE,                                             \
+#define FLANNERY_CAMERUPT(rematch, tier)                                                                          \
+    {                                                                                                             \
+    REMATCH_MON(CAMERUPT, tier, rematch, ITEM_WHITE_HERB),                                                        \
+    .ability = ABILITY_MAGMA_ARMOR,                                                                               \
+    .nature = NATURE_MODEST,                                                                                      \
+    EV_SPREAD_SPA_SPE_HP,                                                                                         \
+    .moves = {tier <= TIER2 ? MOVE_OVERHEAT : MOVE_FLAMETHROWER, MOVE_EARTH_POWER, MOVE_AMNESIA, MOVE_SUNNY_DAY}, \
+    .gender = TRAINER_MON_FEMALE,                                                                                 \
     }
 
-#define FLANNERY_BLAZIKEN(rematch, tier)                                           \
-    {                                                                              \
-    REMATCH_MON(BLAZIKEN, tier, rematch, ITEM_WHITE_HERB),                         \
-    .ability = ABILITY_BLAZE,                                                      \
-    .nature = NATURE_MODEST,                                                       \
-    EV_SPREAD_SPA_SPE_HP,                                                          \
-    .moves = {MOVE_OVERHEAT, MOVE_AURA_SPHERE, MOVE_FOCUS_ENERGY, MOVE_SUNNY_DAY}, \
-    .gender = TRAINER_MON_FEMALE,                                                  \
+#define FLANNERY_BLAZIKEN(rematch, tier)                                                                                  \
+    {                                                                                                                     \
+    REMATCH_MON(BLAZIKEN, tier, rematch, ITEM_WHITE_HERB),                                                                \
+    .ability = ABILITY_BLAZE,                                                                                             \
+    .nature = NATURE_MODEST,                                                                                              \
+    EV_SPREAD_SPA_SPE_HP,                                                                                                 \
+    .moves = {tier <= TIER2 ? MOVE_OVERHEAT : MOVE_FLAMETHROWER, MOVE_AURA_SPHERE, MOVE_SCORCHING_SANDS, MOVE_SUNNY_DAY}, \
+    .gender = TRAINER_MON_FEMALE,                                                                                         \
     }
 
-#define FLANNERY_CASTFORM(rematch, tier)                                          \
-    {                                                                             \
-    REMATCH_MON(CASTFORM, tier, rematch),                                         \
-    .ability = ABILITY_FORECAST,                                                  \
-    .nature = NATURE_MODEST,                                                      \
-    EV_SPREAD_SPA_SPE_HP,                                                         \
-    .moves = {MOVE_OVERHEAT, MOVE_SOLAR_BEAM, MOVE_WEATHER_BALL, MOVE_SUNNY_DAY}, \
-    .gender = TRAINER_MON_FEMALE,                                                 \
+#define FLANNERY_CASTFORM(rematch, tier)                                                                              \
+    {                                                                                                                 \
+    REMATCH_MON(CASTFORM, tier, rematch, ITEM_WHITE_HERB),                                                            \
+    .ability = ABILITY_FORECAST,                                                                                      \
+    .nature = NATURE_MODEST,                                                                                          \
+    EV_SPREAD_SPA_SPE_HP,                                                                                             \
+    .moves = {tier <= TIER2 ? MOVE_OVERHEAT : MOVE_FLAMETHROWER, MOVE_SOLAR_BEAM, MOVE_WEATHER_BALL, MOVE_SUNNY_DAY}, \
+    .gender = TRAINER_MON_FEMALE,                                                                                     \
     }
 
-#define FLANNERY_MAGCARGO(rematch, tier)                                   \
-    {                                                                      \
-    REMATCH_MON(MAGCARGO, tier, rematch),                                  \
-    .ability = ABILITY_FLAME_BODY,                                         \
-    .nature = NATURE_MODEST,                                               \
-    EV_SPREAD_SPA_DEF_HP,                                                  \
-    .moves = {MOVE_OVERHEAT, MOVE_YAWN, MOVE_SHELL_SMASH, MOVE_SUNNY_DAY}, \
-    .gender = TRAINER_MON_FEMALE,                                          \
+#define FLANNERY_MAGCARGO(rematch, tier)                                                                            \
+    {                                                                                                               \
+    REMATCH_MON(MAGCARGO, tier, rematch, ITEM_WHITE_HERB),                                                          \
+    .ability = ABILITY_FLAME_BODY,                                                                                  \
+    .nature = NATURE_MODEST,                                                                                        \
+    EV_SPREAD_SPA_DEF_HP,                                                                                           \
+    .moves = {tier <= TIER2 ? MOVE_OVERHEAT : MOVE_FLAMETHROWER, MOVE_POWER_GEM, MOVE_SHELL_SMASH, MOVE_SUNNY_DAY}, \
+    .gender = TRAINER_MON_FEMALE,                                                                                   \
     }
 
-#define FLANNERY_NINETALES(rematch, tier)                                   \
-    {                                                                       \
-    REMATCH_MON(NINETALES, tier, rematch),                                  \
-    .ability = ABILITY_DROUGHT,                                             \
-    .nature = NATURE_TIMID,                                                 \
-    EV_SPREAD_SPA_SPE_HP,                                                   \
-    .moves = {MOVE_OVERHEAT, MOVE_GRUDGE, MOVE_NASTY_PLOT, MOVE_SUNNY_DAY}, \
-    .gender = TRAINER_MON_FEMALE,                                           \
+#define FLANNERY_NINETALES(rematch, tier)                                                                           \
+    {                                                                                                               \
+    REMATCH_MON(NINETALES, tier, rematch, ITEM_WHITE_HERB),                                                         \
+    .ability = ABILITY_DROUGHT,                                                                                     \
+    .nature = NATURE_TIMID,                                                                                         \
+    EV_SPREAD_SPA_SPE_HP,                                                                                           \
+    .moves = {tier <= TIER2 ? MOVE_OVERHEAT : MOVE_FLAMETHROWER, MOVE_SOLAR_BEAM, MOVE_NASTY_PLOT, MOVE_SUNNY_DAY}, \
+    .gender = TRAINER_MON_FEMALE,                                                                                   \
     }
 
 //Extra for hacks
-#define FLANNERY_ARCANINE //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L967
+#define FLANNERY_ARCANINE(rematch, tier)                                        \
+    {                                                                           \
+    REMATCH_MON(ARCANINE, tier, rematch),                                       \
+    .ability = ABILITY_FLASH_FIRE,                                              \
+    .nature = NATURE_ADAMANT,                                                   \
+    EV_SPREAD_ATK_SPE_HP,                                                       \
+    .moves = {MOVE_TEMPER_FLARE, MOVE_CRUNCH, MOVE_PLAY_ROUGH, MOVE_SUNNY_DAY}, \
+    .gender = TRAINER_MON_FEMALE,                                               \
+    }
+
 #define FLANNERY_ARCANINE_HISUI
-#define FLANNERY_RAPIDASH //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L943
-#define FLANNERY_MAROWAK //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L964 (Cats' is the same with Bonemerang replaced by Double-Edge)
+
+#define FLANNERY_RAPIDASH(rematch, tier)                                            \
+    {                                                                               \
+    REMATCH_MON(RAPIDASH, tier, rematch, ITEM_HEAT_ROCK),                           \
+    .ability = ABILITY_FLASH_FIRE,                                                  \
+    .nature = NATURE_JOLLY,                                                         \
+    EV_SPREAD_ATK_SPE_HP,                                                           \
+    .moves = {MOVE_BLAZE_KICK, MOVE_SMART_STRIKE, MOVE_POISON_JAB, MOVE_SUNNY_DAY}, \
+    .gender = TRAINER_MON_FEMALE,                                                   \
+    }
+
+//Can replace Bonemerang with Double-Edge
+#define FLANNERY_MAROWAK(rematch, tier)                                             \
+    {                                                                               \
+    REMATCH_MON(MAROWAK_ALOLA, tier, rematch),                                      \
+    .ability = ABILITY_ROCK_HEAD,                                                   \
+    .nature = NATURE_ADAMANT,                                                       \
+    EV_SPREAD_ATK_DEF_HP,                                                           \
+    .moves = {MOVE_FLARE_BLITZ, MOVE_SHADOW_BONE, MOVE_BONEMERANG, MOVE_SUNNY_DAY}, \
+    .gender = TRAINER_MON_FEMALE,                                                   \
+    }
+
 #define FLANNERY_MAGMORTAR
-#define FLANNERY_FLAREON
+
+#define FLANNERY_FLAREON(rematch, tier)                                                  \
+    {                                                                                    \
+    REMATCH_MON(FLAREON, tier, rematch),                                                 \
+    .ability = ABILITY_FLASH_FIRE,                                                       \
+    .nature = NATURE_ADAMANT,                                                            \
+    EV_SPREAD_ATK_SPE_SPD,                                                               \
+    .moves = {MOVE_TEMPER_FLARE, MOVE_WILL_O_WISP, MOVE_BABY_DOLL_EYES, MOVE_SUNNY_DAY}, \
+    .gender = TRAINER_MON_FEMALE,                                                        \
+    }
+
 #define FLANNERY_SIMISEAR
 #define FLANNERY_DARMANITAN
-#define FLANNERY_HEATMOR //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L957
-#define FLANNERY_TALONFLAME //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L974
-#define FLANNERY_PYROAR //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L923
+
+#define FLANNERY_HEATMOR(rematch, tier)                                              \
+    {                                                                                \
+    REMATCH_MON(HEATMOR, tier, rematch),                                             \
+    .ability = ABILITY_FLASH_FIRE,                                                   \
+    .nature = NATURE_ADAMANT,                                                        \
+    EV_SPREAD_ATK_SPE_HP,                                                            \
+    .moves = {MOVE_FIRE_LASH, MOVE_DRAIN_PUNCH, MOVE_THUNDER_PUNCH, MOVE_SUNNY_DAY}, \
+    .gender = TRAINER_MON_FEMALE,                                                    \
+    }
+
+#define FLANNERY_TALONFLAME(rematch, tier)                                                                              \
+    {                                                                                                                   \
+    REMATCH_MON(TALONFLAME, tier, rematch),                                                                             \
+    .ability = ABILITY_FLAME_BODY,                                                                                      \
+    .nature = NATURE_JOLLY,                                                                                             \
+    EV_SPREAD_ATK_SPE_HP,                                                                                               \
+    .moves = {MOVE_TEMPER_FLARE, tier <= TIER2 ? MOVE_DUAL_WINGBEAT : MOVE_ACROBATICS, MOVE_STEEL_WING, MOVE_TAILWIND}, \
+    .gender = TRAINER_MON_FEMALE,                                                                                       \
+    }
+
+#define FLANNERY_PYROAR(rematch, tier)                                             \
+    {                                                                              \
+    REMATCH_MON(PYROAR, tier, rematch, ITEM_WIDE_LENS),                            \
+    .ability = ABILITY_COMPETITIVE,                                                \
+    .nature = NATURE_MODEST,                                                       \
+    EV_SPREAD_SPA_SPE_HP,                                                          \
+    .moves = {MOVE_FIRE_BLAST, MOVE_HYPER_VOICE, MOVE_DARK_PULSE, MOVE_SUNNY_DAY}, \
+    .gender = TRAINER_MON_FEMALE,                                                  \
+    }
+
 #define FLANNERY_ORICORIO
 #define FLANNERY_TURTONATOR
 #define FLANNERY_CENTISKORCH
@@ -3544,7 +3611,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define MAXIE_SANDILE(Level)           \
     {                                  \
     TEAM_LEADER_SUPPORTING_MON(Level), \
-    .species = Level < 29 ? SPECIES_SANDILE : (Level < (MAXIE_SPACE_CENTER_ACE_LEVEL - 1) ? SPECIES_KROKOROK : SPECIES_KROOKODILE), \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_SANDILE : (Level < (MAXIE_SPACE_CENTER_ACE_LEVEL - 1) ? SPECIES_KROKOROK : SPECIES_KROOKODILE), \
     .ability = ABILITY_INTIMIDATE,     \
     .gender = TRAINER_MON_MALE,        \
     }

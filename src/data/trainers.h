@@ -963,7 +963,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, COTTONEE, WHIMSICOTT, P
 
 #define FLANNERY_MAROWAK(rematch)                                                   \
     {                                                                               \
-    REMATCH_MON(MAGCARGO, TIER3, rematch),                                          \
+    REMATCH_MON(MAROWAK_ALOLA, TIER3, rematch),                                     \
     .ability = ABILITY_ROCK_HEAD,                                                   \
     .nature = NATURE_ADAMANT,                                                       \
     EV_SPREAD_ATK_DEF_HP,                                                           \

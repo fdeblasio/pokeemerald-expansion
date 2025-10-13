@@ -282,6 +282,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Mt. Pyre on Route 122
     - Sky Pillar on Route 131
     - Southern Island
+- All characters are now eligible for a Walda wallpaper
 - Can now use Soot Sack to see how much ash you have
 - Much easier to make good Pokéblocks
 - Pokémon in the Safari Zone can't flee

@@ -284,6 +284,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Southern Island
 - All characters are now eligible for a Walda wallpaper
 - Can now use Soot Sack to see how much ash you have
+- Ash collects in non-grass tiles as well now
 - Much easier to make good Pokéblocks
 - Pokémon in the Safari Zone can't flee
 - Connected the north and northwest sections of the Safari Zone

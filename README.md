@@ -1384,7 +1384,16 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Hitmonchan (not in main game):
     - Learns Dizzy Punch by level up
 
-- Slowpoke/Slowbro/Slowking (not in main game):
+- Slowpoke (not in main game):
+    - Atk: 65->40
+    - SpA: 40->65
+    - Learns Psybeam by level up
+
+- Galarian Slowpoke (not in main game):
+    - Atk: 65->40
+    - SpA: 40->65
+
+- Slowbro/Slowking (not in main game):
     - Learn Psybeam by level up
 
 - Magnemite/Magneton/Magnezone:

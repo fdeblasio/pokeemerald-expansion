@@ -2683,8 +2683,11 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Patrat/Watchog:
     - Learn Cut, Headbutt, and Body Slam by level up
 
-- Lillipup/Herdier/Stoutland:
+- Lillipup/Herdier:
     - Learn Howl, Covet, and Body Slam by level up
+
+- Stoutland:
+    - Learns Howl, Covet, Strength, and Body Slam by level up
 
 - Purrloin:
     - HP: 41->45
@@ -3016,7 +3019,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Bouffalant:
     - Catch rate: 45->90
-    - Learns Headbutt and Body Slam by level up
+    - Learns Headbutt, Strength, and Body Slam by level up
 
 - Rufflet:
     - Evolution: 54->35
@@ -3085,7 +3088,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Def: 77->80
     - SpD: 77->80
     - Spe: 78->80
-    - Learns Dizzy Punch, Body Slam, and Stomping Tantrum by level up
+    - Learns Dizzy Punch, Strength, Stomping Tantrum, and Body Slam by level up
 
 - Fletchling:
     - Spe: 62->65

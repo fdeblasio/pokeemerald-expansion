@@ -4230,6 +4230,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         .ability = ABILITY_SAND_VEIL,                                                    \
         IVS(IVs),                                                                        \
         .gender = TRAINER_MON_MALE,                                                      \
+        .heldItem = ITEM_POISON_BARB,                                                    \
         },                                                                               \
         {                                                                                \
         .lvl = AceLevel,                                                                 \

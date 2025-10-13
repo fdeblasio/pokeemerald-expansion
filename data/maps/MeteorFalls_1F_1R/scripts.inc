@@ -20,6 +20,7 @@ MeteorFalls_1F_1R_OnTransition:
 	end
 
 MeteorFalls_1F_1R_EventScript_ShowRegidrago::
+	goto_if_unset FLAG_REGI_DOORS_OPENED, Common_EventScript_NopReturn
 	clearflag FLAG_HIDE_REGIDRAGO
 	return
 

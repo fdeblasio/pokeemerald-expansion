@@ -194,7 +194,7 @@ upcoming
 - Give Winstrates rematches?
 - Maybe add Brendan/May/Maxie/Archie/admins/Winstrate rematches in Battle Frontier?
 - Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma. Mega Evo for Houndoom but unsure for Ninetales)
-    - Could swap out Huntail for Mega Gyarados and only it and Houndoom get items
+    - Could swap Huntail/Gorebyss positions with Gyarados/Starmie (once the mega is implemented). Still would need Courtney Mega
 - Try to get every Pokémon in Pokédex in at least one rematch?
 - Trainer customization:
     - All rematches should have consistent values (gender, IVs (unless maxed but only > level 50), etc.)
@@ -413,6 +413,7 @@ upcoming
 - Tropical:
     - Tropius, Bellossom, Pau Oricorio, Tsareena, probably a lot of Alolan Pokémon, both forms of Exeggutor (Sun Stone for Alolan)
     - This is just Sun and Moon
+- Magma gets Diglett, Aqua gets Wiglett
 - Massachusetts:
     - Braviary
     - Mismagius

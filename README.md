@@ -2597,6 +2597,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Riolu:
     - Evolution: friendship->20
+    - Catch rate: 75->90
     - Learns Drain Punch by level up
 
 - Lucario:

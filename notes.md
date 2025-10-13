@@ -57,15 +57,11 @@ upcoming
             - It isn't on by default though, so could still be Steven
 - Mauville:
     - Get all the weird Mauville men at once?
+- Meteor Falls:
+    - Check what happens if you white out to Courtney
 - Mt. Chimney:
     - Consolidate flags: FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA, FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY?
     - Update last Mt. Chimney pair to be based off grunts and change text to "douse in sand"?
-- Fallarbor:
-    - FLAG_HIDE_FALLARBOR_AZURILL might be unused
-- Route 114:
-    - Check what happens if you white out to Wally
-- Meteor Falls:
-    - Check what happens if you white out to Courtney
 - Petalburg:
     - Norman's Spinda's left ear might be off?
 - Lilycove:

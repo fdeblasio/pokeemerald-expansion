@@ -1749,7 +1749,7 @@ NORMAN_REMATCH(5),
 //Extra for hacks
 #define WINONA_DODRIO(rematch, tier)                                               \
     {                                                                              \
-    REMATCH_MON(DODRIO, tier, rematch),                                            \
+    REMATCH_MON(DODRIO, tier, rematch, ITEM_SHARP_BEAK),                           \
     .ability = ABILITY_EARLY_BIRD,                                                 \
     .nature = NATURE_ADAMANT,                                                      \
     EV_SPREAD_ATK_SPE_HP,                                                          \

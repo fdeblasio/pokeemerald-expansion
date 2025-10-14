@@ -48,66 +48,87 @@ LilycoveCity_DepartmentStore_4F_EventScript_ClerkMegaStones::
 
 	.align 2
 LilycoveCity_DepartmentStore_4F_Pokemart_MegaStones:
-	.2byte ITEM_ALAKAZITE
-	.2byte ITEM_PINSIRITE
-	.2byte ITEM_GYARADOSITE
-	.2byte ITEM_HERACRONITE
-	.2byte ITEM_HOUNDOOMINITE
-	.2byte ITEM_SCEPTILITE
-	.2byte ITEM_BLAZIKENITE
-	.2byte ITEM_SWAMPERTITE
-	.2byte ITEM_GARDEVOIRITE
-	.2byte ITEM_GALLADITE
-	.2byte ITEM_SABLENITE
-	.2byte ITEM_MAWILITE
-	.2byte ITEM_AGGRONITE
-	.2byte ITEM_MEDICHAMITE
-	.2byte ITEM_MANECTITE
-	.2byte ITEM_SHARPEDONITE
-	.2byte ITEM_CAMERUPTITE
-	.2byte ITEM_ALTARIANITE
-	.2byte ITEM_BANETTITE
-	.2byte ITEM_ABSOLITE
-	.2byte ITEM_GLALITITE
-	.2byte ITEM_SALAMENCITE
-	.2byte ITEM_METAGROSSITE
+	.2byte ITEM_ALAKAZITE       @ 0065
+	.2byte ITEM_PINSIRITE       @ 0127
+	.2byte ITEM_GYARADOSITE     @ 0130
+	.2byte ITEM_HERACRONITE     @ 0214
+	.2byte ITEM_HOUNDOOMINITE   @ 0229
+	.2byte ITEM_SCEPTILITE      @ 0254
+	.2byte ITEM_BLAZIKENITE     @ 0257
+	.2byte ITEM_SWAMPERTITE     @ 0260
+	.2byte ITEM_GARDEVOIRITE    @ 0282
+	.2byte ITEM_GALLADITE       @ 0282
+	.2byte ITEM_SABLENITE       @ 0302
+	.2byte ITEM_MAWILITE        @ 0303
+	.2byte ITEM_AGGRONITE       @ 0306
+	.2byte ITEM_MEDICHAMITE     @ 0308
+	.2byte ITEM_MANECTITE       @ 0310
+	.2byte ITEM_SHARPEDONITE    @ 0319
+	.2byte ITEM_CAMERUPTITE     @ 0323
+	.2byte ITEM_ALTARIANITE     @ 0334
+	.2byte ITEM_BANETTITE       @ 0354
+	.2byte ITEM_ABSOLITE        @ 0359
+	.2byte ITEM_GLALITITE       @ 0362
+	.2byte ITEM_SALAMENCITE     @ 0373
+	.2byte ITEM_METAGROSSITE    @ 0376
 	pokemartlistend
 
-@Unused shop that contains Mega Stones for Pokemon not available in Emerald by default
+@ Unused shop that contains Mega Stones for Pokemon not available in Emerald by default
+@ Rumored: Chimecho (Hoenn), Absol Z (Hoenn), Staraptor, Garchomp Z, Lucario Z, Golurk, Meowstic, Crabominable, Golisopod, Magearna, Scovillain, Glimmora, Tatsugiri, Baxcalibur
 	.align 2
 LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
-	.2byte ITEM_VENUSAURITE
-	.2byte ITEM_CHARIZARDITE_X
-	.2byte ITEM_CHARIZARDITE_Y
-	.2byte ITEM_BLASTOISINITE
-	.2byte ITEM_BEEDRILLITE
-	.2byte ITEM_PIDGEOTITE
-	.2byte ITEM_NONE            @ Raichu X (move to regular shop when implemented)
-	.2byte ITEM_NONE            @ Raichu Y (move to regular shop when implemented)
-	.2byte ITEM_NONE            @ Victreebel
-	.2byte ITEM_SLOWBRONITE
-	.2byte ITEM_GENGARITE
-	.2byte ITEM_KANGASKHANITE
-	.2byte ITEM_AERODACTYLITE	@ Battle Frontier
-	.2byte ITEM_NONE            @ Dragonite
-	.2byte ITEM_MEWTWONITE_X
-	.2byte ITEM_MEWTWONITE_Y
-	.2byte ITEM_AMPHAROSITE		@ Battle Frontier
-	.2byte ITEM_STEELIXITE
-	.2byte ITEM_SCIZORITE
-	.2byte ITEM_TYRANITARITE
-	.2byte ITEM_LATIASITE		@ Battle Frontier
-	.2byte ITEM_LATIOSITE		@ Battle Frontier
-	.2byte ITEM_LOPUNNITE
-	.2byte ITEM_GARCHOMPITE
-	.2byte ITEM_ABOMASITE
-	.2byte ITEM_AUDINITE
-	.2byte ITEM_NONE            @ Chesnaught
-	.2byte ITEM_NONE            @ Delphox
-	.2byte ITEM_NONE            @ Greninja
-	.2byte ITEM_NONE            @ Malamar
-	.2byte ITEM_NONE            @ Hawlucha
-	.2byte ITEM_DIANCITE
+	.2byte ITEM_VENUSAURITE     @ 0003
+	.2byte ITEM_CHARIZARDITE_X  @ 0006
+	.2byte ITEM_CHARIZARDITE_Y  @ 0006
+	.2byte ITEM_BLASTOISINITE   @ 0009
+	.2byte ITEM_BEEDRILLITE     @ 0015
+	.2byte ITEM_PIDGEOTITE      @ 0018
+	.2byte ITEM_NONE            @ 0026 Raichu X (move to regular shop when implemented)
+	.2byte ITEM_NONE            @ 0026 Raichu Y (move to regular shop when implemented)
+	.2byte ITEM_NONE            @ 0036 Clefable
+	.2byte ITEM_NONE            @ 0071 Victreebel
+	.2byte ITEM_SLOWBRONITE     @ 0080
+	.2byte ITEM_GENGARITE       @ 0094
+	.2byte ITEM_STEELIXITE      @ 0095
+	.2byte ITEM_KANGASKHANITE   @ 0115
+	.2byte ITEM_NONE            @ 0121 Starmie (move to regular shop when implemented)
+	.2byte ITEM_SCIZORITE       @ 0123
+	.2byte ITEM_AERODACTYLITE   @ 0142 Battle Frontier
+	.2byte ITEM_NONE            @ 0149 Dragonite
+	.2byte ITEM_MEWTWONITE_X    @ 0150
+	.2byte ITEM_MEWTWONITE_Y    @ 0150
+	.2byte ITEM_NONE            @ 0154 Meganium (move to Battle Frontier when implemented)
+	.2byte ITEM_NONE            @ 0154 Feraligatr (move to Battle Frontier when implemented)
+	.2byte ITEM_AMPHAROSITE     @ 0181 Battle Frontier
+	.2byte ITEM_NONE            @ 0227 Skarmory (move to regular shop when implemented)
+	.2byte ITEM_TYRANITARITE    @ 0248
+	.2byte ITEM_NONE            @ 0362 Froslass (move to regular shop when implemented)
+	.2byte ITEM_LATIASITE		@ 0380 Battle Frontier
+	.2byte ITEM_LATIOSITE		@ 0381 Battle Frontier
+	.2byte ITEM_LOPUNNITE       @ 0428
+	.2byte ITEM_GARCHOMPITE     @ 0445
+	.2byte ITEM_LUCARIONITE     @ 0448
+	.2byte ITEM_ABOMASITE       @ 0460
+	.2byte ITEM_NONE            @ 0500 Emboar
+	.2byte ITEM_NONE            @ 0530 Excadrill
+	.2byte ITEM_AUDINITE        @ 0531
+	.2byte ITEM_NONE            @ 0545 Scolipede
+	.2byte ITEM_NONE            @ 0560 Scrafty
+	.2byte ITEM_NONE            @ 0604 Eelektross
+	.2byte ITEM_NONE            @ 0609 Chandelure
+	.2byte ITEM_NONE            @ 0652 Chesnaught
+	.2byte ITEM_NONE            @ 0655 Delphox
+	.2byte ITEM_NONE            @ 0658 Greninja
+	.2byte ITEM_NONE            @ 0668 Pyroar
+	.2byte ITEM_NONE            @ 0670 Floette
+	.2byte ITEM_NONE            @ 0687 Malamar
+	.2byte ITEM_NONE            @ 0689 Barbaracle
+	.2byte ITEM_NONE            @ 0691 Dragalge (move to Battle Frontier when implemented)
+	.2byte ITEM_NONE            @ 0701 Hawlucha
+	.2byte ITEM_NONE            @ 0718 Zygarde
+	.2byte ITEM_DIANCITE        @ 0719
+	.2byte ITEM_NONE            @ 0780 Drampa
+	.2byte ITEM_NONE            @ 0870 Falinks
 	.2byte ITEM_NONE
 	release
 	end

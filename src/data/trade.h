@@ -1002,7 +1002,7 @@ static const struct InGameTrade sIngameTrades[] =
     },
     [INGAME_TRADE_PLUSLE] =
     {
-        .nickname = _("Pluses"),
+        .nickname = _("The Fellas"),
         .species = SPECIES_FORTREE_TRADE_GET,
         .ivs = {4, 4, 4, 5, 5, 4},
         .abilityNum = 2,
@@ -1018,10 +1018,10 @@ static const struct InGameTrade sIngameTrades[] =
     },
     [INGAME_TRADE_HORSEA] =
     {
-        .nickname = _("Seasor"),
+        .nickname = _("Slowgan"),
         .species = SPECIES_PACIFIDLOG_TRADE_GET,
         .ivs = {5, 4, 4, 4, 5, 4},
-        .abilityNum = 0,
+        .abilityNum = 2,
         .otId = 46285,
         .conditions = {5, 5, 5, 5, 30},
         .personality = 0x7F,
@@ -1037,7 +1037,7 @@ static const struct InGameTrade sIngameTrades[] =
         .nickname = _("Meowow"),
         .species = SPECIES_BATTLE_FRONTIER_TRADE_GET,
         .ivs = {4, 5, 4, 5, 4, 4},
-        .abilityNum = 1,
+        .abilityNum = 2,
         .otId = 91481,
         .conditions = {5, 5, 5, 30, 5},
         .personality = 0x8B,

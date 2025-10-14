@@ -1427,14 +1427,14 @@ FLANNERY_REMATCH(5),
     .gender = TRAINER_MON_MALE,                                                \
     }
 
-#define NORMAN_ZANGOOSE(rematch, tier)                                           \
-    {                                                                            \
-    REMATCH_MON(ZANGOOSE, tier, rematch, ITEM_TOXIC_ORB),                        \
-    .ability = ABILITY_POISON_HEAL,                                              \
-    .nature = NATURE_ADAMANT,                                                    \
-    EV_SPREAD_ATK_SPE_HP,                                                        \
-    .moves = {MOVE_FACADE, MOVE_X_SCISSOR, MOVE_NIGHT_SLASH, MOVE_SWORDS_DANCE}, \
-    .gender = TRAINER_MON_MALE,                                                  \
+#define NORMAN_ZANGOOSE(rematch, tier)                                                                        \
+    {                                                                                                         \
+    REMATCH_MON(ZANGOOSE, tier, rematch, ITEM_TOXIC_ORB),                                                     \
+    .ability = tier <= TIER2 ? ABILITY_POISON_HEAL : ABILITY_SHARPNESS,                                       \
+    .nature = NATURE_ADAMANT,                                                                                 \
+    EV_SPREAD_ATK_SPE_HP,                                                                                     \
+    .moves = {tier <= TIER2 ? MOVE_FACADE : MOVE_SLASH, MOVE_X_SCISSOR, MOVE_NIGHT_SLASH, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                                               \
     }
 
 #define NORMAN_LINOONE(rematch, tier)                                          \
@@ -1472,7 +1472,17 @@ FLANNERY_REMATCH(5),
 #define NORMAN_RATICATE
 #define NORMAN_FEAROW
 #define NORMAN_WIGGLYTUFF
-#define NORMAN_PERSIAN //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1101
+
+#define NORMAN_PERSIAN(rematch, tier)                                 \
+    {                                                                 \
+    REMATCH_MON(PERSIAN, tier, rematch, ITEM_LIECHI_BERRY),           \
+    .ability = ABILITY_TECHNICIAN,                                    \
+    .nature = NATURE_JOLLY,                                           \
+    EV_SPREAD_ATK_SPE_HP,                                             \
+    .moves = {MOVE_COVET, MOVE_BITE, MOVE_AERIAL_ACE, MOVE_FAKE_OUT}, \
+    .gender = TRAINER_MON_MALE,                                       \
+    }
+
 #define NORMAN_FARFETCHD
 #define NORMAN_DODRIO
 #define NORMAN_LICKILICKY
@@ -1481,7 +1491,17 @@ FLANNERY_REMATCH(5),
 #define NORMAN_TAUROS
 #define NORMAN_DITTO
 #define NORMAN_PORYGON_Z
-#define NORMAN_SNORLAX
+
+#define NORMAN_SNORLAX(rematch, tier)                                        \
+    {                                                                        \
+    REMATCH_MON(SNORLAX, tier, rematch, ITEM_LEFTOVERS),                     \
+    .ability = ABILITY_THICK_FAT,                                            \
+    .nature = NATURE_ADAMANT,                                                \
+    EV_SPREAD_ATK_HP_SPD,                                                    \
+    .moves = {MOVE_BODY_SLAM, MOVE_CRUNCH, MOVE_SLACK_OFF, MOVE_BELLY_DRUM}, \
+    .gender = TRAINER_MON_MALE,                                              \
+    }
+
 #define NORMAN_FURRET
 #define NORMAN_NOCTOWL
 #define NORMAN_AMBIPOM
@@ -1492,15 +1512,64 @@ FLANNERY_REMATCH(5),
 #define NORMAN_SMEARGLE
 #define NORMAN_MILTANK
 #define NORMAN_SWELLOW
-#define NORMAN_DELCATTY //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1089
+
+#define NORMAN_DELCATTY(rematch, tier)                                        \
+    {                                                                         \
+    REMATCH_MON(DELCATTY, tier, rematch, ITEM_SILK_SCARF),                    \
+    .ability = ABILITY_NORMALIZE,                                             \
+    .nature = NATURE_MODEST,                                                  \
+    EV_SPREAD_SPA_SPE_HP,                                                     \
+    .moves = {MOVE_HYPER_VOICE, MOVE_BLIZZARD, MOVE_ASSIST, MOVE_NASTY_PLOT}, \
+    .gender = TRAINER_MON_FEMALE,                                             \
+    }
+
 #define NORMAN_CASTFORM
 #define NORMAN_STARAPTOR
-#define NORMAN_BIBAREL //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1120
+
+#define NORMAN_BIBAREL(rematch, tier)                                              \
+    {                                                                              \
+    REMATCH_MON(BIBAREL, tier, rematch),                                           \
+    .ability = ABILITY_MOODY,                                                      \
+    .nature = NATURE_ADAMANT,                                                      \
+    EV_SPREAD_ATK_SPE_HP,                                                          \
+    .moves = {MOVE_BODY_SLAM, MOVE_AQUA_TAIL, MOVE_SUPER_FANG, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                    \
+    }
+
 #define NORMAN_LOPUNNY
-#define NORMAN_PURUGLY //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1112
+
+#define NORMAN_PURUGLY(rematch, tier)                                             \
+    {                                                                             \
+    REMATCH_MON(PURUGLY, tier, rematch, ITEM_ASSAULT_VEST),                       \
+    .ability = ABILITY_THICK_FAT,                                                 \
+    .nature = NATURE_JOLLY,                                                       \
+    EV_SPREAD_ATK_SPE_HP,                                                         \
+    .moves = {MOVE_BODY_SLAM, MOVE_PLAY_ROUGH, MOVE_FEINT_ATTACK, MOVE_FAKE_OUT}, \
+    .gender = TRAINER_MON_FEMALE,                                                 \
+    }
+
 #define NORMAN_CHATOT
-#define NORMAN_WATCHOG //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1123
-#define NORMAN_STOUTLAND //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1109
+
+#define NORMAN_WATCHOG(rematch, tier)                                           \
+    {                                                                           \
+    REMATCH_MON(WATCHOG, tier, rematch),                                        \
+    .ability = ABILITY_ANALYTIC,                                                \
+    .nature = NATURE_ADAMANT,                                                   \
+    EV_SPREAD_ATK_SPE_HP,                                                       \
+    .moves = {MOVE_HYPER_FANG, MOVE_SUPER_FANG, MOVE_CRUNCH, MOVE_CONFUSE_RAY}, \
+    .gender = TRAINER_MON_MALE,                                                 \
+    }
+
+#define NORMAN_STOUTLAND(rematch, tier)                                 \
+    {                                                                   \
+    REMATCH_MON(STOUTLAND, tier, rematch, ITEM_SILK_SCARF),             \
+    .ability = ABILITY_SCRAPPY,                                         \
+    .nature = NATURE_ADAMANT,                                           \
+    EV_SPREAD_ATK_SPE_HP,                                               \
+    .moves = {MOVE_BODY_SLAM, MOVE_CRUNCH, MOVE_PLAY_ROUGH, MOVE_HOWL}, \
+    .gender = TRAINER_MON_MALE,                                         \
+    }
+
 #define NORMAN_UNFEZANT
 #define NORMAN_AUDINO
 #define NORMAN_ZOROARK
@@ -1511,11 +1580,31 @@ FLANNERY_REMATCH(5),
 #define NORMAN_DIGGERSBY
 #define NORMAN_FURFROU
 #define NORMAN_TOUCANNON
-#define NORMAN_GUMSHOOS //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1143
+
+#define NORMAN_GUMSHOOS(rematch, tier)                                            \
+    {                                                                             \
+    REMATCH_MON(GUMSHOOS, tier, rematch),                                         \
+    .ability = ABILITY_STRONG_JAW,                                                \
+    .nature = NATURE_ADAMANT,                                                     \
+    EV_SPREAD_ATK_SPE_HP,                                                         \
+    .moves = {MOVE_HYPER_FANG, MOVE_PSYCHIC_FANGS, MOVE_CRUNCH, MOVE_SCARY_FACE}, \
+    .gender = TRAINER_MON_MALE,                                                   \
+    }
+
 #define NORMAN_BEWEAR
 #define NORMAN_ORANGURU
 #define NORMAN_KOMALA
-#define NORMAN_GREEDENT
+
+#define NORMAN_GREEDENT(rematch, tier)                                                                           \
+    {                                                                                                            \
+    REMATCH_MON(GREEDENT, tier, rematch, ITEM_LIECHI_BERRY),                                                     \
+    .ability = ABILITY_CHEEK_POUCH,                                                                              \
+    .nature = NATURE_ADAMANT,                                                                                    \
+    EV_SPREAD_ATK_HP_DEF,                                                                                        \
+    .moves = {MOVE_BODY_SLAM, MOVE_BODY_PRESS, MOVE_SEED_BOMB, tier <= TIER2 ? MOVE_STUFF_CHEEKS : MOVE_CRUNCH}, \
+    .gender = TRAINER_MON_MALE,                                                                                  \
+    }
+
 #define NORMAN_DUBWOOL
 #define NORMAN_OINKOLOGNE
 #define NORMAN_MAUSHOLD
@@ -1658,15 +1747,87 @@ NORMAN_REMATCH(5),
     }
 
 //Extra for hacks
-//WINONA_DODRIO https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1312
-//WINONA_XATU https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1317
-//WINONA_STARAPTOR https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1292
-//WINONA_ROTOM https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1312
+#define WINONA_DODRIO(rematch, tier)                                               \
+    {                                                                              \
+    REMATCH_MON(DODRIO, tier, rematch),                                            \
+    .ability = ABILITY_EARLY_BIRD,                                                 \
+    .nature = NATURE_ADAMANT,                                                      \
+    EV_SPREAD_ATK_SPE_HP,                                                          \
+    .moves = {MOVE_DRILL_PECK, MOVE_BODY_SLAM, MOVE_JUMP_KICK, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_FEMALE,                                                  \
+    }
+
+#define WINONA_XATU(rematch, tier)                                            \
+    {                                                                         \
+    REMATCH_MON(XATU, tier, rematch),                                         \
+    .ability = ABILITY_EARLY_BIRD,                                            \
+    .nature = NATURE_MODEST,                                                  \
+    EV_SPREAD_SPA_SPE_HP,                                                     \
+    .moves = {MOVE_AIR_SLASH, MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_ROOST}, \
+    .gender = TRAINER_MON_FEMALE,                                             \
+    }
+
+#define WINONA_STARAPTOR(rematch, tier)                                         \
+    {                                                                           \
+    REMATCH_MON(STARAPTOR, tier, rematch),                                      \
+    .ability = ABILITY_INTIMIDATE,                                              \
+    .nature = NATURE_ADAMANT,                                                   \
+    EV_SPREAD_ATK_SPE_HP,                                                       \
+    .moves = {MOVE_DUAL_WINGBEAT, MOVE_SLASH, MOVE_CLOSE_COMBAT, MOVE_AGILITY}, \
+    .gender = TRAINER_MON_FEMALE,                                               \
+    }
+
+#define WINONA_ROTOM(rematch, tier)                                                       \
+    {                                                                                     \
+    REMATCH_MON(ROTOM_FAN, tier, rematch),                                                \
+    .ability = ABILITY_WIND_POWER,                                                        \
+    .nature = NATURE_MODEST,                                                              \
+    EV_SPREAD_SPA_SPE_HP,                                                                 \
+    .moves = {MOVE_AIR_SLASH, MOVE_PARABOLIC_CHARGE, MOVE_SHADOW_BALL, MOVE_DOUBLE_TEAM}, \
+    }
+
 #define WINONA_NOIVERN //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1302 (Cats' has Roost/Tailwind replaced by Flamethrower/Roost)
-#define WINONA_CORVIKNIGHT //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1263
-#define WINONA_CRAMORANT //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1271
-#define WINONA_BOMBIRDIER //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1281 (Cats' has Rocky Payload/Hone Claws replaced by Big Pecks/Roost)
-#define WINONA_FLAMIGO //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1259 (Cats' has Dual Wingbeat/Throat Chop/Sitrus Berry replaced by Acrobatics/Liquidation/Flying Gem)
+
+#define WINONA_CORVIKNIGHT(rematch, tier)                                           \
+    {                                                                               \
+    REMATCH_MON(CORVIKNIGHT, tier, rematch, ITEM_SITRUS_BERRY),                     \
+    .ability = ABILITY_MIRROR_ARMOR,                                                \
+    .nature = NATURE_IMPISH,                                                        \
+    EV_SPREAD_ATK_DEF_HP,                                                           \
+    .moves = {MOVE_DRILL_PECK, MOVE_IRON_HEAD, MOVE_BODY_PRESS, MOVE_IRON_DEFENSE}, \
+    .gender = TRAINER_MON_FEMALE,                                                   \
+    }
+
+#define WINONA_CRAMORANT(rematch, tier)                                 \
+    {                                                                   \
+    REMATCH_MON(CRAMORANT, tier, rematch, ITEM_SHARP_BEAK),             \
+    .nature = NATURE_MODEST,                                            \
+    EV_SPREAD_SPA_SPE_HP,                                               \
+    .moves = {MOVE_AIR_SLASH, MOVE_SURF, MOVE_ICE_BEAM, MOVE_TAILWIND}, \
+    .gender = TRAINER_MON_FEMALE,                                       \
+    }
+
+//Can replace Rocky Payload/Hone Claws with Big Pecks/Roost
+#define WINONA_BOMBIRDIER(rematch, tier)                                            \
+    {                                                                               \
+    REMATCH_MON(BOMBIRDIER, tier, rematch, ITEM_SHARP_BEAK),                        \
+    .ability = ABILITY_ROCKY_PAYLOAD,                                               \
+    .nature = NATURE_ADAMANT,                                                       \
+    EV_SPREAD_ATK_SPE_HP,                                                           \
+    .moves = {MOVE_DRILL_PECK, MOVE_THROAT_CHOP, MOVE_ROCK_SLIDE, MOVE_HONE_CLAWS}, \
+    .gender = TRAINER_MON_FEMALE,                                                   \
+    }
+
+//Can replace Liquidation with Throat Chop
+#define WINONA_FLAMIGO(rematch, tier)                                              \
+    {                                                                              \
+    REMATCH_MON(FLAMIGO, tier, rematch, ITEM_FLYING_GEM),                          \
+    .ability = ABILITY_SCRAPPY,                                                    \
+    .nature = NATURE_ADAMANT,                                                      \
+    EV_SPREAD_ATK_SPE_HP,                                                          \
+    .moves = {MOVE_ACROBATICS, MOVE_HIGH_JUMP_KICK, MOVE_LIQUIDATION, MOVE_ROOST}, \
+    .gender = TRAINER_MON_FEMALE,                                                  \
+    }
 
 #define WINONA_REMATCH(Rematch)                 \
 [DIFFICULTY_NORMAL][TRAINER_WINONA_##Rematch] = \
@@ -1797,13 +1958,34 @@ WINONA_REMATCH(5),
     }
 
 //Extra for hacks
-#define TATE_ALAKAZAM //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1426 (Cats' has Shadow Ball replaced with Recover)
+//Can replace Shadow Ball with Recover
+#define TATE_ALAKAZAM(rematch, tier)                                                \
+    {                                                                               \
+    REMATCH_MON(ALAKAZAM, tier, rematch, ITEM_SITRUS_BERRY),                        \
+    .ability = ABILITY_MAGIC_GUARD,                                                 \
+    .nature = NATURE_MODEST,                                                        \
+    EV_SPREAD_SPA_SPE_HP,                                                           \
+    .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_SHADOW_BALL, MOVE_CALM_MIND}, \
+    .gender = TRAINER_MON_MALE,                                                     \
+    }
+
 #define LIZA_RAPIDASH
 #define TATE_LIZA_SLOWBRO
 #define TATE_LIZA_SLOWKING
 #define TATE_LIZA_HYPNO
 #define TATE_MR_MIME
-#define LIZA_ESPEON //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1458 (Cats' has Morning Sun/Psychic Terrain replaced with Psychic Terrain/Calm Mind)
+
+//Can replace Morning Sun with Calm Mind
+#define LIZA_ESPEON(rematch, tier)                                                   \
+    {                                                                                \
+    REMATCH_MON(ESPEON, tier, rematch),                                              \
+    .ability = ABILITY_MAGIC_BOUNCE,                                                 \
+    .nature = NATURE_MODEST,                                                         \
+    EV_SPREAD_SPA_SPE_HP,                                                            \
+    .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_MORNING_SUN, MOVE_PSYCHIC_TERRAIN}, \
+    .gender = TRAINER_MON_FEMALE,                                                    \
+    }
+
 #define TATE_LIZA_XATU
 #define TATE_LIZA_UNOWN
 #define TATE_LIZA_WOBBUFFET
@@ -1815,13 +1997,51 @@ WINONA_REMATCH(5),
 #define TATE_REUNICLUS
 #define TATE_LIZA_BEHEEYEM
 #define TATE_BRAVIARY
-#define TATE_MEOWSTIC //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1432
-#define LIZA_MEOWSTIC //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1444
+
+#define TATE_MEOWSTIC(rematch, tier)                                                    \
+    {                                                                                   \
+    REMATCH_MON(MEOWSTIC_M, tier, rematch, ITEM_SITRUS_BERRY),                          \
+    .ability = ABILITY_PRANKSTER,                                                       \
+    .nature = NATURE_TIMID,                                                             \
+    EV_SPREAD_SPA_SPE_HP,                                                               \
+    .moves = {MOVE_PSYCHIC, MOVE_PSYCHIC_TERRAIN, MOVE_TEARFUL_LOOK, MOVE_DOUBLE_TEAM}, \
+    .gender = TRAINER_MON_MALE,                                                         \
+    }
+
+#define LIZA_MEOWSTIC(rematch, tier)                                             \
+    {                                                                            \
+    REMATCH_MON(MEOWSTIC_F, tier, rematch, ITEM_SITRUS_BERRY),                   \
+    .ability = ABILITY_COMPETITIVE,                                              \
+    .nature = NATURE_MODEST,                                                     \
+    EV_SPREAD_SPA_SPE_HP,                                                        \
+    .moves = {MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_SIGNAL_BEAM, MOVE_CALM_MIND}, \
+    .gender = TRAINER_MON_FEMALE,                                                \
+    }
+
 #define TATE_LIZA_ORICORIO
-#define LIZA_HATTERENE //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1437
+
+#define LIZA_HATTERENE(rematch, tier)                                            \
+    {                                                                            \
+    REMATCH_MON(HATTERENE, tier, rematch, ITEM_SITRUS_BERRY),                    \
+    .ability = ABILITY_MAGIC_BOUNCE,                                             \
+    .nature = NATURE_MODEST,                                                     \
+    EV_SPREAD_SPA_SPD_HP,                                                        \
+    .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_LIFE_DEW, MOVE_CALM_MIND}, \
+    .gender = TRAINER_MON_FEMALE,                                                \
+    }
+
 #define TATE_INDEEDEE
 #define LIZA_INDEEDEE
-#define LIZA_ESPATHRA //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1486
+
+#define LIZA_ESPATHRA(rematch, tier)                                                     \
+    {                                                                                    \
+    REMATCH_MON(ESPATHRA, tier, rematch),                                                \
+    .ability = ABILITY_OPPORTUNIST,                                                      \
+    .nature = NATURE_TIMID,                                                              \
+    EV_SPREAD_SPA_SPE_HP,                                                                \
+    .moves = {MOVE_LUMINA_CRASH, MOVE_DAZZLING_GLEAM, MOVE_SHADOW_BALL, MOVE_CALM_MIND}, \
+    .gender = TRAINER_MON_FEMALE,                                                        \
+    }
 
 #define TATE_AND_LIZA_REMATCH(Rematch)                 \
 [DIFFICULTY_NORMAL][TRAINER_TATE_AND_LIZA_##Rematch] = \

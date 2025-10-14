@@ -12726,7 +12726,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 39,
-        .species = SPECIES_MANECTRIC,
+        .species = SPECIES_TOXTRICITY,
         }
     },
 },
@@ -12740,7 +12740,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 39,
-        .species = SPECIES_NINJASK,
+        .species = SPECIES_ACCELGOR,
         }
     },
 },
@@ -12895,7 +12895,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 40,
-        .species = SPECIES_SKARMORY,
+        .species = SPECIES_BOMBIRDIER,
         IVS(30),
         }
     },
@@ -12910,7 +12910,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 38,
-        .species = SPECIES_DODRIO,
+        .species = SPECIES_MURKROW,
         IVS(12),
         },
         {
@@ -12920,7 +12920,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
         },
         {
         .lvl = 38,
-        .species = SPECIES_SWELLOW,
+        .species = SPECIES_FLAMIGO,
         IVS(12),
         }
     },
@@ -12935,17 +12935,17 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 38,
-        .species = SPECIES_MASQUERAIN,
+        .species = SPECIES_LEDIAN,
         IVS(12),
         },
         {
         .lvl = 38,
-        .species = SPECIES_SWABLU,
+        .species = SPECIES_FLETCHINDER,
         IVS(12),
         },
         {
         .lvl = 38,
-        .species = SPECIES_BEAUTIFLY,
+        .species = SPECIES_VESPIQUEN,
         IVS(12),
         }
     },
@@ -12960,12 +12960,12 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 39,
-        .species = SPECIES_NINJASK,
+        .species = SPECIES_CRAMORANT,
         IVS(18),
         },
         {
         .lvl = 39,
-        .species = SPECIES_GOLBAT,
+        .species = SPECIES_DELIBIRD,
         IVS(18),
         }
     },
@@ -13037,9 +13037,9 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 41,
-        .species = SPECIES_MANECTRIC,
+        .species = SPECIES_RAICHU_ALOLA,
         IVS(12),
-        .moves = {MOVE_THUNDER, MOVE_QUICK_ATTACK, MOVE_THUNDER_WAVE, MOVE_ROAR}
+        .moves = {MOVE_THUNDER, MOVE_PSYBEAM, MOVE_THUNDER_WAVE, MOVE_SPEED_SWAP}
         }
     },
 },
@@ -13069,8 +13069,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 40,
-        .species = SPECIES_NINJASK,
-        .moves = {MOVE_BUG_BITE, MOVE_FURY_SWIPES, MOVE_MIND_READER, MOVE_DIG}
+        .species = SPECIES_STUNKY,
         },
         {
         .lvl = 40,
@@ -13169,37 +13168,38 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     BUG_MANIAC_INFO,             \
     MINI_BOSS_AI_FLAGS
 
-#define JEFFREY_MASQUERAIN(Level)  \
-    .lvl = Level,                  \
-    .species = SPECIES_MASQUERAIN, \
-    IVS(10),                       \
-    .gender = TRAINER_MON_MALE
-
-#define JEFFREY_PINSIR(Level)        \
-    .lvl = Level,                    \
-    .species = SPECIES_PINSIR,       \
-    .ability = ABILITY_HYPER_CUTTER, \
-    IVS(10),                         \
-    .gender = TRAINER_MON_MALE
-
-#define JEFFREY_HERACROSS(Level)  \
+#define JEFFREY_ARAQUANID(Level)  \
     .lvl = Level,                 \
-    .species = SPECIES_HERACROSS, \
-    .ability = ABILITY_SWARM,     \
+    .species = SPECIES_ARAQUANID, \
     IVS(10),                      \
     .gender = TRAINER_MON_MALE
 
-#define JEFFREY_DUSTOX(Level)  \
+#define JEFFREY_SCIZOR(Level)  \
     .lvl = Level,              \
-    .species = SPECIES_DUSTOX, \
+    .species = SPECIES_SCIZOR, \
+    .ability = ABILITY_SWARM,  \
     IVS(10),                   \
     .gender = TRAINER_MON_MALE
 
-#define JEFFREY_BEAUTIFLY(Level)  \
+#define JEFFREY_KLEAVOR(Level)  \
+    .lvl = Level,               \
+    .species = SPECIES_KLEAVOR, \
+    .ability = ABILITY_SWARM,   \
+    IVS(10),                    \
+    .gender = TRAINER_MON_MALE
+
+#define JEFFREY_VESPIQUEN(Level)  \
     .lvl = Level,                 \
-    .species = SPECIES_BEAUTIFLY, \
+    .species = SPECIES_VESPIQUEN, \
     IVS(10),                      \
     .gender = TRAINER_MON_FEMALE
+
+#define JEFFREY_CRUSTLE(Level)      \
+    .lvl = Level,                   \
+    .species = SPECIES_CRUSTLE,     \
+    .ability = ABILITY_SHELL_ARMOR, \
+    IVS(10),                        \
+    .gender = TRAINER_MON_MALE
 
 //Extra for hacks
 #define JEFFREY_KRICKETOT
@@ -13211,13 +13211,13 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
         {
-        JEFFREY_HERACROSS(40),
+        JEFFREY_KLEAVOR(40),
         },
         {
-        JEFFREY_PINSIR(40),
+        JEFFREY_SCIZOR(40),
         },
         {
-        JEFFREY_MASQUERAIN(40),
+        JEFFREY_ARAQUANID(40),
         }
     },
 },
@@ -13228,19 +13228,19 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        JEFFREY_BEAUTIFLY(42),
+        JEFFREY_CRUSTLE(42),
         },
         {
-        JEFFREY_DUSTOX(42),
+        JEFFREY_VESPIQUEN(42),
         },
         {
-        JEFFREY_HERACROSS(42),
+        JEFFREY_KLEAVOR(42),
         },
         {
-        JEFFREY_PINSIR(42),
+        JEFFREY_SCIZOR(42),
         },
         {
-        JEFFREY_MASQUERAIN(42),
+        JEFFREY_ARAQUANID(42),
         }
     },
 },
@@ -13251,19 +13251,19 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        JEFFREY_BEAUTIFLY(45),
+        JEFFREY_CRUSTLE(45),
         },
         {
-        JEFFREY_DUSTOX(45),
+        JEFFREY_VESPIQUEN(45),
         },
         {
-        JEFFREY_HERACROSS(45),
+        JEFFREY_KLEAVOR(45),
         },
         {
-        JEFFREY_PINSIR(45),
+        JEFFREY_SCIZOR(45),
         },
         {
-        JEFFREY_MASQUERAIN(45),
+        JEFFREY_ARAQUANID(45),
         }
     },
 },
@@ -13274,19 +13274,19 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        JEFFREY_BEAUTIFLY(REMATCH_4_LEVEL_2),
+        JEFFREY_CRUSTLE(REMATCH_4_LEVEL_2),
         },
         {
-        JEFFREY_DUSTOX(REMATCH_4_LEVEL_2),
+        JEFFREY_VESPIQUEN(REMATCH_4_LEVEL_2),
         },
         {
-        JEFFREY_HERACROSS(REMATCH_4_LEVEL_2),
+        JEFFREY_KLEAVOR(REMATCH_4_LEVEL_2),
         },
         {
-        JEFFREY_PINSIR(REMATCH_4_LEVEL_2),
+        JEFFREY_SCIZOR(REMATCH_4_LEVEL_2),
         },
         {
-        JEFFREY_MASQUERAIN(REMATCH_4_LEVEL_1),
+        JEFFREY_ARAQUANID(REMATCH_4_LEVEL_1),
         }
     },
 },
@@ -13297,19 +13297,19 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
         {
-        JEFFREY_BEAUTIFLY(REMATCH_5_LEVEL_2),
+        JEFFREY_CRUSTLE(REMATCH_5_LEVEL_2),
         },
         {
-        JEFFREY_DUSTOX(REMATCH_5_LEVEL_2),
+        JEFFREY_VESPIQUEN(REMATCH_5_LEVEL_2),
         },
         {
-        JEFFREY_HERACROSS(REMATCH_5_LEVEL_2),
+        JEFFREY_KLEAVOR(REMATCH_5_LEVEL_2),
         },
         {
-        JEFFREY_PINSIR(REMATCH_5_LEVEL_2),
+        JEFFREY_SCIZOR(REMATCH_5_LEVEL_2),
         },
         {
-        JEFFREY_MASQUERAIN(REMATCH_5_MINI_BOSS),
+        JEFFREY_ARAQUANID(REMATCH_5_MINI_BOSS),
         .heldItem = ITEM_SILVER_POWDER
         }
     },
@@ -13329,8 +13329,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
         },
         {
         .lvl = 40,
-        .species = SPECIES_NINJASK,
-        .moves = {MOVE_SAND_ATTACK, MOVE_DOUBLE_TEAM, MOVE_FURY_CUTTER, MOVE_SWORDS_DANCE}
+        .species = SPECIES_SKUNTANK,
         }
     },
 },
@@ -13370,11 +13369,11 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 41,
-        .species = SPECIES_DUSTOX,
+        .species = SPECIES_LEDIAN,
         },
         {
         .lvl = 41,
-        .species = SPECIES_BEAUTIFLY,
+        .species = SPECIES_VESPIQUEN,
         }
     },
 },
@@ -13388,11 +13387,11 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 41,
-        .species = SPECIES_DUSKULL,
+        .species = SPECIES_PHANTUMP,
         },
         {
         .lvl = 41,
-        .species = SPECIES_SHUPPET,
+        .species = SPECIES_MISDREAVUS,
         }
     },
 },
@@ -13496,8 +13495,8 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 40,
-        .species = SPECIES_SPINDA,
-        .moves = {MOVE_DIZZY_PUNCH, MOVE_HYPNOSIS, MOVE_PSYBEAM, MOVE_SKILL_SWAP}
+        .species = SPECIES_SYLVEON,
+        .moves = {MOVE_DAZZLING_GLEAM, MOVE_LIGHT_SCREEN, MOVE_BABY_DOLL_EYES, MOVE_SKILL_SWAP}
         },
         {
         .lvl = 42,

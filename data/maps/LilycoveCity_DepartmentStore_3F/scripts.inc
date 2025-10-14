@@ -88,50 +88,55 @@ LilycoveCity_DepartmentStore_3F_EventScript_ClerkEvo::
 
 	.align 2
 LilycoveCity_DepartmentStore_3F_Pokemart_Evo:
-	.2byte ITEM_FIRE_STONE
-	.2byte ITEM_WATER_STONE
-	.2byte ITEM_THUNDER_STONE
-	.2byte ITEM_LEAF_STONE
-	.2byte ITEM_MOON_STONE
-	.2byte ITEM_SUN_STONE
-	.2byte ITEM_SHINY_STONE
-	.2byte ITEM_DAWN_STONE
-	.2byte ITEM_LINKING_CORD
-	.2byte ITEM_DRAGON_SCALE
-	.2byte ITEM_DEEP_SEA_TOOTH
-	.2byte ITEM_DEEP_SEA_SCALE
-	.2byte ITEM_REAPER_CLOTH
-	.2byte ITEM_PROTECTOR
-	.2byte ITEM_PRISM_SCALE
+	.2byte ITEM_FIRE_STONE      @ Hoenn: Vulpix;                      National: N/A,        Unused: Growlithe, Growlithe-H, Cubone, Eevee, Pansear, Capsakid
+	.2byte ITEM_WATER_STONE     @ Hoenn: Staryu, Lombre;              National: N/A;        Unused: Poliwhirl, Shellder, Eevee, Panpour
+	.2byte ITEM_THUNDER_STONE   @ Hoenn: Pikachu, Magneton, Nosepass; National: N/A;        Unused: Eevee, Eelektrik, Charjabug, Tadbulb
+	.2byte ITEM_LEAF_STONE      @ Hoenn: Gloom, Nuzleaf;              National: Voltorb-H;  Unused: Weepinbell, Exeggcute, Eevee, Pansage, Petilil
+	.2byte ITEM_MOON_STONE      @ Hoenn: Jigglypuff, Skitty;          National: N/A;        Unused: Nidorina, Nidorino, Clefairy, Eevee, Munna
+	.2byte ITEM_SUN_STONE       @ Hoenn: Pikachu, Gloom;              National: Sunkern;    Unused: Exeggcute, Eevee, Cottonee, Petilil, Helioptile
+	.2byte ITEM_SHINY_STONE     @ Hoenn: Koffing, Roselia;            National: Togetic;    Unused: Minccino, Floette
+	.2byte ITEM_DAWN_STONE      @ Hoenn: Kirlia, Snorunt;             National: N/A;        Unused: Eevee
+	.2byte ITEM_LINKING_CORD    @ Hoenn: Kadabra, Machoke, Graveler;  National: Graveler-A; Unused: Haunter, Boldore, Gurdurr, Karrablast, Shelmet, Phantump, Pumpkaboo
+	.2byte ITEM_DRAGON_SCALE    @ Hoenn: Seadra
+	.2byte ITEM_DEEP_SEA_TOOTH  @ Hoenn: Clamperl
+	.2byte ITEM_DEEP_SEA_SCALE  @ Hoenn: Clamperl
+	.2byte ITEM_REAPER_CLOTH    @ Hoenn: Dusclops
+	.2byte ITEM_PROTECTOR       @ Hoenn: Rhydon
+	.2byte ITEM_PRISM_SCALE     @ Hoenn: Feebas
 	pokemartlistend
 
-@Unused shop that contains evo items for Pokemon not available in Emerald by default
+@ Unused shop that contains evo items for Pokemon not available in Emerald by default
 	.align 2
 LilycoveCity_DepartmentStore_3F_Pokemart_EvoUnused:
-	.2byte ITEM_DUSK_STONE
-	.2byte ITEM_ICE_STONE       @ Battle Frontier
-	.2byte ITEM_KINGS_ROCK 		@ Battle Frontier as battle item
-	.2byte ITEM_METAL_COAT
-	.2byte ITEM_UPGRADE
-	.2byte ITEM_DUBIOUS_DISC
-	.2byte ITEM_RAZOR_FANG		@ Battle Frontier
-	.2byte ITEM_RAZOR_CLAW
-	.2byte ITEM_ELECTIRIZER		@ Battle Frontier
-	.2byte ITEM_MAGMARIZER		@ Battle Frontier
-	.2byte ITEM_OVAL_STONE		@ Battle Frontier
-	.2byte ITEM_SACHET
-	.2byte ITEM_WHIPPED_DREAM
-	.2byte ITEM_GALARICA_CUFF
-	.2byte ITEM_GALARICA_WREATH
-	.2byte ITEM_SWEET_APPLE
-	.2byte ITEM_TART_APPLE
-	.2byte ITEM_SCROLL_OF_DARKNESS
-	.2byte ITEM_SCROLL_OF_WATERS
-	.2byte ITEM_BLACK_AUGURITE
-	.2byte ITEM_PEAT_BLOCK		@ Battle Frontier
-	.2byte ITEM_AUSPICIOUS_ARMOR
-	.2byte ITEM_MALICIOUS_ARMOR
-	.2byte ITEM_METAL_ALLOY
+	.2byte ITEM_DUSK_STONE                                       @ Unused: Murkrow, Misdreavus, Lampent, Doublade
+	.2byte ITEM_ICE_STONE       @ Battle Frontier;                 National: Sandshrew-A, Vulpix-A; Unused: Mr. Mime-A, Eevee, Darumaka-G, Bergmite, Crabrawler, Cetoddle
+	.2byte ITEM_KINGS_ROCK 		@ Battle Frontier as battle item   Unused: Poliwhirl and Slowpoke
+	.2byte ITEM_METAL_COAT                                       @ Unused: Onix and Scyther
+	.2byte ITEM_BLACK_AUGURITE                                   @ Unused: Scyther
+	.2byte ITEM_UPGRADE                                          @ Unused: Porygon
+	.2byte ITEM_DUBIOUS_DISC                                     @ Unused: Porygon2
+	.2byte ITEM_RAZOR_FANG		@ Battle Frontier                @ National: Gligar
+	.2byte ITEM_RAZOR_CLAW                                       @ Unused: Sneasel and Sneasel-H
+	.2byte ITEM_ELECTIRIZER		@ Battle Frontier                @ National: Electabuzz
+	.2byte ITEM_MAGMARIZER		@ Battle Frontier                @ National: Magmar
+	.2byte ITEM_OVAL_STONE		@ Battle Frontier                @ National: Happiny
+	.2byte ITEM_SACHET                                           @ Unused: Spritzee
+	.2byte ITEM_WHIPPED_DREAM                                    @ Unused: Swirlix
+	.2byte ITEM_GALARICA_CUFF                                    @ Unused: Slowpoke-G
+	.2byte ITEM_GALARICA_WREATH                                  @ Unused: Slowpoke-G
+	.2byte ITEM_SWEET_APPLE                                      @ Unused: Applin
+	.2byte ITEM_TART_APPLE                                       @ Unused: Applin
+	.2byte ITEM_SYRUPY_APPLE                                     @ Unused: Applin
+	.2byte ITEM_CRACKED_POT                                      @ Unused: Sinistea
+	.2byte ITEM_CHIPPED_POT                                      @ Unused: Sinistea
+	.2byte ITEM_METAL_ALLOY                                      @ Unused: Duraludon
+	.2byte ITEM_SCROLL_OF_DARKNESS                               @ Unused: Kubfu
+	.2byte ITEM_SCROLL_OF_WATERS                                 @ Unused: Kubfu
+	.2byte ITEM_PEAT_BLOCK		@ Battle Frontier                @ National: Ursaring
+	.2byte ITEM_AUSPICIOUS_ARMOR                                 @ Unused: Charcadet
+	.2byte ITEM_MALICIOUS_ARMOR                                  @ Unused: Charcadet
+	.2byte ITEM_UNREMARKABLE_TEACUP                              @ Unused: Poltchageist
+	.2byte ITEM_MASTERPIECE_TEACUP                               @ Unused: Poltchageist
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_3F_EventScript_ClerkRight::

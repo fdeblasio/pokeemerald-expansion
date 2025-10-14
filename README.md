@@ -1589,7 +1589,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Catch rate: 45->90
     - Now evolves into Espeon only with a Sun Stone
     - Now evolves into Umbreon only with a Moon Stone
-    - Now evolves into Sylveon only with a Dawn Stone
+    - Now evolves into Sylveon only with a Shiny Stone
     - Swift and Bite swap levels
     - Learns Body Slam at level 45
 

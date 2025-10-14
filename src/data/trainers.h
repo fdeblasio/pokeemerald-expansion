@@ -2922,23 +2922,99 @@ JUAN_REMATCH(4),
 
 //Extra for hacks
 #define SIDNEY_RATICATE
-#define SIDNEY_PERSIAN //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1758
-#define SIDNEY_UMBREON //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1788 (Cats' replaced Moonlight/Baby Doll Eyes with Confuse Ray/Mean Look)
+
+#define SIDNEY_PERSIAN(Level, Tier)                                                \
+    {                                                                              \
+    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                           \
+    .species = SPECIES_PERSIAN_ALOLAN,                                             \
+    .ability = ABILITY_FUR_COAT,                                                   \
+    .nature = NATURE_MODEST,                                                       \
+    EV_SPREAD_SPA_SPE_DEF,                                                         \
+    .moves = {MOVE_DARK_PULSE, MOVE_POWER_GEM, MOVE_THUNDERBOLT, MOVE_NASTY_PLOT}, \
+    .gender = TRAINER_MON_MALE,                                                    \
+    }
+
+//Can replace Moonlight/Baby-Doll Eyes with Confuse Ray/Mean Look
+#define SIDNEY_UMBREON(Level, Tier)                                             \
+    {                                                                           \
+    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                        \
+    .species = SPECIES_UMBREON,                                                 \
+    .ability = ABILITY_SYNCHRONIZE,                                             \
+    .nature = NATURE_CALM,                                                      \
+    EV_SPREAD_SPD_DEF_HP,                                                       \
+    .moves = {MOVE_FOUL_PLAY, MOVE_TOXIC, MOVE_MOONLIGHT, MOVE_BABY_DOLL_EYES}, \
+    .gender = TRAINER_MON_MALE,                                                 \
+    }
+
 #define SIDNEY_HONCHKROW
 #define SIDNEY_OVERQWIL
-#define SIDNEY_WEAVILE //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1768
-#define SIDNEY_HOUNDOOM //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1758
+
+#define SIDNEY_WEAVILE(Level, Tier)                                                    \
+    {                                                                                  \
+    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                               \
+    .species = SPECIES_WEAVILE,                                                        \
+    .ability = ABILITY_PRESSURE,                                                       \
+    .nature = NATURE_JOLLY,                                                            \
+    EV_SPREAD_ATK_SPE_HP,                                                              \
+    .moves = {MOVE_NIGHT_SLASH, MOVE_ICICLE_CRASH, MOVE_ICE_SHARD, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                        \
+    }
+
+#define SIDNEY_HOUNDOOM(Level, Tier)                                                  \
+    {                                                                                 \
+    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                              \
+    .species = SPECIES_HOUNDOOM,                                                      \
+    .ability = ABILITY_FLASH_FIRE,                                                    \
+    .nature = NATURE_MODEST,                                                          \
+    EV_SPREAD_SPA_SPE_HP,                                                             \
+    .moves = {MOVE_DARK_PULSE, MOVE_FLAMETHROWER, MOVE_SLUDGE_BOMB, MOVE_NASTY_PLOT}, \
+    .gender = TRAINER_MON_MALE,                                                       \
+    }
+
 #define SIDNEY_OBSTAGOON
 #define SIDNEY_SABLEYE
-#define SIDNEY_LIEPARD //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1738
+
+#define SIDNEY_LIEPARD(Level, Tier)                                                \
+    {                                                                              \
+    ELITE_FOUR_MON(Level, Tier, SIDNEY, ITEM_LIECHI_BERRY),                        \
+    .species = SPECIES_LIEPARD,                                                    \
+    .ability = ABILITY_UNBURDEN,                                                   \
+    .nature = NATURE_JOLLY,                                                        \
+    EV_SPREAD_ATK_SPE_HP,                                                          \
+    .moves = {MOVE_NIGHT_SLASH, MOVE_PSYCHO_CUT, MOVE_SEED_BOMB, MOVE_PLAY_ROUGH}, \
+    .gender = TRAINER_MON_FEMALE,                                                  \
+    }
+
 #define SIDNEY_SCRAFTY
 #define SIDNEY_ZOROARK
 #define SIDNEY_KINGAMBIT
 #define SIDNEY_MANDIBUZZ
 #define SIDNEY_HYDREIGON
-#define SIDNEY_MALAMAR //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1778
+
+#define SIDNEY_MALAMAR(Level, Tier)                                                    \
+    {                                                                                  \
+    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                               \
+    .species = SPECIES_MALAMAR,                                                        \
+    .ability = ABILITY_CONTRARY,                                                       \
+    .nature = NATURE_ADAMANT,                                                          \
+    EV_SPREAD_ATK_SPE_HP,                                                              \
+    .moves = {MOVE_THROAT_CHOP, MOVE_ZEN_HEADBUTT, MOVE_SUPERPOWER, MOVE_TOPSY_TURVY}, \
+    .gender = TRAINER_MON_FEMALE,                                                      \
+    }
+
 #define SIDNEY_THIEVUL
-#define SIDNEY_GRIMMSNARL //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1748
+
+#define SIDNEY_GRIMMSNARL(Level, Tier)                                               \
+    {                                                                                \
+    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                             \
+    .species = SPECIES_GRIMMSNARL,                                                   \
+    .ability = ABILITY_PRANKSTER,                                                    \
+    .nature = NATURE_ADAMANT,                                                        \
+    EV_SPREAD_ATK_SPE_HP,                                                            \
+    .moves = {MOVE_FALSE_SURRENDER, MOVE_PLAY_ROUGH, MOVE_LEECH_LIFE, MOVE_BULK_UP}, \
+    .gender = TRAINER_MON_MALE,                                                      \
+    }
+
 #define SIDNEY_MABOSSTIFF
 
 [DIFFICULTY_NORMAL][TRAINER_SIDNEY] =

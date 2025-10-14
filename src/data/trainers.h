@@ -1786,7 +1786,16 @@ NORMAN_REMATCH(5),
     .moves = {MOVE_AIR_SLASH, MOVE_PARABOLIC_CHARGE, MOVE_SHADOW_BALL, MOVE_DOUBLE_TEAM}, \
     }
 
-#define WINONA_NOIVERN //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1302 (Cats' has Roost/Tailwind replaced by Flamethrower/Roost)
+//Can replace Tailwind with Flamethrower
+#define WINONA_NOIVERN(rematch, tier)                                        \
+    {                                                                        \
+    REMATCH_MON(NOIVERN, tier, rematch),                                     \
+    .ability = ABILITY_INFILTRATOR,                                          \
+    .nature = NATURE_TIMID,                                                  \
+    EV_SPREAD_SPA_SPE_HP,                                                    \
+    .moves = {MOVE_AIR_SLASH, MOVE_DRAGON_PULSE, MOVE_TAILWIND, MOVE_ROOST}, \
+    .gender = TRAINER_MON_FEMALE,                                            \
+    }
 
 #define WINONA_CORVIKNIGHT(rematch, tier)                                           \
     {                                                                               \
@@ -2206,100 +2215,184 @@ JUAN_REMATCH(5),
     .mugshotColor = MUGSHOT_TYPE_##MugshotColor,                           \
     BOSS_AI_FLAGS
 
+#define SIDNEY_BALL ITEM_DUSK_BALL
+#define PHOEBE_BALL ITEM_DUSK_BALL
+#define GLACIA_BALL ITEM_PREMIER_BALL
+#define DRAKE_BALL  ITEM_HEAVY_BALL
+
+#define ELITE_FOUR_MON(Level, Tier, Trainer, ...)                            \
+    .lvl = Level,                                                            \
+    PERFECT_IVS,                                                             \
+    .heldItem = Tier <= TIER2 ? DEFAULT(ITEM_NONE, __VA_ARGS__) : ITEM_NONE, \
+    .ball = Tier == ACE ? ITEM_POKE_BALL : Trainer##_BALL
+
+
 #define SIDNEY_INFO                \
     ELITE_FOUR_INFO(SIDNEY, DARK), \
     .trainerName = _("Sidney"),    \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
 
-#define SIDNEY_ABSOL(Level)                                                           \
-    {                                                                                 \
-    .lvl = Level,                                                                     \
-    .species = SPECIES_ABSOL,                                                         \
-    .ability = ABILITY_SHARPNESS,                                                     \
-    .nature = NATURE_ADAMANT,                                                         \
-    EV_SPREAD_ATK_SPE_HP,                                                             \
-    PERFECT_IVS,                                                                      \
-    .moves = {MOVE_NIGHT_SLASH, MOVE_PSYCHO_CUT, MOVE_AERIAL_ACE, MOVE_SWORDS_DANCE}, \
-    .gender = TRAINER_MON_MALE,                                                       \
-    .heldItem = Level < POSTGAME_LEVEL ? ITEM_SITRUS_BERRY : ITEM_ABSOLITE,           \
-    .ball = ITEM_POKE_BALL,                                                           \
+#define SIDNEY_ABSOL(Level, Tier)                                                                    \
+    {                                                                                                \
+    ELITE_FOUR_MON(Level, Tier, SIDNEY, Level < POSTGAME_LEVEL ? ITEM_SITRUS_BERRY : ITEM_ABSOLITE), \
+    .species = SPECIES_ABSOL,                                                                        \
+    .ability = ABILITY_SHARPNESS,                                                                    \
+    .nature = NATURE_ADAMANT,                                                                        \
+    EV_SPREAD_ATK_SPE_HP,                                                                            \
+    .moves = {MOVE_NIGHT_SLASH, MOVE_PSYCHO_CUT, MOVE_AERIAL_ACE, MOVE_SWORDS_DANCE},                \
+    .gender = TRAINER_MON_MALE,                                                                      \
     }
 
-#define SIDNEY_SUPPORTING_MON(Level) \
-    .lvl = Level,                    \
-    PERFECT_IVS,                     \
-    .gender = TRAINER_MON_MALE,      \
-    .ball = ITEM_DUSK_BALL
-
-#define SIDNEY_CACTURNE(Level)                                                        \
+#define SIDNEY_CACTURNE(Level, Tier)                                                  \
     {                                                                                 \
-    SIDNEY_SUPPORTING_MON(Level),                                                     \
+    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                              \
     .species = SPECIES_CACTURNE,                                                      \
     .ability = ABILITY_WATER_ABSORB,                                                  \
     .nature = NATURE_MODEST,                                                          \
     EV_SPREAD_SPA_SPE_HP,                                                             \
     .moves = {MOVE_DARK_PULSE, MOVE_ENERGY_BALL, MOVE_LEECH_SEED, MOVE_SPIKY_SHIELD}, \
+    .gender = TRAINER_MON_MALE,                                                       \
     }
 
-#define SIDNEY_CRAWDAUNT(Level)                                                 \
+#define SIDNEY_CRAWDAUNT(Level, Tier)                                           \
     {                                                                           \
-    SIDNEY_SUPPORTING_MON(Level),                                               \
+    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                        \
     .species = SPECIES_CRAWDAUNT,                                               \
     .ability = ABILITY_HYPER_CUTTER,                                            \
     .nature = NATURE_ADAMANT,                                                   \
     EV_SPREAD_ATK_SPE_HP,                                                       \
     .moves = {MOVE_CRUNCH, MOVE_CRABHAMMER, MOVE_KNOCK_OFF, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                 \
     }
 
-#define SIDNEY_SHIFTRY(Level)                                                  \
+#define SIDNEY_SHIFTRY(Level, Tier)                                            \
     {                                                                          \
-    SIDNEY_SUPPORTING_MON(Level),                                              \
+    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                       \
     .species = SPECIES_SHIFTRY,                                                \
     .ability = ABILITY_WIND_RIDER,                                             \
     .nature = NATURE_ADAMANT,                                                  \
     EV_SPREAD_ATK_SPE_HP,                                                      \
     .moves = {MOVE_NIGHT_SLASH, MOVE_LEAF_BLADE, MOVE_FAKE_OUT, MOVE_ROLLOUT}, \
+    .gender = TRAINER_MON_MALE,                                                \
     }
 
-#define SIDNEY_MIGHTYENA(Level)                                                 \
+#define SIDNEY_MIGHTYENA(Level, Tier)                                           \
     {                                                                           \
-    SIDNEY_SUPPORTING_MON(Level),                                               \
+    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                        \
     .species = SPECIES_MIGHTYENA,                                               \
     .ability = ABILITY_INTIMIDATE,                                              \
     .nature = NATURE_ADAMANT,                                                   \
     EV_SPREAD_ATK_SPE_HP,                                                       \
     .moves = {MOVE_CRUNCH, MOVE_PLAY_ROUGH, MOVE_FIRE_FANG, MOVE_THUNDER_FANG}, \
+    .gender = TRAINER_MON_MALE,                                                 \
     }
 
-#define SIDNEY_SHARPEDO(Level)                                                 \
+#define SIDNEY_SHARPEDO(Level, Tier)                                           \
     {                                                                          \
-    SIDNEY_SUPPORTING_MON(Level),                                              \
+    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                       \
     .species = SPECIES_SHARPEDO,                                               \
     .ability = ABILITY_ROUGH_SKIN,                                             \
     .nature = NATURE_ADAMANT,                                                  \
     EV_SPREAD_ATK_SPE_HP,                                                      \
     .moves = {MOVE_CRUNCH, MOVE_LIQUIDATION, MOVE_POISON_FANG, MOVE_ICE_FANG}, \
+    .gender = TRAINER_MON_MALE,                                                \
     }
 
 //Extra for hacks
 #define SIDNEY_RATICATE
-#define SIDNEY_PERSIAN //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1758
-#define SIDNEY_UMBREON //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1788 (Cats' replaced Moonlight/Baby Doll Eyes with Confuse Ray/Mean Look)
+
+#define SIDNEY_PERSIAN(Level, Tier)                                                \
+    {                                                                              \
+    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                           \
+    .species = SPECIES_PERSIAN_ALOLAN,                                             \
+    .ability = ABILITY_FUR_COAT,                                                   \
+    .nature = NATURE_MODEST,                                                       \
+    EV_SPREAD_SPA_SPE_DEF,                                                         \
+    .moves = {MOVE_DARK_PULSE, MOVE_POWER_GEM, MOVE_THUNDERBOLT, MOVE_NASTY_PLOT}, \
+    .gender = TRAINER_MON_MALE,                                                    \
+    }
+
+//Can replace Moonlight/Baby-Doll Eyes with Confuse Ray/Mean Look
+#define SIDNEY_UMBREON(Level, Tier)                                             \
+    {                                                                           \
+    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                        \
+    .species = SPECIES_UMBREON,                                                 \
+    .ability = ABILITY_SYNCHRONIZE,                                             \
+    .nature = NATURE_CALM,                                                      \
+    EV_SPREAD_SPD_DEF_HP,                                                       \
+    .moves = {MOVE_FOUL_PLAY, MOVE_TOXIC, MOVE_MOONLIGHT, MOVE_BABY_DOLL_EYES}, \
+    .gender = TRAINER_MON_MALE,                                                 \
+    }
+
 #define SIDNEY_HONCHKROW
 #define SIDNEY_OVERQWIL
-#define SIDNEY_WEAVILE //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1768
-#define SIDNEY_HOUNDOOM //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1758
+
+#define SIDNEY_WEAVILE(Level, Tier)                                                    \
+    {                                                                                  \
+    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                               \
+    .species = SPECIES_WEAVILE,                                                        \
+    .ability = ABILITY_PRESSURE,                                                       \
+    .nature = NATURE_JOLLY,                                                            \
+    EV_SPREAD_ATK_SPE_HP,                                                              \
+    .moves = {MOVE_NIGHT_SLASH, MOVE_ICICLE_CRASH, MOVE_ICE_SHARD, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                        \
+    }
+
+#define SIDNEY_HOUNDOOM(Level, Tier)                                                  \
+    {                                                                                 \
+    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                              \
+    .species = SPECIES_HOUNDOOM,                                                      \
+    .ability = ABILITY_FLASH_FIRE,                                                    \
+    .nature = NATURE_MODEST,                                                          \
+    EV_SPREAD_SPA_SPE_HP,                                                             \
+    .moves = {MOVE_DARK_PULSE, MOVE_FLAMETHROWER, MOVE_SLUDGE_BOMB, MOVE_NASTY_PLOT}, \
+    .gender = TRAINER_MON_MALE,                                                       \
+    }
+
 #define SIDNEY_OBSTAGOON
 #define SIDNEY_SABLEYE
-#define SIDNEY_LIEPARD //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1738
+
+#define SIDNEY_LIEPARD(Level, Tier)                                                \
+    {                                                                              \
+    ELITE_FOUR_MON(Level, Tier, SIDNEY, ITEM_LIECHI_BERRY),                        \
+    .species = SPECIES_LIEPARD,                                                    \
+    .ability = ABILITY_UNBURDEN,                                                   \
+    .nature = NATURE_JOLLY,                                                        \
+    EV_SPREAD_ATK_SPE_HP,                                                          \
+    .moves = {MOVE_NIGHT_SLASH, MOVE_PSYCHO_CUT, MOVE_SEED_BOMB, MOVE_PLAY_ROUGH}, \
+    .gender = TRAINER_MON_FEMALE,                                                  \
+    }
+
 #define SIDNEY_SCRAFTY
 #define SIDNEY_ZOROARK
 #define SIDNEY_KINGAMBIT
 #define SIDNEY_MANDIBUZZ
 #define SIDNEY_HYDREIGON
-#define SIDNEY_MALAMAR //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1778
+
+#define SIDNEY_MALAMAR(Level, Tier)                                                    \
+    {                                                                                  \
+    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                               \
+    .species = SPECIES_MALAMAR,                                                        \
+    .ability = ABILITY_CONTRARY,                                                       \
+    .nature = NATURE_ADAMANT,                                                          \
+    EV_SPREAD_ATK_SPE_HP,                                                              \
+    .moves = {MOVE_THROAT_CHOP, MOVE_ZEN_HEADBUTT, MOVE_SUPERPOWER, MOVE_TOPSY_TURVY}, \
+    .gender = TRAINER_MON_FEMALE,                                                      \
+    }
+
 #define SIDNEY_THIEVUL
-#define SIDNEY_GRIMMSNARL //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1748
+
+#define SIDNEY_GRIMMSNARL(Level, Tier)                                               \
+    {                                                                                \
+    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                             \
+    .species = SPECIES_GRIMMSNARL,                                                   \
+    .ability = ABILITY_PRANKSTER,                                                    \
+    .nature = NATURE_ADAMANT,                                                        \
+    EV_SPREAD_ATK_SPE_HP,                                                            \
+    .moves = {MOVE_FALSE_SURRENDER, MOVE_PLAY_ROUGH, MOVE_LEECH_LIFE, MOVE_BULK_UP}, \
+    .gender = TRAINER_MON_MALE,                                                      \
+    }
+
 #define SIDNEY_MABOSSTIFF
 
 [DIFFICULTY_NORMAL][TRAINER_SIDNEY] =
@@ -2307,11 +2400,11 @@ JUAN_REMATCH(5),
     SIDNEY_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        SIDNEY_MIGHTYENA(60),
-        SIDNEY_SHIFTRY(60),
-        SIDNEY_CRAWDAUNT(61),
-        SIDNEY_CACTURNE(61),
-        SIDNEY_ABSOL(62),
+        SIDNEY_MIGHTYENA(60, TIER3),
+        SIDNEY_SHIFTRY(60, TIER3),
+        SIDNEY_CRAWDAUNT(61, TIER3),
+        SIDNEY_CACTURNE(61, TIER3),
+        SIDNEY_ABSOL(62, ACE),
     },
 },
 
@@ -2320,12 +2413,12 @@ JUAN_REMATCH(5),
     SIDNEY_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        SIDNEY_SHARPEDO(86),
-        SIDNEY_MIGHTYENA(86),
-        SIDNEY_SHIFTRY(86),
-        SIDNEY_CRAWDAUNT(88),
-        SIDNEY_CACTURNE(88),
-        SIDNEY_ABSOL(90),
+        SIDNEY_SHARPEDO(86, TIER3),
+        SIDNEY_MIGHTYENA(86, TIER3),
+        SIDNEY_SHIFTRY(86, TIER3),
+        SIDNEY_CRAWDAUNT(88, TIER3),
+        SIDNEY_CACTURNE(88, TIER3),
+        SIDNEY_ABSOL(90, ACE),
     },
 },
 
@@ -2334,28 +2427,20 @@ JUAN_REMATCH(5),
     .trainerName = _("Phoebe"),     \
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
 
-#define PHOEBE_DUSKNOIR(Level)                                                      \
+#define PHOEBE_DUSKNOIR(Level, Tier)                                                \
     {                                                                               \
-    .lvl = Level,                                                                   \
+    ELITE_FOUR_MON(Level, Tier, PHOEBE, ITEM_SITRUS_BERRY),                         \
     .species = SPECIES_DUSKNOIR,                                                    \
     .ability = ABILITY_IRON_FIST,                                                   \
     .nature = NATURE_ADAMANT,                                                       \
     EV_SPREAD_ATK_SPD_HP,                                                           \
-    PERFECT_IVS,                                                                    \
     .moves = {MOVE_SHADOW_PUNCH, MOVE_EARTHQUAKE, MOVE_FIRE_PUNCH, MOVE_ICE_PUNCH}, \
     .gender = TRAINER_MON_FEMALE,                                                   \
-    .heldItem = ITEM_SITRUS_BERRY,                                                  \
-    .ball = ITEM_POKE_BALL,                                                         \
     }
 
-#define PHOEBE_SUPPORTING_MON(Level) \
-    .lvl = Level,                    \
-    PERFECT_IVS,                     \
-    .ball = ITEM_DUSK_BALL
-
-#define PHOEBE_BANETTE(Level)                                                          \
+#define PHOEBE_BANETTE(Level, Tier)                                                    \
     {                                                                                  \
-    PHOEBE_SUPPORTING_MON(Level),                                                      \
+    ELITE_FOUR_MON(Level, Tier, PHOEBE),                                               \
     .species = SPECIES_BANETTE,                                                        \
     .ability = ABILITY_CURSED_BODY,                                                    \
     .nature = NATURE_ADAMANT,                                                          \
@@ -2364,9 +2449,9 @@ JUAN_REMATCH(5),
     .gender = TRAINER_MON_FEMALE,                                                      \
     }
 
-#define PHOEBE_SABLEYE(Level)                                                     \
+#define PHOEBE_SABLEYE(Level, Tier)                                               \
     {                                                                             \
-    PHOEBE_SUPPORTING_MON(Level),                                                 \
+    ELITE_FOUR_MON(Level, Tier, PHOEBE),                                          \
     .species = SPECIES_SABLEYE,                                                   \
     .ability = ABILITY_PRANKSTER,                                                 \
     .nature = NATURE_IMPISH,                                                      \
@@ -2375,19 +2460,20 @@ JUAN_REMATCH(5),
     .gender = TRAINER_MON_FEMALE,                                                 \
     }
 
-#define PHOEBE_SHEDINJA(Level)                                                 \
+#define PHOEBE_SHEDINJA(Level, Tier)                                           \
     {                                                                          \
-    PHOEBE_SUPPORTING_MON(Level),                                              \
+    ELITE_FOUR_MON(Level, Tier, PHOEBE),                                       \
     .species = SPECIES_SHEDINJA,                                               \
     .ability = ABILITY_WONDER_GUARD,                                           \
     .nature = NATURE_ADAMANT,                                                  \
     EV_SPREAD_ATK_SPE_HP,                                                      \
     .moves = {MOVE_SHADOW_CLAW, MOVE_LEECH_LIFE, MOVE_HEAL_BLOCK, MOVE_SPITE}, \
+    .gender = TRAINER_MON_NONE,                                                \
     }
 
-#define PHOEBE_DUSCLOPS(Level)                                                 \
+#define PHOEBE_DUSCLOPS(Level, Tier)                                           \
     {                                                                          \
-    PHOEBE_SUPPORTING_MON(Level),                                              \
+    ELITE_FOUR_MON(Level, Tier, PHOEBE),                                       \
     .species = SPECIES_DUSCLOPS,                                               \
     .ability = ABILITY_PRESSURE,                                               \
     .nature = NATURE_CALM,                                                     \
@@ -2396,9 +2482,9 @@ JUAN_REMATCH(5),
     .gender = TRAINER_MON_MALE,                                                \
     }
 
-#define PHOEBE_CURSOLA(Level)                                                   \
+#define PHOEBE_CURSOLA(Level, Tier)                                             \
     {                                                                           \
-    PHOEBE_SUPPORTING_MON(Level),                                               \
+    ELITE_FOUR_MON(Level, Tier, PHOEBE),                                        \
     .species = SPECIES_CURSOLA,                                                 \
     .ability = ABILITY_PERISH_BODY,                                             \
     .nature = NATURE_MODEST,                                                    \
@@ -2408,16 +2494,80 @@ JUAN_REMATCH(5),
     }
 
 //Extra for hacks
-#define PHOEBE_GENGAR //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1859 (Cats' specifies Cursed Body as the Ability and swaps the order of Giga Drain/Dazzling Gleam)
-#define PHOEBE_MISMAGIUS //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1878
+#define PHOEBE_GENGAR(Level, Tier)                                                      \
+    {                                                                                   \
+    ELITE_FOUR_MON(Level, Tier, PHOEBE),                                                \
+    .species = SPECIES_GENGAR,                                                          \
+    .ability = ABILITY_CURSED_BODY,                                                     \
+    .nature = NATURE_MODEST,                                                            \
+    EV_SPREAD_SPA_SPE_HP,                                                               \
+    .moves = {MOVE_SHADOW_BALL, MOVE_GIGA_DRAIN, MOVE_DAZZLING_GLEAM, MOVE_NASTY_PLOT}, \
+    .gender = TRAINER_MON_FEMALE,                                                       \
+    }
+
+#define PHOEBE_MISMAGIUS(Level, Tier)                                                  \
+    {                                                                                  \
+    ELITE_FOUR_MON(Level, Tier, PHOEBE),                                               \
+    .species = SPECIES_MISMAGIUS,                                                      \
+    .nature = NATURE_MODEST,                                                           \
+    EV_SPREAD_SPA_SPE_SPD,                                                             \
+    .moves = {MOVE_SHADOW_BALL, MOVE_POWER_GEM, MOVE_MYSTICAL_FIRE, MOVE_PERISH_SONG}, \
+    .gender = TRAINER_MON_FEMALE,                                                      \
+    }
+
 #define PHOEBE_DRIFBLIM
-#define PHOEBE_SPIRITOMB //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1887
+
+#define PHOEBE_SPIRITOMB(Level, Tier)                                          \
+    {                                                                          \
+    ELITE_FOUR_MON(Level, Tier, PHOEBE),                                       \
+    .species = SPECIES_SPIRITOMB,                                              \
+    .ability = ABILITY_PRESSURE,                                               \
+    .nature = NATURE_CALM,                                                     \
+    EV_SPREAD_SPD_DEF_HP,                                                      \
+    .moves = {MOVE_SHADOW_BALL, MOVE_FOUL_PLAY, MOVE_CURSE, MOVE_CONFUSE_RAY}, \
+    .gender = TRAINER_MON_FEMALE,                                              \
+    }
+
 #define PHOEBE_COFAGRIGUS
-#define PHOEBE_CHANDELURE //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1868 (Cats' replaces Flame Body with Infiltrator)
+
+//Can replace Infiltrator with Flame Body
+#define PHOEBE_CHANDELURE(Level, Tier)                                                \
+    {                                                                                 \
+    ELITE_FOUR_MON(Level, Tier, PHOEBE),                                              \
+    .species = SPECIES_CHANDELURE,                                                    \
+    .ability = ABILITY_INFILTRATOR,                                                   \
+    .nature = NATURE_MODEST,                                                          \
+    EV_SPREAD_SPA_SPE_HP,                                                             \
+    .moves = {MOVE_SHADOW_BALL, MOVE_FLAMETHROWER, MOVE_ENERGY_BALL, MOVE_CALM_MIND}, \
+    .gender = TRAINER_MON_FEMALE,                                                     \
+    }
+
 #define PHOEBE_TREVENANT
-#define PHOEBE_GOURGEIST //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1840
+
+#define PHOEBE_GOURGEIST(Level, Tier)                                               \
+    {                                                                               \
+    ELITE_FOUR_MON(Level, Tier, PHOEBE, ITEM_SITRUS_BERRY),                         \
+    .species = SPECIES_GOURGEIST,                                                   \
+    .ability = ABILITY_INSOMNIA,                                                    \
+    .nature = NATURE_IMPISH,                                                        \
+    EV_SPREAD_ATK_DEF_HP,                                                           \
+    .moves = {MOVE_SHADOW_CLAW, MOVE_SEED_BOMB, MOVE_BODY_PRESS, MOVE_WILL_O_WISP}, \
+    .gender = TRAINER_MON_FEMALE,                                                   \
+    }
+
 #define PHOEBE_ORICORIO
-#define PHOEBE_PALOSSAND //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1900
+
+#define PHOEBE_PALOSSAND(Level, Tier)                                              \
+    {                                                                              \
+    ELITE_FOUR_MON(Level, Tier, PHOEBE),                                           \
+    .species = SPECIES_PALOSSAND,                                                  \
+    .ability = ABILITY_WATER_COMPACTION,                                           \
+    .nature = NATURE_BOLD,                                                         \
+    EV_SPREAD_SPA_DEF_HP,                                                          \
+    .moves = {MOVE_SHADOW_BALL, MOVE_EARTH_POWER, MOVE_GIGA_DRAIN, MOVE_SHORE_UP}, \
+    .gender = TRAINER_MON_FEMALE,                                                  \
+    }
+
 #define PHOEBE_MIMIKYU
 #define PHOEBE_DHELMISE
 #define PHOEBE_POLTEAGEIST
@@ -2428,11 +2578,11 @@ JUAN_REMATCH(5),
     PHOEBE_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        PHOEBE_DUSCLOPS(61),
-        PHOEBE_SHEDINJA(61),
-        PHOEBE_SABLEYE(62),
-        PHOEBE_BANETTE(62),
-        PHOEBE_DUSKNOIR(63),
+        PHOEBE_DUSCLOPS(61, TIER3),
+        PHOEBE_SHEDINJA(61, TIER3),
+        PHOEBE_SABLEYE(62, TIER3),
+        PHOEBE_BANETTE(62, TIER3),
+        PHOEBE_DUSKNOIR(63, ACE),
     },
 },
 
@@ -2441,12 +2591,12 @@ JUAN_REMATCH(5),
     PHOEBE_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        PHOEBE_DUSCLOPS(86),
-        PHOEBE_CURSOLA(86),
-        PHOEBE_SHEDINJA(86),
-        PHOEBE_SABLEYE(88),
-        PHOEBE_BANETTE(88),
-        PHOEBE_DUSKNOIR(90),
+        PHOEBE_DUSCLOPS(86, TIER3),
+        PHOEBE_CURSOLA(86, TIER3),
+        PHOEBE_SHEDINJA(86, TIER3),
+        PHOEBE_SABLEYE(88, TIER3),
+        PHOEBE_BANETTE(88, TIER3),
+        PHOEBE_DUSKNOIR(90, ACE),
     },
 },
 
@@ -2455,28 +2605,20 @@ JUAN_REMATCH(5),
     .trainerName = _("Glacia"),   \
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
 
-#define GLACIA_WALREIN(Level)                                              \
+#define GLACIA_WALREIN(Level, Tier)                                        \
     {                                                                      \
-    .lvl = Level,                                                          \
+    ELITE_FOUR_MON(Level, Tier, GLACIA, ITEM_SITRUS_BERRY),                \
     .species = SPECIES_WALREIN,                                            \
     .ability = ABILITY_THICK_FAT,                                          \
     .nature = NATURE_MODEST,                                               \
     EV_SPREAD_SPA_HP_SPE,                                                  \
-    PERFECT_IVS,                                                           \
     .moves = {MOVE_BLIZZARD, MOVE_SURF, MOVE_SIGNAL_BEAM, MOVE_SNOWSCAPE}, \
     .gender = TRAINER_MON_FEMALE,                                          \
-    .heldItem = ITEM_SITRUS_BERRY,                                         \
-    .ball = ITEM_POKE_BALL,                                                \
     }
 
-#define GLACIA_SUPPORTING_MON(Level) \
-    .lvl = Level,                    \
-    PERFECT_IVS,                     \
-    .ball = ITEM_PREMIER_BALL
-
-#define GLACIA_FROSLASS(Level)                                                      \
+#define GLACIA_FROSLASS(Level, Tier)                                                \
     {                                                                               \
-    GLACIA_SUPPORTING_MON(Level),                                                   \
+    ELITE_FOUR_MON(Level, Tier, GLACIA),                                            \
     .species = SPECIES_FROSLASS,                                                    \
     .ability = ABILITY_SNOW_CLOAK,                                                  \
     .nature = NATURE_TIMID,                                                         \
@@ -2485,9 +2627,9 @@ JUAN_REMATCH(5),
     .gender = TRAINER_MON_FEMALE,                                                   \
     }
 
-#define GLACIA_GLALIE(Level)                                                        \
+#define GLACIA_GLALIE(Level, Tier)                                                  \
     {                                                                               \
-    GLACIA_SUPPORTING_MON(Level),                                                   \
+    ELITE_FOUR_MON(Level, Tier, GLACIA),                                            \
     .species = SPECIES_GLALIE,                                                      \
     .ability = ABILITY_ICE_BODY,                                                    \
     .nature = NATURE_MODEST,                                                        \
@@ -2496,9 +2638,9 @@ JUAN_REMATCH(5),
     .gender = TRAINER_MON_MALE,                                                     \
     }
 
-#define GLACIA_CASTFORM(Level)                                                    \
+#define GLACIA_CASTFORM(Level, Tier)                                              \
     {                                                                             \
-    GLACIA_SUPPORTING_MON(Level),                                                 \
+    ELITE_FOUR_MON(Level, Tier, GLACIA),                                          \
     .species = SPECIES_CASTFORM,                                                  \
     .ability = ABILITY_FORECAST,                                                  \
     .nature = NATURE_MODEST,                                                      \
@@ -2507,9 +2649,9 @@ JUAN_REMATCH(5),
     .gender = TRAINER_MON_FEMALE,                                                 \
     }
 
-#define GLACIA_SEALEO(Level)                                                   \
+#define GLACIA_SEALEO(Level, Tier)                                             \
     {                                                                          \
-    GLACIA_SUPPORTING_MON(Level),                                              \
+    ELITE_FOUR_MON(Level, Tier, GLACIA),                                       \
     .species = SPECIES_SEALEO,                                                 \
     .ability = ABILITY_ICE_BODY,                                               \
     .nature = NATURE_ADAMANT,                                                  \
@@ -2518,16 +2660,15 @@ JUAN_REMATCH(5),
     .gender = TRAINER_MON_MALE,                                                \
     }
 
-#define GLACIA_NINETALES(Level)                                                  \
+#define GLACIA_NINETALES(Level, Tier)                                            \
     {                                                                            \
-    GLACIA_SUPPORTING_MON(Level),                                                \
+    ELITE_FOUR_MON(Level, Tier, GLACIA, ITEM_ICY_ROCK),                          \
     .species = SPECIES_NINETALES_ALOLA,                                          \
     .ability = ABILITY_SNOW_WARNING,                                             \
     .nature = NATURE_TIMID,                                                      \
     EV_SPREAD_SPE_SPD_HP,                                                        \
     .moves = {MOVE_BLIZZARD, MOVE_MOONBLAST, MOVE_AURORA_VEIL, MOVE_NASTY_PLOT}, \
     .gender = TRAINER_MON_FEMALE,                                                \
-    .heldItem = ITEM_ICY_ROCK,                                                   \
     }
 
 //Extra for hacks
@@ -2535,15 +2676,57 @@ JUAN_REMATCH(5),
 #define GLACIA_MR_RIME
 #define GLACIA_JYNX
 #define GLACIA_GLACEON
-#define GLACIA_MAMOSWINE //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1970 (Cats' replaces Thick Fat/Trailblaze with Snow Cloak/Ice Shard)
+
+//Can replace Thick Fat/Trailblaze with Snow Cloak/Ice Shard
+#define GLACIA_MAMOSWINE(Level, Tier)                                               \
+    {                                                                               \
+    ELITE_FOUR_MON(Level, Tier, GLACIA),                                            \
+    .species = SPECIES_MAMOSWINE,                                                   \
+    .ability = ABILITY_THICK_FAT,                                                   \
+    .nature = NATURE_ADAMANT,                                                       \
+    EV_SPREAD_ATK_SPE_HP,                                                           \
+    .moves = {MOVE_ICICLE_CRASH, MOVE_EARTHQUAKE, MOVE_TRAILBLAZE, MOVE_SNOWSCAPE}, \
+    .gender = TRAINER_MON_FEMALE,                                                   \
+    }
+
 #define GLACIA_DELIBIRD
 #define GLACIA_DARMANITAN
-#define GLACIA_VANILLUXE //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1650
-#define GLACIA_BEARTIC //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1660
+
+#define GLACIA_VANILLUXE(Level, Tier)                                                \
+    {                                                                                \
+    ELITE_FOUR_MON(Level, Tier, GLACIA),                                             \
+    .ability = ABILITY_SNOW_WARNING,                                                 \
+    .nature = NATURE_MODEST,                                                         \
+    EV_SPREAD_SPA_SPE_HP,                                                            \
+    .moves = {MOVE_BLIZZARD, MOVE_FLASH_CANNON, MOVE_HYPER_VOICE, MOVE_SIGNAL_BEAM}, \
+    .gender = TRAINER_MON_FEMALE,                                                    \
+    }
+
+#define GLACIA_BEARTIC(Level, Tier)                                               \
+    {                                                                             \
+    ELITE_FOUR_MON(Level, Tier, GLACIA),                                          \
+    .ability = ABILITY_SNOW_CLOAK,                                                \
+    .nature = NATURE_ADAMANT,                                                     \
+    EV_SPREAD_ATK_SPE_HP,                                                         \
+    .moves = {MOVE_ICICLE_CRASH, MOVE_PLAY_ROUGH, MOVE_AQUA_JET, MOVE_SNOWSCAPE}, \
+    .gender = TRAINER_MON_FEMALE,                                                 \
+    }
+
 #define GLACIA_CRYOGONAL
 #define GLACIA_AVALUGG
 #define GLACIA_AVALUGG_HISUI
-#define GLACIA_FROSMOTH //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1981
+
+#define GLACIA_FROSMOTH(Level, Tier)                                             \
+    {                                                                            \
+    ELITE_FOUR_MON(Level, Tier, GLACIA),                                         \
+    .species = SPECIES_FROSMOTH,                                                 \
+    .ability = ABILITY_ICE_SCALES,                                               \
+    .nature = NATURE_MODEST,                                                     \
+    EV_SPREAD_SPA_SPD_SPE,                                                       \
+    .moves = {MOVE_ICE_BEAM, MOVE_BUG_BUZZ, MOVE_GIGA_DRAIN, MOVE_QUIVER_DANCE}, \
+    .gender = TRAINER_MON_FEMALE,                                                \
+    }
+
 #define GLACIA_EISCUE
 #define GLACIA_CETITAN
 
@@ -2552,11 +2735,11 @@ JUAN_REMATCH(5),
     GLACIA_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        GLACIA_SEALEO(62),
-        GLACIA_CASTFORM(62),
-        GLACIA_GLALIE(63),
-        GLACIA_FROSLASS(63),
-        GLACIA_WALREIN(64),
+        GLACIA_SEALEO(62, TIER3),
+        GLACIA_CASTFORM(62, TIER3),
+        GLACIA_GLALIE(63, TIER3),
+        GLACIA_FROSLASS(63, TIER3),
+        GLACIA_WALREIN(64, ACE),
     },
 },
 
@@ -2565,12 +2748,12 @@ JUAN_REMATCH(5),
     GLACIA_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        GLACIA_SEALEO(86),
-        GLACIA_NINETALES(86),
-        GLACIA_CASTFORM(86),
-        GLACIA_GLALIE(88),
-        GLACIA_FROSLASS(88),
-        GLACIA_WALREIN(90),
+        GLACIA_SEALEO(86, TIER3),
+        GLACIA_NINETALES(86, TIER2),
+        GLACIA_CASTFORM(86, TIER3),
+        GLACIA_GLALIE(88, TIER3),
+        GLACIA_FROSLASS(88, TIER3),
+        GLACIA_WALREIN(90, ACE),
     },
 },
 
@@ -2579,28 +2762,20 @@ JUAN_REMATCH(5),
     .trainerName = _("Drake"),      \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
 
-#define DRAKE_SALAMENCE(Level)                                                           \
+#define DRAKE_SALAMENCE(Level, Tier)                                                     \
     {                                                                                    \
-    .lvl = Level,                                                                        \
+    ELITE_FOUR_MON(Level, Tier, DRAKE, ITEM_SALAMENCITE),                                \
     .species = SPECIES_SALAMENCE,                                                        \
     .ability = ABILITY_INTIMIDATE,                                                       \
     .nature = NATURE_ADAMANT,                                                            \
     EV_SPREAD_ATK_SPE_HP,                                                                \
-    PERFECT_IVS,                                                                         \
     .moves = {MOVE_DRAGON_CLAW, MOVE_DUAL_WINGBEAT, MOVE_ROCK_SLIDE, MOVE_DRAGON_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                          \
-    .heldItem = ITEM_SALAMENCITE,                                                        \
-    .ball = ITEM_POKE_BALL,                                                              \
     }
 
-#define DRAKE_SUPPORTING_MON(Level) \
-    .lvl = Level,                   \
-    PERFECT_IVS,                    \
-    .ball = ITEM_HEAVY_BALL
-
-#define DRAKE_FLYGON(Level)                                                           \
+#define DRAKE_FLYGON(Level, Tier)                                                     \
     {                                                                                 \
-    DRAKE_SUPPORTING_MON(Level),                                                      \
+    ELITE_FOUR_MON(Level, Tier, DRAKE),                                               \
     .species = SPECIES_FLYGON,                                                        \
     .ability = ABILITY_LEVITATE,                                                      \
     .nature = NATURE_ADAMANT,                                                         \
@@ -2609,9 +2784,9 @@ JUAN_REMATCH(5),
     .gender = TRAINER_MON_MALE,                                                       \
     }
 
-#define DRAKE_ALTARIA(Level)                                                         \
+#define DRAKE_ALTARIA(Level, Tier)                                                   \
     {                                                                                \
-    DRAKE_SUPPORTING_MON(Level),                                                     \
+    ELITE_FOUR_MON(Level, Tier, DRAKE),                                              \
     .species = SPECIES_ALTARIA,                                                      \
     .ability = ABILITY_FLUFFY,                                                       \
     .nature = NATURE_MODEST,                                                         \
@@ -2620,9 +2795,9 @@ JUAN_REMATCH(5),
     .gender = TRAINER_MON_MALE,                                                      \
     }
 
-#define DRAKE_KINGDRA(Level)                                              \
+#define DRAKE_KINGDRA(Level, Tier)                                        \
     {                                                                     \
-    DRAKE_SUPPORTING_MON(Level),                                          \
+    ELITE_FOUR_MON(Level, Tier, DRAKE),                                   \
     .species = SPECIES_KINGDRA,                                           \
     .ability = ABILITY_SNIPER,                                            \
     .nature = NATURE_MODEST,                                              \
@@ -2631,9 +2806,9 @@ JUAN_REMATCH(5),
     .gender = TRAINER_MON_MALE,                                           \
     }
 
-#define DRAKE_SHELGON(Level)                                                        \
+#define DRAKE_SHELGON(Level, Tier)                                                  \
     {                                                                               \
-    DRAKE_SUPPORTING_MON(Level),                                                    \
+    ELITE_FOUR_MON(Level, Tier, DRAKE),                                             \
     .species = SPECIES_SHELGON,                                                     \
     .ability = ABILITY_ROCK_HEAD,                                                   \
     .nature = NATURE_IMPISH,                                                        \
@@ -2642,9 +2817,9 @@ JUAN_REMATCH(5),
     .gender = TRAINER_MON_FEMALE,                                                   \
     }
 
-#define DRAKE_DRAGALGE(Level)                                                            \
+#define DRAKE_DRAGALGE(Level, Tier)                                                      \
     {                                                                                    \
-    DRAKE_SUPPORTING_MON(Level),                                                         \
+    ELITE_FOUR_MON(Level, Tier, DRAKE),                                                  \
     .species = SPECIES_DRAGALGE,                                                         \
     .ability = ABILITY_ADAPTABILITY,                                                     \
     .nature = NATURE_CALM,                                                               \
@@ -2655,14 +2830,80 @@ JUAN_REMATCH(5),
 
 //Extra for hacks
 #define DRAKE_DRAGONITE
-#define DRAKE_GARCHOMP //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L2048
-#define DRAKE_HAXORUS //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L2055 and https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L2078
-#define DRAKE_DRUDDIGON //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L2085 and https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L2098
-#define DRAKE_GOODRA //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L2035
-#define DRAKE_DRAMPA //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L2075 and https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L2048
+
+#define DRAKE_GARCHOMP(Level, Tier)                                                  \
+    {                                                                                \
+    ELITE_FOUR_MON(Level, Tier, DRAKE, ITEM_GARCHOMPITE),                            \
+    .species = SPECIES_GARCHOMP,                                                     \
+    .ability = ABILITY_ROUGH_SKIN,                                                   \
+    .nature = NATURE_ADAMANT,                                                        \
+    EV_SPREAD_ATK_SPE_HP,                                                            \
+    .moves = {MOVE_DRAGON_CLAW, MOVE_EARTHQUAKE, MOVE_IRON_HEAD, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                      \
+    }
+
+//Can replace Earthquake/Dragon Dance with Crunch/Swords Dance
+#define DRAKE_HAXORUS(Level, Tier)                                                   \
+    {                                                                                \
+    ELITE_FOUR_MON(Level, Tier, DRAKE),                                              \
+    .species = SPECIES_HAXORUS,                                                      \
+    .ability = ABILITY_MOLD_BREAKER,                                                 \
+    .nature = NATURE_ADAMANT,                                                        \
+    EV_SPREAD_ATK_SPE_HP,                                                            \
+    .moves = {MOVE_DRAGON_CLAW, MOVE_IRON_HEAD, MOVE_EARTHQUAKE, MOVE_DRAGON_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                      \
+    }
+
+//Can replace Sheer Force/Crunch/Fire Punch with Rock Head/Head Smash/Hone Claws
+#define DRAKE_DRUDDIGON(Level, Tier)                                           \
+    {                                                                          \
+    ELITE_FOUR_MON(Level, Tier, DRAKE),                                        \
+    .species = SPECIES_DRUDDIGON,                                              \
+    .ability = ABILITY_SHEER_FORCE,                                            \
+    .nature = NATURE_ADAMANT,                                                  \
+    EV_SPREAD_ATK_SPE_HP,                                                      \
+    .moves = {MOVE_DRAGON_CLAW, MOVE_IRON_HEAD, MOVE_CRUNCH, MOVE_FIRE_PUNCH}, \
+    .gender = TRAINER_MON_MALE,                                                \
+    }
+
+#define DRAKE_GOODRA(Level, Tier)                                                 \
+    {                                                                             \
+    ELITE_FOUR_MON(Level, Tier, DRAKE, ITEM_ASSAULT_VEST),                        \
+    .species = SPECIES_GOODRA,                                                    \
+    .ability = ABILITY_GOOEY,                                                     \
+    .nature = NATURE_CALM,                                                        \
+    EV_SPREAD_SPA_SPD_HP,                                                         \
+    .moves = {MOVE_DRAGON_PULSE, MOVE_SLUDGE_BOMB, MOVE_SURF, MOVE_FLAMETHROWER}, \
+    .gender = TRAINER_MON_MALE,                                                   \
+    }
+
+//Can replace Sap Sipper/Hyper Voice with Berserk/Calm Mind
+#define DRAKE_DRAMPA(Level, Tier)                                                        \
+    {                                                                                    \
+    ELITE_FOUR_MON(Level, Tier, DRAKE),                                                  \
+    .species = SPECIES_DRAMPA,                                                           \
+    .ability = ABILITY_SAP_SIPPER,                                                       \
+    .nature = NATURE_MODEST,                                                             \
+    EV_SPREAD_SPA_SPE_HP,                                                                \
+    .moves = {MOVE_DRAGON_PULSE, MOVE_HYPER_VOICE, MOVE_ENERGY_BALL, MOVE_FLAMETHROWER}, \
+    .gender = TRAINER_MON_MALE,                                                          \
+    }
+
 #define DRAKE_KOMMO_O
 #define DRAKE_DRAGAPULT
-#define DRAKE_CYCLIZAR //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L2095 (Cats' replaces U-turn with Body Slam)
+
+//Can replace U-turn with Body Slam
+#define DRAKE_CYCLIZAR(Level, Tier)                                            \
+    {                                                                          \
+    ELITE_FOUR_MON(Level, Tier, DRAKE),                                        \
+    .species = SPECIES_CYCLIZAR,                                               \
+    .ability = ABILITY_REGENERATOR,                                            \
+    .nature = NATURE_JOLLY,                                                    \
+    EV_SPREAD_ATK_SPE_HP,                                                      \
+    .moves = {MOVE_DRAGON_CLAW, MOVE_U_TURN, MOVE_SHIFT_GEAR, MOVE_SHED_TAIL}, \
+    .gender = TRAINER_MON_MALE,                                                \
+    }
+
 #define DRAKE_TATSUGIRI
 #define DRAKE_BAXCALIBUR
 
@@ -2671,11 +2912,11 @@ JUAN_REMATCH(5),
     DRAKE_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        DRAKE_SHELGON(63),
-        DRAKE_KINGDRA(63),
-        DRAKE_ALTARIA(64),
-        DRAKE_FLYGON(64),
-        DRAKE_SALAMENCE(66),
+        DRAKE_SHELGON(63, TIER3),
+        DRAKE_KINGDRA(63, TIER3),
+        DRAKE_ALTARIA(64, TIER3),
+        DRAKE_FLYGON(64, TIER3),
+        DRAKE_SALAMENCE(66, ACE),
     },
 },
 
@@ -2684,12 +2925,12 @@ JUAN_REMATCH(5),
     DRAKE_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        DRAKE_SHELGON(86),
-        DRAKE_DRAGALGE(86),
-        DRAKE_KINGDRA(86),
-        DRAKE_ALTARIA(88),
-        DRAKE_FLYGON(88),
-        DRAKE_SALAMENCE(90),
+        DRAKE_SHELGON(86, TIER3),
+        DRAKE_DRAGALGE(86, TIER3),
+        DRAKE_KINGDRA(86, TIER3),
+        DRAKE_ALTARIA(88, TIER3),
+        DRAKE_FLYGON(88, TIER3),
+        DRAKE_SALAMENCE(90, ACE),
     },
 },
 

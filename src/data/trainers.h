@@ -10318,7 +10318,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_SHROOMISH,
+        .species = SPECIES_STEENEE,
         }
     },
 },
@@ -10541,7 +10541,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_MARILL,
+        .species = SPECIES_MEOWTH,
         }
     },
 },
@@ -10556,7 +10556,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 29,
-        .species = SPECIES_SANDSHREW,
+        .species = SPECIES_SANDILE,
         },
         {
         .lvl = 29,
@@ -10582,7 +10582,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
         },
         {
         .lvl = 28,
-        .species = SPECIES_BALTOY,
+        .species = SPECIES_TRAPINCH,
         }
     },
 },
@@ -10596,7 +10596,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 30,
-        .species = SPECIES_TRAPINCH,
+        .species = SPECIES_DWEBBLE,
         }
     },
 },
@@ -10614,7 +10614,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
         },
         {
         .lvl = 29,
-        .species = SPECIES_MARILL,
+        .species = SPECIES_PANPOUR,
         }
     },
 },
@@ -10760,7 +10760,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_TAILLOW,
+        .species = SPECIES_INDEEDEE_M,
         },
         {
         .lvl = 28,
@@ -10797,7 +10797,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 29,
-        .species = SPECIES_SKITTY,
+        .species = SPECIES_MEOWTH_GALAR,
         },
         {
         .lvl = 29,
@@ -10815,7 +10815,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_RHYHORN,
+        .species = SPECIES_NACLSTACK,
         },
         {
         .lvl = 28,
@@ -10823,7 +10823,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
         },
         {
         .lvl = 28,
-        .species = SPECIES_GRAVELER,
+        .species = SPECIES_BOLDORE,
         }
     },
 },

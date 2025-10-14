@@ -103,8 +103,8 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_NONE            @ 0227 Skarmory (move to regular shop when implemented)
 	.2byte ITEM_TYRANITARITE    @ 0248
 	.2byte ITEM_NONE            @ 0362 Froslass (move to regular shop when implemented)
-	.2byte ITEM_LATIASITE		@ 0380 Battle Frontier
-	.2byte ITEM_LATIOSITE		@ 0381 Battle Frontier
+	.2byte ITEM_LATIASITE       @ 0380 Battle Frontier
+	.2byte ITEM_LATIOSITE       @ 0381 Battle Frontier
 	.2byte ITEM_LOPUNNITE       @ 0428
 	.2byte ITEM_GARCHOMPITE     @ 0445
 	.2byte ITEM_LUCARIONITE     @ 0448

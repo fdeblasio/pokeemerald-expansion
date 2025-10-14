@@ -285,6 +285,8 @@ upcoming
     - Route 128: Where Steven flies to?
 
 ### Overworld
+- Add caves and more areas to Safari Zone for more postgame mons
+    - Make them themed like ice and fire. Maybe can add legendaries
 - See what makes the 119 house Pokemon move and apply it other places
 - Fly from Lilycove Department Store roof?
 - Let the player leave the first E4 hallway
@@ -299,7 +301,6 @@ upcoming
 - Combine Centers and Marts?
     - Use left wall where escalators used to be
     - Tileset doesn't seem to support it
-- Non-grass soot tiles should add to soot sack
 - Followers with weather abilities (or Cloud Nine/Air Lock) will change the overworld weather when following?
     - Cloud Nine could do cloudy instead of clear
 - Give Underwater the same type-effectiveness as rain?

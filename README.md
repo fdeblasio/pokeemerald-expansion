@@ -1353,6 +1353,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Hisuian Voltorb/Hisuian Electrode (postgame):
     - Learn Thunderbolt by level up
 
+- Exeggcute (not in main game):
+    - Evolves in Alolan Exeggutor with a Sun Stone
+
 - Alolan Exeggutor (not in main game):
     - Atk: 105->125
     - SpA: 125->105
@@ -2793,6 +2796,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Whimsicott:
     - Learns Magical Leaf, Disarming Voice, and Dazzling Gleam by level up
     - Learns Earth Power by TM
+
+- Petilil:
+    - Evolves into Hisuian Lilligant with a Leaf Stone
 
 - Lilligant:
     - Learns Earth Power by TM

@@ -1613,34 +1613,34 @@ NORMAN_REMATCH(5),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 40,
-        .species = SPECIES_MASQUERAIN,
-        .ability = ABILITY_INTIMIDATE,
+        .species = SPECIES_CRAMORANT,
+        .ability = ABILITY_GULP_MISSILE,
         IVS(25),
-        .moves = {MOVE_AERIAL_ACE, MOVE_SILVER_WIND, MOVE_SCARY_FACE, MOVE_STUN_SPORE},
+        .moves = {MOVE_AERIAL_ACE, MOVE_SURF, MOVE_STOCKPILE, MOVE_SWALLOW},
         .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 40,
-        .species = SPECIES_TROPIUS,
-        .ability = ABILITY_CHLOROPHYLL,
-        IVS(25),
-        .moves = {MOVE_AERIAL_ACE, MOVE_LEAF_TORNADO, MOVE_STOMP, MOVE_SWEET_SCENT},
-        .gender = TRAINER_MON_FEMALE,
-        },
-        {
-        .lvl = 41,
-        .species = SPECIES_PELIPPER,
-        .ability = ABILITY_DRIZZLE,
-        IVS(25),
-        .moves = {MOVE_AERIAL_ACE, MOVE_WATER_PULSE, MOVE_SUPERSONIC, MOVE_TAILWIND},
-        .gender = TRAINER_MON_FEMALE,
-        },
-        {
-        .lvl = 41,
-        .species = SPECIES_SWELLOW,
+        .species = SPECIES_FLAMIGO,
         .ability = ABILITY_SCRAPPY,
+        IVS(25),
+        .moves = {MOVE_AERIAL_ACE, MOVE_BRICK_BREAK, MOVE_FOCUS_ENERGY, MOVE_ROOST},
+        .gender = TRAINER_MON_FEMALE,
+        },
+        {
+        .lvl = 41,
+        .species = SPECIES_BOMBIRDIER,
+        .ability = ABILITY_BIG_PECKS,
+        IVS(25),
+        .moves = {MOVE_AERIAL_ACE, MOVE_FEINT_ATTACK, MOVE_ROCK_TOMB, MOVE_HONE_CLAWS},
+        .gender = TRAINER_MON_FEMALE,
+        },
+        {
+        .lvl = 41,
+        .species = SPECIES_DODRIO,
+        .ability = ABILITY_EARLY_BIRD,
         IVS(26),
-        .moves = {MOVE_AERIAL_ACE, MOVE_QUICK_ATTACK, MOVE_QUICK_GUARD, MOVE_AGILITY},
+        .moves = {MOVE_AERIAL_ACE, MOVE_BODY_SLAM, MOVE_QUICK_ATTACK, MOVE_SWORDS_DANCE},
         .gender = TRAINER_MON_FEMALE,
         },
         {
@@ -1804,11 +1804,11 @@ NORMAN_REMATCH(5),
     WINONA_INFO,                                \
     LEADER_REMATCH,                             \
     .party = (const struct TrainerMon[]) {      \
-        WINONA_NINJASK(Rematch, TIER3),         \
-        WINONA_MASQUERAIN(Rematch, TIER3),      \
-        WINONA_TROPIUS(Rematch, TIER3),         \
-        WINONA_PELIPPER(Rematch, TIER2),        \
-        WINONA_SWELLOW(Rematch, TIER2),         \
+        WINONA_ROTOM(Rematch, TIER3),           \
+        WINONA_CRAMORANT(Rematch, TIER3),       \
+        WINONA_FLAMIGO(Rematch, TIER3),         \
+        WINONA_BOMBIRDIER(Rematch, TIER2),      \
+        WINONA_DODRIO(Rematch, TIER2),          \
         WINONA_ALTARIA(Rematch, ACE),           \
     },                                          \
 }
@@ -3024,11 +3024,11 @@ JUAN_REMATCH(5),
     DRAKE_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        DRAKE_SHELGON(63, TIER3),
-        DRAKE_KINGDRA(63, TIER3),
-        DRAKE_ALTARIA(64, TIER3),
-        DRAKE_FLYGON(64, TIER3),
-        DRAKE_SALAMENCE(66, ACE),
+        DRAKE_DRUDDIGON(63, TIER3),
+        DRAKE_DRAMPA(63, TIER3),
+        DRAKE_HAXORUS(64, TIER3),
+        DRAKE_GOODRA(64, TIER3),
+        DRAKE_GARCHOMP(66, ACE),
     },
 },
 
@@ -3037,12 +3037,12 @@ JUAN_REMATCH(5),
     DRAKE_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        DRAKE_SHELGON(86, TIER3),
-        DRAKE_DRAGALGE(86, TIER3),
-        DRAKE_KINGDRA(86, TIER3),
-        DRAKE_ALTARIA(88, TIER3),
-        DRAKE_FLYGON(88, TIER3),
-        DRAKE_SALAMENCE(90, ACE),
+        DRAKE_CYCLIZAR(86, TIER3),
+        DRAKE_DRUDDIGON(86, TIER3),
+        DRAKE_DRAMPA(86, TIER3),
+        DRAKE_HAXORUS(88, TIER3),
+        DRAKE_GOODRA(88, TIER3),
+        DRAKE_GARCHOMP(90, ACE),
     },
 },
 

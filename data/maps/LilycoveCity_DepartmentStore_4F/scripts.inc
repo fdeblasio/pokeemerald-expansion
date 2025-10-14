@@ -74,7 +74,6 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStones:
 	pokemartlistend
 
 @ Unused shop that contains Mega Stones for Pokemon not available in Emerald by default
-@ Rumored: Chimecho (Hoenn), Absol Z (Hoenn), Staraptor, Garchomp Z, Lucario Z, Golurk, Meowstic, Crabominable, Golisopod, Magearna, Scovillain, Glimmora, Tatsugiri, Baxcalibur
 	.align 2
 LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_VENUSAURITE     @ 0003
@@ -98,7 +97,7 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_MEWTWONITE_X    @ 0150
 	.2byte ITEM_MEWTWONITE_Y    @ 0150
 	.2byte ITEM_NONE            @ 0154 Meganium (move to Battle Frontier when implemented)
-	.2byte ITEM_NONE            @ 0154 Feraligatr (move to Battle Frontier when implemented)
+	.2byte ITEM_NONE            @ 0160 Feraligatr (move to Battle Frontier when implemented)
 	.2byte ITEM_AMPHAROSITE     @ 0181 Battle Frontier
 	.2byte ITEM_NONE            @ 0227 Skarmory (move to regular shop when implemented)
 	.2byte ITEM_TYRANITARITE    @ 0248
@@ -132,6 +131,11 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_NONE
 	release
 	end
+
+@ Rumored:
+@ Hoenn: Chimecho, Absol Z
+@ Postgame: N/A
+@ National: Staraptor, Garchomp Z, Lucario Z, Golurk, Meowstic, Crabominable, Golisopod, Magearna, Scovillain, Glimmora, Tatsugiri, Baxcalibur
 
 LilycoveCity_DepartmentStore_4F_EventScript_ClerkRight::
 	lock

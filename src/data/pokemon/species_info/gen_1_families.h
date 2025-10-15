@@ -4774,8 +4774,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_CLEFFA] =
     {
         .baseHP        = 50,
-        .baseAttack    = 25,
-        .baseDefense   = 28,
+        .baseAttack    = 30,
+        .baseDefense   = 30,
         .baseSpeed     = 15,
         .baseSpAttack  = 45,
         .baseSpDefense = 55,
@@ -4852,7 +4852,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     {
         .baseHP        = 70,
         .baseAttack    = 45,
-        .baseDefense   = 48,
+        .baseDefense   = 50,
         .baseSpeed     = 35,
         .baseSpAttack  = 60,
         .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 65 : 60,
@@ -4926,7 +4926,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     {
         .baseHP        = 95,
         .baseAttack    = 70,
-        .baseDefense   = 73,
+        .baseDefense   = 75,
         .baseSpeed     = 60,
         .baseSpAttack  = P_UPDATED_STATS >= GEN_6 ? 95 : 85,
         .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 90 : 85,
@@ -5298,11 +5298,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #if P_GEN_2_CROSS_EVOS
     [SPECIES_IGGLYBUFF] =
     {
-        .baseHP        = 90,
+        .baseHP        = 95,
         .baseAttack    = 30,
-        .baseDefense   = 15,
+        .baseDefense   = 20,
         .baseSpeed     = 15,
-        .baseSpAttack  = 40,
+        .baseSpAttack  = 45,
         .baseSpDefense = 20,
         .types = JIGGLYPUFF_FAMILY_TYPES,
         .catchRate = 170,
@@ -5377,10 +5377,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     {
         .baseHP        = 115,
         .baseAttack    = 45,
-        .baseDefense   = 20,
-        .baseSpeed     = 20,
-        .baseSpAttack  = P_UPDATED_STATS >= GEN_2 ? 45 : 25,
-        .baseSpDefense = 25,
+        .baseDefense   = 35,
+        .baseSpeed     = 35,
+        .baseSpAttack  = P_UPDATED_STATS >= GEN_2 ? 60 : 25,
+        .baseSpDefense = 35,
         .types = JIGGLYPUFF_FAMILY_TYPES,
         .catchRate = 170,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 95 : 76,
@@ -5450,7 +5450,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 
 #if P_UPDATED_STATS >= GEN_6
-#define WIGGLYTUFF_SP_ATK   85
+#define WIGGLYTUFF_SP_ATK   95
 #elif P_UPDATED_STATS >= GEN_2
 #define WIGGLYTUFF_SP_ATK   75
 #else
@@ -5461,10 +5461,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     {
         .baseHP        = 140,
         .baseAttack    = 70,
-        .baseDefense   = 45,
-        .baseSpeed     = 45,
+        .baseDefense   = 60,
+        .baseSpeed     = 60,
         .baseSpAttack  = WIGGLYTUFF_SP_ATK,
-        .baseSpDefense = 50,
+        .baseSpDefense = 60,
         .types = JIGGLYPUFF_FAMILY_TYPES,
         .catchRate = 50,
     #if P_UPDATED_EXP_YIELDS >= GEN_8

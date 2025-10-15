@@ -1177,11 +1177,18 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learn Earth Power by level up
 
 - Cleffa (not in main game):
+    - Atk: 25->30
+    - Def: 28->30
     - Evolution: friendship->12
     - Learns Fairy Wind by level up
 
-- Clefairy/Clefable (not in main game):
-    - Learn Fairy Wind and Alluring Voice by level up
+- Clefairy (not in main game):
+    - Def: 48->50
+    - Learns Fairy Wind and Alluring Voice by level up
+
+- Clefable (not in main game):
+    - Def: 73->75
+    - Learns Fairy Wind and Alluring Voice by level up
 
 - Vulpix/Ninetales:
     - Learn Mystical Fire by level up
@@ -1252,10 +1259,24 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Cut by TM
 
 - Igglybuff:
+    - HP: 90->95
+    - Def: 15->20
+    - SpA: 40->45
     - Evolution: friendship->12
 
-- Jigglypuff/Wigglytuff:
-    - Learn Alluring Voice by level up
+- Jigglypuff:
+    - Def: 20->35
+    - SpA: 35->60
+    - SpD: 25->35
+    - Spe: 20->35
+    - Learns Alluring Voice by level up
+
+- Wigglytuff:
+    - Def: 45->60
+    - SpA: 85->95
+    - SpD: 50->60
+    - Spe: 45->60
+    - Learns Alluring Voice by level up
 
 - Psyduck:
     - Type: Water->Water/Psychic

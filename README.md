@@ -1590,6 +1590,8 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Spe: 83->85
 
 - Magikarp:
+    - Atk: 10->15
+    - SpA: 15->10
     - Learns Bounce and Hydro Pump by level up
     - Learns Dragon Breath by Egg Move
 
@@ -2394,6 +2396,8 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learn Rock Throw and Rock Slide by level up
 
 - Feebas:
+    - Atk: 15->10
+    - SpA: 10->15
     - Learns Hydro Pump by level up
 
 - Milotic:

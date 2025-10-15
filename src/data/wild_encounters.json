@@ -6585,11 +6585,15 @@
               },
               {
                 "range": "POSTGAME",
+                "species": "TYNAMO"
+              },
+              {
+                "range": "POSTGAME",
                 "species": "FRILLISH"
               },
               {
                 "range": "POSTGAME",
-                "species": "ALOMOMOLA"
+                "species": "EELEKTRIK"
               },
               {
                 "range": "POSTGAME",
@@ -6597,15 +6601,11 @@
               },
               {
                 "range": "POSTGAME",
-                "species": "ALOMOMOLA"
+                "species": "EELEKTRIK"
               },
               {
                 "range": "POSTGAME",
                 "species": "JELLICENT"
-              },
-              {
-                "range": "POSTGAME",
-                "species": "ALOMOMOLA"
               }
             ]
           }
@@ -6789,15 +6789,11 @@
               },
               {
                 "range": "POSTGAME",
-                "species": "HORSEA"
-              },
-              {
-                "range": "POSTGAME",
                 "species": "FINNEON"
               },
               {
                 "range": "POSTGAME",
-                "species": "SEADRA"
+                "species": "ALOMOMOLA"
               },
               {
                 "range": "POSTGAME",
@@ -6805,11 +6801,15 @@
               },
               {
                 "range": "POSTGAME",
-                "species": "SEADRA"
+                "species": "ALOMOMOLA"
               },
               {
                 "range": "POSTGAME",
                 "species": "LUMINEON"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "ALOMOMOLA"
               }
             ]
           }

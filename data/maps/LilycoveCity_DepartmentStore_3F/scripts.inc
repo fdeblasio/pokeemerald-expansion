@@ -90,7 +90,7 @@ LilycoveCity_DepartmentStore_3F_EventScript_ClerkEvo::
 LilycoveCity_DepartmentStore_3F_Pokemart_Evo:
 	.2byte ITEM_FIRE_STONE      @ Hoenn: Vulpix;                      National: N/A,                 Unused: Growlithe, Growlithe-H, Cubone, Eevee, Pansear, Capsakid
 	.2byte ITEM_WATER_STONE     @ Hoenn: Staryu, Lombre;              National: Poliwhirl, Shellder; Unused: Eevee, Panpour
-	.2byte ITEM_THUNDER_STONE   @ Hoenn: Pikachu, Magneton, Nosepass; National: N/A;                 Unused: Eevee, Eelektrik, Charjabug, Tadbulb
+	.2byte ITEM_THUNDER_STONE   @ Hoenn: Pikachu, Magneton, Nosepass; National: Eelektrik;           Unused: Eevee, Charjabug, Tadbulb
 	.2byte ITEM_LEAF_STONE      @ Hoenn: Gloom, Nuzleaf;              National: Voltorb-H;           Unused: Weepinbell, Exeggcute, Eevee, Pansage, Petilil
 	.2byte ITEM_MOON_STONE      @ Hoenn: Jigglypuff, Skitty;          National: N/A;                 Unused: Nidorina, Nidorino, Clefairy, Eevee, Munna
 	.2byte ITEM_SUN_STONE       @ Hoenn: Pikachu, Gloom;              National: Sunkern;             Unused: Exeggcute, Eevee, Cottonee, Petilil, Helioptile

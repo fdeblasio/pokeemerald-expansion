@@ -6512,7 +6512,7 @@
           "map": "MAP_SAFARI_ZONE_SOUTH",
           "base_label": "gSafariZone_South",
           "land_mons": {
-            "encounter_rate": 25,
+            "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
             "mons": [
               {
                 "range": "POSTGAME",
@@ -6561,7 +6561,7 @@
           "map": "MAP_SAFARI_ZONE_SOUTHWEST",
           "base_label": "gSafariZone_Southwest",
           "land_mons": {
-            "encounter_rate": 25,
+            "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
             "mons": [
               {
                 "range": "POSTGAME",
@@ -6606,7 +6606,7 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 25,
+            "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
             "mons": [
               {
                 "range": "POSTGAME",
@@ -6663,7 +6663,7 @@
           "map": "MAP_SAFARI_ZONE_NORTH",
           "base_label": "gSafariZone_North",
           "land_mons": {
-            "encounter_rate": 25,
+            "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
             "mons": [
               {
                 "range": "POSTGAME",
@@ -6712,7 +6712,7 @@
           "map": "MAP_SAFARI_ZONE_NORTHWEST",
           "base_label": "gSafariZone_Northwest",
           "land_mons": {
-            "encounter_rate": 25,
+            "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
             "mons": [
               {
                 "range": "POSTGAME",
@@ -6757,7 +6757,7 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 25,
+            "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
             "mons": [
               {
                 "range": "POSTGAME",
@@ -6814,7 +6814,7 @@
           "map": "MAP_SAFARI_ZONE_SOUTHEAST",
           "base_label": "gSafariZone_Southeast",
           "land_mons": {
-            "encounter_rate": 25,
+            "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
             "mons": [
               {
                 "range": "POSTGAME",
@@ -6859,7 +6859,7 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 25,
+            "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
             "mons": [
               {
                 "range": "POSTGAME",
@@ -6916,7 +6916,56 @@
           "map": "MAP_SAFARI_ZONE_NORTHEAST",
           "base_label": "gSafariZone_Northeast",
           "land_mons": {
-            "encounter_rate": 25,
+            "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
+            "mons": [
+              {
+                "range": "POSTGAME",
+                "species": "DRILBUR"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "LICKITUNG"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "ZIGZAGOON_GALAR"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "STANTLER"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "ZIGZAGOON_GALAR"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "STANTLER"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "SNEASEL_HISUI"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "SNEASEL_HISUI"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "SNEASEL_HISUI"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "SNEASEL_HISUI"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_SAFARI_ZONE_ICE_CAVE",
+          "base_label": "gSafariZone_IceCave",
+          "land_mons": {
+            "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
             "mons": [
               {
                 "range": "POSTGAME",
@@ -6928,19 +6977,11 @@
               },
               {
                 "range": "POSTGAME",
-                "species": "ZIGZAGOON_GALAR"
+                "species": "SNEASEL"
               },
               {
                 "range": "POSTGAME",
-                "species": "STANTLER"
-              },
-              {
-                "range": "POSTGAME",
-                "species": "ZIGZAGOON_GALAR"
-              },
-              {
-                "range": "POSTGAME",
-                "species": "STANTLER"
+                "species": "SWINUB"
               },
               {
                 "range": "POSTGAME",
@@ -6948,15 +6989,23 @@
               },
               {
                 "range": "POSTGAME",
-                "species": "SNEASEL"
+                "species": "SWINUB"
               },
               {
                 "range": "POSTGAME",
-                "species": "SNEASEL"
+                "species": "VANILLITE"
               },
               {
                 "range": "POSTGAME",
-                "species": "SNEASEL"
+                "species": "VANILLITE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "VANILLITE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "VANILLITE"
               }
             ]
           }
@@ -6965,56 +7014,7 @@
           "map": "MAP_SAFARI_ZONE_FIRE_CAVE",
           "base_label": "gSafariZone_FireCave",
           "land_mons": {
-            "encounter_rate": 25,
-            "mons": [
-              {
-                "range": "POSTGAME",
-                "species": "NONE"
-              },
-              {
-                "range": "POSTGAME",
-                "species": "NONE"
-              },
-              {
-                "range": "POSTGAME",
-                "species": "NONE"
-              },
-              {
-                "range": "POSTGAME",
-                "species": "NONE"
-              },
-              {
-                "range": "POSTGAME",
-                "species": "NONE"
-              },
-              {
-                "range": "POSTGAME",
-                "species": "NONE"
-              },
-              {
-                "range": "POSTGAME",
-                "species": "NONE"
-              },
-              {
-                "range": "POSTGAME",
-                "species": "NONE"
-              },
-              {
-                "range": "POSTGAME",
-                "species": "NONE"
-              },
-              {
-                "range": "POSTGAME",
-                "species": "NONE"
-              }
-            ]
-          }
-        },
-        {
-          "map": "MAP_SAFARI_ZONE_ICE_CAVE",
-          "base_label": "gSafariZone_IceCave",
-          "land_mons": {
-            "encounter_rate": 25,
+            "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
             "mons": [
               {
                 "range": "POSTGAME",
@@ -7063,7 +7063,7 @@
           "map": "MAP_SAFARI_ZONE_FOREST",
           "base_label": "gSafariZone_Forest",
           "land_mons": {
-            "encounter_rate": 25,
+            "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
             "mons": [
               {
                 "range": "POSTGAME",

@@ -1463,7 +1463,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Tangela/Tangrowth (postgame):
     - Learn Energy Ball by level up
 
-- Horsea/Seadra/Kingdra (postgame):
+- Horsea/Seadra/Kingdra:
     - Learn Surf by level up
 
 - Goldeen:
@@ -2936,13 +2936,13 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Metal Claw, Rapid Spin, and Magnet Bomb by level up
     - Learns Body Press and Supercell Slam by TM
 
-- Tynamo:
+- Tynamo (postgame):
     - Evolution: 39->32
 
-- Eelektrik:
+- Eelektrik (postgame):
     - Learns Thunder Fang and Supercell Slam by level up
 
-- Eelektross:
+- Eelektross (postgame):
     - Learns Thunder Fang, Thunder Punch, and Supercell Slam by level up
 
 - Litwick:

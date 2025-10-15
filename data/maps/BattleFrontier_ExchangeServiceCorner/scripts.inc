@@ -281,17 +281,20 @@ BattleFrontier_ExchangeServiceCorner_EventScript_EvolutionMega::
 
 	.align 2
 BattleFrontier_Mart_EvolutionMega:
-	.2byte ITEM_ICE_STONE     @ National: Sandshrew-A, Vulpix-A; Unused: Mr. Mime-A, Eevee, Darumaka-G, Bergmite, Crabrawler, Cetoddle
-	.2byte ITEM_ELECTIRIZER   @ National: Electabuzz
-	.2byte ITEM_MAGMARIZER    @ National: Magmar
-	.2byte ITEM_OVAL_STONE    @ National: Happiny
-	.2byte ITEM_RAZOR_FANG    @ National: Gligar
-	.2byte ITEM_RAZOR_CLAW    @ National: Snesasel, Sneasel-H
-	.2byte ITEM_PEAT_BLOCK    @ National: Ursaring
-	.2byte ITEM_AERODACTYLITE @ 0142
-	.2byte ITEM_AMPHAROSITE   @ 0181
-	.2byte ITEM_LATIASITE     @ 0380
-	.2byte ITEM_LATIOSITE     @ 0381
+	.2byte ITEM_ICE_STONE       @ National: Sandshrew-A, Vulpix-A; Unused: Mr. Mime-A, Eevee, Darumaka-G, Bergmite, Crabrawler, Cetoddle
+	.2byte ITEM_KINGS_ROCK      @ National: Poliwhirl, Slowpoke
+	.2byte ITEM_ELECTIRIZER     @ National: Electabuzz
+	.2byte ITEM_MAGMARIZER      @ National: Magmar
+	.2byte ITEM_OVAL_STONE      @ National: Happiny
+	.2byte ITEM_RAZOR_FANG      @ National: Gligar
+	.2byte ITEM_RAZOR_CLAW      @ National: Snesasel, Sneasel-H
+	.2byte ITEM_GALARICA_CUFF   @ National: Slowpoke-G
+	.2byte ITEM_GALARICA_WREATH @ National: Slowpoke-G
+	.2byte ITEM_PEAT_BLOCK      @ National: Ursaring
+	.2byte ITEM_AERODACTYLITE   @ 0142
+	.2byte ITEM_AMPHAROSITE     @ 0181
+	.2byte ITEM_LATIASITE       @ 0380
+	.2byte ITEM_LATIOSITE       @ 0381
 	.2byte ITEM_RARE_CANDY
 	.2byte ITEM_EXP_CANDY_L
 	.2byte ITEM_EXP_CANDY_XL
@@ -317,7 +320,6 @@ BattleFrontier_Mart_HoldItemVitamin:
 	.2byte ITEM_POWER_HERB
 	.2byte ITEM_QUICK_CLAW
 	.2byte ITEM_BRIGHT_POWDER
-	.2byte ITEM_KINGS_ROCK
 	.2byte ITEM_FOCUS_BAND
 	.2byte ITEM_FOCUS_SASH
 	.2byte ITEM_GRIP_CLAW

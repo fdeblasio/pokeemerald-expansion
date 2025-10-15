@@ -1279,17 +1279,17 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Growlithe/Arcanine (not in game):
     - Learn Temper Flare by level up
 
-- Poliwag (not in main game):
+- Poliwag (postgame):
     - SpA: 40->50
 
-- Poliwhirl (not in main game):
+- Poliwhirl (postgame):
     - SpA: 50->65
 
-- Poliwrath (not in main game):
+- Poliwrath (postgame):
     - Atk: 95->100
     - Learns Liquidation, Drain Punch, and Sky Uppercut by level up
 
-- Politoed (not in main game):
+- Politoed (postgame):
     - Def: 75->80
     - SpA: 90->100
 
@@ -1330,10 +1330,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Grimer/Muk:
     - Learn Poison Jab by level up
 
-- Shellder (not in main game):
+- Shellder (postgame):
     - Learns Aqua Jet, Chilling Water, Bubble Beam, Waterfall, and Liquidation by level up
 
-- Cloyster (not in main game):
+- Cloyster (postgame):
     - Held items:
         - Pearl: 50%->0%
         - Big Pearl: 5%->50%
@@ -1387,16 +1387,16 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Hitmonchan (not in main game):
     - Learns Dizzy Punch by level up
 
-- Slowpoke (not in main game):
+- Slowpoke (postgame):
     - Atk: 65->40
     - SpA: 40->65
     - Learns Psybeam by level up
 
-- Galarian Slowpoke (not in main game):
+- Galarian Slowpoke (postgame):
     - Atk: 65->40
     - SpA: 40->65
 
-- Slowbro/Slowking (not in main game):
+- Slowbro/Slowking (postgame):
     - Learn Psybeam by level up
 
 - Magnemite/Magneton/Magnezone:
@@ -1463,7 +1463,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Tangela/Tangrowth (postgame):
     - Learn Energy Ball by level up
 
-- Horsea/Seadra/Kingdra:
+- Horsea/Seadra/Kingdra (postgame):
     - Learn Surf by level up
 
 - Goldeen:
@@ -1850,10 +1850,10 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Hidden Ability: Rattled->Strong Jaw
     - Learns Fairy Wind and Spirit Break by level up
 
-- Qwilfish (not in main game):
+- Qwilfish (postgame):
     - Learns Poison Tail and Waterfall by level up
 
-- Hisuian Qwilfish/Overqwil (not in main game):
+- Hisuian Qwilfish/Overqwil (postgame):
     - Learn Poison Tail, Night Slash, and Poison Jab by level up
 
 - Shuckle (postgame):
@@ -1931,11 +1931,11 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Hidden Ability: Insomnia->Technician
     - Learns Ice Punch by level up
 
-- Mantyke (not in main game):
+- Mantyke (postgame):
     - Catch rate: 25->180
     - Learns Gust, Surf, and Hurricane by level up
 
-- Mantine (not in main game):
+- Mantine (postgame):
     - HP: 85->90
     - SpA: 80->90
     - Catch rate: 25->90
@@ -2762,14 +2762,14 @@ There are some mechanics, moves and abilities that are missing and being develop
     - SpD: 126->130
     - Base experience: 425->500
 
-- Tympole:
+- Tympole (postgame):
     - Learns Surf by level up
 
-- Palpitoad:
+- Palpitoad (postgame):
     - Learns Mud Bomb upon evolving
     - Learns Bulldoze, Earth Power, and Surf by level up
 
-- Seismitoad:
+- Seismitoad (postgame):
     - Learns Mud Bomb, Bulldoze, Stomping Tantrum, Earth Power, Liquidation, Earthquake, and Surf by level up
     - Learns Waterfall by TM
 
@@ -2865,11 +2865,11 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Duosion:
     - Evolution: 41->35
 
-- Ducklett:
+- Ducklett (postgame):
     - Evolution: 35->33
     - Learns Surf and Dual Wingbeat by level up
 
-- Swanna:
+- Swanna (postgame):
     - Learns Surf and Dual Wingbeat by level up
 
 - Vanillite (postgame):
@@ -3337,14 +3337,14 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Spe: 43->50
     - Learns Icicle Crash by TM
 
-- Dewpider:
+- Dewpider (postgame):
     - HP: 38->40
     - Def: 52->55
     - SpD: 72->75
     - Spe: 27->30
     - Learns Waterfall by level up
 
-- Araquanid:
+- Araquanid (postgame):
     - HP: 68->70
     - Atk: 70->80
     - Def: 92->95
@@ -3497,14 +3497,14 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Spe: 85->95
     - Learns Gust, Water Pulse, Air Cutter, Surf, and Air Slash by level up
 
-- Arrokuda:
+- Arrokuda (postgame):
     - HP: 41->45
     - Atk: 63->65
     - Spe: 66->70
     - Learns Aqua Cutter and Waterfall by level up
     - Learns Drill Peck by Egg Move
 
-- Barraskewda:
+- Barraskewda (postgame):
     - HP: 61->65
     - Atk: 123->125
     - Spe: 136->140

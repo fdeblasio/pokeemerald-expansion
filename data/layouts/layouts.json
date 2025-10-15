@@ -2412,14 +2412,54 @@
       "blockdata_filepath": "data/layouts/SafariZone_South/map.bin"
     },
     {
-      "id": "LAYOUT_UNUSED_OUTDOOR_AREA",
-      "name": "UnusedOutdoorArea_Layout",
+      "id": "LAYOUT_SAFARI_ZONE_NORTHEAST",
+      "name": "SafariZone_Northeast_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/SafariZone_Northeast/border.bin",
+      "blockdata_filepath": "data/layouts/SafariZone_Northeast/map.bin"
+    },
+    {
+      "id": "LAYOUT_SAFARI_ZONE_SOUTHEAST",
+      "name": "SafariZone_Southeast_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/SafariZone_Southeast/border.bin",
+      "blockdata_filepath": "data/layouts/SafariZone_Southeast/map.bin"
+    },
+    {
+      "id": "LAYOUT_SAFARI_ZONE_FIRE_CAVE",
+      "name": "SafariZone_FireCave_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/SafariZone_FireCave/border.bin",
+      "blockdata_filepath": "data/layouts/SafariZone_FireCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_SAFARI_ZONE_ICE_CAVE",
+      "name": "SafariZone_IceCave_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/SafariZone_IceCave/border.bin",
+      "blockdata_filepath": "data/layouts/SafariZone_IceCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_SAFARI_ZONE_FOREST",
+      "name": "SafariZone_Forest_Layout",
       "width": 58,
       "height": 26,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "0",
-      "border_filepath": "data/layouts/UnusedOutdoorArea/border.bin",
-      "blockdata_filepath": "data/layouts/UnusedOutdoorArea/map.bin"
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/SafariZone_Forest/border.bin",
+      "blockdata_filepath": "data/layouts/SafariZone_Forest/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE109_SEASHORE_HOUSE",
@@ -2860,16 +2900,6 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/VictoryRoad_B2F/border.bin",
       "blockdata_filepath": "data/layouts/VictoryRoad_B2F/map.bin"
-    },
-    {
-      "id": "LAYOUT_ROUTE104_PROTOTYPE",
-      "name": "Route104_Prototype_Layout",
-      "width": 1,
-      "height": 1,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Rustboro",
-      "border_filepath": "data/layouts/Route104_Prototype/border.bin",
-      "blockdata_filepath": "data/layouts/Route104_Prototype/map.bin"
     },
     {
       "id": "LAYOUT_GRANITE_CAVE_STEVENS_ROOM",
@@ -3930,26 +3960,6 @@
       "secondary_tileset": "gTileset_UnionRoom",
       "border_filepath": "data/layouts/UnionRoom/border.bin",
       "blockdata_filepath": "data/layouts/UnionRoom/map.bin"
-    },
-    {
-      "id": "LAYOUT_SAFARI_ZONE_NORTHEAST",
-      "name": "SafariZone_Northeast_Layout",
-      "width": 40,
-      "height": 40,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lilycove",
-      "border_filepath": "data/layouts/SafariZone_Northeast/border.bin",
-      "blockdata_filepath": "data/layouts/SafariZone_Northeast/map.bin"
-    },
-    {
-      "id": "LAYOUT_SAFARI_ZONE_SOUTHEAST",
-      "name": "SafariZone_Southeast_Layout",
-      "width": 40,
-      "height": 40,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lilycove",
-      "border_filepath": "data/layouts/SafariZone_Southeast/border.bin",
-      "blockdata_filepath": "data/layouts/SafariZone_Southeast/map.bin"
     },
     {
       "id": "LAYOUT_BATTLE_FRONTIER_RANKING_HALL",

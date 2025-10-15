@@ -439,8 +439,9 @@
     "SafariZone_South",
     "SafariZone_Northeast",
     "SafariZone_Southeast",
-    "Route104_Prototype",
-    "Route104_PrototypePrettyPetalFlowerShop",
+    "SafariZone_FireCave",
+    "SafariZone_IceCave",
+    "SafariZone_Forest",
     "SafariZone_RestHouse"
   ],
   "gMapGroup_BattleFrontier": [

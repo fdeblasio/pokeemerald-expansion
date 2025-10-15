@@ -3712,20 +3712,20 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Tinkatink:
     - SpD: 64->65
     - Spe: 58->60
-    - Learns Smart Strike and Dazzling Gleam by level up
+    - Learns Smart Strike, Spirit Break, and Dazzling Gleam by level up
 
 - Tinkatuff:
     - Atk: 55->70
     - SpD: 82->85
     - Spe: 78->80
-    - Learns Smart Strike and Dazzling Gleam by level up
+    - Learns Smart Strike, Spirit Break, and Dazzling Gleam by level up
 
 - Tinkaton:
     - Atk: 75->85
     - Def: 77->80
     - Spe: 94->95
     - Hidden Ability: Pickpocket->Steelworker
-    - Learns Smack Down, Smart Strike, and Dazzling Gleam by level up
+    - Learns Smack Down, Smart Strike, Spirit Break, and Dazzling Gleam by level up
 
 - Wugtrio:
     - HP: 35->50

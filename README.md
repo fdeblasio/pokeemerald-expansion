@@ -2282,6 +2282,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learn Mud-Slap, Mud Shot, and Scorching Sands by level up
 
 - Torkoal:
+    - SpA: 85->100
     - Learns Incinerate and Flame Burst by level up
 
 - Spoink/Grumpig:
@@ -3455,7 +3456,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Absorb, Mega Drain, Magical Leaf, Giga Drain, Energy Ball, and Pollen Puff by level up
 
 - Eldegoss:
-    - SpA: 80->100
+    - SpA: 80->90
     - Learns Absorb, Mega Drain, Magical Leaf, Giga Drain, Energy Ball, and Pollen Puff by level up
 
 - Wooloo:

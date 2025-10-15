@@ -122,6 +122,8 @@ EWRAM_DATA u8 gChainFishingDexNavStreak = 0;
 #define RANGE_BATTLE_FRONTIER   5, 5
 #define RANGE_UNUSED            1, 1
 
+#define SAFARI_ZONE_ENCOUNTER_RATE 50
+
 #include "data/wild_encounters.h"
 
 static const struct WildPokemon sWildFeebas = {RANGE_ROUTE_119, SPECIES_FEEBAS};

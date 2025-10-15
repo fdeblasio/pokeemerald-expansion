@@ -6555,6 +6555,59 @@
                 "species": "MUNCHLAX"
               }
             ]
+          },
+          "water_mons": {
+            "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
+            "mons": [
+              {
+                "range": "POSTGAME",
+                "species": "TYMPOLE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "DUCKLETT"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "DUCKLETT"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "DUCKLETT"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "mons": [
+              {
+                "range": "POSTGAME",
+                "species": "MAGIKARP"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "FRILLISH"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "ALOMOMOLA"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "JELLICENT"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "ALOMOMOLA"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "JELLICENT"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "ALOMOMOLA"
+              }
+            ]
           }
         },
         {
@@ -6610,19 +6663,19 @@
             "mons": [
               {
                 "range": "POSTGAME",
-                "species": "WOOPER"
+                "species": "POLIWAG"
               },
               {
                 "range": "POSTGAME",
-                "species": "CORSOLA_GALAR"
+                "species": "KRABBY"
               },
               {
                 "range": "POSTGAME",
-                "species": "CORSOLA_GALAR"
+                "species": "KRABBY"
               },
               {
                 "range": "POSTGAME",
-                "species": "QUAGSIRE"
+                "species": "KRABBY"
               }
             ]
           },
@@ -6638,7 +6691,7 @@
               },
               {
                 "range": "POSTGAME",
-                "species": "SKRELP"
+                "species": "MANTYKE"
               },
               {
                 "range": "POSTGAME",
@@ -6646,7 +6699,7 @@
               },
               {
                 "range": "POSTGAME",
-                "species": "DRAGALGE"
+                "species": "MANTINE"
               },
               {
                 "range": "POSTGAME",
@@ -6654,7 +6707,7 @@
               },
               {
                 "range": "POSTGAME",
-                "species": "DRAGALGE"
+                "species": "MANTINE"
               }
             ]
           }
@@ -6704,6 +6757,59 @@
               {
                 "range": "POSTGAME",
                 "species": "SNUBBULL"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
+            "mons": [
+              {
+                "range": "POSTGAME",
+                "species": "SLOWPOKE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "SLOWPOKE_GALAR"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "SLOWPOKE_GALAR"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "SLOWPOKE_GALAR"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "mons": [
+              {
+                "range": "POSTGAME",
+                "species": "MAGIKARP"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "HORSEA"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "FINNEON"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "SEADRA"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "LUMINEON"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "SEADRA"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "LUMINEON"
               }
             ]
           }
@@ -6761,7 +6867,7 @@
             "mons": [
               {
                 "range": "POSTGAME",
-                "species": "WOOPER"
+                "species": "DEWPIDER"
               },
               {
                 "range": "POSTGAME",
@@ -6773,7 +6879,7 @@
               },
               {
                 "range": "POSTGAME",
-                "species": "QUAGSIRE"
+                "species": "CORSOLA_GALAR"
               }
             ]
           },
@@ -6785,27 +6891,27 @@
               },
               {
                 "range": "POSTGAME",
-                "species": "REMORAID"
+                "species": "QWILFISH"
               },
               {
                 "range": "POSTGAME",
-                "species": "SKRELP"
+                "species": "QWILFISH_HISUI"
               },
               {
                 "range": "POSTGAME",
-                "species": "OCTILLERY"
+                "species": "QWILFISH"
               },
               {
                 "range": "POSTGAME",
-                "species": "DRAGALGE"
+                "species": "OVERQWIL"
               },
               {
                 "range": "POSTGAME",
-                "species": "OCTILLERY"
+                "species": "QWILFISH"
               },
               {
                 "range": "POSTGAME",
-                "species": "DRAGALGE"
+                "species": "OVERQWIL"
               }
             ]
           }
@@ -6863,19 +6969,19 @@
             "mons": [
               {
                 "range": "POSTGAME",
+                "species": "WOOPER"
+              },
+              {
+                "range": "POSTGAME",
                 "species": "WOOPER_PALDEA"
               },
               {
                 "range": "POSTGAME",
-                "species": "CLAUNCHER"
+                "species": "WOOPER_PALDEA"
               },
               {
                 "range": "POSTGAME",
-                "species": "CLAUNCHER"
-              },
-              {
-                "range": "POSTGAME",
-                "species": "CLODSIRE"
+                "species": "WOOPER_PALDEA"
               }
             ]
           },
@@ -6887,7 +6993,7 @@
               },
               {
                 "range": "POSTGAME",
-                "species": "REMORAID"
+                "species": "CLAUNCHER"
               },
               {
                 "range": "POSTGAME",
@@ -6895,7 +7001,7 @@
               },
               {
                 "range": "POSTGAME",
-                "species": "OCTILLERY"
+                "species": "CLAWITZER"
               },
               {
                 "range": "POSTGAME",
@@ -6903,7 +7009,7 @@
               },
               {
                 "range": "POSTGAME",
-                "species": "OCTILLERY"
+                "species": "CLAWITZER"
               },
               {
                 "range": "POSTGAME",
@@ -6957,6 +7063,59 @@
               {
                 "range": "POSTGAME",
                 "species": "SNEASEL_HISUI"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
+            "mons": [
+              {
+                "range": "POSTGAME",
+                "species": "SHELLDER"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "SEEL"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "SEEL"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "SEEL"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "mons": [
+              {
+                "range": "POSTGAME",
+                "species": "MAGIKARP"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "ARROKUDA"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "VELUZA"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "BARRASKEWDA"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "VELUZA"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "BARRASKEWDA"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "VELUZA"
               }
             ]
           }

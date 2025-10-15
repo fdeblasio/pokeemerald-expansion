@@ -20,9 +20,11 @@ LilycoveCity_DepartmentStore_4F_EventScript_ClerkMegaStones::
 	mart_clerk LilycoveCity_DepartmentStore_4F_Pokemart_MegaStones
 
 @ Rumored:
-@ Hoenn: Chimecho, Absol Z
-@ Postgame: N/A
-@ National: Staraptor, Garchomp Z, Lucario Z, Golurk, Meowstic, Crabominable, Golisopod, Magearna, Scovillain, Glimmora, Tatsugiri, Baxcalibur
+@  Chimecho, Absol Z
+@  Staraptor, Garchomp Z, Lucario Z, Heatran, Darkrai
+@  Golurk, Meowstic
+@  Crabominable, Golisopod, Magearna, Zeraora
+@  Scovillain, Glimmora, Tatsugiri, Baxcalibur
 
 LilycoveCity_DepartmentStore_4F_EventScript_ClerkRight::
 	mart_clerk LilycoveCity_DepartmentStore_4F_Pokemart_TMs

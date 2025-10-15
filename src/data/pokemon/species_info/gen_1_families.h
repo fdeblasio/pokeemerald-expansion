@@ -17121,10 +17121,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_MAGIKARP] =
     {
         .baseHP        = 20,
-        .baseAttack    = 10,
+        .baseAttack    = 15,
         .baseDefense   = 55,
         .baseSpeed     = 80,
-        .baseSpAttack  = P_UPDATED_STATS >= GEN_2 ? 15 : 20,
+        .baseSpAttack  = P_UPDATED_STATS >= GEN_2 ? 10 : 20,
         .baseSpDefense = 20,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 255,

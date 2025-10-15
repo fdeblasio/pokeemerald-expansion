@@ -8977,10 +8977,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_FEEBAS] =
     {
         .baseHP        = 20,
-        .baseAttack    = 15,
+        .baseAttack    = 10,
         .baseDefense   = 20,
         .baseSpeed     = 80,
-        .baseSpAttack  = 10,
+        .baseSpAttack  = 15,
         .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 255,

@@ -116,7 +116,7 @@ LilycoveCity_DepartmentStore_3F_Pokemart_EvoUnused:
 	.2byte ITEM_UPGRADE                                          @ Unused: Porygon
 	.2byte ITEM_DUBIOUS_DISC                                     @ Unused: Porygon2
 	.2byte ITEM_RAZOR_FANG      @ Battle Frontier                  National: Gligar
-	.2byte ITEM_RAZOR_CLAW      @ Battle Frontier                  National: Sneasel    Unused: Sneasel-H
+	.2byte ITEM_RAZOR_CLAW      @ Battle Frontier                  National: Sneasel, Sneasel-H
 	.2byte ITEM_ELECTIRIZER     @ Battle Frontier                  National: Electabuzz
 	.2byte ITEM_MAGMARIZER      @ Battle Frontier                  National: Magmar
 	.2byte ITEM_OVAL_STONE      @ Battle Frontier                  National: Happiny

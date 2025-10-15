@@ -1412,14 +1412,14 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Doduo/Dodrio:
     - Learn Body Slam by level up
 
-- Lickitung (not in main game):
+- Lickitung (postgame):
     - Atk: 55->65
     - Spe: 30->50
     - Learns Coil by level up
     - Learns Sludge Bomb by TM
     - Ability: Oblivious->Thick Fat
 
-- Lickilicky (not in main game):
+- Lickilicky (postgame):
     - Learns Coil by level up
     - Learns Sludge Bomb by TM
     - Ability: Oblivious->Thick Fat
@@ -1865,10 +1865,10 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Fury Cutter, Bug Bite, and Lunge by level up
     - Catch rate: 45->90
 
-- Sneasel/Weavile (not in main game):
+- Sneasel/Weavile (postgame):
     - Learn Powder Snow, Bite, Ice Fang, Ice Punch, and Razor Wind by level up
 
-- Hisuian Sneasel/Sneasler (not in main game):
+- Hisuian Sneasel/Sneasler (postgame):
     - Learn Poison Sting, Cross Poison, Double Kick, and Drain Punch by level up
 
 - Teddiursa/Ursaring (postgame):
@@ -1893,10 +1893,10 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Body Press by TM
     - Learns High Horsepower by move tutor (since Slugma can)
 
-- Swinub/Piloswine (not in main game):
+- Swinub/Piloswine (postgame):
     - Learn Avalanche, Bulldoze, Stomping Tantrum, and High Horsepower by level up
 
-- Mamoswine (not in main game):
+- Mamoswine (postgame):
     - Learns Icicle Crash upon evolving
     - Learns Avalanche, Bulldoze, Stomping Tantrum, and High Horsepower by level up
 
@@ -2745,7 +2745,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Abilities: Unaware/Klutz/Simple->Unaware/Simple/Synchronize
     - Learns Psybeam and Psychic Noise by level up
 
-- Drilbur/Excadrill:
+- Drilbur/Excadrill (postgame):
     - Learn Mud Shot, Bulldoze, and Stomping Tantrum by level up
 
 - Audino:
@@ -2872,17 +2872,17 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Swanna:
     - Learns Surf and Dual Wingbeat by level up
 
-- Vanillite:
+- Vanillite (postgame):
     - Evolution: 35->30
     - Held item: Casteliacone: 0%->50%
     - Learns Powder Snow, Aurora Beam, and Freeze-Dry by level up
 
-- Vanillish:
+- Vanillish (postgame):
     - Evolution: 47->42
     - Held item: Casteliacone: 0%->50%
     - Learns Powder Snow, Aurora Beam, and Freeze-Dry by level up
 
-- Vanilluxe:
+- Vanilluxe (postgame):
     - Learns Powder Snow, Aurora Beam, and Freeze-Dry by level up
 
 - Emolga:

@@ -286,7 +286,7 @@ BattleFrontier_Mart_EvolutionMega:
 	.2byte ITEM_MAGMARIZER    @ National: Magmar
 	.2byte ITEM_OVAL_STONE    @ National: Happiny
 	.2byte ITEM_RAZOR_FANG    @ National: Gligar
-	.2byte ITEM_RAZOR_CLAW    @ National: Snesasel;   Unused: Sneasel-H
+	.2byte ITEM_RAZOR_CLAW    @ National: Snesasel, Sneasel-H
 	.2byte ITEM_PEAT_BLOCK    @ National: Ursaring
 	.2byte ITEM_AERODACTYLITE @ 0142
 	.2byte ITEM_AMPHAROSITE   @ 0181

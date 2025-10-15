@@ -36,7 +36,42 @@ upcoming
 
 ## To Do:
 - Move README.md to FEATURES.md
-- Mega Pyroar and Falinks will need their HP adjusted to match their regular HP as well as their BST updated
+- Z-A Megas:
+    - Pidgey line:
+        - Make attacking stats more consistent? (Regular has 10 more Atk, but Mega has 55 more SpA)
+    - Clefable:
+        - Give Flying moves
+    - Victreebel line:
+        - Make attacking stats more consistent? (Regular has 5 more Atk, but Mega has 10 more SpA)
+    - Starmie:
+        - Make attacking stats more consistent? (Regular has 25 more SpA, but Mega has 10 more Atk)
+            - It seems like it might actually have 30 more SpA but Pure Power
+    - Dragonite line:
+        - Make attacking stats more consistent? (Regular has 34 more Atk, but Mega has 21 more SpA)
+    - Meganium:
+        - Give Fairy moves
+    - Feraligatr:
+        - Give Dragon moves
+    - Skarmory:
+        - HP: 65->90
+        - Has a +10 to Atk that needs to be added to the Mega's BST (maybe Def?)
+    - Pyroar:
+        - Has an overall  +10 to Atk that needs to be added to the Mega's BST
+        - HP: 86->90
+        - Atk: 88->90
+        - Def: 92->95
+        - SpA: 129->130
+        - SpD: 86->90
+        - Spe: 126->130
+    - Malamar:
+        - Take some SpA and give to Atk?
+    - Barbaracle:
+        - Give Fighting moves
+    - Drampa:
+        - Type: Normal/Dragon->Dragon/Normal
+    - Falinks:
+        - HP: 65->75
+        - Has a +10 to Def that needs to be added to the Mega's BST (maybe SpD?)
 - Finish adding fishing encounters to DexNav
     - One row?:
         - Screen: 720 pixels wide
@@ -52,6 +87,8 @@ upcoming
 - Rustboro:
     - Make it easier to specify which Walda wallpaper is obtained?
 - Dewford:
+    - Reduce Super Rod slots to just 2? (Variety will come from all the routes with water)
+        - Reduce Surf to 3?
     - Get Exp. Share from Steven instead of from Mr. Stone after
         - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game
             - It isn't on by default though, so could still be Steven
@@ -99,42 +136,6 @@ upcoming
 - Once more changes are made, consolidate commits on develop branch again
 
 ### Pokémon
-- Z-A Megas:
-    - Pidgey line:
-        - Make attacking stats more consistent? (Regular has 10 more Atk, but Mega has 55 more SpA)
-    - Clefable:
-        - Give Flying moves
-    - Victreebel line:
-        - Make attacking stats more consistent? (Regular has 5 more Atk, but Mega has 10 more SpA)
-    - Starmie:
-        - Make attacking stats more consistent? (Regular has 25 more SpA, but Mega has 10 more Atk)
-            - It seems like it might actually have 30 more SpA but Pure Power
-    - Dragonite line:
-        - Make attacking stats more consistent? (Regular has 34 more Atk, but Mega has 21 more SpA)
-    - Meganium:
-        - Give Fairy moves
-    - Feraligatr:
-        - Give Dragon moves
-    - Skarmory:
-        - HP: 65->90
-        - Has a +10 to Atk that needs to be added to the Mega's BST (maybe Def?)
-    - Pyroar:
-        - Has an overall  +10 to Atk that needs to be added to the Mega's BST
-        - HP: 86->90
-        - Atk: 88->90
-        - Def: 92->95
-        - SpA: 129->130
-        - SpD: 86->90
-        - Spe: 126->130
-    - Malamar:
-        - Take some SpA and give to Atk?
-    - Barbaracle:
-        - Give Fighting moves
-    - Drampa:
-        - Type: Normal/Dragon->Dragon/Normal
-    - Falinks:
-        - HP: 65->75
-        - Has a +10 to Def that needs to be added to the Mega's BST (maybe SpD?)
 - Double check that all Gen1 Pokemon have updated movesets
     - Next do all starters/beasts/bugs/birds/etc.
     - Not including cross-gen evos or regionals or already updated:

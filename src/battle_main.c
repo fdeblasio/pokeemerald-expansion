@@ -6516,6 +6516,22 @@ u32 GetDynamicPower(struct Pokemon *mon, u32 move, u32 battler){
 
         if (monInBattle && gBattleMons[battler].volatiles.charge && type == TYPE_ELECTRIC)
             UQ4_12_MULTIPLY(power, 2.0);
+
+        struct DamageContext ctx = {0};
+        ctx.battlerAtk = battler;
+        ctx.battlerDef = BATTLE_OPPOSITE(battler);
+        ctx.move = move;
+        ctx.moveType = type;
+        ctx.updateFlags = FALSE;
+        ctx.abilityAtk = ability;
+        ctx.abilityDef = GetBattlerAbility(ctx.battlerDef);
+        ctx.holdEffectAtk = holdEffect;
+        ctx.holdEffectDef = GetBattlerHoldEffect(ctx.battlerDef);
+
+        uq4_12_t modifier = CalcTypeEffectivenessMultiplier(&ctx);
+
+        if (ShouldShowTypeEffectiveness(ctx.battlerDef))
+            power = uq4_12_multiply(power, modifier);
     }
 
     return power;

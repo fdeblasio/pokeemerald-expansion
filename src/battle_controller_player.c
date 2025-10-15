@@ -2342,7 +2342,7 @@ enum
     EFFECTIVENESS_SUPER_EFFECTIVE,
 };
 
-static bool32 ShouldShowTypeEffectiveness(u32 targetId)
+bool32 ShouldShowTypeEffectiveness(u32 targetId)
 {
     if (B_SHOW_EFFECTIVENESS == SHOW_EFFECTIVENESS_CAUGHT)
         return GetSetPokedexFlag(SpeciesToNationalPokedexNum(gBattleMons[targetId].species), FLAG_GET_CAUGHT);

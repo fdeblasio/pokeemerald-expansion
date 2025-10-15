@@ -440,4 +440,6 @@ void BtlController_HandleSwitchInShowSubstitute(u32 battler);
 bool32 ShouldBattleRestrictionsApply(u32 battler);
 void FreeShinyStars(void);
 
+bool32 ShouldShowTypeEffectiveness(u32 targetId);
+
 #endif // GUARD_BATTLE_CONTROLLERS_H

@@ -6962,6 +6962,153 @@
           }
         },
         {
+          "map": "MAP_SAFARI_ZONE_FIRE_CAVE",
+          "base_label": "gSafariZone_FireCave",
+          "land_mons": {
+            "encounter_rate": 25,
+            "mons": [
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_SAFARI_ZONE_ICE_CAVE",
+          "base_label": "gSafariZone_IceCave",
+          "land_mons": {
+            "encounter_rate": 25,
+            "mons": [
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_SAFARI_ZONE_FOREST",
+          "base_label": "gSafariZone_Forest",
+          "land_mons": {
+            "encounter_rate": 25,
+            "mons": [
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              },
+              {
+                "range": "POSTGAME",
+                "species": "NONE"
+              }
+            ]
+          }
+        },
+        {
           "map": "MAP_DESERT_UNDERPASS",
           "base_label": "gDesertUnderpass",
           "land_mons": {

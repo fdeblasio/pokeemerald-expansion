@@ -15624,6 +15624,10 @@
         "Move": "MOVE_SMART_STRIKE"
       },
       {
+        "Level": 27,
+        "Move": "MOVE_SPIRIT_BREAK"
+      },
+      {
         "Level": 31,
         "Move": "MOVE_DAZZLING_GLEAM"
       }
@@ -15638,6 +15642,10 @@
       {
         "Level": 24,
         "Move": "MOVE_SMART_STRIKE"
+      },
+      {
+        "Level": 27,
+        "Move": "MOVE_SPIRIT_BREAK"
       },
       {
         "Level": 31,
@@ -15658,6 +15666,10 @@
       {
         "Level": 24,
         "Move": "MOVE_SMART_STRIKE"
+      },
+      {
+        "Level": 27,
+        "Move": "MOVE_SPIRIT_BREAK"
       },
       {
         "Level": 31,

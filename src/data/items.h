@@ -6902,6 +6902,7 @@ const struct Item gItemsInfo[] =
         .description = sKingsRockDesc,
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
+        .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
         .flingPower = 30,

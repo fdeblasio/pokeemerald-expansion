@@ -14640,6 +14640,10 @@
       {
         "Level": 35,
         "Move": "MOVE_HYPER_VOICE"
+      },
+      {
+        "Level": 55,
+        "Move": "MOVE_EXPANDING_FORCE"
       }
     ],
     "PreEvoMoves": [],
@@ -14664,6 +14668,10 @@
       {
         "Level": 35,
         "Move": "MOVE_HYPER_VOICE"
+      },
+      {
+        "Level": 55,
+        "Move": "MOVE_EXPANDING_FORCE"
       }
     ],
     "PreEvoMoves": [],

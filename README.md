@@ -3610,7 +3610,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Avalanche, Ice Punch, and Icicle Crash by level up
 
 - Indeedee:
-    - Learns Confusion, Pound, Swift, and Hyper Voice by level up
+    - Learns Confusion, Pound, Swift, Hyper Voice, and Expanding Force by level up
 
 - Cufant/Copperajah:
     - Received Sturdy as a second ability

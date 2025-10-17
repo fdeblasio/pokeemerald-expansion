@@ -1970,7 +1970,7 @@ WINONA_REMATCH(5),
 //Can replace Shadow Ball with Recover
 #define TATE_ALAKAZAM(rematch, tier)                                                \
     {                                                                               \
-    REMATCH_MON(ALAKAZAM, tier, rematch, ITEM_SITRUS_BERRY),                        \
+    REMATCH_MON(ALAKAZAM, tier, rematch, ITEM_TWISTED_SPOON),                       \
     .ability = ABILITY_MAGIC_GUARD,                                                 \
     .nature = NATURE_MODEST,                                                        \
     EV_SPREAD_SPA_SPE_HP,                                                           \
@@ -1978,11 +1978,30 @@ WINONA_REMATCH(5),
     .gender = TRAINER_MON_MALE,                                                     \
     }
 
-#define LIZA_RAPIDASH
+#define LIZA_RAPIDASH(rematch, tier)                                                        \
+    {                                                                                       \
+    REMATCH_MON(RAPIDASH_GALAR, tier, rematch, ITEM_SITRUS_BERRY),                          \
+    .ability = ABILITY_PASTEL_VEIL,                                                         \
+    .nature = NATURE_JOLLY,                                                                 \
+    EV_SPREAD_ATK_SPE_HP,                                                                   \
+    .moves = {MOVE_ZEN_HEADBUTT, MOVE_PLAY_ROUGH, MOVE_HIGH_HORSEPOWER, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_FEMALE,                                                           \
+    }
+
 #define TATE_LIZA_SLOWBRO
 #define TATE_LIZA_SLOWKING
 #define TATE_LIZA_HYPNO
 #define TATE_MR_MIME
+
+#define TATE_MR_RIME(rematch, tier)                                               \
+    {                                                                             \
+    REMATCH_MON(MR_RIME, tier, rematch),                                          \
+    .ability = ABILITY_SCREEN_CLEANER,                                            \
+    .nature = NATURE_MODEST,                                                      \
+    EV_SPREAD_SPA_SPE_SPD,                                                        \
+    .moves = {MOVE_EXPANDING_FORCE, MOVE_ICE_BEAM, MOVE_CALM_MIND, MOVE_REFLECT}, \
+    .gender = TRAINER_MON_MALE,                                                   \
+    }
 
 //Can replace Morning Sun with Calm Mind
 #define LIZA_ESPEON(rematch, tier)                                                   \
@@ -2039,8 +2058,25 @@ WINONA_REMATCH(5),
     .gender = TRAINER_MON_FEMALE,                                                \
     }
 
-#define TATE_INDEEDEE
-#define LIZA_INDEEDEE
+#define TATE_INDEEDEE(rematch, tier)                                                      \
+    {                                                                                     \
+    REMATCH_MON(INDEEDEE_M, tier, rematch, ITEM_PSYCHIC_SEED),                            \
+    .ability = ABILITY_PSYCHIC_SURGE,                                                     \
+    .nature = NATURE_MODEST,                                                              \
+    EV_SPREAD_SPA_SPE_SPD,                                                                \
+    .moves = {MOVE_EXPANDING_FORCE, MOVE_HYPER_VOICE, MOVE_CALM_MIND, MOVE_HELPING_HAND}, \
+    .gender = TRAINER_MON_MALE,                                                           \
+    }
+
+#define LIZA_INDEEDEE(rematch, tier)                                                      \
+    {                                                                                     \
+    REMATCH_MON(INDEEDEE_F, tier, rematch, ITEM_PSYCHIC_SEED),                            \
+    .ability = ABILITY_PSYCHIC_SURGE,                                                     \
+    .nature = NATURE_CALM,                                                                \
+    EV_SPREAD_SPD_SPA_HP,                                                                 \
+    .moves = {MOVE_EXPANDING_FORCE, MOVE_HYPER_VOICE, MOVE_CALM_MIND, MOVE_HELPING_HAND}, \
+    .gender = TRAINER_MON_FEMALE,                                                         \
+    }
 
 #define LIZA_ESPATHRA(rematch, tier)                                                     \
     {                                                                                    \
@@ -3018,7 +3054,7 @@ JUAN_REMATCH(5),
         .ball = ITEM_POKE_BALL,                                                            \
         },                                                                                 \
     },                                                                                     \
-}                                                                                          \
+}
 
 WALLACE_BATTLE(WALLACE, 69),
 WALLACE_BATTLE(WALLACE_REMATCH, 90),
@@ -7086,7 +7122,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 #define MAUVILLE_GYM_TRAINER_INFO(Class) \
     Class##_INFO,                        \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,   \
-    .partySize = 2                       \
+    .partySize = 2
 
 #define MAUVILLE_GYM_MON(Species, Move2, Move3, Move4)                    \
     {                                                                     \
@@ -7300,7 +7336,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 #define DALTON_INFO                   \
     .trainerName = _("Dalton"),       \
     GUITARIST_INFO,                   \
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE \
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
 #define DALTON_VOLTORB(Level)                                    \
     .lvl = Level,                                                \
@@ -8017,7 +8053,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 
 #define TRENT_GENERIC_GEODUDE(Level) \
     .lvl = Level,                    \
-    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_GEODUDE : (Level < REMATCH_5_LEVEL_6 ? SPECIES_GRAVELER : SPECIES_GOLEM) \
+    .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_GEODUDE : (Level < REMATCH_5_LEVEL_6 ? SPECIES_GRAVELER : SPECIES_GOLEM)
 
 #define TRENT_GEODUDE_2(Level)    \
     TRENT_GENERIC_GEODUDE(Level), \

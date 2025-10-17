@@ -3570,7 +3570,7 @@ const struct Item gItemsInfo[] =
     [ITEM_SWEET_APPLE] =
     {
         .name = ITEM_NAME("Sweet Apple"),
-        .price = 2200,
+        .price = EVO_ITEM_PRICE,
         .description = COMPOUND_STRING(
             "A very sweet apple\n"
             "that makes certain\n"
@@ -3587,7 +3587,7 @@ const struct Item gItemsInfo[] =
     [ITEM_TART_APPLE] =
     {
         .name = ITEM_NAME("Tart Apple"),
-        .price = 2200,
+        .price = EVO_ITEM_PRICE,
         .description = COMPOUND_STRING(
             "A very tart apple\n"
             "that makes certain\n"
@@ -3604,7 +3604,7 @@ const struct Item gItemsInfo[] =
     [ITEM_CRACKED_POT] =
     {
         .name = ITEM_NAME("Cracked Pot"),
-        .price = 1600,
+        .price = EVO_ITEM_PRICE,
         .description = COMPOUND_STRING(
             "A cracked teapot\n"
             "that makes certain\n"
@@ -3622,7 +3622,7 @@ const struct Item gItemsInfo[] =
     [ITEM_CHIPPED_POT] =
     {
         .name = ITEM_NAME("Chipped Pot"),
-        .price = 38000,
+        .price = EVO_ITEM_PRICE,
         .description = COMPOUND_STRING(
             "A chipped teapot\n"
             "that makes certain\n"
@@ -3640,7 +3640,7 @@ const struct Item gItemsInfo[] =
     [ITEM_GALARICA_CUFF] =
     {
         .name = ITEM_NAME("Galarica Cuff"),
-        .price = (I_PRICE >= GEN_9) ? 3000 : 6000,
+        .price = (I_PRICE >= GEN_9) ? EVO_ITEM_PRICE : 6000,
         .description = COMPOUND_STRING(
             "A cuff from Galar\n"
             "that makes certain\n"
@@ -3659,7 +3659,7 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("Galarica Wreath"),
         .pluralName = ITEM_PLURAL_NAME("Galarica Wreathes"),
-        .price = (I_PRICE >= GEN_9) ? 3000 : 6000,
+        .price = (I_PRICE >= GEN_9) ? EVO_ITEM_PRICE : 6000,
         .description = COMPOUND_STRING(
             "A wreath made in\n"
             "Galar. Makes some\n"
@@ -10990,7 +10990,7 @@ const struct Item gItemsInfo[] =
     [ITEM_AUSPICIOUS_ARMOR] =
     {
         .name = ITEM_NAME("Auspicious Armor"),
-        .price = 3000,
+        .price = EVO_ITEM_PRICE,
         .description = COMPOUND_STRING(
             "Armor inhabited by\n"
             "auspicious wishes.\n"
@@ -11064,7 +11064,7 @@ const struct Item gItemsInfo[] =
     [ITEM_MALICIOUS_ARMOR] =
     {
         .name = ITEM_NAME("Malicious Armor"),
-        .price = 3000,
+        .price = EVO_ITEM_PRICE,
         .description = COMPOUND_STRING(
             "Armor inhabited by\n"
             "malicious will.\n"
@@ -11096,7 +11096,7 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("Scroll of Darkness"),
         .pluralName = ITEM_PLURAL_NAME("Scrolls of Darkness"),
-        .price = 0,
+        .price = EVO_ITEM_PRICE,
         .description = COMPOUND_STRING(
             "A peculiar scroll\n"
             "with secrets of\n"
@@ -11114,7 +11114,7 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("Scroll of Waters"),
         .pluralName = ITEM_PLURAL_NAME("Scrolls of Waters"),
-        .price = 0,
+        .price = EVO_ITEM_PRICE,
         .description = COMPOUND_STRING(
             "A peculiar scroll\n"
             "with secrets of\n"
@@ -11411,7 +11411,7 @@ const struct Item gItemsInfo[] =
     [ITEM_SYRUPY_APPLE] =
     {
         .name = ITEM_NAME("Syrupy Apple"),
-        .price = 2200,
+        .price = EVO_ITEM_PRICE,
         .description = COMPOUND_STRING(
             "A very syrupy apple\n"
             "that makes certain\n"
@@ -11428,7 +11428,7 @@ const struct Item gItemsInfo[] =
     [ITEM_UNREMARKABLE_TEACUP] =
     {
         .name = ITEM_NAME("Unremarkable Teacup"),
-        .price = 1600,
+        .price = EVO_ITEM_PRICE,
         .description = COMPOUND_STRING(
             "A cracked teacup\n"
             "that makes certain\n"
@@ -11445,7 +11445,7 @@ const struct Item gItemsInfo[] =
     [ITEM_MASTERPIECE_TEACUP] =
     {
         .name = ITEM_NAME("Masterpiece Teacup"),
-        .price = 38000,
+        .price = EVO_ITEM_PRICE,
         .description = COMPOUND_STRING(
             "A chipped teacup\n"
             "that makes certain\n"
@@ -11616,7 +11616,7 @@ const struct Item gItemsInfo[] =
     [ITEM_METAL_ALLOY] =
     {
         .name = ITEM_NAME("Metal Alloy"),
-        .price = 6000,
+        .price = EVO_ITEM_PRICE,
         .description = COMPOUND_STRING(
             "A peculiar metal\n"
             "that makes certain\n"

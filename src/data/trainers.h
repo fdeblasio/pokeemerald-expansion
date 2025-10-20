@@ -2073,7 +2073,7 @@ WINONA_REMATCH(5),
     REMATCH_MON(INDEEDEE_F, tier, rematch, ITEM_PSYCHIC_SEED),                            \
     .ability = ABILITY_PSYCHIC_SURGE,                                                     \
     .nature = NATURE_CALM,                                                                \
-    EV_SPREAD_SPD_SPA_HP,                                                                 \
+    EV_SPREAD_SPA_SPD_HP,                                                                 \
     .moves = {MOVE_EXPANDING_FORCE, MOVE_HYPER_VOICE, MOVE_CALM_MIND, MOVE_HELPING_HAND}, \
     .gender = TRAINER_MON_FEMALE,                                                         \
     }

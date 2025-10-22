@@ -3142,20 +3142,82 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 //Hoenn Dex secondary: Dustox, Tentacruel, Vileplume, Roserade
 #define JUAN_ARBOK
 #define JUAN_NIDOQUEEN
-#define JUAN_NIDOKING //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1652
+
+#define JUAN_NIDOKING(rematch, tier)                                              \
+    {                                                                             \
+    REMATCH_MON(NIDOKING, tier, rematch),                                         \
+    .ability = ABILITY_SHEER_FORCE,                                               \
+    .nature = NATURE_ADAMANT,                                                     \
+    EV_SPREAD_ATK_SPE_HP,                                                         \
+    .moves = {MOVE_POISON_JAB, MOVE_DRILL_RUN, MOVE_THROAT_CHOP, MOVE_IRON_TAIL}, \
+    .gender = TRAINER_MON_MALE,                                                   \
+    }
+
 #define JUAN_CROBAT
 #define JUAN_SLOWBRO_GALAR
 #define JUAN_SLOWKING_GALAR
-#define JUAN_MUK //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1621
+
+#define JUAN_MUK(rematch, tier)                                                 \
+    {                                                                           \
+    REMATCH_MON(MUK, tier, rematch),                                            \
+    .ability = ABILITY_POISON_TOUCH,                                            \
+    .nature = NATURE_ADAMANT,                                                   \
+    EV_SPREAD_ATK_SPE_HP,                                                       \
+    .moves = {MOVE_POISON_JAB, MOVE_FIRE_PUNCH, MOVE_VENOM_DRENCH, MOVE_TOXIC}, \
+    .gender = TRAINER_MON_MALE,                                                 \
+    .heldItem = ITEM_BLACK_SLUDGE,                                              \
+    }
+
 #define JUAN_MUK_ALOLA
-#define JUAN_WEEZING //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1610
-#define JUAN_WEEZING_GALAR
+#define JUAN_WEEZING
+
+#define JUAN_WEEZING_GALAR(rematch, tier)                                        \
+    {                                                                            \
+    REMATCH_MON(WEEZING_GALAR, tier, rematch),                                   \
+    .ability = ABILITY_LEVITATE,                                                 \
+    .nature = NATURE_MODEST,                                                     \
+    EV_SPREAD_SPA_DEF_HP,                                                        \
+    .moves = {MOVE_SLUDGE_BOMB, MOVE_STRANGE_STEAM, MOVE_HEAT_WAVE, MOVE_TOXIC}, \
+    .gender = TRAINER_MON_MALE,                                                  \
+    .heldItem = ITEM_BLACK_SLUDGE,                                               \
+    }
+
 #define JUAN_CLODSIRE
-#define JUAN_SWALOT //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1632
+
+#define JUAN_SWALOT(rematch, tier)                                                \
+    {                                                                             \
+    REMATCH_MON(SWALOT, tier, rematch, ITEM_BLACK_SLUDGE),                        \
+    .ability = ABILITY_LIQUID_OOZE,                                               \
+    .nature = NATURE_MODEST,                                                      \
+    EV_SPREAD_SPA_HP_SPE,                                                         \
+    .moves = {MOVE_SLUDGE_BOMB, MOVE_GIGA_DRAIN, MOVE_ICE_BEAM, MOVE_ACID_SPRAY}, \
+    .gender = TRAINER_MON_MALE,                                                   \
+    }
+
 #define JUAN_SEVIPER
 #define JUAN_SKUNTANK
-#define JUAN_DRAPION //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1642
-#define JUAN_TOXICROAK //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L1598
+
+#define JUAN_DRAPION(rematch, tier)                                                   \
+    {                                                                                 \
+    REMATCH_MON(DRAPION, tier, rematch),                                              \
+    .ability = ABILITY_SNIPER,                                                        \
+    .nature = NATURE_ADAMANT,                                                         \
+    EV_SPREAD_ATK_DEF_HP,                                                             \
+    .moves = {MOVE_CROSS_POISON, MOVE_NIGHT_SLASH, MOVE_FELL_STINGER, MOVE_ICE_FANG}, \
+    .gender = TRAINER_MON_MALE,                                                       \
+    }
+
+
+#define JUAN_TOXICROAK(rematch, tier)                                            \
+    {                                                                            \
+    REMATCH_MON(TOXICROAK, tier, rematch, ITEM_BLACK_SLUDGE),                    \
+    .ability = ABILITY_POISON_TOUCH,                                             \
+    .nature = NATURE_ADAMANT,                                                    \
+    EV_SPREAD_ATK_SPE_HP,                                                        \
+    .moves = {MOVE_POISON_JAB, MOVE_DRAIN_PUNCH, MOVE_TOXIC, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                  \
+    }
+
 #define JUAN_GARDBODOR
 #define JUAN_DRAGALGE
 #define JUAN_TOXAPEX

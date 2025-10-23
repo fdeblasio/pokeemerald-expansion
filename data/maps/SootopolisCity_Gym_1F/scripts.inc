@@ -267,10 +267,11 @@ SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
 	.string "And, so that you never forget the\n"
 	.string "battle we shared, take this…$"
 
+@Could give out Poison Jab instead, in which case, Water Pulse could move to Slateport/Lavaridge?
 SootopolisCity_Gym_1F_Text_ExplainWaterPulse:
 	.string "The Technical Machine I handed you\n"
 .if JUAN_POISON == TRUE
-	.string "contains Sludge bomb.\p"
+	.string "contains Sludge Bomb.\p"
 .else
 	.string "contains Water Pulse.\p"
 .endif

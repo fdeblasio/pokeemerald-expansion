@@ -11555,6 +11555,7 @@ static const struct TrainerMon sParty_Eric2[] = {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .moves = {MOVE_POISON_JAB, MOVE_CRUNCH, MOVE_SUCKER_PUNCH, MOVE_PLAY_ROUGH},
     .heldItem = ITEM_BLACK_SLUDGE,
+    .nickname = COMPOUND_STRING("Zukes")
     }
 };
 
@@ -11600,6 +11601,7 @@ static const struct TrainerMon sParty_Eric3[] = {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .moves = {MOVE_POISON_JAB, MOVE_CRUNCH, MOVE_SUCKER_PUNCH, MOVE_PLAY_ROUGH},
     .heldItem = ITEM_BLACK_SLUDGE,
+    .nickname = COMPOUND_STRING("Zukes")
     }
 };
 
@@ -11645,6 +11647,7 @@ static const struct TrainerMon sParty_Eric4[] = {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .moves = {MOVE_POISON_JAB, MOVE_CRUNCH, MOVE_SUCKER_PUNCH, MOVE_PLAY_ROUGH},
     .heldItem = ITEM_BLACK_SLUDGE,
+    .nickname = COMPOUND_STRING("Zukes")
     }
 };
 
@@ -11690,6 +11693,7 @@ static const struct TrainerMon sParty_Eric5[] = {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .moves = {MOVE_POISON_JAB, MOVE_CRUNCH, MOVE_SUCKER_PUNCH, MOVE_PLAY_ROUGH},
     .heldItem = ITEM_BLACK_SLUDGE,
+    .nickname = COMPOUND_STRING("Zukes")
     }
 };
 

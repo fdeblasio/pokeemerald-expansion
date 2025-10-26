@@ -2224,6 +2224,130 @@ TATE_AND_LIZA_REMATCH(5),
     .gender = TRAINER_MON_MALE,                                                   \
     }
 
+//Poison
+//Hoenn Dex: Crobat, Swalot, Muk, Weezing, Weezing-G, Seviper
+//Hoenn Dex secondary: Dustox, Tentacruel, Vileplume, Roserade
+#define JUAN_ARBOK
+
+//Can replace Sheer Force/Drill Run with Poison Point/High Horsepower
+#define JUAN_NIDOQUEEN(rematch, tier)                                           \
+    {                                                                           \
+    REMATCH_MON(NIDOQUEEN, tier, rematch, ITEM_POISON_BARB),                    \
+    .ability = ABILITY_SHEER_FORCE,                                             \
+    .nature = NATURE_ADAMANT,                                                   \
+    EV_SPREAD_ATK_SPE_HP,                                                       \
+    .moves = {MOVE_POISON_JAB, MOVE_DRILL_RUN, MOVE_CRUNCH, MOVE_TOXIC_SPIKES}, \
+    .gender = TRAINER_MON_FEMALE,                                               \
+    }
+
+//Can replace Sheer Force/Drill Run/Throat Chop/Iron Tail with Poison Point/High Horsepower/Megahorn/Toxic
+#define JUAN_NIDOKING(rematch, tier)                                              \
+    {                                                                             \
+    REMATCH_MON(NIDOKING, tier, rematch, ITEM_POISON_BARB),                       \
+    .ability = ABILITY_SHEER_FORCE,                                               \
+    .nature = NATURE_ADAMANT,                                                     \
+    EV_SPREAD_ATK_SPE_HP,                                                         \
+    .moves = {MOVE_POISON_JAB, MOVE_DRILL_RUN, MOVE_THROAT_CHOP, MOVE_IRON_TAIL}, \
+    .gender = TRAINER_MON_MALE,                                                   \
+    }
+
+#define JUAN_CROBAT(rematch, tier)                                                \
+    {                                                                             \
+    REMATCH_MON(CROBAT, tier, rematch, ITEM_FLYING_GEM),                          \
+    .ability = ABILITY_INNER_FOCUS,                                               \
+    .nature = NATURE_JOLLY,                                                       \
+    EV_SPREAD_ATK_SPE_HP,                                                         \
+    .moves = {MOVE_POISON_JAB, MOVE_ACROBATICS, MOVE_LEECH_LIFE, MOVE_IRON_TAIL}, \
+    .gender = TRAINER_MON_MALE,                                                   \
+    }
+
+#define JUAN_SLOWBRO_GALAR
+#define JUAN_SLOWKING_GALAR
+
+#define JUAN_MUK(rematch, tier)                                               \
+    {                                                                         \
+    REMATCH_MON(MUK, tier, rematch, ITEM_BLACK_SLUDGE),                       \
+    .ability = ABILITY_POISON_TOUCH,                                          \
+    .nature = NATURE_ADAMANT,                                                 \
+    EV_SPREAD_ATK_SPE_HP,                                                     \
+    .moves = {MOVE_POISON_JAB, MOVE_DRAIN_PUNCH, MOVE_ICE_PUNCH, MOVE_LUNGE}, \
+    .gender = TRAINER_MON_MALE,                                               \
+    }
+
+#define JUAN_MUK_ALOLA
+#define JUAN_WEEZING
+
+#define JUAN_WEEZING_GALAR(rematch, tier)                                        \
+    {                                                                            \
+    REMATCH_MON(WEEZING_GALAR, tier, rematch, ITEM_BLACK_SLUDGE),                \
+    .ability = ABILITY_LEVITATE,                                                 \
+    .nature = NATURE_MODEST,                                                     \
+    EV_SPREAD_SPA_DEF_HP,                                                        \
+    .moves = {MOVE_SLUDGE_BOMB, MOVE_STRANGE_STEAM, MOVE_HEAT_WAVE, MOVE_TOXIC}, \
+    .gender = TRAINER_MON_MALE,                                                  \
+    }
+
+#define JUAN_CLODSIRE
+
+//Can replace Assault Vest/Acid Spray with Black Sludge/Shadow Ball
+#define JUAN_SWALOT(rematch, tier)                                                \
+    {                                                                             \
+    REMATCH_MON(SWALOT, tier, rematch, ITEM_ASSAULT_VEST),                        \
+    .ability = ABILITY_LIQUID_OOZE,                                               \
+    .nature = NATURE_MODEST,                                                      \
+    EV_SPREAD_SPA_HP_SPE,                                                         \
+    .moves = {MOVE_SLUDGE_BOMB, MOVE_GIGA_DRAIN, MOVE_ICE_BEAM, MOVE_ACID_SPRAY}, \
+    .gender = TRAINER_MON_MALE,                                                   \
+    }
+
+//Can replace Aqua Tail with Psychic Fangs
+#define JUAN_SEVIPER(rematch, tier)                                    \
+    {                                                                  \
+    REMATCH_MON(SEVIPER, tier, rematch),                               \
+    .ability = ABILITY_SHED_SKIN,                                      \
+    .nature = NATURE_ADAMANT,                                          \
+    EV_SPREAD_ATK_SPE_HP,                                              \
+    .moves = {MOVE_GUNK_SHOT, MOVE_CRUNCH, MOVE_AQUA_TAIL, MOVE_COIL}, \
+    .gender = TRAINER_MON_MALE,                                        \
+    }
+
+//Can replace Aftermath with Stench if the Ace
+#define JUAN_SKUNTANK(rematch, tier)                                             \
+    {                                                                            \
+    REMATCH_MON(SKUNTANK, tier, rematch, ITEM_BLACK_SLUDGE),                     \
+    .ability = ABILITY_AFTERMATH,                                                \
+    .nature = NATURE_ADAMANT,                                                    \
+    EV_SPREAD_ATK_HP_SPE,                                                        \
+    .moves = {MOVE_POISON_JAB, MOVE_CRUNCH, MOVE_PLAY_ROUGH, MOVE_SUCKER_PUNCH}, \
+    .gender = TRAINER_MON_MALE,                                                  \
+    }
+
+#define JUAN_DRAPION(rematch, tier)                                                   \
+    {                                                                                 \
+    REMATCH_MON(DRAPION, tier, rematch),                                              \
+    .ability = ABILITY_SNIPER,                                                        \
+    .nature = NATURE_ADAMANT,                                                         \
+    EV_SPREAD_ATK_DEF_HP,                                                             \
+    .moves = {MOVE_CROSS_POISON, MOVE_NIGHT_SLASH, MOVE_FELL_STINGER, MOVE_ICE_FANG}, \
+    .gender = TRAINER_MON_MALE,                                                       \
+    }
+
+#define JUAN_TOXICROAK(rematch, tier)                                            \
+    {                                                                            \
+    REMATCH_MON(TOXICROAK, tier, rematch, ITEM_BLACK_SLUDGE),                    \
+    .ability = ABILITY_POISON_TOUCH,                                             \
+    .nature = NATURE_ADAMANT,                                                    \
+    EV_SPREAD_ATK_SPE_HP,                                                        \
+    .moves = {MOVE_POISON_JAB, MOVE_DRAIN_PUNCH, MOVE_TOXIC, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                  \
+    }
+
+#define JUAN_GARDBODOR
+#define JUAN_DRAGALGE
+#define JUAN_TOXAPEX
+#define JUAN_SALAZZLE
+#define JUAN_GRAFAIAI
+
 #define JUAN_REMATCH(Rematch)                 \
 [DIFFICULTY_NORMAL][TRAINER_JUAN_##Rematch] = \
 {                                             \
@@ -3136,131 +3260,6 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         }
     },
 },
-
-//Poison
-//Hoenn Dex: Crobat, Swalot, Muk, Weezing, Weezing-G, Seviper
-//Hoenn Dex secondary: Dustox, Tentacruel, Vileplume, Roserade
-#define JUAN_ARBOK
-
-//Can replace Sheer Force/Drill Run with Poison Point/High Horsepower
-#define JUAN_NIDOQUEEN(rematch, tier)                                           \
-    {                                                                           \
-    REMATCH_MON(NIDOQUEEN, tier, rematch, ITEM_POISON_BARB),                    \
-    .ability = ABILITY_SHEER_FORCE,                                             \
-    .nature = NATURE_ADAMANT,                                                   \
-    EV_SPREAD_ATK_SPE_HP,                                                       \
-    .moves = {MOVE_POISON_JAB, MOVE_DRILL_RUN, MOVE_CRUNCH, MOVE_TOXIC_SPIKES}, \
-    .gender = TRAINER_MON_FEMALE,                                               \
-    }
-
-//Can replace Sheer Force/Drill Run/Throat Chop/Iron Tail with Poison Point/High Horsepower/Megahorn/Toxic
-#define JUAN_NIDOKING(rematch, tier)                                              \
-    {                                                                             \
-    REMATCH_MON(NIDOKING, tier, rematch, ITEM_POISON_BARB),                       \
-    .ability = ABILITY_SHEER_FORCE,                                               \
-    .nature = NATURE_ADAMANT,                                                     \
-    EV_SPREAD_ATK_SPE_HP,                                                         \
-    .moves = {MOVE_POISON_JAB, MOVE_DRILL_RUN, MOVE_THROAT_CHOP, MOVE_IRON_TAIL}, \
-    .gender = TRAINER_MON_MALE,                                                   \
-    }
-
-#define JUAN_CROBAT(rematch, tier)                                                \
-    {                                                                             \
-    REMATCH_MON(CROBAT, tier, rematch, ITEM_FLYING_GEM),                          \
-    .ability = ABILITY_INNER_FOCUS,                                               \
-    .nature = NATURE_JOLLY,                                                       \
-    EV_SPREAD_ATK_SPE_HP,                                                         \
-    .moves = {MOVE_POISON_JAB, MOVE_ACROBATICS, MOVE_LEECH_LIFE, MOVE_IRON_TAIL}, \
-    .gender = TRAINER_MON_MALE,                                                   \
-    }
-
-#define JUAN_SLOWBRO_GALAR
-#define JUAN_SLOWKING_GALAR
-
-#define JUAN_MUK(rematch, tier)                                               \
-    {                                                                         \
-    REMATCH_MON(MUK, tier, rematch, ITEM_BLACK_SLUDGE),                       \
-    .ability = ABILITY_POISON_TOUCH,                                          \
-    .nature = NATURE_ADAMANT,                                                 \
-    EV_SPREAD_ATK_SPE_HP,                                                     \
-    .moves = {MOVE_POISON_JAB, MOVE_DRAIN_PUNCH, MOVE_ICE_PUNCH, MOVE_LUNGE}, \
-    .gender = TRAINER_MON_MALE,                                               \
-    }
-
-#define JUAN_MUK_ALOLA
-#define JUAN_WEEZING
-
-#define JUAN_WEEZING_GALAR(rematch, tier)                                        \
-    {                                                                            \
-    REMATCH_MON(WEEZING_GALAR, tier, rematch, ITEM_BLACK_SLUDGE),                \
-    .ability = ABILITY_LEVITATE,                                                 \
-    .nature = NATURE_MODEST,                                                     \
-    EV_SPREAD_SPA_DEF_HP,                                                        \
-    .moves = {MOVE_SLUDGE_BOMB, MOVE_STRANGE_STEAM, MOVE_HEAT_WAVE, MOVE_TOXIC}, \
-    .gender = TRAINER_MON_MALE,                                                  \
-    }
-
-#define JUAN_CLODSIRE
-
-//Can replace Assault Vest/Acid Spray with Black Sludge/Shadow Ball
-#define JUAN_SWALOT(rematch, tier)                                                \
-    {                                                                             \
-    REMATCH_MON(SWALOT, tier, rematch, ITEM_ASSAULT_VEST),                        \
-    .ability = ABILITY_LIQUID_OOZE,                                               \
-    .nature = NATURE_MODEST,                                                      \
-    EV_SPREAD_SPA_HP_SPE,                                                         \
-    .moves = {MOVE_SLUDGE_BOMB, MOVE_GIGA_DRAIN, MOVE_ICE_BEAM, MOVE_ACID_SPRAY}, \
-    .gender = TRAINER_MON_MALE,                                                   \
-    }
-
-//Can replace Aqua Tail with Psychic Fangs
-#define JUAN_SEVIPER(rematch, tier)                                    \
-    {                                                                  \
-    REMATCH_MON(SEVIPER, tier, rematch),                               \
-    .ability = ABILITY_SHED_SKIN,                                      \
-    .nature = NATURE_ADAMANT,                                          \
-    EV_SPREAD_ATK_SPE_HP,                                              \
-    .moves = {MOVE_GUNK_SHOT, MOVE_CRUNCH, MOVE_AQUA_TAIL, MOVE_COIL}, \
-    .gender = TRAINER_MON_MALE,                                        \
-    }
-
-//Can replace Aftermath with Stench if the Ace
-#define JUAN_SKUNTANK(rematch, tier)                                             \
-    {                                                                            \
-    REMATCH_MON(SKUNTANK, tier, rematch, ITEM_BLACK_SLUDGE),                     \
-    .ability = ABILITY_AFTERMATH,                                                \
-    .nature = NATURE_ADAMANT,                                                    \
-    EV_SPREAD_ATK_HP_SPE,                                                        \
-    .moves = {MOVE_POISON_JAB, MOVE_CRUNCH, MOVE_PLAY_ROUGH, MOVE_SUCKER_PUNCH}, \
-    .gender = TRAINER_MON_MALE,                                                  \
-    }
-
-#define JUAN_DRAPION(rematch, tier)                                                   \
-    {                                                                                 \
-    REMATCH_MON(DRAPION, tier, rematch),                                              \
-    .ability = ABILITY_SNIPER,                                                        \
-    .nature = NATURE_ADAMANT,                                                         \
-    EV_SPREAD_ATK_DEF_HP,                                                             \
-    .moves = {MOVE_CROSS_POISON, MOVE_NIGHT_SLASH, MOVE_FELL_STINGER, MOVE_ICE_FANG}, \
-    .gender = TRAINER_MON_MALE,                                                       \
-    }
-
-
-#define JUAN_TOXICROAK(rematch, tier)                                            \
-    {                                                                            \
-    REMATCH_MON(TOXICROAK, tier, rematch, ITEM_BLACK_SLUDGE),                    \
-    .ability = ABILITY_POISON_TOUCH,                                             \
-    .nature = NATURE_ADAMANT,                                                    \
-    EV_SPREAD_ATK_SPE_HP,                                                        \
-    .moves = {MOVE_POISON_JAB, MOVE_DRAIN_PUNCH, MOVE_TOXIC, MOVE_SWORDS_DANCE}, \
-    .gender = TRAINER_MON_MALE,                                                  \
-    }
-
-#define JUAN_GARDBODOR
-#define JUAN_DRAGALGE
-#define JUAN_TOXAPEX
-#define JUAN_SALAZZLE
-#define JUAN_GRAFAIAI
 
 //Grass
 #define JUAN_VILEPLUME

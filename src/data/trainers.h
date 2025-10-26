@@ -3164,7 +3164,16 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .gender = TRAINER_MON_MALE,                                                   \
     }
 
-#define JUAN_CROBAT
+#define JUAN_CROBAT(rematch, tier)                                                \
+    {                                                                             \
+    REMATCH_MON(CROBAT, tier, rematch, ITEM_FLYING_GEM),                          \
+    .ability = ABILITY_INNER_FOCUS,                                               \
+    .nature = NATURE_JOLLY,                                                       \
+    EV_SPREAD_ATK_SPE_HP,                                                         \
+    .moves = {MOVE_POISON_JAB, MOVE_ACROBATICS, MOVE_LEECH_LIFE, MOVE_IRON_TAIL}, \
+    .gender = TRAINER_MON_MALE,                                                   \
+    }
+
 #define JUAN_SLOWBRO_GALAR
 #define JUAN_SLOWKING_GALAR
 

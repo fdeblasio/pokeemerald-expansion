@@ -1295,7 +1295,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Gust by level up
 
 - Crobat:
-    - Learns Gust by level up
+    - Learns Gust and Poison Jab by level up
 
 - Growlithe/Arcanine (not in game):
     - Learn Temper Flare by level up

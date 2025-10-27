@@ -3431,7 +3431,6 @@ static const struct LevelUpMove sElectrodeHisuiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(46, MOVE_GYRO_BALL),
     LEVEL_UP_MOVE(50, MOVE_THUNDERBOLT),
     LEVEL_UP_MOVE(50, MOVE_GRASSY_TERRAIN),
-    LEVEL_UP_MOVE(58, MOVE_THUNDERBOLT),
     LEVEL_UP_END
 };
 #endif //P_HISUIAN_FORMS

@@ -2422,6 +2422,7 @@ static const u16 sCrobatTeachableLearnset[] = {
     MOVE_LEECH_LIFE,
     MOVE_NASTY_PLOT,
     MOVE_PAYBACK,
+    MOVE_POISON_JAB,
     MOVE_PROTECT,
     MOVE_RAIN_DANCE,
     MOVE_REST,
@@ -7331,6 +7332,7 @@ static const u16 sTangelaTeachableLearnset[] = {
 static const u16 sTangrowthTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
+    MOVE_BODY_PRESS,
     MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,
     MOVE_BULLET_SEED,

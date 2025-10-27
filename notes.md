@@ -291,6 +291,7 @@ upcoming
     - Make them themed like ice and fire. Maybe can add legendaries
 - See what makes the 119 house Pokemon move and apply it other places
 - Fly from Lilycove Department Store roof?
+- Remove other Altering Cave sets
 - Let the player leave the first E4 hallway
 - Add FRLG trainer sprites/overworld sprites
     - Sprites are added but still need to be implemented. Overworld sprites may have duplicates for Pokémon and may need palettes

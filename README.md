@@ -843,6 +843,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Grass:
     - Chloroblast:
         - Accuracy: 95->100
+        - PP: 5->10
     - Leaf Tornado:
         - Accuracy: 90->100
     - Matcha Gotcha:
@@ -1302,17 +1303,20 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Poliwag (postgame):
     - SpA: 40->50
+    - Learns Surf by level up
 
 - Poliwhirl (postgame):
     - SpA: 50->65
+    - Learns Surf by level up
 
 - Poliwrath (postgame):
     - Atk: 95->100
-    - Learns Liquidation, Drain Punch, and Sky Uppercut by level up
+    - Learns Surf, Liquidation, Drain Punch, and Sky Uppercut by level up
 
 - Politoed (postgame):
     - Def: 75->80
     - SpA: 90->100
+    - Learns Surf by level up
 
 - Kadabra/Alakazam:
     - Held item: Twisted Spoon: 5%->100%
@@ -1332,15 +1336,18 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Geodude/Graveler:
     - Learn Rock Slide by level up
 
+- Alolan Geodude/Alolan Graveler (postgame):
+    - Learn Rock Slide and Supercell Slam by level up
+
 - Golem:
     - Def: 130->145
     - Spe: 45->50
     - Learns Rock Slide by level up
 
-- Alolan Golem (not in main game):
+- Alolan Golem (postgame):
     - Def: 130->145
     - Spe: 45->50
-    - Learns Rock Slide by level up
+    - Learns Rock Slide and Supercell Slam by level up
 
 - Ponyta/Rapidash (not in main game):
     - Learn Temper Flare and Blaze Kick by level up
@@ -1368,11 +1375,19 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Drowzee/Hypno (not in main game):
     Learn Dream Eater by level up
 
-- Voltorb/Electrode:
-    - Learn Thunderbolt by level up
+- Voltorb:
+    - Learns Thunderbolt by level up
 
-- Hisuian Voltorb/Hisuian Electrode (postgame):
-    - Learn Thunderbolt by level up
+- Hisuian Voltorb (postgame):
+    - Learns Absorb, Mega Drain, Giga Drain, and Thunderbolt by level up
+
+- Electrode:
+    - SpA: 80->90
+    - Learns Absorb, Mega Drain, Giga Drain, and Thunderbolt by level up
+
+- Hisuian Electrode (postgame):
+    - SpA: 80->90
+    - Learns Thunderbolt by level up
 
 - Exeggcute (not in main game):
     - Evolves in Alolan Exeggutor with a Sun Stone
@@ -1481,8 +1496,14 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Swift, Hyper Voice, and Revival Blessing by level up
     - Lucky Punch works on Blissey now
 
-- Tangela/Tangrowth (postgame):
-    - Learn Energy Ball by level up
+- Tangela (postgame):
+    - Learns Energy Ball by level up
+
+- Tangrowth (postgame):
+    - Atk: 100->90
+    - Spe: 50->60
+    - Learns Energy Ball by level up
+    - Learns Body Press by TM
 
 - Horsea/Seadra/Kingdra:
     - Learn Surf by level up
@@ -2770,8 +2791,12 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Abilities: Unaware/Klutz/Simple->Unaware/Simple/Synchronize
     - Learns Psybeam and Psychic Noise by level up
 
-- Drilbur/Excadrill (postgame):
-    - Learn Mud Shot, Bulldoze, and Stomping Tantrum by level up
+- Drilbur (postgame):
+    - Learns Mud Shot, Bulldoze, and Stomping Tantrum by level up
+
+- Excadrill (postgame):
+    - Learns Mud Shot, Bulldoze, and Stomping Tantrum by level up
+    - Learns Smart Strike upon evolving
 
 - Audino:
     - HP: 103->105
@@ -2795,8 +2820,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Bulldoze, Earth Power, and Surf by level up
 
 - Seismitoad (postgame):
-    - Learns Mud Bomb, Bulldoze, Stomping Tantrum, Earth Power, Liquidation, Earthquake, and Surf by level up
-    - Learns Waterfall by TM
+    - Learns Mud Bomb, Waterfall, Bulldoze, Stomping Tantrum, Earth Power, Liquidation, Earthquake, and Surf by level up
 
 - Sewaddle:
     - Learns Leafage by level up
@@ -2895,6 +2919,8 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Surf and Dual Wingbeat by level up
 
 - Swanna (postgame):
+    - SpA: 87->90
+    - Spe: 98->100
     - Learns Surf and Dual Wingbeat by level up
 
 - Vanillite (postgame):
@@ -3236,10 +3262,11 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Skrelp (postgame):
     - Evolution: 48->37
+    - Learns Sludge and Surf by level up
     - Learns Dragon Breath by Egg Move
 
 - Dragalge (postgame):
-    - Learns Dragon Breath by Egg Move
+    - Learns Dragon Breath, Sludge, and Surf by level up
 
 - Clauncher/Clawitzer (postgame):
     - Learn Scald and Surf by level up

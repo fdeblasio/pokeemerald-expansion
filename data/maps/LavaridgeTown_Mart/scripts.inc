@@ -23,6 +23,7 @@ LavaridgeTown_Mart_EventScript_TMClerk::
 
 	.align 2
 LavaridgeTown_Mart_TMs:
+	.2byte ITEM_TM_WATER_PULSE
 	.2byte ITEM_TM_TOXIC
 	.2byte ITEM_TM_BRINE
 	.2byte ITEM_TM_SIGNAL_BEAM

@@ -131,10 +131,10 @@ SootopolisCity_Gym_B1F_Text_OliviaPostBattle:
 	.string "Why don't you stay and train with us?$"
 
 SootopolisCity_Gym_B1F_Text_TiffanyIntro:
-	.string "A graceful glide across the ice while\n"
-	.string "crossing no lines…\p"
+	.string "A sick glide across the frozen acid\n"
+	.string "while crossing no lines…\p"
 	.string "A Trainer putting on that performance\n"
-	.string "would be elegantly beautiful!$"
+	.string "would be venomously cool!$"
 
 SootopolisCity_Gym_B1F_Text_TiffanyDefeat:
 	.string "Well, excuse me?!$"

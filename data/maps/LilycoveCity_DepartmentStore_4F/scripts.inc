@@ -167,7 +167,6 @@ LilycoveCity_DepartmentStore_4F_Pokemart_NewTMs:
 	.2byte ITEM_TM_X_SCISSOR
 	.2byte ITEM_TM_NIGHT_SLASH
 	.2byte ITEM_TM_IRON_HEAD
-	.2byte ITEM_TM_POISON_JAB
 	.2byte ITEM_TM_AURA_SPHERE
 	.2byte ITEM_TM_BUG_BUZZ
 	.2byte ITEM_TM_ACROBATICS

@@ -1835,7 +1835,7 @@ WINONA_REMATCH(5),
         .ability = ABILITY_SYNCHRONIZE,
         IVS(30),
         .moves = {MOVE_PSYCHIC, MOVE_HYPER_VOICE, MOVE_CALM_MIND, MOVE_HELPING_HAND},
-        .gender = TRAINER_MON_NONE,
+        .gender = TRAINER_MON_FEMALE,
         },
         {
         .lvl = 49,
@@ -2073,42 +2073,42 @@ TATE_AND_LIZA_REMATCH(5),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 55,
-        .species = SPECIES_CASTFORM,
-        .ability = ABILITY_FORECAST,
+        .species = SPECIES_SKUNTANK,
+        .ability = ABILITY_AFTERMATH,
         IVS(24),
-        .moves = {MOVE_WATER_PULSE, MOVE_WEATHER_BALL, MOVE_ICE_BEAM, MOVE_RAIN_DANCE},
+        .moves = {MOVE_POISON_JAB, MOVE_CRUNCH, MOVE_SUCKER_PUNCH, MOVE_FLAMETHROWER},
         .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 55,
-        .species = SPECIES_HUNTAIL,
-        .ability = ABILITY_SWIFT_SWIM,
+        .species = SPECIES_SEVIPER,
+        .ability = ABILITY_SHED_SKIN,
         IVS(24),
-        .moves = {MOVE_WATER_PULSE, MOVE_CRUNCH, MOVE_ICE_FANG, MOVE_RAIN_DANCE},
+        .moves = {MOVE_POISON_JAB, MOVE_CRUNCH, MOVE_HAZE, MOVE_COIL},
         .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 56,
-        .species = SPECIES_CRAWDAUNT,
-        .ability = ABILITY_SHELL_ARMOR,
+        .species = SPECIES_CROBAT,
+        .ability = ABILITY_INNER_FOCUS,
         IVS(24),
-        .moves = {MOVE_WATER_PULSE, MOVE_NIGHT_SLASH, MOVE_PROTECT, MOVE_SWORDS_DANCE},
+        .moves = {MOVE_POISON_JAB, MOVE_WING_ATTACK, MOVE_BITE, MOVE_CONFUSE_RAY},
         .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 56,
-        .species = SPECIES_LUVDISC,
-        .ability = ABILITY_SWIFT_SWIM,
+        .species = SPECIES_WEEZING_GALAR,
+        .ability = ABILITY_LEVITATE,
         IVS(24),
-        .moves = {MOVE_WATER_PULSE, MOVE_DRAINING_KISS, MOVE_BABY_DOLL_EYES, MOVE_AQUA_RING},
-        .gender = TRAINER_MON_FEMALE,
+        .moves = {MOVE_POISON_JAB, MOVE_STRANGE_STEAM, MOVE_HEAT_WAVE, MOVE_TOXIC},
+        .gender = TRAINER_MON_MALE,
         },
         {
         .lvl = 58,
-        .species = SPECIES_WHISCASH,
-        .ability = ABILITY_OBLIVIOUS,
+        .species = SPECIES_SWALOT,
+        .ability = ABILITY_LIQUID_OOZE,
         IVS(30),
-        .moves = {MOVE_WATER_PULSE, MOVE_EARTHQUAKE, MOVE_AMNESIA, MOVE_DRAGON_DANCE},
+        .moves = {MOVE_POISON_JAB, MOVE_BODY_SLAM, MOVE_STOCKPILE, MOVE_SWALLOW},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
         .ball = ITEM_POKE_BALL,
@@ -2298,12 +2298,12 @@ TATE_AND_LIZA_REMATCH(5),
     JUAN_INFO,                                \
     LEADER_REMATCH,                           \
     .party = (const struct TrainerMon[]) {    \
-        JUAN_SWAMPERT(Rematch, TIER3),        \
-        JUAN_CASTFORM(Rematch, TIER3),        \
-        JUAN_HUNTAIL(Rematch, TIER3),         \
-        JUAN_CRAWDAUNT(Rematch, TIER2),       \
-        JUAN_LUVDISC(Rematch, TIER2),         \
-        JUAN_WHISCASH(Rematch, ACE),          \
+        JUAN_MUK(Rematch, TIER3),             \
+        JUAN_SKUNTANK(Rematch, TIER3),        \
+        JUAN_SEVIPER(Rematch, TIER3),         \
+        JUAN_CROBAT(Rematch, TIER2),          \
+        JUAN_WEEZING_GALAR(Rematch, TIER2),   \
+        JUAN_SWALOT(Rematch, ACE),            \
     },                                        \
 }
 
@@ -16688,7 +16688,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 55,
-        .species = SPECIES_SEAKING,
+        .species = SPECIES_WEEZING_GALAR,
         IVS(12),
         }
     },
@@ -16703,7 +16703,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 55,
-        .species = SPECIES_LUVDISC,
+        .species = SPECIES_VENONAT,
         IVS(12),
         }
     },
@@ -16718,12 +16718,12 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         RICH_MON(54),
-        .species = SPECIES_CORSOLA,
+        .species = SPECIES_GOLBAT,
         IVS(12),
         },
         {
         RICH_MON(54),
-        .species = SPECIES_LUVDISC,
+        .species = SPECIES_WEEPINBELL,
         IVS(12),
         }
     },
@@ -16738,34 +16738,32 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         POKE_FAN_MON(54),
-        .species = SPECIES_MAGIKARP,
+        .species = SPECIES_BELLSPROUT,
         IVS(12),
-        .moves = {MOVE_HYDRO_PUMP, MOVE_BOUNCE, MOVE_FLAIL, MOVE_TACKLE}
         },
         {
         POKE_FAN_MON(54),
-        .species = SPECIES_FEEBAS,
+        .species = SPECIES_TOXEL,
         IVS(12),
-        .moves = {MOVE_WATER_PULSE, MOVE_FLAIL, MOVE_RETURN, MOVE_ATTRACT}
         }
     },
 },
 
 [DIFFICULTY_NORMAL][TRAINER_TIFFANY] =
 {
-    .trainerName = _("Tiffany"),
-    BEAUTY_INFO,
+    .trainerName = _("Gabe"),
+    BIKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 54,
-        .species = SPECIES_BARRASKEWDA,
+        .species = SPECIES_MUK,
         IVS(12),
         },
         {
         .lvl = 54,
-        .species = SPECIES_SHARPEDO,
+        .species = SPECIES_SEVIPER,
         IVS(12),
         }
     },
@@ -16780,12 +16778,12 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 54,
-        .species = SPECIES_LANTURN,
+        .species = SPECIES_SKUNTANK,
         IVS(12),
         },
         {
         .lvl = 54,
-        .species = SPECIES_WAILORD,
+        .species = SPECIES_WEEZING,
         IVS(12),
         }
     },
@@ -16800,17 +16798,17 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         POKE_FAN_MON(53),
-        .species = SPECIES_AZURILL,
+        .species = SPECIES_BUDEW,
         IVS(12),
         },
         {
         POKE_FAN_MON(53),
-        .species = SPECIES_MARILL,
+        .species = SPECIES_ROSELIA,
         IVS(12),
         },
         {
         POKE_FAN_MON(53),
-        .species = SPECIES_AZUMARILL,
+        .species = SPECIES_ROSERADE,
         IVS(12),
         }
     },
@@ -16825,21 +16823,18 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 53,
-        .species = SPECIES_CLAMPERL,
+        .species = SPECIES_CROBAT,
         IVS(12),
-        .moves = {MOVE_WATER_PULSE, MOVE_WHIRLPOOL, MOVE_RAIN_DANCE, MOVE_IRON_DEFENSE}
         },
         {
         .lvl = 53,
-        .species = SPECIES_CRAWDAUNT,
+        .species = SPECIES_WEEZING_GALAR,
         IVS(12),
-        .moves = {MOVE_WATER_PULSE, MOVE_NIGHT_SLASH, MOVE_PROTECT, MOVE_TAUNT}
         },
         {
         .lvl = 53,
-        .species = SPECIES_LUDICOLO,
+        .species = SPECIES_TOXTRICITY,
         IVS(12),
-        .moves = {MOVE_WATER_PULSE, MOVE_GIGA_DRAIN, MOVE_NATURE_POWER, MOVE_TEETER_DANCE}
         }
     },
 },
@@ -16853,7 +16848,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         RICH_MON(55),
-        .species = SPECIES_MARSHTOMP,
+        .species = SPECIES_VICTREEBEL,
         IVS(18),
         }
     },
@@ -16868,7 +16863,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 55,
-        .species = SPECIES_AZUMARILL,
+        .species = SPECIES_VENOMOTH,
         IVS(18),
         }
     },

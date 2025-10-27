@@ -213,7 +213,7 @@
 |:--:|   :--:   |:------:|
 |TM01|Focus Punch|Route 115|
 |TM02|Dragon Claw|Meteor Falls|
-|TM03|Water Pulse|Juan|
+|TM03|Water Pulse|Lavaridge TM Shop|
 |TM04|Calm Mind|Slateport TM Shop|
 |TM05|Roar|Route 114|
 |TM06|Toxic|Lavaridge TM Shop|
@@ -294,7 +294,7 @@
 |TM81|X-Scissor|Lilycove TM Shop|
 |TM82|Night Slash|Lilycove TM Shop|
 |TM83|Iron Head|Lilycove TM Shop|
-|TM84|Poison Jab|Lilycove TM Shop|
+|TM84|Poison Jab|Juan|
 |TM85|Aura Sphere|Lilycove TM Shop|
 |TM86|Grass Knot|Lavaridge TM Shop|
 |TM87|Bug Buzz|Lilycove TM Shop|
@@ -2492,7 +2492,7 @@
 - Dragalge (postgame):
     - Learns Dragon Breath, Sludge, and Surf by level up
 
-- Clauncher/Clawitzer:
+- Clauncher/Clawitzer (postgame):
     - Learn Scald and Surf by level up
 
 - Goomy:

@@ -177,6 +177,7 @@ upcoming
     - Turn Team Magma into Ground specialists (Camerupt still works as other people like Winona and Sidney use the secondary typing for their aces)?
         - Would cancel out the addition of Houndoom?
 - Add level defines per route/group of routes?
+- Added species defines for Madeline/Laurel?
 - Update Tabitha (and maybe others?) macros to use Magma levels instead of Rematch levels?
 - Add ORAS team members (like a Picknicker getting a Gulpin)
 - Now that Gym Leader rematch party size is consistent, maybe a macro can be made

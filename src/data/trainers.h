@@ -2224,6 +2224,7 @@ TATE_AND_LIZA_REMATCH(5),
     .gender = TRAINER_MON_MALE,                                                   \
     }
 
+//Extra for hacks
 //Poison
 //Hoenn Dex: Crobat, Swalot, Muk, Weezing, Weezing-G, Seviper
 //Hoenn Dex secondary: Dustox, Tentacruel, Vileplume, Roserade
@@ -3129,6 +3130,208 @@ JUAN_REMATCH(5),
     },
 },
 
+//Need a way to define Ace for Poke Ball/Sitrus Berry
+#define WALLACE_MON(Level, Species) \
+    .lvl = Level,                   \
+    .species = SPECIES_##Species,   \
+    PERFECT_IVS
+
+#define WALLACE_MILOTIC(Level)                                          \
+    {                                                                   \
+    WALLACE_MON(Level, MILOTIC),                                        \
+    .ability = ABILITY_MARVEL_SCALE,                                    \
+    .nature = NATURE_MODEST,                                            \
+    EV_SPREAD_SPA_SPD_SPE,                                              \
+    .moves = {MOVE_HYDRO_PUMP, MOVE_ICE_BEAM, MOVE_COIL, MOVE_RECOVER}, \
+    .gender = TRAINER_MON_FEMALE,                                       \
+    .heldItem = ITEM_SITRUS_BERRY,                                      \
+    .ball = ITEM_POKE_BALL,                                             \
+    }
+
+#define WALLACE_WAILORD(Level)                                                \
+    {                                                                         \
+    WALLACE_MON(Level, WAILORD),                                              \
+    .ability = ABILITY_OBLIVIOUS,                                             \
+    .nature = NATURE_MODEST,                                                  \
+    EV_SPREAD_SPA_HP_SPE,                                                     \
+    .moves = {MOVE_WATER_SPOUT, MOVE_ICE_BEAM, MOVE_AQUA_RING, MOVE_AMNESIA}, \
+    .gender = TRAINER_MON_MALE,                                               \
+    .heldItem = ITEM_LEFTOVERS,                                               \
+    .ball = ITEM_DIVE_BALL,                                                   \
+    }
+
+#define WALLACE_LUDICOLO(Level)                                              \
+    {                                                                        \
+    WALLACE_MON(Level, LUDICOLO),                                            \
+    .ability = ABILITY_SWIFT_SWIM,                                           \
+    .nature = NATURE_MODEST,                                                 \
+    EV_SPREAD_SPA_SPE_HP,                                                    \
+    .moves = {MOVE_SURF, MOVE_GIGA_DRAIN, MOVE_LEECH_SEED, MOVE_RAIN_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                              \
+    .ball = ITEM_ULTRA_BALL,                                                 \
+    }
+
+#define WALLACE_RELICANTH(Level)                                      \
+    {                                                                 \
+    WALLACE_MON(Level, RELICANTH),                                    \
+    .ability = ABILITY_SWIFT_SWIM,                                    \
+    .nature = NATURE_IMPISH,                                          \
+    EV_SPREAD_ATK_DEF_HP,                                             \
+    .moves = {MOVE_AQUA_TAIL, MOVE_ROCK_SLIDE, MOVE_YAWN, MOVE_REST}, \
+    .gender = TRAINER_MON_MALE,                                       \
+    .heldItem = ITEM_CHESTO_BERRY,                                    \
+    .ball = ITEM_DIVE_BALL,                                           \
+    .isShiny = TRUE,                                                  \
+    }
+
+#define WALLACE_GOREBYSS(Level)                                               \
+    {                                                                         \
+    WALLACE_MON(Level, GOREBYSS),                                             \
+    .ability = ABILITY_SWIFT_SWIM,                                            \
+    .nature = NATURE_MODEST,                                                  \
+    EV_SPREAD_SPA_SPE_DEF,                                                    \
+    .moves = {MOVE_SURF, MOVE_PSYCHIC, MOVE_DRAINING_KISS, MOVE_SHELL_SMASH}, \
+    .gender = TRAINER_MON_FEMALE,                                             \
+    .ball = ITEM_DIVE_BALL,                                                   \
+    }
+
+#define WALLACE_PELIPPER(Level)                                            \
+    {                                                                      \
+    WALLACE_MON(Level, PELIPPER),                                          \
+    .ability = ABILITY_DRIZZLE,                                            \
+    .nature = NATURE_MODEST,                                               \
+    EV_SPREAD_SPA_DEF_SPE,                                                 \
+    .moves = {MOVE_HYDRO_PUMP, MOVE_HURRICANE, MOVE_ROOST, MOVE_TAILWIND}, \
+    .gender = TRAINER_MON_MALE,                                            \
+    .heldItem = ITEM_DAMP_ROCK,                                            \
+    .ball = ITEM_ULTRA_BALL,                                               \
+    }
+
+//Extra for hacks
+#define WALLACE_AZUMARILL(Level)                                                \
+    {                                                                           \
+    WALLACE_MON(Level, AZUMARILL),                                              \
+    .ability = ABILITY_HUGE_POWER,                                              \
+    .nature = NATURE_MODEST,                                                    \
+    EV_SPREAD_SPA_DEF_SPE,                                                      \
+    .moves = {MOVE_PLAY_ROUGH, MOVE_AQUA_TAIL, MOVE_BULLDOZE, MOVE_BELLY_DRUM}, \
+    .gender = TRAINER_MON_MALE,                                                 \
+    .heldItem = ITEM_LEFTOVERS,                                                 \
+    .ball = ITEM_DIVE_BALL,                                                     \
+    }
+
+//Fairy
+//Can replace Calm Mind/Moonlight with Misty Terrain/Life Dew
+#define WALLACE_CLEFABLE(Level)                                                   \
+    WALLACE_MON(Level, CLEFABLE),                                                 \
+    {                                                                             \
+    .ability = ABILITY_MAGIC_GUARD,                                               \
+    .nature = NATURE_MODEST,                                                      \
+    EV_SPREAD_SPA_HP_SPE,                                                         \
+    .moves = {MOVE_MOONBLAST, MOVE_FLAMETHROWER, MOVE_CALM_MIND, MOVE_MOONLIGHT}, \
+    .gender = TRAINER_MON_FEMALE,                                                 \
+    .ball = ITEM_MOON_BALL,                                                       \
+    }
+
+#define WALLACE_SYLVEON(Level)                                                          \
+    WALLACE_MON(Level, SYLVEON),                                                        \
+    {                                                                                   \
+    .ability = ABILITY_PIXILATE,                                                        \
+    .nature = NATURE_MODEST,                                                            \
+    EV_SPREAD_SPA_SPD_SPE,                                                              \
+    .moves = {MOVE_HYPER_VOICE, MOVE_STORED_POWER, MOVE_CALM_MIND, MOVE_MISTY_TERRAIN}, \
+    .gender = TRAINER_MON_FEMALE,                                                       \
+    .ball = ITEM_ULTRA_BALL,                                                            \
+    }
+
+//EVs can be SpA/HP/Spe
+//Aura Sphere/Sitrus Berry can by replaced by Life Dew/Leftovers
+#define WALLACE_TOGEKISS(Level)                                                        \
+    WALLACE_MON(Level, TOGEKISS),                                                      \
+    {                                                                                  \
+    .ability = ABILITY_SERENE_GRACE,                                                   \
+    .nature = NATURE_MODEST,                                                           \
+    EV_SPREAD_SPA_SPE_HP,                                                              \
+    .moves = {MOVE_DAZZLING_GLEAM, MOVE_AIR_SLASH, MOVE_AURA_SPHERE, MOVE_NASTY_PLOT}, \
+    .gender = TRAINER_MON_MALE,                                                        \
+    .heldItem = ITEM_SITRUS_BERRY,                                                     \
+    .ball = ITEM_ULTRA_BALL,                                                           \
+    }
+
+#define WALLACE_GRANBULL(Level)                                                  \
+    WALLACE_MON(Level, GRANBULL),                                                \
+    {                                                                            \
+    .ability = ABILITY_STRONG_JAW,                                               \
+    .nature = NATURE_ADAMANT,                                                    \
+    EV_SPREAD_ATK_SPE_HP,                                                        \
+    .moves = {MOVE_PLAY_ROUGH, MOVE_CRUNCH, MOVE_FIRE_FANG, MOVE_PSYCHIC_FANGS}, \
+    .gender = TRAINER_MON_MALE,                                                  \
+    .ball = ITEM_ULTRA_BALL,                                                     \
+    }
+
+#define WALLACE_FLORGES
+
+#define WALLACE_AROMATISSE(Level)                                                   \
+    WALLACE_MON(Level, AROMATISSE),                                                 \
+    {                                                                               \
+    .ability = ABILITY_AROMA_VEIL,                                                  \
+    .nature = NATURE_MODEST,                                                        \
+    EV_SPREAD_SPA_HP_SPD,                                                           \
+    .moves = {MOVE_MOONBLAST, MOVE_REFLECT, MOVE_AROMATHERAPY, MOVE_MISTY_TERRAIN}, \
+    .gender = TRAINER_MON_FEMALE,                                                   \
+    .heldItem = ITEM_TERRAIN_EXTENDER,                                              \
+    .ball = ITEM_HEAL_BALL,                                                         \
+    }
+
+#define WALLACE_SLURPUFF(Level)                                                               \
+    WALLACE_MON(Level, SLURPUFF),                                                             \
+    {                                                                                         \
+    .ability = ABILITY_SWEET_VEIL,                                                            \
+    .nature = NATURE_MODEST,                                                                  \
+    EV_SPREAD_SPA_SPE_HP,                                                                     \
+    .moves = {MOVE_DAZZLING_GLEAM, MOVE_LIGHT_SCREEN, MOVE_COTTON_GUARD, MOVE_MISTY_TERRAIN}, \
+    .gender = TRAINER_MON_MALE,                                                               \
+    .heldItem = ITEM_TERRAIN_EXTENDER,                                                        \
+    .ball = ITEM_ULTRA_BALL,                                                                  \
+    }
+
+#define WALLACE_COMFEY(Level)                                                       \
+    WALLACE_MON(Level, COMFEY),                                                     \
+    {                                                                               \
+    .ability = ABILITY_TRIAGE,                                                      \
+    .nature = NATURE_CALM,                                                          \
+    EV_SPREAD_SPA_SPD_SPE,                                                          \
+    .moves = {MOVE_DRAINING_KISS, MOVE_GIGA_DRAIN, MOVE_SYNTHESIS, MOVE_CALM_MIND}, \
+    .gender = TRAINER_MON_FEMALE,                                                   \
+    .heldItem = ITEM_BIG_ROOT,                                                      \
+    .ball = ITEM_HEAL_BALL,                                                         \
+    }
+
+#define WALLACE_ALCREMIE
+
+#define WALLACE_DACHSBUN(Level)                                                 \
+    WALLACE_MON(Level, DACHSBUN),                                               \
+    {                                                                           \
+    .ability = ABILITY_WELL_BAKED_BODY,                                         \
+    .nature = NATURE_IMPISH,                                                    \
+    EV_SPREAD_ATK_DEF_HP,                                                       \
+    .moves = {MOVE_PLAY_ROUGH, MOVE_BODY_PRESS, MOVE_WORK_UP, MOVE_BATON_PASS}, \
+    .gender = TRAINER_MON_FEMALE,                                               \
+    .ball = ITEM_ULTRA_BALL,                                                    \
+    }
+
+#define WALLACE_TINKATON(Level)                                                          \
+    WALLACE_MON(Level, TINKATON),                                                        \
+    {                                                                                    \
+    .ability = ABILITY_STEELWORKER,                                                      \
+    .nature = NATURE_ADAMANT,                                                            \
+    EV_SPREAD_ATK_SPE_SPD,                                                               \
+    .moves = {MOVE_PLAY_ROUGH, MOVE_GIGATON_HAMMER, MOVE_ROCK_SLIDE, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_FEMALE,                                                        \
+    .heldItem = ITEM_SITRUS_BERRY,                                                       \
+    .ball = ITEM_POKE_BALL,                                                              \
+    }
+
 #define WALLACE_BATTLE(Trainer, AceLevel)                                                  \
 [DIFFICULTY_NORMAL][TRAINER_##Trainer] =                                                   \
 {                                                                                          \
@@ -3141,77 +3344,12 @@ JUAN_REMATCH(5),
     BOSS_AI_FLAGS,                                                                         \
     .partySize = 6,                                                                        \
     .party = (const struct TrainerMon[]) {                                                 \
-        {                                                                                  \
-        .lvl = AceLevel - 3,                                                               \
-        .species = SPECIES_PELIPPER,                                                       \
-        .ability = ABILITY_DRIZZLE,                                                        \
-        .nature = NATURE_MODEST,                                                           \
-        EV_SPREAD_SPA_DEF_SPE,                                                             \
-        PERFECT_IVS,                                                                       \
-        .moves = {MOVE_HYDRO_PUMP, MOVE_HURRICANE, MOVE_ROOST, MOVE_TAILWIND},             \
-        .gender = TRAINER_MON_MALE,                                                        \
-        .heldItem = ITEM_DAMP_ROCK,                                                        \
-        .ball = ITEM_ULTRA_BALL,                                                           \
-        },                                                                                 \
-        {                                                                                  \
-        .lvl = AceLevel - 3,                                                               \
-        .species = SPECIES_GOREBYSS,                                                       \
-        .ability = ABILITY_SWIFT_SWIM,                                                     \
-        .nature = NATURE_MODEST,                                                           \
-        EV_SPREAD_SPA_SPE_DEF,                                                             \
-        PERFECT_IVS,                                                                       \
-        .moves = {MOVE_SURF, MOVE_PSYCHIC, MOVE_DRAINING_KISS, MOVE_SHELL_SMASH},          \
-        .gender = TRAINER_MON_FEMALE,                                                      \
-        .ball = ITEM_DIVE_BALL,                                                            \
-        },                                                                                 \
-        {                                                                                  \
-        .lvl = AceLevel - 3,                                                               \
-        .species = SPECIES_RELICANTH,                                                      \
-        .ability = ABILITY_SWIFT_SWIM,                                                     \
-        .nature = NATURE_IMPISH,                                                           \
-        EV_SPREAD_ATK_DEF_HP,                                                              \
-        PERFECT_IVS,                                                                       \
-        .moves = {MOVE_AQUA_TAIL, MOVE_ROCK_SLIDE, MOVE_YAWN, MOVE_REST},                  \
-        .gender = TRAINER_MON_MALE,                                                        \
-        .heldItem = ITEM_CHESTO_BERRY,                                                     \
-        .ball = ITEM_DIVE_BALL,                                                            \
-        .isShiny = TRUE,                                                                   \
-        },                                                                                 \
-        {                                                                                  \
-        .lvl = AceLevel - 2,                                                               \
-        .species = SPECIES_LUDICOLO,                                                       \
-        .ability = ABILITY_SWIFT_SWIM,                                                     \
-        .nature = NATURE_MODEST,                                                           \
-        EV_SPREAD_SPA_SPE_HP,                                                              \
-        PERFECT_IVS,                                                                       \
-        .moves = {MOVE_SURF, MOVE_GIGA_DRAIN, MOVE_LEECH_SEED, MOVE_RAIN_DANCE},           \
-        .gender = TRAINER_MON_MALE,                                                        \
-        .ball = ITEM_ULTRA_BALL,                                                           \
-        },                                                                                 \
-        {                                                                                  \
-        .lvl = AceLevel - 2,                                                               \
-        .species = SPECIES_WAILORD,                                                        \
-        .ability = ABILITY_OBLIVIOUS,                                                      \
-        .nature = NATURE_MODEST,                                                           \
-        EV_SPREAD_SPA_HP_SPE,                                                              \
-        PERFECT_IVS,                                                                       \
-        .moves = {MOVE_WATER_SPOUT, MOVE_ICE_BEAM, MOVE_AQUA_RING, MOVE_AMNESIA},          \
-        .gender = TRAINER_MON_MALE,                                                        \
-        .heldItem = ITEM_LEFTOVERS,                                                        \
-        .ball = ITEM_DIVE_BALL,                                                            \
-        },                                                                                 \
-        {                                                                                  \
-        .lvl = AceLevel,                                                                   \
-        .species = SPECIES_MILOTIC,                                                        \
-        .ability = ABILITY_MARVEL_SCALE,                                                   \
-        .nature = NATURE_MODEST,                                                           \
-        EV_SPREAD_SPA_SPD_SPE,                                                             \
-        PERFECT_IVS,                                                                       \
-        .moves = {MOVE_HYDRO_PUMP, MOVE_ICE_BEAM, MOVE_COIL, MOVE_RECOVER},                \
-        .gender = TRAINER_MON_FEMALE,                                                      \
-        .heldItem = ITEM_SITRUS_BERRY,                                                     \
-        .ball = ITEM_POKE_BALL,                                                            \
-        },                                                                                 \
+        WALLACE_PELIPPER(AceLevel - 3),                                                    \
+        WALLACE_GOREBYSS(AceLevel - 3),                                                    \
+        WALLACE_RELICANTH(AceLevel - 3),                                                   \
+        WALLACE_LUDICOLO(AceLevel - 2),                                                    \
+        WALLACE_WAILORD(AceLevel - 2),                                                     \
+        WALLACE_MILOTIC(AceLevel),                                                         \
     },                                                                                     \
 }
 
@@ -3333,19 +3471,6 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define JUAN_BRAMBLEGHAST
 #define JUAN_SCOVILLAIN //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1972
 #define JUAN_SINISTCHA
-
-//Fairy
-#define WALLACE_CLEFABLE //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L2180 (Cats' replaces Calm Mind/Moonlight with Misty Terrain/Life Dew)
-#define WALLACE_SYLVEON //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L2191
-#define WALLACE_TOGEKISS //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L2202 and https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L2206
-#define WALLACE_GRANBULL //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L2169
-#define WALLACE_FLORGES
-#define WALLACE_AROMATISSE //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L2160
-#define WALLACE_SLURPUFF //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L2172
-#define WALLACE_COMFEY
-#define WALLACE_ALCREMIE
-#define WALLACE_DACHSBUN //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L2158
-#define WALLACE_TINKATON //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L2218
 
 #define REMATCH_2_LEVEL_1 35
 #define REMATCH_2_LEVEL_2 REMATCH_2_LEVEL_1 - 1

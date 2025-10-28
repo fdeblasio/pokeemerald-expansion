@@ -3822,11 +3822,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_COMFEY
     [SPECIES_COMFEY] =
     {
-        .baseHP        = 51,
-        .baseAttack    = 52,
+        .baseHP        = 55,
+        .baseAttack    = 55,
         .baseDefense   = 90,
         .baseSpeed     = 100,
-        .baseSpAttack  = 82,
+        .baseSpAttack  = 90,
         .baseSpDefense = 110,
         .types = MON_TYPES(TYPE_FAIRY),
         .catchRate = 60,

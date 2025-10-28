@@ -3495,7 +3495,10 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Leafage, Leaf Tornado, and Seed Bomb by level up
 
 - Comfey:
-    - Learns Fairy Wind and Dazzling Gleam by level up
+    - HP: 51->55
+    - Atk: 52->55
+    - SpA: 82->90
+    - Learns Fairy Wind, Giga Drain, and Dazzling Gleam by level up
 
 - Sandygast/Palossand:
     - Learn Mud-Slap, Mud Shot, Hex, and Scorching Sands by level up

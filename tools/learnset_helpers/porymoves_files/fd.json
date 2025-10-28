@@ -13541,6 +13541,10 @@
         "Move": "MOVE_FAIRY_WIND"
       },
       {
+        "Level": 33,
+        "Move": "MOVE_GIGA_DRAIN"
+      },
+      {
         "Level": 39,
         "Move": "MOVE_DAZZLING_GLEAM"
       }

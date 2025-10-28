@@ -31,15 +31,6 @@ SealedChamber_OuterRoom_Braille_Period:
 SealedChamber_OuterRoom_Braille_Comma:
 	.braille ",$"
 
-SealedChamber_OuterRoom_Braille_DigHere:
-	.braille "DIG HERE.$"
-
-SealedChamber_InnerRoom_Braille_FirstWailordLastRelicanth:
-	.braille "FIRST COMES\n"
-	.braille "WAILORD.\n"
-	.braille "LAST COMES\n"
-	.braille "RELICANTH.$"
-
 SealedChamber_InnerRoom_Braille_InThisCaveWeHaveLived:
 	.braille "IN THIS\n"
 	.braille "CAVE WE\n"

@@ -2925,8 +2925,7 @@ JUAN_REMATCH(4),
 
 #define SIDNEY_PERSIAN(Level, Tier)                                                \
     {                                                                              \
-    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                           \
-    .species = SPECIES_PERSIAN_ALOLAN,                                             \
+    ELITE_FOUR_MON(Level, PERSIAN_ALOLAN, Tier, SIDNEY),                           \
     .ability = ABILITY_FUR_COAT,                                                   \
     .nature = NATURE_MODEST,                                                       \
     EV_SPREAD_SPA_SPE_DEF,                                                         \
@@ -2934,25 +2933,32 @@ JUAN_REMATCH(4),
     .gender = TRAINER_MON_MALE,                                                    \
     }
 
-//Can replace Moonlight/Baby-Doll Eyes with Confuse Ray/Mean Look
-#define SIDNEY_UMBREON(Level, Tier)                                             \
-    {                                                                           \
-    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                        \
-    .species = SPECIES_UMBREON,                                                 \
-    .ability = ABILITY_SYNCHRONIZE,                                             \
-    .nature = NATURE_CALM,                                                      \
-    EV_SPREAD_SPD_DEF_HP,                                                       \
-    .moves = {MOVE_FOUL_PLAY, MOVE_TOXIC, MOVE_MOONLIGHT, MOVE_BABY_DOLL_EYES}, \
-    .gender = TRAINER_MON_MALE,                                                 \
+//Can replace Confuse Ray/Mean Look with Moonlight/Baby-Doll Eyes
+#define SIDNEY_UMBREON(Level, Tier)                                          \
+    {                                                                        \
+    ELITE_FOUR_MON(Level, UMBREON, Tier, SIDNEY),                            \
+    .ability = ABILITY_SYNCHRONIZE,                                          \
+    .nature = NATURE_CALM,                                                   \
+    EV_SPREAD_SPD_DEF_HP,                                                    \
+    .moves = {MOVE_FOUL_PLAY, MOVE_TOXIC, MOVE_CONFUSE_RAY, MOVE_MEAN_LOOK}, \
+    .gender = TRAINER_MON_MALE,                                              \
     }
 
-#define SIDNEY_HONCHKROW
+#define SIDNEY_HONCHKROW(Level, Tier)                                         \
+    {                                                                         \
+    ELITE_FOUR_MON(Level, HONCHKROW, Tier, SIDNEY, ITEM_FOCUS_LENS),          \
+    .ability = ABILITY_SUPER_LUCK,                                            \
+    .nature = NATURE_ADAMANT,                                                 \
+    EV_SPREAD_ATK_SPE_HP,                                                     \
+    .moves = {MOVE_NIGHT_SLASH, MOVE_ACROBATICS, MOVE_U_TURN, MOVE_TAILWIND}, \
+    .gender = TRAINER_MON_MALE,                                               \
+    }
+
 #define SIDNEY_OVERQWIL
 
 #define SIDNEY_WEAVILE(Level, Tier)                                                    \
     {                                                                                  \
-    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                               \
-    .species = SPECIES_WEAVILE,                                                        \
+    ELITE_FOUR_MON(Level, WEAVILE, Tier, SIDNEY),                                      \
     .ability = ABILITY_PRESSURE,                                                       \
     .nature = NATURE_JOLLY,                                                            \
     EV_SPREAD_ATK_SPE_HP,                                                              \
@@ -2962,8 +2968,7 @@ JUAN_REMATCH(4),
 
 #define SIDNEY_HOUNDOOM(Level, Tier)                                                  \
     {                                                                                 \
-    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                              \
-    .species = SPECIES_HOUNDOOM,                                                      \
+    ELITE_FOUR_MON(Level, HOUNDOOM, Tier, SIDNEY),                                    \
     .ability = ABILITY_FLASH_FIRE,                                                    \
     .nature = NATURE_MODEST,                                                          \
     EV_SPREAD_SPA_SPE_HP,                                                             \
@@ -2976,8 +2981,7 @@ JUAN_REMATCH(4),
 
 #define SIDNEY_LIEPARD(Level, Tier)                                                \
     {                                                                              \
-    ELITE_FOUR_MON(Level, Tier, SIDNEY, ITEM_LIECHI_BERRY),                        \
-    .species = SPECIES_LIEPARD,                                                    \
+    ELITE_FOUR_MON(Level, LIEPARD, Tier, SIDNEY, ITEM_LIECHI_BERRY),               \
     .ability = ABILITY_UNBURDEN,                                                   \
     .nature = NATURE_JOLLY,                                                        \
     EV_SPREAD_ATK_SPE_HP,                                                          \
@@ -2986,15 +2990,24 @@ JUAN_REMATCH(4),
     }
 
 #define SIDNEY_SCRAFTY
-#define SIDNEY_ZOROARK
+
+#define SIDNEY_ZOROARK(Level, Tier)                                               \
+    {                                                                             \
+    ELITE_FOUR_MON(Level, ZOROARK, Tier, SIDNEY),                                 \
+    .ability = ABILITY_ILLUSION,                                                  \
+    .nature = NATURE_MODEST,                                                      \
+    EV_SPREAD_SPA_SPE_HP,                                                         \
+    .moves = {MOVE_NIGHT_DAZE, MOVE_PSYCHIC, MOVE_FLAMETHROWER, MOVE_NASTY_PLOT}, \
+    .gender = TRAINER_MON_MALE,                                                   \
+    }
+
 #define SIDNEY_KINGAMBIT
 #define SIDNEY_MANDIBUZZ
 #define SIDNEY_HYDREIGON
 
 #define SIDNEY_MALAMAR(Level, Tier)                                                    \
     {                                                                                  \
-    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                               \
-    .species = SPECIES_MALAMAR,                                                        \
+    ELITE_FOUR_MON(Level, MALAMAR, Tier, SIDNEY),                                      \
     .ability = ABILITY_CONTRARY,                                                       \
     .nature = NATURE_ADAMANT,                                                          \
     EV_SPREAD_ATK_SPE_HP,                                                              \
@@ -3006,8 +3019,7 @@ JUAN_REMATCH(4),
 
 #define SIDNEY_GRIMMSNARL(Level, Tier)                                               \
     {                                                                                \
-    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                             \
-    .species = SPECIES_GRIMMSNARL,                                                   \
+    ELITE_FOUR_MON(Level, GRIMMSNARL, Tier, SIDNEY),                                 \
     .ability = ABILITY_PRANKSTER,                                                    \
     .nature = NATURE_ADAMANT,                                                        \
     EV_SPREAD_ATK_SPE_HP,                                                            \
@@ -3015,7 +3027,15 @@ JUAN_REMATCH(4),
     .gender = TRAINER_MON_MALE,                                                      \
     }
 
-#define SIDNEY_MABOSSTIFF
+#define SIDNEY_MABOSSTIFF(Level, Tier)                                      \
+    {                                                                       \
+    ELITE_FOUR_MON(Level, MABOSSTIFF, Tier, SIDNEY),                        \
+    .ability = ABILITY_INTIMIDATE,                                          \
+    .nature = NATURE_ADAMANT,                                               \
+    EV_SPREAD_ATK_SPE_HP,                                                   \
+    .moves = {MOVE_CRUNCH, MOVE_PLAY_ROUGH, MOVE_OUTRAGE, MOVE_HONE_CLAWS}, \
+    .gender = TRAINER_MON_MALE,                                             \
+    }
 
 [DIFFICULTY_NORMAL][TRAINER_SIDNEY] =
 {

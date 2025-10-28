@@ -3131,14 +3131,14 @@ JUAN_REMATCH(5),
 },
 
 //Need a way to define Ace for Poke Ball/Sitrus Berry
-#define WALLACE_MON(Level, Species) \
-    .lvl = Level,                   \
-    .species = SPECIES_##Species,   \
+#define WALLACE_STEVEN_MON(Level, Species) \
+    .lvl = Level,                          \
+    .species = SPECIES_##Species,          \
     PERFECT_IVS
 
 #define WALLACE_MILOTIC(Level)                                          \
     {                                                                   \
-    WALLACE_MON(Level, MILOTIC),                                        \
+    WALLACE_STEVEN_MON(Level, MILOTIC),                                 \
     .ability = ABILITY_MARVEL_SCALE,                                    \
     .nature = NATURE_MODEST,                                            \
     EV_SPREAD_SPA_SPD_SPE,                                              \
@@ -3150,7 +3150,7 @@ JUAN_REMATCH(5),
 
 #define WALLACE_WAILORD(Level)                                                \
     {                                                                         \
-    WALLACE_MON(Level, WAILORD),                                              \
+    WALLACE_STEVEN_MON(Level, WAILORD),                                       \
     .ability = ABILITY_OBLIVIOUS,                                             \
     .nature = NATURE_MODEST,                                                  \
     EV_SPREAD_SPA_HP_SPE,                                                     \
@@ -3162,7 +3162,7 @@ JUAN_REMATCH(5),
 
 #define WALLACE_LUDICOLO(Level)                                              \
     {                                                                        \
-    WALLACE_MON(Level, LUDICOLO),                                            \
+    WALLACE_STEVEN_MON(Level, LUDICOLO),                                     \
     .ability = ABILITY_SWIFT_SWIM,                                           \
     .nature = NATURE_MODEST,                                                 \
     EV_SPREAD_SPA_SPE_HP,                                                    \
@@ -3173,7 +3173,7 @@ JUAN_REMATCH(5),
 
 #define WALLACE_RELICANTH(Level)                                      \
     {                                                                 \
-    WALLACE_MON(Level, RELICANTH),                                    \
+    WALLACE_STEVEN_MON(Level, RELICANTH),                             \
     .ability = ABILITY_SWIFT_SWIM,                                    \
     .nature = NATURE_IMPISH,                                          \
     EV_SPREAD_ATK_DEF_HP,                                             \
@@ -3186,7 +3186,7 @@ JUAN_REMATCH(5),
 
 #define WALLACE_GOREBYSS(Level)                                               \
     {                                                                         \
-    WALLACE_MON(Level, GOREBYSS),                                             \
+    WALLACE_STEVEN_MON(Level, GOREBYSS),                                      \
     .ability = ABILITY_SWIFT_SWIM,                                            \
     .nature = NATURE_MODEST,                                                  \
     EV_SPREAD_SPA_SPE_DEF,                                                    \
@@ -3197,7 +3197,7 @@ JUAN_REMATCH(5),
 
 #define WALLACE_PELIPPER(Level)                                            \
     {                                                                      \
-    WALLACE_MON(Level, PELIPPER),                                          \
+    WALLACE_STEVEN_MON(Level, PELIPPER),                                   \
     .ability = ABILITY_DRIZZLE,                                            \
     .nature = NATURE_MODEST,                                               \
     EV_SPREAD_SPA_DEF_SPE,                                                 \
@@ -3210,7 +3210,7 @@ JUAN_REMATCH(5),
 //Extra for hacks
 #define WALLACE_AZUMARILL(Level)                                                \
     {                                                                           \
-    WALLACE_MON(Level, AZUMARILL),                                              \
+    WALLACE_STEVEN_MON(Level, AZUMARILL),                                       \
     .ability = ABILITY_HUGE_POWER,                                              \
     .nature = NATURE_MODEST,                                                    \
     EV_SPREAD_SPA_DEF_SPE,                                                      \
@@ -3223,7 +3223,7 @@ JUAN_REMATCH(5),
 //Fairy
 //Can replace Calm Mind/Moonlight with Misty Terrain/Life Dew
 #define WALLACE_CLEFABLE(Level)                                                   \
-    WALLACE_MON(Level, CLEFABLE),                                                 \
+    WALLACE_STEVEN_MON(Level, CLEFABLE),                                          \
     {                                                                             \
     .ability = ABILITY_MAGIC_GUARD,                                               \
     .nature = NATURE_MODEST,                                                      \
@@ -3234,7 +3234,7 @@ JUAN_REMATCH(5),
     }
 
 #define WALLACE_SYLVEON(Level)                                                          \
-    WALLACE_MON(Level, SYLVEON),                                                        \
+    WALLACE_STEVEN_MON(Level, SYLVEON),                                                 \
     {                                                                                   \
     .ability = ABILITY_PIXILATE,                                                        \
     .nature = NATURE_MODEST,                                                            \
@@ -3247,7 +3247,7 @@ JUAN_REMATCH(5),
 //EVs can be SpA/HP/Spe
 //Aura Sphere/Sitrus Berry can by replaced by Life Dew/Leftovers
 #define WALLACE_TOGEKISS(Level)                                                        \
-    WALLACE_MON(Level, TOGEKISS),                                                      \
+    WALLACE_STEVEN_MON(Level, TOGEKISS),                                               \
     {                                                                                  \
     .ability = ABILITY_SERENE_GRACE,                                                   \
     .nature = NATURE_MODEST,                                                           \
@@ -3259,7 +3259,7 @@ JUAN_REMATCH(5),
     }
 
 #define WALLACE_GRANBULL(Level)                                                  \
-    WALLACE_MON(Level, GRANBULL),                                                \
+    WALLACE_STEVEN_MON(Level, GRANBULL),                                         \
     {                                                                            \
     .ability = ABILITY_STRONG_JAW,                                               \
     .nature = NATURE_ADAMANT,                                                    \
@@ -3272,7 +3272,7 @@ JUAN_REMATCH(5),
 #define WALLACE_FLORGES
 
 #define WALLACE_AROMATISSE(Level)                                                   \
-    WALLACE_MON(Level, AROMATISSE),                                                 \
+    WALLACE_STEVEN_MON(Level, AROMATISSE),                                          \
     {                                                                               \
     .ability = ABILITY_AROMA_VEIL,                                                  \
     .nature = NATURE_MODEST,                                                        \
@@ -3284,7 +3284,7 @@ JUAN_REMATCH(5),
     }
 
 #define WALLACE_SLURPUFF(Level)                                                               \
-    WALLACE_MON(Level, SLURPUFF),                                                             \
+    WALLACE_STEVEN_MON(Level, SLURPUFF),                                                      \
     {                                                                                         \
     .ability = ABILITY_SWEET_VEIL,                                                            \
     .nature = NATURE_MODEST,                                                                  \
@@ -3296,7 +3296,7 @@ JUAN_REMATCH(5),
     }
 
 #define WALLACE_COMFEY(Level)                                                       \
-    WALLACE_MON(Level, COMFEY),                                                     \
+    WALLACE_STEVEN_MON(Level, COMFEY),                                              \
     {                                                                               \
     .ability = ABILITY_TRIAGE,                                                      \
     .nature = NATURE_CALM,                                                          \
@@ -3310,7 +3310,7 @@ JUAN_REMATCH(5),
 #define WALLACE_ALCREMIE
 
 #define WALLACE_DACHSBUN(Level)                                                 \
-    WALLACE_MON(Level, DACHSBUN),                                               \
+    WALLACE_STEVEN_MON(Level, DACHSBUN),                                        \
     {                                                                           \
     .ability = ABILITY_WELL_BAKED_BODY,                                         \
     .nature = NATURE_IMPISH,                                                    \
@@ -3321,7 +3321,7 @@ JUAN_REMATCH(5),
     }
 
 #define WALLACE_TINKATON(Level)                                                          \
-    WALLACE_MON(Level, TINKATON),                                                        \
+    WALLACE_STEVEN_MON(Level, TINKATON),                                                 \
     {                                                                                    \
     .ability = ABILITY_STEELWORKER,                                                      \
     .nature = NATURE_ADAMANT,                                                            \
@@ -3356,26 +3356,161 @@ JUAN_REMATCH(5),
 WALLACE_BATTLE(WALLACE, 69),
 WALLACE_BATTLE(WALLACE_REMATCH, 90),
 
-//Turn current party into defines
-//#define STEVEN_METAGROSS
-//#define STEVEN_AGGRON
-//#define STEVEN_MAWILE
-#define STEVEN_JIRACHI
-#define STEVEN_CLAYDOL //Add new Steel type?
-#define STEVEN_SKARMORY
+//Combine these three with the ones in include/data.h (for battle_partners)
+#define STEVEN_METAGROSS_2(Level)                                                        \
+    {                                                                                    \
+    WALLACE_STEVEN_MON(Level, METAGROSS),                                                \
+    .ability = ABILITY_CLEAR_BODY,                                                       \
+    .nature = NATURE_ADAMANT,                                                            \
+    EV_SPREAD_ATK_DEF_HP,                                                                \
+    .moves = {MOVE_METEOR_MASH, MOVE_PSYCHIC_FANGS, MOVE_EARTHQUAKE, MOVE_BULLET_PUNCH}, \
+    .gender = TRAINER_MON_NONE,                                                          \
+    .heldItem = ITEM_METAGROSSITE,                                                       \
+    .ball = ITEM_POKE_BALL,                                                              \
+    }
+
+#define STEVEN_AGGRON_2(Level)                                                      \
+    {                                                                               \
+    WALLACE_STEVEN_MON(Level, AGGRON),                                              \
+    .ability = ABILITY_STURDY,                                                      \
+    .nature = NATURE_IMPISH,                                                        \
+    EV_SPREAD_ATK_DEF_HP,                                                           \
+    .moves = {MOVE_IRON_HEAD, MOVE_ROCK_SLIDE, MOVE_BODY_PRESS, MOVE_IRON_DEFENSE}, \
+    .gender = TRAINER_MON_MALE,                                                     \
+    .heldItem = ITEM_SHUCA_BERRY,                                                   \
+    .ball = ITEM_HEAVY_BALL,                                                        \
+    }
+
+#define STEVEN_MAWILE_2(Level)                                                  \
+    {                                                                           \
+    WALLACE_STEVEN_MON(Level, MAWILE),                                          \
+    .ability = ABILITY_SHEER_FORCE,                                             \
+    .nature = NATURE_ADAMANT,                                                   \
+    EV_SPREAD_ATK_SPE_DEF,                                                      \
+    .moves = {MOVE_IRON_HEAD, MOVE_PLAY_ROUGH, MOVE_CRUNCH, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_FEMALE,                                               \
+    .heldItem = ITEM_LIFE_ORB,                                                  \
+    .ball = ITEM_ULTRA_BALL,                                                    \
+    }
+
+#define STEVEN_JIRACHI(Level)                                                     \
+    {                                                                             \
+    WALLACE_STEVEN_MON(Level, JIRACHI),                                           \
+    .ability = ABILITY_SERENE_GRACE,                                              \
+    .nature = NATURE_MODEST,                                                      \
+    EV_SPREAD_SPA_SPE_SPD,                                                        \
+    .moves = {MOVE_DOOM_DESIRE, MOVE_FLASH_CANNON, MOVE_PSYCHIC, MOVE_CALM_MIND}, \
+    .gender = TRAINER_MON_NONE,                                                   \
+    .heldItem = ITEM_KINGS_ROCK,                                                  \
+    .ball = ITEM_CHERISH_BALL,                                                    \
+    .nickname = COMPOUND_STRING("Devon"),                                         \
+    }
+
+#define STEVEN_CLAYDOL(Level)                                                        \
+    {                                                                                \
+    WALLACE_STEVEN_MON(Level, CLAYDOL),                                              \
+    .ability = ABILITY_LEVITATE,                                                     \
+    .nature = NATURE_CALM,                                                           \
+    EV_SPREAD_DEF_SPD_SPA,                                                           \
+    .moves = {MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_ANCIENT_POWER, MOVE_EARTHQUAKE}, \
+    .gender = TRAINER_MON_NONE,                                                      \
+    .ball = ITEM_HEAVY_BALL,                                                         \
+    }
+
+#define STEVEN_SKARMORY(Level)                                                 \
+    {                                                                          \
+    WALLACE_STEVEN_MON(Level, SKARMORY),                                       \
+    .ability = ABILITY_STURDY,                                                 \
+    .nature = NATURE_IMPISH,                                                   \
+    EV_SPREAD_ATK_DEF_HP,                                                      \
+    .moves = {MOVE_STEEL_WING, MOVE_DRILL_PECK, MOVE_BODY_PRESS, MOVE_SPIKES}, \
+    .gender = TRAINER_MON_MALE,                                                \
+    .heldItem = ITEM_GANLON_BERRY,                                             \
+    .ball = ITEM_LUXURY_BALL,                                                  \
+    }
 
 //Extra for hacks
-#define STEVEN_PERRSERKER //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/include/data.h#L144
+#define STEVEN_PERRSERKER(Level)                                                 \
+    {                                                                            \
+    WALLACE_STEVEN_MON(Level, PERRSERKER),                                       \
+    .ability = ABILITY_STEELY_SPIRIT,                                            \
+    .nature = NATURE_ADAMANT,                                                    \
+    EV_SPREAD_ATK_DEF_HP,                                                        \
+    .moves = {MOVE_IRON_HEAD, MOVE_SEED_BOMB, MOVE_FAKE_OUT, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                  \
+    .heldItem = ITEM_METAL_COAT,                                                 \
+    .ball = ITEM_ULTRA_BALL,                                                     \
+    }
+
 #define STEVEN_STEELIX
 #define STEVEN_BRONZONG
-#define STEVEN_KLINKLANG //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L2239 and https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L2244
-#define STEVEN_AEGISLASH //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/include/data.h#L172
+
+//Impish/Atk/Def/Spe
+//Supercell Slam->Iron Defense
+#define STEVEN_KLINKLANG(Level)                                                        \
+    {                                                                                  \
+    WALLACE_STEVEN_MON(Level, KLINKLANG),                                              \
+    .ability = ABILITY_CLEAR_BODY,                                                     \
+    .nature = NATURE_ADAMANT,                                                          \
+    EV_SPREAD_ATK_SPE_DEF,                                                             \
+    .moves = {MOVE_GEAR_GRIND, MOVE_SUPERCELL_SLAM, MOVE_BODY_PRESS, MOVE_SHIFT_GEAR}, \
+    .gender = TRAINER_MON_NONE,                                                        \
+    .heldItem = ITEM_GANLON_BERRY,                                                     \
+    .ball = ITEM_TIMER_BALL,                                                           \
+    }
+
+#define STEVEN_AEGISLASH(Level)                                                        \
+    {                                                                                  \
+    WALLACE_STEVEN_MON(Level, AEGISLASH),                                              \
+    .ability = ABILITY_STANCE_CHANGE,                                                  \
+    .nature = NATURE_ADAMANT,                                                          \
+    EV_SPREAD_ATK_DEF_HP,                                                              \
+    .moves = {MOVE_IRON_HEAD, MOVE_SHADOW_CLAW, MOVE_KINGS_SHIELD, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                        \
+    .heldItem = ITEM_LEFTOVERS,                                                        \
+    .ball = ITEM_LUXURY_BALL,                                                          \
+    }
+
 #define STEVEN_GOODRA
 #define STEVEN_KLEFKI
-#define STEVEN_COPPERAJAH //https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L2228 and https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L2255
-#define STEVEN_ARCHALUDON
+
+//Curse can be replaced by Supercell Slam
+#define STEVEN_COPPERAJAH(Level)                                             \
+    {                                                                        \
+    WALLACE_STEVEN_MON(Level, COPPERAJAH),                                   \
+    .ability = ABILITY_SHEER_FORCE,                                          \
+    .nature = NATURE_ADAMANT,                                                \
+    EV_SPREAD_ATK_HP_SPE,                                                    \
+    .moves = {MOVE_IRON_HEAD, MOVE_PLAY_ROUGH, MOVE_EARTHQUAKE, MOVE_CURSE}, \
+    .gender = TRAINER_MON_MALE,                                              \
+    .ball = ITEM_HEAVY_BALL,                                                 \
+    }
+
+#define STEVEN_ARCHALUDON(Level)                                                         \
+    {                                                                                    \
+    WALLACE_STEVEN_MON(Level, ARCHALUDON),                                               \
+    .ability = ABILITY_STAMINA,                                                          \
+    .nature = NATURE_BOLD,                                                               \
+    EV_SPREAD_SPA_DEF_SPE,                                                               \
+    .moves = {MOVE_DRAGON_PULSE, MOVE_FLASH_CANNON, MOVE_ELECTRO_SHOT, MOVE_BODY_PRESS}, \
+    .gender = TRAINER_MON_MALE,                                                          \
+    .heldItem = ITEM_ASSAULT_VEST,                                                       \
+    .ball = ITEM_HEAVY_BALL,                                                             \
+    }
+
 #define STEVEN_REVAVROOM
-#define STEVEN_ORTHWORM //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L2266
+
+#define STEVEN_ORTHWORM(Level)                                                     \
+    {                                                                              \
+    WALLACE_STEVEN_MON(Level, ORTHWORM),                                           \
+    .ability = ABILITY_EARTH_EATER,                                                \
+    .nature = NATURE_IMPISH,                                                       \
+    EV_SPREAD_DEF_HP_SPE,                                                          \
+    .moves = {MOVE_IRON_HEAD, MOVE_BODY_PRESS, MOVE_IRON_DEFENSE, MOVE_SHED_TAIL}, \
+    .gender = TRAINER_MON_MALE,                                                    \
+    .ball = ITEM_CHERISH_BALL,                                                     \
+    }
+
 #define STEVEN_GHOLDENGO
 
 [DIFFICULTY_NORMAL][TRAINER_STEVEN] =
@@ -3386,38 +3521,9 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     BOSS_AI_FLAGS,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        {
-        .lvl = 87,
-        .species = SPECIES_SKARMORY,
-        .ability = ABILITY_STURDY,
-        .nature = NATURE_IMPISH,
-        EV_SPREAD_ATK_DEF_HP,
-        PERFECT_IVS,
-        .moves = {MOVE_STEEL_WING, MOVE_DRILL_PECK, MOVE_BODY_PRESS, MOVE_SPIKES},
-        .gender = TRAINER_MON_MALE,
-        .heldItem = ITEM_GANLON_BERRY,
-        .ball = ITEM_LUXURY_BALL,
-        },
-        {
-        .lvl = 87,
-        .species = SPECIES_CLAYDOL,
-        .nature = NATURE_CALM,
-        EV_SPREAD_DEF_SPD_SPA,
-        PERFECT_IVS,
-        .moves = {MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_ANCIENT_POWER, MOVE_EARTHQUAKE},
-        .ball = ITEM_HEAVY_BALL,
-        },
-        {
-        .lvl = 88,
-        .species = SPECIES_JIRACHI,
-        .nature = NATURE_MODEST,
-        EV_SPREAD_SPA_SPE_SPD,
-        PERFECT_IVS,
-        .moves = {MOVE_DOOM_DESIRE, MOVE_FLASH_CANNON, MOVE_PSYCHIC, MOVE_CALM_MIND},
-        .heldItem = ITEM_KINGS_ROCK,
-        .ball = ITEM_CHERISH_BALL,
-        .nickname = COMPOUND_STRING("Devon"),
-        },
+        STEVEN_SKARMORY(87),
+        STEVEN_CLAYDOL(87),
+        STEVEN_JIRACHI(88),
         {
         STEVEN_MAWILE(88),
         .heldItem = ITEM_LIFE_ORB,

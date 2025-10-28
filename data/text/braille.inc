@@ -10,37 +10,37 @@ SealedChamber_OuterRoom_Braille_ABC:
 	brailleformat 7, 6, 21, 13, 10, 9
 	.braille "ABC$"
 
-SealedChamber_OuterRoom_Braille_GHI:
-	brailleformat 7, 6, 21, 13, 10, 9
-	.braille "GHI$"
-
-SealedChamber_OuterRoom_Braille_MNO:
-	brailleformat 7, 6, 21, 13, 10, 9
-	.braille "MNO$"
-
-SealedChamber_OuterRoom_Braille_TUV:
-	brailleformat 7, 6, 21, 13, 10, 9
-	.braille "TUV$"
-
 SealedChamber_OuterRoom_Braille_DEF:
 	brailleformat 7, 6, 21, 13, 10, 9
 	.braille "DEF$"
+
+SealedChamber_OuterRoom_Braille_GHI:
+	brailleformat 7, 6, 21, 13, 10, 9
+	.braille "GHI$"
 
 SealedChamber_OuterRoom_Braille_JKL:
 	brailleformat 7, 6, 21, 13, 10, 9
 	.braille "JKL$"
 
+SealedChamber_OuterRoom_Braille_MNO:
+	brailleformat 7, 6, 21, 13, 10, 9
+	.braille "MNO$"
+
 SealedChamber_OuterRoom_Braille_PQRS:
 	brailleformat 7, 6, 21, 13, 10, 9
 	.braille "PQRS$"
 
-SealedChamber_OuterRoom_Braille_Period:
-	brailleformat 9, 6, 19, 13, 12, 9
-	.braille ".$"
+SealedChamber_OuterRoom_Braille_TUV:
+	brailleformat 7, 6, 21, 13, 10, 9
+	.braille "TUV$"
 
 SealedChamber_OuterRoom_Braille_WXYZ:
 	brailleformat 7, 6, 21, 13, 10, 9
 	.braille "WXYZ$"
+
+SealedChamber_OuterRoom_Braille_Period:
+	brailleformat 9, 6, 19, 13, 12, 9
+	.braille ".$"
 
 SealedChamber_OuterRoom_Braille_Comma:
 	brailleformat 9, 6, 19, 13, 12, 9

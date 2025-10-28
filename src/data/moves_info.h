@@ -18004,7 +18004,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Bows to stab the foe\n"
             "with hair. It never misses."),
         .effect = EFFECT_HIT,
-        .power = 80,
+        .power = 85,
         .type = TYPE_DARK,
         .accuracy = 0,
         .pp = 10,

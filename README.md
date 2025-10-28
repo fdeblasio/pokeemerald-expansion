@@ -936,6 +936,8 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Ceaseless Edge:
         - Power: 65->70
         - Accuracy: 90->100
+    - False Surrender:
+        - Power: 80->85
     - Hyperspace Fury:
         - PP: 5->10
         - No longer lowers user's Defense
@@ -1732,8 +1734,8 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Fly by TM
 
 - Dragonite (not in main game):
-    - Learns Dragon Breath by level up
     - Learns Dual Wingbeat upon evolving
+    - Learns Dragon Breath and Dragon Claw by level up
 
 - Mew (postgame):
     - Learns Confusion by level up
@@ -1882,9 +1884,11 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Earth Power by level up
 
 - Murkrow (not in main game):
+    - Atk: 85->95
     - Learns Pluck, Dual Wingbeat, and Night Slash by level up
 
 - Honchkrow (not in main game):
+    - Spe: 71->81
     - Learns Pluck and Dual Wingbeat by level up
 
 - Misdreavus/Mismagius (not in main game):

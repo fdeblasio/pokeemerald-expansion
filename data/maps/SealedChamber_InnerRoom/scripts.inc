@@ -25,12 +25,19 @@ SealedChamber_InnerRoom_EventScript_ShowRegigigas::
 
 SealedChamber_InnerRoom_EventScript_BrailleBackWall::
 	lockall
-	braillemsgbox SealedChamber_InnerRoom_Braille_FirstWailordLastRelicanth
 	goto_if_set FLAG_REGI_DOORS_OPENED, SealedChamber_InnerRoom_EventScript_NoEffect
 	fadeoutbgm 0
 	playse SE_TRUCK_MOVE
 	special DoSealedChamberShakingEffect_Long
 	waitstate
+	delay 40
+	special DoSealedChamberShakingEffect_Short
+	waitstate
+	playse SE_DOOR
+	delay 40
+	special DoSealedChamberShakingEffect_Short
+	waitstate
+	playse SE_DOOR
 	delay 40
 	special DoSealedChamberShakingEffect_Short
 	waitstate

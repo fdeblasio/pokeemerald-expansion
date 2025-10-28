@@ -91,10 +91,3 @@ SealedChamber_OuterRoom_EventScript_InnerRoomEntranceWall::
 	msgbox gText_BigHoleInTheWall, MSGBOX_DEFAULT
 	releaseall
 	end
-
-SealedChamber_OuterRoom_EventScript_BrailleDigHere::
-	lockall
-	braillemsgbox SealedChamber_OuterRoom_Braille_DigHere
-	releaseall
-	end
-

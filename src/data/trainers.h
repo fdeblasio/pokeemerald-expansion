@@ -3166,8 +3166,8 @@ JUAN_REMATCH(5),
     IDEAL_ATTACKER_SPECIAL,                                                            \
     .moves = {MOVE_DAZZLING_GLEAM, MOVE_AIR_SLASH, MOVE_AURA_SPHERE, MOVE_NASTY_PLOT}, \
     .gender = TRAINER_MON_MALE,                                                        \
-    .heldItem = ITEM_SITRUS_BERRY,                                                     \
-    .ball = ITEM_ULTRA_BALL,                                                           \
+    .heldItem = ITEM_LEFTOVERS_BERRY,                                                  \
+    .ball = ITEM_POKE_BALL,                                                            \
     }
 
 #define WALLACE_GRANBULL(Level)                                                  \
@@ -3238,8 +3238,7 @@ JUAN_REMATCH(5),
     EV_SPREAD_ATK_SPE_SPD,                                                               \
     .moves = {MOVE_PLAY_ROUGH, MOVE_GIGATON_HAMMER, MOVE_ROCK_SLIDE, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_FEMALE,                                                        \
-    .heldItem = ITEM_SITRUS_BERRY,                                                       \
-    .ball = ITEM_POKE_BALL,                                                              \
+    .ball = ITEM_ULTRA_BALL,                                                             \
     }
 
 #define WALLACE_BATTLE(Trainer, AceLevel)                                                  \
@@ -3254,12 +3253,12 @@ JUAN_REMATCH(5),
     BOSS_AI_FLAGS,                                                                         \
     .partySize = 6,                                                                        \
     .party = (const struct TrainerMon[]) {                                                 \
-        WALLACE_PELIPPER(AceLevel - 3),                                                    \
-        WALLACE_GOREBYSS(AceLevel - 3),                                                    \
-        WALLACE_RELICANTH(AceLevel - 3),                                                   \
-        WALLACE_LUDICOLO(AceLevel - 2),                                                    \
-        WALLACE_WAILORD(AceLevel - 2),                                                     \
-        WALLACE_MILOTIC(AceLevel),                                                         \
+        WALLACE_SYLVEON(AceLevel - 3),                                                     \
+        WALLACE_TINKATON(AceLevel - 3),                                                    \
+        WALLACE_COMFEY(AceLevel - 3),                                                      \
+        WALLACE_GRANBULL(AceLevel - 2),                                                    \
+        WALLACE_CLEFABLE(AceLevel - 2),                                                    \
+        WALLACE_TOGEKISS(AceLevel),                                                        \
     },                                                                                     \
 }
 

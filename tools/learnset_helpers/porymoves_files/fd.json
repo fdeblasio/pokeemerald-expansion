@@ -427,7 +427,20 @@
     "TutorMoves": []
   },
   "SANDSHREW_ALOLA": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ICE_SHARD"
+      },
+      {
+        "Level": 18,
+        "Move": "MOVE_AVALANCHE"
+      },
+      {
+        "Level": 33,
+        "Move": "MOVE_ICE_PUNCH"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -435,6 +448,18 @@
   },
   "SANDSLASH_ALOLA": {
     "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ICE_SHARD"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_AVALANCHE"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_ICE_PUNCH"
+      },
       {
         "Level": 2,
         "Move": "MOVE_ICICLE_CRASH"
@@ -1730,21 +1755,52 @@
     "TutorMoves": []
   },
   "SLOWPOKE_GALAR": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 24,
+        "Move": "MOVE_PSYBEAM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "SLOWBRO_GALAR": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 18,
+        "Move": "MOVE_SLUDGE"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_PSYBEAM"
+      },
+      {
+        "Level": 30,
+        "Move": "MOVE_SLUDGE_BOMB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "SLOWKING_GALAR": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 18,
+        "Move": "MOVE_SLUDGE"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_PSYBEAM"
+      },
+      {
+        "Level": 30,
+        "Move": "MOVE_SLUDGE_BOMB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -1846,14 +1902,40 @@
     "TutorMoves": []
   },
   "SEEL": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_WATER_GUN"
+      },
+      {
+        "Level": 13,
+        "Move": "MOVE_CHILLING_WATER"
+      },
+      {
+        "Level": 47,
+        "Move": "MOVE_SURF"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "DEWGONG": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_WATER_GUN"
+      },
+      {
+        "Level": 13,
+        "Move": "MOVE_CHILLING_WATER"
+      },
+      {
+        "Level": 47,
+        "Move": "MOVE_SURF"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -1884,14 +1966,24 @@
     "TutorMoves": []
   },
   "GRIMER_ALOLA": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 32,
+        "Move": "MOVE_POISON_JAB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "MUK_ALOLA": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 32,
+        "Move": "MOVE_POISON_JAB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -2027,14 +2119,32 @@
     "TutorMoves": []
   },
   "KRABBY": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 20,
+        "Move": "MOVE_AQUA_CUTTER"
+      },
+      {
+        "Level": 39,
+        "Move": "MOVE_LIQUIDATION"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "KINGLER": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 20,
+        "Move": "MOVE_AQUA_CUTTER"
+      },
+      {
+        "Level": 51,
+        "Move": "MOVE_LIQUIDATION"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -2238,8 +2348,12 @@
   "LICKITUNG": {
     "LevelMoves": [
       {
+        "Level": 1,
+        "Move": "MOVE_POUND"
+      },
+      {
         "Level": 60,
-        "Move": "MOVE_COIL"
+        "Move": "MOVE_BODY_SLAM"
       }
     ],
     "PreEvoMoves": [],
@@ -2252,8 +2366,12 @@
   "LICKILICKY": {
     "LevelMoves": [
       {
+        "Level": 1,
+        "Move": "MOVE_POUND"
+      },
+      {
         "Level": 60,
-        "Move": "MOVE_COIL"
+        "Move": "MOVE_BODY_SLAM"
       }
     ],
     "PreEvoMoves": [],
@@ -3252,28 +3370,112 @@
     "TutorMoves": []
   },
   "OMANYTE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ROCK_THROW"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_ROCK_TOMB"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_WATER_PULSE"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_ROCK_SLIDE"
+      },
+      {
+        "Level": 41,
+        "Move": "MOVE_POWER_GEM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "OMASTAR": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ROCK_THROW"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_ROCK_TOMB"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_WATER_PULSE"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_ROCK_SLIDE"
+      },
+      {
+        "Level": 43,
+        "Move": "MOVE_POWER_GEM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "KABUTO": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ROCK_THROW"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_ROCK_TOMB"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_AQUA_CUTTER"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_ROCK_SLIDE"
+      },
+      {
+        "Level": 41,
+        "Move": "MOVE_RAZOR_SHELL"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "KABUTOPS": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ROCK_THROW"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_ROCK_TOMB"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_AQUA_CUTTER"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_ROCK_SLIDE"
+      },
+      {
+        "Level": 43,
+        "Move": "MOVE_RAZOR_SHELL"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -3414,7 +3616,12 @@
     "TutorMoves": []
   },
   "MEW": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_CONFUSION"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -10800,21 +11007,44 @@
     "TutorMoves": []
   },
   "FRILLISH": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 32,
+        "Move": "MOVE_SURF"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "JELLICENT": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 32,
+        "Move": "MOVE_SURF"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "ALOMOMOLA": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 25,
+        "Move": "MOVE_FLIP_TURN"
+      },
+      {
+        "Level": 41,
+        "Move": "MOVE_WATERFALL"
+      },
+      {
+        "Level": 55,
+        "Move": "MOVE_LIQUIDATION"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -15988,7 +16218,24 @@
     "TutorMoves": []
   },
   "VELUZA": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 35,
+        "Move": "MOVE_WATERFALL"
+      },
+      {
+        "Level": 50,
+        "Move": "MOVE_ZEN_HEADBUTT"
+      },
+      {
+        "Level": 55,
+        "Move": "MOVE_AQUA_TAIL"
+      },
+      {
+        "Level": 60,
+        "Move": "MOVE_PSYCHIC_FANGS"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

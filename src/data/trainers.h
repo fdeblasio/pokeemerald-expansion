@@ -3223,8 +3223,8 @@ JUAN_REMATCH(5),
 //Fairy
 //Can replace Calm Mind/Moonlight with Misty Terrain/Life Dew
 #define WALLACE_CLEFABLE(Level)                                                   \
-    WALLACE_STEVEN_MON(Level, CLEFABLE),                                          \
     {                                                                             \
+    WALLACE_STEVEN_MON(Level, CLEFABLE),                                          \
     .ability = ABILITY_MAGIC_GUARD,                                               \
     .nature = NATURE_MODEST,                                                      \
     EV_SPREAD_SPA_HP_SPE,                                                         \
@@ -3234,8 +3234,8 @@ JUAN_REMATCH(5),
     }
 
 #define WALLACE_SYLVEON(Level)                                                          \
-    WALLACE_STEVEN_MON(Level, SYLVEON),                                                 \
     {                                                                                   \
+    WALLACE_STEVEN_MON(Level, SYLVEON),                                                 \
     .ability = ABILITY_PIXILATE,                                                        \
     .nature = NATURE_MODEST,                                                            \
     EV_SPREAD_SPA_SPD_SPE,                                                              \
@@ -3247,8 +3247,8 @@ JUAN_REMATCH(5),
 //EVs can be SpA/HP/Spe
 //Aura Sphere/Sitrus Berry can by replaced by Life Dew/Leftovers
 #define WALLACE_TOGEKISS(Level)                                                        \
-    WALLACE_STEVEN_MON(Level, TOGEKISS),                                               \
     {                                                                                  \
+    WALLACE_STEVEN_MON(Level, TOGEKISS),                                               \
     .ability = ABILITY_SERENE_GRACE,                                                   \
     .nature = NATURE_MODEST,                                                           \
     EV_SPREAD_SPA_SPE_HP,                                                              \
@@ -3259,8 +3259,8 @@ JUAN_REMATCH(5),
     }
 
 #define WALLACE_GRANBULL(Level)                                                  \
-    WALLACE_STEVEN_MON(Level, GRANBULL),                                         \
     {                                                                            \
+    WALLACE_STEVEN_MON(Level, GRANBULL),                                         \
     .ability = ABILITY_STRONG_JAW,                                               \
     .nature = NATURE_ADAMANT,                                                    \
     EV_SPREAD_ATK_SPE_HP,                                                        \
@@ -3272,8 +3272,8 @@ JUAN_REMATCH(5),
 #define WALLACE_FLORGES
 
 #define WALLACE_AROMATISSE(Level)                                                   \
-    WALLACE_STEVEN_MON(Level, AROMATISSE),                                          \
     {                                                                               \
+    WALLACE_STEVEN_MON(Level, AROMATISSE),                                          \
     .ability = ABILITY_AROMA_VEIL,                                                  \
     .nature = NATURE_MODEST,                                                        \
     EV_SPREAD_SPA_HP_SPD,                                                           \
@@ -3284,8 +3284,8 @@ JUAN_REMATCH(5),
     }
 
 #define WALLACE_SLURPUFF(Level)                                                               \
-    WALLACE_STEVEN_MON(Level, SLURPUFF),                                                      \
     {                                                                                         \
+    WALLACE_STEVEN_MON(Level, SLURPUFF),                                                      \
     .ability = ABILITY_SWEET_VEIL,                                                            \
     .nature = NATURE_MODEST,                                                                  \
     EV_SPREAD_SPA_SPE_HP,                                                                     \
@@ -3296,8 +3296,8 @@ JUAN_REMATCH(5),
     }
 
 #define WALLACE_COMFEY(Level)                                                       \
-    WALLACE_STEVEN_MON(Level, COMFEY),                                              \
     {                                                                               \
+    WALLACE_STEVEN_MON(Level, COMFEY),                                              \
     .ability = ABILITY_TRIAGE,                                                      \
     .nature = NATURE_CALM,                                                          \
     EV_SPREAD_SPA_SPD_SPE,                                                          \
@@ -3310,8 +3310,8 @@ JUAN_REMATCH(5),
 #define WALLACE_ALCREMIE
 
 #define WALLACE_DACHSBUN(Level)                                                 \
-    WALLACE_STEVEN_MON(Level, DACHSBUN),                                        \
     {                                                                           \
+    WALLACE_STEVEN_MON(Level, DACHSBUN),                                        \
     .ability = ABILITY_WELL_BAKED_BODY,                                         \
     .nature = NATURE_IMPISH,                                                    \
     EV_SPREAD_ATK_DEF_HP,                                                       \
@@ -3321,8 +3321,8 @@ JUAN_REMATCH(5),
     }
 
 #define WALLACE_TINKATON(Level)                                                          \
-    WALLACE_STEVEN_MON(Level, TINKATON),                                                 \
     {                                                                                    \
+    WALLACE_STEVEN_MON(Level, TINKATON),                                                 \
     .ability = ABILITY_STEELWORKER,                                                      \
     .nature = NATURE_ADAMANT,                                                            \
     EV_SPREAD_ATK_SPE_SPD,                                                               \

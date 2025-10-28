@@ -3792,7 +3792,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_MURKROW] =
     {
         .baseHP        = 60,
-        .baseAttack    = 85,
+        .baseAttack    = 95,
         .baseDefense   = 42,
         .baseSpeed     = 91,
         .baseSpAttack  = 85,
@@ -3884,7 +3884,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseHP        = 100,
         .baseAttack    = 125,
         .baseDefense   = 52,
-        .baseSpeed     = 71,
+        .baseSpeed     = 81,
         .baseSpAttack  = 105,
         .baseSpDefense = 52,
         .types = MON_TYPES(TYPE_DARK, TYPE_FLYING),

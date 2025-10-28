@@ -2380,8 +2380,9 @@ JUAN_REMATCH(5),
 #define GLACIA_BALL ITEM_PREMIER_BALL
 #define DRAKE_BALL  ITEM_HEAVY_BALL
 
-#define ELITE_FOUR_MON(Level, Tier, Trainer, ...)                            \
+#define ELITE_FOUR_MON(Level, Species, Tier, Trainer, ...)                   \
     .lvl = Level,                                                            \
+    .species = SPECIES_##Species,                                            \
     PERFECT_IVS,                                                             \
     .heldItem = Tier <= TIER2 ? DEFAULT(ITEM_NONE, __VA_ARGS__) : ITEM_NONE, \
     .ball = Tier == ACE ? ITEM_POKE_BALL : Trainer##_BALL
@@ -2392,21 +2393,19 @@ JUAN_REMATCH(5),
     .trainerName = _("Sidney"),    \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
 
-#define SIDNEY_ABSOL(Level, Tier)                                                                    \
-    {                                                                                                \
-    ELITE_FOUR_MON(Level, Tier, SIDNEY, Level < POSTGAME_LEVEL ? ITEM_SITRUS_BERRY : ITEM_ABSOLITE), \
-    .species = SPECIES_ABSOL,                                                                        \
-    .ability = ABILITY_SHARPNESS,                                                                    \
-    .nature = NATURE_ADAMANT,                                                                        \
-    EV_SPREAD_ATK_SPE_HP,                                                                            \
-    .moves = {MOVE_NIGHT_SLASH, MOVE_PSYCHO_CUT, MOVE_AERIAL_ACE, MOVE_SWORDS_DANCE},                \
-    .gender = TRAINER_MON_MALE,                                                                      \
+#define SIDNEY_ABSOL(Level, Tier)                                                                           \
+    {                                                                                                       \
+    ELITE_FOUR_MON(Level, ABSOL, Tier, SIDNEY, Level < POSTGAME_LEVEL ? ITEM_SITRUS_BERRY : ITEM_ABSOLITE), \
+    .ability = ABILITY_SHARPNESS,                                                                           \
+    .nature = NATURE_ADAMANT,                                                                               \
+    EV_SPREAD_ATK_SPE_HP,                                                                                   \
+    .moves = {MOVE_NIGHT_SLASH, MOVE_PSYCHO_CUT, MOVE_AERIAL_ACE, MOVE_SWORDS_DANCE},                       \
+    .gender = TRAINER_MON_MALE,                                                                             \
     }
 
 #define SIDNEY_CACTURNE(Level, Tier)                                                  \
     {                                                                                 \
-    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                              \
-    .species = SPECIES_CACTURNE,                                                      \
+    ELITE_FOUR_MON(Level, CACTURNE, Tier, SIDNEY),                                    \
     .ability = ABILITY_WATER_ABSORB,                                                  \
     .nature = NATURE_MODEST,                                                          \
     EV_SPREAD_SPA_SPE_HP,                                                             \
@@ -2416,8 +2415,7 @@ JUAN_REMATCH(5),
 
 #define SIDNEY_CRAWDAUNT(Level, Tier)                                           \
     {                                                                           \
-    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                        \
-    .species = SPECIES_CRAWDAUNT,                                               \
+    ELITE_FOUR_MON(Level, CRAWDAUNT, Tier, SIDNEY),                             \
     .ability = ABILITY_HYPER_CUTTER,                                            \
     .nature = NATURE_ADAMANT,                                                   \
     EV_SPREAD_ATK_SPE_HP,                                                       \
@@ -2427,8 +2425,7 @@ JUAN_REMATCH(5),
 
 #define SIDNEY_SHIFTRY(Level, Tier)                                            \
     {                                                                          \
-    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                       \
-    .species = SPECIES_SHIFTRY,                                                \
+    ELITE_FOUR_MON(Level, SHIFTRY, Tier, SIDNEY),                              \
     .ability = ABILITY_WIND_RIDER,                                             \
     .nature = NATURE_ADAMANT,                                                  \
     EV_SPREAD_ATK_SPE_HP,                                                      \
@@ -2438,8 +2435,7 @@ JUAN_REMATCH(5),
 
 #define SIDNEY_MIGHTYENA(Level, Tier)                                           \
     {                                                                           \
-    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                        \
-    .species = SPECIES_MIGHTYENA,                                               \
+    ELITE_FOUR_MON(Level, MIGHTYENA, Tier, SIDNEY),                             \
     .ability = ABILITY_INTIMIDATE,                                              \
     .nature = NATURE_ADAMANT,                                                   \
     EV_SPREAD_ATK_SPE_HP,                                                       \
@@ -2449,8 +2445,7 @@ JUAN_REMATCH(5),
 
 #define SIDNEY_SHARPEDO(Level, Tier)                                           \
     {                                                                          \
-    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                       \
-    .species = SPECIES_SHARPEDO,                                               \
+    ELITE_FOUR_MON(Level, SHARPEDO, Tier, SIDNEY),                             \
     .ability = ABILITY_ROUGH_SKIN,                                             \
     .nature = NATURE_ADAMANT,                                                  \
     EV_SPREAD_ATK_SPE_HP,                                                      \
@@ -2463,8 +2458,7 @@ JUAN_REMATCH(5),
 
 #define SIDNEY_PERSIAN(Level, Tier)                                                \
     {                                                                              \
-    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                           \
-    .species = SPECIES_PERSIAN_ALOLAN,                                             \
+    ELITE_FOUR_MON(Level, PERSIAN_ALOLAN, Tier, SIDNEY),                           \
     .ability = ABILITY_FUR_COAT,                                                   \
     .nature = NATURE_MODEST,                                                       \
     EV_SPREAD_SPA_SPE_DEF,                                                         \
@@ -2472,25 +2466,32 @@ JUAN_REMATCH(5),
     .gender = TRAINER_MON_MALE,                                                    \
     }
 
-//Can replace Moonlight/Baby-Doll Eyes with Confuse Ray/Mean Look
-#define SIDNEY_UMBREON(Level, Tier)                                             \
-    {                                                                           \
-    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                        \
-    .species = SPECIES_UMBREON,                                                 \
-    .ability = ABILITY_SYNCHRONIZE,                                             \
-    .nature = NATURE_CALM,                                                      \
-    EV_SPREAD_SPD_DEF_HP,                                                       \
-    .moves = {MOVE_FOUL_PLAY, MOVE_TOXIC, MOVE_MOONLIGHT, MOVE_BABY_DOLL_EYES}, \
-    .gender = TRAINER_MON_MALE,                                                 \
+//Can replace Confuse Ray/Mean Look with Moonlight/Baby-Doll Eyes
+#define SIDNEY_UMBREON(Level, Tier)                                          \
+    {                                                                        \
+    ELITE_FOUR_MON(Level, UMBREON, Tier, SIDNEY),                            \
+    .ability = ABILITY_SYNCHRONIZE,                                          \
+    .nature = NATURE_CALM,                                                   \
+    EV_SPREAD_SPD_DEF_HP,                                                    \
+    .moves = {MOVE_FOUL_PLAY, MOVE_TOXIC, MOVE_CONFUSE_RAY, MOVE_MEAN_LOOK}, \
+    .gender = TRAINER_MON_MALE,                                              \
     }
 
-#define SIDNEY_HONCHKROW
+#define SIDNEY_HONCHKROW(Level, Tier)                                         \
+    {                                                                         \
+    ELITE_FOUR_MON(Level, HONCHKROW, Tier, SIDNEY, ITEM_FOCUS_LENS),          \
+    .ability = ABILITY_SUPER_LUCK,                                            \
+    .nature = NATURE_ADAMANT,                                                 \
+    EV_SPREAD_ATK_SPE_HP,                                                     \
+    .moves = {MOVE_NIGHT_SLASH, MOVE_ACROBATICS, MOVE_U_TURN, MOVE_TAILWIND}, \
+    .gender = TRAINER_MON_MALE,                                               \
+    }
+
 #define SIDNEY_OVERQWIL
 
 #define SIDNEY_WEAVILE(Level, Tier)                                                    \
     {                                                                                  \
-    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                               \
-    .species = SPECIES_WEAVILE,                                                        \
+    ELITE_FOUR_MON(Level, WEAVILE, Tier, SIDNEY),                                      \
     .ability = ABILITY_PRESSURE,                                                       \
     .nature = NATURE_JOLLY,                                                            \
     EV_SPREAD_ATK_SPE_HP,                                                              \
@@ -2500,8 +2501,7 @@ JUAN_REMATCH(5),
 
 #define SIDNEY_HOUNDOOM(Level, Tier)                                                  \
     {                                                                                 \
-    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                              \
-    .species = SPECIES_HOUNDOOM,                                                      \
+    ELITE_FOUR_MON(Level, HOUNDOOM, Tier, SIDNEY),                                    \
     .ability = ABILITY_FLASH_FIRE,                                                    \
     .nature = NATURE_MODEST,                                                          \
     EV_SPREAD_SPA_SPE_HP,                                                             \
@@ -2514,8 +2514,7 @@ JUAN_REMATCH(5),
 
 #define SIDNEY_LIEPARD(Level, Tier)                                                \
     {                                                                              \
-    ELITE_FOUR_MON(Level, Tier, SIDNEY, ITEM_LIECHI_BERRY),                        \
-    .species = SPECIES_LIEPARD,                                                    \
+    ELITE_FOUR_MON(Level, LIEPARD, Tier, SIDNEY, ITEM_LIECHI_BERRY),               \
     .ability = ABILITY_UNBURDEN,                                                   \
     .nature = NATURE_JOLLY,                                                        \
     EV_SPREAD_ATK_SPE_HP,                                                          \
@@ -2524,15 +2523,24 @@ JUAN_REMATCH(5),
     }
 
 #define SIDNEY_SCRAFTY
-#define SIDNEY_ZOROARK
+
+#define SIDNEY_ZOROARK(Level, Tier)                                               \
+    {                                                                             \
+    ELITE_FOUR_MON(Level, ZOROARK, Tier, SIDNEY),                                 \
+    .ability = ABILITY_ILLUSION,                                                  \
+    .nature = NATURE_MODEST,                                                      \
+    EV_SPREAD_SPA_SPE_HP,                                                         \
+    .moves = {MOVE_NIGHT_DAZE, MOVE_PSYCHIC, MOVE_FLAMETHROWER, MOVE_NASTY_PLOT}, \
+    .gender = TRAINER_MON_MALE,                                                   \
+    }
+
 #define SIDNEY_KINGAMBIT
 #define SIDNEY_MANDIBUZZ
 #define SIDNEY_HYDREIGON
 
 #define SIDNEY_MALAMAR(Level, Tier)                                                    \
     {                                                                                  \
-    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                               \
-    .species = SPECIES_MALAMAR,                                                        \
+    ELITE_FOUR_MON(Level, MALAMAR, Tier, SIDNEY),                                      \
     .ability = ABILITY_CONTRARY,                                                       \
     .nature = NATURE_ADAMANT,                                                          \
     EV_SPREAD_ATK_SPE_HP,                                                              \
@@ -2544,8 +2552,7 @@ JUAN_REMATCH(5),
 
 #define SIDNEY_GRIMMSNARL(Level, Tier)                                               \
     {                                                                                \
-    ELITE_FOUR_MON(Level, Tier, SIDNEY),                                             \
-    .species = SPECIES_GRIMMSNARL,                                                   \
+    ELITE_FOUR_MON(Level, GRIMMSNARL, Tier, SIDNEY),                                 \
     .ability = ABILITY_PRANKSTER,                                                    \
     .nature = NATURE_ADAMANT,                                                        \
     EV_SPREAD_ATK_SPE_HP,                                                            \
@@ -2553,7 +2560,15 @@ JUAN_REMATCH(5),
     .gender = TRAINER_MON_MALE,                                                      \
     }
 
-#define SIDNEY_MABOSSTIFF
+#define SIDNEY_MABOSSTIFF(Level, Tier)                                      \
+    {                                                                       \
+    ELITE_FOUR_MON(Level, MABOSSTIFF, Tier, SIDNEY),                        \
+    .ability = ABILITY_INTIMIDATE,                                          \
+    .nature = NATURE_ADAMANT,                                               \
+    EV_SPREAD_ATK_SPE_HP,                                                   \
+    .moves = {MOVE_CRUNCH, MOVE_PLAY_ROUGH, MOVE_OUTRAGE, MOVE_HONE_CLAWS}, \
+    .gender = TRAINER_MON_MALE,                                             \
+    }
 
 [DIFFICULTY_NORMAL][TRAINER_SIDNEY] =
 {
@@ -2589,8 +2604,7 @@ JUAN_REMATCH(5),
 
 #define PHOEBE_DUSKNOIR(Level, Tier)                                                \
     {                                                                               \
-    ELITE_FOUR_MON(Level, Tier, PHOEBE, ITEM_SITRUS_BERRY),                         \
-    .species = SPECIES_DUSKNOIR,                                                    \
+    ELITE_FOUR_MON(Level, DUSKNOIR, Tier, PHOEBE, ITEM_SITRUS_BERRY),               \
     .ability = ABILITY_IRON_FIST,                                                   \
     .nature = NATURE_ADAMANT,                                                       \
     EV_SPREAD_ATK_SPD_HP,                                                           \
@@ -2600,8 +2614,7 @@ JUAN_REMATCH(5),
 
 #define PHOEBE_BANETTE(Level, Tier)                                                    \
     {                                                                                  \
-    ELITE_FOUR_MON(Level, Tier, PHOEBE),                                               \
-    .species = SPECIES_BANETTE,                                                        \
+    ELITE_FOUR_MON(Level, BANETTE, Tier, PHOEBE),                                      \
     .ability = ABILITY_CURSED_BODY,                                                    \
     .nature = NATURE_ADAMANT,                                                          \
     EV_SPREAD_ATK_SPE_HP,                                                              \
@@ -2611,8 +2624,7 @@ JUAN_REMATCH(5),
 
 #define PHOEBE_SABLEYE(Level, Tier)                                               \
     {                                                                             \
-    ELITE_FOUR_MON(Level, Tier, PHOEBE),                                          \
-    .species = SPECIES_SABLEYE,                                                   \
+    ELITE_FOUR_MON(Level, SABLEYE, Tier, PHOEBE),                                 \
     .ability = ABILITY_PRANKSTER,                                                 \
     .nature = NATURE_IMPISH,                                                      \
     EV_SPREAD_DEF_HP_SPD,                                                         \
@@ -2622,8 +2634,7 @@ JUAN_REMATCH(5),
 
 #define PHOEBE_SHEDINJA(Level, Tier)                                           \
     {                                                                          \
-    ELITE_FOUR_MON(Level, Tier, PHOEBE),                                       \
-    .species = SPECIES_SHEDINJA,                                               \
+    ELITE_FOUR_MON(Level, SHEDINJA, Tier, PHOEBE),                             \
     .ability = ABILITY_WONDER_GUARD,                                           \
     .nature = NATURE_ADAMANT,                                                  \
     EV_SPREAD_ATK_SPE_HP,                                                      \
@@ -2633,8 +2644,7 @@ JUAN_REMATCH(5),
 
 #define PHOEBE_DUSCLOPS(Level, Tier)                                           \
     {                                                                          \
-    ELITE_FOUR_MON(Level, Tier, PHOEBE),                                       \
-    .species = SPECIES_DUSCLOPS,                                               \
+    ELITE_FOUR_MON(Level, DUSCLOPS, Tier, PHOEBE),                             \
     .ability = ABILITY_PRESSURE,                                               \
     .nature = NATURE_CALM,                                                     \
     EV_SPREAD_SPD_HP_DEF,                                                      \
@@ -2644,8 +2654,7 @@ JUAN_REMATCH(5),
 
 #define PHOEBE_CURSOLA(Level, Tier)                                             \
     {                                                                           \
-    ELITE_FOUR_MON(Level, Tier, PHOEBE),                                        \
-    .species = SPECIES_CURSOLA,                                                 \
+    ELITE_FOUR_MON(Level, CURSOLA, Tier, PHOEBE),                               \
     .ability = ABILITY_PERISH_BODY,                                             \
     .nature = NATURE_MODEST,                                                    \
     EV_SPREAD_SPA_SPD_DEF,                                                      \
@@ -2656,8 +2665,7 @@ JUAN_REMATCH(5),
 //Extra for hacks
 #define PHOEBE_GENGAR(Level, Tier)                                                      \
     {                                                                                   \
-    ELITE_FOUR_MON(Level, Tier, PHOEBE),                                                \
-    .species = SPECIES_GENGAR,                                                          \
+    ELITE_FOUR_MON(Level, GENGAR, Tier, PHOEBE),                                        \
     .ability = ABILITY_CURSED_BODY,                                                     \
     .nature = NATURE_MODEST,                                                            \
     EV_SPREAD_SPA_SPE_HP,                                                               \
@@ -2667,8 +2675,7 @@ JUAN_REMATCH(5),
 
 #define PHOEBE_MISMAGIUS(Level, Tier)                                                  \
     {                                                                                  \
-    ELITE_FOUR_MON(Level, Tier, PHOEBE),                                               \
-    .species = SPECIES_MISMAGIUS,                                                      \
+    ELITE_FOUR_MON(Level, MISMAGIUS, Tier, PHOEBE, ITEM_SPELL_TAG),                    \
     .nature = NATURE_MODEST,                                                           \
     EV_SPREAD_SPA_SPE_SPD,                                                             \
     .moves = {MOVE_SHADOW_BALL, MOVE_POWER_GEM, MOVE_MYSTICAL_FIRE, MOVE_PERISH_SONG}, \
@@ -2679,8 +2686,7 @@ JUAN_REMATCH(5),
 
 #define PHOEBE_SPIRITOMB(Level, Tier)                                          \
     {                                                                          \
-    ELITE_FOUR_MON(Level, Tier, PHOEBE),                                       \
-    .species = SPECIES_SPIRITOMB,                                              \
+    ELITE_FOUR_MON(Level, SPIRITOMB, Tier, PHOEBE),                            \
     .ability = ABILITY_PRESSURE,                                               \
     .nature = NATURE_CALM,                                                     \
     EV_SPREAD_SPD_DEF_HP,                                                      \
@@ -2693,8 +2699,7 @@ JUAN_REMATCH(5),
 //Can replace Infiltrator with Flame Body
 #define PHOEBE_CHANDELURE(Level, Tier)                                                \
     {                                                                                 \
-    ELITE_FOUR_MON(Level, Tier, PHOEBE),                                              \
-    .species = SPECIES_CHANDELURE,                                                    \
+    ELITE_FOUR_MON(Level, CHANDELURE, Tier, PHOEBE),                                  \
     .ability = ABILITY_INFILTRATOR,                                                   \
     .nature = NATURE_MODEST,                                                          \
     EV_SPREAD_SPA_SPE_HP,                                                             \
@@ -2702,12 +2707,19 @@ JUAN_REMATCH(5),
     .gender = TRAINER_MON_FEMALE,                                                     \
     }
 
-#define PHOEBE_TREVENANT
+#define PHOEBE_TREVENANT(Level, Tier)                                               \
+    {                                                                               \
+    ELITE_FOUR_MON(Level, TREVENANT, Tier, PHOEBE),                                 \
+    .ability = ABILITY_NATURAL_CURE,                                                \
+    .nature = NATURE_ADAMANT,                                                       \
+    EV_SPREAD_ATK_SPE_HP,                                                           \
+    .moves = {MOVE_SHADOW_CLAW, MOVE_HORN_LEECH, MOVE_ROCK_SLIDE, MOVE_LEECH_SEED}, \
+    .gender = TRAINER_MON_FEMALE,                                                   \
+    }
 
 #define PHOEBE_GOURGEIST(Level, Tier)                                               \
     {                                                                               \
-    ELITE_FOUR_MON(Level, Tier, PHOEBE, ITEM_SITRUS_BERRY),                         \
-    .species = SPECIES_GOURGEIST,                                                   \
+    ELITE_FOUR_MON(Level, GOURGEIST, Tier, PHOEBE, ITEM_SITRUS_BERRY),              \
     .ability = ABILITY_INSOMNIA,                                                    \
     .nature = NATURE_IMPISH,                                                        \
     EV_SPREAD_ATK_DEF_HP,                                                           \
@@ -2719,8 +2731,7 @@ JUAN_REMATCH(5),
 
 #define PHOEBE_PALOSSAND(Level, Tier)                                              \
     {                                                                              \
-    ELITE_FOUR_MON(Level, Tier, PHOEBE),                                           \
-    .species = SPECIES_PALOSSAND,                                                  \
+    ELITE_FOUR_MON(Level, PALOSSAND, Tier, PHOEBE),                                \
     .ability = ABILITY_WATER_COMPACTION,                                           \
     .nature = NATURE_BOLD,                                                         \
     EV_SPREAD_SPA_DEF_HP,                                                          \
@@ -2728,8 +2739,26 @@ JUAN_REMATCH(5),
     .gender = TRAINER_MON_FEMALE,                                                  \
     }
 
-#define PHOEBE_MIMIKYU
-#define PHOEBE_DHELMISE
+#define PHOEBE_MIMIKYU(Level, Tier)                                                   \
+    {                                                                                 \
+    ELITE_FOUR_MON(Level, MIMIKYU, Tier, PHOEBE),                                     \
+    .ability = ABILITY_DIGUISE,                                                       \
+    .nature = NATURE_ADAMANT,                                                         \
+    EV_SPREAD_ATK_SPE_HP,                                                             \
+    .moves = {MOVE_SHADOW_CLAW, MOVE_PLAY_ROUGH, MOVE_LEECH_LIFE, MOVE_SWORDS_DANCE}, \
+    .gender = TRAINER_MON_FEMALE,                                                     \
+    }
+
+#define PHOEBE_DHELMISE(Level, Tier)                                                  \
+    {                                                                                 \
+    ELITE_FOUR_MON(Level, DHELMISE, Tier, PHOEBE),                                    \
+    .ability = ABILITY_STEELWORKER,                                                   \
+    .nature = NATURE_ADAMANT,                                                         \
+    EV_SPREAD_ATK_SPE_HP,                                                             \
+    .moves = {MOVE_SHADOW_CLAW, MOVE_POWER_WHIP, MOVE_ANCHOR_SHOT, MOVE_LIQUIDATION}, \
+    .gender = TRAINER_MON_NONE,                                                       \
+    }
+
 #define PHOEBE_POLTEAGEIST
 #define PHOEBE_HOUNDSTONE
 
@@ -2767,8 +2796,7 @@ JUAN_REMATCH(5),
 
 #define GLACIA_WALREIN(Level, Tier)                                        \
     {                                                                      \
-    ELITE_FOUR_MON(Level, Tier, GLACIA, ITEM_SITRUS_BERRY),                \
-    .species = SPECIES_WALREIN,                                            \
+    ELITE_FOUR_MON(Level, WALREIN, Tier, GLACIA, ITEM_SITRUS_BERRY),       \
     .ability = ABILITY_THICK_FAT,                                          \
     .nature = NATURE_MODEST,                                               \
     EV_SPREAD_SPA_HP_SPE,                                                  \
@@ -2778,8 +2806,7 @@ JUAN_REMATCH(5),
 
 #define GLACIA_FROSLASS(Level, Tier)                                                \
     {                                                                               \
-    ELITE_FOUR_MON(Level, Tier, GLACIA),                                            \
-    .species = SPECIES_FROSLASS,                                                    \
+    ELITE_FOUR_MON(Level, FROSLASS, Tier, GLACIA),                                  \
     .ability = ABILITY_SNOW_CLOAK,                                                  \
     .nature = NATURE_TIMID,                                                         \
     EV_SPREAD_SPA_SPE_HP,                                                           \
@@ -2789,8 +2816,7 @@ JUAN_REMATCH(5),
 
 #define GLACIA_GLALIE(Level, Tier)                                                  \
     {                                                                               \
-    ELITE_FOUR_MON(Level, Tier, GLACIA),                                            \
-    .species = SPECIES_GLALIE,                                                      \
+    ELITE_FOUR_MON(Level, GLALIE, Tier, GLACIA),                                    \
     .ability = ABILITY_ICE_BODY,                                                    \
     .nature = NATURE_MODEST,                                                        \
     EV_SPREAD_SPA_SPE_HP,                                                           \
@@ -2800,8 +2826,7 @@ JUAN_REMATCH(5),
 
 #define GLACIA_CASTFORM(Level, Tier)                                              \
     {                                                                             \
-    ELITE_FOUR_MON(Level, Tier, GLACIA),                                          \
-    .species = SPECIES_CASTFORM,                                                  \
+    ELITE_FOUR_MON(Level, CASTFORM, Tier, GLACIA),                                \
     .ability = ABILITY_FORECAST,                                                  \
     .nature = NATURE_MODEST,                                                      \
     EV_SPREAD_SPA_SPE_HP,                                                         \
@@ -2811,8 +2836,7 @@ JUAN_REMATCH(5),
 
 #define GLACIA_SEALEO(Level, Tier)                                             \
     {                                                                          \
-    ELITE_FOUR_MON(Level, Tier, GLACIA),                                       \
-    .species = SPECIES_SEALEO,                                                 \
+    ELITE_FOUR_MON(Level, SEALEO, Tier, GLACIA),                               \
     .ability = ABILITY_ICE_BODY,                                               \
     .nature = NATURE_ADAMANT,                                                  \
     EV_SPREAD_ATK_HP_SPE,                                                      \
@@ -2822,8 +2846,7 @@ JUAN_REMATCH(5),
 
 #define GLACIA_NINETALES(Level, Tier)                                            \
     {                                                                            \
-    ELITE_FOUR_MON(Level, Tier, GLACIA, ITEM_ICY_ROCK),                          \
-    .species = SPECIES_NINETALES_ALOLA,                                          \
+    ELITE_FOUR_MON(Level, NINETALES_ALOLA, Tier, GLACIA, ITEM_ICY_ROCK),         \
     .ability = ABILITY_SNOW_WARNING,                                             \
     .nature = NATURE_TIMID,                                                      \
     EV_SPREAD_SPE_SPD_HP,                                                        \
@@ -2835,13 +2858,21 @@ JUAN_REMATCH(5),
 #define GLACIA_SANDSLASH
 #define GLACIA_MR_RIME
 #define GLACIA_JYNX
-#define GLACIA_GLACEON
+
+#define GLACIA_GLACEON(Level, Tier)                                               \
+    {                                                                             \
+    ELITE_FOUR_MON(Level, GLACEON, Tier, GLACIA),                                 \
+    .ability = ABILITY_ICE_BODY,                                                  \
+    .nature = NATURE_MODEST,                                                      \
+    EV_SPREAD_SPA_SPE_HP,                                                         \
+    .moves = {MOVE_ICE_BEAM, MOVE_SHADOW_BALL, MOVE_CALM_MIND, MOVE_AURORA_VEIL}, \
+    .gender = TRAINER_MON_FEMALE,                                                 \
+    }
 
 //Can replace Thick Fat/Trailblaze with Snow Cloak/Ice Shard
 #define GLACIA_MAMOSWINE(Level, Tier)                                               \
     {                                                                               \
-    ELITE_FOUR_MON(Level, Tier, GLACIA),                                            \
-    .species = SPECIES_MAMOSWINE,                                                   \
+    ELITE_FOUR_MON(Level, MAMOSWINE, Tier, GLACIA, ITEM_SITRUS_BERRY),              \
     .ability = ABILITY_THICK_FAT,                                                   \
     .nature = NATURE_ADAMANT,                                                       \
     EV_SPREAD_ATK_SPE_HP,                                                           \
@@ -2854,7 +2885,7 @@ JUAN_REMATCH(5),
 
 #define GLACIA_VANILLUXE(Level, Tier)                                                \
     {                                                                                \
-    ELITE_FOUR_MON(Level, Tier, GLACIA),                                             \
+    ELITE_FOUR_MON(Level, VANILLUXE, Tier, GLACIA),                                  \
     .ability = ABILITY_SNOW_WARNING,                                                 \
     .nature = NATURE_MODEST,                                                         \
     EV_SPREAD_SPA_SPE_HP,                                                            \
@@ -2864,7 +2895,7 @@ JUAN_REMATCH(5),
 
 #define GLACIA_BEARTIC(Level, Tier)                                               \
     {                                                                             \
-    ELITE_FOUR_MON(Level, Tier, GLACIA),                                          \
+    ELITE_FOUR_MON(Level, BEARTIC, Tier, GLACIA),                                 \
     .ability = ABILITY_SNOW_CLOAK,                                                \
     .nature = NATURE_ADAMANT,                                                     \
     EV_SPREAD_ATK_SPE_HP,                                                         \
@@ -2878,8 +2909,7 @@ JUAN_REMATCH(5),
 
 #define GLACIA_FROSMOTH(Level, Tier)                                             \
     {                                                                            \
-    ELITE_FOUR_MON(Level, Tier, GLACIA),                                         \
-    .species = SPECIES_FROSMOTH,                                                 \
+    ELITE_FOUR_MON(Level, FROSMOTH, Tier, GLACIA),                               \
     .ability = ABILITY_ICE_SCALES,                                               \
     .nature = NATURE_MODEST,                                                     \
     EV_SPREAD_SPA_SPD_SPE,                                                       \
@@ -2887,7 +2917,16 @@ JUAN_REMATCH(5),
     .gender = TRAINER_MON_FEMALE,                                                \
     }
 
-#define GLACIA_EISCUE
+#define GLACIA_EISCUE(Level, Tier)                                                     \
+    {                                                                                  \
+    ELITE_FOUR_MON(Level, EISCUE, Tier, GLACIA),                                       \
+    .ability = ABILITY_ICE_FACE,                                                       \
+    .nature = NATURE_ADAMANT,                                                          \
+    EV_SPREAD_ATK_SPE_HP,                                                              \
+    .moves = {MOVE_ICICLE_CRASH, MOVE_LIQUIDATION, MOVE_ZEN_HEADBUTT, MOVE_SNOWSCAPE}, \
+    .gender = TRAINER_MON_FEMALE,                                                      \
+    }
+
 #define GLACIA_CETITAN
 
 [DIFFICULTY_NORMAL][TRAINER_GLACIA] =
@@ -2924,8 +2963,7 @@ JUAN_REMATCH(5),
 
 #define DRAKE_SALAMENCE(Level, Tier)                                                     \
     {                                                                                    \
-    ELITE_FOUR_MON(Level, Tier, DRAKE, ITEM_SALAMENCITE),                                \
-    .species = SPECIES_SALAMENCE,                                                        \
+    ELITE_FOUR_MON(Level, SALAMENCE, Tier, DRAKE, ITEM_SALAMENCITE),                     \
     .ability = ABILITY_INTIMIDATE,                                                       \
     .nature = NATURE_ADAMANT,                                                            \
     EV_SPREAD_ATK_SPE_HP,                                                                \
@@ -2935,8 +2973,7 @@ JUAN_REMATCH(5),
 
 #define DRAKE_FLYGON(Level, Tier)                                                     \
     {                                                                                 \
-    ELITE_FOUR_MON(Level, Tier, DRAKE),                                               \
-    .species = SPECIES_FLYGON,                                                        \
+    ELITE_FOUR_MON(Level, FLYGON, Tier, DRAKE),                                       \
     .ability = ABILITY_LEVITATE,                                                      \
     .nature = NATURE_ADAMANT,                                                         \
     EV_SPREAD_ATK_SPE_HP,                                                             \
@@ -2946,8 +2983,7 @@ JUAN_REMATCH(5),
 
 #define DRAKE_ALTARIA(Level, Tier)                                                   \
     {                                                                                \
-    ELITE_FOUR_MON(Level, Tier, DRAKE),                                              \
-    .species = SPECIES_ALTARIA,                                                      \
+    ELITE_FOUR_MON(Level, ALTARIA, Tier, DRAKE),                                     \
     .ability = ABILITY_FLUFFY,                                                       \
     .nature = NATURE_MODEST,                                                         \
     EV_SPREAD_SPA_DEF_HP,                                                            \
@@ -2957,8 +2993,7 @@ JUAN_REMATCH(5),
 
 #define DRAKE_KINGDRA(Level, Tier)                                        \
     {                                                                     \
-    ELITE_FOUR_MON(Level, Tier, DRAKE),                                   \
-    .species = SPECIES_KINGDRA,                                           \
+    ELITE_FOUR_MON(Level, KINGDRA, Tier, DRAKE),                          \
     .ability = ABILITY_SNIPER,                                            \
     .nature = NATURE_MODEST,                                              \
     EV_SPREAD_SPA_SPE_HP,                                                 \
@@ -2968,8 +3003,7 @@ JUAN_REMATCH(5),
 
 #define DRAKE_SHELGON(Level, Tier)                                                  \
     {                                                                               \
-    ELITE_FOUR_MON(Level, Tier, DRAKE),                                             \
-    .species = SPECIES_SHELGON,                                                     \
+    ELITE_FOUR_MON(Level, SHELGON, Tier, DRAKE),                                    \
     .ability = ABILITY_ROCK_HEAD,                                                   \
     .nature = NATURE_IMPISH,                                                        \
     EV_SPREAD_ATK_DEF_HP,                                                           \
@@ -2979,8 +3013,7 @@ JUAN_REMATCH(5),
 
 #define DRAKE_DRAGALGE(Level, Tier)                                                      \
     {                                                                                    \
-    ELITE_FOUR_MON(Level, Tier, DRAKE),                                                  \
-    .species = SPECIES_DRAGALGE,                                                         \
+    ELITE_FOUR_MON(Level, DRAGALGE, Tier, DRAKE),                                        \
     .ability = ABILITY_ADAPTABILITY,                                                     \
     .nature = NATURE_CALM,                                                               \
     EV_SPREAD_SPA_SPD_HP,                                                                \
@@ -2989,12 +3022,19 @@ JUAN_REMATCH(5),
     }
 
 //Extra for hacks
-#define DRAKE_DRAGONITE
+#define DRAKE_DRAGONITE(Level, Tier)                                                    \
+    {                                                                                   \
+    ELITE_FOUR_MON(Level, DRAGONITE, Tier, DRAKE),                                      \
+    .ability = ABILITY_MULTISCALE,                                                      \
+    .nature = NATURE_ADAMANT,                                                           \
+    EV_SPREAD_ATK_SPE_HP,                                                               \
+    .moves = {MOVE_DRAGON_CLAW, MOVE_DUAL_WINGBEAT, MOVE_IRON_HEAD, MOVE_DRAGON_DANCE}, \
+    .gender = TRAINER_MON_MALE,                                                         \
+    }
 
 #define DRAKE_GARCHOMP(Level, Tier)                                                  \
     {                                                                                \
-    ELITE_FOUR_MON(Level, Tier, DRAKE, ITEM_GARCHOMPITE),                            \
-    .species = SPECIES_GARCHOMP,                                                     \
+    ELITE_FOUR_MON(Level, GARCHOMP, Tier, DRAKE, ITEM_GARCHOMPITE),                  \
     .ability = ABILITY_ROUGH_SKIN,                                                   \
     .nature = NATURE_ADAMANT,                                                        \
     EV_SPREAD_ATK_SPE_HP,                                                            \
@@ -3005,8 +3045,7 @@ JUAN_REMATCH(5),
 //Can replace Earthquake/Dragon Dance with Crunch/Swords Dance
 #define DRAKE_HAXORUS(Level, Tier)                                                   \
     {                                                                                \
-    ELITE_FOUR_MON(Level, Tier, DRAKE),                                              \
-    .species = SPECIES_HAXORUS,                                                      \
+    ELITE_FOUR_MON(Level, HAXORUS, Tier, DRAKE),                                     \
     .ability = ABILITY_MOLD_BREAKER,                                                 \
     .nature = NATURE_ADAMANT,                                                        \
     EV_SPREAD_ATK_SPE_HP,                                                            \
@@ -3017,8 +3056,7 @@ JUAN_REMATCH(5),
 //Can replace Sheer Force/Crunch/Fire Punch with Rock Head/Head Smash/Hone Claws
 #define DRAKE_DRUDDIGON(Level, Tier)                                           \
     {                                                                          \
-    ELITE_FOUR_MON(Level, Tier, DRAKE),                                        \
-    .species = SPECIES_DRUDDIGON,                                              \
+    ELITE_FOUR_MON(Level, DRUDDIGON, Tier, DRAKE),                             \
     .ability = ABILITY_SHEER_FORCE,                                            \
     .nature = NATURE_ADAMANT,                                                  \
     EV_SPREAD_ATK_SPE_HP,                                                      \
@@ -3028,8 +3066,7 @@ JUAN_REMATCH(5),
 
 #define DRAKE_GOODRA(Level, Tier)                                                 \
     {                                                                             \
-    ELITE_FOUR_MON(Level, Tier, DRAKE, ITEM_ASSAULT_VEST),                        \
-    .species = SPECIES_GOODRA,                                                    \
+    ELITE_FOUR_MON(Level, GOODRA, Tier, DRAKE, ITEM_ASSAULT_VEST),                \
     .ability = ABILITY_GOOEY,                                                     \
     .nature = NATURE_CALM,                                                        \
     EV_SPREAD_SPA_SPD_HP,                                                         \
@@ -3040,8 +3077,7 @@ JUAN_REMATCH(5),
 //Can replace Sap Sipper/Hyper Voice with Berserk/Calm Mind
 #define DRAKE_DRAMPA(Level, Tier)                                                        \
     {                                                                                    \
-    ELITE_FOUR_MON(Level, Tier, DRAKE),                                                  \
-    .species = SPECIES_DRAMPA,                                                           \
+    ELITE_FOUR_MON(Level, DRAMPA, Tier, DRAKE),                                          \
     .ability = ABILITY_SAP_SIPPER,                                                       \
     .nature = NATURE_MODEST,                                                             \
     EV_SPREAD_SPA_SPE_HP,                                                                \
@@ -3055,8 +3091,7 @@ JUAN_REMATCH(5),
 //Can replace U-turn with Body Slam
 #define DRAKE_CYCLIZAR(Level, Tier)                                            \
     {                                                                          \
-    ELITE_FOUR_MON(Level, Tier, DRAKE),                                        \
-    .species = SPECIES_CYCLIZAR,                                               \
+    ELITE_FOUR_MON(Level, CYCLIZAR, Tier, DRAKE),                              \
     .ability = ABILITY_REGENERATOR,                                            \
     .nature = NATURE_JOLLY,                                                    \
     EV_SPREAD_ATK_SPE_HP,                                                      \

@@ -452,6 +452,7 @@ upcoming
         - Fairy
         - Poison
 - Add level defines per route/group of routes?
+- Added species defines for Madeline/Laurel?
 - Update Tabitha (and maybe others?) macros to use Magma levels instead of Rematch levels?
 - Now that Gym Leader rematch party size is consistent, maybe a macro can be made
 - Get rid of Gym Leader rematches needing two Pokémon

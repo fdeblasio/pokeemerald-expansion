@@ -2459,7 +2459,7 @@ JUAN_REMATCH(5),
 
 #define SIDNEY_PERSIAN(Level, Tier)                                                \
     {                                                                              \
-    ELITE_FOUR_MON(Level, PERSIAN_ALOLAN, Tier, SIDNEY),                           \
+    ELITE_FOUR_MON(Level, PERSIAN_ALOLA, Tier, SIDNEY),                            \
     .ability = ABILITY_FUR_COAT,                                                   \
     .nature = NATURE_MODEST,                                                       \
     EV_SPREAD_SPA_SPE_DEF,                                                         \
@@ -2480,7 +2480,7 @@ JUAN_REMATCH(5),
 
 #define SIDNEY_HONCHKROW(Level, Tier)                                         \
     {                                                                         \
-    ELITE_FOUR_MON(Level, HONCHKROW, Tier, SIDNEY, ITEM_FOCUS_LENS),          \
+    ELITE_FOUR_MON(Level, HONCHKROW, Tier, SIDNEY, ITEM_SCOPE_LENS),          \
     .ability = ABILITY_SUPER_LUCK,                                            \
     .nature = NATURE_ADAMANT,                                                 \
     EV_SPREAD_ATK_SPE_HP,                                                     \
@@ -2743,7 +2743,7 @@ JUAN_REMATCH(5),
 #define PHOEBE_MIMIKYU(Level, Tier)                                                   \
     {                                                                                 \
     ELITE_FOUR_MON(Level, MIMIKYU, Tier, PHOEBE),                                     \
-    .ability = ABILITY_DIGUISE,                                                       \
+    .ability = ABILITY_DISGUISE,                                                      \
     .nature = NATURE_ADAMANT,                                                         \
     EV_SPREAD_ATK_SPE_HP,                                                             \
     .moves = {MOVE_SHADOW_CLAW, MOVE_PLAY_ROUGH, MOVE_LEECH_LIFE, MOVE_SWORDS_DANCE}, \

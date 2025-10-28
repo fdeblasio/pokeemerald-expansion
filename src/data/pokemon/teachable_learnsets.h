@@ -9227,6 +9227,7 @@ static const u16 sOmanyteTeachableLearnset[] = {
     MOVE_ICY_WIND,
     MOVE_IRON_DEFENSE,
     MOVE_KNOCK_OFF,
+    MOVE_POWER_GEM,
     MOVE_PROTECT,
     MOVE_RAIN_DANCE,
     MOVE_REST,
@@ -9267,6 +9268,7 @@ static const u16 sOmastarTeachableLearnset[] = {
     MOVE_IRON_DEFENSE,
     MOVE_KNOCK_OFF,
     MOVE_LIQUIDATION,
+    MOVE_POWER_GEM,
     MOVE_PROTECT,
     MOVE_RAIN_DANCE,
     MOVE_REST,
@@ -42970,6 +42972,7 @@ static const u16 sCetitanTeachableLearnset[] = {
 
 #if P_FAMILY_VELUZA
 static const u16 sVeluzaTeachableLearnset[] = {
+    MOVE_AQUA_TAIL,
     MOVE_BLIZZARD,
     MOVE_BODY_SLAM,
     MOVE_CRUNCH,

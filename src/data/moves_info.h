@@ -18450,7 +18450,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Attacks and rushes back to\n"
             "switch with a party Pokémon."),
         .effect = EFFECT_HIT_ESCAPE,
-        .power = 60,
+        .power = 70,
         .type = TYPE_WATER,
         .accuracy = 100,
         .pp = 20,

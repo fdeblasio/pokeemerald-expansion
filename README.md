@@ -818,6 +818,8 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Accuracy: 90->100
     - Crabhammer:
         - Accuracy: 90->100
+    - Flip Turn:
+        - Power: 60->70
     - Hydro Steam:
         - Power: 80->90
     - Octazooka:
@@ -1177,6 +1179,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Sandshrew/Sandslash:
     - Learn Earth Power by level up
 
+- Alolan Sandshrew/Alolan Sandslash (postgame):
+    - Learn Ice Shard, Avalanche, and Ice Punch by level up
+
 - Cleffa (not in main game):
     - Atk: 25->30
     - Def: 28->30
@@ -1355,7 +1360,47 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Galarian Ponyta/Galarian Rapidash (not in main game):
     - Learn Heart Stamp, Spirit Break, Zen Headbutt, and Play Rough by level up
 
+- Slowpoke (postgame):
+    - Atk: 65->40
+    - SpA: 40->65
+    - Learns Psybeam by level up
+
+- Galarian Slowpoke (postgame):
+    - Atk: 65->40
+    - SpA: 40->65
+    - Learns Psybeam by level up
+
+- Slowbro/Slowking (postgame):
+    - Learn Psybeam by level up
+
+- Galarian Slowbro/Galarian Slowking (postgame):
+    - Learn Sludge, Psybeam, and Sludge Bomb by level up
+
+- Magnemite/Magneton/Magnezone:
+    - Learn Shock Wave and Thunderbolt by level up
+
+- Farfetch'd (not in main game):
+    - Held item: Leek: 5%->100%
+
+- Sirfetch'd (not in main game):
+    - Held item: Leek: 5%->100%
+    - Learns Drain Punch by TM
+
+- Doduo/Dodrio:
+    - Learn Body Slam by level up
+
+- Seel (postgame):
+    - SpA: 45->70
+    - Learns Water Gun, Chilling Water, and Surf by level up
+
+- Dewgong (postgame):
+    - SpA: 70->95
+    - Learns Water Gun, Chilling Water, and Surf by level up
+
 - Grimer/Muk:
+    - Learn Poison Jab by level up
+
+- Alolan Grimer/Alolan Muk (postgame):
     - Learn Poison Jab by level up
 
 - Shellder (postgame):
@@ -1374,6 +1419,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Drowzee/Hypno (not in main game):
     Learn Dream Eater by level up
+
+- Krabby/Kingler (postgame):
+    - Learns Aqua Cutter and Liquidation by level up
 
 - Voltorb:
     - Learns Thunderbolt by level up
@@ -1423,40 +1471,16 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Hitmonchan (not in main game):
     - Learns Dizzy Punch by level up
 
-- Slowpoke (postgame):
-    - Atk: 65->40
-    - SpA: 40->65
-    - Learns Psybeam by level up
-
-- Galarian Slowpoke (postgame):
-    - Atk: 65->40
-    - SpA: 40->65
-
-- Slowbro/Slowking (postgame):
-    - Learn Psybeam by level up
-
-- Magnemite/Magneton/Magnezone:
-    - Learn Shock Wave and Thunderbolt by level up
-
-- Farfetch'd (not in main game):
-    - Held item: Leek: 5%->100%
-
-- Sirfetch'd (not in main game):
-    - Held item: Leek: 5%->100%
-    - Learns Drain Punch by TM
-
-- Doduo/Dodrio:
-    - Learn Body Slam by level up
-
 - Lickitung (postgame):
     - Atk: 55->65
     - Spe: 30->50
-    - Learns Coil by level up
+    - Learns Pound and Body Slam by level up
     - Learns Sludge Bomb by TM
     - Ability: Oblivious->Thick Fat
 
 - Lickilicky (postgame):
-    - Learns Coil by level up
+    - Atk: 85->100
+    - Learns Pound and Body Slam by level up
     - Learns Sludge Bomb by TM
     - Ability: Oblivious->Thick Fat
 
@@ -1684,6 +1708,12 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Swift, Light Screen, and Skill Swap at level 1
     - Learns Alluring Voice at level 45
 
+- Omanyte/Omastar (postgame):
+    - Learn Rock Throw, Rock Tomb, Water Pulse, Rock Slide, and Power Gem by level up
+
+- Kabuto/Kabutops (postgame):
+    - Learn Rock Throw, Rock Tomb, Aqua Cutter, Rock Slide, and Razor Shell by level up
+
 - Aerodactyl (postgame):
     - Learns Dual Wingbeat, Double-Edge, Head Smash, and Brave Bird by level up
 
@@ -1704,6 +1734,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Dragonite (not in main game):
     - Learns Dragon Breath by level up
     - Learns Dual Wingbeat upon evolving
+
+- Mew (postgame):
+    - Learns Confusion by level up
 
 - Chikorita (postgame):
     - Learns Vine Whip, Seed Bomb, and Energy Ball by level up
@@ -2959,6 +2992,18 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Balm Mushroom: 0%->5%
     - Learns Venoshock by level up
 
+- Frillish (postgame):
+    - Evolution: 40->35
+    - Learns Surf by level up
+
+- Jellicent (postgame):
+    - HP: 100->105
+    - SpA: 85->90
+    - Learns Surf by level up
+
+- Alomomola (postgame):
+    - Learns Flip Turn, Waterfall, and Liquidation by level up
+
 - Joltik:
     - SpA: 57->60
     - Evolution: 36->32
@@ -3804,7 +3849,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Cetoddle/Cetitan:
     - Learn Ice Fang and Icicle Crash by level up
 
-- Dondozo:
+- Veluza (postgame):
+    - Learns Waterfall, Zen Headbutt, Aqua Tail, and Psychic Fangs by level up
+
+- Dondozo (postgame):
     - Learns Waterfall and Liquidation by level up
 
 - Wo-Chien:

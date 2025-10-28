@@ -11417,7 +11417,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseAttack    = 45,
         .baseDefense   = 55,
         .baseSpeed     = 45,
-        .baseSpAttack  = P_UPDATED_STATS >= GEN_2 ? 45 : 70,
+        .baseSpAttack  = P_UPDATED_STATS >= GEN_2 ? 70 : 70,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 190,
@@ -11491,7 +11491,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseAttack    = 70,
         .baseDefense   = 80,
         .baseSpeed     = 70,
-        .baseSpAttack  = P_UPDATED_STATS >= GEN_2 ? 70 : 95,
+        .baseSpAttack  = P_UPDATED_STATS >= GEN_2 ? 95 : 95,
         .baseSpDefense = 95,
         .types = MON_TYPES(TYPE_WATER, TYPE_ICE),
         .catchRate = 75,
@@ -14150,7 +14150,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_LICKILICKY] =
     {
         .baseHP        = 110,
-        .baseAttack    = 85,
+        .baseAttack    = 100,
         .baseDefense   = 95,
         .baseSpeed     = 50,
         .baseSpAttack  = 80,

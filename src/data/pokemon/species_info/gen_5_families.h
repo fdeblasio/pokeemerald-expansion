@@ -8909,16 +8909,16 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sFrillishLevelUpLearnset,
         .teachableLearnset = sFrillishTeachableLearnset,
         .eggMoveLearnset = sFrillishEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_JELLICENT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_JELLICENT}),
     },
 
     [SPECIES_JELLICENT] =
     {
-        .baseHP        = 100,
+        .baseHP        = 105,
         .baseAttack    = 60,
         .baseDefense   = 70,
         .baseSpeed     = 60,
-        .baseSpAttack  = 85,
+        .baseSpAttack  = 90,
         .baseSpDefense = 105,
         .types = MON_TYPES(TYPE_WATER, TYPE_GHOST),
         .catchRate = 60,

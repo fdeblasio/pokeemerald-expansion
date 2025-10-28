@@ -150,6 +150,7 @@ upcoming
 - Add in GMax forms as Megas with +20 to every non-HP stat?
 - Use Cable Car defines in wild_encounters
 - Eventually remove RSE and/or BDSP teachable moves?
+- Merge Deoxys teachable learnsets?
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?
 - For Egg Groups that share names with types, give moves of that type to Pokémon not of that type in the egg group
     - Egg moves since egg group?

@@ -3166,7 +3166,7 @@ JUAN_REMATCH(5),
     IDEAL_ATTACKER_SPECIAL,                                                            \
     .moves = {MOVE_DAZZLING_GLEAM, MOVE_AIR_SLASH, MOVE_AURA_SPHERE, MOVE_NASTY_PLOT}, \
     .gender = TRAINER_MON_MALE,                                                        \
-    .heldItem = ITEM_LEFTOVERS_BERRY,                                                  \
+    .heldItem = ITEM_LEFTOVERS,                                                        \
     .ball = ITEM_POKE_BALL,                                                            \
     }
 

@@ -2925,7 +2925,7 @@ JUAN_REMATCH(4),
 
 #define SIDNEY_PERSIAN(Level, Tier)                                                \
     {                                                                              \
-    ELITE_FOUR_MON(Level, PERSIAN_ALOLAN, Tier, SIDNEY),                           \
+    ELITE_FOUR_MON(Level, PERSIAN_ALOLA, Tier, SIDNEY),                            \
     .ability = ABILITY_FUR_COAT,                                                   \
     .nature = NATURE_MODEST,                                                       \
     EV_SPREAD_SPA_SPE_DEF,                                                         \
@@ -2946,7 +2946,7 @@ JUAN_REMATCH(4),
 
 #define SIDNEY_HONCHKROW(Level, Tier)                                         \
     {                                                                         \
-    ELITE_FOUR_MON(Level, HONCHKROW, Tier, SIDNEY, ITEM_FOCUS_LENS),          \
+    ELITE_FOUR_MON(Level, HONCHKROW, Tier, SIDNEY, ITEM_SCOPE_LENS),          \
     .ability = ABILITY_SUPER_LUCK,                                            \
     .nature = NATURE_ADAMANT,                                                 \
     EV_SPREAD_ATK_SPE_HP,                                                     \

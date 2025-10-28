@@ -3431,8 +3431,8 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
         STEVEN_SKARMORY(87),
-        STEVEN_CLAYDOL(87),
-        STEVEN_JIRACHI(88),
+        STEVEN_AEGISLASH(87),
+        STEVEN_ARCHALUDON(88),
         {
         STEVEN_MAWILE(88),
         .heldItem = ITEM_LIFE_ORB,

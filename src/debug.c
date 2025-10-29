@@ -2088,7 +2088,7 @@ static void Debug_Display_ItemInfo(u32 itemId, u32 digit, u8 windowId)
         end = StringCopy(end, gText_Space);
         end = StringCopy(end, GetMoveName(moveId));
     }
-    else if (CheckIfItemIsTMHMOrEvolutionStone(itemId) == 1)
+    else if (CheckIfItemIsTMOrEvolutionStone(itemId) == 1)
     {
         end = StringCopy(end, COMPOUND_STRING(" None"));
     }

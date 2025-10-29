@@ -3648,7 +3648,24 @@
     "TutorMoves": []
   },
   "MEWTWO": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 16,
+        "Move": "MOVE_PSYBEAM"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_PSYCHIC_NOISE"
+      },
+      {
+        "Level": 32,
+        "Move": "MOVE_EXTRASENSORY"
+      },
+      {
+        "Level": 48,
+        "Move": "MOVE_ZEN_HEADBUTT"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -15260,7 +15277,12 @@
     "TutorMoves": []
   },
   "DREEPY": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 18,
+        "Move": "MOVE_BREAKING_SWIPE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [
@@ -15269,30 +15291,76 @@
     "TutorMoves": []
   },
   "DRAKLOAK": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 0,
+        "Move": "MOVE_SHADOW_PUNCH"
+      },
+      {
+        "Level": 18,
+        "Move": "MOVE_BREAKING_SWIPE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "DRAGAPULT": {
-    "LevelMoves": [],
-    "PreEvoMoves": [],
-    "TMMoves": [
-      "MOVE_SHADOW_CLAW"
+    "LevelMoves": [
+      {
+        "Level": 0,
+        "Move": "MOVE_SHADOW_CLAW"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_DRAGON_PULSE"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_SHADOW_PUNCH"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_DRAGON_CLAW"
+      },
+      {
+        "Level": 18,
+        "Move": "MOVE_BREAKING_SWIPE"
+      }
     ],
+    "PreEvoMoves": [],
+    "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "ZACIAN": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 33,
+        "Move": "MOVE_SPIRIT_BREAK"
+      },
+      {
+        "Level": 66,
+        "Move": "MOVE_PLAY_ROUGH"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "ZAMAZENTA": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 33,
+        "Move": "MOVE_BRICK_BREAK"
+      },
+      {
+        "Level": 66,
+        "Move": "MOVE_BODY_PRESS"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

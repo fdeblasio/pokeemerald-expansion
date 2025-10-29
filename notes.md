@@ -71,7 +71,8 @@ upcoming
     - Falinks:
         - HP: 65->75
         - Has a +10 to Def that needs to be added to the Mega's BST (maybe SpD?)
-- Finish adding fishing encounters to DexNav
+- DexNav:
+    - Now that there's less fishing, that box can be shortened
     - One row?:
         - Screen: 720 pixels wide
         - Icons: 87 pixels wide?
@@ -129,8 +130,6 @@ upcoming
 - Remove unused code
     - Vanilla code
 - Organize changes better
-- POSTGAME_LEVEL is set in wild_encounter but is still used for Trick House 8, SS Tidal trainers, and Gym rematches (trainers.h), mass outbreaks (tv.c), Jirachi, Johto starters, postgame legendaries, and Bonsly (scripts.inc)
-    - They all probably use species.h but a level number feels out of place there
 - Once more changes are made, consolidate commits on develop branch again
 
 ### Pokémon
@@ -162,7 +161,9 @@ upcoming
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
 
 ### Items
+- Sorting seems to be broken?
 - Ideally all SV TMs would be available if the bag was ever expanded greatly
+    - Important ones should be made into tutors
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Include charms? (might go over Key Items amount)
 - Xaman's TM Case? (https://www.pokecommunity.com/showpost.php?p=10378278)

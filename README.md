@@ -1566,23 +1566,23 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Mime Jr. (not in main game):
     - Type: Psychic/Fairy->Psychic
-    - Gender Ratio: 50/50->100/0
+    - Gender ratio: 50/50->100/0
     - Evolves into Galarian Mr. Mime with an Ice Stone
     - Learns Expanding Force by level up
 
 - Mr. Mime (not in main game):
     - Type: Psychic/Fairy->Psychic
-    - Gender Ratio: 50/50->100/0
+    - Gender ratio: 50/50->100/0
     - Learns Expanding Force by level up
 
 - Galarian Mr. Mime (not in main game):
-    - Gender Ratio: 50/50->100/0
+    - Gender ratio: 50/50->100/0
     - Learns Powder Snow, Aurora Beam, Expanding Force, and Ice Beam by level up
 
 - Mr. Rime (not in main game):
     - Atk: 85->75
     - Spe: 70->90
-    - Gender Ratio: 50/50->100/0
+    - Gender ratio: 50/50->100/0
     - Learns Powder Snow, Aurora Beam, Expanding Force, and Ice Beam by level up
 
 - Scyther (not in main game):
@@ -1658,6 +1658,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Def: 50->55
     - SpA: 45->55
     - Catch rate: 45->90
+    - Gender ratio: 87.5/12.5->50/50
     - Now evolves into Espeon only with a Sun Stone
     - Now evolves into Umbreon only with a Moon Stone
     - Now evolves into Sylveon only with a Shiny Stone
@@ -1665,6 +1666,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Body Slam at level 45
 
 - All Eeveelutions (not in main game):
+    - Gender ratio: 87.5/12.5->50/50
     - Learn Body Slam by level up
 
 - Vaporeon (not in main game):
@@ -1831,7 +1833,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Azurill:
     - Evolution: friendship->10
     - Type: Normal/Fairy->Water/Fairy
-    - Gender Ratio: 25/75->50/50
+    - Gender ratio: 25/75->50/50
     - Catch rate: 150->255
     - Learns Fairy Wind and Aqua Jet by level up
 
@@ -1893,7 +1895,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Pluck and Dual Wingbeat by level up
 
 - Misdreavus/Mismagius (not in main game):
-    - Gender Ratio: 50/50->25/75
+    - Gender ratio: 50/50->25/75
     - Learn Ominous Wind by level up
 
 - Unown:
@@ -2330,10 +2332,10 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Budew:
     - Evolution: friendship->13
-    - Gender Ratio: 50/50->75/25
+    - Gender ratio: 50/50->75/25
 
 - Roselia/Roserade:
-    - Gender Ratio: 50/50->75/25
+    - Gender ratio: 50/50->75/25
     - Learn Venoshock and Energy Ball by level up
     - Held items:
         - Poison Barb: 5%->50%
@@ -2626,7 +2628,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Combee:
     - SpA: 30->40
-    - Gender Ratio: 87.5/12.5->50/50
+    - Gender ratio: 87.5/12.5->50/50
     - Learns Air Slash by level up
 
 - Vespiquen:
@@ -2840,7 +2842,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - HP: 103->105
     - Def: 86->90
     - SpD: 86->90
-    - Gender Ratio: 50/50 -> 25/75
+    - Gender ratio: 50/50 -> 25/75
     - Base experience: 390->395
     - Learns Fairy Wind, Swift, and Dazzling Gleam by level up
 
@@ -3284,13 +3286,13 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learn Metal Claw, Shadow Claw, and Smart Strike by level up
 
 - Spritzee:
-    - Gender Ratio: 50/50->25/75
+    - Gender ratio: 50/50->25/75
     - Learns Dazzling Gleam by level up
 
 - Aromatisse:
     - Spe: 29->47
     - Base experience: 162->168
-    - Gender Ratio: 50/50->25/75
+    - Gender ratio: 50/50->25/75
     - Learns Aromatic Mist by evolving
     - Learns Dazzling Gleam by level up
 

@@ -754,6 +754,8 @@ There are some mechanics, moves and abilities that are missing and being develop
         - Power: 30->40
     - Astral Barrage:
         - PP: 5->10
+    - Bitter Malice:
+        - Power: 75->80
     - Infernal Parade:
         - Power: 60->75
     - Moongeist Beam:
@@ -1327,8 +1329,14 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Crobat:
     - Learns Gust and Poison Jab by level up
 
-- Growlithe/Arcanine (not in game):
+- Growlithe/Arcanine (not in main game):
     - Learn Temper Flare by level up
+
+- Hisuian Growlithe (not in main game):
+    - Learns Rock Throw and Temper Flare by level up
+
+- Hisuian Arcanine (not in main game):
+    - Learns Temper Flare and Head Smash by level up
 
 - Poliwag (postgame):
     - SpA: 40->50
@@ -1560,6 +1568,9 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Aqua Jet by level up
 
 - Seaking:
+    - HP: 80->90
+    - Atk: 92->95
+    - Spe: 68->70
     - Learns Aqua Jet by level up
     - Learns Liquidation by TM
 
@@ -1849,7 +1860,12 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learn Tail Glow by Egg Move
 
 - Ampharos (postgame):
+    - Spe: 55->65
     - Learns Tail Glow, Shock Wave, and Thunderbolt by level up
+
+- Mega Ampharos (postgame):
+    - Atk: 95->85
+    - Spe: 45->65
 
 - Azurill:
     - Evolution: friendship->10
@@ -2962,6 +2978,9 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Zorua/Zoroark:
     - Learn Snarl and Dark Pulse by level up
+
+- Hisuian Zorua/Hisuian Zoroark:
+    - Learn Swift, Hex, and Hyper Voice by level up
 
 - Gothita:
     - Evolution: 32->22

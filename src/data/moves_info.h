@@ -19356,7 +19356,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "A spine-chilling resentment.\n"
             "Lowers the foe's Attack."),
         .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_9 ? 75 : 60,
+        .power = B_UPDATED_MOVE_DATA >= GEN_9 ? 80 : 60,
         .type = TYPE_GHOST,
         .accuracy = 100,
         .pp = 15,

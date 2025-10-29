@@ -2207,7 +2207,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseHP        = 90,
         .baseAttack    = 75,
         .baseDefense   = P_UPDATED_STATS >= GEN_6 ? 85 : 75,
-        .baseSpeed     = 55,
+        .baseSpeed     = 65,
         .baseSpAttack  = 115,
         .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_ELECTRIC),
@@ -2284,9 +2284,15 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_AMPHAROS_MEGA] =
     {
         .baseHP        = 90,
+<<<<<<< HEAD
         .baseAttack    = 95,
         .baseDefense   = 105,
         .baseSpeed     = 45,
+=======
+        .baseAttack    = 85,
+        .baseDefense   = AMPHAROS_DEFENSE + 20,
+        .baseSpeed     = 65,
+>>>>>>> 33041e678c (Updated Seaking, Ampharos, Hisuian Growlithe, and Hisuian Zorua)
         .baseSpAttack  = 165,
         .baseSpDefense = 110,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_DRAGON),

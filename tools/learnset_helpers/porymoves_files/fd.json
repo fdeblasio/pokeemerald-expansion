@@ -1243,7 +1243,16 @@
     "TutorMoves": []
   },
   "GROWLITHE_HISUI": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ROCK_THROW"
+      },
+      {
+        "Level": 36,
+        "Move": "MOVE_TEMPER_FLARE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -1253,7 +1262,7 @@
     "LevelMoves": [
       {
         "Level": 2,
-        "Move": "MOVE_FIRE_FANG"
+        "Move": "MOVE_TEMPER_FLARE"
       },
       {
         "Level": 2,
@@ -1266,6 +1275,10 @@
       {
         "Level": 2,
         "Move": "MOVE_HOWL"
+      },
+      {
+        "Level": 64,
+        "Move": "MOVE_HEAD_SMASH"
       }
     ],
     "PreEvoMoves": [],
@@ -10730,14 +10743,40 @@
     "TutorMoves": []
   },
   "ZORUA_HISUI": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 12,
+        "Move": "MOVE_SWIFT"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_HEX"
+      },
+      {
+        "Level": 36,
+        "Move": "MOVE_HYPER_VOICE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "ZOROARK_HISUI": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 12,
+        "Move": "MOVE_SWIFT"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_HEX"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_HYPER_VOICE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

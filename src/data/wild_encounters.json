@@ -2243,19 +2243,19 @@
             "mons": [
               {
                 "range": "ROUTE_122",
-                "species": "TENTACRUEL"
+                "species": "CORSOLA_GALAR"
               },
               {
                 "range": "ROUTE_122",
-                "species": "PELIPPER"
+                "species": "CORSOLA_GALAR"
               },
               {
                 "range": "ROUTE_122",
-                "species": "PELIPPER"
+                "species": "CORSOLA_GALAR"
               },
               {
                 "range": "ROUTE_122",
-                "species": "PELIPPER"
+                "species": "CORSOLA_GALAR"
               }
             ]
           },
@@ -6871,15 +6871,15 @@
               },
               {
                 "range": "POSTGAME",
-                "species": "CORSOLA_GALAR"
+                "species": "CRAMORANT"
               },
               {
                 "range": "POSTGAME",
-                "species": "CORSOLA_GALAR"
+                "species": "CRAMORANT"
               },
               {
                 "range": "POSTGAME",
-                "species": "CORSOLA_GALAR"
+                "species": "CRAMORANT"
               }
             ]
           },
@@ -6891,27 +6891,27 @@
               },
               {
                 "range": "POSTGAME",
-                "species": "QWILFISH"
+                "species": "ARROKUDA"
               },
               {
                 "range": "POSTGAME",
-                "species": "QWILFISH_HISUI"
+                "species": "VELUZA"
               },
               {
                 "range": "POSTGAME",
-                "species": "QWILFISH"
+                "species": "BARRASKEWDA"
               },
               {
                 "range": "POSTGAME",
-                "species": "OVERQWIL"
+                "species": "VELUZA"
               },
               {
                 "range": "POSTGAME",
-                "species": "QWILFISH"
+                "species": "BARRASKEWDA"
               },
               {
                 "range": "POSTGAME",
-                "species": "OVERQWIL"
+                "species": "VELUZA"
               }
             ]
           }
@@ -7095,27 +7095,27 @@
               },
               {
                 "range": "POSTGAME",
-                "species": "ARROKUDA"
+                "species": "QWILFISH"
               },
               {
                 "range": "POSTGAME",
-                "species": "VELUZA"
+                "species": "QWILFISH_HISUI"
               },
               {
                 "range": "POSTGAME",
-                "species": "BARRASKEWDA"
+                "species": "QWILFISH"
               },
               {
                 "range": "POSTGAME",
-                "species": "VELUZA"
+                "species": "OVERQWIL"
               },
               {
                 "range": "POSTGAME",
-                "species": "BARRASKEWDA"
+                "species": "QWILFISH"
               },
               {
                 "range": "POSTGAME",
-                "species": "VELUZA"
+                "species": "OVERQWIL"
               }
             ]
           }

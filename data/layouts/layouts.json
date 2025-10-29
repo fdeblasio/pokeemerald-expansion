@@ -2682,7 +2682,8 @@
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/SafariZone_FireCave/border.bin",
-      "blockdata_filepath": "data/layouts/SafariZone_FireCave/map.bin"
+      "blockdata_filepath": "data/layouts/SafariZone_FireCave/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_SAFARI_ZONE_ICE_CAVE",
@@ -2692,7 +2693,8 @@
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/SafariZone_IceCave/border.bin",
-      "blockdata_filepath": "data/layouts/SafariZone_IceCave/map.bin"
+      "blockdata_filepath": "data/layouts/SafariZone_IceCave/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_SAFARI_ZONE_FOREST",

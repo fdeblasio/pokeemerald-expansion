@@ -10240,7 +10240,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_SCORBUNNY,
+        .species = SPECIES_CHARMANDER,
         IVS(12),
         }
     },
@@ -10285,7 +10285,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_RABOOT,
+        .species = SPECIES_CHARMELEON,
         IVS(12),
         }
     },

@@ -2860,9 +2860,9 @@ bool32 TryFieldEffects(enum FieldEffectCases caseId)
     BattleScriptPushCursorAndCallback(BattleScript_OverworldTerrain);        \
     effect = TRUE;
 
-        if (B_THUNDERSTORM_TERRAIN == TRUE
-         && !(gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN)
-         && GetCurrentWeather() == WEATHER_RAIN_THUNDERSTORM)
+        if ((B_THUNDERSTORM_TERRAIN == TRUE &&
+        (GetCurrentWeather() == WEATHER_RAIN_THUNDERSTORM || GetCurrentRegionMapSectionId() == MAPSEC_NEW_MAUVILLE))
+         && !(gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN))
         {
             // overworld weather started rain, so just do electric terrain anim
             SET_TERRAIN(ELECTRIC)
@@ -2873,7 +2873,7 @@ bool32 TryFieldEffects(enum FieldEffectCases caseId)
         {
             SET_TERRAIN(MISTY)
         }
-        else if ((gMapHeader.mapLayoutId == LAYOUT_VERDANTURF_TOWN || gBattleEnvironment == BATTLE_TERRAIN_LONG_GRASS) && !(gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN))
+        else if ((gMapHeader.mapLayoutId == LAYOUT_VERDANTURF_TOWN || gBattleEnvironment == BATTLE_ENVIRONMENT_LONG_GRASS) && !(gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN))
         {
             SET_TERRAIN(GRASSY)
         }

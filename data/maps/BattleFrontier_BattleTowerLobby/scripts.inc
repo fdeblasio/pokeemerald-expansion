@@ -1044,6 +1044,9 @@ BattleFrontier_BattleTowerLobby_Text_RecordLastMatch:
 	.string "Shall I record your last Battle Tower\n"
 	.string "match on your Frontier Pass?$"
 
+BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsEnd:
+	.string "Please come see me when you are ready.$"
+
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50Singles:
 	.string "Excuse me!\p"
 	.string "You don't have three eligible Pokémon.\p"

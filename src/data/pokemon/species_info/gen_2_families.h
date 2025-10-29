@@ -2287,6 +2287,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseAttack    = 85,
         .baseDefense   = 105,
         .baseSpeed     = 65,
+>>>>>>> f515eda5ee (Updated Seaking, Ampharos, Hisuian Growlithe, and Hisuian Zorua)
         .baseSpAttack  = 165,
         .baseSpDefense = 110,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_DRAGON),

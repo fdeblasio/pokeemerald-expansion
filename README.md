@@ -1775,6 +1775,9 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Dual Wingbeat upon evolving
     - Learns Dragon Breath and Dragon Claw by level up
 
+- Mewtwo (not in main game):
+    - Learns Psybeam, Psychic Noise, Extrasensory, and Zen Headbutt by level up
+
 - Mew (postgame):
     - Learns Confusion by level up
 
@@ -3776,11 +3779,24 @@ There are some mechanics, moves and abilities that are missing and being develop
 
 - Drakloak:
     - Evolution: 60->55
+    - Learns Shadow Punch upon evolving
     - Learns Dragon Breath by Egg Move
 
 - Dragapult:
-    - Learns Shadow Claw by TM
+    - Learns Shadow Claw upon evolving
+    - Learns Dragon Pulse, Shadow Punch, and Dragon Claw by level up
     - Learns Dragon Breath by Egg Move
+
+- Zacian:
+    - Gender ratio: genderless->0/100
+    - Learns Spirit Break and Play Rough by level up
+
+- Zamazenta:
+    - Crowned Form Def: 140->145
+    - Crowned Form SpD: 140->145
+    - Crowned Form Spe: 128->118
+    - Gender ratio: genderless->100/0
+    - Learns Brick Break and Body Press by level up
 
 - Regieleki:
     - Learn Rest and Endure by level up

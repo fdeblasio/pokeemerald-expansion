@@ -289,6 +289,7 @@ upcoming
     - Route 128: Where Steven flies to?
 
 ### Overworld
+- Make Regi caves only one room?
 - Add caves and more areas to Safari Zone for more postgame mons
     - Make them themed like ice and fire. Maybe can add legendaries
 - See what makes the 119 house Pokemon move and apply it other places

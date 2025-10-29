@@ -415,10 +415,6 @@ static mapsec_u16_t GetRegionMapSectionId(u8 mapGroup, u8 mapNum)
 
 static bool8 MapHasSpecies(const struct WildEncounterTypes *info, u16 species)
 {
-    u32 headerId = GetCurrentMapWildMonHeaderId();
-    u8 currentMapGroup = gWildMonHeaders[headerId].mapGroup;
-    u8 currentMapNum = gWildMonHeaders[headerId].mapNum;
-
     if (MonListHasSpecies(info->landMonsInfo, species, LAND_WILD_COUNT))
         return TRUE;
     if (MonListHasSpecies(info->waterMonsInfo, species, WATER_WILD_COUNT))

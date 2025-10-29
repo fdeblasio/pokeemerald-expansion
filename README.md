@@ -255,6 +255,7 @@ There are some mechanics, moves and abilities that are missing and being develop
 - EVs now give one stat increase for every EV but cap out at 63 (individual)/127 (total). This will lead to the same stats as the old system but easier to train
 - Bird Keepers now use the overworld sprite of male Psychics since it looks more like them than the blond sprite
 - Houndour was added to the Hoenn Pokédex to give Team Magma more variety
+- Galarian Corsola and Cursola were added to the Hoenn Pokédex
 - Pokémon can now be listed as orange in the Pokédex
 - The Safari Zone is now in the postgame only. Its regular Pokémon have been moved to other locations
 - Underwater areas now connect better
@@ -2008,11 +2009,11 @@ There are some mechanics, moves and abilities that are missing and being develop
     - SpA: 65->80
     - Learns Water Pulse and Surf by level up
 
-- Galarian Corsola (postgame):
+- Galarian Corsola:
     - SpA: 65->80
     - Learns Shadow Ball by level up
 
-- Cursola (postgame):
+- Cursola:
     - Learns Shadow Ball by level up
 
 - Remoraid (postgame):
@@ -3618,7 +3619,7 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Mud-Slap, Mud Shot, Scorching Sands, Drill Run, High Horsepower, and Earthquake
     - Learn Dragon Breath by Egg Move
 
-- Cramorant:
+- Cramorant (postgame):
     - HP: 70->75
     - SpA: 85->95
     - Spe: 85->95

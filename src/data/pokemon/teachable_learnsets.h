@@ -28543,6 +28543,7 @@ static const u16 sZoruaHisuiTeachableLearnset[] = {
     MOVE_FOCUS_PUNCH,
     MOVE_GIGA_IMPACT,
     MOVE_HYPER_BEAM,
+    MOVE_HYPER_VOICE,
     MOVE_ICY_WIND,
     MOVE_KNOCK_OFF,
     MOVE_NASTY_PLOT,

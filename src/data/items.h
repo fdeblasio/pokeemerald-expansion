@@ -988,7 +988,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_ETHER] =
     {
         .name = ITEM_NAME("Ether"),
-        .price = (I_PRICE >= GEN_2) ? 1200 : 1,
+        .price = (I_PRICE >= GEN_2) ? 1000 : 1,
         .holdEffectParam = 10,
         .description = COMPOUND_STRING(
             "Restores the PP\n"
@@ -1027,7 +1027,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_ELIXIR] =
     {
         .name = ITEM_NAME("Elixir"),
-        .price = (I_PRICE >= GEN_2) ? 3000 : 1,
+        .price = (I_PRICE >= GEN_2) ? 2000 : 1,
         .holdEffectParam = 10,
         .description = COMPOUND_STRING(
             "Restores the PP\n"
@@ -1046,7 +1046,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_MAX_ELIXIR] =
     {
         .name = ITEM_NAME("Max Elixir"),
-        .price = (I_PRICE >= GEN_2) ? 4500 : 1,
+        .price = (I_PRICE >= GEN_2) ? 3000 : 1,
         .holdEffectParam = 255,
         .description = COMPOUND_STRING(
             "Fully restores the\n"

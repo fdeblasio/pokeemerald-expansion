@@ -19,7 +19,7 @@
         {
           "type": "fishing_mons",
           "encounter_rates": [
-            100, 50, 50, 25, 25, 25, 25
+            100, 50, 50, 50, 50
           ],
           "groups": {
             "old_rod": [0],

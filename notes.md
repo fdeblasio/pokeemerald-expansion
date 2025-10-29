@@ -163,6 +163,7 @@ upcoming
 ### Items
 - Fix sorting (Hyper Potion->Potion->Revive->Super Potion)
     - Check if same in upcoming or if just in local branch
+- Max Elixir (and others?) should stay on party screen like Full Restores do
 - Ideally all SV TMs would be available if the bag was ever expanded greatly
     - Important ones should be made into tutors
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)

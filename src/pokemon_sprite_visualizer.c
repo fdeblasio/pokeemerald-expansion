@@ -394,17 +394,17 @@ const u8 gBattleBackgroundNames[][30] =
 
 const u8 gBattleBackgroundTerrainNames[][26] =
 {
-    [BATTLE_ENVIRONMENT_GRASS]         = _("Normal - Grass           "),
-    [BATTLE_ENVIRONMENT_LONG_GRASS]    = _("Normal - Long Grass      "),
-    [BATTLE_ENVIRONMENT_SAND]          = _("Normal - Sand            "),
-    [BATTLE_ENVIRONMENT_UNDERWATER]    = _("Normal - Underwater      "),
-    [BATTLE_ENVIRONMENT_WATER]         = _("Normal - Water           "),
-    [BATTLE_ENVIRONMENT_POND]          = _("Normal - Pond            "),
-    [BATTLE_ENVIRONMENT_MOUNTAIN]      = _("Normal - Mountain        "),
-    [BATTLE_ENVIRONMENT_CAVE]          = _("Normal - Cave            "),
-    [BATTLE_ENVIRONMENT_BUILDING]      = _("Normal - Building        "),
-    [BATTLE_ENVIRONMENT_PLAIN]         = _("Normal - Plain           "),
-    [BATTLE_ENVIRONMENT_BURIAL_GROUND] = _("Normal - Burial Ground   "),
+    [BATTLE_ENVIRONMENT_GRASS]         = _("Grass                "),
+    [BATTLE_ENVIRONMENT_LONG_GRASS]    = _("Long Grass           "),
+    [BATTLE_ENVIRONMENT_SAND]          = _("Sand                 "),
+    [BATTLE_ENVIRONMENT_UNDERWATER]    = _("Underwater           "),
+    [BATTLE_ENVIRONMENT_WATER]         = _("Water                "),
+    [BATTLE_ENVIRONMENT_POND]          = _("Pond                 "),
+    [BATTLE_ENVIRONMENT_MOUNTAIN]      = _("Mountain             "),
+    [BATTLE_ENVIRONMENT_CAVE]          = _("Cave                 "),
+    [BATTLE_ENVIRONMENT_BUILDING]      = _("Building             "),
+    [BATTLE_ENVIRONMENT_PLAIN]         = _("Plain                "),
+    [BATTLE_ENVIRONMENT_BURIAL_GROUND] = _("Burial Ground        "),
 };
 
 const u8 sShadowSizeLabels[][4] =
@@ -1056,6 +1056,8 @@ static void UpdateBattleBg(u8 taskId, bool8 increment)
         if (increment)
         {
             if (data->battleEnvironment == BATTLE_ENVIRONMENT_PLAIN)
+                data->battleEnvironment = BATTLE_ENVIRONMENT_BURIAL_GROUND;
+            else if (data->battleEnvironment == BATTLE_ENVIRONMENT_BURIAL_GROUND)
                 data->battleBgType += 1;
             else
                 data->battleEnvironment += 1;
@@ -1064,6 +1066,8 @@ static void UpdateBattleBg(u8 taskId, bool8 increment)
         {
             if (data->battleEnvironment == BATTLE_ENVIRONMENT_GRASS)
                 data->battleBgType = MAP_BATTLE_SCENE_RAYQUAZA;
+            else if (data->battleEnvironment == BATTLE_ENVIRONMENT_BURIAL_GROUND)
+                data->battleEnvironment = BATTLE_ENVIRONMENT_PLAIN;
             else
                 data->battleEnvironment -= 1;
         }
@@ -1075,7 +1079,7 @@ static void UpdateBattleBg(u8 taskId, bool8 increment)
         else
         {
             data->battleBgType = MAP_BATTLE_SCENE_NORMAL;
-            data->battleEnvironment = BATTLE_ENVIRONMENT_PLAIN;
+            data->battleEnvironment = BATTLE_ENVIRONMENT_BURIAL_GROUND;
         }
     }
     else if (data->battleBgType == MAP_BATTLE_SCENE_RAYQUAZA)

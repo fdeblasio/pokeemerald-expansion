@@ -1123,7 +1123,10 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Poison Fang by Egg Move
 
 - Charmander/Charmeleon/Charizard (not in main game):
-    - Learn Metal Claw by level up
+    - Learn Metal Claw and Incinerate by level up
+
+- Squirtle/Wartortle/Blastoise (not in main game):
+    - Learn Surf by level up
 
 - Caterpie (not in main game):
     - Learns Bug Bite at level 7 instead of 9
@@ -3203,6 +3206,19 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Kyurem:
     - Learns Icicle Crash by TM
 
+- Chespin/Quilladin:
+    - Learn Bullet Seed by level up
+
+- Chesnaught:
+    - Learns Bullet Seed, Drain Punch, and Body Press by level up
+
+- Fennekin:
+    - Learns Ember at level 8
+    - Learns Flame Burst by level up
+
+- Braixen/Delphox:
+    - Learn Flame Burst by level up
+
 - Froakie/Frogadier:
     - Learn Bubble Beam and Surf by level up
     - Hidden Ability: Protean->Water Bubble
@@ -3537,8 +3553,15 @@ There are some mechanics, moves and abilities that are missing and being develop
 - Lunala:
     - Learns Shadow Claw and Hyper Beam by level up
 
+- Grookey:
+    - Learns Grassy Glide and Seed Bomb by level up
+
 - Thwackey:
     - Evolution: 35->36
+    - Learns Grassy Glide and Seed Bomb by level up
+
+- Rillaboom:
+    - Learns Grassy Glide and Seed Bomb by level up
 
 - Scorbunny:
     - Learns Flame Charge at level 8 and Fire Fang in its place at level 17
@@ -3553,8 +3576,15 @@ There are some mechanics, moves and abilities that are missing and being develop
     - Learns Flame Charge at level 8 and Fire Fang in its place at level 19
     - Learns Flame Wheel, Fire Punch, and Blaze Kick by level up
 
+- Sobble:
+    - Learns Surf by level up
+
 - Drizzile:
     - Evolution: 35->36
+    - Learns Surf by level up
+
+- Inteleon:
+    - Learns Surf by level up
 
 - Skwovet/Greedent:
     - Learn Headbutt, Tail Slap, Seed Bomb, and Crunch by level up

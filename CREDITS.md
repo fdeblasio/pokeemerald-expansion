@@ -133,3 +133,35 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 - [Data Files](https://www.pokecommunity.com/showthread.php?t=417909)
 - [Complete FireRed Upgrade](https://github.com/Skeli789/Complete-Fire-Red-Upgrade)
 - [pokeemerald](https://github.com/pret/pokeemerald/)
+
+## Contributions/Acknowledgements
+- [pret's initial decompilation](https://github.com/pret/pokeemerald)
+- [RHH's Emerald Expansion](https://github.com/rh-hideout/pokeemerald-expansion)
+    - Fill out individual contributers (https://github.com/rh-hideout/pokeemerald-expansion/wiki/Credits)
+- DizzyEgg
+    - Starting the Emerald Expansion
+- [Porymaps](https://github.com/huderlem/porymap/releases/tag/5.1.1)
+- Lunos
+    - [Fixing Snow weather](https://github.com/pret/pokeemerald/wiki/Fix-Snow-Weather)
+    - [Swapping party using Select](https://www.pokecommunity.com/showpost.php?p=10420662)
+    - [Displaying Return/Frustration power in summary screen](https://www.pokecommunity.com/showpost.php?p=10575976&postcount=420)
+- AsparagusEduardo
+    - [Not showing dex entries until the Pokédex is received](https://github.com/pret/pokeemerald/wiki/Not-showing-dex-entries-until-getting-the-Pok%C3%A9dex)
+- Ghoulslash
+    - [Fixing the surfing dismount bug](https://github.com/pret/pokeemerald/wiki/Surfing-Dismount-Ground-Effects)
+    - [Implementing shops using badge count](https://github.com/pret/pokeemerald/wiki/Shop-Items-By-Badge-Count)
+    - [Bag sorting](https://www.pokecommunity.com/showpost.php?p=10167488&postcount=84)
+- Jaizu
+    - [Implementing the FRLG bag sound](https://www.pokecommunity.com/showpost.php?p=10205757)
+- Buffel Saft
+    - [Showing EVs/IVs in the summary screen](https://www.pokecommunity.com/showpost.php?p=10410302)
+    - [Removing the need to water berries on rainy routes](https://www.pokecommunity.com/showpost.php?p=10349397&postcount=258)
+- [Zeturic for a wrapping summary screen](https://www.pokecommunity.com/showpost.php?p=10060875&postcount=27)
+- [Diego Mertens for adding the Move Relearner to the summary screen](https://www.pokecommunity.com/showpost.php?p=10470602)
+- [Flametix for fixing the RESET_FONT bug](https://github.com/pret/pokeemerald/wiki/Implement-Missing-Text-Function-RESET_FONT)
+- [devolov for removing Use on Key Items with no field use](https://github.com/pret/pokeemerald/wiki/Make-Key-Items-That-Cannot-Be-Used-In-The-Field-Not-Show-A-Use-or-Register-Option)
+- [Anon822 for removing map popups for the same map section](https://www.pokecommunity.com/showpost.php?p=10449889)
+- [Fyreeire for removing the extra save confirmation](https://github.com/pret/pokeemerald/wiki/Remove-the-extra-save-confirmation)
+- [hjk321 for extra save space](https://github.com/pret/pokeemerald/wiki/Extra-save-space-with-two-lines-of-code)
+- [Mashanny for making text speed up without holding A/B](https://www.pokecommunity.com/showpost.php?p=10266385)
+- [Sapphire Jester for making the Soot Sack usuable](https://www.pokecommunity.com/showpost.php?p=10222284&postcount=178)

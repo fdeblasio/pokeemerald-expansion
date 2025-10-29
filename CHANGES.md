@@ -2062,7 +2062,7 @@
 
 - Ninjask:
     - Learns Struggle Bug, Mud Shot, and Leech Life by level up
-    - Learns Steel Wing by TM
+    - Learns Steel Wing and Attract by TM
     - Learns Hone Claws by Egg Move
 
 - Shedinja:

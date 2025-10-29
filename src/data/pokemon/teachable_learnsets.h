@@ -6,7 +6,7 @@
 // - MOVE_CALM_MIND                                    //
 // - MOVE_ROAR                                         //
 // - MOVE_TOXIC                                        //
-// - MOVE_HAIL                                         //
+// - MOVE_SNOWSCAPE                                    //
 // - MOVE_BULK_UP                                      //
 // - MOVE_BULLET_SEED                                  //
 // - MOVE_HIDDEN_POWER                                 //
@@ -16895,6 +16895,7 @@ static const u16 sNinjaskTeachableLearnset[] = {
     MOVE_ACROBATICS,
     MOVE_AERIAL_ACE,
     MOVE_AIR_SLASH,
+    MOVE_ATTRACT,
     MOVE_BUG_BUZZ,
     MOVE_CUT,
     MOVE_DIG,

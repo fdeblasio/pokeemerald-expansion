@@ -119,7 +119,7 @@ LilycoveCity_DepartmentStore_3F_Pokemart_EvoUnused:
 	.2byte ITEM_RAZOR_CLAW      @ Battle Frontier  National: Sneasel, Sneasel-H
 	.2byte ITEM_ELECTIRIZER		@ Battle Frontier  National: Electabuzz
 	.2byte ITEM_MAGMARIZER		@ Battle Frontier  National: Magmar
-	.2byte ITEM_DRAGON_SCALE
+	.2byte ITEM_DRAGON_SCALE    @ Battle Frontier  National: Seadra
 	.2byte ITEM_SACHET
 	.2byte ITEM_WHIPPED_DREAM
 	.2byte ITEM_GALARICA_CUFF   @ Battle Frontier  National: Slowpoke-G

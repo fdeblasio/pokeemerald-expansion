@@ -19,12 +19,12 @@
         {
           "type": "fishing_mons",
           "encounter_rates": [
-            100, 50, 50, 25, 25, 25, 25
+            100, 50, 50, 50, 50
           ],
           "groups": {
             "old_rod": [0],
             "good_rod": [1, 2],
-            "super_rod": [3, 4, 5, 6]
+            "super_rod": [3, 4]
           }
         }
       ],
@@ -66,14 +66,6 @@
               {
                 "range": "GOOD_ROD_INITIAL",
                 "species": "CORPHISH"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "SEAKING"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "WHISCASH"
               },
               {
                 "range": "SUPER_ROD_INITIAL",
@@ -131,14 +123,6 @@
               {
                 "range": "SUPER_ROD_INITIAL",
                 "species": "WAILORD"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "WAILORD"
               }
             ]
           }
@@ -188,14 +172,6 @@
               {
                 "range": "SUPER_ROD_INITIAL",
                 "species": "WAILORD"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "SHARPEDO"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "WAILORD"
               }
             ]
           }
@@ -236,15 +212,7 @@
               },
               {
                 "range": "LILYCOVE_CITY",
-                "species": "WAILMER"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "SHARPEDO"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "WAILORD"
+                "species": "CARVANHA"
               },
               {
                 "range": "SUPER_ROD_INITIAL",
@@ -252,7 +220,7 @@
               },
               {
                 "range": "SUPER_ROD_INITIAL",
-                "species": "WAILORD"
+                "species": "SHARPEDO"
               }
             ]
           }
@@ -294,14 +262,6 @@
               {
                 "range": "MOSSDEEP_CITY",
                 "species": "WAILMER"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "WAILORD"
               },
               {
                 "range": "SUPER_ROD_INITIAL",
@@ -359,14 +319,6 @@
               {
                 "range": "SOOTOPOLIS_CITY",
                 "species": "GYARADOS"
-              },
-              {
-                "range": "SOOTOPOLIS_CITY",
-                "species": "GYARADOS"
-              },
-              {
-                "range": "SOOTOPOLIS_CITY",
-                "species": "GYARADOS"
               }
             ]
           }
@@ -408,14 +360,6 @@
               {
                 "range": "PACIFIDLOG_TOWN",
                 "species": "WAILMER"
-              },
-              {
-                "range": "PACIFIDLOG_TOWN",
-                "species": "CORSOLA"
-              },
-              {
-                "range": "PACIFIDLOG_TOWN",
-                "species": "WAILORD"
               },
               {
                 "range": "PACIFIDLOG_TOWN",
@@ -502,14 +446,6 @@
               {
                 "range": "EVER_GRANDE_CITY",
                 "species": "MAGIKARP"
-              },
-              {
-                "range": "EVER_GRANDE_CITY",
-                "species": "LUVDISC"
-              },
-              {
-                "range": "EVER_GRANDE_CITY",
-                "species": "CORSOLA"
               },
               {
                 "range": "EVER_GRANDE_CITY",
@@ -669,14 +605,6 @@
               {
                 "range": "SUPER_ROD_INITIAL",
                 "species": "CRAWDAUNT"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "CRAWDAUNT"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "CRAWDAUNT"
               }
             ]
           }
@@ -763,14 +691,6 @@
               {
                 "range": "GOOD_ROD_INITIAL",
                 "species": "WAILMER"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "WAILORD"
               },
               {
                 "range": "SUPER_ROD_INITIAL",
@@ -873,14 +793,6 @@
               {
                 "range": "SUPER_ROD_INITIAL",
                 "species": "STARMIE"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "STARMIE"
               }
             ]
           }
@@ -922,14 +834,6 @@
               {
                 "range": "SURF_INITIAL",
                 "species": "WAILMER"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "WAILORD"
               },
               {
                 "range": "SUPER_ROD_INITIAL",
@@ -987,14 +891,6 @@
               {
                 "range": "SUPER_ROD_INITIAL",
                 "species": "WAILORD"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "WAILORD"
               }
             ]
           }
@@ -1036,14 +932,6 @@
               {
                 "range": "GOOD_ROD_INITIAL",
                 "species": "WAILMER"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "WAILORD"
               },
               {
                 "range": "SUPER_ROD_INITIAL",
@@ -1101,14 +989,6 @@
               {
                 "range": "SUPER_ROD_INITIAL",
                 "species": "WAILORD"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "WAILORD"
               }
             ]
           }
@@ -1150,14 +1030,6 @@
               {
                 "range": "GOOD_ROD_INITIAL",
                 "species": "WAILMER"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "WAILORD"
               },
               {
                 "range": "SUPER_ROD_INITIAL",
@@ -1260,14 +1132,6 @@
               {
                 "range": "SUPER_ROD_INITIAL",
                 "species": "WAILORD"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "LANTURN"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "WAILORD"
               }
             ]
           }
@@ -1354,14 +1218,6 @@
               {
                 "range": "GOOD_ROD_INITIAL",
                 "species": "BARBOACH"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "SEAKING"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "WHISCASH"
               },
               {
                 "range": "SUPER_ROD_INITIAL",
@@ -1562,14 +1418,6 @@
               {
                 "range": "SUPER_ROD_INITIAL",
                 "species": "WHISCASH"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "SEAKING"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "WHISCASH"
               }
             ]
           }
@@ -1656,14 +1504,6 @@
               {
                 "range": "GOOD_ROD_INITIAL",
                 "species": "WAILMER"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "WAILORD"
               },
               {
                 "range": "SUPER_ROD_INITIAL",
@@ -1815,14 +1655,6 @@
               {
                 "range": "SUPER_ROD_INITIAL",
                 "species": "CRAWDAUNT"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "CRAWDAUNT"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "CRAWDAUNT"
               }
             ]
           }
@@ -1909,14 +1741,6 @@
               {
                 "range": "GOOD_ROD_INITIAL",
                 "species": "CARVANHA"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "SHARPEDO"
               },
               {
                 "range": "SUPER_ROD_INITIAL",
@@ -2019,14 +1843,6 @@
               {
                 "range": "SUPER_ROD_INITIAL",
                 "species": "SHARPEDO"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "MILOTIC"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "SHARPEDO"
               }
             ]
           }
@@ -2113,14 +1929,6 @@
               {
                 "range": "ROUTE_120",
                 "species": "BARBOACH"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "SEAKING"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "WHISCASH"
               },
               {
                 "range": "SUPER_ROD_INITIAL",
@@ -2223,14 +2031,6 @@
               {
                 "range": "SUPER_ROD_INITIAL",
                 "species": "WAILORD"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "WAILORD"
               }
             ]
           }
@@ -2272,14 +2072,6 @@
               {
                 "range": "ROUTE_122",
                 "species": "WAILMER"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "WAILORD"
               },
               {
                 "range": "SUPER_ROD_INITIAL",
@@ -2382,14 +2174,6 @@
               {
                 "range": "SUPER_ROD_INITIAL",
                 "species": "WAILORD"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "WAILORD"
               }
             ]
           }
@@ -2431,14 +2215,6 @@
               {
                 "range": "ROUTE_124",
                 "species": "WAILMER"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "WAILORD"
               },
               {
                 "range": "SUPER_ROD_INITIAL",
@@ -2496,14 +2272,6 @@
               {
                 "range": "SUPER_ROD_INITIAL",
                 "species": "WAILORD"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "WAILORD"
               }
             ]
           }
@@ -2545,14 +2313,6 @@
               {
                 "range": "ROUTE_126",
                 "species": "WAILMER"
-              },
-              {
-                "range": "ROUTE_126",
-                "species": "TENTACRUEL"
-              },
-              {
-                "range": "ROUTE_126",
-                "species": "WAILORD"
               },
               {
                 "range": "ROUTE_126",
@@ -2610,14 +2370,6 @@
               {
                 "range": "ROUTE_127",
                 "species": "WAILORD"
-              },
-              {
-                "range": "ROUTE_127",
-                "species": "TENTACRUEL"
-              },
-              {
-                "range": "ROUTE_127",
-                "species": "WAILORD"
               }
             ]
           }
@@ -2651,14 +2403,6 @@
               {
                 "range": "ROUTE_128",
                 "species": "MAGIKARP"
-              },
-              {
-                "range": "ROUTE_128",
-                "species": "LUVDISC"
-              },
-              {
-                "range": "ROUTE_128",
-                "species": "CORSOLA"
               },
               {
                 "range": "ROUTE_128",
@@ -2716,14 +2460,6 @@
               {
                 "range": "ROUTE_129",
                 "species": "WAILMER"
-              },
-              {
-                "range": "ROUTE_129",
-                "species": "TENTACRUEL"
-              },
-              {
-                "range": "ROUTE_129",
-                "species": "WAILORD"
               },
               {
                 "range": "ROUTE_129",
@@ -2826,14 +2562,6 @@
               {
                 "range": "ROUTE_130",
                 "species": "WAILORD"
-              },
-              {
-                "range": "ROUTE_130",
-                "species": "TENTACRUEL"
-              },
-              {
-                "range": "ROUTE_130",
-                "species": "WAILORD"
               }
             ]
           }
@@ -2883,14 +2611,6 @@
               {
                 "range": "ROUTE_131",
                 "species": "WAILORD"
-              },
-              {
-                "range": "ROUTE_131",
-                "species": "TENTACRUEL"
-              },
-              {
-                "range": "ROUTE_131",
-                "species": "WAILORD"
               }
             ]
           }
@@ -2928,14 +2648,6 @@
               {
                 "range": "ROUTE_132",
                 "species": "HORSEA"
-              },
-              {
-                "range": "ROUTE_132",
-                "species": "WAILMER"
-              },
-              {
-                "range": "ROUTE_132",
-                "species": "SEADRA"
               },
               {
                 "range": "ROUTE_132",
@@ -2997,14 +2709,6 @@
               {
                 "range": "ROUTE_133",
                 "species": "WAILMER"
-              },
-              {
-                "range": "ROUTE_133",
-                "species": "SEADRA"
-              },
-              {
-                "range": "ROUTE_133",
-                "species": "WAILMER"
               }
             ]
           }
@@ -3046,14 +2750,6 @@
               {
                 "range": "SURF_INITIAL",
                 "species": "WAILMER"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "SEADRA"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "WAILORD"
               },
               {
                 "range": "SUPER_ROD_INITIAL",
@@ -3499,14 +3195,6 @@
               {
                 "range": "SUPER_ROD_INITIAL",
                 "species": "WHISCASH"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "SEAKING"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "WHISCASH"
               }
             ]
           }
@@ -3593,14 +3281,6 @@
               {
                 "range": "METEOR_FALLS_WATERFALL",
                 "species": "BARBOACH"
-              },
-              {
-                "range": "METEOR_FALLS_WATERFALL",
-                "species": "SEAKING"
-              },
-              {
-                "range": "METEOR_FALLS_WATERFALL",
-                "species": "WHISCASH"
               },
               {
                 "range": "METEOR_FALLS_WATERFALL",
@@ -3703,14 +3383,6 @@
               {
                 "range": "METEOR_FALLS_WATERFALL",
                 "species": "WHISCASH"
-              },
-              {
-                "range": "METEOR_FALLS_WATERFALL",
-                "species": "SEAKING"
-              },
-              {
-                "range": "METEOR_FALLS_WATERFALL",
-                "species": "WHISCASH"
               }
             ]
           }
@@ -3797,14 +3469,6 @@
               {
                 "range": "METEOR_FALLS_WATERFALL",
                 "species": "BARBOACH"
-              },
-              {
-                "range": "METEOR_FALLS_WATERFALL",
-                "species": "SEAKING"
-              },
-              {
-                "range": "METEOR_FALLS_WATERFALL",
-                "species": "WHISCASH"
               },
               {
                 "range": "METEOR_FALLS_WATERFALL",
@@ -4156,14 +3820,6 @@
               {
                 "range": "SUPER_ROD_INITIAL",
                 "species": "TENTACRUEL"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "TENTACRUEL"
               }
             ]
           }
@@ -4205,14 +3861,6 @@
               {
                 "range": "DIVE_INITIAL",
                 "species": "TENTACOOL"
-              },
-              {
-                "range": "DIVE_INITIAL",
-                "species": "TENTACRUEL"
-              },
-              {
-                "range": "DIVE_INITIAL",
-                "species": "TENTACRUEL"
               },
               {
                 "range": "DIVE_INITIAL",
@@ -5295,14 +4943,6 @@
               {
                 "range": "SUPER_ROD_INITIAL",
                 "species": "WAILORD"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "WAILORD"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "WAILORD"
               }
             ]
           }
@@ -5389,14 +5029,6 @@
               {
                 "range": "SHOAL_CAVE",
                 "species": "WAILMER"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "WAILORD"
-              },
-              {
-                "range": "SUPER_ROD_INITIAL",
-                "species": "WAILORD"
               },
               {
                 "range": "SUPER_ROD_INITIAL",
@@ -5544,7 +5176,7 @@
               },
               {
                 "range": "SEAFLOOR_CAVERN",
-                "species": "WAILMER"
+                "species": "TENTACOOL"
               },
               {
                 "range": "SEAFLOOR_CAVERN",
@@ -5552,15 +5184,7 @@
               },
               {
                 "range": "SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
-              },
-              {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "TENTACRUEL"
-              },
-              {
-                "range": "SEAFLOOR_CAVERN",
-                "species": "WAILORD"
               }
             ]
           }
@@ -5891,7 +5515,7 @@
               },
               {
                 "range": "SEAFLOOR_CAVERN",
-                "species": "WAILMER"
+                "species": "TENTACOOL"
               },
               {
                 "range": "SEAFLOOR_CAVERN",
@@ -5899,15 +5523,7 @@
               },
               {
                 "range": "SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
-              },
-              {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "TENTACRUEL"
-              },
-              {
-                "range": "SEAFLOOR_CAVERN",
-                "species": "WAILORD"
               }
             ]
           }
@@ -5993,7 +5609,7 @@
               },
               {
                 "range": "SEAFLOOR_CAVERN",
-                "species": "WAILMER"
+                "species": "TENTACOOL"
               },
               {
                 "range": "SEAFLOOR_CAVERN",
@@ -6001,15 +5617,7 @@
               },
               {
                 "range": "SEAFLOOR_CAVERN",
-                "species": "CRAWDAUNT"
-              },
-              {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "TENTACRUEL"
-              },
-              {
-                "range": "SEAFLOOR_CAVERN",
-                "species": "WAILORD"
               }
             ]
           }
@@ -6496,14 +6104,6 @@
               {
                 "range": "VICTORY_ROAD",
                 "species": "WHISCASH"
-              },
-              {
-                "range": "VICTORY_ROAD",
-                "species": "SEAKING"
-              },
-              {
-                "range": "VICTORY_ROAD",
-                "species": "WHISCASH"
               }
             ]
           }
@@ -6590,14 +6190,6 @@
               {
                 "range": "POSTGAME",
                 "species": "FRILLISH"
-              },
-              {
-                "range": "POSTGAME",
-                "species": "EELEKTRIK"
-              },
-              {
-                "range": "POSTGAME",
-                "species": "JELLICENT"
               },
               {
                 "range": "POSTGAME",
@@ -6700,14 +6292,6 @@
               {
                 "range": "POSTGAME",
                 "species": "MANTINE"
-              },
-              {
-                "range": "POSTGAME",
-                "species": "OCTILLERY"
-              },
-              {
-                "range": "POSTGAME",
-                "species": "MANTINE"
               }
             ]
           }
@@ -6786,14 +6370,6 @@
               {
                 "range": "POSTGAME",
                 "species": "MAGIKARP"
-              },
-              {
-                "range": "POSTGAME",
-                "species": "DONDOZO"
-              },
-              {
-                "range": "POSTGAME",
-                "species": "ALOMOMOLA"
               },
               {
                 "range": "POSTGAME",
@@ -6904,14 +6480,6 @@
               {
                 "range": "POSTGAME",
                 "species": "VELUZA"
-              },
-              {
-                "range": "POSTGAME",
-                "species": "BARRASKEWDA"
-              },
-              {
-                "range": "POSTGAME",
-                "species": "VELUZA"
               }
             ]
           }
@@ -7006,14 +6574,6 @@
               {
                 "range": "POSTGAME",
                 "species": "DRAGALGE"
-              },
-              {
-                "range": "POSTGAME",
-                "species": "CLAWITZER"
-              },
-              {
-                "range": "POSTGAME",
-                "species": "DRAGALGE"
               }
             ]
           }
@@ -7100,14 +6660,6 @@
               {
                 "range": "POSTGAME",
                 "species": "QWILFISH_HISUI"
-              },
-              {
-                "range": "POSTGAME",
-                "species": "QWILFISH"
-              },
-              {
-                "range": "POSTGAME",
-                "species": "OVERQWIL"
               },
               {
                 "range": "POSTGAME",

@@ -104,7 +104,6 @@ upcoming
     - Edit contests?/Contests overhaul
         - Update Pledge moves to combo with each other like the elemental fangs
 - Mt. Pyre:
-    - Have the inside of Mt. Pyre use Burial Ground terrain?
 - Mossdeep:
 - Sootopolis:
     - The events in Sootopolis should set the seen flag for the trio
@@ -149,6 +148,7 @@ upcoming
 - Eventually remove RSE and/or BDSP teachable moves?
 - Merge Deoxys teachable learnsets?
 - Standardize starter stats
+- Remove Shift from mon 2 in double battle?
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?
 - For Egg Groups that share names with types, give moves of that type to Pokémon not of that type in the egg group
     - Egg moves since egg group?
@@ -161,7 +161,8 @@ upcoming
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
 
 ### Items
-- Sorting seems to be broken?
+- Fix sorting (Hyper Potion->Potion->Revive->Super Potion)
+    - Check if same in upcoming or if just in local branch
 - Ideally all SV TMs would be available if the bag was ever expanded greatly
     - Important ones should be made into tutors
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
@@ -223,9 +224,10 @@ upcoming
     - Just make new tutors in towns or Battle Frontier?
     - Remove Snarl and Psychic Noise from Toxtricity's level up learnset once this is implemented
 - Nature Power:
+    - In ORAS, Sky Pillar gets Air Slash, but in RSE it just gets a regular cave
     - Nature Power details on summary screen (power/accuracy would be for in-battle status screen only)
-        - All moves are special so change category to special (if nothing changes)?
-        - This should wait for the battle terrain refactor
+        - All moves are currently Special so change category in moves_info.h back to Status if any of them change
+            - The summary screen would show the proper category, however
     - Revert some Nature Power moves for a more varied effect
 - Update local Porymoves for automatic movepool updates (similar to Hail/Snowscape)
     - Any Pokémon that learns Drill Peck should learn Drill Run

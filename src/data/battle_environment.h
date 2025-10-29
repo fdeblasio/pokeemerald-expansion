@@ -31,6 +31,7 @@ const u16 gBattleEnvironmentPalette_Cave[] = INCBIN_U16("graphics/battle_environ
 const u32 gBattleEnvironmentTilemap_Cave[] = INCBIN_U32("graphics/battle_environment/cave/map.bin.smolTM");
 
 const u16 gBattleEnvironmentPalette_Plain[] = INCBIN_U16("graphics/battle_environment/plain/palette.gbapal");
+const u16 gBattleEnvironmentPalette_BurialGround[] = INCBIN_U16("graphics/battle_environment/burial_ground/palette.gbapal");
 
 const u32 gBattleEnvironmentTiles_Building[] = INCBIN_U32("graphics/battle_environment/building/tiles.4bpp.smol");
 const u16 gBattleEnvironmentPalette_Frontier[] = INCBIN_U16("graphics/battle_environment/stadium/battle_frontier.gbapal"); // this is also used for link battles
@@ -297,6 +298,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .naturePower = MOVE_SHADOW_BALL,
         .secretPowerEffect = MOVE_EFFECT_FLINCH,
         .camouflageType = TYPE_GHOST,
+        .background = BUILDING_BACKGROUND(Building, BurialGround),
     },
 
     [BATTLE_ENVIRONMENT_PUDDLE] =

@@ -11,6 +11,9 @@
 - AI_FLAG_ACE_POKEMON potentially broken in multi-battles (maybe only if both trainers have it)
 - If you help one of the Lilycove Pokémon Center ladies, the other lady thinks you've already helped her as well
     - Could have something to do with this: sContestLadyPtr->id = LILYCOVE_LADY_CONTEST
+- Relearning graphics glitch
+- Naming to PC glitch
+- Torkoal sprite on Mt. Chimney sometimes glitches
 
 ### Potentially just savefile issues due to merging upcoming/playing while hacking
 - Lilycove ladies crash the game

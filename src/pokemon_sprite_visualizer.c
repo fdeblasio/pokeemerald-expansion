@@ -394,16 +394,17 @@ const u8 gBattleBackgroundNames[][30] =
 
 const u8 gBattleBackgroundTerrainNames[][26] =
 {
-    [BATTLE_ENVIRONMENT_GRASS]      = _("Normal - Grass           "),
-    [BATTLE_ENVIRONMENT_LONG_GRASS] = _("Normal - Long Grass      "),
-    [BATTLE_ENVIRONMENT_SAND]       = _("Normal - Sand            "),
-    [BATTLE_ENVIRONMENT_UNDERWATER] = _("Normal - Underwater      "),
-    [BATTLE_ENVIRONMENT_WATER]      = _("Normal - Water           "),
-    [BATTLE_ENVIRONMENT_POND]       = _("Normal - Pond            "),
-    [BATTLE_ENVIRONMENT_MOUNTAIN]   = _("Normal - Mountain        "),
-    [BATTLE_ENVIRONMENT_CAVE]       = _("Normal - Cave            "),
-    [BATTLE_ENVIRONMENT_BUILDING]   = _("Normal - Building        "),
-    [BATTLE_ENVIRONMENT_PLAIN]      = _("Normal - Plain           "),
+    [BATTLE_ENVIRONMENT_GRASS]         = _("Normal - Grass           "),
+    [BATTLE_ENVIRONMENT_LONG_GRASS]    = _("Normal - Long Grass      "),
+    [BATTLE_ENVIRONMENT_SAND]          = _("Normal - Sand            "),
+    [BATTLE_ENVIRONMENT_UNDERWATER]    = _("Normal - Underwater      "),
+    [BATTLE_ENVIRONMENT_WATER]         = _("Normal - Water           "),
+    [BATTLE_ENVIRONMENT_POND]          = _("Normal - Pond            "),
+    [BATTLE_ENVIRONMENT_MOUNTAIN]      = _("Normal - Mountain        "),
+    [BATTLE_ENVIRONMENT_CAVE]          = _("Normal - Cave            "),
+    [BATTLE_ENVIRONMENT_BUILDING]      = _("Normal - Building        "),
+    [BATTLE_ENVIRONMENT_PLAIN]         = _("Normal - Plain           "),
+    [BATTLE_ENVIRONMENT_BURIAL_GROUND] = _("Normal - Burial Ground   "),
 };
 
 const u8 sShadowSizeLabels[][4] =

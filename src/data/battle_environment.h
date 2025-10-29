@@ -478,6 +478,8 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .secretPowerEffect = MOVE_EFFECT_FLINCH,
         .camouflageType = TYPE_GHOST,
         .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
+        .background = BUILDING_BACKGROUND(Building, BurialGround),
+        .battleIntroSlide = BattleIntroSlide3,
     },
 
     [BATTLE_ENVIRONMENT_PUDDLE] =

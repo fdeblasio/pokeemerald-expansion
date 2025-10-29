@@ -3,7 +3,7 @@
 
 #define LAND_WILD_COUNT     10
 #define WATER_WILD_COUNT    4
-#define FISH_WILD_COUNT     7
+#define FISH_WILD_COUNT     5
 #define HIDDEN_WILD_COUNT   3
 
 #endif // GUARD_CONSTANTS_WILD_ENCOUNTER_H

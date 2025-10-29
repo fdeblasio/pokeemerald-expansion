@@ -372,8 +372,7 @@ upcoming
 ## Emerald
 - Rustboro:
 - Dewford:
-    - Reduce Super Rod slots to just 2? (Variety will come from all the routes with water)
-        - Reduce Surf to 3?
+    - Reduce Surf slots to just 3? (Variety will come from all the routes with water)
     - Get Exp. Share from Steven instead of from Mr. Stone after
         - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game
             - It isn't on by default though, so could still be Steven

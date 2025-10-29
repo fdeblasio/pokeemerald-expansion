@@ -35,7 +35,6 @@ upcoming
 ```
 
 ## To Do:
-- Move README.md to FEATURES.md
 - Z-A Megas:
     - Pidgey line:
         - Make attacking stats more consistent? (Regular has 10 more Atk, but Mega has 55 more SpA)
@@ -126,7 +125,7 @@ upcoming
 - More simple modifications: https://www.pokecommunity.com/showthread.php?t=416647&page=1
 - Pret wiki tutorials:       https://github.com/pret/pokeemerald/wiki/Tutorials
 - Fix dynamic README lines (work in VS code but not GitHub)
-- Combine two meta files (notes.md and README.md)?
+- Combine two meta files (notes.md and CHANGES.md)?
     Include more changes, even if general like Battle Frontier edits
 - Remove unused code
     - Vanilla code

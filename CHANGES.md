@@ -3249,14 +3249,24 @@
     - Learns Twister and Dragon Breath by level up
 
 - Rowlet:
+    - HP: 68->70
+    - SpA: 50->45
+    - Spe: 42->45
     - Evolution: 17->16
     - Learns Dual Wingbeat by level up
 
 - Dartrix:
+    - HP: 78->80
+    - SpA: 70->65
+    - Spe: 52->55
     - Evolution: 34->36
     - Learns Dual Wingbeat by level up
 
 - Decidueye:
+    - HP: 78->80
+    - Atk: 107->110
+    - SpA: 100->85
+    - Spe: 70->80
     - Learns Dual Wingbeat by level up
 
 - Litten:

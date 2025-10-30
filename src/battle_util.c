@@ -6410,7 +6410,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
         break;
     case ABILITY_IRON_FIST:
         if (IsPunchingMove(move))
-           UQ4_12_MULTIPLY(modifier, 1.5);
+           UQ4_12_MULTIPLY(modifier, 1.5);  //Originally 1.2
         break;
     case ABILITY_SHEER_FORCE:
         if (MoveIsAffectedBySheerForce(move))

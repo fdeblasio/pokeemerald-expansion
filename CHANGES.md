@@ -1147,6 +1147,9 @@
     - SpA: 90->100
     - Learns Surf by level up
 
+- Abra:
+    - Catch rate: 200->255
+
 - Kadabra/Alakazam:
     - Held item: Twisted Spoon: 5%->100%
 

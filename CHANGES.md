@@ -6,20 +6,10 @@
     - I found a way to do so, but it causes a graphical glitch in the PC so it's not implemented yet
 - Followers will stop following you if you use the naming screen from the party menu. It will start to follow you again if you talk to it
 - One of the sprites on Mt. Chimney sometimes glitches
-- AI_FLAG_ACE_POKEMON potentially broken in multi-battles (maybe only if both trainers have it?)
 - If you help one of the Lilycove Pokémon Center ladies, the other lady thinks you've already helped her as well
-    - Could have something to do with this: sContestLadyPtr->id = LILYCOVE_LADY_CONTEST
 - Relearning graphics glitch
 - Naming to PC glitch
 - Torkoal sprite on Mt. Chimney sometimes glitches
-
-### Potentially just savefile issues due to merging upcoming/playing while hacking
-- Lilycove ladies crash the game
-- Some of the EV-reducing berries on Route 123 will randomly disappear and then come back
-    - This may be related to the amount of overworld sprites/palettes
-- Moving an Pokémon in the PC seems to duplicate its item in the bag
-- Items in the Battle Pyramid's Battle Bag/held items in the Battle Pike are turning into Poke Balls
-    - Seems to happen after trainer battles?
 
 ## Changes
 - NOTE: This all assumes there are no rebasing errors

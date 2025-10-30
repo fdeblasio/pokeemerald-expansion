@@ -148,7 +148,6 @@ upcoming
 - Eventually remove RSE and/or BDSP teachable moves?
 - Merge Deoxys teachable learnsets?
 - Standardize starter stats
-- Remove Shift from mon 2 in double battle?
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?
 - For Egg Groups that share names with types, give moves of that type to Pokémon not of that type in the egg group
     - Egg moves since egg group?

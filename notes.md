@@ -217,6 +217,7 @@ upcoming
 
 ### Moves
 - Tailwind tutor?
+- Aqua Ring heals more with Water Bubble? In rain?
 - Consolidate Ever Grande tutor code
 - Add regular moves with GMax effects?
 - Find way for Rotom to learn special moves by level up (for relearning). Currently have TMs, but not all moves (Hydro Pump/Leaf Storm) are TMs

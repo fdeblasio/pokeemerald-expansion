@@ -2829,6 +2829,16 @@
 - Pawmot:
     - Learns Mach Punch, Power-Up Punch, Drain Punch, Thunder Punch, Mega Punch, and Supercell Slam by level up
 
+- Fidough:
+    - HP: 37->40
+    - Learns Fairy Wind by level up
+
+- Dachsbun:
+    - HP: 57->60
+    - Atk: 80->90
+    - Learns Body Press upon evolving
+    - Learns Fairy Wind by level up
+
 - Nacli/Naclstack:
     - Learn Rock Tomb by level up
 

@@ -3254,9 +3254,9 @@ JUAN_REMATCH(5),
     .partySize = 6,                                                                        \
     .party = (const struct TrainerMon[]) {                                                 \
         WALLACE_SYLVEON(AceLevel - 3),                                                     \
-        WALLACE_TINKATON(AceLevel - 3),                                                    \
+        WALLACE_GRANBULL(AceLevel - 3),                                                    \
         WALLACE_COMFEY(AceLevel - 3),                                                      \
-        WALLACE_GRANBULL(AceLevel - 2),                                                    \
+        WALLACE_DACHSBUN(AceLevel - 2),                                                    \
         WALLACE_CLEFABLE(AceLevel - 2),                                                    \
         WALLACE_TOGEKISS(AceLevel),                                                        \
     },                                                                                     \

@@ -9135,7 +9135,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "A life-risking tackle that\n"
             "slightly hurts the user."),
         #endif
-        .effect = EFFECT_RECOIL,
+        .effect = EFFECT_HIT,
         .power = 120,
         .type = TYPE_ELECTRIC,
         .accuracy = 100,
@@ -9143,7 +9143,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .argument = { .recoilPercentage = 33 },
         .makesContact = TRUE,
         #if B_UPDATED_MOVE_DATA >= GEN_4
             .additionalEffects = ADDITIONAL_EFFECTS({

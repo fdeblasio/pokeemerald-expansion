@@ -2736,16 +2736,6 @@
     - SpA: 114->115
     - Learns Thunderbolt and Sludge Bomb by level up
 
-- Milcery
-    - SpD: 61->65
-    - Speed: 34->35
-    - Learns Fairy Wind and Disarming Voice by level up
-
-- Alcremie:
-    - SpD: 121->125
-    - Speed: 64->65
-    - Learns Fairy Wind and Disarming Voice by level up
-
 - Falinks:
     - HP: 65->75
     - Def: 100->110

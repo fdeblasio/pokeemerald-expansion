@@ -8102,7 +8102,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         },
         {
         .lvl = 22,
-        .species = SPECIES_MILCERY,
+        .species = SPECIES_FIDOUGH,
         IVS(1),
         }
     },

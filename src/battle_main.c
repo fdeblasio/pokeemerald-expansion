@@ -6192,7 +6192,7 @@ u32 GetDynamicPower(struct Pokemon *mon, u32 move, u32 battler){
     enum MonState state = gMain.inBattle ? MON_IN_BATTLE : MON_OUTSIDE_BATTLE;
     u32 type = CheckDynamicMoveType(mon, move, battler, state);
     u32 category = GetMoveCategory(move);
-    u32 species, heldItem, holdEffect, ability, type1, type2, type3, status;
+    u32 species, heldItem, holdEffect, ability, type1, type2, type3, status, battlerDef;
     bool8 isSunny, isRainy, isSandstorm, isSnowy, isFoggy;
     bool8 isElectric, isMisty, isGrassy, isPsychic;
     bool32 monInBattle = gMain.inBattle && gPartyMenu.menuType != PARTY_MENU_TYPE_IN_BATTLE;
@@ -6239,6 +6239,11 @@ u32 GetDynamicPower(struct Pokemon *mon, u32 move, u32 battler){
         isPsychic = FALSE && IsOverworldMonGrounded(mon); //Can be changed if ever overworld weather or terrain that causes Psychic Terrain
     }
 
+    if (gMain.inBattle)
+        battlerDef = BATTLE_OPPOSITE(battler);
+    else
+        battlerDef = 0;
+
     switch (moveEffect)
     {
     case EFFECT_POWER_BASED_ON_USER_HP:
@@ -6266,6 +6271,15 @@ u32 GetDynamicPower(struct Pokemon *mon, u32 move, u32 battler){
         }
         else if (isSunny || isRainy || isSandstorm || isSnowy || isFoggy)
             power *= 2;
+        break;
+    case EFFECT_DOUBLE_POWER_ON_ARG_STATUS:
+        if (gMain.inBattle)
+        {
+            // Comatose targets treated as if asleep
+            if ((gBattleMons[battlerDef].status1 | (STATUS1_SLEEP * (GetBattlerAbility(battlerDef) == ABILITY_COMATOSE))) & GetMoveEffectArg_Status(move)
+            && !((GetMoveAdditionalEffectById(move, 0)->moveEffect == MOVE_EFFECT_REMOVE_STATUS) && DoesSubstituteBlockMove(battler, battlerDef, move)))
+                power *= 2;
+        }
         break;
     case EFFECT_ACROBATICS:
         if (heldItem == ITEM_NONE)
@@ -6374,7 +6388,7 @@ u32 GetDynamicPower(struct Pokemon *mon, u32 move, u32 battler){
     case ABILITY_TOUGH_CLAWS:
         if (monInBattle)
         {
-            if (IsMoveMakingContact(battler, BATTLE_OPPOSITE(battler), ability, holdEffect, move))
+            if (IsMoveMakingContact(battler, battlerDef, ability, holdEffect, move))
                 UQ4_12_MULTIPLY(power, 1.3);
         }
         else if (MoveMakesContact(move) && !(holdEffect == HOLD_EFFECT_PUNCHING_GLOVE && IsPunchingMove(move)))
@@ -6495,7 +6509,7 @@ u32 GetDynamicPower(struct Pokemon *mon, u32 move, u32 battler){
 
         struct DamageContext ctx = {0};
         ctx.battlerAtk = battler;
-        ctx.battlerDef = BATTLE_OPPOSITE(battler);
+        ctx.battlerDef = battlerDef;
         ctx.move = move;
         ctx.moveType = type;
         ctx.updateFlags = FALSE;

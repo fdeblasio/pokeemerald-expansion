@@ -6,11 +6,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_ROWLET
     [SPECIES_ROWLET] =
     {
-        .baseHP        = 68,
+        .baseHP        = 70,
         .baseAttack    = 55,
         .baseDefense   = 55,
-        .baseSpeed     = 42,
-        .baseSpAttack  = 50,
+        .baseSpeed     = 45,
+        .baseSpAttack  = 45,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_GRASS, TYPE_FLYING),
         .catchRate = 45,
@@ -74,11 +74,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
     [SPECIES_DARTRIX] =
     {
-        .baseHP        = 78,
+        .baseHP        = 80,
         .baseAttack    = 75,
         .baseDefense   = 75,
-        .baseSpeed     = 52,
-        .baseSpAttack  = 70,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 65,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_GRASS, TYPE_FLYING),
         .catchRate = 45,
@@ -143,11 +143,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
     [SPECIES_DECIDUEYE] =
     {
-        .baseHP        = 78,
-        .baseAttack    = 107,
+        .baseHP        = 80,
+        .baseAttack    = 110,
         .baseDefense   = 75,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 100,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 85,
         .baseSpDefense = 100,
         .types = MON_TYPES(TYPE_GRASS, TYPE_GHOST),
         .catchRate = 45,

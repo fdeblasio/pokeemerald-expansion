@@ -6178,6 +6178,11 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
         isPsychic = FALSE && IsOverworldMonGrounded(mon); //Can be changed if ever overworld weather or terrain that causes Psychic Terrain
     }
 
+    if (gMain.inBattle)
+        battlerDef = BATTLE_OPPOSITE(battler);
+    else
+        battlerDef = 0;
+
     switch (moveEffect)
     {
     case EFFECT_POWER_BASED_ON_USER_HP:

@@ -103,10 +103,10 @@ upcoming
 - Lilycove:
     - Edit contests?/Contests overhaul
         - Update Pledge moves to combo with each other like the elemental fangs
+        - Pokemon in contests should be set to seen in Pokedex
 - Mt. Pyre:
 - Mossdeep:
 - Sootopolis:
-    - The events in Sootopolis should set the seen flag for the trio
 - Victory Road:
     - Vito can use TMs
 - Other:
@@ -299,7 +299,7 @@ upcoming
     - Make them themed like ice and fire. Maybe can add legendaries
 - See what makes the 119 house Pokemon move and apply it other places
 - Fly from Lilycove Department Store roof?
-- Let the player leave the first E4 hallway
+- Overworld Pokemon should be set to seen
 - Add FRLG trainer sprites/overworld sprites
     - Sprites are added but still need to be implemented. Overworld sprites may have duplicates for Pokémon and may need palettes
 - Add accurate overworld sprites (https://github.com/pret/pokeemerald/wiki/Adding-new-event-object-or-overworld-sprites, https://www.pokecommunity.com/showthread.php?t=407124)

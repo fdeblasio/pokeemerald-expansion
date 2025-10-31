@@ -99,10 +99,10 @@ static void MysteryGiftClient_InitSendWord(struct MysteryGiftClient *client, u32
 
 static u32 Client_Init(struct MysteryGiftClient *client)
 {
-    memcpy(client->script, gMysteryGiftClientScript_Init, MG_LINK_BUFFER_SIZE);
-    client->cmdidx = 0;
-    client->funcId = FUNC_RUN;
-    client->funcState = 0;
+    //memcpy(client->script, gMysteryGiftClientScript_Init, MG_LINK_BUFFER_SIZE);
+    //client->cmdidx = 0;
+    //client->funcId = FUNC_RUN;
+    //client->funcState = 0;
     return CLI_RET_INIT;
 }
 

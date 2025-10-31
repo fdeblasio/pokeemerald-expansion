@@ -327,15 +327,14 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, CHL
     }
 
 //Extra for hacks
-#define REMATCH_LEDGE(rematch)                                                    \
+#define REMATCH_LEDGE(rematch, tier)                                              \
     {                                                                             \
-    REMATCH_MON(LEDYBULK, ACE, rematch),                                          \
+    REMATCH_MON(LEDYBULK, tier, rematch, ITEM_PUNCHING_GLOVE),                    \
     .ability = ABILITY_IRON_FIST,                                                 \
     .nature = NATURE_ADAMANT,                                                     \
     EV_SPREAD_ATK_SPE_HP,                                                         \
     .moves = {MOVE_LUNGE, MOVE_DRAIN_PUNCH, MOVE_FIRE_PUNCH, MOVE_THUNDER_PUNCH}, \
     .gender = TRAINER_MON_MALE,                                                   \
-    .heldItem = ITEM_PUNCHING_GLOVE,                                              \
     .nickname = COMPOUND_STRING("Ledge"),                                         \
     .friendship = 255,                                                            \
     }
@@ -410,9 +409,9 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, TANGELA, TANGROWTH, CHL
     .gender = TRAINER_MON_MALE,                                                       \
     }
 
-#define DUNCAN_PACHIRIKKU(rematch)                                               \
+#define DUNCAN_PACHIRIKKU(rematch, tier)                                         \
     {                                                                            \
-    REMATCH_MON(PACHIRIKKU, TIER2, rematch),                                     \
+    REMATCH_MON(PACHIRIKKU, tier, rematch),                                      \
     .ability = ABILITY_VOLT_ABSORB,                                              \
     .nature = NATURE_TIMID,                                                      \
     EV_SPREAD_SPA_SPE_SPD,                                                       \
@@ -1914,24 +1913,22 @@ WINONA_REMATCH(5),
         },
         {
         .lvl = 51,
-        .species = SPECIES_MEOWSTIC_FEMALE,
+        .species = SPECIES_MEOWSTIC_F,
         .ability = ABILITY_KEEN_EYE,
         IVS(30),
         .moves = {MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_ENERGY_BALL, MOVE_SIGNAL_BEAM},
         .gender = TRAINER_MON_FEMALE,
         .heldItem = ITEM_SITRUS_BERRY,
-        .gender = TRAINER_MON_NONE,
         .ball = ITEM_POKE_BALL,
         },
         {
         .lvl = 51,
-        .species = SPECIES_MEOWSTIC,
+        .species = SPECIES_MEOWSTIC_M,
         .ability = ABILITY_INFILTRATOR,
         IVS(30),
         .moves = {MOVE_PSYCHIC, MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_TEARFUL_LOOK},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
-        .gender = TRAINER_MON_NONE,
         .ball = ITEM_POKE_BALL,
         }
     },
@@ -2220,9 +2217,9 @@ TATE_AND_LIZA_REMATCH(5),
     .gender = TRAINER_MON_FEMALE,                                                \
     }
 
-#define GLACIA_MAMOSWINE(rematch)                                                       \
+#define GLACIA_MAMOSWINE(rematch, tier)                                                       \
     {                                                                                   \
-    REMATCH_MON(MAMOSWINE, TIER3, rematch),                                             \
+    REMATCH_MON(MAMOSWINE, tier, rematch),                                             \
     .ability = ABILITY_SNOW_CLOAK,                                                      \
     .nature = NATURE_ADAMANT,                                                           \
     EV_SPREAD_ATK_SPE_HP,                                                               \
@@ -3290,18 +3287,6 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     }
 
 //Extra for hacks
-#define STEVEN_PERRSERKER(Level)                                                 \
-    {                                                                            \
-    WALLACE_STEVEN_MON(Level, PERRSERKER),                                       \
-    .ability = ABILITY_STEELY_SPIRIT,                                            \
-    .nature = NATURE_ADAMANT,                                                    \
-    EV_SPREAD_ATK_DEF_HP,                                                        \
-    .moves = {MOVE_IRON_HEAD, MOVE_SEED_BOMB, MOVE_FAKE_OUT, MOVE_SWORDS_DANCE}, \
-    .gender = TRAINER_MON_MALE,                                                  \
-    .heldItem = ITEM_METAL_COAT,                                                 \
-    .ball = ITEM_ULTRA_BALL,                                                     \
-    }
-
 #define STEVEN_STEELIX
 #define STEVEN_BRONZONG
 
@@ -4394,15 +4379,6 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ball = ITEM_POKE_BALL,                            \
     .nickname = COMPOUND_STRING("Finneas")
 
-#define ARCHIE_ARROKUDA(Level)                                      \
-    {                                                               \
-    .lvl = Level,                                                   \
-    .species = Level < 26 ? SPECIES_ARROKUDA : SPECIES_BARRASKEWDA, \
-    .ability = ABILITY_SWIFT_SWIM,                                  \
-    IVS(18),                                                        \
-    .gender = TRAINER_MON_MALE,                                     \
-    }
-
 #define ARCHIE_WAILMER(Level)                                  \
     {                                                          \
     TEAM_LEADER_SUPPORTING_MON(Level),                         \
@@ -4683,11 +4659,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .gender = TRAINER_MON_MALE,                              \
     .nickname = COMPOUND_STRING("Mr. Cat")
 
-#define MR_BRAT(Level)                                                      \
-    RICH_BOY_MON(Level),                                                    \
-    .species = Level < 28 ? SPECIES_MEOWTH_ALOLAN : SPECIES_PERSIAN_ALOLAN, \
-    .ability = 0,                                                           \
-    .gender = TRAINER_MON_MALE,                                             \
+#define MR_BRAT(Level)                                                    \
+    RICH_BOY_MON(Level),                                                  \
+    .species = Level < 28 ? SPECIES_MEOWTH_ALOLA : SPECIES_PERSIAN_ALOLA, \
+    .ability = 0,                                                         \
+    .gender = TRAINER_MON_MALE,                                           \
     .nickname = COMPOUND_STRING("Mr. Brat")
 
 #define MR_BAT(Level)                                                        \
@@ -5044,9 +5020,6 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .species = Level < 28 ? SPECIES_MEOWTH : SPECIES_PERSIAN, \
     .ability = ABILITY_TECHNICIAN,                            \
     .gender = TRAINER_MON_FEMALE
-
-//Extra for hacks
-#define CINDY_LITLEO
 
 [DIFFICULTY_NORMAL][TRAINER_CINDY_1] =
 {
@@ -6782,10 +6755,10 @@ MARINA_BATTLE(MUSEUM, 17),
     .ability = ABILITY_ROCK_HEAD, \
     .gender = TRAINER_MON_MALE
 
-#define EDWIN_MAROWAK_ALOLAN(Level)    \
-    .lvl = Level,                      \
-    .species = SPECIES_MAROWAK_ALOLAN, \
-    .ability = ABILITY_CURSED_BODY,    \
+#define EDWIN_MAROWAK_ALOLA(Level)    \
+    .lvl = Level,                     \
+    .species = SPECIES_MAROWAK_ALOLA, \
+    .ability = ABILITY_CURSED_BODY,   \
     .gender = TRAINER_MON_MALE
 
 #define EDWIN_ESPEON(Level)    \
@@ -6818,7 +6791,7 @@ MARINA_BATTLE(MUSEUM, 17),
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        EDWIN_MAROWAK_ALOLAN(REMATCH_2_LEVEL_4),
+        EDWIN_MAROWAK_ALOLA(REMATCH_2_LEVEL_4),
         },
         {
         EDWIN_MAROWAK(REMATCH_2_LEVEL_4),
@@ -6844,7 +6817,7 @@ MARINA_BATTLE(MUSEUM, 17),
         EDWIN_ESPEON(REMATCH_3_LEVEL_6),
         },
         {
-        EDWIN_MAROWAK_ALOLAN(REMATCH_3_LEVEL_6),
+        EDWIN_MAROWAK_ALOLA(REMATCH_3_LEVEL_6),
         },
         {
         EDWIN_MAROWAK(REMATCH_3_LEVEL_6),
@@ -6870,7 +6843,7 @@ MARINA_BATTLE(MUSEUM, 17),
         EDWIN_ESPEON(REMATCH_4_LEVEL_6),
         },
         {
-        EDWIN_MAROWAK_ALOLAN(REMATCH_4_LEVEL_6),
+        EDWIN_MAROWAK_ALOLA(REMATCH_4_LEVEL_6),
         },
         {
         EDWIN_MAROWAK(REMATCH_4_LEVEL_6),
@@ -6896,7 +6869,7 @@ MARINA_BATTLE(MUSEUM, 17),
         EDWIN_ESPEON(REMATCH_5_LEVEL_6),
         },
         {
-        EDWIN_MAROWAK_ALOLAN(REMATCH_5_LEVEL_6),
+        EDWIN_MAROWAK_ALOLA(REMATCH_5_LEVEL_6),
         },
         {
         EDWIN_MAROWAK(REMATCH_5_LEVEL_6),
@@ -7672,7 +7645,6 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 
 //Extra for hacks
 #define DALTON_CHATOT
-#define DALTON_TOXEL
 
 [DIFFICULTY_NORMAL][TRAINER_DALTON_1] =
 {
@@ -7915,9 +7887,6 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     TRIATHLETE_MON(Level, IV),                                                  \
     .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_VOLTORB : SPECIES_ELECTRODE, \
     .ability = ABILITY_SOUNDPROOF
-
-//Extra for hacks
-#define BENJAMIN_KLINK
 
 [DIFFICULTY_NORMAL][TRAINER_BENJAMIN_1] =
 {
@@ -10068,9 +10037,6 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_SANDSHREW : SPECIES_SANDSLASH, \
     .gender = TRAINER_MON_MALE
 
-//Extra for hacks
-#define ETHAN_STUNKY
-
 [DIFFICULTY_NORMAL][TRAINER_ETHAN_1] =
 {
     ETHAN_INFO,
@@ -10187,7 +10153,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 27,
-        .species = SPECIES_MAROWAK_ALOLAN,
+        .species = SPECIES_MAROWAK_ALOLA,
         IVS(12),
         },
         {
@@ -12104,7 +12070,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     GUMSHOOS, SCOPE_LENS,
         },
         {
         .lvl = 31,
-        .species = SPECIES_MEOWTH_ALOLAN,
+        .species = SPECIES_MEOWTH_ALOLA,
         }
     },
 },
@@ -14194,9 +14160,9 @@ MARINA_BATTLE(MT_PYRE, 42),
     PSYCHIC_M_INFO,              \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define CAMERON_ESPURR(Level)                                  \
-    .lvl = Level,                                              \
-    .species = Level < 46 ? SPECIES_ESPURR : SPECIES_MEOWSTIC, \
+#define CAMERON_ESPURR(Level)                                    \
+    .lvl = Level,                                                \
+    .species = Level < 46 ? SPECIES_ESPURR : SPECIES_MEOWSTIC_M, \
     .gender = TRAINER_MON_MALE
 
 #define CAMERON_KADABRA(Level)                                  \
@@ -14556,9 +14522,9 @@ MARINA_BATTLE(MT_PYRE, 42),
     PSYCHIC_F_INFO,            \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define JACKI_ESPURR(Level)                                           \
-    .lvl = Level,                                                     \
-    .species = Level < 46 ? SPECIES_ESPURR : SPECIES_MEOWSTIC_FEMALE, \
+#define JACKI_ESPURR(Level)                                      \
+    .lvl = Level,                                                \
+    .species = Level < 46 ? SPECIES_ESPURR : SPECIES_MEOWSTIC_F, \
     .gender = TRAINER_MON_FEMALE
 
 #define JACKI_KADABRA(Level)                                    \
@@ -16915,7 +16881,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
         },
         {
         .lvl = 55,
-        .species = SPECIES_MEOWSTIC,
+        .species = SPECIES_MEOWSTIC_M,
         }
     },
 },
@@ -16973,7 +16939,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 55,
-        .species = SPECIES_MEOWSTIC_FEMALE,
+        .species = SPECIES_MEOWSTIC_F,
         },
         {
         .lvl = 55,

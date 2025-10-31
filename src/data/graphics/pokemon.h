@@ -6879,10 +6879,10 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
-    const u32 gMonFrontPic_Ledybulk[] = INCBIN_U32("graphics/pokemon/ledybulk/front.4bpp.lz");
-    const u32 gMonPalette_Ledybulk[] = INCBIN_U32("graphics/pokemon/ledybulk/normal.gbapal.lz");
-    const u32 gMonBackPic_Ledybulk[] = INCBIN_U32("graphics/pokemon/ledybulk/back.4bpp.lz");
-    const u32 gMonShinyPalette_Ledybulk[] = INCBIN_U32("graphics/pokemon/ledybulk/shiny.gbapal.lz");
+    const u32 gMonFrontPic_Ledybulk[] = INCBIN_U32("graphics/pokemon/ledybulk/front.4bpp.smol");
+    const u16 gMonPalette_Ledybulk[] = INCBIN_U16("graphics/pokemon/ledybulk/normal.gbapal.smol");
+    const u32 gMonBackPic_Ledybulk[] = INCBIN_U32("graphics/pokemon/ledybulk/back.4bpp.smol");
+    const u16 gMonShinyPalette_Ledybulk[] = INCBIN_U16("graphics/pokemon/ledybulk/shiny.gbapal.smol");
     const u8 gMonIcon_Ledybulk[] = INCBIN_U8("graphics/pokemon/ledybulk/icon.4bpp");
 #endif //P_FAMILY_LEDYBA
 
@@ -14623,10 +14623,10 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
-    const u32 gMonFrontPic_Pachirikku[] = INCBIN_U32("graphics/pokemon/pachirikku/front.4bpp.lz");
-    const u32 gMonPalette_Pachirikku[] = INCBIN_U32("graphics/pokemon/pachirikku/normal.gbapal.lz");
-    const u32 gMonBackPic_Pachirikku[] = INCBIN_U32("graphics/pokemon/pachirikku/back.4bpp.lz");
-    const u32 gMonShinyPalette_Pachirikku[] = INCBIN_U32("graphics/pokemon/pachirikku/shiny.gbapal.lz");
+    const u32 gMonFrontPic_Pachirikku[] = INCBIN_U32("graphics/pokemon/pachirikku/front.4bpp.smol");
+    const u16 gMonPalette_Pachirikku[] = INCBIN_U16("graphics/pokemon/pachirikku/normal.gbapal.smol");
+    const u32 gMonBackPic_Pachirikku[] = INCBIN_U32("graphics/pokemon/pachirikku/back.4bpp.smol");
+    const u16 gMonShinyPalette_Pachirikku[] = INCBIN_U16("graphics/pokemon/pachirikku/shiny.gbapal.smol");
     const u8 gMonIcon_Pachirikku[] = INCBIN_U8("graphics/pokemon/pachirikku/icon.4bpp");
 #endif //P_FAMILY_PACHIRISU
 

@@ -62,7 +62,7 @@
 - Battle Pyramid wild Pokémon have been updated
 - Battle Frontier no longer requires saving
 - Certain sections are blocked off until gyms or rivals are defeated
-- Wally is given more battles. The battle in Verdanturf starts with Grassy Terrain
+- Duncan is given more battles. The battle in Verdanturf starts with Grassy Terrain
 - Battles in New Mauville start with Electric Terrain
 - Battles in long grass on Routes 119 and 120 start with Grassy Terrain (unless it's a thunderstorm)
 - All Pokémon in the Dragon egg group that could not already learn Dragon Breath now get it as an egg move. This is reflected in the species changes below
@@ -141,10 +141,10 @@
 |Brawly                     |16, 16, 19            |16, 16, 18|
 |Archie Oceanic Museum      |N/A                   |17, 17, 19|
 |Rival 110                  |18, 18, 20||
-|Wally Mauville             |16                    |19|
-|Wally Verdanturf           |N/A                   |21, 23|
+|Duncan Mauville            |16                    |19|
+|Duncan Verdanturf          |N/A                   |21, 23|
 |Wattson                    |20, 22, 22, 24||
-|Wally Route 114            |N/A                   |25, 25, 27|
+|Duncan Route 114           |N/A                   |25, 25, 27|
 |Courtney Meteor Falls      |N/A                   |26, 26, 28|
 |Tabitha Mt. Chimney        |18, 20, 22, 22        |27, 27, 29|
 |Maxie Mt. Chimney          |24, 24, 25            |28, 29, 29, 30|
@@ -165,12 +165,12 @@
 |Regirock/Regice/Registeel  |40                    |55|
 |Regieleki/Regidrago        |N/A                   |55|
 |Regigigas                  |N/A                   |60|
-|Juan                       |41, 41, 43, 43, 46    |55, 55, 56, 56, 58|
+|Glacia                     |41, 41, 43, 43, 46    |55, 55, 56, 56, 58|
 |Rayquaza                   |70                    |60|
-|Wally Victory Road         |41, 43, 44, 44, 45    |56, 56, 57, 57, 59|
+|Duncan Victory Road        |41, 43, 44, 44, 45    |56, 56, 57, 57, 59|
 |Sidney                     |46, 46, 48, 48, 49    |60, 60, 61, 61, 62|
 |Phoebe                     |48, 49, 49, 50, 51    |61, 61, 62, 62, 63|
-|Glacia                     |50, 50, 52, 52, 53    |62, 62, 63, 63, 64|
+|Juan                       |50, 50, 52, 52, 53    |62, 62, 63, 63, 64|
 |Drake                      |52, 53, 53, 54, 55    |63, 63, 64, 64, 66|
 |Wallace                    |55, 56, 56, 56, 57, 58|66, 66, 66, 67, 67, 69|
 |Groudon/Kyogre             |70||
@@ -1758,11 +1758,22 @@
     - SpA: 40->20
     - Learns Gust, Struggle Bug, Bug Bite, Air Cutter, and Aerial Ace by level up
 
-- Ledian (postgame):
+- Ledian:
     - HP: 65->80
     - Atk: 35->80
     - SpA: 55->35
+    - Evolves into ??? at level 38
     - Learns Gust, Struggle Bug, Bug Bite, Air Cutter, Aerial Ace, Lunge, and Acrobatics by level up
+
+- ???:
+    - Type: Bug/Fighting
+    - HP: 70
+    - Atk: 120
+    - Def: 60
+    - SpA: 75
+    - SpD: 110
+    - Spe: 85
+    - Abilities: Swarm/Early Bird/Iron Fist
 
 - Spinarak (postgame):
     - Atk: 60->65
@@ -2111,11 +2122,13 @@
     - Learns Surf and Earthquake later to avoid breaking the game
 
 - Poochyena:
+    - Despite their canine-esque features, hyenas are actually from the same suborder as cats
     - Speed: 35->40
     - Hidden Ability: Rattled->Strong Jaw
     - Learns Lash Out by level up
 
 - Mightyena:
+    - Despite their canine-esque features, hyenas are actually from the same suborder as cats
     - Atk: 90->100
     - Speed: 70->80
     - Hidden Ability: Moxie->Strong Jaw
@@ -2385,6 +2398,7 @@
     - SpD: 105->120
 
 - Zangoose:
+    - Cat Ferret Pokémon and mongooses are from the same suborder as cats
     - HP: 73->75
     - Atk: 115->125
     - Spe: 90->100
@@ -2412,6 +2426,7 @@
     - Learns Mud Shot, Waterfall, and Dragon Dance by level up
 
 - Whiscash:
+    - CATfish
     - Atk: 78->90
     - Def: 73->75
     - SpA: 76->80
@@ -3530,10 +3545,12 @@
     - Learns Surf and Dazzling Gleam by level up
 
 - Yungoos:
+    - Mongooses are in the same suborder as cats
     - HP: 48->50
     - Learns Cut and Chip Away by level up
 
 - Gumshoos:
+    - Mongooses are in the same suborder as cats
     - HP: 88->90
     - Learns Cut, Chip Away, Thunder Fang, Fire Fang, and Ice Fang by level up
 

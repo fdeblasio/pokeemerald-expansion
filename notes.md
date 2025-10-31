@@ -151,6 +151,7 @@ upcoming
 - See if there's a way to automatically calculate the Pokedex offsets
     - Currently all new ones seem to have a default value (Pecharunt is 1 foot tall and looks huge in it)
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?
+- Add Volcanion to Scorched Slab? (since it's Fire/Water)
 - For Egg Groups that share names with types, give moves of that type to Pokémon not of that type in the egg group
     - Egg moves since egg group?
     - Dragon: Dragon Claw/Pulse/Tail/etc. (where applicable)
@@ -346,6 +347,8 @@ upcoming
 ### Other
 - Decap easy chat species/moves/multi-word choices?
 - Have Gabby and Ty's TV show use nicknames?
+- Make stripes of type palettes consistent
+    - For example, Dark uses the rest of the E4's but Ice looks like it uses Wallace's
 - Update palettes?:
     - Pokédex (and HGSS Pokédex)
     - look in graphics/ for more
@@ -372,6 +375,8 @@ upcoming
 - Diversify water routes instead of just Tentacool/Wingull (definitely add more Carvanha, especially around Team Aqua-related areas; bring some fishing encounters to Surf)
 - Add postgame starters to Hoenn Pokédex?
     - They need Hoenn Pokédex completed to get, but could have them act similarly to Jirachi/Deoxys
+    - Add back Littleroot event but skip straight to postgame starters (removing need to fill Dex)?
+        - Would be at beginning of postgame Dex
 - In game trades
 - Edit max money?
 - Utilize FRLG sounds/music more
@@ -415,6 +420,11 @@ upcoming
     - Sandslash, Ninetales, Cursola, and maybe Obstagoon can be used to diversify the Elite Four teams
 
 ## Future hacks
+- Miscellaneous:
+    - Magma gets Diglett, Aqua gets Wiglett
+    - Elite Four where each one is based on either a terrain and/or weather
+        - For combos, Sunny/Grassy Terrain, Rainy/Electric Terrain
+        - Weather kind of copies Magma/Aqua though
 - All Yellow Pokémon:
     - Yellow shinies (Lickitung, Altaria, Luxray, Bellibolt, etc) replacing the regular palette
         - Change Pokédex colors to match
@@ -424,7 +434,6 @@ upcoming
 - Tropical:
     - Tropius, Bellossom, Pau Oricorio, Tsareena, probably a lot of Alolan Pokémon, both forms of Exeggutor (Sun Stone for Alolan)
     - This is just Sun and Moon
-- Magma gets Diglett, Aqua gets Wiglett
 - Massachusetts:
     - Braviary
     - Mismagius

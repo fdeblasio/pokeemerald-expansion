@@ -128,9 +128,7 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_DIANCITE        @ 0719
 	.2byte ITEM_NONE            @ 0780 Drampa
 	.2byte ITEM_NONE            @ 0870 Falinks
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 @ Rumored:
 @  Chimecho, Absol Z

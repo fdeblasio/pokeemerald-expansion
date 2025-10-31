@@ -281,16 +281,16 @@ BattleFrontier_ExchangeServiceCorner_EventScript_EvolutionMega::
 
 	.align 2
 BattleFrontier_Mart_EvolutionMega:
-	.2byte ITEM_ICE_STONE       @ National: Sandshrew-A, Vulpix-A; Unused: Mr. Mime-A, Eevee, Darumaka-G, Bergmite, Crabrawler, Cetoddle
-	.2byte ITEM_KINGS_ROCK      @ National: Poliwhirl, Slowpoke
-	.2byte ITEM_ELECTIRIZER     @ National: Electabuzz
-	.2byte ITEM_MAGMARIZER      @ National: Magmar
-	.2byte ITEM_OVAL_STONE      @ National: Happiny
-	.2byte ITEM_RAZOR_FANG      @ National: Gligar
-	.2byte ITEM_RAZOR_CLAW      @ National: Snesasel, Sneasel-H
-	.2byte ITEM_GALARICA_CUFF   @ National: Slowpoke-G
-	.2byte ITEM_GALARICA_WREATH @ National: Slowpoke-G
-	.2byte ITEM_PEAT_BLOCK      @ National: Ursaring
+	.2byte ITEM_ICE_STONE       @ Postgame: Sandshrew-A, Vulpix-A; Unused: Mime Jr., Eevee, Darumaka-G, Bergmite, Crabrawler, Cetoddle
+	.2byte ITEM_KINGS_ROCK      @ Postgame: Poliwhirl, Slowpoke
+	.2byte ITEM_ELECTIRIZER     @ Postgame: Electabuzz
+	.2byte ITEM_MAGMARIZER      @ Postgame: Magmar
+	.2byte ITEM_OVAL_STONE      @ Postgame: Happiny
+	.2byte ITEM_RAZOR_FANG      @ Postgame: Gligar
+	.2byte ITEM_RAZOR_CLAW      @ Postgame: Snesasel, Sneasel-H
+	.2byte ITEM_GALARICA_CUFF   @ Postgame: Slowpoke-G
+	.2byte ITEM_GALARICA_WREATH @ Postgame: Slowpoke-G
+	.2byte ITEM_PEAT_BLOCK      @ Postgame: Ursaring
 	.2byte ITEM_AERODACTYLITE   @ 0142
 	.2byte ITEM_AMPHAROSITE     @ 0181
 	.2byte ITEM_LATIASITE       @ 0380
@@ -299,9 +299,7 @@ BattleFrontier_Mart_EvolutionMega:
 	.2byte ITEM_EXP_CANDY_L
 	.2byte ITEM_EXP_CANDY_XL
 	.2byte ITEM_SACRED_ASH
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HoldItemVitamin::
 	lock
@@ -332,9 +330,7 @@ BattleFrontier_Mart_HoldItemVitamin:
 	.2byte ITEM_CARBOS
 	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_ABILITY_PATCH
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Man::
 	msgbox BattleFrontier_ExchangeServiceCorner_Text_GoGetYourOwnDoll, MSGBOX_NPC

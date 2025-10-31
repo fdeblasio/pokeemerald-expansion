@@ -13716,6 +13716,7 @@ static void Cmd_handleballthrow(void)
         }
 
         // catchRate is unsigned, which means that it may potentially overflow if sum is applied directly.
+
         if (catchRate < 21 && ballAddition == -20)
             catchRate = 1;
         else
@@ -13729,6 +13730,9 @@ static void Cmd_handleballthrow(void)
             odds *= 2;
         if (gBattleMons[gBattlerTarget].status1 & STATUS1_CAN_MOVE)
             odds = (odds * 15) / 10;
+
+        if (gBattleMons[gBattlerTarget].isShiny)
+            odds = odds * 3;
 
         if (gBattleResults.catchAttempts[ballId] < 255)
             gBattleResults.catchAttempts[ballId]++;

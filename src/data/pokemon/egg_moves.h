@@ -9405,7 +9405,6 @@ static const u16 sDedenneEggMoveLearnset[] = {
     MOVE_ALLY_SWITCH,
     MOVE_CONFIDE,
     MOVE_COVET,
-    MOVE_DRAINING_KISS,
     MOVE_EERIE_IMPULSE,
     MOVE_ELECTRO_BALL,
     MOVE_ELECTROWEB,

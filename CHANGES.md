@@ -3201,6 +3201,16 @@
 - Hawlucha:
     - Learns Rolling Kick, Drain Punch, Sky Uppercut, Dual Wingbeat, and Acrobatics by level up
 
+- Dedenne:
+    - HP: 67->70
+    - Atk: 58->60
+    - Def: 57->60
+    - SpA: 81->90
+    - SpD: 67->70
+    - Spe: 101->105
+    - Learns Thunder Shock at level 1 and learns Shock Wave in its place at level 15
+    - Learns Fairy Wind, Disarming Voice, Draining Kiss, Dazzling Gleam, and Thunderbolt by level up
+
 - Goomy:
     - Evolution: 40->35
     - Learns Life Dew by level up
@@ -3567,6 +3577,7 @@
     - Learns Avalanche, Ice Punch, and Icicle Crash by level up
 
 - Indeedee:
+    - Catch rate: 30->90
     - Learns Confusion, Pound, Swift, Hyper Voice, and Expanding Force by level up
 
 - Cufant/Copperajah:

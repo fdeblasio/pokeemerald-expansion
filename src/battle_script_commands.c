@@ -10772,6 +10772,9 @@ static u32 ComputeCaptureOdds(u32 wildMonBattler, u32 playerBattler)
     if (battleMon->status1 & STATUS1_CAN_MOVE)
         odds = odds * 15 / 10;
 
+    if (gBattleMons[gBattlerTarget].isShiny)
+        odds = odds * 3;
+
     return odds;
 }
 

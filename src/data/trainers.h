@@ -8175,11 +8175,12 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
         {
-        POKE_FAN_MON(23),
+        .lvl = 23,
         .species = SPECIES_FLETCHINDER,
         EV_SPREAD_ATK_SPE_HP,
         IVS(3),
         .gender = TRAINER_MON_MALE,
+        .heldItem = ITEM_MACHO_BRACE,
         },
         {
         POKE_FAN_MON(23),

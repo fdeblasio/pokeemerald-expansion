@@ -38,6 +38,10 @@ upcoming
 ### Hack-specific
 - Merge README.md into CHANGES.md
 - Add postgame encounters into Hoenn Dex
+- Figure out what to do with extra 3 Regi spots
+    - Raikou could move to New Mauville but then Ancient Tomb would still be an open spot
+    - Move Zeraora to New Mauville and Darkrai to Navel Rock?
+    - Add remaining genies/ruinous?
 
 ### Megas:
 - Z-A Megas:

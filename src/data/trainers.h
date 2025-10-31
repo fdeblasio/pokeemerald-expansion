@@ -8187,6 +8187,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
         .species = SPECIES_HERDIER,
         EV_SPREAD_ATK_SPE_HP,
         IVS(3),
+        .moves = {MOVE_COVET, MOVE_BITE, MOVE_ODOR_SLEUTH, MOVE_BABY_DOLL_EYES},
         .gender = TRAINER_MON_MALE,
         }
     },

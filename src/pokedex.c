@@ -4622,12 +4622,11 @@ bool16 HasAllRegionalMons(void)
 
 bool16 HasAllHoennMons(void)
 {
-    u32 i, j;
+    u32 i;
 
     for (i = 0; i < HOENN_DEX_COUNT - 1; i++)
     {
-        j = HoennToNationalOrder(i + 1);
-        if (!(gSpeciesInfo[j].isMythical && !gSpeciesInfo[j].dexForceRequired) && !GetSetPokedexFlag(j, FLAG_GET_CAUGHT))
+        if (!GetSetPokedexFlag(HoennToNationalOrder(i + 1), FLAG_GET_CAUGHT))
             return FALSE;
     }
     return TRUE;

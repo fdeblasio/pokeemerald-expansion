@@ -147,7 +147,9 @@ upcoming
 - Use Cable Car defines in wild_encounters
 - Eventually remove RSE and/or BDSP teachable moves?
 - Merge Deoxys teachable learnsets?
-- Standardize starter stats
+- Standardize starter base stat totals
+- See if there's a way to automatically calculate the Pokedex offsets
+    - Currently all new ones seem to have a default value (Pecharunt is 1 foot tall and looks huge in it)
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?
 - For Egg Groups that share names with types, give moves of that type to Pokémon not of that type in the egg group
     - Egg moves since egg group?
@@ -365,11 +367,11 @@ upcoming
         - Wally in Victory Road after he's beaten there (this one might just be a flag issue on the current save)
 - Edit contests?
 - Update Favor Lady's items to include new items
+- Easy Chat for non-base Hoenn mons (especially now that the National Dex is disabled)
+    - National Dex is disabled but Frontier/Trainer Hill mons are now registered. Potentially see if those can be added to easy chat anyways
 - Diversify water routes instead of just Tentacool/Wingull (definitely add more Carvanha, especially around Team Aqua-related areas; bring some fishing encounters to Surf)
-- Add postgame Pokémon to Hoenn Pokédex? National Pokédex is useless due to no connectivity with other games
-    - Johto starters need Hoenn Pokédex completed to get, but could have them act similarly to Jirachi/Deoxys
-    - Could remove handing out of National Pokédex entirely, would need to see what checks if the National Pokédex exists (like Birch Lab state for Johto)
-    - Now that Frontier mons are registered in the Pokédex, the National Pokédex is a bit less useless
+- Add postgame starters to Hoenn Pokédex?
+    - They need Hoenn Pokédex completed to get, but could have them act similarly to Jirachi/Deoxys
 - In game trades
 - Edit max money?
 - Utilize FRLG sounds/music more

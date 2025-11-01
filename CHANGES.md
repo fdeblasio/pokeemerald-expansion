@@ -3480,13 +3480,14 @@
     - Learn Dragon Breath by Egg Move (Note: Flapple, Dippin, and Hydrapple already learn it)
 
 - Silicobra/Sandaconda:
-    - Learns Mud-Slap, Mud Shot, Scorching Sands, Drill Run, High Horsepower, and Earthquake
+    - Learns Mud-Slap, Mud Shot, Scorching Sands, Drill Run, High Horsepower, and Earthquake by level up
     - Learn Dragon Breath by Egg Move
 
 - Cramorant (postgame):
     - HP: 70->75
     - SpA: 85->95
     - Spe: 85->95
+    - Catch rate: 45->90
     - Learns Gust, Water Pulse, Air Cutter, Surf, and Air Slash by level up
 
 - Arrokuda (postgame):

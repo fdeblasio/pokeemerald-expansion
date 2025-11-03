@@ -1,12 +1,14 @@
 ## Known bugs and other notes
 - Issues with double battles that involve Ace Pokemon
+- When playing as May, Brendan will walk through his mom at his house if the leftmost tile is triggered
+    - Check other gender/tile combinations
 - With the higher levels, using the Exp. Share can cause your team to become overpowered
 - Some egg moves are missing from the teachable learnsets of the evolved forms (such as Hydrapple being unable to learn Rollout via the tutor)
 - Checking wild encounters doesn't differentiate between what's been caught and what hasn't
     - I found a way to do so, but it causes a graphical glitch in the PC so it's not implemented yet
 - Followers will stop following you if you use the naming screen from the party menu. It will start to follow you again if you talk to it
 - One of the sprites on Mt. Chimney sometimes glitches
-- AI_FLAG_ACE_POKEMON potentially broken in multi-battles (maybe only if both trainers have it)
+- AI_FLAG_ACE_POKEMON potentially broken in multi-battles (maybe only if both trainers have it?)
 - If you help one of the Lilycove Pokémon Center ladies, the other lady thinks you've already helped her as well
     - Could have something to do with this: sContestLadyPtr->id = LILYCOVE_LADY_CONTEST
 - Relearning graphics glitch

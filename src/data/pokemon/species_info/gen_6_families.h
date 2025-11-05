@@ -1883,12 +1883,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #if P_GEN_9_MEGA_EVOLUTIONS
     [SPECIES_PYROAR_MEGA] =
     {
-        .baseHP        = 86,
-        .baseAttack    = 88,
-        .baseDefense   = 92,
-        .baseSpeed     = 126,
-        .baseSpAttack  = 129,
-        .baseSpDefense = 86,
+        .baseHP        = 90,
+        .baseAttack    = 90,
+        .baseDefense   = 95,
+        .baseSpeed     = 130,
+        .baseSpAttack  = 130,
+        .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_FIRE, TYPE_NORMAL),
         .catchRate = 65,
         .expYield = 177,

@@ -1875,6 +1875,10 @@
     - Catch rate: 25->90
     - Learns Dual Wingbeat and Iron Head by level up
 
+- Mega Skarmory:
+    - HP: 65->90
+    - Def: 110->120
+
 - Houndour/Houndoom:
     - Learn Snarl, Burning Jealousy, and Dark Pulse by level up
 
@@ -3101,6 +3105,14 @@
     - Hidden Ability: Moxie->Competitive
     - Learns Swift, Flame Burst, and Fire Blast by level up
 
+- Mega Pyroar:
+    - HP: 86->90
+    - Atk: 88->90
+    - Def: 92->95
+    - SpA: 129->130
+    - SpD: 86->90
+    - Spe: 126->130
+
 - Flabébé/Floette/Eternal Floette/Florges:
     - Learn Disarming Voice, Draining Kiss, and Dazzling Gleam by level up
 
@@ -3447,6 +3459,9 @@
     - Type: Normal/Dragon->Dragon/Normal
     - Learns Swift by level up
 
+- Mega Drampa:
+    - Type: Normal/Dragon->Dragon/Normal
+
 - Dhelmise:
     - Learns Metal Claw and Shadow Claw by level up
 
@@ -3636,7 +3651,12 @@
 - Falinks:
     - HP: 65->75
     - Def: 100->110
+    - Catch rate: 45->90
     - Learns Smart Strike, Brick Break, Iron Head, Spiky Shield, and Body Press by level up
+
+- Mega Falinks:
+    - HP: 65->75
+    - SpD: 65->75
 
 - Snom:
     - Evolution: friendship->21

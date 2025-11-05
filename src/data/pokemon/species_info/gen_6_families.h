@@ -1514,8 +1514,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #define VIVILLON_MISC_INFO(form, color, iconPal)                                            \
         .baseHP        = 80,                                                                \
         .baseAttack    = 52,                                                                \
-        .baseDefense   = 50,                                                                \
-        .baseSpeed     = 89,                                                                \
+        .baseDefense   = 60,                                                                \
+        .baseSpeed     = 90,                                                                \
         .baseSpAttack  = 90,                                                                \
         .baseSpDefense = 50,                                                                \
         .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),                                          \
@@ -2686,12 +2686,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #endif //P_FAMILY_PANCHAM
 
 #if P_FAMILY_FURFROU
-#define FURFROU_MISC_INFO(_form, _noFlip, frontWidth, frontYOffset, backWidth, backYOffset, _iconIdx)   \
+#define FURFROU_MISC_INFO(_form, ability, frontWidth, frontYOffset, backWidth, backYOffset, _iconIdx)   \
     {                                                                                                   \
         .baseHP        = 75,                                                                            \
-        .baseAttack    = 80,                                                                            \
-        .baseDefense   = 60,                                                                            \
-        .baseSpeed     = 102,                                                                           \
+        .baseAttack    = 90,                                                                            \
+        .baseDefense   = 75,                                                                            \
+        .baseSpeed     = 105,                                                                           \
         .baseSpAttack  = 65,                                                                            \
         .baseSpDefense = 90,                                                                            \
         .types = MON_TYPES(TYPE_NORMAL),                                                                \
@@ -2703,9 +2703,9 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,                                                              \
         .growthRate = GROWTH_MEDIUM_FAST,                                                               \
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),                                                   \
-        .abilities = { ABILITY_FUR_COAT, ABILITY_NONE, ABILITY_NONE },                                  \
+        .abilities = { ABILITY_FUR_COAT, ABILITY_NONE, ABILITY_##ability },                             \
         .bodyColor = BODY_COLOR_WHITE,                                                                  \
-        .noFlip = _noFlip,                                                                              \
+        .noFlip = TRUE,                                                                                 \
         .speciesName = _("Furfrou"),                                                                    \
         .cryId = CRY_FURFROU,                                                                           \
         .natDexNum = NATIONAL_DEX_FURFROU,                                                              \
@@ -2749,16 +2749,16 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .formChangeTable = sFurfrouFormChangeTable,                                                     \
     }
 
-    [SPECIES_FURFROU_NATURAL]   = FURFROU_MISC_INFO(Natural,   FALSE, 48, 3, 56, 0, 0),
-    [SPECIES_FURFROU_HEART]     = FURFROU_MISC_INFO(Heart,     FALSE, 56, 2, 56, 1, 0),
-    [SPECIES_FURFROU_STAR]      = FURFROU_MISC_INFO(Star,      FALSE, 56, 2, 64, 1, 0),
-    [SPECIES_FURFROU_DIAMOND]   = FURFROU_MISC_INFO(Diamond,   FALSE, 48, 2, 56, 1, 0),
-    [SPECIES_FURFROU_DEBUTANTE] = FURFROU_MISC_INFO(Debutante, TRUE,  48, 2, 56, 1, 2),
-    [SPECIES_FURFROU_MATRON]    = FURFROU_MISC_INFO(Matron,    FALSE, 48, 2, 56, 1, 2),
-    [SPECIES_FURFROU_DANDY]     = FURFROU_MISC_INFO(Dandy,     FALSE, 48, 2, 56, 1, 1),
-    [SPECIES_FURFROU_LA_REINE]  = FURFROU_MISC_INFO(LaReine,   FALSE, 48, 2, 56, 1, 0),
-    [SPECIES_FURFROU_KABUKI]    = FURFROU_MISC_INFO(Kabuki,    FALSE, 56, 2, 56, 1, 0),
-    [SPECIES_FURFROU_PHARAOH]   = FURFROU_MISC_INFO(Pharaoh,   FALSE, 48, 2, 56, 1, 0),
+    [SPECIES_FURFROU_NATURAL]   = FURFROU_MISC_INFO(Natural,   TANGLING_HAIR,   48, 3, 56, 0, 0),
+    [SPECIES_FURFROU_HEART]     = FURFROU_MISC_INFO(Heart,     CUTE_CHARM,      56, 2, 56, 1, 0),
+    [SPECIES_FURFROU_STAR]      = FURFROU_MISC_INFO(Star,      VICTORY_STAR,    56, 2, 64, 1, 0),
+    [SPECIES_FURFROU_DIAMOND]   = FURFROU_MISC_INFO(Diamond,   MIRROR_ARMOR,    48, 2, 56, 1, 0),
+    [SPECIES_FURFROU_DEBUTANTE] = FURFROU_MISC_INFO(Debutante, UNAWARE,         48, 2, 56, 1, 2),
+    [SPECIES_FURFROU_MATRON]    = FURFROU_MISC_INFO(Matron,    SCRAPPY,         48, 2, 56, 1, 2),
+    [SPECIES_FURFROU_DANDY]     = FURFROU_MISC_INFO(Dandy,     STALWART,        48, 2, 56, 1, 1),
+    [SPECIES_FURFROU_LA_REINE]  = FURFROU_MISC_INFO(LaReine,   QUEENLY_MAJESTY, 48, 2, 56, 1, 0),
+    [SPECIES_FURFROU_KABUKI]    = FURFROU_MISC_INFO(Kabuki,    TRACE,           56, 2, 56, 1, 0),
+    [SPECIES_FURFROU_PHARAOH]   = FURFROU_MISC_INFO(Pharaoh,   MUMMY,           48, 2, 56, 1, 0),
 #endif //P_FAMILY_FURFROU
 
 #if P_FAMILY_ESPURR
@@ -7163,7 +7163,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,
         .evYield_Defense = 1,
         .evYield_SpDefense = 2,
-        .genderRatio = MON_GENDERLESS,
+        .genderRatio = MON_FEMALE,
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
@@ -7237,7 +7237,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .expYield = 315,
         .evYield_Defense = 1,
         .evYield_SpDefense = 2,
-        .genderRatio = MON_GENDERLESS,
+        .genderRatio = MON_FEMALE,
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
@@ -7381,10 +7381,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     [SPECIES_HOOPA_UNBOUND] =
     {
         .baseHP        = 80,
-        .baseAttack    = 160,
+        .baseAttack    = 170,
         .baseDefense   = 60,
         .baseSpeed     = 80,
-        .baseSpAttack  = 170,
+        .baseSpAttack  = 160,
         .baseSpDefense = 130,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_DARK),
         .catchRate = 30,

@@ -71,6 +71,10 @@ upcoming
     - Falinks:
         - HP: 65->75
         - Has a +10 to Def that needs to be added to the Mega's BST (maybe SpD?)
+    - Zygarde:
+        - Make attacking stats more consistent?
+            - Regular forms have more Atk, but Mega has 146 more SpA
+            - Land's Wrath, Thousand Waves, and Thousand Arrows are Physical, but Core Enforcer and Nihil Light are Special
 - DexNav:
     - Now that there's less fishing, that box can be shortened
     - One row?:
@@ -135,7 +139,6 @@ upcoming
 - Double check that all Gen1 Pokemon have updated movesets
     - Next do all starters/beasts/bugs/birds/etc.
     - Not including cross-gen evos or regionals or already updated:
-        6 72
         7 88
         8 96
         4 107
@@ -147,7 +150,8 @@ upcoming
 - Use Cable Car defines in wild_encounters
 - Eventually remove RSE and/or BDSP teachable moves?
 - Merge Deoxys teachable learnsets?
-- Standardize starter base stat totals
+- Standardize starter base stat totals?
+- Standardize fossil base stat totals?
 - See if there's a way to automatically calculate the Pokedex offsets
     - Currently all new ones seem to have a default value (Pecharunt is 1 foot tall and looks huge in it)
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?

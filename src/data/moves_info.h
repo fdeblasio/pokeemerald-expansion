@@ -15136,7 +15136,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Hyperspace Hole"),
         .description = sHyperspaceHoleDescription,
         .effect = EFFECT_HIT,
-        .power = 80,
+        .power = 90,
         .type = TYPE_PSYCHIC,
         .accuracy = 0,
         .pp = 10,
@@ -15658,7 +15658,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Can hit Flying foes, then\n"
             "knocks them to the ground."),
         .effect = EFFECT_SMACK_DOWN,
-        .power = 90,
+        .power = 100,
         .type = TYPE_GROUND,
         .accuracy = 100,
         .pp = 10,
@@ -15683,7 +15683,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Those hit by the wave can\n"
             "no longer escape."),
         .effect = EFFECT_HIT,
-        .power = 90,
+        .power = 100,
         .type = TYPE_GROUND,
         .accuracy = 100,
         .pp = 10,
@@ -15709,7 +15709,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Gathers the energy of the\n"
             "land to attack every foe."),
         .effect = EFFECT_HIT,
-        .power = 90,
+        .power = 100,
         .type = TYPE_GROUND,
         .accuracy = 100,
         .pp = 10,

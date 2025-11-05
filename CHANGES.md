@@ -498,6 +498,8 @@
         - Accuracy: 95->100
     - High Horsepower:
         - Accuracy: 95->100
+    - Land's Wrath:
+        - Power: 90->100
     - Mud Bomb:
         - Accuracy: 85->100
     - Mud Shot:
@@ -507,6 +509,10 @@
     - Sandsear Storm:
         - Power: 100->120
         - Accuracy: 80->100
+    - Thousand Arrows:
+        - Power: 90->100
+    - Thousand Waves:
+        - Power: 90->100
 - Rock:
     - Accelrock:
         - PP: 20->30
@@ -685,6 +691,7 @@
     - Eerie Spell:
         - PP: 5->10
     - Hyperspace Hole:
+        - Power: 80->90
         - PP: 5->10
     - Kinesis:
         - Accuracy: 80->100
@@ -3067,6 +3074,14 @@
     - Spe: 126->130
     - Learns Flame Wheel, Temper Flare, and Dual Wingbeat by level up
 
+- Scatterbug:
+    - Learns Bug Bite at level 9 instead of 15
+
+- Vivillon:
+    - Def: 50->60
+    - Spe: 89->90
+    - Learns Silver Wind, Air Cutter, Signal Beam, and Air Slash
+
 - Litleo:
     - HP: 62->65
     - Def: 58->60
@@ -3085,6 +3100,12 @@
     - Spe: 106->110
     - Hidden Ability: Moxie->Competitive
     - Learns Swift, Flame Burst, and Fire Blast by level up
+
+- Flabébé/Floette/Eternal Floette/Florges:
+    - Learn Disarming Voice, Draining Kiss, and Dazzling Gleam by level up
+
+- Eternal Floette:
+    - Learn Safeguard, Disarming Voice, Draining Kiss, Dazzling Gleam, and Synthesis by level up
 
 - Skiddo:
     - Received Grass Pelt as a second Ability and Grassy Surge as a Hidden Ability (previously Grass Pelt)
@@ -3106,6 +3127,23 @@
 
 - Pangoro:
     - Learns Dizzy Punch, Dynamic Punch, Drain Punch, and Throat Chop by level up
+
+- Furfrou:
+    - Atk: 80->90
+    - Def: 60->75
+    - Spe: 102->105
+    - Learns Body Slam by level up
+    - All forms get Hidden Abilities:
+        - Natural: Tangling Hair
+        - Heart: Cute Charm
+        - Star: Victory Star
+        - Diamond: Mirror Armor
+        - Debutante: Unaware
+        - Matron: Scrappy
+        - Dandy: Stalwart
+        - La Reine: Queenly Majesty
+        - Kabuki: Trace
+        - Pharoah: Mummy
 
 - Espurr:
     - HP: 62->65
@@ -3200,6 +3238,13 @@
     - Learn Rock Throw, Smack Down, and Rock Tomb by level up
     - Learn Dragon Breath by Egg Move
 
+- Amaura:
+    - Learns Power Gem by level up
+
+- Aurorus:
+    - Learns Aurora Veil upon evolving
+    - Learns Power Gem by level up
+
 - Hawlucha:
     - Learns Rolling Kick, Drain Punch, Sky Uppercut, Dual Wingbeat, and Acrobatics by level up
 
@@ -3213,12 +3258,18 @@
     - Learns Thunder Shock at level 1 and learns Shock Wave in its place at level 15
     - Learns Fairy Wind, Disarming Voice, Draining Kiss, Dazzling Gleam, and Thunderbolt by level up
 
+- Carbink:
+    - Learns Fairy Wind, Play Rough, and Dazzling Gleam
+
 - Goomy:
     - Evolution: 40->35
     - Learns Life Dew by level up
 
 - Sliggoo/Goodra:
     - Learns Life Dew by level up
+
+- Hisuian Sliggoo/Hisuian Goodra:
+    - Learns Flash Cannon and Life Dew by level up
 
 - Klefki:
     - Catch rate: 75->90
@@ -3259,6 +3310,30 @@
     - SpA: 97->100
     - Spe: 123->125
     - Learns Twister and Dragon Breath by level up
+
+- Xerneas:
+    - Learns Fairy Wind, Draining Kiss, Disarming Voice, and Dazzling Gleam by level up
+
+- Yveltal:
+    - Learns Air Cutter by level up
+
+- Zygarde:
+    - Learns Breaking Swipe, Earth Power, and Dragon Dance by level up
+
+- Diancie:
+    - Gender ratio: genderless->0/100
+    - Learns Fairy Wind, Play Rough, and Dazzling Gleam
+
+- Hoopa Confined:
+    - Learns Ominous Wind, Hex, and Expanding Force by level up
+
+- Hoopa Unbound:
+    - Atk: 160->170
+    - SpA: 170->160
+    - Learns Pursuit, Psycho Cut, Night Slash, Zen Headbutt, Psychic Fangs, and Throat Chop by level up
+
+- Volcanion:
+    - Learns Ember, Flamethrower, and Heat Wave by level up
 
 - Rowlet:
     - HP: 68->70

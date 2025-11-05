@@ -8969,8 +8969,6 @@ static const u16 sFlabebeEggMoveLearnset[] = {
     MOVE_CONFIDE,
     MOVE_COPYCAT,
     MOVE_COVET,
-    MOVE_DISARMING_VOICE,
-    MOVE_DRAINING_KISS,
     MOVE_ECHOED_VOICE,
     MOVE_ENDEAVOR,
     MOVE_HEAL_BELL,

@@ -4130,6 +4130,13 @@
     - Learns Aurora Veil upon evolving
     - Learns Power Gem by level up
 
+- Amaura:
+    - Learns Power Gem by level up
+
+- Aurorus:
+    - Learns Aurora Veil upon evolving
+    - Learns Power Gem by level up
+
 - Hawlucha:
     - Learns Rolling Kick, Drain Punch, Sky Uppercut, Dual Wingbeat, and Acrobatics by level up
 

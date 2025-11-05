@@ -10,6 +10,7 @@ MtPyre_2F_SetHoleWarp:
 	end
 
 MtPyre_2F_EventScript_Woman::
+	bufferspeciesname STR_VAR_1, SPECIES_MT_PYRE_DARLING
 	msgbox MtPyre_2F_Text_MemoriesOfSkitty, MSGBOX_NPC
 	end
 
@@ -43,7 +44,7 @@ MtPyre_2F_EventScript_Zander::
 	end
 
 MtPyre_2F_Text_MemoriesOfSkitty:
-	.string "Memories of my darling Skitty…\n"
+	.string "Memories of my darling {STR_VAR_1}…\n"
 	.string "My eyes overflow thinking about it.$"
 
 MtPyre_2F_Text_TumbledFromFloorAbove:

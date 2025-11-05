@@ -4806,6 +4806,10 @@
 - Pincurchin:
     - Learns Supercell Slam by level up
 
+- Mega Falinks:
+    - HP: 65->75
+    - SpD: 65->75
+
 - Snom:
     - Evolution: friendship->21
 

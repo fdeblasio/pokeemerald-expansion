@@ -7343,9 +7343,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_GEN_9_MEGA_EVOLUTIONS
     [SPECIES_SKARMORY_MEGA] =
     {
-        .baseHP        = 65,
+        .baseHP        = 90,
         .baseAttack    = 140,
-        .baseDefense   = 110,
+        .baseDefense   = 120,
         .baseSpeed     = 110,
         .baseSpAttack  = 40,
         .baseSpDefense = 100,

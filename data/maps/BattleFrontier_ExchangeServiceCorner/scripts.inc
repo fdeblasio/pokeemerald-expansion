@@ -292,9 +292,13 @@ BattleFrontier_Mart_EvolutionMega:
 	.2byte ITEM_GALARICA_WREATH @ Postgame: Slowpoke-G
 	.2byte ITEM_PEAT_BLOCK      @ Postgame: Ursaring
 	.2byte ITEM_AERODACTYLITE   @ 0142
+	.2byte ITEM_MEGANIUMITE     @ 0154
+	.2byte ITEM_FERALIGITE      @ 0160
 	.2byte ITEM_AMPHAROSITE     @ 0181
 	.2byte ITEM_LATIASITE       @ 0380
 	.2byte ITEM_LATIOSITE       @ 0381
+	.2byte ITEM_EXCADRITE       @ 0530
+	.2byte IITEM_DRAGALGITE     @ 0691
 	.2byte ITEM_RARE_CANDY
 	.2byte ITEM_EXP_CANDY_L
 	.2byte ITEM_EXP_CANDY_XL

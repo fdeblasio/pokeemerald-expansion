@@ -49,9 +49,11 @@ LilycoveCity_DepartmentStore_4F_EventScript_ClerkMegaStones::
 	.align 2
 LilycoveCity_DepartmentStore_4F_Pokemart_MegaStones:
 	.2byte ITEM_ALAKAZITE       @ 0065
+	.2byte ITEM_STARMINITE      @ 0121
 	.2byte ITEM_PINSIRITE       @ 0127
 	.2byte ITEM_GYARADOSITE     @ 0130
 	.2byte ITEM_HERACRONITE     @ 0214
+	.2byte ITEM_SKARMORITE      @ 0227
 	.2byte ITEM_HOUNDOOMINITE   @ 0229
 	.2byte ITEM_SCEPTILITE      @ 0254
 	.2byte ITEM_BLAZIKENITE     @ 0257
@@ -69,6 +71,7 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStones:
 	.2byte ITEM_BANETTITE       @ 0354
 	.2byte ITEM_ABSOLITE        @ 0359
 	.2byte ITEM_GLALITITE       @ 0362
+	.2byte ITEM_FROSLASSITE     @ 0362
 	.2byte ITEM_SALAMENCITE     @ 0373
 	.2byte ITEM_METAGROSSITE    @ 0376
 	pokemartlistend
@@ -84,50 +87,47 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_PIDGEOTITE      @ 0018
 	.2byte ITEM_NONE            @ 0026 Raichu X (move to regular shop when implemented)
 	.2byte ITEM_NONE            @ 0026 Raichu Y (move to regular shop when implemented)
-	.2byte ITEM_NONE            @ 0036 Clefable
-	.2byte ITEM_NONE            @ 0071 Victreebel
+	.2byte ITEM_CLEFABLITE      @ 0036
+	.2byte ITEM_VICTREEBELITE   @ 0071
 	.2byte ITEM_SLOWBRONITE     @ 0080
 	.2byte ITEM_GENGARITE       @ 0094
 	.2byte ITEM_STEELIXITE      @ 0095
 	.2byte ITEM_KANGASKHANITE   @ 0115
-	.2byte ITEM_NONE            @ 0121 Starmie (move to regular shop when implemented)
 	.2byte ITEM_SCIZORITE       @ 0123
 	.2byte ITEM_AERODACTYLITE   @ 0142 Battle Frontier
-	.2byte ITEM_NONE            @ 0149 Dragonite
+	.2byte ITEM_DRAGONINITE     @ 0149
 	.2byte ITEM_MEWTWONITE_X    @ 0150
 	.2byte ITEM_MEWTWONITE_Y    @ 0150
-	.2byte ITEM_NONE            @ 0154 Meganium (move to Battle Frontier when implemented)
-	.2byte ITEM_NONE            @ 0160 Feraligatr (move to Battle Frontier when implemented)
+	.2byte ITEM_MEGANIUMITE     @ 0154 Battle Frontier
+	.2byte ITEM_FERALIGITE      @ 0160 Battle Frontier
 	.2byte ITEM_AMPHAROSITE     @ 0181 Battle Frontier
-	.2byte ITEM_NONE            @ 0227 Skarmory (move to regular shop when implemented)
 	.2byte ITEM_TYRANITARITE    @ 0248
-	.2byte ITEM_NONE            @ 0362 Froslass (move to regular shop when implemented)
 	.2byte ITEM_LATIASITE       @ 0380 Battle Frontier
 	.2byte ITEM_LATIOSITE       @ 0381 Battle Frontier
 	.2byte ITEM_LOPUNNITE       @ 0428
 	.2byte ITEM_GARCHOMPITE     @ 0445
 	.2byte ITEM_LUCARIONITE     @ 0448
 	.2byte ITEM_ABOMASITE       @ 0460
-	.2byte ITEM_NONE            @ 0500 Emboar
-	.2byte ITEM_NONE            @ 0530 Excadrill
+	.2byte ITEM_EMBOARITE       @ 0500
+	.2byte ITEM_EXCADRITE       @ 0530 Battle Frontier
 	.2byte ITEM_AUDINITE        @ 0531
-	.2byte ITEM_NONE            @ 0545 Scolipede
-	.2byte ITEM_NONE            @ 0560 Scrafty
-	.2byte ITEM_NONE            @ 0604 Eelektross
-	.2byte ITEM_NONE            @ 0609 Chandelure
-	.2byte ITEM_NONE            @ 0652 Chesnaught
-	.2byte ITEM_NONE            @ 0655 Delphox
-	.2byte ITEM_NONE            @ 0658 Greninja
-	.2byte ITEM_NONE            @ 0668 Pyroar
-	.2byte ITEM_NONE            @ 0670 Floette
-	.2byte ITEM_NONE            @ 0687 Malamar
-	.2byte ITEM_NONE            @ 0689 Barbaracle
-	.2byte ITEM_NONE            @ 0691 Dragalge (move to Battle Frontier when implemented)
-	.2byte ITEM_NONE            @ 0701 Hawlucha
-	.2byte ITEM_NONE            @ 0718 Zygarde
+	.2byte IITEM_SCOLIPITE      @ 0545
+	.2byte IITEM_SCRAFTINITE    @ 0560
+	.2byte IITEM_EELEKTROSSITE  @ 0604
+	.2byte IITEM_CHANDELURITE   @ 0609
+	.2byte IITEM_CHESNAUGHTITE  @ 0652
+	.2byte IITEM_DELPHOXITE     @ 0655
+	.2byte IITEM_GRENINJITE     @ 0658
+	.2byte IITEM_PYROARITE      @ 0668
+	.2byte IITEM_FLOETTITE      @ 0670
+	.2byte IITEM_MALAMARITE     @ 0687
+	.2byte IITEM_BARBARACITE    @ 0689
+	.2byte IITEM_DRAGALGITE     @ 0691 Battle Frontier
+	.2byte IITEM_HAWLUCHANITE   @ 0701
+	.2byte IITEM_ZYGARDITE      @ 0718
 	.2byte ITEM_DIANCITE        @ 0719
-	.2byte ITEM_NONE            @ 0780 Drampa
-	.2byte ITEM_NONE            @ 0870 Falinks
+	.2byte ITEM_DRAMPANITE      @ 0780
+	.2byte ITEM_FALINKSITE      @ 0870
 	pokemartlistend
 
 @ Rumored:

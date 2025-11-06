@@ -315,7 +315,7 @@ static const s8 sCenterToCornerVecXs[8] ={-32, -16, -16, -32, -32};
 
 const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
 {
-    TRAINER_CLASS(PKMN_TRAINER_1, "{PKMN} Trainer", 15),
+    TRAINER_CLASS(PKMN_TRAINER_1, "{PKMN} Trainer", 100),
     TRAINER_CLASS(PKMN_TRAINER_2, "{PKMN} Trainer"),
     TRAINER_CLASS(HIKER, "Hiker", 10, BALL_HEAVY),
     TRAINER_CLASS(TEAM_AQUA, "Team Aqua", 5, BALL_DIVE),

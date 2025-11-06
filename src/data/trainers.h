@@ -17963,37 +17963,127 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .encounterMusic_gender = TRAINER_ENCOUNTER_MALE, \
     .partySize = 6
 
-#define UNUSED_TRAINER(Num)                       \
-[DIFFICULTY_NORMAL][TRAINER_UNUSED_##Num] =       \
-{                                                 \
-    FRANK_INFO,                                   \
-    .party = (const struct TrainerMon[]) {        \
-        {                                         \
-        .lvl = 10,                                \
-        .species = SPECIES_NONE,                  \
-        },                                        \
-        {                                         \
-        .lvl = 10,                                \
-        .species = SPECIES_NONE,                  \
-        },                                        \
-        {                                         \
-        .lvl = 10,                                \
-        .species = SPECIES_NONE,                  \
-        },                                        \
-        {                                         \
-        .lvl = 10,                                \
-        .species = SPECIES_NONE,                  \
-        },                                        \
-        {                                         \
-        .lvl = 10,                                \
-        .species = SPECIES_NONE,                  \
-        },                                        \
-        {                                         \
-        .lvl = 10,                                \
-        .species = SPECIES_NONE,                  \
-        }                                         \
-    },                                            \
+#define FRANK_MON(Level, Species) \
+    .lvl = Level,                 \
+    .species = SPECIES_##Species, \
+    PERFECT_IVS
+
+//        {
+//        FRANK_MON(, ),
+//        .ability = ABILITY_,
+//        .nature = NATURE_,
+//        EV_SPREAD_,
+//        .moves = {MOVE_, MOVE_, MOVE_, MOVE_},
+//        .gender = TRAINER_MON_,
+//        .heldItem = ITEM_,
+//        .ball = ITEM__BALL,
+//        .nickname = COMPOUND_STRING(""),
+//        },
+
+[DIFFICULTY_NORMAL][TRAINER_UNUSED_1] =
+{
+    FRANK_INFO,
+    .party = (const struct TrainerMon[]) {
+        {
+        FRANK_MON(67, MUK),
+        .ability = ABILITY_POISON_TOUCH,
+        .nature = NATURE_ADAMANT,
+        EV_SPREAD_ATK_HP_SPD,
+        .moves = {MOVE_POISON_JAB, MOVE_ROCK_SLIDE, MOVE_DRAIN_PUNCH, MOVE_TOXIC},
+        .gender = TRAINER_MON_FEMALE,
+        .heldItem = ITEM_BLACK_SLUDGE,
+        .ball = ITEM_PREMIER_BALL,
+        .isShiny = TRUE,
+        .nickname = COMPOUND_STRING("Sludgella"),
+        },
+        {
+        FRANK_MON(67, TSAREENA),
+        .ability = ABILITY_QUEENLY_MAJESTY,
+        .nature = NATURE_ADAMANT,
+        EV_SPREAD_ATK_SPE_HP,
+        .moves = {MOVE_TROP_KICK, MOVE_PLAY_ROUGH, MOVE_ACROBATICS, MOVE_HIGH_JUMP_KICK},
+        .gender = TRAINER_MON_FEMALE,
+        .ball = ITEM_GREAT_BALL,
+        .nickname = COMPOUND_STRING("Tsara"),
+        },
+        {
+        FRANK_MON(67, PAWMOT),
+        .ability = ABILITY_IRON_FIST,
+        .nature = NATURE_ADAMANT,
+        EV_SPREAD_ATK_SPE_HP,
+        .moves = {MOVE_THUNDER_PUNCH, MOVE_DRAIN_PUNCH, MOVE_ICE_PUNCH, MOVE_MEGA_PUNCH},
+        .gender = TRAINER_MON_MALE,
+        .heldItem = ITEM_PUNCHING_GLOVE,
+        .ball = ITEM_POKE_BALL,
+        .nickname = COMPOUND_STRING("Pawtrick"),
+        },
+        {
+        FRANK_MON(67, GREEDENT),
+        .ability = ABILITY_CHEEK_POUCH,
+        .nature = NATURE_ADAMANT,
+        EV_SPREAD_ATK_HP_DEF,
+        .moves = {MOVE_BODY_SLAM, MOVE_SEED_BOMB, MOVE_CRUNCH, MOVE_HIGH_HORSEPOWER},
+        .gender = TRAINER_MON_MALE,
+        .heldItem = ITEM_LIECHI_BERRY,
+        .ball = ITEM_POKE_BALL,
+        .nickname = COMPOUND_STRING("Big Larry"),
+        },
+        {
+        FRANK_MON(67, LEAVANNY),
+        .ability = ABILITY_CHLOROPHYLL,
+        .nature = NATURE_ADAMANT,
+        EV_SPREAD_ATK_SPE_HP,
+        .moves = {MOVE_X_SCISSOR, MOVE_LEAF_BLADE, MOVE_SHADOW_CLAW, MOVE_AERIAL_ACE},
+        .gender = TRAINER_MON_FEMALE,
+        .ball = ITEM_POKE_BALL,
+        .nickname = COMPOUND_STRING("Sewsan"),
+        },
+        {
+        FRANK_MON(67, CINDERACE),
+        .ability = ABILITY_BLAZE,
+        .nature = NATURE_ADAMANT,
+        EV_SPREAD_ATK_SPE_HP,
+        .moves = {MOVE_PYRO_BALL, MOVE_ACROBATICS, MOVE_IRON_HEAD, MOVE_DOUBLE_KICK},
+        .gender = TRAINER_MON_MALE,
+        .ball = ITEM_POKE_BALL,
+        .nickname = COMPOUND_STRING("Cinge"),
+        }
+    },
 }
 
-UNUSED_TRAINER(1),
-UNUSED_TRAINER(2),
+[DIFFICULTY_NORMAL][TRAINER_UNUSED_2] =
+{
+    FRANK_INFO,
+    .party = (const struct TrainerMon[]) {
+        {
+        FRANK_MON(66, JOLTEON),
+        .gender = TRAINER_MON_MALE,
+        .nickname = COMPOUND_STRING("Joey Needles"),
+        },
+        {
+        FRANK_MON(66, MR_RIME),
+        .gender = TRAINER_MON_MALE,
+        .nickname = COMPOUND_STRING("Murray"),
+        },
+        {
+        FRANK_MON(66, SLOWBRO),
+        .gender = TRAINER_MON_MALE,
+        .nickname = COMPOUND_STRING("Slorenzo"),
+        },
+        {
+        FRANK_MON(67, DACHSBUN),
+        .gender = TRAINER_MON_FEMALE,
+        .nickname = COMPOUND_STRING("Dasha"),
+        },
+        {
+        FRANK_MON(67, VENOMOTH),
+        .gender = TRAINER_MON_MALE,
+        .nickname = COMPOUND_STRING("Vence"),
+        },
+        {
+        FRANK_MON(68, DECIDUEYE),
+        .gender = TRAINER_MON_MALE,
+        .nickname = COMPOUND_STRING("Ronaldo"),
+        }
+    },
+}

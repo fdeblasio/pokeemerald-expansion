@@ -38,8 +38,6 @@ upcoming
 - Z-A Megas:
     - Pidgey line:
         - Make attacking stats more consistent? (Regular has 10 more Atk, but Mega has 55 more SpA)
-    - Clefable:
-        - Give Flying moves
     - Victreebel line:
         - Make attacking stats more consistent? (Regular has 5 more Atk, but Mega has 10 more SpA)
     - Starmie:
@@ -47,14 +45,8 @@ upcoming
             - It seems like it might actually have 30 more SpA but Pure Power
     - Dragonite line:
         - Make attacking stats more consistent? (Regular has 34 more Atk, but Mega has 21 more SpA)
-    - Meganium:
-        - Give Fairy moves
-    - Feraligatr:
-        - Give Dragon moves
     - Malamar:
         - Take some SpA and give to Atk?
-    - Barbaracle:
-        - Give Fighting moves
     - Zygarde:
         - Make attacking stats more consistent?
             - Regular forms have more Atk, but Mega has 146 more SpA
@@ -165,6 +157,7 @@ upcoming
     - Turn Wallace into a Fairy specialist and turn Milotic into Water/Fairy?
     - Turn Juan into a Poison specialist (Swalot as Ace since both have mustaches)?
         - Would need to update gym palette
+        - Mr. Rime could be a good hack signature if he becomes Ice
     - Swap Juan and Glacia and turn Juan into Grass specialist?
     - Turn Team Magma into Ground specialists (Camerupt still works as other people like Winona and Sidney use the secondary typing for their aces)?
         - Would cancel out the addition of Houndoom?

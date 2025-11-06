@@ -691,6 +691,10 @@
         "Move": "MOVE_ALLURING_VOICE"
       },
       {
+        "Level": 1,
+        "Move": "MOVE_AIR_SLASH"
+      },
+      {
         "Level": 2,
         "Move": "MOVE_METRONOME"
       },
@@ -3730,6 +3734,18 @@
         "Move": "MOVE_VINE_WHIP"
       },
       {
+        "Level": 1,
+        "Move": "MOVE_FAIRY_WIND"
+      },
+      {
+        "Level": 22,
+        "Move": "MOVE_DISARMING_VOICE"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_DAZZLING_GLEAM"
+      },
+      {
         "Level": 46,
         "Move": "MOVE_SEED_BOMB"
       },
@@ -3834,12 +3850,28 @@
   "FERALIGATR": {
     "LevelMoves": [
       {
+        "Level": 21,
+        "Move": "MOVE_BREAKING_SWIPE"
+      },
+      {
         "Level": 32,
         "Move": "MOVE_WATERFALL"
       },
       {
+        "Level": 37,
+        "Move": "MOVE_DRAGON_CLAW"
+      },
+      {
         "Level": 44,
         "Move": "MOVE_LIQUIDATION"
+      },
+      {
+        "Level": 51,
+        "Move": "MOVE_OUTRAGE"
+      },
+      {
+        "Level": 65,
+        "Move": "MOVE_DRAGON_DANCE"
       }
     ],
     "PreEvoMoves": [],
@@ -12770,12 +12802,20 @@
         "Move": "MOVE_ROCK_TOMB"
       },
       {
+        "Level": 24,
+        "Move": "MOVE_BRICK_BREAK"
+      },
+      {
         "Level": 28,
         "Move": "MOVE_AQUA_CUTTER"
       },
       {
         "Level": 36,
         "Move": "MOVE_ROCK_SLIDE"
+      },
+      {
+        "Level": 42,
+        "Move": "MOVE_DRAIN_PUNCH"
       },
       {
         "Level": 48,

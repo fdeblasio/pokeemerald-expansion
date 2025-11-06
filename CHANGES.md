@@ -1021,7 +1021,7 @@
 
 - Clefable (not in main game):
     - Def: 73->75
-    - Learns Fairy Wind and Alluring Voice by level up
+    - Learns Fairy Wind, Alluring Voice, and Air Slash by level up
 
 - Vulpix/Ninetales:
     - Learn Mystical Fire by level up
@@ -1590,7 +1590,7 @@
     - Learns Vine Whip, Seed Bomb, and Energy Ball by level up
 
 - Meganium (postgame):
-    - Learns Vine Whip, Seed Bomb, and Energy Ball by level up
+    - Learns Vine Whip, Fairy Wind, Disarming Voice, Dazzling Gleam, Seed Bomb, and Energy Ball by level up
 
 - Cyndaquil (postgame):
     - Evolution: 14->16
@@ -1614,7 +1614,7 @@
     - Learns Waterfall and Liquidation by level up
 
 - Feraligatr (postgame):
-    - Learns Waterfall and Liquidation by level up
+    - Learns Breaking Swipe, Waterfall, Dragon Claw, Liquidation, Outrage, and Dragon Dance by level up
 
 - Sentret/Furret (not in main game):
     - Learn Covet and Body Slam by level up
@@ -3212,7 +3212,7 @@
     - Learns Rock Throw, Rock Tomb, Aqua Cutter, Rock Slide, and Liquidation by level up
 
 - Barbaracle:
-    - Learns Rock Throw, Rock Tomb, Aqua Cutter, Rock Slide, and Liquidation by level up
+    - Learns Rock Throw, Rock Tomb, Brick Break, Aqua Cutter, Rock Slide, Drain Punch, and Liquidation by level up
     - Learns Body Press by TM
 
 - Skrelp (postgame):

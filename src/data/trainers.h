@@ -17955,16 +17955,41 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     },
 },
 
+
+#define FRANK_INFO                                   \
+    .trainerName = _("Frank"),                       \
+    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,    \
+    .trainerPic = TRAINER_PIC_FRANK,                 \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MALE, \
+    .partySize = 6
+
 #define UNUSED_TRAINER(Num)                       \
 [DIFFICULTY_NORMAL][TRAINER_UNUSED_##Num] =       \
 {                                                 \
-    .trainerName = _("Unused"),                   \
-    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_2, \
-    .trainerPic = TRAINER_PIC_RS_BRENDAN,         \
-    .partySize = 1,                               \
+    FRANK_INFO,                                   \
     .party = (const struct TrainerMon[]) {        \
         {                                         \
-        .lvl = 1,                                 \
+        .lvl = 10,                                \
+        .species = SPECIES_NONE,                  \
+        },                                        \
+        {                                         \
+        .lvl = 10,                                \
+        .species = SPECIES_NONE,                  \
+        },                                        \
+        {                                         \
+        .lvl = 10,                                \
+        .species = SPECIES_NONE,                  \
+        },                                        \
+        {                                         \
+        .lvl = 10,                                \
+        .species = SPECIES_NONE,                  \
+        },                                        \
+        {                                         \
+        .lvl = 10,                                \
+        .species = SPECIES_NONE,                  \
+        },                                        \
+        {                                         \
+        .lvl = 10,                                \
         .species = SPECIES_NONE,                  \
         }                                         \
     },                                            \

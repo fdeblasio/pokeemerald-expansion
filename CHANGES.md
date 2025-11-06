@@ -313,6 +313,14 @@
 |TM98|Air Slash|Lilycove TM Shop|
 |TM99|Body Press|Lilycove TM Shop|
 |TM100|Moonblast|Lilycove TM Shop|
+|TM101|Cut|Rustboro|
+|TM102|Fly|Route 119|
+|TM103|Surf|Petalburg|
+|TM104|Strength|Rusturf Tunnel|
+|TM105|Flash|Granite Cave|
+|TM106|Rock Smash|Mauville|
+|TM107|Waterfall|Sootopolis|
+|TM108|Dive|Mossdeep|
 
 ### Move Tutors:
 #### Mainland:

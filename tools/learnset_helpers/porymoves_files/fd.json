@@ -10137,6 +10137,10 @@
       {
         "Level": 32,
         "Move": "MOVE_DAZZLING_GLEAM"
+      },
+      {
+        "Level": 60,
+        "Move": "MOVE_REVIVAL_BLESSING"
       }
     ],
     "PreEvoMoves": [],

@@ -2692,7 +2692,7 @@
     - SpD: 86->90
     - Gender ratio: 50/50 -> 25/75
     - Base experience: 390->395
-    - Learns Fairy Wind, Swift, and Dazzling Gleam by level up
+    - Learns Fairy Wind, Swift, Dazzling Gleam, and Revival Blessing by level up
 
 - Mega Audino:
     - HP: 103->105

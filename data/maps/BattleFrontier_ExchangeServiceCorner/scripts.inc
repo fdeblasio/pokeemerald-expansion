@@ -226,7 +226,7 @@ BattleFrontier_Mart_EvolutionMega:
 	.2byte ITEM_LATIASITE       @ 0380
 	.2byte ITEM_LATIOSITE       @ 0381
 	.2byte ITEM_EXCADRITE       @ 0530
-	.2byte IITEM_DRAGALGITE     @ 0691
+	.2byte ITEM_DRAGALGITE      @ 0691
 	.2byte ITEM_RARE_CANDY
 	.2byte ITEM_EXP_CANDY_L
 	.2byte ITEM_EXP_CANDY_XL

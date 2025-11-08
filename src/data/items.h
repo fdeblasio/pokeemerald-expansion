@@ -163,8 +163,6 @@ const struct Item gItemsInfo[] =
     .type = ITEM_USE_BAG_MENU,   \
     .battleUsage = EFFECT_ITEM_THROW_BALL
 
-
-
     [ITEM_STRANGE_BALL] =
     {
         .name = ITEM_NAME("Strange Ball"),

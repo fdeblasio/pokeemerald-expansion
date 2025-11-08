@@ -882,14 +882,6 @@ BRAWLY_REMATCH(5),
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
         {
-        .lvl = 20,
-        .species = SPECIES_MAGNEMITE,
-        .ability = ABILITY_MAGNET_PULL,
-        IVS(24),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_SONIC_BOOM, MOVE_MAGNET_BOMB, MOVE_THUNDER_WAVE},
-        .gender = TRAINER_MON_NONE,
-        },
-        {
         .lvl = 22,
         .species = SPECIES_TADBULB,
         .ability = ABILITY_STATIC,
@@ -906,11 +898,19 @@ BRAWLY_REMATCH(5),
         .gender = TRAINER_MON_MALE,
         },
         {
-        .lvl = 24,
-        .species = SPECIES_PAWMO,
+        .lvl = 22,
+        .species = SPECIES_PAWMI,
         .ability = ABILITY_VOLT_ABSORB,
         IVS(30),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_POWER_UP_PUNCH, MOVE_BITE, MOVE_CHARGE},
+        .moves = {MOVE_SHOCK_WAVE, MOVE_NUZZLE, MOVE_BITE, MOVE_CHARGE},
+        .gender = TRAINER_MON_MALE,
+        },
+        {
+        .lvl = 24,
+        .species = SPECIES_ELECTRIKE,
+        .ability = ABILITY_STATIC,
+        IVS(30),
+        .moves = {MOVE_SHOCK_WAVE, MOVE_QUICK_ATTACK, MOVE_BITE, MOVE_THUNDER_WAVE},
         .gender = TRAINER_MON_MALE,
         .heldItem = ITEM_SITRUS_BERRY,
         .ball = ITEM_POKE_BALL,
@@ -1123,10 +1123,10 @@ BRAWLY_REMATCH(5),
     .party = (const struct TrainerMon[]) {       \
         WATTSON_ELECTRODE(Rematch, TIER3),       \
         WATTSON_TOXTRICITY(Rematch, TIER3),      \
-        WATTSON_MAGNEZONE(Rematch, TIER3),       \
         WATTSON_BELLIBOLT(Rematch, TIER2),       \
         WATTSON_RAICHU_ALOLA(Rematch, TIER2),    \
-        WATTSON_PAWMOT(Rematch, ACE),            \
+        WATTSON_PAWMOT(Rematch, TIER2),          \
+        WATTSON_MANECTRIC(Rematch, ACE),         \
     },                                           \
 }
 
@@ -1326,7 +1326,7 @@ WATTSON_REMATCH(5),
     LEADER_REMATCH,                               \
     .party = (const struct TrainerMon[]) {        \
         FLANNERY_FLAREON(Rematch, TIER3),         \
-        FLANNERY_MAGCARGO(Rematch, TIER3),        \
+        FLANNERY_ARCANINE(Rematch, TIER3),        \
         FLANNERY_TALONFLAME(Rematch, TIER3),      \
         FLANNERY_RAPIDASH(Rematch, TIER2),        \
         FLANNERY_NINETALES(Rematch, TIER2),       \
@@ -2518,7 +2518,7 @@ JUAN_REMATCH(5),
     SIDNEY_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        SIDNEY_PERSIAN(86, TIER3),
+        SIDNEY_HOUNDOOM(86, TIER3),
         SIDNEY_UMBREON(86, TIER3),
         SIDNEY_MABOSSTIFF(86, TIER3),
         SIDNEY_HONCHKROW(88, TIER3),
@@ -3255,9 +3255,9 @@ JUAN_REMATCH(5),
     .party = (const struct TrainerMon[]) {                                                 \
         WALLACE_SYLVEON(AceLevel - 3),                                                     \
         WALLACE_GRANBULL(AceLevel - 3),                                                    \
-        WALLACE_COMFEY(AceLevel - 3),                                                      \
-        WALLACE_DACHSBUN(AceLevel - 2),                                                    \
+        WALLACE_SLURPUFF(AceLevel - 3),                                                    \
         WALLACE_CLEFABLE(AceLevel - 2),                                                    \
+        WALLACE_DACHSBUN(AceLevel - 2),                                                    \
         WALLACE_TOGEKISS(AceLevel),                                                        \
     },                                                                                     \
 }
@@ -6433,7 +6433,7 @@ MARINA_BATTLE(MUSEUM, 17),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 18,
-        .species = SPECIES_BELLSPROUT,
+        .species = SPECIES_SWIRLIX,
         }
     },
 },
@@ -7484,8 +7484,8 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .trainerName = _("Shawn"),
     MAUVILLE_GYM_TRAINER_INFO(GUITARIST),
     .party = (const struct TrainerMon[]) {
-        MAUVILLE_GYM_MON(MAGNEMITE, MAGNET_BOMB, THUNDER_WAVE, SUPERSONIC),
-        MAUVILLE_GYM_MON(VOLTORB, CHARGE, EERIE_IMPULSE, SWIFT)
+        MAUVILLE_GYM_MON(ELECTRIKE, SNARL, QUICK_ATTACK, THUNDER_WAVE),
+        MAUVILLE_GYM_MON(YAMPER, BITE, NUZZLE, TAIL_WHIP)
     },
 },
 
@@ -10287,7 +10287,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_CHARMELEON,
+        .species = SPECIES_GROWLITHE_HISUI,
         IVS(12),
         }
     },
@@ -10303,7 +10303,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 28,
-        .species = SPECIES_NUMEL,
+        .species = SPECIES_GROWLITHE,
         }
     },
 },
@@ -14312,7 +14312,7 @@ MARINA_BATTLE(MT_PYRE, 42),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 44,
-        .species = SPECIES_LITWICK,
+        .species = SPECIES_GREAVARD,
         },
         {
         .lvl = 44,

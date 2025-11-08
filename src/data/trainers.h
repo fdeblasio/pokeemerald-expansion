@@ -891,10 +891,10 @@ BRAWLY_REMATCH(5),
         },
         {
         .lvl = 22,
-        .species = SPECIES_PICHU,
-        .ability = ABILITY_STATIC,
+        .species = SPECIES_YAMPER,
+        .ability = ABILITY_RATTLED,
         IVS(26),
-        .moves = {MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_SWEET_KISS, MOVE_NASTY_PLOT},
+        .moves = {MOVE_SHOCK_WAVE, MOVE_BITE, MOVE_NUZZLE, MOVE_TAIL_WHIP},
         .gender = TRAINER_MON_MALE,
         },
         {
@@ -1121,10 +1121,10 @@ BRAWLY_REMATCH(5),
     WATTSON_INFO,                                \
     LEADER_REMATCH,                              \
     .party = (const struct TrainerMon[]) {       \
-        WATTSON_ELECTRODE(Rematch, TIER3),       \
         WATTSON_TOXTRICITY(Rematch, TIER3),      \
+        WATTSON_RAICHU_ALOLA(Rematch, TIER3),    \
         WATTSON_BELLIBOLT(Rematch, TIER2),       \
-        WATTSON_RAICHU_ALOLA(Rematch, TIER2),    \
+        WATTSON_BOLTUND(Rematch, TIER2),         \
         WATTSON_PAWMOT(Rematch, TIER2),          \
         WATTSON_MANECTRIC(Rematch, ACE),         \
     },                                           \
@@ -2699,10 +2699,10 @@ JUAN_REMATCH(5),
     PHOEBE_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        PHOEBE_MIMIKYU(61, TIER3),
         PHOEBE_TREVENANT(61, TIER3),
-        PHOEBE_CHANDELURE(62, TIER3),
+        PHOEBE_CHANDELURE(61, TIER3),
         PHOEBE_GENGAR(62, TIER3),
+        PHOEBE_HOUNDSTONE(62, TIER3),
         PHOEBE_MISMAGIUS(63, ACE),
     },
 },
@@ -2712,11 +2712,11 @@ JUAN_REMATCH(5),
     PHOEBE_INFO,
     .partySize = 6,
     .party = (const struct TrainerMon[]) {
-        PHOEBE_DHELMISE(86, TIER3),
         PHOEBE_MIMIKYU(86, TIER3),
         PHOEBE_TREVENANT(86, TIER3),
-        PHOEBE_CHANDELURE(88, TIER3),
+        PHOEBE_CHANDELURE(86, TIER3),
         PHOEBE_GENGAR(88, TIER3),
+        PHOEBE_HOUNDSTONE(88, TIER3),
         PHOEBE_MISMAGIUS(90, ACE),
     },
 },

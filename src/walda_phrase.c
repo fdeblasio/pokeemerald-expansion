@@ -16,7 +16,6 @@ static void CB2_HandleGivenWaldaPhrase(void);
 static u32 GetWaldaPhraseInputCase(u8 *);
 static bool32 TryCalculateWallpaper(u16 *, u16 *, u8 *, u8 *, u16, u8 *);
 static void SetWallpaperDataFromLetter(u8 *, u8 *, u32, u32, u32);
-static u32 GetWallpaperDataBits(u8 *, u32, u32);
 static void RotateWallpaperDataLeft(u8 *, s32, s32);
 static void MaskWallpaperData(u8 *, u32, u8);
 
@@ -189,11 +188,6 @@ static bool32 TryCalculateWallpaper(u16 *backgroundClr, u16 *foregroundClr, u8 *
 
     // Do first 2 bits of the last letter
     SetWallpaperDataFromLetter(data, charsByTableId, BITS_PER_LETTER * (WALDA_PHRASE_LENGTH - 1), TO_BIT_OFFSET(WALDA_PHRASE_LENGTH - 1), 2);
-
-    // Check the first 3 bits of the data array against the remaining 3 bits of the last letter
-    // Reject the phrase if they are not already the same
-    if (GetWallpaperDataBits(data, 0, 3) != GetWallpaperDataBits(charsByTableId, TO_BIT_OFFSET(WALDA_PHRASE_LENGTH - 1) + 2, 3))
-        return FALSE;
 
     // Perform some relatively arbitrary changes to the wallpaper data using the last byte (KEY)
     RotateWallpaperDataLeft(data, NUM_WALLPAPER_DATA_BYTES,     21);

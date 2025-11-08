@@ -42,7 +42,6 @@
     - Connected the north and northwest sections of the Safari Zone
     - Now get 99 Safari Balls (which have a 5x catch rate) and 9999 steps
 - Underwater areas now connect better
-- Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)
 - Frontier Brains have updated teams
 - Battle Pyramid wild Pokémon have been updated
 - Battle Frontier no longer requires saving
@@ -2003,6 +2002,9 @@
     - SpA: 85->100
     - Learns Incinerate and Flame Burst by level up
 
+- Spoink/Grumpig (postgame):
+    - Learn Dazzling Gleam by level up
+
 - Trapinch:
     - Learns Mud Shot by level up
     - Learns Dragon Breath by Egg Move
@@ -2092,6 +2094,9 @@
 
 - Spheal/Sealeo/Walrein (postgame):
     - Learn Bubble Beam and Ice Beam by level up
+
+- Bagon/Shelgon/Salamence (postgame):
+    - Learn Dragon Pulse by level up
 
 - Beldum:
     - Learns Metal Claw by level up

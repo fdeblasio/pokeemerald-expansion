@@ -84,6 +84,55 @@
           }
         },
         {
+          "map": "MAP_RUSTBORO_CITY",
+          "base_label": "gRustboroCity",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "range": "ROUTE_116",
+                "species": "GROWLITHE"
+              },
+              {
+                "range": "ROUTE_116",
+                "species": "GROWLITHE_HISUI"
+              },
+              {
+                "range": "ROUTE_116",
+                "species": "YAMPER"
+              },
+              {
+                "range": "ROUTE_116",
+                "species": "SWIRLIX"
+              },
+              {
+                "range": "ROUTE_116",
+                "species": "YAMPER"
+              },
+              {
+                "range": "ROUTE_116",
+                "species": "SWIRLIX"
+              },
+              {
+                "range": "ROUTE_116",
+                "species": "GROWLITHE"
+              },
+              {
+                "range": "ROUTE_116",
+                "species": "GROWLITHE_HISUI"
+              },
+              {
+                "range": "ROUTE_116",
+                "species": "YAMPER"
+              },
+              {
+                "range": "ROUTE_116",
+                "species": "SWIRLIX"
+              }
+            ]
+          }
+        },
+        {
           "map": "MAP_DEWFORD_TOWN",
           "base_label": "gDewfordTown",
           "water_mons": {
@@ -5958,7 +6007,7 @@
                 "species": "TANGELA"
               },
               {
-                "species": "SWIRLIX"
+                "species": "SPRITZEE"
               },
               {
                 "species": "VOLTORB_HISUI"
@@ -6135,7 +6184,7 @@
             "range": "POSTGAME",
             "mons": [
               {
-                "species": "GROWLITHE"
+                "species": "BAGON"
               },
               {
                 "species": "LICKITUNG"
@@ -6144,13 +6193,13 @@
                 "species": "DREEPY"
               },
               {
-                "species": "GROWLITHE_HISUI"
+                "species": "SPOINK"
               },
               {
                 "species": "DREEPY"
               },
               {
-                "species": "GROWLITHE_HISUI"
+                "species": "SPOINK"
               },
               {
                 "species": "SPRIGATITO"

@@ -3130,7 +3130,7 @@
 - Skiddo:
     - Received Grass Pelt as a second Ability and Grassy Surge as a Hidden Ability (previously Grass Pelt)
     - Learns Grassy Terrain by level up
-    - Learns Rock Climb by breeding
+    - Learns Rock Climb by Egg Move
 
 - Gogoat:
     - HP: 123->125
@@ -3140,7 +3140,7 @@
     - Spe: 68->70
     - Received Grass Pelt as a second Ability and Grassy Surge as a Hidden Ability (previously Grass Pelt)
     - Learns Trailblaze, Grassy Terrain, Grassy Glide by level up
-    - Learns Rock Climb by breeding
+    - Learns Rock Climb by Egg Move
 
 - Pancham:
     - Learns Drain Punch by level up
@@ -3570,6 +3570,20 @@
     - Spe: 74->75
     - Learns Aqua Jet, Rock Throw, Ice Fang, Waterfall, Rock Slide, Aqua Tail, and Shell Smash by level up
 
+- Yamper:
+    - HP: 69->70
+    - Atk: 45->50
+    - SpA: 40->50
+    - Spe: 26->40
+    - Learns Thunder Shock, Thunder Fang, Shock Wave, Discharge, and Thunderbolt by level up
+    - Learns Ice Fang by Egg Move
+
+- Boltund:
+    - HP: 59->60
+    - Spe: 121->125
+    - Learns Thunder Shock, Thunder Fang, Shock Wave, Discharge, Thunderbolt, and Supercell Slam by level up
+    - Learns Ice Fang by Egg Move
+
 - Rolycoly:
     - Learns Rock Throw, Rock Tomb, Rock Slide, and Power Gem by level up
 
@@ -3857,6 +3871,12 @@
 
 - Glimmet/Glimmora:
     - Learn Acid and Sludge Bomb by level up
+
+- Greavard:
+    - Learns Shadow Sneak, Hex, Will-O-Wisp, and Shadow Ball by level up
+
+- Houndstone:
+    - Learns Shadow Claw, Rock Tomb, Shadow Sneak, Hex, Will-O-Wisp, and Shadow Ball by level up
 
 - Flamigo:
     - Learns Brick Break, Dual Wingbeat, Jump Kick, and High Jump Kick by level up

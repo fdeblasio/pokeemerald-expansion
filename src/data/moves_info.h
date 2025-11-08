@@ -121,6 +121,7 @@ static const u8 sGMaxOneBlowDescription[] = _(
 
 static const u8 sTorqueDescription[] = _("---");
 
+//Move defines
 #define HIGH_PRIORITY_40_POWER_INFO \
     .effect = EFFECT_HIT,           \
     .power = 40,                    \
@@ -153,6 +154,19 @@ static const u8 sTorqueDescription[] = _("---");
     .skyBattleBanned = TRUE,                                        \
     .contestEffect = CONTEST_EFFECT_EXCITE_AUDIENCE_IN_ANY_CONTEST, \
     .contestCategory = CONTEST_CATEGORY_BEAUTY
+
+#define THIRD_TYPE_INFO(Type)                       \
+    .effect = EFFECT_THIRD_TYPE,                    \
+    .power = 0,                                     \
+    .type = Type,                                   \
+    .accuracy = 100,                                \
+    .pp = 20,                                       \
+    .target = MOVE_TARGET_SELECTED,                 \
+    .priority = 0,                                  \
+    .category = DAMAGE_CATEGORY_STATUS,             \
+    .argument = { .type = Type },                   \
+    .zMove = { .effect = Z_EFFECT_ALL_STATS_UP_1 }, \
+    .magicCoatAffected = TRUE
 
 #define GENIE_STORM_INFO                              \
     .effect = EFFECT_HIT,                             \
@@ -11408,8 +11422,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .effect = EFFECT_HIT,
         .power = 150,
         .type = TYPE_ROCK,
-        .accuracy = 100,
-        .pp = 10,
+        .accuracy = 95,
+        .pp = 5,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
@@ -14496,17 +14510,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Goes trick-or-treating,\n"
             "adding Ghost type to foe."),
-        .effect = EFFECT_THIRD_TYPE,
-        .power = 0,
-        .type = TYPE_GHOST,
-        .accuracy = 100,
-        .pp = 20,
-        .target = MOVE_TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .argument = { .type = TYPE_GHOST },
-        .zMove = { .effect = Z_EFFECT_ALL_STATS_UP_1 },
-        .magicCoatAffected = TRUE,
+        THIRD_TYPE_INFO(TYPE_GHOST),
         .contestEffect = CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL,
         .contestCategory = CONTEST_CATEGORY_CUTE,
         .contestComboStarterId = 0,
@@ -14592,17 +14596,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Puts a curse on the foe,\n"
             "adding the Grass type."),
-        .effect = EFFECT_THIRD_TYPE,
-        .power = 0,
-        .type = TYPE_GRASS,
-        .accuracy = 100,
-        .pp = 20,
-        .target = MOVE_TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .argument = { .type = TYPE_GRASS },
-        .zMove = { .effect = Z_EFFECT_ALL_STATS_UP_1 },
-        .magicCoatAffected = TRUE,
+        THIRD_TYPE_INFO(TYPE_GRASS),
         .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_MONS_WITH_GOOD_APPEALS,
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,

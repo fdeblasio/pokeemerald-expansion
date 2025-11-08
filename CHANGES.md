@@ -542,9 +542,6 @@
         - Accuracy: 90->100
     - Rock Tomb:
         - Accuracy: 95->100
-    - Rock Wrecker:
-        - Accuracy: 90->100
-        - PP: 5->10
     - Stone Axe:
         - Power: 65->70
         - Accuracy: 90->100

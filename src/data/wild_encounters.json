@@ -1091,7 +1091,7 @@
                 "species": "TOXEL"
               },
               {
-                "species": "GULPIN"
+                "species": "ELECTRIKE"
               },
               {
                 "species": "TADBULB"
@@ -1112,7 +1112,7 @@
                 "species": "BELLSPROUT"
               },
               {
-                "species": "BELLSPROUT"
+                "species": "ELECTRIKE"
               }
             ]
           },
@@ -1283,16 +1283,16 @@
                 "species": "CHARCADET"
               },
               {
-                "species": "NUMEL"
+                "species": "HOUNDOUR"
               },
               {
-                "species": "MACHOP"
+                "species": "HOUNDOUR"
               },
               {
-                "species": "PONYTA"
+                "species": "HOUNDOUR"
               },
               {
-                "species": "CHARCADET"
+                "species": "HOUNDOUR"
               }
             ]
           }
@@ -3863,28 +3863,28 @@
                 "species": "LITWICK"
               },
               {
+                "species": "MISDREAVUS"
+              },
+              {
+                "species": "GREAVARD"
+              },
+              {
+                "species": "MISDREAVUS"
+              },
+              {
+                "species": "GREAVARD"
+              },
+              {
                 "species": "GASTLY"
               },
               {
                 "species": "LITWICK"
               },
               {
-                "species": "GASTLY"
-              },
-              {
-                "species": "LITWICK"
-              },
-              {
                 "species": "MISDREAVUS"
               },
               {
-                "species": "MISDREAVUS"
-              },
-              {
-                "species": "MISDREAVUS"
-              },
-              {
-                "species": "MISDREAVUS"
+                "species": "GREAVARD"
               }
             ]
           }
@@ -3903,28 +3903,28 @@
                 "species": "LITWICK"
               },
               {
+                "species": "MISDREAVUS"
+              },
+              {
+                "species": "GREAVARD"
+              },
+              {
+                "species": "MISDREAVUS"
+              },
+              {
+                "species": "GREAVARD"
+              },
+              {
                 "species": "GASTLY"
               },
               {
                 "species": "LITWICK"
               },
               {
-                "species": "GASTLY"
-              },
-              {
-                "species": "LITWICK"
-              },
-              {
                 "species": "MISDREAVUS"
               },
               {
-                "species": "MISDREAVUS"
-              },
-              {
-                "species": "MISDREAVUS"
-              },
-              {
-                "species": "MISDREAVUS"
+                "species": "GREAVARD"
               }
             ]
           }
@@ -3943,28 +3943,28 @@
                 "species": "LITWICK"
               },
               {
+                "species": "MISDREAVUS"
+              },
+              {
+                "species": "GREAVARD"
+              },
+              {
+                "species": "MISDREAVUS"
+              },
+              {
+                "species": "GREAVARD"
+              },
+              {
                 "species": "GASTLY"
               },
               {
                 "species": "LITWICK"
               },
               {
-                "species": "GASTLY"
-              },
-              {
-                "species": "LITWICK"
-              },
-              {
                 "species": "MISDREAVUS"
               },
               {
-                "species": "MISDREAVUS"
-              },
-              {
-                "species": "MISDREAVUS"
-              },
-              {
-                "species": "MISDREAVUS"
+                "species": "GREAVARD"
               }
             ]
           }
@@ -3983,28 +3983,28 @@
                 "species": "LITWICK"
               },
               {
+                "species": "MISDREAVUS"
+              },
+              {
+                "species": "GREAVARD"
+              },
+              {
+                "species": "MISDREAVUS"
+              },
+              {
+                "species": "GREAVARD"
+              },
+              {
                 "species": "GASTLY"
               },
               {
                 "species": "LITWICK"
               },
               {
-                "species": "GASTLY"
-              },
-              {
-                "species": "LITWICK"
-              },
-              {
                 "species": "MISDREAVUS"
               },
               {
-                "species": "MISDREAVUS"
-              },
-              {
-                "species": "MISDREAVUS"
-              },
-              {
-                "species": "MISDREAVUS"
+                "species": "GREAVARD"
               }
             ]
           }
@@ -4023,28 +4023,28 @@
                 "species": "LITWICK"
               },
               {
+                "species": "MISDREAVUS"
+              },
+              {
+                "species": "GREAVARD"
+              },
+              {
+                "species": "MISDREAVUS"
+              },
+              {
+                "species": "GREAVARD"
+              },
+              {
                 "species": "GASTLY"
               },
               {
                 "species": "LITWICK"
               },
               {
-                "species": "GASTLY"
-              },
-              {
-                "species": "LITWICK"
-              },
-              {
                 "species": "MISDREAVUS"
               },
               {
-                "species": "MISDREAVUS"
-              },
-              {
-                "species": "MISDREAVUS"
-              },
-              {
-                "species": "MISDREAVUS"
+                "species": "GREAVARD"
               }
             ]
           }
@@ -4063,28 +4063,28 @@
                 "species": "LITWICK"
               },
               {
+                "species": "MISDREAVUS"
+              },
+              {
+                "species": "GREAVARD"
+              },
+              {
+                "species": "MISDREAVUS"
+              },
+              {
+                "species": "GREAVARD"
+              },
+              {
                 "species": "GASTLY"
               },
               {
                 "species": "LITWICK"
               },
               {
-                "species": "GASTLY"
-              },
-              {
-                "species": "LITWICK"
-              },
-              {
                 "species": "MISDREAVUS"
               },
               {
-                "species": "MISDREAVUS"
-              },
-              {
-                "species": "MISDREAVUS"
-              },
-              {
-                "species": "MISDREAVUS"
+                "species": "GREAVARD"
               }
             ]
           }
@@ -5883,16 +5883,16 @@
                 "species": "BONSLY"
               },
               {
-                "species": "HOUNDOUR"
+                "species": "POOCHYENA"
               },
               {
-                "species": "HOUNDOUR"
+                "species": "POOCHYENA"
               },
               {
-                "species": "HOUNDOUR"
+                "species": "POOCHYENA"
               },
               {
-                "species": "HOUNDOUR"
+                "species": "POOCHYENA"
               }
             ]
           },
@@ -5958,7 +5958,7 @@
                 "species": "TANGELA"
               },
               {
-                "species": "ELECTRIKE"
+                "species": "SWIRLIX"
               },
               {
                 "species": "VOLTORB_HISUI"

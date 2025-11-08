@@ -34,7 +34,6 @@
 - Pokémon that evolve with an item at day or night now can evolve at any time
 - EVs now give one stat increase for every EV but cap out at 63 (individual)/127 (total). This will lead to the same stats as the old system but easier to train
 - Bird Keepers now use the overworld sprite of male Psychics since it looks more like them than the blond sprite
-- Houndour was added to the Hoenn Pokédex to give Team Magma more variety
 - Galarian Corsola and Cursola were added to the Hoenn Pokédex
 - Pokémon can now be listed as orange in the Pokédex
 - Safari Zone:
@@ -1853,6 +1852,17 @@
 
 - Blaziken (postgame):
     - Learns Flame Wheel, Low Sweep, Drain Punch, Jump Kick, and High Jump Kick by level up
+
+- Poochyena (postgame):
+    - Speed: 35->40
+    - Hidden Ability: Rattled->Strong Jaw
+    - Learns Lash Out by level up
+
+- Mightyena (postgame):
+    - Atk: 90->100
+    - Speed: 70->80
+    - Hidden Ability: Moxie->Strong Jaw
+    - Learns Lash Out by level up
 
 - Lotad/Lombre/Ludicolo:
     - Learn Water Pulse by level up

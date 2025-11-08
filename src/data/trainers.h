@@ -17956,11 +17956,11 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
 },
 
 
-#define FRANK_INFO                                   \
-    .trainerName = _("Frank"),                       \
-    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,    \
-    .trainerPic = TRAINER_PIC_FRANK,                 \
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MALE, \
+#define FRANK_INFO                                         \
+    .trainerName = _("Frank"),                             \
+    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,          \
+    .trainerPic = TRAINER_PIC_FRANK,                       \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE, \
     .partySize = 6
 
 #define FRANK_MON(Level, Species) \
@@ -18049,7 +18049,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
         .nickname = COMPOUND_STRING("Cinge"),
         }
     },
-}
+},
 
 [DIFFICULTY_NORMAL][TRAINER_UNUSED_2] =
 {

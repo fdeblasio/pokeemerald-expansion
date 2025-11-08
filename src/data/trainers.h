@@ -1071,7 +1071,16 @@ BRAWLY_REMATCH(5),
 #define WATTSON_DEDENNE
 #define WATTSON_ORICORIO
 #define WATTSON_TOGEDEMARU
-#define WATTSON_BOLTUND
+
+#define WATTSON_BOLTUND(rematch, tier)                                            \
+    {                                                                             \
+    REMATCH_MON(BOLTUND, tier, rematch),                                          \
+    .ability = ABILITY_STRONG_JAW,                                                \
+    .nature = NATURE_JOLLY,                                                       \
+    EV_SPREAD_ATK_SPE_HP,                                                         \
+    .moves = {MOVE_THUNDER_FANG, MOVE_ICE_FANG, MOVE_PSYCHIC_FANGS, MOVE_CRUNCH}, \
+    .gender = TRAINER_MON_MALE,                                                   \
+    }
 
 #define WATTSON_TOXTRICITY(rematch, tier)                                    \
     {                                                                        \
@@ -1080,7 +1089,7 @@ BRAWLY_REMATCH(5),
     .nature = NATURE_MODEST,                                                 \
     EV_SPREAD_SPA_SPE_HP,                                                    \
     .moves = {MOVE_OVERDRIVE, MOVE_SLUDGE_BOMB, MOVE_BOOMBURST, MOVE_SNARL}, \
-    .gender = TRAINER_MON_NONE,                                              \
+    .gender = TRAINER_MON_MALE,                                              \
     }
 
 #define WATTSON_PINCURCHIN
@@ -2761,7 +2770,16 @@ JUAN_REMATCH(5),
     }
 
 #define PHOEBE_POLTEAGEIST
-#define PHOEBE_HOUNDSTONE
+
+#define PHOEBE_HOUNDSTONE(Level, Tier)                                                \
+    {                                                                                 \
+    ELITE_FOUR_MON(Level, HOUNDSTONE, Tier, PHOEBE),                                  \
+    .ability = ABILITY_FLUFFY,                                                        \
+    .nature = NATURE_ADAMANT,                                                         \
+    EV_SPREAD_ATK_DEF_SPE,                                                            \
+    .moves = {MOVE_LAST_RESPECTS, MOVE_BODY_PRESS, MOVE_PLAY_ROUGH, MOVE_ROCK_TOMB},  \
+    .gender = TRAINER_MON_FEMALE,                                                     \
+    }
 
 [DIFFICULTY_NORMAL][TRAINER_PHOEBE] =
 {

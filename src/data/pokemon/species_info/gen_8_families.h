@@ -2020,11 +2020,11 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_YAMPER
     [SPECIES_YAMPER] =
     {
-        .baseHP        = 59,
-        .baseAttack    = 45,
+        .baseHP        = 60,
+        .baseAttack    = 50,
         .baseDefense   = 50,
-        .baseSpeed     = 26,
-        .baseSpAttack  = 40,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 50,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_ELECTRIC),
         .catchRate = 255,
@@ -2085,10 +2085,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 
     [SPECIES_BOLTUND] =
     {
-        .baseHP        = 69,
+        .baseHP        = 70,
         .baseAttack    = 90,
         .baseDefense   = 60,
-        .baseSpeed     = 121,
+        .baseSpeed     = 125,
         .baseSpAttack  = 90,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_ELECTRIC),

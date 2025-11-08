@@ -133,11 +133,11 @@ Route121_SafariZoneEntrance_Text_ComeInAndEnjoy:
 
 Route121_SafariZoneEntrance_Text_FirstTimeInfo:
 	.string "When you enter the Safari Zone, you\n"
-	.string "start with 50 Safari Balls for\l"
+	.string "start with 99 Safari Balls for\l"
 	.string "catching Pokémon.\p"
 	.string "The Safari Game is over when you run\n"
 	.string "out of Safari Balls, or when you've\l"
-	.string "walked 1,000 steps.\p"
+	.string "walked 9,999 steps.\p"
 	.string "Come in and enjoy the Safari Zone!$"
 
 Route121_SafariZoneEntrance_Text_WouldYouLikeToPlay:
@@ -153,7 +153,7 @@ Route121_SafariZoneEntrance_Text_HereAreYourSafariBalls:
 	.string "Here are your Safari Balls.$"
 
 Route121_SafariZoneEntrance_Text_Received30SafariBalls:
-	.string "{PLAYER} received 50 Safari Balls.$"
+	.string "{PLAYER} received 99 Safari Balls.$"
 
 Route121_SafariZoneEntrance_Text_PleaseEnjoyYourself:
 	.string "We'll let you know when your game\n"

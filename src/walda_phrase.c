@@ -272,16 +272,3 @@ static void SetWallpaperDataFromLetter(u8 *data, u8 *letterTableIds, u32 setOffs
             ClearWallpaperDataBit(data, setOffset + i);
     }
 }
-
-static u32 GetWallpaperDataBits(u8 *data, u32 offset, u32 numBits)
-{
-    u32 bits, i;
-
-    for (bits = 0, i = 0; i < numBits; i++)
-    {
-        bits <<= 1;
-        bits |= GetWallpaperDataBit(data, offset + i);
-    }
-
-    return bits;
-}

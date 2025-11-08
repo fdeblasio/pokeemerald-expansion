@@ -51,7 +51,11 @@
 - Houndour was added to the Hoenn Pokédex to give Team Magma more variety
 - Galarian Corsola and Cursola were added to the Hoenn Pokédex
 - Pokémon can now be listed as orange in the Pokédex
-- The Safari Zone is now in the postgame only. Its regular Pokémon have been moved to other locations
+- Safari Zone:
+    - The Safari Zone is now in the postgame only. Its regular Pokémon have been moved to other locations
+    - Pokémon in the Safari Zone can't flee
+    - Connected the north and northwest sections of the Safari Zone
+    - Now get 99 Safari Balls (which have a 5x catch rate) and 9999 steps
 - Underwater areas now connect better
 - Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)
 - Frontier Brains have updated teams
@@ -102,8 +106,6 @@
 - Can now use Soot Sack to see how much ash you have
 - Ash collects in non-grass tiles as well now
 - Much easier to make good Pokéblocks
-- Pokémon in the Safari Zone can't flee
-- Connected the north and northwest sections of the Safari Zone
 - Both Shoal Cave items are now available in low tide, which is available more often
 - Mirage Island now always appears
     - Pokémon from Mirage Island will have their Hidden Ability. In addition, their met location will be Mirage Island instead of Route 130

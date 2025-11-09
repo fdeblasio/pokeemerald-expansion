@@ -102,6 +102,7 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_FERALIGITE      @ 0160 Battle Frontier
 	.2byte ITEM_AMPHAROSITE     @ 0181 Battle Frontier
 	.2byte ITEM_TYRANITARITE    @ 0248
+	.2byte ITEM_NONE            @ 0358 Chimecho (move to regular shop when implemented)
 	.2byte ITEM_LATIASITE       @ 0380 Battle Frontier
 	.2byte ITEM_LATIOSITE       @ 0381 Battle Frontier
 	.2byte ITEM_LOPUNNITE       @ 0428
@@ -128,14 +129,15 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_DIANCITE        @ 0719
 	.2byte ITEM_DRAMPANITE      @ 0780
 	.2byte ITEM_FALINKSITE      @ 0870
+	.2byte ITEM_NONE            @ 0998 Baxcalibur
 	pokemartlistend
 
 @ Rumored:
-@  Chimecho, Absol Z
+@  Absol Z
 @  Staraptor, Garchomp Z, Lucario Z, Heatran, Darkrai
 @  Golurk, Meowstic
 @  Crabominable, Golisopod, Magearna, Zeraora
-@  Scovillain, Glimmora, Tatsugiri, Baxcalibur
+@  Scovillain, Glimmora, Tatsugiri
 
 LilycoveCity_DepartmentStore_4F_EventScript_ClerkRight::
 	lock

@@ -86,6 +86,14 @@ upcoming
     - Edit contests?/Contests overhaul
         - Update Pledge moves to combo with each other like the elemental fangs
         - Pokemon in contests should be set to seen in Pokedex
+        - Moves with category in description are that category (like doing something cutely being Cute)
+        - Add RS opponents https://bulbapedia.bulbagarden.net/wiki/List_of_Contest_opponents_(Generation_III)
+        - Add ORAS opponents https://bulbapedia.bulbagarden.net/wiki/List_of_Contest_opponents_(Generation_VI)
+        - Revert some Gen 6 effects
+            - Rage or Metronome going back to repeating
+            - The new repeating ones don't make sense
+        - Implement Mega evolution
+        - Improve white-on-white text
 - Mt. Pyre:
 - Mossdeep:
 - Sootopolis:

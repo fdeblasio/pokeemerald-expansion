@@ -2296,13 +2296,6 @@
 - Boldore/Gigalith:
     - Learn Rock Throw by level up
 
-- Drilbur (postgame):
-    - Learns Mud Shot, Bulldoze, and Stomping Tantrum by level up
-
-- Excadrill (postgame):
-    - Learns Mud Shot, Bulldoze, and Stomping Tantrum by level up
-    - Learns Smart Strike upon evolving
-
 - Audino:
     - HP: 103->105
     - Def: 86->90

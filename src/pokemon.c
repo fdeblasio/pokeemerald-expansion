@@ -380,6 +380,8 @@ static const enum NationalDexOrder sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
     HOENN_TO_NATIONAL(TANGROWTH),
     HOENN_TO_NATIONAL(SHELLDER),
     HOENN_TO_NATIONAL(CLOYSTER),
+    HOENN_TO_NATIONAL(GROWLITHE),
+    HOENN_TO_NATIONAL(ARCANINE),
     HOENN_TO_NATIONAL(KRABBY),
     HOENN_TO_NATIONAL(KINGLER),
     HOENN_TO_NATIONAL(SLOWPOKE),
@@ -448,11 +450,14 @@ static const enum NationalDexOrder sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
     HOENN_TO_NATIONAL(VANILLITE),
     HOENN_TO_NATIONAL(VANILLISH),
     HOENN_TO_NATIONAL(VANILLUXE),
+    HOENN_TO_NATIONAL(HEATMOR),
     HOENN_TO_NATIONAL(FRILLISH),
     HOENN_TO_NATIONAL(JELLICENT),
     HOENN_TO_NATIONAL(DUCKLETT),
     HOENN_TO_NATIONAL(SWANNA),
     HOENN_TO_NATIONAL(ALOMOMOLA),
+    HOENN_TO_NATIONAL(HELIOPTILE),
+    HOENN_TO_NATIONAL(HELIOLISK),
     HOENN_TO_NATIONAL(CLAUNCHER),
     HOENN_TO_NATIONAL(CLAWITZER),
     HOENN_TO_NATIONAL(SKRELP),
@@ -462,6 +467,9 @@ static const enum NationalDexOrder sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
     HOENN_TO_NATIONAL(ARAQUANID),
     HOENN_TO_NATIONAL(ARROKUDA),
     HOENN_TO_NATIONAL(BARRASKEWDA),
+    HOENN_TO_NATIONAL(ROLYCOLY),
+    HOENN_TO_NATIONAL(CARKOL),
+    HOENN_TO_NATIONAL(COALOSSAL),
     HOENN_TO_NATIONAL(DONDOZO),
     HOENN_TO_NATIONAL(VELUZA),
     HOENN_TO_NATIONAL(DITTO),
@@ -2959,7 +2967,7 @@ u32 GetBoxMonData2(struct BoxPokemon *boxMon, s32 field)
 #define SET16(lhs) (lhs) = data[0] + (data[1] << 8)
 #define SET32(lhs) (lhs) = data[0] + (data[1] << 8) + (data[2] << 16) + (data[3] << 24)
 //
-// Prefer SET_BY_WIDTH for fields whose types might be extended (e.g. 
+// Prefer SET_BY_WIDTH for fields whose types might be extended (e.g.
 // anything whose typedef is in gametypes.h).
 //
 #define SET_BY_WIDTH(lhs) \

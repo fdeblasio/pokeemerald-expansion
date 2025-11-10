@@ -2436,12 +2436,15 @@
 
 - Turtwig:
     - Evolution: 18->16
+    - Learns Leafage and Seed Bomb by level up
 
 - Grotle:
     - Evolution: 32->36
+    - Learns Leafage and Seed Bomb by level up
 
 - Torterra:
     - Learns Shell Smash upon evolving
+    - Learns Leafage and Seed Bomb by level up
 
 - Chimchar:
     - Evolution: 14->16
@@ -3378,19 +3381,29 @@
 
 - Litten:
     - Evolution: 17->16
+    - Learns Temper Flare by level up
 
 - Torracat:
     - Evolution: 34->36
+    - Learns Temper Flare by level up
 
 - Incineroar:
     - Spe: 60->65
-    - Learns Incinerate and Blaze Kick by level up
+    - Learns Fire Punch upon evolving
+    - Learns Incinerate, Temper Flare, and Blaze Kick by level up
 
 - Popplio:
     - Evolution: 17->16
+    - Gender ratio: 87.5/12.5->12.5/87.5
+    - Learns Surf by level up
 
 - Brionne:
     - Evolution: 34->36
+    - Gender ratio: 87.5/12.5->12.5/87.5
+    - Learns Surf by level up
+
+- Primarina:
+    - Learns Surf and Dazzling Gleam by level up
 
 - Yungoos:
     - HP: 48->50
@@ -3424,8 +3437,12 @@
     - Spe: 42->45
     - Learns Waterfall by level up
 
-- Salandit/Salazzle:
-    - Learn Dragon Breath by Egg Move
+- Salandit:
+    - Gender ratio: 87.5/12.5->50/50
+    - Learns Dragon Breath by Egg Move
+
+- Salazzle:
+    - Learns Dragon Breath by Egg Move
 
 - Bounsweet:
     - Atk: 30->40

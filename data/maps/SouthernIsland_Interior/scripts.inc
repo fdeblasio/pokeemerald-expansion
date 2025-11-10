@@ -171,4 +171,6 @@ SouthernIsland_Interior_Movement_LatiApproach:
 	walk_down
 	walk_down
 	walk_down
+	walk_down
+	walk_down
 	step_end

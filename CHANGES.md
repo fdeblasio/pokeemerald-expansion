@@ -19,7 +19,6 @@
 - Some areas made easier to navigate
     - Route 102/103: Path from Littleroot to rival is more direct
 - Some reversions back to Ruby and Sapphire
-    - Birch is chased by a Poochyena
     - Some trainers on Routes 104 and 117 go back to their original locations
 - Gym Leaders use more Hoenn Pokémon
 - Gym Leaders and Magma/Aqua Admins/Leaders no longer have underleveled evolutions
@@ -1841,6 +1840,30 @@
 - Lugia (postgame):
     - Learns Wing Attack, Dual Wingbeat, Brave Bird, Psychic, and Psychic Fangs by level up
 
+- Treecko (postgame):
+    - Atk: 45->65
+    - SpA: 65->45
+    - Learns Seed Bomb by level up
+
+- Grovyle (postgame):
+    - Atk: 65->85
+    - SpA: 85->65
+    - Hidden Ability: Unburden->Sharpness
+    - Learns Razor Leaf upon evolving
+    - Learns Seed Bomb by level up
+
+- Sceptile (postgame):
+    - Atk: 85->105
+    - SpA: 105->85
+    - Hidden Ability: Unburden->Sharpness
+    - Learns Dual Chop upon evolving
+    - Learns Razor Leaf, Seed Bomb, and Dragon Claw by level up
+
+- Mega Sceptile (postgame):
+    - Atk: 110->145
+    - SpA: 145->110
+    - Ability: Lightning Rod->Sharpness
+
 - Torchic (postgame):
     - Atk: 60->70
     - SpA: 70->60
@@ -1851,6 +1874,22 @@
 
 - Blaziken (postgame):
     - Learns Flame Wheel, Low Sweep, Drain Punch, Jump Kick, and High Jump Kick by level up
+
+- Mudkip (postgame):
+    - Hidden Ability: Damp->Swift Swim
+    - Learns Waterfall and Liquidation by level up
+
+- Marshtomp (postgame):
+    - Hidden Ability: Damp->Swift Swim
+    - Learns Aqua Jet upon evolving
+    - Learns Waterfall and Liquidation by level up
+    - Learns Surf and Earthquake later to avoid breaking the game
+
+- Swampert (postgame):
+    - Hidden Ability: Damp->Swift Swim
+    - Learns Aqua Tail upon evolving
+    - Learns Aqua Jet, Waterfall, and Liquidation by level up
+    - Learns Surf and Earthquake later to avoid breaking the game
 
 - Poochyena (postgame):
     - Speed: 35->40

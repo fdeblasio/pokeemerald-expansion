@@ -1364,6 +1364,7 @@
     - Lucky Punch works on Blissey now
 
 - Tangela (postgame):
+    - Catch rate: 45->90
     - Learns Energy Ball by level up
 
 - Tangrowth (postgame):

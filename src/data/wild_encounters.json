@@ -6304,7 +6304,7 @@
             "mons": [
               {
                 "range": "POSTGAME",
-                "species": "MAGBY"
+                "species": "HELIOPTILE"
               },
               {
                 "range": "POSTGAME",
@@ -6729,43 +6729,43 @@
             "mons": [
               {
                 "range": "POSTGAME",
-                "species": "NONE"
+                "species": "MAGBY"
               },
               {
                 "range": "POSTGAME",
-                "species": "NONE"
+                "species": "HEATMOR"
               },
               {
                 "range": "POSTGAME",
-                "species": "NONE"
+                "species": "GROWLITHE"
               },
               {
                 "range": "POSTGAME",
-                "species": "NONE"
+                "species": "GROWLITHE_HISUI"
               },
               {
                 "range": "POSTGAME",
-                "species": "NONE"
+                "species": "GROWLITHE"
               },
               {
                 "range": "POSTGAME",
-                "species": "NONE"
+                "species": "GROWLITHE_HISUI"
               },
               {
                 "range": "POSTGAME",
-                "species": "NONE"
+                "species": "ROLYCOLY"
               },
               {
                 "range": "POSTGAME",
-                "species": "NONE"
+                "species": "ROLYCOLY"
               },
               {
                 "range": "POSTGAME",
-                "species": "NONE"
+                "species": "ROLYCOLY"
               },
               {
                 "range": "POSTGAME",
-                "species": "NONE"
+                "species": "ROLYCOLY"
               }
             ]
           }

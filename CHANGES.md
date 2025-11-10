@@ -1137,13 +1137,13 @@
 - Crobat:
     - Learns Gust and Poison Jab by level up
 
-- Growlithe/Arcanine (not in main game):
+- Growlithe/Arcanine (postgame):
     - Learn Temper Flare by level up
 
-- Hisuian Growlithe (not in main game):
+- Hisuian Growlithe (postgame):
     - Learns Rock Throw and Temper Flare by level up
 
-- Hisuian Arcanine (not in main game):
+- Hisuian Arcanine (postgame):
     - Learns Temper Flare and Head Smash by level up
 
 - Poliwag (postgame):
@@ -2996,7 +2996,7 @@
 - Vullaby:
     - Evolution: 54->35
 
-- Heatmor:
+- Heatmor (postgame):
     - Atk: 97->105
     - Def: 66->70
     - SpD: 66->70
@@ -3234,7 +3234,7 @@
 - Clauncher/Clawitzer (postgame):
     - Learn Scald and Surf by level up
 
-- Helioptile:
+- Helioptile (postgame):
     - HP: 44->45
     - Atk: 38->40
     - Def: 33->35
@@ -3243,7 +3243,7 @@
     - Learns Shock Wave and Swift by level up
     - Learns Dragon Breath by Egg Move
 
-- Heliolisk:
+- Heliolisk (postgame):
     - HP: 62->65
     - Def: 52->55
     - SpA: 109->110
@@ -3584,10 +3584,10 @@
     - Learns Thunder Shock, Thunder Fang, Shock Wave, Discharge, Thunderbolt, and Supercell Slam by level up
     - Learns Ice Fang by Egg Move
 
-- Rolycoly:
+- Rolycoly (postgame):
     - Learns Rock Throw, Rock Tomb, Rock Slide, and Power Gem by level up
 
-- Carkol/Coalossal:
+- Carkol/Coalossal (postgame):
     - Learn Rock Throw, Rock Tomb, Flame Wheel, Rock Slide, Power Gem, Temper Flare, Flame Burst, Lava Plume, and Flamethrower by level up
 
 - Applin/Appletun:

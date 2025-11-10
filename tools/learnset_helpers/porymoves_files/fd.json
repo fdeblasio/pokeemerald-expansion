@@ -8432,14 +8432,32 @@
     "TutorMoves": []
   },
   "TURTWIG": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 6,
+        "Move": "MOVE_LEAFAGE"
+      },
+      {
+        "Level": 29,
+        "Move": "MOVE_SEED_BOMB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "GROTLE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_LEAFAGE"
+      },
+      {
+        "Level": 32,
+        "Move": "MOVE_SEED_BOMB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -8450,6 +8468,14 @@
       {
         "Level": 0,
         "Move": "MOVE_SHELL_SMASH"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_LEAFAGE"
+      },
+      {
+        "Level": 32,
+        "Move": "MOVE_SEED_BOMB"
       }
     ],
     "PreEvoMoves": [],
@@ -13559,6 +13585,10 @@
       {
         "Level": 6,
         "Move": "MOVE_EMBER"
+      },
+      {
+        "Level": 27,
+        "Move": "MOVE_TEMPER_FLARE"
       }
     ],
     "PreEvoMoves": [],
@@ -13567,7 +13597,12 @@
     "TutorMoves": []
   },
   "TORRACAT": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 35,
+        "Move": "MOVE_TEMPER_FLARE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -13576,8 +13611,16 @@
   "INCINEROAR": {
     "LevelMoves": [
       {
+        "Level": 0,
+        "Move": "MOVE_FIRE_PUNCH"
+      },
+      {
         "Level": 1,
         "Move": "MOVE_INCINERATE"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_TEMPER_FLARE"
       },
       {
         "Level": 44,
@@ -13598,6 +13641,10 @@
       {
         "Level": 6,
         "Move": "MOVE_WATER_GUN"
+      },
+      {
+        "Level": 29,
+        "Move": "MOVE_SURF"
       }
     ],
     "PreEvoMoves": [],
@@ -13606,14 +13653,28 @@
     "TutorMoves": []
   },
   "BRIONNE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 33,
+        "Move": "MOVE_SURF"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "PRIMARINA": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_DAZZLING_GLEAM"
+      },
+      {
+        "Level": 33,
+        "Move": "MOVE_SURF"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

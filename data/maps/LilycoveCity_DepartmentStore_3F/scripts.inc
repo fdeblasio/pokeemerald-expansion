@@ -88,7 +88,7 @@ LilycoveCity_DepartmentStore_3F_EventScript_ClerkEvo::
 
 	.align 2
 LilycoveCity_DepartmentStore_3F_Pokemart_Evo:
-	.2byte ITEM_FIRE_STONE        @ Hoenn: Vulpix, Eevee, Pansear;                                                      National: Growlithe, Growlithe-H
+	.2byte ITEM_FIRE_STONE        @ Hoenn: Vulpix, Growlithe, Growlithe-H, Eevee, Pansear
 	.2byte ITEM_WATER_STONE       @ Hoenn: Eevee, Lombre, Panpour                                                       National: Poliwhirl, Shellder
 	.2byte ITEM_THUNDER_STONE     @ Hoenn: Pikachu, Magneton, Eevee, Nosepass, Tadbulb;                                 National: Eelektrik
 	.2byte ITEM_LEAF_STONE        @ Hoenn: Weepinbell, Eevee, Nuzleaf, Pansage;                                         National: Voltorb-H
@@ -106,6 +106,7 @@ LilycoveCity_DepartmentStore_3F_Pokemart_Evo:
 	.2byte ITEM_RAZOR_FANG        @ Hoenn: Gligar
 	.2byte ITEM_OVAL_STONE        @ Hoenn: Happiny
 	.2byte ITEM_PRISM_SCALE       @ Hoenn: Feebas
+	.2byte ITEM_WHIPPED_DREAM     @ Hoenn: Swirlix
 	.2byte ITEM_AUSPICIOUS_ARMOR  @ Hoenn: Charcadet
 	.2byte ITEM_MALICIOUS_ARMOR   @ Hoenn: Charcadet
 	.2byte ITEM_METAL_ALLOY       @ Hoenn: Duraludon
@@ -120,8 +121,7 @@ LilycoveCity_DepartmentStore_3F_Pokemart_EvoUnused:
 	.2byte ITEM_ELECTIRIZER		@ Battle Frontier  National: Electabuzz
 	.2byte ITEM_MAGMARIZER		@ Battle Frontier  National: Magmar
 	.2byte ITEM_DRAGON_SCALE    @ Battle Frontier  National: Seadra
-	.2byte ITEM_SACHET
-	.2byte ITEM_WHIPPED_DREAM
+	.2byte ITEM_SACHET          @ Battle Frontier  National: Spritzee
 	.2byte ITEM_GALARICA_CUFF   @ Battle Frontier  National: Slowpoke-G
 	.2byte ITEM_GALARICA_WREATH @ Battle Frontier  National: Slowpoke-G
 	.2byte ITEM_SWEET_APPLE

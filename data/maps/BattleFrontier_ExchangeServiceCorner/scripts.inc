@@ -285,6 +285,7 @@ BattleFrontier_Mart_EvolutionMega:
 	.2byte ITEM_MAGMARIZER       @ National: Magmar
 	.2byte ITEM_DRAGON_SCALE     @ National: Seadra
 	.2byte ITEM_RAZOR_CLAW       @ National: Snesasel, Sneasel-H
+	.2byte ITEM_SACHET           @ National: Spritzee
 	.2byte ITEM_PEAT_BLOCK       @ National: Ursaring
 	.2byte ITEM_GALARICA_CUFF    @ National: Slowpoke-G
 	.2byte ITEM_GALARICA_WREATH  @ National: Slowpoke-G

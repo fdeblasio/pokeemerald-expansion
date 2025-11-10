@@ -1317,6 +1317,7 @@
 - Lickitung (postgame):
     - Atk: 55->65
     - Spe: 30->50
+    - Catch rate: 45->90
     - Learns Pound and Body Slam by level up
     - Learns Sludge Bomb by TM
     - Ability: Oblivious->Thick Fat

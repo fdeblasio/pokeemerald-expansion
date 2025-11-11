@@ -47,7 +47,6 @@
 #define OBJ_EVENT_GFX_POKEMON_RANGER_F            OBJ_EVENT_GFX_PICNICKER
 #define OBJ_EVENT_GFX_MAN_3                       33
 #define OBJ_EVENT_GFX_ACE_TRAINER_M               OBJ_EVENT_GFX_MAN_3
-#define OBJ_EVENT_GFX_DRAGON_TAMER                OBJ_EVENT_GFX_MAN_3
 #define OBJ_EVENT_GFX_WOMAN_5                     34
 #define OBJ_EVENT_GFX_ACE_TRAINER_F               OBJ_EVENT_GFX_WOMAN_5
 #define OBJ_EVENT_GFX_PARASOL_LADY                OBJ_EVENT_GFX_WOMAN_2
@@ -55,6 +54,7 @@
 #define OBJ_EVENT_GFX_BUG_CATCHER                 36
 #define OBJ_EVENT_GFX_PSYCHIC_M                   37
 #define OBJ_EVENT_GFX_BIRD_KEEPER                 OBJ_EVENT_GFX_PSYCHIC_M
+#define OBJ_EVENT_GFX_DRAGON_TAMER                OBJ_EVENT_GFX_PSYCHIC_M
 #define OBJ_EVENT_GFX_SCHOOLKID_M                 38
 #define OBJ_EVENT_GFX_MANIAC                      39
 #define OBJ_EVENT_GFX_POKE_MANIAC                 OBJ_EVENT_GFX_MANIAC

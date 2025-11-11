@@ -379,10 +379,20 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     TRAINER_CLASS(PIKE_QUEEN, "Pike Queen"),
     TRAINER_CLASS(PYRAMID_KING, "Pyramid King"),
     TRAINER_CLASS(RS_PROTAG, "{PKMN} Trainer"),
-    TRAINER_CLASS(ROCKER, "Rocker", 6),
+    TRAINER_CLASS(ROCKER, "Rocker", 6, BALL_ULTRA),
     TRAINER_CLASS(COOL_COUPLE, "Cool Couple", 6, BALL_ULTRA),
     TRAINER_CLASS(BIKER, "Biker"),
-    TRAINER_CLASS(BURGLAR, "Burglar", 22, BALL_DUSK),
+    TRAINER_CLASS(CUE_BALL, "Cue Ball", 6, BALL_PREMIER),
+    TRAINER_CLASS(SUPER_NERD, "Super Nerd", 6),
+    TRAINER_CLASS(SCIENTIST, "Scientist", 12, BALL_REPEAT),
+    TRAINER_CLASS(ENGINEER, "Engineer", 22, BALL_ULTRA),
+    TRAINER_CLASS(BURGLAR, "Burglar", 12, BALL_DUSK),
+    TRAINER_CLASS(CRUSH_KIN, "Crush Kin", 6, BALL_ULTRA),
+    TRAINER_CLASS(JUGGLER, "Juggler", 10),
+    TRAINER_CLASS(GAMBLER, "Gambler", 18),
+    TRAINER_CLASS(TAMER, "Tamer", 10),
+    TRAINER_CLASS(CHANNELER, "Channeler", 8, BALL_DUSK),
+    TRAINER_CLASS(PAINTER, "Painter", 4),
 };
 
 static void (*const sTurnActionsFuncsTable[])(void) =

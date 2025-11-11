@@ -4031,9 +4031,49 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     TRAINER_CLASS_PIC(BIKER), \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE
 
+#define CUE_BALL_INFO            \
+    TRAINER_CLASS_PIC(CUE_BALL), \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE
+
+#define SUPER_NERD_INFO            \
+    TRAINER_CLASS_PIC(SUPER_NERD), \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
+
+#define SCIENTIST_INFO            \
+    TRAINER_CLASS_PIC(SCIENTIST), \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
+
+#define ENGINEER_INFO            \
+    TRAINER_CLASS_PIC(ENGINEER), \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE
+
 #define BURGLAR_INFO            \
     TRAINER_CLASS_PIC(BURGLAR), \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
+
+#define CRUSH_KIN_INFO            \
+    TRAINER_CLASS_PIC(CRUSH_KIN), \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE
+
+#define JUGGLER_INFO            \
+    TRAINER_CLASS_PIC(JUGGLER), \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER
+
+#define GAMBLER_INFO            \
+    TRAINER_CLASS_PIC(GAMBLER), \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE
+
+#define TAMER_INFO            \
+    TRAINER_CLASS_PIC(TAMER), \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER
+
+#define CHANNELER_INFO            \
+    TRAINER_CLASS_PIC(CHANNELER), \
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
+
+#define PAINTER_INFO            \
+    TRAINER_CLASS_PIC(PAINTER), \
+    .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE
 
 //Team Magma
 #define MAGMA_GRUNT_M_INFO                                  \

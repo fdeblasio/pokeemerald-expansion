@@ -863,6 +863,7 @@ const struct ContestPokemon gContestOpponents[] =
         .smart = 30,
         .tough = 10,
         .sheen = 100,
+        .personality = 0,
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_AGATHA] = {
@@ -1214,6 +1215,7 @@ const struct ContestPokemon gContestOpponents[] =
         .smart = 130,
         .tough = 70,
         .sheen = 220,
+        .personality = 0,
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_CLAIRE] = {
@@ -1349,6 +1351,7 @@ const struct ContestPokemon gContestOpponents[] =
         .smart = 200,
         .tough = 180,
         .sheen = 200,
+        .personality = 0,
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_MORGAN] = {

@@ -86,9 +86,11 @@ upcoming
     - Edit contests?/Contests overhaul
         - Update Pledge moves to combo with each other like the elemental fangs
         - Pokemon in contests should be set to seen in Pokedex
+        - Change some trainerGfxIds to match trainers (like Bird Keepers using the Psychic GFX)
+        - Utilize non-trainer GFX (like adding a Chef with a Snorlax or something)
         - Moves with category in description are that category (like doing something cutely being Cute)
-        - Add RS opponents https://bulbapedia.bulbagarden.net/wiki/List_of_Contest_opponents_(Generation_III)
         - Add ORAS opponents https://bulbapedia.bulbagarden.net/wiki/List_of_Contest_opponents_(Generation_VI)
+        - Add default winners as opponets?
         - Revert some Gen 6 effects
             - Rage or Metronome going back to repeating
             - The new repeating ones don't make sense
@@ -310,6 +312,7 @@ upcoming
 
 ### Battle Frontier
 - Battle Tent Pokémon/EVs?
+- Remove restricted Pokemon?
 - Make pausing challenge not a soft save (CHALLENGE_STATUS_SAVING)
 - Update rest of apprentice teams
 - Pokémon
@@ -337,6 +340,8 @@ upcoming
 
 ### Other
 - Decap easy chat species/moves/multi-word choices?
+- Easy Chat for non-base Hoenn mons (especially now that the National Dex is disabled)
+    - National Dex is disabled but Frontier/Trainer Hill mons are now registered. Potentially see if those can be added to easy chat anyways
 - Have Gabby and Ty's TV show use nicknames?
 - Make stripes of type palettes consistent
     - For example, Dark uses the rest of the E4's but Ice looks like it uses Wallace's
@@ -361,8 +366,6 @@ upcoming
         - Wally in Victory Road after he's beaten there (this one might just be a flag issue on the current save)
 - Edit contests?
 - Update Favor Lady's items to include new items
-- Easy Chat for non-base Hoenn mons (especially now that the National Dex is disabled)
-    - National Dex is disabled but Frontier/Trainer Hill mons are now registered. Potentially see if those can be added to easy chat anyways
 - Diversify water routes instead of just Tentacool/Wingull (definitely add more Carvanha, especially around Team Aqua-related areas; bring some fishing encounters to Surf)
 - Add postgame starters to Hoenn Pokédex?
     - They need Hoenn Pokédex completed to get, but could have them act similarly to Jirachi/Deoxys

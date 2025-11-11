@@ -243,7 +243,6 @@ const struct ContestWinner gDefaultContestWinners[] =
 const struct ContestPokemon gContestOpponents[] =
 {
     [CONTEST_OPPONENT_JIMMY] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_POOCHYENA,
         .nickname = _("Poochy"),
         .trainerName = _("Jimmy"),
@@ -271,7 +270,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_EDITH] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_ZIGZAGOON,
         .nickname = _("Zigoon"),
         .trainerName = _("Edith"),
@@ -299,7 +297,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_EDITH_2] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_ILLUMISE,
         .nickname = _("Musille"),
         .trainerName = _("Edith"),
@@ -327,7 +324,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_EVAN] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_DUSTOX,
         .nickname = _("Duster"),
         .trainerName = _("Evan"),
@@ -355,7 +351,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_KELSEY] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_SEEDOT,
         .nickname = _("Dots"),
         .trainerName = _("Kelsey"),
@@ -383,7 +378,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_MADISON] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_TAILLOW,
         .nickname = _("Tatay"),
         .trainerName = _("Madison"),
@@ -411,7 +405,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_RAYMOND] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_NINCADA,
         .nickname = _("Ninda"),
         .trainerName = _("Raymond"),
@@ -439,7 +432,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_GRANT] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_SHROOMISH,
         .nickname = _("Smish"),
         .trainerName = _("Grant"),
@@ -467,7 +459,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_PAIGE] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_WINGULL,
         .nickname = _("Gulwee"),
         .trainerName = _("Paige"),
@@ -495,7 +486,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_PAIGE_2] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_SPHEAL,
         .nickname = _("Sleal"),
         .trainerName = _("Paige"),
@@ -523,7 +513,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_ALEC] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_SLAKOTH,
         .nickname = _("Slokth"),
         .trainerName = _("Alec"),
@@ -551,7 +540,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_SYDNEY] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_WHISMUR,
         .nickname = _("Whiris"),
         .trainerName = _("Sydney"),
@@ -579,7 +567,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_MORRIS] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_MAKUHITA,
         .nickname = _("Mahita"),
         .trainerName = _("Morris"),
@@ -607,7 +594,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_MARIAH] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_ARON,
         .nickname = _("Ronar"),
         .trainerName = _("Mariah"),
@@ -635,7 +621,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_RUSSELL] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_ZUBAT,
         .nickname = _("Zutzu"),
         .trainerName = _("Russell"),
@@ -663,7 +648,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_RUSSELL_2] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_CROBAT,
         .nickname = _("Batro"),
         .trainerName = _("Russell"),
@@ -691,7 +675,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_MELANIE] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_GULPIN,
         .nickname = _("Gulin"),
         .trainerName = _("Melanie"),
@@ -719,7 +702,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_CHANCE] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_ELECTRIKE,
         .nickname = _("Rikelec"),
         .trainerName = _("Chance"),
@@ -747,7 +729,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_CHANCE_2] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_MANECTRIC,
         .nickname = _("Tricmane"),
         .trainerName = _("Chance"),
@@ -775,7 +756,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_AGATHA] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_BULBASAUR,
         .nickname = _("Bulby"),
         .trainerName = _("Agatha"),
@@ -803,7 +783,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_BEAU] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_BUTTERFREE,
         .nickname = _("Futterbe"),
         .trainerName = _("Beau"),
@@ -831,7 +810,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_KAY] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_PIDGEOTTO,
         .nickname = _("Pideot"),
         .trainerName = _("Kay"),
@@ -859,7 +837,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_CALE] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_DIGLETT,
         .nickname = _("Digle"),
         .trainerName = _("Cale"),
@@ -887,7 +864,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_CAITLIN] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_POLIWAG,
         .nickname = _("Wagil"),
         .trainerName = _("Caitlin"),
@@ -915,7 +891,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_COLBY] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_TOTODILE,
         .nickname = _("Totdil"),
         .trainerName = _("Colby"),
@@ -943,7 +918,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_KYLIE] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_LEDYBA,
         .nickname = _("Baledy"),
         .trainerName = _("Kylie"),
@@ -971,7 +945,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_LIAM] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_DELIBIRD,
         .nickname = _("Birdly"),
         .trainerName = _("Liam"),
@@ -999,7 +972,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_MILO] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_LARVITAR,
         .nickname = _("Tarvitar"),
         .trainerName = _("Milo"),
@@ -1027,7 +999,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_KARINA] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_ROSELIA,
         .nickname = _("Relia"),
         .trainerName = _("Karina"),
@@ -1055,7 +1026,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_BOBBY] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_DODUO,
         .nickname = _("Duodo"),
         .trainerName = _("Bobby"),
@@ -1083,7 +1053,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_BOBBY_2] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_DODRIO,
         .nickname = _("Diodo"),
         .trainerName = _("Bobby"),
@@ -1111,7 +1080,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_CLAIRE] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_TRAPINCH,
         .nickname = _("Pinchin"),
         .trainerName = _("Claire"),
@@ -1139,7 +1107,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_WILLIE] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_CACNEA,
         .nickname = _("Nacac"),
         .trainerName = _("Willie"),
@@ -1167,7 +1134,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_CASSIDY] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_SANDSHREW,
         .nickname = _("Shrand"),
         .trainerName = _("Cassidy"),
@@ -1195,7 +1161,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_CASSIDY_2] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_SANDSLASH,
         .nickname = _("Shrash"),
         .trainerName = _("Cassidy"),
@@ -1223,7 +1188,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_MORGAN] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_BALTOY,
         .nickname = _("Toybal"),
         .trainerName = _("Morgan"),
@@ -1251,7 +1215,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_SUMMER] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_NUMEL,
         .nickname = _("Lenum"),
         .trainerName = _("Summer"),
@@ -1279,7 +1242,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_SUMMER_2] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_MEDICHAM,
         .nickname = _("Chamcham"),
         .trainerName = _("Summer"),
@@ -1307,7 +1269,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_MILES] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_SPINDA,
         .nickname = _("Spinin"),
         .trainerName = _("Miles"),
@@ -1335,7 +1296,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_AUDREY] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_SWABLU,
         .nickname = _("Swaby"),
         .trainerName = _("Audrey"),
@@ -1363,7 +1323,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_AVERY] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_LINOONE,
         .nickname = _("Noone"),
         .trainerName = _("Avery"),
@@ -1391,7 +1350,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_AVERY_2] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_SPOINK,
         .nickname = _("Poinker"),
         .trainerName = _("Avery"),
@@ -1419,7 +1377,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_ARIANA] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_KECLEON,
         .nickname = _("Kecon"),
         .trainerName = _("Ariana"),
@@ -1447,7 +1404,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_ASHTON] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_GOLDEEN,
         .nickname = _("Golden"),
         .trainerName = _("Ashton"),
@@ -1475,7 +1431,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_SANDRA] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_BARBOACH,
         .nickname = _("Boboach"),
         .trainerName = _("Sandra"),
@@ -1503,7 +1458,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_CARSON] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_SKARMORY,
         .nickname = _("Corpy"),
         .trainerName = _("Carson"),
@@ -1531,7 +1485,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_KATRINA] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_LOTAD,
         .nickname = _("Tado"),
         .trainerName = _("Katrina"),
@@ -1559,7 +1512,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_LUKE] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_SLOWBRO,
         .nickname = _("Browlo"),
         .trainerName = _("Luke"),
@@ -1587,7 +1539,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_RAUL] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_FARFETCHD,
         .nickname = _("Fetchin"),
         .trainerName = _("Raul"),
@@ -1615,7 +1566,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_JADA] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_SEEL,
         .nickname = _("Seeley"),
         .trainerName = _("Jada"),
@@ -1643,7 +1593,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_ZEEK] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_DROWZEE,
         .nickname = _("Drowzin"),
         .trainerName = _("Zeek"),
@@ -1671,7 +1620,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_DIEGO] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_HITMONCHAN,
         .nickname = _("Hitemon"),
         .trainerName = _("Diego"),
@@ -1699,7 +1647,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_ALIYAH] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_BLISSEY,
         .nickname = _("Bliss"),
         .trainerName = _("Aliyah"),
@@ -1727,7 +1674,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_NATALIA] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_ELEKID,
         .nickname = _("Kidlek"),
         .trainerName = _("Natalia"),
@@ -1755,7 +1701,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_DEVIN] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_SNUBBULL,
         .nickname = _("Snubbins"),
         .trainerName = _("Devin"),
@@ -1783,7 +1728,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_TYLOR] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_MISDREAVUS,
         .nickname = _("Dreavis"),
         .trainerName = _("Tylor"),
@@ -1811,7 +1755,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_RONNIE] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_LAIRON,
         .nickname = _("Lairn"),
         .trainerName = _("Ronnie"),
@@ -1839,7 +1782,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_CLAUDIA] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_NUZLEAF,
         .nickname = _("Nuzle"),
         .trainerName = _("Claudia"),
@@ -1867,7 +1809,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_CLAUDIA_2] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_SHIFTRY,
         .nickname = _("Shifty"),
         .trainerName = _("Claudia"),
@@ -1895,7 +1836,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_ELIAS] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_NINJASK,
         .nickname = _("Ninas"),
         .trainerName = _("Elias"),
@@ -1923,7 +1863,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_JADE] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_SWELLOW,
         .nickname = _("Welow"),
         .trainerName = _("Jade"),
@@ -1951,7 +1890,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_FRANCIS] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_MIGHTYENA,
         .nickname = _("Yena"),
         .trainerName = _("Francis"),
@@ -1979,7 +1917,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_ALISHA] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_BEAUTIFLY,
         .nickname = _("Tifly"),
         .trainerName = _("Alisha"),
@@ -2007,7 +1944,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_SAUL] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_SEAKING,
         .nickname = _("Kingsea"),
         .trainerName = _("Saul"),
@@ -2035,7 +1971,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_FELICIA] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_CAMERUPT,
         .nickname = _("Erupam"),
         .trainerName = _("Felicia"),
@@ -2063,7 +1998,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_FELICIA_2] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_CASTFORM_NORMAL,
         .nickname = _("Caster"),
         .trainerName = _("Felicia"),
@@ -2091,7 +2025,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_EMILIO] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_MACHOP,
         .nickname = _("Chopam"),
         .trainerName = _("Emilio"),
@@ -2119,7 +2052,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_EMILIO_2] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_MACHOKE,
         .nickname = _("Chokem"),
         .trainerName = _("Emilio"),
@@ -2147,7 +2079,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_KARLA] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_LOMBRE,
         .nickname = _("Lombe"),
         .trainerName = _("Karla"),
@@ -2175,7 +2106,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_DARRYL] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_SEVIPER,
         .nickname = _("Vipes"),
         .trainerName = _("Darryl"),
@@ -2203,7 +2133,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_SELENA] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_WAILMER,
         .nickname = _("Merail"),
         .trainerName = _("Selena"),
@@ -2231,7 +2160,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_NOEL] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_MAGIKARP,
         .nickname = _("Karpag"),
         .trainerName = _("Noel"),
@@ -2259,7 +2187,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_LACEY] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_LUNATONE,
         .nickname = _("Lunone"),
         .trainerName = _("Lacey"),
@@ -2287,7 +2214,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_CORBIN] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_PELIPPER,
         .nickname = _("Pelipe"),
         .trainerName = _("Corbin"),
@@ -2315,7 +2241,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_CORBIN_2] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_ABSOL,
         .nickname = _("Abso"),
         .trainerName = _("Corbin"),
@@ -2343,7 +2268,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_GRACIE] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_EXEGGUTOR,
         .nickname = _("Eggsor"),
         .trainerName = _("Gracie"),
@@ -2371,7 +2295,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_COLTIN] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_CUBONE,
         .nickname = _("Cubin"),
         .trainerName = _("Coltin"),
@@ -2399,7 +2322,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_ELLIE] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_HITMONLEE,
         .nickname = _("Hitmon"),
         .trainerName = _("Ellie"),
@@ -2427,7 +2349,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_MARCUS] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_SQUIRTLE,
         .nickname = _("Surtle"),
         .trainerName = _("Marcus"),
@@ -2455,7 +2376,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_KIARA] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_KANGASKHAN,
         .nickname = _("Khankan"),
         .trainerName = _("Kiara"),
@@ -2483,7 +2403,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_BRYCE] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_PINECO,
         .nickname = _("Pinoc"),
         .trainerName = _("Bryce"),
@@ -2511,7 +2430,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_JAMIE] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_DUNSPARCE,
         .nickname = _("Diltot"),
         .trainerName = _("Jamie"),
@@ -2539,7 +2457,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_JORGE] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_HOUNDOOM,
         .nickname = _("Doomond"),
         .trainerName = _("Jorge"),
@@ -2567,7 +2484,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_DEVON] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_MILTANK,
         .nickname = _("Milkan"),
         .trainerName = _("Devon"),
@@ -2595,7 +2511,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_JUSTINA] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_GYARADOS,
         .nickname = _("Rados"),
         .trainerName = _("Justina"),
@@ -2623,7 +2538,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_RALPH] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_LOUDRED,
         .nickname = _("Louderd"),
         .trainerName = _("Ralph"),
@@ -2651,7 +2565,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_ROSA] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_SKITTY,
         .nickname = _("Sitty"),
         .trainerName = _("Rosa"),
@@ -2679,7 +2592,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_ROSA_2] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_DELCATTY,
         .nickname = _("Catted"),
         .trainerName = _("Rosa"),
@@ -2707,7 +2619,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_KEATON] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_SLAKING,
         .nickname = _("Sling"),
         .trainerName = _("Keaton"),
@@ -2735,7 +2646,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_MAYRA] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_ALTARIA,
         .nickname = _("Taria"),
         .trainerName = _("Mayra"),
@@ -2763,7 +2673,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_LAMAR] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_KIRLIA,
         .nickname = _("Lirki"),
         .trainerName = _("Lamar"),
@@ -2791,7 +2700,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_AUBREY] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_VILEPLUME,
         .nickname = _("Plumile"),
         .trainerName = _("Aubrey"),
@@ -2819,7 +2727,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_AUBREY_2] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_BELLOSSOM,
         .nickname = _("Blossom"),
         .trainerName = _("Aubrey"),
@@ -2847,7 +2754,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_NIGEL] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_DUSKULL,
         .nickname = _("Kullusk"),
         .trainerName = _("Nigel"),
@@ -2875,7 +2781,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_NIGEL_2] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_SABLEYE,
         .nickname = _("Eyesab"),
         .trainerName = _("Nigel"),
@@ -2903,7 +2808,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_CAMILLE] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_NATU,
         .nickname = _("Utan"),
         .trainerName = _("Camille"),
@@ -2931,7 +2835,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_CAMILLE_2] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_XATU,
         .nickname = _("Utax"),
         .trainerName = _("Camille"),
@@ -2959,7 +2862,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_DEON] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_SHARPEDO,
         .nickname = _("Sedos"),
         .trainerName = _("Deon"),
@@ -2987,7 +2889,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_JANELLE] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_LUVDISC,
         .nickname = _("Luvis"),
         .trainerName = _("Janelle"),
@@ -3015,7 +2916,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_HEATH] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_HERACROSS,
         .nickname = _("Heross"),
         .trainerName = _("Heath"),
@@ -3043,7 +2943,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_SASHA] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_ELECTRODE,
         .nickname = _("Rodlect"),
         .trainerName = _("Sasha"),
@@ -3071,7 +2970,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_FRANKIE] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_PICHU,
         .nickname = _("Chupy"),
         .trainerName = _("Frankie"),
@@ -3099,7 +2997,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_HELEN] = {
-        .filter = CONTEST_FILTER_NONE,
         .species = SPECIES_WOBBUFFET,
         .nickname = _("Wobet"),
         .trainerName = _("Helen"),
@@ -3127,7 +3024,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_CAMILE] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_GENGAR,
         .nickname = _("Garen"),
         .trainerName = _("Camile"),
@@ -3155,7 +3051,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_MARTIN] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_PORYGON,
         .nickname = _("Gonpor"),
         .trainerName = _("Martin"),
@@ -3183,7 +3078,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_SERGIO] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_DRAGONITE,
         .nickname = _("Drite"),
         .trainerName = _("Sergio"),
@@ -3211,7 +3105,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_KAILEY] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_MEOWTH,
         .nickname = _("Meowy"),
         .trainerName = _("Kailey"),
@@ -3239,7 +3132,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_PERLA] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_JYNX,
         .nickname = _("Nyx"),
         .trainerName = _("Perla"),
@@ -3267,7 +3159,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_CLARA] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_TOGEPI,
         .nickname = _("Gepito"),
         .trainerName = _("Clara"),
@@ -3295,7 +3186,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_JAKOB] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_ESPEON,
         .nickname = _("Speon"),
         .trainerName = _("Jakob"),
@@ -3323,7 +3213,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_TREY] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_SLOWKING,
         .nickname = _("Slowgo"),
         .trainerName = _("Trey"),
@@ -3351,7 +3240,6 @@ const struct ContestPokemon gContestOpponents[] =
         OPPONENT_COMMON,
     },
     [CONTEST_OPPONENT_LANE] = {
-        .filter = CONTEST_FILTER_ONLY_POSTGAME,
         .species = SPECIES_URSARING,
         .nickname = _("Ursing"),
         .trainerName = _("Lane"),

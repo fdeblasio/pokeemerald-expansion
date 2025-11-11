@@ -110,23 +110,33 @@
 #define TRAINER_PIC_RS_BRENDAN            92
 #define TRAINER_PIC_RS_MAY                93
 #define TRAINER_PIC_FRANK                 94
-#define TRAINER_PIC_ROCKER                95
-#define TRAINER_PIC_COOL_COUPLE           96
-#define TRAINER_PIC_BIKER                 97
-#define TRAINER_PIC_LEADER_BROCK          98
-#define TRAINER_PIC_LEADER_MISTY          99
-#define TRAINER_PIC_LEADER_LT_SURGE       100
-#define TRAINER_PIC_LEADER_ERIKA          101
-#define TRAINER_PIC_LEADER_KOGA           102
-#define TRAINER_PIC_LEADER_SABRINA        103
-#define TRAINER_PIC_LEADER_BLAINE         104
-#define TRAINER_PIC_LEADER_GIOVANNI       105
-#define TRAINER_PIC_ELITE_FOUR_LORELEI    106
-#define TRAINER_PIC_ELITE_FOUR_BRUNO      107
-#define TRAINER_PIC_ELITE_FOUR_AGATHA     108
-#define TRAINER_PIC_ELITE_FOUR_LANCE      109
-#define TRAINER_PIC_BURGLAR               110
-#define TRAINER_PIC_COUNT                 111
+#define TRAINER_PIC_LEADER_BROCK          95
+#define TRAINER_PIC_LEADER_MISTY          96
+#define TRAINER_PIC_LEADER_LT_SURGE       97
+#define TRAINER_PIC_LEADER_ERIKA          98
+#define TRAINER_PIC_LEADER_KOGA           99
+#define TRAINER_PIC_LEADER_SABRINA        100
+#define TRAINER_PIC_LEADER_BLAINE         101
+#define TRAINER_PIC_LEADER_GIOVANNI       102
+#define TRAINER_PIC_ELITE_FOUR_LORELEI    103
+#define TRAINER_PIC_ELITE_FOUR_BRUNO      104
+#define TRAINER_PIC_ELITE_FOUR_AGATHA     105
+#define TRAINER_PIC_ELITE_FOUR_LANCE      106
+#define TRAINER_PIC_ROCKER                107
+#define TRAINER_PIC_COOL_COUPLE           108
+#define TRAINER_PIC_BIKER                 109
+#define TRAINER_PIC_CUE_BALL              110
+#define TRAINER_PIC_SUPER_NERD            111
+#define TRAINER_PIC_SCIENTIST             112
+#define TRAINER_PIC_ENGINEER              113
+#define TRAINER_PIC_BURGLAR               114
+#define TRAINER_PIC_CRUSH_KIN             115
+#define TRAINER_PIC_JUGGLER               116
+#define TRAINER_PIC_GAMBLER               117
+#define TRAINER_PIC_TAMER                 118
+#define TRAINER_PIC_CHANNELER             119
+#define TRAINER_PIC_PAINTER               120
+#define TRAINER_PIC_COUNT                 121
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -372,7 +382,17 @@ enum TrainerClassID
     TRAINER_CLASS_ROCKER,
     TRAINER_CLASS_COOL_COUPLE,
     TRAINER_CLASS_BIKER,
+    TRAINER_CLASS_CUE_BALL,
+    TRAINER_CLASS_SUPER_NERD,
+    TRAINER_CLASS_SCIENTIST,
+    TRAINER_CLASS_ENGINEER,
     TRAINER_CLASS_BURGLAR,
+    TRAINER_CLASS_CRUSH_KIN,
+    TRAINER_CLASS_JUGGLER,
+    TRAINER_CLASS_GAMBLER,
+    TRAINER_CLASS_TAMER,
+    TRAINER_CLASS_CHANNELER,
+    TRAINER_CLASS_PAINTER,
     TRAINER_CLASS_COUNT,
 };
 

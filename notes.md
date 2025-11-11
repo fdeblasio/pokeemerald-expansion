@@ -87,7 +87,23 @@ upcoming
         - Update Pledge moves to combo with each other like the elemental fangs
         - Pokemon in contests should be set to seen in Pokedex
         - Change some trainerGfxIds to match trainers (like Bird Keepers using the Psychic GFX)
-        - Utilize non-trainer GFX (like adding a Chef with a Snorlax or something)
+        - Utilize non-trainer/other important GFX
+            - Frank with Electabuzz
+            - chef with a Snorlax
+            - painter with Smeargle
+            - weird guy
+            - Nurse with Chansey/Audino
+            - Devon employee/the similar MAN_2
+            - Mr. Stone
+            - Guitarist/Kindler (now that current ones have been replaced with Psychic GFX)
+            - Wally
+            - Interviewer/Cameraman (can use Gabby and Ty)
+            - Birch
+            - Scott
+            - Existing classes with no contest opponent: RUNNING_TRIATHLETE_F, TUBER_M
+            - NPC: BOY_2, BOY_3, GAMEBOY_KID, LINK_RECEPTIONIST, LITTLE_GIRL, MAN_1, MART_EMPLOYEE, MOM, MYSTERY_GIFT_MAN, OLD_MAN, OLD_WOMAN, REPORTER_M, ROOFTOP_SALE_WOMAN, UNION_ROOM_NURSE
+            - Gym Leaders/Elite Four/Frontier Brains
+            - Could maybe have a Pokemon represent itself
         - Moves with category in description are that category (like doing something cutely being Cute)
         - Add ORAS opponents https://bulbapedia.bulbagarden.net/wiki/List_of_Contest_opponents_(Generation_VI)
         - Add default winners as opponets?
@@ -288,6 +304,9 @@ upcoming
     - Route 128: Where Steven flies to?
 
 ### Overworld
+- Add new defines (but keep current ones) for overworld sprites that line up with trainers for easier use
+- Double check that only Devon employees use DEVON_EMPLOYEES and only non-Devon use MAN_2
+- Use either SCIENTIST_1 or 2 for Cozmo/Stern and use the other for generic scientists
 - Make Regi caves only one room?
 - Add caves and more areas to Safari Zone for more postgame mons
     - Make them themed like ice and fire. Maybe can add legendaries
@@ -400,7 +419,6 @@ upcoming
     - Smack Down is super effective if a Tinkaton uses it against Corviknight
     - Drilbur line Drill Run
 - Edit Slot odds (SLOT_MACHINE_)? Even though there's only three prizes?
-- Add Pokémon with dolls? (Togepi, Smoochum, Clefairy, Lapras, Snorlax, Venusaur, Charizard, Blastoise)
 - Add in Hoenn Pokédex regionals? (currently postgame Safari Zone)
     - Alolan Sandshrew/Vulpix at Shoal Cave
     - Alolan Muk

@@ -4029,7 +4029,7 @@
     - Learns Waterfall, Zen Headbutt, Aqua Tail, and Psychic Fangs by level up
 
 - Dondozo (postgame):
-    - Learns Waterfall and Liquidation by level up
+    - Learns Stockpile, Swallow, Spit Up, Waterfall, and Liquidation by level up
 
 - Wo-Chien:
     - Learns Grass Knot and Energy Ball by level up

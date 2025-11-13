@@ -32,6 +32,19 @@ const u8 gNotDoneYetDescription[] = _(
     .priority = 1,                  \
     .contestEffect = CONTEST_EFFECT_NEXT_APPEAL_EARLIER
 
+#define SWITCH_ITEMS_INFO                     \
+    .effect = EFFECT_TRICK,                   \
+    .power = 0,                               \
+    .accuracy = 100,                          \
+    .pp = 10,                                 \
+    .target = TARGET_SELECTED,                \
+    .priority = 0,                            \
+    .category = DAMAGE_CATEGORY_STATUS,       \
+    .zMove = { .effect = Z_EFFECT_SPD_UP_2 }, \
+    .metronomeBanned = TRUE,                  \
+    .copycatBanned = TRUE,                    \
+    .assistBanned = TRUE
+
 #define ELEMENTAL_FANG_INFO               \
     .effect = EFFECT_HIT,                 \
     .power = 65,                          \
@@ -44,6 +57,17 @@ const u8 gNotDoneYetDescription[] = _(
     .bitingMove = TRUE,                   \
     .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING
 
+#define OVERWRITE_ABILITY_INFO(Ability)          \
+    .effect = EFFECT_OVERWRITE_ABILITY,          \
+    .power = 0,                                  \
+    .accuracy = 100,                             \
+    .pp = 15,                                    \
+    .target = TARGET_SELECTED,                   \
+    .priority = 0,                               \
+    .category = DAMAGE_CATEGORY_STATUS,          \
+    .argument = { .overwriteAbility = Ability }, \
+    .magicCoatAffected = TRUE
+
 #define PLEDGE_INFO                                                 \
     .effect = EFFECT_PLEDGE,                                        \
     .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 80 : 50,                \
@@ -55,6 +79,32 @@ const u8 gNotDoneYetDescription[] = _(
     .skyBattleBanned = TRUE,                                        \
     .contestEffect = CONTEST_EFFECT_EXCITE_AUDIENCE_IN_ANY_CONTEST, \
     .contestCategory = CONTEST_CATEGORY_BEAUTY
+
+#define TERRAIN_MOVE_INFO               \
+    .power = 0,                         \
+    .accuracy = 0,                      \
+    .pp = 10,                           \
+    .target = TARGET_ALL_BATTLERS,      \
+    .priority = 0,                      \
+    .category = DAMAGE_CATEGORY_STATUS, \
+    .ignoresProtect = TRUE,             \
+    .mirrorMoveBanned = TRUE,           \
+    .skyBattleBanned = TRUE,            \
+    .contestEffect = CONTEST_EFFECT_BETTER_WHEN_AUDIENCE_EXCITED //CONTEST_EFFECT_EXCITES_AUDIENCE_MORE_IF_FIRST
+
+#define CHANGE_TYPE_INFO(Type)                  \
+    .effect = EFFECT_SOAK,                      \
+    .power = 0,                                 \
+    .type = Type,                               \
+    .accuracy = 100,                            \
+    .pp = 20,                                   \
+    .target = TARGET_SELECTED,                  \
+    .priority = 0,                              \
+    .category = DAMAGE_CATEGORY_STATUS,         \
+    .argument = { .type = Type },               \
+    .zMove = { .effect = Z_EFFECT_SPATK_UP_1 }, \
+    .magicCoatAffected = TRUE,                  \
+    .contestEffect = CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION
 
 #define THIRD_TYPE_INFO(Type)                       \
     .effect = EFFECT_THIRD_TYPE,                    \
@@ -7332,18 +7382,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Tricks the foe into trading\n"
             "held items."),
-        .effect = EFFECT_TRICK,
-        .power = 0,
+        SWITCH_ITEMS_INFO,
         .type = TYPE_PSYCHIC,
-        .accuracy = 100,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .zMove = { .effect = Z_EFFECT_SPD_UP_2 },
-        .metronomeBanned = TRUE,
-        .copycatBanned = TRUE,
-        .assistBanned = TRUE,
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL : CONTEST_EFFECT_BETTER_IF_SAME_TYPE,
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
@@ -10328,17 +10368,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Plants a seed on the foe\n"
             "giving it Insomnia."),
-        .effect = EFFECT_OVERWRITE_ABILITY,
-        .power = 0,
+        OVERWRITE_ABILITY_INFO(ABILITY_INSOMNIA),
         .type = TYPE_GRASS,
-        .accuracy = 100,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .argument = { .overwriteAbility = ABILITY_INSOMNIA },
         .zMove = { .effect = Z_EFFECT_SPD_UP_1 },
-        .magicCoatAffected = TRUE,
         .contestEffect = CONTEST_EFFECT_MAKE_FOLLOWING_MONS_NERVOUS,
         .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_SMART : CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = COMBO_STARTER_WORRY_SEED,
@@ -10985,18 +11017,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Swaps items with the foe\n"
             "faster than the eye can see."),
-        .effect = EFFECT_TRICK,
-        .power = 0,
+        SWITCH_ITEMS_INFO,
         .type = TYPE_DARK,
-        .accuracy = 100,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .zMove = { .effect = Z_EFFECT_SPD_UP_2 },
-        .metronomeBanned = TRUE,
-        .copycatBanned = TRUE,
-        .assistBanned = TRUE,
         .contestEffect = CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL,
         .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_SMART : CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
@@ -12728,18 +12750,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Sprays water at the foe,\n"
             "changing it to Water type."),
-        .effect = EFFECT_SOAK,
-        .power = 0,
-        .type = TYPE_WATER,
-        .accuracy = 100,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .argument = { .type = TYPE_WATER },
-        .zMove = { .effect = Z_EFFECT_SPATK_UP_1 },
-        .magicCoatAffected = TRUE,
-        .contestEffect = CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION,
+        CHANGE_TYPE_INFO(TYPE_WATER),
         .contestCategory = CONTEST_CATEGORY_CUTE,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_RAIN_DANCE},
@@ -12878,17 +12889,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A beam that changes the\n"
             "foe's Ability to Simple."),
-        .effect = EFFECT_OVERWRITE_ABILITY,
-        .power = 0,
+        OVERWRITE_ABILITY_INFO(ABILITY_SIMPLE),
         .type = TYPE_NORMAL,
-        .accuracy = 100,
-        .pp = 15,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .argument = { .overwriteAbility = ABILITY_SIMPLE },
         .zMove = { .effect = Z_EFFECT_SPATK_UP_1 },
-        .magicCoatAffected = TRUE,
         .contestEffect = CONTEST_EFFECT_WORSEN_CONDITION_OF_PREV_MONS,
         .contestCategory = CONTEST_CATEGORY_CUTE,
         .contestComboStarterId = 0,
@@ -14981,18 +14984,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "The ground turns to grass\n"
             "for 5 turns. Restores HP."),
         .effect = EFFECT_GRASSY_TERRAIN,
-        .power = 0,
+        TERRAIN_MOVE_INFO,
         .type = TYPE_GRASS,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_FIELD,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
         .zMove = { .effect = Z_EFFECT_DEF_UP_1 },
-        .ignoresProtect = TRUE,
-        .mirrorMoveBanned = TRUE,
-        .skyBattleBanned = TRUE,
-        .contestEffect = CONTEST_EFFECT_BETTER_WHEN_AUDIENCE_EXCITED, //CONTEST_EFFECT_EXCITES_AUDIENCE_MORE_IF_FIRST
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = COMBO_STARTER_GRASSY_TERRAIN,
         .contestComboMoves = {0},
@@ -15006,18 +15000,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Covers the ground with mist\n"
             "for 5 turns. Blocks status."),
         .effect = EFFECT_MISTY_TERRAIN,
-        .power = 0,
+        TERRAIN_MOVE_INFO,
         .type = TYPE_FAIRY,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_FIELD,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
         .zMove = { .effect = Z_EFFECT_SPDEF_UP_1 },
-        .ignoresProtect = TRUE,
-        .mirrorMoveBanned = TRUE,
-        .skyBattleBanned = TRUE,
-        .contestEffect = CONTEST_EFFECT_BETTER_WHEN_AUDIENCE_EXCITED, //CONTEST_EFFECT_EXCITES_AUDIENCE_MORE_IF_FIRST
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = COMBO_STARTER_MISTY_TERRAIN,
         .contestComboMoves = {0},
@@ -15585,18 +15570,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Electrifies the ground for\n"
             "5 turns. Prevents sleep."),
         .effect = EFFECT_ELECTRIC_TERRAIN,
-        .power = 0,
+        TERRAIN_MOVE_INFO,
         .type = TYPE_ELECTRIC,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_FIELD,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
         .zMove = { .effect = Z_EFFECT_SPD_UP_1 },
-        .ignoresProtect = TRUE,
-        .mirrorMoveBanned = TRUE,
-        .skyBattleBanned = TRUE,
-        .contestEffect = CONTEST_EFFECT_BETTER_WHEN_AUDIENCE_EXCITED, //CONTEST_EFFECT_EXCITES_AUDIENCE_MORE_IF_FIRST
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = COMBO_STARTER_ELECTRIC_TERRAIN,
         .contestComboMoves = {0},
@@ -16510,18 +16486,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "The ground turns weird for\n"
             "5 turns. Blocks priority."),
         .effect = EFFECT_PSYCHIC_TERRAIN,
-        .power = 0,
+        TERRAIN_MOVE_INFO,
         .type = TYPE_PSYCHIC,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_FIELD,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
         .zMove = { .effect = Z_EFFECT_SPATK_UP_1 },
-        .ignoresProtect = TRUE,
-        .mirrorMoveBanned = TRUE,
-        .skyBattleBanned = TRUE,
-        .contestEffect = CONTEST_EFFECT_BETTER_WHEN_AUDIENCE_EXCITED,
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = COMBO_STARTER_PSYCHIC_TERRAIN,
         .contestComboMoves = {0},
@@ -17572,18 +17539,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Magic powder changes the\n"
             "target into a Psychic type."),
-        .effect = EFFECT_SOAK,
-        .power = 0,
-        .type = TYPE_PSYCHIC,
-        .accuracy = 100,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .argument = { .type = TYPE_PSYCHIC },
-        .magicCoatAffected = TRUE,
+        CHANGE_TYPE_INFO(TYPE_PSYCHIC),
         .powderMove = TRUE,
-        .contestEffect = CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION,
         .contestCategory = CONTEST_CATEGORY_CUTE,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},

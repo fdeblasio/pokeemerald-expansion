@@ -814,6 +814,8 @@
         - Accuracy: 85->100
     - Trop Kick:
         - Power: 70->90
+    - Worry Seed:
+        - PP: 10->15
 - Psychic:
     - Eerie Spell:
         - PP: 5->10

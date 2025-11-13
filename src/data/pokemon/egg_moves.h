@@ -6936,7 +6936,6 @@ static const u16 sChewtleEggMoveLearnset[] = {
 #if P_FAMILY_YAMPER
 static const u16 sYamperEggMoveLearnset[] = {
     MOVE_HOWL,
-    MOVE_ICE_FANG,
     MOVE_ROUND,
     MOVE_SAND_ATTACK,
     MOVE_SNORE,

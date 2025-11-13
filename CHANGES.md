@@ -533,7 +533,124 @@
 - Take Down
 
 #### Move Relearner:
+- Acid Spray
+- Agility
+- Air Cutter
+- Alluring Voice
+- Amnesia
+- Avalanche
+- Baton Pass
+- Blast Burn
+- Brave Bird
+- Breaking Swipe
+- Bug Bite
+- Bulldoze
+- Burning Jealousy
+- Charge
+- Charge Beam
+- Charm
+- Chilling Water
+- Close Combat
+- Coaching
+- Confuse Ray
+- Curse
+- Disarming Voice
+- Draco Meteor
+- Dragon Cheer
+- Dragon Tail
+- Draining Kiss
+- Eerie Impulse
+- Electro Ball
+- Electroweb
+- Encore
+- Endeavor
+- Fake Tears
+- Feather Dance
+- Fire Fang
+- Fire Pledge
+- Fire Spin
+- Flame Charge
+- Flare Blitz
+- Fling
+- Flip Turn
+- Foul Play
+- Frenzy Plant
+- Future Sight
+- Grass Pledge
+- Gravity
+- Gunk Shot
+- Gyro Ball
+- Hard Press
+- Haze
+- Heat Crash
+- Heat Wave
+- Heavy Slam
+- Helping Hand
+- Hex
+- Hurricane
+- Hydro Cannon
+- Hydro Pump
+- Ice Fang
+- Icicle Spear
+- Imprison
+- Lash Out
+- Leaf Storm
+- Low Kick
+- Low Sweep
+- Magical Leaf
+- Metal Claw
+- Metal Sound
+- Meteor Beam
+- Misty Explosion
+- Mud Shot
+- Muddy Water
+- Mud-Slap
+- Night Shade
+- Outrage
+- Pain Split
+- Petal Blizzard
+- Phantom Force
+- Poison Tail
+- Pollen Puff
+- Poltergeist
+- Pounce
+- Psybeam
+- Psychic Noise
+- Psyshock
+- Reversal
+- Rock Blast
+- Sand Tomb
+- Scale Shot
+- Scary Face
+- Skitter Smack
+- Sludge Wave
+- Smack Down
+- Smart Strike
+- Snarl
+- Spikes
+- Spite
+- Steel Beam
+- Stomping Tantrum
+- Stored Power
+- Struggle Bug
+- Super Fang
 - Tailwind
+- Take Down
+- Thunder Fang
+- Toxic Spikes
+- Trailblaze
+- Trick
+- Triple Axel
+- Upper Hand
+- Uproar
+- Vacuum Wave
+- Venoshock
+- Volt Switch
+- Water Pledge
+- Weather Ball
+- Whirlpool
+- Wild Charge
+
 
 ### Moves:
 - All moves automatically have their max PP amount

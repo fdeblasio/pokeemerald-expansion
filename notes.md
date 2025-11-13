@@ -37,9 +37,10 @@ upcoming
 ## To Do:
 - Replace yellow with 209 0 86
     - Dark: 139 23 26
-    - Mid-dark: 178 24 103
-    - Alt: 218 24 180
+    - Mid-dark: 174 12 56
     - Light: 255 192 192
+    - Alt: 218 24 180
+    - Alt Mid-dark: 178 24 103
 - Z-A Megas:
     - Pidgey line:
         - Make attacking stats more consistent? (Regular has 10 more Atk, but Mega has 55 more SpA)

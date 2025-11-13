@@ -3764,7 +3764,7 @@
 - Toxtricity:
     - Atk: 98->100
     - SpA: 114->115
-    - Learns Snarl, Psychic Noise, Thunderbolt and Sludge Bomb by level up
+    - Learns Thunderbolt and Sludge Bomb by level up
 
 - Clobbopus:
     - Received Suction Cups as a second ability

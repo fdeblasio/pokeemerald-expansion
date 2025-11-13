@@ -22581,8 +22581,6 @@ static const struct LevelUpMove sToxelLevelUpLearnset[] = {
 
 static const struct LevelUpMove sToxtricityAmpedLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_SPARK),
-    LEVEL_UP_MOVE( 1, MOVE_SNARL),
-    LEVEL_UP_MOVE( 1, MOVE_PSYCHIC_NOISE),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_ACID),
@@ -22614,8 +22612,6 @@ static const struct LevelUpMove sToxtricityAmpedLevelUpLearnset[] = {
 
 static const struct LevelUpMove sToxtricityLowKeyLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_SPARK),
-    LEVEL_UP_MOVE( 1, MOVE_SNARL),
-    LEVEL_UP_MOVE( 1, MOVE_PSYCHIC_NOISE),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_ACID),

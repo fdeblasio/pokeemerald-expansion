@@ -16893,6 +16893,18 @@
   "DONDOZO": {
     "LevelMoves": [
       {
+        "Level": 1,
+        "Move": "MOVE_STOCKPILE"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_SWALLOW"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_SPIT_UP"
+      },
+      {
         "Level": 25,
         "Move": "MOVE_WATERFALL"
       },

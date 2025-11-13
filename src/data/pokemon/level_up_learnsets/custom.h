@@ -25248,6 +25248,9 @@ static const struct LevelUpMove sVeluzaLevelUpLearnset[] = {
 
 #if P_FAMILY_DONDOZO
 static const struct LevelUpMove sDondozoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_STOCKPILE),
+    LEVEL_UP_MOVE( 1, MOVE_SWALLOW),
+    LEVEL_UP_MOVE( 1, MOVE_SPIT_UP),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_SUPERSONIC),
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),

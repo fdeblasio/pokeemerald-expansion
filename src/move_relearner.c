@@ -756,12 +756,6 @@ static void DoMoveRelearnerMain(void)
             }
 
             FreeMoveRelearnerResources();
-            if (FlagGet(FLAG_PARTY_MOVES)) {
-                CB2_ReturnToPartyMenuFromSummaryScreen();
-                FlagClear(FLAG_PARTY_MOVES);
-            } else {
-                SetMainCallback2(CB2_ReturnToField);
-            } //See what happens when this blog is removed
             gRelearnMode = RELEARN_MODE_NONE;
         }
         break;

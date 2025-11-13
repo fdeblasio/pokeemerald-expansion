@@ -376,6 +376,9 @@
 - Counter
 - Dream Eater
 
+#### Move Relearner:
+- Tailwind
+
 ### Moves:
 - All moves automatically have their max PP amount
 #### Many moves (especially signature moves) were given 100% accuracy and/or 10 PP as opposed to 5:

@@ -114,7 +114,67 @@ enum {
     CONTEST_OPPONENT_CLARA,
     CONTEST_OPPONENT_JAKOB,
     CONTEST_OPPONENT_TREY,
-    CONTEST_OPPONENT_LANE
+    CONTEST_OPPONENT_LANE,
+        CONTEST_OPPONENT_MICAH,
+    CONTEST_OPPONENT_SHANNON,
+    CONTEST_OPPONENT_MATEO,
+    CONTEST_OPPONENT_JORDYN,
+    CONTEST_OPPONENT_GIANNA,
+    CONTEST_OPPONENT_DECLAN,
+    CONTEST_OPPONENT_CARLTON,
+    CONTEST_OPPONENT_ADELINE,
+    CONTEST_OPPONENT_ASHER,
+    CONTEST_OPPONENT_LAUREN,
+    CONTEST_OPPONENT_JEREMIAH,
+    CONTEST_OPPONENT_MOLLY,
+    CONTEST_OPPONENT_MARTINUS,
+    CONTEST_OPPONENT_LILIANA,
+    CONTEST_OPPONENT_CAMDEN,
+    CONTEST_OPPONENT_KEIRA,
+    CONTEST_OPPONENT_BENTLEY,
+    CONTEST_OPPONENT_PLUM,
+    CONTEST_OPPONENT_ZACHARY,
+    CONTEST_OPPONENT_ALYSSA,
+    CONTEST_OPPONENT_BRODY,
+    CONTEST_OPPONENT_MILA,
+    CONTEST_OPPONENT_ROHAN,
+    CONTEST_OPPONENT_ALAINA,
+    CONTEST_OPPONENT_LEVI,
+    CONTEST_OPPONENT_GABRIELLA,
+    CONTEST_OPPONENT_DOMINIC,
+    CONTEST_OPPONENT_KAITLYN,
+    CONTEST_OPPONENT_TYLER,
+    CONTEST_OPPONENT_ADALYN,
+    CONTEST_OPPONENT_LANDON,
+    CONTEST_OPPONENT_MCKENZIE,
+    CONTEST_OPPONENT_NELSON,
+    CONTEST_OPPONENT_RILEY,
+    CONTEST_OPPONENT_NATHAN,
+    CONTEST_OPPONENT_TWYLA,
+    CONTEST_OPPONENT_GAVIN,
+    CONTEST_OPPONENT_LILY,
+    CONTEST_OPPONENT_PRIMO,
+    CONTEST_OPPONENT_ALEJANDRA,
+    CONTEST_OPPONENT_YOSHINARI,
+    CONTEST_OPPONENT_LACY,
+    CONTEST_OPPONENT_OWEN,
+    CONTEST_OPPONENT_ADDISON,
+    CONTEST_OPPONENT_JAYCE,
+    CONTEST_OPPONENT_YOKO,
+    CONTEST_OPPONENT_JEFF,
+    CONTEST_OPPONENT_ELSIE,
+    CONTEST_OPPONENT_JAYLON,
+    CONTEST_OPPONENT_LAYLA,
+    CONTEST_OPPONENT_RUSLAN,
+    CONTEST_OPPONENT_LILIAS,
+    CONTEST_OPPONENT_AIDEN,
+    CONTEST_OPPONENT_MADELYN,
+    CONTEST_OPPONENT_ELIJAH,
+    CONTEST_OPPONENT_HAILEY,
+    CONTEST_OPPONENT_CLAYTON,
+    CONTEST_OPPONENT_AUDRY,
+    CONTEST_OPPONENT_IVAN,
+    CONTEST_OPPONENT_JULIA,
 };
 
 // All contest opponents have a common set of AI flags (which contains all of the actually
@@ -3265,5 +3325,1686 @@ const struct ContestPokemon gContestOpponents[] =
         .sheen = 255,
         .personality = CONTEST_MON_MALE,
         OPPONENT_COMMON,
-    }
+    },
+
+    [CONTEST_OPPONENT_MICAH] = {
+        .species = SPECIES_POOCHYENA,
+        .nickname = _("Poochin"),
+        .trainerName = _("Micah"),
+        .trainerGfxId = OBJ_EVENT_GFX_YOUNGSTER,
+        .whichRank = CONTEST_RANK_NORMAL,
+        .aiPool_Cool = TRUE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = TRUE,
+        .moves =
+        {
+            MOVE_BITE,
+            MOVE_SCARY_FACE,
+            MOVE_TACKLE,
+            MOVE_FIRE_FANG
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 14,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 0,
+        .tough = 10,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_SHANNON] = {
+        .species = SPECIES_ZIGZAGOON,
+        .nickname = _("Gonzer"),
+        .trainerName = _("Shannon"),
+        .trainerGfxId = OBJ_EVENT_GFX_LADY,
+        .whichRank = CONTEST_RANK_NORMAL,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = TRUE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_MUD_SPORT,
+            MOVE_TAIL_WHIP,
+            MOVE_PIN_MISSILE,
+            MOVE_ODOR_SLEUTH
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 0,
+        .cute = 10,
+        .smart = 0,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_MATEO] = {
+        .species = SPECIES_DUSTOX,
+        .nickname = _("Nox"),
+        .trainerName = _("Mateo"),
+        .trainerGfxId = OBJ_EVENT_GFX_BUG_CATCHER,
+        .whichRank = CONTEST_RANK_NORMAL,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = TRUE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_SILVER_WIND,
+            MOVE_MOONLIGHT,
+            MOVE_STRUGGLE_BUG,
+            MOVE_PROTECT
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 12,
+        .cute = 0,
+        .smart = 0,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_JORDYN] = {
+        .species = SPECIES_SEEDOT,
+        .nickname = _("Seedottie"),
+        .trainerName = _("Jordyn"),
+        .trainerGfxId = OBJ_EVENT_GFX_SCHOOLKID_F,
+        .whichRank = CONTEST_RANK_NORMAL,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = TRUE,
+        .aiPool_Tough = TRUE,
+        .moves =
+        {
+            MOVE_HARDEN,
+            MOVE_BIDE,
+            MOVE_SYNTHESIS,
+            MOVE_LEECH_SEED
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 10,
+        .tough = 12,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_GIANNA] = {
+        .species = SPECIES_TAILLOW,
+        .nickname = _("Tailster"),
+        .trainerName = _("Gianna"),
+        .trainerGfxId = OBJ_EVENT_GFX_LASS,
+        .whichRank = CONTEST_RANK_NORMAL,
+        .aiPool_Cool = TRUE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_WING_ATTACK,
+            MOVE_DOUBLE_TEAM,
+            MOVE_AERIAL_ACE,
+            MOVE_ECHOED_VOICE
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 20,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 0,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_DECLAN] = {
+        .species = SPECIES_NINCADA,
+        .nickname = _("Ninny"),
+        .trainerName = _("Declan"),
+        .trainerGfxId = OBJ_EVENT_GFX_NINJA_BOY,
+        .whichRank = CONTEST_RANK_NORMAL,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = TRUE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_LEECH_LIFE,
+            MOVE_MIND_READER,
+            MOVE_FURY_SWIPES,
+            MOVE_MUD_SLAP
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 17,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_CARLTON] = {
+        .species = SPECIES_SHROOMISH,
+        .nickname = _("Shrewmish"),
+        .trainerName = _("Carlton"),
+        .trainerGfxId = OBJ_EVENT_GFX_SCHOOLKID_M,
+        .whichRank = CONTEST_RANK_NORMAL,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = TRUE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_ABSORB,
+            MOVE_STUN_SPORE,
+            MOVE_LEECH_SEED,
+            MOVE_HEADBUTT
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 20,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_ADELINE] = {
+        .species = SPECIES_WINGULL,
+        .nickname = _("Win"),
+        .trainerName = _("Adeline"),
+        .trainerGfxId = OBJ_EVENT_GFX_TUBER_F,
+        .whichRank = CONTEST_RANK_NORMAL,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = TRUE,
+        .aiPool_Cute = TRUE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_WATER_GUN,
+            MOVE_GROWL,
+            MOVE_WATER_PULSE,
+            MOVE_MIST
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 15,
+        .cute = 16,
+        .smart = 0,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_ASHER] = {
+        .species = SPECIES_SLAKOTH,
+        .nickname = _("Visikoth"),
+        .trainerName = _("Asher"),
+        .trainerGfxId = OBJ_EVENT_GFX_POKE_FAN_M,
+        .whichRank = CONTEST_RANK_NORMAL,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = TRUE,
+        .aiPool_Cute = TRUE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = TRUE,
+        .moves =
+        {
+            MOVE_STRENGTH,
+            MOVE_COUNTER,
+            MOVE_YAWN,
+            MOVE_ENCORE
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 14,
+        .cute = 12,
+        .smart = 0,
+        .tough = 16,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_LAUREN] = {
+        .species = SPECIES_WHISMUR,
+        .nickname = _("Whizz"),
+        .trainerName = _("Lauren"),
+        .trainerGfxId = OBJ_EVENT_GFX_POKE_FAN_F,
+        .whichRank = CONTEST_RANK_NORMAL,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = TRUE,
+        .aiPool_Smart = TRUE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_ASTONISH,
+            MOVE_SLEEP_TALK,
+            MOVE_SUBSTITUTE,
+            MOVE_SCREECH
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 0,
+        .cute = 14,
+        .smart = 14,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_JEREMIAH] = {
+        .species = SPECIES_MAKUHITA,
+        .nickname = _("Makuwaku"),
+        .trainerName = _("Jeremiah"),
+        .trainerGfxId = OBJ_EVENT_GFX_BLACK_BELT,
+        .whichRank = CONTEST_RANK_NORMAL,
+        .aiPool_Cool = TRUE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = TRUE,
+        .moves =
+        {
+            MOVE_ARM_THRUST,
+            MOVE_SMELLING_SALTS,
+            MOVE_FORCE_PALM,
+            MOVE_FOCUS_ENERGY
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 12,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 0,
+        .tough = 20,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_MOLLY] = {
+        .species = SPECIES_ARON,
+        .nickname = _("Ronnie"),
+        .trainerName = _("Molly"),
+        .trainerGfxId = OBJ_EVENT_GFX_PICNICKER,
+        .whichRank = CONTEST_RANK_NORMAL,
+        .aiPool_Cool = TRUE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = TRUE,
+        .moves =
+        {
+            MOVE_METAL_CLAW,
+            MOVE_HEADBUTT,
+            MOVE_HARDEN,
+            MOVE_TAKE_DOWN
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 20,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 0,
+        .tough = 14,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_MARTINUS] = {
+        .species = SPECIES_ZUBAT,
+        .nickname = _("Zoonby"),
+        .trainerName = _("Martinus"),
+        .trainerGfxId = OBJ_EVENT_GFX_CAMPER,
+        .whichRank = CONTEST_RANK_NORMAL,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = TRUE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = TRUE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_HAZE,
+            MOVE_MEAN_LOOK,
+            MOVE_CONFUSE_RAY,
+            MOVE_LEECH_LIFE
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 10,
+        .cute = 0,
+        .smart = 12,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_LILIANA] = {
+        .species = SPECIES_GULPIN,
+        .nickname = _("Guligan"),
+        .trainerName = _("Liliana"),
+        .trainerGfxId = OBJ_EVENT_GFX_AROMA_LADY,
+        .whichRank = CONTEST_RANK_NORMAL,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = TRUE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_POISON_GAS,
+            MOVE_TOXIC,
+            MOVE_AMNESIA,
+            MOVE_YAWN
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 0,
+        .cute = 22,
+        .smart = 0,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_CAMDEN] = {
+        .species = SPECIES_ELECTRIKE,
+        .nickname = _("Bolt"),
+        .trainerName = _("Camden"),
+        .trainerGfxId = OBJ_EVENT_GFX_GUITARIST,
+        .whichRank = CONTEST_RANK_NORMAL,
+        .aiPool_Cool = TRUE,
+        .aiPool_Beauty = TRUE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_SPARK,
+            MOVE_HOWL,
+            MOVE_BITE,
+            MOVE_LIGHT_SCREEN
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 23,
+        .beauty = 21,
+        .cute = 0,
+        .smart = 0,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_KEIRA] = {
+        .species = SPECIES_ROSELIA,
+        .nickname = _("Rosalie"),
+        .trainerName = _("Keira"),
+        .trainerGfxId = OBJ_EVENT_GFX_AROMA_LADY,
+        .whichRank = CONTEST_RANK_SUPER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = TRUE,
+        .aiPool_Cute = TRUE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_MAGICAL_LEAF,
+            MOVE_GROWTH,
+            MOVE_SWEET_SCENT,
+            MOVE_GRASS_KNOT
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 38,
+        .cute = 38,
+        .smart = 0,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_BENTLEY] = {
+        .species = SPECIES_DODUO,
+        .nickname = _("Dodon’t"),
+        .trainerName = _("Bentley"),
+        .trainerGfxId = OBJ_EVENT_GFX_BIRD_KEEPER,
+        .whichRank = CONTEST_RANK_SUPER,
+        .aiPool_Cool = TRUE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = TRUE,
+        .moves =
+        {
+            MOVE_PECK,
+            MOVE_FURY_ATTACK,
+            MOVE_RAGE,
+            MOVE_ACUPRESSURE
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 38,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 0,
+        .tough = 38,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_PLUM] = {
+        .species = SPECIES_TRAPINCH,
+        .nickname = _("Tracy"),
+        .trainerName = _("Plum"),
+        .trainerGfxId = OBJ_EVENT_GFX_LASS,
+        .whichRank = CONTEST_RANK_SUPER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = TRUE,
+        .moves =
+        {
+            MOVE_BITE,
+            MOVE_DIG,
+            MOVE_BULLDOZE,
+            MOVE_FEINT_ATTACK
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 0,
+        .tough = 43,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_ZACHARY] = {
+        .species = SPECIES_CACNEA,
+        .nickname = _("Succulus"),
+        .trainerName = _("Zachary"),
+        .trainerGfxId = OBJ_EVENT_GFX_POKEMON_BREEDER_M,
+        .whichRank = CONTEST_RANK_SUPER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = TRUE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_NEEDLE_ARM,
+            MOVE_POISON_STING,
+            MOVE_LEECH_SEED,
+            MOVE_SAND_ATTACK
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 42,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_ALYSSA] = {
+        .species = SPECIES_SANDSHREW,
+        .nickname = _("Sandyclaws"),
+        .trainerName = _("Alyssa"),
+        .trainerGfxId = OBJ_EVENT_GFX_PICNICKER,
+        .whichRank = CONTEST_RANK_SUPER,
+        .aiPool_Cool = TRUE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_FURY_CUTTER,
+            MOVE_RAPID_SPIN,
+            MOVE_FURY_SWIPES,
+            MOVE_DIG
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 50,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 0,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_BRODY] = {
+        .species = SPECIES_BALTOY,
+        .nickname = _("Baltop"),
+        .trainerName = _("Brody"),
+        .trainerGfxId = OBJ_EVENT_GFX_RUIN_MANIAC,
+        .whichRank = CONTEST_RANK_SUPER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = TRUE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_CONFUSION,
+            MOVE_ROCK_TOMB,
+            MOVE_MUD_SLAP,
+            MOVE_HARDEN
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 60,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_NONE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_MILA] = {
+        .species = SPECIES_NUMEL,
+        .nickname = _("Mel"),
+        .trainerName = _("Mila"),
+        .trainerGfxId = OBJ_EVENT_GFX_PARASOL_LADY,
+        .whichRank = CONTEST_RANK_SUPER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = TRUE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_FLAME_BURST,
+            MOVE_EARTH_POWER,
+            MOVE_EMBER,
+            MOVE_AMNESIA
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 60,
+        .cute = 0,
+        .smart = 0,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_ROHAN] = {
+        .species = SPECIES_SPINDA,
+        .nickname = _("Spinmaster"),
+        .trainerName = _("Rohan"),
+        .trainerGfxId = OBJ_EVENT_GFX_CAMPER,
+        .whichRank = CONTEST_RANK_SUPER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = TRUE,
+        .aiPool_Smart = TRUE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_DIZZY_PUNCH,
+            MOVE_TEETER_DANCE,
+            MOVE_HYPNOSIS,
+            MOVE_DREAM_EATER
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 0,
+        .cute = 35,
+        .smart = 48,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_ALAINA] = {
+        .species = SPECIES_SWABLU,
+        .nickname = _("Swellbell"),
+        .trainerName = _("Alaina"),
+        .trainerGfxId = OBJ_EVENT_GFX_LADY,
+        .whichRank = CONTEST_RANK_SUPER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = TRUE,
+        .aiPool_Cute = TRUE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_ASTONISH,
+            MOVE_SING,
+            MOVE_ROUND,
+            MOVE_MIST
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 35,
+        .cute = 46,
+        .smart = 0,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_LEVI] = {
+        .species = SPECIES_LINOONE,
+        .nickname = _("Noone"),
+        .trainerName = _("Levi"),
+        .trainerGfxId = OBJ_EVENT_GFX_RUNNING_TRIATHLETE_M,
+        .whichRank = CONTEST_RANK_SUPER,
+        .aiPool_Cool = TRUE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = TRUE,
+        .moves =
+        {
+            MOVE_CUT,
+            MOVE_SURF,
+            MOVE_ROCK_SMASH,
+            MOVE_STRENGTH
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 60,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 0,
+        .tough = 28,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_GABRIELLA] = {
+        .species = SPECIES_KECLEON,
+        .nickname = _("Leon"),
+        .trainerName = _("Gabriella"),
+        .trainerGfxId = OBJ_EVENT_GFX_ACE_TRAINER_F,
+        .whichRank = CONTEST_RANK_SUPER,
+        .aiPool_Cool = TRUE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = TRUE,
+        .moves =
+        {
+            MOVE_SLASH,
+            MOVE_SHADOW_CLAW,
+            MOVE_FURY_SWIPES,
+            MOVE_THIEF
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 47,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 0,
+        .tough = 47,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_DOMINIC] = {
+        .species = SPECIES_CORPHISH,
+        .nickname = _("Snip"),
+        .trainerName = _("Dominic"),
+        .trainerGfxId = OBJ_EVENT_GFX_SCHOOLKID_M,
+        .whichRank = CONTEST_RANK_SUPER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = TRUE,
+        .moves =
+        {
+            MOVE_CUT,
+            MOVE_HARDEN,
+            MOVE_KNOCK_OFF,
+            MOVE_DOUBLE_HIT
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 0,
+        .tough = 67,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_KAITLYN] = {
+        .species = SPECIES_BARBOACH,
+        .nickname = _("Barbra"),
+        .trainerName = _("Kaitlyn"),
+        .trainerGfxId = OBJ_EVENT_GFX_POKEMON_BREEDER_F,
+        .whichRank = CONTEST_RANK_SUPER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = TRUE,
+        .aiPool_Cute = TRUE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_WATER_GUN,
+            MOVE_WATER_SPORT,
+            MOVE_WATER_PULSE,
+            MOVE_ROUND
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 45,
+        .cute = 40,
+        .smart = 0,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_TYLER] = {
+        .species = SPECIES_SPOINK,
+        .nickname = _("Spearl"),
+        .trainerName = _("Tyler"),
+        .trainerGfxId = OBJ_EVENT_GFX_PSYCHIC_M,
+        .whichRank = CONTEST_RANK_SUPER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = TRUE,
+        .aiPool_Cute = TRUE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_PSYBEAM,
+            MOVE_MAGIC_COAT,
+            MOVE_ATTRACT,
+            MOVE_REST
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 32,
+        .cute = 50,
+        .smart = 0,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_ADALYN] = {
+        .species = SPECIES_LOTAD,
+        .nickname = _("Tad"),
+        .trainerName = _("Adalyn"),
+        .trainerGfxId = OBJ_EVENT_GFX_POKEMON_RANGER_F,
+        .whichRank = CONTEST_RANK_SUPER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = TRUE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_MEGA_DRAIN,
+            MOVE_ZEN_HEADBUTT,
+            MOVE_GROWL,
+            MOVE_BUBBLE
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 56,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_LANDON] = {
+        .species = SPECIES_LAIRON,
+        .nickname = _("Wonwon"),
+        .trainerName = _("Landon"),
+        .trainerGfxId = OBJ_EVENT_GFX_POKE_MANIAC,
+        .whichRank = CONTEST_RANK_HYPER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = TRUE,
+        .aiPool_Tough = TRUE,
+        .moves =
+        {
+            MOVE_ROCK_TOMB,
+            MOVE_METAL_SOUND,
+            MOVE_IRON_DEFENSE,
+            MOVE_TAKE_DOWN
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 99,
+        .tough = 106,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_MCKENZIE] = {
+        .species = SPECIES_NUZLEAF,
+        .nickname = _("Nuzlad"),
+        .trainerName = _("Mckenzie"),
+        .trainerGfxId = OBJ_EVENT_GFX_POKEMON_RANGER_F,
+        .whichRank = CONTEST_RANK_HYPER,
+        .aiPool_Cool = TRUE,
+        .aiPool_Beauty = TRUE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_RAZOR_LEAF,
+            MOVE_EXTRASENSORY,
+            MOVE_EXPLOSION,
+            MOVE_NATURE_POWER
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 125,
+        .beauty = 110,
+        .cute = 0,
+        .smart = 0,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_NELSON] = {
+        .species = SPECIES_NINJASK,
+        .nickname = _("Ninjackie"),
+        .trainerName = _("Nelson"),
+        .trainerGfxId = OBJ_EVENT_GFX_NINJA_BOY,
+        .whichRank = CONTEST_RANK_HYPER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = TRUE,
+        .moves =
+        {
+            MOVE_FURY_SWIPES,
+            MOVE_HARDEN,
+            MOVE_X_SCISSOR,
+            MOVE_DOUBLE_TEAM
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 0,
+        .tough = 78,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_RILEY] = {
+        .species = SPECIES_SWELLOW,
+        .nickname = _("Wollew"),
+        .trainerName = _("Riley"),
+        .trainerGfxId = OBJ_EVENT_GFX_LADY,
+        .whichRank = CONTEST_RANK_HYPER,
+        .aiPool_Cool = TRUE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_WING_ATTACK,
+            MOVE_AIR_SLASH,
+            MOVE_FOCUS_ENERGY,
+            MOVE_QUICK_ATTACK
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 74,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 0,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_NATHAN] = {
+        .species = SPECIES_MIGHTYENA,
+        .nickname = _("Mighty"),
+        .trainerName = _("Nathan"),
+        .trainerGfxId = OBJ_EVENT_GFX_GENTLEMAN,
+        .whichRank = CONTEST_RANK_HYPER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = TRUE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_ODOR_SLEUTH,
+            MOVE_EMBARGO,
+            MOVE_ASSURANCE,
+            MOVE_CRUNCH
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 84,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_TWYLA] = {
+        .species = SPECIES_BEAUTIFLY,
+        .nickname = _("Papi"),
+        .trainerName = _("Twyla"),
+        .trainerGfxId = OBJ_EVENT_GFX_BEAUTY,
+        .whichRank = CONTEST_RANK_HYPER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = TRUE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_SILVER_WIND,
+            MOVE_MORNING_SUN,
+            MOVE_CONFIDE,
+            MOVE_AIR_CUTTER
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 128,
+        .cute = 0,
+        .smart = 0,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_GAVIN] = {
+        .species = SPECIES_SEAKING,
+        .nickname = _("The King"),
+        .trainerName = _("Gavin"),
+        .trainerGfxId = OBJ_EVENT_GFX_FISHERMAN,
+        .whichRank = CONTEST_RANK_HYPER,
+        .aiPool_Cool = TRUE,
+        .aiPool_Beauty = TRUE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_WATER_PULSE,
+            MOVE_WATERFALL,
+            MOVE_HORN_ATTACK,
+            MOVE_FURY_ATTACK
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 95,
+        .beauty = 95,
+        .cute = 0,
+        .smart = 0,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_LILY] = {
+        .species = SPECIES_CAMERUPT,
+        .nickname = _("Camelot"),
+        .trainerName = _("Lily"),
+        .trainerGfxId = OBJ_EVENT_GFX_PARASOL_LADY,
+        .whichRank = CONTEST_RANK_HYPER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = TRUE,
+        .aiPool_Cute = TRUE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_EARTH_POWER,
+            MOVE_FLAME_BURST,
+            MOVE_AMNESIA,
+            MOVE_GROWL
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 115,
+        .cute = 115,
+        .smart = 0,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_PRIMO] = {
+        .species = SPECIES_MACHOP,
+        .nickname = _("Chopchop"),
+        .trainerName = _("Primo"),
+        .trainerGfxId = OBJ_EVENT_GFX_HIKER,
+        .whichRank = CONTEST_RANK_HYPER,
+        .aiPool_Cool = TRUE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = TRUE,
+        .moves =
+        {
+            MOVE_BRICK_BREAK,
+            MOVE_BULK_UP,
+            MOVE_KARATE_CHOP,
+            MOVE_DUAL_CHOP
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 85,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 0,
+        .tough = 85,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_ALEJANDRA] = {
+        .species = SPECIES_LOMBRE,
+        .nickname = _("Nombre"),
+        .trainerName = _("Alejandra"),
+        .trainerGfxId = OBJ_EVENT_GFX_POKEMON_BREEDER_F,
+        .whichRank = CONTEST_RANK_HYPER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = TRUE,
+        .aiPool_Smart = TRUE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_FAKE_OUT,
+            MOVE_WATER_SPORT,
+            MOVE_NATURAL_GIFT,
+            MOVE_KNOCK_OFF
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 0,
+        .cute = 95,
+        .smart = 105,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_YOSHINARI] = {
+        .species = SPECIES_SEVIPER,
+        .nickname = _("Crawly"),
+        .trainerName = _("Yoshinari"),
+        .trainerGfxId = OBJ_EVENT_GFX_COLLECTOR,
+        .whichRank = CONTEST_RANK_HYPER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = TRUE,
+        .aiPool_Tough = TRUE,
+        .moves =
+        {
+            MOVE_VENOSHOCK,
+            MOVE_VENOM_DRENCH,
+            MOVE_GLARE,
+            MOVE_THIEF
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 96,
+        .tough = 117,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_LACY] = {
+        .species = SPECIES_WAILMER,
+        .nickname = _("Bobble"),
+        .trainerName = _("Lacy"),
+        .trainerGfxId = OBJ_EVENT_GFX_TUBER_F,
+        .whichRank = CONTEST_RANK_HYPER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = TRUE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_ASTONISH,
+            MOVE_ROLLOUT,
+            MOVE_REST,
+            MOVE_WATER_SPOUT
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 0,
+        .cute = 84,
+        .smart = 0,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_OWEN] = {
+        .species = SPECIES_MAGIKARP,
+        .nickname = _("Magi"),
+        .trainerName = _("Owen"),
+        .trainerGfxId = OBJ_EVENT_GFX_FISHERMAN,
+        .whichRank = CONTEST_RANK_HYPER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = TRUE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = TRUE,
+        .moves =
+        {
+            MOVE_SPLASH,
+            MOVE_FLAIL,
+            MOVE_TACKLE,
+            MOVE_BOUNCE
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 0,
+        .cute = 130,
+        .smart = 0,
+        .tough = 140,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_ADDISON] = {
+        .species = SPECIES_LUNATONE,
+        .nickname = _("Moony"),
+        .trainerName = _("Addison"),
+        .trainerGfxId = OBJ_EVENT_GFX_HEX_MANIAC,
+        .whichRank = CONTEST_RANK_HYPER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = TRUE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_PSYCHIC,
+            MOVE_FUTURE_SIGHT,
+            MOVE_HYPNOSIS,
+            MOVE_ROCK_POLISH
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 128,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_NONE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_JAYCE] = {
+        .species = SPECIES_PELIPPER,
+        .nickname = _("Piper"),
+        .trainerName = _("Jayce"),
+        .trainerGfxId = OBJ_EVENT_GFX_SAILOR,
+        .whichRank = CONTEST_RANK_HYPER,
+        .aiPool_Cool = TRUE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_WING_ATTACK,
+            MOVE_STOCKPILE,
+            MOVE_SWALLOW,
+            MOVE_SPIT_UP
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 104,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 0,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_YOKO] = {
+        .species = SPECIES_GYARADOS,
+        .nickname = _("Gyalaxy"),
+        .trainerName = _("Yoko"),
+        .trainerGfxId = OBJ_EVENT_GFX_OLD_WOMAN,
+        .whichRank = CONTEST_RANK_MASTER,
+        .aiPool_Cool = TRUE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = TRUE,
+        .moves =
+        {
+            MOVE_DRAGON_DANCE,
+            MOVE_HYPER_BEAM,
+            MOVE_CRUNCH,
+            MOVE_THRASH
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 200,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 0,
+        .tough = 182,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_JEFF] = {
+        .species = SPECIES_LOUDRED,
+        .nickname = _("Louduff"),
+        .trainerName = _("Jeff"),
+        .trainerGfxId = OBJ_EVENT_GFX_GUITARIST,
+        .whichRank = CONTEST_RANK_MASTER,
+        .aiPool_Cool = TRUE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_HYPER_VOICE,
+            MOVE_RETALIATE,
+            MOVE_HOWL,
+            MOVE_ECHOED_VOICE
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 174,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 0,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_ELSIE] = {
+        .species = SPECIES_DELCATTY,
+        .nickname = _("Mione"),
+        .trainerName = _("Elsie"),
+        .trainerGfxId = OBJ_EVENT_GFX_POKE_FAN_F,
+        .whichRank = CONTEST_RANK_MASTER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = TRUE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_FAKE_OUT,
+            MOVE_DOUBLE_SLAP,
+            MOVE_DISARMING_VOICE,
+            MOVE_SAFEGUARD
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 0,
+        .cute = 166,
+        .smart = 0,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_JAYLON] = {
+        .species = SPECIES_SLAKING,
+        .nickname = _("Slacker"),
+        .trainerName = _("Jaylon"),
+        .trainerGfxId = OBJ_EVENT_GFX_EXPERT_M,
+        .whichRank = CONTEST_RANK_MASTER,
+        .aiPool_Cool = TRUE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = TRUE,
+        .moves =
+        {
+            MOVE_BULK_UP,
+            MOVE_SLACK_OFF,
+            MOVE_CHIP_AWAY,
+            MOVE_COUNTER
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 190,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 0,
+        .tough = 213,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_LAYLA] = {
+        .species = SPECIES_GOREBYSS,
+        .nickname = _("Gorflir"),
+        .trainerName = _("Layla"),
+        .trainerGfxId = OBJ_EVENT_GFX_RUNNING_TRIATHLETE_F,
+        .whichRank = CONTEST_RANK_MASTER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = TRUE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_WHIRLPOOL,
+            MOVE_AQUA_TAIL,
+            MOVE_SURF,
+            MOVE_AGILITY
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 194,
+        .cute = 0,
+        .smart = 0,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_RUSLAN] = {
+        .species = SPECIES_KIRLIA,
+        .nickname = _("Lia"),
+        .trainerName = _("Ruslan"),
+        .trainerGfxId = OBJ_EVENT_GFX_PSYCHIC_M,
+        .whichRank = CONTEST_RANK_MASTER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = TRUE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_STORED_POWER,
+            MOVE_CALM_MIND,
+            MOVE_PSYCH_UP,
+            MOVE_TRICK_ROOM
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 186,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_LILIAS] = {
+        .species = SPECIES_VILEPLUME,
+        .nickname = _("Plumette"),
+        .trainerName = _("Lilias"),
+        .trainerGfxId = OBJ_EVENT_GFX_AROMA_LADY,
+        .whichRank = CONTEST_RANK_MASTER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = TRUE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_PETAL_BLIZZARD,
+            MOVE_PETAL_DANCE,
+            MOVE_GRASSY_TERRAIN,
+            MOVE_SOLAR_BEAM
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 170,
+        .cute = 0,
+        .smart = 0,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_AIDEN] = {
+        .species = SPECIES_DUSCLOPS,
+        .nickname = _("Topclops"),
+        .trainerName = _("Aiden"),
+        .trainerGfxId = OBJ_EVENT_GFX_OLD_MAN,
+        .whichRank = CONTEST_RANK_MASTER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = TRUE,
+        .aiPool_Tough = TRUE,
+        .moves =
+        {
+            MOVE_TOXIC,
+            MOVE_HEX,
+            MOVE_SPITE,
+            MOVE_CURSE
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 144,
+        .tough = 145,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_MADELYN] = {
+        .species = SPECIES_ILLUMISE,
+        .nickname = _("Princess"),
+        .trainerName = _("Madelyn"),
+        .trainerGfxId = OBJ_EVENT_GFX_BEAUTY,
+        .whichRank = CONTEST_RANK_MASTER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = TRUE,
+        .aiPool_Smart = TRUE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_WISH,
+            MOVE_PLAY_NICE,
+            MOVE_ZEN_HEADBUTT,
+            MOVE_CONFUSE_RAY
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 0,
+        .cute = 186,
+        .smart = 160,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_ELIJAH] = {
+        .species = SPECIES_SHARPEDO,
+        .nickname = _("Shargob"),
+        .trainerName = _("Elijah"),
+        .trainerGfxId = OBJ_EVENT_GFX_SAILOR,
+        .whichRank = CONTEST_RANK_MASTER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = TRUE,
+        .aiPool_Tough = TRUE,
+        .moves =
+        {
+            MOVE_POISON_FANG,
+            MOVE_ASSURANCE,
+            MOVE_RAGE,
+            MOVE_SCALD
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 190,
+        .tough = 190,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_HAILEY] = {
+        .species = SPECIES_LUVDISC,
+        .nickname = _("Lovelynn"),
+        .trainerName = _("Hailey"),
+        .trainerGfxId = OBJ_EVENT_GFX_TUBER_F,
+        .whichRank = CONTEST_RANK_MASTER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = TRUE,
+        .aiPool_Smart = TRUE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_DRAINING_KISS,
+            MOVE_SWEET_KISS,
+            MOVE_PSYCH_UP,
+            MOVE_SUBSTITUTE
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 0,
+        .cute = 174,
+        .smart = 210,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_CLAYTON] = {
+        .species = SPECIES_HERACROSS,
+        .nickname = _("Heracles"),
+        .trainerName = _("Clayton"),
+        .trainerGfxId = OBJ_EVENT_GFX_BLACK_BELT,
+        .whichRank = CONTEST_RANK_MASTER,
+        .aiPool_Cool = TRUE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = TRUE,
+        .moves =
+        {
+            MOVE_FURY_ATTACK,
+            MOVE_REVERSAL,
+            MOVE_ENDURE,
+            MOVE_GIGA_IMPACT
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 137,
+        .beauty = 0,
+        .cute = 0,
+        .smart = 0,
+        .tough = 137,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_AUDRY] = {
+        .species = SPECIES_ELECTRODE,
+        .nickname = _("Trode"),
+        .trainerName = _("Audry"),
+        .trainerGfxId = OBJ_EVENT_GFX_LASS,
+        .whichRank = CONTEST_RANK_MASTER,
+        .aiPool_Cool = TRUE,
+        .aiPool_Beauty = TRUE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_SONIC_BOOM,
+            MOVE_ELECTRO_BALL,
+            MOVE_DISCHARGE,
+            MOVE_EXPLOSION
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 180,
+        .beauty = 178,
+        .cute = 0,
+        .smart = 0,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_NONE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_IVAN] = {
+        .species = SPECIES_PICHU,
+        .nickname = _("Pinchurlink"),
+        .trainerName = _("Ivan"),
+        .trainerGfxId = OBJ_EVENT_GFX_POKE_FAN_M,
+        .whichRank = CONTEST_RANK_MASTER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = TRUE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_SWEET_KISS,
+            MOVE_TAIL_WHIP,
+            MOVE_CHARM,
+            MOVE_CONFIDE
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 0,
+        .cute = 208,
+        .smart = 0,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
+    [CONTEST_OPPONENT_JULIA] = {
+        .species = SPECIES_WOBBUFFET,
+        .nickname = _("Elizabeth"),
+        .trainerName = _("Julia"),
+        .trainerGfxId = OBJ_EVENT_GFX_TWIN,
+        .whichRank = CONTEST_RANK_MASTER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = TRUE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_COUNTER,
+            MOVE_MIRROR_COAT,
+            MOVE_SAFEGUARD,
+            MOVE_DESTINY_BOND
+        },
+        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 255, //Original score was above 255,
+        .cute = 0,
+        .smart = 0,
+        .tough = 0,
+        .sheen = 0, //TODO: Based on rank or above calculations
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
 };

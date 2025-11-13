@@ -234,10 +234,7 @@ upcoming
     - This gets solved if the TM list is expanded to have Scarlet and Violet's
     - I don't think this gets solved by the relearners though since Rotom's one teachable list still doesn't have it
         - CanLearnTeachableMove is modified instead
-- Find a way for newer gen TMs to be learned by Pokémon whose base forms don't learn the move (for example Eelektross or Toxtricity; or Capsakid not learning the Fire-type moves that Scovillain does)
-    - Add SV TMs to tutor list in Porymoves?
-    - Just make new tutors in towns or Battle Frontier?
-    - Remove Snarl and Psychic Noise from Toxtricity's level up learnset once this is implemented
+- Apply dynamic power to move relearner
 - Nature Power:
     - In ORAS, Sky Pillar gets Air Slash, but in RSE it just gets a regular cave
     - Nature Power details on summary screen (power/accuracy would be for in-battle status screen only)

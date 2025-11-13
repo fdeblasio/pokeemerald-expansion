@@ -6039,7 +6039,56 @@ u8 GetRelearnerTutorMoves(struct Pokemon *mon, u16 *moves)
 
     return numMoves;
 #else
-    return 0;
+    u16 learnedMoves[MAX_MON_MOVES] = {0};
+    u8 numMoves = 0;
+    u16 species = GetMonData(mon, MON_DATA_SPECIES, 0);
+    u16 i, move;
+    bool8 isTMMove[MOVES_COUNT] = {0};
+    const u16 *teachableLearnset = GetSpeciesTeachableLearnset(species);
+
+    for (i = 0; teachableLearnset[i] != MOVE_UNAVAILABLE; i++)
+    {
+        move = teachableLearnset[i];
+        for (u16 j = 0; j < NUM_ALL_MACHINES; j++)
+        {
+            if (GetTMHMMoveId(j + 1) == move){
+                isTMMove[move] = TRUE;
+                break;
+            }
+        }
+    }
+
+    for (u8 i = 0; i < MAX_MON_MOVES; i++)
+        learnedMoves[i] = GetMonData(mon, MON_DATA_MOVE1 + i, 0);
+
+    for (i = 0; teachableLearnset[i] != MOVE_UNAVAILABLE; i++)
+    {
+        move = teachableLearnset[i];
+
+        if (isTMMove[move] || !CanLearnTeachableMove(species, move))
+            continue;
+
+        u16 j;
+        for (j = 0; j < MAX_MON_MOVES; j++)
+        {
+            if (learnedMoves[j] == move)
+                break;
+        }
+        if (j < MAX_MON_MOVES)
+            continue;
+
+        for (j = 0; j < numMoves; j++)
+        {
+            if (moves[j] == move)
+                break;
+        }
+        if (j < numMoves)
+            continue;
+
+        moves[numMoves++] = move;
+    }
+
+    return numMoves;
 #endif // P_TUTOR_MOVES_ARRAY
 }
 

@@ -532,6 +532,9 @@
 - Scary Face
 - Take Down
 
+#### Move Relearner:
+- Tailwind
+
 ### Moves:
 - All moves automatically have their max PP amount
 - Added custom 40 BP moves for type/category combos that were missing them

@@ -6088,8 +6088,45 @@ u8 GetRelearnerTutorMoves(struct Pokemon *mon, u16 *moves)
         moves[numMoves++] = move;
     }
 
+    if (P_SORT_MOVES)
+        SortMovesAlphabetically(moves, numMoves);
+
     return numMoves;
 #endif // P_TUTOR_MOVES_ARRAY
+}
+
+u8 GetRelearnerOtherMoves(struct Pokemon *mon, u16 *moves)
+{
+    u16 species = GetMonData(mon, MON_DATA_SPECIES_OR_EGG, 0);
+
+    if (species == SPECIES_EGG)
+        return 0;
+
+    u16 tutorMoves[MAX_RELEARNER_MOVES] = {0};
+    u16 numTutorMoves = 0;
+    if (!FlagGet(P_FLAG_TUTOR_MOVES) && !P_ENABLE_MOVE_RELEARNERS)
+        return 0;
+    else
+        numTutorMoves = GetRelearnerTutorMoves(mon, tutorMoves);
+
+    u16 eggMoves[EGG_MOVES_ARRAY_COUNT] = {0};
+    u16 numEggMoves = 0;
+    if (!FlagGet(P_FLAG_EGG_MOVES) && !P_ENABLE_MOVE_RELEARNERS)
+        return 0;
+    else
+        numEggMoves = GetRelearnerEggMoves(mon, eggMoves);
+
+    for (u8 i = 0; i < numTutorMoves; i++)
+        moves[i] = tutorMoves[i];
+
+    for (u8 i = 0; i < numEggMoves; i++)
+        moves[i + numTutorMoves] = eggMoves[i];
+
+    u8 numMoves = numTutorMoves + numEggMoves;
+    if (P_SORT_MOVES)
+        SortMovesAlphabetically(moves, numMoves);
+
+    return numMoves;
 }
 
 u8 GetNumberOfLevelUpMoves(struct Pokemon *mon)
@@ -6146,6 +6183,11 @@ u8 GetNumberOfTutorMoves(struct Pokemon *mon)
         return 0;
 
     return GetRelearnerTutorMoves(mon, moves);
+}
+
+u8 GetNumberOfOtherMoves(struct Pokemon *mon)
+{
+    return GetNumberOfEggMoves(mon) + GetNumberOfTutorMoves(mon);
 }
 
 u8 GetLevelUpMovesBySpecies(u16 species, u16 *moves)

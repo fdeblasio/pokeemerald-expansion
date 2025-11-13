@@ -100,16 +100,13 @@ upcoming
             - Interviewer/Cameraman (can use Gabby and Ty)
             - Birch
             - Scott
-            - Existing classes with no contest opponent: RUNNING_TRIATHLETE_F, TUBER_M
-            - NPC: BOY_2, BOY_3, GAMEBOY_KID, LINK_RECEPTIONIST, LITTLE_GIRL, MAN_1, MART_EMPLOYEE, MOM, MYSTERY_GIFT_MAN, OLD_MAN, OLD_WOMAN, REPORTER_M, ROOFTOP_SALE_WOMAN, UNION_ROOM_NURSE
+            - Existing classes with no contest opponent: TUBER_M
+            - NPC: BOY_2, BOY_3, GAMEBOY_KID, LINK_RECEPTIONIST, LITTLE_GIRL, MAN_1, MART_EMPLOYEE, MOM, MYSTERY_GIFT_MAN, REPORTER_M, ROOFTOP_SALE_WOMAN, UNION_ROOM_NURSE
             - Gym Leaders/Elite Four/Frontier Brains
             - Could maybe have a Pokemon represent itself
         - Moves with category in description are that category (like doing something cutely being Cute)
-        - Add ORAS opponents https://bulbapedia.bulbagarden.net/wiki/List_of_Contest_opponents_(Generation_VI)
+        - Add ORAS special (Chad, Lisia, Wallace) https://bulbapedia.bulbagarden.net/wiki/List_of_Contest_opponents_(Generation_VI)
         - Add default winners as opponets?
-        - Revert some Gen 6 effects
-            - Rage or Metronome going back to repeating
-            - The new repeating ones don't make sense
         - Implement Mega evolution
         - Improve white-on-white text
 - Mt. Pyre:

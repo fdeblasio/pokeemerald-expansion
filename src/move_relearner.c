@@ -756,13 +756,13 @@ static void DoMoveRelearnerMain(void)
             }
 
             FreeMoveRelearnerResources();
-            gRelearnMode = RELEARN_MODE_NONE; //TODO Update this and remove below block maybe?
             if (FlagGet(FLAG_PARTY_MOVES)) {
                 CB2_ReturnToPartyMenuFromSummaryScreen();
                 FlagClear(FLAG_PARTY_MOVES);
             } else {
                 SetMainCallback2(CB2_ReturnToField);
-            }
+            } //See what happens when this blog is removed
+            gRelearnMode = RELEARN_MODE_NONE;
         }
         break;
     case MENU_STATE_FADE_FROM_SUMMARY_SCREEN:
@@ -1005,6 +1005,9 @@ static void CreateLearnableMovesList(void)
         break;
     case MOVE_RELEARNER_TUTOR_MOVES:
         sMoveRelearnerStruct->numMenuChoices = GetRelearnerTutorMoves(&gPlayerParty[sMoveRelearnerStruct->partyMon], sMoveRelearnerStruct->movesToLearn);
+        break;
+    case MOVE_RELEARNER_OTHER_MOVES:
+        sMoveRelearnerStruct->numMenuChoices = GetRelearnerOtherMoves(&gPlayerParty[sMoveRelearnerStruct->partyMon], sMoveRelearnerStruct->movesToLearn);
         break;
     case MOVE_RELEARNER_LEVEL_UP_MOVES:
     default:

@@ -105,6 +105,7 @@ enum {
 	MENU_EGG_MOVES,
     MENU_TM_MOVES,
     MENU_TUTOR_MOVES,
+    MENU_OTHER_MOVES,
 	MENU_SUB_MOVES,
     MENU_TOSS,
     MENU_CATALOG_BULB,
@@ -489,6 +490,7 @@ static void CursorCb_ChangeLevelUpMoves(u8);
 static void CursorCb_ChangeEggMoves(u8);
 static void CursorCb_ChangeTMMoves(u8);
 static void CursorCb_ChangeTutorMoves(u8);
+static void CursorCb_ChangeOtherMoves(u8);
 static void CursorCb_LearnMovesSubMenu(u8);
 static void CursorCb_CatalogBulb(u8);
 static void CursorCb_CatalogOven(u8);
@@ -1112,6 +1114,9 @@ static void DisplayPartyPokemonDataForRelearner(u8 slot)
         break;
     case MOVE_RELEARNER_TUTOR_MOVES:
         hasMoves = (GetNumberOfTutorMoves(mon) > 0);
+        break;
+    case MOVE_RELEARNER_OTHER_MOVES:
+        hasMoves = (GetNumberOfOtherMoves(mon) > 0);
         break;
     default:
         hasMoves = (GetNumberOfLevelUpMoves(mon) > 0);
@@ -2933,7 +2938,7 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
         if (P_PARTY_MOVE_RELEARNER
         && (GetMonData(&mons[slotId], MON_DATA_SPECIES)
         && (GetNumberOfLevelUpMoves(&mons[slotId]) || GetNumberOfEggMoves(&mons[slotId])
-        || GetNumberOfTMMoves(&mons[slotId]) || GetNumberOfTutorMoves(&mons[slotId]))))
+        || GetNumberOfTMMoves(&mons[slotId]) || GetNumberOfTutorMoves(&mons[slotId]) || GetNumberOfOtherMoves(&mons[slotId]))))
             AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_SUB_MOVES);
 
         if (ItemIsMail(GetMonData(&mons[slotId], MON_DATA_HELD_ITEM)))
@@ -2950,22 +2955,16 @@ static void SetPartyMonLearnMoveSelectionActions(struct Pokemon *mons, u8 slotId
     if (GetMonData(&mons[slotId], MON_DATA_SPECIES) != SPECIES_NONE && GetNumberOfLevelUpMoves(&mons[slotId]) > 0)
         AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_LEVEL_UP_MOVES);
 
-    if (P_ENABLE_MOVE_RELEARNERS || (P_FLAG_EGG_MOVES != 0 && FlagGet(P_FLAG_EGG_MOVES)))
-    {
-	    if (GetMonData(&mons[slotId], MON_DATA_SPECIES) != SPECIES_NONE && GetNumberOfEggMoves(&mons[slotId]) > 0)
-            AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_EGG_MOVES);
-    }
-
     if (P_ENABLE_MOVE_RELEARNERS || P_TM_MOVES_RELEARNER)
     {
         if (GetMonData(&mons[slotId], MON_DATA_SPECIES) != SPECIES_NONE && GetNumberOfTMMoves(&mons[slotId]) > 0)
             AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_TM_MOVES);
     }
 
-    if (P_ENABLE_MOVE_RELEARNERS || (P_FLAG_TUTOR_MOVES != 0 && FlagGet(P_FLAG_TUTOR_MOVES)))
+    if (P_ENABLE_MOVE_RELEARNERS || (P_FLAG_TUTOR_MOVES != 0 && FlagGet(P_FLAG_TUTOR_MOVES)) || (P_FLAG_EGG_MOVES != 0 && FlagGet(P_FLAG_EGG_MOVES)))
     {
-        if (GetMonData(&mons[slotId], MON_DATA_SPECIES) != SPECIES_NONE && GetNumberOfTutorMoves(&mons[slotId]) > 0)
-            AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_TUTOR_MOVES);
+        if (GetMonData(&mons[slotId], MON_DATA_SPECIES) != SPECIES_NONE && GetNumberOfOtherMoves(&mons[slotId]) > 0)
+            AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_OTHER_MOVES);
     }
 
     AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_CANCEL1);
@@ -7931,6 +7930,9 @@ static void CB2_ChooseMonForMoveRelearner(void)
         case MOVE_RELEARNER_TUTOR_MOVES:
             gSpecialVar_0x8005 = GetNumberOfTutorMoves(&gPlayerParty[gSpecialVar_0x8004]);
             break;
+        case MOVE_RELEARNER_OTHER_MOVES:
+            gSpecialVar_0x8005 = GetNumberOfOtherMoves(&gPlayerParty[gSpecialVar_0x8004]);
+            break;
         default:
             gSpecialVar_0x8005 = GetNumberOfLevelUpMoves(&gPlayerParty[gSpecialVar_0x8004]);
             break;
@@ -8064,48 +8066,38 @@ void IsLastMonThatKnowsSurf(void)
     }
 }
 
+#define CHANGE_MOVES(relearnerState)          \
+    PlaySE(SE_SELECT);                        \
+    gMoveRelearnerState = relearnerState;     \
+    gRelearnMode = RELEARN_MODE_PARTY_MENU;   \
+    gLastViewedMonIndex = gPartyMenu.slotId;  \
+    gSpecialVar_0x8004 = gLastViewedMonIndex; \
+    TeachMoveRelearnerMove();                 \
+    Task_ClosePartyMenu(taskId);
+
 static void CursorCb_ChangeLevelUpMoves(u8 taskId)
 {
-    PlaySE(SE_SELECT);
-	gMoveRelearnerState = MOVE_RELEARNER_LEVEL_UP_MOVES;
-    gRelearnMode = RELEARN_MODE_PARTY_MENU;
-    gLastViewedMonIndex = gPartyMenu.slotId;
-    gSpecialVar_0x8004 = gLastViewedMonIndex;
-    TeachMoveRelearnerMove();
-    Task_ClosePartyMenu(taskId);
+    CHANGE_MOVES(MOVE_RELEARNER_LEVEL_UP_MOVES)
 }
 
 static void CursorCb_ChangeEggMoves(u8 taskId)
 {
-    PlaySE(SE_SELECT);
-	gMoveRelearnerState = MOVE_RELEARNER_EGG_MOVES;
-    gRelearnMode = RELEARN_MODE_PARTY_MENU;
-    gLastViewedMonIndex = gPartyMenu.slotId;
-    gSpecialVar_0x8004 = gLastViewedMonIndex;
-    TeachMoveRelearnerMove();
-    Task_ClosePartyMenu(taskId);
+    CHANGE_MOVES(MOVE_RELEARNER_EGG_MOVES)
 }
 
 static void CursorCb_ChangeTMMoves(u8 taskId)
 {
-    PlaySE(SE_SELECT);
-	gMoveRelearnerState = MOVE_RELEARNER_TM_MOVES;
-    gRelearnMode = RELEARN_MODE_PARTY_MENU;
-    gLastViewedMonIndex = gPartyMenu.slotId;
-    gSpecialVar_0x8004 = gLastViewedMonIndex;
-    TeachMoveRelearnerMove();
-    Task_ClosePartyMenu(taskId);
+    CHANGE_MOVES(MOVE_RELEARNER_TM_MOVES)
 }
 
 static void CursorCb_ChangeTutorMoves(u8 taskId)
 {
-    PlaySE(SE_SELECT);
-	gMoveRelearnerState = MOVE_RELEARNER_TUTOR_MOVES;
-    gRelearnMode = RELEARN_MODE_PARTY_MENU;
-    gLastViewedMonIndex = gPartyMenu.slotId;
-    gSpecialVar_0x8004 = gLastViewedMonIndex;
-    TeachMoveRelearnerMove();
-    Task_ClosePartyMenu(taskId);
+    CHANGE_MOVES(MOVE_RELEARNER_TUTOR_MOVES)
+}
+
+static void CursorCb_ChangeOtherMoves(u8 taskId)
+{
+    CHANGE_MOVES(MOVE_RELEARNER_OTHER_MOVES)
 }
 
 static void CursorCb_LearnMovesSubMenu(u8 taskId)

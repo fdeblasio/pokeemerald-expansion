@@ -723,6 +723,7 @@ struct
 	[MENU_EGG_MOVES]       = {COMPOUND_STRING("Egg Moves"),       CursorCb_ChangeEggMoves},
 	[MENU_TM_MOVES]        = {COMPOUND_STRING("TM Moves"),        CursorCb_ChangeTMMoves},
 	[MENU_TUTOR_MOVES]     = {COMPOUND_STRING("Tutor Moves"),     CursorCb_ChangeTutorMoves},
+	[MENU_OTHER_MOVES]     = {COMPOUND_STRING("Other Moves"),     CursorCb_ChangeOtherMoves},
     [MENU_SUB_MOVES]       = {COMPOUND_STRING("Learn Moves"),     CursorCb_LearnMovesSubMenu},
     [MENU_CATALOG_BULB]    = {COMPOUND_STRING("Light bulb"),      CursorCb_CatalogBulb},
     [MENU_CATALOG_OVEN]    = {COMPOUND_STRING("Microwave oven"),  CursorCb_CatalogOven},

@@ -5900,8 +5900,8 @@ u8 GetRelearnerLevelUpMoves(struct Pokemon *mon, u16 *moves)
         species = (P_PRE_EVO_MOVES ? GetSpeciesPreEvolution(species) : SPECIES_NONE);
     } while (species != SPECIES_NONE);
 
-    if (P_SORT_MOVES)
-        SortMovesAlphabetically(moves, numMoves);
+//    if (P_SORT_MOVES)
+//        SortMovesAlphabetically(moves, numMoves);
 
     return numMoves;
 }
@@ -6073,7 +6073,7 @@ u8 GetNumberOfTMMoves(struct Pokemon *mon)
     if (!P_TM_MOVES_RELEARNER)
         return 0;
 
-    if (!P_ENABLE_ALL_TM_MOVES && !IsBagPocketNonEmpty(POCKET_TM_HM))
+    if (!P_ENABLE_ALL_TM_MOVES && !IsBagPocketNonEmpty(POCKET_TM))
         return 0;
 
     u16 moves[MAX_RELEARNER_MOVES] = {0};

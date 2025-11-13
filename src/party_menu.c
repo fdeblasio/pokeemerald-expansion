@@ -84,7 +84,6 @@ enum {
     MENU_SUMMARY,
     MENU_SWITCH,
     MENU_NICKNAME,
-    MENU_MOVES,
     MENU_CANCEL1,
     MENU_ITEM,
     MENU_GIVE,
@@ -468,7 +467,6 @@ static void BlitBitmapToPartyWindow_RightColumn(u8, u8, u8, u8, u8, bool8);
 static void CursorCb_Summary(u8);
 static void CursorCb_Switch(u8);
 static void CursorCb_Nickname(u8);
-static void CursorCb_Moves(u8);
 static void CursorCb_Cancel1(u8);
 static void CursorCb_Item(u8);
 static void CursorCb_Give(u8);
@@ -2914,12 +2912,6 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
     sPartyMenuInternal->numActions = 0;
     AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_SUMMARY);
 
-    if (P_PARTY_MOVE_RELEARNER
-     && (GetMonData(&mons[slotId], MON_DATA_SPECIES)
-     && (GetNumberOfLevelUpMoves(&mons[slotId]) || GetNumberOfEggMoves(&mons[slotId])
-     || GetNumberOfTMMoves(&mons[slotId]) || GetNumberOfTutorMoves(&mons[slotId]))))
-        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_SUB_MOVES);
-
     // Add field moves to action list
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
@@ -2937,8 +2929,13 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
     {
         if (GetMonData(&mons[1], MON_DATA_SPECIES) != SPECIES_NONE)
             AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_SWITCH);
-        if (GetNumberOfRelearnableMoves(&mons[slotId]) != 0)
-            AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_MOVES);
+
+        if (P_PARTY_MOVE_RELEARNER
+        && (GetMonData(&mons[slotId], MON_DATA_SPECIES)
+        && (GetNumberOfLevelUpMoves(&mons[slotId]) || GetNumberOfEggMoves(&mons[slotId])
+        || GetNumberOfTMMoves(&mons[slotId]) || GetNumberOfTutorMoves(&mons[slotId]))))
+            AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_SUB_MOVES);
+
         if (ItemIsMail(GetMonData(&mons[slotId], MON_DATA_HELD_ITEM)))
             AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_MAIL);
         else
@@ -3124,19 +3121,6 @@ static void CursorCb_Nickname(u8 taskId)
     PlaySE(SE_SELECT);
     gSpecialVar_0x8004 = gPartyMenu.slotId;
     sPartyMenuInternal->exitCallback = ChangePokemonNickname;
-    Task_ClosePartyMenu(taskId);
-}
-
-static void CursorCb_Moves(u8 taskId)
-{
-    PlaySE(SE_SELECT);
-	FlagSet(FLAG_PARTY_MOVES);
-    gLastViewedMonIndex = gPartyMenu.slotId;
-    gSpecialVar_0x8004 = gPartyMenu.slotId;
-	gSpecialVar_0x8005 = GetNumberOfRelearnableMoves(&gPlayerParty[gSpecialVar_0x8004]);
-	DisplayPartyPokemonDataForRelearner(gSpecialVar_0x8004);
-	TeachMoveRelearnerMove();
-    sPartyMenuInternal->exitCallback = TeachMoveRelearnerMove;
     Task_ClosePartyMenu(taskId);
 }
 

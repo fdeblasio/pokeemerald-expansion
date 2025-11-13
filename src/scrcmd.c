@@ -3283,7 +3283,7 @@ bool8 ScrCmd_istmrelearneractive(struct ScriptContext *ctx)
     Script_RequestEffects(SCREFF_V1);
 
     if ((P_TM_MOVES_RELEARNER || P_ENABLE_MOVE_RELEARNERS)
-     && (P_ENABLE_ALL_TM_MOVES || IsBagPocketNonEmpty(POCKET_TM_HM)))
+     && (P_ENABLE_ALL_TM_MOVES || IsBagPocketNonEmpty(POCKET_TM)))
         ScriptCall(ctx, ptr);
 
     return FALSE;

@@ -227,7 +227,6 @@ upcoming
         - Instead, maybe both gym battles AND G/T battles check both badges and existing flags/GabbyAndTyGetBattleNum?
 
 ### Moves
-- Tailwind tutor?
 - Aqua Ring heals more with Water Bubble? In rain?
 - Consolidate Ever Grande tutor code
 - Add regular moves with GMax effects?
@@ -236,6 +235,7 @@ upcoming
 - Find a way for newer gen TMs to be learned by Pokémon whose base forms don't learn the move (for example Eelektross or Toxtricity; or Capsakid not learning the Fire-type moves that Scovillain does)
     - Just make new tutors in towns or Battle Frontier?
     - Remove Snarl and Psychic Noise from Toxtricity's level up learnset once this is implemented
+    - Tailwind tutor?
 - Nature Power:
     - In ORAS, Sky Pillar gets Air Slash, but in RSE it just gets a regular cave
     - Nature Power details on summary screen (power/accuracy would be for in-battle status screen only)

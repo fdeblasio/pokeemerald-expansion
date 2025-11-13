@@ -377,7 +377,124 @@
 - Dream Eater
 
 #### Move Relearner:
+- Acid Spray
+- Agility
+- Air Cutter
+- Alluring Voice
+- Amnesia
+- Avalanche
+- Baton Pass
+- Blast Burn
+- Brave Bird
+- Breaking Swipe
+- Bug Bite
+- Bulldoze
+- Burning Jealousy
+- Charge
+- Charge Beam
+- Charm
+- Chilling Water
+- Close Combat
+- Coaching
+- Confuse Ray
+- Curse
+- Disarming Voice
+- Draco Meteor
+- Dragon Cheer
+- Dragon Tail
+- Draining Kiss
+- Eerie Impulse
+- Electro Ball
+- Electroweb
+- Encore
+- Endeavor
+- Fake Tears
+- Feather Dance
+- Fire Fang
+- Fire Pledge
+- Fire Spin
+- Flame Charge
+- Flare Blitz
+- Fling
+- Flip Turn
+- Foul Play
+- Frenzy Plant
+- Future Sight
+- Grass Pledge
+- Gravity
+- Gunk Shot
+- Gyro Ball
+- Hard Press
+- Haze
+- Heat Crash
+- Heat Wave
+- Heavy Slam
+- Helping Hand
+- Hex
+- Hurricane
+- Hydro Cannon
+- Hydro Pump
+- Ice Fang
+- Icicle Spear
+- Imprison
+- Lash Out
+- Leaf Storm
+- Low Kick
+- Low Sweep
+- Magical Leaf
+- Metal Claw
+- Metal Sound
+- Meteor Beam
+- Misty Explosion
+- Mud Shot
+- Muddy Water
+- Mud-Slap
+- Night Shade
+- Outrage
+- Pain Split
+- Petal Blizzard
+- Phantom Force
+- Poison Tail
+- Pollen Puff
+- Poltergeist
+- Pounce
+- Psybeam
+- Psychic Noise
+- Psyshock
+- Reversal
+- Rock Blast
+- Sand Tomb
+- Scale Shot
+- Scary Face
+- Skitter Smack
+- Sludge Wave
+- Smack Down
+- Smart Strike
+- Snarl
+- Spikes
+- Spite
+- Steel Beam
+- Stomping Tantrum
+- Stored Power
+- Struggle Bug
+- Super Fang
 - Tailwind
+- Take Down
+- Thunder Fang
+- Toxic Spikes
+- Trailblaze
+- Trick
+- Triple Axel
+- Upper Hand
+- Uproar
+- Vacuum Wave
+- Venoshock
+- Volt Switch
+- Water Pledge
+- Weather Ball
+- Whirlpool
+- Wild Charge
+
 
 ### Moves:
 - All moves automatically have their max PP amount
@@ -2328,7 +2445,8 @@
     - All stats: 70->80
     - Learns Swift, Surf, Flamethrower, Ice Beam, Thunder, and Solar Beam by level up
     - Learns Overheat by TM
-    - Learns Gust, Twister, Heat Wave, and Fairy Wind by Egg Move
+    - Learns Gust, Twister, and Fairy Wind by Egg Move
+    - Learns Heat Wave by move relearner
 
 - Kecleon:
     - Learns Covet and Body Slam by level up
@@ -2363,7 +2481,7 @@
 
 - Absol:
     - Hidden Ability: Justified->Sharpness
-    - Learns Spite by Egg Move
+    - Learns Spite by move relearner
 
 - Snorunt/Glalie/Froslass:
     - Learn Aurora Beam and Ice Beam by level up
@@ -3597,13 +3715,13 @@
     - SpA: 40->50
     - Spe: 26->40
     - Learns Thunder Shock, Thunder Fang, Shock Wave, Discharge, and Thunderbolt by level up
-    - Learns Ice Fang by Egg Move
+    - Learns Ice Fang by move relearner
 
 - Boltund:
     - HP: 59->60
     - Spe: 121->125
     - Learns Thunder Shock, Thunder Fang, Shock Wave, Discharge, Thunderbolt, and Supercell Slam by level up
-    - Learns Ice Fang by Egg Move
+    - Learns Ice Fang by move relearner
 
 - Rolycoly (postgame):
     - Learns Rock Throw, Rock Tomb, Rock Slide, and Power Gem by level up
@@ -3834,7 +3952,7 @@
 - Wattrel/Kilowattrel:
     - Learn Gust, Shock Wave, Air Cutter, Tailwind, Air Slash, and Thunder by level up
     - Learn Rain Dance by TM
-    - Learn Heat Wave by Egg Move
+    - Learn Heat Wave by move relearner
 
 - Maschiff/Mabosstiff:
     - Learn Pursuit by level up

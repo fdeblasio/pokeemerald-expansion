@@ -21192,7 +21192,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
 #define MAX_MOVE_INFO               \
     .effect = EFFECT_MAX_MOVE,      \
-    .power = 1,                     \
     .accuracy = 0,                  \
     .pp = 10,                       \
     .target = MOVE_TARGET_SELECTED, \
@@ -21466,7 +21465,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Venusaur attack.\n"
             "Damages for 4 turns."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_GRASS,
         .battleAnimScript = gBattleAnimMove_GMaxVineLash,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21480,7 +21479,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Charizard attack.\n"
             "Damages for 4 turns."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_FIRE,
         .battleAnimScript = gBattleAnimMove_GMaxWildfire,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21494,7 +21493,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Blastoise attack.\n"
             "Damages for 4 turns."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_WATER,
         .battleAnimScript = gBattleAnimMove_GMaxCannonade,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21508,7 +21507,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Butterfree attack.\n"
             "Poison, paralysis, or sleep."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_BUG,
         .battleAnimScript = gBattleAnimMove_GMaxBefuddle,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21522,7 +21521,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Pikachu attack.\n"
             "Paralyzes opponents."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_ELECTRIC,
         .battleAnimScript = gBattleAnimMove_GMaxVoltCrash,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21536,7 +21535,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Meowth attack.\n"
             "Confuses and earns money."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_NORMAL,
         .battleAnimScript = gBattleAnimMove_GMaxGoldRush,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21550,7 +21549,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Machamp attack.\n"
             "Boosts critical-hit ratio."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_FIGHTING,
         .battleAnimScript = gBattleAnimMove_GMaxChiStrike,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21564,7 +21563,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Gengar attack.\n"
             "Prevents foes from escaping."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_GHOST,
         .battleAnimScript = gBattleAnimMove_GMaxTerror,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21578,7 +21577,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Kingler attack.\n"
             "Harshly lowers foe's Speed."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_WATER,
         .battleAnimScript = gBattleAnimMove_GMaxFoamBurst,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21592,7 +21591,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Lapras attack.\n"
             "Reduces damage for 5 turns."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_ICE,
         .battleAnimScript = gBattleAnimMove_GMaxResonance,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21606,7 +21605,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Eevee attack.\n"
             "Infatuates opponents."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_NORMAL,
         .battleAnimScript = gBattleAnimMove_GMaxCuddle,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21620,7 +21619,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Snorlax attack.\n"
             "Restores eaten Berries."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_NORMAL,
         .battleAnimScript = gBattleAnimMove_GMaxReplenish,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21634,7 +21633,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Garbodor attack.\n"
             "Poisons opponents."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_POISON,
         .battleAnimScript = gBattleAnimMove_GMaxMalodor,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21648,7 +21647,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Melmetal attack.\n"
             "Prevents repeat move use."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_STEEL,
         .battleAnimScript = gBattleAnimMove_GMaxMeltdown,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21662,7 +21661,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Rillaboom attack.\n"
             "Ignores target's abilities."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_GRASS,
         .ignoresTargetAbility = TRUE,
         .battleAnimScript = gBattleAnimMove_GMaxDrumSolo,
@@ -21677,7 +21676,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Cinderace attack.\n"
             "Ignores target's abilities."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_FIRE,
         .ignoresTargetAbility = TRUE,
         .battleAnimScript = gBattleAnimMove_GMaxFireball,
@@ -21692,7 +21691,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Inteleon attack.\n"
             "Ignores target's abilities."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_WATER,
         .ignoresTargetAbility = TRUE,
         .battleAnimScript = gBattleAnimMove_GMaxHydrosnipe,
@@ -21707,7 +21706,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Corviknight attack.\n"
             "Removes opponent screens."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_FLYING,
         .battleAnimScript = gBattleAnimMove_GMaxWindRage,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21721,7 +21720,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Orbeetle attack.\n"
             "Changes gravity for 5 turns."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_PSYCHIC,
         .battleAnimScript = gBattleAnimMove_GMaxGravitas,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21735,7 +21734,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Drednaw attack.\n"
             "Scatters sharp rocks."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_WATER,
         .battleAnimScript = gBattleAnimMove_GMaxStonesurge,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21749,7 +21748,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Coalossal attack.\n"
             "Damages for 4 turns."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_ROCK,
         .battleAnimScript = gBattleAnimMove_GMaxVolcalith,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21763,7 +21762,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Flapple attack.\n"
             "Lowers foe's evasiveness."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_GRASS,
         .battleAnimScript = gBattleAnimMove_GMaxTartness,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21777,7 +21776,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Appletun attack.\n"
             "Heals ally status conditions."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_GRASS,
         .battleAnimScript = gBattleAnimMove_GMaxSweetness,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21791,7 +21790,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Sandaconda attack.\n"
             "Traps foes in a sandstorm."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_GROUND,
         .battleAnimScript = gBattleAnimMove_GMaxSandblast,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21805,7 +21804,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Toxtricity attack.\n"
             "Poisons or paralyzes foes."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_ELECTRIC,
         .battleAnimScript = gBattleAnimMove_GMaxStunShock,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21819,7 +21818,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Toxtricity attack.\n"
             "Traps foes in flames."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_FIRE,
         .battleAnimScript = gBattleAnimMove_GMaxCentiferno,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21833,7 +21832,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Hatterene attack.\n"
             "Confuses opponents."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_FAIRY,
         .battleAnimScript = gBattleAnimMove_GMaxSmite,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21848,7 +21847,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Grimmsnarl attack.\n"
             "Lulls foes into sleep."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_DARK,
         .battleAnimScript = gBattleAnimMove_GMaxSnooze,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21862,7 +21861,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Alcremie attack.\n"
             "Heals ally HP."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_FAIRY,
         .battleAnimScript = gBattleAnimMove_GMaxFinale,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21876,7 +21875,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Copperajah attack.\n"
             "Scatters sharp spikes."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_STEEL,
         .battleAnimScript = gBattleAnimMove_GMaxSteelsurge,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21890,7 +21889,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Duraludon attack.\n"
             "Reduces target's PP."),    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_DRAGON,
         .battleAnimScript = gBattleAnimMove_GMaxDepletion,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21902,7 +21901,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("G-Max One Blow"),
         .description = sGMaxOneBlowDescription,    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_DARK,
         .ignoresProtect = TRUE,
         .battleAnimScript = gBattleAnimMove_GMaxOneBlow,
@@ -21912,7 +21911,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("G-Max Rapid Flow"),
         .description = sGMaxOneBlowDescription,    //ANIM TODO
-        GMAX_MOVE_INFO
+        GMAX_MOVE_INFO,
         .type = TYPE_WATER,
         .ignoresProtect = TRUE,
         .battleAnimScript = gBattleAnimMove_GMaxRapidFlow,

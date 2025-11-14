@@ -86,8 +86,7 @@ upcoming
     - Edit contests?/Contests overhaul
         - Update Pledge moves to combo with each other like the elemental fangs
         - Pokemon in contests should be set to seen in Pokedex
-        - Add Secret Rank for cool trainer ideas?
-            - Would function the same as master
+        - Add unique ideas to Special Rank
         - Utilize non-trainer/other important GFX
             - weird guy
             - Devon employee/the similar MAN_2
@@ -99,6 +98,10 @@ upcoming
             - Scott
             - NPC: BOY_2, BOY_3, GAMEBOY_KID, LINK_RECEPTIONIST, LITTLE_GIRL, MAN_1, MART_EMPLOYEE, MOM, MYSTERY_GIFT_MAN, REPORTER_M, ROOFTOP_SALE_WOMAN, UNION_ROOM_NURSE
             - Gym Leaders/Elite Four/Frontier Brains
+            - Trainers using the contest Pikachus
+        - Update audience (CreateXContestAudience)
+            - Wallace and/or Oranguru could be in early ones for foreshadowing
+            - Add some of the special NPCs listed above
         - Add ORAS special (Chad, Lisia, Wallace) https://bulbapedia.bulbagarden.net/wiki/List_of_Contest_opponents_(Generation_VI)
         - Add default winners as opponets?
         - Implement Mega evolution

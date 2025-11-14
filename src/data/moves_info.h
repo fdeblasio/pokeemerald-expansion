@@ -20935,6 +20935,15 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_MalignantChain,
     },
 
+#define Z_MOVE_INFO                 \
+    .effect = EFFECT_HIT,           \
+    .power = 1,                     \
+    .accuracy = 0,                  \
+    .pp = 1,                        \
+    .target = TARGET_SELECTED,      \
+    .priority = 0,                  \
+    .category = DAMAGE_CATEGORY_PHYSICAL //determined from move type
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =
     {
@@ -20942,14 +20951,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Builds momentum and crashes\n"
             "into the foe. Power varies."),
-        .effect = EFFECT_HIT,
-        .power = 1,
+        Z_MOVE_INFO,
         .type = TYPE_NORMAL,
-        .accuracy = 0,
-        .pp = 1,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,    //determined from move type
         .battleAnimScript = gBattleAnimMove_BreakneckBlitz,
     },
     [MOVE_ALL_OUT_PUMMELING] =
@@ -20958,14 +20961,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Rams an energy orb into\n"
             "the target. Power varies."),
-        .effect = EFFECT_HIT,
-        .power = 1,
+        Z_MOVE_INFO,
         .type = TYPE_FIGHTING,
-        .accuracy = 0,
-        .pp = 1,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_AllOutPummeling,
     },
     [MOVE_SUPERSONIC_SKYSTRIKE] =
@@ -20974,14 +20971,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Soars up and plummets toward\n"
             "the target. Power varies."),
-        .effect = EFFECT_HIT,
-        .power = 1,
+        Z_MOVE_INFO,
         .type = TYPE_FLYING,
-        .accuracy = 0,
-        .pp = 1,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_SupersonicSkystrike,
     },
     [MOVE_ACID_DOWNPOUR] =
@@ -20990,14 +20981,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Sinks the target in a poison\n"
             "swamp. Power varies."),
-        .effect = EFFECT_HIT,
-        .power = 1,
+        Z_MOVE_INFO,
         .type = TYPE_POISON,
-        .accuracy = 0,
-        .pp = 1,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_AcidDownpour,
     },
     [MOVE_TECTONIC_RAGE] =
@@ -21006,14 +20991,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Burrows deep and slams into\n"
             "the target. Power varies."),
-        .effect = EFFECT_HIT,
-        .power = 1,
+        Z_MOVE_INFO,
         .type = TYPE_GROUND,
-        .accuracy = 0,
-        .pp = 1,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .skyBattleBanned = B_EXTRAPOLATED_MOVE_FLAGS,
         .battleAnimScript = gBattleAnimMove_TectonicRage,
     },
@@ -21023,14 +21002,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Drops a huge rock mountain\n"
             "on the foe. Power varies."),
-        .effect = EFFECT_HIT,
-        .power = 1,
+        Z_MOVE_INFO,
         .type = TYPE_ROCK,
-        .accuracy = 0,
-        .pp = 1,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_ContinentalCrush,
     },
     [MOVE_SAVAGE_SPIN_OUT] =
@@ -21039,14 +21012,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Spits threads of silk to\n"
             "bind the foe. Power varies."),
-        .effect = EFFECT_HIT,
-        .power = 1,
+        Z_MOVE_INFO,
         .type = TYPE_BUG,
-        .accuracy = 0,
-        .pp = 1,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_SavageSpinOut,
     },
     [MOVE_NEVER_ENDING_NIGHTMARE] =
@@ -21055,14 +21022,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Deep-seated grudges trap\n"
             "the target. Power varies."),
-        .effect = EFFECT_HIT,
-        .power = 1,
+        Z_MOVE_INFO,
         .type = TYPE_GHOST,
-        .accuracy = 0,
-        .pp = 1,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_NeverEndingNightmare,
     },
     [MOVE_CORKSCREW_CRASH] =
@@ -21071,14 +21032,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Spins very fast and rams\n"
             "the target. Power varies."),
-        .effect = EFFECT_HIT,
-        .power = 1,
+        Z_MOVE_INFO,
         .type = TYPE_STEEL,
-        .accuracy = 0,
-        .pp = 1,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_CorkscrewCrash,
     },
     [MOVE_INFERNO_OVERDRIVE] =
@@ -21087,14 +21042,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Breathes intense fire at\n"
             "the target. Power varies."),
-        .effect = EFFECT_HIT,
-        .power = 1,
+        Z_MOVE_INFO,
         .type = TYPE_FIRE,
-        .accuracy = 0,
-        .pp = 1,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_InfernoOverdrive,
     },
     [MOVE_HYDRO_VORTEX] =
@@ -21103,14 +21052,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A huge whirlpool swallows\n"
             "the target. Power varies."),
-        .effect = EFFECT_HIT,
-        .power = 1,
+        Z_MOVE_INFO,
         .type = TYPE_WATER,
-        .accuracy = 0,
-        .pp = 1,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_HydroVortex,
     },
     [MOVE_BLOOM_DOOM] =
@@ -21119,14 +21062,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Uses plant energy to attack\n"
             "the target. Power varies."),
-        .effect = EFFECT_HIT,
-        .power = 1,
+        Z_MOVE_INFO,
         .type = TYPE_GRASS,
-        .accuracy = 0,
-        .pp = 1,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_BloomDoom,
     },
     [MOVE_GIGAVOLT_HAVOC] =
@@ -21135,14 +21072,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Hits the foe with powerful\n"
             "electricity. Power varies."),
-        .effect = EFFECT_HIT,
-        .power = 1,
+        Z_MOVE_INFO,
         .type = TYPE_ELECTRIC,
-        .accuracy = 0,
-        .pp = 1,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GigavoltHavoc,
     },
     [MOVE_SHATTERED_PSYCHE] =
@@ -21151,14 +21082,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Controls the target to\n"
             "hurt it. Power varies."),
-        .effect = EFFECT_HIT,
-        .power = 1,
+        Z_MOVE_INFO,
         .type = TYPE_PSYCHIC,
-        .accuracy = 0,
-        .pp = 1,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_ShatteredPsyche,
     },
     [MOVE_SUBZERO_SLAMMER] =
@@ -21167,14 +21092,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Drops the temp and freezes\n"
             "the target. Power varies."),
-        .effect = EFFECT_HIT,
-        .power = 1,
+        Z_MOVE_INFO,
         .type = TYPE_ICE,
-        .accuracy = 0,
-        .pp = 1,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_SubzeroSlammer,
     },
     [MOVE_DEVASTATING_DRAKE] =
@@ -21183,14 +21102,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Develops aura and attacks\n"
             "the target. Power varies."),
-        .effect = EFFECT_HIT,
-        .power = 1,
+        Z_MOVE_INFO,
         .type = TYPE_DRAGON,
-        .accuracy = 0,
-        .pp = 1,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_DevastatingDrake,
     },
     [MOVE_BLACK_HOLE_ECLIPSE] =
@@ -21199,14 +21112,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Sucks the target into dark\n"
             "energy. Power varies."),
-        .effect = EFFECT_HIT,
-        .power = 1,
+        Z_MOVE_INFO,
         .type = TYPE_DARK,
-        .accuracy = 0,
-        .pp = 1,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_BlackHoleEclipse,
     },
     [MOVE_TWINKLE_TACKLE] =
@@ -21215,14 +21122,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Toys with the target in a\n"
             "charming space. Power varies."),
-        .effect = EFFECT_HIT,
-        .power = 1,
+        Z_MOVE_INFO,
         .type = TYPE_FAIRY,
-        .accuracy = 0,
-        .pp = 1,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_TwinkleTackle,
     },
     [MOVE_CATASTROPIKA] =
@@ -21537,20 +21438,27 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_MaxGuard,
     },
 
+#define MAX_MOVE_INFO               \
+    .effect = EFFECT_MAX_MOVE,      \
+    .power = 1,                     \
+    .accuracy = 0,                  \
+    .pp = 10,                       \
+    .target = TARGET_SELECTED,      \
+    .priority = 0,                  \
+    .category = DAMAGE_CATEGORY_PHYSICAL
+
+#define DMAX_MOVE_INFO \
+    MAX_MOVE_INFO,     \
+    .power = 1
+
     [MOVE_MAX_FLARE] =
     {
         .name = COMPOUND_STRING("Max Flare"),
         .description = COMPOUND_STRING(
             "Fire Dynamax attack.\n"
             "Intensifies sun for 5 turns."),
-        .effect = EFFECT_MAX_MOVE,
-        .power = 1,
+        DMAX_MOVE_INFO,
         .type = TYPE_FIRE,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_MaxFlare,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_SUN,
@@ -21563,14 +21471,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Bug Dynamax attack.\n"
             "Lowers foe's Sp. Atk stat."),
-        .effect = EFFECT_MAX_MOVE,
-        .power = 1,
+        DMAX_MOVE_INFO,
         .type = TYPE_BUG,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_MaxFlutterby,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_LOWER_SP_ATK_SIDE,
@@ -21583,14 +21485,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Electric Dynamax attack.\n"
             "Turns the terrain electric."),
-        .effect = EFFECT_MAX_MOVE,
-        .power = 1,
+        DMAX_MOVE_INFO,
         .type = TYPE_ELECTRIC,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_MaxLightning,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_ELECTRIC_TERRAIN,
@@ -21603,14 +21499,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Normal Dynamax attack.\n"
             "Lowers foe's Speed stat."),
-        .effect = EFFECT_MAX_MOVE,
-        .power = 1,
+        DMAX_MOVE_INFO,
         .type = TYPE_NORMAL,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_MaxStrike,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_LOWER_SPEED_SIDE,
@@ -21623,14 +21513,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Fighting Dynamax attack.\n"
             "Boosts ally Attack stats."),
-        .effect = EFFECT_MAX_MOVE,
-        .power = 1,
+        DMAX_MOVE_INFO,
         .type = TYPE_FIGHTING,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_MaxKnuckle,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_RAISE_TEAM_ATTACK,
@@ -21644,14 +21528,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Ghost Dynamax attack.\n"
             "Lowers foe's Defense stat."),
-        .effect = EFFECT_MAX_MOVE,
-        .power = 1,
+        DMAX_MOVE_INFO,
         .type = TYPE_GHOST,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_MaxPhantasm,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_LOWER_DEFENSE_SIDE,
@@ -21664,14 +21542,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Ice Dynamax attack.\n"
             "Summons hail for 5 turns."),
-        .effect = EFFECT_MAX_MOVE,
-        .power = 1,
+        DMAX_MOVE_INFO,
         .type = TYPE_ICE,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_MaxHailstorm,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_HAIL,
@@ -21684,14 +21556,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Poison Dynamax attack.\n"
             "Boosts ally Sp. Atk stats."),
-        .effect = EFFECT_MAX_MOVE,
-        .power = 1,
+        DMAX_MOVE_INFO,
         .type = TYPE_POISON,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_MaxOoze,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_RAISE_TEAM_SP_ATK,
@@ -21705,14 +21571,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Water Dynamax attack.\n"
             "Summons rain for 5 turns."),
-        .effect = EFFECT_MAX_MOVE,
-        .power = 1,
+        DMAX_MOVE_INFO,
         .type = TYPE_WATER,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_MaxGeyser,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_RAIN,
@@ -21725,14 +21585,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Flying Dynamax attack.\n"
             "Boosts ally Speed stats."),
-        .effect = EFFECT_MAX_MOVE,
-        .power = 1,
+        DMAX_MOVE_INFO,
         .type = TYPE_FLYING,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_MaxAirstream,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_RAISE_TEAM_SPEED,
@@ -21746,14 +21600,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Fairy Dynamax attack.\n"
             "Turns the terrain misty."),
-        .effect = EFFECT_MAX_MOVE,
-        .power = 1,
+        DMAX_MOVE_INFO,
         .type = TYPE_FAIRY,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_MaxStarfall,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_MISTY_TERRAIN,
@@ -21766,14 +21614,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Dragon Dynamax attack.\n"
             "Lowers foe's Attack stat."),
-        .effect = EFFECT_MAX_MOVE,
-        .power = 1,
+        DMAX_MOVE_INFO,
         .type = TYPE_DRAGON,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_MaxWyrmwind,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_LOWER_ATTACK_SIDE,
@@ -21786,14 +21628,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Psychic Dynamax attack.\n"
             "Turns the terrain psychic."),
-        .effect = EFFECT_MAX_MOVE,
-        .power = 1,
+        DMAX_MOVE_INFO,
         .type = TYPE_PSYCHIC,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_MaxMindstorm,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_PSYCHIC_TERRAIN,
@@ -21806,14 +21642,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Rock Dynamax attack.\n"
             "Summons a sandstorm."),
-        .effect = EFFECT_MAX_MOVE,
-        .power = 1,
+        DMAX_MOVE_INFO,
         .type = TYPE_ROCK,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_MaxRockfall,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_SANDSTORM,
@@ -21826,14 +21656,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Ground Dynamax attack.\n"
             "Boosts ally Sp. Def stats."),
-        .effect = EFFECT_MAX_MOVE,
-        .power = 1,
+        DMAX_MOVE_INFO,
         .type = TYPE_GROUND,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .skyBattleBanned = B_EXTRAPOLATED_MOVE_FLAGS,
         .battleAnimScript = gBattleAnimMove_MaxQuake,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -21848,14 +21672,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Dark Dynamax attack.\n"
             "Lowers foe's Sp. Def stat."),
-        .effect = EFFECT_MAX_MOVE,
-        .power = 1,
+        DMAX_MOVE_INFO,
         .type = TYPE_DARK,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_MaxDarkness,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_LOWER_SP_DEF_SIDE,
@@ -21868,14 +21686,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Grass Dynamax attack.\n"
             "Turns the terrain grassy."),
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        DMAX_MOVE_INFO,
         .type = TYPE_GRASS,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_MaxOvergrowth,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_GRASSY_TERRAIN,
@@ -21888,14 +21700,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Steel Dynamax attack.\n"
             "Boosts ally Defense stats."),
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        DMAX_MOVE_INFO,
         .type = TYPE_STEEL,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_MaxSteelspike,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_RAISE_TEAM_DEFENSE,
@@ -21903,20 +21709,18 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         }),
     },
 
+#define GMAX_MOVE_INFO \
+    MAX_MOVE_INFO,     \
+    .power = 10
+
     [MOVE_G_MAX_VINE_LASH] =
     {
         .name = COMPOUND_STRING("G-Max Vine Lash"),
         .description = COMPOUND_STRING(
             "G-max Venusaur attack.\n"
             "Damages for 4 turns."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_GRASS,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxVineLash,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_VINE_LASH,
@@ -21929,14 +21733,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Charizard attack.\n"
             "Damages for 4 turns."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_FIRE,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxWildfire,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_WILDFIRE,
@@ -21949,14 +21747,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Blastoise attack.\n"
             "Damages for 4 turns."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_WATER,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxCannonade,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_CANNONADE,
@@ -21969,14 +21761,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Butterfree attack.\n"
             "Poison, paralysis, or sleep."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_BUG,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxBefuddle,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_EFFECT_SPORE_SIDE,
@@ -21989,14 +21775,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Pikachu attack.\n"
             "Paralyzes opponents."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_ELECTRIC,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxVoltCrash,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_PARALYZE_SIDE,
@@ -22009,14 +21789,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Meowth attack.\n"
             "Confuses and earns money."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_NORMAL,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxGoldRush,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_CONFUSE_PAY_DAY_SIDE,
@@ -22029,14 +21803,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Machamp attack.\n"
             "Boosts critical-hit ratio."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_FIGHTING,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxChiStrike,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_CRIT_PLUS_SIDE,
@@ -22050,14 +21818,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Gengar attack.\n"
             "Prevents foes from escaping."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_GHOST,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxTerror,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_PREVENT_ESCAPE_SIDE,
@@ -22070,14 +21832,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Kingler attack.\n"
             "Harshly lowers foe's Speed."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_WATER,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxFoamBurst,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_LOWER_SPEED_2_SIDE,
@@ -22090,14 +21846,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Lapras attack.\n"
             "Reduces damage for 5 turns."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_ICE,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxResonance,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_AURORA_VEIL,
@@ -22111,14 +21861,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Eevee attack.\n"
             "Infatuates opponents."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_NORMAL,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxCuddle,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_INFATUATE_SIDE,
@@ -22131,14 +21875,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Snorlax attack.\n"
             "Restores eaten Berries."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_NORMAL,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxReplenish,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_RECYCLE_BERRIES,
@@ -22152,14 +21890,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Garbodor attack.\n"
             "Poisons opponents."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_POISON,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxMalodor,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_POISON_SIDE,
@@ -22172,14 +21904,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Melmetal attack.\n"
             "Prevents repeat move use."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_STEEL,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxMeltdown,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_TORMENT_SIDE,
@@ -22192,14 +21918,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Rillaboom attack.\n"
             "Ignores target's abilities."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_GRASS,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .ignoresTargetAbility = TRUE,
         .battleAnimScript = gBattleAnimMove_GMaxDrumSolo,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -22213,14 +21933,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Cinderace attack.\n"
             "Ignores target's abilities."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_FIRE,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .ignoresTargetAbility = TRUE,
         .battleAnimScript = gBattleAnimMove_GMaxFireball,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -22234,14 +21948,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Inteleon attack.\n"
             "Ignores target's abilities."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_WATER,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .ignoresTargetAbility = TRUE,
         .battleAnimScript = gBattleAnimMove_GMaxHydrosnipe,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -22255,14 +21963,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Corviknight attack.\n"
             "Removes opponent screens."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_FLYING,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxWindRage,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_DEFOG,
@@ -22275,14 +21977,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Orbeetle attack.\n"
             "Changes gravity for 5 turns."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_PSYCHIC,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxGravitas,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_GRAVITY,
@@ -22296,14 +21992,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Drednaw attack.\n"
             "Scatters sharp rocks."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_WATER,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxStonesurge,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_STEALTH_ROCK,
@@ -22316,14 +22006,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Coalossal attack.\n"
             "Damages for 4 turns."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_ROCK,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxVolcalith,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_VOLCALITH,
@@ -22336,14 +22020,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Flapple attack.\n"
             "Lowers foe's evasiveness."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_GRASS,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxTartness,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_LOWER_EVASIVENESS_SIDE,
@@ -22356,14 +22034,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Appletun attack.\n"
             "Heals ally status conditions."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_GRASS,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxSweetness,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_AROMATHERAPY,
@@ -22377,14 +22049,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Sandaconda attack.\n"
             "Traps foes in a sandstorm."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_GROUND,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxSandblast,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_SANDBLAST_SIDE,
@@ -22397,14 +22063,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Toxtricity attack.\n"
             "Poisons or paralyzes foes."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_ELECTRIC,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxStunShock,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_POISON_PARALYZE_SIDE,
@@ -22417,14 +22077,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Centiskorch attack.\n"
             "Traps foes in flames."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_FIRE,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxCentiferno,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_FIRE_SPIN_SIDE,
@@ -22437,14 +22091,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Hatterene attack.\n"
             "Confuses opponents."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_FAIRY,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxSmite,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_CONFUSE_SIDE,
@@ -22458,14 +22106,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Grimmsnarl attack.\n"
             "Lulls foes into sleep."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_DARK,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxSnooze,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_YAWN_FOE,
@@ -22478,14 +22120,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Alcremie attack.\n"
             "Heals ally HP."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_FAIRY,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxFinale,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_HEAL_TEAM,
@@ -22499,14 +22135,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Copperajah attack.\n"
             "Scatters sharp spikes."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_STEEL,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxSteelsurge,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_STEELSURGE,
@@ -22519,14 +22149,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Duraludon attack.\n"
             "Reduces target's PP."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_DRAGON,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxDepletion,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_SPITE,
@@ -22539,14 +22163,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Urshifu attack.\n"
             "Ignores Max Guard."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_DARK,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .ignoresProtect = TRUE,
         .battleAnimScript = gBattleAnimMove_GMaxOneBlow,
     },
@@ -22557,14 +22175,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "G-max Urshifu attack.\n"
             "Ignores Max Guard."),    //ANIM TODO
-        .effect = EFFECT_MAX_MOVE,
-        .power = 10,
+        GMAX_MOVE_INFO,
         .type = TYPE_WATER,
-        .accuracy = 0,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .ignoresProtect = TRUE,
         .battleAnimScript = gBattleAnimMove_GMaxRapidFlow,
     },

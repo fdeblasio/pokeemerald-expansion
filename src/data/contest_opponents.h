@@ -115,7 +115,7 @@ enum {
     CONTEST_OPPONENT_JAKOB,
     CONTEST_OPPONENT_TREY,
     CONTEST_OPPONENT_LANE,
-        CONTEST_OPPONENT_MICAH,
+    CONTEST_OPPONENT_MICAH,
     CONTEST_OPPONENT_SHANNON,
     CONTEST_OPPONENT_MATEO,
     CONTEST_OPPONENT_JORDYN,
@@ -175,6 +175,14 @@ enum {
     CONTEST_OPPONENT_AUDRY,
     CONTEST_OPPONENT_IVAN,
     CONTEST_OPPONENT_JULIA,
+    CONTEST_OPPONENT_FRANK,
+    CONTEST_OPPONENT_WALLACE,
+    CONTEST_OPPONENT_LISIA_COOL,
+    CONTEST_OPPONENT_LISIA_BEAUTY,
+    CONTEST_OPPONENT_LISIA_CUTE,
+    CONTEST_OPPONENT_LISIA_SMART,
+    CONTEST_OPPONENT_LISIA_TOUGH,
+    CONTEST_OPPONENT_MARCELLO,
 };
 
 // All contest opponents have a common set of AI flags (which contains all of the actually
@@ -3345,7 +3353,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_TACKLE,
             MOVE_FIRE_FANG
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 14,
         .beauty = 0,
         .cute = 0,
@@ -3373,7 +3381,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_PIN_MISSILE,
             MOVE_ODOR_SLEUTH
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 0,
         .cute = 10,
@@ -3401,7 +3409,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_STRUGGLE_BUG,
             MOVE_PROTECT
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 12,
         .cute = 0,
@@ -3429,7 +3437,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_SYNTHESIS,
             MOVE_LEECH_SEED
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 0,
         .cute = 0,
@@ -3457,7 +3465,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_AERIAL_ACE,
             MOVE_ECHOED_VOICE
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 20,
         .beauty = 0,
         .cute = 0,
@@ -3485,7 +3493,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_FURY_SWIPES,
             MOVE_MUD_SLAP
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 0,
         .cute = 0,
@@ -3513,7 +3521,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_LEECH_SEED,
             MOVE_HEADBUTT
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 0,
         .cute = 0,
@@ -3541,7 +3549,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_WATER_PULSE,
             MOVE_MIST
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 15,
         .cute = 16,
@@ -3569,7 +3577,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_YAWN,
             MOVE_ENCORE
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 14,
         .cute = 12,
@@ -3597,7 +3605,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_SUBSTITUTE,
             MOVE_SCREECH
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 0,
         .cute = 14,
@@ -3625,7 +3633,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_FORCE_PALM,
             MOVE_FOCUS_ENERGY
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 12,
         .beauty = 0,
         .cute = 0,
@@ -3653,7 +3661,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_HARDEN,
             MOVE_TAKE_DOWN
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 20,
         .beauty = 0,
         .cute = 0,
@@ -3681,7 +3689,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_CONFUSE_RAY,
             MOVE_LEECH_LIFE
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 10,
         .cute = 0,
@@ -3709,7 +3717,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_AMNESIA,
             MOVE_YAWN
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 0,
         .cute = 22,
@@ -3737,7 +3745,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_BITE,
             MOVE_LIGHT_SCREEN
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 23,
         .beauty = 21,
         .cute = 0,
@@ -3765,7 +3773,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_SWEET_SCENT,
             MOVE_GRASS_KNOT
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 38,
         .cute = 38,
@@ -3793,7 +3801,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_RAGE,
             MOVE_ACUPRESSURE
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 38,
         .beauty = 0,
         .cute = 0,
@@ -3821,7 +3829,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_BULLDOZE,
             MOVE_FEINT_ATTACK
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 0,
         .cute = 0,
@@ -3849,7 +3857,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_LEECH_SEED,
             MOVE_SAND_ATTACK
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 0,
         .cute = 0,
@@ -3877,7 +3885,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_FURY_SWIPES,
             MOVE_DIG
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 50,
         .beauty = 0,
         .cute = 0,
@@ -3905,7 +3913,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_MUD_SLAP,
             MOVE_HARDEN
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 0,
         .cute = 0,
@@ -3933,7 +3941,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_EMBER,
             MOVE_AMNESIA
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 60,
         .cute = 0,
@@ -3961,7 +3969,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_HYPNOSIS,
             MOVE_DREAM_EATER
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 0,
         .cute = 35,
@@ -3989,7 +3997,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_ROUND,
             MOVE_MIST
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 35,
         .cute = 46,
@@ -4017,7 +4025,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_ROCK_SMASH,
             MOVE_STRENGTH
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 60,
         .beauty = 0,
         .cute = 0,
@@ -4045,7 +4053,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_FURY_SWIPES,
             MOVE_THIEF
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 47,
         .beauty = 0,
         .cute = 0,
@@ -4073,7 +4081,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_KNOCK_OFF,
             MOVE_DOUBLE_HIT
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 0,
         .cute = 0,
@@ -4101,7 +4109,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_WATER_PULSE,
             MOVE_ROUND
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 45,
         .cute = 40,
@@ -4129,7 +4137,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_ATTRACT,
             MOVE_REST
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 32,
         .cute = 50,
@@ -4157,7 +4165,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_GROWL,
             MOVE_BUBBLE
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 0,
         .cute = 0,
@@ -4185,7 +4193,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_IRON_DEFENSE,
             MOVE_TAKE_DOWN
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 0,
         .cute = 0,
@@ -4213,7 +4221,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_EXPLOSION,
             MOVE_NATURE_POWER
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 125,
         .beauty = 110,
         .cute = 0,
@@ -4241,7 +4249,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_X_SCISSOR,
             MOVE_DOUBLE_TEAM
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 0,
         .cute = 0,
@@ -4269,7 +4277,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_FOCUS_ENERGY,
             MOVE_QUICK_ATTACK
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 74,
         .beauty = 0,
         .cute = 0,
@@ -4297,7 +4305,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_ASSURANCE,
             MOVE_CRUNCH
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 0,
         .cute = 0,
@@ -4325,7 +4333,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_CONFIDE,
             MOVE_AIR_CUTTER
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 128,
         .cute = 0,
@@ -4353,7 +4361,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_HORN_ATTACK,
             MOVE_FURY_ATTACK
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 95,
         .beauty = 95,
         .cute = 0,
@@ -4381,7 +4389,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_AMNESIA,
             MOVE_GROWL
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 115,
         .cute = 115,
@@ -4409,7 +4417,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_KARATE_CHOP,
             MOVE_DUAL_CHOP
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 85,
         .beauty = 0,
         .cute = 0,
@@ -4437,7 +4445,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_NATURAL_GIFT,
             MOVE_KNOCK_OFF
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 0,
         .cute = 95,
@@ -4465,7 +4473,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_GLARE,
             MOVE_THIEF
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 0,
         .cute = 0,
@@ -4493,7 +4501,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_REST,
             MOVE_WATER_SPOUT
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 0,
         .cute = 84,
@@ -4521,7 +4529,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_TACKLE,
             MOVE_BOUNCE
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 0,
         .cute = 130,
@@ -4549,7 +4557,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_HYPNOSIS,
             MOVE_ROCK_POLISH
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 0,
         .cute = 0,
@@ -4577,7 +4585,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_SWALLOW,
             MOVE_SPIT_UP
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 104,
         .beauty = 0,
         .cute = 0,
@@ -4605,7 +4613,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_CRUNCH,
             MOVE_THRASH
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 200,
         .beauty = 0,
         .cute = 0,
@@ -4633,7 +4641,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_HOWL,
             MOVE_ECHOED_VOICE
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 174,
         .beauty = 0,
         .cute = 0,
@@ -4661,7 +4669,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_DISARMING_VOICE,
             MOVE_SAFEGUARD
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 0,
         .cute = 166,
@@ -4689,7 +4697,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_CHIP_AWAY,
             MOVE_COUNTER
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 190,
         .beauty = 0,
         .cute = 0,
@@ -4717,7 +4725,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_SURF,
             MOVE_AGILITY
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 194,
         .cute = 0,
@@ -4745,7 +4753,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_PSYCH_UP,
             MOVE_TRICK_ROOM
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 0,
         .cute = 0,
@@ -4773,7 +4781,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_GRASSY_TERRAIN,
             MOVE_SOLAR_BEAM
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 170,
         .cute = 0,
@@ -4801,7 +4809,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_SPITE,
             MOVE_CURSE
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 0,
         .cute = 0,
@@ -4829,7 +4837,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_ZEN_HEADBUTT,
             MOVE_CONFUSE_RAY
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 0,
         .cute = 186,
@@ -4857,7 +4865,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_RAGE,
             MOVE_SCALD
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 0,
         .cute = 0,
@@ -4885,7 +4893,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_PSYCH_UP,
             MOVE_SUBSTITUTE
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 0,
         .cute = 174,
@@ -4913,7 +4921,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_ENDURE,
             MOVE_GIGA_IMPACT
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 137,
         .beauty = 0,
         .cute = 0,
@@ -4941,7 +4949,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_DISCHARGE,
             MOVE_EXPLOSION
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 180,
         .beauty = 178,
         .cute = 0,
@@ -4969,7 +4977,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_CHARM,
             MOVE_CONFIDE
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 0,
         .cute = 208,
@@ -4997,7 +5005,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_SAFEGUARD,
             MOVE_DESTINY_BOND
         },
-        //TODO In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
         .cool = 0,
         .beauty = 255, //Original score was above 255,
         .cute = 0,
@@ -5007,12 +5015,13 @@ const struct ContestPokemon gContestOpponents[] =
         .personality = CONTEST_MON_FEMALE,
         OPPONENT_COMMON,
     },
+    //Can have one per contest like Lisia
     //[CONTEST_OPPONENT_FRANK] = {
     //    .species = SPECIES_ELECTABUZZ,
     //    .nickname = _(""),
     //    .trainerName = _("Frank"),
     //    .trainerGfxId = OBJ_EVENT_GFX_FRANK,
-    //    .whichRank = CONTEST_RANK_MASTER,
+    //    .whichRank = CONTEST_RANK_SPECIAL,
     //    .aiPool_Cool = ,
     //    .aiPool_Beauty = ,
     //    .aiPool_Cute = ,
@@ -5034,12 +5043,134 @@ const struct ContestPokemon gContestOpponents[] =
     //    .personality = CONTEST_MON_MALE,
     //    OPPONENT_COMMON,
     //},
+    [CONTEST_OPPONENT_WALLACE] = {
+        .species = SPECIES_MILOTIC,
+        .nickname = _("Mila"),
+        .trainerName = _("Wallace"),
+        .trainerGfxId = OBJ_EVENT_GFX_WALLACE,
+        .whichRank = CONTEST_RANK_SPECIAL,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = TRUE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_AQUA_TAIL,
+            MOVE_BLIZZARD,
+            MOVE_ROUND,
+            MOVE_AQUA_RING
+        },
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 255,
+        .beauty = 255,
+        .cute = 255,
+        .smart = 255,
+        .tough = 255,
+        .sheen = 255,
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+        .filter = CONTEST_FILTER_ONLY_POSTGAME,
+    },
+
+    //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+    #define LISIA_INFO                             \
+        .species = SPECIES_ALTARIA,                \
+        .nickname = _("Ali"),                      \
+        .trainerName = _("Lisia"),                 \
+        .trainerGfxId = OBJ_EVENT_GFX_LITTLE_GIRL, \
+        .whichRank = CONTEST_RANK_SPECIAL,         \
+        .cool = 255,                               \
+        .beauty = 255,                             \
+        .cute = 255,                               \
+        .smart = 255,                              \
+        .tough = 255,                              \
+        .sheen = 255,                              \
+        .personality = CONTEST_MON_MALE,           \
+        OPPONENT_COMMON,                           \
+        .filter = CONTEST_FILTER_ONLY_POSTGAME
+
+    [CONTEST_OPPONENT_LISIA_COOL] = {
+        LISIA_INFO,
+        .aiPool_Cool = TRUE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_OUTRAGE,
+            MOVE_AERIAL_ACE,
+            MOVE_DRAGON_DANCE,
+            MOVE_TAILWIND
+        },
+    },
+    [CONTEST_OPPONENT_LISIA_BEAUTY] = {
+        LISIA_INFO,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = TRUE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_DAZZLING_GLEAM,
+            MOVE_ROUND,
+            MOVE_MIST,
+            MOVE_DRACO_METEOR
+        },
+    },
+    [CONTEST_OPPONENT_LISIA_CUTE] = {
+        LISIA_INFO,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = TRUE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_DISARMING_VOICE,
+            MOVE_GROWL,
+            MOVE_HONE_CLAWS,
+            MOVE_ATTRACT
+        },
+    },
+    [CONTEST_OPPONENT_LISIA_SMART] = {
+        LISIA_INFO,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = TRUE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_NATURAL_GIFT,
+            MOVE_POWER_SWAP,
+            MOVE_SING,
+            MOVE_DREAM_EATER
+        },
+    },
+    [CONTEST_OPPONENT_LISIA_TOUGH] = {
+        LISIA_INFO,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = TRUE,
+        .moves =
+        {
+            MOVE_EARTHQUAKE,
+            MOVE_TAKE_DOWN,
+            MOVE_GIGA_IMPACT,
+            MOVE_AERIAL_ACE
+        },
+    },
     //[CONTEST_OPPONENT_] = {
     //    .species = SPECIES_SNORLAX,
     //    .nickname = _(""),
     //    .trainerName = _(""),
     //    .trainerGfxId = OBJ_EVENT_GFX_COOK,
-    //    .whichRank = CONTEST_RANK_MASTER,
+    //    .whichRank = CONTEST_RANK_SPECIAL,
     //    .aiPool_Cool = ,
     //    .aiPool_Beauty = ,
     //    .aiPool_Cute = ,
@@ -5061,39 +5192,39 @@ const struct ContestPokemon gContestOpponents[] =
     //    .personality = CONTEST_MON_MALE,
     //    OPPONENT_COMMON,
     //},
-    //[CONTEST_OPPONENT_] = {
-    //    .species = SPECIES_SMEARGLE,
-    //    .nickname = _(""),
-    //    .trainerName = _(""),
-    //    .trainerGfxId = OBJ_EVENT_GFX_PAINTER,
-    //    .whichRank = CONTEST_RANK_MASTER,
-    //    .aiPool_Cool = ,
-    //    .aiPool_Beauty = ,
-    //    .aiPool_Cute = ,
-    //    .aiPool_Smart = ,
-    //    .aiPool_Tough = ,
-    //    .moves =
-    //    {
-    //        MOVE_,
-    //        MOVE_,
-    //        MOVE_,
-    //        MOVE_
-    //    },
-    //    .cool = ,
-    //    .beauty = ,
-    //    .cute = ,
-    //    .smart = ,
-    //    .tough = ,
-    //    .sheen = ,
-    //    .personality = CONTEST_MON_MALE,
-    //    OPPONENT_COMMON,
-    //},
+    [CONTEST_OPPONENT_MARCELLO] = {
+        .species = SPECIES_SMEARGLE,
+        .nickname = _("Smearguru"),
+        .trainerName = _("Marcello"),
+        .trainerGfxId = OBJ_EVENT_GFX_ARTIST,
+        .whichRank = CONTEST_RANK_SPECIAL,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = TRUE,
+        .aiPool_Cute = TRUE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_GEOMANCY,
+            MOVE_TAIL_GLOW,
+            MOVE_MEAN_LOOK,
+            MOVE_EXPLOSION
+        },
+        .cool = 100,
+        .beauty = 200,
+        .cute = 150,
+        .smart = 150,
+        .tough = 50,
+        .sheen = 255,
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
     //[CONTEST_OPPONENT_] = {
     //    .species = SPECIES_BLISSEY,
     //    .nickname = _(""),
     //    .trainerName = _(""),
     //    .trainerGfxId = OBJ_EVENT_GFX_NURSE,
-    //    .whichRank = CONTEST_RANK_MASTER,
+    //    .whichRank = CONTEST_RANK_SPECIAL,
     //    .aiPool_Cool = ,
     //    .aiPool_Beauty = ,
     //    .aiPool_Cute = ,
@@ -5112,7 +5243,7 @@ const struct ContestPokemon gContestOpponents[] =
     //    .smart = ,
     //    .tough = ,
     //    .sheen = ,
-    //    .personality = CONTEST_MON_MALE,
+    //    .personality = CONTEST_MON_FEMALE,
     //    OPPONENT_COMMON,
     //},
     //[CONTEST_OPPONENT_] = {
@@ -5170,38 +5301,11 @@ const struct ContestPokemon gContestOpponents[] =
     //    OPPONENT_COMMON,
     //},
     //[CONTEST_OPPONENT_] = {
-    //    .species = SPECIES_,
-    //    .nickname = _(""),
-    //    .trainerName = _(""),
-    //    .trainerGfxId = OBJ_EVENT_GFX_,
-    //    .whichRank = CONTEST_RANK_MASTER,
-    //    .aiPool_Cool = ,
-    //    .aiPool_Beauty = ,
-    //    .aiPool_Cute = ,
-    //    .aiPool_Smart = ,
-    //    .aiPool_Tough = ,
-    //    .moves =
-    //    {
-    //        MOVE_,
-    //        MOVE_,
-    //        MOVE_,
-    //        MOVE_
-    //    },
-    //    .cool = ,
-    //    .beauty = ,
-    //    .cute = ,
-    //    .smart = ,
-    //    .tough = ,
-    //    .sheen = ,
-    //    .personality = CONTEST_MON_MALE,
-    //    OPPONENT_COMMON,
-    //},
-    //[CONTEST_OPPONENT_] = {
     //    .species = SPECIES_ORANGURU,
     //    .nickname = _(""),
     //    .trainerName = _(""),
     //    .trainerGfxId = OBJ_EVENT_GFX_SPECIES(ORANGURU),
-    //    .whichRank = CONTEST_RANK_MASTER,
+    //    .whichRank = CONTEST_RANK_SPECIAL,
     //    .aiPool_Cool = ,
     //    .aiPool_Beauty = ,
     //    .aiPool_Cute = ,
@@ -5221,6 +5325,33 @@ const struct ContestPokemon gContestOpponents[] =
     //    .tough = ,
     //    .sheen = ,
     //    .personality = CONTEST_MON_MALE,
+    //    OPPONENT_COMMON,
+    //},
+    //[CONTEST_OPPONENT_] = {
+    //    .species = SPECIES_,
+    //    .nickname = _(""),
+    //    .trainerName = _(""),
+    //    .trainerGfxId = OBJ_EVENT_GFX_,
+    //    .whichRank = CONTEST_RANK_SPECIAL,
+    //    .aiPool_Cool = ,
+    //    .aiPool_Beauty = ,
+    //    .aiPool_Cute = ,
+    //    .aiPool_Smart = ,
+    //    .aiPool_Tough = ,
+    //    .moves =
+    //    {
+    //        MOVE_,
+    //        MOVE_,
+    //        MOVE_,
+    //        MOVE_
+    //    },
+    //    .cool = ,
+    //    .beauty = ,
+    //    .cute = ,
+    //    .smart = ,
+    //    .tough = ,
+    //    .sheen = ,
+    //    .personality = CONTEST_MON_,
     //    OPPONENT_COMMON,
     //},
 };

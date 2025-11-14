@@ -1,5 +1,7 @@
 ## Known bugs and other notes
 - Issues with double battles that involve Ace Pokemon
+- Issue with Other Move relearner
+    - Seems like alphabetical order isn't being set? Or maybe it's pulling from level up moves?
 - When playing as May, Brendan will walk through his mom at his house if the leftmost tile is triggered
     - Check other gender/tile combinations
 - With the higher levels, using the Exp. Share can cause your team to become overpowered

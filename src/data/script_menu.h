@@ -521,6 +521,7 @@ static const struct MenuAction MultichoiceList_ContestRank[] =
     {COMPOUND_STRING("Super Rank")},
     {COMPOUND_STRING("Hyper Rank")},
     {COMPOUND_STRING("Master Rank")},
+    {COMPOUND_STRING("Special Rank")},
     {gText_Exit},
 };
 
@@ -939,6 +940,7 @@ const u8 *const gStdStrings[] =
     [STDSTRING_BATTLE_ARENA] = gText_BattleArena,
     [STDSTRING_BATTLE_PIKE] = gText_BattlePike,
     [STDSTRING_BATTLE_PYRAMID] = gText_BattlePyramid,
+    [STDSTRING_SPECIAL] = COMPOUND_STRING("Special"),
 };
 
 static const u8 sLinkServicesMultichoiceIds[] =

@@ -104,7 +104,8 @@ LilycoveCity_ContestLobby_EventScript_ChooseContestRank::
 	case 1, LilycoveCity_ContestLobby_EventScript_EnterSuperRank
 	case 2, LilycoveCity_ContestLobby_EventScript_EnterHyperRank
 	case 3, LilycoveCity_ContestLobby_EventScript_EnterMasterRank
-	case 4, LilycoveCity_ContestLobby_EventScript_CancelEnterContest
+	case 4, LilycoveCity_ContestLobby_EventScript_EnterSpecialRank
+	case 5, LilycoveCity_ContestLobby_EventScript_CancelEnterContest
 	case MULTI_B_PRESSED, LilycoveCity_ContestLobby_EventScript_CancelEnterContest
 	end
 
@@ -125,6 +126,11 @@ LilycoveCity_ContestLobby_EventScript_EnterHyperRank::
 
 LilycoveCity_ContestLobby_EventScript_EnterMasterRank::
 	setvar VAR_CONTEST_RANK, CONTEST_RANK_MASTER
+	goto LilycoveCity_ContestLobby_EventScript_ChooseContestType
+	end
+
+LilycoveCity_ContestLobby_EventScript_EnterSpecialRank::
+	setvar VAR_CONTEST_RANK, CONTEST_RANK_SPECIAL
 	goto LilycoveCity_ContestLobby_EventScript_ChooseContestType
 	end
 
@@ -211,6 +217,7 @@ ContestHall_EventScript_GetContestRankStringId::
 	case CONTEST_RANK_SUPER, ContestHall_EventScript_GetSuperStringId
 	case CONTEST_RANK_HYPER, ContestHall_EventScript_GetHyperStringId
 	case CONTEST_RANK_MASTER, ContestHall_EventScript_GetMasterStringId
+	case CONTEST_RANK_SPECIAL, ContestHall_EventScript_GetMasterStringId
 	return
 
 ContestHall_EventScript_GetNormalStringId::
@@ -227,6 +234,10 @@ ContestHall_EventScript_GetHyperStringId::
 
 ContestHall_EventScript_GetMasterStringId::
 	setvar VAR_0x8009, STDSTRING_MASTER
+	return
+
+ContestHall_EventScript_GetSpecialStringId::
+	setvar VAR_0x8009, STDSTRING_SPECIAL
 	return
 
 @ This whole switch is equivalent to copyvar VAR_0x8008, VAR_CONTEST_CATEGORY
@@ -479,6 +490,7 @@ ContestHall_EventScript_AudienceHeartEmotes::
 	call_if_eq VAR_CONTEST_TYPE, CONTEST_TYPE_NPC_SUPER, ContestHall_EventScript_GetNumberOfHeartsSuper
 	call_if_eq VAR_CONTEST_TYPE, CONTEST_TYPE_NPC_HYPER, ContestHall_EventScript_GetNumberOfHeartsHyper
 	call_if_eq VAR_CONTEST_TYPE, CONTEST_TYPE_NPC_MASTER, ContestHall_EventScript_GetNumberOfHeartsMaster
+	call_if_eq VAR_CONTEST_TYPE, CONTEST_TYPE_NPC_SPECIAL, ContestHall_EventScript_GetNumberOfHeartsMaster
 	call_if_eq VAR_CONTEST_TYPE, CONTEST_TYPE_LINK, ContestHall_EventScript_GetNumberOfHeartsLink
 	setvar VAR_TEMP_1, 9
 	setvar VAR_TEMP_2, 9
@@ -1417,10 +1429,10 @@ LilycoveCity_ContestLobby_Text_ExplainContestTypes:
 	.string "the Pokémon you plan to enter.$"
 
 LilycoveCity_ContestLobby_Text_ExplainContestRanks:
-	.string "There are four ranks of Pokémon\n"
+	.string "There are five ranks of Pokémon\n"
 	.string "Contests.\p"
-	.string "Normal, Super, Hyper, and Master\n"
-	.string "are the four ranks.\p"
+	.string "Normal, Super, Hyper, Master, and\n"
+	.string "Special are the five ranks.\p"
 	.string "In the Normal Rank, any Pokémon may\n"
 	.string "enter.\p"
 	.string "Any Pokémon that won a Normal Rank\n"

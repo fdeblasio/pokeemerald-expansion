@@ -18446,7 +18446,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             .groundCheck = GROUND_CHECK_TARGET,
         },
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
-        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_ELECTRIC_TERRAIN, COMBO_STARTER_CHARGE},
         .battleAnimScript = gBattleAnimMove_RisingVoltage,

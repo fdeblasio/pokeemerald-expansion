@@ -328,6 +328,7 @@ LilycoveCity_ContestLobby_EventScript_SetContestType::
 	case CONTEST_RANK_SUPER, LilycoveCity_ContestLobby_EventScript_SetSuperContestType
 	case CONTEST_RANK_HYPER, LilycoveCity_ContestLobby_EventScript_SetHyperContestType
 	case CONTEST_RANK_MASTER, LilycoveCity_ContestLobby_EventScript_SetMasterContestType
+	case CONTEST_RANK_SPECIAL, LilycoveCity_ContestLobby_EventScript_SetSpecialContestType
 	return
 
 LilycoveCity_ContestLobby_EventScript_SetNormalContestType::
@@ -344,6 +345,10 @@ LilycoveCity_ContestLobby_EventScript_SetHyperContestType::
 
 LilycoveCity_ContestLobby_EventScript_SetMasterContestType::
 	setvar VAR_CONTEST_TYPE, CONTEST_TYPE_NPC_MASTER
+	return
+
+LilycoveCity_ContestLobby_EventScript_SetSpecialContestType::
+	setvar VAR_CONTEST_TYPE, CONTEST_TYPE_NPC_SPECIAL
 	return
 
 @ Functionally unused

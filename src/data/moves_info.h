@@ -17310,7 +17310,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = CONTEST_EFFECT_WORSEN_CONDITION_OF_PREV_MONS,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
-        .contestComboMoves = {0},
+        .contestComboMoves = {COMBO_STARTER_CHARGE},
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_ION_DELUGE,
         }),
@@ -17633,7 +17633,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = CONTEST_EFFECT_BETTER_IF_FIRST,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
-        .contestComboMoves = {0},
+        .contestComboMoves = {COMBO_STARTER_CHARGE},
         .battleAnimScript = gBattleAnimMove_BoltBeak,
     },
 
@@ -17989,7 +17989,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
-        .contestComboMoves = {0},
+        .contestComboMoves = {COMBO_STARTER_CHARGE},
         .battleAnimScript = gBattleAnimMove_Overdrive,
     },
 
@@ -18448,7 +18448,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_ELECTRIC_TERRAIN},
+        .contestComboMoves = {COMBO_STARTER_ELECTRIC_TERRAIN, COMBO_STARTER_CHARGE},
         .battleAnimScript = gBattleAnimMove_RisingVoltage,
     },
 
@@ -18812,7 +18812,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = CONTEST_EFFECT_DONT_EXCITE_AUDIENCE,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
-        .contestComboMoves = {0},
+        .contestComboMoves = {COMBO_STARTER_CHARGE},
         .battleAnimScript = gBattleAnimMove_ThunderCage,
     },
 

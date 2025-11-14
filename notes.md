@@ -86,13 +86,10 @@ upcoming
     - Edit contests?/Contests overhaul
         - Update Pledge moves to combo with each other like the elemental fangs
         - Pokemon in contests should be set to seen in Pokedex
-        - Change some trainerGfxIds to match trainers (like Bird Keepers using the Psychic GFX)
+        - Add Secret Rank for cool trainer ideas?
+            - Would function the same as master
         - Utilize non-trainer/other important GFX
-            - Frank with Electabuzz
-            - chef with a Snorlax
-            - painter with Smeargle
             - weird guy
-            - Nurse with Chansey/Audino
             - Devon employee/the similar MAN_2
             - Mr. Stone
             - Guitarist/Kindler (now that current ones have been replaced with Psychic GFX)
@@ -100,11 +97,8 @@ upcoming
             - Interviewer/Cameraman (can use Gabby and Ty)
             - Birch
             - Scott
-            - Existing classes with no contest opponent: TUBER_M
             - NPC: BOY_2, BOY_3, GAMEBOY_KID, LINK_RECEPTIONIST, LITTLE_GIRL, MAN_1, MART_EMPLOYEE, MOM, MYSTERY_GIFT_MAN, REPORTER_M, ROOFTOP_SALE_WOMAN, UNION_ROOM_NURSE
             - Gym Leaders/Elite Four/Frontier Brains
-            - Could maybe have a Pokemon represent itself
-        - Moves with category in description are that category (like doing something cutely being Cute)
         - Add ORAS special (Chad, Lisia, Wallace) https://bulbapedia.bulbagarden.net/wiki/List_of_Contest_opponents_(Generation_VI)
         - Add default winners as opponets?
         - Implement Mega evolution

@@ -5856,4 +5856,31 @@ const struct ContestPokemon gContestOpponents[] =
     //    .personality = CONTEST_MON_,
     //    OPPONENT_COMMON,
     //},
+    //[CONTEST_OPPONENT_] = {
+    //    .species = SPECIES_,
+    //    .nickname = _(""),
+    //    .trainerName = _(""),
+    //    .trainerGfxId = OBJ_EVENT_GFX_,
+    //    .whichRank = CONTEST_RANK_SPECIAL,
+    //    .aiPool_Cool = ,
+    //    .aiPool_Beauty = ,
+    //    .aiPool_Cute = ,
+    //    .aiPool_Smart = ,
+    //    .aiPool_Tough = ,
+    //    .moves =
+    //    {
+    //        MOVE_,
+    //        MOVE_,
+    //        MOVE_,
+    //        MOVE_
+    //    },
+    //    .cool = ,
+    //    .beauty = ,
+    //    .cute = ,
+    //    .smart = ,
+    //    .tough = ,
+    //    .sheen = ,
+    //    .personality = CONTEST_MON_,
+    //    OPPONENT_COMMON,
+    //},
 };

@@ -21440,7 +21440,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
 #define MAX_MOVE_INFO               \
     .effect = EFFECT_MAX_MOVE,      \
-    .power = 1,                     \
     .accuracy = 0,                  \
     .pp = 10,                       \
     .target = TARGET_SELECTED,      \

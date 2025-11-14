@@ -98,7 +98,8 @@ upcoming
             - Scott
             - NPC: BOY_2, BOY_3, GAMEBOY_KID, LINK_RECEPTIONIST, LITTLE_GIRL, MAN_1, MART_EMPLOYEE, MOM, MYSTERY_GIFT_MAN, REPORTER_M, ROOFTOP_SALE_WOMAN, UNION_ROOM_NURSE
             - Gym Leaders/Elite Four/Frontier Brains
-            - Trainers using the contest Pikachus
+            - Trainers using the cosplay Pikachus
+            - A shiny Pokemon
         - Update audience (CreateXContestAudience)
             - Wallace and/or Oranguru could be in early ones for foreshadowing
             - Add some of the special NPCs listed above

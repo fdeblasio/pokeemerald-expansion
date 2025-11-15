@@ -2284,6 +2284,10 @@ void BufferContestTrainerAndMonNames(void)
     BufferContestantTrainerName();
     BufferContestantMonNickname();
     BufferContestantMonSpecies();
+    if (StringCompare(gStringVar1, gStringVar3) == 0)
+        gSpecialVar_0x800A = TRUE;
+    else
+        gSpecialVar_0x800A = FALSE;
 }
 
 // Unused

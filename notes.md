@@ -100,6 +100,7 @@ upcoming
             - Gym Leaders/Elite Four/Frontier Brains
             - Trainers using the cosplay Pikachus
             - A shiny Pokemon
+            - A Malamar with a trainer (would need back sprite and new mon entry)
         - Update audience (CreateXContestAudience)
             - Wallace and/or Oranguru could be in early ones for foreshadowing
             - Add some of the special NPCs listed above

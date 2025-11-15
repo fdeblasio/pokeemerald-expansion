@@ -217,7 +217,7 @@ ContestHall_EventScript_GetContestRankStringId::
 	case CONTEST_RANK_SUPER, ContestHall_EventScript_GetSuperStringId
 	case CONTEST_RANK_HYPER, ContestHall_EventScript_GetHyperStringId
 	case CONTEST_RANK_MASTER, ContestHall_EventScript_GetMasterStringId
-	case CONTEST_RANK_SPECIAL, ContestHall_EventScript_GetMasterStringId
+	case CONTEST_RANK_SPECIAL, ContestHall_EventScript_GetSpecialStringId
 	return
 
 ContestHall_EventScript_GetNormalStringId::

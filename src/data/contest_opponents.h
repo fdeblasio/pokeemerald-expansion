@@ -5879,7 +5879,7 @@ const struct ContestPokemon gContestOpponents[] =
     //    .cute = ,
     //    .smart = ,
     //    .tough = ,
-    //    .sheen = ,
+    //    .sheen = 255,
     //    .personality = CONTEST_MON_,
     //    OPPONENT_COMMON,
     //},
@@ -5887,8 +5887,8 @@ const struct ContestPokemon gContestOpponents[] =
 #define SPECIAL_PLACEHOLDER_INFO(Number)                \
     [CONTEST_OPPONENT_SPECIAL_PLACEHOLDER_##Number] = { \
         .species = SPECIES_FEEBAS,                      \
-        .nickname = _("Placeholder"),                   \
-        .trainerName = _("Placeholder"),                \
+        .nickname = _("Place"),                         \
+        .trainerName = _("Holder"),                     \
         .trainerGfxId = OBJ_EVENT_GFX_BOY_2,            \
         .whichRank = CONTEST_RANK_SPECIAL,              \
         .aiPool_Cool = TRUE,                            \
@@ -5914,5 +5914,4 @@ const struct ContestPokemon gContestOpponents[] =
     }
     SPECIAL_PLACEHOLDER_INFO(1),
     SPECIAL_PLACEHOLDER_INFO(2),
-    SPECIAL_PLACEHOLDER_INFO(3),
 };

@@ -389,12 +389,19 @@ ContestHall_EventScript_ShowContestMonPic::
 	addvar VAR_0x8006, -1
 	playse SE_BALL_OPEN
 	special ShowContestEntryMonPic
-	call ContestHall_EventScript_EntryXTrainersMon
+	call_if_eq VAR_0x800A, TRUE, ContestHall_EventScript_EntryXSelf
+	call_if_ne VAR_0x800A, TRUE, ContestHall_EventScript_EntryXTrainersMon
+	@call ContestHall_EventScript_EntryXTrainersMon
 	return
 
 ContestHall_EventScript_EntryXTrainersMon::
 	goto_if_eq VAR_CONTEST_TYPE, CONTEST_TYPE_LINK, ContestHall_EventScript_EntryXTrainersMonLink
 	message ContestHall_Text_EntryXTrainersMon
+	waitmessage
+	return
+
+ContestHall_EventScript_EntryXSelf::
+	message ContestHall_Text_EntryXSelf
 	waitmessage
 	return
 
@@ -1515,6 +1522,10 @@ ContestHall_Text_GettingStartedParticipantsAsFollowsLink:
 ContestHall_Text_EntryXTrainersMon:
 	.string "MC: Entry No. {STR_VAR_2}!\n"
 	.string "{STR_VAR_1}'s {STR_VAR_3}!$"
+
+ContestHall_Text_EntryXSelf:
+	.string "MC: Entry No. {STR_VAR_2}!\n"
+	.string "{STR_VAR_1}...is presenting itself?!$"
 
 ContestHall_Text_SeenContestantsAudienceWillVote:
 	.string "MC: We've just seen the four Pokémon\n"

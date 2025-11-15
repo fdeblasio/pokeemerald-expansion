@@ -183,9 +183,9 @@ enum {
     CONTEST_OPPONENT_LISIA_SMART,
     CONTEST_OPPONENT_LISIA_TOUGH,
     CONTEST_OPPONENT_MARCELLO,
+    CONTEST_OPPONENT_JACOBUS,
     CONTEST_OPPONENT_SPECIAL_PLACEHOLDER_1,
     CONTEST_OPPONENT_SPECIAL_PLACEHOLDER_2,
-    CONTEST_OPPONENT_SPECIAL_PLACEHOLDER_3,
 };
 
 // All contest opponents have a common set of AI flags (which contains all of the actually
@@ -5245,7 +5245,7 @@ const struct ContestPokemon gContestOpponents[] =
     //    .cute = ,
     //    .smart = ,
     //    .tough = ,
-    //    .sheen = ,
+    //    .sheen = 255,
     //    .personality = CONTEST_MON_FEMALE,
     //    OPPONENT_COMMON,
     //},
@@ -5272,7 +5272,7 @@ const struct ContestPokemon gContestOpponents[] =
     //    .cute = ,
     //    .smart = ,
     //    .tough = ,
-    //    .sheen = ,
+    //    .sheen = 255,
     //    .personality = CONTEST_MON_MALE,
     //    OPPONENT_COMMON,
     //},
@@ -5303,33 +5303,33 @@ const struct ContestPokemon gContestOpponents[] =
     //    .personality = CONTEST_MON_MALE,
     //    OPPONENT_COMMON,
     //},
-    //[CONTEST_OPPONENT_] = {
-    //    .species = SPECIES_ORANGURU,
-    //    .nickname = _("Jacobus"),
-    //    .trainerName = _("Jacobus"),
-    //    .trainerGfxId = OBJ_EVENT_GFX_SPECIES(ORANGURU),
-    //    .whichRank = CONTEST_RANK_SPECIAL,
-    //    .aiPool_Cool = ,
-    //    .aiPool_Beauty = ,
-    //    .aiPool_Cute = ,
-    //    .aiPool_Smart = TRUE,
-    //    .aiPool_Tough = ,
-    //    .moves =
-    //    {
-    //        MOVE_,
-    //        MOVE_,
-    //        MOVE_,
-    //        MOVE_
-    //    },
-    //    .cool = ,
-    //    .beauty = ,
-    //    .cute = ,
-    //    .smart = 255,
-    //    .tough = ,
-    //    .sheen = ,
-    //    .personality = CONTEST_MON_MALE,
-    //    OPPONENT_COMMON,
-    //},
+    [CONTEST_OPPONENT_JACOBUS] = {
+        .species = SPECIES_ORANGURU,
+        .nickname = _("Jacobus"),
+        .trainerName = _("Jacobus"),
+        .trainerGfxId = OBJ_EVENT_GFX_SPECIES(ORANGURU),
+        .whichRank = CONTEST_RANK_SPECIAL,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = FALSE,
+        .aiPool_Cute = FALSE,
+        .aiPool_Smart = TRUE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_PSYCHIC,
+            MOVE_STORED_POWER,
+            MOVE_CALM_MIND,
+            MOVE_NASTY_PLOT
+        },
+        .cool = 80,
+        .beauty = 80,
+        .cute = 80,
+        .smart = 255,
+        .tough = 80,
+        .sheen = 255,
+        .personality = CONTEST_MON_MALE,
+        OPPONENT_COMMON,
+    },
     //[CONTEST_OPPONENT_] = {
     //    .species = SPECIES_,
     //    .nickname = _(""),
@@ -5353,7 +5353,7 @@ const struct ContestPokemon gContestOpponents[] =
     //    .cute = ,
     //    .smart = ,
     //    .tough = ,
-    //    .sheen = ,
+    //    .sheen = 255,
     //    .personality = CONTEST_MON_,
     //    OPPONENT_COMMON,
     //},
@@ -5361,8 +5361,8 @@ const struct ContestPokemon gContestOpponents[] =
 #define SPECIAL_PLACEHOLDER_INFO(Number)                \
     [CONTEST_OPPONENT_SPECIAL_PLACEHOLDER_##Number] = { \
         .species = SPECIES_FEEBAS,                      \
-        .nickname = _("Placeholder"),                   \
-        .trainerName = _("Placeholder"),                \
+        .nickname = _("Place"),                         \
+        .trainerName = _("Holder"),                     \
         .trainerGfxId = OBJ_EVENT_GFX_BOY_2,            \
         .whichRank = CONTEST_RANK_SPECIAL,              \
         .aiPool_Cool = TRUE,                            \
@@ -5388,5 +5388,4 @@ const struct ContestPokemon gContestOpponents[] =
     }
     SPECIAL_PLACEHOLDER_INFO(1),
     SPECIAL_PLACEHOLDER_INFO(2),
-    SPECIAL_PLACEHOLDER_INFO(3),
 };

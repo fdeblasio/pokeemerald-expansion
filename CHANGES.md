@@ -8,7 +8,6 @@
     - Fissure caused a freeze
         [ERROR] GBA Debug:	ASSERTION FAILED  FILE=[src/malloc.c] LINE=[122]  EXP=[block->magic == MALLOC_SYSTEM_ID]
         [WARN] GBA:	Illegal opcode: 0000efff
-    - Contest intro still says Master for Special rank
 - Issue with Other Move relearner
     - Seems like alphabetical order isn't being set? Or maybe it's pulling from level up moves?
 - When playing as May, Brendan will walk through his mom at his house if the leftmost tile is triggered

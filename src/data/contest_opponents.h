@@ -5195,6 +5195,7 @@ const struct ContestPokemon gContestOpponents[] =
     //    .personality = CONTEST_MON_MALE,
     //    OPPONENT_COMMON,
     //},
+    //Can have one per contest like Lisia
     [CONTEST_OPPONENT_MARCELLO] = {
         .species = SPECIES_SMEARGLE,
         .nickname = _("Smearguru"),

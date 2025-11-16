@@ -96,12 +96,13 @@ upcoming
             - Interviewer/Cameraman (can use Gabby and Ty)
             - Birch
             - Scott
-            - NPC: BOY_2, BOY_3, GAMEBOY_KID, LINK_RECEPTIONIST, LITTLE_GIRL, MAN_1, MART_EMPLOYEE, MOM, MYSTERY_GIFT_MAN, REPORTER_M, ROOFTOP_SALE_WOMAN, UNION_ROOM_NURSE
+            - NPC: BOY_2, BOY_3, LITTLE_GIRL, MAN_1, MART_EMPLOYEE, MOM, REPORTER_M, ROOFTOP_SALE_WOMAN
+                - GAMEBOY_KID and UNION_ROOM_NURSE don't have a walking animation
             - Gym Leaders/Elite Four/Frontier Brains
             - Trainers using the cosplay Pikachus
             - A shiny Pokemon
             - A Malamar with a trainer (would need back sprite and new mon entry)
-        - Update audience (CreateXContestAudience)
+        - Update audience (ContestHall_EventScript_CreateAudience and ContestHall_EventScript_AddRandomAudienceMembers)
             - Wallace and/or Oranguru could be in early ones for foreshadowing
             - Add some of the special NPCs listed above
         - Add ORAS special (Chad, Lisia, Wallace) https://bulbapedia.bulbagarden.net/wiki/List_of_Contest_opponents_(Generation_VI)

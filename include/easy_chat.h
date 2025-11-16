@@ -101,7 +101,6 @@ struct EasyChatGroup
     const u8 *name;
     EasyChatGroupWordData wordData;
     u16 numWords;
-    u16 numEnabledWords;
 };
 
 struct EasyChatScreenWordData

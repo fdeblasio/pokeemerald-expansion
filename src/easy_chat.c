@@ -5085,7 +5085,7 @@ u16 EasyChat_GetNumWordsInGroup(u8 groupId)
         return GetNationalPokedexCount(FLAG_GET_SEEN);
 
     if (IsEasyChatGroupUnlocked(groupId))
-        return gEasyChatGroups[groupId].numEnabledWords;
+        return gEasyChatGroups[groupId].numWords;
 
     return 0;
 }

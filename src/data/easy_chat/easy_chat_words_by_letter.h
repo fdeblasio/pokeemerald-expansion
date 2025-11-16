@@ -2567,185 +2567,56 @@ const u16 gEasyChatWordsByLetter_UnusedJapaneseWa[] = {
     EC_POKEMON(MACHOP),
 };
 
+#define EASY_CHAT_BY_LETTER(List)      \
+    {                                  \
+        .words = List,                 \
+        .numWords = ARRAY_COUNT(List), \
+    }
+
 const struct EasyChatWordsByLetter gEasyChatWordsByLetterPointers[EC_NUM_ALPHABET_GROUPS + 18] = { // 18 unused JP groups
-    {
-        .words = gEasyChatWordsByLetter_Others,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_Others),
-    },
-    {
-        .words = gEasyChatWordsByLetter_A,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_A),
-    },
-    {
-        .words = gEasyChatWordsByLetter_B,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_B),
-    },
-    {
-        .words = gEasyChatWordsByLetter_C,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_C),
-    },
-    {
-        .words = gEasyChatWordsByLetter_D,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_D),
-    },
-    {
-        .words = gEasyChatWordsByLetter_E,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_E),
-    },
-    {
-        .words = gEasyChatWordsByLetter_F,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_F),
-    },
-    {
-        .words = gEasyChatWordsByLetter_G,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_G),
-    },
-    {
-        .words = gEasyChatWordsByLetter_H,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_H),
-    },
-    {
-        .words = gEasyChatWordsByLetter_I,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_I),
-    },
-    {
-        .words = gEasyChatWordsByLetter_J,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_J),
-    },
-    {
-        .words = gEasyChatWordsByLetter_K,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_K),
-    },
-    {
-        .words = gEasyChatWordsByLetter_L,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_L),
-    },
-    {
-        .words = gEasyChatWordsByLetter_M,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_M),
-    },
-    {
-        .words = gEasyChatWordsByLetter_N,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_N),
-    },
-    {
-        .words = gEasyChatWordsByLetter_O,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_O),
-    },
-    {
-        .words = gEasyChatWordsByLetter_P,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_P),
-    },
-    {
-        .words = gEasyChatWordsByLetter_Q,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_Q),
-    },
-    {
-        .words = gEasyChatWordsByLetter_R,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_R),
-    },
-    {
-        .words = gEasyChatWordsByLetter_S,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_S),
-    },
-    {
-        .words = gEasyChatWordsByLetter_T,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_T),
-    },
-    {
-        .words = gEasyChatWordsByLetter_U,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_U),
-    },
-    {
-        .words = gEasyChatWordsByLetter_V,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_V),
-    },
-    {
-        .words = gEasyChatWordsByLetter_W,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_W),
-    },
-    {
-        .words = gEasyChatWordsByLetter_X,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_X),
-    },
-    {
-        .words = gEasyChatWordsByLetter_Y,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_Y),
-    },
-    {
-        .words = gEasyChatWordsByLetter_Z,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_Z),
-    },
-    {
-        .words = gEasyChatWordsByLetter_UnusedJapaneseHi,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_UnusedJapaneseHi),
-    },
-    {
-        .words = gEasyChatWordsByLetter_UnusedJapaneseFu,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_UnusedJapaneseFu),
-    },
-    {
-        .words = gEasyChatWordsByLetter_UnusedJapaneseHe,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_UnusedJapaneseHe),
-    },
-    {
-        .words = gEasyChatWordsByLetter_UnusedJapaneseHo,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_UnusedJapaneseHo),
-    },
-    {
-        .words = gEasyChatWordsByLetter_UnusedJapaneseMa,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_UnusedJapaneseMa),
-    },
-    {
-        .words = gEasyChatWordsByLetter_UnusedJapaneseMi,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_UnusedJapaneseMi),
-    },
-    {
-        .words = gEasyChatWordsByLetter_UnusedJapaneseMu,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_UnusedJapaneseMu),
-    },
-    {
-        .words = gEasyChatWordsByLetter_UnusedJapaneseMe,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_UnusedJapaneseMe),
-    },
-    {
-        .words = gEasyChatWordsByLetter_UnusedJapaneseMo,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_UnusedJapaneseMo),
-    },
-    {
-        .words = gEasyChatWordsByLetter_UnusedJapaneseYa,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_UnusedJapaneseYa),
-    },
-    {
-        .words = gEasyChatWordsByLetter_UnusedJapaneseYu,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_UnusedJapaneseYu),
-    },
-    {
-        .words = gEasyChatWordsByLetter_UnusedJapaneseYo,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_UnusedJapaneseYo),
-    },
-    {
-        .words = gEasyChatWordsByLetter_UnusedJapaneseRa,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_UnusedJapaneseRa),
-    },
-    {
-        .words = gEasyChatWordsByLetter_UnusedJapaneseRi,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_UnusedJapaneseRi),
-    },
-    {
-        .words = gEasyChatWordsByLetter_UnusedJapaneseRu,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_UnusedJapaneseRu),
-    },
-    {
-        .words = gEasyChatWordsByLetter_UnusedJapaneseRe,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_UnusedJapaneseRe),
-    },
-    {
-        .words = gEasyChatWordsByLetter_UnusedJapaneseRo,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_UnusedJapaneseRo),
-    },
-    {
-        .words = gEasyChatWordsByLetter_UnusedJapaneseWa,
-        .numWords = ARRAY_COUNT(gEasyChatWordsByLetter_UnusedJapaneseWa),
-    },
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_Others),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_A),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_B),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_C),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_D),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_E),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_F),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_G),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_H),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_I),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_J),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_K),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_L),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_M),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_N),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_O),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_P),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_Q),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_R),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_S),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_T),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_U),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_V),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_W),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_X),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_Y),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_Z),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_UnusedJapaneseHi),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_UnusedJapaneseFu),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_UnusedJapaneseHe),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_UnusedJapaneseHo),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_UnusedJapaneseMa),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_UnusedJapaneseMi),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_UnusedJapaneseMu),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_UnusedJapaneseMe),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_UnusedJapaneseMo),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_UnusedJapaneseYa),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_UnusedJapaneseYu),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_UnusedJapaneseYo),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_UnusedJapaneseRa),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_UnusedJapaneseRi),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_UnusedJapaneseRu),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_UnusedJapaneseRe),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_UnusedJapaneseRo),
+    EASY_CHAT_BY_LETTER(gEasyChatWordsByLetter_UnusedJapaneseWa),
 };

@@ -100,7 +100,6 @@ struct EasyChatGroup
 {
     EasyChatGroupWordData wordData;
     u16 numWords;
-    u16 numEnabledWords;
 };
 
 struct EasyChatScreenWordData

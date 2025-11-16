@@ -1845,6 +1845,8 @@ u32 GetRelearnMovesCount(enum MoveRelearnerStates state)
             return GetNumberOfTMMoves(mon);
         case MOVE_RELEARNER_TUTOR_MOVES:
             return GetNumberOfTutorMoves(mon);
+        case MOVE_RELEARNER_OTHER_MOVES:
+            return GetNumberOfOtherMoves(mon);
         case MOVE_RELEARNER_LEVEL_UP_MOVES:
             return GetNumberOfLevelUpMoves(mon);
         default:
@@ -1883,6 +1885,8 @@ bool32 CheckRelearnerStateFlag(enum MoveRelearnerStates state)
     case MOVE_RELEARNER_TM_MOVES:
         return P_TM_MOVES_RELEARNER;
     case MOVE_RELEARNER_TUTOR_MOVES:
+        return FlagGet(P_FLAG_TUTOR_MOVES);
+    case MOVE_RELEARNER_OTHER_MOVES:
         return FlagGet(P_FLAG_TUTOR_MOVES);
     default:
         return FALSE;
@@ -1925,10 +1929,10 @@ void TryUpdateRelearnType(enum IncrDecrUpdateValues delta)
             // should never reach this, but just in case
             break;
         case TRY_INCREMENT:
-            state = state >= MOVE_RELEARNER_TUTOR_MOVES ? MOVE_RELEARNER_LEVEL_UP_MOVES : state + 1;
+            state = state >= MOVE_RELEARNER_OTHER_MOVES ? MOVE_RELEARNER_LEVEL_UP_MOVES : state + 1;
             break;
         case TRY_DECREMENT:
-            state = state == MOVE_RELEARNER_LEVEL_UP_MOVES ? MOVE_RELEARNER_TUTOR_MOVES : state - 1;
+            state = state == MOVE_RELEARNER_LEVEL_UP_MOVES ? MOVE_RELEARNER_OTHER_MOVES : state - 1;
             break;
         }
 
@@ -4868,6 +4872,9 @@ void ShowRelearnPrompt(void)
             break;
         case MOVE_RELEARNER_TUTOR_MOVES:
             relearnText = gText_Relearn_Tutor;
+            break;
+        case MOVE_RELEARNER_OTHER_MOVES:
+            relearnText = gText_Relearn_Other;
             break;
         default:
             relearnText = gText_Relearn;

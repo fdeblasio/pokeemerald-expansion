@@ -8,8 +8,6 @@
     - Fissure caused a freeze
         [ERROR] GBA Debug:	ASSERTION FAILED  FILE=[src/malloc.c] LINE=[122]  EXP=[block->magic == MALLOC_SYSTEM_ID]
         [WARN] GBA:	Illegal opcode: 0000efff
-- Issue with Other Move relearner
-    - Seems like alphabetical order isn't being set? Or maybe it's pulling from level up moves?
 - When playing as May, Brendan will walk through his mom at his house if the leftmost tile is triggered
     - Check other gender/tile combinations
 - With the higher levels, using the Exp. Share can cause your team to become overpowered

@@ -182,6 +182,7 @@ enum {
     CONTEST_OPPONENT_LISIA_CUTE,
     CONTEST_OPPONENT_LISIA_SMART,
     CONTEST_OPPONENT_LISIA_TOUGH,
+    CONTEST_OPPONENT_CHAZ,
     CONTEST_OPPONENT_MARCELLO,
     CONTEST_OPPONENT_JACOBUS,
     CONTEST_OPPONENT_SPECIAL_PLACEHOLDER_1,
@@ -5168,6 +5169,35 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_AERIAL_ACE
         },
     },
+    [CONTEST_OPPONENT_CHAZ] = {
+        .species = SPECIES_MACHAMP,
+        .nickname = _("Macherie"),
+        .trainerName = _("Chaz"),
+        .trainerGfxId = OBJ_EVENT_GFX_RICH_BOY,
+        .whichRank = CONTEST_RANK_MASTER,
+        .aiPool_Cool = FALSE,
+        .aiPool_Beauty = TRUE,
+        .aiPool_Cute = TRUE,
+        .aiPool_Smart = FALSE,
+        .aiPool_Tough = FALSE,
+        .moves =
+        {
+            MOVE_RETURN,
+            MOVE_ATTRACT,
+            MOVE_ROUND,
+            MOVE_SUNNY_DAY
+        },
+        //TODO: In ORAS every 20 points of score in the introduction round is equivalent to one additional heart during the appeal round. Figure out how to convert this to RSE
+        .cool = 0,
+        .beauty = 175,
+        .cute = 180,
+        .smart = 0,
+        .tough = 0,
+        .sheen = 255,
+        .personality = CONTEST_MON_FEMALE,
+        OPPONENT_COMMON,
+    },
+
     //[CONTEST_OPPONENT_] = {
     //    .species = SPECIES_SNORLAX,
     //    .nickname = _(""),

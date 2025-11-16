@@ -3,6 +3,34 @@
 - Contest bugs:
     - Interviewer asks about wrong category
     - Fissure causes a freeze
+- Delibird causes the game to reset
+    - Only happens when SYS_GAME_CLEAR is activated, which enables the Other Relearner
+        - However, switching Salamence to use Delibird's learnset doesn't have this issue
+```
+[GAME ERROR] GBA Memory:	Bad memory Store16: 0x00000019
+[GAME ERROR] GBA Memory:	Bad memory Load32: 0x25AC0300
+[GAME ERROR] GBA Memory:	Bad memory Load8: 0xe3a01012
+[GAME ERROR] GBA Memory:	Bad memory Store16: 0x00000017
+[GAME ERROR] GBA Memory:	Bad memory Load32: 0x66A40315
+[DEBUG] GBA Serial I/O:	Switching mode from MULTI to NORMAL8
+[DEBUG] GBA Serial I/O:	Lockstep 0: SIOCNT <- 0000
+[DEBUG] GBA Serial I/O:	Switching mode from NORMAL8 to GPIO
+[GAME ERROR] GBA I/O:	Write to read-only I/O register: 006
+[GAME ERROR] GBA DMA:	Invalid DMA source address: 0x00000000
+[GAME ERROR] GBA DMA:	Invalid DMA source address: 0x00000000
+[GAME ERROR] GBA DMA:	Invalid DMA source address: 0x00000000
+[GAME ERROR] GBA DMA:	Invalid DMA source address: 0x00000000
+[GAME ERROR] GBA Video:	Invalid video register: 0x04E
+[GAME ERROR] GBA Video:	Invalid video register: 0x056
+[GAME ERROR] GBA Video:	Invalid video register: 0x058
+[GAME ERROR] GBA Video:	Invalid video register: 0x05A
+[GAME ERROR] GBA Video:	Invalid video register: 0x05C
+[GAME ERROR] GBA Video:	Invalid video register: 0x05E
+[INFO] GBA DMA:	Starting DMA 3 0x097E204C -> 0x03000000 (8400:0226)
+[INFO] GBA DMA:	Starting DMA 3 0x097E28E4 -> 0x02000000 (8400:0001)
+[INFO] GBA DMA:	Starting DMA 1 0x03005A3C -> 0x040000A0 (B600:4000)
+[INFO] GBA DMA:	Starting DMA 2 0x0300606C -> 0x040000A4 (B600:4000)
+```
 - When playing as May, Brendan will walk through his mom at his house if the leftmost tile is triggered
     - Check other gender/tile combinations
 - With the higher levels, using the Exp. Share can cause your team to become overpowered
@@ -25,8 +53,6 @@
 - Moving an Pokémon in the PC seems to duplicate its item in the bag
 - Items in the Battle Pyramid's Battle Bag/held items in the Battle Pike are turning into Poke Balls
     - Seems to happen after trainer battles?
-- Contest reporter says a number instead of the contest category
-    - The corresponding TV report thinks a winning Pokémon came in last
 
 ## Changes
 - NOTE: This all assumes there are no rebasing errors

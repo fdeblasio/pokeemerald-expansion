@@ -1,13 +1,8 @@
 ## Known bugs and other notes
 - Issues with double battles that involve Ace Pokemon
 - Contest bugs:
-    - "Gold PokeBlock category" in interviews
-        - Next it was "KG" which was used for a nickname
-        - A gold PokeBlock had previously been created/used. Might have something to do with a shared variable
-        - Now it's "4". I've had this error (see below)
-    - Fissure caused a freeze
-        [ERROR] GBA Debug:	ASSERTION FAILED  FILE=[src/malloc.c] LINE=[122]  EXP=[block->magic == MALLOC_SYSTEM_ID]
-        [WARN] GBA:	Illegal opcode: 0000efff
+    - Interviewer asks about wrong category
+    - Fissure causes a freeze
 - When playing as May, Brendan will walk through his mom at his house if the leftmost tile is triggered
     - Check other gender/tile combinations
 - With the higher levels, using the Exp. Share can cause your team to become overpowered

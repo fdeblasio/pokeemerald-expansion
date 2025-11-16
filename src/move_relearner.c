@@ -422,6 +422,9 @@ void CB2_InitLearnMove(void)
     case MOVE_RELEARNER_TUTOR_MOVES:
         StringCopy(gStringVar3, MoveRelearner_Text_TutorMoveLWR);
         break;
+    case MOVE_RELEARNER_OTHER_MOVES:
+        StringCopy(gStringVar3, MoveRelearner_Text_OtherMoveLWR);
+        break;
     case MOVE_RELEARNER_LEVEL_UP_MOVES:
     default:
         StringCopy(gStringVar3, MoveRelearner_Text_LevelUpMoveLWR);

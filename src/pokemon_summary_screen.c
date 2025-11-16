@@ -766,6 +766,7 @@ static const TaskFunc sTextPrinterTasks[] =
 };
 
 static const u8 sText_Relearn[] = _("{START_BUTTON} Relearn"); // future note: don't decap this, because it mimics the summary screen BG graphics which will not get decapped
+<<<<<<< HEAD
 
 static const u8 *const sRelearnTexts[MOVE_RELEARNER_COUNT] =
 {
@@ -775,6 +776,13 @@ static const u8 *const sRelearnTexts[MOVE_RELEARNER_COUNT] =
     [MOVE_RELEARNER_TUTOR_MOVES] =    COMPOUND_STRING("{START_BUTTON} Relearn Tutor"),
     [MOVE_RELEARNER_OTHER_MOVES] =    COMPOUND_STRING("{START_BUTTON} Relearn Other"),
 };
+=======
+static const u8 sText_Relearn_LevelUp[] = _("{START_BUTTON} Relearn Level");
+static const u8 sText_Relearn_Egg[] = _("{START_BUTTON} Relearn Egg");
+static const u8 sText_Relearn_TM[] = _("{START_BUTTON} Relearn TM");
+static const u8 sText_Relearn_Tutor[] = _("{START_BUTTON} Relearn Tutor");
+static const u8 sText_Relearn_Other[] = _("{START_BUTTON} Relearn Other");
+>>>>>>> 346b820d77 (Fixed relearning other moves)
 
 static const u8 sMemoNatureTextColor[] = _("{COLOR LIGHT_RED}{SHADOW GREEN}");
 static const u8 sMemoMiscTextColor[] = _("{COLOR WHITE}{SHADOW DARK_GRAY}"); // This is also affected by palettes, apparently
@@ -4777,7 +4785,32 @@ static void UpdateRelearnPrompt(void)
     if (P_ENABLE_MOVE_RELEARNERS || P_TM_MOVES_RELEARNER || FlagGet(P_FLAG_EGG_MOVES) || FlagGet(P_FLAG_TUTOR_MOVES))
         relearnText = sRelearnTexts[gMoveRelearnerState];
     else
+<<<<<<< HEAD
         relearnText = sText_Relearn;
+=======
+    {
+        switch (gMoveRelearnerState)
+        {
+        case MOVE_RELEARNER_EGG_MOVES:
+            relearnText = sText_Relearn_Egg;
+            break;
+        case MOVE_RELEARNER_TM_MOVES:
+            relearnText = sText_Relearn_TM;
+            break;
+        case MOVE_RELEARNER_TUTOR_MOVES:
+            relearnText = sText_Relearn_Tutor;
+            break;
+        case MOVE_RELEARNER_OTHER_MOVES:
+            relearnText = sText_Relearn_Other;
+            break;
+        default:
+        case MOVE_RELEARNER_LEVEL_UP_MOVES:
+            relearnText = sText_Relearn_LevelUp;
+            break;
+        }
+        relearnTextXPos = GetStringRightAlignXOffset(FONT_NORMAL, relearnText, 0);
+    }
+>>>>>>> 346b820d77 (Fixed relearning other moves)
 
     s32 relearnTextXPos = GetStringRightAlignXOffset(FONT_SMALL, relearnText, TILE_WIDTH * sSummaryTemplate[PSS_LABEL_WINDOW_PROMPT_RELEARN].width);
     PrintTextOnWindowWithFont(PSS_LABEL_WINDOW_PROMPT_RELEARN, relearnText, relearnTextXPos, 4, 0, 0, FONT_SMALL);

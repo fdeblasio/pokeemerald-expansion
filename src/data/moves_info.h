@@ -13491,8 +13491,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "water. May make a rainbow."),
         PLEDGE_INFO,
         .type = TYPE_WATER,
-        .contestComboStarterId = 0,
-        .contestComboMoves = {0},
+        .contestComboStarterId = COMBO_STARTER_WATER_PLEDGE,
+        .contestComboMoves = {COMBO_STARTER_FIRE_PLEDGE, COMBO_STARTER_GRASS_PLEDGE},
         .battleAnimScript = gBattleAnimMove_WaterPledge,
     },
 
@@ -13504,8 +13504,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "fire. May burn the grass."),
         PLEDGE_INFO,
         .type = TYPE_FIRE,
-        .contestComboStarterId = 0,
-        .contestComboMoves = {0},
+        .contestComboStarterId = COMBO_STARTER_FIRE_PLEDGE,
+        .contestComboMoves = {COMBO_STARTER_WATER_PLEDGE, COMBO_STARTER_GRASS_PLEDGE},
         .battleAnimScript = gBattleAnimMove_FirePledge,
     },
 
@@ -13517,8 +13517,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "grass. May create a swamp."),
         PLEDGE_INFO,
         .type = TYPE_GRASS,
-        .contestComboStarterId = 0,
-        .contestComboMoves = {0},
+        .contestComboStarterId = COMBO_STARTER_GRASS_PLEDGE,
+        .contestComboMoves = {COMBO_STARTER_WATER_PLEDGE, COMBO_STARTER_FIRE_PLEDGE},
         .battleAnimScript = gBattleAnimMove_GrassPledge,
     },
 

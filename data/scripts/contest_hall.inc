@@ -389,6 +389,7 @@ ContestHall_EventScript_ShowContestMonPic::
 	addvar VAR_0x8006, -1
 	playse SE_BALL_OPEN
 	special ShowContestEntryMonPic
+	setseenmon VAR_0x8004
 	call_if_eq VAR_0x800A, TRUE, ContestHall_EventScript_EntryXSelf
 	call_if_ne VAR_0x800A, TRUE, ContestHall_EventScript_EntryXTrainersMon
 	@call ContestHall_EventScript_EntryXTrainersMon

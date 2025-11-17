@@ -97,14 +97,14 @@ upcoming
             - NPC: BOY_2, BOY_3, LITTLE_GIRL, MAN_1, MART_EMPLOYEE, MOM, REPORTER_M, ROOFTOP_SALE_WOMAN
                 - GAMEBOY_KID and UNION_ROOM_NURSE don't have a walking animation
             - Gym Leaders/Elite Four/Frontier Brains
+                - Drake and possibly others don't have a walking animation
             - Trainers using the cosplay Pikachus
-            - A shiny Pokemon
             - A Malamar with a trainer (would need back sprite and new mon entry)
         - Update audience (ContestHall_EventScript_CreateAudience and ContestHall_EventScript_AddRandomAudienceMembers)
             - Wallace and/or Oranguru could be in early ones for foreshadowing
             - Add some of the special NPCs listed above
         - Add ORAS special (Chad, Lisia, Wallace) https://bulbapedia.bulbagarden.net/wiki/List_of_Contest_opponents_(Generation_VI)
-        - Add default winners as opponets?
+        - Add default winners as opponents?
         - Implement Mega evolution
         - Improve white-on-white text
 - Mt. Pyre:

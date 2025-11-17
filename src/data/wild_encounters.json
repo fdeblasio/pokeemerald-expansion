@@ -5923,43 +5923,33 @@
             "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "MAGBY"
               },
               {
-                "range": "POSTGAME",
                 "species": "HEATMOR"
               },
               {
-                "range": "POSTGAME",
                 "species": "GROWLITHE"
               },
               {
-                "range": "POSTGAME",
                 "species": "GROWLITHE_HISUI"
               },
               {
-                "range": "POSTGAME",
                 "species": "GROWLITHE"
               },
               {
-                "range": "POSTGAME",
                 "species": "GROWLITHE_HISUI"
               },
               {
-                "range": "POSTGAME",
                 "species": "ROLYCOLY"
               },
               {
-                "range": "POSTGAME",
                 "species": "ROLYCOLY"
               },
               {
-                "range": "POSTGAME",
                 "species": "ROLYCOLY"
               },
               {
-                "range": "POSTGAME",
                 "species": "ROLYCOLY"
               }
             ]
@@ -5970,45 +5960,36 @@
           "base_label": "gSafariZone_Forest",
           "land_mons": {
             "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
+            "range": "POSTGAME",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "NONE"
               },
               {
-                "range": "POSTGAME",
                 "species": "NONE"
               },
               {
-                "range": "POSTGAME",
                 "species": "NONE"
               },
               {
-                "range": "POSTGAME",
                 "species": "NONE"
               },
               {
-                "range": "POSTGAME",
                 "species": "NONE"
               },
               {
-                "range": "POSTGAME",
                 "species": "NONE"
               },
               {
-                "range": "POSTGAME",
                 "species": "NONE"
               },
               {
-                "range": "POSTGAME",
                 "species": "NONE"
               },
               {
-                "range": "POSTGAME",
                 "species": "NONE"
               },
               {
-                "range": "POSTGAME",
                 "species": "NONE"
               }
             ]

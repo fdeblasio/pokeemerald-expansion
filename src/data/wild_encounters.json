@@ -34,21 +34,18 @@
           "base_label": "gPetalburgCity",
           "water_mons": {
             "encounter_rate": 5,
+            "range": "SURF_INITIAL",
             "mons": [
               {
-                "range": "SURF_INITIAL",
                 "species": "PSYDUCK"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "AZUMARILL"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "MASQUERAIN"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "MASQUERAIN"
               }
             ]
@@ -83,21 +80,18 @@
           "base_label": "gDewfordTown",
           "water_mons": {
             "encounter_rate": 1,
+            "range": "SURF_INITIAL",
             "mons": [
               {
-                "range": "SURF_INITIAL",
                 "species": "TENTACOOL"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               }
             ]
@@ -132,21 +126,18 @@
           "base_label": "gSlateportCity",
           "water_mons": {
             "encounter_rate": 5,
+            "range": "SURF_INITIAL",
             "mons": [
               {
-                "range": "SURF_INITIAL",
                 "species": "CARVANHA"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               }
             ]
@@ -181,21 +172,18 @@
           "base_label": "gLilycoveCity",
           "water_mons": {
             "encounter_rate": 1,
+            "range": "LILYCOVE_CITY",
             "mons": [
               {
-                "range": "LILYCOVE_CITY",
                 "species": "CARVANHA"
               },
               {
-                "range": "LILYCOVE_CITY",
                 "species": "PELIPPER"
               },
               {
-                "range": "LILYCOVE_CITY",
                 "species": "PELIPPER"
               },
               {
-                "range": "LILYCOVE_CITY",
                 "species": "PELIPPER"
               }
             ]
@@ -230,21 +218,18 @@
           "base_label": "gMossdeepCity",
           "water_mons": {
             "encounter_rate": 5,
+            "range": "MOSSDEEP_CITY",
             "mons": [
               {
-                "range": "MOSSDEEP_CITY",
                 "species": "WAILMER"
               },
               {
-                "range": "MOSSDEEP_CITY",
                 "species": "WAILMER"
               },
               {
-                "range": "MOSSDEEP_CITY",
                 "species": "WAILMER"
               },
               {
-                "range": "MOSSDEEP_CITY",
                 "species": "WAILMER"
               }
             ]
@@ -279,45 +264,38 @@
           "base_label": "gSootopolisCity",
           "water_mons": {
             "encounter_rate": 1,
+            "range": "SOOTOPOLIS_CITY",
             "mons": [
               {
-                "range": "SOOTOPOLIS_CITY",
                 "species": "MAGIKARP"
               },
               {
-                "range": "SOOTOPOLIS_CITY",
                 "species": "MAGIKARP"
               },
               {
-                "range": "SOOTOPOLIS_CITY",
                 "species": "MAGIKARP"
               },
               {
-                "range": "SOOTOPOLIS_CITY",
                 "species": "GYARADOS"
               }
             ]
           },
           "fishing_mons": {
+            "range": "SOOTOPOLIS_CITY",
             "mons": [
               {
-                "range": "SOOTOPOLIS_CITY",
                 "species": "MAGIKARP"
               },
               {
-                "range": "SOOTOPOLIS_CITY",
                 "species": "MAGIKARP"
               },
               {
-                "range": "SOOTOPOLIS_CITY",
                 "species": "MAGIKARP"
               },
               {
-                "range": "SOOTOPOLIS_CITY",
                 "species": "GYARADOS"
               },
               {
-                "range": "SOOTOPOLIS_CITY",
                 "species": "GYARADOS"
               }
             ]
@@ -328,45 +306,38 @@
           "base_label": "gPacifidlogTown",
           "water_mons": {
             "encounter_rate": 1,
+            "range": "PACIFIDLOG_TOWN",
             "mons": [
               {
-                "range": "PACIFIDLOG_TOWN",
                 "species": "CORSOLA"
               },
               {
-                "range": "PACIFIDLOG_TOWN",
                 "species": "CORSOLA"
               },
               {
-                "range": "PACIFIDLOG_TOWN",
                 "species": "CORSOLA"
               },
               {
-                "range": "PACIFIDLOG_TOWN",
                 "species": "CORSOLA"
               }
             ]
           },
           "fishing_mons": {
+            "range": "PACIFIDLOG_TOWN",
             "mons": [
               {
-                "range": "PACIFIDLOG_TOWN",
                 "species": "MAGIKARP"
               },
               {
-                "range": "PACIFIDLOG_TOWN",
                 "species": "CORSOLA"
               },
               {
-                "range": "PACIFIDLOG_TOWN",
                 "species": "WAILMER"
               },
               {
-                "range": "PACIFIDLOG_TOWN",
                 "species": "CORSOLA"
               },
               {
-                "range": "PACIFIDLOG_TOWN",
                 "species": "WAILORD"
               }
             ]
@@ -377,90 +348,74 @@
           "base_label": "gEverGrandeCity",
           "land_mons": {
             "encounter_rate": 50,
+            "range": "EVER_GRANDE_CITY_GRIND",
             "mons": [
               {
-                "range": "EVER_GRANDE_CITY_GRIND",
                 "species": "SLAKING"
               },
               {
-                "range": "EVER_GRANDE_CITY_GRIND",
                 "species": "SLAKING"
               },
               {
-                "range": "EVER_GRANDE_CITY_GRIND",
                 "species": "SLAKING"
               },
               {
-                "range": "EVER_GRANDE_CITY_GRIND",
                 "species": "SLAKING"
               },
               {
-                "range": "EVER_GRANDE_CITY_GRIND",
                 "species": "SLAKING"
               },
               {
-                "range": "EVER_GRANDE_CITY_GRIND",
                 "species": "SLAKING"
               },
               {
-                "range": "EVER_GRANDE_CITY_GRIND",
                 "species": "SLAKING"
               },
               {
-                "range": "EVER_GRANDE_CITY_GRIND",
                 "species": "SLAKING"
               },
               {
-                "range": "EVER_GRANDE_CITY_GRIND",
                 "species": "SLAKING"
               },
               {
-                "range": "EVER_GRANDE_CITY_GRIND",
                 "species": "SLAKING"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": 1,
+            "range": "EVER_GRANDE_CITY",
             "mons": [
               {
-                "range": "EVER_GRANDE_CITY",
                 "species": "LUVDISC"
               },
               {
-                "range": "EVER_GRANDE_CITY",
                 "species": "CORSOLA"
               },
               {
-                "range": "EVER_GRANDE_CITY",
                 "species": "CORSOLA"
               },
               {
-                "range": "EVER_GRANDE_CITY",
                 "species": "CORSOLA"
               }
             ]
           },
           "fishing_mons": {
+            "range": "EVER_GRANDE_CITY",
             "mons": [
               {
-                "range": "EVER_GRANDE_CITY",
                 "species": "MAGIKARP"
               },
               {
-                "range": "EVER_GRANDE_CITY",
                 "species": "LUVDISC"
               },
               {
-                "range": "EVER_GRANDE_CITY",
                 "species": "CORSOLA"
               },
               {
-                "range": "EVER_GRANDE_CITY",
                 "species": "LUVDISC"
               },
               {
-                "range": "EVER_GRANDE_CITY",
                 "species": "CORSOLA"
               }
             ]
@@ -471,45 +426,36 @@
           "base_label": "gRoute101",
           "land_mons": {
             "encounter_rate": 20,
+            "range": "ROUTE_101",
             "mons": [
               {
-                "range": "ROUTE_101",
                 "species": "EARLY_BEAST_1"
               },
               {
-                "range": "ROUTE_101",
                 "species": "EARLY_BEAST_2"
               },
               {
-                "range": "ROUTE_101",
                 "species": "EARLY_BEAST_1"
               },
               {
-                "range": "ROUTE_101",
                 "species": "EARLY_BEAST_2"
               },
               {
-                "range": "ROUTE_101",
                 "species": "EARLY_BEAST_1"
               },
               {
-                "range": "ROUTE_101",
                 "species": "EARLY_BEAST_2"
               },
               {
-                "range": "ROUTE_101",
                 "species": "EARLY_BUG_1"
               },
               {
-                "range": "ROUTE_101",
                 "species": "EARLY_BUG_2"
               },
               {
-                "range": "ROUTE_101",
                 "species": "EARLY_BUG_1"
               },
               {
-                "range": "ROUTE_101",
                 "species": "EARLY_BUG_2"
               }
             ]
@@ -520,66 +466,54 @@
           "base_label": "gRoute102",
           "land_mons": {
             "encounter_rate": 20,
+            "range": "ROUTE_102",
             "mons": [
               {
-                "range": "ROUTE_102",
                 "species": "SEEDOT"
               },
               {
-                "range": "ROUTE_102",
                 "species": "LOTAD"
               },
               {
-                "range": "ROUTE_102",
                 "species": "SEEDOT"
               },
               {
-                "range": "ROUTE_102",
                 "species": "LOTAD"
               },
               {
-                "range": "ROUTE_102",
                 "species": "WALLY_STARTER"
               },
               {
-                "range": "ROUTE_102",
                 "species": "WALLY_STARTER"
               },
               {
-                "range": "ROUTE_102",
                 "species": "WALLY_STARTER"
               },
               {
-                "range": "ROUTE_102",
                 "species": "WALLY_STARTER"
               },
               {
-                "range": "ROUTE_102",
                 "species": "SURSKIT"
               },
               {
-                "range": "ROUTE_102",
                 "species": "SURSKIT"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": 5,
+            "range": "SURF_INITIAL",
             "mons": [
               {
-                "range": "SURF_INITIAL",
                 "species": "PSYDUCK"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "AZUMARILL"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "MASQUERAIN"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "MASQUERAIN"
               }
             ]
@@ -614,66 +548,54 @@
           "base_label": "gRoute103",
           "land_mons": {
             "encounter_rate": 20,
+            "range": "ROUTE_103",
             "mons": [
               {
-                "range": "ROUTE_103",
                 "species": "EARLY_BIRD_1"
               },
               {
-                "range": "ROUTE_103",
                 "species": "EARLY_BIRD_1"
               },
               {
-                "range": "ROUTE_103",
                 "species": "EARLY_BIRD_1"
               },
               {
-                "range": "ROUTE_103",
                 "species": "EARLY_BEAST_2"
               },
               {
-                "range": "ROUTE_103",
                 "species": "EARLY_BEAST_1"
               },
               {
-                "range": "ROUTE_103",
                 "species": "EARLY_BEAST_2"
               },
               {
-                "range": "ROUTE_103",
                 "species": "EARLY_BEAST_1"
               },
               {
-                "range": "ROUTE_103",
                 "species": "EARLY_BEAST_1"
               },
               {
-                "range": "ROUTE_103",
                 "species": "EARLY_BEAST_2"
               },
               {
-                "range": "ROUTE_103",
                 "species": "EARLY_BEAST_1"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": 5,
+            "range": "SURF_INITIAL",
             "mons": [
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "TENTACOOL"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "TENTACOOL"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               }
             ]
@@ -708,66 +630,54 @@
           "base_label": "gRoute104",
           "land_mons": {
             "encounter_rate": 20,
+            "range": "ROUTE_104",
             "mons": [
               {
-                "range": "ROUTE_104",
                 "species": "EARLY_BIRD_1"
               },
               {
-                "range": "ROUTE_104",
                 "species": "EARLY_BIRD_2"
               },
               {
-                "range": "ROUTE_104",
                 "species": "AZURILL"
               },
               {
-                "range": "ROUTE_104",
                 "species": "EARLY_BUG_1"
               },
               {
-                "range": "ROUTE_104",
                 "species": "EARLY_BIRD_1"
               },
               {
-                "range": "ROUTE_104",
                 "species": "AZURILL"
               },
               {
-                "range": "ROUTE_104",
                 "species": "EARLY_BIRD_2"
               },
               {
-                "range": "ROUTE_104",
                 "species": "EARLY_BIRD_1"
               },
               {
-                "range": "ROUTE_104",
                 "species": "EARLY_BIRD_1"
               },
               {
-                "range": "ROUTE_104",
                 "species": "EARLY_BIRD_1"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": 5,
+            "range": "SURF_INITIAL",
             "mons": [
               {
-                "range": "SURF_INITIAL",
                 "species": "WINGULL"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "STARYU"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "STARYU"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               }
             ]
@@ -802,21 +712,18 @@
           "base_label": "gRoute105",
           "water_mons": {
             "encounter_rate": 1,
+            "range": "SURF_INITIAL",
             "mons": [
               {
-                "range": "SURF_INITIAL",
                 "species": "TENTACOOL"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               }
             ]
@@ -851,21 +758,18 @@
           "base_label": "gRoute106",
           "water_mons": {
             "encounter_rate": 1,
+            "range": "SURF_INITIAL",
             "mons": [
               {
-                "range": "SURF_INITIAL",
                 "species": "TENTACOOL"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               }
             ]
@@ -900,21 +804,18 @@
           "base_label": "gRoute107",
           "water_mons": {
             "encounter_rate": 1,
+            "range": "SURF_INITIAL",
             "mons": [
               {
-                "range": "SURF_INITIAL",
                 "species": "TENTACOOL"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               }
             ]
@@ -949,21 +850,18 @@
           "base_label": "gRoute108",
           "water_mons": {
             "encounter_rate": 1,
+            "range": "SURF_INITIAL",
             "mons": [
               {
-                "range": "SURF_INITIAL",
                 "species": "TENTACOOL"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               }
             ]
@@ -998,21 +896,18 @@
           "base_label": "gRoute109",
           "water_mons": {
             "encounter_rate": 1,
+            "range": "SURF_INITIAL",
             "mons": [
               {
-                "range": "SURF_INITIAL",
                 "species": "TENTACOOL"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               }
             ]
@@ -1047,66 +942,54 @@
           "base_label": "gRoute110",
           "land_mons": {
             "encounter_rate": 20,
+            "range": "ROUTE_110",
             "mons": [
               {
-                "range": "ROUTE_110",
                 "species": "GULPIN"
               },
               {
-                "range": "ROUTE_110",
                 "species": "ELECTRIKE"
               },
               {
-                "range": "ROUTE_110",
                 "species": "GULPIN"
               },
               {
-                "range": "ROUTE_110",
                 "species": "ELECTRIKE"
               },
               {
-                "range": "ROUTE_110",
                 "species": "PLUSLE"
               },
               {
-                "range": "ROUTE_110",
                 "species": "MINUN"
               },
               {
-                "range": "ROUTE_110",
                 "species": "PLUSLE"
               },
               {
-                "range": "ROUTE_110",
                 "species": "MINUN"
               },
               {
-                "range": "ROUTE_110",
                 "species": "ODDISH"
               },
               {
-                "range": "ROUTE_110",
                 "species": "ODDISH"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": 1,
+            "range": "SURF_INITIAL",
             "mons": [
               {
-                "range": "SURF_INITIAL",
                 "species": "TENTACOOL"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "CHINCHOU"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "CHINCHOU"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "CHINCHOU"
               }
             ]
@@ -1141,66 +1024,54 @@
           "base_label": "gRoute111",
           "land_mons": {
             "encounter_rate": 10,
+            "range": "DESERT",
             "mons": [
               {
-                "range": "DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "DESERT",
                 "species": "CACNEA"
               },
               {
-                "range": "DESERT",
                 "species": "BALTOY"
               },
               {
-                "range": "DESERT",
                 "species": "BALTOY"
               },
               {
-                "range": "DESERT",
                 "species": "BALTOY"
               },
               {
-                "range": "DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "DESERT",
                 "species": "BALTOY"
               },
               {
-                "range": "DESERT",
                 "species": "SANDSHREW"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": 5,
+            "range": "SURF_INITIAL",
             "mons": [
               {
-                "range": "SURF_INITIAL",
                 "species": "PSYDUCK"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "AZUMARILL"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "MASQUERAIN"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "MASQUERAIN"
               }
             ]
@@ -1235,45 +1106,36 @@
           "base_label": "gRoute112",
           "land_mons": {
             "encounter_rate": 20,
+            "range": "ROUTE_112",
             "mons": [
               {
-                "range": "ROUTE_112",
                 "species": "NUMEL"
               },
               {
-                "range": "ROUTE_112",
                 "species": "NUMEL"
               },
               {
-                "range": "ROUTE_112",
                 "species": "MACHOP"
               },
               {
-                "range": "ROUTE_112",
                 "species": "NUMEL"
               },
               {
-                "range": "ROUTE_112",
                 "species": "MACHOP"
               },
               {
-                "range": "ROUTE_112",
                 "species": "MACHOP"
               },
               {
-                "range": "ROUTE_112",
                 "species": "MACHOP"
               },
               {
-                "range": "ROUTE_112",
                 "species": "MACHOP"
               },
               {
-                "range": "ROUTE_112",
                 "species": "NUMEL"
               },
               {
-                "range": "ROUTE_112",
                 "species": "NUMEL"
               }
             ]
@@ -1284,45 +1146,36 @@
           "base_label": "gRoute113",
           "land_mons": {
             "encounter_rate": 20,
+            "range": "ROUTE_113",
             "mons": [
               {
-                "range": "ROUTE_113",
                 "species": "SPINDA"
               },
               {
-                "range": "ROUTE_113",
                 "species": "SPINDA"
               },
               {
-                "range": "ROUTE_113",
                 "species": "SKARMORY"
               },
               {
-                "range": "ROUTE_113",
                 "species": "SKARMORY"
               },
               {
-                "range": "ROUTE_113",
                 "species": "SANDSHREW"
               },
               {
-                "range": "ROUTE_113",
                 "species": "SLUGMA"
               },
               {
-                "range": "ROUTE_113",
                 "species": "SANDSHREW"
               },
               {
-                "range": "ROUTE_113",
                 "species": "SLUGMA"
               },
               {
-                "range": "ROUTE_113",
                 "species": "SKARMORY"
               },
               {
-                "range": "ROUTE_113",
                 "species": "SANDSHREW"
               }
             ]
@@ -1333,66 +1186,54 @@
           "base_label": "gRoute114",
           "land_mons": {
             "encounter_rate": 20,
+            "range": "ROUTE_114",
             "mons": [
               {
-                "range": "ROUTE_114",
                 "species": "ZANGOOSE"
               },
               {
-                "range": "ROUTE_114",
                 "species": "SEVIPER"
               },
               {
-                "range": "ROUTE_114",
                 "species": "SWABLU"
               },
               {
-                "range": "ROUTE_114",
                 "species": "SWABLU"
               },
               {
-                "range": "ROUTE_114",
                 "species": "NUZLEAF"
               },
               {
-                "range": "ROUTE_114",
                 "species": "LOMBRE"
               },
               {
-                "range": "ROUTE_114",
                 "species": "ZANGOOSE"
               },
               {
-                "range": "ROUTE_114",
                 "species": "SEVIPER"
               },
               {
-                "range": "ROUTE_114",
                 "species": "SURSKIT"
               },
               {
-                "range": "ROUTE_114",
                 "species": "SWABLU"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": 5,
+            "range": "SURF_INITIAL",
             "mons": [
               {
-                "range": "SURF_INITIAL",
                 "species": "PSYDUCK"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "AZUMARILL"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "MASQUERAIN"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "MASQUERAIN"
               }
             ]
@@ -1427,66 +1268,54 @@
           "base_label": "gRoute115",
           "land_mons": {
             "encounter_rate": 20,
+            "range": "SURF_INITIAL",
             "mons": [
               {
-                "range": "SURF_INITIAL",
                 "species": "IGGLYBUFF"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "SWABLU"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "RHYHORN"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "RHYHORN"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "IGGLYBUFF"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "SWABLU"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "RHYHORN"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "EARLY_BIRD_2 + 1"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "EARLY_BIRD_2 + 1"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "EARLY_BIRD_2 + 1"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": 1,
+            "range": "SURF_INITIAL",
             "mons": [
               {
-                "range": "SURF_INITIAL",
                 "species": "TENTACOOL"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               }
             ]
@@ -1521,45 +1350,36 @@
           "base_label": "gRoute116",
           "land_mons": {
             "encounter_rate": 20,
+            "range": "ROUTE_116",
             "mons": [
               {
-                "range": "ROUTE_116",
                 "species": "SKITTY"
               },
               {
-                "range": "ROUTE_116",
                 "species": "NINCADA"
               },
               {
-                "range": "ROUTE_116",
                 "species": "EARLY_BIRD_2"
               },
               {
-                "range": "ROUTE_116",
                 "species": "ABRA"
               },
               {
-                "range": "ROUTE_116",
                 "species": "EARLY_BEAST_1"
               },
               {
-                "range": "ROUTE_116",
                 "species": "EARLY_BIRD_2"
               },
               {
-                "range": "ROUTE_116",
                 "species": "ABRA"
               },
               {
-                "range": "ROUTE_116",
                 "species": "EARLY_BEAST_1"
               },
               {
-                "range": "ROUTE_116",
                 "species": "SKITTY"
               },
               {
-                "range": "ROUTE_116",
                 "species": "SKITTY"
               }
             ]
@@ -1570,66 +1390,54 @@
           "base_label": "gRoute117",
           "land_mons": {
             "encounter_rate": 20,
+            "range": "ROUTE_117",
             "mons": [
               {
-                "range": "ROUTE_117",
                 "species": "BUDEW"
               },
               {
-                "range": "ROUTE_117",
                 "species": "BUDEW"
               },
               {
-                "range": "ROUTE_117",
                 "species": "VOLBEAT"
               },
               {
-                "range": "ROUTE_117",
                 "species": "ILLUMISE"
               },
               {
-                "range": "ROUTE_117",
                 "species": "VOLBEAT"
               },
               {
-                "range": "ROUTE_117",
                 "species": "ILLUMISE"
               },
               {
-                "range": "ROUTE_117",
                 "species": "SURSKIT"
               },
               {
-                "range": "ROUTE_117",
                 "species": "ODDISH"
               },
               {
-                "range": "ROUTE_117",
                 "species": "MARILL"
               },
               {
-                "range": "ROUTE_117",
                 "species": "SURSKIT"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": 5,
+            "range": "SURF_INITIAL",
             "mons": [
               {
-                "range": "SURF_INITIAL",
                 "species": "PSYDUCK"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "AZUMARILL"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "MASQUERAIN"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "MASQUERAIN"
               }
             ]
@@ -1664,66 +1472,54 @@
           "base_label": "gRoute118",
           "land_mons": {
             "encounter_rate": 20,
+            "range": "SURF_INITIAL",
             "mons": [
               {
-                "range": "SURF_INITIAL",
                 "species": "EARLY_BEAST_1 + 1"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "MANECTRIC"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "EARLY_BEAST_1 + 1"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "MANECTRIC"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "EARLY_BEAST_1 + 1"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "MANECTRIC"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": 4,
+            "range": "SURF_INITIAL",
             "mons": [
               {
-                "range": "SURF_INITIAL",
                 "species": "TENTACOOL"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               }
             ]
@@ -1758,66 +1554,54 @@
           "base_label": "gRoute119",
           "land_mons": {
             "encounter_rate": 15,
+            "range": "ROUTE_119",
             "mons": [
               {
-                "range": "ROUTE_119",
                 "species": "TROPIUS"
               },
               {
-                "range": "ROUTE_119",
                 "species": "GLOOM"
               },
               {
-                "range": "ROUTE_119",
                 "species": "PINSIR"
               },
               {
-                "range": "ROUTE_119",
                 "species": "HERACROSS"
               },
               {
-                "range": "ROUTE_119",
                 "species": "EARLY_BEAST_1 + 1"
               },
               {
-                "range": "ROUTE_119",
                 "species": "EARLY_BEAST_1 + 1"
               },
               {
-                "range": "ROUTE_119",
                 "species": "EARLY_BEAST_1 + 1"
               },
               {
-                "range": "ROUTE_119",
                 "species": "EARLY_BEAST_1 + 1"
               },
               {
-                "range": "ROUTE_119",
                 "species": "EARLY_BEAST_1 + 1"
               },
               {
-                "range": "ROUTE_119",
                 "species": "EARLY_BEAST_1 + 1"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": 4,
+            "range": "ROUTE_119",
             "mons": [
               {
-                "range": "ROUTE_119",
                 "species": "TENTACOOL"
               },
               {
-                "range": "ROUTE_119",
                 "species": "PELIPPER"
               },
               {
-                "range": "ROUTE_119",
                 "species": "PELIPPER"
               },
               {
-                "range": "ROUTE_119",
                 "species": "PELIPPER"
               }
             ]
@@ -1852,66 +1636,54 @@
           "base_label": "gRoute120",
           "land_mons": {
             "encounter_rate": 20,
+            "range": "ROUTE_120",
             "mons": [
               {
-                "range": "ROUTE_120",
                 "species": "ABSOL"
               },
               {
-                "range": "ROUTE_120",
                 "species": "MASQUERAIN"
               },
               {
-                "range": "ROUTE_120",
                 "species": "EARLY_BEAST_2 + 1"
               },
               {
-                "range": "ROUTE_120",
                 "species": "EARLY_BEAST_1 + 1"
               },
               {
-                "range": "ROUTE_120",
                 "species": "GLOOM"
               },
               {
-                "range": "ROUTE_120",
                 "species": "GLOOM"
               },
               {
-                "range": "ROUTE_120",
                 "species": "ABSOL"
               },
               {
-                "range": "ROUTE_120",
                 "species": "KECLEON"
               },
               {
-                "range": "ROUTE_120",
                 "species": "EARLY_BEAST_2 + 1"
               },
               {
-                "range": "ROUTE_120",
                 "species": "EARLY_BEAST_1 + 1"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": 4,
+            "range": "ROUTE_120",
             "mons": [
               {
-                "range": "ROUTE_120",
                 "species": "PSYDUCK"
               },
               {
-                "range": "ROUTE_120",
                 "species": "GOLDEEN"
               },
               {
-                "range": "ROUTE_120",
                 "species": "AZUMARILL"
               },
               {
-                "range": "ROUTE_120",
                 "species": "MASQUERAIN"
               }
             ]
@@ -1946,66 +1718,54 @@
           "base_label": "gRoute121",
           "land_mons": {
             "encounter_rate": 20,
+            "range": "ROUTE_121",
             "mons": [
               {
-                "range": "ROUTE_121",
                 "species": "DUSKULL"
               },
               {
-                "range": "ROUTE_121",
                 "species": "SHUPPET"
               },
               {
-                "range": "ROUTE_121",
                 "species": "GIRAFARIG"
               },
               {
-                "range": "ROUTE_121",
                 "species": "DODUO"
               },
               {
-                "range": "ROUTE_121",
                 "species": "EARLY_BEAST_2 + 1"
               },
               {
-                "range": "ROUTE_121",
                 "species": "GLOOM"
               },
               {
-                "range": "ROUTE_121",
                 "species": "GIRAFARIG"
               },
               {
-                "range": "ROUTE_121",
                 "species": "DODUO"
               },
               {
-                "range": "ROUTE_121",
                 "species": "PELIPPER"
               },
               {
-                "range": "ROUTE_121",
                 "species": "KECLEON"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": 1,
+            "range": "ROUTE_121",
             "mons": [
               {
-                "range": "ROUTE_121",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "ROUTE_121",
                 "species": "PELIPPER"
               },
               {
-                "range": "ROUTE_121",
                 "species": "PELIPPER"
               },
               {
-                "range": "ROUTE_121",
                 "species": "PELIPPER"
               }
             ]
@@ -2040,21 +1800,18 @@
           "base_label": "gRoute122",
           "water_mons": {
             "encounter_rate": 1,
+            "range": "ROUTE_122",
             "mons": [
               {
-                "range": "ROUTE_122",
                 "species": "CORSOLA_GALAR"
               },
               {
-                "range": "ROUTE_122",
                 "species": "CORSOLA_GALAR"
               },
               {
-                "range": "ROUTE_122",
                 "species": "CORSOLA_GALAR"
               },
               {
-                "range": "ROUTE_122",
                 "species": "CORSOLA_GALAR"
               }
             ]
@@ -2089,66 +1846,54 @@
           "base_label": "gRoute123",
           "land_mons": {
             "encounter_rate": 20,
+            "range": "ROUTE_123",
             "mons": [
               {
-                "range": "ROUTE_123",
                 "species": "GLOOM"
               },
               {
-                "range": "ROUTE_123",
                 "species": "EARLY_BEAST_2 + 1"
               },
               {
-                "range": "ROUTE_123",
                 "species": "EARLY_BEAST_1 + 1"
               },
               {
-                "range": "ROUTE_123",
                 "species": "EARLY_BEAST_1 + 1"
               },
               {
-                "range": "ROUTE_123",
                 "species": "DUSKULL"
               },
               {
-                "range": "ROUTE_123",
                 "species": "SHUPPET"
               },
               {
-                "range": "ROUTE_123",
                 "species": "PELIPPER"
               },
               {
-                "range": "ROUTE_123",
                 "species": "KECLEON"
               },
               {
-                "range": "ROUTE_123",
                 "species": "PELIPPER"
               },
               {
-                "range": "ROUTE_123",
                 "species": "KECLEON"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": 1,
+            "range": "ROUTE_123",
             "mons": [
               {
-                "range": "ROUTE_123",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "ROUTE_123",
                 "species": "PELIPPER"
               },
               {
-                "range": "ROUTE_123",
                 "species": "PELIPPER"
               },
               {
-                "range": "ROUTE_123",
                 "species": "PELIPPER"
               }
             ]
@@ -2183,21 +1928,18 @@
           "base_label": "gRoute124",
           "water_mons": {
             "encounter_rate": 1,
+            "range": "ROUTE_124",
             "mons": [
               {
-                "range": "ROUTE_124",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "ROUTE_124",
                 "species": "PELIPPER"
               },
               {
-                "range": "ROUTE_124",
                 "species": "PELIPPER"
               },
               {
-                "range": "ROUTE_124",
                 "species": "PELIPPER"
               }
             ]
@@ -2232,21 +1974,18 @@
           "base_label": "gRoute125",
           "water_mons": {
             "encounter_rate": 1,
+            "range": "ROUTE_125",
             "mons": [
               {
-                "range": "ROUTE_125",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "ROUTE_125",
                 "species": "PELIPPER"
               },
               {
-                "range": "ROUTE_125",
                 "species": "PELIPPER"
               },
               {
-                "range": "ROUTE_125",
                 "species": "PELIPPER"
               }
             ]
@@ -2281,45 +2020,38 @@
           "base_label": "gRoute126",
           "water_mons": {
             "encounter_rate": 1,
+            "range": "ROUTE_126",
             "mons": [
               {
-                "range": "ROUTE_126",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "ROUTE_126",
                 "species": "PELIPPER"
               },
               {
-                "range": "ROUTE_126",
                 "species": "PELIPPER"
               },
               {
-                "range": "ROUTE_126",
                 "species": "PELIPPER"
               }
             ]
           },
           "fishing_mons": {
+            "range": "ROUTE_126",
             "mons": [
               {
-                "range": "ROUTE_126",
                 "species": "MAGIKARP"
               },
               {
-                "range": "ROUTE_126",
                 "species": "TENTACOOL"
               },
               {
-                "range": "ROUTE_126",
                 "species": "WAILMER"
               },
               {
-                "range": "ROUTE_126",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "ROUTE_126",
                 "species": "WAILORD"
               }
             ]
@@ -2330,45 +2062,38 @@
           "base_label": "gRoute127",
           "water_mons": {
             "encounter_rate": 1,
+            "range": "ROUTE_127",
             "mons": [
               {
-                "range": "ROUTE_127",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "ROUTE_127",
                 "species": "PELIPPER"
               },
               {
-                "range": "ROUTE_127",
                 "species": "PELIPPER"
               },
               {
-                "range": "ROUTE_127",
                 "species": "PELIPPER"
               }
             ]
           },
           "fishing_mons": {
+            "range": "ROUTE_127",
             "mons": [
               {
-                "range": "ROUTE_127",
                 "species": "MAGIKARP"
               },
               {
-                "range": "ROUTE_127",
                 "species": "TENTACOOL"
               },
               {
-                "range": "ROUTE_127",
                 "species": "WAILMER"
               },
               {
-                "range": "ROUTE_127",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "ROUTE_127",
                 "species": "WAILORD"
               }
             ]
@@ -2379,45 +2104,38 @@
           "base_label": "gRoute128",
           "water_mons": {
             "encounter_rate": 1,
+            "range": "ROUTE_128",
             "mons": [
               {
-                "range": "ROUTE_128",
                 "species": "CORSOLA"
               },
               {
-                "range": "ROUTE_128",
                 "species": "LUVDISC"
               },
               {
-                "range": "ROUTE_128",
                 "species": "LUVDISC"
               },
               {
-                "range": "ROUTE_128",
                 "species": "LUVDISC"
               }
             ]
           },
           "fishing_mons": {
+            "range": "ROUTE_128",
             "mons": [
               {
-                "range": "ROUTE_128",
                 "species": "MAGIKARP"
               },
               {
-                "range": "ROUTE_128",
                 "species": "LUVDISC"
               },
               {
-                "range": "ROUTE_128",
                 "species": "CORSOLA"
               },
               {
-                "range": "ROUTE_128",
                 "species": "LUVDISC"
               },
               {
-                "range": "ROUTE_128",
                 "species": "CORSOLA"
               }
             ]
@@ -2428,45 +2146,38 @@
           "base_label": "gRoute129",
           "water_mons": {
             "encounter_rate": 1,
+            "range": "ROUTE_129",
             "mons": [
               {
-                "range": "ROUTE_129",
                 "species": "PELIPPER"
               },
               {
-                "range": "ROUTE_129",
                 "species": "PELIPPER"
               },
               {
-                "range": "ROUTE_129",
                 "species": "WAILORD"
               },
               {
-                "range": "ROUTE_129",
                 "species": "WAILORD"
               }
             ]
           },
           "fishing_mons": {
+            "range": "ROUTE_129",
             "mons": [
               {
-                "range": "ROUTE_129",
                 "species": "MAGIKARP"
               },
               {
-                "range": "ROUTE_129",
                 "species": "TENTACOOL"
               },
               {
-                "range": "ROUTE_129",
                 "species": "WAILMER"
               },
               {
-                "range": "ROUTE_129",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "ROUTE_129",
                 "species": "WAILORD"
               }
             ]
@@ -2477,90 +2188,74 @@
           "base_label": "gRoute130",
           "land_mons": {
             "encounter_rate": 20,
+            "range": "ROUTE_130",
             "mons": [
               {
-                "range": "ROUTE_130",
                 "species": "MIRAGE_ISLAND"
               },
               {
-                "range": "ROUTE_130",
                 "species": "MIRAGE_ISLAND"
               },
               {
-                "range": "ROUTE_130",
                 "species": "MIRAGE_ISLAND"
               },
               {
-                "range": "ROUTE_130",
                 "species": "MIRAGE_ISLAND"
               },
               {
-                "range": "ROUTE_130",
                 "species": "MIRAGE_ISLAND"
               },
               {
-                "range": "ROUTE_130",
                 "species": "MIRAGE_ISLAND"
               },
               {
-                "range": "ROUTE_130",
                 "species": "MIRAGE_ISLAND"
               },
               {
-                "range": "ROUTE_130",
                 "species": "MIRAGE_ISLAND"
               },
               {
-                "range": "ROUTE_130",
                 "species": "MIRAGE_ISLAND"
               },
               {
-                "range": "ROUTE_130",
                 "species": "MIRAGE_ISLAND"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": 1,
+            "range": "ROUTE_130",
             "mons": [
               {
-                "range": "ROUTE_130",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "ROUTE_130",
                 "species": "PELIPPER"
               },
               {
-                "range": "ROUTE_130",
                 "species": "PELIPPER"
               },
               {
-                "range": "ROUTE_130",
                 "species": "PELIPPER"
               }
             ]
           },
           "fishing_mons": {
+            "range": "ROUTE_130",
             "mons": [
               {
-                "range": "ROUTE_130",
                 "species": "MAGIKARP"
               },
               {
-                "range": "ROUTE_130",
                 "species": "TENTACOOL"
               },
               {
-                "range": "ROUTE_130",
                 "species": "WAILMER"
               },
               {
-                "range": "ROUTE_130",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "ROUTE_130",
                 "species": "WAILORD"
               }
             ]
@@ -2571,45 +2266,38 @@
           "base_label": "gRoute131",
           "water_mons": {
             "encounter_rate": 1,
+            "range": "ROUTE_131",
             "mons": [
               {
-                "range": "ROUTE_131",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "ROUTE_131",
                 "species": "PELIPPER"
               },
               {
-                "range": "ROUTE_131",
                 "species": "PELIPPER"
               },
               {
-                "range": "ROUTE_131",
                 "species": "PELIPPER"
               }
             ]
           },
           "fishing_mons": {
+            "range": "ROUTE_131",
             "mons": [
               {
-                "range": "ROUTE_131",
                 "species": "MAGIKARP"
               },
               {
-                "range": "ROUTE_131",
                 "species": "TENTACOOL"
               },
               {
-                "range": "ROUTE_131",
                 "species": "WAILMER"
               },
               {
-                "range": "ROUTE_131",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "ROUTE_131",
                 "species": "WAILORD"
               }
             ]
@@ -2620,45 +2308,38 @@
           "base_label": "gRoute132",
           "water_mons": {
             "encounter_rate": 1,
+            "range": "ROUTE_132",
             "mons": [
               {
-                "range": "ROUTE_132",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "ROUTE_132",
                 "species": "PELIPPER"
               },
               {
-                "range": "ROUTE_132",
                 "species": "PELIPPER"
               },
               {
-                "range": "ROUTE_132",
                 "species": "PELIPPER"
               }
             ]
           },
           "fishing_mons": {
+            "range": "ROUTE_132",
             "mons": [
               {
-                "range": "ROUTE_132",
                 "species": "MAGIKARP"
               },
               {
-                "range": "ROUTE_132",
                 "species": "HORSEA"
               },
               {
-                "range": "ROUTE_132",
                 "species": "WAILMER"
               },
               {
-                "range": "ROUTE_132",
                 "species": "SEADRA"
               },
               {
-                "range": "ROUTE_132",
                 "species": "WAILMER"
               }
             ]
@@ -2669,45 +2350,38 @@
           "base_label": "gRoute133",
           "water_mons": {
             "encounter_rate": 1,
+            "range": "ROUTE_133",
             "mons": [
               {
-                "range": "ROUTE_133",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "ROUTE_133",
                 "species": "PELIPPER"
               },
               {
-                "range": "ROUTE_133",
                 "species": "PELIPPER"
               },
               {
-                "range": "ROUTE_133",
                 "species": "PELIPPER"
               }
             ]
           },
           "fishing_mons": {
+            "range": "ROUTE_133",
             "mons": [
               {
-                "range": "ROUTE_133",
                 "species": "MAGIKARP"
               },
               {
-                "range": "ROUTE_133",
                 "species": "HORSEA"
               },
               {
-                "range": "ROUTE_133",
                 "species": "WAILMER"
               },
               {
-                "range": "ROUTE_133",
                 "species": "SEADRA"
               },
               {
-                "range": "ROUTE_133",
                 "species": "WAILMER"
               }
             ]
@@ -2718,21 +2392,18 @@
           "base_label": "gRoute134",
           "water_mons": {
             "encounter_rate": 1,
+            "range": "SURF_INITIAL",
             "mons": [
               {
-                "range": "SURF_INITIAL",
                 "species": "TENTACOOL"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PELIPPER"
               }
             ]
@@ -2816,45 +2487,36 @@
           "base_label": "gRusturfTunnel",
           "land_mons": {
             "encounter_rate": 10,
+            "range": "RUSTURF_TUNNEL",
             "mons": [
               {
-                "range": "RUSTURF_TUNNEL",
                 "species": "WHISMUR"
               },
               {
-                "range": "RUSTURF_TUNNEL",
                 "species": "WHISMUR"
               },
               {
-                "range": "RUSTURF_TUNNEL",
                 "species": "WHISMUR"
               },
               {
-                "range": "RUSTURF_TUNNEL",
                 "species": "WHISMUR"
               },
               {
-                "range": "RUSTURF_TUNNEL",
                 "species": "WHISMUR"
               },
               {
-                "range": "RUSTURF_TUNNEL",
                 "species": "WHISMUR"
               },
               {
-                "range": "RUSTURF_TUNNEL",
                 "species": "WHISMUR"
               },
               {
-                "range": "RUSTURF_TUNNEL",
                 "species": "WHISMUR"
               },
               {
-                "range": "RUSTURF_TUNNEL",
                 "species": "WHISMUR"
               },
               {
-                "range": "RUSTURF_TUNNEL",
                 "species": "WHISMUR"
               }
             ]
@@ -2865,45 +2527,36 @@
           "base_label": "gGraniteCave_1F",
           "land_mons": {
             "encounter_rate": 10,
+            "range": "GRANITE_CAVE",
             "mons": [
               {
-                "range": "GRANITE_CAVE",
                 "species": "MAKUHITA"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "GEODUDE"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "MAKUHITA"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "GEODUDE"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "MAKUHITA"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "ABRA"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "MAKUHITA"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "MAKUHITA"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "ABRA"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "ABRA"
               }
             ]
@@ -2914,45 +2567,36 @@
           "base_label": "gGraniteCave_B1F",
           "land_mons": {
             "encounter_rate": 10,
+            "range": "GRANITE_CAVE",
             "mons": [
               {
-                "range": "GRANITE_CAVE",
                 "species": "MAWILE"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "SABLEYE"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "ARON"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "ARON"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "MAWILE"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "SABLEYE"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "ARON"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "ZUBAT"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "ZUBAT"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "ZUBAT"
               }
             ]
@@ -2963,45 +2607,36 @@
           "base_label": "gGraniteCave_B2F",
           "land_mons": {
             "encounter_rate": 10,
+            "range": "GRANITE_CAVE",
             "mons": [
               {
-                "range": "GRANITE_CAVE",
                 "species": "ARON"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "NOSEPASS"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "ARON"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "NOSEPASS"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "MAWILE"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "SABLEYE"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "MAWILE"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "SABLEYE"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "ZUBAT"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "ARON"
               }
             ]
@@ -3012,45 +2647,36 @@
           "base_label": "gGraniteCave_StevensRoom",
           "land_mons": {
             "encounter_rate": 10,
+            "range": "GRANITE_CAVE",
             "mons": [
               {
-                "range": "GRANITE_CAVE",
                 "species": "ARON"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "ARON"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "NOSEPASS"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "MAKUHITA"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "NOSEPASS"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "MAKUHITA"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "NOSEPASS"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "MAKUHITA"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "NOSEPASS"
               },
               {
-                "range": "GRANITE_CAVE",
                 "species": "MAKUHITA"
               }
             ]
@@ -3061,45 +2687,36 @@
           "base_label": "gFieryPath",
           "land_mons": {
             "encounter_rate": 10,
+            "range": "FIERY_PATH",
             "mons": [
               {
-                "range": "FIERY_PATH",
                 "species": "TORKOAL"
               },
               {
-                "range": "FIERY_PATH",
                 "species": "SLUGMA"
               },
               {
-                "range": "FIERY_PATH",
                 "species": "GRIMER"
               },
               {
-                "range": "FIERY_PATH",
                 "species": "KOFFING"
               },
               {
-                "range": "FIERY_PATH",
                 "species": "NUMEL"
               },
               {
-                "range": "FIERY_PATH",
                 "species": "HOUNDOUR"
               },
               {
-                "range": "FIERY_PATH",
                 "species": "GRIMER"
               },
               {
-                "range": "FIERY_PATH",
                 "species": "KOFFING"
               },
               {
-                "range": "FIERY_PATH",
                 "species": "NUMEL"
               },
               {
-                "range": "FIERY_PATH",
                 "species": "HOUNDOUR"
               }
             ]
@@ -3110,66 +2727,54 @@
           "base_label": "gMeteorFalls_1F_1R",
           "land_mons": {
             "encounter_rate": 10,
+            "range": "METEOR_FALLS",
             "mons": [
               {
-                "range": "METEOR_FALLS",
                 "species": "SOLROCK"
               },
               {
-                "range": "METEOR_FALLS",
                 "species": "LUNATONE"
               },
               {
-                "range": "METEOR_FALLS",
                 "species": "SOLROCK"
               },
               {
-                "range": "METEOR_FALLS",
                 "species": "LUNATONE"
               },
               {
-                "range": "METEOR_FALLS",
                 "species": "SOLROCK"
               },
               {
-                "range": "METEOR_FALLS",
                 "species": "LUNATONE"
               },
               {
-                "range": "METEOR_FALLS",
                 "species": "ZUBAT"
               },
               {
-                "range": "METEOR_FALLS",
                 "species": "ZUBAT"
               },
               {
-                "range": "METEOR_FALLS",
                 "species": "ZUBAT"
               },
               {
-                "range": "METEOR_FALLS",
                 "species": "ZUBAT"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": 4,
+            "range": "SURF_INITIAL",
             "mons": [
               {
-                "range": "SURF_INITIAL",
                 "species": "SOLROCK"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "LUNATONE"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "LUNATONE"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "LUNATONE"
               }
             ]
@@ -3204,90 +2809,74 @@
           "base_label": "gMeteorFalls_1F_2R",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "METEOR_FALLS_WATERFALL",
             "mons": [
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "SOLROCK"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "LUNATONE"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "SOLROCK"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "LUNATONE"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "SOLROCK"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "LUNATONE"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "GOLBAT"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "GOLBAT"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "GOLBAT"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "GOLBAT"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": 4,
+            "range": "METEOR_FALLS_WATERFALL",
             "mons": [
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "SOLROCK"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "LUNATONE"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "LUNATONE"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "LUNATONE"
               }
             ]
           },
           "fishing_mons": {
+            "range": "METEOR_FALLS_WATERFALL",
             "mons": [
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "MAGIKARP"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "GOLDEEN"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "BARBOACH"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "SEAKING"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "WHISCASH"
               }
             ]
@@ -3298,90 +2887,74 @@
           "base_label": "gMeteorFalls_B1F_1R",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "METEOR_FALLS_WATERFALL",
             "mons": [
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "SOLROCK"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "LUNATONE"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "SOLROCK"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "LUNATONE"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "SOLROCK"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "LUNATONE"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "GOLBAT"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "GOLBAT"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "GOLBAT"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "GOLBAT"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": 4,
+            "range": "METEOR_FALLS_WATERFALL",
             "mons": [
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "SOLROCK"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "LUNATONE"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "LUNATONE"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "LUNATONE"
               }
             ]
           },
           "fishing_mons": {
+            "range": "METEOR_FALLS_WATERFALL",
             "mons": [
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "MAGIKARP"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "GOLDEEN"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "BARBOACH"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "SEAKING"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "WHISCASH"
               }
             ]
@@ -3392,90 +2965,74 @@
           "base_label": "gMeteorFalls_B1F_2R",
           "land_mons": {
             "encounter_rate": 10,
+            "range": "METEOR_FALLS_WATERFALL",
             "mons": [
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "PSEUDO_LEGENDARY_1"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "PSEUDO_LEGENDARY_2"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "PSEUDO_LEGENDARY_1"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "PSEUDO_LEGENDARY_2"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "PSEUDO_LEGENDARY_1"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "PSEUDO_LEGENDARY_2"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "PSEUDO_LEGENDARY_1"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "PSEUDO_LEGENDARY_2"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "PSEUDO_LEGENDARY_1"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "PSEUDO_LEGENDARY_2"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": 4,
+            "range": "METEOR_FALLS_WATERFALL",
             "mons": [
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "SOLROCK"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "LUNATONE"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "LUNATONE"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "LUNATONE"
               }
             ]
           },
           "fishing_mons": {
+            "range": "METEOR_FALLS_WATERFALL",
             "mons": [
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "MAGIKARP"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "GOLDEEN"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "BARBOACH"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "SEAKING"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "WHISCASH"
               }
             ]
@@ -3486,45 +3043,36 @@
           "base_label": "gMeteorFalls_StevensCave",
           "land_mons": {
             "encounter_rate": 10,
+            "range": "POSTGAME",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "PSEUDO_LEGENDARY_2 + 1"
               },
               {
-                "range": "POSTGAME",
                 "species": "PSEUDO_LEGENDARY_1 + 1"
               },
               {
-                "range": "POSTGAME",
                 "species": "PSEUDO_LEGENDARY_2 + 1"
               },
               {
-                "range": "POSTGAME",
                 "species": "PSEUDO_LEGENDARY_1 + 1"
               },
               {
-                "range": "POSTGAME",
                 "species": "PSEUDO_LEGENDARY_2 + 1"
               },
               {
-                "range": "POSTGAME",
                 "species": "PSEUDO_LEGENDARY_1 + 1"
               },
               {
-                "range": "POSTGAME",
                 "species": "PSEUDO_LEGENDARY_2 + 1"
               },
               {
-                "range": "POSTGAME",
                 "species": "PSEUDO_LEGENDARY_1 + 1"
               },
               {
-                "range": "POSTGAME",
                 "species": "PSEUDO_LEGENDARY_2 + 1"
               },
               {
-                "range": "POSTGAME",
                 "species": "PSEUDO_LEGENDARY_1 + 1"
               }
             ]
@@ -3535,45 +3083,36 @@
           "base_label": "gJaggedPass",
           "land_mons": {
             "encounter_rate": 20,
+            "range": "JAGGED_PASS",
             "mons": [
               {
-                "range": "JAGGED_PASS",
                 "species": "SPOINK"
               },
               {
-                "range": "JAGGED_PASS",
                 "species": "PHANPY"
               },
               {
-                "range": "JAGGED_PASS",
                 "species": "NUMEL"
               },
               {
-                "range": "JAGGED_PASS",
                 "species": "NUMEL"
               },
               {
-                "range": "JAGGED_PASS",
                 "species": "NUMEL"
               },
               {
-                "range": "JAGGED_PASS",
                 "species": "NUMEL"
               },
               {
-                "range": "JAGGED_PASS",
                 "species": "SPOINK"
               },
               {
-                "range": "JAGGED_PASS",
                 "species": "PHANPY"
               },
               {
-                "range": "JAGGED_PASS",
                 "species": "MACHOP"
               },
               {
-                "range": "JAGGED_PASS",
                 "species": "MACHOP"
               }
             ]
@@ -3584,45 +3123,36 @@
           "base_label": "gMirageTower_1F",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "DESERT",
             "mons": [
               {
-                "range": "DESERT",
                 "species": "BALTOY"
               },
               {
-                "range": "DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "DESERT",
                 "species": "BALTOY"
               },
               {
-                "range": "DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "DESERT",
                 "species": "TRAPINCH"
               }
             ]
@@ -3633,45 +3163,36 @@
           "base_label": "gMirageTower_2F",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "DESERT",
             "mons": [
               {
-                "range": "DESERT",
                 "species": "BALTOY"
               },
               {
-                "range": "DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "DESERT",
                 "species": "BALTOY"
               },
               {
-                "range": "DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "DESERT",
                 "species": "TRAPINCH"
               }
             ]
@@ -3682,45 +3203,36 @@
           "base_label": "gMirageTower_3F",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "DESERT",
             "mons": [
               {
-                "range": "DESERT",
                 "species": "BALTOY"
               },
               {
-                "range": "DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "DESERT",
                 "species": "BALTOY"
               },
               {
-                "range": "DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "DESERT",
                 "species": "TRAPINCH"
               }
             ]
@@ -3731,45 +3243,36 @@
           "base_label": "gMirageTower_4F",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "DESERT",
             "mons": [
               {
-                "range": "DESERT",
                 "species": "BALTOY"
               },
               {
-                "range": "DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "DESERT",
                 "species": "BALTOY"
               },
               {
-                "range": "DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "DESERT",
                 "species": "TRAPINCH"
               },
               {
-                "range": "DESERT",
                 "species": "SANDSHREW"
               },
               {
-                "range": "DESERT",
                 "species": "TRAPINCH"
               }
             ]
@@ -3780,21 +3283,18 @@
           "base_label": "gAbandonedShip_Rooms_B1F",
           "water_mons": {
             "encounter_rate": 4,
+            "range": "SURF_INITIAL",
             "mons": [
               {
-                "range": "SURF_INITIAL",
                 "species": "TENTACOOL"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "TENTACOOL"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "TENTACOOL"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "TENTACRUEL"
               }
             ]
@@ -3829,45 +3329,38 @@
           "base_label": "gAbandonedShip_HiddenFloorCorridors",
           "water_mons": {
             "encounter_rate": 4,
+            "range": "DIVE_INITIAL",
             "mons": [
               {
-                "range": "DIVE_INITIAL",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "DIVE_INITIAL",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "DIVE_INITIAL",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "DIVE_INITIAL",
                 "species": "TENTACRUEL"
               }
             ]
           },
           "fishing_mons": {
+            "range": "DIVE_INITIAL",
             "mons": [
               {
-                "range": "DIVE_INITIAL",
                 "species": "MAGIKARP"
               },
               {
-                "range": "DIVE_INITIAL",
                 "species": "TENTACOOL"
               },
               {
-                "range": "DIVE_INITIAL",
                 "species": "TENTACOOL"
               },
               {
-                "range": "DIVE_INITIAL",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "DIVE_INITIAL",
                 "species": "TENTACRUEL"
               }
             ]
@@ -3878,45 +3371,36 @@
           "base_label": "gNewMauville_Entrance",
           "land_mons": {
             "encounter_rate": 10,
+            "range": "SURF_INITIAL",
             "mons": [
               {
-                "range": "SURF_INITIAL",
                 "species": "VOLTORB"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "MAGNEMITE"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PICHU"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PICHU"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "VOLTORB"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "MAGNEMITE"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PICHU"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "PICHU"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "VOLTORB"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "MAGNEMITE"
               }
             ]
@@ -3927,45 +3411,36 @@
           "base_label": "gNewMauville_Inside",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "SURF_INITIAL",
             "mons": [
               {
-                "range": "SURF_INITIAL",
                 "species": "VOLTORB"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "MAGNEMITE"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "VOLTORB"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "MAGNEMITE"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "VOLTORB"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "MAGNEMITE"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "VOLTORB"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "MAGNEMITE"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "VOLTORB"
               },
               {
-                "range": "SURF_INITIAL",
                 "species": "MAGNEMITE"
               }
             ]
@@ -3976,45 +3451,36 @@
           "base_label": "gMtPyre_1F",
           "land_mons": {
             "encounter_rate": 10,
+            "range": "MT_PYRE",
             "mons": [
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               }
             ]
@@ -4025,45 +3491,36 @@
           "base_label": "gMtPyre_2F",
           "land_mons": {
             "encounter_rate": 10,
+            "range": "MT_PYRE",
             "mons": [
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               }
             ]
@@ -4074,45 +3531,36 @@
           "base_label": "gMtPyre_3F",
           "land_mons": {
             "encounter_rate": 10,
+            "range": "MT_PYRE",
             "mons": [
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               }
             ]
@@ -4123,45 +3571,36 @@
           "base_label": "gMtPyre_4F",
           "land_mons": {
             "encounter_rate": 10,
+            "range": "MT_PYRE",
             "mons": [
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               }
             ]
@@ -4172,45 +3611,36 @@
           "base_label": "gMtPyre_5F",
           "land_mons": {
             "encounter_rate": 10,
+            "range": "MT_PYRE",
             "mons": [
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               }
             ]
@@ -4221,45 +3651,36 @@
           "base_label": "gMtPyre_6F",
           "land_mons": {
             "encounter_rate": 10,
+            "range": "MT_PYRE",
             "mons": [
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               }
             ]
@@ -4270,45 +3691,36 @@
           "base_label": "gMtPyre_Exterior",
           "land_mons": {
             "encounter_rate": 10,
+            "range": "MT_PYRE",
             "mons": [
               {
-                "range": "MT_PYRE",
                 "species": "VULPIX"
               },
               {
-                "range": "MT_PYRE",
                 "species": "MEDITITE"
               },
               {
-                "range": "MT_PYRE",
                 "species": "VULPIX"
               },
               {
-                "range": "MT_PYRE",
                 "species": "MEDITITE"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "PELIPPER"
               },
               {
-                "range": "MT_PYRE",
                 "species": "PELIPPER"
               }
             ]
@@ -4319,45 +3731,36 @@
           "base_label": "gMtPyre_Summit",
           "land_mons": {
             "encounter_rate": 10,
+            "range": "MT_PYRE",
             "mons": [
               {
-                "range": "MT_PYRE",
                 "species": "CHINGLING"
               },
               {
-                "range": "MT_PYRE",
                 "species": "NATU"
               },
               {
-                "range": "MT_PYRE",
                 "species": "CHINGLING"
               },
               {
-                "range": "MT_PYRE",
                 "species": "NATU"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               },
               {
-                "range": "MT_PYRE",
                 "species": "DUSKULL"
               },
               {
-                "range": "MT_PYRE",
                 "species": "SHUPPET"
               }
             ]
@@ -4368,45 +3771,36 @@
           "base_label": "gMagmaHideout_1F",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "MAGMA_HIDEOUT",
             "mons": [
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "NUMEL"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "SLUGMA"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "BALTOY"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "RHYHORN"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               }
             ]
@@ -4417,45 +3811,36 @@
           "base_label": "gMagmaHideout_2F_1R",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "MAGMA_HIDEOUT",
             "mons": [
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "NUMEL"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "SLUGMA"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "BALTOY"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "RHYHORN"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               }
             ]
@@ -4466,45 +3851,36 @@
           "base_label": "gMagmaHideout_2F_2R",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "MAGMA_HIDEOUT",
             "mons": [
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "NUMEL"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "SLUGMA"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "BALTOY"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "RHYHORN"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               }
             ]
@@ -4515,45 +3891,36 @@
           "base_label": "gMagmaHideout_3F_1R",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "MAGMA_HIDEOUT",
             "mons": [
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "NUMEL"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "SLUGMA"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "BALTOY"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "RHYHORN"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               }
             ]
@@ -4564,45 +3931,36 @@
           "base_label": "gMagmaHideout_3F_2R",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "MAGMA_HIDEOUT",
             "mons": [
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "NUMEL"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "SLUGMA"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "BALTOY"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "RHYHORN"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               }
             ]
@@ -4613,45 +3971,36 @@
           "base_label": "gMagmaHideout_4F",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "MAGMA_HIDEOUT",
             "mons": [
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "NUMEL"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "SLUGMA"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "BALTOY"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "RHYHORN"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               }
             ]
@@ -4662,45 +4011,36 @@
           "base_label": "gMagmaHideout_3F_3R",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "MAGMA_HIDEOUT",
             "mons": [
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "NUMEL"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "SLUGMA"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "BALTOY"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "RHYHORN"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               }
             ]
@@ -4711,45 +4051,36 @@
           "base_label": "gMagmaHideout_2F_3R",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "MAGMA_HIDEOUT",
             "mons": [
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "NUMEL"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "SLUGMA"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "TORKOAL"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "BALTOY"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "RHYHORN"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "VULPIX"
               },
               {
-                "range": "MAGMA_HIDEOUT",
                 "species": "HOUNDOUR"
               }
             ]
@@ -4760,45 +4091,36 @@
           "base_label": "gShoalCave_LowTideStairsRoom",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "SHOAL_CAVE",
             "mons": [
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "GOLBAT"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "GOLBAT"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "GOLBAT"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               }
             ]
@@ -4809,45 +4131,36 @@
           "base_label": "gShoalCave_LowTideLowerRoom",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "SHOAL_CAVE",
             "mons": [
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "GOLBAT"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "GOLBAT"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "GOLBAT"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               }
             ]
@@ -4858,66 +4171,54 @@
           "base_label": "gShoalCave_LowTideInnerRoom",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "SHOAL_CAVE",
             "mons": [
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "GOLBAT"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "GOLBAT"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "GOLBAT"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": 4,
+            "range": "SHOAL_CAVE",
             "mons": [
               {
-                "range": "SHOAL_CAVE",
                 "species": "WAILMER"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               }
             ]
@@ -4952,66 +4253,54 @@
           "base_label": "gShoalCave_LowTideEntranceRoom",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "SHOAL_CAVE",
             "mons": [
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "GOLBAT"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "GOLBAT"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "GOLBAT"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": 4,
+            "range": "SHOAL_CAVE",
             "mons": [
               {
-                "range": "SHOAL_CAVE",
                 "species": "WAILMER"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               }
             ]
@@ -5046,45 +4335,36 @@
           "base_label": "gShoalCave_LowTideIceRoom",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "SHOAL_CAVE",
             "mons": [
               {
-                "range": "SHOAL_CAVE",
                 "species": "SNORUNT"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SNORUNT"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SNORUNT"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SNORUNT"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SNORUNT"
               },
               {
-                "range": "SHOAL_CAVE",
                 "species": "SPHEAL"
               }
             ]
@@ -5095,21 +4375,18 @@
           "base_label": "gUnderwater_Route124",
           "water_mons": {
             "encounter_rate": 4,
+            "range": "DIVE_INITIAL",
             "mons": [
               {
-                "range": "DIVE_INITIAL",
                 "species": "CLAMPERL"
               },
               {
-                "range": "DIVE_INITIAL",
                 "species": "CHINCHOU"
               },
               {
-                "range": "DIVE_INITIAL",
                 "species": "RELICANTH"
               },
               {
-                "range": "DIVE_INITIAL",
                 "species": "RELICANTH"
               }
             ]
@@ -5120,21 +4397,18 @@
           "base_label": "gUnderwater_Route126",
           "water_mons": {
             "encounter_rate": 4,
+            "range": "DIVE_INITIAL",
             "mons": [
               {
-                "range": "DIVE_INITIAL",
                 "species": "CLAMPERL"
               },
               {
-                "range": "DIVE_INITIAL",
                 "species": "CHINCHOU"
               },
               {
-                "range": "DIVE_INITIAL",
                 "species": "RELICANTH"
               },
               {
-                "range": "DIVE_INITIAL",
                 "species": "RELICANTH"
               }
             ]
@@ -5145,45 +4419,38 @@
           "base_label": "gSeafloorCavern_Entrance",
           "water_mons": {
             "encounter_rate": 4,
+            "range": "SEAFLOOR_CAVERN",
             "mons": [
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CARVANHA"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "TENTACRUEL"
               }
             ]
           },
           "fishing_mons": {
+            "range": "SEAFLOOR_CAVERN",
             "mons": [
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "MAGIKARP"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CARVANHA"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "TENTACOOL"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "SHARPEDO"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "TENTACRUEL"
               }
             ]
@@ -5194,45 +4461,36 @@
           "base_label": "gSeafloorCavern_Room1",
           "land_mons": {
             "encounter_rate": 4,
+            "range": "SEAFLOOR_CAVERN",
             "mons": [
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "GOLDUCK"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "GOLDUCK"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "GOLBAT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CORSOLA"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CLAMPERL"
               }
             ]
@@ -5243,45 +4501,36 @@
           "base_label": "gSeafloorCavern_Room2",
           "land_mons": {
             "encounter_rate": 4,
+            "range": "SEAFLOOR_CAVERN",
             "mons": [
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "GOLDUCK"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "GOLDUCK"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "GOLBAT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CORSOLA"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CLAMPERL"
               }
             ]
@@ -5292,45 +4541,36 @@
           "base_label": "gSeafloorCavern_Room3",
           "land_mons": {
             "encounter_rate": 4,
+            "range": "SEAFLOOR_CAVERN",
             "mons": [
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "GOLDUCK"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "GOLDUCK"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "GOLBAT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CORSOLA"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CLAMPERL"
               }
             ]
@@ -5341,45 +4581,36 @@
           "base_label": "gSeafloorCavern_Room4",
           "land_mons": {
             "encounter_rate": 4,
+            "range": "SEAFLOOR_CAVERN",
             "mons": [
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "GOLDUCK"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "GOLDUCK"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "GOLBAT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CORSOLA"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CLAMPERL"
               }
             ]
@@ -5390,45 +4621,36 @@
           "base_label": "gSeafloorCavern_Room5",
           "land_mons": {
             "encounter_rate": 4,
+            "range": "SEAFLOOR_CAVERN",
             "mons": [
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "GOLDUCK"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "GOLDUCK"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "GOLBAT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CORSOLA"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CLAMPERL"
               }
             ]
@@ -5439,90 +4661,74 @@
           "base_label": "gSeafloorCavern_Room6",
           "land_mons": {
             "encounter_rate": 4,
+            "range": "SEAFLOOR_CAVERN",
             "mons": [
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "GOLDUCK"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "GOLDUCK"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "GOLBAT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CORSOLA"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CLAMPERL"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": 4,
+            "range": "SEAFLOOR_CAVERN",
             "mons": [
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CARVANHA"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "TENTACRUEL"
               }
             ]
           },
           "fishing_mons": {
+            "range": "SEAFLOOR_CAVERN",
             "mons": [
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "MAGIKARP"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CARVANHA"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "TENTACOOL"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "SHARPEDO"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "TENTACRUEL"
               }
             ]
@@ -5533,90 +4739,74 @@
           "base_label": "gSeafloorCavern_Room7",
           "land_mons": {
             "encounter_rate": 4,
+            "range": "SEAFLOOR_CAVERN",
             "mons": [
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "GOLDUCK"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "GOLDUCK"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "GOLBAT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CORSOLA"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CLAMPERL"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": 4,
+            "range": "SEAFLOOR_CAVERN",
             "mons": [
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CARVANHA"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "TENTACRUEL"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "TENTACRUEL"
               }
             ]
           },
           "fishing_mons": {
+            "range": "SEAFLOOR_CAVERN",
             "mons": [
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "MAGIKARP"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CARVANHA"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "TENTACOOL"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "SHARPEDO"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "TENTACRUEL"
               }
             ]
@@ -5627,45 +4817,36 @@
           "base_label": "gSeafloorCavern_Room8",
           "land_mons": {
             "encounter_rate": 4,
+            "range": "SEAFLOOR_CAVERN",
             "mons": [
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "GOLDUCK"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "GOLDUCK"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "GOLBAT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CORSOLA"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CRAWDAUNT"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CLAMPERL"
               }
             ]
@@ -5676,45 +4857,36 @@
           "base_label": "gCaveOfOrigin_Entrance",
           "land_mons": {
             "encounter_rate": 4,
+            "range": "CAVE_OF_ORIGIN",
             "mons": [
               {
-                "range": "CAVE_OF_ORIGIN",
                 "species": "MAWILE"
               },
               {
-                "range": "CAVE_OF_ORIGIN",
                 "species": "SABLEYE"
               },
               {
-                "range": "CAVE_OF_ORIGIN",
                 "species": "GOLBAT"
               },
               {
-                "range": "CAVE_OF_ORIGIN",
                 "species": "GOLBAT"
               },
               {
-                "range": "CAVE_OF_ORIGIN",
                 "species": "MAWILE"
               },
               {
-                "range": "CAVE_OF_ORIGIN",
                 "species": "SABLEYE"
               },
               {
-                "range": "CAVE_OF_ORIGIN",
                 "species": "GOLBAT"
               },
               {
-                "range": "CAVE_OF_ORIGIN",
                 "species": "GOLBAT"
               },
               {
-                "range": "CAVE_OF_ORIGIN",
                 "species": "GOLBAT"
               },
               {
-                "range": "CAVE_OF_ORIGIN",
                 "species": "GOLBAT"
               }
             ]
@@ -5725,45 +4897,36 @@
           "base_label": "gCaveOfOrigin_1F",
           "land_mons": {
             "encounter_rate": 4,
+            "range": "CAVE_OF_ORIGIN",
             "mons": [
               {
-                "range": "CAVE_OF_ORIGIN",
                 "species": "MAWILE"
               },
               {
-                "range": "CAVE_OF_ORIGIN",
                 "species": "SABLEYE"
               },
               {
-                "range": "CAVE_OF_ORIGIN",
                 "species": "GOLBAT"
               },
               {
-                "range": "CAVE_OF_ORIGIN",
                 "species": "GOLBAT"
               },
               {
-                "range": "CAVE_OF_ORIGIN",
                 "species": "MAWILE"
               },
               {
-                "range": "CAVE_OF_ORIGIN",
                 "species": "SABLEYE"
               },
               {
-                "range": "CAVE_OF_ORIGIN",
                 "species": "GOLBAT"
               },
               {
-                "range": "CAVE_OF_ORIGIN",
                 "species": "GOLBAT"
               },
               {
-                "range": "CAVE_OF_ORIGIN",
                 "species": "GOLBAT"
               },
               {
-                "range": "CAVE_OF_ORIGIN",
                 "species": "GOLBAT"
               }
             ]
@@ -5774,45 +4937,36 @@
           "base_label": "gSkyPillar_1F",
           "land_mons": {
             "encounter_rate": 10,
+            "range": "SKY_PILLAR",
             "mons": [
               {
-                "range": "SKY_PILLAR",
                 "species": "MAWILE"
               },
               {
-                "range": "SKY_PILLAR",
                 "species": "SABLEYE"
               },
               {
-                "range": "SKY_PILLAR",
                 "species": "CLAYDOL"
               },
               {
-                "range": "SKY_PILLAR",
                 "species": "CLAYDOL"
               },
               {
-                "range": "SKY_PILLAR",
                 "species": "DUSCLOPS"
               },
               {
-                "range": "SKY_PILLAR",
                 "species": "BANETTE"
               },
               {
-                "range": "SKY_PILLAR",
                 "species": "GOLBAT"
               },
               {
-                "range": "SKY_PILLAR",
                 "species": "GOLBAT"
               },
               {
-                "range": "SKY_PILLAR",
                 "species": "DUSCLOPS"
               },
               {
-                "range": "SKY_PILLAR",
                 "species": "BANETTE"
               }
             ]
@@ -5823,45 +4977,36 @@
           "base_label": "gSkyPillar_3F",
           "land_mons": {
             "encounter_rate": 10,
+            "range": "SKY_PILLAR",
             "mons": [
               {
-                "range": "SKY_PILLAR",
                 "species": "MAWILE"
               },
               {
-                "range": "SKY_PILLAR",
                 "species": "SABLEYE"
               },
               {
-                "range": "SKY_PILLAR",
                 "species": "CLAYDOL"
               },
               {
-                "range": "SKY_PILLAR",
                 "species": "CLAYDOL"
               },
               {
-                "range": "SKY_PILLAR",
                 "species": "DUSCLOPS"
               },
               {
-                "range": "SKY_PILLAR",
                 "species": "BANETTE"
               },
               {
-                "range": "SKY_PILLAR",
                 "species": "GOLBAT"
               },
               {
-                "range": "SKY_PILLAR",
                 "species": "GOLBAT"
               },
               {
-                "range": "SKY_PILLAR",
                 "species": "DUSCLOPS"
               },
               {
-                "range": "SKY_PILLAR",
                 "species": "BANETTE"
               }
             ]
@@ -5872,45 +5017,36 @@
           "base_label": "gSkyPillar_5F",
           "land_mons": {
             "encounter_rate": 10,
+            "range": "SKY_PILLAR",
             "mons": [
               {
-                "range": "SKY_PILLAR",
                 "species": "CLAYDOL"
               },
               {
-                "range": "SKY_PILLAR",
                 "species": "ALTARIA"
               },
               {
-                "range": "SKY_PILLAR",
                 "species": "MAWILE"
               },
               {
-                "range": "SKY_PILLAR",
                 "species": "SABLEYE"
               },
               {
-                "range": "SKY_PILLAR",
                 "species": "DUSCLOPS"
               },
               {
-                "range": "SKY_PILLAR",
                 "species": "BANETTE"
               },
               {
-                "range": "SKY_PILLAR",
                 "species": "MAWILE"
               },
               {
-                "range": "SKY_PILLAR",
                 "species": "SABLEYE"
               },
               {
-                "range": "SKY_PILLAR",
                 "species": "DUSCLOPS"
               },
               {
-                "range": "SKY_PILLAR",
                 "species": "BANETTE"
               }
             ]
@@ -5921,45 +5057,36 @@
           "base_label": "gVictoryRoad_1F",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "VICTORY_ROAD",
             "mons": [
               {
-                "range": "VICTORY_ROAD",
                 "species": "LAIRON"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "HARIYAMA"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "LOUDRED"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "GOLBAT"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "LOUDRED"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "GOLBAT"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "LAIRON"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "HARIYAMA"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "LOUDRED"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "GOLBAT"
               }
             ]
@@ -5970,45 +5097,36 @@
           "base_label": "gVictoryRoad_B1F",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "VICTORY_ROAD",
             "mons": [
               {
-                "range": "VICTORY_ROAD",
                 "species": "MEDICHAM"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "HARIYAMA"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "LAIRON"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "GOLBAT"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "LAIRON"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "GOLBAT"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "MEDICHAM"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "HARIYAMA"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "LAIRON"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "GOLBAT"
               }
             ]
@@ -6019,90 +5137,74 @@
           "base_label": "gVictoryRoad_B2F",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "VICTORY_ROAD",
             "mons": [
               {
-                "range": "VICTORY_ROAD",
                 "species": "LAIRON"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "MEDICHAM"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "MAWILE"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "SABLEYE"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "MAWILE"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "SABLEYE"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "LAIRON"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "MEDICHAM"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "MAWILE"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "SABLEYE"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": 4,
+            "range": "VICTORY_ROAD",
             "mons": [
               {
-                "range": "VICTORY_ROAD",
                 "species": "WHISCASH"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "MILOTIC"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "MILOTIC"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "MILOTIC"
               }
             ]
           },
           "fishing_mons": {
+            "range": "VICTORY_ROAD",
             "mons": [
               {
-                "range": "VICTORY_ROAD",
                 "species": "MAGIKARP"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "GOLDEEN"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "BARBOACH"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "SEAKING"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "WHISCASH"
               }
             ]
@@ -6113,90 +5215,74 @@
           "base_label": "gSafariZone_South",
           "land_mons": {
             "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
+            "range": "POSTGAME",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "ELEKID"
               },
               {
-                "range": "POSTGAME",
                 "species": "MAREEP"
               },
               {
-                "range": "POSTGAME",
                 "species": "AIPOM"
               },
               {
-                "range": "POSTGAME",
                 "species": "GEODUDE_ALOLA"
               },
               {
-                "range": "POSTGAME",
                 "species": "AIPOM"
               },
               {
-                "range": "POSTGAME",
                 "species": "GEODUDE_ALOLA"
               },
               {
-                "range": "POSTGAME",
                 "species": "MUNCHLAX"
               },
               {
-                "range": "POSTGAME",
                 "species": "MUNCHLAX"
               },
               {
-                "range": "POSTGAME",
                 "species": "MUNCHLAX"
               },
               {
-                "range": "POSTGAME",
                 "species": "MUNCHLAX"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
+            "range": "POSTGAME",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "TYMPOLE"
               },
               {
-                "range": "POSTGAME",
                 "species": "DUCKLETT"
               },
               {
-                "range": "POSTGAME",
                 "species": "DUCKLETT"
               },
               {
-                "range": "POSTGAME",
                 "species": "DUCKLETT"
               }
             ]
           },
           "fishing_mons": {
+            "range": "POSTGAME",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "MAGIKARP"
               },
               {
-                "range": "POSTGAME",
                 "species": "TYNAMO"
               },
               {
-                "range": "POSTGAME",
                 "species": "FRILLISH"
               },
               {
-                "range": "POSTGAME",
                 "species": "EELEKTRIK"
               },
               {
-                "range": "POSTGAME",
                 "species": "JELLICENT"
               }
             ]
@@ -6207,90 +5293,74 @@
           "base_label": "gSafariZone_Southwest",
           "land_mons": {
             "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
+            "range": "POSTGAME",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "TEDDIURSA"
               },
               {
-                "range": "POSTGAME",
                 "species": "SHUCKLE"
               },
               {
-                "range": "POSTGAME",
                 "species": "LEDYBA"
               },
               {
-                "range": "POSTGAME",
                 "species": "SPINARAK"
               },
               {
-                "range": "POSTGAME",
                 "species": "LEDYBA"
               },
               {
-                "range": "POSTGAME",
                 "species": "SPINARAK"
               },
               {
-                "range": "POSTGAME",
                 "species": "PINECO"
               },
               {
-                "range": "POSTGAME",
                 "species": "PINECO"
               },
               {
-                "range": "POSTGAME",
                 "species": "PINECO"
               },
               {
-                "range": "POSTGAME",
                 "species": "PINECO"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
+            "range": "POSTGAME",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "POLIWAG"
               },
               {
-                "range": "POSTGAME",
                 "species": "KRABBY"
               },
               {
-                "range": "POSTGAME",
                 "species": "KRABBY"
               },
               {
-                "range": "POSTGAME",
                 "species": "KRABBY"
               }
             ]
           },
           "fishing_mons": {
+            "range": "POSTGAME",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "MAGIKARP"
               },
               {
-                "range": "POSTGAME",
                 "species": "REMORAID"
               },
               {
-                "range": "POSTGAME",
                 "species": "MANTYKE"
               },
               {
-                "range": "POSTGAME",
                 "species": "OCTILLERY"
               },
               {
-                "range": "POSTGAME",
                 "species": "MANTINE"
               }
             ]
@@ -6301,90 +5371,74 @@
           "base_label": "gSafariZone_North",
           "land_mons": {
             "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
+            "range": "POSTGAME",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "HELIOPTILE"
               },
               {
-                "range": "POSTGAME",
                 "species": "SANDILE"
               },
               {
-                "range": "POSTGAME",
                 "species": "GLIGAR"
               },
               {
-                "range": "POSTGAME",
                 "species": "BONSLY"
               },
               {
-                "range": "POSTGAME",
                 "species": "GLIGAR"
               },
               {
-                "range": "POSTGAME",
                 "species": "BONSLY"
               },
               {
-                "range": "POSTGAME",
                 "species": "SNUBBULL"
               },
               {
-                "range": "POSTGAME",
                 "species": "SNUBBULL"
               },
               {
-                "range": "POSTGAME",
                 "species": "SNUBBULL"
               },
               {
-                "range": "POSTGAME",
                 "species": "SNUBBULL"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
+            "range": "POSTGAME",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "SLOWPOKE"
               },
               {
-                "range": "POSTGAME",
                 "species": "SLOWPOKE_GALAR"
               },
               {
-                "range": "POSTGAME",
                 "species": "SLOWPOKE_GALAR"
               },
               {
-                "range": "POSTGAME",
                 "species": "SLOWPOKE_GALAR"
               }
             ]
           },
           "fishing_mons": {
+            "range": "POSTGAME",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "MAGIKARP"
               },
               {
-                "range": "POSTGAME",
                 "species": "DONDOZO"
               },
               {
-                "range": "POSTGAME",
                 "species": "ALOMOMOLA"
               },
               {
-                "range": "POSTGAME",
                 "species": "DONDOZO"
               },
               {
-                "range": "POSTGAME",
                 "species": "ALOMOMOLA"
               }
             ]
@@ -6395,90 +5449,74 @@
           "base_label": "gSafariZone_Northwest",
           "land_mons": {
             "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
+            "range": "POSTGAME",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "TANGELA"
               },
               {
-                "range": "POSTGAME",
                 "species": "SUNKERN"
               },
               {
-                "range": "POSTGAME",
                 "species": "VOLTORB_HISUI"
               },
               {
-                "range": "POSTGAME",
                 "species": "HOOTHOOT"
               },
               {
-                "range": "POSTGAME",
                 "species": "VOLTORB_HISUI"
               },
               {
-                "range": "POSTGAME",
                 "species": "HOOTHOOT"
               },
               {
-                "range": "POSTGAME",
                 "species": "MILTANK"
               },
               {
-                "range": "POSTGAME",
                 "species": "MILTANK"
               },
               {
-                "range": "POSTGAME",
                 "species": "MILTANK"
               },
               {
-                "range": "POSTGAME",
                 "species": "MILTANK"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
+            "range": "POSTGAME",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "DEWPIDER"
               },
               {
-                "range": "POSTGAME",
                 "species": "CRAMORANT"
               },
               {
-                "range": "POSTGAME",
                 "species": "CRAMORANT"
               },
               {
-                "range": "POSTGAME",
                 "species": "CRAMORANT"
               }
             ]
           },
           "fishing_mons": {
+            "range": "POSTGAME",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "MAGIKARP"
               },
               {
-                "range": "POSTGAME",
                 "species": "ARROKUDA"
               },
               {
-                "range": "POSTGAME",
                 "species": "VELUZA"
               },
               {
-                "range": "POSTGAME",
                 "species": "BARRASKEWDA"
               },
               {
-                "range": "POSTGAME",
                 "species": "VELUZA"
               }
             ]
@@ -6489,90 +5527,74 @@
           "base_label": "gSafariZone_Southeast",
           "land_mons": {
             "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
+            "range": "POSTGAME",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "MEOWTH"
               },
               {
-                "range": "POSTGAME",
                 "species": "TOGEPI"
               },
               {
-                "range": "POSTGAME",
                 "species": "MEOWTH_ALOLA"
               },
               {
-                "range": "POSTGAME",
                 "species": "MEOWTH_GALAR"
               },
               {
-                "range": "POSTGAME",
                 "species": "MEOWTH_ALOLA"
               },
               {
-                "range": "POSTGAME",
                 "species": "MEOWTH_GALAR"
               },
               {
-                "range": "POSTGAME",
                 "species": "GRIMER_ALOLA"
               },
               {
-                "range": "POSTGAME",
                 "species": "GRIMER_ALOLA"
               },
               {
-                "range": "POSTGAME",
                 "species": "GRIMER_ALOLA"
               },
               {
-                "range": "POSTGAME",
                 "species": "GRIMER_ALOLA"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
+            "range": "POSTGAME",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "WOOPER"
               },
               {
-                "range": "POSTGAME",
                 "species": "WOOPER_PALDEA"
               },
               {
-                "range": "POSTGAME",
                 "species": "WOOPER_PALDEA"
               },
               {
-                "range": "POSTGAME",
                 "species": "WOOPER_PALDEA"
               }
             ]
           },
           "fishing_mons": {
+            "range": "POSTGAME",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "MAGIKARP"
               },
               {
-                "range": "POSTGAME",
                 "species": "CLAUNCHER"
               },
               {
-                "range": "POSTGAME",
                 "species": "SKRELP"
               },
               {
-                "range": "POSTGAME",
                 "species": "CLAWITZER"
               },
               {
-                "range": "POSTGAME",
                 "species": "DRAGALGE"
               }
             ]
@@ -6583,90 +5605,74 @@
           "base_label": "gSafariZone_Northeast",
           "land_mons": {
             "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
+            "range": "POSTGAME",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "DRILBUR"
               },
               {
-                "range": "POSTGAME",
                 "species": "LICKITUNG"
               },
               {
-                "range": "POSTGAME",
                 "species": "ZIGZAGOON_GALAR"
               },
               {
-                "range": "POSTGAME",
                 "species": "STANTLER"
               },
               {
-                "range": "POSTGAME",
                 "species": "ZIGZAGOON_GALAR"
               },
               {
-                "range": "POSTGAME",
                 "species": "STANTLER"
               },
               {
-                "range": "POSTGAME",
                 "species": "SNEASEL_HISUI"
               },
               {
-                "range": "POSTGAME",
                 "species": "SNEASEL_HISUI"
               },
               {
-                "range": "POSTGAME",
                 "species": "SNEASEL_HISUI"
               },
               {
-                "range": "POSTGAME",
                 "species": "SNEASEL_HISUI"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
+            "range": "POSTGAME",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "SHELLDER"
               },
               {
-                "range": "POSTGAME",
                 "species": "SEEL"
               },
               {
-                "range": "POSTGAME",
                 "species": "SEEL"
               },
               {
-                "range": "POSTGAME",
                 "species": "SEEL"
               }
             ]
           },
           "fishing_mons": {
+            "range": "POSTGAME",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "MAGIKARP"
               },
               {
-                "range": "POSTGAME",
                 "species": "QWILFISH"
               },
               {
-                "range": "POSTGAME",
                 "species": "QWILFISH_HISUI"
               },
               {
-                "range": "POSTGAME",
                 "species": "QWILFISH"
               },
               {
-                "range": "POSTGAME",
                 "species": "OVERQWIL"
               }
             ]
@@ -6677,45 +5683,36 @@
           "base_label": "gSafariZone_IceCave",
           "land_mons": {
             "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
+            "range": "POSTGAME",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "VULPIX_ALOLA"
               },
               {
-                "range": "POSTGAME",
                 "species": "SANDSHREW_ALOLA"
               },
               {
-                "range": "POSTGAME",
                 "species": "SNEASEL"
               },
               {
-                "range": "POSTGAME",
                 "species": "SWINUB"
               },
               {
-                "range": "POSTGAME",
                 "species": "SNEASEL"
               },
               {
-                "range": "POSTGAME",
                 "species": "SWINUB"
               },
               {
-                "range": "POSTGAME",
                 "species": "VANILLITE"
               },
               {
-                "range": "POSTGAME",
                 "species": "VANILLITE"
               },
               {
-                "range": "POSTGAME",
                 "species": "VANILLITE"
               },
               {
-                "range": "POSTGAME",
                 "species": "VANILLITE"
               }
             ]
@@ -6726,45 +5723,36 @@
           "base_label": "gSafariZone_FireCave",
           "land_mons": {
             "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
+            "range": "POSTGAME",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "MAGBY"
               },
               {
-                "range": "POSTGAME",
                 "species": "HEATMOR"
               },
               {
-                "range": "POSTGAME",
                 "species": "GROWLITHE"
               },
               {
-                "range": "POSTGAME",
                 "species": "GROWLITHE_HISUI"
               },
               {
-                "range": "POSTGAME",
                 "species": "GROWLITHE"
               },
               {
-                "range": "POSTGAME",
                 "species": "GROWLITHE_HISUI"
               },
               {
-                "range": "POSTGAME",
                 "species": "ROLYCOLY"
               },
               {
-                "range": "POSTGAME",
                 "species": "ROLYCOLY"
               },
               {
-                "range": "POSTGAME",
                 "species": "ROLYCOLY"
               },
               {
-                "range": "POSTGAME",
                 "species": "ROLYCOLY"
               }
             ]
@@ -6775,45 +5763,36 @@
           "base_label": "gSafariZone_Forest",
           "land_mons": {
             "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
+            "range": "POSTGAME",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "NONE"
               },
               {
-                "range": "POSTGAME",
                 "species": "NONE"
               },
               {
-                "range": "POSTGAME",
                 "species": "NONE"
               },
               {
-                "range": "POSTGAME",
                 "species": "NONE"
               },
               {
-                "range": "POSTGAME",
                 "species": "NONE"
               },
               {
-                "range": "POSTGAME",
                 "species": "NONE"
               },
               {
-                "range": "POSTGAME",
                 "species": "NONE"
               },
               {
-                "range": "POSTGAME",
                 "species": "NONE"
               },
               {
-                "range": "POSTGAME",
                 "species": "NONE"
               },
               {
-                "range": "POSTGAME",
                 "species": "NONE"
               }
             ]
@@ -6824,45 +5803,36 @@
           "base_label": "gDesertUnderpass",
           "land_mons": {
             "encounter_rate": 10,
+            "range": "POSTGAME",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "DITTO"
               },
               {
-                "range": "POSTGAME",
                 "species": "AERODACTYL"
               },
               {
-                "range": "POSTGAME",
                 "species": "OMANYTE"
               },
               {
-                "range": "POSTGAME",
                 "species": "KABUTO"
               },
               {
-                "range": "POSTGAME",
                 "species": "OMANYTE"
               },
               {
-                "range": "POSTGAME",
                 "species": "KABUTO"
               },
               {
-                "range": "POSTGAME",
                 "species": "DITTO"
               },
               {
-                "range": "POSTGAME",
                 "species": "AERODACTYL"
               },
               {
-                "range": "POSTGAME",
                 "species": "OMANYTE"
               },
               {
-                "range": "POSTGAME",
                 "species": "KABUTO"
               }
             ]
@@ -6873,45 +5843,36 @@
           "base_label": "gArtisanCave_B1F",
           "land_mons": {
             "encounter_rate": 10,
+            "range": "POSTGAME",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "BLISSEY"
               },
               {
-                "range": "POSTGAME",
                 "species": "BLISSEY"
               },
               {
-                "range": "POSTGAME",
                 "species": "BLISSEY"
               },
               {
-                "range": "POSTGAME",
                 "species": "BLISSEY"
               },
               {
-                "range": "POSTGAME",
                 "species": "BLISSEY"
               },
               {
-                "range": "POSTGAME",
                 "species": "BLISSEY"
               },
               {
-                "range": "POSTGAME",
                 "species": "BLISSEY"
               },
               {
-                "range": "POSTGAME",
                 "species": "BLISSEY"
               },
               {
-                "range": "POSTGAME",
                 "species": "BLISSEY"
               },
               {
-                "range": "POSTGAME",
                 "species": "BLISSEY"
               }
             ]
@@ -6922,45 +5883,36 @@
           "base_label": "gArtisanCave_1F",
           "land_mons": {
             "encounter_rate": 10,
+            "range": "POSTGAME",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "SMEARGLE"
               },
               {
-                "range": "POSTGAME",
                 "species": "SMEARGLE"
               },
               {
-                "range": "POSTGAME",
                 "species": "SMEARGLE"
               },
               {
-                "range": "POSTGAME",
                 "species": "SMEARGLE"
               },
               {
-                "range": "POSTGAME",
                 "species": "SMEARGLE"
               },
               {
-                "range": "POSTGAME",
                 "species": "SMEARGLE"
               },
               {
-                "range": "POSTGAME",
                 "species": "SMEARGLE"
               },
               {
-                "range": "POSTGAME",
                 "species": "SMEARGLE"
               },
               {
-                "range": "POSTGAME",
                 "species": "SMEARGLE"
               },
               {
-                "range": "POSTGAME",
                 "species": "SMEARGLE"
               }
             ]
@@ -6971,45 +5923,36 @@
           "base_label": "gAlteringCave1",
           "land_mons": {
             "encounter_rate": 7,
+            "range": "POSTGAME",
             "mons": [
               {
-                "range": "POSTGAME",
                 "species": "GRASS_STARTER"
               },
               {
-                "range": "POSTGAME",
                 "species": "FIRE_STARTER"
               },
               {
-                "range": "POSTGAME",
                 "species": "WATER_STARTER"
               },
               {
-                "range": "POSTGAME",
                 "species": "WATER_STARTER"
               },
               {
-                "range": "POSTGAME",
                 "species": "GRASS_STARTER"
               },
               {
-                "range": "POSTGAME",
                 "species": "FIRE_STARTER"
               },
               {
-                "range": "POSTGAME",
                 "species": "WATER_STARTER"
               },
               {
-                "range": "POSTGAME",
                 "species": "WATER_STARTER"
               },
               {
-                "range": "POSTGAME",
                 "species": "HAPPINY"
               },
               {
-                "range": "POSTGAME",
                 "species": "HAPPINY"
               }
             ]

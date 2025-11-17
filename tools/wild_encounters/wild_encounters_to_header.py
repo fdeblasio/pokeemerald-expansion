@@ -119,13 +119,17 @@ class WildEncounterAssembler:
                     macro_total_name = macro_base + group_name_mapping[-1] + "_TOTAL"
                     self.WriteLine()
 
-    def WriteMonInfos(self, name, mons, encounter_rate):
+    def WriteMonInfos(self, name, mons, encounter_rate, range):
         info_name = name + "Info"
         self.WriteLine(f"const struct WildPokemon {name}[] =")
         self.WriteLine("{")
         for mon in mons:
             species = mon["species"]
-            prefix = "{ RANGE_" + mon["range"] + ", "
+            if range == "":
+                speciesRange = mon["range"]
+            else:
+                speciesRange = range
+            prefix = "{ RANGE_" + speciesRange + ", "
             suffix = species + " },"
             if species in ["GRASS_STARTER", "FIRE_STARTER", "WATER_STARTER"]:
                 self.WriteLine(f"{prefix}{suffix}", 1)
@@ -251,10 +255,11 @@ class WildEncounterAssembler:
 
                     mons_entry = map_encounters[mon_type]
                     encounter_rate = 255 if mon_type == "fishing_mons" else mons_entry["encounter_rate"]
+                    range = "" if "range" not in mons_entry else mons_entry["range"]
                     mons = mons_entry["mons"]
 
                     mon_array_name = base_label + "_" + mon_type.title().replace("_", "")
-                    self.WriteMonInfos(mon_array_name, mons, encounter_rate)
+                    self.WriteMonInfos(mon_array_name, mons, encounter_rate, range)
                     headers["data"][shared_label][time][mon_type] = mon_array_name + "Info"
                 self.WriteLine(f"#endif")
 

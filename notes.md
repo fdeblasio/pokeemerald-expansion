@@ -104,7 +104,6 @@ upcoming
             - Wallace and/or Oranguru could be in early ones for foreshadowing
             - Add some of the special NPCs listed above
         - Add ORAS special (Chad, Lisia, Wallace) https://bulbapedia.bulbagarden.net/wiki/List_of_Contest_opponents_(Generation_VI)
-        - Add default winners as opponents?
         - Implement Mega evolution
         - Improve white-on-white text
 - Mt. Pyre:

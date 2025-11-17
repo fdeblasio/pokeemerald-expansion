@@ -191,6 +191,14 @@ enum {
     CONTEST_OPPONENT_CORDELIA,
     CONTEST_OPPONENT_MARTINA,
     CONTEST_OPPONENT_HOLDER,
+    //CONTEST_OPPONENT_EZRA,
+    //CONTEST_OPPONENT_ALLAN,
+    //CONTEST_OPPONENT_JULIET,
+    //CONTEST_OPPONENT_BAILY,
+    //CONTEST_OPPONENT_MELANY,
+    //CONTEST_OPPONENT_HANA,
+    //CONTEST_OPPONENT_BRYANT,
+    //CONTEST_OPPONENT_OMAR,
 };
 
 // All contest opponents have a common set of AI flags (which contains all of the actually
@@ -237,79 +245,76 @@ enum {
 #define CONTEST_MON_MALE          255
 #define CONTEST_MON_FEMALE        1
 
+#define EZRA_INFO                       \
+    .species = SPECIES_ELECTRIKE,       \
+    .monName = _("Electer"),            \
+    .trainerName = _("Ezra"),           \
+    .contestRank = CONTEST_RANK_NORMAL, \
+    .personality =
+
+#define ALLAN_INFO                     \
+    .species = SPECIES_TROPIUS,        \
+    .monName = _("Tropo"),             \
+    .trainerName = _("Allan"),         \
+    .contestRank = CONTEST_RANK_HYPER, \
+    .personality = CONTEST_MON_MALE
+
+#define JULIET_INFO                     \
+    .species = SPECIES_XATU,            \
+    .monName = _("Tuxa"),               \
+    .trainerName = _("Juliet"),         \
+    .contestRank = CONTEST_RANK_NORMAL, \
+    .personality = CONTEST_MON_FEMALE
+
+#define BAILY_INFO                      \
+    .species = SPECIES_PLUSLE,          \
+    .monName = _("Pulse"),              \
+    .trainerName = _("Baily"),          \
+    .contestRank = CONTEST_RANK_MASTER, \
+    .personality = CONTEST_MON_MALE
+
+#define MELANY_INFO                    \
+    .species = SPECIES_SHUPPET,        \
+    .monName = _("Shupup"),            \
+    .trainerName = _("Melany"),        \
+    .contestRank = CONTEST_RANK_SUPER, \
+    .personality = CONTEST_MON_FEMALE
+
+#define HANA_INFO                      \
+    .species = SPECIES_ZANGOOSE,       \
+    .monName = _("Goozan"),            \
+    .trainerName = _("Hana"),          \
+    .contestRank = CONTEST_RANK_HYPER, \
+    .personality = CONTEST_MON_MALE
+
+#define BRYANT_INFO                    \
+    .species = SPECIES_LOUDRED,        \
+    .monName = _("Louded"),            \
+    .trainerName = _("Bryant"),        \
+    .contestRank = CONTEST_RANK_HYPER, \
+    .personality = CONTEST_MON_MALE
+
+#define OMAR_INFO                \
+    .species = SPECIES_DELCATTY, \
+    .monName = _("Kitsy"),       \
+    .trainerName = _("Omar"),    \
+    .personality = CONTEST_MON_FEMALE
+
+#define CONTEST_WINNER(Info, Category) \
+    Info,                        \
+    .contestCategory = Category, \
+    .trainerId = CONTEST_AI_TRAINER_ID
+
 const struct ContestWinner gDefaultContestWinners[] =
 {
-    [CONTEST_WINNER_HALL_1 - 1] = {
-        .species = SPECIES_ELECTRIKE,
-        .monName = _("Electer"),
-        .trainerName = _("Ezra"),
-        .contestCategory = CONTEST_CATEGORY_CUTE,
-        .contestRank = CONTEST_RANK_NORMAL,
-        .personality = CONTEST_MON_FEMALE,
-        .trainerId = CONTEST_AI_TRAINER_ID
-    },
-    [CONTEST_WINNER_HALL_2 - 1] = {
-        .species = SPECIES_TROPIUS,
-        .monName = _("Tropo"),
-        .trainerName = _("Allan"),
-        .contestCategory = CONTEST_CATEGORY_COOL,
-        .contestRank = CONTEST_RANK_HYPER,
-        .personality = CONTEST_MON_MALE,
-        .trainerId = CONTEST_AI_TRAINER_ID
-    },
-    [CONTEST_WINNER_HALL_3 - 1] = {
-        .species = SPECIES_XATU,
-        .monName = _("Tuxa"),
-        .trainerName = _("Juliet"),
-        .contestCategory = CONTEST_CATEGORY_BEAUTY,
-        .contestRank = CONTEST_RANK_NORMAL,
-        .personality = CONTEST_MON_FEMALE,
-        .trainerId = CONTEST_AI_TRAINER_ID
-    },
-    [CONTEST_WINNER_HALL_4 - 1] = {
-        .species = SPECIES_PLUSLE,
-        .monName = _("Pulse"),
-        .trainerName = _("Baily"),
-        .contestCategory = CONTEST_CATEGORY_TOUGH,
-        .contestRank = CONTEST_RANK_MASTER,
-        .personality = CONTEST_MON_MALE,
-        .trainerId = CONTEST_AI_TRAINER_ID
-    },
-    [CONTEST_WINNER_HALL_5 - 1] = {
-        .species = SPECIES_SHUPPET,
-        .monName = _("Shupup"),
-        .trainerName = _("Melany"),
-        .contestCategory = CONTEST_CATEGORY_SMART,
-        .contestRank = CONTEST_RANK_SUPER,
-        .personality = CONTEST_MON_FEMALE,
-        .trainerId = CONTEST_AI_TRAINER_ID
-    },
-    [CONTEST_WINNER_HALL_6 - 1] = {
-        .species = SPECIES_ZANGOOSE,
-        .monName = _("Goozan"),
-        .trainerName = _("Hana"),
-        .contestCategory = CONTEST_CATEGORY_COOL,
-        .contestRank = CONTEST_RANK_HYPER,
-        .personality = CONTEST_MON_MALE,
-        .trainerId = CONTEST_AI_TRAINER_ID
-    },
-    [CONTEST_WINNER_HALL_UNUSED_1 - 1] = {
-        .species = SPECIES_LOUDRED,
-        .monName = _("Louded"),
-        .trainerName = _("Bryant"),
-        .contestCategory = CONTEST_CATEGORY_BEAUTY,
-        .contestRank = CONTEST_RANK_HYPER,
-        .personality = CONTEST_MON_MALE,
-        .trainerId = CONTEST_AI_TRAINER_ID
-    },
-    [CONTEST_WINNER_HALL_UNUSED_2 - 1] = {
-        .species = SPECIES_DELCATTY,
-        .monName = _("Kitsy"),
-        .trainerName = _("Omar"),
-        .contestCategory = CONTEST_CATEGORY_CUTE,
-        .personality = CONTEST_MON_FEMALE,
-        .trainerId = CONTEST_AI_TRAINER_ID
-    }
+    [CONTEST_WINNER_HALL_1 - 1] = {CONTEST_WINNER(EZRA_INFO, CONTEST_CATEGORY_CUTE)},
+    [CONTEST_WINNER_HALL_2 - 1] = {CONTEST_WINNER(ALLAN_INFO, CONTEST_CATEGORY_COOL)},
+    [CONTEST_WINNER_HALL_3 - 1] = {CONTEST_WINNER(JULIET_INFO, CONTEST_CATEGORY_BEAUTY)},
+    [CONTEST_WINNER_HALL_4 - 1] = {CONTEST_WINNER(BAILY_INFO, CONTEST_CATEGORY_TOUGH)},
+    [CONTEST_WINNER_HALL_5 - 1] = {CONTEST_WINNER(MELANY_INFO, CONTEST_CATEGORY_SMART)},
+    [CONTEST_WINNER_HALL_6 - 1] = {CONTEST_WINNER(HANA_INFO, CONTEST_CATEGORY_COOL)},
+    [CONTEST_WINNER_HALL_UNUSED_1 - 1] = {CONTEST_WINNER(BRYANT_INFO, CONTEST_CATEGORY_BEAUTY)},
+    [CONTEST_WINNER_HALL_UNUSED_2 - 1] = {CONTEST_WINNER(OMAR_INFO, CONTEST_CATEGORY_CUTE)}
 };
 
 #define OPPONENT_COMMON           \
@@ -5500,4 +5505,188 @@ const struct ContestPokemon gContestOpponents[] =
         .personality = CONTEST_MON_NONE,
         OPPONENT_COMMON,
     },
+    //[CONTEST_OPPONENT_EZRA] = {
+    //    EZRA_INFO,
+    //    .trainerGfxId = OBJ_EVENT_GFX_,
+    //    .aiPool_Cool = ,
+    //    .aiPool_Beauty = ,
+    //    .aiPool_Cute = ,
+    //    .aiPool_Smart = ,
+    //    .aiPool_Tough = ,
+    //    .moves =
+    //    {
+    //        MOVE_,
+    //        MOVE_,
+    //        MOVE_,
+    //        MOVE_
+    //    },
+    //    .cool = ,
+    //    .beauty = ,
+    //    .cute = ,
+    //    .smart = ,
+    //    .tough = ,
+    //    .sheen = ,
+    //    OPPONENT_COMMON,
+    //},
+    //[CONTEST_OPPONENT_ALLAN] = {
+    //    ALLAN_INFO,
+    //    .trainerGfxId = OBJ_EVENT_GFX_,
+    //    .aiPool_Cool = ,
+    //    .aiPool_Beauty = ,
+    //    .aiPool_Cute = ,
+    //    .aiPool_Smart = ,
+    //    .aiPool_Tough = ,
+    //    .moves =
+    //    {
+    //        MOVE_,
+    //        MOVE_,
+    //        MOVE_,
+    //        MOVE_
+    //    },
+    //    .cool = ,
+    //    .beauty = ,
+    //    .cute = ,
+    //    .smart = ,
+    //    .tough = ,
+    //    .sheen = ,
+    //    OPPONENT_COMMON,
+    //},
+    //[CONTEST_OPPONENT_JULIET] = {
+    //    JULIET_INFO,
+    //    .trainerGfxId = OBJ_EVENT_GFX_,
+    //    .aiPool_Cool = ,
+    //    .aiPool_Beauty = ,
+    //    .aiPool_Cute = ,
+    //    .aiPool_Smart = ,
+    //    .aiPool_Tough = ,
+    //    .moves =
+    //    {
+    //        MOVE_,
+    //        MOVE_,
+    //        MOVE_,
+    //        MOVE_
+    //    },
+    //    .cool = ,
+    //    .beauty = ,
+    //    .cute = ,
+    //    .smart = ,
+    //    .tough = ,
+    //    .sheen = ,
+    //    OPPONENT_COMMON,
+    //},
+    //[CONTEST_OPPONENT_BAILY] = {
+    //    BAILY_INFO,
+    //    .trainerGfxId = OBJ_EVENT_GFX_,
+    //    .aiPool_Cool = ,
+    //    .aiPool_Beauty = ,
+    //    .aiPool_Cute = ,
+    //    .aiPool_Smart = ,
+    //    .aiPool_Tough = ,
+    //    .moves =
+    //    {
+    //        MOVE_,
+    //        MOVE_,
+    //        MOVE_,
+    //        MOVE_
+    //    },
+    //    .cool = ,
+    //    .beauty = ,
+    //    .cute = ,
+    //    .smart = ,
+    //    .tough = ,
+    //    .sheen = ,
+    //    OPPONENT_COMMON,
+    //},
+    //[CONTEST_OPPONENT_MELANY] = {
+    //    MELANY_INFO,
+    //    .trainerGfxId = OBJ_EVENT_GFX_,
+    //    .aiPool_Cool = ,
+    //    .aiPool_Beauty = ,
+    //    .aiPool_Cute = ,
+    //    .aiPool_Smart = ,
+    //    .aiPool_Tough = ,
+    //    .moves =
+    //    {
+    //        MOVE_,
+    //        MOVE_,
+    //        MOVE_,
+    //        MOVE_
+    //    },
+    //    .cool = ,
+    //    .beauty = ,
+    //    .cute = ,
+    //    .smart = ,
+    //    .tough = ,
+    //    .sheen = ,
+    //    OPPONENT_COMMON,
+    //},
+    //[CONTEST_OPPONENT_HANA] = {
+    //    HANA_INFO,
+    //    .trainerGfxId = OBJ_EVENT_GFX_,
+    //    .aiPool_Cool = ,
+    //    .aiPool_Beauty = ,
+    //    .aiPool_Cute = ,
+    //    .aiPool_Smart = ,
+    //    .aiPool_Tough = ,
+    //    .moves =
+    //    {
+    //        MOVE_,
+    //        MOVE_,
+    //        MOVE_,
+    //        MOVE_
+    //    },
+    //    .cool = ,
+    //    .beauty = ,
+    //    .cute = ,
+    //    .smart = ,
+    //    .tough = ,
+    //    .sheen = ,
+    //    OPPONENT_COMMON,
+    //},
+    //[CONTEST_OPPONENT_BRYANT] = {
+    //    BRYANT_INFO,
+    //    .trainerGfxId = OBJ_EVENT_GFX_,
+    //    .aiPool_Cool = ,
+    //    .aiPool_Beauty = ,
+    //    .aiPool_Cute = ,
+    //    .aiPool_Smart = ,
+    //    .aiPool_Tough = ,
+    //    .moves =
+    //    {
+    //        MOVE_,
+    //        MOVE_,
+    //        MOVE_,
+    //        MOVE_
+    //    },
+    //    .cool = ,
+    //    .beauty = ,
+    //    .cute = ,
+    //    .smart = ,
+    //    .tough = ,
+    //    .sheen = ,
+    //    OPPONENT_COMMON,
+    //},
+    //[CONTEST_OPPONENT_OMAR] = {
+    //    OMAR_INFO,
+    //    .trainerGfxId = OBJ_EVENT_GFX_,
+    //    .aiPool_Cool = ,
+    //    .aiPool_Beauty = ,
+    //    .aiPool_Cute = ,
+    //    .aiPool_Smart = ,
+    //    .aiPool_Tough = ,
+    //    .moves =
+    //    {
+    //        MOVE_,
+    //        MOVE_,
+    //        MOVE_,
+    //        MOVE_
+    //    },
+    //    .cool = ,
+    //    .beauty = ,
+    //    .cute = ,
+    //    .smart = ,
+    //    .tough = ,
+    //    .sheen = ,
+    //    OPPONENT_COMMON,
+    //},
 };

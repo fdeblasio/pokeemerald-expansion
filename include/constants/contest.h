@@ -286,8 +286,11 @@ enum {
     COMBO_STARTER_WATER_PLEDGE,
     COMBO_STARTER_FIRE_PLEDGE,
     COMBO_STARTER_GRASS_PLEDGE,
+<<<<<<< HEAD
     COMBO_STARTER_STUN_SPORE,
     COMBO_STARTER_ZAP_CANNON,
+=======
+>>>>>>> 6b1464c865 (Implemented some contest ideas)
 };
 
 #endif  // GUARD_CONSTANTS_CONTEST_H

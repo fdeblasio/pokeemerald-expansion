@@ -5968,45 +5968,36 @@
           "base_label": "gBattlePyramid_1",
           "land_mons": {
             "encounter_rate": 3,
+            "range": "BATTLE_FRONTIER",
             "mons": [
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "BULBASAUR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "IVYSAUR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "VENUSAUR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARMANDER"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "VENUSAUR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARMANDER"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "BULBASAUR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "IVYSAUR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "BULBASAUR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "IVYSAUR"
               }
             ]
@@ -6016,45 +6007,36 @@
           "base_label": "gBattlePyramid_2",
           "land_mons": {
             "encounter_rate": 4,
+            "range": "BATTLE_FRONTIER",
             "mons": [
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "BULBASAUR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "IVYSAUR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "VENUSAUR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARMANDER"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "VENUSAUR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARMANDER"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "VENUSAUR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARMANDER"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "VENUSAUR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARMANDER"
               }
             ]
@@ -6064,45 +6046,36 @@
           "base_label": "gBattlePyramid_3",
           "land_mons": {
             "encounter_rate": 4,
+            "range": "BATTLE_FRONTIER",
             "mons": [
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "VENUSAUR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARMANDER"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARMELEON"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARIZARD"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARMELEON"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARIZARD"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "VENUSAUR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARMANDER"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "VENUSAUR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARMANDER"
               }
             ]
@@ -6112,45 +6085,36 @@
           "base_label": "gBattlePyramid_4",
           "land_mons": {
             "encounter_rate": 4,
+            "range": "BATTLE_FRONTIER",
             "mons": [
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "VENUSAUR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARMANDER"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARMELEON"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARIZARD"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARMELEON"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARIZARD"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARMELEON"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARIZARD"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARMELEON"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARIZARD"
               }
             ]
@@ -6160,45 +6124,36 @@
           "base_label": "gBattlePyramid_5",
           "land_mons": {
             "encounter_rate": 4,
+            "range": "BATTLE_FRONTIER",
             "mons": [
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARMELEON"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARIZARD"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SQUIRTLE"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "WARTORTLE"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SQUIRTLE"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "WARTORTLE"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARMELEON"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARIZARD"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARMELEON"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARIZARD"
               }
             ]
@@ -6208,45 +6163,36 @@
           "base_label": "gBattlePyramid_6",
           "land_mons": {
             "encounter_rate": 4,
+            "range": "BATTLE_FRONTIER",
             "mons": [
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARMELEON"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "CHARIZARD"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SQUIRTLE"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "WARTORTLE"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SQUIRTLE"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "WARTORTLE"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SQUIRTLE"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "WARTORTLE"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SQUIRTLE"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "WARTORTLE"
               }
             ]
@@ -6256,45 +6202,36 @@
           "base_label": "gBattlePyramid_7",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "BATTLE_FRONTIER",
             "mons": [
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SQUIRTLE"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "WARTORTLE"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SQUIRTLE"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "WARTORTLE"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SQUIRTLE"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "WARTORTLE"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SQUIRTLE"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "WARTORTLE"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SQUIRTLE"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "WARTORTLE"
               }
             ]
@@ -6310,45 +6247,36 @@
           "base_label": "gBattlePike_1",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "BATTLE_FRONTIER",
             "mons": [
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SEVIPER"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "DRAGONAIR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SEVIPER"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "DRAGONAIR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "MILOTIC"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "MILOTIC"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "MILOTIC"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "MILOTIC"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SEVIPER"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "DRAGONAIR"
               }
             ]
@@ -6358,45 +6286,36 @@
           "base_label": "gBattlePike_2",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "BATTLE_FRONTIER",
             "mons": [
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SEVIPER"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "DRAGONAIR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SEVIPER"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "DRAGONAIR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SANDACONDA"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SANDACONDA"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SANDACONDA"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SANDACONDA"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SEVIPER"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "DRAGONAIR"
               }
             ]
@@ -6406,45 +6325,36 @@
           "base_label": "gBattlePike_3",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "BATTLE_FRONTIER",
             "mons": [
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SEVIPER"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "DRAGONAIR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SEVIPER"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "DRAGONAIR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SERPERIOR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SERPERIOR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SERPERIOR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SERPERIOR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SEVIPER"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "DRAGONAIR"
               }
             ]
@@ -6454,45 +6364,36 @@
           "base_label": "gBattlePike_4",
           "land_mons": {
             "encounter_rate": 5,
+            "range": "BATTLE_FRONTIER",
             "mons": [
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SEVIPER"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "DRAGONAIR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SEVIPER"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "DRAGONAIR"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "STEELIX"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "STEELIX"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "STEELIX"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "STEELIX"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "SEVIPER"
               },
               {
-                "range": "BATTLE_FRONTIER",
                 "species": "DRAGONAIR"
               }
             ]

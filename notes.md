@@ -84,8 +84,6 @@ upcoming
     - Norman's Spinda's left ear might be off?
 - Lilycove:
     - Edit contests?/Contests overhaul
-        - Update Pledge moves to combo with each other like the elemental fangs
-        - Pokemon in contests should be set to seen in Pokedex
         - Add unique ideas to Special Rank
         - Utilize non-trainer/other important GFX
             - weird guy

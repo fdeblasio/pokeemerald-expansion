@@ -250,7 +250,7 @@ enum {
     .monName = _("Electer"),            \
     .trainerName = _("Ezra"),           \
     .contestRank = CONTEST_RANK_NORMAL, \
-    .personality =
+    .personality = CONTEST_MON_FEMALE
 
 #define ALLAN_INFO                     \
     .species = SPECIES_TROPIUS,        \

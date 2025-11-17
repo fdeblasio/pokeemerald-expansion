@@ -450,13 +450,9 @@
       "MOVE_BITE",
       "MOVE_COUNTER",
       "MOVE_DRAGON_RUSH",
-<<<<<<< HEAD
       "MOVE_DRAGON_TAIL",
       "MOVE_IRON_TAIL",
       "MOVE_METAL_CLAW"
-=======
-      "MOVE_DRAGON_TAIL"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -555,7 +551,6 @@
       "MOVE_TEMPER_FLARE",
       "MOVE_BREAKING_SWIPE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ANCIENT_POWER",
       "MOVE_BELLY_DRUM",
@@ -566,9 +561,6 @@
       "MOVE_IRON_TAIL",
       "MOVE_METAL_CLAW"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "CHARIZARD": {
@@ -698,7 +690,6 @@
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ANCIENT_POWER",
       "MOVE_BELLY_DRUM",
@@ -709,9 +700,6 @@
       "MOVE_IRON_TAIL",
       "MOVE_METAL_CLAW"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "SQUIRTLE": {
@@ -1430,7 +1418,6 @@
       "MOVE_THROAT_CHOP",
       "MOVE_BREAKING_SWIPE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_POISON_FANG",
       "MOVE_POISON_TAIL",
@@ -1439,9 +1426,6 @@
       "MOVE_SUCKER_PUNCH",
       "MOVE_SWITCHEROO"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "PIKACHU": {
@@ -1577,7 +1561,6 @@
       "MOVE_ALLURING_VOICE",
       "MOVE_UPPER_HAND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_CHARGE",
       "MOVE_DISARMING_VOICE",
@@ -1587,9 +1570,6 @@
       "MOVE_TICKLE",
       "MOVE_WISH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "RAICHU": {
@@ -2553,16 +2533,12 @@
       "MOVE_METEOR_BEAM",
       "MOVE_ALLURING_VOICE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_HEAL_PULSE",
       "MOVE_PRESENT",
       "MOVE_TICKLE",
       "MOVE_WISH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "CLEFABLE": {
@@ -2681,16 +2657,12 @@
       "MOVE_METEOR_BEAM",
       "MOVE_ALLURING_VOICE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_HEAL_PULSE",
       "MOVE_PRESENT",
       "MOVE_TICKLE",
       "MOVE_WISH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "VULPIX": {
@@ -2804,15 +2776,11 @@
       "MOVE_BABY_DOLL_EYES",
       "MOVE_FLAIL",
       "MOVE_FLAME_CHARGE",
-<<<<<<< HEAD
       "MOVE_HEALING_WISH",
       "MOVE_HOWL",
       "MOVE_HYPNOSIS",
       "MOVE_MEMENTO",
       "MOVE_ROAR"
-=======
-      "MOVE_BABY_DOLL_EYES"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -3018,7 +2986,6 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_SCORCHING_SANDS"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BABY_DOLL_EYES",
       "MOVE_FLAIL",
@@ -3029,9 +2996,6 @@
       "MOVE_MEMENTO",
       "MOVE_ROAR"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "NINETALES_ALOLA": {
@@ -3288,7 +3252,6 @@
       "MOVE_ALLURING_VOICE",
       "MOVE_PSYCHIC_NOISE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COVET",
       "MOVE_GRAVITY",
@@ -3299,9 +3262,6 @@
       "MOVE_ROLLOUT",
       "MOVE_WISH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "WIGGLYTUFF": {
@@ -3475,7 +3435,6 @@
       "MOVE_ALLURING_VOICE",
       "MOVE_PSYCHIC_NOISE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COVET",
       "MOVE_GRAVITY",
@@ -3499,8 +3458,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -3935,16 +3892,11 @@
       "MOVE_AGILITY",
       "MOVE_BATON_PASS",
       "MOVE_BUG_BITE",
-<<<<<<< HEAD
       "MOVE_MORNING_SUN",
       "MOVE_RAGE_POWDER",
       "MOVE_SCREECH",
       "MOVE_TOXIC_SPIKES",
       "MOVE_VENOSHOCK"
-=======
-      "MOVE_VENOSHOCK",
-      "MOVE_RAGE_POWDER"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -4058,7 +4010,6 @@
       "MOVE_SKITTER_SMACK",
       "MOVE_PSYCHIC_NOISE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AGILITY",
       "MOVE_BATON_PASS",
@@ -4069,9 +4020,6 @@
       "MOVE_TOXIC_SPIKES",
       "MOVE_VENOSHOCK"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "DIGLETT": {
@@ -4177,11 +4125,7 @@
       "MOVE_FINAL_GAMBIT",
       "MOVE_HEADBUTT",
       "MOVE_HONE_CLAWS",
-<<<<<<< HEAD
       "MOVE_MEMENTO"
-=======
-      "MOVE_FINAL_GAMBIT"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -5265,11 +5209,7 @@
       "MOVE_HYPNOSIS",
       "MOVE_PSYBEAM",
       "MOVE_SIMPLE_BEAM",
-<<<<<<< HEAD
       "MOVE_YAWN"
-=======
-      "MOVE_CLEAR_SMOG"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -5404,7 +5344,6 @@
       "MOVE_FUTURE_SIGHT",
       "MOVE_PSYCHIC_NOISE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_CLEAR_SMOG",
       "MOVE_CONFUSE_RAY",
@@ -5414,9 +5353,6 @@
       "MOVE_SIMPLE_BEAM",
       "MOVE_YAWN"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "MANKEY": {
@@ -5548,13 +5484,8 @@
       "MOVE_COUNTER",
       "MOVE_CURSE",
       "MOVE_ENCORE",
-<<<<<<< HEAD
       "MOVE_NIGHT_SLASH",
       "MOVE_SPITE"
-=======
-      "MOVE_BEAT_UP",
-      "MOVE_NIGHT_SLASH"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -5692,7 +5623,6 @@
       "MOVE_THROAT_CHOP",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BEAT_UP",
       "MOVE_COUNTER",
@@ -5701,9 +5631,6 @@
       "MOVE_NIGHT_SLASH",
       "MOVE_SPITE"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "GROWLITHE": {
@@ -6401,7 +6328,6 @@
       "MOVE_WHIRLPOOL",
       "MOVE_MUDDY_WATER"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ENDEAVOR",
       "MOVE_MIST",
@@ -6409,9 +6335,6 @@
       "MOVE_SPLASH",
       "MOVE_WATER_PULSE"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "POLIWRATH": {
@@ -6510,7 +6433,6 @@
       "MOVE_THROAT_CHOP",
       "MOVE_UPPER_HAND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ENDEAVOR",
       "MOVE_MIST",
@@ -6559,8 +6481,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -6770,7 +6690,6 @@
       "MOVE_GRASSY_GLIDE",
       "MOVE_SLUDGE_WAVE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_CLEAR_SMOG",
       "MOVE_INGRAIN",
@@ -6780,9 +6699,6 @@
       "MOVE_TICKLE",
       "MOVE_WORRY_SEED"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "VICTREEBEL": {
@@ -6861,7 +6777,6 @@
       "MOVE_GRASSY_GLIDE",
       "MOVE_SLUDGE_WAVE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_CLEAR_SMOG",
       "MOVE_INGRAIN",
@@ -6871,9 +6786,6 @@
       "MOVE_TICKLE",
       "MOVE_WORRY_SEED"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "TENTACOOL": {
@@ -7690,7 +7602,6 @@
       "MOVE_CURSE",
       "MOVE_HARD_PRESS"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BLOCK",
       "MOVE_CURSE",
@@ -7700,9 +7611,6 @@
       "MOVE_MEGA_PUNCH",
       "MOVE_WIDE_GUARD"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "GOLEM_ALOLA": {
@@ -8250,16 +8158,12 @@
       "MOVE_CURSE",
       "MOVE_PSYCHIC_NOISE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BELCH",
       "MOVE_BELLY_DRUM",
       "MOVE_BLOCK",
       "MOVE_STOMP"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "SLOWBRO_GALAR": {
@@ -8528,13 +8432,8 @@
       "MOVE_METAL_SOUND"
     ],
     "EggMoves": [
-<<<<<<< HEAD
       "MOVE_ELECTROWEB",
       "MOVE_EXPLOSION"
-=======
-      "MOVE_EXPLOSION",
-      "MOVE_ELECTROWEB"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -8648,7 +8547,6 @@
       "MOVE_ELECTROWEB",
       "MOVE_METAL_SOUND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ELECTROWEB",
       "MOVE_EXPLOSION"
@@ -8659,8 +8557,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -9252,13 +9148,9 @@
       "MOVE_MEAN_LOOK",
       "MOVE_SHADOW_PUNCH",
       "MOVE_SHADOW_SNEAK",
-<<<<<<< HEAD
       "MOVE_SPIT_UP",
       "MOVE_STOCKPILE",
       "MOVE_SWALLOW"
-=======
-      "MOVE_ACID_SPRAY"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -9530,7 +9422,6 @@
       "MOVE_SLUDGE_WAVE",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ACID_SPRAY",
       "MOVE_CURSE",
@@ -9542,9 +9433,6 @@
       "MOVE_STOCKPILE",
       "MOVE_SWALLOW"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "MUK_ALOLA": {
@@ -9773,13 +9661,9 @@
     ],
     "EggMoves": [
       "MOVE_AQUA_RING",
-<<<<<<< HEAD
       "MOVE_BUBBLE_BEAM",
       "MOVE_LIFE_DEW",
       "MOVE_WATER_PULSE"
-=======
-      "MOVE_LIFE_DEW"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -9900,16 +9784,12 @@
       "MOVE_WEATHER_BALL",
       "MOVE_WHIRLPOOL"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AQUA_RING",
       "MOVE_BUBBLE_BEAM",
       "MOVE_LIFE_DEW",
       "MOVE_WATER_PULSE"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "GASTLY": {
@@ -10025,16 +9905,12 @@
     "EggMoves": [
       "MOVE_ASTONISH",
       "MOVE_CLEAR_SMOG",
-<<<<<<< HEAD
       "MOVE_DISABLE",
       "MOVE_HAZE",
       "MOVE_PERISH_SONG",
       "MOVE_REFLECT_TYPE",
       "MOVE_SMOG",
       "MOVE_TOXIC"
-=======
-      "MOVE_REFLECT_TYPE"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -10159,7 +10035,6 @@
       "MOVE_SKITTER_SMACK",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ASTONISH",
       "MOVE_CLEAR_SMOG",
@@ -10170,9 +10045,6 @@
       "MOVE_SMOG",
       "MOVE_TOXIC"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "GENGAR": {
@@ -10313,7 +10185,6 @@
       "MOVE_CURSE",
       "MOVE_PSYCHIC_NOISE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ASTONISH",
       "MOVE_CLEAR_SMOG",
@@ -10330,8 +10201,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -10463,12 +10332,8 @@
       "MOVE_ICE_PUNCH",
       "MOVE_POWER_SPLIT",
       "MOVE_PSYCHO_CUT",
-<<<<<<< HEAD
       "MOVE_ROLE_PLAY",
       "MOVE_THUNDER_PUNCH"
-=======
-      "MOVE_POWER_SPLIT"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -10604,7 +10469,6 @@
       "MOVE_CURSE",
       "MOVE_PSYCHIC_NOISE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_FIRE_PUNCH",
       "MOVE_FLATTER",
@@ -10628,8 +10492,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -10738,13 +10600,8 @@
       "MOVE_METAL_SOUND"
     ],
     "EggMoves": [
-<<<<<<< HEAD
       "MOVE_METAL_SOUND",
       "MOVE_RECYCLE"
-=======
-      "MOVE_RECYCLE",
-      "MOVE_METAL_SOUND"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -10978,14 +10835,10 @@
       "MOVE_METAL_SOUND",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_METAL_SOUND",
       "MOVE_RECYCLE"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "ELECTRODE_HISUI": {
@@ -12012,7 +11865,6 @@
       "MOVE_SLUDGE_WAVE",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_CURSE",
       "MOVE_PAIN_SPLIT",
@@ -12021,9 +11873,6 @@
       "MOVE_STOCKPILE",
       "MOVE_SWALLOW"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "WEEZING_GALAR": {
@@ -12588,7 +12437,6 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_GRAVITY",
       "MOVE_HEAL_BELL",
@@ -12608,8 +12456,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -12948,7 +12794,6 @@
       "MOVE_QUICK_GUARD"
     ],
     "TutorMoves": []
-<<<<<<< HEAD
   },
   "JYNX": {
     "LevelMoves": [],
@@ -12956,8 +12801,6 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
   },
   "ELECTABUZZ": {
     "LevelMoves": [
@@ -14069,12 +13912,7 @@
       "MOVE_MUD_SLAP",
       "MOVE_TICKLE",
       "MOVE_WISH",
-<<<<<<< HEAD
       "MOVE_YAWN"
-=======
-      "MOVE_YAWN",
-      "MOVE_TICKLE"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -14224,7 +14062,6 @@
       "MOVE_CURSE",
       "MOVE_ALLURING_VOICE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_CURSE",
       "MOVE_DETECT",
@@ -14235,9 +14072,6 @@
       "MOVE_WISH",
       "MOVE_YAWN"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "JOLTEON": {
@@ -14387,7 +14221,6 @@
       "MOVE_CURSE",
       "MOVE_ALLURING_VOICE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_CURSE",
       "MOVE_DETECT",
@@ -14398,9 +14231,6 @@
       "MOVE_WISH",
       "MOVE_YAWN"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "FLAREON": {
@@ -14545,7 +14375,6 @@
       "MOVE_CURSE",
       "MOVE_ALLURING_VOICE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_CURSE",
       "MOVE_DETECT",
@@ -14556,9 +14385,6 @@
       "MOVE_WISH",
       "MOVE_YAWN"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "PORYGON": {
@@ -14661,7 +14487,6 @@
     ],
     "EggMoves": [],
     "TutorMoves": []
-<<<<<<< HEAD
   },
   "OMANYTE": {
     "LevelMoves": [],
@@ -14697,8 +14522,6 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
   },
   "SNORLAX": {
     "LevelMoves": [
@@ -14877,7 +14700,6 @@
       "MOVE_CURSE",
       "MOVE_HARD_PRESS"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BELCH",
       "MOVE_COUNTER",
@@ -14885,9 +14707,6 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_FISSURE"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "ARTICUNO": {
@@ -15673,14 +15492,9 @@
       "MOVE_AQUA_JET",
       "MOVE_DRAGON_BREATH",
       "MOVE_EXTREME_SPEED",
-<<<<<<< HEAD
       "MOVE_MIST",
       "MOVE_SUPERSONIC",
       "MOVE_WATER_PULSE"
-=======
-      "MOVE_WATER_PULSE",
-      "MOVE_AQUA_JET"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -15788,7 +15602,6 @@
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AQUA_JET",
       "MOVE_DRAGON_BREATH",
@@ -15797,9 +15610,6 @@
       "MOVE_SUPERSONIC",
       "MOVE_WATER_PULSE"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "DRAGONITE": {
@@ -15960,7 +15770,6 @@
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AQUA_JET",
       "MOVE_DRAGON_BREATH",
@@ -15969,9 +15778,6 @@
       "MOVE_SUPERSONIC",
       "MOVE_WATER_PULSE"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "MEWTWO": {
@@ -16872,11 +16678,7 @@
       "MOVE_DOUBLE_KICK",
       "MOVE_EXTRASENSORY",
       "MOVE_HOWL",
-<<<<<<< HEAD
       "MOVE_REVERSAL"
-=======
-      "MOVE_COVET"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -16985,7 +16787,6 @@
       "MOVE_TEMPER_FLARE",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COVET",
       "MOVE_CURSE",
@@ -16994,9 +16795,6 @@
       "MOVE_HOWL",
       "MOVE_REVERSAL"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "TYPHLOSION": {
@@ -17891,7 +17689,6 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BABY_DOLL_EYES",
       "MOVE_FOCUS_ENERGY",
@@ -17900,9 +17697,6 @@
       "MOVE_SLASH",
       "MOVE_TIDY_UP"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "HOOTHOOT": {
@@ -18016,13 +17810,9 @@
     "EggMoves": [
       "MOVE_FEATHER_DANCE",
       "MOVE_NIGHT_SHADE",
-<<<<<<< HEAD
       "MOVE_SUPERSONIC",
       "MOVE_WHIRLWIND",
       "MOVE_WING_ATTACK"
-=======
-      "MOVE_FEATHER_DANCE"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -18146,7 +17936,6 @@
       "MOVE_CURSE",
       "MOVE_PSYCHIC_NOISE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_FEATHER_DANCE",
       "MOVE_NIGHT_SHADE",
@@ -18167,8 +17956,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -18285,12 +18072,7 @@
       "MOVE_LUNGE",
       "MOVE_MEGAHORN",
       "MOVE_NIGHT_SLASH",
-<<<<<<< HEAD
       "MOVE_RAGE_POWDER"
-=======
-      "MOVE_RAGE_POWDER",
-      "MOVE_LUNGE"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -18423,7 +18205,6 @@
       "MOVE_SKITTER_SMACK",
       "MOVE_THROAT_CHOP"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DISABLE",
       "MOVE_LUNGE",
@@ -18437,8 +18218,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -18749,11 +18528,7 @@
       "MOVE_FLAIL",
       "MOVE_PRESENT",
       "MOVE_TICKLE",
-<<<<<<< HEAD
       "MOVE_WISH"
-=======
-      "MOVE_DISARMING_VOICE"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -18847,11 +18622,7 @@
       "MOVE_HEAL_PULSE",
       "MOVE_PRESENT",
       "MOVE_TICKLE",
-<<<<<<< HEAD
       "MOVE_WISH"
-=======
-      "MOVE_HEAL_PULSE"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -18940,7 +18711,6 @@
       "MOVE_GRAVITY",
       "MOVE_HEAL_PULSE",
       "MOVE_LAST_RESORT",
-<<<<<<< HEAD
       "MOVE_PERISH_SONG",
       "MOVE_PRESENT",
       "MOVE_ROLLOUT",
@@ -18975,11 +18745,6 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
-=======
-      "MOVE_HEAL_PULSE"
-    ],
-    "TutorMoves": []
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
   },
   "MAREEP": {
     "LevelMoves": [
@@ -19084,13 +18849,9 @@
       "MOVE_AFTER_YOU",
       "MOVE_AGILITY",
       "MOVE_EERIE_IMPULSE",
-<<<<<<< HEAD
       "MOVE_ELECTRIC_TERRAIN",
       "MOVE_ELECTROWEB",
       "MOVE_FLATTER"
-=======
-      "MOVE_ELECTRIC_TERRAIN"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -19202,7 +18963,6 @@
       "MOVE_ENDEAVOR",
       "MOVE_ELECTROWEB"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_AGILITY",
@@ -19211,9 +18971,6 @@
       "MOVE_ELECTROWEB",
       "MOVE_FLATTER"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "AMPHAROS": {
@@ -19356,7 +19113,6 @@
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_AGILITY",
@@ -19365,9 +19121,6 @@
       "MOVE_ELECTROWEB",
       "MOVE_FLATTER"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "BELLOSSOM": {
@@ -19618,7 +19371,6 @@
       "MOVE_MUDDY_WATER",
       "MOVE_ALLURING_VOICE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AQUA_JET",
       "MOVE_BELLY_DRUM",
@@ -19630,9 +19382,6 @@
       "MOVE_SUPERSONIC",
       "MOVE_TICKLE"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "AZUMARILL": {
@@ -19762,7 +19511,6 @@
       "MOVE_MUDDY_WATER",
       "MOVE_ALLURING_VOICE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AQUA_JET",
       "MOVE_BELLY_DRUM",
@@ -19774,9 +19522,6 @@
       "MOVE_SUPERSONIC",
       "MOVE_TICKLE"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "SUDOWOODO": {
@@ -19911,7 +19656,6 @@
       "MOVE_METEOR_BEAM",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_CURSE",
       "MOVE_DEFENSE_CURL",
@@ -19920,9 +19664,6 @@
       "MOVE_ROCK_POLISH",
       "MOVE_ROLLOUT"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "POLITOED": {
@@ -20051,7 +19792,6 @@
       "MOVE_WHIRLPOOL",
       "MOVE_MUDDY_WATER"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ENDEAVOR",
       "MOVE_MIST",
@@ -20059,9 +19799,6 @@
       "MOVE_SPLASH",
       "MOVE_WATER_PULSE"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "HOPPIP": {
@@ -20183,15 +19920,11 @@
       "MOVE_COTTON_GUARD",
       "MOVE_ENCORE",
       "MOVE_GRASSY_TERRAIN",
-<<<<<<< HEAD
       "MOVE_RAGE_POWDER",
       "MOVE_SEED_BOMB",
       "MOVE_STRENGTH_SAP",
       "MOVE_SWITCHEROO",
       "MOVE_WORRY_SEED"
-=======
-      "MOVE_STRENGTH_SAP"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -20311,7 +20044,6 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COTTON_GUARD",
       "MOVE_ENCORE",
@@ -20322,9 +20054,6 @@
       "MOVE_SWITCHEROO",
       "MOVE_WORRY_SEED"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "JUMPLUFF": {
@@ -20445,7 +20174,6 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COTTON_GUARD",
       "MOVE_ENCORE",
@@ -20456,9 +20184,6 @@
       "MOVE_SWITCHEROO",
       "MOVE_WORRY_SEED"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "AIPOM": {
@@ -20580,16 +20305,11 @@
       "MOVE_BOUNCE",
       "MOVE_COUNTER",
       "MOVE_COVET",
-<<<<<<< HEAD
       "MOVE_FAKE_OUT",
       "MOVE_IRON_TAIL",
       "MOVE_QUICK_GUARD",
       "MOVE_SLAM",
       "MOVE_SWITCHEROO"
-=======
-      "MOVE_SWITCHEROO",
-      "MOVE_QUICK_GUARD"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -20684,12 +20404,8 @@
       "MOVE_ENCORE",
       "MOVE_GRASSY_TERRAIN",
       "MOVE_INGRAIN",
-<<<<<<< HEAD
       "MOVE_LEECH_SEED",
       "MOVE_MORNING_SUN"
-=======
-      "MOVE_GRASSY_TERRAIN"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -20802,7 +20518,6 @@
       "MOVE_PETAL_BLIZZARD",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_CURSE",
       "MOVE_ENCORE",
@@ -20811,9 +20526,6 @@
       "MOVE_LEECH_SEED",
       "MOVE_MORNING_SUN"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "YANMA": {
@@ -20917,12 +20629,8 @@
     ],
     "EggMoves": [
       "MOVE_DOUBLE_EDGE",
-<<<<<<< HEAD
       "MOVE_FEINT",
       "MOVE_WHIRLWIND"
-=======
-      "MOVE_FEINT"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -21279,7 +20987,6 @@
       "MOVE_SLUDGE_WAVE",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ACID_SPRAY",
       "MOVE_AFTER_YOU",
@@ -21292,9 +20999,6 @@
       "MOVE_STOCKPILE",
       "MOVE_SWALLOW"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "ESPEON": {
@@ -21449,7 +21153,6 @@
       "MOVE_ALLURING_VOICE",
       "MOVE_PSYCHIC_NOISE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_CURSE",
       "MOVE_DETECT",
@@ -21460,9 +21163,6 @@
       "MOVE_WISH",
       "MOVE_YAWN"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "UMBREON": {
@@ -21615,7 +21315,6 @@
       "MOVE_CURSE",
       "MOVE_ALLURING_VOICE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_CURSE",
       "MOVE_DETECT",
@@ -21626,9 +21325,6 @@
       "MOVE_WISH",
       "MOVE_YAWN"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "MURKROW": {
@@ -21740,15 +21436,11 @@
       "MOVE_CONFUSE_RAY",
       "MOVE_DRILL_PECK",
       "MOVE_FEATHER_DANCE",
-<<<<<<< HEAD
       "MOVE_FLATTER",
       "MOVE_PERISH_SONG",
       "MOVE_SCREECH",
       "MOVE_SKY_ATTACK",
       "MOVE_WHIRLWIND"
-=======
-      "MOVE_BRAVE_BIRD"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -22222,7 +21914,6 @@
       "MOVE_WONDER_ROOM"
     ],
     "TutorMoves": []
-<<<<<<< HEAD
   },
   "UNOWN": {
     "LevelMoves": [],
@@ -22237,8 +21928,6 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
   },
   "GIRAFARIG": {
     "LevelMoves": [
@@ -22379,12 +22068,7 @@
       "MOVE_MIRROR_COAT",
       "MOVE_TAKE_DOWN",
       "MOVE_UPROAR",
-<<<<<<< HEAD
       "MOVE_WISH"
-=======
-      "MOVE_WISH",
-      "MOVE_ALLY_SWITCH"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -22642,7 +22326,6 @@
       "MOVE_CURSE",
       "MOVE_HARD_PRESS"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COUNTER",
       "MOVE_FLAIL",
@@ -22652,9 +22335,6 @@
       "MOVE_SWIFT",
       "MOVE_TOXIC_SPIKES"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "DUNSPARCE": {
@@ -22794,14 +22474,8 @@
       "MOVE_ASTONISH",
       "MOVE_BITE",
       "MOVE_CURSE",
-<<<<<<< HEAD
       "MOVE_HEADBUTT",
       "MOVE_LAST_RESORT"
-=======
-      "MOVE_ASTONISH",
-      "MOVE_LAST_RESORT",
-      "MOVE_AQUA_TAIL"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -22934,7 +22608,6 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_FEINT",
       "MOVE_NIGHT_SLASH",
-<<<<<<< HEAD
       "MOVE_WING_ATTACK"
     ],
     "TutorMoves": []
@@ -22945,11 +22618,6 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
-=======
-      "MOVE_CROSS_POISON"
-    ],
-    "TutorMoves": []
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
   },
   "SNUBBULL": {
     "LevelMoves": [
@@ -23648,7 +23316,6 @@
       "MOVE_CURSE",
       "MOVE_HARD_PRESS"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COUNTER",
       "MOVE_DEFOG",
@@ -23662,8 +23329,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -23791,14 +23456,10 @@
     "EggMoves": [
       "MOVE_DOUBLE_EDGE",
       "MOVE_FEINT",
-<<<<<<< HEAD
       "MOVE_FLAIL",
       "MOVE_HARDEN",
       "MOVE_NIGHT_SLASH",
       "MOVE_SEISMIC_TOSS"
-=======
-      "MOVE_NIGHT_SLASH"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -24161,16 +23822,11 @@
       "MOVE_CRUNCH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_FAKE_TEARS",
-<<<<<<< HEAD
       "MOVE_FURY_CUTTER",
       "MOVE_METAL_CLAW",
       "MOVE_NIGHT_SLASH",
       "MOVE_SEISMIC_TOSS",
       "MOVE_YAWN"
-=======
-      "MOVE_CLOSE_COMBAT",
-      "MOVE_NIGHT_SLASH"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -24301,7 +23957,6 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_THROAT_CHOP"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BELLY_DRUM",
       "MOVE_CLOSE_COMBAT",
@@ -24316,9 +23971,6 @@
       "MOVE_SEISMIC_TOSS",
       "MOVE_YAWN"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "SLUGMA": {
@@ -24430,15 +24082,11 @@
       "MOVE_ACID_ARMOR",
       "MOVE_CURSE",
       "MOVE_GUARD_SWAP",
-<<<<<<< HEAD
       "MOVE_INFERNO",
       "MOVE_MEMENTO",
       "MOVE_ROLLOUT",
       "MOVE_SMOKESCREEN",
       "MOVE_STOCKPILE"
-=======
-      "MOVE_INFERNO"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -24559,7 +24207,6 @@
       "MOVE_SCORCHING_SANDS",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ACID_ARMOR",
       "MOVE_CURSE",
@@ -24570,9 +24217,6 @@
       "MOVE_SMOKESCREEN",
       "MOVE_STOCKPILE"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "SWINUB": {
@@ -24673,17 +24317,12 @@
     ],
     "EggMoves": [
       "MOVE_ANCIENT_POWER",
-<<<<<<< HEAD
       "MOVE_BITE",
       "MOVE_CURSE",
       "MOVE_DOUBLE_EDGE",
       "MOVE_FISSURE",
       "MOVE_FREEZE_DRY",
       "MOVE_ICICLE_CRASH"
-=======
-      "MOVE_ICICLE_CRASH",
-      "MOVE_FREEZE_DRY"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -24798,7 +24437,6 @@
       "MOVE_THROAT_CHOP",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ANCIENT_POWER",
       "MOVE_BITE",
@@ -24828,8 +24466,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -24904,7 +24540,6 @@
       "MOVE_DESTINY_BOND",
       "MOVE_FAKE_OUT",
       "MOVE_FREEZE_DRY",
-<<<<<<< HEAD
       "MOVE_ICE_SHARD",
       "MOVE_MEMENTO",
       "MOVE_QUICK_ATTACK",
@@ -24919,11 +24554,6 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
-=======
-      "MOVE_AURORA_VEIL"
-    ],
-    "TutorMoves": []
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
   },
   "SKARMORY": {
     "LevelMoves": [
@@ -25302,7 +24932,6 @@
       "MOVE_TEMPER_FLARE",
       "MOVE_THROAT_CHOP"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COUNTER",
       "MOVE_DESTINY_BOND",
@@ -25313,9 +24942,6 @@
       "MOVE_SUCKER_PUNCH",
       "MOVE_THUNDER_FANG"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "KINGDRA": {
@@ -25545,11 +25171,7 @@
       "MOVE_HIGH_HORSEPOWER",
       "MOVE_ICE_SHARD",
       "MOVE_PLAY_ROUGH",
-<<<<<<< HEAD
       "MOVE_SNORE"
-=======
-      "MOVE_HIGH_HORSEPOWER"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -25678,7 +25300,6 @@
       "MOVE_THROAT_CHOP",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ANCIENT_POWER",
       "MOVE_BODY_SLAM",
@@ -25693,9 +25314,6 @@
       "MOVE_PLAY_ROUGH",
       "MOVE_SNORE"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "PORYGON2": {
@@ -25920,14 +25538,10 @@
       "MOVE_DISABLE",
       "MOVE_DOUBLE_KICK",
       "MOVE_EXTRASENSORY",
-<<<<<<< HEAD
       "MOVE_MEGAHORN",
       "MOVE_PSYSHIELD_BASH",
       "MOVE_SPITE",
       "MOVE_THRASH"
-=======
-      "MOVE_PSYSHIELD_BASH"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -26356,7 +25970,6 @@
       "MOVE_BELCH"
     ],
     "TutorMoves": []
-<<<<<<< HEAD
   },
   "MILTANK": {
     "LevelMoves": [],
@@ -26364,8 +25977,6 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
   },
   "BLISSEY": {
     "LevelMoves": [
@@ -26519,16 +26130,12 @@
       "MOVE_ENDEAVOR",
       "MOVE_ALLURING_VOICE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_GRAVITY",
       "MOVE_HEAL_BELL",
       "MOVE_PRESENT",
       "MOVE_SEISMIC_TOSS"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "RAIKOU": {
@@ -27027,7 +26634,6 @@
     "EggMoves": [
       "MOVE_ANCIENT_POWER",
       "MOVE_ASSURANCE",
-<<<<<<< HEAD
       "MOVE_CURSE",
       "MOVE_DRAGON_DANCE",
       "MOVE_FOCUS_ENERGY",
@@ -27035,9 +26641,6 @@
       "MOVE_IRON_HEAD",
       "MOVE_OUTRAGE",
       "MOVE_STOMP"
-=======
-      "MOVE_IRON_HEAD"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -27160,7 +26763,6 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ANCIENT_POWER",
       "MOVE_ASSURANCE",
@@ -27172,9 +26774,6 @@
       "MOVE_OUTRAGE",
       "MOVE_STOMP"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "TYRANITAR": {
@@ -27350,7 +26949,6 @@
       "MOVE_CURSE",
       "MOVE_HARD_PRESS"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ANCIENT_POWER",
       "MOVE_ASSURANCE",
@@ -27362,9 +26960,6 @@
       "MOVE_OUTRAGE",
       "MOVE_STOMP"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "LUGIA": {
@@ -27621,7 +27216,6 @@
     ],
     "EggMoves": [],
     "TutorMoves": []
-<<<<<<< HEAD
   },
   "CELEBI": {
     "LevelMoves": [],
@@ -27629,8 +27223,6 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
   },
   "TREECKO": {
     "LevelMoves": [
@@ -28977,12 +28569,8 @@
     ],
     "EggMoves": [
       "MOVE_ASTONISH",
-<<<<<<< HEAD
       "MOVE_COVET",
       "MOVE_POISON_FANG"
-=======
-      "MOVE_COVET"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -29113,7 +28701,6 @@
       "MOVE_ENDEAVOR",
       "MOVE_THROAT_CHOP"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ASTONISH",
       "MOVE_COVET",
@@ -29167,8 +28754,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -29399,7 +28984,6 @@
       "MOVE_WHIRLPOOL",
       "MOVE_MUDDY_WATER"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COUNTER",
       "MOVE_RAZOR_LEAF",
@@ -29408,9 +28992,6 @@
       "MOVE_TEETER_DANCE",
       "MOVE_TICKLE"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "LUDICOLO": {
@@ -29554,7 +29135,6 @@
       "MOVE_WHIRLPOOL",
       "MOVE_MUDDY_WATER"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COUNTER",
       "MOVE_RAZOR_LEAF",
@@ -29563,9 +29143,6 @@
       "MOVE_TEETER_DANCE",
       "MOVE_TICKLE"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "SEEDOT": {
@@ -29662,13 +29239,9 @@
       "MOVE_DEFOG",
       "MOVE_LEECH_SEED",
       "MOVE_NIGHT_SLASH",
-<<<<<<< HEAD
       "MOVE_QUICK_ATTACK",
       "MOVE_TAKE_DOWN",
       "MOVE_WORRY_SEED"
-=======
-      "MOVE_DEFOG"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -29806,7 +29379,6 @@
       "MOVE_ENDEAVOR",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DEFOG",
       "MOVE_LEECH_SEED",
@@ -29815,9 +29387,6 @@
       "MOVE_TAKE_DOWN",
       "MOVE_WORRY_SEED"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "SHIFTRY": {
@@ -30005,7 +29574,6 @@
       "MOVE_CURSE",
       "MOVE_UPPER_HAND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DEFOG",
       "MOVE_LEECH_SEED",
@@ -30027,8 +29595,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -30123,16 +29689,11 @@
       "MOVE_AERIAL_ACE",
       "MOVE_AIR_CUTTER",
       "MOVE_AQUA_RING",
-<<<<<<< HEAD
       "MOVE_GUST",
       "MOVE_KNOCK_OFF",
       "MOVE_SOAK",
       "MOVE_TWISTER",
       "MOVE_WIDE_GUARD"
-=======
-      "MOVE_WIDE_GUARD",
-      "MOVE_SOAK"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -30262,7 +29823,6 @@
       "MOVE_MUDDY_WATER",
       "MOVE_FEATHER_DANCE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AERIAL_ACE",
       "MOVE_AIR_CUTTER",
@@ -30273,9 +29833,6 @@
       "MOVE_TWISTER",
       "MOVE_WIDE_GUARD"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "RALTS": {
@@ -30405,14 +29962,8 @@
       "MOVE_KNOCK_OFF",
       "MOVE_MEAN_LOOK",
       "MOVE_MEMENTO",
-<<<<<<< HEAD
       "MOVE_MYSTICAL_FIRE",
       "MOVE_SHADOW_SNEAK"
-=======
-      "MOVE_KNOCK_OFF",
-      "MOVE_SHADOW_SNEAK",
-      "MOVE_MYSTICAL_FIRE"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -30538,7 +30089,6 @@
       "MOVE_EXPANDING_FORCE",
       "MOVE_ALLURING_VOICE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_CONFUSE_RAY",
       "MOVE_DESTINY_BOND",
@@ -30549,9 +30099,6 @@
       "MOVE_MYSTICAL_FIRE",
       "MOVE_SHADOW_SNEAK"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "GARDEVOIR": {
@@ -30709,7 +30256,6 @@
       "MOVE_ALLURING_VOICE",
       "MOVE_PSYCHIC_NOISE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_CONFUSE_RAY",
       "MOVE_DESTINY_BOND",
@@ -30720,9 +30266,6 @@
       "MOVE_MYSTICAL_FIRE",
       "MOVE_SHADOW_SNEAK"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "SURSKIT": {
@@ -30814,15 +30357,11 @@
       "MOVE_AQUA_JET",
       "MOVE_BUG_BITE",
       "MOVE_FELL_STINGER",
-<<<<<<< HEAD
       "MOVE_HYDRO_PUMP",
       "MOVE_LUNGE",
       "MOVE_MUD_SHOT",
       "MOVE_POWER_SPLIT",
       "MOVE_PSYBEAM"
-=======
-      "MOVE_LUNGE"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -30937,7 +30476,6 @@
       "MOVE_PSYCH_UP",
       "MOVE_SKITTER_SMACK"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AQUA_JET",
       "MOVE_BUG_BITE",
@@ -30948,9 +30486,6 @@
       "MOVE_POWER_SPLIT",
       "MOVE_PSYBEAM"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "SHROOMISH": {
@@ -31182,16 +30717,12 @@
       "MOVE_TOXIC",
       "MOVE_FOCUS_PUNCH"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_CHARM",
       "MOVE_FAKE_TEARS",
       "MOVE_HELPING_HAND",
       "MOVE_WORRY_SEED"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "SLAKOTH": {
@@ -31300,13 +30831,9 @@
       "MOVE_CURSE",
       "MOVE_HAMMER_ARM",
       "MOVE_NIGHT_SLASH",
-<<<<<<< HEAD
       "MOVE_SLASH",
       "MOVE_SNORE",
       "MOVE_TICKLE"
-=======
-      "MOVE_AFTER_YOU"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -31430,7 +30957,6 @@
       "MOVE_THROAT_CHOP",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_BODY_SLAM",
@@ -31442,9 +30968,6 @@
       "MOVE_SNORE",
       "MOVE_TICKLE"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "SLAKING": {
@@ -31588,7 +31111,6 @@
       "MOVE_CURSE",
       "MOVE_HARD_PRESS"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_BODY_SLAM",
@@ -31641,8 +31163,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -31920,7 +31440,6 @@
       "MOVE_CURSE",
       "MOVE_UPPER_HAND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BULLET_PUNCH",
       "MOVE_COUNTER",
@@ -31930,9 +31449,6 @@
       "MOVE_HELPING_HAND",
       "MOVE_WIDE_GUARD"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "AZURILL": {
@@ -32004,17 +31520,10 @@
       "MOVE_COPYCAT",
       "MOVE_PERISH_SONG",
       "MOVE_PRESENT",
-<<<<<<< HEAD
       "MOVE_SING",
       "MOVE_SOAK",
       "MOVE_SUPERSONIC",
       "MOVE_TICKLE"
-=======
-      "MOVE_TICKLE",
-      "MOVE_COPYCAT",
-      "MOVE_AQUA_JET",
-      "MOVE_SOAK"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -32139,7 +31648,6 @@
       "MOVE_WIDE_GUARD"
     ],
     "TutorMoves": []
-<<<<<<< HEAD
   },
   "SKITTY": {
     "LevelMoves": [],
@@ -32154,8 +31662,6 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
   },
   "SABLEYE": {
     "LevelMoves": [
@@ -32307,7 +31813,6 @@
       "MOVE_FEINT",
       "MOVE_FLATTER",
       "MOVE_METAL_BURST",
-<<<<<<< HEAD
       "MOVE_RECOVER",
       "MOVE_SUCKER_PUNCH",
       "MOVE_TORMENT"
@@ -32341,11 +31846,6 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
-=======
-      "MOVE_SUCKER_PUNCH"
-    ],
-    "TutorMoves": []
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
   },
   "MEDITITE": {
     "LevelMoves": [
@@ -32482,12 +31982,8 @@
       "MOVE_ICE_PUNCH",
       "MOVE_POWER_SWAP",
       "MOVE_PSYCHO_CUT",
-<<<<<<< HEAD
       "MOVE_QUICK_GUARD",
       "MOVE_THUNDER_PUNCH"
-=======
-      "MOVE_QUICK_GUARD"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -32634,7 +32130,6 @@
       "MOVE_EXPANDING_FORCE",
       "MOVE_UPPER_HAND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BATON_PASS",
       "MOVE_BULLET_PUNCH",
@@ -32661,8 +32156,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -33050,12 +32543,7 @@
       "MOVE_COUNTER",
       "MOVE_ROOST",
       "MOVE_SEISMIC_TOSS",
-<<<<<<< HEAD
       "MOVE_SWAGGER"
-=======
-      "MOVE_SWAGGER",
-      "MOVE_ROOST"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -33186,7 +32674,6 @@
       "MOVE_ROOST"
     ],
     "TutorMoves": []
-<<<<<<< HEAD
   },
   "ROSELIA": {
     "LevelMoves": [],
@@ -33194,8 +32681,6 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
   },
   "GULPIN": {
     "LevelMoves": [
@@ -33440,7 +32925,6 @@
       "MOVE_SLUDGE_WAVE",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ACID_ARMOR",
       "MOVE_CLEAR_SMOG",
@@ -33477,8 +32961,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -33603,7 +33085,6 @@
       "MOVE_HEAVY_SLAM",
       "MOVE_HOWL",
       "MOVE_IRON_HEAD",
-<<<<<<< HEAD
       "MOVE_ROLLOUT",
       "MOVE_SCARY_FACE",
       "MOVE_SPIT_UP",
@@ -33611,9 +33092,6 @@
       "MOVE_STOMP",
       "MOVE_SWALLOW",
       "MOVE_YAWN"
-=======
-      "MOVE_HEAVY_SLAM"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -33741,7 +33219,6 @@
       "MOVE_SCORCHING_SANDS",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ANCIENT_POWER",
       "MOVE_BODY_SLAM",
@@ -33759,9 +33236,6 @@
       "MOVE_SWALLOW",
       "MOVE_YAWN"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "TORKOAL": {
@@ -34006,17 +33480,12 @@
     "EggMoves": [
       "MOVE_AMNESIA",
       "MOVE_EXTRASENSORY",
-<<<<<<< HEAD
       "MOVE_FUTURE_SIGHT",
       "MOVE_MIRROR_COAT",
       "MOVE_SIMPLE_BEAM",
       "MOVE_TRICK",
       "MOVE_WHIRLWIND",
       "MOVE_ZEN_HEADBUTT"
-=======
-      "MOVE_ZEN_HEADBUTT",
-      "MOVE_SIMPLE_BEAM"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -34161,7 +33630,6 @@
       "MOVE_EXPANDING_FORCE",
       "MOVE_PSYCHIC_NOISE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AMNESIA",
       "MOVE_EXTRASENSORY",
@@ -34178,8 +33646,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -34984,14 +34450,10 @@
       "MOVE_ASTONISH",
       "MOVE_DEFOG",
       "MOVE_DRAGON_RUSH",
-<<<<<<< HEAD
       "MOVE_FEATHER_DANCE",
       "MOVE_HAZE",
       "MOVE_ROOST",
       "MOVE_TAILWIND"
-=======
-      "MOVE_DEFOG"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -35118,7 +34580,6 @@
       "MOVE_DRAGON_CHEER",
       "MOVE_ALLURING_VOICE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ASTONISH",
       "MOVE_DEFOG",
@@ -35128,9 +34589,6 @@
       "MOVE_ROOST",
       "MOVE_TAILWIND"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "ZANGOOSE": {
@@ -35464,7 +34922,6 @@
       "MOVE_BODY_SLAM",
       "MOVE_FINAL_GAMBIT",
       "MOVE_NIGHT_SLASH",
-<<<<<<< HEAD
       "MOVE_SCARY_FACE",
       "MOVE_SPIT_UP",
       "MOVE_STOCKPILE",
@@ -35486,12 +34943,6 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
-=======
-      "MOVE_SWITCHEROO",
-      "MOVE_FINAL_GAMBIT"
-    ],
-    "TutorMoves": []
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
   },
   "BARBOACH": {
     "LevelMoves": [
@@ -35586,13 +35037,9 @@
     ],
     "EggMoves": [
       "MOVE_FLAIL",
-<<<<<<< HEAD
       "MOVE_SPARK",
       "MOVE_TAKE_DOWN",
       "MOVE_THRASH"
-=======
-      "MOVE_SPARK"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -35711,16 +35158,12 @@
       "MOVE_FUTURE_SIGHT",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_FLAIL",
       "MOVE_SPARK",
       "MOVE_TAKE_DOWN",
       "MOVE_THRASH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "CORPHISH": {
@@ -35831,16 +35274,11 @@
     ],
     "EggMoves": [
       "MOVE_ANCIENT_POWER",
-<<<<<<< HEAD
       "MOVE_AQUA_JET",
       "MOVE_DOUBLE_EDGE",
       "MOVE_METAL_CLAW",
       "MOVE_SLASH",
       "MOVE_SWITCHEROO"
-=======
-      "MOVE_SWITCHEROO",
-      "MOVE_AQUA_JET"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -35967,7 +35405,6 @@
       "MOVE_SLUDGE_WAVE",
       "MOVE_HARD_PRESS"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ANCIENT_POWER",
       "MOVE_AQUA_JET",
@@ -36017,8 +35454,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -36206,7 +35641,6 @@
       "MOVE_DRAGON_CHEER",
       "MOVE_ALLURING_VOICE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_CONFUSE_RAY",
       "MOVE_DRAGON_BREATH",
@@ -36229,8 +35663,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -36341,14 +35773,9 @@
     "EggMoves": [
       "MOVE_CONFUSE_RAY",
       "MOVE_DESTINY_BOND",
-<<<<<<< HEAD
       "MOVE_DISABLE",
       "MOVE_GUNK_SHOT",
       "MOVE_IMPRISON"
-=======
-      "MOVE_IMPRISON",
-      "MOVE_GUNK_SHOT"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -36467,7 +35894,6 @@
       "MOVE_THROAT_CHOP",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_CONFUSE_RAY",
       "MOVE_DESTINY_BOND",
@@ -36475,9 +35901,6 @@
       "MOVE_GUNK_SHOT",
       "MOVE_IMPRISON"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "DUSKULL": {
@@ -36580,13 +36003,8 @@
     ],
     "EggMoves": [
       "MOVE_HAZE",
-<<<<<<< HEAD
       "MOVE_MEMENTO",
       "MOVE_PAIN_SPLIT"
-=======
-      "MOVE_PAIN_SPLIT",
-      "MOVE_MEMENTO"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -36721,15 +36139,11 @@
       "MOVE_SKITTER_SMACK",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_HAZE",
       "MOVE_MEMENTO",
       "MOVE_PAIN_SPLIT"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "TROPIUS": {
@@ -36852,12 +36266,8 @@
       "MOVE_DRAGON_DANCE",
       "MOVE_HEADBUTT",
       "MOVE_LEAF_BLADE",
-<<<<<<< HEAD
       "MOVE_LEECH_SEED",
       "MOVE_SLAM"
-=======
-      "MOVE_DRAGON_DANCE"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -36972,7 +36382,6 @@
       "MOVE_CURSE",
       "MOVE_PSYCHIC_NOISE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ALLY_SWITCH",
       "MOVE_COSMIC_POWER",
@@ -36996,8 +36405,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -37099,15 +36506,10 @@
     ],
     "EggMoves": [
       "MOVE_BLOCK",
-<<<<<<< HEAD
       "MOVE_DISABLE",
       "MOVE_ICICLE_CRASH",
       "MOVE_ROLLOUT",
       "MOVE_SWITCHEROO"
-=======
-      "MOVE_SWITCHEROO",
-      "MOVE_ICICLE_CRASH"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -37225,7 +36627,6 @@
       "MOVE_ICICLE_SPEAR",
       "MOVE_WEATHER_BALL"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BLOCK",
       "MOVE_DISABLE",
@@ -37281,8 +36682,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -37488,14 +36887,9 @@
     ],
     "EggMoves": [
       "MOVE_DEFENSE_CURL",
-<<<<<<< HEAD
       "MOVE_DRAGON_RUSH",
       "MOVE_THRASH",
       "MOVE_TWISTER"
-=======
-      "MOVE_TWISTER",
-      "MOVE_DRAGON_RUSH"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -37600,16 +36994,12 @@
       "MOVE_TEMPER_FLARE",
       "MOVE_DRAGON_CHEER"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DEFENSE_CURL",
       "MOVE_DRAGON_RUSH",
       "MOVE_THRASH",
       "MOVE_TWISTER"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "SALAMENCE": {
@@ -37740,16 +37130,12 @@
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DEFENSE_CURL",
       "MOVE_DRAGON_RUSH",
       "MOVE_THRASH",
       "MOVE_TWISTER"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "BELDUM": {
@@ -39813,11 +39199,7 @@
       "MOVE_THRASH",
       "MOVE_TICKLE",
       "MOVE_WIDE_GUARD",
-<<<<<<< HEAD
       "MOVE_WORRY_SEED"
-=======
-      "MOVE_SHELL_SMASH"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -39915,7 +39297,6 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DOUBLE_EDGE",
       "MOVE_GROWTH",
@@ -39929,9 +39310,6 @@
       "MOVE_WIDE_GUARD",
       "MOVE_WORRY_SEED"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "TORTERRA": {
@@ -40058,7 +39436,6 @@
       "MOVE_CURSE",
       "MOVE_HARD_PRESS"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DOUBLE_EDGE",
       "MOVE_GROWTH",
@@ -40072,9 +39449,6 @@
       "MOVE_WIDE_GUARD",
       "MOVE_WORRY_SEED"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "CHIMCHAR": {
@@ -40200,12 +39574,8 @@
       "MOVE_FOCUS_ENERGY",
       "MOVE_HEAT_WAVE",
       "MOVE_HELPING_HAND",
-<<<<<<< HEAD
       "MOVE_SWITCHEROO",
       "MOVE_THUNDER_PUNCH"
-=======
-      "MOVE_SWITCHEROO"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -40334,7 +39704,6 @@
       "MOVE_TEMPER_FLARE",
       "MOVE_UPPER_HAND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COUNTER",
       "MOVE_DOUBLE_KICK",
@@ -40347,9 +39716,6 @@
       "MOVE_SWITCHEROO",
       "MOVE_THUNDER_PUNCH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "INFERNAPE": {
@@ -40504,7 +39870,6 @@
       "MOVE_THROAT_CHOP",
       "MOVE_UPPER_HAND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COUNTER",
       "MOVE_DOUBLE_KICK",
@@ -40517,9 +39882,6 @@
       "MOVE_SWITCHEROO",
       "MOVE_THUNDER_PUNCH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "PIPLUP": {
@@ -40619,16 +39981,12 @@
     ],
     "EggMoves": [
       "MOVE_AQUA_RING",
-<<<<<<< HEAD
       "MOVE_FEATHER_DANCE",
       "MOVE_POWER_TRIP",
       "MOVE_ROOST",
       "MOVE_SNORE",
       "MOVE_SUPERSONIC",
       "MOVE_YAWN"
-=======
-      "MOVE_POWER_TRIP"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -40731,7 +40089,6 @@
       "MOVE_TRIPLE_AXEL",
       "MOVE_FEATHER_DANCE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AQUA_RING",
       "MOVE_FEATHER_DANCE",
@@ -40741,9 +40098,6 @@
       "MOVE_SUPERSONIC",
       "MOVE_YAWN"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "EMPOLEON": {
@@ -40883,7 +40237,6 @@
       "MOVE_THROAT_CHOP",
       "MOVE_METAL_SOUND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AQUA_RING",
       "MOVE_FEATHER_DANCE",
@@ -40893,9 +40246,6 @@
       "MOVE_SUPERSONIC",
       "MOVE_YAWN"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "STARLY": {
@@ -40985,13 +40335,9 @@
       "MOVE_ASTONISH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_FEATHER_DANCE",
-<<<<<<< HEAD
       "MOVE_FURY_ATTACK",
       "MOVE_SAND_ATTACK",
       "MOVE_UPROAR"
-=======
-      "MOVE_ASTONISH"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -41078,7 +40424,6 @@
       "MOVE_ENDEAVOR",
       "MOVE_FEATHER_DANCE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ASTONISH",
       "MOVE_DOUBLE_EDGE",
@@ -41087,9 +40432,6 @@
       "MOVE_SAND_ATTACK",
       "MOVE_UPROAR"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "STARAPTOR": {
@@ -41183,7 +40525,6 @@
       "MOVE_ENDEAVOR",
       "MOVE_FEATHER_DANCE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ASTONISH",
       "MOVE_DOUBLE_EDGE",
@@ -41205,8 +40546,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -41449,13 +40788,9 @@
       "MOVE_DOUBLE_KICK",
       "MOVE_HOWL",
       "MOVE_NIGHT_SLASH",
-<<<<<<< HEAD
       "MOVE_QUICK_ATTACK",
       "MOVE_SHOCK_WAVE",
       "MOVE_TAKE_DOWN"
-=======
-      "MOVE_BABY_DOLL_EYES"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -41559,7 +40894,6 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ELECTROWEB"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BABY_DOLL_EYES",
       "MOVE_DOUBLE_KICK",
@@ -41569,9 +40903,6 @@
       "MOVE_SHOCK_WAVE",
       "MOVE_TAKE_DOWN"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "LUXRAY": {
@@ -41684,7 +41015,6 @@
       "MOVE_ELECTROWEB",
       "MOVE_THROAT_CHOP"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BABY_DOLL_EYES",
       "MOVE_DOUBLE_KICK",
@@ -41707,8 +41037,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -42740,12 +42068,8 @@
       "MOVE_FURY_SWIPES",
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
-<<<<<<< HEAD
       "MOVE_MUD_SLAP",
       "MOVE_SLASH"
-=======
-      "MOVE_AQUA_RING"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -42868,7 +42192,6 @@
       "MOVE_WHIRLPOOL",
       "MOVE_MUDDY_WATER"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AQUA_RING",
       "MOVE_BATON_PASS",
@@ -42892,8 +42215,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -42994,12 +42315,7 @@
       "MOVE_SPIT_UP",
       "MOVE_STOCKPILE",
       "MOVE_SWALLOW",
-<<<<<<< HEAD
       "MOVE_YAWN"
-=======
-      "MOVE_YAWN",
-      "MOVE_CLEAR_SMOG"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -43100,7 +42416,6 @@
       "MOVE_SKITTER_SMACK",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ACID_ARMOR",
       "MOVE_CLEAR_SMOG",
@@ -43114,9 +42429,6 @@
       "MOVE_SWALLOW",
       "MOVE_YAWN"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "AMBIPOM": {
@@ -43236,7 +42548,6 @@
       "MOVE_THROAT_CHOP",
       "MOVE_UPPER_HAND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BEAT_UP",
       "MOVE_BOUNCE",
@@ -43248,9 +42559,6 @@
       "MOVE_SLAM",
       "MOVE_SWITCHEROO"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "DRIFLOON": {
@@ -43366,14 +42674,10 @@
     "EggMoves": [
       "MOVE_CLEAR_SMOG",
       "MOVE_DEFOG",
-<<<<<<< HEAD
       "MOVE_DISABLE",
       "MOVE_HAZE",
       "MOVE_HYPNOSIS",
       "MOVE_MEMENTO"
-=======
-      "MOVE_CLEAR_SMOG"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -43500,7 +42804,6 @@
       "MOVE_TEMPER_FLARE",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_CLEAR_SMOG",
       "MOVE_DEFOG",
@@ -43522,8 +42825,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -43619,7 +42920,6 @@
       "MOVE_CURSE",
       "MOVE_PSYCHIC_NOISE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_CURSE",
       "MOVE_DESTINY_BOND",
@@ -43631,9 +42931,6 @@
       "MOVE_SUCKER_PUNCH",
       "MOVE_WONDER_ROOM"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "HONCHKROW": {
@@ -43736,7 +43033,6 @@
       "MOVE_FEATHER_DANCE",
       "MOVE_PSYCHIC_NOISE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BRAVE_BIRD",
       "MOVE_CONFUSE_RAY",
@@ -43761,8 +43057,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -43850,12 +43144,7 @@
       "MOVE_HYPNOSIS",
       "MOVE_RECOVER",
       "MOVE_RECYCLE",
-<<<<<<< HEAD
       "MOVE_WISH"
-=======
-      "MOVE_COSMIC_POWER",
-      "MOVE_ALLY_SWITCH"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -43980,11 +43269,7 @@
       "MOVE_HAZE",
       "MOVE_LEER",
       "MOVE_SLASH",
-<<<<<<< HEAD
       "MOVE_SMOG"
-=======
-      "MOVE_ASTONISH"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -44109,7 +43394,6 @@
       "MOVE_SLUDGE_WAVE",
       "MOVE_THROAT_CHOP"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ASTONISH",
       "MOVE_DOUBLE_EDGE",
@@ -44118,9 +43402,6 @@
       "MOVE_SLASH",
       "MOVE_SMOG"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "BRONZOR": {
@@ -44233,13 +43514,8 @@
       "MOVE_METAL_SOUND"
     ],
     "EggMoves": [
-<<<<<<< HEAD
       "MOVE_GRAVITY",
       "MOVE_RECYCLE"
-=======
-      "MOVE_RECYCLE",
-      "MOVE_GRAVITY"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -44377,14 +43653,10 @@
       "MOVE_HARD_PRESS",
       "MOVE_PSYCHIC_NOISE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_GRAVITY",
       "MOVE_RECYCLE"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "BONSLY": {
@@ -44486,7 +43758,6 @@
     ],
     "EggMoves": [
       "MOVE_CURSE",
-<<<<<<< HEAD
       "MOVE_DEFENSE_CURL",
       "MOVE_HARDEN",
       "MOVE_HEADBUTT",
@@ -44501,12 +43772,6 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
-=======
-      "MOVE_ROLLOUT",
-      "MOVE_ROCK_POLISH"
-    ],
-    "TutorMoves": []
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
   },
   "HAPPINY": {
     "LevelMoves": [
@@ -44573,7 +43838,6 @@
       "MOVE_GRAVITY",
       "MOVE_HEAL_BELL",
       "MOVE_PRESENT",
-<<<<<<< HEAD
       "MOVE_SEISMIC_TOSS"
     ],
     "TutorMoves": []
@@ -44584,11 +43848,6 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
-=======
-      "MOVE_GRAVITY"
-    ],
-    "TutorMoves": []
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
   },
   "SPIRITOMB": {
     "LevelMoves": [
@@ -44701,11 +43960,7 @@
       "MOVE_DESTINY_BOND",
       "MOVE_DISABLE",
       "MOVE_PAIN_SPLIT",
-<<<<<<< HEAD
       "MOVE_SMOKESCREEN"
-=======
-      "MOVE_ALLY_SWITCH"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -44915,16 +44170,12 @@
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DOUBLE_EDGE",
       "MOVE_METAL_CLAW",
       "MOVE_THRASH",
       "MOVE_TWISTER"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "GARCHOMP": {
@@ -45041,16 +44292,12 @@
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DOUBLE_EDGE",
       "MOVE_METAL_CLAW",
       "MOVE_THRASH",
       "MOVE_TWISTER"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "MUNCHLAX": {
@@ -45178,12 +44425,8 @@
       "MOVE_BELCH",
       "MOVE_COUNTER",
       "MOVE_CURSE",
-<<<<<<< HEAD
       "MOVE_DOUBLE_EDGE",
       "MOVE_FISSURE"
-=======
-      "MOVE_BELCH"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -45481,7 +44724,6 @@
       "MOVE_METAL_SOUND",
       "MOVE_UPPER_HAND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BITE",
       "MOVE_BULLET_PUNCH",
@@ -45491,9 +44733,6 @@
       "MOVE_HI_JUMP_KICK",
       "MOVE_HOWL"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "HIPPOPOTAS": {
@@ -45601,13 +44840,9 @@
     "EggMoves": [
       "MOVE_CURSE",
       "MOVE_SPIT_UP",
-<<<<<<< HEAD
       "MOVE_STOCKPILE",
       "MOVE_SWALLOW",
       "MOVE_WHIRLWIND"
-=======
-      "MOVE_SWALLOW"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -45731,7 +44966,6 @@
       "MOVE_CURSE",
       "MOVE_HARD_PRESS"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_CURSE",
       "MOVE_SPIT_UP",
@@ -45752,8 +44986,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -45882,15 +45114,9 @@
       "MOVE_DYNAMIC_PUNCH",
       "MOVE_FAKE_OUT",
       "MOVE_FEINT",
-<<<<<<< HEAD
       "MOVE_HEADBUTT",
       "MOVE_QUICK_GUARD",
       "MOVE_VACUUM_WAVE"
-=======
-      "MOVE_VACUUM_WAVE",
-      "MOVE_BULLET_PUNCH",
-      "MOVE_QUICK_GUARD"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -46019,7 +45245,6 @@
       "MOVE_THROAT_CHOP",
       "MOVE_UPPER_HAND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BULLET_PUNCH",
       "MOVE_COUNTER",
@@ -46037,8 +45262,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -46141,13 +45364,7 @@
       "MOVE_FLAIL",
       "MOVE_PSYBEAM",
       "MOVE_SWEET_KISS",
-<<<<<<< HEAD
       "MOVE_TICKLE"
-=======
-      "MOVE_CHARM",
-      "MOVE_TICKLE",
-      "MOVE_AQUA_TAIL"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -46246,7 +45463,6 @@
       "MOVE_WHIRLPOOL",
       "MOVE_ALLURING_VOICE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AGILITY",
       "MOVE_AQUA_TAIL",
@@ -46264,8 +45480,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -46483,7 +45697,6 @@
       "MOVE_CURSE",
       "MOVE_HARD_PRESS"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DOUBLE_EDGE",
       "MOVE_GROWTH",
@@ -46491,9 +45704,6 @@
       "MOVE_STOMP",
       "MOVE_WEATHER_BALL"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "WEAVILE": {
@@ -46634,7 +45844,6 @@
       "MOVE_THROAT_CHOP",
       "MOVE_UPPER_HAND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BITE",
       "MOVE_COUNTER",
@@ -46645,9 +45854,6 @@
       "MOVE_ICICLE_CRASH",
       "MOVE_SPITE"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "MAGNEZONE": {
@@ -46774,7 +45980,6 @@
       "MOVE_METAL_SOUND",
       "MOVE_HARD_PRESS"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ELECTROWEB",
       "MOVE_EXPLOSION"
@@ -46785,8 +45990,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -47333,15 +46536,11 @@
       "MOVE_SKITTER_SMACK",
       "MOVE_PSYCHIC_NOISE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DOUBLE_EDGE",
       "MOVE_FEINT",
       "MOVE_WHIRLWIND"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "LEAFEON": {
@@ -47491,7 +46690,6 @@
       "MOVE_CURSE",
       "MOVE_ALLURING_VOICE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_CURSE",
       "MOVE_DETECT",
@@ -47502,9 +46700,6 @@
       "MOVE_WISH",
       "MOVE_YAWN"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "GLACEON": {
@@ -47648,7 +46843,6 @@
       "MOVE_CURSE",
       "MOVE_ALLURING_VOICE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_CURSE",
       "MOVE_DETECT",
@@ -47659,9 +46853,6 @@
       "MOVE_WISH",
       "MOVE_YAWN"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "GLISCOR": {
@@ -47797,7 +46988,6 @@
       "MOVE_THROAT_CHOP",
       "MOVE_BREAKING_SWIPE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COUNTER",
       "MOVE_CROSS_POISON",
@@ -47806,9 +46996,6 @@
       "MOVE_NIGHT_SLASH",
       "MOVE_WING_ATTACK"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "MAMOSWINE": {
@@ -47933,7 +47120,6 @@
       "MOVE_CURSE",
       "MOVE_HARD_PRESS"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ANCIENT_POWER",
       "MOVE_BITE",
@@ -47943,9 +47129,6 @@
       "MOVE_FREEZE_DRY",
       "MOVE_ICICLE_CRASH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "PORYGON_Z": {
@@ -48295,7 +47478,6 @@
       "MOVE_ALLURING_VOICE",
       "MOVE_UPPER_HAND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_CONFUSE_RAY",
       "MOVE_DESTINY_BOND",
@@ -48306,9 +47488,6 @@
       "MOVE_MYSTICAL_FIRE",
       "MOVE_SHADOW_SNEAK"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "PROBOPASS": {
@@ -48447,16 +47626,12 @@
       "MOVE_CURSE",
       "MOVE_HARD_PRESS"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DOUBLE_EDGE",
       "MOVE_HEAD_SMASH",
       "MOVE_ROLLOUT",
       "MOVE_WIDE_GUARD"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "DUSKNOIR": {
@@ -48600,15 +47775,11 @@
       "MOVE_CURSE",
       "MOVE_HARD_PRESS"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_HAZE",
       "MOVE_MEMENTO",
       "MOVE_PAIN_SPLIT"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "FROSLASS": {
@@ -48755,7 +47926,6 @@
       "MOVE_TRIPLE_AXEL",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BLOCK",
       "MOVE_DISABLE",
@@ -48763,9 +47933,6 @@
       "MOVE_ROLLOUT",
       "MOVE_SWITCHEROO"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "ROTOM": {
@@ -51233,7 +50400,6 @@
     ],
     "EggMoves": [],
     "TutorMoves": []
-<<<<<<< HEAD
   },
   "VICTINI": {
     "LevelMoves": [],
@@ -51241,8 +50407,6 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
   },
   "SNIVY": {
     "LevelMoves": [
@@ -52078,11 +51242,7 @@
       "MOVE_KNOCK_OFF",
       "MOVE_NIGHT_SLASH",
       "MOVE_SACRED_SWORD",
-<<<<<<< HEAD
       "MOVE_SCREECH"
-=======
-      "MOVE_AQUA_CUTTER"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -52191,7 +51351,6 @@
       "MOVE_FLIP_TURN",
       "MOVE_WHIRLPOOL"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AIR_SLASH",
       "MOVE_AQUA_CUTTER",
@@ -52202,9 +51361,6 @@
       "MOVE_SACRED_SWORD",
       "MOVE_SCREECH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "SAMUROTT": {
@@ -52329,7 +51485,6 @@
       "MOVE_WHIRLPOOL",
       "MOVE_UPPER_HAND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AIR_SLASH",
       "MOVE_AQUA_CUTTER",
@@ -52340,9 +51495,6 @@
       "MOVE_SACRED_SWORD",
       "MOVE_SCREECH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "SAMUROTT_HISUI": {
@@ -53155,7 +52307,6 @@
       "MOVE_COACHING",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COUNTER",
       "MOVE_DEFOG",
@@ -53163,9 +52314,6 @@
       "MOVE_MACH_PUNCH",
       "MOVE_WIDE_GUARD"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "CONKELDURR": {
@@ -53278,7 +52426,6 @@
       "MOVE_HARD_PRESS",
       "MOVE_UPPER_HAND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COUNTER",
       "MOVE_DEFOG",
@@ -53320,8 +52467,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -53401,12 +52546,7 @@
       "MOVE_SNORE",
       "MOVE_SWITCHEROO",
       "MOVE_SYNTHESIS",
-<<<<<<< HEAD
       "MOVE_WORRY_SEED"
-=======
-      "MOVE_WORRY_SEED",
-      "MOVE_SWITCHEROO"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -53486,7 +52626,6 @@
       "MOVE_ELECTROWEB",
       "MOVE_SKITTER_SMACK"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_SCREECH",
       "MOVE_SNORE",
@@ -53494,9 +52633,6 @@
       "MOVE_SYNTHESIS",
       "MOVE_WORRY_SEED"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "LEAVANNY": {
@@ -53612,7 +52748,6 @@
       "MOVE_SKITTER_SMACK",
       "MOVE_THROAT_CHOP"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_SCREECH",
       "MOVE_SNORE",
@@ -53640,8 +52775,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -54109,16 +53242,12 @@
       "MOVE_PETAL_BLIZZARD",
       "MOVE_ALLURING_VOICE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_HEALING_WISH",
       "MOVE_INGRAIN",
       "MOVE_SWEET_SCENT",
       "MOVE_WORRY_SEED"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "LILLIGANT_HISUI": {
@@ -54718,13 +53847,8 @@
     "EggMoves": [
       "MOVE_AQUA_TAIL",
       "MOVE_COUNTER",
-<<<<<<< HEAD
       "MOVE_DOUBLE_EDGE",
       "MOVE_SPITE"
-=======
-      "MOVE_SPITE",
-      "MOVE_AQUA_TAIL"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -54848,16 +53972,12 @@
       "MOVE_BREAKING_SWIPE",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AQUA_TAIL",
       "MOVE_COUNTER",
       "MOVE_DOUBLE_EDGE",
       "MOVE_SPITE"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "KROOKODILE": {
@@ -54995,7 +54115,6 @@
       "MOVE_BREAKING_SWIPE",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AQUA_TAIL",
       "MOVE_COUNTER",
@@ -55036,8 +54155,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -55735,7 +54852,6 @@
       "MOVE_SKITTER_SMACK",
       "MOVE_THROAT_CHOP"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COPYCAT",
       "MOVE_COUNTER",
@@ -55744,9 +54860,6 @@
       "MOVE_MEMENTO",
       "MOVE_SUCKER_PUNCH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "ZOROARK_HISUI": {
@@ -56230,13 +55343,7 @@
       "MOVE_HEAL_PULSE",
       "MOVE_MEAN_LOOK",
       "MOVE_MIRROR_COAT",
-<<<<<<< HEAD
       "MOVE_TORMENT"
-=======
-      "MOVE_FAKE_OUT",
-      "MOVE_TORMENT",
-      "MOVE_HEAL_PULSE"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -56342,7 +55449,6 @@
       "MOVE_EXPANDING_FORCE",
       "MOVE_PSYCHIC_NOISE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_FAKE_OUT",
       "MOVE_HEAL_PULSE",
@@ -56350,9 +55456,6 @@
       "MOVE_MIRROR_COAT",
       "MOVE_TORMENT"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "GOTHITELLE": {
@@ -56467,7 +55570,6 @@
       "MOVE_EXPANDING_FORCE",
       "MOVE_PSYCHIC_NOISE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_FAKE_OUT",
       "MOVE_HEAL_PULSE",
@@ -56475,9 +55577,6 @@
       "MOVE_MIRROR_COAT",
       "MOVE_TORMENT"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "SOLOSIS": {
@@ -56939,14 +56038,10 @@
     "EggMoves": [
       "MOVE_AQUA_JET",
       "MOVE_BRINE",
-<<<<<<< HEAD
       "MOVE_DIVE",
       "MOVE_ENDEAVOR",
       "MOVE_GUST",
       "MOVE_STEEL_WING"
-=======
-      "MOVE_AQUA_JET"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -57049,7 +56144,6 @@
       "MOVE_FEATHER_DANCE",
       "MOVE_ALLURING_VOICE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AQUA_JET",
       "MOVE_BRINE",
@@ -57078,8 +56172,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -57293,7 +56385,6 @@
       "MOVE_THROAT_CHOP",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AGILITY",
       "MOVE_BATON_PASS",
@@ -57323,8 +56414,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -57513,7 +56602,6 @@
       "MOVE_TERA_BLAST",
       "MOVE_TOXIC"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DEFENSE_CURL",
       "MOVE_POISON_POWDER",
@@ -57533,8 +56621,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -57647,14 +56733,9 @@
       "MOVE_BOUNCE",
       "MOVE_ENDURE",
       "MOVE_MIRROR_COAT",
-<<<<<<< HEAD
       "MOVE_MIST",
       "MOVE_PAIN_SPLIT",
       "MOVE_TICKLE"
-=======
-      "MOVE_TICKLE",
-      "MOVE_BOUNCE"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -58150,7 +57231,6 @@
     ],
     "EggMoves": [],
     "TutorMoves": []
-<<<<<<< HEAD
   },
   "ELGYEM": {
     "LevelMoves": [],
@@ -58165,8 +57245,6 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
   },
   "LITWICK": {
     "LevelMoves": [
@@ -58279,14 +57357,9 @@
     ],
     "EggMoves": [
       "MOVE_ACID_ARMOR",
-<<<<<<< HEAD
       "MOVE_CLEAR_SMOG",
       "MOVE_HAZE",
       "MOVE_POWER_SPLIT"
-=======
-      "MOVE_POWER_SPLIT",
-      "MOVE_CLEAR_SMOG"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -58400,16 +57473,12 @@
       "MOVE_SKITTER_SMACK",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ACID_ARMOR",
       "MOVE_CLEAR_SMOG",
       "MOVE_HAZE",
       "MOVE_POWER_SPLIT"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "CHANDELURE": {
@@ -58525,16 +57594,12 @@
       "MOVE_SKITTER_SMACK",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ACID_ARMOR",
       "MOVE_CLEAR_SMOG",
       "MOVE_HAZE",
       "MOVE_POWER_SPLIT"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "AXEW": {
@@ -58661,15 +57726,11 @@
     ],
     "EggMoves": [
       "MOVE_AQUA_TAIL",
-<<<<<<< HEAD
       "MOVE_COUNTER",
       "MOVE_ENDEAVOR",
       "MOVE_FIRST_IMPRESSION",
       "MOVE_IRON_TAIL",
       "MOVE_NIGHT_SLASH"
-=======
-      "MOVE_FIRST_IMPRESSION"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -58796,7 +57857,6 @@
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AQUA_TAIL",
       "MOVE_COUNTER",
@@ -58805,9 +57865,6 @@
       "MOVE_IRON_TAIL",
       "MOVE_NIGHT_SLASH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "HAXORUS": {
@@ -58941,7 +57998,6 @@
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AQUA_TAIL",
       "MOVE_COUNTER",
@@ -58950,9 +58006,6 @@
       "MOVE_IRON_TAIL",
       "MOVE_NIGHT_SLASH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "CUBCHOO": {
@@ -59074,13 +58127,8 @@
     ],
     "EggMoves": [
       "MOVE_FOCUS_PUNCH",
-<<<<<<< HEAD
       "MOVE_NIGHT_SLASH",
       "MOVE_YAWN"
-=======
-      "MOVE_YAWN",
-      "MOVE_NIGHT_SLASH"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -59233,15 +58281,11 @@
       "MOVE_CURSE",
       "MOVE_HARD_PRESS"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_FOCUS_PUNCH",
       "MOVE_NIGHT_SLASH",
       "MOVE_YAWN"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "CRYOGONAL": {
@@ -59361,7 +58405,6 @@
     "EggMoves": [
       "MOVE_AURORA_VEIL",
       "MOVE_EXPLOSION",
-<<<<<<< HEAD
       "MOVE_FROST_BREATH"
     ],
     "TutorMoves": []
@@ -59386,12 +58429,6 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
-=======
-      "MOVE_FROST_BREATH",
-      "MOVE_AURORA_VEIL"
-    ],
-    "TutorMoves": []
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
   },
   "MIENFOO": {
     "LevelMoves": [
@@ -59499,12 +58536,7 @@
     "EggMoves": [
       "MOVE_FEINT",
       "MOVE_FOCUS_PUNCH",
-<<<<<<< HEAD
       "MOVE_KNOCK_OFF"
-=======
-      "MOVE_KNOCK_OFF",
-      "MOVE_FEINT"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -59621,7 +58653,6 @@
       "MOVE_COACHING",
       "MOVE_UPPER_HAND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_FEINT",
       "MOVE_FOCUS_PUNCH",
@@ -59633,8 +58664,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -60029,13 +59058,8 @@
     "EggMoves": [
       "MOVE_HEADBUTT",
       "MOVE_MEAN_LOOK",
-<<<<<<< HEAD
       "MOVE_QUICK_GUARD",
       "MOVE_SUCKER_PUNCH"
-=======
-      "MOVE_SUCKER_PUNCH",
-      "MOVE_QUICK_GUARD"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -60155,7 +59179,6 @@
       "MOVE_THROAT_CHOP",
       "MOVE_METAL_SOUND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_HEADBUTT",
       "MOVE_MEAN_LOOK",
@@ -60168,8 +59191,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -60380,14 +59401,10 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_FEATHER_DANCE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ROCK_SMASH",
       "MOVE_ROOST"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "BRAVIARY_HISUI": {
@@ -60626,12 +59643,8 @@
     ],
     "EggMoves": [
       "MOVE_MEAN_LOOK",
-<<<<<<< HEAD
       "MOVE_ROOST",
       "MOVE_TOXIC"
-=======
-      "MOVE_ROOST"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -60754,7 +59767,6 @@
       "MOVE_FEATHER_DANCE",
       "MOVE_THROAT_CHOP"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_MEAN_LOOK",
       "MOVE_ROOST",
@@ -60773,8 +59785,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -60889,11 +59899,7 @@
       "MOVE_ASTONISH",
       "MOVE_BELCH",
       "MOVE_DOUBLE_HIT",
-<<<<<<< HEAD
       "MOVE_HEAD_SMASH"
-=======
-      "MOVE_BELCH"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -61011,16 +60017,12 @@
       "MOVE_PSYCH_UP",
       "MOVE_DRAGON_CHEER"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ASTONISH",
       "MOVE_BELCH",
       "MOVE_DOUBLE_HIT",
       "MOVE_HEAD_SMASH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "HYDREIGON": {
@@ -61171,16 +60173,12 @@
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ASTONISH",
       "MOVE_BELCH",
       "MOVE_DOUBLE_HIT",
       "MOVE_HEAD_SMASH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "LARVESTA": {
@@ -61277,12 +60275,8 @@
     "EggMoves": [
       "MOVE_ABSORB",
       "MOVE_HARDEN",
-<<<<<<< HEAD
       "MOVE_MORNING_SUN",
       "MOVE_THRASH"
-=======
-      "MOVE_MORNING_SUN"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -61427,16 +60421,12 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_SKITTER_SMACK"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ABSORB",
       "MOVE_HARDEN",
       "MOVE_MORNING_SUN",
       "MOVE_THRASH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "COBALION": {
@@ -63044,7 +62034,6 @@
     ],
     "EggMoves": [],
     "TutorMoves": []
-<<<<<<< HEAD
   },
   "GENESECT": {
     "LevelMoves": [],
@@ -63052,8 +62041,6 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
   },
   "CHESPIN": {
     "LevelMoves": [
@@ -63166,12 +62153,7 @@
       "MOVE_SPIKES",
       "MOVE_SUPER_FANG",
       "MOVE_SYNTHESIS",
-<<<<<<< HEAD
       "MOVE_WIDE_GUARD"
-=======
-      "MOVE_WIDE_GUARD",
-      "MOVE_QUICK_GUARD"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -63289,7 +62271,6 @@
       "MOVE_ENDEAVOR",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BELLY_DRUM",
       "MOVE_CURSE",
@@ -63299,9 +62280,6 @@
       "MOVE_SYNTHESIS",
       "MOVE_WIDE_GUARD"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "CHESNAUGHT": {
@@ -63456,7 +62434,6 @@
       "MOVE_COACHING",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BELLY_DRUM",
       "MOVE_CURSE",
@@ -63466,9 +62443,6 @@
       "MOVE_SYNTHESIS",
       "MOVE_WIDE_GUARD"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "FENNEKIN": {
@@ -63577,14 +62551,10 @@
     ],
     "EggMoves": [
       "MOVE_COPYCAT",
-<<<<<<< HEAD
       "MOVE_HEAT_WAVE",
       "MOVE_HYPNOSIS",
       "MOVE_MAGIC_ROOM",
       "MOVE_WISH"
-=======
-      "MOVE_MAGIC_ROOM"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -63700,7 +62670,6 @@
       "MOVE_TERA_BLAST",
       "MOVE_BURNING_JEALOUSY"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COPYCAT",
       "MOVE_HEAT_WAVE",
@@ -63708,9 +62677,6 @@
       "MOVE_MAGIC_ROOM",
       "MOVE_WISH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "DELPHOX": {
@@ -63863,7 +62829,6 @@
       "MOVE_EXPANDING_FORCE",
       "MOVE_PSYCHIC_NOISE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COPYCAT",
       "MOVE_HEAT_WAVE",
@@ -63871,9 +62836,6 @@
       "MOVE_MAGIC_ROOM",
       "MOVE_WISH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "FROAKIE": {
@@ -63982,11 +62944,7 @@
       "MOVE_RETALIATE",
       "MOVE_SPIKES",
       "MOVE_SWITCHEROO",
-<<<<<<< HEAD
       "MOVE_TOXIC_SPIKES"
-=======
-      "MOVE_RETALIATE"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -64095,7 +63053,6 @@
       "MOVE_TERA_BLAST",
       "MOVE_SMACK_DOWN"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COUNTER",
       "MOVE_RETALIATE",
@@ -64103,9 +63060,6 @@
       "MOVE_SWITCHEROO",
       "MOVE_TOXIC_SPIKES"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "GRENINJA": {
@@ -64239,7 +63193,6 @@
       "MOVE_SLUDGE_WAVE",
       "MOVE_UPPER_HAND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COUNTER",
       "MOVE_RETALIATE",
@@ -64260,8 +63213,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -64455,15 +63406,11 @@
       "MOVE_TEMPER_FLARE",
       "MOVE_FEATHER_DANCE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DEFOG",
       "MOVE_FLAME_CHARGE",
       "MOVE_QUICK_GUARD"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "TALONFLAME": {
@@ -64577,15 +63524,11 @@
       "MOVE_FEATHER_DANCE",
       "MOVE_UPPER_HAND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DEFOG",
       "MOVE_FLAME_CHARGE",
       "MOVE_QUICK_GUARD"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "SCATTERBUG": {
@@ -64640,14 +63583,10 @@
       "MOVE_TERA_BLAST",
       "MOVE_BUG_BITE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_POISON_POWDER",
       "MOVE_RAGE_POWDER"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "VIVILLON": {
@@ -64743,14 +63682,10 @@
       "MOVE_WEATHER_BALL",
       "MOVE_SKITTER_SMACK"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_POISON_POWDER",
       "MOVE_RAGE_POWDER"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "LITLEO": {
@@ -64862,11 +63797,7 @@
       "MOVE_ENTRAINMENT",
       "MOVE_FIRE_SPIN",
       "MOVE_FLARE_BLITZ",
-<<<<<<< HEAD
       "MOVE_YAWN"
-=======
-      "MOVE_ENTRAINMENT"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -64984,16 +63915,12 @@
       "MOVE_ENDEAVOR",
       "MOVE_TEMPER_FLARE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ENTRAINMENT",
       "MOVE_FIRE_SPIN",
       "MOVE_FLARE_BLITZ",
       "MOVE_YAWN"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "FLABEBE": {
@@ -65198,15 +64125,11 @@
       "MOVE_PETAL_BLIZZARD",
       "MOVE_ALLURING_VOICE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COPYCAT",
       "MOVE_ENDEAVOR",
       "MOVE_TEARFUL_LOOK"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "FLORGES": {
@@ -65304,15 +64227,11 @@
       "MOVE_ALLURING_VOICE",
       "MOVE_PSYCHIC_NOISE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COPYCAT",
       "MOVE_ENDEAVOR",
       "MOVE_TEARFUL_LOOK"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "SKIDDO": {
@@ -65423,11 +64342,7 @@
       "MOVE_DEFENSE_CURL",
       "MOVE_GRASSY_TERRAIN",
       "MOVE_MILK_DRINK",
-<<<<<<< HEAD
       "MOVE_ROLLOUT"
-=======
-      "MOVE_GRASSY_TERRAIN"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -65553,7 +64468,6 @@
       "MOVE_ENDEAVOR",
       "MOVE_THROAT_CHOP"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DEFENSE_CURL",
       "MOVE_GRASSY_TERRAIN",
@@ -65580,8 +64494,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -66294,14 +65206,9 @@
     ],
     "EggMoves": [
       "MOVE_ACID_ARMOR",
-<<<<<<< HEAD
       "MOVE_DRAGON_TAIL",
       "MOVE_HAZE",
       "MOVE_TWISTER"
-=======
-      "MOVE_TWISTER",
-      "MOVE_DRAGON_TAIL"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -66413,16 +65320,12 @@
       "MOVE_MUDDY_WATER",
       "MOVE_SLUDGE_WAVE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ACID_ARMOR",
       "MOVE_DRAGON_TAIL",
       "MOVE_HAZE",
       "MOVE_TWISTER"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "CLAUNCHER": {
@@ -66639,7 +65542,6 @@
       "MOVE_MUDDY_WATER",
       "MOVE_SLUDGE_WAVE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AQUA_TAIL",
       "MOVE_BUBBLE_BEAM",
@@ -66686,8 +65588,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -66832,7 +65732,6 @@
       "MOVE_CURSE",
       "MOVE_ALLURING_VOICE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_CURSE",
       "MOVE_DETECT",
@@ -66843,9 +65742,6 @@
       "MOVE_WISH",
       "MOVE_YAWN"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "HAWLUCHA": {
@@ -67389,14 +66285,10 @@
       "MOVE_SKITTER_SMACK",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COUNTER",
       "MOVE_LIFE_DEW"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "SLIGGOO_HISUI": {
@@ -67627,14 +66519,10 @@
       "MOVE_CURSE",
       "MOVE_DRAGON_CHEER"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COUNTER",
       "MOVE_LIFE_DEW"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "GOODRA_HISUI": {
@@ -67996,12 +66884,7 @@
     "EggMoves": [
       "MOVE_ALLY_SWITCH",
       "MOVE_DISABLE",
-<<<<<<< HEAD
       "MOVE_SUCKER_PUNCH"
-=======
-      "MOVE_SUCKER_PUNCH",
-      "MOVE_ALLY_SWITCH"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -68135,7 +67018,6 @@
       "MOVE_CURSE",
       "MOVE_PSYCHIC_NOISE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ALLY_SWITCH",
       "MOVE_DISABLE",
@@ -68154,8 +67036,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -68260,11 +67140,7 @@
     "EggMoves": [
       "MOVE_AURORA_VEIL",
       "MOVE_MIRROR_COAT",
-<<<<<<< HEAD
       "MOVE_MIST"
-=======
-      "MOVE_AURORA_VEIL"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -68390,15 +67266,11 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AURORA_VEIL",
       "MOVE_MIRROR_COAT",
       "MOVE_MIST"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "AVALUGG_HISUI": {
@@ -68641,12 +67513,7 @@
     "EggMoves": [
       "MOVE_DEFOG",
       "MOVE_DRAGON_RUSH",
-<<<<<<< HEAD
       "MOVE_SWITCHEROO"
-=======
-      "MOVE_SWITCHEROO",
-      "MOVE_DEFOG"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -69442,12 +68309,7 @@
       "MOVE_DEFOG",
       "MOVE_DOUBLE_TEAM",
       "MOVE_KNOCK_OFF",
-<<<<<<< HEAD
       "MOVE_ROOST"
-=======
-      "MOVE_ROOST",
-      "MOVE_DEFOG"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -69554,7 +68416,6 @@
       "MOVE_LIGHT_SCREEN",
       "MOVE_FEATHER_DANCE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_CONFUSE_RAY",
       "MOVE_DEFOG",
@@ -69562,9 +68423,6 @@
       "MOVE_KNOCK_OFF",
       "MOVE_ROOST"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "DECIDUEYE": {
@@ -70958,12 +69816,8 @@
       "MOVE_ENDEAVOR",
       "MOVE_FIRE_FANG",
       "MOVE_ICE_FANG",
-<<<<<<< HEAD
       "MOVE_LAST_RESORT",
       "MOVE_THUNDER_FANG"
-=======
-      "MOVE_FIRE_FANG"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -71079,7 +69933,6 @@
       "MOVE_ENDEAVOR",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ENDEAVOR",
       "MOVE_FIRE_FANG",
@@ -71087,9 +69940,6 @@
       "MOVE_LAST_RESORT",
       "MOVE_THUNDER_FANG"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "GRUBBIN": {
@@ -71169,13 +70019,8 @@
       "MOVE_SKITTER_SMACK"
     ],
     "EggMoves": [
-<<<<<<< HEAD
       "MOVE_DISCHARGE",
       "MOVE_HARDEN"
-=======
-      "MOVE_HARDEN",
-      "MOVE_DISCHARGE"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -71271,14 +70116,10 @@
       "MOVE_ELECTROWEB",
       "MOVE_SKITTER_SMACK"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DISCHARGE",
       "MOVE_HARDEN"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "VIKAVOLT": {
@@ -71417,14 +70258,10 @@
       "MOVE_ELECTROWEB",
       "MOVE_SKITTER_SMACK"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DISCHARGE",
       "MOVE_HARDEN"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "CRABRAWLER": {
@@ -71648,16 +70485,12 @@
       "MOVE_HARD_PRESS",
       "MOVE_UPPER_HAND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ENDEAVOR",
       "MOVE_FOCUS_PUNCH",
       "MOVE_SUPERPOWER",
       "MOVE_WIDE_GUARD"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "ORICORIO": {
@@ -71763,13 +70596,9 @@
     "EggMoves": [
       "MOVE_ATTRACT",
       "MOVE_DEFOG",
-<<<<<<< HEAD
       "MOVE_PLUCK",
       "MOVE_QUIVER_DANCE",
       "MOVE_SAFEGUARD"
-=======
-      "MOVE_QUIVER_DANCE"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -71865,11 +70694,7 @@
     "EggMoves": [
       "MOVE_AROMATIC_MIST",
       "MOVE_MOONBLAST",
-<<<<<<< HEAD
       "MOVE_STICKY_WEB"
-=======
-      "MOVE_AROMATIC_MIST"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -71976,15 +70801,11 @@
       "MOVE_ALLURING_VOICE",
       "MOVE_PSYCHIC_NOISE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AROMATIC_MIST",
       "MOVE_MOONBLAST",
       "MOVE_STICKY_WEB"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "ROCKRUFF": {
@@ -72604,13 +71425,8 @@
       "MOVE_HAZE",
       "MOVE_INFESTATION",
       "MOVE_SPIT_UP",
-<<<<<<< HEAD
       "MOVE_STOCKPILE",
       "MOVE_SWALLOW"
-=======
-      "MOVE_SWALLOW",
-      "MOVE_INFESTATION"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -72710,7 +71526,6 @@
       "MOVE_MUDDY_WATER",
       "MOVE_SLUDGE_WAVE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_HAZE",
       "MOVE_INFESTATION",
@@ -72718,9 +71533,6 @@
       "MOVE_STOCKPILE",
       "MOVE_SWALLOW"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "MUDBRAY": {
@@ -72921,7 +71733,6 @@
       "MOVE_ENDEAVOR",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
@@ -72929,9 +71740,6 @@
       "MOVE_ROAR",
       "MOVE_SMACK_DOWN"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "DEWPIDER": {
@@ -73229,11 +72037,7 @@
     "EggMoves": [
       "MOVE_DEFOG",
       "MOVE_WORRY_SEED",
-<<<<<<< HEAD
       "MOVE_SUPERPOWER"
-=======
-      "MOVE_DEFOG"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -73472,12 +72276,8 @@
     "EggMoves": [
       "MOVE_BELCH",
       "MOVE_FAKE_OUT",
-<<<<<<< HEAD
       "MOVE_MUD_SLAP",
       "MOVE_SAND_ATTACK"
-=======
-      "MOVE_BELCH"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -73626,7 +72426,6 @@
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BELCH",
       "MOVE_FAKE_OUT",
@@ -73646,8 +72445,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -73726,11 +72523,7 @@
     "EggMoves": [
       "MOVE_ACUPRESSURE",
       "MOVE_ENDEAVOR",
-<<<<<<< HEAD
       "MOVE_SYNTHESIS"
-=======
-      "MOVE_ACUPRESSURE"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -73818,15 +72611,11 @@
       "MOVE_PETAL_BLIZZARD",
       "MOVE_TRIPLE_AXEL"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ACUPRESSURE",
       "MOVE_ENDEAVOR",
       "MOVE_SYNTHESIS"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "TSAREENA": {
@@ -73937,15 +72726,11 @@
       "MOVE_PETAL_BLIZZARD",
       "MOVE_TRIPLE_AXEL"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ACUPRESSURE",
       "MOVE_ENDEAVOR",
       "MOVE_SYNTHESIS"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "COMFEY": {
@@ -74196,12 +72981,8 @@
     "EggMoves": [
       "MOVE_DREAM_EATER",
       "MOVE_EXTRASENSORY",
-<<<<<<< HEAD
       "MOVE_LAST_RESORT",
       "MOVE_YAWN"
-=======
-      "MOVE_LAST_RESORT"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -74322,7 +73103,6 @@
     "EggMoves": [
       "MOVE_COUNTER",
       "MOVE_FEINT",
-<<<<<<< HEAD
       "MOVE_KNOCK_OFF",
       "MOVE_QUICK_ATTACK",
       "MOVE_QUICK_GUARD",
@@ -74343,11 +73123,6 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
-=======
-      "MOVE_QUICK_GUARD"
-    ],
-    "TutorMoves": []
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
   },
   "SANDYGAST": {
     "LevelMoves": [
@@ -74572,7 +73347,6 @@
       "MOVE_SCORCHING_SANDS",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ANCIENT_POWER",
       "MOVE_CURSE",
@@ -74601,8 +73375,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -74821,7 +73593,6 @@
       "MOVE_PLAY_ROUGH",
       "MOVE_SING",
       "MOVE_SUPERPOWER",
-<<<<<<< HEAD
       "MOVE_WISH"
     ],
     "TutorMoves": []
@@ -74839,11 +73610,6 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
-=======
-      "MOVE_PLAY_ROUGH"
-    ],
-    "TutorMoves": []
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
   },
   "MIMIKYU": {
     "LevelMoves": [
@@ -75064,7 +73830,6 @@
     "EggMoves": [
       "MOVE_ICE_FANG",
       "MOVE_POISON_FANG",
-<<<<<<< HEAD
       "MOVE_SUPER_FANG",
       "MOVE_WATER_PULSE"
     ],
@@ -75083,12 +73848,6 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
-=======
-      "MOVE_WATER_PULSE",
-      "MOVE_ICE_FANG"
-    ],
-    "TutorMoves": []
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
   },
   "JANGMO_O": {
     "LevelMoves": [
@@ -75304,15 +74063,11 @@
       "MOVE_DRAGON_CHEER",
       "MOVE_UPPER_HAND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COUNTER",
       "MOVE_DRAGON_BREATH",
       "MOVE_FOCUS_PUNCH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "KOMMO_O": {
@@ -75461,7 +74216,6 @@
       "MOVE_DRAGON_CHEER",
       "MOVE_UPPER_HAND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COUNTER",
       "MOVE_DRAGON_BREATH",
@@ -75494,8 +74248,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -75792,7 +74544,6 @@
     ],
     "EggMoves": [],
     "TutorMoves": []
-<<<<<<< HEAD
   },
   "NIHILEGO": {
     "LevelMoves": [],
@@ -75842,8 +74593,6 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
   },
   "NECROZMA": {
     "LevelMoves": [
@@ -76116,7 +74865,6 @@
     ],
     "EggMoves": [],
     "TutorMoves": []
-<<<<<<< HEAD
   },
   "MARSHADOW": {
     "LevelMoves": [],
@@ -76173,8 +74921,6 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
   },
   "GROOKEY": {
     "LevelMoves": [
@@ -76364,7 +75110,6 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_FAKE_OUT",
       "MOVE_GROWTH",
@@ -76373,9 +75118,6 @@
       "MOVE_STRENGTH",
       "MOVE_WORRY_SEED"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "RILLABOOM": {
@@ -76503,7 +75245,6 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_FAKE_OUT",
       "MOVE_GROWTH",
@@ -76512,9 +75253,6 @@
       "MOVE_STRENGTH",
       "MOVE_WORRY_SEED"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "SCORBUNNY": {
@@ -76604,14 +75342,8 @@
     ],
     "EggMoves": [
       "MOVE_SAND_ATTACK",
-<<<<<<< HEAD
       "MOVE_SUCKER_PUNCH",
       "MOVE_SUPER_FANG"
-=======
-      "MOVE_HIGH_JUMP_KICK",
-      "MOVE_SUPER_FANG",
-      "MOVE_SUCKER_PUNCH"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -76704,16 +75436,12 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_TEMPER_FLARE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_HI_JUMP_KICK",
       "MOVE_SAND_ATTACK",
       "MOVE_SUCKER_PUNCH",
       "MOVE_SUPER_FANG"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "CINDERACE": {
@@ -76832,16 +75560,12 @@
       "MOVE_COACHING",
       "MOVE_SCORCHING_SANDS"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_HI_JUMP_KICK",
       "MOVE_SAND_ATTACK",
       "MOVE_SUCKER_PUNCH",
       "MOVE_SUPER_FANG"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "SOBBLE": {
@@ -76921,16 +75645,12 @@
     ],
     "EggMoves": [
       "MOVE_AQUA_JET",
-<<<<<<< HEAD
       "MOVE_AQUA_RING",
       "MOVE_DOUBLE_TEAM",
       "MOVE_FELL_STINGER",
       "MOVE_HAZE",
       "MOVE_ICE_SHARD",
       "MOVE_MIST"
-=======
-      "MOVE_FELL_STINGER"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -77011,7 +75731,6 @@
       "MOVE_WHIRLPOOL",
       "MOVE_MUDDY_WATER"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AQUA_JET",
       "MOVE_AQUA_RING",
@@ -77021,9 +75740,6 @@
       "MOVE_ICE_SHARD",
       "MOVE_MIST"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "INTELEON": {
@@ -77139,7 +75855,6 @@
       "MOVE_SKITTER_SMACK",
       "MOVE_BREAKING_SWIPE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AQUA_JET",
       "MOVE_AQUA_RING",
@@ -77149,9 +75864,6 @@
       "MOVE_ICE_SHARD",
       "MOVE_MIST"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "SKWOVET": {
@@ -77239,14 +75951,9 @@
     ],
     "EggMoves": [
       "MOVE_BELLY_DRUM",
-<<<<<<< HEAD
       "MOVE_DEFENSE_CURL",
       "MOVE_LAST_RESORT",
       "MOVE_ROLLOUT"
-=======
-      "MOVE_ROLLOUT",
-      "MOVE_LAST_RESORT"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -77353,16 +76060,12 @@
       "MOVE_ENDEAVOR",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BELLY_DRUM",
       "MOVE_DEFENSE_CURL",
       "MOVE_LAST_RESORT",
       "MOVE_ROLLOUT"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "ROOKIDEE": {
@@ -77447,14 +76150,7 @@
       "MOVE_SAND_ATTACK",
       "MOVE_SKY_ATTACK",
       "MOVE_SPITE",
-<<<<<<< HEAD
       "MOVE_TAILWIND"
-=======
-      "MOVE_ROCK_SMASH",
-      "MOVE_ROOST",
-      "MOVE_TAILWIND",
-      "MOVE_DEFOG"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -77535,7 +76231,6 @@
       "MOVE_SPITE",
       "MOVE_DUAL_WINGBEAT"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DEFOG",
       "MOVE_ROCK_SMASH",
@@ -77545,9 +76240,6 @@
       "MOVE_SPITE",
       "MOVE_TAILWIND"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "CORVIKNIGHT": {
@@ -77660,7 +76352,6 @@
       "MOVE_METAL_SOUND",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DEFOG",
       "MOVE_ROCK_SMASH",
@@ -77732,8 +76423,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -77808,12 +76497,7 @@
     "EggMoves": [
       "MOVE_DRAGON_TAIL",
       "MOVE_GASTRO_ACID",
-<<<<<<< HEAD
       "MOVE_SHELL_SMASH"
-=======
-      "MOVE_SHELL_SMASH",
-      "MOVE_DRAGON_TAIL"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -77931,7 +76615,6 @@
       "MOVE_METEOR_BEAM",
       "MOVE_THROAT_CHOP"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DRAGON_TAIL",
       "MOVE_GASTRO_ACID",
@@ -77950,8 +76633,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -78035,12 +76716,7 @@
     "EggMoves": [
       "MOVE_BLOCK",
       "MOVE_EXPLOSION",
-<<<<<<< HEAD
       "MOVE_MUD_SLAP"
-=======
-      "MOVE_MUD_SLAP",
-      "MOVE_BLOCK"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -78141,15 +76817,11 @@
       "MOVE_METEOR_BEAM",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BLOCK",
       "MOVE_EXPLOSION",
       "MOVE_MUD_SLAP"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "COALOSSAL": {
@@ -78260,15 +76932,11 @@
       "MOVE_METEOR_BEAM",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BLOCK",
       "MOVE_EXPLOSION",
       "MOVE_MUD_SLAP"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "APPLIN": {
@@ -78407,16 +77075,12 @@
       "MOVE_DUAL_WINGBEAT",
       "MOVE_ENDEAVOR"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DEFENSE_CURL",
       "MOVE_RECYCLE",
       "MOVE_ROLLOUT",
       "MOVE_SUCKER_PUNCH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "APPLETUN": {
@@ -78537,16 +77201,12 @@
       "MOVE_GRASSY_GLIDE",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DEFENSE_CURL",
       "MOVE_RECYCLE",
       "MOVE_ROLLOUT",
       "MOVE_SUCKER_PUNCH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "SILICOBRA": {
@@ -78634,13 +77294,9 @@
     "EggMoves": [
       "MOVE_BELCH",
       "MOVE_DRAGON_RUSH",
-<<<<<<< HEAD
       "MOVE_LAST_RESORT",
       "MOVE_MUD_SLAP",
       "MOVE_POISON_TAIL"
-=======
-      "MOVE_BELCH"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -78738,7 +77394,6 @@
       "MOVE_SCORCHING_SANDS",
       "MOVE_SKITTER_SMACK"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BELCH",
       "MOVE_DRAGON_RUSH",
@@ -78746,9 +77401,6 @@
       "MOVE_MUD_SLAP",
       "MOVE_POISON_TAIL"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "CRAMORANT": {
@@ -78855,12 +77507,8 @@
       "MOVE_AQUA_CUTTER",
       "MOVE_AQUA_RING",
       "MOVE_DEFOG",
-<<<<<<< HEAD
       "MOVE_FEATHER_DANCE",
       "MOVE_ROOST"
-=======
-      "MOVE_AQUA_CUTTER"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -78940,13 +77588,9 @@
     ],
     "EggMoves": [
       "MOVE_ACUPRESSURE",
-<<<<<<< HEAD
       "MOVE_NIGHT_SLASH",
       "MOVE_SLASH",
       "MOVE_THRASH"
-=======
-      "MOVE_NIGHT_SLASH"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -79034,16 +77678,12 @@
       "MOVE_WHIRLPOOL",
       "MOVE_THROAT_CHOP"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ACUPRESSURE",
       "MOVE_NIGHT_SLASH",
       "MOVE_SLASH",
       "MOVE_THRASH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "TOXEL": {
@@ -79628,13 +78268,9 @@
       "MOVE_PAIN_SPLIT",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ALLY_SWITCH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "HATENNA": {
@@ -79726,12 +78362,8 @@
     "EggMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_MYSTICAL_FIRE",
-<<<<<<< HEAD
       "MOVE_NUZZLE",
       "MOVE_QUASH"
-=======
-      "MOVE_NUZZLE"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -79825,16 +78457,12 @@
       "MOVE_FUTURE_SIGHT",
       "MOVE_EXPANDING_FORCE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_MYSTICAL_FIRE",
       "MOVE_NUZZLE",
       "MOVE_QUASH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "HATTERENE": {
@@ -79945,16 +78573,12 @@
       "MOVE_EXPANDING_FORCE",
       "MOVE_PSYCHIC_NOISE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_MYSTICAL_FIRE",
       "MOVE_NUZZLE",
       "MOVE_QUASH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "IMPIDIMP": {
@@ -80150,13 +78774,9 @@
       "MOVE_LASH_OUT",
       "MOVE_THROAT_CHOP"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_PARTING_SHOT"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "GRIMMSNARL": {
@@ -80282,7 +78902,6 @@
       "MOVE_LASH_OUT",
       "MOVE_THROAT_CHOP"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_PARTING_SHOT"
     ],
@@ -80292,8 +78911,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -80427,7 +79044,6 @@
       "MOVE_METAL_SOUND",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COVET",
       "MOVE_CURSE",
@@ -80449,8 +79065,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -80621,14 +79235,10 @@
       "MOVE_ENDEAVOR",
       "MOVE_ALLURING_VOICE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BABY_DOLL_EYES",
       "MOVE_LAST_RESORT"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "FALINKS": {
@@ -80872,12 +79482,8 @@
     ],
     "EggMoves": [
       "MOVE_BUG_BITE",
-<<<<<<< HEAD
       "MOVE_FAIRY_WIND",
       "MOVE_MIRROR_COAT"
-=======
-      "MOVE_FAIRY_WIND"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -81000,15 +79606,11 @@
       "MOVE_FEATHER_DANCE",
       "MOVE_SKITTER_SMACK"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BUG_BITE",
       "MOVE_FAIRY_WIND",
       "MOVE_MIRROR_COAT"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "STONJOURNER": {
@@ -81109,13 +79711,8 @@
       "MOVE_HARD_PRESS"
     ],
     "EggMoves": [
-<<<<<<< HEAD
       "MOVE_ANCIENT_POWER",
       "MOVE_CURSE"
-=======
-      "MOVE_CURSE",
-      "MOVE_ANCIENT_POWER"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -81216,13 +79813,8 @@
       "MOVE_BELLY_DRUM",
       "MOVE_DOUBLE_EDGE",
       "MOVE_HEAD_SMASH",
-<<<<<<< HEAD
       "MOVE_ICICLE_CRASH",
       "MOVE_SOAK"
-=======
-      "MOVE_SOAK",
-      "MOVE_ICICLE_CRASH"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -81324,11 +79916,7 @@
     "EggMoves": [
       "MOVE_EXTRASENSORY",
       "MOVE_FAKE_OUT",
-<<<<<<< HEAD
       "MOVE_PSYCH_UP"
-=======
-      "MOVE_EXTRASENSORY"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -81551,16 +80139,7 @@
       "MOVE_RAPID_SPIN",
       "MOVE_SUPER_FANG",
       "MOVE_SWAGGER",
-<<<<<<< HEAD
       "MOVE_TICKLE"
-=======
-      "MOVE_RAPID_SPIN",
-      "MOVE_FAKE_OUT",
-      "MOVE_CHARGE",
-      "MOVE_TICKLE",
-      "MOVE_QUASH",
-      "MOVE_PARTING_SHOT"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -81665,11 +80244,7 @@
       "MOVE_FISSURE",
       "MOVE_SLAM",
       "MOVE_SWAGGER",
-<<<<<<< HEAD
       "MOVE_WHIRLWIND"
-=======
-      "MOVE_BELCH"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -81780,7 +80355,6 @@
       "MOVE_CURSE",
       "MOVE_HARD_PRESS"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BELCH",
       "MOVE_CURSE",
@@ -81818,8 +80392,6 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-=======
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -81973,15 +80545,10 @@
     "EggMoves": [
       "MOVE_CONFUSE_RAY",
       "MOVE_CURSE",
-<<<<<<< HEAD
       "MOVE_DISABLE",
       "MOVE_DOUBLE_TEAM",
       "MOVE_DRAGON_TAIL",
       "MOVE_SUCKER_PUNCH"
-=======
-      "MOVE_SUCKER_PUNCH",
-      "MOVE_DRAGON_TAIL"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -82101,7 +80668,6 @@
       "MOVE_CURSE",
       "MOVE_DRAGON_CHEER"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_CONFUSE_RAY",
       "MOVE_CURSE",
@@ -82110,9 +80676,6 @@
       "MOVE_DRAGON_TAIL",
       "MOVE_SUCKER_PUNCH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "DRAGAPULT": {
@@ -82241,7 +80804,6 @@
       "MOVE_CURSE",
       "MOVE_DRAGON_CHEER"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_CONFUSE_RAY",
       "MOVE_CURSE",
@@ -82250,9 +80812,6 @@
       "MOVE_DRAGON_TAIL",
       "MOVE_SUCKER_PUNCH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "ZACIAN": {
@@ -84126,7 +82685,6 @@
       "MOVE_CURSE",
       "MOVE_PSYCHIC_NOISE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BITE",
       "MOVE_DISABLE",
@@ -84137,9 +82695,6 @@
       "MOVE_SPITE",
       "MOVE_THRASH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "KLEAVOR": {
@@ -84252,7 +82807,6 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_SKITTER_SMACK"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COUNTER",
       "MOVE_DEFOG",
@@ -84260,9 +82814,6 @@
       "MOVE_NIGHT_SLASH",
       "MOVE_QUICK_GUARD"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "URSALUNA": {
@@ -84404,7 +82955,6 @@
       "MOVE_CURSE",
       "MOVE_HARD_PRESS"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BELLY_DRUM",
       "MOVE_CLOSE_COMBAT",
@@ -84419,9 +82969,6 @@
       "MOVE_SEISMIC_TOSS",
       "MOVE_YAWN"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "URSALUNA_BLOODMOON": {
@@ -84805,7 +83352,6 @@
       "MOVE_THROAT_CHOP",
       "MOVE_UPPER_HAND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COUNTER",
       "MOVE_DOUBLE_HIT",
@@ -84815,9 +83361,6 @@
       "MOVE_QUICK_GUARD",
       "MOVE_SWITCHEROO"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "OVERQWIL": {
@@ -84945,7 +83488,6 @@
       "MOVE_THROAT_CHOP",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ACID_SPRAY",
       "MOVE_AQUA_JET",
@@ -84958,9 +83500,6 @@
       "MOVE_SUPERSONIC",
       "MOVE_WATER_PULSE"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "ENAMORUS": {
@@ -85174,14 +83713,10 @@
     ],
     "EggMoves": [
       "MOVE_ALLY_SWITCH",
-<<<<<<< HEAD
       "MOVE_COPYCAT",
       "MOVE_LEECH_SEED",
       "MOVE_PETAL_BLIZZARD",
       "MOVE_SUCKER_PUNCH"
-=======
-      "MOVE_PETAL_BLIZZARD"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -85286,7 +83821,6 @@
       "MOVE_GRASSY_GLIDE",
       "MOVE_PETAL_BLIZZARD"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ALLY_SWITCH",
       "MOVE_COPYCAT",
@@ -85294,9 +83828,6 @@
       "MOVE_PETAL_BLIZZARD",
       "MOVE_SUCKER_PUNCH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "MEOWSCARADA": {
@@ -85449,7 +83980,6 @@
       "MOVE_TRIPLE_AXEL",
       "MOVE_THROAT_CHOP"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ALLY_SWITCH",
       "MOVE_COPYCAT",
@@ -85457,9 +83987,6 @@
       "MOVE_PETAL_BLIZZARD",
       "MOVE_SUCKER_PUNCH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "FUECOCO": {
@@ -85556,12 +84083,7 @@
       "MOVE_BELCH",
       "MOVE_CURSE",
       "MOVE_ENCORE",
-<<<<<<< HEAD
       "MOVE_SLACK_OFF"
-=======
-      "MOVE_SLACK_OFF",
-      "MOVE_BELCH"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -85663,16 +84185,12 @@
       "MOVE_TEMPER_FLARE",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BELCH",
       "MOVE_CURSE",
       "MOVE_ENCORE",
       "MOVE_SLACK_OFF"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "SKELEDIRGE": {
@@ -85816,16 +84334,12 @@
       "MOVE_CURSE",
       "MOVE_ALLURING_VOICE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BELCH",
       "MOVE_CURSE",
       "MOVE_ENCORE",
       "MOVE_SLACK_OFF"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "QUAXLY": {
@@ -85914,12 +84428,7 @@
       "MOVE_DETECT",
       "MOVE_LAST_RESORT",
       "MOVE_RAPID_SPIN",
-<<<<<<< HEAD
       "MOVE_ROOST"
-=======
-      "MOVE_ROOST",
-      "MOVE_LAST_RESORT"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -86022,16 +84531,12 @@
       "MOVE_TRIPLE_AXEL",
       "MOVE_FEATHER_DANCE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DETECT",
       "MOVE_LAST_RESORT",
       "MOVE_RAPID_SPIN",
       "MOVE_ROOST"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "QUAQUAVAL": {
@@ -86174,16 +84679,12 @@
       "MOVE_FEATHER_DANCE",
       "MOVE_UPPER_HAND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DETECT",
       "MOVE_LAST_RESORT",
       "MOVE_RAPID_SPIN",
       "MOVE_ROOST"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "LECHONK": {
@@ -86277,14 +84778,10 @@
     ],
     "EggMoves": [
       "MOVE_ENDEAVOR",
-<<<<<<< HEAD
       "MOVE_SPIT_UP",
       "MOVE_STOCKPILE",
       "MOVE_STUFF_CHEEKS",
       "MOVE_SWALLOW"
-=======
-      "MOVE_STUFF_CHEEKS"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -86332,7 +84829,6 @@
       "MOVE_ENDEAVOR",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ENDEAVOR",
       "MOVE_SPIT_UP",
@@ -86340,9 +84836,6 @@
       "MOVE_STUFF_CHEEKS",
       "MOVE_SWALLOW"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "OINKOLOGNE_M": {
@@ -86576,13 +85069,9 @@
     ],
     "EggMoves": [
       "MOVE_FIRST_IMPRESSION",
-<<<<<<< HEAD
       "MOVE_LUNGE",
       "MOVE_MEMENTO",
       "MOVE_SUCKER_PUNCH"
-=======
-      "MOVE_LUNGE"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -86696,16 +85185,12 @@
       "MOVE_THROAT_CHOP",
       "MOVE_UPPER_HAND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_FIRST_IMPRESSION",
       "MOVE_LUNGE",
       "MOVE_MEMENTO",
       "MOVE_SUCKER_PUNCH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "NYMBLE": {
@@ -86913,14 +85398,10 @@
       "MOVE_SKITTER_SMACK",
       "MOVE_THROAT_CHOP"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COUNTER",
       "MOVE_SKITTER_SMACK"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "PAWMI": {
@@ -87144,16 +85625,12 @@
       "MOVE_COACHING",
       "MOVE_UPPER_HAND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_FAKE_OUT",
       "MOVE_MACH_PUNCH",
       "MOVE_SWEET_KISS",
       "MOVE_WISH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "PAWMOT": {
@@ -87296,16 +85773,12 @@
       "MOVE_THROAT_CHOP",
       "MOVE_UPPER_HAND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_FAKE_OUT",
       "MOVE_MACH_PUNCH",
       "MOVE_SWEET_KISS",
       "MOVE_WISH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "TANDEMAUS": {
@@ -87413,11 +85886,7 @@
       "MOVE_BITE",
       "MOVE_FEINT",
       "MOVE_SWITCHEROO",
-<<<<<<< HEAD
       "MOVE_TICKLE"
-=======
-      "MOVE_AFTER_YOU"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -87532,7 +86001,6 @@
       "MOVE_BATON_PASS",
       "MOVE_DOUBLE_EDGE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_BATON_PASS",
@@ -87541,9 +86009,6 @@
       "MOVE_SWITCHEROO",
       "MOVE_TICKLE"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "FIDOUGH": {
@@ -87651,13 +86116,7 @@
       "MOVE_HOWL",
       "MOVE_SWEET_SCENT",
       "MOVE_WISH",
-<<<<<<< HEAD
       "MOVE_YAWN"
-=======
-      "MOVE_YAWN",
-      "MOVE_HOWL",
-      "MOVE_COPYCAT"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -87766,7 +86225,6 @@
       "MOVE_ENDEAVOR",
       "MOVE_ALLURING_VOICE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COPYCAT",
       "MOVE_HOWL",
@@ -87774,9 +86232,6 @@
       "MOVE_WISH",
       "MOVE_YAWN"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "SMOLIV": {
@@ -87863,14 +86318,9 @@
     ],
     "EggMoves": [
       "MOVE_MEMENTO",
-<<<<<<< HEAD
       "MOVE_STRENGTH_SAP",
       "MOVE_SYNTHESIS",
       "MOVE_WEATHER_BALL"
-=======
-      "MOVE_WEATHER_BALL",
-      "MOVE_STRENGTH_SAP"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -87956,16 +86406,12 @@
       "MOVE_SOLAR_BLADE",
       "MOVE_WEATHER_BALL"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_MEMENTO",
       "MOVE_STRENGTH_SAP",
       "MOVE_SYNTHESIS",
       "MOVE_WEATHER_BALL"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "ARBOLIVA": {
@@ -88079,16 +86525,12 @@
       "MOVE_PETAL_BLIZZARD",
       "MOVE_ALLURING_VOICE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_MEMENTO",
       "MOVE_STRENGTH_SAP",
       "MOVE_SYNTHESIS",
       "MOVE_WEATHER_BALL"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "SQUAWKABILLY": {
@@ -88406,16 +86848,12 @@
       "MOVE_METEOR_BEAM",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ANCIENT_POWER",
       "MOVE_CURSE",
       "MOVE_FISSURE",
       "MOVE_POWER_GEM"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "GARGANACL": {
@@ -88546,16 +86984,12 @@
       "MOVE_CURSE",
       "MOVE_HARD_PRESS"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ANCIENT_POWER",
       "MOVE_CURSE",
       "MOVE_FISSURE",
       "MOVE_POWER_GEM"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "CHARCADET": {
@@ -88628,12 +87062,7 @@
     "EggMoves": [
       "MOVE_DESTINY_BOND",
       "MOVE_DISABLE",
-<<<<<<< HEAD
       "MOVE_SPITE"
-=======
-      "MOVE_SPITE",
-      "MOVE_DESTINY_BOND"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -88763,15 +87192,11 @@
       "MOVE_EXPANDING_FORCE",
       "MOVE_METEOR_BEAM"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DESTINY_BOND",
       "MOVE_DISABLE",
       "MOVE_SPITE"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "CERULEDGE": {
@@ -88911,15 +87336,11 @@
       "MOVE_THROAT_CHOP",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DESTINY_BOND",
       "MOVE_DISABLE",
       "MOVE_SPITE"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "TADBULB": {
@@ -89012,13 +87433,8 @@
     ],
     "EggMoves": [
       "MOVE_MUDDY_WATER",
-<<<<<<< HEAD
       "MOVE_PARABOLIC_CHARGE",
       "MOVE_SOAK"
-=======
-      "MOVE_SOAK",
-      "MOVE_PARABOLIC_CHARGE"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -89118,15 +87534,11 @@
       "MOVE_SUPERCELL_SLAM",
       "MOVE_ELECTROWEB"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_MUDDY_WATER",
       "MOVE_PARABOLIC_CHARGE",
       "MOVE_SOAK"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "WATTREL": {
@@ -89329,7 +87741,6 @@
       "MOVE_ELECTROWEB",
       "MOVE_FEATHER_DANCE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ENDEAVOR",
       "MOVE_FEATHER_DANCE",
@@ -89338,9 +87749,6 @@
       "MOVE_SWALLOW",
       "MOVE_WEATHER_BALL"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "MASCHIFF": {
@@ -89444,13 +87852,8 @@
     "EggMoves": [
       "MOVE_DESTINY_BOND",
       "MOVE_ENDEAVOR",
-<<<<<<< HEAD
       "MOVE_PLAY_ROUGH",
       "MOVE_RETALIATE"
-=======
-      "MOVE_RETALIATE",
-      "MOVE_PLAY_ROUGH"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -89568,16 +87971,12 @@
       "MOVE_ENDEAVOR",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DESTINY_BOND",
       "MOVE_ENDEAVOR",
       "MOVE_PLAY_ROUGH",
       "MOVE_RETALIATE"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "SHROODLE": {
@@ -89690,14 +88089,10 @@
     "EggMoves": [
       "MOVE_COPYCAT",
       "MOVE_CROSS_POISON",
-<<<<<<< HEAD
       "MOVE_PARTING_SHOT",
       "MOVE_SUPER_FANG",
       "MOVE_SWAGGER",
       "MOVE_TOXIC"
-=======
-      "MOVE_PARTING_SHOT"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -89817,7 +88212,6 @@
       "MOVE_SKITTER_SMACK",
       "MOVE_THROAT_CHOP"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COPYCAT",
       "MOVE_CROSS_POISON",
@@ -89826,9 +88220,6 @@
       "MOVE_SWAGGER",
       "MOVE_TOXIC"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "BRAMBLIN": {
@@ -90035,7 +88426,6 @@
       "MOVE_SKITTER_SMACK",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BEAT_UP",
       "MOVE_BLOCK",
@@ -90043,9 +88433,6 @@
       "MOVE_SHADOW_SNEAK",
       "MOVE_STRENGTH_SAP"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "TOEDSCOOL": {
@@ -90165,7 +88552,6 @@
     ],
     "EggMoves": [
       "MOVE_ACUPRESSURE",
-<<<<<<< HEAD
       "MOVE_KNOCK_OFF",
       "MOVE_LEECH_SEED",
       "MOVE_MIRROR_COAT",
@@ -90173,9 +88559,6 @@
       "MOVE_RAPID_SPIN",
       "MOVE_TICKLE",
       "MOVE_TOXIC"
-=======
-      "MOVE_RAGE_POWDER"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -90301,7 +88684,6 @@
       "MOVE_PAIN_SPLIT",
       "MOVE_SKITTER_SMACK"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ACUPRESSURE",
       "MOVE_KNOCK_OFF",
@@ -90312,9 +88694,6 @@
       "MOVE_TICKLE",
       "MOVE_TOXIC"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "KLAWF": {
@@ -90431,14 +88810,9 @@
     ],
     "EggMoves": [
       "MOVE_ANCIENT_POWER",
-<<<<<<< HEAD
       "MOVE_CRABHAMMER",
       "MOVE_ENDEAVOR",
       "MOVE_KNOCK_OFF"
-=======
-      "MOVE_KNOCK_OFF",
-      "MOVE_ENDEAVOR"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -90526,15 +88900,10 @@
     ],
     "EggMoves": [
       "MOVE_INGRAIN",
-<<<<<<< HEAD
       "MOVE_LEECH_SEED",
       "MOVE_RAGE_POWDER",
       "MOVE_ROLLOUT",
       "MOVE_WORRY_SEED"
-=======
-      "MOVE_WORRY_SEED",
-      "MOVE_RAGE_POWDER"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -90651,7 +89020,6 @@
       "MOVE_ENDEAVOR",
       "MOVE_TEMPER_FLARE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_INGRAIN",
       "MOVE_LEECH_SEED",
@@ -90659,9 +89027,6 @@
       "MOVE_ROLLOUT",
       "MOVE_WORRY_SEED"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "RELLOR": {
@@ -90739,13 +89104,8 @@
     "EggMoves": [
       "MOVE_COSMIC_POWER",
       "MOVE_MEMENTO",
-<<<<<<< HEAD
       "MOVE_RECOVER",
       "MOVE_WEATHER_BALL"
-=======
-      "MOVE_WEATHER_BALL",
-      "MOVE_COSMIC_POWER"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -90891,16 +89251,12 @@
       "MOVE_SKITTER_SMACK",
       "MOVE_PSYCHIC_NOISE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_COSMIC_POWER",
       "MOVE_MEMENTO",
       "MOVE_RECOVER",
       "MOVE_WEATHER_BALL"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "FLITTLE": {
@@ -90988,12 +89344,7 @@
     "EggMoves": [
       "MOVE_ALLY_SWITCH",
       "MOVE_HYPNOSIS",
-<<<<<<< HEAD
       "MOVE_ROOST"
-=======
-      "MOVE_ROOST",
-      "MOVE_ALLY_SWITCH"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -91120,15 +89471,11 @@
       "MOVE_FEATHER_DANCE",
       "MOVE_EXPANDING_FORCE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ALLY_SWITCH",
       "MOVE_HYPNOSIS",
       "MOVE_ROOST"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "TINKATINK": {
@@ -91236,13 +89583,8 @@
     ],
     "EggMoves": [
       "MOVE_FEINT",
-<<<<<<< HEAD
       "MOVE_ICE_HAMMER",
       "MOVE_QUASH"
-=======
-      "MOVE_QUASH",
-      "MOVE_ICE_HAMMER"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -91350,15 +89692,11 @@
       "MOVE_SKITTER_SMACK",
       "MOVE_METAL_SOUND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_FEINT",
       "MOVE_ICE_HAMMER",
       "MOVE_QUASH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "TINKATON": {
@@ -91473,15 +89811,11 @@
       "MOVE_METAL_SOUND",
       "MOVE_HARD_PRESS"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_FEINT",
       "MOVE_ICE_HAMMER",
       "MOVE_QUASH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "WIGLETT": {
@@ -91569,13 +89903,8 @@
       "MOVE_THROAT_CHOP"
     ],
     "EggMoves": [
-<<<<<<< HEAD
       "MOVE_FINAL_GAMBIT",
       "MOVE_MEMENTO"
-=======
-      "MOVE_MEMENTO",
-      "MOVE_FINAL_GAMBIT"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -91670,14 +89999,10 @@
       "MOVE_MUDDY_WATER",
       "MOVE_THROAT_CHOP"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_FINAL_GAMBIT",
       "MOVE_MEMENTO"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "BOMBIRDIER": {
@@ -91800,13 +90125,8 @@
       "MOVE_FEATHER_DANCE",
       "MOVE_POWER_TRIP",
       "MOVE_ROOST",
-<<<<<<< HEAD
       "MOVE_SKY_ATTACK",
       "MOVE_SUCKER_PUNCH"
-=======
-      "MOVE_SUCKER_PUNCH",
-      "MOVE_POWER_TRIP"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -91904,13 +90224,7 @@
       "MOVE_BOUNCE",
       "MOVE_COUNTER",
       "MOVE_HAZE",
-<<<<<<< HEAD
       "MOVE_TICKLE"
-=======
-      "MOVE_TICKLE",
-      "MOVE_BOUNCE",
-      "MOVE_BOOMBURST"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -92039,7 +90353,6 @@
       "MOVE_THROAT_CHOP",
       "MOVE_HARD_PRESS"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BOOMBURST",
       "MOVE_BOUNCE",
@@ -92047,9 +90360,6 @@
       "MOVE_HAZE",
       "MOVE_TICKLE"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "VAROOM": {
@@ -92158,11 +90468,7 @@
       "MOVE_PARTING_SHOT",
       "MOVE_SELF_DESTRUCT",
       "MOVE_TORMENT",
-<<<<<<< HEAD
       "MOVE_TOXIC"
-=======
-      "MOVE_PARTING_SHOT"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -92284,7 +90590,6 @@
       "MOVE_CURSE",
       "MOVE_HARD_PRESS"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_HAZE",
       "MOVE_PARTING_SHOT",
@@ -92292,9 +90597,6 @@
       "MOVE_TORMENT",
       "MOVE_TOXIC"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "CYCLIZAR": {
@@ -92514,12 +90816,7 @@
     "EggMoves": [
       "MOVE_COIL",
       "MOVE_CURSE",
-<<<<<<< HEAD
       "MOVE_METAL_BURST"
-=======
-      "MOVE_METAL_BURST",
-      "MOVE_COIL"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -92620,12 +90917,8 @@
     ],
     "EggMoves": [
       "MOVE_EXPLOSION",
-<<<<<<< HEAD
       "MOVE_MEMENTO",
       "MOVE_TOXIC"
-=======
-      "MOVE_MEMENTO"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -92742,15 +91035,11 @@
       "MOVE_SLUDGE_WAVE",
       "MOVE_METEOR_BEAM"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_EXPLOSION",
       "MOVE_MEMENTO",
       "MOVE_TOXIC"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "GREAVARD": {
@@ -92865,11 +91154,7 @@
       "MOVE_HOWL",
       "MOVE_MEMENTO",
       "MOVE_SHADOW_SNEAK",
-<<<<<<< HEAD
       "MOVE_YAWN"
-=======
-      "MOVE_ALLY_SWITCH"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -92986,7 +91271,6 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ALLY_SWITCH",
       "MOVE_DESTINY_BOND",
@@ -92996,9 +91280,6 @@
       "MOVE_SHADOW_SNEAK",
       "MOVE_YAWN"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "FLAMIGO": {
@@ -93109,13 +91390,8 @@
     ],
     "EggMoves": [
       "MOVE_DOUBLE_TEAM",
-<<<<<<< HEAD
       "MOVE_QUICK_GUARD",
       "MOVE_SKY_ATTACK"
-=======
-      "MOVE_SKY_ATTACK",
-      "MOVE_QUICK_GUARD"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -93224,13 +91500,9 @@
     "EggMoves": [
       "MOVE_BELLY_DRUM",
       "MOVE_ENTRAINMENT",
-<<<<<<< HEAD
       "MOVE_ICICLE_CRASH",
       "MOVE_SUPERPOWER",
       "MOVE_YAWN"
-=======
-      "MOVE_ICICLE_CRASH"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -93339,7 +91611,6 @@
       "MOVE_CURSE",
       "MOVE_HARD_PRESS"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BELLY_DRUM",
       "MOVE_ENTRAINMENT",
@@ -93347,9 +91618,6 @@
       "MOVE_SUPERPOWER",
       "MOVE_YAWN"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "VELUZA": {
@@ -93447,13 +91715,8 @@
       "MOVE_EXPANDING_FORCE"
     ],
     "EggMoves": [
-<<<<<<< HEAD
       "MOVE_RECOVER",
       "MOVE_THRASH"
-=======
-      "MOVE_THRASH",
-      "MOVE_RECOVER"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -93806,7 +92069,6 @@
       "MOVE_THROAT_CHOP",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_BEAT_UP",
       "MOVE_COUNTER",
@@ -93815,9 +92077,6 @@
       "MOVE_NIGHT_SLASH",
       "MOVE_SPITE"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "CLODSIRE": {
@@ -93931,7 +92190,6 @@
       "MOVE_SLUDGE_WAVE",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ACID_SPRAY",
       "MOVE_AFTER_YOU",
@@ -93946,9 +92204,6 @@
       "MOVE_STOCKPILE",
       "MOVE_SWALLOW"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "FARIGIRAF": {
@@ -94085,7 +92340,6 @@
       "MOVE_CURSE",
       "MOVE_PSYCHIC_NOISE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_ALLY_SWITCH",
       "MOVE_BEAT_UP",
@@ -94097,9 +92351,6 @@
       "MOVE_UPROAR",
       "MOVE_WISH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "DUDUNSPARCE": {
@@ -94250,7 +92501,6 @@
       "MOVE_BREAKING_SWIPE",
       "MOVE_CURSE"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AQUA_TAIL",
       "MOVE_ASTONISH",
@@ -94259,9 +92509,6 @@
       "MOVE_HEADBUTT",
       "MOVE_LAST_RESORT"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "KINGAMBIT": {
@@ -94385,16 +92632,12 @@
       "MOVE_THROAT_CHOP",
       "MOVE_METAL_SOUND"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_HEADBUTT",
       "MOVE_MEAN_LOOK",
       "MOVE_QUICK_GUARD",
       "MOVE_SUCKER_PUNCH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "GREAT_TUSK": {
@@ -96019,12 +94262,8 @@
     "EggMoves": [
       "MOVE_AQUA_TAIL",
       "MOVE_DRAGON_RUSH",
-<<<<<<< HEAD
       "MOVE_FREEZE_DRY",
       "MOVE_ICICLE_SPEAR"
-=======
-      "MOVE_FREEZE_DRY"
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     ],
     "TutorMoves": []
   },
@@ -96112,16 +94351,12 @@
       "MOVE_TERA_BLAST",
       "MOVE_ICICLE_SPEAR"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AQUA_TAIL",
       "MOVE_DRAGON_RUSH",
       "MOVE_FREEZE_DRY",
       "MOVE_ICICLE_SPEAR"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "BAXCALIBUR": {
@@ -96243,16 +94478,12 @@
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_AQUA_TAIL",
       "MOVE_DRAGON_RUSH",
       "MOVE_FREEZE_DRY",
       "MOVE_ICICLE_SPEAR"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "GIMMIGHOUL": {
@@ -97794,16 +96025,12 @@
       "MOVE_GRASSY_GLIDE",
       "MOVE_DRAGON_CHEER"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DEFENSE_CURL",
       "MOVE_RECYCLE",
       "MOVE_ROLLOUT",
       "MOVE_SUCKER_PUNCH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "POLTCHAGEIST": {
@@ -98581,15 +96808,11 @@
       "MOVE_HARD_PRESS",
       "MOVE_DRAGON_CHEER"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_MIRROR_COAT",
       "MOVE_NIGHT_SLASH",
       "MOVE_SLASH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "HYDRAPPLE": {
@@ -98717,16 +96940,12 @@
       "MOVE_CURSE",
       "MOVE_DRAGON_CHEER"
     ],
-<<<<<<< HEAD
     "EggMoves": [
       "MOVE_DEFENSE_CURL",
       "MOVE_RECYCLE",
       "MOVE_ROLLOUT",
       "MOVE_SUCKER_PUNCH"
     ],
-=======
-    "EggMoves": [],
->>>>>>> 89000e46fd (8/31/25 rebase fixes)
     "TutorMoves": []
   },
   "GOUGING_FIRE": {

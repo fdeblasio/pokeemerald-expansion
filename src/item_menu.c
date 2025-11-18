@@ -2766,30 +2766,27 @@ static const u8 sBagMenuSortBerriesTMs[] =
     ACTION_CANCEL,
 };
 
+#define SORT_INFO(sortType)                                                 \
+    gBagMenu->contextMenuItemsPtr = sortType;                               \
+    memcpy(&gBagMenu->contextMenuItemsBuffer, &sortType, NELEMS(sortType)); \
+    gBagMenu->contextMenuNumItems = NELEMS(sortType);
+
 static void AddBagSortSubMenu(void)
 {
     switch (gBagPosition.pocket)
     {
     case POCKET_KEY_ITEMS:
-        gBagMenu->contextMenuItemsPtr = sBagMenuSortKeyItems;
-        memcpy(&gBagMenu->contextMenuItemsBuffer, &sBagMenuSortKeyItems, NELEMS(sBagMenuSortKeyItems));
-        gBagMenu->contextMenuNumItems = NELEMS(sBagMenuSortKeyItems);
+    case POCKET_TM:
+        SORT_INFO(sBagMenuSortKeyItems)
         break;
     case POCKET_POKE_BALLS:
-        gBagMenu->contextMenuItemsPtr = sBagMenuSortPokeBalls;
-        memcpy(&gBagMenu->contextMenuItemsBuffer, &sBagMenuSortPokeBalls, NELEMS(sBagMenuSortPokeBalls));
-        gBagMenu->contextMenuNumItems = NELEMS(sBagMenuSortPokeBalls);
+        SORT_INFO(sBagMenuSortPokeBalls)
         break;
     case POCKET_BERRIES:
-    case POCKET_TM:
-        gBagMenu->contextMenuItemsPtr = sBagMenuSortBerriesTMs;
-        memcpy(&gBagMenu->contextMenuItemsBuffer, &sBagMenuSortBerriesTMs, NELEMS(sBagMenuSortBerriesTMs));
-        gBagMenu->contextMenuNumItems = NELEMS(sBagMenuSortBerriesTMs);
+        SORT_INFO(sBagMenuSortBerriesTMs)
         break;
     default:
-        gBagMenu->contextMenuItemsPtr = sBagMenuSortItems;
-        memcpy(&gBagMenu->contextMenuItemsBuffer, &sBagMenuSortItems, NELEMS(sBagMenuSortItems));
-        gBagMenu->contextMenuNumItems = NELEMS(sBagMenuSortItems);
+        SORT_INFO(sBagMenuSortItems)
         break;
     }
 
@@ -2996,7 +2993,7 @@ static s32 CompareItemsByType(enum Pocket pocketId, struct ItemSlot item1, struc
     else if (type1 > type2)
         return 1;
 
-    return CompareItemsAlphabetically(pocketId, item1, item2); // Items are of same type so sort alphabetically
+    return CompareItemsByIndex(pocketId, item1, item2); // Items are of same type so sort alphabetically
 }
 
 static s32 CompareItemsByIndex(enum Pocket pocketId, struct ItemSlot item1, struct ItemSlot item2)
@@ -3019,6 +3016,8 @@ static s32 CompareItemsByIndex(enum Pocket pocketId, struct ItemSlot item1, stru
         index2 = item2.itemId;
         break;
     default:
+        index1 = item1.itemId;
+        index2 = item2.itemId;
         return 0;
     }
 

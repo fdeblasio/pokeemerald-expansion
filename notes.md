@@ -165,8 +165,6 @@ upcoming
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
 
 ### Items
-- Fix sorting (Hyper Potion->Potion->Revive->Super Potion)
-    - Check if same in upcoming or if just in local branch
 - Max Elixir (and others?) should stay on party screen like Full Restores do
 - Ideally all SV TMs would be available if the bag was ever expanded greatly
     - Important ones should be made into tutors

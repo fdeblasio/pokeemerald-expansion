@@ -2745,8 +2745,17 @@ static const u8 sBagMenuSortItems[] =
 
 static const u8 sBagMenuSortKeyItems[] =
 {
+    ACTION_BY_TYPE,
+    ACTION_BY_NAME,
+    ACTION_DUMMY,
+    ACTION_CANCEL,
+};
+
+static const u8 sBagMenuSortTMs[] =
+{
     ACTION_BY_INDEX,
     ACTION_BY_NAME,
+    ACTION_DUMMY,
     ACTION_CANCEL,
 };
 
@@ -2758,7 +2767,7 @@ static const u8 sBagMenuSortPokeBalls[] =
     ACTION_CANCEL,
 };
 
-static const u8 sBagMenuSortBerriesTMs[] =
+static const u8 sBagMenuSortBerries[] =
 {
     ACTION_BY_INDEX,
     ACTION_BY_NAME,
@@ -2776,14 +2785,16 @@ static void AddBagSortSubMenu(void)
     switch (gBagPosition.pocket)
     {
     case POCKET_KEY_ITEMS:
-    case POCKET_TM:
         SORT_INFO(sBagMenuSortKeyItems)
+        break;
+    case POCKET_TM:
+        SORT_INFO(sBagMenuSortTMs)
         break;
     case POCKET_POKE_BALLS:
         SORT_INFO(sBagMenuSortPokeBalls)
         break;
     case POCKET_BERRIES:
-        SORT_INFO(sBagMenuSortBerriesTMs)
+        SORT_INFO(sBagMenuSortBerries)
         break;
     default:
         SORT_INFO(sBagMenuSortItems)
@@ -2993,7 +3004,7 @@ static s32 CompareItemsByType(enum Pocket pocketId, struct ItemSlot item1, struc
     else if (type1 > type2)
         return 1;
 
-    return CompareItemsByIndex(pocketId, item1, item2); // Items are of same type so sort alphabetically
+    return CompareItemsByIndex(pocketId, item1, item2); // Items are of same type so sort by index
 }
 
 static s32 CompareItemsByIndex(enum Pocket pocketId, struct ItemSlot item1, struct ItemSlot item2)

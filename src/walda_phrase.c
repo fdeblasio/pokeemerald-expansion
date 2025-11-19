@@ -16,7 +16,7 @@ extern const u8 gText_Peekaboo[];
 static void CB2_HandleGivenWaldaPhrase(void);
 static u32 GetWaldaPhraseInputCase(u8 *);
 static bool32 TryCalculateWallpaper(u16 *, u16 *, u8 *, u8 *, u16, u8 *);
-static bool32 TryCalculateWallpaperSimple(u16 *, u16 *, u8 *, u8 *, u8 *);
+static bool32 TryCalculateWallpaperSimple(u16 *, u16 *, u8 *, u8 *, u16, u8 *);
 static void SetWallpaperDataFromLetter(u8 *, u8 *, u32, u32, u32);
 static void RotateWallpaperDataLeft(u8 *, s32, s32);
 static void MaskWallpaperData(u8 *, u32, u8);
@@ -114,8 +114,7 @@ u16 TryGetWallpaperWithWaldaPhrase(void)
     u16 backgroundClr, foregroundClr;
     u8 patternId, iconId;
     u16 trainerId = GetTrainerId(gSaveBlock2Ptr->playerTrainerId);
-    //TODO if SIMPLE == 15, reverse this. Call TryCalculateWallpaperSimple here, and if it returns false, call regular inside that
-    gSpecialVar_Result = TryCalculateWallpaper(&backgroundClr, &foregroundClr, &iconId, &patternId, trainerId, GetWaldaPhrasePtr());
+    gSpecialVar_Result = TryCalculateWallpaperSimple(&backgroundClr, &foregroundClr, &iconId, &patternId, trainerId, GetWaldaPhrasePtr());
 
     if (gSpecialVar_Result)
     {
@@ -181,7 +180,7 @@ static u8 GetLetterSimpleId(u8 letter)
             return letter - 0xCB;
     }
 
-    return ARRAY_COUNT(sWaldaNumbers);
+    return ARRAY_COUNT(sWaldaNumbers) + HEX_LETTERS;
 }
 
 static u8 RGBToHexColor(u8 hex1, u8 hex2)
@@ -189,24 +188,32 @@ static u8 RGBToHexColor(u8 hex1, u8 hex2)
     return (16 * hex1) + hex2;
 }
 
-static bool32 TryCalculateWallpaperSimple(u16 *backgroundClr, u16 *foregroundClr, u8 *iconId, u8 *patternId, u8 *phrase)
+static bool32 TryCalculateWallpaperSimple(u16 *backgroundClr, u16 *foregroundClr, u8 *iconId, u8 *patternId, u16 trainerId, u8 *phrase)
 {
-    s32 i;
-    //ALIGNED(2) u8 data[NUM_WALLPAPER_DATA_BYTES];
-    u8 charsByTableId[WALDA_SIMPLE_LENGTH];
-    //u16 *ptr;
+    s8 i;
+    u8 charsByTableId[WALDA_PHRASE_LENGTH];
+    bool8 useSimple = TRUE;
 
-    for (i = 0; i < WALDA_SIMPLE_LENGTH; i++)
+    // Reject any phrase that does not use the full length
+    if (StringLength(phrase) != WALDA_PHRASE_LENGTH)
+        return FALSE;
+
+    for (i = 0; i < WALDA_PHRASE_LENGTH; i++)
     {
         charsByTableId[i] = GetLetterSimpleId(phrase[i]);
-        if (charsByTableId[i] == ARRAY_COUNT(sWaldaNumbers))
-            return FALSE;
+        if (charsByTableId[i] == ARRAY_COUNT(sWaldaNumbers) + HEX_LETTERS){
+            useSimple = FALSE;
+            break;
+        }
     }
+
+    if (useSimple == FALSE)
+        return TryCalculateWallpaper(backgroundClr, foregroundClr, iconId, patternId, trainerId, phrase);
 
     *backgroundClr = RGB2GBA(RGBToHexColor(charsByTableId[0], charsByTableId[1]), RGBToHexColor(charsByTableId[2], charsByTableId[3]), RGBToHexColor(charsByTableId[4], charsByTableId[5]));
     *foregroundClr = RGB2GBA(RGBToHexColor(charsByTableId[6], charsByTableId[7]), RGBToHexColor(charsByTableId[8], charsByTableId[9]), RGBToHexColor(charsByTableId[10], charsByTableId[11]));
     *patternId = charsByTableId[12];
-    *iconId = charsByTableId[13]; //TODO: and also E aka 14 (increase WALDA_SIMPLE_LENGTH)?
+    *iconId = charsByTableId[13] + charsByTableId[14];
 
     return TRUE;
 }
@@ -235,10 +242,8 @@ static bool32 TryCalculateWallpaper(u16 *backgroundClr, u16 *foregroundClr, u8 *
     u8 charsByTableId[WALDA_PHRASE_LENGTH];
     u16 *ptr;
 
-    if (StringLength(phrase) == WALDA_SIMPLE_LENGTH)
-        return TryCalculateWallpaperSimple(backgroundClr, foregroundClr, iconId, patternId, phrase);
     // Reject any phrase that does not use the full length
-    else if (StringLength(phrase) != WALDA_PHRASE_LENGTH)
+    if (StringLength(phrase) != WALDA_PHRASE_LENGTH)
         return FALSE;
 
     // Reject any phrase that uses characters not in sWaldaLettersTable, sWaldaLettersTable2, or sWaldaLettersTable3

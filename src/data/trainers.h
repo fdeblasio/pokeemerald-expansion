@@ -2948,8 +2948,7 @@ JUAN_REMATCH(4),
     {                                                                         \
     ELITE_FOUR_MON(Level, HONCHKROW, Tier, SIDNEY, ITEM_SCOPE_LENS),          \
     .ability = ABILITY_SUPER_LUCK,                                            \
-    .nature = NATURE_ADAMANT,                                                 \
-    EV_SPREAD_ATK_SPE_HP,                                                     \
+    IDEAL_ATTACKER_PHYSICAL,                                                  \
     .moves = {MOVE_NIGHT_SLASH, MOVE_ACROBATICS, MOVE_U_TURN, MOVE_TAILWIND}, \
     .gender = TRAINER_MON_MALE,                                               \
     }
@@ -2960,8 +2959,7 @@ JUAN_REMATCH(4),
     {                                                                                  \
     ELITE_FOUR_MON(Level, WEAVILE, Tier, SIDNEY),                                      \
     .ability = ABILITY_PRESSURE,                                                       \
-    .nature = NATURE_JOLLY,                                                            \
-    EV_SPREAD_ATK_SPE_HP,                                                              \
+    IDEAL_SPEEDSTER_PHYSICAL,                                                          \
     .moves = {MOVE_NIGHT_SLASH, MOVE_ICICLE_CRASH, MOVE_ICE_SHARD, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                        \
     }
@@ -2970,8 +2968,7 @@ JUAN_REMATCH(4),
     {                                                                                 \
     ELITE_FOUR_MON(Level, HOUNDOOM, Tier, SIDNEY),                                    \
     .ability = ABILITY_FLASH_FIRE,                                                    \
-    .nature = NATURE_MODEST,                                                          \
-    EV_SPREAD_SPA_SPE_HP,                                                             \
+    IDEAL_ATTACKER_SPECIAL,                                                           \
     .moves = {MOVE_DARK_PULSE, MOVE_FLAMETHROWER, MOVE_SLUDGE_BOMB, MOVE_NASTY_PLOT}, \
     .gender = TRAINER_MON_MALE,                                                       \
     }
@@ -2983,8 +2980,7 @@ JUAN_REMATCH(4),
     {                                                                              \
     ELITE_FOUR_MON(Level, LIEPARD, Tier, SIDNEY, ITEM_LIECHI_BERRY),               \
     .ability = ABILITY_UNBURDEN,                                                   \
-    .nature = NATURE_JOLLY,                                                        \
-    EV_SPREAD_ATK_SPE_HP,                                                          \
+    IDEAL_SPEEDSTER_PHYSICAL,                                                      \
     .moves = {MOVE_NIGHT_SLASH, MOVE_PSYCHO_CUT, MOVE_SEED_BOMB, MOVE_PLAY_ROUGH}, \
     .gender = TRAINER_MON_FEMALE,                                                  \
     }
@@ -2995,8 +2991,7 @@ JUAN_REMATCH(4),
     {                                                                             \
     ELITE_FOUR_MON(Level, ZOROARK, Tier, SIDNEY),                                 \
     .ability = ABILITY_ILLUSION,                                                  \
-    .nature = NATURE_MODEST,                                                      \
-    EV_SPREAD_SPA_SPE_HP,                                                         \
+    IDEAL_ATTACKER_SPECIAL,                                                       \
     .moves = {MOVE_NIGHT_DAZE, MOVE_PSYCHIC, MOVE_FLAMETHROWER, MOVE_NASTY_PLOT}, \
     .gender = TRAINER_MON_MALE,                                                   \
     }
@@ -3009,8 +3004,7 @@ JUAN_REMATCH(4),
     {                                                                                  \
     ELITE_FOUR_MON(Level, MALAMAR, Tier, SIDNEY),                                      \
     .ability = ABILITY_CONTRARY,                                                       \
-    .nature = NATURE_ADAMANT,                                                          \
-    EV_SPREAD_ATK_SPE_HP,                                                              \
+    IDEAL_ATTACKER_PHYSICAL,                                                           \
     .moves = {MOVE_THROAT_CHOP, MOVE_ZEN_HEADBUTT, MOVE_SUPERPOWER, MOVE_TOPSY_TURVY}, \
     .gender = TRAINER_MON_FEMALE,                                                      \
     }
@@ -3021,8 +3015,7 @@ JUAN_REMATCH(4),
     {                                                                                \
     ELITE_FOUR_MON(Level, GRIMMSNARL, Tier, SIDNEY),                                 \
     .ability = ABILITY_PRANKSTER,                                                    \
-    .nature = NATURE_ADAMANT,                                                        \
-    EV_SPREAD_ATK_SPE_HP,                                                            \
+    IDEAL_ATTACKER_PHYSICAL,                                                         \
     .moves = {MOVE_FALSE_SURRENDER, MOVE_PLAY_ROUGH, MOVE_LEECH_LIFE, MOVE_BULK_UP}, \
     .gender = TRAINER_MON_MALE,                                                      \
     }
@@ -3031,8 +3024,7 @@ JUAN_REMATCH(4),
     {                                                                       \
     ELITE_FOUR_MON(Level, MABOSSTIFF, Tier, SIDNEY),                        \
     .ability = ABILITY_INTIMIDATE,                                          \
-    .nature = NATURE_ADAMANT,                                               \
-    EV_SPREAD_ATK_SPE_HP,                                                   \
+    IDEAL_ATTACKER_PHYSICAL,                                                \
     .moves = {MOVE_CRUNCH, MOVE_PLAY_ROUGH, MOVE_OUTRAGE, MOVE_HONE_CLAWS}, \
     .gender = TRAINER_MON_MALE,                                             \
     }

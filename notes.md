@@ -66,8 +66,8 @@ upcoming
 ### Next playthrough
 - Rustboro:
     - Make it easier to specify which Walda wallpaper is obtained?
-        - Maybe color is by the hex code?
-        - Make spaces and short strings valid?
+        - 30 icons
+            - Could use 0-9 and A-T. Might cause logic errors due to inconsistency
 - Dewford:
     - Reduce Surf slots to just 3? (Variety will come from all the routes with water)
     - Get Exp. Share from Steven instead of from Mr. Stone after

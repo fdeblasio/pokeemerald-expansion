@@ -9,12 +9,14 @@
 #include "overworld.h"
 #include "pokemon_storage_system.h"
 #include "field_screen_effect.h"
+#include "constants/rgb.h"
 
 extern const u8 gText_Peekaboo[];
 
 static void CB2_HandleGivenWaldaPhrase(void);
 static u32 GetWaldaPhraseInputCase(u8 *);
 static bool32 TryCalculateWallpaper(u16 *, u16 *, u8 *, u8 *, u16, u8 *);
+static bool32 TryCalculateWallpaperSimple(u16 *, u16 *, u8 *, u8 *, u8 *);
 static void SetWallpaperDataFromLetter(u8 *, u8 *, u32, u32, u32);
 static void RotateWallpaperDataLeft(u8 *, s32, s32);
 static void MaskWallpaperData(u8 *, u32, u8);
@@ -112,6 +114,7 @@ u16 TryGetWallpaperWithWaldaPhrase(void)
     u16 backgroundClr, foregroundClr;
     u8 patternId, iconId;
     u16 trainerId = GetTrainerId(gSaveBlock2Ptr->playerTrainerId);
+    //TODO if SIMPLE == 15, reverse this. Call TryCalculateWallpaperSimple here, and if it returns false, call regular inside that
     gSpecialVar_Result = TryCalculateWallpaper(&backgroundClr, &foregroundClr, &iconId, &patternId, trainerId, GetWaldaPhrasePtr());
 
     if (gSpecialVar_Result)
@@ -144,6 +147,70 @@ static u8 GetLetterTableId(u8 letter)
     return ARRAY_COUNT(sWaldaLettersTable);
 }
 
+static const u8 sWaldaNumbers[10] =
+{
+    CHAR_0, CHAR_1, CHAR_2, CHAR_3, CHAR_4, CHAR_5, CHAR_6, CHAR_7, CHAR_8, CHAR_9
+};
+
+#define HEX_LETTERS 6
+static const u8 sWaldaHexUppercase[HEX_LETTERS] =
+{
+    CHAR_A, CHAR_B, CHAR_C, CHAR_D, CHAR_E, CHAR_F
+};
+
+static const u8 sWaldaHexLowercase[HEX_LETTERS] =
+{
+    CHAR_a, CHAR_b, CHAR_c, CHAR_d, CHAR_e, CHAR_f
+};
+
+static u8 GetLetterSimpleId(u8 letter)
+{
+    s8 i;
+
+    for (i = 0; i < ARRAY_COUNT(sWaldaNumbers); i++)
+    {
+        if (sWaldaNumbers[i] == letter)
+            return letter - CHAR_0;
+    }
+
+    for (i = 0; i < HEX_LETTERS; i++)
+    {
+        if (sWaldaHexUppercase[i] == letter)
+            return letter - 0xB1;
+        else if (sWaldaHexLowercase[i] == letter)
+            return letter - 0xCB;
+    }
+
+    return ARRAY_COUNT(sWaldaNumbers);
+}
+
+static u8 RGBToHexColor(u8 hex1, u8 hex2)
+{
+    return (16 * hex1) + hex2;
+}
+
+static bool32 TryCalculateWallpaperSimple(u16 *backgroundClr, u16 *foregroundClr, u8 *iconId, u8 *patternId, u8 *phrase)
+{
+    s32 i;
+    //ALIGNED(2) u8 data[NUM_WALLPAPER_DATA_BYTES];
+    u8 charsByTableId[WALDA_SIMPLE_LENGTH];
+    //u16 *ptr;
+
+    for (i = 0; i < WALDA_SIMPLE_LENGTH; i++)
+    {
+        charsByTableId[i] = GetLetterSimpleId(phrase[i]);
+        if (charsByTableId[i] == ARRAY_COUNT(sWaldaNumbers))
+            return FALSE;
+    }
+
+    *backgroundClr = RGB2GBA(RGBToHexColor(charsByTableId[0], charsByTableId[1]), RGBToHexColor(charsByTableId[2], charsByTableId[3]), RGBToHexColor(charsByTableId[4], charsByTableId[5]));
+    *foregroundClr = RGB2GBA(RGBToHexColor(charsByTableId[6], charsByTableId[7]), RGBToHexColor(charsByTableId[8], charsByTableId[9]), RGBToHexColor(charsByTableId[10], charsByTableId[11]));
+    *patternId = charsByTableId[12];
+    *iconId = charsByTableId[13]; //TODO: and also E aka 14 (increase WALDA_SIMPLE_LENGTH)?
+
+    return TRUE;
+}
+
 // Attempts to generate a wallpaper based on the given trainer id and phrase.
 // Returns TRUE if successful and sets the wallpaper results to the given pointers.
 // Returns FALSE if no wallpaper was generated (Walda "didn't like" the phrase).
@@ -160,6 +227,7 @@ static u8 GetLetterTableId(u8 letter)
 #define KEY          data[8]
 #define NUM_WALLPAPER_DATA_BYTES 9
 #define TO_BIT_OFFSET(i)  (3 + (8 * (i))) // Convert a position in the phrase to a bit number into the wallpaper data array
+
 static bool32 TryCalculateWallpaper(u16 *backgroundClr, u16 *foregroundClr, u8 *iconId, u8 *patternId, u16 trainerId, u8 *phrase)
 {
     s32 i;
@@ -167,8 +235,10 @@ static bool32 TryCalculateWallpaper(u16 *backgroundClr, u16 *foregroundClr, u8 *
     u8 charsByTableId[WALDA_PHRASE_LENGTH];
     u16 *ptr;
 
+    if (StringLength(phrase) == WALDA_SIMPLE_LENGTH)
+        return TryCalculateWallpaperSimple(backgroundClr, foregroundClr, iconId, patternId, phrase);
     // Reject any phrase that does not use the full length
-    if (StringLength(phrase) != WALDA_PHRASE_LENGTH)
+    else if (StringLength(phrase) != WALDA_PHRASE_LENGTH)
         return FALSE;
 
     // Reject any phrase that uses characters not in sWaldaLettersTable, sWaldaLettersTable2, or sWaldaLettersTable3

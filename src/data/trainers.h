@@ -1,6 +1,22 @@
 #define BOSS_AI_FLAGS .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON
 #define MINI_BOSS_AI_FLAGS .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_ACE_POKEMON
 
+#define IDEAL_ATTACKER_PHYSICAL \
+    .nature = NATURE_ADAMANT,   \
+    EV_SPREAD_ATK_SPE_HP
+
+#define IDEAL_ATTACKER_SPECIAL \
+    .nature = NATURE_MODEST,   \
+    EV_SPREAD_SPA_SPE_HP
+
+#define IDEAL_SPEEDSTER_PHYSICAL \
+    .nature = NATURE_JOLLY,      \
+    EV_SPREAD_ATK_SPE_HP
+
+#define IDEAL_SPEEDSTER_SPECIAL \
+    .nature = NATURE_TIMID,     \
+    EV_SPREAD_SPA_SPE_HP
+
 [DIFFICULTY_NORMAL][TRAINER_NONE] =
 {
     .trainerName = _(""),
@@ -269,8 +285,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     {                                                                                  \
     REMATCH_MON(GALLADE, tier, rematch, ITEM_GALLADITE),                               \
     .ability = ABILITY_SHARPNESS,                                                      \
-    .nature = NATURE_ADAMANT,                                                          \
-    EV_SPREAD_ATK_SPE_HP,                                                              \
+    IDEAL_ATTACKER_PHYSICAL,                                                           \
     .moves = {MOVE_PSYCHO_CUT, MOVE_SACRED_SWORD, MOVE_LEAF_BLADE, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                        \
     .nickname = COMPOUND_STRING("Ralph"),                                              \
@@ -310,8 +325,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     {                                                                   \
     REMATCH_MON(DELCATTY, tier, rematch),                               \
     .ability = ABILITY_NORMALIZE,                                       \
-    .nature = NATURE_TIMID,                                             \
-    EV_SPREAD_SPA_SPE_HP,                                               \
+    IDEAL_SPEEDSTER_SPECIAL,                                            \
     .moves = {MOVE_FAKE_OUT, MOVE_PLAY_ROUGH, MOVE_ASSIST, MOVE_CHARM}, \
     .gender = TRAINER_MON_FEMALE,                                       \
     }
@@ -320,8 +334,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     {                                                                            \
     REMATCH_MON(GARDEVOIR, tier, rematch),                                       \
     .ability = ABILITY_SYNCHRONIZE,                                              \
-    .nature = NATURE_MODEST,                                                     \
-    EV_SPREAD_SPA_SPE_HP,                                                        \
+    IDEAL_ATTACKER_SPECIAL,                                                      \
     .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_MYSTICAL_FIRE, MOVE_CALM_MIND}, \
     .gender = TRAINER_MON_FEMALE,                                                \
     }
@@ -341,8 +354,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     {                                                                                \
     REMATCH_MON(VICTREEBEL, tier, rematch, ITEM_MIRACLE_SEED),                       \
     .ability = ABILITY_NATURAL_CURE,                                                 \
-    .nature = NATURE_ADAMANT,                                                        \
-    EV_SPREAD_ATK_SPE_HP,                                                            \
+    IDEAL_ATTACKER_PHYSICAL,                                                         \
     .moves = {MOVE_LEAF_BLADE, MOVE_POISON_JAB, MOVE_LEECH_LIFE, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                      \
     }
@@ -351,8 +363,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     {                                                                               \
     REMATCH_MON(KLEAVOR, tier, rematch),                                            \
     .ability = ABILITY_SHARPNESS,                                                   \
-    .nature = NATURE_ADAMANT,                                                       \
-    EV_SPREAD_ATK_SPE_HP,                                                           \
+    IDEAL_ATTACKER_PHYSICAL,                                                        \
     .moves = {MOVE_X_SCISSOR, MOVE_STONE_AXE, MOVE_NIGHT_SLASH, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                     \
     }
@@ -371,8 +382,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     {                                                                          \
     REMATCH_MON(SWOOBAT, tier, rematch),                                       \
     .ability = ABILITY_SIMPLE,                                                 \
-    .nature = NATURE_TIMID,                                                    \
-    EV_SPREAD_SPA_SPE_HP,                                                      \
+    IDEAL_SPEEDSTER_SPECIAL,                                                   \
     .moves = {MOVE_PSYCHIC, MOVE_AIR_SLASH, MOVE_SIGNAL_BEAM, MOVE_CALM_MIND}, \
     .gender = TRAINER_MON_MALE,                                                \
     }
@@ -381,8 +391,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     {                                                                                 \
     REMATCH_MON(TALONFLAME, tier, rematch),                                           \
     .ability = ABILITY_GALE_WINGS,                                                    \
-    .nature = NATURE_JOLLY,                                                           \
-    EV_SPREAD_ATK_SPE_HP,                                                             \
+    IDEAL_SPEEDSTER_PHYSICAL,                                                         \
     .moves = {MOVE_TEMPER_FLARE, MOVE_DUAL_WINGBEAT, MOVE_STEEL_WING, MOVE_TAILWIND}, \
     .gender = TRAINER_MON_MALE,                                                       \
     }
@@ -391,7 +400,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     {                                                                                 \
     REMATCH_MON(DUBWOOL, tier, rematch),                                              \
     .ability = ABILITY_FLUFFY,                                                        \
-    .nature = NATURE_MODEST,                                                          \
+    .nature = NATURE_IMPISH,                                                          \
     EV_SPREAD_ATK_DEF_HP,                                                             \
     .moves = {MOVE_BODY_SLAM, MOVE_BODY_PRESS, MOVE_ZEN_HEADBUTT, MOVE_COTTON_GUARD}, \
     .gender = TRAINER_MON_MALE,                                                       \
@@ -560,8 +569,7 @@ WALLY_REMATCH(5),
     {                                                                                \
     REMATCH_MON(RAMPARDOS, tier, rematch, ITEM_QUICK_CLAW),                          \
     .ability = ABILITY_ROCK_HEAD,                                                    \
-    .nature = NATURE_ADAMANT,                                                        \
-    EV_SPREAD_ATK_SPE_HP,                                                            \
+    IDEAL_ATTACKER_PHYSICAL,                                                         \
     .moves = {MOVE_HEAD_SMASH, MOVE_ZEN_HEADBUTT, MOVE_IRON_HEAD, MOVE_BRICK_BREAK}, \
     .gender = TRAINER_MON_FEMALE,                                                    \
     }
@@ -584,8 +592,7 @@ WALLY_REMATCH(5),
     {                                                                              \
     REMATCH_MON(ARCHEOPS, tier, rematch, ITEM_SHELL_BELL),                         \
     .ability = ABILITY_EARLY_BIRD,                                                 \
-    .nature = NATURE_ADAMANT,                                                      \
-    EV_SPREAD_ATK_SPE_HP,                                                          \
+    IDEAL_ATTACKER_PHYSICAL,                                                       \
     .moves = {MOVE_ROCK_SLIDE, MOVE_DUAL_WINGBEAT, MOVE_CRUNCH, MOVE_DRAGON_CLAW}, \
     .gender = TRAINER_MON_FEMALE,                                                  \
     }
@@ -636,8 +643,7 @@ WALLY_REMATCH(5),
     {                                                                               \
     REMATCH_MON(GLIMMORA, tier, rematch),                                           \
     .ability = ABILITY_TOXIC_DEBRIS,                                                \
-    .nature = NATURE_MODEST,                                                        \
-    EV_SPREAD_SPA_SPE_HP,                                                           \
+    IDEAL_ATTACKER_SPECIAL,                                                         \
     .moves = {MOVE_POWER_GEM, MOVE_VENOSHOCK, MOVE_MORTAL_SPIN, MOVE_STEALTH_ROCK}, \
     .gender = TRAINER_MON_FEMALE,                                                   \
     }
@@ -716,8 +722,7 @@ ROXANNE_REMATCH(5),
     {                                                                             \
     REMATCH_MON(MEDICHAM, tier, rematch, ITEM_MUSCLE_BAND),                       \
     .ability = ABILITY_PURE_POWER,                                                \
-    .nature = NATURE_ADAMANT,                                                     \
-    EV_SPREAD_ATK_SPE_HP,                                                         \
+    IDEAL_ATTACKER_PHYSICAL,                                                      \
     .moves = {MOVE_BULK_UP, MOVE_HIGH_JUMP_KICK, MOVE_ZEN_HEADBUTT, MOVE_DETECT}, \
     .gender = TRAINER_MON_FEMALE,                                                 \
     }
@@ -726,8 +731,7 @@ ROXANNE_REMATCH(5),
     {                                                                         \
     REMATCH_MON(MACHAMP, tier, rematch, ITEM_BLACK_BELT),                     \
     .ability = ABILITY_NO_GUARD,                                              \
-    .nature = NATURE_ADAMANT,                                                 \
-    EV_SPREAD_ATK_SPE_HP,                                                     \
+    IDEAL_ATTACKER_PHYSICAL,                                                  \
     .moves = {MOVE_BULK_UP, MOVE_CROSS_CHOP, MOVE_KNOCK_OFF, MOVE_DUAL_CHOP}, \
     .gender = TRAINER_MON_MALE,                                               \
     }
@@ -736,8 +740,7 @@ ROXANNE_REMATCH(5),
     {                                                                             \
     REMATCH_MON(BRELOOM, tier, rematch),                                          \
     .ability = ABILITY_TECHNICIAN,                                                \
-    .nature = NATURE_ADAMANT,                                                     \
-    EV_SPREAD_ATK_SPE_HP,                                                         \
+    IDEAL_ATTACKER_PHYSICAL,                                                      \
     .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_BULLET_SEED, MOVE_MACH_PUNCH}, \
     .gender = TRAINER_MON_MALE,                                                   \
     }
@@ -746,8 +749,7 @@ ROXANNE_REMATCH(5),
     {                                                                              \
     REMATCH_MON(BLAZIKEN, tier, rematch),                                          \
     .ability = ABILITY_BLAZE,                                                      \
-    .nature = NATURE_ADAMANT,                                                      \
-    EV_SPREAD_ATK_SPE_HP,                                                          \
+    IDEAL_ATTACKER_PHYSICAL,                                                       \
     .moves = {MOVE_BULK_UP, MOVE_SKY_UPPERCUT, MOVE_BLAZE_KICK, MOVE_MIRROR_MOVE}, \
     .gender = TRAINER_MON_MALE,                                                    \
     }
@@ -756,8 +758,7 @@ ROXANNE_REMATCH(5),
     {                                                                             \
     REMATCH_MON(GALLADE, tier, rematch),                                          \
     .ability = ABILITY_JUSTIFIED,                                                 \
-    .nature = NATURE_ADAMANT,                                                     \
-    EV_SPREAD_ATK_SPE_HP,                                                         \
+    IDEAL_ATTACKER_PHYSICAL,                                                      \
     .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_PSYCHO_CUT, MOVE_NIGHT_SLASH}, \
     .gender = TRAINER_MON_MALE,                                                   \
     }
@@ -773,8 +774,7 @@ ROXANNE_REMATCH(5),
     {                                                                           \
     REMATCH_MON(TAUROS_PALDEA_COMBAT, tier, rematch),                           \
     .ability = ABILITY_INTIMIDATE,                                              \
-    .nature = NATURE_ADAMANT,                                                   \
-    EV_SPREAD_ATK_SPE_HP,                                                       \
+    IDEAL_ATTACKER_PHYSICAL,                                                    \
     .moves = {MOVE_BULK_UP, MOVE_RAGING_BULL, MOVE_IRON_HEAD, MOVE_ROCK_SLIDE}, \
     .gender = TRAINER_MON_MALE,                                                 \
     }
@@ -787,8 +787,7 @@ ROXANNE_REMATCH(5),
     {                                                                                  \
     REMATCH_MON(LUCARIO, tier, rematch),                                               \
     .ability = ABILITY_INNER_FOCUS,                                                    \
-    .nature = NATURE_MODEST,                                                           \
-    EV_SPREAD_SPA_SPE_HP,                                                              \
+    IDEAL_ATTACKER_SPECIAL,                                                            \
     .moves = {MOVE_AURA_SPHERE, MOVE_FLASH_CANNON, MOVE_SHADOW_BALL, MOVE_NASTY_PLOT}, \
     .gender = TRAINER_MON_MALE,                                                        \
     }
@@ -801,8 +800,7 @@ ROXANNE_REMATCH(5),
     {                                                                         \
     REMATCH_MON(MIENSHAO, tier, rematch),                                     \
     .ability = ABILITY_REGENERATOR,                                           \
-    .nature = NATURE_ADAMANT,                                                 \
-    EV_SPREAD_ATK_SPE_HP,                                                     \
+    IDEAL_ATTACKER_PHYSICAL,                                                  \
     .moves = {MOVE_BULK_UP, MOVE_HIGH_JUMP_KICK, MOVE_U_TURN, MOVE_FAKE_OUT}, \
     .gender = TRAINER_MON_MALE,                                               \
     }
@@ -811,8 +809,7 @@ ROXANNE_REMATCH(5),
     {                                                                               \
     REMATCH_MON(PANGORO, tier, rematch),                                            \
     .ability = ABILITY_IRON_FIST,                                                   \
-    .nature = NATURE_ADAMANT,                                                       \
-    EV_SPREAD_ATK_SPE_HP,                                                           \
+    IDEAL_ATTACKER_PHYSICAL,                                                        \
     .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_THROAT_CHOP, MOVE_BULLET_PUNCH}, \
     .gender = TRAINER_MON_MALE,                                                     \
     }
@@ -821,8 +818,7 @@ ROXANNE_REMATCH(5),
     {                                                                        \
     REMATCH_MON(HAWLUCHA, tier, rematch),                                    \
     .ability = ABILITY_LIMBER,                                               \
-    .nature = NATURE_JOLLY,                                                  \
-    EV_SPREAD_ATK_SPE_HP,                                                    \
+    IDEAL_SPEEDSTER_PHYSICAL,                                                \
     .moves = {MOVE_BULK_UP, MOVE_FLYING_PRESS, MOVE_ACROBATICS, MOVE_LUNGE}, \
     .gender = TRAINER_MON_MALE,                                              \
     }
@@ -843,8 +839,7 @@ ROXANNE_REMATCH(5),
     {                                                                        \
     REMATCH_MON(GRAPPLOCT, tier, rematch, ITEM_SITRUS_BERRY),                \
     .ability = ABILITY_TECHNICIAN,                                           \
-    .nature = NATURE_ADAMANT,                                                \
-    EV_SPREAD_ATK_SPE_HP,                                                    \
+    IDEAL_ATTACKER_PHYSICAL,                                                 \
     .moves = {MOVE_BULK_UP, MOVE_STORM_THROW, MOVE_AQUA_JET, MOVE_OCTOLOCK}, \
     .gender = TRAINER_MON_MALE,                                              \
     }
@@ -853,8 +848,7 @@ ROXANNE_REMATCH(5),
     {                                                                               \
     REMATCH_MON(FALINKS, tier, rematch),                                            \
     .ability = ABILITY_DEFIANT,                                                     \
-    .nature = NATURE_ADAMANT,                                                       \
-    EV_SPREAD_ATK_SPE_HP,                                                           \
+    IDEAL_ATTACKER_PHYSICAL,                                                        \
     .moves = {MOVE_BODY_PRESS, MOVE_IRON_HEAD, MOVE_SPIKY_SHIELD, MOVE_NO_RETREAT}, \
     }
 
@@ -930,8 +924,7 @@ BRAWLY_REMATCH(5),
     {                                                                             \
     REMATCH_MON(MANECTRIC, tier, rematch, ITEM_SITRUS_BERRY),                     \
     .ability = ABILITY_MINUS,                                                     \
-    .nature = NATURE_MODEST,                                                      \
-    EV_SPREAD_SPA_SPE_HP,                                                         \
+    IDEAL_ATTACKER_SPECIAL,                                                       \
     .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_SIGNAL_BEAM, MOVE_SNARL}, \
     .gender = TRAINER_MON_MALE,                                                   \
     }
@@ -979,8 +972,7 @@ BRAWLY_REMATCH(5),
     {                                                                               \
     REMATCH_MON(ELECTRODE, tier, rematch),                                          \
     .ability = ABILITY_STATIC,                                                      \
-    .nature = NATURE_TIMID,                                                         \
-    EV_SPREAD_SPA_SPE_HP,                                                           \
+    IDEAL_SPEEDSTER_SPECIAL,                                                        \
     .moves = {MOVE_DISCHARGE, MOVE_EERIE_IMPULSE, MOVE_LIGHT_SCREEN, MOVE_SCREECH}, \
     }
 
@@ -989,8 +981,7 @@ BRAWLY_REMATCH(5),
     {                                                                           \
     REMATCH_MON(RAICHU, tier, rematch),                                         \
     .ability = ABILITY_STATIC,                                                  \
-    .nature = NATURE_TIMID,                                                     \
-    EV_SPREAD_SPA_SPE_HP,                                                       \
+    IDEAL_SPEEDSTER_SPECIAL,                                                    \
     .moves = {MOVE_THUNDERBOLT, MOVE_SURF, MOVE_THUNDER_WAVE, MOVE_NASTY_PLOT}, \
     .gender = TRAINER_MON_MALE,                                                 \
     }
@@ -999,8 +990,7 @@ BRAWLY_REMATCH(5),
     {                                                                      \
     REMATCH_MON(RAICHU_ALOLA, tier, rematch, ITEM_ELECTRIC_SEED),          \
     .ability = ABILITY_SURGE_SURFER,                                       \
-    .nature = NATURE_TIMID,                                                \
-    EV_SPREAD_SPA_SPE_HP,                                                  \
+    IDEAL_SPEEDSTER_SPECIAL,                                               \
     .moves = {MOVE_THUNDERBOLT, MOVE_PSYCHIC, MOVE_SURF, MOVE_NASTY_PLOT}, \
     .gender = TRAINER_MON_MALE,                                            \
     }
@@ -1010,8 +1000,7 @@ BRAWLY_REMATCH(5),
 #define WATTSON_ELECTIVIRE(rematch, tier)                                                     \
     {                                                                                         \
     REMATCH_MON(ELECTIVIRE, tier, rematch, ITEM_MAGNET),                                      \
-    .nature = NATURE_ADAMANT,                                                                 \
-    EV_SPREAD_ATK_SPE_HP,                                                                     \
+    IDEAL_ATTACKER_PHYSICAL,                                                                  \
     .moves = {MOVE_SUPERCELL_SLAM, MOVE_FIRE_PUNCH, MOVE_DRAIN_PUNCH, MOVE_ELECTRIC_TERRAIN}, \
     .gender = TRAINER_MON_MALE,                                                               \
     }
@@ -1023,8 +1012,7 @@ BRAWLY_REMATCH(5),
     {                                                                                       \
     REMATCH_MON(LUXRAY, tier, rematch, ITEM_ELECTRIC_SEED),                                 \
     .ability = ABILITY_INTIMIDATE,                                                          \
-    .nature = NATURE_ADAMANT,                                                               \
-    EV_SPREAD_ATK_SPE_HP,                                                                   \
+    IDEAL_ATTACKER_PHYSICAL,                                                                \
     .moves = {MOVE_SUPERCELL_SLAM, MOVE_CRUNCH, MOVE_PSYCHIC_FANGS, MOVE_ELECTRIC_TERRAIN}, \
     .gender = TRAINER_MON_MALE,                                                             \
     }
@@ -1035,8 +1023,7 @@ BRAWLY_REMATCH(5),
     {                                                                                      \
     REMATCH_MON(ROTOM, tier, rematch),                                                     \
     .ability = ABILITY_LEVITATE,                                                           \
-    .nature = NATURE_MODEST,                                                               \
-    EV_SPREAD_SPA_SPE_HP,                                                                  \
+    IDEAL_ATTACKER_SPECIAL,                                                                \
     .moves = {MOVE_PARABOLIC_CHARGE, MOVE_SHADOW_BALL, MOVE_HYPER_VOICE, MOVE_NASTY_PLOT}, \
     .gender = TRAINER_MON_NONE,                                                            \
     }
@@ -1076,8 +1063,7 @@ BRAWLY_REMATCH(5),
     {                                                                             \
     REMATCH_MON(BOLTUND, tier, rematch),                                          \
     .ability = ABILITY_STRONG_JAW,                                                \
-    .nature = NATURE_JOLLY,                                                       \
-    EV_SPREAD_ATK_SPE_HP,                                                         \
+    IDEAL_SPEEDSTER_PHYSICAL,                                                     \
     .moves = {MOVE_THUNDER_FANG, MOVE_ICE_FANG, MOVE_PSYCHIC_FANGS, MOVE_CRUNCH}, \
     .gender = TRAINER_MON_MALE,                                                   \
     }
@@ -1086,8 +1072,7 @@ BRAWLY_REMATCH(5),
     {                                                                        \
     REMATCH_MON(TOXTRICITY, tier, rematch, ITEM_THROAT_SPRAY),               \
     .ability = ABILITY_PUNK_ROCK,                                            \
-    .nature = NATURE_MODEST,                                                 \
-    EV_SPREAD_SPA_SPE_HP,                                                    \
+    IDEAL_ATTACKER_SPECIAL,                                                  \
     .moves = {MOVE_OVERDRIVE, MOVE_SLUDGE_BOMB, MOVE_BOOMBURST, MOVE_SNARL}, \
     .gender = TRAINER_MON_MALE,                                              \
     }
@@ -1099,8 +1084,7 @@ BRAWLY_REMATCH(5),
     {                                                                                 \
     REMATCH_MON(PAWMOT, tier, rematch, ITEM_PUNCHING_GLOVE),                          \
     .ability = ABILITY_IRON_FIST,                                                     \
-    .nature = NATURE_ADAMANT,                                                         \
-    EV_SPREAD_ATK_SPE_HP,                                                             \
+    IDEAL_ATTACKER_PHYSICAL,                                                          \
     .moves = {MOVE_THUNDER_PUNCH, MOVE_DRAIN_PUNCH, MOVE_ICE_PUNCH, MOVE_MACH_PUNCH}, \
     .gender = TRAINER_MON_MALE,                                                       \
     }
@@ -1118,8 +1102,7 @@ BRAWLY_REMATCH(5),
 #define WATTSON_KILOWATTREL_INFO(rematch, tier, item) \
     REMATCH_MON(KILOWATTREL, tier, rematch, item),    \
     .ability = ABILITY_WIND_POWER,                    \
-    .nature = NATURE_TIMID,                           \
-    EV_SPREAD_SPA_SPE_HP,                             \
+    IDEAL_SPEEDSTER_SPECIAL,                          \
     .gender = TRAINER_MON_MALE
 
 #define WATTSON_KILOWATTREL(rematch, tier)                                         \
@@ -1216,8 +1199,7 @@ WATTSON_REMATCH(5),
     {                                                                                                             \
     REMATCH_MON(CAMERUPT, tier, rematch, ITEM_WHITE_HERB),                                                        \
     .ability = ABILITY_MAGMA_ARMOR,                                                                               \
-    .nature = NATURE_MODEST,                                                                                      \
-    EV_SPREAD_SPA_SPE_HP,                                                                                         \
+    IDEAL_ATTACKER_SPECIAL,                                                                                       \
     .moves = {tier <= TIER2 ? MOVE_OVERHEAT : MOVE_FLAMETHROWER, MOVE_EARTH_POWER, MOVE_AMNESIA, MOVE_SUNNY_DAY}, \
     .gender = TRAINER_MON_FEMALE,                                                                                 \
     }
@@ -1226,8 +1208,7 @@ WATTSON_REMATCH(5),
     {                                                                                                                     \
     REMATCH_MON(BLAZIKEN, tier, rematch, ITEM_WHITE_HERB),                                                                \
     .ability = ABILITY_BLAZE,                                                                                             \
-    .nature = NATURE_MODEST,                                                                                              \
-    EV_SPREAD_SPA_SPE_HP,                                                                                                 \
+    IDEAL_ATTACKER_SPECIAL,                                                                                               \
     .moves = {tier <= TIER2 ? MOVE_OVERHEAT : MOVE_FLAMETHROWER, MOVE_AURA_SPHERE, MOVE_SCORCHING_SANDS, MOVE_SUNNY_DAY}, \
     .gender = TRAINER_MON_FEMALE,                                                                                         \
     }
@@ -1236,8 +1217,7 @@ WATTSON_REMATCH(5),
     {                                                                                                                 \
     REMATCH_MON(CASTFORM, tier, rematch, ITEM_WHITE_HERB),                                                            \
     .ability = ABILITY_FORECAST,                                                                                      \
-    .nature = NATURE_MODEST,                                                                                          \
-    EV_SPREAD_SPA_SPE_HP,                                                                                             \
+    IDEAL_ATTACKER_SPECIAL,                                                                                           \
     .moves = {tier <= TIER2 ? MOVE_OVERHEAT : MOVE_FLAMETHROWER, MOVE_SOLAR_BEAM, MOVE_WEATHER_BALL, MOVE_SUNNY_DAY}, \
     .gender = TRAINER_MON_FEMALE,                                                                                     \
     }
@@ -1256,8 +1236,7 @@ WATTSON_REMATCH(5),
     {                                                                                                               \
     REMATCH_MON(NINETALES, tier, rematch, ITEM_WHITE_HERB),                                                         \
     .ability = ABILITY_DROUGHT,                                                                                     \
-    .nature = NATURE_TIMID,                                                                                         \
-    EV_SPREAD_SPA_SPE_HP,                                                                                           \
+    IDEAL_SPEEDSTER_SPECIAL,                                                                                        \
     .moves = {tier <= TIER2 ? MOVE_OVERHEAT : MOVE_FLAMETHROWER, MOVE_SOLAR_BEAM, MOVE_NASTY_PLOT, MOVE_SUNNY_DAY}, \
     .gender = TRAINER_MON_FEMALE,                                                                                   \
     }
@@ -1267,8 +1246,7 @@ WATTSON_REMATCH(5),
     {                                                                           \
     REMATCH_MON(ARCANINE, tier, rematch),                                       \
     .ability = ABILITY_FLASH_FIRE,                                              \
-    .nature = NATURE_ADAMANT,                                                   \
-    EV_SPREAD_ATK_SPE_HP,                                                       \
+    IDEAL_ATTACKER_PHYSICAL,                                                    \
     .moves = {MOVE_TEMPER_FLARE, MOVE_CRUNCH, MOVE_PLAY_ROUGH, MOVE_SUNNY_DAY}, \
     .gender = TRAINER_MON_FEMALE,                                               \
     }
@@ -1279,8 +1257,7 @@ WATTSON_REMATCH(5),
     {                                                                               \
     REMATCH_MON(RAPIDASH, tier, rematch, ITEM_HEAT_ROCK),                           \
     .ability = ABILITY_FLASH_FIRE,                                                  \
-    .nature = NATURE_JOLLY,                                                         \
-    EV_SPREAD_ATK_SPE_HP,                                                           \
+    IDEAL_SPEEDSTER_PHYSICAL,                                                       \
     .moves = {MOVE_BLAZE_KICK, MOVE_SMART_STRIKE, MOVE_POISON_JAB, MOVE_SUNNY_DAY}, \
     .gender = TRAINER_MON_FEMALE,                                                   \
     }
@@ -1315,8 +1292,7 @@ WATTSON_REMATCH(5),
     {                                                                                \
     REMATCH_MON(HEATMOR, tier, rematch),                                             \
     .ability = ABILITY_FLASH_FIRE,                                                   \
-    .nature = NATURE_ADAMANT,                                                        \
-    EV_SPREAD_ATK_SPE_HP,                                                            \
+    IDEAL_ATTACKER_PHYSICAL,                                                         \
     .moves = {MOVE_FIRE_LASH, MOVE_DRAIN_PUNCH, MOVE_THUNDER_PUNCH, MOVE_SUNNY_DAY}, \
     .gender = TRAINER_MON_FEMALE,                                                    \
     }
@@ -1325,8 +1301,7 @@ WATTSON_REMATCH(5),
     {                                                                                                                   \
     REMATCH_MON(TALONFLAME, tier, rematch),                                                                             \
     .ability = ABILITY_FLAME_BODY,                                                                                      \
-    .nature = NATURE_JOLLY,                                                                                             \
-    EV_SPREAD_ATK_SPE_HP,                                                                                               \
+    IDEAL_SPEEDSTER_PHYSICAL,                                                                                           \
     .moves = {MOVE_TEMPER_FLARE, tier <= TIER2 ? MOVE_DUAL_WINGBEAT : MOVE_ACROBATICS, MOVE_STEEL_WING, MOVE_TAILWIND}, \
     .gender = TRAINER_MON_FEMALE,                                                                                       \
     }
@@ -1335,8 +1310,7 @@ WATTSON_REMATCH(5),
     {                                                                              \
     REMATCH_MON(PYROAR, tier, rematch, ITEM_WIDE_LENS),                            \
     .ability = ABILITY_COMPETITIVE,                                                \
-    .nature = NATURE_MODEST,                                                       \
-    EV_SPREAD_SPA_SPE_HP,                                                          \
+    IDEAL_ATTACKER_SPECIAL,                                                        \
     .moves = {MOVE_FIRE_BLAST, MOVE_HYPER_VOICE, MOVE_DARK_PULSE, MOVE_SUNNY_DAY}, \
     .gender = TRAINER_MON_FEMALE,                                                  \
     }
@@ -1420,8 +1394,7 @@ FLANNERY_REMATCH(5),
     {                                                                                  \
     REMATCH_MON(SLAKING, tier, rematch, ITEM_SITRUS_BERRY),                            \
     .ability = ABILITY_TRUANT,                                                         \
-    .nature = NATURE_ADAMANT,                                                          \
-    EV_SPREAD_ATK_SPE_HP,                                                              \
+    IDEAL_ATTACKER_PHYSICAL,                                                           \
     .moves = {MOVE_GIGA_IMPACT, MOVE_HAMMER_ARM, MOVE_THROAT_CHOP, MOVE_SUCKER_PUNCH}, \
     .gender = TRAINER_MON_MALE,                                                        \
     }
@@ -1430,8 +1403,7 @@ FLANNERY_REMATCH(5),
     {                                                                          \
     REMATCH_MON(SPINDA, tier, rematch, ITEM_LIECHI_BERRY),                     \
     .ability = ABILITY_OWN_TEMPO,                                              \
-    .nature = NATURE_JOLLY,                                                    \
-    EV_SPREAD_ATK_SPE_HP,                                                      \
+    IDEAL_SPEEDSTER_PHYSICAL,                                                  \
     .moves = {MOVE_THRASH, MOVE_TEETER_DANCE, MOVE_HYPNOSIS, MOVE_SKILL_SWAP}, \
     .gender = TRAINER_MON_MALE,                                                \
     }
@@ -1440,8 +1412,7 @@ FLANNERY_REMATCH(5),
     {                                                                                                         \
     REMATCH_MON(ZANGOOSE, tier, rematch, ITEM_TOXIC_ORB),                                                     \
     .ability = tier <= TIER2 ? ABILITY_POISON_HEAL : ABILITY_SHARPNESS,                                       \
-    .nature = NATURE_ADAMANT,                                                                                 \
-    EV_SPREAD_ATK_SPE_HP,                                                                                     \
+    IDEAL_ATTACKER_PHYSICAL,                                                                                  \
     .moves = {tier <= TIER2 ? MOVE_FACADE : MOVE_SLASH, MOVE_X_SCISSOR, MOVE_NIGHT_SLASH, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                                               \
     }
@@ -1450,8 +1421,7 @@ FLANNERY_REMATCH(5),
     {                                                                          \
     REMATCH_MON(LINOONE, tier, rematch),                                       \
     .ability = ABILITY_QUICK_FEET,                                             \
-    .nature = NATURE_JOLLY,                                                    \
-    EV_SPREAD_ATK_SPE_HP,                                                      \
+    IDEAL_SPEEDSTER_PHYSICAL,                                                  \
     .moves = {MOVE_SLASH, MOVE_PLAY_ROUGH, MOVE_PIN_MISSILE, MOVE_BELLY_DRUM}, \
     .gender = TRAINER_MON_MALE,                                                \
     }
@@ -1460,8 +1430,7 @@ FLANNERY_REMATCH(5),
     {                                                                                     \
     REMATCH_MON(EXPLOUD, tier, rematch),                                                  \
     .ability = ABILITY_PUNK_ROCK,                                                         \
-    .nature = NATURE_MODEST,                                                              \
-    EV_SPREAD_SPA_SPE_HP,                                                                 \
+    IDEAL_ATTACKER_SPECIAL,                                                               \
     .moves = {MOVE_HYPER_VOICE, MOVE_DISARMING_VOICE, MOVE_SHADOW_BALL, MOVE_SUPERSONIC}, \
     .gender = TRAINER_MON_MALE,                                                           \
     }
@@ -1486,8 +1455,7 @@ FLANNERY_REMATCH(5),
     {                                                                 \
     REMATCH_MON(PERSIAN, tier, rematch, ITEM_LIECHI_BERRY),           \
     .ability = ABILITY_TECHNICIAN,                                    \
-    .nature = NATURE_JOLLY,                                           \
-    EV_SPREAD_ATK_SPE_HP,                                             \
+    IDEAL_SPEEDSTER_PHYSICAL,                                         \
     .moves = {MOVE_COVET, MOVE_BITE, MOVE_AERIAL_ACE, MOVE_FAKE_OUT}, \
     .gender = TRAINER_MON_MALE,                                       \
     }
@@ -1526,8 +1494,7 @@ FLANNERY_REMATCH(5),
     {                                                                         \
     REMATCH_MON(DELCATTY, tier, rematch, ITEM_SILK_SCARF),                    \
     .ability = ABILITY_NORMALIZE,                                             \
-    .nature = NATURE_MODEST,                                                  \
-    EV_SPREAD_SPA_SPE_HP,                                                     \
+    IDEAL_ATTACKER_SPECIAL,                                                   \
     .moves = {MOVE_HYPER_VOICE, MOVE_BLIZZARD, MOVE_ASSIST, MOVE_NASTY_PLOT}, \
     .gender = TRAINER_MON_FEMALE,                                             \
     }
@@ -1539,8 +1506,7 @@ FLANNERY_REMATCH(5),
     {                                                                              \
     REMATCH_MON(BIBAREL, tier, rematch),                                           \
     .ability = ABILITY_MOODY,                                                      \
-    .nature = NATURE_ADAMANT,                                                      \
-    EV_SPREAD_ATK_SPE_HP,                                                          \
+    IDEAL_ATTACKER_PHYSICAL,                                                       \
     .moves = {MOVE_BODY_SLAM, MOVE_AQUA_TAIL, MOVE_SUPER_FANG, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                    \
     }
@@ -1551,8 +1517,7 @@ FLANNERY_REMATCH(5),
     {                                                                             \
     REMATCH_MON(PURUGLY, tier, rematch, ITEM_ASSAULT_VEST),                       \
     .ability = ABILITY_THICK_FAT,                                                 \
-    .nature = NATURE_JOLLY,                                                       \
-    EV_SPREAD_ATK_SPE_HP,                                                         \
+    IDEAL_SPEEDSTER_PHYSICAL,                                                     \
     .moves = {MOVE_BODY_SLAM, MOVE_PLAY_ROUGH, MOVE_FEINT_ATTACK, MOVE_FAKE_OUT}, \
     .gender = TRAINER_MON_FEMALE,                                                 \
     }
@@ -1563,8 +1528,7 @@ FLANNERY_REMATCH(5),
     {                                                                           \
     REMATCH_MON(WATCHOG, tier, rematch),                                        \
     .ability = ABILITY_ANALYTIC,                                                \
-    .nature = NATURE_ADAMANT,                                                   \
-    EV_SPREAD_ATK_SPE_HP,                                                       \
+    IDEAL_ATTACKER_PHYSICAL,                                                    \
     .moves = {MOVE_HYPER_FANG, MOVE_SUPER_FANG, MOVE_CRUNCH, MOVE_CONFUSE_RAY}, \
     .gender = TRAINER_MON_MALE,                                                 \
     }
@@ -1573,8 +1537,7 @@ FLANNERY_REMATCH(5),
     {                                                                   \
     REMATCH_MON(STOUTLAND, tier, rematch, ITEM_SILK_SCARF),             \
     .ability = ABILITY_SCRAPPY,                                         \
-    .nature = NATURE_ADAMANT,                                           \
-    EV_SPREAD_ATK_SPE_HP,                                               \
+    IDEAL_ATTACKER_PHYSICAL,                                            \
     .moves = {MOVE_BODY_SLAM, MOVE_CRUNCH, MOVE_PLAY_ROUGH, MOVE_HOWL}, \
     .gender = TRAINER_MON_MALE,                                         \
     }
@@ -1594,8 +1557,7 @@ FLANNERY_REMATCH(5),
     {                                                                             \
     REMATCH_MON(GUMSHOOS, tier, rematch),                                         \
     .ability = ABILITY_STRONG_JAW,                                                \
-    .nature = NATURE_ADAMANT,                                                     \
-    EV_SPREAD_ATK_SPE_HP,                                                         \
+    IDEAL_ATTACKER_PHYSICAL,                                                      \
     .moves = {MOVE_HYPER_FANG, MOVE_PSYCHIC_FANGS, MOVE_CRUNCH, MOVE_SCARY_FACE}, \
     .gender = TRAINER_MON_MALE,                                                   \
     }
@@ -1709,8 +1671,7 @@ NORMAN_REMATCH(5),
     {                                                                           \
     REMATCH_MON(SWELLOW, tier, rematch, ITEM_SHARP_BEAK),                       \
     .ability = ABILITY_SCRAPPY,                                                 \
-    .nature = NATURE_JOLLY,                                                     \
-    EV_SPREAD_ATK_SPE_HP,                                                       \
+    IDEAL_SPEEDSTER_PHYSICAL,                                                   \
     .moves = {MOVE_BRAVE_BIRD, MOVE_ENDEAVOR, MOVE_REVERSAL, MOVE_DOUBLE_TEAM}, \
     .gender = TRAINER_MON_FEMALE,                                               \
     }
@@ -1749,8 +1710,7 @@ NORMAN_REMATCH(5),
     {                                                                                \
     REMATCH_MON(NINJASK, tier, rematch),                                             \
     .ability = ABILITY_SPEED_BOOST,                                                  \
-    .nature = NATURE_JOLLY,                                                          \
-    EV_SPREAD_ATK_SPE_HP,                                                            \
+    IDEAL_SPEEDSTER_PHYSICAL,                                                        \
     .moves = {MOVE_ACROBATICS, MOVE_LEECH_LIFE, MOVE_BATON_PASS, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_FEMALE,                                                    \
     }
@@ -1760,8 +1720,7 @@ NORMAN_REMATCH(5),
     {                                                                              \
     REMATCH_MON(DODRIO, tier, rematch, ITEM_SHARP_BEAK),                           \
     .ability = ABILITY_EARLY_BIRD,                                                 \
-    .nature = NATURE_ADAMANT,                                                      \
-    EV_SPREAD_ATK_SPE_HP,                                                          \
+    IDEAL_ATTACKER_PHYSICAL,                                                       \
     .moves = {MOVE_DRILL_PECK, MOVE_BODY_SLAM, MOVE_JUMP_KICK, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_FEMALE,                                                  \
     }
@@ -1770,8 +1729,7 @@ NORMAN_REMATCH(5),
     {                                                                         \
     REMATCH_MON(XATU, tier, rematch),                                         \
     .ability = ABILITY_EARLY_BIRD,                                            \
-    .nature = NATURE_MODEST,                                                  \
-    EV_SPREAD_SPA_SPE_HP,                                                     \
+    IDEAL_ATTACKER_SPECIAL,                                                   \
     .moves = {MOVE_AIR_SLASH, MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_ROOST}, \
     .gender = TRAINER_MON_FEMALE,                                             \
     }
@@ -1780,8 +1738,7 @@ NORMAN_REMATCH(5),
     {                                                                           \
     REMATCH_MON(STARAPTOR, tier, rematch),                                      \
     .ability = ABILITY_INTIMIDATE,                                              \
-    .nature = NATURE_ADAMANT,                                                   \
-    EV_SPREAD_ATK_SPE_HP,                                                       \
+    IDEAL_ATTACKER_PHYSICAL,                                                    \
     .moves = {MOVE_DUAL_WINGBEAT, MOVE_SLASH, MOVE_CLOSE_COMBAT, MOVE_AGILITY}, \
     .gender = TRAINER_MON_FEMALE,                                               \
     }
@@ -1790,8 +1747,7 @@ NORMAN_REMATCH(5),
     {                                                                                     \
     REMATCH_MON(ROTOM_FAN, tier, rematch),                                                \
     .ability = ABILITY_WIND_POWER,                                                        \
-    .nature = NATURE_MODEST,                                                              \
-    EV_SPREAD_SPA_SPE_HP,                                                                 \
+    IDEAL_ATTACKER_SPECIAL,                                                               \
     .moves = {MOVE_AIR_SLASH, MOVE_PARABOLIC_CHARGE, MOVE_SHADOW_BALL, MOVE_DOUBLE_TEAM}, \
     }
 
@@ -1800,8 +1756,7 @@ NORMAN_REMATCH(5),
     {                                                                        \
     REMATCH_MON(NOIVERN, tier, rematch),                                     \
     .ability = ABILITY_INFILTRATOR,                                          \
-    .nature = NATURE_TIMID,                                                  \
-    EV_SPREAD_SPA_SPE_HP,                                                    \
+    IDEAL_SPEEDSTER_SPECIAL,                                                 \
     .moves = {MOVE_AIR_SLASH, MOVE_DRAGON_PULSE, MOVE_TAILWIND, MOVE_ROOST}, \
     .gender = TRAINER_MON_FEMALE,                                            \
     }
@@ -1819,8 +1774,7 @@ NORMAN_REMATCH(5),
 #define WINONA_CRAMORANT(rematch, tier)                                 \
     {                                                                   \
     REMATCH_MON(CRAMORANT, tier, rematch, ITEM_SHARP_BEAK),             \
-    .nature = NATURE_MODEST,                                            \
-    EV_SPREAD_SPA_SPE_HP,                                               \
+    IDEAL_ATTACKER_SPECIAL,                                             \
     .moves = {MOVE_AIR_SLASH, MOVE_SURF, MOVE_ICE_BEAM, MOVE_TAILWIND}, \
     .gender = TRAINER_MON_FEMALE,                                       \
     }
@@ -1830,8 +1784,7 @@ NORMAN_REMATCH(5),
     {                                                                               \
     REMATCH_MON(BOMBIRDIER, tier, rematch, ITEM_SHARP_BEAK),                        \
     .ability = ABILITY_ROCKY_PAYLOAD,                                               \
-    .nature = NATURE_ADAMANT,                                                       \
-    EV_SPREAD_ATK_SPE_HP,                                                           \
+    IDEAL_ATTACKER_PHYSICAL,                                                        \
     .moves = {MOVE_DRILL_PECK, MOVE_THROAT_CHOP, MOVE_ROCK_SLIDE, MOVE_HONE_CLAWS}, \
     .gender = TRAINER_MON_FEMALE,                                                   \
     }
@@ -1841,8 +1794,7 @@ NORMAN_REMATCH(5),
     {                                                                              \
     REMATCH_MON(FLAMIGO, tier, rematch, ITEM_FLYING_GEM),                          \
     .ability = ABILITY_SCRAPPY,                                                    \
-    .nature = NATURE_ADAMANT,                                                      \
-    EV_SPREAD_ATK_SPE_HP,                                                          \
+    IDEAL_ATTACKER_PHYSICAL,                                                       \
     .moves = {MOVE_ACROBATICS, MOVE_HIGH_JUMP_KICK, MOVE_LIQUIDATION, MOVE_ROOST}, \
     .gender = TRAINER_MON_FEMALE,                                                  \
     }
@@ -1981,8 +1933,7 @@ WINONA_REMATCH(5),
     {                                                                               \
     REMATCH_MON(ALAKAZAM, tier, rematch, ITEM_TWISTED_SPOON),                       \
     .ability = ABILITY_MAGIC_GUARD,                                                 \
-    .nature = NATURE_MODEST,                                                        \
-    EV_SPREAD_SPA_SPE_HP,                                                           \
+    IDEAL_ATTACKER_SPECIAL,                                                         \
     .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_SHADOW_BALL, MOVE_CALM_MIND}, \
     .gender = TRAINER_MON_MALE,                                                     \
     }
@@ -1991,8 +1942,7 @@ WINONA_REMATCH(5),
     {                                                                                       \
     REMATCH_MON(RAPIDASH_GALAR, tier, rematch, ITEM_SITRUS_BERRY),                          \
     .ability = ABILITY_PASTEL_VEIL,                                                         \
-    .nature = NATURE_JOLLY,                                                                 \
-    EV_SPREAD_ATK_SPE_HP,                                                                   \
+    IDEAL_SPEEDSTER_PHYSICAL,                                                               \
     .moves = {MOVE_ZEN_HEADBUTT, MOVE_PLAY_ROUGH, MOVE_HIGH_HORSEPOWER, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_FEMALE,                                                           \
     }
@@ -2017,8 +1967,7 @@ WINONA_REMATCH(5),
     {                                                                                \
     REMATCH_MON(ESPEON, tier, rematch),                                              \
     .ability = ABILITY_MAGIC_BOUNCE,                                                 \
-    .nature = NATURE_MODEST,                                                         \
-    EV_SPREAD_SPA_SPE_HP,                                                            \
+    IDEAL_ATTACKER_SPECIAL,                                                          \
     .moves = {MOVE_PSYCHIC, MOVE_POWER_GEM, MOVE_MORNING_SUN, MOVE_PSYCHIC_TERRAIN}, \
     .gender = TRAINER_MON_FEMALE,                                                    \
     }
@@ -2039,8 +1988,7 @@ WINONA_REMATCH(5),
     {                                                                                   \
     REMATCH_MON(MEOWSTIC_M, tier, rematch, ITEM_SITRUS_BERRY),                          \
     .ability = ABILITY_PRANKSTER,                                                       \
-    .nature = NATURE_TIMID,                                                             \
-    EV_SPREAD_SPA_SPE_HP,                                                               \
+    IDEAL_SPEEDSTER_SPECIAL,                                                            \
     .moves = {MOVE_PSYCHIC, MOVE_PSYCHIC_TERRAIN, MOVE_TEARFUL_LOOK, MOVE_DOUBLE_TEAM}, \
     .gender = TRAINER_MON_MALE,                                                         \
     }
@@ -2049,8 +1997,7 @@ WINONA_REMATCH(5),
     {                                                                            \
     REMATCH_MON(MEOWSTIC_F, tier, rematch, ITEM_SITRUS_BERRY),                   \
     .ability = ABILITY_COMPETITIVE,                                              \
-    .nature = NATURE_MODEST,                                                     \
-    EV_SPREAD_SPA_SPE_HP,                                                        \
+    IDEAL_ATTACKER_SPECIAL,                                                      \
     .moves = {MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_SIGNAL_BEAM, MOVE_CALM_MIND}, \
     .gender = TRAINER_MON_FEMALE,                                                \
     }
@@ -2091,8 +2038,7 @@ WINONA_REMATCH(5),
     {                                                                                    \
     REMATCH_MON(ESPATHRA, tier, rematch),                                                \
     .ability = ABILITY_OPPORTUNIST,                                                      \
-    .nature = NATURE_TIMID,                                                              \
-    EV_SPREAD_SPA_SPE_HP,                                                                \
+    IDEAL_SPEEDSTER_SPECIAL,                                                             \
     .moves = {MOVE_LUMINA_CRASH, MOVE_DAZZLING_GLEAM, MOVE_SHADOW_BALL, MOVE_CALM_MIND}, \
     .gender = TRAINER_MON_FEMALE,                                                        \
     }
@@ -2187,8 +2133,7 @@ TATE_AND_LIZA_REMATCH(5),
     {                                                                                     \
     REMATCH_MON(LUVDISC, tier, rematch, ITEM_DAMP_ROCK),                                  \
     .ability = ABILITY_SWIFT_SWIM,                                                        \
-    .nature = NATURE_TIMID,                                                               \
-    EV_SPREAD_SPA_SPE_HP,                                                                 \
+    IDEAL_SPEEDSTER_SPECIAL,                                                              \
     .moves = {MOVE_HYDRO_PUMP, MOVE_DRAINING_KISS, MOVE_BABY_DOLL_EYES, MOVE_RAIN_DANCE}, \
     .gender = TRAINER_MON_FEMALE,                                                         \
     }
@@ -2197,8 +2142,7 @@ TATE_AND_LIZA_REMATCH(5),
     {                                                                          \
     REMATCH_MON(CRAWDAUNT, tier, rematch, ITEM_MYSTIC_WATER),                  \
     .ability = ABILITY_SHELL_ARMOR,                                            \
-    .nature = NATURE_ADAMANT,                                                  \
-    EV_SPREAD_ATK_SPE_HP,                                                      \
+    IDEAL_ATTACKER_PHYSICAL,                                                   \
     .moves = {MOVE_CRABHAMMER, MOVE_CRUNCH, MOVE_ENDEAVOR, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                \
     }
@@ -2217,8 +2161,7 @@ TATE_AND_LIZA_REMATCH(5),
     {                                                                            \
     REMATCH_MON(CASTFORM, tier, rematch),                                        \
     .ability = ABILITY_FORECAST,                                                 \
-    .nature = NATURE_MODEST,                                                     \
-    EV_SPREAD_SPA_SPE_HP,                                                        \
+    IDEAL_ATTACKER_SPECIAL,                                                      \
     .moves = {MOVE_WEATHER_BALL, MOVE_THUNDER, MOVE_HURRICANE, MOVE_RAIN_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                  \
     }
@@ -2244,8 +2187,7 @@ TATE_AND_LIZA_REMATCH(5),
     {                                                                           \
     REMATCH_MON(NIDOQUEEN, tier, rematch, ITEM_POISON_BARB),                    \
     .ability = ABILITY_SHEER_FORCE,                                             \
-    .nature = NATURE_ADAMANT,                                                   \
-    EV_SPREAD_ATK_SPE_HP,                                                       \
+    IDEAL_ATTACKER_PHYSICAL,                                                    \
     .moves = {MOVE_POISON_JAB, MOVE_DRILL_RUN, MOVE_CRUNCH, MOVE_TOXIC_SPIKES}, \
     .gender = TRAINER_MON_FEMALE,                                               \
     }
@@ -2255,8 +2197,7 @@ TATE_AND_LIZA_REMATCH(5),
     {                                                                             \
     REMATCH_MON(NIDOKING, tier, rematch, ITEM_POISON_BARB),                       \
     .ability = ABILITY_SHEER_FORCE,                                               \
-    .nature = NATURE_ADAMANT,                                                     \
-    EV_SPREAD_ATK_SPE_HP,                                                         \
+    IDEAL_ATTACKER_PHYSICAL,                                                      \
     .moves = {MOVE_POISON_JAB, MOVE_DRILL_RUN, MOVE_THROAT_CHOP, MOVE_IRON_TAIL}, \
     .gender = TRAINER_MON_MALE,                                                   \
     }
@@ -2265,8 +2206,7 @@ TATE_AND_LIZA_REMATCH(5),
     {                                                                             \
     REMATCH_MON(CROBAT, tier, rematch, ITEM_FLYING_GEM),                          \
     .ability = ABILITY_INNER_FOCUS,                                               \
-    .nature = NATURE_JOLLY,                                                       \
-    EV_SPREAD_ATK_SPE_HP,                                                         \
+    IDEAL_SPEEDSTER_PHYSICAL,                                                     \
     .moves = {MOVE_POISON_JAB, MOVE_ACROBATICS, MOVE_LEECH_LIFE, MOVE_IRON_TAIL}, \
     .gender = TRAINER_MON_MALE,                                                   \
     }
@@ -2278,8 +2218,7 @@ TATE_AND_LIZA_REMATCH(5),
     {                                                                         \
     REMATCH_MON(MUK, tier, rematch, ITEM_BLACK_SLUDGE),                       \
     .ability = ABILITY_POISON_TOUCH,                                          \
-    .nature = NATURE_ADAMANT,                                                 \
-    EV_SPREAD_ATK_SPE_HP,                                                     \
+    IDEAL_ATTACKER_PHYSICAL,                                                  \
     .moves = {MOVE_POISON_JAB, MOVE_DRAIN_PUNCH, MOVE_ICE_PUNCH, MOVE_LUNGE}, \
     .gender = TRAINER_MON_MALE,                                               \
     }
@@ -2315,8 +2254,7 @@ TATE_AND_LIZA_REMATCH(5),
     {                                                                  \
     REMATCH_MON(SEVIPER, tier, rematch),                               \
     .ability = ABILITY_SHED_SKIN,                                      \
-    .nature = NATURE_ADAMANT,                                          \
-    EV_SPREAD_ATK_SPE_HP,                                              \
+    IDEAL_ATTACKER_PHYSICAL,                                           \
     .moves = {MOVE_GUNK_SHOT, MOVE_CRUNCH, MOVE_AQUA_TAIL, MOVE_COIL}, \
     .gender = TRAINER_MON_MALE,                                        \
     }
@@ -2346,8 +2284,7 @@ TATE_AND_LIZA_REMATCH(5),
     {                                                                            \
     REMATCH_MON(TOXICROAK, tier, rematch, ITEM_BLACK_SLUDGE),                    \
     .ability = ABILITY_POISON_TOUCH,                                             \
-    .nature = NATURE_ADAMANT,                                                    \
-    EV_SPREAD_ATK_SPE_HP,                                                        \
+    IDEAL_ATTACKER_PHYSICAL,                                                     \
     .moves = {MOVE_POISON_JAB, MOVE_DRAIN_PUNCH, MOVE_TOXIC, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                  \
     }
@@ -2407,8 +2344,7 @@ JUAN_REMATCH(5),
     {                                                                                                       \
     ELITE_FOUR_MON(Level, ABSOL, Tier, SIDNEY, Level < POSTGAME_LEVEL ? ITEM_SITRUS_BERRY : ITEM_ABSOLITE), \
     .ability = ABILITY_SHARPNESS,                                                                           \
-    .nature = NATURE_ADAMANT,                                                                               \
-    EV_SPREAD_ATK_SPE_HP,                                                                                   \
+    IDEAL_ATTACKER_PHYSICAL,                                                                                \
     .moves = {MOVE_NIGHT_SLASH, MOVE_PSYCHO_CUT, MOVE_AERIAL_ACE, MOVE_SWORDS_DANCE},                       \
     .gender = TRAINER_MON_MALE,                                                                             \
     }
@@ -2417,8 +2353,7 @@ JUAN_REMATCH(5),
     {                                                                                 \
     ELITE_FOUR_MON(Level, CACTURNE, Tier, SIDNEY),                                    \
     .ability = ABILITY_WATER_ABSORB,                                                  \
-    .nature = NATURE_MODEST,                                                          \
-    EV_SPREAD_SPA_SPE_HP,                                                             \
+    IDEAL_ATTACKER_SPECIAL,                                                           \
     .moves = {MOVE_DARK_PULSE, MOVE_ENERGY_BALL, MOVE_LEECH_SEED, MOVE_SPIKY_SHIELD}, \
     .gender = TRAINER_MON_MALE,                                                       \
     }
@@ -2427,8 +2362,7 @@ JUAN_REMATCH(5),
     {                                                                           \
     ELITE_FOUR_MON(Level, CRAWDAUNT, Tier, SIDNEY),                             \
     .ability = ABILITY_HYPER_CUTTER,                                            \
-    .nature = NATURE_ADAMANT,                                                   \
-    EV_SPREAD_ATK_SPE_HP,                                                       \
+    IDEAL_ATTACKER_PHYSICAL,                                                    \
     .moves = {MOVE_CRUNCH, MOVE_CRABHAMMER, MOVE_KNOCK_OFF, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                 \
     }
@@ -2437,8 +2371,7 @@ JUAN_REMATCH(5),
     {                                                                          \
     ELITE_FOUR_MON(Level, SHIFTRY, Tier, SIDNEY),                              \
     .ability = ABILITY_WIND_RIDER,                                             \
-    .nature = NATURE_ADAMANT,                                                  \
-    EV_SPREAD_ATK_SPE_HP,                                                      \
+    IDEAL_ATTACKER_PHYSICAL,                                                   \
     .moves = {MOVE_NIGHT_SLASH, MOVE_LEAF_BLADE, MOVE_FAKE_OUT, MOVE_ROLLOUT}, \
     .gender = TRAINER_MON_MALE,                                                \
     }
@@ -2447,8 +2380,7 @@ JUAN_REMATCH(5),
     {                                                                           \
     ELITE_FOUR_MON(Level, MIGHTYENA, Tier, SIDNEY),                             \
     .ability = ABILITY_INTIMIDATE,                                              \
-    .nature = NATURE_ADAMANT,                                                   \
-    EV_SPREAD_ATK_SPE_HP,                                                       \
+    IDEAL_ATTACKER_PHYSICAL,                                                    \
     .moves = {MOVE_CRUNCH, MOVE_PLAY_ROUGH, MOVE_FIRE_FANG, MOVE_THUNDER_FANG}, \
     .gender = TRAINER_MON_MALE,                                                 \
     }
@@ -2457,8 +2389,7 @@ JUAN_REMATCH(5),
     {                                                                          \
     ELITE_FOUR_MON(Level, SHARPEDO, Tier, SIDNEY),                             \
     .ability = ABILITY_ROUGH_SKIN,                                             \
-    .nature = NATURE_ADAMANT,                                                  \
-    EV_SPREAD_ATK_SPE_HP,                                                      \
+    IDEAL_ATTACKER_PHYSICAL,                                                   \
     .moves = {MOVE_CRUNCH, MOVE_LIQUIDATION, MOVE_POISON_FANG, MOVE_ICE_FANG}, \
     .gender = TRAINER_MON_MALE,                                                \
     }
@@ -2491,8 +2422,7 @@ JUAN_REMATCH(5),
     {                                                                         \
     ELITE_FOUR_MON(Level, HONCHKROW, Tier, SIDNEY, ITEM_SCOPE_LENS),          \
     .ability = ABILITY_SUPER_LUCK,                                            \
-    .nature = NATURE_ADAMANT,                                                 \
-    EV_SPREAD_ATK_SPE_HP,                                                     \
+    IDEAL_ATTACKER_PHYSICAL,                                                  \
     .moves = {MOVE_NIGHT_SLASH, MOVE_ACROBATICS, MOVE_U_TURN, MOVE_TAILWIND}, \
     .gender = TRAINER_MON_MALE,                                               \
     }
@@ -2503,8 +2433,7 @@ JUAN_REMATCH(5),
     {                                                                                  \
     ELITE_FOUR_MON(Level, WEAVILE, Tier, SIDNEY),                                      \
     .ability = ABILITY_PRESSURE,                                                       \
-    .nature = NATURE_JOLLY,                                                            \
-    EV_SPREAD_ATK_SPE_HP,                                                              \
+    IDEAL_SPEEDSTER_PHYSICAL,                                                          \
     .moves = {MOVE_NIGHT_SLASH, MOVE_ICICLE_CRASH, MOVE_ICE_SHARD, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                        \
     }
@@ -2513,8 +2442,7 @@ JUAN_REMATCH(5),
     {                                                                                 \
     ELITE_FOUR_MON(Level, HOUNDOOM, Tier, SIDNEY),                                    \
     .ability = ABILITY_FLASH_FIRE,                                                    \
-    .nature = NATURE_MODEST,                                                          \
-    EV_SPREAD_SPA_SPE_HP,                                                             \
+    IDEAL_ATTACKER_SPECIAL,                                                           \
     .moves = {MOVE_DARK_PULSE, MOVE_FLAMETHROWER, MOVE_SLUDGE_BOMB, MOVE_NASTY_PLOT}, \
     .gender = TRAINER_MON_MALE,                                                       \
     }
@@ -2526,8 +2454,7 @@ JUAN_REMATCH(5),
     {                                                                              \
     ELITE_FOUR_MON(Level, LIEPARD, Tier, SIDNEY, ITEM_LIECHI_BERRY),               \
     .ability = ABILITY_UNBURDEN,                                                   \
-    .nature = NATURE_JOLLY,                                                        \
-    EV_SPREAD_ATK_SPE_HP,                                                          \
+    IDEAL_SPEEDSTER_PHYSICAL,                                                      \
     .moves = {MOVE_NIGHT_SLASH, MOVE_PSYCHO_CUT, MOVE_SEED_BOMB, MOVE_PLAY_ROUGH}, \
     .gender = TRAINER_MON_FEMALE,                                                  \
     }
@@ -2538,8 +2465,7 @@ JUAN_REMATCH(5),
     {                                                                             \
     ELITE_FOUR_MON(Level, ZOROARK, Tier, SIDNEY),                                 \
     .ability = ABILITY_ILLUSION,                                                  \
-    .nature = NATURE_MODEST,                                                      \
-    EV_SPREAD_SPA_SPE_HP,                                                         \
+    IDEAL_ATTACKER_SPECIAL,                                                       \
     .moves = {MOVE_NIGHT_DAZE, MOVE_PSYCHIC, MOVE_FLAMETHROWER, MOVE_NASTY_PLOT}, \
     .gender = TRAINER_MON_MALE,                                                   \
     }
@@ -2552,8 +2478,7 @@ JUAN_REMATCH(5),
     {                                                                                  \
     ELITE_FOUR_MON(Level, MALAMAR, Tier, SIDNEY),                                      \
     .ability = ABILITY_CONTRARY,                                                       \
-    .nature = NATURE_ADAMANT,                                                          \
-    EV_SPREAD_ATK_SPE_HP,                                                              \
+    IDEAL_ATTACKER_PHYSICAL,                                                           \
     .moves = {MOVE_THROAT_CHOP, MOVE_ZEN_HEADBUTT, MOVE_SUPERPOWER, MOVE_TOPSY_TURVY}, \
     .gender = TRAINER_MON_FEMALE,                                                      \
     }
@@ -2564,8 +2489,7 @@ JUAN_REMATCH(5),
     {                                                                                \
     ELITE_FOUR_MON(Level, GRIMMSNARL, Tier, SIDNEY),                                 \
     .ability = ABILITY_PRANKSTER,                                                    \
-    .nature = NATURE_ADAMANT,                                                        \
-    EV_SPREAD_ATK_SPE_HP,                                                            \
+    IDEAL_ATTACKER_PHYSICAL,                                                         \
     .moves = {MOVE_FALSE_SURRENDER, MOVE_PLAY_ROUGH, MOVE_LEECH_LIFE, MOVE_BULK_UP}, \
     .gender = TRAINER_MON_MALE,                                                      \
     }
@@ -2574,8 +2498,7 @@ JUAN_REMATCH(5),
     {                                                                       \
     ELITE_FOUR_MON(Level, MABOSSTIFF, Tier, SIDNEY),                        \
     .ability = ABILITY_INTIMIDATE,                                          \
-    .nature = NATURE_ADAMANT,                                               \
-    EV_SPREAD_ATK_SPE_HP,                                                   \
+    IDEAL_ATTACKER_PHYSICAL,                                                \
     .moves = {MOVE_CRUNCH, MOVE_PLAY_ROUGH, MOVE_OUTRAGE, MOVE_HONE_CLAWS}, \
     .gender = TRAINER_MON_MALE,                                             \
     }
@@ -2626,8 +2549,7 @@ JUAN_REMATCH(5),
     {                                                                                  \
     ELITE_FOUR_MON(Level, BANETTE, Tier, PHOEBE),                                      \
     .ability = ABILITY_CURSED_BODY,                                                    \
-    .nature = NATURE_ADAMANT,                                                          \
-    EV_SPREAD_ATK_SPE_HP,                                                              \
+    IDEAL_ATTACKER_PHYSICAL,                                                           \
     .moves = {MOVE_SHADOW_CLAW, MOVE_BODY_SLAM, MOVE_SHADOW_SNEAK, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_FEMALE,                                                      \
     }
@@ -2646,8 +2568,7 @@ JUAN_REMATCH(5),
     {                                                                          \
     ELITE_FOUR_MON(Level, SHEDINJA, Tier, PHOEBE),                             \
     .ability = ABILITY_WONDER_GUARD,                                           \
-    .nature = NATURE_ADAMANT,                                                  \
-    EV_SPREAD_ATK_SPE_HP,                                                      \
+    IDEAL_ATTACKER_PHYSICAL,                                                   \
     .moves = {MOVE_SHADOW_CLAW, MOVE_LEECH_LIFE, MOVE_HEAL_BLOCK, MOVE_SPITE}, \
     .gender = TRAINER_MON_NONE,                                                \
     }
@@ -2677,8 +2598,7 @@ JUAN_REMATCH(5),
     {                                                                                   \
     ELITE_FOUR_MON(Level, GENGAR, Tier, PHOEBE),                                        \
     .ability = ABILITY_CURSED_BODY,                                                     \
-    .nature = NATURE_MODEST,                                                            \
-    EV_SPREAD_SPA_SPE_HP,                                                               \
+    IDEAL_ATTACKER_SPECIAL,                                                             \
     .moves = {MOVE_SHADOW_BALL, MOVE_GIGA_DRAIN, MOVE_DAZZLING_GLEAM, MOVE_NASTY_PLOT}, \
     .gender = TRAINER_MON_FEMALE,                                                       \
     }
@@ -2711,8 +2631,7 @@ JUAN_REMATCH(5),
     {                                                                                 \
     ELITE_FOUR_MON(Level, CHANDELURE, Tier, PHOEBE),                                  \
     .ability = ABILITY_INFILTRATOR,                                                   \
-    .nature = NATURE_MODEST,                                                          \
-    EV_SPREAD_SPA_SPE_HP,                                                             \
+    IDEAL_ATTACKER_SPECIAL,                                                           \
     .moves = {MOVE_SHADOW_BALL, MOVE_FLAMETHROWER, MOVE_ENERGY_BALL, MOVE_CALM_MIND}, \
     .gender = TRAINER_MON_FEMALE,                                                     \
     }
@@ -2721,8 +2640,7 @@ JUAN_REMATCH(5),
     {                                                                               \
     ELITE_FOUR_MON(Level, TREVENANT, Tier, PHOEBE),                                 \
     .ability = ABILITY_NATURAL_CURE,                                                \
-    .nature = NATURE_ADAMANT,                                                       \
-    EV_SPREAD_ATK_SPE_HP,                                                           \
+    IDEAL_ATTACKER_PHYSICAL,                                                        \
     .moves = {MOVE_SHADOW_CLAW, MOVE_HORN_LEECH, MOVE_ROCK_SLIDE, MOVE_LEECH_SEED}, \
     .gender = TRAINER_MON_FEMALE,                                                   \
     }
@@ -2753,8 +2671,7 @@ JUAN_REMATCH(5),
     {                                                                                 \
     ELITE_FOUR_MON(Level, MIMIKYU, Tier, PHOEBE),                                     \
     .ability = ABILITY_DISGUISE,                                                      \
-    .nature = NATURE_ADAMANT,                                                         \
-    EV_SPREAD_ATK_SPE_HP,                                                             \
+    IDEAL_ATTACKER_PHYSICAL,                                                          \
     .moves = {MOVE_SHADOW_CLAW, MOVE_PLAY_ROUGH, MOVE_LEECH_LIFE, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_FEMALE,                                                     \
     }
@@ -2763,8 +2680,7 @@ JUAN_REMATCH(5),
     {                                                                                 \
     ELITE_FOUR_MON(Level, DHELMISE, Tier, PHOEBE),                                    \
     .ability = ABILITY_STEELWORKER,                                                   \
-    .nature = NATURE_ADAMANT,                                                         \
-    EV_SPREAD_ATK_SPE_HP,                                                             \
+    IDEAL_ATTACKER_PHYSICAL,                                                          \
     .moves = {MOVE_SHADOW_CLAW, MOVE_POWER_WHIP, MOVE_ANCHOR_SHOT, MOVE_LIQUIDATION}, \
     .gender = TRAINER_MON_NONE,                                                       \
     }
@@ -2827,8 +2743,7 @@ JUAN_REMATCH(5),
     {                                                                               \
     ELITE_FOUR_MON(Level, FROSLASS, Tier, GLACIA),                                  \
     .ability = ABILITY_SNOW_CLOAK,                                                  \
-    .nature = NATURE_TIMID,                                                         \
-    EV_SPREAD_SPA_SPE_HP,                                                           \
+    IDEAL_SPEEDSTER_SPECIAL,                                                        \
     .moves = {MOVE_BLIZZARD, MOVE_SHADOW_BALL, MOVE_DRAINING_KISS, MOVE_SNOWSCAPE}, \
     .gender = TRAINER_MON_FEMALE,                                                   \
     }
@@ -2837,8 +2752,7 @@ JUAN_REMATCH(5),
     {                                                                               \
     ELITE_FOUR_MON(Level, GLALIE, Tier, GLACIA),                                    \
     .ability = ABILITY_ICE_BODY,                                                    \
-    .nature = NATURE_MODEST,                                                        \
-    EV_SPREAD_SPA_SPE_HP,                                                           \
+    IDEAL_ATTACKER_SPECIAL,                                                         \
     .moves = {MOVE_FREEZE_DRY, MOVE_WEATHER_BALL, MOVE_DARK_PULSE, MOVE_SNOWSCAPE}, \
     .gender = TRAINER_MON_MALE,                                                     \
     }
@@ -2847,8 +2761,7 @@ JUAN_REMATCH(5),
     {                                                                             \
     ELITE_FOUR_MON(Level, CASTFORM, Tier, GLACIA),                                \
     .ability = ABILITY_FORECAST,                                                  \
-    .nature = NATURE_MODEST,                                                      \
-    EV_SPREAD_SPA_SPE_HP,                                                         \
+    IDEAL_ATTACKER_SPECIAL,                                                       \
     .moves = {MOVE_BLIZZARD, MOVE_WEATHER_BALL, MOVE_HYDRO_PUMP, MOVE_SNOWSCAPE}, \
     .gender = TRAINER_MON_FEMALE,                                                 \
     }
@@ -2882,8 +2795,7 @@ JUAN_REMATCH(5),
     {                                                                             \
     ELITE_FOUR_MON(Level, GLACEON, Tier, GLACIA),                                 \
     .ability = ABILITY_ICE_BODY,                                                  \
-    .nature = NATURE_MODEST,                                                      \
-    EV_SPREAD_SPA_SPE_HP,                                                         \
+    IDEAL_ATTACKER_SPECIAL,                                                       \
     .moves = {MOVE_ICE_BEAM, MOVE_SHADOW_BALL, MOVE_CALM_MIND, MOVE_AURORA_VEIL}, \
     .gender = TRAINER_MON_FEMALE,                                                 \
     }
@@ -2893,8 +2805,7 @@ JUAN_REMATCH(5),
     {                                                                               \
     ELITE_FOUR_MON(Level, MAMOSWINE, Tier, GLACIA, ITEM_SITRUS_BERRY),              \
     .ability = ABILITY_THICK_FAT,                                                   \
-    .nature = NATURE_ADAMANT,                                                       \
-    EV_SPREAD_ATK_SPE_HP,                                                           \
+    IDEAL_ATTACKER_PHYSICAL,                                                        \
     .moves = {MOVE_ICICLE_CRASH, MOVE_EARTHQUAKE, MOVE_TRAILBLAZE, MOVE_SNOWSCAPE}, \
     .gender = TRAINER_MON_FEMALE,                                                   \
     }
@@ -2906,8 +2817,7 @@ JUAN_REMATCH(5),
     {                                                                                \
     ELITE_FOUR_MON(Level, VANILLUXE, Tier, GLACIA),                                  \
     .ability = ABILITY_SNOW_WARNING,                                                 \
-    .nature = NATURE_MODEST,                                                         \
-    EV_SPREAD_SPA_SPE_HP,                                                            \
+    IDEAL_ATTACKER_SPECIAL,                                                          \
     .moves = {MOVE_BLIZZARD, MOVE_FLASH_CANNON, MOVE_HYPER_VOICE, MOVE_SIGNAL_BEAM}, \
     .gender = TRAINER_MON_FEMALE,                                                    \
     }
@@ -2916,8 +2826,7 @@ JUAN_REMATCH(5),
     {                                                                             \
     ELITE_FOUR_MON(Level, BEARTIC, Tier, GLACIA),                                 \
     .ability = ABILITY_SNOW_CLOAK,                                                \
-    .nature = NATURE_ADAMANT,                                                     \
-    EV_SPREAD_ATK_SPE_HP,                                                         \
+    IDEAL_ATTACKER_PHYSICAL,                                                      \
     .moves = {MOVE_ICICLE_CRASH, MOVE_PLAY_ROUGH, MOVE_AQUA_JET, MOVE_SNOWSCAPE}, \
     .gender = TRAINER_MON_FEMALE,                                                 \
     }
@@ -2940,8 +2849,7 @@ JUAN_REMATCH(5),
     {                                                                                  \
     ELITE_FOUR_MON(Level, EISCUE, Tier, GLACIA),                                       \
     .ability = ABILITY_ICE_FACE,                                                       \
-    .nature = NATURE_ADAMANT,                                                          \
-    EV_SPREAD_ATK_SPE_HP,                                                              \
+    IDEAL_ATTACKER_PHYSICAL,                                                           \
     .moves = {MOVE_ICICLE_CRASH, MOVE_LIQUIDATION, MOVE_ZEN_HEADBUTT, MOVE_SNOWSCAPE}, \
     .gender = TRAINER_MON_FEMALE,                                                      \
     }
@@ -2984,8 +2892,7 @@ JUAN_REMATCH(5),
     {                                                                                    \
     ELITE_FOUR_MON(Level, SALAMENCE, Tier, DRAKE, ITEM_SALAMENCITE),                     \
     .ability = ABILITY_INTIMIDATE,                                                       \
-    .nature = NATURE_ADAMANT,                                                            \
-    EV_SPREAD_ATK_SPE_HP,                                                                \
+    IDEAL_ATTACKER_PHYSICAL,                                                             \
     .moves = {MOVE_DRAGON_CLAW, MOVE_DUAL_WINGBEAT, MOVE_ROCK_SLIDE, MOVE_DRAGON_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                          \
     }
@@ -2994,8 +2901,7 @@ JUAN_REMATCH(5),
     {                                                                                 \
     ELITE_FOUR_MON(Level, FLYGON, Tier, DRAKE),                                       \
     .ability = ABILITY_LEVITATE,                                                      \
-    .nature = NATURE_ADAMANT,                                                         \
-    EV_SPREAD_ATK_SPE_HP,                                                             \
+    IDEAL_ATTACKER_PHYSICAL,                                                          \
     .moves = {MOVE_DRAGON_CLAW, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_DRAGON_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                       \
     }
@@ -3014,8 +2920,7 @@ JUAN_REMATCH(5),
     {                                                                     \
     ELITE_FOUR_MON(Level, KINGDRA, Tier, DRAKE),                          \
     .ability = ABILITY_SNIPER,                                            \
-    .nature = NATURE_MODEST,                                              \
-    EV_SPREAD_SPA_SPE_HP,                                                 \
+    IDEAL_ATTACKER_SPECIAL,                                               \
     .moves = {MOVE_DRAGON_PULSE, MOVE_SURF, MOVE_SMOKESCREEN, MOVE_YAWN}, \
     .gender = TRAINER_MON_MALE,                                           \
     }
@@ -3045,8 +2950,7 @@ JUAN_REMATCH(5),
     {                                                                                   \
     ELITE_FOUR_MON(Level, DRAGONITE, Tier, DRAKE),                                      \
     .ability = ABILITY_MULTISCALE,                                                      \
-    .nature = NATURE_ADAMANT,                                                           \
-    EV_SPREAD_ATK_SPE_HP,                                                               \
+    IDEAL_ATTACKER_PHYSICAL,                                                            \
     .moves = {MOVE_DRAGON_CLAW, MOVE_DUAL_WINGBEAT, MOVE_IRON_HEAD, MOVE_DRAGON_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                         \
     }
@@ -3055,8 +2959,7 @@ JUAN_REMATCH(5),
     {                                                                                \
     ELITE_FOUR_MON(Level, GARCHOMP, Tier, DRAKE, ITEM_GARCHOMPITE),                  \
     .ability = ABILITY_ROUGH_SKIN,                                                   \
-    .nature = NATURE_ADAMANT,                                                        \
-    EV_SPREAD_ATK_SPE_HP,                                                            \
+    IDEAL_ATTACKER_PHYSICAL,                                                         \
     .moves = {MOVE_DRAGON_CLAW, MOVE_EARTHQUAKE, MOVE_IRON_HEAD, MOVE_SWORDS_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                      \
     }
@@ -3066,8 +2969,7 @@ JUAN_REMATCH(5),
     {                                                                                \
     ELITE_FOUR_MON(Level, HAXORUS, Tier, DRAKE),                                     \
     .ability = ABILITY_MOLD_BREAKER,                                                 \
-    .nature = NATURE_ADAMANT,                                                        \
-    EV_SPREAD_ATK_SPE_HP,                                                            \
+    IDEAL_ATTACKER_PHYSICAL,                                                         \
     .moves = {MOVE_DRAGON_CLAW, MOVE_IRON_HEAD, MOVE_EARTHQUAKE, MOVE_DRAGON_DANCE}, \
     .gender = TRAINER_MON_MALE,                                                      \
     }
@@ -3077,8 +2979,7 @@ JUAN_REMATCH(5),
     {                                                                          \
     ELITE_FOUR_MON(Level, DRUDDIGON, Tier, DRAKE),                             \
     .ability = ABILITY_SHEER_FORCE,                                            \
-    .nature = NATURE_ADAMANT,                                                  \
-    EV_SPREAD_ATK_SPE_HP,                                                      \
+    IDEAL_ATTACKER_PHYSICAL,                                                   \
     .moves = {MOVE_DRAGON_CLAW, MOVE_IRON_HEAD, MOVE_CRUNCH, MOVE_FIRE_PUNCH}, \
     .gender = TRAINER_MON_MALE,                                                \
     }
@@ -3098,8 +2999,7 @@ JUAN_REMATCH(5),
     {                                                                                    \
     ELITE_FOUR_MON(Level, DRAMPA, Tier, DRAKE),                                          \
     .ability = ABILITY_SAP_SIPPER,                                                       \
-    .nature = NATURE_MODEST,                                                             \
-    EV_SPREAD_SPA_SPE_HP,                                                                \
+    IDEAL_ATTACKER_SPECIAL,                                                              \
     .moves = {MOVE_DRAGON_PULSE, MOVE_HYPER_VOICE, MOVE_ENERGY_BALL, MOVE_FLAMETHROWER}, \
     .gender = TRAINER_MON_MALE,                                                          \
     }
@@ -3112,8 +3012,7 @@ JUAN_REMATCH(5),
     {                                                                          \
     ELITE_FOUR_MON(Level, CYCLIZAR, Tier, DRAKE),                              \
     .ability = ABILITY_REGENERATOR,                                            \
-    .nature = NATURE_JOLLY,                                                    \
-    EV_SPREAD_ATK_SPE_HP,                                                      \
+    IDEAL_SPEEDSTER_PHYSICAL,                                                  \
     .moves = {MOVE_DRAGON_CLAW, MOVE_U_TURN, MOVE_SHIFT_GEAR, MOVE_SHED_TAIL}, \
     .gender = TRAINER_MON_MALE,                                                \
     }
@@ -3182,8 +3081,7 @@ JUAN_REMATCH(5),
     {                                                                        \
     WALLACE_STEVEN_MON(Level, LUDICOLO),                                     \
     .ability = ABILITY_SWIFT_SWIM,                                           \
-    .nature = NATURE_MODEST,                                                 \
-    EV_SPREAD_SPA_SPE_HP,                                                    \
+    IDEAL_ATTACKER_SPECIAL,                                                  \
     .moves = {MOVE_SURF, MOVE_GIGA_DRAIN, MOVE_LEECH_SEED, MOVE_RAIN_DANCE}, \
     .gender = TRAINER_MON_MALE,                                              \
     .ball = ITEM_ULTRA_BALL,                                                 \
@@ -3268,8 +3166,7 @@ JUAN_REMATCH(5),
     {                                                                                  \
     WALLACE_STEVEN_MON(Level, TOGEKISS),                                               \
     .ability = ABILITY_SERENE_GRACE,                                                   \
-    .nature = NATURE_MODEST,                                                           \
-    EV_SPREAD_SPA_SPE_HP,                                                              \
+    IDEAL_ATTACKER_SPECIAL,                                                            \
     .moves = {MOVE_DAZZLING_GLEAM, MOVE_AIR_SLASH, MOVE_AURA_SPHERE, MOVE_NASTY_PLOT}, \
     .gender = TRAINER_MON_MALE,                                                        \
     .heldItem = ITEM_SITRUS_BERRY,                                                     \
@@ -3280,8 +3177,7 @@ JUAN_REMATCH(5),
     {                                                                            \
     WALLACE_STEVEN_MON(Level, GRANBULL),                                         \
     .ability = ABILITY_STRONG_JAW,                                               \
-    .nature = NATURE_ADAMANT,                                                    \
-    EV_SPREAD_ATK_SPE_HP,                                                        \
+    IDEAL_ATTACKER_PHYSICAL,                                                     \
     .moves = {MOVE_PLAY_ROUGH, MOVE_CRUNCH, MOVE_FIRE_FANG, MOVE_PSYCHIC_FANGS}, \
     .gender = TRAINER_MON_MALE,                                                  \
     .ball = ITEM_ULTRA_BALL,                                                     \
@@ -3305,8 +3201,7 @@ JUAN_REMATCH(5),
     {                                                                                         \
     WALLACE_STEVEN_MON(Level, SLURPUFF),                                                      \
     .ability = ABILITY_SWEET_VEIL,                                                            \
-    .nature = NATURE_MODEST,                                                                  \
-    EV_SPREAD_SPA_SPE_HP,                                                                     \
+    IDEAL_ATTACKER_SPECIAL,                                                                   \
     .moves = {MOVE_DAZZLING_GLEAM, MOVE_LIGHT_SCREEN, MOVE_COTTON_GUARD, MOVE_MISTY_TERRAIN}, \
     .gender = TRAINER_MON_MALE,                                                               \
     .heldItem = ITEM_TERRAIN_EXTENDER,                                                        \

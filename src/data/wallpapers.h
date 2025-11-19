@@ -340,6 +340,7 @@ static const u32 sWallpaperIcon_PlusleJapan[]  = INCBIN_U32("graphics/pokemon_st
 static const u32 sWallpaperIcon_Minun[]        = INCBIN_U32("graphics/pokemon_storage/wallpapers/icons/minun.4bpp.smol");
 static const u32 sWallpaperIcon_Togepi[]       = INCBIN_U32("graphics/pokemon_storage/wallpapers/icons/togepi.4bpp.smol");
 static const u32 sWallpaperIcon_Magma[]        = INCBIN_U32("graphics/pokemon_storage/wallpapers/icons/magma.4bpp.smol");
+static const u32 sWallpaperIcon_Blank[]        = INCBIN_U32("graphics/pokemon_storage/wallpapers/icons/blank.4bpp.smol");
 
 static const struct Wallpaper sWaldaWallpapers[] =
 {
@@ -405,4 +406,5 @@ static const u32 *const sWaldaWallpaperIcons[] =
     sWallpaperIcon_Minun,
     sWallpaperIcon_Togepi,
     sWallpaperIcon_Magma,
+    sWallpaperIcon_Blank,
 };

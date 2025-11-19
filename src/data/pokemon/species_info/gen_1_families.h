@@ -2292,130 +2292,78 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
                                 {EVO_NONE, 0, SPECIES_RATICATE_ALOLA_TOTEM}),
     },
 
+#define RATICATE_ALOLA_INFO                                  \
+    .baseHP        = 75,                                     \
+    .baseAttack    = 71,                                     \
+    .baseDefense   = 70,                                     \
+    .baseSpeed     = 77,                                     \
+    .baseSpAttack  = 40,                                     \
+    .baseSpDefense = 80,                                     \
+    .types = MON_TYPES(TYPE_DARK, TYPE_NORMAL),              \
+    .catchRate = 127,                                        \
+    .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 145 : 116, \
+    .evYield_Speed = 2,                                      \
+    .itemRare = ITEM_PECHA_BERRY,                            \
+    .genderRatio = PERCENT_FEMALE(50),                       \
+    .eggCycles = 15,                                         \
+    .friendship = STANDARD_FRIENDSHIP,                       \
+    .growthRate = GROWTH_MEDIUM_FAST,                        \
+    .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),            \
+    .bodyColor = BODY_COLOR_BLACK,                           \
+    .speciesName = _("Raticate"),                            \
+    .cryId = CRY_RATICATE,                                   \
+    .natDexNum = NATIONAL_DEX_RATICATE,                      \
+    .categoryName = _("Rat"),                                \
+    .description = gRaticateAlolaPokedexText,                \
+    .pokemonScale = 459,                                     \
+    .pokemonOffset = 18,                                     \
+    .trainerScale = 256,                                     \
+    .trainerOffset = 0,                                      \
+    .frontPic = gMonFrontPic_RaticateAlola,                  \
+    .frontPicSize = MON_COORDS_SIZE(56, 48),                 \
+    .frontPicYOffset = 8,                                    \
+    .frontAnimFrames = sAnims_SingleFramePlaceHolder,        \
+    .frontAnimId = ANIM_FIGURE_8,                            \
+    .backPic = gMonBackPic_RaticateAlola,                    \
+    .backPicSize = MON_COORDS_SIZE(64, 48),                  \
+    .backPicYOffset = 8,                                     \
+    .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,                 \
+    .palette = gMonPalette_RaticateAlola,                    \
+    .shinyPalette = gMonShinyPalette_RaticateAlola,          \
+    .iconSprite = gMonIcon_RaticateAlola,                    \
+    .iconPalIndex = 2,                                       \
+    SHADOW(-4, 3, SHADOW_SIZE_L)                             \
+    FOOTPRINT(Raticate)                                      \
+    OVERWORLD(                                               \
+        sPicTable_RaticateAlola,                             \
+        SIZE_32x32,                                          \
+        SHADOW_SIZE_M,                                       \
+        TRACKS_FOOT,                                         \
+        sAnimTable_Following,                                \
+        gOverworldPalette_RaticateAlola,                     \
+        gShinyOverworldPalette_RaticateAlola                 \
+    )                                                        \
+    .isAlolanForm = TRUE,                                    \
+    .levelUpLearnset = sRaticateAlolaLevelUpLearnset,        \
+    .teachableLearnset = sRaticateAlolaTeachableLearnset,    \
+    .formSpeciesIdTable = sRaticateFormSpeciesIdTable
+
     [SPECIES_RATICATE_ALOLA] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 71,
-        .baseDefense   = 70,
-        .baseSpeed     = 77,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 80,
-        .types = MON_TYPES(TYPE_DARK, TYPE_NORMAL),
-        .catchRate = 127,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 145 : 116,
-        .evYield_Speed = 2,
-        .itemRare = ITEM_PECHA_BERRY,
-        .genderRatio = PERCENT_FEMALE(50),
-        .eggCycles = 15,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        RATICATE_ALOLA_INFO,
         .abilities = { ABILITY_GLUTTONY, ABILITY_HUSTLE, ABILITY_THICK_FAT },
-        .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Raticate"),
-        .cryId = CRY_RATICATE,
-        .natDexNum = NATIONAL_DEX_RATICATE,
-        .categoryName = _("Rat"),
         .height = 7,
         .weight = 255,
-        .description = gRaticateAlolaPokedexText,
-        .pokemonScale = 459,
-        .pokemonOffset = 18,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-        .frontPic = gMonFrontPic_RaticateAlola,
-        .frontPicSize = MON_COORDS_SIZE(56, 48),
-        .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_RaticateAlola,
-        .backPicSize = MON_COORDS_SIZE(64, 48),
-        .backPicYOffset = 8,
-        //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_RaticateAlola,
-        .shinyPalette = gMonShinyPalette_RaticateAlola,
-        .iconSprite = gMonIcon_RaticateAlola,
-        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
-        SHADOW(-4, 3, SHADOW_SIZE_L)
-        FOOTPRINT(Raticate)
-        OVERWORLD(
-            sPicTable_RaticateAlola,
-            SIZE_32x32,
-            SHADOW_SIZE_M,
-            TRACKS_FOOT,
-            sAnimTable_Following,
-            gOverworldPalette_RaticateAlola,
-            gShinyOverworldPalette_RaticateAlola
-        )
-        .isAlolanForm = TRUE,
-        .levelUpLearnset = sRaticateAlolaLevelUpLearnset,
-        .teachableLearnset = sRaticateAlolaTeachableLearnset,
-        .formSpeciesIdTable = sRaticateFormSpeciesIdTable,
     },
 
     [SPECIES_RATICATE_ALOLA_TOTEM] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 71,
-        .baseDefense   = 70,
-        .baseSpeed     = 77,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 80,
-        .types = MON_TYPES(TYPE_DARK, TYPE_NORMAL),
-        .catchRate = 127,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 145 : 116,
-        .evYield_Speed = 2,
-        .itemRare = ITEM_PECHA_BERRY,
-        .genderRatio = PERCENT_FEMALE(50),
-        .eggCycles = 15,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        RATICATE_ALOLA_INFO,
         .abilities = { ABILITY_THICK_FAT, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Raticate"),
-        .cryId = CRY_RATICATE,
-        .natDexNum = NATIONAL_DEX_RATICATE,
-        .categoryName = _("Rat"),
         .height = 14,
         .weight = 1050,
-        .description = gRaticateAlolaPokedexText,
-        .pokemonScale = 459,
-        .pokemonOffset = 18,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-        .frontPic = gMonFrontPic_RaticateAlola,
-        .frontPicSize = MON_COORDS_SIZE(56, 48),
-        .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_RaticateAlola,
-        .backPicSize = MON_COORDS_SIZE(64, 48),
-        .backPicYOffset = 8,
-        //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_RaticateAlola,
-        .shinyPalette = gMonShinyPalette_RaticateAlola,
-        .iconSprite = gMonIcon_RaticateAlola,
-        .iconPalIndex = 2,
-        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(-4, 3, SHADOW_SIZE_L)
-        FOOTPRINT(Raticate)
-        OVERWORLD(
-            sPicTable_RaticateAlola,
-            SIZE_32x32,
-            SHADOW_SIZE_M,
-            TRACKS_FOOT,
-            sAnimTable_Following,
-            gOverworldPalette_RaticateAlola,
-            gShinyOverworldPalette_RaticateAlola
-        )
-        .isTotem = TRUE,
-        .isAlolanForm = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
-        .levelUpLearnset = sRaticateAlolaLevelUpLearnset,
-        .teachableLearnset = sRaticateAlolaTeachableLearnset,
-        .formSpeciesIdTable = sRaticateFormSpeciesIdTable,
+        TOTEM_INFO,
     },
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_RATTATA
@@ -8839,14 +8787,21 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     #define MACHAMP_EXP_YIELD 193
 #endif
 
+#define MACHAMP_HP  90
+#define MACHAMP_ATK 130
+#define MACHAMP_DEF 80
+#define MACHAMP_SPA 65
+#define MACHAMP_SPD P_UPDATED_STATS >= GEN_2 ? 85 : 65
+#define MACHAMP_SPE 55
+
     [SPECIES_MACHAMP] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 130,
-        .baseDefense   = 80,
-        .baseSpeed     = 55,
-        .baseSpAttack  = 65,
-        .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 85 : 65,
+        .baseHP        = MACHAMP_HP,
+        .baseAttack    = MACHAMP_ATK,
+        .baseDefense   = MACHAMP_DEF,
+        .baseSpeed     = MACHAMP_SPE,
+        .baseSpAttack  = MACHAMP_SPA,
+        .baseSpDefense = MACHAMP_SPD,
         .types = MON_TYPES(TYPE_FIGHTING),
         .catchRate = 45,
         .expYield = MACHAMP_EXP_YIELD,
@@ -8917,15 +8872,30 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sMachampFormChangeTable,
     },
 
+#define MACHAMP_GMAX_INFO                             \
+    .frontPic = gMonFrontPic_MachampGmax,             \
+    .frontPicSize = MON_COORDS_SIZE(64, 64),          \
+    .frontPicYOffset = 0,                             \
+    .frontAnimFrames = sAnims_SingleFramePlaceHolder, \
+    .frontAnimId = ANIM_H_JUMPS,                      \
+    .backPic = gMonBackPic_MachampGmax,               \
+    .backPicSize = MON_COORDS_SIZE(64, 64),           \
+    .backPicYOffset = 3,                              \
+    .backAnimId = BACK_ANIM_V_SHAKE,                  \
+    .palette = gMonPalette_MachampGmax,               \
+    .shinyPalette = gMonShinyPalette_MachampGmax,     \
+    .iconSprite = gMonIcon_MachampGmax,               \
+    .iconPalIndex = 0
+
 #if P_GIGANTAMAX_FORMS
     [SPECIES_MACHAMP_GMAX] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 130,
-        .baseDefense   = 80,
-        .baseSpeed     = 55,
-        .baseSpAttack  = 65,
-        .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 85 : 65,
+        .baseHP        = MACHAMP_HP,
+        .baseAttack    = MACHAMP_ATK,
+        .baseDefense   = MACHAMP_DEF,
+        .baseSpeed     = MACHAMP_SPE,
+        .baseSpAttack  = MACHAMP_SPA,
+        .baseSpDefense = MACHAMP_SPD,
         .types = MON_TYPES(TYPE_FIGHTING),
         .catchRate = 45,
         .expYield = MACHAMP_EXP_YIELD,
@@ -8957,19 +8927,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 1,
         .trainerScale = 269,
         .trainerOffset = -1,
-        .frontPic = gMonFrontPic_MachampGmax,
-        .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_MachampGmax,
-        .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 3,
-        //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_MachampGmax,
-        .shinyPalette = gMonShinyPalette_MachampGmax,
-        .iconSprite = gMonIcon_MachampGmax,
-        .iconPalIndex = 0,
+        MACHAMP_GMAX_INFO,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(7, 13, SHADOW_SIZE_L)
         FOOTPRINT(Machamp)
@@ -8980,6 +8938,20 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sMachampFormChangeTable,
     },
 #endif //P_GIGANTAMAX_FORMS
+
+//#if P_MEGA_EVOLUTIONS
+//    [SPECIES_MACHAMP_MEGA_G] =
+//    {
+//        .baseHP        = MACHAMP_HP,
+//        .baseAttack    = MACHAMP_ATK + 40,
+//        .baseDefense   = MACHAMP_DEF + 20,
+//        .baseSpeed     = MACHAMP_SPE + 20,
+//        .baseSpAttack  = MACHAMP_SPA,
+//        .baseSpDefense = MACHAMP_SPD + 20,
+//        MACHAMP_GMAX_INFO,
+//    }
+//#endif //P_MEGA_EVOLUTIONS
+
 #endif //P_FAMILY_MACHOP
 
 #if P_FAMILY_BELLSPROUT

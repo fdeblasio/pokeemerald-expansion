@@ -3086,34 +3086,34 @@
             "range": "JAGGED_PASS",
             "mons": [
               {
-                "species": "SPOINK"
+                "species": "CABLE_CAR_1"
               },
               {
-                "species": "PHANPY"
+                "species": "CABLE_CAR_2"
               },
               {
-                "species": "NUMEL"
+                "species": "CABLE_CAR_3"
               },
               {
-                "species": "NUMEL"
+                "species": "CABLE_CAR_3"
               },
               {
-                "species": "NUMEL"
+                "species": "CABLE_CAR_3"
               },
               {
-                "species": "NUMEL"
+                "species": "CABLE_CAR_3"
               },
               {
-                "species": "SPOINK"
+                "species": "CABLE_CAR_1"
               },
               {
-                "species": "PHANPY"
+                "species": "CABLE_CAR_2"
               },
               {
-                "species": "MACHOP"
+                "species": "CABLE_CAR_4"
               },
               {
-                "species": "MACHOP"
+                "species": "CABLE_CAR_4"
               }
             ]
           }

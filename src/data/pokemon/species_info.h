@@ -95,6 +95,11 @@
 #define FLIP    0
 #define NO_FLIP 1
 
+#define TOTEM_INFO                          \
+    .pokemonJumpType = PKMN_JUMP_TYPE_NONE, \
+    .isTotem = TRUE,                        \
+    .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT
+
 const struct SpeciesInfo gSpeciesInfo[] =
 {
     [SPECIES_NONE] =

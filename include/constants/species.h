@@ -1599,8 +1599,8 @@
 #define SPECIES_PIKACHU_STARTER                         1487
 #define SPECIES_EEVEE_STARTER                           1488
 #define SPECIES_VENUSAUR_GMAX                           1489
-#define SPECIES_BLASTOISE_GMAX                          1490
-#define SPECIES_CHARIZARD_GMAX                          1491
+#define SPECIES_CHARIZARD_GMAX                          1490
+#define SPECIES_BLASTOISE_GMAX                          1491
 #define SPECIES_BUTTERFREE_GMAX                         1492
 #define SPECIES_PIKACHU_GMAX                            1493
 #define SPECIES_MEOWTH_GMAX                             1494
@@ -1664,6 +1664,44 @@
 #define SPECIES_ZYGARDE_MEGA                            1547
 #define SPECIES_DRAMPA_MEGA                             1548
 #define SPECIES_FALINKS_MEGA                            1549
+//Gigantamax Megas
+//#define SPECIES_VENUSAUR_MEGA_G                       1489
+//#define SPECIES_CHARIZARD_MEGA_G                      1490
+//#define SPECIES_BLASTOISE_MEGA_G                      1491
+//#define SPECIES_BUTTERFREE_MEGA_G                     1492
+//#define SPECIES_PIKACHU_MEGA_G                        1493
+//#define SPECIES_MEOWTH_MEGA_G                         1494
+//#define SPECIES_MACHAMP_MEGA_G                        1495
+//#define SPECIES_GENGAR_MEGA_G                         1496
+//#define SPECIES_KINGLER_MEGA_G                        1497
+//#define SPECIES_LAPRAS_MEGA_G                         1498
+//#define SPECIES_EEVEE_MEGA_G                          1499
+//#define SPECIES_SNORLAX_MEGA_G                        1500
+//#define SPECIES_GARBODOR_MEGA_G                       1501
+//#define SPECIES_MELMETAL_MEGA_G                       1502
+//#define SPECIES_RILLABOOM_MEGA_G                      1503
+//#define SPECIES_CINDERACE_MEGA_G                      1504
+//#define SPECIES_INTELEON_MEGA_G                       1505
+//#define SPECIES_CORVIKNIGHT_MEGA_G                    1506
+//#define SPECIES_ORBEETLE_MEGA_G                       1507
+//#define SPECIES_DREDNAW_MEGA_G                        1508
+//#define SPECIES_COALOSSAL_MEGA_G                      1509
+//#define SPECIES_FLAPPLE_MEGA_G                        1510
+//#define SPECIES_APPLETUN_MEGA_G                       1511
+//#define SPECIES_SANDACONDA_MEGA_G                     1512
+//#define SPECIES_TOXTRICITY_AMPED_MEGA_G               1513
+//#define SPECIES_TOXTRICITY_LOW_KEY_MEGA_G             1514
+//#define SPECIES_CENTISKORCH_MEGA_G                    1515
+//#define SPECIES_HATTERENE_MEGA_G                      1516
+//#define SPECIES_GRIMMSNARL_MEGA_G                     1517
+//#define SPECIES_ALCREMIE_MEGA_G                       1518
+//#define SPECIES_COPPERAJAH_MEGA_G                     1519
+//#define SPECIES_DURALUDON_MEGA_G                      1520
+//#define SPECIES_URSHIFU_SINGLE_STRIKE_MEGA_G          1521
+//#define SPECIES_URSHIFU_SINGLE_STRIKE_STYLE_MEGA_G    SPECIES_URSHIFU_SINGLE_STRIKE_MEGA_G
+//#define SPECIES_URSHIFU_RAPID_STRIKE_MEGA_G           1522
+//#define SPECIES_URSHIFU_RAPID_STRIKE_STYLE_MEGA_G     SPECIES_URSHIFU_RAPID_STRIKE_MEGA_G
+
 
 #define SPECIES_EGG                                     (SPECIES_FALINKS_MEGA + 1)
 
@@ -1765,11 +1803,10 @@
 #define SPECIES_FALLARBOR_MART              SPECIES_SKITTY
 #define SPECIES_ROUTE_117_ROAR              SPECIES_POOCHYENA
 
-#define SPECIES_CABLE_CAR_1                 SPECIES_ZIGZAGOON
-#define SPECIES_CABLE_CAR_2                 SPECIES_POOCHYENA
+#define SPECIES_CABLE_CAR_1                 SPECIES_SPOINK
+#define SPECIES_CABLE_CAR_2                 SPECIES_PHANPY
 #define SPECIES_CABLE_CAR_3                 SPECIES_NUMEL
-#define SPECIES_CABLE_CAR_4                 SPECIES_SPOINK
-#define SPECIES_CABLE_CAR_5                 SPECIES_MACHOP
+#define SPECIES_CABLE_CAR_4                 SPECIES_MACHOP
 
 #define SPECIES_TERRANCE_ACE                SPECIES_BALTOY
 #define SPECIES_JORDAN_ACE                  SPECIES_RHYHORN

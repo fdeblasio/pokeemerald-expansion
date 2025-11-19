@@ -170,7 +170,6 @@ upcoming
     - Important ones should be made into tutors
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Include charms? (might go over Key Items amount)
-- Xaman's TM Case? (https://www.pokecommunity.com/showpost.php?p=10378278)
 
 ### Trainers
 - Remove type duplicates:

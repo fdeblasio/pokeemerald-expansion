@@ -141,8 +141,7 @@ upcoming
         1 151
         5 156
 - Turn some Normal/Flying types into either pure Flying or Flying/Normal?
-- Add in GMax forms as Megas with +20 to every non-HP stat?
-- Use Cable Car defines in wild_encounters
+- Add in GMax forms as Megas with +20 to every non-HP stat? (or 40 to attacking and 0 to non-attacking)
 - Eventually remove RSE and/or BDSP teachable moves?
 - Merge Deoxys teachable learnsets?
 - Standardize starter base stat totals?

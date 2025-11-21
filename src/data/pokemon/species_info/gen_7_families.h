@@ -677,7 +677,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpeed     = 65,
         .baseSpAttack  = 30,
         .baseSpDefense = 30,
-        .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
+        .types = MON_TYPES(TYPE_FLYING),
         .catchRate = 255,
         .expYield = 53,
         .evYield_Attack = 1,
@@ -748,7 +748,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpeed     = 75,
         .baseSpAttack  = 40,
         .baseSpDefense = 50,
-        .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
+        .types = MON_TYPES(TYPE_FLYING),
         .catchRate = 120,
         .expYield = 124,
         .evYield_Attack = 2,
@@ -815,10 +815,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseHP        = 80,
         .baseAttack    = 120,
         .baseDefense   = 75,
-        .baseSpeed     = 60,
+        .baseSpeed     = 75,
         .baseSpAttack  = 75,
         .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
+        .types = MON_TYPES(TYPE_FLYING),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 243 : 218,
         .evYield_Attack = 3,
@@ -1073,11 +1073,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_GRUBBIN
     [SPECIES_GRUBBIN] =
     {
-        .baseHP        = 47,
-        .baseAttack    = 62,
+        .baseHP        = 50,
+        .baseAttack    = 55,
         .baseDefense   = 45,
-        .baseSpeed     = 46,
-        .baseSpAttack  = 55,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 65,
         .baseSpDefense = 45,
         .types = MON_TYPES(TYPE_BUG),
         .catchRate = 255,
@@ -1138,11 +1138,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
     [SPECIES_CHARJABUG] =
     {
-        .baseHP        = 57,
-        .baseAttack    = 82,
+        .baseHP        = 60,
+        .baseAttack    = 55,
         .baseDefense   = 95,
-        .baseSpeed     = 36,
-        .baseSpAttack  = 55,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 85,
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_BUG, TYPE_ELECTRIC),
         .catchRate = 120,
@@ -1209,10 +1209,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
     [SPECIES_VIKAVOLT] =
     {
-        .baseHP        = 77,
+        .baseHP        = 80,
         .baseAttack    = 70,
-        .baseDefense   = 90,
-        .baseSpeed     = 43,
+        .baseDefense   = 95,
+        .baseSpeed     = 50,
         .baseSpAttack  = 145,
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_BUG, TYPE_ELECTRIC),

@@ -32870,7 +32870,9 @@
         "Move": "MOVE_BELCH"
       }
     ],
-    "PreEvoMoves": [],
+    "PreEvoMoves": [
+      "MOVE_PAIN_SPLIT"
+    ],
     "TMMoves": [
       "MOVE_TAKE_DOWN",
       "MOVE_MUD_SLAP",
@@ -35832,7 +35834,9 @@
         "Move": "MOVE_PHANTOM_FORCE"
       }
     ],
-    "PreEvoMoves": [],
+    "PreEvoMoves": [
+      "MOVE_ASTONISH"
+    ],
     "TMMoves": [
       "MOVE_SCARY_FACE",
       "MOVE_PROTECT",

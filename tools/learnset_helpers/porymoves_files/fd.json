@@ -13746,39 +13746,94 @@
     "TutorMoves": []
   },
   "GRUBBIN": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 19,
+        "Move": "MOVE_STRUGGLE_BUG"
+      },
+      {
+        "Level": 21,
+        "Move": "MOVE_SIGNAL_BEAM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "CHARJABUG": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 0,
+        "Move": "MOVE_CHARGE_BEAM"
+      },
+      {
+        "Level": 19,
+        "Move": "MOVE_STRUGGLE_BUG"
+      },
+      {
+        "Level": 23,
+        "Move": "MOVE_SIGNAL_BEAM"
+      },
+      {
+        "Level": 43,
+        "Move": "MOVE_PARABOLIC_CHARGE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "VIKAVOLT": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_CHARGE_BEAM"
+      },
+      {
+        "Level": 19,
+        "Move": "MOVE_STRUGGLE_BUG"
+      },
+      {
+        "Level": 23,
+        "Move": "MOVE_SIGNAL_BEAM"
+      },
+      {
+        "Level": 43,
+        "Move": "MOVE_PARABOLIC_CHARGE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "CRABRAWLER": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 33,
+        "Move": "MOVE_DRAIN_PUNCH"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "CRABOMINABLE": {
-    "LevelMoves": [],
-    "PreEvoMoves": [],
-    "TMMoves": [
-      "MOVE_ICICLE_CRASH"
+    "LevelMoves": [
+      {
+        "Level": 33,
+        "Move": "MOVE_DRAIN_PUNCH"
+      },
+      {
+        "Level": 45,
+        "Move": "MOVE_ICICLE_CRASH"
+      }
     ],
+    "PreEvoMoves": [],
+    "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -13790,14 +13845,32 @@
     "TutorMoves": []
   },
   "CUTIEFLY": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 30,
+        "Move": "MOVE_DISARMING_VOICE"
+      },
+      {
+        "Level": 36,
+        "Move": "MOVE_SIGNAL_BEAM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "RIBOMBEE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 32,
+        "Move": "MOVE_DISARMING_VOICE"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_SIGNAL_BEAM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

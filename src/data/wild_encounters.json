@@ -80,45 +80,36 @@
           "base_label": "gRustboroCity",
           "land_mons": {
             "encounter_rate": 20,
+            "range": "ROUTE_116",
             "mons": [
               {
-                "range": "ROUTE_116",
                 "species": "GROWLITHE"
               },
               {
-                "range": "ROUTE_116",
                 "species": "GROWLITHE_HISUI"
               },
               {
-                "range": "ROUTE_116",
                 "species": "YAMPER"
               },
               {
-                "range": "ROUTE_116",
                 "species": "SWIRLIX"
               },
               {
-                "range": "ROUTE_116",
                 "species": "YAMPER"
               },
               {
-                "range": "ROUTE_116",
                 "species": "SWIRLIX"
               },
               {
-                "range": "ROUTE_116",
                 "species": "GROWLITHE"
               },
               {
-                "range": "ROUTE_116",
                 "species": "GROWLITHE_HISUI"
               },
               {
-                "range": "ROUTE_116",
                 "species": "YAMPER"
               },
               {
-                "range": "ROUTE_116",
                 "species": "SWIRLIX"
               }
             ]
@@ -330,25 +321,21 @@
             ]
           },
           "fishing_mons": {
+            "range": "SOOTOPOLIS_CITY",
             "mons": [
               {
-                "range": "SOOTOPOLIS_CITY",
                 "species": "MAGIKARP"
               },
               {
-                "range": "SOOTOPOLIS_CITY",
                 "species": "MAGIKARP"
               },
               {
-                "range": "SOOTOPOLIS_CITY",
                 "species": "MAGIKARP"
               },
               {
-                "range": "SOOTOPOLIS_CITY",
                 "species": "GYARADOS"
               },
               {
-                "range": "SOOTOPOLIS_CITY",
                 "species": "GYARADOS"
               }
             ]
@@ -376,25 +363,21 @@
             ]
           },
           "fishing_mons": {
+            "range": "PACIFIDLOG_TOWN",
             "mons": [
               {
-                "range": "PACIFIDLOG_TOWN",
                 "species": "MAGIKARP"
               },
               {
-                "range": "PACIFIDLOG_TOWN",
                 "species": "SLOWPOKE"
               },
               {
-                "range": "PACIFIDLOG_TOWN",
                 "species": "SLOWPOKE"
               },
               {
-                "range": "PACIFIDLOG_TOWN",
                 "species": "SLOWBRO"
               },
               {
-                "range": "PACIFIDLOG_TOWN",
                 "species": "SLOWKING"
               }
             ]
@@ -458,25 +441,21 @@
             ]
           },
           "fishing_mons": {
+            "range": "EVER_GRANDE_CITY",
             "mons": [
               {
-                "range": "EVER_GRANDE_CITY",
                 "species": "MAGIKARP"
               },
               {
-                "range": "EVER_GRANDE_CITY",
                 "species": "LAPRAS"
               },
               {
-                "range": "EVER_GRANDE_CITY",
                 "species": "LAPRAS"
               },
               {
-                "range": "EVER_GRANDE_CITY",
                 "species": "LAPRAS"
               },
               {
-                "range": "EVER_GRANDE_CITY",
                 "species": "LAPRAS"
               }
             ]
@@ -2098,25 +2077,21 @@
             ]
           },
           "fishing_mons": {
+            "range": "ROUTE_126",
             "mons": [
               {
-                "range": "ROUTE_126",
                 "species": "MAGIKARP"
               },
               {
-                "range": "ROUTE_126",
                 "species": "ARROKUDA"
               },
               {
-                "range": "ROUTE_126",
                 "species": "WAILMER"
               },
               {
-                "range": "ROUTE_126",
                 "species": "BARRASKEWDA"
               },
               {
-                "range": "ROUTE_126",
                 "species": "WAILORD"
               }
             ]
@@ -2144,25 +2119,21 @@
             ]
           },
           "fishing_mons": {
+            "range": "ROUTE_127",
             "mons": [
               {
-                "range": "ROUTE_127",
                 "species": "MAGIKARP"
               },
               {
-                "range": "ROUTE_127",
                 "species": "ARROKUDA"
               },
               {
-                "range": "ROUTE_127",
                 "species": "WAILMER"
               },
               {
-                "range": "ROUTE_127",
                 "species": "BARRASKEWDA"
               },
               {
-                "range": "ROUTE_127",
                 "species": "WAILORD"
               }
             ]
@@ -2190,25 +2161,21 @@
             ]
           },
           "fishing_mons": {
+            "range": "ROUTE_128",
             "mons": [
               {
-                "range": "ROUTE_128",
                 "species": "MAGIKARP"
               },
               {
-                "range": "ROUTE_128",
                 "species": "LAPRAS"
               },
               {
-                "range": "ROUTE_128",
                 "species": "LAPRAS"
               },
               {
-                "range": "ROUTE_128",
                 "species": "LAPRAS"
               },
               {
-                "range": "ROUTE_128",
                 "species": "LAPRAS"
               }
             ]
@@ -2236,25 +2203,21 @@
             ]
           },
           "fishing_mons": {
+            "range": "ROUTE_129",
             "mons": [
               {
-                "range": "ROUTE_129",
                 "species": "MAGIKARP"
               },
               {
-                "range": "ROUTE_129",
                 "species": "ARROKUDA"
               },
               {
-                "range": "ROUTE_129",
                 "species": "WAILMER"
               },
               {
-                "range": "ROUTE_129",
                 "species": "BARRASKEWDA"
               },
               {
-                "range": "ROUTE_129",
                 "species": "WAILORD"
               }
             ]
@@ -2318,25 +2281,21 @@
             ]
           },
           "fishing_mons": {
+            "range": "ROUTE_130",
             "mons": [
               {
-                "range": "ROUTE_130",
                 "species": "MAGIKARP"
               },
               {
-                "range": "ROUTE_130",
                 "species": "ARROKUDA"
               },
               {
-                "range": "ROUTE_130",
                 "species": "WAILMER"
               },
               {
-                "range": "ROUTE_130",
                 "species": "BARRASKEWDA"
               },
               {
-                "range": "ROUTE_130",
                 "species": "WAILORD"
               }
             ]
@@ -2364,25 +2323,21 @@
             ]
           },
           "fishing_mons": {
+            "range": "ROUTE_131",
             "mons": [
               {
-                "range": "ROUTE_131",
                 "species": "MAGIKARP"
               },
               {
-                "range": "ROUTE_131",
                 "species": "ARROKUDA"
               },
               {
-                "range": "ROUTE_131",
                 "species": "WAILMER"
               },
               {
-                "range": "ROUTE_131",
                 "species": "BARRASKEWDA"
               },
               {
-                "range": "ROUTE_131",
                 "species": "WAILORD"
               }
             ]
@@ -2410,25 +2365,21 @@
             ]
           },
           "fishing_mons": {
+            "range": "ROUTE_132",
             "mons": [
               {
-                "range": "ROUTE_132",
                 "species": "MAGIKARP"
               },
               {
-                "range": "ROUTE_132",
                 "species": "WAILMER"
               },
               {
-                "range": "ROUTE_132",
                 "species": "WAILMER"
               },
               {
-                "range": "ROUTE_132",
                 "species": "WAILORD"
               },
               {
-                "range": "ROUTE_132",
                 "species": "WAILMER"
               }
             ]
@@ -2456,25 +2407,21 @@
             ]
           },
           "fishing_mons": {
+            "range": "ROUTE_133",
             "mons": [
               {
-                "range": "ROUTE_133",
                 "species": "MAGIKARP"
               },
               {
-                "range": "ROUTE_133",
                 "species": "WAILMER"
               },
               {
-                "range": "ROUTE_133",
                 "species": "WAILMER"
               },
               {
-                "range": "ROUTE_133",
                 "species": "WAILORD"
               },
               {
-                "range": "ROUTE_133",
                 "species": "WAILMER"
               }
             ]
@@ -2946,25 +2893,21 @@
             ]
           },
           "fishing_mons": {
+            "range": "METEOR_FALLS_WATERFALL",
             "mons": [
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "MAGIKARP"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "SLOWPOKE"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "SLOWPOKE"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "SLOWKING"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "SLOWBRO"
               }
             ]
@@ -3028,25 +2971,21 @@
             ]
           },
           "fishing_mons": {
+            "range": "METEOR_FALLS_WATERFALL",
             "mons": [
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "MAGIKARP"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "SLOWPOKE"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "SLOWPOKE"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "SLOWKING"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "SLOWBRO"
               }
             ]
@@ -3110,25 +3049,21 @@
             ]
           },
           "fishing_mons": {
+            "range": "METEOR_FALLS_WATERFALL",
             "mons": [
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "MAGIKARP"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "DRATINI"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "DRATINI"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "DRAGONAIR"
               },
               {
-                "range": "METEOR_FALLS_WATERFALL",
                 "species": "DRAGONAIR"
               }
             ]
@@ -3442,25 +3377,21 @@
             ]
           },
           "fishing_mons": {
+            "range": "DIVE_INITIAL",
             "mons": [
               {
-                "range": "DIVE_INITIAL",
                 "species": "MAGIKARP"
               },
               {
-                "range": "DIVE_INITIAL",
                 "species": "ARROKUDA"
               },
               {
-                "range": "DIVE_INITIAL",
                 "species": "ARROKUDA"
               },
               {
-                "range": "DIVE_INITIAL",
                 "species": "BARRASKEWDA"
               },
               {
-                "range": "DIVE_INITIAL",
                 "species": "BARRASKEWDA"
               }
             ]
@@ -4536,25 +4467,21 @@
             ]
           },
           "fishing_mons": {
+            "range": "SEAFLOOR_CAVERN",
             "mons": [
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "MAGIKARP"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CARVANHA"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "ARROKUDA"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "SHARPEDO"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "BARRASKEWDA"
               }
             ]
@@ -4818,25 +4745,21 @@
             ]
           },
           "fishing_mons": {
+            "range": "SEAFLOOR_CAVERN",
             "mons": [
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "MAGIKARP"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CARVANHA"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "ARROKUDA"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "SHARPEDO"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "BARRASKEWDA"
               }
             ]
@@ -4900,25 +4823,21 @@
             ]
           },
           "fishing_mons": {
+            "range": "SEAFLOOR_CAVERN",
             "mons": [
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "MAGIKARP"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "CARVANHA"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "ARROKUDA"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "SHARPEDO"
               },
               {
-                "range": "SEAFLOOR_CAVERN",
                 "species": "BARRASKEWDA"
               }
             ]
@@ -5302,25 +5221,21 @@
             ]
           },
           "fishing_mons": {
+            "range": "VICTORY_ROAD",
             "mons": [
               {
-                "range": "VICTORY_ROAD",
                 "species": "MAGIKARP"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "FEEBAS"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "FEEBAS"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "MILOTIC"
               },
               {
-                "range": "VICTORY_ROAD",
                 "species": "MILOTIC"
               }
             ]
@@ -5384,6 +5299,7 @@
             ]
           },
           "fishing_mons": {
+            "range": "POSTGAME",
             "mons": [
               {
                 "species": "MAGIKARP"
@@ -5461,6 +5377,7 @@
             ]
           },
           "fishing_mons": {
+            "range": "POSTGAME",
             "mons": [
               {
                 "species": "MAGIKARP"
@@ -5538,6 +5455,7 @@
             ]
           },
           "fishing_mons": {
+            "range": "POSTGAME",
             "mons": [
               {
                 "species": "MAGIKARP"
@@ -5615,6 +5533,7 @@
             ]
           },
           "fishing_mons": {
+            "range": "POSTGAME",
             "mons": [
               {
                 "species": "MAGIKARP"
@@ -5692,6 +5611,7 @@
             ]
           },
           "fishing_mons": {
+            "range": "POSTGAME",
             "mons": [
               {
                 "species": "MAGIKARP"
@@ -5769,6 +5689,7 @@
             ]
           },
           "fishing_mons": {
+            "range": "POSTGAME",
             "mons": [
               {
                 "species": "MAGIKARP"

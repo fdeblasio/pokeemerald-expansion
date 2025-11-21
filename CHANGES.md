@@ -1,8 +1,4 @@
 ## Known bugs and other notes
-- Issues with double battles that involve Ace Pokemon
-- Contest bugs:
-    - Interviewer asks about wrong category
-    - Fissure causes a freeze
 - When playing as May, Brendan will walk through his mom at his house if the leftmost tile is triggered
     - Check other gender/tile combinations
 - With the higher levels, using the Exp. Share can cause your team to become overpowered
@@ -1379,7 +1375,7 @@
     - Learns Aqua Jet, Chilling Water, Bubble Beam, Waterfall, and Liquidation by level up
     - Learns Body Press by TM
 
-- Gastly/Haunter/Gengar (not in main game):
+- Gastly/Haunter/Gengar (Battle Frontier only):
     - Type: Ghost/Poison->Ghost
 
 - Drowzee/Hypno (not in main game):
@@ -1537,7 +1533,7 @@
     - Evolves into Galarian Mr. Mime with an Ice Stone
     - Learns Expanding Force by level up
 
-- Mr. Mime (not in main game):
+- Mr. Mime (Battle Frontier only):
     - Type: Psychic/Fairy->Psychic
     - Gender ratio: 50/50->100/0
     - Learns Expanding Force by level up
@@ -3527,7 +3523,15 @@
     - Learns Surf by level up
 
 - Primarina:
+    - Gender ratio: 87.5/12.5->12.5/87.5
     - Learns Surf and Dazzling Gleam by level up
+
+- Pikipek/Trumbeak:
+    - Type: Normal/Flying->Flying
+
+- Toucannon:
+    - Spe: 60->75
+    - Type: Normal/Flying->Flying
 
 - Yungoos:
     - HP: 48->50
@@ -3537,6 +3541,30 @@
     - HP: 88->90
     - Learns Cut, Chip Away, Thunder Fang, Fire Fang, and Ice Fang by level up
 
+- Grubbin:
+    - HP: 47->50
+    - Atk: 62->55
+    - SpA: 55->65
+    - Spe: 46->50
+    - Learns Struggle Bug and Signal Beam by level up
+
+- Charjabug:
+    - HP: 57->60
+    - Atk: 82->55
+    - SpA: 55->85
+    - Spe: 36->50
+    - Learns Charge Beam upon evolving
+    - Learns Struggle Bug, Signal Beam, and Parabolic Charge by level up
+
+- Vikavolt:
+    - HP: 77->80
+    - Def: 90->95
+    - Spe: 43->50
+    - Learns Charge Beam, Struggle Bug, Signal Beam, and Parabolic Charge by level up
+
+- Crabrawler:
+    - Learns Drain Punch by level up
+
 - Crabominable:
     - HP: 97->100
     - Atk: 132->135
@@ -3544,7 +3572,10 @@
     - SpA: 62->65
     - SpD: 67->70
     - Spe: 43->50
-    - Learns Icicle Crash by TM
+    - Learns Drain Punch and Icicle Crash by level up
+
+- Cutiefly/Ribombee:
+    - Learns Disarming Voice and Signal Beam by level up
 
 - Dewpider (postgame):
     - HP: 38->40

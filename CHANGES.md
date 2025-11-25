@@ -2599,10 +2599,14 @@
     - Learn Supercell Slam by level up
 
 - Cranidos/Rampardos:
+    - HP: 67->70
+    - Spe: 58->60
     - Received Rock Head as a second ability
     - Learn Rock Throw, Rock Tomb, Brick Break, and Rock Slide by level up
 
 - Shieldon/Bastiodon:
+    - Atk: 42->45
+    - Def: 118->120
     - Received Rock Head as a second ability
 
 - Combee:

@@ -1601,10 +1601,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_CRANIDOS
     [SPECIES_CRANIDOS] =
     {
-        .baseHP        = 67,
+        .baseHP        = 70,
         .baseAttack    = 125,
         .baseDefense   = 40,
-        .baseSpeed     = 58,
+        .baseSpeed     = 60,
         .baseSpAttack  = 30,
         .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_ROCK),
@@ -1741,8 +1741,8 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     [SPECIES_SHIELDON] =
     {
         .baseHP        = 30,
-        .baseAttack    = 42,
-        .baseDefense   = 118,
+        .baseAttack    = 45,
+        .baseDefense   = 120,
         .baseSpeed     = 30,
         .baseSpAttack  = 42,
         .baseSpDefense = 88,

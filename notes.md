@@ -145,7 +145,6 @@ upcoming
 - Eventually remove RSE and/or BDSP teachable moves?
 - Merge Deoxys teachable learnsets?
 - Standardize starter base stat totals?
-- Standardize fossil base stat totals?
 - See if there's a way to automatically calculate the Pokedex offsets
     - Currently all new ones seem to have a default value (Pecharunt is 1 foot tall and looks huge in it)
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?

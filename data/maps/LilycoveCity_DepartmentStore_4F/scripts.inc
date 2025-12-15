@@ -103,12 +103,18 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_AMPHAROSITE     @ 0181 Battle Frontier
 	.2byte ITEM_TYRANITARITE    @ 0248
 	.2byte ITEM_NONE            @ 0358 Chimecho (move to regular shop when implemented)
+	.2byte ITEM_NONE            @ 0359 Absol Z (move to regular shop when implemented)
 	.2byte ITEM_LATIASITE       @ 0380 Battle Frontier
 	.2byte ITEM_LATIOSITE       @ 0381 Battle Frontier
+	.2byte ITEM_NONE            @ 0398 Staraptor
 	.2byte ITEM_LOPUNNITE       @ 0428
 	.2byte ITEM_GARCHOMPITE     @ 0445
+	.2byte ITEM_NONE            @ 0445 Garchomp Z
 	.2byte ITEM_LUCARIONITE     @ 0448
+	.2byte ITEM_NONE            @ 0448 Lucario Z
 	.2byte ITEM_ABOMASITE       @ 0460
+	.2byte ITEM_NONE            @ 0485 Heatran
+	.2byte ITEM_NONE            @ 0491 Darkrai
 	.2byte ITEM_EMBOARITE       @ 0500
 	.2byte ITEM_EXCADRITE       @ 0530 Battle Frontier
 	.2byte ITEM_AUDINITE        @ 0531
@@ -116,19 +122,28 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_SCRAFTINITE     @ 0560
 	.2byte ITEM_EELEKTROSSITE   @ 0604
 	.2byte ITEM_CHANDELURITE    @ 0609
+	.2byte ITEM_NONE            @ 0623 Golurk
 	.2byte ITEM_CHESNAUGHTITE   @ 0652
 	.2byte ITEM_DELPHOXITE      @ 0655
 	.2byte ITEM_GRENINJITE      @ 0658
 	.2byte ITEM_PYROARITE       @ 0668
 	.2byte ITEM_FLOETTITE       @ 0670
+	.2byte ITEM_NONE            @ 0678 Meowstic
 	.2byte ITEM_MALAMARITE      @ 0687
 	.2byte ITEM_BARBARACITE     @ 0689
 	.2byte ITEM_DRAGALGITE      @ 0691 Battle Frontier
 	.2byte ITEM_HAWLUCHANITE    @ 0701
 	.2byte ITEM_ZYGARDITE       @ 0718
 	.2byte ITEM_DIANCITE        @ 0719
+	.2byte ITEM_NONE            @ 0740 Crabominable
+	.2byte ITEM_NONE            @ 0768 Golisopod
 	.2byte ITEM_DRAMPANITE      @ 0780
+	.2byte ITEM_NONE            @ 0801 Magearna
+	.2byte ITEM_NONE            @ 0807 Zeraora
 	.2byte ITEM_FALINKSITE      @ 0870
+	.2byte ITEM_NONE            @ 0952 Scovillain
+	.2byte ITEM_NONE            @ 0970 Glimmora
+	.2byte ITEM_NONE            @ 0978 Tatsugiri
 	.2byte ITEM_NONE            @ 0998 Baxcalibur
 	pokemartlistend
 

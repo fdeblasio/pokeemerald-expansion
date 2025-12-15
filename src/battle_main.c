@@ -6136,10 +6136,10 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
         isSnowy = gBattleWeather & (B_WEATHER_HAIL | B_WEATHER_SNOW);
         //isFoggy = gBattleWeather & B_WEATHER_FOG; This is failing for some reason
         isFoggy = FALSE;
-        isElectric = IsBattlerTerrainAffected(battler, ability, holdEffect, STATUS_FIELD_ELECTRIC_TERRAIN);
-        isMisty = IsBattlerTerrainAffected(battler, ability, holdEffect, STATUS_FIELD_MISTY_TERRAIN);
-        isGrassy = IsBattlerTerrainAffected(battler, ability, holdEffect, STATUS_FIELD_GRASSY_TERRAIN);
-        isPsychic = IsBattlerTerrainAffected(battler, ability, holdEffect, STATUS_FIELD_PSYCHIC_TERRAIN);
+        isElectric = IsElectricTerrainAffected(battler, ability, holdEffect, gFieldStatuses);
+        isMisty = IsMistyTerrainAffected(battler, ability, holdEffect, gFieldStatuses);
+        isGrassy = IsGrassyTerrainAffected(battler, ability, holdEffect, gFieldStatuses);
+        isPsychic = IsPsychicTerrainAffected(battler, ability, holdEffect, gFieldStatuses);
     }
     else
     {
@@ -6180,7 +6180,7 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
         break;
     case EFFECT_FURY_CUTTER:
         if (monInBattle)
-            power = min(160, CalcFuryCutterBasePower(power, gDisableStructs[battler].furyCutterCounter + 1));
+            power = CalcFuryCutterBasePower(battler, power);
         break;
     case EFFECT_SPIT_UP:
         if (monInBattle)
@@ -6421,16 +6421,13 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
 
     if (gMain.inBattle)
     {
-        if (type == TYPE_ELECTRIC && (gFieldStatuses & STATUS_FIELD_MUDSPORT))
+        if (IsFieldMudSportAffected(type) || IsFieldWaterSportAffected(type))
             UQ4_12_MULTIPLY(power, B_SPORT_DMG_REDUCTION >= GEN_5 ? 0.33 : 0.5);
 
-        if (type == TYPE_FIRE && (gFieldStatuses & STATUS_FIELD_WATERSPORT))
-            UQ4_12_MULTIPLY(power, B_SPORT_DMG_REDUCTION >= GEN_5 ? 0.33 : 0.5);
-
-        if (monInBattle && gBattleMons[battler].volatiles.charge && type == TYPE_ELECTRIC)
+        if (monInBattle && gBattleMons[battler].volatiles.chargeTimer > 0 && type == TYPE_ELECTRIC)
             UQ4_12_MULTIPLY(power, 2.0);
 
-        struct DamageContext ctx = {0};
+        struct BattleContext ctx = {0};
         ctx.battlerAtk = battler;
         ctx.battlerDef = battlerDef;
         ctx.move = move;

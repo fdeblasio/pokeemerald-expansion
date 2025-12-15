@@ -4916,7 +4916,7 @@ BattleScript_WindPowerActivates::
 	printattackstring
 	pause B_WAIT_TIME_SHORT
 	call BattleScript_AbilityPopUp
-	setcharge BS_TARGET
+	setvolatile BS_TARGET, VOLATILE_CHARGE_TIMER, 1
 	printstring STRINGID_BEINGHITCHARGEDPKMNWITHPOWER
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd

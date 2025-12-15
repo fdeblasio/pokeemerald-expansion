@@ -38,6 +38,8 @@ upcoming
 - Z-A Megas:
     - Pidgey line:
         - Make attacking stats more consistent? (Regular has 10 more Atk, but Mega has 55 more SpA)
+    - Raichu:
+        - Give both Physical and Special moves
     - Victreebel line:
         - Make attacking stats more consistent? (Regular has 5 more Atk, but Mega has 10 more SpA)
     - Starmie:
@@ -45,8 +47,45 @@ upcoming
             - It seems like it might actually have 30 more SpA but Pure Power
     - Dragonite line:
         - Make attacking stats more consistent? (Regular has 34 more Atk, but Mega has 21 more SpA)
-    - Malamar:
+    - Chimecho:
+        - Give Steel moves
+    - Absol:
+        - Give Ghost moves
+    - Staraptor:
+        - Give Fighting moves
+    - Garchomp Z:
+        - Special Dragon moves
+    - Lucario Z:
+        - Could revert regular Mega stats back to be Physical since Z is Special
+            - Maybe wait to see how Zs are handled in main games
+    - Heatran:
+        - Atk: 120->110
+        - Spe: 67->77
+    - Darkrai:
+        - Atk: 120->90
+        - Spe: 85->115 (still 10 below regular)
+    - Meowstic:
+        - HP: 74->75
+        - Atk: 48->50
+        - Def: 76->80
+        - SpA: 143->150
+        - SpD: 101->105
+        - Spe: 124->125
+    - Mega Malamar:
         - Take some SpA and give to Atk?
+    - Crabominable:
+        - HP: 97->100
+        - Atk: 157->160
+        - Def: 122->125
+        - SpA: 62->65
+        - SpD: 107->110
+        - Spe: 33->40
+    - Golisopod:
+        - Give Steel moves
+    - Scovillain:
+        - Atk: 138->140
+        - SpA: 138->140
+        - Spe: 75->85
     - Zygarde:
         - Make attacking stats more consistent?
             - Regular forms have more Atk, but Mega has 146 more SpA

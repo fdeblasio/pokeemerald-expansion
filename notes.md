@@ -60,6 +60,19 @@ upcoming
             - Maybe wait to see how Zs are handled in main games
     - Mega Malamar:
         - Take some SpA and give to Atk?
+    - Crabominable:
+        - HP: 97->100
+        - Atk: 157->160
+        - Def: 122->125
+        - SpA: 62->65
+        - SpD: 107->110
+        - Spe: 33->40
+    - Golisopod:
+        - Give Steel moves
+    - Scovillain:
+        - Atk: 138->140
+        - SpA: 138->140
+        - Spe: 75->85
     - Zygarde:
         - Make attacking stats more consistent?
             - Regular forms have more Atk, but Mega has 146 more SpA

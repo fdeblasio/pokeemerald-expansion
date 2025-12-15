@@ -412,8 +412,12 @@ enum BattlerId GetTargetBySlot(enum BattlerId battlerAtk, enum BattlerId battler
 bool32 IsNaturalEnemy(enum Species speciesAttacker, enum Species speciesTarget);
 enum Stat GetDownloadStat(enum BattlerId battler);
 
+<<<<<<< HEAD
 u32 CalcFuryCutterBasePower(enum BattlerId battlerAtk, u32 basePower);
 u32 CalcTerrainBoostedPower(struct DamageContext *ctx, u32 basePower);
+=======
+u32 CalcFuryCutterBasePower(u32 battlerAtk, u32 basePower);
+>>>>>>> 7f98c6d49e (12/15/25 rebase fixes)
 u32 IsFieldMudSportAffected(enum Type moveType);
 u32 IsFieldWaterSportAffected(enum Type moveType);
 

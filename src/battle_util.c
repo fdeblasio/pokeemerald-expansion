@@ -5987,7 +5987,7 @@ u32 CalcFuryCutterBasePower(enum BattlerId battlerAtk, u32 basePower)
     return min(basePower, 160); // The duration to reach 160 depends on a gen
 }
 
-static inline u32 CalcTerrainBoostedPower(struct DamageContext *ctx, u32 basePower)
+u32 CalcTerrainBoostedPower(struct DamageContext *ctx, u32 basePower)
 {
     bool32 isTerrainAffected = FALSE;
 

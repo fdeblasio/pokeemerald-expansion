@@ -6119,6 +6119,12 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
     bool8 isSunny, isRainy, isSandstorm, isSnowy, isFoggy;
     bool8 isElectric, isMisty, isGrassy, isPsychic;
     bool32 monInBattle = gMain.inBattle && gPartyMenu.menuType != PARTY_MENU_TYPE_IN_BATTLE;
+    struct BattleContext ctx = {0};
+
+    if (gMain.inBattle)
+        battlerDef = BATTLE_OPPOSITE(battler);
+    else
+        battlerDef = 0;
 
     if (monInBattle)
     {
@@ -6140,6 +6146,16 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
         isMisty = IsMistyTerrainAffected(battler, ability, holdEffect, gFieldStatuses);
         isGrassy = IsGrassyTerrainAffected(battler, ability, holdEffect, gFieldStatuses);
         isPsychic = IsPsychicTerrainAffected(battler, ability, holdEffect, gFieldStatuses);
+
+        ctx.battlerAtk = battler;
+        ctx.battlerDef = battlerDef;
+        ctx.move = move;
+        ctx.moveType = type;
+        ctx.updateFlags = FALSE;
+        ctx.abilityAtk = ability;
+        ctx.abilityDef = GetBattlerAbility(ctx.battlerDef);
+        ctx.holdEffectAtk = holdEffect;
+        ctx.holdEffectDef = GetBattlerHoldEffect(ctx.battlerDef);
     }
     else
     {
@@ -6162,11 +6178,6 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
         isPsychic = FALSE && IsOverworldMonGrounded(mon); //Can be changed if ever overworld weather or terrain that causes Psychic Terrain
     }
 
-    if (gMain.inBattle)
-        battlerDef = BATTLE_OPPOSITE(battler);
-    else
-        battlerDef = 0;
-
     switch (moveEffect)
     {
     case EFFECT_POWER_BASED_ON_USER_HP:
@@ -6184,7 +6195,7 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
         break;
     case EFFECT_SPIT_UP:
         if (monInBattle)
-            power = 100 * gDisableStructs[battler].stockpileCounter;
+            power = 100 * gBattleMons[battler].volatiles.stockpileCounter;
         break;
     case EFFECT_WEATHER_BALL:
         if (gMain.inBattle)
@@ -6212,11 +6223,9 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
         if (monInBattle)
             power += (CountBattlerStatIncreases(battler, TRUE) * 20);
         break;
-    case EFFECT_EXPLOSION:
-        if (ability == ABILITY_DAMP)
-            power = 0;
-        else if (isMisty && move == MOVE_MISTY_EXPLOSION)
-            UQ4_12_MULTIPLY(power, 1.5);
+    case EFFECT_TERRAIN_BOOST:
+        if (monInBattle)
+            power = CalcTerrainBoostedPower(&ctx, power);
         break;
     case EFFECT_GRAV_APPLE:
         if (gMain.inBattle)
@@ -6228,23 +6237,6 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
     case EFFECT_TERRAIN_PULSE:
         if (isElectric || isMisty || isGrassy || isPsychic)
             power *= 2;
-        break;
-    case EFFECT_EXPANDING_FORCE:
-        if (isPsychic)
-            UQ4_12_MULTIPLY(power, 1.5);
-        break;
-    case EFFECT_RISING_VOLTAGE:
-        if (isElectric) //Actually matters if opponent is affected by terrain
-            power *= 2;
-        break;
-    case EFFECT_PSYBLADE:
-        if (gMain.inBattle)
-        {
-            if (gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN)
-                UQ4_12_MULTIPLY(power, 1.5);
-        }
-        else if ((gWeatherPtr->currWeather == WEATHER_RAIN_THUNDERSTORM && B_THUNDERSTORM_TERRAIN) || GetCurrentRegionMapSectionId() == MAPSEC_NEW_MAUVILLE)
-            UQ4_12_MULTIPLY(power, 1.5);
         break;
     case EFFECT_RAGE_FIST:
         if (monInBattle)
@@ -6270,8 +6262,8 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
                 UQ4_12_MULTIPLY(power, 2.0);
         }
         break;
-    case EFFECT_EARTHQUAKE:
     case EFFECT_MAGNITUDE:
+    case EFFECT_EARTHQUAKE:
         if (gMain.inBattle)
         {
             if (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN)
@@ -6419,6 +6411,9 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
     else if (isPsychic && type == TYPE_PSYCHIC)
         UQ4_12_MULTIPLY(power, B_TERRAIN_TYPE_BOOST >= GEN_8 ? 1.3 : 1.5);
 
+    if (IsMoveDampBanned(move) && ability == ABILITY_DAMP)
+        power = 0;
+
     if (gMain.inBattle)
     {
         if (IsFieldMudSportAffected(type) || IsFieldWaterSportAffected(type))
@@ -6426,17 +6421,6 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
 
         if (monInBattle && gBattleMons[battler].volatiles.chargeTimer > 0 && type == TYPE_ELECTRIC)
             UQ4_12_MULTIPLY(power, 2.0);
-
-        struct BattleContext ctx = {0};
-        ctx.battlerAtk = battler;
-        ctx.battlerDef = battlerDef;
-        ctx.move = move;
-        ctx.moveType = type;
-        ctx.updateFlags = FALSE;
-        ctx.abilityAtk = ability;
-        ctx.abilityDef = GetBattlerAbility(ctx.battlerDef);
-        ctx.holdEffectAtk = holdEffect;
-        ctx.holdEffectDef = GetBattlerHoldEffect(ctx.battlerDef);
 
         uq4_12_t modifier = CalcTypeEffectivenessMultiplier(&ctx);
 

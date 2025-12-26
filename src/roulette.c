@@ -286,7 +286,6 @@ struct GridSelection
     u8 row;      // Never read
     u8 x;
     u8 y;
-    u8 var05;    // Never read
     u8 tilemapOffset;
     u32 flag;
     u32 inSelectionFlags;
@@ -481,6 +480,18 @@ static const struct WindowTemplate sWindowTemplates[] =
     #endif
 };
 
+#define ROULETTE_COLUMN(Pokemon)                                                                         \
+    .baseMultiplier = NUM_BOARD_POKES,                                                                   \
+    .tilemapOffset = 0,                                                                                  \
+    .flag = F_##Pokemon##_COL,                                                                           \
+    .inSelectionFlags = F_##Pokemon##_COL | F_ORANGE_##Pokemon | F_GREEN_##Pokemon | F_PURPLE_##Pokemon, \
+    .flashFlags = F_FLASH_COLUMN
+
+#define ROULETTE_ROW(Color)             \
+    .baseMultiplier = NUM_BOARD_COLORS, \
+    .flag = F_##Color##_ROW,            \
+    .inSelectionFlags = F_##Color##_ROW | F_##Color##_WYNAUT | F_##Color##_AZURILL | F_##Color##_SKITTY | F_##Color##_MAKUHITA
+
 static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
 {
     [SELECTION_NONE] = {
@@ -490,7 +501,6 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .row = 0,
         .x = 7,
         .y = 7,
-        .var05 = 0,
         .tilemapOffset = 0,
         .flag = 0,
         .inSelectionFlags = 0,
@@ -498,67 +508,44 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
     },
     [COL_WYNAUT] = {
         .spriteIdOffset = 12,
-        .baseMultiplier = NUM_BOARD_POKES,
         .column = 1,
         .row = 0,
         .x = 17,
         .y = 7,
-        .var05 = 0,
-        .tilemapOffset = 0,
-        .flag = F_WYNAUT_COL,
-        .inSelectionFlags = F_WYNAUT_COL | F_ORANGE_WYNAUT | F_GREEN_WYNAUT | F_PURPLE_WYNAUT,
-        .flashFlags = F_FLASH_COLUMN,
+        ROULETTE_COLUMN(WYNAUT),
     },
     [COL_AZURILL] = {
         .spriteIdOffset = 13,
-        .baseMultiplier = NUM_BOARD_POKES,
         .column = 2,
         .row = 0,
         .x = 20,
         .y = 7,
-        .var05 = 0,
-        .tilemapOffset = 0,
-        .flag = F_AZURILL_COL,
-        .inSelectionFlags = F_AZURILL_COL | F_ORANGE_AZURILL | F_GREEN_AZURILL | F_PURPLE_AZURILL,
-        .flashFlags = F_FLASH_COLUMN,
+        ROULETTE_COLUMN(AZURILL),
     },
     [COL_SKITTY] = {
         .spriteIdOffset = 14,
-        .baseMultiplier = NUM_BOARD_POKES,
         .column = 3,
         .row = 0,
         .x = 23,
         .y = 7,
-        .var05 = 0,
-        .tilemapOffset = 0,
-        .flag = F_SKITTY_COL,
-        .inSelectionFlags = F_SKITTY_COL | F_ORANGE_SKITTY | F_GREEN_SKITTY | F_PURPLE_SKITTY,
-        .flashFlags = F_FLASH_COLUMN,
+        ROULETTE_COLUMN(SKITTY),
     },
     [COL_MAKUHITA] = {
         .spriteIdOffset = 15,
-        .baseMultiplier = NUM_BOARD_POKES,
         .column = 4,
         .row = 0,
         .x = 26,
         .y = 7,
-        .var05 = 0,
-        .tilemapOffset = 0,
-        .flag = F_MAKUHITA_COL,
-        .inSelectionFlags = F_MAKUHITA_COL | F_ORANGE_MAKUHITA | F_GREEN_MAKUHITA | F_PURPLE_MAKUHITA,
-        .flashFlags = F_FLASH_COLUMN,
+        ROULETTE_COLUMN(MAKUHITA),
     },
     [ROW_ORANGE] = {
         .spriteIdOffset = 16,
-        .baseMultiplier = NUM_BOARD_COLORS,
         .column = 0,
         .row = 1,
         .x = 14,
         .y = 10,
-        .var05 = 0,
         .tilemapOffset = 12,
-        .flag = F_ORANGE_ROW,
-        .inSelectionFlags = F_ORANGE_ROW | F_ORANGE_WYNAUT | F_ORANGE_AZURILL | F_ORANGE_SKITTY | F_ORANGE_MAKUHITA,
+        ROULETTE_ROW(ORANGE),
         .flashFlags = F_FLASH_COLOR_O_WYNAUT | F_FLASH_COLOR_O_AZURILL | F_FLASH_COLOR_O_SKITTY | F_FLASH_COLOR_O_MAKUHITA,
     },
     [SQU_ORANGE_WYNAUT] = {
@@ -568,7 +555,6 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .row = 1,
         .x = 17,
         .y = 10,
-        .var05 = 3,
         .tilemapOffset = 3,
         .flag = F_ORANGE_WYNAUT,
         .inSelectionFlags = F_ORANGE_WYNAUT,
@@ -581,7 +567,6 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .row = 1,
         .x = 20,
         .y = 10,
-        .var05 = 3,
         .tilemapOffset = 3,
         .flag = F_ORANGE_AZURILL,
         .inSelectionFlags = F_ORANGE_AZURILL,
@@ -594,7 +579,6 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .row = 1,
         .x = 23,
         .y = 10,
-        .var05 = 3,
         .tilemapOffset = 3,
         .flag = F_ORANGE_SKITTY,
         .inSelectionFlags = F_ORANGE_SKITTY,
@@ -607,7 +591,6 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .row = 1,
         .x = 26,
         .y = 10,
-        .var05 = 3,
         .tilemapOffset = 3,
         .flag = F_ORANGE_MAKUHITA,
         .inSelectionFlags = F_ORANGE_MAKUHITA,
@@ -615,15 +598,12 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
     },
     [ROW_GREEN] = {
         .spriteIdOffset = 17,
-        .baseMultiplier = NUM_BOARD_COLORS,
         .column = 0,
         .row = 2,
         .x = 14,
         .y = 13,
-        .var05 = 3,
         .tilemapOffset = 15,
-        .flag = F_GREEN_ROW,
-        .inSelectionFlags = F_GREEN_ROW | F_GREEN_WYNAUT | F_GREEN_AZURILL | F_GREEN_SKITTY | F_GREEN_MAKUHITA,
+        ROULETTE_ROW(GREEN),
         .flashFlags = F_FLASH_COLOR_G_WYNAUT | F_FLASH_COLOR_G_AZURILL | F_FLASH_COLOR_G_SKITTY | F_FLASH_COLOR_G_MAKUHITA,
     },
     [SQU_GREEN_WYNAUT] = {
@@ -633,7 +613,6 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .row = 2,
         .x = 17,
         .y = 13,
-        .var05 = 6,
         .tilemapOffset = 6,
         .flag = F_GREEN_WYNAUT,
         .inSelectionFlags = F_GREEN_WYNAUT,
@@ -646,7 +625,6 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .row = 2,
         .x = 20,
         .y = 13,
-        .var05 = 6,
         .tilemapOffset = 6,
         .flag = F_GREEN_AZURILL,
         .inSelectionFlags = F_GREEN_AZURILL,
@@ -659,7 +637,6 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .row = 2,
         .x = 23,
         .y = 13,
-        .var05 = 6,
         .tilemapOffset = 6,
         .flag = F_GREEN_SKITTY,
         .inSelectionFlags = F_GREEN_SKITTY,
@@ -672,7 +649,6 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .row = 2,
         .x = 26,
         .y = 13,
-        .var05 = 6,
         .tilemapOffset = 6,
         .flag = F_GREEN_MAKUHITA,
         .inSelectionFlags = F_GREEN_MAKUHITA,
@@ -680,15 +656,12 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
     },
     [ROW_PURPLE] = {
         .spriteIdOffset = 18,
-        .baseMultiplier = NUM_BOARD_COLORS,
         .column = 0,
         .row = 3,
         .x = 14,
         .y = 16,
-        .var05 = 6,
         .tilemapOffset = 18,
-        .flag = F_PURPLE_ROW,
-        .inSelectionFlags = F_PURPLE_ROW | F_PURPLE_WYNAUT | F_PURPLE_AZURILL | F_PURPLE_SKITTY | F_PURPLE_MAKUHITA,
+        ROULETTE_ROW(PURPLE),
         .flashFlags = F_FLASH_COLOR_P_WYNAUT | F_FLASH_COLOR_P_AZURILL | F_FLASH_COLOR_P_SKITTY | F_FLASH_COLOR_P_MAKUHITA,
     },
     [SQU_PURPLE_WYNAUT] = {
@@ -698,7 +671,6 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .row = 3,
         .x = 17,
         .y = 16,
-        .var05 = 9,
         .tilemapOffset = 9,
         .flag = F_PURPLE_WYNAUT,
         .inSelectionFlags = F_PURPLE_WYNAUT,
@@ -711,7 +683,6 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .row = 3,
         .x = 20,
         .y = 16,
-        .var05 = 9,
         .tilemapOffset = 9,
         .flag = F_PURPLE_AZURILL,
         .inSelectionFlags = F_PURPLE_AZURILL,
@@ -724,7 +695,6 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .row = 3,
         .x = 23,
         .y = 16,
-        .var05 = 9,
         .tilemapOffset = 9,
         .flag = F_PURPLE_SKITTY,
         .inSelectionFlags = F_PURPLE_SKITTY,
@@ -737,7 +707,6 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .row = 3,
         .x = 26,
         .y = 16,
-        .var05 = 9,
         .tilemapOffset = 9,
         .flag = F_PURPLE_MAKUHITA,
         .inSelectionFlags = F_PURPLE_MAKUHITA,
@@ -745,88 +714,80 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
     },
 };
 
+#define ROULETTE_SLOT(Slot)   \
+    .gridSquare = SQU_##Slot, \
+    .flag = F_##Slot
+
 static const struct RouletteSlot sRouletteSlots[] =
 {
     {
         .id1 = 0,
         .id2 = 1,
-        .gridSquare = SQU_ORANGE_WYNAUT,
-        .flag = F_ORANGE_WYNAUT,
+        ROULETTE_SLOT(ORANGE_WYNAUT)
     },
     {
         .id1 = 1,
         .id2 = 3,
-        .gridSquare = SQU_GREEN_AZURILL,
-        .flag = F_GREEN_AZURILL,
+        ROULETTE_SLOT(GREEN_AZURILL)
     },
     {
         .id1 = 2,
         .id2 = 5,
-        .gridSquare = SQU_PURPLE_SKITTY,
-        .flag = F_PURPLE_SKITTY,
+        ROULETTE_SLOT(PURPLE_SKITTY)
     },
     {
         .id1 = 3,
         .id2 = 7,
-        .gridSquare = SQU_ORANGE_MAKUHITA,
-        .flag = F_ORANGE_MAKUHITA,
+        ROULETTE_SLOT(ORANGE_MAKUHITA)
     },
     {
         .id1 = 4,
         .id2 = 9,
-        .gridSquare = SQU_GREEN_WYNAUT,
-        .flag = F_GREEN_WYNAUT,
+        ROULETTE_SLOT(GREEN_WYNAUT)
     },
     {
         .id1 = 5,
         .id2 = 11,
-        .gridSquare = SQU_PURPLE_AZURILL,
-        .flag = F_PURPLE_AZURILL,
+        ROULETTE_SLOT(PURPLE_AZURILL)
     },
     {
         .id1 = 6,
         .id2 = 13,
-        .gridSquare = SQU_ORANGE_SKITTY,
-        .flag = F_ORANGE_SKITTY,
+        ROULETTE_SLOT(ORANGE_SKITTY)
     },
     {
         .id1 = 7,
         .id2 = 15,
-        .gridSquare = SQU_GREEN_MAKUHITA,
-        .flag = F_GREEN_MAKUHITA,
+        ROULETTE_SLOT(GREEN_MAKUHITA)
     },
     {
         .id1 = 8,
         .id2 = 17,
-        .gridSquare = SQU_PURPLE_WYNAUT,
-        .flag = F_PURPLE_WYNAUT,
+        ROULETTE_SLOT(PURPLE_WYNAUT)
     },
     {
         .id1 = 9,
         .id2 = 19,
-        .gridSquare = SQU_ORANGE_AZURILL,
-        .flag = F_ORANGE_AZURILL,
+        ROULETTE_SLOT(ORANGE_AZURILL)
     },
     {
         .id1 = 10,
         .id2 = 21,
-        .gridSquare = SQU_GREEN_SKITTY,
-        .flag = F_GREEN_SKITTY,
+        ROULETTE_SLOT(GREEN_SKITTY)
     },
     {
         .id1 = 11,
         .id2 = 23,
-        .gridSquare = SQU_PURPLE_MAKUHITA,
-        .flag = F_PURPLE_MAKUHITA,
+        ROULETTE_SLOT(PURPLE_MAKUHITA)
     },
 };
-static const u8 sTableMinBets[] = {1, 3, 1, 6};
+static const u8 sTableMinBets[] = {10, 100, 10, 200};
 
 static const struct RouletteTable sRouletteTables[] =
 {
     // Left table
     {
-        .minBet = 1,
+        .minBet = 10,
         .randDistanceHigh = DEGREES_PER_SLOT * 2,
         .randDistanceLow = DEGREES_PER_SLOT,
         .wheelSpeed = 1,
@@ -847,7 +808,7 @@ static const struct RouletteTable sRouletteTables[] =
     },
     // Right table
     {
-        .minBet = 3,
+        .minBet = 100,
         .randDistanceHigh = DEGREES_PER_SLOT,
         .randDistanceLow = DEGREES_PER_SLOT / 2,
         .wheelSpeed = 1,
@@ -1876,7 +1837,7 @@ static void Task_GivePayout(u8 taskId)
 
 static void Task_PrintPayout(u8 taskId)
 {
-    ConvertIntToDecimalStringN(gStringVar1, (sRoulette->minBet * gTasks[taskId].tMultiplier), STR_CONV_MODE_LEFT_ALIGN, 2);
+    ConvertIntToDecimalStringN(gStringVar1, (sRoulette->minBet * gTasks[taskId].tMultiplier), STR_CONV_MODE_LEFT_ALIGN, 4);
     StringExpandPlaceholders(gStringVar4, Roulette_Text_YouveWonXCoins);
     DrawStdWindowFrame(sTextWindowId, FALSE);
     AddTextPrinterParameterized(sTextWindowId, FONT_NORMAL, gStringVar4, 0, 1, TEXT_SKIP_DRAW, NULL);
@@ -3357,7 +3318,7 @@ static void Task_PrintMinBet(u8 taskId)
     if (JOY_NEW(A_BUTTON | B_BUTTON))
     {
         u32 minBet = sTableMinBets[GET_MIN_BET_ID(gSpecialVar_0x8004)];
-        ConvertIntToDecimalStringN(gStringVar1, minBet, STR_CONV_MODE_LEADING_ZEROS, 1);
+        ConvertIntToDecimalStringN(gStringVar1, minBet, STR_CONV_MODE_LEFT_ALIGN, 3);
         StringExpandPlaceholders(gStringVar4, Roulette_Text_PlayMinimumWagerIsX);
         DrawStdWindowFrame(0, FALSE);
         AddTextPrinterParameterized(0, FONT_NORMAL, gStringVar4, 0, 1, TEXT_SKIP_DRAW, NULL);
@@ -3368,10 +3329,9 @@ static void Task_PrintMinBet(u8 taskId)
 
 static void Task_PrintRouletteEntryMsg(u8 taskId)
 {
-    s32 minBet;
     PrintCoinsString(gTasks[taskId].tCoins);
-    minBet = sTableMinBets[GET_MIN_BET_ID(gSpecialVar_0x8004)];
-    ConvertIntToDecimalStringN(gStringVar1, minBet, STR_CONV_MODE_LEADING_ZEROS, 1);
+    u32 minBet = sTableMinBets[GET_MIN_BET_ID(gSpecialVar_0x8004)];
+    ConvertIntToDecimalStringN(gStringVar1, minBet, STR_CONV_MODE_LEFT_ALIGN, 3);
 
     if (gTasks[taskId].tCoins >= minBet)
     {

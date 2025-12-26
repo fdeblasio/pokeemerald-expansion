@@ -598,7 +598,7 @@ MauvilleCity_GameCorner_Text_HeresSomeSlotsInfo:
 	.string "Reel Time chances…\p"
 	.string "It is possible to receive four regular\n"
 	.string "bonuses, then a big bonus.\p"
-	.string "That would total 660 Coins, but it's\n"
+	.string "That would total 7000 Coins, but it's\n"
 	.string "very difficult to get.$"
 
 MauvilleCity_GameCorner_Text_CantPlayWithNoCoinCase:

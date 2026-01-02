@@ -494,6 +494,8 @@
 
 ### Moves:
 - All moves automatically have their max PP amount
+- Added custom 40 BP moves for type/category combos that were missing them
+    - Animations and descriptions are currently missing
 #### Many moves (especially signature moves) were given 100% accuracy and/or 10 PP as opposed to 5:
 - Normal:
     - Barrage:
@@ -506,6 +508,7 @@
     - Comet Punch:
         - Power: 18->20
         - Accuracy: 85->100
+        - PP: 15->20
     - Constrict:
         - Power: 10->30
         - Chance to reduce speed: 10%->30%
@@ -529,6 +532,7 @@
     - Fury Swipes:
         - Power: 18->20
         - Accuracy: 80->100
+        - PP: 15->20
     - Head Charge:
         - No longer causes recoil
     - Hyper Drill:
@@ -537,6 +541,8 @@
         - Accuracy: 90->100
     - Mega Punch:
         - Accuracy: 85->100
+    - Pound:
+        - PP: 35->40
     - Present:
         - Accuracy: 90->100
         - Now heals allies similar to Pollen Puff
@@ -550,8 +556,14 @@
         - Accuracy: 85->100
     - Return:
         - Max power: 102->127.5
+    - Scratch:
+        - PP: 35->40
     - Slam:
         - Accuracy: 75->100
+    - Spike Cannon:
+        - PP: 15->20
+    - Tackle:
+        - PP: 35->40
     - Tail Slap:
         - Accuracy: 85->100
     - Take Down:
@@ -592,6 +604,8 @@
         - Accuracy: 80->100
     - Dual Wingbeat:
         - Accuracy: 90->100
+    - Gust:
+        - PP: 35->40
     - Fly:
         - Accuracy: 95->100
     - Peck:
@@ -937,6 +951,8 @@
     - Disarming Voice:
         - Power: 40->60
         - PP: 15->20
+    - Fairy Wind:
+        - PP: 30->40
     - Fleur Cannon:
         - Accuracy: 90->100
         - PP: 5->10

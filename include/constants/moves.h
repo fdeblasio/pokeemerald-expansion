@@ -906,8 +906,24 @@ enum __attribute__((packed)) Move
     MOVES_COUNT_GEN9,
 
     // Add any custom moves here, not further down!
+    MOVE_YELP = MOVES_COUNT_GEN9,
+    MOVE_WARM_UP,
+    MOVE_SHOCK,
+    MOVE_VENOM,
+    MOVE_TREMOR,
+    MOVE_MUD_SPRAY,
+    MOVE_MIND_MOLD,
+    MOVE_STING,
+    MOVE_BUZZ,
+    MOVE_PEBBLE,
+    MOVE_HAUNT,
+    MOVE_DRACATTACK,
+    MOVE_YELL,
+    MOVE_MIRROR_FLASH,
+    MOVE_CUDDLE,
+    MOVES_COUNT_CUSTOM,
 
-    MOVES_COUNT = MOVES_COUNT_GEN9,
+    MOVES_COUNT = MOVES_COUNT_CUSTOM,
 
     // Z Moves
     FIRST_Z_MOVE = MOVES_COUNT,

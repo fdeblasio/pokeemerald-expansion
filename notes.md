@@ -304,6 +304,7 @@ upcoming
         - Include as part of isSunny?
         - Same thing for Terrain/Surge abilities?
 - Dynamic accuracy:
+    - Added OHKO accuracy (accIncreaseByTenOnSameType might good to check)
     - Micle Berry and accuracy stages will not show up on summary screen in battle. This might be unavoidable
         - They also get reset upon looking at the summary screen
 

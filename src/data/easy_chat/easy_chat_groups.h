@@ -23,9 +23,9 @@
 #include "easy_chat_group_trendy_saying.h"
 #include "easy_chat_group_pokemon2.h"
 
-#define EASY_CHAT_GROUP(ListType, Group)   \
-    .wordData = {.ListType = Group},       \
-    .numWords = ARRAY_COUNT(Group),        \
+#define EASY_CHAT_GROUP(ListType, Group)  \
+    .wordData = {.ListType = Group},      \
+    .numWords = ARRAY_COUNT(Group)
 
 const struct EasyChatGroup gEasyChatGroups[EC_NUM_GROUPS] = {
     [EC_GROUP_POKEMON] =

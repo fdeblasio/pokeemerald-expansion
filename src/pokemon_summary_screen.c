@@ -4732,6 +4732,7 @@ static inline bool32 ShouldShowIvEvPrompt(void)
 static inline void ShowUtilityPrompt(s16 mode)
 {
     const u8* promptText = NULL;
+    const u8* gText_Rename = COMPOUND_STRING("Rename");
 
     if (sMonSummaryScreen->currPageIndex == PSS_PAGE_INFO)
     {

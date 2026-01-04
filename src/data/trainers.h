@@ -849,9 +849,9 @@ WALLY_REMATCH(2),
 WALLY_REMATCH(3),
 WALLY_REMATCH(4),
 
-#define LEADER_INFO(Trainer)                    \
-    .trainerClass = TRAINER_CLASS_LEADER,       \
-    .trainerPic = TRAINER_PIC_LEADER_##Trainer, \
+#define LEADER_INFO(Trainer)                          \
+    .trainerClass = TRAINER_CLASS_LEADER,             \
+    .trainerPic = TRAINER_PIC_FRONT_LEADER_##Trainer, \
     BOSS_AI_FLAGS
 
 #define LEADER_REMATCH                                                             \

@@ -67,8 +67,6 @@ upcoming
         - SpA: 62->65
         - SpD: 107->110
         - Spe: 33->40
-    - Golisopod:
-        - Give Steel moves
     - Scovillain:
         - Atk: 138->140
         - SpA: 138->140

@@ -1,7 +1,7 @@
 [DIFFICULTY_NORMAL][PARTNER_NONE] =
 {
     .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
-    .trainerPic = TRAINER_BACK_PIC_BRENDAN,
+    .trainerPic = TRAINER_PIC_BACK_BRENDAN,
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
     .partySize = 0,
     .party = (const struct TrainerMon[])
@@ -12,7 +12,7 @@
 [DIFFICULTY_NORMAL][PARTNER_STEVEN] =
 {
     STEVEN_INFO,
-    .trainerPic = TRAINER_BACK_PIC_STEVEN,
+    .trainerPic = TRAINER_PIC_BACK_STEVEN,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {

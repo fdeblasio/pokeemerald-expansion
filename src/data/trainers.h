@@ -427,9 +427,9 @@ WALLY_REMATCH(3),
 WALLY_REMATCH(4),
 WALLY_REMATCH(5),
 
-#define LEADER_INFO(Trainer)                    \
-    .trainerClass = TRAINER_CLASS_LEADER,       \
-    .trainerPic = TRAINER_PIC_LEADER_##Trainer, \
+#define LEADER_INFO(Trainer)                          \
+    .trainerClass = TRAINER_CLASS_LEADER,             \
+    .trainerPic = TRAINER_PIC_FRONT_LEADER_##Trainer, \
     BOSS_AI_FLAGS
 
 #define LEADER_REMATCH                                                             \
@@ -3680,14 +3680,14 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     TRAINER_CLASS_PIC(HIKER), \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER
 
-#define SCHOOLKID_M_INFO                         \
-    .trainerClass = TRAINER_CLASS_SCHOOLKID,     \
-    .trainerPic = TRAINER_PIC_FRONT_SCHOOLKID_M, \
+#define SCHOOLKID_M_INFO                          \
+    .trainerClass = TRAINER_CLASS_SCHOOLKID,      \
+    .trainerPic = TRAINER_PIC_FRONT_SCHOOL_KID_M, \
     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE
 
-#define SCHOOLKID_F_INFO                         \
-    .trainerClass = TRAINER_CLASS_SCHOOLKID,     \
-    .trainerPic = TRAINER_PIC_FRONT_SCHOOLKID_F, \
+#define SCHOOLKID_F_INFO                          \
+    .trainerClass = TRAINER_CLASS_SCHOOLKID,      \
+    .trainerPic = TRAINER_PIC_FRONT_SCHOOL_KID_F, \
     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL
 
 #define SAILOR_INFO            \

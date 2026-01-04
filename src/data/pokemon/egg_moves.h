@@ -6641,7 +6641,6 @@ static const u16 sPassimianEggMoveLearnset[] = {
 
 #if P_FAMILY_WIMPOD
 static const u16 sWimpodEggMoveLearnset[] = {
-    MOVE_AQUA_JET,
     MOVE_ASSURANCE,
     MOVE_CONFIDE,
     MOVE_HAIL,

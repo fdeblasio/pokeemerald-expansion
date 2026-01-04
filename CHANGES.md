@@ -2491,11 +2491,11 @@
     - Evolution: friendship->19
 
 - Chimecho:
-    - Learns Psybeam and Psychic by level up
+    - Learns Psybeam, Metal Sound, Psychic, and Flash Cannon by level up
 
 - Absol:
     - Hidden Ability: Justified->Sharpness
-    - Learns Spite by move relearner
+    - Learns Shadow Sneak, Spite, and Shadow Claw by level up
 
 - Snorunt/Glalie/Froslass:
     - Learn Aurora Beam and Ice Beam by level up
@@ -2605,8 +2605,11 @@
 - Starly:
     - Learns Dual Wingbeat by level up
 
-- Staravia/Staraptor:
-    - Learn Slash and Dual Wingbeat by level up
+- Staravia:
+    - Learns Slash and Dual Wingbeat by level up
+
+- Staraptor:
+    - Learns Slash, Brick Break, and Dual Wingbeat by level up
 
 - Bibarel:
     - Learns Waterfall, Aqua Tail, Body Slam, and Tail Slap by level up
@@ -2690,8 +2693,11 @@
 - Spiritomb:
     - Learns Astonish, Knock Off, and Foul Play by level up
 
-- Gible/Gabite/Garchomp:
+- Gible/Gabite:
     - Learn Stomping Tantrum and Earthquake by level up
+
+- Garchomp:
+    - Learns Stomping Tantrum, Dragon Pulse, and Earthquake by level up
 
 - Riolu:
     - Evolution: friendship->20
@@ -3645,6 +3651,13 @@
 
 - Sandygast/Palossand:
     - Learn Mud-Slap, Mud Shot, Hex, and Scorching Sands by level up
+
+- Wimpod:
+    - Learns Aqua Jet by level up
+
+- Golisopod:
+    - Learns Aqua Jet, Bullet Punch, Metal Claw, Aqua Cutter, Iron Head, Iron Defense, and Leech Life by level up
+    - Learns Body Press by TM
 
 - Type: Null:
     - Evolution: friendship->45

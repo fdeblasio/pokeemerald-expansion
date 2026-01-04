@@ -7939,8 +7939,16 @@
         "Move": "MOVE_PSYBEAM"
       },
       {
+        "Level": 32,
+        "Move": "MOVE_METAL_SOUND"
+      },
+      {
         "Level": 37,
         "Move": "MOVE_PSYCHIC"
+      },
+      {
+        "Level": 42,
+        "Move": "MOVE_FLASH_CANNON"
       }
     ],
     "PreEvoMoves": [],
@@ -7949,12 +7957,23 @@
     "TutorMoves": []
   },
   "ABSOL": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 5,
+        "Move": "MOVE_SHADOW_SNEAK"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_SPITE"
+      },
+      {
+        "Level": 30,
+        "Move": "MOVE_SHADOW_CLAW"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
-    "EggMoves": [
-      "MOVE_SPITE"
-    ],
+    "EggMoves": [],
     "TutorMoves": []
   },
   "SNORUNT": {
@@ -8666,6 +8685,10 @@
         "Move": "MOVE_SLASH"
       },
       {
+        "Level": 41,
+        "Move": "MOVE_BRICK_BREAK"
+      },
+      {
         "Level": 49,
         "Move": "MOVE_DUAL_WINGBEAT"
       }
@@ -9193,6 +9216,10 @@
       {
         "Level": 34,
         "Move": "MOVE_STOMPING_TANTRUM"
+      },
+      {
+        "Level": 42,
+        "Move": "MOVE_DRAGON_PULSE"
       },
       {
         "Level": 72,
@@ -14116,16 +14143,52 @@
     "TutorMoves": []
   },
   "WIMPOD": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_AQUA_JET"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "GOLISOPOD": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_AQUA_JET"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_BULLET_PUNCH"
+      },
+      {
+        "Level": 16,
+        "Move": "MOVE_METAL_CLAW"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_AQUA_CUTTER"
+      },
+      {
+        "Level": 36,
+        "Move": "MOVE_IRON_HEAD"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_IRON_DEFENSE"
+      },
+      {
+        "Level": 44,
+        "Move": "MOVE_LEECH_LIFE"
+      }
+    ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [
+      "MOVE_BODY_PRESS"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },

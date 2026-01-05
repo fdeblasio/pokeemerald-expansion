@@ -4785,7 +4785,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     }
 
 //Extra for hacks
-#define CALVIN_LICKITUNG
+#define CALVIN_LICKITUNG(Level)                                                    \
+    .lvl = Level,                                                                  \
+    .species = Level < REMATCH_5_LEVEL_6 ? SPECIES_LICKITUNG : SPECIES_LICKILICKY, \
+    .ability = ABILITY_OWN_TEMPO,                                                  \
+    .gender = TRAINER_MON_MALE
 
 [DIFFICULTY_NORMAL][TRAINER_CALVIN_1] =
 {

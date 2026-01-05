@@ -458,6 +458,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .secretPowerEffect = MOVE_EFFECT_SPD_MINUS_1,
         .camouflageType = TYPE_FLYING,
         .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
+        .background = ENVIRONMENT_BACKGROUND(Rayquaza),
     },
 
     [BATTLE_ENVIRONMENT_SKY_PILLAR] =
@@ -468,6 +469,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .secretPowerEffect = MOVE_EFFECT_SPD_MINUS_1,
         .camouflageType = TYPE_FLYING,
         .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
+        .background = ENVIRONMENT_BACKGROUND(Rayquaza),
     },
 
     [BATTLE_ENVIRONMENT_BURIAL_GROUND] =
@@ -490,6 +492,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .secretPowerEffect = B_SECRET_POWER_EFFECT >= GEN_5 ? MOVE_EFFECT_SPD_MINUS_1 : MOVE_EFFECT_ACC_MINUS_1,
         .camouflageType = TYPE_GROUND,
         .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
+        .background = ENVIRONMENT_BACKGROUND(PondWater),
     },
 
     [BATTLE_ENVIRONMENT_MARSH] =
@@ -500,6 +503,14 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .secretPowerEffect = MOVE_EFFECT_SPD_MINUS_1,
         .camouflageType = TYPE_GROUND,
         .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
+        .background =
+        {
+            .tileset = gBattleEnvironmentTiles_Underwater,
+            .tilemap = gBattleEnvironmentTilemap_Underwater,
+            .entryTileset = gBattleEnvironmentAnimTiles_PondWater,
+            .entryTilemap = gBattleEnvironmentAnimTilemap_PondWater,
+            .palette = gBattleEnvironmentPalette_PondWater,
+        },
     },
 
     [BATTLE_ENVIRONMENT_SWAMP] =
@@ -510,6 +521,14 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .secretPowerEffect = MOVE_EFFECT_SPD_MINUS_1,
         .camouflageType = TYPE_GROUND,
         .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
+        .background =
+        {
+            .tileset = gBattleEnvironmentTiles_Underwater,
+            .tilemap = gBattleEnvironmentTilemap_Underwater,
+            .entryTileset = gBattleEnvironmentAnimTiles_PondWater,
+            .entryTilemap = gBattleEnvironmentAnimTilemap_PondWater,
+            .palette = gBattleEnvironmentPalette_PondWater,
+        },
     },
 
     [BATTLE_ENVIRONMENT_SNOW] =
@@ -526,6 +545,14 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .secretPowerEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
         .camouflageType = TYPE_ICE,
         .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
+        .background =
+        {
+            .tileset = gBattleEnvironmentTiles_Sand,
+            .tilemap = gBattleEnvironmentTilemap_Sand,
+            .entryTileset = gBattleEnvironmentAnimTiles_Sand,
+            .entryTilemap = gBattleEnvironmentAnimTilemap_Sand,
+            .palette = gBattleEnvironmentPalette_StadiumIce,
+        },
     },
 
     [BATTLE_ENVIRONMENT_ICE] =
@@ -536,6 +563,14 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .secretPowerEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
         .camouflageType = TYPE_ICE,
         .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
+        .background =
+        {
+            .tileset = gBattleEnvironmentTiles_Cave,
+            .tilemap = gBattleEnvironmentTilemap_Cave,
+            .entryTileset = gBattleEnvironmentAnimTiles_Cave,
+            .entryTilemap = gBattleEnvironmentAnimTilemap_Cave,
+            .palette = gBattleEnvironmentPalette_StadiumIce,
+        },
     },
 
     [BATTLE_ENVIRONMENT_VOLCANO] =
@@ -546,6 +581,14 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .secretPowerEffect = MOVE_EFFECT_BURN,
         .camouflageType = TYPE_FIRE,
         .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
+        .background =
+        {
+            .tileset = gBattleEnvironmentTiles_Cave,
+            .tilemap = gBattleEnvironmentTilemap_Cave,
+            .entryTileset = gBattleEnvironmentAnimTiles_Cave,
+            .entryTilemap = gBattleEnvironmentAnimTilemap_Cave,
+            .palette = gBattleEnvironmentPalette_StadiumMagma,
+        },
     },
 
     [BATTLE_ENVIRONMENT_DISTORTION_WORLD] =
@@ -556,6 +599,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .secretPowerEffect = MOVE_EFFECT_PARALYSIS,
         .camouflageType = TYPE_NORMAL,
         .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
+        .background = BUILDING_BACKGROUND(Stadium, StadiumDark),
     },
 
     [BATTLE_ENVIRONMENT_SPACE] =
@@ -566,6 +610,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .secretPowerEffect = MOVE_EFFECT_FLINCH,
         .camouflageType = TYPE_DRAGON,
         .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
+        .background = BUILDING_BACKGROUND(Stadium, StadiumDark),
     },
 
     [BATTLE_ENVIRONMENT_ULTRA_SPACE] =
@@ -576,6 +621,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .secretPowerEffect = MOVE_EFFECT_DEF_MINUS_1,
         .camouflageType = TYPE_PSYCHIC,
         .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
+        .background = BUILDING_BACKGROUND(Stadium, StadiumDark),
     },
 };
 

@@ -5714,16 +5714,79 @@ bool8 TryIncrementMonLevel(struct Pokemon *mon)
     }
 }
 
+static const u16 sUniversalMoves[] =
+{
+    MOVE_BIDE,
+    MOVE_FRUSTRATION,
+    MOVE_HIDDEN_POWER,
+    MOVE_MIMIC,
+    MOVE_NATURAL_GIFT,
+    MOVE_RAGE,
+    MOVE_RETURN,
+    MOVE_SECRET_POWER,
+    MOVE_SUBSTITUTE,
+    MOVE_TERA_BLAST,
+};
+
 u8 CanLearnTeachableMove(enum Species species, enum Move move)
 {
-    const u16 *teachableLearnset = GetSpeciesTeachableLearnset(species);
     if (species == SPECIES_EGG)
-        return FALSE;
-    for (u32 i = 0; teachableLearnset[i] != MOVE_UNAVAILABLE; i++)
     {
-        if (teachableLearnset[i] == move)
-            return TRUE;
+        return FALSE;
     }
+    else if (species == SPECIES_MEW)
+    {
+        switch (move)
+        {
+        case MOVE_DRAGON_ASCENT:
+        case MOVE_RELIC_SONG:
+        case MOVE_SECRET_SWORD:
+        case MOVE_VOLT_TACKLE:
+            return FALSE;
+        default:
+            return TRUE;
+        }
+    }
+    else
+    {
+        u32 i, j;
+        const u16 *teachableLearnset = GetSpeciesTeachableLearnset(species);
+        for (i = 0; i < ARRAY_COUNT(sUniversalMoves); i++)
+        {
+            if (sUniversalMoves[i] == move)
+            {
+                if (gSpeciesInfo[species].teachingType != TM_ILLITERATE)
+                {
+                    if (move == MOVE_TERA_BLAST && GET_BASE_SPECIES_ID(species) == SPECIES_TERAPAGOS)
+                        return FALSE;
+                    if (GET_BASE_SPECIES_ID(species) == SPECIES_PYUKUMUKU && (move == MOVE_HIDDEN_POWER || move == MOVE_RETURN || move == MOVE_FRUSTRATION))
+                        return FALSE;
+                    return TRUE;
+                }
+                else
+                {
+                    const struct LevelUpMove *learnset = GetSpeciesLevelUpLearnset(species);
+
+                    if (P_TM_LITERACY < GEN_6)
+                        return FALSE;
+
+                    for (j = 0; j < MAX_LEVEL_UP_MOVES && learnset[j].move != LEVEL_UP_MOVE_END; j++)
+                    {
+                        if (learnset[j].move == move)
+                            return TRUE;
+                    }
+                    return FALSE;
+                }
+            }
+        }
+        for (i = 0; teachableLearnset[i] != MOVE_UNAVAILABLE; i++)
+        {
+            if (teachableLearnset[i] == move)
+                return TRUE;
+        }
+        return FALSE;
+    }
+
     if ((species == SPECIES_ROTOM_HEAT && (move == MOVE_FLAMETHROWER || move == MOVE_OVERHEAT))
         || (species == SPECIES_ROTOM_WASH && (move == MOVE_SURF || move == MOVE_HYDRO_PUMP))
         || (species == SPECIES_ROTOM_FROST && (move == MOVE_ICE_BEAM || move == MOVE_BLIZZARD))

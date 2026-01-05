@@ -156,7 +156,7 @@ static const u8 sBattleTransitionTable_BattleDome[] =
 #define REMATCH_GYM_LEADER(trainer, map) \
 [REMATCH_##trainer] =                    \
 {                                        \
-    .trainerIds = {TRAINER_##trainer##_1, TRAINER_##trainer##_2, TRAINER_##trainer##_3, TRAINER_##trainer##_4, TRAINER_##trainer##_5}, \
+    .trainerIds = {TRAINER_##trainer##_1, TRAINER_##trainer##_2, TRAINER_##trainer##_3, TRAINER_##trainer##_4, TRAINER_##trainer##_4}, \
     .mapGroup = MAP_GROUP(map),          \
     .mapNum = MAP_NUM(map),              \
 }
@@ -164,7 +164,7 @@ static const u8 sBattleTransitionTable_BattleDome[] =
 #define REMATCH_WALLY(trainer, map)   \
 [REMATCH_##trainer] =           \
 {                               \
-    .trainerIds = {TRAINER_##trainer##_2, TRAINER_##trainer##_3, TRAINER_##trainer##_4, TRAINER_##trainer##_5, TRAINER_##trainer##_5}, \
+    .trainerIds = {TRAINER_##trainer##_2, TRAINER_##trainer##_3, TRAINER_##trainer##_4, TRAINER_##trainer##_4, TRAINER_##trainer##_4}, \
     .mapGroup = MAP_GROUP(map), \
     .mapNum = MAP_NUM(map),     \
 }

@@ -134,7 +134,10 @@ upcoming
         - Improve white-on-white text
 - Mt. Pyre:
 - Mossdeep:
+    - Shoal Cave bottom floor and Safari Zone ice cave should use Ice battle environment
 - Sootopolis:
+- Pacifidlog:
+    - In ORAS, Sky Pillar gets Air Slash, but in RSE it just gets a regular cave
 - Victory Road:
     - Vito can use TMs
 - Other:
@@ -251,7 +254,6 @@ upcoming
         - CanLearnTeachableMove is modified instead
 - Apply dynamic power to move relearner
 - Nature Power:
-    - In ORAS, Sky Pillar gets Air Slash, but in RSE it just gets a regular cave
     - Nature Power details on summary screen (power/accuracy would be for in-battle status screen only)
         - All moves are currently Special so change category in moves_info.h back to Status if any of them change
             - The summary screen would show the proper category, however

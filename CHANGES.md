@@ -36,6 +36,7 @@
 - Team Magma are more focused on Ground types than Fire types to avoid overlap with Flannery
 - Pokémon have a more even encounter distribution
 - Trainer rematches (including Gabby and Ty) are now based on number of badges
+- There are now one less rematch per gym leader/Wally to free up space
 - Tate and Liza give out Psychic instead of Calm Mind (Calm Mind can be found in Slateport)
 - Made rapids easier to navigate so that only one trip is needed to get all items/battle all trainers (at the cost of looking slightly worse)
 - Added area to grind right outside Elite Four
@@ -174,10 +175,9 @@
 |Mew                        |N/A                   |70|
 |Deoxys                     |N/A                   |70|
 |Lugia/Ho-Oh                |N/A                   |70|
-|Gym Leader/Wally rematch 1 |Various               |70, 70, 70, 73, 73, 75|
-|Gym Leader/Wally rematch 2 |Various               |75, 75, 75, 78, 78, 80|
-|Gym Leader/Wally rematch 3 |Various               |80, 80, 80, 83, 83, 85|
-|Gym Leader/Wally rematch 4 |Various               |85, 85, 85, 88, 88, 90|
+|Gym Leader/Wally rematch 1 |Various               |75, 75, 75, 78, 78, 80|
+|Gym Leader/Wally rematch 2 |Various               |80, 80, 80, 83, 83, 85|
+|Gym Leader/Wally rematch 3 |Various               |85, 85, 85, 88, 88, 90|
 |Elite Four rematches       |N/A                   |86, 86, 86, 88, 88, 90|
 |Wallace rematches          |N/A                   |87, 87, 87, 88, 88, 90|
 |Steven                     |75, 76, 76, 76, 77, 78|87, 87, 88, 88, 89, 90|

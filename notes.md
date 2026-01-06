@@ -328,7 +328,8 @@ upcoming
 - Double check that only Devon employees use DEVON_EMPLOYEES and only non-Devon use MAN_2
 - Use either SCIENTIST_1 or 2 for Cozmo/Stern and use the other for generic scientists
 - Battle Environments:
-    - Mt. Chimney should use Volcano?
+    - Mt. Chimney and/or Fiery Path should use Volcano?
+        - Safari Zone Fire Cave too
     - Should Magma Hideout use the unused Magma battle environment?
     - Shoal Cave bottom floor and Safari Zone ice cave should use Ice battle environment
         - Ice's palette looks mostly good except for the player's tile being a different color than the opponent's

@@ -134,10 +134,8 @@ upcoming
         - Improve white-on-white text
 - Mt. Pyre:
 - Mossdeep:
-    - Shoal Cave bottom floor and Safari Zone ice cave should use Ice battle environment
 - Sootopolis:
 - Pacifidlog:
-    - In ORAS, Sky Pillar gets Air Slash, but in RSE it just gets a regular cave
 - Victory Road:
     - Vito can use TMs
 - Ever Grande:
@@ -329,6 +327,13 @@ upcoming
 - Add new defines (but keep current ones) for overworld sprites that line up with trainers for easier use
 - Double check that only Devon employees use DEVON_EMPLOYEES and only non-Devon use MAN_2
 - Use either SCIENTIST_1 or 2 for Cozmo/Stern and use the other for generic scientists
+- Battle Environments:
+    - Mt. Chimney should use Volcano?
+    - Should Magma Hideout use the unused Magma battle environment?
+    - Shoal Cave bottom floor and Safari Zone ice cave should use Ice battle environment
+    - In ORAS, Sky Pillar gets Air Slash, but in RSE it just gets a regular cave
+    - Should the Puddle environment get used for puddles?
+    - Ice/Volcano/Puddle would need better palettes/potentially different, non-building tiles/need slide intros
 - Make Regi caves only one room?
 - Add caves and more areas to Safari Zone for more postgame mons
     - Make them themed like ice and fire. Maybe can add legendaries

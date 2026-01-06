@@ -48405,6 +48405,7 @@ static const u16 sRockruffTeachableLearnset[] = {
     MOVE_SANDSTORM,
     MOVE_SCARY_FACE,
     MOVE_SLEEP_TALK,
+    MOVE_SMACK_DOWN,
     MOVE_SNARL,
     MOVE_STEALTH_ROCK,
     MOVE_STOMPING_TANTRUM,
@@ -48457,6 +48458,7 @@ static const u16 sLycanrocMiddayTeachableLearnset[] = {
     MOVE_SANDSTORM,
     MOVE_SCARY_FACE,
     MOVE_SLEEP_TALK,
+    MOVE_SMACK_DOWN,
     MOVE_SNARL,
     MOVE_STEALTH_ROCK,
     MOVE_STOMPING_TANTRUM,
@@ -48523,6 +48525,7 @@ static const u16 sLycanrocMidnightTeachableLearnset[] = {
     MOVE_SCARY_FACE,
     MOVE_SHADOW_CLAW,
     MOVE_SLEEP_TALK,
+    MOVE_SMACK_DOWN,
     MOVE_SNARL,
     MOVE_STEALTH_ROCK,
     MOVE_STOMPING_TANTRUM,
@@ -48582,6 +48585,7 @@ static const u16 sLycanrocDuskTeachableLearnset[] = {
     MOVE_SANDSTORM,
     MOVE_SCARY_FACE,
     MOVE_SLEEP_TALK,
+    MOVE_SMACK_DOWN,
     MOVE_SNARL,
     MOVE_STEALTH_ROCK,
     MOVE_STOMPING_TANTRUM,
@@ -48683,6 +48687,7 @@ static const u16 sMareanieTeachableLearnset[] = {
     MOVE_TOXIC_SPIKES,
     MOVE_VENOSHOCK,
     MOVE_WATER_PULSE,
+    MOVE_WATERFALL,
     MOVE_UNAVAILABLE,
 };
 
@@ -48735,6 +48740,7 @@ static const u16 sToxapexTeachableLearnset[] = {
     MOVE_TOXIC_SPIKES,
     MOVE_VENOSHOCK,
     MOVE_WATER_PULSE,
+    MOVE_WATERFALL,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_MAREANIE
@@ -48761,6 +48767,7 @@ static const u16 sMudbrayTeachableLearnset[] = {
     MOVE_LOW_KICK,
     MOVE_LOW_SWEEP,
     MOVE_MEGA_KICK,
+    MOVE_MUD_SHOT,
     MOVE_MUD_SLAP,
     MOVE_PAYBACK,
     MOVE_PROTECT,

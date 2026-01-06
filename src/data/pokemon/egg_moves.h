@@ -6457,7 +6457,6 @@ static const u16 sMudbrayEggMoveLearnset[] = {
     MOVE_CONFIDE,
     MOVE_FISSURE,
     MOVE_MAGNITUDE,
-    MOVE_MUD_BOMB,
     MOVE_ROUND,
     MOVE_SNORE,
     MOVE_TERA_BLAST,

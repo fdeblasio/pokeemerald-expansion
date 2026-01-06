@@ -1534,33 +1534,43 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #endif //P_GEN_9_MEGA_EVOLUTIONS
 #endif //P_FAMILY_CRABRAWLER
 
+#define ORICORIO_INFO(Color)                                     \
+    .baseHP        = 75,                                         \
+    .baseAttack    = 70,                                         \
+    .baseDefense   = 70,                                         \
+    .baseSpeed     = 95,                                         \
+    .baseSpAttack  = 100,                                        \
+    .baseSpDefense = 70,                                         \
+    .catchRate = 90,                                             \
+    .expYield = 167,                                             \
+    .evYield_SpAttack = 2,                                       \
+    .itemCommon = ITEM_##Color##_NECTAR,                         \
+    .itemRare = ITEM_##Color##_NECTAR,                           \
+    .genderRatio = PERCENT_FEMALE(75),                           \
+    .eggCycles = 20,                                             \
+    .friendship = STANDARD_FRIENDSHIP,                           \
+    .growthRate = GROWTH_MEDIUM_FAST,                            \
+    .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),               \
+    .abilities = { ABILITY_DANCER, ABILITY_NONE, ABILITY_NONE }, \
+    .bodyColor = BODY_COLOR_##Color,                             \
+    .speciesName = _("Oricorio"),                                \
+    .natDexNum = NATIONAL_DEX_ORICORIO,                          \
+    .categoryName = _("Dancing"),                                \
+    .height = 6,                                                 \
+    .weight = 34,                                                \
+    FOOTPRINT(Oricorio)                                          \
+    .levelUpLearnset = sOricorioLevelUpLearnset,                 \
+    .teachableLearnset = sOricorioTeachableLearnset,             \
+    .eggMoveLearnset = sOricorioEggMoveLearnset,                 \
+    .formSpeciesIdTable = sOricorioFormSpeciesIdTable,           \
+    .formChangeTable = sOricorioFormChangeTable
+
 #if P_FAMILY_ORICORIO
     [SPECIES_ORICORIO_BAILE] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 70,
-        .baseDefense   = 70,
-        .baseSpeed     = 93,
-        .baseSpAttack  = 98,
-        .baseSpDefense = 70,
+        ORICORIO_INFO(RED),
         .types = MON_TYPES(TYPE_FIRE, TYPE_FLYING),
-        .catchRate = 45,
-        .expYield = 167,
-        .evYield_SpAttack = 2,
-        .itemRare = ITEM_RED_NECTAR,
-        .genderRatio = PERCENT_FEMALE(75),
-        .eggCycles = 20,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_DANCER, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Oricorio"),
         .cryId = CRY_ORICORIO_BAILE,
-        .natDexNum = NATIONAL_DEX_ORICORIO,
-        .categoryName = _("Dancing"),
-        .height = 6,
-        .weight = 34,
         .description = COMPOUND_STRING(
             "It wins the hearts of its enemies\n"
             "with its passionate dancing and then\n"
@@ -1585,7 +1595,6 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-4, 9, SHADOW_SIZE_S)
-        FOOTPRINT(Oricorio)
         OVERWORLD(
             sPicTable_OricorioBaile,
             SIZE_32x32,
@@ -1595,39 +1604,13 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_OricorioBaile,
             gShinyOverworldPalette_OricorioBaile
         )
-        .levelUpLearnset = sOricorioLevelUpLearnset,
-        .teachableLearnset = sOricorioTeachableLearnset,
-        .eggMoveLearnset = sOricorioEggMoveLearnset,
-        .formSpeciesIdTable = sOricorioFormSpeciesIdTable,
-        .formChangeTable = sOricorioFormChangeTable,
     },
 
     [SPECIES_ORICORIO_POM_POM] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 70,
-        .baseDefense   = 70,
-        .baseSpeed     = 93,
-        .baseSpAttack  = 98,
-        .baseSpDefense = 70,
+        ORICORIO_INFO(YELLOW),
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FLYING),
-        .catchRate = 45,
-        .expYield = 167,
-        .evYield_SpAttack = 2,
-        .itemRare = ITEM_YELLOW_NECTAR,
-        .genderRatio = PERCENT_FEMALE(75),
-        .eggCycles = 20,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_DANCER, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Oricorio"),
         .cryId = CRY_ORICORIO_POM_POM,
-        .natDexNum = NATIONAL_DEX_ORICORIO,
-        .categoryName = _("Dancing"),
-        .height = 6,
-        .weight = 34,
         .description = COMPOUND_STRING(
             "This form of Oricorio has sipped\n"
             "yellow nectar. It uses nimble steps to\n"
@@ -1652,7 +1635,6 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(5, 8, SHADOW_SIZE_S)
-        FOOTPRINT(Oricorio)
         OVERWORLD(
             sPicTable_OricorioPomPom,
             SIZE_32x32,
@@ -1662,39 +1644,13 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_OricorioPomPom,
             gShinyOverworldPalette_OricorioPomPom
         )
-        .levelUpLearnset = sOricorioLevelUpLearnset,
-        .teachableLearnset = sOricorioTeachableLearnset,
-        .eggMoveLearnset = sOricorioEggMoveLearnset,
-        .formSpeciesIdTable = sOricorioFormSpeciesIdTable,
-        .formChangeTable = sOricorioFormChangeTable,
     },
 
     [SPECIES_ORICORIO_PAU] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 70,
-        .baseDefense   = 70,
-        .baseSpeed     = 93,
-        .baseSpAttack  = 98,
-        .baseSpDefense = 70,
+        ORICORIO_INFO(PINK),
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FLYING),
-        .catchRate = 45,
-        .expYield = 167,
-        .evYield_SpAttack = 2,
-        .itemRare = ITEM_PINK_NECTAR,
-        .genderRatio = PERCENT_FEMALE(75),
-        .eggCycles = 20,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_DANCER, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Oricorio"),
         .cryId = CRY_ORICORIO_PAU,
-        .natDexNum = NATIONAL_DEX_ORICORIO,
-        .categoryName = _("Dancing"),
-        .height = 6,
-        .weight = 34,
         .description = COMPOUND_STRING(
             "This form of Oricorio has sipped\n"
             "pink nectar. It elevates its mind with\n"
@@ -1719,7 +1675,6 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-3, 11, SHADOW_SIZE_S)
-        FOOTPRINT(Oricorio)
         OVERWORLD(
             sPicTable_OricorioPau,
             SIZE_32x32,
@@ -1729,39 +1684,13 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_OricorioPau,
             gShinyOverworldPalette_OricorioPau
         )
-        .levelUpLearnset = sOricorioLevelUpLearnset,
-        .teachableLearnset = sOricorioTeachableLearnset,
-        .eggMoveLearnset = sOricorioEggMoveLearnset,
-        .formSpeciesIdTable = sOricorioFormSpeciesIdTable,
-        .formChangeTable = sOricorioFormChangeTable,
     },
 
     [SPECIES_ORICORIO_SENSU] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 70,
-        .baseDefense   = 70,
-        .baseSpeed     = 93,
-        .baseSpAttack  = 98,
-        .baseSpDefense = 70,
+        ORICORIO_INFO(PURPLE),
         .types = MON_TYPES(TYPE_GHOST, TYPE_FLYING),
-        .catchRate = 45,
-        .expYield = 167,
-        .evYield_SpAttack = 2,
-        .itemRare = ITEM_PURPLE_NECTAR,
-        .genderRatio = PERCENT_FEMALE(75),
-        .eggCycles = 20,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_DANCER, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Oricorio"),
         .cryId = CRY_ORICORIO_SENSU,
-        .natDexNum = NATIONAL_DEX_ORICORIO,
-        .categoryName = _("Dancing"),
-        .height = 6,
-        .weight = 34,
         .description = COMPOUND_STRING(
             "It charms its opponents with its\n"
             "refined dancing. When they let their\n"
@@ -1786,7 +1715,6 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(7, 10, SHADOW_SIZE_S)
-        FOOTPRINT(Oricorio)
         OVERWORLD(
             sPicTable_OricorioSensu,
             SIZE_32x32,
@@ -1796,11 +1724,6 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_OricorioSensu,
             gShinyOverworldPalette_OricorioSensu
         )
-        .levelUpLearnset = sOricorioLevelUpLearnset,
-        .teachableLearnset = sOricorioTeachableLearnset,
-        .eggMoveLearnset = sOricorioEggMoveLearnset,
-        .formSpeciesIdTable = sOricorioFormSpeciesIdTable,
-        .formChangeTable = sOricorioFormChangeTable,
     },
 #endif //P_FAMILY_ORICORIO
 
@@ -2051,7 +1974,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_KEEN_EYE, ABILITY_VITAL_SPIRIT, ABILITY_STEADFAST },
+        .abilities = { ABILITY_KEEN_EYE, ABILITY_VITAL_SPIRIT, ABILITY_OWN_TEMPO },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Rockruff"),
         .cryId = CRY_ROCKRUFF,
@@ -2093,7 +2016,9 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .teachableLearnset = sRockruffTeachableLearnset,
         .eggMoveLearnset = sRockruffEggMoveLearnset,
         .formSpeciesIdTable = sRockruffFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_LYCANROC_MIDDAY, CONDITIONS({IF_NOT_TIME, TIME_NIGHT})},
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_LYCANROC_MIDDAY, CONDITIONS({IF_TIME, TIME_MORNING})},
+                                {EVO_LEVEL, 25, SPECIES_LYCANROC_MIDDAY, CONDITIONS({IF_TIME, TIME_DAY})},
+                                {EVO_LEVEL, 25, SPECIES_LYCANROC_DUSK, CONDITIONS({IF_TIME, TIME_EVENING})},
                                 {EVO_LEVEL, 25, SPECIES_LYCANROC_MIDNIGHT, CONDITIONS({IF_TIME, TIME_NIGHT})}),
     },
 

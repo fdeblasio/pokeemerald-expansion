@@ -3604,8 +3604,42 @@
     - Spe: 43->50
     - Learns Drain Punch and Icicle Crash by level up
 
+- Oricorio:
+    - SpA: 98->100
+    - Spe: 93->95
+    - Catch rate: 45->90
+    - Held item: Nectar: 50%->100%
+    - Learns Gust by level up
+
 - Cutiefly/Ribombee:
-    - Learns Disarming Voice and Signal Beam by level up
+    - Learn Disarming Voice and Signal Beam by level up
+
+- Rockruff:
+    - Regular Rockruff can now evolve into Dusk Lycanroc
+    - Hidden Ability: Steadfast->Own Tempo
+    - Learns Smack Down by level up
+
+- Midday Lycanroc:
+    - Learns Smack Down by level up
+
+- Midnight Lycanroc:
+    - Learns Smack Down by level up
+
+- Dusk Lycanroc:
+    - Learns Smack Down by level up
+
+- Wishiwashi:
+    - Learns Water Pulse, Waterfall, and Surf by level up
+
+- Mareanie:
+    - Learns Poison Fang and Waterfall by level up
+
+- Toxapex:
+    - Learns Poison Fang and Waterfall by level up
+    - Learns Body Press by TM
+
+- Mudbray/Mudsdale:
+    - Learn Mud Shot, Mud Bomb, and Stomping Tantrum by level up
 
 - Dewpider (postgame):
     - HP: 38->40

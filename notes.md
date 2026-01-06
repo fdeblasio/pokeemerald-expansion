@@ -259,10 +259,11 @@ upcoming
             - The summary screen would show the proper category, however
     - Revert some Nature Power moves for a more varied effect
 - Update local Porymoves for automatic movepool updates (similar to Hail/Snowscape)
+    - Some of these may need to be done manually (or can do in C but harder to document)
     - Any Pokémon that learns Drill Peck should learn Drill Run
     - Any Pokémon that can learn Flash Cannon should learn Dazzling Gleam and vice versa?
         - Any Pokémon that learns Power Gem should learn both?
-    - Any Pokémon that learns a biting move, should also learn a STAB version (for example, Eelektrik learning Crunch but not Thunder Fang)
+    - Any Pokémon that learns a biting move, should also learn a STAB version (for example, Eelektrik learning Crunch but not Thunder Fang, or Mareanie learning Bite but not Poison Fang)
     - Any Pokémon that learns a horn move (Horn Attack, Megahorn, Smart Strike, etc), can learn them all?
     - Any Poison/Steel/Water type that learns Poison Tail/Iron Tail/Aqua Tail should learn its corresponding type's move?
     - Any Psychic/Steel type that learns Headbutt should learn Zen Headbutt/Iron Head?

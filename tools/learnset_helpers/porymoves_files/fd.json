@@ -7814,10 +7814,11 @@
       "MOVE_GUST",
       "MOVE_TWISTER",
       "MOVE_ICY_WIND",
-      "MOVE_HEAT_WAVE",
       "MOVE_FAIRY_WIND"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_HEAT_WAVE"
+    ]
   },
   "KECLEON": {
     "LevelMoves": [
@@ -15027,10 +15028,10 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [],
-    "EggMoves": [
+    "EggMoves": [],
+    "TutorMoves": [
       "MOVE_ICE_FANG"
-    ],
-    "TutorMoves": []
+    ]
   },
   "BOLTUND": {
     "LevelMoves": [
@@ -15062,7 +15063,9 @@
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_FANG"
+    ]
   },
   "ROLYCOLY": {
     "LevelMoves": [
@@ -16472,10 +16475,10 @@
     "TMMoves": [
       "MOVE_RAIN_DANCE"
     ],
-    "EggMoves": [
+    "EggMoves": [],
+    "TutorMoves": [
       "MOVE_HEAT_WAVE"
-    ],
-    "TutorMoves": []
+    ]
   },
   "KILOWATTREL": {
     "LevelMoves": [
@@ -16509,7 +16512,9 @@
       "MOVE_RAIN_DANCE"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_HEAT_WAVE"
+    ]
   },
   "MASCHIFF": {
     "LevelMoves": [

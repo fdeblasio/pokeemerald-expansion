@@ -1502,7 +1502,6 @@ void CreateBoxMon(struct BoxPokemon *boxMon, enum Species species, u8 level, u32
     u32 value;
     u16 checksum;
     bool32 isShiny;
-    u8 ppBonus;
 
     ZeroBoxMonData(boxMon);
     // Determine original trainer ID
@@ -2126,9 +2125,6 @@ void SetBattleMonMoveSlot(struct BattlePokemon *mon, enum Move move, u8 slot)
 void GiveMonInitialMoveset(struct Pokemon *mon)
 {
     GiveBoxMonInitialMoveset(&mon->box);
-
-    ppBonus = 255;
-    SetBoxMonData(mon, MON_DATA_PP_BONUSES, &ppBonus);
 }
 
 void GiveBoxMonInitialMoveset(struct BoxPokemon *boxMon) //Credit: AsparagusEduardo

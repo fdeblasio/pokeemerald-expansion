@@ -49,17 +49,13 @@
     .camouflageBlend = RGB_WHITE,                                                \
     .battleIntroSlide = BattleIntroSlide3
 
-#define TYPE_ENVIRONMENT(Type)                               \
-{                                                            \
-    .secretPowerAnimation = BUILDING_SECRET_POWER_ANIMATION, \
-    .secretPowerEffect = BUILDING_SECRET_POWER_EFFECT,       \
-    .camouflageType = BUILDING_CAMOUFLAGE_TYPE,
-    .camouflageBlend = BUILDING_CAMOUFLAGE_BLEND,
-    .entry = ENVIRONMENT_ENTRY(Building),
-    .background = ENVIRONMENT_BACKGROUND(Stadium),
-    .palette = gBattleEnvironmentPalette_StadiumWallace,
-    .battleIntroSlide = BUILDING_BATTLE_INTRO_SLIDE,
-}
+#define BUILDING_ENVIRONMENT                                                     \
+    .naturePower = B_NATURE_POWER_MOVES >= GEN_4 ? MOVE_TRI_ATTACK : MOVE_SWIFT, \
+    .secretPowerAnimation = BUILDING_SECRET_POWER_ANIMATION,                     \
+    .secretPowerEffect = MOVE_EFFECT_PARALYSIS,                                  \
+    .camouflageType = TYPE_NORMAL,                                               \
+    .camouflageBlend = RGB_WHITE,                                                \
+    .battleIntroSlide = BattleIntroSlide3
 
 // Plain values. USED for BATTLE_ENVIRONMENT_PLAIN as well as BATTLE_ENVIRONMENT_RAYQUAZA
 #if B_NATURE_POWER_MOVES >= GEN_6
@@ -358,6 +354,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_TYPE_DARK] =
     {
+        BUILDING_ENVIRONMENT,
         .entry = ENVIRONMENT_ENTRY(Building),
         .background = ENVIRONMENT_BACKGROUND(Stadium),
         .palette = gBattleEnvironmentPalette_StadiumDark,
@@ -365,6 +362,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_TYPE_FLYING] =
     {
+        BUILDING_ENVIRONMENT,
         .entry = ENVIRONMENT_ENTRY(Building),
         .background = ENVIRONMENT_BACKGROUND(Stadium),
         .palette = gBattleEnvironmentPalette_StadiumFlying,
@@ -372,6 +370,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_TYPE_GRASS] =
     {
+        BUILDING_ENVIRONMENT,
         .entry = ENVIRONMENT_ENTRY(Building),
         .background = ENVIRONMENT_BACKGROUND(Stadium),
         .palette = gBattleEnvironmentPalette_StadiumGrass,
@@ -379,6 +378,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_TYPE_ICE] =
     {
+        BUILDING_ENVIRONMENT,
         .entry = ENVIRONMENT_ENTRY(Building),
         .background = ENVIRONMENT_BACKGROUND(Stadium),
         .palette = gBattleEnvironmentPalette_StadiumIce,
@@ -386,6 +386,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
 
     [BATTLE_ENVIRONMENT_TYPE_ROCK] =
     {
+        BUILDING_ENVIRONMENT,
         .entry = ENVIRONMENT_ENTRY(Building),
         .background = ENVIRONMENT_BACKGROUND(Stadium),
         .palette = gBattleEnvironmentPalette_StadiumRock,

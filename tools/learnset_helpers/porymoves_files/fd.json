@@ -4862,7 +4862,9 @@
       "MOVE_TWISTER",
       "MOVE_FAIRY_WIND"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_HEAT_WAVE"
+    ]
   },
   "KECLEON": {
     "LevelMoves": [
@@ -9803,7 +9805,9 @@
     "PreEvoMoves": [],
     "TMMoves": ["MOVE_ICE_FANG"],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_FANG"
+    ]
   },
   "ROLYCOLY": {
     "LevelMoves": [
@@ -10760,7 +10764,9 @@
       "MOVE_HEAT_WAVE"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_HEAT_WAVE"
+    ]
   },
   "MASCHIFF": {
     "LevelMoves": [

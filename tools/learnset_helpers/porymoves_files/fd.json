@@ -1157,7 +1157,9 @@
     "PreEvoMoves": [],
     "TMMoves": ["MOVE_POISON_TAIL"],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_POISON_TAIL"
+    ]
   },
   "SLOWKING_GALAR": {
     "LevelMoves": [
@@ -2778,7 +2780,9 @@
       "MOVE_FUTURE_SIGHT",
       "MOVE_SUPERPOWER"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_AQUA_TAIL"
+    ]
   },
   "MARILL": {
     "LevelMoves": [
@@ -3680,7 +3684,9 @@
     "PreEvoMoves": [],
     "TMMoves": ["MOVE_AQUA_TAIL"],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_AQUA_TAIL"
+    ]
   },
   "LARVITAR": {
     "LevelMoves": [
@@ -4830,7 +4836,9 @@
     "PreEvoMoves": [],
     "TMMoves": ["MOVE_AQUA_TAIL"],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_AQUA_TAIL"
+    ]
   },
   "MILOTIC": {
     "LevelMoves": [
@@ -9454,7 +9462,9 @@
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_POISON_TAIL"
+    ]
   },
   "NAGANADEL": {
     "LevelMoves": [

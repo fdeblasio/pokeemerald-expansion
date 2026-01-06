@@ -4708,6 +4708,9 @@
 - Melmetal:
     - Learns Bullet Punch, Magnet Bomb, and Iron Head by level up
 
+- Poipole/Naganadel:
+    - Learn Poison Tail by move relearner
+
 - Grookey:
     - Learns Grassy Glide and Seed Bomb by level up
 

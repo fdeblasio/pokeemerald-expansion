@@ -1823,7 +1823,9 @@
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_POISON_TAIL"
+    ]
   },
   "SLOWKING_GALAR": {
     "LevelMoves": [
@@ -1843,7 +1845,9 @@
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_POISON_TAIL"
+    ]
   },
   "MAGNEMITE": {
     "LevelMoves": [
@@ -4403,7 +4407,9 @@
       "MOVE_FUTURE_SIGHT",
       "MOVE_SUPERPOWER"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_AQUA_TAIL"
+    ]
   },
   "MARILL": {
     "LevelMoves": [
@@ -5770,7 +5776,9 @@
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_AQUA_TAIL"
+    ]
   },
   "LARVITAR": {
     "LevelMoves": [
@@ -7765,7 +7773,9 @@
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_AQUA_TAIL"
+    ]
   },
   "MILOTIC": {
     "LevelMoves": [
@@ -14526,14 +14536,18 @@
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_POISON_TAIL"
+    ]
   },
   "NAGANADEL": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_POISON_TAIL"
+    ]
   },
   "STAKATAKA": {
     "LevelMoves": [],

@@ -1352,6 +1352,7 @@
 
 - Galarian Slowbro/Galarian Slowking (postgame):
     - Learn Sludge, Psybeam, and Sludge Bomb by level up
+    - Learn Poison Tail by move relearner
 
 - Magnemite/Magneton/Magnezone:
     - Learn Shock Wave and Thunderbolt by level up
@@ -1823,6 +1824,7 @@
     - Gender ratio: 25/75->50/50
     - Catch rate: 150->255
     - Learns Fairy Wind and Aqua Jet by level up
+    - Learns Aqua Tail by move relearner
 
 - Marill:
     - HP: 70->75
@@ -2058,6 +2060,7 @@
 - Suicune (not in main game):
     - Hidden Ability: Inner Focus -> Water Absorb
     - Learns Bubble Beam and Scald by level up
+    - Learns Aqua Tail by move relearner
 
 - Larvitar/Pupitar/Tyranitar (not in main game):
     - Learn Mud-Slap, Rock Tomb, and Mud Shot by level up
@@ -2451,6 +2454,7 @@
     - Atk: 15->10
     - SpA: 10->15
     - Learns Hydro Pump by level up
+    - Learns Aqua Tail by move relearner
 
 - Milotic:
     - Learns Bubble Beam by level up
@@ -3692,6 +3696,9 @@
 
 - Lunala:
     - Learns Shadow Claw and Hyper Beam by level up
+
+- Poipole/Naganadel:
+    - Learn Poison Tail by move relearner
 
 - Grookey:
     - Learns Grassy Glide and Seed Bomb by level up

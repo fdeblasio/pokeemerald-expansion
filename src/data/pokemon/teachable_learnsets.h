@@ -6756,6 +6756,7 @@ static const u16 sSlowbroGalarTeachableLearnset[] = {
     MOVE_MUDDY_WATER,
     MOVE_NASTY_PLOT,
     MOVE_POISON_JAB,
+    MOVE_POISON_TAIL,
     MOVE_POWER_GEM,
     MOVE_PROTECT,
     MOVE_PSYBEAM,
@@ -6846,6 +6847,7 @@ static const u16 sSlowkingGalarTeachableLearnset[] = {
     MOVE_MUDDY_WATER,
     MOVE_NASTY_PLOT,
     MOVE_POISON_JAB,
+    MOVE_POISON_TAIL,
     MOVE_POWER_GEM,
     MOVE_PROTECT,
     MOVE_PSYBEAM,
@@ -15607,6 +15609,7 @@ static const u16 sAmpharosTeachableLearnset[] = {
 static const u16 sAzurillTeachableLearnset[] = {
     MOVE_ALLURING_VOICE,
     MOVE_AMNESIA,
+    MOVE_AQUA_TAIL,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BODY_SLAM,
@@ -20023,6 +20026,7 @@ static const u16 sEnteiTeachableLearnset[] = {
 static const u16 sSuicuneTeachableLearnset[] = {
     MOVE_AGILITY,
     MOVE_AIR_SLASH,
+    MOVE_AQUA_TAIL,
     MOVE_AVALANCHE,
     MOVE_BLIZZARD,
     MOVE_BODY_SLAM,
@@ -26853,6 +26857,7 @@ static const u16 sArmaldoTeachableLearnset[] = {
 
 #if P_FAMILY_FEEBAS
 static const u16 sFeebasTeachableLearnset[] = {
+    MOVE_AQUA_TAIL,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRINE,
@@ -51553,6 +51558,7 @@ static const u16 sPoipoleTeachableLearnset[] = {
     MOVE_IRON_TAIL,
     MOVE_NASTY_PLOT,
     MOVE_POISON_JAB,
+    MOVE_POISON_TAIL,
     MOVE_PROTECT,
     MOVE_REST,
     MOVE_SIGNAL_BEAM,
@@ -51598,6 +51604,7 @@ static const u16 sNaganadelTeachableLearnset[] = {
     MOVE_NASTY_PLOT,
     MOVE_OUTRAGE,
     MOVE_POISON_JAB,
+    MOVE_POISON_TAIL,
     MOVE_PROTECT,
     MOVE_REST,
     MOVE_SCALE_SHOT,

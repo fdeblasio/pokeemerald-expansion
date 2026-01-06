@@ -264,7 +264,7 @@ upcoming
         - Any Pokémon that learns Power Gem should learn both?
     - Any Pokémon that learns a biting move, should also learn a STAB version (for example, Eelektrik learning Crunch but not Thunder Fang)
     - Any Pokémon that learns a horn move (Horn Attack, Megahorn, Smart Strike, etc), can learn them all?
-    - Any Poison type that learns Iron Tail should learn Poison Tail?
+    - Any Poison/Steel/Water type that learns Poison Tail/Iron Tail/Aqua Tail should learn its corresponding type's move?
     - Any Psychic/Steel type that learns Headbutt should learn Zen Headbutt/Iron Head?
 - Possible Move Updates:
     - Infestation: 20->35
@@ -299,6 +299,8 @@ upcoming
     - Added OHKO accuracy (accIncreaseByTenOnSameType might good to check)
     - Micle Berry and accuracy stages will not show up on summary screen in battle. This might be unavoidable
         - They also get reset upon looking at the summary screen
+- Move animations:
+    - Try to standardize Iron/Poison/Aqua Tail
 
 ### Field Moves
 - Try to remove Waterfall prompt. Just have it work like going down

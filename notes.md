@@ -140,6 +140,8 @@ upcoming
     - In ORAS, Sky Pillar gets Air Slash, but in RSE it just gets a regular cave
 - Victory Road:
     - Vito can use TMs
+- Ever Grande:
+    - Macro to ensure that E4 battle environments and type ones share properties except palette
 - Other:
     - Diversify Safari Zone water/fishing encounters
     - Clear up trainer spots by having just one set of gym leader rematches?

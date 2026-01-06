@@ -1502,7 +1502,6 @@ void CreateBoxMon(struct BoxPokemon *boxMon, enum Species species, u8 level, u32
     u32 value;
     u16 checksum;
     bool32 isShiny;
-    u8 ppBonus;
 
     ZeroBoxMonData(boxMon);
     // Determine original trainer ID
@@ -2067,7 +2066,7 @@ u16 GiveMoveToBoxMon(struct BoxPokemon *boxMon, enum Move move)
         if (existingMove == MOVE_NONE)
         {
             SetBoxMonData(boxMon, MON_DATA_MOVE1 + i, &move);
-            u8 maxPP = CalculateMaxPP(move);
+            u32 maxPP = CalculateMaxPP(move);
             SetBoxMonData(boxMon, MON_DATA_PP1 + i, &maxPP);
             return move;
         }
@@ -2102,7 +2101,7 @@ void SetMonMoveSlot(struct Pokemon *mon, enum Move move, u8 slot)
 void SetBoxMonMoveSlot(struct BoxPokemon *mon, enum Move move, u8 slot)
 {
     SetBoxMonData(mon, MON_DATA_MOVE1 + slot, &move);
-    u8 maxPP = CalculateMaxPP(move);
+    u32 maxPP = CalculateMaxPP(move);
     SetBoxMonData(mon, MON_DATA_PP1 + slot, &maxPP);
 }
 
@@ -2126,9 +2125,6 @@ void SetBattleMonMoveSlot(struct BattlePokemon *mon, enum Move move, u8 slot)
 void GiveMonInitialMoveset(struct Pokemon *mon)
 {
     GiveBoxMonInitialMoveset(&mon->box);
-
-    ppBonus = 255;
-    SetBoxMonData(mon, MON_DATA_PP_BONUSES, &ppBonus);
 }
 
 void GiveBoxMonInitialMoveset(struct BoxPokemon *boxMon) //Credit: AsparagusEduardo
@@ -2177,8 +2173,10 @@ void GiveBoxMonInitialMoveset(struct BoxPokemon *boxMon) //Credit: AsparagusEdua
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
         SetBoxMonData(boxMon, MON_DATA_MOVE1 + i, &moves[i]);
-        u8 maxPP = CalculateMaxPP(moves[i]);
+        u32 maxPP = CalculateMaxPP(moves[i]);
         SetBoxMonData(boxMon, MON_DATA_PP1 + i, &maxPP);
+        u8 ppBonus = 255;
+        SetBoxMonData(boxMon, MON_DATA_PP_BONUSES, &ppBonus);
     }
 }
 
@@ -2216,7 +2214,7 @@ void GiveBoxMonDefaultMove(struct BoxPokemon *boxMon, u32 slot)
     }
 
     SetBoxMonData(boxMon, MON_DATA_MOVE1 + slot, &move);
-    u8 maxPP = CalculateMaxPP(move);
+    u32 maxPP = CalculateMaxPP(move);
     SetBoxMonData(boxMon, MON_DATA_PP1 + slot, &maxPP);
 }
 
@@ -3730,7 +3728,7 @@ void CreateSecretBaseEnemyParty(struct SecretBase *secretBaseRecord)
             for (j = 0; j < MAX_MON_MOVES; j++)
             {
                 SetMonData(&gParties[B_TRAINER_1][i], MON_DATA_MOVE1 + j, &gBattleResources->secretBase->party.moves[i * MAX_MON_MOVES + j]);
-                u8 maxPP = CalculateMaxPP(gBattleResources->secretBase->party.moves[i * MAX_MON_MOVES + j]);
+                u32 maxPP = CalculateMaxPP(gBattleResources->secretBase->party.moves[i * MAX_MON_MOVES + j]);
                 SetMonData(&gParties[B_TRAINER_1][i], MON_DATA_PP1 + j, &maxPP);
             }
         }

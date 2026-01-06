@@ -1885,7 +1885,7 @@ void CustomTrainerPartyAssignMoves(struct Pokemon *mon, const struct TrainerMon 
 
     for (j = 0; j < MAX_MON_MOVES; ++j)
     {
-        u8 maxPP = CalculateMaxPP(partyEntry->moves[j]);
+        u32 maxPP = CalculateMaxPP(partyEntry->moves[j]);
         SetMonData(mon, MON_DATA_MOVE1 + j, &partyEntry->moves[j]);
         SetMonData(mon, MON_DATA_PP1 + j, &maxPP);
     }

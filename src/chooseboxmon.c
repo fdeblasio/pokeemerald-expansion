@@ -298,7 +298,7 @@ s32 LearnMove(const struct MoveLearnUI *ui, u8 taskId)
     case REPLACE_MOVE_1:
     {
         u32 slot = GetMoveSlotToReplace();
-        u8 maxPP = CalculateMaxPP(move);
+        u32 maxPP = CalculateMaxPP(move);
         SetBoxMonData(boxmon, MON_DATA_MOVE1 + slot, &move);
         SetBoxMonData(boxmon, MON_DATA_PP1 + slot, &maxPP);
         GetBoxMonNickname(boxmon, gStringVar1);

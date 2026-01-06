@@ -331,6 +331,8 @@ upcoming
     - Mt. Chimney should use Volcano?
     - Should Magma Hideout use the unused Magma battle environment?
     - Shoal Cave bottom floor and Safari Zone ice cave should use Ice battle environment
+        - Ice's palette looks mostly good except for the player's tile being a different color than the opponent's
+        - Might need to copy it and fix up that one error
     - In ORAS, Sky Pillar gets Air Slash, but in RSE it just gets a regular cave
     - Should the Puddle environment get used for puddles?
     - Ice/Volcano/Puddle would need better palettes/potentially different, non-building tiles/need slide intros

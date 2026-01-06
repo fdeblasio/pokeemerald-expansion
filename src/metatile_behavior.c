@@ -45,6 +45,7 @@ static const u8 sTileBitAttributes[NUM_METATILE_BEHAVIORS] =
     [MB_LAVARIDGE_GYM_B1F_WARP]             = TILE_FLAG_UNUSED,
     [MB_SEAWEED_NO_SURFACING]               = TILE_FLAG_UNUSED | TILE_FLAG_SURFABLE | TILE_FLAG_HAS_ENCOUNTERS,
     [MB_REFLECTION_UNDER_BRIDGE]            = TILE_FLAG_UNUSED,
+    [MB_ICE_CAVE]                           = TILE_FLAG_UNUSED | TILE_FLAG_HAS_ENCOUNTERS,
     [MB_IMPASSABLE_EAST]                    = TILE_FLAG_UNUSED,
     [MB_IMPASSABLE_WEST]                    = TILE_FLAG_UNUSED,
     [MB_IMPASSABLE_NORTH]                   = TILE_FLAG_UNUSED,
@@ -1581,6 +1582,13 @@ bool8 MetatileBehavior_IsRockClimbable(u8 metatileBehavior)
     else
         return FALSE;
 }
+bool8 MetatileBehavior_IsIceCave(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_ICE_CAVE)
+        return TRUE;
+    else
+        return FALSE;
+}
 
 bool8 MetatileBehavior_IsSpinRight(u8 metatileBehavior)
 {
@@ -1824,4 +1832,3 @@ bool8 MetatileBehavior_IsTrainerTowerMonitor(u8 metatileBehavior)
     else
         return FALSE;
 }
-

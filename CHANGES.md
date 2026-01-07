@@ -565,6 +565,8 @@
         - Accuracy: 75->100
     - Spike Cannon:
         - PP: 15->20
+    - Strength:
+        - PP: 15->20
     - Tackle:
         - PP: 35->40
     - Tail Slap:
@@ -694,6 +696,8 @@
         - PP: 5->10
     - Twineedle:
         - Power: 25->50
+    - X-Scissor:
+        - PP: 15->20
 - Ghost:
     - Astonish:
         - Power: 30->40
@@ -763,6 +767,8 @@
         - PP: 5->10
     - Burning Jealousy:
         - PP: 5->10
+    - Ember:
+        - PP: 25->30
     - Fiery Dance:
         - Effect: 50%->100%
     - Fire Fang:
@@ -844,6 +850,8 @@
     - Razor Leaf:
         - Power: 55->60
         - Accuracy: 95->100
+    - Seed Bomb:
+        - PP: 15->20
     - Seed Flare:
         - Accuracy: 85->100
         - PP: 5->10
@@ -903,10 +911,14 @@
         - Accuracy: 95->100
     - Mountain Gale:
         - Accuracy: 85->100
+    - Powder Snow:
+        - PP: 25->30
 - Dragon:
     - Clanging Scales:
         - PP: 5->10
         - No longer lowers user's Defense
+    - Dragon Claw:
+        - PP: 15->20
     - Dual Chop:
         - Accuracy: 90->100
     - Dynamax Cannon:

@@ -16468,7 +16468,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         TRAPPING_MOVE(B_MSG_WRAPPED_THUNDER_CAGE),
         .power = 80,
         .type = TYPE_ELECTRIC,
-        .accuracy = 100,
         .pp = 15,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .metronomeBanned = TRUE,

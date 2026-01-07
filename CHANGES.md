@@ -759,6 +759,8 @@
         - PP: 15->20
     - Strength:
         - PP: 15->20
+    - Strength:
+        - PP: 15->20
     - Tackle:
         - PP: 35->40
     - Tail Slap:

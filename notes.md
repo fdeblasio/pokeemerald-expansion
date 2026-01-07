@@ -190,6 +190,7 @@ upcoming
     - Grass
     - Water 1/2/3
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
+- Add more indicators of shiniess in wild battles in case sparkles are missed
 
 ### Items
 - Max Elixir (and others?) should stay on party screen like Full Restores do
@@ -267,7 +268,6 @@ upcoming
     - Any Psychic/Steel type that learns Headbutt should learn Zen Headbutt/Iron Head?
 - Possible Move Updates:
     - Infestation: 20->35
-    - Parabolic Charge: 65->75
     - Poison Sting: 20->40
     - Poison Fang: 60->65
     - Shadow Punch: 60->75?
@@ -277,6 +277,8 @@ upcoming
     - Add back 5 remaining missing moves? (Natural Gift, Lucky Chant, Wring Out, Synchronoise, and Embargo)
         - Or remove Last Resort, Bestow, and others instead?
 - Dynamic power/typing:
+    - Might need to bring this to dynamic power/accuracy (https://github.com/rh-hideout/pokeemerald-expansion/pull/6888)
+        - Unsure if monInBattle does the same thing
     - Add more if statements for Utility Umbrella/Air Lock/Cloud Nine?
     - IsBattleMovePhysical/Special/Status(move) vs category == DAMAGE_CATEGORY_XYZ
     - More Abilities?:
@@ -294,6 +296,10 @@ upcoming
     - Weather abilities count towards corresponding weather (for example, Drought would show the sunny boost)
         - Include as part of isSunny?
         - Same thing for Terrain/Surge abilities?
+    - Potentially old issue: In battle, dynamic power seems to be based off first mon (Mightyena's Psychic Fangs getting a STAB boost due to Girafarig in the lead being Psychic)
+        - Seems to be an issue in upcoming with type as well
+            - The fix might make non-current mons non-dynamic. Check this
+            - Works for Hidden Power, but may have issues with more complex checks (weather, terrain, etc). Could work for STAB and Sharpness/Iron Fist/Strong Jaw-esque abilities
 - Dynamic accuracy:
     - Added OHKO accuracy (accIncreaseByTenOnSameType might good to check)
     - Micle Berry and accuracy stages will not show up on summary screen in battle. This might be unavoidable
@@ -322,6 +328,7 @@ upcoming
     - Route 128: Where Steven flies to?
 
 ### Overworld
+- Seperate out Route 104 (and other split routes) into two maps for different encounters? (Especially pond/ocean)
 - Add new defines (but keep current ones) for overworld sprites that line up with trainers for easier use
 - Double check that only Devon employees use DEVON_EMPLOYEES and only non-Devon use MAN_2
 - Use either SCIENTIST_1 or 2 for Cozmo/Stern and use the other for generic scientists

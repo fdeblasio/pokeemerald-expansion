@@ -83,8 +83,6 @@ upcoming
     - Exclude Magikarp?
     - Row per rod?
     - Skip over blank spots
-    - Add silhouettes
-        - Find way to not mess up PC palette (quitting after moving a mon)
 
 ### Next playthrough
 - Rustboro:

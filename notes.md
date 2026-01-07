@@ -75,14 +75,10 @@ upcoming
             - Regular forms have more Atk, but Mega has 146 more SpA
             - Land's Wrath, Thousand Waves, and Thousand Arrows are Physical, but Core Enforcer and Nihil Light are Special
 - DexNav:
-    - One row?:
+    - One land row?:
         - Screen: 720 pixels wide
         - Icons: 87 pixels wide?
             - These may have been measured on 3x zoom
-    - Could reduce space between land's two rows so fishing can have two rows
-    - Exclude Magikarp?
-    - Row per rod?
-    - Skip over blank spots
 
 ### Next playthrough
 - Rustboro:

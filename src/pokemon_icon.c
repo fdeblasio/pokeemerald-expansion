@@ -172,11 +172,14 @@ u8 CreateMonIconSilhouette(u16 species, void (*callback)(struct Sprite *), s16 x
         .anims = sMonIconAnims,
         .affineAnims = sMonIconAffineAnims,
         .callback = callback,
-        //Should use silhouette palette, but can't get it to work without messing with PC
         .paletteTag = POKE_ICON_BASE_PAL_TAG + gSpeciesInfo[species].iconPalIndex,
     };
 
     spriteId = CreateMonIconSprite(&iconTemplate, x, y, subpriority);
+    static const u16 sSilhouette_Pal[] = INCBIN_U16("graphics/pokedex/size_silhouette.gbapal");
+    u8 silhouettePaletteNum = 1;
+    LoadPalette(sSilhouette_Pal, OBJ_PLTT_ID(silhouettePaletteNum), PLTT_SIZE_4BPP);
+    gSprites[spriteId].oam.paletteNum = silhouettePaletteNum;
 
     UpdateMonIconFrame(&gSprites[spriteId]);
 

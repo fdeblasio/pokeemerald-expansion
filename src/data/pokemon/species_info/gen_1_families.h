@@ -1780,7 +1780,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseAttack    = 45,
         .baseDefense   = 40,
         .baseSpeed     = 56,
-        .baseSpAttack  = 35,
+        .baseSpAttack  = 45,
         .baseSpDefense = 35,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
         .catchRate = 255,
@@ -1854,7 +1854,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseAttack    = 60,
         .baseDefense   = 55,
         .baseSpeed     = 71,
-        .baseSpAttack  = 50,
+        .baseSpAttack  = 60,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
         .catchRate = 120,
@@ -1929,7 +1929,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseAttack    = 80,
         .baseDefense   = 75,
         .baseSpeed     = P_UPDATED_STATS >= GEN_6 ? 101 : 91,
-        .baseSpAttack  = 70,
+        .baseSpAttack  = 80,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
         .catchRate = 45,
@@ -9106,7 +9106,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseAttack    = 75,
         .baseDefense   = 35,
         .baseSpeed     = 40,
-        .baseSpAttack  = 70,
+        .baseSpAttack  = 75,
         .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 30 : 70,
         .types = MON_TYPES(TYPE_GRASS, TYPE_POISON),
         .catchRate = 255,
@@ -9175,7 +9175,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseAttack    = 90,
         .baseDefense   = 50,
         .baseSpeed     = 55,
-        .baseSpAttack  = 85,
+        .baseSpAttack  = 90,
         .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 45 : 85,
         .types = MON_TYPES(TYPE_GRASS, TYPE_POISON),
         .catchRate = 120,
@@ -9244,7 +9244,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 
 #if P_UPDATED_STATS >= GEN_6
-    #define VICTREEBEL_SP_DEF 70
+    #define VICTREEBEL_SP_DEF 75
 #elif P_UPDATED_STATS >= GEN_2
     #define VICTREEBEL_SP_DEF 60
 #else
@@ -9257,7 +9257,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseAttack    = 105,
         .baseDefense   = 65,
         .baseSpeed     = 70,
-        .baseSpAttack  = 100,
+        .baseSpAttack  = 105,
         .baseSpDefense = VICTREEBEL_SP_DEF,
         .types = MON_TYPES(TYPE_GRASS, TYPE_POISON),
         .catchRate = 45,

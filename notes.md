@@ -36,12 +36,6 @@ upcoming
 
 ## To Do:
 - Z-A Megas:
-    - Pidgey line:
-        - Make attacking stats more consistent? (Regular has 10 more Atk, but Mega has 55 more SpA)
-    - Raichu:
-        - Give both Physical and Special moves
-    - Victreebel line:
-        - Make attacking stats more consistent? (Regular has 5 more Atk, but Mega has 10 more SpA)
     - Starmie:
         - Make attacking stats more consistent? (Regular has 25 more SpA, but Mega has 10 more Atk)
             - It seems like it might actually have 30 more SpA but Pure Power

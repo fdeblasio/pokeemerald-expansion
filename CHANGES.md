@@ -1143,9 +1143,23 @@
 - Beedrill (not in main game):
     - Learns Leech Life by level up
 
-- Pidgey/Pidgeotto/Pidgeot (not in main game):
-    - Learn Peck by level up
-    - Learn Acrobatics by TM
+- Pidgey (not in main game):
+    - SpA: 35->45
+    - Learns Peck by level up
+    - Learns Acrobatics by TM
+
+- Pidgeotto (not in main game):
+    - SpA: 50->60
+    - Learns Peck by level up
+    - Learns Acrobatics by TM
+
+- Pidgeot (not in main game):
+    - SpA: 70->80
+    - Learns Peck by level up
+    - Learns Acrobatics by TM
+
+- Mega Pidgeot (not in main game):
+    - Spe: 121->131
 
 - Nidoran F (not in main game):
     - Learns Poison Tail, Venoshock, and Poison Jab by level up
@@ -1350,11 +1364,21 @@
 - Machop/Machoke/Machamp:
     - Learn Drain Punch by TM
 
-- Bellsprout/Weepinbell (not in main game):
-    - Learn Absorb, Mega Drain, Magical Leaf, Giga Drain, Venoshock, and Seed Bomb by level up
+- Bellsprout (not in main game):
+    - SpA: 70->75
+    - Learns Absorb, Mega Drain, Magical Leaf, Giga Drain, Venoshock, and Seed Bomb by level up
+
+- Weepinbell (not in main game):
+    - SpA: 85->90
+    - Learns Absorb, Mega Drain, Magical Leaf, Giga Drain, Venoshock, and Seed Bomb by level up
 
 - Victreebel (not in main game):
+    - SpA: 100->105
+    - SpD: 70->75
     - Learns Absorb, Mega Drain, Magical Leaf, Giga Drain, Venoshock, Seed Bomb, Poison Fang, and Solar Blade by level up
+
+- Mega Victreebel (not in main game):
+    - Atk: 125->135
 
 - Tentacool/Tentacruel:
     - Learn Venoshock by level up
@@ -2678,6 +2702,7 @@
 
 - Combee:
     - SpA: 30->40
+    - Held item: Honey: 30%->100%
     - Gender ratio: 87.5/12.5->50/50
     - Learns Air Slash by level up
 

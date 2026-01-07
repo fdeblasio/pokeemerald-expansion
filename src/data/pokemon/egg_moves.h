@@ -4378,7 +4378,6 @@ static const u16 sCarnivineEggMoveLearnset[] = {
     MOVE_LEECH_SEED,
     MOVE_NATURE_POWER,
     MOVE_RAGE_POWDER,
-    MOVE_RAZOR_LEAF,
     MOVE_ROUND,
     MOVE_SLAM,
     MOVE_SLEEP_POWDER,

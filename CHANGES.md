@@ -501,6 +501,9 @@
     - Barrage:
         - Power: 15->20
         - Accuracy: 85->100
+    - Bind:
+        - Power: 15->35
+        - Accuracy: 85->90
     - Blood Moon:
         - PP: 5->10
     - Chatter:
@@ -572,6 +575,8 @@
         - PP: 5->10
     - Tera Starstorm:
         - PP: 5->10
+    - Wrap:
+        - Power: 15->35
 - Fighting:
     - Arm Thrust:
         - Power: 15->20
@@ -649,6 +654,9 @@
     - Sandsear Storm:
         - Power: 100->120
         - Accuracy: 80->100
+    - Sand Tomb:
+        - Accuracy: 85->90
+        - PP: 15->20
     - Thousand Arrows:
         - Power: 90->100
     - Thousand Waves:
@@ -701,6 +709,9 @@
         - PP: 5->10
     - Poltergeist:
         - Accuracy: 90->100
+    - Shadow Claw:
+        - PP: 15->20
+        - Now a slicing move
     - Shadow Force:
         - PP: 5->10
     - Spirit Shackle:
@@ -753,6 +764,9 @@
         - Effect: 50%->100%
     - Fire Fang:
         - Accuracy: 95->100
+    - Fire Spin:
+        - Accuracy: 85->90
+        - PP: 15->20
     - Fusion Flare:
         - PP: 5->10
     - Inferno:
@@ -777,6 +791,9 @@
         - PP: 20->30
     - Aqua Tail:
         - Accuracy: 90->100
+    - Clamp:
+        - Accuracy: 85->90
+        - PP: 15->20
     - Crabhammer:
         - Accuracy: 90->100
     - Flip Turn:
@@ -803,6 +820,9 @@
         - Accuracy: 95->100
     - Water Shuriken:
         - Power: 15->25
+    - Whirlpool:
+        - Accuracy: 85->90
+        - PP: 15->20
 - Grass:
     - Chloroblast:
         - Accuracy: 95->100
@@ -909,6 +929,8 @@
         - PP: 5->10
     - Night Daze:
         - Accuracy: 95->100
+    - Night Slash:
+        - PP: 15->20
     - Snarl:
         - Accuracy: 95->100
     - Wicked Blow:
@@ -2723,6 +2745,9 @@
 
 - Croagunk/Toxicroak:
     - Learn Rock Smash, Brick Break, and Drain Punch by level up
+
+- Carnivine:
+    - Learns Leafage, Razor Leaf, Snap Trap, and Seed Bomb by level up
 
 - Snover/Abomasnow:
     - Learn Seed Bomb and Icicle Crash by level up

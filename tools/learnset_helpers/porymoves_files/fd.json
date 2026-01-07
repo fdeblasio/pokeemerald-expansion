@@ -9391,7 +9391,24 @@
     "TutorMoves": []
   },
   "CARNIVINE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_LEAFAGE"
+      },
+      {
+        "Level": 27,
+        "Move": "MOVE_RAZOR_LEAF"
+      },
+      {
+        "Level": 31,
+        "Move": "MOVE_SNAP_TRAP"
+      },
+      {
+        "Level": 47,
+        "Move": "MOVE_SEED_BOMB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

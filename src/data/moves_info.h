@@ -31,6 +31,21 @@ const u8 gNotDoneYetDescription[] = _(
     .target = TARGET_SELECTED, \
     .priority = 0
 
+#define TRAPPING_35_POWER_MOVE(Move)                      \
+    .effect = EFFECT_HIT,                                 \
+    .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 35 : 15,      \
+    .accuracy = B_UPDATED_MOVE_DATA >= GEN_5 ? 90 : 70,   \
+    .pp = 20,                                             \
+    .target = TARGET_SELECTED,                            \
+    .priority = 0,                                        \
+    .ignoresKingsRock = B_UPDATED_MOVE_FLAGS < GEN_3,     \
+    .additionalEffects = ADDITIONAL_EFFECTS({             \
+        .moveEffect = MOVE_EFFECT_WRAP,                   \
+        .multistring.wrapped = B_MSG_WRAPPED_##Move,      \
+    }),                                                   \
+    .contestEffect = CONTEST_EFFECT_DONT_EXCITE_AUDIENCE, \
+    .validApprenticeMove = TRUE
+
 #define HIGH_PRIORITY_40_POWER_INFO \
     .effect = EFFECT_HIT,           \
     .power = 40,                    \
@@ -40,14 +55,6 @@ const u8 gNotDoneYetDescription[] = _(
     .priority = 1,                  \
     .contestEffect = CONTEST_EFFECT_NEXT_APPEAL_EARLIER
 
-#define ALWAYS_HIT_60_POWER_INFO \
-    .effect = EFFECT_HIT,        \
-    .power = 60,                 \
-    .accuracy = 0,               \
-    .pp = 20,                    \
-    .priority = 0,               \
-    .contestEffect = CONTEST_EFFECT_BETTER_IF_FIRST
-
 #define MULTI_HIT_20_POWER_INFO \
     .effect = EFFECT_HIT,       \
     .power = 20,                \
@@ -56,6 +63,24 @@ const u8 gNotDoneYetDescription[] = _(
     .target = TARGET_SELECTED,  \
     .priority = 0,              \
     .multiHit = TRUE
+
+#define ALWAYS_HIT_60_POWER_INFO \
+    .effect = EFFECT_HIT,        \
+    .power = 60,                 \
+    .accuracy = 0,               \
+    .pp = 20,                    \
+    .priority = 0,               \
+    .contestEffect = CONTEST_EFFECT_BETTER_IF_FIRST
+
+#define HIGH_CRITICAL_SLICING_70_POWER_INFO                   \
+    .effect = EFFECT_HIT,                                     \
+    .power = 70,                                              \
+    .accuracy = 100,                                          \
+    .criticalHitStage = B_UPDATED_MOVE_DATA >= GEN_3 ? 1 : 2, \
+    .pp = 20,                                                 \
+    .target = TARGET_SELECTED,                                \
+    .priority = 0,                                            \
+    .slicingMove = TRUE
 
 #define OHKO_INFO              \
     .effect = EFFECT_OHKO,     \
@@ -690,26 +715,14 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Binds and squeezes the foe\n"
             "for "BINDING_TURNS" turns."),
-        .effect = EFFECT_HIT,
-        .power = 15,
+        TRAPPING_35_POWER_MOVE(BIND),
         .type = TYPE_NORMAL,
-        .accuracy = B_UPDATED_MOVE_DATA >= GEN_5 ? 85 : 75,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .ignoresKingsRock = B_UPDATED_MOVE_FLAGS < GEN_3,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_WRAP,
-            .multistring.wrapped = B_MSG_WRAPPED_BIND,
-        }),
-        .contestEffect = CONTEST_EFFECT_DONT_EXCITE_AUDIENCE,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_VICE_GRIP},
         .battleAnimScript = gBattleAnimMove_Bind,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_SLAM] =
@@ -1068,26 +1081,14 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Wraps and squeezes the foe\n"
             BINDING_TURNS" times with vines, etc."),
-        .effect = EFFECT_HIT,
-        .power = 15,
+        TRAPPING_35_POWER_MOVE(WRAP),
         .type = TYPE_NORMAL,
-        .accuracy = B_UPDATED_MOVE_DATA >= GEN_5 ? 90 : 85,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .ignoresKingsRock = B_UPDATED_MOVE_FLAGS < GEN_3,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_WRAP,
-            .multistring.wrapped = B_MSG_WRAPPED_WRAP,
-        }),
-        .contestEffect = CONTEST_EFFECT_DONT_EXCITE_AUDIENCE,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
         .battleAnimScript = gBattleAnimMove_Wrap,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_TAKE_DOWN] =
@@ -2340,25 +2341,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Traps the foe in a ring of\n"
             "fire for "BINDING_TURNS" turns."),
-        .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 35 : 15,
+        TRAPPING_35_POWER_MOVE(FIRE_SPIN),
         .type = TYPE_FIRE,
-        .accuracy = B_UPDATED_MOVE_DATA >= GEN_5 ? 85 : 70,
-        .pp = 15,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .ignoresKingsRock = B_UPDATED_MOVE_FLAGS < GEN_3,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_WRAP,
-            .multistring.wrapped = B_MSG_WRAPPED_FIRE_SPIN,
-        }),
-        .contestEffect = CONTEST_EFFECT_DONT_EXCITE_AUDIENCE,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_SUNNY_DAY},
         .battleAnimScript = gBattleAnimMove_FireSpin,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_THUNDER_SHOCK] =
@@ -3522,26 +3511,14 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Traps and squeezes the\n"
             "foe for "BINDING_TURNS" turns."),
-        .effect = EFFECT_HIT,
-        .power = 35,
+        TRAPPING_35_POWER_MOVE(CLAMP),
         .type = TYPE_WATER,
-        .accuracy = B_UPDATED_MOVE_DATA >= GEN_5 ? 85 : 75,
-        .pp = B_UPDATED_MOVE_DATA >= GEN_5 ? 15 : 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .ignoresKingsRock = B_UPDATED_MOVE_FLAGS < GEN_3,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_WRAP,
-            .multistring.wrapped = B_MSG_WRAPPED_CLAMP,
-        }),
-        .contestEffect = CONTEST_EFFECT_DONT_EXCITE_AUDIENCE,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_RAIN_DANCE},
         .battleAnimScript = gBattleAnimMove_Clamp,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_SWIFT] =
@@ -4450,17 +4427,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Slashes with claws, etc. Has\n"
             "a high critical-hit ratio."),
-        .effect = EFFECT_HIT,
-        .power = 70,
+        HIGH_CRITICAL_SLICING_70_POWER_INFO,
         .type = TYPE_NORMAL,
-        .accuracy = 100,
-        .criticalHitStage = B_UPDATED_MOVE_DATA >= GEN_3 ? 1 : 2,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .slicingMove = TRUE,
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_HIGHLY_APPEALING : CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
@@ -6782,26 +6752,14 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Traps and hurts the foe in\n"
             "a whirlpool for "BINDING_TURNS" turns."),
-        .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 35 : 15,
+        TRAPPING_35_POWER_MOVE(WHIRLPOOL),
         .type = TYPE_WATER,
-        .accuracy = B_UPDATED_MOVE_DATA >= GEN_5 ? 85 : 70,
-        .pp = 15,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .ignoresKingsRock = B_UPDATED_MOVE_FLAGS < GEN_3,
         .damagesUnderwater = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_WRAP,
-            .multistring.wrapped = B_MSG_WRAPPED_WHIRLPOOL,
-        }),
-        .contestEffect = CONTEST_EFFECT_DONT_EXCITE_AUDIENCE,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_RAIN_DANCE},
         .battleAnimScript = gBattleAnimMove_Whirlpool,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_BEAT_UP] =
@@ -8816,24 +8774,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Traps and hurts the foe in\n"
             "quicksand for "BINDING_TURNS" turns."),
-        .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 35 : 15,
+        TRAPPING_35_POWER_MOVE(SAND_TOMB),
         .type = TYPE_GROUND,
-        .accuracy = B_UPDATED_MOVE_DATA >= GEN_5 ? 85 : 70,
-        .pp = 15,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_WRAP,
-            .multistring.wrapped = B_MSG_WRAPPED_SAND_TOMB,
-        }),
-        .contestEffect = CONTEST_EFFECT_DONT_EXCITE_AUDIENCE,
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_SANDSTORM},
         .battleAnimScript = gBattleAnimMove_SandTomb,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_SHEER_COLD] =
@@ -10598,17 +10545,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Hits as soon as possible.\n"
             "High critical-hit ratio."),
-        .effect = EFFECT_HIT,
-        .power = 70,
+        HIGH_CRITICAL_SLICING_70_POWER_INFO,
         .type = TYPE_DARK,
-        .accuracy = 100,
-        .criticalHitStage = B_UPDATED_MOVE_DATA >= GEN_3 ? 1 : 2,
-        .pp = 15,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .slicingMove = TRUE,
         .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL,
         .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_COOL : CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
@@ -11079,14 +11019,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Strikes with a shadow claw.\n"
             "High critical-hit ratio."),
-        .effect = EFFECT_HIT,
-        .power = 70,
+        HIGH_CRITICAL_SLICING_70_POWER_INFO,
         .type = TYPE_GHOST,
-        .accuracy = 100,
-        .criticalHitStage = B_UPDATED_MOVE_DATA >= GEN_3 ? 1 : 2,
-        .pp = 15,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
@@ -11190,16 +11124,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Tears with psychic blades.\n"
             "High critical-hit ratio."),
-        .effect = EFFECT_HIT,
-        .power = 70,
+        HIGH_CRITICAL_SLICING_70_POWER_INFO,
         .type = TYPE_PSYCHIC,
-        .accuracy = 100,
-        .criticalHitStage = B_UPDATED_MOVE_DATA >= GEN_3 ? 1 : 2,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .slicingMove = TRUE,
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
@@ -11515,17 +11442,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A slash that may poison a\n"
             "foe and do critical damage."),
-        .effect = EFFECT_HIT,
-        .power = 70,
+        HIGH_CRITICAL_SLICING_70_POWER_INFO,
         .type = TYPE_POISON,
-        .accuracy = 100,
-        .criticalHitStage = B_UPDATED_MOVE_DATA >= GEN_3 ? 1 : 2,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .slicingMove = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_POISON,
             .chance = 10,
@@ -20309,16 +20229,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Pressurized water cut with a\n"
             "high critical-hit ratio."),
-        .effect = EFFECT_HIT,
-        .power = 70,
+        HIGH_CRITICAL_SLICING_70_POWER_INFO,
         .type = TYPE_WATER,
-        .accuracy = 100,
-        .criticalHitStage = B_UPDATED_MOVE_DATA >= GEN_3 ? 1 : 2,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .slicingMove = TRUE,
         .battleAnimScript = gBattleAnimMove_AquaCutter,
     },
 

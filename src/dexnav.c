@@ -1653,29 +1653,29 @@ static void UpdateCursorPosition(void)
     switch (sDexNavUiDataPtr->cursorRow)
     {
     case ROW_WATER:
-        x = ROW_WATER_ICON_X + (24 * sDexNavUiDataPtr->cursorCol);
+        x = ROW_WATER_ICON_X + (COLUMN_SPACING * sDexNavUiDataPtr->cursorCol);
         y = ROW_WATER_ICON_Y;
         sDexNavUiDataPtr->environment = ENCOUNTER_TYPE_WATER;
         break;
     case ROW_LAND_TOP: //land 1
-        x = ROW_LAND_ICON_X + (24 * sDexNavUiDataPtr->cursorCol);
+        x = ROW_LAND_ICON_X + (COLUMN_SPACING * sDexNavUiDataPtr->cursorCol);
         y = ROW_LAND_TOP_ICON_Y;
         sDexNavUiDataPtr->environment = ENCOUNTER_TYPE_LAND;
         break;
     case ROW_LAND_BOT: //land 2
-        x = ROW_LAND_ICON_X + (24 * sDexNavUiDataPtr->cursorCol);
+        x = ROW_LAND_ICON_X + (COLUMN_SPACING * sDexNavUiDataPtr->cursorCol);
         y = ROW_LAND_BOT_ICON_Y;
         sDexNavUiDataPtr->environment = ENCOUNTER_TYPE_LAND;
         break;
 #if CHECK_SPECIES == FALSE
     case ROW_HIDDEN:
-        x = ROW_HIDDEN_ICON_X + (24 * sDexNavUiDataPtr->cursorCol);
+        x = ROW_HIDDEN_ICON_X + (COLUMN_SPACING * sDexNavUiDataPtr->cursorCol);
         y = ROW_HIDDEN_ICON_Y;
         sDexNavUiDataPtr->environment = ENCOUNTER_TYPE_HIDDEN;
         break;
 #else
     case ROW_FISHING:
-        x = ROW_FISHING_ICON_X + (24 * sDexNavUiDataPtr->cursorCol);
+        x = ROW_FISHING_ICON_X + (COLUMN_SPACING * sDexNavUiDataPtr->cursorCol);
         y = ROW_FISHING_ICON_Y;
         sDexNavUiDataPtr->environment = ENCOUNTER_TYPE_FISHING;
         break;
@@ -1870,7 +1870,7 @@ static void DexNavLoadCapturedAllSymbols(void)
         CreateSprite(&sCaptureAllMonsSpriteTemplate, 142, 17, 0);
 
     if (CapturedAllFishingMons(headerId))
-        CreateSprite(&sCaptureAllMonsSpriteTemplate, 176, 123, 0);
+        CreateSprite(&sCaptureAllMonsSpriteTemplate, 152, 123, 0);
 #endif
 }
 
@@ -2084,7 +2084,7 @@ static void DrawSpeciesIcons(void)
     for (i = 0; i < LAND_WILD_COUNT; i++)
     {
         species = sDexNavUiDataPtr->landSpecies[i];
-        x = ROW_LAND_ICON_X + (24 * (i % COL_LAND_COUNT));
+        x = ROW_LAND_ICON_X + (COLUMN_SPACING * (i % COL_LAND_COUNT));
         y = ROW_LAND_TOP_ICON_Y + (i > COL_LAND_MAX ? LAND_DIFFERENCE : 0);
         TryDrawIconInSlot(species, x, y);
     }
@@ -2092,7 +2092,7 @@ static void DrawSpeciesIcons(void)
     for (i = 0; i < WATER_WILD_COUNT; i++)
     {
         species = sDexNavUiDataPtr->waterSpecies[i];
-        x = ROW_WATER_ICON_X + 24 * i;
+        x = ROW_WATER_ICON_X + COLUMN_SPACING * i;
         y = ROW_WATER_ICON_Y;
         TryDrawIconInSlot(species, x, y);
     }
@@ -2101,7 +2101,7 @@ static void DrawSpeciesIcons(void)
     for (i = 0; i < HIDDEN_WILD_COUNT; i++)
     {
         species = sDexNavUiDataPtr->hiddenSpecies[i];
-        x = ROW_HIDDEN_ICON_X + 24 * i;
+        x = ROW_HIDDEN_ICON_X + COLUMN_SPACING * i;
         y = ROW_HIDDEN_ICON_Y;
         if (FlagGet(DN_FLAG_DETECTOR_MODE))
             TryDrawIconInSlot(species, x, y);
@@ -2114,7 +2114,7 @@ static void DrawSpeciesIcons(void)
     for (i = 0; i < FISH_WILD_COUNT; i++)
     {
         species = sDexNavUiDataPtr->fishingSpecies[i];
-        x = ROW_FISHING_ICON_X + 24 * i;
+        x = ROW_FISHING_ICON_X + COLUMN_SPACING * i;
         y = ROW_FISHING_ICON_Y;
         TryDrawIconInSlot(species, x, y);
     }

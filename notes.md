@@ -254,10 +254,8 @@ upcoming
         - CanLearnTeachableMove is modified instead
 - Apply dynamic power to move relearner
 - Nature Power:
-    - Nature Power details on summary screen (power/accuracy would be for in-battle status screen only)
-        - All moves are currently Special so change category in moves_info.h back to Status if any of them change
-            - The summary screen would show the proper category, however
     - Revert some Nature Power moves for a more varied effect
+    - All moves are currently Special so change category in moves_info.h back to Status if any of them change
 - Update local Porymoves for automatic movepool updates (similar to Hail/Snowscape)
     - Some of these may need to be done manually (or can do in C but harder to document)
     - Any Pokémon that learns Drill Peck should learn Drill Run

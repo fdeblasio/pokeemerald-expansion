@@ -6276,6 +6276,10 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
         if (isSunny && holdEffect != HOLD_EFFECT_UTILITY_UMBRELLA)
             UQ4_12_MULTIPLY(power, 1.5);
         break;
+    case EFFECT_NATURE_POWER:
+        if (gMain.inBattle)
+            power = GetMovePower(GetNaturePowerMove(battler));
+        break;
     }
 
     switch (ability)
@@ -6451,6 +6455,9 @@ u32 GetDynamicAccuracy(struct Pokemon *mon, enum Move move, enum BattlerId battl
 
     if (gMain.inBattle)
     {
+        if (GetMoveEffect(move) == EFFECT_NATURE_POWER)
+            accuracy = GetMoveAccuracy(GetNaturePowerMove(battler));
+
         if (HasWeatherEffect()){
 
             if (IsBattlerWeatherAffected(BATTLE_OPPOSITE(battler), B_WEATHER_SUN) && MoveHas50AccuracyInSun(move))

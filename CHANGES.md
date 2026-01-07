@@ -1804,6 +1804,9 @@
 - Mega Victreebel (not in Emerald):
     - Atk: 125->135
 
+- Mega Victreebel (not in main game):
+    - Atk: 125->135
+
 - Tentacool/Tentacruel:
     - Learn Venoshock by level up
 

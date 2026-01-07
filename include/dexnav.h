@@ -25,9 +25,9 @@ enum RowGUIInfo
     #define ROW_LAND_TOP_ICON_Y     72
     #define LAND_DIFFERENCE         28
 #else
-    #define ROW_WATER_ICON_X        38
+    #define ROW_WATER_ICON_X        29
     #define ROW_WATER_ICON_Y        34
-    #define ROW_LAND_ICON_X         31
+    #define ROW_LAND_ICON_X         19
     #define ROW_LAND_TOP_ICON_Y     75
     #define LAND_DIFFERENCE         24
 #endif
@@ -39,6 +39,8 @@ enum RowGUIInfo
 
 #define ROW_FISHING_ICON_X      19
 #define ROW_FISHING_ICON_Y      140
+
+#define COLUMN_SPACING          30
 
 enum EncounterType
 {

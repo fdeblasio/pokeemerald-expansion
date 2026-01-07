@@ -124,6 +124,9 @@ struct DexNavGUI
     u16 hiddenSpecies[HIDDEN_WILD_COUNT];
 #else
     u16 fishingSpecies[FISH_WILD_COUNT];
+    u8 landCount;
+    u8 waterCount;
+    u8 fishingCount;
 #endif
     u8 cursorRow;
     u8 cursorCol;
@@ -1703,29 +1706,29 @@ static void UpdateCursorPosition(void)
     switch (sDexNavUiDataPtr->cursorRow)
     {
     case ROW_WATER:
-        x = ROW_WATER_ICON_X + (24 * sDexNavUiDataPtr->cursorCol);
+        x = ROW_WATER_ICON_X + (COLUMN_SPACING * sDexNavUiDataPtr->cursorCol);
         y = ROW_WATER_ICON_Y;
         sDexNavUiDataPtr->environment = ENCOUNTER_TYPE_WATER;
         break;
     case ROW_LAND_TOP: //land 1
-        x = ROW_LAND_ICON_X + (24 * sDexNavUiDataPtr->cursorCol);
+        x = ROW_LAND_ICON_X + (COLUMN_SPACING * sDexNavUiDataPtr->cursorCol);
         y = ROW_LAND_TOP_ICON_Y;
         sDexNavUiDataPtr->environment = ENCOUNTER_TYPE_LAND;
         break;
     case ROW_LAND_BOT: //land 2
-        x = ROW_LAND_ICON_X + (24 * sDexNavUiDataPtr->cursorCol);
+        x = ROW_LAND_ICON_X + (COLUMN_SPACING * sDexNavUiDataPtr->cursorCol);
         y = ROW_LAND_BOT_ICON_Y;
         sDexNavUiDataPtr->environment = ENCOUNTER_TYPE_LAND;
         break;
 #if CHECK_SPECIES == FALSE
     case ROW_HIDDEN:
-        x = ROW_HIDDEN_ICON_X + (24 * sDexNavUiDataPtr->cursorCol);
+        x = ROW_HIDDEN_ICON_X + (COLUMN_SPACING * sDexNavUiDataPtr->cursorCol);
         y = ROW_HIDDEN_ICON_Y;
         sDexNavUiDataPtr->environment = ENCOUNTER_TYPE_HIDDEN;
         break;
 #else
     case ROW_FISHING:
-        x = ROW_FISHING_ICON_X + (24 * sDexNavUiDataPtr->cursorCol);
+        x = ROW_FISHING_ICON_X + (COLUMN_SPACING * sDexNavUiDataPtr->cursorCol);
         y = ROW_FISHING_ICON_Y;
         sDexNavUiDataPtr->environment = ENCOUNTER_TYPE_FISHING;
         break;
@@ -1920,7 +1923,7 @@ static void DexNavLoadCapturedAllSymbols(void)
         CreateSprite(&sCaptureAllMonsSpriteTemplate, 142, 17, 0);
 
     if (CapturedAllFishingMons(headerId))
-        CreateSprite(&sCaptureAllMonsSpriteTemplate, 176, 123, 0);
+        CreateSprite(&sCaptureAllMonsSpriteTemplate, 152, 123, 0);
 #endif
 }
 
@@ -2075,6 +2078,7 @@ static void DexNavLoadEncounterData(void)
             if (species != SPECIES_NONE && !SpeciesInArray(species, 0))
                 sDexNavUiDataPtr->landSpecies[grassIndex++] = landMonsInfo->wildPokemon[i].species;
         }
+        sDexNavUiDataPtr->landCount = grassIndex;
     }
 
     // water mons
@@ -2086,6 +2090,7 @@ static void DexNavLoadEncounterData(void)
             if (species != SPECIES_NONE && !SpeciesInArray(species, 1))
                 sDexNavUiDataPtr->waterSpecies[waterIndex++] = waterMonsInfo->wildPokemon[i].species;
         }
+        sDexNavUiDataPtr->waterCount = waterIndex;
     }
 
 #if CHECK_SPECIES == FALSE
@@ -2109,6 +2114,7 @@ static void DexNavLoadEncounterData(void)
             if (species != SPECIES_NONE && !SpeciesInArray(species, 2))
                 sDexNavUiDataPtr->fishingSpecies[fishingIndex++] = fishingMonsInfo->wildPokemon[i].species;
         }
+        sDexNavUiDataPtr->fishingCount = fishingIndex;
     }
 #endif
 }
@@ -2121,7 +2127,6 @@ static void TryDrawIconInSlot(u16 species, s16 x, s16 y)
             CreateMonIcon(SPECIES_NONE, SpriteCB_MonIcon, x, y, 0, 0xFFFFFFFF); //question mark
         else if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT))
             CreateMonIconSilhouette(species, SpriteCB_MonIcon, x, y, 0, 0xFFFFFFFF);
-            //CreateNoDataIcon(x, y);   //'X' in slot
         else
             CreateMonIcon(species, SpriteCB_MonIcon, x, y, 0, 0xFFFFFFFF);
 
@@ -2138,7 +2143,7 @@ static void DrawSpeciesIcons(void)
     for (i = 0; i < LAND_WILD_COUNT; i++)
     {
         species = sDexNavUiDataPtr->landSpecies[i];
-        x = ROW_LAND_ICON_X + (24 * (i % COL_LAND_COUNT));
+        x = ROW_LAND_ICON_X + (COLUMN_SPACING * (i % COL_LAND_COUNT));
         y = ROW_LAND_TOP_ICON_Y + (i > COL_LAND_MAX ? LAND_DIFFERENCE : 0);
         TryDrawIconInSlot(species, x, y);
     }
@@ -2146,7 +2151,7 @@ static void DrawSpeciesIcons(void)
     for (i = 0; i < WATER_WILD_COUNT; i++)
     {
         species = sDexNavUiDataPtr->waterSpecies[i];
-        x = ROW_WATER_ICON_X + 24 * i;
+        x = ROW_WATER_ICON_X + COLUMN_SPACING * i;
         y = ROW_WATER_ICON_Y;
         TryDrawIconInSlot(species, x, y);
     }
@@ -2155,7 +2160,7 @@ static void DrawSpeciesIcons(void)
     for (i = 0; i < HIDDEN_WILD_COUNT; i++)
     {
         species = sDexNavUiDataPtr->hiddenSpecies[i];
-        x = ROW_HIDDEN_ICON_X + 24 * i;
+        x = ROW_HIDDEN_ICON_X + COLUMN_SPACING * i;
         y = ROW_HIDDEN_ICON_Y;
         if (FlagGet(DN_FLAG_DETECTOR_MODE))
             TryDrawIconInSlot(species, x, y);
@@ -2168,7 +2173,7 @@ static void DrawSpeciesIcons(void)
     for (i = 0; i < FISH_WILD_COUNT; i++)
     {
         species = sDexNavUiDataPtr->fishingSpecies[i];
-        x = ROW_FISHING_ICON_X + 24 * i;
+        x = ROW_FISHING_ICON_X + COLUMN_SPACING * i;
         y = ROW_FISHING_ICON_Y;
         TryDrawIconInSlot(species, x, y);
     }
@@ -2515,6 +2520,18 @@ static void Task_DexNavMain(u8 taskId)
     if (IsSEPlaying())
         return;
 
+    const u8 cursorColumnLimits[ROWS_COUNT] =
+    {
+        [ROW_WATER]    = sDexNavUiDataPtr->waterCount,
+        [ROW_LAND_TOP] = min(sDexNavUiDataPtr->landCount, COL_LAND_COUNT),
+        [ROW_LAND_BOT] = sDexNavUiDataPtr->landCount - min(sDexNavUiDataPtr->landCount, COL_LAND_COUNT),
+    #if CHECK_SPECIES == FALSE
+        [ROW_HIDDEN]  = COL_HIDDEN_COUNT,
+    #else
+        [ROW_FISHING]  = sDexNavUiDataPtr->fishingCount,
+    #endif
+    };
+
     if (JOY_NEW(B_BUTTON))
     {
         PlaySE(SE_POKENAV_OFF);
@@ -2523,59 +2540,24 @@ static void Task_DexNavMain(u8 taskId)
     }
     else if (JOY_NEW(DPAD_UP))
     {
-        if (sDexNavUiDataPtr->cursorRow == ROW_WATER)
-        {
-#if CHECK_SPECIES == FALSE
-            sDexNavUiDataPtr->cursorRow = ROW_HIDDEN;
-            if (sDexNavUiDataPtr->cursorCol >= COL_HIDDEN_COUNT)
-                sDexNavUiDataPtr->cursorCol = COL_HIDDEN_MAX;
-#else
-            sDexNavUiDataPtr->cursorRow = ROW_FISHING;
-            if (sDexNavUiDataPtr->cursorCol >= COL_FISHING_COUNT)
-                sDexNavUiDataPtr->cursorCol = COL_FISHING_MAX;
-#endif
-        }
-        else
-        {
-            if (sDexNavUiDataPtr->cursorRow == ROW_LAND_TOP && sDexNavUiDataPtr->cursorCol == COL_LAND_MAX)
-                sDexNavUiDataPtr->cursorCol = COL_WATER_MAX;
+        sDexNavUiDataPtr->cursorRow = (sDexNavUiDataPtr->cursorRow + ROWS_COUNT - 1) % ROWS_COUNT;
+        while (cursorColumnLimits[sDexNavUiDataPtr->cursorRow] == 0)
+            sDexNavUiDataPtr->cursorRow = (sDexNavUiDataPtr->cursorRow + ROWS_COUNT - 1) % ROWS_COUNT;
 
-            sDexNavUiDataPtr->cursorRow--;
-        }
+        if (sDexNavUiDataPtr->cursorCol >= cursorColumnLimits[sDexNavUiDataPtr->cursorRow] - 1)
+            sDexNavUiDataPtr->cursorCol = cursorColumnLimits[sDexNavUiDataPtr->cursorRow] - 1;
 
         PlaySE(SE_RG_BAG_CURSOR);
         UpdateCursorPosition();
     }
     else if (JOY_NEW(DPAD_DOWN))
     {
-#if CHECK_SPECIES == FALSE
-        if (sDexNavUiDataPtr->cursorRow == ROW_HIDDEN)
-        {
-            sDexNavUiDataPtr->cursorRow = ROW_WATER;
-        }
-        else if (sDexNavUiDataPtr->cursorRow == ROW_LAND_BOT)
-        {
-            if (sDexNavUiDataPtr->cursorCol >= COL_HIDDEN_COUNT)
-                sDexNavUiDataPtr->cursorCol = COL_HIDDEN_MAX;
-#else
-        if (sDexNavUiDataPtr->cursorRow == ROW_FISHING)
-        {
-            sDexNavUiDataPtr->cursorRow = ROW_WATER;
-            if (sDexNavUiDataPtr->cursorCol >= COL_WATER_COUNT)
-                sDexNavUiDataPtr->cursorCol = COL_WATER_MAX;
-        }
-        else if (sDexNavUiDataPtr->cursorRow == ROW_LAND_BOT)
-        {
-            if (sDexNavUiDataPtr->cursorCol >= COL_FISHING_COUNT)
-                sDexNavUiDataPtr->cursorCol = COL_FISHING_MAX;
-#endif
+        sDexNavUiDataPtr->cursorRow = (sDexNavUiDataPtr->cursorRow + 1) % ROWS_COUNT;
+        while (cursorColumnLimits[sDexNavUiDataPtr->cursorRow] == 0)
+            sDexNavUiDataPtr->cursorRow = (sDexNavUiDataPtr->cursorRow + 1) % ROWS_COUNT;
 
-            sDexNavUiDataPtr->cursorRow++;
-        }
-        else
-        {
-            sDexNavUiDataPtr->cursorRow++;
-        }
+        if (sDexNavUiDataPtr->cursorCol >= cursorColumnLimits[sDexNavUiDataPtr->cursorRow] - 1)
+            sDexNavUiDataPtr->cursorCol = cursorColumnLimits[sDexNavUiDataPtr->cursorRow] - 1;
 
         PlaySE(SE_RG_BAG_CURSOR);
         UpdateCursorPosition();
@@ -2583,66 +2565,19 @@ static void Task_DexNavMain(u8 taskId)
     else if (JOY_NEW(DPAD_LEFT))
     {
         if (sDexNavUiDataPtr->cursorCol == 0)
-        {
-            switch (sDexNavUiDataPtr->cursorRow)
-            {
-            case ROW_WATER:
-                sDexNavUiDataPtr->cursorCol = COL_WATER_MAX;
-                break;
-#if CHECK_SPECIES == FALSE
-            case ROW_HIDDEN:
-                sDexNavUiDataPtr->cursorCol = COL_HIDDEN_MAX;
-                break;
-#else
-            case ROW_FISHING:
-                sDexNavUiDataPtr->cursorCol = COL_FISHING_MAX;
-                break;
-#endif
-            default:
-                sDexNavUiDataPtr->cursorCol = COL_LAND_MAX;
-                break;
-            }
-        }
+            sDexNavUiDataPtr->cursorCol = cursorColumnLimits[sDexNavUiDataPtr->cursorRow] - 1;
         else
-        {
             sDexNavUiDataPtr->cursorCol--;
-        }
 
         PlaySE(SE_RG_BAG_CURSOR);
         UpdateCursorPosition();
     }
     else if (JOY_NEW(DPAD_RIGHT))
     {
-        switch (sDexNavUiDataPtr->cursorRow)
-        {
-        case ROW_WATER:
-            if (sDexNavUiDataPtr->cursorCol == COL_WATER_MAX)
-                sDexNavUiDataPtr->cursorCol = 0;
-            else
-                sDexNavUiDataPtr->cursorCol++;
-            break;
-#if CHECK_SPECIES == FALSE
-        case ROW_HIDDEN:
-            if (sDexNavUiDataPtr->cursorCol == COL_HIDDEN_MAX)
-                sDexNavUiDataPtr->cursorCol = 0;
-            else
-                sDexNavUiDataPtr->cursorCol++;
-            break;
-#else
-        case ROW_FISHING:
-            if (sDexNavUiDataPtr->cursorCol == COL_FISHING_MAX)
-                sDexNavUiDataPtr->cursorCol = 0;
-            else
-                sDexNavUiDataPtr->cursorCol++;
-            break;
-#endif
-        default:
-            if (sDexNavUiDataPtr->cursorCol == COL_LAND_MAX)
-                sDexNavUiDataPtr->cursorCol = 0;
-            else
-                sDexNavUiDataPtr->cursorCol++;
-            break;
-        }
+        if (sDexNavUiDataPtr->cursorCol >= cursorColumnLimits[sDexNavUiDataPtr->cursorRow] - 1)
+            sDexNavUiDataPtr->cursorCol = 0;
+        else
+            sDexNavUiDataPtr->cursorCol++;
 
         PlaySE(SE_RG_BAG_CURSOR);
         UpdateCursorPosition();

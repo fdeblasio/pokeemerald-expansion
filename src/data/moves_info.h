@@ -82,6 +82,86 @@ const u8 gNotDoneYetDescription[] = _(
     .priority = 0,                                            \
     .slicingMove = TRUE
 
+#define RECOIL_120_POWER_INFO               \
+    .effect = EFFECT_RECOIL,                \
+    .power = 120,                           \
+    .accuracy = 100,                        \
+    .pp = 15,                               \
+    .target = TARGET_SELECTED,              \
+    .priority = 0,                          \
+    .argument = { .recoilPercentage = 33 }, \
+    .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED
+
+#define FATIGUE_120_POWER_INFO                        \
+    .effect = EFFECT_HIT,                             \
+    .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 120 : 90, \
+    .accuracy = 100,                                  \
+    .pp = B_UPDATED_MOVE_DATA >= GEN_5 ? 10 : 20,     \
+    .target = TARGET_RANDOM,                          \
+    .priority = 0,                                    \
+    .additionalEffects = ADDITIONAL_EFFECTS({         \
+        .moveEffect = MOVE_EFFECT_THRASH,             \
+        .self = TRUE,                                 \
+    }),                                               \
+    .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_USER_MORE_EASILY_STARTLED : CONTEST_EFFECT_JAMS_OTHERS_BUT_MISS_ONE_TURN, \
+    .validApprenticeMove = TRUE
+
+#define LOWER_SPECIAL_ATTACK_INFO                 \
+    .effect = EFFECT_HIT,                         \
+    .target = TARGET_SELECTED,                    \
+    .priority = 0,                                \
+    .additionalEffects = ADDITIONAL_EFFECTS({     \
+        .moveEffect = MOVE_EFFECT_SP_ATK_MINUS_2, \
+        .self = TRUE,                             \
+    }),                                           \
+    .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED
+
+#define LOWER_SPECIAL_ATTACK_130_POWER_INFO            \
+    LOWER_SPECIAL_ATTACK_INFO,                         \
+    .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 130 : 140, \
+    .accuracy = 90,                                    \
+    .pp = 5
+
+#define LOWER_SPECIAL_ATTACK_LEGENDARY_INFO \
+    LOWER_SPECIAL_ATTACK_INFO,              \
+    .power = 140,                           \
+    .accuracy = 100,                        \
+    .pp = 10
+
+#define RECHARGE_INFO                         \
+    .effect = EFFECT_HIT,                     \
+    .target = TARGET_SELECTED,                \
+    .priority = 0,                            \
+    .additionalEffects = ADDITIONAL_EFFECTS({ \
+        .moveEffect = MOVE_EFFECT_RECHARGE,   \
+        .self = TRUE,                         \
+    }),                                       \
+    .contestEffect = CONTEST_EFFECT_JAMS_OTHERS_BUT_MISS_ONE_TURN
+
+#define RECHARGE_150_POWER_INFO \
+    RECHARGE_INFO,              \
+    .power = 150,               \
+    .accuracy = 90,             \
+    .pp = 5
+
+#define RECHARGE_LEGENDARY_INFO \
+    RECHARGE_INFO,              \
+    .power = 160,               \
+    .accuracy = 100,            \
+    .pp = 10
+
+#define STATUS_HIT_150_POWER_INFO(Status)     \
+    .effect = EFFECT_HIT,                     \
+    .power = 150,                             \
+    .accuracy = 50,                           \
+    .pp = 5,                                  \
+    .target = TARGET_SELECTED,                \
+    .priority = 0,                            \
+    .additionalEffects = ADDITIONAL_EFFECTS({ \
+        .moveEffect = MOVE_EFFECT_##Status,   \
+        .chance = 100,                        \
+    })
+
 #define OHKO_INFO              \
     .effect = EFFECT_OHKO,     \
     .power = 1,                \
@@ -1121,26 +1201,15 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A rampage of 2 to 3 turns\n"
             "that confuses the user."),
-        .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 120 : 90,
+        FATIGUE_120_POWER_INFO,
         .type = TYPE_NORMAL,
-        .accuracy = 100,
-        .pp = B_UPDATED_MOVE_DATA >= GEN_5 ? 10 : 20,
-        .target = TARGET_RANDOM,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .instructBanned = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_THRASH,
-            .self = TRUE,
-        }),
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_USER_MORE_EASILY_STARTLED : CONTEST_EFFECT_JAMS_OTHERS_BUT_MISS_ONE_TURN,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_RAGE},
         .battleAnimScript = gBattleAnimMove_Thrash,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_DOUBLE_EDGE] =
@@ -1149,17 +1218,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A life-risking tackle that\n"
             "also hurts the user."),
-        .effect = EFFECT_RECOIL,
-        .power = B_UPDATED_MOVE_DATA >= GEN_2 ? 120 : 100,
         .type = TYPE_NORMAL,
-        .accuracy = 100,
-        .pp = 15,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .argument = { .recoilPercentage = B_UPDATED_MOVE_DATA >= GEN_3 ? 33 : 25 },
         .makesContact = TRUE,
-        .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_FOCUS_ENERGY, COMBO_STARTER_HARDEN},
@@ -1601,13 +1662,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Squirts water to attack\n"
             "the foe."),
-        .effect = EFFECT_HIT,
-        .power = 40,
+        BASIC_40_POWER_INFO,
         .type = TYPE_WATER,
-        .accuracy = 100,
-        .pp = 25,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_CUTE,
@@ -1817,20 +1873,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Leaves the user immobile\n"
             "if target is not KO'd."),
         #endif
-        .effect = EFFECT_HIT,
-        .power = 150,
+        RECHARGE_150_POWER_INFO,
         .type = TYPE_NORMAL,
-        .accuracy = 90,
-        .pp = 5,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .ignoresKingsRock = B_UPDATED_MOVE_FLAGS < GEN_3,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_RECHARGE,
-            .self = TRUE,
-        }),
-        .contestEffect = CONTEST_EFFECT_JAMS_OTHERS_BUT_MISS_ONE_TURN,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
@@ -2259,33 +2305,16 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A rampage of 2 to 3 turns\n"
             "that confuses the user."),
-        #if B_UPDATED_MOVE_DATA >= GEN_5
-            .power = 120,
-        #elif B_UPDATED_MOVE_DATA == GEN_4
-            .power = 90,
-        #else
-            .power = 70,
-        #endif
-        .effect = EFFECT_HIT,
+        FATIGUE_120_POWER_INFO,
         .type = TYPE_GRASS,
-        .accuracy = 100,
-        .pp = B_UPDATED_MOVE_DATA >= GEN_5 ? 10 : 20,
-        .target = TARGET_RANDOM,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .makesContact = TRUE,
         .danceMove = TRUE,
         .instructBanned = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_THRASH,
-            .self = TRUE,
-        }),
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_USER_MORE_EASILY_STARTLED : CONTEST_EFFECT_JAMS_OTHERS_BUT_MISS_ONE_TURN,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_GROWTH},
         .battleAnimScript = gBattleAnimMove_PetalDance,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_STRING_SHOT] =
@@ -5195,19 +5224,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Powerful and sure to cause\n"
             "paralysis, but inaccurate."),
-        .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_4 ? 150 : 100,
+        STATUS_HIT_150_POWER_INFO(PARALYSIS),
         .type = TYPE_ELECTRIC,
-        .accuracy = 50,
-        .pp = 5,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .ballisticMove = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_PARALYSIS,
-            .chance = 100,
-        }),
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_BADLY_STARTLE_MONS_WITH_GOOD_APPEALS : CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
@@ -5410,26 +5430,15 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A rampage of 2 to 3 turns\n"
             "that confuses the user."),
-        .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_4 ? 120 : 90,
+        FATIGUE_120_POWER_INFO,
         .type = TYPE_DRAGON,
-        .accuracy = 100,
-        .pp = B_UPDATED_MOVE_DATA >= GEN_5 ? 10 : 15,
-        .target = TARGET_RANDOM,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .instructBanned = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_THRASH,
-            .self = TRUE,
-        }),
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_USER_MORE_EASILY_STARTLED : CONTEST_EFFECT_JAMS_OTHERS_BUT_MISS_ONE_TURN,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
         .battleAnimScript = gBattleAnimMove_Outrage,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_SANDSTORM] =
@@ -6012,20 +6021,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Powerful and sure to cause\n"
             "confusion, but inaccurate."),
-        .effect = EFFECT_HIT,
-        .power = 150,
+        STATUS_HIT_150_POWER_INFO(CONFUSION),
         .type = TYPE_FIGHTING,
-        .accuracy = 50,
-        .pp = 5,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .punchingMove = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_CONFUSION,
-            .chance = 100,
-        }),
         .contestEffect = CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
@@ -8236,19 +8236,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Powerful, but leaves the\n"
             "user immobile the next turn."),
-        .effect = EFFECT_HIT,
-        .power = 150,
+        RECHARGE_150_POWER_INFO,
         .type = TYPE_FIRE,
-        .accuracy = 90,
-        .pp = 5,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_RECHARGE,
-            .self = TRUE,
-        }),
-        .contestEffect = CONTEST_EFFECT_JAMS_OTHERS_BUT_MISS_ONE_TURN,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_SUNNY_DAY},
@@ -8262,19 +8252,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Powerful, but leaves the\n"
             "user immobile the next turn."),
-        .effect = EFFECT_HIT,
-        .power = 150,
+        RECHARGE_150_POWER_INFO,
         .type = TYPE_WATER,
-        .accuracy = 90,
-        .pp = 5,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_RECHARGE,
-            .self = TRUE,
-        }),
-        .contestEffect = CONTEST_EFFECT_JAMS_OTHERS_BUT_MISS_ONE_TURN,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_RAIN_DANCE},
@@ -8445,20 +8425,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Allows a full-power attack,\n"
             "but sharply lowers Sp. Atk."),
-        .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 130 : 140,
+        LOWER_SPECIAL_ATTACK_130_POWER_INFO,
         .type = TYPE_FIRE,
-        .accuracy = 90,
-        .pp = 5,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .makesContact = B_UPDATED_MOVE_DATA < GEN_4,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SP_ATK_MINUS_2,
-            .self = TRUE,
-        }),
-        .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_SUNNY_DAY},
@@ -8999,20 +8969,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Powerful, but leaves the\n"
             "user immobile the next turn."),
-        .effect = EFFECT_HIT,
-        .power = 150,
+        RECHARGE_150_POWER_INFO,
         .type = TYPE_GRASS,
-        .accuracy = 90,
-        .pp = 5,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .skyBattleBanned = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_RECHARGE,
-            .self = TRUE,
-        }),
-        .contestEffect = CONTEST_EFFECT_JAMS_OTHERS_BUT_MISS_ONE_TURN,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_GROWTH},
@@ -9412,19 +9372,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Allows a full-power attack,\n"
             "but sharply lowers Sp. Atk."),
-        .effect = EFFECT_HIT,
-        .power = 140,
+        LOWER_SPECIAL_ATTACK_LEGENDARY_INFO,
         .type = TYPE_PSYCHIC,
-        .accuracy = 100,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SP_ATK_MINUS_2,
-            .self = TRUE,
-        }),
-        .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_CALM_MIND},
@@ -10391,22 +10341,15 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A charge that may burn the\n"
             "foe. Also hurts the user."),
-        .effect = EFFECT_RECOIL,
-        .power = 120,
+        RECOIL_120_POWER_INFO,
         .type = TYPE_FIRE,
-        .accuracy = 100,
-        .pp = 15,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .argument = { .recoilPercentage = 33 },
         .makesContact = TRUE,
         .thawsUser = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_BURN,
             .chance = 10,
         }),
-        .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
         .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_COOL : CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_SUNNY_DAY},
@@ -10845,17 +10788,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A low altitude charge that\n"
             "also hurts the user."),
-        .effect = EFFECT_RECOIL,
-        .power = 120,
+        RECOIL_120_POWER_INFO,
         .type = TYPE_FLYING,
-        .accuracy = 100,
-        .pp = 15,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .argument = { .recoilPercentage = 33 },
         .makesContact = TRUE,
-        .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
         .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_COOL : CONTEST_CATEGORY_CUTE,
         .contestComboStarterId = COMBO_STARTER_BRAVE_BIRD,
         .contestComboMoves = {0},
@@ -10914,20 +10850,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Leaves the user immobile\n"
             "if target is not KO'd."),
         #endif
-        .effect = EFFECT_HIT,
-        .power = 150,
+        RECHARGE_150_POWER_INFO,
         .type = TYPE_NORMAL,
-        .accuracy = 90,
-        .pp = 5,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_RECHARGE,
-            .self = TRUE,
-        }),
-        .contestEffect = CONTEST_EFFECT_JAMS_OTHERS_BUT_MISS_ONE_TURN,
         .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_TOUGH : CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
@@ -11289,19 +11215,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Casts comets onto the foe.\n"
             "Harshly lowers the Sp. Atk."),
-        .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 130 : 140,
+        LOWER_SPECIAL_ATTACK_130_POWER_INFO,
         .type = TYPE_DRAGON,
-        .accuracy = 90,
-        .pp = 5,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SP_ATK_MINUS_2,
-            .self = TRUE,
-        }),
-        .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
         .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_BEAUTY : CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
@@ -11364,19 +11280,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Whips up a storm of leaves.\n"
             "Harshly lowers the Sp. Atk."),
-        .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 130 : 140,
+        LOWER_SPECIAL_ATTACK_130_POWER_INFO,
         .type = TYPE_GRASS,
-        .accuracy = 90,
-        .pp = 5,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SP_ATK_MINUS_2,
-            .self = TRUE,
-        }),
-        .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
         .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_BEAUTY : CONTEST_CATEGORY_CUTE,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
@@ -11416,20 +11322,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Leaves the user immobile\n"
             "if target is not KO'd."),
         #endif
-        .effect = EFFECT_HIT,
-        .power = 150,
+        RECHARGE_150_POWER_INFO,
         .type = TYPE_ROCK,
-        .accuracy = 95,
-        .pp = 5,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .ballisticMove = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_RECHARGE,
-            .self = TRUE,
-        }),
-        .contestEffect = CONTEST_EFFECT_JAMS_OTHERS_BUT_MISS_ONE_TURN,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
@@ -11740,17 +11636,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Slams the body into a foe.\n"
             "The user gets hurt too."),
-        .effect = EFFECT_RECOIL,
-        .power = 120,
+        RECOIL_120_POWER_INFO,
         .type = TYPE_GRASS,
-        .accuracy = 100,
-        .pp = 15,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .argument = { .recoilPercentage = 33 },
         .makesContact = TRUE,
-        .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
@@ -11898,19 +11787,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Powerful, but leaves the\n"
             "user immobile the next turn."),
-        .effect = EFFECT_HIT,
-        .power = 150,
+        RECHARGE_LEGENDARY_INFO,
         .type = TYPE_DRAGON,
-        .accuracy = 100,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_RECHARGE,
-            .self = TRUE,
-        }),
-        .contestEffect = CONTEST_EFFECT_JAMS_OTHERS_BUT_MISS_ONE_TURN,
         .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_BEAUTY : CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
@@ -13292,18 +13171,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Powerful and sure to inflict\n"
             "a burn, but inaccurate."),
-        .effect = EFFECT_HIT,
-        .power = 150,
+        STATUS_HIT_150_POWER_INFO(BURN),
         .type = TYPE_FIRE,
-        .accuracy = 50,
-        .pp = 5,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_BURN,
-            .chance = 100,
-        }),
         .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = COMBO_STARTER_INFERNO,
@@ -13524,17 +13394,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "An electrical tackle that\n"
             "also hurts the user."),
-        .effect = EFFECT_RECOIL,
-        .power = 90,
+        RECOIL_120_POWER_INFO,
         .type = TYPE_ELECTRIC,
-        .accuracy = 100,
-        .pp = 15,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .argument = { .recoilPercentage = 25 },
         .makesContact = TRUE,
-        .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
@@ -16747,20 +16610,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A strong ray that harshly\n"
             "lowers Sp. Attack."),
-        .effect = EFFECT_HIT,
-        .power = 130,
+        LOWER_SPECIAL_ATTACK_LEGENDARY_INFO,
         .type = TYPE_FAIRY,
-        .accuracy = 100,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .metronomeBanned = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SP_ATK_MINUS_2,
-            .self = TRUE,
-        }),
-        .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
         .contestCategory = CONTEST_CATEGORY_CUTE,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
@@ -16890,19 +16743,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A high power laser that\n"
             "forces recharge next turn."),
-        .effect = EFFECT_HIT,
-        .power = 160,
+        RECHARGE_LEGENDARY_INFO,
         .type = TYPE_PSYCHIC,
-        .accuracy = 100,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_RECHARGE,
-            .self = TRUE,
-        }),
-        .contestEffect = CONTEST_EFFECT_JAMS_OTHERS_BUT_MISS_ONE_TURN,
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
@@ -17988,21 +17831,14 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Attacks with a thick leek.\n"
             "The user must then rest."),
-        .effect = EFFECT_HIT,
+        RECHARGE_INFO,
         .power = 150,
         .type = TYPE_FIGHTING,
         .accuracy = 100,
         .pp = 5,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .metronomeBanned = TRUE,
         .instructBanned = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_RECHARGE,
-            .self = TRUE,
-        }),
-        .contestEffect = CONTEST_EFFECT_JAMS_OTHERS_BUT_MISS_ONE_TURN,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
@@ -18015,20 +17851,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Eternatus' strongest move.\n"
             "The user rests next turn."),
-        .effect = EFFECT_HIT,
-        .power = 160,
+        RECHARGE_LEGENDARY_INFO,
         .type = TYPE_DRAGON,
-        .accuracy = 100,
-        .pp = 5,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .metronomeBanned = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_RECHARGE,
-            .self = TRUE,
-        }),
-        .contestEffect = CONTEST_EFFECT_JAMS_OTHERS_BUT_MISS_ONE_TURN,
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
@@ -18932,20 +18758,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A rampage of 2 to 3 turns\n"
             "that confuses the user."),
-        .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_9 ? 120 : 90,
+        FATIGUE_120_POWER_INFO,
         .type = TYPE_FIRE,
-        .accuracy = 100,
-        .pp = 10,
-        .target = TARGET_RANDOM,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .metronomeBanned = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_THRASH,
-            .self = TRUE,
-        }),
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_USER_MORE_EASILY_STARTLED : CONTEST_EFFECT_JAMS_OTHERS_BUT_MISS_ONE_TURN,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
         .battleAnimScript = gBattleAnimMove_RagingFury,
@@ -18957,18 +18773,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A slam shrouded in water.\n"
             "It also hurts the user."),
-        .effect = EFFECT_RECOIL,
-        .power = B_UPDATED_MOVE_DATA >= GEN_9 ? 120 : 75,
+        RECOIL_120_POWER_INFO,
         .type = TYPE_WATER,
-        .accuracy = 100,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .argument = { .recoilPercentage = 33 },
         .makesContact = TRUE,
         .skyBattleBanned = B_EXTRAPOLATED_MOVE_FLAGS,
-        .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
         .battleAnimScript = gBattleAnimMove_WaveCrash,

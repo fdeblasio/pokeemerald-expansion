@@ -748,6 +748,9 @@
     - Wildbolt Storm:
         - Power: 100->120
         - Accuracy: 80->100
+    - Wild Charge:
+        - Power: 90->120
+        - Recoil: 25%->33%
     - Zap Cannon:
         - Power: 120->150
 - Fire:
@@ -818,8 +821,12 @@
         - PP: 5->10
     - Triple Dive:
         - Accuracy: 95->100
+    - Water Gun:
+        - PP: 25->40
     - Water Shuriken:
         - Power: 15->25
+    - Wave Crash:
+        - PP: 10->15
     - Whirlpool:
         - Accuracy: 85->90
         - PP: 15->20
@@ -906,11 +913,13 @@
         - PP: 5->10
     - Eternabeam:
         - Accuracy: 90->100
+        - PP: 5->10
     - Fickle Beam:
         - PP: 5->10
     - Glaive Rush:
         - PP: 5->10
     - Roar of Time:
+        - Power: 150->160
         - Accuracy: 90->100
         - PP: 5->10
     - Spacial Rend:
@@ -976,6 +985,7 @@
     - Fairy Wind:
         - PP: 30->40
     - Fleur Cannon:
+        - Power: 130->140
         - Accuracy: 90->100
         - PP: 5->10
     - Misty Explosion:

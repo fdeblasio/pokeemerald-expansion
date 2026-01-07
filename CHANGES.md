@@ -672,6 +672,9 @@
     - Bind:
         - Power: 15->35
         - Accuracy: 85->100
+    - Bind:
+        - Power: 15->35
+        - Accuracy: 85->90
     - Blood Moon:
         - PP: 5->10
     - Chatter:

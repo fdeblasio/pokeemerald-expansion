@@ -303,7 +303,6 @@ upcoming
 
 ### Overworld
 - Seperate out split routes into two maps for different encounters?
-    - 104 north/south (especially for pond and ocean encounters)
     - 103 east/west
     - 111 pre-/post-desert?
 - Add sand encounters to Dewford area (using desert sand)

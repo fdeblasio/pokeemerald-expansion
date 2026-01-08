@@ -708,6 +708,88 @@
           }
         },
         {
+          "map": "MAP_ROUTE104_NORTH",
+          "base_label": "gRoute104_North",
+          "land_mons": {
+            "encounter_rate": 20,
+            "range": "ROUTE_104_NORTH",
+            "mons": [
+              {
+                "species": "EARLY_BIRD_1"
+              },
+              {
+                "species": "EARLY_BIRD_2"
+              },
+              {
+                "species": "AZURILL"
+              },
+              {
+                "species": "EARLY_BUG_1"
+              },
+              {
+                "species": "EARLY_BIRD_1"
+              },
+              {
+                "species": "AZURILL"
+              },
+              {
+                "species": "EARLY_BIRD_2"
+              },
+              {
+                "species": "EARLY_BIRD_1"
+              },
+              {
+                "species": "EARLY_BIRD_1"
+              },
+              {
+                "species": "EARLY_BIRD_1"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 5,
+            "range": "SURF_INITIAL",
+            "mons": [
+              {
+                "species": "PSYDUCK"
+              },
+              {
+                "species": "AZUMARILL"
+              },
+              {
+                "species": "MASQUERAIN"
+              },
+              {
+                "species": "MASQUERAIN"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "mons": [
+              {
+                "range": "OLD_ROD_INITIAL",
+                "species": "MAGIKARP"
+              },
+              {
+                "range": "GOOD_ROD_INITIAL",
+                "species": "GOLDEEN"
+              },
+              {
+                "range": "GOOD_ROD_INITIAL",
+                "species": "BARBOACH"
+              },
+              {
+                "range": "SUPER_ROD_INITIAL",
+                "species": "SEAKING"
+              },
+              {
+                "range": "SUPER_ROD_INITIAL",
+                "species": "WHISCASH"
+              }
+            ]
+          }
+        },
+        {
           "map": "MAP_ROUTE105",
           "base_label": "gRoute105",
           "water_mons": {

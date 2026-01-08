@@ -72,6 +72,7 @@ EWRAM_DATA u8 gChainFishingDexNavStreak = 0;
 #define RANGE_ROUTE_102_104      5, 5
 #define RANGE_PETALBURG_WOODS    5, 6
 #define RANGE_PETALBURG_WOODS_COCOON 7, 7
+#define RANGE_ROUTE_104_NORTH    6, 7
 #define RANGE_ROUTE_116          7, 8
 #define RANGE_RUSTURF_TUNNEL     9, 9
 #define RANGE_OLD_ROD_INITIAL   10, 15

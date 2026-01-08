@@ -81,6 +81,7 @@
 - Premier Balls are now given for every multiple of 10 of any ball you buy (as opposed to only 1 for 10+ Poke Balls)
 - Faster walking/surfing speed
 - Two Pokémon having the same original trainer no longer negatively affects breeding chances
+- Route 110 can now be bypassed with Surf
 - HMs can now be forgotten
     - Fly can now be used from the Start Menu after getting Mauville's badge
     - Cut and Strength no longer need a badge to be used

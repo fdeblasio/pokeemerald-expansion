@@ -313,7 +313,10 @@ upcoming
     - Route 128: Where Steven flies to?
 
 ### Overworld
-- Seperate out Route 104 (and other split routes) into two maps for different encounters? (Especially pond/ocean)
+- Seperate out split routes into two maps for different encounters?
+    - 104 north/south (especially for pond and ocean encounters)
+    - 103 east/west
+    - 111 pre-/post-desert?
 - Add new defines (but keep current ones) for overworld sprites that line up with trainers for easier use
 - Double check that only Devon employees use DEVON_EMPLOYEES and only non-Devon use MAN_2
 - Use either SCIENTIST_1 or 2 for Cozmo/Stern and use the other for generic scientists

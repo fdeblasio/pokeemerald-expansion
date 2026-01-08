@@ -135,6 +135,13 @@
 - Battle Frontier no longer requires saving
 - The old man in the Battle Frontier (in the building above the Pokémon Center) who used to tell you your Pokémon's IVs now Hyper Trains stats for free
 
+### Battle Frontier:
+- Pokémon in the Battle Frontier/Trainer Hill now register in the Pokédex
+- Frontier Brains have updated teams
+- Battle Pyramid wild Pokémon have been updated
+- Battle Frontier no longer requires saving
+- The old man in the Battle Frontier (in the building above the Pokémon Center) who used to tell you your Pokémon's IVs now Hyper Trains stats for free
+
 ### Trainers:
 - Rich Boys all have shiny Pokémon
 - Triathletes all have Pokémon with maxed HP and Speed EVs and IVs (to reflect training for endurance and speed)

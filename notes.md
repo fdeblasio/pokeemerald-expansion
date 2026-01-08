@@ -306,6 +306,7 @@ upcoming
     - 104 north/south (especially for pond and ocean encounters)
     - 103 east/west
     - 111 pre-/post-desert?
+- Add sand encounters to Dewford area (using desert sand)
 - Add new defines (but keep current ones) for overworld sprites that line up with trainers for easier use
 - Double check that only Devon employees use DEVON_EMPLOYEES and only non-Devon use MAN_2
 - Use either SCIENTIST_1 or 2 for Cozmo/Stern and use the other for generic scientists

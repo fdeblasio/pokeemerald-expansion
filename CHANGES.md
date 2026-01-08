@@ -31,20 +31,15 @@
 - Some reversions back to Ruby and Sapphire
     - Birch is chased by a Poochyena
     - Some trainers on Routes 104 and 117 go back to their original locations
-- Gym Leaders use more Hoenn Pokémon
-- Gym Leaders and Magma/Aqua Admins/Leaders no longer have underleveled evolutions
-- Team Magma are more focused on Ground types than Fire types to avoid overlap with Flannery
-- Pokémon have a more even encounter distribution
-- Trainer rematches (including Gabby and Ty) are now based on number of badges
-- There are now one less rematch per gym leader/Wally to free up space
+- Hoenn-specific:
+    - Gym Leaders use more Hoenn Pokémon
+    - Gym Leaders and Magma/Aqua Admins/Leaders no longer have underleveled evolutions
+    - Team Magma are more focused on Ground types than Fire types to avoid overlap with Flannery
+    - Pokémon have a more even encounter distribution
 - Tate and Liza give out Psychic instead of Calm Mind (Calm Mind can be found in Slateport)
-- Made rapids easier to navigate so that only one trip is needed to get all items/battle all trainers (at the cost of looking slightly worse)
-- Added area to grind right outside Elite Four
-- TM moves not in the game are learnable as egg moves
-    - However, this is only applicable for when the base form learns the move
+- TM moves not in the game are learnable as relearner moves post-Elite Four
 - Pokémon that evolve with an item at day or night now can evolve at any time
 - EVs now give one stat increase for every EV but cap out at 63 (individual)/127 (total). This will lead to the same stats as the old system but easier to train
-- Bird Keepers now use the overworld sprite of male Psychics since it looks more like them than the blond sprite
 - Houndour was added to the Hoenn Pokédex to give Team Magma more variety
 - Galarian Corsola and Cursola were added to the Hoenn Pokédex
 - Pokémon can now be listed as orange in the Pokédex
@@ -53,41 +48,42 @@
     - Pokémon in the Safari Zone can't flee
     - Connected the north and northwest sections of the Safari Zone
     - Now get 99 Safari Balls (which have a 5x catch rate) and 9999 steps
-- Underwater areas now connect better
 - Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)
-- Frontier Brains have updated teams
-- Battle Pyramid wild Pokémon have been updated
-- Battle Frontier no longer requires saving
-- Certain sections are blocked off until gyms or rivals are defeated
-- Wally is given more battles. The battle in Verdanturf starts with Grassy Terrain
 - Battles in New Mauville start with Electric Terrain
 - Battles in long grass on Routes 119 and 120 start with Grassy Terrain (unless it's a thunderstorm)
-- All Pokémon in the Dragon egg group that could not already learn Dragon Breath now get it as an egg move. This is reflected in the species changes below
-- Moves are no longer replaced if a Pokémon levels up in the daycare
-- The old man in the Battle Frontier (in the building above the Pokémon Center) who used to tell you your Pokémon's IVs now Hyper Trains stats for free
 
-### Quality of Life
+### Overworld:
+- Faster walking/surfing speed
+- You can check which wild Pokémon appear through the PokéNav
+- Route 110 can now be bypassed with Surf
+- Certain sections are blocked off until gyms or rivals are defeated
+- Rainy routes will automatically water berries
+- Underwater areas now connect better
+- Mirage Island now always appears
+    - Pokémon from Mirage Island will have their Hidden Ability. In addition, their met location will be Mirage Island instead of Route 130
+- Made rapids easier to navigate so that only one trip is needed to get all items/battle all trainers (at the cost of looking slightly worse)
+- Added area to grind right outside Elite Four
+
+### Quality of Life:
 - Shiny Pokémon can no longer spawn until you get Poké Balls
 - You can now always run from wild Pokémon if they are asleep, frozen, or in a semi-invulnerable state (using Fly, Dig, Dive, Bounce, etc.). This works even if they have Shadow Tag/Arena Trap
-- You can nickname and relearn moves from the party menu
+- Party Menu:
+    - You can nickname and relearn moves from the party menu
+    - Can swap party members with Select
 - Press A on the summary screen to see a Pokémon's EVs/IVs
-- Can swap party members with Select
 - Items in shops are based on the amount of badges you have
-- Bag sorting with Start button
-- More bag space
+- Bag:
+    - Bag sorting with Start button
+    - More bag space
 - The naming screen automatically swaps to lowercase after the first letter
-- You can check which wild Pokémon appear through the PokéNav
-- Rainy routes will automatically water berries
 - Premier Balls are now given for every multiple of 10 of any ball you buy (as opposed to only 1 for 10+ Poke Balls)
-- Faster walking/surfing speed
 - Two Pokémon having the same original trainer no longer negatively affects breeding chances
-- Route 110 can now be bypassed with Surf
 - HMs can now be forgotten
     - Fly can now be used from the Start Menu after getting Mauville's badge
     - Cut and Strength no longer need a badge to be used
         - Cut trees and Strength boulders have been removed from everywhere but the Trick House
     - Rock Smash rocks have been removed from everywhere but Rusturf Tunnel
-    - Cut, Rock Smash, and Strength now just need a Pokemon to be able to learn the move, instead of actually knowing the move
+    - Cut, Rock Smash, and Strength now just need a Pokémon to be able to learn the move, instead of actually knowing the move
     - The Escape Rope can by used in the Trick Room puzzles that involve Cut/Strength
     - Flash is no longer needed anywhere
     - Surf, Dive and Waterfall have been replaced by a key item
@@ -106,8 +102,6 @@
 - Ash collects in non-grass tiles as well now
 - Much easier to make good Pokéblocks
 - Both Shoal Cave items are now available in low tide, which is available more often
-- Mirage Island now always appears
-    - Pokémon from Mirage Island will have their Hidden Ability. In addition, their met location will be Mirage Island instead of Route 130
 - Sealed Chamber still needs to be completed to open the Regi areas, but it's solved by simply reading the braille at the back of the inner room
     - The door to Sealed Chamber and the Regis' inner rooms are now automatically open
 - Tickets for islands where Latios, Latias, Deoxys, Lugia, Ho-Oh, and Mew reside are given after beating the Elite Four
@@ -115,7 +109,6 @@
     - The Birth Island puzzle is much simpler
     - Navel Rock is slightly easier to navigate
 - SS Tidal trainers can be rebattled every trip
-- Pokémon in the Battle Frontier/Trainer Hill now register in the Pokédex
 
 ### Items:
 - Eviolite now prevents Pokémon from evolving
@@ -126,10 +119,21 @@
 - Sacred Ash now works in battles although it only revives one Pokémon
 - Soul Dew uses its Gen 6 effect
 
+### Battle Frontier:
+- Pokémon in the Battle Frontier/Trainer Hill now register in the Pokédex
+- Frontier Brains have updated teams
+- Battle Pyramid wild Pokémon have been updated
+- Battle Frontier no longer requires saving
+- The old man in the Battle Frontier (in the building above the Pokémon Center) who used to tell you your Pokémon's IVs now Hyper Trains stats for free
+
 ### Trainers:
 - Rich Boys all have shiny Pokémon
 - Triathletes all have Pokémon with maxed HP and Speed EVs and IVs (to reflect training for endurance and speed)
 - Pokémon Breeders all have Pokémon with perfect IVs. They can also have Hidden Abilities and Egg Moves
+- Bird Keepers now use the overworld sprite of male Psychics since it looks more like them than the blond sprite
+- Wally is given more battles. The battle in Verdanturf starts with Grassy Terrain
+- There are now one less rematch per gym leader/Wally to free up space
+- Any Trainer first encountered after Juan only has one rematch
 
 #### Bosses:
 |          BOSSES           |        VANILLA       |    UPDATED    |
@@ -498,6 +502,9 @@
 - All moves automatically have their max PP amount
 - Added custom 40 BP moves for type/category combos that were missing them
     - Animations and descriptions are currently missing
+    - No Pokémon currently learn them
+- All Pokémon in the Dragon egg group that could not already learn Dragon Breath now get it as an egg move. This is reflected in the species changes below
+- Moves are no longer replaced if a Pokémon levels up in the daycare
 #### Many moves (especially signature moves) were given 100% accuracy and/or 10 PP as opposed to 5:
 - Normal:
     - Barrage:

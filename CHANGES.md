@@ -109,6 +109,7 @@
     - The Weather Institute on Route 119
     - The Safari Zone on Route 121
     - Mt. Pyre on Route 122
+    - Shoal Cave on Route 125
     - Sky Pillar on Route 131
     - Southern Island
 

@@ -252,6 +252,15 @@
       "respawn_y": 30
     },
     {
+      "id": "HEAL_LOCATION_ROUTE_125",
+      "map": "MAP_ROUTE125",
+      "x": 22,
+      "y": 20,
+      "respawn_map": "MAP_ROUTE125",
+      "respawn_x": 22,
+      "respawn_y": 20
+    },
+    {
       "id": "HEAL_LOCATION_ROUTE_131",
       "map": "MAP_SKY_PILLAR_OUTSIDE",
       "x": 14,

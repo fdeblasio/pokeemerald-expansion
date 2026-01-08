@@ -78,25 +78,6 @@
 - The naming screen automatically swaps to lowercase after the first letter
 - Premier Balls are now given for every multiple of 10 of any ball you buy (as opposed to only 1 for 10+ Poke Balls)
 - Two Pokémon having the same original trainer no longer negatively affects breeding chances
-- HMs can now be forgotten
-    - Fly can now be used from the Start Menu after getting Mauville's badge
-    - Cut and Strength no longer need a badge to be used
-        - Cut trees and Strength boulders have been removed from everywhere but the Trick House
-    - Rock Smash rocks have been removed from everywhere but Rusturf Tunnel
-    - Cut, Rock Smash, and Strength now just need a Pokémon to be able to learn the move, instead of actually knowing the move
-    - The Escape Rope can by used in the Trick Room puzzles that involve Cut/Strength
-    - Flash is no longer needed anywhere
-    - Surf, Dive and Waterfall have been replaced by a key item
-- Fly can now be used to go to more places:
-    - The Abandoned Ship on Route 108
-    - The Old Lady's Rest Stop on Route 111
-    - Fiery Path on Route 112
-    - Meteor Falls on Route 114
-    - The Weather Institute on Route 119
-    - The Safari Zone on Route 121
-    - Mt. Pyre on Route 122
-    - Sky Pillar on Route 131
-    - Southern Island
 - All characters are now eligible for a Walda wallpaper
 - Can now use Soot Sack to see how much ash you have
 - Ash collects in non-grass tiles as well now
@@ -109,6 +90,27 @@
     - The Birth Island puzzle is much simpler
     - Navel Rock is slightly easier to navigate
 - SS Tidal trainers can be rebattled every trip
+
+#### Field Moves:
+- HMs are now TMs and can be forgotten
+- Fly can now be used from the Start Menu after getting Mauville's badge
+- Cut and Strength no longer need a badge to be used
+    - Cut trees and Strength boulders have been removed from everywhere but the Trick House
+- Rock Smash rocks have been removed from everywhere but Rusturf Tunnel
+- Cut, Rock Smash, and Strength now just need a Pokémon to be able to learn the move, instead of actually knowing the move
+- The Escape Rope can by used in the Trick Room puzzles that involve Cut/Strength
+- Flash is no longer needed anywhere
+- Surf, Dive and Waterfall have been replaced by a key item
+- Fly can now be used to go to more places:
+    - The Abandoned Ship on Route 108
+    - The Old Lady's Rest Stop on Route 111
+    - Fiery Path on Route 112
+    - Meteor Falls on Route 114
+    - The Weather Institute on Route 119
+    - The Safari Zone on Route 121
+    - Mt. Pyre on Route 122
+    - Sky Pillar on Route 131
+    - Southern Island
 
 ### Items:
 - Eviolite now prevents Pokémon from evolving
@@ -133,7 +135,7 @@
 - Bird Keepers now use the overworld sprite of male Psychics since it looks more like them than the blond sprite
 - Wally is given more battles. The battle in Verdanturf starts with Grassy Terrain
 - There are now one less rematch per gym leader/Wally to free up space
-- Any Trainer first encountered after Juan only has one rematch
+- Any Trainer first encountered after Sootopolis now only has one rematch
 
 #### Bosses:
 |          BOSSES           |        VANILLA       |    UPDATED    |

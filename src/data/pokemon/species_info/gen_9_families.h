@@ -4474,7 +4474,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             sPicTable_Cyclizar,
             SIZE_32x32,
             SHADOW_SIZE_M,
-            TRACKS_FOOT,
+            TRACKS_BIKE_TIRE,
             sAnimTable_Following,
             gOverworldPalette_Cyclizar,
             gShinyOverworldPalette_Cyclizar
@@ -7355,7 +7355,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             sPicTable_Miraidon,
             SIZE_64x64,
             SHADOW_SIZE_M,
-            TRACKS_NONE,
+            TRACKS_BIKE_TIRE,
             sAnimTable_Following,
             gOverworldPalette_Miraidon,
             gShinyOverworldPalette_Miraidon

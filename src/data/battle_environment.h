@@ -507,10 +507,10 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
         .background =
         {
-            .tileset = gBattleEnvironmentTiles_Cave,
-            .tilemap = gBattleEnvironmentTilemap_Cave,
-            .entryTileset = gBattleEnvironmentAnimTiles_Cave,
-            .entryTilemap = gBattleEnvironmentAnimTilemap_Cave,
+            .tileset = gBattleEnvironmentTiles_Rock,
+            .tilemap = gBattleEnvironmentTilemap_Rock,
+            .entryTileset = gBattleEnvironmentAnimTiles_Rock,
+            .entryTilemap = gBattleEnvironmentAnimTilemap_Rock,
             .palette = gBattleEnvironmentPalette_StadiumMagma,
         },
     },

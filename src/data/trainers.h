@@ -17050,45 +17050,6 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     JOHN_AND_JAY_INFO,
     .party = (const struct TrainerMon[]) {
         {
-        JAY_MEDICHAM(57),
-        },
-        {
-        JOHN_HARIYAMA(57),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_JOHN_AND_JAY_3] =
-{
-    JOHN_AND_JAY_INFO,
-    .party = (const struct TrainerMon[]) {
-        {
-        JAY_MEDICHAM(58),
-        },
-        {
-        JOHN_HARIYAMA(58),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_JOHN_AND_JAY_4] =
-{
-    JOHN_AND_JAY_INFO,
-    .party = (const struct TrainerMon[]) {
-        {
-        JAY_MEDICHAM(59),
-        },
-        {
-        JOHN_HARIYAMA(59),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_JOHN_AND_JAY_5] =
-{
-    JOHN_AND_JAY_INFO,
-    .party = (const struct TrainerMon[]) {
-        {
         JAY_MEDICHAM(REMATCH_5_MINI_BOSS),
         },
         {
@@ -17140,51 +17101,6 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
 },
 
 [DIFFICULTY_NORMAL][TRAINER_NICOLAS_2] =
-{
-    NICOLAS_INFO,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        NICOLAS_BAGON(56),
-        },
-        {
-        NICOLAS_ALTARIA(56),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_NICOLAS_3] =
-{
-    NICOLAS_INFO,
-    .partySize = 2,
-    .party = (const struct TrainerMon[]) {
-        {
-        NICOLAS_BAGON(57),
-        },
-        {
-        NICOLAS_ALTARIA(57),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_NICOLAS_4] =
-{
-    NICOLAS_INFO,
-    .partySize = 3,
-    .party = (const struct TrainerMon[]) {
-        {
-        NICOLAS_FLYGON(58),
-        },
-        {
-        NICOLAS_BAGON(58),
-        },
-        {
-        NICOLAS_ALTARIA(58),
-        }
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_NICOLAS_5] =
 {
     NICOLAS_INFO,
     .partySize = 3,
@@ -18028,3 +17944,9 @@ UNUSED_TRAINER(10),
 UNUSED_TRAINER(11),
 UNUSED_TRAINER(12),
 UNUSED_TRAINER(13),
+UNUSED_TRAINER(14),
+UNUSED_TRAINER(15),
+UNUSED_TRAINER(16),
+UNUSED_TRAINER(17),
+UNUSED_TRAINER(18),
+UNUSED_TRAINER(19),

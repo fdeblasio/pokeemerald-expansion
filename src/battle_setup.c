@@ -153,6 +153,33 @@ static const u8 sBattleTransitionTable_BattleDome[] =
     .mapNum = MAP_NUM(map),     \
 }
 
+//REMATCH_5?
+#define REMATCH_6(trainer, map) \
+[REMATCH_##trainer] =           \
+{                               \
+    .trainerIds = {TRAINER_##trainer##_1, TRAINER_##trainer##_2, TRAINER_##trainer##_3, TRAINER_##trainer##_4, TRAINER_##trainer##_4}, \
+    .mapGroup = MAP_GROUP(map), \
+    .mapNum = MAP_NUM(map),     \
+}
+
+//REMATCH_6?
+#define REMATCH_7(trainer, map) \
+[REMATCH_##trainer] =           \
+{                               \
+    .trainerIds = {TRAINER_##trainer##_1, TRAINER_##trainer##_2, TRAINER_##trainer##_3, TRAINER_##trainer##_3, TRAINER_##trainer##_3}, \
+    .mapGroup = MAP_GROUP(map), \
+    .mapNum = MAP_NUM(map),     \
+}
+
+//REMATCH_7?
+#define REMATCH_8(trainer, map) \
+[REMATCH_##trainer] =           \
+{                               \
+    .trainerIds = {TRAINER_##trainer##_1, TRAINER_##trainer##_2, TRAINER_##trainer##_2, TRAINER_##trainer##_2, TRAINER_##trainer##_2}, \
+    .mapGroup = MAP_GROUP(map), \
+    .mapNum = MAP_NUM(map),     \
+}
+
 #define REMATCH_GYM_LEADER(trainer, map) \
 [REMATCH_##trainer] =                    \
 {                                        \
@@ -161,12 +188,12 @@ static const u8 sBattleTransitionTable_BattleDome[] =
     .mapNum = MAP_NUM(map),              \
 }
 
-#define REMATCH_WALLY(trainer, map)   \
-[REMATCH_##trainer] =           \
-{                               \
+#define REMATCH_WALLY(trainer, map) \
+[REMATCH_##trainer] =               \
+{                                   \
     .trainerIds = {TRAINER_##trainer##_2, TRAINER_##trainer##_3, TRAINER_##trainer##_4, TRAINER_##trainer##_4, TRAINER_##trainer##_4}, \
-    .mapGroup = MAP_GROUP(map), \
-    .mapNum = MAP_NUM(map),     \
+    .mapGroup = MAP_GROUP(map),     \
+    .mapNum = MAP_NUM(map),         \
 }
 
 #define REMATCH_E4(trainer, map) \
@@ -201,7 +228,7 @@ const struct RematchTrainer gRematchTable[REMATCH_TABLE_ENTRIES] =
     REMATCH(DALTON, MAP_ROUTE118),
     REMATCH(BERNIE, MAP_ROUTE114),
     REMATCH(ETHAN, MAP_JAGGED_PASS),
-    REMATCH(JOHN_AND_JAY, MAP_METEOR_FALLS_1F_2R),
+    REMATCH_8(JOHN_AND_JAY, MAP_METEOR_FALLS_1F_2R),
     REMATCH(JEFFREY, MAP_ROUTE120),
     REMATCH(CAMERON, MAP_ROUTE123),
     REMATCH(JACKI, MAP_ROUTE123),
@@ -222,7 +249,7 @@ const struct RematchTrainer gRematchTable[REMATCH_TABLE_ENTRIES] =
     REMATCH(KATELYN, MAP_ROUTE128),
     REMATCH(BENJAMIN, MAP_ROUTE110),
     REMATCH(PABLO, MAP_ROUTE126),
-    REMATCH(NICOLAS, MAP_METEOR_FALLS_1F_2R),
+    REMATCH_8(NICOLAS, MAP_METEOR_FALLS_1F_2R),
     REMATCH(ROBERT, MAP_ROUTE120),
     REMATCH(LAO, MAP_ROUTE113),
     REMATCH(CYNDY, MAP_ROUTE115),

@@ -132,9 +132,9 @@ upcoming
     - Diversify Safari Zone water/fishing encounters
     - Clear up trainer spots by having just one set of gym leader rematches?
         - Now that gym/Wally rematches are more consistent, the only difference is the level and a couple moves, so not really a point to having as many rematches
-        - Late-game trainers like Nicolas or John and Jay too
         - Even just reducing to two or three rematches would save space
         - For each badge after 5, one less rematch (for example, any trainer fought past Winona would have one less rematch)
+            - Would John and Jay/Nicolas get no rematches in that case?
     - Add Abilities to single ability and TRAINER_MON_NONE to genderless to make more constistent
     - Add trailing commas wherever possible
     - Remove BP costs so that script_menu.h and field_specials.c can use item/move names directly?
@@ -182,8 +182,6 @@ upcoming
 
 ### Items
 - Max Elixir (and others?) should stay on party screen like Full Restores do
-- Ideally all SV TMs would be available if the bag was ever expanded greatly
-    - Important ones should be made into tutors
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Include charms? (might go over Key Items amount)
 

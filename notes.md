@@ -294,17 +294,6 @@ upcoming
     - Try to standardize Iron/Poison/Aqua Tail
 
 ### Field Moves
-- Edit moves that work in field
-    - Might be tricky with new changes
-    - Maybe edit so instead of "if has move" to "if can learn move"
-        - Might not be simple since it's .inc and not C
-    - Cut (only in Trick House):
-        - Moves boosted by Sharpness
-    - Rock Smash (only in Rusturf Tunnel):
-        - Add Brick Break functionality back
-    - Strength (only in Trick House):
-        - Superpower?
-        - Close Combat?
 - Make Fly usuable after 2nd badge? Or maybe even aftering delivering goods in Slateport?
 - Fly to routes:
     - Route 103: Altering Cave

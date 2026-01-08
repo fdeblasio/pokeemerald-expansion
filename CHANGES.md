@@ -87,6 +87,7 @@
     - Cut and Strength no longer need a badge to be used
         - Cut trees and Strength boulders have been removed from everywhere but the Trick House
     - Rock Smash rocks have been removed from everywhere but Rusturf Tunnel
+    - Cut, Rock Smash, and Strength now just need a Pokemon to be able to learn the move, instead of actually knowing the move
     - The Escape Rope can by used in the Trick Room puzzles that involve Cut/Strength
     - Flash is no longer needed anywhere
     - Surf, Dive and Waterfall have been replaced by a key item

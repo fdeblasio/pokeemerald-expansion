@@ -838,6 +838,42 @@
         {
           "map": "MAP_ROUTE106",
           "base_label": "gRoute106",
+          "land_mons": {
+            "encounter_rate": 20,
+            "range": "ROUTE_106",
+            "mons": [
+              {
+                "species": "WINGULL"
+              },
+              {
+                "species": "WINGULL"
+              },
+              {
+                "species": "WINGULL"
+              },
+              {
+                "species": "WINGULL"
+              },
+              {
+                "species": "WINGULL"
+              },
+              {
+                "species": "WINGULL"
+              },
+              {
+                "species": "WINGULL"
+              },
+              {
+                "species": "WINGULL"
+              },
+              {
+                "species": "WINGULL"
+              },
+              {
+                "species": "WINGULL"
+              }
+            ]
+          },
           "water_mons": {
             "encounter_rate": 1,
             "range": "SURF_INITIAL",

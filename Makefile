@@ -438,7 +438,6 @@ generated: $(AUTO_GEN_TARGETS)
 
 clean-teachables_intermediates:
 	rm -f $(DATA_SRC_SUBDIR)/tutor_moves.h
-	rm -f $(DATA_SRC_SUBDIR)/pokemon/teachable_learnsets.h
 	@rm -Rf $(LEARNSET_HELPERS_BUILD_DIR)
 	@echo "rm -Rf <LEARNSET_HELPERS_BUILD_DIR>"
 

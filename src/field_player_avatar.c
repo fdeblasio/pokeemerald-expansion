@@ -89,6 +89,7 @@ static bool8 ForcedMovement_SlideEast(void);
 static bool8 ForcedMovement_MatJump(void);
 static bool8 ForcedMovement_MatSpin(void);
 static bool8 ForcedMovement_MuddySlope(void);
+static bool8 ForcedMovement_Waterfall(void);
 static bool8 ForcedMovement_SpinRight(void);
 static bool8 ForcedMovement_SpinLeft(void);
 static bool8 ForcedMovement_SpinUp(void);
@@ -202,7 +203,7 @@ static bool8 (*const sForcedMovementFuncs[NUM_FORCED_MOVEMENTS + 1])(void) =
     ForcedMovement_SlideNorth,
     ForcedMovement_SlideWest,
     ForcedMovement_SlideEast,
-    ForcedMovement_PushedSouthByCurrent,
+    ForcedMovement_Waterfall,
     ForcedMovement_MatJump,
     ForcedMovement_MatSpin,
     ForcedMovement_MuddySlope,
@@ -678,6 +679,16 @@ static bool8 ForcedMovement_MuddySlope(void)
     {
         return FALSE;
     }
+}
+
+static bool8 ForcedMovement_Waterfall(void)
+{
+    struct ObjectEvent *playerObjEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
+
+    if (playerObjEvent->movementDirection == DIR_NORTH)
+        return DoForcedMovement(DIR_NORTH, PlayerWalkSlow);
+    else
+        return DoForcedMovement(DIR_SOUTH, PlayerRideWaterCurrent);
 }
 
 static bool8 ForcedMovement_SpinRight(void)

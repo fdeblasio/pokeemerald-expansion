@@ -637,15 +637,8 @@ static const u8 *GetInteractedWaterScript(struct MapPosition *unused1, u8 metati
     if (FlagGet(FLAG_BADGE05_GET) == TRUE && IsPlayerFacingSurfableFishableWater() == TRUE && CheckFollowerNPCFlag(FOLLOWER_NPC_FLAG_CAN_SURF))
         return EventScript_UseSurf;
 
-    if (MetatileBehavior_IsWaterfall(metatileBehavior) == TRUE
-     && CheckFollowerNPCFlag(FOLLOWER_NPC_FLAG_CAN_WATERFALL)
-     )
-    {
-        if (CheckBagHasItem(ITEM_FAME_CHECKER, 1) == TRUE && IsPlayerSurfingNorth() == TRUE)
-            return EventScript_UseWaterfall;
-        else
-            return EventScript_CannotUseWaterfall;
-    }
+    if (MetatileBehavior_IsWaterfall(metatileBehavior) == TRUE)
+        return EventScript_CannotUseWaterfall;
     return NULL;
 }
 

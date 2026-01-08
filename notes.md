@@ -294,7 +294,6 @@ upcoming
     - Try to standardize Iron/Poison/Aqua Tail
 
 ### Field Moves
-- Try to remove Waterfall prompt. Just have it work like going down
 - Edit moves that work in field
     - Might be tricky with new changes
     - Maybe edit so instead of "if has move" to "if can learn move"

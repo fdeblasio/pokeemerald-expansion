@@ -282,37 +282,15 @@ Text_StrengthActivated:
 	.string "Strength made it possible to move\n"
 	.string "boulders around.$"
 
-EventScript_UseWaterfall::
-	lockall
-	checkitem ITEM_FAME_CHECKER
-	goto_if_eq VAR_RESULT, FALSE, EventScript_CantWaterfall
-	msgbox Text_WantToWaterfall, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, EventScript_EndWaterfall
-	msgbox Text_ScaledWaterfall, MSGBOX_DEFAULT
-	dofieldeffect FLDEFF_USE_WATERFALL
-	callnative FollowerNPC_WarpSetEnd
-	goto EventScript_EndWaterfall
-
 EventScript_CannotUseWaterfall::
 	lockall
-
-EventScript_CantWaterfall::
 	msgbox Text_CantWaterfall, MSGBOX_DEFAULT
-
-EventScript_EndWaterfall::
 	releaseall
 	end
 
 Text_CantWaterfall:
 	.string "A wall of water is crashing down with\n"
 	.string "a mighty roar.$"
-
-Text_WantToWaterfall:
-	.string "It's a large waterfall.\n"
-	.string "Would you like to scale it?$"
-
-Text_ScaledWaterfall:
-	.string "You scaled the waterfall.$"
 
 EventScript_UseDive::
 	lockall

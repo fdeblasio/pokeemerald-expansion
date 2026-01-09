@@ -10438,6 +10438,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .catchRate = 190,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 65 : 89,
         .evYield_SpAttack = 1,
+        .itemCommon = ITEM_MAGNET,
         .itemRare = ITEM_METAL_COAT,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
@@ -10510,6 +10511,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .catchRate = 60,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 163 : 161,
         .evYield_SpAttack = 2,
+        .itemCommon = ITEM_MAGNET,
         .itemRare = ITEM_METAL_COAT,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
@@ -10594,6 +10596,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .expYield = 211,
     #endif
         .evYield_SpAttack = 3,
+        .itemCommon = ITEM_MAGNET,
         .itemRare = ITEM_METAL_COAT,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,

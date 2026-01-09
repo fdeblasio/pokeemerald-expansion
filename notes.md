@@ -184,6 +184,7 @@ upcoming
 - Max Elixir (and others?) should stay on party screen like Full Restores do
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Include charms? (might go over Key Items amount)
+- Add more items (like Absorb Bulb and Cell Battery) to shops
 
 ### Trainers
 - Remove type duplicates:
@@ -403,7 +404,10 @@ upcoming
     - Add back Littleroot event but skip straight to postgame starters (removing need to fill Dex)?
         - Would be at beginning of postgame Dex
 - In game trades
-- Edit max money?
+- Update Easy Chat more
+    - Remove Event/Move 1/Move 2 restriction?
+    - Add more moves?
+    - Move Abilities out to their own section?
 - Utilize FRLG sounds/music more
     - Champion theme is good
     - Maybe Wally gets his own theme?

@@ -1435,6 +1435,7 @@
     - Learn Poison Tail by move relearner
 
 - Magnemite/Magneton/Magnezone:
+    - Held item: Magnet: 0%->50%
     - Learn Shock Wave and Thunderbolt by level up
 
 - Farfetch'd (not in main game):

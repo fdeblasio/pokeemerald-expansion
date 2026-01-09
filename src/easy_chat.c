@@ -5402,9 +5402,7 @@ void BufferDeepLinkPhrase(void)
 */
 static bool8 IsTrendySayingUnlocked(u8 wordIndex)
 {
-    int byteOffset = wordIndex / 8;
-    int shift = wordIndex % 8;
-    return (gSaveBlock1Ptr->unlockedTrendySayings[byteOffset] >> shift) & 1;
+    return TRUE;
 }
 
 void UnlockTrendySaying(u8 wordIndex)

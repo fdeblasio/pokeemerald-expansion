@@ -274,6 +274,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_REGIELEKI
 	setflag FLAG_HIDE_REGIDRAGO
 	setflag FLAG_HIDE_REGIGIGAS
+	setflag FLAG_UNLOCKED_TRENDY_SAYINGS
 	call EventScript_ResetAllBerries
 	end
 

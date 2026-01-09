@@ -25,16 +25,16 @@ SlateportCity_Mart_EventScript_ClerkMail::
 SlateportCity_Mart_Mail:
 	.2byte ITEM_HARBOR_MAIL
 	.2byte ITEM_ORANGE_MAIL
-	.2byte ITEM_WOOD_MAIL
-	.2byte ITEM_BEAD_MAIL
-	.2byte ITEM_DREAM_MAIL
-	.2byte ITEM_FAB_MAIL
 	.2byte ITEM_GLITTER_MAIL
 	.2byte ITEM_MECH_MAIL
-	.2byte ITEM_RETRO_MAIL
+	.2byte ITEM_WOOD_MAIL
+	.2byte ITEM_WAVE_MAIL
+	.2byte ITEM_BEAD_MAIL
 	.2byte ITEM_SHADOW_MAIL
 	.2byte ITEM_TROPIC_MAIL
-	.2byte ITEM_WAVE_MAIL
+	.2byte ITEM_DREAM_MAIL
+	.2byte ITEM_FAB_MAIL
+	.2byte ITEM_RETRO_MAIL
 	pokemartlistend
 
 SlateportCity_Mart_EventScript_BlackBelt::

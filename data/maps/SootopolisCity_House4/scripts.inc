@@ -14,6 +14,7 @@ SootopolisCity_House4_EventScript_Azumarill::
 	faceplayer
 	waitse
 	playmoncry SPECIES_SOOTOPOLIS_HOUSE_4, CRY_MODE_NORMAL
+	setseenmon SPECIES_SOOTOPOLIS_HOUSE_4
 	bufferspeciesname STR_VAR_1, SPECIES_SOOTOPOLIS_HOUSE_4
 	msgbox SootopolisCity_House4_Text_Azumarill, MSGBOX_DEFAULT
 	waitmoncry

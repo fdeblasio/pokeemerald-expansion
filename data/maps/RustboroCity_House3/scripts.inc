@@ -16,6 +16,7 @@ RustboroCity_House3_EventScript_Pekachu::
 	faceplayer
 	waitse
 	playmoncry SPECIES_RUSTBORO_PEKACHU, CRY_MODE_NORMAL
+	setseenmon SPECIES_RUSTBORO_PEKACHU
 	msgbox RustboroCity_House3_Text_Pekachu, MSGBOX_DEFAULT
 	waitmoncry
 	release

@@ -372,6 +372,7 @@ ThreeIsland_EventScript_Doduo::
 	faceplayer
 	waitse
 	playmoncry SPECIES_DODUO, CRY_MODE_NORMAL
+	setseenmon SPECIES_DODUO
 	msgbox ThreeIsland_Text_Doduo
 	waitmoncry
 	release

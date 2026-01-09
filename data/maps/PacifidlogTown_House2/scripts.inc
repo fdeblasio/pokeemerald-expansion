@@ -34,6 +34,7 @@ PacifidlogTown_House2_EventScript_HappyAzurill::
 	faceplayer
 	waitse
 	playmoncry SPECIES_PACIFIDLOG_TM, CRY_MODE_NORMAL
+	setseenmon SPECIES_PACIFIDLOG_TM
 	bufferspeciesname STR_VAR_1, SPECIES_PACIFIDLOG_TM
 	msgbox PacifidlogTown_House2_Text_Rurii, MSGBOX_DEFAULT
 	waitmoncry
@@ -46,6 +47,7 @@ PacifidlogTown_House2_EventScript_UnhappyAzurill::
 	faceplayer
 	waitse
 	playmoncry SPECIES_PACIFIDLOG_TM, CRY_MODE_ENCOUNTER
+	setseenmon SPECIES_PACIFIDLOG_TM
 	bufferspeciesname STR_VAR_1, SPECIES_PACIFIDLOG_TM
 	msgbox PacifidlogTown_House2_Text_Rururi, MSGBOX_DEFAULT
 	waitmoncry

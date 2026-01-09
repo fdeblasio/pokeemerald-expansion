@@ -95,6 +95,7 @@ VermilionCity_PokemonFanClub_EventScript_Pikachu::
 	faceplayer
 	waitse
 	playmoncry SPECIES_PIKACHU, CRY_MODE_NORMAL
+	setseenmon SPECIES_PIKACHU
 	msgbox VermilionCity_PokemonFanClub_Text_Pikachu
 	waitmoncry
 	release
@@ -105,6 +106,7 @@ VermilionCity_PokemonFanClub_EventScript_Seel::
 	faceplayer
 	waitse
 	playmoncry SPECIES_SEEL, CRY_MODE_NORMAL
+	setseenmon SPECIES_SEEL
 	msgbox VermilionCity_PokemonFanClub_Text_Seel
 	waitmoncry
 	release

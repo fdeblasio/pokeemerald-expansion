@@ -89,6 +89,7 @@ Route104_MrBrineysHouse_EventScript_Peeko::
 	faceplayer
 	waitse
 	playmoncry SPECIES_PEEKO, CRY_MODE_NORMAL
+	setseenmon SPECIES_PEEKO
 	msgbox Route104_MrBrineysHouse_Text_Peeko, MSGBOX_DEFAULT
 	waitmoncry
 	release

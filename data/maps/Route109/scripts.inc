@@ -362,6 +362,7 @@ Route109_EventScript_Zigzagoon::
 	faceplayer
 	waitse
 	playmoncry SPECIES_ROUTE_109_TRASH_COLLECTOR, CRY_MODE_NORMAL
+	setseenmon SPECIES_ROUTE_109_TRASH_COLLECTOR
 	bufferspeciesname STR_VAR_1, SPECIES_ROUTE_109_TRASH_COLLECTOR
 	msgbox Route109_Text_ZigzagoonCry, MSGBOX_DEFAULT
 	waitmoncry

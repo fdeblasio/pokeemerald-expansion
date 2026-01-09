@@ -29,6 +29,7 @@ Route16_House_EventScript_Fearow::
 	faceplayer
 	waitse
 	playmoncry SPECIES_FEAROW, CRY_MODE_NORMAL
+	setseenmon SPECIES_FEAROW
 	msgbox Route16_House_Text_Fearow
 	waitmoncry
 	release

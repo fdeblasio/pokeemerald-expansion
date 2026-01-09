@@ -10,6 +10,7 @@ SSAnne_B1F_Room5_EventScript_Machoke::
 	faceplayer
 	waitse
 	playmoncry SPECIES_MACHOKE, CRY_MODE_NORMAL
+	setseenmon SPECIES_MACHOKE
 	msgbox SSAnne_B1F_Room5_Text_Machoke
 	waitmoncry
 	release

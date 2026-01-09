@@ -14,6 +14,7 @@ VermilionCity_House3_EventScript_Pidgey::
 	faceplayer
 	waitse
 	playmoncry SPECIES_PIDGEY, CRY_MODE_NORMAL
+	setseenmon SPECIES_PIDGEY
 	msgbox VermilionCity_House3_Text_Pidgey
 	waitmoncry
 	release

@@ -61,6 +61,7 @@ Route114_EventScript_Poochyena::
 	faceplayer
 	waitse
 	playmoncry SPECIES_ROUTE_117_ROAR, CRY_MODE_ENCOUNTER
+	setseenmon SPECIES_ROUTE_117_ROAR
 	msgbox Route114_Text_Poochyena, MSGBOX_DEFAULT
 	waitmoncry
 	release

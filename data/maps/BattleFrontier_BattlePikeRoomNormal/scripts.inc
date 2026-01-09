@@ -286,6 +286,7 @@ BattleFrontier_BattlePikeRoomNormal_EventScript_KirliaAttack::
 	closemessage
 	waitse
 	playmoncry SPECIES_BATTLE_PIKE_1, CRY_MODE_NORMAL
+	setseenmon SPECIES_BATTLE_PIKE_1
 	waitmoncry
 	pike_getstatus
 	call_if_eq VAR_RESULT, PIKE_STATUS_TOXIC, BattleFrontier_BattlePikeRoomNormal_EventScript_UsedToxic
@@ -318,6 +319,7 @@ BattleFrontier_BattlePikeRoomNormal_EventScript_DusclopsAttack::
 	closemessage
 	waitse
 	playmoncry SPECIES_BATTLE_PIKE_2, CRY_MODE_NORMAL
+	setseenmon SPECIES_BATTLE_PIKE_2
 	waitmoncry
 	pike_getstatus
 	call_if_eq VAR_RESULT, PIKE_STATUS_FREEZE, BattleFrontier_BattlePikeRoomNormal_EventScript_UsedIceBeam

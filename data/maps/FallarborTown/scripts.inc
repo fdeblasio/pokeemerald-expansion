@@ -35,6 +35,7 @@ FallarborTown_EventScript_Azurill::
 	faceplayer
 	waitse
 	playmoncry SPECIES_FALLARBOR_TOWN, CRY_MODE_NORMAL
+	setseenmon SPECIES_FALLARBOR_TOWN
 	bufferspeciesname STR_VAR_1, SPECIES_FALLARBOR_TOWN
 	msgbox FallarborTown_Text_Azurill, MSGBOX_DEFAULT
 	waitmoncry

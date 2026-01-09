@@ -35,6 +35,7 @@ FortreeCity_House1_EventScript_Zigzagoon::
 	faceplayer
 	waitse
 	playmoncry SPECIES_FORTREE_HOUSE_1, CRY_MODE_NORMAL
+	setseenmon SPECIES_FORTREE_HOUSE_1
 	bufferspeciesname STR_VAR_1, SPECIES_FORTREE_HOUSE_1
 	msgbox FortreeCity_House1_Text_Zigzagoon, MSGBOX_DEFAULT
 	waitmoncry

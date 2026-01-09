@@ -10,6 +10,7 @@ LavaridgeTown_House_EventScript_Zigzagoon::
 	faceplayer
 	waitse
 	playmoncry SPECIES_LAVARIDGE_HOUSE, CRY_MODE_NORMAL
+	setseenmon SPECIES_LAVARIDGE_HOUSE
 	bufferspeciesname STR_VAR_1, SPECIES_LAVARIDGE_HOUSE
 	msgbox LavaridgeTown_House_Text_Zigzagoon, MSGBOX_DEFAULT
 	waitmoncry

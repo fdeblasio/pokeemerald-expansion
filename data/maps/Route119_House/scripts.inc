@@ -10,6 +10,7 @@ Route119_House_EventScript_Wingull::
 	faceplayer
 	waitse
 	playmoncry SPECIES_ROUTE_119_HOUSE, CRY_MODE_NORMAL
+	setseenmon SPECIES_ROUTE_119_HOUSE
 	bufferspeciesname STR_VAR_1, SPECIES_ROUTE_119_HOUSE
 	msgbox Route119_House_Text_Wingull, MSGBOX_DEFAULT
 	waitmoncry

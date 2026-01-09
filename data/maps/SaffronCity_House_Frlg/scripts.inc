@@ -14,6 +14,7 @@ SaffronCity_House_EventScript_Pidgey::
 	faceplayer
 	waitse
 	playmoncry SPECIES_PIDGEY, CRY_MODE_NORMAL
+	setseenmon SPECIES_PIDGEY
 	msgbox SaffronCity_House_Text_Pidgey
 	waitmoncry
 	release

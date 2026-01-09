@@ -75,6 +75,7 @@ SaffronCity_EventScript_Pidgeot::
 	faceplayer
 	waitse
 	playmoncry SPECIES_PIDGEOT, CRY_MODE_NORMAL
+	setseenmon SPECIES_PIDGEOT
 	msgbox SaffronCity_Text_Pidgeot
 	waitmoncry
 	release

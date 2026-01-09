@@ -10,6 +10,7 @@ RustboroCity_Flat2_1F_EventScript_Skitty::
 	faceplayer
 	waitse
 	playmoncry SPECIES_RUSTBORO_HOUSE, CRY_MODE_NORMAL
+	setseenmon SPECIES_RUSTBORO_HOUSE
 	bufferspeciesname STR_VAR_1, SPECIES_RUSTBORO_HOUSE
 	msgbox RustboroCity_Flat2_1F_Text_Skitty, MSGBOX_DEFAULT
 	waitmoncry

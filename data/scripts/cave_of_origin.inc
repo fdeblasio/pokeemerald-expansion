@@ -3,6 +3,7 @@ CaveOfOrigin_EventScript_LegendaryCry::
 	lockall
 	waitse
 	playmoncry SPECIES_KYOGRE, CRY_MODE_ENCOUNTER  @ SPECIES_GROUDON in Ruby
+	setseenmon SPECIES_KYOGRE
 	waitmoncry
 	setvar VAR_TEMP_5, 1
 	releaseall

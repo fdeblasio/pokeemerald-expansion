@@ -234,6 +234,7 @@ VermilionCity_EventScript_Machop::
 	faceplayer
 	waitse
 	playmoncry SPECIES_MACHOP, CRY_MODE_NORMAL
+	setseenmon SPECIES_MACHOP
 	msgbox VermilionCity_Text_Machop
 	waitmoncry
 	msgbox VermilionCity_Text_MachopStompingLandFlat

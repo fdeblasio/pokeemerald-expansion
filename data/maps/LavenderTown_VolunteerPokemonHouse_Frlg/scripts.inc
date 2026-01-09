@@ -54,6 +54,7 @@ LavenderTown_VolunteerPokemonHouse_EventScript_Nidorino::
 	faceplayer
 	waitse
 	playmoncry SPECIES_NIDORINO, CRY_MODE_NORMAL
+	setseenmon SPECIES_NIDORINO
 	msgbox LavenderTown_VolunteerPokemonHouse_Text_Nidorino
 	waitmoncry
 	release
@@ -64,6 +65,7 @@ LavenderTown_VolunteerPokemonHouse_EventScript_Psyduck::
 	faceplayer
 	waitse
 	playmoncry SPECIES_PSYDUCK, CRY_MODE_NORMAL
+	setseenmon SPECIES_PSYDUCK
 	msgbox LavenderTown_VolunteerPokemonHouse_Text_Psyduck
 	waitmoncry
 	release

@@ -43,6 +43,7 @@ CeladonCity_EventScript_Poliwrath::
 	faceplayer
 	waitse
 	playmoncry SPECIES_POLIWRATH, CRY_MODE_NORMAL
+	setseenmon SPECIES_POLIWRATH
 	msgbox CeladonCity_Text_Poliwrath
 	closemessage
 	waitmoncry

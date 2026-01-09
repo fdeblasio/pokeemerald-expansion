@@ -291,6 +291,7 @@ RusturfTunnel_EventScript_Peeko::
 	faceplayer
 	waitse
 	playmoncry SPECIES_PEEKO, CRY_MODE_NORMAL
+	setseenmon SPECIES_PEEKO
 	msgbox RusturfTunnel_Text_Peeko, MSGBOX_DEFAULT
 	waitmoncry
 	release

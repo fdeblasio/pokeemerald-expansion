@@ -14,6 +14,7 @@ SSAnne_1F_Room3_EventScript_Wigglytuff::
 	faceplayer
 	waitse
 	playmoncry SPECIES_WIGGLYTUFF, CRY_MODE_NORMAL
+	setseenmon SPECIES_WIGGLYTUFF
 	msgbox SSAnne_1F_Room3_Text_Wigglytuff
 	waitmoncry
 	release

@@ -312,6 +312,8 @@ upcoming
 - Add new defines (but keep current ones) for overworld sprites that line up with trainers for easier use
 - Double check that only Devon employees use DEVON_EMPLOYEES and only non-Devon use MAN_2
 - Use either SCIENTIST_1 or 2 for Cozmo/Stern and use the other for generic scientists
+- Add caves and more areas to Safari Zone for more postgame mons
+    - Make them themed like ice and fire. Maybe can add legendaries
 - Battle Environments:
     - Mt. Chimney and/or Fiery Path should use Volcano?
         - Safari Zone Fire Cave too
@@ -323,11 +325,6 @@ upcoming
     - Should the Puddle environment get used for puddles?
     - Ice/Volcano/Puddle would need better palettes/potentially different, non-building tiles/need slide intros
 - Make Regi caves only one room?
-- Add caves and more areas to Safari Zone for more postgame mons
-    - Make them themed like ice and fire. Maybe can add legendaries
-- See what makes the 119 house Pokémon move and apply it other places
-- Fly from Lilycove Department Store roof?
-- Overworld Pokémon should be set to seen
 - Add FRLG trainer sprites/overworld sprites
     - Sprites are added but still need to be implemented. Overworld sprites may have duplicates for Pokémon and may need palettes
 - Add accurate overworld sprites (https://github.com/pret/pokeemerald/wiki/Adding-new-event-object-or-overworld-sprites, https://www.pokecommunity.com/showthread.php?t=407124)

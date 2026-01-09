@@ -14,6 +14,7 @@ ViridianCity_House_EventScript_Speary::
 	faceplayer
 	waitse
 	playmoncry SPECIES_SPEAROW, CRY_MODE_NORMAL
+	setseenmon SPECIES_SPEAROW
 	msgbox ViridianCity_House_Text_Speary
 	waitmoncry
 	release

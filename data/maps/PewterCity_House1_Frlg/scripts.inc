@@ -25,6 +25,7 @@ PewterCity_House1_EventScript_DoNidoranCry::
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	waitse
 	playmoncry SPECIES_NIDORAN_M, CRY_MODE_NORMAL
+	setseenmon SPECIES_NIDORAN_M
 	msgbox PewterCity_House1_Text_Nidoran
 	waitmoncry
 	call EventScript_RestorePrevTextColor

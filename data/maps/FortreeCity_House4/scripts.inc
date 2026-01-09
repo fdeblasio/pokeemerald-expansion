@@ -60,6 +60,7 @@ FortreeCity_House4_EventScript_Wingull::
 	faceplayer
 	waitse
 	playmoncry SPECIES_FORTREE_MOSSDEEP_MESSENGER, CRY_MODE_NORMAL
+	setseenmon SPECIES_FORTREE_MOSSDEEP_MESSENGER
 	bufferspeciesname STR_VAR_1, SPECIES_FORTREE_MOSSDEEP_MESSENGER
 	msgbox FortreeCity_House4_Text_Wingull, MSGBOX_DEFAULT
 	waitmoncry

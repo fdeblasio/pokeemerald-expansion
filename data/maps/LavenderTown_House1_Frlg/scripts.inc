@@ -19,6 +19,7 @@ LavenderTown_House1_EventScript_Cubone::
 	faceplayer
 	waitse
 	playmoncry SPECIES_CUBONE, CRY_MODE_NORMAL
+	setseenmon SPECIES_CUBONE
 	msgbox LavenderTown_House1_Text_Cubone
 	waitmoncry
 	release

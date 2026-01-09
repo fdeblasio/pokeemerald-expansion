@@ -34,6 +34,7 @@ MossdeepCity_House4_EventScript_Skitty::
 	faceplayer
 	waitse
 	playmoncry SPECIES_MOSSDEEP_HOUSE, CRY_MODE_NORMAL
+	setseenmon SPECIES_MOSSDEEP_HOUSE
 	bufferspeciesname STR_VAR_1, SPECIES_MOSSDEEP_HOUSE
 	msgbox MossdeepCity_House4_Text_Skitty, MSGBOX_DEFAULT
 	waitmoncry

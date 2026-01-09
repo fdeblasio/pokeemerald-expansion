@@ -42,6 +42,7 @@ FallarborTown_Mart_EventScript_Skitty::
 	faceplayer
 	waitse
 	playmoncry SPECIES_FALLARBOR_MART, CRY_MODE_NORMAL
+	setseenmon SPECIES_FALLARBOR_MART
 	bufferspeciesname STR_VAR_1, SPECIES_FALLARBOR_MART
 	msgbox FallarborTown_Mart_Text_Skitty, MSGBOX_DEFAULT
 	waitmoncry

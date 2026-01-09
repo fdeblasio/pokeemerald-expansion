@@ -32,6 +32,7 @@ CeladonCity_Condominiums_1F_EventScript_Meowth::
 	faceplayer
 	waitse
 	playmoncry SPECIES_MEOWTH, CRY_MODE_NORMAL
+	setseenmon SPECIES_MEOWTH
 	msgbox CeladonCity_Condominiums_1F_Text_Meowth
 	waitmoncry
 	release
@@ -42,6 +43,7 @@ CeladonCity_Condominiums_1F_EventScript_Clefairy::
 	faceplayer
 	waitse
 	playmoncry SPECIES_CLEFAIRY, CRY_MODE_NORMAL
+	setseenmon SPECIES_CLEFAIRY
 	msgbox CeladonCity_Condominiums_1F_Text_Clefairy
 	waitmoncry
 	release
@@ -52,6 +54,7 @@ CeladonCity_Condominiums_1F_EventScript_Nidoran::
 	faceplayer
 	waitse
 	playmoncry SPECIES_NIDORAN_F, CRY_MODE_NORMAL
+	setseenmon SPECIES_NIDORAN_F
 	msgbox CeladonCity_Condominiums_1F_Text_Nidoran
 	waitmoncry
 	release

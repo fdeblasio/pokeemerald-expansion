@@ -14,6 +14,7 @@ SaffronCity_CopycatsHouse_1F_EventScript_Chansey::
 	faceplayer
 	waitse
 	playmoncry SPECIES_CHANSEY, CRY_MODE_NORMAL
+	setseenmon SPECIES_CHANSEY
 	msgbox SaffronCity_CopycatsHouse_1F_Text_Chansey
 	waitmoncry
 	release

@@ -135,6 +135,7 @@ LilycoveCity_DepartmentStore_1F_EventScript_Azumarill::
 	faceplayer
 	waitse
 	playmoncry SPECIES_LILYCOVE_DEPARTMENT_STORE, CRY_MODE_NORMAL
+	setseenmon SPECIES_LILYCOVE_DEPARTMENT_STORE
 	bufferspeciesname STR_VAR_1, SPECIES_LILYCOVE_DEPARTMENT_STORE
 	msgbox LilycoveCity_DepartmentStore_1F_Text_Azumarill, MSGBOX_DEFAULT
 	waitmoncry

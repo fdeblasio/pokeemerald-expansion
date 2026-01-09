@@ -151,7 +151,7 @@ upcoming
 - Once more changes are made, consolidate commits on develop branch again
 
 ### Pokémon
-- Double check that all Gen1 Pokemon have updated movesets
+- Double check that all Gen1 Pokémon have updated movesets
     - Next do all starters/beasts/bugs/birds/etc.
     - Not including cross-gen evos or regionals or already updated:
         7 88
@@ -199,7 +199,7 @@ upcoming
 - Update Tabitha (and maybe others?) macros to use Magma levels instead of Rematch levels?
 - Add ORAS team members (like a Picknicker getting a Gulpin)
 - Now that Gym Leader rematch party size is consistent, maybe a macro can be made
-- Get rid of Gym Leader rematches needing two Pokemon
+- Get rid of Gym Leader rematches needing two Pokémon
 - Some Magnemites never occur because 30 is less than REMATCH_2_LEVEL
     - Double check this?
 - More mugshots for other bosses?
@@ -305,7 +305,10 @@ upcoming
 - Seperate out split routes into two maps for different encounters?
     - 103 east/west
     - 111 pre-/post-desert?
+    - 118 east/west
 - Add sand encounters to Dewford area (using desert sand)
+- Finish Safari Zone forest
+- Find other ways to increase amount of encounters while still having 4-5 Pokémon per pool
 - Add new defines (but keep current ones) for overworld sprites that line up with trainers for easier use
 - Double check that only Devon employees use DEVON_EMPLOYEES and only non-Devon use MAN_2
 - Use either SCIENTIST_1 or 2 for Cozmo/Stern and use the other for generic scientists
@@ -322,9 +325,9 @@ upcoming
 - Make Regi caves only one room?
 - Add caves and more areas to Safari Zone for more postgame mons
     - Make them themed like ice and fire. Maybe can add legendaries
-- See what makes the 119 house Pokemon move and apply it other places
+- See what makes the 119 house Pokémon move and apply it other places
 - Fly from Lilycove Department Store roof?
-- Overworld Pokemon should be set to seen
+- Overworld Pokémon should be set to seen
 - Add FRLG trainer sprites/overworld sprites
     - Sprites are added but still need to be implemented. Overworld sprites may have duplicates for Pokémon and may need palettes
 - Add accurate overworld sprites (https://github.com/pret/pokeemerald/wiki/Adding-new-event-object-or-overworld-sprites, https://www.pokecommunity.com/showthread.php?t=407124)
@@ -343,7 +346,7 @@ upcoming
 
 ### Battle Frontier
 - Battle Tent Pokémon/EVs?
-- Remove restricted Pokemon?
+- Remove restricted Pokémon?
 - Make pausing challenge not a soft save (CHALLENGE_STATUS_SAVING)
 - Update rest of apprentice teams
 - Pokémon

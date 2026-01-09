@@ -154,12 +154,12 @@ upcoming
 - Double check that all Gen1 Pokémon have updated movesets
     - Next do all starters/beasts/bugs/birds/etc.
     - Not including cross-gen evos or regionals or already updated:
-        7 88
-        8 96
-        4 107
-        9 120
-        1 151
-        5 156
+        7: 36 (Pyukumuku-Melmetal)
+        8: 96
+        4: 107
+        9: 120
+        1: 151
+        5: 156
 - Turn some Normal/Flying types into either pure Flying or Flying/Normal?
 - Add in GMax forms as Megas with +20 to every non-HP stat? (or 40 to attacking and 0 to non-attacking)
 - Eventually remove RSE and/or BDSP teachable moves?

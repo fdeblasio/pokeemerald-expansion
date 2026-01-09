@@ -3741,12 +3741,26 @@
     - Spe: 42->45
     - Learns Waterfall by level up
 
+- Fomantis:
+    - Learns Seed Bomb by level up
+
+- Lurantis:
+    - Learns Superpower and Seed Bomb by level up
+
+- Morelull/ShiinoticL
+    - Learn Fairy Wind and Draining Kiss by level up
+
 - Salandit:
     - Gender ratio: 87.5/12.5->50/50
+    - Learns Acid Spray, Sludge, Flame Burst, and Sludge Bomb by level up
     - Learns Dragon Breath by Egg Move
 
 - Salazzle:
+    - Learns Acid Spray, Sludge, Flame Burst, and Sludge Bomb by level up
     - Learns Dragon Breath by Egg Move
+
+- Stufful/Bewear:
+    - Learn Rock Smash, Brick Break, Body Slam, and Drain Punch by level up
 
 - Bounsweet:
     - Atk: 30->40
@@ -3772,8 +3786,11 @@
     - SpA: 82->90
     - Learns Fairy Wind, Giga Drain, and Dazzling Gleam by level up
 
-- Sandygast/Palossand:
-    - Learn Mud-Slap, Mud Shot, Hex, and Scorching Sands by level up
+- Oranguru:
+    - Learns Pound, Swift, Psybeam, and Hyper Voice by level up
+
+- Passimian:
+    - Learns Power-Up Punch, Wake Up-Slap, Brick Break and Drain Punch by level up
 
 - Wimpod:
     - Learns Aqua Jet by level up
@@ -3781,6 +3798,9 @@
 - Golisopod:
     - Learns Aqua Jet, Bullet Punch, Metal Claw, Aqua Cutter, Iron Head, Iron Defense, and Leech Life by level up
     - Learns Body Press by TM
+
+- Sandygast/Palossand:
+    - Learn Mud-Slap, Mud Shot, Hex, and Scorching Sands by level up
 
 - Type: Null:
     - Evolution: friendship->45
@@ -3802,13 +3822,15 @@
     - Learns Metal Claw and Shadow Claw by level up
 
 - Tapu Koko:
-    - Learns Supercell Slam, Play Rough, and Rising Voltage by TM
+    - Learns Supercell Slam and Play Rough by TM
+    - Learns Rising Voltage by move tutor
 
 - Tapu Lele:
-    - Learns Expanding Force by TM
+    - Learns Expanding Force by move tutor
 
 - Tapu Bulu:
-    - Learns Grassy Glide and Play Rough by TM
+    - Learns Play Rough by TM
+    - Learns Grassy Glide by move tutor
 
 - Solgaleo:
     - Learns Psychic Fangs by level up

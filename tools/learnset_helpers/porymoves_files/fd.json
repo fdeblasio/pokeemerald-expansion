@@ -14103,35 +14103,84 @@
     "TutorMoves": []
   },
   "FOMANTIS": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 30,
+        "Move": "MOVE_SEED_BOMB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "LURANTIS": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_SUPERPOWER"
+      },
+      {
+        "Level": 30,
+        "Move": "MOVE_SEED_BOMB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "MORELULL": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_FAIRY_WIND"
+      },
+      {
+        "Level": 12,
+        "Move": "MOVE_DRAINING_KISS"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "SHIINOTIC": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_FAIRY_WIND"
+      },
+      {
+        "Level": 12,
+        "Move": "MOVE_DRAINING_KISS"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "SALANDIT": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ACID_SPRAY"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_SLUDGE"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_FLAME_BURST"
+      },
+      {
+        "Level": 45,
+        "Move": "MOVE_SLUDGE_BOMB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [
@@ -14140,21 +14189,72 @@
     "TutorMoves": []
   },
   "SALAZZLE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ACID_SPRAY"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_SLUDGE"
+      },
+      {
+        "Level": 37,
+        "Move": "MOVE_FLAME_BURST"
+      },
+      {
+        "Level": 51,
+        "Move": "MOVE_SLUDGE_BOMB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "STUFFUL": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ROCK_SMASH"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_BRICK_BREAK"
+      },
+      {
+        "Level": 32,
+        "Move": "MOVE_BODY_SLAM"
+      },
+      {
+        "Level": 36,
+        "Move": "MOVE_DRAIN_PUNCH"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "BEWEAR": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ROCK_SMASH"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_BRICK_BREAK"
+      },
+      {
+        "Level": 36,
+        "Move": "MOVE_BODY_SLAM"
+      },
+      {
+        "Level": 36,
+        "Move": "MOVE_DRAIN_PUNCH"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -14241,14 +14341,48 @@
     "TutorMoves": []
   },
   "ORANGURU": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_POUND"
+      },
+      {
+        "Level": 15,
+        "Move": "MOVE_SWIFT"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_PSYBEAM"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_HYPER_VOICE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "PASSIMIAN": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_POWER_UP_PUNCH"
+      },
+      {
+        "Level": 15,
+        "Move": "MOVE_WAKE_UP_SLAP"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_BRICK_BREAK"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_DRAIN_PUNCH"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

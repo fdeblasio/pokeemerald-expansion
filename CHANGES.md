@@ -4545,6 +4545,9 @@
 - Stufful/Bewear:
     - Learn Rock Smash, Brick Break, Body Slam, and Drain Punch by level up
 
+- Stufful/Bewear:
+    - Learn Rock Smash, Brick Break, Body Slam, and Drain Punch by level up
+
 - Bounsweet:
     - Atk: 30->40
     - Held item: Magost Berry: 0%->50%

@@ -629,6 +629,7 @@
         - Accuracy: 95->100
     - Peck:
         - Power: 35->40
+        - PP: 35->40
     - Sky Attack:
         - Accuracy: 90->100
 - Poison:
@@ -788,6 +789,8 @@
     - Fire Spin:
         - Accuracy: 85->90
         - PP: 15->20
+    - Flame Wheel:
+        - Power: 60->65
     - Fusion Flare:
         - PP: 5->10
     - Inferno:
@@ -912,6 +915,8 @@
     - Glaciate:
         - Power: 65->80
         - Accuracy: 95->100
+    - Ice Beam:
+        - PP: 10->15
     - Ice Burn:
         - Accuracy: 90->100
         - PP: 5->10

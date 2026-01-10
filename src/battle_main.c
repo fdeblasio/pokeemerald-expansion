@@ -6040,30 +6040,30 @@ void SetTypeBeforeUsingMove(enum Move move, u32 battler)
     }
 }
 
-u32 GetDynamicAccuracy(struct Pokemon *mon, u32 move, u32 battler){
+u32 GetDynamicAccuracy(struct Pokemon *mon, enum Move move, u32 battler, enum MonState state)
+{
     u32 accuracy = GetMoveAccuracy(move);
-    u32 moveEffect = GetMoveEffect(move);
     u32 holdEffect, ability;
 
-    if (gMain.inBattle)
+    if (state == MON_IN_BATTLE)
     {
-        holdEffect = GetBattlerHoldEffect(battler, TRUE);
+        holdEffect = GetBattlerHoldEffect(battler);
         ability = GetBattlerAbility(battler);
     }
     else
     {
-        holdEffect = ItemId_GetHoldEffect(GetMonData(mon, MON_DATA_HELD_ITEM, 0));
+        holdEffect = GetItemHoldEffect(GetMonData(mon, MON_DATA_HELD_ITEM, 0));
         ability = GetMonAbility(mon);
     }
 
 
-    if (gMain.inBattle && HasWeatherEffect())
+    if (state == MON_IN_BATTLE && HasWeatherEffect())
     {
-        if (gBattleWeather & B_WEATHER_SUN && moveEffect == EFFECT_THUNDER)
+        if (gBattleWeather & B_WEATHER_SUN && MoveHas50AccuracyInSun(move))
             accuracy = 50;
-        else if (gBattleWeather & B_WEATHER_RAIN && (moveEffect == EFFECT_THUNDER || moveEffect == EFFECT_RAIN_ALWAYS_HIT))
+        else if (gBattleWeather & B_WEATHER_RAIN && MoveAlwaysHitsInRain(move))
             accuracy = 100;
-        else if (gBattleWeather & (B_WEATHER_SNOW | B_WEATHER_HAIL) && moveEffect == EFFECT_BLIZZARD)
+        else if (gBattleWeather & (B_WEATHER_SNOW | B_WEATHER_HAIL) && MoveAlwaysHitsInHailSnow(move))
             accuracy = 100;
     }
     else
@@ -6071,16 +6071,16 @@ u32 GetDynamicAccuracy(struct Pokemon *mon, u32 move, u32 battler){
         switch (gWeatherPtr->currWeather)
         {
         case WEATHER_DROUGHT:
-            if (moveEffect == EFFECT_THUNDER)
+            if (MoveHas50AccuracyInSun(move))
                 accuracy = 50;
             break;
         case WEATHER_RAIN:
         case WEATHER_RAIN_THUNDERSTORM:
-            if (moveEffect == EFFECT_THUNDER || moveEffect == EFFECT_RAIN_ALWAYS_HIT)
+            if (MoveAlwaysHitsInRain(move))
                 accuracy = 100;
             break;
         case WEATHER_SNOW:
-            if (moveEffect == EFFECT_BLIZZARD)
+            if (MoveAlwaysHitsInHailSnow(move))
                 accuracy = 100;
         }
     }

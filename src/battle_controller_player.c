@@ -1742,11 +1742,17 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct*)(&gBattleResources->bufferA[battler][4]);
     enum Move move = moveInfo->moves[gMoveSelectionCursor[battler]];
     u16 pwr = GetMovePower(move);
+    u16 acc;
+
     if (P_SHOW_DYNAMIC_ACCURACY)
+    {
         struct Pokemon *mon = &gPlayerParty[gBattlerPartyIndexes[battler]];
-        u16 acc = GetDynamicAccuracy(mon, move, battler);
+        acc = GetDynamicAccuracy(mon, move, battler, MON_IN_BATTLE);
+    }
     else
-        u16 acc = GetMoveAccuracy(move);
+    {
+        acc = GetMoveAccuracy(move);
+    }
 
     enum DamageCategory cat = GetBattleMoveCategory(move);
 

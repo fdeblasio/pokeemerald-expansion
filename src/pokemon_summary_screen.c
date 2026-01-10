@@ -4189,11 +4189,16 @@ static void PrintMovePowerAndAccuracy(enum Move moveIndex)
 
         PrintTextOnWindow(PSS_LABEL_WINDOW_MOVES_POWER_ACC, text, 53, 1, 0, 0);
 
+        u32 accuracy;
         if (P_SHOW_DYNAMIC_ACCURACY)
+        {
             struct Pokemon *mon = &sMonSummaryScreen->currentMon;
-            u32 accuracy = GetDynamicAccuracy(mon, moveIndex, 0);
+            accuracy = GetDynamicAccuracy(mon, moveIndex, 0, gMain.inBattle ? MON_IN_BATTLE : MON_OUTSIDE_BATTLE);
+        }
         else
-            u32 accuracy = GetMoveAccuracy(moveIndex);
+        {
+            accuracy = GetMoveAccuracy(moveIndex);
+        }
 
         if (accuracy == 0)
         {

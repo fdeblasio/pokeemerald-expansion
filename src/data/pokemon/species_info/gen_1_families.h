@@ -14696,7 +14696,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpDefense = 135,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 608 : 255,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 635 : 255,
         .evYield_HP = (P_UPDATED_EVS >= GEN_4) ? 3 : 2,
         .itemCommon = ITEM_LUCKY_EGG,
         .itemRare = ITEM_LUCKY_EGG,

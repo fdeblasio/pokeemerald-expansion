@@ -121,6 +121,7 @@
 - The Good Rod is now obtained on the left side of Route 118 instead of the right, meaning it is available before getting Surf
 - Sacred Ash now works in battles although it only revives one Pokémon
 - Soul Dew uses its Gen 6 effect
+- Lucky Egg now gives double EXP
 
 ### Battle Frontier:
 - Pokémon in the Battle Frontier/Trainer Hill now register in the Pokédex

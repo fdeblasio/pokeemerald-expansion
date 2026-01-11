@@ -78,30 +78,6 @@ static const u8 sNectarDesc[]         = _("Flower nectar that\n"
                                           "changes the form\n"
                                           "of certain Pokémon.");
 
-static const u8 sCharizarditeDesc[]   = _("This stone enables\n"
-                                          "Charizard to Mega\n"
-                                          "Evolve in battle.");
-
-static const u8 sMewtwoniteDesc[]     = _("This stone enables\n"
-                                          "Mewtwo to Mega\n"
-                                          "Evolve in battle.");
-
-static const u8 sRaichuniteDesc[]     = _("This stone enables\n"
-                                          "Raichu to Mega\n"
-                                          "Evolve in battle.");
-
-static const u8 sAbsoliteDesc[]       = _("This stone enables\n"
-                                          "Absol to Mega\n"
-                                          "Evolve in battle.");
-
-static const u8 sGarchompiteDesc[]    = _("This stone enables\n"
-                                          "Garchomp to Mega\n"
-                                          "Evolve in battle.");
-
-static const u8 sLucarioniteDesc[]    = _("This stone enables\n"
-                                          "Lucario to Mega\n"
-                                          "Evolve in battle.");
-
 static const u8 sSeaIncenseDesc[]     = _("A hold item that\n"
                                           "slightly boosts\n"
                                           "Water-type moves.");
@@ -3651,6 +3627,8 @@ const struct ItemInfo gItemsInfo[] =
         EVOLUTION_STONE_INFO(80, Dawn)
     },
 
+#define EVOLUTION_ITEM \
+
     [ITEM_SWEET_APPLE] =
     {
         .name = ITEM_NAME("Sweet Apple"),
@@ -4662,9 +4640,13 @@ const struct ItemInfo gItemsInfo[] =
     },
 
 // Mega Stones
-#define MEGA_STONE_INFO                           \
+#define MEGA_STONE_INFO(Species)                  \
     .price = 5000,                                \
     .holdEffect = HOLD_EFFECT_MEGA_STONE,         \
+    .description = COMPOUND_STRING(               \
+        "This stone enables\n"                    \
+        Species" to Mega\n"                       \
+        "Evolve in battle."),                     \
     .pocket = POCKET_ITEMS,                       \
     .sortType = ITEM_TYPE_MEGA_STONE,             \
     .type = ITEM_USE_BAG_MENU,                    \
@@ -4674,976 +4656,644 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_VENUSAURITE] =
     {
         .name = ITEM_NAME("Venusaurite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Venusaur to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Venusaur"),
         ITEM_ICON(Venusaurite),
     },
 
     [ITEM_CHARIZARDITE_X] =
     {
         .name = ITEM_NAME("Charizardite X"),
-        MEGA_STONE_INFO,
-        .description = sCharizarditeDesc,
+        MEGA_STONE_INFO("Charizard"),
         ITEM_ICON(CharizarditeX),
     },
 
     [ITEM_CHARIZARDITE_Y] =
     {
         .name = ITEM_NAME("Charizardite Y"),
-        MEGA_STONE_INFO,
-        .description = sCharizarditeDesc,
+        MEGA_STONE_INFO("Charizard"),
         ITEM_ICON(CharizarditeY),
     },
 
     [ITEM_BLASTOISINITE] =
     {
         .name = ITEM_NAME("Blastoisinite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Blastoise to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Blastoise"),
         ITEM_ICON(Blastoisinite),
     },
 
     [ITEM_BEEDRILLITE] =
     {
         .name = ITEM_NAME("Beedrillite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Beedrill to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Beedrill"),
         ITEM_ICON(Beedrillite),
     },
 
     [ITEM_PIDGEOTITE] =
     {
         .name = ITEM_NAME("Pidgeotite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Pidgeot to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Pidgeot"),
         ITEM_ICON(Pidgeotite),
     },
 
     [ITEM_ALAKAZITE] =
     {
         .name = ITEM_NAME("Alakazite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Alakazam to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Alakazam"),
         ITEM_ICON(Alakazite),
     },
 
     [ITEM_SLOWBRONITE] =
     {
         .name = ITEM_NAME("Slowbronite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Slowbro to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Slowbro"),
         ITEM_ICON(Slowbronite),
     },
 
     [ITEM_GENGARITE] =
     {
         .name = ITEM_NAME("Gengarite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Gengar to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Gengar"),
         ITEM_ICON(Gengarite),
     },
 
     [ITEM_KANGASKHANITE] =
     {
         .name = ITEM_NAME("Kangaskhanite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Kangaskhan to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Kangaskhan"),
         ITEM_ICON(Kangaskhanite),
     },
 
     [ITEM_PINSIRITE] =
     {
         .name = ITEM_NAME("Pinsirite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Pinsir to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Pinsir"),
         ITEM_ICON(Pinsirite),
     },
 
     [ITEM_GYARADOSITE] =
     {
         .name = ITEM_NAME("Gyaradosite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Gyarados to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Gyarados"),
         ITEM_ICON(Gyaradosite),
     },
 
     [ITEM_AERODACTYLITE] =
     {
         .name = ITEM_NAME("Aerodactylite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Aerodactyl to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Aerodactyl"),
         ITEM_ICON(Aerodactylite),
     },
 
     [ITEM_MEWTWONITE_X] =
     {
         .name = ITEM_NAME("Mewtwonite X"),
-        MEGA_STONE_INFO,
-        .description = sMewtwoniteDesc,
+        MEGA_STONE_INFO("Mewtwo"),
         ITEM_ICON(MewtwoniteX),
     },
 
     [ITEM_MEWTWONITE_Y] =
     {
         .name = ITEM_NAME("Mewtwonite Y"),
-        MEGA_STONE_INFO,
-        .description = sMewtwoniteDesc,
+        MEGA_STONE_INFO("Mewtwo"),
         ITEM_ICON(MewtwoniteY),
     },
 
     [ITEM_AMPHAROSITE] =
     {
         .name = ITEM_NAME("Ampharosite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Ampharos to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Ampharos"),
         ITEM_ICON(Ampharosite),
     },
 
     [ITEM_STEELIXITE] =
     {
         .name = ITEM_NAME("Steelixite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Steelix to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Steelix"),
         ITEM_ICON(Steelixite),
     },
 
     [ITEM_SCIZORITE] =
     {
         .name = ITEM_NAME("Scizorite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Scizor to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Scizor"),
         ITEM_ICON(Scizorite),
     },
 
     [ITEM_HERACRONITE] =
     {
         .name = ITEM_NAME("Heracronite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Heracross to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Heracross"),
         ITEM_ICON(Heracronite),
     },
 
     [ITEM_HOUNDOOMINITE] =
     {
         .name = ITEM_NAME("Houndoominite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Houndoom to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Houndoom"),
         ITEM_ICON(Houndoominite),
     },
 
     [ITEM_TYRANITARITE] =
     {
         .name = ITEM_NAME("Tyranitarite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Tyranitar to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Tyranitar"),
         ITEM_ICON(Tyranitarite),
     },
 
     [ITEM_SCEPTILITE] =
     {
         .name = ITEM_NAME("Sceptilite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Sceptile to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Sceptile"),
         ITEM_ICON(Sceptilite),
     },
 
     [ITEM_BLAZIKENITE] =
     {
         .name = ITEM_NAME("Blazikenite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Blaziken to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Blaziken"),
         ITEM_ICON(Blazikenite),
     },
 
     [ITEM_SWAMPERTITE] =
     {
         .name = ITEM_NAME("Swampertite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Swampert to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Swampert"),
         ITEM_ICON(Swampertite),
     },
 
     [ITEM_GARDEVOIRITE] =
     {
         .name = ITEM_NAME("Gardevoirite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Gardevoir to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Gardevoir"),
         ITEM_ICON(Gardevoirite),
     },
 
     [ITEM_SABLENITE] =
     {
         .name = ITEM_NAME("Sablenite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Sableye to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Sableye"),
         ITEM_ICON(Sablenite),
     },
 
     [ITEM_MAWILITE] =
     {
         .name = ITEM_NAME("Mawilite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Mawile to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Mawile"),
         ITEM_ICON(Mawilite),
     },
 
     [ITEM_AGGRONITE] =
     {
         .name = ITEM_NAME("Aggronite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Aggron to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Aggron"),
         ITEM_ICON(Aggronite),
     },
 
     [ITEM_MEDICHAMITE] =
     {
         .name = ITEM_NAME("Medichamite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Medicham to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Medicham"),
         ITEM_ICON(Medichamite),
     },
 
     [ITEM_MANECTITE] =
     {
         .name = ITEM_NAME("Manectite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Manectric to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Manectric"),
         ITEM_ICON(Manectite),
     },
 
     [ITEM_SHARPEDONITE] =
     {
         .name = ITEM_NAME("Sharpedonite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Sharpedo to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Sharpedo"),
         ITEM_ICON(Sharpedonite),
     },
 
     [ITEM_CAMERUPTITE] =
     {
         .name = ITEM_NAME("Cameruptite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Camerupt to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Camerupt"),
         ITEM_ICON(Cameruptite),
     },
 
     [ITEM_ALTARIANITE] =
     {
         .name = ITEM_NAME("Altarianite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Altaria to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Altaria"),
         ITEM_ICON(Altarianite),
     },
 
     [ITEM_BANETTITE] =
     {
         .name = ITEM_NAME("Banettite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Banette to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Banette"),
         ITEM_ICON(Banettite),
     },
 
     [ITEM_ABSOLITE] =
     {
         .name = ITEM_NAME("Absolite"),
-        MEGA_STONE_INFO,
-        .description = sAbsoliteDesc,
+        MEGA_STONE_INFO("Absol"),
         ITEM_ICON(Absolite),
     },
 
     [ITEM_GLALITITE] =
     {
         .name = ITEM_NAME("Glalitite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Glalie to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Glalie"),
         ITEM_ICON(Glalitite),
     },
 
     [ITEM_SALAMENCITE] =
     {
         .name = ITEM_NAME("Salamencite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Salamence to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Salamence"),
         ITEM_ICON(Salamencite),
     },
 
     [ITEM_METAGROSSITE] =
     {
         .name = ITEM_NAME("Metagrossite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Metagross to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Metagross"),
         ITEM_ICON(Metagrossite),
     },
 
     [ITEM_LATIASITE] =
     {
         .name = ITEM_NAME("Latiasite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Latias to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Latias"),
         ITEM_ICON(Latiasite),
     },
 
     [ITEM_LATIOSITE] =
     {
         .name = ITEM_NAME("Latiosite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Latios to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Latios"),
         ITEM_ICON(Latiosite),
     },
 
     [ITEM_LOPUNNITE] =
     {
         .name = ITEM_NAME("Lopunnite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Lopunny to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Lopunny"),
         ITEM_ICON(Lopunnite),
     },
 
     [ITEM_GARCHOMPITE] =
     {
         .name = ITEM_NAME("Garchompite"),
-        MEGA_STONE_INFO,
-        .description = sGarchompiteDesc,
+        MEGA_STONE_INFO("Garchomp"),
         ITEM_ICON(Garchompite),
     },
 
     [ITEM_LUCARIONITE] =
     {
         .name = ITEM_NAME("Lucarionite"),
-        MEGA_STONE_INFO,
-        .description = sLucarioniteDesc,
+        MEGA_STONE_INFO("Lucario"),
         ITEM_ICON(Lucarionite),
     },
 
     [ITEM_ABOMASITE] =
     {
         .name = ITEM_NAME("Abomasite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Abomasnow to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Abomasnow"),
         ITEM_ICON(Abomasite),
     },
 
     [ITEM_GALLADITE] =
     {
         .name = ITEM_NAME("Galladite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Gallade to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Gallade"),
         ITEM_ICON(Galladite),
     },
 
     [ITEM_AUDINITE] =
     {
         .name = ITEM_NAME("Audinite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Audino to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Audino"),
         ITEM_ICON(Audinite),
     },
 
     [ITEM_DIANCITE] =
     {
         .name = ITEM_NAME("Diancite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Diancie to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Diancie"),
         ITEM_ICON(Diancite),
     },
 
     [ITEM_CLEFABLITE] =
     {
         .name = ITEM_NAME("Clefablite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Clefable to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Clefable"),
         ITEM_ICON(Clefablite),
     },
 
     [ITEM_VICTREEBELITE] =
     {
         .name = ITEM_NAME("Victreebelite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Victreebel to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Victreebel"),
         ITEM_ICON(Victreebelite),
     },
 
     [ITEM_STARMINITE] =
     {
         .name = ITEM_NAME("Starminite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Starmie to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Starmie"),
         ITEM_ICON(Starminite),
     },
 
     [ITEM_DRAGONINITE] =
     {
         .name = ITEM_NAME("Dragoninite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Dragonite to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Dragonite"),
         ITEM_ICON(Dragoninite),
     },
 
     [ITEM_MEGANIUMITE] =
     {
         .name = ITEM_NAME("Meganiumite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Meganium to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Meganium"),
         ITEM_ICON(Meganiumite),
     },
 
     [ITEM_FERALIGITE] =
     {
         .name = ITEM_NAME("Feraligite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Feraligatr to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Feraligatr"),
         ITEM_ICON(Feraligite),
     },
 
     [ITEM_SKARMORITE] =
     {
         .name = ITEM_NAME("Skarmorite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Skarmory to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Skarmory"),
         ITEM_ICON(Skarmorite),
     },
 
     [ITEM_FROSLASSITE] =
     {
         .name = ITEM_NAME("Froslassite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Froslass to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Froslass"),
         ITEM_ICON(Froslassite),
     },
 
     [ITEM_EMBOARITE] =
     {
         .name = ITEM_NAME("Emboarite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Emboar to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Emboar"),
         ITEM_ICON(Emboarite),
     },
 
     [ITEM_EXCADRITE] =
     {
         .name = ITEM_NAME("Excadrite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Excadrill to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Excadrill"),
         ITEM_ICON(Excadrite),
     },
 
     [ITEM_SCOLIPITE] =
     {
         .name = ITEM_NAME("Scolipite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Scolipede to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Scolipede"),
         ITEM_ICON(Scolipite),
     },
 
     [ITEM_SCRAFTINITE] =
     {
         .name = ITEM_NAME("Scraftinite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Scrafty to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Scrafty"),
         ITEM_ICON(Scraftinite),
     },
 
     [ITEM_EELEKTROSSITE] =
     {
         .name = ITEM_NAME("Eelektrossite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Eelektross to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Eelektross"),
         ITEM_ICON(Eelektrossite),
     },
 
     [ITEM_CHANDELURITE] =
     {
         .name = ITEM_NAME("Chandelurite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Chandelure to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Chandelure"),
         ITEM_ICON(Chandelurite),
     },
 
     [ITEM_CHESNAUGHTITE] =
     {
         .name = ITEM_NAME("Chesnaughtite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Chesnaught to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Chesnaught"),
         ITEM_ICON(Chesnaughtite),
     },
 
     [ITEM_DELPHOXITE] =
     {
         .name = ITEM_NAME("Delphoxite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Delphox to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Delphox"),
         ITEM_ICON(Delphoxite),
     },
 
     [ITEM_GRENINJITE] =
     {
         .name = ITEM_NAME("Greninjite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Greninja to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Greninja"),
         ITEM_ICON(Greninjite),
     },
 
     [ITEM_PYROARITE] =
     {
         .name = ITEM_NAME("Pyroarite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Pyroar to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Pyroar"),
         ITEM_ICON(Pyroarite),
     },
 
     [ITEM_FLOETTITE] =
     {
         .name = ITEM_NAME("Floettite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Floette to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Floette"),
         ITEM_ICON(Floettite),
     },
 
     [ITEM_MALAMARITE] =
     {
         .name = ITEM_NAME("Malamarite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Malamar to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Malamar"),
         ITEM_ICON(Malamarite),
     },
 
     [ITEM_BARBARACITE] =
     {
         .name = ITEM_NAME("Barbaracite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Barbaracle to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Barbaracle"),
         ITEM_ICON(Barbaracite),
     },
 
     [ITEM_DRAGALGITE] =
     {
         .name = ITEM_NAME("Dragalgite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Dragalge to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Dragalge"),
         ITEM_ICON(Dragalgite),
     },
 
     [ITEM_HAWLUCHANITE] =
     {
         .name = ITEM_NAME("Hawluchanite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Hawlucha to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Hawlucha"),
         ITEM_ICON(Hawluchanite),
     },
 
     [ITEM_ZYGARDITE] =
     {
         .name = ITEM_NAME("Zygardite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Zygarde to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Zygarde"),
         ITEM_ICON(Zygardite),
     },
 
     [ITEM_DRAMPANITE] =
     {
         .name = ITEM_NAME("Drampanite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Drampa to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Drampa"),
         ITEM_ICON(Drampanite),
     },
 
     [ITEM_FALINKSITE] =
     {
         .name = ITEM_NAME("Falinksite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Falinks to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Falinks"),
         ITEM_ICON(Falinksite),
     },
 
     [ITEM_HEATRANITE] =
     {
         .name = ITEM_NAME("Heatranite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Heatran to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Heatran"),
         ITEM_ICON(Heatranite),
     },
 
     [ITEM_DARKRANITE] =
     {
         .name = ITEM_NAME("Darkranite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Darkrai to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Darkrai"),
         ITEM_ICON(Darkranite),
     },
 
     [ITEM_ZERAORITE] =
     {
         .name = ITEM_NAME("Zeraorite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Zeraora to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Zeraora"),
         ITEM_ICON(Zeraorite),
     },
 
     [ITEM_RAICHUNITE_X] =
     {
         .name = ITEM_NAME("Raichunite X"),
-        MEGA_STONE_INFO,
-        .description = sRaichuniteDesc,
+        MEGA_STONE_INFO("Raichu"),
         ITEM_ICON(RaichuniteX),
     },
 
     [ITEM_RAICHUNITE_Y] =
     {
         .name = ITEM_NAME("Raichunite Y"),
-        MEGA_STONE_INFO,
-        .description = sRaichuniteDesc,
+        MEGA_STONE_INFO("Raichu"),
         ITEM_ICON(RaichuniteY),
     },
 
     [ITEM_CHIMECHITE] =
     {
         .name = ITEM_NAME("Chimechite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Chimecho to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Chimecho"),
         ITEM_ICON(Chimechite),
     },
 
     [ITEM_ABSOLITE_Z] =
     {
         .name = ITEM_NAME("Absolite Z"),
-        MEGA_STONE_INFO,
-        .description = sAbsoliteDesc,
+        MEGA_STONE_INFO("Absol"),
         ITEM_ICON(AbsoliteZ),
     },
 
     [ITEM_STARAPTITE] =
     {
         .name = ITEM_NAME("Staraptite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Staraptor to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Staraptor"),
         ITEM_ICON(Staraptite),
     },
 
     [ITEM_GARCHOMPITE_Z] =
     {
         .name = ITEM_NAME("Garchompite Z"),
-        MEGA_STONE_INFO,
-        .description = sGarchompiteDesc,
+        MEGA_STONE_INFO("Garchomp"),
         ITEM_ICON(GarchompiteZ),
     },
 
     [ITEM_LUCARIONITE_Z] =
     {
         .name = ITEM_NAME("Lucarionite Z"),
-        MEGA_STONE_INFO,
-        .description = sLucarioniteDesc,
+        MEGA_STONE_INFO("Lucario"),
         ITEM_ICON(LucarioniteZ),
     },
 
     [ITEM_GOLURKITE] =
     {
         .name = ITEM_NAME("Golurkite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Golurk to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Golurk"),
         ITEM_ICON(Golurkite),
     },
 
     [ITEM_MEOWSTICITE] =
     {
         .name = ITEM_NAME("Meowsticite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Meowstic to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Meowstic"),
         ITEM_ICON(Meowsticite),
     },
 
     [ITEM_CRABOMINITE] =
     {
         .name = ITEM_NAME("Crabominite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Crabominable to\n"
-            "Mega in battle."),
+        MEGA_STONE_INFO("Crabominable"),
         ITEM_ICON(Crabominite),
     },
 
     [ITEM_GOLISOPITE] =
     {
         .name = ITEM_NAME("Golisopite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Golisopod to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Golisopod"),
         ITEM_ICON(Golisopite),
     },
 
     [ITEM_MAGEARNITE] =
     {
         .name = ITEM_NAME("Magearnite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Magearna to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Magearna"),
         ITEM_ICON(Magearnite),
     },
 
     [ITEM_SCOVILLAINITE] =
     {
         .name = ITEM_NAME("Scovillainite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Scovillain to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Scovillain"),
         ITEM_ICON(Scovillainite),
     },
 
     [ITEM_BAXCALIBRITE] =
     {
         .name = ITEM_NAME("Baxcalibrite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Baxcalibur to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Baxcalibur"),
         ITEM_ICON(Baxcalibrite),
     },
 
     [ITEM_TATSUGIRINITE] =
     {
         .name = ITEM_NAME("Tatsugirinite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Tatsugiri to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Tatsugiri"),
         ITEM_ICON(Tatsugirinite),
     },
 
     [ITEM_GLIMMORANITE] =
     {
         .name = ITEM_NAME("Glimmoranite"),
-        MEGA_STONE_INFO,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Glimmora to Mega\n"
-            "Evolve in battle."),
+        MEGA_STONE_INFO("Glimmora"),
         ITEM_ICON(Glimmoranite),
     },
 
@@ -8378,7 +8028,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_ASSAULT_VEST] =
     {
         .name = ITEM_NAME("Assault Vest"),
-        .price = (I_PRICE >= GEN_9) ? 1000 : 1000,
+        .price = (I_PRICE >= GEN_9) ? 4000 : 1000,
         .holdEffect = HOLD_EFFECT_ASSAULT_VEST,
         .holdEffectParam = 50,
         .description = COMPOUND_STRING(

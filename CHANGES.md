@@ -2845,11 +2845,19 @@
 - Palkia:
     - Learns Dragon Claw by level up
 
+- Mega Heatran:
+    - Atk: 120->110
+    - Spe: 67->77
+
 - Regigigas:
     - Learns Rest, Endure, Headbutt, and Body Slam by level up
 
 - Giratina:
     - Level up learnset updated to be more consistent with Dialga and Palkia
+
+- Mega Darkrai:
+    - Atk: 120->90
+    - Spe: 85->115
 
 - Snivy:
     - Evolution: 17->16
@@ -3436,6 +3444,14 @@
     - Learns Mean Look, Tearful Look, Baby-Doll Eyes, and Psychic Noise by level up
     - Learns Extrasensory at level 39 and learns Energy Ball in its place at level 44
 
+- Mega Meowstic:
+    - HP: 74->75
+    - Atk: 48->50
+    - Def: 76->80
+    - SpA: 143->150
+    - SpD: 101->105
+    - Spe: 124->125
+
 - Honedge/Doublade/Aegislash:
     - Learn Metal Claw, Shadow Claw, and Smart Strike by level up
 
@@ -3693,6 +3709,14 @@
     - SpD: 67->70
     - Spe: 43->50
     - Learns Drain Punch and Icicle Crash by level up
+
+- Mega Crabominable:
+    - HP: 97->100
+    - Atk: 157->160
+    - Def: 122->125
+    - SpA: 62->65
+    - SpD: 107->110
+    - Spe: 33->40
 
 - Oricorio:
     - SpA: 98->100
@@ -4186,6 +4210,11 @@
     - Spe: 75->85
     - Learns Absorb, Ember, Mega Drain, Incinerate, Giga Drain, Flame Burst, Temper Flare, Leaf Blade, and Energy Ball by level up
     - Learns Earth Power and Nasty Plot by TM
+
+- Mega Scovillain:
+    - Atk: 138->140
+    - SpA: 138->140
+    - Spe: 75->85
 
 - Flittle:
     - Learns Psychic by level up

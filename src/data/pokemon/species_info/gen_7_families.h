@@ -1477,12 +1477,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_GEN_9_MEGA_EVOLUTIONS
     [SPECIES_CRABOMINABLE_MEGA] =
     {
-        .baseHP        = 97,
-        .baseAttack    = 157,
-        .baseDefense   = 122,
-        .baseSpeed     = 33,
-        .baseSpAttack  = 62,
-        .baseSpDefense = 107,
+        .baseHP        = 100,
+        .baseAttack    = 160,
+        .baseDefense   = 125,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 110,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_ICE),
         .catchRate = 60,
         .expYield = 167,

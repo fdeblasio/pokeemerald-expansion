@@ -3390,10 +3390,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     [SPECIES_SCOVILLAIN_MEGA] =
     {
         .baseHP        = 65,
-        .baseAttack    = 138,
+        .baseAttack    = 140,
         .baseDefense   = 85,
-        .baseSpeed     = 75,
-        .baseSpAttack  = 138,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 140,
         .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_GRASS, TYPE_FIRE),
         .catchRate = 75,

@@ -48,6 +48,8 @@ LilycoveCity_DepartmentStore_4F_EventScript_ClerkMegaStones::
 
 	.align 2
 LilycoveCity_DepartmentStore_4F_Pokemart_MegaStones:
+	.2byte ITEM_RAICHUNITE_X    @ 0026
+	.2byte ITEM_RAICHUNITE_Y    @ 0026
 	.2byte ITEM_ALAKAZITE       @ 0065
 	.2byte ITEM_STARMINITE      @ 0121
 	.2byte ITEM_PINSIRITE       @ 0127
@@ -69,7 +71,9 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStones:
 	.2byte ITEM_CAMERUPTITE     @ 0323
 	.2byte ITEM_ALTARIANITE     @ 0334
 	.2byte ITEM_BANETTITE       @ 0354
+	.2byte ITEM_CHIMECHITE      @ 0358
 	.2byte ITEM_ABSOLITE        @ 0359
+	.2byte ITEM_ABSOLITE_Z      @ 0359
 	.2byte ITEM_GLALITITE       @ 0362
 	.2byte ITEM_FROSLASSITE     @ 0362
 	.2byte ITEM_SALAMENCITE     @ 0373
@@ -85,8 +89,6 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_BLASTOISINITE   @ 0009
 	.2byte ITEM_BEEDRILLITE     @ 0015
 	.2byte ITEM_PIDGEOTITE      @ 0018
-	.2byte ITEM_NONE            @ 0026 Raichu X (move to regular shop when implemented)
-	.2byte ITEM_NONE            @ 0026 Raichu Y (move to regular shop when implemented)
 	.2byte ITEM_CLEFABLITE      @ 0036
 	.2byte ITEM_VICTREEBELITE   @ 0071
 	.2byte ITEM_SLOWBRONITE     @ 0080
@@ -102,19 +104,17 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_FERALIGITE      @ 0160 Battle Frontier
 	.2byte ITEM_AMPHAROSITE     @ 0181 Battle Frontier
 	.2byte ITEM_TYRANITARITE    @ 0248
-	.2byte ITEM_NONE            @ 0358 Chimecho (move to regular shop when implemented)
-	.2byte ITEM_NONE            @ 0359 Absol Z (move to regular shop when implemented)
 	.2byte ITEM_LATIASITE       @ 0380 Battle Frontier
 	.2byte ITEM_LATIOSITE       @ 0381 Battle Frontier
-	.2byte ITEM_NONE            @ 0398 Staraptor
+	.2byte ITEM_STARAPTITE      @ 0398
 	.2byte ITEM_LOPUNNITE       @ 0428
 	.2byte ITEM_GARCHOMPITE     @ 0445
-	.2byte ITEM_NONE            @ 0445 Garchomp Z
+	.2byte ITEM_GARCHOMPITE_Z   @ 0445
 	.2byte ITEM_LUCARIONITE     @ 0448
-	.2byte ITEM_NONE            @ 0448 Lucario Z
+	.2byte ITEM_LUCARIONITE_Z   @ 0448
 	.2byte ITEM_ABOMASITE       @ 0460
-	.2byte ITEM_NONE            @ 0485 Heatran
-	.2byte ITEM_NONE            @ 0491 Darkrai
+	.2byte ITEM_HEATRANITE      @ 0485
+	.2byte ITEM_DARKRANITE      @ 0491
 	.2byte ITEM_EMBOARITE       @ 0500
 	.2byte ITEM_EXCADRITE       @ 0530 Battle Frontier
 	.2byte ITEM_AUDINITE        @ 0531
@@ -122,29 +122,29 @@ LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
 	.2byte ITEM_SCRAFTINITE     @ 0560
 	.2byte ITEM_EELEKTROSSITE   @ 0604
 	.2byte ITEM_CHANDELURITE    @ 0609
-	.2byte ITEM_NONE            @ 0623 Golurk
+	.2byte ITEM_GOLURKITE       @ 0623
 	.2byte ITEM_CHESNAUGHTITE   @ 0652
 	.2byte ITEM_DELPHOXITE      @ 0655
 	.2byte ITEM_GRENINJITE      @ 0658
 	.2byte ITEM_PYROARITE       @ 0668
 	.2byte ITEM_FLOETTITE       @ 0670
-	.2byte ITEM_NONE            @ 0678 Meowstic
+	.2byte ITEM_MEOWSTICITE     @ 0678
 	.2byte ITEM_MALAMARITE      @ 0687
 	.2byte ITEM_BARBARACITE     @ 0689
 	.2byte ITEM_DRAGALGITE      @ 0691 Battle Frontier
 	.2byte ITEM_HAWLUCHANITE    @ 0701
 	.2byte ITEM_ZYGARDITE       @ 0718
 	.2byte ITEM_DIANCITE        @ 0719
-	.2byte ITEM_NONE            @ 0740 Crabominable
-	.2byte ITEM_NONE            @ 0768 Golisopod
+	.2byte ITEM_CRABOMINITE     @ 0740
+	.2byte ITEM_GOLISOPITE      @ 0768
 	.2byte ITEM_DRAMPANITE      @ 0780
-	.2byte ITEM_NONE            @ 0801 Magearna
-	.2byte ITEM_NONE            @ 0807 Zeraora
+	.2byte ITEM_MAGEARNITE      @ 0801
+	.2byte ITEM_ZERAORITE       @ 0807
 	.2byte ITEM_FALINKSITE      @ 0870
-	.2byte ITEM_NONE            @ 0952 Scovillain
-	.2byte ITEM_NONE            @ 0970 Glimmora
-	.2byte ITEM_NONE            @ 0978 Tatsugiri
-	.2byte ITEM_NONE            @ 0998 Baxcalibur
+	.2byte ITEM_SCOVILLAINITE   @ 0952
+	.2byte ITEM_GLIMMORANITE    @ 0970
+	.2byte ITEM_TATSUGIRINITE   @ 0978
+	.2byte ITEM_BAXCALIBRITE    @ 0998
 	pokemartlistend
 
 @ Rumored:

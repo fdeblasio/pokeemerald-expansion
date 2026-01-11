@@ -2923,14 +2923,17 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     },
 
 #if P_GEN_9_MEGA_EVOLUTIONS
+#define MEGA_MEOWSTIC_STATS \
+    .baseHP        = 75,    \
+    .baseAttack    = 50,    \
+    .baseDefense   = 80,    \
+    .baseSpAttack  = 150,   \
+    .baseSpDefense = 105,   \
+    .baseSpeed     = 125
+
     [SPECIES_MEOWSTIC_M_MEGA] =
     {
-        .baseHP        = 74,
-        .baseAttack    = 48,
-        .baseDefense   = 76,
-        .baseSpeed     = 124,
-        .baseSpAttack  = 143,
-        .baseSpDefense = 101,
+        MEGA_MEOWSTIC_STATS,
         .types = MON_TYPES(TYPE_PSYCHIC),
         .catchRate = 75,
         .expYield = 163,
@@ -2982,12 +2985,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 
     [SPECIES_MEOWSTIC_F_MEGA] =
     {
-        .baseHP        = 74,
-        .baseAttack    = 48,
-        .baseDefense   = 76,
-        .baseSpeed     = 124,
-        .baseSpAttack  = 143,
-        .baseSpDefense = 101,
+        MEGA_MEOWSTIC_STATS,
         .types = MON_TYPES(TYPE_PSYCHIC),
         .catchRate = 75,
         .expYield = 163,

@@ -7029,9 +7029,9 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     [SPECIES_HEATRAN_MEGA] =
     {
         .baseHP        = 91,
-        .baseAttack    = 120,
+        .baseAttack    = 110,
         .baseDefense   = 106,
-        .baseSpeed     = 67,
+        .baseSpeed     = 77,
         .baseSpAttack  = 175,
         .baseSpDefense = 141,
         .types = MON_TYPES(TYPE_FIRE, TYPE_STEEL),
@@ -7652,9 +7652,9 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     [SPECIES_DARKRAI_MEGA] =
     {
         .baseHP        = 70,
-        .baseAttack    = 120,
+        .baseAttack    = 90,
         .baseDefense   = 130,
-        .baseSpeed     = 85,
+        .baseSpeed     = 115,
         .baseSpAttack  = 165,
         .baseSpDefense = 130,
         .types = MON_TYPES(TYPE_DARK),

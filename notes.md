@@ -102,8 +102,6 @@ upcoming
 - Pacifidlog:
 - Victory Road:
     - Vito can use TMs
-- Ever Grande:
-    - Macro to ensure that E4 battle environments and type ones share properties except palette
 - Other:
     - Diversify Safari Zone water/fishing encounters
     - Clear up trainer spots by having just one set of gym leader rematches?
@@ -210,7 +208,6 @@ upcoming
 
 ### Moves
 - Aqua Ring heals more with Water Bubble? In rain?
-- Consolidate Ever Grande tutor code
 - Add regular moves with GMax effects?
 - Find way for Rotom to learn special moves by level up (for relearning). Currently have TMs, but not all moves (Hydro Pump/Leaf Storm) are TMs
     - This gets solved if the TM list is expanded to have Scarlet and Violet's

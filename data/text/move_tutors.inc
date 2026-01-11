@@ -232,24 +232,8 @@ MoveTutor_Text_ExplosionTaught:
 	.string "Maybe it's because deep down,\n"
 	.string "I would rather stay here…$"
 
-MoveTutor_Text_HyperVoiceTeach:
-	.string "Do you want me to teach Hyper Voice\n"
-	.string "to one of your Pokémon?$"
-
-MoveTutor_Text_AquaTailTeach:
-	.string "Do you want me to teach Aqua Tail\n"
-	.string "to one of your Pokémon?$"
-
-MoveTutor_Text_DrillRunTeach:
-	.string "Do you want me to teach Drill Run\n"
-	.string "to one of your Pokémon?$"
-
-MoveTutor_Text_HighHorsepowerTeach:
-	.string "Do you want me to teach High Horsepower\n"
-	.string "to one of your Pokémon?$"
-
-MoveTutor_Text_TemperFlareTeach:
-	.string "Do you want me to teach Temper Flare\n"
+MoveTutor_Text_EverGrandeTeach:
+	.string "Do you want me to teach {STR_VAR_1}\n"
 	.string "to one of your Pokémon?$"
 
 MoveTutor_Text_EverGrandeDeclined:

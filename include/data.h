@@ -192,7 +192,7 @@ struct Trainer
 #define STEVEN_INFO                      \
     .trainerName = _("Steven"),          \
     .trainerClass = TRAINER_CLASS_RIVAL, \
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
 
 #define STEVEN_METAGROSS(Level)                                 \
     .lvl = Level,                                               \

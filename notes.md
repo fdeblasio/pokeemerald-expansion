@@ -208,6 +208,8 @@ upcoming
     - Add Speed increasing natures to Triathletes
 - Use Good Ruby's palette shifting to give trainers more unique looks? (https://github.com/Doesnty/goodruby/commit/ff53bbab592865b49f345342205b41cb869abf27)
 - Gym leaders/Steven/Breeders can have Hidden Abilities
+- Add encounter music to Trainer Class struct?
+    - Maybe keep in Trainer so it can still be customized, but used the Trainer Class value as a default
 - Update Gabby and Ty to have rematches blocked by badges, like other trainers
     - Old logic didn't work:
         - Doesn't work for cheat start because the flags get cleared after gym battles

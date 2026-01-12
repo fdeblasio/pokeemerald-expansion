@@ -2,7 +2,7 @@
 {
     .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
     .trainerPic = TRAINER_PIC_BACK_BRENDAN,
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
     .partySize = 0,
     .party = (const struct TrainerMon[])
     {

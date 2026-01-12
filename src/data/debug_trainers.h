@@ -15,7 +15,7 @@
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
 #line 17
         .trainerPic = TRAINER_PIC_FRONT_BRENDAN,
-        .encounterMusic_gender =
+        .encounterMusic =
 #line 19
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 0
@@ -57,7 +57,7 @@
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 36
         .trainerPic = TRAINER_PIC_FRONT_STEVEN,
-        .encounterMusic_gender =
+        .encounterMusic =
 #line 38
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 35

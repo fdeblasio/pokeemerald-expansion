@@ -3755,8 +3755,8 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 
 #define TRIATHLETE_M_RUNNING_INFO                         \
     .trainerClass = TRAINER_CLASS_TRIATHLETE,             \
-    .trainerPic = TRAINER_ENCOUNTER_MUSIC_MALE, \
-    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE
+    .trainerPic = TRAINER_PIC_FRONT_RUNNING_TRIATHLETE_M, \
+    .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE
 
 #define TRIATHLETE_M_SWIMMING_INFO                         \
     .trainerClass = TRAINER_CLASS_TRIATHLETE,              \

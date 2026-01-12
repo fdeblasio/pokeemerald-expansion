@@ -51,7 +51,7 @@
 - Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)
 - Battles in New Mauville start with Electric Terrain
 - Battles in long grass on Routes 119 and 120 start with Grassy Terrain (unless it's a thunderstorm)
-- Contest opponents from ORAS were added
+- Contest opponents from RS and ORAS were added
 - There is now a Special Rank for contests after Master Rank. It functions the same as Master Rank but has more unique opponents
 
 ### Overworld:

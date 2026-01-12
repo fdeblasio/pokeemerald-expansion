@@ -59,7 +59,6 @@ upcoming
 ### Next playthrough
 - Rustboro:
 - Dewford:
-    - Reduce Surf slots to just 3? (Variety will come from all the routes with water)
     - Get Exp. Share from Steven instead of from Mr. Stone after
         - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game
             - It isn't on by default though, so could still be Steven
@@ -72,25 +71,28 @@ upcoming
     - Update last Mt. Chimney pair to be based off grunts and change text to "douse in sand"?
 - Petalburg:
     - Norman's Spinda's left ear might be off?
+    - Reduce Surf slots to just 3? (Variety will come from all the routes with water)
 - Lilycove:
-    - Edit contests?/Contests overhaul
-        - Better sprite for Lisia
+    - Edit contests
+        - Better overworld sprite for Lisia
+        - Update ORAS opponent stats
         - Add unique ideas to Special Rank
-        - Utilize non-trainer/other important GFX
-            - weird guy
-            - Devon employee/the similar MAN_2
-            - Mr. Stone
-            - Guitarist/Kindler (now that current ones have been replaced with Psychic GFX)
-            - Wally
-            - Interviewer/Cameraman (can use Gabby and Ty)
-            - Birch
-            - Scott
-            - NPC: BOY_2, BOY_3, LITTLE_GIRL, MAN_1, MART_EMPLOYEE, MOM, REPORTER_M, ROOFTOP_SALE_WOMAN
-                - GAMEBOY_KID and UNION_ROOM_NURSE don't have a walking animation
-            - Gym Leaders/Elite Four/Frontier Brains
-                - Drake and possibly others don't have a walking animation
-            - Trainers using the cosplay Pikachus
-            - A Malamar with a trainer (would need back sprite and new mon entry)
+            - Utilize non-trainer/other important GFX
+                - weird guy
+                - Devon employee/the similar MAN_2
+                - Mr. Stone
+                - Guitarist/Kindler (now that current ones have been replaced with Psychic GFX)
+                - Wally
+                - Interviewer/Cameraman (can use Gabby and Ty)
+                - Birch
+                - Scott
+                - NPC: BOY_2, BOY_3, LITTLE_GIRL, MAN_1, MART_EMPLOYEE, MOM, REPORTER_M, ROOFTOP_SALE_WOMAN
+                    - GAMEBOY_KID and UNION_ROOM_NURSE don't have a walking animation
+                - Gym Leaders/Elite Four/Frontier Brains
+                    - Drake and possibly others don't have a walking animation
+                - Trainers using the cosplay Pikachus
+                - A Malamar with a trainer (would need back sprite and new mon entry)
+                - A trainer with a Pokemon named after them (but with Jr. at the end to not trigger the Jacobus text)
         - Update audience (ContestHall_EventScript_CreateAudience and ContestHall_EventScript_AddRandomAudienceMembers)
             - Wallace and/or Oranguru could be in early ones for foreshadowing
             - Add some of the special NPCs listed above

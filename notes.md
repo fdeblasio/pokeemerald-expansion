@@ -171,8 +171,13 @@ upcoming
         - Would need to update gym palette
         - Mr. Rime could be a good hack signature if he becomes Ice
     - Swap Juan and Glacia and turn Juan into Grass specialist?
-    - Turn Team Magma into Ground specialists (Camerupt still works as other people like Winona and Sidney use the secondary typing for their aces)?
+    - Turn Team Magma into fully Ground specialists (Camerupt still works as other people like Winona use the secondary typing for their aces)?
         - Would cancel out the addition of Houndoom?
+    - Currently missing specialists:
+        - Bug
+        - Grass
+        - Fairy
+        - Poison
 - Add level defines per route/group of routes?
 - Added species defines for Madeline/Laurel?
 - Update Tabitha (and maybe others?) macros to use Magma levels instead of Rematch levels?

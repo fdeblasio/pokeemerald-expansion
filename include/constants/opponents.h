@@ -913,7 +913,7 @@
 #define TRAINER_THOMAS                    827
 #define TRAINER_PHILLIP                   828
 #define TRAINER_LEONARD                   829
-//Other
+//Frontier Brains
 #define TRAINER_ANABEL                    830
 #define TRAINER_TUCKER                    831
 #define TRAINER_SPENSER                   832
@@ -921,32 +921,34 @@
 #define TRAINER_NOLAND                    834
 #define TRAINER_LUCY                      835
 #define TRAINER_BRANDON                   836
-#define TRAINER_RED                       837
-#define TRAINER_LEAF                      838
-#define TRAINER_BRENDAN_PLACEHOLDER       839
-#define TRAINER_MAY_PLACEHOLDER           840
-#define TRAINER_DUDLEY                    841
-#define TRAINER_KAYLEE                    842
-#define TRAINER_TERRY                     843
-#define TRAINER_UNUSED_1                  844
-#define TRAINER_UNUSED_2                  845
-#define TRAINER_UNUSED_3                  846
-#define TRAINER_UNUSED_4                  847
-#define TRAINER_UNUSED_5                  848
-#define TRAINER_UNUSED_6                  849
-#define TRAINER_UNUSED_7                  850
-#define TRAINER_UNUSED_8                  851
-#define TRAINER_UNUSED_9                  852
-#define TRAINER_UNUSED_10                 853
-#define TRAINER_UNUSED_11                 854
-#define TRAINER_UNUSED_12                 855
-#define TRAINER_UNUSED_13                 856
-#define TRAINER_UNUSED_14                 857
-#define TRAINER_UNUSED_15                 858
-#define TRAINER_UNUSED_16                 859
-#define TRAINER_UNUSED_17                 860
-#define TRAINER_UNUSED_18                 861
-#define TRAINER_UNUSED_19                 862
+//Battle Frontier new
+#define TRAINER_BRENDAN_POSTGAME          837
+#define TRAINER_MAY_POSTGAME              838
+#define TRAINER_MAXIE_POSTGAME            839
+#define TRAINER_ARCHIE_POSTGAME           840
+//Other
+#define TRAINER_RED                       841
+#define TRAINER_LEAF                      842
+#define TRAINER_BRENDAN_PLACEHOLDER       843
+#define TRAINER_MAY_PLACEHOLDER           844
+#define TRAINER_DUDLEY                    845
+#define TRAINER_KAYLEE                    846
+#define TRAINER_TERRY                     847
+#define TRAINER_UNUSED_1                  848
+#define TRAINER_UNUSED_2                  849
+#define TRAINER_UNUSED_3                  850
+#define TRAINER_UNUSED_4                  851
+#define TRAINER_UNUSED_5                  852
+#define TRAINER_UNUSED_6                  853
+#define TRAINER_UNUSED_7                  854
+#define TRAINER_UNUSED_8                  855
+#define TRAINER_UNUSED_9                  856
+#define TRAINER_UNUSED_10                 857
+#define TRAINER_UNUSED_11                 858
+#define TRAINER_UNUSED_12                 859
+#define TRAINER_UNUSED_13                 860
+#define TRAINER_UNUSED_14                 861
+#define TRAINER_UNUSED_15                 862
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled

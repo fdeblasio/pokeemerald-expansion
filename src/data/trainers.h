@@ -17801,6 +17801,55 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     },
 },
 
+//Battle Frontier new
+[DIFFICULTY_NORMAL][TRAINER_BRENDAN_POSTGAME] =
+{
+    BRENDAN_INFO,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 5,
+        .species = SPECIES_NONE,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_MAY_POSTGAME] =
+{
+    MAY_INFO,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 5,
+        .species = SPECIES_NONE,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_MAXIE_POSTGAME] =
+{
+    MAXIE_INFO,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 5,
+        .species = SPECIES_NONE,
+        }
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_ARCHIE_POSTGAME] =
+{
+    ARCHIE_INFO,
+    .partySize = 1,
+    .party = (const struct TrainerMon[]) {
+        {
+        .lvl = 5,
+        .species = SPECIES_NONE,
+        }
+    },
+},
+
 //Other
 [DIFFICULTY_NORMAL][TRAINER_RED] =
 {
@@ -17947,6 +17996,3 @@ UNUSED_TRAINER(13),
 UNUSED_TRAINER(14),
 UNUSED_TRAINER(15),
 UNUSED_TRAINER(16),
-UNUSED_TRAINER(17),
-UNUSED_TRAINER(18),
-UNUSED_TRAINER(19),

@@ -51,6 +51,8 @@
 - Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)
 - Battles in New Mauville start with Electric Terrain
 - Battles in long grass on Routes 119 and 120 start with Grassy Terrain (unless it's a thunderstorm)
+- Contest opponents from ORAS were added
+- There is now a Special Rank for contests after Master Rank. It functions the same as Master Rank but has more unique opponents
 
 ### Overworld:
 - Faster walking/surfing speed
@@ -78,7 +80,7 @@
 - The naming screen automatically swaps to lowercase after the first letter
 - Premier Balls are now given for every multiple of 10 of any ball you buy (as opposed to only 1 for 10+ Poke Balls)
 - Two Pokémon having the same original trainer no longer negatively affects breeding chances
-- All characters are now eligible for a Walda wallpaper
+- All text characters are now eligible for a Walda wallpaper
 - Can now use Soot Sack to see how much ash you have
 - Ash collects in non-grass tiles as well now
 - Much easier to make good Pokéblocks
@@ -115,7 +117,12 @@
 
 ### Items:
 - Eviolite now prevents Pokémon from evolving
-- Healing items go back to their values before their Gen7 nerf, except the Super Potion which stays at its higher Gen7+ value of 60
+- Buffs to healing items:
+    - Hyper Potion: 120->200
+    - Fresh Water: 30->50
+    - Soda Pop: 50->60
+    - Lemonade: 70->80
+    - Energy Root: 120->200
 - Some items, such as vitamins and hold items, are cheaper
 - Ability Capsules, Ability Patches, Mints, and EV-reducing berries are available to buy in Lilycove
 - The Good Rod is now obtained on the left side of Route 118 instead of the right, meaning it is available before getting Surf

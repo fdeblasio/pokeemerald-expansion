@@ -74,6 +74,7 @@ upcoming
     - Norman's Spinda's left ear might be off?
 - Lilycove:
     - Edit contests?/Contests overhaul
+        - Better sprite for Lisia
         - Add unique ideas to Special Rank
         - Utilize non-trainer/other important GFX
             - weird guy
@@ -107,8 +108,9 @@ upcoming
     - Clear up trainer spots by having just one set of gym leader rematches?
         - Now that gym/Wally rematches are more consistent, the only difference is the level and a couple moves, so not really a point to having as many rematches
         - Even just reducing to two or three rematches would save space
-        - For each badge after 5, one less rematch (for example, any trainer fought past Winona would have one less rematch)
-            - Would John and Jay/Nicolas get no rematches in that case?
+    - For each badge after 5, one less rematch (for example, any trainer fought past Winona would have one less rematch)
+        - Would John and Jay/Nicolas get no rematches in that case?
+        - Should the final rematch be after the Elite Four instead of after Gym 8? All 5th rematches would need to be buffed
     - Add Abilities to single ability and TRAINER_MON_NONE to genderless to make more constistent
     - Add trailing commas wherever possible
     - Remove BP costs so that script_menu.h and field_specials.c can use item/move names directly?

@@ -573,7 +573,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Hyper Potion"),
         .price = (I_PRICE >= GEN_2 && I_PRICE <= GEN_6) ? 1200 : 1500,
-        .holdEffectParam = 120,
+        .holdEffectParam = 200,
         .description = COMPOUND_STRING(
             "Restores the HP of\n"
             "a Pokémon by\n"
@@ -670,7 +670,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Fresh Water"),
         .price = 200,
-        .holdEffectParam = 30,
+        .holdEffectParam = 50,
         .description = COMPOUND_STRING(
             "A mineral water\n"
             "that restores HP\n"
@@ -693,7 +693,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Soda Pop"),
         .price = 300,
-        .holdEffectParam = 50,
+        .holdEffectParam = 60,
         .description = COMPOUND_STRING(
             "A fizzy soda drink\n"
             "that restores HP\n"
@@ -716,7 +716,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Lemonade"),
         .price = (I_PRICE >= GEN_7) ? 400 : 350,
-        .holdEffectParam = 70,
+        .holdEffectParam = 80,
         .description = COMPOUND_STRING(
             "A very sweet drink\n"
             "that restores HP\n"
@@ -764,7 +764,7 @@ const struct ItemInfo gItemsInfo[] =
         #if I_HEALTH_RECOVERY >= GEN_7
             "by 60 points."),
         #else
-            "by 50 points."),
+            "by 60 points."),
         #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,

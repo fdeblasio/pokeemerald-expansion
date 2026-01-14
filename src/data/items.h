@@ -2723,6 +2723,10 @@ const struct ItemInfo gItemsInfo[] =
     },
 
 // Fossils
+#define FOSSIL_INFO                               \
+    .type = ITEM_USE_BAG_MENU,                    \
+    .fieldUseFunc = ItemUseOutOfBattle_CannotUse, \
+    .flingPower = 100
 
     [ITEM_HELIX_FOSSIL] =
     {
@@ -2740,9 +2744,7 @@ const struct ItemInfo gItemsInfo[] =
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
     #endif
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 100,
+        FOSSIL_INFO,
         .iconPic = gItemIcon_HelixFossil,
         .iconPalette = gItemIconPalette_KantoFossil,
     },
@@ -2763,9 +2765,7 @@ const struct ItemInfo gItemsInfo[] =
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
     #endif
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 100,
+        FOSSIL_INFO,
         .iconPic = gItemIcon_DomeFossil,
         .iconPalette = gItemIconPalette_KantoFossil,
     },
@@ -2786,9 +2786,7 @@ const struct ItemInfo gItemsInfo[] =
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
     #endif
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 100,
+        FOSSIL_INFO,
         ITEM_ICON(OldAmber),
     },
 
@@ -2805,9 +2803,7 @@ const struct ItemInfo gItemsInfo[] =
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
     #endif
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 100,
+        FOSSIL_INFO,
         .iconPic = gItemIcon_RootFossil,
         .iconPalette = gItemIconPalette_HoennFossil,
     },
@@ -2825,9 +2821,7 @@ const struct ItemInfo gItemsInfo[] =
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
     #endif
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 100,
+        FOSSIL_INFO,
         .iconPic = gItemIcon_ClawFossil,
         .iconPalette = gItemIconPalette_HoennFossil,
     },
@@ -2842,9 +2836,7 @@ const struct ItemInfo gItemsInfo[] =
             "mon's head."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FOSSIL,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 100,
+        FOSSIL_INFO,
         ITEM_ICON(ArmorFossil),
     },
 
@@ -2858,9 +2850,7 @@ const struct ItemInfo gItemsInfo[] =
             "mon's collar."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FOSSIL,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 100,
+        FOSSIL_INFO,
         ITEM_ICON(SkullFossil),
     },
 
@@ -2874,9 +2864,7 @@ const struct ItemInfo gItemsInfo[] =
             "mon's back."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FOSSIL,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 100,
+        FOSSIL_INFO,
         ITEM_ICON(CoverFossil),
     },
 
@@ -2890,9 +2878,7 @@ const struct ItemInfo gItemsInfo[] =
             "mon's wing."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FOSSIL,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 100,
+        FOSSIL_INFO,
         ITEM_ICON(PlumeFossil),
     },
 
@@ -2906,9 +2892,7 @@ const struct ItemInfo gItemsInfo[] =
             "mon's large jaw."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FOSSIL,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 100,
+        FOSSIL_INFO,
         ITEM_ICON(JawFossil),
     },
 
@@ -2922,9 +2906,7 @@ const struct ItemInfo gItemsInfo[] =
             "mon's skin sail."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FOSSIL,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 100,
+        FOSSIL_INFO,
         ITEM_ICON(SailFossil),
     },
 
@@ -2938,9 +2920,7 @@ const struct ItemInfo gItemsInfo[] =
             "soaring Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FOSSIL,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 100,
+        FOSSIL_INFO,
         ITEM_ICON(FossilizedBird),
     },
 
@@ -2952,10 +2932,8 @@ const struct ItemInfo gItemsInfo[] =
         .description = sFossilizedFishDesc,
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FOSSIL,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 100,
-        ITEM_ICON(FossilizedFish),
+        FOSSIL_INFO,
+        ITEM_ICON(FossilizedDrake),
     },
 
     [ITEM_FOSSILIZED_DRAKE] =
@@ -2968,10 +2946,8 @@ const struct ItemInfo gItemsInfo[] =
             "roaming Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FOSSIL,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 100,
-        ITEM_ICON(FossilizedDrake),
+        FOSSIL_INFO,
+        ITEM_ICON(FossilizedFish),
     },
 
     [ITEM_FOSSILIZED_DINO] =
@@ -2981,9 +2957,7 @@ const struct ItemInfo gItemsInfo[] =
         .description = sFossilizedFishDesc,
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FOSSIL,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 100,
+        FOSSIL_INFO,
         ITEM_ICON(FossilizedDino),
     },
 

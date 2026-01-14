@@ -50,7 +50,6 @@
     .battleIntroSlide = BattleIntroSlide3
 
 // Plain values. USED for BATTLE_ENVIRONMENT_PLAIN as well as BATTLE_ENVIRONMENT_RAYQUAZA
-// (BATTLE_ENVIRONMENT_SKY_PILLAR wasn't introduced until Gen6, so Sky Pillar's roof counts as a Route which uses Plain)
 #if B_NATURE_POWER_MOVES >= GEN_6
     #define PLAIN_NATURE_POWER MOVE_TRI_ATTACK
 #elif B_NATURE_POWER_MOVES >= GEN_4
@@ -84,6 +83,24 @@
         .background = ENVIRONMENT_BACKGROUND(Rayquaza), \
         .palette = gBattleEnvironmentPalette_Rayquaza,  \
         .battleIntroSlide = PLAIN_BATTLE_INTRO_SLIDE,   \
+    }
+
+#define WETLAND_ENVIRONMENT(Name)                                    \
+    {                                                                \
+        .name = _(Name),                                             \
+        .naturePower = MOVE_MUD_BOMB,                                \
+        .secretPowerAnimation = gBattleAnimMove_MudShot,             \
+        .secretPowerEffect = MOVE_EFFECT_SPD_MINUS_1,                \
+        .camouflageType = TYPE_GROUND,                               \
+        .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,                 \
+        .background =                                                \
+        {                                                            \
+            .tileset = gBattleEnvironmentTiles_Underwater,           \
+            .tilemap = gBattleEnvironmentTilemap_Underwater,         \
+            .entryTileset = gBattleEnvironmentAnimTiles_PondWater,   \
+            .entryTilemap = gBattleEnvironmentAnimTilemap_PondWater, \
+            .palette = gBattleEnvironmentPalette_PondWater,          \
+        },                                                           \
     }
 
 const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] =
@@ -332,6 +349,150 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .palette = gBattleEnvironmentPalette_StadiumWallace,
     },
 
+    [BATTLE_ENVIRONMENT_GROUDON] =
+    {
+        .name = _("Groudon"),
+        CAVE_ENVIRONMENT,
+        .entry = ENVIRONMENT_ENTRY(Cave),
+        .background = ENVIRONMENT_BACKGROUND(Cave),
+        .palette = gBattleEnvironmentPalette_Groudon,
+        .battleIntroSlide = CAVE_BATTLE_INTRO_SLIDE,
+    },
+
+    [BATTLE_ENVIRONMENT_KYOGRE] =
+    {
+        .name = _("Kyogre"),
+        CAVE_ENVIRONMENT,
+        .entry = ENVIRONMENT_ENTRY(Underwater),
+        .background = ENVIRONMENT_BACKGROUND(Water),
+        .palette = gBattleEnvironmentPalette_Kyogre,
+        .battleIntroSlide = BattleIntroSlide2,
+    },
+
+    [BATTLE_ENVIRONMENT_RAYQUAZA] = SKY_PILLAR_ENVIRONMENT("Rayquaza"),
+    [BATTLE_ENVIRONMENT_SOARING] = SKY_PILLAR_ENVIRONMENT("Soaring"),
+    [BATTLE_ENVIRONMENT_SKY_PILLAR] = SKY_PILLAR_ENVIRONMENT("Sky Pillar"),
+
+    [BATTLE_ENVIRONMENT_BURIAL_GROUND] =
+    {
+        .name = _("Burial Ground"),
+        .naturePower = MOVE_SHADOW_BALL,
+        .secretPowerAnimation = gBattleAnimMove_ShadowSneak,
+        .secretPowerEffect = MOVE_EFFECT_FLINCH,
+        .camouflageType = TYPE_GHOST,
+        .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
+        .entry = ENVIRONMENT_ENTRY(Building),
+        .background = ENVIRONMENT_BACKGROUND(Building),
+        .palette = gBattleEnvironmentPalette_BurialGround,
+        .battleIntroSlide = PLAIN_BATTLE_INTRO_SLIDE,
+    },
+
+    [BATTLE_ENVIRONMENT_PUDDLE] =
+    {
+        .name = _("Puddle"),
+        .naturePower = MOVE_MUD_BOMB,
+        .secretPowerAnimation = B_SECRET_POWER_ANIMATION >= GEN_5 ? gBattleAnimMove_MudShot : gBattleAnimMove_MudSlap,
+        .secretPowerEffect = B_SECRET_POWER_EFFECT >= GEN_5 ? MOVE_EFFECT_SPD_MINUS_1 : MOVE_EFFECT_ACC_MINUS_1,
+        .camouflageType = TYPE_GROUND,
+        .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
+        .entry = ENVIRONMENT_ENTRY(PondWater),
+        .background = ENVIRONMENT_BACKGROUND(PondWater),
+        .palette = gBattleEnvironmentPalette_PondWater,
+    },
+
+    [BATTLE_ENVIRONMENT_MARSH] = WETLAND_ENVIRONMENT("Marsh"),
+    [BATTLE_ENVIRONMENT_SWAMP] = WETLAND_ENVIRONMENT("Swamp"),
+
+    [BATTLE_ENVIRONMENT_SNOW] =
+    {
+        .name = _("Snow"),
+    #if B_NATURE_POWER_MOVES >= GEN_7
+        .naturePower = MOVE_ICE_BEAM,
+    #elif B_NATURE_POWER_MOVES == GEN_6
+        .naturePower = MOVE_FROST_BREATH,
+    #else
+        .naturePower = MOVE_BLIZZARD,
+    #endif
+        .secretPowerAnimation = B_SECRET_POWER_ANIMATION >= GEN_7 ? gBattleAnimMove_IceShard : gBattleAnimMove_Avalanche,
+        .secretPowerEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
+        .camouflageType = TYPE_ICE,
+        .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
+        .entry = ENVIRONMENT_ENTRY(Sand),
+        .background = ENVIRONMENT_BACKGROUND(Sand),
+        .palette = gBattleEnvironmentPalette_Ice,
+        .battleIntroSlide = BattleIntroSlide2,
+    },
+
+    [BATTLE_ENVIRONMENT_ICE] =
+    {
+        .name = _("Ice"),
+        .naturePower = MOVE_ICE_BEAM,
+        .secretPowerAnimation = gBattleAnimMove_IceShard,
+        .secretPowerEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
+        .camouflageType = TYPE_ICE,
+        .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
+        .entry = ENVIRONMENT_ENTRY(Cave),
+        .background = ENVIRONMENT_BACKGROUND(Cave),
+        .palette = gBattleEnvironmentPalette_Ice,
+        .battleIntroSlide = CAVE_BATTLE_INTRO_SLIDE
+    },
+
+    [BATTLE_ENVIRONMENT_VOLCANO] =
+    {
+        .name = _("Volcano"),
+        .naturePower = MOVE_LAVA_PLUME,
+        .secretPowerAnimation = gBattleAnimMove_Incinerate,
+        .secretPowerEffect = MOVE_EFFECT_BURN,
+        .camouflageType = TYPE_FIRE,
+        .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
+        .entry = ENVIRONMENT_ENTRY(Rock),
+        .background = ENVIRONMENT_BACKGROUND(Rock),
+        .palette = gBattleEnvironmentPalette_Volcano,
+        .battleIntroSlide = BattleIntroSlide1,
+    },
+
+    [BATTLE_ENVIRONMENT_DISTORTION_WORLD] =
+    {
+        .name = _("Distortion World"),
+        .naturePower = MOVE_TRI_ATTACK,
+        .secretPowerAnimation = gBattleAnimMove_Pound,
+        .secretPowerEffect = MOVE_EFFECT_PARALYSIS,
+        .camouflageType = TYPE_NORMAL,
+        .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
+        .entry = ENVIRONMENT_ENTRY(Building),
+        .background = ENVIRONMENT_BACKGROUND(Stadium),
+        .palette = gBattleEnvironmentPalette_StadiumDark,
+        .battleIntroSlide = BattleIntroSlide3,
+    },
+
+    [BATTLE_ENVIRONMENT_SPACE] =
+    {
+        .name = _("Space"),
+        .naturePower = MOVE_DRACO_METEOR,
+        .secretPowerAnimation = gBattleAnimMove_Swift,
+        .secretPowerEffect = MOVE_EFFECT_FLINCH,
+        .camouflageType = TYPE_DRAGON,
+        .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
+        .entry = ENVIRONMENT_ENTRY(Building),
+        .background = ENVIRONMENT_BACKGROUND(Stadium),
+        .palette = gBattleEnvironmentPalette_StadiumDark,
+        .battleIntroSlide = BattleIntroSlide3,
+    },
+
+    [BATTLE_ENVIRONMENT_ULTRA_SPACE] =
+    {
+        .name = _("Ultra Space"),
+        .naturePower = MOVE_PSYSHOCK,
+        .secretPowerAnimation = gBattleAnimMove_Psywave,
+        .secretPowerEffect = MOVE_EFFECT_DEF_MINUS_1,
+        .camouflageType = TYPE_PSYCHIC,
+        .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
+        .entry = ENVIRONMENT_ENTRY(Building),
+        .background = ENVIRONMENT_BACKGROUND(Stadium),
+        .palette = gBattleEnvironmentPalette_StadiumDark,
+        .battleIntroSlide = BattleIntroSlide3,
+    },
+
     [BATTLE_ENVIRONMENT_TYPE_DARK] =
     {
         BUILDING_ENVIRONMENT,
@@ -371,182 +532,6 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .background = ENVIRONMENT_BACKGROUND(Stadium),
         .palette = gBattleEnvironmentPalette_StadiumRock,
     },
-
-    [BATTLE_ENVIRONMENT_GROUDON] =
-    {
-        .name = _("Groudon"),
-        CAVE_ENVIRONMENT,
-        .entry = ENVIRONMENT_ENTRY(Cave),
-        .background = ENVIRONMENT_BACKGROUND(Cave),
-        .palette = gBattleEnvironmentPalette_Groudon,
-        .battleIntroSlide = CAVE_BATTLE_INTRO_SLIDE,
-    },
-
-    [BATTLE_ENVIRONMENT_KYOGRE] =
-    {
-        .name = _("Kyogre"),
-        CAVE_ENVIRONMENT,
-        .entry = ENVIRONMENT_ENTRY(Underwater),
-        .background = ENVIRONMENT_BACKGROUND(Water),
-        .palette = gBattleEnvironmentPalette_Kyogre,
-        .battleIntroSlide = BattleIntroSlide2,
-    },
-
-    [BATTLE_ENVIRONMENT_RAYQUAZA] = SKY_PILLAR_ENVIRONMENT("Rayquaza"),
-    [BATTLE_ENVIRONMENT_SOARING] = SKY_PILLAR_ENVIRONMENT("Soaring"),
-    [BATTLE_ENVIRONMENT_SKY_PILLAR] = SKY_PILLAR_ENVIRONMENT("Sky Pillar"),
-
-    [BATTLE_ENVIRONMENT_BURIAL_GROUND] =
-    {
-        .name = _("Burial Ground"),
-        .naturePower = MOVE_SHADOW_BALL,
-        .secretPowerAnimation = gBattleAnimMove_ShadowSneak,
-        .secretPowerEffect = MOVE_EFFECT_FLINCH,
-        .camouflageType = TYPE_GHOST,
-        .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
-        .background = BUILDING_BACKGROUND(Building, BurialGround),
-        .battleIntroSlide = BattleIntroSlide3,
-    },
-
-    [BATTLE_ENVIRONMENT_PUDDLE] =
-    {
-        .name = _("Puddle"),
-        .naturePower = MOVE_MUD_BOMB,
-        .secretPowerAnimation = B_SECRET_POWER_ANIMATION >= GEN_5 ? gBattleAnimMove_MudShot : gBattleAnimMove_MudSlap,
-        .secretPowerEffect = B_SECRET_POWER_EFFECT >= GEN_5 ? MOVE_EFFECT_SPD_MINUS_1 : MOVE_EFFECT_ACC_MINUS_1,
-        .camouflageType = TYPE_GROUND,
-        .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
-        .background = ENVIRONMENT_BACKGROUND(PondWater),
-    },
-
-    [BATTLE_ENVIRONMENT_MARSH] =
-    {
-        .name = _("Marsh"),
-        .naturePower = MOVE_MUD_BOMB,
-        .secretPowerAnimation = gBattleAnimMove_MudShot,
-        .secretPowerEffect = MOVE_EFFECT_SPD_MINUS_1,
-        .camouflageType = TYPE_GROUND,
-        .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
-        .background =
-        {
-            .tileset = gBattleEnvironmentTiles_Underwater,
-            .tilemap = gBattleEnvironmentTilemap_Underwater,
-            .entryTileset = gBattleEnvironmentAnimTiles_PondWater,
-            .entryTilemap = gBattleEnvironmentAnimTilemap_PondWater,
-            .palette = gBattleEnvironmentPalette_PondWater,
-        },
-    },
-
-    [BATTLE_ENVIRONMENT_SWAMP] =
-    {
-        .name = _("Swamp"),
-        .naturePower = MOVE_MUD_BOMB,
-        .secretPowerAnimation = gBattleAnimMove_MudShot,
-        .secretPowerEffect = MOVE_EFFECT_SPD_MINUS_1,
-        .camouflageType = TYPE_GROUND,
-        .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
-        .background =
-        {
-            .tileset = gBattleEnvironmentTiles_Underwater,
-            .tilemap = gBattleEnvironmentTilemap_Underwater,
-            .entryTileset = gBattleEnvironmentAnimTiles_PondWater,
-            .entryTilemap = gBattleEnvironmentAnimTilemap_PondWater,
-            .palette = gBattleEnvironmentPalette_PondWater,
-        },
-    },
-
-    [BATTLE_ENVIRONMENT_SNOW] =
-    {
-        .name = _("Snow"),
-    #if B_NATURE_POWER_MOVES >= GEN_7
-        .naturePower = MOVE_ICE_BEAM,
-    #elif B_NATURE_POWER_MOVES == GEN_6
-        .naturePower = MOVE_FROST_BREATH,
-    #else
-        .naturePower = MOVE_BLIZZARD,
-    #endif
-        .secretPowerAnimation = B_SECRET_POWER_ANIMATION >= GEN_7 ? gBattleAnimMove_IceShard : gBattleAnimMove_Avalanche,
-        .secretPowerEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
-        .camouflageType = TYPE_ICE,
-        .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
-        .background =
-        {
-            .tileset = gBattleEnvironmentTiles_Sand,
-            .tilemap = gBattleEnvironmentTilemap_Sand,
-            .entryTileset = gBattleEnvironmentAnimTiles_Sand,
-            .entryTilemap = gBattleEnvironmentAnimTilemap_Sand,
-            .palette = gBattleEnvironmentPalette_StadiumIce,
-        },
-    },
-
-    [BATTLE_ENVIRONMENT_ICE] =
-    {
-        .name = _("Ice"),
-        .naturePower = MOVE_ICE_BEAM,
-        .secretPowerAnimation = gBattleAnimMove_IceShard,
-        .secretPowerEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
-        .camouflageType = TYPE_ICE,
-        .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
-        .background =
-        {
-            .tileset = gBattleEnvironmentTiles_Cave,
-            .tilemap = gBattleEnvironmentTilemap_Cave,
-            .entryTileset = gBattleEnvironmentAnimTiles_Cave,
-            .entryTilemap = gBattleEnvironmentAnimTilemap_Cave,
-            .palette = gBattleEnvironmentPalette_StadiumIce,
-        },
-    },
-
-    [BATTLE_ENVIRONMENT_VOLCANO] =
-    {
-        .name = _("Volcano"),
-        .naturePower = MOVE_LAVA_PLUME,
-        .secretPowerAnimation = gBattleAnimMove_Incinerate,
-        .secretPowerEffect = MOVE_EFFECT_BURN,
-        .camouflageType = TYPE_FIRE,
-        .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
-        .background =
-        {
-            .tileset = gBattleEnvironmentTiles_Rock,
-            .tilemap = gBattleEnvironmentTilemap_Rock,
-            .entryTileset = gBattleEnvironmentAnimTiles_Rock,
-            .entryTilemap = gBattleEnvironmentAnimTilemap_Rock,
-            .palette = gBattleEnvironmentPalette_StadiumMagma,
-        },
-    },
-
-    [BATTLE_ENVIRONMENT_DISTORTION_WORLD] =
-    {
-        .name = _("Distortion World"),
-        .naturePower = MOVE_TRI_ATTACK,
-        .secretPowerAnimation = gBattleAnimMove_Pound,
-        .secretPowerEffect = MOVE_EFFECT_PARALYSIS,
-        .camouflageType = TYPE_NORMAL,
-        .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
-        .background = BUILDING_BACKGROUND(Stadium, StadiumDark),
-    },
-
-    [BATTLE_ENVIRONMENT_SPACE] =
-    {
-        .name = _("Space"),
-        .naturePower = MOVE_DRACO_METEOR,
-        .secretPowerAnimation = gBattleAnimMove_Swift,
-        .secretPowerEffect = MOVE_EFFECT_FLINCH,
-        .camouflageType = TYPE_DRAGON,
-        .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
-        .background = BUILDING_BACKGROUND(Stadium, StadiumDark),
-    },
-
-    [BATTLE_ENVIRONMENT_ULTRA_SPACE] =
-    {
-        .name = _("Ultra Space"),
-        .naturePower = MOVE_PSYSHOCK,
-        .secretPowerAnimation = gBattleAnimMove_Psywave,
-        .secretPowerEffect = MOVE_EFFECT_DEF_MINUS_1,
-        .camouflageType = TYPE_PSYCHIC,
-        .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
-        .background = BUILDING_BACKGROUND(Stadium, StadiumDark),
-    },
 };
 
 #define MAP_BATTLE_SCENE_TO_BATTLE_ENVIRONMENT(Type) {MAP_BATTLE_SCENE_##Type, BATTLE_ENVIRONMENT_##Type}
@@ -563,5 +548,6 @@ static const struct {
     {MAP_BATTLE_SCENE_GLACIA, BATTLE_ENVIRONMENT_TYPE_ICE},
     MAP_BATTLE_SCENE_TO_BATTLE_ENVIRONMENT(DRAKE),
     MAP_BATTLE_SCENE_TO_BATTLE_ENVIRONMENT(FRONTIER),
-    MAP_BATTLE_SCENE_TO_BATTLE_ENVIRONMENT(SKY_PILLAR)
+    MAP_BATTLE_SCENE_TO_BATTLE_ENVIRONMENT(SKY_PILLAR),
+    MAP_BATTLE_SCENE_TO_BATTLE_ENVIRONMENT(VOLCANO),
 };

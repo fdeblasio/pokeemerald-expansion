@@ -157,6 +157,7 @@ upcoming
     - Water 1/2/3
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
 - Add more indicators of shiniess in wild battles in case sparkles are missed
+- Releasing a Pokemon gives you the ball back?
 
 ### Items
 - Max Elixir (and others?) should stay on party screen like Full Restores do
@@ -300,15 +301,12 @@ upcoming
 - Add caves and more areas to Safari Zone for more postgame mons
     - Make them themed like ice and fire. Maybe can add legendaries
 - Battle Environments:
-    - Mt. Chimney and/or Fiery Path should use Volcano?
-        - Safari Zone Fire Cave too
-    - Should Magma Hideout use the unused Magma battle environment?
-    - Shoal Cave bottom floor and Safari Zone ice cave should use Ice battle environment
-        - Ice's palette looks mostly good except for the player's tile being a different color than the opponent's
-        - Might need to copy it and fix up that one error
-    - In ORAS, Sky Pillar gets Air Slash, but in RSE it just gets a regular cave
-    - Should the Puddle environment get used for puddles?
-    - Ice/Volcano/Puddle would need better palettes/potentially different, non-building tiles/need slide intros
+    - Should Magma Hideout use the unused Magma battle environment? Currently uses Volcano
+    - Ice/Volcano/Puddle need better palettes/need slide intros
+        - Ice and Volcano's player side has been fixed but the palettes overall could be better
+            - Ice can use ice/ice cave tile colors
+            - Volcano is trickier since the volcano areas are seemingly just the same caves and mountains
+        - Intro graphics need their palette updated (seemingly lines 36-47)
 - Add FRLG trainer sprites/overworld sprites
     - Sprites are added but still need to be implemented. Overworld sprites may need palettes
 - Add accurate overworld sprites (https://github.com/pret/pokeemerald/wiki/Adding-new-event-object-or-overworld-sprites, https://www.pokecommunity.com/showthread.php?t=407124)
@@ -436,6 +434,7 @@ upcoming
     - Elite Four where each one is based on either a terrain and/or weather
         - For combos, Sunny/Grassy Terrain, Rainy/Electric Terrain
         - Weather kind of copies Magma/Aqua though
+    - Oranguru as a Trainer
 - All Yellow Pokémon:
     - Yellow shinies (Lickitung, Altaria, Luxray, Bellibolt, etc) replacing the regular palette
         - Change Pokédex colors to match

@@ -309,9 +309,8 @@ upcoming
     - In ORAS, Sky Pillar gets Air Slash, but in RSE it just gets a regular cave
     - Should the Puddle environment get used for puddles?
     - Ice/Volcano/Puddle would need better palettes/potentially different, non-building tiles/need slide intros
-- Make Regi caves only one room?
 - Add FRLG trainer sprites/overworld sprites
-    - Sprites are added but still need to be implemented. Overworld sprites may have duplicates for Pokémon and may need palettes
+    - Sprites are added but still need to be implemented. Overworld sprites may need palettes
 - Add accurate overworld sprites (https://github.com/pret/pokeemerald/wiki/Adding-new-event-object-or-overworld-sprites, https://www.pokecommunity.com/showthread.php?t=407124)
     - Overworld sprites to match trainer sprites (for example, Rangers red clothes, Dragon Tamers capes and correct hair color, or Rich Boys correct clothes and hair color)
 - Replace Pokémon overworld sprites with follower sprites

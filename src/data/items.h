@@ -2988,12 +2988,19 @@ const struct ItemInfo gItemsInfo[] =
     },
 
 // Mulch
+#define MULCH_INFO                                \
+    .price = 200,                                 \
+    .pocket = POCKET_ITEMS,                       \
+    .sortType = ITEM_TYPE_GROWTH,                 \
+    .type = ITEM_USE_BAG_MENU,                    \
+    .fieldUseFunc = ItemUseOutOfBattle_CannotUse, \
+    .flingPower = 30
 
     [ITEM_GROWTH_MULCH] =
     {
         .name = ITEM_NAME("Growth Mulch"),
         .pluralName = ITEM_PLURAL_NAME("Growth Mulch"),
-        .price = 200,
+        MULCH_INFO,
     #if OW_BERRY_MULCH_USAGE == TRUE
         .description = COMPOUND_STRING(
             "A fertilizer that\n"
@@ -3002,12 +3009,7 @@ const struct ItemInfo gItemsInfo[] =
     #else
         .description = sGenericMulchDesc,
     #endif
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_GROWTH,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = ITEM_TO_MULCH(ITEM_GROWTH_MULCH),
-        .flingPower = 30,
         .iconPic = gItemIcon_Mulch,
         .iconPalette = gItemIconPalette_GrowthMulch,
     },
@@ -3016,7 +3018,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Damp Mulch"),
         .pluralName = ITEM_PLURAL_NAME("Damp Mulch"),
-        .price = 200,
+        MULCH_INFO,
     #if OW_BERRY_MULCH_USAGE == TRUE
         .description = COMPOUND_STRING(
             "A fertilizer that\n"
@@ -3025,12 +3027,7 @@ const struct ItemInfo gItemsInfo[] =
     #else
         .description = sGenericMulchDesc,
     #endif
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_GROWTH,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = ITEM_TO_MULCH(ITEM_DAMP_MULCH),
-        .flingPower = 30,
         .iconPic = gItemIcon_Mulch,
         .iconPalette = gItemIconPalette_DampMulch,
     },
@@ -3039,7 +3036,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Stable Mulch"),
         .pluralName = ITEM_PLURAL_NAME("Stable Mulch"),
-        .price = 200,
+        MULCH_INFO,
     #if OW_BERRY_MULCH_USAGE == TRUE
         .description = COMPOUND_STRING(
             "A fertilizer that\n"
@@ -3048,12 +3045,7 @@ const struct ItemInfo gItemsInfo[] =
     #else
         .description = sGenericMulchDesc,
     #endif
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_GROWTH,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = ITEM_TO_MULCH(ITEM_STABLE_MULCH),
-        .flingPower = 30,
         ITEM_ICON(StableMulch),
     },
 
@@ -3061,7 +3053,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Gooey Mulch"),
         .pluralName = ITEM_PLURAL_NAME("Gooey Mulch"),
-        .price = 200,
+        MULCH_INFO,
     #if OW_BERRY_MULCH_USAGE == TRUE
         .description = COMPOUND_STRING(
             "A fertilizer that\n"
@@ -3070,12 +3062,7 @@ const struct ItemInfo gItemsInfo[] =
     #else
         .description = sGenericMulchDesc,
     #endif
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_GROWTH,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = ITEM_TO_MULCH(ITEM_GOOEY_MULCH),
-        .flingPower = 30,
         .iconPic = gItemIcon_Mulch,
         .iconPalette = gItemIconPalette_GooeyMulch,
     },
@@ -3084,7 +3071,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Rich Mulch"),
         .pluralName = ITEM_PLURAL_NAME("Rich Mulch"),
-        .price = 200,
+        MULCH_INFO,
     #if OW_BERRY_MULCH_USAGE == TRUE
         .description = COMPOUND_STRING(
             "A fertilizer that\n"
@@ -3093,12 +3080,7 @@ const struct ItemInfo gItemsInfo[] =
     #else
         .description = sGenericMulchDesc,
     #endif
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_GROWTH,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = ITEM_TO_MULCH(ITEM_RICH_MULCH),
-        .flingPower = 30,
         .iconPic = gItemIcon_Mulch,
         .iconPalette = gItemIconPalette_RichMulch,
     },
@@ -3107,7 +3089,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Surprise Mulch"),
         .pluralName = ITEM_PLURAL_NAME("Surprise Mulch"),
-        .price = 200,
+        MULCH_INFO,
     #if OW_BERRY_MULCH_USAGE == TRUE
         .description = COMPOUND_STRING(
             "A fertilizer that\n"
@@ -3116,12 +3098,7 @@ const struct ItemInfo gItemsInfo[] =
     #else
         .description = sGenericMulchDesc,
     #endif
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_GROWTH,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = ITEM_TO_MULCH(ITEM_SURPRISE_MULCH),
-        .flingPower = 30,
         .iconPic = gItemIcon_Mulch,
         .iconPalette = gItemIconPalette_SurpriseMulch,
     },
@@ -3130,7 +3107,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Boost Mulch"),
         .pluralName = ITEM_PLURAL_NAME("Boost Mulch"),
-        .price = 200,
+        MULCH_INFO,
     #if OW_BERRY_MULCH_USAGE == TRUE
         .description = COMPOUND_STRING(
             "A fertilizer that\n"
@@ -3139,12 +3116,7 @@ const struct ItemInfo gItemsInfo[] =
     #else
         .description = sGenericMulchDesc,
     #endif
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_GROWTH,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = ITEM_TO_MULCH(ITEM_BOOST_MULCH),
-        .flingPower = 30,
         .iconPic = gItemIcon_Mulch,
         .iconPalette = gItemIconPalette_BoostMulch,
     },
@@ -3153,7 +3125,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Amaze Mulch"),
         .pluralName = ITEM_PLURAL_NAME("Amaze Mulch"),
-        .price = 200,
+        MULCH_INFO,
     #if OW_BERRY_MULCH_USAGE == TRUE
         .description = COMPOUND_STRING(
             "A fertilizer Rich\n"
@@ -3162,12 +3134,7 @@ const struct ItemInfo gItemsInfo[] =
     #else
         .description = sGenericMulchDesc,
     #endif
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_GROWTH,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = ITEM_TO_MULCH(ITEM_AMAZE_MULCH),
-        .flingPower = 30,
         .iconPic = gItemIcon_Mulch,
         .iconPalette = gItemIconPalette_AmazeMulch,
     },
@@ -3181,116 +3148,77 @@ const struct ItemInfo gItemsInfo[] =
         #define APRICORN_PRICE 0
     #endif
 
+#define APRICORN_INFO(Color)                      \
+    .name = ITEM_NAME(#Color " Apricorn"),        \
+    .price = APRICORN_PRICE,                      \
+    .pocket = POCKET_ITEMS,                       \
+    .sortType = ITEM_TYPE_GROWTH,                 \
+    .type = ITEM_USE_BAG_MENU,                    \
+    .fieldUseFunc = ItemUseOutOfBattle_CannotUse, \
+    .iconPic = gItemIcon_Apricorn,                \
+    .iconPalette = gItemIconPalette_##Color##Apricorn
+
     [ITEM_RED_APRICORN] =
     {
-        .name = ITEM_NAME("Red Apricorn"),
-        .price = APRICORN_PRICE,
+        APRICORN_INFO(Red),
         .description = COMPOUND_STRING(
             "A red apricorn.\n"
             "It assails your\n"
             "nostrils."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_GROWTH,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .iconPic = gItemIcon_Apricorn,
-        .iconPalette = gItemIconPalette_RedApricorn,
     },
 
     [ITEM_BLUE_APRICORN] =
     {
-        .name = ITEM_NAME("Blue Apricorn"),
-        .price = APRICORN_PRICE,
+        APRICORN_INFO(Blue),
         .description = COMPOUND_STRING(
             "A blue apricorn.\n"
             "It smells a bit\n"
             "like grass."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_GROWTH,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .iconPic = gItemIcon_Apricorn,
-        .iconPalette = gItemIconPalette_BlueApricorn,
     },
 
     [ITEM_YELLOW_APRICORN] =
     {
-        .name = ITEM_NAME("Yellow Apricorn"),
-        .price = APRICORN_PRICE,
+        APRICORN_INFO(Yellow),
         .description = COMPOUND_STRING(
             "A yellow apricorn.\n"
             "It has an invigor-\n"
             "ating scent."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_GROWTH,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .iconPic = gItemIcon_Apricorn,
-        .iconPalette = gItemIconPalette_YellowApricorn,
     },
 
     [ITEM_GREEN_APRICORN] =
     {
-        .name = ITEM_NAME("Green Apricorn"),
-        .price = APRICORN_PRICE,
+        APRICORN_INFO(Green),
         .description = COMPOUND_STRING(
             "A green apricorn.\n"
             "It has a strange,\n"
             "aromatic scent."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_GROWTH,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .iconPic = gItemIcon_Apricorn,
-        .iconPalette = gItemIconPalette_GreenApricorn,
     },
 
     [ITEM_PINK_APRICORN] =
     {
-        .name = ITEM_NAME("Pink Apricorn"),
-        .price = APRICORN_PRICE,
+        APRICORN_INFO(Pink),
         .description = COMPOUND_STRING(
             "A pink apricorn.\n"
             "It has a nice,\n"
             "sweet scent."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_GROWTH,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .iconPic = gItemIcon_Apricorn,
-        .iconPalette = gItemIconPalette_PinkApricorn,
     },
 
     [ITEM_WHITE_APRICORN] =
     {
-        .name = ITEM_NAME("White Apricorn"),
-        .price = APRICORN_PRICE,
+        APRICORN_INFO(White),
         .description = COMPOUND_STRING(
             "A white apricorn.\n"
             "It doesn't smell\n"
             "like anything."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_GROWTH,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .iconPic = gItemIcon_Apricorn,
-        .iconPalette = gItemIconPalette_WhiteApricorn,
     },
 
     [ITEM_BLACK_APRICORN] =
     {
-        .name = ITEM_NAME("Black Apricorn"),
-        .price = APRICORN_PRICE,
+        APRICORN_INFO(Black),
         .description = COMPOUND_STRING(
             "A black apricorn.\n"
             "It has an inde-\n"
             "scribable scent."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_GROWTH,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .iconPic = gItemIcon_Apricorn,
-        .iconPalette = gItemIconPalette_BlackApricorn,
     },
 
     [ITEM_WISHING_PIECE] =

@@ -94,6 +94,9 @@ const u32 gBattleEnvironmentAnimTilemap_Building[] = INCBIN_U32("graphics/battle
 const u32 gBattleEnvironmentAnimTiles_Rayquaza[] = INCBIN_U32("graphics/battle_environment/sky/anim_tiles.4bpp.smol");
 const u32 gBattleEnvironmentAnimTilemap_Rayquaza[] = INCBIN_U32("graphics/battle_environment/sky/anim_map.bin.smolTM");
 
+<<<<<<< HEAD
 const u16 gBattleEnvironmentPalette_BurialGround[] = INCBIN_U16("graphics/battle_environment/burial_ground/palette.gbapal");
+=======
+>>>>>>> 961a9644c0 (Updated battle environments)
 const u16 gBattleEnvironmentPalette_Ice[] = INCBIN_U16("graphics/battle_environment/cave/ice.gbapal");
 const u16 gBattleEnvironmentPalette_Volcano[] = INCBIN_U16("graphics/battle_environment/rock/volcano.gbapal");

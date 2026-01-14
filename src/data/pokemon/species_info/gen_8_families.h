@@ -6096,15 +6096,30 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_CUFANT
 
+#define GALAR_FOSSIL_HP  90
+#define GALAR_FOSSIL_ATK 90
+#define GALAR_FOSSIL_DEF 90
+#define GALAR_FOSSIL_SPA 70
+#define GALAR_FOSSIL_SPD 70
+#define GALAR_FOSSIL_SPE 55
+
+#define ZOLT_ATK 10
+#define ZOLT_SPA 10
+#define VISH_DEF 10
+#define VISH_SPD 10
+#define DRACO_SPE 20
+#define ARCTO_SPA 10
+#define ARCTO_SPD 10
+
 #if P_FAMILY_DRACOZOLT
     [SPECIES_DRACOZOLT] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 100,
-        .baseDefense   = 90,
-        .baseSpeed     = 75,
-        .baseSpAttack  = 80,
-        .baseSpDefense = 70,
+        .baseHP        = GALAR_FOSSIL_HP,
+        .baseAttack    = GALAR_FOSSIL_ATK + ZOLT_ATK,
+        .baseDefense   = GALAR_FOSSIL_DEF,
+        .baseSpeed     = GALAR_FOSSIL_SPE + DRACO_SPE,
+        .baseSpAttack  = GALAR_FOSSIL_SPA + ZOLT_SPA,
+        .baseSpDefense = GALAR_FOSSIL_SPD,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_DRAGON),
         .catchRate = 45,
         .expYield = 177,
@@ -6164,12 +6179,12 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_ARCTOZOLT
     [SPECIES_ARCTOZOLT] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 100,
-        .baseDefense   = 90,
-        .baseSpeed     = 55,
-        .baseSpAttack  = 90,
-        .baseSpDefense = 80,
+        .baseHP        = GALAR_FOSSIL_HP,
+        .baseAttack    = GALAR_FOSSIL_ATK + ZOLT_ATK,
+        .baseDefense   = GALAR_FOSSIL_DEF,
+        .baseSpeed     = GALAR_FOSSIL_SPE,
+        .baseSpAttack  = GALAR_FOSSIL_SPA + ARCTO_SPA + ZOLT_SPA,
+        .baseSpDefense = GALAR_FOSSIL_SPD + ARCTO_SPD,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_ICE),
         .catchRate = 45,
         .expYield = 177,
@@ -6228,12 +6243,12 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_DRACOVISH
     [SPECIES_DRACOVISH] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 90,
-        .baseDefense   = 100,
-        .baseSpeed     = 75,
-        .baseSpAttack  = 70,
-        .baseSpDefense = 80,
+        .baseHP        = GALAR_FOSSIL_HP,
+        .baseAttack    = GALAR_FOSSIL_ATK,
+        .baseDefense   = GALAR_FOSSIL_DEF + VISH_DEF,
+        .baseSpeed     = GALAR_FOSSIL_SPE + DRACO_SPE,
+        .baseSpAttack  = GALAR_FOSSIL_SPA,
+        .baseSpDefense = GALAR_FOSSIL_SPD + VISH_SPD,
         .types = MON_TYPES(TYPE_WATER, TYPE_DRAGON),
         .catchRate = 45,
         .expYield = 177,
@@ -6293,12 +6308,12 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_ARCTOVISH
     [SPECIES_ARCTOVISH] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 90,
-        .baseDefense   = 100,
-        .baseSpeed     = 55,
-        .baseSpAttack  = 80,
-        .baseSpDefense = 90,
+        .baseHP        = GALAR_FOSSIL_HP,
+        .baseAttack    = GALAR_FOSSIL_ATK,
+        .baseDefense   = GALAR_FOSSIL_DEF + VISH_DEF,
+        .baseSpeed     = GALAR_FOSSIL_SPE,
+        .baseSpAttack  = GALAR_FOSSIL_SPA + ARCTO_SPA,
+        .baseSpDefense = GALAR_FOSSIL_SPD + ARCTO_SPD + VISH_SPD,
         .types = MON_TYPES(TYPE_WATER, TYPE_ICE),
         .catchRate = 45,
         .expYield = 177,

@@ -1331,6 +1331,7 @@ const struct ItemInfo gItemsInfo[] =
 
 // EV Feathers
 #define FEATHER_INFO(feather)                    \
+    .name = ITEM_NAME(#feather " Feather"),      \
     .price = (I_PRICE >= GEN_7) ? 300 : 3000,    \
     .description = s##feather##FeatherDesc,      \
     .pocket = POCKET_ITEMS,                      \
@@ -1343,42 +1344,36 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HEALTH_FEATHER] =
     {
-        .name = ITEM_NAME("Health Feather"),
         FEATHER_INFO(Health),
         .effect = gItemEffect_HpFeather,
     },
 
     [ITEM_MUSCLE_FEATHER] =
     {
-        .name = ITEM_NAME("Muscle Feather"),
         FEATHER_INFO(Muscle),
         .effect = gItemEffect_AtkFeather,
     },
 
     [ITEM_RESIST_FEATHER] =
     {
-        .name = ITEM_NAME("Resist Feather"),
         FEATHER_INFO(Resist),
         .effect = gItemEffect_DefFeather,
     },
 
     [ITEM_GENIUS_FEATHER] =
     {
-        .name = ITEM_NAME("Genius Feather"),
         FEATHER_INFO(Genius),
         .effect = gItemEffect_SpatkFeather,
     },
 
     [ITEM_CLEVER_FEATHER] =
     {
-        .name = ITEM_NAME("Clever Feather"),
         FEATHER_INFO(Clever),
         .effect = gItemEffect_SpdefFeather,
     },
 
     [ITEM_SWIFT_FEATHER] =
     {
-        .name = ITEM_NAME("Swift Feather"),
         FEATHER_INFO(Swift),
         .effect = gItemEffect_SpeedFeather,
     },
@@ -2487,43 +2482,27 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_Shell,
     },
 
-#define SHARD_INFO(color)                         \
-    .price = (I_PRICE >= GEN_7) ? 1000 : 200,     \
-    .description = COMPOUND_STRING(               \
-        "A shard from an\n"                       \
-        "ancient item. Can\n"                     \
-        "be sold cheaply."),                      \
-    .pocket = POCKET_ITEMS,                       \
-    .sortType = ITEM_TYPE_SHARD,                  \
-    .type = ITEM_USE_BAG_MENU,                    \
-    .fieldUseFunc = ItemUseOutOfBattle_CannotUse, \
-    .flingPower = 30,                             \
-    .iconPic = gItemIcon_Shard,                   \
-    .iconPalette = gItemIconPalette_##color##Shard
+#define SHARD_INFO(color)                               \
+    {                                                   \
+        .name = ITEM_NAME(#color " Shard"),             \
+        .price = (I_PRICE >= GEN_7) ? 1000 : 200,       \
+        .description = COMPOUND_STRING(                 \
+            "A shard from an\n"                         \
+            "ancient item. Can\n"                       \
+            "be sold cheaply."),                        \
+        .pocket = POCKET_ITEMS,                         \
+        .sortType = ITEM_TYPE_SHARD,                    \
+        .type = ITEM_USE_BAG_MENU,                      \
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,   \
+        .flingPower = 30,                               \
+        .iconPic = gItemIcon_Shard,                     \
+        .iconPalette = gItemIconPalette_##color##Shard, \
+    }
 
-    [ITEM_RED_SHARD] =
-    {
-        .name = ITEM_NAME("Red Shard"),
-        SHARD_INFO(Red)
-    },
-
-    [ITEM_BLUE_SHARD] =
-    {
-        .name = ITEM_NAME("Blue Shard"),
-        SHARD_INFO(Blue)
-    },
-
-    [ITEM_YELLOW_SHARD] =
-    {
-        .name = ITEM_NAME("Yellow Shard"),
-        SHARD_INFO(Yellow)
-    },
-
-    [ITEM_GREEN_SHARD] =
-    {
-        .name = ITEM_NAME("Green Shard"),
-        SHARD_INFO(Green)
-    },
+    [ITEM_RED_SHARD]    = SHARD_INFO(Red),
+    [ITEM_BLUE_SHARD]   = SHARD_INFO(Blue),
+    [ITEM_YELLOW_SHARD] = SHARD_INFO(Yellow),
+    [ITEM_GREEN_SHARD]  = SHARD_INFO(Green),
 
     [ITEM_HEART_SCALE] =
     {
@@ -3382,239 +3361,160 @@ const struct ItemInfo gItemsInfo[] =
     },
 
 // Mail
-#define MAIL_INFO               \
-    .price = 50,                \
-    .pocket = POCKET_ITEMS,     \
-    .sortType = ITEM_TYPE_MAIL, \
-    .type = ITEM_USE_MAIL,      \
-    .fieldUseFunc = ItemUseOutOfBattle_Mail
+#define MAIL_INFO(mail)                            \
+    .name = ITEM_NAME(#mail " Mail"),              \
+    .pluralName = ITEM_PLURAL_NAME(#mail " Mail"), \
+    .price = 50,                                   \
+    .pocket = POCKET_ITEMS,                        \
+    .sortType = ITEM_TYPE_MAIL,                    \
+    .type = ITEM_USE_MAIL,                         \
+    .fieldUseFunc = ItemUseOutOfBattle_Mail,       \
+    ITEM_ICON(mail##Mail)
 
     [ITEM_ORANGE_MAIL] =
     {
-        .name = ITEM_NAME("Orange Mail"),
-        .pluralName = ITEM_PLURAL_NAME("Orange Mail"),
+        MAIL_INFO(Orange),
         .description = COMPOUND_STRING(
             "A Zigzagoon-print\n"
             "Mail to be held by\n"
             "a Pokémon."),
-        MAIL_INFO,
         .secondaryId = ITEM_TO_MAIL(ITEM_ORANGE_MAIL),
-        ITEM_ICON(OrangeMail),
     },
 
     [ITEM_HARBOR_MAIL] =
     {
-        .name = ITEM_NAME("Harbor Mail"),
-        .pluralName = ITEM_PLURAL_NAME("Harbor Mail"),
+        MAIL_INFO(Harbor),
         .description = COMPOUND_STRING(
             "A Wingull-print\n"
             "Mail to be held by\n"
             "a Pokémon."),
-        MAIL_INFO,
         .secondaryId = ITEM_TO_MAIL(ITEM_HARBOR_MAIL),
-        ITEM_ICON(HarborMail),
     },
 
     [ITEM_GLITTER_MAIL] =
     {
-        .name = ITEM_NAME("Glitter Mail"),
-        .pluralName = ITEM_PLURAL_NAME("Glitter Mail"),
+        MAIL_INFO(Glitter),
         .description = COMPOUND_STRING(
             "A Pikachu-print\n"
             "Mail to be held by\n"
             "a Pokémon."),
-        MAIL_INFO,
         .secondaryId = ITEM_TO_MAIL(ITEM_GLITTER_MAIL),
-        ITEM_ICON(GlitterMail),
     },
 
     [ITEM_MECH_MAIL] =
     {
-        .name = ITEM_NAME("Mech Mail"),
-        .pluralName = ITEM_PLURAL_NAME("Mech Mail"),
+        MAIL_INFO(Mech),
         .description = COMPOUND_STRING(
             "A Magnemite-print\n"
             "Mail to be held by\n"
             "a Pokémon."),
-        MAIL_INFO,
         .secondaryId = ITEM_TO_MAIL(ITEM_MECH_MAIL),
-        ITEM_ICON(MechMail),
     },
 
     [ITEM_WOOD_MAIL] =
     {
-        .name = ITEM_NAME("Wood Mail"),
-        .pluralName = ITEM_PLURAL_NAME("Wood Mail"),
+        MAIL_INFO(Wood),
         .description = COMPOUND_STRING(
             "A Slakoth-print\n"
             "Mail to be held by\n"
             "a Pokémon."),
-        MAIL_INFO,
         .secondaryId = ITEM_TO_MAIL(ITEM_WOOD_MAIL),
-        ITEM_ICON(WoodMail),
     },
 
     [ITEM_WAVE_MAIL] =
     {
-        .name = ITEM_NAME("Wave Mail"),
-        .pluralName = ITEM_PLURAL_NAME("Wave Mail"),
+        MAIL_INFO(Wave),
         .description = COMPOUND_STRING(
             "A Wailmer-print\n"
             "Mail to be held by\n"
             "a Pokémon."),
-        MAIL_INFO,
         .secondaryId = ITEM_TO_MAIL(ITEM_WAVE_MAIL),
-        ITEM_ICON(WaveMail),
     },
 
     [ITEM_BEAD_MAIL] =
     {
-        .name = ITEM_NAME("Bead Mail"),
-        .pluralName = ITEM_PLURAL_NAME("Bead Mail"),
+        MAIL_INFO(Bead),
         .description = sBeadMailDesc,
-        MAIL_INFO,
         .secondaryId = ITEM_TO_MAIL(ITEM_BEAD_MAIL),
-        ITEM_ICON(BeadMail),
     },
 
     [ITEM_SHADOW_MAIL] =
     {
-        .name = ITEM_NAME("Shadow Mail"),
-        .pluralName = ITEM_PLURAL_NAME("Shadow Mail"),
+        MAIL_INFO(Shadow),
         .description = COMPOUND_STRING(
             "A Duskull-print\n"
             "Mail to be held by\n"
             "a Pokémon."),
-        MAIL_INFO,
         .secondaryId = ITEM_TO_MAIL(ITEM_SHADOW_MAIL),
-        ITEM_ICON(ShadowMail),
     },
 
     [ITEM_TROPIC_MAIL] =
     {
-        .name = ITEM_NAME("Tropic Mail"),
-        .pluralName = ITEM_PLURAL_NAME("Tropic Mail"),
+        MAIL_INFO(Tropic),
         .description = COMPOUND_STRING(
             "A Bellossom-print\n"
             "Mail to be held by\n"
             "a Pokémon."),
-        MAIL_INFO,
         .secondaryId = ITEM_TO_MAIL(ITEM_TROPIC_MAIL),
-        ITEM_ICON(TropicMail),
     },
 
     [ITEM_DREAM_MAIL] =
     {
-        .name = ITEM_NAME("Dream Mail"),
-        .pluralName = ITEM_PLURAL_NAME("Dream Mail"),
+        MAIL_INFO(Dream),
         .description = sBeadMailDesc,
-        MAIL_INFO,
         .secondaryId = ITEM_TO_MAIL(ITEM_DREAM_MAIL),
-        ITEM_ICON(DreamMail),
     },
 
     [ITEM_FAB_MAIL] =
     {
-        .name = ITEM_NAME("Fab Mail"),
-        .pluralName = ITEM_PLURAL_NAME("Fab Mail"),
+        MAIL_INFO(Fab),
         .description = COMPOUND_STRING(
             "A gorgeous-print\n"
             "Mail to be held\n"
             "by a Pokémon."),
-        MAIL_INFO,
         .secondaryId = ITEM_TO_MAIL(ITEM_FAB_MAIL),
-        ITEM_ICON(FabMail),
     },
 
     [ITEM_RETRO_MAIL] =
     {
-        .name = ITEM_NAME("Retro Mail"),
-        .pluralName = ITEM_PLURAL_NAME("Retro Mail"),
+        MAIL_INFO(Retro),
         .description = COMPOUND_STRING(
             "Mail featuring the\n"
             "drawings of three\n"
             "Pokémon."),
-        MAIL_INFO,
         .secondaryId = ITEM_TO_MAIL(ITEM_RETRO_MAIL),
-        ITEM_ICON(RetroMail),
     },
 
 // Evolution Items
 
-#define EVOLUTION_STONE_INFO(FlingPower, stone)          \
-    .price = (I_PRICE >= GEN_7) ? EVO_ITEM_PRICE : 2100, \
-    .pocket = POCKET_ITEMS,                              \
-    .sortType = ITEM_TYPE_EVOLUTION_STONE,               \
-    .description = COMPOUND_STRING(                      \
-        "Makes certain\n"                                \
-        "species of Pokémon\n"                           \
-        "evolve."),                                      \
-    .type = ITEM_USE_PARTY_MENU,                         \
-    .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,   \
-    .effect = gItemEffect_EvoItem,                       \
-    .flingPower = FlingPower,                            \
-    .iconPic = gItemIcon_##stone##Stone,                 \
-    .iconPalette = gItemIconPalette_##stone##Stone,
+#define EVOLUTION_STONE_INFO(FlingPower, stone)              \
+    {                                                        \
+        .name = ITEM_NAME(#stone " Stone"),                  \
+        .price = (I_PRICE >= GEN_7) ? EVO_ITEM_PRICE : 2100, \
+        .pocket = POCKET_ITEMS,                              \
+        .sortType = ITEM_TYPE_EVOLUTION_STONE,               \
+        .description = COMPOUND_STRING(                      \
+            "Makes certain\n"                                \
+            "species of Pokémon\n"                           \
+            "evolve."),                                      \
+        .type = ITEM_USE_PARTY_MENU,                         \
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,   \
+        .effect = gItemEffect_EvoItem,                       \
+        .flingPower = FlingPower,                            \
+        .iconPic = gItemIcon_##stone##Stone,                 \
+        .iconPalette = gItemIconPalette_##stone##Stone,      \
+    }
 
-    [ITEM_FIRE_STONE] =
-    {
-        .name = ITEM_NAME("Fire Stone"),
-        EVOLUTION_STONE_INFO(30, Fire)
-    },
-
-    [ITEM_WATER_STONE] =
-    {
-        .name = ITEM_NAME("Water Stone"),
-        EVOLUTION_STONE_INFO(30, Water)
-    },
-
-    [ITEM_THUNDER_STONE] =
-    {
-        .name = ITEM_NAME("Thunder Stone"),
-        EVOLUTION_STONE_INFO(30, Thunder)
-    },
-
-    [ITEM_LEAF_STONE] =
-    {
-        .name = ITEM_NAME("Leaf Stone"),
-        EVOLUTION_STONE_INFO(30, Leaf)
-    },
-
-    [ITEM_ICE_STONE] =
-    {
-        .name = ITEM_NAME("Ice Stone"),
-        EVOLUTION_STONE_INFO(30, Ice)
-    },
-
-    [ITEM_SUN_STONE] =
-    {
-        .name = ITEM_NAME("Sun Stone"),
-        EVOLUTION_STONE_INFO(30, Sun)
-    },
-
-    [ITEM_MOON_STONE] =
-    {
-        .name = ITEM_NAME("Moon Stone"),
-        EVOLUTION_STONE_INFO(30, Moon)
-    },
-
-    [ITEM_SHINY_STONE] =
-    {
-        .name = ITEM_NAME("Shiny Stone"),
-        EVOLUTION_STONE_INFO(30, Shiny)
-    },
-
-    [ITEM_DUSK_STONE] =
-    {
-        .name = ITEM_NAME("Dusk Stone"),
-        EVOLUTION_STONE_INFO(80, Dusk)
-    },
-
-    [ITEM_DAWN_STONE] =
-    {
-        .name = ITEM_NAME("Dawn Stone"),
-        EVOLUTION_STONE_INFO(80, Dawn)
-    },
+    [ITEM_FIRE_STONE] = EVOLUTION_STONE_INFO(30, Fire),
+    [ITEM_WATER_STONE] = EVOLUTION_STONE_INFO(30, Water),
+    [ITEM_THUNDER_STONE] = EVOLUTION_STONE_INFO(30, Thunder),
+    [ITEM_LEAF_STONE] = EVOLUTION_STONE_INFO(30, Leaf),
+    [ITEM_ICE_STONE] = EVOLUTION_STONE_INFO(30, Ice),
+    [ITEM_SUN_STONE] = EVOLUTION_STONE_INFO(30, Sun),
+    [ITEM_MOON_STONE] = EVOLUTION_STONE_INFO(30, Moon),
+    [ITEM_SHINY_STONE] = EVOLUTION_STONE_INFO(30, Shiny),
+    [ITEM_DUSK_STONE] = EVOLUTION_STONE_INFO(80, Dusk),
+    [ITEM_DAWN_STONE] = EVOLUTION_STONE_INFO(80, Dawn),
 
     [ITEM_SWEET_APPLE] =
     {
@@ -3916,6 +3816,7 @@ const struct ItemInfo gItemsInfo[] =
     },
 
 #define SWEET_INFO(sweet)                         \
+    .name = ITEM_NAME(#sweet " Sweet"),           \
     .price = 500 * TREASURE_FACTOR,               \
     .pocket = POCKET_ITEMS,                       \
     .sortType = ITEM_TYPE_EVOLUTION_ITEM,         \
@@ -3924,76 +3825,69 @@ const struct ItemInfo gItemsInfo[] =
     .effect = gItemEffect_EvoItem,                \
     .flingPower = 10,                             \
     .iconPic = gItemIcon_##sweet##Sweet,          \
-    .iconPalette = gItemIconPalette_##sweet##Sweet,
+    .iconPalette = gItemIconPalette_##sweet##Sweet
 
     [ITEM_STRAWBERRY_SWEET] =
     {
-        .name = ITEM_NAME("Strawberry Sweet"),
+        SWEET_INFO(Strawberry),
         .description = COMPOUND_STRING(
             "Strawberry-shaped\n"
             "sweet loved by\n"
             "Milcery."),
-        SWEET_INFO(Strawberry)
     },
 
     [ITEM_LOVE_SWEET] =
     {
-        .name = ITEM_NAME("Love Sweet"),
+        SWEET_INFO(Love),
         .description = COMPOUND_STRING(
             "A heart-shaped\n"
             "sweet loved by\n"
             "Milcery."),
-        SWEET_INFO(Love)
     },
 
     [ITEM_BERRY_SWEET] =
     {
-        .name = ITEM_NAME("Berry Sweet"),
+        SWEET_INFO(Berry),
         .description = COMPOUND_STRING(
             "A berry-shaped\n"
             "sweet loved by\n"
             "Milcery."),
-        SWEET_INFO(Berry)
     },
 
     [ITEM_CLOVER_SWEET] =
     {
-        .name = ITEM_NAME("Clover Sweet"),
+        SWEET_INFO(Clover),
         .description = COMPOUND_STRING(
             "A clover-shaped\n"
             "sweet loved by\n"
             "Milcery."),
-        SWEET_INFO(Clover)
     },
 
     [ITEM_FLOWER_SWEET] =
     {
-        .name = ITEM_NAME("Flower Sweet"),
+        SWEET_INFO(Flower),
         .description = COMPOUND_STRING(
             "A flower-shaped\n"
             "sweet loved by\n"
             "Milcery."),
-        SWEET_INFO(Flower)
     },
 
     [ITEM_STAR_SWEET] =
     {
-        .name = ITEM_NAME("Star Sweet"),
+        SWEET_INFO(Star),
         .description = COMPOUND_STRING(
             "A star-shaped\n"
             "sweet loved by\n"
             "Milcery."),
-        SWEET_INFO(Star)
     },
 
     [ITEM_RIBBON_SWEET] =
     {
-        .name = ITEM_NAME("Ribbon Sweet"),
+        SWEET_INFO(Ribbon),
         .description = COMPOUND_STRING(
             "A ribbon-shaped\n"
             "sweet loved by\n"
             "Milcery."),
-        SWEET_INFO(Ribbon)
     },
 
     [ITEM_EVERSTONE] =
@@ -4014,44 +3908,29 @@ const struct ItemInfo gItemsInfo[] =
     },
 
 // Nectars
-#define NECTAR_INFO(Color)                                       \
-    .price = 300,                                                \
-    .holdEffectParam = 0,                                        \
-    .description = sNectarDesc,                                  \
-    .pocket = POCKET_ITEMS,                                      \
-    .sortType = ITEM_TYPE_NECTAR,                                \
-    .type = ITEM_USE_PARTY_MENU,                                 \
-    .fieldUseFunc = ItemUseOutOfBattle_FormChange_ConsumedOnUse, \
-    .flingPower = 10,                                            \
-    .iconPic = gItemIcon_Nectar,                                 \
-    .iconPalette = gItemIconPalette_##Color##Nectar
+#define NECTAR_INFO(Color)                                           \
+        {                                                            \
+        .name = ITEM_NAME(#Color " Nectar"),                         \
+        .price = 300,                                                \
+        .holdEffectParam = 0,                                        \
+        .description = sNectarDesc,                                  \
+        .pocket = POCKET_ITEMS,                                      \
+        .sortType = ITEM_TYPE_NECTAR,                                \
+        .type = ITEM_USE_PARTY_MENU,                                 \
+        .fieldUseFunc = ItemUseOutOfBattle_FormChange_ConsumedOnUse, \
+        .flingPower = 10,                                            \
+        .iconPic = gItemIcon_Nectar,                                 \
+        .iconPalette = gItemIconPalette_##Color##Nectar,             \
+    }
 
-    [ITEM_RED_NECTAR] =
-    {
-        .name = ITEM_NAME("Red Nectar"),
-        NECTAR_INFO(Red),
-    },
-
-    [ITEM_YELLOW_NECTAR] =
-    {
-        .name = ITEM_NAME("Yellow Nectar"),
-        NECTAR_INFO(Yellow),
-    },
-
-    [ITEM_PINK_NECTAR] =
-    {
-        .name = ITEM_NAME("Pink Nectar"),
-        NECTAR_INFO(Pink),
-    },
-
-    [ITEM_PURPLE_NECTAR] =
-    {
-        .name = ITEM_NAME("Purple Nectar"),
-        NECTAR_INFO(Purple),
-    },
+    [ITEM_RED_NECTAR] = NECTAR_INFO(Red),
+    [ITEM_YELLOW_NECTAR] = NECTAR_INFO(Yellow),
+    [ITEM_PINK_NECTAR] = NECTAR_INFO(Pink),
+    [ITEM_PURPLE_NECTAR] = NECTAR_INFO(Purple),
 
 // Plates
-#define PLATE_INFO                                \
+#define PLATE_INFO(plate)                         \
+    .name = ITEM_NAME(#plate " Plate"),           \
     .price = 1000,                                \
     .holdEffect = HOLD_EFFECT_PLATE,              \
     .holdEffectParam = 20,                        \
@@ -4060,214 +3939,182 @@ const struct ItemInfo gItemsInfo[] =
     .type = ITEM_USE_BAG_MENU,                    \
     .fieldUseFunc = ItemUseOutOfBattle_CannotUse, \
     .flingPower = 90,                             \
-    .iconPic = gItemIcon_Plate
+    .iconPic = gItemIcon_Plate,                   \
+    .iconPalette = gItemIconPalette_##plate##Plate
 
     [ITEM_FLAME_PLATE] =
     {
-        .name = ITEM_NAME("Flame Plate"),
+        PLATE_INFO(Flame),
         .description = COMPOUND_STRING(
             "A tablet that ups\n"
             "the power of\n"
             "Fire-type moves."),
-        PLATE_INFO,
         .secondaryId = TYPE_FIRE,
-        .iconPalette = gItemIconPalette_FlamePlate,
     },
 
     [ITEM_SPLASH_PLATE] =
     {
-        .name = ITEM_NAME("Splash Plate"),
+        PLATE_INFO(Splash),
         .description = COMPOUND_STRING(
             "A tablet that ups\n"
             "the power of\n"
             "Water-type moves."),
-        PLATE_INFO,
         .secondaryId = TYPE_WATER,
-        .iconPalette = gItemIconPalette_SplashPlate,
     },
 
     [ITEM_ZAP_PLATE] =
     {
-        .name = ITEM_NAME("Zap Plate"),
+        PLATE_INFO(Zap),
         .description = COMPOUND_STRING(
             "A tablet that ups\n"
             "the power of Elec-\n"
             "tric-type moves."),
-        PLATE_INFO,
         .secondaryId = TYPE_ELECTRIC,
-        .iconPalette = gItemIconPalette_ZapPlate,
     },
 
     [ITEM_MEADOW_PLATE] =
     {
-        .name = ITEM_NAME("Meadow Plate"),
+        PLATE_INFO(Meadow),
         .description = COMPOUND_STRING(
             "A tablet that ups\n"
             "the power of\n"
             "Grass-type moves."),
-        PLATE_INFO,
         .secondaryId = TYPE_GRASS,
-        .iconPalette = gItemIconPalette_MeadowPlate,
     },
 
     [ITEM_ICICLE_PLATE] =
     {
-        .name = ITEM_NAME("Icicle Plate"),
+        PLATE_INFO(Icicle),
         .description = COMPOUND_STRING(
             "A tablet that ups\n"
             "the power of\n"
             "Ice-type moves."),
-        PLATE_INFO,
         .secondaryId = TYPE_ICE,
-        .iconPalette = gItemIconPalette_IciclePlate,
     },
 
     [ITEM_FIST_PLATE] =
     {
-        .name = ITEM_NAME("Fist Plate"),
+        PLATE_INFO(Fist),
         .description = COMPOUND_STRING(
             "A tablet that ups\n"
             "the power of Fight-\n"
             "ing-type moves."),
-        PLATE_INFO,
         .secondaryId = TYPE_FIGHTING,
-        .iconPalette = gItemIconPalette_FistPlate,
     },
 
     [ITEM_TOXIC_PLATE] =
     {
-        .name = ITEM_NAME("Toxic Plate"),
+        PLATE_INFO(Toxic),
         .description = COMPOUND_STRING(
             "A tablet that ups\n"
             "the power of\n"
             "Poison-type moves."),
-        PLATE_INFO,
         .secondaryId = TYPE_POISON,
-        .iconPalette = gItemIconPalette_ToxicPlate,
     },
 
     [ITEM_EARTH_PLATE] =
     {
-        .name = ITEM_NAME("Earth Plate"),
+        PLATE_INFO(Earth),
         .description = COMPOUND_STRING(
             "A tablet that ups\n"
             "the power of\n"
             "Ground-type moves."),
-        PLATE_INFO,
         .secondaryId = TYPE_GROUND,
-        .iconPalette = gItemIconPalette_EarthPlate,
     },
 
     [ITEM_SKY_PLATE] =
     {
-        .name = ITEM_NAME("Sky Plate"),
+        PLATE_INFO(Sky),
         .description = COMPOUND_STRING(
             "A tablet that ups\n"
             "the power of\n"
             "Flying-type moves."),
-        PLATE_INFO,
         .secondaryId = TYPE_FLYING,
-        .iconPalette = gItemIconPalette_SkyPlate,
     },
 
     [ITEM_MIND_PLATE] =
     {
-        .name = ITEM_NAME("Mind Plate"),
+        PLATE_INFO(Mind),
         .description = COMPOUND_STRING(
             "A tablet that ups\n"
             "the power of Psy\n"
             "chic-type moves."),
-        PLATE_INFO,
         .secondaryId = TYPE_PSYCHIC,
-        .iconPalette = gItemIconPalette_MindPlate,
     },
 
     [ITEM_INSECT_PLATE] =
     {
-        .name = ITEM_NAME("Insect Plate"),
+        PLATE_INFO(Insect),
         .description = COMPOUND_STRING(
             "A tablet that ups\n"
             "the power of\n"
             "Bug-type moves."),
-        PLATE_INFO,
         .secondaryId = TYPE_BUG,
-        .iconPalette = gItemIconPalette_InsectPlate,
     },
 
     [ITEM_STONE_PLATE] =
     {
-        .name = ITEM_NAME("Stone Plate"),
+        PLATE_INFO(Stone),
         .description = COMPOUND_STRING(
             "A tablet that ups\n"
             "the power of\n"
             "Rock-type moves."),
-        PLATE_INFO,
         .secondaryId = TYPE_ROCK,
-        .iconPalette = gItemIconPalette_StonePlate,
     },
 
     [ITEM_SPOOKY_PLATE] =
     {
-        .name = ITEM_NAME("Spooky Plate"),
+        PLATE_INFO(Spooky),
         .description = COMPOUND_STRING(
             "A tablet that ups\n"
             "the power of\n"
             "Ghost-type moves."),
-        PLATE_INFO,
         .secondaryId = TYPE_GHOST,
-        .iconPalette = gItemIconPalette_SpookyPlate,
     },
 
     [ITEM_DRACO_PLATE] =
     {
-        .name = ITEM_NAME("Draco Plate"),
+        PLATE_INFO(Draco),
         .description = COMPOUND_STRING(
             "A tablet that ups\n"
             "the power of\n"
             "Dragon-type moves."),
-        PLATE_INFO,
         .secondaryId = TYPE_DRAGON,
-        .iconPalette = gItemIconPalette_DracoPlate,
     },
 
     [ITEM_DREAD_PLATE] =
     {
-        .name = ITEM_NAME("Dread Plate"),
+        PLATE_INFO(Dread),
         .description = COMPOUND_STRING(
             "A tablet that ups\n"
             "the power of\n"
             "Dark-type moves."),
-        PLATE_INFO,
         .secondaryId = TYPE_DARK,
-        .iconPalette = gItemIconPalette_DreadPlate,
     },
 
     [ITEM_IRON_PLATE] =
     {
-        .name = ITEM_NAME("Iron Plate"),
+        PLATE_INFO(Iron),
         .description = COMPOUND_STRING(
             "A tablet that ups\n"
             "the power of\n"
             "Steel-type moves."),
-        PLATE_INFO,
         .secondaryId = TYPE_STEEL,
-        .iconPalette = gItemIconPalette_IronPlate,
     },
 
     [ITEM_PIXIE_PLATE] =
     {
-        .name = ITEM_NAME("Pixie Plate"),
+        PLATE_INFO(Pixie),
         .description = COMPOUND_STRING(
             "A tablet that ups\n"
             "the power of\n"
             "Fairy-type moves."),
-        PLATE_INFO,
         .secondaryId = TYPE_FAIRY,
-        .iconPalette = gItemIconPalette_PixiePlate,
     },
 
 // Drives
-#define DRIVE_INFO                                \
+#define DRIVE_INFO(drive)                         \
+    .name = ITEM_NAME(#drive " Drive"),           \
     .price = (I_PRICE >= GEN_7) ? 0 : 1000,       \
     .holdEffect = HOLD_EFFECT_DRIVE,              \
     .pocket = POCKET_ITEMS,                       \
@@ -4275,190 +4122,167 @@ const struct ItemInfo gItemsInfo[] =
     .type = ITEM_USE_BAG_MENU,                    \
     .fieldUseFunc = ItemUseOutOfBattle_CannotUse, \
     .flingPower = 70,                             \
-    .iconPic = gItemIcon_Drive
+    .iconPic = gItemIcon_Drive,                   \
+    .iconPalette = gItemIconPalette_##drive##Drive
 
     [ITEM_DOUSE_DRIVE] =
     {
-        .name = ITEM_NAME("Douse Drive"),
-        DRIVE_INFO,
+        DRIVE_INFO(Douse),
         .description = COMPOUND_STRING(
             "Changes Genesect's\n"
             "Techno Blast to\n"
             "Water-type."),
         .secondaryId = TYPE_WATER,
-        .iconPalette = gItemIconPalette_DouseDrive,
     },
 
     [ITEM_SHOCK_DRIVE] =
     {
-        .name = ITEM_NAME("Shock Drive"),
-        DRIVE_INFO,
+        DRIVE_INFO(Shock),
         .description = COMPOUND_STRING(
             "Changes Genesect's\n"
             "Techno Blast to\n"
             "Electric-type."),
         .secondaryId = TYPE_ELECTRIC,
-        .iconPalette = gItemIconPalette_ShockDrive,
     },
 
     [ITEM_BURN_DRIVE] =
     {
-        .name = ITEM_NAME("Burn Drive"),
-        DRIVE_INFO,
+        DRIVE_INFO(Burn),
         .description = COMPOUND_STRING(
             "Changes Genesect's\n"
             "Techno Blast to\n"
             "Fire-type."),
         .secondaryId = TYPE_FIRE,
-        .iconPalette = gItemIconPalette_BurnDrive,
     },
 
     [ITEM_CHILL_DRIVE] =
     {
-        .name = ITEM_NAME("Chill Drive"),
-        DRIVE_INFO,
+        DRIVE_INFO(Chill),
         .description = COMPOUND_STRING(
             "Changes Genesect's\n"
             "Techno Blast to\n"
             "Ice-type."),
         .secondaryId = TYPE_ICE,
-        .iconPalette = gItemIconPalette_ChillDrive,
     },
 
 // Memories
-#define MEMORY_INFO(Type)                            \
-    .name = ITEM_NAME(Type" Memory"),                \
-    .pluralName = ITEM_PLURAL_NAME(Type" Memories"), \
-    .price = 1000,                                   \
-    .description = COMPOUND_STRING(                  \
-        "A disc with "Type"\n"                       \
-        "type data. It swaps\n"                      \
-        "Silvally's type."),                         \
-    .holdEffect = HOLD_EFFECT_MEMORY,                \
-    .holdEffectParam = 0,                            \
-    .pocket = POCKET_ITEMS,                          \
-    .sortType = ITEM_TYPE_MEMORY,                    \
-    .type = ITEM_USE_BAG_MENU,                       \
-    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,    \
-    .flingPower = 50
+#define MEMORY_INFO(Type)                             \
+    .name = ITEM_NAME(#Type " Memory"),               \
+    .pluralName = ITEM_PLURAL_NAME(#Type" Memories"), \
+    .price = 1000,                                    \
+    .description = COMPOUND_STRING(                   \
+        "A disc with " #Type "\n"                     \
+        "type data. It swaps\n"                       \
+        "Silvally's type."),                          \
+    .holdEffect = HOLD_EFFECT_MEMORY,                 \
+    .holdEffectParam = 0,                             \
+    .pocket = POCKET_ITEMS,                           \
+    .sortType = ITEM_TYPE_MEMORY,                     \
+    .type = ITEM_USE_BAG_MENU,                        \
+    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,     \
+    .flingPower = 50,                                 \
+    ITEM_ICON(Type##Memory)
 
     [ITEM_FIRE_MEMORY] =
     {
-        MEMORY_INFO("Fire"),
+        MEMORY_INFO(Fire),
         .secondaryId = TYPE_FIRE,
-        ITEM_ICON(FireMemory),
     },
 
     [ITEM_WATER_MEMORY] =
     {
-        MEMORY_INFO("Water"),
+        MEMORY_INFO(Water),
         .secondaryId = TYPE_WATER,
-        ITEM_ICON(WaterMemory),
     },
 
     [ITEM_ELECTRIC_MEMORY] =
     {
-        MEMORY_INFO("Electric"),
+        MEMORY_INFO(Electric),
         .secondaryId = TYPE_ELECTRIC,
-        ITEM_ICON(ElectricMemory),
     },
 
     [ITEM_GRASS_MEMORY] =
     {
-        MEMORY_INFO("Grass"),
+        MEMORY_INFO(Grass),
         .secondaryId = TYPE_GRASS,
-        ITEM_ICON(GrassMemory),
     },
 
     [ITEM_ICE_MEMORY] =
     {
-        MEMORY_INFO("Ice"),
+        MEMORY_INFO(Ice),
         .secondaryId = TYPE_ICE,
-        ITEM_ICON(IceMemory),
     },
 
     [ITEM_FIGHTING_MEMORY] =
     {
-        MEMORY_INFO("Fighting"),
+        MEMORY_INFO(Fighting),
         .secondaryId = TYPE_FIGHTING,
-        ITEM_ICON(FightingMemory),
     },
 
     [ITEM_POISON_MEMORY] =
     {
-        MEMORY_INFO("Poison"),
+        MEMORY_INFO(Poison),
         .secondaryId = TYPE_POISON,
-        ITEM_ICON(PoisonMemory),
     },
 
     [ITEM_GROUND_MEMORY] =
     {
-        MEMORY_INFO("Ground"),
+        MEMORY_INFO(Ground),
         .secondaryId = TYPE_GROUND,
-        ITEM_ICON(GroundMemory),
     },
 
     [ITEM_FLYING_MEMORY] =
     {
-        MEMORY_INFO("Flying"),
+        MEMORY_INFO(Flying),
         .secondaryId = TYPE_FLYING,
-        ITEM_ICON(FlyingMemory),
     },
 
     [ITEM_PSYCHIC_MEMORY] =
     {
-        MEMORY_INFO("Psychic"),
+        MEMORY_INFO(Psychic),
         .secondaryId = TYPE_PSYCHIC,
-        ITEM_ICON(PsychicMemory),
     },
 
     [ITEM_BUG_MEMORY] =
     {
-        MEMORY_INFO("Bug"),
+        MEMORY_INFO(Bug),
         .secondaryId = TYPE_BUG,
-        ITEM_ICON(BugMemory),
     },
 
     [ITEM_ROCK_MEMORY] =
     {
-        MEMORY_INFO("Rock"),
+        MEMORY_INFO(Rock),
         .secondaryId = TYPE_ROCK,
-        ITEM_ICON(RockMemory),
     },
 
     [ITEM_GHOST_MEMORY] =
     {
-        MEMORY_INFO("Ghost"),
+        MEMORY_INFO(Ghost),
         .secondaryId = TYPE_GHOST,
-        ITEM_ICON(GhostMemory),
     },
 
     [ITEM_DRAGON_MEMORY] =
     {
-        MEMORY_INFO("Dragon"),
+        MEMORY_INFO(Dragon),
         .secondaryId = TYPE_DRAGON,
-        ITEM_ICON(DragonMemory),
     },
 
     [ITEM_DARK_MEMORY] =
     {
-        MEMORY_INFO("Dark"),
+        MEMORY_INFO(Dark),
         .secondaryId = TYPE_DARK,
-        ITEM_ICON(DarkMemory),
     },
 
     [ITEM_STEEL_MEMORY] =
     {
-        MEMORY_INFO("Steel"),
+        MEMORY_INFO(Steel),
         .secondaryId = TYPE_STEEL,
-        ITEM_ICON(SteelMemory),
     },
 
     [ITEM_FAIRY_MEMORY] =
     {
-        MEMORY_INFO("Fairy"),
+        MEMORY_INFO(Fairy),
         .secondaryId = TYPE_FAIRY,
-        ITEM_ICON(FairyMemory),
     },
 
     [ITEM_RUSTED_SWORD] =
@@ -5195,11 +5019,11 @@ const struct ItemInfo gItemsInfo[] =
 #endif
 
 #define GEM_INFO(Type)                            \
-    .name = ITEM_NAME(Type" Gem"),                \
+    .name = ITEM_NAME(#Type " Gem"),              \
     .price = GEM_PRICE,                           \
     .description = COMPOUND_STRING(               \
         "Increases the\n"                         \
-        "power of "Type"\n"                       \
+        "power of " #Type "\n"                    \
         "Type moves."),                           \
     .holdEffect = HOLD_EFFECT_GEMS,               \
     .holdEffectParam = GEM_BOOST_PARAM,           \
@@ -5207,132 +5031,115 @@ const struct ItemInfo gItemsInfo[] =
     .sortType = ITEM_TYPE_GEM,                    \
     .type = ITEM_USE_BAG_MENU,                    \
     .fieldUseFunc = ItemUseOutOfBattle_CannotUse, \
-    .iconPic = gItemIcon_TypeGem
+    .iconPic = gItemIcon_TypeGem,                 \
+    .iconPalette = gItemIconPalette_##Type##Gem
 
     [ITEM_NORMAL_GEM] =
     {
-        GEM_INFO("Normal"),
+        GEM_INFO(Normal),
         .secondaryId = TYPE_NORMAL,
-        .iconPalette = gItemIconPalette_NormalGem,
     },
 
     [ITEM_FIRE_GEM] =
     {
-        GEM_INFO("Fire"),
+        GEM_INFO(Fire),
         .secondaryId = TYPE_FIRE,
-        .iconPalette = gItemIconPalette_FireGem,
     },
 
     [ITEM_WATER_GEM] =
     {
-        GEM_INFO("Water"),
+        GEM_INFO(Water),
         .secondaryId = TYPE_WATER,
-        .iconPalette = gItemIconPalette_WaterGem,
     },
 
     [ITEM_ELECTRIC_GEM] =
     {
-        GEM_INFO("Electric"),
+        GEM_INFO(Electric),
         .secondaryId = TYPE_ELECTRIC,
-        .iconPalette = gItemIconPalette_ElectricGem,
     },
 
     [ITEM_GRASS_GEM] =
     {
-        GEM_INFO("Grass"),
+        GEM_INFO(Grass),
         .secondaryId = TYPE_GRASS,
-        .iconPalette = gItemIconPalette_GrassGem,
     },
 
     [ITEM_ICE_GEM] =
     {
-        GEM_INFO("Ice"),
+        GEM_INFO(Ice),
         .secondaryId = TYPE_ICE,
-        .iconPalette = gItemIconPalette_IceGem,
     },
 
     [ITEM_FIGHTING_GEM] =
     {
-        GEM_INFO("Fighting"),
+        GEM_INFO(Fighting),
         .secondaryId = TYPE_FIGHTING,
-        .iconPalette = gItemIconPalette_FightingGem,
     },
 
     [ITEM_POISON_GEM] =
     {
-        GEM_INFO("Poison"),
+        GEM_INFO(Poison),
         .secondaryId = TYPE_POISON,
-        .iconPalette = gItemIconPalette_PoisonGem,
     },
 
     [ITEM_GROUND_GEM] =
     {
-        GEM_INFO("Ground"),
+        GEM_INFO(Ground),
         .secondaryId = TYPE_GROUND,
-        .iconPalette = gItemIconPalette_GroundGem,
     },
 
     [ITEM_FLYING_GEM] =
     {
-        GEM_INFO("Flying"),
+        GEM_INFO(Flying),
         .secondaryId = TYPE_FLYING,
-        .iconPalette = gItemIconPalette_FlyingGem,
     },
 
     [ITEM_PSYCHIC_GEM] =
     {
-        GEM_INFO("Psychic"),
+        GEM_INFO(Psychic),
         .secondaryId = TYPE_PSYCHIC,
-        .iconPalette = gItemIconPalette_PsychicGem,
     },
 
     [ITEM_BUG_GEM] =
     {
-        GEM_INFO("Bug"),
+        GEM_INFO(Bug),
         .secondaryId = TYPE_BUG,
-        .iconPalette = gItemIconPalette_BugGem,
     },
 
     [ITEM_ROCK_GEM] =
     {
-        GEM_INFO("Rock"),
+        GEM_INFO(Rock),
         .secondaryId = TYPE_ROCK,
-        .iconPalette = gItemIconPalette_RockGem,
     },
 
     [ITEM_GHOST_GEM] =
     {
-        GEM_INFO("Ghost"),
+        GEM_INFO(Ghost),
         .secondaryId = TYPE_GHOST,
-        .iconPalette = gItemIconPalette_GhostGem,
     },
 
     [ITEM_DRAGON_GEM] =
     {
-        GEM_INFO("Dragon"),
+        GEM_INFO(Dragon),
         .secondaryId = TYPE_DRAGON,
-        .iconPalette = gItemIconPalette_DragonGem,
     },
 
     [ITEM_DARK_GEM] =
     {
-        GEM_INFO("Dark"),
+        GEM_INFO(Dark),
         .secondaryId = TYPE_DARK,
-        .iconPalette = gItemIconPalette_DarkGem,
     },
 
     [ITEM_STEEL_GEM] =
     {
-        GEM_INFO("Steel"),
+        GEM_INFO(Steel),
         .secondaryId = TYPE_STEEL,
-        .iconPalette = gItemIconPalette_SteelGem,
     },
 
     [ITEM_FAIRY_GEM] =
     {
-        GEM_INFO("Fairy"),
+        GEM_INFO(Fairy),
         .secondaryId = TYPE_FAIRY,
-        .iconPalette = gItemIconPalette_FairyGem,
     },
 
 // Z-Crystals
@@ -6093,73 +5900,61 @@ const struct ItemInfo gItemsInfo[] =
     },
 
 // Contest Scarves
-#define SCARF_INFO                                \
-    .price = 100,                                 \
-    .pocket = POCKET_ITEMS,                       \
-    .sortType = ITEM_TYPE_CONTEST_HELD_ITEM,      \
-    .type = ITEM_USE_BAG_MENU,                    \
-    .fieldUseFunc = ItemUseOutOfBattle_CannotUse, \
-    .flingPower = 10,                             \
-    .iconPic = gItemIcon_Scarf
+#define SCARF_INFO(Color)                              \
+    .name = ITEM_NAME(#Color " Scarf"),                \
+    .pluralName = ITEM_PLURAL_NAME(#Color " Scarves"), \
+    .price = 100,                                      \
+    .pocket = POCKET_ITEMS,                            \
+    .sortType = ITEM_TYPE_CONTEST_HELD_ITEM,           \
+    .type = ITEM_USE_BAG_MENU,                         \
+    .fieldUseFunc = ItemUseOutOfBattle_CannotUse,      \
+    .flingPower = 10,                                  \
+    .iconPic = gItemIcon_Scarf,                        \
+    .iconPalette = gItemIconPalette_RedScarf
 
     [ITEM_RED_SCARF] =
     {
-        .name = ITEM_NAME("Red Scarf"),
-        .pluralName = ITEM_PLURAL_NAME("Red Scarves"),
+        SCARF_INFO(Red),
         .description = COMPOUND_STRING(
             "A hold item that\n"
             "raises Cool in\n"
             "Contests."),
-        SCARF_INFO,
-        .iconPalette = gItemIconPalette_RedScarf,
     },
 
     [ITEM_BLUE_SCARF] =
     {
-        .name = ITEM_NAME("Blue Scarf"),
-        .pluralName = ITEM_PLURAL_NAME("Blue Scarves"),
+        SCARF_INFO(Blue),
         .description = COMPOUND_STRING(
             "A hold item that\n"
             "raises Beauty in\n"
             "Contests."),
-        SCARF_INFO,
-        .iconPalette = gItemIconPalette_BlueScarf,
     },
 
     [ITEM_PINK_SCARF] =
     {
-        .name = ITEM_NAME("Pink Scarf"),
-        .pluralName = ITEM_PLURAL_NAME("Pink Scarves"),
+        SCARF_INFO(Pink),
         .description = COMPOUND_STRING(
             "A hold item that\n"
             "raises Cute in\n"
             "Contests."),
-        SCARF_INFO,
-        .iconPalette = gItemIconPalette_PinkScarf,
     },
 
     [ITEM_GREEN_SCARF] =
     {
-        .name = ITEM_NAME("Green Scarf"),
-        .pluralName = ITEM_PLURAL_NAME("Green Scarves"),
+        SCARF_INFO(Green),
         .description = COMPOUND_STRING(
             "A hold item that\n"
             "raises Smart in\n"
             "Contests."),
-        SCARF_INFO,
-        .iconPalette = gItemIconPalette_GreenScarf,
     },
 
     [ITEM_YELLOW_SCARF] =
     {
-        .name = ITEM_NAME("Yellow Scarf"),
-        .pluralName = ITEM_PLURAL_NAME("Yellow Scarves"),
+        SCARF_INFO(Yellow),
         .description = COMPOUND_STRING(
             "A hold item that\n"
             "raises Tough in\n"
             "Contests."),
-        SCARF_INFO,
-        .iconPalette = gItemIconPalette_YellowScarf,
     },
 
 // EV Gain Modifiers
@@ -6762,59 +6557,53 @@ const struct ItemInfo gItemsInfo[] =
     },
 
 // Terrain Seeds
-#define TERRAIN_SEED_INFO                       \
+#define TERRAIN_SEED_INFO(Type)                 \
+    .name = ITEM_NAME(#Type " Seed"),           \
     .price = (I_PRICE >= GEN_9) ? 20000 : 4000, \
     .holdEffect = HOLD_EFFECT_TERRAIN_SEED,     \
     HELD_ITEM_INFO,                             \
     .flingPower = 10,                           \
-    .iconPic = gItemIcon_TerrainSeed
+    .iconPic = gItemIcon_TerrainSeed,           \
+    .iconPalette = gItemIconPalette_##Type##Seed
 
     [ITEM_ELECTRIC_SEED] =
     {
-        .name = ITEM_NAME("Electric Seed"),
-        TERRAIN_SEED_INFO,
+        TERRAIN_SEED_INFO(Electric),
         .holdEffectParam = HOLD_EFFECT_PARAM_ELECTRIC_TERRAIN,
         .description = COMPOUND_STRING(
             "Boosts Defense on\n"
             "Electric Terrain,\n"
             "but only one time."),
-        .iconPalette = gItemIconPalette_ElectricSeed,
     },
 
     [ITEM_PSYCHIC_SEED] =
     {
-        .name = ITEM_NAME("Psychic Seed"),
-        TERRAIN_SEED_INFO,
+        TERRAIN_SEED_INFO(Psychic),
         .holdEffectParam = HOLD_EFFECT_PARAM_PSYCHIC_TERRAIN,
         .description = COMPOUND_STRING(
             "Boosts Sp. Def. on\n"
             "Psychic Terrain,\n"
             "but only one time."),
-        .iconPalette = gItemIconPalette_PsychicSeed,
     },
 
     [ITEM_MISTY_SEED] =
     {
-        .name = ITEM_NAME("Misty Seed"),
-        TERRAIN_SEED_INFO,
+        TERRAIN_SEED_INFO(Misty),
         .holdEffectParam = HOLD_EFFECT_PARAM_MISTY_TERRAIN,
         .description = COMPOUND_STRING(
             "Boosts Sp. Def. on\n"
             "Misty Terrain,\n"
             "but only one time."),
-        .iconPalette = gItemIconPalette_MistySeed,
     },
 
     [ITEM_GRASSY_SEED] =
     {
-        .name = ITEM_NAME("Grassy Seed"),
-        TERRAIN_SEED_INFO,
+        TERRAIN_SEED_INFO(Grassy),
         .holdEffectParam = HOLD_EFFECT_PARAM_GRASSY_TERRAIN,
         .description = COMPOUND_STRING(
             "Boosts Defense on\n"
             "Grassy Terrain,\n"
             "but only one time."),
-        .iconPalette = gItemIconPalette_GrassySeed,
     },
 
 // Type-activated Stat Modifiers
@@ -11417,123 +11206,37 @@ const struct ItemInfo gItemsInfo[] =
         ITEM_ICON(TinyBambooShoot),
     },
 
-#define TERA_SHARD_INFO(Type)                     \
-    .price = 0,                                   \
-    .description = sTeraShardDesc,                \
-    .pocket = POCKET_ITEMS,                       \
-    .sortType = ITEM_TYPE_TERA_SHARD,             \
-    .type = ITEM_USE_BAG_MENU,                    \
-    .fieldUseFunc = ItemUseOutOfBattle_CannotUse, \
-    .iconPic = gItemIcon_TeraShard,               \
-    .iconPalette = gItemIconPalette_##Type##TeraShard
+#define TERA_SHARD_INFO(Type)                              \
+    {                                                      \
+        .name = ITEM_NAME(#Type " Tera Shard"),            \
+        .price = 0,                                        \
+        .description = sTeraShardDesc,                     \
+        .pocket = POCKET_ITEMS,                            \
+        .sortType = ITEM_TYPE_TERA_SHARD,                  \
+        .type = ITEM_USE_BAG_MENU,                         \
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,      \
+        .iconPic = gItemIcon_TeraShard,                    \
+        .iconPalette = gItemIconPalette_##Type##TeraShard, \
+    }
 
-    [ITEM_BUG_TERA_SHARD] =
-    {
-        .name = ITEM_NAME("Bug Tera Shard"),
-        TERA_SHARD_INFO(Bug),
-    },
-
-    [ITEM_DARK_TERA_SHARD] =
-    {
-        .name = ITEM_NAME("Dark Tera Shard"),
-        TERA_SHARD_INFO(Dark),
-    },
-
-    [ITEM_DRAGON_TERA_SHARD] =
-    {
-        .name = ITEM_NAME("Dragon Tera Shard"),
-        TERA_SHARD_INFO(Dragon),
-    },
-
-    [ITEM_ELECTRIC_TERA_SHARD] =
-    {
-        .name = ITEM_NAME("Electric Tera Shard"),
-        TERA_SHARD_INFO(Electric),
-    },
-
-    [ITEM_FAIRY_TERA_SHARD] =
-    {
-        .name = ITEM_NAME("Fairy Tera Shard"),
-        TERA_SHARD_INFO(Fairy),
-    },
-
-    [ITEM_FIGHTING_TERA_SHARD] =
-    {
-        .name = ITEM_NAME("Fighting Tera Shard"),
-        TERA_SHARD_INFO(Fighting),
-    },
-
-    [ITEM_FIRE_TERA_SHARD] =
-    {
-        .name = ITEM_NAME("Fire Tera Shard"),
-        TERA_SHARD_INFO(Fire),
-    },
-
-    [ITEM_FLYING_TERA_SHARD] =
-    {
-        .name = ITEM_NAME("Flying Tera Shard"),
-        TERA_SHARD_INFO(Flying),
-    },
-
-    [ITEM_GHOST_TERA_SHARD] =
-    {
-        .name = ITEM_NAME("Ghost Tera Shard"),
-        TERA_SHARD_INFO(Ghost),
-    },
-
-    [ITEM_GRASS_TERA_SHARD] =
-    {
-        .name = ITEM_NAME("Grass Tera Shard"),
-        TERA_SHARD_INFO(Grass),
-    },
-
-    [ITEM_GROUND_TERA_SHARD] =
-    {
-        .name = ITEM_NAME("Ground Tera Shard"),
-        TERA_SHARD_INFO(Ground),
-    },
-
-    [ITEM_ICE_TERA_SHARD] =
-    {
-        .name = ITEM_NAME("Ice Tera Shard"),
-        TERA_SHARD_INFO(Ice),
-    },
-
-    [ITEM_NORMAL_TERA_SHARD] =
-    {
-        .name = ITEM_NAME("Normal Tera Shard"),
-        TERA_SHARD_INFO(Normal),
-    },
-
-    [ITEM_POISON_TERA_SHARD] =
-    {
-        .name = ITEM_NAME("Poison Tera Shard"),
-        TERA_SHARD_INFO(Poison),
-    },
-
-    [ITEM_PSYCHIC_TERA_SHARD] =
-    {
-        .name = ITEM_NAME("Psychic Tera Shard"),
-        TERA_SHARD_INFO(Psychic),
-    },
-
-    [ITEM_ROCK_TERA_SHARD] =
-    {
-        .name = ITEM_NAME("Rock Tera Shard"),
-        TERA_SHARD_INFO(Rock),
-    },
-
-    [ITEM_STEEL_TERA_SHARD] =
-    {
-        .name = ITEM_NAME("Steel Tera Shard"),
-        TERA_SHARD_INFO(Steel),
-    },
-
-    [ITEM_WATER_TERA_SHARD] =
-    {
-        .name = ITEM_NAME("Water Tera Shard"),
-        TERA_SHARD_INFO(Water),
-    },
+    [ITEM_BUG_TERA_SHARD]      = TERA_SHARD_INFO(Bug),
+    [ITEM_DARK_TERA_SHARD]     = TERA_SHARD_INFO(Dark),
+    [ITEM_DRAGON_TERA_SHARD]   = TERA_SHARD_INFO(Dragon),
+    [ITEM_ELECTRIC_TERA_SHARD] = TERA_SHARD_INFO(Electric),
+    [ITEM_FAIRY_TERA_SHARD]    = TERA_SHARD_INFO(Fairy),
+    [ITEM_FIGHTING_TERA_SHARD] = TERA_SHARD_INFO(Fighting),
+    [ITEM_FIRE_TERA_SHARD]     = TERA_SHARD_INFO(Fire),
+    [ITEM_FLYING_TERA_SHARD]   = TERA_SHARD_INFO(Flying),
+    [ITEM_GHOST_TERA_SHARD]    = TERA_SHARD_INFO(Ghost),
+    [ITEM_GRASS_TERA_SHARD]    = TERA_SHARD_INFO(Grass),
+    [ITEM_GROUND_TERA_SHARD]   = TERA_SHARD_INFO(Ground),
+    [ITEM_ICE_TERA_SHARD]      = TERA_SHARD_INFO(Ice),
+    [ITEM_NORMAL_TERA_SHARD]   = TERA_SHARD_INFO(Normal),
+    [ITEM_POISON_TERA_SHARD]   = TERA_SHARD_INFO(Poison),
+    [ITEM_PSYCHIC_TERA_SHARD]  = TERA_SHARD_INFO(Psychic),
+    [ITEM_ROCK_TERA_SHARD]     = TERA_SHARD_INFO(Rock),
+    [ITEM_STEEL_TERA_SHARD]    = TERA_SHARD_INFO(Steel),
+    [ITEM_WATER_TERA_SHARD]    = TERA_SHARD_INFO(Water),
 
     [ITEM_ADAMANT_CRYSTAL] =
     {
@@ -11780,70 +11483,48 @@ const struct ItemInfo gItemsInfo[] =
     .flingPower = 30,                       \
     .iconPic = gItemIcon_Mochi
 
+#define STAT_MOCHI_INFO(mochi)                       \
+    .name = ITEM_NAME(#mochi " Mochi"),              \
+    .pluralName = ITEM_PLURAL_NAME(#mochi " Mochi"), \
+    .description = s##mochi##FeatherDesc,            \
+    MOCHI_INFO,                                      \
+    .fieldUseFunc = ItemUseOutOfBattle_Medicine,     \
+    .iconPalette = gItemIconPalette_##mochi##Mochi
+
     [ITEM_HEALTH_MOCHI] =
     {
-        .name = ITEM_NAME("Health Mochi"),
-        .pluralName = ITEM_PLURAL_NAME("Health Mochi"),
-        .description = sHealthFeatherDesc,
-        MOCHI_INFO,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        STAT_MOCHI_INFO(Health),
         .effect = gItemEffect_HpMochi,
-        .iconPalette = gItemIconPalette_HealthMochi,
     },
 
     [ITEM_MUSCLE_MOCHI] =
     {
-        .name = ITEM_NAME("Muscle Mochi"),
-        .pluralName = ITEM_PLURAL_NAME("Muscle Mochi"),
-        .description = sMuscleFeatherDesc,
-        MOCHI_INFO,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        STAT_MOCHI_INFO(Muscle),
         .effect = gItemEffect_AtkMochi,
-        .iconPalette = gItemIconPalette_MuscleMochi,
     },
 
     [ITEM_RESIST_MOCHI] =
     {
-        .name = ITEM_NAME("Resist Mochi"),
-        .pluralName = ITEM_PLURAL_NAME("Resist Mochi"),
-        .description = sResistFeatherDesc,
-        MOCHI_INFO,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        STAT_MOCHI_INFO(Resist),
         .effect = gItemEffect_DefMochi,
-        .iconPalette = gItemIconPalette_ResistMochi,
     },
 
     [ITEM_GENIUS_MOCHI] =
     {
-        .name = ITEM_NAME("Genius Mochi"),
-        .pluralName = ITEM_PLURAL_NAME("Genius Mochi"),
-        .description = sGeniusFeatherDesc,
-        MOCHI_INFO,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        STAT_MOCHI_INFO(Genius),
         .effect = gItemEffect_SpatkMochi,
-        .iconPalette = gItemIconPalette_GeniusMochi,
     },
 
     [ITEM_CLEVER_MOCHI] =
     {
-        .name = ITEM_NAME("Clever Mochi"),
-        .pluralName = ITEM_PLURAL_NAME("Clever Mochi"),
-        .description = sCleverFeatherDesc,
-        MOCHI_INFO,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        STAT_MOCHI_INFO(Clever),
         .effect = gItemEffect_SpdefMochi,
-        .iconPalette = gItemIconPalette_CleverMochi,
     },
 
     [ITEM_SWIFT_MOCHI] =
     {
-        .name = ITEM_NAME("Swift Mochi"),
-        .pluralName = ITEM_PLURAL_NAME("Swift Mochi"),
-        .description = sSwiftFeatherDesc,
-        MOCHI_INFO,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        STAT_MOCHI_INFO(Swift),
         .effect = gItemEffect_SpeedMochi,
-        .iconPalette = gItemIconPalette_SwiftMochi,
     },
 
     [ITEM_FRESH_START_MOCHI] =

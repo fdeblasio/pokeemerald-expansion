@@ -179,7 +179,7 @@ upcoming
         - Fairy
         - Poison
 - Add level defines per route/group of routes?
-- Added species defines for Madeline/Laurel?
+- Add species defines for Madeline/Laurel?
 - Update Tabitha (and maybe others?) macros to use Magma levels instead of Rematch levels?
 - Add ORAS team members (like a Picknicker getting a Gulpin)
 - Now that Gym Leader rematch party size is consistent, maybe a macro can be made

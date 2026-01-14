@@ -1432,6 +1432,21 @@ const struct BattleAnimation gBattleAnimTable[ANIM_TAG_COUNT] =
     BATTLE_ANIMATION(ANIM_TAG_TATSUGIRI_CURLY, gBattleAnimSpriteGfx_TatsugiriCurly, 0x200, gBattleAnimSpritePal_TatsugiriCurly),
     BATTLE_ANIMATION(ANIM_TAG_TATSUGIRI_DROOPY, gBattleAnimSpriteGfx_TatsugiriDroopy, 0x200, gBattleAnimSpritePal_TatsugiriDroopy),
     BATTLE_ANIMATION(ANIM_TAG_TATSUGIRI_STRETCHY, gBattleAnimSpriteGfx_TatsugiriStretchy, 0x200, gBattleAnimSpritePal_TatsugiriStretchy),
+    //New graphics
+    BATTLE_ANIMATION(ANIM_TAG_NEW_SWORD, gBattleAnimSpriteGfx_NewSword, 0x0400, gBattleAnimSpritePal_NewSword),
+    BATTLE_ANIMATION(ANIM_TAG_NEW_SEED, gBattleAnimSpriteGfx_NewLeechSeed, 0x0180, gBattleAnimSpritePal_NewLeechSeed),
+    BATTLE_ANIMATION(ANIM_TAG_NEW_HORN, gBattleAnimSpriteGfx_HornHit, 0x0200, gBattleAnimSpritePal_NewHornHit),
+    BATTLE_ANIMATION(ANIM_TAG_NEW_EMBER, gBattleAnimSpriteGfx_NewEmbers, 0x0A00, gBattleAnimSpritePal_NewEmbers),
+    BATTLE_ANIMATION(ANIM_TAG_NEW_ROCKS, gBattleAnimSpriteGfx_NewRocks, 0x0C00, gBattleAnimSpritePal_NewRocks),
+    BATTLE_ANIMATION(ANIM_TAG_NEW_LEAF, gBattleAnimSpriteGfx_NewLeaf, 0x0480, gBattleAnimSpritePal_NewLeaf),
+    BATTLE_ANIMATION(ANIM_TAG_NEW_TEETH, gBattleAnimSpriteGfx_NewTeeth, 0x0800, gBattleAnimSpritePal_NewTeeth),
+    BATTLE_ANIMATION(ANIM_TAG_NEW_HANDS_AND_FEET, gBattleAnimSpriteGfx_NewHandsAndFeet, 0x0800, gBattleAnimSpritePal_NewHandsAndFeet),
+    BATTLE_ANIMATION(ANIM_TAG_NEW_SPIKES, gBattleAnimSpriteGfx_NewSpikes, 0x0080, gBattleAnimSpritePal_NewSpikes),
+    BATTLE_ANIMATION(ANIM_TAG_NEW_ROUND_SHADOW, gBattleAnimSpriteGfx_NewFly, 0x0800, gBattleAnimSpritePal_NewFly),
+    BATTLE_ANIMATION(ANIM_TAG_NEW_EYE, gBattleAnimSpriteGfx_NewEye, 0x0800, gBattleAnimSpritePal_NewEye),
+    BATTLE_ANIMATION(ANIM_TAG_NEW_NAIL, gBattleAnimSpriteGfx_NewNail, 0x0400, gBattleAnimSpritePal_Nail),
+    BATTLE_ANIMATION(ANIM_TAG_NEW_POKEBALL, gBattleAnimSpriteGfx_NewPokeball, 0x0080, gBattleAnimSpritePal_NewPokeball),
+    BATTLE_ANIMATION(ANIM_TAG_NEW_GREEN_STAR, gBattleAnimSpriteGfx_NewGreenStar, 0x0200, gBattleAnimSpritePal_NewGreenStar),
 };
 
 const struct BattleAnimBackground gBattleAnimBackgroundTable[] =

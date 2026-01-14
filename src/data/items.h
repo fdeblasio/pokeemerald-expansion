@@ -2434,7 +2434,7 @@ const struct ItemInfo gItemsInfo[] =
             "Can be sold at a\n"
             "high price."),
         TREASURE_INFO,
-        .iconPic = gItemIcon_Stardust,
+        .iconPic = gItemIcon_Sand,
         .iconPalette = gItemIconPalette_Star,
     },
 

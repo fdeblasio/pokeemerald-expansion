@@ -2440,8 +2440,8 @@ const u8 *AbsorbedByFlashFire(enum BattlerId battlerDef)
 
 const u8 *AbsorbedByCharging(enum BattlerId battlerDef)
 {
-    if (!gBattleStruct->unableToUseMove && IsBattlerTurnDamaged(battlerDef) && IsBattlerAlive(battlerDef))
-        return = BattleScript_WindPowerActivates;
+    //From Electromorphosis if (!gBattleStruct->unableToUseMove && IsBattlerTurnDamaged(battlerDef) && IsBattlerAlive(battlerDef))
+    return BattleScript_WindPowerActivates;
 }
 
 static u32 GetFirstBattlerOnSide(enum BattleSide side)

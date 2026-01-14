@@ -3352,8 +3352,6 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_DUSK_STONE] = EVOLUTION_STONE_INFO(80, Dusk),
     [ITEM_DAWN_STONE] = EVOLUTION_STONE_INFO(80, Dawn),
 
-#define EVOLUTION_ITEM \
-
     [ITEM_SWEET_APPLE] =
     {
         .name = ITEM_NAME("Sweet Apple"),

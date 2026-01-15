@@ -90,7 +90,7 @@ upcoming
                 - weird guy
                 - Devon employee/the similar MAN_2
                 - Mr. Stone
-                - Guitarist/Kindler (now that current ones have been replaced with Psychic GFX)
+                - Guitarist/Kindler (since all contestants with that GFX seemed to be Bird Keepers and now use the Psychic GFX)
                 - Wally
                 - Interviewer/Cameraman (can use Gabby and Ty)
                 - Birch

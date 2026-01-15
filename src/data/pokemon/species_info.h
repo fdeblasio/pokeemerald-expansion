@@ -100,6 +100,9 @@
     .isTotem = TRUE,                        \
     .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT
 
+#define DEFAULT_CATCH_RATE 45
+#define SPECIAL_CATCH_RATE 30
+
 const struct SpeciesInfo gSpeciesInfo[] =
 {
     [SPECIES_NONE] =

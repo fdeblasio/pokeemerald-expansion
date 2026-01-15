@@ -6111,6 +6111,22 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #define ARCTO_SPA 10
 #define ARCTO_SPD 10
 
+#define ZOLT_ABILITY  ABILITY_VOLT_ABSORB
+#define VISH_ABILITY  ABILITY_WATER_ABSORB
+#define DRACO_ABILITY ABILITY_SAND_RUSH
+#define ARCTO_ABILITY ABILITY_SLUSH_RUSH
+
+//TODO: parameterize with the fossils and above defines
+#define GALAR_FOSSIL_INFO                                      \
+    .catchRate = 45,                                           \
+    .expYield = 177,                                           \
+    .genderRatio = MON_GENDERLESS,                             \
+    .eggCycles = 35,                                           \
+    .friendship = STANDARD_FRIENDSHIP,                         \
+    .growthRate = GROWTH_SLOW,                                 \
+    .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED), \
+    .categoryName = _("Fossil")
+
 #if P_FAMILY_DRACOZOLT
     [SPECIES_DRACOZOLT] =
     {
@@ -6121,20 +6137,13 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = GALAR_FOSSIL_SPA + ZOLT_SPA,
         .baseSpDefense = GALAR_FOSSIL_SPD,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_DRAGON),
-        .catchRate = 45,
-        .expYield = 177,
+        GALAR_FOSSIL_INFO,
         .evYield_Attack = 2,
-        .genderRatio = MON_GENDERLESS,
-        .eggCycles = 35,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_VOLT_ABSORB, ABILITY_HUSTLE, ABILITY_SAND_RUSH },
+        .abilities = { ZOLT_ABILITY, ABILITY_HUSTLE, DRACO_ABILITY },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Dracozolt"),
         .cryId = CRY_DRACOZOLT,
         .natDexNum = NATIONAL_DEX_DRACOZOLT,
-        .categoryName = _("Fossil"),
         .height = 18,
         .weight = 1900,
         .description = COMPOUND_STRING(
@@ -6186,20 +6195,13 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = GALAR_FOSSIL_SPA + ARCTO_SPA + ZOLT_SPA,
         .baseSpDefense = GALAR_FOSSIL_SPD + ARCTO_SPD,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_ICE),
-        .catchRate = 45,
-        .expYield = 177,
+        GALAR_FOSSIL_INFO,
         .evYield_Attack = 2,
-        .genderRatio = MON_GENDERLESS,
-        .eggCycles = 35,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_VOLT_ABSORB, ABILITY_STATIC, ABILITY_SLUSH_RUSH },
+        .abilities = { ZOLT_ABILITY, ABILITY_STATIC, ARCTO_ABILITY },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Arctozolt"),
         .cryId = CRY_ARCTOZOLT,
         .natDexNum = NATIONAL_DEX_ARCTOZOLT,
-        .categoryName = _("Fossil"),
         .height = 23,
         .weight = 1500,
         .description = COMPOUND_STRING(
@@ -6250,20 +6252,13 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = GALAR_FOSSIL_SPA,
         .baseSpDefense = GALAR_FOSSIL_SPD + VISH_SPD,
         .types = MON_TYPES(TYPE_WATER, TYPE_DRAGON),
-        .catchRate = 45,
-        .expYield = 177,
+        GALAR_FOSSIL_INFO,
         .evYield_Defense = 2,
-        .genderRatio = MON_GENDERLESS,
-        .eggCycles = 35,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_WATER_ABSORB, ABILITY_STRONG_JAW, ABILITY_SAND_RUSH },
+        .abilities = { VISH_ABILITY, ABILITY_STRONG_JAW, DRACO_ABILITY },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Dracovish"),
         .cryId = CRY_DRACOVISH,
         .natDexNum = NATIONAL_DEX_DRACOVISH,
-        .categoryName = _("Fossil"),
         .height = 23,
         .weight = 2150,
         .description = COMPOUND_STRING(
@@ -6315,20 +6310,13 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .baseSpAttack  = GALAR_FOSSIL_SPA + ARCTO_SPA,
         .baseSpDefense = GALAR_FOSSIL_SPD + ARCTO_SPD + VISH_SPD,
         .types = MON_TYPES(TYPE_WATER, TYPE_ICE),
-        .catchRate = 45,
-        .expYield = 177,
+        GALAR_FOSSIL_INFO,
         .evYield_Defense = 2,
-        .genderRatio = MON_GENDERLESS,
-        .eggCycles = 35,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_WATER_ABSORB, ABILITY_ICE_BODY, ABILITY_SLUSH_RUSH },
+        .abilities = { VISH_ABILITY, ABILITY_ICE_BODY, ARCTO_ABILITY },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Arctovish"),
         .cryId = CRY_ARCTOVISH,
         .natDexNum = NATIONAL_DEX_ARCTOVISH,
-        .categoryName = _("Fossil"),
         .height = 20,
         .weight = 1750,
         .description = COMPOUND_STRING(

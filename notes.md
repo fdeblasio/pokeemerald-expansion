@@ -73,6 +73,15 @@ upcoming
     - Norman's Spinda's left ear might be off?
     - Reduce Surf slots to just 3? (Variety will come from all the routes with water)
 - Lilycove:
+    - Pokecenter Ladies
+        - Add third one
+        - Allow multiple items to be given. Potentially PokeBlocks too
+        - Remove exclusivity
+        - Update Favor Lady's items to include new items
+        - Combine Quiz Lady arrays (could do in develop)
+        - From bugs:
+            - If you help one of the Lilycove Pokémon Center ladies, the other lady thinks you've already helped her as well
+                - Could have something to do with this: sContestLadyPtr->id = LILYCOVE_LADY_CONTEST
     - Edit contests
         - Better overworld sprite for Lisia
         - Update ORAS opponent stats
@@ -377,8 +386,6 @@ upcoming
         - Scott at Battle Frontier once he's talked to there
         - Steven at Meteor Falls once he's talked to there
         - Wally in Victory Road after he's beaten there (this one might just be a flag issue on the current save)
-- Edit contests?
-- Update Favor Lady's items to include new items
 - Diversify water routes instead of just Tentacool/Wingull (definitely add more Carvanha, especially around Team Aqua-related areas; bring some fishing encounters to Surf)
 - Add postgame starters to Hoenn Pokédex?
     - They need Hoenn Pokédex completed to get, but could have them act similarly to Jirachi/Deoxys

@@ -284,9 +284,9 @@ static const u16 sQuizLadyQuestion16[QUIZ_QUESTION_LEN] =
 
 static const struct LilycoveQuizLadyQuestions sQuizLadyQuestions[] =
 {
-    {.question = sQuizLadyQuestion1,  .answer = EC_WORD_POKEDEX,    .prize = ITEM_GLITTER_MAIL},
-    {.question = sQuizLadyQuestion2,  .answer = EC_WORD_DARK,       .prize = ITEM_BEAD_MAIL},
-    {.question = sQuizLadyQuestion3,  .answer = EC_WORD_LEVEL,      .prize = ITEM_TROPIC_MAIL},
+    {.question = sQuizLadyQuestion1,  .answer = EC_WORD_POKEDEX,    .prize = ITEM_SPELON_BERRY},
+    {.question = sQuizLadyQuestion2,  .answer = EC_WORD_DARK,       .prize = ITEM_PAMTRE_BERRY},
+    {.question = sQuizLadyQuestion3,  .answer = EC_WORD_LEVEL,      .prize = ITEM_EXP_CANDY_XL},
     {.question = sQuizLadyQuestion4,  .answer = EC_WORD_FLOWERS,    .prize = ITEM_MAX_ETHER},
     {.question = sQuizLadyQuestion5,  .answer = EC_WORD_EGG,        .prize = ITEM_MAX_ETHER},
     {.question = sQuizLadyQuestion6,  .answer = EC_WORD_OWN_TEMPO,  .prize = ITEM_MAX_ETHER},
@@ -294,12 +294,12 @@ static const struct LilycoveQuizLadyQuestions sQuizLadyQuestions[] =
     {.question = sQuizLadyQuestion8,  .answer = EC_WORD_SHADOW_TAG, .prize = ITEM_BELUE_BERRY},
     {.question = sQuizLadyQuestion9,  .answer = EC_WORD_IMMUNITY,   .prize = ITEM_DURIN_BERRY},
     {.question = sQuizLadyQuestion10, .answer = EC_WORD_POKEMON,    .prize = ITEM_LUXURY_BALL},
-    {.question = sQuizLadyQuestion11, .answer = EC_WORD_PC,         .prize = ITEM_TM_HYPER_BEAM},
+    {.question = sQuizLadyQuestion11, .answer = EC_WORD_PC,         .prize = ITEM_COMET_SHARD},
     {.question = sQuizLadyQuestion12, .answer = EC_WORD_TELEVISION, .prize = ITEM_BIG_PEARL},
     {.question = sQuizLadyQuestion13, .answer = EC_WORD_PLUSH_DOLL, .prize = ITEM_STAR_PIECE},
     {.question = sQuizLadyQuestion14, .answer = EC_WORD_ICE,        .prize = ITEM_RARE_CANDY},
     {.question = sQuizLadyQuestion15, .answer = EC_WORD_FIGHTING,   .prize = ITEM_RARE_CANDY},
-    {.question = sQuizLadyQuestion16, .answer = EC_WORD_DARK,       .prize = ITEM_PREMIER_BALL},
+    {.question = sQuizLadyQuestion16, .answer = EC_WORD_DARK,       .prize = ITEM_DUSK_BALL},
 };
 
 // Favor Lady data
@@ -462,5 +462,5 @@ static const struct LilycoveFavorLady sFavorLady[] =
     {.request = COMPOUND_STRING("wham-ish"), .acceptedItems = sFavorLadyAcceptedItems_Whamish,  .prize = ITEM_PROTEIN},
     {.request = COMPOUND_STRING("shiny"),    .acceptedItems = sFavorLadyAcceptedItems_Shiny,    .prize = ITEM_HEART_SCALE},
     {.request = COMPOUND_STRING("sticky"),   .acceptedItems = sFavorLadyAcceptedItems_Sticky,   .prize = ITEM_RARE_CANDY},
-    {.request = COMPOUND_STRING("pointy"),   .acceptedItems = sFavorLadyAcceptedItems_Pointy,   .prize = ITEM_PP_MAX},
+    {.request = COMPOUND_STRING("pointy"),   .acceptedItems = sFavorLadyAcceptedItems_Pointy,   .prize = ITEM_BALM_MUSHROOM},
 };

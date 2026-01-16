@@ -74,18 +74,20 @@ upcoming
     - Reduce Surf slots to just 3? (Variety will come from all the routes with water)
 - Lilycove:
     - Pokecenter Ladies
-        - Add third one
-        - Allow multiple items to be given. Potentially PokeBlocks too
-        - Remove exclusivity
+        - "Union'd together"
+            - Now a struct
+            - Breaks current Favor Lady but a new game should be good
+            - .id can eventually be removed but seems to be used in record_mixing.c
+                - Could maybe make 3 seperate structs after this
         - Update Favor Lady's items to include new items
-        - Combine Quiz Lady arrays (could do in develop)
-        - From bugs:
-            - If you help one of the Lilycove Pokémon Center ladies, the other lady thinks you've already helped her as well
-                - Could have something to do with this: sContestLadyPtr->id = LILYCOVE_LADY_CONTEST
+            - Wait for PR in upcoming
+            - Replace TM15 and PP Max
+        - Allow multiple items to be given. Potentially PokeBlocks and quizzes too
     - Edit contests
         - Better overworld sprite for Lisia
         - Update ORAS opponent stats
         - Add unique ideas to Special Rank
+            - Contest Lady's Pokemon
             - Utilize non-trainer/other important GFX
                 - weird guy
                 - Devon employee/the similar MAN_2
@@ -295,6 +297,9 @@ upcoming
     - Route 110: Trick House or New Mauville
     - Route 117: Daycare?
     - Route 128: Where Steven flies to?
+
+### FRLG
+- Will need to revert Surf/Waterfall/Dive items to their original functions
 
 ### Overworld
 - Seperate out split routes into two maps for different encounters?

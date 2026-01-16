@@ -1,11 +1,3 @@
-LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady::
-	special Script_GetLilycoveLadyId
-	switch VAR_RESULT
-	case LILYCOVE_LADY_QUIZ, LilycoveCity_PokemonCenter_1F_EventScript_QuizLady
-	case LILYCOVE_LADY_FAVOR, LilycoveCity_PokemonCenter_1F_EventScript_FavorLady
-	case LILYCOVE_LADY_CONTEST, LilycoveCity_PokemonCenter_1F_EventScript_ContestLady
-	end
-
 LilycoveCity_PokemonCenter_1F_EventScript_FavorLady::
 	lock
 	faceplayer
@@ -698,11 +690,6 @@ LilycoveCity_PokemonCenter_1F_Text_WriteYourQuiz:
 LilycoveCity_PokemonCenter_1F_Text_QuitWritingQuizQuestion:
 	.string "Are you going to quit writing\n"
 	.string "your quiz question?$"
-
-@ Unused
-LilycoveCity_PokemonCenter_1F_Text_QuitWritingQuizAnswer:
-	.string "Are you going to quit choosing\n"
-	.string "your quiz answer?$"
 
 LilycoveCity_PokemonCenter_1F_Text_IllLookForAChallenger:
 	.string "Thank you!\n"

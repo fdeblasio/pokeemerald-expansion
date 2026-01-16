@@ -73,11 +73,6 @@ void ResetLilycoveLadyForRecordMix(void)
     }
 }
 
-void Script_GetLilycoveLadyId(void)
-{
-    gSpecialVar_Result = GetLilycoveLadyId();
-}
-
 static u8 GetNumAcceptedItems(const u16 *itemsArray)
 {
     u8 numItems;

@@ -793,7 +793,7 @@ struct MauvilleOldManTrader
     u8 language[NUM_TRADER_ITEMS];
 };
 
-typedef union OldMan
+typedef struct OldMan
 {
     struct MauvilleManCommon common;
     struct MauvilleManBard bard;
@@ -801,7 +801,6 @@ typedef union OldMan
     struct MauvilleManHipster hipster;
     struct MauvilleOldManTrader trader;
     struct MauvilleManStoryteller storyteller;
-    u8 filler[0x40];
 } OldMan;
 
 #define LINK_B_RECORDS_COUNT 5

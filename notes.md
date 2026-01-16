@@ -499,6 +499,9 @@ upcoming
     - Route 117: Daycare?
     - Route 128: Where Steven flies to?
 
+### FRLG
+- Will need to revert Surf/Waterfall/Dive items to their original functions
+
 ### Overworld
 - Seperate out split routes into two maps for different encounters?
     - 103 east/west

@@ -509,6 +509,9 @@ upcoming
     - 115 north/south (north/middle/south?)
     - 118 east/west
 - Add sand encounters to Dewford area (using desert sand)
+- Make 114 easier to navigate
+    - Remove big rocks by Lanette
+    - Remove ledge by berries?
 - Finish Safari Zone forest
     - Gastly can replace one of the spots of Pokemon moved to the forest
     - Houndour can too (possibly swapping with a Fire Cave Pokemon) if removed from the Hoenn Dex

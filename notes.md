@@ -307,8 +307,12 @@ upcoming
 - Seperate out split routes into two maps for different encounters?
     - 103 east/west
     - 111 pre-/post-desert?
+    - 115 north/south
     - 118 east/west
 - Add sand encounters to Dewford area (using desert sand)
+- Make 114 easier to navigate
+    - Remove big rocks by Lanette
+    - Remove ledge by berries?
 - Finish Safari Zone forest
 - Find other ways to increase amount of encounters while still having 4-5 Pokémon per pool
 - Add new defines (but keep current ones) for overworld sprites that line up with trainers for easier use
@@ -368,6 +372,7 @@ upcoming
     - Change Kirlia and Dusclops to fit the type of move used?
 
 ### Other
+- Make catching easier by making the third shake automatically pass?
 - Decap easy chat species/moves/multi-word choices?
 - Easy Chat for non-base Hoenn mons (especially now that the National Dex is disabled)
     - National Dex is disabled but Frontier/Trainer Hill mons are now registered. Potentially see if those can be added to easy chat anyways

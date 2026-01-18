@@ -140,7 +140,6 @@ upcoming
 - Once more changes are made, consolidate commits on develop branch again
 
 ### Pokémon
-- Finish applying catch rate macro (take into account Pokemon that have had theirs boosted above 45)
 - Double check that all Gen1 Pokémon have updated movesets
     - Next do all starters/beasts/bugs/birds/etc.
     - Not including cross-gen evos or regionals or already updated:
@@ -383,7 +382,6 @@ upcoming
     - Pokédex (and HGSS Pokédex)
     - look in graphics/ for more
     - Trainer card
-- Get rid of low health constant beeping (https://www.pokecommunity.com/showpost.php?p=10246778&postcount=194)
 - Add more EXP Candy
 - PC in menu
     - Look at debug menu or at https://www.pokecommunity.com/showpost.php?p=10127351&postcount=47

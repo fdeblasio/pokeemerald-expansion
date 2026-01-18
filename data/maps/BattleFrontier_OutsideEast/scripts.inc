@@ -69,10 +69,8 @@ BattleFrontier_OutsideEast_EventScript_Zigzagoon::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_BATTLE_FRONTIER_OUTSIDE, CRY_MODE_NORMAL
-	setseenmon SPECIES_BATTLE_FRONTIER_OUTSIDE
-	bufferspeciesname STR_VAR_1, SPECIES_BATTLE_FRONTIER_OUTSIDE
-	msgbox BattleFrontier_OutsideEast_Text_ZigzagoonLooksVacant, MSGBOX_DEFAULT
+	overworldspecies SPECIES_BATTLE_FRONTIER_OUTSIDE
+	bufferspeciestext SPECIES_BATTLE_FRONTIER_OUTSIDE, BattleFrontier_OutsideEast_Text_ZigzagoonLooksVacant, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end

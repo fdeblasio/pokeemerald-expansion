@@ -13,9 +13,8 @@ VermilionCity_House3_EventScript_Pidgey::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_PIDGEY, CRY_MODE_NORMAL
-	setseenmon SPECIES_PIDGEY
-	msgbox VermilionCity_House3_Text_Pidgey
+	overworldspecies SPECIES_PIDGEY
+	bufferspeciestext SPECIES_PIDGEY, VermilionCity_House3_Text_Pidgey
 	waitmoncry
 	release
 	end
@@ -29,7 +28,7 @@ VermilionCity_House3_Text_PidgeyFlyLetterToSaffron::
 	.string "letter to Saffron in the north.$"
 
 VermilionCity_House3_Text_Pidgey::
-	.string "Pidgey: Kurukkoo!$"
+	.string "{STR_VAR_1}: Kurukkoo!$"
 
 VermilionCity_House3_Text_DearPippiLetter::
 	.string "Dear Pippi,\n"

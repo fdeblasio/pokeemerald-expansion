@@ -281,12 +281,10 @@ BattleFrontier_BattlePikeRoomNormal_EventScript_EnterStatusRoom::
 	end
 
 BattleFrontier_BattlePikeRoomNormal_EventScript_KirliaAttack::
-	bufferspeciesname STR_VAR_1, SPECIES_BATTLE_PIKE_1
-	msgbox BattleFrontier_BattlePikeRoomNormal_Text_Stop, MSGBOX_DEFAULT
+	bufferspeciestext SPECIES_BATTLE_PIKE_1, BattleFrontier_BattlePikeRoomNormal_Text_Stop, MSGBOX_DEFAULT
 	closemessage
 	waitse
-	playmoncry SPECIES_BATTLE_PIKE_1, CRY_MODE_NORMAL
-	setseenmon SPECIES_BATTLE_PIKE_1
+	overworldspecies SPECIES_BATTLE_PIKE_1
 	waitmoncry
 	pike_getstatus
 	call_if_eq VAR_RESULT, PIKE_STATUS_TOXIC, BattleFrontier_BattlePikeRoomNormal_EventScript_UsedToxic
@@ -314,12 +312,10 @@ BattleFrontier_BattlePikeRoomNormal_EventScript_KirliaAttack::
 	return
 
 BattleFrontier_BattlePikeRoomNormal_EventScript_DusclopsAttack::
-	bufferspeciesname STR_VAR_1, SPECIES_BATTLE_PIKE_2
-	msgbox BattleFrontier_BattlePikeRoomNormal_Text_Stop, MSGBOX_DEFAULT
+	bufferspeciestext SPECIES_BATTLE_PIKE_2, BattleFrontier_BattlePikeRoomNormal_Text_Stop, MSGBOX_DEFAULT
 	closemessage
 	waitse
-	playmoncry SPECIES_BATTLE_PIKE_2, CRY_MODE_NORMAL
-	setseenmon SPECIES_BATTLE_PIKE_2
+	overworldspecies SPECIES_BATTLE_PIKE_2
 	waitmoncry
 	pike_getstatus
 	call_if_eq VAR_RESULT, PIKE_STATUS_FREEZE, BattleFrontier_BattlePikeRoomNormal_EventScript_UsedIceBeam

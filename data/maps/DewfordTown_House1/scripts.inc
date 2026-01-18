@@ -13,10 +13,8 @@ DewfordTown_House1_EventScript_Zigzagoon::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_DEWFORD_HOUSE, CRY_MODE_NORMAL
-	setseenmon SPECIES_DEWFORD_HOUSE
-	bufferspeciesname STR_VAR_1, SPECIES_DEWFORD_HOUSE
-	msgbox DewfordTown_House1_Text_Zigzagoon, MSGBOX_DEFAULT
+	overworldspecies SPECIES_DEWFORD_HOUSE
+	bufferspeciestext SPECIES_DEWFORD_HOUSE, DewfordTown_House1_Text_Zigzagoon, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end

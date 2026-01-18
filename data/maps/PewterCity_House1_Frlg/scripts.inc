@@ -24,15 +24,14 @@ PewterCity_House1_EventScript_Nidoran::
 PewterCity_House1_EventScript_DoNidoranCry::
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	waitse
-	playmoncry SPECIES_NIDORAN_M, CRY_MODE_NORMAL
-	setseenmon SPECIES_NIDORAN_M
-	msgbox PewterCity_House1_Text_Nidoran
+	overworldspecies SPECIES_NIDORAN_M
+	bufferspeciestext SPECIES_NIDORAN_M, PewterCity_House1_Text_Nidoran
 	waitmoncry
 	call EventScript_RestorePrevTextColor
 	return
 
 PewterCity_House1_Text_Nidoran::
-	.string "Nidoran♂: Bowbow!$"
+	.string "{STR_VAR_1}: Bowbow!$"
 
 PewterCity_House1_Text_NidoranSit::
 	.string "Nidoran, sit!$"

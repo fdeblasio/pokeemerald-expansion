@@ -353,18 +353,15 @@ Route109_EventScript_Woman::
 	end
 
 Route109_EventScript_OldMan::
-	bufferspeciesname STR_VAR_1, SPECIES_ROUTE_109_TRASH_COLLECTOR
-	msgbox Route109_Text_ZigzagoonPicksUpLitter, MSGBOX_NPC
+	bufferspeciestext SPECIES_ROUTE_109_TRASH_COLLECTOR, Route109_Text_ZigzagoonPicksUpLitter, MSGBOX_NPC
 	end
 
 Route109_EventScript_Zigzagoon::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_ROUTE_109_TRASH_COLLECTOR, CRY_MODE_NORMAL
-	setseenmon SPECIES_ROUTE_109_TRASH_COLLECTOR
-	bufferspeciesname STR_VAR_1, SPECIES_ROUTE_109_TRASH_COLLECTOR
-	msgbox Route109_Text_ZigzagoonCry, MSGBOX_DEFAULT
+	overworldspecies SPECIES_ROUTE_109_TRASH_COLLECTOR
+	bufferspeciestext SPECIES_ROUTE_109_TRASH_COLLECTOR, Route109_Text_ZigzagoonCry, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end

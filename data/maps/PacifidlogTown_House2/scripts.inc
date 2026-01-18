@@ -33,10 +33,8 @@ PacifidlogTown_House2_EventScript_HappyAzurill::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_PACIFIDLOG_TM, CRY_MODE_NORMAL
-	setseenmon SPECIES_PACIFIDLOG_TM
-	bufferspeciesname STR_VAR_1, SPECIES_PACIFIDLOG_TM
-	msgbox PacifidlogTown_House2_Text_Rurii, MSGBOX_DEFAULT
+	overworldspecies SPECIES_PACIFIDLOG_TM
+	bufferspeciestext SPECIES_PACIFIDLOG_TM, PacifidlogTown_House2_Text_Rurii, MSGBOX_DEFAULT
 	waitmoncry
 	msgbox PacifidlogTown_House2_Text_VeryFriendlyWithTrainer, MSGBOX_DEFAULT
 	release
@@ -46,10 +44,8 @@ PacifidlogTown_House2_EventScript_UnhappyAzurill::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_PACIFIDLOG_TM, CRY_MODE_ENCOUNTER
-	setseenmon SPECIES_PACIFIDLOG_TM
-	bufferspeciesname STR_VAR_1, SPECIES_PACIFIDLOG_TM
-	msgbox PacifidlogTown_House2_Text_Rururi, MSGBOX_DEFAULT
+	overworldspecies SPECIES_PACIFIDLOG_TM, CRY_MODE_ENCOUNTER
+	bufferspeciestext SPECIES_PACIFIDLOG_TM, PacifidlogTown_House2_Text_Rururi, MSGBOX_DEFAULT
 	waitmoncry
 	msgbox PacifidlogTown_House2_Text_DoesntLikeTrainerVeryMuch, MSGBOX_DEFAULT
 	release

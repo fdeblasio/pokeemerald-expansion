@@ -126,18 +126,15 @@ LilycoveCity_DepartmentStore_1F_EventScript_LittleGirl::
 	end
 
 LilycoveCity_DepartmentStore_1F_EventScript_PokefanM::
-	bufferspeciesname STR_VAR_1, SPECIES_LILYCOVE_DEPARTMENT_STORE
-	msgbox LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill, MSGBOX_NPC
+	bufferspeciestext SPECIES_LILYCOVE_DEPARTMENT_STORE, LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill, MSGBOX_NPC
 	end
 
 LilycoveCity_DepartmentStore_1F_EventScript_Azumarill::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_LILYCOVE_DEPARTMENT_STORE, CRY_MODE_NORMAL
-	setseenmon SPECIES_LILYCOVE_DEPARTMENT_STORE
-	bufferspeciesname STR_VAR_1, SPECIES_LILYCOVE_DEPARTMENT_STORE
-	msgbox LilycoveCity_DepartmentStore_1F_Text_Azumarill, MSGBOX_DEFAULT
+	overworldspecies SPECIES_LILYCOVE_DEPARTMENT_STORE
+	bufferspeciestext SPECIES_LILYCOVE_DEPARTMENT_STORE, LilycoveCity_DepartmentStore_1F_Text_Azumarill, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end

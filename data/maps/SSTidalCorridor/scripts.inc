@@ -87,8 +87,7 @@ SSTidalCorridor_EventScript_Peeko::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_PEEKO, CRY_MODE_NORMAL
-	setseenmon SPECIES_PEEKO
+	overworldspecies SPECIES_PEEKO
 	msgbox SSTidalCorridor_Text_Peeko, MSGBOX_DEFAULT
 	waitmoncry
 	release

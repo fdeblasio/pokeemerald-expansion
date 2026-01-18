@@ -6,8 +6,7 @@ RustboroCity_House3_EventScript_OldMan::
 	end
 
 RustboroCity_House3_EventScript_OldWoman::
-	bufferspeciesname STR_VAR_1, SPECIES_RUSTBORO_PEKACHU
-	msgbox RustboroCity_House3_Text_NamingPikachuPekachu, MSGBOX_NPC
+	bufferspeciestext SPECIES_RUSTBORO_PEKACHU, RustboroCity_House3_Text_NamingPikachuPekachu, MSGBOX_NPC
 	end
 
 @ Misspelling on purpose, see nickname
@@ -15,8 +14,7 @@ RustboroCity_House3_EventScript_Pekachu::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_RUSTBORO_PEKACHU, CRY_MODE_NORMAL
-	setseenmon SPECIES_RUSTBORO_PEKACHU
+	overworldspecies SPECIES_RUSTBORO_PEKACHU
 	msgbox RustboroCity_House3_Text_Pekachu, MSGBOX_DEFAULT
 	waitmoncry
 	release

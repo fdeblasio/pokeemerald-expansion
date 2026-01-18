@@ -13,9 +13,8 @@ MossdeepCity_House2_EventScript_Wingull::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_FORTREE_MOSSDEEP_MESSENGER, CRY_MODE_NORMAL
-	bufferspeciesname STR_VAR_1, SPECIES_FORTREE_MOSSDEEP_MESSENGER
-	msgbox MossdeepCity_House2_Text_Wingull, MSGBOX_DEFAULT
+	overworldspecies SPECIES_FORTREE_MOSSDEEP_MESSENGER
+	bufferspeciestext SPECIES_FORTREE_MOSSDEEP_MESSENGER, MossdeepCity_House2_Text_Wingull, MSGBOX_DEFAULT
 	waitmoncry
 	closemessage
 	setflag FLAG_WINGULL_DELIVERED_MAIL

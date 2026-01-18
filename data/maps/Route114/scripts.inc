@@ -60,8 +60,7 @@ Route114_EventScript_Poochyena::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_ROUTE_117_ROAR, CRY_MODE_ENCOUNTER
-	setseenmon SPECIES_ROUTE_117_ROAR
+	overworldspecies SPECIES_ROUTE_117_ROAR, CRY_MODE_ENCOUNTER
 	msgbox Route114_Text_Poochyena, MSGBOX_DEFAULT
 	waitmoncry
 	release

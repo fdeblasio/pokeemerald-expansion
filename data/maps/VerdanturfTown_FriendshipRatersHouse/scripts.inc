@@ -56,10 +56,8 @@ VerdanturfTown_FriendshipRatersHouse_EventScript_Pikachu::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_VERDANTURF_FRIENDSHIP_RATER, CRY_MODE_NORMAL
-	setseenmon SPECIES_VERDANTURF_FRIENDSHIP_RATER
-	bufferspeciesname STR_VAR_1, SPECIES_VERDANTURF_FRIENDSHIP_RATER
-	msgbox VerdanturfTown_FriendshipRatersHouse_Text_Pikachu, MSGBOX_DEFAULT
+	overworldspecies SPECIES_VERDANTURF_FRIENDSHIP_RATER
+	bufferspeciestext SPECIES_VERDANTURF_FRIENDSHIP_RATER, VerdanturfTown_FriendshipRatersHouse_Text_Pikachu, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end

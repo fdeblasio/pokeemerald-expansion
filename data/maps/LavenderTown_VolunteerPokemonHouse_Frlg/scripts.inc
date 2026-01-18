@@ -53,9 +53,8 @@ LavenderTown_VolunteerPokemonHouse_EventScript_Nidorino::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_NIDORINO, CRY_MODE_NORMAL
-	setseenmon SPECIES_NIDORINO
-	msgbox LavenderTown_VolunteerPokemonHouse_Text_Nidorino
+	overworldspecies SPECIES_NIDORINO
+	bufferspeciestext SPECIES_NIDORINO, LavenderTown_VolunteerPokemonHouse_Text_Nidorino
 	waitmoncry
 	release
 	end
@@ -64,9 +63,8 @@ LavenderTown_VolunteerPokemonHouse_EventScript_Psyduck::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_PSYDUCK, CRY_MODE_NORMAL
-	setseenmon SPECIES_PSYDUCK
-	msgbox LavenderTown_VolunteerPokemonHouse_Text_Psyduck
+	overworldspecies SPECIES_PSYDUCK
+	bufferspeciestext SPECIES_PSYDUCK, LavenderTown_VolunteerPokemonHouse_Text_Psyduck
 	waitmoncry
 	release
 	end
@@ -106,10 +104,10 @@ LavenderTown_VolunteerPokemonHouse_Text_MonsNiceToHug::
 	.string "Pokémon are so nice to hug.$"
 
 LavenderTown_VolunteerPokemonHouse_Text_Nidorino::
-	.string "Nidorino: Gaoo!$"
+	.string "{STR_VAR_1}: Gaoo!$"
 
 LavenderTown_VolunteerPokemonHouse_Text_Psyduck::
-	.string "Psyduck: Gwappa!$"
+	.string "{STR_VAR_1}: Gwappa!$"
 
 LavenderTown_VolunteerPokemonHouse_Text_IdLikeYouToHaveThis::
 	.string "Mr. Fuji: {PLAYER}…\p"

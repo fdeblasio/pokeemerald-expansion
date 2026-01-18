@@ -383,7 +383,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_FeedPokeblock::
 	waitmovement 0
 	delay 60
 	waitse
-	playmoncry VAR_0x8005, CRY_MODE_NORMAL
+	overworldspecies VAR_0x8005
 	delay 120
 	waitmoncry
 	goto_if_eq VAR_0x8004, 1, LilycoveCity_PokemonCenter_1F_EventScript_MonEnjoyPokeblock
@@ -472,7 +472,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_Zigzagoon::
 	lock
 	faceplayer
 	waitse
-	playmoncry VAR_0x8005, CRY_MODE_NORMAL
+	overworldspecies VAR_0x8005
 	msgbox LilycoveCity_PokemonCenter_1F_Text_Zigzagoon, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -482,7 +482,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_Skitty::
 	lock
 	faceplayer
 	waitse
-	playmoncry VAR_0x8005, CRY_MODE_NORMAL
+	overworldspecies VAR_0x8005
 	msgbox LilycoveCity_PokemonCenter_1F_Text_Skitty, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -492,7 +492,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_Poochyena::
 	lock
 	faceplayer
 	waitse
-	playmoncry VAR_0x8005, CRY_MODE_NORMAL
+	overworldspecies VAR_0x8005
 	msgbox LilycoveCity_PokemonCenter_1F_Text_Poochyena, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -502,7 +502,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_Kecleon::
 	lock
 	faceplayer
 	waitse
-	playmoncry VAR_0x8005, CRY_MODE_NORMAL
+	overworldspecies VAR_0x8005
 	msgbox LilycoveCity_PokemonCenter_1F_Text_Kecleon, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -512,7 +512,7 @@ LilycoveCity_PokemonCenter_1F_EventScript_Pikachu::
 	lock
 	faceplayer
 	waitse
-	playmoncry VAR_0x8005, CRY_MODE_NORMAL
+	overworldspecies VAR_0x8005
 	msgbox LilycoveCity_PokemonCenter_1F_Text_Pikachu, MSGBOX_DEFAULT
 	waitmoncry
 	release

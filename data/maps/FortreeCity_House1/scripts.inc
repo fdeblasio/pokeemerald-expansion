@@ -5,6 +5,7 @@ FortreeCity_House1_EventScript_Trader::
 	lock
 	faceplayer
 	goto_if_set FLAG_FORTREE_NPC_TRADE_COMPLETED, FortreeCity_House1_EventScript_TradeCompleted
+	bufferspeciesname STR_VAR_1, VAR_0x8009
 	ingame_trade INGAME_TRADE_PLUSLE, FortreeCity_House1_Text_YouWillTradeWontYou, FortreeCity_House1_EventScript_DeclineTrade, FortreeCity_House1_EventScript_NotRequestedMon, FortreeCity_House1_Text_MonYouTakeCare
 	setflag FLAG_FORTREE_NPC_TRADE_COMPLETED
 	release
@@ -16,8 +17,7 @@ FortreeCity_House1_EventScript_DeclineTrade::
 	end
 
 FortreeCity_House1_EventScript_NotRequestedMon::
-	bufferspeciesname STR_VAR_1, VAR_0x8009
-	msgbox FortreeCity_House1_Text_ThisIsntAMon, MSGBOX_DEFAULT
+	bufferspeciestext VAR_0x8009, FortreeCity_House1_Text_ThisIsntAMon, MSGBOX_DEFAULT
 	release
 	end
 
@@ -34,10 +34,8 @@ FortreeCity_House1_EventScript_Zigzagoon::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_FORTREE_HOUSE_1, CRY_MODE_NORMAL
-	setseenmon SPECIES_FORTREE_HOUSE_1
-	bufferspeciesname STR_VAR_1, SPECIES_FORTREE_HOUSE_1
-	msgbox FortreeCity_House1_Text_Zigzagoon, MSGBOX_DEFAULT
+	overworldspecies SPECIES_FORTREE_HOUSE_1
+	bufferspeciestext SPECIES_FORTREE_HOUSE_1, FortreeCity_House1_Text_Zigzagoon, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end

@@ -31,10 +31,8 @@ BattleFrontier_PokemonCenter_1F_EventScript_Skitty::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_BATTLE_FRONTIER_POKE_CENTER, CRY_MODE_NORMAL
-	setseenmon SPECIES_BATTLE_FRONTIER_POKE_CENTER
-	bufferspeciesname STR_VAR_1, SPECIES_BATTLE_FRONTIER_POKE_CENTER
-	msgbox BattleFrontier_PokemonCenter_1F_Text_Skitty, MSGBOX_DEFAULT
+	overworldspecies SPECIES_BATTLE_FRONTIER_POKE_CENTER
+	bufferspeciestext SPECIES_BATTLE_FRONTIER_POKE_CENTER, BattleFrontier_PokemonCenter_1F_Text_Skitty, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end

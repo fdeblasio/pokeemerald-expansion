@@ -22,8 +22,7 @@ FallarborTown_EventScript_ExpertMNormal::
 	end
 
 FallarborTown_EventScript_Girl::
-	bufferspeciesname STR_VAR_1, SPECIES_FALLARBOR_TOWN
-	msgbox FallarborTown_Text_MyPreciousAzurill, MSGBOX_NPC
+	bufferspeciestext SPECIES_FALLARBOR_TOWN, FallarborTown_Text_MyPreciousAzurill, MSGBOX_NPC
 	end
 
 FallarborTown_EventScript_Gentleman::
@@ -34,10 +33,8 @@ FallarborTown_EventScript_Azurill::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_FALLARBOR_TOWN, CRY_MODE_NORMAL
-	setseenmon SPECIES_FALLARBOR_TOWN
-	bufferspeciesname STR_VAR_1, SPECIES_FALLARBOR_TOWN
-	msgbox FallarborTown_Text_Azurill, MSGBOX_DEFAULT
+	overworldspecies SPECIES_FALLARBOR_TOWN
+	bufferspeciestext SPECIES_FALLARBOR_TOWN, FallarborTown_Text_Azurill, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end

@@ -9,10 +9,8 @@ LilycoveCity_House1_EventScript_Kecleon::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_LILYCOVE_HOUSE, CRY_MODE_NORMAL
-	setseenmon SPECIES_LILYCOVE_HOUSE
-	bufferspeciesname STR_VAR_1, SPECIES_LILYCOVE_HOUSE
-	msgbox LilycoveCity_House1_Text_Kecleon, MSGBOX_DEFAULT
+	overworldspecies SPECIES_LILYCOVE_HOUSE
+	bufferspeciestext SPECIES_LILYCOVE_HOUSE, LilycoveCity_House1_Text_Kecleon, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end

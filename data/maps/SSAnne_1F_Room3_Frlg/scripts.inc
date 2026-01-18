@@ -13,9 +13,8 @@ SSAnne_1F_Room3_EventScript_Wigglytuff::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_WIGGLYTUFF, CRY_MODE_NORMAL
-	setseenmon SPECIES_WIGGLYTUFF
-	msgbox SSAnne_1F_Room3_Text_Wigglytuff
+	overworldspecies SPECIES_WIGGLYTUFF
+	bufferspeciestext SPECIES_WIGGLYTUFF, SSAnne_1F_Room3_Text_Wigglytuff
 	waitmoncry
 	release
 	end
@@ -29,5 +28,5 @@ SSAnne_1F_Room3_Text_AlwaysTravelWithWigglytuff::
 	.string "I never leave home without it.$"
 
 SSAnne_1F_Room3_Text_Wigglytuff::
-	.string "Wigglytuff: Puup pupuu!$"
+	.string "{STR_VAR_1}: Puup pupuu!$"
 

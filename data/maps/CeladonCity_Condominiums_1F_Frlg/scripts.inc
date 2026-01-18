@@ -31,9 +31,8 @@ CeladonCity_Condominiums_1F_EventScript_Meowth::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_MEOWTH, CRY_MODE_NORMAL
-	setseenmon SPECIES_MEOWTH
-	msgbox CeladonCity_Condominiums_1F_Text_Meowth
+	overworldspecies SPECIES_MEOWTH
+	bufferspeciestext SPECIES_MEOWTH, CeladonCity_Condominiums_1F_Text_Meowth
 	waitmoncry
 	release
 	end
@@ -42,9 +41,8 @@ CeladonCity_Condominiums_1F_EventScript_Clefairy::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_CLEFAIRY, CRY_MODE_NORMAL
-	setseenmon SPECIES_CLEFAIRY
-	msgbox CeladonCity_Condominiums_1F_Text_Clefairy
+	overworldspecies SPECIES_CLEFAIRY
+	bufferspeciestext SPECIES_CLEFAIRY, CeladonCity_Condominiums_1F_Text_Clefairy
 	waitmoncry
 	release
 	end
@@ -53,9 +51,8 @@ CeladonCity_Condominiums_1F_EventScript_Nidoran::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_NIDORAN_F, CRY_MODE_NORMAL
-	setseenmon SPECIES_NIDORAN_F
-	msgbox CeladonCity_Condominiums_1F_Text_Nidoran
+	overworldspecies SPECIES_NIDORAN_F
+	bufferspeciestext SPECIES_NIDORAN_F, CeladonCity_Condominiums_1F_Text_Nidoran
 	waitmoncry
 	release
 	end
@@ -65,7 +62,7 @@ CeladonCity_Condominiums_1F_EventScript_SuiteSign::
 	end
 
 CeladonCity_Condominiums_1F_Text_Meowth::
-	.string "Meowth: Meow!$"
+	.string "{STR_VAR_1}: Meow!$"
 
 CeladonCity_Condominiums_1F_Text_TryThisDrinkInstead::
 	.string "You shouldn't spend all your money\n"
@@ -92,10 +89,10 @@ CeladonCity_Condominiums_1F_Text_DaisyComesToBuyTea::
 	.string "to buy some Tea.$"
 
 CeladonCity_Condominiums_1F_Text_Clefairy::
-	.string "Clefairy: Pi pippippi!$"
+	.string "{STR_VAR_1}: Pi pippippi!$"
 
 CeladonCity_Condominiums_1F_Text_Nidoran::
-	.string "Nidoran♀: Kya kyaoo!$"
+	.string "{STR_VAR_1}: Kya kyaoo!$"
 
 CeladonCity_Condominiums_1F_Text_ManagersSuite::
 	.string "Celadon Mansion\n"

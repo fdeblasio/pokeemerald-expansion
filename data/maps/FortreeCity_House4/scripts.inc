@@ -23,16 +23,14 @@ FortreeCity_House4_EventScript_Boy::
 FortreeCity_House4_EventScript_WingullOnErrand::
 	applymovement VAR_LAST_TALKED, Common_Movement_FacePlayer
 	waitmovement 0
-	bufferspeciesname STR_VAR_1, SPECIES_FORTREE_MOSSDEEP_MESSENGER
-	msgbox FortreeCity_House4_Text_AskedWingullToRunErrand, MSGBOX_DEFAULT
+	bufferspeciestext SPECIES_FORTREE_MOSSDEEP_MESSENGER, FortreeCity_House4_Text_AskedWingullToRunErrand, MSGBOX_DEFAULT
 	releaseall
 	end
 
 FortreeCity_House4_EventScript_WingullReturned::
 	applymovement VAR_LAST_TALKED, Common_Movement_FacePlayer
 	waitmovement 0
-	bufferspeciesname STR_VAR_1, SPECIES_FORTREE_MOSSDEEP_MESSENGER
-	msgbox FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb, MSGBOX_DEFAULT
+	bufferspeciestext SPECIES_FORTREE_MOSSDEEP_MESSENGER, FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb, MSGBOX_DEFAULT
 	giveitem ITEM_MENTAL_HERB
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_MENTAL_HERB
@@ -42,8 +40,7 @@ FortreeCity_House4_EventScript_WingullReturned::
 FortreeCity_House4_EventScript_ReceivedMentalHerb::
 	applymovement VAR_LAST_TALKED, Common_Movement_FacePlayer
 	waitmovement 0
-	bufferspeciesname STR_VAR_1, SPECIES_FORTREE_MOSSDEEP_MESSENGER
-	msgbox FortreeCity_House4_Text_FriendsFarAwayThanksToWingull, MSGBOX_DEFAULT
+	bufferspeciestext SPECIES_FORTREE_MOSSDEEP_MESSENGER, FortreeCity_House4_Text_FriendsFarAwayThanksToWingull, MSGBOX_DEFAULT
 	releaseall
 	end
 
@@ -59,10 +56,8 @@ FortreeCity_House4_EventScript_Wingull::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_FORTREE_MOSSDEEP_MESSENGER, CRY_MODE_NORMAL
-	setseenmon SPECIES_FORTREE_MOSSDEEP_MESSENGER
-	bufferspeciesname STR_VAR_1, SPECIES_FORTREE_MOSSDEEP_MESSENGER
-	msgbox FortreeCity_House4_Text_Wingull, MSGBOX_DEFAULT
+	overworldspecies SPECIES_FORTREE_MOSSDEEP_MESSENGER
+	bufferspeciestext SPECIES_FORTREE_MOSSDEEP_MESSENGER, FortreeCity_House4_Text_Wingull, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end

@@ -226,10 +226,8 @@ SlateportCity_PokemonFanClub_EventScript_Skitty::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_SLATEPORT_FAN_CLUB_2, CRY_MODE_NORMAL
-	setseenmon SPECIES_SLATEPORT_FAN_CLUB_2
-	bufferspeciesname STR_VAR_1, SPECIES_SLATEPORT_FAN_CLUB_2
-	msgbox SlateportCity_PokemonFanClub_Text_Skitty, MSGBOX_DEFAULT
+	overworldspecies SPECIES_SLATEPORT_FAN_CLUB_2
+	bufferspeciestext SPECIES_SLATEPORT_FAN_CLUB_2, SlateportCity_PokemonFanClub_Text_Skitty, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end
@@ -238,10 +236,8 @@ SlateportCity_PokemonFanClub_EventScript_Zigzagoon::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_SLATEPORT_FAN_CLUB_1, CRY_MODE_NORMAL
-	setseenmon SPECIES_SLATEPORT_FAN_CLUB_1
-	bufferspeciesname STR_VAR_1, SPECIES_SLATEPORT_FAN_CLUB_1
-	msgbox SlateportCity_PokemonFanClub_Text_Zigzagoon, MSGBOX_DEFAULT
+	overworldspecies SPECIES_SLATEPORT_FAN_CLUB_1
+	bufferspeciestext SPECIES_SLATEPORT_FAN_CLUB_1, SlateportCity_PokemonFanClub_Text_Zigzagoon, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end
@@ -250,10 +246,8 @@ SlateportCity_PokemonFanClub_EventScript_Azumarill::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_SLATEPORT_FAN_CLUB_3, CRY_MODE_NORMAL
-	setseenmon SPECIES_SLATEPORT_FAN_CLUB_3
-	bufferspeciesname STR_VAR_1, SPECIES_SLATEPORT_FAN_CLUB_3
-	msgbox SlateportCity_PokemonFanClub_Text_Azumarill, MSGBOX_DEFAULT
+	overworldspecies SPECIES_SLATEPORT_FAN_CLUB_3
+	bufferspeciestext SPECIES_SLATEPORT_FAN_CLUB_3, SlateportCity_PokemonFanClub_Text_Azumarill, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end

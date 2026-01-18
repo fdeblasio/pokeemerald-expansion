@@ -2826,8 +2826,6 @@
 	.endm
 
 @ FRLG
-
-
 	@ Prints the provided message after playing the fanfare music (can only be MUS_LEVEL_UP or MUS_RG_OBTAIN_KEY_ITEM).
 	@ It then prints the message shown by using putitemaway.
 	.macro msgreceiveditem msg:req, item:req, amount=1, fanfare=MUS_LEVEL_UP
@@ -2863,4 +2861,15 @@
 	braillemessage \text
 	getbraillestringwidth \text
 	call EventScript_BrailleCursorWaitButton
+	.endm
+
+@ Custom
+	.macro overworldspecies species:req, cryMode=CRY_MODE_NORMAL
+	playmoncry \species, \cryMode
+	setseenmon \species
+	.endm
+
+	.macro bufferspeciestext species:req text:req, msgtype=MSGBOX_DEFAULT
+	bufferspeciesname STR_VAR_1, \species
+	msgbox \text, \msgtype
 	.endm

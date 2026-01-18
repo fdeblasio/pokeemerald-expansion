@@ -68,8 +68,7 @@ EventScript_BattleKecleon::
 	applymovement VAR_LAST_TALKED, Movement_KecleonAppears
 	waitmovement 0
 	waitse
-	playmoncry SPECIES_HIDDEN, CRY_MODE_ENCOUNTER
-	setseenmon SPECIES_HIDDEN
+	overworldspecies SPECIES_HIDDEN, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
 	setwildbattle SPECIES_HIDDEN, HIDDEN_LEVEL

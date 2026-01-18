@@ -194,8 +194,7 @@ SootopolisCity_EventScript_LegendariesSceneFromPokeCenter::
 	waitmovement 0
 	delay 60
 	waitse
-	playmoncry SPECIES_MARINE_CAVE, CRY_MODE_ENCOUNTER
-	setseenmon SPECIES_MARINE_CAVE
+	overworldspecies SPECIES_MARINE_CAVE, CRY_MODE_ENCOUNTER
 	applymovement LOCALID_SOOTOPOLIS_KYOGRE, SootopolisCity_Movement_KyogreAttack
 	applymovement LOCALID_SOOTOPOLIS_GROUDON, SootopolisCity_Movement_GroudonDefend
 	waitmovement 0
@@ -209,8 +208,7 @@ SootopolisCity_EventScript_LegendariesSceneFromPokeCenter::
 	applymovement LOCALID_SOOTOPOLIS_GROUDON, SootopolisCity_Movement_GroudonMoveBack
 	waitmovement 0
 	waitse
-	playmoncry SPECIES_TERRA_CAVE, CRY_MODE_ENCOUNTER
-	setseenmon SPECIES_TERRA_CAVE
+	overworldspecies SPECIES_TERRA_CAVE, CRY_MODE_ENCOUNTER
 	applymovement LOCALID_SOOTOPOLIS_KYOGRE, SootopolisCity_Movement_KyogreDefend
 	applymovement LOCALID_SOOTOPOLIS_GROUDON, SootopolisCity_Movement_GroudonAttack
 	waitmovement 0
@@ -296,8 +294,7 @@ SootopolisCity_EventScript_LegendariesSceneFromDive::
 	waitmovement 0
 	delay 60
 	waitse
-	playmoncry SPECIES_MARINE_CAVE, CRY_MODE_ENCOUNTER
-	setseenmon SPECIES_MARINE_CAVE
+	overworldspecies SPECIES_MARINE_CAVE, CRY_MODE_ENCOUNTER
 	applymovement LOCALID_SOOTOPOLIS_KYOGRE, SootopolisCity_Movement_KyogreAttack
 	applymovement LOCALID_SOOTOPOLIS_GROUDON, SootopolisCity_Movement_GroudonDefend
 	waitmovement 0
@@ -311,8 +308,7 @@ SootopolisCity_EventScript_LegendariesSceneFromDive::
 	applymovement LOCALID_SOOTOPOLIS_GROUDON, SootopolisCity_Movement_GroudonMoveBack
 	waitmovement 0
 	waitse
-	playmoncry SPECIES_TERRA_CAVE, CRY_MODE_ENCOUNTER
-	setseenmon SPECIES_TERRA_CAVE
+	overworldspecies SPECIES_TERRA_CAVE, CRY_MODE_ENCOUNTER
 	applymovement LOCALID_SOOTOPOLIS_KYOGRE, SootopolisCity_Movement_KyogreDefend
 	applymovement LOCALID_SOOTOPOLIS_GROUDON, SootopolisCity_Movement_GroudonAttack
 	waitmovement 0
@@ -490,8 +486,7 @@ SootopolisCity_EventScript_RayquazaSceneFromPokeCenter::
 	applymovement LOCALID_CAMERA, SootopolisCity_Movement_PanUp
 	waitmovement 0
 	waitse
-	playmoncry SPECIES_SKY_PILLAR, CRY_MODE_ENCOUNTER
-	setseenmon SPECIES_SKY_PILLAR
+	overworldspecies SPECIES_SKY_PILLAR, CRY_MODE_ENCOUNTER
 	setvar VAR_0x8004, 1  @ vertical pan
 	setvar VAR_0x8005, 1  @ horizontal pan
 	setvar VAR_0x8006, 8  @ num shakes
@@ -544,8 +539,7 @@ SootopolisCity_EventScript_RayquazaSceneFromDive::
 	applymovement LOCALID_PLAYER, SootopolisCity_Movement_PlayerApproachLegendaries
 	waitmovement 0
 	waitse
-	playmoncry SPECIES_SKY_PILLAR, CRY_MODE_ENCOUNTER
-	setseenmon SPECIES_SKY_PILLAR
+	overworldspecies SPECIES_SKY_PILLAR, CRY_MODE_ENCOUNTER
 	setvar VAR_0x8004, 1  @ vertical pan
 	setvar VAR_0x8005, 1  @ horizontal pan
 	setvar VAR_0x8006, 8  @ num shakes

@@ -74,9 +74,8 @@ SaffronCity_EventScript_Pidgeot::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_PIDGEOT, CRY_MODE_NORMAL
-	setseenmon SPECIES_PIDGEOT
-	msgbox SaffronCity_Text_Pidgeot
+	overworldspecies SPECIES_PIDGEOT
+	bufferspeciestext SPECIES_PIDGEOT, SaffronCity_Text_Pidgeot
 	waitmoncry
 	release
 	end
@@ -173,7 +172,7 @@ SaffronCity_Text_FlewHereOnPidgeot::
 	.string "I missed the media action…$"
 
 SaffronCity_Text_Pidgeot::
-	.string "Pidgeot: Bi bibii!$"
+	.string "{STR_VAR_1}: Bi bibii!$"
 
 SaffronCity_Text_SawRocketBossEscaping::
 	.string "I saw the Rocket Boss escaping\n"

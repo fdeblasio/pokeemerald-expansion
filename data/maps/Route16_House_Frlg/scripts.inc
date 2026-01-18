@@ -28,9 +28,8 @@ Route16_House_EventScript_Fearow::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_FEAROW, CRY_MODE_NORMAL
-	setseenmon SPECIES_FEAROW
-	msgbox Route16_House_Text_Fearow
+	overworldspecies SPECIES_FEAROW
+	bufferspeciestext SPECIES_FEAROW, Route16_House_Text_Fearow
 	waitmoncry
 	release
 	end
@@ -54,5 +53,5 @@ Route16_House_Text_DontHaveAnyRoomForThis::
 	.string "You don't have any room for this.$"
 
 Route16_House_Text_Fearow::
-	.string "Fearow: Kyueen!$"
+	.string "{STR_VAR_1}: Kyueen!$"
 

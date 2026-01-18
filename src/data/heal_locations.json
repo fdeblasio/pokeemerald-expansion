@@ -189,6 +189,15 @@
       "respawn_npc": "LOCALID_FRONTIER_NURSE"
     },
     {
+      "id": "HEAL_LOCATION_ROUTE_104",
+      "map": "MAP_ROUTE104_NORTH",
+      "x": 5,
+      "y": 19,
+      "respawn_map": "MAP_ROUTE104_NORTH",
+      "respawn_x": 5,
+      "respawn_y": 19
+    },
+    {
       "id": "HEAL_LOCATION_ROUTE_108",
       "map": "MAP_ROUTE108",
       "x": 29,

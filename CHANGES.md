@@ -104,6 +104,7 @@
 - Flash is no longer needed anywhere
 - Surf, Dive and Waterfall have been replaced by a key item
 - Fly can now be used to go to more places:
+    - The Flower Shop on Route 104
     - The Abandoned Ship on Route 108
     - The Old Lady's Rest Stop on Route 111
     - Fiery Path on Route 112

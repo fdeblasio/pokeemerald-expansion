@@ -296,6 +296,7 @@ upcoming
 - Fly to routes:
     - Route 103: Altering Cave
     - Route 110: Trick House or New Mauville
+    - Route 115: Meteor Falls?
     - Route 117: Daycare?
     - Route 128: Where Steven flies to?
 
@@ -306,7 +307,7 @@ upcoming
 - Seperate out split routes into two maps for different encounters?
     - 103 east/west
     - 111 pre-/post-desert?
-    - 115 north/south
+    - 115 north/south (north/middle/south?)
     - 118 east/west
 - Add sand encounters to Dewford area (using desert sand)
 - Make 114 easier to navigate

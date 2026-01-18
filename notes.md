@@ -140,6 +140,7 @@ upcoming
 - Once more changes are made, consolidate commits on develop branch again
 
 ### Pokémon
+- Finish applying catch rate macro (take into account Pokemon that have had theirs boosted above 45)
 - Double check that all Gen1 Pokémon have updated movesets
     - Next do all starters/beasts/bugs/birds/etc.
     - Not including cross-gen evos or regionals or already updated:
@@ -150,6 +151,7 @@ upcoming
         1: 151
         5: 156
 - Turn some Normal/Flying types into either pure Flying or Flying/Normal?
+- More macros for almost identical forms (like Mimikyu)
 - Add in GMax forms as Megas with +20 to every non-HP stat? (or 40 to attacking and 0 to non-attacking)
 - Eventually remove RSE and/or BDSP teachable moves?
 - Merge Deoxys teachable learnsets?

@@ -1452,6 +1452,11 @@
     - Learn Shock Wave and Thunderbolt by level up
 
 - Farfetch'd (not in main game):
+    - Catch rate: 45->90
+    - Held item: Leek: 5%->100%
+
+- Galarian Farfetch'd (not in main game):
+    - Catch rate: 45->90
     - Held item: Leek: 5%->100%
 
 - Sirfetch'd (not in main game):
@@ -1488,6 +1493,9 @@
 
 - Gastly/Haunter/Gengar (Battle Frontier only):
     - Type: Ghost/Poison->Ghost
+
+- Onix (not in main game):
+    - Catch rate: 45->90
 
 - Drowzee/Hypno (not in main game):
     Learn Dream Eater by level up
@@ -1538,6 +1546,7 @@
 
 - Tyrogue (not in main game):
     - SpD: 35->55
+    - Catch rate: 75->90
     - Learns Rock Smash by level up
 
 - Hitmonchan (not in main game):
@@ -1603,6 +1612,9 @@
     - Learns Energy Ball by level up
     - Learns Body Press by TM
 
+- Kangaskhan (not in main game):
+    - Catch rate: 45->90
+
 - Horsea/Seadra/Kingdra:
     - Learn Surf by level up
 
@@ -1615,25 +1627,6 @@
     - Spe: 68->70
     - Learns Aqua Jet by level up
     - Learns Liquidation by TM
-
-- Pinsir:
-    - Catch rate: 45->90
-
-- Tauros (not in main game):
-    - Catch rate: 45->90
-    - Learns Headbutt by level up
-
-- Paldean Tauros (Combat) (not in main game):
-    - Catch rate: 45->90
-    - Learns Rock Smash and Brick Break by level up
-
-- Paldean Tauros (Blaze) (not in main game):
-    - Catch rate: 45->90
-    - Learns Rock Smash, Temper Flare, and Brick Break by level up
-
-- Paldean Tauros (Aqua) (not in main game):
-    - Catch rate: 45->90
-    - Learns Rock Smash, Liquidation and Brick Break by level up
 
 - Staryu/Starmie:
     - Learns Water Pulse by level up
@@ -1711,6 +1704,25 @@
     - Def: 67->70
     - Spe: 83->85
 
+- Pinsir:
+    - Catch rate: 45->90
+
+- Tauros (not in main game):
+    - Catch rate: 45->90
+    - Learns Headbutt by level up
+
+- Paldean Tauros (Combat) (not in main game):
+    - Catch rate: 45->90
+    - Learns Rock Smash and Brick Break by level up
+
+- Paldean Tauros (Blaze) (not in main game):
+    - Catch rate: 45->90
+    - Learns Rock Smash, Temper Flare, and Brick Break by level up
+
+- Paldean Tauros (Aqua) (not in main game):
+    - Catch rate: 45->90
+    - Learns Rock Smash, Liquidation and Brick Break by level up
+
 - Magikarp:
     - Atk: 10->15
     - SpA: 15->10
@@ -1723,6 +1735,7 @@
     - Learns Dragon Breath by Egg Move
 
 - Lapras (not in main game):
+    - Catch rate: 45->90
     - Learns Powder Snow, Chilling Water, Icy Wind, Aurora Beam, Waterfall, Surf, and Liquidation by level up
 
 - Ditto (postgame):
@@ -1787,13 +1800,25 @@
     - Learns Swift, Light Screen, and Skill Swap at level 1
     - Learns Alluring Voice at level 45
 
-- Omanyte/Omastar (postgame):
-    - Learn Rock Throw, Rock Tomb, Water Pulse, Rock Slide, and Power Gem by level up
+- Porygon (not in main game):
+    - Catch rate: 45->90
 
-- Kabuto/Kabutops (postgame):
-    - Learn Rock Throw, Rock Tomb, Aqua Cutter, Rock Slide, and Razor Shell by level up
+- Omanyte (postgame):
+    - Catch rate: 45->90
+    - Learns Rock Throw, Rock Tomb, Water Pulse, Rock Slide, and Power Gem by level up
+
+- Omastar (postgame):
+    - Learns Rock Throw, Rock Tomb, Water Pulse, Rock Slide, and Power Gem by level up
+
+- Kabuto (postgame):
+    - Catch rate: 45->90
+    - Learns Rock Throw, Rock Tomb, Aqua Cutter, Rock Slide, and Razor Shell by level up
+
+- Kabutops (postgame):
+    - Learns Rock Throw, Rock Tomb, Aqua Cutter, Rock Slide, and Razor Shell by level up
 
 - Aerodactyl (postgame):
+    - Catch rate: 45->90
     - Learns Dual Wingbeat, Double-Edge, Head Smash, and Brave Bird by level up
 
 - Munchlax (postgame):
@@ -1939,8 +1964,12 @@
 - Hoppip/Skiploom/Jumpluff:
     - Learn Gust, Magical Leaf, Air Cutter, Seed Bomb, Energy Ball, Air Slash, and Pollen Puff by level up
 
-- Aipom/Ambipom (postgame):
-    - Learn Double Slap, Headbutt, and Body Slam by level up
+- Aipom (postgame):
+    - Catch rate: 45->90
+    - Learns Double Slap, Headbutt, and Body Slam by level up
+
+- Ambipom (postgame):
+    - Learns Double Slap, Headbutt, and Body Slam by level up
 
 - Sunkern (postgame):
     - SpA: 30->50
@@ -1971,15 +2000,21 @@
 
 - Murkrow (not in main game):
     - Atk: 85->95
+    - Catch rate: 30->90
     - Learns Pluck, Dual Wingbeat, and Night Slash by level up
 
 - Honchkrow (not in main game):
     - Spe: 71->81
     - Learns Pluck and Dual Wingbeat by level up
 
-- Misdreavus/Mismagius (not in main game):
+- Misdreavus (not in main game):
+    - Catch rate: 45->90
     - Gender ratio: 50/50->25/75
-    - Learn Ominous Wind by level up
+    - Learns Ominous Wind by level up
+
+- Mismagius (not in main game):
+    - Gender ratio: 50/50->25/75
+    - Learns Ominous Wind by level up
 
 - Unown:
     - HP: 48->50
@@ -1995,7 +2030,11 @@
 - Wobbuffet:
     - HP: 190->200
 
-- Girafarig/Farigiraf:
+- Girafarig:
+    - Catch rate: 60->90
+    - Learns Swift and Hyper Voice by level up
+
+- Farigiraf:
     - Learn Swift and Hyper Voice by level up
 
 - Pineco (postgame):
@@ -2004,8 +2043,12 @@
 - Forretress (postgame):
     - Learns Metal Claw, Smart Strike, Lunge, and Iron Head by level up
 
-- Gligar/Gliscor (postgame):
-    - Learn Wing Attack, Bulldoze, Aerial Ace, Dual Wingbeat, and Earthquake by level up
+- Gligar (postgame):
+    - Catch rate: 60->90
+    - Learns Wing Attack, Bulldoze, Aerial Ace, Dual Wingbeat, and Earthquake by level up
+
+- Gliscor (postgame):
+    - Learns Wing Attack, Bulldoze, Aerial Ace, Dual Wingbeat, and Earthquake by level up
 
 - Dunsparce/Dundunsparce (not in main game):
     - Learn Swift and Headbutt by level up
@@ -2018,10 +2061,15 @@
     - Learns Fairy Wind and Spirit Break by level up
 
 - Qwilfish (postgame):
+    - Catch rate: 45->90
     - Learns Poison Tail and Waterfall by level up
 
-- Hisuian Qwilfish/Overqwil (postgame):
-    - Learn Poison Tail, Night Slash, and Poison Jab by level up
+- Hisuian Qwilfish (postgame):
+    - Catch rate: 45->90
+    - Learns Poison Tail, Night Slash, and Poison Jab by level up
+
+- Overqwil (postgame):
+    - Learns Poison Tail, Night Slash, and Poison Jab by level up
 
 - Shuckle (postgame):
     - Def: 230->255
@@ -2125,6 +2173,7 @@
     - Learn Mud-Slap, Mud Shot, and High Horsepower by level up
 
 - Stantler (postgame):
+    - Catch rate: 45->90
     - Evolves into Wyrdeer by simply knowing Psyshield Bash
     - Learns Psyshield Bash, Headbutt, and Body Slam by level up
 
@@ -2138,9 +2187,11 @@
     - Def: 35->50
     - SpA: 20->50
     - SpD: 45->50
+    - Catch rate: 45->90
     - Ability: Own Tempo->Trace
 
 - Miltank (postgame):
+    - Catch rate: 45->90
     - Learns Mega Kick by level up
 
 - Raikou (not in main game):
@@ -2508,9 +2559,11 @@
     - Learns Dragon Breath by Egg Move
 
 - Lunatone:
+    - Catch rate: 45->90
     - Learns Icy Wind and Peck by level up
 
 - Solrock:
+    - Catch rate: 45->90
     - Learns Power Gem and Solar Blade by level up
 
 - Barboach:
@@ -2535,14 +2588,19 @@
     - Learn Mud Shot, Mud Bomb, Zen Headbutt, Drill Run, and Earthquake by level up
 
 - Lileep:
+    - Catch rate: 45->90
     - Learns Absorb and Power Gem by level up
 
 - Cradily:
     - SpA: 81->90
     - Learns Absorb and Power Gem by level up
 
-- Anorith/Armaldo:
-    - Learn Rock Throw and Rock Slide by level up
+- Anorith:
+    - Catch rate: 45->90
+    - Learns Rock Throw and Rock Slide by level up
+
+- Armaldo:
+    - Learns Rock Throw and Rock Slide by level up
 
 - Feebas:
     - Atk: 15->10
@@ -2715,15 +2773,24 @@
 - Shinx/Luxio/Luxray:
     - Learn Supercell Slam by level up
 
-- Cranidos/Rampardos:
+- Cranidos:
     - HP: 67->70
     - Spe: 58->60
+    - Catch rate: 45->90
     - Received Rock Head as a second ability
-    - Learn Rock Throw, Rock Tomb, Brick Break, and Rock Slide by level up
+    - Learns Rock Throw, Rock Tomb, Brick Break, and Rock Slide by level up
 
-- Shieldon/Bastiodon:
+- Rampardos:
+    - Received Rock Head as a second ability
+    - Learns Rock Throw, Rock Tomb, Brick Break, and Rock Slide by level up
+
+- Shieldon:
     - Atk: 42->45
     - Def: 118->120
+    - Catch rate: 45->90
+    - Received Rock Head as a second ability
+
+- Bastiodon:
     - Received Rock Head as a second ability
 
 - Combee:
@@ -2977,6 +3044,12 @@
 - Seismitoad (postgame):
     - Learns Mud Bomb, Waterfall, Bulldoze, Stomping Tantrum, Earth Power, Liquidation, Earthquake, and Surf by level up
 
+- Throh:
+    - Catch rate: 45->90
+
+- Sawk:
+    - Catch rate: 45->90
+
 - Sewaddle:
     - Learns Leafage by level up
 
@@ -3043,13 +3116,26 @@
 - Scrafty:
     - Learns Dragon Breath by Egg Move
 
-- Tirtouga/Carracosta:
-    - Learn Rock Throw, Rock Tomb, and Liquidation by level up
-    - Learn Body Press by TM
+- Sigilyph:
+    - Catch rate: 45->90
 
-- Archen/Archeops:
+- Tirtouga:
+    - Catch rate: 45->90
+    - Learns Rock Throw, Rock Tomb, and Liquidation by level up
+    - Learns Body Press by TM
+
+- Carracosta:
+    - Learns Rock Throw, Rock Tomb, and Liquidation by level up
+    - Learns Body Press by TM
+
+- Archen:
     - Hidden Ability: None->Early Bird
-    - Learn Dual Wingbeat by level up
+    - Catch rate: 45->90
+    - Learns Dual Wingbeat by level up
+
+- Archeops:
+    - Hidden Ability: None->Early Bird
+    - Learns Dual Wingbeat by level up
 
 - Trubbish/Garbodor:
     - Learn Poison Sting, Poison Fang, and Poison Jab by level up
@@ -3232,6 +3318,7 @@
 
 - Druddigon:
     - Hidden Ability: Mold Breaker->Rock Head
+    - Catch rate: 45->90
     - Learns Take Down, Double-Edge, and Head Smash by level up
     - Learns Dragon Breath by Egg Move
 
@@ -3521,11 +3608,17 @@
     - Learns Earth Power by TM
     - Learns Dragon Breath by Egg Move
 
-- Tyrunt/Tyrantrum:
-    - Learn Rock Throw, Smack Down, and Rock Tomb by level up
-    - Learn Dragon Breath by Egg Move
+- Tyrunt:
+    - Catch rate: 45->90
+    - Learns Rock Throw, Smack Down, and Rock Tomb by level up
+    - Learns Dragon Breath by Egg Move
+
+- Tyrantrum:
+    - Learns Rock Throw, Smack Down, and Rock Tomb by level up
+    - Learns Dragon Breath by Egg Move
 
 - Amaura:
+    - Catch rate: 45->90
     - Learns Power Gem by level up
 
 - Aurorus:
@@ -3824,9 +3917,11 @@
     - Learns Fairy Wind, Giga Drain, and Dazzling Gleam by level up
 
 - Oranguru:
+    - Catch rate: 45->90
     - Learns Pound, Swift, Psybeam, and Hyper Voice by level up
 
 - Passimian:
+    - Catch rate: 45->90
     - Learns Power-Up Punch, Wake Up-Slap, Brick Break and Drain Punch by level up
 
 - Wimpod:
@@ -3842,10 +3937,15 @@
 - Type: Null:
     - Evolution: friendship->45
 
+- Komala:
+    - Catch rate: 45->90
+
 - Turtonator:
+    - Catch rate: 70->90
     - Learns Dragon Breath by Egg Move
 
 - Mimikyu:
+    - Catch rate: 45->90
     - Learns Fairy Wind, Draining Kiss, Shadow Punch, and Spirit Break by level up
 
 - Drampa:
@@ -3856,6 +3956,7 @@
     - Type: Normal/Dragon->Dragon/Normal
 
 - Dhelmise:
+    - Catch rate: 25->90
     - Learns Metal Claw and Shadow Claw by level up
 
 - Tapu Koko:
@@ -4093,8 +4194,12 @@
 - Cufant/Copperajah:
     - Received Sturdy as a second ability
 
-- Duraludon/Archaludon:
-    - Learn Twister, Dragon Breath, Mirror Shot, Smart Strike, Dragon Pulse, and Steel Beam by level up
+- Duraludon:
+    - Catch rate: 45->90
+    - Learns Twister, Dragon Breath, Mirror Shot, Smart Strike, Dragon Pulse, and Steel Beam by level up
+
+- Archaludon:
+    - Learns Twister, Dragon Breath, Mirror Shot, Smart Strike, Dragon Pulse, and Steel Beam by level up
 
 - Dreepy:
     - Evolution: 50->30

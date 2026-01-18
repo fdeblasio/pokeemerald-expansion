@@ -831,7 +831,6 @@ enum __attribute__((packed)) Item
     #define ENUM_HM(n, id) CAT(ITEM_HM_, id) = CAT(ITEM_HM, n),
     #define TO_TMHM_NUMS(a, ...) (__VA_ARGS__)
     RECURSIVELY(R_ZIP(ENUM_TM, TO_TMHM_NUMS NUMBERS_256, (FOREACH_TM(APPEND_COMMA))))
-    RECURSIVELY(R_ZIP(ENUM_HM, TO_TMHM_NUMS NUMBERS_256, (FOREACH_HM(APPEND_COMMA))))
     #undef ENUM_TM
     #undef ENUM_HM
     #undef TO_TMHM_NUMS

@@ -1,5 +1,5 @@
 // *************************************************** //
-// TM/HM moves found in "include/constants/tms.h":     //
+// TM/HM moves                                         //
 // - MOVE_FOCUS_PUNCH                                  //
 // - MOVE_DRAGON_CLAW                                  //
 // - MOVE_WATER_PULSE                                  //

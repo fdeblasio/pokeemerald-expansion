@@ -250,6 +250,7 @@ upcoming
     - Any Pokémon that learns a horn move (Horn Attack, Megahorn, Smart Strike, etc), can learn them all?
     - Any Poison/Steel/Water type that learns Poison Tail/Iron Tail/Aqua Tail should learn its corresponding type's move?
     - Any Psychic/Steel type that learns Headbutt should learn Zen Headbutt/Iron Head?
+    - Any Flying/Steel type that learns Wing Attack/Steel Wing should learn the other
 - Possible Move Updates:
     - Infestation: 20->35
     - Poison Sting: 20->40
@@ -428,6 +429,9 @@ upcoming
 - Fire Blast/Hydro Pump/Stone Edge accurate in respective weathers?
     - Make Thunder also accurate in Electric Terrain?
 - Calculate Electro Ball more similarly to Gyro Ball?
+- New moves based on other animations (Tail, Punches, Kicks, Headbutts, Wings, Claw)
+    - For example, a Flame Wing move that uses Wing Attack/Steel Wing's animation but with fire
+    - The existing animation variations aren't consistent for moves (Steel Wing is stronger than Wing Attack, Iron Tail is stronger than Poison Tail, etc.) but the new moves should be
 - Make Water Veil also up evasion like Sand Veil?
 - Species-specific move effects? (maybe look at code for Diglett immunity to Telekinesis):
     - Hypnosis always hits if Hypno is using it

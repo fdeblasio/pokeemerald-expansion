@@ -2193,6 +2193,25 @@
     - Catch rate: 45->90
     - Learns Rock Smash, Liquidation and Brick Break by level up
 
+- Pinsir:
+    - Catch rate: 45->90
+
+- Tauros (not in main game):
+    - Catch rate: 45->90
+    - Learns Headbutt by level up
+
+- Paldean Tauros (Combat) (not in main game):
+    - Catch rate: 45->90
+    - Learns Rock Smash and Brick Break by level up
+
+- Paldean Tauros (Blaze) (not in main game):
+    - Catch rate: 45->90
+    - Learns Rock Smash, Temper Flare, and Brick Break by level up
+
+- Paldean Tauros (Aqua) (not in main game):
+    - Catch rate: 45->90
+    - Learns Rock Smash, Liquidation and Brick Break by level up
+
 - Magikarp:
     - Atk: 10->15
     - SpA: 15->10
@@ -4266,6 +4285,7 @@
     - Learns Power Gem by level up
 
 - Amaura:
+    - Catch rate: 45->90
     - Learns Power Gem by level up
 
 - Aurorus:
@@ -4608,6 +4628,9 @@
 - Komala:
     - Catch rate: 45->90
     - Learns Pound, Snore, and Body Slam by level up
+
+- Komala:
+    - Catch rate: 45->90
 
 - Turtonator:
     - Catch rate: 70->90

@@ -311,9 +311,6 @@ upcoming
     - 115 north/south (north/middle/south?)
     - 118 east/west
 - Add sand encounters to Dewford area (using desert sand)
-- Make 114 easier to navigate
-    - Remove big rocks by Lanette
-    - Remove ledge by berries?
 - Finish Safari Zone forest
 - Find other ways to increase amount of encounters while still having 4-5 Pokémon per pool
 - Add new defines (but keep current ones) for overworld sprites that line up with trainers for easier use

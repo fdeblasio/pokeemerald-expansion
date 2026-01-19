@@ -4785,11 +4785,14 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     }
 
 //Extra for hacks
-#define CALVIN_LICKITUNG(Level)                                                    \
+#define CALVIN_LICKITUNG(Level, IVs)                                               \
+    {                                                                              \
     .lvl = Level,                                                                  \
     .species = Level < REMATCH_5_LEVEL_6 ? SPECIES_LICKITUNG : SPECIES_LICKILICKY, \
     .ability = ABILITY_OWN_TEMPO,                                                  \
-    .gender = TRAINER_MON_MALE
+    IVS(IVs),                                                                      \
+    .gender = TRAINER_MON_MALE,                                                    \
+    }
 
 [DIFFICULTY_NORMAL][TRAINER_CALVIN_1] =
 {
@@ -5166,10 +5169,14 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define JAMES_SPINARAK
 #define JAMES_LEDYBA
 
-#define JAMES_SURSKIT(Level)                                                     \
+#define JAMES_SURSKIT(Level, IVs)                                                \
+    {                                                                            \
     .lvl = Level,                                                                \
     .species = Level < REMATCH_5_LEVEL_6 ? SPECIES_SURSKIT : SPECIES_MASQUERAIN, \
-    .gender = TRAINER_MON_FEMALE
+    .ability = 1,                                                                \
+    IVS(IVs),                                                                    \
+    .gender = TRAINER_MON_FEMALE,                                                \
+    }
 
 //Extra for hacks
 #define JAMES_SPINARAK

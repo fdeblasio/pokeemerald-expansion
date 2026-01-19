@@ -293,6 +293,8 @@ upcoming
 
 ### FRLG
 - Will need to revert Surf/Waterfall/Dive items to their original functions
+- Remove duplicate GFX (for example, bald_man_frlg is just bald_man in the PR)
+- Improve Rod order
 
 ### Overworld
 - Seperate out split routes into two maps for different encounters?
@@ -300,6 +302,9 @@ upcoming
     - 111 pre-/post-desert?
     - 115 north/south (north/middle/south?)
     - 118 east/west
+    - Route 2 north/south
+    - Route 4 east/west
+    - Route 12 north/south
 - Add sand encounters to Dewford area (using desert sand)
 - Finish Safari Zone forest
 - Find other ways to increase amount of encounters while still having 4-5 Pokémon per pool

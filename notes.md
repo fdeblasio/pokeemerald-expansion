@@ -169,7 +169,6 @@ upcoming
     - Water 1/2/3
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
 - Add more indicators of shiniess in wild battles in case sparkles are missed
-- Releasing a Pokemon gives you the ball back?
 
 ### Items
 - Max Elixir (and others?) should stay on party screen like Full Restores do

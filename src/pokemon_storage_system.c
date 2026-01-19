@@ -6506,6 +6506,7 @@ static void ReleaseMon(void)
 {
     u8 boxId;
     enum Item item = ITEM_NONE;
+    enum Item ball = ITEM_NONE;
 
     DestroyReleaseMonIcon();
     if (sIsMonBeingMoved)
@@ -6519,17 +6520,21 @@ static void ReleaseMon(void)
             boxId = TOTAL_BOXES_COUNT;
             if (OW_PC_RELEASE_ITEM >= GEN_8)
                 item = GetMonData(&gParties[B_TRAINER_0][sCursorPosition], MON_DATA_HELD_ITEM);
+            ball = GetMonData(&gParties[B_TRAINER_0][sCursorPosition], MON_DATA_POKEBALL);
         }
         else
         {
             boxId = StorageGetCurrentBox();
             if (OW_PC_RELEASE_ITEM >= GEN_8)
                 item = GetBoxMonDataAt(boxId, sCursorPosition, MON_DATA_HELD_ITEM);
+            ball = GetBoxMonDataAt(boxId, sCursorPosition, MON_DATA_POKEBALL);
         }
 
         PurgeMonOrBoxMon(boxId, sCursorPosition);
         if (item != ITEM_NONE)
             AddBagItem(item, 1);
+        if (ball != ITEM_NONE)
+            AddBagItem(ball, 1);
     }
     TryRefreshDisplayMon();
 }

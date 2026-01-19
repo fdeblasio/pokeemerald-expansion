@@ -5782,17 +5782,16 @@ u8 CanLearnTeachableMove(enum Species species, enum Move move)
             if (teachableLearnset[i] == move)
                 return TRUE;
         }
+
+        if ((species == SPECIES_ROTOM_HEAT && (move == MOVE_FLAMETHROWER || move == MOVE_OVERHEAT))
+            || (species == SPECIES_ROTOM_WASH && (move == MOVE_SURF || move == MOVE_HYDRO_PUMP))
+            || (species == SPECIES_ROTOM_FROST && (move == MOVE_ICE_BEAM || move == MOVE_BLIZZARD))
+            || (species == SPECIES_ROTOM_FAN && move == MOVE_AIR_SLASH)
+            || (species == SPECIES_ROTOM_MOW && (move == MOVE_ENERGY_BALL || move == MOVE_LEAF_STORM))
+        )
+            return TRUE;
         return FALSE;
     }
-
-    if ((species == SPECIES_ROTOM_HEAT && (move == MOVE_FLAMETHROWER || move == MOVE_OVERHEAT))
-        || (species == SPECIES_ROTOM_WASH && (move == MOVE_SURF || move == MOVE_HYDRO_PUMP))
-        || (species == SPECIES_ROTOM_FROST && (move == MOVE_ICE_BEAM || move == MOVE_BLIZZARD))
-        || (species == SPECIES_ROTOM_FAN && move == MOVE_AIR_SLASH)
-        || (species == SPECIES_ROTOM_MOW && (move == MOVE_ENERGY_BALL || move == MOVE_LEAF_STORM))
-    )
-        return TRUE;
-    return FALSE;
 }
 
 u8 GetLevelUpMovesBySpecies(enum Species species, u16 *moves)

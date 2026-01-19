@@ -1813,7 +1813,9 @@ enum __attribute__((packed)) Species
 
 #define SPECIES_DARIAN            SPECIES_MAGIKARP
 #define SPECIES_BRANDEN           SPECIES_SANDSHREW
+#define SPECIES_MADELINE          SPECIES_NUMEL
 #define SPECIES_KOICHI            SPECIES_MACHOKE
+#define SPECIES_LAUREL            SPECIES_LUVDISC
 
 #define SPECIES_RUSTBORO_PEKACHU            SPECIES_PIKACHU
 #define SPECIES_RUSTBORO_HOUSE              SPECIES_SKITTY

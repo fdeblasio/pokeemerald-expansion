@@ -1639,7 +1639,7 @@ Route113_Text_DillonPostBattle:
 Route113_Text_MadelineIntro:
 	.string "I use this parasol to ward off this\n"
 	.string "filthy, yucky volcanic ash from\l"
-	.string "my dear Numel.$"
+	.string "my dear {STR_VAR_1}.$"
 
 Route113_Text_MadelineDefeat:
 	.string "Huff, huff…\n"
@@ -2030,7 +2030,7 @@ Route115_Text_TimothyPostRematch:
 
 Route115_Text_KoichiIntro:
 	.string "You!\p"
-	.string "My Machoke!\p"
+	.string "My {STR_VAR_1}!\p"
 	.string "Demand a battle!$"
 
 Route115_Text_KoichiDefeat:
@@ -4682,15 +4682,15 @@ Route134_Text_JackPostBattle:
 	.string "currents around these parts.$"
 
 Route134_Text_LaurelIntro:
-	.string "My Luvdisc are looking for a fun\n"
+	.string "My {STR_VAR_1} are looking for a fun\n"
 	.string "match. Will you join us?$"
 
 Route134_Text_LaurelDefeat:
 	.string "Oopsie!$"
 
 Route134_Text_LaurelPostBattle:
-	.string "There's a collector who's after\n"
-	.string "the Scales of Luvdisc.$"
+	.string "There's a collector who used to be\n"
+	.string "after the scales of {STR_VAR_1}.$"
 
 Route134_Text_AlexIntro:
 	.string "Okeydokey! That's enough rest, gang!\n"

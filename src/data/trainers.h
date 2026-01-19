@@ -8938,7 +8938,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 
 #define MADELINE_NUMEL(Level)                                 \
     .lvl = Level,                                             \
-    .species = Level < 33 ? SPECIES_NUMEL : SPECIES_CAMERUPT, \
+    .species = Level < 33 ? SPECIES_MADELINE : (SPECIES_MADELINE + 1), \
     .ability = ABILITY_SIMPLE,                                \
     .gender = TRAINER_MON_FEMALE,                             \
     .moves = {MOVE_LAVA_PLUME, Level < REMATCH_2_LEVEL_6 ? MOVE_BULLDOZE : MOVE_EARTH_POWER, MOVE_AMNESIA, MOVE_SUNNY_DAY}
@@ -16605,11 +16605,11 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     .party = (const struct TrainerMon[]) {
         {
         .lvl = 53,
-        .species = SPECIES_LUVDISC,
+        .species = SPECIES_LAUREL,
         },
         {
         .lvl = 53,
-        .species = SPECIES_LUVDISC,
+        .species = SPECIES_LAUREL,
         }
     },
 },

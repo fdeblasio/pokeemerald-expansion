@@ -53,8 +53,8 @@ Route115_EventScript_RematchTimothy::
 	end
 
 Route115_EventScript_Koichi::
-	trainerbattle_single TRAINER_KOICHI, Route115_Text_KoichiIntro, Route115_Text_KoichiDefeat
 	bufferspeciesname STR_VAR_1, SPECIES_KOICHI
+	trainerbattle_single TRAINER_KOICHI, Route115_Text_KoichiIntro, Route115_Text_KoichiDefeat
 	msgbox Route115_Text_KoichiPostBattle, MSGBOX_AUTOCLOSE
 	end
 

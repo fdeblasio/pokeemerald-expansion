@@ -1186,6 +1186,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A life-risking tackle that\n"
             "also hurts the user."),
+        RECOIL_120_POWER_INFO,
         .type = TYPE_NORMAL,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
@@ -4630,7 +4631,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Curse"),
         .description = COMPOUND_STRING(
             "A move that functions\n"
-            "differently for GHOSTS."),
+            "differently for Ghosts."),
         .effect = EFFECT_CURSE,
         .power = 0,
         .type = B_UPDATED_MOVE_TYPES >= GEN_5 ? TYPE_GHOST : TYPE_MYSTERY,

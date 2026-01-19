@@ -893,6 +893,8 @@
     - Hyperspace Hole:
         - Power: 80->90
         - PP: 5->10
+    - Hypnosis:
+        - Has an accuracy of 100 when used by Hypno
     - Kinesis:
         - Accuracy: 80->100
     - Luster Purge/Mist Ball:
@@ -1500,8 +1502,12 @@
 - Onix (not in main game):
     - Catch rate: 45->90
 
-- Drowzee/Hypno (not in main game):
-    Learn Dream Eater by level up
+- Drowzee (not in main game):
+    - Learns Dream Eater by level up
+
+- Hypno (not in main game):
+    - Learns Dream Eater by level up
+    - Hypnosis has an accuracy of 100 when used by Hypno
 
 - Krabby/Kingler (postgame):
     - Learns Aqua Cutter and Liquidation by level up

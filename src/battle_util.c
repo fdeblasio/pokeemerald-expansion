@@ -10219,9 +10219,14 @@ u32 GetTotalAccuracy(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum 
         buff = MAX_STAT_STAGE;
 
     moveAcc = GetMoveAccuracy(move);
+
+    if (gBattleMons[battlerAtk].species == SPECIES_HYPNO && move == MOVE_HYPNOSIS)
+        moveAcc = 100;
+
     // Check Thunder and Hurricane on sunny weather.
     if (IsBattlerWeatherAffected(defHoldEffect, GetWeather(), B_WEATHER_SUN) && MoveHas50AccuracyInSun(move))
         moveAcc = 50;
+
     // Check Wonder Skin.
     if (defAbility == ABILITY_WONDER_SKIN && IsBattleMoveStatus(move) && moveAcc > 50)
         moveAcc = 50;

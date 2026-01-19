@@ -6453,6 +6453,9 @@ u32 GetDynamicAccuracy(struct Pokemon *mon, enum Move move, enum BattlerId battl
         ability = GetMonAbility(mon);
     }
 
+    if (GetMonData(mon, MON_DATA_SPECIES) == SPECIES_HYPNO && move == MOVE_HYPNOSIS)
+        accuracy = 100;
+
     if (gMain.inBattle)
     {
         if (GetMoveEffect(move) == EFFECT_NATURE_POWER)

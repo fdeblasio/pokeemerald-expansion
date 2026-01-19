@@ -65,8 +65,6 @@ upcoming
             - It isn't on by default though, so could still be Steven
 - Mauville:
     - Get all the weird Mauville men at once?
-- Meteor Falls:
-    - Check what happens if you white out to Courtney
 - Mt. Chimney:
     - Consolidate flags: FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA, FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY?
     - Update last Mt. Chimney pair to be based off grunts and change text to "douse in sand"?
@@ -111,12 +109,6 @@ upcoming
         - Add ORAS special (Chad, Lisia, Wallace) https://bulbapedia.bulbagarden.net/wiki/List_of_Contest_opponents_(Generation_VI)
         - Implement Mega evolution
         - Improve white-on-white text
-- Mt. Pyre:
-- Mossdeep:
-- Sootopolis:
-- Pacifidlog:
-- Victory Road:
-    - Vito can use TMs
 - Battle Frontier
     - Remove BP costs so that script_menu.h and field_specials.c can use item/move names directly?
 
@@ -192,7 +184,6 @@ upcoming
         - Poison
 - Add level defines per route/group of routes?
 - Update Tabitha (and maybe others?) macros to use Magma levels instead of Rematch levels?
-- Add ORAS team members (like a Picknicker getting a Gulpin)
 - Now that Gym Leader rematch party size is consistent, maybe a macro can be made
 - Get rid of Gym Leader rematches needing two Pokémon
 - Some Magnemites never occur because 30 is less than REMATCH_2_LEVEL
@@ -232,7 +223,6 @@ upcoming
 
 ### Moves
 - Aqua Ring heals more with Water Bubble? In rain?
-- Add regular moves with GMax effects?
 - Find way for Rotom to learn special moves by level up (for relearning). Currently have TMs, but not all moves (Hydro Pump/Leaf Storm) are TMs
     - This gets solved if the TM list is expanded to have Scarlet and Violet's
     - I don't think this gets solved by the relearners though since Rotom's one teachable list still doesn't have it
@@ -426,11 +416,12 @@ upcoming
 - New moves based on other animations (Tail, Punches, Kicks, Headbutts, Wings, Claw)
     - For example, a Flame Wing move that uses Wing Attack/Steel Wing's animation but with fire
     - The existing animation variations aren't consistent for moves (Steel Wing is stronger than Wing Attack, Iron Tail is stronger than Poison Tail, etc.) but the new moves should be
+    - Add regular moves with GMax effects?
 - Make Water Veil also up evasion like Sand Veil?
 - Species-specific move effects? (maybe look at code for Diglett immunity to Telekinesis):
-    - Hypnosis always hits if Hypno is using it
     - Smack Down is super effective if a Tinkaton uses it against Corviknight
     - Drilbur line Drill Run
+    - Charjabug charge (Charge, Discharge, Charge Beam, Parabolic Charge) moves
 - Edit Slot odds (SLOT_MACHINE_)? Even though there's only three prizes?
 - Add in Hoenn Pokédex regionals? (currently postgame Safari Zone)
     - Alolan Sandshrew/Vulpix at Shoal Cave

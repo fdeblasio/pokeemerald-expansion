@@ -17405,6 +17405,9 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     },
 },
 
+#define VITO_SWELLOW
+#define VITO_DARMANITAN
+
 [DIFFICULTY_NORMAL][TRAINER_VITO] =
 {
     .trainerName = _("Vito"),
@@ -17420,30 +17423,35 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
         .species = SPECIES_SWALOT,
         EV_SPREAD_ATK_SPE_HP,
         IVS(12),
+        .moves = {MOVE_SLUDGE_WAVE, MOVE_GIGA_DRAIN, MOVE_ICE_BEAM, MOVE_SHADOW_BALL}
         },
         {
         .lvl = 55,
         .species = SPECIES_DODRIO,
         EV_SPREAD_ATK_SPE_HP,
         IVS(12),
+        .moves = {MOVE_DRILL_PECK, MOVE_BODY_SLAM, MOVE_JUMP_KICK, MOVE_ACUPRESSURE}
         },
         {
         .lvl = 55,
         .species = SPECIES_ALAKAZAM,
         EV_SPREAD_SPA_SPE_HP,
         IVS(12),
+        .moves = {MOVE_PSYCHIC, MOVE_DAZZLING_GLEAM, MOVE_SHADOW_BALL, MOVE_CALM_MIND}
         },
         {
         .lvl = 55,
         .species = SPECIES_ELECTRODE,
         EV_SPREAD_SPA_SPE_HP,
         IVS(12),
+        .moves = {MOVE_DISCHARGE, MOVE_SIGNAL_BEAM, MOVE_FOUL_PLAY, MOVE_EERIE_IMPULSE}
         },
         {
         .lvl = 55,
         .species = SPECIES_SHIFTRY,
         EV_SPREAD_ATK_SPE_HP,
         IVS(12),
+        .moves = {MOVE_LEAF_BLADE, MOVE_NIGHT_SLASH, MOVE_ROCK_SLIDE, MOVE_SWORDS_DANCE}
         }
     },
 },

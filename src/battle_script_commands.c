@@ -10885,7 +10885,7 @@ static void Cmd_handleballthrow(void)
         }
         else
         {
-            maxShakes = BALL_3_SHAKES_SUCCESS;
+            maxShakes = BALL_3_SHAKES_FAIL;
         }
 
         if (odds > 254)

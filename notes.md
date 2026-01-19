@@ -199,6 +199,8 @@ upcoming
 - Some Magnemites never occur because 30 is less than REMATCH_2_LEVEL
     - Double check this?
 - More mugshots for other bosses?
+- Can add Scientists since FRLG front sprite is available
+    - Can add Super Nerds too using either the School Kid or Scientist overworld sprites
 - Readjust wild/trainer levels so that parties aren't overpowered?
 - Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)
 - Add macros for ORAS rematch mons even if they don't exist (like Wilton's Fraxure/Haxorus)
@@ -314,7 +316,6 @@ upcoming
 - Find other ways to increase amount of encounters while still having 4-5 Pokémon per pool
 - Add new defines (but keep current ones) for overworld sprites that line up with trainers for easier use
 - Double check that only Devon employees use DEVON_EMPLOYEES and only non-Devon use MAN_2
-- Use either SCIENTIST_1 or 2 for Cozmo/Stern and use the other for generic scientists
 - Add caves and more areas to Safari Zone for more postgame mons
     - Make them themed like ice and fire. Maybe can add legendaries
 - Battle Environments:

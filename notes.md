@@ -366,7 +366,6 @@ upcoming
 - Battle Tower
     - Apprentices
 - Battle Factory
-    - Add new moves to moveStyles (sRequiredMoveCounts)
     - Don't have both Open Level and Level 50 since the Pokémon are rentals anyways?
 - Updated Battle Pyramid wild randomizer?
 - Battle Pike

@@ -373,7 +373,6 @@ upcoming
     - Change Kirlia and Dusclops to fit the type of move used?
 
 ### Other
-- Make catching easier by making the third shake automatically pass?
 - Decap easy chat species/moves/multi-word choices?
 - Easy Chat for non-base Hoenn mons (especially now that the National Dex is disabled)
     - National Dex is disabled but Frontier/Trainer Hill mons are now registered. Potentially see if those can be added to easy chat anyways

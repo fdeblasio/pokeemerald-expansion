@@ -4586,23 +4586,33 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .gender = TRAINER_MON_MALE,                                  \
     .nickname = COMPOUND_STRING("Linus")
 
-#define CALVIN_TAILLOW(Level)                                                 \
+#define CALVIN_TAILLOW(Level, IVs)                                            \
+    {                                                                         \
     .lvl = Level,                                                             \
     .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_TAILLOW : SPECIES_SWELLOW, \
-    .gender = TRAINER_MON_MALE
+    .ability = ABILITY_GUTS,                                                  \
+    IVS(IVs),                                                                 \
+    .gender = TRAINER_MON_MALE,                                               \
+    }
 
-#define CALVIN_MIGHTYENA(Level)    \
-    .lvl = Level,                  \
-    .species = SPECIES_MIGHTYENA,  \
-    .ability = ABILITY_INTIMIDATE, \
-    .gender = TRAINER_MON_MALE
+#define CALVIN_MIGHTYENA(Level, IVs) \
+    {                                \
+    .lvl = Level,                    \
+    .species = SPECIES_MIGHTYENA,    \
+    .ability = ABILITY_INTIMIDATE,   \
+    IVS(IVs),                        \
+    .gender = TRAINER_MON_MALE,      \
+    }
 
 //Extra for hacks
-#define CALVIN_LICKITUNG(Level)                                                    \
+#define CALVIN_LICKITUNG(Level, IVs)                                               \
+    {                                                                              \
     .lvl = Level,                                                                  \
     .species = Level < REMATCH_5_LEVEL_6 ? SPECIES_LICKITUNG : SPECIES_LICKILICKY, \
     .ability = ABILITY_OWN_TEMPO,                                                  \
-    .gender = TRAINER_MON_MALE
+    IVS(IVs),                                                                      \
+    .gender = TRAINER_MON_MALE,                                                    \
+    }
 
 [DIFFICULTY_NORMAL][TRAINER_CALVIN_1] =
 {
@@ -4611,7 +4621,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         LINUS(5),
-        }
+        },
     },
 },
 
@@ -4620,14 +4630,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     CALVIN_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
-        {
-        CALVIN_TAILLOW(REMATCH_2_LEVEL_2),
-        IVS(2),
-        },
+        CALVIN_TAILLOW(REMATCH_2_LEVEL_2, 2),
         {
         LINUS(REMATCH_2_LEVEL_1),
         IVS(2),
-        }
+        },
     },
 },
 
@@ -4636,14 +4643,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     CALVIN_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
-        {
-        CALVIN_TAILLOW(REMATCH_3_LEVEL_2),
-        IVS(3),
-        },
+        CALVIN_TAILLOW(REMATCH_3_LEVEL_2, 3),
         {
         LINUS(REMATCH_3_LEVEL_1),
         IVS(3),
-        }
+        },
     },
 },
 
@@ -4652,18 +4656,12 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     CALVIN_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
-        {
-        CALVIN_MIGHTYENA(REMATCH_4_LEVEL_2),
-        IVS(4),
-        },
-        {
-        CALVIN_TAILLOW(REMATCH_4_LEVEL_2),
-        IVS(4),
-        },
+        CALVIN_MIGHTYENA(REMATCH_4_LEVEL_2, 4),
+        CALVIN_TAILLOW(REMATCH_4_LEVEL_2, 4),
         {
         LINUS(REMATCH_4_LEVEL_1),
         IVS(4),
-        }
+        },
     },
 },
 
@@ -4678,21 +4676,15 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         IVS(5),
         .gender = TRAINER_MON_MALE,
         },
-        {
-        CALVIN_MIGHTYENA(REMATCH_5_LEVEL_2),
-        IVS(5),
-        },
-        {
-        CALVIN_TAILLOW(REMATCH_5_LEVEL_2),
-        IVS(5),
-        },
+        CALVIN_MIGHTYENA(REMATCH_5_LEVEL_2, 5),
+        CALVIN_TAILLOW(REMATCH_5_LEVEL_2, 5),
         {
         LINUS(REMATCH_5_MINI_BOSS),
         EV_SPREAD_ATK_SPE_HP,
         PERFECT_IVS,
         .moves = {MOVE_BODY_SLAM, MOVE_PLAY_ROUGH, MOVE_PIN_MISSILE, MOVE_HONE_CLAWS},
         .heldItem = ITEM_FIGY_BERRY,
-        }
+        },
     },
 },
 
@@ -4710,7 +4702,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         {
         .lvl = 4,
         .species = SPECIES_WURMPLE,
-        }
+        },
     },
 },
 
@@ -4728,7 +4720,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         {
         .lvl = 4,
         .species = SPECIES_TAILLOW,
-        }
+        },
     },
 },
 
@@ -4746,7 +4738,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         {
         .lvl = 4,
         .species = SPECIES_SHROOMISH,
-        }
+        },
     },
 },
 
@@ -4793,7 +4785,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .party = (const struct TrainerMon[]) {
         {
         MR_ZIG(8),
-        }
+        },
     },
 },
 
@@ -4824,7 +4816,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         },
         {
         MR_ZIG(REMATCH_3_LEVEL_1),
-        }
+        },
     },
 },
 
@@ -4844,7 +4836,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         },
         {
         MR_ZIG(REMATCH_4_LEVEL_1),
-        }
+        },
     },
 },
 
@@ -4872,7 +4864,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         MR_ZIG(REMATCH_5_MINI_BOSS),
         PERFECT_IVS,
         .moves = {MOVE_BODY_SLAM, MOVE_PLAY_ROUGH, MOVE_SEED_BOMB, MOVE_HONE_CLAWS},
-        }
+        },
     },
 },
 
@@ -4890,7 +4882,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         {
         .lvl = 6,
         .species = SPECIES_NINCADA,
-        }
+        },
     },
 },
 
@@ -4904,7 +4896,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         {
         .lvl = 9,
         .species = SPECIES_DARIAN,
-        }
+        },
     },
 },
 
@@ -4939,7 +4931,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         {
         .lvl = 3,
         .species = SPECIES_WURMPLE,
-        }
+        },
     },
 },
 
@@ -4957,24 +4949,41 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     BUG_CATCHER_INFO,          \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
-#define JAMES_NINCADA(Level)                                   \
+#define JAMES_NINCADA(Level, IVs)                              \
+    {                                                          \
     .lvl = Level,                                              \
     .species = Level < 20 ? SPECIES_NINCADA : SPECIES_NINJASK, \
-    .gender = TRAINER_MON_MALE
+    .ability = 1,                                              \
+    IVS(IVs),                                                  \
+    .gender = TRAINER_MON_MALE,                                \
+    }
 
-#define JAMES_SHEDINJA(Level) \
-    .lvl = Level,             \
-    .species = SPECIES_SHEDINJA
+#define JAMES_SHEDINJA(Level, IVs)   \
+    {                                \
+    .lvl = Level,                    \
+    .species = SPECIES_SHEDINJA,     \
+    .ability = ABILITY_WONDER_GUARD, \
+    IVS(IVs),                        \
+    .gender = TRAINER_MON_NONE,      \
+    }
 
-#define JAMES_DUSTOX(Level)    \
-    .lvl = Level,              \
-    .species = SPECIES_DUSTOX, \
-    .gender = TRAINER_MON_MALE
+#define JAMES_DUSTOX(Level, IVs)    \
+    {                               \
+    .lvl = Level,                   \
+    .species = SPECIES_DUSTOX,      \
+    .ability = ABILITY_SHIELD_DUST, \
+    IVS(IVs),                       \
+    .gender = TRAINER_MON_MALE,     \
+    }
 
-#define JAMES_SURSKIT(Level)                                                     \
+#define JAMES_SURSKIT(Level, IVs)                                                \
+    {                                                                            \
     .lvl = Level,                                                                \
     .species = Level < REMATCH_5_LEVEL_6 ? SPECIES_SURSKIT : SPECIES_MASQUERAIN, \
-    .gender = TRAINER_MON_FEMALE
+    .ability = 1,                                                                \
+    IVS(IVs),                                                                    \
+    .gender = TRAINER_MON_FEMALE,                                                \
+    }
 
 //Extra for hacks
 #define JAMES_SPINARAK
@@ -4985,9 +4994,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     JAMES_INFO,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
-        {
-        JAMES_NINCADA(8),
-        }
+        JAMES_NINCADA(8, 0),
     },
 },
 
@@ -4996,14 +5003,8 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     JAMES_INFO,
     .partySize = 2,
     .party = (const struct TrainerMon[]) {
-        {
-        JAMES_SHEDINJA(REMATCH_2_LEVEL_2),
-        IVS(2),
-        },
-        {
-        JAMES_NINCADA(REMATCH_2_LEVEL_2),
-        IVS(2),
-        }
+        JAMES_SHEDINJA(REMATCH_2_LEVEL_2, 2),
+        JAMES_NINCADA(REMATCH_2_LEVEL_2, 2),
     },
 },
 
@@ -5012,18 +5013,9 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     JAMES_INFO,
     .partySize = 3,
     .party = (const struct TrainerMon[]) {
-        {
-        JAMES_DUSTOX(REMATCH_3_LEVEL_3),
-        IVS(3),
-        },
-        {
-        JAMES_SHEDINJA(REMATCH_3_LEVEL_3),
-        IVS(3),
-        },
-        {
-        JAMES_NINCADA(REMATCH_3_LEVEL_3),
-        IVS(3),
-        }
+        JAMES_DUSTOX(REMATCH_3_LEVEL_3, 3),
+        JAMES_SHEDINJA(REMATCH_3_LEVEL_3, 3),
+        JAMES_NINCADA(REMATCH_3_LEVEL_3, 3),
     },
 },
 
@@ -5032,22 +5024,10 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     JAMES_INFO,
     .partySize = 4,
     .party = (const struct TrainerMon[]) {
-        {
-        JAMES_SURSKIT(REMATCH_4_LEVEL_4),
-        IVS(4),
-        },
-        {
-        JAMES_DUSTOX(REMATCH_4_LEVEL_4),
-        IVS(4),
-        },
-        {
-        JAMES_SHEDINJA(REMATCH_4_LEVEL_4),
-        IVS(4),
-        },
-        {
-        JAMES_NINCADA(REMATCH_4_LEVEL_4),
-        IVS(4),
-        }
+        JAMES_SURSKIT(REMATCH_4_LEVEL_4, 4),
+        JAMES_DUSTOX(REMATCH_4_LEVEL_4, 4),
+        JAMES_SHEDINJA(REMATCH_4_LEVEL_4, 4),
+        JAMES_NINCADA(REMATCH_4_LEVEL_4, 4),
     },
 },
 
@@ -5056,28 +5036,16 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     JAMES_INFO,
     .partySize = 5,
     .party = (const struct TrainerMon[]) {
-        {
-        JAMES_SURSKIT(REMATCH_5_LEVEL_5),
-        IVS(5),
-        },
+        JAMES_SURSKIT(REMATCH_5_LEVEL_5, 5),
         {
         .lvl = REMATCH_5_LEVEL_5,
         .species = SPECIES_BEAUTIFLY,
         IVS(5),
         .gender = TRAINER_MON_FEMALE,
         },
-        {
-        JAMES_DUSTOX(REMATCH_5_LEVEL_5),
-        IVS(5),
-        },
-        {
-        JAMES_SHEDINJA(REMATCH_5_LEVEL_5),
-        IVS(5),
-        },
-        {
-        JAMES_NINCADA(REMATCH_5_LEVEL_5),
-        IVS(5),
-        }
+        JAMES_DUSTOX(REMATCH_5_LEVEL_5, 5),
+        JAMES_SHEDINJA(REMATCH_5_LEVEL_5, 5),
+        JAMES_NINCADA(REMATCH_5_LEVEL_5, 5),
     },
 },
 
@@ -10110,7 +10078,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
         },
         {
         ETHAN_TAILLOW(26),
-        }
+        },
     },
 },
 
@@ -10130,7 +10098,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
         {
         ETHAN_TAILLOW(REMATCH_2_LEVEL_3),
         IVS(2),
-        }
+        },
     },
 },
 
@@ -10154,7 +10122,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
         {
         ETHAN_TAILLOW(REMATCH_3_LEVEL_4),
         IVS(3),
-        }
+        },
     },
 },
 
@@ -10182,7 +10150,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
         {
         ETHAN_TAILLOW(REMATCH_4_LEVEL_5),
         IVS(4),
-        }
+        },
     },
 },
 
@@ -10210,7 +10178,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
         {
         ETHAN_TAILLOW(REMATCH_5_LEVEL_5),
         IVS(5),
-        }
+        },
     },
 },
 

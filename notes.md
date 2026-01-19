@@ -13,6 +13,7 @@ $1
 
 Debugging (https://cplusplus.com/reference/cstdio/printf/):
 MgbaPrintf(MGBA_LOG_WARN, "XYZ: %d", mod);
+%S for strings
 
 255 0 0
 0 255 0
@@ -116,16 +117,7 @@ upcoming
 - Pacifidlog:
 - Victory Road:
     - Vito can use TMs
-- Other:
-    - Diversify Safari Zone water/fishing encounters
-    - Clear up trainer spots by having just one set of gym leader rematches?
-        - Now that gym/Wally rematches are more consistent, the only difference is the level and a couple moves, so not really a point to having as many rematches
-        - Even just reducing to two or three rematches would save space
-    - For each badge after 5, one less rematch (for example, any trainer fought past Winona would have one less rematch)
-        - Would John and Jay/Nicolas get no rematches in that case?
-        - Should the final rematch be after the Elite Four instead of after Gym 8? All 5th rematches would need to be buffed
-    - Add Abilities to single ability and TRAINER_MON_NONE to genderless to make more constistent
-    - Add trailing commas wherever possible
+- Battle Frontier
     - Remove BP costs so that script_menu.h and field_specials.c can use item/move names directly?
 
 ### Meta
@@ -177,6 +169,14 @@ upcoming
 - Add more items (like Absorb Bulb and Cell Battery) to shops
 
 ### Trainers
+- Clear up trainer spots by having just one set of gym leader rematches?
+    - Now that gym/Wally rematches are more consistent, the only difference is the level and a couple moves, so not really a point to having as many rematches
+    - Even just reducing to two or three rematches would save space
+- For each badge after 5, one less rematch (for example, any trainer fought past Winona would have one less rematch)
+    - Would John and Jay/Nicolas get no rematches in that case?
+    - Should the final rematch be after the Elite Four instead of after Gym 8? All 5th rematches would need to be buffed
+- Add Abilities to single ability and TRAINER_MON_NONE to genderless to make more consistent
+- Add trailing commas wherever possible
 - Remove type duplicates:
     - Turn Wallace into a Fairy specialist and turn Milotic into Water/Fairy?
     - Turn Juan into a Poison specialist (Swalot as Ace since both have mustaches)?

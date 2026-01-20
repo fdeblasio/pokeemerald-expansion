@@ -4750,8 +4750,39 @@
 - Melmetal:
     - Learns Bullet Punch, Magnet Bomb, and Iron Head by level up
 
-- Poipole/Naganadel:
-    - Learn Poison Tail by move relearner
+- Nihilego:
+- Buzzwole:
+- Pheromosa:
+- Xurkitree:
+- Celesteela:
+- Kartana:
+- Guzzlord:
+- Necrozma:
+- Magearna:
+- Marshadow
+
+- Poipole:
+    - Learns Poison Sting, Sludge, Poison Tail, and Sludge Bomb by move relearner
+
+- Naganadel:
+    - Learns Poison Sting, Sludge, Dragon Breath, Poison Tail, and Sludge Bomb by move relearner
+    - Learns Twister upon evolving
+
+- Stakataka:
+    - Learns Rock Tomb and Magnet Bomb by level up
+
+- Blacephalon:
+    - Learns Ominous Wind and Flamethrower by level up
+
+- Zeraora:
+    - Learns Zing Zap by level up
+
+- Meltan:
+    - Evolution: None->Thunder Stone
+    - Learns Magnet Bomb and Iron Head by level up
+
+- Melmetal:
+    - Learns Bullet Punch, Magnet Bomb, and Iron Head by level up
 
 - Grookey:
     - Learns Grassy Glide and Seed Bomb by level up

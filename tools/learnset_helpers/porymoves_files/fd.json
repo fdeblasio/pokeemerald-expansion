@@ -9462,9 +9462,7 @@
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": [
-      "MOVE_POISON_TAIL"
-    ]
+    "TutorMoves": []
   },
   "NAGANADEL": {
     "LevelMoves": [

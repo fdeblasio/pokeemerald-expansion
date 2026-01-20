@@ -14745,58 +14745,156 @@
     "TutorMoves": []
   },
   "JANGMO_O": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 20,
+        "Move": "MOVE_BREAKING_SWIPE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "HAKAMO_O": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 20,
+        "Move": "MOVE_BREAKING_SWIPE"
+      },
+      {
+        "Level": 38,
+        "Move": "MOVE_DRAIN_PUNCH"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "KOMMO_O": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 20,
+        "Move": "MOVE_BREAKING_SWIPE"
+      },
+      {
+        "Level": 38,
+        "Move": "MOVE_DRAIN_PUNCH"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "TAPU_KOKO": {
-    "LevelMoves": [],
-    "PreEvoMoves": [],
-    "TMMoves": [
-      "MOVE_PLAY_ROUGH",
-      "MOVE_RISING_VOLTAGE",
-      "MOVE_SUPERCELL_SLAM"
+    "LevelMoves": [
+      {
+        "Level": 35,
+        "Move": "MOVE_SPIRIT_BREAK"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_THUNDER_PUNCH"
+      },
+      {
+        "Level": 50,
+        "Move": "MOVE_ZING_ZAP"
+      },
+      {
+        "Level": 60,
+        "Move": "MOVE_PLAY_ROUGH"
+      },
+      {
+        "Level": 65,
+        "Move": "MOVE_SUPERCELL_SLAM"
+      },
+      {
+        "Level": 75,
+        "Move": "MOVE_RISING_VOLTAGE"
+      }
     ],
+    "PreEvoMoves": [],
+    "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "TAPU_LELE": {
-    "LevelMoves": [],
-    "PreEvoMoves": [],
-    "TMMoves": [
-      "MOVE_EXPANDING_FORCE"
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_FAIRY_WIND"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_DISARMING_VOICE"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_DAZZLING_GLEAM"
+      },
+      {
+        "Level": 60,
+        "Move": "MOVE_PSYCHIC"
+      },
+      {
+        "Level": 75,
+        "Move": "MOVE_EXPANDING_FORCE"
+      }
     ],
+    "PreEvoMoves": [],
+    "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "TAPU_BULU": {
-    "LevelMoves": [],
-    "PreEvoMoves": [],
-    "TMMoves": [
-      "MOVE_PLAY_ROUGH",
-      "MOVE_GRASSY_GLIDE"
+    "LevelMoves": [
+      {
+        "Level": 20,
+        "Move": "MOVE_RAZOR_LEAF"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_SPIRIT_BREAK"
+      },
+      {
+        "Level": 50,
+        "Move": "MOVE_SEED_BOMB"
+      },
+      {
+        "Level": 60,
+        "Move": "MOVE_PLAY_ROUGH"
+      },
+      {
+        "Level": 75,
+        "Move": "MOVE_GRASSY_GLIDE"
+      }
     ],
+    "PreEvoMoves": [],
+    "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "TAPU_FINI": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_FAIRY_WIND"
+      },
+      {
+        "Level": 15,
+        "Move": "MOVE_DRAINING_KISS"
+      },
+      {
+        "Level": 30,
+        "Move": "MOVE_CHILLING_WATER"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_DAZZLING_GLEAM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

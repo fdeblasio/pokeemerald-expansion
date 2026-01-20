@@ -132,7 +132,7 @@ upcoming
 - Double check that all Gen1 Pokémon have updated movesets
     - Next do all starters/beasts/bugs/birds/etc.
     - Not including cross-gen evos or regionals or already updated:
-        7: 27 (Jangmo-o-Melmetal)
+        7: 20 (Cosmog-Melmetal)
         8: 96
         4: 107
         9: 120

@@ -50739,6 +50739,7 @@ static const u16 sTapuKokoTeachableLearnset[] = {
     MOVE_U_TURN,
     MOVE_VOLT_SWITCH,
     MOVE_WILD_CHARGE,
+    MOVE_ZING_ZAP,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_TAPU_KOKO
@@ -50749,6 +50750,7 @@ static const u16 sTapuLeleTeachableLearnset[] = {
     MOVE_CHARGE_BEAM,
     MOVE_CHARM,
     MOVE_DAZZLING_GLEAM,
+    MOVE_DISARMING_VOICE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRAINING_KISS,
     MOVE_ENDURE,
@@ -50852,6 +50854,7 @@ static const u16 sTapuFiniTeachableLearnset[] = {
     MOVE_BLIZZARD,
     MOVE_BRINE,
     MOVE_CALM_MIND,
+    MOVE_CHILLING_WATER,
     MOVE_DAZZLING_GLEAM,
     MOVE_DISARMING_VOICE,
     MOVE_DIVE,

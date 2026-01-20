@@ -3994,16 +3994,31 @@
     - Catch rate: 25->90
     - Learns Metal Claw and Shadow Claw by level up
 
+- Jangmo-o:
+    - Held item: Dragon Scale: 0%->50%
+    - Learns Breaking Swipe by level up
+
+- Hakamo-o:
+    - Held item: Dragon Scale: 0%->50%
+    - Learns Breaking Swipe and Drain Punch by level up
+
+- Kommo-o:
+    - Held items:
+        - Dragon Scale: 0%->50%
+        - Razor Claw: 50%->5%
+    - Learns Breaking Swipe and Drain Punch by level up
+
 - Tapu Koko:
-    - Learns Supercell Slam and Play Rough by TM
-    - Learns Rising Voltage by move tutor
+    - Learns Spirit Break, Thunder Punch, Zing Zap, Play Rough, Supercell Slam, and Rising Voltage by level up
 
 - Tapu Lele:
-    - Learns Expanding Force by move tutor
+    - Learns Fairy Wind, Disarming Voice, Dazzling Gleam, Psychic, and Expanding Force by level up
 
 - Tapu Bulu:
-    - Learns Play Rough by TM
-    - Learns Grassy Glide by move tutor
+    - Learns Razor Leaf, Spirit Break, Seed Bomb, Play Rough, and Grassy Glide by level up
+
+- Tapu Fini
+    - Learns Fairy Wind, Draining Kiss, Chilling Water, and Dazzling Gleam by level up
 
 - Solgaleo:
     - Learns Psychic Fangs by level up

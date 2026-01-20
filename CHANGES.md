@@ -4631,6 +4631,7 @@
 
 - Komala:
     - Catch rate: 45->90
+    - Learns Pound and Body Slam by level up
 
 - Turtonator:
     - Catch rate: 70->90

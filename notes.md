@@ -116,7 +116,7 @@ upcoming
 - Try to get upstream changes working better here
     - Automatic teachable movesets. Would require bringing local porymoves code here
     - Automatic trainers (probably not)
-    - PC renaming/relearning
+    - Summary screen/PC renaming/relearning
     - Add HM back to variable names
 - More simple modifications: https://www.pokecommunity.com/showthread.php?t=416647&page=1
 - Pret wiki tutorials:       https://github.com/pret/pokeemerald/wiki/Tutorials

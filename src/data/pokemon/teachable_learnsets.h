@@ -153,6 +153,7 @@
 // - MOVE_TEMPER_FLARE                                 //
 // - MOVE_THROAT_CHOP                                  //
 // - MOVE_ZEN_HEADBUTT                                 //
+// - MOVE_ZING_ZAP                                     //
 // *************************************************** //
 // Relearner moves:                                    //
 // - MOVE_ACID_SPRAY                                   //
@@ -6216,6 +6217,7 @@ static const u16 sGolemAlolaTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_VOLT_SWITCH,
     MOVE_WILD_CHARGE,
+    MOVE_ZING_ZAP,
     MOVE_UNAVAILABLE,
 };
 #endif //P_ALOLAN_FORMS
@@ -11208,6 +11210,7 @@ static const u16 sElectivireTeachableLearnset[] = {
     MOVE_VOLT_SWITCH,
     MOVE_WEATHER_BALL,
     MOVE_WILD_CHARGE,
+    MOVE_ZING_ZAP,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -13817,6 +13820,7 @@ static const u16 sMewTeachableLearnset[] = {
     MOVE_WILL_O_WISP,
     MOVE_X_SCISSOR,
     MOVE_ZEN_HEADBUTT,
+    MOVE_ZING_ZAP,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_MEW
@@ -30533,6 +30537,7 @@ static const u16 sShinxTeachableLearnset[] = {
     MOVE_TRAILBLAZE,
     MOVE_VOLT_SWITCH,
     MOVE_WILD_CHARGE,
+    MOVE_ZING_ZAP,
     MOVE_UNAVAILABLE,
 };
 
@@ -30585,6 +30590,7 @@ static const u16 sLuxioTeachableLearnset[] = {
     MOVE_TRAILBLAZE,
     MOVE_VOLT_SWITCH,
     MOVE_WILD_CHARGE,
+    MOVE_ZING_ZAP,
     MOVE_UNAVAILABLE,
 };
 
@@ -30642,6 +30648,7 @@ static const u16 sLuxrayTeachableLearnset[] = {
     MOVE_TRAILBLAZE,
     MOVE_VOLT_SWITCH,
     MOVE_WILD_CHARGE,
+    MOVE_ZING_ZAP,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SHINX
@@ -35814,6 +35821,7 @@ static const u16 sBlitzleTeachableLearnset[] = {
     MOVE_UPROAR,
     MOVE_VOLT_SWITCH,
     MOVE_WILD_CHARGE,
+    MOVE_ZING_ZAP,
     MOVE_UNAVAILABLE,
 };
 
@@ -35865,6 +35873,7 @@ static const u16 sZebstrikaTeachableLearnset[] = {
     MOVE_UPROAR,
     MOVE_VOLT_SWITCH,
     MOVE_WILD_CHARGE,
+    MOVE_ZING_ZAP,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_BLITZLE
@@ -40220,6 +40229,7 @@ static const u16 sEelektrikTeachableLearnset[] = {
     MOVE_U_TURN,
     MOVE_VOLT_SWITCH,
     MOVE_WILD_CHARGE,
+    MOVE_ZING_ZAP,
     MOVE_UNAVAILABLE,
 };
 
@@ -40293,6 +40303,7 @@ static const u16 sEelektrossTeachableLearnset[] = {
     MOVE_VOLT_SWITCH,
     MOVE_WILD_CHARGE,
     MOVE_ZEN_HEADBUTT,
+    MOVE_ZING_ZAP,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_TYNAMO
@@ -50220,6 +50231,7 @@ static const u16 sTogedemaruTeachableLearnset[] = {
     MOVE_VOLT_SWITCH,
     MOVE_WILD_CHARGE,
     MOVE_ZEN_HEADBUTT,
+    MOVE_ZING_ZAP,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_TOGEDEMARU
@@ -52928,6 +52940,7 @@ static const u16 sBoltundTeachableLearnset[] = {
     MOVE_UPROAR,
     MOVE_VOLT_SWITCH,
     MOVE_WILD_CHARGE,
+    MOVE_ZING_ZAP,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_YAMPER
@@ -54253,6 +54266,7 @@ static const u16 sPincurchinTeachableLearnset[] = {
     MOVE_TOXIC_SPIKES,
     MOVE_VENOSHOCK,
     MOVE_WILD_CHARGE,
+    MOVE_ZING_ZAP,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_PINCURCHIN
@@ -56665,6 +56679,7 @@ static const u16 sPawmotTeachableLearnset[] = {
     MOVE_UPPER_HAND,
     MOVE_VOLT_SWITCH,
     MOVE_WILD_CHARGE,
+    MOVE_ZING_ZAP,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_PAWMI

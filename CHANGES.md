@@ -354,11 +354,12 @@
 - Swagger
 
 #### Ever Grande:
-- Hyper Voice
 - Aqua Tail
 - Drill Run
 - High Horsepower
+- Hyper Voice
 - Temper Flare
+- Zing Zap
 
 #### Battle Frontier Left:
 - Rising Voltage
@@ -1429,7 +1430,7 @@
 - Alolan Golem (postgame):
     - Def: 130->145
     - Spe: 45->50
-    - Learns Rock Slide and Supercell Slam by level up
+    - Learns Rock Slide, Zing Zap, and Supercell Slam by level up
 
 - Ponyta/Rapidash (not in main game):
     - Learn Temper Flare and Blaze Kick by level up
@@ -1699,6 +1700,7 @@
     - SpA: 95->100
     - Learns Electric Terrain by level up
     - Learns Drain Punch by TM
+    - Learns Zing Zap by tutor
 
 - Magby (postgame):
     - Def: 37->40
@@ -2782,7 +2784,7 @@
     - Learns Waterfall, Aqua Tail, Body Slam, and Tail Slap by level up
 
 - Shinx/Luxio/Luxray:
-    - Learn Supercell Slam by level up
+    - Learn Zing Zap and Supercell Slam by level up
 
 - Cranidos:
     - HP: 67->70
@@ -2999,6 +3001,9 @@
 
 - Unfezant:
     - Learns Acrobatics by TM
+
+- Blitzle/Zebstrika:
+    - Learn Thunder Shock, Zing Zap, and Supercell Slam by level up
 
 - Roggenrola:
     - Atk: 75->85
@@ -3258,10 +3263,10 @@
     - Evolution: 39->32
 
 - Eelektrik (postgame):
-    - Learns Thunder Fang and Supercell Slam by level up
+    - Learns Thunder Fang, Zing Zap, and Supercell Slam by level up
 
 - Eelektross (postgame):
-    - Learns Thunder Fang, Thunder Punch, and Supercell Slam by level up
+    - Learns Thunder Fang, Zing Zap, Thunder Punch, and Supercell Slam by level up
 
 - Litwick:
     - Evolution: 41->36
@@ -4102,7 +4107,7 @@
 - Boltund:
     - HP: 59->60
     - Spe: 121->125
-    - Learns Thunder Shock, Thunder Fang, Shock Wave, Discharge, Thunderbolt, and Supercell Slam by level up
+    - Learns Thunder Shock, Thunder Fang, Shock Wave, Discharge, Zing Zap, Thunderbolt, and Supercell Slam by level up
     - Learns Ice Fang by move relearner
 
 - Rolycoly (postgame):
@@ -4293,7 +4298,7 @@
     - Learns Mach Punch, Power-Up Punch, Drain Punch, and Thunder Punch by level up
 
 - Pawmot:
-    - Learns Mach Punch, Power-Up Punch, Drain Punch, Thunder Punch, Mega Punch, and Supercell Slam by level up
+    - Learns Mach Punch, Power-Up Punch, Drain Punch, Thunder Punch, Mega Punch, Zing Zap, and Supercell Slam by level up
 
 - Fidough:
     - HP: 37->40

@@ -1668,6 +1668,10 @@
         "Move": "MOVE_ROCK_SLIDE"
       },
       {
+        "Level": 40,
+        "Move": "MOVE_ZING_ZAP"
+      },
+      {
         "Level": 54,
         "Move": "MOVE_SUPERCELL_SLAM"
       }
@@ -2887,7 +2891,9 @@
       "MOVE_DRAIN_PUNCH"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ZING_ZAP"
+    ]
   },
   "MAGBY": {
     "LevelMoves": [],
@@ -8758,6 +8764,10 @@
     "LevelMoves": [
       {
         "Level": 36,
+        "Move": "MOVE_ZING_ZAP"
+      },
+      {
+        "Level": 44,
         "Move": "MOVE_SUPERCELL_SLAM"
       }
     ],
@@ -8770,6 +8780,10 @@
     "LevelMoves": [
       {
         "Level": 48,
+        "Move": "MOVE_ZING_ZAP"
+      },
+      {
+        "Level": 60,
         "Move": "MOVE_SUPERCELL_SLAM"
       }
     ],
@@ -8782,6 +8796,10 @@
     "LevelMoves": [
       {
         "Level": 56,
+        "Move": "MOVE_ZING_ZAP"
+      },
+      {
+        "Level": 72,
         "Move": "MOVE_SUPERCELL_SLAM"
       }
     ],
@@ -10080,14 +10098,40 @@
     "TutorMoves": []
   },
   "BLITZLE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_THUNDER_SHOCK"
+      },
+      {
+        "Level": 29,
+        "Move": "MOVE_ZING_ZAP"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_SUPERCELL_SLAM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "ZEBSTRIKA": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_THUNDER_SHOCK"
+      },
+      {
+        "Level": 36,
+        "Move": "MOVE_ZING_ZAP"
+      },
+      {
+        "Level": 53,
+        "Move": "MOVE_SUPERCELL_SLAM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -11390,6 +11434,10 @@
         "Move": "MOVE_THUNDER_FANG"
       },
       {
+        "Level": 39,
+        "Move": "MOVE_ZING_ZAP"
+      },
+      {
         "Level": 74,
         "Move": "MOVE_SUPERCELL_SLAM"
       }
@@ -11404,6 +11452,10 @@
       {
         "Level": 1,
         "Move": "MOVE_THUNDER_FANG"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_ZING_ZAP"
       },
       {
         "Level": 1,
@@ -15397,6 +15449,10 @@
         "Move": "MOVE_DISCHARGE"
       },
       {
+        "Level": 41,
+        "Move": "MOVE_ZING_ZAP"
+      },
+      {
         "Level": 48,
         "Move": "MOVE_THUNDERBOLT"
       },
@@ -16576,6 +16632,10 @@
       },
       {
         "Level": 49,
+        "Move": "MOVE_ZING_ZAP"
+      },
+      {
+        "Level": 54,
         "Move": "MOVE_SUPERCELL_SLAM"
       }
     ],

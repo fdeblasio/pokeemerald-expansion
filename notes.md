@@ -135,7 +135,7 @@ upcoming
 - Double check that all Gen1 Pokémon have updated movesets
     - Next do all starters/beasts/bugs/birds/etc.
     - Not including cross-gen evos or regionals or already updated:
-        7: 20 (Cosmog-Melmetal)
+        7: 14 (Cosmog-Marshadow)
         8: 96
         4: 107
         9: 120
@@ -247,6 +247,7 @@ upcoming
     - Any Pokémon that learns a biting move, should also learn a STAB version (for example, Eelektrik learning Crunch but not Thunder Fang, or Mareanie learning Bite but not Poison Fang)
     - Any Pokémon that learns a horn move (Horn Attack, Megahorn, Smart Strike, etc), can learn them all?
     - Any Poison/Steel/Water type that learns Poison Tail/Iron Tail/Aqua Tail should learn its corresponding type's move?
+        - These three are done, but should Dragon Tail be included too?
     - Any Psychic/Steel type that learns Headbutt should learn Zen Headbutt/Iron Head?
     - Any Flying/Steel type that learns Wing Attack/Steel Wing should learn the other
 - Possible Move Updates:
@@ -417,7 +418,6 @@ upcoming
 
 ### Big changes from Vanilla - low priority
 - Update White Smoke/Clear Body to prevent self-inflicted stat drops like Shell Smash?
-- Add more basic moves for level up coverage (like a 40 power Ground move or a 60 power physical Fairy move)
 - Remove IVs? Maybe make boolean for either 0 or 31 added to stat
     - Would need to figure out Hidden Power
         - Six stats times three values would equal 18 types (would need to figure out third value (16?) but also Normal Hidden Power sounds)
@@ -426,9 +426,21 @@ upcoming
 - Fire Blast/Hydro Pump/Stone Edge accurate in respective weathers?
     - Make Thunder also accurate in Electric Terrain?
 - Calculate Electro Ball more similarly to Gyro Ball?
-- New moves based on other animations (Tail, Punches, Kicks, Headbutts, Wings, Claw)
-    - For example, a Flame Wing move that uses Wing Attack/Steel Wing's animation but with fire
-    - The existing animation variations aren't consistent for moves (Steel Wing is stronger than Wing Attack, Iron Tail is stronger than Poison Tail, etc.) but the new moves should be
+- New moves:
+    - Add more basic moves for level up coverage (like a 40 power Ground move or a 60 power physical Fairy move)
+    - Based on other animations (Tail, Punches, Kicks, Headbutts, Wings, Claw)
+        - For example, a Flame Wing move that uses Wing Attack/Steel Wing's animation but with fire
+        - The existing animation variations aren't consistent for moves (Steel Wing is stronger than Wing Attack, Iron Tail is stronger than Poison Tail, etc.) but the new moves should be
+        - Wind moves: Either Heat Wave/Ominous Wind/Sandstorm or a single Gust like Gust (but not Twister I guess)
+    - Standardize new move type animations:
+        - Electric: look into current electric effects, most likely Thunder Punch/Thunder Fang, maybe without inversion
+        - Fire: look into current fire effects, most likely Fire Punch/Blaze Kick/Fire Fang
+        - Ice: look into current ice effects, most likely Ice Punch/Ice Fang
+        - Steel: Metal Claw, Steel Wing, Iron Head, etc. Figure out if metallic is permanent
+        - Poison: Poison bubbles? Look into what current moves use
+        - Water: Might be water effects? Waterfall/Aqua Tail?
+        - I guess just look at existing effects and choose the best
+    - Essentially new moves would be type x attack (Fire x Wings, Poison x Punch, Electric x Kick, etc.)
     - Add regular moves with GMax effects?
 - Make Water Veil also up evasion like Sand Veil?
 - Species-specific move effects? (maybe look at code for Diglett immunity to Telekinesis):

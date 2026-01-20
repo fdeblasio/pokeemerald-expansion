@@ -51822,6 +51822,7 @@ static const u16 sZeraoraTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_VOLT_SWITCH,
     MOVE_WILD_CHARGE,
+    MOVE_ZING_ZAP,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_ZERAORA
@@ -51833,6 +51834,7 @@ static const u16 sMeltanTeachableLearnset[] = {
     MOVE_FLASH_CANNON,
     MOVE_GYRO_BALL,
     MOVE_IRON_DEFENSE,
+    MOVE_IRON_HEAD,
     MOVE_PROTECT,
     MOVE_REST,
     MOVE_SLEEP_TALK,

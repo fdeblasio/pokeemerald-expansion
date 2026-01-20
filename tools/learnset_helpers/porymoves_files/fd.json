@@ -15013,16 +15013,56 @@
     "TutorMoves": []
   },
   "POIPOLE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_POISON_STING"
+      },
+      {
+        "Level": 14,
+        "Move": "MOVE_SLUDGE"
+      },
+      {
+        "Level": 28,
+        "Move": "MOVE_POISON_TAIL"
+      },
+      {
+        "Level": 49,
+        "Move": "MOVE_SLUDGE_BOMB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": [
-      "MOVE_POISON_TAIL"
-    ]
+    "TutorMoves": []
   },
   "NAGANADEL": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 0,
+        "Move": "MOVE_TWISTER"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_POISON_STING"
+      },
+      {
+        "Level": 14,
+        "Move": "MOVE_SLUDGE"
+      },
+      {
+        "Level": 21,
+        "Move": "MOVE_DRAGON_BREATH"
+      },
+      {
+        "Level": 28,
+        "Move": "MOVE_POISON_TAIL"
+      },
+      {
+        "Level": 49,
+        "Move": "MOVE_SLUDGE_BOMB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -15031,35 +15071,80 @@
     ]
   },
   "STAKATAKA": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 15,
+        "Move": "MOVE_ROCK_TOMB"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_MAGNET_BOMB"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "BLACEPHALON": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 25,
+        "Move": "MOVE_OMINOUS_WIND"
+      },
+      {
+        "Level": 55,
+        "Move": "MOVE_FLAMETHROWER"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "ZERAORA": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 64,
+        "Move": "MOVE_ZING_ZAP"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "MELTAN": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 16,
+        "Move": "MOVE_MAGNET_BOMB"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_IRON_HEAD"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "MELMETAL": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_BULLET_PUNCH"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_MAGNET_BOMB"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_IRON_HEAD"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

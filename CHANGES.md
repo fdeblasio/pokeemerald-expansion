@@ -4762,11 +4762,11 @@
 - Marshadow
 
 - Poipole:
-    - Learns Poison Sting, Sludge, Poison Tail, and Sludge Bomb by move relearner
+    - Learns Poison Sting, Sludge, Poison Tail, and Sludge Bomb by level up
 
 - Naganadel:
-    - Learns Poison Sting, Sludge, Dragon Breath, Poison Tail, and Sludge Bomb by move relearner
     - Learns Twister upon evolving
+    - Learns Poison Sting, Sludge, Dragon Breath, Poison Tail, and Sludge Bomb by level up
 
 - Stakataka:
     - Learns Rock Tomb and Magnet Bomb by level up

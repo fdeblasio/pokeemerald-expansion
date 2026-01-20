@@ -503,6 +503,7 @@ upcoming
 - Will need to revert Surf/Waterfall/Dive items to their original functions
 - Remove duplicate GFX (for example, bald_man_frlg is just bald_man in the PR)
 - Improve Rod order
+- Add Wiglett/Toedscool?
 
 ### Overworld
 - Seperate out split routes into two maps for different encounters?

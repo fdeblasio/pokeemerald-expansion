@@ -6371,6 +6371,8 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
         if (category == DAMAGE_CATEGORY_PHYSICAL)
             power = uq4_12_multiply_half_down(power, UQ_4_12(1.5));
         break;
+    default:
+        break;
     }
 
     if (MoveAlwaysCrits(move))
@@ -6429,7 +6431,13 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
         uq4_12_t modifier = CalcTypeEffectivenessMultiplier(&ctx);
 
         if (ShouldShowTypeEffectiveness(ctx.battlerDef))
+        {
             power = uq4_12_multiply(power, modifier);
+            if (ability == ABILITY_TINTED_LENS && modifier <= UQ_4_12(0.5))
+                UQ4_12_MULTIPLY(power, 2.0);
+            else if (ability == ABILITY_NEUROFORCE && modifier >= UQ_4_12(2.0))
+                UQ4_12_MULTIPLY(power, 1.25);
+        }
     }
 
     return power;

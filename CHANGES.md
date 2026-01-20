@@ -1120,6 +1120,9 @@
         - Grav Apple
         - Rage Fist
         - Stomping Tantrum
+    Abilities:
+        - Tinted Lens
+        - Neuroforce
     Misc:
         - Charge
         - Mud Sport/Water Sport

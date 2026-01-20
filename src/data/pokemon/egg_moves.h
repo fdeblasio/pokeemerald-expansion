@@ -153,7 +153,6 @@ static const u16 sEkansEggMoveLearnset[] = {
     MOVE_DISABLE,
     MOVE_DRAGON_BREATH,
     MOVE_INFESTATION,
-    MOVE_POISON_FANG,
     MOVE_PURSUIT,
     MOVE_ROUND,
     MOVE_SLAM,

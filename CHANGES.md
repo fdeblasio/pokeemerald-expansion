@@ -1197,6 +1197,55 @@
 - Mega Pidgeot (not in main game):
     - Spe: 121->131
 
+- Rattata (not in main game):
+    - Learns Cut by level up
+
+- Raticate (not in main game):
+    - Learns Cut and Body Slam by level up
+
+- Alolan Rattata (not in main game):
+    - Learns Cut by level up
+
+- Alolan Raticate (not in main game):
+    - Learns Cut and Body Slam by level up
+
+- Spearow:
+    - Type: Normal/Flying->Flying
+    - Learns Scratch by level up
+
+- Fearow:
+    - Type: Normal/Flying->Flying
+    - HP: 65->70
+    - Atk: 90->95
+    - SpA: 61->65
+    - SpD: 61->65
+    - Learns Scratch by level up
+
+- Ekans/Arbok (not in main game):
+    - Learn Poison Tail, Poison Fang, and Poison Jab by level up
+    - Learn Dragon Breath by Egg Move
+
+- Pichu:
+    - Held item: None->Light Ball
+    - Evolution: friendship->12
+
+- Pikachu:
+    - Held item: Light Ball: 5%->100%
+    - Evolves into Alolan Raichu with a Sun Stone
+    - Learns Volt Tackle by level up
+
+- Raichu:
+    - Learns Volt Tackle by level up
+
+- Alolan Raichu:
+    - Learns Volt Tackle and Psybeam by level up
+
+- Sandshrew/Sandslash:
+    - Learn Earth Power and Drill Run by level up
+
+- Alolan Sandshrew/Alolan Sandslash (postgame):
+    - Learn Ice Shard, Avalanche, and Ice Punch by level up
+
 - Nidoran F (not in main game):
     - Learns Poison Tail, Venoshock, and Poison Jab by level up
 
@@ -1220,30 +1269,6 @@
     - SpD: 75->85
     - Learns Poison Tail, Venoshock, Poison Fang, Drill Run, and Earthquake by level up
 
-- Ekans/Arbok (not in main game):
-    - Learn Dragon Breath by Egg Move
-
-- Pichu:
-    - Held item: None->Light Ball
-    - Evolution: friendship->12
-
-- Pikachu:
-    - Held item: Light Ball: 5%->100%
-    - Evolves into Alolan Raichu with a Sun Stone
-    - Learns Volt Tackle by level up
-
-- Raichu:
-    - Learns Volt Tackle by level up
-
-- Alolan Raichu:
-    - Learns Volt Tackle and Psybeam by level up
-
-- Sandshrew/Sandslash:
-    - Learn Earth Power by level up
-
-- Alolan Sandshrew/Alolan Sandslash (postgame):
-    - Learn Ice Shard, Avalanche, and Ice Punch by level up
-
 - Cleffa (not in main game):
     - Atk: 25->30
     - Def: 28->30
@@ -1266,6 +1291,26 @@
 
 - Alolan Ninetales (postgame):
     - Learns Fairy Wind, Disarming Voice, and Alluring Voice by level up
+
+- Igglybuff:
+    - HP: 90->95
+    - Def: 15->20
+    - SpA: 40->45
+    - Evolution: friendship->12
+
+- Jigglypuff:
+    - Def: 20->35
+    - SpA: 35->60
+    - SpD: 25->35
+    - Spe: 20->35
+    - Learns Alluring Voice by level up
+
+- Wigglytuff:
+    - Def: 45->60
+    - SpA: 85->95
+    - SpD: 50->60
+    - Spe: 45->60
+    - Learns Alluring Voice by level up
 
 - Oddish/Gloom/Vileplume/Bellossom:
     - Learn Energy Ball by level up
@@ -1325,26 +1370,6 @@
     - Spe: 50->55
     - Learns Bullet Punch by level up
     - Learns Cut by TM
-
-- Igglybuff:
-    - HP: 90->95
-    - Def: 15->20
-    - SpA: 40->45
-    - Evolution: friendship->12
-
-- Jigglypuff:
-    - Def: 20->35
-    - SpA: 35->60
-    - SpD: 25->35
-    - Spe: 20->35
-    - Learns Alluring Voice by level up
-
-- Wigglytuff:
-    - Def: 45->60
-    - SpA: 85->95
-    - SpD: 50->60
-    - Spe: 45->60
-    - Learns Alluring Voice by level up
 
 - Psyduck:
     - Type: Water->Water/Psychic
@@ -1599,8 +1624,8 @@
     - Learn Rock Slide by level up
 
 - Rhyperior:
-    - Learns Rock Slide by level up
     - Learns Rock Wrecker upon evolving
+    - Learns Rock Slide by level up
 
 - Happiny (postgame):
     - Base exp: 110->250
@@ -2546,14 +2571,15 @@
 
 - Swablu:
     - SpA: 40->50
+    - Type: Normal/Flying->Flying
     - Received Fluffy as a second Ability
-    - Learns Gust, Air Cutter, Hyper Voice, and Air Slash by level up
+    - Learns Gust, Air Cutter, and Air Slash by level up
 
 - Altaria:
     - Atk: 70->60
     - SpA: 70->90
     - Received Fluffy as a second Ability
-    - Learns Gust, Air Cutter, Hyper Voice, and Air Slash by level up
+    - Learns Gust, Air Cutter, and Air Slash by level up
 
 - Mega Altaria:
     - Atk: 110->100
@@ -3036,8 +3062,8 @@
     - Learns Mud Shot, Bulldoze, and Stomping Tantrum by level up
 
 - Excadrill (postgame):
-    - Learns Mud Shot, Bulldoze, and Stomping Tantrum by level up
     - Learns Smart Strike upon evolving
+    - Learns Mud Shot, Bulldoze, and Stomping Tantrum by level up
 
 - Audino:
     - HP: 103->105
@@ -3438,6 +3464,7 @@
     - Learns Dizzy Punch, Strength, Stomping Tantrum, and Body Slam by level up
 
 - Fletchling:
+    - Type: Normal/Flying->Flying
     - Spe: 62->65
     - Learns Dual Wingbeat by level up
 
@@ -4043,11 +4070,11 @@
 - Marshadow
 
 - Poipole:
-    - Learns Poison Sting, Sludge, Poison Tail, and Sludge Bomb by move relearner
+    - Learns Poison Sting, Sludge, Poison Tail, and Sludge Bomb by level up
 
 - Naganadel:
-    - Learns Poison Sting, Sludge, Dragon Breath, Poison Tail, and Sludge Bomb by move relearner
     - Learns Twister upon evolving
+    - Learns Poison Sting, Sludge, Dragon Breath, Poison Tail, and Sludge Bomb by level up
 
 - Stakataka:
     - Learns Rock Tomb and Magnet Bomb by level up

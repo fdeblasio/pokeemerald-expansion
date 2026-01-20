@@ -142,6 +142,13 @@ upcoming
         1: 151
         5: 156
 - Turn some Normal/Flying types into either pure Flying or Flying/Normal?
+- Decide whether to reverse types for Pokemon whose primary becomes secondary:
+    - Vanilla:
+        - Rufflet Normal/Flying->Hisuian Braviary Psychic/Flying
+    - Custom:
+        - Mime Jr. Psychic->Galarian Mr. Mime Ice/Psychic
+        - Swablu Flying->Altaria Dragon/Flying
+        - Fletchling Flying->Fletchinder Fire/Flying
 - More macros for almost identical forms (like Mimikyu)
 - Add in GMax forms as Megas with +20 to every non-HP stat? (or 40 to attacking and 0 to non-attacking)
 - Eventually remove RSE and/or BDSP teachable moves?
@@ -304,6 +311,7 @@ upcoming
 - Will need to revert Surf/Waterfall/Dive items to their original functions
 - Remove duplicate GFX (for example, bald_man_frlg is just bald_man in the PR)
 - Improve Rod order
+- Add Wiglett/Toedscool?
 
 ### Overworld
 - Seperate out split routes into two maps for different encounters?
@@ -428,6 +436,7 @@ upcoming
 - Calculate Electro Ball more similarly to Gyro Ball?
 - New moves:
     - Add more basic moves for level up coverage (like a 40 power Ground move or a 60 power physical Fairy move)
+        - Add in Magnitude variations as their own moves in order to get more Ground moves?
     - Based on other animations (Tail, Punches, Kicks, Headbutts, Wings, Claw)
         - For example, a Flame Wing move that uses Wing Attack/Steel Wing's animation but with fire
         - The existing animation variations aren't consistent for moves (Steel Wing is stronger than Wing Attack, Iron Tail is stronger than Poison Tail, etc.) but the new moves should be

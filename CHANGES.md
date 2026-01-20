@@ -565,6 +565,8 @@
         - PP: 5->10
     - Hyper Fang:
         - Accuracy: 90->100
+    - Judgment:
+        - Power: 100->150
     - Mega Punch:
         - Accuracy: 85->100
     - Pound:
@@ -3943,22 +3945,41 @@
 - Sandygast/Palossand:
     - Learn Mud-Slap, Mud Shot, Hex, and Scorching Sands by level up
 
+- Pyukumuku:
+    - Learns Venom Drench by level up
+
 - Type: Null:
     - Evolution: friendship->45
+    - Learns Cut and Body Slam by level up
+
+- Silvally:
+    - Learns Cut and Body Slam by level up
+
+- Minior:
+    - Learns Rock Throw, Gust, Air Cutter, Rock Tomb, Rock Slide, and Air Slash by level up
+    - Learns Body Press by TM
 
 - Komala:
     - Catch rate: 45->90
+    - Learns Pound and Body Slam by level up
 
 - Turtonator:
     - Catch rate: 70->90
-    - Learns Dragon Breath by Egg Move
+    - Learns Dragon Breath and Flame Burst by level up
+
+- Togedemaru:
+    - Learns Metal Claw, Iron Head, and Supercell Slam by level up
 
 - Mimikyu:
     - Catch rate: 45->90
     - Learns Fairy Wind, Draining Kiss, Shadow Punch, and Spirit Break by level up
 
+- Bruxish:
+    - Learns Heart Stamp, Aqua Cutter, Psycho Cut, and Zen Headbutt by level up
+
 - Drampa:
     - Type: Normal/Dragon->Dragon/Normal
+    - Catch rate: 70->90
     - Learns Swift by level up
 
 - Mega Drampa:

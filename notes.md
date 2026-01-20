@@ -113,6 +113,11 @@ upcoming
     - Remove BP costs so that script_menu.h and field_specials.c can use item/move names directly?
 
 ### Meta
+- Try to get upstream changes working better here
+    - Automatic teachable movesets. Would require bringing local porymoves code here
+    - Automatic trainers (probably not)
+    - PC renaming/relearning
+    - Add HM back to variable names
 - More simple modifications: https://www.pokecommunity.com/showthread.php?t=416647&page=1
 - Pret wiki tutorials:       https://github.com/pret/pokeemerald/wiki/Tutorials
 - Fix dynamic README lines (work in VS code but not GitHub)
@@ -127,7 +132,7 @@ upcoming
 - Double check that all Gen1 Pokémon have updated movesets
     - Next do all starters/beasts/bugs/birds/etc.
     - Not including cross-gen evos or regionals or already updated:
-        7: 36 (Pyukumuku-Melmetal)
+        7: 27 (Jangmo-o-Melmetal)
         8: 96
         4: 107
         9: 120

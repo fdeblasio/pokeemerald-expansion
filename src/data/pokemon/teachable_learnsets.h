@@ -49888,6 +49888,8 @@ static const u16 sPyukumukuTeachableLearnset[] = {
 static const u16 sTypeNullTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_AIR_SLASH,
+    MOVE_BODY_SLAM,
+    MOVE_CUT,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRAGON_CLAW,
@@ -49928,7 +49930,9 @@ static const u16 sTypeNullTeachableLearnset[] = {
 static const u16 sSilvallyTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_AIR_SLASH,
+    MOVE_BODY_SLAM,
     MOVE_CRUNCH,
+    MOVE_CUT,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
@@ -49994,6 +49998,9 @@ static const u16 sSilvallyTeachableLearnset[] = {
 #if P_FAMILY_MINIOR
 static const u16 sMiniorTeachableLearnset[] = {
     MOVE_ACROBATICS,
+    MOVE_AIR_CUTTER,
+    MOVE_AIR_SLASH,
+    MOVE_BODY_PRESS,
     MOVE_BULLDOZE,
     MOVE_CALM_MIND,
     MOVE_CHARGE_BEAM,
@@ -50188,6 +50195,7 @@ static const u16 sTogedemaruTeachableLearnset[] = {
     MOVE_HYPER_BEAM,
     MOVE_IRON_HEAD,
     MOVE_IRON_TAIL,
+    MOVE_METAL_CLAW,
     MOVE_PAYBACK,
     MOVE_POISON_JAB,
     MOVE_PROTECT,
@@ -50200,6 +50208,7 @@ static const u16 sTogedemaruTeachableLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_STEEL_BEAM,
     MOVE_SUPER_FANG,
+    MOVE_SUPERCELL_SLAM,
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THIEF,
@@ -50310,6 +50319,7 @@ static const u16 sBruxishTeachableLearnset[] = {
     MOVE_PSYCHIC_FANGS,
     MOVE_PSYCHIC_NOISE,
     MOVE_PSYCHIC_TERRAIN,
+    MOVE_PSYCHO_CUT,
     MOVE_PSYSHOCK,
     MOVE_RAIN_DANCE,
     MOVE_REFLECT,
@@ -50334,6 +50344,7 @@ static const u16 sBruxishTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_WATERFALL,
     MOVE_WHIRLPOOL,
+    MOVE_ZEN_HEADBUTT,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_BRUXISH

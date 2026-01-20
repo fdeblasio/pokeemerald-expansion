@@ -6683,7 +6683,6 @@ static const u16 sPyukumukuEggMoveLearnset[] = {
     MOVE_RECYCLE,
     MOVE_SCREECH,
     MOVE_TICKLE,
-    MOVE_VENOM_DRENCH,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_PYUKUMUKU
@@ -6722,7 +6721,6 @@ static const u16 sTurtonatorEggMoveLearnset[] = {
     MOVE_BLOCK,
     MOVE_BRUTAL_SWING,
     MOVE_CONFIDE,
-    MOVE_DRAGON_BREATH,
     MOVE_HEAD_SMASH,
     MOVE_RAPID_SPIN,
     MOVE_REVENGE,

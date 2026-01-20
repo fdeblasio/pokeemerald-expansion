@@ -11251,7 +11251,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "The type varies with the\n"
             "kind of Plate held."),
         .effect = EFFECT_CHANGE_TYPE_ON_ITEM,
-        .power = 100,
+        .power = 150,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 10,

@@ -115,6 +115,9 @@ upcoming
 ### Meta
 - Try to get upstream changes working better here
     - Automatic teachable movesets. Would require bringing local porymoves code here
+        - Current have a complicated solution for relearning tutor moves. This can be made easier by using the repo's solution with gTutorMoves. However the file that it exists in is automatically made by the Python script
+            - Removing from src/data/.gitignore for now but it will have to be added back later
+    - Makefile changes
     - Automatic trainers (probably not)
     - Summary screen/PC renaming/relearning
     - Add HM back to variable names

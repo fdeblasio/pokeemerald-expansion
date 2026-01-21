@@ -2584,7 +2584,20 @@
     "TutorMoves": []
   },
   "EXEGGCUTE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 25,
+        "Move": "MOVE_PSYBEAM"
+      },
+      {
+        "Level": 45,
+        "Move": "MOVE_ENERGY_BALL"
+      },
+      {
+        "Level": 55,
+        "Move": "MOVE_PSYCHIC"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -2592,6 +2605,18 @@
   },
   "EXEGGUTOR": {
     "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_PSYBEAM"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_ENERGY_BALL"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_PSYCHIC"
+      },
       {
         "Level": 2,
         "Move": "MOVE_SEED_BOMB"
@@ -2606,7 +2631,7 @@
       },
       {
         "Level": 2,
-        "Move": "MOVE_LEECH_SEED"
+        "Move": "MOVE_BARRAGE"
       }
     ],
     "PreEvoMoves": [],
@@ -2617,8 +2642,24 @@
   "EXEGGUTOR_ALOLA": {
     "LevelMoves": [
       {
+        "Level": 1,
+        "Move": "MOVE_PSYBEAM"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_ENERGY_BALL"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_PSYCHIC"
+      },
+      {
         "Level": 2,
         "Move": "MOVE_SEED_BOMB"
+      },
+      {
+        "Level": 2,
+        "Move": "MOVE_BREAKING_SWIPE"
       },
       {
         "Level": 2,
@@ -2626,11 +2667,7 @@
       },
       {
         "Level": 2,
-        "Move": "MOVE_LEECH_SEED"
-      },
-      {
-        "Level": 2,
-        "Move": "MOVE_SYNTHESIS"
+        "Move": "MOVE_BARRAGE"
       }
     ],
     "PreEvoMoves": [],
@@ -2681,7 +2718,12 @@
     "TutorMoves": []
   },
   "HITMONLEE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+    {
+      "Level": 0,
+      "Move": "MOVE_ROLLING_KICK"
+    }
+  ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

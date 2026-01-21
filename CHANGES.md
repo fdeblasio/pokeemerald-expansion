@@ -523,7 +523,7 @@
 #### Many moves (especially signature moves) were given 100% accuracy and/or 10 PP as opposed to 5:
 - Normal:
     - Barrage:
-        - Power: 15->20
+        - Power: 15->25
         - Accuracy: 85->100
     - Bind:
         - Power: 15->35
@@ -533,7 +533,7 @@
     - Chatter:
         - Power: 65->80
     - Comet Punch:
-        - Power: 18->20
+        - Power: 18->25
         - Accuracy: 85->100
         - PP: 15->20
     - Constrict:
@@ -554,10 +554,10 @@
     - Frustration:
         - Max power: 102->127.5
     - Fury Attack:
-        - Power: 15->20
+        - Power: 15->25
         - Accuracy: 85->100
     - Fury Swipes:
-        - Power: 18->20
+        - Power: 18->25
         - Accuracy: 80->100
         - PP: 15->20
     - Head Charge:
@@ -590,6 +590,7 @@
     - Slam:
         - Accuracy: 75->100
     - Spike Cannon:
+        - Power: 20->25
         - PP: 15->20
     - Strength:
         - PP: 15->20
@@ -597,6 +598,7 @@
         - PP: 35->40
     - Tail Slap:
         - Accuracy: 85->100
+        - PP: 10->20
     - Take Down:
         - Accuracy: 85->100
     - Techno Blast:
@@ -607,7 +609,7 @@
         - Power: 15->35
 - Fighting:
     - Arm Thrust:
-        - Power: 15->20
+        - Power: 15->25
     - Aura Sphere:
         - Power: 80->90
     - Collision Course:
@@ -622,6 +624,8 @@
         - Accuracy: 90->100
     - Submission:
         - Accuracy: 80->100
+    - Triple Kick:
+        - Power: 10->20
 - Flying:
     - Aeroblast:
         - Accuracy: 95->100
@@ -668,6 +672,7 @@
         - Accuracy: 85->100
     - Bone Rush:
         - Accuracy: 90->100
+        - PP: 10->20
     - Drill Run:
         - Accuracy: 95->100
     - High Horsepower:
@@ -702,6 +707,7 @@
         - PP: 5->10
     - Rock Blast:
         - Accuracy: 90->100
+        - PP: 10->20
     - Rock Slide:
         - Power: 75->80
         - Accuracy: 90->100
@@ -866,6 +872,8 @@
         - Accuracy: 85->90
         - PP: 15->20
 - Grass:
+    - Bullet Seed:
+        - PP: 30->20
     - Chloroblast:
         - Accuracy: 95->100
         - PP: 5->10
@@ -940,6 +948,8 @@
         - Accuracy: 95->100
     - Icicle Crash:
         - Accuracy: 90->100
+    - Icicle Spear:
+        - PP: 30->20
     - Icy Wind:
         - Accuracy: 95->100
     - Mountain Gale:
@@ -1611,11 +1621,17 @@
     - Learns Thunderbolt by level up
 
 - Exeggcute (not in main game):
+    - Held item: Grassy Seed: 0%->50%
     - Evolves in Alolan Exeggutor with a Sun Stone
+    - Learns Psybeam, Energy Ball, and Psychic by level up
+
+- Exeggutor (not in main game):
+    - Learns Psybeam, Energy Ball, and Psychic by level up
 
 - Alolan Exeggutor (not in main game):
     - Atk: 105->125
     - SpA: 125->105
+    - Learns Psybeam, Energy Ball, Psychic, and Breaking Swipe by level up
 
 - Cubone (not in main game):
     - Speed: 35->40
@@ -1632,6 +1648,7 @@
 
 - Alolan Marowak (not in main game):
     - Speed: 45->50
+    - Abilities: Cursed Body/Lightning Rod/Rock Head->Rock Head/Lightning Rod/Cursed Body
     - Held items:
         - Thick Club: 5%->50%
         - Rare Bone: 0%->5%
@@ -1640,10 +1657,22 @@
 - Tyrogue (not in main game):
     - SpD: 35->55
     - Catch rate: 75->90
+    - Abilities: Guts/Steadfast/Vital Spirit->Guts/Vital Spirit/Steadfast
     - Learns Rock Smash by level up
 
+- Hitmonlee (not in main game):
+    - Atk: 120->125
+    - Def: 53->60
+    - Spe: 87->90
+    - Learns Rolling Kick upon evolving
+
 - Hitmonchan (not in main game):
+    - Def: 79->90
+    - Spe: 76->80
     - Learns Dizzy Punch by level up
+
+- Hitmontop (not in main game):
+    - Spe: 70->85
 
 - Lickitung (postgame):
     - Atk: 55->65

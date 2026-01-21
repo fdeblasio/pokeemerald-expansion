@@ -504,6 +504,7 @@ upcoming
 - Remove duplicate GFX (for example, bald_man_frlg is just bald_man in the PR)
 - Improve Rod order
 - Add Wiglett/Toedscool?
+- Add Munna for Route 10 girl? Maybe a trade?
 
 ### Overworld
 - Seperate out split routes into two maps for different encounters?

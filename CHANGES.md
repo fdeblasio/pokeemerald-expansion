@@ -1297,29 +1297,48 @@
     - Def: 15->20
     - SpA: 40->45
     - Evolution: friendship->12
+    - Learns Fairy Wind by level up
 
 - Jigglypuff:
     - Def: 20->35
     - SpA: 35->60
     - SpD: 25->35
     - Spe: 20->35
-    - Learns Alluring Voice by level up
+    - Learns Fairy Wind and Alluring Voice by level up
 
 - Wigglytuff:
     - Def: 45->60
     - SpA: 85->95
     - SpD: 50->60
     - Spe: 45->60
-    - Learns Alluring Voice by level up
+    - Learns Fairy Wind and Alluring Voice by level up
+
+- Zubat:
+    - Learns Gust by level up
+
+- Golbat:
+    - Evolution: friendship->33
+    - Learns Gust by level up
+
+- Crobat:
+    - Learns Gust and Poison Jab by level up
 
 - Oddish/Gloom/Vileplume/Bellossom:
     - Learn Energy Ball by level up
 
+- Paras (not in main game):
+    - Larns Pounce, Trailblaze, Bug Bite, Lunge, Seed Bomb, and Leech Life by level up
+
 - Parasect (not in main game):
+    - HP: 60->70
+    - Def: 80->90
+    - SpD: 80->90
+    - Spe: 30->40
     - Held items:
         - Tiny Mushroom: 50%->0%
         - Big Mushroom: 5%->50%
         - Balm Mushroom: 0%->5%
+    - Larns Pounce, Trailblaze, Bug Bite, Lunge, Seed Bomb, and Leech Life by level up
 
 - Venonat (not in main game):
     - SpA: 40->55
@@ -1331,12 +1350,16 @@
 - Diglett (not in main game):
     - Learns Stomping Tantrum by level up
 
+- Alolan Diglett (not in main game):
+    - Learns Stomping Tantrum by level up
+
 - Dugtrio (not in main game):
     - HP: 35->50
     - Learns Stomping Tantrum by level up
 
 - Alolan Dugtrio (not in main game):
     - HP: 35->50
+    - Learns Stomping Tantrum by level up
 
 - Meowth (postgame):
     - Atk: 45->55
@@ -1380,15 +1403,16 @@
     - Learns Power Gem upon evolving
     - Learns Psybeam, Extrasensory, and Psychic by level up
 
-- Zubat:
-    - Learns Gust by level up
+- Mankey (not in main game):
+    - Learns Rock Smash, Brick Break, Drain Punch, and Temper Flare by level up
 
-- Golbat:
-    - Evolution: friendship->33
-    - Learns Gust by level up
+- Primeape (not in main game):
+    - Evolution: Using Rage Fist 20 times->Knowing Rage Fist
+    - Learns Rock Smash, Brick Break, Drain Punch, and Temper Flare by level up
 
-- Crobat:
-    - Learns Gust and Poison Jab by level up
+- Annihilape (not in main game):
+    - Spe: 90->95
+    - Learns Rage, Covet, Karate Chop, Pursuit, Punishment, Rock Smash, Brick Break, Drain Punch, and Temper Flare by level up
 
 - Growlithe/Arcanine (postgame):
     - Learn Temper Flare by level up
@@ -1488,16 +1512,31 @@
     - Learn Shock Wave and Thunderbolt by level up
 
 - Farfetch'd (not in main game):
+    - HP: 52->55
+    - SpA: 58->60
+    - SpD: 62->65
+    - Spe: 60->70
     - Catch rate: 45->90
     - Held item: Leek: 5%->100%
+    - Learns Scratch, Dual Wingbeat, and Body Slam by level up
+    - Learns Poison Jab at level 55 instead of level 1
 
 - Galarian Farfetch'd (not in main game):
+    - HP: 52->55
+    - SpA: 58->60
+    - SpD: 62->65
+    - Spe: 55->65
     - Catch rate: 45->90
     - Held item: Leek: 5%->100%
+    - Learns Revenge and Low Sweep by level up
 
 - Sirfetch'd (not in main game):
+    - HP: 62->65
+    - SpA: 68->70
+    - SpD: 82->85
+    - Spe: 65->75
     - Held item: Leek: 5%->100%
-    - Learns Drain Punch by TM
+    - Learns Revenge, Low Sweep, Drain Punch, and Sacred Sword by level up
 
 - Doduo/Dodrio:
     - Learn Body Slam by level up
@@ -1529,15 +1568,29 @@
 
 - Gastly/Haunter/Gengar (Battle Frontier only):
     - Type: Ghost/Poison->Ghost
+    - Learn Astonish and Shadow Sneak by level up
 
 - Onix (not in main game):
     - Catch rate: 45->90
+    - Held item: Lagging Tail: 0%->5%
+    - Learns Mud-Slap, Mud Shot, Stomping Tantrum, Drill Run, and Earthquake by level up
+    - Learns Body Press by TM
+
+- Steelix (not in main game):
+    - Learns Mud-Slap, Mud Shot, Stomping Tantrum, Iron Head, Drill Run, and Earthquake by level up
 
 - Drowzee (not in main game):
-    - Learns Dream Eater by level up
+    - Atk: 48->50
+    - SpA: 43->70
+    - Spe: 42->45
+    - Learns Dream Eater and Miracle Eye by level up
 
 - Hypno (not in main game):
-    - Learns Dream Eater by level up
+    - Atk: 73->75
+    - SpA: 73->95
+    - Spe: 67->70
+    - Abilities: Insomnia/Forewarn/Inner Focus->Insomnia/Inner Focus/Stakeout
+    - Learns Dream Eater and Miracle Eye by level up
     - Hypnosis has an accuracy of 100 when used by Hypno
 
 - Krabby/Kingler (postgame):
@@ -1867,6 +1920,7 @@
     - Learns Gastro Acid and Power-Up Punch by Egg Move
 
 - Snorlax (postgame):
+    - Hidden Ability: Gluttony->Comatose
     - Learns Slack Off upon evolving
 
 - Zapdos (not in main game):
@@ -2236,15 +2290,15 @@
     - Learns Mega Kick by level up
 
 - Raikou (not in main game):
-    - Hidden Ability: Inner Focus -> Volt Absorb
+    - Hidden Ability: Inner Focus->Volt Absorb
     - Learns Shock Wave and Thunderbolt by level up
 
 - Entei (not in main game):
-    - Hidden Ability: Inner Focus -> Flash Fire
+    - Hidden Ability: Inner Focus->Flash Fire
     - Learns Flame Burst and Blaze Kick by level up
 
 - Suicune (not in main game):
-    - Hidden Ability: Inner Focus -> Water Absorb
+    - Hidden Ability: Inner Focus->Water Absorb
     - Learns Bubble Beam and Scald by level up
     - Learns Aqua Tail by move relearner
 
@@ -2699,7 +2753,7 @@
     - Learn Aurora Beam and Ice Beam by level up
 
 - Spheal/Sealeo/Walrein:
-    - Learn Bubble Beam and Ice Beam by level up
+    - Learn Chilling Water, Bubble Beam, and Ice Beam by level up
 
 - Clamperl:
     - Learns Dive by level up
@@ -3593,8 +3647,12 @@
     - SpD: 101->105
     - Spe: 124->125
 
-- Honedge/Doublade/Aegislash:
+- Honedge/Doublade:
+    - Received Sharpness as a second ability
     - Learn Metal Claw, Shadow Claw, and Smart Strike by level up
+
+- Aegislash:
+    - Learns Metal Claw, Shadow Claw, and Smart Strike by level up
 
 - Spritzee:
     - Gender ratio: 50/50->25/75

@@ -117,6 +117,7 @@ upcoming
     - Automatic teachable movesets. Would require bringing local porymoves code here
         - Current have a complicated solution for relearning tutor moves. This can be made easier by using the repo's solution with gTutorMoves. However the file that it exists in is automatically made by the Python script
             - Removing from src/data/.gitignore for now but it will have to be added back later
+        - Should probably still keep teachable learnsets out of gitignore to track changes
     - Makefile changes
     - Automatic trainers (probably not)
     - Summary screen/PC renaming/relearning
@@ -170,6 +171,12 @@ upcoming
 - Add more indicators of shiniess in wild battles in case sparkles are missed
 
 ### Items
+- Distribute evolutions items better instead of needing Lilycove
+    - Make a note of how many Pokemon per item are before Lilycove
+- Standardize valuable items
+    - Price progression (Pearl->Big Pearl->Pearl String/Tiny Mushroom->Big Mushroom->Balm Mushroom/Stardust->Star Piece->Comet Shard and Nugget->Big Nugget/Tiny Bamboo->Big Bamboo)
+    - Held items: (5/0/0->50/5/0->0/50/5 or 50/5/0->0/50/5->0/0/50) and 50/5/0->0/50/5
+    - Pancham can have Bamboo?
 - Max Elixir (and others?) should stay on party screen like Full Restores do
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Include charms? (might go over Key Items amount)
@@ -237,6 +244,7 @@ upcoming
         - Instead, maybe both gym battles AND G/T battles check both badges and existing flags/GabbyAndTyGetBattleNum?
 
 ### Moves
+- Replace Hypno's Hypnosis effect with a new move that uses its pendulum in the animation
 - Aqua Ring heals more with Water Bubble? In rain?
 - Find way for Rotom to learn special moves by level up (for relearning). Currently have TMs, but not all moves (Hydro Pump/Leaf Storm) are TMs
     - This gets solved if the TM list is expanded to have Scarlet and Violet's
@@ -312,6 +320,7 @@ upcoming
 - Remove duplicate GFX (for example, bald_man_frlg is just bald_man in the PR)
 - Improve Rod order
 - Add Wiglett/Toedscool?
+- Add Munna for Route 10 girl? Maybe a trade?
 
 ### Overworld
 - Seperate out split routes into two maps for different encounters?
@@ -324,7 +333,10 @@ upcoming
     - Route 12 north/south
 - Add sand encounters to Dewford area (using desert sand)
 - Finish Safari Zone forest
+    - Gastly can replace one of the spots of Pokemon moved to the forest
+    - Houndour can too (possibly swapping with a Fire Cave Pokemon) if removed from the Hoenn Dex
 - Find other ways to increase amount of encounters while still having 4-5 Pokémon per pool
+    - Won't really matter as-is (besides maybe introducing some Pokemon earlier), but will be helpful for hacks with larger Dexes
 - Add new defines (but keep current ones) for overworld sprites that line up with trainers for easier use
 - Double check that only Devon employees use DEVON_EMPLOYEES and only non-Devon use MAN_2
 - Add caves and more areas to Safari Zone for more postgame mons

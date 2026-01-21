@@ -892,7 +892,6 @@ static const u16 sFarfetchdGalarEggMoveLearnset[] = {
     MOVE_QUICK_ATTACK,
     MOVE_QUICK_GUARD,
     MOVE_RETALIATE,
-    MOVE_REVENGE,
     MOVE_ROUND,
     MOVE_SIMPLE_BEAM,
     MOVE_SKY_ATTACK,
@@ -1011,7 +1010,6 @@ static const u16 sShellderEggMoveLearnset[] = {
 #if P_FAMILY_GASTLY
 static const u16 sGastlyEggMoveLearnset[] = {
     MOVE_ALLY_SWITCH,
-    MOVE_ASTONISH,
     MOVE_CLEAR_SMOG,
     MOVE_CONFIDE,
     MOVE_CORROSIVE_GAS,

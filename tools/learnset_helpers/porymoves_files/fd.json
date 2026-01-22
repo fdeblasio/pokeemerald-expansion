@@ -2923,7 +2923,12 @@
     "TutorMoves": []
   },
   "KANGASKHAN": {
-    "LevelMoves": [],
+    "LevelMoves": [
+    {
+      "Level": 44,
+      "Move": "MOVE_BODY_SLAM"
+    }
+  ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -3190,14 +3195,40 @@
     "TutorMoves": []
   },
   "SMOOCHUM": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 20,
+        "Move": "MOVE_AURORA_BEAM"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_PSYBEAM"
+      },
+      {
+        "Level": 32,
+        "Move": "MOVE_ICE_BEAM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "JYNX": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 20,
+        "Move": "MOVE_AURORA_BEAM"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_PSYBEAM"
+      },
+      {
+        "Level": 34,
+        "Move": "MOVE_ICE_BEAM"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -3205,6 +3236,10 @@
   },
   "ELEKID": {
     "LevelMoves": [
+      {
+        "Level": 16,
+        "Move": "MOVE_SPARK"
+      },
       {
         "Level": 44,
         "Move": "MOVE_ELECTRIC_TERRAIN"
@@ -3218,6 +3253,10 @@
   "ELECTABUZZ": {
     "LevelMoves": [
       {
+        "Level": 16,
+        "Move": "MOVE_SPARK"
+      },
+      {
         "Level": 52,
         "Move": "MOVE_ELECTRIC_TERRAIN"
       }
@@ -3229,6 +3268,10 @@
   },
   "ELECTIVIRE": {
     "LevelMoves": [
+      {
+        "Level": 16,
+        "Move": "MOVE_SPARK"
+      },
       {
         "Level": 52,
         "Move": "MOVE_ELECTRIC_TERRAIN"
@@ -3242,30 +3285,50 @@
     ]
   },
   "MAGBY": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 16,
+        "Move": "MOVE_INCINERATE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "MAGMAR": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 16,
+        "Move": "MOVE_INCINERATE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "MAGMORTAR": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 16,
+        "Move": "MOVE_INCINERATE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "PINSIR": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_FURY_CUTTER"
+      }
+    ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": ["MOVE_AERIAL_ACE"],
     "EggMoves": [],
     "TutorMoves": []
   },

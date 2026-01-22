@@ -10935,6 +10935,7 @@ static const u16 sSmoochumTeachableLearnset[] = {
     MOVE_NASTY_PLOT,
     MOVE_PAYBACK,
     MOVE_PROTECT,
+    MOVE_PSYBEAM,
     MOVE_PSYCH_UP,
     MOVE_PSYCHIC,
     MOVE_PSYSHOCK,
@@ -11003,6 +11004,7 @@ static const u16 sJynxTeachableLearnset[] = {
     MOVE_NASTY_PLOT,
     MOVE_PAYBACK,
     MOVE_PROTECT,
+    MOVE_PSYBEAM,
     MOVE_PSYCH_UP,
     MOVE_PSYCHIC,
     MOVE_PSYCHIC_TERRAIN,
@@ -11422,6 +11424,7 @@ static const u16 sMagmortarTeachableLearnset[] = {
 
 #if P_FAMILY_PINSIR
 static const u16 sPinsirTeachableLearnset[] = {
+    MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,

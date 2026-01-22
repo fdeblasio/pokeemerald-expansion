@@ -1735,6 +1735,7 @@
 
 - Kangaskhan (not in main game):
     - Catch rate: 45->90
+    - Learns Body Slam by level up
 
 - Horsea/Seadra/Kingdra:
     - Learn Surf by level up
@@ -1786,28 +1787,30 @@
 - Smoochum (not in main game):
     - Def: 15->20
     - Catch rate: 45->150
+    - Learns Aurora Beam, Psybeam, and Ice Beam by level up
 
 - Jynx (not in main game):
     - Def: 35->40
+    - Learns Aurora Beam, Psybeam, and Ice Beam by level up
 
 - Elekid (postgame):
     - Atk: 63->65
     - Def: 37->40
     - SpA: 65->70
     - Catch rate: 45->150
-    - Learns Electric Terrain by level up
+    - Learns Spark and Electric Terrain by level up
 
 - Electabuzz (postgame):
     - Atk: 83->85
     - Def: 57->60
     - SpA: 95->100
-    - Learns Electric Terrain by level up
+    - Learns Spark and Electric Terrain by level up
 
 - Electivire (postgame):
     - Atk: 123->125
     - Def: 67->70
     - SpA: 95->100
-    - Learns Electric Terrain by level up
+    - Learns Spark and Electric Terrain by level up
     - Learns Drain Punch by TM
     - Learns Zing Zap by tutor
 
@@ -1815,19 +1818,24 @@
     - Def: 37->40
     - Spe: 83->85
     - Catch rate: 45->150
+    - Learns Incinerate by level up
 
 - Magmar (postgame):
     - Def: 57->60
     - Spe: 93->95
+    - Learns Incinerate by level up
 
 - Magmortar (postgame):
     - Ability: Flame Body->Flash Fire
     - Atk: 95->100
     - Def: 67->70
     - Spe: 83->85
+    - Learns Incinerate by level up
 
 - Pinsir:
     - Catch rate: 45->90
+    - Learns Fury Cutter by level up
+    - Learns Aerial Ace by TM
 
 - Tauros (not in main game):
     - Catch rate: 45->90

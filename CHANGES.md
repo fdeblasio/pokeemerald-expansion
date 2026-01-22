@@ -2195,6 +2195,8 @@
 
 - Pinsir:
     - Catch rate: 45->90
+    - Learns Fury Cutter by level up
+    - Learns Aerial Ace by TM
 
 - Tauros (not in main game):
     - Catch rate: 45->90

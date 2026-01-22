@@ -6,6 +6,7 @@
 #include "chooseboxmon.h"
 #include "contest_effect.h"
 #include "data.h"
+#include "daycare.h"
 #include "decompress.h"
 #include "event_data.h"
 #include "field_screen_effect.h"
@@ -980,16 +981,12 @@ static u32 GetRelearnerOtherMoves(struct BoxPokemon *mon, u16 *moves)
 
     u16 tutorMoves[MAX_RELEARNER_MOVES] = {0};
     u16 numTutorMoves = 0;
-    if (!FlagGet(P_FLAG_TUTOR_MOVES) && !P_ENABLE_MOVE_RELEARNERS)
-        continue;
-    else
+    if (FlagGet(P_FLAG_TUTOR_MOVES) || P_ENABLE_MOVE_RELEARNERS)
         numTutorMoves = GetRelearnerTutorMoves(mon, tutorMoves);
 
     u16 eggMoves[EGG_MOVES_ARRAY_COUNT] = {0};
     u16 numEggMoves = 0;
-    if (!FlagGet(P_FLAG_EGG_MOVES) && !P_ENABLE_MOVE_RELEARNERS)
-        continue;
-    else
+    if (FlagGet(P_FLAG_EGG_MOVES) || P_ENABLE_MOVE_RELEARNERS)
         numEggMoves = GetRelearnerEggMoves(mon, eggMoves);
 
     for (u8 i = 0; i < numTutorMoves; i++)
@@ -1132,7 +1129,7 @@ static bool32 HasRelearnerTutorMoves(struct BoxPokemon *boxMon)
 
 static bool32 HasRelearnerOtherMoves(struct BoxPokemon *boxMon)
 {
-    return HasRelearnerEggMoves(mon) || HasRelearnerTutorMoves(mon);
+    return HasRelearnerEggMoves(boxMon) || HasRelearnerTutorMoves(boxMon);
 }
 
 static bool32 IsLevelUpMoveRelearnerActive(void)

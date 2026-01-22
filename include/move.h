@@ -268,7 +268,7 @@ static inline u32 GetMovePP(enum Move moveId)
     return gMovesInfo[SanitizeMoveId(moveId)].pp;
 }
 
-static inline u8 CalculateMaxPP(enum Move move)
+static inline u32 CalculateMaxPP(enum Move move)
 {
     return GetMovePP(move) * 16 / 10;
 }

@@ -2675,10 +2675,6 @@
 	.endif
 	msgbox \wantTeachingMsg, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, \declinedJmp
-	.if \flagId
-		call MoveTutor_EventScript_CanOnlyBeLearnedOnce
-		goto_if_eq VAR_RESULT, NO, \declinedJmp
-	.endif
 	msgbox \monSelectMsg, MSGBOX_DEFAULT
 	setvar VAR_0x8005, \moveId
 	call MoveTutor_EventScript_OpenBox

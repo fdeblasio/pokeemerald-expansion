@@ -820,7 +820,6 @@ const struct Evolution *GetSpeciesEvolutions(enum Species species);
 const u16 *GetSpeciesFormTable(enum Species species);
 const struct FormChange *GetSpeciesFormChanges(enum Species species);
 u8 CalculatePPWithBonus(enum Move move, u8 ppBonuses, u8 moveIndex);
-u8 CalculateMaxPP(enum Move move);
 void PokemonToBattleMon(struct Pokemon *src, struct BattlePokemon *dst);
 void CopyPartyMonToBattleData(enum BattlerId battler, u32 partyIndex);
 bool8 ExecuteTableBasedItemEffect(struct Pokemon *mon, enum Item item, u8 partyIndex, u8 moveIndex);

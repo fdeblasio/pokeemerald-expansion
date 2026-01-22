@@ -1797,6 +1797,7 @@ static void Task_HandleInput(u8 taskId)
                         gSpecialVar_0x8004 = sMonSummaryScreen->curMonIndex;
                     }
                     sMonSummaryScreen->callback = CB2_PssChangePokemonNickname;
+                }
 
                 StopPokemonAnimations();
                 PlaySE(SE_SELECT);

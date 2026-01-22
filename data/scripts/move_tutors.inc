@@ -161,16 +161,7 @@ MoveTutor_EventScript_ExplosionTaught::
 	end
 
 .macro evergrandetutor move:req
-	lock
-	faceplayer
-	buffermovename STR_VAR_1, \move
-	msgbox MoveTutor_Text_EverGrandeTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_EverGrandeMoveDeclined
-	msgbox MoveTutor_Text_EverGrandeWhichMon, MSGBOX_DEFAULT
-	setvar VAR_ITEM_ID, \move
-	call MoveTutor_EventScript_OpenBox
-	goto_if_eq VAR_RESULT, 4, MoveTutor_EventScript_EverGrandeMoveDeclined
-	goto MoveTutor_EventScript_EverGrandeMoveTaught
+	move_tutor \move, MoveTutor_Text_EverGrandeTeach, MoveTutor_Text_EverGrandeWhichMon, MoveTutor_EventScript_EverGrandeMoveDeclined, MoveTutor_EventScript_EverGrandeMoveTaught
 .endm
 
 MoveTutor_EventScript_AquaTailTutor::
@@ -219,10 +210,6 @@ MoveTutor_EventScript_OpenBox::
 	waitstate
 	lock
 	faceplayer
-	return
-
-MoveTutor_EventScript_CanOnlyBeLearnedOnce::
-	msgbox MoveTutor_Text_ThisMoveCanOnlyBeLearnedOnce, MSGBOX_YESNO
 	return
 
 MoveTutor_AfterChooseBoxMon::

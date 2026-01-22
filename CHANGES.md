@@ -53,7 +53,6 @@
 - Battles in long grass on Routes 119 and 120 start with Grassy Terrain (unless it's a thunderstorm)
 - Contest opponents from RS and ORAS were added
 - There is now a Special Rank for contests after Master Rank. It functions the same as Master Rank but has more unique opponents
-- There are now only 3 checks (instead of 4) for catching Pokémon
 - Releasing a Pokémon now gives you its Poké Ball back
 
 ### Overworld:

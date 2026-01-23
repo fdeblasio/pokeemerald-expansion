@@ -500,8 +500,10 @@ upcoming
     - Route 128: Where Steven flies to?
 
 ### FRLG
-- Will need to revert Surf/Waterfall/Dive items to their original functions
-- Remove duplicate GFX (for example, bald_man_frlg is just bald_man in the PR)
+- Will need to revert Silph Scope (Diving Goggles) to its original function
+    - Maybe make a new Key Item to replace it. Or just check the Gym flag since I think Steven gives it after the gym
+- Add Dive TM
+- Remove duplicate GFX (for example, bald_man_frlg is just bald_man in the PR) and Trainer sprites
 - Improve Rod order
 - Add Wiglett/Toedscool?
 - Add Munna for Route 10 girl? Maybe a trade?

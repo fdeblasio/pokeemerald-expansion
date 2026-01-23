@@ -10076,12 +10076,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FAME_CHECKER] =
     {
-        .name = ITEM_NAME("Fall Scaler"),
+        .name = ITEM_NAME("Fame Checker"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "Allows the user\n"
-            "to scale waterfalls\n"
-            "with ease."),
+            "Stores information\n"
+            "on famous people\n"
+            "for instant recall."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,

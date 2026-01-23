@@ -401,6 +401,7 @@
 - Avalanche
 - Baton Pass
 - Blast Burn
+- Blaze Kick
 - Brave Bird
 - Breaking Swipe
 - Bug Bite

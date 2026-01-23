@@ -3886,7 +3886,6 @@ static const u16 sTurtwigEggMoveLearnset[] = {
 #if P_FAMILY_CHIMCHAR
 static const u16 sChimcharEggMoveLearnset[] = {
     MOVE_ASSIST,
-    MOVE_BLAZE_KICK,
     MOVE_CONFIDE,
     MOVE_COVET,
     MOVE_DOUBLE_KICK,
@@ -4284,7 +4283,6 @@ static const u16 sGibleEggMoveLearnset[] = {
 #if P_FAMILY_RIOLU
 static const u16 sRioluEggMoveLearnset[] = {
     MOVE_BITE,
-    MOVE_BLAZE_KICK,
     MOVE_BULLET_PUNCH,
     MOVE_CIRCLE_THROW,
     MOVE_CONFIDE,

@@ -136,11 +136,11 @@ upcoming
 - Double check that all Gen1 Pokémon have updated movesets
     - Next do all starters/beasts/bugs/birds/etc.
     - Not including cross-gen evos or regionals or already updated:
-        7: 14 (Cosmog-Marshadow)
+        7: 7 (Cosmog-Lunala, Celesteela, Guzzlord-Necrozma)
+        1: 10 (Articuno-Mewtwo)
         8: 96
         4: 107
         9: 120
-        1: 151
         5: 156
 - Turn some Normal/Flying types into either pure Flying or Flying/Normal?
 - Decide whether to reverse types for Pokemon whose primary becomes secondary:
@@ -169,6 +169,10 @@ upcoming
     - Water 1/2/3
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
 - Add more indicators of shiniess in wild battles in case sparkles are missed
+- Give Ultra Beasts Hidden Abilities?
+    - Buzzwole: Iron Fist
+    - Xurkitree: Volt Absorb?
+    - Kartana: Sharpness
 
 ### Items
 - Distribute evolutions items better instead of needing Lilycove
@@ -321,6 +325,7 @@ upcoming
 - Improve Rod order
 - Add Wiglett/Toedscool?
 - Add Munna for Route 10 girl? Maybe a trade?
+- Add Galarian birds to Sevii Islands?
 
 ### Overworld
 - Seperate out split routes into two maps for different encounters?
@@ -463,7 +468,9 @@ upcoming
         - Water: Might be water effects? Waterfall/Aqua Tail?
         - I guess just look at existing effects and choose the best
     - Essentially new moves would be type x attack (Fire x Wings, Poison x Punch, Electric x Kick, etc.)
-    - Add regular moves with GMax effects?
+    - Add regular moves with Z-Move/GMax effects?
+        - Steel spikes
+        - Would give Mew a signature
 - Make Water Veil also up evasion like Sand Veil?
 - Species-specific move effects? (maybe look at code for Diglett immunity to Telekinesis):
     - Smack Down is super effective if a Tinkaton uses it against Corviknight

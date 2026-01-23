@@ -1932,6 +1932,15 @@
 
 - Porygon (not in main game):
     - Catch rate: 45->90
+    - Learns Swift and Hyper Voice by level up
+
+- Porygon2 (not in main game):
+    - Learns Swift and Hyper Voice by level up
+    - Learns Double-Edge by level up (Note: Porygon and Porygon-Z already learn it)
+    - Learns Lock-On at level 55 instead of level 50 for consistency with Porygon and Porygon-Z
+
+- Porygon-Z (not in main game):
+    - Learns Swift and Hyper Voice by level up
 
 - Omanyte (postgame):
     - Catch rate: 45->90
@@ -1959,8 +1968,14 @@
     - Hidden Ability: Gluttony->Comatose
     - Learns Slack Off upon evolving
 
+- Articuno (not in main game):
+    -
+
 - Zapdos (not in main game):
     - Learns Air Slash by TM
+
+- Moltres (not in main game):
+    -
 
 - Dragonair (not in main game):
     - Learns Dragon Breath upon evolving
@@ -4105,6 +4120,7 @@
 
 - Bruxish:
     - Learns Heart Stamp, Aqua Cutter, Psycho Cut, and Zen Headbutt by level up
+    - Learns Dazzling Gleam by TM
 
 - Drampa:
     - Type: Normal/Dragon->Dragon/Normal
@@ -4145,6 +4161,7 @@
     - Learns Fairy Wind, Draining Kiss, Chilling Water, and Dazzling Gleam by level up
 
 - Cosmog/Cosmoem:
+    -
 
 - Solgaleo:
     - Learns Psychic Fangs by level up
@@ -4153,15 +4170,34 @@
     - Learns Shadow Claw and Hyper Beam by level up
 
 - Nihilego:
+    - Learns Rock Throw, Ancient Power, Sludge Bomb, and Sludge Wave by level up
+
 - Buzzwole:
+    - Learns Fury Cutter, Wide Guard, Karate Chop, Drain Punch, Sky Uppercut, and Megahorn by level up
+
 - Pheromosa:
+    - Learns Fury Cutter, Vacuum Wave, Pounce, Signal Beam, and Aura Sphere by level up
+
 - Xurkitree:
+    - Learns Charge Beam, Rising Voltage, Dazzling Gleam, and Thunder by level up
+
 - Celesteela:
+    -
+
 - Kartana:
+    - Learns Leafage, Metal Claw, Trailblaze, Smart Strike, and Solar Blade by level up
+
 - Guzzlord:
+    -
+
 - Necrozma:
+    -
+
 - Magearna:
-- Marshadow
+    - Learns Fairy Wind, Draining Kiss, Disarming Voice, Dazzling Gleam, and Moonblast by level up
+
+- Marshadow:
+    - Learns Mach Punch by level up
 
 - Poipole:
     - Learns Poison Sting, Sludge, Poison Tail, and Sludge Bomb by level up

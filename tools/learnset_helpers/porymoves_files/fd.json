@@ -3810,21 +3810,56 @@
     "TutorMoves": []
   },
   "PORYGON": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 15,
+        "Move": "MOVE_SWIFT"
+      },
+      {
+        "Level": 55,
+        "Move": "MOVE_HYPER_VOICE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "PORYGON2": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 15,
+        "Move": "MOVE_SWIFT"
+      },
+      {
+        "Level": 50,
+        "Move": "MOVE_DOUBLE_EDGE"
+      },
+      {
+        "Level": 55,
+        "Move": "MOVE_LOCK_ON"
+      },
+      {
+        "Level": 55,
+        "Move": "MOVE_HYPER_VOICE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "PORYGON_Z": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 15,
+        "Move": "MOVE_SWIFT"
+      },
+      {
+        "Level": 55,
+        "Move": "MOVE_HYPER_VOICE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -15076,7 +15111,7 @@
       }
     ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": ["MOVE_DAZZLING_GLEAM"],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -15307,28 +15342,108 @@
     "TutorMoves": []
   },
   "NIHILEGO": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ROCK_THROW"
+      },
+      {
+        "Level": 30,
+        "Move": "MOVE_ANCIENT_POWER"
+      },
+      {
+        "Level": 50,
+        "Move": "MOVE_SLUDGE_BOMB"
+      },
+      {
+        "Level": 70,
+        "Move": "MOVE_SLUDGE_WAVE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "BUZZWOLE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_FURY_CUTTER"
+      },
+      {
+        "Level": 10,
+        "Move": "MOVE_WIDE_GUARD"
+      },
+      {
+        "Level": 23,
+        "Move": "MOVE_KARATE_CHOP"
+      },
+      {
+        "Level": 31,
+        "Move": "MOVE_DRAIN_PUNCH"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_SKY_UPPERCUT"
+      },
+      {
+        "Level": 59,
+        "Move": "MOVE_MEGAHORN"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "PHEROMOSA": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_FURY_CUTTER"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_VACUUM_WAVE"
+      },
+      {
+        "Level": 10,
+        "Move": "MOVE_POUNCE"
+      },
+      {
+        "Level": 29,
+        "Move": "MOVE_SIGNAL_BEAM"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_AURA_SPHERE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "XURKITREE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 15,
+        "Move": "MOVE_CHARGE_BEAM"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_RISING_VOLTAGE"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_DAZZLING_GLEAM"
+      },
+      {
+        "Level": 65,
+        "Move": "MOVE_THUNDER"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -15342,7 +15457,28 @@
     "TutorMoves": []
   },
   "KARTANA": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_LEAFAGE"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_METAL_CLAW"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_TRAILBLAZE"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_SMART_STRIKE"
+      },
+      {
+        "Level": 65,
+        "Move": "MOVE_SOLAR_BLADE"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -15363,14 +15499,40 @@
     "TutorMoves": []
   },
   "MAGEARNA": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_FAIRY_WIND"
+      },
+      {
+        "Level": 18,
+        "Move": "MOVE_DRAINING_KISS"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_DISARMING_VOICE"
+      },
+      {
+        "Level": 48,
+        "Move": "MOVE_DAZZLING_GLEAM"
+      },
+      {
+        "Level": 66,
+        "Move": "MOVE_MOONBLAST"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "MARSHADOW": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_MACH_PUNCH"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

@@ -125,10 +125,32 @@ upcoming
         - Current have a complicated solution for relearning tutor moves. This can be made easier by using the repo's solution with gTutorMoves. However the file that it exists in is automatically made by the Python script
             - Removing from src/data/.gitignore for now but it will have to be added back later
         - Should probably still keep teachable learnsets out of gitignore to track changes
+        - Have Porymoves pull from src/data/pokemon/special_movesets.json's extraTutors
+        - Will need to re-remove universal moves from c code and figure out Rotoms
     - Makefile changes
     - Automatic trainers (probably not)
     - Summary screen/PC renaming/relearning
     - Add HM back to variable names
+- Get a better understanding of how move animations work:
+    - gBattleAnimMove_??? in data/battle_anim_scripts.s
+        - These call g???SpriteTemplate from battle_anim_???.c
+            - These use ANIM_TAG_??? for tiles and palettes
+                - The values that ANIM_TAG_??? call are in src/data/battle_anim.h
+            - They also use g???AffineAnimTable and Anim???, both usually in the same battle_anim_???.c file
+        - These also call AnimTask_??? from battle_anim_???.c
+- Macros for similar animations with different colors:
+    - Metallic (Iron Tail/Poison Tail/Metal Claw) will be done once pret is merged
+    - Surf/Muddy Water/Sludge Wave has a function
+    - Heat Wave is the same as Sandstorm in Gen3 but becomes similar to Ominous Wind in 4-6
+        - Change Ominous Wind to be similar to the others?
+    - Poison Powder/Stun Spore/Sleep Powder
+        - They all have their own tags but they just call the same image (with different palettes)
+            - Convert to a Surf/Sludge Wave type of animation where the palette change in the function?
+        - Also Magic Powder
+        - Powder and Rage Powder instead seem to use the Spore graphics and animation. Switch them to Powder?
+    - Cotton Spore and Cotton Guard might be similar and Cotton Spore seems to share with Spore
+    - Sludge and Mud Sport use a similar blob but Sludge's is the third image in the poison bubble image and Mud Sport's is its own image
+    - Razor Leaf and Magical Leaf
 - More simple modifications: https://www.pokecommunity.com/showthread.php?t=416647&page=1
 - Pret wiki tutorials:       https://github.com/pret/pokeemerald/wiki/Tutorials
 - Fix dynamic README lines (work in VS code but not GitHub)
@@ -253,24 +275,6 @@ upcoming
         - Instead, maybe both gym battles AND G/T battles check both badges and existing flags/GabbyAndTyGetBattleNum?
 
 ### Moves
-- Get a better understanding of how move animations work:
-    - gBattleAnimMove_??? in data/battle_anim_scripts.s
-        - These call g???SpriteTemplate from battle_anim_???.c
-            - These use ANIM_TAG_??? for tiles and palettes
-                - The values that ANIM_TAG_??? call are in src/data/battle_anim.h
-            - They also use g???AffineAnimTable and Anim???, both usually in the same battle_anim_???.c file
-- Macros for similar animations with different colors:
-    - Metallic (Iron Tail/Poison Tail/Metal Claw) will be done once pret is merged
-    - Surf/Muddy Water/Sludge Wave has a function
-    - Heat Wave is the same as Sandstorm in Gen3 but becomes similar to Ominous Wind in 4-6
-        - Change Ominous Wind to be similar to the others?
-    - Poison Powder/Stun Spore/Sleep Powder
-        - They all have their own tags but they just call the same image (with different palettes)
-            - Convert to a Surf/Sludge Wave type of animation where the palette change in the function?
-        - Also Magic Powder
-        - Powder and Rage Powder instead seem to use the Spore graphics and animation. Switch them to Powder?
-    - Cotton Spore and Cotton Guard might be similar and Cotton Spore seems to share with Spore
-    - Sludge and Mud Sport use a similar blob but Sludge's is the third image in the poison bubble image and Mud Sport's is its own image
 - Replace Hypno's Hypnosis effect with a new move that uses its pendulum in the animation
 - Aqua Ring heals more with Water Bubble? In rain?
 - Should teachable be unchecked for egg moves due to the relearner/SV TMs?

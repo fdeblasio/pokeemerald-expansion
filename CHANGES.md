@@ -4765,16 +4765,16 @@
     - Learns Charge Beam, Rising Voltage, Dazzling Gleam, and Thunder by level up
 
 - Celesteela:
-    -
+    - Learns Magnet Bomb, Smart Strike, and Mirror Shot by level up
 
 - Kartana:
     - Learns Leafage, Metal Claw, Trailblaze, Smart Strike, and Solar Blade by level up
 
 - Guzzlord:
-    -
+    - Learns Breaking Swipe, Dragon Breath, Dragon Claw, Dark Pulse, and Dragon Pulse by level up
 
 - Necrozma:
-    -
+    - Learns Psybeam, Dragon Pulse, Dragon Claw, Zen Headbutt, Psychic, and Dazzling Gleam by level up
 
 - Magearna:
     - Learns Fairy Wind, Draining Kiss, Disarming Voice, Dazzling Gleam, and Moonblast by level up

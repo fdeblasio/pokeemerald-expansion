@@ -6217,6 +6217,16 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     },
 #endif //P_FAMILY_COSMOG
 
+#define ULTRA_BEAST_INFO                                              \
+    .genderRatio = MON_GENDERLESS,                                    \
+    .eggCycles = 120,                                                 \
+    .friendship = 0,                                                  \
+    .growthRate = GROWTH_SLOW,                                        \
+    .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),        \
+    .abilities = { ABILITY_BEAST_BOOST, ABILITY_NONE, ABILITY_NONE }, \
+    .isUltraBeast = TRUE,                                             \
+    .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT
+
 #if P_FAMILY_NIHILEGO
     [SPECIES_NIHILEGO] =
     {
@@ -6230,12 +6240,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .catchRate = SPECIAL_CATCH_RATE(45),
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 285 : 257,
         .evYield_SpDefense = 3,
-        .genderRatio = MON_GENDERLESS,
-        .eggCycles = 120,
-        .friendship = 0,
-        .growthRate = GROWTH_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_BEAST_BOOST, ABILITY_NONE, ABILITY_NONE },
+        ULTRA_BEAST_INFO,
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Nihilego"),
         .cryId = CRY_NIHILEGO,
@@ -6278,8 +6283,6 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_Nihilego,
             gShinyOverworldPalette_Nihilego
         )
-        .isUltraBeast = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sNihilegoLevelUpLearnset,
         .teachableLearnset = sNihilegoTeachableLearnset,
     },
@@ -6299,12 +6302,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 285 : 257,
         .evYield_Attack = 1,
         .evYield_Defense = 2,
-        .genderRatio = MON_GENDERLESS,
-        .eggCycles = 120,
-        .friendship = 0,
-        .growthRate = GROWTH_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_BEAST_BOOST, ABILITY_NONE, ABILITY_NONE },
+        ULTRA_BEAST_INFO,
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Buzzwole"),
         .cryId = CRY_BUZZWOLE,
@@ -6346,8 +6344,6 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_Buzzwole,
             gShinyOverworldPalette_Buzzwole
         )
-        .isUltraBeast = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sBuzzwoleLevelUpLearnset,
         .teachableLearnset = sBuzzwoleTeachableLearnset,
     },
@@ -6366,12 +6362,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .catchRate = SPECIAL_CATCH_RATE(45),
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 285 : 257,
         .evYield_Speed = 3,
-        .genderRatio = MON_GENDERLESS,
-        .eggCycles = 120,
-        .friendship = 0,
-        .growthRate = GROWTH_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_BEAST_BOOST, ABILITY_NONE, ABILITY_NONE },
+        ULTRA_BEAST_INFO,
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Pheromosa"),
         .cryId = CRY_PHEROMOSA,
@@ -6413,8 +6404,6 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_Pheromosa,
             gShinyOverworldPalette_Pheromosa
         )
-        .isUltraBeast = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sPheromosaLevelUpLearnset,
         .teachableLearnset = sPheromosaTeachableLearnset,
     },
@@ -6433,12 +6422,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .catchRate = SPECIAL_CATCH_RATE(45),
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 285 : 257,
         .evYield_SpAttack = 3,
-        .genderRatio = MON_GENDERLESS,
-        .eggCycles = 120,
-        .friendship = 0,
-        .growthRate = GROWTH_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_BEAST_BOOST, ABILITY_NONE, ABILITY_NONE },
+        ULTRA_BEAST_INFO,
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Xurkitree"),
         .cryId = CRY_XURKITREE,
@@ -6480,8 +6464,6 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_Xurkitree,
             gShinyOverworldPalette_Xurkitree
         )
-        .isUltraBeast = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sXurkitreeLevelUpLearnset,
         .teachableLearnset = sXurkitreeTeachableLearnset,
     },
@@ -6502,12 +6484,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .evYield_Attack = 1,
         .evYield_Defense = 1,
         .evYield_SpAttack = 1,
-        .genderRatio = MON_GENDERLESS,
-        .eggCycles = 120,
-        .friendship = 0,
-        .growthRate = GROWTH_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_BEAST_BOOST, ABILITY_NONE, ABILITY_NONE },
+        ULTRA_BEAST_INFO,
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Celesteela"),
         .cryId = CRY_CELESTEELA,
@@ -6549,8 +6526,6 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_Celesteela,
             gShinyOverworldPalette_Celesteela
         )
-        .isUltraBeast = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sCelesteelaLevelUpLearnset,
         .teachableLearnset = sCelesteelaTeachableLearnset,
     },
@@ -6569,12 +6544,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .catchRate = SPECIAL_CATCH_RATE(45),
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 285 : 257,
         .evYield_Attack = 3,
-        .genderRatio = MON_GENDERLESS,
-        .eggCycles = 120,
-        .friendship = 0,
-        .growthRate = GROWTH_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_BEAST_BOOST, ABILITY_NONE, ABILITY_NONE },
+        ULTRA_BEAST_INFO,
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Kartana"),
         .cryId = CRY_KARTANA,
@@ -6617,8 +6587,6 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_Kartana,
             gShinyOverworldPalette_Kartana
         )
-        .isUltraBeast = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sKartanaLevelUpLearnset,
         .teachableLearnset = sKartanaTeachableLearnset,
     },
@@ -6637,12 +6605,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .catchRate = SPECIAL_CATCH_RATE(45),
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 285 : 257,
         .evYield_HP = 3,
-        .genderRatio = MON_GENDERLESS,
-        .eggCycles = 120,
-        .friendship = 0,
-        .growthRate = GROWTH_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_BEAST_BOOST, ABILITY_NONE, ABILITY_NONE },
+        ULTRA_BEAST_INFO,
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Guzzlord"),
         .cryId = CRY_GUZZLORD,
@@ -6684,8 +6647,6 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_Guzzlord,
             gShinyOverworldPalette_Guzzlord
         )
-        .isUltraBeast = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sGuzzlordLevelUpLearnset,
         .teachableLearnset = sGuzzlordTeachableLearnset,
     },
@@ -7331,12 +7292,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .catchRate = SPECIAL_CATCH_RATE(45),
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 210 : 189,
         .evYield_Speed = 1,
-        .genderRatio = MON_GENDERLESS,
-        .eggCycles = 120,
-        .friendship = 0,
-        .growthRate = GROWTH_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_BEAST_BOOST, ABILITY_NONE, ABILITY_NONE },
+        ULTRA_BEAST_INFO,
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Poipole"),
         .cryId = CRY_POIPOLE,
@@ -7378,8 +7334,6 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_Poipole,
             gShinyOverworldPalette_Poipole
         )
-        .isUltraBeast = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sPoipoleLevelUpLearnset,
         .teachableLearnset = sPoipoleTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_NAGANADEL, CONDITIONS({IF_KNOWS_MOVE, MOVE_DRAGON_PULSE})}),
@@ -7397,12 +7351,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .catchRate = SPECIAL_CATCH_RATE(45),
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 270 : 243,
         .evYield_SpAttack = 3,
-        .genderRatio = MON_GENDERLESS,
-        .eggCycles = 120,
-        .friendship = 0,
-        .growthRate = GROWTH_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_BEAST_BOOST, ABILITY_NONE, ABILITY_NONE },
+        ULTRA_BEAST_INFO,
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Naganadel"),
         .cryId = CRY_NAGANADEL,
@@ -7444,8 +7393,6 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_Naganadel,
             gShinyOverworldPalette_Naganadel
         )
-        .isUltraBeast = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sNaganadelLevelUpLearnset,
         .teachableLearnset = sNaganadelTeachableLearnset,
     },
@@ -7464,12 +7411,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .catchRate = SPECIAL_CATCH_RATE(30),
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 285 : 257,
         .evYield_Defense = 3,
-        .genderRatio = MON_GENDERLESS,
-        .eggCycles = 120,
-        .friendship = 0,
-        .growthRate = GROWTH_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_BEAST_BOOST, ABILITY_NONE, ABILITY_NONE },
+        ULTRA_BEAST_INFO,
         .bodyColor = BODY_COLOR_GRAY,
         .noFlip = TRUE,
         .speciesName = _("Stakataka"),
@@ -7511,8 +7453,6 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_Stakataka,
             gShinyOverworldPalette_Stakataka
         )
-        .isUltraBeast = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sStakatakaLevelUpLearnset,
         .teachableLearnset = sStakatakaTeachableLearnset,
     },
@@ -7531,12 +7471,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .catchRate = SPECIAL_CATCH_RATE(30),
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 285 : 257,
         .evYield_SpAttack = 3,
-        .genderRatio = MON_GENDERLESS,
-        .eggCycles = 120,
-        .friendship = 0,
-        .growthRate = GROWTH_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_BEAST_BOOST, ABILITY_NONE, ABILITY_NONE },
+        ULTRA_BEAST_INFO,
         .bodyColor = BODY_COLOR_WHITE,
         .noFlip = TRUE,
         .speciesName = _("Blacephalon"),
@@ -7578,8 +7513,6 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_Blacephalon,
             gShinyOverworldPalette_Blacephalon
         )
-        .isUltraBeast = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sBlacephalonLevelUpLearnset,
         .teachableLearnset = sBlacephalonTeachableLearnset,
     },

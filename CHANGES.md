@@ -900,6 +900,8 @@
 - Psychic:
     - Eerie Spell:
         - PP: 5->10
+    - Freezing Glare:
+        - Effect: 10%->20%
     - Hyperspace Hole:
         - Power: 80->90
         - PP: 5->10
@@ -1969,21 +1971,34 @@
     - Learns Slack Off upon evolving
 
 - Articuno (not in main game):
-    -
+    - Learns Aurora Beam, Air Cutter, and Air Slash by level up
+
+- Galarian Articuno (not in main game):
+    - Learns Psybeam, Air Cutter, and Air Slash by level up
 
 - Zapdos (not in main game):
-    - Learns Air Slash by TM
+    - Learns Gust, Shock Wave, Air Cutter, Air Slash, Thunderbolt, and Hurricane by level up
+
+- Galarian Zapdos (not in main game):
+    - Learns Double Kick and Acrobatics by level up
 
 - Moltres (not in main game):
-    -
+    - Learns by Flame Burst and Air Cutter level up
+
+- Galarian Moltres (not in main game):
+    - Learns Snarl, Air Cutter, and Dark Pulse by level up
+
+- Dratini (not in main game):
+    - Learns Breaking Swipe by level up
 
 - Dragonair (not in main game):
     - Learns Dragon Breath upon evolving
+    - Learns Breaking Swipe by level up
     - Learns Fly by TM
 
 - Dragonite (not in main game):
     - Learns Dual Wingbeat upon evolving
-    - Learns Dragon Breath and Dragon Claw by level up
+    - Learns Dragon Breath, Dragon Claw, and Breaking Swipe by level up
 
 - Mewtwo (not in main game):
     - Learns Psybeam, Psychic Noise, Extrasensory, and Zen Headbutt by level up
@@ -4161,13 +4176,13 @@
     - Learns Fairy Wind, Draining Kiss, Chilling Water, and Dazzling Gleam by level up
 
 - Cosmog/Cosmoem:
-    -
+    - N/A
 
 - Solgaleo:
     - Learns Psychic Fangs by level up
 
 - Lunala:
-    - Learns Shadow Claw and Hyper Beam by level up
+    - Learns Psybeam and Hyper Beam by level up
 
 - Nihilego:
     - Learns Rock Throw, Ancient Power, Sludge Bomb, and Sludge Wave by level up
@@ -4182,16 +4197,16 @@
     - Learns Charge Beam, Rising Voltage, Dazzling Gleam, and Thunder by level up
 
 - Celesteela:
-    -
+    - Learns Magnet Bomb, Smart Strike, and Mirror Shot by level up
 
 - Kartana:
     - Learns Leafage, Metal Claw, Trailblaze, Smart Strike, and Solar Blade by level up
 
 - Guzzlord:
-    -
+    - Learns Breaking Swipe, Dragon Breath, Dragon Claw, Dark Pulse, and Dragon Pulse by level up
 
 - Necrozma:
-    -
+    - Learns Psybeam, Dragon Pulse, Dragon Claw, Zen Headbutt, Psychic, and Dazzling Gleam by level up
 
 - Magearna:
     - Learns Fairy Wind, Draining Kiss, Disarming Voice, Dazzling Gleam, and Moonblast by level up

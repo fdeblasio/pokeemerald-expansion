@@ -138,11 +138,9 @@ upcoming
 - Once more changes are made, consolidate commits on develop branch again
 
 ### Pokémon
-- Double check that all Gen1 Pokémon have updated movesets
+- Give all Pokémon updated movesets
     - Next do all starters/beasts/bugs/birds/etc.
     - Not including cross-gen evos or regionals or already updated:
-        7: 7 (Cosmog-Lunala, Celesteela, Guzzlord-Necrozma)
-        1: 10 (Articuno-Mewtwo)
         8: 96
         4: 107
         9: 120
@@ -475,6 +473,7 @@ upcoming
         - Water: Might be water effects? Waterfall/Aqua Tail?
         - I guess just look at existing effects and choose the best
     - Essentially new moves would be type x attack (Fire x Wings, Poison x Punch, Electric x Kick, etc.)
+    - Ice-type Discharge/Lava Plume
     - Add regular moves with Z-Move/GMax effects?
         - Steel spikes
         - Would give Mew a signature

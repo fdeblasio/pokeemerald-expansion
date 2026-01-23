@@ -253,10 +253,24 @@ upcoming
         - Instead, maybe both gym battles AND G/T battles check both badges and existing flags/GabbyAndTyGetBattleNum?
 
 ### Moves
+- Get a better understanding of how move animations work:
+    - gBattleAnimMove_??? in data/battle_anim_scripts.s
+        - These call g???SpriteTemplate from battle_anim_???.c
+            - These use ANIM_TAG_??? for tiles and palettes
+                - The values that ANIM_TAG_??? call are in src/data/battle_anim.h
+            - They also use g???AffineAnimTable and Anim???, both usually in the same battle_anim_???.c file
 - Macros for similar animations with different colors:
     - Metallic (Iron Tail/Poison Tail/Metal Claw) will be done once pret is merged
     - Surf/Muddy Water/Sludge Wave has a function
     - Heat Wave is the same as Sandstorm in Gen3 but becomes similar to Ominous Wind in 4-6
+        - Change Ominous Wind to be similar to the others?
+    - Poison Powder/Stun Spore/Sleep Powder
+        - They all have their own tags but they just call the same image (with different palettes)
+            - Convert to a Surf/Sludge Wave type of animation where the palette change in the function?
+        - Also Magic Powder
+        - Powder and Rage Powder instead seem to use the Spore graphics and animation. Switch them to Powder?
+    - Cotton Spore and Cotton Guard might be similar and Cotton Spore seems to share with Spore
+    - Sludge and Mud Sport use a similar blob but Sludge's is the third image in the poison bubble image and Mud Sport's is its own image
 - Replace Hypno's Hypnosis effect with a new move that uses its pendulum in the animation
 - Aqua Ring heals more with Water Bubble? In rain?
 - Should teachable be unchecked for egg moves due to the relearner/SV TMs?

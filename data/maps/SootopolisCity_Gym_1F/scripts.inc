@@ -93,7 +93,6 @@ SootopolisCity_Gym_1F_EventScript_JuanDefeated::
 	message SootopolisCity_Gym_1F_Text_ReceivedRainBadge
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
-	giveitem ITEM_FAME_CHECKER
 	msgbox SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis, MSGBOX_DEFAULT
 	setflag FLAG_BADGE08_GET
 	setflag FLAG_HIDE_SOOTOPOLIS_CITY_RESIDENTS
@@ -240,8 +239,8 @@ SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
 	.string "Having the Rain Badge shall assure you\n"
 	.string "the full obedience of all your Pokémon\l"
 	.string "to your every command.\p"
-	.string "The Fall Scaler allows you to scale\n"
-	.string "walls of cascading water.\p"
+	.string "You can now rent a Wailmer that can\n"
+	.string "scale walls of cascading water!\p"
 	.string "And, so that you never forget the\n"
 	.string "battle we shared, take this…$"
 

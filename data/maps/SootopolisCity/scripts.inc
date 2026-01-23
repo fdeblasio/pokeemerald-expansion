@@ -1680,9 +1680,9 @@ SootopolisCity_Text_ThankYouForHelpAcceptThis:
 SootopolisCity_Text_ExplainWaterfallGoToGym:
 	.string "That Technical Machine contains\n"
 	.string "Waterfall.\p"
-	.string "If you have the Fall Scaler, you can\n"
-	.string "force your way up waterfalls.\p"
-	.string "And where does one get the Fall Scaler?\n"
+	.string "If you rent an upgraded Wailmer,\n"
+	.string "you can force your way up waterfalls.\p"
+	.string "And where does one get the upgrade?\n"
 	.string "You know, don't you?\p"
 	.string "That's right! You have to beat\n"
 	.string "the Sootopolis Gym Leader.\p"

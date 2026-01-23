@@ -685,7 +685,7 @@ static bool8 ForcedMovement_Waterfall(void)
 {
     struct ObjectEvent *playerObjEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
 
-    if (playerObjEvent->movementDirection == DIR_NORTH)
+    if (playerObjEvent->movementDirection == DIR_NORTH && FlagGet(FLAG_BADGE08_GET) == TRUE)
         return DoForcedMovement(DIR_NORTH, PlayerWalkSlow);
     else
         return DoForcedMovement(DIR_SOUTH, PlayerRideWaterCurrent);

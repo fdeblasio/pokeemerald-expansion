@@ -294,8 +294,7 @@ Text_CantWaterfall:
 
 EventScript_UseDive::
 	lockall
-	checkitem ITEM_SILPH_SCOPE
-	goto_if_eq VAR_RESULT, FALSE, EventScript_CantDive
+	goto_if_unset FLAG_RECEIVED_TM_DIVE, EventScript_CantDive
 	msgbox Text_WantToDive, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_EndDive
 	msgbox Text_DiveUnder, MSGBOX_DEFAULT

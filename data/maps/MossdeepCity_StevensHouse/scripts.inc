@@ -41,7 +41,6 @@ MossdeepCity_StevensHouse_EventScript_StevenGivesDive::
 	setflag FLAG_RECEIVED_TM_DIVE
 	setflag FLAG_OMIT_DIVE_FROM_STEVEN_LETTER
 	msgbox MossdeepCity_StevensHouse_Text_DiveGoggles, MSGBOX_DEFAULT
-	giveitem ITEM_SILPH_SCOPE
 	msgbox MossdeepCity_StevensHouse_Text_ExplainDive, MSGBOX_DEFAULT
 	closemessage
 	delay 20
@@ -156,7 +155,7 @@ MossdeepCity_StevensHouse_Text_YouveEarnedHMDive:
 	.string "this TM.$"
 
 MossdeepCity_StevensHouse_Text_DiveGoggles:
-	.string "Steven: Take these too!$"
+	.string "Steven: I'll upgrade your Go-Goggles, too!$"
 
 MossdeepCity_StevensHouse_Text_ExplainDive:
 	.string "Steven: While you're using Surf, you\n"

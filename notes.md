@@ -114,8 +114,11 @@ upcoming
         - Add ORAS special (Chad, Lisia, Wallace) https://bulbapedia.bulbagarden.net/wiki/List_of_Contest_opponents_(Generation_VI)
         - Implement Mega evolution
         - Improve white-on-white text
+- Mossdeep:
+    - Check new Steven Dive text
 - Sootopolis:
     - Swap Water Pulse TM for something better? Damage category would need to match Juan's team
+        - Water Pulse can go to Slateport
 - Battle Frontier
     - Remove BP costs so that script_menu.h and field_specials.c can use item/move names directly?
 
@@ -351,8 +354,6 @@ upcoming
     - Route 128: Where Steven flies to?
 
 ### FRLG
-- Will need to revert Silph Scope (Diving Goggles) to its original function
-    - Maybe make a new Key Item to replace it. Or just check the Gym flag since I think Steven gives it after the gym
 - Add Dive TM
 - Remove duplicate GFX (for example, bald_man_frlg is just bald_man in the PR) and Trainer sprites
 - Improve Rod order

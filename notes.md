@@ -12,8 +12,13 @@ Merge conflicts:
 $1
 
 Debugging (https://cplusplus.com/reference/cstdio/printf/):
-MgbaPrintf(MGBA_LOG_WARN, "XYZ: %d", mod);
-%S for strings
+DEBUG_PRINT_INT("text: ", var)
+DEBUG_PRINT_INT_VAR(var)
+DEBUG_PRINT_INT_EMPTY(var)
+DEBUG_PRINT_STRING("text: ", var)
+DEBUG_PRINT_STRING_VAR(var)
+DEBUG_PRINT_STRING_EMPTY(var)
+MgbaPrintf(MGBA_LOG_WARN, "2 vars: %d, %d", var1, var2);
 
 255 0 0
 0 255 0
@@ -250,6 +255,8 @@ upcoming
 ### Moves
 - Replace Hypno's Hypnosis effect with a new move that uses its pendulum in the animation
 - Aqua Ring heals more with Water Bubble? In rain?
+- Should teachable be unchecked for egg moves due to the relearner/SV TMs?
+  - I guess keeping them in egg moves means a player can breed for them before they unlock the relearner
 - Find way for Rotom to learn special moves by level up (for relearning). Currently have TMs, but not all moves (Hydro Pump/Leaf Storm) are TMs
     - This gets solved if the TM list is expanded to have Scarlet and Violet's
     - I don't think this gets solved by the relearners though since Rotom's one teachable list still doesn't have it

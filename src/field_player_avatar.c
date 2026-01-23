@@ -123,7 +123,7 @@ static bool8 PlayerAnimIsMultiFrameStationaryAndStateNotTurning(void);
 static bool8 PlayerIsAnimActive(void);
 static bool8 PlayerCheckIfAnimFinishedOrInactive(void);
 
-static void PlayerWalkSlowStairs(enum Direction direction);
+static void UNUSED PlayerWalkSlowStairs(enum Direction direction);
 static void UNUSED PlayerWalkSlow(enum Direction direction);
 static void PlayerRunSlow(enum Direction direction);
 static void PlayerRun(enum Direction);
@@ -1272,7 +1272,7 @@ void PlayerSetAnimId(u8 movementActionId, enum CopyMovement copyableMovement)
 }
 
 // slow stairs (from FRLG--faster than slow)
-static void PlayerWalkSlowStairs(enum Direction direction)
+static void UNUSED PlayerWalkSlowStairs(enum Direction direction)
 {
     PlayerSetAnimId(GetWalkSlowStairsMovementAction(direction), COPY_MOVE_WALK);
 }

@@ -32,6 +32,42 @@
         {
           "map": "MAP_PETALBURG_CITY",
           "base_label": "gPetalburgCity",
+          "land_mons": {
+            "encounter_rate": 20,
+            "range": "SURF_INITIAL",
+            "mons": [
+              {
+                "species": "FARFETCHD"
+              },
+              {
+                "species": "FARFETCHD_GALAR"
+              },
+              {
+                "species": "FARFETCHD"
+              },
+              {
+                "species": "FARFETCHD_GALAR"
+              },
+              {
+                "species": "FARFETCHD"
+              },
+              {
+                "species": "FARFETCHD_GALAR"
+              },
+              {
+                "species": "FARFETCHD"
+              },
+              {
+                "species": "FARFETCHD_GALAR"
+              },
+              {
+                "species": "FARFETCHD"
+              },
+              {
+                "species": "FARFETCHD_GALAR"
+              }
+            ]
+          },
           "water_mons": {
             "encounter_rate": 5,
             "range": "SURF_INITIAL",

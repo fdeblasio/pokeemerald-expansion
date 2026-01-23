@@ -1263,6 +1263,18 @@
 - Magnemite/Magneton/Magnezone:
     - Learn Shock Wave and Thunderbolt by level up
 
+- Farfetch'd:
+    - Catch rate: 45->90
+    - Held item: Leek: 5%->100%
+
+- Galarian Farfetch'd:
+    - Catch rate: 45->90
+    - Held item: Leek: 5%->100%
+
+- Sirfetch'd:
+    - Held item: Leek: 5%->100%
+    - Learns Drain Punch by TM
+
 - Doduo/Dodrio:
     - Learn Body Slam by level up
 
@@ -1571,7 +1583,7 @@
     - Learns Dual Wingbeat upon evolving
     - Learns Dragon Breath and Dragon Claw by level up
 
-- Mewtwo (not in main game):
+- Mewtwo (postgame):
     - Learns Psybeam, Psychic Noise, Extrasensory, and Zen Headbutt by level up
 
 - Mew (postgame):

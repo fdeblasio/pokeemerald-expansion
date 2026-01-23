@@ -1157,9 +1157,7 @@
     "PreEvoMoves": [],
     "TMMoves": ["MOVE_POISON_TAIL"],
     "EggMoves": [],
-    "TutorMoves": [
-      "MOVE_POISON_TAIL"
-    ]
+    "TutorMoves": ["MOVE_POISON_TAIL"]
   },
   "SLOWKING_GALAR": {
     "LevelMoves": [
@@ -2780,9 +2778,7 @@
       "MOVE_FUTURE_SIGHT",
       "MOVE_SUPERPOWER"
     ],
-    "TutorMoves": [
-      "MOVE_AQUA_TAIL"
-    ]
+    "TutorMoves": ["MOVE_AQUA_TAIL"]
   },
   "MARILL": {
     "LevelMoves": [
@@ -3684,9 +3680,7 @@
     "PreEvoMoves": [],
     "TMMoves": ["MOVE_AQUA_TAIL"],
     "EggMoves": [],
-    "TutorMoves": [
-      "MOVE_AQUA_TAIL"
-    ]
+    "TutorMoves": ["MOVE_AQUA_TAIL"]
   },
   "LARVITAR": {
     "LevelMoves": [
@@ -4836,9 +4830,7 @@
     "PreEvoMoves": [],
     "TMMoves": ["MOVE_AQUA_TAIL"],
     "EggMoves": [],
-    "TutorMoves": [
-      "MOVE_AQUA_TAIL"
-    ]
+    "TutorMoves": ["MOVE_AQUA_TAIL"]
   },
   "MILOTIC": {
     "LevelMoves": [
@@ -4870,9 +4862,7 @@
       "MOVE_TWISTER",
       "MOVE_FAIRY_WIND"
     ],
-    "TutorMoves": [
-      "MOVE_HEAT_WAVE"
-    ]
+    "TutorMoves": ["MOVE_HEAT_WAVE"]
   },
   "KECLEON": {
     "LevelMoves": [
@@ -9813,9 +9803,7 @@
     "PreEvoMoves": [],
     "TMMoves": ["MOVE_ICE_FANG"],
     "EggMoves": [],
-    "TutorMoves": [
-      "MOVE_ICE_FANG"
-    ]
+    "TutorMoves": ["MOVE_ICE_FANG"]
   },
   "ROLYCOLY": {
     "LevelMoves": [
@@ -10772,9 +10760,7 @@
       "MOVE_HEAT_WAVE"
     ],
     "EggMoves": [],
-    "TutorMoves": [
-      "MOVE_HEAT_WAVE"
-    ]
+    "TutorMoves": ["MOVE_HEAT_WAVE"]
   },
   "MASCHIFF": {
     "LevelMoves": [

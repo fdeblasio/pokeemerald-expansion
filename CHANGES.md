@@ -4753,15 +4753,34 @@
     - Learns Bullet Punch, Magnet Bomb, and Iron Head by level up
 
 - Nihilego:
+    - Learns Rock Throw, Ancient Power, Sludge Bomb, and Sludge Wave by level up
+
 - Buzzwole:
+    - Learns Fury Cutter, Wide Guard, Karate Chop, Drain Punch, Sky Uppercut, and Megahorn by level up
+
 - Pheromosa:
+    - Learns Fury Cutter, Vacuum Wave, Pounce, Signal Beam, and Aura Sphere by level up
+
 - Xurkitree:
+    - Learns Charge Beam, Rising Voltage, Dazzling Gleam, and Thunder by level up
+
 - Celesteela:
+    -
+
 - Kartana:
+    - Learns Leafage, Metal Claw, Trailblaze, Smart Strike, and Solar Blade by level up
+
 - Guzzlord:
+    -
+
 - Necrozma:
+    -
+
 - Magearna:
-- Marshadow
+    - Learns Fairy Wind, Draining Kiss, Disarming Voice, Dazzling Gleam, and Moonblast by level up
+
+- Marshadow:
+    - Learns Mach Punch by level up
 
 - Poipole:
     - Learns Poison Sting, Sludge, Poison Tail, and Sludge Bomb by level up

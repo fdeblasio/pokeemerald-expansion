@@ -51724,6 +51724,7 @@ static const u16 sKartanaTeachableLearnset[] = {
     MOVE_GIGA_IMPACT,
     MOVE_IRON_DEFENSE,
     MOVE_KNOCK_OFF,
+<<<<<<< HEAD
     MOVE_LEAF_BLADE,
     MOVE_METAL_CLAW,
     MOVE_NIGHT_SLASH,

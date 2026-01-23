@@ -505,6 +505,7 @@ upcoming
 - Improve Rod order
 - Add Wiglett/Toedscool?
 - Add Munna for Route 10 girl? Maybe a trade?
+- Add Galarian birds to Sevii Islands?
 
 ### Overworld
 - Seperate out split routes into two maps for different encounters?

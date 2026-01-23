@@ -151,6 +151,7 @@ upcoming
     - Cotton Spore and Cotton Guard might be similar and Cotton Spore seems to share with Spore
     - Sludge and Mud Sport use a similar blob but Sludge's is the third image in the poison bubble image and Mud Sport's is its own image
     - Razor Leaf and Magical Leaf
+    - Similar to the powders, LIGHT_WALLs (Reflect/Light Screen/Mirror Coat/Magic Coat/Barrier) use the same graphic with different palettes
 - More simple modifications: https://www.pokecommunity.com/showthread.php?t=416647&page=1
 - Pret wiki tutorials:       https://github.com/pret/pokeemerald/wiki/Tutorials
 - Fix dynamic README lines (work in VS code but not GitHub)
@@ -195,6 +196,7 @@ upcoming
     - Grass
     - Water 1/2/3
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
+    - Ideally every Pokemon can learn their types' 40/65/90 power moves
 - Add more indicators of shiniess in wild battles in case sparkles are missed
 - Give Ultra Beasts Hidden Abilities?
     - Buzzwole: Iron Fist
@@ -486,6 +488,10 @@ upcoming
 - New moves:
     - Add more basic moves for level up coverage (like a 40 power Ground move or a 60 power physical Fairy move)
         - Add in Magnitude variations as their own moves in order to get more Ground moves?
+    - Ideally every Pokemon can learn their types' 40/65/90 power moves
+        - 40 priority and 60 can't miss are optional
+        - Some types have 80 instead of 90
+        - A 90 power signature can be used as a replacement
     - Based on other animations (Tail, Punches, Kicks, Headbutts, Wings, Claw)
         - For example, a Flame Wing move that uses Wing Attack/Steel Wing's animation but with fire
         - The existing animation variations aren't consistent for moves (Steel Wing is stronger than Wing Attack, Iron Tail is stronger than Poison Tail, etc.) but the new moves should be

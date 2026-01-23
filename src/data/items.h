@@ -2367,7 +2367,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_PEARL] =
     {
         .name = ITEM_NAME("Pearl"),
-        .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR: 1400,
+        .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 1400,
         .description = COMPOUND_STRING(
             "A pretty pearl\n"
             "that would sell at a\n"
@@ -2379,7 +2379,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_BIG_PEARL] =
     {
         .name = ITEM_NAME("Big Pearl"),
-        .price = (I_PRICE >= GEN_7) ? 8000 * TREASURE_FACTOR: 7500,
+        .price = (I_PRICE >= GEN_7) ? 8000 * TREASURE_FACTOR : 7500,
         .description = COMPOUND_STRING(
             "A lovely large pearl\n"
             "that would sell at a\n"
@@ -2412,7 +2412,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_STARDUST] =
     {
         .name = ITEM_NAME("Stardust"),
-        .price = (I_PRICE >= GEN_7) ? 3000 * TREASURE_FACTOR: 2000,
+        .price = (I_PRICE >= GEN_7) ? 3000 * TREASURE_FACTOR : 2000,
         .description = COMPOUND_STRING(
             "Beautiful red sand.\n"
             "Can be sold at a\n"
@@ -2425,7 +2425,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_STAR_PIECE] =
     {
         .name = ITEM_NAME("Star Piece"),
-        .price = (I_PRICE >= GEN_7) ? 12000 * TREASURE_FACTOR: 9800,
+        .price = (I_PRICE >= GEN_7) ? 12000 * TREASURE_FACTOR : 9800,
         .description = COMPOUND_STRING(
             "A red gem shard.\n"
             "It would sell for a\n"
@@ -2542,7 +2542,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_RARE_BONE] =
     {
         .name = ITEM_NAME("Rare Bone"),
-        .price = (I_PRICE >= GEN_7) ? 5000 * TREASURE_FACTOR: 10000,
+        .price = (I_PRICE >= GEN_7) ? 5000 * TREASURE_FACTOR : 10000,
         .description = COMPOUND_STRING(
             "A very rare bone.\n"
             "It can be sold at\n"
@@ -2574,7 +2574,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_PRETTY_FEATHER] =
     {
         .name = ITEM_NAME("Pretty Feather"),
-        .price = (I_PRICE >= GEN_7) ? 1000 * TREASURE_FACTOR: 200,
+        .price = (I_PRICE >= GEN_7) ? 1000 * TREASURE_FACTOR : 200,
         .description = COMPOUND_STRING(
             "A beautiful yet\n"
             "plain feather that\n"

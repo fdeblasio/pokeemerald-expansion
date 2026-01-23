@@ -6445,6 +6445,7 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
 
 u32 GetDynamicAccuracy(struct Pokemon *mon, enum Move move, enum BattlerId battler){
     u32 accuracy = GetMoveAccuracy(move);
+    u32 moveEffect = GetMoveEffect(move);
     u32 holdEffect, holdEffectParam, ability;
     bool32 monInBattle = gMain.inBattle && gPartyMenu.menuType != PARTY_MENU_TYPE_IN_BATTLE;
 

@@ -1235,7 +1235,7 @@
     - Learn Dragon Breath by Egg Move
 
 - Pichu:
-    - Held item: None->Light Ball
+    - Held item: Light Ball: 0%->100%
     - Evolution: friendship->12
 
 - Pikachu:
@@ -4556,6 +4556,12 @@
 - Maschiff/Mabosstiff:
     - Learn Pursuit by level up
 
+- Toedscruel:
+    - Held items:
+        - Tiny Mushroom: 50%->0%
+        - Big Mushroom: 5%->50%
+        - Balm Mushroom: 0%->5%
+
 - Capsakid:
     - Hidden Ability: Klutz->Moody
     - Learns Absorb, Mega Drain, Giga Drain, Leaf Blade, and Energy Ball by level up
@@ -4632,6 +4638,14 @@
 
 - Dondozo (postgame):
     - Learns Stockpile, Swallow, Spit Up, Waterfall, and Liquidation by level up
+
+- Gimmighoul:
+    - Held item: Nugget: 0%->5%
+
+- Gholdengo:
+    - Held items:
+        - Nugget: 0%->50%
+        - Big Nugget: 0%->5%
 
 - Wo-Chien:
     - Learns Grass Knot and Energy Ball by level up

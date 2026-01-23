@@ -338,7 +338,8 @@ upcoming
             - The fix might make non-current mons non-dynamic. Check this
             - Works for Hidden Power, but may have issues with more complex checks (weather, terrain, etc). Could work for STAB and Sharpness/Iron Fist/Strong Jaw-esque abilities
 - Dynamic accuracy:
-    - Added OHKO accuracy (accIncreaseByTenOnSameType might good to check)
+    - OHKO moves shouldn't be affected by some other modifiers
+    - Implement No Guard and Lock-On
     - Micle Berry and accuracy stages will not show up on summary screen in battle. This might be unavoidable
         - They also get reset upon looking at the summary screen
 - Move animations:

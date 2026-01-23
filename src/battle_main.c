@@ -6445,6 +6445,7 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
 
 u32 GetDynamicAccuracy(struct Pokemon *mon, enum Move move, enum BattlerId battler){
     u32 accuracy = GetMoveAccuracy(move);
+    u32 moveEffect = GetMoveEffect(move);
     u32 holdEffect, holdEffectParam, ability;
     bool32 monInBattle = gMain.inBattle && gPartyMenu.menuType != PARTY_MENU_TYPE_IN_BATTLE;
 
@@ -6466,8 +6467,13 @@ u32 GetDynamicAccuracy(struct Pokemon *mon, enum Move move, enum BattlerId battl
 
     if (gMain.inBattle)
     {
-        if (GetMoveEffect(move) == EFFECT_NATURE_POWER)
+        if (moveEffect == EFFECT_NATURE_POWER)
             accuracy = GetMoveAccuracy(GetNaturePowerMove(battler));
+        else if (moveEffect == EFFECT_OHKO) {
+            accuracy += gBattleMons[battler].level - gBattleMons[BATTLE_OPPOSITE(battler)].level;
+            if (MoveHasIncreasedAccByTenOnSameType(move) && !IS_BATTLER_OF_TYPE(battler, GetMoveType(move)))
+                accuracy -= 10;
+        }
 
         if (HasWeatherEffect()){
 

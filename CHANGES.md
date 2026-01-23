@@ -1144,6 +1144,8 @@
     - Thunder, Hurricane, Bleakwind Storm, Wildbolt Storm, and Sandsear Storm having 100% accuracy in rain
         - Although the moves were boosted to have 100% accuracy all the time
     - Blizzard having 100% accuracy in snow/hail
+    - Nature Power's move's accuracy
+    - OHKO moves
     - Compound Eyes
     - Hustle
     - Victory Star

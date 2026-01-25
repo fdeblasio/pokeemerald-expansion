@@ -458,6 +458,9 @@ static u32 ScriptGiveMonParameterized(u8 side, u8 slot, enum Species species, u8
     // held item
     SetMonData(&mon, MON_DATA_HELD_ITEM, &item);
 
+    u8 ppBonus = 255;
+    SetMonData(&mon, MON_DATA_PP_BONUSES, &ppBonus);
+
     // In case a mon with a form changing item is given. Eg: SPECIES_ARCEUS_NORMAL with ITEM_SPLASH_PLATE will transform into SPECIES_ARCEUS_WATER upon gifted.
     TryFormChange(&mon, FORM_CHANGE_ITEM_HOLD, B_TRAINER_0);
 

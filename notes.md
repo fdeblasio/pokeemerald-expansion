@@ -149,8 +149,8 @@ upcoming
     - Poison Powder/Stun Spore/Sleep Powder
         - They all have their own tags but they just call the same image (with different palettes)
             - Convert to a Surf/Sludge Wave type of animation where the palette change in the function?
-        - Also Magic Powder
-        - Powder and Rage Powder instead seem to use the Spore graphics and animation. Switch them to Powder?
+        - Also Magic Powder and now Powder and Rage Powder
+        - Try to figure out why the original three can't use ANIM_TAG_POWDER
     - Cotton Spore and Cotton Guard might be similar and Cotton Spore seems to share with Spore
     - Sludge and Mud Sport use a similar blob but Sludge's is the third image in the poison bubble image and Mud Sport's is its own image
     - Razor Leaf and Magical Leaf

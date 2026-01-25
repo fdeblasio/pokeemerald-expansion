@@ -6744,7 +6744,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Exhales a hot breath on the\n"
             "foes. May inflict a burn."),
         .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 95 : 100,
+        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 100 : 100,
         .type = TYPE_FIRE,
         .accuracy = 90,
         .pp = 10,

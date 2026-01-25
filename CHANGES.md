@@ -813,6 +813,8 @@
         - Power: 60->65
     - Fusion Flare:
         - PP: 5->10
+    - Heat Wave:
+        - Power: 95->100
     - Inferno:
         - Power: 100->150
     - Magma Storm:

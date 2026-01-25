@@ -789,6 +789,13 @@ const u8 gNotDoneYetDescription[] = _(
     .pp = 15,                 \
     .validApprenticeMove = TRUE
 
+#define RECOIL_120_POWER_INFO \
+    RECOIL_INFO(33),          \
+    .power = 120,             \
+    .accuracy = 100,          \
+    .pp = 15,                 \
+    .validApprenticeMove = TRUE
+
 #define FATIGUE_120_POWER_INFO                        \
     .effect = EFFECT_HIT,                             \
     .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 120 : 90, \

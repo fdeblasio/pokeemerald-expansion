@@ -623,7 +623,10 @@
     - Sky Uppercut:
         - Accuracy: 90->100
     - Submission:
+        - Power: 80->120
         - Accuracy: 80->100
+        - PP: 20->15
+        - Recoil: 25%->33%
     - Triple Kick:
         - Power: 10->20
 - Flying:
@@ -1045,6 +1048,9 @@
         - PP: 30->40
     - Fleur Cannon:
         - Power: 130->140
+        - Accuracy: 90->100
+        - PP: 5->10
+    - Light of Ruin:
         - Accuracy: 90->100
         - PP: 5->10
     - Misty Explosion:

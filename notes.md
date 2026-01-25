@@ -303,6 +303,7 @@ upcoming
         - These three are done, but should Dragon Tail be included too?
     - Any Psychic/Steel type that learns Headbutt should learn Zen Headbutt/Iron Head?
     - Any Flying/Steel type that learns Wing Attack/Steel Wing should learn the other
+    - Any Pokemon that can be taught Double-Edge should also be able to be taught Take Down
 - Possible Move Updates:
     - Infestation: 20->35
     - Poison Sting: 20->40

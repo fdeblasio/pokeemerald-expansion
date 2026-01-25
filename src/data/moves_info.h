@@ -125,15 +125,19 @@ const u8 gNotDoneYetDescription[] = _(
     .accuracy50InSun = TRUE,                           \
     .validApprenticeMove = TRUE
 
-#define RECOIL_120_POWER_INFO               \
-    .effect = EFFECT_RECOIL,                \
-    .power = 120,                           \
-    .accuracy = 100,                        \
-    .pp = 15,                               \
-    .target = TARGET_SELECTED,              \
-    .priority = 0,                          \
-    .argument = { .recoilPercentage = 33 }, \
+#define RECOIL_INFO(recoil)                     \
+    .effect = EFFECT_RECOIL,                    \
+    .target = TARGET_SELECTED,                  \
+    .priority = 0,                              \
+    .argument = { .recoilPercentage = recoil }, \
     .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED
+
+#define RECOIL_120_POWER_INFO \
+    RECOIL_INFO(33),          \
+    .power = 120,             \
+    .accuracy = 100,          \
+    .pp = 15,                 \
+    .validApprenticeMove = TRUE
 
 #define FATIGUE_120_POWER_INFO                        \
     .effect = EFFECT_HIT,                             \
@@ -1145,17 +1149,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A reckless charge attack\n"
             "that also hurts the user."),
-        .effect = EFFECT_RECOIL,
+        RECOIL_INFO(25),
         .power = 90,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .argument = { .recoilPercentage = 25 },
         .makesContact = TRUE,
-        .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_FOCUS_ENERGY, COMBO_STARTER_HARDEN},
@@ -1194,7 +1194,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_FOCUS_ENERGY, COMBO_STARTER_HARDEN},
         .battleAnimScript = gBattleAnimMove_DoubleEdge,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_TAIL_WHIP] =
@@ -1861,22 +1860,14 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A reckless body slam that\n"
             "also hurts the user."),
-        .effect = EFFECT_RECOIL,
-        .power = 80,
+        RECOIL_120_POWER_INFO,
         .type = TYPE_FIGHTING,
-        .accuracy = 100,
-        .pp = B_UPDATED_MOVE_DATA >= GEN_6 ? 20 : 25,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .argument = { .recoilPercentage = 25 },
-        .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_MIND_READER},
         .battleAnimScript = gBattleAnimMove_Submission,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_LOW_KICK] =
@@ -11402,17 +11393,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A life-risking headbutt that\n"
             "seriously hurts the user."),
-        .effect = EFFECT_RECOIL,
+        RECOIL_INFO(50),
         .power = 150,
         .type = TYPE_ROCK,
         .accuracy = 80,
         .pp = 5,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .argument = { .recoilPercentage = 50 },
         .makesContact = TRUE,
-        .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
@@ -15114,17 +15101,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Fires a great beam of light\n"
             "that also hurts the user."),
-        .effect = EFFECT_RECOIL,
+        RECOIL_INFO(50),
         .power = 140,
         .type = TYPE_FAIRY,
-        .accuracy = 90,
-        .pp = 5,
-        .target = TARGET_SELECTED,
-        .priority = 0,
+        .accuracy = 100,
+        .pp = 10,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .argument = { .recoilPercentage = 50 },
         .metronomeBanned = TRUE,
-        .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},

@@ -899,6 +899,10 @@
     - Seed Flare:
         - Accuracy: 85->100
         - PP: 5->10
+    - Sleep Powder:
+        - PP: 15->35
+    - Stun Spore:
+        - PP: 30->35
     - Syrup Bomb:
         - Accuracy: 85->100
     - Trop Kick:

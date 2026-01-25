@@ -325,6 +325,20 @@ const u8 gNotDoneYetDescription[] = _(
     .sketchBanned = (B_SKETCH_BANS >= GEN_9)
 
 // Status macros
+#define STATUS_POWDER(Status)                         \
+    .effect = EFFECT_NON_VOLATILE_STATUS,             \
+    .power = 0,                                       \
+    .accuracy = 75,                                   \
+    .pp = 35,                                         \
+    .target = TARGET_SELECTED,                        \
+    .priority = 0,                                    \
+    .category = DAMAGE_CATEGORY_STATUS,               \
+    .argument = { .nonVolatileStatus = Status },      \
+    .magicCoatAffected = TRUE,                        \
+    .powderMove = TRUE,                               \
+    .contestComboMoves = {COMBO_STARTER_SWEET_SCENT}, \
+    .validApprenticeMove = TRUE
+
 #define SWITCH_TARGET_INFO                              \
     .effect = EFFECT_ROAR,                              \
     .power = 0,                                         \
@@ -2149,24 +2163,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Scatters a toxic powder\n"
             "that may poison the foe."),
-        .effect = EFFECT_NON_VOLATILE_STATUS,
-        .power = 0,
+        STATUS_POWDER(MOVE_EFFECT_POISON),
         .type = TYPE_POISON,
-        .accuracy = 75,
-        .pp = 35,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .argument = { .nonVolatileStatus = MOVE_EFFECT_POISON },
         .zMove = { .effect = Z_EFFECT_DEF_UP_1 },
-        .magicCoatAffected = TRUE,
-        .powderMove = TRUE,
         .contestEffect = CONTEST_EFFECT_WORSEN_CONDITION_OF_PREV_MONS,
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = COMBO_STARTER_POISON_POWDER,
-        .contestComboMoves = {COMBO_STARTER_SWEET_SCENT},
         .battleAnimScript = gBattleAnimMove_PoisonPowder,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_STUN_SPORE] =
@@ -2175,24 +2178,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Scatters a powder that may\n"
             "paralyze the foe."),
-        .effect = EFFECT_NON_VOLATILE_STATUS,
-        .power = 0,
+        STATUS_POWDER(MOVE_EFFECT_PARALYSIS),
         .type = TYPE_GRASS,
-        .accuracy = 75,
-        .pp = 30,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
         .zMove = { .effect = Z_EFFECT_SPDEF_UP_1 },
-        .magicCoatAffected = TRUE,
-        .argument = { .nonVolatileStatus = MOVE_EFFECT_PARALYSIS },
-        .powderMove = TRUE,
         .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_MONS_WITH_GOOD_APPEALS,
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_SWEET_SCENT},
         .battleAnimScript = gBattleAnimMove_StunSpore,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_SLEEP_POWDER] =
@@ -2201,24 +2193,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Scatters a powder that may\n"
             "cause the foe to sleep."),
-        .effect = EFFECT_NON_VOLATILE_STATUS,
-        .power = 0,
+        STATUS_POWDER(MOVE_EFFECT_SLEEP),
         .type = TYPE_GRASS,
-        .accuracy = 75,
-        .pp = 15,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .argument = { .nonVolatileStatus = MOVE_EFFECT_SLEEP },
         .zMove = { .effect = Z_EFFECT_SPD_UP_1 },
-        .magicCoatAffected = TRUE,
-        .powderMove = TRUE,
         .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = COMBO_STARTER_SLEEP_POWDER,
-        .contestComboMoves = {COMBO_STARTER_SWEET_SCENT},
         .battleAnimScript = gBattleAnimMove_SleepPowder,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_PETAL_DANCE] =

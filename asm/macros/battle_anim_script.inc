@@ -370,10 +370,6 @@
 	delay 12
 	.endm
 
-	.macro create_surf_wave palette:req
-	createvisualtask AnimTask_CreateSurfWave, 2, \palette
-	.endm
-
 	.macro create_flying_sand_crescents unknown:req
 	createsprite gFlyingSandCrescentSpriteTemplate, ANIM_ATTACKER, 40, 10, 2304, 96, \unknown
 	delay 10

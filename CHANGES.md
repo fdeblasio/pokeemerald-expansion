@@ -538,7 +538,7 @@
         - PP: 15->20
     - Constrict:
         - Power: 10->30
-        - Chance to reduce speed: 10%->30%
+        - Chance to reduce speed: 10%->20%
     - Crush Claw:
         - Accuracy: 95->100
     - Cut:
@@ -847,6 +847,8 @@
         - Accuracy: 90->100
     - Flip Turn:
         - Power: 60->70
+    - Hydro Pump:
+        - Accuracy: 80->85
     - Hydro Steam:
         - Power: 80->90
     - Octazooka:
@@ -1017,6 +1019,8 @@
         - PP: 5->10
     - Double Iron Bash:
         - PP: 5->10
+    - DoFlash Cannon:
+        - PP: 10->15
     - Gear Grind:
         - Accuracy: 85->100
     - Gigaton Hammer:

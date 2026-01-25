@@ -11,6 +11,21 @@ PetalburgCity_Mart_EventScript_Clerk::
 	release
 	end
 
+PetalburgCity_Mart_EventScript_Clerk2::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart PetalburgCity_Mart_SunStone
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+PetalburgCity_Mart_SunStone:
+	.2byte ITEM_SUN_STONE
+	pokemartlistend
+
 PetalburgCity_Mart_EventScript_Woman::
 	msgbox PetalburgCity_Mart_Text_WeakWillGrowStronger, MSGBOX_NPC
 	end

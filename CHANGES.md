@@ -693,7 +693,7 @@
         - PP: 15->20
     - Constrict:
         - Power: 10->30
-        - Chance to reduce speed: 10%->30%
+        - Chance to reduce speed: 10%->20%
     - Crush Claw:
         - Accuracy: 95->100
     - Crush Grip:

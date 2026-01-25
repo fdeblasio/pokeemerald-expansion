@@ -2,14 +2,7 @@ FortreeCity_Mart_MapScripts::
 	.byte 0
 
 FortreeCity_Mart_EventScript_Clerk::
-	lock
-	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
-	pokemart 0
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
+	default_poke_mart
 
 FortreeCity_Mart_EventScript_Woman::
 	msgbox FortreeCity_Mart_Text_SuperRepelBetter, MSGBOX_NPC

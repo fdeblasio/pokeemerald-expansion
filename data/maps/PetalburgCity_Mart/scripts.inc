@@ -2,14 +2,7 @@ PetalburgCity_Mart_MapScripts::
 	.byte 0
 
 PetalburgCity_Mart_EventScript_Clerk::
-	lock
-	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
-	pokemart 0
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
+	default_poke_mart
 
 PetalburgCity_Mart_EventScript_Woman::
 	msgbox PetalburgCity_Mart_Text_WeakWillGrowStronger, MSGBOX_NPC

@@ -2869,3 +2869,14 @@
 	bufferspeciesname STR_VAR_1, \species
 	msgbox \text, \msgtype
 	.endm
+
+	.macro default_poke_mart
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart 0
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+	.endm

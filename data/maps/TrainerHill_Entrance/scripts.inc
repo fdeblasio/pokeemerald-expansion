@@ -237,14 +237,7 @@ TrainerHill_Entrance_EventScript_GirlTrainerHillClosed::
 	end
 
 TrainerHill_Entrance_EventScript_Clerk::
-	lock
-	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
-	pokemart 0
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
+	default_poke_mart
 
 TrainerHill_Entrance_Text_StillGettingReady:
 	.string "This is the Trainer Hill where\n"

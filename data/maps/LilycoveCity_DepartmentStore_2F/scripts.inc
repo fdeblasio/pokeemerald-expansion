@@ -14,14 +14,7 @@ LilycoveCity_DepartmentStore_2F_EventScript_Sailor::
 	end
 
 LilycoveCity_DepartmentStore_2F_EventScript_ClerkLeft::
-	lock
-	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
-	pokemart 0
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
+	default_poke_mart
 
 LilycoveCity_DepartmentStore_2F_EventScript_ClerkEscape::
 	lock

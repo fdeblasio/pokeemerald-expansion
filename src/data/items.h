@@ -10271,12 +10271,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POKE_RADAR] =
     {
-        .name = ITEM_NAME("Rent-a-Wail"),
+        .name = ITEM_NAME("Poké Radar"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "Calls a Wailmer to\n"
-            "carry the user\n"
-            "across water."),
+            "A tool used to\n"
+            "search out Pokémon\n"
+            "hiding in grass."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,

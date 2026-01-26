@@ -1,7 +1,6 @@
 EventScript_UseSurf::
 	lockall
-	checkitem ITEM_POKE_RADAR
-	goto_if_eq VAR_RESULT, FALSE, EventScript_EndUseSurf
+	goto_if_unset FLAG_BADGE05_GET, EventScript_EndUseSurf
 	lockall
 	msgbox gText_WantToUseSurf, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_ReleaseUseSurf

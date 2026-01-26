@@ -36,7 +36,6 @@ Debug_CheatStart::
 	setflag FLAG_RECEIVED_BIKE
 	additem ITEM_ACRO_BIKE
 	additem ITEM_MACH_BIKE
-	additem ITEM_POKE_RADAR
 	setvar VAR_BRINEY_HOUSE_STATE, 1
 	setvar VAR_ROUTE116_STATE,     2
 	setflag FLAG_HIDE_ROUTE_116_MR_BRINEY

@@ -210,7 +210,7 @@ upcoming
 - Max Elixir (and others?) should stay on party screen like Full Restores do
 - Add more EXP Candy to the overworld
 - Include charms? (might go over Key Items amount)
-    - Both (13):
+    - Both (12):
         - Escape Rope
         - Exp. Share
         - Mega Ring
@@ -219,7 +219,6 @@ upcoming
         - Super Rod
         - Itemfinder
         - Coin Case
-        - Rent-a-Wail (could be replaced by a flag check)
         - Mystic Ticket
         - Aurora Ticket
         - Meteorite

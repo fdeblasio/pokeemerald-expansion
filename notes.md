@@ -499,12 +499,15 @@ upcoming
     - Route 117: Daycare?
     - Route 128: Where Steven flies to?
 
-### FRLG
+### FRLG:
 - Add Dive TM
+- Don't remove Meteorite
 - Add version exclusives
     - Including postgame
 - Remove duplicate GFX (for example, bald_man_frlg is just bald_man in the PR) and Trainer sprites
 - Improve Rod order
+    - Get rid of Super Rod entirely and just have first stage evos catchable?
+- Might need to increase key items pocket
 - Add Wiglett/Toedscool?
 - Add Munna for Route 10 girl? Maybe a trade?
 - Decide if regional forms will be postgame or main game

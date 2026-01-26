@@ -207,11 +207,9 @@ upcoming
     - Kartana: Sharpness
 
 ### Items
-- Medicine pocket?
 - Max Elixir (and others?) should stay on party screen like Full Restores do
-- See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Include charms? (might go over Key Items amount)
-- Add more items (like Absorb Bulb and Cell Battery) to shops
+- Add more held items (like Absorb Bulb and Cell Battery) to shops
 - Add more EXP Candy to the overworld
 
 ### Trainers

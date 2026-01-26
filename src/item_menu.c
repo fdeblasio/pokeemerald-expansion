@@ -594,7 +594,10 @@ void CB2_BagMenuFromStartMenu(void)
 void CB2_BagMenuFromBattle(void)
 {
     if (CurrentBattlePyramidLocation() == PYRAMID_LOCATION_NONE)
-        GoToBagMenu(ITEMMENULOCATION_BATTLE, POCKETS_COUNT, CB2_SetUpReshowBattleScreenAfterMenu2);
+        if (gBagPosition.pocket == POCKET_TM || gBagPosition.pocket == POCKET_KEY_ITEMS)
+            GoToBagMenu(ITEMMENULOCATION_BATTLE, gBagPosition.pocket - 1, CB2_SetUpReshowBattleScreenAfterMenu2);
+        else
+            GoToBagMenu(ITEMMENULOCATION_BATTLE, POCKETS_COUNT, CB2_SetUpReshowBattleScreenAfterMenu2);
     else
         GoToBattlePyramidBagMenu(PYRAMIDBAG_LOC_BATTLE, CB2_SetUpReshowBattleScreenAfterMenu2);
 }
@@ -1367,10 +1370,21 @@ static u8 GetSwitchBagPocketDirection(void)
 
 static void ChangeBagPocketId(u8 *bagPocketId, s8 deltaBagPocketId)
 {
-    if (deltaBagPocketId == MENU_CURSOR_DELTA_RIGHT && *bagPocketId == POCKETS_COUNT - 1)
+    u8 limit;
+
+    if (gMain.inBattle)
+        limit = POCKET_KEY_ITEMS;
+    else
+        limit = POCKETS_COUNT;
+
+    if (deltaBagPocketId == MENU_CURSOR_DELTA_RIGHT && *bagPocketId == limit - 1)
         *bagPocketId = 0;
     else if (deltaBagPocketId == MENU_CURSOR_DELTA_LEFT && *bagPocketId == 0)
-        *bagPocketId = POCKETS_COUNT - 1;
+        *bagPocketId = limit - 1;
+    else if (gMain.inBattle && deltaBagPocketId == MENU_CURSOR_DELTA_RIGHT && *bagPocketId == POCKET_POKE_BALLS)
+        *bagPocketId = POCKET_BERRIES;
+    else if (gMain.inBattle && deltaBagPocketId == MENU_CURSOR_DELTA_LEFT && *bagPocketId == POCKET_BERRIES)
+        *bagPocketId = POCKET_POKE_BALLS;
     else
         *bagPocketId += deltaBagPocketId;
 }

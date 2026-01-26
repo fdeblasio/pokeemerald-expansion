@@ -110,13 +110,13 @@ LilycoveCity_DepartmentStore_3F_Pokemart_Evo:
 LilycoveCity_DepartmentStore_3F_Pokemart_EvoUnused:
 	.2byte ITEM_DUSK_STONE                         @ Unused: Murkrow, Misdreavus, Lampent, Doublade
 	.2byte ITEM_ICE_STONE       @ Battle Frontier;   Postgame: Sandshrew-A, Vulpix-A; Unused: Mime Jr., Eevee, Darumaka-G, Bergmite, Crabrawler, Cetoddle
-	.2byte ITEM_KINGS_ROCK      @ Battle Frontier;   Postgame: Poliwhirl, Slowpoke
+	.2byte ITEM_KINGS_ROCK      @ Battle Frontier;   Postgame: Poliwhirl and Slowpoke
 	.2byte ITEM_METAL_COAT                         @ Unused: Onix and Scyther
 	.2byte ITEM_BLACK_AUGURITE                     @ Unused: Scyther
 	.2byte ITEM_UPGRADE                            @ Unused: Porygon
 	.2byte ITEM_DUBIOUS_DISC                       @ Unused: Porygon2
 	.2byte ITEM_RAZOR_FANG      @ Battle Frontier;   Postgame: Gligar
-	.2byte ITEM_RAZOR_CLAW      @ Battle Frontier;   Postgame: Sneasel, Sneasel-H
+	.2byte ITEM_RAZOR_CLAW      @ Battle Frontier;   Postgame: Sneasel and Sneasel-H
 	.2byte ITEM_ELECTIRIZER     @ Battle Frontier;   Postgame: Electabuzz
 	.2byte ITEM_MAGMARIZER      @ Battle Frontier;   Postgame: Magmar
 	.2byte ITEM_OVAL_STONE      @ Battle Frontier;   Postgame: Happiny

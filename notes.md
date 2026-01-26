@@ -207,8 +207,7 @@ upcoming
     - Kartana: Sharpness
 
 ### Items
-- Distribute evolutions items better instead of needing Lilycove
-    - Make a note of how many Pokemon per item are before Lilycove
+- Medicine pocket?
 - Max Elixir (and others?) should stay on party screen like Full Restores do
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Include charms? (might go over Key Items amount)
@@ -354,11 +353,14 @@ upcoming
 
 ### FRLG
 - Add Dive TM
+- Add version exclusives
+    - Including postgame
 - Remove duplicate GFX (for example, bald_man_frlg is just bald_man in the PR) and Trainer sprites
 - Improve Rod order
 - Add Wiglett/Toedscool?
 - Add Munna for Route 10 girl? Maybe a trade?
-- Add Galarian birds to Sevii Islands?
+- Decide if regional forms will be postgame or main game
+    - Add Galarian birds to Sevii Islands?
 
 ### Overworld
 - Seperate out split routes into two maps for different encounters?

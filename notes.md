@@ -501,11 +501,14 @@ upcoming
 
 ### FRLG
 - Add Dive TM
+- Add version exclusives
+    - Including postgame
 - Remove duplicate GFX (for example, bald_man_frlg is just bald_man in the PR) and Trainer sprites
 - Improve Rod order
 - Add Wiglett/Toedscool?
 - Add Munna for Route 10 girl? Maybe a trade?
-- Add Galarian birds to Sevii Islands?
+- Decide if regional forms will be postgame or main game
+    - Add Galarian birds to Sevii Islands?
 
 ### Overworld
 - Seperate out split routes into two maps for different encounters?

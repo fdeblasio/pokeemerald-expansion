@@ -205,6 +205,7 @@ const u8 gText_ReturnToVar1[] = _("Return to\n{STR_VAR_1}.");
 const u8 *const gPocketNamesStringsTable[] =
 {
     [POCKET_ITEMS]      = COMPOUND_STRING("Items"),
+    [POCKET_MEDICINE]   = COMPOUND_STRING("Medicine"),
     [POCKET_POKE_BALLS] = COMPOUND_STRING("Poké Balls"),
     [POCKET_TM]         = COMPOUND_STRING("TMs"),
     [POCKET_BERRIES]    = COMPOUND_STRING("Berries"),

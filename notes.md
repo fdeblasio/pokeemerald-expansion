@@ -211,7 +211,7 @@ upcoming
 - Max Elixir (and others?) should stay on party screen like Full Restores do
 - Add more EXP Candy to the overworld
 - Figure out how many items are obtainable in-game (item pocket only)
-    - 595 max:
+    - 558 max (595 - 37 medicine):
         - 136 non-macroed
         - 28 macros:
             - 8 regional specialties
@@ -481,8 +481,7 @@ upcoming
     - Set OW_PC_HEAL to GEN_LATEST
 - Add relearning moves to PC?
 - More save space editing
-    - Medicine Pocket?
-    - See if it's possible to give item PC and decoration PC have more room
+    - See if it's possible to give the item PC and decoration PC more room
 - PokeNav:
     - Use layouts instead of maps to get more accurate nearby function? (Mainly useful for Gym Leaders in towns)
     - Give trainers more accurate locations

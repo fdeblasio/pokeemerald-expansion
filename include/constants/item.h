@@ -4,6 +4,7 @@
 enum Pocket
 {
     POCKET_ITEMS,
+    POCKET_MEDICINE,
     POCKET_POKE_BALLS,
     POCKET_TM,
     POCKET_BERRIES,

@@ -1375,6 +1375,8 @@ static void ChangeBagPocketId(u8 *bagPocketId, s8 deltaBagPocketId)
 {
     u8 limit = POCKETS_COUNT;
     bool8 ignoreKeyItems = FALSE;
+    #define POCKET_BEFORE_TMs POCKET_POKE_BALLS
+    #define POCKET_AFTER_TMs POCKET_BERRIES
 
     if (gMain.inBattle || gBagPosition.location == ITEMMENULOCATION_ITEMPC) {
         limit = POCKET_KEY_ITEMS;
@@ -1385,10 +1387,10 @@ static void ChangeBagPocketId(u8 *bagPocketId, s8 deltaBagPocketId)
         *bagPocketId = 0;
     else if (deltaBagPocketId == MENU_CURSOR_DELTA_LEFT && *bagPocketId == 0)
         *bagPocketId = limit - 1;
-    else if (ignoreKeyItems && deltaBagPocketId == MENU_CURSOR_DELTA_RIGHT && *bagPocketId == POCKET_POKE_BALLS)
-        *bagPocketId = POCKET_BERRIES;
-    else if (ignoreKeyItems && deltaBagPocketId == MENU_CURSOR_DELTA_LEFT && *bagPocketId == POCKET_BERRIES)
-        *bagPocketId = POCKET_POKE_BALLS;
+    else if (ignoreKeyItems && deltaBagPocketId == MENU_CURSOR_DELTA_RIGHT && *bagPocketId == POCKET_BEFORE_TMs)
+        *bagPocketId = POCKET_AFTER_TMs;
+    else if (ignoreKeyItems && deltaBagPocketId == MENU_CURSOR_DELTA_LEFT && *bagPocketId == POCKET_AFTER_TMs)
+        *bagPocketId = POCKET_BEFORE_TMs;
     else
         *bagPocketId += deltaBagPocketId;
 }
@@ -1690,6 +1692,7 @@ static void OpenContextMenu(u8 taskId)
             switch (gBagPosition.pocket)
             {
             case POCKET_ITEMS:
+            case POCKET_MEDICINE:
                 gBagMenu->contextMenuItemsPtr = gBagMenu->contextMenuItemsBuffer;
                 if (GetItemFieldFunc(gSpecialVar_ItemId) == ItemUseOutOfBattle_CannotUse){
                     gBagMenu->contextMenuNumItems = ARRAY_COUNT(sContextMenuItems_BallsPocket);

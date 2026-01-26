@@ -1081,6 +1081,7 @@ struct ExternalEventFlags
 struct Bag
 {
     struct ItemSlot items[BAG_ITEMS_COUNT];
+    struct ItemSlot medicine[BAG_MEDICINE_COUNT];
     struct ItemSlot keyItems[BAG_KEYITEMS_COUNT];
     struct ItemSlot pokeBalls[BAG_POKEBALLS_COUNT];
     struct ItemSlot TMsHMs[BAG_TM_COUNT];
@@ -1116,7 +1117,7 @@ struct SaveBlock1
     /*0x99C*/ u8 filler1[0x14]; // Previously Dex Flags, feel free to remove.
 #endif //FREE_EXTRA_SEEN_FLAGS_SAVEBLOCK1
     /*0x9D0*/ u16 berryBlenderRecords[3];
-    /*0x9D6*/ u8 unused_9C2[4];
+    ///*0x9D6*/ u8 unused_9C2[4];
 #if FREE_MATCH_CALL == FALSE
     /*0x9DC*/ u16 trainerRematchStepCounter;
     /*0x9DE*/ u8 trainerRematches[MAX_REMATCH_ENTRIES];
@@ -1186,7 +1187,7 @@ struct SaveBlock1
 #if FREE_MYSTERY_EVENT_BUFFERS == FALSE
     /*0x3???*/ struct RamScript ramScript;
 #else
-    /*0x????*/ u8 fillerX[916];
+    /*0x????*/ u8 fillerX[772];
 #endif //FREE_MYSTERY_EVENT_BUFFERS
     /*0x3???*/ struct RecordMixingGift recordMixingGift;
     /*0x3???*/ LilycoveLady lilycoveLady;

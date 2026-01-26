@@ -224,6 +224,7 @@ enum
 #define STDSTRING_EARTH_BADGE      37
 #define STDSTRING_COINS            38
 #define STDSTRING_SPECIAL          39
+#define STDSTRING_MEDICINE         40
 
 // Dynamic Multichoice Callbacks
 

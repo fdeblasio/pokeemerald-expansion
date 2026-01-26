@@ -220,7 +220,6 @@ upcoming
     - Red Card
     - Ring Target
     - Room Service
-    - Safety Goggles
     - Shed Shell
     - Sticky Barb
 - Include charms? (might go over Key Items amount)

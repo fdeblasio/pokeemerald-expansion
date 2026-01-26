@@ -9797,64 +9797,54 @@ const struct ItemInfo gItemsInfo[] =
 
 
 // Charms
+#define CHARM_INFO              \
+    .price = 0,                 \
+    .importance = 1,            \
+    .pocket = POCKET_KEY_ITEMS, \
+    .type = ITEM_USE_BAG_MENU,  \
+    .fieldUseFunc = ItemUseOutOfBattle_CannotUse
 
     [ITEM_OVAL_CHARM] =
     {
         .name = ITEM_NAME("Oval Charm"),
-        .price = 0,
-        .importance = 1,
+        CHARM_INFO,
         .description = COMPOUND_STRING(
             "Raises the chance\n"
             "of finding eggs\n"
             "at the daycare."),
-        .pocket = POCKET_KEY_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         ITEM_ICON(OvalCharm),
     },
 
     [ITEM_SHINY_CHARM] =
     {
         .name = ITEM_NAME("Shiny Charm"),
-        .price = 0,
-        .importance = 1,
+        CHARM_INFO,
         .description = COMPOUND_STRING(
             "A charm that will\n"
             "raise the chance\n"
             "of Shiny Pokémon."),
-        .pocket = POCKET_KEY_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         ITEM_ICON(ShinyCharm),
     },
 
     [ITEM_CATCHING_CHARM] =
     {
         .name = ITEM_NAME("Catching Charm"),
-        .price = 0,
-        .importance = 1,
+        CHARM_INFO,
         .description = COMPOUND_STRING(
             "A charm that raises\n"
             "the chance of\n"
             "Critical Captures."),
-        .pocket = POCKET_KEY_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         ITEM_ICON(CatchingCharm),
     },
 
     [ITEM_EXP_CHARM] =
     {
         .name = ITEM_NAME("Exp. Charm"),
-        .price = 0,
-        .importance = 1,
+        CHARM_INFO,
         .description = COMPOUND_STRING(
             "A charm that raises\n"
             "the amount of Exp.\n"
             "earned in battle."),
-        .pocket = POCKET_KEY_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         ITEM_ICON(ExpCharm),
     },
 
@@ -11430,15 +11420,11 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_GLIMMERING_CHARM] =
     {
         .name = ITEM_NAME("Glimmering Charm"),
-        .price = 0,
-        .importance = 1,
+        CHARM_INFO,
         .description = COMPOUND_STRING(
             "A charm that will\n"
             "raise the shards\n"
             "from Tera Raids."),
-        .pocket = POCKET_KEY_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         ITEM_ICON(GlimmeringCharm),
     },
 

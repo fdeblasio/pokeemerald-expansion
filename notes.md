@@ -208,9 +208,78 @@ upcoming
 
 ### Items
 - Max Elixir (and others?) should stay on party screen like Full Restores do
-- Include charms? (might go over Key Items amount)
 - Add more held items (like Absorb Bulb and Cell Battery) to shops
 - Add more EXP Candy to the overworld
+- Include charms? (might go over Key Items amount)
+    - Both (13):
+        - Escape Rope
+        - Exp. Share
+        - Mega Ring
+        - Old Rod
+        - Good Rod
+        - Super Rod
+        - Itemfinder
+        - Coin Case
+        - Powder Jar (remove?)
+        - Rent-a-Wail (could be replaced by a flag check)
+        - Mystic Ticket
+        - Aurora Ticket
+        - Meteorite
+    - EE (15 (13+2)):
+        - Mach Bike
+        - Acro Bike
+        - Wailmer Pail
+        - Pokeblock Case
+        - Soot Sack
+        - Eon Ticket
+        - Old Sea Map
+        - Letter (removed in story)
+        - Devon Parts (removed in story)
+        - Go-Goggles
+        - Devon Scope
+        - Basement Key
+        - Storage Key (removable)
+        - Key to Room 1->Key to Room 4->Key to Room 6->Key to Room 2->Scanner (removable)
+        - Magma Emblem
+    - FRLG (21 (20+1)):
+        - Bicycle
+        - Town Map
+        - Vs. Seeker
+        - TM Case?
+        - Berry Pouch?
+        - Poke Flute
+        - Fame Checker
+        - Teachy TV
+        - S.S. Ticket
+        - Parcel (removed in story)
+        - Secret Key
+        - Bike Voucher (removable)
+        - Gold Teeth (removable)
+        - Card Key
+        - Lift Key
+        - Silph Scope
+        - Tri-Pass
+        - Rainbow Pass
+        - Tea (removed in story?)
+        - Ruby (removable)
+        - Sapphire (removable)
+    - Hacks (11):
+        - Rotom Catalog
+        - Gracidea
+        - Reveal Glass
+        - DNA Splicers
+        - Zygarde Cube
+        - Prison Bottle
+        - N-Solarizer
+        - N-Lunarizer
+        - Reins of Unity
+        - Scroll of Darkness
+        - Scroll of Waters
+    - Charms (4):
+        - Oval Charm
+        - Shiny Charm
+        - Catching Charm
+        - Exp. Charm
 
 ### Trainers
 - Clear up trainer spots by having just one set of gym leader rematches?
@@ -349,12 +418,15 @@ upcoming
     - Route 117: Daycare?
     - Route 128: Where Steven flies to?
 
-### FRLG
+### FRLG:
 - Add Dive TM
+- Don't remove Meteorite
 - Add version exclusives
     - Including postgame
 - Remove duplicate GFX (for example, bald_man_frlg is just bald_man in the PR) and Trainer sprites
 - Improve Rod order
+    - Get rid of Super Rod entirely and just have first stage evos catchable?
+- Might need to increase key items pocket
 - Add Wiglett/Toedscool?
 - Add Munna for Route 10 girl? Maybe a trade?
 - Decide if regional forms will be postgame or main game

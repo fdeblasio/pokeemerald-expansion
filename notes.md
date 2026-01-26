@@ -507,7 +507,7 @@ upcoming
 - Remove duplicate GFX (for example, bald_man_frlg is just bald_man in the PR) and Trainer sprites
 - Improve Rod order
     - Get rid of Super Rod entirely and just have first stage evos catchable?
-- Might need to increase key items pocket
+- Add Charms after Tea is taken
 - Add Wiglett/Toedscool?
 - Add Munna for Route 10 girl? Maybe a trade?
 - Decide if regional forms will be postgame or main game

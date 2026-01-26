@@ -3674,9 +3674,11 @@
     - Learns Rock Climb by Egg Move
 
 - Pancham:
+    - Held item: Tiny Bamboo Shoot: 0%->50%
     - Learns Drain Punch by level up
 
 - Pangoro:
+    - Held item: Big Bamboo Shoot: 0%->50%
     - Learns Dizzy Punch, Dynamic Punch, Drain Punch, and Throat Chop by level up
 
 - Furfrou:
@@ -4468,7 +4470,13 @@
     - Catch rate: 30->90
     - Learns Confusion, Pound, Swift, Hyper Voice, and Expanding Force by level up
 
-- Cufant/Copperajah:
+- Cufant:
+    - Received Sturdy as a second ability
+
+- Copperajah:
+    - Held items:
+        - Lagging Tail: 5%->50%
+        - Relic Copper: 0%->5%
     - Received Sturdy as a second ability
 
 - Duraludon:
@@ -4674,12 +4682,10 @@
     - Learns Stockpile, Swallow, Spit Up, Waterfall, and Liquidation by level up
 
 - Gimmighoul:
-    - Held item: Nugget: 0%->5%
+    - Held item: Relic Gold: 0%->5%
 
 - Gholdengo:
-    - Held items:
-        - Nugget: 0%->50%
-        - Big Nugget: 0%->5%
+    - Held item: Relic Gold: 0%->100%
 
 - Wo-Chien:
     - Learns Grass Knot and Energy Ball by level up

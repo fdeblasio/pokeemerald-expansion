@@ -209,14 +209,11 @@ upcoming
 ### Items
 - Distribute evolutions items better instead of needing Lilycove
     - Make a note of how many Pokemon per item are before Lilycove
-- Standardize valuable items
-    - Price progression (Pearl->Big Pearl->Pearl String/Tiny Mushroom->Big Mushroom->Balm Mushroom/Stardust->Star Piece->Comet Shard and Nugget->Big Nugget/Tiny Bamboo->Big Bamboo)
-    - Held items: (5/0/0->50/5/0->0/50/5 or 50/5/0->0/50/5->0/0/50) and 50/5/0->0/50/5
-    - Pancham can have Bamboo?
 - Max Elixir (and others?) should stay on party screen like Full Restores do
 - See if only some bag pockets can show up during battle (Key Items aren't needed in battle, for example)
 - Include charms? (might go over Key Items amount)
 - Add more items (like Absorb Bulb and Cell Battery) to shops
+- Add more EXP Candy to the overworld
 
 ### Trainers
 - Clear up trainer spots by having just one set of gym leader rematches?
@@ -444,7 +441,6 @@ upcoming
     - Pokédex (and HGSS Pokédex)
     - look in graphics/ for more
     - Trainer card
-- Add more EXP Candy
 - PC in menu
     - Look at debug menu or at https://www.pokecommunity.com/showpost.php?p=10127351&postcount=47
     - Set OW_PC_HEAL to GEN_LATEST

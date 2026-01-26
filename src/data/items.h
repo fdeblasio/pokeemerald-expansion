@@ -2264,8 +2264,11 @@ const struct ItemInfo gItemsInfo[] =
     .pocket = POCKET_ITEMS,                       \
     .sortType = ITEM_TYPE_SELLABLE,               \
     .type = ITEM_USE_BAG_MENU,                    \
-    .fieldUseFunc = ItemUseOutOfBattle_CannotUse, \
-    .flingPower = 30
+    .fieldUseFunc = ItemUseOutOfBattle_CannotUse
+
+#define SMALL_TREASURE_PRICE  3000
+#define MEDIUM_TREASURE_PRICE 12000
+#define LARGE_TREASURE_PRICE  30000
 
     [ITEM_BOTTLE_CAP] =
     {
@@ -2276,6 +2279,7 @@ const struct ItemInfo gItemsInfo[] =
             "cap that gives off\n"
             "a silver gleam."),
         TREASURE_INFO,
+        .flingPower = 30,
         ITEM_ICON(BottleCap),
     },
 
@@ -2288,6 +2292,7 @@ const struct ItemInfo gItemsInfo[] =
             "cap that gives off\n"
             "a golden gleam."),
         TREASURE_INFO,
+        .flingPower = 30,
         .iconPic = gItemIcon_BottleCap,
         .iconPalette = gItemIconPalette_GoldBottleCap,
     },
@@ -2295,12 +2300,13 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_NUGGET] =
     {
         .name = ITEM_NAME("Nugget"),
-        .price = 10000 * TREASURE_FACTOR,
+        .price = MEDIUM_TREASURE_PRICE * TREASURE_FACTOR,
         .description = COMPOUND_STRING(
             "A nugget of pure\n"
             "gold. Can be sold at\n"
             "a high price."),
         TREASURE_INFO,
+        .flingPower = 30,
         ITEM_ICON(Nugget),
     },
 
@@ -2308,7 +2314,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Big Nugget"),
     #if I_PRICE >= GEN_7
-        .price = 40000 * TREASURE_FACTOR,
+        .price = LARGE_TREASURE_PRICE * 2 * TREASURE_FACTOR,
     #elif I_PRICE == GEN_6
         .price = 20000,
     #else
@@ -2318,10 +2324,7 @@ const struct ItemInfo gItemsInfo[] =
             "A big nugget made\n"
             "of gold, sellable\n"
             "at a high price."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SELLABLE,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        TREASURE_INFO,
         .flingPower = B_UPDATED_MOVE_DATA >= GEN_8 ? 130 : 80,
         ITEM_ICON(BigNugget),
     },
@@ -2329,12 +2332,13 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_TINY_MUSHROOM] =
     {
         .name = ITEM_NAME("Tiny Mushroom"),
-        .price = 500 * TREASURE_FACTOR,
+        .price = SMALL_TREASURE_PRICE * TREASURE_FACTOR,
         .description = COMPOUND_STRING(
             "A plain mushroom\n"
             "that would sell\n"
             "at a cheap price."),
         TREASURE_INFO,
+        .flingPower = 30,
         .iconPic = gItemIcon_TinyMushroom,
         .iconPalette = gItemIconPalette_Mushroom,
     },
@@ -2342,9 +2346,10 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_BIG_MUSHROOM] =
     {
         .name = ITEM_NAME("Big Mushroom"),
-        .price = 5000 * TREASURE_FACTOR,
+        .price = MEDIUM_TREASURE_PRICE * TREASURE_FACTOR,
         .description = sBigMushroomDesc,
         TREASURE_INFO,
+        .flingPower = 30,
         .iconPic = gItemIcon_BigMushroom,
         .iconPalette = gItemIconPalette_Mushroom,
     },
@@ -2353,7 +2358,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Balm Mushroom"),
     #if I_PRICE >= GEN_7
-        .price = 15000 * TREASURE_FACTOR,
+        .price = LARGE_TREASURE_PRICE * TREASURE_FACTOR,
     #elif I_PRICE == GEN_6
         .price = 12500,
     #else
@@ -2361,30 +2366,33 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .description = sBigMushroomDesc,
         TREASURE_INFO,
+        .flingPower = 30,
         ITEM_ICON(BalmMushroom),
     },
 
     [ITEM_PEARL] =
     {
         .name = ITEM_NAME("Pearl"),
-        .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 1400,
+        .price = (I_PRICE >= GEN_7) ? SMALL_TREASURE_PRICE * TREASURE_FACTOR : 1400,
         .description = COMPOUND_STRING(
             "A pretty pearl\n"
             "that would sell at a\n"
             "cheap price."),
         TREASURE_INFO,
+        .flingPower = 30,
         ITEM_ICON(Pearl),
     },
 
     [ITEM_BIG_PEARL] =
     {
         .name = ITEM_NAME("Big Pearl"),
-        .price = (I_PRICE >= GEN_7) ? 8000 * TREASURE_FACTOR : 7500,
+        .price = (I_PRICE >= GEN_7) ? MEDIUM_TREASURE_PRICE * TREASURE_FACTOR : 7500,
         .description = COMPOUND_STRING(
             "A lovely large pearl\n"
             "that would sell at a\n"
             "high price."),
         TREASURE_INFO,
+        .flingPower = 30,
         .iconPic = gItemIcon_BigPearl,
         .iconPalette = gItemIconPalette_Pearl,
     },
@@ -2393,7 +2401,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Pearl String"),
     #if I_PRICE >= GEN_8
-        .price = 20000 * TREASURE_FACTOR,
+        .price = LARGE_TREASURE_PRICE * TREASURE_FACTOR,
     #elif I_PRICE == GEN_7
         .price = 30000,
     #elif I_PRICE == GEN_6
@@ -2406,18 +2414,20 @@ const struct ItemInfo gItemsInfo[] =
             "that would sell at a\n"
             "high price."),
         TREASURE_INFO,
+        .flingPower = 30,
         ITEM_ICON(PearlString),
     },
 
     [ITEM_STARDUST] =
     {
         .name = ITEM_NAME("Stardust"),
-        .price = (I_PRICE >= GEN_7) ? 3000 * TREASURE_FACTOR : 2000,
+        .price = (I_PRICE >= GEN_7) ? SMALL_TREASURE_PRICE * TREASURE_FACTOR : 2000,
         .description = COMPOUND_STRING(
             "Beautiful red sand.\n"
             "Can be sold at a\n"
             "high price."),
         TREASURE_INFO,
+        .flingPower = 30,
         .iconPic = gItemIcon_Sand,
         .iconPalette = gItemIconPalette_Star,
     },
@@ -2425,12 +2435,13 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_STAR_PIECE] =
     {
         .name = ITEM_NAME("Star Piece"),
-        .price = (I_PRICE >= GEN_7) ? 12000 * TREASURE_FACTOR : 9800,
+        .price = (I_PRICE >= GEN_7) ? MEDIUM_TREASURE_PRICE * TREASURE_FACTOR : 9800,
         .description = COMPOUND_STRING(
             "A red gem shard.\n"
             "It would sell for a\n"
             "very high price."),
         TREASURE_INFO,
+        .flingPower = 30,
         .iconPic = gItemIcon_StarPiece,
         .iconPalette = gItemIconPalette_Star,
     },
@@ -2439,7 +2450,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Comet Shard"),
     #if I_PRICE >= GEN_8
-        .price = 25000 * TREASURE_FACTOR,
+        .price = LARGE_TREASURE_PRICE * 2 * TREASURE_FACTOR,
     #elif I_PRICE == GEN_7
         .price = 60000,
     #elif I_PRICE == GEN_6
@@ -2452,6 +2463,7 @@ const struct ItemInfo gItemsInfo[] =
             "It would sell for a\n"
             "high price."),
         TREASURE_INFO,
+        .flingPower = 30,
         .iconPic = gItemIcon_StarPiece,
         .iconPalette = gItemIconPalette_CometShard,
     },
@@ -2465,6 +2477,7 @@ const struct ItemInfo gItemsInfo[] =
             "deep inside the\n"
             "Shoal Cave."),
         TREASURE_INFO,
+        .flingPower = 30,
         .iconPic = gItemIcon_Powder,
         .iconPalette = gItemIconPalette_ShoalSalt,
     },
@@ -2478,6 +2491,7 @@ const struct ItemInfo gItemsInfo[] =
             "deep inside the\n"
             "Shoal Cave."),
         TREASURE_INFO,
+        .flingPower = 30,
         .iconPic = gItemIcon_ShoalShell,
         .iconPalette = gItemIconPalette_Shell,
     },
@@ -2507,12 +2521,13 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_HEART_SCALE] =
     {
         .name = ITEM_NAME("Heart Scale"),
-        .price = 100,
+        .price = SMALL_TREASURE_PRICE,
         .description = COMPOUND_STRING(
             "A lovely scale.\n"
             "It is coveted by\n"
             "collectors."),
         TREASURE_INFO,
+        .flingPower = 30,
         ITEM_ICON(HeartScale),
     },
 
@@ -2542,15 +2557,12 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_RARE_BONE] =
     {
         .name = ITEM_NAME("Rare Bone"),
-        .price = (I_PRICE >= GEN_7) ? 5000 * TREASURE_FACTOR : 10000,
+        .price = (I_PRICE >= GEN_7) ? MEDIUM_TREASURE_PRICE * TREASURE_FACTOR : 10000,
         .description = COMPOUND_STRING(
             "A very rare bone.\n"
             "It can be sold at\n"
             "a high price."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SELLABLE,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        TREASURE_INFO,
         .flingPower = 100,
         ITEM_ICON(Bone),
     },
@@ -2563,10 +2575,7 @@ const struct ItemInfo gItemsInfo[] =
             "Voices can be heard\n"
             "from this odd stone\n"
             "occasionally."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SELLABLE,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        TREASURE_INFO,
         .flingPower = 80,
         ITEM_ICON(OddKeystone),
     },
@@ -2574,32 +2583,32 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_PRETTY_FEATHER] =
     {
         .name = ITEM_NAME("Pretty Feather"),
-        .price = (I_PRICE >= GEN_7) ? 1000 * TREASURE_FACTOR : 200,
+        .price = (I_PRICE >= GEN_7) ? SMALL_TREASURE_PRICE * TREASURE_FACTOR : 200,
         .description = COMPOUND_STRING(
             "A beautiful yet\n"
             "plain feather that\n"
             "does nothing."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SELLABLE,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        TREASURE_INFO,
         .flingPower = 20,
         ITEM_ICON(PrettyFeather),
     },
 
+#define RELIC_INFO                                \
+    .pocket = POCKET_ITEMS,                       \
+    .sortType = ITEM_TYPE_RELIC,                  \
+    .type = ITEM_USE_BAG_MENU,                    \
+    .fieldUseFunc = ItemUseOutOfBattle_CannotUse, \
+    .flingPower = 30
+
     [ITEM_RELIC_COPPER] =
     {
         .name = ITEM_NAME("Relic Copper"),
-        .price = 0,
+        .price = SMALL_TREASURE_PRICE,
         .description = COMPOUND_STRING(
             "A copper coin used\n"
             "long ago. It sells\n"
             "at a high price."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_RELIC,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
+        RELIC_INFO,
         .iconPic = gItemIcon_RelicCoin,
         .iconPalette = gItemIconPalette_RelicCopper,
     },
@@ -2607,16 +2616,12 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_RELIC_SILVER] =
     {
         .name = ITEM_NAME("Relic Silver"),
-        .price = 0,
+        .price = MEDIUM_TREASURE_PRICE,
         .description = COMPOUND_STRING(
             "A silver coin used\n"
             "long ago. It sells\n"
             "at a high price."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_RELIC,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
+        RELIC_INFO,
         .iconPic = gItemIcon_RelicCoin,
         .iconPalette = gItemIconPalette_RelicSilver,
     },
@@ -2624,16 +2629,12 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_RELIC_GOLD] =
     {
         .name = ITEM_NAME("Relic Gold"),
-        .price = (I_PRICE >= GEN_6) ? 60000 : 0,
+        .price = (I_PRICE >= GEN_6) ? LARGE_TREASURE_PRICE : 0,
         .description = COMPOUND_STRING(
             "A gold coin used\n"
             "long ago. It sells\n"
             "at a high price."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_RELIC,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
+        RELIC_INFO,
         .iconPic = gItemIcon_RelicCoin,
         .iconPalette = gItemIconPalette_RelicGold,
     },
@@ -2641,16 +2642,12 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_RELIC_VASE] =
     {
         .name = ITEM_NAME("Relic Vase"),
-        .price = 0,
+        .price = 100000,
         .description = COMPOUND_STRING(
             "A vase made long\n"
             "ago. It sells at\n"
             "a high price."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_RELIC,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
+        RELIC_INFO,
         .iconPic = gItemIcon_RelicVase,
         .iconPalette = gItemIconPalette_Relics,
     },
@@ -2658,16 +2655,12 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_RELIC_BAND] =
     {
         .name = ITEM_NAME("Relic Band"),
-        .price = 0,
+        .price = 200000,
         .description = COMPOUND_STRING(
             "An old bracelet.\n"
             "It sells at a\n"
             "high price."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_RELIC,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
+        RELIC_INFO,
         .iconPic = gItemIcon_RelicBand,
         .iconPalette = gItemIconPalette_Relics,
     },
@@ -2675,16 +2668,12 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_RELIC_STATUE] =
     {
         .name = ITEM_NAME("Relic Statue"),
-        .price = 0,
+        .price = 400000,
         .description = COMPOUND_STRING(
             "An old statue.\n"
             "It sells at a\n"
             "high price."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_RELIC,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
+        RELIC_INFO,
         .iconPic = gItemIcon_RelicStatue,
         .iconPalette = gItemIconPalette_Relics,
     },
@@ -2692,16 +2681,12 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_RELIC_CROWN] =
     {
         .name = ITEM_NAME("Relic Crown"),
-        .price = 0,
+        .price = 600000,
         .description = COMPOUND_STRING(
             "An old crown.\n"
             "It sells at a\n"
             "high price."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_RELIC,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 30,
+        RELIC_INFO,
         .iconPic = gItemIcon_RelicCrown,
         .iconPalette = gItemIconPalette_Relics,
     },
@@ -2714,10 +2699,7 @@ const struct ItemInfo gItemsInfo[] =
             "An ornament that\n"
             "depicts a Pokémon\n"
             "from Alola."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_RELIC,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        TREASURE_INFO,
         .flingPower = 30,
         ITEM_ICON(StrangeSouvenir),
     },
@@ -10975,12 +10957,13 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_BIG_BAMBOO_SHOOT] =
     {
         .name = ITEM_NAME("Big Bamboo Shoot"),
-        .price = 3000,
+        .price = MEDIUM_TREASURE_PRICE,
         .description = COMPOUND_STRING(
             "A large and rare\n"
             "bamboo shoot. Best\n"
             "sold to gourmands."),
         TREASURE_INFO,
+        .flingPower = 30,
         ITEM_ICON(BigBambooShoot),
     },
 
@@ -11099,12 +11082,13 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_TINY_BAMBOO_SHOOT] =
     {
         .name = ITEM_NAME("Tiny Bamboo Shoot"),
-        .price = 750,
+        .price = SMALL_TREASURE_PRICE,
         .description = COMPOUND_STRING(
             "A small and rare\n"
             "bamboo shoot. Best\n"
             "sold to gourmands."),
         TREASURE_INFO,
+        .flingPower = 30,
         ITEM_ICON(TinyBambooShoot),
     },
 
@@ -11703,10 +11687,7 @@ const struct ItemInfo gItemsInfo[] =
             "A wooden toy\n"
             "resembling a Poké-\n"
             "mon. Can be sold."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_SELLABLE,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        TREASURE_INFO,
         .battleUsage = EFFECT_ITEM_ESCAPE,
         ITEM_ICON(PokeshiDoll),
     },

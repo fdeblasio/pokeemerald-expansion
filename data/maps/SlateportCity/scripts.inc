@@ -721,7 +721,7 @@ SlateportCity_EventScript_BerryPowderClerk::
 	faceplayer
 	goto_if_set FLAG_RECEIVED_POWDER_JAR, SlateportCity_EventScript_ReceivedPowderJar
 	msgbox SlateportCity_Text_ExplainBerries, MSGBOX_DEFAULT
-	giveitem ITEM_POWDER_JAR
+	giveitem ITEM_CATCHING_CHARM
 	setflag FLAG_RECEIVED_POWDER_JAR
 	msgbox SlateportCity_Text_ExplainBerryPowder, MSGBOX_DEFAULT
 	release
@@ -1269,27 +1269,13 @@ SlateportCity_Text_ExplainBerries:
 	.string "If a wild Pokémon gets hurt, it heals\n"
 	.string "itself by chewing on Berries.\p"
 	.string "Did you know that?\p"
-	.string "Somebody saw that and got the idea\n"
-	.string "of making medicine from Berries.\p"
-	.string "Did you know that?\p"
-	.string "To turn Berries into medicine,\n"
-	.string "they must be crushed into powder.\p"
-	.string "Did you know that?\p"
 	.string "You seem to have an interest\n"
-	.string "in Berries!\p"
+	.string "in Pokémon!\p"
 	.string "I've got something good for someone\n"
 	.string "like you.$"
 
 SlateportCity_Text_ExplainBerryPowder:
-	.string "I recently had machines installed at\n"
-	.string "Pokémon Centers for crushing Berries.\p"
-	.string "The Berry Crush machines are at\n"
-	.string "the Direct Corner upstairs.\p"
-	.string "Did you know?\p"
-	.string "Could you make Berry Powder for\n"
-	.string "me using those machines?\p"
-	.string "I can make you all sorts of medicine\n"
-	.string "if you bring me lots of Berry Powder.$"
+	.string "Some Pokémon hold berries!$"
 
 SlateportCity_Text_BroughtMeSomeBerryPowder:
 	.string "Have you brought me some\n"

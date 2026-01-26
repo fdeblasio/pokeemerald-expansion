@@ -219,11 +219,11 @@ upcoming
         - Super Rod
         - Itemfinder
         - Coin Case
-        - Powder Jar (remove?)
         - Rent-a-Wail (could be replaced by a flag check)
         - Mystic Ticket
         - Aurora Ticket
         - Meteorite
+        - Catching Charm
     - EE (15 (13+2)):
         - Mach Bike
         - Acro Bike
@@ -274,10 +274,9 @@ upcoming
         - Reins of Unity
         - Scroll of Darkness
         - Scroll of Waters
-    - Charms (4):
+    - Charms (3):
         - Oval Charm
         - Shiny Charm
-        - Catching Charm
         - Exp. Charm
 
 ### Trainers

@@ -1109,17 +1109,17 @@ struct SaveBlock1
     /*0x494*/ u16 coins;
     /*0x496*/ u16 registeredItem; // registered for use with SELECT button
     /*0x498*/ struct ItemSlot pcItems[PC_ITEMS_COUNT];
-    /*0x560 -> 0x848 is bag storage*/
+    /*0x560 -> 0x890 (+ FREE_MYSTERY_EVENT_BUFFERS) is bag storage*/
     /*0x560*/ struct Bag bag;
-    /*0x848*/ struct Pokeblock pokeblocks[POKEBLOCKS_COUNT];
+    /*0x890*/ struct Pokeblock pokeblocks[POKEBLOCKS_COUNT];
 #if FREE_EXTRA_SEEN_FLAGS_SAVEBLOCK1 == FALSE
-    /*0x988*/ u8 filler1[0x34]; // Previously Dex Flags, feel free to remove.
+    /*0x99C*/ u8 filler1[0x14]; // Previously Dex Flags, feel free to remove.
 #endif //FREE_EXTRA_SEEN_FLAGS_SAVEBLOCK1
-    /*0x9BC*/ u16 berryBlenderRecords[3];
-    /*0x9C2*/ u8 unused_9C2[6];
+    /*0x9D0*/ u16 berryBlenderRecords[3];
+    /*0x9D6*/ u8 unused_9C2[4];
 #if FREE_MATCH_CALL == FALSE
-    /*0x9C8*/ u16 trainerRematchStepCounter;
-    /*0x9CA*/ u8 trainerRematches[MAX_REMATCH_ENTRIES];
+    /*0x9DC*/ u16 trainerRematchStepCounter;
+    /*0x9DE*/ u8 trainerRematches[MAX_REMATCH_ENTRIES];
 #endif //FREE_MATCH_CALL
     /*0xA2E*/ //u8 padding3[2];
     /*0xA30*/ struct ObjectEvent objectEvents[OBJECT_EVENTS_COUNT];
@@ -1185,6 +1185,8 @@ struct SaveBlock1
 #endif //FREE_TRAINER_HILL
 #if FREE_MYSTERY_EVENT_BUFFERS == FALSE
     /*0x3???*/ struct RamScript ramScript;
+#else
+    /*0x????*/ u8 fillerX[916];
 #endif //FREE_MYSTERY_EVENT_BUFFERS
     /*0x3???*/ struct RecordMixingGift recordMixingGift;
     /*0x3???*/ LilycoveLady lilycoveLady;

@@ -94,26 +94,29 @@ enum Language
 #define MAIL_COUNT (10 + PARTY_SIZE)
 #define SECRET_BASES_COUNT 20
 #define POKE_NEWS_COUNT 16
-#define PC_ITEMS_COUNT 20 //was 50
+#define PC_ITEMS_COUNT   20 //was 50
 #define POKEBLOCKS_COUNT 20 //was 40
 #define OBJECT_EVENT_TEMPLATES_COUNT 64
 #define DECOR_MAX_SECRET_BASE 16
 #define DECOR_MAX_PLAYERS_HOUSE 12
 #define APPRENTICE_COUNT 4
 #define APPRENTICE_MAX_QUESTIONS 9
-#define MAX_REMATCH_ENTRIES 100 // only REMATCH_TABLE_ENTRIES (78) are used
+#define MAX_REMATCH_ENTRIES 82 // was 100, only REMATCH_TABLE_ENTRIES (78) are used, 1 byte
 #define NUM_CONTEST_WINNERS 13
 #define UNION_ROOM_KB_ROW_COUNT 10
 #define SAVED_TRENDS_COUNT 5
 #define PYRAMID_BAG_ITEMS_COUNT 10
 #define ROAMER_COUNT 1 // Number of maximum concurrent active roamers
 
-// Bag constants
-#define BAG_ITEMS_COUNT 60 //was 30
-#define BAG_KEYITEMS_COUNT 30 //might need more
-#define BAG_POKEBALLS_COUNT 25 //need 27; was 16
-#define BAG_TM_COUNT 108 //was 64
-#define BAG_BERRIES_COUNT 46 //need 68
+// Bag constants: 4 bytes
+#define BAG_ITEMS_COUNT      FREE_MYSTERY_EVENT_BUFFERS ? 60 : 60 //need at most 595, was 30
+#define BAG_KEYITEMS_COUNT   45 //was 30
+#define BAG_POKEBALLS_COUNT  28 //was 16
+#define BAG_TM_COUNT        FREE_MYSTERY_EVENT_BUFFERS ? 108 : 108 //need at least 229, was 64
+#define BAG_BERRIES_COUNT   FREE_MYSTERY_EVENT_BUFFERS ? 68 : 46 //was 46
+
+//Free space:
+//Saveblock 1: 15780/15872, free 92b    with 14864 (1008 free) 1008-92=916/4=229 items
 
 // Number of facilities for Ranking Hall.
 // 7 facilities for single mode + tower double mode + tower multi mode.

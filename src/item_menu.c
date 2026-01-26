@@ -627,7 +627,10 @@ void CB2_GoToSellMenu(void)
 
 void CB2_GoToItemDepositMenu(void)
 {
-    GoToBagMenu(ITEMMENULOCATION_ITEMPC, POCKETS_COUNT, CB2_PlayerPCExitBagMenu);
+    if (gBagPosition.pocket == POCKET_TM || gBagPosition.pocket == POCKET_KEY_ITEMS)
+        GoToBagMenu(ITEMMENULOCATION_ITEMPC, gBagPosition.pocket - 1, CB2_PlayerPCExitBagMenu);
+    else
+        GoToBagMenu(ITEMMENULOCATION_ITEMPC, POCKETS_COUNT, CB2_PlayerPCExitBagMenu);
 }
 
 void ApprenticeOpenBagMenu(void)
@@ -1370,20 +1373,21 @@ static u8 GetSwitchBagPocketDirection(void)
 
 static void ChangeBagPocketId(u8 *bagPocketId, s8 deltaBagPocketId)
 {
-    u8 limit;
+    u8 limit = POCKETS_COUNT;
+    bool8 ignoreKeyItems = FALSE;
 
-    if (gMain.inBattle)
+    if (gMain.inBattle || gBagPosition.location == ITEMMENULOCATION_ITEMPC) {
         limit = POCKET_KEY_ITEMS;
-    else
-        limit = POCKETS_COUNT;
+        ignoreKeyItems = TRUE;
+    }
 
     if (deltaBagPocketId == MENU_CURSOR_DELTA_RIGHT && *bagPocketId == limit - 1)
         *bagPocketId = 0;
     else if (deltaBagPocketId == MENU_CURSOR_DELTA_LEFT && *bagPocketId == 0)
         *bagPocketId = limit - 1;
-    else if (gMain.inBattle && deltaBagPocketId == MENU_CURSOR_DELTA_RIGHT && *bagPocketId == POCKET_POKE_BALLS)
+    else if (ignoreKeyItems && deltaBagPocketId == MENU_CURSOR_DELTA_RIGHT && *bagPocketId == POCKET_POKE_BALLS)
         *bagPocketId = POCKET_BERRIES;
-    else if (gMain.inBattle && deltaBagPocketId == MENU_CURSOR_DELTA_LEFT && *bagPocketId == POCKET_BERRIES)
+    else if (ignoreKeyItems && deltaBagPocketId == MENU_CURSOR_DELTA_LEFT && *bagPocketId == POCKET_BERRIES)
         *bagPocketId = POCKET_POKE_BALLS;
     else
         *bagPocketId += deltaBagPocketId;

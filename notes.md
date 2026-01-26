@@ -208,8 +208,21 @@ upcoming
 
 ### Items
 - Max Elixir (and others?) should stay on party screen like Full Restores do
-- Add more held items (like Absorb Bulb and Cell Battery) to shops
 - Add more EXP Candy to the overworld
+- Add more held items to shops
+    - Adrenaline Orb
+    - Amulet Coin
+    - Eject Button
+    - Eject Pack
+    - Float Stone
+    - Iron Ball
+    - Lagging Tail
+    - Red Card
+    - Ring Target
+    - Room Service
+    - Safety Goggles
+    - Shed Shell
+    - Sticky Barb
 - Include charms? (might go over Key Items amount)
     - Both (13):
         - Escape Rope

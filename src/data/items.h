@@ -6743,7 +6743,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Amulet Coin"),
     #if I_PRICE >= GEN_9
-        .price = 30000,
+        .price = 0,
     #elif I_PRICE >= GEN_7
         .price = 10000,
     #else

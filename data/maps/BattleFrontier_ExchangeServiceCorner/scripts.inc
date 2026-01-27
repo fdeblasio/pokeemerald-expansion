@@ -177,89 +177,15 @@ BattleFrontier_ExchangeServiceCorner_EventScript_EvolutionMega::
 	release
 	end
 
-	.align 2
-BattleFrontier_Mart_EvolutionMega:
-	.2byte ITEM_ICE_STONE       @ Postgame: Sandshrew-A, Vulpix-A; Unused: Mime Jr., Eevee, Darumaka-G, Bergmite, Crabrawler, Cetoddle
-	.2byte ITEM_KINGS_ROCK      @ Postgame: Poliwhirl, Slowpoke
-	.2byte ITEM_ELECTIRIZER     @ Postgame: Electabuzz
-	.2byte ITEM_MAGMARIZER      @ Postgame: Magmar
-	.2byte ITEM_OVAL_STONE      @ Postgame: Happiny
-	.2byte ITEM_RAZOR_FANG      @ Postgame: Gligar
-	.2byte ITEM_RAZOR_CLAW      @ Postgame: Snesasel, Sneasel-H
-	.2byte ITEM_GALARICA_CUFF   @ Postgame: Slowpoke-G
-	.2byte ITEM_GALARICA_WREATH @ Postgame: Slowpoke-G
-	.2byte ITEM_PEAT_BLOCK      @ Postgame: Ursaring
-	.2byte ITEM_AERODACTYLITE   @ 0142
-	.2byte ITEM_MEGANIUMITE     @ 0154
-	.2byte ITEM_FERALIGITE      @ 0160
-	.2byte ITEM_AMPHAROSITE     @ 0181
-	.2byte ITEM_LATIASITE       @ 0380
-	.2byte ITEM_LATIOSITE       @ 0381
-	.2byte ITEM_EXCADRITE       @ 0530
-	.2byte ITEM_DRAGALGITE      @ 0691
-	.2byte ITEM_RARE_CANDY
-	.2byte ITEM_EXP_CANDY_L
-	.2byte ITEM_EXP_CANDY_XL
-	.2byte ITEM_SACRED_ASH
-	pokemartlistend
-
-BattleFrontier_ExchangeServiceCorner_EventScript_HoldItemVitamin::
+BattleFrontier_ExchangeServiceCorner_EventScript_HoldItem::
 	lock
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemart BattleFrontier_Mart_HoldItemVitamin
+	pokemart BattleFrontier_Mart_HoldItem
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
-
-	.align 2
-BattleFrontier_Mart_HoldItemVitamin:
-	.2byte ITEM_WHITE_HERB
-	.2byte ITEM_MENTAL_HERB
-	.2byte ITEM_POWER_HERB
-	.2byte ITEM_MUSCLE_BAND
-	.2byte ITEM_WISE_GLASSES
-	.2byte ITEM_ELECTRIC_SEED
-	.2byte ITEM_GRASSY_SEED
-	.2byte ITEM_MISTY_SEED
-	.2byte ITEM_PSYCHIC_SEED
-	.2byte ITEM_GRIP_CLAW
-	.2byte ITEM_BINDING_BAND
-	.2byte ITEM_BLUNDER_POLICY
-	.2byte ITEM_WEAKNESS_POLICY
-	.2byte ITEM_ABILITY_SHIELD
-	.2byte ITEM_ABSORB_BULB
-	.2byte ITEM_ADRENALINE_ORB
-	.2byte ITEM_BRIGHT_POWDER
-	.2byte ITEM_CELL_BATTERY
-	.2byte ITEM_CLEAR_AMULET
-	.2byte ITEM_COVERT_CLOAK
-	.2byte ITEM_EJECT_BUTTON
-	.2byte ITEM_EJECT_PACK
-	.2byte ITEM_EXPERT_BELT
-	.2byte ITEM_FLOAT_STONE
-	.2byte ITEM_FLYING_GEM
-	.2byte ITEM_FOCUS_BAND
-	.2byte ITEM_FOCUS_SASH
-	.2byte ITEM_HEAVY_DUTY_BOOTS
-	.2byte ITEM_IRON_BALL
-	.2byte ITEM_LAGGING_TAIL
-	.2byte ITEM_LIFE_ORB
-	.2byte ITEM_LIGHT_CLAY
-	.2byte ITEM_LUMINOUS_MOSS
-	.2byte ITEM_PROTECTIVE_PADS
-	.2byte ITEM_QUICK_CLAW
-	.2byte ITEM_RED_CARD
-	.2byte ITEM_RING_TARGET
-	.2byte ITEM_ROOM_SERVICE
-	.2byte ITEM_SAFETY_GOGGLES
-	.2byte ITEM_SHED_SHELL
-	.2byte ITEM_SNOWBALL
-	.2byte ITEM_STICKY_BARB
-	.2byte ITEM_THROAT_SPRAY
-	.2byte ITEM_UTILITY_UMBRELLA
-	pokemartlistend
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Man::
 	msgbox BattleFrontier_ExchangeServiceCorner_Text_GoGetYourOwnDoll, MSGBOX_NPC

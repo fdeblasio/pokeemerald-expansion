@@ -23,19 +23,6 @@ LilycoveCity_DepartmentStore_4F_EventScript_ClerkLeft::
 	release
 	end
 
-	.align 2
-LilycoveCity_DepartmentStore_4F_Pokemart_OldTMs:
-	.2byte ITEM_TM_BLIZZARD
-	.2byte ITEM_TM_HYPER_BEAM
-	.2byte ITEM_TM_LIGHT_SCREEN
-	.2byte ITEM_TM_PROTECT
-	.2byte ITEM_TM_SAFEGUARD
-	.2byte ITEM_TM_SOLAR_BEAM
-	.2byte ITEM_TM_THUNDER
-	.2byte ITEM_TM_REFLECT
-	.2byte ITEM_TM_FIRE_BLAST
-	pokemartlistend
-
 LilycoveCity_DepartmentStore_4F_EventScript_ClerkMegaStones::
 	lock
 	faceplayer
@@ -46,114 +33,6 @@ LilycoveCity_DepartmentStore_4F_EventScript_ClerkMegaStones::
 	release
 	end
 
-	.align 2
-LilycoveCity_DepartmentStore_4F_Pokemart_MegaStones:
-	.2byte ITEM_RAICHUNITE_X    @ 0026
-	.2byte ITEM_RAICHUNITE_Y    @ 0026
-	.2byte ITEM_ALAKAZITE       @ 0065
-	.2byte ITEM_STARMINITE      @ 0121
-	.2byte ITEM_PINSIRITE       @ 0127
-	.2byte ITEM_GYARADOSITE     @ 0130
-	.2byte ITEM_HERACRONITE     @ 0214
-	.2byte ITEM_SKARMORITE      @ 0227
-	.2byte ITEM_HOUNDOOMINITE   @ 0229
-	.2byte ITEM_SCEPTILITE      @ 0254
-	.2byte ITEM_BLAZIKENITE     @ 0257
-	.2byte ITEM_SWAMPERTITE     @ 0260
-	.2byte ITEM_GARDEVOIRITE    @ 0282
-	.2byte ITEM_GALLADITE       @ 0282
-	.2byte ITEM_SABLENITE       @ 0302
-	.2byte ITEM_MAWILITE        @ 0303
-	.2byte ITEM_AGGRONITE       @ 0306
-	.2byte ITEM_MEDICHAMITE     @ 0308
-	.2byte ITEM_MANECTITE       @ 0310
-	.2byte ITEM_SHARPEDONITE    @ 0319
-	.2byte ITEM_CAMERUPTITE     @ 0323
-	.2byte ITEM_ALTARIANITE     @ 0334
-	.2byte ITEM_BANETTITE       @ 0354
-	.2byte ITEM_CHIMECHITE      @ 0358
-	.2byte ITEM_ABSOLITE        @ 0359
-	.2byte ITEM_ABSOLITE_Z      @ 0359
-	.2byte ITEM_GLALITITE       @ 0362
-	.2byte ITEM_FROSLASSITE     @ 0362
-	.2byte ITEM_SALAMENCITE     @ 0373
-	.2byte ITEM_METAGROSSITE    @ 0376
-	pokemartlistend
-
-@ Unused shop that contains Mega Stones for Pokemon not available in Emerald by default
-	.align 2
-LilycoveCity_DepartmentStore_4F_Pokemart_MegaStonesUnused:
-	.2byte ITEM_VENUSAURITE     @ 0003
-	.2byte ITEM_CHARIZARDITE_X  @ 0006
-	.2byte ITEM_CHARIZARDITE_Y  @ 0006
-	.2byte ITEM_BLASTOISINITE   @ 0009
-	.2byte ITEM_BEEDRILLITE     @ 0015
-	.2byte ITEM_PIDGEOTITE      @ 0018
-	.2byte ITEM_CLEFABLITE      @ 0036
-	.2byte ITEM_VICTREEBELITE   @ 0071
-	.2byte ITEM_SLOWBRONITE     @ 0080
-	.2byte ITEM_GENGARITE       @ 0094
-	.2byte ITEM_STEELIXITE      @ 0095
-	.2byte ITEM_KANGASKHANITE   @ 0115
-	.2byte ITEM_SCIZORITE       @ 0123
-	.2byte ITEM_AERODACTYLITE   @ 0142 Battle Frontier
-	.2byte ITEM_DRAGONINITE     @ 0149
-	.2byte ITEM_MEWTWONITE_X    @ 0150
-	.2byte ITEM_MEWTWONITE_Y    @ 0150
-	.2byte ITEM_MEGANIUMITE     @ 0154 Battle Frontier
-	.2byte ITEM_FERALIGITE      @ 0160 Battle Frontier
-	.2byte ITEM_AMPHAROSITE     @ 0181 Battle Frontier
-	.2byte ITEM_TYRANITARITE    @ 0248
-	.2byte ITEM_LATIASITE       @ 0380 Battle Frontier
-	.2byte ITEM_LATIOSITE       @ 0381 Battle Frontier
-	.2byte ITEM_STARAPTITE      @ 0398
-	.2byte ITEM_LOPUNNITE       @ 0428
-	.2byte ITEM_GARCHOMPITE     @ 0445
-	.2byte ITEM_GARCHOMPITE_Z   @ 0445
-	.2byte ITEM_LUCARIONITE     @ 0448
-	.2byte ITEM_LUCARIONITE_Z   @ 0448
-	.2byte ITEM_ABOMASITE       @ 0460
-	.2byte ITEM_HEATRANITE      @ 0485
-	.2byte ITEM_DARKRANITE      @ 0491
-	.2byte ITEM_EMBOARITE       @ 0500
-	.2byte ITEM_EXCADRITE       @ 0530 Battle Frontier
-	.2byte ITEM_AUDINITE        @ 0531
-	.2byte ITEM_SCOLIPITE       @ 0545
-	.2byte ITEM_SCRAFTINITE     @ 0560
-	.2byte ITEM_EELEKTROSSITE   @ 0604
-	.2byte ITEM_CHANDELURITE    @ 0609
-	.2byte ITEM_GOLURKITE       @ 0623
-	.2byte ITEM_CHESNAUGHTITE   @ 0652
-	.2byte ITEM_DELPHOXITE      @ 0655
-	.2byte ITEM_GRENINJITE      @ 0658
-	.2byte ITEM_PYROARITE       @ 0668
-	.2byte ITEM_FLOETTITE       @ 0670
-	.2byte ITEM_MEOWSTICITE     @ 0678
-	.2byte ITEM_MALAMARITE      @ 0687
-	.2byte ITEM_BARBARACITE     @ 0689
-	.2byte ITEM_DRAGALGITE      @ 0691 Battle Frontier
-	.2byte ITEM_HAWLUCHANITE    @ 0701
-	.2byte ITEM_ZYGARDITE       @ 0718
-	.2byte ITEM_DIANCITE        @ 0719
-	.2byte ITEM_CRABOMINITE     @ 0740
-	.2byte ITEM_GOLISOPITE      @ 0768
-	.2byte ITEM_DRAMPANITE      @ 0780
-	.2byte ITEM_MAGEARNITE      @ 0801
-	.2byte ITEM_ZERAORITE       @ 0807
-	.2byte ITEM_FALINKSITE      @ 0870
-	.2byte ITEM_SCOVILLAINITE   @ 0952
-	.2byte ITEM_GLIMMORANITE    @ 0970
-	.2byte ITEM_TATSUGIRINITE   @ 0978
-	.2byte ITEM_BAXCALIBRITE    @ 0998
-	pokemartlistend
-
-@ Rumored:
-@  Absol Z
-@  Staraptor, Garchomp Z, Lucario Z, Heatran, Darkrai
-@  Golurk, Meowstic
-@  Crabominable, Golisopod, Magearna, Zeraora
-@  Scovillain, Glimmora, Tatsugiri
-
 LilycoveCity_DepartmentStore_4F_EventScript_ClerkRight::
 	lock
 	faceplayer
@@ -163,43 +42,6 @@ LilycoveCity_DepartmentStore_4F_EventScript_ClerkRight::
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
-
-	.align 2
-LilycoveCity_DepartmentStore_4F_Pokemart_NewTMs:
-	.2byte ITEM_TM_ENERGY_BALL
-	.2byte ITEM_TM_SUPERCELL_SLAM
-	.2byte ITEM_TM_PSYCHIC_FANGS
-	.2byte ITEM_TM_DRAGON_PULSE
-	.2byte ITEM_TM_DRAIN_PUNCH
-	.2byte ITEM_TM_DAZZLING_GLEAM
-	.2byte ITEM_TM_SEED_BOMB
-	.2byte ITEM_TM_SHADOW_CLAW
-	.2byte ITEM_TM_GIGA_IMPACT
-	.2byte ITEM_TM_PLAY_ROUGH
-	.2byte ITEM_TM_LEECH_LIFE
-	.2byte ITEM_TM_STONE_EDGE
-	.2byte ITEM_TM_ICICLE_CRASH
-	.2byte ITEM_TM_CRUNCH
-	.2byte ITEM_TM_DARK_PULSE
-	.2byte ITEM_TM_ROCK_SLIDE
-	.2byte ITEM_TM_X_SCISSOR
-	.2byte ITEM_TM_NIGHT_SLASH
-	.2byte ITEM_TM_IRON_HEAD
-	.2byte ITEM_TM_POISON_JAB
-	.2byte ITEM_TM_AURA_SPHERE
-	.2byte ITEM_TM_BUG_BUZZ
-	.2byte ITEM_TM_ACROBATICS
-	.2byte ITEM_TM_BODY_SLAM
-	.2byte ITEM_TM_FLASH_CANNON
-	.2byte ITEM_TM_LIQUIDATION
-	.2byte ITEM_TM_THUNDER_PUNCH
-	.2byte ITEM_TM_FIRE_PUNCH
-	.2byte ITEM_TM_ICE_PUNCH
-	.2byte ITEM_TM_EARTH_POWER
-	.2byte ITEM_TM_AIR_SLASH
-	.2byte ITEM_TM_BODY_PRESS
-	.2byte ITEM_TM_MOONBLAST
-	pokemartlistend
 
 LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM:
 	.string "Hmm…\p"

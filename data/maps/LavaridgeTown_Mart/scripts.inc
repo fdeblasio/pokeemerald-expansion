@@ -14,20 +14,6 @@ LavaridgeTown_Mart_EventScript_TMClerk::
 	release
 	end
 
-	.align 2
-LavaridgeTown_Mart_TMs:
-	.2byte ITEM_TM_TOXIC
-	.2byte ITEM_TM_BRINE
-	.2byte ITEM_TM_SIGNAL_BEAM
-	.2byte ITEM_TM_PAYBACK
-	.2byte ITEM_TM_NASTY_PLOT
-	.2byte ITEM_TM_SWORDS_DANCE
-	.2byte ITEM_TM_STEALTH_ROCK
-	.2byte ITEM_TM_GRASS_KNOT
-	.2byte ITEM_TM_U_TURN
-	.2byte ITEM_TM_TRICK_ROOM
-	pokemartlistend
-
 LavaridgeTown_Mart_EventScript_ExpertM::
 	msgbox LavaridgeTown_Mart_Text_XSpeedFirstStrike, MSGBOX_NPC
 	end

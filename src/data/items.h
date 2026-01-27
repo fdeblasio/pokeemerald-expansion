@@ -8798,12 +8798,12 @@ const struct ItemInfo gItemsInfo[] =
     },
 
 // TMs. They don't have a set flingPower, as that's handled by GetFlingPowerFromItemId.
-#define TM_INFO(Number)             \
+#define TM_INFO(Number)            \
     .name = ITEM_NAME("TM"Number), \
-    .price = 2000,                  \
-    .importance = I_REUSABLE_TMS,   \
-    .pocket = POCKET_TM,            \
-    .type = ITEM_USE_PARTY_MENU,    \
+    .price = 1000,                 \
+    .importance = I_REUSABLE_TMS,  \
+    .pocket = POCKET_TM,           \
+    .type = ITEM_USE_PARTY_MENU,   \
     .fieldUseFunc = ItemUseOutOfBattle_TM
 
     [ITEM_TM_FOCUS_PUNCH] =

@@ -11,34 +11,6 @@ LilycoveCity_DepartmentStore_3F_EventScript_ClerkLeft::
 	release
 	end
 
-	.align 2
-LilycoveCity_DepartmentStore_3F_Pokemart_EVs:
-	.2byte ITEM_HP_UP
-	.2byte ITEM_PROTEIN
-	.2byte ITEM_IRON
-	.2byte ITEM_CALCIUM
-	.2byte ITEM_ZINC
-	.2byte ITEM_CARBOS
-	.2byte ITEM_POMEG_BERRY
-	.2byte ITEM_KELPSY_BERRY
-	.2byte ITEM_QUALOT_BERRY
-	.2byte ITEM_HONDEW_BERRY
-	.2byte ITEM_GREPA_BERRY
-	.2byte ITEM_TAMATO_BERRY
-	.2byte ITEM_X_ATTACK
-	.2byte ITEM_X_DEFENSE
-	.2byte ITEM_X_SP_ATK
-	.2byte ITEM_X_SP_DEF
-	.2byte ITEM_X_SPEED
-	.2byte ITEM_X_ACCURACY
-	.2byte ITEM_DIRE_HIT
-	.2byte ITEM_GUARD_SPEC
-	.2byte ITEM_ENERGY_POWDER
-	.2byte ITEM_ENERGY_ROOT
-	.2byte ITEM_HEAL_POWDER
-	.2byte ITEM_REVIVAL_HERB
-	pokemartlistend
-
 LilycoveCity_DepartmentStore_3F_EventScript_ClerkMints::
 	lock
 	faceplayer
@@ -48,33 +20,6 @@ LilycoveCity_DepartmentStore_3F_EventScript_ClerkMints::
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
-
-	.align 2
-LilycoveCity_DepartmentStore_3F_Pokemart_Mints:
-	.2byte ITEM_ABILITY_CAPSULE
-	.2byte ITEM_ABILITY_PATCH
-	.2byte ITEM_ADAMANT_MINT
-	.2byte ITEM_MODEST_MINT
-	.2byte ITEM_JOLLY_MINT
-	.2byte ITEM_TIMID_MINT
-	.2byte ITEM_IMPISH_MINT
-	.2byte ITEM_BOLD_MINT
-	.2byte ITEM_CALM_MINT
-	.2byte ITEM_CAREFUL_MINT
-	.2byte ITEM_SERIOUS_MINT
-	.2byte ITEM_LONELY_MINT
-	.2byte ITEM_NAUGHTY_MINT
-	.2byte ITEM_BRAVE_MINT
-	.2byte ITEM_LAX_MINT
-	.2byte ITEM_RELAXED_MINT
-	.2byte ITEM_MILD_MINT
-	.2byte ITEM_RASH_MINT
-	.2byte ITEM_QUIET_MINT
-	.2byte ITEM_GENTLE_MINT
-	.2byte ITEM_SASSY_MINT
-	.2byte ITEM_HASTY_MINT
-	.2byte ITEM_NAIVE_MINT
-	pokemartlistend
 
 LilycoveCity_DepartmentStore_3F_EventScript_ClerkEvo::
 	lock
@@ -86,59 +31,6 @@ LilycoveCity_DepartmentStore_3F_EventScript_ClerkEvo::
 	release
 	end
 
-	.align 2
-LilycoveCity_DepartmentStore_3F_Pokemart_Evo:
-	.2byte ITEM_FIRE_STONE      @ Hoenn: Vulpix;                      Postgame: Growlithe, Growlithe-H, Unused: Cubone, Eevee, Pansear, Capsakid
-	.2byte ITEM_WATER_STONE     @ Hoenn: Staryu, Lombre;              Postgame: Poliwhirl, Shellder;    Unused: Eevee, Panpour
-	.2byte ITEM_THUNDER_STONE   @ Hoenn: Pikachu, Magneton, Nosepass; Postgame: Eelektrik;              Unused: Eevee, Charjabug, Tadbulb
-	.2byte ITEM_LEAF_STONE      @ Hoenn: Gloom, Nuzleaf;              Postgame: Voltorb-H;              Unused: Weepinbell, Exeggcute, Eevee, Pansage, Petilil
-	.2byte ITEM_MOON_STONE      @ Hoenn: Jigglypuff, Skitty;          Postgame: N/A;                    Unused: Nidorina, Nidorino, Clefairy, Eevee, Munna
-	.2byte ITEM_SUN_STONE       @ Hoenn: Pikachu, Gloom;              Postgame: Sunkern, Helioptile;    Unused: Exeggcute, Eevee, Cottonee, Petilil
-	.2byte ITEM_SHINY_STONE     @ Hoenn: Koffing, Roselia;            Postgame: Togetic;                Unused: Eevee, Minccino, Floette
-	.2byte ITEM_DAWN_STONE      @ Hoenn: Kirlia and Snorunt
-	.2byte ITEM_LINKING_CORD    @ Hoenn: Kadabra, Machoke, Graveler;  Postgame: Graveler-A;             Unused: Haunter, Boldore, Gurdurr, Karrablast, Shelmet, Phantump, Pumpkaboo
-	.2byte ITEM_DRAGON_SCALE    @ Hoenn: Seadra
-	.2byte ITEM_DEEP_SEA_TOOTH  @ Hoenn: Clamperl
-	.2byte ITEM_DEEP_SEA_SCALE  @ Hoenn: Clamperl
-	.2byte ITEM_REAPER_CLOTH    @ Hoenn: Dusclops
-	.2byte ITEM_PROTECTOR       @ Hoenn: Rhydon
-	.2byte ITEM_PRISM_SCALE     @ Hoenn: Feebas
-	pokemartlistend
-
-@ Unused shop that contains evo items for Pokemon not available in Emerald by default
-	.align 2
-LilycoveCity_DepartmentStore_3F_Pokemart_EvoUnused:
-	.2byte ITEM_DUSK_STONE                         @ Unused: Murkrow, Misdreavus, Lampent, Doublade
-	.2byte ITEM_ICE_STONE       @ Battle Frontier;   Postgame: Sandshrew-A, Vulpix-A; Unused: Mime Jr., Eevee, Darumaka-G, Bergmite, Crabrawler, Cetoddle
-	.2byte ITEM_KINGS_ROCK      @ Battle Frontier;   Postgame: Poliwhirl and Slowpoke
-	.2byte ITEM_METAL_COAT                         @ Unused: Onix and Scyther
-	.2byte ITEM_BLACK_AUGURITE                     @ Unused: Scyther
-	.2byte ITEM_UPGRADE                            @ Unused: Porygon
-	.2byte ITEM_DUBIOUS_DISC                       @ Unused: Porygon2
-	.2byte ITEM_RAZOR_FANG      @ Battle Frontier;   Postgame: Gligar
-	.2byte ITEM_RAZOR_CLAW      @ Battle Frontier;   Postgame: Sneasel and Sneasel-H
-	.2byte ITEM_ELECTIRIZER     @ Battle Frontier;   Postgame: Electabuzz
-	.2byte ITEM_MAGMARIZER      @ Battle Frontier;   Postgame: Magmar
-	.2byte ITEM_OVAL_STONE      @ Battle Frontier;   Postgame: Happiny
-	.2byte ITEM_SACHET                             @ Unused: Spritzee
-	.2byte ITEM_WHIPPED_DREAM                      @ Unused: Swirlix
-	.2byte ITEM_GALARICA_CUFF   @ Battle Frontier;   Postgame: Slowpoke-G
-	.2byte ITEM_GALARICA_WREATH @ Battle Frontier;   Postgame: Slowpoke-G
-	.2byte ITEM_SWEET_APPLE                        @ Unused: Applin
-	.2byte ITEM_TART_APPLE                         @ Unused: Applin
-	.2byte ITEM_SYRUPY_APPLE                       @ Unused: Applin
-	.2byte ITEM_CRACKED_POT                        @ Unused: Sinistea
-	.2byte ITEM_CHIPPED_POT                        @ Unused: Sinistea
-	.2byte ITEM_METAL_ALLOY                        @ Unused: Duraludon
-	.2byte ITEM_SCROLL_OF_DARKNESS                 @ Unused: Kubfu
-	.2byte ITEM_SCROLL_OF_WATERS                   @ Unused: Kubfu
-	.2byte ITEM_PEAT_BLOCK      @ Battle Frontier;   Postgame: Ursaring
-	.2byte ITEM_AUSPICIOUS_ARMOR                   @ Unused: Charcadet
-	.2byte ITEM_MALICIOUS_ARMOR                    @ Unused: Charcadet
-	.2byte ITEM_UNREMARKABLE_TEACUP                @ Unused: Poltchageist
-	.2byte ITEM_MASTERPIECE_TEACUP                 @ Unused: Poltchageist
-	pokemartlistend
-
 LilycoveCity_DepartmentStore_3F_EventScript_ClerkRight::
 	lock
 	faceplayer
@@ -148,38 +40,6 @@ LilycoveCity_DepartmentStore_3F_EventScript_ClerkRight::
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
-
-	.align 2
-LilycoveCity_DepartmentStore_3F_Pokemart_Delibird:
-	.2byte ITEM_LEFTOVERS
-	.2byte ITEM_CHOICE_BAND
-	.2byte ITEM_CHOICE_SPECS
-	.2byte ITEM_CHOICE_SCARF
-	.2byte ITEM_WIDE_LENS
-	.2byte ITEM_ZOOM_LENS
-	.2byte ITEM_TOXIC_ORB
-	.2byte ITEM_FLAME_ORB
-	.2byte ITEM_HEAT_ROCK
-	.2byte ITEM_DAMP_ROCK
-	.2byte ITEM_ICY_ROCK
-	.2byte ITEM_SMOOTH_ROCK
-	.2byte ITEM_TERRAIN_EXTENDER
-	.2byte ITEM_AIR_BALLOON
-	.2byte ITEM_ASSAULT_VEST
-	.2byte ITEM_BIG_ROOT
-	.2byte ITEM_BLACK_SLUDGE
-	.2byte ITEM_DESTINY_KNOT
-	.2byte ITEM_EVIOLITE
-	.2byte ITEM_LOADED_DICE
-	.2byte ITEM_METRONOME
-	.2byte ITEM_MIRROR_HERB
-	.2byte ITEM_PUNCHING_GLOVE
-	.2byte ITEM_ROCKY_HELMET
-	.2byte ITEM_SCOPE_LENS
-	.2byte ITEM_SHELL_BELL
-	.2byte ITEM_SMOKE_BALL
-	.2byte ITEM_SOOTHE_BELL
-	pokemartlistend
 
 LilycoveCity_DepartmentStore_3F_EventScript_TriathleteM::
 	msgbox LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon, MSGBOX_NPC

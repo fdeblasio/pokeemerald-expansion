@@ -75,6 +75,7 @@
 	.include "asm/macros.inc"
 	.include "asm/macros/event.inc"
 	.include "constants/constants.inc"
+	.include "data/important_shops.inc"
 
 	.section script_data, "aw", %progbits
 

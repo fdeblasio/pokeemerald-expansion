@@ -208,9 +208,7 @@ upcoming
     - Kartana: Sharpness
 
 ### Items
-- Figure out extra bag pocket dot
-- Add new TMs
-    - Figure out Battle Frontier BP issue
+- Add new TMs to shops/overworld
 - Add charms (no longer have to worry about space)
 - See if it's possible to give the item PC and decoration PC more room
 - Max Elixir (and others?) should stay on party screen like Full Restores do

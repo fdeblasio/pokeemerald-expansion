@@ -338,39 +338,39 @@
 |TM106|Rock Smash|Mauville|
 |TM107|Waterfall|Sootopolis|
 |TM108|Dive|Mossdeep|
-|TM109|Trick|???|
+|TM109|Trick|Slateport TM Shop|
 |TM110|Blaze Kick|???|
 |TM111|Aqua Tail|???|
 |TM112|Zing Zap|???|
 |TM113|Tailwind|???|
 |TM114|Sky Uppercut|???|
-|TM115|Struggle Bug|???|
+|TM115|Struggle Bug|Slateport TM Shop|
 |TM116|Psybeam|???|
 |TM117|Hyper Voice|???|
 |TM118|Heat Wave|???|
 |TM119|Disarming Voice|???|
-|TM120|Trailblaze|???|
+|TM120|Trailblaze|Slateport TM Shop|
 |TM121|Heavy Slam|???|
-|TM122|Encore|???|
+|TM122|Encore|Slateport TM Shop|
 |TM123|Drill Run|???|
 |TM124|Ice Spinner|???|
-|TM125|Acid Spray|???|
+|TM125|Acid Spray|Slateport TM Shop|
 |TM126|Agility|???|
 |TM127|Air Cutter|???|
 |TM128|Amnesia|???|
 |TM129|Avalanche|???|
-|TM130|Helping Hand|???|
+|TM130|Helping Hand|Slateport TM Shop|
 |TM131|Pollen Puff|???|
 |TM132|Baton Pass|???|
 |TM133|Bulldoze|???|
 |TM134|Reversal|???|
-|TM135|Charge Beam|???|
+|TM135|Charge Beam|Slateport TM Shop|
 |TM136|Electric Terrain|???|
 |TM137|Grassy Terrain|???|
 |TM138|Psychic Terrain|???|
 |TM139|Misty Terrain|???|
 |TM140|Charm|???|
-|TM141|Chilling Water|???|
+|TM141|Chilling Water|Slateport TM Shop|
 |TM142|Hydro Pump|???|
 |TM143|Confuse Ray|???|
 |TM144|Fire Pledge|???|
@@ -387,7 +387,7 @@
 |TM155|Frenzy Plant|???|
 |TM156|Outrage|???|
 |TM157|Fake Tears|???|
-|TM158|Fire Spin|???|
+|TM158|Fire Spin|Slateport TM Shop|
 |TM159|Leaf Storm|???|
 |TM160|Hurricane|???|
 |TM161|Thunder Fang|???|
@@ -395,20 +395,20 @@
 |TM163|Ice Fang|???|
 |TM164|Brave Bird|???|
 |TM165|Flare Blitz|???|
-|TM166|Flame Charge|???|
+|TM166|Flame Charge|Slateport TM Shop|
 |TM167|Close Combat|???|
 |TM168|Fling|???|
 |TM169|Draco Meteor|???|
 |TM170|Steel Beam|???|
 |TM171|Foul Play|???|
 |TM172|Gunk Shot|???|
-|TM173|Charge|???|
-|TM174|Haze|???|
+|TM173|Charge|Slateport TM Shop|
+|TM174|Haze|Slateport TM Shop|
 |TM175|Hex|???|
-|TM176|Sand Tomb|???|
+|TM176|Sand Tomb|Slateport TM Shop|
 |TM177|Spite|???|
 |TM178|Gravity|???|
-|TM179|Smack Down|???|
+|TM179|Smack Down|Slateport TM Shop|
 |TM180|Gyro Ball|???|
 |TM181|Knock Off|???|
 |TM182|Bug Bite|???|
@@ -421,7 +421,7 @@
 |TM189|Heat Crash|???|
 |TM190|Solar Blade|???|
 |TM191|Uproar|???|
-|TM192|Metal Claw|???|
+|TM192|Metal Claw|Slateport TM Shop|
 |TM193|Poison Tail|???|
 |TM194|Grassy Glide|???|
 |TM195|Burning Jealousy|???|
@@ -437,7 +437,7 @@
 |TM205|Endeavor|???|
 |TM206|Petal Blizzard|???|
 |TM207|Temper Flare|???|
-|TM208|Whirlpool|???|
+|TM208|Whirlpool|Slateport TM Shop|
 |TM209|Muddy Water|???|
 |TM210|Stomping Tantrum|???|
 |TM211|Electroweb|???|
@@ -477,7 +477,7 @@
 |TM245|Seismic Toss|???|
 |TM246|Counter|???|
 |TM247|Dream Eater|???|
-|TM248|Pounce|???|
+|TM248|Pounce|Slateport TM Shop|
 |TM249|Leaf Blade|???|
 |TM250|Rising Voltage|???|
 
@@ -494,7 +494,7 @@
 - Substitute
 - Swagger
 
-#### Battle Frontier Left: (Beauty, special, yet cute)
+#### Battle Frontier Left:
 - Mega Punch
 - Mega Kick
 - Endure
@@ -502,7 +502,7 @@
 - Stored Power
 - Imprison
 
-#### Battle Frontier Right: (Swimmer, hard, yet pretty)
+#### Battle Frontier Right:
 - Low Kick
 - Low Sweep
 - Defense Curl

@@ -543,17 +543,6 @@ SlateportCity_EventScript_TMClerk::
 	release
 	end
 
-	.align 2
-SlateportCity_Market_TMs:
-	.2byte ITEM_TM_CALM_MIND
-	.2byte ITEM_TM_ROOST
-	.2byte ITEM_TM_FALSE_SWIPE
-	.2byte ITEM_TM_WILL_O_WISP
-	.2byte ITEM_TM_SILVER_WIND
-	.2byte ITEM_TM_THUNDER_WAVE
-	.2byte ITEM_TM_PSYCH_UP
-	pokemartlistend
-
 @ Scene with Capt Sterns interview and Team Aqua announcing plans to steal Submarine
 SlateportCity_EventScript_CaptStern::
 	lockall

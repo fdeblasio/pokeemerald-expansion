@@ -27180,6 +27180,7 @@ gBattleAnimMove_MudShot::
 	call MudShotOrbs
 	call MudShotOrbs
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 3, 0, 43, 1
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_DEF_PARTNER, 3, 0, 43, 1
 	call MudShotOrbs
 	call MudShotOrbs
 	call MudShotOrbs

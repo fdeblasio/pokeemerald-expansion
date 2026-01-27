@@ -208,6 +208,11 @@ upcoming
     - Kartana: Sharpness
 
 ### Items
+- Figure out extra bag pocket dot
+- Add new TMs
+    - Figure out Battle Frontier BP issue
+- Add charms (no longer have to worry about space)
+- See if it's possible to give the item PC and decoration PC more room
 - Max Elixir (and others?) should stay on party screen like Full Restores do
 - Add more EXP Candy to the overworld
 - Figure out how many items are obtainable in-game (item pocket only)
@@ -242,7 +247,6 @@ upcoming
             - 18 type boost items
             - 18 Tera Shards
             - 7 mochi
-- Include charms (no longer have to worry about space)
 
 ### Trainers
 - Clear up trainer spots by having just one set of gym leader rematches?
@@ -480,8 +484,6 @@ upcoming
     - Look at debug menu or at https://www.pokecommunity.com/showpost.php?p=10127351&postcount=47
     - Set OW_PC_HEAL to GEN_LATEST
 - Add relearning moves to PC?
-- More save space editing
-    - See if it's possible to give the item PC and decoration PC more room
 - PokeNav:
     - Use layouts instead of maps to get more accurate nearby function? (Mainly useful for Gym Leaders in towns)
     - Give trainers more accurate locations

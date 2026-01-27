@@ -109,15 +109,15 @@ enum Language
 #define ROAMER_COUNT 1 // Number of maximum concurrent active roamers
 
 // Bag constants: 4 bytes
-#define BAG_ITEMS_COUNT      FREE_MYSTERY_EVENT_BUFFERS ? 60 : 60 //need at most 558, was 30
+#define BAG_ITEMS_COUNT      FREE_MYSTERY_EVENT_BUFFERS ? 100 : 60 //need at most 558, was 30
 #define BAG_MEDICINE_COUNT   FREE_MYSTERY_EVENT_BUFFERS ? 37 : 0
 #define BAG_KEYITEMS_COUNT   45 //was 30
 #define BAG_POKEBALLS_COUNT  28 //was 16
-#define BAG_TM_COUNT        FREE_MYSTERY_EVENT_BUFFERS ? 108 : 108 //need at least 229, was 64
+#define BAG_TM_COUNT        FREE_MYSTERY_EVENT_BUFFERS ? 250 : 108 //was 64
 #define BAG_BERRIES_COUNT   FREE_MYSTERY_EVENT_BUFFERS ? 68 : 46 //was 46
 
 //Free space:
-//Saveblock 1: 15780/15872, free 92b    772/4=193 items
+//Saveblock 1: 15780/15872, free 92b    44/4=11 items
 
 // Number of facilities for Ranking Hall.
 // 7 facilities for single mode + tower double mode + tower multi mode.

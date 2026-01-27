@@ -350,6 +350,136 @@
 |TM118|Heat Wave|???|
 |TM119|Disarming Voice|???|
 |TM120|Trailblaze|???|
+|TM121|Heavy Slam|???|
+|TM122|Encore|???|
+|TM123|Drill Run|???|
+|TM124|Ice Spinner|???|
+|TM125|Acid Spray|???|
+|TM126|Agility|???|
+|TM127|Air Cutter|???|
+|TM128|Amnesia|???|
+|TM129|Avalanche|???|
+|TM130|Helping Hand|???|
+|TM131|Pollen Puff|???|
+|TM132|Baton Pass|???|
+|TM133|Bulldoze|???|
+|TM134|Reversal|???|
+|TM135|Charge Beam|???|
+|TM136|Electric Terrain|???|
+|TM137|Grassy Terrain|???|
+|TM138|Psychic Terrain|???|
+|TM139|Misty Terrain|???|
+|TM140|Charm|???|
+|TM141|Chilling Water|???|
+|TM142|Hydro Pump|???|
+|TM143|Confuse Ray|???|
+|TM144|Fire Pledge|???|
+|TM145|Water Pledge|???|
+|TM146|Grass Pledge|???|
+|TM147|Wild Charge|???|
+|TM148|Dragon Tail|???|
+|TM149|Draining Kiss|???|
+|TM150|Eerie Impulse|???|
+|TM151|Phantom Force|???|
+|TM152|Electro Ball|???|
+|TM153|Blast Burn|???|
+|TM154|Hydro Cannon|???|
+|TM155|Frenzy Plant|???|
+|TM156|Outrage|???|
+|TM157|Fake Tears|???|
+|TM158|Fire Spin|???|
+|TM159|Leaf Storm|???|
+|TM160|Hurricane|???|
+|TM161|Thunder Fang|???|
+|TM162|Fire Fang|???|
+|TM163|Ice Fang|???|
+|TM164|Brave Bird|???|
+|TM165|Flare Blitz|???|
+|TM166|Flame Charge|???|
+|TM167|Close Combat|???|
+|TM168|Fling|???|
+|TM169|Draco Meteor|???|
+|TM170|Steel Beam|???|
+|TM171|Foul Play|???|
+|TM172|Gunk Shot|???|
+|TM173|Charge|???|
+|TM174|Haze|???|
+|TM175|Hex|???|
+|TM176|Sand Tomb|???|
+|TM177|Spite|???|
+|TM178|Gravity|???|
+|TM179|Smack Down|???|
+|TM180|Gyro Ball|???|
+|TM181|Knock Off|???|
+|TM182|Bug Bite|???|
+|TM183|Super Fang|???|
+|TM184|Vacuum Wave|???|
+|TM185|Lunge|???|
+|TM186|High Horsepower|???|
+|TM187|Icicle Spear|???|
+|TM188|Scald|???|
+|TM189|Heat Crash|???|
+|TM190|Solar Blade|???|
+|TM191|Uproar|???|
+|TM192|Metal Claw|???|
+|TM193|Poison Tail|???|
+|TM194|Grassy Glide|???|
+|TM195|Burning Jealousy|???|
+|TM196|Flip Turn|???|
+|TM197|Dual Wingbeat|???|
+|TM198|Poltergeist|???|
+|TM199|Lash Out|???|
+|TM200|Scale Shot|???|
+|TM201|Misty Explosion|???|
+|TM202|Pain Split|???|
+|TM203|Night Shade|???|
+|TM204|Smart Strike|???|
+|TM205|Endeavor|???|
+|TM206|Petal Blizzard|???|
+|TM207|Temper Flare|???|
+|TM208|Whirlpool|???|
+|TM209|Muddy Water|???|
+|TM210|Stomping Tantrum|???|
+|TM211|Electroweb|???|
+|TM212|Triple Axel|???|
+|TM213|Coaching|???|
+|TM214|Sludge Wave|???|
+|TM215|Scorching Sands|???|
+|TM216|Feather Dance|???|
+|TM217|Future Sight|???|
+|TM218|Expanding Force|???|
+|TM219|Skitter Smack|???|
+|TM220|Meteor Beam|???|
+|TM221|Throat Chop|???|
+|TM222|Breaking Swipe|???|
+|TM223|Metal Sound|???|
+|TM224|Curse|???|
+|TM225|Hard Press|???|
+|TM226|Dragon Cheer|???|
+|TM227|Alluring Voice|???|
+|TM228|Psychic Noise|???|
+|TM229|Upper Hand|???|
+|TM230|Zen Headbutt|???|
+|TM231|Psycho Cut|???|
+|TM232|Iron Defense|???|
+|TM233|Dragon Dance|???|
+|TM234|Icy Wind|???|
+|TM235|Swift|???|
+|TM236|Psyshock|???|
+|TM237|Magical Leaf|???|
+|TM238|Mud Shot|???|
+|TM239|Spikes|???|
+|TM240|Toxic Spikes|???|
+|TM241|Venoshock|???|
+|TM242|Volt Switch|???|
+|TM243|Snarl|???|
+|TM244|Weather Ball|???|
+|TM245|Seismic Toss|???|
+|TM246|Counter|???|
+|TM247|Dream Eater|???|
+|TM248|Pounce|???|
+|TM249|Leaf Blade|???|
+|TM250|Rising Voltage|???|
 
 ### Move Tutors:
 #### Mainland:
@@ -364,157 +494,21 @@
 - Substitute
 - Swagger
 
-#### Ever Grande:
-- Drill Run
-- High Horsepower
-- Temper Flare
-
-#### Battle Frontier Left:
-- Rising Voltage
-- Grassy Glide
-- Expanding Force
-- Zen Headbutt
-- Scald
-- Psycho Cut
-- Lunge
-- Throat Chop
-- Solar Blade
-- Dual Wingbeat
-- Scorching Sands
-- Knock Off
+#### Battle Frontier Left: (Beauty, special, yet cute)
 - Mega Punch
 - Mega Kick
-
-#### Battle Frontier Right:
-- Electric Terrain
-- Grassy Terrain
-- Misty Terrain
-- Psychic Terrain
-- Iron Defense
-- Ice Spinner
-- Dragon Dance
-- Defense Curl
 - Endure
-- Icy Wind
-- Swift
-- Seismic Toss
-- Counter
-- Dream Eater
-
-#### Move Relearner:
-- Acid Spray
-- Agility
-- Air Cutter
-- Alluring Voice
-- Amnesia
-- Avalanche
-- Baton Pass
-- Blast Burn
-- Brave Bird
-- Breaking Swipe
-- Bug Bite
-- Bulldoze
-- Burning Jealousy
-- Charge
-- Charge Beam
-- Charm
-- Chilling Water
-- Close Combat
-- Coaching
-- Confuse Ray
-- Curse
-- Draco Meteor
-- Dragon Cheer
-- Dragon Tail
-- Draining Kiss
-- Eerie Impulse
-- Electro Ball
-- Electroweb
-- Encore
-- Endeavor
-- Fake Tears
-- Feather Dance
-- Fire Fang
-- Fire Pledge
-- Fire Spin
-- Flame Charge
-- Flare Blitz
-- Fling
-- Flip Turn
-- Foul Play
-- Frenzy Plant
-- Future Sight
-- Grass Pledge
-- Gravity
-- Gunk Shot
-- Gyro Ball
-- Hard Press
-- Haze
-- Heat Crash
-- Heat Wave
-- Heavy Slam
-- Helping Hand
-- Hex
-- Hurricane
-- Hydro Cannon
-- Hydro Pump
-- Ice Fang
-- Icicle Spear
+- Mud-Slap
+- Stored Power
 - Imprison
-- Lash Out
-- Leaf Storm
+
+#### Battle Frontier Right: (Swimmer, hard, yet pretty)
 - Low Kick
 - Low Sweep
-- Magical Leaf
-- Metal Claw
-- Metal Sound
-- Meteor Beam
-- Misty Explosion
-- Mud Shot
-- Muddy Water
-- Mud-Slap
-- Night Shade
-- Outrage
-- Pain Split
-- Petal Blizzard
-- Phantom Force
-- Poison Tail
-- Pollen Puff
-- Poltergeist
-- Pounce
-- Psychic Noise
-- Psyshock
-- Reversal
+- Defense Curl
 - Rock Blast
-- Sand Tomb
-- Scale Shot
 - Scary Face
-- Skitter Smack
-- Sludge Wave
-- Smack Down
-- Smart Strike
-- Snarl
-- Spikes
-- Spite
-- Steel Beam
-- Stomping Tantrum
-- Stored Power
-- Super Fang
-- Tailwind
 - Take Down
-- Thunder Fang
-- Toxic Spikes
-- Triple Axel
-- Upper Hand
-- Uproar
-- Vacuum Wave
-- Venoshock
-- Volt Switch
-- Water Pledge
-- Weather Ball
-- Whirlpool
-- Wild Charge
-
 
 ### Moves:
 - All moves automatically have their max PP amount
@@ -1538,7 +1532,7 @@
 
 - Galarian Slowbro/Galarian Slowking (postgame):
     - Learn Sludge, Psybeam, and Sludge Bomb by level up
-    - Learn Poison Tail by move relearner
+    - Learn Poison Tail by TM
 
 - Magnemite/Magneton/Magnezone:
     - Held item: Magnet: 0%->50%
@@ -4348,13 +4342,13 @@
     - SpA: 40->50
     - Spe: 26->40
     - Learns Thunder Shock, Thunder Fang, Shock Wave, Discharge, and Thunderbolt by level up
-    - Learns Ice Fang by move relearner
+    - Learns Ice Fang by TM
 
 - Boltund:
     - HP: 59->60
     - Spe: 121->125
     - Learns Thunder Shock, Thunder Fang, Shock Wave, Discharge, Zing Zap, Thunderbolt, and Supercell Slam by level up
-    - Learns Ice Fang by move relearner
+    - Learns Ice Fang by TM
 
 - Rolycoly (postgame):
     - Learns Rock Throw, Rock Tomb, Rock Slide, and Power Gem by level up

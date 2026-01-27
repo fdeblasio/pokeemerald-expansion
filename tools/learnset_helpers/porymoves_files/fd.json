@@ -1154,9 +1154,9 @@
       {"Level": 30, "Move": "MOVE_SLUDGE_BOMB"}
     ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": ["MOVE_POISON_TAIL"],
     "EggMoves": [],
-    "TutorMoves": ["MOVE_POISON_TAIL"]
+    "TutorMoves": []
   },
   "SLOWKING_GALAR": {
     "LevelMoves": [
@@ -9770,9 +9770,9 @@
       {"Level": 40, "Move": "MOVE_THUNDERBOLT"}
     ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": ["MOVE_ICE_FANG"],
     "EggMoves": [],
-    "TutorMoves": ["MOVE_ICE_FANG"]
+    "TutorMoves": []
   },
   "BOLTUND": {
     "LevelMoves": [
@@ -9785,9 +9785,9 @@
       {"Level": 62, "Move": "MOVE_SUPERCELL_SLAM"}
     ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": ["MOVE_ICE_FANG"],
     "EggMoves": [],
-    "TutorMoves": ["MOVE_ICE_FANG"]
+    "TutorMoves": []
   },
   "ROLYCOLY": {
     "LevelMoves": [

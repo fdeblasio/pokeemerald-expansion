@@ -2432,7 +2432,7 @@ void ShowScrollableMultichoice(void)
     case SCROLL_MULTI_BF_MOVE_TUTOR_1:
     case SCROLL_MULTI_BF_MOVE_TUTOR_2:
         task->tMaxItemsOnScreen = MAX_SCROLL_MULTI_ON_SCREEN;
-        task->tNumItems = 15;
+        task->tNumItems = 7;
         task->tLeft = 15;
         task->tTop = 1;
         task->tWidth = 14;
@@ -2582,38 +2582,22 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
     },
     [SCROLL_MULTI_BF_MOVE_TUTOR_1] =
     {
-        COMPOUND_STRING("Rising Voltage{CLEAR_TO 0x64}1BP"),
-        COMPOUND_STRING("Grassy Glide{CLEAR_TO 0x64}1BP"),
-        COMPOUND_STRING("Expanding Force{CLEAR_TO 0x64}1BP"),
-        COMPOUND_STRING("Zen Headbutt{CLEAR_TO 0x64}1BP"),
-        COMPOUND_STRING("Scald{CLEAR_TO 0x64}1BP"),
-        COMPOUND_STRING("Psycho Cut{CLEAR_TO 0x64}1BP"),
-        COMPOUND_STRING("Lunge{CLEAR_TO 0x64}1BP"),
-        COMPOUND_STRING("Throat Chop{CLEAR_TO 0x64}1BP"),
-        COMPOUND_STRING("Solar Blade{CLEAR_TO 0x64}1BP"),
-        COMPOUND_STRING("Dual Wingbeat{CLEAR_TO 0x64}1BP"),
-        COMPOUND_STRING("Scorching Sands{CLEAR_TO 0x64}1BP"),
-        COMPOUND_STRING("Knock Off{CLEAR_TO 0x64}1BP"),
         COMPOUND_STRING("Mega Punch{CLEAR_TO 0x64}1BP"),
         COMPOUND_STRING("Mega Kick{CLEAR_TO 0x64}1BP"),
+        COMPOUND_STRING("Endure{CLEAR_TO 0x64}1BP"),
+        COMPOUND_STRING("Mud-Slap{CLEAR_TO 0x64}1BP"),
+        COMPOUND_STRING("Stored Power{CLEAR_TO 0x64}1BP"),
+        COMPOUND_STRING("Imprison{CLEAR_TO 0x64}1BP"),
         gText_Exit
     },
     [SCROLL_MULTI_BF_MOVE_TUTOR_2] =
     {
-        COMPOUND_STRING("Electric Terrain{CLEAR_TO 0x64}1BP"),
-        COMPOUND_STRING("Grassy Terrain{CLEAR_TO 0x64}1BP"),
-        COMPOUND_STRING("Misty Terrain{CLEAR_TO 0x64}1BP"),
-        COMPOUND_STRING("Psychic Terrain{CLEAR_TO 0x64}1BP"),
-        COMPOUND_STRING("Iron Defense{CLEAR_TO 0x64}1BP"),
-        COMPOUND_STRING("Ice Spinner{CLEAR_TO 0x64}1BP"),
-        COMPOUND_STRING("Dragon Dance{CLEAR_TO 0x64}1BP"),
+        COMPOUND_STRING("Low Kick{CLEAR_TO 0x64}1BP"),
+        COMPOUND_STRING("Low Sweep{CLEAR_TO 0x64}1BP"),
         COMPOUND_STRING("Defense Curl{CLEAR_TO 0x64}1BP"),
-        COMPOUND_STRING("Endure{CLEAR_TO 0x64}1BP"),
-        COMPOUND_STRING("Icy Wind{CLEAR_TO 0x64}1BP"),
-        COMPOUND_STRING("Swift{CLEAR_TO 0x64}1BP"),
-        COMPOUND_STRING("Seismic Toss{CLEAR_TO 0x64}1BP"),
-        COMPOUND_STRING("Counter{CLEAR_TO 0x64}1BP"),
-        COMPOUND_STRING("Dream Eater{CLEAR_TO 0x64}1BP"),
+        COMPOUND_STRING("Rock Blast{CLEAR_TO 0x64}1BP"),
+        COMPOUND_STRING("Scary Face{CLEAR_TO 0x64}1BP"),
+        COMPOUND_STRING("Take Down{CLEAR_TO 0x64}1BP"),
         gText_Exit
     },
     [SCROLL_MULTI_SS_TIDAL_DESTINATION] =

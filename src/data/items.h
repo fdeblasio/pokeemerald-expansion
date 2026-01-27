@@ -9266,305 +9266,63 @@ const struct ItemInfo gItemsInfo[] =
             "lowers Sp. Atk."),
     },
 
-    [ITEM_TM51] =
-    {
-        TM_INFO("051"),
-        .description = COMPOUND_STRING("Roost"),
-    },
+#define EXTRA_TM_INFO(Number, Move)           \
+    [ITEM_TM##Number] =                       \
+    {                                         \
+        TM_INFO(#Number),                     \
+        .description = COMPOUND_STRING(Move), \
+    }
 
-    [ITEM_TM52] =
-    {
-        TM_INFO("052"),
-        .description = COMPOUND_STRING("Focus Blast"),
-    },
-
-    [ITEM_TM53] =
-    {
-        TM_INFO("053"),
-        .description = COMPOUND_STRING("Energy Ball"),
-    },
-
-    [ITEM_TM54] =
-    {
-        TM_INFO("054"),
-        .description = COMPOUND_STRING("False Swipe"),
-    },
-
-    [ITEM_TM55] =
-    {
-        TM_INFO("055"),
-        .description = COMPOUND_STRING("Brine"),
-    },
-
-    [ITEM_TM56] =
-    {
-        TM_INFO("056"),
-        .description = COMPOUND_STRING("Signal Beam"),
-    },
-
-    [ITEM_TM57] =
-    {
-        TM_INFO("057"),
-        .description = COMPOUND_STRING("Supercell Slam"),
-    },
-
-    [ITEM_TM58] =
-    {
-        TM_INFO("058"),
-        .description = COMPOUND_STRING("Psychic Fangs"),
-    },
-
-    [ITEM_TM59] =
-    {
-        TM_INFO("059"),
-        .description = COMPOUND_STRING("Dragon Pulse"),
-    },
-
-    [ITEM_TM60] =
-    {
-        TM_INFO("060"),
-        .description = COMPOUND_STRING("Drain Punch"),
-    },
-
-    [ITEM_TM61] =
-    {
-        TM_INFO("061"),
-        .description = COMPOUND_STRING("Will-o-Wisp"),
-    },
-
-    [ITEM_TM62] =
-    {
-        TM_INFO("062"),
-        .description = COMPOUND_STRING("Silver Wind"),
-    },
-
-    [ITEM_TM63] =
-    {
-        TM_INFO("063"),
-        .description = COMPOUND_STRING("Dazzling Gleam"),
-    },
-
-    [ITEM_TM64] =
-    {
-        TM_INFO("064"),
-        .description = COMPOUND_STRING("Seed Bomb"),
-    },
-
-    [ITEM_TM65] =
-    {
-        TM_INFO("065"),
-        .description = COMPOUND_STRING("Shadow Claw"),
-    },
-
-    [ITEM_TM66] =
-    {
-        TM_INFO("066"),
-        .description = COMPOUND_STRING("Payback"),
-    },
-
-    [ITEM_TM67] =
-    {
-        TM_INFO("067"),
-        .description = COMPOUND_STRING("Power Gem"),
-    },
-
-    [ITEM_TM68] =
-    {
-        TM_INFO("068"),
-        .description = COMPOUND_STRING("Giga Impact"),
-    },
-
-    [ITEM_TM69] =
-    {
-        TM_INFO("069"),
-        .description = COMPOUND_STRING("Play Rough"),
-    },
-
-    [ITEM_TM70] =
-    {
-        TM_INFO("070"),
-        .description = COMPOUND_STRING("Leech Life"),
-    },
-
-    [ITEM_TM71] =
-    {
-        TM_INFO("071"),
-        .description = COMPOUND_STRING("Stone Edge"),
-    },
-
-    [ITEM_TM72] =
-    {
-        TM_INFO("072"),
-        .description = COMPOUND_STRING("Icicle Crash"),
-    },
-
-    [ITEM_TM73] =
-    {
-        TM_INFO("073"),
-        .description = COMPOUND_STRING("Thunder Wave"),
-    },
-
-    [ITEM_TM74] =
-    {
-        TM_INFO("074"),
-        .description = COMPOUND_STRING("Nasty Plot"),
-    },
-
-    [ITEM_TM75] =
-    {
-        TM_INFO("075"),
-        .description = COMPOUND_STRING("Swords Dance"),
-    },
-
-    [ITEM_TM76] =
-    {
-        TM_INFO("076"),
-        .description = COMPOUND_STRING("Stealth Rock"),
-    },
-
-    [ITEM_TM77] =
-    {
-        TM_INFO("077"),
-        .description = COMPOUND_STRING("Psych Up"),
-    },
-
-    [ITEM_TM78] =
-    {
-        TM_INFO("078"),
-        .description = COMPOUND_STRING("Crunch"),
-    },
-
-    [ITEM_TM79] =
-    {
-        TM_INFO("079"),
-        .description = COMPOUND_STRING("Dark Pulse"),
-    },
-
-    [ITEM_TM80] =
-    {
-        TM_INFO("080"),
-        .description = COMPOUND_STRING("Rock Slide"),
-    },
-
-    [ITEM_TM81] =
-    {
-        TM_INFO("081"),
-        .description = COMPOUND_STRING("X-Scissor"),
-    },
-
-    [ITEM_TM82] =
-    {
-        TM_INFO("082"),
-        .description = COMPOUND_STRING("Night Slash"),
-    },
-
-    [ITEM_TM83] =
-    {
-        TM_INFO("083"),
-        .description = COMPOUND_STRING("Iron Head"),
-    },
-
-    [ITEM_TM84] =
-    {
-        TM_INFO("084"),
-        .description = COMPOUND_STRING("Poison Jab"),
-    },
-
-    [ITEM_TM85] =
-    {
-        TM_INFO("085"),
-        .description = COMPOUND_STRING("Aura Sphere"),
-    },
-
-    [ITEM_TM86] =
-    {
-        TM_INFO("086"),
-        .description = COMPOUND_STRING("Grass Knot"),
-    },
-
-    [ITEM_TM87] =
-    {
-        TM_INFO("087"),
-        .description = COMPOUND_STRING("Bug Buzz"),
-    },
-
-    [ITEM_TM88] =
-    {
-        TM_INFO("088"),
-        .description = COMPOUND_STRING("Acrobatics"),
-    },
-
-    [ITEM_TM89] =
-    {
-        TM_INFO("089"),
-        .description = COMPOUND_STRING("U-turn"),
-    },
-
-    [ITEM_TM90] =
-    {
-        TM_INFO("090"),
-        .description = COMPOUND_STRING("Body Slam"),
-    },
-
-    [ITEM_TM91] =
-    {
-        TM_INFO("091"),
-        .description = COMPOUND_STRING("Flash Cannon"),
-    },
-
-    [ITEM_TM92] =
-    {
-        TM_INFO("092"),
-        .description = COMPOUND_STRING("Trick Room"),
-    },
-
-    [ITEM_TM93] =
-    {
-        TM_INFO("093"),
-        .description = COMPOUND_STRING("Liquidation"),
-    },
-
-    [ITEM_TM94] =
-    {
-        TM_INFO("094"),
-        .description = COMPOUND_STRING("Thunder Punch"),
-    },
-
-    [ITEM_TM95] =
-    {
-        TM_INFO("095"),
-        .description = COMPOUND_STRING("Fire Punch"),
-    },
-
-    [ITEM_TM96] =
-    {
-        TM_INFO("096"),
-        .description = COMPOUND_STRING("Ice Punch"),
-    },
-
-    [ITEM_TM97] =
-    {
-        TM_INFO("097"),
-        .description = COMPOUND_STRING("Earth Power"),
-    },
-
-    [ITEM_TM98] =
-    {
-        TM_INFO("098"),
-        .description = COMPOUND_STRING("Air Slash"),
-    },
-
-    [ITEM_TM99] =
-    {
-        TM_INFO("099"),
-        .description = COMPOUND_STRING("Body Press"),
-    },
-
-    [ITEM_TM100] =
-    {
-        TM_INFO("100"),
-        .description = COMPOUND_STRING("Moonblast"),
-    },
+    EXTRA_TM_INFO(051, "Roost"),
+    EXTRA_TM_INFO(052, "Focus Blast"),
+    EXTRA_TM_INFO(053, "Energy Ball"),
+    EXTRA_TM_INFO(054, "False Swipe"),
+    EXTRA_TM_INFO(055, "Brine"),
+    EXTRA_TM_INFO(056, "Signal Beam"),
+    EXTRA_TM_INFO(057, "Supercell Slam"),
+    EXTRA_TM_INFO(058, "Psychic Fangs"),
+    EXTRA_TM_INFO(059, "Dragon Pulse"),
+    EXTRA_TM_INFO(060, "Drain Punch"),
+    EXTRA_TM_INFO(061, "Will-o-Wisp"),
+    EXTRA_TM_INFO(062, "Silver Wind"),
+    EXTRA_TM_INFO(063, "Dazzling Gleam"),
+    EXTRA_TM_INFO(064, "Seed Bomb"),
+    EXTRA_TM_INFO(065, "Shadow Claw"),
+    EXTRA_TM_INFO(066, "Payback"),
+    EXTRA_TM_INFO(067, "Power Gem"),
+    EXTRA_TM_INFO(068, "Giga Impact"),
+    EXTRA_TM_INFO(069, "Play Rough"),
+    EXTRA_TM_INFO(070, "Leech Life"),
+    EXTRA_TM_INFO(071, "Stone Edge"),
+    EXTRA_TM_INFO(072, "Icicle Crash"),
+    EXTRA_TM_INFO(073, "Thunder Wave"),
+    EXTRA_TM_INFO(074, "Nasty Plot"),
+    EXTRA_TM_INFO(075, "Swords Dance"),
+    EXTRA_TM_INFO(076, "Stealth Rock"),
+    EXTRA_TM_INFO(077, "Psych Up"),
+    EXTRA_TM_INFO(078, "Crunch"),
+    EXTRA_TM_INFO(079, "Dark Pulse"),
+    EXTRA_TM_INFO(080, "Rock Slide"),
+    EXTRA_TM_INFO(081, "X-Scissor"),
+    EXTRA_TM_INFO(082, "Night Slash"),
+    EXTRA_TM_INFO(083, "Iron Head"),
+    EXTRA_TM_INFO(084, "Poison Jab"),
+    EXTRA_TM_INFO(085, "Aura Sphere"),
+    EXTRA_TM_INFO(086, "Grass Knot"),
+    EXTRA_TM_INFO(087, "Bug Buzz"),
+    EXTRA_TM_INFO(088, "Acrobatics"),
+    EXTRA_TM_INFO(089, "U-turn"),
+    EXTRA_TM_INFO(090, "Body Slam"),
+    EXTRA_TM_INFO(091, "Flash Cannon"),
+    EXTRA_TM_INFO(092, "Trick Room"),
+    EXTRA_TM_INFO(093, "Liquidation"),
+    EXTRA_TM_INFO(094, "Thunder Punch"),
+    EXTRA_TM_INFO(095, "Fire Punch"),
+    EXTRA_TM_INFO(096, "Ice Punch"),
+    EXTRA_TM_INFO(097, "Earth Power"),
+    EXTRA_TM_INFO(098, "Air Slash"),
+    EXTRA_TM_INFO(099, "Body Press"),
+    EXTRA_TM_INFO(100, "Moonblast"),
 
     [ITEM_TM_CUT] =
     {
@@ -9638,13 +9396,6 @@ const struct ItemInfo gItemsInfo[] =
             "attacks next turn."),
     },
 
-#define EXTRA_TM_INFO(Number, Move)           \
-    [ITEM_TM##Number] =                       \
-    {                                         \
-        TM_INFO(#Number),                     \
-        .description = COMPOUND_STRING(Move), \
-    }
-
     EXTRA_TM_INFO(109, "Trick"),
     EXTRA_TM_INFO(110, "Blaze Kick"),
     EXTRA_TM_INFO(111, "Aqua Tail"),
@@ -9657,6 +9408,136 @@ const struct ItemInfo gItemsInfo[] =
     EXTRA_TM_INFO(118, "Heat Wave"),
     EXTRA_TM_INFO(119, "Disarming Voice"),
     EXTRA_TM_INFO(120, "Trailblaze"),
+    EXTRA_TM_INFO(121, "Heavy Slam"),
+    EXTRA_TM_INFO(122, "Encore"),
+    EXTRA_TM_INFO(123, "Drill Run"),
+    EXTRA_TM_INFO(124, "Ice Spinner"),
+    EXTRA_TM_INFO(125, "Acid Spray"),
+    EXTRA_TM_INFO(126, "Agility"),
+    EXTRA_TM_INFO(127, "Air Cutter"),
+    EXTRA_TM_INFO(128, "Amnesia"),
+    EXTRA_TM_INFO(129, "Avalanche"),
+    EXTRA_TM_INFO(130, "Helping Hand"),
+    EXTRA_TM_INFO(131, "Pollen Puff"),
+    EXTRA_TM_INFO(132, "Baton Pass"),
+    EXTRA_TM_INFO(133, "Bulldoze"),
+    EXTRA_TM_INFO(134, "Reversal"),
+    EXTRA_TM_INFO(135, "Charge Beam"),
+    EXTRA_TM_INFO(136, "Electric Terrain"),
+    EXTRA_TM_INFO(137, "Grassy Terrain"),
+    EXTRA_TM_INFO(138, "Psychic Terrain"),
+    EXTRA_TM_INFO(139, "Misty Terrain"),
+    EXTRA_TM_INFO(140, "Charm"),
+    EXTRA_TM_INFO(141, "Chilling Water"),
+    EXTRA_TM_INFO(142, "Hydro Pump"),
+    EXTRA_TM_INFO(143, "Confuse Ray"),
+    EXTRA_TM_INFO(144, "Fire Pledge"),
+    EXTRA_TM_INFO(145, "Water Pledge"),
+    EXTRA_TM_INFO(146, "Grass Pledge"),
+    EXTRA_TM_INFO(147, "Wild Charge"),
+    EXTRA_TM_INFO(148, "Dragon Tail"),
+    EXTRA_TM_INFO(149, "Draining Kiss"),
+    EXTRA_TM_INFO(150, "Eerie Impulse"),
+    EXTRA_TM_INFO(151, "Phantom Force"),
+    EXTRA_TM_INFO(152, "Electro Ball"),
+    EXTRA_TM_INFO(153, "Blast Burn"),
+    EXTRA_TM_INFO(154, "Hydro Cannon"),
+    EXTRA_TM_INFO(155, "Frenzy Plant"),
+    EXTRA_TM_INFO(156, "Outrage"),
+    EXTRA_TM_INFO(157, "Fake Tears"),
+    EXTRA_TM_INFO(158, "Fire Spin"),
+    EXTRA_TM_INFO(159, "Leaf Storm"),
+    EXTRA_TM_INFO(160, "Hurricane"),
+    EXTRA_TM_INFO(161, "Thunder Fang"),
+    EXTRA_TM_INFO(162, "Fire Fang"),
+    EXTRA_TM_INFO(163, "Ice Fang"),
+    EXTRA_TM_INFO(164, "Brave Bird"),
+    EXTRA_TM_INFO(165, "Flare Blitz"),
+    EXTRA_TM_INFO(166, "Flame Charge"),
+    EXTRA_TM_INFO(167, "Close Combat"),
+    EXTRA_TM_INFO(168, "Fling"),
+    EXTRA_TM_INFO(169, "Draco Meteor"),
+    EXTRA_TM_INFO(170, "Steel Beam"),
+    EXTRA_TM_INFO(171, "Foul Play"),
+    EXTRA_TM_INFO(172, "Gunk Shot"),
+    EXTRA_TM_INFO(173, "Charge"),
+    EXTRA_TM_INFO(174, "Haze"),
+    EXTRA_TM_INFO(175, "Hex"),
+    EXTRA_TM_INFO(176, "Sand Tomb"),
+    EXTRA_TM_INFO(177, "Spite"),
+    EXTRA_TM_INFO(178, "Gravity"),
+    EXTRA_TM_INFO(179, "Smack Down"),
+    EXTRA_TM_INFO(180, "Gyro Ball"),
+    EXTRA_TM_INFO(181, "Knock Off"),
+    EXTRA_TM_INFO(182, "Bug Bite"),
+    EXTRA_TM_INFO(183, "Super Fang"),
+    EXTRA_TM_INFO(184, "Vacuum Wave"),
+    EXTRA_TM_INFO(185, "Lunge"),
+    EXTRA_TM_INFO(186, "High Horsepower"),
+    EXTRA_TM_INFO(187, "Icicle Spear"),
+    EXTRA_TM_INFO(188, "Scald"),
+    EXTRA_TM_INFO(189, "Heat Crash"),
+    EXTRA_TM_INFO(190, "Solar Blade"),
+    EXTRA_TM_INFO(191, "Uproar"),
+    EXTRA_TM_INFO(192, "Metal Claw"),
+    EXTRA_TM_INFO(193, "Poison Tail"),
+    EXTRA_TM_INFO(194, "Grassy Glide"),
+    EXTRA_TM_INFO(195, "Burning Jealousy"),
+    EXTRA_TM_INFO(196, "Flip Turn"),
+    EXTRA_TM_INFO(197, "Dual Wingbeat"),
+    EXTRA_TM_INFO(198, "Poltergeist"),
+    EXTRA_TM_INFO(199, "Lash Out"),
+    EXTRA_TM_INFO(200, "Scale Shot"),
+    EXTRA_TM_INFO(201, "Misty Explosion"),
+    EXTRA_TM_INFO(202, "Pain Split"),
+    EXTRA_TM_INFO(203, "Night Shade"),
+    EXTRA_TM_INFO(204, "Smart Strike"),
+    EXTRA_TM_INFO(205, "Endeavor"),
+    EXTRA_TM_INFO(206, "Petal Blizzard"),
+    EXTRA_TM_INFO(207, "Temper Flare"),
+    EXTRA_TM_INFO(208, "Whirlpool"),
+    EXTRA_TM_INFO(209, "Muddy Water"),
+    EXTRA_TM_INFO(210, "Stomping Tantrum"),
+    EXTRA_TM_INFO(211, "Electroweb"),
+    EXTRA_TM_INFO(212, "Triple Axel"),
+    EXTRA_TM_INFO(213, "Coaching"),
+    EXTRA_TM_INFO(214, "Sludge Wave"),
+    EXTRA_TM_INFO(215, "Scorching Sands"),
+    EXTRA_TM_INFO(216, "Feather Dance"),
+    EXTRA_TM_INFO(217, "Future Sight"),
+    EXTRA_TM_INFO(218, "Expanding Force"),
+    EXTRA_TM_INFO(219, "Skitter Smack"),
+    EXTRA_TM_INFO(220, "Meteor Beam"),
+    EXTRA_TM_INFO(221, "Throat Chop"),
+    EXTRA_TM_INFO(222, "Breaking Swipe"),
+    EXTRA_TM_INFO(223, "Metal Sound"),
+    EXTRA_TM_INFO(224, "Curse"),
+    EXTRA_TM_INFO(225, "Hard Press"),
+    EXTRA_TM_INFO(226, "Dragon Cheer"),
+    EXTRA_TM_INFO(227, "Alluring Voice"),
+    EXTRA_TM_INFO(228, "Psychic Noise"),
+    EXTRA_TM_INFO(229, "Upper Hand"),
+    EXTRA_TM_INFO(230, "Zen Headbutt"),
+    EXTRA_TM_INFO(231, "Psycho Cut"),
+    EXTRA_TM_INFO(232, "Iron Defense"),
+    EXTRA_TM_INFO(233, "Dragon Dance"),
+    EXTRA_TM_INFO(234, "Icy Wind"),
+    EXTRA_TM_INFO(235, "Swift"),
+    EXTRA_TM_INFO(236, "Psyshock"),
+    EXTRA_TM_INFO(237, "Magical Leaf"),
+    EXTRA_TM_INFO(238, "Mud Shot"),
+    EXTRA_TM_INFO(239, "Spikes"),
+    EXTRA_TM_INFO(240, "Toxic Spikes"),
+    EXTRA_TM_INFO(241, "Venoshock"),
+    EXTRA_TM_INFO(242, "Volt Switch"),
+    EXTRA_TM_INFO(243, "Snarl"),
+    EXTRA_TM_INFO(244, "Weather Ball"),
+    EXTRA_TM_INFO(245, "Seismic Toss"),
+    EXTRA_TM_INFO(246, "Counter"),
+    EXTRA_TM_INFO(247, "Dream Eater"),
+    EXTRA_TM_INFO(248, "Pounce"),
+    EXTRA_TM_INFO(249, "Leaf Blade"),
+    EXTRA_TM_INFO(250, "Rising Voltage"),
 
 // Charms
 #define CHARM_INFO              \

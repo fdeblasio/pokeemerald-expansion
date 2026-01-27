@@ -44,21 +44,13 @@ BattleFrontier_Lounge7_EventScript_ChooseLeftTutorMove::
 	copyvar VAR_TEMP_FRONTIER_TUTOR_SELECTION, VAR_RESULT
 	setvar VAR_0x8008, 1
 	switch VAR_RESULT
-	case 0, BattleFrontier_Lounge7_EventScript_RisingVoltage
-	case 1, BattleFrontier_Lounge7_EventScript_GrassyGlide
-	case 2, BattleFrontier_Lounge7_EventScript_ExpandingForce
-	case 3, BattleFrontier_Lounge7_EventScript_ZenHeadbutt
-	case 4, BattleFrontier_Lounge7_EventScript_Scald
-	case 5, BattleFrontier_Lounge7_EventScript_PsychoCut
-	case 6, BattleFrontier_Lounge7_EventScript_Lunge
-	case 7, BattleFrontier_Lounge7_EventScript_ThroatChop
-	case 8, BattleFrontier_Lounge7_EventScript_SolarBlade
-	case 9, BattleFrontier_Lounge7_EventScript_DualWingbeat
-	case 10, BattleFrontier_Lounge7_EventScript_ScorchingSands
-	case 11, BattleFrontier_Lounge7_EventScript_KnockOff
-	case 12, BattleFrontier_Lounge7_EventScript_MegaPunch
-	case 13, BattleFrontier_Lounge7_EventScript_MegaKick
-	case 14, BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect
+	case 0, BattleFrontier_Lounge7_EventScript_MegaPunch
+	case 1, BattleFrontier_Lounge7_EventScript_MegaKick
+	case 2, BattleFrontier_Lounge7_EventScript_Endure
+	case 3, BattleFrontier_Lounge7_EventScript_MudSlap
+	case 4, BattleFrontier_Lounge7_EventScript_StoredPower
+	case 5, BattleFrontier_Lounge7_EventScript_Imprison
+	case 6, BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect
 	case MULTI_B_PRESSED, BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect
 	end
 
@@ -74,163 +66,57 @@ BattleFrontier_Lounge7_EventScript_ChooseRightTutorMove::
 	copyvar VAR_TEMP_FRONTIER_TUTOR_SELECTION, VAR_RESULT
 	setvar VAR_0x8008, 1
 	switch VAR_RESULT
-	case 0, BattleFrontier_Lounge7_EventScript_ElectricTerrain
-	case 1, BattleFrontier_Lounge7_EventScript_GrassyTerrain
-	case 2, BattleFrontier_Lounge7_EventScript_MistyTerrain
-	case 3, BattleFrontier_Lounge7_EventScript_PsychicTerrain
-	case 4, BattleFrontier_Lounge7_EventScript_IronDefense
-	case 5, BattleFrontier_Lounge7_EventScript_IceSpinner
-	case 6, BattleFrontier_Lounge7_EventScript_DragonDance
-	case 7, BattleFrontier_Lounge7_EventScript_DefenseCurl
-	case 8, BattleFrontier_Lounge7_EventScript_Endure
-	case 9, BattleFrontier_Lounge7_EventScript_IcyWind
-	case 10, BattleFrontier_Lounge7_EventScript_Swift
-	case 11, BattleFrontier_Lounge7_EventScript_SeismicToss
-	case 12, BattleFrontier_Lounge7_EventScript_Counter
-	case 13, BattleFrontier_Lounge7_EventScript_DreamEater
-	case 14, BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect
+	case 0, BattleFrontier_Lounge7_EventScript_LowKick
+	case 1, BattleFrontier_Lounge7_EventScript_LowSweep
+	case 2, BattleFrontier_Lounge7_EventScript_DefenseCurl
+	case 3, BattleFrontier_Lounge7_EventScript_RockBlast
+	case 4, BattleFrontier_Lounge7_EventScript_ScaryFace
+	case 5, BattleFrontier_Lounge7_EventScript_TakeDown
+	case 6, BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect
 	case MULTI_B_PRESSED, BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect
 	end
 
-BattleFrontier_Lounge7_EventScript_RisingVoltage::
-	setvar VAR_0x8005, MOVE_RISING_VOLTAGE
+	.macro battle_frontier_tutor move:req
+	setvar VAR_0x8005, \move
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
-
-BattleFrontier_Lounge7_EventScript_GrassyGlide::
-	setvar VAR_0x8005, MOVE_GRASSY_GLIDE
-	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
-	end
-
-BattleFrontier_Lounge7_EventScript_ExpandingForce::
-	setvar VAR_0x8005, MOVE_EXPANDING_FORCE
-	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
-	end
-
-BattleFrontier_Lounge7_EventScript_ZenHeadbutt::
-	setvar VAR_0x8005, MOVE_ZEN_HEADBUTT
-	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
-	end
-
-BattleFrontier_Lounge7_EventScript_Scald::
-	setvar VAR_0x8005, MOVE_SCALD
-	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
-	end
-
-BattleFrontier_Lounge7_EventScript_PsychoCut::
-	setvar VAR_0x8005, MOVE_PSYCHO_CUT
-	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
-	end
-
-BattleFrontier_Lounge7_EventScript_Lunge::
-	setvar VAR_0x8005, MOVE_LUNGE
-	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
-	end
-
-BattleFrontier_Lounge7_EventScript_ThroatChop::
-	setvar VAR_0x8005, MOVE_THROAT_CHOP
-	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
-	end
-
-BattleFrontier_Lounge7_EventScript_SolarBlade::
-	setvar VAR_0x8005, MOVE_SOLAR_BLADE
-	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
-	end
-
-BattleFrontier_Lounge7_EventScript_DualWingbeat::
-	setvar VAR_0x8005, MOVE_DUAL_WINGBEAT
-	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
-	end
-
-BattleFrontier_Lounge7_EventScript_ScorchingSands::
-	setvar VAR_0x8005, MOVE_SCORCHING_SANDS
-	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
-	end
-
-BattleFrontier_Lounge7_EventScript_KnockOff::
-	setvar VAR_0x8005, MOVE_KNOCK_OFF
-	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
-	end
+	.endm
 
 BattleFrontier_Lounge7_EventScript_MegaPunch::
-	setvar VAR_0x8005, MOVE_MEGA_PUNCH
-	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
-	end
+	battle_frontier_tutor MOVE_MEGA_PUNCH
 
 BattleFrontier_Lounge7_EventScript_MegaKick::
-	setvar VAR_0x8005, MOVE_MEGA_KICK
-	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
-	end
-
-BattleFrontier_Lounge7_EventScript_ElectricTerrain::
-	setvar VAR_0x8005, MOVE_ELECTRIC_TERRAIN
-	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
-	end
-
-BattleFrontier_Lounge7_EventScript_GrassyTerrain::
-	setvar VAR_0x8005, MOVE_GRASSY_TERRAIN
-	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
-	end
-
-BattleFrontier_Lounge7_EventScript_MistyTerrain::
-	setvar VAR_0x8005, MOVE_MISTY_TERRAIN
-	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
-	end
-
-BattleFrontier_Lounge7_EventScript_PsychicTerrain::
-	setvar VAR_0x8005, MOVE_PSYCHIC_TERRAIN
-	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
-	end
-
-BattleFrontier_Lounge7_EventScript_IronDefense::
-	setvar VAR_0x8005, MOVE_IRON_DEFENSE
-	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
-	end
-
-BattleFrontier_Lounge7_EventScript_IceSpinner::
-	setvar VAR_0x8005, MOVE_ICE_SPINNER
-	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
-	end
-
-BattleFrontier_Lounge7_EventScript_DragonDance::
-	setvar VAR_0x8005, MOVE_DRAGON_DANCE
-	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
-	end
-
-BattleFrontier_Lounge7_EventScript_DefenseCurl::
-	setvar VAR_0x8005, MOVE_DEFENSE_CURL
-	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
-	end
+	battle_frontier_tutor MOVE_MEGA_KICK
 
 BattleFrontier_Lounge7_EventScript_Endure::
-	setvar VAR_0x8005, MOVE_ENDURE
-	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
-	end
+	battle_frontier_tutor MOVE_ENDURE
 
-BattleFrontier_Lounge7_EventScript_IcyWind::
-	setvar VAR_0x8005, MOVE_ICY_WIND
-	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
-	end
+BattleFrontier_Lounge7_EventScript_MudSlap::
+	battle_frontier_tutor MOVE_MUD_SLAP
 
-BattleFrontier_Lounge7_EventScript_Swift::
-	setvar VAR_0x8005, MOVE_SWIFT
-	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
-	end
+BattleFrontier_Lounge7_EventScript_StoredPower::
+	battle_frontier_tutor MOVE_STORED_POWER
 
-BattleFrontier_Lounge7_EventScript_SeismicToss::
-	setvar VAR_0x8005, MOVE_SEISMIC_TOSS
-	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
-	end
+BattleFrontier_Lounge7_EventScript_Imprison::
+	battle_frontier_tutor MOVE_IMPRISON
 
-BattleFrontier_Lounge7_EventScript_Counter::
-	setvar VAR_0x8005, MOVE_COUNTER
-	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
-	end
+BattleFrontier_Lounge7_EventScript_LowKick::
+	battle_frontier_tutor MOVE_LOW_KICK
 
-BattleFrontier_Lounge7_EventScript_DreamEater::
-	setvar VAR_0x8005, MOVE_DREAM_EATER
-	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
-	end
+BattleFrontier_Lounge7_EventScript_LowSweep::
+	battle_frontier_tutor MOVE_LOW_SWEEP
+
+BattleFrontier_Lounge7_EventScript_DefenseCurl::
+	battle_frontier_tutor MOVE_DEFENSE_CURL
+
+BattleFrontier_Lounge7_EventScript_RockBlast::
+	battle_frontier_tutor MOVE_ROCK_BLAST
+
+BattleFrontier_Lounge7_EventScript_ScaryFace::
+	battle_frontier_tutor MOVE_SCARY_FACE
+
+BattleFrontier_Lounge7_EventScript_TakeDown::
+	battle_frontier_tutor MOVE_TAKE_DOWN
 
 BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect::
 	special CloseBattlePointsWindow

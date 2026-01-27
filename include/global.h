@@ -1187,7 +1187,7 @@ struct SaveBlock1
 #if FREE_MYSTERY_EVENT_BUFFERS == FALSE
     /*0x3???*/ struct RamScript ramScript;
 #else
-    /*0x????*/ u8 fillerX[772];
+    /*0x????*/ u8 fillerX[44];
 #endif //FREE_MYSTERY_EVENT_BUFFERS
     /*0x3???*/ struct RecordMixingGift recordMixingGift;
     /*0x3???*/ LilycoveLady lilycoveLady;

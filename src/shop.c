@@ -805,7 +805,7 @@ static void BuyMenuBuildListMenuTemplate(void)
 static void BuyMenuSetListEntry(struct ListMenuItem *menuItem, enum Item item, u8 *name)
 {
     if (sMartInfo.martType == MART_TYPE_NORMAL) {
-        if (GetItemPocket(item) == POCKET_TM_HM)
+        if (GetItemPocket(item) == POCKET_TM)
             StringCopy(name, GetMoveName(ItemIdToBattleMoveId(item)));
         else
             CopyItemName(item, name);
@@ -832,7 +832,7 @@ static void BuyMenuPrintItemDescriptionAndShowItemIcon(s32 item, bool8 onInit, s
     if (item != LIST_CANCEL)
     {
         if (sMartInfo.martType == MART_TYPE_NORMAL) {
-            //if (GetItemPocket(item) == POCKET_TM_HM)
+            //if (GetItemPocket(item) == POCKET_TM)
             //    description = GetMoveDescription(ItemIdToBattleMoveId(item));
             //else
                 description = GetItemDescription(item);

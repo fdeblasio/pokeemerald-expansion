@@ -601,10 +601,13 @@
 - Imprison
 
 #### Battle Frontier Right:
+- Poison Fang
 - Low Kick
 - Low Sweep
-- Defense Curl
+- Terrain Pulse
 - Rock Blast
+- Mystical Fire
+- Defense Curl
 - Scary Face
 - Take Down
 

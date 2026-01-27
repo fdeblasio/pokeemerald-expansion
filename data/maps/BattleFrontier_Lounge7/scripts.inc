@@ -44,13 +44,16 @@ BattleFrontier_Lounge7_EventScript_ChooseLeftTutorMove::
 	copyvar VAR_TEMP_FRONTIER_TUTOR_SELECTION, VAR_RESULT
 	setvar VAR_0x8008, 1
 	switch VAR_RESULT
-	case 0, BattleFrontier_Lounge7_EventScript_MegaPunch
-	case 1, BattleFrontier_Lounge7_EventScript_MegaKick
-	case 2, BattleFrontier_Lounge7_EventScript_Endure
-	case 3, BattleFrontier_Lounge7_EventScript_MudSlap
+	case 0, BattleFrontier_Lounge7_EventScript_DarkestLariat
+	case 1, BattleFrontier_Lounge7_EventScript_MegaPunch
+	case 2, BattleFrontier_Lounge7_EventScript_MegaKick
+	case 3, BattleFrontier_Lounge7_EventScript_DragonBreath
 	case 4, BattleFrontier_Lounge7_EventScript_StoredPower
-	case 5, BattleFrontier_Lounge7_EventScript_Imprison
-	case 6, BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect
+	case 5, BattleFrontier_Lounge7_EventScript_MudSlap
+	case 6, BattleFrontier_Lounge7_EventScript_Endure
+	case 7, BattleFrontier_Lounge7_EventScript_RockClimb
+	case 8, BattleFrontier_Lounge7_EventScript_Imprison
+	case 9, BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect
 	case MULTI_B_PRESSED, BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect
 	end
 
@@ -66,13 +69,16 @@ BattleFrontier_Lounge7_EventScript_ChooseRightTutorMove::
 	copyvar VAR_TEMP_FRONTIER_TUTOR_SELECTION, VAR_RESULT
 	setvar VAR_0x8008, 1
 	switch VAR_RESULT
-	case 0, BattleFrontier_Lounge7_EventScript_LowKick
-	case 1, BattleFrontier_Lounge7_EventScript_LowSweep
-	case 2, BattleFrontier_Lounge7_EventScript_DefenseCurl
-	case 3, BattleFrontier_Lounge7_EventScript_RockBlast
-	case 4, BattleFrontier_Lounge7_EventScript_ScaryFace
-	case 5, BattleFrontier_Lounge7_EventScript_TakeDown
-	case 6, BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect
+	case 0, BattleFrontier_Lounge7_EventScript_PoisonFang
+	case 1, BattleFrontier_Lounge7_EventScript_LowKick
+	case 2, BattleFrontier_Lounge7_EventScript_LowSweep
+	case 3, BattleFrontier_Lounge7_EventScript_TerrainPulse
+	case 4, BattleFrontier_Lounge7_EventScript_RockBlast
+	case 5, BattleFrontier_Lounge7_EventScript_MysticalFire
+	case 6, BattleFrontier_Lounge7_EventScript_DefenseCurl
+	case 7, BattleFrontier_Lounge7_EventScript_ScaryFace
+	case 8, BattleFrontier_Lounge7_EventScript_TakeDown
+	case 9, BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect
 	case MULTI_B_PRESSED, BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect
 	end
 
@@ -82,23 +88,35 @@ BattleFrontier_Lounge7_EventScript_ChooseRightTutorMove::
 	end
 	.endm
 
+BattleFrontier_Lounge7_EventScript_DarkestLariat::
+	battle_frontier_tutor MOVE_DARKEST_LARIAT
+
 BattleFrontier_Lounge7_EventScript_MegaPunch::
 	battle_frontier_tutor MOVE_MEGA_PUNCH
 
 BattleFrontier_Lounge7_EventScript_MegaKick::
 	battle_frontier_tutor MOVE_MEGA_KICK
 
-BattleFrontier_Lounge7_EventScript_Endure::
-	battle_frontier_tutor MOVE_ENDURE
-
-BattleFrontier_Lounge7_EventScript_MudSlap::
-	battle_frontier_tutor MOVE_MUD_SLAP
+BattleFrontier_Lounge7_EventScript_DragonBreath::
+	battle_frontier_tutor MOVE_DRAGON_BREATH
 
 BattleFrontier_Lounge7_EventScript_StoredPower::
 	battle_frontier_tutor MOVE_STORED_POWER
 
+BattleFrontier_Lounge7_EventScript_MudSlap::
+	battle_frontier_tutor MOVE_MUD_SLAP
+
+BattleFrontier_Lounge7_EventScript_Endure::
+	battle_frontier_tutor MOVE_ENDURE
+
+BattleFrontier_Lounge7_EventScript_RockClimb::
+	battle_frontier_tutor MOVE_ROCK_CLIMB
+
 BattleFrontier_Lounge7_EventScript_Imprison::
 	battle_frontier_tutor MOVE_IMPRISON
+
+BattleFrontier_Lounge7_EventScript_PoisonFang::
+	battle_frontier_tutor MOVE_POISON_FANG
 
 BattleFrontier_Lounge7_EventScript_LowKick::
 	battle_frontier_tutor MOVE_LOW_KICK
@@ -106,11 +124,17 @@ BattleFrontier_Lounge7_EventScript_LowKick::
 BattleFrontier_Lounge7_EventScript_LowSweep::
 	battle_frontier_tutor MOVE_LOW_SWEEP
 
-BattleFrontier_Lounge7_EventScript_DefenseCurl::
-	battle_frontier_tutor MOVE_DEFENSE_CURL
+BattleFrontier_Lounge7_EventScript_TerrainPulse::
+	battle_frontier_tutor MOVE_TERRAIN_PULSE
 
 BattleFrontier_Lounge7_EventScript_RockBlast::
 	battle_frontier_tutor MOVE_ROCK_BLAST
+
+BattleFrontier_Lounge7_EventScript_MysticalFire::
+	battle_frontier_tutor MOVE_MYSTICAL_FIRE
+
+BattleFrontier_Lounge7_EventScript_DefenseCurl::
+	battle_frontier_tutor MOVE_DEFENSE_CURL
 
 BattleFrontier_Lounge7_EventScript_ScaryFace::
 	battle_frontier_tutor MOVE_SCARY_FACE

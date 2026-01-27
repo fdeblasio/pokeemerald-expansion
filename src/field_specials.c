@@ -2432,7 +2432,7 @@ void ShowScrollableMultichoice(void)
     case SCROLL_MULTI_BF_MOVE_TUTOR_1:
     case SCROLL_MULTI_BF_MOVE_TUTOR_2:
         task->tMaxItemsOnScreen = MAX_SCROLL_MULTI_ON_SCREEN;
-        task->tNumItems = 7;
+        task->tNumItems = 10;
         task->tLeft = 15;
         task->tTop = 1;
         task->tWidth = 14;

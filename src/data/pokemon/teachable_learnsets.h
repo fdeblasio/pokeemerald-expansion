@@ -50,56 +50,6 @@
 // - MOVE_SKILL_SWAP                                   //
 // - MOVE_SNATCH                                       //
 // - MOVE_OVERHEAT                                     //
-// - MOVE_ROOST                                        //
-// - MOVE_FOCUS_BLAST                                  //
-// - MOVE_ENERGY_BALL                                  //
-// - MOVE_FALSE_SWIPE                                  //
-// - MOVE_BRINE                                        //
-// - MOVE_SIGNAL_BEAM                                  //
-// - MOVE_SUPERCELL_SLAM                               //
-// - MOVE_PSYCHIC_FANGS                                //
-// - MOVE_DRAGON_PULSE                                 //
-// - MOVE_DRAIN_PUNCH                                  //
-// - MOVE_WILL_O_WISP                                  //
-// - MOVE_SILVER_WIND                                  //
-// - MOVE_DAZZLING_GLEAM                               //
-// - MOVE_SEED_BOMB                                    //
-// - MOVE_SHADOW_CLAW                                  //
-// - MOVE_PAYBACK                                      //
-// - MOVE_POWER_GEM                                    //
-// - MOVE_GIGA_IMPACT                                  //
-// - MOVE_PLAY_ROUGH                                   //
-// - MOVE_LEECH_LIFE                                   //
-// - MOVE_STONE_EDGE                                   //
-// - MOVE_ICICLE_CRASH                                 //
-// - MOVE_THUNDER_WAVE                                 //
-// - MOVE_NASTY_PLOT                                   //
-// - MOVE_SWORDS_DANCE                                 //
-// - MOVE_STEALTH_ROCK                                 //
-// - MOVE_PSYCH_UP                                     //
-// - MOVE_CRUNCH                                       //
-// - MOVE_DARK_PULSE                                   //
-// - MOVE_ROCK_SLIDE                                   //
-// - MOVE_X_SCISSOR                                    //
-// - MOVE_NIGHT_SLASH                                  //
-// - MOVE_IRON_HEAD                                    //
-// - MOVE_POISON_JAB                                   //
-// - MOVE_AURA_SPHERE                                  //
-// - MOVE_GRASS_KNOT                                   //
-// - MOVE_BUG_BUZZ                                     //
-// - MOVE_ACROBATICS                                   //
-// - MOVE_U_TURN                                       //
-// - MOVE_BODY_SLAM                                    //
-// - MOVE_FLASH_CANNON                                 //
-// - MOVE_TRICK_ROOM                                   //
-// - MOVE_LIQUIDATION                                  //
-// - MOVE_THUNDER_PUNCH                                //
-// - MOVE_FIRE_PUNCH                                   //
-// - MOVE_ICE_PUNCH                                    //
-// - MOVE_EARTH_POWER                                  //
-// - MOVE_AIR_SLASH                                    //
-// - MOVE_BODY_PRESS                                   //
-// - MOVE_MOONBLAST                                    //
 // - MOVE_CUT                                          //
 // - MOVE_FLY                                          //
 // - MOVE_SURF                                         //
@@ -108,152 +58,204 @@
 // - MOVE_ROCK_SMASH                                   //
 // - MOVE_WATERFALL                                    //
 // - MOVE_DIVE                                         //
-// - MOVE_TRICK                                        //
-// - MOVE_BLAZE_KICK                                   //
-// - MOVE_AQUA_TAIL                                    //
-// - MOVE_ZING_ZAP                                     //
-// - MOVE_TAILWIND                                     //
-// - MOVE_SKY_UPPERCUT                                 //
-// - MOVE_STRUGGLE_BUG                                 //
-// - MOVE_PSYBEAM                                      //
-// - MOVE_HYPER_VOICE                                  //
-// - MOVE_HEAT_WAVE                                    //
-// - MOVE_DISARMING_VOICE                              //
-// - MOVE_TRAILBLAZE                                   //
-// - MOVE_HEAVY_SLAM                                   //
-// - MOVE_ENCORE                                       //
-// - MOVE_DRILL_RUN                                    //
-// - MOVE_ICE_SPINNER                                  //
+// - MOVE_FALSE_SWIPE                                  //
+// - MOVE_FIRE_SPIN                                    //
+// - MOVE_WHIRLPOOL                                    //
+// - MOVE_SAND_TOMB                                    //
 // - MOVE_ACID_SPRAY                                   //
-// - MOVE_AGILITY                                      //
-// - MOVE_AIR_CUTTER                                   //
-// - MOVE_AMNESIA                                      //
-// - MOVE_AVALANCHE                                    //
+// - MOVE_METAL_CLAW                                   //
+// - MOVE_SMACK_DOWN                                   //
+// - MOVE_FLAME_CHARGE                                 //
+// - MOVE_TRAILBLAZE                                   //
+// - MOVE_STRUGGLE_BUG                                 //
+// - MOVE_POUNCE                                       //
+// - MOVE_CHILLING_WATER                               //
+// - MOVE_PSYCH_UP                                     //
+// - MOVE_TRICK                                        //
+// - MOVE_ENCORE                                       //
+// - MOVE_HAZE                                         //
 // - MOVE_HELPING_HAND                                 //
-// - MOVE_POLLEN_PUFF                                  //
-// - MOVE_BATON_PASS                                   //
-// - MOVE_BULLDOZE                                     //
-// - MOVE_REVERSAL                                     //
 // - MOVE_CHARGE_BEAM                                  //
+// - MOVE_VACUUM_WAVE                                  //
+// - MOVE_ICICLE_SPEAR                                 //
+// - MOVE_POISON_TAIL                                  //
+// - MOVE_DRAINING_KISS                                //
+// - MOVE_ELECTROWEB                                   //
+// - MOVE_ICY_WIND                                     //
+// - MOVE_MUD_SHOT                                     //
+// - MOVE_SNARL                                        //
+// - MOVE_AIR_CUTTER                                   //
+// - MOVE_PSYBEAM                                      //
+// - MOVE_SILVER_WIND                                  //
+// - MOVE_BUG_BITE                                     //
+// - MOVE_BULLDOZE                                     //
+// - MOVE_BREAKING_SWIPE                               //
+// - MOVE_DRAGON_TAIL                                  //
+// - MOVE_SWIFT                                        //
+// - MOVE_MAGICAL_LEAF                                 //
+// - MOVE_DISARMING_VOICE                              //
+// - MOVE_THUNDER_FANG                                 //
+// - MOVE_FIRE_FANG                                    //
+// - MOVE_ICE_FANG                                     //
+// - MOVE_THUNDER_WAVE                                 //
+// - MOVE_WILL_O_WISP                                  //
+// - MOVE_CONFUSE_RAY                                  //
+// - MOVE_CHARGE                                       //
+// - MOVE_KNOCK_OFF                                    //
+// - MOVE_PAYBACK                                      //
+// - MOVE_AVALANCHE                                    //
+// - MOVE_BRINE                                        //
+// - MOVE_HEX                                          //
+// - MOVE_VENOSHOCK                                    //
+// - MOVE_U_TURN                                       //
+// - MOVE_VOLT_SWITCH                                  //
+// - MOVE_FLIP_TURN                                    //
+// - MOVE_HEAT_CRASH                                   //
+// - MOVE_HEAVY_SLAM                                   //
+// - MOVE_SEISMIC_TOSS                                 //
+// - MOVE_NIGHT_SHADE                                  //
+// - MOVE_REVERSAL                                     //
+// - MOVE_GRASS_KNOT                                   //
+// - MOVE_GYRO_BALL                                    //
+// - MOVE_ELECTRO_BALL                                 //
+// - MOVE_SUPER_FANG                                   //
+// - MOVE_FOUL_PLAY                                    //
+// - MOVE_COUNTER                                      //
+// - MOVE_ENDEAVOR                                     //
+// - MOVE_FLING                                        //
+// - MOVE_SWORDS_DANCE                                 //
+// - MOVE_NASTY_PLOT                                   //
+// - MOVE_IRON_DEFENSE                                 //
+// - MOVE_AMNESIA                                      //
+// - MOVE_AGILITY                                      //
+// - MOVE_DRAGON_DANCE                                 //
+// - MOVE_CHARM                                        //
+// - MOVE_FEATHER_DANCE                                //
+// - MOVE_EERIE_IMPULSE                                //
+// - MOVE_METAL_SOUND                                  //
+// - MOVE_FAKE_TEARS                                   //
+// - MOVE_COACHING                                     //
+// - MOVE_SPIKES                                       //
+// - MOVE_TOXIC_SPIKES                                 //
+// - MOVE_STEALTH_ROCK                                 //
+// - MOVE_BATON_PASS                                   //
+// - MOVE_TRICK_ROOM                                   //
+// - MOVE_PAIN_SPLIT                                   //
+// - MOVE_SPITE                                        //
+// - MOVE_GRAVITY                                      //
+// - MOVE_WEATHER_BALL                                 //
+// - MOVE_PSYCHO_CUT                                   //
+// - MOVE_SHADOW_CLAW                                  //
+// - MOVE_NIGHT_SLASH                                  //
+// - MOVE_SKITTER_SMACK                                //
+// - MOVE_GRASSY_GLIDE                                 //
+// - MOVE_RISING_VOLTAGE                               //
+// - MOVE_EXPANDING_FORCE                              //
+// - MOVE_SMART_STRIKE                                 //
+// - MOVE_SCORCHING_SANDS                              //
+// - MOVE_BURNING_JEALOUSY                             //
+// - MOVE_THUNDER_PUNCH                                //
+// - MOVE_FIRE_PUNCH                                   //
+// - MOVE_ICE_PUNCH                                    //
+// - MOVE_DRAIN_PUNCH                                  //
+// - MOVE_STOMPING_TANTRUM                             //
+// - MOVE_TEMPER_FLARE                                 //
+// - MOVE_LASH_OUT                                     //
+// - MOVE_PSYCHIC_NOISE                                //
+// - MOVE_SEED_BOMB                                    //
+// - MOVE_X_SCISSOR                                    //
+// - MOVE_SIGNAL_BEAM                                  //
+// - MOVE_ZEN_HEADBUTT                                 //
+// - MOVE_DRILL_RUN                                    //
+// - MOVE_DUAL_WINGBEAT                                //
+// - MOVE_ICE_SPINNER                                  //
+// - MOVE_DAZZLING_GLEAM                               //
+// - MOVE_ALLURING_VOICE                               //
+// - MOVE_MUDDY_WATER                                  //
+// - MOVE_UPROAR                                       //
+// - MOVE_SCALE_SHOT                                   //
+// - MOVE_UPPER_HAND                                   //
+// - MOVE_HARD_PRESS                                   //
+// - MOVE_ROOST                                        //
+// - MOVE_TAILWIND                                     //
+// - MOVE_CURSE                                        //
+// - MOVE_DRAGON_CHEER                                 //
+// - MOVE_BODY_SLAM                                    //
+// - MOVE_HYPER_VOICE                                  //
+// - MOVE_BLAZE_KICK                                   //
+// - MOVE_HEAT_WAVE                                    //
+// - MOVE_LIQUIDATION                                  //
+// - MOVE_AQUA_TAIL                                    //
+// - MOVE_SCALD                                        //
+// - MOVE_LEAF_BLADE                                   //
+// - MOVE_PETAL_BLIZZARD                               //
+// - MOVE_ENERGY_BALL                                  //
+// - MOVE_ZING_ZAP                                     //
+// - MOVE_ICICLE_CRASH                                 //
+// - MOVE_SKY_UPPERCUT                                 //
+// - MOVE_AURA_SPHERE                                  //
+// - MOVE_POISON_JAB                                   //
+// - MOVE_SLUDGE_WAVE                                  //
+// - MOVE_HIGH_HORSEPOWER                              //
+// - MOVE_EARTH_POWER                                  //
+// - MOVE_ACROBATICS                                   //
+// - MOVE_AIR_SLASH                                    //
+// - MOVE_PSYCHIC_FANGS                                //
+// - MOVE_PSYSHOCK                                     //
+// - MOVE_LEECH_LIFE                                   //
+// - MOVE_LUNGE                                        //
+// - MOVE_BUG_BUZZ                                     //
+// - MOVE_POLLEN_PUFF                                  //
+// - MOVE_ROCK_SLIDE                                   //
+// - MOVE_POWER_GEM                                    //
+// - MOVE_PHANTOM_FORCE                                //
+// - MOVE_DRAGON_PULSE                                 //
+// - MOVE_CRUNCH                                       //
+// - MOVE_THROAT_CHOP                                  //
+// - MOVE_DARK_PULSE                                   //
+// - MOVE_IRON_HEAD                                    //
+// - MOVE_FLASH_CANNON                                 //
+// - MOVE_PLAY_ROUGH                                   //
+// - MOVE_MOONBLAST                                    //
+// - MOVE_BODY_PRESS                                   //
+// - MOVE_FIRE_PLEDGE                                  //
+// - MOVE_WATER_PLEDGE                                 //
+// - MOVE_GRASS_PLEDGE                                 //
 // - MOVE_ELECTRIC_TERRAIN                             //
 // - MOVE_GRASSY_TERRAIN                               //
 // - MOVE_PSYCHIC_TERRAIN                              //
 // - MOVE_MISTY_TERRAIN                                //
-// - MOVE_CHARM                                        //
-// - MOVE_CHILLING_WATER                               //
+// - MOVE_GIGA_IMPACT                                  //
 // - MOVE_HYDRO_PUMP                                   //
-// - MOVE_CONFUSE_RAY                                  //
-// - MOVE_FIRE_PLEDGE                                  //
-// - MOVE_WATER_PLEDGE                                 //
-// - MOVE_GRASS_PLEDGE                                 //
-// - MOVE_WILD_CHARGE                                  //
-// - MOVE_DRAGON_TAIL                                  //
-// - MOVE_DRAINING_KISS                                //
-// - MOVE_EERIE_IMPULSE                                //
-// - MOVE_PHANTOM_FORCE                                //
-// - MOVE_ELECTRO_BALL                                 //
+// - MOVE_HURRICANE                                    //
+// - MOVE_GUNK_SHOT                                    //
+// - MOVE_FOCUS_BLAST                                  //
+// - MOVE_STONE_EDGE                                   //
 // - MOVE_BLAST_BURN                                   //
 // - MOVE_HYDRO_CANNON                                 //
 // - MOVE_FRENZY_PLANT                                 //
-// - MOVE_OUTRAGE                                      //
-// - MOVE_FAKE_TEARS                                   //
-// - MOVE_FIRE_SPIN                                    //
-// - MOVE_LEAF_STORM                                   //
-// - MOVE_HURRICANE                                    //
-// - MOVE_THUNDER_FANG                                 //
-// - MOVE_FIRE_FANG                                    //
-// - MOVE_ICE_FANG                                     //
-// - MOVE_BRAVE_BIRD                                   //
 // - MOVE_FLARE_BLITZ                                  //
-// - MOVE_FLAME_CHARGE                                 //
-// - MOVE_CLOSE_COMBAT                                 //
-// - MOVE_FLING                                        //
+// - MOVE_BRAVE_BIRD                                   //
+// - MOVE_WILD_CHARGE                                  //
+// - MOVE_LEAF_STORM                                   //
 // - MOVE_DRACO_METEOR                                 //
-// - MOVE_STEEL_BEAM                                   //
-// - MOVE_FOUL_PLAY                                    //
-// - MOVE_GUNK_SHOT                                    //
-// - MOVE_CHARGE                                       //
-// - MOVE_HAZE                                         //
-// - MOVE_HEX                                          //
-// - MOVE_SAND_TOMB                                    //
-// - MOVE_SPITE                                        //
-// - MOVE_GRAVITY                                      //
-// - MOVE_SMACK_DOWN                                   //
-// - MOVE_GYRO_BALL                                    //
-// - MOVE_KNOCK_OFF                                    //
-// - MOVE_BUG_BITE                                     //
-// - MOVE_SUPER_FANG                                   //
-// - MOVE_VACUUM_WAVE                                  //
-// - MOVE_LUNGE                                        //
-// - MOVE_HIGH_HORSEPOWER                              //
-// - MOVE_ICICLE_SPEAR                                 //
-// - MOVE_SCALD                                        //
-// - MOVE_HEAT_CRASH                                   //
+// - MOVE_CLOSE_COMBAT                                 //
 // - MOVE_SOLAR_BLADE                                  //
-// - MOVE_UPROAR                                       //
-// - MOVE_METAL_CLAW                                   //
-// - MOVE_POISON_TAIL                                  //
-// - MOVE_GRASSY_GLIDE                                 //
-// - MOVE_BURNING_JEALOUSY                             //
-// - MOVE_FLIP_TURN                                    //
-// - MOVE_DUAL_WINGBEAT                                //
-// - MOVE_POLTERGEIST                                  //
-// - MOVE_LASH_OUT                                     //
-// - MOVE_SCALE_SHOT                                   //
-// - MOVE_MISTY_EXPLOSION                              //
-// - MOVE_PAIN_SPLIT                                   //
-// - MOVE_NIGHT_SHADE                                  //
-// - MOVE_SMART_STRIKE                                 //
-// - MOVE_ENDEAVOR                                     //
-// - MOVE_PETAL_BLIZZARD                               //
-// - MOVE_TEMPER_FLARE                                 //
-// - MOVE_WHIRLPOOL                                    //
-// - MOVE_MUDDY_WATER                                  //
-// - MOVE_STOMPING_TANTRUM                             //
-// - MOVE_ELECTROWEB                                   //
-// - MOVE_TRIPLE_AXEL                                  //
-// - MOVE_COACHING                                     //
-// - MOVE_SLUDGE_WAVE                                  //
-// - MOVE_SCORCHING_SANDS                              //
-// - MOVE_FEATHER_DANCE                                //
+// - MOVE_OUTRAGE                                      //
 // - MOVE_FUTURE_SIGHT                                 //
-// - MOVE_EXPANDING_FORCE                              //
-// - MOVE_SKITTER_SMACK                                //
-// - MOVE_METEOR_BEAM                                  //
-// - MOVE_THROAT_CHOP                                  //
-// - MOVE_BREAKING_SWIPE                               //
-// - MOVE_METAL_SOUND                                  //
-// - MOVE_CURSE                                        //
-// - MOVE_HARD_PRESS                                   //
-// - MOVE_DRAGON_CHEER                                 //
-// - MOVE_ALLURING_VOICE                               //
-// - MOVE_PSYCHIC_NOISE                                //
-// - MOVE_UPPER_HAND                                   //
-// - MOVE_ZEN_HEADBUTT                                 //
-// - MOVE_PSYCHO_CUT                                   //
-// - MOVE_IRON_DEFENSE                                 //
-// - MOVE_DRAGON_DANCE                                 //
-// - MOVE_ICY_WIND                                     //
-// - MOVE_SWIFT                                        //
-// - MOVE_PSYSHOCK                                     //
-// - MOVE_MAGICAL_LEAF                                 //
-// - MOVE_MUD_SHOT                                     //
-// - MOVE_SPIKES                                       //
-// - MOVE_TOXIC_SPIKES                                 //
-// - MOVE_VENOSHOCK                                    //
-// - MOVE_VOLT_SWITCH                                  //
-// - MOVE_SNARL                                        //
-// - MOVE_WEATHER_BALL                                 //
-// - MOVE_SEISMIC_TOSS                                 //
-// - MOVE_COUNTER                                      //
 // - MOVE_DREAM_EATER                                  //
-// - MOVE_POUNCE                                       //
-// - MOVE_LEAF_BLADE                                   //
-// - MOVE_RISING_VOLTAGE                               //
+// - MOVE_MISTY_EXPLOSION                              //
+// - MOVE_METEOR_BEAM                                  //
+// - MOVE_STEEL_BEAM                                   //
+// - MOVE_TRIPLE_AXEL                                  //
+// - MOVE_POLTERGEIST                                  //
+// - MOVE_SUPERCELL_SLAM                               //
 // *************************************************** //
 // Tutor moves:                                        //
+// - MOVE_DARKEST_LARIAT                               //
 // - MOVE_DEFENSE_CURL                                 //
 // - MOVE_DOUBLE_EDGE                                  //
+// - MOVE_DRAGON_BREATH                                //
 // - MOVE_DYNAMIC_PUNCH                                //
 // - MOVE_ENDURE                                       //
 // - MOVE_EXPLOSION                                    //
@@ -266,7 +268,10 @@
 // - MOVE_METRONOME                                    //
 // - MOVE_MIMIC                                        //
 // - MOVE_MUD_SLAP                                     //
+// - MOVE_MYSTICAL_FIRE                                //
+// - MOVE_POISON_FANG                                  //
 // - MOVE_ROCK_BLAST                                   //
+// - MOVE_ROCK_CLIMB                                   //
 // - MOVE_ROLLOUT                                      //
 // - MOVE_SCARY_FACE                                   //
 // - MOVE_SLEEP_TALK                                   //
@@ -274,6 +279,7 @@
 // - MOVE_SUBSTITUTE                                   //
 // - MOVE_SWAGGER                                      //
 // - MOVE_TAKE_DOWN                                    //
+// - MOVE_TERRAIN_PULSE                                //
 // *************************************************** //
 // Near-universal moves found in sUniversalMoves:      //
 // - MOVE_BIDE                                         //
@@ -322,6 +328,7 @@ static const u16 sBulbasaurTeachableLearnset[] = {
     MOVE_LIGHT_SCREEN,
     MOVE_MAGICAL_LEAF,
     MOVE_MUD_SLAP,
+    MOVE_POISON_FANG,
     MOVE_PROTECT,
     MOVE_REST,
     MOVE_ROCK_SMASH,
@@ -371,6 +378,7 @@ static const u16 sIvysaurTeachableLearnset[] = {
     MOVE_LIGHT_SCREEN,
     MOVE_MAGICAL_LEAF,
     MOVE_MUD_SLAP,
+    MOVE_POISON_FANG,
     MOVE_PROTECT,
     MOVE_REST,
     MOVE_ROAR,
@@ -429,10 +437,12 @@ static const u16 sVenusaurTeachableLearnset[] = {
     MOVE_MUD_SLAP,
     MOVE_OUTRAGE,
     MOVE_PETAL_BLIZZARD,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_PROTECT,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SMASH,
     MOVE_SAFEGUARD,
     MOVE_SCARY_FACE,
@@ -446,6 +456,7 @@ static const u16 sVenusaurTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWORDS_DANCE,
     MOVE_TAKE_DOWN,
+    MOVE_TERRAIN_PULSE,
     MOVE_TOXIC,
     MOVE_TRAILBLAZE,
     MOVE_VENOSHOCK,
@@ -470,6 +481,7 @@ static const u16 sCharmanderTeachableLearnset[] = {
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
     MOVE_DRAGON_PULSE,
@@ -538,6 +550,7 @@ static const u16 sCharmeleonTeachableLearnset[] = {
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
     MOVE_DRAGON_PULSE,
@@ -610,6 +623,7 @@ static const u16 sCharizardTeachableLearnset[] = {
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
@@ -645,6 +659,7 @@ static const u16 sCharizardTeachableLearnset[] = {
     MOVE_MEGA_PUNCH,
     MOVE_METAL_CLAW,
     MOVE_MUD_SLAP,
+    MOVE_MYSTICAL_FIRE,
     MOVE_OUTRAGE,
     MOVE_OVERHEAT,
     MOVE_PROTECT,
@@ -862,6 +877,7 @@ static const u16 sBlastoiseTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -877,6 +893,7 @@ static const u16 sBlastoiseTeachableLearnset[] = {
     MOVE_SURF,
     MOVE_SWAGGER,
     MOVE_TAKE_DOWN,
+    MOVE_TERRAIN_PULSE,
     MOVE_TOXIC,
     MOVE_WATER_PLEDGE,
     MOVE_WATER_PULSE,
@@ -1400,6 +1417,7 @@ static const u16 sEkansTeachableLearnset[] = {
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_EARTHQUAKE,
     MOVE_ENDURE,
     MOVE_FACADE,
@@ -1414,6 +1432,7 @@ static const u16 sEkansTeachableLearnset[] = {
     MOVE_MUD_SHOT,
     MOVE_MUD_SLAP,
     MOVE_PAYBACK,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_POISON_TAIL,
     MOVE_PROTECT,
@@ -1457,6 +1476,7 @@ static const u16 sArbokTeachableLearnset[] = {
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_TAIL,
     MOVE_EARTHQUAKE,
     MOVE_ENDURE,
@@ -1476,6 +1496,7 @@ static const u16 sArbokTeachableLearnset[] = {
     MOVE_MUD_SLAP,
     MOVE_PAIN_SPLIT,
     MOVE_PAYBACK,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_POISON_TAIL,
     MOVE_PROTECT,
@@ -1827,6 +1848,7 @@ static const u16 sSandshrewTeachableLearnset[] = {
     MOVE_POISON_JAB,
     MOVE_PROTECT,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -1900,6 +1922,7 @@ static const u16 sSandslashTeachableLearnset[] = {
     MOVE_POISON_JAB,
     MOVE_PROTECT,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -2091,6 +2114,7 @@ static const u16 sNidoranFTeachableLearnset[] = {
     MOVE_ICE_BEAM,
     MOVE_IRON_TAIL,
     MOVE_MUD_SLAP,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_POISON_TAIL,
     MOVE_PROTECT,
@@ -2136,6 +2160,7 @@ static const u16 sNidorinaTeachableLearnset[] = {
     MOVE_ICE_BEAM,
     MOVE_IRON_TAIL,
     MOVE_MUD_SLAP,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_POISON_TAIL,
     MOVE_PROTECT,
@@ -2209,6 +2234,7 @@ static const u16 sNidoqueenTeachableLearnset[] = {
     MOVE_MUD_SHOT,
     MOVE_MUD_SLAP,
     MOVE_OUTRAGE,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_POISON_TAIL,
     MOVE_PROTECT,
@@ -2216,6 +2242,7 @@ static const u16 sNidoqueenTeachableLearnset[] = {
     MOVE_REST,
     MOVE_ROAR,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -2274,6 +2301,7 @@ static const u16 sNidoranMTeachableLearnset[] = {
     MOVE_ICE_BEAM,
     MOVE_IRON_TAIL,
     MOVE_MUD_SLAP,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_POISON_TAIL,
     MOVE_PROTECT,
@@ -2319,6 +2347,7 @@ static const u16 sNidorinoTeachableLearnset[] = {
     MOVE_ICE_BEAM,
     MOVE_IRON_TAIL,
     MOVE_MUD_SLAP,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_POISON_TAIL,
     MOVE_PROTECT,
@@ -2391,6 +2420,7 @@ static const u16 sNidokingTeachableLearnset[] = {
     MOVE_MUD_SHOT,
     MOVE_MUD_SLAP,
     MOVE_OUTRAGE,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_POISON_TAIL,
     MOVE_PROTECT,
@@ -2398,6 +2428,7 @@ static const u16 sNidokingTeachableLearnset[] = {
     MOVE_REST,
     MOVE_ROAR,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -2566,6 +2597,7 @@ static const u16 sClefairyTeachableLearnset[] = {
     MOVE_MISTY_TERRAIN,
     MOVE_MOONBLAST,
     MOVE_MUD_SLAP,
+    MOVE_MYSTICAL_FIRE,
     MOVE_NIGHT_SHADE,
     MOVE_PLAY_ROUGH,
     MOVE_PROTECT,
@@ -2667,6 +2699,7 @@ static const u16 sClefableTeachableLearnset[] = {
     MOVE_MISTY_TERRAIN,
     MOVE_MOONBLAST,
     MOVE_MUD_SLAP,
+    MOVE_MYSTICAL_FIRE,
     MOVE_NIGHT_SHADE,
     MOVE_PLAY_ROUGH,
     MOVE_PROTECT,
@@ -2737,6 +2770,7 @@ static const u16 sVulpixTeachableLearnset[] = {
     MOVE_HEX,
     MOVE_IMPRISON,
     MOVE_IRON_TAIL,
+    MOVE_MYSTICAL_FIRE,
     MOVE_NASTY_PLOT,
     MOVE_OVERHEAT,
     MOVE_PAIN_SPLIT,
@@ -2792,6 +2826,7 @@ static const u16 sNinetalesTeachableLearnset[] = {
     MOVE_HYPER_BEAM,
     MOVE_IMPRISON,
     MOVE_IRON_TAIL,
+    MOVE_MYSTICAL_FIRE,
     MOVE_NASTY_PLOT,
     MOVE_NIGHT_SHADE,
     MOVE_OVERHEAT,
@@ -3230,6 +3265,7 @@ static const u16 sZubatTeachableLearnset[] = {
     MOVE_LEECH_LIFE,
     MOVE_NASTY_PLOT,
     MOVE_PAYBACK,
+    MOVE_POISON_FANG,
     MOVE_PROTECT,
     MOVE_RAIN_DANCE,
     MOVE_REST,
@@ -3280,6 +3316,7 @@ static const u16 sGolbatTeachableLearnset[] = {
     MOVE_LEECH_LIFE,
     MOVE_NASTY_PLOT,
     MOVE_PAYBACK,
+    MOVE_POISON_FANG,
     MOVE_PROTECT,
     MOVE_RAIN_DANCE,
     MOVE_REST,
@@ -3334,6 +3371,7 @@ static const u16 sCrobatTeachableLearnset[] = {
     MOVE_LEECH_LIFE,
     MOVE_NASTY_PLOT,
     MOVE_PAYBACK,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_PROTECT,
     MOVE_RAIN_DANCE,
@@ -3661,6 +3699,7 @@ static const u16 sVenonatTeachableLearnset[] = {
     MOVE_LEECH_LIFE,
     MOVE_LUNGE,
     MOVE_NIGHT_SHADE,
+    MOVE_POISON_FANG,
     MOVE_POUNCE,
     MOVE_PROTECT,
     MOVE_PSYBEAM,
@@ -3711,6 +3750,7 @@ static const u16 sVenomothTeachableLearnset[] = {
     MOVE_LEECH_LIFE,
     MOVE_LUNGE,
     MOVE_NIGHT_SHADE,
+    MOVE_POISON_FANG,
     MOVE_POUNCE,
     MOVE_PROTECT,
     MOVE_PSYBEAM,
@@ -4512,6 +4552,7 @@ static const u16 sGolduckTeachableLearnset[] = {
     MOVE_PSYSHOCK,
     MOVE_RAIN_DANCE,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SMASH,
     MOVE_SCALD,
     MOVE_SEISMIC_TOSS,
@@ -4586,6 +4627,7 @@ static const u16 sMankeyTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_REVERSAL,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -4665,6 +4707,7 @@ static const u16 sPrimeapeTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_REVERSAL,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -4861,6 +4904,7 @@ static const u16 sArcanineTeachableLearnset[] = {
     MOVE_REST,
     MOVE_REVERSAL,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SMASH,
     MOVE_SAFEGUARD,
     MOVE_SCARY_FACE,
@@ -5109,6 +5153,7 @@ static const u16 sPoliwrathTeachableLearnset[] = {
     MOVE_CLOSE_COMBAT,
     MOVE_COACHING,
     MOVE_COUNTER,
+    MOVE_DARKEST_LARIAT,
     MOVE_DEFENSE_CURL,
     MOVE_DIG,
     MOVE_DIVE,
@@ -5152,6 +5197,7 @@ static const u16 sPoliwrathTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_REVERSAL,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -5491,6 +5537,7 @@ static const u16 sMachopTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_REVERSAL,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -5548,6 +5595,7 @@ static const u16 sMachokeTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_REVERSAL,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -5574,6 +5622,7 @@ static const u16 sMachampTeachableLearnset[] = {
     MOVE_CLOSE_COMBAT,
     MOVE_COACHING,
     MOVE_COUNTER,
+    MOVE_DARKEST_LARIAT,
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
@@ -5610,6 +5659,7 @@ static const u16 sMachampTeachableLearnset[] = {
     MOVE_REST,
     MOVE_REVERSAL,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -5744,6 +5794,7 @@ static const u16 sVictreebelTeachableLearnset[] = {
     MOVE_LEECH_LIFE,
     MOVE_LUNGE,
     MOVE_MAGICAL_LEAF,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_POUNCE,
     MOVE_PROTECT,
@@ -5915,6 +5966,7 @@ static const u16 sGeodudeTeachableLearnset[] = {
     MOVE_PROTECT,
     MOVE_REST,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -5973,6 +6025,7 @@ static const u16 sGravelerTeachableLearnset[] = {
     MOVE_PROTECT,
     MOVE_REST,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -6036,6 +6089,7 @@ static const u16 sGolemTeachableLearnset[] = {
     MOVE_REST,
     MOVE_ROAR,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -6090,6 +6144,7 @@ static const u16 sGeodudeAlolaTeachableLearnset[] = {
     MOVE_PROTECT,
     MOVE_REST,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_TOMB,
     MOVE_ROLLOUT,
@@ -6148,6 +6203,7 @@ static const u16 sGravelerAlolaTeachableLearnset[] = {
     MOVE_PROTECT,
     MOVE_REST,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_TOMB,
     MOVE_ROLLOUT,
@@ -6215,6 +6271,7 @@ static const u16 sGolemAlolaTeachableLearnset[] = {
     MOVE_REST,
     MOVE_ROAR,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_TOMB,
     MOVE_SANDSTORM,
@@ -6262,6 +6319,7 @@ static const u16 sPonytaTeachableLearnset[] = {
     MOVE_HIGH_HORSEPOWER,
     MOVE_IRON_TAIL,
     MOVE_LOW_KICK,
+    MOVE_MYSTICAL_FIRE,
     MOVE_OVERHEAT,
     MOVE_PLAY_ROUGH,
     MOVE_PROTECT,
@@ -6304,6 +6362,7 @@ static const u16 sRapidashTeachableLearnset[] = {
     MOVE_HYPER_BEAM,
     MOVE_IRON_TAIL,
     MOVE_LOW_KICK,
+    MOVE_MYSTICAL_FIRE,
     MOVE_OVERHEAT,
     MOVE_PLAY_ROUGH,
     MOVE_POISON_JAB,
@@ -6344,6 +6403,7 @@ static const u16 sPonytaGalarTeachableLearnset[] = {
     MOVE_IMPRISON,
     MOVE_IRON_TAIL,
     MOVE_LOW_KICK,
+    MOVE_MYSTICAL_FIRE,
     MOVE_PLAY_ROUGH,
     MOVE_PROTECT,
     MOVE_PSYBEAM,
@@ -6379,6 +6439,7 @@ static const u16 sRapidashGalarTeachableLearnset[] = {
     MOVE_IRON_TAIL,
     MOVE_LOW_KICK,
     MOVE_MISTY_TERRAIN,
+    MOVE_MYSTICAL_FIRE,
     MOVE_PLAY_ROUGH,
     MOVE_PROTECT,
     MOVE_PSYBEAM,
@@ -7556,6 +7617,7 @@ static const u16 sGrimerAlolaTeachableLearnset[] = {
     MOVE_MUD_SLAP,
     MOVE_PAIN_SPLIT,
     MOVE_PAYBACK,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_PROTECT,
     MOVE_RAIN_DANCE,
@@ -7624,6 +7686,7 @@ static const u16 sMukAlolaTeachableLearnset[] = {
     MOVE_MUD_SLAP,
     MOVE_PAIN_SPLIT,
     MOVE_PAYBACK,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_PROTECT,
     MOVE_RAIN_DANCE,
@@ -7979,6 +8042,7 @@ static const u16 sOnixTeachableLearnset[] = {
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_DANCE,
     MOVE_DRAGON_PULSE,
     MOVE_DRAGON_TAIL,
@@ -8003,6 +8067,7 @@ static const u16 sOnixTeachableLearnset[] = {
     MOVE_REST,
     MOVE_ROAR,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -8041,6 +8106,7 @@ static const u16 sSteelixTeachableLearnset[] = {
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_DANCE,
     MOVE_DRAGON_PULSE,
     MOVE_DRAGON_TAIL,
@@ -8071,6 +8137,7 @@ static const u16 sSteelixTeachableLearnset[] = {
     MOVE_REST,
     MOVE_ROAR,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -8761,6 +8828,7 @@ static const u16 sCuboneTeachableLearnset[] = {
     MOVE_MUD_SLAP,
     MOVE_PROTECT,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -8823,6 +8891,7 @@ static const u16 sMarowakTeachableLearnset[] = {
     MOVE_OUTRAGE,
     MOVE_PROTECT,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -9001,6 +9070,7 @@ static const u16 sHitmonleeTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_REVERSAL,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -9065,6 +9135,7 @@ static const u16 sHitmonchanTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_REVERSAL,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -9193,6 +9264,7 @@ static const u16 sLickitungTeachableLearnset[] = {
     MOVE_PSYCH_UP,
     MOVE_RAIN_DANCE,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -9210,6 +9282,7 @@ static const u16 sLickitungTeachableLearnset[] = {
     MOVE_SURF,
     MOVE_SWAGGER,
     MOVE_SWORDS_DANCE,
+    MOVE_TERRAIN_PULSE,
     MOVE_THIEF,
     MOVE_THUNDER,
     MOVE_THUNDER_PUNCH,
@@ -9265,6 +9338,7 @@ static const u16 sLickilickyTeachableLearnset[] = {
     MOVE_PSYCH_UP,
     MOVE_RAIN_DANCE,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -9281,6 +9355,7 @@ static const u16 sLickilickyTeachableLearnset[] = {
     MOVE_SURF,
     MOVE_SWAGGER,
     MOVE_SWORDS_DANCE,
+    MOVE_TERRAIN_PULSE,
     MOVE_THIEF,
     MOVE_THUNDER,
     MOVE_THUNDER_PUNCH,
@@ -9482,6 +9557,7 @@ static const u16 sRhyhornTeachableLearnset[] = {
     MOVE_REVERSAL,
     MOVE_ROAR,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -9573,6 +9649,7 @@ static const u16 sRhydonTeachableLearnset[] = {
     MOVE_REVERSAL,
     MOVE_ROAR,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -9671,6 +9748,7 @@ static const u16 sRhyperiorTeachableLearnset[] = {
     MOVE_REVERSAL,
     MOVE_ROAR,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -9809,6 +9887,7 @@ static const u16 sChanseyTeachableLearnset[] = {
     MOVE_PSYCHIC,
     MOVE_RAIN_DANCE,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -9899,6 +9978,7 @@ static const u16 sBlisseyTeachableLearnset[] = {
     MOVE_PSYCHIC,
     MOVE_RAIN_DANCE,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -10082,6 +10162,7 @@ static const u16 sKangaskhanTeachableLearnset[] = {
     MOVE_REST,
     MOVE_REVERSAL,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -10099,6 +10180,7 @@ static const u16 sKangaskhanTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SURF,
     MOVE_SWAGGER,
+    MOVE_TERRAIN_PULSE,
     MOVE_THIEF,
     MOVE_THUNDER,
     MOVE_THUNDER_PUNCH,
@@ -10121,6 +10203,7 @@ static const u16 sHorseaTeachableLearnset[] = {
     MOVE_DIVE,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_DANCE,
     MOVE_DRAGON_PULSE,
     MOVE_ENDURE,
@@ -10161,6 +10244,7 @@ static const u16 sSeadraTeachableLearnset[] = {
     MOVE_DIVE,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_DANCE,
     MOVE_DRAGON_PULSE,
     MOVE_ENDURE,
@@ -10208,6 +10292,7 @@ static const u16 sKingdraTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_DANCE,
     MOVE_DRAGON_PULSE,
     MOVE_ENDURE,
@@ -10549,6 +10634,7 @@ static const u16 sMrMimeTeachableLearnset[] = {
     MOVE_METRONOME,
     MOVE_MISTY_TERRAIN,
     MOVE_MUD_SLAP,
+    MOVE_MYSTICAL_FIRE,
     MOVE_NASTY_PLOT,
     MOVE_PAYBACK,
     MOVE_PROTECT,
@@ -11148,6 +11234,7 @@ static const u16 sElectabuzzTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_RISING_VOLTAGE,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SMASH,
     MOVE_SEISMIC_TOSS,
     MOVE_SHOCK_WAVE,
@@ -11181,6 +11268,7 @@ static const u16 sElectivireTeachableLearnset[] = {
     MOVE_BULLDOZE,
     MOVE_CHARGE,
     MOVE_CHARGE_BEAM,
+    MOVE_DARKEST_LARIAT,
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
@@ -11218,6 +11306,7 @@ static const u16 sElectivireTeachableLearnset[] = {
     MOVE_REFLECT,
     MOVE_REST,
     MOVE_RISING_VOLTAGE,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -11344,6 +11433,7 @@ static const u16 sMagmarTeachableLearnset[] = {
     MOVE_PSYCHIC,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SMASH,
     MOVE_SCARY_FACE,
     MOVE_SCORCHING_SANDS,
@@ -11401,12 +11491,14 @@ static const u16 sMagmortarTeachableLearnset[] = {
     MOVE_MEGA_KICK,
     MOVE_MEGA_PUNCH,
     MOVE_METRONOME,
+    MOVE_MYSTICAL_FIRE,
     MOVE_OVERHEAT,
     MOVE_POISON_JAB,
     MOVE_PROTECT,
     MOVE_PSYCHIC,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -11466,6 +11558,7 @@ static const u16 sPinsirTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_REVERSAL,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -11518,6 +11611,7 @@ static const u16 sTaurosTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_REVERSAL,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -11696,6 +11790,7 @@ static const u16 sTaurosPaldeaAquaTeachableLearnset[] = {
 
 #if P_FAMILY_MAGIKARP
 static const u16 sMagikarpTeachableLearnset[] = {
+    MOVE_DRAGON_BREATH,
     MOVE_HYDRO_PUMP,
     MOVE_UNAVAILABLE,
 };
@@ -11714,6 +11809,7 @@ static const u16 sGyaradosTeachableLearnset[] = {
     MOVE_DIVE,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_DANCE,
     MOVE_DRAGON_PULSE,
@@ -12031,6 +12127,7 @@ static const u16 sFlareonTeachableLearnset[] = {
     MOVE_HYPER_VOICE,
     MOVE_IRON_TAIL,
     MOVE_MUD_SLAP,
+    MOVE_MYSTICAL_FIRE,
     MOVE_OVERHEAT,
     MOVE_PROTECT,
     MOVE_RAIN_DANCE,
@@ -12324,6 +12421,7 @@ static const u16 sSylveonTeachableLearnset[] = {
     MOVE_MISTY_TERRAIN,
     MOVE_MOONBLAST,
     MOVE_MUD_SLAP,
+    MOVE_MYSTICAL_FIRE,
     MOVE_PLAY_ROUGH,
     MOVE_PROTECT,
     MOVE_PSYCH_UP,
@@ -12590,6 +12688,7 @@ static const u16 sOmastarTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -12706,6 +12805,7 @@ static const u16 sKabutopsTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -12744,6 +12844,7 @@ static const u16 sAerodactylTeachableLearnset[] = {
     MOVE_CURSE,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
     MOVE_DRAGON_PULSE,
@@ -12840,6 +12941,7 @@ static const u16 sMunchlaxTeachableLearnset[] = {
     MOVE_PSYCHIC,
     MOVE_RAIN_DANCE,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -12883,6 +12985,7 @@ static const u16 sSnorlaxTeachableLearnset[] = {
     MOVE_COUNTER,
     MOVE_CRUNCH,
     MOVE_CURSE,
+    MOVE_DARKEST_LARIAT,
     MOVE_DEFENSE_CURL,
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,
@@ -12922,6 +13025,7 @@ static const u16 sSnorlaxTeachableLearnset[] = {
     MOVE_PSYCHIC,
     MOVE_RAIN_DANCE,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -12942,6 +13046,7 @@ static const u16 sSnorlaxTeachableLearnset[] = {
     MOVE_SURF,
     MOVE_SWAGGER,
     MOVE_TAKE_DOWN,
+    MOVE_TERRAIN_PULSE,
     MOVE_THUNDER,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDERBOLT,
@@ -13193,6 +13298,7 @@ static const u16 sMoltresTeachableLearnset[] = {
     MOVE_HURRICANE,
     MOVE_HYPER_BEAM,
     MOVE_MUD_SLAP,
+    MOVE_MYSTICAL_FIRE,
     MOVE_OVERHEAT,
     MOVE_PROTECT,
     MOVE_RAIN_DANCE,
@@ -13279,6 +13385,7 @@ static const u16 sDratiniTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_DANCE,
     MOVE_DRAGON_PULSE,
@@ -13333,6 +13440,7 @@ static const u16 sDragonairTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_DANCE,
     MOVE_DRAGON_PULSE,
@@ -13397,6 +13505,7 @@ static const u16 sDragoniteTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
@@ -13554,6 +13663,7 @@ static const u16 sMewtwoTeachableLearnset[] = {
     MOVE_REFLECT,
     MOVE_REST,
     MOVE_REVERSAL,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -13639,6 +13749,7 @@ static const u16 sMewTeachableLearnset[] = {
     MOVE_CURSE,
     MOVE_CUT,
     MOVE_DARK_PULSE,
+    MOVE_DARKEST_LARIAT,
     MOVE_DAZZLING_GLEAM,
     MOVE_DEFENSE_CURL,
     MOVE_DIG,
@@ -13647,6 +13758,7 @@ static const u16 sMewTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
@@ -13749,6 +13861,7 @@ static const u16 sMewTeachableLearnset[] = {
     MOVE_MUD_SHOT,
     MOVE_MUD_SLAP,
     MOVE_MUDDY_WATER,
+    MOVE_MYSTICAL_FIRE,
     MOVE_NASTY_PLOT,
     MOVE_NIGHT_SHADE,
     MOVE_NIGHT_SLASH,
@@ -13759,6 +13872,7 @@ static const u16 sMewTeachableLearnset[] = {
     MOVE_PETAL_BLIZZARD,
     MOVE_PHANTOM_FORCE,
     MOVE_PLAY_ROUGH,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_POISON_TAIL,
     MOVE_POLLEN_PUFF,
@@ -13781,6 +13895,7 @@ static const u16 sMewTeachableLearnset[] = {
     MOVE_RISING_VOLTAGE,
     MOVE_ROAR,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -13834,6 +13949,7 @@ static const u16 sMewTeachableLearnset[] = {
     MOVE_TAKE_DOWN,
     MOVE_TAUNT,
     MOVE_TEMPER_FLARE,
+    MOVE_TERRAIN_PULSE,
     MOVE_THIEF,
     MOVE_THROAT_CHOP,
     MOVE_THUNDER,
@@ -14006,6 +14122,7 @@ static const u16 sMeganiumTeachableLearnset[] = {
     MOVE_PROTECT,
     MOVE_REFLECT,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SMASH,
     MOVE_SAFEGUARD,
     MOVE_SEED_BOMB,
@@ -14167,6 +14284,7 @@ static const u16 sTyphlosionTeachableLearnset[] = {
     MOVE_REST,
     MOVE_REVERSAL,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -14456,6 +14574,7 @@ static const u16 sFeraligatrTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -14938,6 +15057,7 @@ static const u16 sSpinarakTeachableLearnset[] = {
     MOVE_LUNGE,
     MOVE_NIGHT_SHADE,
     MOVE_NIGHT_SLASH,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_POUNCE,
     MOVE_PROTECT,
@@ -14989,6 +15109,7 @@ static const u16 sAriadosTeachableLearnset[] = {
     MOVE_LUNGE,
     MOVE_NIGHT_SHADE,
     MOVE_NIGHT_SLASH,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_POUNCE,
     MOVE_PROTECT,
@@ -15163,6 +15284,7 @@ static const u16 sTogepiTeachableLearnset[] = {
     MOVE_MEGA_PUNCH,
     MOVE_METRONOME,
     MOVE_MUD_SLAP,
+    MOVE_MYSTICAL_FIRE,
     MOVE_NASTY_PLOT,
     MOVE_PLAY_ROUGH,
     MOVE_PROTECT,
@@ -15236,6 +15358,7 @@ static const u16 sTogeticTeachableLearnset[] = {
     MOVE_MEGA_PUNCH,
     MOVE_METRONOME,
     MOVE_MUD_SLAP,
+    MOVE_MYSTICAL_FIRE,
     MOVE_NASTY_PLOT,
     MOVE_PLAY_ROUGH,
     MOVE_PROTECT,
@@ -15314,6 +15437,7 @@ static const u16 sTogekissTeachableLearnset[] = {
     MOVE_MEGA_KICK,
     MOVE_MEGA_PUNCH,
     MOVE_METRONOME,
+    MOVE_MYSTICAL_FIRE,
     MOVE_NASTY_PLOT,
     MOVE_PLAY_ROUGH,
     MOVE_PROTECT,
@@ -15626,6 +15750,7 @@ static const u16 sAmpharosTeachableLearnset[] = {
     MOVE_REFLECT,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SMASH,
     MOVE_SAFEGUARD,
     MOVE_SEISMIC_TOSS,
@@ -16949,6 +17074,7 @@ static const u16 sMismagiusTeachableLearnset[] = {
     MOVE_IMPRISON,
     MOVE_LASH_OUT,
     MOVE_MAGICAL_LEAF,
+    MOVE_MYSTICAL_FIRE,
     MOVE_NASTY_PLOT,
     MOVE_NIGHT_SHADE,
     MOVE_PAIN_SPLIT,
@@ -17373,6 +17499,7 @@ static const u16 sDunsparceTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_TAKE_DOWN,
+    MOVE_TERRAIN_PULSE,
     MOVE_THIEF,
     MOVE_THUNDER,
     MOVE_THUNDER_WAVE,
@@ -17515,6 +17642,7 @@ static const u16 sGligarTeachableLearnset[] = {
     MOVE_PSYCHIC_FANGS,
     MOVE_RAIN_DANCE,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -17599,6 +17727,7 @@ static const u16 sGliscorTeachableLearnset[] = {
     MOVE_PSYCHIC_FANGS,
     MOVE_RAIN_DANCE,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -17776,6 +17905,7 @@ static const u16 sGranbullTeachableLearnset[] = {
     MOVE_REST,
     MOVE_REVERSAL,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -18521,6 +18651,7 @@ static const u16 sUrsaringTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -18947,6 +19078,7 @@ static const u16 sMamoswineTeachableLearnset[] = {
     MOVE_REVERSAL,
     MOVE_ROAR,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -19984,6 +20116,7 @@ static const u16 sRaikouTeachableLearnset[] = {
     MOVE_REST,
     MOVE_RISING_VOLTAGE,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SMASH,
     MOVE_SANDSTORM,
     MOVE_SCALD,
@@ -20049,6 +20182,7 @@ static const u16 sEnteiTeachableLearnset[] = {
     MOVE_REST,
     MOVE_REVERSAL,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SMASH,
     MOVE_SANDSTORM,
     MOVE_SCARY_FACE,
@@ -20109,6 +20243,7 @@ static const u16 sSuicuneTeachableLearnset[] = {
     MOVE_REFLECT,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SMASH,
     MOVE_SANDSTORM,
     MOVE_SCALD,
@@ -20312,6 +20447,7 @@ static const u16 sTyranitarTeachableLearnset[] = {
     MOVE_REST,
     MOVE_ROAR,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -20475,6 +20611,7 @@ static const u16 sHoOhTeachableLearnset[] = {
     MOVE_IRON_HEAD,
     MOVE_LIGHT_SCREEN,
     MOVE_MUD_SLAP,
+    MOVE_MYSTICAL_FIRE,
     MOVE_OVERHEAT,
     MOVE_PROTECT,
     MOVE_PSYCH_UP,
@@ -20602,6 +20739,7 @@ static const u16 sTreeckoTeachableLearnset[] = {
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_TAIL,
     MOVE_DRAIN_PUNCH,
     MOVE_DYNAMIC_PUNCH,
@@ -20666,6 +20804,7 @@ static const u16 sGrovyleTeachableLearnset[] = {
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_TAIL,
     MOVE_DRAIN_PUNCH,
     MOVE_DYNAMIC_PUNCH,
@@ -20737,6 +20876,7 @@ static const u16 sSceptileTeachableLearnset[] = {
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
@@ -20778,6 +20918,7 @@ static const u16 sSceptileTeachableLearnset[] = {
     MOVE_PROTECT,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -20983,6 +21124,7 @@ static const u16 sBlazikenTeachableLearnset[] = {
     MOVE_REST,
     MOVE_REVERSAL,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -21146,6 +21288,7 @@ static const u16 sSwampertTeachableLearnset[] = {
     MOVE_CHILLING_WATER,
     MOVE_COUNTER,
     MOVE_CURSE,
+    MOVE_DARKEST_LARIAT,
     MOVE_DEFENSE_CURL,
     MOVE_DIG,
     MOVE_DIVE,
@@ -21186,6 +21329,7 @@ static const u16 sSwampertTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -21241,6 +21385,7 @@ static const u16 sPoochyenaTeachableLearnset[] = {
     MOVE_NASTY_PLOT,
     MOVE_PAYBACK,
     MOVE_PLAY_ROUGH,
+    MOVE_POISON_FANG,
     MOVE_PROTECT,
     MOVE_PSYCH_UP,
     MOVE_PSYCHIC_FANGS,
@@ -21294,6 +21439,7 @@ static const u16 sMightyenaTeachableLearnset[] = {
     MOVE_NASTY_PLOT,
     MOVE_PAYBACK,
     MOVE_PLAY_ROUGH,
+    MOVE_POISON_FANG,
     MOVE_PROTECT,
     MOVE_PSYCH_UP,
     MOVE_PSYCHIC_FANGS,
@@ -21352,6 +21498,7 @@ static const u16 sZigzagoonTeachableLearnset[] = {
     MOVE_PROTECT,
     MOVE_RAIN_DANCE,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SMASH,
     MOVE_ROLLOUT,
     MOVE_SEED_BOMB,
@@ -21406,6 +21553,7 @@ static const u16 sLinooneTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SMASH,
     MOVE_ROLLOUT,
     MOVE_SEED_BOMB,
@@ -21538,6 +21686,7 @@ static const u16 sObstagoonTeachableLearnset[] = {
     MOVE_BULK_UP,
     MOVE_CLOSE_COMBAT,
     MOVE_COUNTER,
+    MOVE_DARKEST_LARIAT,
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,
     MOVE_ENDURE,
@@ -21857,6 +22006,7 @@ static const u16 sLudicoloTeachableLearnset[] = {
     MOVE_PROTECT,
     MOVE_RAIN_DANCE,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SMASH,
     MOVE_SCALD,
     MOVE_SEED_BOMB,
@@ -22323,6 +22473,7 @@ static const u16 sRaltsTeachableLearnset[] = {
     MOVE_METRONOME,
     MOVE_MISTY_TERRAIN,
     MOVE_MUD_SLAP,
+    MOVE_MYSTICAL_FIRE,
     MOVE_PAIN_SPLIT,
     MOVE_PROTECT,
     MOVE_PSYBEAM,
@@ -22396,6 +22547,7 @@ static const u16 sKirliaTeachableLearnset[] = {
     MOVE_METRONOME,
     MOVE_MISTY_TERRAIN,
     MOVE_MUD_SLAP,
+    MOVE_MYSTICAL_FIRE,
     MOVE_PAIN_SPLIT,
     MOVE_PROTECT,
     MOVE_PSYBEAM,
@@ -22477,6 +22629,7 @@ static const u16 sGardevoirTeachableLearnset[] = {
     MOVE_MISTY_TERRAIN,
     MOVE_MOONBLAST,
     MOVE_MUD_SLAP,
+    MOVE_MYSTICAL_FIRE,
     MOVE_NIGHT_SHADE,
     MOVE_PAIN_SPLIT,
     MOVE_PROTECT,
@@ -22574,6 +22727,7 @@ static const u16 sGalladeTeachableLearnset[] = {
     MOVE_MEGA_PUNCH,
     MOVE_METRONOME,
     MOVE_MISTY_TERRAIN,
+    MOVE_MYSTICAL_FIRE,
     MOVE_NIGHT_SHADE,
     MOVE_NIGHT_SLASH,
     MOVE_PAIN_SPLIT,
@@ -22991,6 +23145,7 @@ static const u16 sVigorothTeachableLearnset[] = {
     MOVE_REST,
     MOVE_REVERSAL,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -23086,6 +23241,7 @@ static const u16 sSlakingTeachableLearnset[] = {
     MOVE_REST,
     MOVE_REVERSAL,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -23411,6 +23567,7 @@ static const u16 sExploudTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -23428,6 +23585,7 @@ static const u16 sExploudTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_TAKE_DOWN,
     MOVE_TAUNT,
+    MOVE_TERRAIN_PULSE,
     MOVE_THUNDER_FANG,
     MOVE_THUNDER_PUNCH,
     MOVE_TORMENT,
@@ -23480,6 +23638,7 @@ static const u16 sMakuhitaTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_REVERSAL,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -23550,6 +23709,7 @@ static const u16 sHariyamaTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_REVERSAL,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -23955,6 +24115,7 @@ static const u16 sMawileTeachableLearnset[] = {
     MOVE_PAIN_SPLIT,
     MOVE_PAYBACK,
     MOVE_PLAY_ROUGH,
+    MOVE_POISON_FANG,
     MOVE_PROTECT,
     MOVE_PSYCH_UP,
     MOVE_PSYCHIC_FANGS,
@@ -24157,6 +24318,7 @@ static const u16 sAggronTeachableLearnset[] = {
     MOVE_REVERSAL,
     MOVE_ROAR,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -24987,6 +25149,7 @@ static const u16 sCarvanhaTeachableLearnset[] = {
     MOVE_LIQUIDATION,
     MOVE_MUD_SLAP,
     MOVE_PAYBACK,
+    MOVE_POISON_FANG,
     MOVE_PROTECT,
     MOVE_PSYCHIC_FANGS,
     MOVE_RAIN_DANCE,
@@ -25043,6 +25206,7 @@ static const u16 sSharpedoTeachableLearnset[] = {
     MOVE_MUD_SLAP,
     MOVE_NIGHT_SLASH,
     MOVE_PAYBACK,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_PROTECT,
     MOVE_PSYCHIC_FANGS,
@@ -25597,6 +25761,7 @@ static const u16 sTrapinchTeachableLearnset[] = {
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_EARTH_POWER,
     MOVE_EARTHQUAKE,
     MOVE_ENDURE,
@@ -25643,6 +25808,7 @@ static const u16 sVibravaTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_PULSE,
     MOVE_DRAGON_TAIL,
@@ -25706,6 +25872,7 @@ static const u16 sFlygonTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
@@ -25925,6 +26092,7 @@ static const u16 sSwabluTeachableLearnset[] = {
     MOVE_DISARMING_VOICE,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_PULSE,
     MOVE_DREAM_EATER,
@@ -25983,6 +26151,7 @@ static const u16 sAltariaTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
@@ -26094,6 +26263,7 @@ static const u16 sZangooseTeachableLearnset[] = {
     MOVE_REST,
     MOVE_REVERSAL,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -26143,6 +26313,7 @@ static const u16 sSeviperTeachableLearnset[] = {
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_TAIL,
     MOVE_EARTHQUAKE,
     MOVE_ENDEAVOR,
@@ -26165,6 +26336,7 @@ static const u16 sSeviperTeachableLearnset[] = {
     MOVE_MUD_SLAP,
     MOVE_NIGHT_SLASH,
     MOVE_PAYBACK,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_POISON_TAIL,
     MOVE_POUNCE,
@@ -26927,6 +27099,7 @@ static const u16 sFeebasTeachableLearnset[] = {
     MOVE_DIVE,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_PULSE,
     MOVE_ENDURE,
     MOVE_FACADE,
@@ -26971,6 +27144,7 @@ static const u16 sMiloticTeachableLearnset[] = {
     MOVE_DIVE,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_DANCE,
     MOVE_DRAGON_PULSE,
@@ -27040,6 +27214,7 @@ static const u16 sCastformTeachableLearnset[] = {
     MOVE_HYDRO_PUMP,
     MOVE_ICE_BEAM,
     MOVE_ICY_WIND,
+    MOVE_LIQUIDATION,
     MOVE_OVERHEAT,
     MOVE_PROTECT,
     MOVE_PSYCH_UP,
@@ -27414,6 +27589,7 @@ static const u16 sDusknoirTeachableLearnset[] = {
     MOVE_CONFUSE_RAY,
     MOVE_CURSE,
     MOVE_DARK_PULSE,
+    MOVE_DARKEST_LARIAT,
     MOVE_DOUBLE_TEAM,
     MOVE_DRAIN_PUNCH,
     MOVE_DREAM_EATER,
@@ -28111,6 +28287,7 @@ static const u16 sHuntailTeachableLearnset[] = {
     MOVE_ICE_FANG,
     MOVE_ICY_WIND,
     MOVE_IRON_DEFENSE,
+    MOVE_LIQUIDATION,
     MOVE_MUD_SLAP,
     MOVE_MUDDY_WATER,
     MOVE_PROTECT,
@@ -28291,6 +28468,7 @@ static const u16 sBagonTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
@@ -28341,6 +28519,7 @@ static const u16 sShelgonTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
@@ -28397,6 +28576,7 @@ static const u16 sSalamenceTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
@@ -28655,6 +28835,7 @@ static const u16 sRegirockTeachableLearnset[] = {
     MOVE_PSYCH_UP,
     MOVE_REST,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -28723,6 +28904,7 @@ static const u16 sRegiceTeachableLearnset[] = {
     MOVE_PSYCH_UP,
     MOVE_RAIN_DANCE,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -28787,6 +28969,7 @@ static const u16 sRegisteelTeachableLearnset[] = {
     MOVE_PSYCH_UP,
     MOVE_RAIN_DANCE,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -28837,6 +29020,7 @@ static const u16 sLatiasTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
@@ -28861,6 +29045,7 @@ static const u16 sLatiasTeachableLearnset[] = {
     MOVE_LIGHT_SCREEN,
     MOVE_LIQUIDATION,
     MOVE_MUD_SLAP,
+    MOVE_MYSTICAL_FIRE,
     MOVE_OUTRAGE,
     MOVE_PROTECT,
     MOVE_PSYBEAM,
@@ -28923,6 +29108,7 @@ static const u16 sLatiosTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
@@ -28947,6 +29133,7 @@ static const u16 sLatiosTeachableLearnset[] = {
     MOVE_LIGHT_SCREEN,
     MOVE_LIQUIDATION,
     MOVE_MUD_SLAP,
+    MOVE_MYSTICAL_FIRE,
     MOVE_OUTRAGE,
     MOVE_PROTECT,
     MOVE_PSYBEAM,
@@ -29102,6 +29289,7 @@ static const u16 sGroudonTeachableLearnset[] = {
     MOVE_REST,
     MOVE_ROAR,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -29701,6 +29889,7 @@ static const u16 sTurtwigTeachableLearnset[] = {
     MOVE_REFLECT,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SMASH,
     MOVE_SAFEGUARD,
     MOVE_SAND_TOMB,
@@ -29753,6 +29942,7 @@ static const u16 sGrotleTeachableLearnset[] = {
     MOVE_REFLECT,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SMASH,
     MOVE_SAFEGUARD,
     MOVE_SAND_TOMB,
@@ -29816,6 +30006,7 @@ static const u16 sTorterraTeachableLearnset[] = {
     MOVE_REST,
     MOVE_ROAR,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -29888,6 +30079,7 @@ static const u16 sChimcharTeachableLearnset[] = {
     MOVE_PROTECT,
     MOVE_PSYCH_UP,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -29963,6 +30155,7 @@ static const u16 sMonfernoTeachableLearnset[] = {
     MOVE_PSYCH_UP,
     MOVE_REST,
     MOVE_REVERSAL,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -30050,6 +30243,7 @@ static const u16 sInfernapeTeachableLearnset[] = {
     MOVE_REST,
     MOVE_REVERSAL,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -30243,6 +30437,7 @@ static const u16 sEmpoleonTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -30417,6 +30612,7 @@ static const u16 sBidoofTeachableLearnset[] = {
     MOVE_PROTECT,
     MOVE_RAIN_DANCE,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SMASH,
     MOVE_ROLLOUT,
     MOVE_SHADOW_BALL,
@@ -30466,6 +30662,7 @@ static const u16 sBibarelTeachableLearnset[] = {
     MOVE_PROTECT,
     MOVE_RAIN_DANCE,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SMASH,
     MOVE_ROLLOUT,
     MOVE_SCALD,
@@ -30750,6 +30947,7 @@ static const u16 sCranidosTeachableLearnset[] = {
     MOVE_REST,
     MOVE_ROAR,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -30823,6 +31021,7 @@ static const u16 sRampardosTeachableLearnset[] = {
     MOVE_REST,
     MOVE_ROAR,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -32025,6 +32224,7 @@ static const u16 sStunkyTeachableLearnset[] = {
     MOVE_NIGHT_SLASH,
     MOVE_PAYBACK,
     MOVE_PLAY_ROUGH,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_POISON_TAIL,
     MOVE_PROTECT,
@@ -32088,6 +32288,7 @@ static const u16 sSkuntankTeachableLearnset[] = {
     MOVE_NIGHT_SLASH,
     MOVE_PAYBACK,
     MOVE_PLAY_ROUGH,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_POISON_TAIL,
     MOVE_PROTECT,
@@ -32365,6 +32566,7 @@ static const u16 sGibleTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_PULSE,
@@ -32387,6 +32589,7 @@ static const u16 sGibleTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -32423,6 +32626,7 @@ static const u16 sGabiteTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_PULSE,
@@ -32446,6 +32650,7 @@ static const u16 sGabiteTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -32484,6 +32689,7 @@ static const u16 sGarchompTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_PULSE,
@@ -32512,6 +32718,7 @@ static const u16 sGarchompTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -32651,6 +32858,7 @@ static const u16 sLucarioTeachableLearnset[] = {
     MOVE_REST,
     MOVE_REVERSAL,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -32667,6 +32875,7 @@ static const u16 sLucarioTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
     MOVE_TAKE_DOWN,
+    MOVE_TERRAIN_PULSE,
     MOVE_THUNDER_PUNCH,
     MOVE_TOXIC,
     MOVE_TRAILBLAZE,
@@ -32804,6 +33013,7 @@ static const u16 sSkorupiTeachableLearnset[] = {
     MOVE_KNOCK_OFF,
     MOVE_NIGHT_SLASH,
     MOVE_PAYBACK,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_POISON_TAIL,
     MOVE_PROTECT,
@@ -32862,12 +33072,14 @@ static const u16 sDrapionTeachableLearnset[] = {
     MOVE_LEECH_LIFE,
     MOVE_NIGHT_SLASH,
     MOVE_PAYBACK,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_POISON_TAIL,
     MOVE_PROTECT,
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -32940,6 +33152,7 @@ static const u16 sCroagunkTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_REVERSAL,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -33015,6 +33228,7 @@ static const u16 sToxicroakTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_REVERSAL,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -33282,6 +33496,7 @@ static const u16 sAbomasnowTeachableLearnset[] = {
     MOVE_PROTECT,
     MOVE_RAIN_DANCE,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -33598,6 +33813,7 @@ static const u16 sDialgaTeachableLearnset[] = {
     MOVE_CUT,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_PULSE,
     MOVE_DRAGON_TAIL,
@@ -33677,6 +33893,7 @@ static const u16 sPalkiaTeachableLearnset[] = {
     MOVE_DIVE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_PULSE,
     MOVE_DRAGON_TAIL,
@@ -33782,6 +33999,7 @@ static const u16 sHeatranTeachableLearnset[] = {
     MOVE_REST,
     MOVE_ROAR,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -33816,6 +34034,7 @@ static const u16 sRegigigasTeachableLearnset[] = {
     MOVE_BRICK_BREAK,
     MOVE_BULLDOZE,
     MOVE_CONFUSE_RAY,
+    MOVE_DARKEST_LARIAT,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRAIN_PUNCH,
@@ -33845,6 +34064,7 @@ static const u16 sRegigigasTeachableLearnset[] = {
     MOVE_PSYCH_UP,
     MOVE_RAIN_DANCE,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -33857,6 +34077,7 @@ static const u16 sRegigigasTeachableLearnset[] = {
     MOVE_STRENGTH,
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
+    MOVE_TERRAIN_PULSE,
     MOVE_THUNDER,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
@@ -33883,6 +34104,7 @@ static const u16 sGiratinaTeachableLearnset[] = {
     MOVE_DARK_PULSE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_PULSE,
     MOVE_DRAGON_TAIL,
@@ -33913,6 +34135,7 @@ static const u16 sGiratinaTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SMASH,
     MOVE_SAFEGUARD,
     MOVE_SCARY_FACE,
@@ -34144,6 +34367,7 @@ static const u16 sDarkraiTeachableLearnset[] = {
     MOVE_PSYSHOCK,
     MOVE_RAIN_DANCE,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -34355,6 +34579,7 @@ static const u16 sArceusTeachableLearnset[] = {
     MOVE_REFLECT,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_SMASH,
     MOVE_ROCK_TOMB,
@@ -34435,6 +34660,7 @@ static const u16 sVictiniTeachableLearnset[] = {
     MOVE_LIGHT_SCREEN,
     MOVE_MEGA_KICK,
     MOVE_MEGA_PUNCH,
+    MOVE_MYSTICAL_FIRE,
     MOVE_OVERHEAT,
     MOVE_PROTECT,
     MOVE_PSYCH_UP,
@@ -36229,6 +36455,7 @@ static const u16 sDrilburTeachableLearnset[] = {
     MOVE_POISON_JAB,
     MOVE_PROTECT,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_TOMB,
     MOVE_SAND_TOMB,
@@ -36279,6 +36506,7 @@ static const u16 sExcadrillTeachableLearnset[] = {
     MOVE_PROTECT,
     MOVE_REST,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_TOMB,
     MOVE_SAND_TOMB,
@@ -36933,6 +37161,7 @@ static const u16 sVenipedeTeachableLearnset[] = {
     MOVE_POISON_TAIL,
     MOVE_PROTECT,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROLLOUT,
     MOVE_SIGNAL_BEAM,
     MOVE_SKITTER_SMACK,
@@ -36968,6 +37197,7 @@ static const u16 sWhirlipedeTeachableLearnset[] = {
     MOVE_POISON_TAIL,
     MOVE_PROTECT,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROLLOUT,
     MOVE_SIGNAL_BEAM,
     MOVE_SKITTER_SMACK,
@@ -37012,6 +37242,7 @@ static const u16 sScolipedeTeachableLearnset[] = {
     MOVE_POISON_TAIL,
     MOVE_PROTECT,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_TOMB,
     MOVE_ROLLOUT,
@@ -37404,6 +37635,7 @@ static const u16 sSandileTeachableLearnset[] = {
     MOVE_PROTECT,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_TOMB,
     MOVE_SAND_TOMB,
@@ -37473,6 +37705,7 @@ static const u16 sKrokorokTeachableLearnset[] = {
     MOVE_PROTECT,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_TOMB,
     MOVE_SAND_TOMB,
@@ -37515,6 +37748,7 @@ static const u16 sKrookodileTeachableLearnset[] = {
     MOVE_CRUNCH,
     MOVE_CURSE,
     MOVE_DARK_PULSE,
+    MOVE_DARKEST_LARIAT,
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
@@ -37551,6 +37785,7 @@ static const u16 sKrookodileTeachableLearnset[] = {
     MOVE_PROTECT,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_TOMB,
     MOVE_SAND_TOMB,
@@ -37663,6 +37898,7 @@ static const u16 sDarmanitanTeachableLearnset[] = {
     MOVE_IRON_HEAD,
     MOVE_MEGA_KICK,
     MOVE_MEGA_PUNCH,
+    MOVE_MYSTICAL_FIRE,
     MOVE_OVERHEAT,
     MOVE_PAYBACK,
     MOVE_PROTECT,
@@ -37909,6 +38145,7 @@ static const u16 sScraggyTeachableLearnset[] = {
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
     MOVE_DRAGON_PULSE,
@@ -37942,6 +38179,7 @@ static const u16 sScraggyTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_TOMB,
     MOVE_SCARY_FACE,
@@ -37985,6 +38223,7 @@ static const u16 sScraftyTeachableLearnset[] = {
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
     MOVE_DRAGON_PULSE,
@@ -38023,6 +38262,7 @@ static const u16 sScraftyTeachableLearnset[] = {
     MOVE_REST,
     MOVE_REVERSAL,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_TOMB,
     MOVE_SCARY_FACE,
@@ -38411,6 +38651,7 @@ static const u16 sArchenTeachableLearnset[] = {
     MOVE_CRUNCH,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_PULSE,
     MOVE_DUAL_WINGBEAT,
@@ -38463,6 +38704,7 @@ static const u16 sArcheopsTeachableLearnset[] = {
     MOVE_CRUNCH,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_PULSE,
     MOVE_DRAGON_TAIL,
@@ -38528,6 +38770,7 @@ static const u16 sTrubbishTeachableLearnset[] = {
     MOVE_HAZE,
     MOVE_PAIN_SPLIT,
     MOVE_PAYBACK,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_PROTECT,
     MOVE_RAIN_DANCE,
@@ -38573,6 +38816,7 @@ static const u16 sGarbodorTeachableLearnset[] = {
     MOVE_METAL_CLAW,
     MOVE_PAIN_SPLIT,
     MOVE_PAYBACK,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_PROTECT,
     MOVE_PSYCHIC,
@@ -40000,6 +40244,7 @@ static const u16 sJoltikTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_RISING_VOLTAGE,
+    MOVE_ROCK_CLIMB,
     MOVE_SHOCK_WAVE,
     MOVE_SIGNAL_BEAM,
     MOVE_SKITTER_SMACK,
@@ -40045,6 +40290,7 @@ static const u16 sGalvantulaTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_RISING_VOLTAGE,
+    MOVE_ROCK_CLIMB,
     MOVE_SHOCK_WAVE,
     MOVE_SIGNAL_BEAM,
     MOVE_SKITTER_SMACK,
@@ -40089,6 +40335,7 @@ static const u16 sFerroseedTeachableLearnset[] = {
     MOVE_POISON_JAB,
     MOVE_PROTECT,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROLLOUT,
     MOVE_SEED_BOMB,
     MOVE_SLEEP_TALK,
@@ -40134,6 +40381,7 @@ static const u16 sFerrothornTeachableLearnset[] = {
     MOVE_POISON_JAB,
     MOVE_PROTECT,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROLLOUT,
     MOVE_SANDSTORM,
     MOVE_SEED_BOMB,
@@ -40512,6 +40760,7 @@ static const u16 sLitwickTeachableLearnset[] = {
     MOVE_HEAT_WAVE,
     MOVE_HEX,
     MOVE_IMPRISON,
+    MOVE_MYSTICAL_FIRE,
     MOVE_NIGHT_SHADE,
     MOVE_OVERHEAT,
     MOVE_PAIN_SPLIT,
@@ -40562,6 +40811,7 @@ static const u16 sLampentTeachableLearnset[] = {
     MOVE_HEX,
     MOVE_IMPRISON,
     MOVE_LASH_OUT,
+    MOVE_MYSTICAL_FIRE,
     MOVE_NIGHT_SHADE,
     MOVE_OVERHEAT,
     MOVE_PAIN_SPLIT,
@@ -40614,6 +40864,7 @@ static const u16 sChandelureTeachableLearnset[] = {
     MOVE_HYPER_BEAM,
     MOVE_IMPRISON,
     MOVE_LASH_OUT,
+    MOVE_MYSTICAL_FIRE,
     MOVE_NIGHT_SHADE,
     MOVE_OVERHEAT,
     MOVE_PAIN_SPLIT,
@@ -40658,6 +40909,7 @@ static const u16 sAxewTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
@@ -40714,6 +40966,7 @@ static const u16 sFraxureTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
@@ -40773,6 +41026,7 @@ static const u16 sHaxorusTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
@@ -41164,6 +41418,7 @@ static const u16 sStunfiskGalarTeachableLearnset[] = {
     MOVE_STEEL_BEAM,
     MOVE_STONE_EDGE,
     MOVE_SURF,
+    MOVE_TERRAIN_PULSE,
     MOVE_UPROAR,
     MOVE_UNAVAILABLE,
 };
@@ -41299,6 +41554,7 @@ static const u16 sDruddigonTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_PULSE,
     MOVE_DRAGON_TAIL,
@@ -41329,6 +41585,7 @@ static const u16 sDruddigonTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_TOMB,
     MOVE_SCALE_SHOT,
@@ -41433,6 +41690,7 @@ static const u16 sGolurkTeachableLearnset[] = {
     MOVE_CLOSE_COMBAT,
     MOVE_CONFUSE_RAY,
     MOVE_CURSE,
+    MOVE_DARKEST_LARIAT,
     MOVE_DEFENSE_CURL,
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,
@@ -41703,6 +41961,7 @@ static const u16 sBouffalantTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_REVERSAL,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_TOMB,
     MOVE_SCARY_FACE,
@@ -42060,6 +42319,7 @@ static const u16 sDurantTeachableLearnset[] = {
     MOVE_METAL_SOUND,
     MOVE_PROTECT,
     MOVE_REST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_TOMB,
     MOVE_SANDSTORM,
@@ -42088,6 +42348,7 @@ static const u16 sDeinoTeachableLearnset[] = {
     MOVE_DARK_PULSE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_PULSE,
     MOVE_DRAGON_TAIL,
@@ -42131,6 +42392,7 @@ static const u16 sZweilousTeachableLearnset[] = {
     MOVE_DARK_PULSE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_PULSE,
     MOVE_DRAGON_TAIL,
@@ -42181,6 +42443,7 @@ static const u16 sHydreigonTeachableLearnset[] = {
     MOVE_DARK_PULSE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_DANCE,
     MOVE_DRAGON_PULSE,
@@ -42324,6 +42587,7 @@ static const u16 sVolcaronaTeachableLearnset[] = {
     MOVE_LEECH_LIFE,
     MOVE_LIGHT_SCREEN,
     MOVE_LUNGE,
+    MOVE_MYSTICAL_FIRE,
     MOVE_OVERHEAT,
     MOVE_POISON_JAB,
     MOVE_POUNCE,
@@ -42663,6 +42927,7 @@ static const u16 sReshiramTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
@@ -42689,6 +42954,7 @@ static const u16 sReshiramTeachableLearnset[] = {
     MOVE_HYPER_VOICE,
     MOVE_IMPRISON,
     MOVE_LIGHT_SCREEN,
+    MOVE_MYSTICAL_FIRE,
     MOVE_OUTRAGE,
     MOVE_OVERHEAT,
     MOVE_PAYBACK,
@@ -42736,6 +43002,7 @@ static const u16 sZekromTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
@@ -42873,6 +43140,7 @@ static const u16 sKyuremTeachableLearnset[] = {
     MOVE_BREAKING_SWIPE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
@@ -43495,6 +43763,7 @@ static const u16 sDelphoxTeachableLearnset[] = {
     MOVE_METRONOME,
     MOVE_MUD_SHOT,
     MOVE_MUD_SLAP,
+    MOVE_MYSTICAL_FIRE,
     MOVE_NASTY_PLOT,
     MOVE_NIGHT_SHADE,
     MOVE_OVERHEAT,
@@ -44327,6 +44596,7 @@ static const u16 sSkiddoTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROLLOUT,
     MOVE_SEED_BOMB,
@@ -44381,6 +44651,7 @@ static const u16 sGogoatTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROLLOUT,
     MOVE_SEED_BOMB,
@@ -44473,6 +44744,7 @@ static const u16 sPangoroTeachableLearnset[] = {
     MOVE_COACHING,
     MOVE_CRUNCH,
     MOVE_DARK_PULSE,
+    MOVE_DARKEST_LARIAT,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
     MOVE_DRAGON_CLAW,
@@ -45286,6 +45558,7 @@ static const u16 sSkrelpTeachableLearnset[] = {
     MOVE_CHILLING_WATER,
     MOVE_DIVE,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_PULSE,
     MOVE_DRAGON_TAIL,
     MOVE_ENDURE,
@@ -45338,6 +45611,7 @@ static const u16 sDragalgeTeachableLearnset[] = {
     MOVE_DIVE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_PULSE,
     MOVE_DRAGON_TAIL,
     MOVE_ENDURE,
@@ -45425,6 +45699,7 @@ static const u16 sClauncherTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWORDS_DANCE,
     MOVE_TAKE_DOWN,
+    MOVE_TERRAIN_PULSE,
     MOVE_THIEF,
     MOVE_TOXIC,
     MOVE_U_TURN,
@@ -45478,6 +45753,7 @@ static const u16 sClawitzerTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWORDS_DANCE,
     MOVE_TAKE_DOWN,
+    MOVE_TERRAIN_PULSE,
     MOVE_THIEF,
     MOVE_TOXIC,
     MOVE_U_TURN,
@@ -45499,6 +45775,7 @@ static const u16 sHelioptileTeachableLearnset[] = {
     MOVE_DARK_PULSE,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_TAIL,
     MOVE_ELECTRIC_TERRAIN,
     MOVE_ELECTRO_BALL,
@@ -45545,6 +45822,7 @@ static const u16 sHelioliskTeachableLearnset[] = {
     MOVE_DARK_PULSE,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_PULSE,
     MOVE_DRAGON_TAIL,
     MOVE_EARTH_POWER,
@@ -45612,6 +45890,7 @@ static const u16 sTyruntTeachableLearnset[] = {
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
     MOVE_DRAGON_PULSE,
@@ -45630,6 +45909,7 @@ static const u16 sTyruntTeachableLearnset[] = {
     MOVE_METEOR_BEAM,
     MOVE_OUTRAGE,
     MOVE_PLAY_ROUGH,
+    MOVE_POISON_FANG,
     MOVE_PROTECT,
     MOVE_PSYCHIC_FANGS,
     MOVE_REST,
@@ -45668,6 +45948,7 @@ static const u16 sTyrantrumTeachableLearnset[] = {
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
     MOVE_DRAGON_PULSE,
@@ -45689,6 +45970,7 @@ static const u16 sTyrantrumTeachableLearnset[] = {
     MOVE_METEOR_BEAM,
     MOVE_OUTRAGE,
     MOVE_PLAY_ROUGH,
+    MOVE_POISON_FANG,
     MOVE_PROTECT,
     MOVE_PSYCHIC_FANGS,
     MOVE_REST,
@@ -46016,6 +46298,7 @@ static const u16 sCarbinkTeachableLearnset[] = {
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
     MOVE_TAKE_DOWN,
+    MOVE_TERRAIN_PULSE,
     MOVE_TOXIC,
     MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
@@ -46032,6 +46315,7 @@ static const u16 sGoomyTeachableLearnset[] = {
     MOVE_CURSE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_PULSE,
     MOVE_ENDURE,
     MOVE_FACADE,
@@ -46069,6 +46353,7 @@ static const u16 sSliggooTeachableLearnset[] = {
     MOVE_CURSE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_PULSE,
     MOVE_ENDURE,
     MOVE_FACADE,
@@ -46113,6 +46398,7 @@ static const u16 sGoodraTeachableLearnset[] = {
     MOVE_CURSE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_PULSE,
@@ -46172,6 +46458,7 @@ static const u16 sSliggooHisuiTeachableLearnset[] = {
     MOVE_CHILLING_WATER,
     MOVE_CURSE,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_PULSE,
     MOVE_ENDURE,
     MOVE_FACADE,
@@ -46214,6 +46501,7 @@ static const u16 sGoodraHisuiTeachableLearnset[] = {
     MOVE_CHILLING_WATER,
     MOVE_CURSE,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_PULSE,
@@ -46457,6 +46745,7 @@ static const u16 sPumpkabooTeachableLearnset[] = {
     MOVE_HEX,
     MOVE_IMPRISON,
     MOVE_LIGHT_SCREEN,
+    MOVE_MYSTICAL_FIRE,
     MOVE_PAIN_SPLIT,
     MOVE_POLTERGEIST,
     MOVE_PROTECT,
@@ -46512,6 +46801,7 @@ static const u16 sGourgeistTeachableLearnset[] = {
     MOVE_IMPRISON,
     MOVE_LIGHT_SCREEN,
     MOVE_MOONBLAST,
+    MOVE_MYSTICAL_FIRE,
     MOVE_NASTY_PLOT,
     MOVE_PAIN_SPLIT,
     MOVE_PHANTOM_FORCE,
@@ -46691,6 +46981,7 @@ static const u16 sNoibatTeachableLearnset[] = {
     MOVE_DARK_PULSE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_PULSE,
     MOVE_DREAM_EATER,
@@ -46746,6 +47037,7 @@ static const u16 sNoivernTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
@@ -46839,6 +47131,7 @@ static const u16 sXerneasTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_TAKE_DOWN,
+    MOVE_TERRAIN_PULSE,
     MOVE_THUNDER,
     MOVE_THUNDER_WAVE,
     MOVE_THUNDERBOLT,
@@ -46909,6 +47202,7 @@ static const u16 sZygardeTeachableLearnset[] = {
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_DANCE,
     MOVE_DRAGON_PULSE,
     MOVE_DRAGON_TAIL,
@@ -46982,6 +47276,7 @@ static const u16 sDiancieTeachableLearnset[] = {
     MOVE_METRONOME,
     MOVE_MISTY_EXPLOSION,
     MOVE_MOONBLAST,
+    MOVE_MYSTICAL_FIRE,
     MOVE_PLAY_ROUGH,
     MOVE_POWER_GEM,
     MOVE_PROTECT,
@@ -47009,6 +47304,7 @@ static const u16 sDiancieTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_TAKE_DOWN,
+    MOVE_TERRAIN_PULSE,
     MOVE_TOXIC,
     MOVE_TRICK_ROOM,
     MOVE_UNAVAILABLE,
@@ -47569,6 +47865,7 @@ static const u16 sIncineroarTeachableLearnset[] = {
     MOVE_CLOSE_COMBAT,
     MOVE_CRUNCH,
     MOVE_DARK_PULSE,
+    MOVE_DARKEST_LARIAT,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRAIN_PUNCH,
@@ -48501,6 +48798,7 @@ static const u16 sRockruffTeachableLearnset[] = {
     MOVE_PSYCHIC_FANGS,
     MOVE_REST,
     MOVE_ROAR,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_TOMB,
     MOVE_SANDSTORM,
@@ -48554,6 +48852,7 @@ static const u16 sLycanrocMiddayTeachableLearnset[] = {
     MOVE_REST,
     MOVE_ROAR,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_TOMB,
     MOVE_SANDSTORM,
@@ -48620,6 +48919,7 @@ static const u16 sLycanrocMidnightTeachableLearnset[] = {
     MOVE_REVERSAL,
     MOVE_ROAR,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_TOMB,
     MOVE_SANDSTORM,
@@ -48681,6 +48981,7 @@ static const u16 sLycanrocDuskTeachableLearnset[] = {
     MOVE_REVERSAL,
     MOVE_ROAR,
     MOVE_ROCK_BLAST,
+    MOVE_ROCK_CLIMB,
     MOVE_ROCK_SLIDE,
     MOVE_ROCK_TOMB,
     MOVE_SANDSTORM,
@@ -48769,6 +49070,7 @@ static const u16 sMareanieTeachableLearnset[] = {
     MOVE_MUDDY_WATER,
     MOVE_PAIN_SPLIT,
     MOVE_PAYBACK,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_POUNCE,
     MOVE_PROTECT,
@@ -48820,6 +49122,7 @@ static const u16 sToxapexTeachableLearnset[] = {
     MOVE_MUDDY_WATER,
     MOVE_PAIN_SPLIT,
     MOVE_PAYBACK,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_POUNCE,
     MOVE_PROTECT,
@@ -49204,6 +49507,7 @@ static const u16 sSalanditTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BURNING_JEALOUSY,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_PULSE,
     MOVE_ENDEAVOR,
@@ -49226,6 +49530,7 @@ static const u16 sSalanditTeachableLearnset[] = {
     MOVE_NASTY_PLOT,
     MOVE_OVERHEAT,
     MOVE_PAYBACK,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_POISON_TAIL,
     MOVE_PROTECT,
@@ -49264,6 +49569,7 @@ static const u16 sSalazzleTeachableLearnset[] = {
     MOVE_BREAKING_SWIPE,
     MOVE_BURNING_JEALOUSY,
     MOVE_DOUBLE_TEAM,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
@@ -49294,6 +49600,7 @@ static const u16 sSalazzleTeachableLearnset[] = {
     MOVE_NASTY_PLOT,
     MOVE_OVERHEAT,
     MOVE_PAYBACK,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_POISON_TAIL,
     MOVE_PROTECT,
@@ -49382,6 +49689,7 @@ static const u16 sBewearTeachableLearnset[] = {
     MOVE_CHARM,
     MOVE_CLOSE_COMBAT,
     MOVE_COACHING,
+    MOVE_DARKEST_LARIAT,
     MOVE_DEFENSE_CURL,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
@@ -49672,6 +49980,7 @@ static const u16 sOranguruTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_TAKE_DOWN,
     MOVE_TAUNT,
+    MOVE_TERRAIN_PULSE,
     MOVE_THUNDER,
     MOVE_THUNDERBOLT,
     MOVE_TOXIC,
@@ -49954,6 +50263,7 @@ static const u16 sPalossandTeachableLearnset[] = {
     MOVE_STONE_EDGE,
     MOVE_SUNNY_DAY,
     MOVE_SWAGGER,
+    MOVE_TERRAIN_PULSE,
     MOVE_TOXIC,
     MOVE_TRICK,
     MOVE_UNAVAILABLE,
@@ -50023,6 +50333,7 @@ static const u16 sTypeNullTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
     MOVE_TAKE_DOWN,
+    MOVE_TERRAIN_PULSE,
     MOVE_THUNDER_WAVE,
     MOVE_TOXIC,
     MOVE_U_TURN,
@@ -50062,6 +50373,7 @@ static const u16 sSilvallyTeachableLearnset[] = {
     MOVE_METAL_SOUND,
     MOVE_OUTRAGE,
     MOVE_PAYBACK,
+    MOVE_POISON_FANG,
     MOVE_PROTECT,
     MOVE_PSYCHIC_FANGS,
     MOVE_RAIN_DANCE,
@@ -50086,6 +50398,7 @@ static const u16 sSilvallyTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_TAILWIND,
     MOVE_TAKE_DOWN,
+    MOVE_TERRAIN_PULSE,
     MOVE_THUNDER_FANG,
     MOVE_THUNDER_WAVE,
     MOVE_THUNDERBOLT,
@@ -50219,6 +50532,7 @@ static const u16 sTurtonatorTeachableLearnset[] = {
     MOVE_CURSE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_PULSE,
     MOVE_DRAGON_TAIL,
@@ -50419,6 +50733,7 @@ static const u16 sBruxishTeachableLearnset[] = {
     MOVE_LIQUIDATION,
     MOVE_PAIN_SPLIT,
     MOVE_PAYBACK,
+    MOVE_POISON_FANG,
     MOVE_PROTECT,
     MOVE_PSYCHIC,
     MOVE_PSYCHIC_FANGS,
@@ -50464,6 +50779,7 @@ static const u16 sDrampaTeachableLearnset[] = {
     MOVE_CALM_MIND,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
     MOVE_DRAGON_PULSE,
@@ -50593,6 +50909,7 @@ static const u16 sJangmoOTeachableLearnset[] = {
     MOVE_COUNTER,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
@@ -50648,6 +50965,7 @@ static const u16 sHakamoOTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
@@ -50714,6 +51032,7 @@ static const u16 sKommoOTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
@@ -50896,6 +51215,7 @@ static const u16 sTapuBuluTeachableLearnset[] = {
     MOVE_BULLET_SEED,
     MOVE_CALM_MIND,
     MOVE_CLOSE_COMBAT,
+    MOVE_DARKEST_LARIAT,
     MOVE_DAZZLING_GLEAM,
     MOVE_ENDURE,
     MOVE_ENERGY_BALL,
@@ -51044,6 +51364,7 @@ static const u16 sSolgaleoTeachableLearnset[] = {
     MOVE_METAL_CLAW,
     MOVE_METAL_SOUND,
     MOVE_METEOR_BEAM,
+    MOVE_MYSTICAL_FIRE,
     MOVE_OUTRAGE,
     MOVE_PROTECT,
     MOVE_PSYCH_UP,
@@ -51201,6 +51522,7 @@ static const u16 sBuzzwoleTeachableLearnset[] = {
     MOVE_CLOSE_COMBAT,
     MOVE_COACHING,
     MOVE_COUNTER,
+    MOVE_DARKEST_LARIAT,
     MOVE_DOUBLE_TEAM,
     MOVE_DRAIN_PUNCH,
     MOVE_DUAL_WINGBEAT,
@@ -51435,6 +51757,7 @@ static const u16 sGuzzlordTeachableLearnset[] = {
     MOVE_DARK_PULSE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_PULSE,
     MOVE_DRAGON_TAIL,
@@ -51732,6 +52055,7 @@ static const u16 sNaganadelTeachableLearnset[] = {
     MOVE_DARK_PULSE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
     MOVE_DRAGON_PULSE,
@@ -51848,6 +52172,7 @@ static const u16 sBlacephalonTeachableLearnset[] = {
     MOVE_HYPER_BEAM,
     MOVE_KNOCK_OFF,
     MOVE_LIGHT_SCREEN,
+    MOVE_MYSTICAL_FIRE,
     MOVE_NIGHT_SHADE,
     MOVE_OVERHEAT,
     MOVE_PAIN_SPLIT,
@@ -51961,6 +52286,7 @@ static const u16 sMelmetalTeachableLearnset[] = {
     MOVE_BODY_PRESS,
     MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,
+    MOVE_DARKEST_LARIAT,
     MOVE_DYNAMIC_PUNCH,
     MOVE_EARTHQUAKE,
     MOVE_ELECTRIC_TERRAIN,
@@ -52089,6 +52415,7 @@ static const u16 sRillaboomTeachableLearnset[] = {
     MOVE_BULK_UP,
     MOVE_BULLDOZE,
     MOVE_BULLET_SEED,
+    MOVE_DARKEST_LARIAT,
     MOVE_DOUBLE_EDGE,
     MOVE_DRAIN_PUNCH,
     MOVE_EARTH_POWER,
@@ -53212,6 +53539,7 @@ static const u16 sApplinTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DEFENSE_CURL,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_GRASSY_GLIDE,
     MOVE_POUNCE,
     MOVE_ROLLOUT,
@@ -53227,6 +53555,7 @@ static const u16 sFlappleTeachableLearnset[] = {
     MOVE_BULLET_SEED,
     MOVE_DEFENSE_CURL,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_DANCE,
     MOVE_DRAGON_PULSE,
     MOVE_DUAL_WINGBEAT,
@@ -53271,6 +53600,7 @@ static const u16 sAppletunTeachableLearnset[] = {
     MOVE_CURSE,
     MOVE_DEFENSE_CURL,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_PULSE,
     MOVE_DRAGON_TAIL,
     MOVE_EARTHQUAKE,
@@ -53319,6 +53649,7 @@ static const u16 sDipplinTeachableLearnset[] = {
     MOVE_BULLET_SEED,
     MOVE_DEFENSE_CURL,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_PULSE,
     MOVE_DRAGON_TAIL,
@@ -53358,6 +53689,7 @@ static const u16 sHydrappleTeachableLearnset[] = {
     MOVE_DEFENSE_CURL,
     MOVE_DOUBLE_EDGE,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_PULSE,
     MOVE_DRAGON_TAIL,
@@ -53403,6 +53735,7 @@ static const u16 sSilicobraTeachableLearnset[] = {
     MOVE_BODY_SLAM,
     MOVE_BULLDOZE,
     MOVE_DIG,
+    MOVE_DRAGON_BREATH,
     MOVE_DRILL_RUN,
     MOVE_EARTH_POWER,
     MOVE_EARTHQUAKE,
@@ -53436,6 +53769,7 @@ static const u16 sSandacondaTeachableLearnset[] = {
     MOVE_BODY_SLAM,
     MOVE_BULLDOZE,
     MOVE_DIG,
+    MOVE_DRAGON_BREATH,
     MOVE_DRILL_RUN,
     MOVE_EARTH_POWER,
     MOVE_EARTHQUAKE,
@@ -53793,6 +54127,7 @@ static const u16 sCentiskorchTeachableLearnset[] = {
     MOVE_KNOCK_OFF,
     MOVE_LEECH_LIFE,
     MOVE_LUNGE,
+    MOVE_MYSTICAL_FIRE,
     MOVE_OVERHEAT,
     MOVE_PROTECT,
     MOVE_REST,
@@ -53983,6 +54318,7 @@ static const u16 sHatennaTeachableLearnset[] = {
     MOVE_MAGICAL_LEAF,
     MOVE_METRONOME,
     MOVE_MISTY_TERRAIN,
+    MOVE_MYSTICAL_FIRE,
     MOVE_PLAY_ROUGH,
     MOVE_PROTECT,
     MOVE_PSYBEAM,
@@ -54023,6 +54359,7 @@ static const u16 sHattremTeachableLearnset[] = {
     MOVE_MAGICAL_LEAF,
     MOVE_METRONOME,
     MOVE_MISTY_TERRAIN,
+    MOVE_MYSTICAL_FIRE,
     MOVE_PLAY_ROUGH,
     MOVE_PROTECT,
     MOVE_PSYBEAM,
@@ -54068,6 +54405,7 @@ static const u16 sHattereneTeachableLearnset[] = {
     MOVE_METRONOME,
     MOVE_MISTY_EXPLOSION,
     MOVE_MISTY_TERRAIN,
+    MOVE_MYSTICAL_FIRE,
     MOVE_PAIN_SPLIT,
     MOVE_PLAY_ROUGH,
     MOVE_PROTECT,
@@ -54190,6 +54528,7 @@ static const u16 sGrimmsnarlTeachableLearnset[] = {
     MOVE_CHILLING_WATER,
     MOVE_CRUNCH,
     MOVE_DARK_PULSE,
+    MOVE_DARKEST_LARIAT,
     MOVE_DAZZLING_GLEAM,
     MOVE_DRAIN_PUNCH,
     MOVE_DRAINING_KISS,
@@ -54283,6 +54622,7 @@ static const u16 sAlcremieTeachableLearnset[] = {
     MOVE_METRONOME,
     MOVE_MISTY_EXPLOSION,
     MOVE_MISTY_TERRAIN,
+    MOVE_MYSTICAL_FIRE,
     MOVE_PAIN_SPLIT,
     MOVE_PLAY_ROUGH,
     MOVE_PROTECT,
@@ -54573,6 +54913,7 @@ static const u16 sIndeedeeMTeachableLearnset[] = {
     MOVE_IMPRISON,
     MOVE_MAGICAL_LEAF,
     MOVE_METRONOME,
+    MOVE_MYSTICAL_FIRE,
     MOVE_PLAY_ROUGH,
     MOVE_PROTECT,
     MOVE_PSYBEAM,
@@ -54588,6 +54929,7 @@ static const u16 sIndeedeeMTeachableLearnset[] = {
     MOVE_STORED_POWER,
     MOVE_SWIFT,
     MOVE_TAKE_DOWN,
+    MOVE_TERRAIN_PULSE,
     MOVE_TRICK,
     MOVE_TRICK_ROOM,
     MOVE_ZEN_HEADBUTT,
@@ -54616,6 +54958,7 @@ static const u16 sIndeedeeFTeachableLearnset[] = {
     MOVE_LIGHT_SCREEN,
     MOVE_MAGICAL_LEAF,
     MOVE_METRONOME,
+    MOVE_MYSTICAL_FIRE,
     MOVE_PLAY_ROUGH,
     MOVE_PROTECT,
     MOVE_PSYBEAM,
@@ -54632,6 +54975,7 @@ static const u16 sIndeedeeFTeachableLearnset[] = {
     MOVE_STORED_POWER,
     MOVE_SWIFT,
     MOVE_TAKE_DOWN,
+    MOVE_TERRAIN_PULSE,
     MOVE_TRICK,
     MOVE_TRICK_ROOM,
     MOVE_ZEN_HEADBUTT,
@@ -54907,6 +55251,7 @@ static const u16 sDracovishTeachableLearnset[] = {
     MOVE_CRUNCH,
     MOVE_DIVE,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_PULSE,
     MOVE_EARTH_POWER,
     MOVE_EARTHQUAKE,
@@ -54994,6 +55339,7 @@ static const u16 sDuraludonTeachableLearnset[] = {
     MOVE_DARK_PULSE,
     MOVE_DOUBLE_EDGE,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_PULSE,
@@ -55047,6 +55393,7 @@ static const u16 sArchaludonTeachableLearnset[] = {
     MOVE_DARK_PULSE,
     MOVE_DOUBLE_EDGE,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_PULSE,
@@ -55104,6 +55451,7 @@ static const u16 sDreepyTeachableLearnset[] = {
     MOVE_CURSE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_TAIL,
     MOVE_ENDURE,
     MOVE_FACADE,
@@ -55129,6 +55477,7 @@ static const u16 sDrakloakTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_DANCE,
     MOVE_DRAGON_PULSE,
@@ -55180,6 +55529,7 @@ static const u16 sDragapultTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
@@ -55352,6 +55702,7 @@ static const u16 sEternatusTeachableLearnset[] = {
     MOVE_HYPER_BEAM,
     MOVE_LIGHT_SCREEN,
     MOVE_METEOR_BEAM,
+    MOVE_MYSTICAL_FIRE,
     MOVE_OUTRAGE,
     MOVE_PAYBACK,
     MOVE_POISON_JAB,
@@ -55430,6 +55781,7 @@ static const u16 sUrshifuSingleStrikeTeachableLearnset[] = {
     MOVE_COUNTER,
     MOVE_CRUNCH,
     MOVE_DARK_PULSE,
+    MOVE_DARKEST_LARIAT,
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,
     MOVE_DRAIN_PUNCH,
@@ -55552,6 +55904,7 @@ static const u16 sZarudeTeachableLearnset[] = {
     MOVE_CLOSE_COMBAT,
     MOVE_CRUNCH,
     MOVE_DARK_PULSE,
+    MOVE_DARKEST_LARIAT,
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,
     MOVE_DRAIN_PUNCH,
@@ -55650,6 +56003,7 @@ static const u16 sRegidragoTeachableLearnset[] = {
     MOVE_BREAKING_SWIPE,
     MOVE_CRUNCH,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
@@ -56007,6 +56361,7 @@ static const u16 sEnamorusTeachableLearnset[] = {
     MOVE_MISTY_EXPLOSION,
     MOVE_MISTY_TERRAIN,
     MOVE_MOONBLAST,
+    MOVE_MYSTICAL_FIRE,
     MOVE_OUTRAGE,
     MOVE_PLAY_ROUGH,
     MOVE_PROTECT,
@@ -56990,6 +57345,7 @@ static const u16 sSmolivTeachableLearnset[] = {
     MOVE_SOLAR_BLADE,
     MOVE_SUNNY_DAY,
     MOVE_SWIFT,
+    MOVE_TERRAIN_PULSE,
     MOVE_TRAILBLAZE,
     MOVE_WEATHER_BALL,
     MOVE_UNAVAILABLE,
@@ -57016,6 +57372,7 @@ static const u16 sDollivTeachableLearnset[] = {
     MOVE_SOLAR_BLADE,
     MOVE_SUNNY_DAY,
     MOVE_SWIFT,
+    MOVE_TERRAIN_PULSE,
     MOVE_TRAILBLAZE,
     MOVE_WEATHER_BALL,
     MOVE_UNAVAILABLE,
@@ -57056,6 +57413,7 @@ static const u16 sArbolivaTeachableLearnset[] = {
     MOVE_SOLAR_BLADE,
     MOVE_SUNNY_DAY,
     MOVE_SWIFT,
+    MOVE_TERRAIN_PULSE,
     MOVE_TRAILBLAZE,
     MOVE_WEATHER_BALL,
     MOVE_UNAVAILABLE,
@@ -57276,6 +57634,7 @@ static const u16 sArmarougeTeachableLearnset[] = {
     MOVE_IRON_DEFENSE,
     MOVE_LIGHT_SCREEN,
     MOVE_METEOR_BEAM,
+    MOVE_MYSTICAL_FIRE,
     MOVE_NIGHT_SHADE,
     MOVE_OVERHEAT,
     MOVE_PROTECT,
@@ -57619,6 +57978,7 @@ static const u16 sShroodleTeachableLearnset[] = {
     MOVE_MUD_SHOT,
     MOVE_MUD_SLAP,
     MOVE_NASTY_PLOT,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_POUNCE,
     MOVE_PROTECT,
@@ -57666,6 +58026,7 @@ static const u16 sGrafaiaiTeachableLearnset[] = {
     MOVE_MUD_SHOT,
     MOVE_MUD_SLAP,
     MOVE_NASTY_PLOT,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_POISON_TAIL,
     MOVE_POUNCE,
@@ -59317,6 +59678,7 @@ static const u16 sFlutterManeTeachableLearnset[] = {
     MOVE_MAGICAL_LEAF,
     MOVE_MISTY_TERRAIN,
     MOVE_MOONBLAST,
+    MOVE_MYSTICAL_FIRE,
     MOVE_NIGHT_SHADE,
     MOVE_PAIN_SPLIT,
     MOVE_PHANTOM_FORCE,
@@ -59593,6 +59955,7 @@ static const u16 sIronJugulisTeachableLearnset[] = {
     MOVE_CRUNCH,
     MOVE_DARK_PULSE,
     MOVE_DOUBLE_EDGE,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_PULSE,
     MOVE_DRAGON_TAIL,
@@ -59772,6 +60135,7 @@ static const u16 sFrigibaxTeachableLearnset[] = {
     MOVE_CRUNCH,
     MOVE_DIG,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_PULSE,
     MOVE_DRAGON_TAIL,
@@ -59804,6 +60168,7 @@ static const u16 sArctibaxTeachableLearnset[] = {
     MOVE_CRUNCH,
     MOVE_DIG,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_PULSE,
     MOVE_DRAGON_TAIL,
@@ -59842,6 +60207,7 @@ static const u16 sBaxcaliburTeachableLearnset[] = {
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
@@ -60124,6 +60490,7 @@ static const u16 sRoaringMoonTeachableLearnset[] = {
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
@@ -60335,6 +60702,7 @@ static const u16 sMiraidonTeachableLearnset[] = {
     MOVE_CRUNCH,
     MOVE_DAZZLING_GLEAM,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_PULSE,
@@ -60386,6 +60754,7 @@ static const u16 sWalkingWakeTeachableLearnset[] = {
     MOVE_CRUNCH,
     MOVE_DOUBLE_EDGE,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_CLAW,
     MOVE_DRAGON_DANCE,
@@ -60577,6 +60946,7 @@ static const u16 sOkidogiTeachableLearnset[] = {
     MOVE_LOW_SWEEP,
     MOVE_METAL_CLAW,
     MOVE_OUTRAGE,
+    MOVE_POISON_FANG,
     MOVE_POISON_JAB,
     MOVE_POISON_TAIL,
     MOVE_PROTECT,
@@ -60830,6 +61200,7 @@ static const u16 sRagingBoltTeachableLearnset[] = {
     MOVE_CRUNCH,
     MOVE_DOUBLE_EDGE,
     MOVE_DRACO_METEOR,
+    MOVE_DRAGON_BREATH,
     MOVE_DRAGON_CHEER,
     MOVE_DRAGON_PULSE,
     MOVE_DRAGON_TAIL,

@@ -7141,42 +7141,36 @@ MARINA_BATTLE(MUSEUM, 17),
         POKEMON_BREEDER_MON(Level),                                                                 \
         .species = Level < 20 ? SPECIES_WHISMUR : (Level < 40 ? SPECIES_LOUDRED : SPECIES_EXPLOUD), \
         .ability = 2,                                                                               \
-        .moves = {MOVE_SMELLING_SALTS, MOVE_EXTRASENSORY, MOVE_CIRCLE_THROW, MOVE_HAMMER_ARM},      \
         .gender = TRAINER_MON_MALE                                                                  \
         },                                                                                          \
         {                                                                                           \
         POKEMON_BREEDER_MON(Level),                                                                 \
         .species = Level < 20 ? SPECIES_ZIGZAGOON : SPECIES_LINOONE,                                \
         .ability = ABILITY_QUICK_FEET,                                                              \
-        .moves = {MOVE_EXTREME_SPEED, MOVE_MUD_SLAP, MOVE_SIMPLE_BEAM, MOVE_TICKLE},                \
         .gender = TRAINER_MON_MALE                                                                  \
         },                                                                                          \
         {                                                                                           \
         POKEMON_BREEDER_MON(Level),                                                                 \
         .species = Level < 24 ? SPECIES_MAKUHITA : SPECIES_HARIYAMA,                                \
         .ability = ABILITY_SHEER_FORCE,                                                             \
-        .moves = {MOVE_CROSS_CHOP, MOVE_BULLET_PUNCH, MOVE_FEINT_ATTACK, MOVE_STOMPING_TANTRUM},    \
         .gender = TRAINER_MON_MALE                                                                  \
         },                                                                                          \
         {                                                                                           \
         POKEMON_BREEDER_MON(Level),                                                                 \
         .species = Level < 18 ? SPECIES_POOCHYENA : SPECIES_MIGHTYENA,                              \
         .ability = ABILITY_STRONG_JAW,                                                              \
-        .moves = {MOVE_LASH_OUT, MOVE_POISON_FANG, MOVE_THUNDER_FANG, MOVE_FIRE_FANG},              \
         .gender = TRAINER_MON_MALE                                                                  \
         },                                                                                          \
         {                                                                                           \
         POKEMON_BREEDER_MON(Level),                                                                 \
         .species = Level < 22 ? SPECIES_TAILLOW : SPECIES_SWELLOW,                                  \
         .ability = ABILITY_SCRAPPY,                                                                 \
-        .moves = {MOVE_BOOMBURST, MOVE_HURRICANE, MOVE_HEAT_WAVE, MOVE_ROOST},                      \
         .gender = TRAINER_MON_MALE                                                                  \
         },                                                                                          \
         {                                                                                           \
         POKEMON_BREEDER_MON(Level),                                                                 \
         .species = Level < 32 ? SPECIES_ARON : (Level < 42 ? SPECIES_LAIRON : SPECIES_AGGRON),      \
         .ability = ABILITY_ROCK_HEAD,                                                               \
-        .moves = {MOVE_SMELLING_SALTS, MOVE_HEAD_SMASH, MOVE_DRAGON_RUSH, MOVE_CURSE},              \
         .gender = TRAINER_MON_MALE                                                                  \
         },                                                                                          \
     },                                                                                              \
@@ -7199,42 +7193,36 @@ ISAAC_BATTLE(5, REMATCH_5_LEVEL_3),
         POKEMON_BREEDER_MON(Level),                                                            \
         .species = Level < 25 ? SPECIES_WINGULL : SPECIES_PELIPPER,                            \
         .ability = ABILITY_RAIN_DISH,                                                          \
-        .moves = {MOVE_CHILLING_WATER, MOVE_TWISTER, MOVE_TAILWIND, MOVE_AQUA_RING},           \
         .gender = TRAINER_MON_FEMALE                                                           \
         },                                                                                     \
         {                                                                                      \
         POKEMON_BREEDER_MON(Level),                                                            \
         .species = Level < 23 ? SPECIES_SHROOMISH : SPECIES_BRELOOM,                           \
         .ability = 2,                                                                          \
-        .moves = {MOVE_WAKE_UP_SLAP, MOVE_POUNCE, MOVE_CHARM, MOVE_WORRY_SEED},                \
         .gender = TRAINER_MON_FEMALE                                                           \
         },                                                                                     \
         {                                                                                      \
         POKEMON_BREEDER_MON(Level),                                                            \
         .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_AZURILL : (Level < REMATCH_3_LEVEL_6 ? SPECIES_MARILL : SPECIES_AZUMARILL), \
         .ability = ABILITY_SAP_SIPPER,                                                         \
-        .moves = {MOVE_AQUA_JET, MOVE_PRESENT, MOVE_BRUTAL_SWING, MOVE_BELLY_DRUM},            \
         .gender = TRAINER_MON_FEMALE                                                           \
         },                                                                                     \
         {                                                                                      \
         POKEMON_BREEDER_MON(Level),                                                            \
         .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_BUDEW : (Level < REMATCH_3_LEVEL_6 ? SPECIES_ROSELIA : SPECIES_ROSERADE), \
         .ability = 2,                                                                          \
-        .moves = {MOVE_RAZOR_LEAF, MOVE_EXTRASENSORY, MOVE_LIFE_DEW, MOVE_GRASS_WHISTLE},      \
         .gender = TRAINER_MON_FEMALE                                                           \
         },                                                                                     \
         {                                                                                      \
         POKEMON_BREEDER_MON(Level),                                                            \
         .species = Level < REMATCH_2_LEVEL_6 ? SPECIES_SKITTY : SPECIES_DELCATTY,              \
         .ability = ABILITY_WONDER_SKIN,                                                        \
-        .moves = {MOVE_UPROAR, MOVE_SIMPLE_BEAM, MOVE_FAKE_TEARS, MOVE_COSMIC_POWER},          \
         .gender = TRAINER_MON_FEMALE                                                           \
         },                                                                                     \
         {                                                                                      \
         POKEMON_BREEDER_MON(Level),                                                            \
         .species = Level < 33 ? SPECIES_GOLDEEN : SPECIES_SEAKING,                             \
         .ability = ABILITY_LIGHTNING_ROD,                                                      \
-        .moves = {MOVE_AQUA_TAIL, MOVE_SMART_STRIKE, MOVE_DRILL_RUN, MOVE_MEGAHORN},           \
         .gender = TRAINER_MON_FEMALE                                                           \
         },                                                                                     \
     },                                                                                         \
@@ -13534,37 +13522,31 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
         POKEMON_BREEDER_MON(37),
         .species = SPECIES_MANECTRIC,
         .ability = ABILITY_STATIC,
-        .moves = {MOVE_CHARGE_BEAM, MOVE_SNARL, MOVE_FLAME_BURST, MOVE_UPROAR},
         },
         {
         POKEMON_BREEDER_MON(37),
         .species = SPECIES_SHARPEDO,
         .ability = ABILITY_SPEED_BOOST,
-        .moves = {MOVE_SCALE_SHOT, MOVE_ASSURANCE, MOVE_BOUNCE, MOVE_ICE_FANG},
         },
         {
         POKEMON_BREEDER_MON(37),
         .species = SPECIES_BELLOSSOM,
         .ability = ABILITY_CHLOROPHYLL,
-        .moves = {MOVE_NATURE_POWER, MOVE_ACID_SPRAY, MOVE_TEETER_DANCE, MOVE_STRENGTH_SAP},
         },
         {
         POKEMON_BREEDER_MON(37),
         .species = SPECIES_GRUMPIG,
         .ability = ABILITY_THICK_FAT,
-        .moves = {MOVE_EXTRASENSORY, MOVE_CHILLING_WATER, MOVE_SIMPLE_BEAM, MOVE_TRAILBLAZE},
         },
         {
         POKEMON_BREEDER_MON(37),
         .species = SPECIES_SANDSLASH,
         .ability = ABILITY_SAND_RUSH,
-        .moves = {MOVE_HIGH_HORSEPOWER, MOVE_CRUSH_CLAW, MOVE_SMACK_DOWN, MOVE_METAL_CLAW},
         },
         {
         POKEMON_BREEDER_MON(37),
         .species = SPECIES_SWALOT,
         .ability = ABILITY_LIQUID_OOZE,
-        .moves = {MOVE_SLUDGE_WAVE, MOVE_INFESTATION, MOVE_AMNESIA, MOVE_ACID_ARMOR},
         }
     },
 },
@@ -13579,37 +13561,31 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
         POKEMON_BREEDER_MON(37),
         .species = SPECIES_HOUNDOOM,
         .ability = ABILITY_UNNERVE,
-        .moves = {MOVE_HEAT_WAVE, MOVE_SNARL, MOVE_UPROAR, MOVE_TRAILBLAZE},
         },
         {
         POKEMON_BREEDER_MON(37),
         .species = SPECIES_CAMERUPT,
         .ability = ABILITY_ANGER_POINT,
-        .moves = {MOVE_FLAME_CHARGE, MOVE_STOMPING_TANTRUM, MOVE_HEAVY_SLAM, MOVE_LASH_OUT},
         },
         {
         POKEMON_BREEDER_MON(37),
         .species = SPECIES_VILEPLUME,
         .ability = ABILITY_EFFECT_SPORE,
-        .moves = {MOVE_NATURE_POWER, MOVE_ACID_SPRAY, MOVE_TEETER_DANCE, MOVE_STRENGTH_SAP},
         },
         {
         POKEMON_BREEDER_MON(37),
         .species = SPECIES_ABSOL,
         .ability = ABILITY_SHARPNESS,
-        .moves = {MOVE_BRUTAL_SWING, MOVE_MEGAHORN, MOVE_MAGIC_COAT, MOVE_PERISH_SONG},
         },
         {
         POKEMON_BREEDER_MON(37),
         .species = SPECIES_MUK,
         .ability = ABILITY_POISON_TOUCH,
-        .moves = {MOVE_SHADOW_PUNCH, MOVE_SHADOW_SNEAK, MOVE_POWER_UP_PUNCH, MOVE_TAKE_DOWN},
         },
         {
         POKEMON_BREEDER_MON(37),
         .species = SPECIES_TROPIUS,
         .ability = ABILITY_HARVEST,
-        .moves = {MOVE_NATURE_POWER, MOVE_AIR_CUTTER, MOVE_TRAILBLAZE, MOVE_TAILWIND},
         }
     },
 },
@@ -13963,42 +13939,36 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
         POKEMON_BREEDER_MON(Level),                                                                                 \
         .species = Level < 40 ? SPECIES_SHUPPET : SPECIES_BANETTE,                                                  \
         .ability = ABILITY_CURSED_BODY,                                                                             \
-        .moves = {MOVE_PHANTOM_FORCE, MOVE_SKITTER_SMACK, MOVE_MAGIC_COAT, MOVE_DESTINY_BOND},                      \
         .gender = TRAINER_MON_FEMALE                                                                                \
         },                                                                                                          \
         {                                                                                                           \
         POKEMON_BREEDER_MON(Level),                                                                                 \
         .species = Level < 42 ? SPECIES_RHYHORN : (Level < REMATCH_4_LEVEL_6 ? SPECIES_RHYDON : SPECIES_RHYPERIOR), \
         .ability = ABILITY_RECKLESS,                                                                                \
-        .moves = {MOVE_DRILL_RUN, MOVE_ROCK_BLAST, MOVE_AQUA_TAIL, MOVE_SMART_STRIKE},                              \
         .gender = TRAINER_MON_FEMALE                                                                                \
         },                                                                                                          \
         {                                                                                                           \
         POKEMON_BREEDER_MON(Level),                                                                                 \
         .species = SPECIES_CORSOLA,                                                                                 \
         .ability = ABILITY_REGENERATOR,                                                                             \
-        .moves = {MOVE_HYDRO_PUMP, MOVE_ROCK_BLAST, MOVE_AQUA_RING, MOVE_CAMOUFLAGE},                               \
         .gender = TRAINER_MON_FEMALE                                                                                \
         },                                                                                                          \
         {                                                                                                           \
         POKEMON_BREEDER_MON(Level),                                                                                 \
         .species = Level < 40 ? SPECIES_LOTAD : (Level < 42 ? SPECIES_LOMBRE : SPECIES_LUDICOLO),                   \
         .ability = ABILITY_OWN_TEMPO,                                                                               \
-        .moves = {MOVE_CHILLING_WATER, MOVE_MAGICAL_LEAF, MOVE_DISARMING_VOICE, MOVE_TEETER_DANCE},                 \
         .gender = TRAINER_MON_FEMALE                                                                                \
         },                                                                                                          \
         {                                                                                                           \
         POKEMON_BREEDER_MON(Level),                                                                                 \
         .species = Level < 40 ? SPECIES_SEEDOT : (Level < 42 ? SPECIES_NUZLEAF : SPECIES_SHIFTRY),                  \
         .ability = ABILITY_PICKPOCKET,                                                                              \
-        .moves = {MOVE_TRAILBLAZE, MOVE_FOUL_PLAY, MOVE_SPITE, MOVE_QUICK_ATTACK},                                  \
         .gender = TRAINER_MON_FEMALE                                                                                \
         },                                                                                                          \
         {                                                                                                           \
         POKEMON_BREEDER_MON(Level),                                                                                 \
         .species = Level < 40 ? SPECIES_IGGLYBUFF : (Level < 42 ? SPECIES_JIGGLYPUFF : SPECIES_WIGGLYTUFF),         \
         .ability = ABILITY_COMPETITIVE,                                                                             \
-        .moves = {MOVE_ALLURING_VOICE, MOVE_DRAINING_KISS, MOVE_ECHOED_VOICE, MOVE_BOUNCE},                         \
         .gender = TRAINER_MON_FEMALE                                                                                \
         },                                                                                                          \
     },                                                                                                              \

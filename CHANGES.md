@@ -143,7 +143,7 @@
 ### Trainers:
 - Rich Boys all have shiny Pokémon
 - Triathletes all have Pokémon with maxed HP and Speed EVs and IVs (to reflect training for endurance and speed)
-- Pokémon Breeders all have Pokémon with perfect IVs. They can also have Hidden Abilities and Egg Moves
+- Pokémon Breeders all have Pokémon with perfect IVs. They can also have Hidden Abilities
 - Bird Keepers now use the overworld sprite of male Psychics since it looks more like them than the blond sprite
 - Wally is given more battles. The battle in Verdanturf starts with Grassy Terrain
 - There are now one less rematch per gym leader/Wally to free up space
@@ -496,18 +496,24 @@
 - Swagger
 
 #### Battle Frontier Left:
+- Darkest Lariat
 - Mega Punch
 - Mega Kick
-- Endure
-- Mud-Slap
+- Dragon Breath
 - Stored Power
+- Mud-Slap
+- Endure
+- Rock Climb
 - Imprison
 
 #### Battle Frontier Right:
+- Poison Fang
 - Low Kick
 - Low Sweep
-- Defense Curl
+- Terrain Pulse
 - Rock Blast
+- Mystical Fire
+- Defense Curl
 - Scary Face
 - Take Down
 
@@ -516,7 +522,7 @@
 - Added custom 40 BP moves for type/category combos that were missing them
     - Animations and descriptions are currently missing
     - No Pokémon currently learn them
-- All Pokémon in the Dragon egg group that could not already learn Dragon Breath now get it as an egg move. This is reflected in the species changes below
+- All Pokémon in the Dragon egg group that could not already learn Dragon Breath now learn it by move tutor. This is reflected in the species changes below
 - Moves are no longer replaced if a Pokémon levels up in the daycare
 #### Many moves (especially signature moves) were given 100% accuracy and/or 10 PP as opposed to 5:
 - Normal:
@@ -1180,16 +1186,16 @@
 
 - Bulbasaur (not in main game):
     - Learns Magical Leaf, Venoshock, Giga Drain, Energy Ball, and Sludge Bomb by level up
-    - Learns Poison Fang by Egg Move
+    - Learns Poison Fang by move tutor
 
 - Ivysaur (not in main game):
     - Evolution: 32->36
     - Learns Magical Leaf, Venoshock, Giga Drain, Energy Ball, and Sludge Bomb by level up
-    - Learns Poison Fang by Egg Move
+    - Learns Poison Fang by move tutor
 
 - Venusaur (not in main game):
     - Learns Magical Leaf, Venoshock, Giga Drain, Energy Ball, and Sludge Bomb by level up
-    - Learns Poison Fang by Egg Move
+    - Learns Poison Fang by move tutor
 
 - Charmander/Charmeleon/Charizard (not in main game):
     - Learn Metal Claw and Incinerate by level up
@@ -1253,7 +1259,7 @@
 
 - Ekans/Arbok (not in main game):
     - Learn Poison Tail, Poison Fang, and Poison Jab by level up
-    - Learn Dragon Breath by Egg Move
+    - Learn Dragon Breath by move tutor
 
 - Pichu:
     - Held item: Light Ball: 0%->100%
@@ -1878,12 +1884,12 @@
     - Atk: 10->15
     - SpA: 15->10
     - Learns Bounce and Hydro Pump by level up
-    - Learns Dragon Breath by Egg Move
+    - Learns Dragon Breath by move tutor
 
 - Gyarados:
     - Type: Water/Flying->Water
     - Learns Bounce by level up
-    - Learns Dragon Breath by Egg Move
+    - Learns Dragon Breath by move tutor
 
 - Lapras (not in main game):
     - Catch rate: 45->90
@@ -2286,7 +2292,7 @@
     - Learns Power Gem upon evolving
     - Learns Heat Wave by level up
     - Learns Body Press by TM
-    - Learns High Horsepower by move tutor (since Slugma can)
+    - Learns High Horsepower by TM (since Slugma can)
 
 - Swinub/Piloswine (postgame):
     - Learn Avalanche, Bulldoze, Stomping Tantrum, and High Horsepower by level up
@@ -2697,7 +2703,7 @@
 
 - Trapinch:
     - Learns Mud Shot by level up
-    - Learns Dragon Breath by Egg Move
+    - Learns Dragon Breath by move tutor
 
 - Vibrava/Flygon:
     - Learn Mud Shot and Breaking Swipe by level up
@@ -2737,7 +2743,7 @@
     - HP: 73->75
     - Spe: 65->85
     - Learns Poison Sting by level up
-    - Learns Dragon Breath by Egg Move
+    - Learns Dragon Breath by move tutor
 
 - Lunatone:
     - Catch rate: 45->90
@@ -3295,10 +3301,10 @@
 
 - Scraggy:
     - Evolution: 39->35
-    - Learns Dragon Breath by Egg Move
+    - Learns Dragon Breath by move tutor
 
 - Scrafty:
-    - Learns Dragon Breath by Egg Move
+    - Learns Dragon Breath by move tutor
 
 - Sigilyph:
     - Catch rate: 45->90
@@ -3445,14 +3451,14 @@
 
 - Axew:
     - Evolution: 38->35
-    - Learns Dragon Breath by Egg Move
+    - Learns Dragon Breath by move tutor
 
 - Fraxure:
     - Evolution: 48->45
-    - Learns Dragon Breath by Egg Move
+    - Learns Dragon Breath by move tutor
 
 - Haxorus:
-    - Learns Dragon Breath by Egg Move
+    - Learns Dragon Breath by move tutor
 
 - Cubchoo:
     - Evolution: 37->35
@@ -3504,7 +3510,7 @@
     - Hidden Ability: Mold Breaker->Rock Head
     - Catch rate: 45->90
     - Learns Take Down, Double-Edge, and Head Smash by level up
-    - Learns Dragon Breath by Egg Move
+    - Learns Dragon Breath by move tutor
 
 - Golett:
     - Evolution: 43->40
@@ -3661,7 +3667,7 @@
 - Skiddo:
     - Received Grass Pelt as a second Ability and Grassy Surge as a Hidden Ability (previously Grass Pelt)
     - Learns Grassy Terrain by level up
-    - Learns Rock Climb by Egg Move
+    - Learns Rock Climb by move tutor
 
 - Gogoat:
     - HP: 123->125
@@ -3671,7 +3677,7 @@
     - Spe: 68->70
     - Received Grass Pelt as a second Ability and Grassy Surge as a Hidden Ability (previously Grass Pelt)
     - Learns Trailblaze, Grassy Terrain, Grassy Glide by level up
-    - Learns Rock Climb by Egg Move
+    - Learns Rock Climb by move tutor
 
 - Pancham:
     - Held item: Tiny Bamboo Shoot: 0%->50%
@@ -3771,7 +3777,7 @@
 - Skrelp (postgame):
     - Evolution: 48->37
     - Learns Sludge and Surf by level up
-    - Learns Dragon Breath by Egg Move
+    - Learns Dragon Breath by move tutor
 
 - Dragalge (postgame):
     - Learns Dragon Breath, Sludge, and Surf by level up
@@ -3786,7 +3792,7 @@
     - SpA: 61->65
     - SpD: 43->45
     - Learns Shock Wave and Swift by level up
-    - Learns Dragon Breath by Egg Move
+    - Learns Dragon Breath by move tutor
 
 - Heliolisk (postgame):
     - HP: 62->65
@@ -3797,16 +3803,16 @@
     - Learns Weather Ball upon evolving
     - Learns Shock Wave, Swift, Hyper Voice, Solar Beam, and Morning Sun by level up
     - Learns Earth Power by TM
-    - Learns Dragon Breath by Egg Move
+    - Learns Dragon Breath by move tutor
 
 - Tyrunt:
     - Catch rate: 45->90
     - Learns Rock Throw, Smack Down, and Rock Tomb by level up
-    - Learns Dragon Breath by Egg Move
+    - Learns Dragon Breath by move tutor
 
 - Tyrantrum:
     - Learns Rock Throw, Smack Down, and Rock Tomb by level up
-    - Learns Dragon Breath by Egg Move
+    - Learns Dragon Breath by move tutor
 
 - Amaura:
     - Catch rate: 45->90
@@ -4074,11 +4080,11 @@
 - Salandit:
     - Gender ratio: 87.5/12.5->50/50
     - Learns Acid Spray, Sludge, Flame Burst, and Sludge Bomb by level up
-    - Learns Dragon Breath by Egg Move
+    - Learns Dragon Breath by move tutor
 
 - Salazzle:
     - Learns Acid Spray, Sludge, Flame Burst, and Sludge Bomb by level up
-    - Learns Dragon Breath by Egg Move
+    - Learns Dragon Breath by move tutor
 
 - Stufful/Bewear:
     - Learn Rock Smash, Brick Break, Body Slam, and Drain Punch by level up
@@ -4361,11 +4367,11 @@
     - Learn Rock Throw, Rock Tomb, Flame Wheel, Rock Slide, Power Gem, Temper Flare, Flame Burst, Lava Plume, and Flamethrower by level up
 
 - Applin/Appletun:
-    - Learn Dragon Breath by Egg Move (Note: Flapple, Dippin, and Hydrapple already learn it)
+    - Learn Dragon Breath by move tutor (Note: Flapple, Dippin, and Hydrapple already learn it)
 
 - Silicobra/Sandaconda:
     - Learns Mud-Slap, Mud Shot, Scorching Sands, Drill Run, High Horsepower, and Earthquake by level up
-    - Learn Dragon Breath by Egg Move
+    - Learn Dragon Breath by move tutor
 
 - Cramorant (postgame):
     - HP: 70->75
@@ -4488,17 +4494,17 @@
 
 - Dreepy:
     - Evolution: 50->30
-    - Learns Dragon Breath by Egg Move
+    - Learns Dragon Breath by move tutor
 
 - Drakloak:
     - Evolution: 60->55
     - Learns Shadow Punch upon evolving
-    - Learns Dragon Breath by Egg Move
+    - Learns Dragon Breath by move tutor
 
 - Dragapult:
     - Learns Shadow Claw upon evolving
     - Learns Dragon Pulse, Shadow Punch, and Dragon Claw by level up
-    - Learns Dragon Breath by Egg Move
+    - Learns Dragon Breath by move tutor
 
 - Zacian:
     - Gender ratio: genderless->0/100

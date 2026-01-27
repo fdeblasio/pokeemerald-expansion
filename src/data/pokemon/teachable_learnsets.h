@@ -120,161 +120,160 @@
 // - MOVE_HEAT_WAVE                                    //
 // - MOVE_DISARMING_VOICE                              //
 // - MOVE_TRAILBLAZE                                   //
+// - MOVE_HEAVY_SLAM                                   //
+// - MOVE_ENCORE                                       //
+// - MOVE_DRILL_RUN                                    //
+// - MOVE_ICE_SPINNER                                  //
+// - MOVE_ACID_SPRAY                                   //
+// - MOVE_AGILITY                                      //
+// - MOVE_AIR_CUTTER                                   //
+// - MOVE_AMNESIA                                      //
+// - MOVE_AVALANCHE                                    //
+// - MOVE_HELPING_HAND                                 //
+// - MOVE_POLLEN_PUFF                                  //
+// - MOVE_BATON_PASS                                   //
+// - MOVE_BULLDOZE                                     //
+// - MOVE_REVERSAL                                     //
+// - MOVE_CHARGE_BEAM                                  //
+// - MOVE_ELECTRIC_TERRAIN                             //
+// - MOVE_GRASSY_TERRAIN                               //
+// - MOVE_PSYCHIC_TERRAIN                              //
+// - MOVE_MISTY_TERRAIN                                //
+// - MOVE_CHARM                                        //
+// - MOVE_CHILLING_WATER                               //
+// - MOVE_HYDRO_PUMP                                   //
+// - MOVE_CONFUSE_RAY                                  //
+// - MOVE_FIRE_PLEDGE                                  //
+// - MOVE_WATER_PLEDGE                                 //
+// - MOVE_GRASS_PLEDGE                                 //
+// - MOVE_WILD_CHARGE                                  //
+// - MOVE_DRAGON_TAIL                                  //
+// - MOVE_DRAINING_KISS                                //
+// - MOVE_EERIE_IMPULSE                                //
+// - MOVE_PHANTOM_FORCE                                //
+// - MOVE_ELECTRO_BALL                                 //
+// - MOVE_BLAST_BURN                                   //
+// - MOVE_HYDRO_CANNON                                 //
+// - MOVE_FRENZY_PLANT                                 //
+// - MOVE_OUTRAGE                                      //
+// - MOVE_FAKE_TEARS                                   //
+// - MOVE_FIRE_SPIN                                    //
+// - MOVE_LEAF_STORM                                   //
+// - MOVE_HURRICANE                                    //
+// - MOVE_THUNDER_FANG                                 //
+// - MOVE_FIRE_FANG                                    //
+// - MOVE_ICE_FANG                                     //
+// - MOVE_BRAVE_BIRD                                   //
+// - MOVE_FLARE_BLITZ                                  //
+// - MOVE_FLAME_CHARGE                                 //
+// - MOVE_CLOSE_COMBAT                                 //
+// - MOVE_FLING                                        //
+// - MOVE_DRACO_METEOR                                 //
+// - MOVE_STEEL_BEAM                                   //
+// - MOVE_FOUL_PLAY                                    //
+// - MOVE_GUNK_SHOT                                    //
+// - MOVE_CHARGE                                       //
+// - MOVE_HAZE                                         //
+// - MOVE_HEX                                          //
+// - MOVE_SAND_TOMB                                    //
+// - MOVE_SPITE                                        //
+// - MOVE_GRAVITY                                      //
+// - MOVE_SMACK_DOWN                                   //
+// - MOVE_GYRO_BALL                                    //
+// - MOVE_KNOCK_OFF                                    //
+// - MOVE_BUG_BITE                                     //
+// - MOVE_SUPER_FANG                                   //
+// - MOVE_VACUUM_WAVE                                  //
+// - MOVE_LUNGE                                        //
+// - MOVE_HIGH_HORSEPOWER                              //
+// - MOVE_ICICLE_SPEAR                                 //
+// - MOVE_SCALD                                        //
+// - MOVE_HEAT_CRASH                                   //
+// - MOVE_SOLAR_BLADE                                  //
+// - MOVE_UPROAR                                       //
+// - MOVE_METAL_CLAW                                   //
+// - MOVE_POISON_TAIL                                  //
+// - MOVE_GRASSY_GLIDE                                 //
+// - MOVE_BURNING_JEALOUSY                             //
+// - MOVE_FLIP_TURN                                    //
+// - MOVE_DUAL_WINGBEAT                                //
+// - MOVE_POLTERGEIST                                  //
+// - MOVE_LASH_OUT                                     //
+// - MOVE_SCALE_SHOT                                   //
+// - MOVE_MISTY_EXPLOSION                              //
+// - MOVE_PAIN_SPLIT                                   //
+// - MOVE_NIGHT_SHADE                                  //
+// - MOVE_SMART_STRIKE                                 //
+// - MOVE_ENDEAVOR                                     //
+// - MOVE_PETAL_BLIZZARD                               //
+// - MOVE_TEMPER_FLARE                                 //
+// - MOVE_WHIRLPOOL                                    //
+// - MOVE_MUDDY_WATER                                  //
+// - MOVE_STOMPING_TANTRUM                             //
+// - MOVE_ELECTROWEB                                   //
+// - MOVE_TRIPLE_AXEL                                  //
+// - MOVE_COACHING                                     //
+// - MOVE_SLUDGE_WAVE                                  //
+// - MOVE_SCORCHING_SANDS                              //
+// - MOVE_FEATHER_DANCE                                //
+// - MOVE_FUTURE_SIGHT                                 //
+// - MOVE_EXPANDING_FORCE                              //
+// - MOVE_SKITTER_SMACK                                //
+// - MOVE_METEOR_BEAM                                  //
+// - MOVE_THROAT_CHOP                                  //
+// - MOVE_BREAKING_SWIPE                               //
+// - MOVE_METAL_SOUND                                  //
+// - MOVE_CURSE                                        //
+// - MOVE_HARD_PRESS                                   //
+// - MOVE_DRAGON_CHEER                                 //
+// - MOVE_ALLURING_VOICE                               //
+// - MOVE_PSYCHIC_NOISE                                //
+// - MOVE_UPPER_HAND                                   //
+// - MOVE_ZEN_HEADBUTT                                 //
+// - MOVE_PSYCHO_CUT                                   //
+// - MOVE_IRON_DEFENSE                                 //
+// - MOVE_DRAGON_DANCE                                 //
+// - MOVE_ICY_WIND                                     //
+// - MOVE_SWIFT                                        //
+// - MOVE_PSYSHOCK                                     //
+// - MOVE_MAGICAL_LEAF                                 //
+// - MOVE_MUD_SHOT                                     //
+// - MOVE_SPIKES                                       //
+// - MOVE_TOXIC_SPIKES                                 //
+// - MOVE_VENOSHOCK                                    //
+// - MOVE_VOLT_SWITCH                                  //
+// - MOVE_SNARL                                        //
+// - MOVE_WEATHER_BALL                                 //
+// - MOVE_SEISMIC_TOSS                                 //
+// - MOVE_COUNTER                                      //
+// - MOVE_DREAM_EATER                                  //
+// - MOVE_POUNCE                                       //
+// - MOVE_LEAF_BLADE                                   //
+// - MOVE_RISING_VOLTAGE                               //
 // *************************************************** //
 // Tutor moves:                                        //
-// - MOVE_COUNTER                                      //
 // - MOVE_DEFENSE_CURL                                 //
 // - MOVE_DOUBLE_EDGE                                  //
-// - MOVE_DRAGON_DANCE                                 //
-// - MOVE_DREAM_EATER                                  //
-// - MOVE_DRILL_RUN                                    //
-// - MOVE_DUAL_WINGBEAT                                //
 // - MOVE_DYNAMIC_PUNCH                                //
-// - MOVE_ELECTRIC_TERRAIN                             //
 // - MOVE_ENDURE                                       //
-// - MOVE_EXPANDING_FORCE                              //
 // - MOVE_EXPLOSION                                    //
 // - MOVE_FURY_CUTTER                                  //
-// - MOVE_GRASSY_GLIDE                                 //
-// - MOVE_GRASSY_TERRAIN                               //
-// - MOVE_HIGH_HORSEPOWER                              //
-// - MOVE_ICE_SPINNER                                  //
-// - MOVE_ICY_WIND                                     //
-// - MOVE_IRON_DEFENSE                                 //
-// - MOVE_KNOCK_OFF                                    //
-// - MOVE_LUNGE                                        //
+// - MOVE_IMPRISON                                     //
+// - MOVE_LOW_KICK                                     //
+// - MOVE_LOW_SWEEP                                    //
 // - MOVE_MEGA_KICK                                    //
 // - MOVE_MEGA_PUNCH                                   //
 // - MOVE_METRONOME                                    //
 // - MOVE_MIMIC                                        //
-// - MOVE_MISTY_TERRAIN                                //
-// - MOVE_PSYCHIC_TERRAIN                              //
-// - MOVE_PSYCHO_CUT                                   //
-// - MOVE_RISING_VOLTAGE                               //
+// - MOVE_MUD_SLAP                                     //
+// - MOVE_ROCK_BLAST                                   //
 // - MOVE_ROLLOUT                                      //
-// - MOVE_SCALD                                        //
-// - MOVE_SCORCHING_SANDS                              //
-// - MOVE_SEISMIC_TOSS                                 //
+// - MOVE_SCARY_FACE                                   //
 // - MOVE_SLEEP_TALK                                   //
-// - MOVE_SOLAR_BLADE                                  //
+// - MOVE_STORED_POWER                                 //
 // - MOVE_SUBSTITUTE                                   //
 // - MOVE_SWAGGER                                      //
-// - MOVE_SWIFT                                        //
-// - MOVE_TEMPER_FLARE                                 //
-// - MOVE_THROAT_CHOP                                  //
-// - MOVE_ZEN_HEADBUTT                                 //
-// *************************************************** //
-// Relearner moves:                                    //
-// - MOVE_ACID_SPRAY                                   //
-// - MOVE_AGILITY                                      //
-// - MOVE_AIR_CUTTER                                   //
-// - MOVE_ALLURING_VOICE                               //
-// - MOVE_AMNESIA                                      //
-// - MOVE_AVALANCHE                                    //
-// - MOVE_BATON_PASS                                   //
-// - MOVE_BLAST_BURN                                   //
-// - MOVE_BRAVE_BIRD                                   //
-// - MOVE_BREAKING_SWIPE                               //
-// - MOVE_BUG_BITE                                     //
-// - MOVE_BULLDOZE                                     //
-// - MOVE_BURNING_JEALOUSY                             //
-// - MOVE_CHARGE                                       //
-// - MOVE_CHARGE_BEAM                                  //
-// - MOVE_CHARM                                        //
-// - MOVE_CHILLING_WATER                               //
-// - MOVE_CLOSE_COMBAT                                 //
-// - MOVE_COACHING                                     //
-// - MOVE_CONFUSE_RAY                                  //
-// - MOVE_CURSE                                        //
-// - MOVE_DRACO_METEOR                                 //
-// - MOVE_DRAGON_CHEER                                 //
-// - MOVE_DRAGON_TAIL                                  //
-// - MOVE_DRAINING_KISS                                //
-// - MOVE_EERIE_IMPULSE                                //
-// - MOVE_ELECTRO_BALL                                 //
-// - MOVE_ELECTROWEB                                   //
-// - MOVE_ENCORE                                       //
-// - MOVE_ENDEAVOR                                     //
-// - MOVE_FAKE_TEARS                                   //
-// - MOVE_FEATHER_DANCE                                //
-// - MOVE_FIRE_FANG                                    //
-// - MOVE_FIRE_PLEDGE                                  //
-// - MOVE_FIRE_SPIN                                    //
-// - MOVE_FLAME_CHARGE                                 //
-// - MOVE_FLARE_BLITZ                                  //
-// - MOVE_FLING                                        //
-// - MOVE_FLIP_TURN                                    //
-// - MOVE_FOUL_PLAY                                    //
-// - MOVE_FRENZY_PLANT                                 //
-// - MOVE_FUTURE_SIGHT                                 //
-// - MOVE_GRASS_PLEDGE                                 //
-// - MOVE_GRAVITY                                      //
-// - MOVE_GUNK_SHOT                                    //
-// - MOVE_GYRO_BALL                                    //
-// - MOVE_HARD_PRESS                                   //
-// - MOVE_HAZE                                         //
-// - MOVE_HEAT_CRASH                                   //
-// - MOVE_HEAVY_SLAM                                   //
-// - MOVE_HELPING_HAND                                 //
-// - MOVE_HEX                                          //
-// - MOVE_HURRICANE                                    //
-// - MOVE_HYDRO_CANNON                                 //
-// - MOVE_HYDRO_PUMP                                   //
-// - MOVE_ICE_FANG                                     //
-// - MOVE_ICICLE_SPEAR                                 //
-// - MOVE_IMPRISON                                     //
-// - MOVE_LASH_OUT                                     //
-// - MOVE_LEAF_STORM                                   //
-// - MOVE_LOW_KICK                                     //
-// - MOVE_LOW_SWEEP                                    //
-// - MOVE_MAGICAL_LEAF                                 //
-// - MOVE_METAL_CLAW                                   //
-// - MOVE_METAL_SOUND                                  //
-// - MOVE_METEOR_BEAM                                  //
-// - MOVE_MISTY_EXPLOSION                              //
-// - MOVE_MUD_SHOT                                     //
-// - MOVE_MUDDY_WATER                                  //
-// - MOVE_MUD_SLAP                                     //
-// - MOVE_NIGHT_SHADE                                  //
-// - MOVE_OUTRAGE                                      //
-// - MOVE_PAIN_SPLIT                                   //
-// - MOVE_PETAL_BLIZZARD                               //
-// - MOVE_PHANTOM_FORCE                                //
-// - MOVE_POISON_TAIL                                  //
-// - MOVE_POLLEN_PUFF                                  //
-// - MOVE_POLTERGEIST                                  //
-// - MOVE_POUNCE                                       //
-// - MOVE_PSYCHIC_NOISE                                //
-// - MOVE_PSYSHOCK                                     //
-// - MOVE_REVERSAL                                     //
-// - MOVE_ROCK_BLAST                                   //
-// - MOVE_SAND_TOMB                                    //
-// - MOVE_SCALE_SHOT                                   //
-// - MOVE_SCARY_FACE                                   //
-// - MOVE_SKITTER_SMACK                                //
-// - MOVE_SLUDGE_WAVE                                  //
-// - MOVE_SMACK_DOWN                                   //
-// - MOVE_SMART_STRIKE                                 //
-// - MOVE_SNARL                                        //
-// - MOVE_SPIKES                                       //
-// - MOVE_SPITE                                        //
-// - MOVE_STEEL_BEAM                                   //
-// - MOVE_STOMPING_TANTRUM                             //
-// - MOVE_STORED_POWER                                 //
-// - MOVE_SUPER_FANG                                   //
 // - MOVE_TAKE_DOWN                                    //
-// - MOVE_THUNDER_FANG                                 //
-// - MOVE_TOXIC_SPIKES                                 //
-// - MOVE_TRIPLE_AXEL                                  //
-// - MOVE_UPPER_HAND                                   //
-// - MOVE_UPROAR                                       //
-// - MOVE_VACUUM_WAVE                                  //
-// - MOVE_VENOSHOCK                                    //
-// - MOVE_VOLT_SWITCH                                  //
-// - MOVE_WATER_PLEDGE                                 //
-// - MOVE_WEATHER_BALL                                 //
-// - MOVE_WHIRLPOOL                                    //
-// - MOVE_WILD_CHARGE                                  //
 // *************************************************** //
 // Near-universal moves found in sUniversalMoves:      //
 // - MOVE_BIDE                                         //
@@ -3514,6 +3513,7 @@ static const u16 sBellossomTeachableLearnset[] = {
     MOVE_GRASSY_TERRAIN,
     MOVE_HELPING_HAND,
     MOVE_HYPER_BEAM,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_MAGICAL_LEAF,
     MOVE_MOONBLAST,
@@ -5739,6 +5739,7 @@ static const u16 sVictreebelTeachableLearnset[] = {
     MOVE_GRASSY_TERRAIN,
     MOVE_HYPER_BEAM,
     MOVE_KNOCK_OFF,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_LEECH_LIFE,
     MOVE_LUNGE,
@@ -7098,6 +7099,7 @@ static const u16 sFarfetchdTeachableLearnset[] = {
     MOVE_HELPING_HAND,
     MOVE_IRON_TAIL,
     MOVE_KNOCK_OFF,
+    MOVE_LEAF_BLADE,
     MOVE_MUD_SLAP,
     MOVE_NIGHT_SLASH,
     MOVE_POISON_JAB,
@@ -7137,6 +7139,7 @@ static const u16 sFarfetchdGalarTeachableLearnset[] = {
     MOVE_FURY_CUTTER,
     MOVE_HELPING_HAND,
     MOVE_KNOCK_OFF,
+    MOVE_LEAF_BLADE,
     MOVE_LOW_SWEEP,
     MOVE_NIGHT_SLASH,
     MOVE_POISON_JAB,
@@ -7171,6 +7174,7 @@ static const u16 sSirfetchdTeachableLearnset[] = {
     MOVE_HELPING_HAND,
     MOVE_IRON_DEFENSE,
     MOVE_KNOCK_OFF,
+    MOVE_LEAF_BLADE,
     MOVE_LOW_SWEEP,
     MOVE_NIGHT_SLASH,
     MOVE_POISON_JAB,
@@ -12207,6 +12211,7 @@ static const u16 sLeafeonTeachableLearnset[] = {
     MOVE_HYPER_VOICE,
     MOVE_IRON_TAIL,
     MOVE_KNOCK_OFF,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_MAGICAL_LEAF,
     MOVE_MUD_SHOT,
@@ -13723,6 +13728,7 @@ static const u16 sMewTeachableLearnset[] = {
     MOVE_IRON_TAIL,
     MOVE_KNOCK_OFF,
     MOVE_LASH_OUT,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_LEECH_LIFE,
     MOVE_LIGHT_SCREEN,
@@ -20535,6 +20541,7 @@ static const u16 sCelebiTeachableLearnset[] = {
     MOVE_HELPING_HAND,
     MOVE_HYPER_BEAM,
     MOVE_IMPRISON,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_LIGHT_SCREEN,
     MOVE_MAGICAL_LEAF,
@@ -20678,6 +20685,7 @@ static const u16 sGrovyleTeachableLearnset[] = {
     MOVE_GRASSY_TERRAIN,
     MOVE_HELPING_HAND,
     MOVE_IRON_TAIL,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_LOW_KICK,
     MOVE_LOW_SWEEP,
@@ -20757,6 +20765,7 @@ static const u16 sSceptileTeachableLearnset[] = {
     MOVE_HELPING_HAND,
     MOVE_HYPER_BEAM,
     MOVE_IRON_TAIL,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_LOW_KICK,
     MOVE_LOW_SWEEP,
@@ -21955,6 +21964,7 @@ static const u16 sNuzleafTeachableLearnset[] = {
     MOVE_HYPER_BEAM,
     MOVE_KNOCK_OFF,
     MOVE_LASH_OUT,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_LOW_KICK,
     MOVE_LOW_SWEEP,
@@ -22037,6 +22047,7 @@ static const u16 sShiftryTeachableLearnset[] = {
     MOVE_IMPRISON,
     MOVE_KNOCK_OFF,
     MOVE_LASH_OUT,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_LOW_KICK,
     MOVE_LOW_SWEEP,
@@ -22554,6 +22565,7 @@ static const u16 sGalladeTeachableLearnset[] = {
     MOVE_ICY_WIND,
     MOVE_IMPRISON,
     MOVE_KNOCK_OFF,
+    MOVE_LEAF_BLADE,
     MOVE_LIGHT_SCREEN,
     MOVE_LOW_KICK,
     MOVE_LOW_SWEEP,
@@ -27499,6 +27511,7 @@ static const u16 sTropiusTeachableLearnset[] = {
     MOVE_HELPING_HAND,
     MOVE_HURRICANE,
     MOVE_HYPER_BEAM,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_MAGICAL_LEAF,
     MOVE_MUD_SLAP,
@@ -34478,6 +34491,7 @@ static const u16 sSnivyTeachableLearnset[] = {
     MOVE_HELPING_HAND,
     MOVE_IRON_TAIL,
     MOVE_KNOCK_OFF,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_LIGHT_SCREEN,
     MOVE_MAGICAL_LEAF,
@@ -34521,6 +34535,7 @@ static const u16 sServineTeachableLearnset[] = {
     MOVE_HELPING_HAND,
     MOVE_IRON_TAIL,
     MOVE_KNOCK_OFF,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_LIGHT_SCREEN,
     MOVE_MAGICAL_LEAF,
@@ -34571,6 +34586,7 @@ static const u16 sSerperiorTeachableLearnset[] = {
     MOVE_HYPER_BEAM,
     MOVE_IRON_TAIL,
     MOVE_KNOCK_OFF,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_LIGHT_SCREEN,
     MOVE_MAGICAL_LEAF,
@@ -36860,6 +36876,7 @@ static const u16 sLeavannyTeachableLearnset[] = {
     MOVE_HYPER_BEAM,
     MOVE_IRON_DEFENSE,
     MOVE_KNOCK_OFF,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_LIGHT_SCREEN,
     MOVE_LOW_KICK,
@@ -37157,6 +37174,7 @@ static const u16 sLilligantTeachableLearnset[] = {
     MOVE_GRASSY_TERRAIN,
     MOVE_HELPING_HAND,
     MOVE_HYPER_BEAM,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_LIGHT_SCREEN,
     MOVE_MAGICAL_LEAF,
@@ -37202,6 +37220,7 @@ static const u16 sLilligantHisuiTeachableLearnset[] = {
     MOVE_HURRICANE,
     MOVE_HYPER_BEAM,
     MOVE_ICE_SPINNER,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_LOW_KICK,
     MOVE_LOW_SWEEP,
@@ -42473,6 +42492,7 @@ static const u16 sVirizionTeachableLearnset[] = {
     MOVE_GRASSY_GLIDE,
     MOVE_HELPING_HAND,
     MOVE_HYPER_BEAM,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_LIGHT_SCREEN,
     MOVE_MAGICAL_LEAF,
@@ -44296,6 +44316,7 @@ static const u16 sSkiddoTeachableLearnset[] = {
     MOVE_GRASSY_TERRAIN,
     MOVE_HELPING_HAND,
     MOVE_IRON_TAIL,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_MAGICAL_LEAF,
     MOVE_MUD_SHOT,
@@ -44349,6 +44370,7 @@ static const u16 sGogoatTeachableLearnset[] = {
     MOVE_HIGH_HORSEPOWER,
     MOVE_HYPER_BEAM,
     MOVE_IRON_TAIL,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_MAGICAL_LEAF,
     MOVE_MUD_SHOT,
@@ -47229,6 +47251,7 @@ static const u16 sRowletTeachableLearnset[] = {
     MOVE_HAZE,
     MOVE_HELPING_HAND,
     MOVE_KNOCK_OFF,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_LIGHT_SCREEN,
     MOVE_MAGICAL_LEAF,
@@ -47279,6 +47302,7 @@ static const u16 sDartrixTeachableLearnset[] = {
     MOVE_HAZE,
     MOVE_HELPING_HAND,
     MOVE_KNOCK_OFF,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_LIGHT_SCREEN,
     MOVE_MAGICAL_LEAF,
@@ -47337,6 +47361,7 @@ static const u16 sDecidueyeTeachableLearnset[] = {
     MOVE_HYPER_BEAM,
     MOVE_IMPRISON,
     MOVE_KNOCK_OFF,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_LIGHT_SCREEN,
     MOVE_LOW_KICK,
@@ -47407,6 +47432,7 @@ static const u16 sDecidueyeHisuiTeachableLearnset[] = {
     MOVE_HELPING_HAND,
     MOVE_HYPER_BEAM,
     MOVE_KNOCK_OFF,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_LIGHT_SCREEN,
     MOVE_LOW_KICK,
@@ -49019,6 +49045,7 @@ static const u16 sFomantisTeachableLearnset[] = {
     MOVE_GRASS_KNOT,
     MOVE_GRASSY_GLIDE,
     MOVE_GRASSY_TERRAIN,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_LEECH_LIFE,
     MOVE_MAGICAL_LEAF,
@@ -49064,6 +49091,7 @@ static const u16 sLurantisTeachableLearnset[] = {
     MOVE_GRASSY_TERRAIN,
     MOVE_HYPER_BEAM,
     MOVE_KNOCK_OFF,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_LEECH_LIFE,
     MOVE_LOW_SWEEP,
@@ -51374,6 +51402,7 @@ static const u16 sKartanaTeachableLearnset[] = {
     MOVE_GIGA_IMPACT,
     MOVE_IRON_DEFENSE,
     MOVE_KNOCK_OFF,
+    MOVE_LEAF_BLADE,
     MOVE_METAL_CLAW,
     MOVE_NIGHT_SLASH,
     MOVE_PROTECT,
@@ -57895,6 +57924,7 @@ static const u16 sCapsakidTeachableLearnset[] = {
     MOVE_GRASSY_GLIDE,
     MOVE_GRASSY_TERRAIN,
     MOVE_HELPING_HAND,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_MAGICAL_LEAF,
     MOVE_PROTECT,
@@ -57934,6 +57964,7 @@ static const u16 sScovillainTeachableLearnset[] = {
     MOVE_HELPING_HAND,
     MOVE_HYPER_BEAM,
     MOVE_LASH_OUT,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_MAGICAL_LEAF,
     MOVE_NASTY_PLOT,
@@ -60178,6 +60209,7 @@ static const u16 sIronValiantTeachableLearnset[] = {
     MOVE_ICY_WIND,
     MOVE_IMPRISON,
     MOVE_KNOCK_OFF,
+    MOVE_LEAF_BLADE,
     MOVE_LIGHT_SCREEN,
     MOVE_LIQUIDATION,
     MOVE_LOW_KICK,
@@ -60418,6 +60450,7 @@ static const u16 sIronLeavesTeachableLearnset[] = {
     MOVE_HYPER_BEAM,
     MOVE_IMPRISON,
     MOVE_IRON_DEFENSE,
+    MOVE_LEAF_BLADE,
     MOVE_LEAF_STORM,
     MOVE_MAGICAL_LEAF,
     MOVE_METAL_SOUND,

@@ -3673,7 +3673,6 @@ static const u16 sTropiusEggMoveLearnset[] = {
     MOVE_DEFOG,
     MOVE_DRAGON_HAMMER,
     MOVE_HEADBUTT,
-    MOVE_LEAF_BLADE,
     MOVE_LEECH_SEED,
     MOVE_NATURE_POWER,
     MOVE_RAZOR_WIND,

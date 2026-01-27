@@ -168,24 +168,10 @@ BattleFrontier_ExchangeServiceCorner_EventScript_RegisteelDoll::
 	setdecorandprice DECOR_REGISTEEL_DOLL, BIG_DOLL_BP, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor2
 
 BattleFrontier_ExchangeServiceCorner_EventScript_EvolutionMega::
-	lock
-	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
-	pokemart BattleFrontier_Mart_EvolutionMega
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
+	mart_clerk BattleFrontier_Mart_EvolutionMega
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HoldItem::
-	lock
-	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
-	pokemart BattleFrontier_Mart_HoldItem
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
+	mart_clerk BattleFrontier_Mart_HoldItem
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Man::
 	msgbox BattleFrontier_ExchangeServiceCorner_Text_GoGetYourOwnDoll, MSGBOX_NPC

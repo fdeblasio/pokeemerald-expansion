@@ -116,9 +116,6 @@ upcoming
         - Improve white-on-white text
 - Mossdeep:
     - Check new Steven Dive text
-- Sootopolis:
-    - Swap Water Pulse TM for something better? Damage category would need to match Juan's team
-        - Water Pulse can go to Slateport
 - Battle Frontier
     - Remove BP costs so that script_menu.h and field_specials.c can use item/move names directly?
 
@@ -208,7 +205,6 @@ upcoming
     - Kartana: Sharpness
 
 ### Items
-- Add new TMs to shops/overworld
 - Find way to properly set TM description (in both shop.c and item_menu.c) to move's description
     - Move is currently on two lines, item is on 3 so the move gets cut off
 - Add charms (no longer have to worry about space)

@@ -2,7 +2,10 @@ MauvilleCity_Mart_MapScripts::
 	.byte 0
 
 MauvilleCity_Mart_EventScript_Clerk::
-	default_poke_mart
+	mart_clerk 0
+
+MauvilleCity_Mart_EventScript_TMClerk::
+	mart_clerk MauvilleCity_Mart_TMs
 
 MauvilleCity_Mart_EventScript_ExpertM::
 	msgbox MauvilleCity_Mart_Text_ItemsToTemporarilyElevateStats, MSGBOX_NPC

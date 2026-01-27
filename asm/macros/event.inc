@@ -2870,12 +2870,12 @@
 	msgbox \text, \msgtype
 	.endm
 
-	.macro default_poke_mart
+	.macro mart_clerk mart:req
 	lock
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemart 0
+	pokemart \mart
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end

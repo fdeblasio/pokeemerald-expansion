@@ -123,6 +123,15 @@ const u8 gNotDoneYetDescription[] = _(
     .pp = 20,                                                 \
     .slicingMove = TRUE
 
+#define ESCAPE_70_POWER_INFO \
+    .effect = EFFECT_HIT_ESCAPE, \
+    .power = 70,                 \
+    .accuracy = 100,             \
+    .pp = 20,                    \
+    .target = TARGET_SELECTED,   \
+    .priority = 0,               \
+    .contestEffect = CONTEST_EFFECT_AVOID_STARTLE //CONTEST_EFFECT_QUICKLY_GROW_BORED
+
 #define BASIC_80_POWER_INFO \
     BASIC_MOVE,             \
     .power = 80,            \
@@ -9411,16 +9420,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Does damage then switches\n"
             "out the user."),
-        .effect = EFFECT_HIT_ESCAPE,
-        .power = 70,
+        ESCAPE_70_POWER_INFO,
         .type = TYPE_BUG,
-        .accuracy = 100,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .contestEffect = CONTEST_EFFECT_AVOID_STARTLE, //CONTEST_EFFECT_QUICKLY_GROW_BORED
         .contestCategory = CONTEST_CATEGORY_CUTE,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
@@ -12754,15 +12757,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Does damage then switches\n"
             "out the user."),
-        .effect = EFFECT_HIT_ESCAPE,
-        .power = 70,
+        ESCAPE_70_POWER_INFO,
         .type = TYPE_ELECTRIC,
-        .accuracy = 100,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .contestEffect = CONTEST_EFFECT_AVOID_STARTLE, //CONTEST_EFFECT_QUICKLY_GROW_BORED
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_CHARGE},
@@ -17477,7 +17474,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .effect = EFFECT_HIT,
         .power = 70,
         .type = TYPE_BUG,
-        .accuracy = 90,
+        .accuracy = 100,
         .pp = 10,
         .target = TARGET_SELECTED,
         .priority = 0,
@@ -17619,16 +17616,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Attacks and rushes back to\n"
             "switch with a party Pokémon."),
-        .effect = EFFECT_HIT_ESCAPE,
-        .power = 70,
+        ESCAPE_70_POWER_INFO,
         .type = TYPE_WATER,
-        .accuracy = 100,
-        .pp = 20,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .contestEffect = CONTEST_EFFECT_AVOID_STARTLE,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},

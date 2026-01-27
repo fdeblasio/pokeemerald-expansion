@@ -2,17 +2,10 @@ BattleFrontier_Mart_MapScripts::
 	.byte 0
 
 BattleFrontier_Mart_EventScript_Clerk::
-	default_poke_mart
+	mart_clerk 0
 
 BattleFrontier_Mart_EventScript_Berries::
-	lock
-	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
-	pokemart BattleFrontier_Mart_Berries
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
+	mart_clerk BattleFrontier_Mart_Berries
 
 	.align 2
 BattleFrontier_Mart_Berries:

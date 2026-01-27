@@ -2,7 +2,7 @@ SootopolisCity_Mart_MapScripts::
 	.byte 0
 
 SootopolisCity_Mart_EventScript_Clerk::
-	default_poke_mart
+	mart_clerk 0
 
 SootopolisCity_Mart_EventScript_FatMan::
 	lock

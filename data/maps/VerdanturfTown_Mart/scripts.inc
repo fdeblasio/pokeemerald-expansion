@@ -2,17 +2,10 @@ VerdanturfTown_Mart_MapScripts::
 	.byte 0
 
 VerdanturfTown_Mart_EventScript_Clerk::
-	default_poke_mart
+	mart_clerk 0
 
 VerdanturfTown_Mart_EventScript_ClerkBalls::
-	lock
-	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
-	pokemart VerdanturfTown_Mart_Pokemart_Balls
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
+	mart_clerk VerdanturfTown_Mart_Pokemart_Balls
 
 	.align 2
 VerdanturfTown_Mart_Pokemart_Balls:

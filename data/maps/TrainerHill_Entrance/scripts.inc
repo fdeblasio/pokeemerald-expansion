@@ -237,7 +237,7 @@ TrainerHill_Entrance_EventScript_GirlTrainerHillClosed::
 	end
 
 TrainerHill_Entrance_EventScript_Clerk::
-	default_poke_mart
+	mart_clerk 0
 
 TrainerHill_Entrance_Text_StillGettingReady:
 	.string "This is the Trainer Hill where\n"

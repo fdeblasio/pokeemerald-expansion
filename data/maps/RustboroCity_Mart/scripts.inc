@@ -2,17 +2,10 @@ RustboroCity_Mart_MapScripts::
 	.byte 0
 
 RustboroCity_Mart_EventScript_Clerk::
-	default_poke_mart
+	mart_clerk 0
 
 RustboroCity_Mart_EventScript_Devon::
-	lock
-	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
-	pokemart RustboroCity_Mart_Pokemart_Devon
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
+	mart_clerk RustboroCity_Mart_Pokemart_Devon
 
 	.align 2
 RustboroCity_Mart_Pokemart_Devon:

@@ -2,7 +2,7 @@ PetalburgCity_Mart_MapScripts::
 	.byte 0
 
 PetalburgCity_Mart_EventScript_Clerk::
-	default_poke_mart
+	mart_clerk 0
 
 PetalburgCity_Mart_EventScript_Woman::
 	msgbox PetalburgCity_Mart_Text_WeakWillGrowStronger, MSGBOX_NPC

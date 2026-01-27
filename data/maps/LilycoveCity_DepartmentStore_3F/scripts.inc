@@ -2,44 +2,16 @@ LilycoveCity_DepartmentStore_3F_MapScripts::
 	.byte 0
 
 LilycoveCity_DepartmentStore_3F_EventScript_ClerkLeft::
-	lock
-	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
-	pokemart LilycoveCity_DepartmentStore_3F_Pokemart_EVs
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
+	mart_clerk LilycoveCity_DepartmentStore_3F_Pokemart_EVs
 
 LilycoveCity_DepartmentStore_3F_EventScript_ClerkMints::
-	lock
-	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
-	pokemart LilycoveCity_DepartmentStore_3F_Pokemart_Mints
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
+	mart_clerk LilycoveCity_DepartmentStore_3F_Pokemart_Mints
 
 LilycoveCity_DepartmentStore_3F_EventScript_ClerkEvo::
-	lock
-	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
-	pokemart LilycoveCity_DepartmentStore_3F_Pokemart_Evo
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
+	mart_clerk LilycoveCity_DepartmentStore_3F_Pokemart_Evo
 
 LilycoveCity_DepartmentStore_3F_EventScript_ClerkRight::
-	lock
-	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
-	pokemart LilycoveCity_DepartmentStore_3F_Pokemart_Delibird
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
+	mart_clerk LilycoveCity_DepartmentStore_3F_Pokemart_Delibird
 
 LilycoveCity_DepartmentStore_3F_EventScript_TriathleteM::
 	msgbox LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon, MSGBOX_NPC

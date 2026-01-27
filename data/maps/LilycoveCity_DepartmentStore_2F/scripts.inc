@@ -14,17 +14,10 @@ LilycoveCity_DepartmentStore_2F_EventScript_Sailor::
 	end
 
 LilycoveCity_DepartmentStore_2F_EventScript_ClerkLeft::
-	default_poke_mart
+	mart_clerk 0
 
 LilycoveCity_DepartmentStore_2F_EventScript_ClerkEscape::
-	lock
-	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
-	pokemart LilycoveCity_DepartmentStore_2F_PokemartEscape
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
+	mart_clerk LilycoveCity_DepartmentStore_2F_PokemartEscape
 
 	.align 2
 LilycoveCity_DepartmentStore_2F_PokemartEscape:
@@ -34,14 +27,7 @@ LilycoveCity_DepartmentStore_2F_PokemartEscape:
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_2F_EventScript_ClerkBalls::
-	lock
-	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
-	pokemart LilycoveCity_DepartmentStore_2F_PokemartBalls
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
+	mart_clerk LilycoveCity_DepartmentStore_2F_PokemartBalls
 
 	.align 2
 LilycoveCity_DepartmentStore_2F_PokemartBalls:

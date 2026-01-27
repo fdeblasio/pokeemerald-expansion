@@ -2,17 +2,10 @@ FallarborTown_Mart_MapScripts::
 	.byte 0
 
 FallarborTown_Mart_EventScript_Clerk::
-	default_poke_mart
+	mart_clerk 0
 
 FallarborTown_Mart_EventScript_ClerkBalls::
-	lock
-	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
-	pokemart FallarborTown_Mart_Pokemart_Balls
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
+	mart_clerk FallarborTown_Mart_Pokemart_Balls
 
 	.align 2
 FallarborTown_Mart_Pokemart_Balls:

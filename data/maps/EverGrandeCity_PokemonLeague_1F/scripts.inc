@@ -23,17 +23,10 @@ EverGrandeCity_PokemonLeague_1F_EventScript_Nurse::
 	end
 
 EverGrandeCity_PokemonLeague_1F_EventScript_Clerk::
-	default_poke_mart
+	mart_clerk 0
 
 EverGrandeCity_PokemonLeague_1F_EventScript_ClerkMax::
-	lock
-	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
-	pokemart EverGrandeCity_PokemonLeague_1F_Max
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
+	mart_clerk EverGrandeCity_PokemonLeague_1F_Max
 
 	.align 2
 EverGrandeCity_PokemonLeague_1F_Max:

@@ -37,6 +37,7 @@
     - Team Magma are more focused on Ground types than Fire types to avoid overlap with Flannery
     - Pokémon have a more even encounter distribution
 - Tate and Liza give out Psychic instead of Calm Mind (Calm Mind can be found in Slateport)
+- Juan gives out Liquidation instead of Water Pulse (Water Pulse can be found in Slateport)
 - TM moves not in the game are learnable as relearner moves post-Elite Four
 - Pokémon that evolve with an item at day or night now can evolve at any time
 - EVs now give one stat increase for every EV but cap out at 63 (individual)/127 (total). This will lead to the same stats as the old system but easier to train
@@ -230,256 +231,256 @@
 ### TMs:
 |TM #|   Move   |Location|
 |:--:|   :--:   |:------:|
-|TM01|Focus Punch|Route 115|
-|TM02|Dragon Claw|Meteor Falls|
-|TM03|Water Pulse|Juan|
-|TM04|Calm Mind|Slateport TM Shop|
-|TM05|Roar|Route 114|
-|TM06|Toxic|Lavaridge TM Shop|
-|TM07|Hail|Shoal Cave|
-|TM08|Bulk Up|Brawly|
-|TM09|Bullet Seed|Route 104|
-|TM10|Hidden Power|Fortree|
-|TM11|Sunny Day|Scorched Slab|
-|TM12|Taunt|Trick House|
-|TM13|Ice Beam|Abandonded Ship|
-|TM14|Blizzard|Lilycove Department Store|
-|TM15|Hyper Beam|Lilycove Department Store|
-|TM16|Light Screen|Lilycove Department Store|
-|TM17|Protect|Lilycove Department Store|
-|TM18|Rain Dance|Abandonded Ship|
-|TM19|Giga Drain|Route 123|
-|TM20|Safeguard|Lilycove Department Store|
-|TM21|Frustration|Pacifidlog|
-|TM22|Solar Beam|Safari Zone|
-|TM23|Iron Tail|Meteor Falls|
-|TM24|Thunderbolt|Mauville|
-|TM25|Thunder|Lilycove Department Store|
-|TM26|Earthquake|Seafloor Cavern|
-|TM27|Return|Pacifidlog|
-|TM28|Dig|Route 114|
-|TM29|Psychic|Tate/Liza|
-|TM30|Shadow Ball|Mt. Pyre|
-|TM31|Brick Break|Sootopolis|
-|TM32|Double Team|Route 113|
-|TM33|Reflect|Lilycove Department Store|
-|TM34|Shock Wave|Wattson|
-|TM35|Flamethrower|Fiery Path|
-|TM36|Sludge Bomb|Dewford|
-|TM37|Sandstorm|Route 111|
-|TM38|Fire Blast|Lilycove Department Store|
-|TM39|Rock Tomb|Roxanne|
-|TM40|Aerial Ace|Winona|
-|TM41|Torment|Slateport|
-|TM42|Facade|Norman|
-|TM43|Secret Power|Route 111|
-|TM44|Rest|Lilycove|
-|TM45|Attract|Verdanturf|
-|TM46|Thief|Slateport|
-|TM47|Steel Wing|Granite Cave|
-|TM48|Skill Swap|Mt. Pyre|
-|TM49|Snatch|SS Tidal|
-|TM50|Overheat|Flannery|
-|TM51|Roost|Slateport TM Shop|
-|TM52|Focus Blast|Victory Road|
-|TM53|Energy Ball|Lilycove TM Shop|
-|TM54|False Swipe|Slateport TM Shop|
-|TM55|Brine|Lavaridge TM Shop|
-|TM56|Signal Beam|Lavaridge TM Shop|
-|TM57|Supercell Slam|Lilycove TM Shop|
-|TM58|Psychic Fangs|Lilycove TM Shop|
-|TM59|Dragon Pulse|Lilycove TM Shop|
-|TM60|Drain Punch|Lilycove TM Shop|
-|TM61|Will-O-Wisp|Slateport TM Shop|
-|TM62|Silver Wind|Slateport TM Shop|
-|TM63|Dazzling Gleam|Lilycove TM Shop|
-|TM64|Seed Bomb|Lilycove TM Shop|
-|TM65|Shadow Claw|Lilycove TM Shop|
-|TM66|Payback|Lavaridge TM Shop|
-|TM67|Power Gem|Fallarbor|
-|TM68|Giga Impact|Lilycove TM Shop|
-|TM69|Play Rough|Lilycove TM Shop|
-|TM70|Leech Life|Lilycove TM Shop|
-|TM71|Stone Edge|Lilycove TM Shop|
-|TM72|Icicle Crash|Lilycove TM Shop|
-|TM73|Thunder Wave|Slateport TM Shop|
-|TM74|Nasty Plot|Lavaridge TM Shop|
-|TM75|Swords Dance|Lavaridge TM Shop|
-|TM76|Stealth Rock|Lavaridge TM Shop|
-|TM77|Psych Up|Slateport TM Shop|
-|TM78|Crunch|Lilycove TM Shop|
-|TM79|Dark Pulse|Lilycove TM Shop|
-|TM80|Rock Slide|Lilycove TM Shop|
-|TM81|X-Scissor|Lilycove TM Shop|
-|TM82|Night Slash|Lilycove TM Shop|
-|TM83|Iron Head|Lilycove TM Shop|
-|TM84|Poison Jab|Lilycove TM Shop|
-|TM85|Aura Sphere|Lilycove TM Shop|
-|TM86|Grass Knot|Lavaridge TM Shop|
-|TM87|Bug Buzz|Lilycove TM Shop|
-|TM88|Acrobatics|Lilycove TM Shop|
-|TM89|U-turn|Lavaridge TM Shop|
-|TM90|Body Slam|Lilycove TM Shop|
-|TM91|Flash Cannon|Lilycove TM Shop|
-|TM92|Trick Room|Lavaridge TM Shop|
-|TM93|Liquidation|Lilycove TM Shop|
-|TM94|Thunder Punch|Lilycove TM Shop|
-|TM95|Fire Punch|Lilycove TM Shop|
-|TM96|Ice Punch|Lilycove TM Shop|
-|TM97|Earth Power|Lilycove TM Shop|
-|TM98|Air Slash|Lilycove TM Shop|
-|TM99|Body Press|Lilycove TM Shop|
-|TM100|Moonblast|Lilycove TM Shop|
-|TM101|Cut|Rustboro|
-|TM102|Fly|Route 119|
-|TM103|Surf|Petalburg|
-|TM104|Strength|Rusturf Tunnel|
-|TM105|Flash|Granite Cave|
-|TM106|Rock Smash|Mauville|
-|TM107|Waterfall|Sootopolis|
-|TM108|Dive|Mossdeep|
-|TM109|Trick|Slateport TM Shop|
-|TM110|Blaze Kick|???|
-|TM111|Aqua Tail|???|
-|TM112|Zing Zap|???|
-|TM113|Tailwind|???|
-|TM114|Sky Uppercut|???|
-|TM115|Struggle Bug|Slateport TM Shop|
-|TM116|Psybeam|???|
-|TM117|Hyper Voice|???|
-|TM118|Heat Wave|???|
-|TM119|Disarming Voice|???|
-|TM120|Trailblaze|Slateport TM Shop|
-|TM121|Heavy Slam|???|
-|TM122|Encore|Slateport TM Shop|
-|TM123|Drill Run|???|
-|TM124|Ice Spinner|???|
-|TM125|Acid Spray|Slateport TM Shop|
-|TM126|Agility|???|
-|TM127|Air Cutter|???|
-|TM128|Amnesia|???|
-|TM129|Avalanche|???|
-|TM130|Helping Hand|Slateport TM Shop|
-|TM131|Pollen Puff|???|
-|TM132|Baton Pass|???|
-|TM133|Bulldoze|???|
-|TM134|Reversal|???|
-|TM135|Charge Beam|Slateport TM Shop|
-|TM136|Electric Terrain|???|
-|TM137|Grassy Terrain|???|
-|TM138|Psychic Terrain|???|
-|TM139|Misty Terrain|???|
-|TM140|Charm|???|
-|TM141|Chilling Water|Slateport TM Shop|
-|TM142|Hydro Pump|???|
-|TM143|Confuse Ray|???|
-|TM144|Fire Pledge|???|
-|TM145|Water Pledge|???|
-|TM146|Grass Pledge|???|
-|TM147|Wild Charge|???|
-|TM148|Dragon Tail|???|
-|TM149|Draining Kiss|???|
-|TM150|Eerie Impulse|???|
-|TM151|Phantom Force|???|
-|TM152|Electro Ball|???|
-|TM153|Blast Burn|???|
-|TM154|Hydro Cannon|???|
-|TM155|Frenzy Plant|???|
-|TM156|Outrage|???|
-|TM157|Fake Tears|???|
-|TM158|Fire Spin|Slateport TM Shop|
-|TM159|Leaf Storm|???|
-|TM160|Hurricane|???|
-|TM161|Thunder Fang|???|
-|TM162|Fire Fang|???|
-|TM163|Ice Fang|???|
-|TM164|Brave Bird|???|
-|TM165|Flare Blitz|???|
-|TM166|Flame Charge|Slateport TM Shop|
-|TM167|Close Combat|???|
-|TM168|Fling|???|
-|TM169|Draco Meteor|???|
-|TM170|Steel Beam|???|
-|TM171|Foul Play|???|
-|TM172|Gunk Shot|???|
-|TM173|Charge|Slateport TM Shop|
-|TM174|Haze|Slateport TM Shop|
-|TM175|Hex|???|
-|TM176|Sand Tomb|Slateport TM Shop|
-|TM177|Spite|???|
-|TM178|Gravity|???|
-|TM179|Smack Down|Slateport TM Shop|
-|TM180|Gyro Ball|???|
-|TM181|Knock Off|???|
-|TM182|Bug Bite|???|
-|TM183|Super Fang|???|
-|TM184|Vacuum Wave|???|
-|TM185|Lunge|???|
-|TM186|High Horsepower|???|
-|TM187|Icicle Spear|???|
-|TM188|Scald|???|
-|TM189|Heat Crash|???|
-|TM190|Solar Blade|???|
-|TM191|Uproar|???|
-|TM192|Metal Claw|Slateport TM Shop|
-|TM193|Poison Tail|???|
-|TM194|Grassy Glide|???|
-|TM195|Burning Jealousy|???|
-|TM196|Flip Turn|???|
-|TM197|Dual Wingbeat|???|
-|TM198|Poltergeist|???|
-|TM199|Lash Out|???|
-|TM200|Scale Shot|???|
-|TM201|Misty Explosion|???|
-|TM202|Pain Split|???|
-|TM203|Night Shade|???|
-|TM204|Smart Strike|???|
-|TM205|Endeavor|???|
-|TM206|Petal Blizzard|???|
-|TM207|Temper Flare|???|
-|TM208|Whirlpool|Slateport TM Shop|
-|TM209|Muddy Water|???|
-|TM210|Stomping Tantrum|???|
-|TM211|Electroweb|???|
-|TM212|Triple Axel|???|
-|TM213|Coaching|???|
-|TM214|Sludge Wave|???|
-|TM215|Scorching Sands|???|
-|TM216|Feather Dance|???|
-|TM217|Future Sight|???|
-|TM218|Expanding Force|???|
-|TM219|Skitter Smack|???|
-|TM220|Meteor Beam|???|
-|TM221|Throat Chop|???|
-|TM222|Breaking Swipe|???|
-|TM223|Metal Sound|???|
-|TM224|Curse|???|
-|TM225|Hard Press|???|
-|TM226|Dragon Cheer|???|
-|TM227|Alluring Voice|???|
-|TM228|Psychic Noise|???|
-|TM229|Upper Hand|???|
-|TM230|Zen Headbutt|???|
-|TM231|Psycho Cut|???|
-|TM232|Iron Defense|???|
-|TM233|Dragon Dance|???|
-|TM234|Icy Wind|???|
-|TM235|Swift|???|
-|TM236|Psyshock|???|
-|TM237|Magical Leaf|???|
-|TM238|Mud Shot|???|
-|TM239|Spikes|???|
-|TM240|Toxic Spikes|???|
-|TM241|Venoshock|???|
-|TM242|Volt Switch|???|
-|TM243|Snarl|???|
-|TM244|Weather Ball|???|
-|TM245|Seismic Toss|???|
-|TM246|Counter|???|
-|TM247|Dream Eater|???|
-|TM248|Pounce|Slateport TM Shop|
-|TM249|Leaf Blade|???|
-|TM250|Rising Voltage|???|
+|TM001|Focus Punch|Route 115|
+|TM002|Dragon Claw|Meteor Falls|
+|TM003|Water Pulse|Slateport TM Shop|
+|TM004|Calm Mind|Slateport TM Shop|
+|TM005|Roar|Route 114|
+|TM006|Toxic|Fortree TM Shop|
+|TM007|Hail|Shoal Cave|
+|TM008|Bulk Up|Brawly|
+|TM009|Bullet Seed|Route 104|
+|TM010|Hidden Power|Fortree|
+|TM011|Sunny Day|Scorched Slab|
+|TM012|Taunt|Trick House|
+|TM013|Ice Beam|Abandonded Ship|
+|TM014|Blizzard|Lilycove Department Store|
+|TM015|Hyper Beam|Lilycove Department Store|
+|TM016|Light Screen|Fortree TM Shop|
+|TM017|Protect|Fortree TM Shop|
+|TM018|Rain Dance|Abandonded Ship|
+|TM019|Giga Drain|Fortree TM Shop|
+|TM020|Safeguard|Fortree TM Shop|
+|TM021|Frustration|Pacifidlog|
+|TM022|Solar Beam|Safari Zone|
+|TM023|Iron Tail|Meteor Falls|
+|TM024|Thunderbolt|Mauville|
+|TM025|Thunder|Lilycove Department Store|
+|TM026|Earthquake|Seafloor Cavern|
+|TM027|Return|Pacifidlog|
+|TM028|Dig|Route 114|
+|TM029|Psychic|Tate/Liza|
+|TM030|Shadow Ball|Mt. Pyre|
+|TM031|Brick Break|Sootopolis|
+|TM032|Double Team|Route 113|
+|TM033|Reflect|Fortree TM Shop|
+|TM034|Shock Wave|Wattson|
+|TM035|Flamethrower|Fiery Path|
+|TM036|Sludge Bomb|Dewford|
+|TM037|Sandstorm|Route 111|
+|TM038|Fire Blast|Lilycove Department Store|
+|TM039|Rock Tomb|Roxanne|
+|TM040|Aerial Ace|Winona|
+|TM041|Torment|Slateport|
+|TM042|Facade|Norman|
+|TM043|Secret Power|Route 111|
+|TM044|Rest|Lilycove|
+|TM045|Attract|Verdanturf|
+|TM046|Thief|Slateport|
+|TM047|Steel Wing|Granite Cave|
+|TM048|Skill Swap|Mt. Pyre|
+|TM049|Snatch|SS Tidal|
+|TM050|Overheat|Flannery|
+|TM051|Cut|Rustboro|
+|TM052|Fly|Route 119|
+|TM053|Surf|Petalburg|
+|TM054|Strength|Rusturf Tunnel|
+|TM055|Flash|Granite Cave|
+|TM056|Rock Smash|Mauville|
+|TM057|Waterfall|Sootopolis|
+|TM058|Dive|Mossdeep|
+|TM059|False Swipe|Slateport TM Shop|
+|TM060|Fire Spin|Slateport TM Shop|
+|TM061|Whirlpool|Slateport TM Shop|
+|TM062|Sand Tomb|Slateport TM Shop|
+|TM063|Acid Spray|Slateport TM Shop|
+|TM064|Metal Claw|Slateport TM Shop|
+|TM065|Smack Down|Slateport TM Shop|
+|TM066|Flame Charge|Slateport TM Shop|
+|TM067|Trailblaze|Slateport TM Shop|
+|TM068|Struggle Bug|Slateport TM Shop|
+|TM069|Pounce|Slateport TM Shop|
+|TM070|Chilling Water|Slateport TM Shop|
+|TM071|Psych Up|Slateport TM Shop|
+|TM072|Trick|Slateport TM Shop|
+|TM073|Encore|Slateport TM Shop|
+|TM074|Haze|Slateport TM Shop|
+|TM075|Helping Hand|Slateport TM Shop|
+|TM076|Charge Beam|Mauville TM Shop|
+|TM077|Vacuum Wave|Mauville TM Shop|
+|TM078|Icicle Spear|Mauville TM Shop|
+|TM079|Poison Tail|Mauville TM Shop|
+|TM080|Draining Kiss|Mauville TM Shop|
+|TM081|Electroweb|Mauville TM Shop|
+|TM082|Icy Wind|Mauville TM Shop|
+|TM083|Mud Shot|Mauville TM Shop|
+|TM084|Snarl|Mauville TM Shop|
+|TM085|Air Cutter|Mauville TM Shop|
+|TM086|Psybeam|Mauville TM Shop|
+|TM087|Silver Wind|Slateport TM Shop|
+|TM088|Bug Bite|Mauville TM Shop|
+|TM089|Bulldoze|Mauville TM Shop|
+|TM090|Breaking Swipe|Mauville TM Shop|
+|TM091|Dragon Tail|Mauville TM Shop|
+|TM092|Swift|Mauville TM Shop|
+|TM093|Magical Leaf|Mauville TM Shop|
+|TM094|Disarming Voice|Mauville TM Shop|
+|TM095|Thunder Fang|Mauville TM Shop|
+|TM096|Fire Fang|Mauville TM Shop|
+|TM097|Ice Fang|Mauville TM Shop|
+|TM098|Thunder Wave|Mauville TM Shop|
+|TM099|Will-O-Wisp|Mauville TM Shop|
+|TM100|Confuse Ray|Mauville TM Shop|
+|TM101|Charge|Mauville TM Shop|
+|TM102|Knock Off|Lavaridge TM Shop|
+|TM103|Payback|Lavaridge TM Shop|
+|TM104|Avalanche|Lavaridge TM Shop|
+|TM105|Brine|Lavaridge TM Shop|
+|TM106|Hex|Lavaridge TM Shop|
+|TM107|Venoshock|Lavaridge TM Shop|
+|TM108|U-turn|Lavaridge TM Shop|
+|TM109|Volt Switch|Lavaridge TM Shop|
+|TM110|Flip Turn|Lavaridge TM Shop|
+|TM111|Heat Crash|Lavaridge TM Shop|
+|TM112|Heavy Slam|Lavaridge TM Shop|
+|TM113|Seismic Toss|Lavaridge TM Shop|
+|TM114|Night Shade|Lavaridge TM Shop|
+|TM115|Reversal|Lavaridge TM Shop|
+|TM116|Grass Knot|Lavaridge TM Shop|
+|TM117|Gyro Ball|Lavaridge TM Shop|
+|TM118|Electro Ball|Lavaridge TM Shop|
+|TM119|Super Fang|Lavaridge TM Shop|
+|TM120|Foul Play|Lavaridge TM Shop|
+|TM121|Counter|Lavaridge TM Shop|
+|TM122|Endeavor|Lavaridge TM Shop|
+|TM123|Fling|Lavaridge TM Shop|
+|TM124|Swords Dance|Lavaridge TM Shop|
+|TM125|Nasty Plot|Lavaridge TM Shop|
+|TM126|Iron Defense|Lavaridge TM Shop|
+|TM127|Amnesia|Lavaridge TM Shop|
+|TM128|Agility|Lavaridge TM Shop|
+|TM129|Dragon Dance|Lavaridge TM Shop|
+|TM130|Charm|Lavaridge TM Shop|
+|TM131|Feather Dance|Lavaridge TM Shop|
+|TM132|Eerie Impulse|Lavaridge TM Shop|
+|TM133|Metal Sound|Lavaridge TM Shop|
+|TM134|Fake Tears|Lavaridge TM Shop|
+|TM135|Coaching|Lavaridge TM Shop|
+|TM136|Spikes|Lavaridge TM Shop|
+|TM137|Toxic Spikes|Lavaridge TM Shop|
+|TM138|Stealth Rock|Lavaridge TM Shop|
+|TM139|Baton Pass|Lavaridge TM Shop|
+|TM140|Trick Room|Lavaridge TM Shop|
+|TM141|Pain Split|Lavaridge TM Shop|
+|TM142|Spite|Lavaridge TM Shop|
+|TM143|Gravity|Lavaridge TM Shop|
+|TM144|Weather Ball|Fortree TM Shop|
+|TM145|Psycho Cut|Fortree TM Shop|
+|TM146|Shadow Claw|Fortree TM Shop|
+|TM147|Night Slash|Fortree TM Shop|
+|TM148|Skitter Smack|Fortree TM Shop|
+|TM149|Grassy Glide|Fortree TM Shop|
+|TM150|Rising Voltage|Fortree TM Shop|
+|TM151|Expanding Force|Fortree TM Shop|
+|TM152|Smart Strike|Fortree TM Shop|
+|TM153|Scorching Sands|Fortree TM Shop|
+|TM154|Burning Jealousy|Fortree TM Shop|
+|TM155|Thunder Punch|Fortree TM Shop|
+|TM156|Fire Punch|Fortree TM Shop|
+|TM157|Ice Punch|Fortree TM Shop|
+|TM158|Drain Punch|Lilycove TM Shop|
+|TM159|Stomping Tantrum|Fortree TM Shop|
+|TM160|Temper Flare|Fortree TM Shop|
+|TM161|Lash Out|Fortree TM Shop|
+|TM162|Psychic Noise|Fortree TM Shop|
+|TM163|Seed Bomb|Fortree TM Shop|
+|TM164|X-Scissor|Fortree TM Shop|
+|TM165|Signal Beam|Fortree TM Shop|
+|TM166|Zen Headbutt|Fortree TM Shop|
+|TM167|Drill Run|Fortree TM Shop|
+|TM168|Dual Wingbeat|Fortree TM Shop|
+|TM169|Ice Spinner|Fortree TM Shop|
+|TM170|Dazzling Gleam|Fortree TM Shop|
+|TM171|Alluring Voice|Fortree TM Shop|
+|TM172|Muddy Water|Fortree TM Shop|
+|TM173|Uproar|Fortree TM Shop|
+|TM174|Scale Shot|Fortree TM Shop|
+|TM175|Upper Hand|Fortree TM Shop|
+|TM176|Hard Press|Fortree TM Shop|
+|TM177|Roost|Fortree TM Shop|
+|TM178|Tailwind|Fortree TM Shop|
+|TM179|Curse|Fortree TM Shop|
+|TM180|Dragon Cheer|Fortree TM Shop|
+|TM181|Body Slam|Lilycove TM Shop|
+|TM182|Hyper Voice|Lilycove TM Shop|
+|TM183|Blaze Kick|Lilycove TM Shop|
+|TM184|Heat Wave|Lilycove TM Shop|
+|TM185|Liquidation|Juan|
+|TM186|Aqua Tail|Lilycove TM Shop|
+|TM187|Scald|Lilycove TM Shop|
+|TM188|Leaf Blade|Route 123|
+|TM189|Petal Blizzard|Lilycove TM Shop|
+|TM190|Energy Ball|Lilycove TM Shop|
+|TM191|Zing Zap|Lilycove TM Shop|
+|TM192|Icicle Crash|Lilycove TM Shop|
+|TM193|Sky Uppercut|Lilycove TM Shop|
+|TM194|Aura Sphere|Lilycove TM Shop|
+|TM195|Poison Jab|Lilycove TM Shop|
+|TM196|Sludge Wave|Lilycove TM Shop|
+|TM197|High Horsepower|Lilycove TM Shop|
+|TM198|Earth Power|Lilycove TM Shop|
+|TM199|Acrobatics|Lilycove TM Shop|
+|TM200|Air Slash|Lilycove TM Shop|
+|TM201|Psychic Fangs|Lilycove TM Shop|
+|TM202|Psyshock|Lilycove TM Shop|
+|TM203|Leech Life|Lilycove TM Shop|
+|TM204|Lunge|Lilycove TM Shop|
+|TM205|Bug Buzz|Lilycove TM Shop|
+|TM206|Pollen Puff|Lilycove TM Shop|
+|TM207|Rock Slide|Lilycove TM Shop|
+|TM208|Power Gem|Fallarbor|
+|TM209|Phantom Force|Lilycove TM Shop|
+|TM210|Dragon Pulse|Lilycove TM Shop|
+|TM211|Crunch|Lilycove TM Shop|
+|TM212|Throat Chop|Lilycove TM Shop|
+|TM213|Dark Pulse|Lilycove TM Shop|
+|TM214|Iron Head|Lilycove TM Shop|
+|TM215|Flash Cannon|Lilycove TM Shop|
+|TM216|Play Rough|Lilycove TM Shop|
+|TM217|Moonblast|Lilycove TM Shop|
+|TM218|Body Press|Lilycove TM Shop|
+|TM219|Fire Pledge|Lilycove TM Shop|
+|TM220|Water Pledge|Lilycove TM Shop|
+|TM221|Grass Pledge|Lilycove TM Shop|
+|TM222|Electric Terrain|Lilycove TM Shop|
+|TM223|Grassy Terrain|Lilycove TM Shop|
+|TM224|Psychic Terrain|Lilycove TM Shop|
+|TM225|Misty Terrain|Lilycove TM Shop|
+|TM226|Giga Impact|Lilycove TM Shop|
+|TM227|Hydro Pump|Lilycove TM Shop|
+|TM228|Hurricane|Lilycove TM Shop|
+|TM229|Gunk Shot|Lilycove TM Shop|
+|TM230|Focus Blast|Victory Road|
+|TM231|Stone Edge|Lilycove TM Shop|
+|TM232|Blast Burn|Lilycove TM Shop|
+|TM233|Hydro Cannon|Lilycove TM Shop|
+|TM234|Frenzy Plant|Lilycove TM Shop|
+|TM235|Flare Blitz|Lilycove TM Shop|
+|TM236|Brave Bird|Lilycove TM Shop|
+|TM237|Wild Charge|Lilycove TM Shop|
+|TM238|Leaf Storm|Lilycove TM Shop|
+|TM239|Draco Meteor|Lilycove TM Shop|
+|TM240|Close Combat|Lilycove TM Shop|
+|TM241|Solar Blade|Lilycove TM Shop|
+|TM242|Outrage|Lilycove TM Shop|
+|TM243|Future Sight|Lilycove TM Shop|
+|TM244|Dream Eater|Lilycove TM Shop|
+|TM245|Misty Explosion|Lilycove TM Shop|
+|TM246|Meteor Beam|Lilycove TM Shop|
+|TM247|Steel Beam|Lilycove TM Shop|
+|TM248|Triple Axel|Lilycove TM Shop|
+|TM249|Poltergeist|Lilycove TM Shop|
+|TM250|Supercell Slam|Lilycove TM Shop|
 
 ### Move Tutors:
 #### Mainland:
@@ -727,6 +728,8 @@
         - Power: 75->80
     - Silver Wind:
         - PP: 5->10
+    - Skitter Smack:
+        - Accuracy: 90->100
     - Twineedle:
         - Power: 25->50
     - X-Scissor:
@@ -2792,7 +2795,7 @@
 - Castform:
     - All stats: 70->80
     - Learns Swift, Surf, Flamethrower, Ice Beam, Thunder, and Solar Beam by level up
-    - Learns Overheat and Heat Wave by TM
+    - Learns Overheat, Heat Wave, Icy Wind, and Liquidation by TM
     - Learns Gust, Twister, and Fairy Wind by Egg Move
 
 - Kecleon:
@@ -2843,6 +2846,7 @@
     - Holding a Deep Sea Tooth multiplies its Attack by 1.5
     - Atk: 104->114
     - Learns Waterfall by level up
+    - Learns Liquidation by TM
 
 - Gorebyss:
     - Holding a Deep Sea Scale multiplies its Defense by 1.5

@@ -2,7 +2,10 @@ FortreeCity_Mart_MapScripts::
 	.byte 0
 
 FortreeCity_Mart_EventScript_Clerk::
-	default_poke_mart
+	mart_clerk 0
+
+FortreeCity_Mart_EventScript_TMClerk::
+	mart_clerk FortreeCity_Mart_TMs
 
 FortreeCity_Mart_EventScript_Woman::
 	msgbox FortreeCity_Mart_Text_SuperRepelBetter, MSGBOX_NPC

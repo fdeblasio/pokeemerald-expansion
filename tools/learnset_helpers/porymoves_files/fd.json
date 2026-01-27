@@ -4849,12 +4849,13 @@
     "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_OVERHEAT",
-      "MOVE_HEAT_WAVE"
+      "MOVE_HEAT_WAVE",
+      "MOVE_ICY_WIND",
+      "MOVE_LIQUIDATION"
     ],
     "EggMoves": [
       "MOVE_GUST",
       "MOVE_TWISTER",
-      "MOVE_ICY_WIND",
       "MOVE_FAIRY_WIND"
     ],
     "TutorMoves": []
@@ -5035,7 +5036,7 @@
       {"Level": 26, "Move": "MOVE_WATERFALL"}
     ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": ["MOVE_LIQUIDATION"],
     "EggMoves": [],
     "TutorMoves": []
   },

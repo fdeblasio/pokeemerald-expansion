@@ -199,7 +199,7 @@
 #define FLAG_RECEIVED_TM_FACADE              0xA9
 #define FLAG_RECEIVED_TM_AERIAL_ACE          0xAA
 #define FLAG_RECEIVED_TM_PSYCHIC             0xAB
-#define FLAG_RECEIVED_TM_WATER_PULSE         0xAC
+#define FLAG_RECEIVED_TM_LIQUIDATION         0xAC
 #define FLAG_HIDE_SECRET_BASE_TRAINER        0xAD
 #define FLAG_DECORATION_1                    0xAE
 #define FLAG_DECORATION_2                    0xAF
@@ -261,7 +261,7 @@
 #define FLAG_RECEIVED_TM_POWER_GEM           0xE5
 #define FLAG_RECEIVED_TM_SLUDGE_BOMB         0xE6
 #define FLAG_RECEIVED_TM_ROAR                0xE7
-#define FLAG_RECEIVED_TM_GIGA_DRAIN          0xE8
+#define FLAG_RECEIVED_TM_LEAF_BLADE          0xE8
 #define FLAG_RECEIVED_TM_REST                0xE9
 #define FLAG_RECEIVED_TM_ATTRACT             0xEA
 #define FLAG_RECEIVED_GLASS_ORNAMENT         0xEB

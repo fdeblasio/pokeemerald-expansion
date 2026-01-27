@@ -9266,6 +9266,78 @@ const struct ItemInfo gItemsInfo[] =
             "lowers Sp. Atk."),
     },
 
+    [ITEM_TM_CUT] =
+    {
+        TM_INFO("051"),
+        .description = COMPOUND_STRING(
+            "Attacks the foe\n"
+            "with sharp blades\n"
+            "or claws."),
+    },
+
+    [ITEM_TM_FLY] =
+    {
+        TM_INFO("052"),
+        .description = COMPOUND_STRING(
+            "Flies up on the\n"
+            "first turn, then\n"
+            "attacks next turn."),
+    },
+
+    [ITEM_TM_SURF] =
+    {
+        TM_INFO("053"),
+        .description = COMPOUND_STRING(
+            "Creates a huge\n"
+            "wave, then crashes\n"
+            "it down on the foe."),
+    },
+
+    [ITEM_TM_STRENGTH] =
+    {
+        TM_INFO("054"),
+        .description = COMPOUND_STRING(
+            "Builds enormous\n"
+            "power, then slams\n"
+            "the foe."),
+    },
+
+    [ITEM_TM_FLASH] =
+    {
+        TM_INFO("055"),
+        .description = COMPOUND_STRING(
+            "Looses a powerful\n"
+            "blast of light that\n"
+            "reduces accuracy."),
+    },
+
+    [ITEM_TM_ROCK_SMASH] =
+    {
+        TM_INFO("056"),
+        .description = COMPOUND_STRING(
+            "A rock-crushingly\n"
+            "tough attack that\n"
+            "may lower Defense."),
+    },
+
+    [ITEM_TM_WATERFALL] =
+    {
+        TM_INFO("057"),
+        .description = COMPOUND_STRING(
+            "Attacks the foe\n"
+            "with enough power\n"
+            "to climb waterfalls."),
+    },
+
+    [ITEM_TM_DIVE] =
+    {
+        TM_INFO("058"),
+        .description = COMPOUND_STRING(
+            "Dives underwater\n"
+            "the 1st turn, then\n"
+            "attacks next turn."),
+    },
+
 #define EXTRA_TM_INFO(Number)               \
     [ITEM_TM##Number] =                     \
     {                                       \
@@ -9273,14 +9345,6 @@ const struct ItemInfo gItemsInfo[] =
         .description = COMPOUND_STRING(""), \
     }
 
-    EXTRA_TM_INFO(051),
-    EXTRA_TM_INFO(052),
-    EXTRA_TM_INFO(053),
-    EXTRA_TM_INFO(054),
-    EXTRA_TM_INFO(055),
-    EXTRA_TM_INFO(056),
-    EXTRA_TM_INFO(057),
-    EXTRA_TM_INFO(058),
     EXTRA_TM_INFO(059),
     EXTRA_TM_INFO(060),
     EXTRA_TM_INFO(061),
@@ -9323,79 +9387,14 @@ const struct ItemInfo gItemsInfo[] =
     EXTRA_TM_INFO(098),
     EXTRA_TM_INFO(099),
     EXTRA_TM_INFO(100),
-
-    [ITEM_TM_CUT] =
-    {
-        TM_INFO("101"),
-        .description = COMPOUND_STRING(
-            "Attacks the foe\n"
-            "with sharp blades\n"
-            "or claws."),
-    },
-
-    [ITEM_TM_FLY] =
-    {
-        TM_INFO("102"),
-        .description = COMPOUND_STRING(
-            "Flies up on the\n"
-            "first turn, then\n"
-            "attacks next turn."),
-    },
-
-    [ITEM_TM_SURF] =
-    {
-        TM_INFO("103"),
-        .description = COMPOUND_STRING(
-            "Creates a huge\n"
-            "wave, then crashes\n"
-            "it down on the foe."),
-    },
-
-    [ITEM_TM_STRENGTH] =
-    {
-        TM_INFO("104"),
-        .description = COMPOUND_STRING(
-            "Builds enormous\n"
-            "power, then slams\n"
-            "the foe."),
-    },
-
-    [ITEM_TM_FLASH] =
-    {
-        TM_INFO("105"),
-        .description = COMPOUND_STRING(
-            "Looses a powerful\n"
-            "blast of light that\n"
-            "reduces accuracy."),
-    },
-
-    [ITEM_TM_ROCK_SMASH] =
-    {
-        TM_INFO("106"),
-        .description = COMPOUND_STRING(
-            "A rock-crushingly\n"
-            "tough attack that\n"
-            "may lower Defense."),
-    },
-
-    [ITEM_TM_WATERFALL] =
-    {
-        TM_INFO("107"),
-        .description = COMPOUND_STRING(
-            "Attacks the foe\n"
-            "with enough power\n"
-            "to climb waterfalls."),
-    },
-
-    [ITEM_TM_DIVE] =
-    {
-        TM_INFO("108"),
-        .description = COMPOUND_STRING(
-            "Dives underwater\n"
-            "the 1st turn, then\n"
-            "attacks next turn."),
-    },
-
+    EXTRA_TM_INFO(101),
+    EXTRA_TM_INFO(102),
+    EXTRA_TM_INFO(103),
+    EXTRA_TM_INFO(104),
+    EXTRA_TM_INFO(105),
+    EXTRA_TM_INFO(106),
+    EXTRA_TM_INFO(107),
+    EXTRA_TM_INFO(108),
     EXTRA_TM_INFO(109),
     EXTRA_TM_INFO(110),
     EXTRA_TM_INFO(111),

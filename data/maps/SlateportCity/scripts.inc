@@ -534,14 +534,7 @@ SlateportCity_PokemartDecor:
 	pokemartlistend
 
 SlateportCity_EventScript_TMClerk::
-	lock
-	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
-	pokemart SlateportCity_Market_TMs
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
+	mart_clerk SlateportCity_Market_TMs
 
 @ Scene with Capt Sterns interview and Team Aqua announcing plans to steal Submarine
 SlateportCity_EventScript_CaptStern::

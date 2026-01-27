@@ -14,34 +14,13 @@ LilycoveCity_DepartmentStore_4F_EventScript_Youngster::
 	end
 
 LilycoveCity_DepartmentStore_4F_EventScript_ClerkLeft::
-	lock
-	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
-	pokemart LilycoveCity_DepartmentStore_4F_Pokemart_OldTMs
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
+	mart_clerk LilycoveCity_DepartmentStore_4F_Pokemart_StrongTMs
 
 LilycoveCity_DepartmentStore_4F_EventScript_ClerkMegaStones::
-	lock
-	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
-	pokemart LilycoveCity_DepartmentStore_4F_Pokemart_MegaStones
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
+	mart_clerk LilycoveCity_DepartmentStore_4F_Pokemart_MegaStones
 
 LilycoveCity_DepartmentStore_4F_EventScript_ClerkRight::
-	lock
-	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
-	pokemart LilycoveCity_DepartmentStore_4F_Pokemart_NewTMs
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
+	mart_clerk LilycoveCity_DepartmentStore_4F_Pokemart_TMs
 
 LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM:
 	.string "Hmm…\p"

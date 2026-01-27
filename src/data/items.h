@@ -8804,9 +8804,9 @@ const struct ItemInfo gItemsInfo[] =
     .name = ITEM_NAME("TM"Number), \
     .price = 1000,                 \
     .importance = I_REUSABLE_TMS,  \
-    .pocket = POCKET_TM_HM,        \
+    .pocket = POCKET_TM,           \
     .type = ITEM_USE_PARTY_MENU,   \
-    .fieldUseFunc = ItemUseOutOfBattle_TMHM
+    .fieldUseFunc = ItemUseOutOfBattle_TM
 
     [ITEM_TM_FOCUS_PUNCH] =
     {

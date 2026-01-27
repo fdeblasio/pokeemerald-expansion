@@ -600,7 +600,7 @@
 - Icicle Spear
 - Imprison
 
-#### Battle Frontier Right: (Swimmer, hard, yet pretty)
+#### Battle Frontier Right:
 - Low Kick
 - Low Sweep
 - Defense Curl

@@ -805,9 +805,12 @@ static void BuyMenuBuildListMenuTemplate(void)
 
 static void BuyMenuSetListEntry(struct ListMenuItem *menuItem, enum Item item, u8 *name)
 {
-    if (sMartInfo.martType == MART_TYPE_NORMAL)
-        CopyItemName(item, name);
-    else
+    if (sMartInfo.martType == MART_TYPE_NORMAL) {
+        if (GetItemPocket(item) == POCKET_TM)
+            StringCopy(name, GetMoveName(ItemIdToBattleMoveId(item)));
+        else
+            CopyItemName(item, name);
+    } else
         StringCopy(name, gDecorations[item].name);
 
     menuItem->name = name;
@@ -829,9 +832,12 @@ static void BuyMenuPrintItemDescriptionAndShowItemIcon(s32 item, bool8 onInit, s
     sShopData->iconSlot ^= 1;
     if (item != LIST_CANCEL)
     {
-        if (sMartInfo.martType == MART_TYPE_NORMAL)
-            description = GetItemDescription(item);
-        else
+        if (sMartInfo.martType == MART_TYPE_NORMAL) {
+            //if (GetItemPocket(item) == POCKET_TM)
+            //    description = GetMoveDescription(ItemIdToBattleMoveId(item));
+            //else
+                description = GetItemDescription(item);
+        } else
             description = gDecorations[item].description;
     }
     else

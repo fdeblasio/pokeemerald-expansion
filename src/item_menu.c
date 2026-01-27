@@ -1020,7 +1020,10 @@ static void PrintItemDescription(int itemIndex)
     const u8 *str;
     if (itemIndex != LIST_CANCEL)
     {
-        str = GetItemDescription(GetBagItemId(gBagPosition.pocket, itemIndex));
+        //if (gBagPosition.pocket == POCKET_TM)
+        //    str = GetMoveDescription(ItemIdToBattleMoveId(GetBagItemId(gBagPosition.pocket, itemIndex)));
+        //else
+            str = GetItemDescription(GetBagItemId(gBagPosition.pocket, itemIndex));
     }
     else
     {

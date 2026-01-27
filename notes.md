@@ -209,6 +209,8 @@ upcoming
 
 ### Items
 - Add new TMs to shops/overworld
+- Find way to properly set TM description (in both shop.c and item_menu.c) to move's description
+    - Move is currently on two lines, item is on 3 so the move gets cut off
 - Add charms (no longer have to worry about space)
 - See if it's possible to give the item PC and decoration PC more room
 - Max Elixir (and others?) should stay on party screen like Full Restores do

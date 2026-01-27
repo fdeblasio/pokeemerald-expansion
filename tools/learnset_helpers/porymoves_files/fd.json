@@ -1157,7 +1157,7 @@
     "PreEvoMoves": [],
     "TMMoves": ["MOVE_POISON_TAIL"],
     "EggMoves": [],
-    "TutorMoves": ["MOVE_POISON_TAIL"]
+    "TutorMoves": []
   },
   "SLOWKING_GALAR": {
     "LevelMoves": [
@@ -9803,7 +9803,7 @@
     "PreEvoMoves": [],
     "TMMoves": ["MOVE_ICE_FANG"],
     "EggMoves": [],
-    "TutorMoves": ["MOVE_ICE_FANG"]
+    "TutorMoves": []
   },
   "ROLYCOLY": {
     "LevelMoves": [

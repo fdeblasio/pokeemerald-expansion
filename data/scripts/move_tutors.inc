@@ -160,32 +160,6 @@ MoveTutor_EventScript_ExplosionTaught::
 	release
 	end
 
-.macro evergrandetutor move:req
-	move_tutor \move, MoveTutor_Text_EverGrandeTeach, MoveTutor_Text_EverGrandeWhichMon, MoveTutor_EventScript_EverGrandeMoveDeclined, MoveTutor_EventScript_EverGrandeMoveTaught
-.endm
-
-MoveTutor_EventScript_DrillRunTutor::
-	evergrandetutor MOVE_DRILL_RUN
-	end
-
-MoveTutor_EventScript_HighHorsepowerTutor::
-	evergrandetutor MOVE_HIGH_HORSEPOWER
-	end
-
-MoveTutor_EventScript_TemperFlareTutor::
-	evergrandetutor MOVE_TEMPER_FLARE
-	end
-
-MoveTutor_EventScript_EverGrandeMoveDeclined::
-	msgbox MoveTutor_Text_EverGrandeDeclined, MSGBOX_DEFAULT
-	release
-	end
-
-MoveTutor_EventScript_EverGrandeMoveTaught::
-	msgbox MoveTutor_Text_EverGrandeTaught, MSGBOX_DEFAULT
-	release
-	end
-
 MoveTutor_EventScript_OpenPartyMenu::
 	special ChooseMonForMoveTutor
 	waitstate

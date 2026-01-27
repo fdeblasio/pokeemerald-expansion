@@ -32,7 +32,8 @@ const u8 gNotDoneYetDescription[] = _(
 #define BASIC_40_POWER_INFO \
     BASIC_MOVE,             \
     .power = 40,            \
-    .pp = 40
+    .pp = 40,               \
+    .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING
 
 #define TRAPPING_35_POWER_MOVE(Move)                      \
     .effect = EFFECT_HIT,                                 \
@@ -502,7 +503,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .ignoresKingsRock = B_UPDATED_MOVE_FLAGS == GEN_4,
-        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = COMBO_STARTER_POUND,
         .contestComboMoves = {0},
@@ -701,7 +701,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .type = TYPE_NORMAL,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = COMBO_STARTER_SCRATCH,
         .contestComboMoves = {COMBO_STARTER_LEER},
@@ -841,7 +840,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .ignoresKingsRock = (B_UPDATED_MOVE_FLAGS == GEN_4) || (B_UPDATED_MOVE_FLAGS < GEN_3),
         .damagesAirborneDoubleDamage = B_UPDATED_MOVE_FLAGS >= GEN_2,
         .windMove = TRUE,
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_STARTLE_PREV_MON : CONTEST_EFFECT_SCRAMBLE_NEXT_TURN_ORDER,
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
@@ -1713,7 +1711,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         BASIC_40_POWER_INFO,
         .type = TYPE_WATER,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_CUTE,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_MUD_SPORT, COMBO_STARTER_RAIN_DANCE, COMBO_STARTER_WATER_SPORT},
@@ -1921,7 +1918,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .type = TYPE_FLYING,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = COMBO_STARTER_PECK,
         .contestComboMoves = {0},
@@ -14169,7 +14165,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .type = TYPE_FAIRY,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .windMove = TRUE,
-        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
@@ -15355,7 +15350,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         BASIC_40_POWER_INFO,
         .type = TYPE_GRASS,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_GROWTH},
@@ -16941,7 +16935,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .metronomeBanned = TRUE,
-        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
@@ -19754,7 +19747,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     .description = COMPOUND_STRING("A basic attack."), \
     .type = TYPE_##Type,                               \
     .category = DAMAGE_CATEGORY_##Category,            \
-    .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,  \
     .battleAnimScript = gBattleAnimMove_None
 
     [MOVE_YELP] =

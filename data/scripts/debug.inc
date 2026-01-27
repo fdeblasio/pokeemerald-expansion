@@ -218,8 +218,7 @@ Debug_EventScript_Text_DefensiveIVs:
 	.string "HP IVs: {STR_VAR_1}, Def IVs: {STR_VAR_2}, SpDef IVs: {STR_VAR_3}$"
 
 Debug_EventScript_Script_1::
-	givemon SPECIES_GRANBULL, 100, move1=MOVE_BITE, move2=MOVE_THUNDER_FANG, move3=MOVE_FIRE_FANG, move4=MOVE_ICE_FANG
-	givemon SPECIES_GREEDENT, 100, move1=MOVE_CRUNCH, move2=MOVE_PSYCHIC_FANGS, move3=MOVE_STUFF_CHEEKS, move4=MOVE_SNAP_TRAP
+	givemon SPECIES_QUAGSIRE, 100, move1=MOVE_ICY_WIND, move2=MOVE_MUD_SHOT, move3=MOVE_ELECTROWEB, move4=MOVE_SNARL
 	release
 	end
 

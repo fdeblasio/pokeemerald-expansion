@@ -619,7 +619,7 @@
     - Collision Course:
         - PP: 5->10
     - Dynamic Punch:
-        - Power: 100->150
+        - Power: 100->120
     - Flying Press:
         - Accuracy: 95->100
     - Rolling Kick:
@@ -646,6 +646,8 @@
     - Bleakwind Storm:
         - Power: 100->120
         - Accuracy: 80->100
+    - Dragon Ascent:
+        - PP: 5->10
     - Dual Wingbeat:
         - Accuracy: 90->100
     - Gust:
@@ -690,6 +692,7 @@
         - Accuracy: 85->100
     - Mud Shot:
         - Accuracy: 95->100
+        - Target: One foe->both foes
     - Precipice Blades:
         - Accuracy: 85->100
     - Sandsear Storm:
@@ -797,8 +800,6 @@
     - Wild Charge:
         - Power: 90->120
         - Recoil: 25%->33%
-    - Zap Cannon:
-        - Power: 120->150
 - Fire:
     - Armor Cannon:
         - PP: 5->10
@@ -825,7 +826,7 @@
     - Heat Wave:
         - Power: 95->100
     - Inferno:
-        - Power: 100->150
+        - Power: 100->120
     - Magma Storm:
         - Power: 100->120
         - Accuracy: 75->100

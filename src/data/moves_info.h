@@ -64,6 +64,18 @@ const u8 gNotDoneYetDescription[] = _(
     .pp = 20,            \
     .multiHit = TRUE
 
+#define LOWER_STAT_55_POWER_INFO(Stat)              \
+    .effect = EFFECT_HIT,                           \
+    .power = 55,                                    \
+    .accuracy = 100,                                \
+    .pp = 15,                                       \
+    .target = TARGET_BOTH,                          \
+    .priority = 0,                                  \
+    .additionalEffects = ADDITIONAL_EFFECTS({       \
+        .moveEffect = MOVE_EFFECT_##Stat##_MINUS_1, \
+        .chance = 100,                              \
+    })
+
 #define ALWAYS_HIT_60_POWER_INFO \
     .effect = EFFECT_HIT,        \
     .power = 60,                 \
@@ -82,6 +94,20 @@ const u8 gNotDoneYetDescription[] = _(
         .chance = 10,                                                      \
     }),                                                                    \
     .contestEffect = CONTEST_EFFECT_IMPROVE_CONDITION_PREVENT_NERVOUSNESS, \
+    .validApprenticeMove = TRUE
+
+#define STEAL_ITEM_INFO                              \
+    .effect = EFFECT_STEAL_ITEM,                     \
+    .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 60 : 40, \
+    .accuracy = 100,                                 \
+    .pp = B_UPDATED_MOVE_DATA >= GEN_6 ? 25 : 40,    \
+    .target = TARGET_SELECTED,                       \
+    .priority = 0,                                   \
+    .makesContact = TRUE,                            \
+    .meFirstBanned = TRUE,                           \
+    .metronomeBanned = TRUE,                         \
+    .copycatBanned = TRUE,                           \
+    .assistBanned = TRUE,                            \
     .validApprenticeMove = TRUE
 
 #define SWITCH_TARGET_60_BASE_POWER_INFO    \
@@ -196,6 +222,18 @@ const u8 gNotDoneYetDescription[] = _(
     .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_USER_MORE_EASILY_STARTLED : CONTEST_EFFECT_JAMS_OTHERS_BUT_MISS_ONE_TURN, \
     .validApprenticeMove = TRUE
 
+#define STATUS_HIT_120_POWER_INFO(Status)     \
+    .effect = EFFECT_HIT,                     \
+    .power = 120,                             \
+    .accuracy = 50,                           \
+    .pp = 5,                                  \
+    .target = TARGET_SELECTED,                \
+    .priority = 0,                            \
+    .additionalEffects = ADDITIONAL_EFFECTS({ \
+        .moveEffect = MOVE_EFFECT_##Status,   \
+        .chance = 100,                        \
+    })
+
 #define LOWER_SPECIAL_ATTACK_INFO                 \
     .effect = EFFECT_HIT,                         \
     .target = TARGET_SELECTED,                    \
@@ -239,18 +277,6 @@ const u8 gNotDoneYetDescription[] = _(
     .power = 160,               \
     .accuracy = 100,            \
     .pp = 10
-
-#define STATUS_HIT_150_POWER_INFO(Status)     \
-    .effect = EFFECT_HIT,                     \
-    .power = 150,                             \
-    .accuracy = 50,                           \
-    .pp = 5,                                  \
-    .target = TARGET_SELECTED,                \
-    .priority = 0,                            \
-    .additionalEffects = ADDITIONAL_EFFECTS({ \
-        .moveEffect = MOVE_EFFECT_##Status,   \
-        .chance = 100,                        \
-    })
 
 #define OHKO_INFO              \
     .effect = EFFECT_OHKO,     \
@@ -376,6 +402,20 @@ const u8 gNotDoneYetDescription[] = _(
     .metronomeBanned = TRUE,                  \
     .copycatBanned = TRUE,                    \
     .assistBanned = TRUE
+
+#define WEAKEN_SPORT_INFO                       \
+    .power = 0,                                 \
+    .accuracy = 0,                              \
+    .pp = 15,                                   \
+    .target = TARGET_FIELD,                     \
+    .priority = 0,                              \
+    .category = DAMAGE_CATEGORY_STATUS,         \
+    .zMove = { .effect = Z_EFFECT_SPDEF_UP_1 }, \
+    .ignoresProtect = TRUE,                     \
+    .mirrorMoveBanned = TRUE,                   \
+    .skyBattleBanned = TRUE,                    \
+    .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_EXCITE_AUDIENCE_IN_ANY_CONTEST : CONTEST_EFFECT_HIGHLY_APPEALING, \
+    .validApprenticeMove = TRUE
 
 #define OVERWRITE_ABILITY_INFO(Ability)          \
     .effect = EFFECT_OVERWRITE_ABILITY,          \
@@ -4451,26 +4491,14 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "While attacking, it may\n"
             "steal the foe's held item."),
-        .effect = EFFECT_STEAL_ITEM,
-        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 60 : 40,
+        STEAL_ITEM_INFO,
         .type = TYPE_DARK,
-        .accuracy = 100,
-        .pp = B_UPDATED_MOVE_DATA >= GEN_6 ? 25 : 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
-        .ignoresKingsRock = (B_UPDATED_MOVE_FLAGS == GEN_3 || B_UPDATED_MOVE_FLAGS == GEN_4),
-        .meFirstBanned = TRUE,
-        .metronomeBanned = TRUE,
-        .copycatBanned = TRUE,
-        .assistBanned = TRUE,
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_APPEAL_AS_GOOD_AS_PREV_ONE : CONTEST_EFFECT_APPEAL_AS_GOOD_AS_PREV_ONES,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
         .battleAnimScript = gBattleAnimMove_Thief,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_SPIDER_WEB] =
@@ -5054,7 +5082,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Powerful and sure to cause\n"
             "paralysis, but inaccurate."),
-        STATUS_HIT_150_POWER_INFO(PARALYSIS),
+        STATUS_HIT_120_POWER_INFO(PARALYSIS),
         .type = TYPE_ELECTRIC,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .ballisticMove = TRUE,
@@ -5153,19 +5181,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A chilling attack that\n"
             "lowers the foe's Speed."),
-        .effect = EFFECT_HIT,
-        .power = 55,
+        LOWER_STAT_55_POWER_INFO(SPD),
         .type = TYPE_ICE,
-        .accuracy = 100,
-        .pp = 15,
-        .target = TARGET_BOTH,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .windMove = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SPD_MINUS_1,
-            .chance = 100,
-        }),
         .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
@@ -5836,7 +5855,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Powerful and sure to cause\n"
             "confusion, but inaccurate."),
-        STATUS_HIT_150_POWER_INFO(CONFUSION),
+        STATUS_HIT_120_POWER_INFO(CONFUSION),
         .type = TYPE_FIGHTING,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
@@ -7810,23 +7829,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "weaken all Electric moves."),
         // in theory this should mention 5 turns (gen 6+)
         .effect = EFFECT_MUD_SPORT,
-        .power = 0,
+        WEAKEN_SPORT_INFO,
         .type = TYPE_GROUND,
-        .accuracy = 0,
-        .pp = 15,
-        .target = TARGET_FIELD,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .zMove = { .effect = Z_EFFECT_SPDEF_UP_1 },
-        .ignoresProtect = TRUE,
-        .mirrorMoveBanned = TRUE,
-        .skyBattleBanned = TRUE,
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_EXCITE_AUDIENCE_IN_ANY_CONTEST : CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_CUTE,
         .contestComboStarterId = COMBO_STARTER_MUD_SPORT,
         .contestComboMoves = {COMBO_STARTER_MUD_SLAP, COMBO_STARTER_SANDSTORM, COMBO_STARTER_WATER_SPORT},
         .battleAnimScript = gBattleAnimMove_MudSport,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_ICE_BALL] =
@@ -8752,15 +8760,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Hurls mud at the foe and\n"
             "reduces Speed."),
-        BASIC_MOVE,
-        .power = 55,
+        LOWER_STAT_55_POWER_INFO(SPD),
         .type = TYPE_GROUND,
-        .pp = 15,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SPD_MINUS_1,
-            .chance = 100,
-        }),
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_HIGHLY_APPEALING : CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
@@ -8802,25 +8804,14 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Cutely begs to obtain an\n"
             "item held by the foe."),
-        .effect = EFFECT_STEAL_ITEM,
-        .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 60 : 40,
+        STEAL_ITEM_INFO,
         .type = TYPE_NORMAL,
-        .accuracy = 100,
-        .pp = B_UPDATED_MOVE_DATA >= GEN_6 ? 25 : 40,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = B_UPDATED_MOVE_DATA >= GEN_4,
-        .meFirstBanned = TRUE,
-        .metronomeBanned = TRUE,
-        .copycatBanned = TRUE,
-        .assistBanned = TRUE,
         .contestEffect = CONTEST_EFFECT_APPEAL_AS_GOOD_AS_PREV_ONES,
         .contestCategory = CONTEST_CATEGORY_CUTE,
         .contestComboStarterId = COMBO_STARTER_COVET,
         .contestComboMoves = {0},
         .battleAnimScript = gBattleAnimMove_Covet,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_VOLT_TACKLE] =
@@ -8880,23 +8871,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "weaken all Fire moves."),
         // in theory this should mention 5 turns (gen6+)
         .effect = EFFECT_WATER_SPORT,
-        .power = 0,
+        WEAKEN_SPORT_INFO,
         .type = TYPE_WATER,
-        .accuracy = 0,
-        .pp = 15,
-        .target = TARGET_FIELD,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .zMove = { .effect = Z_EFFECT_SPDEF_UP_1 },
-        .ignoresProtect = TRUE,
-        .mirrorMoveBanned = TRUE,
-        .skyBattleBanned = TRUE,
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_EXCITE_AUDIENCE_IN_ANY_CONTEST : CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_CUTE,
         .contestComboStarterId = COMBO_STARTER_WATER_SPORT,
         .contestComboMoves = {COMBO_STARTER_MUD_SPORT, COMBO_STARTER_RAIN_DANCE},
         .battleAnimScript = gBattleAnimMove_WaterSport,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_CALM_MIND] =
@@ -12702,7 +12682,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Powerful and sure to inflict\n"
             "a burn, but inaccurate."),
-        STATUS_HIT_150_POWER_INFO(BURN),
+        STATUS_HIT_120_POWER_INFO(BURN),
         .type = TYPE_FIRE,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON,
@@ -12882,18 +12862,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Snares the foes with an\n"
             "electric net. Lowers Speed."),
-        .effect = EFFECT_HIT,
-        .power = 55,
+        LOWER_STAT_55_POWER_INFO(SPD),
         .type = TYPE_ELECTRIC,
-        .accuracy = 100,
-        .pp = 15,
-        .target = TARGET_BOTH,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SPD_MINUS_1,
-            .chance = 100,
-        }),
         .contestEffect = CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
@@ -13526,21 +13497,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Yells and rants at the foe\n"
             "lowering its Sp. Atk."),
-        .effect = EFFECT_HIT,
-        .power = 55,
+        LOWER_STAT_55_POWER_INFO(SP_ATK),
         .type = TYPE_DARK,
-        .accuracy = 100,
-        .pp = 15,
-        .target = TARGET_BOTH,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .ignoresSubstitute = B_UPDATED_MOVE_FLAGS >= GEN_6,
         .soundMove = TRUE,
         .metronomeBanned = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SP_ATK_MINUS_1,
-            .chance = 100,
-        }),
         .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS, //CONTEST_EFFECT_QUICKLY_GROW_BORED
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
@@ -15072,7 +15034,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         BASIC_MOVE,
         .power = 120,
         .type = TYPE_FLYING,
-        .pp = 5,
+        .pp = 10,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .metronomeBanned = TRUE,

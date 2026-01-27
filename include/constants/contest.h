@@ -287,10 +287,15 @@ enum {
     COMBO_STARTER_FIRE_PLEDGE,
     COMBO_STARTER_GRASS_PLEDGE,
 <<<<<<< HEAD
+<<<<<<< HEAD
     COMBO_STARTER_STUN_SPORE,
     COMBO_STARTER_ZAP_CANNON,
 =======
 >>>>>>> 6b1464c865 (Implemented some contest ideas)
+=======
+    COMBO_STARTER_STUN_SPORE,
+    COMBO_STARTER_ZAP_CANNON,
+>>>>>>> 41a3a83abe (Added macros for contest combos)
 };
 
 #endif  // GUARD_CONSTANTS_CONTEST_H

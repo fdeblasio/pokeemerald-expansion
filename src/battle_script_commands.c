@@ -10550,6 +10550,7 @@ static void ComputeBallData(u32 wildMonBattler, u32 playerBattler, struct BallDa
         ball->multiplier = 200;
         break;
     case BALL_MASTER:
+    case BALL_CHERISH:
         ball->guaranteedCapture = TRUE;
         break;
     case BALL_NET:

@@ -109,6 +109,18 @@
     F(FLASH) \
     F(ROCK_SMASH) \
     F(WATERFALL) \
-    F(DIVE)
+    F(DIVE) \
+    F(TRICK) \
+    F(BLAZE_KICK) \
+    F(AQUA_TAIL) \
+    F(ZING_ZAP) \
+    F(TAILWIND) \
+    F(SKY_UPPERCUT) \
+    F(STRUGGLE_BUG) \
+    F(PSYBEAM) \
+    F(HYPER_VOICE) \
+    F(HEAT_WAVE) \
+    F(DISARMING_VOICE) \
+    F(TRAILBLAZE)
 
 #endif

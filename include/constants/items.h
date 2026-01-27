@@ -820,7 +820,19 @@ enum __attribute__((packed)) Item
     ITEM_TM106 = 687,
     ITEM_TM107 = 688,
     ITEM_TM108 = 689,
-
+    ITEM_TM109 = 874,
+    ITEM_TM110,
+    ITEM_TM111,
+    ITEM_TM112,
+    ITEM_TM113,
+    ITEM_TM114,
+    ITEM_TM115,
+    ITEM_TM116,
+    ITEM_TM117,
+    ITEM_TM118,
+    ITEM_TM119,
+    ITEM_TM120,
+    TMS_END,
 
     /* Expands to:
      *   ITEM_TM_FOCUS_PUNCH = ITEM_TM01,
@@ -1050,7 +1062,7 @@ enum __attribute__((packed)) Item
     ITEM_TATSUGIRINITE = 872,
     ITEM_GLIMMORANITE = 873,
 
-    ITEMS_COUNT,
+    ITEMS_COUNT = TMS_END,
     ITEM_FIELD_ARROW = ITEMS_COUNT,
 };
 

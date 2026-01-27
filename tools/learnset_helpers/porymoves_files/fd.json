@@ -2768,13 +2768,13 @@
       {"Level": 12, "Move": "MOVE_AQUA_JET"}
     ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": ["MOVE_AQUA_TAIL"],
     "EggMoves": [
       "MOVE_AMNESIA",
       "MOVE_FUTURE_SIGHT",
       "MOVE_SUPERPOWER"
     ],
-    "TutorMoves": ["MOVE_AQUA_TAIL"]
+    "TutorMoves": []
   },
   "MARILL": {
     "LevelMoves": [
@@ -3674,9 +3674,9 @@
       {"Level": 60, "Move": "MOVE_SCALD"}
     ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": ["MOVE_AQUA_TAIL"],
     "EggMoves": [],
-    "TutorMoves": ["MOVE_AQUA_TAIL"]
+    "TutorMoves": []
   },
   "LARVITAR": {
     "LevelMoves": [
@@ -4824,9 +4824,9 @@
       {"Level": 45, "Move": "MOVE_HYDRO_PUMP"}
     ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": ["MOVE_AQUA_TAIL"],
     "EggMoves": [],
-    "TutorMoves": ["MOVE_AQUA_TAIL"]
+    "TutorMoves": []
   },
   "MILOTIC": {
     "LevelMoves": [
@@ -4847,14 +4847,17 @@
       {"Level": 45, "Move": "MOVE_SOLAR_BEAM"}
     ],
     "PreEvoMoves": [],
-    "TMMoves": ["MOVE_OVERHEAT"],
+    "TMMoves": [
+      "MOVE_OVERHEAT",
+      "MOVE_HEAT_WAVE"
+    ],
     "EggMoves": [
       "MOVE_GUST",
       "MOVE_TWISTER",
       "MOVE_ICY_WIND",
       "MOVE_FAIRY_WIND"
     ],
-    "TutorMoves": ["MOVE_HEAT_WAVE"]
+    "TutorMoves": []
   },
   "KECLEON": {
     "LevelMoves": [
@@ -10706,9 +10709,12 @@
       {"Level": 50, "Move": "MOVE_THUNDER"}
     ],
     "PreEvoMoves": [],
-    "TMMoves": ["MOVE_RAIN_DANCE"],
+    "TMMoves": [
+      "MOVE_RAIN_DANCE",
+      "MOVE_HEAT_WAVE"
+    ],
     "EggMoves": [],
-    "TutorMoves": ["MOVE_HEAT_WAVE"]
+    "TutorMoves": []
   },
   "KILOWATTREL": {
     "LevelMoves": [
@@ -10720,9 +10726,12 @@
       {"Level": 55, "Move": "MOVE_THUNDER"}
     ],
     "PreEvoMoves": [],
-    "TMMoves": ["MOVE_RAIN_DANCE"],
+    "TMMoves": [
+      "MOVE_RAIN_DANCE",
+      "MOVE_HEAT_WAVE"
+    ],
     "EggMoves": [],
-    "TutorMoves": ["MOVE_HEAT_WAVE"]
+    "TutorMoves": []
   },
   "MASCHIFF": {
     "LevelMoves": [

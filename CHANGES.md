@@ -338,6 +338,18 @@
 |TM106|Rock Smash|Mauville|
 |TM107|Waterfall|Sootopolis|
 |TM108|Dive|Mossdeep|
+|TM109|Trick|???|
+|TM110|Blaze Kick|???|
+|TM111|Aqua Tail|???|
+|TM112|Zing Zap|???|
+|TM113|Tailwind|???|
+|TM114|Sky Uppercut|???|
+|TM115|Struggle Bug|???|
+|TM116|Psybeam|???|
+|TM117|Hyper Voice|???|
+|TM118|Heat Wave|???|
+|TM119|Disarming Voice|???|
+|TM120|Trailblaze|???|
 
 ### Move Tutors:
 #### Mainland:
@@ -353,12 +365,9 @@
 - Swagger
 
 #### Ever Grande:
-- Aqua Tail
 - Drill Run
 - High Horsepower
-- Hyper Voice
 - Temper Flare
-- Zing Zap
 
 #### Battle Frontier Left:
 - Rising Voltage
@@ -401,7 +410,6 @@
 - Avalanche
 - Baton Pass
 - Blast Burn
-- Blaze Kick
 - Brave Bird
 - Breaking Swipe
 - Bug Bite
@@ -415,7 +423,6 @@
 - Coaching
 - Confuse Ray
 - Curse
-- Disarming Voice
 - Draco Meteor
 - Dragon Cheer
 - Dragon Tail
@@ -475,7 +482,6 @@
 - Pollen Puff
 - Poltergeist
 - Pounce
-- Psybeam
 - Psychic Noise
 - Psyshock
 - Reversal
@@ -493,14 +499,11 @@
 - Steel Beam
 - Stomping Tantrum
 - Stored Power
-- Struggle Bug
 - Super Fang
 - Tailwind
 - Take Down
 - Thunder Fang
 - Toxic Spikes
-- Trailblaze
-- Trick
 - Triple Axel
 - Upper Hand
 - Uproar
@@ -2123,7 +2126,7 @@
     - Gender ratio: 25/75->50/50
     - Catch rate: 150->255
     - Learns Fairy Wind and Aqua Jet by level up
-    - Learns Aqua Tail by move relearner
+    - Learns Aqua Tail by TM
 
 - Marill:
     - HP: 70->75
@@ -2385,7 +2388,7 @@
 - Suicune (not in main game):
     - Hidden Ability: Inner Focus->Water Absorb
     - Learns Bubble Beam and Scald by level up
-    - Learns Aqua Tail by move relearner
+    - Learns Aqua Tail by TM
 
 - Larvitar/Pupitar/Tyranitar (not in main game):
     - Learn Mud-Slap, Rock Tomb, and Mud Shot by level up
@@ -2787,7 +2790,7 @@
     - Atk: 15->10
     - SpA: 10->15
     - Learns Hydro Pump by level up
-    - Learns Aqua Tail by move relearner
+    - Learns Aqua Tail by TM
 
 - Milotic:
     - Learns Bubble Beam by level up
@@ -2795,9 +2798,8 @@
 - Castform:
     - All stats: 70->80
     - Learns Swift, Surf, Flamethrower, Ice Beam, Thunder, and Solar Beam by level up
-    - Learns Overheat by TM
+    - Learns Overheat and Heat Wave by TM
     - Learns Gust, Twister, and Fairy Wind by Egg Move
-    - Learns Heat Wave by move relearner
 
 - Kecleon:
     - Learns Covet and Body Slam by level up
@@ -4592,8 +4594,7 @@
 
 - Wattrel/Kilowattrel:
     - Learn Gust, Shock Wave, Air Cutter, Tailwind, Air Slash, and Thunder by level up
-    - Learn Rain Dance by TM
-    - Learn Heat Wave by move relearner
+    - Learn Rain Dance and Heat Wave by TM
 
 - Maschiff/Mabosstiff:
     - Learn Pursuit by level up

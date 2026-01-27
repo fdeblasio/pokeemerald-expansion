@@ -2778,7 +2778,7 @@
       "MOVE_FUTURE_SIGHT",
       "MOVE_SUPERPOWER"
     ],
-    "TutorMoves": ["MOVE_AQUA_TAIL"]
+    "TutorMoves": []
   },
   "MARILL": {
     "LevelMoves": [
@@ -3680,7 +3680,7 @@
     "PreEvoMoves": [],
     "TMMoves": ["MOVE_AQUA_TAIL"],
     "EggMoves": [],
-    "TutorMoves": ["MOVE_AQUA_TAIL"]
+    "TutorMoves": []
   },
   "LARVITAR": {
     "LevelMoves": [
@@ -4830,7 +4830,7 @@
     "PreEvoMoves": [],
     "TMMoves": ["MOVE_AQUA_TAIL"],
     "EggMoves": [],
-    "TutorMoves": ["MOVE_AQUA_TAIL"]
+    "TutorMoves": []
   },
   "MILOTIC": {
     "LevelMoves": [
@@ -4862,7 +4862,7 @@
       "MOVE_TWISTER",
       "MOVE_FAIRY_WIND"
     ],
-    "TutorMoves": ["MOVE_HEAT_WAVE"]
+    "TutorMoves": []
   },
   "KECLEON": {
     "LevelMoves": [
@@ -10760,7 +10760,7 @@
       "MOVE_HEAT_WAVE"
     ],
     "EggMoves": [],
-    "TutorMoves": ["MOVE_HEAT_WAVE"]
+    "TutorMoves": []
   },
   "MASCHIFF": {
     "LevelMoves": [

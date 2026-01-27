@@ -164,10 +164,6 @@ MoveTutor_EventScript_ExplosionTaught::
 	move_tutor \move, MoveTutor_Text_EverGrandeTeach, MoveTutor_Text_EverGrandeWhichMon, MoveTutor_EventScript_EverGrandeMoveDeclined, MoveTutor_EventScript_EverGrandeMoveTaught
 .endm
 
-MoveTutor_EventScript_AquaTailTutor::
-	evergrandetutor MOVE_AQUA_TAIL
-	end
-
 MoveTutor_EventScript_DrillRunTutor::
 	evergrandetutor MOVE_DRILL_RUN
 	end
@@ -176,16 +172,8 @@ MoveTutor_EventScript_HighHorsepowerTutor::
 	evergrandetutor MOVE_HIGH_HORSEPOWER
 	end
 
-MoveTutor_EventScript_HyperVoiceTutor::
-	evergrandetutor MOVE_HYPER_VOICE
-	end
-
 MoveTutor_EventScript_TemperFlareTutor::
 	evergrandetutor MOVE_TEMPER_FLARE
-	end
-
-MoveTutor_EventScript_ZingZapTutor::
-	evergrandetutor MOVE_ZING_ZAP
 	end
 
 MoveTutor_EventScript_EverGrandeMoveDeclined::

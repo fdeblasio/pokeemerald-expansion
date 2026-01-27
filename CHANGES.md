@@ -548,7 +548,6 @@
 - Avalanche
 - Baton Pass
 - Blast Burn
-- Blaze Kick
 - Brave Bird
 - Breaking Swipe
 - Bug Bite
@@ -562,7 +561,6 @@
 - Coaching
 - Confuse Ray
 - Curse
-- Disarming Voice
 - Draco Meteor
 - Dragon Cheer
 - Dragon Tail
@@ -622,7 +620,6 @@
 - Pollen Puff
 - Poltergeist
 - Pounce
-- Psybeam
 - Psychic Noise
 - Psyshock
 - Reversal
@@ -640,14 +637,11 @@
 - Steel Beam
 - Stomping Tantrum
 - Stored Power
-- Struggle Bug
 - Super Fang
 - Tailwind
 - Take Down
 - Thunder Fang
 - Toxic Spikes
-- Trailblaze
-- Trick
 - Triple Axel
 - Upper Hand
 - Uproar

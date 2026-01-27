@@ -22,6 +22,19 @@ const u8 gNotDoneYetDescription[] = _(
     "This move can't be used. Its\n"
     "effect is in development.");
 
+// Contest defines
+#define NO_COMBO(Category)       \
+    .contestCategory = Category, \
+    .contestComboStarterId = 0,  \
+    .contestComboMoves = {0}
+
+#define ENTRY_HAZARD_COMBOS COMBO_STARTER_SPIKES, COMBO_STARTER_TOXIC_SPIKES, COMBO_STARTER_STEALTH_ROCK
+#define POISON_COMBOS COMBO_STARTER_POISON_GAS, COMBO_STARTER_POISON_POWDER, COMBO_STARTER_TOXIC, COMBO_STARTER_TOXIC_SPIKES
+#define PARALYZE_COMBOS COMBO_STARTER_THUNDER_WAVE, COMBO_STARTER_STUN_SPORE, COMBO_STARTER_ZAP_CANNON, COMBO_STARTER_GLARE, COMBO_STARTER_FORCE_PALM
+#define SLEEP_COMBOS COMBO_STARTER_HYPNOSIS, COMBO_STARTER_SLEEP_POWDER, COMBO_STARTER_SPORE, COMBO_STARTER_SING, COMBO_STARTER_GRASS_WHISTLE, COMBO_STARTER_YAWN, COMBO_STARTER_LOVELY_KISS, COMBO_STARTER_DARK_VOID
+#define BURN_COMBOS COMBO_STARTER_WILL_O_WISP, COMBO_STARTER_INFERNO
+#define MOVE_TRAP_COMBOS COMBO_STARTER_ENCORE, COMBO_STARTER_TAUNT, COMBO_STARTER_TORMENT
+
 // Damage macros
 #define BASIC_MOVE             \
     .effect = EFFECT_HIT,      \
@@ -296,20 +309,20 @@ const u8 gNotDoneYetDescription[] = _(
     .meFirstBanned = TRUE,           \
     .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_BETTER_IF_LAST : CONTEST_EFFECT_AVOID_STARTLE_ONCE
 
-#define REFLECT_DOUBLE_DAMAGE_INFO(Category)                                                 \
-    REFLECT_DAMAGE_INFO,                                                                     \
-    .pp = 20,                                                                                \
-    .priority = -5,                                                                          \
-    .category = Category,                                                                    \
-    .argument = {                                                                            \
-        .reflectDamage.damagePercent = 200,                                                  \
-        .reflectDamage.damageCategories = 1u << Category,                                    \
-    },                                                                                       \
-    .ignoresProtect = B_UPDATED_MOVE_FLAGS < GEN_5,                                          \
-    .mirrorMoveBanned = B_UPDATED_MOVE_FLAGS >= GEN_4,                                       \
-    .metronomeBanned = B_UPDATED_MOVE_FLAGS >= GEN_2,                                        \
-    .assistBanned = TRUE,                                                                    \
-    .contestComboMoves = {COMBO_STARTER_TAUNT, COMBO_STARTER_ENCORE, COMBO_STARTER_TORMENT}, \
+#define REFLECT_DOUBLE_DAMAGE_INFO(Category)              \
+    REFLECT_DAMAGE_INFO,                                  \
+    .pp = 20,                                             \
+    .priority = -5,                                       \
+    .category = Category,                                 \
+    .argument = {                                         \
+        .reflectDamage.damagePercent = 200,               \
+        .reflectDamage.damageCategories = 1u << Category, \
+    },                                                    \
+    .ignoresProtect = B_UPDATED_MOVE_FLAGS < GEN_5,       \
+    .mirrorMoveBanned = B_UPDATED_MOVE_FLAGS >= GEN_4,    \
+    .metronomeBanned = B_UPDATED_MOVE_FLAGS >= GEN_2,     \
+    .assistBanned = TRUE,                                 \
+    .contestComboMoves = {MOVE_TRAP_COMBOS},              \
     .validApprenticeMove = TRUE
 
 #define REFLECT_150_PERCENT_DAMAGE                                                                        \
@@ -467,18 +480,6 @@ const u8 gNotDoneYetDescription[] = _(
     .argument = { .type = Type },                   \
     .zMove = { .effect = Z_EFFECT_ALL_STATS_UP_1 }, \
     .magicCoatAffected = TRUE
-
-// Contest defines
-#define NO_COMBO(Category)       \
-    .contestCategory = Category, \
-    .contestComboStarterId = 0,  \
-    .contestComboMoves = {0}
-
-#define ENTRY_HAZARD_COMBOS COMBO_STARTER_SPIKES, COMBO_STARTER_TOXIC_SPIKES, COMBO_STARTER_STEALTH_ROCK
-#define POISON_COMBOS COMBO_STARTER_POISON_GAS, COMBO_STARTER_POISON_POWDER, COMBO_STARTER_TOXIC, COMBO_STARTER_TOXIC_SPIKES
-#define PARALYZE_COMBOS COMBO_STARTER_THUNDER_WAVE, COMBO_STARTER_STUN_SPORE, COMBO_STARTER_ZAP_CANNON, COMBO_STARTER_GLARE, COMBO_STARTER_FORCE_PALM
-#define SLEEP_COMBOS COMBO_STARTER_HYPNOSIS, COMBO_STARTER_SLEEP_POWDER, COMBO_STARTER_SPORE, COMBO_STARTER_SING, COMBO_STARTER_GRASS_WHISTLE, COMBO_STARTER_YAWN, COMBO_STARTER_LOVELY_KISS, COMBO_STARTER_DARK_VOID
-#define BURN_COMBOS COMBO_STARTER_WILL_O_WISP, COMBO_STARTER_INFERNO
 
 const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 {
@@ -4695,7 +4696,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_BADLY_STARTLE_MONS_WITH_GOOD_APPEALS : CONTEST_EFFECT_BETTER_WHEN_LATER,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_CURSE, COMBO_STARTER_ENCORE, COMBO_STARTER_TAUNT, COMBO_STARTER_TORMENT},
+        .contestComboMoves = {COMBO_STARTER_CURSE, MOVE_TRAP_COMBOS},
         .battleAnimScript = gBattleAnimMove_Spite,
         .validApprenticeMove = TRUE,
     },
@@ -5036,7 +5037,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = CONTEST_EFFECT_GREAT_APPEAL_BUT_NO_MORE_MOVES, //C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_QUICKLY_GROW_BORED :
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_CURSE, COMBO_STARTER_ENDURE, COMBO_STARTER_MEAN_LOOK, COMBO_STARTER_ENCORE, COMBO_STARTER_TAUNT, COMBO_STARTER_TORMENT},
+        .contestComboMoves = {COMBO_STARTER_CURSE, COMBO_STARTER_ENDURE, COMBO_STARTER_MEAN_LOOK, MOVE_TRAP_COMBOS},
         .battleAnimScript = gBattleAnimMove_DestinyBond,
         .validApprenticeMove = TRUE,
     },
@@ -7362,7 +7363,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_JAMS_OTHERS_BUT_MISS_ONE_TURN : CONTEST_EFFECT_BETTER_WHEN_LATER,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_CURSE, COMBO_STARTER_ENCORE, COMBO_STARTER_TAUNT, COMBO_STARTER_TORMENT},
+        .contestComboMoves = {COMBO_STARTER_CURSE, MOVE_TRAP_COMBOS},
         .battleAnimScript = gBattleAnimMove_Grudge,
         .validApprenticeMove = TRUE,
     },
@@ -9135,7 +9136,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_COOL : CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_METAL_SOUND, COMBO_STARTER_ENCORE, COMBO_STARTER_TAUNT, COMBO_STARTER_TORMENT},
+        .contestComboMoves = {COMBO_STARTER_METAL_SOUND, MOVE_TRAP_COMBOS},
         .battleAnimScript = gBattleAnimMove_MetalBurst,
     },
 
@@ -19526,17 +19527,21 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_MaxGuard,
     },
 
-#define MAX_MOVE_INFO               \
-    .effect = EFFECT_MAX_MOVE,      \
-    .accuracy = 0,                  \
-    .pp = 10,                       \
-    .target = TARGET_SELECTED,      \
-    .priority = 0,                  \
+#define MAX_MOVE_INFO          \
+    .effect = EFFECT_MAX_MOVE, \
+    .accuracy = 0,             \
+    .pp = 10,                  \
+    .target = TARGET_SELECTED, \
+    .priority = 0,             \
     .category = DAMAGE_CATEGORY_PHYSICAL
 
-#define DMAX_MOVE_INFO \
-    MAX_MOVE_INFO,     \
-    .power = 1
+#define DMAX_MOVE_INFO(Effect, ...)           \
+    MAX_MOVE_INFO,                            \
+    .power = 1,                               \
+    .additionalEffects = ADDITIONAL_EFFECTS({ \
+        .moveEffect = Effect,                 \
+        .self = DEFAULT(FALSE, __VA_ARGS__),  \
+    })
 
     [MOVE_MAX_FLARE] =
     {
@@ -19544,12 +19549,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Fire Dynamax attack.\n"
             "Intensifies sun for 5 turns."),
-        DMAX_MOVE_INFO,
+        DMAX_MOVE_INFO(MOVE_EFFECT_SUN),
         .type = TYPE_FIRE,
         .battleAnimScript = gBattleAnimMove_MaxFlare,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SUN,
-        }),
     },
 
     [MOVE_MAX_FLUTTERBY] =
@@ -19558,12 +19560,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Bug Dynamax attack.\n"
             "Lowers foe's Sp. Atk stat."),
-        DMAX_MOVE_INFO,
+        DMAX_MOVE_INFO(MOVE_EFFECT_LOWER_SP_ATK_SIDE),
         .type = TYPE_BUG,
         .battleAnimScript = gBattleAnimMove_MaxFlutterby,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_LOWER_SP_ATK_SIDE,
-        }),
     },
 
     [MOVE_MAX_LIGHTNING] =
@@ -19572,12 +19571,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Electric Dynamax attack.\n"
             "Turns the terrain electric."),
-        DMAX_MOVE_INFO,
+        DMAX_MOVE_INFO(MOVE_EFFECT_ELECTRIC_TERRAIN),
         .type = TYPE_ELECTRIC,
         .battleAnimScript = gBattleAnimMove_MaxLightning,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_ELECTRIC_TERRAIN,
-        }),
     },
 
     [MOVE_MAX_STRIKE] =
@@ -19586,12 +19582,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Normal Dynamax attack.\n"
             "Lowers foe's Speed stat."),
-        DMAX_MOVE_INFO,
+        DMAX_MOVE_INFO(MOVE_EFFECT_LOWER_SPEED_SIDE),
         .type = TYPE_NORMAL,
         .battleAnimScript = gBattleAnimMove_MaxStrike,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_LOWER_SPEED_SIDE,
-        }),
     },
 
     [MOVE_MAX_KNUCKLE] =
@@ -19600,13 +19593,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Fighting Dynamax attack.\n"
             "Boosts ally Attack stats."),
-        DMAX_MOVE_INFO,
+        DMAX_MOVE_INFO(MOVE_EFFECT_RAISE_TEAM_ATTACK, TRUE),
         .type = TYPE_FIGHTING,
         .battleAnimScript = gBattleAnimMove_MaxKnuckle,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_RAISE_TEAM_ATTACK,
-            .self = TRUE,
-        }),
     },
 
     [MOVE_MAX_PHANTASM] =
@@ -19615,12 +19604,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Ghost Dynamax attack.\n"
             "Lowers foe's Defense stat."),
-        DMAX_MOVE_INFO,
+        DMAX_MOVE_INFO(MOVE_EFFECT_LOWER_DEFENSE_SIDE),
         .type = TYPE_GHOST,
         .battleAnimScript = gBattleAnimMove_MaxPhantasm,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_LOWER_DEFENSE_SIDE,
-        }),
     },
 
     [MOVE_MAX_HAILSTORM] =
@@ -19629,12 +19615,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Ice Dynamax attack.\n"
             "Summons hail for 5 turns."),
-        DMAX_MOVE_INFO,
+        DMAX_MOVE_INFO(MOVE_EFFECT_HAIL),
         .type = TYPE_ICE,
         .battleAnimScript = gBattleAnimMove_MaxHailstorm,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_HAIL,
-        }),
     },
 
     [MOVE_MAX_OOZE] =
@@ -19643,13 +19626,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Poison Dynamax attack.\n"
             "Boosts ally Sp. Atk stats."),
-        DMAX_MOVE_INFO,
+        DMAX_MOVE_INFO(MOVE_EFFECT_RAISE_TEAM_SP_ATK, TRUE),
         .type = TYPE_POISON,
         .battleAnimScript = gBattleAnimMove_MaxOoze,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_RAISE_TEAM_SP_ATK,
-            .self = TRUE,
-        }),
     },
 
     [MOVE_MAX_GEYSER] =
@@ -19658,12 +19637,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Water Dynamax attack.\n"
             "Summons rain for 5 turns."),
-        DMAX_MOVE_INFO,
+        DMAX_MOVE_INFO(MOVE_EFFECT_RAIN),
         .type = TYPE_WATER,
         .battleAnimScript = gBattleAnimMove_MaxGeyser,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_RAIN,
-        }),
     },
 
     [MOVE_MAX_AIRSTREAM] =
@@ -19672,13 +19648,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Flying Dynamax attack.\n"
             "Boosts ally Speed stats."),
-        DMAX_MOVE_INFO,
+        DMAX_MOVE_INFO(MOVE_EFFECT_RAISE_TEAM_SPEED, TRUE),
         .type = TYPE_FLYING,
         .battleAnimScript = gBattleAnimMove_MaxAirstream,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_RAISE_TEAM_SPEED,
-            .self = TRUE,
-        }),
     },
 
     [MOVE_MAX_STARFALL] =
@@ -19687,12 +19659,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Fairy Dynamax attack.\n"
             "Turns the terrain misty."),
-        DMAX_MOVE_INFO,
+        DMAX_MOVE_INFO(MOVE_EFFECT_MISTY_TERRAIN),
         .type = TYPE_FAIRY,
         .battleAnimScript = gBattleAnimMove_MaxStarfall,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_MISTY_TERRAIN,
-        }),
     },
 
     [MOVE_MAX_WYRMWIND] =
@@ -19701,12 +19670,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Dragon Dynamax attack.\n"
             "Lowers foe's Attack stat."),
-        DMAX_MOVE_INFO,
+        DMAX_MOVE_INFO(MOVE_EFFECT_LOWER_ATTACK_SIDE),
         .type = TYPE_DRAGON,
         .battleAnimScript = gBattleAnimMove_MaxWyrmwind,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_LOWER_ATTACK_SIDE,
-        }),
     },
 
     [MOVE_MAX_MINDSTORM] =
@@ -19715,12 +19681,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Psychic Dynamax attack.\n"
             "Turns the terrain psychic."),
-        DMAX_MOVE_INFO,
+        DMAX_MOVE_INFO(MOVE_EFFECT_PSYCHIC_TERRAIN),
         .type = TYPE_PSYCHIC,
         .battleAnimScript = gBattleAnimMove_MaxMindstorm,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_PSYCHIC_TERRAIN,
-        }),
     },
 
     [MOVE_MAX_ROCKFALL] =
@@ -19729,12 +19692,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Rock Dynamax attack.\n"
             "Summons a sandstorm."),
-        DMAX_MOVE_INFO,
+        DMAX_MOVE_INFO(MOVE_EFFECT_SANDSTORM),
         .type = TYPE_ROCK,
         .battleAnimScript = gBattleAnimMove_MaxRockfall,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SANDSTORM,
-        }),
     },
 
     [MOVE_MAX_QUAKE] =
@@ -19743,14 +19703,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Ground Dynamax attack.\n"
             "Boosts ally Sp. Def stats."),
-        DMAX_MOVE_INFO,
+        DMAX_MOVE_INFO(MOVE_EFFECT_RAISE_TEAM_SP_DEF, TRUE),
         .type = TYPE_GROUND,
         .skyBattleBanned = B_EXTRAPOLATED_MOVE_FLAGS,
         .battleAnimScript = gBattleAnimMove_MaxQuake,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_RAISE_TEAM_SP_DEF,
-            .self = TRUE,
-        }),
     },
 
     [MOVE_MAX_DARKNESS] =
@@ -19759,12 +19715,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Dark Dynamax attack.\n"
             "Lowers foe's Sp. Def stat."),
-        DMAX_MOVE_INFO,
+        DMAX_MOVE_INFO(MOVE_EFFECT_LOWER_SP_DEF_SIDE),
         .type = TYPE_DARK,
         .battleAnimScript = gBattleAnimMove_MaxDarkness,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_LOWER_SP_DEF_SIDE,
-        }),
     },
 
     [MOVE_MAX_OVERGROWTH] =
@@ -19773,12 +19726,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Grass Dynamax attack.\n"
             "Turns the terrain grassy."),
-        DMAX_MOVE_INFO,
+        DMAX_MOVE_INFO(MOVE_EFFECT_GRASSY_TERRAIN),
         .type = TYPE_GRASS,
         .battleAnimScript = gBattleAnimMove_MaxOvergrowth,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_GRASSY_TERRAIN,
-        }),
     },
 
     [MOVE_MAX_STEELSPIKE] =
@@ -19787,13 +19737,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Steel Dynamax attack.\n"
             "Boosts ally Defense stats."),
-        DMAX_MOVE_INFO,
+        DMAX_MOVE_INFO(MOVE_EFFECT_RAISE_TEAM_DEFENSE, TRUE),
         .type = TYPE_STEEL,
         .battleAnimScript = gBattleAnimMove_MaxSteelspike,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_RAISE_TEAM_DEFENSE,
-            .self = TRUE,
-        }),
     },
 
 #define GMAX_MOVE_INFO \

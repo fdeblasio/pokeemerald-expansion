@@ -85,22 +85,17 @@
         .battleIntroSlide = PLAIN_BATTLE_INTRO_SLIDE,   \
     }
 
-#define WETLAND_ENVIRONMENT(Name)                                    \
-    {                                                                \
-        .name = _(Name),                                             \
-        .naturePower = MOVE_MUD_BOMB,                                \
-        .secretPowerAnimation = gBattleAnimMove_MudBomb,             \
-        .secretPowerEffect = MOVE_EFFECT_SPD_MINUS_1,                \
-        .camouflageType = TYPE_GROUND,                               \
-        .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,                 \
-        .background =                                                \
-        {                                                            \
-            .tileset = gBattleEnvironmentTiles_Underwater,           \
-            .tilemap = gBattleEnvironmentTilemap_Underwater,         \
-            .entryTileset = gBattleEnvironmentAnimTiles_PondWater,   \
-            .entryTilemap = gBattleEnvironmentAnimTilemap_PondWater, \
-            .palette = gBattleEnvironmentPalette_PondWater,          \
-        },                                                           \
+#define WETLAND_ENVIRONMENT(Name)                        \
+    {                                                    \
+        .name = _(Name),                                 \
+        .naturePower = MOVE_MUD_BOMB,                    \
+        .secretPowerAnimation = gBattleAnimMove_MudBomb, \
+        .secretPowerEffect = MOVE_EFFECT_SPD_MINUS_1,    \
+        .camouflageType = TYPE_GROUND,                   \
+        .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,     \
+        .entry = ENVIRONMENT_ENTRY(Underwater),          \
+        .background = ENVIRONMENT_BACKGROUND(PondWater), \
+        .palette = gBattleEnvironmentPalette_PondWater,  \
     }
 
 const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] =

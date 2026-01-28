@@ -1770,7 +1770,7 @@ static void MoveSelectionDisplayMoveDescription(enum BattlerId battler)
     u32 moveEffect = GetMoveEffect(move);
     enum DamageCategory cat = GetBattleMoveCategory(move);
     if (GetMoveEffect(move) == EFFECT_NATURE_POWER)
-        cat = GetMoveCategory(GetNaturePowerMove(battler));
+        cat = GetMoveCategory(GetNaturePowerMove());
 
     if (GetActiveGimmick(battler) == GIMMICK_DYNAMAX || IsGimmickSelected(battler, GIMMICK_DYNAMAX))
     {

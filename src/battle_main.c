@@ -5526,7 +5526,7 @@ static void HandleEndTurn_FinishBattle(void)
             TryPutPokemonTodayOnAir();
         }
 
-        for (battler = 0; battler < gBattlersCount; battler++)
+        for (enum BattlerId battler = 0; battler < gBattlersCount; battler++)
         {
             if (!IsOnPlayerSide(battler))
                 HandleSetPokedexFlag(SpeciesToNationalPokedexNum(gBattleMons[battler].species), FLAG_SET_SEEN, gBattleMons[battler].personality);
@@ -6278,7 +6278,7 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
         break;
     case EFFECT_NATURE_POWER:
         if (gMain.inBattle)
-            power = GetMovePower(GetNaturePowerMove(battler));
+            power = GetMovePower(GetNaturePowerMove());
         break;
     }
 
@@ -6468,7 +6468,7 @@ u32 GetDynamicAccuracy(struct Pokemon *mon, enum Move move, enum BattlerId battl
     if (gMain.inBattle)
     {
         if (moveEffect == EFFECT_NATURE_POWER)
-            accuracy = GetMoveAccuracy(GetNaturePowerMove(battler));
+            accuracy = GetMoveAccuracy(GetNaturePowerMove());
         else if (moveEffect == EFFECT_OHKO) {
             accuracy += gBattleMons[battler].level - gBattleMons[BATTLE_OPPOSITE(battler)].level;
             if (MoveHasIncreasedAccByTenOnSameType(move) && !IS_BATTLER_OF_TYPE(battler, GetMoveType(move)))

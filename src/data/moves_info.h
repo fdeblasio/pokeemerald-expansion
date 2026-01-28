@@ -57,6 +57,16 @@ const u8 gNotDoneYetDescription[] = _(
         .chance = Chance,                     \
     })
 
+#define EFFECT_30_POWER_INFO(Effect)          \
+    BASIC_MOVE,                               \
+    .power = 30,                              \
+    .pp = 35,                                 \
+    .additionalEffects = ADDITIONAL_EFFECTS({ \
+        .moveEffect = Effect,                 \
+        .chance = 30,                         \
+    })
+
+// 35
 #define TRAPPING_MOVE(Move)                               \
     .effect = EFFECT_HIT,                                 \
     .target = TARGET_SELECTED,                            \
@@ -183,6 +193,25 @@ const u8 gNotDoneYetDescription[] = _(
     .accuracy = B_UPDATED_MOVE_DATA >= GEN_5 ? 100 : 70, \
     .pp = 20
 
+// 40
+#define BASIC_40_POWER_INFO \
+    BASIC_MOVE,             \
+    .power = 40,            \
+    .pp = 40,               \
+    .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING
+
+#define EFFECT_40_POWER(Effect)               \
+    .effect = EFFECT_HIT,                     \
+    .power = 40,                              \
+    .accuracy = 100,                          \
+    .pp = 30,                                 \
+    .priority = 0,                            \
+    .additionalEffects = ADDITIONAL_EFFECTS({ \
+        .moveEffect = Effect,                 \
+        .chance = 10,                         \
+    }),                                       \
+    .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING
+
 #define HIGH_PRIORITY_40_POWER_INFO \
     .effect = EFFECT_HIT,           \
     .power = 40,                    \
@@ -274,6 +303,11 @@ const u8 gNotDoneYetDescription[] = _(
     .pp = 25,                                 \
     .target = TARGET_SELECTED,                \
     .validApprenticeMove = TRUE
+
+#define HIT_TWICE_60_TOTAL_POWER_INFO \
+    HIT_TWICE_INFO,                   \
+    .power = 30,                      \
+    .pp = 30
 
 #define RAISE_ALL_STATS_60_POWER_INFO                                      \
     BASIC_MOVE,                                                            \

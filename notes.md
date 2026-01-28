@@ -400,6 +400,44 @@ upcoming
 - Add Munna for Route 10 girl? Maybe a trade?
 - Decide if regional forms will be postgame or main game
     - Add Galarian birds to Sevii Islands?
+- Decap:
+    - Trades
+- Clean up duplicate FRLG trainer classes
+    - defines
+    - trainers.h macros
+    - Also there's the trainer class update PR
+- Port over Navel Rock changes
+- Rocker sprite renamed to juggler_frlg.png because rocker has new one. Make sure the rocker uses it
+    - overworld
+    - file definition for juggler
+- Rearrange opponents_frlg.h
+- Create macros to standarize identical trainer classes (if possible)
+    - Balls and money
+- Finish Poke Balls after Trainer Class PR
+- Condense FRLG Swimmers like you did for RSE
+- Remove Rock Smash rocks and Strength boulders
+    - Check if any removals will cause weird progession
+- Figure out Cut
+    - The Cerulean tree can be removed since Slowbro blocks it anyways
+        - Check if the trigger is the badge or Bill
+    - Check if cop trigger is the badge or Bill
+    - Route 9 tree is an issue
+    - Vermillion tree is an issue, but can be removed after
+    - Any trees after Route 9 can probably be removed
+- Get SS Anne to stay?
+    - Might cause conflict with Seagallop
+- Species defines
+- Fly points
+- MAP_GROUP_AND_NUM
+- Edit PokeCenter to remove escalator
+- Remove PokeCenter 2F maps and references
+- Update local Porymap
+- Rearrange encounter map order
+- Seafoam Islands Ice Cave MB
+- Figure out if this needs to be added to the battle_environment map?: #define MAP_BATTLE_SCENE_LORELEI  MAP_BATTLE_SCENE_NORMAL
+- Split out big map groups (like SS Anne)
+- Make surf/cave/fishing encounter rate similar to Emerald
+- Move TRAINER_CLASS_INFO defines to new file? That way, any game can have any class/pic?
 
 ### Overworld
 - Seperate out split routes into two maps for different encounters?

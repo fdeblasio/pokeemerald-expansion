@@ -65,6 +65,7 @@ EWRAM_DATA bool8 gIsFishingEncounter = 0;
 EWRAM_DATA bool8 gIsSurfingEncounter = 0;
 EWRAM_DATA u8 gChainFishingDexNavStreak = 0;
 
+//Emerald
 #define RANGE_ROUTE_101          3, 3
 #define RANGE_ROUTE_103          4, 4
 #define RANGE_ROUTE_102          RANGE_ROUTE_102_104
@@ -127,6 +128,11 @@ EWRAM_DATA u8 gChainFishingDexNavStreak = 0;
 #define RANGE_POSTGAME          POSTGAME_LEVEL, POSTGAME_LEVEL
 #define RANGE_BATTLE_FRONTIER   5, 5
 #define RANGE_UNUSED            1, 1
+
+//FireRed
+//Not finalized. Will probably be changed and expanded after this builds
+#define RANGE_TEST            1, 1
+#define RANGE_POSTGAME_FRLG   POSTGAME_LEVEL_FRLG, POSTGAME_LEVEL_FRLG
 
 #define SAFARI_ZONE_ENCOUNTER_RATE 50
 

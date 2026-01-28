@@ -229,7 +229,8 @@
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Route104_North/border.bin",
-      "blockdata_filepath": "data/layouts/Route104_North/map.bin"
+      "blockdata_filepath": "data/layouts/Route104_North/map.bin",
+      "layout_version": "emerald"
     },
     {
       "id": "LAYOUT_ROUTE105",

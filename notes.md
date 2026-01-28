@@ -88,6 +88,7 @@ upcoming
             - Replace TM15 and PP Max
         - Allow multiple items to be given. Potentially PokeBlocks and quizzes too
     - Edit contests
+        - Add combos for Electric Terrain->Electric, Sunny Day->Fire, etc.
         - Better overworld sprite for Lisia
         - Update ORAS opponent stats
         - Add unique ideas to Special Rank
@@ -333,6 +334,7 @@ upcoming
 - Possible Move Updates:
     - Infestation: 20->35
     - Poison Sting: 20->40
+    - Bite: 60->65
     - Poison Fang: 60->65
     - Shadow Punch: 60->75?
         - Would need Ghost-type never miss replacement

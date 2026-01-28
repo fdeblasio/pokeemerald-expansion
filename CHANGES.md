@@ -531,7 +531,7 @@
         - Accuracy: 85->100
     - Bind:
         - Power: 15->35
-        - Accuracy: 85->90
+        - Accuracy: 85->100
     - Blood Moon:
         - PP: 5->10
     - Chatter:
@@ -542,17 +542,20 @@
         - PP: 15->20
     - Constrict:
         - Power: 10->30
-        - Chance to reduce speed: 10%->20%
+        - Chance to reduce speed: 10%->30%
     - Crush Claw:
         - Accuracy: 95->100
     - Cut:
         - Accuracy: 95->100
     - Dizzy Punch:
         - Power: 70->75
+    - Double Hit:
+        - Accuracy: 90->100
     - Double Slap:
         - Now hits exactly twice
         - Power: 15->30
         - Accuracy: 85->100
+        - PP: 10->30
     - Egg Bomb:
         - Accuracy: 75->100
     - Frustration:
@@ -611,6 +614,7 @@
         - PP: 5->10
     - Wrap:
         - Power: 15->35
+        - Accuracy: 90->100
 - Fighting:
     - Arm Thrust:
         - Power: 15->25
@@ -623,7 +627,9 @@
     - Flying Press:
         - Accuracy: 95->100
     - Rolling Kick:
+        - Power: 60->65
         - Accuracy: 85->100
+        - PP: 15->20
     - Sky Uppercut:
         - Accuracy: 90->100
     - Submission:
@@ -671,7 +677,7 @@
     - Mortal Spin:
         - Power: 30->50
     - Poison Sting:
-        - Power: 15->20
+        - Power: 15->30
     - Poison Fang:
         - Power: 50->60
 - Ground:
@@ -679,6 +685,7 @@
         - Accuracy: 90->100
     - Bone Club:
         - Accuracy: 85->100
+        - Chance to flinch: 10%->30%
     - Bone Rush:
         - Accuracy: 90->100
         - PP: 10->20
@@ -693,13 +700,15 @@
     - Mud Shot:
         - Accuracy: 95->100
         - Target: One foe->both foes
+    - Mud-Slap:
+        - PP: 10->20
     - Precipice Blades:
         - Accuracy: 85->100
     - Sandsear Storm:
         - Power: 100->120
         - Accuracy: 80->100
     - Sand Tomb:
-        - Accuracy: 85->90
+        - Accuracy: 85->100
         - PP: 15->20
     - Thousand Arrows:
         - Power: 90->100
@@ -731,6 +740,8 @@
 - Bug:
     - Bug Bite:
         - Now a biting move
+    - Infestation:
+        - Power: 20->35
     - Pin Missile:
         - Accuracy: 95->100
     - Signal Beam:
@@ -752,6 +763,8 @@
         - Power: 75->80
     - Infernal Parade:
         - Power: 60->75
+    - Lick:
+        - PP: 30->35
     - Moongeist Beam:
         - PP: 5->10
     - Ominous Wind:
@@ -792,7 +805,7 @@
     - Thunder Fang:
         - Accuracy: 95->100
     - Volt Tackle:
-        - Paralyze chance: 10%->30%
+        - Chance to paralyze: 10%->30%
         - No longer causes recoil
     - Wildbolt Storm:
         - Power: 100->120
@@ -813,11 +826,11 @@
     - Ember:
         - PP: 25->30
     - Fiery Dance:
-        - Effect: 50%->100%
+        - Effect chance: 50%->100%
     - Fire Fang:
         - Accuracy: 95->100
     - Fire Spin:
-        - Accuracy: 85->90
+        - Accuracy: 85->100
         - PP: 15->20
     - Flame Wheel:
         - Power: 60->65
@@ -848,7 +861,7 @@
     - Aqua Tail:
         - Accuracy: 90->100
     - Clamp:
-        - Accuracy: 85->90
+        - Accuracy: 85->100
         - PP: 15->20
     - Crabhammer:
         - Accuracy: 90->100
@@ -861,7 +874,7 @@
     - Octazooka:
         - Power: 65->90
         - Accuracy: 85->100
-        - Effect: 50%->100%
+        - Effect chance: 50%->100%
     - Origin Pulse:
         - Power: 110->120
         - Accuracy: 85->100
@@ -883,7 +896,7 @@
     - Wave Crash:
         - PP: 10->15
     - Whirlpool:
-        - Accuracy: 85->90
+        - Accuracy: 85->100
         - PP: 15->20
 - Grass:
     - Bullet Seed:
@@ -908,6 +921,8 @@
         - PP: 5->10
     - Sleep Powder:
         - PP: 15->35
+    - Snap Trap:
+        - PP: 15->20
     - Stun Spore:
         - PP: 30->35
     - Syrup Bomb:
@@ -920,7 +935,7 @@
     - Eerie Spell:
         - PP: 5->10
     - Freezing Glare:
-        - Effect: 10%->20%
+        - Chance to freeze: 10%->20%
     - Hyperspace Hole:
         - Power: 80->90
         - PP: 5->10
@@ -930,7 +945,7 @@
         - Accuracy: 80->100
     - Luster Purge/Mist Ball:
         - PP: 5->10
-        - Effect: 50%->100%
+        - Effect chance: 50%->100%
     - Mystical Power:
         - Power: 70->80
         - Accuracy: 90->100
@@ -1030,8 +1045,8 @@
         - PP: 5->10
     - Double Iron Bash:
         - PP: 5->10
-    - DoFlash Cannon:
-        - PP: 10->15
+    - Flash Cannon:
+        - Power: 80->90
     - Gear Grind:
         - Accuracy: 85->100
     - Gigaton Hammer:
@@ -1497,7 +1512,7 @@
 - Victreebel (not in main game):
     - SpA: 100->105
     - SpD: 70->75
-    - Learns Absorb, Mega Drain, Magical Leaf, Giga Drain, Venoshock, Seed Bomb, Poison Fang, and Solar Blade by level up
+    - Learns Absorb, Mega Drain, Magical Leaf, Giga Drain, Venoshock, Seed Bomb, Poison Fang, Solar Blade, and Snap Trap by level up
 
 - Mega Victreebel (not in main game):
     - Atk: 125->135

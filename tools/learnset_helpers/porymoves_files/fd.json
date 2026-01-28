@@ -981,6 +981,7 @@
       {"Level": 1, "Move": "MOVE_SEED_BOMB"},
       {"Level": 1, "Move": "MOVE_POISON_FANG"},
       {"Level": 1, "Move": "MOVE_SOLAR_BLADE"},
+      {"Level": 1, "Move": "MOVE_SNAP_TRAP"},
       {"Level": 2, "Move": "MOVE_RAZOR_LEAF"},
       {"Level": 2, "Move": "MOVE_POISON_JAB"},
       {"Level": 2, "Move": "MOVE_GROWTH"},

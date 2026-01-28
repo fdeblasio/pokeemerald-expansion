@@ -987,6 +987,8 @@
     - Freeze Shock:
         - Accuracy: 90->100
         - PP: 5->10
+    - Frost Breath:
+        - Accuracy: 90->100
     - Glacial Lance:
         - PP: 5->10
     - Glaciate:

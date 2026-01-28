@@ -257,6 +257,15 @@ const u8 gNotDoneYetDescription[] = _(
     .assistBanned = TRUE,               \
     .contestEffect = CONTEST_EFFECT_NEXT_APPEAL_LATER
 
+#define ALWAYS_CRIT_60_POWER_INFO                    \
+    .description = COMPOUND_STRING(                  \
+        "This attack always results\n"               \
+        "in a critical hit."),                       \
+    BASIC_MOVE,                                      \
+    .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 60 : 40, \
+    .pp = 10,                                        \
+    .alwaysCriticalHit = TRUE
+
 // 65
 #define BEAM_65_POWER_INFO(Effect)            \
     BASIC_MOVE,                               \
@@ -11372,16 +11381,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_STORM_THROW] =
     {
         .name = COMPOUND_STRING("Storm Throw"),
-        .description = COMPOUND_STRING(
-            "This attack always results\n"
-            "in a critical hit."),
-        BASIC_MOVE,
-        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 60 : 40,
+        ALWAYS_CRIT_60_POWER_INFO,
         .type = TYPE_FIGHTING,
-        .pp = 10,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .alwaysCriticalHit = TRUE,
         .contestEffect = CONTEST_EFFECT_EXCITE_AUDIENCE_IN_ANY_CONTEST,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
@@ -12261,18 +12264,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_FROST_BREATH] =
     {
         .name = COMPOUND_STRING("Frost Breath"),
-        .description = COMPOUND_STRING(
-            "This attack always results\n"
-            "in a critical hit."),
-        .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 60 : 40,
+        ALWAYS_CRIT_60_POWER_INFO,
         .type = TYPE_ICE,
-        .accuracy = 90,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .alwaysCriticalHit = TRUE,
         .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL, //CONTEST_EFFECT_QUICKLY_GROW_BORED
         NO_COMBO(CONTEST_CATEGORY_BEAUTY),
         .battleAnimScript = gBattleAnimMove_FrostBreath,

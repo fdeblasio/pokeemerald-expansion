@@ -168,6 +168,21 @@ const u8 gNotDoneYetDescription[] = _(
     .pp = 30,                                 \
     .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING
 
+#define EFFECT_30_POWER_INFO(Effect)          \
+    BASIC_MOVE,                               \
+    .power = 30,                              \
+    .pp = 35,                                 \
+    .additionalEffects = ADDITIONAL_EFFECTS({ \
+        .moveEffect = Effect,                 \
+        .chance = 30,                         \
+    })
+
+#define TRAPPING_35_POWER_MOVE(Move)                     \
+    TRAPPING_MOVE(Move),                                 \
+    .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 35 : 15,     \
+    .accuracy = B_UPDATED_MOVE_DATA >= GEN_5 ? 100 : 70, \
+    .pp = 20
+
 #define HIGH_PRIORITY_40_POWER_INFO \
     .effect = EFFECT_HIT,           \
     .power = 40,                    \
@@ -16475,6 +16490,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         TRAPPING_MOVE(B_MSG_WRAPPED_THUNDER_CAGE),
         .power = 80,
         .type = TYPE_ELECTRIC,
+        .accuracy = 100,
         .pp = 15,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .metronomeBanned = TRUE,

@@ -1,16 +1,6 @@
 #ifndef GUARD_CONSTANTS_FLAGS_FRLG_H
 #define GUARD_CONSTANTS_FLAGS_FRLG_H
 
-
-#define FLAG_0x020               0x020
-#define FLAG_0x021               0x021
-#define FLAG_0x022               0x022
-#define FLAG_0x023               0x023
-#define FLAG_0x024               0x024
-#define FLAG_0x025               0x025
-#define FLAG_0x026               0x026
-#define FLAG_0x027               0x027
-
 // Hide/show flags
 #define FLAG_HIDE_BULBASAUR_BALL                           0x028
 #define FLAG_HIDE_SQUIRTLE_BALL                            0x029
@@ -2589,6 +2579,11 @@
 #define FLAG_LANDMARK_TRAINER_HILL                  0
 #define FLAG_UNUSED_0x8E3                           0 // Unused Flag
 #define FLAG_RECEIVED_POKEDEX_FROM_BIRCH            0
+#define FLAG_LANDMARK_METEOR_FALLS                  0
+#define FLAG_LANDMARK_WEATHER_INSTITUTE             0
+#define FLAG_LANDMARK_SAFARI_ZONE                   0
+#define FLAG_LANDMARK_MT_PYRE                       0
+#define FLAG_LANDMARK_SHOAL_CAVE                    0
 
 //Custom Emerald flags unused here
 #define FLAG_LANDMARK_METEOR_FALLS        0

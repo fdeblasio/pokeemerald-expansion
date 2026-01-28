@@ -556,6 +556,8 @@
         - Power: 15->30
         - Accuracy: 85->100
         - PP: 10->30
+    - Echoed Voice:
+        - PP: 15->20
     - Egg Bomb:
         - Accuracy: 75->100
     - Frustration:
@@ -586,6 +588,8 @@
             - 40% 40->20% 60
             - 30% 80->40% 80
             - 10% 120->20% 120
+    - Rage:
+        - Power: 20->30
     - Relic Song:
         - Power: 75->100
     - Rock Climb:
@@ -626,6 +630,8 @@
         - Power: 100->120
     - Flying Press:
         - Accuracy: 95->100
+    - Rock Smash:
+        - PP: 15->20
     - Rolling Kick:
         - Power: 60->65
         - Accuracy: 85->100
@@ -656,6 +662,7 @@
         - PP: 5->10
     - Dual Wingbeat:
         - Accuracy: 90->100
+        - PP: 10->15
     - Gust:
         - PP: 35->40
     - Fly:
@@ -683,6 +690,7 @@
 - Ground:
     - Bonemerang:
         - Accuracy: 90->100
+        - PP: 10->20
     - Bone Club:
         - Accuracy: 85->100
         - Chance to flinch: 10%->30%
@@ -732,8 +740,11 @@
         - Accuracy: 90->100
     - Rock Throw:
         - Accuracy: 90->100
+        - PP: 15->30
     - Rock Tomb:
         - Accuracy: 95->100
+    - Salt Cure:
+        - PP: 15->20
     - Stone Axe:
         - Power: 65->70
         - Accuracy: 90->100
@@ -757,6 +768,7 @@
 - Ghost:
     - Astonish:
         - Power: 30->40
+        - PP: 15->20
     - Astral Barrage:
         - PP: 5->10
     - Bitter Malice:
@@ -929,9 +941,14 @@
         - Accuracy: 85->100
     - Trop Kick:
         - Power: 70->90
+    - Vine Whip:
+        - Power: 45->50
+        - PP: 20->30
     - Worry Seed:
         - PP: 10->15
 - Psychic:
+    - Confusion:
+        - Chance to confuse: 10%->20%
     - Eerie Spell:
         - PP: 5->10
     - Freezing Glare:
@@ -961,6 +978,7 @@
         - Accuracy: 90->100
     - Twin Beam:
         - Power: 40->50
+        - PP: 10->20
     - Zen Headbutt:
         - Accuracy: 90->100
 - Ice:
@@ -1015,6 +1033,8 @@
     - Spacial Rend:
         - Accuracy: 95->100
         - PP: 5->10
+    - Twister:
+        - Chance to flinch: 20%->30%
 - Dark:
     - Ceaseless Edge:
         - Power: 65->70
@@ -1049,6 +1069,7 @@
         - Power: 80->90
     - Gear Grind:
         - Accuracy: 85->100
+        - PP: 15->20
     - Gigaton Hammer:
         - PP: 5->10
     - Gyro Ball:
@@ -4163,7 +4184,7 @@
 
 - Komala:
     - Catch rate: 45->90
-    - Learns Pound and Body Slam by level up
+    - Learns Pound, Snore, and Body Slam by level up
 
 - Turtonator:
     - Catch rate: 70->90

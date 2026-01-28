@@ -370,6 +370,14 @@
 	delay 12
 	.endm
 
+	.macro absorb_effect absorb_type:req
+	call \absorb_type
+	waitforvisualfinish
+	delay 15
+	call HealingEffect
+	waitforvisualfinish
+	.endm
+
 	.macro create_flying_sand_crescents unknown:req
 	createsprite gFlyingSandCrescentSpriteTemplate, ANIM_ATTACKER, 40, 10, 2304, 96, \unknown
 	delay 10

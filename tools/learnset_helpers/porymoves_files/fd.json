@@ -9125,6 +9125,7 @@
   "KOMALA": {
     "LevelMoves": [
       {"Level": 1, "Move": "MOVE_POUND"},
+      {"Level": 1, "Move": "MOVE_SNORE"},
       {"Level": 31, "Move": "MOVE_BODY_SLAM"}
     ],
     "PreEvoMoves": [],

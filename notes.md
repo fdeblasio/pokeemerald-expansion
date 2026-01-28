@@ -330,10 +330,14 @@ upcoming
         - These three are done, but should Dragon Tail be included too?
     - Any Psychic/Steel type that learns Headbutt should learn Zen Headbutt/Iron Head?
     - Any Flying/Steel type that learns Wing Attack/Steel Wing should learn the other
-    - Any Pokemon that can be taught Double-Edge should also be able to be taught Take Down
+    - Moves of the same type:
+        - Take Down->Double-Edge
+        - Leafage->Razor Leaf/Magical Leaf/Leaf Blade
+        - Vine Whip->Power Whip
 - Possible Move Updates:
-    - Infestation: 20->35
-    - Poison Sting: 20->40
+    - Rock Smash: 40->50, 100% reduce
+        - clone of Struggle Bug/Pounce/Chilling Water, although those moves may become clones of Icy Wind/Mud Shot
+    - Struggle Bug/Chilling Water/Pounce: 50->55?
     - Bite: 60->65
     - Poison Fang: 60->65
     - Shadow Punch: 60->75?
@@ -542,6 +546,7 @@ upcoming
     - Add regular moves with Z-Move/GMax effects?
         - Steel spikes
         - Would give Mew a signature
+    - Copy of old Leech Life
 - Make Water Veil also up evasion like Sand Veil?
 - Species-specific move effects? (maybe look at code for Diglett immunity to Telekinesis):
     - Smack Down is super effective if a Tinkaton uses it against Corviknight

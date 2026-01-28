@@ -488,45 +488,20 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .battleIntroSlide = BattleIntroSlide3,
     },
 
-    [BATTLE_ENVIRONMENT_TYPE_DARK] =
-    {
-        BUILDING_ENVIRONMENT,
-        .entry = ENVIRONMENT_ENTRY(Building),
-        .background = ENVIRONMENT_BACKGROUND(Stadium),
-        .palette = gBattleEnvironmentPalette_StadiumDark,
-    },
+#define TYPE_ENVIRONMENT(Type)                              \
+    {                                                       \
+        .name = _(#Type),                                   \
+        BUILDING_ENVIRONMENT,                               \
+        .entry = ENVIRONMENT_ENTRY(Building),               \
+        .background = ENVIRONMENT_BACKGROUND(Stadium),      \
+        .palette = gBattleEnvironmentPalette_Stadium##Type, \
+    }
 
-    [BATTLE_ENVIRONMENT_TYPE_FLYING] =
-    {
-        BUILDING_ENVIRONMENT,
-        .entry = ENVIRONMENT_ENTRY(Building),
-        .background = ENVIRONMENT_BACKGROUND(Stadium),
-        .palette = gBattleEnvironmentPalette_StadiumFlying,
-    },
-
-    [BATTLE_ENVIRONMENT_TYPE_GRASS] =
-    {
-        BUILDING_ENVIRONMENT,
-        .entry = ENVIRONMENT_ENTRY(Building),
-        .background = ENVIRONMENT_BACKGROUND(Stadium),
-        .palette = gBattleEnvironmentPalette_StadiumGrass,
-    },
-
-    [BATTLE_ENVIRONMENT_TYPE_ICE] =
-    {
-        BUILDING_ENVIRONMENT,
-        .entry = ENVIRONMENT_ENTRY(Building),
-        .background = ENVIRONMENT_BACKGROUND(Stadium),
-        .palette = gBattleEnvironmentPalette_StadiumIce,
-    },
-
-    [BATTLE_ENVIRONMENT_TYPE_ROCK] =
-    {
-        BUILDING_ENVIRONMENT,
-        .entry = ENVIRONMENT_ENTRY(Building),
-        .background = ENVIRONMENT_BACKGROUND(Stadium),
-        .palette = gBattleEnvironmentPalette_StadiumRock,
-    },
+    [BATTLE_ENVIRONMENT_TYPE_DARK] = TYPE_ENVIRONMENT(Dark),
+    [BATTLE_ENVIRONMENT_TYPE_FLYING] = TYPE_ENVIRONMENT(Flying),
+    [BATTLE_ENVIRONMENT_TYPE_GRASS] = TYPE_ENVIRONMENT(Grass),
+    [BATTLE_ENVIRONMENT_TYPE_ICE] = TYPE_ENVIRONMENT(Ice),
+    [BATTLE_ENVIRONMENT_TYPE_ROCK] = TYPE_ENVIRONMENT(Rock),
 };
 
 #define MAP_BATTLE_SCENE_TO_BATTLE_ENVIRONMENT(Type) {MAP_BATTLE_SCENE_##Type, BATTLE_ENVIRONMENT_##Type}

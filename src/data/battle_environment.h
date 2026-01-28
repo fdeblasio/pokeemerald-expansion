@@ -496,13 +496,14 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .battleIntroSlide = BattleIntroSlide3,
     },
 
-    [BATTLE_ENVIRONMENT_TYPE_DARK] =
-    {
-        BUILDING_ENVIRONMENT,
-        .entry = ENVIRONMENT_ENTRY(Building),
-        .background = ENVIRONMENT_BACKGROUND(Stadium),
-        .palette = gBattleEnvironmentPalette_StadiumDark,
-    },
+#define TYPE_ENVIRONMENT(Type)                              \
+    {                                                       \
+        .name = _(#Type),                                   \
+        BUILDING_ENVIRONMENT,                               \
+        .entry = ENVIRONMENT_ENTRY(Building),               \
+        .background = ENVIRONMENT_BACKGROUND(Stadium),      \
+        .palette = gBattleEnvironmentPalette_Stadium##Type, \
+    }
 
     [BATTLE_ENVIRONMENT_TYPE_FLYING] =
     {

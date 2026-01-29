@@ -42,8 +42,6 @@ upcoming
 ```
 
 ## To Do (common):
-- 250 TMs causes lagging
-
 ### Meta
 - Organize here between Emerald/FireRed
 - Try to get upstream changes working better here
@@ -149,10 +147,7 @@ upcoming
 ### Items
 - Find way to properly set TM description (in both shop.c and item_menu.c) to move's description
     - Move is currently on two lines, item is on 3 so the move gets cut off
-- Add charms (no longer have to worry about space)
 - See if it's possible to give the item PC and decoration PC more room
-- Max Elixir (and others?) should stay on party screen like Full Restores do
-- Add more EXP Candy to the overworld
 - Figure out how many items are obtainable in-game (item pocket only)
     - 558 max (595 - 37 medicine):
         - 136 non-macroed
@@ -571,6 +566,7 @@ upcoming
 - Get rid of button explanation screen
 - Add Oak battle with remaining starter
 - Make Rival's teams less identical? Not sure if there's enough birds for that
+    - Charmander team would have Rattata to not give double advantage against Bulbasaur
 - Change Rocker to intense?
 - Add Team Rocket class to Scientists (and Juggler?) in Silph Co.
 - Add Dive TM

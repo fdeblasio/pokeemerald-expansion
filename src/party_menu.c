@@ -5397,6 +5397,8 @@ void ItemUseCB_PPRecovery(u8 taskId, TaskFunc task)
     {
         gPartyMenu.data1 = 0;
         TryUseItemOnMove(taskId);
+        if (gPartyMenu.menuType == PARTY_MENU_TYPE_FIELD)
+            gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
     }
     else
     {

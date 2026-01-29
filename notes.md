@@ -114,6 +114,21 @@ upcoming
         4: 107
         9: 120
         5: 156
+- Megas:
+    - Starmie:
+        - Make attacking stats more consistent? (Regular has 25 more SpA, but Mega has 10 more Atk)
+            - It seems like it might actually have 30 more SpA but Pure Power
+    - Dragonite line:
+        - Make attacking stats more consistent? (Regular has 34 more Atk, but Mega has 21 more SpA)
+    - Lucario Z:
+        - Could revert regular Mega stats back to be Physical since Z is Special
+            - Maybe wait to see how Zs are handled in main games
+    - Mega Malamar:
+        - Take some SpA and give to Atk?
+    - Zygarde:
+        - Make attacking stats more consistent?
+            - Regular forms have more Atk, but Mega has 146 more SpA
+            - Land's Wrath, Thousand Waves, and Thousand Arrows are Physical, but Core Enforcer and Nihil Light are Special
 - Turn some Normal/Flying types into either pure Flying or Flying/Normal?
 - Decide whether to reverse types for Pokemon whose primary becomes secondary:
     - Vanilla:
@@ -499,59 +514,6 @@ upcoming
     - Route 117: Daycare?
     - Route 128: Where Steven flies to?
 
-### FRLG:
-- Add Dive TM
-- Don't remove Meteorite
-- Add version exclusives
-    - Including postgame
-- Remove duplicate GFX (for example, bald_man_frlg is just bald_man in the PR) and Trainer sprites
-- Improve Rod order
-    - Get rid of Super Rod entirely and just have first stage evos catchable?
-- Add Charms after Tea is taken
-- Add Wiglett/Toedscool?
-- Add Munna for Route 10 girl? Maybe a trade?
-- Decide if regional forms will be postgame or main game
-    - Add Galarian birds to Sevii Islands?
-- Decap:
-    - Trades
-- Clean up duplicate FRLG trainer classes
-    - defines
-    - trainers.h macros
-    - Also there's the trainer class update PR
-- Port over Navel Rock changes
-- Rocker sprite renamed to juggler_frlg.png because rocker has new one. Make sure the rocker uses it
-    - overworld
-    - file definition for juggler
-- Rearrange opponents_frlg.h
-- Create macros to standarize identical trainer classes (if possible)
-    - Balls and money
-- Finish Poke Balls after Trainer Class PR
-- Condense FRLG Swimmers like you did for RSE
-- Remove Rock Smash rocks and Strength boulders
-    - Check if any removals will cause weird progession
-- Figure out Cut
-    - The Cerulean tree can be removed since Slowbro blocks it anyways
-        - Check if the trigger is the badge or Bill
-    - Check if cop trigger is the badge or Bill
-    - Route 9 tree is an issue
-    - Vermillion tree is an issue, but can be removed after
-    - Any trees after Route 9 can probably be removed
-- Get SS Anne to stay?
-    - Might cause conflict with Seagallop
-- Species defines
-- Fly points
-- MAP_GROUP_AND_NUM
-- Edit PokeCenter to remove escalator
-- Remove PokeCenter 2F maps and references
-- Update local Porymap
-- Rearrange encounter map order
-- Seafoam Islands Ice Cave MB
-- Figure out if this needs to be added to the battle_environment map?: #define MAP_BATTLE_SCENE_LORELEI  MAP_BATTLE_SCENE_NORMAL
-- Split out big map groups (like SS Anne)
-- Make surf/cave/fishing encounter rate similar to Emerald
-- Move TRAINER_CLASS_INFO defines out of if statement? That way, any game can have any class/pic?
-- Clean up some trainers like the rival's Abra specifying that it only knows Teleport (since that would be the case anyways)
-
 ### Overworld
 - Seperate out split routes into two maps for different encounters?
     - 103 east/west
@@ -806,6 +768,146 @@ upcoming
     - Might not work in Viridian
 - Followers with weather abilities (or Cloud Nine/Air Lock) will change the overworld weather when following?
     - Cloud Nine could do cloudy instead of clear
+
+## Emerald
+- Rustboro:
+- Dewford:
+    - Get Exp. Share from Steven instead of from Mr. Stone after
+        - Or leave it with Mr. Stone so that it's more out of the way to get, and therefore won't be used to break the game
+            - It isn't on by default though, so could still be Steven
+- Mauville:
+    - Get all the weird Mauville men at once?
+- Mt. Chimney:
+    - Consolidate flags: FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA/FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA, FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY?
+    - Update last Mt. Chimney pair to be based off grunts and change text to "douse in sand"?
+- Petalburg:
+    - Norman's Spinda's left ear might be off?
+    - Reduce Surf slots to just 3? (Variety will come from all the routes with water)
+- Lilycove:
+    - Pokecenter Ladies
+        - "Union'd together"
+            - Now a struct
+            - Breaks current Favor Lady but a new game should be good
+            - .id can eventually be removed but seems to be used in record_mixing.c
+                - Could maybe make 3 seperate structs after this
+        - Update Favor Lady's items to include new items
+            - Wait for PR in upcoming
+            - Replace TM15 and PP Max
+        - Allow multiple items to be given. Potentially PokeBlocks and quizzes too
+    - Edit contests
+        - Add combos for Electric Terrain->Electric, Sunny Day->Fire, etc.
+        - Better overworld sprite for Lisia
+        - Update ORAS opponent stats
+        - Add unique ideas to Special Rank
+            - Contest Lady's Pokemon
+            - Utilize non-trainer/other important GFX
+                - weird guy
+                - Devon employee/the similar MAN_2
+                - Mr. Stone
+                - Guitarist/Kindler (since all contestants with that GFX seemed to be Bird Keepers and now use the Psychic GFX)
+                - Wally
+                - Interviewer/Cameraman (can use Gabby and Ty)
+                - Birch
+                - Scott
+                - NPC: BOY_2, BOY_3, LITTLE_GIRL, MAN_1, MART_EMPLOYEE, MOM, REPORTER_M, ROOFTOP_SALE_WOMAN
+                    - GAMEBOY_KID and UNION_ROOM_NURSE don't have a walking animation
+                - Gym Leaders/Elite Four/Frontier Brains
+                    - Drake and possibly others don't have a walking animation
+                - Trainers using the cosplay Pikachus
+                - A Malamar with a trainer (would need back sprite and new mon entry)
+                - A trainer with a Pokemon named after them (but with Jr. at the end to not trigger the Jacobus text)
+        - Update audience (ContestHall_EventScript_CreateAudience and ContestHall_EventScript_AddRandomAudienceMembers)
+            - Wallace and/or Oranguru could be in early ones for foreshadowing
+            - Add some of the special NPCs listed above
+        - Add ORAS special (Chad, Lisia, Wallace) https://bulbapedia.bulbagarden.net/wiki/List_of_Contest_opponents_(Generation_VI)
+        - Implement Mega evolution
+        - Improve white-on-white text
+- Mossdeep:
+    - Check new Steven Dive text
+- Battle Frontier
+    - Remove BP costs so that script_menu.h and field_specials.c can use item/move names directly?
+
+### Battle Frontier
+- Battle Tent Pokémon/EVs?
+- Remove restricted Pokémon?
+- Make pausing challenge not a soft save (CHALLENGE_STATUS_SAVING)
+- Update rest of apprentice teams
+- Pokémon
+    - EVs
+    - Moves
+- Give BP after every battle?
+- Do better with saving/resting
+- Remove level 50? Or remove Open Level but lower Pokémon to level 50 if over?
+- See if Poke Ball issue no longer occurs on a clean save
+- Edit Battle Frontier messages for Fairy?
+- Add new Pokémon to Frontier mons?
+- Make teams more accurate to trainer classes?
+- Make resting not a soft save (CHALLENGE_STATUS_SAVING)
+- Make retiring not reset streak
+    - Perhaps combine the two to take a pause like in SwSh
+- Use variable for the guy who talks about the teams?
+- Battle Tower
+    - Apprentices
+- Battle Factory
+    - Don't have both Open Level and Level 50 since the Pokémon are rentals anyways?
+- Updated Battle Pyramid wild randomizer?
+- Battle Pike
+    - Change Kirlia and Dusclops to fit the type of move used?
+
+## FireRed:
+- Add Dive TM
+- Don't remove Meteorite
+- Add version exclusives
+    - Including postgame
+- Remove duplicate GFX (for example, bald_man_frlg is just bald_man in the PR) and Trainer sprites
+- Improve Rod order
+    - Get rid of Super Rod entirely and just have first stage evos catchable?
+- Add Charms after Tea is taken
+- Add Wiglett/Toedscool?
+- Add Munna for Route 10 girl? Maybe a trade?
+- Decide if regional forms will be postgame or main game
+    - Add Galarian birds to Sevii Islands?
+- Decap:
+    - Trades
+- Clean up duplicate FRLG trainer classes
+    - defines
+    - trainers.h macros
+    - Also there's the trainer class update PR
+- Port over Navel Rock changes
+- Rocker sprite renamed to juggler_frlg.png because rocker has new one. Make sure the rocker uses it
+    - overworld
+    - file definition for juggler
+- Rearrange opponents_frlg.h
+- Create macros to standarize identical trainer classes (if possible)
+    - Balls and money
+- Finish Poke Balls after Trainer Class PR
+- Condense FRLG Swimmers like you did for RSE
+- Remove Rock Smash rocks and Strength boulders
+    - Check if any removals will cause weird progession
+- Figure out Cut
+    - The Cerulean tree can be removed since Slowbro blocks it anyways
+        - Check if the trigger is the badge or Bill
+    - Check if cop trigger is the badge or Bill
+    - Route 9 tree is an issue
+    - Vermillion tree is an issue, but can be removed after
+    - Any trees after Route 9 can probably be removed
+- Get SS Anne to stay?
+    - Might cause conflict with Seagallop
+- Species defines
+- Fly points
+- MAP_GROUP_AND_NUM
+- Edit PokeCenter to remove escalator
+- Remove PokeCenter 2F maps and references
+- Update local Porymap
+- Rearrange encounter map order
+- Seafoam Islands Ice Cave MB
+- Figure out if this needs to be added to the battle_environment map?: #define MAP_BATTLE_SCENE_LORELEI  MAP_BATTLE_SCENE_NORMAL
+- Split out big map groups (like SS Anne)
+- Make surf/cave/fishing encounter rate similar to Emerald
+- Move TRAINER_CLASS_INFO defines out of if statement? That way, any game can have any class/pic?
+- Clean up some trainers like the rival's Abra specifying that it only knows Teleport (since that would be the case anyways)
+- TMs
+- Game Corner
 
 ## Future hacks
 - Miscellaneous:

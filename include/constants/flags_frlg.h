@@ -2579,6 +2579,8 @@
 #define FLAG_LANDMARK_TRAINER_HILL                  0
 #define FLAG_UNUSED_0x8E3                           0 // Unused Flag
 #define FLAG_RECEIVED_POKEDEX_FROM_BIRCH            0
+
+//Emerald flags unused here
 #define FLAG_LANDMARK_METEOR_FALLS                  0
 #define FLAG_LANDMARK_WEATHER_INSTITUTE             0
 #define FLAG_LANDMARK_SAFARI_ZONE                   0

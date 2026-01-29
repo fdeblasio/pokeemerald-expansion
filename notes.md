@@ -855,6 +855,13 @@ upcoming
     - Change Kirlia and Dusclops to fit the type of move used?
 
 ## FireRed:
+- Options and Save Menu still green text
+- Intro seems like it uses second frame of species
+- Get rid of button explanation screen
+- Add Oak battle with remaining starter
+- Make Rival's teams less identical? Not sure if there's enough birds for that
+- Change Rocker to intense?
+- Add Team Rocket class to Scientists (and Juggler?) in Silph Co.
 - Add Dive TM
 - Don't remove Meteorite
 - Add version exclusives
@@ -868,7 +875,7 @@ upcoming
 - Decide if regional forms will be postgame or main game
     - Add Galarian birds to Sevii Islands?
 - Decap:
-    - Trades
+    - Trainer Tower
 - Clean up duplicate FRLG trainer classes
     - defines
     - trainers.h macros

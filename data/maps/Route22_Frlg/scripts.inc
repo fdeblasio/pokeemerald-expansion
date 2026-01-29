@@ -208,6 +208,7 @@ Route22_EventScript_LateRivalApproachBottom::
 	return
 
 Route22_EventScript_LateRivalSquirtle::
+<<<<<<< HEAD
 	trainerbattle_no_intro TRAINER_RIVAL_ROUTE_22_LATE_WATER, Route22_Text_LateRivalDefeat
 	return
 
@@ -217,6 +218,17 @@ Route22_EventScript_LateRivalBulbasaur::
 
 Route22_EventScript_LateRivalCharmander::
 	trainerbattle_no_intro TRAINER_RIVAL_ROUTE_22_LATE_FIRE, Route22_Text_LateRivalDefeat
+=======
+	trainerbattle_no_intro TRAINER_RIVAL_ROUTE22_LATE_WATER, Route22_Text_LateRivalDefeat
+	return
+
+Route22_EventScript_LateRivalBulbasaur::
+	trainerbattle_no_intro TRAINER_RIVAL_ROUTE22_LATE_GRASS, Route22_Text_LateRivalDefeat
+	return
+
+Route22_EventScript_LateRivalCharmander::
+	trainerbattle_no_intro TRAINER_RIVAL_ROUTE22_LATE_FIRE, Route22_Text_LateRivalDefeat
+>>>>>>> 83caa283f8 (Updated beginning of FR)
 	return
 
 Route22_Movement_LateRivalExit::

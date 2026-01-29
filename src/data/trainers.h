@@ -2933,7 +2933,7 @@ JUAN_REMATCH(4),
     .gender = TRAINER_MON_MALE,                                                    \
     }
 
-//Can replace Confuse Ray/Mean Look with Moonlight/Baby-Doll Eyes
+// Can replace Confuse Ray/Mean Look with Moonlight/Baby-Doll Eyes
 #define SIDNEY_UMBREON(Level, Tier)                                          \
     {                                                                        \
     ELITE_FOUR_MON(Level, UMBREON, Tier, SIDNEY),                            \

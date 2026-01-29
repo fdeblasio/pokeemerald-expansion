@@ -272,8 +272,7 @@ upcoming
         - Vine Whip->Power Whip
 - Possible Move Updates:
     - Rock Smash: 40->50, 100% reduce
-        - clone of Struggle Bug/Pounce/Chilling Water, although those moves may become clones of Icy Wind/Mud Shot
-    - Struggle Bug/Chilling Water/Pounce: 50->55?
+        - clone of Struggle Bug/Pounce/Chilling Water?
     - Bite: 60->65
     - Poison Fang: 60->65
     - Shadow Punch: 60->75?

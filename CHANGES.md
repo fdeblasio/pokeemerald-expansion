@@ -568,6 +568,7 @@
         - Accuracy: 95->100
     - Dizzy Punch:
         - Power: 70->75
+        - PP: 10->15
     - Double Hit:
         - Accuracy: 90->100
     - Double Slap:

@@ -3908,7 +3908,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         BASIC_MOVE,
         .power = 75,
         .type = TYPE_NORMAL,
-        .pp = 10,
+        .pp = 15,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .punchingMove = TRUE,

@@ -1181,7 +1181,7 @@ enum __attribute__((packed)) Item
     ITEM_TM250,
 
     /* Expands to:
-     *   ITEM_TM_FOCUS_PUNCH = ITEM_TM01,
+     *   ITEM_TM_FOCUS_PUNCH = ITEM_TM001,
      *   ...
      *   ITEM_HM_CUT = ITM_HM01,
      *   ... */

@@ -870,6 +870,7 @@ upcoming
 - Get rid of button explanation screen
 - Add Oak battle with remaining starter
 - Make Rival's teams less identical? Not sure if there's enough birds for that
+    - Charmander team would have Rattata to not give double advantage against Bulbasaur
 - Change Rocker to intense?
 - Add Team Rocket class to Scientists (and Juggler?) in Silph Co.
 - Add Dive TM

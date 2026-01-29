@@ -857,7 +857,7 @@ upcoming
 ## FireRed:
 - Decap:
     - Trainer Tower
-- Slow summary screen (might only be starter?)
+- Add Pokemon/grass to Pewter City for grinding. Also lower Brock's level
 - Rock Slide, Body Slam, Swords Dance, and Thunder Wave are tutors in FRLG but are now TMs due to Emerald
     - Two Island lady can give out Blast Burn/Frenzy Plant/Hydro Cannon TMs instead of teaching moves
     - Same for Thunder Wave
@@ -901,6 +901,9 @@ upcoming
 - Remove Rock Smash rocks and Strength boulders
     - Check if any removals will cause weird progession
 - Figure out Cut
+    - Early game will get a flag so to block stuff but so that future cuts will be permanent
+    - Can replace Vermilion and Route 9 with NPCs
+    - The rest can be removed
     - The Cerulean tree can be removed since Slowbro blocks it anyways
         - Check if the trigger is the badge or Bill
     - Check if cop trigger is the badge or Bill
@@ -924,6 +927,7 @@ upcoming
 - Clean up some trainers like the rival's Abra specifying that it only knows Teleport (since that would be the case anyways)
 - TMs
 - Game Corner
+- Pewter Crunchies
 
 ## Future hacks
 - Miscellaneous:

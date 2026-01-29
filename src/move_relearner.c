@@ -1089,7 +1089,7 @@ static bool32 HasRelearnerTMMoves(struct BoxPokemon *boxMon)
 {
     enum Species species = GetBoxMonData(boxMon, MON_DATA_SPECIES);
 
-    if (GetBagItemId(POCKET_TM_HM, 0) == ITEM_NONE)
+    if (GetBagItemId(POCKET_TM, 0) == ITEM_NONE)
         return FALSE;
 
     for (u32 i = 0; i < NUM_ALL_MACHINES; i++)

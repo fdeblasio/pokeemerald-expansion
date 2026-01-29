@@ -2154,15 +2154,15 @@
     - Catch rate: 45->90
     - Learns Headbutt by level up
 
-- Paldean Tauros (Combat) (not in main game):
+- Paldean Tauros (Combat) (not in Emerald):
     - Catch rate: 45->90
     - Learns Rock Smash and Brick Break by level up
 
-- Paldean Tauros (Blaze) (not in main game):
+- Paldean Tauros (Blaze) (not in Emerald):
     - Catch rate: 45->90
     - Learns Rock Smash, Temper Flare, and Brick Break by level up
 
-- Paldean Tauros (Aqua) (not in main game):
+- Paldean Tauros (Aqua) (not in Emerald):
     - Catch rate: 45->90
     - Learns Rock Smash, Liquidation and Brick Break by level up
 

@@ -1179,10 +1179,17 @@ PalletTown_ProfessorOaksLab_EventScript_ReadyEndSignLadyScene::
 	setvar VAR_MAP_SCENE_PALLET_TOWN_SIGN_LADY, 1
 	return
 
+PalletTown_ProfessorOaksLab_Movement_RivalWalksToBulbasaur::
+	walk_down
+	walk_right
+	walk_right
+	walk_right
+	walk_in_place_faster_up
+	step_end
+
 PalletTown_ProfessorOaksLab_Movement_RivalWalksToCharmander::
 	walk_down
 	walk_down
-	walk_right
 	walk_right
 	walk_right
 	walk_right
@@ -1192,19 +1199,13 @@ PalletTown_ProfessorOaksLab_Movement_RivalWalksToCharmander::
 
 PalletTown_ProfessorOaksLab_Movement_RivalWalksToSquirtle::
 	walk_down
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_in_place_faster_up
-	step_end
-
-PalletTown_ProfessorOaksLab_Movement_RivalWalksToBulbasaur::
 	walk_down
 	walk_right
 	walk_right
 	walk_right
-	walk_in_place_faster_up
+	walk_right
+	walk_right
+	walk_up
 	step_end
 
 PalletTown_ProfessorOaksLab_EventScript_SquirtleBall::

@@ -554,6 +554,7 @@ upcoming
 
 ## FireRed:
 - Options and Save Menu still green text
+- Bag background also green
 - Intro seems like it uses second frame of species
 - Get rid of button explanation screen
 - Add Oak battle with remaining starter

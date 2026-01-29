@@ -34,6 +34,7 @@ void AGBPrintInit(void);
 #define DebugAssert(pFile, nLine, pExpression, nStopProgram) MgbaAssert(pFile, nLine, pExpression, nStopProgram)
 #define DebugPrintfLevel(level, pBuf, ...) MgbaPrintf(level, pBuf, ## __VA_ARGS__)
 
+#define DEBUG_PRINT(text) MgbaPrintf(MGBA_LOG_WARN, text);
 #define DEBUG_PRINT_INT(text, var) MgbaPrintf(MGBA_LOG_WARN, text "%d", var);
 #define DEBUG_PRINT_INT_VAR(var) DEBUG_PRINT_INT(#var ": ", var)
 #define DEBUG_PRINT_INT_EMPTY(var) DEBUG_PRINT_INT("", var)

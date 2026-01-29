@@ -12,6 +12,7 @@ Merge conflicts:
 $1
 
 Debugging (https://cplusplus.com/reference/cstdio/printf/):
+DEBUG_PRINT("text")
 DEBUG_PRINT_INT("text: ", var)
 DEBUG_PRINT_INT_VAR(var)
 DEBUG_PRINT_INT_EMPTY(var)
@@ -41,6 +42,7 @@ upcoming
 ```
 
 ## To Do (common):
+- 250 TMs causes lagging
 
 ### Meta
 - Organize here between Emerald/FireRed
@@ -52,6 +54,7 @@ upcoming
         - Have Porymoves pull from src/data/pokemon/special_movesets.json's extraTutors
         - Will need to re-remove universal moves from c code and figure out Rotoms
         - SaveBlock 3 utilization (DexNav, others?)
+        - Summary screen relearner/nickname (will need to revert some changes done for FRLG lag)
     - Makefile changes
     - Automatic trainers (probably not)
     - Summary screen/PC renaming/relearning

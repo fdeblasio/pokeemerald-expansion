@@ -858,7 +858,7 @@ upcoming
 - Decap:
     - Trainer Tower
 - Slow summary screen (might only be starter?)
-- Counter and Rock Slide (and maybe more) are tutors in FRLG but are now TMs due to Emerald
+- Rock Slide, Swords Dance, and Thunder Wave are tutors in FRLG but are now TMs due to Emerald
 - Options and Save Menu still green text
 - Bag background also green
 - Intro seems like it uses second frame of species

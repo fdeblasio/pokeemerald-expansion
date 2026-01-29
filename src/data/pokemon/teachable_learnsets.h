@@ -289,7 +289,7 @@
 >>>>>>> f3cdab0cd6 (Updated learnsets for new TMs)
 // *************************************************** //
 // Tutor moves:                                        //
-// - MOVE_DARKEST_LARIAT                               //
+// - MOVE_COUNTER                                      //
 // - MOVE_DEFENSE_CURL                                 //
 // - MOVE_DOUBLE_EDGE                                  //
 // - MOVE_DRAGON_BREATH                                //

@@ -437,7 +437,8 @@ upcoming
 - Figure out if this needs to be added to the battle_environment map?: #define MAP_BATTLE_SCENE_LORELEI  MAP_BATTLE_SCENE_NORMAL
 - Split out big map groups (like SS Anne)
 - Make surf/cave/fishing encounter rate similar to Emerald
-- Move TRAINER_CLASS_INFO defines to new file? That way, any game can have any class/pic?
+- Move TRAINER_CLASS_INFO defines out of if statement? That way, any game can have any class/pic?
+- Clean up some trainers like the rival's Abra specifying that it only knows Teleport (since that would be the case anyways)
 
 ### Overworld
 - Seperate out split routes into two maps for different encounters?

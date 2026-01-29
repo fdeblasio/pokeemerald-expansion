@@ -131,8 +131,13 @@ EWRAM_DATA u8 gChainFishingDexNavStreak = 0;
 
 //FireRed
 //Not finalized. Will probably be changed and expanded after this builds
-#define RANGE_TEST            1, 1
+#define RANGE_ROUTE           1, 1
 #define RANGE_ROUTE_1         2, 4
+#define RANGE_ROUTE_22        3, 5
+#define RANGE_ROUTE_2         4, 5
+#define RANGE_VIRIDIAN_FOREST 5, 6
+#define RANGE_VIRIDIAN_FOREST_COCOON 7, 7
+#define RANGE_PEWTER_CITY     7, 7
 #define RANGE_POSTGAME_FRLG   POSTGAME_LEVEL_FRLG, POSTGAME_LEVEL_FRLG
 
 #define SAFARI_ZONE_ENCOUNTER_RATE 50

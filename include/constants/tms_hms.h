@@ -103,6 +103,7 @@
     F(WILL_O_WISP) \
     F(CONFUSE_RAY) \
     F(CHARGE) \
+    F(POISON_FANG) \
     F(KNOCK_OFF) \
     F(PAYBACK) \
     F(AVALANCHE) \
@@ -122,7 +123,6 @@
     F(ELECTRO_BALL) \
     F(SUPER_FANG) \
     F(FOUL_PLAY) \
-    F(COUNTER) \
     F(ENDEAVOR) \
     F(FLING) \
     F(SWORDS_DANCE) \
@@ -214,6 +214,7 @@
     F(DRAGON_PULSE) \
     F(CRUNCH) \
     F(THROAT_CHOP) \
+    F(DARKEST_LARIAT) \
     F(DARK_PULSE) \
     F(IRON_HEAD) \
     F(FLASH_CANNON) \
@@ -245,7 +246,6 @@
     F(SOLAR_BLADE) \
     F(OUTRAGE) \
     F(FUTURE_SIGHT) \
-    F(DREAM_EATER) \
     F(MISTY_EXPLOSION) \
     F(METEOR_BEAM) \
     F(STEEL_BEAM) \

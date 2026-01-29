@@ -6650,7 +6650,6 @@ static const u16 sKomalaEggMoveLearnset[] = {
     MOVE_QUASH,
     MOVE_ROUND,
     MOVE_SING,
-    MOVE_SNORE,
     MOVE_SUPERPOWER,
     MOVE_TERA_BLAST,
     MOVE_WISH,

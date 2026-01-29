@@ -10,9 +10,9 @@
       {"Level": 33, "Move": "MOVE_SLUDGE_BOMB"}
     ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": ["MOVE_POISON_FANG"],
     "EggMoves": [],
-    "TutorMoves": ["MOVE_POISON_FANG"]
+    "TutorMoves": []
   },
   "IVYSAUR": {
     "LevelMoves": [
@@ -23,9 +23,9 @@
       {"Level": 45, "Move": "MOVE_SLUDGE_BOMB"}
     ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": ["MOVE_POISON_FANG"],
     "EggMoves": [],
-    "TutorMoves": ["MOVE_POISON_FANG"]
+    "TutorMoves": []
   },
   "VENUSAUR": {
     "LevelMoves": [
@@ -36,9 +36,9 @@
       {"Level": 51, "Move": "MOVE_SLUDGE_BOMB"}
     ],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": ["MOVE_POISON_FANG"],
     "EggMoves": [],
-    "TutorMoves": ["MOVE_POISON_FANG"]
+    "TutorMoves": []
   },
   "CHARMANDER": {
     "LevelMoves": [

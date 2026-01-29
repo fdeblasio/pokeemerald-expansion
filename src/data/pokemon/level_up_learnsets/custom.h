@@ -21230,6 +21230,7 @@ static const struct LevelUpMove sMiniorLevelUpLearnset[] = {
 #if P_FAMILY_KOMALA
 static const struct LevelUpMove sKomalaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POUND),
+    LEVEL_UP_MOVE( 1, MOVE_SNORE),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 1, MOVE_ROLLOUT),
     LEVEL_UP_MOVE( 6, MOVE_STOCKPILE),

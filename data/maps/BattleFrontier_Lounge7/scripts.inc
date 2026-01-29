@@ -44,7 +44,7 @@ BattleFrontier_Lounge7_EventScript_ChooseLeftTutorMove::
 	copyvar VAR_TEMP_FRONTIER_TUTOR_SELECTION, VAR_RESULT
 	setvar VAR_0x8008, 1
 	switch VAR_RESULT
-	case 0, BattleFrontier_Lounge7_EventScript_DarkestLariat
+	case 0, BattleFrontier_Lounge7_EventScript_DreamEater
 	case 1, BattleFrontier_Lounge7_EventScript_MegaPunch
 	case 2, BattleFrontier_Lounge7_EventScript_MegaKick
 	case 3, BattleFrontier_Lounge7_EventScript_DragonBreath
@@ -69,7 +69,7 @@ BattleFrontier_Lounge7_EventScript_ChooseRightTutorMove::
 	copyvar VAR_TEMP_FRONTIER_TUTOR_SELECTION, VAR_RESULT
 	setvar VAR_0x8008, 1
 	switch VAR_RESULT
-	case 0, BattleFrontier_Lounge7_EventScript_PoisonFang
+	case 0, BattleFrontier_Lounge7_EventScript_Counter
 	case 1, BattleFrontier_Lounge7_EventScript_LowKick
 	case 2, BattleFrontier_Lounge7_EventScript_LowSweep
 	case 3, BattleFrontier_Lounge7_EventScript_TerrainPulse
@@ -88,8 +88,8 @@ BattleFrontier_Lounge7_EventScript_ChooseRightTutorMove::
 	end
 	.endm
 
-BattleFrontier_Lounge7_EventScript_DarkestLariat::
-	battle_frontier_tutor MOVE_DARKEST_LARIAT
+BattleFrontier_Lounge7_EventScript_DreamEater::
+	battle_frontier_tutor MOVE_DREAM_EATER
 
 BattleFrontier_Lounge7_EventScript_MegaPunch::
 	battle_frontier_tutor MOVE_MEGA_PUNCH
@@ -116,7 +116,7 @@ BattleFrontier_Lounge7_EventScript_Imprison::
 	battle_frontier_tutor MOVE_IMPRISON
 
 BattleFrontier_Lounge7_EventScript_PoisonFang::
-	battle_frontier_tutor MOVE_POISON_FANG
+	battle_frontier_tutor MOVE_COUNTER
 
 BattleFrontier_Lounge7_EventScript_LowKick::
 	battle_frontier_tutor MOVE_LOW_KICK

@@ -331,27 +331,27 @@
 |TM098|Thunder Wave|Mauville TM Shop|
 |TM099|Will-O-Wisp|Mauville TM Shop|
 |TM100|Confuse Ray|Mauville TM Shop|
-|TM101|Charge|Mauville TM Shop|
-|TM102|Knock Off|Lavaridge TM Shop|
-|TM103|Payback|Lavaridge TM Shop|
-|TM104|Avalanche|Lavaridge TM Shop|
-|TM105|Brine|Lavaridge TM Shop|
-|TM106|Hex|Lavaridge TM Shop|
-|TM107|Venoshock|Lavaridge TM Shop|
-|TM108|U-turn|Lavaridge TM Shop|
-|TM109|Volt Switch|Lavaridge TM Shop|
-|TM110|Flip Turn|Lavaridge TM Shop|
-|TM111|Heat Crash|Lavaridge TM Shop|
-|TM112|Heavy Slam|Lavaridge TM Shop|
-|TM113|Seismic Toss|Lavaridge TM Shop|
-|TM114|Night Shade|Lavaridge TM Shop|
-|TM115|Reversal|Lavaridge TM Shop|
-|TM116|Grass Knot|Lavaridge TM Shop|
-|TM117|Gyro Ball|Lavaridge TM Shop|
-|TM118|Electro Ball|Lavaridge TM Shop|
-|TM119|Super Fang|Lavaridge TM Shop|
-|TM120|Foul Play|Lavaridge TM Shop|
-|TM121|Counter|Lavaridge TM Shop|
+|TM101|Poison Fang|Lavaridge TM Shop|
+|TM102|Charge|Mauville TM Shop|
+|TM103|Knock Off|Lavaridge TM Shop|
+|TM104|Payback|Lavaridge TM Shop|
+|TM105|Avalanche|Lavaridge TM Shop|
+|TM106|Brine|Lavaridge TM Shop|
+|TM107|Hex|Lavaridge TM Shop|
+|TM108|Venoshock|Lavaridge TM Shop|
+|TM109|U-turn|Lavaridge TM Shop|
+|TM110|Volt Switch|Lavaridge TM Shop|
+|TM111|Flip Turn|Lavaridge TM Shop|
+|TM112|Heat Crash|Lavaridge TM Shop|
+|TM113|Heavy Slam|Lavaridge TM Shop|
+|TM114|Seismic Toss|Lavaridge TM Shop|
+|TM115|Night Shade|Lavaridge TM Shop|
+|TM116|Reversal|Lavaridge TM Shop|
+|TM117|Grass Knot|Lavaridge TM Shop|
+|TM118|Gyro Ball|Lavaridge TM Shop|
+|TM119|Electro Ball|Lavaridge TM Shop|
+|TM120|Super Fang|Lavaridge TM Shop|
+|TM121|Foul Play|Lavaridge TM Shop|
 |TM122|Endeavor|Lavaridge TM Shop|
 |TM123|Fling|Lavaridge TM Shop|
 |TM124|Swords Dance|Lavaridge TM Shop|
@@ -443,38 +443,38 @@
 |TM210|Dragon Pulse|Lilycove TM Shop|
 |TM211|Crunch|Lilycove TM Shop|
 |TM212|Throat Chop|Lilycove TM Shop|
-|TM213|Dark Pulse|Lilycove TM Shop|
-|TM214|Iron Head|Lilycove TM Shop|
-|TM215|Flash Cannon|Lilycove TM Shop|
-|TM216|Play Rough|Lilycove TM Shop|
-|TM217|Moonblast|Lilycove TM Shop|
-|TM218|Body Press|Lilycove TM Shop|
-|TM219|Fire Pledge|Lilycove TM Shop|
-|TM220|Water Pledge|Lilycove TM Shop|
-|TM221|Grass Pledge|Lilycove TM Shop|
-|TM222|Electric Terrain|Lilycove TM Shop|
-|TM223|Grassy Terrain|Lilycove TM Shop|
-|TM224|Psychic Terrain|Lilycove TM Shop|
-|TM225|Misty Terrain|Lilycove TM Shop|
-|TM226|Giga Impact|Lilycove TM Shop|
-|TM227|Hydro Pump|Lilycove TM Shop|
-|TM228|Hurricane|Lilycove TM Shop|
-|TM229|Gunk Shot|Lilycove TM Shop|
-|TM230|Focus Blast|Victory Road|
-|TM231|Stone Edge|Lilycove TM Shop|
-|TM232|Blast Burn|Lilycove TM Shop|
-|TM233|Hydro Cannon|Lilycove TM Shop|
-|TM234|Frenzy Plant|Lilycove TM Shop|
-|TM235|Flare Blitz|Lilycove TM Shop|
-|TM236|Brave Bird|Lilycove TM Shop|
-|TM237|Wild Charge|Lilycove TM Shop|
-|TM238|Leaf Storm|Lilycove TM Shop|
-|TM239|Draco Meteor|Lilycove TM Shop|
-|TM240|Close Combat|Lilycove TM Shop|
-|TM241|Solar Blade|Lilycove TM Shop|
-|TM242|Outrage|Lilycove TM Shop|
-|TM243|Future Sight|Lilycove TM Shop|
-|TM244|Dream Eater|Lilycove TM Shop|
+|TM213|Darkest Lariat|Lilycove TM Shop|
+|TM214|Dark Pulse|Lilycove TM Shop|
+|TM215|Iron Head|Lilycove TM Shop|
+|TM216|Flash Cannon|Lilycove TM Shop|
+|TM217|Play Rough|Lilycove TM Shop|
+|TM218|Moonblast|Lilycove TM Shop|
+|TM219|Body Press|Lilycove TM Shop|
+|TM220|Fire Pledge|Lilycove TM Shop|
+|TM221|Water Pledge|Lilycove TM Shop|
+|TM222|Grass Pledge|Lilycove TM Shop|
+|TM223|Electric Terrain|Lilycove TM Shop|
+|TM224|Grassy Terrain|Lilycove TM Shop|
+|TM225|Psychic Terrain|Lilycove TM Shop|
+|TM226|Misty Terrain|Lilycove TM Shop|
+|TM227|Giga Impact|Lilycove TM Shop|
+|TM228|Hydro Pump|Lilycove TM Shop|
+|TM229|Hurricane|Lilycove TM Shop|
+|TM230|Gunk Shot|Lilycove TM Shop|
+|TM231|Focus Blast|Victory Road|
+|TM232|Stone Edge|Lilycove TM Shop|
+|TM233|Blast Burn|Lilycove TM Shop|
+|TM234|Hydro Cannon|Lilycove TM Shop|
+|TM235|Frenzy Plant|Lilycove TM Shop|
+|TM236|Flare Blitz|Lilycove TM Shop|
+|TM237|Brave Bird|Lilycove TM Shop|
+|TM238|Wild Charge|Lilycove TM Shop|
+|TM239|Leaf Storm|Lilycove TM Shop|
+|TM240|Draco Meteor|Lilycove TM Shop|
+|TM241|Close Combat|Lilycove TM Shop|
+|TM242|Solar Blade|Lilycove TM Shop|
+|TM243|Outrage|Lilycove TM Shop|
+|TM244|Future Sight|Lilycove TM Shop|
 |TM245|Misty Explosion|Lilycove TM Shop|
 |TM246|Meteor Beam|Lilycove TM Shop|
 |TM247|Steel Beam|Lilycove TM Shop|
@@ -496,7 +496,7 @@
 - Swagger
 
 #### Battle Frontier Left:
-- Darkest Lariat
+- Dream Eater
 - Mega Punch
 - Mega Kick
 - Dragon Breath
@@ -507,7 +507,7 @@
 - Imprison
 
 #### Battle Frontier Right:
-- Poison Fang
+- Counter
 - Low Kick
 - Low Sweep
 - Terrain Pulse
@@ -1225,16 +1225,16 @@
 
 - Bulbasaur (not in main game):
     - Learns Magical Leaf, Venoshock, Giga Drain, Energy Ball, and Sludge Bomb by level up
-    - Learns Poison Fang by move tutor
+    - Learns Poison Fang by TM
 
 - Ivysaur (not in main game):
     - Evolution: 32->36
     - Learns Magical Leaf, Venoshock, Giga Drain, Energy Ball, and Sludge Bomb by level up
-    - Learns Poison Fang by move tutor
+    - Learns Poison Fang by TM
 
 - Venusaur (not in main game):
     - Learns Magical Leaf, Venoshock, Giga Drain, Energy Ball, and Sludge Bomb by level up
-    - Learns Poison Fang by move tutor
+    - Learns Poison Fang by TM
 
 - Charmander/Charmeleon/Charizard (not in main game):
     - Learn Metal Claw and Incinerate by level up

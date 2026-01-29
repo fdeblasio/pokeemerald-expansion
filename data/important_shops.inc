@@ -54,6 +54,7 @@ MauvilleCity_Mart_TMs:
 
 	.align 2
 LavaridgeTown_Mart_TMs:
+	.2byte ITEM_TM_POISON_FANG
 	.2byte ITEM_TM_KNOCK_OFF
 	.2byte ITEM_TM_PAYBACK
 	.2byte ITEM_TM_AVALANCHE
@@ -73,7 +74,6 @@ LavaridgeTown_Mart_TMs:
 	.2byte ITEM_TM_ELECTRO_BALL
 	.2byte ITEM_TM_SUPER_FANG
 	.2byte ITEM_TM_FOUL_PLAY
-	.2byte ITEM_TM_COUNTER
 	.2byte ITEM_TM_ENDEAVOR
 	.2byte ITEM_TM_FLING
 	.2byte ITEM_TM_SWORDS_DANCE

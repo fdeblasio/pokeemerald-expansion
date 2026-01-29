@@ -115,7 +115,7 @@ BattleFrontier_Lounge7_EventScript_RockClimb::
 BattleFrontier_Lounge7_EventScript_Imprison::
 	battle_frontier_tutor MOVE_IMPRISON
 
-BattleFrontier_Lounge7_EventScript_PoisonFang::
+BattleFrontier_Lounge7_EventScript_Counter::
 	battle_frontier_tutor MOVE_COUNTER
 
 BattleFrontier_Lounge7_EventScript_LowKick::

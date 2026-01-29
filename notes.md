@@ -559,7 +559,12 @@ upcoming
 - Decap:
     - Trainer Tower
 - Slow summary screen (might only be starter?)
-- Rock Slide, Swords Dance, and Thunder Wave are tutors in FRLG but are now TMs due to Emerald
+- Rock Slide, Body Slam, Swords Dance, and Thunder Wave are tutors in FRLG but are now TMs due to Emerald
+    - Two Island lady can give out Blast Burn/Frenzy Plant/Hydro Cannon TMs instead of teaching moves
+    - Same for Thunder Wave
+    - Not Body Slam or Swords Dance since they're postgame
+    - Rock Slide is too powerful to be given that early
+    - Replace Softboiled tutor since it's too limited
 - Options and Save Menu still green text
 - Bag background also green
 - Intro seems like it uses second frame of species

@@ -82,7 +82,7 @@ EventScript_PlayFanfareObtainedItem::
 	return
 
 EventScript_PlayFanfareObtainedTM::
-	playfanfare MUS_OBTAIN_TM
+	playfanfare MUS_OBTAIN_TMHM
 	return
 
 Std_ObtainDecoration::

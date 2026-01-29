@@ -4142,7 +4142,7 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_OBTAIN_BADGE)             \
     X(MUS_OBTAIN_ITEM)              \
     X(MUS_EVOLVED)                  \
-    X(MUS_OBTAIN_TM)                \
+    X(MUS_OBTAIN_TMHM)              \
     X(MUS_LILYCOVE_MUSEUM)          \
     X(MUS_ROUTE122)                 \
     X(MUS_OCEANIC_MUSEUM)           \

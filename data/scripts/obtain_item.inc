@@ -48,7 +48,7 @@ EventScript_BufferPokeballsPocket::
 	return
 
 EventScript_BufferTMsPocket::
-	bufferstdstring STR_VAR_3, STDSTRING_TMS
+	bufferstdstring STR_VAR_3, STDSTRING_TMHMS
 	call_if_eq VAR_0x8007, TRUE, EventScript_PlayFanfareObtainedTM
 	return
 

@@ -1520,11 +1520,11 @@
 #define FLAG_MOSSDEEP_GYM_SWITCH_4           0 //
 
 #define FLAG_OCEANIC_MUSEUM_MET_REPORTER     0
-#define FLAG_RECEIVED_HM_STRENGTH            0
-#define FLAG_RECEIVED_HM_ROCK_SMASH          0
+#define FLAG_RECEIVED_TM_STRENGTH            0
+#define FLAG_RECEIVED_TM_ROCK_SMASH          0
 #define FLAG_WHITEOUT_TO_LAVARIDGE           0 // Set after defeating Flannery, so the player cant white out from poison before receiving Go Goggles
-#define FLAG_RECEIVED_HM_FLASH               0
-#define FLAG_RECEIVED_HM_FLY                 0
+#define FLAG_RECEIVED_TM_FLASH               0
+#define FLAG_RECEIVED_TM_FLY                 0
 #define FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT  0
 #define FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE  0
 #define FLAG_UNUSED_RS_LEGENDARY_BATTLE_DONE 0 // Unused Flag. Used in R/S to indicate whether player defeated or caught Groudon/Kyogre in Cave of Origin.
@@ -1538,8 +1538,8 @@
 
 #define FLAG_LANDMARK_MIRAGE_TOWER           0
 #define FLAG_RECEIVED_TM_BRICK_BREAK         0
-#define FLAG_RECEIVED_HM_SURF                0
-#define FLAG_RECEIVED_HM_DIVE                0
+#define FLAG_RECEIVED_TM_SURF                0
+#define FLAG_RECEIVED_TM_DIVE                0
 #define FLAG_REGISTER_RIVAL_POKENAV          0
 #define FLAG_DEFEATED_RIVAL_ROUTE_104        0
 #define FLAG_DEFEATED_WALLY_VICTORY_ROAD     0
@@ -1552,7 +1552,7 @@
 #define FLAG_RECEIVED_AMULET_COIN            0
 #define FLAG_THANKED_FOR_PLAYING_WITH_WALLY  0
 #define FLAG_ENABLE_FIRST_WALLY_POKENAV_CALL 0 // Set after defeating Wally outside Mauville Gym. Will activate a call later to register Wally.
-#define FLAG_RECEIVED_HM_CUT                 0
+#define FLAG_RECEIVED_TM_CUT                 0
 #define FLAG_SCOTT_CALL_FORTREE_GYM          0 // Triggers call from Scott after defeating Winona
 #define FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY   0
 #define FLAG_RECEIVED_6_SODA_POP             0
@@ -1729,7 +1729,7 @@
 #define FLAG_MET_MAXIE_SOOTOPOLIS            0
 #define FLAG_MET_SCOTT_RUSTBORO              0
 #define FLAG_WALLACE_GOES_TO_SKY_PILLAR      0 // Set after speaking to Wallace within the Cave of Origin.
-#define FLAG_RECEIVED_HM_WATERFALL           0
+#define FLAG_RECEIVED_TM_WATERFALL           0
 #define FLAG_BEAT_MAGMA_GRUNT_JAGGED_PASS    0
 
 #define FLAG_MIRAGE_TOWER_VISIBLE            0
@@ -2579,6 +2579,8 @@
 #define FLAG_LANDMARK_TRAINER_HILL                  0
 #define FLAG_UNUSED_0x8E3                           0 // Unused Flag
 #define FLAG_RECEIVED_POKEDEX_FROM_BIRCH            0
+
+//Emerald flags unused here
 #define FLAG_LANDMARK_METEOR_FALLS                  0
 #define FLAG_LANDMARK_WEATHER_INSTITUTE             0
 #define FLAG_LANDMARK_SAFARI_ZONE                   0

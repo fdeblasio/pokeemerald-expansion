@@ -260,7 +260,7 @@ EventScript_BufferPutAwayPocketName::
 	case POCKET_ITEMS,       EventScript_BufferPutAwayPocketItems
 	case POCKET_KEY_ITEMS,   EventScript_BufferPutAwayPocketKeyItems
 	case POCKET_POKE_BALLS,  EventScript_BufferPutAwayPocketPokeBalls
-	case POCKET_TM_HM,     EventScript_BufferPutAwayPocketTMCase
+	case POCKET_TM,     EventScript_BufferPutAwayPocketTMCase
 	case POCKET_BERRIES, EventScript_BufferPutAwayPocketBerryPouch
 	end
 

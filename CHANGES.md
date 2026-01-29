@@ -149,15 +149,15 @@
 - There are now one less rematch per gym leader/Wally to free up space
 - Any Trainer first encountered after Sootopolis now only has one rematch
 
-#### Bosses:
+#### Bosses (Emerald):
 |          BOSSES           |        VANILLA       |    UPDATED    |
 |:-------------------------:|:--------------------:|:-------------:|
-|Rival 103                  |5||
+|Rival Route 103            |5||
 |Roxanne                    |12, 12, 15            |11, 11, 13|
 |Rival Rustboro             |13, 15||
 |Brawly                     |16, 16, 19            |16, 16, 18|
 |Archie Oceanic Museum      |N/A                   |17, 17, 19|
-|Rival 110                  |18, 18, 20||
+|Rival Route 110            |18, 18, 20||
 |Wally Mauville             |16                    |19|
 |Wally Verdanturf           |N/A                   |21, 23|
 |Wattson                    |20, 22, 22, 24||
@@ -168,7 +168,7 @@
 |Flannery                   |24, 24, 26, 29        |28, 30, 30, 32|
 |Norman                     |27, 27, 29, 31        |31, 33, 33, 35|
 |Shelly Weather Institute   |28, 28                |39, 39, 41|
-|Rival 119                  |29, 29, 31            |40, 40, 41, 42|
+|Rival Route 119            |29, 29, 31            |40, 40, 41, 42|
 |Winona                     |29, 29, 30, 31, 33    |40, 40, 41, 41, 43|
 |Rival Lilycove             |31, 32, 32, 34        |43, 43, 43, 44, 45|
 |Tabitha Magma Hideout      |26, 28, 30, 33        |45, 45, 47|
@@ -201,6 +201,25 @@
 |Elite Four rematches       |N/A                   |86, 86, 86, 88, 88, 90|
 |Wallace rematches          |N/A                   |87, 87, 87, 88, 88, 90|
 |Steven                     |75, 76, 76, 76, 77, 78|87, 87, 88, 88, 89, 90|
+
+#### Bosses (FireRed):
+|          BOSSES           |        VANILLA       |    UPDATED    |
+|:-------------------------:|:--------------------:|:-------------:|
+|Rival Oak's Lab            |5||
+|Rival Route 22             |9, 9                  |7, 7|
+
+|Roxanne                    |12, 12, 15            |11, 11, 13|
+|Rival Rustboro             |13, 15||
+|Brawly                     |16, 16, 19            |16, 16, 18|
+|Archie Oceanic Museum      |N/A                   |17, 17, 19|
+|Rival Route 110            |18, 18, 20||
+|Wally Mauville             |16                    |19|
+|Wally Verdanturf           |N/A                   |21, 23|
+|Wattson                    |20, 22, 22, 24||
+|Wally Route 114            |N/A                   |25, 25, 27|
+|Courtney Meteor Falls      |N/A                   |26, 26, 28|
+|Tabitha Mt. Chimney        |18, 20, 22, 22        |27, 27, 29|
+|Maxie Mt. Chimney          |24, 24, 25            |28, 29, 29, 30|
 
 ### Berries:
 - All berries: min and max yields have been boosted to a minimum of 3/6
@@ -1223,72 +1242,121 @@
 - All starters:
     - Any with a STAB attack at level 5 or below had it swapped with the next attack to prevent the rival battle from being too hard
 
-- Bulbasaur (not in main game):
+- Bulbasaur (not in Emerald):
+    - Atk: 49->50
+    - Def: 49->50
     - Learns Magical Leaf, Venoshock, Giga Drain, Energy Ball, and Sludge Bomb by level up
     - Learns Poison Fang by TM
 
-- Ivysaur (not in main game):
+- Ivysaur (not in Emerald):
+    - Atk: 62->65
+    - Def: 63->65
     - Evolution: 32->36
     - Learns Magical Leaf, Venoshock, Giga Drain, Energy Ball, and Sludge Bomb by level up
     - Learns Poison Fang by TM
 
-- Venusaur (not in main game):
+- Venusaur (not in Emerald):
+    - Atk: 82->85
+    - Def: 83->85
     - Learns Magical Leaf, Venoshock, Giga Drain, Energy Ball, and Sludge Bomb by level up
     - Learns Poison Fang by TM
 
-- Charmander/Charmeleon/Charizard (not in main game):
-    - Learn Metal Claw and Incinerate by level up
+- Mega Venusaur (not in Emerald):
+    - Def: 123->125
+    - SpA: 122->125
 
-- Squirtle/Wartortle/Blastoise (not in main game):
-    - Learn Surf by level up
+- Charmander (not in Emerald):
+    - HP: 39->45
+    - Atk: 52->55
+    - Def: 43->45
+    - Learns Metal Claw and Incinerate by level up
 
-- Caterpie (not in main game):
+- Charmeleon (not in Emerald):
+    - HP: 58->60
+    - Atk: 64->65
+    - Def: 58->60
+    - Learns Metal Claw and Incinerate by level up
+
+- Charizard (not in Emerald):
+    - SpA: 109->110
+    - Learns Metal Claw and Incinerate by level up
+
+- Mega Charizard X (not in Emerald):
+    - Def: 111->112
+
+- Mega Charizard Y (not in Emerald):
+    - SpA: 159->160
+
+- Squirtle (not in Emerald):
+    - HP: 44->45
+    - Atk: 48->50
+    - SpD: 64->65
+    - Learns Surf by level up
+
+- Wartortle (not in Emerald):
+    - HP: 59->60
+    - Atk: 63->65
+    - Spe: 58->60
+    - Learns Surf by level up
+
+- Blastoise (not in Emerald):
+    - HP: 79->80
+    - Atk: 83->85
+    - Spe: 78->80
+    - Learns Surf by level up
+
+- Mega Blastoise (not in Emerald):
+    - HP: 79->80
+    - Atk: 103->105
+    - Spe: 78->80
+
+- Caterpie (not in Emerald):
     - Learns Bug Bite at level 7 instead of 9
 
-- Butterfree (not in main game):
+- Butterfree (not in Emerald):
     - Learns Air Cutter and Signal Beam by level up
 
-- Weedle (not in main game):
+- Weedle (not in Emerald):
     - Learns Bug Bite at level 7 instead of 9
 
-- Beedrill (not in main game):
+- Beedrill (not in Emerald):
     - Learns Leech Life by level up
 
-- Pidgey (not in main game):
+- Pidgey (not in Emerald):
     - SpA: 35->45
     - Learns Peck by level up
     - Learns Acrobatics by TM
 
-- Pidgeotto (not in main game):
+- Pidgeotto (not in Emerald):
     - SpA: 50->60
     - Learns Peck by level up
     - Learns Acrobatics by TM
 
-- Pidgeot (not in main game):
+- Pidgeot (not in Emerald):
     - SpA: 70->80
     - Learns Peck by level up
     - Learns Acrobatics by TM
 
-- Mega Pidgeot (not in main game):
+- Mega Pidgeot (not in Emerald):
     - Spe: 121->131
 
-- Rattata (not in main game):
+- Rattata (not in Emerald):
     - Learns Cut by level up
 
-- Raticate (not in main game):
+- Raticate (not in Emerald):
     - Learns Cut and Body Slam by level up
 
-- Alolan Rattata (not in main game):
+- Alolan Rattata (not in Emerald):
     - Learns Cut by level up
 
-- Alolan Raticate (not in main game):
+- Alolan Raticate (not in Emerald):
     - Learns Cut and Body Slam by level up
 
-- Spearow:
+- Spearow (not in Emerald):
     - Type: Normal/Flying->Flying
     - Learns Scratch by level up
 
-- Fearow:
+- Fearow: (not in Emerald)
     - Type: Normal/Flying->Flying
     - HP: 65->70
     - Atk: 90->95
@@ -1296,7 +1364,7 @@
     - SpD: 61->65
     - Learns Scratch by level up
 
-- Ekans/Arbok (not in main game):
+- Ekans/Arbok (not in Emerald):
     - Learn Poison Tail, Poison Fang, and Poison Jab by level up
     - Learn Dragon Breath by move tutor
 
@@ -1321,40 +1389,40 @@
 - Alolan Sandshrew/Alolan Sandslash (postgame):
     - Learn Ice Shard, Avalanche, and Ice Punch by level up
 
-- Nidoran F (not in main game):
+- Nidoran F (not in Emerald):
     - Learns Poison Tail, Venoshock, and Poison Jab by level up
 
-- Nidorina (not in main game):
+- Nidorina (not in Emerald):
     - Egg Groups: None->Monster/Field (can now breed)
     - Learns Poison Tail, Venoshock, and Poison Jab by level up
 
-- Nidoqueen (not in main game):
+- Nidoqueen (not in Emerald):
     - SpA: 75->85
     - Egg Groups: None->Monster/Field (can now breed)
     - Learns Poison Tail, Venoshock, Poison Jab, Drill Run, and Earthquake by level up
 
-- Nidoran M (not in main game):
+- Nidoran M (not in Emerald):
     - Def: 40->42
     - Learns Poison Tail, Venoshock, and Poison Fang by level up
 
-- Nidorino (not in main game):
+- Nidorino (not in Emerald):
     - Learns Poison Tail, Venoshock, and Poison Fang by level up
 
-- Nidoking (not in main game):
+- Nidoking (not in Emerald):
     - SpD: 75->85
     - Learns Poison Tail, Venoshock, Poison Fang, Drill Run, and Earthquake by level up
 
-- Cleffa (not in main game):
+- Cleffa (not in Emerald):
     - Atk: 25->30
     - Def: 28->30
     - Evolution: friendship->12
     - Learns Fairy Wind by level up
 
-- Clefairy (not in main game):
+- Clefairy (not in Emerald):
     - Def: 48->50
     - Learns Fairy Wind and Alluring Voice by level up
 
-- Clefable (not in main game):
+- Clefable (not in Emerald):
     - Def: 73->75
     - Learns Fairy Wind, Alluring Voice, and Air Slash by level up
 
@@ -1401,10 +1469,10 @@
 - Oddish/Gloom/Vileplume/Bellossom:
     - Learn Energy Ball by level up
 
-- Paras (not in main game):
+- Paras (not in Emerald):
     - Larns Pounce, Trailblaze, Bug Bite, Lunge, Seed Bomb, and Leech Life by level up
 
-- Parasect (not in main game):
+- Parasect (not in Emerald):
     - HP: 60->70
     - Def: 80->90
     - SpD: 80->90
@@ -1415,28 +1483,28 @@
         - Balm Mushroom: 0%->5%
     - Larns Pounce, Trailblaze, Bug Bite, Lunge, Seed Bomb, and Leech Life by level up
 
-- Venonat (not in main game):
+- Venonat (not in Emerald):
     - SpA: 40->55
     - Learns Bug Bite, Struggle Bug, Venoshock, and Sludge Bomb by level up
 
-- Venomoth (not in main game):
+- Venomoth (not in Emerald):
     - Learns Bug Bite, Struggle Bug, Venoshock, and Sludge Bomb by level up
 
-- Diglett (not in main game):
+- Diglett (not in Emerald):
     - Learns Stomping Tantrum by level up
 
-- Alolan Diglett (not in main game):
+- Alolan Diglett (not in Emerald):
     - Learns Stomping Tantrum by level up
 
-- Dugtrio (not in main game):
+- Dugtrio (not in Emerald):
     - HP: 35->50
     - Learns Stomping Tantrum by level up
 
-- Alolan Dugtrio (not in main game):
+- Alolan Dugtrio (not in Emerald):
     - HP: 35->50
     - Learns Stomping Tantrum by level up
 
-- Meowth (postgame):
+- Meowth (postgame in Emerald, main game in FireRed):
     - Atk: 45->55
     - Learns Cut and Covet by level up
 
@@ -1452,7 +1520,7 @@
     - Learns Bullet Punch by level up
     - Learns Cut by TM
 
-- Persian (postgame):
+- Persian (postgame in Emerald, main game in FireRed):
     - HP: 65->70
     - Atk: 70->75
     - Learns Cut and Covet by level up
@@ -1478,18 +1546,18 @@
     - Learns Power Gem upon evolving
     - Learns Psybeam, Extrasensory, and Psychic by level up
 
-- Mankey (not in main game):
+- Mankey (not in Emerald):
     - Learns Rock Smash, Brick Break, Drain Punch, and Temper Flare by level up
 
-- Primeape (not in main game):
+- Primeape (not in Emerald):
     - Evolution: Using Rage Fist 20 times->Knowing Rage Fist
     - Learns Rock Smash, Brick Break, Drain Punch, and Temper Flare by level up
 
-- Annihilape (not in main game):
+- Annihilape (not in Emerald):
     - Spe: 90->95
     - Learns Rage, Covet, Karate Chop, Pursuit, Punishment, Rock Smash, Brick Break, Drain Punch, and Temper Flare by level up
 
-- Growlithe/Arcanine (postgame):
+- Growlithe/Arcanine (postgame in Emerald, main game in FireRed):
     - Learn Temper Flare by level up
 
 - Hisuian Growlithe (postgame):
@@ -1498,19 +1566,19 @@
 - Hisuian Arcanine (postgame):
     - Learns Temper Flare and Head Smash by level up
 
-- Poliwag (postgame):
+- Poliwag (postgame in Emerald, main game in FireRed):
     - SpA: 40->50
     - Learns Surf by level up
 
-- Poliwhirl (postgame):
+- Poliwhirl (postgame in Emerald, main game in FireRed):
     - SpA: 50->65
     - Learns Surf by level up
 
-- Poliwrath (postgame):
+- Poliwrath (postgame in Emerald, main game in FireRed):
     - Atk: 95->100
     - Learns Surf, Liquidation, Drain Punch, and Sky Uppercut by level up
 
-- Politoed (postgame):
+- Politoed (postgame in Emerald, main game in FireRed):
     - Def: 75->80
     - SpA: 90->100
     - Learns Surf by level up
@@ -1524,20 +1592,20 @@
 - Machop/Machoke/Machamp:
     - Learn Drain Punch by TM
 
-- Bellsprout (not in main game):
+- Bellsprout (not in Emerald):
     - SpA: 70->75
     - Learns Absorb, Mega Drain, Magical Leaf, Giga Drain, Venoshock, and Seed Bomb by level up
 
-- Weepinbell (not in main game):
+- Weepinbell (not in Emerald):
     - SpA: 85->90
     - Learns Absorb, Mega Drain, Magical Leaf, Giga Drain, Venoshock, and Seed Bomb by level up
 
-- Victreebel (not in main game):
+- Victreebel (not in Emerald):
     - SpA: 100->105
     - SpD: 70->75
     - Learns Absorb, Mega Drain, Magical Leaf, Giga Drain, Venoshock, Seed Bomb, Poison Fang, Solar Blade, and Snap Trap by level up
 
-- Mega Victreebel (not in main game):
+- Mega Victreebel (not in Emerald):
     - Atk: 125->135
 
 - Tentacool/Tentacruel:
@@ -1559,13 +1627,13 @@
     - Spe: 45->50
     - Learns Rock Slide, Zing Zap, and Supercell Slam by level up
 
-- Ponyta/Rapidash (not in main game):
+- Ponyta/Rapidash (not in Emerald):
     - Learn Temper Flare and Blaze Kick by level up
 
-- Galarian Ponyta/Galarian Rapidash (not in main game):
+- Galarian Ponyta/Galarian Rapidash (not in Emerald):
     - Learn Heart Stamp, Spirit Break, Zen Headbutt, and Play Rough by level up
 
-- Slowpoke (postgame):
+- Slowpoke (postgame in Emerald, main game in FireRed):
     - Atk: 65->40
     - SpA: 40->65
     - Learns Psybeam by level up
@@ -1575,7 +1643,7 @@
     - SpA: 40->65
     - Learns Psybeam by level up
 
-- Slowbro/Slowking (postgame):
+- Slowbro/Slowking (postgame in Emerald, main game in FireRed):
     - Learn Psybeam by level up
 
 - Galarian Slowbro/Galarian Slowking (postgame):
@@ -1586,7 +1654,7 @@
     - Held item: Magnet: 0%->50%
     - Learn Shock Wave and Thunderbolt by level up
 
-- Farfetch'd (not in main game):
+- Farfetch'd (not in Emerald):
     - HP: 52->55
     - SpA: 58->60
     - SpD: 62->65
@@ -1596,7 +1664,7 @@
     - Learns Scratch, Dual Wingbeat, and Body Slam by level up
     - Learns Poison Jab at level 55 instead of level 1
 
-- Galarian Farfetch'd (not in main game):
+- Galarian Farfetch'd (not in Emerald):
     - HP: 52->55
     - SpA: 58->60
     - SpD: 62->65
@@ -1605,7 +1673,7 @@
     - Held item: Leek: 5%->100%
     - Learns Revenge and Low Sweep by level up
 
-- Sirfetch'd (not in main game):
+- Sirfetch'd (not in Emerald):
     - HP: 62->65
     - SpA: 68->70
     - SpD: 82->85
@@ -1616,11 +1684,11 @@
 - Doduo/Dodrio:
     - Learn Body Slam by level up
 
-- Seel (postgame):
+- Seel (postgame in Emerald, main game in FireRed):
     - SpA: 45->70
     - Learns Water Gun, Chilling Water, and Surf by level up
 
-- Dewgong (postgame):
+- Dewgong (postgame in Emerald, main game in FireRed):
     - SpA: 70->95
     - Learns Water Gun, Chilling Water, and Surf by level up
 
@@ -1630,10 +1698,10 @@
 - Alolan Grimer/Alolan Muk (postgame):
     - Learn Poison Jab by level up
 
-- Shellder (postgame):
+- Shellder (postgame in Emerald, main game in FireRed):
     - Learns Aqua Jet, Chilling Water, Bubble Beam, Waterfall, and Liquidation by level up
 
-- Cloyster (postgame):
+- Cloyster (postgame in Emerald, main game in FireRed):
     - Held items:
         - Pearl: 50%->0%
         - Big Pearl: 5%->50%
@@ -1645,22 +1713,22 @@
     - Type: Ghost/Poison->Ghost
     - Learn Astonish and Shadow Sneak by level up
 
-- Onix (not in main game):
+- Onix (not in Emerald):
     - Catch rate: 45->90
     - Held item: Lagging Tail: 0%->5%
     - Learns Mud-Slap, Mud Shot, Stomping Tantrum, Drill Run, and Earthquake by level up
     - Learns Body Press by TM
 
-- Steelix (not in main game):
+- Steelix (not in Emerald):
     - Learns Mud-Slap, Mud Shot, Stomping Tantrum, Iron Head, Drill Run, and Earthquake by level up
 
-- Drowzee (not in main game):
+- Drowzee (not in Emerald):
     - Atk: 48->50
     - SpA: 43->70
     - Spe: 42->45
     - Learns Dream Eater and Miracle Eye by level up
 
-- Hypno (not in main game):
+- Hypno (not in Emerald):
     - Atk: 73->75
     - SpA: 73->95
     - Spe: 67->70
@@ -1668,7 +1736,7 @@
     - Learns Dream Eater and Miracle Eye by level up
     - Hypnosis has an accuracy of 100 when used by Hypno
 
-- Krabby/Kingler (postgame):
+- Krabby/Kingler (postgame in Emerald, main game in FireRed):
     - Learns Aqua Cutter and Liquidation by level up
 
 - Voltorb:
@@ -1685,33 +1753,33 @@
     - SpA: 80->90
     - Learns Thunderbolt by level up
 
-- Exeggcute (not in main game):
+- Exeggcute (not in Emerald):
     - Held item: Grassy Seed: 0%->50%
     - Evolves in Alolan Exeggutor with a Sun Stone
     - Learns Psybeam, Energy Ball, and Psychic by level up
 
-- Exeggutor (not in main game):
+- Exeggutor (not in Emerald):
     - Learns Psybeam, Energy Ball, and Psychic by level up
 
-- Alolan Exeggutor (not in main game):
+- Alolan Exeggutor (not in Emerald):
     - Atk: 105->125
     - SpA: 125->105
     - Learns Psybeam, Energy Ball, Psychic, and Breaking Swipe by level up
 
-- Cubone (not in main game):
+- Cubone (not in Emerald):
     - Speed: 35->40
     - Held items:
         - Thick Club: 5%->50%
         - Rare Bone: 0%->5%
     - Evolves into Alolan Marowak with a Fire Stone
 
-- Marowak (not in main game):
+- Marowak (not in Emerald):
     - Speed: 45->50
     - Held items:
         - Thick Club: 5%->50%
         - Rare Bone: 0%->5%
 
-- Alolan Marowak (not in main game):
+- Alolan Marowak (not in Emerald):
     - Speed: 45->50
     - Abilities: Cursed Body/Lightning Rod/Rock Head->Rock Head/Lightning Rod/Cursed Body
     - Held items:
@@ -1719,27 +1787,27 @@
         - Rare Bone: 0%->5%
     - Learns Fire Punch and Temper Flare by level up
 
-- Tyrogue (not in main game):
+- Tyrogue (not in Emerald):
     - SpD: 35->55
     - Catch rate: 75->90
     - Abilities: Guts/Steadfast/Vital Spirit->Guts/Vital Spirit/Steadfast
     - Learns Rock Smash by level up
 
-- Hitmonlee (not in main game):
+- Hitmonlee (not in Emerald):
     - Atk: 120->125
     - Def: 53->60
     - Spe: 87->90
     - Learns Rolling Kick upon evolving
 
-- Hitmonchan (not in main game):
+- Hitmonchan (not in Emerald):
     - Def: 79->90
     - Spe: 76->80
     - Learns Dizzy Punch by level up
 
-- Hitmontop (not in main game):
+- Hitmontop (not in Emerald):
     - Spe: 70->85
 
-- Lickitung (postgame):
+- Lickitung (postgame in Emerald, main game in FireRed):
     - Atk: 55->65
     - Spe: 30->50
     - Catch rate: 45->90
@@ -1747,7 +1815,7 @@
     - Learns Sludge Bomb by TM
     - Ability: Oblivious->Thick Fat
 
-- Lickilicky (postgame):
+- Lickilicky (postgame in Emerald, main game in FireRed):
     - Atk: 85->100
     - Learns Pound and Body Slam by level up
     - Learns Sludge Bomb by TM
@@ -1774,32 +1842,32 @@
     - Learns Rock Wrecker upon evolving
     - Learns Rock Slide by level up
 
-- Happiny (postgame):
+- Happiny (postgame in Emerald, main game in FireRed):
     - Base exp: 110->250
     - Held item: Lucky Egg: 0%->5%
     - Learns Swift by level up
 
-- Chansey (postgame):
+- Chansey (postgame in Emerald, main game in FireRed):
     - Held item: Lucky Punch: 50%->100%
     - Evolution: friendship->36
     - Learns Swift, Hyper Voice, and Revival Blessing by level up
 
-- Blissey (postgame):
+- Blissey (postgame in Emerald, main game in FireRed):
     - Held item: Lucky Egg: 50%->100%
     - Learns Swift, Hyper Voice, and Revival Blessing by level up
     - Lucky Punch works on Blissey now
 
-- Tangela (postgame):
+- Tangela (postgame in Emerald, main game in FireRed):
     - Catch rate: 45->90
     - Learns Energy Ball by level up
 
-- Tangrowth (postgame):
+- Tangrowth (postgame in Emerald, main game in FireRed):
     - Atk: 100->90
     - Spe: 50->60
     - Learns Energy Ball by level up
     - Learns Body Press by TM
 
-- Kangaskhan (not in main game):
+- Kangaskhan (not in Emerald):
     - Catch rate: 45->90
     - Learns Body Slam by level up
 
@@ -1819,7 +1887,7 @@
 - Staryu/Starmie:
     - Learns Water Pulse by level up
 
-- Mime Jr. (not in main game):
+- Mime Jr. (not in Emerald):
     - Type: Psychic/Fairy->Psychic
     - Gender ratio: 50/50->100/0
     - Evolves into Galarian Mr. Mime with an Ice Stone
@@ -1830,49 +1898,49 @@
     - Gender ratio: 50/50->100/0
     - Learns Expanding Force by level up
 
-- Galarian Mr. Mime (not in main game):
+- Galarian Mr. Mime (not in Emerald):
     - Gender ratio: 50/50->100/0
     - Learns Powder Snow, Aurora Beam, Expanding Force, and Ice Beam by level up
 
-- Mr. Rime (not in main game):
+- Mr. Rime (not in Emerald):
     - Atk: 85->75
     - Spe: 70->90
     - Gender ratio: 50/50->100/0
     - Learns Powder Snow, Aurora Beam, Expanding Force, and Ice Beam by level up
 
-- Scyther (not in main game):
+- Scyther (not in Emerald):
     - Catch rate: 45->90
     - Learns Pounce, Bug Bite, Aerial Ace, Dual Wingbeat, and Lunge by level up
 
-- Scizor (not in main game):
+- Scizor (not in Emerald):
     - Learns Aerial Ace, Dual Wingbeat, Pounce, Bug Bite, Steel Wing, and Lunge by level up
 
-- Kleavor (not in main game):
+- Kleavor (not in Emerald):
     - Learns Aerial Ace, Dual Wingbeat, Pounce, Bug Bite, Rock Tomb, and Lunge by level up
 
-- Smoochum (not in main game):
+- Smoochum (not in Emerald):
     - Def: 15->20
     - Catch rate: 45->150
     - Learns Aurora Beam, Psybeam, and Ice Beam by level up
 
-- Jynx (not in main game):
+- Jynx (not in Emerald):
     - Def: 35->40
     - Learns Aurora Beam, Psybeam, and Ice Beam by level up
 
-- Elekid (postgame):
+- Elekid (postgame in Emerald, main game in FireRed):
     - Atk: 63->65
     - Def: 37->40
     - SpA: 65->70
     - Catch rate: 45->150
     - Learns Spark and Electric Terrain by level up
 
-- Electabuzz (postgame):
+- Electabuzz (postgame in Emerald, main game in FireRed):
     - Atk: 83->85
     - Def: 57->60
     - SpA: 95->100
     - Learns Spark and Electric Terrain by level up
 
-- Electivire (postgame):
+- Electivire (postgame in Emerald, main game in FireRed):
     - Atk: 123->125
     - Def: 67->70
     - SpA: 95->100
@@ -1880,18 +1948,18 @@
     - Learns Drain Punch by TM
     - Learns Zing Zap by tutor
 
-- Magby (postgame):
+- Magby (postgame in Emerald, main game in FireRed):
     - Def: 37->40
     - Spe: 83->85
     - Catch rate: 45->150
     - Learns Incinerate by level up
 
-- Magmar (postgame):
+- Magmar (postgame in Emerald, main game in FireRed):
     - Def: 57->60
     - Spe: 93->95
     - Learns Incinerate by level up
 
-- Magmortar (postgame):
+- Magmortar (postgame in Emerald, main game in FireRed):
     - Ability: Flame Body->Flash Fire
     - Atk: 95->100
     - Def: 67->70
@@ -1903,19 +1971,19 @@
     - Learns Fury Cutter by level up
     - Learns Aerial Ace by TM
 
-- Tauros (not in main game):
+- Tauros (not in Emerald):
     - Catch rate: 45->90
     - Learns Headbutt by level up
 
-- Paldean Tauros (Combat) (not in main game):
+- Paldean Tauros (Combat) (not in Emerald):
     - Catch rate: 45->90
     - Learns Rock Smash and Brick Break by level up
 
-- Paldean Tauros (Blaze) (not in main game):
+- Paldean Tauros (Blaze) (not in Emerald):
     - Catch rate: 45->90
     - Learns Rock Smash, Temper Flare, and Brick Break by level up
 
-- Paldean Tauros (Aqua) (not in main game):
+- Paldean Tauros (Aqua) (not in Emerald):
     - Catch rate: 45->90
     - Learns Rock Smash, Liquidation and Brick Break by level up
 
@@ -1930,14 +1998,14 @@
     - Learns Bounce by level up
     - Learns Dragon Breath by move tutor
 
-- Lapras (not in main game):
+- Lapras (not in Emerald):
     - Catch rate: 45->90
     - Learns Powder Snow, Chilling Water, Icy Wind, Aurora Beam, Waterfall, Surf, and Liquidation by level up
 
-- Ditto (postgame):
+- Ditto (postgame in Emerald, main game in FireRed):
     - All stats: 48->50
 
-- Eevee (not in main game):
+- Eevee (not in Emerald):
     - Def: 50->55
     - SpA: 45->55
     - Catch rate: 45->90
@@ -1948,126 +2016,126 @@
     - Swift and Bite swap levels
     - Learns Body Slam at level 45
 
-- All Eeveelutions (not in main game):
+- All Eeveelutions (not in Emerald):
     - Gender ratio: 87.5/12.5->50/50
     - Learn Body Slam by level up
 
-- Vaporeon (not in main game):
+- Vaporeon (not in Emerald):
     - Learns Bubble Beam (replacing Aurora Beam), Rain Dance (replacing Aqua Ring), and Scald (replacing Muddy Water) by level up
     - Learns Aurora Beam, Aqua Ring, and Muddy Water at level 1
     - Learns Surf at level 45
 
-- Jolteon (not in main game):
+- Jolteon (not in Emerald):
     - Learns Shock Wave (replacing Double Kick) and Electric Terrain (replacing Pin Missile) by level up
     - Learns Double Kick and Pin Missile at level 1
     - Learns Thunderbolt at level 45
 
-- Flareon (not in main game):
+- Flareon (not in Emerald):
     - Learns Will-O-Wisp (replacing Smog), Flame Wheel (replacing Bite), and Sunny Day (replacing Fire Spin) by level up
     - Learns Smog, Bite, and Fire Spin at level 1
     - Learns Temper Flare at level 45
 
-- Espeon (not in main game):
+- Espeon (not in Emerald):
     - Learns Hypnosis (replacing Swift), Psychic Terrain (replacing Power Swap), and Extrasensory (replacing Psychic) by level up
     - Learns Swift, Power Swap, and Power Gem at level 1
     - Learns Psychic at level 45
 
-- Umbreon (not in main game):
+- Umbreon (not in Emerald):
     - Learns Pursuit (replacing Snarl) upon evolving
     - Learns Feint Attack (replacing Assurance) and Foul Play by level up
     - Learns Snarl and Assurance at level 1
     - Learns Crunch at level 45
 
-- Leafeon (not in main game):
+- Leafeon (not in Emerald):
     - Learns Leafage (replacing Razor Leaf) upon evolving
     - Learns Razor Leaf (replacing Magical Leaf), Leaf Tornado (replacing Synthesis), and Grassy Terrain (replacing Sunny Day) by level up
     - Learns Magical Leaf, Synthesis, and Sunny Day at level 1
     - Learns Seed Bomb at level 45
 
-- Glaceon (not in main game):
+- Glaceon (not in Emerald):
     - Learns Powder Snow (replacing Icy Wind) upon evolving
     - Learns Aurora Veil (replacing Ice Shard) and Aurora Beam (replacing Bite) by level up
     - Learns Ice Shard, Icy Wind, and Bite at level 1
     - Learns Ice Beam at level 45
 
-- Sylveon (not in main game):
+- Sylveon (not in Emerald):
     - Learns Fairy Wind (replacing Disarming Voice) upon evolving
     - Learns Mist (replacing Swift), Disarming Voice (replacing Light Screen), and Dazzling Gleam (replacing Skill Swap) by level up
     - Learns Swift, Light Screen, and Skill Swap at level 1
     - Learns Alluring Voice at level 45
 
-- Porygon (not in main game):
+- Porygon (not in Emerald):
     - Catch rate: 45->90
     - Learns Swift and Hyper Voice by level up
 
-- Porygon2 (not in main game):
+- Porygon2 (not in Emerald):
     - Learns Swift and Hyper Voice by level up
     - Learns Double-Edge by level up (Note: Porygon and Porygon-Z already learn it)
     - Learns Lock-On at level 55 instead of level 50 for consistency with Porygon and Porygon-Z
 
-- Porygon-Z (not in main game):
+- Porygon-Z (not in Emerald):
     - Learns Swift and Hyper Voice by level up
 
-- Omanyte (postgame):
+- Omanyte (postgame in Emerald, main game in FireRed):
     - Catch rate: 45->90
     - Learns Rock Throw, Rock Tomb, Water Pulse, Rock Slide, and Power Gem by level up
 
-- Omastar (postgame):
+- Omastar (postgame in Emerald, main game in FireRed):
     - Learns Rock Throw, Rock Tomb, Water Pulse, Rock Slide, and Power Gem by level up
 
-- Kabuto (postgame):
+- Kabuto (postgame in Emerald, main game in FireRed):
     - Catch rate: 45->90
     - Learns Rock Throw, Rock Tomb, Aqua Cutter, Rock Slide, and Razor Shell by level up
 
-- Kabutops (postgame):
+- Kabutops (postgame in Emerald, main game in FireRed):
     - Learns Rock Throw, Rock Tomb, Aqua Cutter, Rock Slide, and Razor Shell by level up
 
-- Aerodactyl (postgame):
+- Aerodactyl (postgame in Emerald, main game in FireRed):
     - Catch rate: 45->90
     - Learns Dual Wingbeat, Double-Edge, Head Smash, and Brave Bird by level up
 
-- Munchlax (postgame):
+- Munchlax (postgame in Emerald, main game in FireRed):
     - Evolution: friendship->20
     - Learns Gastro Acid and Power-Up Punch by Egg Move
 
-- Snorlax (postgame):
+- Snorlax (postgame in Emerald, main game in FireRed):
     - Hidden Ability: Gluttony->Comatose
     - Learns Slack Off upon evolving
 
-- Articuno (not in main game):
+- Articuno (not in Emerald):
     - Learns Aurora Beam, Air Cutter, and Air Slash by level up
 
-- Galarian Articuno (not in main game):
+- Galarian Articuno (not in Emerald):
     - Learns Psybeam, Air Cutter, and Air Slash by level up
 
-- Zapdos (not in main game):
+- Zapdos (not in Emerald):
     - Learns Gust, Shock Wave, Air Cutter, Air Slash, Thunderbolt, and Hurricane by level up
 
-- Galarian Zapdos (not in main game):
+- Galarian Zapdos (not in Emerald):
     - Learns Double Kick and Acrobatics by level up
 
-- Moltres (not in main game):
+- Moltres (not in Emerald):
     - Learns by Flame Burst and Air Cutter level up
 
-- Galarian Moltres (not in main game):
+- Galarian Moltres (not in Emerald):
     - Learns Snarl, Air Cutter, and Dark Pulse by level up
 
-- Dratini (not in main game):
+- Dratini (not in Emerald):
     - Learns Breaking Swipe by level up
 
-- Dragonair (not in main game):
+- Dragonair (not in Emerald):
     - Learns Dragon Breath upon evolving
     - Learns Breaking Swipe by level up
     - Learns Fly by TM
 
-- Dragonite (not in main game):
+- Dragonite (not in Emerald):
     - Learns Dual Wingbeat upon evolving
     - Learns Dragon Breath, Dragon Claw, and Breaking Swipe by level up
 
-- Mewtwo (not in main game):
+- Mewtwo (not in Emerald):
     - Learns Psybeam, Psychic Noise, Extrasensory, and Zen Headbutt by level up
 
-- Mew (postgame):
+- Mew (postgame in Emerald):
     - Learns Confusion by level up
 
 - Chikorita (postgame):

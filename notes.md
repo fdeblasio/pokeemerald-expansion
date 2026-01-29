@@ -574,6 +574,7 @@ upcoming
 - Change Rocker to intense?
 - Add Team Rocket class to Scientists (and Juggler?) in Silph Co.
 - Add Dive TM
+- Add Mew
 - Don't remove Meteorite
 - Add version exclusives
     - Including postgame

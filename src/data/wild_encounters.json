@@ -12309,52 +12309,52 @@
             "encounter_rate": 21,
             "mons": [
               {
-                "range": "TEST",
-                "species": "PIDGEY"
+                "range": "ROUTE_1",
+                "species": "EARLY_BIRD_FRLG_1"
               },
               {
-                "range": "TEST",
-                "species": "RATTATA"
+                "range": "ROUTE_1",
+                "species": "EARLY_BEAST_FRLG"
               },
               {
-                "range": "TEST",
-                "species": "PIDGEY"
+                "range": "ROUTE_1",
+                "species": "EARLY_BIRD_FRLG_1"
               },
               {
-                "range": "TEST",
-                "species": "RATTATA"
+                "range": "ROUTE_1",
+                "species": "EARLY_BEAST_FRLG"
               },
               {
-                "range": "TEST",
-                "species": "PIDGEY"
+                "range": "ROUTE_1",
+                "species": "EARLY_BIRD_FRLG_1"
               },
               {
-                "range": "TEST",
-                "species": "RATTATA"
+                "range": "ROUTE_1",
+                "species": "EARLY_BEAST_FRLG"
               },
               {
-                "range": "TEST",
-                "species": "PIDGEY"
+                "range": "ROUTE_1",
+                "species": "EARLY_BIRD_FRLG_1"
               },
               {
-                "range": "TEST",
-                "species": "RATTATA"
+                "range": "ROUTE_1",
+                "species": "EARLY_BEAST_FRLG"
               },
               {
-                "range": "TEST",
-                "species": "PIDGEY"
+                "range": "ROUTE_1",
+                "species": "EARLY_BIRD_FRLG_1"
               },
               {
-                "range": "TEST",
-                "species": "RATTATA"
+                "range": "ROUTE_1",
+                "species": "EARLY_BEAST_FRLG"
               },
               {
-                "range": "TEST",
-                "species": "PIDGEY"
+                "range": "ROUTE_1",
+                "species": "EARLY_BIRD_FRLG_1"
               },
               {
-                "range": "TEST",
-                "species": "RATTATA"
+                "range": "ROUTE_1",
+                "species": "EARLY_BEAST_FRLG"
               }
             ]
           }

@@ -17941,6 +17941,26 @@ UNUSED_TRAINER(15),
     },
 },
 
+#define RIVAL_OAKS_LAB         0
+#define RIVAL_ROUTE_22_EARLY   1
+#define RIVAL_CERULEAN         2
+#define RIVAL_SS_ANNE          3
+#define RIVAL_POKEMON_TOWER    4
+#define RIVAL_SILPH            5
+#define RIVAL_ROUTE_22_LATE    6
+#define RIVAL_CHAMPION         7
+#define RIVAL_CHAMPION_REMATCH 8
+
+#define RIVAL_OAKS_LAB_STARTER_LEVEL          5
+#define RIVAL_ROUTE_22_EARLY_STARTER_LEVEL    7
+#define RIVAL_CERULEAN_STARTER_LEVEL         18
+#define RIVAL_SS_ANNE_STARTER_LEVEL          20
+#define RIVAL_POKEMON_TOWER_STARTER_LEVEL    25
+#define RIVAL_SILPH_STARTER_LEVEL            40
+#define RIVAL_ROUTE_22_LATE_STARTER_LEVEL    53
+#define RIVAL_CHAMPION_STARTER_LEVEL         63
+#define RIVAL_CHAMPION_REMATCH_STARTER_LEVEL 75
+
 // Important trainers
 #define RIVAL_INFO                                  \
     .trainerName = _("Terry"),                      \
@@ -17963,46 +17983,31 @@ UNUSED_TRAINER(15),
     .mugshotColor = MUGSHOT_COLOR_YELLOW,                                                  \
     .partySize = 6
 
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_OAKS_LAB_GRASS] =
-{
-    RIVAL_EARLY_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 5,
-        .species = SPECIES_BULBASAUR,
-        },
-    },
-},
+// Figure out moves. Check each fight if the custom moves match up with what the level up moves would be in vanilla
+#define RIVAL_STARTER(Location, Type)                                                        \
+    {                                                                                               \
+    .lvl = Location##_STARTER_LEVEL,                                                                \
+    .species = Type##_STARTER + (Location < RIVAL_CERULEAN ? 0 : (Location < RIVAL_SILPH ? 1 : 2)), \
+    .nature = NATURE_MODEST,                                                                        \
+    PERFECT_IVS,                                                                                    \
+    .heldItem = Location < RIVAL_CHAMPION ? ITEM_NONE : (TYPE_##Type == TYPE_GRASS ? ITEM_VENUSAURITE : (TYPE_##Type == TYPE_FIRE ? ITEM_CHARIZARDITE_Y : ITEM_BLASTOISINITE)), \
+    }
 
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_OAKS_LAB_FIRE] =
-{
-    RIVAL_EARLY_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 5,
-        .species = SPECIES_CHARMANDER,
-        },
-    },
-},
+#define RIVAL_BATTLES(Type)                                                    \
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_OAKS_LAB_##Type] =                           \
+{                                                                              \
+    RIVAL_EARLY_INFO,                                                          \
+    .partySize = 1,                                                            \
+    .party = (const struct TrainerMon[]) {                                     \
+        RIVAL_STARTER(RIVAL_OAKS_LAB, Type),                                   \
+    },                                                                         \
+}
 
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_OAKS_LAB_WATER] =
-{
-    RIVAL_EARLY_INFO,
-    .partySize = 1,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 5,
-        .species = SPECIES_SQUIRTLE,
-        },
-    },
-},
+RIVAL_BATTLES(GRASS),
+RIVAL_BATTLES(FIRE),
+RIVAL_BATTLES(WATER),
 
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_ROUTE22_EARLY_GRASS] =
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_ROUTE_22_EARLY_GRASS] =
 {
     RIVAL_EARLY_INFO,
     .partySize = 2,
@@ -18012,18 +18017,16 @@ UNUSED_TRAINER(15),
         .lvl = 9,
         .species = SPECIES_PIDGEY,
         IVS(6),
-        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_NONE, MOVE_NONE},
         },
         {
         .lvl = 9,
         .species = SPECIES_BULBASAUR,
         IVS(6),
-        .moves = {MOVE_TACKLE, MOVE_GROWL, MOVE_NONE, MOVE_NONE},
         },
     },
 },
 
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_ROUTE22_EARLY_FIRE] =
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_ROUTE_22_EARLY_FIRE] =
 {
     RIVAL_EARLY_INFO,
     .partySize = 2,
@@ -18033,18 +18036,16 @@ UNUSED_TRAINER(15),
         .lvl = 9,
         .species = SPECIES_PIDGEY,
         IVS(6),
-        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_NONE, MOVE_NONE},
         },
         {
         .lvl = 9,
         .species = SPECIES_CHARMANDER,
         IVS(6),
-        .moves = {MOVE_SCRATCH, MOVE_GROWL, MOVE_NONE, MOVE_NONE},
         },
     },
 },
 
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_ROUTE22_EARLY_WATER] =
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_ROUTE_22_EARLY_WATER] =
 {
     RIVAL_EARLY_INFO,
     .partySize = 2,
@@ -18054,13 +18055,11 @@ UNUSED_TRAINER(15),
         .lvl = 9,
         .species = SPECIES_PIDGEY,
         IVS(6),
-        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_NONE, MOVE_NONE},
         },
         {
         .lvl = 9,
         .species = SPECIES_SQUIRTLE,
         IVS(6),
-        .moves = {MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_NONE, MOVE_NONE},
         },
     },
 },
@@ -18075,19 +18074,16 @@ UNUSED_TRAINER(15),
         .lvl = 17,
         .species = SPECIES_PIDGEOTTO,
         IVS(6),
-        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_GUST, MOVE_QUICK_ATTACK},
         },
         {
         .lvl = 16,
         .species = SPECIES_ABRA,
         IVS(6),
-        .moves = {MOVE_TELEPORT, MOVE_NONE, MOVE_NONE, MOVE_NONE},
         },
         {
         .lvl = 15,
         .species = SPECIES_RATTATA,
         IVS(6),
-        .moves = {MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_QUICK_ATTACK, MOVE_NONE},
         },
         {
         .lvl = 18,
@@ -18108,19 +18104,16 @@ UNUSED_TRAINER(15),
         .lvl = 17,
         .species = SPECIES_PIDGEOTTO,
         IVS(6),
-        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_GUST, MOVE_QUICK_ATTACK},
         },
         {
         .lvl = 16,
         .species = SPECIES_ABRA,
         IVS(6),
-        .moves = {MOVE_TELEPORT, MOVE_NONE, MOVE_NONE, MOVE_NONE},
         },
         {
         .lvl = 15,
         .species = SPECIES_RATTATA,
         IVS(6),
-        .moves = {MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_QUICK_ATTACK, MOVE_NONE},
         },
         {
         .lvl = 18,
@@ -18141,25 +18134,21 @@ UNUSED_TRAINER(15),
         .lvl = 17,
         .species = SPECIES_PIDGEOTTO,
         IVS(6),
-        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_GUST, MOVE_QUICK_ATTACK},
         },
         {
         .lvl = 16,
         .species = SPECIES_ABRA,
         IVS(6),
-        .moves = {MOVE_TELEPORT, MOVE_NONE, MOVE_NONE, MOVE_NONE},
         },
         {
         .lvl = 15,
         .species = SPECIES_RATTATA,
         IVS(6),
-        .moves = {MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_QUICK_ATTACK, MOVE_NONE},
         },
         {
         .lvl = 18,
         .species = SPECIES_SQUIRTLE,
         IVS(12),
-        .moves = {MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_WITHDRAW, MOVE_WATER_GUN},
         },
     },
 },
@@ -18455,7 +18444,7 @@ UNUSED_TRAINER(15),
     },
 },
 
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_ROUTE22_LATE_GRASS] =
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_ROUTE_22_LATE_GRASS] =
 {
     RIVAL_LATE_INFO,
     .partySize = 6,
@@ -18500,7 +18489,7 @@ UNUSED_TRAINER(15),
     },
 },
 
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_ROUTE22_LATE_FIRE] =
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_ROUTE_22_LATE_FIRE] =
 {
     RIVAL_LATE_INFO,
     .partySize = 6,
@@ -18545,7 +18534,7 @@ UNUSED_TRAINER(15),
     },
 },
 
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_ROUTE22_LATE_WATER] =
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_ROUTE_22_LATE_WATER] =
 {
     RIVAL_LATE_INFO,
     .partySize = 6,

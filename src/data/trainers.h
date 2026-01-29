@@ -32,6 +32,7 @@
     .party = NULL,
 },
 
+// Important trainers
 #define RIVAL_ROUTE_103 0
 #define RIVAL_RUSTBORO  1
 #define RIVAL_ROUTE_110 2
@@ -344,7 +345,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
     .gender = TRAINER_MON_FEMALE,                                                \
     }
 
-//Extra for hacks
+// Extra for hacks
 #define WALLY_VILEPLUME(rematch, tier)                                        \
     {                                                                         \
     REMATCH_MON(VILEPLUME, tier, rematch, ITEM_MIRACLE_SEED),                 \
@@ -542,8 +543,8 @@ WALLY_REMATCH(4),
     .gender = TRAINER_MON_FEMALE,                                         \
     }
 
-//Extra for hacks
-//Sand Veil/replace Double Edge with Body Press if paired with Sand Stream
+// Extra for hacks
+// Sand Veil/replace Double Edge with Body Press if paired with Sand Stream
 #define ROXANNE_GOLEM(rematch, tier)                                                       \
     {                                                                                      \
     REMATCH_MON(GOLEM, tier, rematch),                                                     \
@@ -591,7 +592,7 @@ WALLY_REMATCH(4),
     .gender = TRAINER_MON_FEMALE,                                                  \
     }
 
-//ROXANNE_CARRACOSTA: https://github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L446
+// ROXANNE_CARRACOSTA: https:// github.com/fdeblasio/pokeemerald-expansion/blob/frogs/src/data/trainers.h#L446
 
 #define ROXANNE_ARCHEOPS(rematch, tier)                                            \
     {                                                                              \
@@ -767,7 +768,7 @@ ROXANNE_REMATCH(4),
     .gender = TRAINER_MON_MALE,                                                   \
     }
 
-//Extra for hacks
+// Extra for hacks
 #define BRAWLY_ANNIHILAPE
 #define BRAWLY_SIRFETCHD
 #define BRAWLY_HITMONLEE
@@ -979,7 +980,7 @@ BRAWLY_REMATCH(4),
     .moves = {MOVE_DISCHARGE, MOVE_EERIE_IMPULSE, MOVE_LIGHT_SCREEN, MOVE_SCREECH}, \
     }
 
-//Extra for hacks
+// Extra for hacks
 #define WATTSON_RAICHU(rematch, tier)                                           \
     {                                                                           \
     REMATCH_MON(RAICHU, tier, rematch),                                         \
@@ -1244,7 +1245,7 @@ WATTSON_REMATCH(4),
     .gender = TRAINER_MON_FEMALE,                                                                                   \
     }
 
-//Extra for hacks
+// Extra for hacks
 #define FLANNERY_ARCANINE(rematch, tier)                                        \
     {                                                                           \
     REMATCH_MON(ARCANINE, tier, rematch),                                       \
@@ -1265,7 +1266,7 @@ WATTSON_REMATCH(4),
     .gender = TRAINER_MON_FEMALE,                                                   \
     }
 
-//Can replace Bonemerang with Double-Edge
+// Can replace Bonemerang with Double-Edge
 #define FLANNERY_MAROWAK(rematch, tier)                                             \
     {                                                                               \
     REMATCH_MON(MAROWAK_ALOLA, tier, rematch),                                      \
@@ -1447,7 +1448,7 @@ FLANNERY_REMATCH(4),
     .gender = TRAINER_MON_MALE,                                                \
     }
 
-//Extra for hacks
+// Extra for hacks
 #define NORMAN_PIDGEOT
 #define NORMAN_RATICATE
 #define NORMAN_FEAROW
@@ -1717,7 +1718,7 @@ NORMAN_REMATCH(4),
     .gender = TRAINER_MON_FEMALE,                                                    \
     }
 
-//Extra for hacks
+// Extra for hacks
 #define WINONA_DODRIO(rematch, tier)                                               \
     {                                                                              \
     REMATCH_MON(DODRIO, tier, rematch, ITEM_SHARP_BEAK),                           \
@@ -1753,7 +1754,7 @@ NORMAN_REMATCH(4),
     .moves = {MOVE_AIR_SLASH, MOVE_PARABOLIC_CHARGE, MOVE_SHADOW_BALL, MOVE_DOUBLE_TEAM}, \
     }
 
-//Can replace Tailwind with Flamethrower
+// Can replace Tailwind with Flamethrower
 #define WINONA_NOIVERN(rematch, tier)                                        \
     {                                                                        \
     REMATCH_MON(NOIVERN, tier, rematch),                                     \
@@ -1781,7 +1782,7 @@ NORMAN_REMATCH(4),
     .gender = TRAINER_MON_FEMALE,                                       \
     }
 
-//Can replace Rocky Payload/Hone Claws with Big Pecks/Roost
+// Can replace Rocky Payload/Hone Claws with Big Pecks/Roost
 #define WINONA_BOMBIRDIER(rematch, tier)                                            \
     {                                                                               \
     REMATCH_MON(BOMBIRDIER, tier, rematch, ITEM_SHARP_BEAK),                        \
@@ -1791,7 +1792,7 @@ NORMAN_REMATCH(4),
     .gender = TRAINER_MON_FEMALE,                                                   \
     }
 
-//Can replace Liquidation with Throat Chop
+// Can replace Liquidation with Throat Chop
 #define WINONA_FLAMIGO(rematch, tier)                                              \
     {                                                                              \
     REMATCH_MON(FLAMIGO, tier, rematch, ITEM_FLYING_GEM),                          \
@@ -1928,8 +1929,8 @@ WINONA_REMATCH(4),
     .gender = TRAINER_MON_FEMALE,                                                     \
     }
 
-//Extra for hacks
-//Can replace Shadow Ball with Recover
+// Extra for hacks
+// Can replace Shadow Ball with Recover
 #define TATE_ALAKAZAM(rematch, tier)                                                \
     {                                                                               \
     REMATCH_MON(ALAKAZAM, tier, rematch, ITEM_TWISTED_SPOON),                       \
@@ -1963,7 +1964,7 @@ WINONA_REMATCH(4),
     .gender = TRAINER_MON_MALE,                                                   \
     }
 
-//Can replace Morning Sun with Calm Mind
+// Can replace Morning Sun with Calm Mind
 #define LIZA_ESPEON(rematch, tier)                                                   \
     {                                                                                \
     REMATCH_MON(ESPEON, tier, rematch),                                              \
@@ -2176,13 +2177,13 @@ TATE_AND_LIZA_REMATCH(4),
     .gender = TRAINER_MON_MALE,                                                   \
     }
 
-//Extra for hacks
-//Poison
-//Hoenn Dex: Crobat, Swalot, Muk, Weezing, Weezing-G, Seviper
-//Hoenn Dex secondary: Dustox, Tentacruel, Vileplume, Roserade
+// Extra for hacks
+// Poison
+// Hoenn Dex: Crobat, Swalot, Muk, Weezing, Weezing-G, Seviper
+// Hoenn Dex secondary: Dustox, Tentacruel, Vileplume, Roserade
 #define JUAN_ARBOK
 
-//Can replace Sheer Force/Drill Run with Poison Point/High Horsepower
+// Can replace Sheer Force/Drill Run with Poison Point/High Horsepower
 #define JUAN_NIDOQUEEN(rematch, tier)                                           \
     {                                                                           \
     REMATCH_MON(NIDOQUEEN, tier, rematch, ITEM_POISON_BARB),                    \
@@ -2192,7 +2193,7 @@ TATE_AND_LIZA_REMATCH(4),
     .gender = TRAINER_MON_FEMALE,                                               \
     }
 
-//Can replace Sheer Force/Drill Run/Throat Chop/Iron Tail with Poison Point/High Horsepower/Megahorn/Toxic
+// Can replace Sheer Force/Drill Run/Throat Chop/Iron Tail with Poison Point/High Horsepower/Megahorn/Toxic
 #define JUAN_NIDOKING(rematch, tier)                                              \
     {                                                                             \
     REMATCH_MON(NIDOKING, tier, rematch, ITEM_POISON_BARB),                       \
@@ -2238,7 +2239,7 @@ TATE_AND_LIZA_REMATCH(4),
 
 #define JUAN_CLODSIRE
 
-//Can replace Assault Vest/Acid Spray with Black Sludge/Shadow Ball
+// Can replace Assault Vest/Acid Spray with Black Sludge/Shadow Ball
 #define JUAN_SWALOT(rematch, tier)                                                \
     {                                                                             \
     REMATCH_MON(SWALOT, tier, rematch, ITEM_ASSAULT_VEST),                        \
@@ -2249,7 +2250,7 @@ TATE_AND_LIZA_REMATCH(4),
     .gender = TRAINER_MON_MALE,                                                   \
     }
 
-//Can replace Aqua Tail with Psychic Fangs
+// Can replace Aqua Tail with Psychic Fangs
 #define JUAN_SEVIPER(rematch, tier)                                    \
     {                                                                  \
     REMATCH_MON(SEVIPER, tier, rematch),                               \
@@ -2259,7 +2260,7 @@ TATE_AND_LIZA_REMATCH(4),
     .gender = TRAINER_MON_MALE,                                        \
     }
 
-//Can replace Aftermath with Stench if the Ace
+// Can replace Aftermath with Stench if the Ace
 #define JUAN_SKUNTANK(rematch, tier)                                             \
     {                                                                            \
     REMATCH_MON(SKUNTANK, tier, rematch, ITEM_BLACK_SLUDGE),                     \
@@ -2393,7 +2394,7 @@ JUAN_REMATCH(4),
     .gender = TRAINER_MON_MALE,                                                \
     }
 
-//Extra for hacks
+// Extra for hacks
 #define SIDNEY_RATICATE
 
 #define SIDNEY_PERSIAN(Level, Tier)                                                \
@@ -2406,7 +2407,7 @@ JUAN_REMATCH(4),
     .gender = TRAINER_MON_MALE,                                                    \
     }
 
-//Can replace Confuse Ray/Mean Look with Moonlight/Baby-Doll Eyes
+// Can replace Confuse Ray/Mean Look with Moonlight/Baby-Doll Eyes
 #define SIDNEY_UMBREON(Level, Tier)                                          \
     {                                                                        \
     ELITE_FOUR_MON(Level, UMBREON, Tier, SIDNEY),                            \
@@ -2593,7 +2594,7 @@ JUAN_REMATCH(4),
     .gender = TRAINER_MON_FEMALE,                                               \
     }
 
-//Extra for hacks
+// Extra for hacks
 #define PHOEBE_GENGAR(Level, Tier)                                                      \
     {                                                                                   \
     ELITE_FOUR_MON(Level, GENGAR, Tier, PHOEBE),                                        \
@@ -2626,7 +2627,7 @@ JUAN_REMATCH(4),
 
 #define PHOEBE_COFAGRIGUS
 
-//Can replace Infiltrator with Flame Body
+// Can replace Infiltrator with Flame Body
 #define PHOEBE_CHANDELURE(Level, Tier)                                                \
     {                                                                                 \
     ELITE_FOUR_MON(Level, CHANDELURE, Tier, PHOEBE),                                  \
@@ -2787,7 +2788,7 @@ JUAN_REMATCH(4),
     .gender = TRAINER_MON_FEMALE,                                                \
     }
 
-//Extra for hacks
+// Extra for hacks
 #define GLACIA_SANDSLASH
 #define GLACIA_MR_RIME
 #define GLACIA_JYNX
@@ -2801,7 +2802,7 @@ JUAN_REMATCH(4),
     .gender = TRAINER_MON_FEMALE,                                                 \
     }
 
-//Can replace Thick Fat/Trailblaze with Snow Cloak/Ice Shard
+// Can replace Thick Fat/Trailblaze with Snow Cloak/Ice Shard
 #define GLACIA_MAMOSWINE(Level, Tier)                                               \
     {                                                                               \
     ELITE_FOUR_MON(Level, MAMOSWINE, Tier, GLACIA, ITEM_SITRUS_BERRY),              \
@@ -2946,7 +2947,7 @@ JUAN_REMATCH(4),
     .gender = TRAINER_MON_MALE,                                                          \
     }
 
-//Extra for hacks
+// Extra for hacks
 #define DRAKE_DRAGONITE(Level, Tier)                                                    \
     {                                                                                   \
     ELITE_FOUR_MON(Level, DRAGONITE, Tier, DRAKE),                                      \
@@ -2965,7 +2966,7 @@ JUAN_REMATCH(4),
     .gender = TRAINER_MON_MALE,                                                      \
     }
 
-//Can replace Earthquake/Dragon Dance with Crunch/Swords Dance
+// Can replace Earthquake/Dragon Dance with Crunch/Swords Dance
 #define DRAKE_HAXORUS(Level, Tier)                                                   \
     {                                                                                \
     ELITE_FOUR_MON(Level, HAXORUS, Tier, DRAKE),                                     \
@@ -2975,7 +2976,7 @@ JUAN_REMATCH(4),
     .gender = TRAINER_MON_MALE,                                                      \
     }
 
-//Can replace Sheer Force/Crunch/Fire Punch with Rock Head/Head Smash/Hone Claws
+// Can replace Sheer Force/Crunch/Fire Punch with Rock Head/Head Smash/Hone Claws
 #define DRAKE_DRUDDIGON(Level, Tier)                                           \
     {                                                                          \
     ELITE_FOUR_MON(Level, DRUDDIGON, Tier, DRAKE),                             \
@@ -2995,7 +2996,7 @@ JUAN_REMATCH(4),
     .gender = TRAINER_MON_MALE,                                                   \
     }
 
-//Can replace Sap Sipper/Hyper Voice with Berserk/Calm Mind
+// Can replace Sap Sipper/Hyper Voice with Berserk/Calm Mind
 #define DRAKE_DRAMPA(Level, Tier)                                                        \
     {                                                                                    \
     ELITE_FOUR_MON(Level, DRAMPA, Tier, DRAKE),                                          \
@@ -3008,7 +3009,7 @@ JUAN_REMATCH(4),
 #define DRAKE_KOMMO_O
 #define DRAKE_DRAGAPULT
 
-//Can replace U-turn with Body Slam
+// Can replace U-turn with Body Slam
 #define DRAKE_CYCLIZAR(Level, Tier)                                            \
     {                                                                          \
     ELITE_FOUR_MON(Level, CYCLIZAR, Tier, DRAKE),                              \
@@ -3048,7 +3049,7 @@ JUAN_REMATCH(4),
     },
 },
 
-//Need a way to define Ace for Poke Ball/Sitrus Berry
+// Need a way to define Ace for Poke Ball/Sitrus Berry
 #define WALLACE_STEVEN_MON(Level, Species) \
     .lvl = Level,                          \
     .species = SPECIES_##Species,          \
@@ -3124,7 +3125,7 @@ JUAN_REMATCH(4),
     .ball = ITEM_ULTRA_BALL,                                               \
     }
 
-//Extra for hacks
+// Extra for hacks
 #define WALLACE_AZUMARILL(Level)                                                \
     {                                                                           \
     WALLACE_STEVEN_MON(Level, AZUMARILL),                                       \
@@ -3137,8 +3138,8 @@ JUAN_REMATCH(4),
     .ball = ITEM_DIVE_BALL,                                                     \
     }
 
-//Fairy
-//Can replace Calm Mind/Moonlight with Misty Terrain/Life Dew
+// Fairy
+// Can replace Calm Mind/Moonlight with Misty Terrain/Life Dew
 #define WALLACE_CLEFABLE(Level)                                                   \
     {                                                                             \
     WALLACE_STEVEN_MON(Level, CLEFABLE),                                          \
@@ -3161,8 +3162,8 @@ JUAN_REMATCH(4),
     .ball = ITEM_ULTRA_BALL,                                                            \
     }
 
-//EVs can be SpA/HP/Spe
-//Aura Sphere/Sitrus Berry can by replaced by Life Dew/Leftovers
+// EVs can be SpA/HP/Spe
+// Aura Sphere/Sitrus Berry can by replaced by Life Dew/Leftovers
 #define WALLACE_TOGEKISS(Level)                                                        \
     {                                                                                  \
     WALLACE_STEVEN_MON(Level, TOGEKISS),                                               \
@@ -3270,7 +3271,7 @@ JUAN_REMATCH(4),
 WALLACE_BATTLE(WALLACE, 69),
 WALLACE_BATTLE(WALLACE_REMATCH, 90),
 
-//Combine these three with the ones in include/data.h (for battle_partners)
+// Combine these three with the ones in include/data.h (for battle_partners)
 #define STEVEN_METAGROSS_2(Level)                                                        \
     {                                                                                    \
     WALLACE_STEVEN_MON(Level, METAGROSS),                                                \
@@ -3343,7 +3344,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ball = ITEM_LUXURY_BALL,                                                  \
     }
 
-//Extra for hacks
+// Extra for hacks
 #define STEVEN_PERRSERKER(Level)                                                 \
     {                                                                            \
     WALLACE_STEVEN_MON(Level, PERRSERKER),                                       \
@@ -3359,8 +3360,8 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define STEVEN_STEELIX
 #define STEVEN_BRONZONG
 
-//Impish/Atk/Def/Spe
-//Supercell Slam->Iron Defense
+// Impish/Atk/Def/Spe
+// Supercell Slam->Iron Defense
 #define STEVEN_KLINKLANG(Level)                                                        \
     {                                                                                  \
     WALLACE_STEVEN_MON(Level, KLINKLANG),                                              \
@@ -3388,7 +3389,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define STEVEN_GOODRA
 #define STEVEN_KLEFKI
 
-//Curse can be replaced by Supercell Slam
+// Curse can be replaced by Supercell Slam
 #define STEVEN_COPPERAJAH(Level)                                             \
     {                                                                        \
     WALLACE_STEVEN_MON(Level, COPPERAJAH),                                   \
@@ -3454,7 +3455,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },
 },
 
-//Grass
+// Grass
 #define JUAN_VILEPLUME
 #define JUAN_BELLOSSOM
 #define JUAN_VICTREEBEL
@@ -3465,10 +3466,10 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define JUAN_JUMPLUFF
 #define JUAN_SUNFLORA
 #define JUAN_SHIFTRY
-#define JUAN_BRELOOM //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1942
-#define JUAN_ROSERADE //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1961
-#define JUAN_CACTURNE //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1994
-#define JUAN_TROPIUS //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L2005
+#define JUAN_BRELOOM // https:// github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1942
+#define JUAN_ROSERADE // https:// github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1961
+#define JUAN_CACTURNE // https:// github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1994
+#define JUAN_TROPIUS // https:// github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L2005
 #define JUAN_CHERRIM
 #define JUAN_CARNIVINE
 #define JUAN_ABOMASNOW
@@ -3476,7 +3477,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define JUAN_WHIMSICOTT
 #define JUAN_LILLIGANT_HISUI
 #define JUAN_LILLIGANT
-#define JUAN_MARACTUS //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1983
+#define JUAN_MARACTUS // https:// github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1983
 #define JUAN_AMOONGUSS
 #define JUAN_FERRORTHORN
 #define JUAN_GOGOAT
@@ -3489,7 +3490,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define JUAN_HYDRAPPLE
 #define JUAN_ARBOLIVA
 #define JUAN_BRAMBLEGHAST
-#define JUAN_SCOVILLAIN //https://github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1972
+#define JUAN_SCOVILLAIN // https:// github.com/fdeblasio/pokeemerald-expansion/blob/cats/src/data/trainers.h#L1972
 #define JUAN_SINISTCHA
 
 #define REMATCH_2_LEVEL_1 35
@@ -3633,7 +3634,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },
 },
 
-//Regular trainers
+// Regular trainers
 #define YOUNGSTER_INFO            \
     TRAINER_CLASS_PIC(YOUNGSTER), \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
@@ -3932,7 +3933,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     TRAINER_CLASS_PIC(DRAGON_TAMER), \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE
 
-//Team Magma
+// Team Magma
 #define MAGMA_GRUNT_M_INFO                           \
     .trainerClass = TRAINER_CLASS_TEAM_MAGMA,        \
     .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_M,   \
@@ -4046,7 +4047,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },                                           \
 }
 
-//Team Aqua
+// Team Aqua
 #define AQUA_GRUNT_M_INFO                           \
     .trainerClass = TRAINER_CLASS_TEAM_AQUA,        \
     .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_M,   \
@@ -4171,7 +4172,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },                                                                                 \
 }
 
-//Team admins and leaders
+// Team admins and leaders
 #define TABITHA_BATTLE(Location, AceLevel, IVs)                                          \
 [DIFFICULTY_NORMAL][TRAINER_TABITHA_##Location] =                                        \
 {                                                                                        \
@@ -4355,7 +4356,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .gender = TRAINER_MON_MALE,                                                   \
     }
 
-//Extra for hacks
+// Extra for hacks
 #define MAXIE_DIGLETT
 #define MAXIE_DIGLETT_ALOLA
 #define MAXIE_CUBONE
@@ -4438,7 +4439,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .gender = TRAINER_MON_MALE,                                     \
     }
 
-//Extra for hacks
+// Extra for hacks
 #define ARCHIE_PSYDUCK
 #define ARCHIE_POLIWAG
 #define ARCHIE_POLIWAG_2
@@ -4514,7 +4515,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define ARCHIE_DONDOZO
 
 
-//Route 102
+// Route 102
 #define CALVIN_INFO             \
     .trainerName = _("Calvin"), \
     YOUNGSTER_INFO,             \
@@ -4546,7 +4547,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .gender = TRAINER_MON_MALE,      \
     }
 
-//Extra for hacks
+// Extra for hacks
 #define CALVIN_LICKITUNG(Level, IVs)                                               \
     {                                                                              \
     .lvl = Level,                                                                  \
@@ -4684,7 +4685,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },
 },
 
-//Route 104 (south)
+// Route 104 (south)
 #define WINSTON_INFO             \
     .trainerName = _("Winston"), \
     RICH_BOY_INFO,               \
@@ -4717,7 +4718,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .gender = TRAINER_MON_MALE,                                                   \
     .nickname = COMPOUND_STRING("Mr. Gig")
 
-//Extra for hacks
+// Extra for hacks
 #define WINSTON_LITLEO
 
 [DIFFICULTY_NORMAL][TRAINER_WINSTON_1] =
@@ -4842,7 +4843,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },
 },
 
-//Petalburg Woods
+// Petalburg Woods
 [DIFFICULTY_NORMAL][TRAINER_LYLE] =
 {
     .trainerName = _("Lyle"),
@@ -4927,7 +4928,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .gender = TRAINER_MON_FEMALE,                                                \
     }
 
-//Extra for hacks
+// Extra for hacks
 #define JAMES_SPINARAK
 #define JAMES_LEDYBA
 
@@ -4991,7 +4992,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },
 },
 
-//Route 104 (north)
+// Route 104 (north)
 #define CINDY_INFO             \
     .trainerName = _("Cindy"), \
     LADY_INFO,                 \
@@ -5003,7 +5004,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ability = ABILITY_QUICK_FEET,                               \
     .gender = TRAINER_MON_FEMALE
 
-//Extra for hacks
+// Extra for hacks
 #define CINDY_LITLEO
 
 [DIFFICULTY_NORMAL][TRAINER_CINDY_1] =
@@ -5088,7 +5089,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_TAILLOW : SPECIES_SWELLOW, \
     .gender = TRAINER_MON_FEMALE
 
-//Extra for hacks
+// Extra for hacks
 #define HALEY_COTTONEE
 
 [DIFFICULTY_NORMAL][TRAINER_HALEY_1] =
@@ -5225,7 +5226,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },
 },
 
-//Route 116
+// Route 116
 [DIFFICULTY_NORMAL][TRAINER_JOSE] =
 {
     .trainerName = _("José"),
@@ -5382,7 +5383,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ability = ABILITY_INSOMNIA,                                             \
     .gender = TRAINER_MON_MALE
 
-//Extra for hacks
+// Extra for hacks
 #define JERRY_PAWNIARD
 
 [DIFFICULTY_NORMAL][TRAINER_JERRY_1] =
@@ -5496,7 +5497,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ability = ABILITY_NORMALIZE,                                             \
     .gender = TRAINER_MON_FEMALE
 
-//Extra for hacks
+// Extra for hacks
 #define KAREN_SEEL
 
 [DIFFICULTY_NORMAL][TRAINER_KAREN_1] =
@@ -5587,7 +5588,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },
 },
 
-//Rustboro Gym
+// Rustboro Gym
 [DIFFICULTY_NORMAL][TRAINER_JOSH] =
 {
     .trainerName = _("Josh"),
@@ -5644,7 +5645,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },
 },
 
-//Rusturf Tunnel
+// Rusturf Tunnel
 [DIFFICULTY_NORMAL][TRAINER_CASPIAN_RUSTURF_TUNNEL] =
 {
     CASPIAN_INFO,
@@ -5654,7 +5655,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },
 },
 
-//Route 106 (land)
+// Route 106 (land)
 [DIFFICULTY_NORMAL][TRAINER_NED] =
 {
     .trainerName = _("Ned"),
@@ -5703,7 +5704,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     .ability = ABILITY_OBLIVIOUS,                                               \
     .gender = TRAINER_MON_MALE
 
-//Extra for hacks
+// Extra for hacks
 #define ELLIOT_REMORAID
 
 [DIFFICULTY_NORMAL][TRAINER_ELLIOT_1] =
@@ -5835,7 +5836,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },
 },
 
-//Dewford Gym
+// Dewford Gym
 [DIFFICULTY_NORMAL][TRAINER_LAURA] =
 {
     .trainerName = _("Laura"),
@@ -5926,7 +5927,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },
 },
 
-//Route 109 (land)
+// Route 109 (land)
 [DIFFICULTY_NORMAL][TRAINER_HUEY] =
 {
     .trainerName = _("Huey"),
@@ -6179,7 +6180,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },
 },
 
-//Seashore House
+// Seashore House
 [DIFFICULTY_NORMAL][TRAINER_SIMON] =
 {
     .trainerName = _("Simon"),
@@ -6234,7 +6235,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },
 },
 
-//Oceanic Museum
+// Oceanic Museum
 MALIK_BATTLE(MUSEUM, 17),
 MARINA_BATTLE(MUSEUM, 17),
 
@@ -6252,7 +6253,7 @@ MARINA_BATTLE(MUSEUM, 17),
     },
 },
 
-//Route 110
+// Route 110
 #define ISABEL_INFO                    \
     .trainerName = _("Isabel"),        \
     POKE_FAN_F_INFO,                   \
@@ -6362,7 +6363,7 @@ MARINA_BATTLE(MUSEUM, 17),
     },
 },
 
-//Trick House 1
+// Trick House 1
 [DIFFICULTY_NORMAL][TRAINER_SALLY] =
 {
     .trainerName = _("Sally"),
@@ -6417,7 +6418,7 @@ MARINA_BATTLE(MUSEUM, 17),
     },
 },
 
-//Route 103
+// Route 103
 [DIFFICULTY_NORMAL][TRAINER_DAISY] =
 {
     .trainerName = _("Daisy"),
@@ -6675,7 +6676,7 @@ MARINA_BATTLE(MUSEUM, 17),
     },
 },
 
-//Route 110
+// Route 110
 [DIFFICULTY_NORMAL][TRAINER_TIMMY] =
 {
     .trainerName = _("Timmy"),
@@ -6918,7 +6919,7 @@ MARINA_BATTLE(MUSEUM, 17),
     },
 },
 
-//Route 117
+// Route 117
 #define DYLAN_INFO             \
     .trainerName = _("Dylan"), \
     TRIATHLETE_M_RUNNING_INFO, \
@@ -6930,7 +6931,7 @@ MARINA_BATTLE(MUSEUM, 17),
     .ability = ABILITY_TANGLED_FEET,                        \
     .gender = TRAINER_MON_MALE
 
-//Extra for hacks
+// Extra for hacks
 #define DYLAN_GROWLITHE
 
 [DIFFICULTY_NORMAL][TRAINER_DYLAN_1] =
@@ -7339,7 +7340,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     },
 },
 
-//Rusturf Tunnel
+// Rusturf Tunnel
 [DIFFICULTY_NORMAL][TRAINER_MIKE] =
 {
     .trainerName = _("Mike"),
@@ -7362,7 +7363,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     },
 },
 
-//Mauville Gym
+// Mauville Gym
 #define MAUVILLE_GYM_TRAINER_INFO(Class) \
     Class##_INFO,                        \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,   \
@@ -7426,7 +7427,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     },
 },
 
-//Route 118 (west)
+// Route 118 (west)
 #define ROSE_INFO             \
     .trainerName = _("Rose"), \
     AROMA_LADY_INFO,          \
@@ -7449,7 +7450,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .ability = ABILITY_POISON_HEAL,                              \
     .gender = TRAINER_MON_FEMALE
 
-//Extra for hacks
+// Extra for hacks
 #define ROSE_SUNKERN
 
 [DIFFICULTY_NORMAL][TRAINER_ROSE_1] =
@@ -7598,7 +7599,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .species = Level < REMATCH_3_LEVEL_6 ? SPECIES_MAGNEMITE : (Level < REMATCH_5_LEVEL_6 ? SPECIES_MAGNETON : SPECIES_MAGNEZONE), \
     .ability = ABILITY_STURDY
 
-//Extra for hacks
+// Extra for hacks
 #define DALTON_CHATOT
 #define DALTON_TOXEL
 
@@ -7710,7 +7711,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     },
 },
 
-//Cycling Road
+// Cycling Road
 [DIFFICULTY_NORMAL][TRAINER_JACLYN] =
 {
     .trainerName = _("Jaclyn"),
@@ -7843,7 +7844,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_VOLTORB : SPECIES_ELECTRODE, \
     .ability = ABILITY_SOUNDPROOF
 
-//Extra for hacks
+// Extra for hacks
 #define BENJAMIN_KLINK
 
 [DIFFICULTY_NORMAL][TRAINER_BENJAMIN_1] =
@@ -7984,7 +7985,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     },
 },
 
-//Trick House 2
+// Trick House 2
 [DIFFICULTY_NORMAL][TRAINER_TED] =
 {
     .trainerName = _("Ted"),
@@ -8045,7 +8046,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     },
 },
 
-//Route 111 (south)
+// Route 111 (south)
 [DIFFICULTY_NORMAL][TRAINER_TYRON] =
 {
     .trainerName = _("Tyron"),
@@ -8236,7 +8237,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     },
 },
 
-//Route 112
+// Route 112
 [DIFFICULTY_NORMAL][TRAINER_LARRY] =
 {
     .trainerName = _("Larry"),
@@ -8489,7 +8490,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     },
 },
 
-//Route 111 (north)
+// Route 111 (north)
 #define WILTON_INFO                                                \
     .trainerName = _("Wilton"),                                    \
     ACE_TRAINER_M_INFO,                                            \
@@ -8514,7 +8515,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .ability = ABILITY_STATIC,                                                    \
     .gender = TRAINER_MON_MALE
 
-//Extra for hacks
+// Extra for hacks
 #define WILTON_AXEW
 #define WILTON_FLETCHLING
 
@@ -8642,7 +8643,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .ability = ABILITY_KEEN_EYE,                                               \
     .gender = TRAINER_MON_FEMALE
 
-//Extra for hacks
+// Extra for hacks
 #define BROOKE_LAPRAS
 #define BROOKE_GLAMEOW
 
@@ -8761,7 +8762,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     },
 },
 
-//Route 113
+// Route 113
 [DIFFICULTY_NORMAL][TRAINER_JAYLEN] =
 {
     .trainerName = _("Jaylen"),
@@ -8848,7 +8849,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .gender = TRAINER_MON_FEMALE,                                              \
     .moves = {MOVE_GIGA_DRAIN, MOVE_LEECH_SEED, MOVE_GROWTH, MOVE_SUNNY_DAY}
 
-//Extra for hacks
+// Extra for hacks
 #define MADELINE_STARYU
 #define MADELINE_SPHEAL
 
@@ -9146,7 +9147,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     },
 },
 
-//Route 114
+// Route 114
 [DIFFICULTY_NORMAL][TRAINER_NOLAN] =
 {
     .trainerName = _("Nolan"),
@@ -9284,7 +9285,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     .ability = 1,                                                                                               \
     .gender = TRAINER_MON_MALE
 
-//Extra for hacks
+// Extra for hacks
 #define STEVE_SLOWPOKE
 #define STEVE_MAREEP
 
@@ -9530,10 +9531,10 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
     },
 },
 
-//Meteor Falls
+// Meteor Falls
 COURTNEY_BATTLE(METEOR_FALLS, 28, 3),
 
-//Route 115 (south)
+// Route 115 (south)
 #define NOB_INFO             \
     .trainerName = _("Nob"), \
     BLACK_BELT_INFO,         \
@@ -9564,7 +9565,7 @@ COURTNEY_BATTLE(METEOR_FALLS, 28, 3),
     .ability = ABILITY_GUTS,      \
     .gender = TRAINER_MON_MALE
 
-//Extra for hacks
+// Extra for hacks
 #define NOB_MANKEY
 #define NOB_HITMONLEE
 
@@ -9692,7 +9693,7 @@ COURTNEY_BATTLE(METEOR_FALLS, 28, 3),
     .ability = ABILITY_GUTS,                                                    \
     .gender = TRAINER_MON_FEMALE
 
-//Extra for hacks
+// Extra for hacks
 #define CYNDY_HITMONCHAN
 
 [DIFFICULTY_NORMAL][TRAINER_CYNDY_1] =
@@ -9775,7 +9776,7 @@ COURTNEY_BATTLE(METEOR_FALLS, 28, 3),
     },
 },
 
-//Mt. Chimney (Magma)
+// Mt. Chimney (Magma)
 GINNY_BATTLE(MT_CHIMNEY, 27),
 LANDON_BATTLE(MT_CHIMNEY, 27),
 TABITHA_BATTLE(MT_CHIMNEY, 29, 6),
@@ -9795,7 +9796,7 @@ TABITHA_BATTLE(MT_CHIMNEY, 29, 6),
     },
 },
 
-//Jagged Pass
+// Jagged Pass
 [DIFFICULTY_NORMAL][TRAINER_ERIC] =
 {
     .trainerName = _("Eric"),
@@ -9995,7 +9996,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .species = SPECIES_SANDSLASH, \
     .gender = TRAINER_MON_MALE
 
-//Extra for hacks
+// Extra for hacks
 #define ETHAN_STUNKY
 
 [DIFFICULTY_NORMAL][TRAINER_ETHAN_1] =
@@ -10112,7 +10113,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     },
 },
 
-//Lavaridge Gym
+// Lavaridge Gym
 [DIFFICULTY_NORMAL][TRAINER_JEFF] =
 {
     .trainerName = _("Jeff"),
@@ -10239,7 +10240,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     },
 },
 
-//Mt. Chimney
+// Mt. Chimney
 [DIFFICULTY_NORMAL][TRAINER_SHIRLEY] =
 {
     .trainerName = _("Shirley"),
@@ -10284,7 +10285,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .ability = ABILITY_GUTS,                                                    \
     .gender = TRAINER_MON_FEMALE
 
-//Extra for hacks
+// Extra for hacks
 #define SHELBY_RIOLU
 
 [DIFFICULTY_NORMAL][TRAINER_SHELBY_1] =
@@ -10491,7 +10492,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     },
 },
 
-//Route 111 (desert)
+// Route 111 (desert)
 [DIFFICULTY_NORMAL][TRAINER_HEIDI] =
 {
     .trainerName = _("Heidi"),
@@ -10580,7 +10581,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     .species = Level < 36 ? SPECIES_BALTOY : SPECIES_CLAYDOL, \
     IVS(10)
 
-//Extra for hacks
+// Extra for hacks
 #define DUSTY_AERODACTYL
 #define DUSTY_TYRUNT
 #define DUSTY_AMAURA
@@ -10718,7 +10719,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     },
 },
 
-//Trick House 3
+// Trick House 3
 [DIFFICULTY_NORMAL][TRAINER_JUSTIN] =
 {
     .trainerName = _("Justin"),
@@ -10773,7 +10774,7 @@ TERRANCE_BATTLE(JAGGED_PASS, 27),
     },
 },
 
-//Petalburg Gym
+// Petalburg Gym
 #define PETALBURG_GYM_TRAINER(Trainer, Name, Gender, Item, Species, HeldItem, Move1, Move2, Move3, Move4) \
 [DIFFICULTY_NORMAL][TRAINER_##Trainer] =                                                                  \
 {                                                                                                         \
@@ -10801,7 +10802,7 @@ PETALBURG_GYM_TRAINER(GEORGE,  "George",  M, HYPER_POTION, VIGOROTH,   SITRUS_BE
 PETALBURG_GYM_TRAINER(JODY,    "Jody",    F, X_ATTACK,     ZANGOOSE,   LIECHI_BERRY, SWORDS_DANCE, CRUSH_CLAW,  NONE,         NONE),
 PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LENS,   SLASH,        NONE,        NONE,         NONE),
 
-//Route 103 (water)
+// Route 103 (water)
 [DIFFICULTY_NORMAL][TRAINER_ISABELLE] =
 {
     .trainerName = _("Isabelle"),
@@ -10830,7 +10831,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     },
 },
 
-//Route 115 (north)
+// Route 115 (north)
 [DIFFICULTY_NORMAL][TRAINER_JAIDEN] =
 {
     .trainerName = _("Jaiden"),
@@ -10860,7 +10861,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .ability = ABILITY_GUTS,     \
     .gender = TRAINER_MON_MALE
 
-//Extra for hacks
+// Extra for hacks
 #define TIMOTHY_TIMBURR
 #define TIMOTHY_HAWLUCHA
 
@@ -10998,7 +10999,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     },
 },
 
-//Route 105
+// Route 105
 [DIFFICULTY_NORMAL][TRAINER_IMANI] =
 {
     .trainerName = _("Imani"),
@@ -11211,7 +11212,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     },
 },
 
-//Route 106 (water)
+// Route 106 (water)
 [DIFFICULTY_NORMAL][TRAINER_DOUGLAS] =
 {
     .trainerName = _("Douglas"),
@@ -11250,7 +11251,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     },
 },
 
-//Route 107
+// Route 107
 [DIFFICULTY_NORMAL][TRAINER_DENISE] =
 {
     .trainerName = _("Denise"),
@@ -11284,7 +11285,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     .species = Level < REMATCH_4_LEVEL_6 ? SPECIES_STARYU : SPECIES_STARMIE, \
     .ability = ABILITY_ILLUMINATE
 
-//Extra for hacks
+// Extra for hacks
 #define TONY_FRILLISH
 
 [DIFFICULTY_NORMAL][TRAINER_TONY_1] =
@@ -11429,7 +11430,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     },
 },
 
-//Route 108
+// Route 108
 [DIFFICULTY_NORMAL][TRAINER_MISSY] =
 {
     .trainerName = _("Missy"),
@@ -11636,7 +11637,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     },
 },
 
-//Abandoned Ship
+// Abandoned Ship
 #define THALIA_INFO             \
     .trainerName = _("Thalia"), \
     BEAUTY_INFO,                \
@@ -11919,7 +11920,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     },
 },
 
-//Route 109 (water)
+// Route 109 (water)
 [DIFFICULTY_NORMAL][TRAINER_AUSTINA] =
 {
     .trainerName = _("Austina"),
@@ -12046,7 +12047,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     },
 },
 
-//Trick House 4
+// Trick House 4
 [DIFFICULTY_NORMAL][TRAINER_YUJI] =
 {
     .trainerName = _("Yuji"),
@@ -12097,7 +12098,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     },
 },
 
-//Route 118 (east)
+// Route 118 (east)
 [DIFFICULTY_NORMAL][TRAINER_BARNY] =
 {
     .trainerName = _("Barny"),
@@ -12148,7 +12149,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     },
 },
 
-//Route 123 (west)
+// Route 123 (west)
 [DIFFICULTY_NORMAL][TRAINER_DAVIS] =
 {
     .trainerName = _("Davis"),
@@ -12221,7 +12222,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     },
 },
 
-//Route 119 (south)
+// Route 119 (south)
 [DIFFICULTY_NORMAL][TRAINER_KENT] =
 {
     .trainerName = _("Kent"),
@@ -12381,7 +12382,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     IVS(10),                                                                  \
     .gender = TRAINER_MON_FEMALE
 
-//Extra for hacks
+// Extra for hacks
 #define CATHERINE_PICHU
 #define CATHERINE_DRILBUR
 
@@ -12479,7 +12480,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     IVS(10),                    \
     .gender = TRAINER_MON_MALE
 
-//Extra for hacks
+// Extra for hacks
 #define JACKSON_SLAKOTH
 #define JACKSON_PIDOVE
 
@@ -12644,7 +12645,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
     },
 },
 
-//Weather Institute
+// Weather Institute
 #define WEATHER_INSTITUTE_AQUA_LEVEL 37
 NERISSA_BATTLE(WEATHER_INSTITUTE, WEATHER_INSTITUTE_AQUA_LEVEL),
 BERYL_BATTLE(WEATHER_INSTITUTE, WEATHER_INSTITUTE_AQUA_LEVEL),
@@ -12663,7 +12664,7 @@ MARINA_BATTLE(WEATHER_INSTITUTE, WEATHER_INSTITUTE_AQUA_LEVEL),
 
 SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
 
-//Route 119 (north)
+// Route 119 (north)
 [DIFFICULTY_NORMAL][TRAINER_FABIAN] =
 {
     .trainerName = _("Fabian"),
@@ -12712,7 +12713,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     },
 },
 
-//Route 120 (north)
+// Route 120 (north)
 [DIFFICULTY_NORMAL][TRAINER_CLARISSA] =
 {
     .trainerName = _("Clarissa"),
@@ -12748,7 +12749,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     .ability = ABILITY_EARLY_BIRD,                                      \
     .gender = TRAINER_MON_MALE
 
-//Extra for hacks
+// Extra for hacks
 #define ROBERT_SPEAROW
 #define ROBERT_STARLY
 
@@ -12832,7 +12833,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     },
 },
 
-//Fortree Gym
+// Fortree Gym
 [DIFFICULTY_NORMAL][TRAINER_HUMBERTO] =
 {
     .trainerName = _("Humberto"),
@@ -12953,7 +12954,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     },
 },
 
-//Route 120 (south)
+// Route 120 (south)
 [DIFFICULTY_NORMAL][TRAINER_COLIN] =
 {
     .trainerName = _("Colin"),
@@ -13148,7 +13149,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     IVS(10),                      \
     .gender = TRAINER_MON_FEMALE
 
-//Extra for hacks
+// Extra for hacks
 #define JEFFREY_KRICKETOT
 #define JEFFREY_COMBEE
 
@@ -13307,7 +13308,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     },
 },
 
-//Route 121
+// Route 121
 [DIFFICULTY_NORMAL][TRAINER_CALE] =
 {
     .trainerName = _("Cale"),
@@ -13361,7 +13362,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     IVS(10),                    \
     .gender = TRAINER_MON_FEMALE
 
-//Extra for hacks
+// Extra for hacks
 #define JESSICA_SANDILE
 
 [DIFFICULTY_NORMAL][TRAINER_JESSICA_1] =
@@ -13558,7 +13559,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     IVS(10),                    \
     .gender = TRAINER_MON_MALE
 
-//Extra for hacks
+// Extra for hacks
 #define WALTER_LILLIPUP
 
 [DIFFICULTY_NORMAL][TRAINER_WALTER_1] =
@@ -13787,7 +13788,7 @@ SHELLY_BATTLE(WEATHER_INSTITUTE, 41, 6),
     },
 },
 
-//Mt. Pyre
+// Mt. Pyre
 [DIFFICULTY_NORMAL][TRAINER_MARK] =
 {
     .trainerName = _("Mark"),
@@ -13996,7 +13997,7 @@ GABRIELLE_BATTLE(5, REMATCH_5_LEVEL_6),
     .ability = 0,                                                                                                \
     .gender = TRAINER_MON_FEMALE
 
-//Extra for hacks
+// Extra for hacks
 #define VALERIE_MISDREAVUS
 
 [DIFFICULTY_NORMAL][TRAINER_VALERIE_1] =
@@ -14110,7 +14111,7 @@ BERYL_BATTLE(MT_PYRE, 42),
 MALIK_BATTLE(MT_PYRE, 42),
 MARINA_BATTLE(MT_PYRE, 42),
 
-//Route 123 (east)
+// Route 123 (east)
 #define CAMERON_INFO             \
     .trainerName = _("Cameron"), \
     PSYCHIC_M_INFO,              \
@@ -14126,7 +14127,7 @@ MARINA_BATTLE(MT_PYRE, 42),
     .ability = ABILITY_SYNCHRONIZE,                             \
     .gender = TRAINER_MON_MALE
 
-//Extra for hacks
+// Extra for hacks
 #define CAMERON_EXEGGCUTE
 
 [DIFFICULTY_NORMAL][TRAINER_CAMERON_1] =
@@ -14587,7 +14588,7 @@ MARINA_BATTLE(MT_PYRE, 42),
     },
 },
 
-//Magma Hideout
+// Magma Hideout
 #define MAGMA_HIDEOUT_GRUNT(Number, Gender, Species)        \
 [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_##Number] = \
 {                                                           \
@@ -14636,7 +14637,7 @@ TABITHA_BATTLE(MAGMA_HIDEOUT, 47, 9),
     },
 },
 
-//Aqua Hideout
+// Aqua Hideout
 #define AQUA_HIDEOUT_GRUNT(Number, Gender, Species1, Species2) \
 [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_##Number] =     \
 {                                                              \
@@ -14676,7 +14677,7 @@ MALIK_BATTLE(AQUA_HIDEOUT, AQUA_HIDEOUT_LEVEL),
 MARINA_BATTLE(AQUA_HIDEOUT, AQUA_HIDEOUT_LEVEL),
 MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
 
-//Route 124
+// Route 124
 [DIFFICULTY_NORMAL][TRAINER_GRACE] =
 {
     .trainerName = _("Grace"),
@@ -14831,7 +14832,7 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     .species = SPECIES_LUVDISC, \
     .gender = TRAINER_MON_FEMALE
 
-//Extra for hacks
+// Extra for hacks
 #define JENNY_ALOMOMOLA
 
 [DIFFICULTY_NORMAL][TRAINER_JENNY_1] =
@@ -14956,7 +14957,7 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     },
 },
 
-//Route 125
+// Route 125
 #define ERNEST_INFO             \
     .trainerName = _("Ernest"), \
     SAILOR_INFO,                \
@@ -15211,7 +15212,7 @@ MATT_BATTLE(AQUA_HIDEOUT, 49, 6),
     },
 },
 
-//Mossdeep Gym
+// Mossdeep Gym
 #define MOSSDEEP_GYM_LEVEL 46
 
 #define MOSSDEEP_GYM_TRAINER(Trainer, Name, Class, Species) \
@@ -15243,7 +15244,7 @@ MOSSDEEP_GYM_TRAINER(VIRGIL,   "Virgil",   PSYCHIC_M,  GOLDUCK),
 MOSSDEEP_GYM_TRAINER(SYLVIA,   "Sylvia",   HEX_MANIAC, MEDICHAM),
 MOSSDEEP_GYM_TRAINER(HANNAH,   "Hannah",   PSYCHIC_F,  GARDEVOIR),
 
-//Trick House 6
+// Trick House 6
 [DIFFICULTY_NORMAL][TRAINER_SOPHIA] =
 {
     .trainerName = _("Sophia"),
@@ -15301,7 +15302,7 @@ MOSSDEEP_GYM_TRAINER(HANNAH,   "Hannah",   PSYCHIC_F,  GARDEVOIR),
     },
 },
 
-//Space Center
+// Space Center
 JORDAN_BATTLE(SPACE_CENTER, SPACE_CENTER_GRUNT_LEVEL),
 WALKER_BATTLE(SPACE_CENTER, SPACE_CENTER_GRUNT_LEVEL),
 GAETANO_BATTLE(SPACE_CENTER, SPACE_CENTER_GRUNT_LEVEL),
@@ -15325,7 +15326,7 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     },
 },
 
-//Route 127
+// Route 127
 [DIFFICULTY_NORMAL][TRAINER_AIDAN] =
 {
     .trainerName = _("Aidan"),
@@ -15573,7 +15574,7 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     },
 },
 
-//Route 126
+// Route 126
 [DIFFICULTY_NORMAL][TRAINER_LEONARDO] =
 {
     .trainerName = _("Leonardo"),
@@ -15789,7 +15790,7 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     },
 },
 
-//Route 128
+// Route 128
 [DIFFICULTY_NORMAL][TRAINER_RUBEN] =
 {
     .trainerName = _("Ruben"),
@@ -15871,7 +15872,7 @@ TABITHA_BATTLE(SPACE_CENTER, MAXIE_SPACE_CENTER_ACE_LEVEL - 1, 12),
     }                                                               \
 }
 
-//Extra for hacks
+// Extra for hacks
 #define ISAIAH_BUIZEL
 
 ISAIAH_BATTLE(1, 50),
@@ -15930,7 +15931,7 @@ KATELYN_BATTLE(5, REMATCH_5_LEVEL_1),
     },
 },
 
-//Seafloor Cavern
+// Seafloor Cavern
 NERISSA_BATTLE(SEAFLOOR_CAVERN, SEAFLOOR_CAVERN_LEVEL),
 BERYL_BATTLE(SEAFLOOR_CAVERN, SEAFLOOR_CAVERN_LEVEL),
 MALIK_BATTLE(SEAFLOOR_CAVERN, SEAFLOOR_CAVERN_LEVEL),
@@ -15961,7 +15962,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     },
 },
 
-//Route 129
+// Route 129
 [DIFFICULTY_NORMAL][TRAINER_REED] =
 {
     .trainerName = _("Reed"),
@@ -16044,7 +16045,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     },
 },
 
-//Route 130
+// Route 130
 [DIFFICULTY_NORMAL][TRAINER_RODNEY] =
 {
     .trainerName = _("Rodney"),
@@ -16095,7 +16096,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     },
 },
 
-//Route 131
+// Route 131
 [DIFFICULTY_NORMAL][TRAINER_KEVIN] =
 {
     .trainerName = _("Kevin"),
@@ -16202,7 +16203,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     },
 },
 
-//Route 132
+// Route 132
 [DIFFICULTY_NORMAL][TRAINER_GILBERT] =
 {
     .trainerName = _("Gilbert"),
@@ -16355,7 +16356,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     },
 },
 
-//Route 133
+// Route 133
 [DIFFICULTY_NORMAL][TRAINER_LINDA] =
 {
     .trainerName = _("Linda"),
@@ -16475,7 +16476,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     },
 },
 
-//Route 134
+// Route 134
 [DIFFICULTY_NORMAL][TRAINER_LAUREL] =
 {
     .trainerName = _("Laurel"),
@@ -16634,7 +16635,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     },
 },
 
-//Sootopolis Gym
+// Sootopolis Gym
 [DIFFICULTY_NORMAL][TRAINER_CONNIE] =
 {
     .trainerName = _("Connie"),
@@ -16830,7 +16831,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     },
 },
 
-//Trick House 7
+// Trick House 7
 [DIFFICULTY_NORMAL][TRAINER_JOSHUA] =
 {
     .trainerName = _("Joshua"),
@@ -16928,7 +16929,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     },
 },
 
-//Meteor Falls (Waterfall)
+// Meteor Falls (Waterfall)
 #define JOHN_AND_JAY_INFO                                                               \
     .trainerName = _("John & Jay"),                                                     \
     OLD_COUPLE_INFO,                                                                    \
@@ -17000,7 +17001,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     IVS(18),                   \
     .gender = TRAINER_MON_MALE
 
-//Extra for hacks
+// Extra for hacks
 #define NICOLAS_DRUDDIGON
 #define NICOLAS_NOIBAT
 
@@ -17036,7 +17037,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     },
 },
 
-//Victory Road
+// Victory Road
 [DIFFICULTY_NORMAL][TRAINER_ALBERT] =
 {
     .trainerName = _("Albert"),
@@ -17414,7 +17415,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     },
 },
 
-//Trick House 8
+// Trick House 8
 [DIFFICULTY_NORMAL][TRAINER_KEIRA] =
 {
     .trainerName = _("Keira"),
@@ -17483,7 +17484,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     },
 },
 
-//S.S. Tidal
+// S.S. Tidal
 [DIFFICULTY_NORMAL][TRAINER_LEA_AND_JED] =
 {
     .trainerName = _("Lea & Jed"),
@@ -17626,7 +17627,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     },
 },
 
-//Frontier Brains
+// Frontier Brains
 #define FRONTIER_BRAIN_INFO(Class, Name)              \
     .trainerClass = TRAINER_CLASS_##Class,            \
     .trainerPic = TRAINER_PIC_FRONT_##Class##_##Name, \
@@ -17730,7 +17731,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     },
 },
 
-//Battle Frontier new
+// Battle Frontier new
 [DIFFICULTY_NORMAL][TRAINER_BRENDAN_POSTGAME] =
 {
     BRENDAN_INFO,
@@ -17779,7 +17780,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
     },
 },
 
-//Other
+// Other
 [DIFFICULTY_NORMAL][TRAINER_RED] =
 {
     .trainerName = _("Red"),
@@ -17928,6 +17929,941 @@ UNUSED_TRAINER(14),
 UNUSED_TRAINER(15),
 
 #else
+[DIFFICULTY_NORMAL][TRAINER_NONE] =
+{
+    .trainerName = _("PH"),
+    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
+    .trainerPic = TRAINER_PIC_FRONT_HIKER_FRLG,
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
+    .partySize = 0,
+    .party = (const struct TrainerMon[])
+    {
+    },
+},
+
+// Important trainers
+#define RIVAL_INFO                                  \
+    .trainerName = _("Terry"),                      \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE, \
+    BOSS_AI_FLAGS
+
+#define RIVAL_EARLY_INFO \
+    RIVAL_INFO,          \
+    TRAINER_CLASS_PIC(RIVAL_EARLY_FRLG)
+
+#define RIVAL_LATE_INFO \
+    RIVAL_INFO,          \
+    TRAINER_CLASS_PIC(RIVAL_LATE_FRLG)
+
+#define CHAMPION_INFO                                                                      \
+    RIVAL_INFO,                                                                            \
+    .trainerClass = TRAINER_CLASS_CHAMPION_FRLG,                                           \
+    .trainerPic = TRAINER_PIC_FRONT_CHAMPION_RIVAL_FRLG,                                   \
+    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE}, \
+    .mugshotColor = MUGSHOT_COLOR_YELLOW,                                                  \
+    .partySize = 6
+
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_OAKS_LAB_GRASS] =
+{
+    RIVAL_EARLY_INFO,
+    .partySize = 1,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 5,
+        .species = SPECIES_BULBASAUR,
+        .moves = {MOVE_TACKLE, MOVE_GROWL, MOVE_NONE, MOVE_NONE},
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_OAKS_LAB_FIRE] =
+{
+    RIVAL_EARLY_INFO,
+    .partySize = 1,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 5,
+        .species = SPECIES_CHARMANDER,
+        .moves = {MOVE_SCRATCH, MOVE_GROWL, MOVE_NONE, MOVE_NONE},
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_OAKS_LAB_WATER] =
+{
+    RIVAL_EARLY_INFO,
+    .partySize = 1,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 5,
+        .species = SPECIES_SQUIRTLE,
+        .moves = { MOVE_TACKLE, MOVE_TAIL_WHIP,},
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_ROUTE22_EARLY_GRASS] =
+{
+    RIVAL_EARLY_INFO,
+    .partySize = 2,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 9,
+        .species = SPECIES_PIDGEY,
+        IVS(6),
+        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_NONE, MOVE_NONE},
+        },
+        {
+        .lvl = 9,
+        .species = SPECIES_BULBASAUR,
+        IVS(6),
+        .moves = {MOVE_TACKLE, MOVE_GROWL, MOVE_NONE, MOVE_NONE},
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_ROUTE22_EARLY_FIRE] =
+{
+    RIVAL_EARLY_INFO,
+    .partySize = 2,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 9,
+        .species = SPECIES_PIDGEY,
+        IVS(6),
+        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_NONE, MOVE_NONE},
+        },
+        {
+        .lvl = 9,
+        .species = SPECIES_CHARMANDER,
+        IVS(6),
+        .moves = {MOVE_SCRATCH, MOVE_GROWL, MOVE_NONE, MOVE_NONE},
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_ROUTE22_EARLY_WATER] =
+{
+    RIVAL_EARLY_INFO,
+    .partySize = 2,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 9,
+        .species = SPECIES_PIDGEY,
+        IVS(6),
+        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_NONE, MOVE_NONE},
+        },
+        {
+        .lvl = 9,
+        .species = SPECIES_SQUIRTLE,
+        IVS(6),
+        .moves = {MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_NONE, MOVE_NONE},
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_CERULEAN_GRASS] =
+{
+    RIVAL_EARLY_INFO,
+    .partySize = 4,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 17,
+        .species = SPECIES_PIDGEOTTO,
+        IVS(6),
+        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_GUST, MOVE_QUICK_ATTACK},
+        },
+        {
+        .lvl = 16,
+        .species = SPECIES_ABRA,
+        IVS(6),
+        .moves = {MOVE_TELEPORT, MOVE_NONE, MOVE_NONE, MOVE_NONE},
+        },
+        {
+        .lvl = 15,
+        .species = SPECIES_RATTATA,
+        IVS(6),
+        .moves = {MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_QUICK_ATTACK, MOVE_NONE},
+        },
+        {
+        .lvl = 18,
+        .species = SPECIES_BULBASAUR,
+        IVS(12),
+        .moves = {MOVE_SLEEP_POWDER, MOVE_POISON_POWDER, MOVE_VINE_WHIP, MOVE_LEECH_SEED},
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_CERULEAN_FIRE] =
+{
+    RIVAL_EARLY_INFO,
+    .partySize = 4,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 17,
+        .species = SPECIES_PIDGEOTTO,
+        IVS(6),
+        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_GUST, MOVE_QUICK_ATTACK},
+        },
+        {
+        .lvl = 16,
+        .species = SPECIES_ABRA,
+        IVS(6),
+        .moves = {MOVE_TELEPORT, MOVE_NONE, MOVE_NONE, MOVE_NONE},
+        },
+        {
+        .lvl = 15,
+        .species = SPECIES_RATTATA,
+        IVS(6),
+        .moves = {MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_QUICK_ATTACK, MOVE_NONE},
+        },
+        {
+        .lvl = 18,
+        .species = SPECIES_CHARMANDER,
+        IVS(12),
+        .moves = {MOVE_METAL_CLAW, MOVE_EMBER, MOVE_GROWL, MOVE_SCRATCH},
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_CERULEAN_WATER] =
+{
+    RIVAL_EARLY_INFO,
+    .partySize = 4,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 17,
+        .species = SPECIES_PIDGEOTTO,
+        IVS(6),
+        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_GUST, MOVE_QUICK_ATTACK},
+        },
+        {
+        .lvl = 16,
+        .species = SPECIES_ABRA,
+        IVS(6),
+        .moves = {MOVE_TELEPORT, MOVE_NONE, MOVE_NONE, MOVE_NONE},
+        },
+        {
+        .lvl = 15,
+        .species = SPECIES_RATTATA,
+        IVS(6),
+        .moves = {MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_QUICK_ATTACK, MOVE_NONE},
+        },
+        {
+        .lvl = 18,
+        .species = SPECIES_SQUIRTLE,
+        IVS(12),
+        .moves = {MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_WITHDRAW, MOVE_WATER_GUN},
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_SS_ANNE_GRASS] =
+{
+    RIVAL_LATE_INFO,
+    .partySize = 4,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 19,
+        .species = SPECIES_PIDGEOTTO,
+        IVS(6),
+        },
+        {
+        .lvl = 16,
+        .species = SPECIES_RATICATE,
+        IVS(6),
+        },
+        {
+        .lvl = 18,
+        .species = SPECIES_KADABRA,
+        IVS(6),
+        },
+        {
+        .lvl = 20,
+        .species = SPECIES_IVYSAUR,
+        IVS(12),
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_SS_ANNE_FIRE] =
+{
+    RIVAL_LATE_INFO,
+    .partySize = 4,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 19,
+        .species = SPECIES_PIDGEOTTO,
+        IVS(6),
+        },
+        {
+        .lvl = 16,
+        .species = SPECIES_RATICATE,
+        IVS(6),
+        },
+        {
+        .lvl = 18,
+        .species = SPECIES_KADABRA,
+        IVS(6),
+        },
+        {
+        .lvl = 20,
+        .species = SPECIES_CHARMELEON,
+        IVS(12),
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_SS_ANNE_WATER] =
+{
+    RIVAL_LATE_INFO,
+    .partySize = 4,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 19,
+        .species = SPECIES_PIDGEOTTO,
+        IVS(6),
+        },
+        {
+        .lvl = 16,
+        .species = SPECIES_RATICATE,
+        IVS(6),
+        },
+        {
+        .lvl = 18,
+        .species = SPECIES_KADABRA,
+        IVS(6),
+        },
+        {
+        .lvl = 20,
+        .species = SPECIES_WARTORTLE,
+        IVS(12),
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_POKEMON_TOWER_GRASS] =
+{
+    RIVAL_LATE_INFO,
+    .partySize = 5,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 25,
+        .species = SPECIES_PIDGEOTTO,
+        IVS(12),
+        },
+        {
+        .lvl = 23,
+        .species = SPECIES_GYARADOS,
+        IVS(12),
+        },
+        {
+        .lvl = 22,
+        .species = SPECIES_GROWLITHE,
+        IVS(12),
+        },
+        {
+        .lvl = 20,
+        .species = SPECIES_KADABRA,
+        IVS(12),
+        },
+        {
+        .lvl = 25,
+        .species = SPECIES_IVYSAUR,
+        IVS(12),
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_POKEMON_TOWER_FIRE] =
+{
+    RIVAL_LATE_INFO,
+    .partySize = 5,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 25,
+        .species = SPECIES_PIDGEOTTO,
+        IVS(12),
+        },
+        {
+        .lvl = 23,
+        .species = SPECIES_EXEGGCUTE,
+        IVS(12),
+        },
+        {
+        .lvl = 22,
+        .species = SPECIES_GYARADOS,
+        IVS(12),
+        },
+        {
+        .lvl = 20,
+        .species = SPECIES_KADABRA,
+        IVS(12),
+        },
+        {
+        .lvl = 25,
+        .species = SPECIES_CHARMELEON,
+        IVS(12),
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_POKEMON_TOWER_WATER] =
+{
+    RIVAL_LATE_INFO,
+    .partySize = 5,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 25,
+        .species = SPECIES_PIDGEOTTO,
+        IVS(12),
+        },
+        {
+        .lvl = 23,
+        .species = SPECIES_GROWLITHE,
+        IVS(12),
+        },
+        {
+        .lvl = 22,
+        .species = SPECIES_EXEGGCUTE,
+        IVS(12),
+        },
+        {
+        .lvl = 20,
+        .species = SPECIES_KADABRA,
+        IVS(12),
+        },
+        {
+        .lvl = 25,
+        .species = SPECIES_WARTORTLE,
+        IVS(12),
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_SILPH_GRASS] =
+{
+    RIVAL_LATE_INFO,
+    .partySize = 5,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 37,
+        .species = SPECIES_PIDGEOT,
+        IVS(12),
+        },
+        {
+        .lvl = 38,
+        .species = SPECIES_GYARADOS,
+        IVS(12),
+        },
+        {
+        .lvl = 35,
+        .species = SPECIES_GROWLITHE,
+        IVS(12),
+        },
+        {
+        .lvl = 35,
+        .species = SPECIES_ALAKAZAM,
+        IVS(12),
+        },
+        {
+        .lvl = 40,
+        .species = SPECIES_VENUSAUR,
+        IVS(18),
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_SILPH_FIRE] =
+{
+    RIVAL_LATE_INFO,
+    .partySize = 5,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 37,
+        .species = SPECIES_PIDGEOT,
+        IVS(12),
+        },
+        {
+        .lvl = 38,
+        .species = SPECIES_EXEGGCUTE,
+        IVS(12),
+        },
+        {
+        .lvl = 35,
+        .species = SPECIES_GYARADOS,
+        IVS(12),
+        },
+        {
+        .lvl = 35,
+        .species = SPECIES_ALAKAZAM,
+        IVS(12),
+        },
+        {
+        .lvl = 40,
+        .species = SPECIES_CHARIZARD,
+        IVS(18),
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_SILPH_WATER] =
+{
+    RIVAL_LATE_INFO,
+    .partySize = 5,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 37,
+        .species = SPECIES_PIDGEOT,
+        IVS(12),
+        },
+        {
+        .lvl = 38,
+        .species = SPECIES_GROWLITHE,
+        IVS(12),
+        },
+        {
+        .lvl = 35,
+        .species = SPECIES_EXEGGCUTE,
+        IVS(12),
+        },
+        {
+        .lvl = 35,
+        .species = SPECIES_ALAKAZAM,
+        IVS(12),
+        },
+        {
+        .lvl = 40,
+        .species = SPECIES_BLASTOISE,
+        IVS(18),
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_ROUTE22_LATE_GRASS] =
+{
+    RIVAL_LATE_INFO,
+    .partySize = 6,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 47,
+        .species = SPECIES_PIDGEOT,
+        IVS(18),
+        .moves = {MOVE_FEATHER_DANCE, MOVE_WING_ATTACK, MOVE_GUST, MOVE_QUICK_ATTACK},
+        },
+        {
+        .lvl = 45,
+        .species = SPECIES_RHYHORN,
+        IVS(18),
+        .moves = {MOVE_TAKE_DOWN, MOVE_HORN_DRILL, MOVE_ROCK_BLAST, MOVE_FURY_ATTACK},
+        },
+        {
+        .lvl = 45,
+        .species = SPECIES_GYARADOS,
+        IVS(18),
+        .moves = {MOVE_HYDRO_PUMP, MOVE_TWISTER, MOVE_LEER, MOVE_RAIN_DANCE},
+        },
+        {
+        .lvl = 45,
+        .species = SPECIES_GROWLITHE,
+        IVS(18),
+        .moves = {MOVE_FLAME_WHEEL, MOVE_TAKE_DOWN, MOVE_LEER, MOVE_AGILITY},
+        },
+        {
+        .lvl = 47,
+        .species = SPECIES_ALAKAZAM,
+        IVS(18),
+        .moves = {MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_FUTURE_SIGHT, MOVE_DISABLE},
+        },
+        {
+        .lvl = 53,
+        .species = SPECIES_VENUSAUR,
+        IVS(30),
+        .moves = {MOVE_RAZOR_LEAF, MOVE_SWEET_SCENT, MOVE_GROWTH, MOVE_SYNTHESIS},
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_ROUTE22_LATE_FIRE] =
+{
+    RIVAL_LATE_INFO,
+    .partySize = 6,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 47,
+        .species = SPECIES_PIDGEOT,
+        IVS(18),
+        .moves = {MOVE_FEATHER_DANCE, MOVE_WING_ATTACK, MOVE_GUST, MOVE_QUICK_ATTACK},
+        },
+        {
+        .lvl = 45,
+        .species = SPECIES_RHYHORN,
+        IVS(18),
+        .moves = {MOVE_TAKE_DOWN, MOVE_HORN_DRILL, MOVE_ROCK_BLAST, MOVE_FURY_ATTACK},
+        },
+        {
+        .lvl = 45,
+        .species = SPECIES_EXEGGCUTE,
+        IVS(18),
+        .moves = {MOVE_SOLAR_BEAM, MOVE_SLEEP_POWDER, MOVE_POISON_POWDER, MOVE_STUN_SPORE},
+        },
+        {
+        .lvl = 45,
+        .species = SPECIES_GYARADOS,
+        IVS(18),
+        .moves = {MOVE_HYDRO_PUMP, MOVE_TWISTER, MOVE_LEER, MOVE_RAIN_DANCE},
+        },
+        {
+        .lvl = 47,
+        .species = SPECIES_ALAKAZAM,
+        IVS(18),
+        .moves = {MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_FUTURE_SIGHT, MOVE_DISABLE},
+        },
+        {
+        .lvl = 53,
+        .species = SPECIES_CHARIZARD,
+        IVS(30),
+        .moves = {MOVE_FLAMETHROWER, MOVE_WING_ATTACK, MOVE_SLASH, MOVE_SCARY_FACE},
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_RIVAL_ROUTE22_LATE_WATER] =
+{
+    RIVAL_LATE_INFO,
+    .partySize = 6,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 47,
+        .species = SPECIES_PIDGEOT,
+        IVS(18),
+        .moves = {MOVE_FEATHER_DANCE, MOVE_WING_ATTACK, MOVE_GUST, MOVE_QUICK_ATTACK},
+        },
+        {
+        .lvl = 45,
+        .species = SPECIES_RHYHORN,
+        IVS(18),
+        .moves = {MOVE_TAKE_DOWN, MOVE_HORN_DRILL, MOVE_ROCK_BLAST, MOVE_FURY_ATTACK},
+        },
+        {
+        .lvl = 45,
+        .species = SPECIES_GROWLITHE,
+        IVS(18),
+        .moves = {MOVE_FLAME_WHEEL, MOVE_TAKE_DOWN, MOVE_LEER, MOVE_AGILITY},
+        },
+        {
+        .lvl = 45,
+        .species = SPECIES_EXEGGCUTE,
+        IVS(18),
+        .moves = {MOVE_SOLAR_BEAM, MOVE_SLEEP_POWDER, MOVE_POISON_POWDER, MOVE_STUN_SPORE},
+        },
+        {
+        .lvl = 47,
+        .species = SPECIES_ALAKAZAM,
+        IVS(18),
+        .moves = {MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_FUTURE_SIGHT, MOVE_DISABLE},
+        },
+        {
+        .lvl = 53,
+        .species = SPECIES_BLASTOISE,
+        IVS(30),
+        .moves = {MOVE_WATER_GUN, MOVE_RAIN_DANCE, MOVE_BITE, MOVE_RAPID_SPIN},
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_CHAMPION_FIRST_GRASS] =
+{
+    CHAMPION_INFO,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 59,
+        .species = SPECIES_PIDGEOT,
+        PERFECT_IVS,
+        .moves = {MOVE_AERIAL_ACE, MOVE_FEATHER_DANCE, MOVE_SAND_ATTACK, MOVE_WHIRLWIND},
+        },
+        {
+        .lvl = 57,
+        .species = SPECIES_ALAKAZAM,
+        PERFECT_IVS,
+        .moves = {MOVE_PSYCHIC, MOVE_FUTURE_SIGHT, MOVE_RECOVER, MOVE_REFLECT},
+        },
+        {
+        .lvl = 59,
+        .species = SPECIES_RHYDON,
+        PERFECT_IVS,
+        .moves = {MOVE_TAKE_DOWN, MOVE_EARTHQUAKE, MOVE_ROCK_TOMB, MOVE_SCARY_FACE},
+        },
+        {
+        .lvl = 59,
+        .species = SPECIES_GYARADOS,
+        PERFECT_IVS,
+        .moves = {MOVE_HYDRO_PUMP, MOVE_DRAGON_RAGE, MOVE_BITE, MOVE_THRASH},
+        },
+        {
+        .lvl = 61,
+        .species = SPECIES_ARCANINE,
+        PERFECT_IVS,
+        .moves = {MOVE_EXTREME_SPEED, MOVE_FLAMETHROWER, MOVE_ROAR, MOVE_BITE},
+        },
+        {
+        .lvl = 63,
+        .species = SPECIES_VENUSAUR,
+        PERFECT_IVS,
+        .moves = {MOVE_SOLAR_BEAM, MOVE_SYNTHESIS, MOVE_SUNNY_DAY, MOVE_GROWTH},
+        .heldItem = ITEM_SITRUS_BERRY,
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_CHAMPION_FIRST_FIRE] =
+{
+    CHAMPION_INFO,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 59,
+        .species = SPECIES_PIDGEOT,
+        PERFECT_IVS,
+        .moves = {MOVE_AERIAL_ACE, MOVE_FEATHER_DANCE, MOVE_SAND_ATTACK, MOVE_WHIRLWIND},
+        },
+        {
+        .lvl = 57,
+        .species = SPECIES_ALAKAZAM,
+        PERFECT_IVS,
+        .moves = {MOVE_PSYCHIC, MOVE_FUTURE_SIGHT, MOVE_RECOVER, MOVE_REFLECT},
+        },
+        {
+        .lvl = 59,
+        .species = SPECIES_RHYDON,
+        PERFECT_IVS,
+        .moves = {MOVE_TAKE_DOWN, MOVE_EARTHQUAKE, MOVE_ROCK_TOMB, MOVE_SCARY_FACE},
+        },
+        {
+        .lvl = 59,
+        .species = SPECIES_EXEGGUTOR,
+        PERFECT_IVS,
+        .moves = {MOVE_GIGA_DRAIN, MOVE_EGG_BOMB, MOVE_SLEEP_POWDER, MOVE_LIGHT_SCREEN},
+        },
+        {
+        .lvl = 61,
+        .species = SPECIES_GYARADOS,
+        PERFECT_IVS,
+        .moves = {MOVE_HYDRO_PUMP, MOVE_DRAGON_RAGE, MOVE_BITE, MOVE_THRASH},
+        },
+        {
+        .lvl = 63,
+        .species = SPECIES_CHARIZARD,
+        PERFECT_IVS,
+        .moves = {MOVE_FIRE_BLAST, MOVE_AERIAL_ACE, MOVE_SLASH, MOVE_FIRE_SPIN},
+        .heldItem = ITEM_SITRUS_BERRY,
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_CHAMPION_FIRST_WATER] =
+{
+    CHAMPION_INFO,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 59,
+        .species = SPECIES_PIDGEOT,
+        PERFECT_IVS,
+        .moves = {MOVE_AERIAL_ACE, MOVE_FEATHER_DANCE, MOVE_SAND_ATTACK, MOVE_WHIRLWIND},
+        },
+        {
+        .lvl = 57,
+        .species = SPECIES_ALAKAZAM,
+        PERFECT_IVS,
+        .moves = {MOVE_PSYCHIC, MOVE_FUTURE_SIGHT, MOVE_RECOVER, MOVE_REFLECT},
+        },
+        {
+        .lvl = 59,
+        .species = SPECIES_RHYDON,
+        PERFECT_IVS,
+        .moves = {MOVE_TAKE_DOWN, MOVE_EARTHQUAKE, MOVE_ROCK_TOMB, MOVE_SCARY_FACE},
+        },
+        {
+        .lvl = 59,
+        .species = SPECIES_ARCANINE,
+        PERFECT_IVS,
+        .moves = {MOVE_EXTREME_SPEED, MOVE_FLAMETHROWER, MOVE_ROAR, MOVE_BITE},
+        },
+        {
+        .lvl = 61,
+        .species = SPECIES_EXEGGUTOR,
+        PERFECT_IVS,
+        .moves = {MOVE_GIGA_DRAIN, MOVE_EGG_BOMB, MOVE_SLEEP_POWDER, MOVE_LIGHT_SCREEN},
+        },
+        {
+        .lvl = 63,
+        .species = SPECIES_BLASTOISE,
+        PERFECT_IVS,
+        .moves = {MOVE_HYDRO_PUMP, MOVE_RAIN_DANCE, MOVE_SKULL_BASH, MOVE_BITE},
+        .heldItem = ITEM_SITRUS_BERRY,
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_CHAMPION_REMATCH_GRASS] =
+{
+    CHAMPION_INFO,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 72,
+        .species = SPECIES_HERACROSS,
+        PERFECT_IVS,
+        .moves = {MOVE_MEGAHORN, MOVE_EARTHQUAKE, MOVE_COUNTER, MOVE_ROCK_TOMB},
+        },
+        {
+        .lvl = 73,
+        .species = SPECIES_ALAKAZAM,
+        PERFECT_IVS,
+        .moves = {MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_CALM_MIND, MOVE_REFLECT},
+        },
+        {
+        .lvl = 72,
+        .species = SPECIES_TYRANITAR,
+        PERFECT_IVS,
+        .moves = {MOVE_CRUNCH, MOVE_EARTHQUAKE, MOVE_THUNDERBOLT, MOVE_AERIAL_ACE},
+        },
+        {
+        .lvl = 73,
+        .species = SPECIES_GYARADOS,
+        PERFECT_IVS,
+        .moves = {MOVE_HYDRO_PUMP, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE, MOVE_HYPER_BEAM},
+        },
+        {
+        .lvl = 73,
+        .species = SPECIES_ARCANINE,
+        PERFECT_IVS,
+        .moves = {MOVE_EXTREME_SPEED, MOVE_OVERHEAT, MOVE_AERIAL_ACE, MOVE_IRON_TAIL},
+        },
+        {
+        .lvl = 75,
+        .species = SPECIES_VENUSAUR,
+        PERFECT_IVS,
+        .moves = {MOVE_SOLAR_BEAM, MOVE_SLUDGE_BOMB, MOVE_EARTHQUAKE, MOVE_SUNNY_DAY},
+        .heldItem = ITEM_SITRUS_BERRY,
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_CHAMPION_REMATCH_FIRE] =
+{
+    CHAMPION_INFO,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 72,
+        .species = SPECIES_HERACROSS,
+        PERFECT_IVS,
+        .moves = {MOVE_MEGAHORN, MOVE_EARTHQUAKE, MOVE_COUNTER, MOVE_ROCK_TOMB},
+        },
+        {
+        .lvl = 73,
+        .species = SPECIES_ALAKAZAM,
+        PERFECT_IVS,
+        .moves = {MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_CALM_MIND, MOVE_REFLECT},
+        },
+        {
+        .lvl = 72,
+        .species = SPECIES_TYRANITAR,
+        PERFECT_IVS,
+        .moves = {MOVE_CRUNCH, MOVE_EARTHQUAKE, MOVE_THUNDERBOLT, MOVE_AERIAL_ACE},
+        },
+        {
+        .lvl = 73,
+        .species = SPECIES_EXEGGUTOR,
+        PERFECT_IVS,
+        .moves = {MOVE_GIGA_DRAIN, MOVE_PSYCHIC, MOVE_SLEEP_POWDER, MOVE_LIGHT_SCREEN},
+        },
+        {
+        .lvl = 73,
+        .species = SPECIES_GYARADOS,
+        PERFECT_IVS,
+        .moves = {MOVE_HYDRO_PUMP, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE, MOVE_HYPER_BEAM},
+        },
+        {
+        .lvl = 75,
+        .species = SPECIES_CHARIZARD,
+        PERFECT_IVS,
+        .moves = {MOVE_FIRE_BLAST, MOVE_DRAGON_CLAW, MOVE_AERIAL_ACE, MOVE_EARTHQUAKE},
+        .heldItem = ITEM_SITRUS_BERRY,
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_CHAMPION_REMATCH_WATER] =
+{
+    CHAMPION_INFO,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 72,
+        .species = SPECIES_HERACROSS,
+        PERFECT_IVS,
+        .moves = {MOVE_MEGAHORN, MOVE_EARTHQUAKE, MOVE_COUNTER, MOVE_ROCK_TOMB},
+        },
+        {
+        .lvl = 73,
+        .species = SPECIES_ALAKAZAM,
+        PERFECT_IVS,
+        .moves = {MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_CALM_MIND, MOVE_REFLECT},
+        },
+        {
+        .lvl = 72,
+        .species = SPECIES_TYRANITAR,
+        PERFECT_IVS,
+        .moves = {MOVE_CRUNCH, MOVE_EARTHQUAKE, MOVE_THUNDERBOLT, MOVE_AERIAL_ACE},
+        },
+        {
+        .lvl = 73,
+        .species = SPECIES_ARCANINE,
+        PERFECT_IVS,
+        .moves = {MOVE_EXTREME_SPEED, MOVE_OVERHEAT, MOVE_AERIAL_ACE, MOVE_IRON_TAIL},
+        },
+        {
+        .lvl = 73,
+        .species = SPECIES_EXEGGUTOR,
+        PERFECT_IVS,
+        .moves = {MOVE_GIGA_DRAIN, MOVE_PSYCHIC, MOVE_SLEEP_POWDER, MOVE_LIGHT_SCREEN},
+        },
+        {
+        .lvl = 75,
+        .species = SPECIES_BLASTOISE,
+        PERFECT_IVS,
+        .moves = {MOVE_HYDRO_PUMP, MOVE_ICE_BEAM, MOVE_EARTHQUAKE, MOVE_RAIN_DANCE},
+        .heldItem = ITEM_SITRUS_BERRY,
+        },
+    },
+},
+
+// Regular trainers
 #define ROCKER_INFO                 \
     TRAINER_CLASS_PIC(ROCKER_FRLG), \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
@@ -17969,7 +18905,7 @@ UNUSED_TRAINER(15),
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER
 
 #define GAMBLER_INFO                 \
-    TRAINER_CLASS_PIC(GAMBLER_FRLG), \
+    TRAINER_CLASS_PIC(GAMER_FRLG), \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
 
 #define TAMER_INFO                 \
@@ -17986,41 +18922,80 @@ UNUSED_TRAINER(15),
     .gender = TRAINER_GENDER_FEMALE, \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
 
-[DIFFICULTY_NORMAL][TRAINER_NONE] =
-{
-    .trainerName = _("PH"),
-    .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
-    .trainerPic = TRAINER_PIC_FRONT_HIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .trainerBackPic = TRAINER_PIC_FRONT_HIKER_FRLG,
-    .partySize = 0,
-    .party = (const struct TrainerMon[])
-    {
-    },
-},
+#define YOUNGSTER_FRLG_INFO            \
+    TRAINER_CLASS_PIC(YOUNGSTER_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
+
+#define GENTLEMAN_FRLG_INFO            \
+    TRAINER_CLASS_PIC(GENTLEMAN_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH
+
+#define HIKER_FRLG_INFO                 \
+    TRAINER_CLASS_PIC(HIKER_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER
+
+#define BUG_CATCHER_FRLG_INFO            \
+    TRAINER_CLASS_PIC(BUG_CATCHER_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
+
+#define SAILOR_FRLG_INFO            \
+    TRAINER_CLASS_PIC(SAILOR_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
+
+#define CAMPER_FRLG_INFO            \
+    TRAINER_CLASS_PIC(CAMPER_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
+
+#define POKE_MANIAC_FRLG_INFO           \
+    TRAINER_CLASS_PIC(POKEMANIAC_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
+
+#define BLACK_BELT_FRLG_INFO            \
+    TRAINER_CLASS_PIC(BLACK_BELT_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE
+
+#define BIRD_KEEPER_FRLG_INFO            \
+    TRAINER_CLASS_PIC(BIRD_KEEPER_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL
+
+#define FISHERMAN_FRLG_INFO            \
+    TRAINER_CLASS_PIC(FISHERMAN_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER
+
+#define RUIN_MANIAC_FRLG_INFO            \
+    TRAINER_CLASS_PIC(RUIN_MANIAC_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER
+
+#define LASS_FRLG_INFO               \
+    TRAINER_CLASS_PIC(LASS_FRLG),    \
+    .gender = TRAINER_GENDER_FEMALE, \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
+
+#define BEAUTY_FRLG_INFO             \
+    TRAINER_CLASS_PIC(BEAUTY_FRLG),  \
+    .gender = TRAINER_GENDER_FEMALE, \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
+
+#define PICNICKER_FRLG_INFO            \
+    TRAINER_CLASS_PIC(PICNICKER_FRLG), \
+    .gender = TRAINER_GENDER_FEMALE,   \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL
 
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_BEN] =
 {
     .trainerName = _("Ben"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 11,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 11,
         .species = SPECIES_EKANS,
-        IVS(0),
         },
     },
 },
@@ -18028,19 +19003,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_CALVIN] =
 {
     .trainerName = _("Calvin"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 14,
         .species = SPECIES_SPEAROW,
-        IVS(0),
         },
     },
 },
@@ -18048,29 +19018,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_JOSH] =
 {
     .trainerName = _("Josh"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 10,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 10,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 10,
         .species = SPECIES_ZUBAT,
-        IVS(0),
         },
     },
 },
@@ -18078,24 +19041,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_TIMMY] =
 {
     .trainerName = _("Timmy"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 14,
         .species = SPECIES_SANDSHREW,
-        IVS(0),
         },
         {
         .lvl = 14,
         .species = SPECIES_EKANS,
-        IVS(0),
         },
     },
 },
@@ -18103,24 +19060,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_JOEY] =
 {
     .trainerName = _("Joey"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 15,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 15,
         .species = SPECIES_SPEAROW,
-        IVS(0),
         },
     },
 },
@@ -18128,19 +19079,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_DAN] =
 {
     .trainerName = _("Dan"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 17,
         .species = SPECIES_SLOWPOKE,
-        IVS(0),
         },
     },
 },
@@ -18148,24 +19094,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_CHAD] =
 {
     .trainerName = _("Chad"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 14,
         .species = SPECIES_EKANS,
-        IVS(0),
         },
         {
         .lvl = 14,
         .species = SPECIES_SANDSHREW,
-        IVS(0),
         },
     },
 },
@@ -18173,19 +19113,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_TYLER] =
 {
     .trainerName = _("Tyler"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 21,
         .species = SPECIES_NIDORAN_M,
-        IVS(0),
         },
     },
 },
@@ -18193,19 +19128,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_EDDIE] =
 {
     .trainerName = _("Eddie"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 21,
         .species = SPECIES_EKANS,
-        IVS(0),
         },
     },
 },
@@ -18213,24 +19143,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_DILLON] =
 {
     .trainerName = _("Dillon"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 19,
         .species = SPECIES_SANDSHREW,
-        IVS(0),
         },
         {
         .lvl = 19,
         .species = SPECIES_ZUBAT,
-        IVS(0),
         },
     },
 },
@@ -18238,29 +19162,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_YASU] =
 {
     .trainerName = _("Yasu"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 17,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 17,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 17,
         .species = SPECIES_RATICATE,
-        IVS(0),
         },
     },
 },
@@ -18268,24 +19185,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_DAVE] =
 {
     .trainerName = _("Dave"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 18,
         .species = SPECIES_NIDORAN_M,
-        IVS(0),
         },
         {
         .lvl = 18,
         .species = SPECIES_NIDORINO,
-        IVS(0),
         },
     },
 },
@@ -18293,12 +19204,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_BEN_2] =
 {
     .trainerName = _("Ben"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -18318,24 +19225,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BUG_CATCHER_RICK] =
 {
     .trainerName = _("Rick"),
-    .trainerClass = TRAINER_CLASS_BUG_CATCHER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BUG_CATCHER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 6,
         .species = SPECIES_WEEDLE,
-        IVS(0),
         },
         {
         .lvl = 6,
         .species = SPECIES_CATERPIE,
-        IVS(0),
         },
     },
 },
@@ -18343,29 +19244,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BUG_CATCHER_DOUG] =
 {
     .trainerName = _("Doug"),
-    .trainerClass = TRAINER_CLASS_BUG_CATCHER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BUG_CATCHER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 7,
         .species = SPECIES_WEEDLE,
-        IVS(0),
         },
         {
         .lvl = 7,
         .species = SPECIES_KAKUNA,
-        IVS(0),
         },
         {
         .lvl = 7,
         .species = SPECIES_WEEDLE,
-        IVS(0),
         },
     },
 },
@@ -18373,19 +19267,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BUG_CATCHER_SAMMY] =
 {
     .trainerName = _("Sammy"),
-    .trainerClass = TRAINER_CLASS_BUG_CATCHER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BUG_CATCHER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 9,
         .species = SPECIES_WEEDLE,
-        IVS(0),
         },
     },
 },
@@ -18393,29 +19282,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BUG_CATCHER_COLTON] =
 {
     .trainerName = _("Colton"),
-    .trainerClass = TRAINER_CLASS_BUG_CATCHER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BUG_CATCHER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 10,
         .species = SPECIES_CATERPIE,
-        IVS(0),
         },
         {
         .lvl = 10,
         .species = SPECIES_WEEDLE,
-        IVS(0),
         },
         {
         .lvl = 10,
         .species = SPECIES_CATERPIE,
-        IVS(0),
         },
     },
 },
@@ -18423,34 +19305,26 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BUG_CATCHER_GREG] =
 {
     .trainerName = _("Greg"),
-    .trainerClass = TRAINER_CLASS_BUG_CATCHER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BUG_CATCHER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 9,
         .species = SPECIES_WEEDLE,
-        IVS(0),
         },
         {
         .lvl = 9,
         .species = SPECIES_KAKUNA,
-        IVS(0),
         },
         {
         .lvl = 9,
         .species = SPECIES_CATERPIE,
-        IVS(0),
         },
         {
         .lvl = 9,
         .species = SPECIES_METAPOD,
-        IVS(0),
         },
     },
 },
@@ -18458,24 +19332,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BUG_CATCHER_JAMES] =
 {
     .trainerName = _("James"),
-    .trainerClass = TRAINER_CLASS_BUG_CATCHER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BUG_CATCHER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 11,
         .species = SPECIES_CATERPIE,
-        IVS(0),
         },
         {
         .lvl = 11,
         .species = SPECIES_METAPOD,
-        IVS(0),
         },
     },
 },
@@ -18483,24 +19351,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BUG_CATCHER_KENT] =
 {
     .trainerName = _("Kent"),
-    .trainerClass = TRAINER_CLASS_BUG_CATCHER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BUG_CATCHER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 11,
         .species = SPECIES_WEEDLE,
-        IVS(0),
         },
         {
         .lvl = 11,
         .species = SPECIES_KAKUNA,
-        IVS(0),
         },
     },
 },
@@ -18508,29 +19370,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BUG_CATCHER_ROBBY] =
 {
     .trainerName = _("Robby"),
-    .trainerClass = TRAINER_CLASS_BUG_CATCHER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BUG_CATCHER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 10,
         .species = SPECIES_CATERPIE,
-        IVS(0),
         },
         {
         .lvl = 10,
         .species = SPECIES_METAPOD,
-        IVS(0),
         },
         {
         .lvl = 10,
         .species = SPECIES_CATERPIE,
-        IVS(0),
         },
     },
 },
@@ -18538,34 +19393,26 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BUG_CATCHER_CALE] =
 {
     .trainerName = _("Cale"),
-    .trainerClass = TRAINER_CLASS_BUG_CATCHER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BUG_CATCHER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 10,
         .species = SPECIES_CATERPIE,
-        IVS(0),
         },
         {
         .lvl = 10,
         .species = SPECIES_WEEDLE,
-        IVS(0),
         },
         {
         .lvl = 10,
         .species = SPECIES_METAPOD,
-        IVS(0),
         },
         {
         .lvl = 10,
         .species = SPECIES_KAKUNA,
-        IVS(0),
         },
     },
 },
@@ -18573,29 +19420,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BUG_CATCHER_KEIGO] =
 {
     .trainerName = _("Keigo"),
-    .trainerClass = TRAINER_CLASS_BUG_CATCHER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BUG_CATCHER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 16,
         .species = SPECIES_WEEDLE,
-        IVS(0),
         },
         {
         .lvl = 16,
         .species = SPECIES_CATERPIE,
-        IVS(0),
         },
         {
         .lvl = 16,
         .species = SPECIES_WEEDLE,
-        IVS(0),
         },
     },
 },
@@ -18603,19 +19443,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BUG_CATCHER_ELIJAH] =
 {
     .trainerName = _("Elijah"),
-    .trainerClass = TRAINER_CLASS_BUG_CATCHER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BUG_CATCHER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 20,
         .species = SPECIES_BUTTERFREE,
-        IVS(0),
         },
     },
 },
@@ -18623,24 +19458,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BUG_CATCHER_BRENT] =
 {
     .trainerName = _("Brent"),
-    .trainerClass = TRAINER_CLASS_BUG_CATCHER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BUG_CATCHER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 19,
         .species = SPECIES_BEEDRILL,
-        IVS(0),
         },
         {
         .lvl = 19,
         .species = SPECIES_BEEDRILL,
-        IVS(0),
         },
     },
 },
@@ -18648,29 +19477,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BUG_CATCHER_CONNER] =
 {
     .trainerName = _("Conner"),
-    .trainerClass = TRAINER_CLASS_BUG_CATCHER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BUG_CATCHER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 20,
         .species = SPECIES_CATERPIE,
-        IVS(0),
         },
         {
         .lvl = 20,
         .species = SPECIES_WEEDLE,
-        IVS(0),
         },
         {
         .lvl = 20,
         .species = SPECIES_VENONAT,
-        IVS(0),
         },
     },
 },
@@ -18678,24 +19500,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_LASS_JANICE] =
 {
     .trainerName = _("Janice"),
-    .trainerClass = TRAINER_CLASS_LASS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LASS_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    LASS_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LASS_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 9,
         .species = SPECIES_PIDGEY,
-        IVS(0),
         },
         {
         .lvl = 9,
         .species = SPECIES_PIDGEY,
-        IVS(0),
         },
     },
 },
@@ -18703,24 +19519,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_LASS_SALLY] =
 {
     .trainerName = _("Sally"),
-    .trainerClass = TRAINER_CLASS_LASS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LASS_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    LASS_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LASS_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 10,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 10,
         .species = SPECIES_NIDORAN_F,
-        IVS(0),
         },
     },
 },
@@ -18728,19 +19538,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_LASS_ROBIN] =
 {
     .trainerName = _("Robin"),
-    .trainerClass = TRAINER_CLASS_LASS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LASS_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    LASS_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LASS_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 14,
         .species = SPECIES_JIGGLYPUFF,
-        IVS(0),
         },
     },
 },
@@ -18748,29 +19553,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_LASS_CRISSY] =
 {
     .trainerName = _("Crissy"),
-    .trainerClass = TRAINER_CLASS_LASS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LASS_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    LASS_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LASS_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 31,
         .species = SPECIES_PARAS,
-        IVS(0),
         },
         {
         .lvl = 31,
         .species = SPECIES_PARAS,
-        IVS(0),
         },
         {
         .lvl = 31,
         .species = SPECIES_PARASECT,
-        IVS(0),
         },
     },
 },
@@ -18778,24 +19576,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_LASS_MIRIAM] =
 {
     .trainerName = _("Miriam"),
-    .trainerClass = TRAINER_CLASS_LASS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LASS_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    LASS_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LASS_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 11,
         .species = SPECIES_ODDISH,
-        IVS(0),
         },
         {
         .lvl = 11,
         .species = SPECIES_BELLSPROUT,
-        IVS(0),
         },
     },
 },
@@ -18803,19 +19595,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_LASS_IRIS] =
 {
     .trainerName = _("Iris"),
-    .trainerClass = TRAINER_CLASS_LASS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LASS_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    LASS_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LASS_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 14,
         .species = SPECIES_CLEFAIRY,
-        IVS(0),
         },
     },
 },
@@ -18823,24 +19610,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_LASS_RELI] =
 {
     .trainerName = _("Reli"),
-    .trainerClass = TRAINER_CLASS_LASS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LASS_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    LASS_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LASS_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 16,
         .species = SPECIES_NIDORAN_M,
-        IVS(0),
         },
         {
         .lvl = 16,
         .species = SPECIES_NIDORAN_F,
-        IVS(0),
         },
     },
 },
@@ -18848,29 +19629,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_LASS_ALI] =
 {
     .trainerName = _("Ali"),
-    .trainerClass = TRAINER_CLASS_LASS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LASS_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    LASS_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LASS_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 12,
         .species = SPECIES_PIDGEY,
-        IVS(0),
         },
         {
         .lvl = 12,
         .species = SPECIES_ODDISH,
-        IVS(0),
         },
         {
         .lvl = 12,
         .species = SPECIES_BELLSPROUT,
-        IVS(0),
         },
     },
 },
@@ -18878,29 +19652,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_LASS_HALEY] =
 {
     .trainerName = _("Haley"),
-    .trainerClass = TRAINER_CLASS_LASS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LASS_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    LASS_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LASS_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 13,
         .species = SPECIES_ODDISH,
-        IVS(0),
         },
         {
         .lvl = 13,
         .species = SPECIES_PIDGEY,
-        IVS(0),
         },
         {
         .lvl = 13,
         .species = SPECIES_ODDISH,
-        IVS(0),
         },
     },
 },
@@ -18908,24 +19675,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_LASS_ANN] =
 {
     .trainerName = _("Ann"),
-    .trainerClass = TRAINER_CLASS_LASS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LASS_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    LASS_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LASS_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 18,
         .species = SPECIES_PIDGEY,
-        IVS(0),
         },
         {
         .lvl = 18,
         .species = SPECIES_NIDORAN_F,
-        IVS(0),
         },
     },
 },
@@ -18933,24 +19694,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_LASS_DAWN] =
 {
     .trainerName = _("Dawn"),
-    .trainerClass = TRAINER_CLASS_LASS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LASS_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    LASS_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LASS_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 18,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 18,
         .species = SPECIES_PIKACHU,
-        IVS(0),
         },
     },
 },
@@ -18958,24 +19713,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_LASS_PAIGE] =
 {
     .trainerName = _("Paige"),
-    .trainerClass = TRAINER_CLASS_LASS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LASS_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    LASS_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LASS_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 23,
         .species = SPECIES_NIDORAN_F,
-        IVS(0),
         },
         {
         .lvl = 23,
         .species = SPECIES_NIDORINA,
-        IVS(0),
         },
     },
 },
@@ -18983,29 +19732,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_LASS_ANDREA] =
 {
     .trainerName = _("Andrea"),
-    .trainerClass = TRAINER_CLASS_LASS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LASS_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    LASS_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LASS_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 24,
         .species = SPECIES_MEOWTH,
-        IVS(0),
         },
         {
         .lvl = 24,
         .species = SPECIES_MEOWTH,
-        IVS(0),
         },
         {
         .lvl = 24,
         .species = SPECIES_MEOWTH,
-        IVS(0),
         },
     },
 },
@@ -19013,39 +19755,30 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_LASS_MEGAN] =
 {
     .trainerName = _("Megan"),
-    .trainerClass = TRAINER_CLASS_LASS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LASS_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    LASS_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LASS_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 19,
         .species = SPECIES_PIDGEY,
-        IVS(0),
         },
         {
         .lvl = 19,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 19,
         .species = SPECIES_NIDORAN_M,
-        IVS(0),
         },
         {
         .lvl = 19,
         .species = SPECIES_MEOWTH,
-        IVS(0),
         },
         {
         .lvl = 19,
         .species = SPECIES_PIKACHU,
-        IVS(0),
         },
     },
 },
@@ -19053,24 +19786,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_LASS_JULIA] =
 {
     .trainerName = _("Julia"),
-    .trainerClass = TRAINER_CLASS_LASS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LASS_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    LASS_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LASS_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 22,
         .species = SPECIES_CLEFAIRY,
-        IVS(0),
         },
         {
         .lvl = 22,
         .species = SPECIES_CLEFAIRY,
-        IVS(0),
         },
     },
 },
@@ -19078,24 +19805,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_LASS_KAY] =
 {
     .trainerName = _("Kay"),
-    .trainerClass = TRAINER_CLASS_LASS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LASS_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    LASS_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LASS_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 23,
         .species = SPECIES_BELLSPROUT,
-        IVS(0),
         },
         {
         .lvl = 23,
         .species = SPECIES_WEEPINBELL,
-        IVS(0),
         },
     },
 },
@@ -19103,24 +19824,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_LASS_LISA] =
 {
     .trainerName = _("Lisa"),
-    .trainerClass = TRAINER_CLASS_LASS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LASS_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    LASS_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LASS_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 23,
         .species = SPECIES_ODDISH,
-        IVS(0),
         },
         {
         .lvl = 23,
         .species = SPECIES_GLOOM,
-        IVS(0),
         },
     },
 },
@@ -19128,24 +19843,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SAILOR_EDMOND] =
 {
     .trainerName = _("Edmond"),
-    .trainerClass = TRAINER_CLASS_SAILOR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SAILOR_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SAILOR_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SAILOR_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 18,
         .species = SPECIES_MACHOP,
-        IVS(0),
         },
         {
         .lvl = 18,
         .species = SPECIES_SHELLDER,
-        IVS(0),
         },
     },
 },
@@ -19153,24 +19862,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SAILOR_TREVOR] =
 {
     .trainerName = _("Trevor"),
-    .trainerClass = TRAINER_CLASS_SAILOR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SAILOR_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SAILOR_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SAILOR_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 17,
         .species = SPECIES_MACHOP,
-        IVS(0),
         },
         {
         .lvl = 17,
         .species = SPECIES_TENTACOOL,
-        IVS(0),
         },
     },
 },
@@ -19178,19 +19881,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SAILOR_LEONARD] =
 {
     .trainerName = _("Leonard"),
-    .trainerClass = TRAINER_CLASS_SAILOR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SAILOR_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SAILOR_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SAILOR_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 21,
         .species = SPECIES_SHELLDER,
-        IVS(0),
         },
     },
 },
@@ -19198,29 +19896,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SAILOR_DUNCAN] =
 {
     .trainerName = _("Duncan"),
-    .trainerClass = TRAINER_CLASS_SAILOR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SAILOR_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SAILOR_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SAILOR_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 17,
         .species = SPECIES_HORSEA,
-        IVS(0),
         },
         {
         .lvl = 17,
         .species = SPECIES_SHELLDER,
-        IVS(0),
         },
         {
         .lvl = 17,
         .species = SPECIES_TENTACOOL,
-        IVS(0),
         },
     },
 },
@@ -19228,24 +19919,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SAILOR_HUEY] =
 {
     .trainerName = _("Huey"),
-    .trainerClass = TRAINER_CLASS_SAILOR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SAILOR_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SAILOR_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SAILOR_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 18,
         .species = SPECIES_TENTACOOL,
-        IVS(0),
         },
         {
         .lvl = 18,
         .species = SPECIES_STARYU,
-        IVS(0),
         },
     },
 },
@@ -19253,29 +19938,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SAILOR_DYLAN] =
 {
     .trainerName = _("Dylan"),
-    .trainerClass = TRAINER_CLASS_SAILOR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SAILOR_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SAILOR_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SAILOR_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 17,
         .species = SPECIES_HORSEA,
-        IVS(0),
         },
         {
         .lvl = 17,
         .species = SPECIES_HORSEA,
-        IVS(0),
         },
         {
         .lvl = 17,
         .species = SPECIES_HORSEA,
-        IVS(0),
         },
     },
 },
@@ -19283,19 +19961,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SAILOR_PHILLIP] =
 {
     .trainerName = _("Phillip"),
-    .trainerClass = TRAINER_CLASS_SAILOR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SAILOR_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SAILOR_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SAILOR_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 20,
         .species = SPECIES_MACHOP,
-        IVS(0),
         },
     },
 },
@@ -19303,24 +19976,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SAILOR_DWAYNE] =
 {
     .trainerName = _("Dwayne"),
-    .trainerClass = TRAINER_CLASS_SAILOR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SAILOR_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SAILOR_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SAILOR_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 21,
         .species = SPECIES_PIKACHU,
-        IVS(0),
         },
         {
         .lvl = 21,
         .species = SPECIES_PIKACHU,
-        IVS(0),
         },
     },
 },
@@ -19328,25 +19995,19 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CAMPER_LIAM] =
 {
     .trainerName = _("Liam"),
-    .trainerClass = TRAINER_CLASS_CAMPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CAMPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 10,
         .species = SPECIES_GEODUDE,
-        IVS(0),
         .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_NONE, MOVE_NONE},
         },
         {
         .lvl = 11,
         .species = SPECIES_SANDSHREW,
-        IVS(0),
         .moves = {MOVE_SCRATCH, MOVE_DEFENSE_CURL, MOVE_SAND_ATTACK, MOVE_NONE},
         },
     },
@@ -19355,24 +20016,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CAMPER_SHANE] =
 {
     .trainerName = _("Shane"),
-    .trainerClass = TRAINER_CLASS_CAMPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CAMPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 14,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 14,
         .species = SPECIES_EKANS,
-        IVS(0),
         },
     },
 },
@@ -19380,19 +20035,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CAMPER_ETHAN] =
 {
     .trainerName = _("Ethan"),
-    .trainerClass = TRAINER_CLASS_CAMPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CAMPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 18,
         .species = SPECIES_MANKEY,
-        IVS(0),
         },
     },
 },
@@ -19400,19 +20050,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CAMPER_RICKY] =
 {
     .trainerName = _("Ricky"),
-    .trainerClass = TRAINER_CLASS_CAMPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CAMPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 20,
         .species = SPECIES_SQUIRTLE,
-        IVS(0),
         },
     },
 },
@@ -19420,24 +20065,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CAMPER_JEFF] =
 {
     .trainerName = _("Jeff"),
-    .trainerClass = TRAINER_CLASS_CAMPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CAMPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 16,
         .species = SPECIES_SPEAROW,
-        IVS(0),
         },
         {
         .lvl = 16,
         .species = SPECIES_RATICATE,
-        IVS(0),
         },
     },
 },
@@ -19445,24 +20084,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CAMPER_CHRIS] =
 {
     .trainerName = _("Chris"),
-    .trainerClass = TRAINER_CLASS_CAMPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CAMPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 21,
         .species = SPECIES_GROWLITHE,
-        IVS(0),
         },
         {
         .lvl = 21,
         .species = SPECIES_CHARMANDER,
-        IVS(0),
         },
     },
 },
@@ -19470,34 +20103,26 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CAMPER_DREW] =
 {
     .trainerName = _("Drew"),
-    .trainerClass = TRAINER_CLASS_CAMPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CAMPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 19,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 19,
         .species = SPECIES_SANDSHREW,
-        IVS(0),
         },
         {
         .lvl = 19,
         .species = SPECIES_EKANS,
-        IVS(0),
         },
         {
         .lvl = 19,
         .species = SPECIES_SANDSHREW,
-        IVS(0),
         },
     },
 },
@@ -19505,19 +20130,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_DIANA] =
 {
     .trainerName = _("Diana"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 19,
         .species = SPECIES_GOLDEEN,
-        IVS(0),
         },
     },
 },
@@ -19525,24 +20145,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_NANCY] =
 {
     .trainerName = _("Nancy"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 16,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 16,
         .species = SPECIES_PIKACHU,
-        IVS(0),
         },
     },
 },
@@ -19550,29 +20164,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_ISABELLE] =
 {
     .trainerName = _("Isabelle"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 16,
         .species = SPECIES_PIDGEY,
-        IVS(0),
         },
         {
         .lvl = 16,
         .species = SPECIES_PIDGEY,
-        IVS(0),
         },
         {
         .lvl = 16,
         .species = SPECIES_PIDGEY,
-        IVS(0),
         },
     },
 },
@@ -19580,24 +20187,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_KELSEY] =
 {
     .trainerName = _("Kelsey"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 15,
         .species = SPECIES_NIDORAN_M,
-        IVS(0),
         },
         {
         .lvl = 15,
         .species = SPECIES_NIDORAN_F,
-        IVS(0),
         },
     },
 },
@@ -19605,34 +20206,26 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_ALICIA] =
 {
     .trainerName = _("Alicia"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 18,
         .species = SPECIES_ODDISH,
-        IVS(0),
         },
         {
         .lvl = 18,
         .species = SPECIES_BELLSPROUT,
-        IVS(0),
         },
         {
         .lvl = 18,
         .species = SPECIES_ODDISH,
-        IVS(0),
         },
         {
         .lvl = 18,
         .species = SPECIES_BELLSPROUT,
-        IVS(0),
         },
     },
 },
@@ -19640,19 +20233,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_CAITLIN] =
 {
     .trainerName = _("Caitlin"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 23,
         .species = SPECIES_MEOWTH,
-        IVS(0),
         },
     },
 },
@@ -19660,24 +20248,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_HEIDI] =
 {
     .trainerName = _("Heidi"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 20,
         .species = SPECIES_PIKACHU,
-        IVS(0),
         },
         {
         .lvl = 20,
         .species = SPECIES_CLEFAIRY,
-        IVS(0),
         },
     },
 },
@@ -19685,24 +20267,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_CAROL] =
 {
     .trainerName = _("Carol"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 21,
         .species = SPECIES_PIDGEY,
-        IVS(0),
         },
         {
         .lvl = 21,
         .species = SPECIES_PIDGEOTTO,
-        IVS(0),
         },
     },
 },
@@ -19710,29 +20286,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_SOFIA] =
 {
     .trainerName = _("Sofia"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 21,
         .species = SPECIES_JIGGLYPUFF,
-        IVS(0),
         },
         {
         .lvl = 21,
         .species = SPECIES_PIDGEY,
-        IVS(0),
         },
         {
         .lvl = 21,
         .species = SPECIES_MEOWTH,
-        IVS(0),
         },
     },
 },
@@ -19740,24 +20309,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_MARTHA] =
 {
     .trainerName = _("Martha"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 22,
         .species = SPECIES_ODDISH,
-        IVS(0),
         },
         {
         .lvl = 22,
         .species = SPECIES_BULBASAUR,
-        IVS(0),
         },
     },
 },
@@ -19765,24 +20328,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_TINA] =
 {
     .trainerName = _("Tina"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 24,
         .species = SPECIES_BULBASAUR,
-        IVS(0),
         },
         {
         .lvl = 24,
         .species = SPECIES_IVYSAUR,
-        IVS(0),
         },
     },
 },
@@ -19790,39 +20347,30 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_HANNAH] =
 {
     .trainerName = _("Hannah"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 24,
         .species = SPECIES_PIDGEY,
-        IVS(0),
         },
         {
         .lvl = 24,
         .species = SPECIES_MEOWTH,
-        IVS(0),
         },
         {
         .lvl = 24,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 24,
         .species = SPECIES_PIKACHU,
-        IVS(0),
         },
         {
         .lvl = 24,
         .species = SPECIES_MEOWTH,
-        IVS(0),
         },
     },
 },
@@ -19830,12 +20378,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_POKEMANIAC_MARK] =
 {
     .trainerName = _("Mark"),
-    .trainerClass = TRAINER_CLASS_POKEMANIAC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_POKEMANIAC_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    POKE_MANIAC_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_POKEMANIAC_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -19855,12 +20399,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_POKEMANIAC_HERMAN] =
 {
     .trainerName = _("Herman"),
-    .trainerClass = TRAINER_CLASS_POKEMANIAC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_POKEMANIAC_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    POKE_MANIAC_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_POKEMANIAC_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -19880,12 +20420,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_POKEMANIAC_COOPER] =
 {
     .trainerName = _("Cooper"),
-    .trainerClass = TRAINER_CLASS_POKEMANIAC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_POKEMANIAC_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    POKE_MANIAC_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_POKEMANIAC_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -19910,12 +20446,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_POKEMANIAC_STEVE] =
 {
     .trainerName = _("Steve"),
-    .trainerClass = TRAINER_CLASS_POKEMANIAC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_POKEMANIAC_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    POKE_MANIAC_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_POKEMANIAC_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -19935,12 +20467,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_POKEMANIAC_WINSTON] =
 {
     .trainerName = _("Winston"),
-    .trainerClass = TRAINER_CLASS_POKEMANIAC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_POKEMANIAC_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    POKE_MANIAC_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_POKEMANIAC_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
@@ -19955,12 +20483,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_POKEMANIAC_DAWSON] =
 {
     .trainerName = _("Dawson"),
-    .trainerClass = TRAINER_CLASS_POKEMANIAC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_POKEMANIAC_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    POKE_MANIAC_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_POKEMANIAC_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -19985,12 +20509,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_POKEMANIAC_ASHTON] =
 {
     .trainerName = _("Ashton"),
-    .trainerClass = TRAINER_CLASS_POKEMANIAC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_POKEMANIAC_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    POKE_MANIAC_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_POKEMANIAC_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -20010,24 +20530,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SUPER_NERD_JOVAN] =
 {
     .trainerName = _("Jovan"),
-    .trainerClass = TRAINER_CLASS_SUPER_NERD_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SUPER_NERD_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SUPER_NERD_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SUPER_NERD_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 11,
         .species = SPECIES_MAGNEMITE,
-        IVS(0),
         },
         {
         .lvl = 11,
         .species = SPECIES_VOLTORB,
-        IVS(0),
         },
     },
 },
@@ -20035,29 +20549,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SUPER_NERD_MIGUEL] =
 {
     .trainerName = _("Miguel"),
-    .trainerClass = TRAINER_CLASS_SUPER_NERD_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SUPER_NERD_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SUPER_NERD_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SUPER_NERD_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 12,
         .species = SPECIES_GRIMER,
-        IVS(0),
         },
         {
         .lvl = 12,
         .species = SPECIES_VOLTORB,
-        IVS(0),
         },
         {
         .lvl = 12,
         .species = SPECIES_KOFFING,
-        IVS(0),
         },
     },
 },
@@ -20065,37 +20572,29 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SUPER_NERD_AIDAN] =
 {
     .trainerName = _("Aidan"),
-    .trainerClass = TRAINER_CLASS_SUPER_NERD_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SUPER_NERD_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SUPER_NERD_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SUPER_NERD_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 20,
         .species = SPECIES_VOLTORB,
-        IVS(0),
         .moves = {MOVE_SONIC_BOOM, MOVE_SCREECH, MOVE_TACKLE, MOVE_CHARGE},
         },
         {
         .lvl = 20,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE, MOVE_POISON_GAS},
         },
         {
         .lvl = 20,
         .species = SPECIES_VOLTORB,
-        IVS(0),
         .moves = {MOVE_SONIC_BOOM, MOVE_SCREECH, MOVE_TACKLE, MOVE_CHARGE},
         },
         {
         .lvl = 20,
         .species = SPECIES_MAGNEMITE,
-        IVS(0),
         .moves = {MOVE_SONIC_BOOM, MOVE_SUPERSONIC, MOVE_THUNDER_SHOCK, MOVE_TACKLE},
         },
     },
@@ -20104,29 +20603,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SUPER_NERD_GLENN] =
 {
     .trainerName = _("Glenn"),
-    .trainerClass = TRAINER_CLASS_SUPER_NERD_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SUPER_NERD_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SUPER_NERD_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SUPER_NERD_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 22,
         .species = SPECIES_GRIMER,
-        IVS(0),
         },
         {
         .lvl = 22,
         .species = SPECIES_MUK,
-        IVS(0),
         },
         {
         .lvl = 22,
         .species = SPECIES_GRIMER,
-        IVS(0),
         },
     },
 },
@@ -20134,19 +20626,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SUPER_NERD_LESLIE] =
 {
     .trainerName = _("Leslie"),
-    .trainerClass = TRAINER_CLASS_SUPER_NERD_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SUPER_NERD_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SUPER_NERD_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SUPER_NERD_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 26,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SLUDGE, MOVE_SMOKESCREEN, MOVE_SMOG, MOVE_SELF_DESTRUCT},
         },
     },
@@ -20155,29 +20642,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SUPER_NERD_ERIK] =
 {
     .trainerName = _("Erik"),
-    .trainerClass = TRAINER_CLASS_SUPER_NERD_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SUPER_NERD_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SUPER_NERD_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SUPER_NERD_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 36,
         .species = SPECIES_VULPIX,
-        IVS(0),
         },
         {
         .lvl = 36,
         .species = SPECIES_VULPIX,
-        IVS(0),
         },
         {
         .lvl = 36,
         .species = SPECIES_NINETALES,
-        IVS(0),
         },
     },
 },
@@ -20185,34 +20665,26 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SUPER_NERD_AVERY] =
 {
     .trainerName = _("Avery"),
-    .trainerClass = TRAINER_CLASS_SUPER_NERD_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SUPER_NERD_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SUPER_NERD_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SUPER_NERD_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 34,
         .species = SPECIES_PONYTA,
-        IVS(0),
         },
         {
         .lvl = 34,
         .species = SPECIES_CHARMANDER,
-        IVS(0),
         },
         {
         .lvl = 34,
         .species = SPECIES_VULPIX,
-        IVS(0),
         },
         {
         .lvl = 34,
         .species = SPECIES_GROWLITHE,
-        IVS(0),
         },
     },
 },
@@ -20220,19 +20692,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SUPER_NERD_DEREK] =
 {
     .trainerName = _("Derek"),
-    .trainerClass = TRAINER_CLASS_SUPER_NERD_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SUPER_NERD_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SUPER_NERD_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SUPER_NERD_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 41,
         .species = SPECIES_RAPIDASH,
-        IVS(0),
         },
     },
 },
@@ -20240,24 +20707,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SUPER_NERD_ZAC] =
 {
     .trainerName = _("Zac"),
-    .trainerClass = TRAINER_CLASS_SUPER_NERD_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SUPER_NERD_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SUPER_NERD_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SUPER_NERD_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 37,
         .species = SPECIES_GROWLITHE,
-        IVS(0),
         },
         {
         .lvl = 37,
         .species = SPECIES_VULPIX,
-        IVS(0),
         },
     },
 },
@@ -20265,29 +20726,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_HIKER_MARCOS] =
 {
     .trainerName = _("Marcos"),
-    .trainerClass = TRAINER_CLASS_HIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_HIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    HIKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_HIKER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 10,
         .species = SPECIES_GEODUDE,
-        IVS(0),
         },
         {
         .lvl = 10,
         .species = SPECIES_GEODUDE,
-        IVS(0),
         },
         {
         .lvl = 10,
         .species = SPECIES_ONIX,
-        IVS(0),
         },
     },
 },
@@ -20295,24 +20749,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_HIKER_FRANKLIN] =
 {
     .trainerName = _("Franklin"),
-    .trainerClass = TRAINER_CLASS_HIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_HIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    HIKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_HIKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 15,
         .species = SPECIES_MACHOP,
-        IVS(0),
         },
         {
         .lvl = 15,
         .species = SPECIES_GEODUDE,
-        IVS(0),
         },
     },
 },
@@ -20320,34 +20768,26 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_HIKER_NOB] =
 {
     .trainerName = _("Nob"),
-    .trainerClass = TRAINER_CLASS_HIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_HIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    HIKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_HIKER_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 13,
         .species = SPECIES_GEODUDE,
-        IVS(0),
         },
         {
         .lvl = 13,
         .species = SPECIES_GEODUDE,
-        IVS(0),
         },
         {
         .lvl = 13,
         .species = SPECIES_MACHOP,
-        IVS(0),
         },
         {
         .lvl = 13,
         .species = SPECIES_GEODUDE,
-        IVS(0),
         },
     },
 },
@@ -20355,19 +20795,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_HIKER_WAYNE] =
 {
     .trainerName = _("Wayne"),
-    .trainerClass = TRAINER_CLASS_HIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_HIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    HIKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_HIKER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 17,
         .species = SPECIES_ONIX,
-        IVS(0),
         },
     },
 },
@@ -20375,25 +20810,19 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_HIKER_ALAN] =
 {
     .trainerName = _("Alan"),
-    .trainerClass = TRAINER_CLASS_HIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_HIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    HIKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_HIKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 21,
         .species = SPECIES_GEODUDE,
-        IVS(0),
         .moves = {MOVE_MAGNITUDE, MOVE_ROCK_THROW, MOVE_MUD_SPORT, MOVE_DEFENSE_CURL},
         },
         {
         .lvl = 21,
         .species = SPECIES_ONIX,
-        IVS(0),
         .moves = {MOVE_HARDEN, MOVE_ROCK_THROW, MOVE_BIND, MOVE_SCREECH},
         },
     },
@@ -20402,29 +20831,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_HIKER_BRICE] =
 {
     .trainerName = _("Brice"),
-    .trainerClass = TRAINER_CLASS_HIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_HIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    HIKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_HIKER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 20,
         .species = SPECIES_GEODUDE,
-        IVS(0),
         },
         {
         .lvl = 20,
         .species = SPECIES_MACHOP,
-        IVS(0),
         },
         {
         .lvl = 20,
         .species = SPECIES_GEODUDE,
-        IVS(0),
         },
     },
 },
@@ -20432,25 +20854,19 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_HIKER_CLARK] =
 {
     .trainerName = _("Clark"),
-    .trainerClass = TRAINER_CLASS_HIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_HIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    HIKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_HIKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 21,
         .species = SPECIES_GEODUDE,
-        IVS(0),
         .moves = {MOVE_MAGNITUDE, MOVE_ROCK_THROW, MOVE_MUD_SPORT, MOVE_DEFENSE_CURL},
         },
         {
         .lvl = 21,
         .species = SPECIES_ONIX,
-        IVS(0),
         .moves = {MOVE_HARDEN, MOVE_ROCK_THROW, MOVE_BIND, MOVE_SCREECH},
         },
     },
@@ -20459,24 +20875,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_HIKER_TRENT] =
 {
     .trainerName = _("Trent"),
-    .trainerClass = TRAINER_CLASS_HIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_HIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    HIKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_HIKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 19,
         .species = SPECIES_ONIX,
-        IVS(0),
         },
         {
         .lvl = 19,
         .species = SPECIES_GRAVELER,
-        IVS(0),
         },
     },
 },
@@ -20484,31 +20894,24 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_HIKER_DUDLEY] =
 {
     .trainerName = _("Dudley"),
-    .trainerClass = TRAINER_CLASS_HIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_HIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    HIKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_HIKER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 21,
         .species = SPECIES_GEODUDE,
-        IVS(0),
         .moves = {MOVE_MAGNITUDE, MOVE_ROCK_THROW, MOVE_MUD_SPORT, MOVE_DEFENSE_CURL},
         },
         {
         .lvl = 21,
         .species = SPECIES_GEODUDE,
-        IVS(0),
         .moves = {MOVE_MAGNITUDE, MOVE_ROCK_THROW, MOVE_MUD_SPORT, MOVE_DEFENSE_CURL},
         },
         {
         .lvl = 21,
         .species = SPECIES_GRAVELER,
-        IVS(0),
         .moves = {MOVE_MAGNITUDE, MOVE_ROCK_THROW, MOVE_MUD_SPORT, MOVE_DEFENSE_CURL},
         },
     },
@@ -20517,19 +20920,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_HIKER_ALLEN] =
 {
     .trainerName = _("Allen"),
-    .trainerClass = TRAINER_CLASS_HIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_HIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    HIKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_HIKER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 25,
         .species = SPECIES_GEODUDE,
-        IVS(0),
         .moves = {MOVE_MAGNITUDE, MOVE_ROCK_THROW, MOVE_MUD_SPORT, MOVE_DEFENSE_CURL},
         },
     },
@@ -20538,24 +20936,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_HIKER_ERIC] =
 {
     .trainerName = _("Eric"),
-    .trainerClass = TRAINER_CLASS_HIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_HIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    HIKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_HIKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 20,
         .species = SPECIES_MACHOP,
-        IVS(0),
         },
         {
         .lvl = 20,
         .species = SPECIES_ONIX,
-        IVS(0),
         },
     },
 },
@@ -20563,34 +20955,26 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_HIKER_LENNY] =
 {
     .trainerName = _("Lenny"),
-    .trainerClass = TRAINER_CLASS_HIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_HIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    HIKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_HIKER_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 19,
         .species = SPECIES_GEODUDE,
-        IVS(0),
         },
         {
         .lvl = 19,
         .species = SPECIES_MACHOP,
-        IVS(0),
         },
         {
         .lvl = 19,
         .species = SPECIES_GEODUDE,
-        IVS(0),
         },
         {
         .lvl = 19,
         .species = SPECIES_GEODUDE,
-        IVS(0),
         },
     },
 },
@@ -20598,29 +20982,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_HIKER_OLIVER] =
 {
     .trainerName = _("Oliver"),
-    .trainerClass = TRAINER_CLASS_HIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_HIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    HIKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_HIKER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 20,
         .species = SPECIES_ONIX,
-        IVS(0),
         },
         {
         .lvl = 20,
         .species = SPECIES_ONIX,
-        IVS(0),
         },
         {
         .lvl = 20,
         .species = SPECIES_GEODUDE,
-        IVS(0),
         },
     },
 },
@@ -20628,25 +21005,19 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_HIKER_LUCAS] =
 {
     .trainerName = _("Lucas"),
-    .trainerClass = TRAINER_CLASS_HIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_HIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    HIKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_HIKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 21,
         .species = SPECIES_GEODUDE,
-        IVS(0),
         .moves = {MOVE_MAGNITUDE, MOVE_ROCK_THROW, MOVE_MUD_SPORT, MOVE_DEFENSE_CURL},
         },
         {
         .lvl = 21,
         .species = SPECIES_GRAVELER,
-        IVS(0),
         .moves = {MOVE_MAGNITUDE, MOVE_ROCK_THROW, MOVE_MUD_SPORT, MOVE_DEFENSE_CURL},
         },
     },
@@ -20655,31 +21026,24 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIKER_JARED] =
 {
     .trainerName = _("Jared"),
-    .trainerClass = TRAINER_CLASS_BIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIKER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 28,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_POISON_GAS},
         },
         {
         .lvl = 28,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
         {
         .lvl = 28,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
     },
@@ -20688,25 +21052,19 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIKER_MALIK] =
 {
     .trainerName = _("Malik"),
-    .trainerClass = TRAINER_CLASS_BIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
         {
         .lvl = 29,
         .species = SPECIES_GRIMER,
-        IVS(0),
         .moves = {MOVE_SCREECH, MOVE_MINIMIZE, MOVE_SLUDGE, MOVE_DISABLE},
         },
     },
@@ -20715,43 +21073,34 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIKER_ERNEST] =
 {
     .trainerName = _("Ernest"),
-    .trainerClass = TRAINER_CLASS_BIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIKER_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 25,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
         {
         .lvl = 25,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
         {
         .lvl = 25,
         .species = SPECIES_WEEZING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
         {
         .lvl = 25,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
         {
         .lvl = 25,
         .species = SPECIES_GRIMER,
-        IVS(0),
         .moves = {MOVE_MINIMIZE, MOVE_SLUDGE, MOVE_DISABLE, MOVE_POUND},
         },
     },
@@ -20760,31 +21109,24 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIKER_ALEX] =
 {
     .trainerName = _("Alex"),
-    .trainerClass = TRAINER_CLASS_BIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIKER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 28,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
         {
         .lvl = 28,
         .species = SPECIES_GRIMER,
-        IVS(0),
         .moves = {MOVE_SCREECH, MOVE_MINIMIZE, MOVE_SLUDGE, MOVE_DISABLE},
         },
         {
         .lvl = 28,
         .species = SPECIES_WEEZING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
     },
@@ -20793,25 +21135,19 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIKER_LAO] =
 {
     .trainerName = _("Lao"),
-    .trainerClass = TRAINER_CLASS_BIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_GRIMER,
-        IVS(0),
         .moves = {MOVE_SCREECH, MOVE_MINIMIZE, MOVE_SLUDGE, MOVE_DISABLE},
         },
         {
         .lvl = 29,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
     },
@@ -20820,19 +21156,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIKER_HIDEO] =
 {
     .trainerName = _("Hideo"),
-    .trainerClass = TRAINER_CLASS_BIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIKER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 33,
         .species = SPECIES_WEEZING,
-        IVS(0),
         },
     },
 },
@@ -20840,31 +21171,24 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIKER_RUBEN] =
 {
     .trainerName = _("Ruben"),
-    .trainerClass = TRAINER_CLASS_BIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIKER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 28,
         .species = SPECIES_WEEZING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
         {
         .lvl = 28,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
         {
         .lvl = 28,
         .species = SPECIES_WEEZING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
     },
@@ -20873,19 +21197,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIKER_BILLY] =
 {
     .trainerName = _("Billy"),
-    .trainerClass = TRAINER_CLASS_BIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIKER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 33,
         .species = SPECIES_MUK,
-        IVS(0),
         },
     },
 },
@@ -20893,25 +21212,19 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIKER_NIKOLAS] =
 {
     .trainerName = _("Nikolas"),
-    .trainerClass = TRAINER_CLASS_BIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_VOLTORB,
-        IVS(0),
         .moves = {MOVE_SPARK, MOVE_SONIC_BOOM, MOVE_SCREECH, MOVE_CHARGE},
         },
         {
         .lvl = 29,
         .species = SPECIES_VOLTORB,
-        IVS(0),
         .moves = {MOVE_SPARK, MOVE_SONIC_BOOM, MOVE_SCREECH, MOVE_CHARGE},
         },
     },
@@ -20920,25 +21233,19 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIKER_JAXON] =
 {
     .trainerName = _("Jaxon"),
-    .trainerClass = TRAINER_CLASS_BIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_WEEZING,
-        IVS(0),
         .moves = {MOVE_SLUDGE, MOVE_SMOKESCREEN, MOVE_SMOG, MOVE_TACKLE},
         },
         {
         .lvl = 29,
         .species = SPECIES_MUK,
-        IVS(0),
         .moves = {MOVE_SCREECH, MOVE_MINIMIZE, MOVE_SLUDGE, MOVE_DISABLE},
         },
     },
@@ -20947,43 +21254,34 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIKER_WILLIAM] =
 {
     .trainerName = _("William"),
-    .trainerClass = TRAINER_CLASS_BIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIKER_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 25,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
         {
         .lvl = 25,
         .species = SPECIES_WEEZING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
         {
         .lvl = 25,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
         {
         .lvl = 25,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
         {
         .lvl = 25,
         .species = SPECIES_WEEZING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SELF_DESTRUCT, MOVE_TACKLE},
         },
     },
@@ -20992,37 +21290,29 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIKER_LUKAS] =
 {
     .trainerName = _("Lukas"),
-    .trainerClass = TRAINER_CLASS_BIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIKER_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 26,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
         {
         .lvl = 26,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
         {
         .lvl = 26,
         .species = SPECIES_GRIMER,
-        IVS(0),
         .moves = {MOVE_SCREECH, MOVE_MINIMIZE, MOVE_SLUDGE, MOVE_DISABLE},
         },
         {
         .lvl = 26,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
     },
@@ -21031,31 +21321,24 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIKER_ISAAC] =
 {
     .trainerName = _("Isaac"),
-    .trainerClass = TRAINER_CLASS_BIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIKER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 28,
         .species = SPECIES_GRIMER,
-        IVS(0),
         .moves = {MOVE_SCREECH, MOVE_MINIMIZE, MOVE_SLUDGE, MOVE_DISABLE},
         },
         {
         .lvl = 28,
         .species = SPECIES_GRIMER,
-        IVS(0),
         .moves = {MOVE_SCREECH, MOVE_MINIMIZE, MOVE_SLUDGE, MOVE_DISABLE},
         },
         {
         .lvl = 28,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
     },
@@ -21064,25 +21347,19 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIKER_GERALD] =
 {
     .trainerName = _("Gerald"),
-    .trainerClass = TRAINER_CLASS_BIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
         {
         .lvl = 29,
         .species = SPECIES_MUK,
-        IVS(0),
         .moves = {MOVE_SCREECH, MOVE_MINIMIZE, MOVE_SLUDGE, MOVE_DISABLE},
         },
     },
@@ -21091,29 +21368,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BURGLAR_QUINN] =
 {
     .trainerName = _("Quinn"),
-    .trainerClass = TRAINER_CLASS_BURGLAR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BURGLAR_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BURGLAR_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BURGLAR_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 36,
         .species = SPECIES_GROWLITHE,
-        IVS(0),
         },
         {
         .lvl = 36,
         .species = SPECIES_VULPIX,
-        IVS(0),
         },
         {
         .lvl = 36,
         .species = SPECIES_NINETALES,
-        IVS(0),
         },
     },
 },
@@ -21121,19 +21391,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BURGLAR_RAMON] =
 {
     .trainerName = _("Ramon"),
-    .trainerClass = TRAINER_CLASS_BURGLAR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BURGLAR_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BURGLAR_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BURGLAR_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 41,
         .species = SPECIES_PONYTA,
-        IVS(0),
         },
     },
 },
@@ -21141,24 +21406,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BURGLAR_DUSTY] =
 {
     .trainerName = _("Dusty"),
-    .trainerClass = TRAINER_CLASS_BURGLAR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BURGLAR_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BURGLAR_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BURGLAR_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 37,
         .species = SPECIES_VULPIX,
-        IVS(0),
         },
         {
         .lvl = 37,
         .species = SPECIES_GROWLITHE,
-        IVS(0),
         },
     },
 },
@@ -21166,24 +21425,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BURGLAR_ARNIE] =
 {
     .trainerName = _("Arnie"),
-    .trainerClass = TRAINER_CLASS_BURGLAR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BURGLAR_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BURGLAR_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BURGLAR_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 34,
         .species = SPECIES_CHARMANDER,
-        IVS(0),
         },
         {
         .lvl = 34,
         .species = SPECIES_CHARMELEON,
-        IVS(0),
         },
     },
 },
@@ -21191,19 +21444,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BURGLAR_SIMON] =
 {
     .trainerName = _("Simon"),
-    .trainerClass = TRAINER_CLASS_BURGLAR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BURGLAR_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BURGLAR_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BURGLAR_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 38,
         .species = SPECIES_NINETALES,
-        IVS(0),
         },
     },
 },
@@ -21211,24 +21459,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BURGLAR_LEWIS] =
 {
     .trainerName = _("Lewis"),
-    .trainerClass = TRAINER_CLASS_BURGLAR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BURGLAR_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BURGLAR_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BURGLAR_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 34,
         .species = SPECIES_GROWLITHE,
-        IVS(0),
         },
         {
         .lvl = 34,
         .species = SPECIES_PONYTA,
-        IVS(0),
         },
     },
 },
@@ -21236,24 +21478,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_ENGINEER_BAILY] =
 {
     .trainerName = _("Baily"),
-    .trainerClass = TRAINER_CLASS_ENGINEER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ENGINEER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    ENGINEER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ENGINEER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 21,
         .species = SPECIES_VOLTORB,
-        IVS(0),
         },
         {
         .lvl = 21,
         .species = SPECIES_MAGNEMITE,
-        IVS(0),
         },
     },
 },
@@ -21261,19 +21497,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_ENGINEER_BRAXTON] =
 {
     .trainerName = _("Braxton"),
-    .trainerClass = TRAINER_CLASS_ENGINEER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ENGINEER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    ENGINEER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ENGINEER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 21,
         .species = SPECIES_MAGNEMITE,
-        IVS(0),
         },
     },
 },
@@ -21281,29 +21512,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_ENGINEER_BERNIE] =
 {
     .trainerName = _("Bernie"),
-    .trainerClass = TRAINER_CLASS_ENGINEER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ENGINEER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    ENGINEER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ENGINEER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 18,
         .species = SPECIES_MAGNEMITE,
-        IVS(0),
         },
         {
         .lvl = 18,
         .species = SPECIES_MAGNEMITE,
-        IVS(0),
         },
         {
         .lvl = 18,
         .species = SPECIES_MAGNETON,
-        IVS(0),
         },
     },
 },
@@ -21311,29 +21535,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_FISHERMAN_DALE] =
 {
     .trainerName = _("Dale"),
-    .trainerClass = TRAINER_CLASS_FISHERMAN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    FISHERMAN_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 17,
         .species = SPECIES_GOLDEEN,
-        IVS(0),
         },
         {
         .lvl = 17,
         .species = SPECIES_TENTACOOL,
-        IVS(0),
         },
         {
         .lvl = 17,
         .species = SPECIES_GOLDEEN,
-        IVS(0),
         },
     },
 },
@@ -21341,29 +21558,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_FISHERMAN_BARNY] =
 {
     .trainerName = _("Barny"),
-    .trainerClass = TRAINER_CLASS_FISHERMAN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    FISHERMAN_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 17,
         .species = SPECIES_TENTACOOL,
-        IVS(0),
         },
         {
         .lvl = 17,
         .species = SPECIES_STARYU,
-        IVS(0),
         },
         {
         .lvl = 17,
         .species = SPECIES_SHELLDER,
-        IVS(0),
         },
     },
 },
@@ -21371,29 +21581,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_FISHERMAN_NED] =
 {
     .trainerName = _("Ned"),
-    .trainerClass = TRAINER_CLASS_FISHERMAN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    FISHERMAN_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 22,
         .species = SPECIES_GOLDEEN,
-        IVS(0),
         },
         {
         .lvl = 22,
         .species = SPECIES_POLIWAG,
-        IVS(0),
         },
         {
         .lvl = 22,
         .species = SPECIES_GOLDEEN,
-        IVS(0),
         },
     },
 },
@@ -21401,24 +21604,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_FISHERMAN_CHIP] =
 {
     .trainerName = _("Chip"),
-    .trainerClass = TRAINER_CLASS_FISHERMAN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    FISHERMAN_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 24,
         .species = SPECIES_TENTACOOL,
-        IVS(0),
         },
         {
         .lvl = 24,
         .species = SPECIES_GOLDEEN,
-        IVS(0),
         },
     },
 },
@@ -21426,19 +21623,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_FISHERMAN_HANK] =
 {
     .trainerName = _("Hank"),
-    .trainerClass = TRAINER_CLASS_FISHERMAN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    FISHERMAN_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 27,
         .species = SPECIES_GOLDEEN,
-        IVS(0),
         },
     },
 },
@@ -21446,34 +21638,26 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_FISHERMAN_ELLIOT] =
 {
     .trainerName = _("Elliot"),
-    .trainerClass = TRAINER_CLASS_FISHERMAN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    FISHERMAN_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 21,
         .species = SPECIES_POLIWAG,
-        IVS(0),
         },
         {
         .lvl = 21,
         .species = SPECIES_SHELLDER,
-        IVS(0),
         },
         {
         .lvl = 21,
         .species = SPECIES_GOLDEEN,
-        IVS(0),
         },
         {
         .lvl = 21,
         .species = SPECIES_HORSEA,
-        IVS(0),
         },
     },
 },
@@ -21481,34 +21665,26 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_FISHERMAN_RONALD] =
 {
     .trainerName = _("Ronald"),
-    .trainerClass = TRAINER_CLASS_FISHERMAN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    FISHERMAN_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 28,
         .species = SPECIES_SEAKING,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_GOLDEEN,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_SEAKING,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_SEAKING,
-        IVS(0),
         },
     },
 },
@@ -21516,24 +21692,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_FISHERMAN_CLAUDE] =
 {
     .trainerName = _("Claude"),
-    .trainerClass = TRAINER_CLASS_FISHERMAN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    FISHERMAN_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 31,
         .species = SPECIES_SHELLDER,
-        IVS(0),
         },
         {
         .lvl = 31,
         .species = SPECIES_CLOYSTER,
-        IVS(0),
         },
     },
 },
@@ -21541,44 +21711,34 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_FISHERMAN_WADE] =
 {
     .trainerName = _("Wade"),
-    .trainerClass = TRAINER_CLASS_FISHERMAN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    FISHERMAN_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
     .partySize = 6,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 27,
         .species = SPECIES_MAGIKARP,
-        IVS(0),
         },
         {
         .lvl = 27,
         .species = SPECIES_MAGIKARP,
-        IVS(0),
         },
         {
         .lvl = 27,
         .species = SPECIES_MAGIKARP,
-        IVS(0),
         },
         {
         .lvl = 27,
         .species = SPECIES_MAGIKARP,
-        IVS(0),
         },
         {
         .lvl = 27,
         .species = SPECIES_MAGIKARP,
-        IVS(0),
         },
         {
         .lvl = 27,
         .species = SPECIES_MAGIKARP,
-        IVS(0),
         },
     },
 },
@@ -21586,24 +21746,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_FISHERMAN_NOLAN] =
 {
     .trainerName = _("Nolan"),
-    .trainerClass = TRAINER_CLASS_FISHERMAN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    FISHERMAN_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 33,
         .species = SPECIES_SEAKING,
-        IVS(0),
         },
         {
         .lvl = 33,
         .species = SPECIES_GOLDEEN,
-        IVS(0),
         },
     },
 },
@@ -21611,24 +21765,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_FISHERMAN_ANDREW] =
 {
     .trainerName = _("Andrew"),
-    .trainerClass = TRAINER_CLASS_FISHERMAN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    FISHERMAN_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 24,
         .species = SPECIES_MAGIKARP,
-        IVS(0),
         },
         {
         .lvl = 24,
         .species = SPECIES_MAGIKARP,
-        IVS(0),
         },
     },
 },
@@ -21639,21 +21787,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 16,
         .species = SPECIES_HORSEA,
-        IVS(0),
         },
         {
         .lvl = 16,
         .species = SPECIES_SHELLDER,
-        IVS(0),
         },
     },
 },
@@ -21664,21 +21808,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 30,
         .species = SPECIES_TENTACOOL,
-        IVS(0),
         },
         {
         .lvl = 30,
         .species = SPECIES_SHELLDER,
-        IVS(0),
         },
     },
 },
@@ -21689,26 +21829,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_GOLDEEN,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_HORSEA,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_STARYU,
-        IVS(0),
         },
     },
 },
@@ -21719,21 +21854,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 30,
         .species = SPECIES_POLIWAG,
-        IVS(0),
         },
         {
         .lvl = 30,
         .species = SPECIES_POLIWHIRL,
-        IVS(0),
         },
     },
 },
@@ -21744,31 +21875,25 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 27,
         .species = SPECIES_HORSEA,
-        IVS(0),
         },
         {
         .lvl = 27,
         .species = SPECIES_TENTACOOL,
-        IVS(0),
         },
         {
         .lvl = 27,
         .species = SPECIES_TENTACOOL,
-        IVS(0),
         },
         {
         .lvl = 27,
         .species = SPECIES_GOLDEEN,
-        IVS(0),
         },
     },
 },
@@ -21779,26 +21904,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_GOLDEEN,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_SHELLDER,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_SEAKING,
-        IVS(0),
         },
     },
 },
@@ -21809,21 +21929,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 30,
         .species = SPECIES_HORSEA,
-        IVS(0),
         },
         {
         .lvl = 30,
         .species = SPECIES_HORSEA,
-        IVS(0),
         },
     },
 },
@@ -21834,36 +21950,29 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 27,
         .species = SPECIES_TENTACOOL,
-        IVS(0),
         },
         {
         .lvl = 27,
         .species = SPECIES_TENTACOOL,
-        IVS(0),
         },
         {
         .lvl = 27,
         .species = SPECIES_STARYU,
-        IVS(0),
         },
         {
         .lvl = 27,
         .species = SPECIES_HORSEA,
-        IVS(0),
         },
         {
         .lvl = 27,
         .species = SPECIES_TENTACRUEL,
-        IVS(0),
         },
     },
 },
@@ -21874,21 +21983,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 31,
         .species = SPECIES_SHELLDER,
-        IVS(0),
         },
         {
         .lvl = 31,
         .species = SPECIES_CLOYSTER,
-        IVS(0),
         },
     },
 },
@@ -21899,16 +22004,13 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 35,
         .species = SPECIES_STARYU,
-        IVS(0),
         },
     },
 },
@@ -21919,31 +22021,25 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 28,
         .species = SPECIES_HORSEA,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_HORSEA,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_SEADRA,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_HORSEA,
-        IVS(0),
         },
     },
 },
@@ -21954,21 +22050,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 33,
         .species = SPECIES_SEADRA,
-        IVS(0),
         },
         {
         .lvl = 33,
         .species = SPECIES_TENTACRUEL,
-        IVS(0),
         },
     },
 },
@@ -21979,16 +22071,13 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 37,
         .species = SPECIES_STARMIE,
-        IVS(0),
         },
     },
 },
@@ -21999,21 +22088,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 33,
         .species = SPECIES_STARYU,
-        IVS(0),
         },
         {
         .lvl = 33,
         .species = SPECIES_WARTORTLE,
-        IVS(0),
         },
     },
 },
@@ -22024,26 +22109,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 32,
         .species = SPECIES_POLIWHIRL,
-        IVS(0),
         },
         {
         .lvl = 32,
         .species = SPECIES_TENTACOOL,
-        IVS(0),
         },
         {
         .lvl = 32,
         .species = SPECIES_SEADRA,
-        IVS(0),
         },
     },
 },
@@ -22051,29 +22131,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CUE_BALL_KOJI] =
 {
     .trainerName = _("Koji"),
-    .trainerClass = TRAINER_CLASS_CUE_BALL_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CUE_BALL_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CUE_BALL_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CUE_BALL_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 28,
         .species = SPECIES_MACHOP,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_MANKEY,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_MACHOP,
-        IVS(0),
         },
     },
 },
@@ -22081,24 +22154,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CUE_BALL_LUKE] =
 {
     .trainerName = _("Luke"),
-    .trainerClass = TRAINER_CLASS_CUE_BALL_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CUE_BALL_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CUE_BALL_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CUE_BALL_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_MANKEY,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_MACHOP,
-        IVS(0),
         },
     },
 },
@@ -22106,24 +22173,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CUE_BALL_CAMRON] =
 {
     .trainerName = _("Camron"),
-    .trainerClass = TRAINER_CLASS_CUE_BALL_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CUE_BALL_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CUE_BALL_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CUE_BALL_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_MANKEY,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_MACHOP,
-        IVS(0),
         },
     },
 },
@@ -22131,24 +22192,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CUE_BALL_RAUL] =
 {
     .trainerName = _("Raul"),
-    .trainerClass = TRAINER_CLASS_CUE_BALL_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CUE_BALL_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CUE_BALL_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CUE_BALL_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_MANKEY,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_PRIMEAPE,
-        IVS(0),
         },
     },
 },
@@ -22156,24 +22211,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CUE_BALL_ISAIAH] =
 {
     .trainerName = _("Isaiah"),
-    .trainerClass = TRAINER_CLASS_CUE_BALL_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CUE_BALL_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CUE_BALL_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CUE_BALL_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_MACHOP,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_MACHAMP,
-        IVS(0),
         },
     },
 },
@@ -22181,19 +22230,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CUE_BALL_ZEEK] =
 {
     .trainerName = _("Zeek"),
-    .trainerClass = TRAINER_CLASS_CUE_BALL_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CUE_BALL_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CUE_BALL_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CUE_BALL_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 33,
         .species = SPECIES_MACHOKE,
-        IVS(0),
         },
     },
 },
@@ -22201,34 +22245,26 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CUE_BALL_JAMAL] =
 {
     .trainerName = _("Jamal"),
-    .trainerClass = TRAINER_CLASS_CUE_BALL_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CUE_BALL_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CUE_BALL_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CUE_BALL_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 26,
         .species = SPECIES_MANKEY,
-        IVS(0),
         },
         {
         .lvl = 26,
         .species = SPECIES_MANKEY,
-        IVS(0),
         },
         {
         .lvl = 26,
         .species = SPECIES_MACHAMP,
-        IVS(0),
         },
         {
         .lvl = 26,
         .species = SPECIES_MACHOP,
-        IVS(0),
         },
     },
 },
@@ -22236,24 +22272,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CUE_BALL_COREY] =
 {
     .trainerName = _("Corey"),
-    .trainerClass = TRAINER_CLASS_CUE_BALL_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CUE_BALL_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CUE_BALL_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CUE_BALL_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_PRIMEAPE,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_MACHOKE,
-        IVS(0),
         },
     },
 },
@@ -22261,29 +22291,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CUE_BALL_CHASE] =
 {
     .trainerName = _("Chase"),
-    .trainerClass = TRAINER_CLASS_CUE_BALL_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CUE_BALL_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CUE_BALL_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CUE_BALL_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 31,
         .species = SPECIES_TENTACOOL,
-        IVS(0),
         },
         {
         .lvl = 31,
         .species = SPECIES_TENTACOOL,
-        IVS(0),
         },
         {
         .lvl = 31,
         .species = SPECIES_TENTACRUEL,
-        IVS(0),
         },
     },
 },
@@ -22291,24 +22314,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_GAMER_HUGO] =
 {
     .trainerName = _("Hugo"),
-    .trainerClass = TRAINER_CLASS_GAMER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_GAMER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    GAMBLER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_GAMER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 18,
         .species = SPECIES_POLIWAG,
-        IVS(0),
         },
         {
         .lvl = 18,
         .species = SPECIES_HORSEA,
-        IVS(0),
         },
     },
 },
@@ -22316,24 +22333,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_GAMER_JASPER] =
 {
     .trainerName = _("Jasper"),
-    .trainerClass = TRAINER_CLASS_GAMER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_GAMER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    GAMBLER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_GAMER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 18,
         .species = SPECIES_BELLSPROUT,
-        IVS(0),
         },
         {
         .lvl = 18,
         .species = SPECIES_ODDISH,
-        IVS(0),
         },
     },
 },
@@ -22341,24 +22352,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_GAMER_DIRK] =
 {
     .trainerName = _("Dirk"),
-    .trainerClass = TRAINER_CLASS_GAMER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_GAMER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    GAMBLER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_GAMER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 18,
         .species = SPECIES_VOLTORB,
-        IVS(0),
         },
         {
         .lvl = 18,
         .species = SPECIES_MAGNEMITE,
-        IVS(0),
         },
     },
 },
@@ -22366,24 +22371,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_GAMER_DARIAN] =
 {
     .trainerName = _("Darian"),
-    .trainerClass = TRAINER_CLASS_GAMER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_GAMER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    GAMBLER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_GAMER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 18,
         .species = SPECIES_GROWLITHE,
-        IVS(0),
         },
         {
         .lvl = 18,
         .species = SPECIES_VULPIX,
-        IVS(0),
         },
     },
 },
@@ -22391,29 +22390,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_GAMER_STAN] =
 {
     .trainerName = _("Stan"),
-    .trainerClass = TRAINER_CLASS_GAMER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_GAMER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    GAMBLER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_GAMER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 22,
         .species = SPECIES_POLIWAG,
-        IVS(0),
         },
         {
         .lvl = 22,
         .species = SPECIES_POLIWAG,
-        IVS(0),
         },
         {
         .lvl = 22,
         .species = SPECIES_POLIWHIRL,
-        IVS(0),
         },
     },
 },
@@ -22421,24 +22413,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_GAMER_RICH] =
 {
     .trainerName = _("Rich"),
-    .trainerClass = TRAINER_CLASS_GAMER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_GAMER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    GAMBLER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_GAMER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 24,
         .species = SPECIES_GROWLITHE,
-        IVS(0),
         },
         {
         .lvl = 24,
         .species = SPECIES_VULPIX,
-        IVS(0),
         },
     },
 },
@@ -22446,34 +22432,26 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BEAUTY_BRIDGET] =
 {
     .trainerName = _("Bridget"),
-    .trainerClass = TRAINER_CLASS_BEAUTY_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BEAUTY_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BEAUTY_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BEAUTY_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 21,
         .species = SPECIES_ODDISH,
-        IVS(0),
         },
         {
         .lvl = 21,
         .species = SPECIES_BELLSPROUT,
-        IVS(0),
         },
         {
         .lvl = 21,
         .species = SPECIES_ODDISH,
-        IVS(0),
         },
         {
         .lvl = 21,
         .species = SPECIES_BELLSPROUT,
-        IVS(0),
         },
     },
 },
@@ -22481,24 +22459,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BEAUTY_TAMIA] =
 {
     .trainerName = _("Tamia"),
-    .trainerClass = TRAINER_CLASS_BEAUTY_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BEAUTY_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BEAUTY_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BEAUTY_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 24,
         .species = SPECIES_BELLSPROUT,
-        IVS(0),
         },
         {
         .lvl = 24,
         .species = SPECIES_BELLSPROUT,
-        IVS(0),
         },
     },
 },
@@ -22506,19 +22478,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BEAUTY_LORI] =
 {
     .trainerName = _("Lori"),
-    .trainerClass = TRAINER_CLASS_BEAUTY_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BEAUTY_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BEAUTY_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BEAUTY_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 24,
         .species = SPECIES_EXEGGCUTE,
-        IVS(0),
         },
     },
 },
@@ -22526,29 +22493,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BEAUTY_LOLA] =
 {
     .trainerName = _("Lola"),
-    .trainerClass = TRAINER_CLASS_BEAUTY_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BEAUTY_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BEAUTY_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BEAUTY_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 27,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 27,
         .species = SPECIES_PIKACHU,
-        IVS(0),
         },
         {
         .lvl = 27,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
     },
 },
@@ -22556,24 +22516,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BEAUTY_SHEILA] =
 {
     .trainerName = _("Sheila"),
-    .trainerClass = TRAINER_CLASS_BEAUTY_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BEAUTY_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BEAUTY_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BEAUTY_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_CLEFAIRY,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_MEOWTH,
-        IVS(0),
         },
     },
 },
@@ -22584,16 +22538,13 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 35,
         .species = SPECIES_SEAKING,
-        IVS(0),
         },
     },
 },
@@ -22604,26 +22555,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 30,
         .species = SPECIES_SHELLDER,
-        IVS(0),
         },
         {
         .lvl = 30,
         .species = SPECIES_SHELLDER,
-        IVS(0),
         },
         {
         .lvl = 30,
         .species = SPECIES_CLOYSTER,
-        IVS(0),
         },
     },
 },
@@ -22634,21 +22580,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 31,
         .species = SPECIES_POLIWAG,
-        IVS(0),
         },
         {
         .lvl = 31,
         .species = SPECIES_SEAKING,
-        IVS(0),
         },
     },
 },
@@ -22656,24 +22598,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BEAUTY_GRACE] =
 {
     .trainerName = _("Grace"),
-    .trainerClass = TRAINER_CLASS_BEAUTY_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BEAUTY_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BEAUTY_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BEAUTY_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_PIDGEOTTO,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_WIGGLYTUFF,
-        IVS(0),
         },
     },
 },
@@ -22681,24 +22617,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BEAUTY_OLIVIA] =
 {
     .trainerName = _("Olivia"),
-    .trainerClass = TRAINER_CLASS_BEAUTY_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BEAUTY_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BEAUTY_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BEAUTY_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_BULBASAUR,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_IVYSAUR,
-        IVS(0),
         },
     },
 },
@@ -22709,26 +22639,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_BEAUTY_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 33,
         .species = SPECIES_WEEPINBELL,
-        IVS(0),
         },
         {
         .lvl = 33,
         .species = SPECIES_BELLSPROUT,
-        IVS(0),
         },
         {
         .lvl = 33,
         .species = SPECIES_WEEPINBELL,
-        IVS(0),
         },
     },
 },
@@ -22739,36 +22664,29 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 27,
         .species = SPECIES_POLIWAG,
-        IVS(0),
         },
         {
         .lvl = 27,
         .species = SPECIES_GOLDEEN,
-        IVS(0),
         },
         {
         .lvl = 27,
         .species = SPECIES_SEAKING,
-        IVS(0),
         },
         {
         .lvl = 27,
         .species = SPECIES_GOLDEEN,
-        IVS(0),
         },
         {
         .lvl = 27,
         .species = SPECIES_POLIWAG,
-        IVS(0),
         },
     },
 },
@@ -22779,21 +22697,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 30,
         .species = SPECIES_GOLDEEN,
-        IVS(0),
         },
         {
         .lvl = 30,
         .species = SPECIES_SEAKING,
-        IVS(0),
         },
     },
 },
@@ -22804,26 +22718,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_STARYU,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_STARYU,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_STARYU,
-        IVS(0),
         },
     },
 },
@@ -22834,26 +22743,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 30,
         .species = SPECIES_SEADRA,
-        IVS(0),
         },
         {
         .lvl = 30,
         .species = SPECIES_HORSEA,
-        IVS(0),
         },
         {
         .lvl = 30,
         .species = SPECIES_SEADRA,
-        IVS(0),
         },
     },
 },
@@ -22864,9 +22768,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_PSYCHIC_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PSYCHIC_M_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
@@ -22899,9 +22801,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_PSYCHIC_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PSYCHIC_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -22924,9 +22824,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_PSYCHIC_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PSYCHIC_M_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -22954,9 +22852,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_PSYCHIC_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PSYCHIC_M_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
@@ -22971,29 +22867,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_ROCKER_RANDALL] =
 {
     .trainerName = _("Randall"),
-    .trainerClass = TRAINER_CLASS_ROCKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    ROCKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 20,
         .species = SPECIES_VOLTORB,
-        IVS(0),
         },
         {
         .lvl = 20,
         .species = SPECIES_MAGNEMITE,
-        IVS(0),
         },
         {
         .lvl = 20,
         .species = SPECIES_VOLTORB,
-        IVS(0),
         },
     },
 },
@@ -23001,24 +22890,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_ROCKER_LUCA] =
 {
     .trainerName = _("Luca"),
-    .trainerClass = TRAINER_CLASS_ROCKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    ROCKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_VOLTORB,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_ELECTRODE,
-        IVS(0),
         },
     },
 },
@@ -23026,24 +22909,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_JUGGLER_DALTON] =
 {
     .trainerName = _("Dalton"),
-    .trainerClass = TRAINER_CLASS_JUGGLER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_JUGGLER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    JUGGLER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_JUGGLER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_KADABRA,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_MR_MIME,
-        IVS(0),
         },
     },
 },
@@ -23051,34 +22928,26 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_JUGGLER_NELSON] =
 {
     .trainerName = _("Nelson"),
-    .trainerClass = TRAINER_CLASS_JUGGLER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_JUGGLER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    JUGGLER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_JUGGLER_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 41,
         .species = SPECIES_DROWZEE,
-        IVS(0),
         },
         {
         .lvl = 41,
         .species = SPECIES_HYPNO,
-        IVS(0),
         },
         {
         .lvl = 41,
         .species = SPECIES_KADABRA,
-        IVS(0),
         },
         {
         .lvl = 41,
         .species = SPECIES_KADABRA,
-        IVS(0),
         },
     },
 },
@@ -23086,34 +22955,26 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_JUGGLER_KIRK] =
 {
     .trainerName = _("Kirk"),
-    .trainerClass = TRAINER_CLASS_JUGGLER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_JUGGLER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    JUGGLER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_JUGGLER_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 31,
         .species = SPECIES_DROWZEE,
-        IVS(0),
         },
         {
         .lvl = 31,
         .species = SPECIES_DROWZEE,
-        IVS(0),
         },
         {
         .lvl = 31,
         .species = SPECIES_KADABRA,
-        IVS(0),
         },
         {
         .lvl = 31,
         .species = SPECIES_DROWZEE,
-        IVS(0),
         },
     },
 },
@@ -23121,24 +22982,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_JUGGLER_SHAWN] =
 {
     .trainerName = _("Shawn"),
-    .trainerClass = TRAINER_CLASS_JUGGLER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_JUGGLER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    JUGGLER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_JUGGLER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 34,
         .species = SPECIES_DROWZEE,
-        IVS(0),
         },
         {
         .lvl = 34,
         .species = SPECIES_HYPNO,
-        IVS(0),
         },
     },
 },
@@ -23146,19 +23001,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_JUGGLER_GREGORY] =
 {
     .trainerName = _("Gregory"),
-    .trainerClass = TRAINER_CLASS_JUGGLER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_JUGGLER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    JUGGLER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_JUGGLER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 48,
         .species = SPECIES_MR_MIME,
-        IVS(0),
         .moves = {MOVE_PSYCHIC, MOVE_ROLE_PLAY, MOVE_DOUBLE_SLAP, MOVE_ENCORE},
         },
     },
@@ -23167,37 +23017,29 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_JUGGLER_EDWARD] =
 {
     .trainerName = _("Edward"),
-    .trainerClass = TRAINER_CLASS_JUGGLER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_JUGGLER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    JUGGLER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_JUGGLER_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 46,
         .species = SPECIES_VOLTORB,
-        IVS(0),
         .moves = {MOVE_SWIFT, MOVE_LIGHT_SCREEN, MOVE_SPARK, MOVE_SONIC_BOOM},
         },
         {
         .lvl = 46,
         .species = SPECIES_VOLTORB,
-        IVS(0),
         .moves = {MOVE_SWIFT, MOVE_LIGHT_SCREEN, MOVE_SPARK, MOVE_SONIC_BOOM},
         },
         {
         .lvl = 47,
         .species = SPECIES_ELECTRODE,
-        IVS(0),
         .moves = {MOVE_SWIFT, MOVE_SPARK, MOVE_SELF_DESTRUCT, MOVE_SONIC_BOOM},
         },
         {
         .lvl = 48,
         .species = SPECIES_MR_MIME,
-        IVS(0),
         .moves = {MOVE_PSYCHIC, MOVE_ROLE_PLAY, MOVE_REFLECT, MOVE_ENCORE},
         },
     },
@@ -23206,19 +23048,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_JUGGLER_KAYDEN] =
 {
     .trainerName = _("Kayden"),
-    .trainerClass = TRAINER_CLASS_JUGGLER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_JUGGLER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    JUGGLER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_JUGGLER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 38,
         .species = SPECIES_HYPNO,
-        IVS(0),
         },
     },
 },
@@ -23226,24 +23063,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_JUGGLER_NATE] =
 {
     .trainerName = _("Nate"),
-    .trainerClass = TRAINER_CLASS_JUGGLER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_JUGGLER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    JUGGLER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_JUGGLER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 34,
         .species = SPECIES_DROWZEE,
-        IVS(0),
         },
         {
         .lvl = 34,
         .species = SPECIES_KADABRA,
-        IVS(0),
         },
     },
 },
@@ -23251,12 +23082,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_TAMER_PHIL] =
 {
     .trainerName = _("Phil"),
-    .trainerClass = TRAINER_CLASS_TAMER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_TAMER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    TAMER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_TAMER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -23276,12 +23103,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_TAMER_EDGAR] =
 {
     .trainerName = _("Edgar"),
-    .trainerClass = TRAINER_CLASS_TAMER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_TAMER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    TAMER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_TAMER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -23306,12 +23129,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_TAMER_JASON] =
 {
     .trainerName = _("Jason"),
-    .trainerClass = TRAINER_CLASS_TAMER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_TAMER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    TAMER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_TAMER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
@@ -23326,12 +23145,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_TAMER_COLE] =
 {
     .trainerName = _("Cole"),
-    .trainerClass = TRAINER_CLASS_TAMER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_TAMER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    TAMER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_TAMER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -23351,12 +23166,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_TAMER_VINCENT] =
 {
     .trainerName = _("Vincent"),
-    .trainerClass = TRAINER_CLASS_TAMER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_TAMER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    TAMER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_TAMER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -23376,12 +23187,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_TAMER_JOHN] =
 {
     .trainerName = _("John"),
-    .trainerClass = TRAINER_CLASS_TAMER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_TAMER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    TAMER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_TAMER_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
@@ -23411,24 +23218,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_SEBASTIAN] =
 {
     .trainerName = _("Sebastian"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_PIDGEY,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_PIDGEOTTO,
-        IVS(0),
         },
     },
 },
@@ -23436,39 +23237,30 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_PERRY] =
 {
     .trainerName = _("Perry"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 25,
         .species = SPECIES_SPEAROW,
-        IVS(0),
         },
         {
         .lvl = 25,
         .species = SPECIES_PIDGEY,
-        IVS(0),
         },
         {
         .lvl = 25,
         .species = SPECIES_PIDGEY,
-        IVS(0),
         },
         {
         .lvl = 25,
         .species = SPECIES_SPEAROW,
-        IVS(0),
         },
         {
         .lvl = 25,
         .species = SPECIES_SPEAROW,
-        IVS(0),
         },
     },
 },
@@ -23476,34 +23268,26 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_ROBERT] =
 {
     .trainerName = _("Robert"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 26,
         .species = SPECIES_PIDGEY,
-        IVS(0),
         },
         {
         .lvl = 26,
         .species = SPECIES_PIDGEOTTO,
-        IVS(0),
         },
         {
         .lvl = 26,
         .species = SPECIES_SPEAROW,
-        IVS(0),
         },
         {
         .lvl = 26,
         .species = SPECIES_FEAROW,
-        IVS(0),
         },
     },
 },
@@ -23511,19 +23295,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_DONALD] =
 {
     .trainerName = _("Donald"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 33,
         .species = SPECIES_FARFETCHD,
-        IVS(0),
         },
     },
 },
@@ -23531,24 +23310,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_BENNY] =
 {
     .trainerName = _("Benny"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_SPEAROW,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_FEAROW,
-        IVS(0),
         },
     },
 },
@@ -23556,34 +23329,26 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_EDWIN] =
 {
     .trainerName = _("Edwin"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 26,
         .species = SPECIES_PIDGEOTTO,
-        IVS(0),
         },
         {
         .lvl = 26,
         .species = SPECIES_FARFETCHD,
-        IVS(0),
         },
         {
         .lvl = 26,
         .species = SPECIES_DODUO,
-        IVS(0),
         },
         {
         .lvl = 26,
         .species = SPECIES_PIDGEY,
-        IVS(0),
         },
     },
 },
@@ -23591,29 +23356,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_CHESTER] =
 {
     .trainerName = _("Chester"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 28,
         .species = SPECIES_DODRIO,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_DODUO,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_DODUO,
-        IVS(0),
         },
     },
 },
@@ -23621,24 +23379,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_WILTON] =
 {
     .trainerName = _("Wilton"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_SPEAROW,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_FEAROW,
-        IVS(0),
         },
     },
 },
@@ -23646,19 +23398,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_RAMIRO] =
 {
     .trainerName = _("Ramiro"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 34,
         .species = SPECIES_DODRIO,
-        IVS(0),
         },
     },
 },
@@ -23666,34 +23413,26 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_JACOB] =
 {
     .trainerName = _("Jacob"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 26,
         .species = SPECIES_SPEAROW,
-        IVS(0),
         },
         {
         .lvl = 26,
         .species = SPECIES_SPEAROW,
-        IVS(0),
         },
         {
         .lvl = 26,
         .species = SPECIES_FEAROW,
-        IVS(0),
         },
         {
         .lvl = 26,
         .species = SPECIES_SPEAROW,
-        IVS(0),
         },
     },
 },
@@ -23701,29 +23440,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_ROGER] =
 {
     .trainerName = _("Roger"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 30,
         .species = SPECIES_FEAROW,
-        IVS(0),
         },
         {
         .lvl = 30,
         .species = SPECIES_FEAROW,
-        IVS(0),
         },
         {
         .lvl = 30,
         .species = SPECIES_PIDGEOTTO,
-        IVS(0),
         },
     },
 },
@@ -23731,34 +23463,26 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_REED] =
 {
     .trainerName = _("Reed"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 39,
         .species = SPECIES_PIDGEOTTO,
-        IVS(0),
         },
         {
         .lvl = 39,
         .species = SPECIES_PIDGEOTTO,
-        IVS(0),
         },
         {
         .lvl = 39,
         .species = SPECIES_PIDGEY,
-        IVS(0),
         },
         {
         .lvl = 39,
         .species = SPECIES_PIDGEOTTO,
-        IVS(0),
         },
     },
 },
@@ -23766,24 +23490,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_KEITH] =
 {
     .trainerName = _("Keith"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 39,
         .species = SPECIES_FARFETCHD,
-        IVS(0),
         },
         {
         .lvl = 39,
         .species = SPECIES_FEAROW,
-        IVS(0),
         },
     },
 },
@@ -23791,29 +23509,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_CARTER] =
 {
     .trainerName = _("Carter"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 28,
         .species = SPECIES_PIDGEY,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_DODUO,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_PIDGEOTTO,
-        IVS(0),
         },
     },
 },
@@ -23821,34 +23532,26 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_MITCH] =
 {
     .trainerName = _("Mitch"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 26,
         .species = SPECIES_PIDGEY,
-        IVS(0),
         },
         {
         .lvl = 26,
         .species = SPECIES_SPEAROW,
-        IVS(0),
         },
         {
         .lvl = 26,
         .species = SPECIES_PIDGEY,
-        IVS(0),
         },
         {
         .lvl = 26,
         .species = SPECIES_FEAROW,
-        IVS(0),
         },
     },
 },
@@ -23856,24 +23559,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_BECK] =
 {
     .trainerName = _("Beck"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_PIDGEOTTO,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_FEAROW,
-        IVS(0),
         },
     },
 },
@@ -23881,29 +23578,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_MARLON] =
 {
     .trainerName = _("Marlon"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 28,
         .species = SPECIES_SPEAROW,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_DODUO,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_FEAROW,
-        IVS(0),
         },
     },
 },
@@ -23911,12 +23601,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BLACK_BELT_KOICHI] =
 {
     .trainerName = _("Koichi"),
-    .trainerClass = TRAINER_CLASS_BLACK_BELT_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BLACK_BELT_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -23938,12 +23624,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BLACK_BELT_MIKE] =
 {
     .trainerName = _("Mike"),
-    .trainerClass = TRAINER_CLASS_BLACK_BELT_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BLACK_BELT_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -23971,12 +23653,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BLACK_BELT_HIDEKI] =
 {
     .trainerName = _("Hideki"),
-    .trainerClass = TRAINER_CLASS_BLACK_BELT_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BLACK_BELT_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -23998,12 +23676,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BLACK_BELT_AARON] =
 {
     .trainerName = _("Aaron"),
-    .trainerClass = TRAINER_CLASS_BLACK_BELT_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BLACK_BELT_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
@@ -24019,12 +23693,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BLACK_BELT_HITOSHI] =
 {
     .trainerName = _("Hitoshi"),
-    .trainerClass = TRAINER_CLASS_BLACK_BELT_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BLACK_BELT_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -24052,12 +23722,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BLACK_BELT_ATSUSHI] =
 {
     .trainerName = _("Atsushi"),
-    .trainerClass = TRAINER_CLASS_BLACK_BELT_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BLACK_BELT_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -24079,12 +23745,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BLACK_BELT_KIYO] =
 {
     .trainerName = _("Kiyo"),
-    .trainerClass = TRAINER_CLASS_BLACK_BELT_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BLACK_BELT_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
@@ -24100,12 +23762,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BLACK_BELT_TAKASHI] =
 {
     .trainerName = _("Takashi"),
-    .trainerClass = TRAINER_CLASS_BLACK_BELT_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BLACK_BELT_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -24133,12 +23791,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BLACK_BELT_DAISUKE] =
 {
     .trainerName = _("Daisuke"),
-    .trainerClass = TRAINER_CLASS_BLACK_BELT_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BLACK_BELT_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -24163,288 +23817,21 @@ UNUSED_TRAINER(15),
     },
 },
 
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_OAKS_LAB_SQUIRTLE] =
-{
-    .trainerName = _("Terry"),
-    .trainerClass = TRAINER_CLASS_RIVAL_EARLY_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RIVAL_EARLY_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_RIVAL_EARLY_FRLG,
-    .partySize = 1,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 5,
-        .species = SPECIES_SQUIRTLE,
-        IVS(0),
-        .moves = { MOVE_TACKLE, MOVE_TAIL_WHIP,},
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_OAKS_LAB_BULBASAUR] =
-{
-    .trainerName = _("Terry"),
-    .trainerClass = TRAINER_CLASS_RIVAL_EARLY_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RIVAL_EARLY_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_RIVAL_EARLY_FRLG,
-    .partySize = 1,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 5,
-        .species = SPECIES_BULBASAUR,
-        IVS(0),
-        .moves = {MOVE_TACKLE, MOVE_GROWL, MOVE_NONE, MOVE_NONE},
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_OAKS_LAB_CHARMANDER] =
-{
-    .trainerName = _("Terry"),
-    .trainerClass = TRAINER_CLASS_RIVAL_EARLY_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RIVAL_EARLY_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_RIVAL_EARLY_FRLG,
-    .partySize = 1,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 5,
-        .species = SPECIES_CHARMANDER,
-        IVS(0),
-        .moves = {MOVE_SCRATCH, MOVE_GROWL, MOVE_NONE, MOVE_NONE},
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_ROUTE22_EARLY_SQUIRTLE] =
-{
-    .trainerName = _("Terry"),
-    .trainerClass = TRAINER_CLASS_RIVAL_EARLY_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RIVAL_EARLY_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_RIVAL_EARLY_FRLG,
-    .partySize = 2,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 9,
-        .species = SPECIES_PIDGEY,
-        IVS(6),
-        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_NONE, MOVE_NONE},
-        },
-        {
-        .lvl = 9,
-        .species = SPECIES_SQUIRTLE,
-        IVS(6),
-        .moves = {MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_NONE, MOVE_NONE},
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_ROUTE22_EARLY_BULBASAUR] =
-{
-    .trainerName = _("Terry"),
-    .trainerClass = TRAINER_CLASS_RIVAL_EARLY_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RIVAL_EARLY_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_RIVAL_EARLY_FRLG,
-    .partySize = 2,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 9,
-        .species = SPECIES_PIDGEY,
-        IVS(6),
-        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_NONE, MOVE_NONE},
-        },
-        {
-        .lvl = 9,
-        .species = SPECIES_BULBASAUR,
-        IVS(6),
-        .moves = {MOVE_TACKLE, MOVE_GROWL, MOVE_NONE, MOVE_NONE},
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_ROUTE22_EARLY_CHARMANDER] =
-{
-    .trainerName = _("Terry"),
-    .trainerClass = TRAINER_CLASS_RIVAL_EARLY_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RIVAL_EARLY_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_RIVAL_EARLY_FRLG,
-    .partySize = 2,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 9,
-        .species = SPECIES_PIDGEY,
-        IVS(6),
-        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_NONE, MOVE_NONE},
-        },
-        {
-        .lvl = 9,
-        .species = SPECIES_CHARMANDER,
-        IVS(6),
-        .moves = {MOVE_SCRATCH, MOVE_GROWL, MOVE_NONE, MOVE_NONE},
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_CERULEAN_SQUIRTLE] =
-{
-    .trainerName = _("Terry"),
-    .trainerClass = TRAINER_CLASS_RIVAL_EARLY_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RIVAL_EARLY_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_RIVAL_EARLY_FRLG,
-    .partySize = 4,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 17,
-        .species = SPECIES_PIDGEOTTO,
-        IVS(6),
-        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_GUST, MOVE_QUICK_ATTACK},
-        },
-        {
-        .lvl = 16,
-        .species = SPECIES_ABRA,
-        IVS(6),
-        .moves = {MOVE_TELEPORT, MOVE_NONE, MOVE_NONE, MOVE_NONE},
-        },
-        {
-        .lvl = 15,
-        .species = SPECIES_RATTATA,
-        IVS(6),
-        .moves = {MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_QUICK_ATTACK, MOVE_NONE},
-        },
-        {
-        .lvl = 18,
-        .species = SPECIES_SQUIRTLE,
-        IVS(12),
-        .moves = {MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_WITHDRAW, MOVE_WATER_GUN},
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_CERULEAN_BULBASAUR] =
-{
-    .trainerName = _("Terry"),
-    .trainerClass = TRAINER_CLASS_RIVAL_EARLY_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RIVAL_EARLY_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_RIVAL_EARLY_FRLG,
-    .partySize = 4,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 17,
-        .species = SPECIES_PIDGEOTTO,
-        IVS(6),
-        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_GUST, MOVE_QUICK_ATTACK},
-        },
-        {
-        .lvl = 16,
-        .species = SPECIES_ABRA,
-        IVS(6),
-        .moves = {MOVE_TELEPORT, MOVE_NONE, MOVE_NONE, MOVE_NONE},
-        },
-        {
-        .lvl = 15,
-        .species = SPECIES_RATTATA,
-        IVS(6),
-        .moves = {MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_QUICK_ATTACK, MOVE_NONE},
-        },
-        {
-        .lvl = 18,
-        .species = SPECIES_BULBASAUR,
-        IVS(12),
-        .moves = {MOVE_SLEEP_POWDER, MOVE_POISON_POWDER, MOVE_VINE_WHIP, MOVE_LEECH_SEED},
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_CERULEAN_CHARMANDER] =
-{
-    .trainerName = _("Terry"),
-    .trainerClass = TRAINER_CLASS_RIVAL_EARLY_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RIVAL_EARLY_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_RIVAL_EARLY_FRLG,
-    .partySize = 4,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 17,
-        .species = SPECIES_PIDGEOTTO,
-        IVS(6),
-        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_GUST, MOVE_QUICK_ATTACK},
-        },
-        {
-        .lvl = 16,
-        .species = SPECIES_ABRA,
-        IVS(6),
-        .moves = {MOVE_TELEPORT, MOVE_NONE, MOVE_NONE, MOVE_NONE},
-        },
-        {
-        .lvl = 15,
-        .species = SPECIES_RATTATA,
-        IVS(6),
-        .moves = {MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_QUICK_ATTACK, MOVE_NONE},
-        },
-        {
-        .lvl = 18,
-        .species = SPECIES_CHARMANDER,
-        IVS(12),
-        .moves = {MOVE_METAL_CLAW, MOVE_EMBER, MOVE_GROWL, MOVE_SCRATCH},
-        },
-    },
-},
-
 [DIFFICULTY_NORMAL][TRAINER_SCIENTIST_TED] =
 {
     .trainerName = _("Ted"),
-    .trainerClass = TRAINER_CLASS_SCIENTIST_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SCIENTIST_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_ELECTRODE,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_WEEZING,
-        IVS(0),
         },
     },
 },
@@ -24452,37 +23839,29 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SCIENTIST_CONNOR] =
 {
     .trainerName = _("Connor"),
-    .trainerClass = TRAINER_CLASS_SCIENTIST_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SCIENTIST_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 26,
         .species = SPECIES_GRIMER,
-        IVS(0),
         .moves = {MOVE_SCREECH, MOVE_MINIMIZE, MOVE_SLUDGE, MOVE_DISABLE},
         },
         {
         .lvl = 26,
         .species = SPECIES_WEEZING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
         {
         .lvl = 26,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_SELF_DESTRUCT},
         },
         {
         .lvl = 26,
         .species = SPECIES_WEEZING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
     },
@@ -24491,29 +23870,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SCIENTIST_JERRY] =
 {
     .trainerName = _("Jerry"),
-    .trainerClass = TRAINER_CLASS_SCIENTIST_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SCIENTIST_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 28,
         .species = SPECIES_MAGNEMITE,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_VOLTORB,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_MAGNETON,
-        IVS(0),
         },
     },
 },
@@ -24521,25 +23893,19 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SCIENTIST_JOSE] =
 {
     .trainerName = _("Jose"),
-    .trainerClass = TRAINER_CLASS_SCIENTIST_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SCIENTIST_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_ELECTRODE,
-        IVS(0),
         .moves = {MOVE_SPARK, MOVE_SONIC_BOOM, MOVE_SCREECH, MOVE_TACKLE},
         },
         {
         .lvl = 29,
         .species = SPECIES_WEEZING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
     },
@@ -24548,19 +23914,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SCIENTIST_RODNEY] =
 {
     .trainerName = _("Rodney"),
-    .trainerClass = TRAINER_CLASS_SCIENTIST_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SCIENTIST_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 33,
         .species = SPECIES_ELECTRODE,
-        IVS(0),
         },
     },
 },
@@ -24568,37 +23929,29 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SCIENTIST_BEAU] =
 {
     .trainerName = _("Beau"),
-    .trainerClass = TRAINER_CLASS_SCIENTIST_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SCIENTIST_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 26,
         .species = SPECIES_MAGNETON,
-        IVS(0),
         .moves = {MOVE_SPARK, MOVE_THUNDER_WAVE, MOVE_SONIC_BOOM, MOVE_SUPERSONIC},
         },
         {
         .lvl = 26,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
         {
         .lvl = 26,
         .species = SPECIES_WEEZING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
         {
         .lvl = 26,
         .species = SPECIES_MAGNEMITE,
-        IVS(0),
         .moves = {MOVE_SPARK, MOVE_THUNDER_WAVE, MOVE_SONIC_BOOM, MOVE_SUPERSONIC},
         },
     },
@@ -24607,43 +23960,34 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SCIENTIST_TAYLOR] =
 {
     .trainerName = _("Taylor"),
-    .trainerClass = TRAINER_CLASS_SCIENTIST_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SCIENTIST_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 25,
         .species = SPECIES_VOLTORB,
-        IVS(0),
         .moves = {MOVE_SPARK, MOVE_SONIC_BOOM, MOVE_SCREECH, MOVE_TACKLE},
         },
         {
         .lvl = 25,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
         {
         .lvl = 25,
         .species = SPECIES_MAGNETON,
-        IVS(0),
         .moves = {MOVE_THUNDER_WAVE, MOVE_SONIC_BOOM, MOVE_SUPERSONIC, MOVE_THUNDER_SHOCK},
         },
         {
         .lvl = 25,
         .species = SPECIES_MAGNEMITE,
-        IVS(0),
         .moves = {MOVE_THUNDER_WAVE, MOVE_SONIC_BOOM, MOVE_SUPERSONIC, MOVE_THUNDER_SHOCK},
         },
         {
         .lvl = 25,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_SELF_DESTRUCT},
         },
     },
@@ -24652,24 +23996,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SCIENTIST_JOSHUA] =
 {
     .trainerName = _("Joshua"),
-    .trainerClass = TRAINER_CLASS_SCIENTIST_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SCIENTIST_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_ELECTRODE,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_MUK,
-        IVS(0),
         },
     },
 },
@@ -24677,24 +24015,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SCIENTIST_PARKER] =
 {
     .trainerName = _("Parker"),
-    .trainerClass = TRAINER_CLASS_SCIENTIST_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SCIENTIST_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_GRIMER,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_ELECTRODE,
-        IVS(0),
         },
     },
 },
@@ -24702,31 +24034,24 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SCIENTIST_ED] =
 {
     .trainerName = _("Ed"),
-    .trainerClass = TRAINER_CLASS_SCIENTIST_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SCIENTIST_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 28,
         .species = SPECIES_VOLTORB,
-        IVS(0),
         .moves = {MOVE_SPARK, MOVE_SONIC_BOOM, MOVE_SCREECH, MOVE_TACKLE},
         },
         {
         .lvl = 28,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_TACKLE, MOVE_SMOG},
         },
         {
         .lvl = 28,
         .species = SPECIES_MAGNETON,
-        IVS(0),
         .moves = {MOVE_SPARK, MOVE_THUNDER_WAVE, MOVE_SONIC_BOOM, MOVE_SUPERSONIC},
         },
     },
@@ -24735,24 +24060,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SCIENTIST_TRAVIS] =
 {
     .trainerName = _("Travis"),
-    .trainerClass = TRAINER_CLASS_SCIENTIST_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SCIENTIST_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_MAGNEMITE,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_KOFFING,
-        IVS(0),
         },
     },
 },
@@ -24760,29 +24079,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SCIENTIST_BRAYDON] =
 {
     .trainerName = _("Braydon"),
-    .trainerClass = TRAINER_CLASS_SCIENTIST_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SCIENTIST_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 33,
         .species = SPECIES_MAGNEMITE,
-        IVS(0),
         },
         {
         .lvl = 33,
         .species = SPECIES_MAGNETON,
-        IVS(0),
         },
         {
         .lvl = 33,
         .species = SPECIES_VOLTORB,
-        IVS(0),
         },
     },
 },
@@ -24790,24 +24102,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SCIENTIST_IVAN] =
 {
     .trainerName = _("Ivan"),
-    .trainerClass = TRAINER_CLASS_SCIENTIST_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SCIENTIST_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 34,
         .species = SPECIES_MAGNEMITE,
-        IVS(0),
         },
         {
         .lvl = 34,
         .species = SPECIES_ELECTRODE,
-        IVS(0),
         },
     },
 },
@@ -24818,9 +24124,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_BOSS_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_LEADER_GIOVANNI_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LEADER_GIOVANNI_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -24848,9 +24152,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_BOSS_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_LEADER_GIOVANNI_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LEADER_GIOVANNI_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
@@ -24883,41 +24185,34 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_LEADER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_LEADER_GIOVANNI_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .items = { ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_FULL_HEAL },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_FULL_HEAL},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_LEADER_GIOVANNI_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 45,
         .species = SPECIES_RHYHORN,
-        IVS(0),
         .moves = {MOVE_TAKE_DOWN, MOVE_ROCK_BLAST, MOVE_SCARY_FACE, MOVE_EARTHQUAKE},
         },
         {
         .lvl = 42,
         .species = SPECIES_DUGTRIO,
-        IVS(0),
         .moves = {MOVE_SLASH, MOVE_SAND_TOMB, MOVE_MUD_SLAP, MOVE_EARTHQUAKE},
         },
         {
         .lvl = 44,
         .species = SPECIES_NIDOQUEEN,
-        IVS(0),
         .moves = {MOVE_BODY_SLAM, MOVE_DOUBLE_KICK, MOVE_POISON_STING, MOVE_EARTHQUAKE},
         },
         {
         .lvl = 45,
         .species = SPECIES_NIDOKING,
-        IVS(0),
         .moves = {MOVE_THRASH, MOVE_DOUBLE_KICK, MOVE_POISON_STING, MOVE_EARTHQUAKE},
         },
         {
         .lvl = 50,
         .species = SPECIES_RHYHORN,
-        IVS(0),
         .moves = {MOVE_TAKE_DOWN, MOVE_ROCK_BLAST, MOVE_SCARY_FACE, MOVE_EARTHQUAKE},
         },
     },
@@ -24929,21 +24224,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 13,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 13,
         .species = SPECIES_ZUBAT,
-        IVS(0),
         },
     },
 },
@@ -24954,26 +24245,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 11,
         .species = SPECIES_SANDSHREW,
-        IVS(0),
         },
         {
         .lvl = 11,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 11,
         .species = SPECIES_ZUBAT,
-        IVS(0),
         },
     },
 },
@@ -24984,21 +24270,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 11,
         .species = SPECIES_ZUBAT,
-        IVS(0),
         },
         {
         .lvl = 11,
         .species = SPECIES_EKANS,
-        IVS(0),
         },
     },
 },
@@ -25009,21 +24291,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 13,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 13,
         .species = SPECIES_SANDSHREW,
-        IVS(0),
         },
     },
 },
@@ -25034,21 +24312,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 17,
         .species = SPECIES_MACHOP,
-        IVS(0),
         },
         {
         .lvl = 17,
         .species = SPECIES_DROWZEE,
-        IVS(0),
         },
     },
 },
@@ -25059,21 +24333,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 15,
         .species = SPECIES_EKANS,
-        IVS(0),
         },
         {
         .lvl = 15,
         .species = SPECIES_ZUBAT,
-        IVS(0),
         },
     },
 },
@@ -25084,21 +24354,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 20,
         .species = SPECIES_RATICATE,
-        IVS(0),
         },
         {
         .lvl = 20,
         .species = SPECIES_ZUBAT,
-        IVS(0),
         },
     },
 },
@@ -25109,21 +24375,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 21,
         .species = SPECIES_DROWZEE,
-        IVS(0),
         },
         {
         .lvl = 21,
         .species = SPECIES_MACHOP,
-        IVS(0),
         },
     },
 },
@@ -25134,21 +24396,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 21,
         .species = SPECIES_RATICATE,
-        IVS(0),
         },
         {
         .lvl = 21,
         .species = SPECIES_RATICATE,
-        IVS(0),
         },
     },
 },
@@ -25159,28 +24417,23 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 20,
         .species = SPECIES_GRIMER,
-        IVS(0),
         .moves = {MOVE_MINIMIZE, MOVE_SLUDGE, MOVE_DISABLE, MOVE_HARDEN},
         },
         {
         .lvl = 20,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOG, MOVE_TACKLE, MOVE_POISON_GAS, MOVE_NONE},
         },
         {
         .lvl = 20,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOG, MOVE_TACKLE, MOVE_POISON_GAS, MOVE_NONE},
         },
     },
@@ -25192,31 +24445,25 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 19,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 19,
         .species = SPECIES_RATICATE,
-        IVS(0),
         },
         {
         .lvl = 19,
         .species = SPECIES_RATICATE,
-        IVS(0),
         },
         {
         .lvl = 19,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
     },
 },
@@ -25227,22 +24474,18 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 22,
         .species = SPECIES_GRIMER,
-        IVS(0),
         .moves = {MOVE_MINIMIZE, MOVE_SLUDGE, MOVE_DISABLE, MOVE_HARDEN},
         },
         {
         .lvl = 22,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE, MOVE_POISON_GAS},
         },
     },
@@ -25254,40 +24497,33 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 17,
         .species = SPECIES_ZUBAT,
-        IVS(0),
         .moves = {MOVE_BITE, MOVE_ASTONISH, MOVE_SUPERSONIC, MOVE_LEECH_LIFE},
         },
         {
         .lvl = 17,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOG, MOVE_TACKLE, MOVE_POISON_GAS, MOVE_NONE},
         },
         {
         .lvl = 17,
         .species = SPECIES_GRIMER,
-        IVS(0),
         .moves = {MOVE_SLUDGE, MOVE_DISABLE, MOVE_HARDEN, MOVE_POUND},
         },
         {
         .lvl = 17,
         .species = SPECIES_ZUBAT,
-        IVS(0),
         .moves = {MOVE_BITE, MOVE_ASTONISH, MOVE_SUPERSONIC, MOVE_LEECH_LIFE},
         },
         {
         .lvl = 17,
         .species = SPECIES_RATICATE,
-        IVS(0),
         .moves = {MOVE_HYPER_FANG, MOVE_QUICK_ATTACK, MOVE_TAIL_WHIP, MOVE_TACKLE},
         },
     },
@@ -25299,26 +24535,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 20,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 20,
         .species = SPECIES_RATICATE,
-        IVS(0),
         },
         {
         .lvl = 20,
         .species = SPECIES_DROWZEE,
-        IVS(0),
         },
     },
 },
@@ -25329,21 +24560,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 21,
         .species = SPECIES_MACHOP,
-        IVS(0),
         },
         {
         .lvl = 21,
         .species = SPECIES_MACHOP,
-        IVS(0),
         },
     },
 },
@@ -25354,26 +24581,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 23,
         .species = SPECIES_SANDSHREW,
-        IVS(0),
         },
         {
         .lvl = 23,
         .species = SPECIES_EKANS,
-        IVS(0),
         },
         {
         .lvl = 23,
         .species = SPECIES_SANDSLASH,
-        IVS(0),
         },
     },
 },
@@ -25384,26 +24606,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 23,
         .species = SPECIES_EKANS,
-        IVS(0),
         },
         {
         .lvl = 23,
         .species = SPECIES_SANDSHREW,
-        IVS(0),
         },
         {
         .lvl = 23,
         .species = SPECIES_ARBOK,
-        IVS(0),
         },
     },
 },
@@ -25414,21 +24631,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 21,
         .species = SPECIES_KOFFING,
-        IVS(0),
         },
         {
         .lvl = 21,
         .species = SPECIES_ZUBAT,
-        IVS(0),
         },
     },
 },
@@ -25439,26 +24652,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 25,
         .species = SPECIES_ZUBAT,
-        IVS(0),
         },
         {
         .lvl = 25,
         .species = SPECIES_ZUBAT,
-        IVS(0),
         },
         {
         .lvl = 25,
         .species = SPECIES_GOLBAT,
-        IVS(0),
         },
     },
 },
@@ -25469,21 +24677,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 26,
         .species = SPECIES_KOFFING,
-        IVS(0),
         },
         {
         .lvl = 26,
         .species = SPECIES_DROWZEE,
-        IVS(0),
         },
     },
 },
@@ -25494,31 +24698,25 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 23,
         .species = SPECIES_ZUBAT,
-        IVS(0),
         },
         {
         .lvl = 23,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 23,
         .species = SPECIES_RATICATE,
-        IVS(0),
         },
         {
         .lvl = 23,
         .species = SPECIES_ZUBAT,
-        IVS(0),
         },
     },
 },
@@ -25529,21 +24727,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 26,
         .species = SPECIES_DROWZEE,
-        IVS(0),
         },
         {
         .lvl = 26,
         .species = SPECIES_KOFFING,
-        IVS(0),
         },
     },
 },
@@ -25554,21 +24748,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_CUBONE,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_ZUBAT,
-        IVS(0),
         },
     },
 },
@@ -25579,36 +24769,29 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 25,
         .species = SPECIES_GOLBAT,
-        IVS(0),
         },
         {
         .lvl = 25,
         .species = SPECIES_ZUBAT,
-        IVS(0),
         },
         {
         .lvl = 25,
         .species = SPECIES_ZUBAT,
-        IVS(0),
         },
         {
         .lvl = 25,
         .species = SPECIES_RATICATE,
-        IVS(0),
         },
         {
         .lvl = 25,
         .species = SPECIES_ZUBAT,
-        IVS(0),
         },
     },
 },
@@ -25619,26 +24802,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 28,
         .species = SPECIES_RATICATE,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_HYPNO,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_RATICATE,
-        IVS(0),
         },
     },
 },
@@ -25649,21 +24827,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_MACHOP,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_DROWZEE,
-        IVS(0),
         },
     },
 },
@@ -25674,26 +24848,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 28,
         .species = SPECIES_EKANS,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_ZUBAT,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_CUBONE,
-        IVS(0),
         },
     },
 },
@@ -25704,16 +24873,13 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 33,
         .species = SPECIES_ARBOK,
-        IVS(0),
         },
     },
 },
@@ -25724,16 +24890,13 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 33,
         .species = SPECIES_HYPNO,
-        IVS(0),
         },
     },
 },
@@ -25744,21 +24907,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_MACHOP,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_MACHOKE,
-        IVS(0),
         },
     },
 },
@@ -25769,26 +24928,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 28,
         .species = SPECIES_ZUBAT,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_ZUBAT,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_GOLBAT,
-        IVS(0),
         },
     },
 },
@@ -25799,34 +24953,28 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 26,
         .species = SPECIES_RATICATE,
-        IVS(0),
         .moves = {MOVE_SCARY_FACE, MOVE_HYPER_FANG, MOVE_QUICK_ATTACK, MOVE_TAIL_WHIP},
         },
         {
         .lvl = 26,
         .species = SPECIES_ARBOK,
-        IVS(0),
         .moves = {MOVE_GLARE, MOVE_BITE, MOVE_POISON_STING, MOVE_LEER},
         },
         {
         .lvl = 26,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
         {
         .lvl = 26,
         .species = SPECIES_GOLBAT,
-        IVS(0),
         .moves = {MOVE_WING_ATTACK, MOVE_BITE, MOVE_ASTONISH, MOVE_SUPERSONIC},
         },
     },
@@ -25838,21 +24986,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_CUBONE,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_CUBONE,
-        IVS(0),
         },
     },
 },
@@ -25863,21 +25007,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_SANDSHREW,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_SANDSLASH,
-        IVS(0),
         },
     },
 },
@@ -25888,31 +25028,25 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 26,
         .species = SPECIES_RATICATE,
-        IVS(0),
         },
         {
         .lvl = 26,
         .species = SPECIES_ZUBAT,
-        IVS(0),
         },
         {
         .lvl = 26,
         .species = SPECIES_GOLBAT,
-        IVS(0),
         },
         {
         .lvl = 26,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
     },
 },
@@ -25923,26 +25057,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 28,
         .species = SPECIES_WEEZING,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_GOLBAT,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_KOFFING,
-        IVS(0),
         },
     },
 },
@@ -25953,26 +25082,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 28,
         .species = SPECIES_DROWZEE,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_GRIMER,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_MACHOP,
-        IVS(0),
         },
     },
 },
@@ -25983,26 +25107,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 28,
         .species = SPECIES_GOLBAT,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_DROWZEE,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_HYPNO,
-        IVS(0),
         },
     },
 },
@@ -26013,16 +25132,13 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 33,
         .species = SPECIES_MACHOKE,
-        IVS(0),
         },
     },
 },
@@ -26033,36 +25149,29 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 25,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 25,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 25,
         .species = SPECIES_ZUBAT,
-        IVS(0),
         },
         {
         .lvl = 25,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 25,
         .species = SPECIES_EKANS,
-        IVS(0),
         },
     },
 },
@@ -26073,26 +25182,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 32,
         .species = SPECIES_CUBONE,
-        IVS(0),
         },
         {
         .lvl = 32,
         .species = SPECIES_DROWZEE,
-        IVS(0),
         },
         {
         .lvl = 32,
         .species = SPECIES_MAROWAK,
-        IVS(0),
         },
     },
 },
@@ -26103,10 +25207,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_SUPER_POTION },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_SUPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -26149,10 +25251,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_HYPER_POTION },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -26195,10 +25295,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_HYPER_POTION },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -26241,10 +25339,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -26287,10 +25383,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_HYPER_POTION },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -26333,10 +25427,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_HYPER_POTION },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -26379,10 +25471,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_HYPER_POTION },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -26425,10 +25515,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -26471,10 +25559,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_HYPER_POTION },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -26517,10 +25603,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_HYPER_POTION },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -26563,10 +25647,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_SUPER_POTION },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_SUPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -26609,10 +25691,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_HYPER_POTION },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -26655,10 +25735,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -26701,10 +25779,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -26747,10 +25823,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_HYPER_POTION },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -26793,10 +25867,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -26839,10 +25911,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -26885,10 +25955,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_HYPER_POTION },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -26931,11 +25999,9 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_LORELEI_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-    .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     .mugshotColor = MUGSHOT_COLOR_PURPLE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ELITE_FOUR_LORELEI_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -26979,11 +26045,9 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_BRUNO_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-    .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     .mugshotColor = MUGSHOT_COLOR_GREEN,
-    .trainerBackPic = TRAINER_PIC_FRONT_ELITE_FOUR_BRUNO_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -27027,11 +26091,9 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_AGATHA_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-    .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     .mugshotColor = MUGSHOT_COLOR_PINK,
-    .trainerBackPic = TRAINER_PIC_FRONT_ELITE_FOUR_AGATHA_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -27075,11 +26137,9 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_LANCE_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-    .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     .mugshotColor = MUGSHOT_COLOR_BLUE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ELITE_FOUR_LANCE_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -27123,22 +26183,18 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_LEADER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_LEADER_BROCK_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_LEADER_BROCK_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 12,
         .species = SPECIES_GEODUDE,
-        IVS(0),
         .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_NONE, MOVE_NONE},
         },
         {
         .lvl = 14,
         .species = SPECIES_ONIX,
-        IVS(0),
         .moves = {MOVE_TACKLE, MOVE_BIND, MOVE_ROCK_TOMB, MOVE_NONE},
         },
     },
@@ -27150,23 +26206,19 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_LEADER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_LEADER_MISTY_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .items = { ITEM_SUPER_POTION },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_SUPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_LEADER_MISTY_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 18,
         .species = SPECIES_STARYU,
-        IVS(0),
         .moves = {MOVE_TACKLE, MOVE_HARDEN, MOVE_RECOVER, MOVE_WATER_PULSE},
         },
         {
         .lvl = 21,
         .species = SPECIES_STARMIE,
-        IVS(0),
         .moves = {MOVE_SWIFT, MOVE_RECOVER, MOVE_RAPID_SPIN, MOVE_WATER_PULSE},
         },
     },
@@ -27178,29 +26230,24 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_LEADER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_LEADER_LT_SURGE_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .items = { ITEM_SUPER_POTION, ITEM_FULL_HEAL },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_SUPER_POTION, ITEM_FULL_HEAL},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_LEADER_LT_SURGE_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 21,
         .species = SPECIES_VOLTORB,
-        IVS(0),
         .moves = {MOVE_SONIC_BOOM, MOVE_TACKLE, MOVE_SCREECH, MOVE_SHOCK_WAVE},
         },
         {
         .lvl = 18,
         .species = SPECIES_PIKACHU,
-        IVS(0),
         .moves = {MOVE_QUICK_ATTACK, MOVE_THUNDER_WAVE, MOVE_DOUBLE_TEAM, MOVE_SHOCK_WAVE},
         },
         {
         .lvl = 24,
         .species = SPECIES_RAICHU,
-        IVS(0),
         .moves = {MOVE_QUICK_ATTACK, MOVE_THUNDER_WAVE, MOVE_DOUBLE_TEAM, MOVE_SHOCK_WAVE},
         },
     },
@@ -27212,29 +26259,24 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_LEADER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_LEADER_ERIKA_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .items = { ITEM_HYPER_POTION, ITEM_FULL_HEAL },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_HYPER_POTION, ITEM_FULL_HEAL},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_LEADER_ERIKA_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_VICTREEBEL,
-        IVS(0),
         .moves = {MOVE_STUN_SPORE, MOVE_ACID, MOVE_POISON_POWDER, MOVE_GIGA_DRAIN},
         },
         {
         .lvl = 24,
         .species = SPECIES_TANGELA,
-        IVS(0),
         .moves = {MOVE_POISON_POWDER, MOVE_CONSTRICT, MOVE_INGRAIN, MOVE_GIGA_DRAIN},
         },
         {
         .lvl = 29,
         .species = SPECIES_VILEPLUME,
-        IVS(0),
         .moves = {MOVE_SLEEP_POWDER, MOVE_ACID, MOVE_STUN_SPORE, MOVE_GIGA_DRAIN},
         },
     },
@@ -27246,35 +26288,29 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_LEADER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_LEADER_KOGA_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .items = { ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_FULL_HEAL },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_FULL_HEAL},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_LEADER_KOGA_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 37,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SELF_DESTRUCT, MOVE_SLUDGE, MOVE_SMOKESCREEN, MOVE_TOXIC},
         },
         {
         .lvl = 39,
         .species = SPECIES_MUK,
-        IVS(0),
         .moves = {MOVE_MINIMIZE, MOVE_SLUDGE, MOVE_ACID_ARMOR, MOVE_TOXIC},
         },
         {
         .lvl = 37,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SELF_DESTRUCT, MOVE_SLUDGE, MOVE_SMOKESCREEN, MOVE_TOXIC},
         },
         {
         .lvl = 43,
         .species = SPECIES_WEEZING,
-        IVS(0),
         .moves = {MOVE_TACKLE, MOVE_SLUDGE, MOVE_SMOKESCREEN, MOVE_TOXIC},
         },
     },
@@ -27286,35 +26322,29 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_LEADER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_LEADER_BLAINE_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .items = { ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_FULL_HEAL },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_FULL_HEAL},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_LEADER_BLAINE_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 42,
         .species = SPECIES_GROWLITHE,
-        IVS(0),
         .moves = {MOVE_BITE, MOVE_ROAR, MOVE_TAKE_DOWN, MOVE_FIRE_BLAST},
         },
         {
         .lvl = 40,
         .species = SPECIES_PONYTA,
-        IVS(0),
         .moves = {MOVE_STOMP, MOVE_BOUNCE, MOVE_FIRE_SPIN, MOVE_FIRE_BLAST},
         },
         {
         .lvl = 42,
         .species = SPECIES_RAPIDASH,
-        IVS(0),
         .moves = {MOVE_STOMP, MOVE_BOUNCE, MOVE_FIRE_SPIN, MOVE_FIRE_BLAST},
         },
         {
         .lvl = 47,
         .species = SPECIES_ARCANINE,
-        IVS(0),
         .moves = {MOVE_BITE, MOVE_ROAR, MOVE_TAKE_DOWN, MOVE_FIRE_BLAST},
         },
     },
@@ -27326,35 +26356,29 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_LEADER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_LEADER_SABRINA_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .items = { ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_FULL_HEAL },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_FULL_HEAL},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_LEADER_SABRINA_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 38,
         .species = SPECIES_KADABRA,
-        IVS(0),
         .moves = {MOVE_PSYBEAM, MOVE_REFLECT, MOVE_FUTURE_SIGHT, MOVE_CALM_MIND},
         },
         {
         .lvl = 37,
         .species = SPECIES_MR_MIME,
-        IVS(0),
         .moves = {MOVE_BARRIER, MOVE_PSYBEAM, MOVE_BATON_PASS, MOVE_CALM_MIND},
         },
         {
         .lvl = 38,
         .species = SPECIES_VENOMOTH,
-        IVS(0),
         .moves = {MOVE_PSYBEAM, MOVE_GUST, MOVE_LEECH_LIFE, MOVE_SUPERSONIC},
         },
         {
         .lvl = 43,
         .species = SPECIES_ALAKAZAM,
-        IVS(0),
         .moves = {MOVE_PSYCHIC, MOVE_RECOVER, MOVE_FUTURE_SIGHT, MOVE_CALM_MIND},
         },
     },
@@ -27363,24 +26387,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_GENTLEMAN_THOMAS] =
 {
     .trainerName = _("Thomas"),
-    .trainerClass = TRAINER_CLASS_GENTLEMAN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_GENTLEMAN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    GENTLEMAN_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_GENTLEMAN_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 18,
         .species = SPECIES_GROWLITHE,
-        IVS(0),
         },
         {
         .lvl = 18,
         .species = SPECIES_GROWLITHE,
-        IVS(0),
         },
     },
 },
@@ -27388,24 +26406,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_GENTLEMAN_ARTHUR] =
 {
     .trainerName = _("Arthur"),
-    .trainerClass = TRAINER_CLASS_GENTLEMAN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_GENTLEMAN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    GENTLEMAN_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_GENTLEMAN_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 19,
         .species = SPECIES_NIDORAN_M,
-        IVS(0),
         },
         {
         .lvl = 19,
         .species = SPECIES_NIDORAN_F,
-        IVS(0),
         },
     },
 },
@@ -27413,19 +26425,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_GENTLEMAN_TUCKER] =
 {
     .trainerName = _("Tucker"),
-    .trainerClass = TRAINER_CLASS_GENTLEMAN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_GENTLEMAN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    GENTLEMAN_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_GENTLEMAN_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 23,
         .species = SPECIES_PIKACHU,
-        IVS(0),
         },
     },
 },
@@ -27433,19 +26440,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_GENTLEMAN_NORTON] =
 {
     .trainerName = _("Norton"),
-    .trainerClass = TRAINER_CLASS_GENTLEMAN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_GENTLEMAN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    GENTLEMAN_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_GENTLEMAN_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 48,
         .species = SPECIES_PERSIAN,
-        IVS(0),
         },
     },
 },
@@ -27453,684 +26455,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_GENTLEMAN_WALTER] =
 {
     .trainerName = _("Walter"),
-    .trainerClass = TRAINER_CLASS_GENTLEMAN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_GENTLEMAN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    GENTLEMAN_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_GENTLEMAN_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 17,
         .species = SPECIES_GROWLITHE,
-        IVS(0),
         },
         {
         .lvl = 17,
         .species = SPECIES_PONYTA,
-        IVS(0),
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_SS_ANNE_SQUIRTLE] =
-{
-    .trainerName = _("Terry"),
-    .trainerClass = TRAINER_CLASS_RIVAL_LATE_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RIVAL_LATE_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_RIVAL_LATE_FRLG,
-    .partySize = 4,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 19,
-        .species = SPECIES_PIDGEOTTO,
-        IVS(6),
-        },
-        {
-        .lvl = 16,
-        .species = SPECIES_RATICATE,
-        IVS(6),
-        },
-        {
-        .lvl = 18,
-        .species = SPECIES_KADABRA,
-        IVS(6),
-        },
-        {
-        .lvl = 20,
-        .species = SPECIES_WARTORTLE,
-        IVS(12),
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_SS_ANNE_BULBASAUR] =
-{
-    .trainerName = _("Terry"),
-    .trainerClass = TRAINER_CLASS_RIVAL_LATE_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RIVAL_LATE_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_RIVAL_LATE_FRLG,
-    .partySize = 4,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 19,
-        .species = SPECIES_PIDGEOTTO,
-        IVS(6),
-        },
-        {
-        .lvl = 16,
-        .species = SPECIES_RATICATE,
-        IVS(6),
-        },
-        {
-        .lvl = 18,
-        .species = SPECIES_KADABRA,
-        IVS(6),
-        },
-        {
-        .lvl = 20,
-        .species = SPECIES_IVYSAUR,
-        IVS(12),
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_SS_ANNE_CHARMANDER] =
-{
-    .trainerName = _("Terry"),
-    .trainerClass = TRAINER_CLASS_RIVAL_LATE_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RIVAL_LATE_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_RIVAL_LATE_FRLG,
-    .partySize = 4,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 19,
-        .species = SPECIES_PIDGEOTTO,
-        IVS(6),
-        },
-        {
-        .lvl = 16,
-        .species = SPECIES_RATICATE,
-        IVS(6),
-        },
-        {
-        .lvl = 18,
-        .species = SPECIES_KADABRA,
-        IVS(6),
-        },
-        {
-        .lvl = 20,
-        .species = SPECIES_CHARMELEON,
-        IVS(12),
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_POKEMON_TOWER_SQUIRTLE] =
-{
-    .trainerName = _("Terry"),
-    .trainerClass = TRAINER_CLASS_RIVAL_LATE_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RIVAL_LATE_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_RIVAL_LATE_FRLG,
-    .partySize = 5,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 25,
-        .species = SPECIES_PIDGEOTTO,
-        IVS(12),
-        },
-        {
-        .lvl = 23,
-        .species = SPECIES_GROWLITHE,
-        IVS(12),
-        },
-        {
-        .lvl = 22,
-        .species = SPECIES_EXEGGCUTE,
-        IVS(12),
-        },
-        {
-        .lvl = 20,
-        .species = SPECIES_KADABRA,
-        IVS(12),
-        },
-        {
-        .lvl = 25,
-        .species = SPECIES_WARTORTLE,
-        IVS(12),
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_POKEMON_TOWER_BULBASAUR] =
-{
-    .trainerName = _("Terry"),
-    .trainerClass = TRAINER_CLASS_RIVAL_LATE_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RIVAL_LATE_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_RIVAL_LATE_FRLG,
-    .partySize = 5,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 25,
-        .species = SPECIES_PIDGEOTTO,
-        IVS(12),
-        },
-        {
-        .lvl = 23,
-        .species = SPECIES_GYARADOS,
-        IVS(12),
-        },
-        {
-        .lvl = 22,
-        .species = SPECIES_GROWLITHE,
-        IVS(12),
-        },
-        {
-        .lvl = 20,
-        .species = SPECIES_KADABRA,
-        IVS(12),
-        },
-        {
-        .lvl = 25,
-        .species = SPECIES_IVYSAUR,
-        IVS(12),
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_POKEMON_TOWER_CHARMANDER] =
-{
-    .trainerName = _("Terry"),
-    .trainerClass = TRAINER_CLASS_RIVAL_LATE_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RIVAL_LATE_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_RIVAL_LATE_FRLG,
-    .partySize = 5,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 25,
-        .species = SPECIES_PIDGEOTTO,
-        IVS(12),
-        },
-        {
-        .lvl = 23,
-        .species = SPECIES_EXEGGCUTE,
-        IVS(12),
-        },
-        {
-        .lvl = 22,
-        .species = SPECIES_GYARADOS,
-        IVS(12),
-        },
-        {
-        .lvl = 20,
-        .species = SPECIES_KADABRA,
-        IVS(12),
-        },
-        {
-        .lvl = 25,
-        .species = SPECIES_CHARMELEON,
-        IVS(12),
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_SILPH_SQUIRTLE] =
-{
-    .trainerName = _("Terry"),
-    .trainerClass = TRAINER_CLASS_RIVAL_LATE_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RIVAL_LATE_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_RIVAL_LATE_FRLG,
-    .partySize = 5,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 37,
-        .species = SPECIES_PIDGEOT,
-        IVS(12),
-        },
-        {
-        .lvl = 38,
-        .species = SPECIES_GROWLITHE,
-        IVS(12),
-        },
-        {
-        .lvl = 35,
-        .species = SPECIES_EXEGGCUTE,
-        IVS(12),
-        },
-        {
-        .lvl = 35,
-        .species = SPECIES_ALAKAZAM,
-        IVS(12),
-        },
-        {
-        .lvl = 40,
-        .species = SPECIES_BLASTOISE,
-        IVS(18),
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_SILPH_BULBASAUR] =
-{
-    .trainerName = _("Terry"),
-    .trainerClass = TRAINER_CLASS_RIVAL_LATE_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RIVAL_LATE_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_RIVAL_LATE_FRLG,
-    .partySize = 5,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 37,
-        .species = SPECIES_PIDGEOT,
-        IVS(12),
-        },
-        {
-        .lvl = 38,
-        .species = SPECIES_GYARADOS,
-        IVS(12),
-        },
-        {
-        .lvl = 35,
-        .species = SPECIES_GROWLITHE,
-        IVS(12),
-        },
-        {
-        .lvl = 35,
-        .species = SPECIES_ALAKAZAM,
-        IVS(12),
-        },
-        {
-        .lvl = 40,
-        .species = SPECIES_VENUSAUR,
-        IVS(18),
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_SILPH_CHARMANDER] =
-{
-    .trainerName = _("Terry"),
-    .trainerClass = TRAINER_CLASS_RIVAL_LATE_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RIVAL_LATE_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_RIVAL_LATE_FRLG,
-    .partySize = 5,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 37,
-        .species = SPECIES_PIDGEOT,
-        IVS(12),
-        },
-        {
-        .lvl = 38,
-        .species = SPECIES_EXEGGCUTE,
-        IVS(12),
-        },
-        {
-        .lvl = 35,
-        .species = SPECIES_GYARADOS,
-        IVS(12),
-        },
-        {
-        .lvl = 35,
-        .species = SPECIES_ALAKAZAM,
-        IVS(12),
-        },
-        {
-        .lvl = 40,
-        .species = SPECIES_CHARIZARD,
-        IVS(18),
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_ROUTE22_LATE_SQUIRTLE] =
-{
-    .trainerName = _("Terry"),
-    .trainerClass = TRAINER_CLASS_RIVAL_LATE_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RIVAL_LATE_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_RIVAL_LATE_FRLG,
-    .partySize = 6,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 47,
-        .species = SPECIES_PIDGEOT,
-        IVS(18),
-        .moves = {MOVE_FEATHER_DANCE, MOVE_WING_ATTACK, MOVE_GUST, MOVE_QUICK_ATTACK},
-        },
-        {
-        .lvl = 45,
-        .species = SPECIES_RHYHORN,
-        IVS(18),
-        .moves = {MOVE_TAKE_DOWN, MOVE_HORN_DRILL, MOVE_ROCK_BLAST, MOVE_FURY_ATTACK},
-        },
-        {
-        .lvl = 45,
-        .species = SPECIES_GROWLITHE,
-        IVS(18),
-        .moves = {MOVE_FLAME_WHEEL, MOVE_TAKE_DOWN, MOVE_LEER, MOVE_AGILITY},
-        },
-        {
-        .lvl = 45,
-        .species = SPECIES_EXEGGCUTE,
-        IVS(18),
-        .moves = {MOVE_SOLAR_BEAM, MOVE_SLEEP_POWDER, MOVE_POISON_POWDER, MOVE_STUN_SPORE},
-        },
-        {
-        .lvl = 47,
-        .species = SPECIES_ALAKAZAM,
-        IVS(18),
-        .moves = {MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_FUTURE_SIGHT, MOVE_DISABLE},
-        },
-        {
-        .lvl = 53,
-        .species = SPECIES_BLASTOISE,
-        IVS(30),
-        .moves = {MOVE_WATER_GUN, MOVE_RAIN_DANCE, MOVE_BITE, MOVE_RAPID_SPIN},
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_ROUTE22_LATE_BULBASAUR] =
-{
-    .trainerName = _("Terry"),
-    .trainerClass = TRAINER_CLASS_RIVAL_LATE_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RIVAL_LATE_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_RIVAL_LATE_FRLG,
-    .partySize = 6,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 47,
-        .species = SPECIES_PIDGEOT,
-        IVS(18),
-        .moves = {MOVE_FEATHER_DANCE, MOVE_WING_ATTACK, MOVE_GUST, MOVE_QUICK_ATTACK},
-        },
-        {
-        .lvl = 45,
-        .species = SPECIES_RHYHORN,
-        IVS(18),
-        .moves = {MOVE_TAKE_DOWN, MOVE_HORN_DRILL, MOVE_ROCK_BLAST, MOVE_FURY_ATTACK},
-        },
-        {
-        .lvl = 45,
-        .species = SPECIES_GYARADOS,
-        IVS(18),
-        .moves = {MOVE_HYDRO_PUMP, MOVE_TWISTER, MOVE_LEER, MOVE_RAIN_DANCE},
-        },
-        {
-        .lvl = 45,
-        .species = SPECIES_GROWLITHE,
-        IVS(18),
-        .moves = {MOVE_FLAME_WHEEL, MOVE_TAKE_DOWN, MOVE_LEER, MOVE_AGILITY},
-        },
-        {
-        .lvl = 47,
-        .species = SPECIES_ALAKAZAM,
-        IVS(18),
-        .moves = {MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_FUTURE_SIGHT, MOVE_DISABLE},
-        },
-        {
-        .lvl = 53,
-        .species = SPECIES_VENUSAUR,
-        IVS(30),
-        .moves = {MOVE_RAZOR_LEAF, MOVE_SWEET_SCENT, MOVE_GROWTH, MOVE_SYNTHESIS},
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_RIVAL_ROUTE22_LATE_CHARMANDER] =
-{
-    .trainerName = _("Terry"),
-    .trainerClass = TRAINER_CLASS_RIVAL_LATE_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RIVAL_LATE_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_RIVAL_LATE_FRLG,
-    .partySize = 6,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 47,
-        .species = SPECIES_PIDGEOT,
-        IVS(18),
-        .moves = {MOVE_FEATHER_DANCE, MOVE_WING_ATTACK, MOVE_GUST, MOVE_QUICK_ATTACK},
-        },
-        {
-        .lvl = 45,
-        .species = SPECIES_RHYHORN,
-        IVS(18),
-        .moves = {MOVE_TAKE_DOWN, MOVE_HORN_DRILL, MOVE_ROCK_BLAST, MOVE_FURY_ATTACK},
-        },
-        {
-        .lvl = 45,
-        .species = SPECIES_EXEGGCUTE,
-        IVS(18),
-        .moves = {MOVE_SOLAR_BEAM, MOVE_SLEEP_POWDER, MOVE_POISON_POWDER, MOVE_STUN_SPORE},
-        },
-        {
-        .lvl = 45,
-        .species = SPECIES_GYARADOS,
-        IVS(18),
-        .moves = {MOVE_HYDRO_PUMP, MOVE_TWISTER, MOVE_LEER, MOVE_RAIN_DANCE},
-        },
-        {
-        .lvl = 47,
-        .species = SPECIES_ALAKAZAM,
-        IVS(18),
-        .moves = {MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_FUTURE_SIGHT, MOVE_DISABLE},
-        },
-        {
-        .lvl = 53,
-        .species = SPECIES_CHARIZARD,
-        IVS(30),
-        .moves = {MOVE_FLAMETHROWER, MOVE_WING_ATTACK, MOVE_SLASH, MOVE_SCARY_FACE},
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_CHAMPION_FIRST_SQUIRTLE] =
-{
-    .trainerName = _("Terry"),
-    .trainerClass = TRAINER_CLASS_CHAMPION_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CHAMPION_RIVAL_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .mugshotColor = MUGSHOT_COLOR_YELLOW,
-    .trainerBackPic = TRAINER_PIC_FRONT_CHAMPION_RIVAL_FRLG,
-    .partySize = 6,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 59,
-        .species = SPECIES_PIDGEOT,
-        IVS(31),
-        .moves = {MOVE_AERIAL_ACE, MOVE_FEATHER_DANCE, MOVE_SAND_ATTACK, MOVE_WHIRLWIND},
-        },
-        {
-        .lvl = 57,
-        .species = SPECIES_ALAKAZAM,
-        IVS(31),
-        .moves = {MOVE_PSYCHIC, MOVE_FUTURE_SIGHT, MOVE_RECOVER, MOVE_REFLECT},
-        },
-        {
-        .lvl = 59,
-        .species = SPECIES_RHYDON,
-        IVS(31),
-        .moves = {MOVE_TAKE_DOWN, MOVE_EARTHQUAKE, MOVE_ROCK_TOMB, MOVE_SCARY_FACE},
-        },
-        {
-        .lvl = 59,
-        .species = SPECIES_ARCANINE,
-        IVS(31),
-        .moves = {MOVE_EXTREME_SPEED, MOVE_FLAMETHROWER, MOVE_ROAR, MOVE_BITE},
-        },
-        {
-        .lvl = 61,
-        .species = SPECIES_EXEGGUTOR,
-        IVS(31),
-        .moves = {MOVE_GIGA_DRAIN, MOVE_EGG_BOMB, MOVE_SLEEP_POWDER, MOVE_LIGHT_SCREEN},
-        },
-        {
-        .lvl = 63,
-        .species = SPECIES_BLASTOISE,
-        IVS(31),
-        .moves = {MOVE_HYDRO_PUMP, MOVE_RAIN_DANCE, MOVE_SKULL_BASH, MOVE_BITE},
-        .heldItem = ITEM_SITRUS_BERRY,
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_CHAMPION_FIRST_BULBASAUR] =
-{
-    .trainerName = _("Terry"),
-    .trainerClass = TRAINER_CLASS_CHAMPION_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CHAMPION_RIVAL_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .mugshotColor = MUGSHOT_COLOR_YELLOW,
-    .trainerBackPic = TRAINER_PIC_FRONT_CHAMPION_RIVAL_FRLG,
-    .partySize = 6,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 59,
-        .species = SPECIES_PIDGEOT,
-        IVS(31),
-        .moves = {MOVE_AERIAL_ACE, MOVE_FEATHER_DANCE, MOVE_SAND_ATTACK, MOVE_WHIRLWIND},
-        },
-        {
-        .lvl = 57,
-        .species = SPECIES_ALAKAZAM,
-        IVS(31),
-        .moves = {MOVE_PSYCHIC, MOVE_FUTURE_SIGHT, MOVE_RECOVER, MOVE_REFLECT},
-        },
-        {
-        .lvl = 59,
-        .species = SPECIES_RHYDON,
-        IVS(31),
-        .moves = {MOVE_TAKE_DOWN, MOVE_EARTHQUAKE, MOVE_ROCK_TOMB, MOVE_SCARY_FACE},
-        },
-        {
-        .lvl = 59,
-        .species = SPECIES_GYARADOS,
-        IVS(31),
-        .moves = {MOVE_HYDRO_PUMP, MOVE_DRAGON_RAGE, MOVE_BITE, MOVE_THRASH},
-        },
-        {
-        .lvl = 61,
-        .species = SPECIES_ARCANINE,
-        IVS(31),
-        .moves = {MOVE_EXTREME_SPEED, MOVE_FLAMETHROWER, MOVE_ROAR, MOVE_BITE},
-        },
-        {
-        .lvl = 63,
-        .species = SPECIES_VENUSAUR,
-        IVS(31),
-        .moves = {MOVE_SOLAR_BEAM, MOVE_SYNTHESIS, MOVE_SUNNY_DAY, MOVE_GROWTH},
-        .heldItem = ITEM_SITRUS_BERRY,
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_CHAMPION_FIRST_CHARMANDER] =
-{
-    .trainerName = _("Terry"),
-    .trainerClass = TRAINER_CLASS_CHAMPION_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CHAMPION_RIVAL_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .mugshotColor = MUGSHOT_COLOR_YELLOW,
-    .trainerBackPic = TRAINER_PIC_FRONT_CHAMPION_RIVAL_FRLG,
-    .partySize = 6,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 59,
-        .species = SPECIES_PIDGEOT,
-        IVS(31),
-        .moves = {MOVE_AERIAL_ACE, MOVE_FEATHER_DANCE, MOVE_SAND_ATTACK, MOVE_WHIRLWIND},
-        },
-        {
-        .lvl = 57,
-        .species = SPECIES_ALAKAZAM,
-        IVS(31),
-        .moves = {MOVE_PSYCHIC, MOVE_FUTURE_SIGHT, MOVE_RECOVER, MOVE_REFLECT},
-        },
-        {
-        .lvl = 59,
-        .species = SPECIES_RHYDON,
-        IVS(31),
-        .moves = {MOVE_TAKE_DOWN, MOVE_EARTHQUAKE, MOVE_ROCK_TOMB, MOVE_SCARY_FACE},
-        },
-        {
-        .lvl = 59,
-        .species = SPECIES_EXEGGUTOR,
-        IVS(31),
-        .moves = {MOVE_GIGA_DRAIN, MOVE_EGG_BOMB, MOVE_SLEEP_POWDER, MOVE_LIGHT_SCREEN},
-        },
-        {
-        .lvl = 61,
-        .species = SPECIES_GYARADOS,
-        IVS(31),
-        .moves = {MOVE_HYDRO_PUMP, MOVE_DRAGON_RAGE, MOVE_BITE, MOVE_THRASH},
-        },
-        {
-        .lvl = 63,
-        .species = SPECIES_CHARIZARD,
-        IVS(31),
-        .moves = {MOVE_FIRE_BLAST, MOVE_AERIAL_ACE, MOVE_SLASH, MOVE_FIRE_SPIN},
-        .heldItem = ITEM_SITRUS_BERRY,
         },
     },
 },
@@ -28138,19 +26474,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CHANNELER_PATRICIA] =
 {
     .trainerName = _("Patricia"),
-    .trainerClass = TRAINER_CLASS_CHANNELER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CHANNELER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 22,
         .species = SPECIES_GASTLY,
-        IVS(0),
         },
     },
 },
@@ -28158,19 +26489,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CHANNELER_CARLY] =
 {
     .trainerName = _("Carly"),
-    .trainerClass = TRAINER_CLASS_CHANNELER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CHANNELER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 24,
         .species = SPECIES_GASTLY,
-        IVS(0),
         },
     },
 },
@@ -28178,19 +26504,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CHANNELER_HOPE] =
 {
     .trainerName = _("Hope"),
-    .trainerClass = TRAINER_CLASS_CHANNELER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CHANNELER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 23,
         .species = SPECIES_GASTLY,
-        IVS(0),
         },
     },
 },
@@ -28198,19 +26519,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CHANNELER_PAULA] =
 {
     .trainerName = _("Paula"),
-    .trainerClass = TRAINER_CLASS_CHANNELER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CHANNELER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 24,
         .species = SPECIES_GASTLY,
-        IVS(0),
         },
     },
 },
@@ -28218,24 +26534,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CHANNELER_LAUREL] =
 {
     .trainerName = _("Laurel"),
-    .trainerClass = TRAINER_CLASS_CHANNELER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CHANNELER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 23,
         .species = SPECIES_GASTLY,
-        IVS(0),
         },
         {
         .lvl = 23,
         .species = SPECIES_GASTLY,
-        IVS(0),
         },
     },
 },
@@ -28243,19 +26553,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CHANNELER_JODY] =
 {
     .trainerName = _("Jody"),
-    .trainerClass = TRAINER_CLASS_CHANNELER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CHANNELER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 22,
         .species = SPECIES_GASTLY,
-        IVS(0),
         },
     },
 },
@@ -28263,19 +26568,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CHANNELER_TAMMY] =
 {
     .trainerName = _("Tammy"),
-    .trainerClass = TRAINER_CLASS_CHANNELER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CHANNELER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 23,
         .species = SPECIES_HAUNTER,
-        IVS(0),
         },
     },
 },
@@ -28283,19 +26583,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CHANNELER_RUTH] =
 {
     .trainerName = _("Ruth"),
-    .trainerClass = TRAINER_CLASS_CHANNELER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CHANNELER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 22,
         .species = SPECIES_GASTLY,
-        IVS(0),
         },
     },
 },
@@ -28303,19 +26598,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CHANNELER_KARINA] =
 {
     .trainerName = _("Karina"),
-    .trainerClass = TRAINER_CLASS_CHANNELER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CHANNELER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 24,
         .species = SPECIES_GASTLY,
-        IVS(0),
         },
     },
 },
@@ -28323,19 +26613,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CHANNELER_JANAE] =
 {
     .trainerName = _("Janae"),
-    .trainerClass = TRAINER_CLASS_CHANNELER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CHANNELER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 22,
         .species = SPECIES_GASTLY,
-        IVS(0),
         },
     },
 },
@@ -28343,29 +26628,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CHANNELER_ANGELICA] =
 {
     .trainerName = _("Angelica"),
-    .trainerClass = TRAINER_CLASS_CHANNELER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CHANNELER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 22,
         .species = SPECIES_GASTLY,
-        IVS(0),
         },
         {
         .lvl = 22,
         .species = SPECIES_GASTLY,
-        IVS(0),
         },
         {
         .lvl = 22,
         .species = SPECIES_GASTLY,
-        IVS(0),
         },
     },
 },
@@ -28373,19 +26651,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CHANNELER_EMILIA] =
 {
     .trainerName = _("Emilia"),
-    .trainerClass = TRAINER_CLASS_CHANNELER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CHANNELER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 24,
         .species = SPECIES_GASTLY,
-        IVS(0),
         },
     },
 },
@@ -28393,19 +26666,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CHANNELER_JENNIFER] =
 {
     .trainerName = _("Jennifer"),
-    .trainerClass = TRAINER_CLASS_CHANNELER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CHANNELER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 24,
         .species = SPECIES_GASTLY,
-        IVS(0),
         },
     },
 },
@@ -28413,24 +26681,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CHANNELER_AMANDA] =
 {
     .trainerName = _("Amanda"),
-    .trainerClass = TRAINER_CLASS_CHANNELER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CHANNELER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 34,
         .species = SPECIES_GASTLY,
-        IVS(0),
         },
         {
         .lvl = 34,
         .species = SPECIES_HAUNTER,
-        IVS(0),
         },
     },
 },
@@ -28438,19 +26700,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CHANNELER_STACY] =
 {
     .trainerName = _("Stacy"),
-    .trainerClass = TRAINER_CLASS_CHANNELER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CHANNELER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 38,
         .species = SPECIES_HAUNTER,
-        IVS(0),
         },
     },
 },
@@ -28458,29 +26715,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CHANNELER_TASHA] =
 {
     .trainerName = _("Tasha"),
-    .trainerClass = TRAINER_CLASS_CHANNELER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CHANNELER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CHANNELER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 33,
         .species = SPECIES_GASTLY,
-        IVS(0),
         },
         {
         .lvl = 33,
         .species = SPECIES_GASTLY,
-        IVS(0),
         },
         {
         .lvl = 33,
         .species = SPECIES_HAUNTER,
-        IVS(0),
         },
     },
 },
@@ -28488,24 +26738,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_HIKER_JEREMY] =
 {
     .trainerName = _("Jeremy"),
-    .trainerClass = TRAINER_CLASS_HIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_HIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    HIKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_HIKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 20,
         .species = SPECIES_MACHOP,
-        IVS(0),
         },
         {
         .lvl = 20,
         .species = SPECIES_ONIX,
-        IVS(0),
         },
     },
 },
@@ -28513,29 +26757,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_ALMA] =
 {
     .trainerName = _("Alma"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 28,
         .species = SPECIES_GOLDEEN,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_POLIWAG,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_HORSEA,
-        IVS(0),
         },
     },
 },
@@ -28543,39 +26780,30 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_SUSIE] =
 {
     .trainerName = _("Susie"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 24,
         .species = SPECIES_PIDGEY,
-        IVS(0),
         },
         {
         .lvl = 24,
         .species = SPECIES_MEOWTH,
-        IVS(0),
         },
         {
         .lvl = 24,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 24,
         .species = SPECIES_PIKACHU,
-        IVS(0),
         },
         {
         .lvl = 24,
         .species = SPECIES_MEOWTH,
-        IVS(0),
         },
     },
 },
@@ -28583,24 +26811,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_VALERIE] =
 {
     .trainerName = _("Valerie"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 30,
         .species = SPECIES_POLIWAG,
-        IVS(0),
         },
         {
         .lvl = 30,
         .species = SPECIES_POLIWAG,
-        IVS(0),
         },
     },
 },
@@ -28608,34 +26830,26 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_GWEN] =
 {
     .trainerName = _("Gwen"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 27,
         .species = SPECIES_PIDGEY,
-        IVS(0),
         },
         {
         .lvl = 27,
         .species = SPECIES_MEOWTH,
-        IVS(0),
         },
         {
         .lvl = 27,
         .species = SPECIES_PIDGEY,
-        IVS(0),
         },
         {
         .lvl = 27,
         .species = SPECIES_PIDGEOTTO,
-        IVS(0),
         },
     },
 },
@@ -28643,31 +26857,24 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIKER_VIRGIL] =
 {
     .trainerName = _("Virgil"),
-    .trainerClass = TRAINER_CLASS_BIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIKER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 28,
         .species = SPECIES_WEEZING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
         {
         .lvl = 28,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
         {
         .lvl = 28,
         .species = SPECIES_WEEZING,
-        IVS(0),
         .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
         },
     },
@@ -28676,24 +26883,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CAMPER_FLINT] =
 {
     .trainerName = _("Flint"),
-    .trainerClass = TRAINER_CLASS_CAMPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CAMPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 14,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 14,
         .species = SPECIES_EKANS,
-        IVS(0),
         },
     },
 },
@@ -28701,24 +26902,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_MISSY] =
 {
     .trainerName = _("Missy"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 31,
         .species = SPECIES_GOLDEEN,
-        IVS(0),
         },
         {
         .lvl = 31,
         .species = SPECIES_SEAKING,
-        IVS(0),
         },
     },
 },
@@ -28726,29 +26921,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_IRENE] =
 {
     .trainerName = _("Irene"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 30,
         .species = SPECIES_TENTACOOL,
-        IVS(0),
         },
         {
         .lvl = 30,
         .species = SPECIES_HORSEA,
-        IVS(0),
         },
         {
         .lvl = 30,
         .species = SPECIES_SEEL,
-        IVS(0),
         },
     },
 },
@@ -28756,29 +26944,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_DANA] =
 {
     .trainerName = _("Dana"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 20,
         .species = SPECIES_MEOWTH,
-        IVS(0),
         },
         {
         .lvl = 20,
         .species = SPECIES_ODDISH,
-        IVS(0),
         },
         {
         .lvl = 20,
         .species = SPECIES_PIDGEY,
-        IVS(0),
         },
     },
 },
@@ -28786,34 +26967,26 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_ARIANA] =
 {
     .trainerName = _("Ariana"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 19,
         .species = SPECIES_PIDGEY,
-        IVS(0),
         },
         {
         .lvl = 19,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 19,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 19,
         .species = SPECIES_BELLSPROUT,
-        IVS(0),
         },
     },
 },
@@ -28821,24 +26994,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_LEAH] =
 {
     .trainerName = _("Leah"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 22,
         .species = SPECIES_BELLSPROUT,
-        IVS(0),
         },
         {
         .lvl = 22,
         .species = SPECIES_CLEFAIRY,
-        IVS(0),
         },
     },
 },
@@ -28846,24 +27013,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CAMPER_JUSTIN] =
 {
     .trainerName = _("Justin"),
-    .trainerClass = TRAINER_CLASS_CAMPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CAMPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_NIDORAN_M,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_NIDORINO,
-        IVS(0),
         },
     },
 },
@@ -28871,29 +27032,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_YAZMIN] =
 {
     .trainerName = _("Yazmin"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_BELLSPROUT,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_ODDISH,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_TANGELA,
-        IVS(0),
         },
     },
 },
@@ -28901,29 +27055,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_KINDRA] =
 {
     .trainerName = _("Kindra"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 28,
         .species = SPECIES_GLOOM,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_ODDISH,
-        IVS(0),
         },
         {
         .lvl = 28,
         .species = SPECIES_ODDISH,
-        IVS(0),
         },
     },
 },
@@ -28931,24 +27078,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_BECKY] =
 {
     .trainerName = _("Becky"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_PIKACHU,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_RAICHU,
-        IVS(0),
         },
     },
 },
@@ -28956,19 +27097,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_CELIA] =
 {
     .trainerName = _("Celia"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 33,
         .species = SPECIES_CLEFAIRY,
-        IVS(0),
         },
     },
 },
@@ -28976,19 +27112,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_GENTLEMAN_BROOKS] =
 {
     .trainerName = _("Brooks"),
-    .trainerClass = TRAINER_CLASS_GENTLEMAN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_GENTLEMAN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    GENTLEMAN_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_GENTLEMAN_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 23,
         .species = SPECIES_PIKACHU,
-        IVS(0),
         },
     },
 },
@@ -28996,24 +27127,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_GENTLEMAN_LAMAR] =
 {
     .trainerName = _("Lamar"),
-    .trainerClass = TRAINER_CLASS_GENTLEMAN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_GENTLEMAN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    GENTLEMAN_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_GENTLEMAN_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 17,
         .species = SPECIES_GROWLITHE,
-        IVS(0),
         },
         {
         .lvl = 17,
         .species = SPECIES_PONYTA,
-        IVS(0),
         },
     },
 },
@@ -29026,19 +27151,16 @@ UNUSED_TRAINER(15),
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_TWINS_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 22,
         .species = SPECIES_CLEFAIRY,
-        IVS(0),
         },
         {
         .lvl = 22,
         .species = SPECIES_JIGGLYPUFF,
-        IVS(0),
         },
     },
 },
@@ -29046,12 +27168,9 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_COOL_COUPLE_RAY_TYRA] =
 {
     .trainerName = _("Ray & Tyra"),
-    .trainerClass = TRAINER_CLASS_COOL_COUPLE_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_COOL_COUPLE_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
+    COOL_COUPLE_INFO,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_COOL_COUPLE_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -29078,19 +27197,16 @@ UNUSED_TRAINER(15),
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNG_COUPLE_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 24,
         .species = SPECIES_NIDORAN_M,
-        IVS(0),
         },
         {
         .lvl = 24,
         .species = SPECIES_NIDORAN_F,
-        IVS(0),
         },
     },
 },
@@ -29103,19 +27219,16 @@ UNUSED_TRAINER(15),
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_TWINS_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_CHARMANDER,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_SQUIRTLE,
-        IVS(0),
         },
     },
 },
@@ -29123,12 +27236,9 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CRUSH_KIN_RON_MYA] =
 {
     .trainerName = _("Ron & Mya"),
-    .trainerClass = TRAINER_CLASS_CRUSH_KIN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CRUSH_KIN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+    CRUSH_KIN_INFO,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CRUSH_KIN_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -29155,19 +27265,16 @@ UNUSED_TRAINER(15),
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNG_COUPLE_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 29,
         .species = SPECIES_RAPIDASH,
-        IVS(0),
         },
         {
         .lvl = 29,
         .species = SPECIES_NINETALES,
-        IVS(0),
         },
     },
 },
@@ -29180,19 +27287,16 @@ UNUSED_TRAINER(15),
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SIS_AND_BRO_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 30,
         .species = SPECIES_GOLDEEN,
-        IVS(0),
         },
         {
         .lvl = 30,
         .species = SPECIES_SEAKING,
-        IVS(0),
         },
     },
 },
@@ -29205,19 +27309,16 @@ UNUSED_TRAINER(15),
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SIS_AND_BRO_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 33,
         .species = SPECIES_SEADRA,
-        IVS(0),
         },
         {
         .lvl = 33,
         .species = SPECIES_STARMIE,
-        IVS(0),
         },
     },
 },
@@ -29225,12 +27326,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_BEN_3] =
 {
     .trainerName = _("Ben"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -29250,12 +27347,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_BEN_4] =
 {
     .trainerName = _("Ben"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -29275,12 +27368,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_CHAD_2] =
 {
     .trainerName = _("Chad"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -29300,12 +27389,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_LASS_RELI_2] =
 {
     .trainerName = _("Reli"),
-    .trainerClass = TRAINER_CLASS_LASS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LASS_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    LASS_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LASS_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -29325,12 +27410,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_LASS_RELI_3] =
 {
     .trainerName = _("Reli"),
-    .trainerClass = TRAINER_CLASS_LASS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LASS_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    LASS_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LASS_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -29350,12 +27431,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_TIMMY_2] =
 {
     .trainerName = _("Timmy"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -29380,12 +27457,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_TIMMY_3] =
 {
     .trainerName = _("Timmy"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -29410,12 +27483,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_TIMMY_4] =
 {
     .trainerName = _("Timmy"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -29440,12 +27509,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_CHAD_3] =
 {
     .trainerName = _("Chad"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -29465,12 +27530,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_LASS_JANICE_2] =
 {
     .trainerName = _("Janice"),
-    .trainerClass = TRAINER_CLASS_LASS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LASS_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    LASS_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LASS_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -29490,12 +27551,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_LASS_JANICE_3] =
 {
     .trainerName = _("Janice"),
-    .trainerClass = TRAINER_CLASS_LASS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LASS_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    LASS_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LASS_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -29515,12 +27572,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_CHAD_4] =
 {
     .trainerName = _("Chad"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -29540,12 +27593,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_HIKER_FRANKLIN_2] =
 {
     .trainerName = _("Franklin"),
-    .trainerClass = TRAINER_CLASS_HIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_HIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    HIKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_HIKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -29568,16 +27617,13 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_PKMN_PROF_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_PROFESSOR_OAK_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PROFESSOR_OAK_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 5,
         .species = SPECIES_EKANS,
-        IVS(0),
         },
     },
 },
@@ -29588,21 +27634,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_F_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 49,
         .species = SPECIES_HOUNDOUR,
-        IVS(0),
         },
         {
         .lvl = 49,
         .species = SPECIES_HOUNDOUR,
-        IVS(0),
         },
     },
 },
@@ -29613,9 +27655,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_PSYCHIC_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PSYCHIC_F_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -29646,9 +27686,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_CRUSH_GIRL_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -29673,26 +27711,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TUBER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_TUBER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_TUBER_F_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 34,
         .species = SPECIES_POLIWAG,
-        IVS(0),
         },
         {
         .lvl = 35,
         .species = SPECIES_POLIWHIRL,
-        IVS(0),
         },
         {
         .lvl = 34,
         .species = SPECIES_POLIWAG,
-        IVS(0),
         },
     },
 },
@@ -29703,9 +27736,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_PKMN_BREEDER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -29733,10 +27764,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_PKMN_RANGER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_POKEMON_RANGER_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -29761,10 +27790,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_PKMN_RANGER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_POKEMON_RANGER_F_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -29789,21 +27816,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_AROMA_LADY_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_AROMA_LADY_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_AROMA_LADY_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 37,
         .species = SPECIES_BELLSPROUT,
-        IVS(0),
         },
         {
         .lvl = 37,
         .species = SPECIES_WEEPINBELL,
-        IVS(0),
         },
     },
 },
@@ -29811,29 +27834,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_RUIN_MANIAC_STANLY] =
 {
     .trainerName = _("Stanly"),
-    .trainerClass = TRAINER_CLASS_RUIN_MANIAC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    RUIN_MANIAC_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_RUIN_MANIAC_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 48,
         .species = SPECIES_GRAVELER,
-        IVS(0),
         },
         {
         .lvl = 48,
         .species = SPECIES_ONIX,
-        IVS(0),
         },
         {
         .lvl = 48,
         .species = SPECIES_GRAVELER,
-        IVS(0),
         },
     },
 },
@@ -29844,23 +27860,19 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_LADY_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_LADY_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .items = { ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LADY_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 48,
         .species = SPECIES_HOPPIP,
-        IVS(0),
         .heldItem = ITEM_STARDUST,
         },
         {
         .lvl = 50,
         .species = SPECIES_SKIPLOOM,
-        IVS(0),
         .heldItem = ITEM_STARDUST,
         },
     },
@@ -29869,12 +27881,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PAINTER_DAISY] =
 {
     .trainerName = _("Daisy"),
-    .trainerClass = TRAINER_CLASS_PAINTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PAINTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PAINTER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PAINTER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
@@ -29890,25 +27898,19 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIKER_GOON] =
 {
     .trainerName = _("Goon"),
-    .trainerClass = TRAINER_CLASS_BIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 37,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_HAZE, MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_TACKLE},
         },
         {
         .lvl = 37,
         .species = SPECIES_GRIMER,
-        IVS(0),
         .moves = {MOVE_ACID_ARMOR, MOVE_SCREECH, MOVE_MINIMIZE, MOVE_SLUDGE},
         },
     },
@@ -29917,19 +27919,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIKER_GOON_2] =
 {
     .trainerName = _("Goon"),
-    .trainerClass = TRAINER_CLASS_BIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIKER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 38,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_HAZE, MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_TACKLE},
         },
     },
@@ -29938,19 +27935,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIKER_GOON_3] =
 {
     .trainerName = _("Goon"),
-    .trainerClass = TRAINER_CLASS_BIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIKER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 38,
         .species = SPECIES_GRIMER,
-        IVS(0),
         },
     },
 },
@@ -29958,24 +27950,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BUG_CATCHER_ANTHONY] =
 {
     .trainerName = _("Anthony"),
-    .trainerClass = TRAINER_CLASS_BUG_CATCHER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BUG_CATCHER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 7,
         .species = SPECIES_CATERPIE,
-        IVS(0),
         },
         {
         .lvl = 8,
         .species = SPECIES_CATERPIE,
-        IVS(0),
         },
     },
 },
@@ -29983,29 +27969,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BUG_CATCHER_CHARLIE] =
 {
     .trainerName = _("Charlie"),
-    .trainerClass = TRAINER_CLASS_BUG_CATCHER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BUG_CATCHER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 7,
         .species = SPECIES_METAPOD,
-        IVS(0),
         },
         {
         .lvl = 7,
         .species = SPECIES_CATERPIE,
-        IVS(0),
         },
         {
         .lvl = 7,
         .species = SPECIES_METAPOD,
-        IVS(0),
         },
     },
 },
@@ -30018,7 +27997,6 @@ UNUSED_TRAINER(15),
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_TWINS_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -30038,29 +28016,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_JOHNSON] =
 {
     .trainerName = _("Johnson"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 33,
         .species = SPECIES_EKANS,
-        IVS(0),
         },
         {
         .lvl = 33,
         .species = SPECIES_EKANS,
-        IVS(0),
         },
         {
         .lvl = 34,
         .species = SPECIES_RATICATE,
-        IVS(0),
         },
     },
 },
@@ -30068,31 +28039,24 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIKER_RICARDO] =
 {
     .trainerName = _("Ricardo"),
-    .trainerClass = TRAINER_CLASS_BIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIKER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 22,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE, MOVE_POISON_GAS},
         },
         {
         .lvl = 22,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE, MOVE_POISON_GAS},
         },
         {
         .lvl = 23,
         .species = SPECIES_GRIMER,
-        IVS(0),
         .moves = {MOVE_MINIMIZE, MOVE_SLUDGE, MOVE_DISABLE, MOVE_POUND},
         },
     },
@@ -30101,24 +28065,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIKER_JAREN] =
 {
     .trainerName = _("Jaren"),
-    .trainerClass = TRAINER_CLASS_BIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 24,
         .species = SPECIES_GRIMER,
-        IVS(0),
         },
         {
         .lvl = 24,
         .species = SPECIES_GRIMER,
-        IVS(0),
         },
     },
 },
@@ -30129,21 +28087,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 37,
         .species = SPECIES_CUBONE,
-        IVS(0),
         },
         {
         .lvl = 37,
         .species = SPECIES_MAROWAK,
-        IVS(0),
         },
     },
 },
@@ -30154,31 +28108,25 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 35,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 35,
         .species = SPECIES_RATICATE,
-        IVS(0),
         },
         {
         .lvl = 35,
         .species = SPECIES_SANDSHREW,
-        IVS(0),
         },
         {
         .lvl = 35,
         .species = SPECIES_SANDSLASH,
-        IVS(0),
         },
     },
 },
@@ -30189,26 +28137,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 38,
         .species = SPECIES_ZUBAT,
-        IVS(0),
         },
         {
         .lvl = 38,
         .species = SPECIES_ZUBAT,
-        IVS(0),
         },
         {
         .lvl = 38,
         .species = SPECIES_GOLBAT,
-        IVS(0),
         },
     },
 },
@@ -30219,26 +28162,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 48,
         .species = SPECIES_MUK,
-        IVS(0),
         },
         {
         .lvl = 48,
         .species = SPECIES_GOLBAT,
-        IVS(0),
         },
         {
         .lvl = 48,
         .species = SPECIES_RATICATE,
-        IVS(0),
         },
     },
 },
@@ -30249,26 +28187,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 48,
         .species = SPECIES_MACHOP,
-        IVS(0),
         },
         {
         .lvl = 48,
         .species = SPECIES_MACHOP,
-        IVS(0),
         },
         {
         .lvl = 48,
         .species = SPECIES_MACHOKE,
-        IVS(0),
         },
     },
 },
@@ -30279,21 +28212,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 49,
         .species = SPECIES_HYPNO,
-        IVS(0),
         },
         {
         .lvl = 49,
         .species = SPECIES_HYPNO,
-        IVS(0),
         },
     },
 },
@@ -30304,10 +28233,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .items = { ITEM_HYPER_POTION },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_F_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -30338,10 +28265,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .items = { ITEM_HYPER_POTION },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -30369,43 +28294,34 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SCIENTIST_GIDEON] =
 {
     .trainerName = _("Gideon"),
-    .trainerClass = TRAINER_CLASS_SCIENTIST_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SCIENTIST_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SCIENTIST_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 46,
         .species = SPECIES_VOLTORB,
-        IVS(0),
         .moves = {MOVE_SWIFT, MOVE_SCREECH, MOVE_SPARK, MOVE_SONIC_BOOM},
         },
         {
         .lvl = 46,
         .species = SPECIES_ELECTRODE,
-        IVS(0),
         .moves = {MOVE_SPARK, MOVE_SONIC_BOOM, MOVE_SCREECH, MOVE_CHARGE},
         },
         {
         .lvl = 46,
         .species = SPECIES_MAGNEMITE,
-        IVS(0),
         .moves = {MOVE_SCREECH, MOVE_SWIFT, MOVE_SPARK, MOVE_THUNDER_WAVE},
         },
         {
         .lvl = 46,
         .species = SPECIES_MAGNETON,
-        IVS(0),
         .moves = {MOVE_TRI_ATTACK, MOVE_SPARK, MOVE_THUNDER_WAVE, MOVE_SONIC_BOOM},
         },
         {
         .lvl = 46,
         .species = SPECIES_PORYGON,
-        IVS(0),
         .moves = {MOVE_TRI_ATTACK, MOVE_CONVERSION, MOVE_RECOVER, MOVE_PSYBEAM},
         },
     },
@@ -30417,26 +28333,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 36,
         .species = SPECIES_SEEL,
-        IVS(0),
         },
         {
         .lvl = 36,
         .species = SPECIES_SEEL,
-        IVS(0),
         },
         {
         .lvl = 36,
         .species = SPECIES_DEWGONG,
-        IVS(0),
         },
     },
 },
@@ -30447,21 +28358,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 37,
         .species = SPECIES_SEADRA,
-        IVS(0),
         },
         {
         .lvl = 37,
         .species = SPECIES_SEADRA,
-        IVS(0),
         },
     },
 },
@@ -30472,26 +28379,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 35,
         .species = SPECIES_PSYDUCK,
-        IVS(0),
         },
         {
         .lvl = 36,
         .species = SPECIES_PSYDUCK,
-        IVS(0),
         },
         {
         .lvl = 37,
         .species = SPECIES_GOLDUCK,
-        IVS(0),
         },
     },
 },
@@ -30502,16 +28404,13 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 38,
         .species = SPECIES_STARMIE,
-        IVS(0),
         },
     },
 },
@@ -30522,26 +28421,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 35,
         .species = SPECIES_SHELLDER,
-        IVS(0),
         },
         {
         .lvl = 35,
         .species = SPECIES_CLOYSTER,
-        IVS(0),
         },
         {
         .lvl = 38,
         .species = SPECIES_WARTORTLE,
-        IVS(0),
         },
     },
 },
@@ -30549,39 +28443,30 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_FISHERMAN_TOMMY] =
 {
     .trainerName = _("Tommy"),
-    .trainerClass = TRAINER_CLASS_FISHERMAN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    FISHERMAN_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 33,
         .species = SPECIES_GOLDEEN,
-        IVS(0),
         },
         {
         .lvl = 33,
         .species = SPECIES_GOLDEEN,
-        IVS(0),
         },
         {
         .lvl = 35,
         .species = SPECIES_SEAKING,
-        IVS(0),
         },
         {
         .lvl = 35,
         .species = SPECIES_SEAKING,
-        IVS(0),
         },
         {
         .lvl = 35,
         .species = SPECIES_SEAKING,
-        IVS(0),
         },
     },
 },
@@ -30592,9 +28477,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_CRUSH_GIRL_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -30616,12 +28499,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BLACK_BELT_SHEA] =
 {
     .trainerName = _("Shea"),
-    .trainerClass = TRAINER_CLASS_BLACK_BELT_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BLACK_BELT_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -30643,12 +28522,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BLACK_BELT_HUGH] =
 {
     .trainerName = _("Hugh"),
-    .trainerClass = TRAINER_CLASS_BLACK_BELT_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BLACK_BELT_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -30670,29 +28545,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CAMPER_BRYCE] =
 {
     .trainerName = _("Bryce"),
-    .trainerClass = TRAINER_CLASS_CAMPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CAMPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 36,
         .species = SPECIES_NIDORINO,
-        IVS(0),
         },
         {
         .lvl = 36,
         .species = SPECIES_RATICATE,
-        IVS(0),
         },
         {
         .lvl = 36,
         .species = SPECIES_SANDSLASH,
-        IVS(0),
         },
     },
 },
@@ -30700,34 +28568,26 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_CLAIRE] =
 {
     .trainerName = _("Claire"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 35,
         .species = SPECIES_MEOWTH,
-        IVS(0),
         },
         {
         .lvl = 35,
         .species = SPECIES_MEOWTH,
-        IVS(0),
         },
         {
         .lvl = 35,
         .species = SPECIES_PIKACHU,
-        IVS(0),
         },
         {
         .lvl = 35,
         .species = SPECIES_CLEFAIRY,
-        IVS(0),
         },
     },
 },
@@ -30735,12 +28595,9 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CRUSH_KIN_MIK_KIA] =
 {
     .trainerName = _("Mik & Kia"),
-    .trainerClass = TRAINER_CLASS_CRUSH_KIN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CRUSH_KIN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+    CRUSH_KIN_INFO,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CRUSH_KIN_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -30765,26 +28622,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_AROMA_LADY_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_AROMA_LADY_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_AROMA_LADY_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 36,
         .species = SPECIES_BULBASAUR,
-        IVS(0),
         },
         {
         .lvl = 36,
         .species = SPECIES_IVYSAUR,
-        IVS(0),
         },
         {
         .lvl = 36,
         .species = SPECIES_IVYSAUR,
-        IVS(0),
         },
     },
 },
@@ -30795,31 +28647,25 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TUBER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_TUBER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_TUBER_F_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 34,
         .species = SPECIES_STARYU,
-        IVS(0),
         },
         {
         .lvl = 34,
         .species = SPECIES_STARYU,
-        IVS(0),
         },
         {
         .lvl = 34,
         .species = SPECIES_KRABBY,
-        IVS(0),
         },
         {
         .lvl = 34,
         .species = SPECIES_KRABBY,
-        IVS(0),
         },
     },
 },
@@ -30832,19 +28678,16 @@ UNUSED_TRAINER(15),
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_TWINS_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 37,
         .species = SPECIES_CLEFAIRY,
-        IVS(0),
         },
         {
         .lvl = 37,
         .species = SPECIES_CLEFAIRY,
-        IVS(0),
         },
     },
 },
@@ -30855,16 +28698,13 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 38,
         .species = SPECIES_KINGLER,
-        IVS(0),
         },
     },
 },
@@ -30872,12 +28712,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PAINTER_CELINA] =
 {
     .trainerName = _("Celina"),
-    .trainerClass = TRAINER_CLASS_PAINTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PAINTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PAINTER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PAINTER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
@@ -30893,12 +28729,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PAINTER_RAYNA] =
 {
     .trainerName = _("Rayna"),
-    .trainerClass = TRAINER_CLASS_PAINTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PAINTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PAINTER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PAINTER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
@@ -30917,29 +28749,24 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_LADY_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_LADY_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .items = { ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LADY_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 47,
         .species = SPECIES_MAREEP,
-        IVS(0),
         .heldItem = ITEM_STARDUST,
         },
         {
         .lvl = 48,
         .species = SPECIES_MAREEP,
-        IVS(0),
         .heldItem = ITEM_STARDUST,
         },
         {
         .lvl = 49,
         .species = SPECIES_FLAAFFY,
-        IVS(0),
         .heldItem = ITEM_NUGGET,
         },
     },
@@ -30948,24 +28775,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_DESTIN] =
 {
     .trainerName = _("Destin"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 48,
         .species = SPECIES_RATICATE,
-        IVS(0),
         },
         {
         .lvl = 48,
         .species = SPECIES_PIDGEOTTO,
-        IVS(0),
         },
     },
 },
@@ -30976,26 +28797,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 48,
         .species = SPECIES_POLIWHIRL,
-        IVS(0),
         },
         {
         .lvl = 48,
         .species = SPECIES_TENTACOOL,
-        IVS(0),
         },
         {
         .lvl = 48,
         .species = SPECIES_TENTACRUEL,
-        IVS(0),
         },
     },
 },
@@ -31006,26 +28822,21 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 48,
         .species = SPECIES_RATTATA,
-        IVS(0),
         },
         {
         .lvl = 48,
         .species = SPECIES_GRIMER,
-        IVS(0),
         },
         {
         .lvl = 48,
         .species = SPECIES_MUK,
-        IVS(0),
         },
     },
 },
@@ -31036,22 +28847,18 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 49,
         .species = SPECIES_KOFFING,
-        IVS(0),
         .moves = {MOVE_MEMENTO, MOVE_HAZE, MOVE_SMOKESCREEN, MOVE_SLUDGE},
         },
         {
         .lvl = 49,
         .species = SPECIES_WEEZING,
-        IVS(0),
         .moves = {MOVE_HAZE, MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SELF_DESTRUCT},
         },
     },
@@ -31063,9 +28870,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_F_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -31090,24 +28895,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_MILO] =
 {
     .trainerName = _("Milo"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 47,
         .species = SPECIES_PIDGEY,
-        IVS(0),
         },
         {
         .lvl = 49,
         .species = SPECIES_PIDGEOTTO,
-        IVS(0),
         },
     },
 },
@@ -31115,24 +28914,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_CHAZ] =
 {
     .trainerName = _("Chaz"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 47,
         .species = SPECIES_SPEAROW,
-        IVS(0),
         },
         {
         .lvl = 49,
         .species = SPECIES_FEAROW,
-        IVS(0),
         },
     },
 },
@@ -31140,24 +28933,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_HAROLD] =
 {
     .trainerName = _("Harold"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 47,
         .species = SPECIES_HOOTHOOT,
-        IVS(0),
         },
         {
         .lvl = 49,
         .species = SPECIES_NOCTOWL,
-        IVS(0),
         },
     },
 },
@@ -31165,24 +28952,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_FISHERMAN_TYLOR] =
 {
     .trainerName = _("Tylor"),
-    .trainerClass = TRAINER_CLASS_FISHERMAN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    FISHERMAN_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 49,
         .species = SPECIES_QWILFISH,
-        IVS(0),
         },
         {
         .lvl = 49,
         .species = SPECIES_QWILFISH,
-        IVS(0),
         },
     },
 },
@@ -31193,21 +28974,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 49,
         .species = SPECIES_KINGLER,
-        IVS(0),
         },
         {
         .lvl = 49,
         .species = SPECIES_WARTORTLE,
-        IVS(0),
         },
     },
 },
@@ -31218,16 +28995,13 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 50,
         .species = SPECIES_MARILL,
-        IVS(0),
         },
     },
 },
@@ -31240,19 +29014,16 @@ UNUSED_TRAINER(15),
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SIS_AND_BRO_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 50,
         .species = SPECIES_POLIWHIRL,
-        IVS(0),
         },
         {
         .lvl = 50,
         .species = SPECIES_STARMIE,
-        IVS(0),
         },
     },
 },
@@ -31263,21 +29034,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_AROMA_LADY_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_AROMA_LADY_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_AROMA_LADY_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 49,
         .species = SPECIES_SUNKERN,
-        IVS(0),
         },
         {
         .lvl = 49,
         .species = SPECIES_SUNFLORA,
-        IVS(0),
         },
     },
 },
@@ -31288,16 +29055,13 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 50,
         .species = SPECIES_GYARADOS,
-        IVS(0),
         },
     },
 },
@@ -31308,21 +29072,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 49,
         .species = SPECIES_CHINCHOU,
-        IVS(0),
         },
         {
         .lvl = 49,
         .species = SPECIES_LANTURN,
-        IVS(0),
         },
     },
 },
@@ -31335,19 +29095,16 @@ UNUSED_TRAINER(15),
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_TWINS_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 50,
         .species = SPECIES_PIKACHU,
-        IVS(0),
         },
         {
         .lvl = 50,
         .species = SPECIES_PIKACHU,
-        IVS(0),
         },
     },
 },
@@ -31355,24 +29112,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_HIKER_EARL] =
 {
     .trainerName = _("Earl"),
-    .trainerClass = TRAINER_CLASS_HIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_HIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    HIKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_HIKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 49,
         .species = SPECIES_ONIX,
-        IVS(0),
         },
         {
         .lvl = 49,
         .species = SPECIES_MACHOKE,
-        IVS(0),
         },
     },
 },
@@ -31380,19 +29131,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_RUIN_MANIAC_FOSTER] =
 {
     .trainerName = _("Foster"),
-    .trainerClass = TRAINER_CLASS_RUIN_MANIAC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    RUIN_MANIAC_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_RUIN_MANIAC_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 50,
         .species = SPECIES_GOLEM,
-        IVS(0),
         },
     },
 },
@@ -31400,24 +29146,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_RUIN_MANIAC_LARRY] =
 {
     .trainerName = _("Larry"),
-    .trainerClass = TRAINER_CLASS_RUIN_MANIAC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    RUIN_MANIAC_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_RUIN_MANIAC_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 49,
         .species = SPECIES_MACHOKE,
-        IVS(0),
         },
         {
         .lvl = 49,
         .species = SPECIES_MACHOKE,
-        IVS(0),
         },
     },
 },
@@ -31425,19 +29165,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_HIKER_DARYL] =
 {
     .trainerName = _("Daryl"),
-    .trainerClass = TRAINER_CLASS_HIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_HIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    HIKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_HIKER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 50,
         .species = SPECIES_SUDOWOODO,
-        IVS(0),
         },
     },
 },
@@ -31445,12 +29180,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_POKEMANIAC_HECTOR] =
 {
     .trainerName = _("Hector"),
-    .trainerClass = TRAINER_CLASS_POKEMANIAC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_POKEMANIAC_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    POKE_MANIAC_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_POKEMANIAC_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -31473,9 +29204,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_PSYCHIC_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PSYCHIC_M_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
@@ -31494,9 +29223,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_PSYCHIC_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PSYCHIC_F_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -31527,21 +29254,17 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_AROMA_LADY_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_AROMA_LADY_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_AROMA_LADY_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 50,
         .species = SPECIES_BELLOSSOM,
-        IVS(0),
         },
         {
         .lvl = 50,
         .species = SPECIES_BELLOSSOM,
-        IVS(0),
         },
     },
 },
@@ -31554,19 +29277,16 @@ UNUSED_TRAINER(15),
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNG_COUPLE_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 50,
         .species = SPECIES_GOLDUCK,
-        IVS(0),
         },
         {
         .lvl = 50,
         .species = SPECIES_PSYDUCK,
-        IVS(0),
         },
     },
 },
@@ -31574,37 +29294,29 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_JUGGLER_MASON] =
 {
     .trainerName = _("Mason"),
-    .trainerClass = TRAINER_CLASS_JUGGLER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_JUGGLER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    JUGGLER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_JUGGLER_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 47,
         .species = SPECIES_VOLTORB,
-        IVS(0),
         .moves = {MOVE_SWIFT, MOVE_LIGHT_SCREEN, MOVE_SPARK, MOVE_SONIC_BOOM},
         },
         {
         .lvl = 47,
         .species = SPECIES_PINECO,
-        IVS(0),
         .moves = {MOVE_SPIKES, MOVE_BIDE, MOVE_RAPID_SPIN, MOVE_TAKE_DOWN},
         },
         {
         .lvl = 47,
         .species = SPECIES_VOLTORB,
-        IVS(0),
         .moves = {MOVE_SWIFT, MOVE_LIGHT_SCREEN, MOVE_SPARK, MOVE_SONIC_BOOM},
         },
         {
         .lvl = 47,
         .species = SPECIES_PINECO,
-        IVS(0),
         .moves = {MOVE_SPIKES, MOVE_BIDE, MOVE_RAPID_SPIN, MOVE_EXPLOSION},
         },
     },
@@ -31616,9 +29328,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_CRUSH_GIRL_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -31649,9 +29359,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_CRUSH_GIRL_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -31673,12 +29381,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_TAMER_EVAN] =
 {
     .trainerName = _("Evan"),
-    .trainerClass = TRAINER_CLASS_TAMER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_TAMER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    TAMER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_TAMER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -31703,12 +29407,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_POKEMANIAC_MARK_2] =
 {
     .trainerName = _("Mark"),
-    .trainerClass = TRAINER_CLASS_POKEMANIAC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_POKEMANIAC_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    POKE_MANIAC_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_POKEMANIAC_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -31731,10 +29431,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_PKMN_RANGER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_POKEMON_RANGER_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -31759,10 +29457,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_PKMN_RANGER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_POKEMON_RANGER_M_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -31793,10 +29489,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_PKMN_RANGER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_POKEMON_RANGER_F_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -31824,10 +29518,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_PKMN_RANGER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_POKEMON_RANGER_F_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
@@ -31846,10 +29538,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -31892,10 +29582,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_HYPER_POTION },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -31935,13 +29623,10 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_COOL_COUPLE_LEX_NYA] =
 {
     .trainerName = _("Lex & Nya"),
-    .trainerClass = TRAINER_CLASS_COOL_COUPLE_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_COOL_COUPLE_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
+    COOL_COUPLE_INFO,
+    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_COOL_COUPLE_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -31963,19 +29648,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_RUIN_MANIAC_BRANDON] =
 {
     .trainerName = _("Brandon"),
-    .trainerClass = TRAINER_CLASS_RUIN_MANIAC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    RUIN_MANIAC_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_RUIN_MANIAC_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 50,
         .species = SPECIES_ONIX,
-        IVS(0),
         },
     },
 },
@@ -31983,31 +29663,24 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_RUIN_MANIAC_BENJAMIN] =
 {
     .trainerName = _("Benjamin"),
-    .trainerClass = TRAINER_CLASS_RUIN_MANIAC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    RUIN_MANIAC_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_RUIN_MANIAC_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 48,
         .species = SPECIES_GEODUDE,
-        IVS(0),
         .moves = {MOVE_EARTHQUAKE, MOVE_ROCK_BLAST, MOVE_ROLLOUT, MOVE_SELF_DESTRUCT},
         },
         {
         .lvl = 48,
         .species = SPECIES_GRAVELER,
-        IVS(0),
         .moves = {MOVE_EARTHQUAKE, MOVE_ROCK_BLAST, MOVE_ROCK_THROW, MOVE_SELF_DESTRUCT},
         },
         {
         .lvl = 48,
         .species = SPECIES_GRAVELER,
-        IVS(0),
         .moves = {MOVE_EARTHQUAKE, MOVE_ROCK_BLAST, MOVE_ROCK_THROW, MOVE_SELF_DESTRUCT},
         },
     },
@@ -32016,12 +29689,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PAINTER_EDNA] =
 {
     .trainerName = _("Edna"),
-    .trainerClass = TRAINER_CLASS_PAINTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PAINTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PAINTER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PAINTER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
@@ -32037,24 +29706,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_GENTLEMAN_CLIFFORD] =
 {
     .trainerName = _("Clifford"),
-    .trainerClass = TRAINER_CLASS_GENTLEMAN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_GENTLEMAN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    GENTLEMAN_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_GENTLEMAN_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 49,
         .species = SPECIES_MAROWAK,
-        IVS(0),
         },
         {
         .lvl = 49,
         .species = SPECIES_GOLDUCK,
-        IVS(0),
         },
     },
 },
@@ -32065,24 +29728,20 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_LADY_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_LADY_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .items = { ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LADY_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 49,
         .species = SPECIES_PERSIAN,
-        IVS(0),
         .moves = {MOVE_PAY_DAY, MOVE_BITE, MOVE_TAUNT, MOVE_TORMENT},
         .heldItem = ITEM_NUGGET,
         },
         {
         .lvl = 49,
         .species = SPECIES_PERSIAN,
-        IVS(0),
         .moves = {MOVE_PAY_DAY, MOVE_SCRATCH, MOVE_TORMENT, MOVE_TAUNT},
         .heldItem = ITEM_NUGGET,
         },
@@ -32092,29 +29751,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_RUIN_MANIAC_LAWSON] =
 {
     .trainerName = _("Lawson"),
-    .trainerClass = TRAINER_CLASS_RUIN_MANIAC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    RUIN_MANIAC_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_RUIN_MANIAC_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 47,
         .species = SPECIES_ONIX,
-        IVS(0),
         },
         {
         .lvl = 48,
         .species = SPECIES_GRAVELER,
-        IVS(0),
         },
         {
         .lvl = 49,
         .species = SPECIES_MAROWAK,
-        IVS(0),
         },
     },
 },
@@ -32125,9 +29777,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_PSYCHIC_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PSYCHIC_F_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -32155,9 +29805,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_PKMN_BREEDER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
@@ -32175,9 +29823,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_PKMN_BREEDER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -32202,19 +29848,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BUG_CATCHER_GARRET] =
 {
     .trainerName = _("Garret"),
-    .trainerClass = TRAINER_CLASS_BUG_CATCHER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BUG_CATCHER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 49,
         .species = SPECIES_HERACROSS,
-        IVS(0),
         },
     },
 },
@@ -32222,34 +29863,26 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BUG_CATCHER_JONAH] =
 {
     .trainerName = _("Jonah"),
-    .trainerClass = TRAINER_CLASS_BUG_CATCHER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BUG_CATCHER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 45,
         .species = SPECIES_YANMA,
-        IVS(0),
         },
         {
         .lvl = 45,
         .species = SPECIES_BEEDRILL,
-        IVS(0),
         },
         {
         .lvl = 46,
         .species = SPECIES_YANMA,
-        IVS(0),
         },
         {
         .lvl = 47,
         .species = SPECIES_BEEDRILL,
-        IVS(0),
         },
     },
 },
@@ -32257,24 +29890,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BUG_CATCHER_VANCE] =
 {
     .trainerName = _("Vance"),
-    .trainerClass = TRAINER_CLASS_BUG_CATCHER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BUG_CATCHER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 48,
         .species = SPECIES_VENONAT,
-        IVS(0),
         },
         {
         .lvl = 48,
         .species = SPECIES_VENOMOTH,
-        IVS(0),
         },
     },
 },
@@ -32282,29 +29909,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_NASH] =
 {
     .trainerName = _("Nash"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 47,
         .species = SPECIES_WEEPINBELL,
-        IVS(0),
         },
         {
         .lvl = 47,
         .species = SPECIES_WEEPINBELL,
-        IVS(0),
         },
         {
         .lvl = 49,
         .species = SPECIES_VICTREEBEL,
-        IVS(0),
         },
     },
 },
@@ -32312,24 +29932,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_CORDELL] =
 {
     .trainerName = _("Cordell"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 48,
         .species = SPECIES_FARFETCHD,
-        IVS(0),
         },
         {
         .lvl = 48,
         .species = SPECIES_FARFETCHD,
-        IVS(0),
         },
     },
 },
@@ -32337,34 +29951,26 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_LASS_DALIA] =
 {
     .trainerName = _("Dalia"),
-    .trainerClass = TRAINER_CLASS_LASS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LASS_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    LASS_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LASS_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 46,
         .species = SPECIES_HOPPIP,
-        IVS(0),
         },
         {
         .lvl = 47,
         .species = SPECIES_HOPPIP,
-        IVS(0),
         },
         {
         .lvl = 47,
         .species = SPECIES_SKIPLOOM,
-        IVS(0),
         },
         {
         .lvl = 48,
         .species = SPECIES_SKIPLOOM,
-        IVS(0),
         },
     },
 },
@@ -32372,19 +29978,14 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_LASS_JOANA] =
 {
     .trainerName = _("Joana"),
-    .trainerClass = TRAINER_CLASS_LASS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LASS_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    LASS_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LASS_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 49,
         .species = SPECIES_SNUBBULL,
-        IVS(0),
         },
     },
 },
@@ -32392,24 +29993,18 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CAMPER_RILEY] =
 {
     .trainerName = _("Riley"),
-    .trainerClass = TRAINER_CLASS_CAMPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CAMPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 49,
         .species = SPECIES_PINSIR,
-        IVS(0),
         },
         {
         .lvl = 50,
         .species = SPECIES_HERACROSS,
-        IVS(0),
         },
     },
 },
@@ -32417,29 +30012,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_MARCY] =
 {
     .trainerName = _("Marcy"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 48,
         .species = SPECIES_PARAS,
-        IVS(0),
         },
         {
         .lvl = 48,
         .species = SPECIES_PARAS,
-        IVS(0),
         },
         {
         .lvl = 49,
         .species = SPECIES_PARASECT,
-        IVS(0),
         },
     },
 },
@@ -32447,29 +30035,22 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_RUIN_MANIAC_LAYTON] =
 {
     .trainerName = _("Layton"),
-    .trainerClass = TRAINER_CLASS_RUIN_MANIAC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    RUIN_MANIAC_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_RUIN_MANIAC_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 48,
         .species = SPECIES_SANDSLASH,
-        IVS(0),
         },
         {
         .lvl = 48,
         .species = SPECIES_ONIX,
-        IVS(0),
         },
         {
         .lvl = 48,
         .species = SPECIES_SANDSLASH,
-        IVS(0),
         },
     },
 },
@@ -32477,12 +30058,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_KELSEY_2] =
 {
     .trainerName = _("Kelsey"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -32502,12 +30079,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_KELSEY_3] =
 {
     .trainerName = _("Kelsey"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -32527,12 +30100,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_KELSEY_4] =
 {
     .trainerName = _("Kelsey"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -32552,12 +30121,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CAMPER_RICKY_2] =
 {
     .trainerName = _("Ricky"),
-    .trainerClass = TRAINER_CLASS_CAMPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CAMPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
@@ -32572,12 +30137,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CAMPER_RICKY_3] =
 {
     .trainerName = _("Ricky"),
-    .trainerClass = TRAINER_CLASS_CAMPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CAMPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
@@ -32592,12 +30153,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CAMPER_RICKY_4] =
 {
     .trainerName = _("Ricky"),
-    .trainerClass = TRAINER_CLASS_CAMPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CAMPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
@@ -32612,12 +30169,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CAMPER_JEFF_2] =
 {
     .trainerName = _("Jeff"),
-    .trainerClass = TRAINER_CLASS_CAMPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CAMPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -32637,12 +30190,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CAMPER_JEFF_3] =
 {
     .trainerName = _("Jeff"),
-    .trainerClass = TRAINER_CLASS_CAMPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CAMPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -32662,12 +30211,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CAMPER_JEFF_4] =
 {
     .trainerName = _("Jeff"),
-    .trainerClass = TRAINER_CLASS_CAMPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CAMPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -32687,12 +30232,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_ISABELLE_2] =
 {
     .trainerName = _("Isabelle"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -32717,12 +30258,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_ISABELLE_3] =
 {
     .trainerName = _("Isabelle"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -32747,12 +30284,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_ISABELLE_4] =
 {
     .trainerName = _("Isabelle"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -32777,12 +30310,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_YASU_2] =
 {
     .trainerName = _("Yasu"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -32807,12 +30336,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_YASU_3] =
 {
     .trainerName = _("Yasu"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -32837,12 +30362,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_ENGINEER_BERNIE_2] =
 {
     .trainerName = _("Bernie"),
-    .trainerClass = TRAINER_CLASS_ENGINEER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ENGINEER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    ENGINEER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ENGINEER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -32867,12 +30388,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_GAMER_DARIAN_2] =
 {
     .trainerName = _("Darian"),
-    .trainerClass = TRAINER_CLASS_GAMER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_GAMER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    GAMBLER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_GAMER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -32892,12 +30409,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CAMPER_CHRIS_2] =
 {
     .trainerName = _("Chris"),
-    .trainerClass = TRAINER_CLASS_CAMPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CAMPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -32917,12 +30430,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CAMPER_CHRIS_3] =
 {
     .trainerName = _("Chris"),
-    .trainerClass = TRAINER_CLASS_CAMPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CAMPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -32942,12 +30451,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CAMPER_CHRIS_4] =
 {
     .trainerName = _("Chris"),
-    .trainerClass = TRAINER_CLASS_CAMPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CAMPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CAMPER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -32967,12 +30472,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_ALICIA_2] =
 {
     .trainerName = _("Alicia"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
@@ -32987,12 +30488,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_ALICIA_3] =
 {
     .trainerName = _("Alicia"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
@@ -33007,12 +30504,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_ALICIA_4] =
 {
     .trainerName = _("Alicia"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
@@ -33027,12 +30520,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_HIKER_JEREMY_2] =
 {
     .trainerName = _("Jeremy"),
-    .trainerClass = TRAINER_CLASS_HIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_HIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    HIKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_HIKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -33052,12 +30541,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_POKEMANIAC_MARK_3] =
 {
     .trainerName = _("Mark"),
-    .trainerClass = TRAINER_CLASS_POKEMANIAC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_POKEMANIAC_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    POKE_MANIAC_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_POKEMANIAC_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -33077,12 +30562,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_POKEMANIAC_HERMAN_2] =
 {
     .trainerName = _("Herman"),
-    .trainerClass = TRAINER_CLASS_POKEMANIAC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_POKEMANIAC_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    POKE_MANIAC_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_POKEMANIAC_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -33102,12 +30583,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_POKEMANIAC_HERMAN_3] =
 {
     .trainerName = _("Herman"),
-    .trainerClass = TRAINER_CLASS_POKEMANIAC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_POKEMANIAC_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    POKE_MANIAC_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_POKEMANIAC_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -33127,12 +30604,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_HIKER_TRENT_2] =
 {
     .trainerName = _("Trent"),
-    .trainerClass = TRAINER_CLASS_HIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_HIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    HIKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_HIKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -33152,12 +30625,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_LASS_MEGAN_2] =
 {
     .trainerName = _("Megan"),
-    .trainerClass = TRAINER_CLASS_LASS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LASS_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    LASS_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LASS_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -33192,12 +30661,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_LASS_MEGAN_3] =
 {
     .trainerName = _("Megan"),
-    .trainerClass = TRAINER_CLASS_LASS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LASS_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    LASS_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_LASS_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -33232,12 +30697,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_SUPER_NERD_GLENN_2] =
 {
     .trainerName = _("Glenn"),
-    .trainerClass = TRAINER_CLASS_SUPER_NERD_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SUPER_NERD_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    SUPER_NERD_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SUPER_NERD_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -33262,12 +30723,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_GAMER_RICH_2] =
 {
     .trainerName = _("Rich"),
-    .trainerClass = TRAINER_CLASS_GAMER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_GAMER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    GAMBLER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_GAMER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -33287,12 +30744,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIKER_JAREN_2] =
 {
     .trainerName = _("Jaren"),
-    .trainerClass = TRAINER_CLASS_BIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -33312,12 +30765,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_FISHERMAN_ELLIOT_2] =
 {
     .trainerName = _("Elliot"),
-    .trainerClass = TRAINER_CLASS_FISHERMAN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    FISHERMAN_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
@@ -33347,12 +30796,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_ROCKER_LUCA_2] =
 {
     .trainerName = _("Luca"),
-    .trainerClass = TRAINER_CLASS_ROCKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    ROCKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ROCKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -33372,12 +30817,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BEAUTY_SHEILA_2] =
 {
     .trainerName = _("Sheila"),
-    .trainerClass = TRAINER_CLASS_BEAUTY_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BEAUTY_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BEAUTY_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BEAUTY_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -33397,12 +30838,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_ROBERT_2] =
 {
     .trainerName = _("Robert"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
@@ -33432,12 +30869,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_ROBERT_3] =
 {
     .trainerName = _("Robert"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
@@ -33467,12 +30900,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_SUSIE_2] =
 {
     .trainerName = _("Susie"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -33507,12 +30936,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_SUSIE_3] =
 {
     .trainerName = _("Susie"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -33547,12 +30972,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_SUSIE_4] =
 {
     .trainerName = _("Susie"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -33587,12 +31008,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIKER_LUKAS_2] =
 {
     .trainerName = _("Lukas"),
-    .trainerClass = TRAINER_CLASS_BIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIKER_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
@@ -33622,12 +31039,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_BENNY_2] =
 {
     .trainerName = _("Benny"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -33647,12 +31060,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_BENNY_3] =
 {
     .trainerName = _("Benny"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -33672,12 +31081,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_MARLON_2] =
 {
     .trainerName = _("Marlon"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -33702,12 +31107,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_MARLON_3] =
 {
     .trainerName = _("Marlon"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -33732,12 +31133,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BEAUTY_GRACE_2] =
 {
     .trainerName = _("Grace"),
-    .trainerClass = TRAINER_CLASS_BEAUTY_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BEAUTY_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BEAUTY_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BEAUTY_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -33757,12 +31154,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_CHESTER_2] =
 {
     .trainerName = _("Chester"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -33787,12 +31180,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_CHESTER_3] =
 {
     .trainerName = _("Chester"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -33817,12 +31206,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_BECKY_2] =
 {
     .trainerName = _("Becky"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -33842,12 +31227,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_BECKY_3] =
 {
     .trainerName = _("Becky"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -33867,12 +31248,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_BECKY_4] =
 {
     .trainerName = _("Becky"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -33892,12 +31269,9 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CRUSH_KIN_RON_MYA_2] =
 {
     .trainerName = _("Ron & Mya"),
-    .trainerClass = TRAINER_CLASS_CRUSH_KIN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CRUSH_KIN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+    CRUSH_KIN_INFO,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CRUSH_KIN_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -33919,12 +31293,9 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CRUSH_KIN_RON_MYA_3] =
 {
     .trainerName = _("Ron & Mya"),
-    .trainerClass = TRAINER_CLASS_CRUSH_KIN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CRUSH_KIN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+    CRUSH_KIN_INFO,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CRUSH_KIN_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -33946,12 +31317,9 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CRUSH_KIN_RON_MYA_4] =
 {
     .trainerName = _("Ron & Mya"),
-    .trainerClass = TRAINER_CLASS_CRUSH_KIN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CRUSH_KIN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+    CRUSH_KIN_INFO,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CRUSH_KIN_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -33973,12 +31341,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIKER_RUBEN_2] =
 {
     .trainerName = _("Ruben"),
-    .trainerClass = TRAINER_CLASS_BIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIKER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -34003,12 +31367,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CUE_BALL_CAMRON_2] =
 {
     .trainerName = _("Camron"),
-    .trainerClass = TRAINER_CLASS_CUE_BALL_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CUE_BALL_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CUE_BALL_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CUE_BALL_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -34028,12 +31388,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIKER_JAXON_2] =
 {
     .trainerName = _("Jaxon"),
-    .trainerClass = TRAINER_CLASS_BIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIKER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -34053,12 +31409,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CUE_BALL_ISAIAH_2] =
 {
     .trainerName = _("Isaiah"),
-    .trainerClass = TRAINER_CLASS_CUE_BALL_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CUE_BALL_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CUE_BALL_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CUE_BALL_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -34078,12 +31430,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CUE_BALL_COREY_2] =
 {
     .trainerName = _("Corey"),
-    .trainerClass = TRAINER_CLASS_CUE_BALL_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CUE_BALL_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CUE_BALL_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CUE_BALL_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -34103,12 +31451,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_JACOB_2] =
 {
     .trainerName = _("Jacob"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
@@ -34138,12 +31482,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_JACOB_3] =
 {
     .trainerName = _("Jacob"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
@@ -34176,9 +31516,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -34201,9 +31539,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
@@ -34233,12 +31569,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_MISSY_2] =
 {
     .trainerName = _("Missy"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -34258,12 +31590,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PICNICKER_MISSY_3] =
 {
     .trainerName = _("Missy"),
-    .trainerClass = TRAINER_CLASS_PICNICKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PICNICKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PICNICKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -34283,12 +31611,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_FISHERMAN_WADE_2] =
 {
     .trainerName = _("Wade"),
-    .trainerClass = TRAINER_CLASS_FISHERMAN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    FISHERMAN_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_FISHERMAN_FRLG,
     .partySize = 6,
     .party = (const struct TrainerMon[])
     {
@@ -34331,9 +31655,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
@@ -34353,7 +31675,6 @@ UNUSED_TRAINER(15),
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SIS_AND_BRO_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -34378,7 +31699,6 @@ UNUSED_TRAINER(15),
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SIS_AND_BRO_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -34401,9 +31721,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
@@ -34421,9 +31739,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_CRUSH_GIRL_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -34448,9 +31764,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_CRUSH_GIRL_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -34475,9 +31789,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_CRUSH_GIRL_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -34502,9 +31814,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_CRUSH_GIRL_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -34526,12 +31836,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BLACK_BELT_SHEA_2] =
 {
     .trainerName = _("Shea"),
-    .trainerClass = TRAINER_CLASS_BLACK_BELT_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BLACK_BELT_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -34553,12 +31859,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BLACK_BELT_SHEA_3] =
 {
     .trainerName = _("Shea"),
-    .trainerClass = TRAINER_CLASS_BLACK_BELT_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BLACK_BELT_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -34580,12 +31882,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BLACK_BELT_HUGH_2] =
 {
     .trainerName = _("Hugh"),
-    .trainerClass = TRAINER_CLASS_BLACK_BELT_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BLACK_BELT_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -34607,12 +31905,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BLACK_BELT_HUGH_3] =
 {
     .trainerName = _("Hugh"),
-    .trainerClass = TRAINER_CLASS_BLACK_BELT_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BLACK_BELT_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BLACK_BELT_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -34634,12 +31928,9 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CRUSH_KIN_MIK_KIA_2] =
 {
     .trainerName = _("Mik & Kia"),
-    .trainerClass = TRAINER_CLASS_CRUSH_KIN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CRUSH_KIN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+    CRUSH_KIN_INFO,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CRUSH_KIN_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -34661,12 +31952,9 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CRUSH_KIN_MIK_KIA_3] =
 {
     .trainerName = _("Mik & Kia"),
-    .trainerClass = TRAINER_CLASS_CRUSH_KIN_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CRUSH_KIN_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+    CRUSH_KIN_INFO,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CRUSH_KIN_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -34691,9 +31979,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_TUBER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_TUBER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_TUBER_F_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -34723,7 +32009,6 @@ UNUSED_TRAINER(15),
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_TWINS_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -34743,12 +32028,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_PAINTER_RAYNA_2] =
 {
     .trainerName = _("Rayna"),
-    .trainerClass = TRAINER_CLASS_PAINTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PAINTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    PAINTER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PAINTER_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
@@ -34764,12 +32045,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_DESTIN_2] =
 {
     .trainerName = _("Destin"),
-    .trainerClass = TRAINER_CLASS_YOUNGSTER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    YOUNGSTER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNGSTER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -34792,9 +32069,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_PKMN_BREEDER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -34824,7 +32099,6 @@ UNUSED_TRAINER(15),
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNG_COUPLE_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -34849,7 +32123,6 @@ UNUSED_TRAINER(15),
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_YOUNG_COUPLE_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -34869,12 +32142,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_MILO_2] =
 {
     .trainerName = _("Milo"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -34894,12 +32163,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_CHAZ_2] =
 {
     .trainerName = _("Chaz"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -34919,12 +32184,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BIRD_KEEPER_HAROLD_2] =
 {
     .trainerName = _("Harold"),
-    .trainerClass = TRAINER_CLASS_BIRD_KEEPER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BIRD_KEEPER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -34947,9 +32208,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
@@ -34967,9 +32226,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_PSYCHIC_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PSYCHIC_F_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -35000,9 +32257,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
@@ -35017,12 +32272,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_HIKER_EARL_2] =
 {
     .trainerName = _("Earl"),
-    .trainerClass = TRAINER_CLASS_HIKER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_HIKER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    HIKER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_HIKER_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -35042,12 +32293,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_RUIN_MANIAC_LARRY_2] =
 {
     .trainerName = _("Larry"),
-    .trainerClass = TRAINER_CLASS_RUIN_MANIAC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_RUIN_MANIAC_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    RUIN_MANIAC_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_RUIN_MANIAC_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -35067,12 +32314,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_POKEMANIAC_HECTOR_2] =
 {
     .trainerName = _("Hector"),
-    .trainerClass = TRAINER_CLASS_POKEMANIAC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_POKEMANIAC_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    POKE_MANIAC_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_POKEMANIAC_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -35095,9 +32338,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_PSYCHIC_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PSYCHIC_M_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
@@ -35116,9 +32357,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_PSYCHIC_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_PSYCHIC_F_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -35146,12 +32385,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_JUGGLER_MASON_2] =
 {
     .trainerName = _("Mason"),
-    .trainerClass = TRAINER_CLASS_JUGGLER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_JUGGLER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    JUGGLER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_JUGGLER_FRLG,
     .partySize = 4,
     .party = (const struct TrainerMon[])
     {
@@ -35184,10 +32419,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_PKMN_RANGER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_POKEMON_RANGER_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -35212,10 +32445,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_PKMN_RANGER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_POKEMON_RANGER_F_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -35240,9 +32471,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_CRUSH_GIRL_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -35270,12 +32499,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_TAMER_EVAN_2] =
 {
     .trainerName = _("Evan"),
-    .trainerClass = TRAINER_CLASS_TAMER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_TAMER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    TAMER_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_TAMER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -35303,10 +32528,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_PKMN_RANGER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_POKEMON_RANGER_M_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -35337,10 +32560,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_PKMN_RANGER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_POKEMON_RANGER_F_FRLG,
     .partySize = 1,
     .party = (const struct TrainerMon[])
     {
@@ -35359,10 +32580,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -35405,10 +32624,8 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_HYPER_POTION },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
@@ -35448,13 +32665,10 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_COOL_COUPLE_LEX_NYA_2] =
 {
     .trainerName = _("Lex & Nya"),
-    .trainerClass = TRAINER_CLASS_COOL_COUPLE_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_COOL_COUPLE_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-    .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
+    COOL_COUPLE_INFO,
+    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .trainerBackPic = TRAINER_PIC_FRONT_COOL_COUPLE_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -35476,12 +32690,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BUG_CATCHER_COLTON_2] =
 {
     .trainerName = _("Colton"),
-    .trainerClass = TRAINER_CLASS_BUG_CATCHER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BUG_CATCHER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -35506,12 +32716,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BUG_CATCHER_COLTON_3] =
 {
     .trainerName = _("Colton"),
-    .trainerClass = TRAINER_CLASS_BUG_CATCHER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BUG_CATCHER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -35536,12 +32742,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_BUG_CATCHER_COLTON_4] =
 {
     .trainerName = _("Colton"),
-    .trainerClass = TRAINER_CLASS_BUG_CATCHER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    BUG_CATCHER_FRLG_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_BUG_CATCHER_FRLG,
     .partySize = 3,
     .party = (const struct TrainerMon[])
     {
@@ -35569,9 +32771,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -35594,9 +32794,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -35619,9 +32817,7 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {
@@ -35644,42 +32840,40 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_LORELEI_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-    .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     .mugshotColor = MUGSHOT_COLOR_PURPLE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ELITE_FOUR_LORELEI_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 64,
         .species = SPECIES_DEWGONG,
-        IVS(31),
+        PERFECT_IVS,
         .moves = {MOVE_ICE_BEAM, MOVE_SURF, MOVE_SIGNAL_BEAM, MOVE_DOUBLE_TEAM},
         },
         {
         .lvl = 63,
         .species = SPECIES_CLOYSTER,
-        IVS(31),
+        PERFECT_IVS,
         .moves = {MOVE_ICE_BEAM, MOVE_SURF, MOVE_SUPERSONIC, MOVE_RAIN_DANCE},
         },
         {
         .lvl = 63,
         .species = SPECIES_PILOSWINE,
-        IVS(31),
+        PERFECT_IVS,
         .moves = {MOVE_BLIZZARD, MOVE_EARTHQUAKE, MOVE_DOUBLE_EDGE, MOVE_ROCK_SLIDE},
         },
         {
         .lvl = 66,
         .species = SPECIES_JYNX,
-        IVS(31),
+        PERFECT_IVS,
         .moves = {MOVE_ICE_BEAM, MOVE_PSYCHIC, MOVE_LOVELY_KISS, MOVE_ATTRACT},
         },
         {
         .lvl = 66,
         .species = SPECIES_LAPRAS,
-        IVS(31),
+        PERFECT_IVS,
         .moves = {MOVE_ICE_BEAM, MOVE_SURF, MOVE_PSYCHIC, MOVE_THUNDER},
         .heldItem = ITEM_CHERI_BERRY,
         },
@@ -35692,42 +32886,40 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_BRUNO_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-    .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     .mugshotColor = MUGSHOT_COLOR_GREEN,
-    .trainerBackPic = TRAINER_PIC_FRONT_ELITE_FOUR_BRUNO_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 65,
         .species = SPECIES_STEELIX,
-        IVS(31),
+        PERFECT_IVS,
         .moves = {MOVE_EARTHQUAKE, MOVE_IRON_TAIL, MOVE_CRUNCH, MOVE_ROCK_TOMB},
         },
         {
         .lvl = 65,
         .species = SPECIES_HITMONCHAN,
-        IVS(31),
+        PERFECT_IVS,
         .moves = {MOVE_SKY_UPPERCUT, MOVE_MACH_PUNCH, MOVE_ROCK_SLIDE, MOVE_COUNTER},
         },
         {
         .lvl = 65,
         .species = SPECIES_HITMONLEE,
-        IVS(31),
+        PERFECT_IVS,
         .moves = {MOVE_MEGA_KICK, MOVE_FORESIGHT, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE},
         },
         {
         .lvl = 66,
         .species = SPECIES_STEELIX,
-        IVS(31),
+        PERFECT_IVS,
         .moves = {MOVE_EARTHQUAKE, MOVE_IRON_TAIL, MOVE_CRUNCH, MOVE_DRAGON_BREATH},
         },
         {
         .lvl = 68,
         .species = SPECIES_MACHAMP,
-        IVS(31),
+        PERFECT_IVS,
         .moves = {MOVE_CROSS_CHOP, MOVE_EARTHQUAKE, MOVE_BRICK_BREAK, MOVE_ROCK_SLIDE},
         .heldItem = ITEM_PERSIM_BERRY,
         },
@@ -35740,42 +32932,40 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_AGATHA_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-    .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     .mugshotColor = MUGSHOT_COLOR_PINK,
-    .trainerBackPic = TRAINER_PIC_FRONT_ELITE_FOUR_AGATHA_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 66,
         .species = SPECIES_GENGAR,
-        IVS(31),
+        PERFECT_IVS,
         .moves = {MOVE_SHADOW_BALL, MOVE_PSYCHIC, MOVE_CONFUSE_RAY, MOVE_HYPNOSIS},
         },
         {
         .lvl = 66,
         .species = SPECIES_CROBAT,
-        IVS(31),
+        PERFECT_IVS,
         .moves = {MOVE_SLUDGE_BOMB, MOVE_AIR_CUTTER, MOVE_SHADOW_BALL, MOVE_CONFUSE_RAY},
         },
         {
         .lvl = 65,
         .species = SPECIES_MISDREAVUS,
-        IVS(31),
+        PERFECT_IVS,
         .moves = {MOVE_SHADOW_BALL, MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_ATTRACT},
         },
         {
         .lvl = 68,
         .species = SPECIES_ARBOK,
-        IVS(31),
+        PERFECT_IVS,
         .moves = {MOVE_SLUDGE_BOMB, MOVE_EARTHQUAKE, MOVE_GIGA_DRAIN, MOVE_DOUBLE_TEAM},
         },
         {
         .lvl = 70,
         .species = SPECIES_GENGAR,
-        IVS(31),
+        PERFECT_IVS,
         .moves = {MOVE_SHADOW_BALL, MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_SLUDGE_BOMB},
         .heldItem = ITEM_CHESTO_BERRY,
         },
@@ -35788,206 +32978,42 @@ UNUSED_TRAINER(15),
     .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
     .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_LANCE_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-    .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
     .mugshotColor = MUGSHOT_COLOR_BLUE,
-    .trainerBackPic = TRAINER_PIC_FRONT_ELITE_FOUR_LANCE_FRLG,
     .partySize = 5,
     .party = (const struct TrainerMon[])
     {
         {
         .lvl = 68,
         .species = SPECIES_GYARADOS,
-        IVS(31),
+        PERFECT_IVS,
         .moves = {MOVE_HYPER_BEAM, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE, MOVE_THUNDER_WAVE},
         },
         {
         .lvl = 66,
         .species = SPECIES_DRAGONITE,
-        IVS(31),
+        PERFECT_IVS,
         .moves = {MOVE_HYPER_BEAM, MOVE_EARTHQUAKE, MOVE_DRAGON_CLAW, MOVE_FLAMETHROWER},
         },
         {
         .lvl = 66,
         .species = SPECIES_KINGDRA,
-        IVS(31),
+        PERFECT_IVS,
         .moves = {MOVE_HYPER_BEAM, MOVE_DRAGON_DANCE, MOVE_SURF, MOVE_ICE_BEAM},
         },
         {
         .lvl = 70,
         .species = SPECIES_AERODACTYL,
-        IVS(31),
+        PERFECT_IVS,
         .moves = {MOVE_HYPER_BEAM, MOVE_ANCIENT_POWER, MOVE_AERIAL_ACE, MOVE_EARTHQUAKE},
         },
         {
         .lvl = 72,
         .species = SPECIES_DRAGONITE,
-        IVS(31),
+        PERFECT_IVS,
         .moves = {MOVE_HYPER_BEAM, MOVE_OUTRAGE, MOVE_THUNDERBOLT, MOVE_ICE_BEAM},
         .heldItem = ITEM_PERSIM_BERRY,
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_CHAMPION_REMATCH_SQUIRTLE] =
-{
-    .trainerName = _("Terry"),
-    .trainerClass = TRAINER_CLASS_CHAMPION_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CHAMPION_RIVAL_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .mugshotColor = MUGSHOT_COLOR_YELLOW,
-    .trainerBackPic = TRAINER_PIC_FRONT_CHAMPION_RIVAL_FRLG,
-    .partySize = 6,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 72,
-        .species = SPECIES_HERACROSS,
-        IVS(31),
-        .moves = {MOVE_MEGAHORN, MOVE_EARTHQUAKE, MOVE_COUNTER, MOVE_ROCK_TOMB},
-        },
-        {
-        .lvl = 73,
-        .species = SPECIES_ALAKAZAM,
-        IVS(31),
-        .moves = {MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_CALM_MIND, MOVE_REFLECT},
-        },
-        {
-        .lvl = 72,
-        .species = SPECIES_TYRANITAR,
-        IVS(31),
-        .moves = {MOVE_CRUNCH, MOVE_EARTHQUAKE, MOVE_THUNDERBOLT, MOVE_AERIAL_ACE},
-        },
-        {
-        .lvl = 73,
-        .species = SPECIES_ARCANINE,
-        IVS(31),
-        .moves = {MOVE_EXTREME_SPEED, MOVE_OVERHEAT, MOVE_AERIAL_ACE, MOVE_IRON_TAIL},
-        },
-        {
-        .lvl = 73,
-        .species = SPECIES_EXEGGUTOR,
-        IVS(31),
-        .moves = {MOVE_GIGA_DRAIN, MOVE_PSYCHIC, MOVE_SLEEP_POWDER, MOVE_LIGHT_SCREEN},
-        },
-        {
-        .lvl = 75,
-        .species = SPECIES_BLASTOISE,
-        IVS(31),
-        .moves = {MOVE_HYDRO_PUMP, MOVE_ICE_BEAM, MOVE_EARTHQUAKE, MOVE_RAIN_DANCE},
-        .heldItem = ITEM_SITRUS_BERRY,
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_CHAMPION_REMATCH_BULBASAUR] =
-{
-    .trainerName = _("Terry"),
-    .trainerClass = TRAINER_CLASS_CHAMPION_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CHAMPION_RIVAL_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .mugshotColor = MUGSHOT_COLOR_YELLOW,
-    .trainerBackPic = TRAINER_PIC_FRONT_CHAMPION_RIVAL_FRLG,
-    .partySize = 6,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 72,
-        .species = SPECIES_HERACROSS,
-        IVS(31),
-        .moves = {MOVE_MEGAHORN, MOVE_EARTHQUAKE, MOVE_COUNTER, MOVE_ROCK_TOMB},
-        },
-        {
-        .lvl = 73,
-        .species = SPECIES_ALAKAZAM,
-        IVS(31),
-        .moves = {MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_CALM_MIND, MOVE_REFLECT},
-        },
-        {
-        .lvl = 72,
-        .species = SPECIES_TYRANITAR,
-        IVS(31),
-        .moves = {MOVE_CRUNCH, MOVE_EARTHQUAKE, MOVE_THUNDERBOLT, MOVE_AERIAL_ACE},
-        },
-        {
-        .lvl = 73,
-        .species = SPECIES_GYARADOS,
-        IVS(31),
-        .moves = {MOVE_HYDRO_PUMP, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE, MOVE_HYPER_BEAM},
-        },
-        {
-        .lvl = 73,
-        .species = SPECIES_ARCANINE,
-        IVS(31),
-        .moves = {MOVE_EXTREME_SPEED, MOVE_OVERHEAT, MOVE_AERIAL_ACE, MOVE_IRON_TAIL},
-        },
-        {
-        .lvl = 75,
-        .species = SPECIES_VENUSAUR,
-        IVS(31),
-        .moves = {MOVE_SOLAR_BEAM, MOVE_SLUDGE_BOMB, MOVE_EARTHQUAKE, MOVE_SUNNY_DAY},
-        .heldItem = ITEM_SITRUS_BERRY,
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_CHAMPION_REMATCH_CHARMANDER] =
-{
-    .trainerName = _("Terry"),
-    .trainerClass = TRAINER_CLASS_CHAMPION_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CHAMPION_RIVAL_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .mugshotColor = MUGSHOT_COLOR_YELLOW,
-    .trainerBackPic = TRAINER_PIC_FRONT_CHAMPION_RIVAL_FRLG,
-    .partySize = 6,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 72,
-        .species = SPECIES_HERACROSS,
-        IVS(31),
-        .moves = {MOVE_MEGAHORN, MOVE_EARTHQUAKE, MOVE_COUNTER, MOVE_ROCK_TOMB},
-        },
-        {
-        .lvl = 73,
-        .species = SPECIES_ALAKAZAM,
-        IVS(31),
-        .moves = {MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_CALM_MIND, MOVE_REFLECT},
-        },
-        {
-        .lvl = 72,
-        .species = SPECIES_TYRANITAR,
-        IVS(31),
-        .moves = {MOVE_CRUNCH, MOVE_EARTHQUAKE, MOVE_THUNDERBOLT, MOVE_AERIAL_ACE},
-        },
-        {
-        .lvl = 73,
-        .species = SPECIES_EXEGGUTOR,
-        IVS(31),
-        .moves = {MOVE_GIGA_DRAIN, MOVE_PSYCHIC, MOVE_SLEEP_POWDER, MOVE_LIGHT_SCREEN},
-        },
-        {
-        .lvl = 73,
-        .species = SPECIES_GYARADOS,
-        IVS(31),
-        .moves = {MOVE_HYDRO_PUMP, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE, MOVE_HYPER_BEAM},
-        },
-        {
-        .lvl = 75,
-        .species = SPECIES_CHARIZARD,
-        IVS(31),
-        .moves = {MOVE_FIRE_BLAST, MOVE_DRAGON_CLAW, MOVE_AERIAL_ACE, MOVE_EARTHQUAKE},
-        .heldItem = ITEM_SITRUS_BERRY,
         },
     },
 },
@@ -35995,12 +33021,8 @@ UNUSED_TRAINER(15),
 [DIFFICULTY_NORMAL][TRAINER_CUE_BALL_PAXTON] =
 {
     .trainerName = _("Paxton"),
-    .trainerClass = TRAINER_CLASS_CUE_BALL_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CUE_BALL_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+    CUE_BALL_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .trainerBackPic = TRAINER_PIC_FRONT_CUE_BALL_FRLG,
     .partySize = 2,
     .party = (const struct TrainerMon[])
     {

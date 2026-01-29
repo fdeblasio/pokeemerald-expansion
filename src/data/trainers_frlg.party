@@ -4428,7 +4428,7 @@ Machoke @ Black Belt
 Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_RIVAL_OAKS_LAB_SQUIRTLE ===
+=== TRAINER_RIVAL_OAKS_LAB_WATER ===
 Name: TERRY
 Class: Rival Early Frlg
 Pic: Rival Early Frlg
@@ -4443,7 +4443,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
 - Tail Whip
 
-=== TRAINER_RIVAL_OAKS_LAB_BULBASAUR ===
+=== TRAINER_RIVAL_OAKS_LAB_GRASS ===
 Name: TERRY
 Class: Rival Early Frlg
 Pic: Rival Early Frlg
@@ -4458,7 +4458,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
 - Growl
 
-=== TRAINER_RIVAL_OAKS_LAB_CHARMANDER ===
+=== TRAINER_RIVAL_OAKS_LAB_FIRE ===
 Name: TERRY
 Class: Rival Early Frlg
 Pic: Rival Early Frlg
@@ -4473,7 +4473,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Scratch
 - Growl
 
-=== TRAINER_RIVAL_ROUTE22_EARLY_SQUIRTLE ===
+=== TRAINER_RIVAL_ROUTE22_EARLY_WATER ===
 Name: TERRY
 Class: Rival Early Frlg
 Pic: Rival Early Frlg
@@ -4494,7 +4494,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Tackle
 - Tail Whip
 
-=== TRAINER_RIVAL_ROUTE22_EARLY_BULBASAUR ===
+=== TRAINER_RIVAL_ROUTE22_EARLY_GRASS ===
 Name: TERRY
 Class: Rival Early Frlg
 Pic: Rival Early Frlg
@@ -4515,7 +4515,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Tackle
 - Growl
 
-=== TRAINER_RIVAL_ROUTE22_EARLY_CHARMANDER ===
+=== TRAINER_RIVAL_ROUTE22_EARLY_FIRE ===
 Name: TERRY
 Class: Rival Early Frlg
 Pic: Rival Early Frlg
@@ -4536,7 +4536,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Scratch
 - Growl
 
-=== TRAINER_RIVAL_CERULEAN_SQUIRTLE ===
+=== TRAINER_RIVAL_CERULEAN_WATER ===
 Name: TERRY
 Class: Rival Early Frlg
 Pic: Rival Early Frlg
@@ -4573,7 +4573,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Withdraw
 - Water Gun
 
-=== TRAINER_RIVAL_CERULEAN_BULBASAUR ===
+=== TRAINER_RIVAL_CERULEAN_GRASS ===
 Name: TERRY
 Class: Rival Early Frlg
 Pic: Rival Early Frlg
@@ -4610,7 +4610,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Vine Whip
 - Leech Seed
 
-=== TRAINER_RIVAL_CERULEAN_CHARMANDER ===
+=== TRAINER_RIVAL_CERULEAN_FIRE ===
 Name: TERRY
 Class: Rival Early Frlg
 Pic: Rival Early Frlg
@@ -7353,7 +7353,7 @@ Ponyta
 Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_RIVAL_SS_ANNE_SQUIRTLE ===
+=== TRAINER_RIVAL_SS_ANNE_WATER ===
 Name: TERRY
 Class: Rival Late Frlg
 Pic: Rival Late Frlg
@@ -7378,7 +7378,7 @@ Wartortle
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_RIVAL_SS_ANNE_BULBASAUR ===
+=== TRAINER_RIVAL_SS_ANNE_GRASS ===
 Name: TERRY
 Class: Rival Late Frlg
 Pic: Rival Late Frlg
@@ -7403,7 +7403,7 @@ Ivysaur
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_RIVAL_SS_ANNE_CHARMANDER ===
+=== TRAINER_RIVAL_SS_ANNE_FIRE ===
 Name: TERRY
 Class: Rival Late Frlg
 Pic: Rival Late Frlg
@@ -7428,7 +7428,7 @@ Charmeleon
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_RIVAL_POKEMON_TOWER_SQUIRTLE ===
+=== TRAINER_RIVAL_POKEMON_TOWER_WATER ===
 Name: TERRY
 Class: Rival Late Frlg
 Pic: Rival Late Frlg
@@ -7457,7 +7457,7 @@ Wartortle
 Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_RIVAL_POKEMON_TOWER_BULBASAUR ===
+=== TRAINER_RIVAL_POKEMON_TOWER_GRASS ===
 Name: TERRY
 Class: Rival Late Frlg
 Pic: Rival Late Frlg
@@ -7486,7 +7486,7 @@ Ivysaur
 Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_RIVAL_POKEMON_TOWER_CHARMANDER ===
+=== TRAINER_RIVAL_POKEMON_TOWER_FIRE ===
 Name: TERRY
 Class: Rival Late Frlg
 Pic: Rival Late Frlg
@@ -7515,7 +7515,7 @@ Charmeleon
 Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_RIVAL_SILPH_SQUIRTLE ===
+=== TRAINER_RIVAL_SILPH_WATER ===
 Name: TERRY
 Class: Rival Late Frlg
 Pic: Rival Late Frlg
@@ -7544,7 +7544,7 @@ Blastoise
 Level: 40
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_RIVAL_SILPH_BULBASAUR ===
+=== TRAINER_RIVAL_SILPH_GRASS ===
 Name: TERRY
 Class: Rival Late Frlg
 Pic: Rival Late Frlg
@@ -7573,7 +7573,7 @@ Venusaur
 Level: 40
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_RIVAL_SILPH_CHARMANDER ===
+=== TRAINER_RIVAL_SILPH_FIRE ===
 Name: TERRY
 Class: Rival Late Frlg
 Pic: Rival Late Frlg
@@ -7602,7 +7602,7 @@ Charizard
 Level: 40
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_RIVAL_ROUTE22_LATE_SQUIRTLE ===
+=== TRAINER_RIVAL_ROUTE22_LATE_WATER ===
 Name: TERRY
 Class: Rival Late Frlg
 Pic: Rival Late Frlg
@@ -7659,7 +7659,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Bite
 - Rapid Spin
 
-=== TRAINER_RIVAL_ROUTE22_LATE_BULBASAUR ===
+=== TRAINER_RIVAL_ROUTE22_LATE_GRASS ===
 Name: TERRY
 Class: Rival Late Frlg
 Pic: Rival Late Frlg
@@ -7716,7 +7716,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Growth
 - Synthesis
 
-=== TRAINER_RIVAL_ROUTE22_LATE_CHARMANDER ===
+=== TRAINER_RIVAL_ROUTE22_LATE_FIRE ===
 Name: TERRY
 Class: Rival Late Frlg
 Pic: Rival Late Frlg
@@ -7773,7 +7773,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Slash
 - Scary Face
 
-=== TRAINER_CHAMPION_FIRST_SQUIRTLE ===
+=== TRAINER_CHAMPION_FIRST_WATER ===
 Name: TERRY
 Class: Champion Frlg
 Pic: Champion Rival Frlg
@@ -7832,7 +7832,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Skull Bash
 - Bite
 
-=== TRAINER_CHAMPION_FIRST_BULBASAUR ===
+=== TRAINER_CHAMPION_FIRST_GRASS ===
 Name: TERRY
 Class: Champion Frlg
 Pic: Champion Rival Frlg
@@ -7891,7 +7891,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Sunny Day
 - Growth
 
-=== TRAINER_CHAMPION_FIRST_CHARMANDER ===
+=== TRAINER_CHAMPION_FIRST_FIRE ===
 Name: TERRY
 Class: Champion Frlg
 Pic: Champion Rival Frlg
@@ -13594,7 +13594,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunderbolt
 - Ice Beam
 
-=== TRAINER_CHAMPION_REMATCH_SQUIRTLE ===
+=== TRAINER_CHAMPION_REMATCH_WATER ===
 Name: TERRY
 Class: Champion Frlg
 Pic: Champion Rival Frlg
@@ -13653,7 +13653,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Earthquake
 - Rain Dance
 
-=== TRAINER_CHAMPION_REMATCH_BULBASAUR ===
+=== TRAINER_CHAMPION_REMATCH_GRASS ===
 Name: TERRY
 Class: Champion Frlg
 Pic: Champion Rival Frlg
@@ -13712,7 +13712,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Earthquake
 - Sunny Day
 
-=== TRAINER_CHAMPION_REMATCH_CHARMANDER ===
+=== TRAINER_CHAMPION_REMATCH_FIRE ===
 Name: TERRY
 Class: Champion Frlg
 Pic: Champion Rival Frlg

@@ -4,6 +4,35 @@
 #include "constants/battle_partner.h"
 
 #define TRAINER_NONE                               0
+// Important trainers
+#define TRAINER_RIVAL_OAKS_LAB_GRASS             227
+#define TRAINER_RIVAL_OAKS_LAB_FIRE              228
+#define TRAINER_RIVAL_OAKS_LAB_WATER             226
+#define TRAINER_RIVAL_ROUTE22_EARLY_GRASS        230
+#define TRAINER_RIVAL_ROUTE22_EARLY_FIRE         231
+#define TRAINER_RIVAL_ROUTE22_EARLY_WATER        229
+#define TRAINER_RIVAL_CERULEAN_GRASS             233
+#define TRAINER_RIVAL_CERULEAN_FIRE              234
+#define TRAINER_RIVAL_CERULEAN_WATER             232
+#define TRAINER_RIVAL_SS_ANNE_GRASS              327
+#define TRAINER_RIVAL_SS_ANNE_FIRE               328
+#define TRAINER_RIVAL_SS_ANNE_WATER              326
+#define TRAINER_RIVAL_POKEMON_TOWER_GRASS        330
+#define TRAINER_RIVAL_POKEMON_TOWER_FIRE         331
+#define TRAINER_RIVAL_POKEMON_TOWER_WATER        329
+#define TRAINER_RIVAL_SILPH_GRASS                333
+#define TRAINER_RIVAL_SILPH_FIRE                 334
+#define TRAINER_RIVAL_SILPH_WATER                332
+#define TRAINER_RIVAL_ROUTE22_LATE_GRASS         336
+#define TRAINER_RIVAL_ROUTE22_LATE_FIRE          337
+#define TRAINER_RIVAL_ROUTE22_LATE_WATER         335
+#define TRAINER_CHAMPION_FIRST_GRASS             339
+#define TRAINER_CHAMPION_FIRST_FIRE              340
+#define TRAINER_CHAMPION_FIRST_WATER             338
+#define TRAINER_CHAMPION_REMATCH_GRASS           621
+#define TRAINER_CHAMPION_REMATCH_FIRE            622
+#define TRAINER_CHAMPION_REMATCH_WATER           620
+// Regular trainers
 #define TRAINER_YOUNGSTER_BEN                      1
 #define TRAINER_YOUNGSTER_CALVIN                   2
 #define TRAINER_YOUNGSTER_JOSH                     3
@@ -229,15 +258,6 @@
 #define TRAINER_BLACK_BELT_KIYO                    223
 #define TRAINER_BLACK_BELT_TAKASHI                 224
 #define TRAINER_BLACK_BELT_DAISUKE                 225
-#define TRAINER_RIVAL_OAKS_LAB_SQUIRTLE            226
-#define TRAINER_RIVAL_OAKS_LAB_BULBASAUR           227
-#define TRAINER_RIVAL_OAKS_LAB_CHARMANDER          228
-#define TRAINER_RIVAL_ROUTE22_EARLY_SQUIRTLE       229
-#define TRAINER_RIVAL_ROUTE22_EARLY_BULBASAUR      230
-#define TRAINER_RIVAL_ROUTE22_EARLY_CHARMANDER     231
-#define TRAINER_RIVAL_CERULEAN_SQUIRTLE            232
-#define TRAINER_RIVAL_CERULEAN_BULBASAUR           233
-#define TRAINER_RIVAL_CERULEAN_CHARMANDER          234
 #define TRAINER_SCIENTIST_TED                      235
 #define TRAINER_SCIENTIST_CONNOR                   236
 #define TRAINER_SCIENTIST_JERRY                    237
@@ -329,21 +349,6 @@
 #define TRAINER_GENTLEMAN_TUCKER                   323
 #define TRAINER_GENTLEMAN_NORTON                   324
 #define TRAINER_GENTLEMAN_WALTER                   325
-#define TRAINER_RIVAL_SS_ANNE_SQUIRTLE             326
-#define TRAINER_RIVAL_SS_ANNE_BULBASAUR            327
-#define TRAINER_RIVAL_SS_ANNE_CHARMANDER           328
-#define TRAINER_RIVAL_POKEMON_TOWER_SQUIRTLE       329
-#define TRAINER_RIVAL_POKEMON_TOWER_BULBASAUR      330
-#define TRAINER_RIVAL_POKEMON_TOWER_CHARMANDER     331
-#define TRAINER_RIVAL_SILPH_SQUIRTLE               332
-#define TRAINER_RIVAL_SILPH_BULBASAUR              333
-#define TRAINER_RIVAL_SILPH_CHARMANDER             334
-#define TRAINER_RIVAL_ROUTE22_LATE_SQUIRTLE        335
-#define TRAINER_RIVAL_ROUTE22_LATE_BULBASAUR       336
-#define TRAINER_RIVAL_ROUTE22_LATE_CHARMANDER      337
-#define TRAINER_CHAMPION_FIRST_SQUIRTLE            338
-#define TRAINER_CHAMPION_FIRST_BULBASAUR           339
-#define TRAINER_CHAMPION_FIRST_CHARMANDER          340
 #define TRAINER_CHANNELER_PATRICIA                 341
 #define TRAINER_CHANNELER_CARLY                    342
 #define TRAINER_CHANNELER_HOPE                     343
@@ -623,9 +628,6 @@
 #define TRAINER_ELITE_FOUR_BRUNO_2                 617
 #define TRAINER_ELITE_FOUR_AGATHA_2                618
 #define TRAINER_ELITE_FOUR_LANCE_2                 619
-#define TRAINER_CHAMPION_REMATCH_SQUIRTLE          620
-#define TRAINER_CHAMPION_REMATCH_BULBASAUR         621
-#define TRAINER_CHAMPION_REMATCH_CHARMANDER        622
 #define TRAINER_CUE_BALL_PAXTON                    623
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is

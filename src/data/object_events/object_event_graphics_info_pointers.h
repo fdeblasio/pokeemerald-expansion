@@ -260,6 +260,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Woman1Frlg;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CrushGirl;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Man;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rocker;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Juggler;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_FatManFrlg;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Woman2Frlg;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BeautyFrlg;
@@ -669,6 +670,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_CRUSH_GIRL]               = &gObjectEventGraphicsInfo_CrushGirl,
     [OBJ_EVENT_GFX_MAN]                      = &gObjectEventGraphicsInfo_Man,
     [OBJ_EVENT_GFX_ROCKER]                   = &gObjectEventGraphicsInfo_Rocker,
+    [OBJ_EVENT_GFX_JUGGLER]                  = &gObjectEventGraphicsInfo_Juggler,
     [OBJ_EVENT_GFX_FAT_MAN_FRLG]             = &gObjectEventGraphicsInfo_FatManFrlg,
     [OBJ_EVENT_GFX_WOMAN_2_FRLG]             = &gObjectEventGraphicsInfo_Woman2Frlg,
     [OBJ_EVENT_GFX_BEAUTY_FRLG]              = &gObjectEventGraphicsInfo_BeautyFrlg,

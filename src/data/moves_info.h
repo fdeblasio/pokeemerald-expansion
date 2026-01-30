@@ -182,10 +182,7 @@ const u8 gNotDoneYetDescription[] = _(
     BASIC_MOVE,                               \
     .power = 30,                              \
     .pp = 35,                                 \
-    .additionalEffects = ADDITIONAL_EFFECTS({ \
-        .moveEffect = Effect,                 \
-        .chance = 30,                         \
-    })
+    .target = TARGET_SELECTED
 
 #define TRAPPING_35_POWER_MOVE(Move)                     \
     TRAPPING_MOVE(Move),                                 \
@@ -200,16 +197,10 @@ const u8 gNotDoneYetDescription[] = _(
     .pp = 40,               \
     .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING
 
-#define EFFECT_40_POWER(Effect)               \
-    .effect = EFFECT_HIT,                     \
+#define EFFECT_40_POWER_INFO(Effect)          \
+    EFFECT_MOVE_INFO(Effect, 10),             \
     .power = 40,                              \
-    .accuracy = 100,                          \
     .pp = 30,                                 \
-    .priority = 0,                            \
-    .additionalEffects = ADDITIONAL_EFFECTS({ \
-        .moveEffect = Effect,                 \
-        .chance = 10,                         \
-    }),                                       \
     .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING
 
 #define HIGH_PRIORITY_40_POWER_INFO \
@@ -303,11 +294,6 @@ const u8 gNotDoneYetDescription[] = _(
     .pp = 25,                                 \
     .target = TARGET_SELECTED,                \
     .validApprenticeMove = TRUE
-
-#define HIT_TWICE_60_TOTAL_POWER_INFO \
-    HIT_TWICE_INFO,                   \
-    .power = 30,                      \
-    .pp = 30
 
 #define RAISE_ALL_STATS_60_POWER_INFO                                      \
     BASIC_MOVE,                                                            \
@@ -486,6 +472,19 @@ const u8 gNotDoneYetDescription[] = _(
     .pp = 10,                                        \
     .target = TARGET_SELECTED,                       \
     .contestEffect = CONTEST_EFFECT_BETTER_IF_FIRST, \
+    .validApprenticeMove = TRUE
+
+#define DOUBLE_AND_REMOVE_ON_STATUS_70_POWER(Status) \
+    .effect = EFFECT_DOUBLE_POWER_ON_ARG_STATUS,     \
+    .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 70 : 60, \
+    .accuracy = 100,                                 \
+    .pp = 10,                                        \
+    .target = TARGET_SELECTED,                       \
+    .priority = 0,                                   \
+    .argument = { .status = Status },                \
+    .additionalEffects = ADDITIONAL_EFFECTS({        \
+        .moveEffect = MOVE_EFFECT_REMOVE_STATUS,     \
+    }),                                              \
     .validApprenticeMove = TRUE
 
 #define ESCAPE_70_POWER_INFO     \

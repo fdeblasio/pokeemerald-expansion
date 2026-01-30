@@ -243,6 +243,7 @@ upcoming
         - Instead, maybe both gym battles AND G/T battles check both badges and existing flags/GabbyAndTyGetBattleNum?
 
 ### Moves
+- Turn some animation macros into functions like the Absorb ones
 - Replace Hypno's Hypnosis effect with a new move that uses its pendulum in the animation
 - Aqua Ring heals more with Water Bubble? In rain?
 - Should teachable be unchecked for egg moves due to the relearner/SV TMs?
@@ -271,10 +272,9 @@ upcoming
         - Leafage->Razor Leaf/Magical Leaf/Leaf Blade
         - Vine Whip->Power Whip
 - Possible Move Updates:
-    - Rock Smash: 40->50, 100% reduce
-        - clone of Struggle Bug/Pounce/Chilling Water?
-    - Bite: 60->65
-    - Poison Fang: 60->65
+    - Bite: 60->65?
+    - Poison Fang: 60->65?
+    - Brick Break: 75->85 to match Psychic Fangs?
     - Shadow Punch: 60->75?
         - Would need Ghost-type never miss replacement
     - Delta Stream Flying-type Weather Ball

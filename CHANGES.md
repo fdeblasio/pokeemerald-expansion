@@ -570,7 +570,9 @@
         - Power: 70->75
         - PP: 10->15
     - Double Hit:
+        - Power: 35->40
         - Accuracy: 90->100
+        - PP: 10->15
     - Double Slap:
         - Now hits exactly twice
         - Power: 15->30
@@ -591,6 +593,8 @@
         - PP: 15->20
     - Head Charge:
         - No longer causes recoil
+    - Horn Attack:
+        - PP: 25->35
     - Hyper Drill:
         - PP: 5->10
     - Hyper Fang:
@@ -636,6 +640,9 @@
         - PP: 5->10
     - Tera Starstorm:
         - PP: 5->10
+    - Vise Grip:
+        - Power: 55->65
+        - PP: 30->35
     - Wrap:
         - Power: 15->35
         - Accuracy: 90->100
@@ -644,12 +651,16 @@
         - Power: 15->25
     - Aura Sphere:
         - Power: 80->90
+    - Brick Break:
+        - Power: 75->85
     - Collision Course:
         - PP: 5->10
     - Dynamic Punch:
         - Power: 100->120
     - Flying Press:
         - Accuracy: 95->100
+    - Force Palm:
+        - PP: 10->25
     - Rock Smash:
         - PP: 15->20
     - Rolling Kick:
@@ -680,6 +691,8 @@
         - Accuracy: 80->100
     - Dragon Ascent:
         - PP: 5->10
+    - Dragon Breath:
+        - PP: 20->25
     - Dual Wingbeat:
         - Accuracy: 90->100
         - PP: 10->15
@@ -692,6 +705,8 @@
         - PP: 35->40
     - Sky Attack:
         - Accuracy: 90->100
+    - Wing Attack:
+        - Power: 60->65
 - Poison:
     - Barb Barrage:
         - Power: 60->75
@@ -865,7 +880,7 @@
         - Accuracy: 85->100
         - PP: 15->20
     - Flame Wheel:
-        - Power: 60->65
+        - Chance to burn: 10%->30%
     - Fusion Flare:
         - PP: 5->10
     - Heat Wave:
@@ -923,6 +938,9 @@
         - Accuracy: 95->100
     - Water Gun:
         - PP: 25->40
+    - Water Pulse:
+        - PP: 20->25
+        - Chance to confuse: 20%->30%
     - Water Shuriken:
         - Power: 15->25
     - Wave Crash:
@@ -938,6 +956,7 @@
         - PP: 5->10
     - Leaf Tornado:
         - Accuracy: 90->100
+        - Effect: 50%->30%
     - Matcha Gotcha:
         - Accuracy: 90->100
     - Needle Arm:
@@ -1109,6 +1128,8 @@
     - Spin Out:
         - PP: 5->10
         - No longer lowers user's Speed
+    - Steel Beam:
+        - Accuracy: 95->100
     - Steel Wing:
         - Accuracy: 90->100
     - Sunsteel Strike:

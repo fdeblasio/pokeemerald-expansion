@@ -8772,7 +8772,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_RAIN_DANCE},
         .battleAnimScript = gBattleAnimMove_WaterPulse,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_DOOM_DESIRE] =
@@ -10709,7 +10708,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         EAT_BERRY_60_POWER_INFO,
         .type = TYPE_BUG,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
         .bitingMove = TRUE,
         NO_COMBO(C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_CUTE : CONTEST_CATEGORY_TOUGH),
         .battleAnimScript = gBattleAnimMove_BugBite,

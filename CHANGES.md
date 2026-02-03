@@ -541,7 +541,10 @@
 - Added custom 40 BP moves for type/category combos that were missing them
     - Animations and descriptions are currently missing
     - No Pokémon currently learn them
-- All Pokémon in the Dragon egg group that could not already learn Dragon Breath now learn it by move tutor. This is reflected in the species changes below
+- All Pokémon in an Egg Group that shares a name with a type now learn a move of that type by either Egg Move or move tutor. This is reflected in the species changes below
+    - Dragon: Dragon Breath by move tutor
+    - Fairy: Fairy Wind by Egg Move (except Phione)
+    - Grass: Grass Whistle by Egg Move
 - Moves are no longer replaced if a Pokémon levels up in the daycare
 #### Many moves (especially signature moves) were given 100% accuracy and/or 10 PP as opposed to 5:
 - Normal:
@@ -1393,14 +1396,17 @@
 - Pichu:
     - Held item: Light Ball: 0%->100%
     - Evolution: friendship->12
+    - Learns Fairy Wind by Egg Move
 
 - Pikachu:
     - Held item: Light Ball: 5%->100%
     - Evolves into Alolan Raichu with a Sun Stone
     - Learns Volt Tackle by level up
+    - Learns Fairy Wind by Egg Move
 
 - Raichu:
     - Learns Volt Tackle by level up
+    - Learns Fairy Wind by Egg Move
 
 - Alolan Raichu:
     - Learns Volt Tackle and Psybeam by level up
@@ -2664,6 +2670,7 @@
 - Shroomish:
     - Atk: 40->50
     - Learns Bullet Seed by level up
+    - Learns Fairy Wind by Egg Move
 
 - Breloom:
     - Held items:
@@ -2671,6 +2678,7 @@
         - Big Mushroom: 5%->50%
         - Balm Mushroom: 0%->5%
     - Learns Bullet Seed, Arm Thrust, and Drain Punch by level up
+    - Learns Fairy Wind by Egg Move
 
 - Slakoth/Vigoroth:
     - Learn Body Slam by level up
@@ -2727,6 +2735,7 @@
     - SpD: 35->45
     - Spe: 50->55
     - Learns Quick Attack, Swift, Headbutt, and Hyper Voice by level up
+    - Learns Fairy Wind by Egg Move
 
 - Delcatty:
     - HP: 70->75
@@ -2736,6 +2745,7 @@
     - SpD: 55->65
     - Spe: 90->105
     - Learns Quick Attack, Swift, Headbutt, and Hyper Voice by level up
+    - Learns Fairy Wind by Egg Move
 
 - Sableye:
     - Loses Stall as an ability since it's worthless
@@ -2768,11 +2778,13 @@
 - Plusle:
     - SpD: 75->85
     - Learns Thunder Shock and Shock Wave by level up
+    - Learns Fairy Wind by Egg Move
 
 - Minun:
     - SpA: 75->85
     - Learns Thunder Shock and Shock Wave by level up
     - Learns Bestow and Trump Card by level up to match Plusle learning Switcheroo and Last Resort
+    - Learns Fairy Wind by Egg Move
 
 - Volbeat:
     - Atk: 73->75
@@ -2787,13 +2799,15 @@
 - Budew:
     - Evolution: friendship->13
     - Gender ratio: 50/50->75/25
+    - Learns Fairy Wind by Egg Move
 
 - Roselia/Roserade:
     - Gender ratio: 50/50->75/25
-    - Learn Venoshock and Energy Ball by level up
     - Held items:
         - Poison Barb: 5%->50%
         - Absorb Bulb: 0%->5%
+    - Learn Venoshock and Energy Ball by level up
+    - Learns Fairy Wind by Egg Move
 
 - Gulpin:
     - Atk: 43->45
@@ -2970,6 +2984,7 @@
 
 - Snorunt/Glalie/Froslass:
     - Learn Aurora Beam and Ice Beam by level up
+    - Learns Fairy Wind by Egg Move
 
 - Spheal/Sealeo/Walrein:
     - Learn Chilling Water, Bubble Beam, and Ice Beam by level up
@@ -3130,6 +3145,9 @@
     - Learns Shock Wave and Thunder Fang by level up
     - Learns Signal Beam by TM
     - Learns Tail Slap by Egg Move
+
+- Cherubi/Cherrim:
+    - Learns Fairy Wind by Egg Move
 
 - Cherrim Sunshine Form:
     - Atk: 60->90
@@ -4241,6 +4259,7 @@
     - Atk: 52->55
     - SpA: 82->90
     - Learns Fairy Wind, Giga Drain, and Dazzling Gleam by level up
+    - Learns Grass Whistle by Egg Move
 
 - Oranguru:
     - Catch rate: 45->90
@@ -4284,6 +4303,7 @@
 
 - Togedemaru:
     - Learns Metal Claw, Iron Head, and Supercell Slam by level up
+    - Learns Fairy Wind by Egg Move
 
 - Mimikyu:
     - Catch rate: 45->90
@@ -4546,13 +4566,16 @@
     - Evolution: 32->28
     - Catch rate: 235->255
     - Learns Extrasensory by level up
+    - Learns Fairy Wind by Egg Move
 
 - Hattrem:
     - Evolution: 42->38
     - Learns Extrasensory by level up
+    - Learns Fairy Wind by Egg Move
 
 - Hatterene:
     - Learns Extrasensory by level up
+    - Learns Fairy Wind by Egg Move
 
 - Impidimp:
     - Evolution: 32->28
@@ -4580,6 +4603,7 @@
     - Def: 100->110
     - Catch rate: 45->90
     - Learns Smart Strike, Brick Break, Iron Head, Spiky Shield, and Body Press by level up
+    - Learns Fairy Wind by Egg Move
 
 - Mega Falinks:
     - HP: 65->75
@@ -4604,6 +4628,10 @@
 - Indeedee:
     - Catch rate: 30->90
     - Learns Confusion, Pound, Swift, Hyper Voice, and Expanding Force by level up
+    - Learns Fairy Wind by Egg Move
+
+- Morpeko:
+    - Learns Fairy Wind by Egg Move
 
 - Cufant:
     - Received Sturdy as a second ability
@@ -4684,6 +4712,9 @@
 
 - Pawmot:
     - Learns Mach Punch, Power-Up Punch, Drain Punch, Thunder Punch, Mega Punch, Zing Zap, and Supercell Slam by level up
+
+- Tandemaus/Maushold:
+    - Learns Fairy Wind by Egg Move
 
 - Fidough:
     - HP: 37->40

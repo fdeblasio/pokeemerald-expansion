@@ -171,6 +171,7 @@ static const u16 sPichuEggMoveLearnset[] = {
     MOVE_COVET,
     MOVE_DOUBLE_SLAP,
     MOVE_ECHOED_VOICE,
+    MOVE_FAIRY_WIND,
     MOVE_FAKE_OUT,
     MOVE_FLAIL,
     MOVE_MAGNET_RISE,
@@ -2890,6 +2891,7 @@ static const u16 sSurskitEggMoveLearnset[] = {
 #if P_FAMILY_SHROOMISH
 static const u16 sShroomishEggMoveLearnset[] = {
     MOVE_CONFIDE,
+    MOVE_FAIRY_WIND,
     MOVE_ROUND,
     MOVE_SNORE,
     MOVE_SYNTHESIS,
@@ -2989,6 +2991,7 @@ static const u16 sSkittyEggMoveLearnset[] = {
     MOVE_CONFIDE,
     MOVE_COSMIC_POWER,
     MOVE_ECHOED_VOICE,
+    MOVE_FAIRY_WIND,
     MOVE_LAST_RESORT,
     MOVE_MUD_BOMB,
     MOVE_ROUND,
@@ -3103,6 +3106,7 @@ static const u16 sPlusleEggMoveLearnset[] = {
     MOVE_CONFIDE,
     MOVE_COVET,
     MOVE_ECHOED_VOICE,
+    MOVE_FAIRY_WIND,
     MOVE_MAGNET_RISE,
     MOVE_ROUND,
     MOVE_SING,
@@ -3120,6 +3124,7 @@ static const u16 sMinunEggMoveLearnset[] = {
     MOVE_CONFIDE,
     MOVE_COVET,
     MOVE_ECHOED_VOICE,
+    MOVE_FAIRY_WIND,
     MOVE_MAGNET_RISE,
     MOVE_ROUND,
     MOVE_SING,
@@ -3163,6 +3168,7 @@ static const u16 sBudewEggMoveLearnset[] = {
     MOVE_COTTON_SPORE,
     MOVE_COVET,
     MOVE_EXTRASENSORY,
+    MOVE_FAIRY_WIND,
     MOVE_GRASS_WHISTLE,
     MOVE_LIFE_DEW,
     MOVE_MIND_READER,
@@ -3728,6 +3734,7 @@ static const u16 sSnoruntEggMoveLearnset[] = {
     MOVE_BLOCK,
     MOVE_CONFIDE,
     MOVE_DISABLE,
+    MOVE_FAIRY_WIND,
     MOVE_ROUND,
     MOVE_SNORE,
     MOVE_SWITCHEROO,
@@ -4050,6 +4057,7 @@ static const u16 sBuizelEggMoveLearnset[] = {
 static const u16 sCherubiEggMoveLearnset[] = {
     MOVE_AROMATHERAPY,
     MOVE_CONFIDE,
+    MOVE_FAIRY_WIND,
     MOVE_FLOWER_SHIELD,
     MOVE_GRASS_WHISTLE,
     MOVE_HEAL_PULSE,
@@ -6521,6 +6529,7 @@ static const u16 sComfeyEggMoveLearnset[] = {
     MOVE_COVET,
     MOVE_DEFOG,
     MOVE_ECHOED_VOICE,
+    MOVE_GRASS_WHISTLE,
     MOVE_HEAL_BELL,
     MOVE_LEAF_TORNADO,
     MOVE_MAGIC_COAT,
@@ -6681,6 +6690,7 @@ static const u16 sTogedemaruEggMoveLearnset[] = {
     MOVE_BOUNCE,
     MOVE_CONFIDE,
     MOVE_COVET,
+    MOVE_FAIRY_WIND,
     MOVE_FAKE_OUT,
     MOVE_FLAIL,
     MOVE_LAST_RESORT,
@@ -7042,6 +7052,7 @@ static const u16 sSinisteaEggMoveLearnset[] = {
 #if P_FAMILY_HATENNA
 static const u16 sHatennaEggMoveLearnset[] = {
     MOVE_AFTER_YOU,
+    MOVE_FAIRY_WIND,
     MOVE_NUZZLE,
     MOVE_QUASH,
     MOVE_ROUND,
@@ -7078,6 +7089,7 @@ static const u16 sMilceryEggMoveLearnset[] = {
 static const u16 sFalinksEggMoveLearnset[] = {
     MOVE_ASSURANCE,
     MOVE_BEAT_UP,
+    MOVE_FAIRY_WIND,
     MOVE_RETALIATE,
     MOVE_REVENGE,
     MOVE_ROUND,
@@ -7146,6 +7158,7 @@ static const u16 sEiscueEggMoveLearnset[] = {
 static const u16 sIndeedeeMEggMoveLearnset[] = {
     MOVE_ALLY_SWITCH,
     MOVE_EXTRASENSORY,
+    MOVE_FAIRY_WIND,
     MOVE_FAKE_OUT,
     MOVE_MAGIC_ROOM,
     MOVE_PAY_DAY,
@@ -7160,6 +7173,7 @@ static const u16 sIndeedeeMEggMoveLearnset[] = {
 
 static const u16 sIndeedeeFEggMoveLearnset[] = {
     MOVE_ALLY_SWITCH,
+    MOVE_FAIRY_WIND,
     MOVE_FAKE_OUT,
     MOVE_GUARD_SWAP,
     MOVE_HEAL_PULSE,
@@ -7304,6 +7318,7 @@ static const u16 sPawmiEggMoveLearnset[] = {
 static const u16 sTandemausEggMoveLearnset[] = {
     MOVE_AFTER_YOU,
     MOVE_BITE,
+    MOVE_FAIRY_WIND,
     MOVE_FEINT,
     MOVE_SWITCHEROO,
     MOVE_TERA_BLAST,

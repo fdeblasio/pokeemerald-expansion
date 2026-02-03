@@ -260,7 +260,7 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-    "EggMoves": [],
+    "EggMoves": ["MOVE_FAIRY_WIND"],
     "TutorMoves": []
   },
   "PIKACHU": {
@@ -4145,7 +4145,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [],
-    "EggMoves": [],
+    "EggMoves": ["MOVE_FAIRY_WIND"],
     "TutorMoves": []
   },
   "BRELOOM": {
@@ -4303,7 +4303,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [],
-    "EggMoves": [],
+    "EggMoves": ["MOVE_FAIRY_WIND"],
     "TutorMoves": []
   },
   "DELCATTY": {
@@ -4420,7 +4420,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [],
-    "EggMoves": [],
+    "EggMoves": ["MOVE_FAIRY_WIND"],
     "TutorMoves": []
   },
   "MINUN": {
@@ -4432,7 +4432,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [],
-    "EggMoves": [],
+    "EggMoves": ["MOVE_FAIRY_WIND"],
     "TutorMoves": []
   },
   "VOLBEAT": {
@@ -4453,7 +4453,7 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-    "EggMoves": ["MOVE_POWER_WHIP"],
+    "EggMoves": ["MOVE_POWER_WHIP", "MOVE_FAIRY_WIND"],
     "TutorMoves": []
   },
   "ROSELIA": {
@@ -4967,7 +4967,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [],
-    "EggMoves": [],
+    "EggMoves": ["MOVE_FAIRY_WIND"],
     "TutorMoves": []
   },
   "GLALIE": {
@@ -5594,7 +5594,7 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-    "EggMoves": [],
+    "EggMoves": ["MOVE_FAIRY_WIND"],
     "TutorMoves": []
   },
   "CHERRIM": {
@@ -9004,7 +9004,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [],
-    "EggMoves": [],
+    "EggMoves": ["MOVE_GRASS_WHISTLE"],
     "TutorMoves": []
   },
   "ORANGURU": {
@@ -9151,7 +9151,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [],
-    "EggMoves": [],
+    "EggMoves": ["MOVE_FAIRY_WIND"],
     "TutorMoves": []
   },
   "MIMIKYU": {
@@ -10013,7 +10013,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [],
-    "EggMoves": [],
+    "EggMoves": ["MOVE_FAIRY_WIND"],
     "TutorMoves": []
   },
   "HATTREM": {
@@ -10091,7 +10091,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [],
-    "EggMoves": [],
+    "EggMoves": ["MOVE_FAIRY_WIND"],
     "TutorMoves": []
   },
   "PINCURCHIN": {
@@ -10150,7 +10150,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [],
-    "EggMoves": [],
+    "EggMoves": ["MOVE_FAIRY_WIND"],
     "TutorMoves": []
   },
   "INDEEDEE_F": {
@@ -10163,7 +10163,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [],
-    "EggMoves": [],
+    "EggMoves": ["MOVE_FAIRY_WIND"],
     "TutorMoves": []
   },
   "MORPEKO": {
@@ -10561,7 +10561,7 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
-    "EggMoves": [],
+    "EggMoves": ["MOVE_FAIRY_WIND"],
     "TutorMoves": []
   },
   "MAUSHOLD": {

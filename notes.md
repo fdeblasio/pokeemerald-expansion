@@ -128,14 +128,12 @@ upcoming
     - Currently all new ones seem to have a default value (Pecharunt is 1 foot tall and looks huge in it)
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?
 - Add Volcanion to Scorched Slab? (since it's Fire/Water)
-- For Egg Groups that share names with types, give moves of that type to Pokémon not of that type in the egg group
-    - Egg moves since egg group?
-    - Dragon: Dragon Claw/Pulse/Tail/etc. (where applicable)
-    - Fairy: Fairy Wind? (Igglybuff, Plusle, Minun, Audino, Hattena, Indeedee, Pikachu, Marill, Shroomish, Skitty, Budew, Snorunt, Cherubi, Phione, Dedenne, Carbink, Togedemaru, Impidimp, Milcery, Falinks, Morpeko, Tandemaus)
-    - Bug
-    - Flying
-    - Grass
-    - Water 1/2/3
+- For Egg Groups that share names with types, give Egg Moves moves of that type to Pokémon not of that type in the Egg Group
+    - Flying: ??? (Decidueye*, Flittle, Galairian Farfetch'd, Quaxly)
+    - Water 1/2/3: Water Gun/Waterfall/Water Spout/Muddy Water/Water Sport/Water Pulse/Water Shuriken/Chilling Water
+        - Water 1: Tadbulb, Galarian Slowpoke, Dratini, Paldean Wooper, Galarian Corsola, Delibird, Masquerain*, Bidoof, Stunfisk, Galarian Stunfisk, Inkay, Clobbopus, Pincurchin, Eiscue, Wattrel
+        - Water 2: Hisuian Qwilfish, Inkay
+        - Water 3: Lileep, Anorith, Crabrawler, Klawf, Galarian Corsola, Skorupi, Archen
 - Map out progression of low/medium/high power moves for each type/move type and improve level up movesets for more STAB
     - Ideally every Pokemon can learn their types' 40/65/90 power moves
 - Add more indicators of shiniess in wild battles in case sparkles are missed
@@ -147,39 +145,40 @@ upcoming
 ### Items
 - Find way to properly set TM description (in both shop.c and item_menu.c) to move's description
     - Move is currently on two lines, item is on 3 so the move gets cut off
-- See if it's possible to give the item PC and decoration PC more room
-- Figure out how many items are obtainable in-game (item pocket only)
-    - 558 max (595 - 37 medicine):
-        - 136 non-macroed
-        - 28 macros:
-            - 8 regional specialties
-            - 6 vitamins
-            - 6 feathers
-            - 21 mints
-            - 6 exp candies
-            - 6 X items
-            - 23 treasures
-            - 4 shards
-            - 7 relics
-            - 8 mulch
-            - 7 apricorns
-            - 12 mail
-            - 10 evolution stones
-            - 7 sweets
-            - 4 nectar
-            - 17 plates
-            - 4 drives
-            - 17 memories
-            - 92 mega stones
-            - 18 gems
-            - 35 Z-crystals
-            - 78 held items
-            - 9 incenses
-            - 5 scarves
-            - 6 power items
-            - 18 type boost items
-            - 18 Tera Shards
-            - 7 mochi
+- See if it's possible to give the decoration PC more room
+- Increase bag space for all items: 383 (595 - 100 items - 37 medicine - 75 unused):
+    - 136 non-macroed
+    - 28 macros:
+        - 8 regional specialties
+        - 6 vitamins
+        - 6 feathers
+        - 21 mints
+        - 6 exp candies
+        - 6 X items
+        - 23 treasures
+        - 4 shards
+        - 7 relics
+        - 12 mail
+        - 10 evolution stones
+        - 7 sweets
+        - 4 nectar
+        - 92 mega stones
+        - 18 gems
+        - 78 held items
+        - 9 incenses
+        - 5 scarves
+        - 6 power items
+        - 18 type boost items
+    - Conditional:
+        - 17 plates
+        - 4 drives
+        - 17 memories
+    - Unused:
+        - 8 mulch
+        - 7 apricorns
+        - 35 Z-crystals
+        - 18 Tera Shards
+        - 7 mochi
 
 ### Trainers
 - Clear up trainer spots by having just one set of gym leader rematches?

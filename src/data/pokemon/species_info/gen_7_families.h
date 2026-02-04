@@ -4874,6 +4874,38 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     },
 #endif //P_FAMILY_TOGEDEMARU
 
+#define MIMIKYU_INFO                                               \
+    .baseHP        = 55,                                           \
+    .baseAttack    = 90,                                           \
+    .baseDefense   = 80,                                           \
+    .baseSpeed     = 96,                                           \
+    .baseSpAttack  = 50,                                           \
+    .baseSpDefense = 105,                                          \
+    .types = MON_TYPES(TYPE_GHOST, TYPE_FAIRY),                    \
+    .catchRate = BOOSTED_CATCH_RATE(45),                           \
+    .expYield = 167,                                               \
+    .evYield_SpDefense = 2,                                        \
+    .itemRare = ITEM_CHESTO_BERRY,                                 \
+    .genderRatio = PERCENT_FEMALE(50),                             \
+    .eggCycles = 20,                                               \
+    .friendship = STANDARD_FRIENDSHIP,                             \
+    .growthRate = GROWTH_MEDIUM_FAST,                              \
+    .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),              \
+    .abilities = { ABILITY_DISGUISE, ABILITY_NONE, ABILITY_NONE }, \
+    .bodyColor = BODY_COLOR_YELLOW,                                \
+    .speciesName = _("Mimikyu"),                                   \
+    .cryId = CRY_MIMIKYU,                                          \
+    .natDexNum = NATIONAL_DEX_MIMIKYU,                             \
+    .categoryName = _("Disguise"),                                 \
+    .frontPicSize = MON_COORDS_SIZE(48, 40),                       \
+    .frontPicYOffset = 12,                                         \
+    .frontAnimFrames = sAnims_SingleFramePlaceHolder,              \
+    .iconPalIndex = 1,                                             \
+    .levelUpLearnset = sMimikyuLevelUpLearnset,                    \
+    .teachableLearnset = sMimikyuTeachableLearnset,                \
+    .eggMoveLearnset = sMimikyuEggMoveLearnset,                    \
+    .formSpeciesIdTable = sMimikyuFormSpeciesIdTable
+
 #if P_FAMILY_MIMIKYU
 #define MIMIKYU_INFO(Size, Phase)                                      \
     {                                                                  \

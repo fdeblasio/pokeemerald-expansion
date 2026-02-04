@@ -4874,31 +4874,42 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     },
 #endif //P_FAMILY_TOGEDEMARU
 
+#define MIMIKYU_INFO                                               \
+    .baseHP        = 55,                                           \
+    .baseAttack    = 90,                                           \
+    .baseDefense   = 80,                                           \
+    .baseSpeed     = 96,                                           \
+    .baseSpAttack  = 50,                                           \
+    .baseSpDefense = 105,                                          \
+    .types = MON_TYPES(TYPE_GHOST, TYPE_FAIRY),                    \
+    .catchRate = BOOSTED_CATCH_RATE(45),                           \
+    .expYield = 167,                                               \
+    .evYield_SpDefense = 2,                                        \
+    .itemRare = ITEM_CHESTO_BERRY,                                 \
+    .genderRatio = PERCENT_FEMALE(50),                             \
+    .eggCycles = 20,                                               \
+    .friendship = STANDARD_FRIENDSHIP,                             \
+    .growthRate = GROWTH_MEDIUM_FAST,                              \
+    .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),              \
+    .abilities = { ABILITY_DISGUISE, ABILITY_NONE, ABILITY_NONE }, \
+    .bodyColor = BODY_COLOR_YELLOW,                                \
+    .speciesName = _("Mimikyu"),                                   \
+    .cryId = CRY_MIMIKYU,                                          \
+    .natDexNum = NATIONAL_DEX_MIMIKYU,                             \
+    .categoryName = _("Disguise"),                                 \
+    .frontPicSize = MON_COORDS_SIZE(48, 40),                       \
+    .frontPicYOffset = 12,                                         \
+    .frontAnimFrames = sAnims_SingleFramePlaceHolder,              \
+    .iconPalIndex = 1,                                             \
+    .levelUpLearnset = sMimikyuLevelUpLearnset,                    \
+    .teachableLearnset = sMimikyuTeachableLearnset,                \
+    .eggMoveLearnset = sMimikyuEggMoveLearnset,                    \
+    .formSpeciesIdTable = sMimikyuFormSpeciesIdTable
+
 #if P_FAMILY_MIMIKYU
     [SPECIES_MIMIKYU_DISGUISED] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 90,
-        .baseDefense   = 80,
-        .baseSpeed     = 96,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 105,
-        .types = MON_TYPES(TYPE_GHOST, TYPE_FAIRY),
-        .catchRate = BOOSTED_CATCH_RATE(45),
-        .expYield = 167,
-        .evYield_SpDefense = 2,
-        .itemRare = ITEM_CHESTO_BERRY,
-        .genderRatio = PERCENT_FEMALE(50),
-        .eggCycles = 20,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
-        .abilities = { ABILITY_DISGUISE, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Mimikyu"),
-        .cryId = CRY_MIMIKYU,
-        .natDexNum = NATIONAL_DEX_MIMIKYU,
-        .categoryName = _("Disguise"),
+        MIMIKYU_INFO,
         .height = 2,
         .weight = 7,
         .description = gMimikyuDisguisedPokedexText,
@@ -4907,9 +4918,6 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .trainerScale = 256,
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_MimikyuDisguised,
-        .frontPicSize = MON_COORDS_SIZE(48, 40),
-        .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         .frontAnimId = ANIM_DEEP_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_MimikyuDisguised,
         .backPicSize = MON_COORDS_SIZE(56, 56),
@@ -4918,7 +4926,6 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .palette = gMonPalette_MimikyuDisguised,
         .shinyPalette = gMonShinyPalette_MimikyuDisguised,
         .iconSprite = gMonIcon_MimikyuDisguised,
-        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(-3, 1, SHADOW_SIZE_S)
         FOOTPRINT(Mimikyu)
@@ -4931,37 +4938,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_MimikyuDisguised,
             gShinyOverworldPalette_MimikyuDisguised
         )
-        .levelUpLearnset = sMimikyuLevelUpLearnset,
-        .teachableLearnset = sMimikyuTeachableLearnset,
-        .eggMoveLearnset = sMimikyuEggMoveLearnset,
-        .formSpeciesIdTable = sMimikyuFormSpeciesIdTable,
         .formChangeTable = sMimikyuFormChangeTable,
     },
 
     [SPECIES_MIMIKYU_BUSTED] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 90,
-        .baseDefense   = 80,
-        .baseSpeed     = 96,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 105,
-        .types = MON_TYPES(TYPE_GHOST, TYPE_FAIRY),
-        .catchRate = BOOSTED_CATCH_RATE(45),
-        .expYield = 167,
-        .evYield_SpDefense = 2,
-        .itemRare = ITEM_CHESTO_BERRY,
-        .genderRatio = PERCENT_FEMALE(50),
-        .eggCycles = 20,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
-        .abilities = { ABILITY_DISGUISE, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Mimikyu"),
-        .cryId = CRY_MIMIKYU,
-        .natDexNum = NATIONAL_DEX_MIMIKYU,
-        .categoryName = _("Disguise"),
+        MIMIKYU_INFO,
         .height = 2,
         .weight = 7,
         .description = gMimikyuBustedPokedexText,
@@ -4970,9 +4952,6 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .trainerScale = 256,
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_MimikyuBusted,
-        .frontPicSize = MON_COORDS_SIZE(48, 40),
-        .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         .frontAnimId = ANIM_DEEP_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_MimikyuBusted,
         .backPicSize = MON_COORDS_SIZE(64, 40),
@@ -4981,41 +4960,15 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .palette = gMonPalette_MimikyuBusted,
         .shinyPalette = gMonShinyPalette_MimikyuBusted,
         .iconSprite = gMonIcon_MimikyuBusted,
-        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(-3, 1, SHADOW_SIZE_S)
         FOOTPRINT(Mimikyu)
-        .levelUpLearnset = sMimikyuLevelUpLearnset,
-        .teachableLearnset = sMimikyuTeachableLearnset,
-        .eggMoveLearnset = sMimikyuEggMoveLearnset,
-        .formSpeciesIdTable = sMimikyuFormSpeciesIdTable,
         .formChangeTable = sMimikyuFormChangeTable,
     },
 
     [SPECIES_MIMIKYU_TOTEM_DISGUISED] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 90,
-        .baseDefense   = 80,
-        .baseSpeed     = 96,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 105,
-        .types = MON_TYPES(TYPE_GHOST, TYPE_FAIRY),
-        .catchRate = BOOSTED_CATCH_RATE(45),
-        .expYield = 167,
-        .evYield_SpDefense = 2,
-        .itemRare = ITEM_CHESTO_BERRY,
-        .genderRatio = PERCENT_FEMALE(50),
-        .eggCycles = 20,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
-        .abilities = { ABILITY_DISGUISE, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Mimikyu"),
-        .cryId = CRY_MIMIKYU,
-        .natDexNum = NATIONAL_DEX_MIMIKYU,
-        .categoryName = _("Disguise"),
+        MIMIKYU_INFO,
         .height = 24,
         .weight = 28,
         .description = gMimikyuDisguisedPokedexText,
@@ -5024,9 +4977,6 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .trainerScale = 256,
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_MimikyuDisguised,
-        .frontPicSize = MON_COORDS_SIZE(48, 40),
-        .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         .frontAnimId = ANIM_DEEP_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_MimikyuDisguised,
         .backPicSize = MON_COORDS_SIZE(56, 56),
@@ -5035,7 +4985,6 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .palette = gMonPalette_MimikyuDisguised,
         .shinyPalette = gMonShinyPalette_MimikyuDisguised,
         .iconSprite = gMonIcon_MimikyuDisguised,
-        .iconPalIndex = 1,
         TOTEM_INFO,
         SHADOW(-3, 1, SHADOW_SIZE_S)
         FOOTPRINT(Mimikyu)
@@ -5048,37 +4997,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             gOverworldPalette_MimikyuDisguised,
             gShinyOverworldPalette_MimikyuDisguised
         )
-        .levelUpLearnset = sMimikyuLevelUpLearnset,
-        .teachableLearnset = sMimikyuTeachableLearnset,
-        .eggMoveLearnset = sMimikyuEggMoveLearnset,
-        .formSpeciesIdTable = sMimikyuFormSpeciesIdTable,
         .formChangeTable = sMimikyuTotemFormChangeTable,
     },
 
     [SPECIES_MIMIKYU_BUSTED_TOTEM] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 90,
-        .baseDefense   = 80,
-        .baseSpeed     = 96,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 105,
-        .types = MON_TYPES(TYPE_GHOST, TYPE_FAIRY),
-        .catchRate = BOOSTED_CATCH_RATE(45),
-        .expYield = 167,
-        .evYield_SpDefense = 2,
-        .itemRare = ITEM_CHESTO_BERRY,
-        .genderRatio = PERCENT_FEMALE(50),
-        .eggCycles = 20,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
-        .abilities = { ABILITY_DISGUISE, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Mimikyu"),
-        .cryId = CRY_MIMIKYU,
-        .natDexNum = NATIONAL_DEX_MIMIKYU,
-        .categoryName = _("Disguise"),
+        MIMIKYU_INFO,
         .height = 24,
         .weight = 28,
         .description = gMimikyuBustedPokedexText,
@@ -5087,9 +5011,6 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .trainerScale = 256,
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_MimikyuBusted,
-        .frontPicSize = MON_COORDS_SIZE(48, 40),
-        .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         .frontAnimId = ANIM_DEEP_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_MimikyuBusted,
         .backPicSize = MON_COORDS_SIZE(64, 40),
@@ -5098,14 +5019,9 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .palette = gMonPalette_MimikyuBusted,
         .shinyPalette = gMonShinyPalette_MimikyuBusted,
         .iconSprite = gMonIcon_MimikyuBusted,
-        .iconPalIndex = 1,
         TOTEM_INFO,
         SHADOW(-3, 1, SHADOW_SIZE_S)
         FOOTPRINT(Mimikyu)
-        .levelUpLearnset = sMimikyuLevelUpLearnset,
-        .teachableLearnset = sMimikyuTeachableLearnset,
-        .eggMoveLearnset = sMimikyuEggMoveLearnset,
-        .formSpeciesIdTable = sMimikyuFormSpeciesIdTable,
         .formChangeTable = sMimikyuTotemFormChangeTable,
     },
 #endif //P_FAMILY_MIMIKYU

@@ -8173,7 +8173,7 @@ AcidDrench:
 gBattleAnimMove_Powder::
 	monbg ANIM_DEF_PARTNER
 	splitbgprio ANIM_TARGET
-	create_powder_particles template=gPowderBlackSporeTemplate
+	create_powder_particles macro=create_powder_particle_sprite
 	clearmonbg ANIM_DEF_PARTNER
 	end
 

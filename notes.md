@@ -543,9 +543,22 @@ upcoming
     - Change Kirlia and Dusclops to fit the type of move used?
 
 ## FireRed:
+- Pewter:
+    - Add Pokemon/grass to Pewter City for grinding
+    - Lower Brock's level?
+- Mt. Moon:
+    - Figure out a way to get second fossil
+- Route 4:
+    - Remove ledge
+- Cerulean:
+    - Have Misty only available after Rival/Bill?
+    - Lower Misty's level? (lower wild levels too in that case)
+- Vermilion:
+    - Get SS Anne to stay?
+        - Might cause conflict with Seagallop
+
 - Decap:
     - Trainer Tower
-- Add Pokemon/grass to Pewter City for grinding. Also lower Brock's level
 - Disable Contest summary screen?
 - Rock Slide, Body Slam, Swords Dance, and Thunder Wave are tutors in FRLG but are now TMs due to Emerald
     - Two Island lady can give out Blast Burn/Frenzy Plant/Hydro Cannon TMs instead of teaching moves
@@ -561,16 +574,11 @@ upcoming
 - Make Rival's teams less identical? Not sure if there's enough birds for that
     - Charmander team would have Rattata to not give double advantage against Bulbasaur
 - Add Charms after Tea is taken
-- Decide if regional forms will be postgame or main game
-    - Add Galarian birds to Sevii Islands?
 - Rocker sprite renamed to juggler_frlg.png because rocker has new one. Make sure the rocker uses it
     - overworld
     - file definition for juggler
-- Rearrange opponents_frlg.h
 - Remove Rock Smash rocks and Strength boulders
     - Check if any removals will cause weird progession
-- Get SS Anne to stay?
-    - Might cause conflict with Seagallop
 - Species defines
 - MAP_GROUP_AND_NUM
 - Update local Porymap
@@ -582,14 +590,43 @@ upcoming
 - Game Corner
 
 ### Pokémon
+- Decide if regional forms will be postgame or main game
+    - Evolutions (Raichu, Marowak, Exeggutor, Weezing, Mr. Mime) are in-game
+    - Alolan Diglett is in Diglett's Cave
+    - Remaining:
+        - Rattata/Raticate
+        - Sandshrew/Sandslash
+        - Vulpix/Ninetales
+        - Meowth/Persian
+        - Meowth/Perrserker
+        - Growlithe/Arcanine
+        - Geodude/Graveler/Golem
+        - Ponyta/Rapidash
+        - Slowpoke/Slowbro/Slowking
+        - Farfetch'd/Sirfetch'd
+        - Grimer/Muk
+        - Voltorb/Electrode
+        - Tauros (x3)
+        - Articuno/Zapdos/Moltres
+    - Could do One, Two, and Three Islands
+    - Add Galarian birds to Sevii Islands?
+- Add version exclusives
+    - Including postgame
+- Add trade-exclusive Pokemon:
+    - Farfetch'd: Route 12/13
+    - Smoochum: Seafoam Islands
+    - Lickitung: Cerulean Cave but also before the end of the game
+- Add Shellder to Seafoam Cavern (currently seems to be Super Rod exclusive)
 - Add Wiglett/Toedscool?
 - Add Munna for Route 10 girl? Maybe a trade?
 - Add Mew
-- Add version exclusives
-    - Including postgame
 
 ### Trainers
+- Rearrange opponents_frlg.h
 - Move TRAINER_CLASS_INFO defines out of if statement? That way, any game can have any class/pic?
+- Gym rematches:
+    - Figure out whether to evolve Brock's Onix or keep it as is and use Eviolite
+    - Give Steelix (if used), Starmie, and Raichu mega stones
 - Clean up some trainers like the rival's Abra specifying that only knows Teleport (since that would be the case anyways)
 - Create macros to standarize identical trainer classes (if possible)
     - Balls and money

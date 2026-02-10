@@ -1737,7 +1737,7 @@
     - Learns Aqua Jet, Chilling Water, Bubble Beam, Waterfall, and Liquidation by level up
     - Learns Body Press by TM
 
-- Gastly/Haunter/Gengar (Battle Frontier only):
+- Gastly/Haunter/Gengar (Battle Frontier in Emerald):
     - Type: Ghost/Poison->Ghost
     - Learn Astonish and Shadow Sneak by level up
 
@@ -1921,7 +1921,7 @@
     - Evolves into Galarian Mr. Mime with an Ice Stone
     - Learns Expanding Force by level up
 
-- Mr. Mime (Battle Frontier only):
+- Mr. Mime (Battle Frontier in Emerald):
     - Type: Psychic/Fairy->Psychic
     - Gender ratio: 50/50->100/0
     - Learns Expanding Force by level up

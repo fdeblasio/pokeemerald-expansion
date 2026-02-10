@@ -555,41 +555,64 @@ upcoming
     - Replace Softboiled tutor since it's too limited
 - Options and Save Menu still green text
 - Bag background also green
-- Intro seems like it uses second frame of species
+- Oak intro seems like it uses second frame of species
 - Get rid of button explanation screen
 - Add Oak battle with remaining starter
 - Make Rival's teams less identical? Not sure if there's enough birds for that
     - Charmander team would have Rattata to not give double advantage against Bulbasaur
-- Change Rocker to intense music?
-- Add Team Rocket class to Scientists (and Juggler?) in Silph Co.
-- Add Dive TM
-- Add Mew
-- Don't remove Meteorite
-- Add version exclusives
-    - Including postgame
-- Remove duplicate GFX (for example, bald_man_frlg is just bald_man in the PR) and Trainer sprites
-- Improve Rod order
-    - Get rid of Super Rod entirely and just have first stage evos catchable?
 - Add Charms after Tea is taken
-- Add Wiglett/Toedscool?
-- Add Munna for Route 10 girl? Maybe a trade?
 - Decide if regional forms will be postgame or main game
     - Add Galarian birds to Sevii Islands?
-- Clean up duplicate FRLG trainer classes
-    - defines
-    - trainers.h macros
-    - Also there's the trainer class update PR
-- Port over Navel Rock changes
 - Rocker sprite renamed to juggler_frlg.png because rocker has new one. Make sure the rocker uses it
     - overworld
     - file definition for juggler
 - Rearrange opponents_frlg.h
+- Remove Rock Smash rocks and Strength boulders
+    - Check if any removals will cause weird progession
+- Get SS Anne to stay?
+    - Might cause conflict with Seagallop
+- Species defines
+- MAP_GROUP_AND_NUM
+- Update local Porymap
+- Rearrange encounter map order
+- Seafoam Islands Ice Cave MB
+- Figure out if this needs to be added to the battle_environment map?: #define MAP_BATTLE_SCENE_LORELEI  MAP_BATTLE_SCENE_NORMAL
+- Split out big map groups (like SS Anne)
+- Make surf/cave/fishing encounter rate similar to Emerald
+- Game Corner
+
+### Pokémon
+- Add Wiglett/Toedscool?
+- Add Munna for Route 10 girl? Maybe a trade?
+- Add Mew
+- Add version exclusives
+    - Including postgame
+
+### Trainers
+- Move TRAINER_CLASS_INFO defines out of if statement? That way, any game can have any class/pic?
+- Clean up some trainers like the rival's Abra specifying that only knows Teleport (since that would be the case anyways)
 - Create macros to standarize identical trainer classes (if possible)
     - Balls and money
 - Finish Poke Balls after Trainer Class PR
 - Condense FRLG Swimmers like you did for RSE
-- Remove Rock Smash rocks and Strength boulders
-    - Check if any removals will cause weird progession
+- Change Rocker to intense music?
+- Add Team Rocket class to Scientists (and Juggler?) in Silph Co.
+- Clean up duplicate FRLG trainer classes
+    - defines
+    - trainers.h macros
+    - Also there's the trainer class update PR
+
+### Items
+- TMs
+    - Add Dive TM
+- Add Pewter Crunchies to Pewter
+- Improve Rod order
+    - Get rid of Super Rod entirely and just have first stage evos catchable?
+- Don't remove Meteorite
+- Add Rage Candy Bars since Bruno's Fame Checker mentions them
+    - Rename to Rage Dumpling based on intended translation?
+
+### Field Moves
 - Figure out Cut
     - Early game will get a flag so to block stuff but so that future cuts will be permanent
     - Can replace Vermilion and Route 9 with NPCs
@@ -600,30 +623,13 @@ upcoming
     - Route 9 tree is an issue
     - Vermillion tree is an issue, but can be removed after
     - Any trees after Route 9 can probably be removed
-- Get SS Anne to stay?
-    - Might cause conflict with Seagallop
-- Species defines
-- Fly points
-- MAP_GROUP_AND_NUM
-- Edit PokeCenter to remove escalator
-- Remove PokeCenter 2F maps and references
-- Update local Porymap
-- Rearrange encounter map order
-- Seafoam Islands Ice Cave MB
-- Figure out if this needs to be added to the battle_environment map?: #define MAP_BATTLE_SCENE_LORELEI  MAP_BATTLE_SCENE_NORMAL
-- Split out big map groups (like SS Anne)
-- Make surf/cave/fishing encounter rate similar to Emerald
-- Move TRAINER_CLASS_INFO defines out of if statement? That way, any game can have any class/pic?
-- Clean up some trainers like the rival's Abra specifying that it only knows Teleport (since that would be the case anyways)
-- TMs
-- Game Corner
-- Pewter Crunchies
-
-### Field Moves
 - Make Fly usuable after Thunder Badge?
 - Fly to routes
 
 ### Overworld
+- Port over Navel Rock changes
+- Edit PokeCenter to remove escalator
+- Remove PokeCenter 2F maps and references
 - Seperate out split routes into two maps for different encounters?
     - Route 2 north/south
     - Route 4 east/west

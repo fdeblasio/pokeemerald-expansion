@@ -964,6 +964,7 @@ upcoming
 ## FireRed:
 - Pewter:
     - Add Pokemon/grass to Pewter City for grinding
+    - Add Pewter Crunchies
     - Lower Brock's level?
 - Mt. Moon:
     - Figure out a way to get second fossil
@@ -1061,7 +1062,6 @@ upcoming
 ### Items
 - TMs
     - Add Dive TM
-- Add Pewter Crunchies to Pewter
 - Improve Rod order
     - Get rid of Super Rod entirely and just have first stage evos catchable?
 - Don't remove Meteorite

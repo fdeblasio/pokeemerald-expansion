@@ -121,30 +121,22 @@ upcoming
 - Standardize starter base stat totals?
     - Stage 1:
         - Bulbasaur-Squirtle, Chikorita, Totodile, Turtwig-Piplup, Oshawott, Rowlet-Popplio, Sprigatito-Fuecoco: 320
-        - Cyndaquil: 315
+        - Cyndaquil, Scorbunny: 315
         - Froakie: 314
         - Chespin: 313
-        - Treecko-Mudkip, Snivy-Tepig, Fennekin, Grookey-Sobble, Quaxly: 310
+        - Treecko-Mudkip, Snivy-Tepig, Fennekin, Grookey, Sobble, Quaxly: 310
     - Stage 2:
-        - Dewott, Dartrix-Brionne, Thwackey-Drizzile, Floragato: 420
-        - Pignite: 418
-        - Servine: 413
-        - Crocalor: 411
-        - Ivysaur-Wartortle, Bayleef, Quaxwell: 410
-        - Braixen: 409
-        - Quilava-Croconaw, Grovyle-Marshtomp, Grotle-Prinplup, Quilladin, Frogadier: 405
+        - Monferno-Prinplup, Pignite-Dewott, Quilladin, Frogadier, Dartrix-Brionne, Thwackey-Drizzile, Floragato-Crocalor: 420
+        - Servine, Braixen: 415
+        - Ivysaur-Wartortle, Bayleef-Quilava, Grotle, Quaxwell: 410
+        - Croconaw, Grovyle-Marshtomp: 405
     - Stage 3:
-        - Charizard-Blastoise, Swampert, Samurott, Samurott-H, Incineroar, Meowscarada: 535
-        - Typhlosion, Typhlosion-H, Infernape, Delphox: 534
-        - Venusaur, Feraligatr, Sceptile-Blaziken, Empoleon, Chesnaught, Greninja, Decidueye, Decidueye-H, Primarina, Rillaboom-Inteleon, Skeledirge-Quaquaval: 530
-        - Serperior-Emboar: 528
-        - Meganium, Torterra: 525
+        - Charizard-Blastoise, Typhlosion, Typhlosion-H, Swampert, Samurott, Samurott-H, Delphox-Greninja, Incineroar, Cinderace, Meowscarada-Skeledirge: 535
+        - Infernape: 534
+        - Venusaur, Meganium, Feraligatr, Sceptile-Blaziken, Torterra, Empoleon, Serperior-Emboar, Chesnaught, Decidueye, Decidueye-H, Primarina, Rillaboom, Inteleon, Quaquaval: 530
     - Mega:
-        - Charizard X, Charizard Y, Blastoise, Swampert: 635
-        - Delphox: 634
-        - Venusaur, Feraligatr, Sceptile-Blaziken, Chesnaught, Greninja: 630
-        - Emboar: 628
-        - Meganium: 625
+        - Charizard X, Charizard Y, Blastoise, Swampert, Delphox-Greninja: 635
+        - Venusaur, Meganium, Feraligatr, Sceptile-Blaziken, Emboar, Chesnaught: 630
 - See if there's a way to automatically calculate the Pokedex offsets
     - Currently all new ones seem to have a default value (Pecharunt is 1 foot tall and looks huge in it)
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?

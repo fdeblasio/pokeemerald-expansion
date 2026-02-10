@@ -259,9 +259,9 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     [SPECIES_SCORBUNNY] =
     {
         .baseHP        = 50,
-        .baseAttack    = 71,
+        .baseAttack    = 75,
         .baseDefense   = 40,
-        .baseSpeed     = 69,
+        .baseSpeed     = 70,
         .baseSpAttack  = 40,
         .baseSpDefense = 40,
         .types = MON_TYPES(TYPE_FIRE),
@@ -387,9 +387,9 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     [SPECIES_CINDERACE] =
     {
         .baseHP        = 80,
-        .baseAttack    = 116,
+        .baseAttack    = 120,
         .baseDefense   = 75,
-        .baseSpeed     = 119,
+        .baseSpeed     = 120,
         .baseSpAttack  = 65,
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_FIRE),
@@ -453,9 +453,9 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     [SPECIES_CINDERACE_GMAX] =
     {
         .baseHP        = 80,
-        .baseAttack    = 116,
+        .baseAttack    = 120,
         .baseDefense   = 75,
-        .baseSpeed     = 119,
+        .baseSpeed     = 120,
         .baseSpAttack  = 65,
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_FIRE),

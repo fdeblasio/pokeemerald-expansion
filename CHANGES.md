@@ -2179,7 +2179,13 @@
     - Learns Vine Whip, Seed Bomb, and Energy Ball by level up
 
 - Meganium (postgame):
+    - Atk: 82->85
+    - SpA: 83->85
     - Learns Vine Whip, Fairy Wind, Disarming Voice, Dazzling Gleam, Seed Bomb, and Energy Ball by level up
+
+- Mega Meganium (postgame):
+    - Atk: 92->95
+    - SpA: 143->145
 
 - Cyndaquil (postgame):
     - HP: 39->40
@@ -2189,12 +2195,17 @@
     - Learns Incinerate by level up
 
 - Quilava (postgame):
+    - HP: 58->60
+    - Atk: 64->65
+    - Def: 58->60
     - Learns Incinerate by level up
 
 - Typhlosion (postgame):
+    - SpA: 109->110
     - Learns Incinerate by level up
 
 - Hisuian Typhlosion (not in main game):
+    - SpA: 119->120
     - Learns Incinerate, Hex, and Shadow Ball by level up
 
 - Totodile (postgame):
@@ -3075,10 +3086,14 @@
     - Learns Leafage and Seed Bomb by level up
 
 - Grotle:
+    - Atk: 89->90
+    - Spe: 36->40
     - Evolution: 32->36
     - Learns Leafage and Seed Bomb by level up
 
 - Torterra:
+    - Atk: 109->110
+    - Spe: 56->60
     - Learns Shell Smash upon evolving
     - Learns Leafage and Seed Bomb by level up
 
@@ -3093,6 +3108,12 @@
     - Learns Incinerate, Fire Punch, and Lava Plume by level up
 
 - Monferno:
+    - HP: 64->65
+    - Atk: 78->80
+    - Def: 52->55
+    - SpA: 78->80
+    - SpD: 52->55
+    - Spe: 81->85
     - Learns Incinerate, Karate Chop, Vacuum Wave, Fire Punch, Lava Plume, Flamethrower, and Drain Punch by level up
 
 - Infernape:
@@ -3104,10 +3125,17 @@
     - Learns Surf by level up
 
 - Prinplup:
+    - HP: 64->65
+    - Atk: 66->70
+    - Def: 68->70
+    - SpA: 81->85
+    - SpD: 76->80
     - Learns Chilling Water upon evolving
     - Learns Surf by level up
 
 - Empoleon:
+    - HP: 84->85
+    - SpA: 111->115
     - Learns Chilling Water, Mirror Shot, Surf, and Flash Cannon by level up
 
 - Starly:
@@ -3293,9 +3321,24 @@
     - Spe: 63->65
     - Evolution: 17->16
 
+- Servine:
+    - Spe: 83->85
+
+- Serperior:
+    - Spe: 113->115
+
 - Tepig:
     - Atk: 63->65
     - Evolution: 17->16
+
+- Pignite:
+    - Atk: 93->95
+
+- Emboar:
+    - Atk: 123->125
+
+- Mega Emboar:
+    - Atk: 148->150
 
 - Oshawott:
     - Atk: 55->65
@@ -3755,6 +3798,11 @@
     - Learns Bullet Seed by level up
 
 - Quilladin:
+    - HP: 61->65
+    - Atk: 78->80
+    - SpA: 56->60
+    - SpD: 58->60
+    - Spe: 57->60
     - Learns Bullet Seed by level up
 
 - Chesnaught:
@@ -3765,15 +3813,42 @@
     - Learns Ember at level 8
     - Learns Flame Burst by level up
 
-- Braixen/Delphox:
-    - Learn Flame Burst by level up
+- Braixen:
+    - HP: 59->60
+    - Atk: 59->60
+    - Def: 58->60
+    - Spe: 73->75
+    - Learns Flame Burst by level up
 
-- Froakie/Frogadier:
-    - Learn Bubble Beam and Surf by level up
+- Delphox:
+    - SpA: 114->115
+    - Learns Flame Burst by level up
+
+- Mega Delphox:
+    - SpA: 159->160
+
+- Froakie:
+    - Learns Bubble Beam and Surf by level up
+    - Hidden Ability: Protean->Water Bubble
+
+- Frogadier:
+    - HP: 54->55
+    - Atk: 63->65
+    - Def: 52->55
+    - SpA: 83->85
+    - SpD: 56->60
+    - Spe: 97->100
+    - Learns Bubble Beam and Surf by level up
     - Hidden Ability: Protean->Water Bubble
 
 - Greninja:
+    - SpA: 103->105
+    - Spe: 122->125
     - Learns Bubble Beam, Dark Pulse, and Surf by level up
+
+- Mega Greninja:
+    - SpA: 133->135
+    - Spe: 142->145
 
 - Bunnelby:
     - Learns Dizzy Punch and Body Slam by level up
@@ -4460,6 +4535,8 @@
     - Learns Grassy Glide and Seed Bomb by level up
 
 - Scorbunny:
+    - Atk: 71->75
+    - Spe: 69->70
     - Learns Flame Charge at level 8 and Fire Fang in its place at level 17
     - Learns Flame Wheel, Fire Punch, and Blaze Kick by level up
 
@@ -4469,6 +4546,8 @@
     - Learns Flame Wheel, Fire Punch, and Blaze Kick by level up
 
 - Cinderace:
+    - Atk: 116->120
+    - Spe: 119->120
     - Learns Flame Charge at level 8 and Fire Fang in its place at level 19
     - Learns Flame Wheel, Fire Punch, and Blaze Kick by level up
 
@@ -4742,6 +4821,16 @@
     - Def: 59->60
     - SpA: 63->65
     - Spe: 36->40
+
+- Crocalor:
+    - HP: 81->85
+    - Def: 78->80
+    - SpD: 58->60
+    - Spe: 49->50
+
+- Skeledirge:
+    - HP: 104->105
+    - Spe: 66->70
 
 - Tarountula/Spidops:
     - Learn Spider Web by level up

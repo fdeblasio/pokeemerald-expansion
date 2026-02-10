@@ -265,12 +265,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_CROCALOR] =
     {
-        .baseHP        = 81,
+        .baseHP        = 85,
         .baseAttack    = 55,
-        .baseDefense   = 78,
-        .baseSpeed     = 49,
+        .baseDefense   = 80,
+        .baseSpeed     = 50,
         .baseSpAttack  = 90,
-        .baseSpDefense = 58,
+        .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_FIRE),
         .catchRate = DEFAULT_CATCH_RATE(45),
         .expYield = 144,
@@ -329,10 +329,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_SKELEDIRGE] =
     {
-        .baseHP        = 104,
+        .baseHP        = 105,
         .baseAttack    = 75,
         .baseDefense   = 100,
-        .baseSpeed     = 66,
+        .baseSpeed     = 70,
         .baseSpAttack  = 110,
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_FIRE, TYPE_GHOST),

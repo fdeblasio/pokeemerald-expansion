@@ -76,9 +76,9 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     [SPECIES_GROTLE] =
     {
         .baseHP        = 75,
-        .baseAttack    = 89,
+        .baseAttack    = 90,
         .baseDefense   = 85,
-        .baseSpeed     = 36,
+        .baseSpeed     = 40,
         .baseSpAttack  = 55,
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_GRASS),
@@ -145,9 +145,9 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     [SPECIES_TORTERRA] =
     {
         .baseHP        = 95,
-        .baseAttack    = 109,
+        .baseAttack    = 110,
         .baseDefense   = 105,
-        .baseSpeed     = 56,
+        .baseSpeed     = 60,
         .baseSpAttack  = 75,
         .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_GRASS, TYPE_GROUND),
@@ -293,12 +293,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 
     [SPECIES_MONFERNO] =
     {
-        .baseHP        = 64,
-        .baseAttack    = 78,
-        .baseDefense   = 52,
-        .baseSpeed     = 81,
-        .baseSpAttack  = 78,
-        .baseSpDefense = 52,
+        .baseHP        = 65,
+        .baseAttack    = 80,
+        .baseDefense   = 55,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_FIRE, TYPE_FIGHTING),
         .catchRate = DEFAULT_CATCH_RATE(45),
         .expYield = 142,
@@ -515,12 +515,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 
     [SPECIES_PRINPLUP] =
     {
-        .baseHP        = 64,
-        .baseAttack    = 66,
-        .baseDefense   = 68,
+        .baseHP        = 65,
+        .baseAttack    = 70,
+        .baseDefense   = 70,
         .baseSpeed     = 50,
-        .baseSpAttack  = 81,
-        .baseSpDefense = 76,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = DEFAULT_CATCH_RATE(45),
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 142 : 143,
@@ -593,11 +593,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 
     [SPECIES_EMPOLEON] =
     {
-        .baseHP        = 84,
+        .baseHP        = 85,
         .baseAttack    = 86,
         .baseDefense   = 88,
         .baseSpeed     = 60,
-        .baseSpAttack  = 111,
+        .baseSpAttack  = 115,
         .baseSpDefense = 101,
         .types = MON_TYPES(TYPE_WATER, TYPE_STEEL),
         .catchRate = DEFAULT_CATCH_RATE(45),

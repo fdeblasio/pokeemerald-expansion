@@ -18849,6 +18849,740 @@ RIVAL_BATTLES(WATER),
     },
 },
 
+#define LEADER_INFO(Trainer)                               \
+    .trainerClass = TRAINER_CLASS_LEADER_FRLG,             \
+    .trainerPic = TRAINER_PIC_FRONT_LEADER_##Trainer_FRLG, \
+    BOSS_AI_FLAGS
+
+#define LEADER_REMATCH                                                             \
+    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE}, \
+    .partySize = 6
+
+#define BROCK_INFO             \
+    LEADER_INFO(BROCK),        \
+    .trainerName = _("Brock"), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
+
+[DIFFICULTY_NORMAL][TRAINER_LEADER_BROCK] =
+{
+    BROCK_INFO,
+    .partySize = 2,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 12,
+        .species = SPECIES_GEODUDE,
+        .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_NONE, MOVE_NONE},
+        },
+        {
+        .lvl = 14,
+        .species = SPECIES_ONIX,
+        .moves = {MOVE_TACKLE, MOVE_BIND, MOVE_ROCK_TOMB, MOVE_NONE},
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_LEADER_BROCK_2] =
+{
+    BROCK_INFO,
+    LEADER_REMATCH,
+},
+
+[DIFFICULTY_NORMAL][TRAINER_LEADER_MISTY] =
+{
+    .trainerName = _("Misty"),
+    .trainerClass = TRAINER_CLASS_LEADER_FRLG,
+    .trainerPic = TRAINER_PIC_FRONT_LEADER_MISTY_FRLG,
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+    .items = {ITEM_SUPER_POTION},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 2,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 18,
+        .species = SPECIES_STARYU,
+        .moves = {MOVE_TACKLE, MOVE_HARDEN, MOVE_RECOVER, MOVE_WATER_PULSE},
+        },
+        {
+        .lvl = 21,
+        .species = SPECIES_STARMIE,
+        .moves = {MOVE_SWIFT, MOVE_RECOVER, MOVE_RAPID_SPIN, MOVE_WATER_PULSE},
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_LEADER_MISTY_2] =
+{
+    BROCK_INFO,
+    LEADER_REMATCH,
+},
+
+[DIFFICULTY_NORMAL][TRAINER_LEADER_LT_SURGE] =
+{
+    .trainerName = _("Lt. Surge"),
+    .trainerClass = TRAINER_CLASS_LEADER_FRLG,
+    .trainerPic = TRAINER_PIC_FRONT_LEADER_LT_SURGE_FRLG,
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
+    .items = {ITEM_SUPER_POTION, ITEM_FULL_HEAL},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 3,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 21,
+        .species = SPECIES_VOLTORB,
+        .moves = {MOVE_SONIC_BOOM, MOVE_TACKLE, MOVE_SCREECH, MOVE_SHOCK_WAVE},
+        },
+        {
+        .lvl = 18,
+        .species = SPECIES_PIKACHU,
+        .moves = {MOVE_QUICK_ATTACK, MOVE_THUNDER_WAVE, MOVE_DOUBLE_TEAM, MOVE_SHOCK_WAVE},
+        },
+        {
+        .lvl = 24,
+        .species = SPECIES_RAICHU,
+        .moves = {MOVE_QUICK_ATTACK, MOVE_THUNDER_WAVE, MOVE_DOUBLE_TEAM, MOVE_SHOCK_WAVE},
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_LEADER_LT_SURGE_2] =
+{
+    BROCK_INFO,
+    LEADER_REMATCH,
+},
+
+[DIFFICULTY_NORMAL][TRAINER_LEADER_ERIKA] =
+{
+    .trainerName = _("Erika"),
+    .trainerClass = TRAINER_CLASS_LEADER_FRLG,
+    .trainerPic = TRAINER_PIC_FRONT_LEADER_ERIKA_FRLG,
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+    .items = {ITEM_HYPER_POTION, ITEM_FULL_HEAL},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 3,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 29,
+        .species = SPECIES_VICTREEBEL,
+        .moves = {MOVE_STUN_SPORE, MOVE_ACID, MOVE_POISON_POWDER, MOVE_GIGA_DRAIN},
+        },
+        {
+        .lvl = 24,
+        .species = SPECIES_TANGELA,
+        .moves = {MOVE_POISON_POWDER, MOVE_CONSTRICT, MOVE_INGRAIN, MOVE_GIGA_DRAIN},
+        },
+        {
+        .lvl = 29,
+        .species = SPECIES_VILEPLUME,
+        .moves = {MOVE_SLEEP_POWDER, MOVE_ACID, MOVE_STUN_SPORE, MOVE_GIGA_DRAIN},
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_LEADER_ERIKA_2] =
+{
+    BROCK_INFO,
+    LEADER_REMATCH,
+},
+
+[DIFFICULTY_NORMAL][TRAINER_LEADER_KOGA] =
+{
+    .trainerName = _("Koga"),
+    .trainerClass = TRAINER_CLASS_LEADER_FRLG,
+    .trainerPic = TRAINER_PIC_FRONT_LEADER_KOGA_FRLG,
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
+    .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_FULL_HEAL},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 4,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 37,
+        .species = SPECIES_KOFFING,
+        .moves = {MOVE_SELF_DESTRUCT, MOVE_SLUDGE, MOVE_SMOKESCREEN, MOVE_TOXIC},
+        },
+        {
+        .lvl = 39,
+        .species = SPECIES_MUK,
+        .moves = {MOVE_MINIMIZE, MOVE_SLUDGE, MOVE_ACID_ARMOR, MOVE_TOXIC},
+        },
+        {
+        .lvl = 37,
+        .species = SPECIES_KOFFING,
+        .moves = {MOVE_SELF_DESTRUCT, MOVE_SLUDGE, MOVE_SMOKESCREEN, MOVE_TOXIC},
+        },
+        {
+        .lvl = 43,
+        .species = SPECIES_WEEZING,
+        .moves = {MOVE_TACKLE, MOVE_SLUDGE, MOVE_SMOKESCREEN, MOVE_TOXIC},
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_LEADER_KOGA_2] =
+{
+    BROCK_INFO,
+    LEADER_REMATCH,
+},
+
+[DIFFICULTY_NORMAL][TRAINER_LEADER_SABRINA] =
+{
+    .trainerName = _("Sabrina"),
+    .trainerClass = TRAINER_CLASS_LEADER_FRLG,
+    .trainerPic = TRAINER_PIC_FRONT_LEADER_SABRINA_FRLG,
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+    .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_FULL_HEAL},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 4,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 38,
+        .species = SPECIES_KADABRA,
+        .moves = {MOVE_PSYBEAM, MOVE_REFLECT, MOVE_FUTURE_SIGHT, MOVE_CALM_MIND},
+        },
+        {
+        .lvl = 37,
+        .species = SPECIES_MR_MIME,
+        .moves = {MOVE_BARRIER, MOVE_PSYBEAM, MOVE_BATON_PASS, MOVE_CALM_MIND},
+        },
+        {
+        .lvl = 38,
+        .species = SPECIES_VENOMOTH,
+        .moves = {MOVE_PSYBEAM, MOVE_GUST, MOVE_LEECH_LIFE, MOVE_SUPERSONIC},
+        },
+        {
+        .lvl = 43,
+        .species = SPECIES_ALAKAZAM,
+        .moves = {MOVE_PSYCHIC, MOVE_RECOVER, MOVE_FUTURE_SIGHT, MOVE_CALM_MIND},
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_LEADER_SABRINA_2] =
+{
+    BROCK_INFO,
+    LEADER_REMATCH,
+},
+
+[DIFFICULTY_NORMAL][TRAINER_LEADER_BLAINE] =
+{
+    .trainerName = _("Blaine"),
+    .trainerClass = TRAINER_CLASS_LEADER_FRLG,
+    .trainerPic = TRAINER_PIC_FRONT_LEADER_BLAINE_FRLG,
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
+    .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_FULL_HEAL},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 4,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 42,
+        .species = SPECIES_GROWLITHE,
+        .moves = {MOVE_BITE, MOVE_ROAR, MOVE_TAKE_DOWN, MOVE_FIRE_BLAST},
+        },
+        {
+        .lvl = 40,
+        .species = SPECIES_PONYTA,
+        .moves = {MOVE_STOMP, MOVE_BOUNCE, MOVE_FIRE_SPIN, MOVE_FIRE_BLAST},
+        },
+        {
+        .lvl = 42,
+        .species = SPECIES_RAPIDASH,
+        .moves = {MOVE_STOMP, MOVE_BOUNCE, MOVE_FIRE_SPIN, MOVE_FIRE_BLAST},
+        },
+        {
+        .lvl = 47,
+        .species = SPECIES_ARCANINE,
+        .moves = {MOVE_BITE, MOVE_ROAR, MOVE_TAKE_DOWN, MOVE_FIRE_BLAST},
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_LEADER_BLAINE_2] =
+{
+    BROCK_INFO,
+    LEADER_REMATCH,
+},
+
+[DIFFICULTY_NORMAL][TRAINER_BOSS_GIOVANNI] =
+{
+    .trainerName = _("Giovanni"),
+    .trainerClass = TRAINER_CLASS_BOSS_FRLG,
+    .trainerPic = TRAINER_PIC_FRONT_LEADER_GIOVANNI_FRLG,
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 3,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 25,
+        .species = SPECIES_ONIX,
+        IVS(30),
+        },
+        {
+        .lvl = 24,
+        .species = SPECIES_RHYHORN,
+        IVS(30),
+        },
+        {
+        .lvl = 29,
+        .species = SPECIES_KANGASKHAN,
+        IVS(30),
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_BOSS_GIOVANNI_2] =
+{
+    .trainerName = _("Giovanni"),
+    .trainerClass = TRAINER_CLASS_BOSS_FRLG,
+    .trainerPic = TRAINER_PIC_FRONT_LEADER_GIOVANNI_FRLG,
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+    .partySize = 4,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 37,
+        .species = SPECIES_NIDORINO,
+        IVS(30),
+        },
+        {
+        .lvl = 35,
+        .species = SPECIES_KANGASKHAN,
+        IVS(30),
+        },
+        {
+        .lvl = 37,
+        .species = SPECIES_RHYHORN,
+        IVS(30),
+        },
+        {
+        .lvl = 41,
+        .species = SPECIES_NIDOQUEEN,
+        IVS(30),
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_LEADER_GIOVANNI] =
+{
+    .trainerName = _("Giovanni"),
+    .trainerClass = TRAINER_CLASS_LEADER_FRLG,
+    .trainerPic = TRAINER_PIC_FRONT_LEADER_GIOVANNI_FRLG,
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
+    .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_FULL_HEAL},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .partySize = 5,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 45,
+        .species = SPECIES_RHYHORN,
+        .moves = {MOVE_TAKE_DOWN, MOVE_ROCK_BLAST, MOVE_SCARY_FACE, MOVE_EARTHQUAKE},
+        },
+        {
+        .lvl = 42,
+        .species = SPECIES_DUGTRIO,
+        .moves = {MOVE_SLASH, MOVE_SAND_TOMB, MOVE_MUD_SLAP, MOVE_EARTHQUAKE},
+        },
+        {
+        .lvl = 44,
+        .species = SPECIES_NIDOQUEEN,
+        .moves = {MOVE_BODY_SLAM, MOVE_DOUBLE_KICK, MOVE_POISON_STING, MOVE_EARTHQUAKE},
+        },
+        {
+        .lvl = 45,
+        .species = SPECIES_NIDOKING,
+        .moves = {MOVE_THRASH, MOVE_DOUBLE_KICK, MOVE_POISON_STING, MOVE_EARTHQUAKE},
+        },
+        {
+        .lvl = 50,
+        .species = SPECIES_RHYHORN,
+        .moves = {MOVE_TAKE_DOWN, MOVE_ROCK_BLAST, MOVE_SCARY_FACE, MOVE_EARTHQUAKE},
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_LEADER_GIOVANNI_2] =
+{
+    BROCK_INFO,
+    LEADER_REMATCH,
+},
+
+[DIFFICULTY_NORMAL][TRAINER_ELITE_FOUR_LORELEI] =
+{
+    .trainerName = _("Lorelei"),
+    .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
+    .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_LORELEI_FRLG,
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
+    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .mugshotColor = MUGSHOT_COLOR_PURPLE,
+    .partySize = 5,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 52,
+        .species = SPECIES_DEWGONG,
+        IVS(30),
+        .moves = {MOVE_ICE_BEAM, MOVE_SURF, MOVE_HAIL, MOVE_SAFEGUARD},
+        },
+        {
+        .lvl = 51,
+        .species = SPECIES_CLOYSTER,
+        IVS(30),
+        .moves = {MOVE_SPIKES, MOVE_PROTECT, MOVE_HAIL, MOVE_DIVE},
+        },
+        {
+        .lvl = 52,
+        .species = SPECIES_SLOWBRO,
+        IVS(30),
+        .moves = {MOVE_ICE_BEAM, MOVE_SURF, MOVE_AMNESIA, MOVE_YAWN},
+        },
+        {
+        .lvl = 54,
+        .species = SPECIES_JYNX,
+        IVS(30),
+        .moves = {MOVE_ICE_PUNCH, MOVE_DOUBLE_SLAP, MOVE_LOVELY_KISS, MOVE_ATTRACT},
+        },
+        {
+        .lvl = 54,
+        .species = SPECIES_LAPRAS,
+        IVS(30),
+        .moves = {MOVE_CONFUSE_RAY, MOVE_ICE_BEAM, MOVE_SURF, MOVE_BODY_SLAM},
+        .heldItem = ITEM_SITRUS_BERRY,
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_ELITE_FOUR_LORELEI_2] =
+{
+    .trainerName = _("Lorelei"),
+    .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
+    .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_LORELEI_FRLG,
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
+    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .mugshotColor = MUGSHOT_COLOR_PURPLE,
+    .partySize = 5,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 64,
+        .species = SPECIES_DEWGONG,
+        PERFECT_IVS,
+        .moves = {MOVE_ICE_BEAM, MOVE_SURF, MOVE_SIGNAL_BEAM, MOVE_DOUBLE_TEAM},
+        },
+        {
+        .lvl = 63,
+        .species = SPECIES_CLOYSTER,
+        PERFECT_IVS,
+        .moves = {MOVE_ICE_BEAM, MOVE_SURF, MOVE_SUPERSONIC, MOVE_RAIN_DANCE},
+        },
+        {
+        .lvl = 63,
+        .species = SPECIES_PILOSWINE,
+        PERFECT_IVS,
+        .moves = {MOVE_BLIZZARD, MOVE_EARTHQUAKE, MOVE_DOUBLE_EDGE, MOVE_ROCK_SLIDE},
+        },
+        {
+        .lvl = 66,
+        .species = SPECIES_JYNX,
+        PERFECT_IVS,
+        .moves = {MOVE_ICE_BEAM, MOVE_PSYCHIC, MOVE_LOVELY_KISS, MOVE_ATTRACT},
+        },
+        {
+        .lvl = 66,
+        .species = SPECIES_LAPRAS,
+        PERFECT_IVS,
+        .moves = {MOVE_ICE_BEAM, MOVE_SURF, MOVE_PSYCHIC, MOVE_THUNDER},
+        .heldItem = ITEM_CHERI_BERRY,
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_ELITE_FOUR_BRUNO] =
+{
+    .trainerName = _("Bruno"),
+    .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
+    .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_BRUNO_FRLG,
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
+    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .mugshotColor = MUGSHOT_COLOR_GREEN,
+    .partySize = 5,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 51,
+        .species = SPECIES_ONIX,
+        IVS(30),
+        .moves = {MOVE_EARTHQUAKE, MOVE_ROCK_TOMB, MOVE_IRON_TAIL, MOVE_ROAR},
+        },
+        {
+        .lvl = 53,
+        .species = SPECIES_HITMONCHAN,
+        IVS(30),
+        .moves = {MOVE_SKY_UPPERCUT, MOVE_MACH_PUNCH, MOVE_ROCK_TOMB, MOVE_COUNTER},
+        },
+        {
+        .lvl = 53,
+        .species = SPECIES_HITMONLEE,
+        IVS(30),
+        .moves = {MOVE_MEGA_KICK, MOVE_FORESIGHT, MOVE_BRICK_BREAK, MOVE_FACADE},
+        },
+        {
+        .lvl = 54,
+        .species = SPECIES_ONIX,
+        IVS(30),
+        .moves = {MOVE_DOUBLE_EDGE, MOVE_EARTHQUAKE, MOVE_IRON_TAIL, MOVE_SAND_TOMB},
+        },
+        {
+        .lvl = 56,
+        .species = SPECIES_MACHAMP,
+        IVS(30),
+        .moves = {MOVE_CROSS_CHOP, MOVE_BULK_UP, MOVE_SCARY_FACE, MOVE_ROCK_TOMB},
+        .heldItem = ITEM_SITRUS_BERRY,
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_ELITE_FOUR_BRUNO_2] =
+{
+    .trainerName = _("Bruno"),
+    .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
+    .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_BRUNO_FRLG,
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
+    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .mugshotColor = MUGSHOT_COLOR_GREEN,
+    .partySize = 5,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 65,
+        .species = SPECIES_STEELIX,
+        PERFECT_IVS,
+        .moves = {MOVE_EARTHQUAKE, MOVE_IRON_TAIL, MOVE_CRUNCH, MOVE_ROCK_TOMB},
+        },
+        {
+        .lvl = 65,
+        .species = SPECIES_HITMONCHAN,
+        PERFECT_IVS,
+        .moves = {MOVE_SKY_UPPERCUT, MOVE_MACH_PUNCH, MOVE_ROCK_SLIDE, MOVE_COUNTER},
+        },
+        {
+        .lvl = 65,
+        .species = SPECIES_HITMONLEE,
+        PERFECT_IVS,
+        .moves = {MOVE_MEGA_KICK, MOVE_FORESIGHT, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE},
+        },
+        {
+        .lvl = 66,
+        .species = SPECIES_STEELIX,
+        PERFECT_IVS,
+        .moves = {MOVE_EARTHQUAKE, MOVE_IRON_TAIL, MOVE_CRUNCH, MOVE_DRAGON_BREATH},
+        },
+        {
+        .lvl = 68,
+        .species = SPECIES_MACHAMP,
+        PERFECT_IVS,
+        .moves = {MOVE_CROSS_CHOP, MOVE_EARTHQUAKE, MOVE_BRICK_BREAK, MOVE_ROCK_SLIDE},
+        .heldItem = ITEM_PERSIM_BERRY,
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_ELITE_FOUR_AGATHA] =
+{
+    .trainerName = _("Agatha"),
+    .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
+    .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_AGATHA_FRLG,
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
+    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .mugshotColor = MUGSHOT_COLOR_PINK,
+    .partySize = 5,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 54,
+        .species = SPECIES_GENGAR,
+        IVS(30),
+        .moves = {MOVE_SHADOW_PUNCH, MOVE_CONFUSE_RAY, MOVE_TOXIC, MOVE_DOUBLE_TEAM},
+        },
+        {
+        .lvl = 54,
+        .species = SPECIES_GOLBAT,
+        IVS(30),
+        .moves = {MOVE_CONFUSE_RAY, MOVE_POISON_FANG, MOVE_AIR_CUTTER, MOVE_BITE},
+        },
+        {
+        .lvl = 53,
+        .species = SPECIES_HAUNTER,
+        IVS(30),
+        .moves = {MOVE_HYPNOSIS, MOVE_DREAM_EATER, MOVE_CURSE, MOVE_MEAN_LOOK},
+        },
+        {
+        .lvl = 56,
+        .species = SPECIES_ARBOK,
+        IVS(30),
+        .moves = {MOVE_SLUDGE_BOMB, MOVE_SCREECH, MOVE_IRON_TAIL, MOVE_BITE},
+        },
+        {
+        .lvl = 58,
+        .species = SPECIES_GENGAR,
+        IVS(30),
+        .moves = {MOVE_SHADOW_BALL, MOVE_SLUDGE_BOMB, MOVE_HYPNOSIS, MOVE_NIGHTMARE},
+        .heldItem = ITEM_SITRUS_BERRY,
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_ELITE_FOUR_AGATHA_2] =
+{
+    .trainerName = _("Agatha"),
+    .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
+    .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_AGATHA_FRLG,
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
+    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .mugshotColor = MUGSHOT_COLOR_PINK,
+    .partySize = 5,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 66,
+        .species = SPECIES_GENGAR,
+        PERFECT_IVS,
+        .moves = {MOVE_SHADOW_BALL, MOVE_PSYCHIC, MOVE_CONFUSE_RAY, MOVE_HYPNOSIS},
+        },
+        {
+        .lvl = 66,
+        .species = SPECIES_CROBAT,
+        PERFECT_IVS,
+        .moves = {MOVE_SLUDGE_BOMB, MOVE_AIR_CUTTER, MOVE_SHADOW_BALL, MOVE_CONFUSE_RAY},
+        },
+        {
+        .lvl = 65,
+        .species = SPECIES_MISDREAVUS,
+        PERFECT_IVS,
+        .moves = {MOVE_SHADOW_BALL, MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_ATTRACT},
+        },
+        {
+        .lvl = 68,
+        .species = SPECIES_ARBOK,
+        PERFECT_IVS,
+        .moves = {MOVE_SLUDGE_BOMB, MOVE_EARTHQUAKE, MOVE_GIGA_DRAIN, MOVE_DOUBLE_TEAM},
+        },
+        {
+        .lvl = 70,
+        .species = SPECIES_GENGAR,
+        PERFECT_IVS,
+        .moves = {MOVE_SHADOW_BALL, MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_SLUDGE_BOMB},
+        .heldItem = ITEM_CHESTO_BERRY,
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_ELITE_FOUR_LANCE] =
+{
+    .trainerName = _("Lance"),
+    .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
+    .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_LANCE_FRLG,
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
+    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .mugshotColor = MUGSHOT_COLOR_BLUE,
+    .partySize = 5,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 56,
+        .species = SPECIES_GYARADOS,
+        IVS(30),
+        .moves = {MOVE_HYPER_BEAM, MOVE_DRAGON_RAGE, MOVE_TWISTER, MOVE_BITE},
+        },
+        {
+        .lvl = 54,
+        .species = SPECIES_DRAGONAIR,
+        IVS(30),
+        .moves = {MOVE_HYPER_BEAM, MOVE_SAFEGUARD, MOVE_DRAGON_RAGE, MOVE_OUTRAGE},
+        },
+        {
+        .lvl = 54,
+        .species = SPECIES_DRAGONAIR,
+        IVS(30),
+        .moves = {MOVE_HYPER_BEAM, MOVE_SAFEGUARD, MOVE_THUNDER_WAVE, MOVE_OUTRAGE},
+        },
+        {
+        .lvl = 58,
+        .species = SPECIES_AERODACTYL,
+        IVS(30),
+        .moves = {MOVE_HYPER_BEAM, MOVE_ANCIENT_POWER, MOVE_WING_ATTACK, MOVE_SCARY_FACE},
+        },
+        {
+        .lvl = 60,
+        .species = SPECIES_DRAGONITE,
+        IVS(30),
+        .moves = {MOVE_HYPER_BEAM, MOVE_SAFEGUARD, MOVE_OUTRAGE, MOVE_WING_ATTACK},
+        .heldItem = ITEM_SITRUS_BERRY,
+        },
+    },
+},
+
+[DIFFICULTY_NORMAL][TRAINER_ELITE_FOUR_LANCE_2] =
+{
+    .trainerName = _("Lance"),
+    .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
+    .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_LANCE_FRLG,
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
+    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
+    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+    .mugshotColor = MUGSHOT_COLOR_BLUE,
+    .partySize = 5,
+    .party = (const struct TrainerMon[])
+    {
+        {
+        .lvl = 68,
+        .species = SPECIES_GYARADOS,
+        PERFECT_IVS,
+        .moves = {MOVE_HYPER_BEAM, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE, MOVE_THUNDER_WAVE},
+        },
+        {
+        .lvl = 66,
+        .species = SPECIES_DRAGONITE,
+        PERFECT_IVS,
+        .moves = {MOVE_HYPER_BEAM, MOVE_EARTHQUAKE, MOVE_DRAGON_CLAW, MOVE_FLAMETHROWER},
+        },
+        {
+        .lvl = 66,
+        .species = SPECIES_KINGDRA,
+        PERFECT_IVS,
+        .moves = {MOVE_HYPER_BEAM, MOVE_DRAGON_DANCE, MOVE_SURF, MOVE_ICE_BEAM},
+        },
+        {
+        .lvl = 70,
+        .species = SPECIES_AERODACTYL,
+        PERFECT_IVS,
+        .moves = {MOVE_HYPER_BEAM, MOVE_ANCIENT_POWER, MOVE_AERIAL_ACE, MOVE_EARTHQUAKE},
+        },
+        {
+        .lvl = 72,
+        .species = SPECIES_DRAGONITE,
+        PERFECT_IVS,
+        .moves = {MOVE_HYPER_BEAM, MOVE_OUTRAGE, MOVE_THUNDERBOLT, MOVE_ICE_BEAM},
+        .heldItem = ITEM_PERSIM_BERRY,
+        },
+    },
+},
+
+
 // Regular trainers
 #define ROCKER_INFO                 \
     TRAINER_CLASS_PIC(ROCKER_FRLG), \
@@ -24104,106 +24838,6 @@ RIVAL_BATTLES(WATER),
     },
 },
 
-[DIFFICULTY_NORMAL][TRAINER_BOSS_GIOVANNI] =
-{
-    .trainerName = _("Giovanni"),
-    .trainerClass = TRAINER_CLASS_BOSS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LEADER_GIOVANNI_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 3,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 25,
-        .species = SPECIES_ONIX,
-        IVS(30),
-        },
-        {
-        .lvl = 24,
-        .species = SPECIES_RHYHORN,
-        IVS(30),
-        },
-        {
-        .lvl = 29,
-        .species = SPECIES_KANGASKHAN,
-        IVS(30),
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_BOSS_GIOVANNI_2] =
-{
-    .trainerName = _("Giovanni"),
-    .trainerClass = TRAINER_CLASS_BOSS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LEADER_GIOVANNI_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    .partySize = 4,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 37,
-        .species = SPECIES_NIDORINO,
-        IVS(30),
-        },
-        {
-        .lvl = 35,
-        .species = SPECIES_KANGASKHAN,
-        IVS(30),
-        },
-        {
-        .lvl = 37,
-        .species = SPECIES_RHYHORN,
-        IVS(30),
-        },
-        {
-        .lvl = 41,
-        .species = SPECIES_NIDOQUEEN,
-        IVS(30),
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_LEADER_GIOVANNI] =
-{
-    .trainerName = _("Giovanni"),
-    .trainerClass = TRAINER_CLASS_LEADER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LEADER_GIOVANNI_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-    .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_FULL_HEAL},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 5,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 45,
-        .species = SPECIES_RHYHORN,
-        .moves = {MOVE_TAKE_DOWN, MOVE_ROCK_BLAST, MOVE_SCARY_FACE, MOVE_EARTHQUAKE},
-        },
-        {
-        .lvl = 42,
-        .species = SPECIES_DUGTRIO,
-        .moves = {MOVE_SLASH, MOVE_SAND_TOMB, MOVE_MUD_SLAP, MOVE_EARTHQUAKE},
-        },
-        {
-        .lvl = 44,
-        .species = SPECIES_NIDOQUEEN,
-        .moves = {MOVE_BODY_SLAM, MOVE_DOUBLE_KICK, MOVE_POISON_STING, MOVE_EARTHQUAKE},
-        },
-        {
-        .lvl = 45,
-        .species = SPECIES_NIDOKING,
-        .moves = {MOVE_THRASH, MOVE_DOUBLE_KICK, MOVE_POISON_STING, MOVE_EARTHQUAKE},
-        },
-        {
-        .lvl = 50,
-        .species = SPECIES_RHYHORN,
-        .moves = {MOVE_TAKE_DOWN, MOVE_ROCK_BLAST, MOVE_SCARY_FACE, MOVE_EARTHQUAKE},
-        },
-    },
-},
-
 [DIFFICULTY_NORMAL][TRAINER_TEAM_ROCKET_GRUNT] =
 {
     .trainerName = _("Grunt"),
@@ -25975,397 +26609,6 @@ RIVAL_BATTLES(WATER),
         .species = SPECIES_RAICHU,
         IVS(12),
         .moves = {MOVE_THUNDER, MOVE_THUNDER_WAVE, MOVE_SLAM, MOVE_DOUBLE_TEAM},
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_ELITE_FOUR_LORELEI] =
-{
-    .trainerName = _("Lorelei"),
-    .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_LORELEI_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .mugshotColor = MUGSHOT_COLOR_PURPLE,
-    .partySize = 5,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 52,
-        .species = SPECIES_DEWGONG,
-        IVS(30),
-        .moves = {MOVE_ICE_BEAM, MOVE_SURF, MOVE_HAIL, MOVE_SAFEGUARD},
-        },
-        {
-        .lvl = 51,
-        .species = SPECIES_CLOYSTER,
-        IVS(30),
-        .moves = {MOVE_SPIKES, MOVE_PROTECT, MOVE_HAIL, MOVE_DIVE},
-        },
-        {
-        .lvl = 52,
-        .species = SPECIES_SLOWBRO,
-        IVS(30),
-        .moves = {MOVE_ICE_BEAM, MOVE_SURF, MOVE_AMNESIA, MOVE_YAWN},
-        },
-        {
-        .lvl = 54,
-        .species = SPECIES_JYNX,
-        IVS(30),
-        .moves = {MOVE_ICE_PUNCH, MOVE_DOUBLE_SLAP, MOVE_LOVELY_KISS, MOVE_ATTRACT},
-        },
-        {
-        .lvl = 54,
-        .species = SPECIES_LAPRAS,
-        IVS(30),
-        .moves = {MOVE_CONFUSE_RAY, MOVE_ICE_BEAM, MOVE_SURF, MOVE_BODY_SLAM},
-        .heldItem = ITEM_SITRUS_BERRY,
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_ELITE_FOUR_BRUNO] =
-{
-    .trainerName = _("Bruno"),
-    .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_BRUNO_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .mugshotColor = MUGSHOT_COLOR_GREEN,
-    .partySize = 5,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 51,
-        .species = SPECIES_ONIX,
-        IVS(30),
-        .moves = {MOVE_EARTHQUAKE, MOVE_ROCK_TOMB, MOVE_IRON_TAIL, MOVE_ROAR},
-        },
-        {
-        .lvl = 53,
-        .species = SPECIES_HITMONCHAN,
-        IVS(30),
-        .moves = {MOVE_SKY_UPPERCUT, MOVE_MACH_PUNCH, MOVE_ROCK_TOMB, MOVE_COUNTER},
-        },
-        {
-        .lvl = 53,
-        .species = SPECIES_HITMONLEE,
-        IVS(30),
-        .moves = {MOVE_MEGA_KICK, MOVE_FORESIGHT, MOVE_BRICK_BREAK, MOVE_FACADE},
-        },
-        {
-        .lvl = 54,
-        .species = SPECIES_ONIX,
-        IVS(30),
-        .moves = {MOVE_DOUBLE_EDGE, MOVE_EARTHQUAKE, MOVE_IRON_TAIL, MOVE_SAND_TOMB},
-        },
-        {
-        .lvl = 56,
-        .species = SPECIES_MACHAMP,
-        IVS(30),
-        .moves = {MOVE_CROSS_CHOP, MOVE_BULK_UP, MOVE_SCARY_FACE, MOVE_ROCK_TOMB},
-        .heldItem = ITEM_SITRUS_BERRY,
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_ELITE_FOUR_AGATHA] =
-{
-    .trainerName = _("Agatha"),
-    .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_AGATHA_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .mugshotColor = MUGSHOT_COLOR_PINK,
-    .partySize = 5,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 54,
-        .species = SPECIES_GENGAR,
-        IVS(30),
-        .moves = {MOVE_SHADOW_PUNCH, MOVE_CONFUSE_RAY, MOVE_TOXIC, MOVE_DOUBLE_TEAM},
-        },
-        {
-        .lvl = 54,
-        .species = SPECIES_GOLBAT,
-        IVS(30),
-        .moves = {MOVE_CONFUSE_RAY, MOVE_POISON_FANG, MOVE_AIR_CUTTER, MOVE_BITE},
-        },
-        {
-        .lvl = 53,
-        .species = SPECIES_HAUNTER,
-        IVS(30),
-        .moves = {MOVE_HYPNOSIS, MOVE_DREAM_EATER, MOVE_CURSE, MOVE_MEAN_LOOK},
-        },
-        {
-        .lvl = 56,
-        .species = SPECIES_ARBOK,
-        IVS(30),
-        .moves = {MOVE_SLUDGE_BOMB, MOVE_SCREECH, MOVE_IRON_TAIL, MOVE_BITE},
-        },
-        {
-        .lvl = 58,
-        .species = SPECIES_GENGAR,
-        IVS(30),
-        .moves = {MOVE_SHADOW_BALL, MOVE_SLUDGE_BOMB, MOVE_HYPNOSIS, MOVE_NIGHTMARE},
-        .heldItem = ITEM_SITRUS_BERRY,
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_ELITE_FOUR_LANCE] =
-{
-    .trainerName = _("Lance"),
-    .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_LANCE_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .mugshotColor = MUGSHOT_COLOR_BLUE,
-    .partySize = 5,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 56,
-        .species = SPECIES_GYARADOS,
-        IVS(30),
-        .moves = {MOVE_HYPER_BEAM, MOVE_DRAGON_RAGE, MOVE_TWISTER, MOVE_BITE},
-        },
-        {
-        .lvl = 54,
-        .species = SPECIES_DRAGONAIR,
-        IVS(30),
-        .moves = {MOVE_HYPER_BEAM, MOVE_SAFEGUARD, MOVE_DRAGON_RAGE, MOVE_OUTRAGE},
-        },
-        {
-        .lvl = 54,
-        .species = SPECIES_DRAGONAIR,
-        IVS(30),
-        .moves = {MOVE_HYPER_BEAM, MOVE_SAFEGUARD, MOVE_THUNDER_WAVE, MOVE_OUTRAGE},
-        },
-        {
-        .lvl = 58,
-        .species = SPECIES_AERODACTYL,
-        IVS(30),
-        .moves = {MOVE_HYPER_BEAM, MOVE_ANCIENT_POWER, MOVE_WING_ATTACK, MOVE_SCARY_FACE},
-        },
-        {
-        .lvl = 60,
-        .species = SPECIES_DRAGONITE,
-        IVS(30),
-        .moves = {MOVE_HYPER_BEAM, MOVE_SAFEGUARD, MOVE_OUTRAGE, MOVE_WING_ATTACK},
-        .heldItem = ITEM_SITRUS_BERRY,
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_LEADER_BROCK] =
-{
-    .trainerName = _("Brock"),
-    .trainerClass = TRAINER_CLASS_LEADER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LEADER_BROCK_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 2,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 12,
-        .species = SPECIES_GEODUDE,
-        .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_NONE, MOVE_NONE},
-        },
-        {
-        .lvl = 14,
-        .species = SPECIES_ONIX,
-        .moves = {MOVE_TACKLE, MOVE_BIND, MOVE_ROCK_TOMB, MOVE_NONE},
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_LEADER_MISTY] =
-{
-    .trainerName = _("Misty"),
-    .trainerClass = TRAINER_CLASS_LEADER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LEADER_MISTY_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .items = {ITEM_SUPER_POTION},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 2,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 18,
-        .species = SPECIES_STARYU,
-        .moves = {MOVE_TACKLE, MOVE_HARDEN, MOVE_RECOVER, MOVE_WATER_PULSE},
-        },
-        {
-        .lvl = 21,
-        .species = SPECIES_STARMIE,
-        .moves = {MOVE_SWIFT, MOVE_RECOVER, MOVE_RAPID_SPIN, MOVE_WATER_PULSE},
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_LEADER_LT_SURGE] =
-{
-    .trainerName = _("Lt. Surge"),
-    .trainerClass = TRAINER_CLASS_LEADER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LEADER_LT_SURGE_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .items = {ITEM_SUPER_POTION, ITEM_FULL_HEAL},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 3,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 21,
-        .species = SPECIES_VOLTORB,
-        .moves = {MOVE_SONIC_BOOM, MOVE_TACKLE, MOVE_SCREECH, MOVE_SHOCK_WAVE},
-        },
-        {
-        .lvl = 18,
-        .species = SPECIES_PIKACHU,
-        .moves = {MOVE_QUICK_ATTACK, MOVE_THUNDER_WAVE, MOVE_DOUBLE_TEAM, MOVE_SHOCK_WAVE},
-        },
-        {
-        .lvl = 24,
-        .species = SPECIES_RAICHU,
-        .moves = {MOVE_QUICK_ATTACK, MOVE_THUNDER_WAVE, MOVE_DOUBLE_TEAM, MOVE_SHOCK_WAVE},
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_LEADER_ERIKA] =
-{
-    .trainerName = _("Erika"),
-    .trainerClass = TRAINER_CLASS_LEADER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LEADER_ERIKA_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .items = {ITEM_HYPER_POTION, ITEM_FULL_HEAL},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 3,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 29,
-        .species = SPECIES_VICTREEBEL,
-        .moves = {MOVE_STUN_SPORE, MOVE_ACID, MOVE_POISON_POWDER, MOVE_GIGA_DRAIN},
-        },
-        {
-        .lvl = 24,
-        .species = SPECIES_TANGELA,
-        .moves = {MOVE_POISON_POWDER, MOVE_CONSTRICT, MOVE_INGRAIN, MOVE_GIGA_DRAIN},
-        },
-        {
-        .lvl = 29,
-        .species = SPECIES_VILEPLUME,
-        .moves = {MOVE_SLEEP_POWDER, MOVE_ACID, MOVE_STUN_SPORE, MOVE_GIGA_DRAIN},
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_LEADER_KOGA] =
-{
-    .trainerName = _("Koga"),
-    .trainerClass = TRAINER_CLASS_LEADER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LEADER_KOGA_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_FULL_HEAL},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 4,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 37,
-        .species = SPECIES_KOFFING,
-        .moves = {MOVE_SELF_DESTRUCT, MOVE_SLUDGE, MOVE_SMOKESCREEN, MOVE_TOXIC},
-        },
-        {
-        .lvl = 39,
-        .species = SPECIES_MUK,
-        .moves = {MOVE_MINIMIZE, MOVE_SLUDGE, MOVE_ACID_ARMOR, MOVE_TOXIC},
-        },
-        {
-        .lvl = 37,
-        .species = SPECIES_KOFFING,
-        .moves = {MOVE_SELF_DESTRUCT, MOVE_SLUDGE, MOVE_SMOKESCREEN, MOVE_TOXIC},
-        },
-        {
-        .lvl = 43,
-        .species = SPECIES_WEEZING,
-        .moves = {MOVE_TACKLE, MOVE_SLUDGE, MOVE_SMOKESCREEN, MOVE_TOXIC},
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_LEADER_BLAINE] =
-{
-    .trainerName = _("Blaine"),
-    .trainerClass = TRAINER_CLASS_LEADER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LEADER_BLAINE_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-    .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_FULL_HEAL},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 4,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 42,
-        .species = SPECIES_GROWLITHE,
-        .moves = {MOVE_BITE, MOVE_ROAR, MOVE_TAKE_DOWN, MOVE_FIRE_BLAST},
-        },
-        {
-        .lvl = 40,
-        .species = SPECIES_PONYTA,
-        .moves = {MOVE_STOMP, MOVE_BOUNCE, MOVE_FIRE_SPIN, MOVE_FIRE_BLAST},
-        },
-        {
-        .lvl = 42,
-        .species = SPECIES_RAPIDASH,
-        .moves = {MOVE_STOMP, MOVE_BOUNCE, MOVE_FIRE_SPIN, MOVE_FIRE_BLAST},
-        },
-        {
-        .lvl = 47,
-        .species = SPECIES_ARCANINE,
-        .moves = {MOVE_BITE, MOVE_ROAR, MOVE_TAKE_DOWN, MOVE_FIRE_BLAST},
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_LEADER_SABRINA] =
-{
-    .trainerName = _("Sabrina"),
-    .trainerClass = TRAINER_CLASS_LEADER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LEADER_SABRINA_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_FULL_HEAL},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .partySize = 4,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 38,
-        .species = SPECIES_KADABRA,
-        .moves = {MOVE_PSYBEAM, MOVE_REFLECT, MOVE_FUTURE_SIGHT, MOVE_CALM_MIND},
-        },
-        {
-        .lvl = 37,
-        .species = SPECIES_MR_MIME,
-        .moves = {MOVE_BARRIER, MOVE_PSYBEAM, MOVE_BATON_PASS, MOVE_CALM_MIND},
-        },
-        {
-        .lvl = 38,
-        .species = SPECIES_VENOMOTH,
-        .moves = {MOVE_PSYBEAM, MOVE_GUST, MOVE_LEECH_LIFE, MOVE_SUPERSONIC},
-        },
-        {
-        .lvl = 43,
-        .species = SPECIES_ALAKAZAM,
-        .moves = {MOVE_PSYCHIC, MOVE_RECOVER, MOVE_FUTURE_SIGHT, MOVE_CALM_MIND},
         },
     },
 },
@@ -32816,190 +33059,6 @@ RIVAL_BATTLES(WATER),
         .lvl = 49,
         .species = SPECIES_SEAKING,
         IVS(9),
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_ELITE_FOUR_LORELEI_2] =
-{
-    .trainerName = _("Lorelei"),
-    .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_LORELEI_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .mugshotColor = MUGSHOT_COLOR_PURPLE,
-    .partySize = 5,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 64,
-        .species = SPECIES_DEWGONG,
-        PERFECT_IVS,
-        .moves = {MOVE_ICE_BEAM, MOVE_SURF, MOVE_SIGNAL_BEAM, MOVE_DOUBLE_TEAM},
-        },
-        {
-        .lvl = 63,
-        .species = SPECIES_CLOYSTER,
-        PERFECT_IVS,
-        .moves = {MOVE_ICE_BEAM, MOVE_SURF, MOVE_SUPERSONIC, MOVE_RAIN_DANCE},
-        },
-        {
-        .lvl = 63,
-        .species = SPECIES_PILOSWINE,
-        PERFECT_IVS,
-        .moves = {MOVE_BLIZZARD, MOVE_EARTHQUAKE, MOVE_DOUBLE_EDGE, MOVE_ROCK_SLIDE},
-        },
-        {
-        .lvl = 66,
-        .species = SPECIES_JYNX,
-        PERFECT_IVS,
-        .moves = {MOVE_ICE_BEAM, MOVE_PSYCHIC, MOVE_LOVELY_KISS, MOVE_ATTRACT},
-        },
-        {
-        .lvl = 66,
-        .species = SPECIES_LAPRAS,
-        PERFECT_IVS,
-        .moves = {MOVE_ICE_BEAM, MOVE_SURF, MOVE_PSYCHIC, MOVE_THUNDER},
-        .heldItem = ITEM_CHERI_BERRY,
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_ELITE_FOUR_BRUNO_2] =
-{
-    .trainerName = _("Bruno"),
-    .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_BRUNO_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .mugshotColor = MUGSHOT_COLOR_GREEN,
-    .partySize = 5,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 65,
-        .species = SPECIES_STEELIX,
-        PERFECT_IVS,
-        .moves = {MOVE_EARTHQUAKE, MOVE_IRON_TAIL, MOVE_CRUNCH, MOVE_ROCK_TOMB},
-        },
-        {
-        .lvl = 65,
-        .species = SPECIES_HITMONCHAN,
-        PERFECT_IVS,
-        .moves = {MOVE_SKY_UPPERCUT, MOVE_MACH_PUNCH, MOVE_ROCK_SLIDE, MOVE_COUNTER},
-        },
-        {
-        .lvl = 65,
-        .species = SPECIES_HITMONLEE,
-        PERFECT_IVS,
-        .moves = {MOVE_MEGA_KICK, MOVE_FORESIGHT, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE},
-        },
-        {
-        .lvl = 66,
-        .species = SPECIES_STEELIX,
-        PERFECT_IVS,
-        .moves = {MOVE_EARTHQUAKE, MOVE_IRON_TAIL, MOVE_CRUNCH, MOVE_DRAGON_BREATH},
-        },
-        {
-        .lvl = 68,
-        .species = SPECIES_MACHAMP,
-        PERFECT_IVS,
-        .moves = {MOVE_CROSS_CHOP, MOVE_EARTHQUAKE, MOVE_BRICK_BREAK, MOVE_ROCK_SLIDE},
-        .heldItem = ITEM_PERSIM_BERRY,
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_ELITE_FOUR_AGATHA_2] =
-{
-    .trainerName = _("Agatha"),
-    .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_AGATHA_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .mugshotColor = MUGSHOT_COLOR_PINK,
-    .partySize = 5,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 66,
-        .species = SPECIES_GENGAR,
-        PERFECT_IVS,
-        .moves = {MOVE_SHADOW_BALL, MOVE_PSYCHIC, MOVE_CONFUSE_RAY, MOVE_HYPNOSIS},
-        },
-        {
-        .lvl = 66,
-        .species = SPECIES_CROBAT,
-        PERFECT_IVS,
-        .moves = {MOVE_SLUDGE_BOMB, MOVE_AIR_CUTTER, MOVE_SHADOW_BALL, MOVE_CONFUSE_RAY},
-        },
-        {
-        .lvl = 65,
-        .species = SPECIES_MISDREAVUS,
-        PERFECT_IVS,
-        .moves = {MOVE_SHADOW_BALL, MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_ATTRACT},
-        },
-        {
-        .lvl = 68,
-        .species = SPECIES_ARBOK,
-        PERFECT_IVS,
-        .moves = {MOVE_SLUDGE_BOMB, MOVE_EARTHQUAKE, MOVE_GIGA_DRAIN, MOVE_DOUBLE_TEAM},
-        },
-        {
-        .lvl = 70,
-        .species = SPECIES_GENGAR,
-        PERFECT_IVS,
-        .moves = {MOVE_SHADOW_BALL, MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_SLUDGE_BOMB},
-        .heldItem = ITEM_CHESTO_BERRY,
-        },
-    },
-},
-
-[DIFFICULTY_NORMAL][TRAINER_ELITE_FOUR_LANCE_2] =
-{
-    .trainerName = _("Lance"),
-    .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_LANCE_FRLG,
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-    .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
-    .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-    .mugshotColor = MUGSHOT_COLOR_BLUE,
-    .partySize = 5,
-    .party = (const struct TrainerMon[])
-    {
-        {
-        .lvl = 68,
-        .species = SPECIES_GYARADOS,
-        PERFECT_IVS,
-        .moves = {MOVE_HYPER_BEAM, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE, MOVE_THUNDER_WAVE},
-        },
-        {
-        .lvl = 66,
-        .species = SPECIES_DRAGONITE,
-        PERFECT_IVS,
-        .moves = {MOVE_HYPER_BEAM, MOVE_EARTHQUAKE, MOVE_DRAGON_CLAW, MOVE_FLAMETHROWER},
-        },
-        {
-        .lvl = 66,
-        .species = SPECIES_KINGDRA,
-        PERFECT_IVS,
-        .moves = {MOVE_HYPER_BEAM, MOVE_DRAGON_DANCE, MOVE_SURF, MOVE_ICE_BEAM},
-        },
-        {
-        .lvl = 70,
-        .species = SPECIES_AERODACTYL,
-        PERFECT_IVS,
-        .moves = {MOVE_HYPER_BEAM, MOVE_ANCIENT_POWER, MOVE_AERIAL_ACE, MOVE_EARTHQUAKE},
-        },
-        {
-        .lvl = 72,
-        .species = SPECIES_DRAGONITE,
-        PERFECT_IVS,
-        .moves = {MOVE_HYPER_BEAM, MOVE_OUTRAGE, MOVE_THUNDERBOLT, MOVE_ICE_BEAM},
-        .heldItem = ITEM_PERSIM_BERRY,
         },
     },
 },

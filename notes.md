@@ -78,8 +78,6 @@ upcoming
     - Sludge and Mud Sport use a similar blob but Sludge's is the third image in the poison bubble image and Mud Sport's is its own image
     - Razor Leaf and Magical Leaf
     - Similar to the powders, LIGHT_WALLs (Reflect/Light Screen/Mirror Coat/Magic Coat/Barrier) use the same graphic with different palettes
-- More simple modifications: https://www.pokecommunity.com/showthread.php?t=416647&page=1
-- Pret wiki tutorials:       https://github.com/pret/pokeemerald/wiki/Tutorials
 - Fix dynamic README lines (work in VS code but not GitHub)
 - Combine two meta files (notes.md and CHANGES.md)?
     Include more changes, even if general like Battle Frontier edits
@@ -180,66 +178,6 @@ upcoming
         - 18 Tera Shards
         - 7 mochi
 
-### Trainers
-- Clear up trainer spots by having just one set of gym leader rematches?
-    - Now that gym/Wally rematches are more consistent, the only difference is the level and a couple moves, so not really a point to having as many rematches
-    - Even just reducing to two or three rematches would save space
-- For each badge after 5, one less rematch (for example, any trainer fought past Winona would have one less rematch)
-    - Would John and Jay/Nicolas get no rematches in that case?
-    - Should the final rematch be after the Elite Four instead of after Gym 8? All 5th rematches would need to be buffed
-- Add Abilities to single ability and TRAINER_MON_NONE to genderless to make more consistent
-- Add trailing commas wherever possible
-- Remove type duplicates:
-    - Turn Wallace into a Fairy specialist and turn Milotic into Water/Fairy?
-    - Turn Juan into a Poison specialist (Swalot as Ace since both have mustaches)?
-        - Would need to update gym palette
-        - Mr. Rime could be a good hack signature if he becomes Ice
-    - Swap Juan and Glacia and turn Juan into Grass specialist?
-    - Turn Team Magma into fully Ground specialists (Camerupt still works as other people like Winona use the secondary typing for their aces)?
-        - Would cancel out the addition of Houndoom?
-    - Currently missing specialists:
-        - Bug
-        - Grass
-        - Fairy
-        - Poison
-- Add level defines per route/group of routes?
-- Update Tabitha (and maybe others?) macros to use Magma levels instead of Rematch levels?
-- Now that Gym Leader rematch party size is consistent, maybe a macro can be made
-- Get rid of Gym Leader rematches needing two Pokémon
-- Some Magnemites never occur because 30 is less than REMATCH_2_LEVEL
-    - Double check this?
-- More mugshots for other bosses?
-- Can add Scientists since FRLG front sprite is available
-    - Can add Super Nerds too using either the School Kid or Scientist overworld sprites
-- Readjust wild/trainer levels so that parties aren't overpowered?
-- Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)
-- Add macros for ORAS rematch mons even if they don't exist (like Wilton's Fraxure/Haxorus)
-- Update Elite Four palettes
-    - battle_terrain/stadium/palette3-7.pal to better match types
-- Brendan/May rematches? (Route 103?)
-- Steven rematches? (Would be the same team but re-battleable)
-    - Could make his flag a daily one?
-    - Replace Claydol with a Steel-type?
-- Give Winstrates rematches?
-- Maybe add Brendan/May/Maxie/Archie/admins/Winstrate rematches in Battle Frontier?
-- Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma. Mega Evo for Houndoom but unsure for Ninetales)
-    - Could swap Huntail/Gorebyss positions with Gyarados/Starmie (once the mega is implemented). Still would need Courtney Mega
-- Try to get every Pokémon in Pokédex in at least one rematch?
-- Trainer customization:
-    - All rematches should have consistent values (gender, IVs (unless maxed but only > level 50), etc.)
-    - Calvin could have a good Nature/EV
-    - Leaders would have optimal Abilities/EVs/IVs/Natures
-    - Add Speed increasing natures to Triathletes
-- Use Good Ruby's palette shifting to give trainers more unique looks? (https://github.com/Doesnty/goodruby/commit/ff53bbab592865b49f345342205b41cb869abf27)
-- Gym leaders/Steven/Breeders can have Hidden Abilities
-- Add encounter music to Trainer Class struct?
-    - Maybe keep in Trainer so it can still be customized, but used the Trainer Class value as a default
-- Update Gabby and Ty to have rematches blocked by badges, like other trainers
-    - Old logic didn't work:
-        - Doesn't work for cheat start because the flags get cleared after gym battles
-        - However, if someone beats a gym but doesn't beat Gabby/Ty, then it might cause them to be two places at once
-        - Never thought about this before because I face every trainer when testing, but that's not always the case for other players
-        - Instead, maybe both gym battles AND G/T battles check both badges and existing flags/GabbyAndTyGetBattleNum?
 
 ### Moves
 - Turn some animation macros into functions like the Absorb ones
@@ -311,57 +249,6 @@ upcoming
         - They also get reset upon looking at the summary screen
 - Move animations:
     - Try to standardize Iron/Poison/Aqua Tail
-
-### Field Moves
-- Make Fly usuable after 2nd badge? Or maybe even aftering delivering goods in Slateport?
-- Fly to routes:
-    - Route 103: Altering Cave
-    - Route 110: Trick House or New Mauville
-    - Route 115: Meteor Falls?
-    - Route 117: Daycare?
-    - Route 128: Where Steven flies to?
-
-### Overworld
-- Seperate out split routes into two maps for different encounters?
-    - 103 east/west
-    - 111 pre-/post-desert?
-    - 115 north/south (north/middle/south?)
-    - 118 east/west
-    - Route 2 north/south
-    - Route 4 east/west
-    - Route 12 north/south
-- Add sand encounters to Dewford area (using desert sand)
-- Finish Safari Zone forest
-    - Gastly can replace one of the spots of Pokemon moved to the forest
-    - Houndour can too (possibly swapping with a Fire Cave Pokemon) if removed from the Hoenn Dex
-- Find other ways to increase amount of encounters while still having 4-5 Pokémon per pool
-    - Won't really matter as-is (besides maybe introducing some Pokemon earlier), but will be helpful for hacks with larger Dexes
-- Add new defines (but keep current ones) for overworld sprites that line up with trainers for easier use
-- Double check that only Devon employees use DEVON_EMPLOYEES and only non-Devon use MAN_2
-- Add caves and more areas to Safari Zone for more postgame mons
-    - Make them themed like ice and fire. Maybe can add legendaries
-- Battle Environments:
-    - Should Magma Hideout use the unused Magma battle environment? Currently uses Volcano
-    - Ice/Volcano/Puddle need better palettes/need slide intros
-        - Ice and Volcano's player side has been fixed but the palettes overall could be better
-            - Ice can use ice/ice cave tile colors
-            - Volcano is trickier since the volcano areas are seemingly just the same caves and mountains
-        - Intro graphics need their palette updated (seemingly lines 36-47)
-- Add FRLG trainer sprites/overworld sprites
-    - Sprites are added but still need to be implemented. Overworld sprites may need palettes
-- Add accurate overworld sprites (https://github.com/pret/pokeemerald/wiki/Adding-new-event-object-or-overworld-sprites, https://www.pokecommunity.com/showthread.php?t=407124)
-    - Overworld sprites to match trainer sprites (for example, Rangers red clothes, Dragon Tamers capes and correct hair color, or Rich Boys correct clothes and hair color)
-- Replace Pokémon overworld sprites with follower sprites
-    - Poochyena chasing Birch?
-    - Bonsly?
-    - Mew?
-- Combine Centers and Marts?
-    - Use left wall where escalators used to be
-    - Tileset doesn't seem to support it
-- Followers with weather abilities (or Cloud Nine/Air Lock) will change the overworld weather when following?
-    - Cloud Nine could do cloudy instead of clear
-- Give Underwater the same type-effectiveness as rain?
-- Update Underwater grass to be land encounters for more variation?
 
 ### Other
 - Make catching easier by making the third shake automatically pass?
@@ -521,6 +408,113 @@ upcoming
 - Battle Frontier
     - Remove BP costs so that script_menu.h and field_specials.c can use item/move names directly?
 
+### Trainers
+- Clear up trainer spots by having just one set of gym leader rematches?
+    - Now that gym/Wally rematches are more consistent, the only difference is the level and a couple moves, so not really a point to having as many rematches
+    - Even just reducing to two or three rematches would save space
+- For each badge after 5, one less rematch (for example, any trainer fought past Winona would have one less rematch)
+    - Would John and Jay/Nicolas get no rematches in that case?
+    - Should the final rematch be after the Elite Four instead of after Gym 8? All 5th rematches would need to be buffed
+- Add Abilities to single ability and TRAINER_MON_NONE to genderless to make more consistent
+- Add trailing commas wherever possible
+- Remove type duplicates:
+    - Turn Wallace into a Fairy specialist and turn Milotic into Water/Fairy?
+    - Turn Juan into a Poison specialist (Swalot as Ace since both have mustaches)?
+        - Would need to update gym palette
+        - Mr. Rime could be a good hack signature if he becomes Ice
+    - Swap Juan and Glacia and turn Juan into Grass specialist?
+    - Turn Team Magma into fully Ground specialists (Camerupt still works as other people like Winona use the secondary typing for their aces)?
+        - Would cancel out the addition of Houndoom?
+    - Currently missing specialists:
+        - Bug
+        - Grass
+        - Fairy
+        - Poison
+- Add level defines per route/group of routes?
+- Update Tabitha (and maybe others?) macros to use Magma levels instead of Rematch levels?
+- Now that Gym Leader rematch party size is consistent, maybe a macro can be made
+- Get rid of Gym Leader rematches needing two Pokémon
+- Some Magnemites never occur because 30 is less than REMATCH_2_LEVEL
+    - Double check this?
+- More mugshots for other bosses?
+- Can add Scientists since FRLG front sprite is available
+    - Can add Super Nerds too using either the School Kid or Scientist overworld sprites
+- Readjust wild/trainer levels so that parties aren't overpowered?
+- Go back and make rematch levels stronger/more consistent (don't forget to update evolutions)
+- Add macros for ORAS rematch mons even if they don't exist (like Wilton's Fraxure/Haxorus)
+- Update Elite Four palettes
+    - battle_terrain/stadium/palette3-7.pal to better match types
+- Brendan/May rematches? (Route 103?)
+- Steven rematches? (Would be the same team but re-battleable)
+    - Could make his flag a daily one?
+    - Replace Claydol with a Steel-type?
+- Give Winstrates rematches?
+- Maybe add Brendan/May/Maxie/Archie/admins/Winstrate rematches in Battle Frontier?
+- Aqua Leaders' signatures hold Deep Sea items (need to find equivalent for Magma. Mega Evo for Houndoom but unsure for Ninetales)
+    - Could swap Huntail/Gorebyss positions with Gyarados/Starmie (once the mega is implemented). Still would need Courtney Mega
+- Try to get every Pokémon in Pokédex in at least one rematch?
+- Trainer customization:
+    - All rematches should have consistent values (gender, IVs (unless maxed but only > level 50), etc.)
+    - Calvin could have a good Nature/EV
+    - Leaders would have optimal Abilities/EVs/IVs/Natures
+    - Add Speed increasing natures to Triathletes
+- Use Good Ruby's palette shifting to give trainers more unique looks? (https://github.com/Doesnty/goodruby/commit/ff53bbab592865b49f345342205b41cb869abf27)
+- Gym leaders/Steven/Breeders can have Hidden Abilities
+- Add encounter music to Trainer Class struct?
+    - Maybe keep in Trainer so it can still be customized, but used the Trainer Class value as a default
+- Update Gabby and Ty to have rematches blocked by badges, like other trainers
+    - Old logic didn't work:
+        - Doesn't work for cheat start because the flags get cleared after gym battles
+        - However, if someone beats a gym but doesn't beat Gabby/Ty, then it might cause them to be two places at once
+        - Never thought about this before because I face every trainer when testing, but that's not always the case for other players
+        - Instead, maybe both gym battles AND G/T battles check both badges and existing flags/GabbyAndTyGetBattleNum?
+
+### Field Moves
+- Make Fly usuable after 2nd badge? Or maybe even aftering delivering goods in Slateport?
+- Fly to routes:
+    - Route 103: Altering Cave
+    - Route 110: Trick House or New Mauville
+    - Route 115: Meteor Falls?
+    - Route 117: Daycare?
+    - Route 128: Where Steven flies to?
+
+### Overworld
+- Seperate out split routes into two maps for different encounters?
+    - 103 east/west
+    - 111 pre-/post-desert?
+    - 115 north/south (north/middle/south?)
+    - 118 east/west
+- Add sand encounters to Dewford area (using desert sand)
+- Finish Safari Zone forest
+    - Gastly can replace one of the spots of Pokemon moved to the forest
+    - Houndour can too (possibly swapping with a Fire Cave Pokemon) if removed from the Hoenn Dex
+- Find other ways to increase amount of encounters while still having 4-5 Pokémon per pool
+    - Won't really matter as-is (besides maybe introducing some Pokemon earlier), but will be helpful for hacks with larger Dexes
+- Add new defines (but keep current ones) for overworld sprites that line up with trainers for easier use
+- Double check that only Devon employees use DEVON_EMPLOYEES and only non-Devon use MAN_2
+- Add caves and more areas to Safari Zone for more postgame mons
+    - Make them themed like ice and fire. Maybe can add legendaries
+- Battle Environments:
+    - Should Magma Hideout use the unused Magma battle environment? Currently uses Volcano
+    - Ice/Volcano/Puddle need better palettes/need slide intros
+        - Ice and Volcano's player side has been fixed but the palettes overall could be better
+            - Ice can use ice/ice cave tile colors
+            - Volcano is trickier since the volcano areas are seemingly just the same caves and mountains
+        - Intro graphics need their palette updated (seemingly lines 36-47)
+- Add accurate overworld sprites (https://github.com/pret/pokeemerald/wiki/Adding-new-event-object-or-overworld-sprites, https://www.pokecommunity.com/showthread.php?t=407124)
+    - Overworld sprites to match trainer sprites (for example, Rangers red clothes, Dragon Tamers capes and correct hair color, or Rich Boys correct clothes and hair color)
+- Replace Pokémon overworld sprites with follower sprites
+    - Poochyena chasing Birch?
+    - Bonsly?
+    - Mew?
+- Combine Centers and Marts?
+    - Use left wall where escalators used to be
+    - Tileset doesn't seem to support it
+- Followers with weather abilities (or Cloud Nine/Air Lock) will change the overworld weather when following?
+    - Cloud Nine could do cloudy instead of clear
+- Give Underwater the same type-effectiveness as rain?
+- Update Underwater grass to be land encounters for more variation?
+
 ### Battle Frontier
 - Battle Tent Pokémon/EVs?
 - Remove restricted Pokémon?
@@ -552,6 +546,7 @@ upcoming
 - Decap:
     - Trainer Tower
 - Add Pokemon/grass to Pewter City for grinding. Also lower Brock's level
+- Disable Contest summary screen?
 - Rock Slide, Body Slam, Swords Dance, and Thunder Wave are tutors in FRLG but are now TMs due to Emerald
     - Two Island lady can give out Blast Burn/Frenzy Plant/Hydro Cannon TMs instead of teaching moves
     - Same for Thunder Wave
@@ -565,7 +560,7 @@ upcoming
 - Add Oak battle with remaining starter
 - Make Rival's teams less identical? Not sure if there's enough birds for that
     - Charmander team would have Rattata to not give double advantage against Bulbasaur
-- Change Rocker to intense?
+- Change Rocker to intense music?
 - Add Team Rocket class to Scientists (and Juggler?) in Silph Co.
 - Add Dive TM
 - Add Mew
@@ -623,6 +618,25 @@ upcoming
 - TMs
 - Game Corner
 - Pewter Crunchies
+
+### Field Moves
+- Make Fly usuable after Thunder Badge?
+- Fly to routes
+
+### Overworld
+- Seperate out split routes into two maps for different encounters?
+    - Route 2 north/south
+    - Route 4 east/west
+    - Route 12 north/south
+- Find other ways to increase amount of encounters while still having 4-5 Pokémon per pool
+    - Won't really matter as-is (besides maybe introducing some Pokemon earlier), but will be helpful for hacks with larger Dexes
+- Add new defines (but keep current ones) for overworld sprites that line up with trainers for easier use
+- Add accurate overworld sprites (https://github.com/pret/pokeemerald/wiki/Adding-new-event-object-or-overworld-sprites, https://www.pokecommunity.com/showthread.php?t=407124)
+    - Overworld sprites to match trainer sprites (for example, Cue Ball's bald head)
+- Combine Centers and Marts?
+    - Might not work in Viridian
+- Followers with weather abilities (or Cloud Nine/Air Lock) will change the overworld weather when following?
+    - Cloud Nine could do cloudy instead of clear
 
 ## Future hacks
 - Miscellaneous:

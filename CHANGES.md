@@ -1316,6 +1316,7 @@
     - HP: 44->45
     - Atk: 48->50
     - SpD: 64->65
+    - Spe: 43->45
     - Learns Surf by level up
 
 - Wartortle (not in Emerald):
@@ -2167,9 +2168,13 @@
     - Learns Confusion by level up
 
 - Chikorita (postgame):
+    - Atk: 49->50
+    - SpA: 49->50
     - Learns Vine Whip, Seed Bomb, and Energy Ball by level up
 
 - Bayleef (postgame):
+    - Atk: 62->65
+    - SpA: 63->65
     - Evolution: 32->36
     - Learns Vine Whip, Seed Bomb, and Energy Ball by level up
 
@@ -2177,6 +2182,9 @@
     - Learns Vine Whip, Fairy Wind, Disarming Voice, Dazzling Gleam, Seed Bomb, and Energy Ball by level up
 
 - Cyndaquil (postgame):
+    - HP: 39->40
+    - Atk: 52->55
+    - Def: 43->45
     - Evolution: 14->16
     - Learns Incinerate by level up
 
@@ -2190,6 +2198,10 @@
     - Learns Incinerate, Hex, and Shadow Ball by level up
 
 - Totodile (postgame):
+    - Def: 64->65
+    - SpA: 44->45
+    - SpD: 48->50
+    - Spe: 43->45
     - Evolution: 18->16
     - Learns Waterfall and Liquidation by level up
 
@@ -3058,6 +3070,7 @@
 **NOTE: Nothing past here is in the main game except Regigigas, Regieleki, and Regidrago**
 
 - Turtwig:
+    - Atk: 68->70
     - Evolution: 18->16
     - Learns Leafage and Seed Bomb by level up
 
@@ -3070,6 +3083,12 @@
     - Learns Leafage and Seed Bomb by level up
 
 - Chimchar:
+    - HP: 44->45
+    - Atk: 58->60
+    - Def: 44->45
+    - SpA: 58->60
+    - SpD: 44->45
+    - Spe: 61->65
     - Evolution: 14->16
     - Learns Incinerate, Fire Punch, and Lava Plume by level up
 
@@ -3080,6 +3099,8 @@
     - Learns Incinerate, Karate Chop, Vacuum Wave, Fire Punch, Lava Plume, Flamethrower, Drain Punch, and Aura Sphere by level up
 
 - Piplup:
+    - HP: 53->55
+    - SpA: 61->65
     - Learns Surf by level up
 
 - Prinplup:
@@ -3269,9 +3290,11 @@
     - Spe: 85->115
 
 - Snivy:
+    - Spe: 63->65
     - Evolution: 17->16
 
 - Tepig:
+    - Atk: 63->65
     - Evolution: 17->16
 
 - Oshawott:
@@ -3282,6 +3305,9 @@
 - Dewott:
     - Atk: 75->80
     - SpA: 83->85
+
+- Samurott:
+    - SpA: 108->115
 
 - Hisuian Samurott:
     - Atk: 108->115
@@ -3725,13 +3751,17 @@
 - Kyurem:
     - Learns Icicle Crash by TM
 
-- Chespin/Quilladin:
-    - Learn Bullet Seed by level up
+- Chespin:
+    - Learns Bullet Seed by level up
+
+- Quilladin:
+    - Learns Bullet Seed by level up
 
 - Chesnaught:
     - Learns Bullet Seed, Drain Punch, and Body Press by level up
 
 - Fennekin:
+    - SpA: 62->65
     - Learns Ember at level 8
     - Learns Flame Burst by level up
 
@@ -4079,6 +4109,12 @@
     - SpA: 100->85
     - Spe: 70->80
     - Learns Dual Wingbeat by level up
+
+- Hisuian Decidueye:
+    - HP: 88->90
+    - Atk: 112->115
+    - SpA: 95->80
+    - Spe: 60->70
 
 - Litten:
     - Evolution: 17->16
@@ -4700,6 +4736,12 @@
     - SpA: 81->80
     - Spe: 123->125
     - Learns Throat Chop by level up
+
+- Fuecoco:
+    - HP: 67->70
+    - Def: 59->60
+    - SpA: 63->65
+    - Spe: 36->40
 
 - Tarountula/Spidops:
     - Learn Spider Web by level up

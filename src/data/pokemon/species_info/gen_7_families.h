@@ -215,11 +215,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_HISUIAN_FORMS
     [SPECIES_DECIDUEYE_HISUI] =
     {
-        .baseHP        = 88,
-        .baseAttack    = 112,
+        .baseHP        = 90,
+        .baseAttack    = 115,
         .baseDefense   = 80,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 95,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 80,
         .baseSpDefense = 95,
         .types = MON_TYPES(TYPE_GRASS, TYPE_FIGHTING),
         .catchRate = DEFAULT_CATCH_RATE(45),

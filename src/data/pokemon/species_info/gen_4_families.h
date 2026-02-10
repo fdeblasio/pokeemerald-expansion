@@ -7,7 +7,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     [SPECIES_TURTWIG] =
     {
         .baseHP        = 55,
-        .baseAttack    = 68,
+        .baseAttack    = 70,
         .baseDefense   = 64,
         .baseSpeed     = 31,
         .baseSpAttack  = 45,
@@ -220,12 +220,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_CHIMCHAR
     [SPECIES_CHIMCHAR] =
     {
-        .baseHP        = 44,
-        .baseAttack    = 58,
-        .baseDefense   = 44,
-        .baseSpeed     = 61,
-        .baseSpAttack  = 58,
-        .baseSpDefense = 44,
+        .baseHP        = 45,
+        .baseAttack    = 60,
+        .baseDefense   = 45,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 45,
         .types = MON_TYPES(TYPE_FIRE),
         .catchRate = DEFAULT_CATCH_RATE(45),
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 62 : 65,
@@ -442,11 +442,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_PIPLUP
     [SPECIES_PIPLUP] =
     {
-        .baseHP        = 53,
+        .baseHP        = 55,
         .baseAttack    = 51,
         .baseDefense   = 53,
         .baseSpeed     = 40,
-        .baseSpAttack  = 61,
+        .baseSpAttack  = 65,
         .baseSpDefense = 56,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = DEFAULT_CATCH_RATE(45),

@@ -7,10 +7,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_CHIKORITA] =
     {
         .baseHP        = 45,
-        .baseAttack    = 49,
+        .baseAttack    = 50,
         .baseDefense   = 65,
         .baseSpeed     = 45,
-        .baseSpAttack  = 49,
+        .baseSpAttack  = 50,
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_GRASS),
         .catchRate = DEFAULT_CATCH_RATE(45),
@@ -76,10 +76,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_BAYLEEF] =
     {
         .baseHP        = 60,
-        .baseAttack    = 62,
+        .baseAttack    = 65,
         .baseDefense   = 80,
         .baseSpeed     = 60,
-        .baseSpAttack  = 63,
+        .baseSpAttack  = 65,
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_GRASS),
         .catchRate = DEFAULT_CATCH_RATE(45),
@@ -293,9 +293,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_CYNDAQUIL
     [SPECIES_CYNDAQUIL] =
     {
-        .baseHP        = 39,
-        .baseAttack    = 52,
-        .baseDefense   = 43,
+        .baseHP        = 40,
+        .baseAttack    = 55,
+        .baseDefense   = 45,
         .baseSpeed     = 65,
         .baseSpAttack  = 60,
         .baseSpDefense = 50,
@@ -580,10 +580,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     {
         .baseHP        = 50,
         .baseAttack    = 65,
-        .baseDefense   = 64,
-        .baseSpeed     = 43,
-        .baseSpAttack  = 44,
-        .baseSpDefense = 48,
+        .baseDefense   = 65,
+        .baseSpeed     = 45,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = DEFAULT_CATCH_RATE(45),
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 63 : 66,

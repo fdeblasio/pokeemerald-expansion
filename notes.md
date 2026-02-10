@@ -81,14 +81,11 @@ upcoming
 - Fix dynamic README lines (work in VS code but not GitHub)
 - Combine two meta files (notes.md and CHANGES.md)?
     Include more changes, even if general like Battle Frontier edits
-- Remove unused code
-    - Vanilla code
 - Organize changes better
 - Once more changes are made, consolidate commits on develop branch again
 
 ### Pokémon
 - Give all Pokémon updated movesets
-    - Next do all starters/beasts/bugs/birds/etc.
     - Not including cross-gen evos or regionals or already updated:
         8: 96
         4: 107
@@ -118,16 +115,42 @@ upcoming
         - Swablu Flying->Altaria Dragon/Flying
         - Fletchling Flying->Fletchinder Fire/Flying
 - More macros for almost identical forms (like Mimikyu)
-- Add in GMax forms as Megas with +20 to every non-HP stat? (or 40 to attacking and 0 to non-attacking)
+- Add in GMax forms as Megas with +20 to every non-HP stat? (or 40 to higher attack stat and 0 to lower)
 - Eventually remove RSE and/or BDSP teachable moves?
 - Merge Deoxys teachable learnsets?
 - Standardize starter base stat totals?
+    - Stage 1:
+        - Bulbasaur-Squirtle, Chikorita, Totodile, Turtwig-Piplup, Oshawott, Rowlet-Popplio, Sprigatito-Fuecoco: 320
+        - Cyndaquil: 315
+        - Froakie: 314
+        - Chespin: 313
+        - Treecko-Mudkip, Snivy-Tepig, Fennekin, Grookey-Sobble, Quaxly: 310
+    - Stage 2:
+        - Dewott, Dartrix-Brionne, Thwackey-Drizzile, Floragato: 420
+        - Pignite: 418
+        - Servine: 413
+        - Crocalor: 411
+        - Ivysaur-Wartortle, Bayleef, Quaxwell: 410
+        - Braixen: 409
+        - Quilava-Croconaw, Grovyle-Marshtomp, Grotle-Prinplup, Quilladin, Frogadier: 405
+    - Stage 3:
+        - Charizard-Blastoise, Swampert, Samurott, Samurott-H, Incineroar, Meowscarada: 535
+        - Typhlosion, Typhlosion-H, Infernape, Delphox: 534
+        - Venusaur, Feraligatr, Sceptile-Blaziken, Empoleon, Chesnaught, Greninja, Decidueye, Decidueye-H, Primarina, Rillaboom-Inteleon, Skeledirge-Quaquaval: 530
+        - Serperior-Emboar: 528
+        - Meganium, Torterra: 525
+    - Mega:
+        - Charizard X, Charizard Y, Blastoise, Swampert: 635
+        - Delphox: 634
+        - Venusaur, Feraligatr, Sceptile-Blaziken, Chesnaught, Greninja: 630
+        - Emboar: 628
+        - Meganium: 625
 - See if there's a way to automatically calculate the Pokedex offsets
     - Currently all new ones seem to have a default value (Pecharunt is 1 foot tall and looks huge in it)
 - Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?
 - Add Volcanion to Scorched Slab? (since it's Fire/Water)
 - For Egg Groups that share names with types, give Egg Moves moves of that type to Pokémon not of that type in the Egg Group
-    - Flying: ??? (Decidueye*, Flittle, Galairian Farfetch'd, Quaxly)
+    - Flying: ??? (Decidueye*, Decidueye-H, Flittle, Galairian Farfetch'd, Quaxly)
     - Water 1/2/3: Water Gun/Waterfall/Water Spout/Muddy Water/Water Sport/Water Pulse/Water Shuriken/Chilling Water
         - Water 1: Tadbulb, Galarian Slowpoke, Dratini, Paldean Wooper, Galarian Corsola, Delibird, Masquerain*, Bidoof, Stunfisk, Galarian Stunfisk, Inkay, Clobbopus, Pincurchin, Eiscue, Wattrel
         - Water 2: Hisuian Qwilfish, Inkay
@@ -545,6 +568,7 @@ upcoming
 ## FireRed:
 - Pewter:
     - Add Pokemon/grass to Pewter City for grinding
+    - Add Pewter Crunchies
     - Lower Brock's level?
 - Mt. Moon:
     - Figure out a way to get second fossil
@@ -642,7 +666,6 @@ upcoming
 ### Items
 - TMs
     - Add Dive TM
-- Add Pewter Crunchies to Pewter
 - Improve Rod order
     - Get rid of Super Rod entirely and just have first stage evos catchable?
 - Don't remove Meteorite

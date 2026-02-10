@@ -200,11 +200,11 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_FAMILY_FUECOCO
     [SPECIES_FUECOCO] =
     {
-        .baseHP        = 67,
+        .baseHP        = 70,
         .baseAttack    = 45,
-        .baseDefense   = 59,
-        .baseSpeed     = 36,
-        .baseSpAttack  = 63,
+        .baseDefense   = 60,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 65,
         .baseSpDefense = 40,
         .types = MON_TYPES(TYPE_FIRE),
         .catchRate = DEFAULT_CATCH_RATE(45),

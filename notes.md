@@ -978,9 +978,13 @@ upcoming
 - Vermilion:
     - Get SS Anne to stay?
         - Might cause conflict with Seagallop
+- Celadon:
+    - Have Hideout only available after Erika?
+- Lavendar:
+    - Change ghost to be Alolan Marowak?
+- Route 12/16:
+    - Change Snorlax to Munchlax?
 
-- Decap:
-    - Trainer Tower
 - Disable Contest summary screen?
 - Rock Slide, Body Slam, Swords Dance, and Thunder Wave are tutors in FRLG but are now TMs due to Emerald
     - Two Island lady can give out Blast Burn/Frenzy Plant/Hydro Cannon TMs instead of teaching moves

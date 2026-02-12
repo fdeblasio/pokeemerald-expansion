@@ -150,6 +150,11 @@ EWRAM_DATA u8 gChainFishingDexNavStreak = 0;
 #define RANGE_OLD_ROD_FRLG    15, 20
 #define RANGE_ROUTE_11        18, 20
 #define RANGE_DIGLETTS_CAVE   20, 22
+#define RANGE_ROUTE_9         21, 23
+#define RANGE_ROUTE_10        22, 24
+#define RANGE_ROCK_TUNNEL     23, 25
+#define RANGE_ROUTE_8         24, 26
+#define RANGE_ROUTE_7         25, 27
 
 #define RANGE_GOOD_ROD_FRLG   25, 30
 #define RANGE_SUPER_ROD_FRLG  35, 40

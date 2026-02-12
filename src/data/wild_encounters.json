@@ -6416,13 +6416,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "GOLDEEN"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "POLIWAG"
@@ -6432,9 +6426,6 @@
               },
               {
                 "species": "SEAKING"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "PSYDUCK"
@@ -6473,13 +6464,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "HORSEA"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "KRABBY"
@@ -6489,9 +6474,6 @@
               },
               {
                 "species": "SHELLDER"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "SEADRA"
@@ -6853,40 +6835,34 @@
           "base_label": "sRoute7_FireRed",
           "land_mons": {
             "encounter_rate": 21,
-            "range": "ROUTE",
+            "range": "ROUTE_7",
             "mons": [
               {
+                "species": "ODDISH"
+              },
+              {
+                "species": "BELLSPROUT"
+              },
+              {
+                "species": "GROWLITHE"
+              },
+              {
+                "species": "VULPIX"
+              },
+              {
                 "species": "PIDGEY"
               },
               {
                 "species": "MEOWTH"
               },
               {
-                "species": "ODDISH"
+                "species": "GROWLITHE"
               },
               {
-                "species": "MEOWTH"
+                "species": "VULPIX"
               },
               {
                 "species": "PIDGEY"
-              },
-              {
-                "species": "ODDISH"
-              },
-              {
-                "species": "GROWLITHE"
-              },
-              {
-                "species": "GROWLITHE"
-              },
-              {
-                "species": "MEOWTH"
-              },
-              {
-                "species": "MEOWTH"
-              },
-              {
-                "species": "MEOWTH"
               },
               {
                 "species": "MEOWTH"
@@ -6899,43 +6875,37 @@
           "base_label": "sRoute8_FireRed",
           "land_mons": {
             "encounter_rate": 21,
-            "range": "ROUTE",
+            "range": "ROUTE_8",
             "mons": [
               {
-                "species": "PIDGEY"
+                "species": "GROWLITHE"
+              },
+              {
+                "species": "VULPIX"
               },
               {
                 "species": "MEOWTH"
               },
               {
-                "species": "GROWLITHE"
+                "species": "PIDGEY"
               },
               {
-                "species": "PIDGEY"
+                "species": "SANDSHREW"
+              },
+              {
+                "species": "EKANS"
               },
               {
                 "species": "MEOWTH"
               },
               {
-                "species": "EKANS"
+                "species": "PIDGEY"
               },
               {
-                "species": "GROWLITHE"
-              },
-              {
-                "species": "EKANS"
+                "species": "SANDSHREW"
               },
               {
                 "species": "EKANS"
-              },
-              {
-                "species": "GROWLITHE"
-              },
-              {
-                "species": "EKANS"
-              },
-              {
-                "species": "GROWLITHE"
               }
             ]
           }
@@ -6945,7 +6915,7 @@
           "base_label": "sRoute9_FireRed",
           "land_mons": {
             "encounter_rate": 21,
-            "range": "ROUTE",
+            "range": "ROUTE_9",
             "mons": [
               {
                 "species": "SPEAROW"
@@ -6957,7 +6927,13 @@
                 "species": "EKANS"
               },
               {
+                "species": "SANDSHREW"
+              },
+              {
                 "species": "EKANS"
+              },
+              {
+                "species": "SANDSHREW"
               },
               {
                 "species": "SPEAROW"
@@ -6966,22 +6942,10 @@
                 "species": "RATTATA"
               },
               {
-                "species": "SPEAROW"
-              },
-              {
-                "species": "RATTATA"
-              },
-              {
-                "species": "RATTATA"
-              },
-              {
                 "species": "EKANS"
               },
               {
-                "species": "RATTATA"
-              },
-              {
-                "species": "EKANS"
+                "species": "SANDSHREW"
               }
             ]
           }
@@ -6991,43 +6955,37 @@
           "base_label": "sRoute10_FireRed",
           "land_mons": {
             "encounter_rate": 21,
-            "range": "ROUTE",
+            "range": "ROUTE_10",
             "mons": [
               {
+                "species": "VOLTORB"
+              },
+              {
+                "species": "VOLTORB"
+              },
+              {
+                "species": "EKANS"
+              },
+              {
+                "species": "SANDSHREW"
+              },
+              {
+                "species": "EKANS"
+              },
+              {
+                "species": "SANDSHREW"
+              },
+              {
                 "species": "SPEAROW"
               },
               {
-                "species": "VOLTORB"
-              },
-              {
-                "species": "EKANS"
-              },
-              {
-                "species": "EKANS"
+                "species": "SPEAROW"
               },
               {
                 "species": "SPEAROW"
               },
               {
-                "species": "VOLTORB"
-              },
-              {
                 "species": "SPEAROW"
-              },
-              {
-                "species": "VOLTORB"
-              },
-              {
-                "species": "VOLTORB"
-              },
-              {
-                "species": "EKANS"
-              },
-              {
-                "species": "VOLTORB"
-              },
-              {
-                "species": "EKANS"
               }
             ]
           },
@@ -7050,36 +7008,33 @@
             ]
           },
           "fishing_mons": {
-            "range": "ROUTE",
             "mons": [
               {
+                "range": "ROUTE_10",
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
+                "range": "GOOD_ROD_FRLG",
                 "species": "HORSEA"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
+                "range": "GOOD_ROD_FRLG",
                 "species": "KRABBY"
               },
               {
+                "range": "SUPER_ROD_FRLG",
                 "species": "HORSEA"
               },
               {
+                "range": "SUPER_ROD_FRLG",
                 "species": "HORSEA"
               },
               {
-                "species": "GYARADOS"
-              },
-              {
+                "range": "SUPER_ROD_FRLG",
                 "species": "HORSEA"
               },
               {
+                "range": "SUPER_ROD_FRLG",
                 "species": "PSYDUCK"
               }
             ]
@@ -7245,13 +7200,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "HORSEA"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "KRABBY"
@@ -7261,9 +7210,6 @@
               },
               {
                 "species": "HORSEA"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "HORSEA"
@@ -7344,13 +7290,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "HORSEA"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "KRABBY"
@@ -7360,9 +7300,6 @@
               },
               {
                 "species": "HORSEA"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "HORSEA"
@@ -7631,13 +7568,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "HORSEA"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "KRABBY"
@@ -7647,9 +7578,6 @@
               },
               {
                 "species": "HORSEA"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "SEADRA"
@@ -7688,13 +7616,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "HORSEA"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "KRABBY"
@@ -7704,9 +7626,6 @@
               },
               {
                 "species": "HORSEA"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "SEADRA"
@@ -7787,13 +7706,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "HORSEA"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "KRABBY"
@@ -7803,9 +7716,6 @@
               },
               {
                 "species": "HORSEA"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "SEADRA"
@@ -7886,13 +7796,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "HORSEA"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "KRABBY"
@@ -7902,9 +7806,6 @@
               },
               {
                 "species": "HORSEA"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "SEADRA"
@@ -7979,13 +7880,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "POLIWAG"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "GOLDEEN"
@@ -7995,9 +7890,6 @@
               },
               {
                 "species": "POLIWHIRL"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "PSYDUCK"
@@ -8078,13 +7970,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "POLIWAG"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "GOLDEEN"
@@ -8094,9 +7980,6 @@
               },
               {
                 "species": "POLIWHIRL"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "PSYDUCK"
@@ -8568,7 +8451,7 @@
           "base_label": "sRockTunnel1F_FireRed",
           "land_mons": {
             "encounter_rate": 7,
-            "range": "ROUTE",
+            "range": "ROCK_TUNNEL",
             "mons": [
               {
                 "species": "ZUBAT"
@@ -8580,12 +8463,6 @@
                 "species": "MANKEY"
               },
               {
-                "species": "GEODUDE"
-              },
-              {
-                "species": "ZUBAT"
-              },
-              {
                 "species": "MACHOP"
               },
               {
@@ -8595,13 +8472,13 @@
                 "species": "MACHOP"
               },
               {
-                "species": "GEODUDE"
+                "species": "ONIX"
               },
               {
                 "species": "ONIX"
               },
               {
-                "species": "GEODUDE"
+                "species": "ONIX"
               },
               {
                 "species": "ONIX"
@@ -8614,7 +8491,7 @@
           "base_label": "sRockTunnelB1F_FireRed",
           "land_mons": {
             "encounter_rate": 7,
-            "range": "ROUTE",
+            "range": "ROCK_TUNNEL",
             "mons": [
               {
                 "species": "ZUBAT"
@@ -8626,28 +8503,22 @@
                 "species": "MANKEY"
               },
               {
-                "species": "GEODUDE"
-              },
-              {
-                "species": "ZUBAT"
-              },
-              {
                 "species": "MACHOP"
               },
               {
                 "species": "MANKEY"
               },
               {
-                "species": "ONIX"
-              },
-              {
-                "species": "GEODUDE"
+                "species": "MACHOP"
               },
               {
                 "species": "ONIX"
               },
               {
-                "species": "GEODUDE"
+                "species": "ONIX"
+              },
+              {
+                "species": "ONIX"
               },
               {
                 "species": "ONIX"
@@ -9535,13 +9406,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "HORSEA"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "KRABBY"
@@ -9551,9 +9416,6 @@
               },
               {
                 "species": "HORSEA"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "PSYDUCK"
@@ -9634,13 +9496,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "HORSEA"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "KRABBY"
@@ -9650,9 +9506,6 @@
               },
               {
                 "species": "HORSEA"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "PSYDUCK"
@@ -10055,13 +9908,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "POLIWAG"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "GOLDEEN"
@@ -10071,9 +9918,6 @@
               },
               {
                 "species": "POLIWHIRL"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "PSYDUCK"
@@ -10200,13 +10044,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "POLIWAG"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "GOLDEEN"
@@ -10216,9 +10054,6 @@
               },
               {
                 "species": "POLIWHIRL"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "PSYDUCK"
@@ -10257,13 +10092,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "HORSEA"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "HORSEA"
@@ -10273,9 +10102,6 @@
               },
               {
                 "species": "SHELLDER"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "SEADRA"
@@ -10950,13 +10776,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "GOLDEEN"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "POLIWAG"
@@ -10966,9 +10786,6 @@
               },
               {
                 "species": "SEAKING"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "PSYDUCK"
@@ -11049,13 +10866,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "POLIWAG"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "GOLDEEN"
@@ -11065,9 +10876,6 @@
               },
               {
                 "species": "POLIWHIRL"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "PSYDUCK"
@@ -11240,13 +11048,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "HORSEA"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "HORSEA"
@@ -11256,9 +11058,6 @@
               },
               {
                 "species": "SHELLDER"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "SEADRA"
@@ -12029,15 +11828,6 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
-                "species": "HORSEA"
-              },
-              {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "HORSEA"
               },
               {
@@ -12047,7 +11837,7 @@
                 "species": "HORSEA"
               },
               {
-                "species": "GYARADOS"
+                "species": "HORSEA"
               },
               {
                 "species": "SEADRA"
@@ -12128,15 +11918,6 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
-                "species": "HORSEA"
-              },
-              {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "HORSEA"
               },
               {
@@ -12146,7 +11927,7 @@
                 "species": "HORSEA"
               },
               {
-                "species": "GYARADOS"
+                "species": "HORSEA"
               },
               {
                 "species": "SEADRA"
@@ -12227,13 +12008,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "POLIWAG"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "GOLDEEN"
@@ -12243,9 +12018,6 @@
               },
               {
                 "species": "POLIWHIRL"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "PSYDUCK"
@@ -12326,15 +12098,6 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
-                "species": "HORSEA"
-              },
-              {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "HORSEA"
               },
               {
@@ -12344,7 +12107,7 @@
                 "species": "HORSEA"
               },
               {
-                "species": "GYARADOS"
+                "species": "HORSEA"
               },
               {
                 "species": "SEADRA"
@@ -12429,13 +12192,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "HORSEA"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "HORSEA"
@@ -12445,9 +12202,6 @@
               },
               {
                 "species": "QWILFISH"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "SEADRA"
@@ -12486,13 +12240,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "HORSEA"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "HORSEA"
@@ -12502,9 +12250,6 @@
               },
               {
                 "species": "QWILFISH"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "SEADRA"
@@ -12585,13 +12330,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "HORSEA"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "HORSEA"
@@ -12601,9 +12340,6 @@
               },
               {
                 "species": "QWILFISH"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "SEADRA"
@@ -12684,13 +12420,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "HORSEA"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "HORSEA"
@@ -12700,9 +12430,6 @@
               },
               {
                 "species": "QWILFISH"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "SEADRA"
@@ -12741,13 +12468,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "HORSEA"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "HORSEA"
@@ -12757,9 +12478,6 @@
               },
               {
                 "species": "QWILFISH"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "SEADRA"
@@ -12798,13 +12516,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "HORSEA"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "HORSEA"
@@ -12814,9 +12526,6 @@
               },
               {
                 "species": "QWILFISH"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "SEADRA"
@@ -12897,13 +12606,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "HORSEA"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "HORSEA"
@@ -12913,9 +12616,6 @@
               },
               {
                 "species": "QWILFISH"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "SEADRA"
@@ -12996,13 +12696,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "POLIWAG"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "GOLDEEN"
@@ -13012,9 +12706,6 @@
               },
               {
                 "species": "POLIWHIRL"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "PSYDUCK"
@@ -13053,13 +12744,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "HORSEA"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "HORSEA"
@@ -13069,9 +12754,6 @@
               },
               {
                 "species": "QWILFISH"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "SEADRA"
@@ -13202,13 +12884,7 @@
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
                 "species": "HORSEA"
-              },
-              {
-                "species": "MAGIKARP"
               },
               {
                 "species": "HORSEA"
@@ -13218,9 +12894,6 @@
               },
               {
                 "species": "QWILFISH"
-              },
-              {
-                "species": "GYARADOS"
               },
               {
                 "species": "SEADRA"

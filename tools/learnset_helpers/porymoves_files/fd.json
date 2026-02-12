@@ -2329,7 +2329,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [],
-    "EggMoves": [],
+    "EggMoves": ["MOVE_BOLT_BEAK"],
     "TutorMoves": []
   },
   "ZAPDOS_GALAR": {
@@ -9237,7 +9237,7 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [],
-    "EggMoves": [],
+    "EggMoves": ["MOVE_BOLT_BEAK"],
     "TutorMoves": []
   },
   "TAPU_LELE": {
@@ -10716,7 +10716,7 @@
       "MOVE_RAIN_DANCE",
       "MOVE_HEAT_WAVE"
     ],
-    "EggMoves": [],
+    "EggMoves": ["MOVE_BOLT_BEAK"],
     "TutorMoves": []
   },
   "KILOWATTREL": {

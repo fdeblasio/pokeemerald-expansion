@@ -6,10 +6,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #if P_FAMILY_CHESPIN
     [SPECIES_CHESPIN] =
     {
-        .baseHP        = 56,
-        .baseAttack    = 61,
+        .baseHP        = 57,
+        .baseAttack    = 65,
         .baseDefense   = 65,
-        .baseSpeed     = 38,
+        .baseSpeed     = 40,
         .baseSpAttack  = 48,
         .baseSpDefense = 45,
         .types = MON_TYPES(TYPE_GRASS),
@@ -555,9 +555,9 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .baseHP        = 41,
         .baseAttack    = 56,
         .baseDefense   = 40,
-        .baseSpeed     = 71,
-        .baseSpAttack  = 62,
-        .baseSpDefense = 44,
+        .baseSpeed     = 73,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 45,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = DEFAULT_CATCH_RATE(45),
         .expYield = 63,

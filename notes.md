@@ -120,10 +120,8 @@ upcoming
 - Merge Deoxys teachable learnsets?
 - Standardize starter base stat totals?
     - Stage 1:
-        - Bulbasaur-Squirtle, Chikorita, Totodile, Turtwig-Piplup, Oshawott, Rowlet-Popplio, Sprigatito-Fuecoco: 320
+        - Bulbasaur-Squirtle, Chikorita, Totodile, Turtwig-Piplup, Oshawott, Chespin, Froakie, Rowlet-Popplio, Sprigatito-Fuecoco: 320
         - Cyndaquil, Scorbunny: 315
-        - Froakie: 314
-        - Chespin: 313
         - Treecko-Mudkip, Snivy-Tepig, Fennekin, Grookey, Sobble, Quaxly: 310
     - Stage 2:
         - Monferno-Prinplup, Pignite-Dewott, Quilladin, Frogadier, Dartrix-Brionne, Thwackey-Drizzile, Floragato-Crocalor: 420
@@ -131,16 +129,13 @@ upcoming
         - Ivysaur-Wartortle, Bayleef-Quilava, Grotle, Quaxwell: 410
         - Croconaw, Grovyle-Marshtomp: 405
     - Stage 3:
-        - Charizard-Blastoise, Typhlosion, Typhlosion-H, Swampert, Samurott, Samurott-H, Delphox-Greninja, Incineroar, Cinderace, Meowscarada-Skeledirge: 535
-        - Infernape: 534
+        - Charizard-Blastoise, Typhlosion, Typhlosion-H, Swampert, Infernape, Samurott, Samurott-H, Delphox-Greninja, Incineroar, Cinderace, Meowscarada-Skeledirge: 535
         - Venusaur, Meganium, Feraligatr, Sceptile-Blaziken, Torterra, Empoleon, Serperior-Emboar, Chesnaught, Decidueye, Decidueye-H, Primarina, Rillaboom, Inteleon, Quaquaval: 530
     - Mega:
         - Charizard X, Charizard Y, Blastoise, Swampert, Delphox-Greninja: 635
         - Venusaur, Meganium, Feraligatr, Sceptile-Blaziken, Emboar, Chesnaught: 630
 - See if there's a way to automatically calculate the Pokedex offsets
     - Currently all new ones seem to have a default value (Pecharunt is 1 foot tall and looks huge in it)
-- Give Zapdos, Tapu Koko, and Kilowattrel Bolt Beak?
-- Add Volcanion to Scorched Slab? (since it's Fire/Water)
 - For Egg Groups that share names with types, give Egg Moves moves of that type to Pokémon not of that type in the Egg Group
     - Flying: ??? (Decidueye*, Decidueye-H, Flittle, Galairian Farfetch'd, Quaxly)
     - Water 1/2/3: Water Gun/Waterfall/Water Spout/Muddy Water/Water Sport/Water Pulse/Water Shuriken/Chilling Water
@@ -198,13 +193,8 @@ upcoming
 - Turn some animation macros into functions like the Absorb ones
 - Replace Hypno's Hypnosis effect with a new move that uses its pendulum in the animation
 - Aqua Ring heals more with Water Bubble? In rain?
-- Should teachable be unchecked for egg moves due to the relearner/SV TMs?
-  - I guess keeping them in egg moves means a player can breed for them before they unlock the relearner
-- Find way for Rotom to learn special moves by level up (for relearning). Currently have TMs, but not all moves (Hydro Pump/Leaf Storm) are TMs
-    - This gets solved if the TM list is expanded to have Scarlet and Violet's
-    - I don't think this gets solved by the relearners though since Rotom's one teachable list still doesn't have it
-        - CanLearnTeachableMove is modified instead
 - Apply dynamic power to move relearner
+    - Might not be possible since move relearner checks the move and not the Pokemon
 - Nature Power:
     - Revert some Nature Power moves for a more varied effect
     - All moves are currently Special so change category in moves_info.h back to Status if any of them change
@@ -282,7 +272,6 @@ upcoming
     - Set OW_PC_HEAL to GEN_LATEST
 - Add relearning moves to PC?
 - PokeNav:
-    - Use layouts instead of maps to get more accurate nearby function? (Mainly useful for Gym Leaders in towns)
     - Give trainers more accurate locations
         - Scott at Battle Frontier once he's talked to there
         - Steven at Meteor Falls once he's talked to there
@@ -364,6 +353,8 @@ upcoming
         - Galarian Meowth
         - Paldean Wooper
     - Sandslash, Ninetales, Cursola, and maybe Obstagoon can be used to diversify the Elite Four teams
+
+
 
 ## Emerald
 - Rustboro:
@@ -557,6 +548,8 @@ upcoming
 - Battle Pike
     - Change Kirlia and Dusclops to fit the type of move used?
 
+
+
 ## FireRed:
 - Pewter:
     - Add Pokemon/grass to Pewter City for grinding
@@ -656,6 +649,11 @@ upcoming
     - Also there's the trainer class update PR
 
 ### Items
+- Change Marts to differ by badge
+    - Viridian
+    - Celadon
+    - Indigo League
+    - Trainer Tower
 - TMs
     - Add Dive TM
 - Improve Rod order

@@ -2139,6 +2139,7 @@
 
 - Zapdos (not in Emerald):
     - Learns Gust, Shock Wave, Air Cutter, Air Slash, Thunderbolt, and Hurricane by level up
+    - Theoretically learns Bolt Beak by Egg Move, although it can't breed
 
 - Galarian Zapdos (not in Emerald):
     - Learns Double Kick and Acrobatics by level up
@@ -3117,6 +3118,7 @@
     - Learns Incinerate, Karate Chop, Vacuum Wave, Fire Punch, Lava Plume, Flamethrower, and Drain Punch by level up
 
 - Infernape:
+    - Spe: 108->109
     - Learns Incinerate, Karate Chop, Vacuum Wave, Fire Punch, Lava Plume, Flamethrower, Drain Punch, and Aura Sphere by level up
 
 - Piplup:
@@ -3795,6 +3797,9 @@
     - Learns Icicle Crash by TM
 
 - Chespin:
+    - HP: 56->57
+    - Atk: 61->65
+    - Spe: 38->40
     - Learns Bullet Seed by level up
 
 - Quilladin:
@@ -3828,6 +3833,9 @@
     - SpA: 159->160
 
 - Froakie:
+    - SpA: 62->65
+    - SpD: 44->45
+    - Spe: 71->73
     - Learns Bubble Beam and Surf by level up
     - Hidden Ability: Protean->Water Bubble
 
@@ -4452,6 +4460,7 @@
 
 - Tapu Koko:
     - Learns Spirit Break, Thunder Punch, Zing Zap, Play Rough, Supercell Slam, and Rising Voltage by level up
+    - Theoretically learns Bolt Beak by Egg Move, although it can't breed
 
 - Tapu Lele:
     - Learns Fairy Wind, Disarming Voice, Dazzling Gleam, Psychic, and Expanding Force by level up
@@ -4890,6 +4899,7 @@
 - Wattrel/Kilowattrel:
     - Learn Gust, Shock Wave, Air Cutter, Tailwind, Air Slash, and Thunder by level up
     - Learn Rain Dance and Heat Wave by TM
+    - Theoretically learn Bolt Beak by Egg Move, although nothing can pass it down
 
 - Maschiff/Mabosstiff:
     - Learn Pursuit by level up

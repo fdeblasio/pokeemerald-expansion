@@ -961,6 +961,8 @@ upcoming
 - Battle Pike
     - Change Kirlia and Dusclops to fit the type of move used?
 
+
+
 ## FireRed:
 - Pewter:
     - Add Pokemon/grass to Pewter City for grinding
@@ -1060,6 +1062,11 @@ upcoming
     - Also there's the trainer class update PR
 
 ### Items
+- Change Marts to differ by badge
+    - Viridian
+    - Celadon
+    - Indigo League
+    - Trainer Tower
 - TMs
     - Add Dive TM
 - Improve Rod order

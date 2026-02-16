@@ -574,6 +574,10 @@ upcoming
     - Change Snorlax to Munchlax?
 - Seven Island
     - Update Trainer Tower facility classes (music especially)
+    - GFX
+        - Psychic M already taken care of
+        - Super Nerd uses PokeManiacs vs main game's Scientist, but that maybe should be brought to the rest of Kanto
+        - Might be more, can just use updated trainer class defines when done though
 
 - Disable Contest summary screen?
 - Rock Slide, Body Slam, Swords Dance, and Thunder Wave are tutors in FRLG but are now TMs due to Emerald

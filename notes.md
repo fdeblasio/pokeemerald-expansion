@@ -980,10 +980,13 @@ upcoming
         - Might cause conflict with Seagallop
 - Celadon:
     - Have Hideout only available after Erika?
+    - Update Game Corner
 - Lavendar:
     - Change ghost to be Alolan Marowak?
 - Route 12/16:
     - Change Snorlax to Munchlax?
+- Seven Island
+    - Update Trainer Tower facility classes (music especially)
 
 - Disable Contest summary screen?
 - Rock Slide, Body Slam, Swords Dance, and Thunder Wave are tutors in FRLG but are now TMs due to Emerald
@@ -1013,7 +1016,9 @@ upcoming
 - Figure out if this needs to be added to the battle_environment map?: #define MAP_BATTLE_SCENE_LORELEI  MAP_BATTLE_SCENE_NORMAL
 - Split out big map groups (like SS Anne)
 - Make surf/cave/fishing encounter rate similar to Emerald
-- Game Corner
+- Remove SaffronCity_Connection map?
+    - Check if it's actually used for anything
+    - By its name, it might be used for connections, but just change those to use the regular ones
 
 ### Pokémon
 - Decide if regional forms will be postgame or main game
@@ -1059,7 +1064,9 @@ upcoming
 - Finish Poke Balls after Trainer Class PR
 - Condense FRLG Swimmers like you did for RSE
 - Change Rocker to intense music?
+- Add back OBJ_EVENT_GFX_BATTLE_GIRL once changed in upcoming
 - Add Team Rocket class to Scientists (and Juggler?) in Silph Co.
+- Add defines for Trainer class-specific overworld sprites
 - Clean up duplicate FRLG trainer classes
     - defines
     - trainers.h macros

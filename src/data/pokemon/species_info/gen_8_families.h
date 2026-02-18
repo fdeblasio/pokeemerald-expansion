@@ -3062,6 +3062,9 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     .categoryName = _("Gulp"),                                         \
     .height = 8,                                                       \
     .weight = 180,                                                     \
+    .pokemonJumpType = PKMN_JUMP_TYPE_NONE,                            \
+    SHADOW(5, 14, SHADOW_SIZE_M)                                       \
+    FOOTPRINT(Cramorant)                                               \
     .levelUpLearnset = sCramorantLevelUpLearnset,                      \
     .teachableLearnset = sCramorantTeachableLearnset,                  \
     .eggMoveLearnset = sCramorantEggMoveLearnset,                      \
@@ -3093,9 +3096,6 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_Cramorant,
         .iconSprite = gMonIcon_Cramorant,
         .iconPalIndex = 0,
-        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(5, 14, SHADOW_SIZE_M)
-        FOOTPRINT(Cramorant),
         OVERWORLD(
             sPicTable_Cramorant,
             SIZE_32x32,
@@ -3134,9 +3134,6 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_CramorantGulping,
         .iconSprite = gMonIcon_CramorantGulping,
         .iconPalIndex = 0,
-        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(5, 14, SHADOW_SIZE_M)
-        FOOTPRINT(Cramorant)
         .formChangeTable = sCramorantGulpMissleFormChangeTable,
     },
 
@@ -3166,9 +3163,6 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .shinyPalette = gMonShinyPalette_CramorantGorging,
         .iconSprite = gMonIcon_CramorantGorging,
         .iconPalIndex = 0,
-        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(5, 14, SHADOW_SIZE_M)
-        FOOTPRINT(Cramorant)
         .formChangeTable = sCramorantGulpMissleFormChangeTable,
     },
 #endif //P_FAMILY_CRAMORANT

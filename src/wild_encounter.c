@@ -130,36 +130,49 @@ EWRAM_DATA u8 gChainFishingDexNavStreak = 0;
 #define RANGE_UNUSED            1, 1
 
 //FireRed
-//Not finalized. Will probably be changed and expanded after this builds
-#define RANGE_ROUTE           1, 1
-#define RANGE_ROUTE_1         2, 4
-#define RANGE_ROUTE_22        3, 5
-#define RANGE_ROUTE_2         4, 5
-#define RANGE_VIRIDIAN_FOREST 5, 6
-#define RANGE_VIRIDIAN_FOREST_COCOON 7, 7
-#define RANGE_PEWTER_CITY     7, 7
-#define RANGE_ROUTE_3         10, 12
-#define RANGE_MT_MOON         12, 14
-#define RANGE_ROUTE_4         14, 16
-#define RANGE_ROUTE_24_25     16, 18
-#define RANGE_ROUTE_24        RANGE_ROUTE_24_25
-#define RANGE_ROUTE_25        RANGE_ROUTE_24_25
-#define RANGE_ROUTE_5_6       17, 19
-#define RANGE_ROUTE_5         RANGE_ROUTE_5_6
-#define RANGE_ROUTE_6         RANGE_ROUTE_5_6
-#define RANGE_OLD_ROD_FRLG    15, 20
-#define RANGE_ROUTE_11        18, 20
-#define RANGE_DIGLETTS_CAVE   20, 22
-#define RANGE_ROUTE_9         21, 23
-#define RANGE_ROUTE_10        22, 24
-#define RANGE_ROCK_TUNNEL     23, 25
-#define RANGE_ROUTE_8         24, 26
-#define RANGE_ROUTE_7         25, 27
+#define RANGE_ROUTE            1, 1
+#define RANGE_ROUTE_1          2, 4
+#define RANGE_ROUTE_22         3, 5
+#define RANGE_ROUTE_2          4, 5
+#define RANGE_VIRIDIAN_FOREST  5, 6
+#define RANGE_VIRIDIAN_FOREST_ COCOON 7, 7
+#define RANGE_PEWTER_CITY      7, 7
+#define RANGE_ROUTE_3          10, 12
+#define RANGE_MT_MOON          12, 14
+#define RANGE_ROUTE_4          14, 16
+#define RANGE_ROUTE_24_25      16, 18
+#define RANGE_ROUTE_24         RANGE_ROUTE_24_25
+#define RANGE_ROUTE_25         RANGE_ROUTE_24_25
+#define RANGE_ROUTE_5_6        17, 19
+#define RANGE_ROUTE_5          RANGE_ROUTE_5_6
+#define RANGE_ROUTE_6          RANGE_ROUTE_5_6
+#define RANGE_OLD_ROD_FRLG     15, 20
+#define RANGE_ROUTE_11         18, 20
+#define RANGE_DIGLETTS_CAVE    20, 22
+#define RANGE_ROUTE_9          21, 23
+#define RANGE_ROUTE_10         22, 24
+#define RANGE_ROCK_TUNNEL      23, 25
+#define RANGE_ROUTE_8          24, 26
+#define RANGE_ROUTE_7          25, 27
+#define RANGE_CELADON_CITY     26, 28
+#define RANGE_ROUTE_16         27, 29
+#define RANGE_POKEMON_TOWER    28, 30
+//Saffron first?
+#define RANGE_ROUTE_12         29, 31
+#define RANGE_GOOD_ROD_FRLG    30, 32
+#define RANGE_ROUTE_13         31, 33
+#define RANGE_ROUTE_14         32, 34
+#define RANGE_ROUTE_15         33, 35
+#define RANGE_FUCHSIA_CITY     34, 36
+#define RANGE_SUPER_ROD_FRLG   35, 37
+#define RANGE_ROUTE_18         36, 38
+#define RANGE_ROUTE_17         38, 40
+#define RANGE_SAFARI_ZONE_FRLG 39, 41
+#define RANGE_SURF_FRLG        40, 45
+//End of Fuchsia block
+#define RANGE_ROUTE_19         42, 44
 
-#define RANGE_GOOD_ROD_FRLG   25, 30
-#define RANGE_SUPER_ROD_FRLG  35, 40
-#define RANGE_SURF_FRLG       25, 30
-#define RANGE_POSTGAME_FRLG   POSTGAME_LEVEL_FRLG, POSTGAME_LEVEL_FRLG
+#define RANGE_POSTGAME_FRLG    POSTGAME_LEVEL_FRLG, POSTGAME_LEVEL_FRLG
 
 #define SAFARI_ZONE_ENCOUNTER_RATE 50
 

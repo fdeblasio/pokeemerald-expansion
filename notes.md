@@ -568,10 +568,16 @@ upcoming
 - Celadon:
     - Have Hideout only available after Erika?
     - Update Game Corner
-- Lavendar:
+- Lavender:
     - Change ghost to be Alolan Marowak?
 - Route 12/16:
+    - Done after Saffron?
     - Change Snorlax to Munchlax?
+    - Make one of the routes unlock later?
+    - Swap Super Rod with Good Rod (if Route 12 is first)?
+        - Remove Super Rod entirely and just have that brother check Magikarp size?
+- Safari Zone:
+    - Go back and edit encounters
 - Seven Island
     - Update Trainer Tower facility classes (music especially)
     - GFX
@@ -612,41 +618,62 @@ upcoming
     - By its name, it might be used for connections, but just change those to use the regular ones
 
 ### Pokémon
-- Decide if regional forms will be postgame or main game
+- Add version exclusives
+    - Koffing (Pokemon Mansion)
+    - Magby (Pokemon Mansion)
+    - Azurill (Wooper)
+    - Misdreavus (Murkrow)
+    - Sneasel (Delibird?)
+    - Remoraid (Qwilfish?)
+    - Mantyke (Skarmory?)
+- Add event-exclusive Pokemon:
+    - Smoochum: (LGPE: Seafoam Islands)
+    - Lapras: (Seafoam Islands?; LGPE: Route 19/20 rare)
+    - Porygon: Power Plant?
+    - Munchlax: (LGPE: Cerulean Cave)
+    - Mew
+- Add Safari-exclusive Pokemon?
+    - Dratini (LGPE: Route 10 Surf)
+    - Rhyhorn (LGPE: Rock Tunnel, Victory Road, Cerulean Cave)
+    - Happiny (LGPE: rare on a lot of routes; Chansey later on, Blissey by Indigo Plateau)
+    - Omanyte? (Cerulean Cave? Sevii Islands?)
+    - Kabuto? (Cerulean Cave? Sevii Islands?)
+    - Aerodactyl? (Cerulean Cave?)
+- Add Shellder to Seafoam Islands (currently seems to be Super Rod exclusive)
+    - Cloyster for Seafoam Islands Super Rod
+- Add starters
+- Replace Snorlax with Munchlax?
+- Decide if regional forms will be postgame (Sevii Islands) or main game
     - Evolutions (Raichu, Marowak, Exeggutor, Weezing, Mr. Mime) are in-game
     - Alolan Diglett is in Diglett's Cave
     - Remaining:
-        - Rattata/Raticate
-        - Sandshrew/Sandslash
-        - Vulpix/Ninetales
-        - Meowth/Persian
-        - Meowth/Perrserker
-        - Growlithe/Arcanine
-        - Geodude/Graveler/Golem
-        - Ponyta/Rapidash
-        - Slowpoke/Slowbro/Slowking
-        - Farfetch'd/Sirfetch'd
-        - Grimer/Muk
-        - Voltorb/Electrode
-        - Tauros (x3)
-        - Articuno/Zapdos/Moltres
+        - Rattata/Raticate (Route 4/Route 9?)
+        - Sandshrew/Sandslash (Seafoam Islands)
+        - Vulpix/Ninetales (Seafoam Islands)
+        - Meowth/Persian (Route 6/7/8)
+        - Meowth/Perrserker (Route 6/7/8)
+        - Growlithe/Arcanine (Route 15? Pokemon Mansion?)
+        - Geodude/Graveler/Golem (Rock Tunnel/Power Plant?)
+        - Ponyta/Rapidash (Route 7/8?)
+        - Slowpoke/Slowbro/Slowking (Fuschia City/Route 15?)
+        - Farfetch'd/Sirfetch'd (Route 11/9/12/13?)
+        - Grimer/Muk (Route 7?)
+        - Voltorb/Electrode (Route 10?)
+        - Tauros (x3) (Route 14?)
+        - Articuno
+        - Zapdos
+        - Moltres (Ruby Path?)
     - Could do One, Two, and Three Islands
     - Add Galarian birds to Sevii Islands?
-- Add version exclusives
-    - Including postgame
-- Add trade-exclusive Pokemon:
-    - Farfetch'd: Route 12/13
-    - Smoochum: Seafoam Islands
-    - Lickitung: Cerulean Cave but also before the end of the game
-- Add Shellder to Seafoam Cavern (currently seems to be Super Rod exclusive)
 - Add Wiglett/Toedscool?
 - Add Munna for Route 10 girl? Maybe a trade?
-- Add Mew
+- Go back and add BEAST/BIRD ( and maybe +1) to encounters
 
 ### Trainers
 - Rearrange opponents_frlg.h
 - Move TRAINER_CLASS_INFO defines out of if statement? That way, any game can have any class/pic?
 - Gym rematches:
+    - Figure out how to get them to work
     - Figure out whether to evolve Brock's Onix or keep it as is and use Eviolite
     - Give Steelix (if used), Starmie, and Raichu mega stones
 - Clean up some trainers like the rival's Abra specifying that only knows Teleport (since that would be the case anyways)

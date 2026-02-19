@@ -6117,11 +6117,7 @@
               },
               {
                 "range": "SUPER_ROD_FRLG",
-                "species": "SHELLDER"
-              },
-              {
-                "range": "SUPER_ROD_FRLG",
-                "species": "PSYDUCK"
+                "species": "KINGLER"
               }
             ]
           }
@@ -6163,19 +6159,11 @@
               },
               {
                 "range": "SUPER_ROD_FRLG",
-                "species": "POLIWAG"
-              },
-              {
-                "range": "SUPER_ROD_FRLG",
                 "species": "POLIWHIRL"
               },
               {
                 "range": "SUPER_ROD_FRLG",
-                "species": "PSYDUCK"
-              },
-              {
-                "range": "SUPER_ROD_FRLG",
-                "species": "PSYDUCK"
+                "species": "SEAKING"
               }
             ]
           }
@@ -6255,27 +6243,19 @@
               },
               {
                 "range": "GOOD_ROD_FRLG",
-                "species": "HORSEA"
+                "species": "STARYU"
               },
               {
                 "range": "GOOD_ROD_FRLG",
-                "species": "KRABBY"
-              },
-              {
-                "range": "SUPER_ROD_FRLG",
-                "species": "HORSEA"
-              },
-              {
-                "range": "SUPER_ROD_FRLG",
-                "species": "HORSEA"
-              },
-              {
-                "range": "SUPER_ROD_FRLG",
-                "species": "HORSEA"
-              },
-              {
-                "range": "SUPER_ROD_FRLG",
                 "species": "PSYDUCK"
+              },
+              {
+                "range": "SUPER_ROD_FRLG",
+                "species": "STARMIE"
+              },
+              {
+                "range": "SUPER_ROD_FRLG",
+                "species": "GOLDUCK"
               }
             ]
           }
@@ -6309,27 +6289,19 @@
               },
               {
                 "range": "GOOD_ROD_FRLG",
-                "species": "HORSEA"
+                "species": "SLOWPOKE"
               },
               {
                 "range": "GOOD_ROD_FRLG",
-                "species": "KRABBY"
-              },
-              {
-                "range": "SUPER_ROD_FRLG",
-                "species": "HORSEA"
-              },
-              {
-                "range": "SUPER_ROD_FRLG",
                 "species": "SHELLDER"
               },
               {
                 "range": "SUPER_ROD_FRLG",
-                "species": "HORSEA"
+                "species": "SLOWBRO"
               },
               {
                 "range": "SUPER_ROD_FRLG",
-                "species": "PSYDUCK"
+                "species": "SLOWKING"
               }
             ]
           }
@@ -6351,39 +6323,31 @@
                 "species": "SLOWPOKE"
               },
               {
-                "species": "KOFFING"
+                "species": "SLOWPOKE"
               }
             ]
           },
           "fishing_mons": {
-            "range": "ROUTE",
             "mons": [
               {
+                "range": "CELADON_CITY",
                 "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP"
+                "range": "GOOD_ROD_FRLG",
+                "species": "POLIWAG"
               },
               {
-                "species": "MAGIKARP"
+                "range": "GOOD_ROD_FRLG",
+                "species": "GOLDEEN"
               },
               {
-                "species": "MAGIKARP"
+                "range": "SUPER_ROD_FRLG",
+                "species": "POLIWHIRL"
               },
               {
-                "species": "MAGIKARP"
-              },
-              {
-                "species": "MAGIKARP"
-              },
-              {
-                "species": "MAGIKARP"
-              },
-              {
-                "species": "MAGIKARP"
-              },
-              {
-                "species": "GRIMER"
+                "range": "SUPER_ROD_FRLG",
+                "species": "SEAKING"
               }
             ]
           }
@@ -6410,28 +6374,26 @@
             ]
           },
           "fishing_mons": {
-            "range": "ROUTE",
             "mons": [
               {
+                "range": "FUCHSIA_CITY",
                 "species": "MAGIKARP"
               },
               {
+                "range": "FUCHSIA_CITY",
                 "species": "GOLDEEN"
               },
               {
+                "range": "FUCHSIA_CITY",
                 "species": "POLIWAG"
               },
               {
-                "species": "GOLDEEN"
-              },
-              {
+                "range": "SUPER_ROD_FRLG",
                 "species": "SEAKING"
               },
               {
-                "species": "PSYDUCK"
-              },
-              {
-                "species": "PSYDUCK"
+                "range": "SUPER_ROD_FRLG",
+                "species": "POLIWHIRL"
               }
             ]
           }
@@ -6675,27 +6637,19 @@
               },
               {
                 "range": "GOOD_ROD_FRLG",
-                "species": "HORSEA"
+                "species": "STARYU"
               },
               {
                 "range": "GOOD_ROD_FRLG",
-                "species": "KRABBY"
-              },
-              {
-                "range": "SUPER_ROD_FRLG",
-                "species": "HORSEA"
-              },
-              {
-                "range": "SUPER_ROD_FRLG",
-                "species": "HORSEA"
-              },
-              {
-                "range": "SUPER_ROD_FRLG",
-                "species": "HORSEA"
-              },
-              {
-                "range": "SUPER_ROD_FRLG",
                 "species": "PSYDUCK"
+              },
+              {
+                "range": "SUPER_ROD_FRLG",
+                "species": "STARMIE"
+              },
+              {
+                "range": "SUPER_ROD_FRLG",
+                "species": "GOLDUCK"
               }
             ]
           }
@@ -6813,19 +6767,11 @@
               },
               {
                 "range": "SUPER_ROD_FRLG",
-                "species": "POLIWAG"
-              },
-              {
-                "range": "SUPER_ROD_FRLG",
                 "species": "POLIWHIRL"
               },
               {
                 "range": "SUPER_ROD_FRLG",
-                "species": "PSYDUCK"
-              },
-              {
-                "range": "SUPER_ROD_FRLG",
-                "species": "PSYDUCK"
+                "species": "SEAKING"
               }
             ]
           }
@@ -7015,27 +6961,19 @@
               },
               {
                 "range": "GOOD_ROD_FRLG",
-                "species": "HORSEA"
+                "species": "SLOWPOKE"
               },
               {
                 "range": "GOOD_ROD_FRLG",
-                "species": "KRABBY"
+                "species": "SHELLDER"
               },
               {
                 "range": "SUPER_ROD_FRLG",
-                "species": "HORSEA"
+                "species": "SLOWBRO"
               },
               {
                 "range": "SUPER_ROD_FRLG",
-                "species": "HORSEA"
-              },
-              {
-                "range": "SUPER_ROD_FRLG",
-                "species": "HORSEA"
-              },
-              {
-                "range": "SUPER_ROD_FRLG",
-                "species": "PSYDUCK"
+                "species": "SLOWKING"
               }
             ]
           }
@@ -7113,19 +7051,11 @@
               },
               {
                 "range": "SUPER_ROD_FRLG",
-                "species": "HORSEA"
+                "species": "SEADRA"
               },
               {
                 "range": "SUPER_ROD_FRLG",
-                "species": "HORSEA"
-              },
-              {
-                "range": "SUPER_ROD_FRLG",
-                "species": "HORSEA"
-              },
-              {
-                "range": "SUPER_ROD_FRLG",
-                "species": "PSYDUCK"
+                "species": "KINGLER"
               }
             ]
           }
@@ -7135,43 +7065,37 @@
           "base_label": "sRoute12_FireRed",
           "land_mons": {
             "encounter_rate": 21,
-            "range": "ROUTE",
+            "range": "ROUTE_12",
             "mons": [
               {
-                "species": "ODDISH"
+                "species": "VENONAT"
+              },
+              {
+                "species": "FARFETCHD"
+              },
+              {
+                "species": "LICKITUNG"
+              },
+              {
+                "species": "LICKITUNG"
               },
               {
                 "species": "VENONAT"
               },
               {
-                "species": "ODDISH"
-              },
-              {
-                "species": "PIDGEY"
-              },
-              {
-                "species": "PIDGEY"
-              },
-              {
-                "species": "VENONAT"
+                "species": "FARFETCHD"
               },
               {
                 "species": "ODDISH"
               },
               {
-                "species": "PIDGEY"
+                "species": "BELLSPROUT"
               },
               {
-                "species": "PIDGEY"
+                "species": "PIDGEOTTO"
               },
               {
-                "species": "GLOOM"
-              },
-              {
-                "species": "PIDGEY"
-              },
-              {
-                "species": "GLOOM"
+                "species": "LICKITUNG"
               }
             ]
           },
@@ -7194,28 +7118,26 @@
             ]
           },
           "fishing_mons": {
-            "range": "ROUTE",
             "mons": [
               {
+                "range": "ROUTE_12",
                 "species": "MAGIKARP"
               },
               {
+                "range": "GOOD_ROD_FRLG",
                 "species": "HORSEA"
               },
               {
+                "range": "GOOD_ROD_FRLG",
                 "species": "KRABBY"
               },
               {
-                "species": "HORSEA"
+                "range": "SUPER_ROD_FRLG",
+                "species": "SEADRA"
               },
               {
-                "species": "HORSEA"
-              },
-              {
-                "species": "HORSEA"
-              },
-              {
-                "species": "PSYDUCK"
+                "range": "SUPER_ROD_FRLG",
+                "species": "KINGLER"
               }
             ]
           }
@@ -7225,43 +7147,37 @@
           "base_label": "sRoute13_FireRed",
           "land_mons": {
             "encounter_rate": 21,
-            "range": "ROUTE",
+            "range": "ROUTE_13",
             "mons": [
               {
-                "species": "ODDISH"
+                "species": "VENONAT"
+              },
+              {
+                "species": "FARFETCHD"
+              },
+              {
+                "species": "LICKITUNG"
+              },
+              {
+                "species": "LICKITUNG"
               },
               {
                 "species": "VENONAT"
               },
               {
-                "species": "ODDISH"
-              },
-              {
-                "species": "PIDGEY"
-              },
-              {
-                "species": "PIDGEY"
-              },
-              {
-                "species": "VENONAT"
+                "species": "FARFETCHD"
               },
               {
                 "species": "ODDISH"
               },
               {
-                "species": "DITTO"
+                "species": "BELLSPROUT"
               },
               {
                 "species": "PIDGEOTTO"
               },
               {
-                "species": "GLOOM"
-              },
-              {
-                "species": "PIDGEOTTO"
-              },
-              {
-                "species": "GLOOM"
+                "species": "LICKITUNG"
               }
             ]
           },
@@ -7284,28 +7200,26 @@
             ]
           },
           "fishing_mons": {
-            "range": "ROUTE",
             "mons": [
               {
+                "range": "ROUTE_13",
                 "species": "MAGIKARP"
               },
               {
+                "range": "ROUTE_13",
                 "species": "HORSEA"
               },
               {
+                "range": "ROUTE_13",
                 "species": "KRABBY"
               },
               {
-                "species": "HORSEA"
+                "range": "SUPER_ROD_FRLG",
+                "species": "SEADRA"
               },
               {
-                "species": "HORSEA"
-              },
-              {
-                "species": "HORSEA"
-              },
-              {
-                "species": "PSYDUCK"
+                "range": "SUPER_ROD_FRLG",
+                "species": "KINGLER"
               }
             ]
           }
@@ -7315,40 +7229,34 @@
           "base_label": "sRoute14_FireRed",
           "land_mons": {
             "encounter_rate": 21,
-            "range": "ROUTE",
+            "range": "ROUTE_14",
             "mons": [
               {
-                "species": "ODDISH"
+                "species": "SCYTHER"
+              },
+              {
+                "species": "PINSIR"
+              },
+              {
+                "species": "TAUROS"
               },
               {
                 "species": "VENONAT"
               },
               {
-                "species": "ODDISH"
-              },
-              {
-                "species": "DITTO"
-              },
-              {
-                "species": "PIDGEY"
+                "species": "TAUROS"
               },
               {
                 "species": "VENONAT"
-              },
-              {
-                "species": "ODDISH"
-              },
-              {
-                "species": "GLOOM"
-              },
-              {
-                "species": "DITTO"
               },
               {
                 "species": "PIDGEOTTO"
               },
               {
-                "species": "DITTO"
+                "species": "PIDGEOTTO"
+              },
+              {
+                "species": "PIDGEOTTO"
               },
               {
                 "species": "PIDGEOTTO"
@@ -7361,43 +7269,37 @@
           "base_label": "sRoute15_FireRed",
           "land_mons": {
             "encounter_rate": 21,
-            "range": "ROUTE",
+            "range": "ROUTE_15",
             "mons": [
               {
-                "species": "ODDISH"
+                "species": "SCYTHER"
+              },
+              {
+                "species": "PINSIR"
+              },
+              {
+                "species": "TAUROS"
               },
               {
                 "species": "VENONAT"
               },
               {
-                "species": "ODDISH"
-              },
-              {
-                "species": "PIDGEY"
-              },
-              {
-                "species": "PIDGEY"
+                "species": "TAUROS"
               },
               {
                 "species": "VENONAT"
               },
               {
-                "species": "ODDISH"
-              },
-              {
-                "species": "DITTO"
+                "species": "PIDGEOTTO"
               },
               {
                 "species": "PIDGEOTTO"
               },
               {
-                "species": "GLOOM"
-              },
-              {
                 "species": "PIDGEOTTO"
               },
               {
-                "species": "GLOOM"
+                "species": "PIDGEOTTO"
               }
             ]
           }
@@ -7407,43 +7309,37 @@
           "base_label": "sRoute16_FireRed",
           "land_mons": {
             "encounter_rate": 21,
-            "range": "ROUTE",
+            "range": "ROUTE_16",
             "mons": [
               {
-                "species": "SPEAROW"
+                "species": "EXEGGCUTE"
+              },
+              {
+                "species": "EEVEE"
+              },
+              {
+                "species": "HAPPINY"
               },
               {
                 "species": "DODUO"
               },
               {
-                "species": "RATTATA"
-              },
-              {
-                "species": "RATTATA"
-              },
-              {
-                "species": "SPEAROW"
+                "species": "HAPPINY"
               },
               {
                 "species": "DODUO"
               },
               {
-                "species": "RATTATA"
+                "species": "PONYTA"
               },
               {
-                "species": "DODUO"
+                "species": "PONYTA"
               },
               {
-                "species": "RATTATA"
+                "species": "PONYTA"
               },
               {
-                "species": "RATICATE"
-              },
-              {
-                "species": "RATTATA"
-              },
-              {
-                "species": "RATICATE"
+                "species": "PONYTA"
               }
             ]
           }
@@ -7453,43 +7349,37 @@
           "base_label": "sRoute17_FireRed",
           "land_mons": {
             "encounter_rate": 21,
-            "range": "ROUTE",
+            "range": "ROUTE_17",
             "mons": [
               {
-                "species": "SPEAROW"
+                "species": "EXEGGCUTE"
+              },
+              {
+                "species": "EEVEE"
+              },
+              {
+                "species": "KANGASKHAN"
               },
               {
                 "species": "DODUO"
               },
               {
-                "species": "SPEAROW"
+                "species": "KANGASKHAN"
               },
               {
                 "species": "DODUO"
               },
               {
-                "species": "RATICATE"
+                "species": "PONYTA"
               },
               {
-                "species": "RATICATE"
+                "species": "PONYTA"
               },
               {
-                "species": "DODUO"
+                "species": "PONYTA"
               },
               {
-                "species": "RATICATE"
-              },
-              {
-                "species": "RATTATA"
-              },
-              {
-                "species": "FEAROW"
-              },
-              {
-                "species": "RATTATA"
-              },
-              {
-                "species": "FEAROW"
+                "species": "PONYTA"
               }
             ]
           }
@@ -7499,19 +7389,16 @@
           "base_label": "sRoute18_FireRed",
           "land_mons": {
             "encounter_rate": 21,
-            "range": "ROUTE",
+            "range": "ROUTE_18",
             "mons": [
               {
-                "species": "SPEAROW"
-              },
-              {
                 "species": "DODUO"
               },
               {
-                "species": "SPEAROW"
+                "species": "TYROGUE"
               },
               {
-                "species": "DODUO"
+                "species": "FEAROW"
               },
               {
                 "species": "RATICATE"
@@ -7520,22 +7407,19 @@
                 "species": "FEAROW"
               },
               {
-                "species": "DODUO"
-              },
-              {
                 "species": "RATICATE"
               },
               {
-                "species": "RATTATA"
+                "species": "KANGASKHAN"
               },
               {
-                "species": "FEAROW"
+                "species": "KANGASKHAN"
               },
               {
-                "species": "RATTATA"
+                "species": "KANGASKHAN"
               },
               {
-                "species": "FEAROW"
+                "species": "KANGASKHAN"
               }
             ]
           }
@@ -8055,27 +7939,19 @@
               },
               {
                 "range": "GOOD_ROD_FRLG",
-                "species": "HORSEA"
+                "species": "STARYU"
               },
               {
                 "range": "GOOD_ROD_FRLG",
-                "species": "KRABBY"
-              },
-              {
-                "range": "SUPER_ROD_FRLG",
-                "species": "HORSEA"
-              },
-              {
-                "range": "SUPER_ROD_FRLG",
-                "species": "HORSEA"
-              },
-              {
-                "range": "SUPER_ROD_FRLG",
-                "species": "HORSEA"
-              },
-              {
-                "range": "SUPER_ROD_FRLG",
                 "species": "PSYDUCK"
+              },
+              {
+                "range": "SUPER_ROD_FRLG",
+                "species": "STARMIE"
+              },
+              {
+                "range": "SUPER_ROD_FRLG",
+                "species": "GOLDUCK"
               }
             ]
           }
@@ -8153,19 +8029,11 @@
               },
               {
                 "range": "SUPER_ROD_FRLG",
-                "species": "POLIWAG"
-              },
-              {
-                "range": "SUPER_ROD_FRLG",
                 "species": "POLIWHIRL"
               },
               {
                 "range": "SUPER_ROD_FRLG",
-                "species": "PSYDUCK"
-              },
-              {
-                "range": "SUPER_ROD_FRLG",
-                "species": "PSYDUCK"
+                "species": "SEAKING"
               }
             ]
           }
@@ -8179,27 +8047,27 @@
             "mons": [
               {
                 "range": "VIRIDIAN_FOREST",
-                "species": "CATERPIE"
+                "species": "EARLY_BUG_FRLG_1"
               },
               {
                 "range": "VIRIDIAN_FOREST",
-                "species": "WEEDLE"
+                "species": "EARLY_BUG_FRLG_2"
               },
               {
                 "range": "VIRIDIAN_FOREST",
-                "species": "CATERPIE"
+                "species": "EARLY_BUG_FRLG_1"
               },
               {
                 "range": "VIRIDIAN_FOREST",
-                "species": "WEEDLE"
+                "species": "EARLY_BUG_FRLG_2"
               },
               {
                 "range": "VIRIDIAN_FOREST",
-                "species": "CATERPIE"
+                "species": "EARLY_BUG_FRLG_1"
               },
               {
                 "range": "VIRIDIAN_FOREST",
-                "species": "WEEDLE"
+                "species": "EARLY_BUG_FRLG_2"
               },
               {
                 "range": "VIRIDIAN_FOREST",
@@ -8375,27 +8243,19 @@
               },
               {
                 "range": "GOOD_ROD_FRLG",
-                "species": "HORSEA"
+                "species": "SLOWPOKE"
               },
               {
                 "range": "GOOD_ROD_FRLG",
-                "species": "KRABBY"
-              },
-              {
-                "range": "SUPER_ROD_FRLG",
-                "species": "HORSEA"
-              },
-              {
-                "range": "SUPER_ROD_FRLG",
                 "species": "SHELLDER"
               },
               {
                 "range": "SUPER_ROD_FRLG",
-                "species": "HORSEA"
+                "species": "SLOWBRO"
               },
               {
                 "range": "SUPER_ROD_FRLG",
-                "species": "PSYDUCK"
+                "species": "SLOWKING"
               }
             ]
           }
@@ -8531,25 +8391,19 @@
           "base_label": "sPokemonTower3F_FireRed",
           "land_mons": {
             "encounter_rate": 2,
-            "range": "ROUTE",
+            "range": "POKEMON_TOWER",
             "mons": [
               {
                 "species": "GASTLY"
               },
               {
-                "species": "GASTLY"
+                "species": "CUBONE"
               },
               {
                 "species": "GASTLY"
               },
               {
-                "species": "GASTLY"
-              },
-              {
-                "species": "GASTLY"
-              },
-              {
-                "species": "GASTLY"
+                "species": "CUBONE"
               },
               {
                 "species": "GASTLY"
@@ -8567,7 +8421,7 @@
                 "species": "GASTLY"
               },
               {
-                "species": "HAUNTER"
+                "species": "CUBONE"
               }
             ]
           }
@@ -8577,28 +8431,22 @@
           "base_label": "sPokemonTower4F_FireRed",
           "land_mons": {
             "encounter_rate": 4,
-            "range": "ROUTE",
+            "range": "POKEMON_TOWER",
             "mons": [
               {
                 "species": "GASTLY"
               },
               {
-                "species": "GASTLY"
+                "species": "CUBONE"
               },
               {
                 "species": "GASTLY"
               },
               {
-                "species": "GASTLY"
+                "species": "CUBONE"
               },
               {
                 "species": "GASTLY"
-              },
-              {
-                "species": "GASTLY"
-              },
-              {
-                "species": "HAUNTER"
               },
               {
                 "species": "CUBONE"
@@ -8613,7 +8461,7 @@
                 "species": "GASTLY"
               },
               {
-                "species": "GASTLY"
+                "species": "CUBONE"
               }
             ]
           }
@@ -8623,28 +8471,22 @@
           "base_label": "sPokemonTower5F_FireRed",
           "land_mons": {
             "encounter_rate": 6,
-            "range": "ROUTE",
+            "range": "POKEMON_TOWER",
             "mons": [
               {
                 "species": "GASTLY"
               },
               {
-                "species": "GASTLY"
+                "species": "CUBONE"
               },
               {
                 "species": "GASTLY"
               },
               {
-                "species": "GASTLY"
+                "species": "CUBONE"
               },
               {
                 "species": "GASTLY"
-              },
-              {
-                "species": "GASTLY"
-              },
-              {
-                "species": "HAUNTER"
               },
               {
                 "species": "CUBONE"
@@ -8659,7 +8501,7 @@
                 "species": "GASTLY"
               },
               {
-                "species": "GASTLY"
+                "species": "CUBONE"
               }
             ]
           }
@@ -8669,28 +8511,22 @@
           "base_label": "sPokemonTower6F_FireRed",
           "land_mons": {
             "encounter_rate": 8,
-            "range": "ROUTE",
+            "range": "POKEMON_TOWER",
             "mons": [
               {
                 "species": "GASTLY"
               },
               {
-                "species": "GASTLY"
+                "species": "CUBONE"
               },
               {
                 "species": "GASTLY"
               },
               {
-                "species": "GASTLY"
+                "species": "CUBONE"
               },
               {
                 "species": "GASTLY"
-              },
-              {
-                "species": "GASTLY"
-              },
-              {
-                "species": "HAUNTER"
               },
               {
                 "species": "CUBONE"
@@ -8705,7 +8541,7 @@
                 "species": "GASTLY"
               },
               {
-                "species": "HAUNTER"
+                "species": "CUBONE"
               }
             ]
           }
@@ -8715,28 +8551,16 @@
           "base_label": "sPokemonTower7F_FireRed",
           "land_mons": {
             "encounter_rate": 10,
-            "range": "ROUTE",
+            "range": "POKEMON_TOWER",
             "mons": [
               {
                 "species": "GASTLY"
               },
               {
-                "species": "GASTLY"
-              },
-              {
-                "species": "GASTLY"
-              },
-              {
-                "species": "GASTLY"
-              },
-              {
-                "species": "GASTLY"
-              },
-              {
-                "species": "HAUNTER"
-              },
-              {
                 "species": "CUBONE"
+              },
+              {
+                "species": "GASTLY"
               },
               {
                 "species": "CUBONE"
@@ -8745,13 +8569,19 @@
                 "species": "GASTLY"
               },
               {
-                "species": "HAUNTER"
+                "species": "CUBONE"
               },
               {
                 "species": "GASTLY"
               },
               {
-                "species": "HAUNTER"
+                "species": "CUBONE"
+              },
+              {
+                "species": "GASTLY"
+              },
+              {
+                "species": "CUBONE"
               }
             ]
           }
@@ -10137,44 +9967,34 @@
             "range": "ROUTE",
             "mons": [
               {
-                "species": "MAGIKARP",
-                "range": "ROUTE"
+                "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP",
-                "range": "ROUTE"
+                "species": "MAGIKARP"
               },
               {
-                "species": "POLIWAG",
-                "range": "ROUTE"
+                "species": "POLIWAG"
               },
               {
-                "species": "MAGIKARP",
-                "range": "ROUTE"
+                "species": "MAGIKARP"
               },
               {
-                "species": "GOLDEEN",
-                "range": "ROUTE"
+                "species": "GOLDEEN"
               },
               {
-                "species": "POLIWAG",
-                "range": "ROUTE"
+                "species": "POLIWAG"
               },
               {
-                "species": "POLIWHIRL",
-                "range": "ROUTE"
+                "species": "POLIWHIRL"
               },
               {
-                "species": "GYARADOS",
-                "range": "ROUTE"
+                "species": "GYARADOS"
               },
               {
-                "species": "PSYDUCK",
-                "range": "ROUTE"
+                "species": "PSYDUCK"
               },
               {
-                "species": "PSYDUCK",
-                "range": "ROUTE"
+                "species": "PSYDUCK"
               }
             ]
           }
@@ -10204,44 +10024,34 @@
             "range": "ROUTE",
             "mons": [
               {
-                "species": "MAGIKARP",
-                "range": "ROUTE"
+                "species": "MAGIKARP"
               },
               {
-                "species": "MAGIKARP",
-                "range": "ROUTE"
+                "species": "MAGIKARP"
               },
               {
-                "species": "HORSEA",
-                "range": "ROUTE"
+                "species": "HORSEA"
               },
               {
-                "species": "MAGIKARP",
-                "range": "ROUTE"
+                "species": "MAGIKARP"
               },
               {
-                "species": "HORSEA",
-                "range": "ROUTE"
+                "species": "HORSEA"
               },
               {
-                "species": "HORSEA",
-                "range": "ROUTE"
+                "species": "HORSEA"
               },
               {
-                "species": "SHELLDER",
-                "range": "ROUTE"
+                "species": "SHELLDER"
               },
               {
-                "species": "GYARADOS",
-                "range": "ROUTE"
+                "species": "GYARADOS"
               },
               {
-                "species": "SEADRA",
-                "range": "ROUTE"
+                "species": "SEADRA"
               },
               {
-                "species": "PSYDUCK",
-                "range": "ROUTE"
+                "species": "PSYDUCK"
               }
             ]
           }

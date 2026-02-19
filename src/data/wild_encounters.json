@@ -6093,7 +6093,7 @@
                 "species": "TENTACOOL"
               },
               {
-                "species": "TENTACRUEL"
+                "species": "TENTACOOL"
               }
             ]
           },
@@ -6231,7 +6231,7 @@
                 "species": "TENTACOOL"
               },
               {
-                "species": "TENTACRUEL"
+                "species": "TENTACOOL"
               }
             ]
           },
@@ -6277,7 +6277,7 @@
                 "species": "TENTACOOL"
               },
               {
-                "species": "TENTACRUEL"
+                "species": "TENTACOOL"
               }
             ]
           },
@@ -6403,7 +6403,7 @@
           "base_label": "sCinnabarIsland_FireRed",
           "water_mons": {
             "encounter_rate": 1,
-            "range": "ROUTE",
+            "range": "CINNABAR_ISLAND",
             "mons": [
               {
                 "species": "TENTACOOL"
@@ -6420,7 +6420,7 @@
             ]
           },
           "fishing_mons": {
-            "range": "ROUTE",
+            "range": "CINNABAR_ISLAND",
             "mons": [
               {
                 "species": "MAGIKARP"
@@ -6432,16 +6432,10 @@
                 "species": "KRABBY"
               },
               {
-                "species": "HORSEA"
-              },
-              {
-                "species": "SHELLDER"
-              },
-              {
                 "species": "SEADRA"
               },
               {
-                "species": "PSYDUCK"
+                "species": "KINGLER"
               }
             ]
           }
@@ -6491,7 +6485,7 @@
           "base_label": "sRoute2_FireRed",
           "land_mons": {
             "encounter_rate": 21,
-            "range": "ROUTE",
+            "range": "ROUTE_2",
             "mons": [
               {
                 "species": "RATTATA"
@@ -6625,7 +6619,7 @@
                 "species": "TENTACOOL"
               },
               {
-                "species": "TENTACRUEL"
+                "species": "TENTACOOL"
               }
             ]
           },
@@ -6949,7 +6943,7 @@
                 "species": "TENTACOOL"
               },
               {
-                "species": "TENTACRUEL"
+                "species": "TENTACOOL"
               }
             ]
           },
@@ -7031,7 +7025,7 @@
                 "species": "TENTACOOL"
               },
               {
-                "species": "TENTACRUEL"
+                "species": "TENTACOOL"
               }
             ]
           },
@@ -7113,7 +7107,7 @@
                 "species": "TENTACOOL"
               },
               {
-                "species": "TENTACRUEL"
+                "species": "TENTACOOL"
               }
             ]
           },
@@ -7195,7 +7189,7 @@
                 "species": "TENTACOOL"
               },
               {
-                "species": "TENTACRUEL"
+                "species": "TENTACOOL"
               }
             ]
           },
@@ -7441,12 +7435,12 @@
                 "species": "TENTACOOL"
               },
               {
-                "species": "TENTACRUEL"
+                "species": "TENTACOOL"
               }
             ]
           },
           "fishing_mons": {
-            "range": "ROUTE",
+            "range": "SURF_FRLG",
             "mons": [
               {
                 "species": "MAGIKARP"
@@ -7458,16 +7452,10 @@
                 "species": "KRABBY"
               },
               {
-                "species": "HORSEA"
-              },
-              {
-                "species": "HORSEA"
-              },
-              {
                 "species": "SEADRA"
               },
               {
-                "species": "PSYDUCK"
+                "species": "KINGLER"
               }
             ]
           }
@@ -7477,7 +7465,7 @@
           "base_label": "sRoute20_FireRed",
           "water_mons": {
             "encounter_rate": 2,
-            "range": "ROUTE",
+            "range": "SURF_FRLG",
             "mons": [
               {
                 "species": "TENTACOOL"
@@ -7489,12 +7477,12 @@
                 "species": "TENTACOOL"
               },
               {
-                "species": "TENTACRUEL"
+                "species": "TENTACOOL"
               }
             ]
           },
           "fishing_mons": {
-            "range": "ROUTE",
+            "range": "SURF_FRLG",
             "mons": [
               {
                 "species": "MAGIKARP"
@@ -7506,16 +7494,10 @@
                 "species": "KRABBY"
               },
               {
-                "species": "HORSEA"
-              },
-              {
-                "species": "HORSEA"
-              },
-              {
                 "species": "SEADRA"
               },
               {
-                "species": "PSYDUCK"
+                "species": "KINGLER"
               }
             ]
           }
@@ -7525,14 +7507,8 @@
           "base_label": "sRoute21North_FireRed",
           "land_mons": {
             "encounter_rate": 14,
-            "range": "ROUTE",
+            "range": "SURF_FRLG",
             "mons": [
-              {
-                "species": "TANGELA"
-              },
-              {
-                "species": "TANGELA"
-              },
               {
                 "species": "TANGELA"
               },
@@ -7579,12 +7555,12 @@
                 "species": "TENTACOOL"
               },
               {
-                "species": "TENTACRUEL"
+                "species": "TENTACOOL"
               }
             ]
           },
           "fishing_mons": {
-            "range": "ROUTE",
+            "range": "SURF_FRLG",
             "mons": [
               {
                 "species": "MAGIKARP"
@@ -7596,16 +7572,10 @@
                 "species": "KRABBY"
               },
               {
-                "species": "HORSEA"
-              },
-              {
-                "species": "HORSEA"
-              },
-              {
                 "species": "SEADRA"
               },
               {
-                "species": "PSYDUCK"
+                "species": "KINGLER"
               }
             ]
           }
@@ -7615,14 +7585,8 @@
           "base_label": "sRoute21South_FireRed",
           "land_mons": {
             "encounter_rate": 14,
-            "range": "ROUTE",
+            "range": "SURF_FRLG",
             "mons": [
-              {
-                "species": "TANGELA"
-              },
-              {
-                "species": "TANGELA"
-              },
               {
                 "species": "TANGELA"
               },
@@ -7669,12 +7633,12 @@
                 "species": "TENTACOOL"
               },
               {
-                "species": "TENTACRUEL"
+                "species": "TENTACOOL"
               }
             ]
           },
           "fishing_mons": {
-            "range": "ROUTE",
+            "range": "SURF_FRLG",
             "mons": [
               {
                 "species": "MAGIKARP"
@@ -7686,16 +7650,10 @@
                 "species": "KRABBY"
               },
               {
-                "species": "HORSEA"
-              },
-              {
-                "species": "HORSEA"
-              },
-              {
                 "species": "SEADRA"
               },
               {
-                "species": "PSYDUCK"
+                "species": "KINGLER"
               }
             ]
           }
@@ -7758,28 +7716,26 @@
             ]
           },
           "fishing_mons": {
-            "range": "ROUTE",
             "mons": [
               {
+                "range": "OLD_ROD_FRLG",
                 "species": "MAGIKARP"
               },
               {
+                "range": "GOOD_ROD_FRLG",
                 "species": "POLIWAG"
               },
               {
+                "range": "GOOD_ROD_FRLG",
                 "species": "GOLDEEN"
               },
               {
-                "species": "POLIWAG"
-              },
-              {
+                "range": "SUPER_ROD_FRLG",
                 "species": "POLIWHIRL"
               },
               {
-                "species": "PSYDUCK"
-              },
-              {
-                "species": "PSYDUCK"
+                "range": "SUPER_ROD_FRLG",
+                "species": "SEAKING"
               }
             ]
           }
@@ -7789,13 +7745,13 @@
           "base_label": "sRoute23_FireRed",
           "land_mons": {
             "encounter_rate": 21,
-            "range": "ROUTE",
+            "range": "ROUTE_23",
             "mons": [
               {
-                "species": "MANKEY"
+                "species": "ARBOK"
               },
               {
-                "species": "FEAROW"
+                "species": "SANDSLASH"
               },
               {
                 "species": "MANKEY"
@@ -7831,7 +7787,7 @@
           },
           "water_mons": {
             "encounter_rate": 2,
-            "range": "ROUTE",
+            "range": "SURF_FRLG",
             "mons": [
               {
                 "species": "PSYDUCK"
@@ -7848,7 +7804,7 @@
             ]
           },
           "fishing_mons": {
-            "range": "ROUTE",
+            "range": "SURF_FRLG",
             "mons": [
               {
                 "species": "MAGIKARP"
@@ -7857,19 +7813,13 @@
                 "species": "POLIWAG"
               },
               {
-                "species": "GOLDEEN"
-              },
-              {
-                "species": "POLIWAG"
+                "species": "DRATINI"
               },
               {
                 "species": "POLIWHIRL"
               },
               {
-                "species": "PSYDUCK"
-              },
-              {
-                "species": "PSYDUCK"
+                "species": "DRAGONAIR"
               }
             ]
           }
@@ -7879,7 +7829,7 @@
           "base_label": "sRoute24_FireRed",
           "land_mons": {
             "encounter_rate": 21,
-            "range": "ROUTE",
+            "range": "ROUTE_24",
             "mons": [
               {
                 "species": "ODDISH"
@@ -7927,7 +7877,7 @@
                 "species": "TENTACOOL"
               },
               {
-                "species": "TENTACRUEL"
+                "species": "TENTACOOL"
               }
             ]
           },
@@ -7961,7 +7911,7 @@
           "base_label": "sRoute25_FireRed",
           "land_mons": {
             "encounter_rate": 21,
-            "range": "ROUTE",
+            "range": "ROUTE_25",
             "mons": [
               {
                 "species": "ODDISH"
@@ -8043,7 +7993,6 @@
           "base_label": "sViridianForest_FireRed",
           "land_mons": {
             "encounter_rate": 14,
-            "range": "ROUTE",
             "mons": [
               {
                 "range": "VIRIDIAN_FOREST",
@@ -8231,7 +8180,7 @@
                 "species": "TENTACOOL"
               },
               {
-                "species": "TENTACRUEL"
+                "species": "TENTACOOL"
               }
             ]
           },
@@ -8314,13 +8263,13 @@
             "range": "ROCK_TUNNEL",
             "mons": [
               {
-                "species": "ZUBAT"
-              },
-              {
                 "species": "GEODUDE"
               },
               {
-                "species": "MANKEY"
+                "species": "RHYHORN"
+              },
+              {
+                "species": "MACHOP"
               },
               {
                 "species": "MACHOP"
@@ -8329,19 +8278,19 @@
                 "species": "MANKEY"
               },
               {
-                "species": "MACHOP"
+                "species": "ONIX"
+              },
+              {
+                "species": "MANKEY"
               },
               {
                 "species": "ONIX"
               },
               {
-                "species": "ONIX"
+                "species": "ZUBAT"
               },
               {
-                "species": "ONIX"
-              },
-              {
-                "species": "ONIX"
+                "species": "ZUBAT"
               }
             ]
           }
@@ -8354,13 +8303,13 @@
             "range": "ROCK_TUNNEL",
             "mons": [
               {
-                "species": "ZUBAT"
-              },
-              {
                 "species": "GEODUDE"
               },
               {
-                "species": "MANKEY"
+                "species": "RHYHORN"
+              },
+              {
+                "species": "MACHOP"
               },
               {
                 "species": "MACHOP"
@@ -8369,19 +8318,19 @@
                 "species": "MANKEY"
               },
               {
-                "species": "MACHOP"
+                "species": "ONIX"
+              },
+              {
+                "species": "MANKEY"
               },
               {
                 "species": "ONIX"
               },
               {
-                "species": "ONIX"
+                "species": "ZUBAT"
               },
               {
-                "species": "ONIX"
-              },
-              {
-                "species": "ONIX"
+                "species": "ZUBAT"
               }
             ]
           }
@@ -8987,7 +8936,7 @@
           "base_label": "sPowerPlant_FireRed",
           "land_mons": {
             "encounter_rate": 7,
-            "range": "ROUTE",
+            "range": "SURF_FRLG",
             "mons": [
               {
                 "species": "VOLTORB"
@@ -8996,24 +8945,6 @@
                 "species": "MAGNEMITE"
               },
               {
-                "species": "VOLTORB"
-              },
-              {
-                "species": "MAGNEMITE"
-              },
-              {
-                "species": "PICHU"
-              },
-              {
-                "species": "PICHU"
-              },
-              {
-                "species": "MAGNETON"
-              },
-              {
-                "species": "MAGNETON"
-              },
-              {
                 "species": "PICHU"
               },
               {
@@ -9024,6 +8955,18 @@
               },
               {
                 "species": "ELEKID"
+              },
+              {
+                "species": "PORYGON"
+              },
+              {
+                "species": "PORYGON"
+              },
+              {
+                "species": "PORYGON"
+              },
+              {
+                "species": "PORYGON"
               }
             ]
           }
@@ -9033,43 +8976,37 @@
           "base_label": "sSeafoamIslands1F_FireRed",
           "land_mons": {
             "encounter_rate": 7,
-            "range": "ROUTE",
+            "range": "SEAFOAM_ISLANDS",
             "mons": [
               {
-                "species": "PSYDUCK"
+                "species": "SEEL"
               },
               {
-                "species": "PSYDUCK"
+                "species": "SMOOCHUM"
               },
               {
-                "species": "PSYDUCK"
+                "species": "VULPIX_ALOLA"
               },
               {
-                "species": "ZUBAT"
+                "species": "SANDSHREW_ALOLA"
               },
               {
-                "species": "ZUBAT"
+                "species": "VULPIX_ALOLA"
               },
               {
-                "species": "ZUBAT"
+                "species": "SANDSHREW_ALOLA"
               },
               {
-                "species": "GOLBAT"
+                "species": "SHELLDER"
               },
               {
-                "species": "GOLBAT"
-              },
-              {
-                "species": "PSYDUCK"
+                "species": "SHELLDER"
               },
               {
                 "species": "ZUBAT"
               },
               {
-                "species": "PSYDUCK"
-              },
-              {
-                "species": "GOLBAT"
+                "species": "ZUBAT"
               }
             ]
           }
@@ -9079,43 +9016,37 @@
           "base_label": "sSeafoamIslandsB1F_FireRed",
           "land_mons": {
             "encounter_rate": 7,
-            "range": "ROUTE",
+            "range": "SEAFOAM_ISLANDS",
             "mons": [
-              {
-                "species": "PSYDUCK"
-              },
-              {
-                "species": "PSYDUCK"
-              },
               {
                 "species": "SEEL"
               },
               {
-                "species": "ZUBAT"
+                "species": "SMOOCHUM"
+              },
+              {
+                "species": "VULPIX_ALOLA"
+              },
+              {
+                "species": "SANDSHREW_ALOLA"
+              },
+              {
+                "species": "VULPIX_ALOLA"
+              },
+              {
+                "species": "SANDSHREW_ALOLA"
+              },
+              {
+                "species": "SHELLDER"
+              },
+              {
+                "species": "SHELLDER"
               },
               {
                 "species": "ZUBAT"
               },
               {
                 "species": "ZUBAT"
-              },
-              {
-                "species": "GOLBAT"
-              },
-              {
-                "species": "GOLBAT"
-              },
-              {
-                "species": "GOLDUCK"
-              },
-              {
-                "species": "ZUBAT"
-              },
-              {
-                "species": "GOLDUCK"
-              },
-              {
-                "species": "GOLBAT"
               }
             ]
           }
@@ -9125,43 +9056,37 @@
           "base_label": "sSeafoamIslandsB2F_FireRed",
           "land_mons": {
             "encounter_rate": 7,
-            "range": "ROUTE",
+            "range": "SEAFOAM_ISLANDS",
             "mons": [
               {
-                "species": "PSYDUCK"
-              },
-              {
-                "species": "PSYDUCK"
-              },
-              {
                 "species": "SEEL"
               },
               {
-                "species": "SEEL"
+                "species": "SMOOCHUM"
+              },
+              {
+                "species": "VULPIX_ALOLA"
+              },
+              {
+                "species": "SANDSHREW_ALOLA"
+              },
+              {
+                "species": "VULPIX_ALOLA"
+              },
+              {
+                "species": "SANDSHREW_ALOLA"
+              },
+              {
+                "species": "SHELLDER"
+              },
+              {
+                "species": "SHELLDER"
               },
               {
                 "species": "ZUBAT"
               },
               {
                 "species": "ZUBAT"
-              },
-              {
-                "species": "GOLBAT"
-              },
-              {
-                "species": "GOLDUCK"
-              },
-              {
-                "species": "GOLDUCK"
-              },
-              {
-                "species": "GOLBAT"
-              },
-              {
-                "species": "GOLDUCK"
-              },
-              {
-                "species": "GOLBAT"
               }
             ]
           }
@@ -9171,87 +9096,75 @@
           "base_label": "sSeafoamIslandsB3F_FireRed",
           "land_mons": {
             "encounter_rate": 7,
-            "range": "ROUTE",
+            "range": "SEAFOAM_ISLANDS",
             "mons": [
               {
                 "species": "SEEL"
               },
               {
-                "species": "SEEL"
+                "species": "SMOOCHUM"
               },
               {
-                "species": "PSYDUCK"
+                "species": "VULPIX_ALOLA"
               },
               {
-                "species": "PSYDUCK"
+                "species": "SANDSHREW_ALOLA"
               },
               {
-                "species": "GOLDUCK"
+                "species": "VULPIX_ALOLA"
+              },
+              {
+                "species": "SANDSHREW_ALOLA"
+              },
+              {
+                "species": "SHELLDER"
+              },
+              {
+                "species": "SHELLDER"
               },
               {
                 "species": "ZUBAT"
               },
               {
-                "species": "GOLBAT"
-              },
-              {
-                "species": "GOLDUCK"
-              },
-              {
-                "species": "DEWGONG"
-              },
-              {
-                "species": "GOLBAT"
-              },
-              {
-                "species": "DEWGONG"
-              },
-              {
-                "species": "GOLBAT"
+                "species": "ZUBAT"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": 2,
-            "range": "ROUTE",
+            "range": "SEAFOAM_ISLANDS",
             "mons": [
               {
                 "species": "SEEL"
               },
               {
-                "species": "HORSEA"
+                "species": "SHELLDER"
               },
               {
-                "species": "KRABBY"
+                "species": "SHELLDER"
               },
               {
-                "species": "KRABBY"
+                "species": "LAPRAS"
               }
             ]
           },
           "fishing_mons": {
-            "range": "ROUTE",
+            "range": "SEAFOAM_ISLANDS",
             "mons": [
               {
                 "species": "MAGIKARP"
               },
               {
-                "species": "HORSEA"
+                "species": "SHELLDER"
               },
               {
-                "species": "KRABBY"
+                "species": "STARYU"
               },
               {
-                "species": "HORSEA"
+                "species": "CLOYSTER"
               },
               {
-                "species": "HORSEA"
-              },
-              {
-                "species": "PSYDUCK"
-              },
-              {
-                "species": "GYARADOS"
+                "species": "STARMIE"
               }
             ]
           }
@@ -9261,87 +9174,75 @@
           "base_label": "sSeafoamIslandsB4F_FireRed",
           "land_mons": {
             "encounter_rate": 7,
-            "range": "ROUTE",
+            "range": "SEAFOAM_ISLANDS",
             "mons": [
               {
                 "species": "SEEL"
               },
               {
-                "species": "SEEL"
+                "species": "SMOOCHUM"
               },
               {
-                "species": "PSYDUCK"
+                "species": "VULPIX_ALOLA"
               },
               {
-                "species": "SEEL"
+                "species": "SANDSHREW_ALOLA"
               },
               {
-                "species": "GOLDUCK"
+                "species": "VULPIX_ALOLA"
               },
               {
-                "species": "GOLBAT"
+                "species": "SANDSHREW_ALOLA"
               },
               {
-                "species": "DEWGONG"
+                "species": "SHELLDER"
               },
               {
-                "species": "GOLDUCK"
+                "species": "SHELLDER"
               },
               {
-                "species": "DEWGONG"
+                "species": "ZUBAT"
               },
               {
-                "species": "GOLBAT"
-              },
-              {
-                "species": "DEWGONG"
-              },
-              {
-                "species": "GOLBAT"
+                "species": "ZUBAT"
               }
             ]
           },
           "water_mons": {
             "encounter_rate": 2,
-            "range": "ROUTE",
+            "range": "SEAFOAM_ISLANDS",
             "mons": [
               {
                 "species": "SEEL"
               },
               {
-                "species": "HORSEA"
+                "species": "SHELLDER"
               },
               {
-                "species": "KRABBY"
+                "species": "SHELLDER"
               },
               {
-                "species": "KRABBY"
+                "species": "LAPRAS"
               }
             ]
           },
           "fishing_mons": {
-            "range": "ROUTE",
+            "range": "SEAFOAM_ISLANDS",
             "mons": [
               {
                 "species": "MAGIKARP"
               },
               {
-                "species": "HORSEA"
+                "species": "SHELLDER"
               },
               {
-                "species": "KRABBY"
+                "species": "STARYU"
               },
               {
-                "species": "HORSEA"
+                "species": "CLOYSTER"
               },
               {
-                "species": "HORSEA"
-              },
-              {
-                "species": "PSYDUCK"
-              },
-              {
-                "species": "GYARADOS"
+                "species": "STARMIE"
               }
             ]
           }
@@ -9351,43 +9252,37 @@
           "base_label": "sPokemonMansion1F_FireRed",
           "land_mons": {
             "encounter_rate": 7,
-            "range": "ROUTE",
+            "range": "POKEMON_MANSION",
             "mons": [
               {
                 "species": "KOFFING"
               },
               {
-                "species": "RATICATE"
+                "species": "GRIMER"
               },
               {
-                "species": "KOFFING"
+                "species": "MAGBY"
               },
               {
-                "species": "RATICATE"
+                "species": "MAGBY"
               },
               {
                 "species": "GROWLITHE"
               },
               {
-                "species": "RATTATA"
+                "species": "VULPIX"
               },
               {
-                "species": "GRIMER"
+                "species": "RATICATE"
+              },
+              {
+                "species": "RATICATE"
               },
               {
                 "species": "WEEZING"
               },
               {
-                "species": "GROWLITHE"
-              },
-              {
-                "species": "RATTATA"
-              },
-              {
-                "species": "GROWLITHE"
-              },
-              {
-                "species": "RATTATA"
+                "species": "MUK"
               }
             ]
           }
@@ -9397,43 +9292,37 @@
           "base_label": "sPokemonMansion2F_FireRed",
           "land_mons": {
             "encounter_rate": 7,
-            "range": "ROUTE",
+            "range": "POKEMON_MANSION",
             "mons": [
               {
                 "species": "KOFFING"
               },
               {
-                "species": "RATICATE"
+                "species": "GRIMER"
               },
               {
-                "species": "KOFFING"
+                "species": "MAGBY"
               },
               {
-                "species": "RATICATE"
+                "species": "MAGBY"
               },
               {
                 "species": "GROWLITHE"
               },
               {
-                "species": "RATTATA"
+                "species": "VULPIX"
               },
               {
-                "species": "GRIMER"
+                "species": "RATICATE"
+              },
+              {
+                "species": "RATICATE"
               },
               {
                 "species": "WEEZING"
               },
               {
-                "species": "GROWLITHE"
-              },
-              {
-                "species": "RATTATA"
-              },
-              {
-                "species": "GROWLITHE"
-              },
-              {
-                "species": "RATTATA"
+                "species": "MUK"
               }
             ]
           }
@@ -9443,43 +9332,37 @@
           "base_label": "sPokemonMansion3F_FireRed",
           "land_mons": {
             "encounter_rate": 7,
-            "range": "ROUTE",
+            "range": "POKEMON_MANSION",
             "mons": [
               {
                 "species": "KOFFING"
               },
               {
-                "species": "RATICATE"
+                "species": "GRIMER"
               },
               {
-                "species": "KOFFING"
+                "species": "MAGBY"
               },
               {
-                "species": "RATICATE"
+                "species": "MAGBY"
               },
               {
                 "species": "GROWLITHE"
               },
               {
-                "species": "RATTATA"
+                "species": "VULPIX"
               },
               {
-                "species": "GRIMER"
+                "species": "RATICATE"
+              },
+              {
+                "species": "RATICATE"
               },
               {
                 "species": "WEEZING"
               },
               {
-                "species": "GROWLITHE"
-              },
-              {
-                "species": "RATTATA"
-              },
-              {
-                "species": "GROWLITHE"
-              },
-              {
-                "species": "RATTATA"
+                "species": "MUK"
               }
             ]
           }
@@ -9489,43 +9372,37 @@
           "base_label": "sPokemonMansionB1F_FireRed",
           "land_mons": {
             "encounter_rate": 5,
-            "range": "ROUTE",
+            "range": "POKEMON_MANSION",
             "mons": [
               {
                 "species": "KOFFING"
               },
               {
-                "species": "RATICATE"
+                "species": "GRIMER"
               },
               {
-                "species": "KOFFING"
+                "species": "MAGBY"
               },
               {
                 "species": "DITTO"
               },
               {
-                "species": "GROWLITHE"
+                "species": "MAGBY"
+              },
+              {
+                "species": "DITTO"
+              },
+              {
+                "species": "CHANSEY"
+              },
+              {
+                "species": "CHANSEY"
               },
               {
                 "species": "RATICATE"
               },
               {
-                "species": "GRIMER"
-              },
-              {
-                "species": "WEEZING"
-              },
-              {
-                "species": "GROWLITHE"
-              },
-              {
-                "species": "RATTATA"
-              },
-              {
-                "species": "GROWLITHE"
-              },
-              {
-                "species": "RATTATA"
+                "species": "RATICATE"
               }
             ]
           }
@@ -9535,7 +9412,7 @@
           "base_label": "sVictoryRoad1F_FireRed",
           "land_mons": {
             "encounter_rate": 7,
-            "range": "ROUTE",
+            "range": "VICTORY_ROAD_FRLG",
             "mons": [
               {
                 "species": "MACHOP"
@@ -9553,7 +9430,7 @@
                 "species": "ONIX"
               },
               {
-                "species": "ZUBAT"
+                "species": "RHYHORN"
               },
               {
                 "species": "ARBOK"
@@ -9581,7 +9458,7 @@
           "base_label": "sVictoryRoad2F_FireRed",
           "land_mons": {
             "encounter_rate": 7,
-            "range": "ROUTE",
+            "range": "VICTORY_ROAD_FRLG",
             "mons": [
               {
                 "species": "MACHOP"
@@ -9627,7 +9504,7 @@
           "base_label": "sVictoryRoad3F_FireRed",
           "land_mons": {
             "encounter_rate": 7,
-            "range": "ROUTE",
+            "range": "VICTORY_ROAD_FRLG",
             "mons": [
               {
                 "species": "MACHOP"
@@ -9673,7 +9550,7 @@
           "base_label": "sCeruleanCave1F_FireRed",
           "land_mons": {
             "encounter_rate": 7,
-            "range": "ROUTE",
+            "range": "POSTGAME_FRLG",
             "mons": [
               {
                 "species": "MAGNETON"
@@ -9691,7 +9568,7 @@
                 "species": "PRIMEAPE"
               },
               {
-                "species": "DITTO"
+                "species": "SNORLAX"
               },
               {
                 "species": "ELECTRODE"
@@ -9706,10 +9583,10 @@
                 "species": "WOBBUFFET"
               },
               {
-                "species": "PRIMEAPE"
+                "species": "RHYDON"
               },
               {
-                "species": "DITTO"
+                "species": "LICKITUNG"
               }
             ]
           },
@@ -9899,7 +9776,7 @@
           "base_label": "sOneIsland_FireRed",
           "water_mons": {
             "encounter_rate": 1,
-            "range": "ROUTE",
+            "range": "ONE_ISLAND",
             "mons": [
               {
                 "species": "TENTACOOL"
@@ -9916,7 +9793,7 @@
             ]
           },
           "fishing_mons": {
-            "range": "ROUTE",
+            "range": "ONE_ISLAND",
             "mons": [
               {
                 "species": "MAGIKARP"

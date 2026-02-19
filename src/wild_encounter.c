@@ -135,19 +135,17 @@ EWRAM_DATA u8 gChainFishingDexNavStreak = 0;
 #define RANGE_ROUTE_22         3, 5
 #define RANGE_ROUTE_2          4, 5
 #define RANGE_VIRIDIAN_FOREST  5, 6
-#define RANGE_VIRIDIAN_FOREST_ COCOON 7, 7
+#define RANGE_VIRIDIAN_FOREST_COCOON 7, 7
 #define RANGE_PEWTER_CITY      7, 7
 #define RANGE_ROUTE_3          10, 12
 #define RANGE_MT_MOON          12, 14
 #define RANGE_ROUTE_4          14, 16
-#define RANGE_ROUTE_24_25      16, 18
-#define RANGE_ROUTE_24         RANGE_ROUTE_24_25
-#define RANGE_ROUTE_25         RANGE_ROUTE_24_25
-#define RANGE_ROUTE_5_6        17, 19
-#define RANGE_ROUTE_5          RANGE_ROUTE_5_6
-#define RANGE_ROUTE_6          RANGE_ROUTE_5_6
+#define RANGE_ROUTE_24         15, 17
+#define RANGE_ROUTE_25         16, 18
+#define RANGE_ROUTE_5          17, 19
+#define RANGE_ROUTE_6          18, 20
 #define RANGE_OLD_ROD_FRLG     15, 20
-#define RANGE_ROUTE_11         18, 20
+#define RANGE_ROUTE_11         19, 21
 #define RANGE_DIGLETTS_CAVE    20, 22
 #define RANGE_ROUTE_9          21, 23
 #define RANGE_ROUTE_10         22, 24
@@ -168,9 +166,15 @@ EWRAM_DATA u8 gChainFishingDexNavStreak = 0;
 #define RANGE_ROUTE_18         36, 38
 #define RANGE_ROUTE_17         38, 40
 #define RANGE_SAFARI_ZONE_FRLG 39, 41
-#define RANGE_SURF_FRLG        40, 45
+#define RANGE_SURF_FRLG        40, 42
 //End of Fuchsia block
-#define RANGE_ROUTE_19         42, 44
+#define RANGE_SEAFOAM_ISLANDS  41, 43
+#define RANGE_CINNABAR_ISLAND  42, 44
+#define RANGE_POKEMON_MANSION  43, 45
+#define RANGE_ONE_ISLAND       44, 46
+
+#define RANGE_ROUTE_23          1, 1
+#define ROUTE_VICTORY_ROAD_FRLG 1, 1
 
 #define RANGE_POSTGAME_FRLG    POSTGAME_LEVEL_FRLG, POSTGAME_LEVEL_FRLG
 

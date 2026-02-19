@@ -981,6 +981,7 @@ upcoming
 - Celadon:
     - Have Hideout only available after Erika?
     - Update Game Corner
+    - Move Mega Stones to a later mart?
 - Lavender:
     - Change ghost to be Alolan Marowak?
 - Route 12/16:
@@ -992,6 +993,8 @@ upcoming
 - Fuchsia:
     - Change Badge flag for Surf if swapped with Saffron
     - Change Trainer card Badge order
+- Saffron:
+    - Replace Hitmonlee/Hitmonchan with Attack/Defense based Tyrogues? Or just one Tyrogue
 - Safari Zone:
     - Go back and edit encounters
 - Seven Island
@@ -1082,7 +1085,6 @@ upcoming
 
 ### Trainers
 - Rearrange opponents_frlg.h
-- Move TRAINER_CLASS_INFO defines out of if statement? That way, any game can have any class/pic?
 - Gym rematches:
     - Figure out how to get them to work
     - Figure out whether to evolve Brock's Onix or keep it as is and use Eviolite

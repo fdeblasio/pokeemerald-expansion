@@ -1499,7 +1499,7 @@
     - Learn Energy Ball by level up
 
 - Paras (not in Emerald):
-    - Larns Pounce, Trailblaze, Bug Bite, Lunge, Seed Bomb, and Leech Life by level up
+    - Learns Pounce, Trailblaze, Bug Bite, Lunge, Seed Bomb, and Leech Life by level up
 
 - Parasect (not in Emerald):
     - HP: 60->70
@@ -1510,7 +1510,7 @@
         - Tiny Mushroom: 50%->0%
         - Big Mushroom: 5%->50%
         - Balm Mushroom: 0%->5%
-    - Larns Pounce, Trailblaze, Bug Bite, Lunge, Seed Bomb, and Leech Life by level up
+    - Learns Pounce, Trailblaze, Bug Bite, Lunge, Seed Bomb, and Leech Life by level up
 
 - Venonat (not in Emerald):
     - SpA: 40->55

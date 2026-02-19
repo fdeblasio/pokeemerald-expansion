@@ -21,6 +21,423 @@
     .trainerClass = TRAINER_CLASS_##class, \
     .trainerPic = TRAINER_PIC_FRONT_##class
 
+
+// Trainer defines
+#define YOUNGSTER_INFO            \
+    TRAINER_CLASS_PIC(YOUNGSTER), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
+
+#define BUG_CATCHER_INFO            \
+    TRAINER_CLASS_PIC(BUG_CATCHER), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
+
+#define LASS_INFO                    \
+    TRAINER_CLASS_PIC(LASS),         \
+    .gender = TRAINER_GENDER_FEMALE, \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
+
+#define FISHERMAN_INFO            \
+    TRAINER_CLASS_PIC(FISHERMAN), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER
+
+#define RICH_MON(Level) \
+    .lvl = Level,       \
+    .heldItem = Level < REMATCH_5_LEVEL_6 ? ITEM_NUGGET : ITEM_BIG_NUGGET
+
+#define RICH_BOY_INFO                                      \
+    TRAINER_CLASS_PIC(RICH_BOY),                           \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,        \
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE}
+
+#define RICH_BOY_MON(Level) \
+    RICH_MON(Level),        \
+    .isShiny = TRUE
+
+#define LADY_INFO                                     \
+    TRAINER_CLASS_PIC(LADY),                          \
+    .gender = TRAINER_GENDER_FEMALE,                  \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE, \
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE}
+
+#define TWINS_INFO                                   \
+    TRAINER_CLASS_PIC(TWINS),                        \
+    .gender = TRAINER_GENDER_FEMALE,                 \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS, \
+    .battleType = TRAINER_BATTLE_TYPE_DOUBLES
+
+#define HIKER_INFO            \
+    TRAINER_CLASS_PIC(HIKER), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER
+
+#define SCHOOLKID_M_INFO                          \
+    .trainerClass = TRAINER_CLASS_SCHOOLKID,      \
+    .trainerPic = TRAINER_PIC_FRONT_SCHOOL_KID_M, \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
+
+#define SCHOOLKID_F_INFO                          \
+    .trainerClass = TRAINER_CLASS_SCHOOLKID,      \
+    .trainerPic = TRAINER_PIC_FRONT_SCHOOL_KID_F, \
+    .gender = TRAINER_GENDER_FEMALE,              \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL
+
+#define SAILOR_INFO            \
+    TRAINER_CLASS_PIC(SAILOR), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
+
+#define TUBER_F_INFO                         \
+    .trainerClass = TRAINER_CLASS_TUBER,     \
+    .trainerPic = TRAINER_PIC_FRONT_TUBER_F, \
+    .gender = TRAINER_GENDER_FEMALE,         \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL
+
+#define TUBER_M_INFO                         \
+    .trainerClass = TRAINER_CLASS_TUBER,     \
+    .trainerPic = TRAINER_PIC_FRONT_TUBER_M, \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL
+
+#define BEAUTY_INFO                  \
+    TRAINER_CLASS_PIC(BEAUTY),       \
+    .gender = TRAINER_GENDER_FEMALE, \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
+
+#define POKE_FAN_F_INFO                         \
+    .trainerClass = TRAINER_CLASS_POKE_FAN,     \
+    .trainerPic = TRAINER_PIC_FRONT_POKE_FAN_F, \
+    .gender = TRAINER_GENDER_FEMALE,            \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS
+
+#define POKE_FAN_M_INFO                         \
+    .trainerClass = TRAINER_CLASS_POKE_FAN,     \
+    .trainerPic = TRAINER_PIC_FRONT_POKE_FAN_M, \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS
+
+#define POKE_FAN_MON(Level) \
+    .lvl = Level,           \
+    .heldItem = Level < REMATCH_5_LEVEL_6 ? ITEM_ORAN_BERRY : ITEM_SITRUS_BERRY
+
+#define AROMA_LADY_INFO              \
+    TRAINER_CLASS_PIC(AROMA_LADY),   \
+    .gender = TRAINER_GENDER_FEMALE, \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
+
+#define GUITARIST_INFO            \
+    TRAINER_CLASS_PIC(GUITARIST), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE
+
+#define BLACK_BELT_INFO            \
+    TRAINER_CLASS_PIC(BLACK_BELT), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE
+
+#define COLLECTOR_INFO            \
+    TRAINER_CLASS_PIC(COLLECTOR), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
+
+#define PSYCHIC_M_INFO                         \
+    .trainerClass = TRAINER_CLASS_PSYCHIC,     \
+    .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M, \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE
+
+#define PSYCHIC_F_INFO                         \
+    .trainerClass = TRAINER_CLASS_PSYCHIC,     \
+    .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F, \
+    .gender = TRAINER_GENDER_FEMALE,           \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE
+
+#define TRIATHLETE_F_CYCLING_INFO                         \
+    .trainerClass = TRAINER_CLASS_TRIATHLETE,             \
+    .trainerPic = TRAINER_PIC_FRONT_CYCLING_TRIATHLETE_F, \
+    .gender = TRAINER_GENDER_FEMALE,                      \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
+
+#define TRIATHLETE_M_CYCLING_INFO                         \
+    .trainerClass = TRAINER_CLASS_TRIATHLETE,             \
+    .trainerPic = TRAINER_PIC_FRONT_CYCLING_TRIATHLETE_M, \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
+
+#define TRIATHLETE_F_RUNNING_INFO                         \
+    .trainerClass = TRAINER_CLASS_TRIATHLETE,             \
+    .trainerPic = TRAINER_PIC_FRONT_RUNNING_TRIATHLETE_F, \
+    .gender = TRAINER_GENDER_FEMALE,                      \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
+
+#define TRIATHLETE_M_RUNNING_INFO                         \
+    .trainerClass = TRAINER_CLASS_TRIATHLETE,             \
+    .trainerPic = TRAINER_PIC_FRONT_RUNNING_TRIATHLETE_M, \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
+
+#define TRIATHLETE_M_SWIMMING_INFO                         \
+    .trainerClass = TRAINER_CLASS_TRIATHLETE,              \
+    .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_M, \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER
+
+#define TRIATHLETE_F_SWIMMING_INFO                         \
+    .trainerClass = TRAINER_CLASS_TRIATHLETE,              \
+    .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_F, \
+    .gender = TRAINER_GENDER_FEMALE,                       \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER
+
+#define TRIATHLETE_MON(Level, IV)                                            \
+    .lvl = Level,                                                            \
+    .ev = TRAINER_PARTY_EVS(MAX_PER_STAT_EVS, 0, 0, MAX_PER_STAT_EVS, 0, 0), \
+    .iv = TRAINER_PARTY_IVS(MAX_PER_STAT_IVS, IV, IV, MAX_PER_STAT_IVS, IV, IV)
+
+#define POKEMON_BREEDER_M_INFO                         \
+    .trainerClass = TRAINER_CLASS_PKMN_BREEDER,        \
+    .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_M, \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,    \
+    .partySize = 6
+
+#define POKEMON_BREEDER_F_INFO                         \
+    .trainerClass = TRAINER_CLASS_PKMN_BREEDER,        \
+    .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_F, \
+    .gender = TRAINER_GENDER_FEMALE,                   \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,  \
+    .partySize = 6
+
+#define POKEMON_BREEDER_MON(Level) \
+    .lvl = Level,                  \
+    PERFECT_IVS
+
+#define TEAMMATES_INFO                               \
+    TRAINER_CLASS_PIC(TEAMMATES),                    \
+    .gender = TRAINER_GENDER_FEMALE,                 \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS, \
+    .battleType = TRAINER_BATTLE_TYPE_DOUBLES
+
+#define BUG_MANIAC_INFO            \
+    TRAINER_CLASS_PIC(BUG_MANIAC), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
+
+#define BATTLE_GIRL_INFO             \
+    TRAINER_CLASS_PIC(BATTLE_GIRL),  \
+    .gender = TRAINER_GENDER_FEMALE, \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE
+
+#define POKE_MANIAC_INFO            \
+    TRAINER_CLASS_PIC(POKE_MANIAC), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
+
+#define CAMPER_INFO            \
+    TRAINER_CLASS_PIC(CAMPER), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
+
+#define PICNICKER_INFO               \
+    TRAINER_CLASS_PIC(PICNICKER),    \
+    .gender = TRAINER_GENDER_FEMALE, \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL
+
+#define KINDLER_INFO            \
+    TRAINER_CLASS_PIC(KINDLER), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER
+
+#define ACE_TRAINER_M_INFO                         \
+    .trainerClass = TRAINER_CLASS_ACE_TRAINER,     \
+    .trainerPic = TRAINER_PIC_FRONT_ACE_TRAINER_M, \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL
+
+#define ACE_TRAINER_F_INFO                         \
+    .trainerClass = TRAINER_CLASS_ACE_TRAINER,     \
+    .trainerPic = TRAINER_PIC_FRONT_ACE_TRAINER_F, \
+    .gender = TRAINER_GENDER_FEMALE,               \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL
+
+#define NINJA_BOY_INFO            \
+    TRAINER_CLASS_PIC(NINJA_BOY), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
+
+#define PARASOL_LADY_INFO            \
+    TRAINER_CLASS_PIC(PARASOL_LADY), \
+    .gender = TRAINER_GENDER_FEMALE, \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
+
+#define BIRD_KEEPER_INFO            \
+    TRAINER_CLASS_PIC(BIRD_KEEPER), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL
+
+#define EXPERT_F_INFO                         \
+    .trainerClass = TRAINER_CLASS_EXPERT,     \
+    .trainerPic = TRAINER_PIC_FRONT_EXPERT_F, \
+    .gender = TRAINER_GENDER_FEMALE,          \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE
+
+#define EXPERT_M_INFO                         \
+    .trainerClass = TRAINER_CLASS_EXPERT,     \
+    .trainerPic = TRAINER_PIC_FRONT_EXPERT_M, \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE
+
+#define RUIN_MANIAC_INFO            \
+    TRAINER_CLASS_PIC(RUIN_MANIAC), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER
+
+#define SWIMMER_F_INFO                         \
+    .trainerClass = TRAINER_CLASS_SWIMMER,     \
+    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F, \
+    .gender = TRAINER_GENDER_FEMALE,           \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER
+
+#define SWIMMER_M_INFO                         \
+    .trainerClass = TRAINER_CLASS_SWIMMER,     \
+    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M, \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER
+
+#define SIS_AND_BRO_INFO                               \
+    TRAINER_CLASS_PIC(SIS_AND_BRO),                    \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER, \
+    .battleType = TRAINER_BATTLE_TYPE_DOUBLES
+
+#define YOUNG_COUPLE_INFO                           \
+    TRAINER_CLASS_PIC(YOUNG_COUPLE),                \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL, \
+    .battleType = TRAINER_BATTLE_TYPE_DOUBLES
+
+#define POKEMON_RANGER_F_INFO                         \
+    .trainerClass = TRAINER_CLASS_PKMN_RANGER,        \
+    .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_F, \
+    .gender = TRAINER_GENDER_FEMALE,                  \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,   \
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE}
+
+#define POKEMON_RANGER_M_INFO                         \
+    .trainerClass = TRAINER_CLASS_PKMN_RANGER,        \
+    .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_M, \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,   \
+    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE}
+
+#define HEX_MANIAC_INFO              \
+    TRAINER_CLASS_PIC(HEX_MANIAC),   \
+    .gender = TRAINER_GENDER_FEMALE, \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
+
+#define GENTLEMAN_INFO            \
+    TRAINER_CLASS_PIC(GENTLEMAN), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH
+
+#define OLD_COUPLE_INFO                                \
+    TRAINER_CLASS_PIC(OLD_COUPLE),                     \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE, \
+    .battleType = TRAINER_BATTLE_TYPE_DOUBLES
+
+#define DRAGON_TAMER_INFO            \
+    TRAINER_CLASS_PIC(DRAGON_TAMER), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE
+
+#define ROCKER_INFO                 \
+    TRAINER_CLASS_PIC(ROCKER_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
+
+#define COOL_COUPLE_INFO                 \
+    TRAINER_CLASS_PIC(COOL_COUPLE_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL
+
+#define BIKER_INFO                 \
+    TRAINER_CLASS_PIC(BIKER_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
+
+#define CUE_BALL_INFO                 \
+    TRAINER_CLASS_PIC(CUE_BALL_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
+
+#define SUPER_NERD_INFO                 \
+    TRAINER_CLASS_PIC(SUPER_NERD_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
+
+#define SCIENTIST_INFO                 \
+    TRAINER_CLASS_PIC(SCIENTIST_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
+
+#define ENGINEER_INFO                 \
+    TRAINER_CLASS_PIC(ENGINEER_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
+
+#define BURGLAR_INFO                 \
+    TRAINER_CLASS_PIC(BURGLAR_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
+
+#define CRUSH_KIN_INFO                 \
+    TRAINER_CLASS_PIC(CRUSH_KIN_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE
+
+#define JUGGLER_INFO                 \
+    TRAINER_CLASS_PIC(JUGGLER_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER
+
+#define GAMBLER_INFO                 \
+    TRAINER_CLASS_PIC(GAMER_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
+
+#define TAMER_INFO                 \
+    TRAINER_CLASS_PIC(TAMER_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER
+
+#define CHANNELER_INFO                 \
+    TRAINER_CLASS_PIC(CHANNELER_FRLG), \
+    .gender = TRAINER_GENDER_FEMALE,   \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
+
+#define PAINTER_INFO                 \
+    TRAINER_CLASS_PIC(PAINTER_FRLG), \
+    .gender = TRAINER_GENDER_FEMALE, \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
+
+#define YOUNGSTER_FRLG_INFO            \
+    TRAINER_CLASS_PIC(YOUNGSTER_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
+
+#define GENTLEMAN_FRLG_INFO            \
+    TRAINER_CLASS_PIC(GENTLEMAN_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH
+
+#define HIKER_FRLG_INFO                 \
+    TRAINER_CLASS_PIC(HIKER_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER
+
+#define BUG_CATCHER_FRLG_INFO            \
+    TRAINER_CLASS_PIC(BUG_CATCHER_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
+
+#define SAILOR_FRLG_INFO            \
+    TRAINER_CLASS_PIC(SAILOR_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
+
+#define CAMPER_FRLG_INFO            \
+    TRAINER_CLASS_PIC(CAMPER_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
+
+#define POKE_MANIAC_FRLG_INFO           \
+    TRAINER_CLASS_PIC(POKEMANIAC_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
+
+#define BLACK_BELT_FRLG_INFO            \
+    TRAINER_CLASS_PIC(BLACK_BELT_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE
+
+#define BIRD_KEEPER_FRLG_INFO            \
+    TRAINER_CLASS_PIC(BIRD_KEEPER_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL
+
+#define FISHERMAN_FRLG_INFO            \
+    TRAINER_CLASS_PIC(FISHERMAN_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER
+
+#define RUIN_MANIAC_FRLG_INFO            \
+    TRAINER_CLASS_PIC(RUIN_MANIAC_FRLG), \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER
+
+#define LASS_FRLG_INFO               \
+    TRAINER_CLASS_PIC(LASS_FRLG),    \
+    .gender = TRAINER_GENDER_FEMALE, \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
+
+#define BEAUTY_FRLG_INFO             \
+    TRAINER_CLASS_PIC(BEAUTY_FRLG),  \
+    .gender = TRAINER_GENDER_FEMALE, \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
+
+#define PICNICKER_FRLG_INFO            \
+    TRAINER_CLASS_PIC(PICNICKER_FRLG), \
+    .gender = TRAINER_GENDER_FEMALE,   \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL
+
 #if !IS_FRLG
 [DIFFICULTY_NORMAL][TRAINER_NONE] =
 {
@@ -3633,305 +4050,6 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
         }
     },
 },
-
-// Regular trainers
-#define YOUNGSTER_INFO            \
-    TRAINER_CLASS_PIC(YOUNGSTER), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
-
-#define BUG_CATCHER_INFO            \
-    TRAINER_CLASS_PIC(BUG_CATCHER), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
-
-#define LASS_INFO                    \
-    TRAINER_CLASS_PIC(LASS),         \
-    .gender = TRAINER_GENDER_FEMALE, \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
-
-#define FISHERMAN_INFO            \
-    TRAINER_CLASS_PIC(FISHERMAN), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER
-
-#define RICH_MON(Level) \
-    .lvl = Level,       \
-    .heldItem = Level < REMATCH_5_LEVEL_6 ? ITEM_NUGGET : ITEM_BIG_NUGGET
-
-#define RICH_BOY_INFO                                      \
-    TRAINER_CLASS_PIC(RICH_BOY),                           \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,        \
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE}
-
-#define RICH_BOY_MON(Level) \
-    RICH_MON(Level),        \
-    .isShiny = TRUE
-
-#define LADY_INFO                                     \
-    TRAINER_CLASS_PIC(LADY),                          \
-    .gender = TRAINER_GENDER_FEMALE,                  \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE, \
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE}
-
-#define TWINS_INFO                                   \
-    TRAINER_CLASS_PIC(TWINS),                        \
-    .gender = TRAINER_GENDER_FEMALE,                 \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS, \
-    .battleType = TRAINER_BATTLE_TYPE_DOUBLES
-
-#define HIKER_INFO            \
-    TRAINER_CLASS_PIC(HIKER), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER
-
-#define SCHOOLKID_M_INFO                          \
-    .trainerClass = TRAINER_CLASS_SCHOOLKID,      \
-    .trainerPic = TRAINER_PIC_FRONT_SCHOOL_KID_M, \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
-
-#define SCHOOLKID_F_INFO                          \
-    .trainerClass = TRAINER_CLASS_SCHOOLKID,      \
-    .trainerPic = TRAINER_PIC_FRONT_SCHOOL_KID_F, \
-    .gender = TRAINER_GENDER_FEMALE,              \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL
-
-#define SAILOR_INFO            \
-    TRAINER_CLASS_PIC(SAILOR), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
-
-#define TUBER_F_INFO                         \
-    .trainerClass = TRAINER_CLASS_TUBER,     \
-    .trainerPic = TRAINER_PIC_FRONT_TUBER_F, \
-    .gender = TRAINER_GENDER_FEMALE,         \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL
-
-#define TUBER_M_INFO                         \
-    .trainerClass = TRAINER_CLASS_TUBER,     \
-    .trainerPic = TRAINER_PIC_FRONT_TUBER_M, \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL
-
-#define BEAUTY_INFO                  \
-    TRAINER_CLASS_PIC(BEAUTY),       \
-    .gender = TRAINER_GENDER_FEMALE, \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
-
-#define POKE_FAN_F_INFO                         \
-    .trainerClass = TRAINER_CLASS_POKE_FAN,     \
-    .trainerPic = TRAINER_PIC_FRONT_POKE_FAN_F, \
-    .gender = TRAINER_GENDER_FEMALE,            \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS
-
-#define POKE_FAN_M_INFO                         \
-    .trainerClass = TRAINER_CLASS_POKE_FAN,     \
-    .trainerPic = TRAINER_PIC_FRONT_POKE_FAN_M, \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS
-
-#define POKE_FAN_MON(Level) \
-    .lvl = Level,           \
-    .heldItem = Level < REMATCH_5_LEVEL_6 ? ITEM_ORAN_BERRY : ITEM_SITRUS_BERRY
-
-#define AROMA_LADY_INFO              \
-    TRAINER_CLASS_PIC(AROMA_LADY),   \
-    .gender = TRAINER_GENDER_FEMALE, \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
-
-#define GUITARIST_INFO            \
-    TRAINER_CLASS_PIC(GUITARIST), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE
-
-#define BLACK_BELT_INFO            \
-    TRAINER_CLASS_PIC(BLACK_BELT), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE
-
-#define COLLECTOR_INFO            \
-    TRAINER_CLASS_PIC(COLLECTOR), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
-
-#define PSYCHIC_M_INFO                         \
-    .trainerClass = TRAINER_CLASS_PSYCHIC,     \
-    .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M, \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE
-
-#define PSYCHIC_F_INFO                         \
-    .trainerClass = TRAINER_CLASS_PSYCHIC,     \
-    .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F, \
-    .gender = TRAINER_GENDER_FEMALE,           \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE
-
-#define TRIATHLETE_F_CYCLING_INFO                         \
-    .trainerClass = TRAINER_CLASS_TRIATHLETE,             \
-    .trainerPic = TRAINER_PIC_FRONT_CYCLING_TRIATHLETE_F, \
-    .gender = TRAINER_GENDER_FEMALE,                      \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
-
-#define TRIATHLETE_M_CYCLING_INFO                         \
-    .trainerClass = TRAINER_CLASS_TRIATHLETE,             \
-    .trainerPic = TRAINER_PIC_FRONT_CYCLING_TRIATHLETE_M, \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
-
-#define TRIATHLETE_F_RUNNING_INFO                         \
-    .trainerClass = TRAINER_CLASS_TRIATHLETE,             \
-    .trainerPic = TRAINER_PIC_FRONT_RUNNING_TRIATHLETE_F, \
-    .gender = TRAINER_GENDER_FEMALE,                      \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
-
-#define TRIATHLETE_M_RUNNING_INFO                         \
-    .trainerClass = TRAINER_CLASS_TRIATHLETE,             \
-    .trainerPic = TRAINER_PIC_FRONT_RUNNING_TRIATHLETE_M, \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
-
-#define TRIATHLETE_M_SWIMMING_INFO                         \
-    .trainerClass = TRAINER_CLASS_TRIATHLETE,              \
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_M, \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER
-
-#define TRIATHLETE_F_SWIMMING_INFO                         \
-    .trainerClass = TRAINER_CLASS_TRIATHLETE,              \
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_F, \
-    .gender = TRAINER_GENDER_FEMALE,                       \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER
-
-#define TRIATHLETE_MON(Level, IV)                                            \
-    .lvl = Level,                                                            \
-    .ev = TRAINER_PARTY_EVS(MAX_PER_STAT_EVS, 0, 0, MAX_PER_STAT_EVS, 0, 0), \
-    .iv = TRAINER_PARTY_IVS(MAX_PER_STAT_IVS, IV, IV, MAX_PER_STAT_IVS, IV, IV)
-
-#define POKEMON_BREEDER_M_INFO                         \
-    .trainerClass = TRAINER_CLASS_PKMN_BREEDER,        \
-    .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_M, \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,    \
-    .partySize = 6
-
-#define POKEMON_BREEDER_F_INFO                         \
-    .trainerClass = TRAINER_CLASS_PKMN_BREEDER,        \
-    .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_F, \
-    .gender = TRAINER_GENDER_FEMALE,                   \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,  \
-    .partySize = 6
-
-#define POKEMON_BREEDER_MON(Level) \
-    .lvl = Level,                  \
-    PERFECT_IVS
-
-#define TEAMMATES_INFO                               \
-    TRAINER_CLASS_PIC(TEAMMATES),                    \
-    .gender = TRAINER_GENDER_FEMALE,                 \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS, \
-    .battleType = TRAINER_BATTLE_TYPE_DOUBLES
-
-#define BUG_MANIAC_INFO            \
-    TRAINER_CLASS_PIC(BUG_MANIAC), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
-
-#define BATTLE_GIRL_INFO             \
-    TRAINER_CLASS_PIC(BATTLE_GIRL),  \
-    .gender = TRAINER_GENDER_FEMALE, \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE
-
-#define POKE_MANIAC_INFO            \
-    TRAINER_CLASS_PIC(POKE_MANIAC), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
-
-#define CAMPER_INFO            \
-    TRAINER_CLASS_PIC(CAMPER), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
-
-#define PICNICKER_INFO               \
-    TRAINER_CLASS_PIC(PICNICKER),    \
-    .gender = TRAINER_GENDER_FEMALE, \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL
-
-#define KINDLER_INFO            \
-    TRAINER_CLASS_PIC(KINDLER), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER
-
-#define ACE_TRAINER_M_INFO                         \
-    .trainerClass = TRAINER_CLASS_ACE_TRAINER,     \
-    .trainerPic = TRAINER_PIC_FRONT_ACE_TRAINER_M, \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL
-
-#define ACE_TRAINER_F_INFO                         \
-    .trainerClass = TRAINER_CLASS_ACE_TRAINER,     \
-    .trainerPic = TRAINER_PIC_FRONT_ACE_TRAINER_F, \
-    .gender = TRAINER_GENDER_FEMALE,               \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL
-
-#define NINJA_BOY_INFO            \
-    TRAINER_CLASS_PIC(NINJA_BOY), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
-
-#define PARASOL_LADY_INFO            \
-    TRAINER_CLASS_PIC(PARASOL_LADY), \
-    .gender = TRAINER_GENDER_FEMALE, \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
-
-#define BIRD_KEEPER_INFO            \
-    TRAINER_CLASS_PIC(BIRD_KEEPER), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL
-
-#define EXPERT_F_INFO                         \
-    .trainerClass = TRAINER_CLASS_EXPERT,     \
-    .trainerPic = TRAINER_PIC_FRONT_EXPERT_F, \
-    .gender = TRAINER_GENDER_FEMALE,          \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE
-
-#define EXPERT_M_INFO                         \
-    .trainerClass = TRAINER_CLASS_EXPERT,     \
-    .trainerPic = TRAINER_PIC_FRONT_EXPERT_M, \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE
-
-#define RUIN_MANIAC_INFO            \
-    TRAINER_CLASS_PIC(RUIN_MANIAC), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER
-
-#define SWIMMER_F_INFO                         \
-    .trainerClass = TRAINER_CLASS_SWIMMER,     \
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F, \
-    .gender = TRAINER_GENDER_FEMALE,           \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER
-
-#define SWIMMER_M_INFO                         \
-    .trainerClass = TRAINER_CLASS_SWIMMER,     \
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M, \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER
-
-#define SIS_AND_BRO_INFO                               \
-    TRAINER_CLASS_PIC(SIS_AND_BRO),                    \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER, \
-    .battleType = TRAINER_BATTLE_TYPE_DOUBLES
-
-#define YOUNG_COUPLE_INFO                           \
-    TRAINER_CLASS_PIC(YOUNG_COUPLE),                \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL, \
-    .battleType = TRAINER_BATTLE_TYPE_DOUBLES
-
-#define POKEMON_RANGER_F_INFO                         \
-    .trainerClass = TRAINER_CLASS_PKMN_RANGER,        \
-    .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_F, \
-    .gender = TRAINER_GENDER_FEMALE,                  \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,   \
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE}
-
-#define POKEMON_RANGER_M_INFO                         \
-    .trainerClass = TRAINER_CLASS_PKMN_RANGER,        \
-    .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_M, \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,   \
-    .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE}
-
-#define HEX_MANIAC_INFO              \
-    TRAINER_CLASS_PIC(HEX_MANIAC),   \
-    .gender = TRAINER_GENDER_FEMALE, \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
-
-#define GENTLEMAN_INFO            \
-    TRAINER_CLASS_PIC(GENTLEMAN), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH
-
-#define OLD_COUPLE_INFO                                \
-    TRAINER_CLASS_PIC(OLD_COUPLE),                     \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE, \
-    .battleType = TRAINER_BATTLE_TYPE_DOUBLES
-
-#define DRAGON_TAMER_INFO            \
-    TRAINER_CLASS_PIC(DRAGON_TAMER), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE
 
 // Team Magma
 #define MAGMA_GRUNT_M_INFO                           \
@@ -19582,125 +19700,7 @@ RIVAL_BATTLES(WATER),
     },
 },
 
-
-// Regular trainers
-#define ROCKER_INFO                 \
-    TRAINER_CLASS_PIC(ROCKER_FRLG), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
-
-#define COOL_COUPLE_INFO                 \
-    TRAINER_CLASS_PIC(COOL_COUPLE_FRLG), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL
-
-#define BIKER_INFO                 \
-    TRAINER_CLASS_PIC(BIKER_FRLG), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
-
-#define CUE_BALL_INFO                 \
-    TRAINER_CLASS_PIC(CUE_BALL_FRLG), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
-
-#define SUPER_NERD_INFO                 \
-    TRAINER_CLASS_PIC(SUPER_NERD_FRLG), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
-
-#define SCIENTIST_INFO                 \
-    TRAINER_CLASS_PIC(SCIENTIST_FRLG), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
-
-#define ENGINEER_INFO                 \
-    TRAINER_CLASS_PIC(ENGINEER_FRLG), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
-
-#define BURGLAR_INFO                 \
-    TRAINER_CLASS_PIC(BURGLAR_FRLG), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
-
-#define CRUSH_KIN_INFO                 \
-    TRAINER_CLASS_PIC(CRUSH_KIN_FRLG), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE
-
-#define JUGGLER_INFO                 \
-    TRAINER_CLASS_PIC(JUGGLER_FRLG), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER
-
-#define GAMBLER_INFO                 \
-    TRAINER_CLASS_PIC(GAMER_FRLG), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
-
-#define TAMER_INFO                 \
-    TRAINER_CLASS_PIC(TAMER_FRLG), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER
-
-#define CHANNELER_INFO                 \
-    TRAINER_CLASS_PIC(CHANNELER_FRLG), \
-    .gender = TRAINER_GENDER_FEMALE,   \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
-
-#define PAINTER_INFO                 \
-    TRAINER_CLASS_PIC(PAINTER_FRLG), \
-    .gender = TRAINER_GENDER_FEMALE, \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
-
-#define YOUNGSTER_FRLG_INFO            \
-    TRAINER_CLASS_PIC(YOUNGSTER_FRLG), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
-
-#define GENTLEMAN_FRLG_INFO            \
-    TRAINER_CLASS_PIC(GENTLEMAN_FRLG), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH
-
-#define HIKER_FRLG_INFO                 \
-    TRAINER_CLASS_PIC(HIKER_FRLG), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER
-
-#define BUG_CATCHER_FRLG_INFO            \
-    TRAINER_CLASS_PIC(BUG_CATCHER_FRLG), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
-
-#define SAILOR_FRLG_INFO            \
-    TRAINER_CLASS_PIC(SAILOR_FRLG), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
-
-#define CAMPER_FRLG_INFO            \
-    TRAINER_CLASS_PIC(CAMPER_FRLG), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
-
-#define POKE_MANIAC_FRLG_INFO           \
-    TRAINER_CLASS_PIC(POKEMANIAC_FRLG), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
-
-#define BLACK_BELT_FRLG_INFO            \
-    TRAINER_CLASS_PIC(BLACK_BELT_FRLG), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE
-
-#define BIRD_KEEPER_FRLG_INFO            \
-    TRAINER_CLASS_PIC(BIRD_KEEPER_FRLG), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL
-
-#define FISHERMAN_FRLG_INFO            \
-    TRAINER_CLASS_PIC(FISHERMAN_FRLG), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER
-
-#define RUIN_MANIAC_FRLG_INFO            \
-    TRAINER_CLASS_PIC(RUIN_MANIAC_FRLG), \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER
-
-#define LASS_FRLG_INFO               \
-    TRAINER_CLASS_PIC(LASS_FRLG),    \
-    .gender = TRAINER_GENDER_FEMALE, \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
-
-#define BEAUTY_FRLG_INFO             \
-    TRAINER_CLASS_PIC(BEAUTY_FRLG),  \
-    .gender = TRAINER_GENDER_FEMALE, \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
-
-#define PICNICKER_FRLG_INFO            \
-    TRAINER_CLASS_PIC(PICNICKER_FRLG), \
-    .gender = TRAINER_GENDER_FEMALE,   \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL
-
+//
 [DIFFICULTY_NORMAL][TRAINER_YOUNGSTER_BEN] =
 {
     .trainerName = _("Ben"),

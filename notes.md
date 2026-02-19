@@ -989,6 +989,9 @@ upcoming
     - Make one of the routes unlock later?
     - Swap Super Rod with Good Rod (if Route 12 is first)?
         - Remove Super Rod entirely and just have that brother check Magikarp size?
+- Fuchsia:
+    - Change Badge flag for Surf if swapped with Saffron
+    - Change Trainer card Badge order
 - Safari Zone:
     - Go back and edit encounters
 - Seven Island
@@ -1029,40 +1032,34 @@ upcoming
 - Remove SaffronCity_Connection map?
     - Check if it's actually used for anything
     - By its name, it might be used for connections, but just change those to use the regular ones
+- Remove extra Altering Caves
 
 ### Pokémon
 - Add version exclusives
-    - Koffing (Pokemon Mansion)
-    - Magby (Pokemon Mansion)
     - Azurill (Wooper)
     - Misdreavus (Murkrow)
     - Sneasel (Delibird?)
     - Remoraid (Qwilfish?)
     - Mantyke (Skarmory?)
 - Add event-exclusive Pokemon:
-    - Smoochum: (LGPE: Seafoam Islands)
-    - Lapras: (Seafoam Islands?; LGPE: Route 19/20 rare)
-    - Porygon: Power Plant?
     - Munchlax: (LGPE: Cerulean Cave)
     - Mew
 - Add Safari-exclusive Pokemon?
     - Dratini (LGPE: Route 10 Surf)
-    - Rhyhorn (LGPE: Rock Tunnel, Victory Road, Cerulean Cave)
-    - Happiny (LGPE: rare on a lot of routes; Chansey later on, Blissey by Indigo Plateau)
+    - Rhyhorn (Victory Road, Cerulean Cave)
+    - Happiny (Blissey by Indigo Plateau)
     - Omanyte? (Cerulean Cave? Sevii Islands?)
     - Kabuto? (Cerulean Cave? Sevii Islands?)
     - Aerodactyl? (Cerulean Cave?)
-- Add Shellder to Seafoam Islands (currently seems to be Super Rod exclusive)
-    - Cloyster for Seafoam Islands Super Rod
 - Add starters
 - Replace Snorlax with Munchlax?
 - Decide if regional forms will be postgame (Sevii Islands) or main game
     - Evolutions (Raichu, Marowak, Exeggutor, Weezing, Mr. Mime) are in-game
     - Alolan Diglett is in Diglett's Cave
+    - Alolan Sandshrew is in Seafoam Islands
+    - Alolan Vulpix is in Seafoam Islands
     - Remaining:
         - Rattata/Raticate (Route 4/Route 9?)
-        - Sandshrew/Sandslash (Seafoam Islands)
-        - Vulpix/Ninetales (Seafoam Islands)
         - Meowth/Persian (Route 6/7/8)
         - Meowth/Perrserker (Route 6/7/8)
         - Growlithe/Arcanine (Route 15? Pokemon Mansion?)
@@ -1078,9 +1075,10 @@ upcoming
         - Moltres (Ruby Path?)
     - Could do One, Two, and Three Islands
     - Add Galarian birds to Sevii Islands?
+- Figure out legendary beasts
 - Add Wiglett/Toedscool?
 - Add Munna for Route 10 girl? Maybe a trade?
-- Go back and add BEAST/BIRD ( and maybe +1) to encounters
+- Go back and add BEAST/BIRD (and maybe +1) to encounters
 
 ### Trainers
 - Rearrange opponents_frlg.h

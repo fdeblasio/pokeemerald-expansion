@@ -77,7 +77,7 @@ Movement_Bow::
 	step_end
 
 Text_WelcomeWantToHealPkmn_Frlg::
-	.string "Welcome to our Pokémon CENTER!\p"
+	.string "Welcome to our Pokémon Center!\p"
 	.string "Would you like me to heal your\n"
 	.string "Pokémon back to perfect health?$"
 

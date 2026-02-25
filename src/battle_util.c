@@ -6463,22 +6463,22 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
         break;
     case ABILITY_PIXILATE:
         if (moveType == TYPE_FAIRY && gBattleStruct->battlerState[battlerAtk].ateBoost)
-            UQ4_12_MULTIPLY(modifier, GetConfig(CONFIG_ATE_MULTIPLIER) >= GEN_7 ? 1.2 : 1.3);
+            UQ4_12_MULTIPLY(modifier, GetConfig(B_ATE_MULTIPLIER) >= GEN_7 ? 1.2 : 1.3);
         break;
     case ABILITY_GALVANIZE:
         if (moveType == TYPE_ELECTRIC && gBattleStruct->battlerState[battlerAtk].ateBoost)
-            UQ4_12_MULTIPLY(modifier, GetConfig(CONFIG_ATE_MULTIPLIER) >= GEN_7 ? 1.2 : 1.3);
+            UQ4_12_MULTIPLY(modifier, GetConfig(B_ATE_MULTIPLIER) >= GEN_7 ? 1.2 : 1.3);
         break;
     case ABILITY_REFRIGERATE:
         if (moveType == TYPE_ICE && gBattleStruct->battlerState[battlerAtk].ateBoost)
-            UQ4_12_MULTIPLY(modifier, GetConfig(CONFIG_ATE_MULTIPLIER) >= GEN_7 ? 1.2 : 1.3);
+            UQ4_12_MULTIPLY(modifier, GetConfig(B_ATE_MULTIPLIER) >= GEN_7 ? 1.2 : 1.3);
         break;
     case ABILITY_AERILATE:
         if (moveType == TYPE_FLYING && gBattleStruct->battlerState[battlerAtk].ateBoost)
-            UQ4_12_MULTIPLY(modifier, GetConfig(CONFIG_ATE_MULTIPLIER) >= GEN_7 ? 1.2 : 1.3);
+            UQ4_12_MULTIPLY(modifier, GetConfig(B_ATE_MULTIPLIER) >= GEN_7 ? 1.2 : 1.3);
         break;
     case ABILITY_NORMALIZE:
-        if (moveType == TYPE_NORMAL && gBattleStruct->battlerState[battlerAtk].ateBoost && GetConfig(CONFIG_ATE_MULTIPLIER) >= GEN_7)
+        if (moveType == TYPE_NORMAL && gBattleStruct->battlerState[battlerAtk].ateBoost && GetConfig(B_ATE_MULTIPLIER) >= GEN_7)
             UQ4_12_MULTIPLY(modifier, 1.5);
         break;
     case ABILITY_PUNK_ROCK:

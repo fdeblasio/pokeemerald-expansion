@@ -1415,7 +1415,7 @@
 - Sandshrew/Sandslash:
     - Learn Earth Power and Drill Run by level up
 
-- Alolan Sandshrew/Alolan Sandslash (postgame):
+- Alolan Sandshrew/Alolan Sandslash (postgame in Emerald):
     - Learn Ice Shard, Avalanche, and Ice Punch by level up
 
 - Nidoran F (not in Emerald):
@@ -1458,10 +1458,10 @@
 - Vulpix/Ninetales:
     - Learn Mystical Fire by level up
 
-- Alolan Vulpix (postgame):
+- Alolan Vulpix (postgame in Emerald):
     - Learns Fairy Wind by level up
 
-- Alolan Ninetales (postgame):
+- Alolan Ninetales (postgame in Emerald):
     - Learns Fairy Wind, Disarming Voice, and Alluring Voice by level up
 
 - Igglybuff:

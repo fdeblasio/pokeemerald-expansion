@@ -18105,7 +18105,7 @@ UNUSED_TRAINER(15),
 #define RIVAL_STARTER(Location, Type)                                                        \
     {                                                                                               \
     .lvl = Location##_STARTER_LEVEL,                                                                \
-    .species = Type##_STARTER + (Location < RIVAL_CERULEAN ? 0 : (Location < RIVAL_SILPH ? 1 : 2)), \
+    .species = Type##_STARTER_FRLG + (Location < RIVAL_CERULEAN ? 0 : (Location < RIVAL_SILPH ? 1 : 2)), \
     .nature = NATURE_MODEST,                                                                        \
     PERFECT_IVS,                                                                                    \
     .heldItem = Location < RIVAL_CHAMPION ? ITEM_NONE : (TYPE_##Type == TYPE_GRASS ? ITEM_VENUSAURITE : (TYPE_##Type == TYPE_FIRE ? ITEM_CHARIZARDITE_Y : ITEM_BLASTOISINITE)), \
@@ -18969,7 +18969,7 @@ RIVAL_BATTLES(WATER),
 
 #define LEADER_INFO(Trainer)                               \
     .trainerClass = TRAINER_CLASS_LEADER_FRLG,             \
-    .trainerPic = TRAINER_PIC_FRONT_LEADER_##Trainer_FRLG, \
+    .trainerPic = TRAINER_PIC_FRONT_LEADER_##Trainer##_FRLG, \
     BOSS_AI_FLAGS
 
 #define LEADER_REMATCH                                                             \

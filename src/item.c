@@ -318,6 +318,7 @@ static bool32 NONNULL BagPocket_AddItem(struct BagPocket *pocket, enum Item item
     case POCKET_TM:
     case POCKET_BERRIES:
         for (itemLookupIndex = 0; itemLookupIndex < pocket->capacity && count > 0; itemLookupIndex++)
+        {
             // Check if we found a slot to store the item but weren't able to reduce count to 0
             // This means that we have more than one stack's worth, which isn't allowed in these pockets
             if (CheckSlotAndUpdateCount(pocket, itemId, itemLookupIndex, &itemAddIndex, &count, tempPocketSlotQuantities) && count > 0)
@@ -330,6 +331,7 @@ static bool32 NONNULL BagPocket_AddItem(struct BagPocket *pocket, enum Item item
     default:
         for (itemLookupIndex = 0; itemLookupIndex < pocket->capacity && count > 0; itemLookupIndex++)
             CheckSlotAndUpdateCount(pocket, itemId, itemLookupIndex, &itemAddIndex, &count, tempPocketSlotQuantities);
+        break;
     }
 
     // If the count is still greater than zero, clearly we have not found enough slots for this...

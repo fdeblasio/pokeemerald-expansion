@@ -336,6 +336,7 @@
 
 	.macro unloadallspritepals
 	.byte 0x35
+	.endm
 
 @ useful macros
 	.macro jumpreteq value:req, ptr:req

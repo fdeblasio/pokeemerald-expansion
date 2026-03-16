@@ -6249,7 +6249,7 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
     case EFFECT_SOLAR_BEAM:
         if (gMain.inBattle)
         {
-            if (IsBattlerWeatherAffected(battler, (B_WEATHER_HAIL | B_WEATHER_SANDSTORM | B_WEATHER_RAIN | B_WEATHER_SNOW | B_WEATHER_FOG)))
+            if (IsBattlerWeatherAffected(holdEffect, GetWeather(), (B_WEATHER_HAIL | B_WEATHER_SANDSTORM | B_WEATHER_RAIN | B_WEATHER_SNOW | B_WEATHER_FOG)))
                 UQ4_12_MULTIPLY(power, 0.5);
         }
         else if (isRainy || isSandstorm || isSnowy || isFoggy)
@@ -6476,10 +6476,11 @@ u32 GetDynamicAccuracy(struct Pokemon *mon, enum Move move, enum BattlerId battl
         }
 
         if (HasWeatherEffect()){
-
-            if (IsBattlerWeatherAffected(BATTLE_OPPOSITE(battler), B_WEATHER_SUN) && MoveHas50AccuracyInSun(move))
+            //if (IsBattlerWeatherAffected(BATTLE_OPPOSITE(battler), GetWeather(), B_WEATHER_SUN) && MoveHas50AccuracyInSun(move))
+            if ((gBattleWeather & B_WEATHER_SUN) && MoveHas50AccuracyInSun(move))
                 accuracy = 50;
-            else if (IsBattlerWeatherAffected(BATTLE_OPPOSITE(battler), B_WEATHER_RAIN) && MoveAlwaysHitsInRain(move))
+            //else if (IsBattlerWeatherAffected(BATTLE_OPPOSITE(battler), GetWeather(), B_WEATHER_RAIN) && MoveAlwaysHitsInRain(move))
+            else if ((gBattleWeather & B_WEATHER_RAIN) && MoveAlwaysHitsInRain(move))
                 return 100;
             else if (gBattleWeather & (B_WEATHER_SNOW | B_WEATHER_HAIL) && MoveAlwaysHitsInHailSnow(move))
                 return 100;

@@ -15462,7 +15462,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_PhotonGeyser,
     },
 
-    #define PLACEHOLDER_MOVE(Number) [MOVE_PLACEHOLDER_##Number] = {}
+    #define PLACEHOLDER_MOVE(Number) [MOVE_PLACEHOLDER_##Number] = {.name = COMPOUND_STRING("Placeholder")}
     PLACEHOLDER_MOVE(676),
     PLACEHOLDER_MOVE(677),
     PLACEHOLDER_MOVE(678),

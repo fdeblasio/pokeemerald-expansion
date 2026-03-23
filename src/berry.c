@@ -2719,7 +2719,7 @@ static u32 GetBerryTreeAge(u8 id, u8 stage)
 static u8 GetBerryCountByBerryTreeId(u8 id)
 {
     struct BerryTree *tree = GetBerryTreeInfo(id);
-    const struct Berry *berry = GetBerryInfo(tree->berry);
+    const struct BerryInfo *berry = GetBerryInfo(tree->berry);
     u16 currentMap = gMapHeader.regionMapSectionId;
 
     if (currentMap == MAPSEC_ROUTE_119 || currentMap == MAPSEC_ROUTE_120 || currentMap == MAPSEC_ROUTE_123)

@@ -4,25 +4,16 @@
 - With the higher levels, using the Exp. Share can cause your team to become overpowered
 - Checking wild encounters doesn't differentiate between what's been caught and what hasn't
     - I found a way to do so, but it causes a graphical glitch in the PC so it's not implemented yet
-- Followers will stop following you if you use the naming screen from the party menu. It will start to follow you again if you talk to it
-- One of the sprites on Mt. Chimney sometimes glitches
+- Followers will stop following you if you use the naming screen from the party menu. They will start to follow you again if you talk to it
 - AI_FLAG_ACE_POKEMON potentially broken in multi-battles (maybe only if both trainers have it?)
-- If you help one of the Lilycove Pokémon Center ladies, the other lady thinks you've already helped her as well
-    - Could have something to do with this: sContestLadyPtr->id = LILYCOVE_LADY_CONTEST
 - Relearning graphics glitch
 - Naming to PC glitch
 - Torkoal sprite on Mt. Chimney sometimes glitches
-
-### Potentially just savefile issues due to merging upcoming/playing while hacking
-- Lilycove ladies crash the game
 - Some of the EV-reducing berries on Route 123 will randomly disappear and then come back
     - This may be related to the amount of overworld sprites/palettes
-- Moving an Pokémon in the PC seems to duplicate its item in the bag
-- Items in the Battle Pyramid's Battle Bag/held items in the Battle Pike are turning into Poke Balls
-    - Seems to happen after trainer battles?
 
 ## Changes
-- NOTE: This all assumes there are no rebasing errors
+- NOTE: This all assumes that I made no merging errors
 - Wild Pokémon and Trainers have their levels increased to make grinding less of a pain
     - However, with the Exp Share now affecting all party members, this can lead to becoming overleveled
 - Decapitalization
@@ -38,7 +29,6 @@
     - Pokémon have a more even encounter distribution
 - Tate and Liza give out Psychic instead of Calm Mind (Calm Mind can be found in Slateport)
 - Juan gives out Liquidation instead of Water Pulse (Water Pulse can be found in Slateport)
-- TM moves not in the game are learnable as relearner moves post-Elite Four
 - Pokémon that evolve with an item at day or night now can evolve at any time
 - EVs now give one stat increase for every EV but cap out at 63 (individual)/127 (total). This will lead to the same stats as the old system but easier to train
 - Houndour was added to the Hoenn Pokédex to give Team Magma more variety
@@ -50,10 +40,8 @@
     - Connected the north and northwest sections of the Safari Zone
     - Now get 99 Safari Balls (which have a 5x catch rate) and 9999 steps
 - Steven now gives out a Jirachi (Beldum is now in Meteor Falls with Bagon)
-- Battles in New Mauville start with Electric Terrain
-- Battles in long grass on Routes 119 and 120 start with Grassy Terrain (unless it's a thunderstorm)
 - Contest opponents from RS and ORAS were added
-- There is now a Special Rank for contests after Master Rank. It functions the same as Master Rank but has more unique opponents
+- There is now a Special Rank for contests after Master Rank. It functions the same as Master Rank but has more unique opponents, though it still has some placeholders
 - Releasing a Pokémon now gives you its Poké Ball back
 
 ### Overworld:
@@ -83,6 +71,7 @@
 - Premier Balls are now given for every multiple of 10 of any ball you buy (as opposed to only 1 for 10+ Poke Balls)
 - Two Pokémon having the same original trainer no longer negatively affects breeding chances
 - All text characters are now eligible for a Walda wallpaper
+- It is now easier to specify which Walda wallpaper you want
 - Can now use Soot Sack to see how much ash you have
 - Ash collects in non-grass tiles as well now
 - Much easier to make good Pokéblocks
@@ -118,6 +107,11 @@
     - Sky Pillar on Route 131
     - Southern Island
 
+### Battle:
+- Battles in New Mauville start with Electric Terrain
+- Battles in long grass on Routes 119 and 120 start with Grassy Terrain (unless it's a thunderstorm)
+- Added Burial Ground, Volcano, and Ice battle environments from later generations (effects Secret Power and Nature Power)
+
 ### Items:
 - Eviolite now prevents Pokémon from evolving
 - Buffs to healing items:
@@ -148,6 +142,7 @@
 - Wally is given more battles. The battle in Verdanturf starts with Grassy Terrain
 - There are now one less rematch per gym leader/Wally to free up space
 - Any Trainer first encountered after Sootopolis now only has one rematch
+    - This only applies to two Trainers in Meteor Falls
 
 #### Bosses (Emerald):
 |          BOSSES           |        VANILLA       |    UPDATED    |

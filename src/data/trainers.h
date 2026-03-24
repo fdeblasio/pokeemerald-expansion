@@ -3172,7 +3172,7 @@ JUAN_REMATCH(4),
 
 #define GLACIA_INFO               \
     ELITE_FOUR_INFO(GLACIA, ICE), \
-    .trainerName = _("Glacia"),   \
+    .trainerName = _("Kimberly"),   \
     .gender = TRAINER_GENDER_FEMALE, \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
 
@@ -3339,7 +3339,7 @@ JUAN_REMATCH(4),
 
 #define DRAKE_INFO                  \
     ELITE_FOUR_INFO(DRAKE, DRAGON), \
-    .trainerName = _("Drake"),      \
+    .trainerName = _("Rafael III"),      \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR
 
 #define DRAKE_SALAMENCE(Rematch, Tier)                                                   \
@@ -3704,7 +3704,7 @@ JUAN_REMATCH(4),
 #define WALLACE_BATTLE(Trainer, AceLevel)                                                  \
 [DIFFICULTY_NORMAL][TRAINER_##Trainer] =                                                   \
 {                                                                                          \
-    .trainerName = _("Wallace"),                                                           \
+    .trainerName = _("Frank"),                                                             \
     .trainerClass = TRAINER_CLASS_CHAMPION,                                                \
     .trainerPic = TRAINER_PIC_CHAMPION_WALLACE,                                            \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,                                        \
@@ -15462,7 +15462,7 @@ MATT_BATTLE(AQUA_HIDEOUT, CAP_AQUA_HIDEOUT, 6),
 
 [DIFFICULTY_NORMAL][TRAINER_KIM_AND_IRIS] =
 {
-    .trainerName = _("Kim & Iris"),
+    .trainerName = _("May & Iris"),
     TEAMMATES_INFO,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,

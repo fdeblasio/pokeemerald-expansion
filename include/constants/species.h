@@ -1692,6 +1692,9 @@ enum __attribute__((packed)) Species
 
     SPECIES_CUSTOM_START = SPECIES_GLIMMORA_MEGA,
     // Add any custom species between here and SPECIES_CUSTOM_END
+    SPECIES_MACHOP_PARTNER,
+    SPECIES_MACHOKE_PARTNER,
+    SPECIES_MACHAMP_PARTNER,
     //Gigantamax Megas
     //SPECIES_VENUSAUR_MEGA_G,
     //SPECIES_CHARIZARD_MEGA_G,
@@ -1743,7 +1746,7 @@ enum __attribute__((packed)) Species
 #define GRASS_STARTER             SPECIES_TREECKO
 #define FIRE_STARTER              SPECIES_TORCHIC
 #define WATER_STARTER             SPECIES_MUDKIP
-#define RAFI_STARTER              SPECIES_MACHOP
+#define RAFI_STARTER              SPECIES_MACHOP_PARTNER
 #define KIM_STARTER               SPECIES_FLETCHLING
 
 #define SPECIES_EARLY_BEAST_1     SPECIES_ZIGZAGOON

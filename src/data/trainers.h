@@ -354,28 +354,28 @@
 #define MAY     2
 
 #define BRENDAN_INFO                                \
-    .trainerName = _("Brendan"),                    \
+    .trainerName = _("Rafi"),                       \
     .trainerClass = TRAINER_CLASS_RIVAL,            \
     .trainerPic = TRAINER_PIC_BRENDAN,              \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE, \
     BOSS_AI_FLAGS
 
 #define MAY_INFO                                      \
-    .trainerName = _("May"),                          \
+    .trainerName = _("Kim"),                          \
     .trainerClass = TRAINER_CLASS_RIVAL,              \
     .trainerPic = TRAINER_PIC_MAY,                    \
     .gender = TRAINER_GENDER_FEMALE,                  \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE, \
     BOSS_AI_FLAGS
 
-#define RIVAL_STARTER(Location, Type, Rival)                                                             \
-    {                                                                                                    \
-    .lvl = Location##_STARTER_LEVEL,                                                                     \
-    .species = Type##_STARTER + (Location < RIVAL_ROUTE_110 ? 0 : (Location < RIVAL_ROUTE_119 ? 1 : 2)), \
-    .nature = Rival == BRENDAN ? NATURE_SERIOUS : NATURE_QUIRKY,                                         \
-    PERFECT_IVS,                                                                                         \
-    .gender = Rival,                                                                                     \
-    .heldItem = Location < RIVAL_LILYCOVE ? ITEM_NONE : (TYPE_##Type == TYPE_GRASS ? ITEM_SCEPTILITE : (TYPE_##Type == TYPE_FIRE ? ITEM_BLAZIKENITE : ITEM_SWAMPERTITE)), \
+#define RIVAL_STARTER(Location, Rival, Rival2)                                                                   \
+    {                                                                                                            \
+    .lvl = Location##_STARTER_LEVEL,                                                                             \
+    .species = Rival2##_STARTER + (Location < RIVAL_ROUTE_110 ? 0 : (Location < RIVAL_ROUTE_119 ? 1 : 2)),        \
+    .nature = Rival == BRENDAN ? NATURE_SERIOUS : NATURE_QUIRKY,                                                 \
+    PERFECT_IVS,                                                                                                 \
+    .gender = Rival,                                                                                             \
+    .heldItem = Location < RIVAL_LILYCOVE ? ITEM_NONE : (Rival == BRENDAN ? ITEM_SCEPTILITE : ITEM_SWAMPERTITE), \
     }
 
 #define RIVAL_WHISMUR(Location, Rival)                                      \
@@ -396,38 +396,38 @@
     .gender = Rival,                                                             \
     }
 
-#define RIVAL_BATTLES(Rival, Type, Mon3, Evo3, Ability3, Mon4, Evo4, Ability4) \
-[DIFFICULTY_NORMAL][TRAINER_##Rival##_ROUTE_103_##Type] =                      \
+#define RIVAL_BATTLES(Rival, Rival2, Mon3, Evo3, Ability3, Mon4, Evo4, Ability4) \
+[DIFFICULTY_NORMAL][TRAINER_##Rival##_ROUTE_103] =                             \
 {                                                                              \
     Rival##_INFO,                                                              \
     .partySize = 1,                                                            \
     .party = (const struct TrainerMon[]) {                                     \
-        RIVAL_STARTER(RIVAL_ROUTE_103, Type, Rival),                           \
+        RIVAL_STARTER(RIVAL_ROUTE_103, Rival, Rival2),                         \
     },                                                                         \
 },                                                                             \
                                                                                \
-[DIFFICULTY_NORMAL][TRAINER_##Rival##_RUSTBORO_##Type] =                       \
+[DIFFICULTY_NORMAL][TRAINER_##Rival##_RUSTBORO] =                              \
 {                                                                              \
     Rival##_INFO,                                                              \
     .partySize = 2,                                                            \
     .party = (const struct TrainerMon[]) {                                     \
         RIVAL_WHISMUR(RIVAL_RUSTBORO, Rival),                                  \
-        RIVAL_STARTER(RIVAL_RUSTBORO, Type, Rival),                            \
+        RIVAL_STARTER(RIVAL_RUSTBORO, Rival, Rival2),                          \
     },                                                                         \
 },                                                                             \
                                                                                \
-[DIFFICULTY_NORMAL][TRAINER_##Rival##_ROUTE_110_##Type] =                      \
+[DIFFICULTY_NORMAL][TRAINER_##Rival##_ROUTE_110] =                             \
 {                                                                              \
     Rival##_INFO,                                                              \
     .partySize = 3,                                                            \
     .party = (const struct TrainerMon[]) {                                     \
         RIVAL_MON(RIVAL_ROUTE_110, Mon3, Ability3, Rival),                     \
         RIVAL_WHISMUR(RIVAL_ROUTE_110, Rival),                                 \
-        RIVAL_STARTER(RIVAL_ROUTE_110, Type, Rival),                           \
+        RIVAL_STARTER(RIVAL_ROUTE_110, Rival, Rival2),                         \
     },                                                                         \
 },                                                                             \
                                                                                \
-[DIFFICULTY_NORMAL][TRAINER_##Rival##_ROUTE_119_##Type] =                      \
+[DIFFICULTY_NORMAL][TRAINER_##Rival##_ROUTE_119] =                             \
 {                                                                              \
     Rival##_INFO,                                                              \
     .partySize = 4,                                                            \
@@ -435,11 +435,11 @@
         RIVAL_MON(RIVAL_ROUTE_119, Mon4, Ability4, Rival),                     \
         RIVAL_MON(RIVAL_ROUTE_119, Evo3, Ability3, Rival),                     \
         RIVAL_WHISMUR(RIVAL_ROUTE_119, Rival),                                 \
-        RIVAL_STARTER(RIVAL_ROUTE_119, Type, Rival),                           \
+        RIVAL_STARTER(RIVAL_ROUTE_119, Rival, Rival2),                         \
     },                                                                         \
 },                                                                             \
                                                                                \
-[DIFFICULTY_NORMAL][TRAINER_##Rival##_LILYCOVE_##Type] =                       \
+[DIFFICULTY_NORMAL][TRAINER_##Rival##_LILYCOVE] =                              \
 {                                                                              \
     Rival##_INFO,                                                              \
     .partySize = 5,                                                            \
@@ -454,16 +454,12 @@
         RIVAL_MON(RIVAL_LILYCOVE, Evo4, Ability4, Rival),                      \
         RIVAL_MON(RIVAL_LILYCOVE, Evo3, Ability3, Rival),                      \
         RIVAL_WHISMUR(RIVAL_LILYCOVE, Rival),                                  \
-        RIVAL_STARTER(RIVAL_LILYCOVE, Type, Rival),                            \
+        RIVAL_STARTER(RIVAL_LILYCOVE, Rival, Rival2),                          \
     },                                                                         \
 }
 
-RIVAL_BATTLES(BRENDAN, GRASS, CORPHISH, CRAWDAUNT, HYPER_CUTTER, SLUGMA, MAGCARGO, FLAME_BODY),
-RIVAL_BATTLES(BRENDAN, FIRE, SHROOMISH, BRELOOM, EFFECT_SPORE, CORPHISH, CRAWDAUNT, HYPER_CUTTER),
-RIVAL_BATTLES(BRENDAN, WATER, SLUGMA, MAGCARGO, FLAME_BODY, SHROOMISH, BRELOOM, EFFECT_SPORE),
-RIVAL_BATTLES(MAY, GRASS, WINGULL, PELIPPER, KEEN_EYE, VULPIX, NINETALES, FLASH_FIRE),
-RIVAL_BATTLES(MAY, FIRE, CACNEA, CACTURNE, SAND_VEIL, WINGULL, PELIPPER, KEEN_EYE),
-RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_VEIL),
+RIVAL_BATTLES(BRENDAN, RAFI, CORPHISH, CRAWDAUNT, HYPER_CUTTER, SLUGMA, MAGCARGO, FLAME_BODY),
+RIVAL_BATTLES(MAY, KIM, WINGULL, PELIPPER, KEEN_EYE, VULPIX, NINETALES, FLASH_FIRE),
 
 #define ENDGAME_REMATCH_2_LEVEL 80
 #define ENDGAME_REMATCH_3_LEVEL 85

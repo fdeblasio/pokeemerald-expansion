@@ -82,4 +82,3 @@ PetalburgCity_PokemonCenter_1F_Text_TorchicIsFireType:
 	.string "Bug types.\p"
 	.string "But, it's weak against Water-type\n"
 	.string "Pokémon.$"
-

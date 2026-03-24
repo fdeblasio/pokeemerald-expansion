@@ -1744,7 +1744,7 @@ enum __attribute__((packed)) Species
 #define FIRE_STARTER              SPECIES_TORCHIC
 #define WATER_STARTER             SPECIES_MUDKIP
 #define RAFI_STARTER              SPECIES_MACHOP
-#define KIM_STARTER               SPECIES_MACHOP
+#define KIM_STARTER               SPECIES_FLETCHLING
 
 #define SPECIES_EARLY_BEAST_1     SPECIES_ZIGZAGOON
 #define SPECIES_EARLY_BEAST_2     SPECIES_POOCHYENA

@@ -148,7 +148,7 @@ static const struct BgTemplate sOptionMenuBgTemplates[] =
     }
 };
 
-static const u16 sOptionMenuBg_Pal[] = {RGB(31, 31, 0)};
+static const u16 sOptionMenuBg_Pal[] = {RGB_WHITE};
 
 static void MainCB2(void)
 {

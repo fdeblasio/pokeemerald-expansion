@@ -43,7 +43,10 @@ upcoming
 
 ## Hack-specific:
 - Starters: Machop for Rafi, ??? for Kim
-- Either make new Machop/??? forms (like with partner Pikachu/Eevee) or edit them to match other starters (BST, evolution levels, etc.)
+- Make new Machop/??? forms (like with partner Pikachu/Eevee) and edit them to match other starters (BST, evolution levels, etc.)
+    - Overgrow/Blaze clones for abilities? Can still have second ability, just hardcode to giving with first
+    - Figure out forms so they're part of the same Pokedex entry
+- If there's a Rafi/Kim double battle, their Pokemon know Hold Hands
 - If Kim's has a mega, make Mega Machamp G
 - Team Admins?: Oleg, Kate, Helen, Cam
 

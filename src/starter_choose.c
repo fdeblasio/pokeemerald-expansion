@@ -24,8 +24,6 @@
 #include "constants/songs.h"
 #include "constants/rgb.h"
 
-#define STARTER_MON_COUNT   3
-
 // Position of the sprite of the selected starter Pokémon
 #define STARTER_PKMN_POS_X (DISPLAY_WIDTH / 2)
 #define STARTER_PKMN_POS_Y 64
@@ -41,8 +39,6 @@ static void Task_WaitForStarterSprite(u8 taskId);
 static void Task_AskConfirmStarter(u8 taskId);
 static void Task_HandleConfirmStarterInput(u8 taskId);
 static void Task_DeclineStarter(u8 taskId);
-static void Task_MoveStarterChooseCursor(u8 taskId);
-static void Task_CreateStarterLabel(u8 taskId);
 static void CreateStarterPokemonLabel(u8 selection);
 static u8 CreatePokemonFrontSprite(enum Species species, u8 x, u8 y);
 static void SpriteCB_SelectionHand(struct Sprite *sprite);
@@ -96,25 +92,13 @@ static const struct WindowTemplate sWindowTemplate_StarterLabel =
     .baseBlock = 0x0274
 };
 
-static const u8 sPokeballCoords[STARTER_MON_COUNT][2] =
-{
-    {60, 64},
-    {120, 88},
-    {180, 64},
-};
+static const u8 sPokeballCoords[2] = {120, 88};
+static const u8 sStarterLabelCoords[2] = {16, 10};
 
-static const u8 sStarterLabelCoords[STARTER_MON_COUNT][2] =
+static const u16 sStarterMon[] =
 {
-    {0, 9},
-    {16, 10},
-    {8, 4},
-};
-
-static const u16 sStarterMon[STARTER_MON_COUNT] =
-{
-    (IS_FRLG ? GRASS_STARTER_FRLG : GRASS_STARTER),
-    (IS_FRLG ? FIRE_STARTER_FRLG  : FIRE_STARTER),
-    (IS_FRLG ? WATER_STARTER_FRLG : WATER_STARTER),
+    RAFI_STARTER,
+    KIM_STARTER
 };
 
 static const struct BgTemplate sBgTemplates[3] =
@@ -343,11 +327,9 @@ static const struct SpriteTemplate sSpriteTemplate_StarterCircle =
 };
 
 // .text
-u16 GetStarterPokemon(u16 chosenStarterId)
+u16 GetStarterPokemon()
 {
-    if (chosenStarterId > STARTER_MON_COUNT)
-        chosenStarterId = 0;
-    return sStarterMon[chosenStarterId];
+    return sStarterMon[gSaveBlock2Ptr->playerGender];
 }
 
 static void VblankCB_StarterChoose(void)
@@ -442,17 +424,9 @@ void CB2_ChooseStarter(void)
     gSprites[spriteId].data[0] = taskId;
 
     // Create three Poké Ball sprites
-    spriteId = CreateSprite(&sSpriteTemplate_Pokeball, sPokeballCoords[0][0], sPokeballCoords[0][1], 2);
-    gSprites[spriteId].sTaskId = taskId;
-    gSprites[spriteId].sBallId = 0;
-
-    spriteId = CreateSprite(&sSpriteTemplate_Pokeball, sPokeballCoords[1][0], sPokeballCoords[1][1], 2);
+    spriteId = CreateSprite(&sSpriteTemplate_Pokeball, sPokeballCoords[0], sPokeballCoords[1], 2);
     gSprites[spriteId].sTaskId = taskId;
     gSprites[spriteId].sBallId = 1;
-
-    spriteId = CreateSprite(&sSpriteTemplate_Pokeball, sPokeballCoords[2][0], sPokeballCoords[2][1], 2);
-    gSprites[spriteId].sTaskId = taskId;
-    gSprites[spriteId].sBallId = 2;
 
     sStarterLabelWindowId = WINDOW_NONE;
 }
@@ -478,8 +452,6 @@ static void Task_StarterChoose(u8 taskId)
 
 static void Task_HandleStarterChooseInput(u8 taskId)
 {
-    u8 selection = gTasks[taskId].tStarterSelection;
-
     if (JOY_NEW(A_BUTTON))
     {
         u8 spriteId;
@@ -487,26 +459,16 @@ static void Task_HandleStarterChooseInput(u8 taskId)
         ClearStarterLabel();
 
         // Create white circle background
-        spriteId = CreateSprite(&sSpriteTemplate_StarterCircle, sPokeballCoords[selection][0], sPokeballCoords[selection][1], 1);
+        spriteId = CreateSprite(&sSpriteTemplate_StarterCircle, sPokeballCoords[0], sPokeballCoords[1], 1);
         gTasks[taskId].tCircleSpriteId = spriteId;
 
         // Create Pokémon sprite
-        spriteId = CreatePokemonFrontSprite(GetStarterPokemon(gTasks[taskId].tStarterSelection), sPokeballCoords[selection][0], sPokeballCoords[selection][1]);
+        spriteId = CreatePokemonFrontSprite(GetStarterPokemon(), sPokeballCoords[0], sPokeballCoords[1]);
         gSprites[spriteId].affineAnims = &sAffineAnims_StarterPokemon;
         gSprites[spriteId].callback = SpriteCB_StarterPokemon;
 
         gTasks[taskId].tPkmnSpriteId = spriteId;
         gTasks[taskId].func = Task_WaitForStarterSprite;
-    }
-    else if (JOY_NEW(DPAD_LEFT) && selection > 0)
-    {
-        gTasks[taskId].tStarterSelection--;
-        gTasks[taskId].func = Task_MoveStarterChooseCursor;
-    }
-    else if (JOY_NEW(DPAD_RIGHT) && selection < STARTER_MON_COUNT - 1)
-    {
-        gTasks[taskId].tStarterSelection++;
-        gTasks[taskId].func = Task_MoveStarterChooseCursor;
     }
 }
 
@@ -570,13 +532,13 @@ static void CreateStarterPokemonLabel(u8 selection)
     s32 width;
     u8 labelLeft, labelRight, labelTop, labelBottom;
 
-    enum Species species = GetStarterPokemon(selection);
+    enum Species species = GetStarterPokemon();
     CopyMonCategoryText(species, categoryText);
     speciesName = GetSpeciesName(species);
 
     winTemplate = sWindowTemplate_StarterLabel;
-    winTemplate.tilemapLeft = sStarterLabelCoords[selection][0];
-    winTemplate.tilemapTop = sStarterLabelCoords[selection][1];
+    winTemplate.tilemapLeft = sStarterLabelCoords[0];
+    winTemplate.tilemapTop = sStarterLabelCoords[1];
 
     sStarterLabelWindowId = AddWindow(&winTemplate);
     FillWindowPixelBuffer(sStarterLabelWindowId, PIXEL_FILL(0));
@@ -590,10 +552,10 @@ static void CreateStarterPokemonLabel(u8 selection)
     PutWindowTilemap(sStarterLabelWindowId);
     ScheduleBgCopyTilemapToVram(0);
 
-    labelLeft = sStarterLabelCoords[selection][0] * 8 - 4;
-    labelRight = (sStarterLabelCoords[selection][0] + 13) * 8 + 4;
-    labelTop = sStarterLabelCoords[selection][1] * 8;
-    labelBottom = (sStarterLabelCoords[selection][1] + 4) * 8;
+    labelLeft = sStarterLabelCoords[0] * 8 - 4;
+    labelRight = (sStarterLabelCoords[0] + 13) * 8 + 4;
+    labelTop = sStarterLabelCoords[1] * 8;
+    labelBottom = (sStarterLabelCoords[1] + 4) * 8;
     SetGpuReg(REG_OFFSET_WIN0H, WIN_RANGE(labelLeft, labelRight));
     SetGpuReg(REG_OFFSET_WIN0V, WIN_RANGE(labelTop, labelBottom));
 }
@@ -607,18 +569,6 @@ static void ClearStarterLabel(void)
     SetGpuReg(REG_OFFSET_WIN0H, 0);
     SetGpuReg(REG_OFFSET_WIN0V, 0);
     ScheduleBgCopyTilemapToVram(0);
-}
-
-static void Task_MoveStarterChooseCursor(u8 taskId)
-{
-    ClearStarterLabel();
-    gTasks[taskId].func = Task_CreateStarterLabel;
-}
-
-static void Task_CreateStarterLabel(u8 taskId)
-{
-    CreateStarterPokemonLabel(gTasks[taskId].tStarterSelection);
-    gTasks[taskId].func = Task_HandleStarterChooseInput;
 }
 
 static u8 CreatePokemonFrontSprite(enum Species species, u8 x, u8 y)

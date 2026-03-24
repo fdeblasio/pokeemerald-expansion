@@ -1095,8 +1095,7 @@ static void CB2_GiveStarter(void)
 {
     u16 starterMon;
 
-    *GetVarPointer(VAR_STARTER_MON) = gSpecialVar_Result;
-    starterMon = GetStarterPokemon(gSpecialVar_Result);
+    starterMon = GetStarterPokemon();
     ScriptGiveMon(starterMon, 5, ITEM_NONE);
     ResetTasks();
     PlayBattleBGM();

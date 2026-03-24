@@ -8588,8 +8588,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .trainerScale = 256,
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Machop,
-        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(40, 48) : MON_COORDS_SIZE(48, 48),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 11 : 8,
+        .frontPicSize = MON_COORDS_SIZE(40, 48),
+        .frontPicYOffset = 11,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 6),
             ANIMCMD_FRAME(1, 15),
@@ -8597,10 +8597,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             ANIMCMD_FRAME(1, 15),
             ANIMCMD_FRAME(0, 10),
         ),
-        .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_V_SQUISH_AND_BOUNCE : ANIM_V_STRETCH,
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_Machop,
-        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 40) : MON_COORDS_SIZE(48, 56),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 12 : 6,
+        .backPicSize = MON_COORDS_SIZE(48, 40),
+        .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
         .palette = gMonPalette_Machop,
         .shinyPalette = gMonShinyPalette_Machop,
@@ -8665,8 +8665,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .trainerScale = 257,
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Machoke,
-        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 56) : MON_COORDS_SIZE(56, 56),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 6 : 4,
+        .frontPicSize = MON_COORDS_SIZE(48, 56),
+        .frontPicYOffset = 6,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 20),
             ANIMCMD_FRAME(1, 44),
@@ -8674,8 +8674,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ),
         .frontAnimId = ANIM_V_SHAKE,
         .backPic = gMonBackPic_Machoke,
-        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 48) : MON_COORDS_SIZE(64, 48),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 9 : 8,
+        .backPicSize = MON_COORDS_SIZE(56, 48),
+        .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_Machoke,
         .shinyPalette = gMonShinyPalette_Machoke,
@@ -8754,7 +8754,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .trainerOffset = -1,
         .frontPic = gMonFrontPic_Machamp,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 1 : 0,
+        .frontPicYOffset = 1,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 11),
             ANIMCMD_FRAME(1, 11),
@@ -8766,8 +8766,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         ),
         .frontAnimId = ANIM_H_JUMPS,
         .backPic = gMonBackPic_Machamp,
-        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 56) : MON_COORDS_SIZE(64, 56),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 4 : 7,
+        .backPicSize = MON_COORDS_SIZE(48, 56),
+        .backPicYOffset = 4,
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_Machamp,
         .shinyPalette = gMonShinyPalette_Machamp,
@@ -8858,15 +8858,265 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 #endif //P_GIGANTAMAX_FORMS
 
+    [SPECIES_MACHOP_PARTNER] =
+    {
+        .baseHP        = 70,
+        .baseAttack    = 80,
+        .baseDefense   = 50,
+        .baseSpeed     = 45,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 35,
+        .types = MON_TYPES(TYPE_FIGHTING),
+        .catchRate = DEFAULT_CATCH_RATE(180),
+    #if P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 61,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_4
+        .expYield = 75,
+    #else
+        .expYield = 88,
+    #endif
+        .evYield_Attack = 1,
+        .itemRare = ITEM_FOCUS_BAND,
+        .genderRatio = MON_MALE,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
+    #if P_UPDATED_ABILITIES >= GEN_4
+        .abilities = { ABILITY_GUTS, ABILITY_NO_GUARD, ABILITY_STEADFAST },
+    #else
+        .abilities = { ABILITY_GUTS, ABILITY_NONE, ABILITY_STEADFAST },
+    #endif
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Machop"),
+        .cryId = CRY_MACHOP,
+        .natDexNum = NATIONAL_DEX_MACHOP,
+        .categoryName = _("Superpower"),
+        .height = 8,
+        .weight = 195,
+        .description = COMPOUND_STRING(
+            "Its whole body is composed of muscles.\n"
+            "Even though it's the size of a human\n"
+            "child, it can hurl 100 grown-ups."),
+        .pokemonScale = 342,
+        .pokemonOffset = 14,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_MachopPartner,
+        .frontPicSize = MON_COORDS_SIZE(48, 48),
+        .frontPicYOffset = 8,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 6),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_V_STRETCH,
+        .backPic = gMonBackPic_MachopPartner,
+        .backPicSize = MON_COORDS_SIZE(48, 56),
+        .backPicYOffset = 6,
+        .backAnimId = BACK_ANIM_JOLT_RIGHT,
+        .palette = gMonPalette_MachopPartner,
+        .shinyPalette = gMonShinyPalette_MachopPartner,
+        .iconSprite = gMonIcon_MachopPartner,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 3, SHADOW_SIZE_S)
+        FOOTPRINT(Machop)
+        OVERWORLD(
+            sPicTable_Machop,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Machop,
+            gShinyOverworldPalette_Machop
+        )
+        .levelUpLearnset = sMachopLevelUpLearnset,
+        .teachableLearnset = sMachopTeachableLearnset,
+        .eggMoveLearnset = sMachopEggMoveLearnset,
+        .formSpeciesIdTable = sMachopFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_MACHOKE_PARTNER}),
+    },
+
+    [SPECIES_MACHOKE_PARTNER] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 100,
+        .baseDefense   = 70,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 50,
+        .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 60 : 50,
+        .types = MON_TYPES(TYPE_FIGHTING),
+        .catchRate = DEFAULT_CATCH_RATE(90),
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 142 : 146,
+        .evYield_Attack = 2,
+        .itemRare = ITEM_FOCUS_BAND,
+        .genderRatio = MON_MALE,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
+    #if P_UPDATED_ABILITIES >= GEN_4
+        .abilities = { ABILITY_GUTS, ABILITY_NO_GUARD, ABILITY_STEADFAST },
+    #else
+        .abilities = { ABILITY_GUTS, ABILITY_NONE, ABILITY_STEADFAST },
+    #endif
+        .bodyColor = BODY_COLOR_GRAY,
+        .noFlip = TRUE,
+        .speciesName = _("Machoke"),
+        .cryId = CRY_MACHOKE,
+        .natDexNum = NATIONAL_DEX_MACHOKE,
+        .categoryName = _("Superpower"),
+        .height = 15,
+        .weight = 705,
+        .description = COMPOUND_STRING(
+            "A belt is worn by a Machoke to keep its\n"
+            "overwhelming power under control.\n"
+            "Because it is so dangerous, no one has\n"
+            "ever removed the belt."),
+        .pokemonScale = 323,
+        .pokemonOffset = 9,
+        .trainerScale = 257,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_MachokePartner,
+        .frontPicSize = MON_COORDS_SIZE(56, 56),
+        .frontPicYOffset = 4,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 20),
+            ANIMCMD_FRAME(1, 44),
+            ANIMCMD_FRAME(0, 20),
+        ),
+        .frontAnimId = ANIM_V_SHAKE,
+        .backPic = gMonBackPic_MachokePartner,
+        .backPicSize = MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = 8,
+        .backAnimId = BACK_ANIM_V_SHAKE,
+        .palette = gMonPalette_MachokePartner,
+        .shinyPalette = gMonShinyPalette_MachokePartner,
+        .iconSprite = gMonIcon_MachokePartner,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-1, 9, SHADOW_SIZE_M)
+        FOOTPRINT(Machoke)
+        OVERWORLD(
+            sPicTable_Machoke,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Machoke,
+            gShinyOverworldPalette_Machoke
+        )
+        .levelUpLearnset = sMachokeLevelUpLearnset,
+        .teachableLearnset = sMachokeTeachableLearnset,
+        .formSpeciesIdTable = sMachokeFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_MACHAMP_PARTNER}),
+    },
+
+#if P_UPDATED_EXP_YIELDS >= GEN_8
+    #define MACHAMP_EXP_YIELD 253
+#elif P_UPDATED_EXP_YIELDS >= GEN_5
+    #define MACHAMP_EXP_YIELD 227
+#else
+    #define MACHAMP_EXP_YIELD 193
+#endif
+
+#define MACHAMP_PARTNER_HP  90
+#define MACHAMP_PARTNER_ATK 130
+#define MACHAMP_PARTNER_DEF 80
+#define MACHAMP_PARTNER_SPA 65
+#define MACHAMP_PARTNER_SPD P_UPDATED_STATS >= GEN_2 ? 85 : 65
+#define MACHAMP_PARTNER_SPE 55
+
+    [SPECIES_MACHAMP_PARTNER] =
+    {
+        .baseHP        = MACHAMP_PARTNER_HP,
+        .baseAttack    = MACHAMP_PARTNER_ATK,
+        .baseDefense   = MACHAMP_PARTNER_DEF,
+        .baseSpeed     = MACHAMP_PARTNER_SPE,
+        .baseSpAttack  = MACHAMP_PARTNER_SPA,
+        .baseSpDefense = MACHAMP_PARTNER_SPD,
+        .types = MON_TYPES(TYPE_FIGHTING),
+        .catchRate = DEFAULT_CATCH_RATE(45),
+        .expYield = MACHAMP_EXP_YIELD,
+        .evYield_Attack = 3,
+        .itemRare = ITEM_FOCUS_BAND,
+        .genderRatio = MON_MALE,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
+    #if P_UPDATED_ABILITIES >= GEN_4
+        .abilities = { ABILITY_GUTS, ABILITY_NO_GUARD, ABILITY_STEADFAST },
+    #else
+        .abilities = { ABILITY_GUTS, ABILITY_NONE, ABILITY_STEADFAST },
+    #endif
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Machamp"),
+        .cryId = CRY_MACHAMP,
+        .natDexNum = NATIONAL_DEX_MACHAMP,
+        .categoryName = _("Superpower"),
+        .height = 16,
+        .weight = 1300,
+        .description = COMPOUND_STRING(
+            "It is impossible to defend against punches\n"
+            "and chops doled out by its four arms.\n"
+            "Its fighting spirit flares up when it faces\n"
+            "a tough opponent."),
+        .pokemonScale = 280,
+        .pokemonOffset = 1,
+        .trainerScale = 269,
+        .trainerOffset = -1,
+        .frontPic = gMonFrontPic_MachampPartner,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 11),
+            ANIMCMD_FRAME(1, 11),
+            ANIMCMD_FRAME(0, 11),
+            ANIMCMD_FRAME(1, 11),
+            ANIMCMD_FRAME(0, 11),
+            ANIMCMD_FRAME(1, 11),
+            ANIMCMD_FRAME(0, 11),
+        ),
+        .frontAnimId = ANIM_H_JUMPS,
+        .backPic = gMonBackPic_MachampPartner,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_V_SHAKE,
+        .palette = gMonPalette_MachampPartner,
+        .shinyPalette = gMonShinyPalette_MachampPartner,
+        .iconSprite = gMonIcon_MachampPartner,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(7, 13, SHADOW_SIZE_L)
+        FOOTPRINT(Machamp)
+        OVERWORLD(
+            sPicTable_Machamp,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Machamp,
+            gShinyOverworldPalette_Machamp
+        )
+        .levelUpLearnset = sMachampLevelUpLearnset,
+        .teachableLearnset = sMachampTeachableLearnset,
+        .formSpeciesIdTable = sMachampFormSpeciesIdTable,
+        .formChangeTable = sMachampFormChangeTable,
+    },
+
 //#if P_MEGA_EVOLUTIONS
 //    [SPECIES_MACHAMP_MEGA_G] =
 //    {
-//        .baseHP        = MACHAMP_HP,
-//        .baseAttack    = MACHAMP_ATK + 40,
-//        .baseDefense   = MACHAMP_DEF + 20,
-//        .baseSpeed     = MACHAMP_SPE + 20,
-//        .baseSpAttack  = MACHAMP_SPA,
-//        .baseSpDefense = MACHAMP_SPD + 20,
+//        .baseHP        = MACHAMP_PARTNER_HP,
+//        .baseAttack    = MACHAMP_PARTNER_ATK + 40,
+//        .baseDefense   = MACHAMP_PARTNER_DEF + 20,
+//        .baseSpeed     = MACHAMP_PARTNER_SPE + 20,
+//        .baseSpAttack  = MACHAMP_PARTNER_SPA,
+//        .baseSpDefense = MACHAMP_PARTNER_SPD + 20,
 //        MACHAMP_GMAX_INFO,
 //    }
 //#endif //P_MEGA_EVOLUTIONS

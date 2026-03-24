@@ -1678,6 +1678,17 @@
 - Machop/Machoke/Machamp:
     - Learn Drain Punch by TM
 
+- Starter Machop:
+    - Spe: 35->45 (315, still need 5 more)
+    - Evolution: 28->16
+
+- Starter Machoke:
+    - Spe: 45->55 (415, still need 5 more)
+    - Evolution: Linking Cord->36
+
+- Starter Machamp:
+    - Spe: 55->65 (515, still need 15 more)
+
 - Bellsprout (not in Emerald):
     - SpA: 70->75
     - Learns Absorb, Mega Drain, Magical Leaf, Giga Drain, Venoshock, and Seed Bomb by level up

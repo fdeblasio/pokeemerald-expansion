@@ -253,8 +253,21 @@ static const u16 sAlakazamFormSpeciesIdTable[] = {
 #endif //P_FAMILY_ABRA
 
 #if P_FAMILY_MACHOP
+static const u16 sMachopFormSpeciesIdTable[] = {
+    SPECIES_MACHOP,
+    SPECIES_MACHOP_PARTNER,
+    FORM_SPECIES_END,
+};
+
+static const u16 sMachokeFormSpeciesIdTable[] = {
+    SPECIES_MACHOKE,
+    SPECIES_MACHOKE_PARTNER,
+    FORM_SPECIES_END,
+};
+
 static const u16 sMachampFormSpeciesIdTable[] = {
     SPECIES_MACHAMP,
+    SPECIES_MACHAMP_PARTNER,
 #if P_GIGANTAMAX_FORMS
     SPECIES_MACHAMP_GMAX,
 #endif

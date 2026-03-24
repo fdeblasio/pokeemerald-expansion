@@ -2749,22 +2749,18 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //P_FAMILY_ABRA
 
 #if P_FAMILY_MACHOP
-#if !P_GBA_STYLE_SPECIES_GFX
-    const u32 gMonFrontPic_Machop[] = INCGFX_U32("graphics/pokemon/machop/anim_front.png", ".4bpp.smol");
-    const u16 gMonPalette_Machop[] = INCGFX_U16("graphics/pokemon/machop/normal.pal", ".gbapal");
-    const u32 gMonBackPic_Machop[] = INCGFX_U32("graphics/pokemon/machop/back.png", ".4bpp.smol");
-    const u16 gMonShinyPalette_Machop[] = INCGFX_U16("graphics/pokemon/machop/shiny.pal", ".gbapal");
-#else
-    const u32 gMonFrontPic_Machop[] = INCGFX_U32("graphics/pokemon/machop/anim_front_gba.png", ".4bpp.smol");
-    const u16 gMonPalette_Machop[] = INCGFX_U16("graphics/pokemon/machop/normal_gba.pal", ".gbapal");
-    const u32 gMonBackPic_Machop[] = INCGFX_U32("graphics/pokemon/machop/back_gba.png", ".4bpp.smol");
-    const u16 gMonShinyPalette_Machop[] = INCGFX_U16("graphics/pokemon/machop/shiny_gba.pal", ".gbapal");
-#endif //P_GBA_STYLE_SPECIES_GFX
-#if !P_GBA_STYLE_SPECIES_ICONS
-    const u8 gMonIcon_Machop[] = INCGFX_U8("graphics/pokemon/machop/icon.png", ".4bpp.rlfast");
-#else
-    const u8 gMonIcon_Machop[] = INCGFX_U8("graphics/pokemon/machop/icon_gba.png", ".4bpp.rlfast");
-#endif //P_GBA_STYLE_SPECIES_ICONS
+const u32 gMonFrontPic_Machop[] = INCGFX_U32("graphics/pokemon/machop/anim_front_gba.png", ".4bpp.smol");
+const u16 gMonPalette_Machop[] = INCGFX_U16("graphics/pokemon/machop/normal_gba.pal", ".gbapal");
+const u32 gMonBackPic_Machop[] = INCGFX_U32("graphics/pokemon/machop/back_gba.png", ".4bpp.smol");
+const u16 gMonShinyPalette_Machop[] = INCGFX_U16("graphics/pokemon/machop/shiny_gba.pal", ".gbapal");
+const u8 gMonIcon_Machop[] = INCGFX_U8("graphics/pokemon/machop/icon_gba.png", ".4bpp");
+
+const u32 gMonFrontPic_MachopPartner[] = INCGFX_U32("graphics/pokemon/machop/anim_front.png", ".4bpp.smol");
+const u16 gMonPalette_MachopPartner[] = INCGFX_U16("graphics/pokemon/machop/normal.pal", ".gbapal");
+const u32 gMonBackPic_MachopPartner[] = INCGFX_U32("graphics/pokemon/machop/back.png", ".4bpp.smol");
+const u16 gMonShinyPalette_MachopPartner[] = INCGFX_U16("graphics/pokemon/machop/shiny.pal", ".gbapal");
+const u8 gMonIcon_MachopPartner[] = INCGFX_U8("graphics/pokemon/machop/icon.png", ".4bpp.rlfast");
+
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Machop[] = INCGFX_U8("graphics/pokemon/machop/footprint.png", ".1bpp");
 #endif //P_FOOTPRINTS
@@ -2776,22 +2772,18 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-#if !P_GBA_STYLE_SPECIES_GFX
-    const u32 gMonFrontPic_Machoke[] = INCGFX_U32("graphics/pokemon/machoke/anim_front.png", ".4bpp.smol");
-    const u16 gMonPalette_Machoke[] = INCGFX_U16("graphics/pokemon/machoke/normal.pal", ".gbapal");
-    const u32 gMonBackPic_Machoke[] = INCGFX_U32("graphics/pokemon/machoke/back.png", ".4bpp.smol");
-    const u16 gMonShinyPalette_Machoke[] = INCGFX_U16("graphics/pokemon/machoke/shiny.pal", ".gbapal");
-#else
-    const u32 gMonFrontPic_Machoke[] = INCGFX_U32("graphics/pokemon/machoke/anim_front_gba.png", ".4bpp.smol");
-    const u16 gMonPalette_Machoke[] = INCGFX_U16("graphics/pokemon/machoke/normal_gba.pal", ".gbapal");
-    const u32 gMonBackPic_Machoke[] = INCGFX_U32("graphics/pokemon/machoke/back_gba.png", ".4bpp.smol");
-    const u16 gMonShinyPalette_Machoke[] = INCGFX_U16("graphics/pokemon/machoke/shiny_gba.pal", ".gbapal");
-#endif //P_GBA_STYLE_SPECIES_GFX
-#if !P_GBA_STYLE_SPECIES_ICONS
-    const u8 gMonIcon_Machoke[] = INCGFX_U8("graphics/pokemon/machoke/icon.png", ".4bpp.rlfast");
-#else
-    const u8 gMonIcon_Machoke[] = INCGFX_U8("graphics/pokemon/machoke/icon_gba.png", ".4bpp.rlfast");
-#endif //P_GBA_STYLE_SPECIES_ICONS
+const u32 gMonFrontPic_Machoke[] = INCGFX_U32("graphics/pokemon/machoke/anim_front_gba.png", ".4bpp.smol");
+const u16 gMonPalette_Machoke[] = INCGFX_U16("graphics/pokemon/machoke/normal_gba.pal", ".gbapal");
+const u32 gMonBackPic_Machoke[] = INCGFX_U32("graphics/pokemon/machoke/back_gba.png", ".4bpp.smol");
+const u16 gMonShinyPalette_Machoke[] = INCGFX_U16("graphics/pokemon/machoke/shiny_gba.pal", ".gbapal");
+const u8 gMonIcon_Machoke[] = INCGFX_U8("graphics/pokemon/machoke/icon_gba.png", ".4bpp");
+
+const u32 gMonFrontPic_MachokePartner[] = INCGFX_U32("graphics/pokemon/machoke/anim_front.png", ".4bpp.smol");
+const u16 gMonPalette_MachokePartner[] = INCGFX_U16("graphics/pokemon/machoke/normal.pal", ".gbapal");
+const u32 gMonBackPic_MachokePartner[] = INCGFX_U32("graphics/pokemon/machoke/back.png", ".4bpp.smol");
+const u16 gMonShinyPalette_MachokePartner[] = INCGFX_U16("graphics/pokemon/machoke/shiny.pal", ".gbapal");
+const u8 gMonIcon_MachokePartner[] = INCGFX_U8("graphics/pokemon/machoke/icon.png", ".4bpp.rlfast");
+
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Machoke[] = INCGFX_U8("graphics/pokemon/machoke/footprint.png", ".1bpp");
 #endif //P_FOOTPRINTS
@@ -2803,22 +2795,19 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-#if !P_GBA_STYLE_SPECIES_GFX
-    const u32 gMonFrontPic_Machamp[] = INCGFX_U32("graphics/pokemon/machamp/anim_front.png", ".4bpp.smol");
-    const u16 gMonPalette_Machamp[] = INCGFX_U16("graphics/pokemon/machamp/normal.pal", ".gbapal");
-    const u32 gMonBackPic_Machamp[] = INCGFX_U32("graphics/pokemon/machamp/back.png", ".4bpp.smol");
-    const u16 gMonShinyPalette_Machamp[] = INCGFX_U16("graphics/pokemon/machamp/shiny.pal", ".gbapal");
-#else
-    const u32 gMonFrontPic_Machamp[] = INCGFX_U32("graphics/pokemon/machamp/anim_front_gba.png", ".4bpp.smol");
-    const u16 gMonPalette_Machamp[] = INCGFX_U16("graphics/pokemon/machamp/normal_gba.pal", ".gbapal");
-    const u32 gMonBackPic_Machamp[] = INCGFX_U32("graphics/pokemon/machamp/back_gba.png", ".4bpp.smol");
-    const u16 gMonShinyPalette_Machamp[] = INCGFX_U16("graphics/pokemon/machamp/shiny_gba.pal", ".gbapal");
-#endif //P_GBA_STYLE_SPECIES_GFX
-#if !P_GBA_STYLE_SPECIES_ICONS
-    const u8 gMonIcon_Machamp[] = INCGFX_U8("graphics/pokemon/machamp/icon.png", ".4bpp.rlfast");
-#else
-    const u8 gMonIcon_Machamp[] = INCGFX_U8("graphics/pokemon/machamp/icon_gba.png", ".4bpp.rlfast");
-#endif //P_GBA_STYLE_SPECIES_ICONS
+
+const u32 gMonFrontPic_Machamp[] = INCGFX_U32("graphics/pokemon/machamp/anim_front_gba.png", ".4bpp.smol");
+const u16 gMonPalette_Machamp[] = INCGFX_U16("graphics/pokemon/machamp/normal_gba.pal", ".gbapal");
+const u32 gMonBackPic_Machamp[] = INCGFX_U32("graphics/pokemon/machamp/back_gba.png", ".4bpp.smol");
+const u16 gMonShinyPalette_Machamp[] = INCGFX_U16("graphics/pokemon/machamp/shiny_gba.pal", ".gbapal");
+const u8 gMonIcon_Machamp[] = INCGFX_U8("graphics/pokemon/machamp/icon_gba.png", ".4bpp.rlfast");
+
+const u32 gMonFrontPic_MachampPartner[] = INCGFX_U32("graphics/pokemon/machamp/anim_front.png", ".4bpp.smol");
+const u16 gMonPalette_MachampPartner[] = INCGFX_U16("graphics/pokemon/machamp/normal.pal", ".gbapal");
+const u32 gMonBackPic_MachampPartner[] = INCGFX_U32("graphics/pokemon/machamp/back.png", ".4bpp.smol");
+const u16 gMonShinyPalette_MachampPartner[] = INCGFX_U16("graphics/pokemon/machamp/shiny.pal", ".gbapal");
+const u8 gMonIcon_MachampPartner[] = INCGFX_U8("graphics/pokemon/machamp/icon.png", ".4bpp.rlfast");
+
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Machamp[] = INCGFX_U8("graphics/pokemon/machamp/footprint.png", ".1bpp");
 #endif //P_FOOTPRINTS
@@ -7049,7 +7038,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
     const u16 gMonPalette_Ledybulk[] = INCGFX_U16("graphics/pokemon/ledybulk/normal.pal", ".gbapal");
     const u32 gMonBackPic_Ledybulk[] = INCGFX_U32("graphics/pokemon/ledybulk/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Ledybulk[] = INCGFX_U16("graphics/pokemon/ledybulk/shiny.pal", ".gbapal");
-    const u8 gMonIcon_Ledybulk[] = INCGFX_U8("graphics/pokemon/ledybulk/icon.png", ".4bpp");
+    const u8 gMonIcon_Ledybulk[] = INCGFX_U8("graphics/pokemon/ledybulk/icon.png", ".4bpp.rlfast");
     const u8 gMonFootprint_Ledybulk[] = INCGFX_U8("graphics/pokemon/ledybulk/footprint.png", ".1bpp");
 #endif //P_FAMILY_LEDYBA
 
@@ -13684,7 +13673,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
     const u16 gMonPalette_Valentide[] = INCGFX_U16("graphics/pokemon/valentide/normal.pal", ".gbapal");
     const u32 gMonBackPic_Valentide[] = INCGFX_U32("graphics/pokemon/valentide/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Valentide[] = INCGFX_U16("graphics/pokemon/valentide/shiny.pal", ".gbapal");
-    const u8 gMonIcon_Valentide[] = INCGFX_U8("graphics/pokemon/valentide/icon.png", ".4bpp");
+    const u8 gMonIcon_Valentide[] = INCGFX_U8("graphics/pokemon/valentide/icon.png", ".4bpp.rlfast");
     const u8 gMonFootprint_Valentide[] = INCGFX_U8("graphics/pokemon/valentide/footprint.png", ".1bpp");
 #endif //P_FAMILY_LUVDISC
 
@@ -14520,7 +14509,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
     const u16 gMonPalette_StaraptorMega[] = INCGFX_U16("graphics/pokemon/staraptor/mega/normal.pal", ".gbapal");
     const u32 gMonBackPic_StaraptorMega[] = INCGFX_U32("graphics/pokemon/staraptor/mega/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_StaraptorMega[] = INCGFX_U16("graphics/pokemon/staraptor/mega/shiny.pal", ".gbapal");
-    const u8 gMonIcon_StaraptorMega[] = INCGFX_U8("graphics/pokemon/staraptor/mega/icon.png", ".4bpp");
+    const u8 gMonIcon_StaraptorMega[] = INCGFX_U8("graphics/pokemon/staraptor/mega/icon.png", ".4bpp.rlfast");
 #if OW_POKEMON_OBJECT_EVENTS && OW_BATTLE_ONLY_FORMS
     // const u32 gObjectEventPic_StaraptorMega[] = INCGFX_COMP("graphics/pokemon/staraptor/mega/overworld.png", ".4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
@@ -14930,7 +14919,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
     const u16 gMonPalette_Pachirikku[] = INCGFX_U16("graphics/pokemon/pachirikku/normal.pal", ".gbapal");
     const u32 gMonBackPic_Pachirikku[] = INCGFX_U32("graphics/pokemon/pachirikku/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Pachirikku[] = INCGFX_U16("graphics/pokemon/pachirikku/shiny.pal", ".gbapal");
-    const u8 gMonIcon_Pachirikku[] = INCGFX_U8("graphics/pokemon/pachirikku/icon.png", ".4bpp");
+    const u8 gMonIcon_Pachirikku[] = INCGFX_U8("graphics/pokemon/pachirikku/icon.png", ".4bpp.rlfast");
     const u8 gMonFootprint_Pachirikku[] = INCGFX_U8("graphics/pokemon/pachirikku/footprint.png", ".1bpp");
 #endif //P_FAMILY_PACHIRISU
 
@@ -15285,7 +15274,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
     const u16 gMonPalette_Conductot[] = INCGFX_U16("graphics/pokemon/conductot/normal.pal", ".gbapal");
     const u32 gMonBackPic_Conductot[] = INCGFX_U32("graphics/pokemon/conductot/back.png", ".4bpp.smol");
     const u16 gMonShinyPalette_Conductot[] = INCGFX_U16("graphics/pokemon/conductot/shiny.pal", ".gbapal");
-    const u8 gMonIcon_Conductot[] = INCGFX_U8("graphics/pokemon/conductot/icon.png", ".4bpp");
+    const u8 gMonIcon_Conductot[] = INCGFX_U8("graphics/pokemon/conductot/icon.png", ".4bpp.rlfast");
     const u8 gMonFootprint_Conductot[] = INCGFX_U8("graphics/pokemon/conductot/footprint.png", ".1bpp");
 #endif //P_FAMILY_CHATOT
 

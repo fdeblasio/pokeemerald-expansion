@@ -478,35 +478,13 @@ static const struct MenuAction sMenuActions_Gender[] = {
 };
 
 static const u8 *const sMalePresetNames[] = {
-    COMPOUND_STRING("Frank"),
-    COMPOUND_STRING("Jake"),
     COMPOUND_STRING("Rafi"),
-    COMPOUND_STRING("Junya"),
-    COMPOUND_STRING("Felix"),
-    COMPOUND_STRING("Dan"),
-    COMPOUND_STRING("Eric"),
-    COMPOUND_STRING("Tom"),
-    COMPOUND_STRING("Jack"),
-    COMPOUND_STRING("Gus"),
-    COMPOUND_STRING("Will"),
-    COMPOUND_STRING("Jeff"),
-    COMPOUND_STRING("Duncan")
+    COMPOUND_STRING("Rafael")
 };
 
 static const u8 *const sFemalePresetNames[] = {
-    COMPOUND_STRING("Emily"),
     COMPOUND_STRING("Kim"),
-    COMPOUND_STRING("Sara"),
-    COMPOUND_STRING("Julie"),
-    COMPOUND_STRING("Ashley"),
-    COMPOUND_STRING("Kristen"),
-    COMPOUND_STRING("Tanvi"),
-    COMPOUND_STRING("Kylie"),
-    COMPOUND_STRING("Mariah"),
-    COMPOUND_STRING("Cassidy"),
-    COMPOUND_STRING("Mackenzie"),
-    COMPOUND_STRING("Meghan"),
-    COMPOUND_STRING("Kelli")
+    COMPOUND_STRING("Kimberly")
 };
 
 // The number of male vs. female names is assumed to be the same.

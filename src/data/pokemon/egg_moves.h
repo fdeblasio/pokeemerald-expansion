@@ -7387,6 +7387,7 @@ static const u16 sTadbulbEggMoveLearnset[] = {
 
 #if P_FAMILY_WATTREL
 static const u16 sWattrelEggMoveLearnset[] = {
+    MOVE_BOLT_BEAK,
     MOVE_SPIT_UP,
     MOVE_STOCKPILE,
     MOVE_SWALLOW,

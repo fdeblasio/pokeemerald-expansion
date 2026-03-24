@@ -2418,6 +2418,7 @@
   "CHIKORITA": {
     "LevelMoves": [
       {"Level": 6, "Move": "MOVE_VINE_WHIP"},
+      {"Level": 28, "Move": "MOVE_GROWTH"},
       {"Level": 34, "Move": "MOVE_SEED_BOMB"},
       {"Level": 45, "Move": "MOVE_ENERGY_BALL"}
     ],
@@ -2429,6 +2430,7 @@
   "BAYLEEF": {
     "LevelMoves": [
       {"Level": 1, "Move": "MOVE_VINE_WHIP"},
+      {"Level": 32, "Move": "MOVE_GROWTH"},
       {"Level": 40, "Move": "MOVE_SEED_BOMB"},
       {"Level": 54, "Move": "MOVE_ENERGY_BALL"}
     ],
@@ -2442,6 +2444,7 @@
       {"Level": 1, "Move": "MOVE_VINE_WHIP"},
       {"Level": 1, "Move": "MOVE_FAIRY_WIND"},
       {"Level": 22, "Move": "MOVE_DISARMING_VOICE"},
+      {"Level": 34, "Move": "MOVE_GROWTH"},
       {"Level": 40, "Move": "MOVE_DAZZLING_GLEAM"},
       {"Level": 46, "Move": "MOVE_SEED_BOMB"},
       {"Level": 65, "Move": "MOVE_ENERGY_BALL"}
@@ -9669,21 +9672,27 @@
     "TutorMoves": []
   },
   "ORBEETLE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 16, "Move": "MOVE_SIGNAL_BEAM"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "NICKIT": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 32, "Move": "MOVE_DARK_PULSE"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "THIEVUL": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 40, "Move": "MOVE_DARK_PULSE"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -9962,14 +9971,20 @@
     "TutorMoves": []
   },
   "SIZZLIPEDE": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 1, "Move": "MOVE_POUNCE"},
+      {"Level": 55, "Move": "MOVE_LEECH_LIFE"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "CENTISKORCH": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 1, "Move": "MOVE_POUNCE"},
+      {"Level": 67, "Move": "MOVE_LEECH_LIFE"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -10095,7 +10110,9 @@
     "TutorMoves": []
   },
   "PINCURCHIN": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 65, "Move": "MOVE_SUPERCELL_SLAM"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -10296,7 +10313,12 @@
     "TutorMoves": []
   },
   "ETERNATUS": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 1, "Move": "MOVE_ACID_SPRAY"},
+      {"Level": 1, "Move": "MOVE_TWISTER"},
+      {"Level": 16, "Move": "MOVE_DRAGON_BREATH"},
+      {"Level": 40, "Move": "MOVE_SLUDGE_BOMB"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

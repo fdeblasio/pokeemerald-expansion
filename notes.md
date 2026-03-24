@@ -87,7 +87,7 @@ upcoming
 ### Pokémon
 - Give all Pokémon updated movesets
     - Not including cross-gen evos or regionals or already updated:
-        8: 96
+        8: 20 (fossils, Kubfu-Zarude, Glastrier-Calyrex, double-check Morpeko, Regieleki, Regidrago)
         4: 107
         9: 120
         5: 156

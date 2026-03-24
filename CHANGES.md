@@ -4587,6 +4587,18 @@
     - Spe: 67->70
     - Learns Iron Head by level up
 
+- Blipbug:
+    - SpA: 25->30
+
+- Dottler:
+    - Spe: 30->35
+
+- Orbeetle:
+    - Learns Signal Beam by level up
+
+- Nickit/Thievul:
+    - Learn Dark Pulse by level up
+
 - Gossifleur:
     - SpA: 40->60
     - Learns Absorb, Mega Drain, Magical Leaf, Giga Drain, Energy Ball, and Pollen Puff by level up
@@ -4671,6 +4683,9 @@
     - SpA: 114->115
     - Learns Thunderbolt and Sludge Bomb by level up
 
+- Sizzlipede/Centiskorch:
+    - Learn Pounce and Leech Life by level up
+
 - Clobbopus:
     - Received Suction Cups as a second ability
 
@@ -4728,6 +4743,9 @@
     - HP: 65->75
     - SpD: 65->75
 
+- Pincurchin:
+    - Learns Supercell Slam by level up
+
 - Snom:
     - Evolution: friendship->21
 
@@ -4761,6 +4779,11 @@
         - Relic Copper: 0%->5%
     - Received Sturdy as a second ability
 
+- Dracozolt:
+- Arctozolt:
+- Dracovish:
+- Arctovish:
+
 - Duraludon:
     - Catch rate: 45->90
     - Learns Twister, Dragon Breath, Mirror Shot, Smart Strike, Dragon Pulse, and Steel Beam by level up
@@ -4793,11 +4816,26 @@
     - Gender ratio: genderless->100/0
     - Learns Brick Break and Body Press by level up
 
+- Eternatus:
+    - Learns Acid Spray, Twister, Dragon Breath, and Sludge Bomb by level up
+
+- Eternamax Eternatus:
+    - SpA: 125->145
+
+- Kubfu:
+- Urshifu:
+
+- Zarude:
+
 - Regieleki:
     - Learn Rest and Endure by level up
 
 - Regidrago:
     - Learns Rest and Endure by level up
+
+- Glastrier:
+- Spectrier:
+- Calyrex:
 
 - Enamorus:
     - Learns Play Rough by level up

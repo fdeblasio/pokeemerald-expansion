@@ -43,10 +43,7 @@ upcoming
 
 ## Hack-specific:
 - Starters: Machop for Rafi, ??? for Kim
-- Need to figure out how to get gender-specific starters
-- Reduce Rival battles to 1 per gender, figure out other VAR_STARTER_MON checks
-	- checkplayergender (gSaveBlock2Ptr->playerGender)?
-- Either make new Machop/??? forms or edit them to match other starters (BST, evolution levels, etc.)
+- Either make new Machop/??? forms (like with partner Pikachu/Eevee) or edit them to match other starters (BST, evolution levels, etc.)
 - If Kim's has a mega, make Mega Machamp G
 - Team Admins?: Oleg, Kate, Helen, Cam
 

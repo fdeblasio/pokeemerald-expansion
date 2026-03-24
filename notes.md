@@ -792,7 +792,6 @@ upcoming
                 - Could maybe make 3 seperate structs after this
         - Update Favor Lady's items to include new items
             - Wait for PR in upcoming
-            - Replace TM15 and PP Max
         - Allow multiple items to be given. Potentially PokeBlocks and quizzes too
     - Edit contests
         - Add combos for Electric Terrain->Electric, Sunny Day->Fire, etc.

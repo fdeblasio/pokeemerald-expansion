@@ -694,15 +694,16 @@
     - Dual Wingbeat:
         - Accuracy: 90->100
         - PP: 10->15
-    - Gust:
-        - PP: 35->40
     - Fly:
         - Accuracy: 95->100
+    - Gust:
+        - PP: 35->40
     - Peck:
         - Power: 35->40
         - PP: 35->40
     - Sky Attack:
         - Accuracy: 90->100
+        - PP: 5->10
     - Wing Attack:
         - Power: 60->65
 - Poison:

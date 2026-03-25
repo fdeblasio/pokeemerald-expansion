@@ -36,6 +36,7 @@ const u8 gNotDoneYetDescription[] = _(
 #define MOVE_TRAP_COMBOS COMBO_STARTER_ENCORE, COMBO_STARTER_TAUNT, COMBO_STARTER_TORMENT
 
 // Damage macros
+// General
 #define BASIC_MOVE             \
     .effect = EFFECT_HIT,      \
     .accuracy = 100,           \
@@ -50,6 +51,56 @@ const u8 gNotDoneYetDescription[] = _(
         .moveEffect = Effect,                 \
         .chance = Chance,                     \
     })
+
+#define TRAPPING_MOVE(Move)                               \
+    .effect = EFFECT_HIT,                                 \
+    .target = TARGET_SELECTED,                            \
+    .priority = 0,                                        \
+    .ignoresKingsRock = B_UPDATED_MOVE_FLAGS < GEN_3,     \
+    .additionalEffects = ADDITIONAL_EFFECTS({             \
+        .moveEffect = MOVE_EFFECT_WRAP,                   \
+        .multistring.wrapped = Move,                      \
+    }),                                                   \
+    .contestEffect = CONTEST_EFFECT_DONT_EXCITE_AUDIENCE, \
+    .validApprenticeMove = TRUE
+
+#define LOWER_STAT_INFO(Stat)                 \
+    .effect = EFFECT_HIT,                     \
+    .accuracy = 100,                          \
+    .priority = 0,                            \
+    .additionalEffects = ADDITIONAL_EFFECTS({ \
+        .moveEffect = Stat,                   \
+        .chance = 100,                        \
+    })
+
+#define HIT_TWICE_INFO \
+    BASIC_MOVE,        \
+    .strikeCount = 2,  \
+    .validApprenticeMove = TRUE
+
+#define RECOIL_INFO(recoil)                     \
+    .effect = EFFECT_RECOIL,                    \
+    .target = TARGET_SELECTED,                  \
+    .priority = 0,                              \
+    .argument = { .recoilPercentage = recoil }, \
+    .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED
+
+#define SEMI_INVULNERABLE_INFO(StringId, Status)                          \
+    .effect = EFFECT_SEMI_INVULNERABLE,                                   \
+    .target = TARGET_SELECTED,                                            \
+    .priority = 0,                                                        \
+    .category = DAMAGE_CATEGORY_PHYSICAL,                                 \
+    .makesContact = TRUE,                                                 \
+    .sleepTalkBanned = TRUE,                                              \
+    .instructBanned = TRUE,                                               \
+    .assistBanned = B_UPDATED_MOVE_FLAGS >= GEN_6,                        \
+    .argument.twoTurnAttack = { .stringId = StringId, .status = Status }, \
+    .validApprenticeMove = TRUE
+
+#define TWO_TURN_ATTACK_INFO(StringId, ...) \
+    .effect = EFFECT_TWO_TURNS_ATTACK,      \
+    .priority = 0,                          \
+    .argument.twoTurnAttack = { .stringId = StringId __VA_OPT__(, .weather = __VA_ARGS__) }
 
 #define INCREASED_CRITICAL B_UPDATED_MOVE_DATA >= GEN_3 ? 1 : 2
 
@@ -82,18 +133,6 @@ const u8 gNotDoneYetDescription[] = _(
     .target = TARGET_SELECTED
 
 // 35
-#define TRAPPING_MOVE(Move)                               \
-    .effect = EFFECT_HIT,                                 \
-    .target = TARGET_SELECTED,                            \
-    .priority = 0,                                        \
-    .ignoresKingsRock = B_UPDATED_MOVE_FLAGS < GEN_3,     \
-    .additionalEffects = ADDITIONAL_EFFECTS({             \
-        .moveEffect = MOVE_EFFECT_WRAP,                   \
-        .multistring.wrapped = Move,                      \
-    }),                                                   \
-    .contestEffect = CONTEST_EFFECT_DONT_EXCITE_AUDIENCE, \
-    .validApprenticeMove = TRUE
-
 #define TRAPPING_35_POWER_MOVE(Move)                     \
     TRAPPING_MOVE(Move),                                 \
     .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 35 : 15,     \
@@ -165,15 +204,6 @@ const u8 gNotDoneYetDescription[] = _(
     }),                                        \
     .contestEffect = CONTEST_EFFECT_BETTER_WITH_GOOD_CONDITION
 
-#define LOWER_STAT_INFO(Stat)                 \
-    .effect = EFFECT_HIT,                     \
-    .accuracy = 100,                          \
-    .priority = 0,                            \
-    .additionalEffects = ADDITIONAL_EFFECTS({ \
-        .moveEffect = Stat,                   \
-        .chance = 100,                        \
-    })
-
 #define LOWER_STAT_50_POWER_INFO(Stat)               \
     LOWER_STAT_INFO(MOVE_EFFECT_##Stat##_MINUS_1),   \
     .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 50 : 30, \
@@ -185,12 +215,13 @@ const u8 gNotDoneYetDescription[] = _(
     .pp = 20,            \
     .multiHit = TRUE
 
-#define CHANGE_TYPE_AND_DOUBLE_INFO \
-    .power = 50,                    \
-    .accuracy = 100,                \
-    .pp = 10,                       \
-    .target = TARGET_SELECTED,      \
-    .priority = 0,                  \
+#define CHANGE_TYPE_AND_DOUBLE_INFO    \
+    .power = 50,                       \
+    .accuracy = 100,                   \
+    .pp = 10,                          \
+    .target = TARGET_SELECTED,         \
+    .priority = 0,                     \
+    .zMove = { .powerOverride = 160 }, \
     .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_REPETITION_NOT_BORING : CONTEST_EFFECT_HIGHLY_APPEALING
 
 // 55
@@ -300,11 +331,6 @@ const u8 gNotDoneYetDescription[] = _(
     }),                                       \
     .contestEffect = CONTEST_EFFECT_WORSEN_CONDITION_OF_PREV_MONS
 
-#define HIT_TWICE_INFO \
-    BASIC_MOVE,        \
-    .strikeCount = 2,  \
-    .validApprenticeMove = TRUE
-
 #define HIT_TWICE_60_TOTAL_POWER_INFO \
     HIT_TWICE_INFO,                   \
     .power = 30,                      \
@@ -400,6 +426,40 @@ const u8 gNotDoneYetDescription[] = _(
     .priority = 0,               \
     .contestEffect = CONTEST_EFFECT_AVOID_STARTLE //CONTEST_EFFECT_QUICKLY_GROW_BORED
 
+// 75
+#define ELEMENTAL_PUNCH_INFO(MoveEffect)              \
+    BASIC_MOVE,                                       \
+    .power = 75,                                      \
+    .pp = 15,                                         \
+    .category = DAMAGE_CATEGORY_PHYSICAL,             \
+    .makesContact = TRUE,                             \
+    .punchingMove = TRUE,                             \
+    .additionalEffects = ADDITIONAL_EFFECTS({         \
+        .moveEffect = MoveEffect,                     \
+        .chance = 10,                                 \
+    }),                                               \
+    .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING, \
+    .validApprenticeMove = TRUE
+
+#define LOWER_DEFENSE_75_POWER_INFO            \
+    BASIC_MOVE,                                \
+    .power = 75,                               \
+    .pp = 10,                                  \
+    .additionalEffects = ADDITIONAL_EFFECTS({  \
+        .moveEffect = MOVE_EFFECT_DEF_MINUS_1, \
+        .chance = 50,                          \
+    }),                                        \
+    .validApprenticeMove = TRUE
+
+#define DOUBLE_IF_FAILED_75_POWER_INFO \
+    .effect = EFFECT_STOMPING_TANTRUM, \
+    .power = 75,                       \
+    .accuracy = 100,                   \
+    .pp = 10,                          \
+    .target = TARGET_SELECTED,         \
+    .priority = 0,                     \
+    .category = DAMAGE_CATEGORY_PHYSICAL
+
 // 80
 #define BASIC_80_POWER_INFO \
     BASIC_MOVE,             \
@@ -408,18 +468,11 @@ const u8 gNotDoneYetDescription[] = _(
     .validApprenticeMove = TRUE
 
 #define SEMI_INVULNERABLE_80_POWER_INFO(StringId, Status)                                   \
-    .effect = EFFECT_SEMI_INVULNERABLE,                                                     \
+    SEMI_INVULNERABLE_INFO(StringId, Status),                                               \
     .power = B_UPDATED_MOVE_DATA >= GEN_4 ? 80 : (B_UPDATED_MOVE_DATA >= GEN_2 ? 60 : 100), \
     .accuracy = 100,                                                                        \
     .pp = 10,                                                                               \
-    .target = TARGET_SELECTED,                                                              \
-    .priority = 0,                                                                          \
-    .sleepTalkBanned = TRUE,                                                                \
-    .instructBanned = TRUE,                                                                 \
-    .assistBanned = B_UPDATED_MOVE_FLAGS >= GEN_6,                                          \
-    .skyBattleBanned = TRUE,                                                                \
-    .argument.twoTurnAttack = { .stringId = StringId, .status = Status },                   \
-    .validApprenticeMove = TRUE
+    .skyBattleBanned = TRUE
 
 #define HIT_ADJACENT_80_POWER(Status)         \
     .effect = EFFECT_HIT,                     \
@@ -495,7 +548,7 @@ const u8 gNotDoneYetDescription[] = _(
     .pp = 10,                               \
     .validApprenticeMove = TRUE
 
-// 100
+// 110
 #define WEATHER_AFFECTED_110_POWER_INFO                \
     .effect = EFFECT_HIT,                              \
     .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 110 : 120, \
@@ -522,13 +575,6 @@ const u8 gNotDoneYetDescription[] = _(
     .strikeCount = 3,             \
     .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_REPETITION_NOT_BORING : CONTEST_EFFECT_HIGHLY_APPEALING, \
     .validApprenticeMove = TRUE
-
-#define RECOIL_INFO(recoil)                     \
-    .effect = EFFECT_RECOIL,                    \
-    .target = TARGET_SELECTED,                  \
-    .priority = 0,                              \
-    .argument = { .recoilPercentage = recoil }, \
-    .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED
 
 #define RECOIL_120_POWER_INFO \
     RECOIL_INFO(33),          \
@@ -563,7 +609,7 @@ const u8 gNotDoneYetDescription[] = _(
         .chance = 100,                        \
     })
 
-// 130
+// 130-140
 #define LOWER_SPECIAL_ATTACK_INFO                 \
     .effect = EFFECT_HIT,                         \
     .target = TARGET_SELECTED,                    \
@@ -586,7 +632,21 @@ const u8 gNotDoneYetDescription[] = _(
     .accuracy = 100,                        \
     .pp = 10
 
-// 150
+#define TWO_TURN_ATTACK_140_POWER_INFO(StringId, MoveEffect) \
+    TWO_TURN_ATTACK_INFO(StringId),              \
+    .power = 140,                                \
+    .accuracy = 100,                             \
+    .pp = 10,                                    \
+    .target = TARGET_SELECTED,                   \
+    .sleepTalkBanned = TRUE,                     \
+    .instructBanned = TRUE,                      \
+    .additionalEffects = ADDITIONAL_EFFECTS({    \
+        .moveEffect = MoveEffect,                \
+        .chance = 30,                            \
+    }),                                          \
+    .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL
+
+// 150-160
 #define RECHARGE_INFO                         \
     .effect = EFFECT_HIT,                     \
     .target = TARGET_SELECTED,                \
@@ -609,6 +669,18 @@ const u8 gNotDoneYetDescription[] = _(
     .accuracy = 100,            \
     .pp = 10
 
+#define POWER_BASED_ON_HP_150_POWER_INFO        \
+    .effect = EFFECT_POWER_BASED_ON_USER_HP,    \
+    .power = 150,                               \
+    .accuracy = 100,                            \
+    .pp = 5,                                    \
+    .target = TARGET_BOTH,                      \
+    .priority = 0,                              \
+    .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_USER_MORE_EASILY_STARTLED : CONTEST_EFFECT_BETTER_WHEN_LATER, \
+    .contestCategory = CONTEST_CATEGORY_BEAUTY, \
+    .validApprenticeMove = TRUE
+
+// Other
 #define OHKO_INFO              \
     .effect = EFFECT_OHKO,     \
     .power = 1,                \
@@ -936,23 +1008,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A fiery punch that may burn\n"
             "the foe."),
-        BASIC_MOVE,
-        .power = 75,
+        ELEMENTAL_PUNCH_INFO(MOVE_EFFECT_BURN),
         .type = TYPE_FIRE,
-        .pp = 15,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
-        .punchingMove = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_BURN,
-            .chance = 10,
-        }),
-        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_COOL : CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = COMBO_STARTER_FIRE_PUNCH,
         .contestComboMoves = {COMBO_STARTER_ICE_PUNCH, COMBO_STARTER_SUNNY_DAY, COMBO_STARTER_THUNDER_PUNCH},
         .battleAnimScript = gBattleAnimMove_FirePunch,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_ICE_PUNCH] =
@@ -965,23 +1026,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         #else
             "freeze the foe."),
         #endif
-        BASIC_MOVE,
-        .power = 75,
+        ELEMENTAL_PUNCH_INFO(MOVE_EFFECT_FREEZE_OR_FROSTBITE),
         .type = TYPE_ICE,
-        .pp = 15,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
-        .punchingMove = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
-            .chance = 10,
-        }),
-        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = COMBO_STARTER_ICE_PUNCH,
         .contestComboMoves = {COMBO_STARTER_FIRE_PUNCH, COMBO_STARTER_THUNDER_PUNCH},
         .battleAnimScript = gBattleAnimMove_IcePunch,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_THUNDER_PUNCH] =
@@ -990,23 +1040,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "An electrified punch that\n"
             "may paralyze the foe."),
-        BASIC_MOVE,
-        .power = 75,
+        ELEMENTAL_PUNCH_INFO(MOVE_EFFECT_PARALYSIS),
         .type = TYPE_ELECTRIC,
-        .pp = 15,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
-        .punchingMove = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_PARALYSIS,
-            .chance = 10,
-        }),
-        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = COMBO_STARTER_THUNDER_PUNCH,
         .contestComboMoves = {COMBO_STARTER_CHARGE, COMBO_STARTER_FIRE_PUNCH, COMBO_STARTER_ICE_PUNCH},
         .battleAnimScript = gBattleAnimMove_ThunderPunch,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_SCRATCH] =
@@ -1070,7 +1109,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
                 "A 2-turn move with a high\n"
                 "critical-hit ratio."),
         #endif
-        .effect = EFFECT_TWO_TURNS_ATTACK,
+        TWO_TURN_ATTACK_INFO(STRINGID_PKMNWHIPPEDWHIRLWIND),
         .power = 80,
         .type = TYPE_NORMAL,
         .accuracy = B_UPDATED_MOVE_DATA >= GEN_3 ? 100 : 75,
@@ -1083,12 +1122,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         #endif
         .pp = 10,
         .target = TARGET_BOTH,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .sleepTalkBanned = TRUE,
         .instructBanned = TRUE,
         .windMove = B_EXTRAPOLATED_MOVE_FLAGS,
-        .argument.twoTurnAttack = { .stringId = STRINGID_PKMNWHIPPEDWHIRLWIND },
         .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL,
         NO_COMBO(CONTEST_CATEGORY_COOL),
         .battleAnimScript = gBattleAnimMove_RazorWind,
@@ -1190,24 +1227,15 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Flies up on the first turn,\n"
             "then strikes the next turn."),
-        .effect = EFFECT_SEMI_INVULNERABLE,
+        SEMI_INVULNERABLE_INFO(STRINGID_PKMNFLEWHIGH, STATE_ON_AIR),
         .power = B_UPDATED_MOVE_DATA >= GEN_4 ? 90 : 70,
         .type = TYPE_FLYING,
         .accuracy = 100,
         .pp = 15,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
         .gravityBanned = TRUE,
-        .sleepTalkBanned = TRUE,
-        .instructBanned = TRUE,
-        .assistBanned = B_UPDATED_MOVE_FLAGS >= GEN_6,
-        .argument.twoTurnAttack = { .stringId = STRINGID_PKMNFLEWHIGH, .status = STATE_ON_AIR },
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_AVOID_STARTLE_ONCE : CONTEST_EFFECT_AVOID_STARTLE,
         NO_COMBO(CONTEST_CATEGORY_SMART),
         .battleAnimScript = gBattleAnimMove_Fly,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_BIND] =
@@ -2636,8 +2664,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "turn and strikes next turn."),
         SEMI_INVULNERABLE_80_POWER_INFO(STRINGID_PKMNDUGHOLE, STATE_UNDERGROUND),
         .type = TYPE_GROUND,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_AVOID_STARTLE_ONCE : CONTEST_EFFECT_AVOID_STARTLE,
         NO_COMBO(C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_TOUGH : CONTEST_CATEGORY_SMART),
         .battleAnimScript = gBattleAnimMove_Dig,
@@ -3561,18 +3587,16 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Tucks in the head, then\n"
             "attacks on the next turn."),
-        .effect = EFFECT_TWO_TURNS_ATTACK,
+        TWO_TURN_ATTACK_INFO(STRINGID_PKMNLOWEREDHEAD),
         .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 130 : 100,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = B_UPDATED_MOVE_DATA >= GEN_6 ? 10 : 15,
         .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .sleepTalkBanned = TRUE,
         .instructBanned = TRUE,
-        .argument.twoTurnAttack = { .stringId = STRINGID_PKMNLOWEREDHEAD },
         #if B_UPDATED_MOVE_DATA >= GEN_2
             .additionalEffects = ADDITIONAL_EFFECTS({
                 .moveEffect = MOVE_EFFECT_DEF_PLUS_1,
@@ -3880,25 +3904,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "2-turn attack. High critical\n"
             "hit ratio, and may flinch."),
-        .effect = EFFECT_TWO_TURNS_ATTACK,
-        .power = 140,
+        TWO_TURN_ATTACK_140_POWER_INFO(STRINGID_CLOAKEDINAHARSHLIGHT, MOVE_EFFECT_FLINCH),
         .type = TYPE_FLYING,
-        .accuracy = 100,
-        .pp = 5,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .criticalHitStage = B_UPDATED_MOVE_DATA >= GEN_3,
-        .sleepTalkBanned = TRUE,
-        .instructBanned = TRUE,
-        .argument.twoTurnAttack = { .stringId = STRINGID_CLOAKEDINAHARSHLIGHT },
-    #if B_UPDATED_MOVE_DATA >= GEN_3
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_FLINCH,
-            .chance = 30,
-        }),
-    #endif
-        .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL,
         NO_COMBO(CONTEST_CATEGORY_COOL),
         .battleAnimScript = gBattleAnimMove_SkyAttack,
         .validApprenticeMove = TRUE,
@@ -7290,20 +7299,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "The higher the user's HP,\n"
             "the more damage caused."),
-        .effect = EFFECT_POWER_BASED_ON_USER_HP,
-        .power = 150,
+        POWER_BASED_ON_HP_150_POWER_INFO,
         .type = TYPE_FIRE,
-        .accuracy = 100,
-        .pp = 5,
-        .target = TARGET_BOTH,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_USER_MORE_EASILY_STARTLED : CONTEST_EFFECT_BETTER_WHEN_LATER,
-        .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_EARTHQUAKE, COMBO_STARTER_ENDURE, COMBO_STARTER_SUNNY_DAY},
         .battleAnimScript = gBattleAnimMove_Eruption,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_SKILL_SWAP] =
@@ -7463,8 +7464,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "turn and strikes next turn."),
         SEMI_INVULNERABLE_80_POWER_INFO(STRINGID_PKMNHIDUNDERWATER, STATE_UNDERWATER),
         .type = TYPE_WATER,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
         .contestEffect = CONTEST_EFFECT_AVOID_STARTLE_ONCE,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = COMBO_STARTER_DIVE,
@@ -7795,22 +7794,15 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Tears at the foe with sharp\n"
             "claws. May lower Defense."),
-        BASIC_MOVE,
-        .power = 75,
+        LOWER_DEFENSE_75_POWER_INFO,
         .type = TYPE_NORMAL,
-        .pp = 10,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_DEF_MINUS_1,
-            .chance = 50,
-        }),
         .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_SWORDS_DANCE},
         .battleAnimScript = gBattleAnimMove_CrushClaw,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_BLAST_BURN] =
@@ -7900,7 +7892,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         CHANGE_TYPE_AND_DOUBLE_INFO,
         .type = TYPE_NORMAL,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .zMove = { .powerOverride = 160 },
         .ballisticMove = TRUE,
         .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_BEAUTY : CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
@@ -8158,20 +8149,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Inflicts more damage if the\n"
             "user's HP is high."),
-        .effect = EFFECT_POWER_BASED_ON_USER_HP,
-        .power = 150,
+        POWER_BASED_ON_HP_150_POWER_INFO,
         .type = TYPE_WATER,
-        .accuracy = 100,
-        .pp = 5,
-        .target = TARGET_BOTH,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_USER_MORE_EASILY_STARTLED : CONTEST_EFFECT_BETTER_WHEN_LATER,
-        .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_RAIN_DANCE},
         .battleAnimScript = gBattleAnimMove_WaterSpout,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_SIGNAL_BEAM] =
@@ -8502,20 +8484,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Bounces up, then down the\n"
             "next turn. May paralyze."),
-        .effect = EFFECT_SEMI_INVULNERABLE,
+        SEMI_INVULNERABLE_INFO(STRINGID_PKMNSPRANGUP, STATE_ON_AIR),
         .power = 85,
         .type = TYPE_FLYING,
         .accuracy = 85,
         .pp = 5,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
         .gravityBanned = TRUE,
-        .sleepTalkBanned = TRUE,
-        .instructBanned = TRUE,
-        .assistBanned = B_UPDATED_MOVE_FLAGS >= GEN_6,
-        .argument.twoTurnAttack = { .stringId = STRINGID_PKMNSPRANGUP, .status = STATE_ON_AIR },
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_PARALYSIS,
             .chance = 30,
@@ -8523,7 +8497,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = CONTEST_EFFECT_AVOID_STARTLE,
         NO_COMBO(CONTEST_CATEGORY_CUTE),
         .battleAnimScript = gBattleAnimMove_Bounce,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_MUD_SHOT] =
@@ -11027,21 +11000,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Vanishes on the first turn\n"
             "then strikes the next turn."),
-        .effect = EFFECT_SEMI_INVULNERABLE,
+        SEMI_INVULNERABLE_INFO(STRINGID_VANISHEDINSTANTLY, STATE_PHANTOM_FORCE),
         .power = 120,
         .type = TYPE_GHOST,
         .accuracy = 100,
         .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
         .ignoresProtect = TRUE,
         .minimizeDoubleDamage = B_UPDATED_MOVE_FLAGS == GEN_6,
-        .sleepTalkBanned = TRUE,
-        .instructBanned = TRUE,
-        .assistBanned = B_UPDATED_MOVE_FLAGS >= GEN_6,
-        .argument.twoTurnAttack = { .stringId = STRINGID_VANISHEDINSTANTLY, .status = STATE_PHANTOM_FORCE },
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_FEINT,
         }),
@@ -11182,21 +11147,24 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_Psyshock,
     },
 
+#define DOUBLE_ON_STATUS_65_POWER_INFO(Status)   \
+    .effect = EFFECT_DOUBLE_POWER_ON_ARG_STATUS, \
+    .power = 65,                                 \
+    .accuracy = 100,                             \
+    .pp = 10,                                    \
+    .target = TARGET_SELECTED,                   \
+    .priority = 0,                               \
+    .argument = { .status = Status }
+
     [MOVE_VENOSHOCK] =
     {
         .name = COMPOUND_STRING("Venoshock"),
         .description = COMPOUND_STRING(
             "Does double damage if the\n"
             "foe is poisoned."),
-        .effect = EFFECT_DOUBLE_POWER_ON_ARG_STATUS,
-        .power = 65,
+        DOUBLE_ON_STATUS_65_POWER_INFO(STATUS1_PSN_ANY),
         .type = TYPE_POISON,
-        .accuracy = 100,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .argument = { .status = STATUS1_PSN_ANY },
         .contestEffect = CONTEST_EFFECT_BETTER_IF_SAME_TYPE,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
@@ -11858,16 +11826,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Does double damage if the\n"
             "foe has a status problem."),
-        .effect = EFFECT_DOUBLE_POWER_ON_ARG_STATUS,
-        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 65 : 50,
+        DOUBLE_ON_STATUS_65_POWER_INFO(STATUS1_ANY),
         .type = TYPE_GHOST,
-        .accuracy = 100,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .zMove = { .powerOverride = 160 },
-        .argument = { .status = STATUS1_ANY },
         .contestEffect = CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL,
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
@@ -12380,17 +12342,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Tears at the foe with sharp\n"
             "shells. May lower Defense."),
-        BASIC_MOVE,
-        .power = 75,
+        LOWER_DEFENSE_75_POWER_INFO,
         .type = TYPE_WATER,
-        .pp = 10,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .slicingMove = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_DEF_MINUS_1,
-            .chance = 50,
-        }),
         .contestEffect = CONTEST_EFFECT_REPETITION_NOT_BORING,
         NO_COMBO(CONTEST_CATEGORY_COOL),
         .battleAnimScript = gBattleAnimMove_RazorShell,
@@ -12768,23 +12724,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A powerful 2-turn move that\n"
             "may paralyze the foe."),
-        .effect = EFFECT_TWO_TURNS_ATTACK,
-        .power = 140,
+        TWO_TURN_ATTACK_140_POWER_INFO(STRINGID_CLOAKEDINAFREEZINGLIGHT, MOVE_EFFECT_PARALYSIS),
         .type = TYPE_ICE,
-        .accuracy = 100,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .metronomeBanned = TRUE,
-        .sleepTalkBanned = TRUE,
-        .instructBanned = TRUE,
-        .argument.twoTurnAttack = { .stringId = STRINGID_CLOAKEDINAFREEZINGLIGHT },
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_PARALYSIS,
-            .chance = 30,
-        }),
-        .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL,
         NO_COMBO(CONTEST_CATEGORY_BEAUTY),
         .battleAnimScript = gBattleAnimMove_FreezeShock,
     },
@@ -12795,23 +12738,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A powerful 2-turn move that\n"
             "may inflict a burn."),
-        .effect = EFFECT_TWO_TURNS_ATTACK,
-        .power = 140,
+        TWO_TURN_ATTACK_140_POWER_INFO(STRINGID_CLOAKEDINAFREEZINGLIGHT, MOVE_EFFECT_BURN),
         .type = TYPE_ICE,
-        .accuracy = 100,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .metronomeBanned = TRUE,
-        .sleepTalkBanned = TRUE,
-        .instructBanned = TRUE,
-        .argument.twoTurnAttack = { .stringId = STRINGID_CLOAKEDINAFREEZINGLIGHT },
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_BURN,
-            .chance = 30,
-        }),
-        .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL,
         NO_COMBO(CONTEST_CATEGORY_BEAUTY),
         .battleAnimScript = gBattleAnimMove_IceBurn,
     },
@@ -13077,21 +13007,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Vanishes on the first turn\n"
             "then strikes the next turn."),
-        .effect = EFFECT_SEMI_INVULNERABLE,
+        SEMI_INVULNERABLE_INFO(STRINGID_VANISHEDINSTANTLY, STATE_PHANTOM_FORCE),
         .power = 90,
         .type = TYPE_GHOST,
         .accuracy = 100,
         .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .ignoresProtect = TRUE,
-        .makesContact = TRUE,
         .minimizeDoubleDamage = B_UPDATED_MOVE_FLAGS < GEN_7,
-        .sleepTalkBanned = TRUE,
-        .instructBanned = TRUE,
-        .assistBanned = TRUE,
-        .argument.twoTurnAttack = { .stringId = STRINGID_VANISHEDINSTANTLY, .status = STATE_PHANTOM_FORCE },
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_FEINT,
         }),
@@ -15159,14 +15081,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Stomps around angrily.\n"
             "Stronger after a failure."),
-        .effect = EFFECT_STOMPING_TANTRUM,
-        .power = 75,
+        DOUBLE_IF_FAILED_75_POWER_INFO,
         .type = TYPE_GROUND,
-        .accuracy = 100,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .skyBattleBanned = B_EXTRAPOLATED_MOVE_FLAGS,
         .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
@@ -16312,17 +16228,15 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A 2-turn move that raises\n"
             "Sp. Attack before attacking."),
-        .effect = EFFECT_TWO_TURNS_ATTACK,
+        TWO_TURN_ATTACK_INFO(STRINGID_METEORBEAMCHARGING),
         .power = 120,
         .type = TYPE_ROCK,
         .accuracy = 90,
         .pp = 10,
         .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .sleepTalkBanned = TRUE,
         .instructBanned = TRUE,
-        .argument.twoTurnAttack = { .stringId = STRINGID_METEORBEAMCHARGING },
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_SP_ATK_PLUS_1,
             .self = TRUE,
@@ -16736,17 +16650,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "The higher the user's HP\n"
             "the more damage caused."),
-        .effect = EFFECT_POWER_BASED_ON_USER_HP,
-        .power = 150,
+        POWER_BASED_ON_HP_150_POWER_INFO,
         .type = TYPE_DRAGON,
-        .accuracy = 100,
-        .pp = 5,
-        .target = TARGET_BOTH,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
         .metronomeBanned = TRUE,
-        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_USER_MORE_EASILY_STARTLED : CONTEST_EFFECT_BETTER_WHEN_LATER,
-        NO_COMBO(CONTEST_CATEGORY_COOL),
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
         .battleAnimScript = gBattleAnimMove_DragonEnergy,
     },
 
@@ -18392,17 +18300,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Gathers electricity, then\n"
             "fires a high-voltage shot."),
-        .effect = EFFECT_TWO_TURNS_ATTACK,
+        TWO_TURN_ATTACK_INFO(STRINGID_ELECTROSHOTCHARGING, B_WEATHER_RAIN),
         .power = 130,
         .type = TYPE_ELECTRIC,
         .accuracy = 100,
         .pp = 10,
         .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .sleepTalkBanned = TRUE,
-        .instructBanned = TRUE,
-        .argument.twoTurnAttack = { .stringId = STRINGID_ELECTROSHOTCHARGING, .weather = B_WEATHER_RAIN },
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_SP_ATK_PLUS_1,
             .self = TRUE,
@@ -18594,14 +18498,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A desperation attack. Power\n"
             "doubles if last move failed."),
-        .effect = EFFECT_STOMPING_TANTRUM,
-        .power = 75,
+        DOUBLE_IF_FAILED_75_POWER_INFO,
         .type = TYPE_FIRE,
-        .accuracy = 100,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .battleAnimScript = gBattleAnimMove_TemperFlare,
     },

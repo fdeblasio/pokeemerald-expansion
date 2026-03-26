@@ -100,6 +100,8 @@ const u8 gNotDoneYetDescription[] = _(
 #define TWO_TURN_ATTACK_INFO(StringId, ...) \
     .effect = EFFECT_TWO_TURNS_ATTACK,      \
     .priority = 0,                          \
+    .sleepTalkBanned = TRUE,                \
+    .instructBanned = TRUE,                 \
     .argument.twoTurnAttack = { .stringId = StringId __VA_OPT__(, .weather = __VA_ARGS__) }
 
 #define INCREASED_CRITICAL B_UPDATED_MOVE_DATA >= GEN_3 ? 1 : 2
@@ -638,8 +640,6 @@ const u8 gNotDoneYetDescription[] = _(
     .accuracy = 100,                             \
     .pp = 10,                                    \
     .target = TARGET_SELECTED,                   \
-    .sleepTalkBanned = TRUE,                     \
-    .instructBanned = TRUE,                      \
     .additionalEffects = ADDITIONAL_EFFECTS({    \
         .moveEffect = MoveEffect,                \
         .chance = 30,                            \
@@ -1123,8 +1123,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .pp = 10,
         .target = TARGET_BOTH,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .sleepTalkBanned = TRUE,
-        .instructBanned = TRUE,
         .windMove = B_EXTRAPOLATED_MOVE_FLAGS,
         .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL,
         NO_COMBO(CONTEST_CATEGORY_COOL),
@@ -3595,8 +3593,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .target = TARGET_SELECTED,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .sleepTalkBanned = TRUE,
-        .instructBanned = TRUE,
         #if B_UPDATED_MOVE_DATA >= GEN_2
             .additionalEffects = ADDITIONAL_EFFECTS({
                 .moveEffect = MOVE_EFFECT_DEF_PLUS_1,
@@ -16235,8 +16231,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .pp = 10,
         .target = TARGET_SELECTED,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .sleepTalkBanned = TRUE,
-        .instructBanned = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_SP_ATK_PLUS_1,
             .self = TRUE,

@@ -35,13 +35,10 @@ const u8 gNotDoneYetDescription[] = _(
 #define BURN_COMBOS COMBO_STARTER_WILL_O_WISP, COMBO_STARTER_INFERNO
 #define MOVE_TRAP_COMBOS COMBO_STARTER_ENCORE, COMBO_STARTER_TAUNT, COMBO_STARTER_TORMENT
 #define ELECTRIC_COMBOS COMBO_STARTER_CHARGE, COMBO_STARTER_ELECTRIC_TERRAIN
-<<<<<<< HEAD
 #define GRASS_COMBOS COMBO_STARTER_GROWTH, COMBO_STARTER_GRASSY_TERRAIN
 #define SPECIAL_PSYCHIC_COMBOS COMBO_STARTER_CALM_MIND, COMBO_STARTER_PSYCHIC_TERRAIN
 #define ALWAYS_HIT_COMBOS COMBO_STARTER_LOCK_ON, COMBO_STARTER_MIND_READER
 #define TRAPPING_COMBOS COMBO_STARTER_MEAN_LOOK, COMBO_STARTER_BLOCK
-=======
->>>>>>> 5d61d6f4fd (More move macros and more Electric Terrain combos)
 
 // Damage macros
 // General
@@ -930,20 +927,10 @@ const u8 gNotDoneYetDescription[] = _(
 
 // 130-140
 #define UNOVA_DRAGON_SIGNATURE_INFO(MoveEffect)            \
-<<<<<<< HEAD
     EFFECT_MOVE_INFO(MoveEffect, 20),                      \
     .power = 130,                                          \
     .pp = 10,                                              \
     .target = TARGET_SELECTED,                             \
-=======
-    BASIC_MOVE,                                            \
-    .power = 130,                                          \
-    .pp = 10,                                              \
-    .additionalEffects = ADDITIONAL_EFFECTS({              \
-        .moveEffect = MoveEffect,                          \
-        .chance = 20,                                      \
-    }),                                                    \
->>>>>>> 5d61d6f4fd (More move macros and more Electric Terrain combos)
     .contestEffect = CONTEST_EFFECT_REPETITION_NOT_BORING, \
     .contestCategory = CONTEST_CATEGORY_BEAUTY
 
@@ -2900,11 +2887,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_BETTER_WHEN_AUDIENCE_EXCITED : CONTEST_EFFECT_STARTLE_PREV_MONS,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
-<<<<<<< HEAD
         .contestComboMoves = {ELECTRIC_COMBOS, ALWAYS_HIT_COMBOS, COMBO_STARTER_RAIN_DANCE},
-=======
-        .contestComboMoves = {ELECTRIC_COMBOS, COMBO_STARTER_LOCK_ON, COMBO_STARTER_RAIN_DANCE},
->>>>>>> 5d61d6f4fd (More move macros and more Electric Terrain combos)
         .battleAnimScript = gBattleAnimMove_Thunder,
     },
 
@@ -5382,11 +5365,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_BADLY_STARTLE_MONS_WITH_GOOD_APPEALS : CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = COMBO_STARTER_ZAP_CANNON,
-<<<<<<< HEAD
         .contestComboMoves = {ELECTRIC_COMBOS, ALWAYS_HIT_COMBOS},
-=======
-        .contestComboMoves = {ELECTRIC_COMBOS, COMBO_STARTER_LOCK_ON},
->>>>>>> 5d61d6f4fd (More move macros and more Electric Terrain combos)
         .battleAnimScript = gBattleAnimMove_ZapCannon,
         .validApprenticeMove = TRUE,
     },
@@ -17075,16 +17054,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "May inflict paralysis."),
         GENIE_STORM_INFO(MOVE_EFFECT_PARALYSIS),
         .type = TYPE_ELECTRIC,
-<<<<<<< HEAD
         .contestComboMoves = {ELECTRIC_COMBOS, COMBO_STARTER_RAIN_DANCE},
-=======
-        .alwaysHitsInRain = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_PARALYSIS,
-            .chance = 20,
-        }),
-        .contestComboMoves = {ELECTRIC_COMBOS},
->>>>>>> 5d61d6f4fd (More move macros and more Electric Terrain combos)
         .battleAnimScript = gBattleAnimMove_WildboltStorm,
     },
 
@@ -17659,11 +17629,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         BOOSTED_SUPER_EFFECTIVE_INFO,
         .type = TYPE_ELECTRIC,
         .category = DAMAGE_CATEGORY_SPECIAL,
-<<<<<<< HEAD
-=======
-        .makesContact = TRUE,
-        .metronomeBanned = TRUE,
->>>>>>> 5d61d6f4fd (More move macros and more Electric Terrain combos)
         .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_ElectroDrift,
     },
@@ -18174,11 +18139,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             .onChargeTurnOnly = TRUE,
             .sheerForceOverride = TRUE,
         }),
-<<<<<<< HEAD
         .contestComboMoves = {ELECTRIC_COMBOS, COMBO_STARTER_RAIN_DANCE},
-=======
-        .contestComboMoves = {ELECTRIC_COMBOS},
->>>>>>> 5d61d6f4fd (More move macros and more Electric Terrain combos)
         .battleAnimScript = gBattleAnimMove_ElectroShot,
     },
 

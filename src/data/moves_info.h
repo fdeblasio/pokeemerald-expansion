@@ -474,6 +474,13 @@ const u8 gNotDoneYetDescription[] = _(
     .contestEffect = CONTEST_EFFECT_BETTER_IF_FIRST, \
     .validApprenticeMove = TRUE
 
+#define EFFECT_70_POWER_INFO(Effect)          \
+    EFFECT_MOVE_INFO(Effect, 30),             \
+    .power = 70,                              \
+    .pp = 15,                                 \
+    .target = TARGET_SELECTED,                \
+    .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_HIGHLY_APPEALING : CONTEST_EFFECT_STARTLE_PREV_MON
+
 #define DOUBLE_AND_REMOVE_ON_STATUS_70_POWER(Status) \
     .effect = EFFECT_DOUBLE_POWER_ON_ARG_STATUS,     \
     .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 70 : 60, \
@@ -485,6 +492,14 @@ const u8 gNotDoneYetDescription[] = _(
     .additionalEffects = ADDITIONAL_EFFECTS({        \
         .moveEffect = MOVE_EFFECT_REMOVE_STATUS,     \
     }),                                              \
+    .validApprenticeMove = TRUE
+
+#define ALWAYS_HIT_70_POWER_INFO                     \
+    ALWAYS_HIT_INFO,                                 \
+    .power = 70,                                     \
+    .pp = 10,                                        \
+    .target = TARGET_SELECTED,                       \
+    .contestEffect = CONTEST_EFFECT_BETTER_IF_FIRST, \
     .validApprenticeMove = TRUE
 
 #define ESCAPE_70_POWER_INFO     \

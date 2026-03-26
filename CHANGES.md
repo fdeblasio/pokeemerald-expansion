@@ -674,6 +674,8 @@
         - Recoil: 25%->33%
     - Triple Kick:
         - Power: 10->20
+    - Vital Throw:
+        - Priority: -1->0
 - Flying:
     - Aeroblast:
         - Accuracy: 95->100
@@ -752,6 +754,8 @@
     - Sand Tomb:
         - Accuracy: 85->100
         - PP: 15->20
+    - Scorching Sands:
+        - PP: 10->15
     - Thousand Arrows:
         - Power: 90->100
     - Thousand Waves:

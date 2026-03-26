@@ -3,9 +3,9 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Triple Kick/Triple Axel: 20 PP, triple hit
     Stored Power/Power Trip: 10 PP, stores power
 
-    Absorb: 25 PP, absorbs
-    Mud-Slap: 20 PP, 100% lower accuracy
-    Nuzzle: 20 PP, 100% paralyzes
+    Absorb:          25 PP, absorbs
+    Mud-Slap:        20 PP, 100% lower accuracy
+    Nuzzle:          20 PP, 100% paralyzes
     Population Bomb: 10 PP, 10 hits
 
 25 Power:
@@ -41,11 +41,11 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Power-Up Punch: 20 PP, 100% raises Atk
     Salt Cure:      20 PP, 100% salts
 
-    Pay Day: 20 PP, money
-    Mega Drain: 15 PP, absorbs
+    Pay Day:      20 PP, money
+    Mega Drain:   15 PP, absorbs
     Fury Cutter:  20 PP, doubles
-    Pursuit: 20 PP, pursues
-    Fake Out: 10 PP, fakes out
+    Pursuit:      20 PP, pursues
+    Fake Out:     10 PP, fakes out
     Echoed Voice: 20 PP, additive
 
 50 Power:
@@ -95,19 +95,19 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
         Flame Wheel: same but might be increased to 65, thaw user
     Poison Fang: 15 PP, 50% bad poison (might be increased to 65 to match fangs)
 
-    Rock Tomb: 15 PP, lower speed
-    Bulldoze: 20 PP, lower speed, hits all
+    Rock Tomb:      15 PP, lower speed
+    Bulldoze:       20 PP, lower speed, hits all
     Breaking Swipe: 15 PP, lower attack, hits both
-    Brutal Swing: 20 PP, hits all
+    Brutal Swing:   20 PP, hits all
 
-    Assurance: 10 PP, more damage if foe taken damage
-    Punishment: 5 PP, more damage for foe power
-    Round: 15 PP, more damage in succesion
-    Sky Drop: 10 PP, sky drop
-    Incinerate: 15 PP, burns berries
+    Assurance:        10 PP, more damage if foe taken damage
+    Punishment:        5 PP, more damage for foe power
+    Round:            15 PP, more damage in succesion
+    Sky Drop:         10 PP, sky drop
+    Incinerate:       15 PP, burns berries
     Double Iron Bash: 10 PP, hits twice
-    Jet Punch: 15 PP, priority
-    Syrup Bomb: 10 PP, syrupy
+    Jet Punch:        15 PP, priority
+    Syrup Bomb:       10 PP, syrupy
 
 65 Power:
     Vise Grip/Wing Attack/Horn Attack: 35 PP
@@ -119,35 +119,32 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Mud Bomb/Mirror Shot/Leaf Tornado: 10 PP, 30% effect
     Venoshock/Hex, 10 PP, double on status
 
-    Brine, 10 PP, double <50% health
-
-    Low Sweep: 20 PP, lower speed, hits all
+    Brine,      10 PP, double <50% health
+    Low Sweep:  20 PP, lower speed, hits all
     Upper Hand: 15 PP, flinches opponent if using priority
+
 70 Power:
     High crit slicing: 20 PP, high crit, slicing
-    Smelling Salts/Wake-Up Slap: 10 PP, double and cure if sleep
+    Headbutt/Scorching Sands: 10 PP, 30% effect
+    Smelling Salts/Wake-Up Slap: 10 PP, double and cure if status
+    Vital Throw/Smart Strike: 10 PP, never miss
     U-turn/Volt Switch/Flip Turn: 20 PP, escapes
-
-    Headbutt: 15 PP, 30% flinch
-    Scorching Sands: 10 PP, 30% burn
 
     Stone Axe: 15 PP, sets Stealth Rock
     Ceaseless Edge: 15 PP, sets spikes
 
-    Steel Wing, 25 PP, 10% raise defense
-    Vital Throw: 10 PP, always hits, -1 priority
-    Facade: 20 PP, double if self status
-    Secret Power: 20 PP, 30% varies
-    Sucker Punch: 5 PP, priority if attacking
-    Flame Burst: 15 PP, splash damage
-    Chip Away: 20 PP, ignores defensive changes
-    Retaliate: 5 PP, double if ally fainted
-    Freeze-Dry: 20 PP, super effective on Water, 10% freeze
-    Smart Strike: 10 PP, never misses
-    Rising Voltage: double in electric terrain
-    Skitter Smack: 10 PP, 100% lower SpA
+    Steel Wing:       25 PP, 10% raise defense
+    Facade:           20 PP, double if self status
+    Secret Power:     20 PP, 30% varies
+    Sucker Punch:      5 PP, priority if attacking
+    Flame Burst:      15 PP, splash damage
+    Chip Away:        20 PP, ignores defensive changes
+    Retaliate:         5 PP, double if ally fainted
+    Freeze-Dry:       20 PP, super effective on Water, 10% freeze
+    Rising Voltage:   20 PP, double power in electric terrain
+    Skitter Smack:    10 PP, 100% lower SpA
     Burning Jealousy: 10 PP, burn if raised stats
-    Flower Trick: 10 PP, always crits
+    Flower Trick:     10 PP, always crits, always hits
 
 75 Power:
     Elemental Punches: 15 PP, 10% effect
@@ -155,56 +152,52 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Stomping Tantrum/Temper Flare: 10 PP, double if failed
 
     Dizzy Punch: 15 PP, 20% confuse
-    Needle Arm: 15 PP, 30% flinch
+    Needle Arm:  15 PP, 30% flinch
 
-    Giga Drain: 10 PP, absorb
-    Drain Punch: 10 PP, absorb
-    Horn Leech: 10 PP, absorb
+    Giga Drain:       10 PP, absorb
+    Drain Punch:      10 PP, absorb
+    Horn Leech:       10 PP, absorb
     Parabolic Charge: 20 PP, absorb, hits both
 
     Mystical Fire: 10 PP, 100% lower SpA
-    Spirit Break: 15 PP, 100% lower SpA
+    Spirit Break:  15 PP, 100% lower SpA
 
-    Barb Barrage: 10 PP, double on poison, 50% chance to poison
+    Barb Barrage:    10 PP, double on poison, 50% chance to poison
     Infernal Parade: 15 PP, double on status, 30% chance to burn
 
-    Lash Out: 10 PP, double if lowered
-    Wicked Blow: 10 PP, always crits
+    Lash Out:      10 PP, double if lowered
+    Wicked Blow:   10 PP, always crits
     Psychic Noise: 10 PP, prevents healing
 
 80 Power:
     57 results
 
 85 Power:
+    Brick Break/Psychic Fangs: 15 PP, break screens
+    Shadow Bone/Liquidation: 10 PP, 20% defense
+    False Surrender/Kowtow Cleave: 10 PP, always hit
+    Bolt Beak/Fishious Rend: double if faster
+
     Body Slam: 15 PP, 30% paralyze
     Blaze Kick: 10 PP, 10% burn, high crit
     Icicle Crash: 10 PP, 30% flinch
 
-    Brick Break: 15 PP, breaks screens
-    Psychic Fangs: 15 PP, breaks screens
-
-    Shadow Bone: 10 PP, 20% defense
-    Liquidation: 10 PP, 20% defense
-
-    False Surrender: 10 PP, always hits
-    Kowtow Cleave: 10 PP, always hits
-
-    Sky Uppercut: 15 PP, hits flying
-    Bounce: 5 PP, 85 accuracy, 30% paralyze
-    Dragon Pulse: 10 PP (increase to 90?)
-    Night Daze: 10 PP, 40% accuracy
-    Secret Sword: 10 PP, targets Defense
+    Sky Uppercut:   15 PP, hits flying
+    Bounce:          5 PP, 85 accuracy, 30% paralyze
+    Dragon Pulse:   10 PP (increase to 90?)
+    Night Daze:     10 PP, 40% accuracy
+    Secret Sword:   10 PP, targets Defense
     Darkest Lariat: 10 PP, ignores stat changes
 
 90 Power:
     42 results
 
 95 Power:
-    Sludge Wave: 10 PP, 10% poison, targets all
-    Foul Play: 15 PP, uses foe's attack
-    Moonblast: 15 PP, 30% lower SpA
+    Sludge Wave:     10 PP, 10% poison, targets all
+    Foul Play:       15 PP, uses foe's attack
+    Moonblast:       15 PP, 30% lower SpA
     High Horsepower: 10 PP
-    Mighty Cleave: 10 PP, ignores Protect
+    Mighty Cleave:   10 PP, ignores Protect
 
 100 Power:
     48 results
@@ -216,13 +209,58 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Hydro Pump: 5 PP, 85 accuracy
     Fire Blast: 5 PP, 85 accuracy, 10% burn
 
-    Steam Eruption: 10 PP, 30% burn
+    Steam Eruption:  10 PP, 30% burn
     Clanging Scales: 10 PP, lowers own Def
-    Aura Wheel: 10 PP, Spe + 1, type depends on form
-    Poltergeist: 5 PP, fails if no item
+    Aura Wheel:      10 PP, Spe + 1, type depends on form
+    Poltergeist:      5 PP, fails if no item
 
 120 Power:
-    37 results
+    Recoil: 15 PP, 33% recoil
+    Fatigue: 10 PP, fatigue
+    Genie storms: 10 PP, hits both, wind move, % effect
+        Some always hit in rain
+    Zap Cannon/Dynamic Punch/Inferno: 5 PP, 50% accuracy, 100% status
+
+    Superpower:     5 PP, lower own Atk/Def
+    Close Combat:   5 PP, lower own Def/SpD
+    Dragon Ascent: 10 PP, lowers own Def/SpD (remove?)
+    Headlong Rush:  5 PP, lower own Def/SpD
+    Armor Cannon:  10 PP, lower own Def/SpD
+
+    Megahorn:   10 PP, 85% accuracy
+    Power Whip: 10 PP, 85% accuracy
+
+    Mega Kick:   5 PP, 75% accuracy
+    Focus Blast: 5 PP, 70% accuracy, 10% lower SpD
+    Gunk Shot:   5 PP, 80% accuracy, 30% poison
+
+    Wring Out:  5 PP, power based on target HP
+    Crush Grip: 5 PP, power based on target HP
+
+    Origin Pulse:     10 PP, hits both
+    Precipice Blades: 10 PP, hits both, add hit Flying?
+    Glacial Lance:    10 PP, hits both
+    Astral Barrage:   10 PP, hits both
+
+    Techno Blast: 10 PP, changes type with item
+    Multi-Attack: 10 PP, changes type with item
+
+    Volt Tackle:  15 PP, 30% paralyze
+    Seed Flare:   10 PP, 40% lower SpDx2
+    Head Charge:  15 PP, add flinch?
+    Pyro Ball:    10 PP, 20% burn
+
+    Solar Beam:     10 PP, two turn, one turn in sunglight
+    Future Sight:   10 PP, future attack
+    Magma Storm:    10 PP, traps
+    Shadow Force:   10 PP, semi-invulnerable
+    Synchronoise:   10 PP, only targets same type
+    Belch:          10 PP, only with berry
+    Meteor Beam:    10 PP, 90% accuracy, two turn/raises own SpA
+    Axe Kick:       10 PP, 90% accuracy, recoil if miss, 30% confusion
+    Glaive Rush:    10 PP, next move doubled against user (remove?)
+    Make It Rain:   20 PP, hits both, money
+    Tera Starstorm: 10 PP, tera stuff
 
 125 Power:
     Solar Blade
@@ -232,35 +270,34 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Burn Up/Double Shock: 10 PP, removes type
     Lower Special Attack: 90% accuracy, 5 PP, lowers SpA by 2
 
-    Skull Bash: 10 PP, two turn, defense during charge
+    Skull Bash:   10 PP, two turn, defense during charge
     Electro Shot: 10 PP, two turn, SpA during charge, instant in rain
 
     High Jump Kick: 10 PP, 90 accuracy, recoil if miss
-
-    Steel Roller: 5 PP, destroys terrain but fails if none
+    Steel Roller:    5 PP, destroys terrain but fails if none
 
 140 Power:
     Sky Attack/Freeze Shock/Ice Burn: 10 PP, two turn, 30% effect
 
-    Doom Desire: 10 PP, future attack
-    Last Resort: 5 PP, only if all other moves used
-    Boomburst: 10 PP, hits all
+    Doom Desire:   10 PP, future attack
+    Last Resort:    5 PP, only if all other moves used
+    Boomburst:     10 PP, hits all
     Light of Ruin: 10 PP, 50% recoil
-    Steel Beam: 5 PP, loses 50% HP
-    Blood Moon: 10 PP, can't use twice
+    Steel Beam:     5 PP, loses 50% HP
+    Blood Moon:    10 PP, can't use twice
 
 150 Power:
     Recharge: 90% accuracy, 5 PP, recharge
     Eruption/Water Spout/Dragon Energy: 5 PP, less damage with less HP
 
-    Mind Blown: 5 PP, loses 50% HP
+    Mind Blown:  5 PP, loses 50% HP
     Chloroblast: 5 PP, loses 50% HP, but somehow different (power ternary can be ignored due to PLA)
 
-    Focus Punch: 20 PP, fails if attacked
-    Judgment: 10 PP, changes type with item
-    Head Smash: 5 PP, 80% accuracy, 50% recoil
-    Shell Trap: 5 PP, only damages on contact
-    Meteor Assault: 5 PP, recharge (has 100 accuracy unlike others)
+    Focus Punch:    20 PP, fails if attacked
+    Judgment:       10 PP, changes type with item
+    Head Smash:      5 PP, 80% accuracy, 50% recoil
+    Shell Trap:      5 PP, only damages on contact
+    Meteor Assault:  5 PP, recharge (has 100 accuracy unlike others)
     Misty Explosion: 5 PP, explodes
 
 160 Power:

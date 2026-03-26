@@ -191,6 +191,7 @@ upcoming
 
 ### Moves
 - Turn some animation macros into functions like the Absorb ones
+- Change Morning Sun/Moonlight/Synthesis to be based on time of day (like in Gen 2?) instead of weather?
 - Replace Hypno's Hypnosis effect with a new move that uses its pendulum in the animation
 - Aqua Ring heals more with Water Bubble? In rain?
 - Apply dynamic power to move relearner

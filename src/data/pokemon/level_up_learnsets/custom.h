@@ -17822,6 +17822,7 @@ static const struct LevelUpMove sReshiramLevelUpLearnset[] = {
     LEVEL_UP_MOVE(72, MOVE_IMPRISON),
     LEVEL_UP_MOVE(80, MOVE_OUTRAGE),
     LEVEL_UP_MOVE(88, MOVE_BLUE_FLARE),
+    LEVEL_UP_MOVE(96, MOVE_BURN_UP),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_RESHIRAM
@@ -17844,6 +17845,7 @@ static const struct LevelUpMove sZekromLevelUpLearnset[] = {
     LEVEL_UP_MOVE(72, MOVE_IMPRISON),
     LEVEL_UP_MOVE(80, MOVE_OUTRAGE),
     LEVEL_UP_MOVE(88, MOVE_BOLT_STRIKE),
+    LEVEL_UP_MOVE(96, MOVE_DOUBLE_SHOCK),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ZEKROM

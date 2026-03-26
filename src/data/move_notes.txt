@@ -173,6 +173,7 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Psychic Noise: 10 PP, prevents healing
 
 80 Power:
+    57 results
 
 85 Power:
     Body Slam: 15 PP, 30% paralyze
@@ -196,6 +197,7 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Darkest Lariat: 10 PP, ignores stat changes
 
 90 Power:
+    42 results
 
 95 Power:
     Sludge Wave: 10 PP, 10% poison, targets all
@@ -205,8 +207,12 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Mighty Cleave: 10 PP, ignores Protect
 
 100 Power:
+    48 results
 
 110 Power:
+    Thunder/Hurricane: 10 PP, 70 accuracy, always hits in rain, 30% effect
+        Blizzard: same but snow and 10% effect
+
     Hydro Pump: 5 PP, 85 accuracy
     Fire Blast: 5 PP, 85 accuracy, 10% burn
 
@@ -216,19 +222,18 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Poltergeist: 5 PP, fails if no item
 
 120 Power:
+    37 results
 
 125 Power:
     Solar Blade
 
 130 Power:
+    Bolt Strike/Blue Flare: 10 PP, 20% effect
+    Burn Up/Double Shock: 10 PP, removes type
+    Lower Special Attack: 90% accuracy, 5 PP, lowers SpA by 2
+
     Skull Bash: 10 PP, two turn, defense during charge
     Electro Shot: 10 PP, two turn, SpA during charge, instant in rain
-
-    Bolt Strike: 10 PP, 20% paralyze
-    Blue Flare: 10 PP, 20% burn
-
-    Burn Up: 5 PP, removes Fire
-    Double Shock: 10 PP, removes Electric
 
     High Jump Kick: 10 PP, 90 accuracy, recoil if miss
 
@@ -249,7 +254,7 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Eruption/Water Spout/Dragon Energy: 5 PP, less damage with less HP
 
     Mind Blown: 5 PP, loses 50% HP
-    Chloroblast: 5 PP, loses 50% HP (power ternary can be ignored due to PLA)
+    Chloroblast: 5 PP, loses 50% HP, but somehow different (power ternary can be ignored due to PLA)
 
     Focus Punch: 20 PP, fails if attacked
     Judgment: 10 PP, changes type with item

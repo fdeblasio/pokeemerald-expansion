@@ -869,6 +869,8 @@
         - PP: 5->10
     - Burning Jealousy:
         - PP: 5->10
+    - Burn Up:
+        - PP: 5->10
     - Ember:
         - PP: 25->30
     - Fiery Dance:
@@ -3782,6 +3784,12 @@
 - Thundurus:
     - Learns Extrasensory by level up
     - Learns Air Slash by TM
+
+- Reshiram:
+    - Learns Burn Up by level up
+
+- Zekrom:
+    - Learns Double Shock by level up
 
 - Landorus:
     - Swaps Bulldoze and Rock Tomb levels for consistency

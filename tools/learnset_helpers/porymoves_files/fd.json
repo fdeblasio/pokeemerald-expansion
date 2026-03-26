@@ -7631,14 +7631,18 @@
     "TutorMoves": []
   },
   "RESHIRAM": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 96, "Move": "MOVE_BURN_UP"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
   "ZEKROM": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {"Level": 96, "Move": "MOVE_DOUBLE_SHOCK"}
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],

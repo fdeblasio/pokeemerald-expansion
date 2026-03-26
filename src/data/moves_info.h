@@ -34,6 +34,7 @@ const u8 gNotDoneYetDescription[] = _(
 #define SLEEP_COMBOS COMBO_STARTER_HYPNOSIS, COMBO_STARTER_SLEEP_POWDER, COMBO_STARTER_SPORE, COMBO_STARTER_SING, COMBO_STARTER_GRASS_WHISTLE, COMBO_STARTER_YAWN, COMBO_STARTER_LOVELY_KISS, COMBO_STARTER_DARK_VOID
 #define BURN_COMBOS COMBO_STARTER_WILL_O_WISP, COMBO_STARTER_INFERNO
 #define MOVE_TRAP_COMBOS COMBO_STARTER_ENCORE, COMBO_STARTER_TAUNT, COMBO_STARTER_TORMENT
+#define ELECTRIC_COMBOS COMBO_STARTER_CHARGE, COMBO_STARTER_ELECTRIC_TERRAIN
 
 // Damage macros
 // General
@@ -559,12 +560,16 @@ const u8 gNotDoneYetDescription[] = _(
     .priority = 0,                                     \
     .validApprenticeMove = TRUE
 
-#define ALWAYS_HIT_RAIN_110_POWER_INFO                \
-    WEATHER_AFFECTED_110_POWER_INFO,                  \
-    .target = TARGET_SELECTED,                        \
-    .damagesAirborne = B_UPDATED_MOVE_FLAGS >= GEN_2, \
-    .alwaysHitsInRain = TRUE,                         \
-    .accuracy50InSun = TRUE
+#define ALWAYS_HIT_RAIN_110_POWER_INFO(MoveEffect)        \
+    WEATHER_AFFECTED_110_POWER_INFO,                      \
+    .target = TARGET_SELECTED,                            \
+    .damagesAirborne = B_UPDATED_MOVE_FLAGS >= GEN_2,     \
+    .alwaysHitsInRain = TRUE,                             \
+    .accuracy50InSun = TRUE,                              \
+    .additionalEffects = ADDITIONAL_EFFECTS({             \
+        .moveEffect = MoveEffect,                         \
+        .chance = B_UPDATED_MOVE_DATA >= GEN_2 ? 30 : 10, \
+    })
 
 // 120
 #define TRIPLE_HIT_INFO           \
@@ -612,6 +617,31 @@ const u8 gNotDoneYetDescription[] = _(
     })
 
 // 130-140
+#define UNOVA_DRAGON_SIGNATURE_INFO(MoveEffect)            \
+    BASIC_MOVE,                                            \
+    .power = 130,                                          \
+    .pp = 10,                                              \
+    .additionalEffects = ADDITIONAL_EFFECTS({              \
+        .moveEffect = MoveEffect,                          \
+        .chance = 20,                                      \
+    }),                                                    \
+    .contestEffect = CONTEST_EFFECT_REPETITION_NOT_BORING, \
+    .contestCategory = CONTEST_CATEGORY_BEAUTY
+
+#define REMOVE_TYPE_INFO(Type)                     \
+    .effect = EFFECT_FAIL_IF_NOT_ARG_TYPE,         \
+    .power = 130,                                  \
+    .type = Type,                                  \
+    .accuracy = 100,                               \
+    .pp = 10,                                      \
+    .target = TARGET_SELECTED,                     \
+    .priority = 0,                                 \
+    .argument = { .type = Type },                  \
+    .additionalEffects = ADDITIONAL_EFFECTS({      \
+        .moveEffect = MOVE_EFFECT_REMOVE_ARG_TYPE, \
+        .self = TRUE,                              \
+    })
+
 #define LOWER_SPECIAL_ATTACK_INFO                 \
     .effect = EFFECT_HIT,                         \
     .target = TARGET_SELECTED,                    \
@@ -1044,7 +1074,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .type = TYPE_ELECTRIC,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = COMBO_STARTER_THUNDER_PUNCH,
-        .contestComboMoves = {COMBO_STARTER_CHARGE, COMBO_STARTER_FIRE_PUNCH, COMBO_STARTER_ICE_PUNCH},
+        .contestComboMoves = {ELECTRIC_COMBOS, COMBO_STARTER_FIRE_PUNCH, COMBO_STARTER_ICE_PUNCH},
         .battleAnimScript = gBattleAnimMove_ThunderPunch,
     },
 
@@ -2531,7 +2561,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .target = TARGET_SELECTED,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_CHARGE},
+        .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_ThunderShock,
     },
 
@@ -2547,7 +2577,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_CHARGE},
+        .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_Thunderbolt,
     },
 
@@ -2571,7 +2601,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS : CONTEST_EFFECT_BADLY_STARTLE_MONS_WITH_GOOD_APPEALS,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = COMBO_STARTER_THUNDER_WAVE,
-        .contestComboMoves = {COMBO_STARTER_CHARGE},
+        .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_ThunderWave,
         .validApprenticeMove = TRUE,
     },
@@ -2582,17 +2612,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A lightning attack that may\n"
             "cause paralysis."),
-        ALWAYS_HIT_RAIN_110_POWER_INFO,
+        ALWAYS_HIT_RAIN_110_POWER_INFO(MOVE_EFFECT_PARALYSIS),
         .type = TYPE_ELECTRIC,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_PARALYSIS,
-            .chance = B_UPDATED_MOVE_DATA >= GEN_2 ? 30 : 10,
-        }),
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_BETTER_WHEN_AUDIENCE_EXCITED : CONTEST_EFFECT_STARTLE_PREV_MONS,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_CHARGE, COMBO_STARTER_LOCK_ON, COMBO_STARTER_RAIN_DANCE},
+        .contestComboMoves = {ELECTRIC_COMBOS, COMBO_STARTER_LOCK_ON, COMBO_STARTER_RAIN_DANCE},
         .battleAnimScript = gBattleAnimMove_Thunder,
     },
 
@@ -5094,7 +5120,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_BADLY_STARTLE_MONS_WITH_GOOD_APPEALS : CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = COMBO_STARTER_ZAP_CANNON,
-        .contestComboMoves = {COMBO_STARTER_CHARGE, COMBO_STARTER_LOCK_ON},
+        .contestComboMoves = {ELECTRIC_COMBOS, COMBO_STARTER_LOCK_ON},
         .battleAnimScript = gBattleAnimMove_ZapCannon,
         .validApprenticeMove = TRUE,
     },
@@ -5488,7 +5514,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_HIGHLY_APPEALING : CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_CHARGE},
+        .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_Spark,
     },
 
@@ -8580,7 +8606,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_CHARGE},
+        .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_VoltTackle,
         .validApprenticeMove = TRUE,
     },
@@ -8721,7 +8747,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_SPECIAL,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_CHARGE},
+        .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_ShockWave,
         .validApprenticeMove = TRUE,
     },
@@ -10166,7 +10192,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .type = TYPE_ELECTRIC,
         .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_COOL : CONTEST_CATEGORY_SMART,
         .contestComboStarterId = COMBO_STARTER_THUNDER_FANG,
-        .contestComboMoves = {COMBO_STARTER_CHARGE, COMBO_STARTER_FIRE_FANG, COMBO_STARTER_ICE_FANG},
+        .contestComboMoves = {ELECTRIC_COMBOS, COMBO_STARTER_FIRE_FANG, COMBO_STARTER_ICE_FANG},
         .battleAnimScript = gBattleAnimMove_ThunderFang,
     },
 
@@ -10380,7 +10406,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_SPECIAL,
         .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_BEAUTY : CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_CHARGE},
+        .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_Discharge,
     },
 
@@ -10704,7 +10730,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = CONTEST_EFFECT_BETTER_WITH_GOOD_CONDITION,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_CHARGE},
+        .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_ChargeBeam,
     },
 
@@ -11422,7 +11448,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON, //CONTEST_EFFECT_EXCITES_AUDIENCE_MORE_IF_FIRST
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_AGILITY, COMBO_STARTER_CHARGE, COMBO_STARTER_ROCK_POLISH},
+        .contestComboMoves = {COMBO_STARTER_AGILITY, ELECTRIC_COMBOS, COMBO_STARTER_ROCK_POLISH},
         .battleAnimScript = gBattleAnimMove_ElectroBall,
     },
 
@@ -12117,7 +12143,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_SPECIAL,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_CHARGE},
+        .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_VoltSwitch,
     },
 
@@ -12219,7 +12245,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_STRING_SHOT, COMBO_STARTER_CHARGE},
+        .contestComboMoves = {COMBO_STARTER_STRING_SHOT, ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_Electroweb,
     },
 
@@ -12235,7 +12261,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .makesContact = TRUE,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_CHARGE},
+        .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_WildCharge,
     },
 
@@ -12481,14 +12507,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Traps the foe in a fierce\n"
             "wind. May cause confusion."),
-        ALWAYS_HIT_RAIN_110_POWER_INFO,
+        ALWAYS_HIT_RAIN_110_POWER_INFO(MOVE_EFFECT_CONFUSION),
         .type = TYPE_FLYING,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .windMove = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_CONFUSION,
-            .chance = 30,
-        }),
         .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_MONS_WITH_GOOD_APPEALS,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
@@ -12655,20 +12677,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Strikes with a great amount\n"
             "of lightning. May paralyze."),
-        BASIC_MOVE,
-        .power = 130,
+        UNOVA_DRAGON_SIGNATURE_INFO(MOVE_EFFECT_PARALYSIS),
         .type = TYPE_ELECTRIC,
-        .pp = 10,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_PARALYSIS,
-            .chance = 20,
-        }),
-        .contestEffect = CONTEST_EFFECT_REPETITION_NOT_BORING,
-        .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_CHARGE},
+        .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_BoltStrike,
     },
 
@@ -12678,17 +12692,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Engulfs the foe in a blue\n"
             "flame. May inflict a burn."),
-        BASIC_MOVE,
-        .power = 130,
+        UNOVA_DRAGON_SIGNATURE_INFO(MOVE_EFFECT_BURN),
         .type = TYPE_FIRE,
-        .pp = 10,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_BURN,
-            .chance = 20,
-        }),
-        .contestEffect = CONTEST_EFFECT_REPETITION_NOT_BORING,
-        NO_COMBO(CONTEST_CATEGORY_BEAUTY),
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_SUNNY_DAY},
         .battleAnimScript = gBattleAnimMove_BlueFlare,
     },
 
@@ -12842,7 +12850,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = CONTEST_EFFECT_BETTER_WHEN_LATER,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_CHARGE},
+        .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_FusionBolt,
     },
 
@@ -13094,7 +13102,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = CONTEST_EFFECT_APPEAL_AS_GOOD_AS_PREV_ONES,
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = COMBO_STARTER_PARABOLIC_CHARGE,
-        .contestComboMoves = {COMBO_STARTER_CHARGE},
+        .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_ParabolicCharge,
     },
 
@@ -13950,7 +13958,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL,
         .contestCategory = CONTEST_CATEGORY_CUTE,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_CHARGE},
+        .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_Nuzzle,
     },
 
@@ -14710,20 +14718,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Burns out the user fully\n"
             "removing the Fire type."),
-        .effect = EFFECT_FAIL_IF_NOT_ARG_TYPE,
-        .power = 130,
-        .type = TYPE_FIRE,
-        .accuracy = 100,
-        .pp = 5,
-        .target = TARGET_SELECTED,
-        .priority = 0,
+        REMOVE_TYPE_INFO(TYPE_FIRE),
         .category = DAMAGE_CATEGORY_SPECIAL,
         .thawsUser = TRUE,
-        .argument = { .type = TYPE_FIRE },
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_REMOVE_ARG_TYPE,
-            .self = TRUE,
-        }),
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
@@ -15262,7 +15259,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_CHARGE},
+        .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_ZingZap,
     },
 
@@ -15346,7 +15343,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = CONTEST_EFFECT_WORSEN_CONDITION_OF_PREV_MONS,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_CHARGE},
+        .contestComboMoves = {ELECTRIC_COMBOS},
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_ION_DELUGE,
         }),
@@ -15632,7 +15629,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .makesContact = TRUE,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_CHARGE},
+        .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_BoltBeak,
     },
 
@@ -15872,7 +15869,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = CONTEST_EFFECT_BETTER_IF_FIRST,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_CHARGE},
+        .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_AuraWheel,
     },
 
@@ -15936,7 +15933,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_CHARGE},
+        .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_Overdrive,
     },
 
@@ -16337,7 +16334,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_ELECTRIC_TERRAIN, COMBO_STARTER_CHARGE},
+        .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_RisingVoltage,
     },
 
@@ -16634,7 +16631,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .metronomeBanned = TRUE,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_CHARGE},
+        .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_ThunderCage,
     },
 
@@ -17196,7 +17193,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             .moveEffect = MOVE_EFFECT_PARALYSIS,
             .chance = 20,
         }),
-        .contestComboMoves = {COMBO_STARTER_CHARGE},
+        .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_WildboltStorm,
     },
 
@@ -17795,7 +17792,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_SPECIAL,
         .makesContact = TRUE,
         .metronomeBanned = TRUE,
-        .contestComboMoves = {COMBO_STARTER_CHARGE},
+        .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_ElectroDrift,
     },
 
@@ -18044,22 +18041,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Discharges all electricity,\n"
             "losing the Electric type."),
-        .effect = EFFECT_FAIL_IF_NOT_ARG_TYPE,
-        .power = 130,
-        .type = TYPE_ELECTRIC,
-        .accuracy = 100,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
+        REMOVE_TYPE_INFO(TYPE_ELECTRIC),
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .metronomeBanned = TRUE,
-        .argument = { .type = TYPE_ELECTRIC },
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_REMOVE_ARG_TYPE,
-            .self = TRUE,
-        }),
-        .contestComboMoves = {COMBO_STARTER_CHARGE},
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_DoubleShock,
     },
 
@@ -18307,7 +18295,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             .onChargeTurnOnly = TRUE,
             .sheerForceOverride = TRUE,
         }),
-        .contestComboMoves = {COMBO_STARTER_CHARGE},
+        .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_ElectroShot,
     },
 
@@ -18388,7 +18376,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_SPECIAL,
         .contestEffect = CONTEST_EFFECT_BETTER_IF_FIRST,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_CHARGE},
+        .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_Thunderclap,
     },
 
@@ -18517,7 +18505,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_CHARGE},
+        .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_SupercellSlam,
     },
 

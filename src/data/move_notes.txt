@@ -162,15 +162,15 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Mystical Fire: 10 PP, 100% lower SpA
     Spirit Break:  15 PP, 100% lower SpA
 
-    Barb Barrage:    10 PP, double on poison, 50% chance to poison
-    Infernal Parade: 15 PP, double on status, 30% chance to burn
+    Barb Barrage:    10 PP, double on poison, 50% poison
+    Infernal Parade: 15 PP, double on status, 30% burn
 
     Lash Out:      10 PP, double if lowered
     Wicked Blow:   10 PP, always crits
     Psychic Noise: 10 PP, prevents healing
 
 80 Power:
-    57 results
+    57 results: power = (B_UPDATED_MOVE_DATA.* \? )?80[ ,]
 
 85 Power:
     Brick Break/Psychic Fangs: 15 PP, break screens
@@ -190,7 +190,7 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Darkest Lariat: 10 PP, ignores stat changes
 
 90 Power:
-    42 results
+    42 results: power = (B_UPDATED_MOVE_DATA.* \? )?90[ ,]
 
 95 Power:
     Sludge Wave:     10 PP, 10% poison, targets all
@@ -200,7 +200,45 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Mighty Cleave:   10 PP, ignores Protect
 
 100 Power:
-    48 results
+    Jump Kick/Supercell Slam: 15 PP, 95% accuracy, recoil if miss
+    Cross Chop/Stone Edge: 5 PP, 80% accuracy, high critical rate
+    Aeroblast/Spacial Rend: 10 PP, high critical rate
+    Hammer Arm/Ice Hammer: 10 PP, 90% accuracy, lowers own Speed
+        Could change to be more similar to Crabhammer?
+    Fusion Flare/Fusion Bolt: 10 PP, combo each other
+    Sunsteel Strike/Moongeist Beam: 10 PP, ignores Abilities
+    Dynamax Cannon/Behemoth Blade/Behemoth Bash: 10 PP, double against Dynamaxed opponent
+    Collision Course/Electro Drift: 10 PP, boosted if super effective
+
+    Iron Tail: 15 PP, 75% accuracy, 30% reduce defense
+    Dragon Rush: 10 PP, 75% accuracy, 20% flinch
+
+    Egg Bomb: 10 PP
+    Spin Out: 10 PP
+
+    Earthquake: 10 PP, hits all
+    Dream Eater: 15 PP, heals, only usable when foe is asleep
+    Crabhammer: 10 PP, increased critical
+    Iron Tail: 15 PP, 75% accuracy, 30% reduce defense
+    Heat Wave: 10 PP, 90% accuracy, 10% burn
+    Meteor Mash: 10 PP, 20% raise own Atk
+    Psystrike: 10 PP, hits Defense
+    Searing Shot: 10 PP, 30% burn
+    Relic Song: 10 PP, 10% sleep
+    Flying Press: 10 PP, also Flying type
+    Diamond Storm: 10 PP, 50% raise Defx2, hits both
+    Thousand Arrows: 10 PP, hits Flying types, hits both
+    Thousand Waves: 10 PP, prevents escape, hits both
+    Land's Wrath: 10 PP, hits both
+    Hyperspace Fury: 10 PP, always hits, bypasses Protect
+    Core Enforcer: 10 PP, suppresses Ability
+    Beak Blast: 15 PP, waits and burns target if hit
+    Photon Geyser: 10 PP, ignores Abilities, changes category
+    Plasma Fists: 15 PP, electrifies
+    Mountain Gale: 10 PP, 30% flinch
+    Hyper Drill: 10 PP, bypasses Protect
+    Ivy Cudgel: 10 PP, type change, increased critical
+    Malignant Chain: 10 PP, 50% bad poison
 
 110 Power:
     Thunder/Hurricane: 10 PP, 70 accuracy, always hits in rain, 30% effect
@@ -222,8 +260,9 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Superpower/Close Combat/Headlong Rush/Armor Cannon: 5 PP, lower two of own stats
     Wring Out/Crush Grip/Hard Press: 10 PP, power based on target HP
     Techno Blast/Multi-Attack: 10 PP, changes type with item
-    Genie storms: 10 PP, hits both, wind move, % effect, always hit in rain
-    Origin Pulse/Precipice Blades/Glacial Lance/Astral Barrage: 10 PP, hits both
+    Legendary signatures: 10 PP, hits both (two subgroups)
+        Genie storms: wind move, % effect, always hit in rain
+        Origin Pulse/Precipice Blades/Glacial Lance/Astral Barrage: metronome banned
 
     Mega Kick:   5 PP, 75% accuracy
     Focus Blast: 5 PP, 70% accuracy, 10% lower SpD

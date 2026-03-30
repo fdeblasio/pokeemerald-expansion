@@ -663,6 +663,8 @@
         - Accuracy: 95->100
     - Force Palm:
         - PP: 10->25
+    - Jump Kick:
+        - PP: 10->15
     - Rock Smash:
         - PP: 15->20
     - Rolling Kick:

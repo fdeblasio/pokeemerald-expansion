@@ -585,29 +585,95 @@ const u8 gNotDoneYetDescription[] = _(
     })
 
 // 100
-#define HIGH_CRITICAL_100_POWER_INFO                         \
-    .effect = EFFECT_HIT,                                    \
-    .power = 100,                                            \
-    .accuracy = 80,                                          \
-    .criticalHitStage = INCREASED_CRITICAL,                  \
-    .pp = 5,                                                 \
-    .target = TARGET_SELECTED,                               \
-    .priority = 0,                                           \
-    .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL, \
-    .contestComboMoves = {COMBO_STARTER_FOCUS_ENERGY},       \
-    .validApprenticeMove = TRUE
-
 #define HIT_TWICE_100_TOTAL_POWER_INFO \
     HIT_TWICE_INFO,                    \
     .power = 50,                       \
     .pp = 20
 
-#define HIGH_CRIT_LEGENDARY_SIGNATURE_INFO  \
-    BASIC_MOVE,                             \
-    .power = 100,                           \
-    .criticalHitStage = INCREASED_CRITICAL, \
-    .pp = 10,                               \
+#define RECOIL_IF_MISS_100_POWER_INFO                          \
+    .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 100 : (B_UPDATED_MOVE_DATA == GEN_4 ? 85 : 70), \
+    .effect = EFFECT_RECOIL_IF_MISS,                           \
+    .accuracy = 95,                                            \
+    .pp = B_UPDATED_MOVE_DATA >= GEN_5 ? 15 : 25,              \
+    .target = TARGET_SELECTED,                                 \
+    .priority = 0,                                             \
+    .makesContact = TRUE,                                      \
+    .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED, \
     .validApprenticeMove = TRUE
+
+#define HIGH_CRITICAL_100_POWER_INFO                         \
+    .effect = EFFECT_HIT,                                    \
+    .power = 100,                                            \
+    .criticalHitStage = INCREASED_CRITICAL,                  \
+    .target = TARGET_SELECTED,                               \
+    .priority = 0,                                           \
+    .validApprenticeMove = TRUE
+
+#define HIGH_CRITICAL_INACCURATE_100_POWER_INFO              \
+    HIGH_CRITICAL_100_POWER_INFO,                            \
+    .accuracy = 80,                                          \
+    .pp = 5,                                                 \
+    .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL, \
+    .contestComboMoves = {COMBO_STARTER_FOCUS_ENERGY}
+
+#define HIGH_CRIT_LEGENDARY_SIGNATURE_INFO  \
+    HIGH_CRITICAL_100_POWER_INFO,           \
+    .accuracy = 100,                        \
+    .pp = 10
+
+#define LOWER_OWN_SPEED_100_POWER_INFO         \
+    .effect = EFFECT_HIT,                      \
+    .power = 100,                              \
+    .accuracy = 90,                            \
+    .pp = 10,                                  \
+    .target = TARGET_SELECTED,                 \
+    .priority = 0,                             \
+    .makesContact = TRUE,                      \
+    .additionalEffects = ADDITIONAL_EFFECTS({  \
+        .moveEffect = MOVE_EFFECT_SPD_MINUS_1, \
+        .self = TRUE,                          \
+    }),                                        \
+    .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED
+
+#define FUSION_COMBO_INFO          \
+    .effect = EFFECT_FUSION_COMBO, \
+    .power = 100,                  \
+    .accuracy = 100,               \
+    .pp = 10,                      \
+    .target = TARGET_SELECTED,     \
+    .priority = 0,                 \
+    .contestEffect = CONTEST_EFFECT_BETTER_WHEN_LATER
+
+#define IGNORE_ABILITIES_100_POWER_INFO               \
+    BASIC_MOVE,                                       \
+    .power = 100,                                     \
+    .pp = 10,                                         \
+    .ignoresTargetAbility = TRUE,                     \
+    .metronomeBanned = B_UPDATED_MOVE_FLAGS >= GEN_8, \
+    .contestEffect = CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL
+
+#define DYNAMAX_DOUBLE_DAMAGE_INFO             \
+    .effect = EFFECT_DYNAMAX_DOUBLE_DMG,       \
+    .power = 100,                              \
+    .accuracy = 100,                           \
+    .pp = 10,                                  \
+    .target = TARGET_SELECTED,                 \
+    .priority = 0,                             \
+    .mimicBanned = TRUE,                       \
+    .metronomeBanned = TRUE,                   \
+    .copycatBanned = TRUE,                     \
+    .assistBanned = B_EXTRAPOLATED_MOVE_FLAGS, \
+    .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING
+
+#define BOOSTED_SUPER_EFFECTIVE_INFO   \
+    .effect = EFFECT_COLLISION_COURSE, \
+    .power = 100,                      \
+    .accuracy = 100,                   \
+    .pp = 10,                          \
+    .target = TARGET_SELECTED,         \
+    .priority = 0,                     \
+    .makesContact = TRUE,              \
+    .metronomeBanned = TRUE
 
 // 110
 #define WEATHER_AFFECTED_110_POWER_INFO                \
@@ -716,13 +782,16 @@ const u8 gNotDoneYetDescription[] = _(
     .argument = { .holdEffect = HoldEffect },          \
     .contestEffect = CONTEST_EFFECT_BETTER_WITH_GOOD_CONDITION
 
+#define LEGENDARY_SIGNATURE_HIT_BOTH_120_POWER_INFO \
+    .effect = EFFECT_HIT,                           \
+    .power = 120,                                   \
+    .accuracy = 100,                                \
+    .pp = 10,                                       \
+    .target = TARGET_BOTH,                          \
+    .priority = 0
+
 #define GENIE_STORM_INFO(MoveEffect)                  \
-    .effect = EFFECT_HIT,                             \
-    .power = B_UPDATED_MOVE_DATA >= GEN_9 ? 120 : 95, \
-    .accuracy = 100,                                  \
-    .pp = B_UPDATED_MOVE_DATA >= GEN_9 ? 10 : 5,      \
-    .target = TARGET_BOTH,                            \
-    .priority = 0,                                    \
+    LEGENDARY_SIGNATURE_HIT_BOTH_120_POWER_INFO,      \
     .category = DAMAGE_CATEGORY_SPECIAL,              \
     .windMove = TRUE,                                 \
     .alwaysHitsInRain = TRUE,                         \
@@ -731,13 +800,8 @@ const u8 gNotDoneYetDescription[] = _(
         .chance = 30,                                 \
     })
 
-#define LEGENDARY_SIGNATURE_HIT_BOTH_120_POWER_INFO \
-    .effect = EFFECT_HIT,                           \
-    .power = 120,                                   \
-    .accuracy = 100,                                \
-    .pp = 10,                                       \
-    .target = TARGET_BOTH,                          \
-    .priority = 0,                                  \
+#define METRONOME_BANNED_HIT_BOTH_LEGENDARY_SIGNATURE_120_POWER_INFO \
+    LEGENDARY_SIGNATURE_HIT_BOTH_120_POWER_INFO,                     \
     .metronomeBanned = TRUE
 
 // 130-140
@@ -1481,28 +1545,14 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A strong jumping kick. May\n"
             "miss and hurt the kicker."),
-        #if B_UPDATED_MOVE_DATA >= GEN_5
-            .power = 100,
-        #elif B_UPDATED_MOVE_DATA == GEN_4
-            .power = 85,
-        #else
-            .power = 70,
-        #endif
-        .effect = EFFECT_RECOIL_IF_MISS,
+        RECOIL_IF_MISS_100_POWER_INFO,
         .type = TYPE_FIGHTING,
-        .accuracy = 95,
-        .pp = B_UPDATED_MOVE_DATA >= GEN_5 ? 10 : 25,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
         .gravityBanned = TRUE,
-        .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {ALWAYS_HIT_COMBOS},
         .battleAnimScript = gBattleAnimMove_JumpKick,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_ROLLING_KICK] =
@@ -6303,7 +6353,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A double-chopping attack.\n"
             "High critical-hit ratio."),
-        HIGH_CRITICAL_100_POWER_INFO,
+        HIGH_CRITICAL_INACCURATE_100_POWER_INFO,
         .type = TYPE_FIGHTING,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
@@ -8971,21 +9021,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A swinging fist attack\n"
             "that also lowers Speed."),
-        .effect = EFFECT_HIT,
-        .power = 100,
+        LOWER_OWN_SPEED_100_POWER_INFO,
         .type = TYPE_FIGHTING,
-        .accuracy = 90,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
         .punchingMove = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SPD_MINUS_1,
-            .self = TRUE,
-        }),
-        .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
         .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_TOUGH : CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_FOCUS_ENERGY},
@@ -10615,7 +10654,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Stabs the foe with stones.\n"
             "High critical-hit ratio."),
-        HIGH_CRITICAL_100_POWER_INFO,
+        HIGH_CRITICAL_INACCURATE_100_POWER_INFO,
         .type = TYPE_ROCK,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
@@ -12887,16 +12926,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Summons a fireball. Works\n"
             "well with a thunderbolt."),
-        .effect = EFFECT_FUSION_COMBO,
-        .power = 100,
+        FUSION_COMBO_INFO,
         .type = TYPE_FIRE,
-        .accuracy = 100,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .thawsUser = TRUE,
-        .contestEffect = CONTEST_EFFECT_BETTER_WHEN_LATER,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_SUNNY_DAY},
@@ -12909,15 +12942,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Summons a thunderbolt.\n"
             "Works well with a fireball."),
-        .effect = EFFECT_FUSION_COMBO,
-        .power = 100,
+        FUSION_COMBO_INFO,
         .type = TYPE_ELECTRIC,
-        .accuracy = 100,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .contestEffect = CONTEST_EFFECT_BETTER_WHEN_LATER,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {ELECTRIC_COMBOS},
@@ -14199,7 +14226,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Beams of glowing blue light\n"
             "blast both foes."),
-        LEGENDARY_SIGNATURE_HIT_BOTH_120_POWER_INFO,
+        METRONOME_BANNED_HIT_BOTH_LEGENDARY_SIGNATURE_120_POWER_INFO,
         .type = TYPE_WATER,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .pulseMove = TRUE,
@@ -14216,7 +14243,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Fearsome blades of stone\n"
             "attack both foes."),
-        LEGENDARY_SIGNATURE_HIT_BOTH_120_POWER_INFO,
+        METRONOME_BANNED_HIT_BOTH_LEGENDARY_SIGNATURE_120_POWER_INFO,
         .type = TYPE_GROUND,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .skyBattleBanned = TRUE,
@@ -14416,21 +14443,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Swings the fist to strike.\n"
             "Lowers the user's Speed."),
-        .effect = EFFECT_HIT,
-        .power = 100,
+        LOWER_OWN_SPEED_100_POWER_INFO,
         .type = TYPE_ICE,
-        .accuracy = 90,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
         .punchingMove = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SPD_MINUS_1,
-            .self = TRUE,
-        }),
-        .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_HAIL},
@@ -15225,15 +15241,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A sun-fueled strike that\n"
             "ignores abilities."),
-        BASIC_MOVE,
-        .power = 100,
+        IGNORE_ABILITIES_100_POWER_INFO,
         .type = TYPE_STEEL,
-        .pp = 10,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .ignoresTargetAbility = TRUE,
-        .metronomeBanned = B_UPDATED_MOVE_FLAGS >= GEN_8,
-        .contestEffect = CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL,
         NO_COMBO(CONTEST_CATEGORY_COOL),
         .battleAnimScript = gBattleAnimMove_SunsteelStrike,
     },
@@ -15244,14 +15255,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A moon-powered beam that\n"
             "ignores abilities."),
-        BASIC_MOVE,
-        .power = 100,
+        IGNORE_ABILITIES_100_POWER_INFO,
         .type = TYPE_GHOST,
-        .pp = 10,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .ignoresTargetAbility = TRUE,
-        .metronomeBanned = B_UPDATED_MOVE_FLAGS >= GEN_8,
-        .contestEffect = CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL,
         NO_COMBO(CONTEST_CATEGORY_SMART),
         .battleAnimScript = gBattleAnimMove_MoongeistBeam,
     },
@@ -15451,24 +15457,14 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Unleashes core energy.\n"
             "2x against Dynamaxed foes."),
-        .effect = EFFECT_DYNAMAX_DOUBLE_DMG,
-        .power = 100,
+        DYNAMAX_DOUBLE_DAMAGE_INFO,
         .type = TYPE_DRAGON,
-        .accuracy = 100,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .mirrorMoveBanned = TRUE,
-        .metronomeBanned = TRUE,
-        .copycatBanned = TRUE,
         .sleepTalkBanned = TRUE,
         .instructBanned = TRUE,
-        .mimicBanned = TRUE,
         .encoreBanned = TRUE,
-        .assistBanned = B_EXTRAPOLATED_MOVE_FLAGS,
         .parentalBondBanned = TRUE,
-        .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
         NO_COMBO(CONTEST_CATEGORY_SMART),
         .battleAnimScript = gBattleAnimMove_DynamaxCannon,
     },
@@ -15848,21 +15844,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Strikes as a sword. Deals 2x\n"
             "damage to Dynamaxed foes."),
-        .effect = EFFECT_DYNAMAX_DOUBLE_DMG,
-        .power = 100,
+        DYNAMAX_DOUBLE_DAMAGE_INFO,
         .type = TYPE_STEEL,
-        .accuracy = 100,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .slicingMove = TRUE,
-        .metronomeBanned = TRUE,
-        .copycatBanned = TRUE,
-        .mimicBanned = TRUE,
-        .assistBanned = B_EXTRAPOLATED_MOVE_FLAGS,
-        .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
         NO_COMBO(CONTEST_CATEGORY_TOUGH),
         .battleAnimScript = gBattleAnimMove_BehemothBlade,
     },
@@ -15873,20 +15859,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Attacks as a shield. Deals 2x\n"
             "damage to Dynamaxed foes."),
-        .effect = EFFECT_DYNAMAX_DOUBLE_DMG,
-        .power = 100,
+        DYNAMAX_DOUBLE_DAMAGE_INFO,
         .type = TYPE_STEEL,
-        .accuracy = 100,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .metronomeBanned = TRUE,
-        .copycatBanned = TRUE,
-        .mimicBanned = TRUE,
-        .assistBanned = B_EXTRAPOLATED_MOVE_FLAGS,
-        .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
         NO_COMBO(CONTEST_CATEGORY_TOUGH),
         .battleAnimScript = gBattleAnimMove_BehemothBash,
     },
@@ -16775,7 +16751,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Hurls a blizzard-cloaked\n"
             "icicle lance at foes."),
-        LEGENDARY_SIGNATURE_HIT_BOTH_120_POWER_INFO,
+        METRONOME_BANNED_HIT_BOTH_LEGENDARY_SIGNATURE_120_POWER_INFO,
         .type = TYPE_ICE,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
@@ -16789,7 +16765,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Sends a frightful amount\n"
             "of small ghosts at foes."),
-        LEGENDARY_SIGNATURE_HIT_BOTH_120_POWER_INFO,
+        METRONOME_BANNED_HIT_BOTH_LEGENDARY_SIGNATURE_120_POWER_INFO,
         .type = TYPE_GHOST,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
@@ -17799,16 +17775,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Prehistoric explosion that's\n"
             "stronger if super effective."),
-        .effect = EFFECT_COLLISION_COURSE,
-        .power = 100,
+        BOOSTED_SUPER_EFFECTIVE_INFO,
         .type = TYPE_FIGHTING,
-        .accuracy = 100,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
-        .metronomeBanned = TRUE,
         .battleAnimScript = gBattleAnimMove_CollisionCourse,
     },
 
@@ -17818,16 +17787,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Futuristic electricity. It's\n"
             "stronger if super effective."),
-        .effect = EFFECT_COLLISION_COURSE,
-        .power = 100,
+        BOOSTED_SUPER_EFFECTIVE_INFO,
         .type = TYPE_ELECTRIC,
-        .accuracy = 100,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .makesContact = TRUE,
-        .metronomeBanned = TRUE,
         .contestComboMoves = {ELECTRIC_COMBOS},
         .battleAnimScript = gBattleAnimMove_ElectroDrift,
     },
@@ -18541,17 +18503,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "An electrified slam. If it\n"
             "misses, the user is hurt."),
-        .effect = EFFECT_RECOIL_IF_MISS,
-        .power = 100,
+        RECOIL_IF_MISS_100_POWER_INFO,
         .type = TYPE_ELECTRIC,
-        .accuracy = 95,
-        .pp = 15,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
         .minimizeDoubleDamage = TRUE,
-        .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {ELECTRIC_COMBOS},

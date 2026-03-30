@@ -698,6 +698,35 @@ const u8 gNotDoneYetDescription[] = _(
     .target = TARGET_SELECTED,                         \
     .contestEffect = CONTEST_EFFECT_WORSEN_CONDITION_OF_PREV_MONS
 
+#define TARGETS_BOTH_90_POWER_INFO                     \
+    .effect = EFFECT_HIT,                              \
+    .power = 90,                                       \
+    .accuracy = 100,                                   \
+    .pp = 15,                                          \
+    .target = TARGET_BOTH,                             \
+    .priority = 0,                                     \
+    .contestEffect = CONTEST_EFFECT_STARTLE_PREV_MONS, \
+    .validApprenticeMove = TRUE
+
+#define HIGH_CRITICAL_90_POWER_INFO                  \
+    HIGH_CRITICAL_INFO,                              \
+    .power = B_UPDATED_MOVE_DATA >= GEN_4 ? 90 : 70, \
+    .accuracy = 100,                                 \
+    .pp = 15,                                        \
+    .target = TARGET_SELECTED,                       \
+    .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_REPETITION_NOT_BORING : CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL, \
+    .validApprenticeMove = TRUE
+
+#define PREVENT_ESCAPE_90_POWER_INFO              \
+    BASIC_MOVE,                                   \
+    .power = 90,                                  \
+    .pp = 20,                                     \
+    .additionalEffects = ADDITIONAL_EFFECTS({     \
+        .moveEffect = MOVE_EFFECT_PREVENT_ESCAPE, \
+        .chance = 100,                            \
+    }),                                           \
+    .contestEffect = CONTEST_EFFECT_WORSEN_CONDITION_OF_PREV_MONS
+
 // 100
 #define BASIC_100_POWER_INFO                          \
     BASIC_MOVE,                                       \

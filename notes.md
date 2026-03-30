@@ -794,8 +794,8 @@ upcoming
             - Wait for PR in upcoming
         - Allow multiple items to be given. Potentially PokeBlocks and quizzes too
     - Edit contests
-        - Add combos for Grassy Terrain->Grass, Rain Dance->Water, Psychic Terrain->Psychic (not Misty Terrain, though)
-            - Also use https://www.serebii.net/games/combo.shtml
+        - Add combos for https://www.serebii.net/games/combo.shtml
+            - Stat-raising move macro for Baton Pass/Stored Power/Power Trip
         - Better overworld sprite for Lisia
         - Update ORAS opponent stats
         - Add unique ideas to Special Rank

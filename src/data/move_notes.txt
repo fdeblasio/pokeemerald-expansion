@@ -170,7 +170,66 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Psychic Noise: 10 PP, prevents healing
 
 80 Power:
-    57 results: power = (B_UPDATED_MOVE_DATA.* \? )?80[ ,]
+    Basic moves: 20 PP
+    Dig/Dive: 10 PP, semi-invulnerable
+    Discharge/Lava Plume: 15 PP, hits all, 30% status
+    Water Pledge/Fire Pledge/Grass Pledge: 10 PP, effects with other pledges
+
+    Waterfall: 15 PP, 20% flinch
+    Hyper Fang: 15 PP, 10% flinch
+    Extrasensory: 20 PP, 10% flinch
+    Dark Pulse: 15 PP, 20% flinch
+    Air Slash: 15 PP, 30% flinch
+    Zen Headbutt: 15 PP, 20% flinch
+    Iron Head: 15 PP, 30% flinch
+    Zing Zap: 10 PP, 30% flinch
+    Rock Slide: 10 PP, 30% flinch, targets both
+
+    Crunch:      15 PP, 20% lower Def
+    Shadow Ball: 15 PP, 20% lower SpD
+
+    Signal Beam: 15 PP, 10% confusion
+    Poison Jab: 20 PP, 30% poison
+    Scald: 15 PP, 30% burn
+
+    Lunge: 15 PP, 100% reduce Atk
+    Fire Lash: 15 PP, 100% reduce Def
+    Drum Beating: 10 PP, 100% reduce Spe
+    Apple Acid: 10 PP, 100% reduce SpD
+    Grav Apple: 10 PP, 100% reduce Def
+    Bitter Malice: 15 PP, 100% reduce Atk
+    Glaciate: 10 PP, 100% reduce Speed, hits both
+
+    Fiery Dance: 10 PP, 100% raise SpA
+    Mystical Power: 10 PP, 100% raise SpA
+    Torch Song: 10 PP, 100% raise SpA
+    Aqua Step: 10 PP, 100% raise Spe
+    Esper Wing: 10 PP, 100% raise SpD, high crit
+
+    Razor Wind: 10 PP, two turns, targets both
+    Leech Life: 10 PP, heals 50%
+    Oblivion Wing: 10 PP, heals 75%
+    Matcha Gotcha: 15 PP, heals 50%, targets both, 20% burn
+    Tri Attack: 10 PP, 20% status
+    Extreme Speed: 5 PP, +2 priority
+    Chatter: 20 PP, 100% confusion
+    Psyshock: 10 PP, targets Defense
+    Drill Run: 10 PP, high critical
+        increase to 90 to be clone of Leaf Blade/Attack Order?
+    Dazzling Gleam: 10 PP, targets both
+    Throat Chop: 15 PP, prevents sound moves
+    Snipe Shot: 15 PP, ignores redirect, increased critical
+    Jaw Lock: 10 PP, traps both
+    Body Press: 10 PP, uses Def
+    Expanding Force: 10 PP, more powerful in Psychic Terrain
+    Thunder Cage: 15 PP, traps foe
+    Eerie Spell: 10 PP, removes 3 PP
+    Tera Blast: type changes on Tera Type
+    Lumina Crash: 10 PP, 100% reduce SpD x2
+    Order Up: 10 PP, orders sushi
+    Ice Spinner: 15 PP, destroys terrain
+    Fickle Beam: 10 PP, can sometimes be stronger
+    Alluring Voice: 10 PP, confuses if opponent raised stats
 
 85 Power:
     Brick Break/Psychic Fangs: 15 PP, break screens

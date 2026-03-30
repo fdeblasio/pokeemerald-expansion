@@ -49,7 +49,7 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Echoed Voice: 20 PP, additive
 
 50 Power:
-    Cut/Vine Whip/Rock Throw: 30 PP
+    Cut/Vine Whip/Rock Throw: 35 PP
     Flame Charge/Trailblaze: 20 PP, Speed +1
     Struggle Bug/Pounce/Chilling Water: 20 PP, lower stat
     Weather Ball/Terrain Pulse: 10 PP, type change/double power
@@ -110,7 +110,7 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Syrup Bomb:       10 PP, syrupy
 
 65 Power:
-    Vise Grip/Wing Attack/Horn Attack: 35 PP
+    Vise Grip/Wing Attack/Horn Attack: 30 PP
     Sludge/Spark:    20 PP, 30% effect
     Beams:           20 PP, 10% effect
     Elemental Fangs: 15 PP, 10% effect, 10% flinch
@@ -151,8 +151,8 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Crush Claw/Razor Shell: 10 PP, 50% lower defense
     Stomping Tantrum/Temper Flare: 10 PP, double if failed
 
-    Dizzy Punch: 15 PP, 20% confuse
-    Needle Arm:  15 PP, 30% flinch
+    Dizzy Punch: 15 PP, 20% confuse, punch
+    Needle Arm:  15 PP, 30% flinch, punch
 
     Giga Drain:       10 PP, absorb
     Drain Punch:      10 PP, absorb
@@ -178,9 +178,9 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     False Surrender/Kowtow Cleave: 10 PP, always hit
     Bolt Beak/Fishious Rend: double if faster
 
-    Body Slam: 15 PP, 30% paralyze
-    Blaze Kick: 10 PP, 10% burn, high crit
+    Body Slam:    15 PP, 30% paralyze
     Icicle Crash: 10 PP, 30% flinch
+    Blaze Kick:   10 PP, 10% burn, high crit
 
     Sky Uppercut:   15 PP, hits flying
     Bounce:          5 PP, 85 accuracy, 30% paralyze
@@ -190,7 +190,48 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Darkest Lariat: 10 PP, ignores stat changes
 
 90 Power:
-    42 results: power = (B_UPDATED_MOVE_DATA.* \? )?90[ ,]
+    Aqua Tail/Dragon Hammer: 15 PP
+    Flamethrower/Ice Beam/Thunderbolt: 15 PP, 10% effect
+    Psychic/Bug Buzz/Energy Ball/Earth Power/Flash Cannon: 10 PP, 10% lower SpD
+    Surf/Hyper Voice/Petal Blizzard/Overdrive: 15 PP, hits both
+    Leaf Blade/Attack Order: 15 PP, increased critical
+    Spirit Shackle/Anchor Shot: 20 PP, prevents escape
+
+    Sludge Bomb:    10 PP, 30% poison
+    Rock Climb:     20 PP, 20% confuse
+    Play Rough:     10 PP, 10% reduce Atk
+    Strange Steam:  10 PP, 20% confuse
+    Freezing Glare: 10 PP, 20% freeze
+    Fiery Wrath:    10 PP, 20% flinch
+
+    Trop Kick:       15 PP, 100% lower Atk
+    Thunderous Kick: 10 PP, 100% lower Def
+
+    Fly: 15 PP, semi-invulnerable
+    Phantom Force: 10 PP, semi-invulnerable, bypasses Protect
+
+    Bitter Blade: 10 PP, 50% heal
+    Aura Sphere: 20 PP, always hits
+    Take Down: 20 PP, 25% recoil
+    Octazooka: 10 PP, 100% lower accuracy
+    Uproar: 10 PP, multiple turns, prevents sleep
+    Muddy Water: 10 PP, 85% accuracy, hits both, 30% lower accuracy
+    Sacred Sword: 15 PP, ignores stat changes
+    Hyperspace Hole: 10 PP, always hits, bypasses Protect
+        change to 100 to match Hyperspace Fury?
+            Figure out how EFFECT_HYPERSPACE_FURY is different
+    First Impression: 10 PP, first turn only
+    Sparkling Aria: 10 PP, hits all, removes burn
+    Pollen Puff: 15 PP, heals ally
+    Revelation Dance: 15 PP, type matches user
+    Spectral Thief: 10 PP, steals stats
+    Shell Side Arm: 10 PP, changes category, 20% poison
+    Dire Claw: 15 PP, 50% statuses
+    Psyshield Bash: 10 PP, 100% raise Def
+    Triple Arrows: 10 PP, 50% lower Def, 30% flinch, increased critical
+    Raging Bull: 10 PP, changes type, breaks screens
+    Psyblade: 15 PP, boosted under Electric Terrain
+    Hydro Steam: 15 PP, boosted under Sun
 
 95 Power:
     Sludge Wave:     10 PP, 10% poison, targets all
@@ -200,6 +241,7 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Mighty Cleave:   10 PP, ignores Protect
 
 100 Power:
+    Egg Bomb/Spin Out: 10 PP
     Jump Kick/Supercell Slam: 15 PP, 95% accuracy, recoil if miss
     Cross Chop/Stone Edge: 5 PP, 80% accuracy, high critical rate
     Aeroblast/Spacial Rend: 10 PP, high critical rate
@@ -210,35 +252,34 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Dynamax Cannon/Behemoth Blade/Behemoth Bash: 10 PP, double against Dynamaxed opponent
     Collision Course/Electro Drift: 10 PP, boosted if super effective
 
-    Iron Tail: 15 PP, 75% accuracy, 30% reduce defense
+    Zygarde signatures: 10 PP, hits both, physical, Ground-type, Sky Battle banned
+        Thousand Arrows: hits Flying types
+        Thousand Waves:  prevents escape
+        Land's Wrath:    N/A
+
+    Iron Tail:   15 PP, 75% accuracy, 30% reduce defense
     Dragon Rush: 10 PP, 75% accuracy, 20% flinch
 
-    Egg Bomb: 10 PP
-    Spin Out: 10 PP
-
-    Earthquake: 10 PP, hits all
-    Dream Eater: 15 PP, heals, only usable when foe is asleep
-    Crabhammer: 10 PP, increased critical
-    Iron Tail: 15 PP, 75% accuracy, 30% reduce defense
-    Heat Wave: 10 PP, 90% accuracy, 10% burn
-    Meteor Mash: 10 PP, 20% raise own Atk
-    Psystrike: 10 PP, hits Defense
-    Searing Shot: 10 PP, 30% burn
-    Relic Song: 10 PP, 10% sleep
-    Flying Press: 10 PP, also Flying type
-    Diamond Storm: 10 PP, 50% raise Defx2, hits both
-    Thousand Arrows: 10 PP, hits Flying types, hits both
-    Thousand Waves: 10 PP, prevents escape, hits both
-    Land's Wrath: 10 PP, hits both
-    Hyperspace Fury: 10 PP, always hits, bypasses Protect
-    Core Enforcer: 10 PP, suppresses Ability
-    Beak Blast: 15 PP, waits and burns target if hit
-    Photon Geyser: 10 PP, ignores Abilities, changes category
-    Plasma Fists: 15 PP, electrifies
-    Mountain Gale: 10 PP, 30% flinch
-    Hyper Drill: 10 PP, bypasses Protect
-    Ivy Cudgel: 10 PP, type change, increased critical
+    Meteor Mash:     10 PP, 20% raise own Atk
+    Mountain Gale:   10 PP, 30% flinch
+    Searing Shot:    10 PP, 30% burn
+    Relic Song:      10 PP, 10% sleep
     Malignant Chain: 10 PP, 50% bad poison
+
+    Earthquake:      10 PP, hits all
+    Dream Eater:     15 PP, heals, only usable when foe is asleep
+    Crabhammer:      10 PP, increased critical
+    Heat Wave:       10 PP, 90% accuracy, 10% burn, hits both
+    Psystrike:       10 PP, hits Defense
+    Flying Press:    10 PP, also Flying type
+    Diamond Storm:   10 PP, 50% raise Defx2, hits both
+    Hyperspace Fury: 10 PP, always hits, bypasses Protect
+    Core Enforcer:   10 PP, suppresses Ability
+    Beak Blast:      15 PP, waits and burns target if hit
+    Photon Geyser:   10 PP, ignores Abilities, changes category
+    Plasma Fists:    15 PP, electrifies
+    Hyper Drill:     10 PP, bypasses Protect
+    Ivy Cudgel:      10 PP, type change, increased critical
 
 110 Power:
     Thunder/Hurricane: 10 PP, 70 accuracy, always hits in rain, 30% effect

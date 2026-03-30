@@ -566,6 +566,7 @@
         - PP: 5->10
     - Cut:
         - Accuracy: 95->100
+        - PP: 30->35
     - Dizzy Punch:
         - Power: 70->75
         - PP: 10->15
@@ -594,11 +595,13 @@
     - Head Charge:
         - No longer causes recoil
     - Horn Attack:
-        - PP: 25->35
+        - PP: 25->30
     - Hyper Drill:
         - PP: 5->10
     - Hyper Fang:
         - Accuracy: 90->100
+    - Hyper Voice:
+        - PP: 10->15
     - Judgment:
         - Power: 100->150
     - Mega Punch:
@@ -642,7 +645,6 @@
         - PP: 5->10
     - Vise Grip:
         - Power: 55->65
-        - PP: 30->35
     - Wrap:
         - Power: 15->35
         - Accuracy: 90->100
@@ -715,6 +717,7 @@
         - PP: 5->10
     - Wing Attack:
         - Power: 60->65
+        - PP: 35->30
 - Poison:
     - Barb Barrage:
         - Power: 60->75
@@ -786,7 +789,7 @@
         - Accuracy: 90->100
     - Rock Throw:
         - Accuracy: 90->100
-        - PP: 15->30
+        - PP: 15->35
     - Rock Tomb:
         - Accuracy: 95->100
     - Salt Cure:
@@ -836,7 +839,7 @@
         - PP: 5->10
     - Spirit Shackle:
         - Power: 80->90
-        - PP: 10->15
+        - PP: 10->20
 - Electric:
     - Bolt Strike:
         - Accuracy: 85->100
@@ -852,6 +855,7 @@
         - PP: 5->10
     - Overdrive:
         - Power: 80->90
+        - PP: 10->15
     - Parabolic Charge:
         - Power: 65->75
         - Target: Both foes and ally->both foes
@@ -919,6 +923,7 @@
         - PP: 20->30
     - Aqua Tail:
         - Accuracy: 90->100
+        - PP: 10->15
     - Clamp:
         - Accuracy: 85->100
         - PP: 15->20
@@ -974,6 +979,8 @@
     - Needle Arm:
         - Power: 60->75
         - Now a punching move
+    - Petal Blizzard:
+        - Target: Both foes and ally->both foes
     - Razor Leaf:
         - Power: 55->60
         - Accuracy: 95->100
@@ -994,7 +1001,7 @@
         - Power: 70->90
     - Vine Whip:
         - Power: 45->50
-        - PP: 20->30
+        - PP: 20->35
     - Worry Seed:
         - PP: 10->15
 - Psychic:

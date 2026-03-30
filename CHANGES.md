@@ -695,6 +695,7 @@
         - Accuracy: 80->100
     - Dragon Ascent:
         - PP: 5->10
+        - No longer lowers users Defense and Special Defense
     - Dragon Breath:
         - PP: 20->25
     - Dual Wingbeat:
@@ -755,6 +756,7 @@
     - Sandsear Storm:
         - Power: 100->120
         - Accuracy: 80->100
+        - Chance to burn: 20%->30%
     - Sand Tomb:
         - Accuracy: 85->100
         - PP: 15->20
@@ -864,12 +866,11 @@
     - Wildbolt Storm:
         - Power: 100->120
         - Accuracy: 80->100
+        - Chance to paralyze: 20%->30%
     - Wild Charge:
         - Power: 90->120
         - Recoil: 25%->33%
 - Fire:
-    - Armor Cannon:
-        - PP: 5->10
     - Blaze Kick:
         - Accuracy: 90->100
     - Blue Flare:
@@ -1166,6 +1167,7 @@
         - Power: 100->120
         - Accuracy: 80->100
         - PP: 5->10
+        - Now always hits in rain
     - Strange Steam:
         - Accuracy: 95->100
 
@@ -1255,7 +1257,7 @@
 - The following effects on accuracy are now reflected in battle and on the summary screen:
     - Thunder and Hurricane having 50% accuracy in sun
     - Thunder, Hurricane, Bleakwind Storm, Wildbolt Storm, and Sandsear Storm having 100% accuracy in rain
-        - Although the moves were boosted to have 100% accuracy all the time
+        - Although the last three moves were boosted to have 100% accuracy all the time
     - Blizzard having 100% accuracy in snow/hail
     - Nature Power's move's accuracy
     - OHKO moves

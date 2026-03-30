@@ -219,33 +219,22 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Recoil: 15 PP, 33% recoil
     Fatigue: 10 PP, fatigue
     Zap Cannon/Dynamic Punch/Inferno: 5 PP, 50% accuracy, 100% status
+    Superpower/Close Combat/Headlong Rush/Armor Cannon: 5 PP, lower two of own stats
     Wring Out/Crush Grip/Hard Press: 10 PP, power based on target HP
-    Genie storms: 10 PP, hits both, wind move, % effect
-        Some always hit in rain
-
-    Superpower:     5 PP, lower own Atk/Def
-    Close Combat:   5 PP, lower own Def/SpD
-    Dragon Ascent: 10 PP, lowers own Def/SpD (remove?)
-    Headlong Rush:  5 PP, lower own Def/SpD
-    Armor Cannon:  10 PP, lower own Def/SpD
+    Techno Blast/Multi-Attack: 10 PP, changes type with item
+    Genie storms: 10 PP, hits both, wind move, % effect, always hit in rain
+    Origin Pulse/Precipice Blades/Glacial Lance/Astral Barrage: 10 PP, hits both
 
     Mega Kick:   5 PP, 75% accuracy
     Focus Blast: 5 PP, 70% accuracy, 10% lower SpD
     Gunk Shot:   5 PP, 80% accuracy, 30% poison
-
-    Origin Pulse:     10 PP, hits both
-    Precipice Blades: 10 PP, hits both, add hit Flying?
-    Glacial Lance:    10 PP, hits both
-    Astral Barrage:   10 PP, hits both
-
-    Techno Blast: 10 PP, changes type with item
-    Multi-Attack: 10 PP, changes type with item
 
     Volt Tackle:  15 PP, 30% paralyze
     Seed Flare:   10 PP, 40% lower SpDx2
     Head Charge:  15 PP, add flinch?
     Pyro Ball:    10 PP, 20% burn
 
+    Dragon Ascent:  10 PP
     Solar Beam:     10 PP, two turn, one turn in sunglight
     Future Sight:   10 PP, future attack
     Magma Storm:    10 PP, traps

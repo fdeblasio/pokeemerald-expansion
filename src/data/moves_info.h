@@ -639,6 +639,15 @@ const u8 gNotDoneYetDescription[] = _(
     .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_REPETITION_NOT_BORING : CONTEST_EFFECT_HIGHLY_APPEALING, \
     .validApprenticeMove = TRUE
 
+#define INACCURATE_BASIC_120_POWER_INFO \
+    .effect = EFFECT_HIT,               \
+    .power = 120,                       \
+    .accuracy = 85,                     \
+    .pp = 10,                           \
+    .target = TARGET_SELECTED,          \
+    .priority = 0,                      \
+    .validApprenticeMove = TRUE
+
 #define RECOIL_120_POWER_INFO \
     RECOIL_INFO(33),          \
     .power = 120,             \
@@ -671,6 +680,16 @@ const u8 gNotDoneYetDescription[] = _(
         .moveEffect = MOVE_EFFECT_##Status,   \
         .chance = 100,                        \
     })
+
+#define POWER_BASED_ON_TARGET_HP_INFO          \
+    .description = sWringOutDescription,       \
+    .effect = EFFECT_POWER_BASED_ON_TARGET_HP, \
+    .power = 120,                              \
+    .accuracy = 100,                           \
+    .pp = 10,                                  \
+    .target = TARGET_SELECTED,                 \
+    .priority = 0,                             \
+    .makesContact = TRUE
 
 #define GENIE_STORM_INFO                              \
     .effect = EFFECT_HIT,                             \
@@ -5899,19 +5918,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A brutal ramming attack\n"
             "using out-thrust horns."),
-        .effect = EFFECT_HIT,
-        .power = 120,
+        INACCURATE_BASIC_120_POWER_INFO,
         .type = TYPE_BUG,
-        .accuracy = 85,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_REPETITION_NOT_BORING : CONTEST_EFFECT_BETTER_IF_SAME_TYPE,
         NO_COMBO(CONTEST_CATEGORY_COOL),
         .battleAnimScript = gBattleAnimMove_Megahorn,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_DRAGON_BREATH] =
@@ -9325,18 +9338,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_WRING_OUT] =
     {
         .name = COMPOUND_STRING("Wring Out"),
-        .description = COMPOUND_STRING(
-            "The higher the foe's HP\n"
-            "the more damage caused."),
-        .effect = EFFECT_POWER_BASED_ON_TARGET_HP,
-        .power = 120,
+        POWER_BASED_ON_TARGET_HP_INFO,
         .type = TYPE_NORMAL,
-        .accuracy = 100,
-        .pp = 5,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .makesContact = TRUE,
         .contestEffect = CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION,
         NO_COMBO(C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_TOUGH : CONTEST_CATEGORY_SMART),
         .battleAnimScript = gBattleAnimMove_WringOut,
@@ -10461,13 +10465,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Violently lashes the foe\n"
             "with vines or tentacles."),
-        .effect = EFFECT_HIT,
-        .power = 120,
+        INACCURATE_BASIC_120_POWER_INFO,
         .type = TYPE_GRASS,
-        .accuracy = 85,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .contestEffect = CONTEST_EFFECT_BETTER_WHEN_AUDIENCE_EXCITED,
@@ -10939,18 +10938,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_CRUSH_GRIP] =
     {
         .name = COMPOUND_STRING("Crush Grip"),
-        .description = COMPOUND_STRING(
-            "The higher the foe's HP\n"
-            "the more damage caused."),
-        .effect = EFFECT_POWER_BASED_ON_TARGET_HP,
-        .power = 120,
+        POWER_BASED_ON_TARGET_HP_INFO,
         .type = TYPE_NORMAL,
-        .accuracy = 100,
-        .pp = 5,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
         .contestEffect = CONTEST_EFFECT_REPETITION_NOT_BORING,
         NO_COMBO(CONTEST_CATEGORY_TOUGH),
         .battleAnimScript = gBattleAnimMove_CrushGrip,
@@ -14790,7 +14780,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .type = TYPE_STEEL,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .contestEffect = CONTEST_EFFECT_BETTER_IF_FIRST,
         NO_COMBO(CONTEST_CATEGORY_SMART),
         .battleAnimScript = gBattleAnimMove_SmartStrike,
     },
@@ -18425,18 +18414,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_HARD_PRESS] =
     {
         .name = COMPOUND_STRING("Hard Press"),
-        .description = COMPOUND_STRING(
-            "The higher the foe's HP\n"
-            "the more damage caused."),
-        .effect = EFFECT_POWER_BASED_ON_TARGET_HP,
-        .power = 100,
+        POWER_BASED_ON_TARGET_HP_INFO,
         .type = TYPE_STEEL,
-        .accuracy = 100,
-        .pp = 10,
-        .target = TARGET_SELECTED,
-        .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
         .battleAnimScript = gBattleAnimMove_HardPress,
     },
 

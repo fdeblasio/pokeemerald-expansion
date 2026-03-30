@@ -562,6 +562,8 @@
         - Chance to reduce speed: 10%->30%
     - Crush Claw:
         - Accuracy: 95->100
+    - Crush Grip:
+        - PP: 5->10
     - Cut:
         - Accuracy: 95->100
     - Dizzy Punch:
@@ -644,6 +646,8 @@
     - Wrap:
         - Power: 15->35
         - Accuracy: 90->100
+    - Wring Out:
+        - PP: 5->10
 - Fighting:
     - Arm Thrust:
         - Power: 15->25
@@ -1120,6 +1124,8 @@
         - PP: 5->10
     - Gyro Ball:
         - PP: 5->10
+    - Hard Press:
+        - Power: 100->120
     - Make It Rain:
         - PP: 5->10
         - No longer lowers user's Special Attack

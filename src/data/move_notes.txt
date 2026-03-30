@@ -215,11 +215,13 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Poltergeist:      5 PP, fails if no item
 
 120 Power:
+    Megahorn/Power Whip: 10 PP, 85% accuracy
     Recoil: 15 PP, 33% recoil
     Fatigue: 10 PP, fatigue
+    Zap Cannon/Dynamic Punch/Inferno: 5 PP, 50% accuracy, 100% status
+    Wring Out/Crush Grip/Hard Press: 10 PP, power based on target HP
     Genie storms: 10 PP, hits both, wind move, % effect
         Some always hit in rain
-    Zap Cannon/Dynamic Punch/Inferno: 5 PP, 50% accuracy, 100% status
 
     Superpower:     5 PP, lower own Atk/Def
     Close Combat:   5 PP, lower own Def/SpD
@@ -227,15 +229,9 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Headlong Rush:  5 PP, lower own Def/SpD
     Armor Cannon:  10 PP, lower own Def/SpD
 
-    Megahorn:   10 PP, 85% accuracy
-    Power Whip: 10 PP, 85% accuracy
-
     Mega Kick:   5 PP, 75% accuracy
     Focus Blast: 5 PP, 70% accuracy, 10% lower SpD
     Gunk Shot:   5 PP, 80% accuracy, 30% poison
-
-    Wring Out:  5 PP, power based on target HP
-    Crush Grip: 5 PP, power based on target HP
 
     Origin Pulse:     10 PP, hits both
     Precipice Blades: 10 PP, hits both, add hit Flying?

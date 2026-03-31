@@ -388,23 +388,17 @@ const u8 gNotDoneYetDescription[] = _(
     .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING
 
 #define FLINCH_65_POWER_INFO                  \
-    BASIC_MOVE,                               \
+    EFFECT_MOVE_INFO(MOVE_EFFECT_FLINCH, 30), \
     .power = 65,                              \
     .pp = 20,                                 \
-    .additionalEffects = ADDITIONAL_EFFECTS({ \
-        .moveEffect = MOVE_EFFECT_FLINCH,     \
-        .chance = 30,                         \
-    }),                                       \
+    .target = TARGET_SELECTED,                \
     .validApprenticeMove = TRUE
 
-#define LOWER_ACCURACY_65_POWER                \
-    BASIC_MOVE,                                \
-    .power = 65,                               \
-    .pp = 10,                                  \
-    .additionalEffects = ADDITIONAL_EFFECTS({  \
-        .moveEffect = MOVE_EFFECT_ACC_MINUS_1, \
-        .chance = 30,                          \
-    }),                                        \
+#define LOWER_ACCURACY_65_POWER                    \
+    EFFECT_MOVE_INFO(MOVE_EFFECT_ACC_MINUS_1, 30), \
+    .power = 65,                                   \
+    .pp = 10,                                      \
+    .target = TARGET_SELECTED,                     \
     .contestEffect = CONTEST_EFFECT_STARTLE_PREV_MON
 
 // 70
@@ -456,27 +450,21 @@ const u8 gNotDoneYetDescription[] = _(
 
 // 75
 #define ELEMENTAL_PUNCH_INFO(MoveEffect)              \
-    BASIC_MOVE,                                       \
+    EFFECT_MOVE_INFO(MoveEffect, 10),                 \
     .power = 75,                                      \
     .pp = 15,                                         \
+    .target = TARGET_SELECTED,                        \
     .category = DAMAGE_CATEGORY_PHYSICAL,             \
     .makesContact = TRUE,                             \
     .punchingMove = TRUE,                             \
-    .additionalEffects = ADDITIONAL_EFFECTS({         \
-        .moveEffect = MoveEffect,                     \
-        .chance = 10,                                 \
-    }),                                               \
     .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING, \
     .validApprenticeMove = TRUE
 
-#define LOWER_DEFENSE_75_POWER_INFO            \
-    BASIC_MOVE,                                \
-    .power = 75,                               \
-    .pp = 10,                                  \
-    .additionalEffects = ADDITIONAL_EFFECTS({  \
-        .moveEffect = MOVE_EFFECT_DEF_MINUS_1, \
-        .chance = 50,                          \
-    }),                                        \
+#define LOWER_DEFENSE_75_POWER_INFO                \
+    EFFECT_MOVE_INFO(MOVE_EFFECT_DEF_MINUS_1, 50), \
+    .power = 75,                                   \
+    .pp = 10,                                      \
+    .target = TARGET_SELECTED,                     \
     .validApprenticeMove = TRUE
 
 #define DOUBLE_IF_FAILED_75_POWER_INFO \
@@ -502,27 +490,32 @@ const u8 gNotDoneYetDescription[] = _(
     .pp = 10,                                                                               \
     .skyBattleBanned = TRUE
 
-#define CHANCE_TO_LOWER_STAT_80_POWER_INFO(Stat) \
-    BASIC_MOVE,                                  \
-    .power = 80,                                 \
-    .pp = 15,                                    \
-    .additionalEffects = ADDITIONAL_EFFECTS({    \
-        .moveEffect = Stat,                      \
-        .chance = 20,                            \
-    }),                                          \
+#define FLINCH_80_POWER_INFO                  \
+    EFFECT_MOVE_INFO(MOVE_EFFECT_FLINCH, 30), \
+    .power = 80,                              \
+    .pp = 15,                                 \
+    .target = TARGET_SELECTED,                \
     .validApprenticeMove = TRUE
 
-#define HIT_ADJACENT_80_POWER(Status)         \
-    .effect = EFFECT_HIT,                     \
+#define LOWER_STAT_CHANCE_80_POWER_INFO(Stat) \
+    EFFECT_MOVE_INFO(Stat, 50),               \
     .power = 80,                              \
-    .accuracy = 100,                          \
     .pp = 15,                                 \
-    .target = TARGET_FOES_AND_ALLY,           \
-    .priority = 0,                            \
-    .additionalEffects = ADDITIONAL_EFFECTS({ \
-        .moveEffect = Status,                 \
-        .chance = 30,                         \
-    }),                                       \
+    .target = TARGET_SELECTED,                \
+    .validApprenticeMove = TRUE
+
+#define STATUS_80_POWER_INFO(Effect)                 \
+    EFFECT_MOVE_INFO(Effect, 30),                    \
+    .power = 80,                                     \
+    .pp = 20,                                        \
+    .target = TARGET_SELECTED,                       \
+    .validApprenticeMove = TRUE
+
+#define HIT_ADJACENT_80_POWER(Status) \
+    EFFECT_MOVE_INFO(Status, 30),     \
+    .power = 80,                      \
+    .pp = 15,                         \
+    .target = TARGET_FOES_AND_ALLY,   \
     .contestEffect = CONTEST_EFFECT_STARTLE_PREV_MONS
 
 #define HIT_TWICE_80_TOTAL_POWER_INFO \
@@ -542,6 +535,13 @@ const u8 gNotDoneYetDescription[] = _(
     .skyBattleBanned = TRUE,                                        \
     .contestEffect = CONTEST_EFFECT_EXCITE_AUDIENCE_IN_ANY_CONTEST, \
     .contestCategory = CONTEST_CATEGORY_BEAUTY
+
+#define LOWER_STAT_80_POWER_INFO(Stat)             \
+    LOWER_STAT_INFO(MOVE_EFFECT_##Stat##_MINUS_1), \
+    .power = 80,                                   \
+    .pp = 15,                                      \
+    .target = TARGET_SELECTED,                     \
+    .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS
 
 #define RAISE_STAT_80_POWER_INFO(Stat)             \
     BASIC_MOVE,                                    \
@@ -564,14 +564,11 @@ const u8 gNotDoneYetDescription[] = _(
     }),                                         \
     .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_HIGHLY_APPEALING : CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON
 
-#define LOWER_DEFENSE_85_POWER_INFO            \
-    BASIC_MOVE,                                \
-    .power = 85,                               \
-    .pp = 10,                                  \
-    .additionalEffects = ADDITIONAL_EFFECTS({  \
-        .moveEffect = MOVE_EFFECT_DEF_MINUS_1, \
-        .chance = 20,                          \
-    }),                                        \
+#define LOWER_DEFENSE_85_POWER_INFO                \
+    EFFECT_MOVE_INFO(MOVE_EFFECT_DEF_MINUS_1, 20), \
+    .power = 85,                                   \
+    .pp = 10,                                      \
+    .target = TARGET_SELECTED,                     \
     .contestEffect = CONTEST_EFFECT_SHIFT_JUDGE_ATTENTION
 
 #define ALWAYS_HIT_85_POWER_INFO \
@@ -598,24 +595,19 @@ const u8 gNotDoneYetDescription[] = _(
     .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING, \
     .validApprenticeMove = TRUE
 
-#define STATUS_90_POWER_INFO(effect)                 \
-    BASIC_MOVE,                                      \
+#define STATUS_90_POWER_INFO(Effect)                 \
+    EFFECT_MOVE_INFO(Effect, 10),                    \
     .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 90 : 95, \
     .pp = 15,                                        \
-    .additionalEffects = ADDITIONAL_EFFECTS({        \
-        .moveEffect = effect,                        \
-        .chance = 10,                                \
-    }),                                              \
+    .target = TARGET_SELECTED,                       \
     .validApprenticeMove = TRUE
 
-#define LOWER_SPECIAL_DEFENSE_90_POWER_INFO       \
-    BASIC_MOVE,                                   \
-    .power = 90,                                  \
-    .pp = 10,                                     \
-    .additionalEffects = ADDITIONAL_EFFECTS({     \
-        .moveEffect = MOVE_EFFECT_SP_DEF_MINUS_1, \
-        .chance = 10,                             \
-    })
+#define LOWER_SPECIAL_DEFENSE_90_POWER_INFO           \
+    EFFECT_MOVE_INFO(MOVE_EFFECT_SP_DEF_MINUS_1, 10), \
+    .power = 90,                                      \
+    .pp = 10,                                         \
+    .target = TARGET_SELECTED,                        \
+    .validApprenticeMove = TRUE
 
 #define TARGETS_BOTH_90_POWER_INFO                     \
     .effect = EFFECT_HIT,                              \
@@ -636,14 +628,11 @@ const u8 gNotDoneYetDescription[] = _(
     .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_REPETITION_NOT_BORING : CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL, \
     .validApprenticeMove = TRUE
 
-#define PREVENT_ESCAPE_90_POWER_INFO              \
-    BASIC_MOVE,                                   \
-    .power = 90,                                  \
-    .pp = 20,                                     \
-    .additionalEffects = ADDITIONAL_EFFECTS({     \
-        .moveEffect = MOVE_EFFECT_PREVENT_ESCAPE, \
-        .chance = 100,                            \
-    }),                                           \
+#define PREVENT_ESCAPE_90_POWER_INFO                   \
+    EFFECT_MOVE_INFO(MOVE_EFFECT_PREVENT_ESCAPE, 100), \
+    .power = 90,                                       \
+    .pp = 20,                                          \
+    .target = TARGET_SELECTED,                         \
     .contestEffect = CONTEST_EFFECT_WORSEN_CONDITION_OF_PREV_MONS
 
 // 100
@@ -883,13 +872,10 @@ const u8 gNotDoneYetDescription[] = _(
 
 // 130-140
 #define UNOVA_DRAGON_SIGNATURE_INFO(MoveEffect)            \
-    BASIC_MOVE,                                            \
+    EFFECT_MOVE_INFO(MoveEffect, 20),                      \
     .power = 130,                                          \
     .pp = 10,                                              \
-    .additionalEffects = ADDITIONAL_EFFECTS({              \
-        .moveEffect = MoveEffect,                          \
-        .chance = 20,                                      \
-    }),                                                    \
+    .target = TARGET_SELECTED,                             \
     .contestEffect = CONTEST_EFFECT_REPETITION_NOT_BORING, \
     .contestCategory = CONTEST_CATEGORY_BEAUTY
 
@@ -930,15 +916,15 @@ const u8 gNotDoneYetDescription[] = _(
     .pp = 10
 
 #define TWO_TURN_ATTACK_140_POWER_INFO(StringId, MoveEffect) \
-    TWO_TURN_ATTACK_INFO(StringId),              \
-    .power = 140,                                \
-    .accuracy = 100,                             \
-    .pp = 10,                                    \
-    .target = TARGET_SELECTED,                   \
-    .additionalEffects = ADDITIONAL_EFFECTS({    \
-        .moveEffect = MoveEffect,                \
-        .chance = 30,                            \
-    }),                                          \
+    TWO_TURN_ATTACK_INFO(StringId),                          \
+    .power = 140,                                            \
+    .accuracy = 100,                                         \
+    .pp = 10,                                                \
+    .target = TARGET_SELECTED,                               \
+    .additionalEffects = ADDITIONAL_EFFECTS({                \
+        .moveEffect = MoveEffect,                            \
+        .chance = 30,                                        \
+    }),                                                      \
     .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL
 
 // 150-160
@@ -2968,7 +2954,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestComboStarterId = COMBO_STARTER_PSYCHIC,
         .contestComboMoves = {SPECIAL_PSYCHIC_COMBOS, COMBO_STARTER_CONFUSION, COMBO_STARTER_KINESIS},
         .battleAnimScript = gBattleAnimMove_Psychic,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_HYPNOSIS] =
@@ -3763,24 +3748,15 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Charges with speed to climb\n"
             "waterfalls. May flinch."),
-        BASIC_MOVE,
-        .power = 80,
+        FLINCH_80_POWER_INFO,
         .type = TYPE_WATER,
-        .pp = 15,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        #if B_UPDATED_MOVE_DATA >= GEN_4
-            .additionalEffects = ADDITIONAL_EFFECTS({
-                .moveEffect = MOVE_EFFECT_FLINCH,
-                .chance = 20,
-            }),
-        #endif
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_HIGHLY_APPEALING : CONTEST_EFFECT_BETTER_IF_LAST,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_RAIN_DANCE},
         .battleAnimScript = gBattleAnimMove_Waterfall,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_CLAMP] =
@@ -4484,21 +4460,14 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Attacks with sharp fangs.\n"
             "May cause flinching."),
-        BASIC_MOVE,
-        .power = 80,
+        FLINCH_80_POWER_INFO,
         .type = TYPE_NORMAL,
-        .pp = 15,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .bitingMove = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_FLINCH,
-            .chance = 10,
-        }),
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_REPETITION_NOT_BORING : CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON,
         NO_COMBO(CONTEST_CATEGORY_COOL),
         .battleAnimScript = gBattleAnimMove_HyperFang,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_SHARPEN] =
@@ -6501,7 +6470,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         #else
             "May lower Sp. Def."),
         #endif
-        CHANCE_TO_LOWER_STAT_80_POWER_INFO(B_UPDATED_MOVE_DATA >= GEN_4 ? MOVE_EFFECT_DEF_MINUS_1 : MOVE_EFFECT_SP_DEF_MINUS_1),
+        LOWER_STAT_CHANCE_80_POWER_INFO(B_UPDATED_MOVE_DATA >= GEN_4 ? MOVE_EFFECT_DEF_MINUS_1 : MOVE_EFFECT_SP_DEF_MINUS_1),
         .type = TYPE_DARK,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
@@ -6593,7 +6562,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Hurls a black blob that may\n"
             "lower the foe's Sp. Def."),
-        CHANCE_TO_LOWER_STAT_80_POWER_INFO(MOVE_EFFECT_SP_DEF_MINUS_1),
+        LOWER_STAT_CHANCE_80_POWER_INFO(MOVE_EFFECT_SP_DEF_MINUS_1),
         .type = TYPE_GHOST,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .ballisticMove = TRUE,
@@ -8337,20 +8306,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A strange beam attack that\n"
             "may confuse the foe."),
-        BASIC_MOVE,
-        .power = 80,
+        STATUS_80_POWER_INFO(MOVE_EFFECT_CONFUSION),
         .type = TYPE_BUG,
-        .pp = 20,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_CONFUSION,
-            .chance = 30,
-        }),
         .beamMove = TRUE,
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_SHIFT_JUDGE_ATTENTION : CONTEST_EFFECT_SCRAMBLE_NEXT_TURN_ORDER,
         NO_COMBO(CONTEST_CATEGORY_BEAUTY),
         .battleAnimScript = gBattleAnimMove_SignalBeam,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_SHADOW_PUNCH] =
@@ -9874,16 +9836,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A stabbing attack that\n"
             "may poison the foe."),
-        BASIC_MOVE,
-        .power = 80,
+        STATUS_80_POWER_INFO(MOVE_EFFECT_POISON),
         .type = TYPE_POISON,
-        .pp = 20,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_POISON,
-            .chance = 30,
-        }),
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         NO_COMBO(C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_TOUGH : CONTEST_CATEGORY_SMART),
         .battleAnimScript = gBattleAnimMove_PoisonJab,
@@ -9895,16 +9851,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Attacks with a horrible\n"
             "aura. May cause flinching."),
-        BASIC_MOVE,
-        .power = 80,
+        FLINCH_80_POWER_INFO,
         .type = TYPE_DARK,
-        .pp = 15,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .pulseMove = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_FLINCH,
-            .chance = 20,
-        }),
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         NO_COMBO(CONTEST_CATEGORY_COOL),
         .battleAnimScript = gBattleAnimMove_DarkPulse,
@@ -9966,17 +9916,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Attacks with a blade of\n"
             "air. May cause flinching."),
-        BASIC_MOVE,
-        .power = 80,
+        FLINCH_80_POWER_INFO,
         .type = TYPE_FLYING,
-        .pp = B_UPDATED_MOVE_DATA >= GEN_6 ? 15 : 20,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .windMove = TRUE,
         .slicingMove = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_FLINCH,
-            .chance = 30,
-        }),
         .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON,
         NO_COMBO(CONTEST_CATEGORY_COOL),
         .battleAnimScript = gBattleAnimMove_AirSlash,
@@ -10394,16 +10338,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Hits with a strong head-\n"
             "butt. May cause flinching."),
-        BASIC_MOVE,
-        .power = 80,
+        FLINCH_80_POWER_INFO,
         .type = TYPE_PSYCHIC,
-        .pp = 15,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_FLINCH,
-            .chance = 20,
-        }),
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_SMART : CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
@@ -10644,16 +10582,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Slams the foe with a hard\n"
             "head. May cause flinching."),
-        BASIC_MOVE,
-        .power = 80,
+        FLINCH_80_POWER_INFO,
         .type = TYPE_STEEL,
-        .pp = 15,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_FLINCH,
-            .chance = 30,
-        }),
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         NO_COMBO(CONTEST_CATEGORY_TOUGH),
         .battleAnimScript = gBattleAnimMove_IronHead,
@@ -11893,16 +11825,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Shoots boiling water at the\n"
             "foe. May inflict a burn."),
-        BASIC_MOVE,
-        .power = 80,
+        STATUS_80_POWER_INFO(MOVE_EFFECT_BURN),
         .type = TYPE_WATER,
-        .pp = 20,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .thawsUser = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_BURN,
-            .chance = 30,
-        }),
         .contestEffect = CONTEST_EFFECT_MAKE_FOLLOWING_MONS_NERVOUS,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = COMBO_STARTER_SCALD,
@@ -14700,17 +14626,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Lunges at the foe to lower\n"
             "its Attack stat."),
-        BASIC_MOVE,
-        .power = 80,
+        LOWER_STAT_80_POWER_INFO(ATK),
         .type = TYPE_BUG,
-        .pp = 15,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_ATK_MINUS_1,
-            .chance = 100,
-        }),
-        .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
         NO_COMBO(CONTEST_CATEGORY_CUTE),
         .battleAnimScript = gBattleAnimMove_Lunge,
     },
@@ -14721,17 +14640,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Whips the foe with fire\n"
             "lowering its Defense."),
-        BASIC_MOVE,
-        .power = 80,
+        LOWER_STAT_80_POWER_INFO(DEF),
         .type = TYPE_FIRE,
-        .pp = 15,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_DEF_MINUS_1,
-            .chance = 100,
-        }),
-        .contestEffect = CONTEST_EFFECT_STARTLE_PREV_MON,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_SUNNY_DAY},
@@ -15253,16 +15165,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "An electrified impact that\n"
             "can cause flinching."),
-        BASIC_MOVE,
-        .power = 80,
+        FLINCH_80_POWER_INFO,
         .type = TYPE_ELECTRIC,
-        .pp = 10,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_FLINCH,
-            .chance = 30,
-        }),
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
@@ -15741,17 +15647,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Plays a drum to attack.\n"
             "The foe's Speed is lowered."),
-        BASIC_MOVE,
-        .power = 80,
+        LOWER_STAT_80_POWER_INFO(SPD),
         .type = TYPE_GRASS,
-        .pp = 10,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .metronomeBanned = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SPD_MINUS_1,
-            .chance = 100,
-        }),
-        .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
         .contestComboMoves = {GRASS_COMBOS},
@@ -15923,17 +15822,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Attacks with tart apple acid\n"
             "to lower the foe's Sp. Def."),
-        BASIC_MOVE,
-        .power = 80,
+        LOWER_STAT_80_POWER_INFO(SP_DEF),
         .type = TYPE_GRASS,
-        .pp = 10,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .metronomeBanned = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SP_DEF_MINUS_1,
-            .chance = 100,
-        }),
-        .contestEffect = CONTEST_EFFECT_STARTLE_PREV_MONS,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {GRASS_COMBOS},
@@ -15950,7 +15842,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .power = 80,
         .type = TYPE_GRASS,
         .accuracy = 100,
-        .pp = 10,
+        .pp = 15,
         .target = TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
@@ -17023,15 +16915,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A spine-chilling resentment.\n"
             "Lowers the foe's Attack."),
-        BASIC_MOVE,
-        .power = B_UPDATED_MOVE_DATA >= GEN_9 ? 80 : 60,
+        LOWER_STAT_80_POWER_INFO(ATK),
         .type = TYPE_GHOST,
-        .pp = 15,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_ATK_MINUS_1,
-            .chance = 100,
-        }),
         .battleAnimScript = gBattleAnimMove_BitterMalice,
     },
 

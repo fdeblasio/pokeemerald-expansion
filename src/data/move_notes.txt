@@ -172,33 +172,18 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
 80 Power:
     Basic moves: 20 PP
     Crunch/Shadow Ball: 15 PP, 20% lower stat
+    Waterfall/Hyper Fang/Dark Pulse/Air Slash/Zen Headbutt/Iron Head/Zing Zap: 15 PP, 30% flinch
     Dig/Dive: 10 PP, semi-invulnerable
+    Signal Beam/Poison Jab/Scald: 20 PP, 30% status
     Discharge/Lava Plume: 15 PP, hits all, 30% status
+    Lunge/Fire Lash/Bitter Malice/Drum Beating/Apple Acid: 15 PP, 100% lower stat
     Water Pledge/Fire Pledge/Grass Pledge: 10 PP, effects with other pledges
     Fiery Dance/Mystical Power/Esper Wing/Torch Song/Aqua Step: 10 PP, 100% raise stat
 
-    Waterfall:    15 PP, 20% flinch
-    Hyper Fang:   15 PP, 10% flinch
     Extrasensory: 20 PP, 10% flinch
-    Dark Pulse:   15 PP, 20% flinch
-    Air Slash:    15 PP, 30% flinch
-    Zen Headbutt: 15 PP, 20% flinch
-    Iron Head:    15 PP, 30% flinch
-    Zing Zap:     10 PP, 30% flinch
     Rock Slide:   10 PP, 30% flinch, targets both
 
-    Signal Beam: 20 PP, 30% confusion
-    Poison Jab:  20 PP, 30% poison
-    Scald:       20 PP, 30% burn
-
-    #LOWER_STAT_INFO
-    Lunge:         15 PP, 100% lower Atk
-    Fire Lash:     15 PP, 100% lower Def
-    Bitter Malice: 15 PP, 100% lower Atk
-
-    Drum Beating: 10 PP, 100% lower Spe
-    Apple Acid:   10 PP, 100% lower SpD
-    Grav Apple:   10 PP, 100% lower Def
+    Grav Apple:   15 PP, 100% lower Def, stronger in Gravity
     Glaciate:     10 PP, 100% lower Speed, hits both
     Lumina Crash: 10 PP, 100% lower SpD x2
 

@@ -602,6 +602,7 @@
         - PP: 5->10
     - Hyper Fang:
         - Accuracy: 90->100
+        - Chance to flinch: 10%->30%
     - Hyper Voice:
         - PP: 10->15
     - Judgment:
@@ -881,6 +882,8 @@
     - Wild Charge:
         - Power: 90->120
         - Recoil: 25%->33%
+    - Zing Zap:
+        - PP: 10->15
 - Fire:
     - Blaze Kick:
         - Accuracy: 90->100
@@ -960,6 +963,8 @@
         - PP: 5->10
     - Triple Dive:
         - Accuracy: 95->100
+    - Waterfall:
+        - Chance to flinch: 20%->30%
     - Water Gun:
         - PP: 25->40
     - Water Pulse:
@@ -973,11 +978,17 @@
         - Accuracy: 85->100
         - PP: 15->20
 - Grass:
+    - Apple Acid:
+        - PP: 10->15
     - Bullet Seed:
         - PP: 30->20
     - Chloroblast:
         - Accuracy: 95->100
         - PP: 5->10
+    - Drum Beating:
+        - PP: 10->15
+    - Grav Apple:
+        - PP: 10->15
     - Leaf Tornado:
         - Accuracy: 90->100
         - Effect: 50%->30%
@@ -1046,6 +1057,7 @@
         - PP: 10->20
     - Zen Headbutt:
         - Accuracy: 90->100
+        - Chance to flinch: 20%->30%
 - Ice:
     - Blizzard:
         - PP: 5->10
@@ -1106,6 +1118,8 @@
     - Ceaseless Edge:
         - Power: 65->70
         - Accuracy: 90->100
+    - Dark Pulse:
+        - Chance to flinch: 20%->30%
     - False Surrender:
         - Power: 80->85
     - Hyperspace Fury:

@@ -171,65 +171,60 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
 
 80 Power:
     Basic moves: 20 PP
+    Crunch/Shadow Ball: 15 PP, 20% lower stat
     Dig/Dive: 10 PP, semi-invulnerable
     Discharge/Lava Plume: 15 PP, hits all, 30% status
     Water Pledge/Fire Pledge/Grass Pledge: 10 PP, effects with other pledges
+    Fiery Dance/Mystical Power/Esper Wing/Torch Song/Aqua Step: 10 PP, 100% raise stat
 
-    Waterfall: 15 PP, 20% flinch
-    Hyper Fang: 15 PP, 10% flinch
+    Waterfall:    15 PP, 20% flinch
+    Hyper Fang:   15 PP, 10% flinch
     Extrasensory: 20 PP, 10% flinch
-    Dark Pulse: 15 PP, 20% flinch
-    Air Slash: 15 PP, 30% flinch
+    Dark Pulse:   15 PP, 20% flinch
+    Air Slash:    15 PP, 30% flinch
     Zen Headbutt: 15 PP, 20% flinch
-    Iron Head: 15 PP, 30% flinch
-    Zing Zap: 10 PP, 30% flinch
-    Rock Slide: 10 PP, 30% flinch, targets both
+    Iron Head:    15 PP, 30% flinch
+    Zing Zap:     10 PP, 30% flinch
+    Rock Slide:   10 PP, 30% flinch, targets both
 
-    Crunch:      15 PP, 20% lower Def
-    Shadow Ball: 15 PP, 20% lower SpD
+    Signal Beam: 20 PP, 30% confusion
+    Poison Jab:  20 PP, 30% poison
+    Scald:       20 PP, 30% burn
 
-    Signal Beam: 15 PP, 10% confusion
-    Poison Jab: 20 PP, 30% poison
-    Scald: 15 PP, 30% burn
+    #LOWER_STAT_INFO
+    Lunge:         15 PP, 100% lower Atk
+    Fire Lash:     15 PP, 100% lower Def
+    Bitter Malice: 15 PP, 100% lower Atk
 
-    Lunge: 15 PP, 100% reduce Atk
-    Fire Lash: 15 PP, 100% reduce Def
-    Drum Beating: 10 PP, 100% reduce Spe
-    Apple Acid: 10 PP, 100% reduce SpD
-    Grav Apple: 10 PP, 100% reduce Def
-    Bitter Malice: 15 PP, 100% reduce Atk
-    Glaciate: 10 PP, 100% reduce Speed, hits both
+    Drum Beating: 10 PP, 100% lower Spe
+    Apple Acid:   10 PP, 100% lower SpD
+    Grav Apple:   10 PP, 100% lower Def
+    Glaciate:     10 PP, 100% lower Speed, hits both
+    Lumina Crash: 10 PP, 100% lower SpD x2
 
-    Fiery Dance: 10 PP, 100% raise SpA
-    Mystical Power: 10 PP, 100% raise SpA
-    Torch Song: 10 PP, 100% raise SpA
-    Aqua Step: 10 PP, 100% raise Spe
-    Esper Wing: 10 PP, 100% raise SpD, high crit
-
-    Razor Wind: 10 PP, two turns, targets both
-    Leech Life: 10 PP, heals 50%
-    Oblivion Wing: 10 PP, heals 75%
-    Matcha Gotcha: 15 PP, heals 50%, targets both, 20% burn
-    Tri Attack: 10 PP, 20% status
-    Extreme Speed: 5 PP, +2 priority
-    Chatter: 20 PP, 100% confusion
-    Psyshock: 10 PP, targets Defense
-    Drill Run: 10 PP, high critical
+    Razor Wind:      10 PP, two turns, targets both
+    Leech Life:      10 PP, heals 50%
+    Oblivion Wing:   10 PP, heals 75%
+    Matcha Gotcha:   15 PP, heals 50%, targets both, 20% burn
+    Tri Attack:      10 PP, 20% status
+    Extreme Speed:    5 PP, +2 priority
+    Chatter:         20 PP, 100% confusion
+    Psyshock:        10 PP, targets Defense
+    Drill Run:       10 PP, high critical
         increase to 90 to be clone of Leaf Blade/Attack Order?
-    Dazzling Gleam: 10 PP, targets both
-    Throat Chop: 15 PP, prevents sound moves
-    Snipe Shot: 15 PP, ignores redirect, increased critical
-    Jaw Lock: 10 PP, traps both
-    Body Press: 10 PP, uses Def
+    Dazzling Gleam:  10 PP, targets both
+    Throat Chop:     15 PP, prevents sound moves
+    Snipe Shot:      15 PP, ignores redirect, increased critical
+    Jaw Lock:        10 PP, traps both
+    Body Press:      10 PP, uses Def
     Expanding Force: 10 PP, more powerful in Psychic Terrain
-    Thunder Cage: 15 PP, traps foe
-    Eerie Spell: 10 PP, removes 3 PP
-    Tera Blast: type changes on Tera Type
-    Lumina Crash: 10 PP, 100% reduce SpD x2
-    Order Up: 10 PP, orders sushi
-    Ice Spinner: 15 PP, destroys terrain
-    Fickle Beam: 10 PP, can sometimes be stronger
-    Alluring Voice: 10 PP, confuses if opponent raised stats
+    Thunder Cage:    15 PP, traps foe
+    Eerie Spell:     10 PP, removes 3 PP
+    Tera Blast:      10 PP, type changes on Tera Type
+    Order Up:        10 PP, orders sushi
+    Ice Spinner:     15 PP, destroys terrain
+    Fickle Beam:     10 PP, can sometimes be stronger
+    Alluring Voice:  10 PP, confuses if opponent raised stats
 
 85 Power:
     Brick Break/Psychic Fangs: 15 PP, break screens
@@ -258,7 +253,7 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
 
     Sludge Bomb:    10 PP, 30% poison
     Rock Climb:     20 PP, 20% confuse
-    Play Rough:     10 PP, 10% reduce Atk
+    Play Rough:     10 PP, 10% lower Atk
     Strange Steam:  10 PP, 20% confuse
     Freezing Glare: 10 PP, 20% freeze
     Fiery Wrath:    10 PP, 20% flinch
@@ -269,28 +264,28 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
     Fly: 15 PP, semi-invulnerable
     Phantom Force: 10 PP, semi-invulnerable, bypasses Protect
 
-    Bitter Blade: 10 PP, 50% heal
-    Aura Sphere: 20 PP, always hits
-    Take Down: 20 PP, 25% recoil
-    Octazooka: 10 PP, 100% lower accuracy
-    Uproar: 10 PP, multiple turns, prevents sleep
-    Muddy Water: 10 PP, 85% accuracy, hits both, 30% lower accuracy
-    Sacred Sword: 15 PP, ignores stat changes
+    Bitter Blade:    10 PP, 50% heal
+    Aura Sphere:     20 PP, always hits
+    Take Down:       20 PP, 25% recoil
+    Octazooka:       10 PP, 100% lower accuracy
+    Uproar:          10 PP, multiple turns, prevents sleep
+    Muddy Water:     10 PP, 85% accuracy, hits both, 30% lower accuracy
+    Sacred Sword:    15 PP, ignores stat changes
     Hyperspace Hole: 10 PP, always hits, bypasses Protect
         change to 100 to match Hyperspace Fury?
             Figure out how EFFECT_HYPERSPACE_FURY is different
     First Impression: 10 PP, first turn only
-    Sparkling Aria: 10 PP, hits all, removes burn
-    Pollen Puff: 15 PP, heals ally
+    Sparkling Aria:   10 PP, hits all, removes burn
+    Pollen Puff:      15 PP, heals ally
     Revelation Dance: 15 PP, type matches user
-    Spectral Thief: 10 PP, steals stats
-    Shell Side Arm: 10 PP, changes category, 20% poison
-    Dire Claw: 15 PP, 50% statuses
-    Psyshield Bash: 10 PP, 100% raise Def
-    Triple Arrows: 10 PP, 50% lower Def, 30% flinch, increased critical
-    Raging Bull: 10 PP, changes type, breaks screens
-    Psyblade: 15 PP, boosted under Electric Terrain
-    Hydro Steam: 15 PP, boosted under Sun
+    Spectral Thief:   10 PP, steals stats
+    Shell Side Arm:   10 PP, changes category, 20% poison
+    Dire Claw:        15 PP, 50% statuses
+    Psyshield Bash:   10 PP, 100% raise Def
+    Triple Arrows:    10 PP, 50% lower Def, 30% flinch, increased critical
+    Raging Bull:      10 PP, changes type, breaks screens
+    Psyblade:         15 PP, boosted under Electric Terrain
+    Hydro Steam:      15 PP, boosted under Sun
 
 95 Power:
     Sludge Wave:     10 PP, 10% poison, targets all
@@ -316,7 +311,7 @@ power = (B_UPDATED_MOVE_DATA.* \? )?##[ ,]
         Thousand Waves:  prevents escape
         Land's Wrath:    N/A
 
-    Iron Tail:   15 PP, 75% accuracy, 30% reduce defense
+    Iron Tail:   15 PP, 75% accuracy, 30% lower defense
     Dragon Rush: 10 PP, 75% accuracy, 20% flinch
 
     Meteor Mash:     10 PP, 20% raise own Atk

@@ -541,7 +541,9 @@
     - Fairy: Fairy Wind by Egg Move (except Phione)
     - Grass: Grass Whistle by Egg Move
 - Moves are no longer replaced if a Pokémon levels up in the daycare
-#### Many moves (especially signature moves) were given 100% accuracy and/or 10 PP as opposed to 5:
+- Many moves (especially signature moves) were given 100% accuracy and/or 10 PP as opposed to 5
+- Some moves had their power or PP slightly updated to make them more similar to other moves (like Ice Beam gaining 5 PP to match Thunderbolt and Flamethrower)
+#### Specific move changes:
 - Normal:
     - Barrage:
         - Power: 15->25
@@ -758,6 +760,7 @@
         - PP: 10->20
     - Precipice Blades:
         - Accuracy: 85->100
+        - Now a slicing move
     - Sandsear Storm:
         - Power: 100->120
         - Accuracy: 80->100
@@ -806,6 +809,8 @@
         - Accuracy: 95->100
     - Signal Beam:
         - Power: 75->80
+        - PP: 15->20
+        - Chance to confuse: 10%->30%
     - Silver Wind:
         - PP: 5->10
     - Skitter Smack:
@@ -944,6 +949,8 @@
         - Accuracy: 85->100
     - Razor Shell:
         - Accuracy: 95->100
+    - Scald:
+        - PP: 15->20
     - Steam Eruption:
         - Accuracy: 95->100
         - PP: 5->10

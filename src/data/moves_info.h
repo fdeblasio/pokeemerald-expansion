@@ -553,23 +553,8 @@ const u8 gNotDoneYetDescription[] = _(
     .pp = 10,                                                                               \
     .skyBattleBanned = TRUE
 
-<<<<<<< HEAD
 #define FLINCH_80_POWER_INFO                  \
     EFFECT_MOVE_INFO(MOVE_EFFECT_FLINCH, 30), \
-=======
-#define CHANCE_TO_LOWER_STAT_80_POWER_INFO(Stat) \
-    BASIC_MOVE,                                  \
-    .power = 80,                                 \
-    .pp = 15,                                    \
-    .additionalEffects = ADDITIONAL_EFFECTS({    \
-        .moveEffect = Stat,                      \
-        .chance = 20,                            \
-    }),                                          \
-    .validApprenticeMove = TRUE
-
-#define HIT_ADJACENT_80_POWER(Status)         \
-    .effect = EFFECT_HIT,                     \
->>>>>>> a5b4780e4b (Added more 80 macros)
     .power = 80,                              \
     .pp = 15,                                 \
     .target = TARGET_SELECTED,                \
@@ -614,7 +599,6 @@ const u8 gNotDoneYetDescription[] = _(
     .contestEffect = CONTEST_EFFECT_EXCITE_AUDIENCE_IN_ANY_CONTEST, \
     .contestCategory = CONTEST_CATEGORY_BEAUTY
 
-<<<<<<< HEAD
 #define LOWER_STAT_80_POWER_INFO(Stat)             \
     LOWER_STAT_INFO(MOVE_EFFECT_##Stat##_MINUS_1), \
     .power = 80,                                   \
@@ -622,8 +606,6 @@ const u8 gNotDoneYetDescription[] = _(
     .target = TARGET_SELECTED,                     \
     .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS
 
-=======
->>>>>>> a5b4780e4b (Added more 80 macros)
 #define RAISE_STAT_80_POWER_INFO(Stat)             \
     BASIC_MOVE,                                    \
     .power = 80,                                   \
@@ -735,14 +717,11 @@ const u8 gNotDoneYetDescription[] = _(
     .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_REPETITION_NOT_BORING : CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL, \
     .validApprenticeMove = TRUE
 
-#define PREVENT_ESCAPE_90_POWER_INFO              \
-    BASIC_MOVE,                                   \
-    .power = 90,                                  \
-    .pp = 20,                                     \
-    .additionalEffects = ADDITIONAL_EFFECTS({     \
-        .moveEffect = MOVE_EFFECT_PREVENT_ESCAPE, \
-        .chance = 100,                            \
-    }),                                           \
+#define PREVENT_ESCAPE_90_POWER_INFO                   \
+    EFFECT_MOVE_INFO(MOVE_EFFECT_PREVENT_ESCAPE, 100), \
+    .power = 90,                                       \
+    .pp = 20,                                          \
+    .target = TARGET_SELECTED,                         \
     .contestEffect = CONTEST_EFFECT_WORSEN_CONDITION_OF_PREV_MONS
 
 // 100
@@ -6574,11 +6553,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         #else
             "May lower Sp. Def."),
         #endif
-<<<<<<< HEAD
         LOWER_STAT_CHANCE_80_POWER_INFO(B_UPDATED_MOVE_DATA >= GEN_4 ? MOVE_EFFECT_DEF_MINUS_1 : MOVE_EFFECT_SP_DEF_MINUS_1),
-=======
-        CHANCE_TO_LOWER_STAT_80_POWER_INFO(B_UPDATED_MOVE_DATA >= GEN_4 ? MOVE_EFFECT_DEF_MINUS_1 : MOVE_EFFECT_SP_DEF_MINUS_1),
->>>>>>> a5b4780e4b (Added more 80 macros)
         .type = TYPE_DARK,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
@@ -6670,11 +6645,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Hurls a black blob that may\n"
             "lower the foe's Sp. Def."),
-<<<<<<< HEAD
         LOWER_STAT_CHANCE_80_POWER_INFO(MOVE_EFFECT_SP_DEF_MINUS_1),
-=======
-        CHANCE_TO_LOWER_STAT_80_POWER_INFO(MOVE_EFFECT_SP_DEF_MINUS_1),
->>>>>>> a5b4780e4b (Added more 80 macros)
         .type = TYPE_GHOST,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .ballisticMove = TRUE,
@@ -8411,16 +8382,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "may confuse the foe."),
         STATUS_80_POWER_INFO(MOVE_EFFECT_CONFUSION),
         .type = TYPE_BUG,
-<<<<<<< HEAD
         .category = DAMAGE_CATEGORY_SPECIAL,
-=======
-        .pp = 20,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_CONFUSION,
-            .chance = 30,
-        }),
->>>>>>> a5b4780e4b (Added more 80 macros)
         .beamMove = TRUE,
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_SHIFT_JUDGE_ATTENTION : CONTEST_EFFECT_SCRAMBLE_NEXT_TURN_ORDER,
         NO_COMBO(CONTEST_CATEGORY_BEAUTY),
@@ -11939,10 +11901,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "foe. May inflict a burn."),
         STATUS_80_POWER_INFO(MOVE_EFFECT_BURN),
         .type = TYPE_WATER,
-<<<<<<< HEAD
-=======
-        .pp = 20,
->>>>>>> a5b4780e4b (Added more 80 macros)
         .category = DAMAGE_CATEGORY_SPECIAL,
         .thawsUser = TRUE,
         .contestEffect = CONTEST_EFFECT_MAKE_FOLLOWING_MONS_NERVOUS,

@@ -438,7 +438,8 @@
 #define ANIM_TAG_NEW_NAIL                   (ANIM_SPRITES_START + 424)
 #define ANIM_TAG_NEW_POKEBALL               (ANIM_SPRITES_START + 425)
 #define ANIM_TAG_NEW_GREEN_STAR             (ANIM_SPRITES_START + 426)
-#define ANIM_TAG_COUNT                      GET_TRUE_SPRITE_INDEX(ANIM_TAG_NEW_GREEN_STAR + 1)
+#define ANIM_TAG_NEW_IMPACT                 (ANIM_SPRITES_START + 427)
+#define ANIM_TAG_COUNT                      GET_TRUE_SPRITE_INDEX(ANIM_TAG_NEW_IMPACT + 1)
 
 // battlers
 enum AnimBattler

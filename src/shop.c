@@ -597,12 +597,6 @@ static void SetShopItemsForSale(const u16 *items)
 
     sMartInfo.itemCount = 0;
 
-    assertf(items != NULL, "Shop items list should never be set as NULL")
-    {
-        sMartInfo.itemList = sShopItemsListDummy;
-        return;
-    }
-
     // Read items until ITEM_NONE / DECOR_NONE is reached
     while (sMartInfo.itemList[i])
     {

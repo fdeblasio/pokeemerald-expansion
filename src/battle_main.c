@@ -6119,7 +6119,7 @@ u32 GetDynamicPower(struct Pokemon *mon, enum Move move, enum BattlerId battler)
     bool8 isSunny, isRainy, isSandstorm, isSnowy, isFoggy;
     bool8 isElectric, isMisty, isGrassy, isPsychic;
     bool32 monInBattle = gMain.inBattle && gPartyMenu.menuType != PARTY_MENU_TYPE_IN_BATTLE;
-    struct BattleContext ctx = {0};
+    struct DamageContext ctx = {0};
 
     if (gMain.inBattle)
         battlerDef = BATTLE_OPPOSITE(battler);

@@ -413,7 +413,7 @@ bool32 IsNaturalEnemy(enum Species speciesAttacker, enum Species speciesTarget);
 enum Stat GetDownloadStat(enum BattlerId battler);
 
 u32 CalcFuryCutterBasePower(enum BattlerId battlerAtk, u32 basePower);
-u32 CalcTerrainBoostedPower(struct BattleContext *ctx, u32 basePower);
+u32 CalcTerrainBoostedPower(struct DamageContext *ctx, u32 basePower);
 u32 IsFieldMudSportAffected(enum Type moveType);
 u32 IsFieldWaterSportAffected(enum Type moveType);
 

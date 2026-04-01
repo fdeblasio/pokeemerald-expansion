@@ -1090,17 +1090,32 @@ const u8 gNotDoneYetDescription[] = _(
     .argument = { .overwriteAbility = Ability }, \
     .magicCoatAffected = TRUE
 
-#define TERRAIN_MOVE_INFO               \
-    .power = 0,                         \
-    .accuracy = 0,                      \
-    .pp = 10,                           \
-    .target = TARGET_ALL_BATTLERS,      \
-    .priority = 0,                      \
-    .category = DAMAGE_CATEGORY_STATUS, \
-    .ignoresProtect = TRUE,             \
-    .mirrorMoveBanned = TRUE,           \
-    .skyBattleBanned = TRUE,            \
-    .contestEffect = CONTEST_EFFECT_BETTER_WHEN_AUDIENCE_EXCITED //CONTEST_EFFECT_EXCITES_AUDIENCE_MORE_IF_FIRST
+#define WEATHER_MOVE_INFO                     \
+    .effect = EFFECT_WEATHER,                 \
+    .power = 0,                               \
+    .accuracy = 0,                            \
+    .target = TARGET_FIELD,                   \
+    .priority = 0,                            \
+    .category = DAMAGE_CATEGORY_STATUS,       \
+    .zMove = { .effect = Z_EFFECT_SPD_UP_1 }, \
+    .ignoresProtect = TRUE,                   \
+    .mirrorMoveBanned = TRUE,                 \
+    .validApprenticeMove = TRUE
+
+//CONTEST_EFFECT_EXCITES_AUDIENCE_MORE_IF_FIRST
+#define TERRAIN_MOVE_INFO(Terrain)                                \
+    .effect = EFFECT_##Terrain##_TERRAIN,                         \
+    .power = 0,                                                   \
+    .accuracy = 0,                                                \
+    .pp = 10,                                                     \
+    .target = TARGET_ALL_BATTLERS,                                \
+    .priority = 0,                                                \
+    .category = DAMAGE_CATEGORY_STATUS,                           \
+    .ignoresProtect = TRUE,                                       \
+    .mirrorMoveBanned = TRUE,                                     \
+    .skyBattleBanned = TRUE,                                      \
+    .contestEffect = CONTEST_EFFECT_BETTER_WHEN_AUDIENCE_EXCITED, \
+    .contestComboStarterId = COMBO_STARTER_##Terrain##_TERRAIN
 
 #define CHANGE_TYPE_INFO(Type)                  \
     .effect = EFFECT_SOAK,                      \
@@ -5493,17 +5508,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Causes a sandstorm that\n"
             "rages for several turns."),
-        .effect = EFFECT_WEATHER,
-        .power = 0,
+        WEATHER_MOVE_INFO,
         .type = TYPE_ROCK,
-        .accuracy = 0,
         .pp = 10,
-        .target = TARGET_FIELD,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .zMove = { .effect = Z_EFFECT_SPD_UP_1 },
-        .ignoresProtect = TRUE,
-        .mirrorMoveBanned = TRUE,
         .windMove = TRUE,
         .argument = { .weatherType = BATTLE_WEATHER_SANDSTORM },
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_BADLY_STARTLE_MONS_WITH_GOOD_APPEALS : CONTEST_EFFECT_SCRAMBLE_NEXT_TURN_ORDER,
@@ -5511,7 +5518,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestComboStarterId = COMBO_STARTER_SANDSTORM,
         .contestComboMoves = {0},
         .battleAnimScript = gBattleAnimMove_Sandstorm,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_GIGA_DRAIN] =
@@ -6414,24 +6420,14 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Boosts the power of Water-\n"
             "type moves for 5 turns."),
-        .effect = EFFECT_WEATHER,
-        .power = 0,
+        WEATHER_MOVE_INFO,
         .type = TYPE_WATER,
-        .accuracy = 0,
-        .pp = 5,
-        .target = TARGET_FIELD,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .zMove = { .effect = Z_EFFECT_SPD_UP_1 },
-        .ignoresProtect = TRUE,
-        .mirrorMoveBanned = TRUE,
         .argument = { .weatherType = BATTLE_WEATHER_RAIN },
         .contestEffect = CONTEST_EFFECT_BETTER_WHEN_AUDIENCE_EXCITED,
         .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_BEAUTY : CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = COMBO_STARTER_RAIN_DANCE,
         .contestComboMoves = {0},
         .battleAnimScript = gBattleAnimMove_RainDance,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_SUNNY_DAY] =
@@ -6440,24 +6436,15 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Boosts the power of Fire-\n"
             "type moves for 5 turns."),
-        .effect = EFFECT_WEATHER,
-        .power = 0,
+        WEATHER_MOVE_INFO,
         .type = TYPE_FIRE,
-        .accuracy = 0,
         .pp = 5,
-        .target = TARGET_FIELD,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .zMove = { .effect = Z_EFFECT_SPD_UP_1 },
-        .ignoresProtect = TRUE,
-        .mirrorMoveBanned = TRUE,
         .argument = { .weatherType = BATTLE_WEATHER_SUN },
         .contestEffect = CONTEST_EFFECT_BETTER_WHEN_AUDIENCE_EXCITED,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = COMBO_STARTER_SUNNY_DAY,
         .contestComboMoves = {0},
         .battleAnimScript = gBattleAnimMove_SunnyDay,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_CRUNCH] =
@@ -6839,24 +6826,15 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
                 "Summons a hailstorm that\n"
                 "strikes every turn."),
         #endif
-        .effect = EFFECT_WEATHER,
-        .power = 0,
+        WEATHER_MOVE_INFO,
         .type = TYPE_ICE,
-        .accuracy = 0,
         .pp = 10,
-        .target = TARGET_FIELD,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .zMove = { .effect = Z_EFFECT_SPD_UP_1 },
-        .ignoresProtect = TRUE,
-        .mirrorMoveBanned = TRUE,
         .argument = { .weatherType = (B_PREFERRED_ICE_WEATHER == B_ICE_WEATHER_SNOW) ? BATTLE_WEATHER_SNOW : BATTLE_WEATHER_HAIL },
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_BADLY_STARTLE_MONS_WITH_GOOD_APPEALS : CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = COMBO_STARTER_HAIL,
         .contestComboMoves = {0},
         .battleAnimScript = (B_PREFERRED_ICE_WEATHER == B_ICE_WEATHER_SNOW) ? gBattleAnimMove_Snowscape : gBattleAnimMove_Hail,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_TORMENT] =
@@ -13325,12 +13303,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "The ground turns to grass\n"
             "for 5 turns. Restores HP."),
-        .effect = EFFECT_GRASSY_TERRAIN,
-        TERRAIN_MOVE_INFO,
+        TERRAIN_MOVE_INFO(GRASSY),
         .type = TYPE_GRASS,
         .zMove = { .effect = Z_EFFECT_DEF_UP_1 },
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
-        .contestComboStarterId = COMBO_STARTER_GRASSY_TERRAIN,
         .contestComboMoves = {0},
         .battleAnimScript = gBattleAnimMove_GrassyTerrain,
     },
@@ -13341,12 +13317,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Covers the ground with mist\n"
             "for 5 turns. Blocks status."),
-        .effect = EFFECT_MISTY_TERRAIN,
-        TERRAIN_MOVE_INFO,
+        TERRAIN_MOVE_INFO(MISTY),
         .type = TYPE_FAIRY,
         .zMove = { .effect = Z_EFFECT_SPDEF_UP_1 },
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
-        .contestComboStarterId = COMBO_STARTER_MISTY_TERRAIN,
         .contestComboMoves = {0},
         .battleAnimScript = gBattleAnimMove_MistyTerrain,
     },
@@ -13858,12 +13832,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Electrifies the ground for\n"
             "5 turns. Prevents sleep."),
-        .effect = EFFECT_ELECTRIC_TERRAIN,
-        TERRAIN_MOVE_INFO,
+        TERRAIN_MOVE_INFO(ELECTRIC),
         .type = TYPE_ELECTRIC,
         .zMove = { .effect = Z_EFFECT_SPD_UP_1 },
         .contestCategory = CONTEST_CATEGORY_SMART,
-        .contestComboStarterId = COMBO_STARTER_ELECTRIC_TERRAIN,
         .contestComboMoves = {0},
         .battleAnimScript = gBattleAnimMove_ElectricTerrain,
     },
@@ -14610,12 +14582,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "The ground turns weird for\n"
             "5 turns. Blocks priority."),
-        .effect = EFFECT_PSYCHIC_TERRAIN,
-        TERRAIN_MOVE_INFO,
+        TERRAIN_MOVE_INFO(PSYCHIC),
         .type = TYPE_PSYCHIC,
         .zMove = { .effect = Z_EFFECT_SPATK_UP_1 },
         .contestCategory = CONTEST_CATEGORY_SMART,
-        .contestComboStarterId = COMBO_STARTER_PSYCHIC_TERRAIN,
         .contestComboMoves = {0},
         .battleAnimScript = gBattleAnimMove_PsychicTerrain,
     },
@@ -17689,18 +17659,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
                 "Summons a snowstorm that\n"
                 "lasts for five turns."),
         #endif
-        .effect = EFFECT_WEATHER,
-        .power = 0,
+        WEATHER_MOVE_INFO,
         .type = TYPE_ICE,
-        .accuracy = 0,
         .pp = 10,
-        .target = TARGET_FIELD,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
         .argument = { .weatherType = (B_PREFERRED_ICE_WEATHER == B_ICE_WEATHER_HAIL) ? BATTLE_WEATHER_HAIL : BATTLE_WEATHER_SNOW },
-        .zMove = { .effect = Z_EFFECT_SPD_UP_1 },
-        .ignoresProtect = TRUE,
-        .mirrorMoveBanned = TRUE,
         .metronomeBanned = TRUE,
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_BADLY_STARTLE_MONS_WITH_GOOD_APPEALS : CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,

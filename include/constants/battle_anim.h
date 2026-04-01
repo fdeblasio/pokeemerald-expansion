@@ -689,6 +689,7 @@ enum AnimBattler
 #define ANIM_SURF_PAL_SURF           0
 #define ANIM_SURF_PAL_MUDDY_WATER    1
 #define ANIM_SURF_PAL_SLUDGE_WAVE    2
+#define ANIM_SURF_PAL_NEW_SURF       3
 
 // Order Up palettes for Commander
 #define ANIM_ORDER_UP_NONE           0

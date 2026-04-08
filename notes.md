@@ -45,9 +45,10 @@ upcoming
 ### Champions
 - Moves:
     - Dire Claw: 50%->30%
-        - Macro with Tri Attack
+        - Macro with Tri Attack?
     - Iron Head: 30%->20%
         - All but Air Slash and Zing Zap can go back to 20%; update notes if so
+    - Bone Rush: 30 in Champions, 25 here for macro
     - Some moveset notes will have to be edited, like Machamp getting Drain Punch
 - Megas:
     - Starmie:
@@ -198,6 +199,9 @@ upcoming
 
 
 ### Moves
+- Macro for EFFECT_STAT_CHANGE?
+- Macro for stat up (Flame Charge 50/Torch Song 80)
+- Combine Genie macros again
 - Turn some animation macros into functions like the Absorb ones
 - Change Morning Sun/Moonlight/Synthesis to be based on time of day (like in Gen 2?) instead of weather?
 - Replace Hypno's Hypnosis effect with a new move that uses its pendulum in the animation

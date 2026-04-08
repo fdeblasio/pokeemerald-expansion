@@ -134,9 +134,11 @@ struct MoveInfo
     bool32 danceMove:1;
     bool32 windMove:1;
     bool32 slicingMove:1;
+    bool32 kickingMove:1;
+    bool32 beamMove:1;
+    // end of word
     bool32 healingMove:1;
     bool32 minimizeDoubleDamage:1;
-    // end of word
     bool32 ignoresTargetAbility:1;
     bool32 ignoresTargetDefenseEvasionStages:1;
     bool32 damagesUnderground:1;
@@ -154,7 +156,7 @@ struct MoveInfo
     bool32 alwaysHitsOnSameType:1; // Always hits if user is of same type as move
     bool32 noAffectOnSameTypeTarget:1; // Fails if target is of same type as move
     bool32 accDecreaseIfUserNotSameType:1; // Accuracy is increased by 10% if user is of same type as move
-    bool32 padding1:15;
+    bool32 padding1:13;
     // end of word
 
     // Ban flags
@@ -301,6 +303,11 @@ static inline u32 GetMovePP(enum Move moveId)
     return gMovesInfo[SanitizeMoveId(moveId)].pp;
 }
 
+static inline u32 CalculateMaxPP(enum Move move)
+{
+    return GetMovePP(move) * 16 / 10;
+}
+
 static inline enum ZEffect GetMoveZEffect(enum Move moveId)
 {
     moveId = SanitizeMoveId(moveId);
@@ -418,6 +425,16 @@ static inline bool32 IsWindMove(enum Move moveId)
 static inline bool32 IsSlicingMove(enum Move moveId)
 {
     return gMovesInfo[SanitizeMoveId(moveId)].slicingMove;
+}
+
+static inline bool32 IsKickingMove(enum Move moveId)
+{
+    return gMovesInfo[SanitizeMoveId(moveId)].kickingMove;
+}
+
+static inline bool32 IsBeamMove(enum Move moveId)
+{
+    return gMovesInfo[SanitizeMoveId(moveId)].beamMove;
 }
 
 static inline bool32 IsHealingMove(enum Move moveId)

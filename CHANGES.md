@@ -585,6 +585,7 @@
         - PP: 15->20
     - Egg Bomb:
         - Accuracy: 75->100
+        - PP: 10->15
     - Frustration:
         - Max power: 102->127.5
     - Fury Attack:
@@ -683,6 +684,8 @@
         - Accuracy: 80->100
         - PP: 20->15
         - Recoil: 25%->33%
+    - Thunderous Kick:
+        - PP: 10->15
     - Triple Kick:
         - Power: 10->20
     - Vital Throw:
@@ -825,11 +828,12 @@
         - Power: 30->40
         - PP: 15->20
     - Astral Barrage:
+        - Power: 110->120
         - PP: 5->10
     - Bitter Malice:
         - Power: 75->80
     - Infernal Parade:
-        - Power: 60->75
+        - Power: 65->75
     - Lick:
         - PP: 30->35
     - Moongeist Beam:
@@ -843,7 +847,6 @@
     - Shadow Force:
         - PP: 5->10
     - Spirit Shackle:
-        - Power: 80->90
         - PP: 10->20
 - Electric:
     - Bolt Strike:
@@ -930,7 +933,6 @@
         - PP: 20->30
     - Aqua Tail:
         - Accuracy: 90->100
-        - PP: 10->15
     - Clamp:
         - Accuracy: 85->100
         - PP: 15->20
@@ -986,8 +988,6 @@
         - PP: 5->10
     - Drum Beating:
         - PP: 10->15
-    - Grav Apple:
-        - PP: 10->15
     - Leaf Tornado:
         - Accuracy: 90->100
         - Effect: 50%->30%
@@ -1013,9 +1013,9 @@
     - Stun Spore:
         - PP: 30->35
     - Syrup Bomb:
-        - Accuracy: 85->100
+        - Accuracy: 90->100
     - Trop Kick:
-        - Power: 70->90
+        - Power: 85->90
     - Vine Whip:
         - Power: 45->50
         - PP: 20->35
@@ -1049,7 +1049,6 @@
         - Accuracy: 90->100
         - PP: 5->10
     - Psyshield Bash:
-        - Power: 70->90
         - Accuracy: 90->100
     - Twin Beam:
         - Power: 40->50
@@ -1128,15 +1127,11 @@
         - PP: 5->10
     - Night Daze:
         - Accuracy: 95->100
-    - Night Slash:
-        - PP: 15->20
     - Snarl:
         - Accuracy: 95->100
     - Wicked Blow:
         - PP: 5->10
 - Steel:
-    - Anchor Shot:
-        - Power: 80->90
     - Behemoth Bash:
         - PP: 5->10
     - Behemoth Blade:
@@ -1144,21 +1139,21 @@
     - Doom Desire:
         - PP: 5->10
     - Double Iron Bash:
-        - PP: 5->10
+        - PP: 5->15
     - Flash Cannon:
         - Power: 80->90
     - Gear Grind:
-        - Accuracy: 85->100
-        - PP: 15->20
+        - Accuracy: 90->100
     - Gigaton Hammer:
         - PP: 5->10
     - Gyro Ball:
         - PP: 5->10
     - Hard Press:
         - Power: 100->120
-    - Iron Head:
+    - Iron Head
         - Chance to flinch: 20%->30%
     - Make It Rain:
+        - Accuracy: 95->100
         - PP: 5->10
         - No longer lowers user's Special Attack
     - Metal Claw:
@@ -1169,8 +1164,8 @@
     - Mirror Shot:
         - Accuracy: 85->100
     - Spin Out:
-        - PP: 5->10
         - No longer lowers user's Speed
+        - PP: 10->15
     - Steel Beam:
         - Accuracy: 95->100
     - Steel Wing:

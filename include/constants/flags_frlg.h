@@ -2590,6 +2590,14 @@
 #define FLAG_UNUSED_0x8E3                           0 // Unused Flag
 #define FLAG_RECEIVED_POKEDEX_FROM_BIRCH            0
 
+//Custom Emerald flags unused here
+#define FLAG_LANDMARK_METEOR_FALLS       0
+#define FLAG_LANDMARK_WEATHER_INSTITUTE  0
+#define FLAG_LANDMARK_SAFARI_ZONE        0
+#define FLAG_LANDMARK_MT_PYRE            0
+#define FLAG_LANDMARK_SHOAL_CAVE         0
+#define FLAG_HIDE_VERDANTURF_TOWN_WALLY  0
+
 #define FLAG_UNUSED_0x8E5                           0
 #define FLAG_UNUSED_0x8E6                           0
 #define FLAG_UNUSED_0x8E7                           0

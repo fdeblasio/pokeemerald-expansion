@@ -58,6 +58,7 @@ static const struct Landmark Landmark_MirageTower = {COMPOUND_STRING("Mirage Tow
 static const struct Landmark Landmark_AlteringCave = {COMPOUND_STRING("Altering Cave"), FLAG_LANDMARK_ALTERING_CAVE};
 static const struct Landmark Landmark_DesertUnderpass = {COMPOUND_STRING("Desert Underpass"), FLAG_LANDMARK_DESERT_UNDERPASS};
 static const struct Landmark Landmark_TrainerHill = {COMPOUND_STRING("Trainer Hill"), FLAG_LANDMARK_TRAINER_HILL};
+static const struct Landmark Landmark_MirageIsland = {COMPOUND_STRING("Mirage Island"), -1};
 
 static const struct Landmark *const Landmarks_Route103_2[]  =
 {
@@ -269,6 +270,18 @@ static const struct Landmark *const Landmarks_Route128_1[]  =
     NULL,
 };
 
+static const struct Landmark *const Landmarks_MirageIsland[]  =
+{
+    &Landmark_MirageIsland,
+    NULL,
+};
+
+static const struct Landmark *const Landmarks_Route130_2[]  =
+{
+    &Landmark_MirageIsland,
+    NULL,
+};
+
 static const struct Landmark *const Landmarks_Route131_1[]  =
 {
     &Landmark_SkyPillar,
@@ -338,6 +351,9 @@ static const struct LandmarkList sLandmarkLists[] =
     {MAPSEC_ROUTE_124, 7, Landmarks_Route124_7},
     {MAPSEC_ROUTE_125, 2, Landmarks_Route125_2},
     {MAPSEC_ROUTE_128, 1, Landmarks_Route128_1},
+    {MAPSEC_ROUTE_130, 0, Landmarks_MirageIsland},
+    {MAPSEC_ROUTE_130, 1, Landmarks_MirageIsland},
+    {MAPSEC_ROUTE_130, 2, Landmarks_MirageIsland},
     {MAPSEC_ROUTE_131, 1, Landmarks_Route131_1},
     {MAPSEC_ROUTE_132, 0, Landmarks_OceanCurrent},
     {MAPSEC_ROUTE_132, 1, Landmarks_OceanCurrent},

@@ -13,8 +13,8 @@ FortreeCity_House5_EventScript_Zigzagoon::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_ZIGZAGOON, CRY_MODE_NORMAL
-	msgbox FortreeCity_House5_Text_Zigzagoon, MSGBOX_DEFAULT
+	overworldspecies SPECIES_FORTREE_HOUSE_5
+	bufferspeciestext SPECIES_FORTREE_HOUSE_5, FortreeCity_House5_Text_Zigzagoon, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end
@@ -31,5 +31,5 @@ FortreeCity_House5_Text_AdaptedToNature:
 	.string "conform to the way we want to live.$"
 
 FortreeCity_House5_Text_Zigzagoon:
-	.string "Zigzagoon: Bufuu!$"
+	.string "{STR_VAR_1}: Bufuu!$"
 

@@ -241,6 +241,15 @@ Route128_EventScript_Carlee::
 	msgbox Route128_Text_CarleePostBattle, MSGBOX_AUTOCLOSE
 	end
 
+Route128_EventScript_AntiAquaSwimmers::
+	msgbox Route128_Text_AntiAquaSwimmers, MSGBOX_DEFAULT
+	release
+	end
+
+Route128_Text_AntiAquaSwimmers:
+	.string "Us swimmers will stop Team Aqua\n"
+	.string "from fleeing!$"
+
 Route128_Text_ArchieWhatHappened:
 	.string "Archie: What happened…\n"
 	.string "What is this wretched scene…\p"

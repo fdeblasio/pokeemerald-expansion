@@ -1,6 +1,3 @@
-.set LOCALID_DAYCARE_MON_0, 25
-.set LOCALID_DAYCARE_MON_1, 26
-
 Route117_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route117_OnTransition
 	.byte 0
@@ -216,9 +213,8 @@ Route117_EventScript_Aisha::
 	end
 
 Route117_Text_DayCarePokemonHadNewMove:
-	.string "I left my Pokémon at the Day Care.\p"
-	.string "When I got it back, it had a new move\n"
-	.string "that I didn't teach it.\l"
+	.string "I left my Pokémon at the Day Care.\n"
+	.string "When I got it back, it had an Egg!\l"
 	.string "I was really, really surprised.$"
 
 Route117_Text_ArentTheseFlowersPretty:

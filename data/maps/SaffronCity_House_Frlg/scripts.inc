@@ -13,8 +13,8 @@ SaffronCity_House_EventScript_Pidgey::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_PIDGEY, CRY_MODE_NORMAL
-	msgbox SaffronCity_House_Text_Pidgey
+	overworldspecies SPECIES_PIDGEY
+	bufferspeciestext SPECIES_PIDGEY, SaffronCity_House_Text_Pidgey
 	waitmoncry
 	release
 	end
@@ -30,7 +30,7 @@ SaffronCity_House_Text_DontLookAtMyLetter::
 	.string "Don't look at my letter!$"
 
 SaffronCity_House_Text_Pidgey::
-	.string "Pidgey: Kurukkoo!$"
+	.string "{STR_VAR_1}: Kurukkoo!$"
 
 SaffronCity_House_Text_GettingCopycatPokeDoll::
 	.string "The Copycat is cute!\n"

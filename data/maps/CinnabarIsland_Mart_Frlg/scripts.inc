@@ -10,27 +10,7 @@ CinnabarIsland_Mart_EventScript_Scientist::
 	end
 
 CinnabarIsland_Mart_EventScript_Clerk::
-	lock
-	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
-	pokemart CinnabarIsland_Mart_Items
-	msgbox gText_PleaseComeAgain
-	release
-	end
-
-	.align 2
-CinnabarIsland_Mart_Items::
-	.2byte ITEM_ULTRA_BALL
-	.2byte ITEM_GREAT_BALL
-	.2byte ITEM_HYPER_POTION
-	.2byte ITEM_REVIVE
-	.2byte ITEM_FULL_HEAL
-	.2byte ITEM_ESCAPE_ROPE
-	.2byte ITEM_MAX_REPEL
-	.2byte ITEM_NONE
-	release
-	end
+	mart_clerk 0
 
 CinnabarIsland_Mart_Text_DontTheyHaveXAttack::
 	.string "Don't they have X Attack?\p"

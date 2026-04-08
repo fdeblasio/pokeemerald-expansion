@@ -59,32 +59,32 @@ Route103_EventScript_RivalBrendan::
 	end
 
 Route103_EventScript_StartMayBattleTreecko::
-	trainerbattle_no_intro TRAINER_MAY_ROUTE_103_GRASS, Route103_Text_MayDefeated
-	goto Route103_EventScript_AfterMayBattle
-	end
-
-Route103_EventScript_StartMayBattleTorchic::
 	trainerbattle_no_intro TRAINER_MAY_ROUTE_103_FIRE, Route103_Text_MayDefeated
 	goto Route103_EventScript_AfterMayBattle
 	end
 
-Route103_EventScript_StartMayBattleMudkip::
+Route103_EventScript_StartMayBattleTorchic::
 	trainerbattle_no_intro TRAINER_MAY_ROUTE_103_WATER, Route103_Text_MayDefeated
 	goto Route103_EventScript_AfterMayBattle
 	end
 
-Route103_EventScript_StartBrendanBattleTreecko::
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_103_GRASS, Route103_Text_BrendanDefeated
-	goto Route103_EventScript_AfterBrendanBattle
+Route103_EventScript_StartMayBattleMudkip::
+	trainerbattle_no_intro TRAINER_MAY_ROUTE_103_GRASS, Route103_Text_MayDefeated
+	goto Route103_EventScript_AfterMayBattle
 	end
 
-Route103_EventScript_StartBrendanBattleTorchic::
+Route103_EventScript_StartBrendanBattleTreecko::
 	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_103_FIRE, Route103_Text_BrendanDefeated
 	goto Route103_EventScript_AfterBrendanBattle
 	end
 
-Route103_EventScript_StartBrendanBattleMudkip::
+Route103_EventScript_StartBrendanBattleTorchic::
 	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_103_WATER, Route103_Text_BrendanDefeated
+	goto Route103_EventScript_AfterBrendanBattle
+	end
+
+Route103_EventScript_StartBrendanBattleMudkip::
+	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_103_GRASS, Route103_Text_BrendanDefeated
 	goto Route103_EventScript_AfterBrendanBattle
 	end
 
@@ -287,7 +287,7 @@ Route103_EventScript_Isabelle::
 	end
 
 Route103_Text_MayRoute103Pokemon:
-	.string "May: Let's see… The Pokémon found\n"
+	.string "{RIVAL}: Let's see… The Pokémon found\n"
 	.string "on Route 103 include…$"
 
 Route103_Text_MayLetsBattle:
@@ -304,7 +304,7 @@ Route103_Text_MayDefeated:
 	.string "{PLAYER}{KUN}, you're pretty good!$"
 
 Route103_Text_MayTimeToHeadBack:
-	.string "May: I think I know why my dad has\n"
+	.string "{RIVAL}: I think I know why my dad has\n"
 	.string "an eye out for you now.\p"
 	.string "I mean, you just got that Pokémon,\n"
 	.string "but it already likes you.\p"
@@ -314,7 +314,7 @@ Route103_Text_MayTimeToHeadBack:
 	.string "the Lab.$"
 
 Route103_Text_BrendanRoute103Pokemon:
-	.string "Brendan: Okay, so it's this one and\n"
+	.string "{RIVAL}: Okay, so it's this one and\n"
 	.string "that one that live on Route 103…$"
 
 Route103_Text_BrendanLetsBattle:
@@ -329,7 +329,7 @@ Route103_Text_BrendanDefeated:
 	.string "Huh, {PLAYER}, you're not too shabby.$"
 
 Route103_Text_BrendanTimeToHeadBack:
-	.string "Brendan: I think I get it.\n"
+	.string "{RIVAL}: I think I get it.\n"
 	.string "I think I know why my dad has his eye\l"
 	.string "out for you now.\p"
 	.string "Look, your Pokémon already likes you,\n"

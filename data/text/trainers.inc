@@ -1474,15 +1474,15 @@ Route111_Text_TyronPostBattle:
 	.string "I bet everyone feels that way when\n"
 	.string "they enter a battle!$"
 
-Route111_Text_CelinaIntro:
+Route111_Text_LilyIntro:
 	.string "Show me how to put a little excitement\n"
 	.string "into my life.$"
 
-Route111_Text_CelinaDefeat:
+Route111_Text_LilyDefeat:
 	.string "Oh… My…\n"
 	.string "That was too much excitement.$"
 
-Route111_Text_CelinaPostBattle:
+Route111_Text_LilyPostBattle:
 	.string "My pulse is still racing.\n"
 	.string "You're one fabulous Trainer.$"
 

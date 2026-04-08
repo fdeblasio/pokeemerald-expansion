@@ -16,7 +16,7 @@
   "connections": null,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_M",
       "x": 1,
       "y": 10,
       "elevation": 3,
@@ -29,7 +29,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_M",
       "x": 4,
       "y": 2,
       "elevation": 3,
@@ -42,7 +42,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
+      "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_F",
       "x": 8,
       "y": 17,
       "elevation": 3,
@@ -63,9 +63,9 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_BEAD_MAIL",
+      "trainer_sight_or_berry_tree_id": "ITEM_MIRROR_HERB",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_TRICK_HOUSE_PUZZLE_8_BEAD_MAIL"
+      "flag": "FLAG_ITEM_TRICK_HOUSE_PUZZLE_8_MIRROR_HERB"
     }
   ],
   "warp_events": [

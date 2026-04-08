@@ -94,8 +94,8 @@ VermilionCity_PokemonFanClub_EventScript_Pikachu::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_PIKACHU, CRY_MODE_NORMAL
-	msgbox VermilionCity_PokemonFanClub_Text_Pikachu
+	overworldspecies SPECIES_PIKACHU
+	bufferspeciestext SPECIES_PIKACHU, VermilionCity_PokemonFanClub_Text_Pikachu
 	waitmoncry
 	release
 	end
@@ -104,8 +104,8 @@ VermilionCity_PokemonFanClub_EventScript_Seel::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_SEEL, CRY_MODE_NORMAL
-	msgbox VermilionCity_PokemonFanClub_Text_Seel
+	overworldspecies SPECIES_SEEL
+	bufferspeciestext SPECIES_SEEL, VermilionCity_PokemonFanClub_Text_Seel
 	waitmoncry
 	release
 	end
@@ -139,10 +139,10 @@ VermilionCity_PokemonFanClub_Text_SeelFarMoreAttractive::
 	.string "By double, I would say.$"
 
 VermilionCity_PokemonFanClub_Text_Pikachu::
-	.string "Pikachu: Chu! Pikachu!$"
+	.string "{STR_VAR_1}: Chu! Pikachu!$"
 
 VermilionCity_PokemonFanClub_Text_Seel::
-	.string "Seel: Kyuoo!$"
+	.string "{STR_VAR_1}: Kyuoo!$"
 
 VermilionCity_PokemonFanClub_Text_DidYouComeToHearAboutMyMons::
 	.string "I chair the Pokémon Fan Club!\p"

@@ -211,7 +211,7 @@ ContestHall_EventScript_RandomAudienceFatMan::
 	return
 
 ContestHall_EventScript_RandomAudiencePokefanF::
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_POKEFAN_F
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_POKE_FAN_F
 	return
 
 ContestHall_EventScript_RandomAudienceMan1::
@@ -231,7 +231,7 @@ ContestHall_EventScript_RandomAudienceExpertF::
 	return
 
 ContestHall_EventScript_RandomAudiencePokefanM::
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_POKEFAN_M
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_POKE_FAN_M
 	return
 
 ContestHall_EventScript_RandomAudienceWoman4::
@@ -279,7 +279,7 @@ ContestHall_EventScript_RandomAudiencePsychicM::
 	return
 
 ContestHall_EventScript_RandomAudienceSchoolKidM::
-	setvar VAR_TEMP_1, OBJ_EVENT_GFX_SCHOOL_KID_M
+	setvar VAR_TEMP_1, OBJ_EVENT_GFX_SCHOOLKID_M
 	return
 
 ContestHall_EventScript_RandomAudienceBlackBelt::
@@ -341,7 +341,7 @@ ContestHall_EventScript_CreateHyperContestAudience::
 	createvobject OBJ_EVENT_GFX_YOUNGSTER, 26, 4, 9, 3, DIR_NORTH
 	createvobject OBJ_EVENT_GFX_FAT_MAN, 27, 5, 9, 3, DIR_NORTH
 	createvobject OBJ_EVENT_GFX_HEX_MANIAC, 28, 9, 9, 3, DIR_NORTH
-	createvobject OBJ_EVENT_GFX_SCHOOL_KID_M, 29, 10, 9, 3, DIR_NORTH
+	createvobject OBJ_EVENT_GFX_SCHOOLKID_M, 29, 10, 9, 3, DIR_NORTH
 	createvobject OBJ_EVENT_GFX_MART_EMPLOYEE, 30, 11, 9, 3, DIR_NORTH
 	return
 
@@ -363,7 +363,7 @@ ContestHall_EventScript_CreateMasterContestAudience::
 	createvobject OBJ_EVENT_GFX_MAN_4, 17, 13, 6, 3, DIR_WEST
 	createvobject OBJ_EVENT_GFX_MART_EMPLOYEE, 18, 13, 7, 3, DIR_WEST
 	createvobject OBJ_EVENT_GFX_DEVON_EMPLOYEE, 19, 13, 8, 3, DIR_WEST
-	createvobject OBJ_EVENT_GFX_POKEFAN_M, 20, 3, 2, 3, DIR_SOUTH
+	createvobject OBJ_EVENT_GFX_POKE_FAN_M, 20, 3, 2, 3, DIR_SOUTH
 	createvobject OBJ_EVENT_GFX_CAMPER, 21, 6, 2, 3, DIR_SOUTH
 	createvobject OBJ_EVENT_GFX_MAN_3, 22, 7, 2, 3, DIR_SOUTH
 	createvobject OBJ_EVENT_GFX_SCIENTIST_1, 24, 11, 2, 3, DIR_SOUTH
@@ -371,7 +371,7 @@ ContestHall_EventScript_CreateMasterContestAudience::
 	createvobject OBJ_EVENT_GFX_YOUNGSTER, 26, 4, 9, 3, DIR_NORTH
 	createvobject OBJ_EVENT_GFX_GENTLEMAN, 27, 5, 9, 3, DIR_NORTH
 	createvobject OBJ_EVENT_GFX_HEX_MANIAC, 28, 9, 9, 3, DIR_NORTH
-	createvobject OBJ_EVENT_GFX_SCHOOL_KID_M, 29, 10, 9, 3, DIR_NORTH
+	createvobject OBJ_EVENT_GFX_SCHOOLKID_M, 29, 10, 9, 3, DIR_NORTH
 	createvobject OBJ_EVENT_GFX_MART_EMPLOYEE, 30, 11, 9, 3, DIR_NORTH
 	return
 
@@ -393,7 +393,7 @@ ContestHall_EventScript_CreateWirelessContestAudience::
 	createvobject OBJ_EVENT_GFX_MAN_4, 17, 13, 6, 3, DIR_WEST
 	createvobject OBJ_EVENT_GFX_MART_EMPLOYEE, 18, 13, 7, 3, DIR_WEST
 	createvobject OBJ_EVENT_GFX_DEVON_EMPLOYEE, 19, 13, 8, 3, DIR_WEST
-	createvobject OBJ_EVENT_GFX_POKEFAN_M, 20, 3, 2, 3, DIR_SOUTH
+	createvobject OBJ_EVENT_GFX_POKE_FAN_M, 20, 3, 2, 3, DIR_SOUTH
 	createvobject OBJ_EVENT_GFX_CAMPER, 21, 6, 2, 3, DIR_SOUTH
 	createvobject OBJ_EVENT_GFX_MAN_3, 22, 7, 2, 3, DIR_SOUTH
 	createvobject OBJ_EVENT_GFX_SCIENTIST_1, 24, 11, 2, 3, DIR_SOUTH

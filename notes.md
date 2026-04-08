@@ -114,21 +114,6 @@ upcoming
         4: 107
         9: 120
         5: 156
-- Megas:
-    - Starmie:
-        - Make attacking stats more consistent? (Regular has 25 more SpA, but Mega has 10 more Atk)
-            - It seems like it might actually have 30 more SpA but Pure Power
-    - Dragonite line:
-        - Make attacking stats more consistent? (Regular has 34 more Atk, but Mega has 21 more SpA)
-    - Lucario Z:
-        - Could revert regular Mega stats back to be Physical since Z is Special
-            - Maybe wait to see how Zs are handled in main games
-    - Mega Malamar:
-        - Take some SpA and give to Atk?
-    - Zygarde:
-        - Make attacking stats more consistent?
-            - Regular forms have more Atk, but Mega has 146 more SpA
-            - Land's Wrath, Thousand Waves, and Thousand Arrows are Physical, but Core Enforcer and Nihil Light are Special
 - Turn some Normal/Flying types into either pure Flying or Flying/Normal?
 - Decide whether to reverse types for Pokemon whose primary becomes secondary:
     - Vanilla:

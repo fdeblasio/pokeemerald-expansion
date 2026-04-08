@@ -187,10 +187,10 @@ Route120_EventScript_StevenBattleKecleon::
 	applymovement LOCALID_BRIDGE_KECLEON, Movement_KecleonAppears
 	waitmovement 0
 	waitse
-	playmoncry SPECIES_KECLEON, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_HIDDEN, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_KECLEON, 30
+	setwildbattle SPECIES_HIDDEN, HIDDEN_LEVEL
 	setvar VAR_0x8009, 0
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	dowildbattle
@@ -358,6 +358,18 @@ Route120_EventScript_Callie::
 	trainerbattle_single TRAINER_CALLIE, Route120_Text_CallieIntro, Route120_Text_CallieDefeat
 	msgbox Route120_Text_CalliePostBattle, MSGBOX_AUTOCLOSE
 	end
+
+Route120_EventScript_BirdManiac::
+	lock
+	faceplayer
+	msgbox Route120_Text_BirdManiac, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+Route120_Text_BirdManiac:
+	.string "Stay there!\n"
+	.string "You don't want to scare the bird Pokémon.$"
 
 Route120_Text_StevenGreeting:
 	.string "Steven: Hm? {PLAYER}{KUN}, hi.\n"

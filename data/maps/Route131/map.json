@@ -118,7 +118,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMING_TRIATHLETE_F",
       "x": 52,
       "y": 27,
       "elevation": 1,
@@ -141,5 +141,12 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "heal_locations": [
+    {
+      "id": "HEAL_LOCATION_ROUTE_131",
+      "x": 14,
+      "y": 6
+    }
+  ]
 }

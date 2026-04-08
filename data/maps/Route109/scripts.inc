@@ -353,15 +353,15 @@ Route109_EventScript_Woman::
 	end
 
 Route109_EventScript_OldMan::
-	msgbox Route109_Text_ZigzagoonPicksUpLitter, MSGBOX_NPC
+	bufferspeciestext SPECIES_ROUTE_109_TRASH_COLLECTOR, Route109_Text_ZigzagoonPicksUpLitter, MSGBOX_NPC
 	end
 
 Route109_EventScript_Zigzagoon::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_ZIGZAGOON, CRY_MODE_NORMAL
-	msgbox Route109_Text_ZigzagoonCry, MSGBOX_DEFAULT
+	overworldspecies SPECIES_ROUTE_109_TRASH_COLLECTOR
+	bufferspeciestext SPECIES_ROUTE_109_TRASH_COLLECTOR, Route109_Text_ZigzagoonCry, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end
@@ -491,7 +491,7 @@ Route109_Text_BrineySailToDewfordQuestion:
 Route109_Text_BrineyDewfordItIs:
 	.string "Mr. Briney: Dewford it is, then!\p"
 	.string "Anchors aweigh!\n"
-	.string "Peeko, we're setting sail, my darling!$"
+	.string "{PEEKO}, we're setting sail, my darling!$"
 
 Route109_Text_BrineyDeliverDevonGoods:
 	.string "Mr. Briney: Then you go on and deliver\n"
@@ -541,7 +541,7 @@ Route109_Text_WereGoingToMakeBigCastle:
 
 Route109_Text_ZigzagoonPicksUpLitter:
 	.string "The water around these parts is clean.\p"
-	.string "But, I get my Zigzagoon to pick up\n"
+	.string "But, I get my {STR_VAR_1} to pick up\n"
 	.string "litter from the shoreline at times.\p"
 	.string "Dirty water becomes rain and joins our\n"
 	.string "rivers, which we drink from…\p"
@@ -549,7 +549,7 @@ Route109_Text_ZigzagoonPicksUpLitter:
 	.string "back to haunt us eventually.$"
 
 Route109_Text_ZigzagoonCry:
-	.string "Zigzagoon: Guguu?$"
+	.string "{STR_VAR_1}: Guguu?$"
 
 Route109_Text_SeashoreHouseSign:
 	.string "Seashore House\p"

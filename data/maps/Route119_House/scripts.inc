@@ -9,8 +9,8 @@ Route119_House_EventScript_Wingull::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_WINGULL, CRY_MODE_NORMAL
-	msgbox Route119_House_Text_Wingull, MSGBOX_DEFAULT
+	overworldspecies SPECIES_ROUTE_119_HOUSE
+	bufferspeciestext SPECIES_ROUTE_119_HOUSE, Route119_House_Text_Wingull, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end
@@ -23,5 +23,5 @@ Route119_House_Text_RumorAboutCaveOfOrigin:
 	.string "something like that really happen?$"
 
 Route119_House_Text_Wingull:
-	.string "Wingull: Pihyoh!$"
+	.string "{STR_VAR_1}: Pihyoh!$"
 

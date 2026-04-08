@@ -9,11 +9,11 @@ PetalburgWoods_EventScript_DevonResearcherLeft::
 	msgbox PetalburgWoods_Text_HaveYouSeenShroomish, MSGBOX_DEFAULT
 	closemessage
 	playbgm MUS_ENCOUNTER_AQUA, FALSE
-	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_AquaEntrance
+	applymovement LOCALID_PETALBURG_WOODS_CASPIAN, PetalburgWoods_Movement_CaspianEntrance
 	waitmovement 0
 	msgbox PetalburgWoods_Text_IWasGoingToAmbushYou, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_AquaApproachResearcherLeft
+	applymovement LOCALID_PETALBURG_WOODS_CASPIAN, PetalburgWoods_Movement_CaspianApproachResearcherLeft
 	waitmovement 0
 	applymovement LOCALID_PETALBURG_WOODS_DEVON_EMPLOYEE, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
@@ -23,11 +23,11 @@ PetalburgWoods_EventScript_DevonResearcherLeft::
 	waitmovement 0
 	msgbox PetalburgWoods_Text_YouHaveToHelpMe, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_AquaApproachPlayer
+	applymovement LOCALID_PETALBURG_WOODS_CASPIAN, PetalburgWoods_Movement_CaspianApproachPlayer
 	waitmovement 0
 	msgbox PetalburgWoods_Text_NoOneCrossesTeamAqua, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_CASPIAN_PETALBURG_WOODS, PetalburgWoods_Text_YoureKiddingMe
-	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_AquaBackOff
+	applymovement LOCALID_PETALBURG_WOODS_CASPIAN, PetalburgWoods_Movement_CaspianBackOff
 	waitmovement 0
 	call PetalburgWoods_EventScript_DevonResearcherPostBattle
 	applymovement LOCALID_PLAYER, PetalburgWoods_Movement_WatchResearcherLeave
@@ -46,11 +46,11 @@ PetalburgWoods_EventScript_DevonResearcherRight::
 	msgbox PetalburgWoods_Text_HaveYouSeenShroomish, MSGBOX_DEFAULT
 	closemessage
 	playbgm MUS_ENCOUNTER_AQUA, FALSE
-	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_AquaEntrance
+	applymovement LOCALID_PETALBURG_WOODS_CASPIAN, PetalburgWoods_Movement_CaspianEntrance
 	waitmovement 0
 	msgbox PetalburgWoods_Text_IWasGoingToAmbushYou, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_AquaApproachResearcherRight
+	applymovement LOCALID_PETALBURG_WOODS_CASPIAN, PetalburgWoods_Movement_CaspianApproachResearcherRight
 	waitmovement 0
 	applymovement LOCALID_PETALBURG_WOODS_DEVON_EMPLOYEE, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
@@ -63,7 +63,7 @@ PetalburgWoods_EventScript_DevonResearcherRight::
 	waitmovement 0
 	msgbox PetalburgWoods_Text_NoOneCrossesTeamAqua, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_CASPIAN_PETALBURG_WOODS, PetalburgWoods_Text_YoureKiddingMe
-	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_AquaBackOff
+	applymovement LOCALID_PETALBURG_WOODS_CASPIAN, PetalburgWoods_Movement_CaspianBackOff
 	waitmovement 0
 	call PetalburgWoods_EventScript_DevonResearcherPostBattle
 	applymovement LOCALID_PLAYER, PetalburgWoods_Movement_WatchResearcherLeave
@@ -82,10 +82,10 @@ PetalburgWoods_EventScript_DevonResearcherIntro::
 PetalburgWoods_EventScript_DevonResearcherPostBattle::
 	msgbox PetalburgWoods_Text_YouveGotSomeNerve, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_AquaRunAway
+	applymovement LOCALID_PETALBURG_WOODS_CASPIAN, PetalburgWoods_Movement_CaspianRunAway
 	waitmovement 0
-	removeobject LOCALID_PETALBURG_WOODS_GRUNT
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
+	removeobject LOCALID_PETALBURG_WOODS_CASPIAN
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	msgbox PetalburgWoods_Text_ThatWasAwfullyClose, MSGBOX_DEFAULT
 	giveitem ITEM_GREAT_BALL
@@ -199,18 +199,18 @@ PetalburgWoods_Movement_DevonResearcherStartExit:
 	face_up
 	step_end
 
-PetalburgWoods_Movement_AquaApproachResearcherLeft:
+PetalburgWoods_Movement_CaspianApproachResearcherLeft:
 	walk_fast_down
 	walk_fast_down
 	step_end
 
-PetalburgWoods_Movement_AquaBackOff:
+PetalburgWoods_Movement_CaspianBackOff:
 	lock_facing_direction
 	walk_up
 	unlock_facing_direction
 	step_end
 
-PetalburgWoods_Movement_AquaRunAway:
+PetalburgWoods_Movement_CaspianRunAway:
 	walk_fast_up
 	walk_fast_up
 	walk_fast_up
@@ -220,20 +220,20 @@ PetalburgWoods_Movement_AquaRunAway:
 	delay_16
 	step_end
 
-PetalburgWoods_Movement_AquaApproachResearcherRight:
+PetalburgWoods_Movement_CaspianApproachResearcherRight:
 	walk_fast_down
 	walk_fast_down
 	walk_fast_down
 	step_end
 
-PetalburgWoods_Movement_AquaEntrance:
+PetalburgWoods_Movement_CaspianEntrance:
 	walk_down
 	walk_down
 	delay_16
 	delay_16
 	step_end
 
-PetalburgWoods_Movement_AquaApproachPlayer:
+PetalburgWoods_Movement_CaspianApproachPlayer:
 	walk_down
 	step_end
 
@@ -441,8 +441,7 @@ PetalburgWoods_Text_HiddenItemsExplanation:
 
 PetalburgWoods_Text_TryUsingThisItem:
 	.string "Oh, neat!\n"
-	.string "That's the Badge from Rustboro GYM!\p"
-	.string "You must be a Trainer.\n"
+	.string "You must be a Trainer.\p"
 	.string "You should try using this item.$"
 
 PetalburgWoods_Text_MiracleSeedExplanation:

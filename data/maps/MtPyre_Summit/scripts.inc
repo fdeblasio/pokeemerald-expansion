@@ -401,40 +401,40 @@ MtPyre_Summit_Movement_MaxieApproachArchie2:
 	walk_in_place_faster_left
 	step_end
 
-MtPyre_Summit_EventScript_Grunt1::
-	trainerbattle_single TRAINER_NERISSA_MT_PYRE, MtPyre_Summit_Text_Grunt1Intro, MtPyre_Summit_Text_Grunt1Defeat
-	msgbox MtPyre_Summit_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
+MtPyre_Summit_EventScript_Nerissa::
+	trainerbattle_single TRAINER_NERISSA_MT_PYRE, MtPyre_Summit_Text_NerissaIntro, MtPyre_Summit_Text_NerissaDefeat
+	msgbox MtPyre_Summit_Text_NerissaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-MtPyre_Summit_EventScript_Grunt2::
-	trainerbattle_single TRAINER_NERISSA_MT_PYRE, MtPyre_Summit_Text_Grunt2Intro, MtPyre_Summit_Text_Grunt2Defeat
-	msgbox MtPyre_Summit_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
+MtPyre_Summit_EventScript_Beryl::
+	trainerbattle_single TRAINER_BERYL_MT_PYRE, MtPyre_Summit_Text_BerylIntro, MtPyre_Summit_Text_BerylDefeat
+	msgbox MtPyre_Summit_Text_BerylPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-MtPyre_Summit_EventScript_Grunt3::
-	trainerbattle_single TRAINER_NERISSA_MT_PYRE, MtPyre_Summit_Text_Grunt3Intro, MtPyre_Summit_Text_Grunt3Defeat
-	msgbox MtPyre_Summit_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
+MtPyre_Summit_EventScript_Malik::
+	trainerbattle_single TRAINER_MALIK_MT_PYRE, MtPyre_Summit_Text_MalikIntro, MtPyre_Summit_Text_MalikDefeat
+	msgbox MtPyre_Summit_Text_MalikPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-MtPyre_Summit_EventScript_Grunt4::
-	trainerbattle_single TRAINER_NERISSA_MT_PYRE, MtPyre_Summit_Text_Grunt4Intro, MtPyre_Summit_Text_Grunt4Defeat
-	msgbox MtPyre_Summit_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE
+MtPyre_Summit_EventScript_Marina::
+	trainerbattle_single TRAINER_MARINA_MT_PYRE, MtPyre_Summit_Text_MarinaIntro, MtPyre_Summit_Text_MarinaDefeat
+	msgbox MtPyre_Summit_Text_MarinaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-MtPyre_Summit_Text_Grunt1Intro:
+MtPyre_Summit_Text_NerissaIntro:
 	.string "No! Those Team Magma goons got\n"
 	.string "here ahead of us!\p"
 	.string "We can't fall behind!$"
 
-MtPyre_Summit_Text_Grunt1Defeat:
+MtPyre_Summit_Text_NerissaDefeat:
 	.string "I thought you were one of the Magmas\n"
 	.string "who happened to come back…$"
 
-MtPyre_Summit_Text_Grunt1PostBattle:
+MtPyre_Summit_Text_NerissaPostBattle:
 	.string "Yeah, so you are strong…\n"
 	.string "But there're a lot of us!$"
 
-MtPyre_Summit_Text_Grunt2Intro:
+MtPyre_Summit_Text_BerylIntro:
 	.string "Hah!\n"
 	.string "Too bad for you!\p"
 	.string "If you came earlier, you only would've\n"
@@ -442,49 +442,49 @@ MtPyre_Summit_Text_Grunt2Intro:
 	.string "But since you arrived now, you have\n"
 	.string "to take on us toughies!$"
 
-MtPyre_Summit_Text_Grunt2Defeat:
+MtPyre_Summit_Text_BerylDefeat:
 	.string "Urgh… I should've let you take on\n"
 	.string "Team Magma first…$"
 
-MtPyre_Summit_Text_Grunt2PostBattle:
+MtPyre_Summit_Text_BerylPostBattle:
 	.string "You don't know anything!\n"
 	.string "So why are you messing with us?$"
 
-MtPyre_Summit_Text_Grunt3Intro:
+MtPyre_Summit_Text_MalikIntro:
 	.string "You…\n"
 	.string "We saw you at Mt. Chimney.\p"
 	.string "You don't belong to either Team,\n"
 	.string "so why would you be here?$"
 
-MtPyre_Summit_Text_Grunt3Defeat:
+MtPyre_Summit_Text_MalikDefeat:
 	.string "If you're going to mess with anyone,\n"
 	.string "let it be Team Magma…$"
 
-MtPyre_Summit_Text_Grunt3PostBattle:
+MtPyre_Summit_Text_MalikPostBattle:
 	.string "Heh, it doesn't matter!\n"
 	.string "We bought ourselves some time!\p"
 	.string "The Boss should have snatched what\n"
 	.string "he was after!$"
 
-MtPyre_Summit_Text_Grunt4Intro:
+MtPyre_Summit_Text_MarinaIntro:
 	.string "Oh, I know!\n"
 	.string "You tried to join Team Magma,\l"
 	.string "but they wouldn't have you!\p"
 	.string "Well, don't think that we'll let you\n"
 	.string "join our Team Aqua!$"
 
-MtPyre_Summit_Text_Grunt4Defeat:
+MtPyre_Summit_Text_MarinaDefeat:
 	.string "If you want to join Team Aqua that\n"
 	.string "badly, we can consider it…$"
 
-MtPyre_Summit_Text_Grunt4PostBattle:
+MtPyre_Summit_Text_MarinaPostBattle:
 	.string "We have a great combination going\n"
 	.string "with us members and our leader.$"
 
 MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo:
 	.string "Archie: Team Magma's Maxie got ahead\n"
 	.string "of us, but we also got what we wanted.\p"
-	.string "The Red Orb preserved at Mt. Pyre…\n"
+	.string "The Blue Orb preserved at Mt. Pyre…\n"
 	.string "I, Archie, now have it in my possession!\p"
 	.string "Fufufu… Now we can bring our ultimate\n"
 	.string "objective to fruition!\p"
@@ -494,16 +494,16 @@ MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo:
 MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis:
 	.string "Oh, no…\n"
 	.string "This cannot happen…\p"
-	.string "Not only the Blue Orb, but even\n"
-	.string "the Red Orb has been taken…\p"
-	.string "The Blue Orb and Red Orb must never\n"
+	.string "Not only the Red Orb, but even\n"
+	.string "the Blue Orb has been taken…\p"
+	.string "The Red Orb and Blue Orb must never\n"
 	.string "be separated. They belong together.\p"
 	.string "What are those men trying to do with\n"
 	.string "the two Orbs?\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
 	.string "Oh, yes. Was it Team Magma who came\n"
-	.string "and took the Blue Orb first?\p"
+	.string "and took the Red Orb first?\p"
 	.string "Well, in their haste, they left this\n"
 	.string "behind.\p"
 	.string "I couldn't imagine what exactly it\n"
@@ -512,7 +512,7 @@ MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis:
 	.string "Perhaps it will be useful in some way.$"
 
 MtPyre_Summit_Text_OrbsHaveBeenTaken:
-	.string "The Blue Orb and Red Orb taken by\n"
+	.string "The Red Orb and Blue Orb taken by\n"
 	.string "those sinister men…\p"
 	.string "They must never be apart…\n"
 	.string "I fear something terrible will happen…$"
@@ -521,8 +521,8 @@ MtPyre_Summit_Text_GroudonKyogreAwakened:
 	.string "Oh, my goodness…\p"
 	.string "You say that both Groudon and Kyogre\n"
 	.string "have been awakened?\p"
-	.string "It is said that the Blue Orb and\n"
-	.string "the Red Orb quelled the rage of\l"
+	.string "It is said that the Red Orb and\n"
+	.string "the Blue Orb quelled the rage of\l"
 	.string "the two Pokémon…\p"
 	.string "It is also said that the true owner\n"
 	.string "of the Orbs still exists.\p"
@@ -571,7 +571,7 @@ MtPyre_Summit_Text_GroudonKyogreTale:
 	.string "Their fierce duel raged without end.\p"
 	.string "The world was engulfed in massive\n"
 	.string "infernos and vicious storms.\p"
-	.string "The Blue Orb and the Red Orb brought\n"
+	.string "The Red Orb and the Blue Orb brought\n"
 	.string "an end to the calamity.\p"
 	.string "Light poured from the two Orbs and\n"
 	.string "becalmed the enraged adversaries.\p"

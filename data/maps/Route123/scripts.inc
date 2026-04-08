@@ -9,14 +9,14 @@ Route123_OnTransition:
 Route123_EventScript_GigaDrainGirl::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_TM_GIGA_DRAIN, Route123_EventScript_ReceivedGigaDrain
+	goto_if_set FLAG_RECEIVED_TM_LEAF_BLADE, Route123_EventScript_ReceivedGigaDrain
 	msgbox Route123_Text_LoveGrassMonsHaveAny, MSGBOX_DEFAULT
 	special IsGrassTypeInParty
 	goto_if_eq VAR_RESULT, FALSE, Route123_EventScript_NoGrassMons
 	msgbox Route123_Text_YouLikeGrassMonsTooHaveThis, MSGBOX_DEFAULT
-	giveitem ITEM_TM_GIGA_DRAIN
+	giveitem ITEM_TM_LEAF_BLADE
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_RECEIVED_TM_GIGA_DRAIN
+	setflag FLAG_RECEIVED_TM_LEAF_BLADE
 	msgbox Route123_Text_CheckTreesWithMyGrassMon, MSGBOX_DEFAULT
 	release
 	end
@@ -169,6 +169,17 @@ Route123_EventScript_RematchFernando::
 	trainerbattle_rematch TRAINER_FERNANDO_1, Route123_Text_FernandoRematchIntro, Route123_Text_FernandoRematchDefeat
 	msgbox Route123_Text_FernandoPostRematch, MSGBOX_AUTOCLOSE
 	end
+
+Route123_EventScript_AquaBlock::
+	lock
+	faceplayer
+	msgbox Route123_Text_AquaBlock, MSGBOX_DEFAULT
+	release
+	end
+
+Route123_Text_AquaBlock:
+	.string "Don't disturb the Boss!\n"
+	.string "He's at Mt. Pyre!$"
 
 Route123_Text_LoveGrassMonsHaveAny:
 	.string "I love Grass-type Pokémon!\p"

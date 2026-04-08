@@ -26,7 +26,7 @@ MtEmber_Summit_EventScript_Moltres::
 	faceplayer
 	setwildbattle SPECIES_MOLTRES, 50
 	waitse
-	playmoncry SPECIES_MOLTRES, CRY_MODE_ENCOUNTER
+	overworldspecies SPECIES_MOLTRES CRY_MODE_ENCOUNTER
 	message Text_Gyaoo
 	waitmessage
 	waitmoncry

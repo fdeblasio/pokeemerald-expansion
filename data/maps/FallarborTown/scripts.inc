@@ -22,7 +22,7 @@ FallarborTown_EventScript_ExpertMNormal::
 	end
 
 FallarborTown_EventScript_Girl::
-	msgbox FallarborTown_Text_MyPreciousAzurill, MSGBOX_NPC
+	bufferspeciestext SPECIES_FALLARBOR_TOWN, FallarborTown_Text_MyPreciousAzurill, MSGBOX_NPC
 	end
 
 FallarborTown_EventScript_Gentleman::
@@ -33,8 +33,8 @@ FallarborTown_EventScript_Azurill::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_AZURILL, CRY_MODE_NORMAL
-	msgbox FallarborTown_Text_Azurill, MSGBOX_DEFAULT
+	overworldspecies SPECIES_FALLARBOR_TOWN
+	bufferspeciestext SPECIES_FALLARBOR_TOWN, FallarborTown_Text_Azurill, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end
@@ -65,11 +65,11 @@ FallarborTown_Text_RegionKnownForMeteors:
 
 FallarborTown_Text_MyPreciousAzurill:
 	.string "See! Take a look!\n"
-	.string "This is my precious Azurill!\p"
+	.string "This is my precious {STR_VAR_1}!\p"
 	.string "It's slick and smooth and plushy, too!$"
 
 FallarborTown_Text_Azurill:
-	.string "Azurill: Rooreelooo.$"
+	.string "{STR_VAR_1}: Rooreelooo.$"
 
 FallarborTown_Text_HaveYouChallengedFlannery:
 	.string "Have you already challenged Flannery,\n"
@@ -90,6 +90,6 @@ FallarborTown_Text_TownSign:
 	.string "“A farm community with small gardens.”$"
 
 FallarborTown_Text_MoveTutorSign:
-	.string "Move Tutor's House\n"
-	.string "“New moves taught to Pokémon.”$"
+	.string "Move Reminder's House\n"
+	.string "“He's retired now.”$"
 

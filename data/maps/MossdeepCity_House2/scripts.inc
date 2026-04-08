@@ -13,8 +13,8 @@ MossdeepCity_House2_EventScript_Wingull::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_WINGULL, CRY_MODE_NORMAL
-	msgbox MossdeepCity_House2_Text_Wingull, MSGBOX_DEFAULT
+	overworldspecies SPECIES_FORTREE_MOSSDEEP_MESSENGER
+	bufferspeciestext SPECIES_FORTREE_MOSSDEEP_MESSENGER, MossdeepCity_House2_Text_Wingull, MSGBOX_DEFAULT
 	waitmoncry
 	closemessage
 	setflag FLAG_WINGULL_DELIVERED_MAIL
@@ -64,5 +64,5 @@ MossdeepCity_House2_Text_PokemonCarriesMailBackAndForth:
 	.string "apart.$"
 
 MossdeepCity_House2_Text_Wingull:
-	.string "Wingull: Pihyoh!$"
+	.string "{STR_VAR_1}: Pihyoh!$"
 

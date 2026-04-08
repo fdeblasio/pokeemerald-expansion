@@ -40,9 +40,17 @@ EverGrandeCity_PhoebesRoom_EventScript_Phoebe::
 	lock
 	faceplayer
 	goto_if_set FLAG_DEFEATED_ELITE_4_PHOEBE, EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech
+	goto_if_set FLAG_SYS_GAME_CLEAR, EverGrandeCity_PhoebesRoom_EventScript_Rematch
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 	msgbox EverGrandeCity_PhoebesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_PHOEBE, EverGrandeCity_PhoebesRoom_Text_Defeat
+	goto EverGrandeCity_PhoebesRoom_EventScript_Defeated
+	end
+
+EverGrandeCity_PhoebesRoom_EventScript_Rematch::
+	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
+	msgbox EverGrandeCity_PhoebesRoom_Text_IntroSpeechRematch, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_PHOEBE_REMATCH, EverGrandeCity_PhoebesRoom_Text_Defeat
 	goto EverGrandeCity_PhoebesRoom_EventScript_Defeated
 	end
 
@@ -67,6 +75,10 @@ EverGrandeCity_PhoebesRoom_Text_IntroSpeech:
 	.string "Yes, the bond I developed with Pokémon\n"
 	.string "is extremely tight.\p"
 	.string "So, come on, just try and see if you can\n"
+	.string "even inflict damage on my Pokémon!$"
+
+EverGrandeCity_PhoebesRoom_Text_IntroSpeechRematch:
+	.string "Come on, just try and see if you can\n"
 	.string "even inflict damage on my Pokémon!$"
 
 EverGrandeCity_PhoebesRoom_Text_Defeat:

@@ -13,6 +13,10 @@ Route121_EventScript_SafariZoneSign::
 	msgbox Route121_Text_SafariZoneSign, MSGBOX_SIGN
 	end
 
+Route121_EventScript_MallGrunt::
+	msgbox Route121_Text_MallGrunt, MSGBOX_NPC
+	end
+
 Route121_EventScript_AquaGruntsMoveOut::
 	lockall
 	playbgm MUS_ENCOUNTER_AQUA, FALSE
@@ -186,3 +190,9 @@ Route121_Text_SafariZoneSign:
 	.string "“Filled with rare Pokémon!”\n"
 	.string "Safari Zone$"
 
+Route121_Text_MallGrunt:
+	.string "Scram! The Boss is doing\n"
+	.string "important things at Mt. Pyre!\p"
+	.string "…\p"
+	.string "I guess you can shop at the Lilycove\n"
+	.string "Department Store in the meantime.$"

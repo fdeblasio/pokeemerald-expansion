@@ -3,6 +3,7 @@
 #include "event_object_movement.h"
 #include "field_camera.h"
 #include "field_effect.h"
+#include "field_specials.h"
 #include "script.h"
 #include "sound.h"
 #include "task.h"
@@ -100,6 +101,18 @@ bool8 CheckRelicanthWailord(void)
         if (GetMonData(&gParties[B_TRAINER_PLAYER][gPartiesCount[B_TRAINER_PLAYER] - 1], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_RELICANTH)
             return TRUE;
     }
+    return FALSE;
+}
+
+bool8 CheckRegiParty(void)
+{
+    if (CheckPartyHasSpecies(SPECIES_DESERT_RUINS)
+     && CheckPartyHasSpecies(SPECIES_ISLAND_CAVE)
+     && CheckPartyHasSpecies(SPECIES_ANCIENT_TOMB)
+     && CheckPartyHasSpecies(SPECIES_NEW_MAUVILLE_2)
+     && CheckPartyHasSpecies(SPECIES_METEOR_FALLS)
+    )
+        return TRUE;
     return FALSE;
 }
 

@@ -2302,7 +2302,7 @@
 // Item Ball Flags
 #define FLAG_ITEM_ROUTE_102_POTION                                  0
 #define FLAG_ITEM_ROUTE_116_X_SPECIAL                               0
-#define FLAG_ITEM_ROUTE_104_PP_UP                                   0
+#define FLAG_ITEM_ROUTE_104_EXP_CANDY_M                             0
 #define FLAG_ITEM_ROUTE_105_IRON                                    0
 #define FLAG_ITEM_ROUTE_106_PROTEIN                                 0
 #define FLAG_ITEM_ROUTE_109_PP_UP                                   0

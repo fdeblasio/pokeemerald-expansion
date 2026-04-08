@@ -41,10 +41,6 @@ static const struct SpriteFrameImage sPicTable_BrendanFieldMove[] = {
     overworld_ascending_frames(gObjectEventPic_BrendanFieldMove, 4, 4),
 };
 
-static const struct SpriteFrameImage sPicTable_QuintyPlump[] = {
-    overworld_ascending_frames(gObjectEventPic_QuintyPlump, 4, 4),
-};
-
 static const struct SpriteFrameImage sPicTable_NinjaBoy[] = {
     overworld_ascending_frames(gObjectEventPic_NinjaBoy, 2, 2),
 };
@@ -1699,6 +1695,19 @@ static const struct SpriteFrameImage sPicTable_Rocker[] = {
     overworld_ascending_frames(gObjectEventPic_Rocker, 2, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_Juggler[] = {
+    overworld_frame(gObjectEventPic_Juggler, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Juggler, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Juggler, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Juggler, 2, 4, 3),
+    overworld_frame(gObjectEventPic_Juggler, 2, 4, 4),
+    overworld_frame(gObjectEventPic_Juggler, 2, 4, 5),
+    overworld_frame(gObjectEventPic_Juggler, 2, 4, 6),
+    overworld_frame(gObjectEventPic_Juggler, 2, 4, 7),
+    overworld_frame(gObjectEventPic_Juggler, 2, 4, 8),
+    overworld_frame(gObjectEventPic_Juggler, 2, 4, 9),
+};
+
 static const struct SpriteFrameImage sPicTable_MrFuji[] = {
     overworld_ascending_frames(gObjectEventPic_MrFuji, 2, 4),
 };
@@ -2494,3 +2503,7 @@ static const struct SpriteFrameImage sPicTable_MomFrlg[] = {
 };
 
 #endif // IS_FRLG
+
+static const struct SpriteFrameImage sPicTable_Frank[] = {
+    overworld_ascending_frames(gObjectEventPic_Frank, 2, 4),
+};

@@ -923,11 +923,11 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     },
     [TRAINER_PIC_MAGMA_ADMIN_M] =
     {
-        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_MagmaAdminM, gTrainerPalette_MagmaAdmin),
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_MagmaAdminM, gTrainerPalette_MagmaAdminM),
     },
     [TRAINER_PIC_MAGMA_ADMIN_F] =
     {
-        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_MagmaAdminF, gTrainerPalette_MagmaAdmin),
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_MagmaAdminF, gTrainerPalette_MagmaAdminF),
     },
     [TRAINER_PIC_BUG_CATCHER] =
     {

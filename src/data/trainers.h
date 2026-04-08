@@ -19,7 +19,7 @@
 
 #define TRAINER_CLASS_PIC(class)           \
     .trainerClass = TRAINER_CLASS_##class, \
-    .trainerPic = TRAINER_PIC_FRONT_##class
+    .trainerPic = TRAINER_PIC_##class
 
 
 // Trainer defines
@@ -69,30 +69,30 @@
     TRAINER_CLASS_PIC(HIKER), \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER
 
-#define SCHOOLKID_M_INFO                          \
-    .trainerClass = TRAINER_CLASS_SCHOOLKID,      \
-    .trainerPic = TRAINER_PIC_FRONT_SCHOOL_KID_M, \
+#define SCHOOLKID_M_INFO                     \
+    .trainerClass = TRAINER_CLASS_SCHOOLKID, \
+    .trainerPic = TRAINER_PIC_SCHOOL_KID_M,  \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
 
-#define SCHOOLKID_F_INFO                          \
-    .trainerClass = TRAINER_CLASS_SCHOOLKID,      \
-    .trainerPic = TRAINER_PIC_FRONT_SCHOOL_KID_F, \
-    .gender = TRAINER_GENDER_FEMALE,              \
+#define SCHOOLKID_F_INFO                     \
+    .trainerClass = TRAINER_CLASS_SCHOOLKID, \
+    .trainerPic = TRAINER_PIC_SCHOOL_KID_F,  \
+    .gender = TRAINER_GENDER_FEMALE,         \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL
 
 #define SAILOR_INFO            \
     TRAINER_CLASS_PIC(SAILOR), \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
 
-#define TUBER_F_INFO                         \
-    .trainerClass = TRAINER_CLASS_TUBER,     \
-    .trainerPic = TRAINER_PIC_FRONT_TUBER_F, \
-    .gender = TRAINER_GENDER_FEMALE,         \
+#define TUBER_F_INFO                     \
+    .trainerClass = TRAINER_CLASS_TUBER, \
+    .trainerPic = TRAINER_PIC_TUBER_F,   \
+    .gender = TRAINER_GENDER_FEMALE,     \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL
 
-#define TUBER_M_INFO                         \
-    .trainerClass = TRAINER_CLASS_TUBER,     \
-    .trainerPic = TRAINER_PIC_FRONT_TUBER_M, \
+#define TUBER_M_INFO                     \
+    .trainerClass = TRAINER_CLASS_TUBER, \
+    .trainerPic = TRAINER_PIC_TUBER_M,   \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL
 
 #define BEAUTY_INFO                  \
@@ -100,15 +100,15 @@
     .gender = TRAINER_GENDER_FEMALE, \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
 
-#define POKE_FAN_F_INFO                         \
-    .trainerClass = TRAINER_CLASS_POKE_FAN,     \
-    .trainerPic = TRAINER_PIC_FRONT_POKE_FAN_F, \
-    .gender = TRAINER_GENDER_FEMALE,            \
+#define POKE_FAN_F_INFO                     \
+    .trainerClass = TRAINER_CLASS_POKE_FAN, \
+    .trainerPic = TRAINER_PIC_POKE_FAN_F,   \
+    .gender = TRAINER_GENDER_FEMALE,        \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS
 
-#define POKE_FAN_M_INFO                         \
-    .trainerClass = TRAINER_CLASS_POKE_FAN,     \
-    .trainerPic = TRAINER_PIC_FRONT_POKE_FAN_M, \
+#define POKE_FAN_M_INFO                     \
+    .trainerClass = TRAINER_CLASS_POKE_FAN, \
+    .trainerPic = TRAINER_PIC_POKE_FAN_M,   \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS
 
 #define POKE_FAN_MON(Level) \
@@ -132,48 +132,48 @@
     TRAINER_CLASS_PIC(COLLECTOR), \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS
 
-#define PSYCHIC_M_INFO                         \
-    .trainerClass = TRAINER_CLASS_PSYCHIC,     \
-    .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M, \
+#define PSYCHIC_M_INFO                     \
+    .trainerClass = TRAINER_CLASS_PSYCHIC, \
+    .trainerPic = TRAINER_PIC_PSYCHIC_M,   \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE
 
-#define PSYCHIC_F_INFO                         \
-    .trainerClass = TRAINER_CLASS_PSYCHIC,     \
-    .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F, \
-    .gender = TRAINER_GENDER_FEMALE,           \
+#define PSYCHIC_F_INFO                     \
+    .trainerClass = TRAINER_CLASS_PSYCHIC, \
+    .trainerPic = TRAINER_PIC_PSYCHIC_F,   \
+    .gender = TRAINER_GENDER_FEMALE,       \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE
 
-#define TRIATHLETE_F_CYCLING_INFO                         \
-    .trainerClass = TRAINER_CLASS_TRIATHLETE,             \
-    .trainerPic = TRAINER_PIC_FRONT_CYCLING_TRIATHLETE_F, \
-    .gender = TRAINER_GENDER_FEMALE,                      \
+#define TRIATHLETE_F_CYCLING_INFO                   \
+    .trainerClass = TRAINER_CLASS_TRIATHLETE,       \
+    .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F, \
+    .gender = TRAINER_GENDER_FEMALE,                \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
 
-#define TRIATHLETE_M_CYCLING_INFO                         \
-    .trainerClass = TRAINER_CLASS_TRIATHLETE,             \
-    .trainerPic = TRAINER_PIC_FRONT_CYCLING_TRIATHLETE_M, \
+#define TRIATHLETE_M_CYCLING_INFO                   \
+    .trainerClass = TRAINER_CLASS_TRIATHLETE,       \
+    .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M, \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
 
-#define TRIATHLETE_F_RUNNING_INFO                         \
-    .trainerClass = TRAINER_CLASS_TRIATHLETE,             \
-    .trainerPic = TRAINER_PIC_FRONT_RUNNING_TRIATHLETE_F, \
-    .gender = TRAINER_GENDER_FEMALE,                      \
+#define TRIATHLETE_F_RUNNING_INFO                   \
+    .trainerClass = TRAINER_CLASS_TRIATHLETE,       \
+    .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F, \
+    .gender = TRAINER_GENDER_FEMALE,                \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE
 
-#define TRIATHLETE_M_RUNNING_INFO                         \
-    .trainerClass = TRAINER_CLASS_TRIATHLETE,             \
-    .trainerPic = TRAINER_PIC_FRONT_RUNNING_TRIATHLETE_M, \
+#define TRIATHLETE_M_RUNNING_INFO                   \
+    .trainerClass = TRAINER_CLASS_TRIATHLETE,       \
+    .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_M, \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE
 
-#define TRIATHLETE_M_SWIMMING_INFO                         \
-    .trainerClass = TRAINER_CLASS_TRIATHLETE,              \
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_M, \
+#define TRIATHLETE_M_SWIMMING_INFO                   \
+    .trainerClass = TRAINER_CLASS_TRIATHLETE,        \
+    .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M, \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER
 
-#define TRIATHLETE_F_SWIMMING_INFO                         \
-    .trainerClass = TRAINER_CLASS_TRIATHLETE,              \
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_F, \
-    .gender = TRAINER_GENDER_FEMALE,                       \
+#define TRIATHLETE_F_SWIMMING_INFO                   \
+    .trainerClass = TRAINER_CLASS_TRIATHLETE,        \
+    .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F, \
+    .gender = TRAINER_GENDER_FEMALE,                 \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER
 
 #define TRIATHLETE_MON(Level, IV)                                            \
@@ -181,17 +181,17 @@
     .ev = TRAINER_PARTY_EVS(MAX_PER_STAT_EVS, 0, 0, MAX_PER_STAT_EVS, 0, 0), \
     .iv = TRAINER_PARTY_IVS(MAX_PER_STAT_IVS, IV, IV, MAX_PER_STAT_IVS, IV, IV)
 
-#define POKEMON_BREEDER_M_INFO                         \
-    .trainerClass = TRAINER_CLASS_PKMN_BREEDER,        \
-    .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_M, \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,    \
+#define POKEMON_BREEDER_M_INFO                      \
+    .trainerClass = TRAINER_CLASS_PKMN_BREEDER,     \
+    .trainerPic = TRAINER_PIC_POKEMON_BREEDER_M,    \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE, \
     .partySize = 6
 
-#define POKEMON_BREEDER_F_INFO                         \
-    .trainerClass = TRAINER_CLASS_PKMN_BREEDER,        \
-    .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_F, \
-    .gender = TRAINER_GENDER_FEMALE,                   \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,  \
+#define POKEMON_BREEDER_F_INFO                        \
+    .trainerClass = TRAINER_CLASS_PKMN_BREEDER,       \
+    .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,      \
+    .gender = TRAINER_GENDER_FEMALE,                  \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE, \
     .partySize = 6
 
 #define POKEMON_BREEDER_MON(Level) \
@@ -230,15 +230,15 @@
     TRAINER_CLASS_PIC(KINDLER), \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER
 
-#define ACE_TRAINER_M_INFO                         \
-    .trainerClass = TRAINER_CLASS_ACE_TRAINER,     \
-    .trainerPic = TRAINER_PIC_FRONT_ACE_TRAINER_M, \
+#define ACE_TRAINER_M_INFO                     \
+    .trainerClass = TRAINER_CLASS_ACE_TRAINER, \
+    .trainerPic = TRAINER_PIC_ACE_TRAINER_M,   \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL
 
-#define ACE_TRAINER_F_INFO                         \
-    .trainerClass = TRAINER_CLASS_ACE_TRAINER,     \
-    .trainerPic = TRAINER_PIC_FRONT_ACE_TRAINER_F, \
-    .gender = TRAINER_GENDER_FEMALE,               \
+#define ACE_TRAINER_F_INFO                     \
+    .trainerClass = TRAINER_CLASS_ACE_TRAINER, \
+    .trainerPic = TRAINER_PIC_ACE_TRAINER_F,   \
+    .gender = TRAINER_GENDER_FEMALE,           \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL
 
 #define NINJA_BOY_INFO            \
@@ -254,30 +254,30 @@
     TRAINER_CLASS_PIC(BIRD_KEEPER), \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL
 
-#define EXPERT_F_INFO                         \
-    .trainerClass = TRAINER_CLASS_EXPERT,     \
-    .trainerPic = TRAINER_PIC_FRONT_EXPERT_F, \
-    .gender = TRAINER_GENDER_FEMALE,          \
+#define EXPERT_F_INFO                     \
+    .trainerClass = TRAINER_CLASS_EXPERT, \
+    .trainerPic = TRAINER_PIC_EXPERT_F,   \
+    .gender = TRAINER_GENDER_FEMALE,      \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE
 
-#define EXPERT_M_INFO                         \
-    .trainerClass = TRAINER_CLASS_EXPERT,     \
-    .trainerPic = TRAINER_PIC_FRONT_EXPERT_M, \
+#define EXPERT_M_INFO                     \
+    .trainerClass = TRAINER_CLASS_EXPERT, \
+    .trainerPic = TRAINER_PIC_EXPERT_M,   \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE
 
 #define RUIN_MANIAC_INFO            \
     TRAINER_CLASS_PIC(RUIN_MANIAC), \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER
 
-#define SWIMMER_F_INFO                         \
-    .trainerClass = TRAINER_CLASS_SWIMMER,     \
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F, \
-    .gender = TRAINER_GENDER_FEMALE,           \
+#define SWIMMER_F_INFO                     \
+    .trainerClass = TRAINER_CLASS_SWIMMER, \
+    .trainerPic = TRAINER_PIC_SWIMMER_F,   \
+    .gender = TRAINER_GENDER_FEMALE,       \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER
 
-#define SWIMMER_M_INFO                         \
-    .trainerClass = TRAINER_CLASS_SWIMMER,     \
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M, \
+#define SWIMMER_M_INFO                     \
+    .trainerClass = TRAINER_CLASS_SWIMMER, \
+    .trainerPic = TRAINER_PIC_SWIMMER_M,   \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER
 
 #define SIS_AND_BRO_INFO                               \
@@ -290,17 +290,17 @@
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL, \
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES
 
-#define POKEMON_RANGER_F_INFO                         \
-    .trainerClass = TRAINER_CLASS_PKMN_RANGER,        \
-    .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_F, \
-    .gender = TRAINER_GENDER_FEMALE,                  \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,   \
+#define POKEMON_RANGER_F_INFO                       \
+    .trainerClass = TRAINER_CLASS_PKMN_RANGER,      \
+    .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,     \
+    .gender = TRAINER_GENDER_FEMALE,                \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL, \
     .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE}
 
-#define POKEMON_RANGER_M_INFO                         \
-    .trainerClass = TRAINER_CLASS_PKMN_RANGER,        \
-    .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_M, \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,   \
+#define POKEMON_RANGER_M_INFO                       \
+    .trainerClass = TRAINER_CLASS_PKMN_RANGER,      \
+    .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,     \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL, \
     .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE}
 
 #define HEX_MANIAC_INFO              \
@@ -443,7 +443,7 @@
 {
     .trainerName = _(""),
     .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
-    .trainerPic = TRAINER_PIC_FRONT_HIKER,
+    .trainerPic = TRAINER_PIC_HIKER,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
     .partySize = 0,
     .party = NULL,
@@ -468,14 +468,14 @@
 #define BRENDAN_INFO                                \
     .trainerName = _("Brendan"),                    \
     .trainerClass = TRAINER_CLASS_RIVAL,            \
-    .trainerPic = TRAINER_PIC_FRONT_BRENDAN,        \
+    .trainerPic = TRAINER_PIC_BRENDAN,              \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE, \
     BOSS_AI_FLAGS
 
 #define MAY_INFO                                      \
     .trainerName = _("May"),                          \
     .trainerClass = TRAINER_CLASS_RIVAL,              \
-    .trainerPic = TRAINER_PIC_FRONT_MAY,              \
+    .trainerPic = TRAINER_PIC_MAY,                    \
     .gender = TRAINER_GENDER_FEMALE,                  \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE, \
     BOSS_AI_FLAGS
@@ -595,7 +595,7 @@ RIVAL_BATTLES(MAY, WATER, VULPIX, NINETALES, FLASH_FIRE, CACNEA, CACTURNE, SAND_
 #define WALLY_INFO                                  \
     .trainerName = _("Wally"),                      \
     .trainerClass = TRAINER_CLASS_RIVAL,            \
-    .trainerPic = TRAINER_PIC_FRONT_WALLY,          \
+    .trainerPic = TRAINER_PIC_WALLY,                \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE, \
     BOSS_AI_FLAGS
 
@@ -849,9 +849,9 @@ WALLY_REMATCH(2),
 WALLY_REMATCH(3),
 WALLY_REMATCH(4),
 
-#define LEADER_INFO(Trainer)                          \
-    .trainerClass = TRAINER_CLASS_LEADER,             \
-    .trainerPic = TRAINER_PIC_FRONT_LEADER_##Trainer, \
+#define LEADER_INFO(Trainer)                    \
+    .trainerClass = TRAINER_CLASS_LEADER,       \
+    .trainerPic = TRAINER_PIC_LEADER_##Trainer, \
     BOSS_AI_FLAGS
 
 #define LEADER_REMATCH                                                             \
@@ -2734,7 +2734,7 @@ JUAN_REMATCH(4),
 
 #define ELITE_FOUR_INFO(Trainer, MugshotColor)                             \
     .trainerClass = TRAINER_CLASS_ELITE_FOUR,                              \
-    .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_##Trainer,                  \
+    .trainerPic = TRAINER_PIC_ELITE_FOUR_##Trainer,                        \
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE}, \
     .mugshotColor = MUGSHOT_TYPE_##MugshotColor,                           \
     BOSS_AI_FLAGS
@@ -3669,7 +3669,7 @@ JUAN_REMATCH(4),
 {                                                                                          \
     .trainerName = _("Wallace"),                                                           \
     .trainerClass = TRAINER_CLASS_CHAMPION,                                                \
-    .trainerPic = TRAINER_PIC_FRONT_CHAMPION_WALLACE,                                      \
+    .trainerPic = TRAINER_PIC_CHAMPION_WALLACE,                                            \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,                                        \
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE}, \
     .mugshotColor = MUGSHOT_TYPE_WATER,                                                    \
@@ -3848,7 +3848,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 [DIFFICULTY_NORMAL][TRAINER_STEVEN] =
 {
     STEVEN_INFO,
-    .trainerPic = TRAINER_PIC_FRONT_STEVEN,
+    .trainerPic = TRAINER_PIC_STEVEN,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
     BOSS_AI_FLAGS,
     .partySize = 6,
@@ -3942,7 +3942,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define GABBY_AND_TY_INFO \
     .trainerName = _("Gabby & Ty"),                               \
     .trainerClass = TRAINER_CLASS_INTERVIEWER,                    \
-    .trainerPic = TRAINER_PIC_FRONT_INTERVIEWER,                  \
+    .trainerPic = TRAINER_PIC_INTERVIEWER,                        \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,        \
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,                    \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY,  \
@@ -4054,13 +4054,13 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 // Team Magma
 #define MAGMA_GRUNT_M_INFO                           \
     .trainerClass = TRAINER_CLASS_TEAM_MAGMA,        \
-    .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_M,   \
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,         \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA, \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
 #define MAGMA_GRUNT_F_INFO                           \
     .trainerClass = TRAINER_CLASS_TEAM_MAGMA,        \
-    .trainerPic = TRAINER_PIC_FRONT_MAGMA_GRUNT_F,   \
+    .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,         \
     .gender = TRAINER_GENDER_FEMALE,                 \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA, \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
@@ -4168,13 +4168,13 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 // Team Aqua
 #define AQUA_GRUNT_M_INFO                           \
     .trainerClass = TRAINER_CLASS_TEAM_AQUA,        \
-    .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_M,   \
+    .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,         \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA, \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
 
 #define AQUA_GRUNT_F_INFO                           \
     .trainerClass = TRAINER_CLASS_TEAM_AQUA,        \
-    .trainerPic = TRAINER_PIC_FRONT_AQUA_GRUNT_F,   \
+    .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,         \
     .gender = TRAINER_GENDER_FEMALE,                \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA, \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE
@@ -4296,7 +4296,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 {                                                                                        \
     .trainerName = _("Tabitha"),                                                         \
     .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,                                           \
-    .trainerPic = TRAINER_PIC_FRONT_MAGMA_ADMIN_M,                                       \
+    .trainerPic = TRAINER_PIC_MAGMA_ADMIN_M,                                             \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,                                     \
     BOSS_AI_FLAGS,                                                                       \
     .partySize = 3,                                                                      \
@@ -4330,7 +4330,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 {                                                                                     \
     .trainerName = _("Courtney"),                                                     \
     .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,                                        \
-    .trainerPic = TRAINER_PIC_FRONT_MAGMA_ADMIN_F,                                    \
+    .trainerPic = TRAINER_PIC_MAGMA_ADMIN_F,                                          \
     .gender = TRAINER_GENDER_FEMALE,                                                  \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,                                  \
     BOSS_AI_FLAGS,                                                                    \
@@ -4365,7 +4365,7 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 {                                                                                    \
     .trainerName = _("Shelly"),                                                      \
     .trainerClass = TRAINER_CLASS_AQUA_ADMIN,                                        \
-    .trainerPic = TRAINER_PIC_FRONT_AQUA_ADMIN_F,                                    \
+    .trainerPic = TRAINER_PIC_AQUA_ADMIN_F,                                          \
     .gender = TRAINER_GENDER_FEMALE,                                                 \
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,                                  \
     BOSS_AI_FLAGS,                                                                   \
@@ -4395,49 +4395,49 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
     },                                                                               \
 }
 
-#define MATT_BATTLE(Location, AceLevel, IVs)               \
-[DIFFICULTY_NORMAL][TRAINER_MATT_##Location] =             \
-{                                                          \
-    .trainerName = _("Matt"),                              \
-    .trainerClass = TRAINER_CLASS_AQUA_ADMIN,              \
-    .trainerPic = TRAINER_PIC_FRONT_AQUA_ADMIN_M,          \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,        \
-    BOSS_AI_FLAGS,                                         \
-    .partySize = 3,                                        \
-    .party = (const struct TrainerMon[]) {                 \
-        {                                                  \
-        .lvl = (AceLevel - 2),                             \
-        .species = SPECIES_GYARADOS,                       \
-        .ability = ABILITY_INTIMIDATE,                     \
-        IVS(IVs),                                          \
-        .gender = TRAINER_MON_MALE,                        \
-        },                                                 \
-        {                                                  \
-        .lvl = (AceLevel - 2),                             \
-        .species = SPECIES_CRAWDAUNT,                      \
-        .ability = ABILITY_SHELL_ARMOR,                    \
-        IVS(IVs),                                          \
-        .gender = TRAINER_MON_MALE,                        \
-        },                                                 \
-        {                                                  \
-        .lvl = AceLevel,                                   \
-        .species = SPECIES_HUNTAIL,                        \
-        .ability = ABILITY_SWIFT_SWIM,                     \
-        IVS(IVs),                                          \
-        .gender = TRAINER_MON_MALE,                        \
-        }                                                  \
-    },                                                     \
+#define MATT_BATTLE(Location, AceLevel, IVs)        \
+[DIFFICULTY_NORMAL][TRAINER_MATT_##Location] =      \
+{                                                   \
+    .trainerName = _("Matt"),                       \
+    .trainerClass = TRAINER_CLASS_AQUA_ADMIN,       \
+    .trainerPic = TRAINER_PIC_AQUA_ADMIN_M,         \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA, \
+    BOSS_AI_FLAGS,                                  \
+    .partySize = 3,                                 \
+    .party = (const struct TrainerMon[]) {          \
+        {                                           \
+        .lvl = (AceLevel - 2),                      \
+        .species = SPECIES_GYARADOS,                \
+        .ability = ABILITY_INTIMIDATE,              \
+        IVS(IVs),                                   \
+        .gender = TRAINER_MON_MALE,                 \
+        },                                          \
+        {                                           \
+        .lvl = (AceLevel - 2),                      \
+        .species = SPECIES_CRAWDAUNT,               \
+        .ability = ABILITY_SHELL_ARMOR,             \
+        IVS(IVs),                                   \
+        .gender = TRAINER_MON_MALE,                 \
+        },                                          \
+        {                                           \
+        .lvl = AceLevel,                            \
+        .species = SPECIES_HUNTAIL,                 \
+        .ability = ABILITY_SWIFT_SWIM,              \
+        IVS(IVs),                                   \
+        .gender = TRAINER_MON_MALE,                 \
+        }                                           \
+    },                                              \
 }
 
 #define TEAM_LEADER_SUPPORTING_MON(Level) \
     .lvl = Level,                         \
     IVS(18)
 
-#define MAXIE_INFO                                      \
-    .trainerName = _("Maxie"),                          \
-    .trainerClass = TRAINER_CLASS_MAGMA_LEADER,         \
-    .trainerPic = TRAINER_PIC_FRONT_MAGMA_LEADER_MAXIE, \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,    \
+#define MAXIE_INFO                                   \
+    .trainerName = _("Maxie"),                       \
+    .trainerClass = TRAINER_CLASS_MAGMA_LEADER,      \
+    .trainerPic = TRAINER_PIC_MAGMA_LEADER_MAXIE,    \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA, \
     BOSS_AI_FLAGS
 
 #define HUMPHREY(Level)                                       \
@@ -4524,11 +4524,11 @@ WALLACE_BATTLE(WALLACE_REMATCH, 90),
 #define MAXIE_SILICOBRA
 #define MAXIE_TOEDSCOOL
 
-#define ARCHIE_INFO                                     \
-    .trainerName = _("Archie"),                         \
-    .trainerClass = TRAINER_CLASS_AQUA_LEADER,          \
-    .trainerPic = TRAINER_PIC_FRONT_AQUA_LEADER_ARCHIE, \
-    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,     \
+#define ARCHIE_INFO                                 \
+    .trainerName = _("Archie"),                     \
+    .trainerClass = TRAINER_CLASS_AQUA_LEADER,      \
+    .trainerPic = TRAINER_PIC_AQUA_LEADER_ARCHIE,   \
+    .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA, \
     BOSS_AI_FLAGS
 
 #define FINNEAS(Level)                                 \
@@ -8225,7 +8225,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 {
     .trainerName = _("Victor"),
     .trainerClass = TRAINER_CLASS_WINSTRATE,
-    .trainerPic = TRAINER_PIC_FRONT_POKE_FAN_M,
+    .trainerPic = TRAINER_PIC_POKE_FAN_M,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -8251,7 +8251,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 {
     .trainerName = _("Victoria"),
     .trainerClass = TRAINER_CLASS_WINSTRATE,
-    .trainerPic = TRAINER_PIC_FRONT_POKE_FAN_F,
+    .trainerPic = TRAINER_PIC_POKE_FAN_F,
     .gender = TRAINER_GENDER_FEMALE,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT,
@@ -8272,7 +8272,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 {
     .trainerName = _("Vivi"),
     .trainerClass = TRAINER_CLASS_WINSTRATE,
-    .trainerPic = TRAINER_PIC_FRONT_LASS,
+    .trainerPic = TRAINER_PIC_LASS,
     .gender = TRAINER_GENDER_FEMALE,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -8306,7 +8306,7 @@ LYDIA_BATTLE(5, REMATCH_5_LEVEL_3),
 {
     .trainerName = _("Vicky"),
     .trainerClass = TRAINER_CLASS_WINSTRATE,
-    .trainerPic = TRAINER_PIC_FRONT_EXPERT_F,
+    .trainerPic = TRAINER_PIC_EXPERT_F,
     .gender = TRAINER_GENDER_FEMALE,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -12286,7 +12286,7 @@ PETALBURG_GYM_TRAINER(BERKE,   "Berke",   M, DIRE_HIT,     LINOONE,    SCOPE_LEN
 {
     .trainerName = _("Jazmyn"),
     .trainerClass = TRAINER_CLASS_COOL_TRAINER,
-    .trainerPic = TRAINER_PIC_FRONT_ACE_TRAINER_F,
+    .trainerPic = TRAINER_PIC_ACE_TRAINER_F,
     .gender = TRAINER_GENDER_FEMALE,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
@@ -17443,7 +17443,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
 {
     .trainerName = _("Vito"),
     .trainerClass = TRAINER_CLASS_WINSTRATE,
-    .trainerPic = TRAINER_PIC_FRONT_ACE_TRAINER_M,
+    .trainerPic = TRAINER_PIC_ACE_TRAINER_M,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
     MINI_BOSS_AI_FLAGS,
@@ -17746,9 +17746,9 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
 },
 
 // Frontier Brains
-#define FRONTIER_BRAIN_INFO(Class, Name)              \
-    .trainerClass = TRAINER_CLASS_##Class,            \
-    .trainerPic = TRAINER_PIC_FRONT_##Class##_##Name, \
+#define FRONTIER_BRAIN_INFO(Class, Name)        \
+    .trainerClass = TRAINER_CLASS_##Class,      \
+    .trainerPic = TRAINER_PIC_##Class##_##Name, \
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY
 
 #define FRONTIER_BRAIN_MON(Level, Species) \
@@ -17903,7 +17903,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
 {
     .trainerName = _("Red"),
     .trainerClass = TRAINER_CLASS_RIVAL,
-    .trainerPic = TRAINER_PIC_FRONT_RED,
+    .trainerPic = TRAINER_PIC_RED,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
@@ -17918,7 +17918,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
 {
     .trainerName = _("Leaf"),
     .trainerClass = TRAINER_CLASS_RIVAL,
-    .trainerPic = TRAINER_PIC_FRONT_LEAF,
+    .trainerPic = TRAINER_PIC_LEAF,
     .gender = TRAINER_GENDER_FEMALE,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
     .partySize = 1,
@@ -17934,7 +17934,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
 {
     .trainerName = _("Brendan"),
     .trainerClass = TRAINER_CLASS_RS_PROTAG,
-    .trainerPic = TRAINER_PIC_FRONT_RS_BRENDAN,
+    .trainerPic = TRAINER_PIC_RS_BRENDAN,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
     .partySize = 1,
     .party = (const struct TrainerMon[]) {
@@ -17949,7 +17949,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
 {
     .trainerName = _("May"),
     .trainerClass = TRAINER_CLASS_RS_PROTAG,
-    .trainerPic = TRAINER_PIC_FRONT_RS_MAY,
+    .trainerPic = TRAINER_PIC_RS_MAY,
     .gender = TRAINER_GENDER_FEMALE,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
     .partySize = 1,
@@ -18020,7 +18020,7 @@ SHELLY_BATTLE(SEAFLOOR_CAVERN, 54, 12),
 {                                                 \
     .trainerName = _("Unused"),                   \
     .trainerClass = TRAINER_CLASS_PKMN_TRAINER_2, \
-    .trainerPic = TRAINER_PIC_FRONT_RS_BRENDAN,   \
+    .trainerPic = TRAINER_PIC_RS_BRENDAN,         \
     .partySize = 1,                               \
     .party = (const struct TrainerMon[]) {        \
         {                                         \
@@ -18051,7 +18051,7 @@ UNUSED_TRAINER(15),
 {
     .trainerName = _("PH"),
     .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
-    .trainerPic = TRAINER_PIC_FRONT_HIKER_FRLG,
+    .trainerPic = TRAINER_PIC_HIKER_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
     .partySize = 0,
     .party = (const struct TrainerMon[])
@@ -18096,7 +18096,7 @@ UNUSED_TRAINER(15),
 #define CHAMPION_INFO                                                                      \
     RIVAL_INFO,                                                                            \
     .trainerClass = TRAINER_CLASS_CHAMPION_FRLG,                                           \
-    .trainerPic = TRAINER_PIC_FRONT_CHAMPION_RIVAL_FRLG,                                   \
+    .trainerPic = TRAINER_PIC_CHAMPION_RIVAL_FRLG,                                         \
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE}, \
     .mugshotColor = MUGSHOT_COLOR_YELLOW,                                                  \
     .partySize = 6
@@ -18967,9 +18967,9 @@ RIVAL_BATTLES(WATER),
     },
 },
 
-#define LEADER_INFO(Trainer)                               \
-    .trainerClass = TRAINER_CLASS_LEADER_FRLG,             \
-    .trainerPic = TRAINER_PIC_FRONT_LEADER_##Trainer##_FRLG, \
+#define LEADER_INFO(Trainer)                           \
+    .trainerClass = TRAINER_CLASS_LEADER_FRLG,         \
+    .trainerPic = TRAINER_PIC_LEADER_##Trainer##_FRLG, \
     BOSS_AI_FLAGS
 
 #define LEADER_REMATCH                                                             \
@@ -19010,7 +19010,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Misty"),
     .trainerClass = TRAINER_CLASS_LEADER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LEADER_MISTY_FRLG,
+    .trainerPic = TRAINER_PIC_LEADER_MISTY_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .items = {ITEM_SUPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -19040,7 +19040,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Lt. Surge"),
     .trainerClass = TRAINER_CLASS_LEADER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LEADER_LT_SURGE_FRLG,
+    .trainerPic = TRAINER_PIC_LEADER_LT_SURGE_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
     .items = {ITEM_SUPER_POTION, ITEM_FULL_HEAL},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -19075,7 +19075,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Erika"),
     .trainerClass = TRAINER_CLASS_LEADER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LEADER_ERIKA_FRLG,
+    .trainerPic = TRAINER_PIC_LEADER_ERIKA_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .items = {ITEM_HYPER_POTION, ITEM_FULL_HEAL},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -19110,7 +19110,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Koga"),
     .trainerClass = TRAINER_CLASS_LEADER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LEADER_KOGA_FRLG,
+    .trainerPic = TRAINER_PIC_LEADER_KOGA_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
     .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_FULL_HEAL},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -19150,7 +19150,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Sabrina"),
     .trainerClass = TRAINER_CLASS_LEADER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LEADER_SABRINA_FRLG,
+    .trainerPic = TRAINER_PIC_LEADER_SABRINA_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_FULL_HEAL},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -19190,7 +19190,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Blaine"),
     .trainerClass = TRAINER_CLASS_LEADER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LEADER_BLAINE_FRLG,
+    .trainerPic = TRAINER_PIC_LEADER_BLAINE_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
     .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_FULL_HEAL},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -19230,7 +19230,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Giovanni"),
     .trainerClass = TRAINER_CLASS_BOSS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LEADER_GIOVANNI_FRLG,
+    .trainerPic = TRAINER_PIC_LEADER_GIOVANNI_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -19258,7 +19258,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Giovanni"),
     .trainerClass = TRAINER_CLASS_BOSS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LEADER_GIOVANNI_FRLG,
+    .trainerPic = TRAINER_PIC_LEADER_GIOVANNI_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 4,
@@ -19291,7 +19291,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Giovanni"),
     .trainerClass = TRAINER_CLASS_LEADER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LEADER_GIOVANNI_FRLG,
+    .trainerPic = TRAINER_PIC_LEADER_GIOVANNI_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_FULL_HEAL},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -19336,7 +19336,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Lorelei"),
     .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_LORELEI_FRLG,
+    .trainerPic = TRAINER_PIC_ELITE_FOUR_LORELEI_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -19382,7 +19382,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Lorelei"),
     .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_LORELEI_FRLG,
+    .trainerPic = TRAINER_PIC_ELITE_FOUR_LORELEI_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -19428,7 +19428,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Bruno"),
     .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_BRUNO_FRLG,
+    .trainerPic = TRAINER_PIC_ELITE_FOUR_BRUNO_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -19474,7 +19474,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Bruno"),
     .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_BRUNO_FRLG,
+    .trainerPic = TRAINER_PIC_ELITE_FOUR_BRUNO_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -19520,7 +19520,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Agatha"),
     .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_AGATHA_FRLG,
+    .trainerPic = TRAINER_PIC_ELITE_FOUR_AGATHA_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -19566,7 +19566,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Agatha"),
     .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_AGATHA_FRLG,
+    .trainerPic = TRAINER_PIC_ELITE_FOUR_AGATHA_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -19612,7 +19612,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Lance"),
     .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_LANCE_FRLG,
+    .trainerPic = TRAINER_PIC_ELITE_FOUR_LANCE_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -19658,7 +19658,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Lance"),
     .trainerClass = TRAINER_CLASS_ELITE_FOUR_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ELITE_FOUR_LANCE_FRLG,
+    .trainerPic = TRAINER_PIC_ELITE_FOUR_LANCE_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
     .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -22505,7 +22505,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Luis"),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -22526,7 +22526,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Richard"),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -22547,7 +22547,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Reece"),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -22572,7 +22572,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Matthew"),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -22593,7 +22593,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Douglas"),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 4,
@@ -22622,7 +22622,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("David"),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -22647,7 +22647,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Tony"),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -22668,7 +22668,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Axle"),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 5,
@@ -22701,7 +22701,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Barry"),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -22722,7 +22722,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Dean"),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
@@ -22739,7 +22739,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Darrin"),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 4,
@@ -22768,7 +22768,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Spencer"),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -22789,7 +22789,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Jack"),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
@@ -22806,7 +22806,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Jerome"),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -22827,7 +22827,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Roland"),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -23256,7 +23256,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Tiffany"),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
@@ -23273,7 +23273,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Nora"),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -23298,7 +23298,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Melissa"),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -23357,7 +23357,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Lauren"),
     .trainerClass = TRAINER_CLASS_BEAUTY_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -23382,7 +23382,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Anya"),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 5,
@@ -23415,7 +23415,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Alice"),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -23436,7 +23436,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Connie"),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -23461,7 +23461,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Shirley"),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -23486,7 +23486,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Johan"),
     .trainerClass = TRAINER_CLASS_PSYCHIC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M_FRLG,
+    .trainerPic = TRAINER_PIC_PSYCHIC_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 4,
@@ -23519,7 +23519,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Tyron"),
     .trainerClass = TRAINER_CLASS_PSYCHIC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M_FRLG,
+    .trainerPic = TRAINER_PIC_PSYCHIC_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -23542,7 +23542,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Cameron"),
     .trainerClass = TRAINER_CLASS_PSYCHIC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M_FRLG,
+    .trainerPic = TRAINER_PIC_PSYCHIC_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -23570,7 +23570,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Preston"),
     .trainerClass = TRAINER_CLASS_PSYCHIC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M_FRLG,
+    .trainerPic = TRAINER_PIC_PSYCHIC_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
@@ -24842,7 +24842,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -24863,7 +24863,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -24888,7 +24888,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -24909,7 +24909,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -24930,7 +24930,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -24951,7 +24951,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -24972,7 +24972,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -24993,7 +24993,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -25014,7 +25014,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -25035,7 +25035,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -25063,7 +25063,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 4,
@@ -25092,7 +25092,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -25115,7 +25115,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 5,
@@ -25153,7 +25153,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -25178,7 +25178,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -25199,7 +25199,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -25224,7 +25224,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -25249,7 +25249,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -25270,7 +25270,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -25295,7 +25295,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -25316,7 +25316,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 4,
@@ -25345,7 +25345,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -25366,7 +25366,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -25387,7 +25387,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 5,
@@ -25420,7 +25420,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -25445,7 +25445,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -25466,7 +25466,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -25491,7 +25491,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
@@ -25508,7 +25508,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
@@ -25525,7 +25525,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -25546,7 +25546,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -25571,7 +25571,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 4,
@@ -25604,7 +25604,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -25625,7 +25625,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -25646,7 +25646,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 4,
@@ -25675,7 +25675,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -25700,7 +25700,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -25725,7 +25725,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -25750,7 +25750,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
@@ -25767,7 +25767,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 5,
@@ -25800,7 +25800,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -25825,7 +25825,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Samuel"),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
+    .trainerPic = TRAINER_PIC_COOLTRAINER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_SUPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -25869,7 +25869,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("George"),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
+    .trainerPic = TRAINER_PIC_COOLTRAINER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -25913,7 +25913,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Colby"),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
+    .trainerPic = TRAINER_PIC_COOLTRAINER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -25957,7 +25957,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Paul"),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
+    .trainerPic = TRAINER_PIC_COOLTRAINER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -26001,7 +26001,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Rolando"),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
+    .trainerPic = TRAINER_PIC_COOLTRAINER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -26045,7 +26045,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Gilbert"),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
+    .trainerPic = TRAINER_PIC_COOLTRAINER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -26089,7 +26089,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Owen"),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
+    .trainerPic = TRAINER_PIC_COOLTRAINER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -26133,7 +26133,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Berke"),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
+    .trainerPic = TRAINER_PIC_COOLTRAINER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -26177,7 +26177,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Yuji"),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
+    .trainerPic = TRAINER_PIC_COOLTRAINER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -26221,7 +26221,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Warren"),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
+    .trainerPic = TRAINER_PIC_COOLTRAINER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -26265,7 +26265,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Mary"),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
+    .trainerPic = TRAINER_PIC_COOLTRAINER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_SUPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -26309,7 +26309,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Caroline"),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
+    .trainerPic = TRAINER_PIC_COOLTRAINER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -26353,7 +26353,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Alexa"),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
+    .trainerPic = TRAINER_PIC_COOLTRAINER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -26397,7 +26397,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Shannon"),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
+    .trainerPic = TRAINER_PIC_COOLTRAINER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -26441,7 +26441,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Naomi"),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
+    .trainerPic = TRAINER_PIC_COOLTRAINER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -26485,7 +26485,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Brooke"),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
+    .trainerPic = TRAINER_PIC_COOLTRAINER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -26529,7 +26529,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Austina"),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
+    .trainerPic = TRAINER_PIC_COOLTRAINER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -26573,7 +26573,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Julie"),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
+    .trainerPic = TRAINER_PIC_COOLTRAINER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -27376,7 +27376,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Eli & Anne"),
     .trainerClass = TRAINER_CLASS_TWINS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_TWINS_FRLG,
+    .trainerPic = TRAINER_PIC_TWINS_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
@@ -27422,7 +27422,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Gia & Jes"),
     .trainerClass = TRAINER_CLASS_YOUNG_COUPLE_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNG_COUPLE_FRLG,
+    .trainerPic = TRAINER_PIC_YOUNG_COUPLE_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
@@ -27444,7 +27444,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Kiri & Jan"),
     .trainerClass = TRAINER_CLASS_TWINS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_TWINS_FRLG,
+    .trainerPic = TRAINER_PIC_TWINS_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
@@ -27490,7 +27490,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Lea & Jed"),
     .trainerClass = TRAINER_CLASS_YOUNG_COUPLE_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNG_COUPLE_FRLG,
+    .trainerPic = TRAINER_PIC_YOUNG_COUPLE_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
@@ -27512,7 +27512,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Lia & Luc"),
     .trainerClass = TRAINER_CLASS_SIS_AND_BRO_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SIS_AND_BRO_FRLG,
+    .trainerPic = TRAINER_PIC_SIS_AND_BRO_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
@@ -27534,7 +27534,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Lil & Ian"),
     .trainerClass = TRAINER_CLASS_SIS_AND_BRO_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SIS_AND_BRO_FRLG,
+    .trainerPic = TRAINER_PIC_SIS_AND_BRO_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
@@ -27844,7 +27844,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Prof. Oak"),
     .trainerClass = TRAINER_CLASS_PKMN_PROF_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PROFESSOR_OAK_FRLG,
+    .trainerPic = TRAINER_PIC_PROFESSOR_OAK_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
@@ -27861,7 +27861,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_F_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -27882,7 +27882,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Jaclyn"),
     .trainerClass = TRAINER_CLASS_PSYCHIC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F_FRLG,
+    .trainerPic = TRAINER_PIC_PSYCHIC_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -27913,7 +27913,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Sharon"),
     .trainerClass = TRAINER_CLASS_CRUSH_GIRL_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG,
+    .trainerPic = TRAINER_PIC_CRUSH_GIRL_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -27938,7 +27938,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Amira"),
     .trainerClass = TRAINER_CLASS_TUBER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_TUBER_F_FRLG,
+    .trainerPic = TRAINER_PIC_TUBER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -27963,7 +27963,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Alize"),
     .trainerClass = TRAINER_CLASS_PKMN_BREEDER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_FRLG,
+    .trainerPic = TRAINER_PIC_POKEMON_BREEDER_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -27991,7 +27991,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Nicolas"),
     .trainerClass = TRAINER_CLASS_PKMN_RANGER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_M_FRLG,
+    .trainerPic = TRAINER_PIC_POKEMON_RANGER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -28017,7 +28017,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Madeline"),
     .trainerClass = TRAINER_CLASS_PKMN_RANGER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_F_FRLG,
+    .trainerPic = TRAINER_PIC_POKEMON_RANGER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -28043,7 +28043,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Nikki"),
     .trainerClass = TRAINER_CLASS_AROMA_LADY_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_AROMA_LADY_FRLG,
+    .trainerPic = TRAINER_PIC_AROMA_LADY_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -28087,7 +28087,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Jacki"),
     .trainerClass = TRAINER_CLASS_LADY_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LADY_FRLG,
+    .trainerPic = TRAINER_PIC_LADY_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
@@ -28222,7 +28222,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Eli & Anne"),
     .trainerClass = TRAINER_CLASS_TWINS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_TWINS_FRLG,
+    .trainerPic = TRAINER_PIC_TWINS_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
@@ -28314,7 +28314,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -28335,7 +28335,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 4,
@@ -28364,7 +28364,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -28389,7 +28389,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -28414,7 +28414,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -28439,7 +28439,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -28460,7 +28460,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Admin"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_F_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -28492,7 +28492,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Admin"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -28560,7 +28560,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Amara"),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -28585,7 +28585,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Maria"),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -28606,7 +28606,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Abigail"),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -28631,7 +28631,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Finn"),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
@@ -28648,7 +28648,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Garrett"),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -28704,7 +28704,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Tanya"),
     .trainerClass = TRAINER_CLASS_CRUSH_GIRL_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG,
+    .trainerPic = TRAINER_PIC_CRUSH_GIRL_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -28849,7 +28849,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Violet"),
     .trainerClass = TRAINER_CLASS_AROMA_LADY_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_AROMA_LADY_FRLG,
+    .trainerPic = TRAINER_PIC_AROMA_LADY_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -28874,7 +28874,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Alexis"),
     .trainerClass = TRAINER_CLASS_TUBER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_TUBER_F_FRLG,
+    .trainerPic = TRAINER_PIC_TUBER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 4,
@@ -28903,7 +28903,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Joy & Meg"),
     .trainerClass = TRAINER_CLASS_TWINS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_TWINS_FRLG,
+    .trainerPic = TRAINER_PIC_TWINS_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
@@ -28925,7 +28925,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Tisha"),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
@@ -28976,7 +28976,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Gillian"),
     .trainerClass = TRAINER_CLASS_LADY_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LADY_FRLG,
+    .trainerPic = TRAINER_PIC_LADY_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
@@ -29024,7 +29024,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Toby"),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -29049,7 +29049,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -29074,7 +29074,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -29097,7 +29097,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Grunt"),
     .trainerClass = TRAINER_CLASS_TEAM_ROCKET_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_ROCKET_GRUNT_F_FRLG,
+    .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -29201,7 +29201,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Mymo"),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -29222,7 +29222,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Nicole"),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
@@ -29239,7 +29239,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Ava & Geb"),
     .trainerClass = TRAINER_CLASS_SIS_AND_BRO_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SIS_AND_BRO_FRLG,
+    .trainerPic = TRAINER_PIC_SIS_AND_BRO_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
@@ -29261,7 +29261,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Rose"),
     .trainerClass = TRAINER_CLASS_AROMA_LADY_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_AROMA_LADY_FRLG,
+    .trainerPic = TRAINER_PIC_AROMA_LADY_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -29282,7 +29282,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Samir"),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
@@ -29299,7 +29299,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Denise"),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -29320,7 +29320,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Miu & Mia"),
     .trainerClass = TRAINER_CLASS_TWINS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_TWINS_FRLG,
+    .trainerPic = TRAINER_PIC_TWINS_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
@@ -29431,7 +29431,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Dario"),
     .trainerClass = TRAINER_CLASS_PSYCHIC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M_FRLG,
+    .trainerPic = TRAINER_PIC_PSYCHIC_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
@@ -29450,7 +29450,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Rodette"),
     .trainerClass = TRAINER_CLASS_PSYCHIC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F_FRLG,
+    .trainerPic = TRAINER_PIC_PSYCHIC_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -29481,7 +29481,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Miah"),
     .trainerClass = TRAINER_CLASS_AROMA_LADY_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_AROMA_LADY_FRLG,
+    .trainerPic = TRAINER_PIC_AROMA_LADY_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -29502,7 +29502,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Eve & Jon"),
     .trainerClass = TRAINER_CLASS_YOUNG_COUPLE_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNG_COUPLE_FRLG,
+    .trainerPic = TRAINER_PIC_YOUNG_COUPLE_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
@@ -29555,7 +29555,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Cyndy"),
     .trainerClass = TRAINER_CLASS_CRUSH_GIRL_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG,
+    .trainerPic = TRAINER_PIC_CRUSH_GIRL_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -29586,7 +29586,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Jocelyn"),
     .trainerClass = TRAINER_CLASS_CRUSH_GIRL_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG,
+    .trainerPic = TRAINER_PIC_CRUSH_GIRL_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -29658,7 +29658,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Logan"),
     .trainerClass = TRAINER_CLASS_PKMN_RANGER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_M_FRLG,
+    .trainerPic = TRAINER_PIC_POKEMON_RANGER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -29684,7 +29684,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Jackson"),
     .trainerClass = TRAINER_CLASS_PKMN_RANGER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_M_FRLG,
+    .trainerPic = TRAINER_PIC_POKEMON_RANGER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -29716,7 +29716,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Beth"),
     .trainerClass = TRAINER_CLASS_PKMN_RANGER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_F_FRLG,
+    .trainerPic = TRAINER_PIC_POKEMON_RANGER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -29745,7 +29745,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Katelyn"),
     .trainerClass = TRAINER_CLASS_PKMN_RANGER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_F_FRLG,
+    .trainerPic = TRAINER_PIC_POKEMON_RANGER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -29765,7 +29765,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Leroy"),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
+    .trainerPic = TRAINER_PIC_COOLTRAINER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -29809,7 +29809,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Michelle"),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
+    .trainerPic = TRAINER_PIC_COOLTRAINER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -29955,7 +29955,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Selphy"),
     .trainerClass = TRAINER_CLASS_LADY_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_LADY_FRLG,
+    .trainerPic = TRAINER_PIC_LADY_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
@@ -30004,7 +30004,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Laura"),
     .trainerClass = TRAINER_CLASS_PSYCHIC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F_FRLG,
+    .trainerPic = TRAINER_PIC_PSYCHIC_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -30032,7 +30032,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Bethany"),
     .trainerClass = TRAINER_CLASS_PKMN_BREEDER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_FRLG,
+    .trainerPic = TRAINER_PIC_POKEMON_BREEDER_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
@@ -30050,7 +30050,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Allison"),
     .trainerClass = TRAINER_CLASS_PKMN_BREEDER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_FRLG,
+    .trainerPic = TRAINER_PIC_POKEMON_BREEDER_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -31743,7 +31743,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Alice"),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -31766,7 +31766,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Darrin"),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 4,
@@ -31882,7 +31882,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Jack"),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
@@ -31900,7 +31900,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Lil & Ian"),
     .trainerClass = TRAINER_CLASS_SIS_AND_BRO_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SIS_AND_BRO_FRLG,
+    .trainerPic = TRAINER_PIC_SIS_AND_BRO_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
@@ -31924,7 +31924,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Lil & Ian"),
     .trainerClass = TRAINER_CLASS_SIS_AND_BRO_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SIS_AND_BRO_FRLG,
+    .trainerPic = TRAINER_PIC_SIS_AND_BRO_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
@@ -31948,7 +31948,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Finn"),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
@@ -31966,7 +31966,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Sharon"),
     .trainerClass = TRAINER_CLASS_CRUSH_GIRL_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG,
+    .trainerPic = TRAINER_PIC_CRUSH_GIRL_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -31991,7 +31991,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Sharon"),
     .trainerClass = TRAINER_CLASS_CRUSH_GIRL_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG,
+    .trainerPic = TRAINER_PIC_CRUSH_GIRL_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -32016,7 +32016,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Tanya"),
     .trainerClass = TRAINER_CLASS_CRUSH_GIRL_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG,
+    .trainerPic = TRAINER_PIC_CRUSH_GIRL_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -32041,7 +32041,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Tanya"),
     .trainerClass = TRAINER_CLASS_CRUSH_GIRL_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG,
+    .trainerPic = TRAINER_PIC_CRUSH_GIRL_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -32206,7 +32206,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Amira"),
     .trainerClass = TRAINER_CLASS_TUBER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_TUBER_F_FRLG,
+    .trainerPic = TRAINER_PIC_TUBER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -32234,7 +32234,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Joy & Meg"),
     .trainerClass = TRAINER_CLASS_TWINS_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_TWINS_FRLG,
+    .trainerPic = TRAINER_PIC_TWINS_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_TWINS,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
@@ -32296,7 +32296,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Alize"),
     .trainerClass = TRAINER_CLASS_PKMN_BREEDER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_POKEMON_BREEDER_FRLG,
+    .trainerPic = TRAINER_PIC_POKEMON_BREEDER_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -32324,7 +32324,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Gia & Jes"),
     .trainerClass = TRAINER_CLASS_YOUNG_COUPLE_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNG_COUPLE_FRLG,
+    .trainerPic = TRAINER_PIC_YOUNG_COUPLE_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
@@ -32348,7 +32348,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Gia & Jes"),
     .trainerClass = TRAINER_CLASS_YOUNG_COUPLE_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_YOUNG_COUPLE_FRLG,
+    .trainerPic = TRAINER_PIC_YOUNG_COUPLE_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
     .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
@@ -32435,7 +32435,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Nicole"),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
@@ -32453,7 +32453,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Jaclyn"),
     .trainerClass = TRAINER_CLASS_PSYCHIC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F_FRLG,
+    .trainerPic = TRAINER_PIC_PSYCHIC_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -32484,7 +32484,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Samir"),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
@@ -32565,7 +32565,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Dario"),
     .trainerClass = TRAINER_CLASS_PSYCHIC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_M_FRLG,
+    .trainerPic = TRAINER_PIC_PSYCHIC_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 1,
@@ -32584,7 +32584,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Rodette"),
     .trainerClass = TRAINER_CLASS_PSYCHIC_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_PSYCHIC_F_FRLG,
+    .trainerPic = TRAINER_PIC_PSYCHIC_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -32646,7 +32646,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Nicolas"),
     .trainerClass = TRAINER_CLASS_PKMN_RANGER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_M_FRLG,
+    .trainerPic = TRAINER_PIC_POKEMON_RANGER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -32672,7 +32672,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Madeline"),
     .trainerClass = TRAINER_CLASS_PKMN_RANGER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_F_FRLG,
+    .trainerPic = TRAINER_PIC_POKEMON_RANGER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -32698,7 +32698,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Cyndy"),
     .trainerClass = TRAINER_CLASS_CRUSH_GIRL_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG,
+    .trainerPic = TRAINER_PIC_CRUSH_GIRL_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 3,
@@ -32755,7 +32755,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Jackson"),
     .trainerClass = TRAINER_CLASS_PKMN_RANGER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_M_FRLG,
+    .trainerPic = TRAINER_PIC_POKEMON_RANGER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -32787,7 +32787,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Katelyn"),
     .trainerClass = TRAINER_CLASS_PKMN_RANGER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_POKEMON_RANGER_F_FRLG,
+    .trainerPic = TRAINER_PIC_POKEMON_RANGER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -32807,7 +32807,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Leroy"),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG,
+    .trainerPic = TRAINER_PIC_COOLTRAINER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_FULL_RESTORE},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -32851,7 +32851,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Michelle"),
     .trainerClass = TRAINER_CLASS_COOLTRAINER_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG,
+    .trainerPic = TRAINER_PIC_COOLTRAINER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
     .items = {ITEM_HYPER_POTION},
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -32998,7 +32998,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Matthew"),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -33021,7 +33021,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Tony"),
     .trainerClass = TRAINER_CLASS_SWIMMER_M_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_M_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,
@@ -33044,7 +33044,7 @@ RIVAL_BATTLES(WATER),
 {
     .trainerName = _("Melissa"),
     .trainerClass = TRAINER_CLASS_SWIMMER_F_FRLG,
-    .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F_FRLG,
+    .trainerPic = TRAINER_PIC_SWIMMER_F_FRLG,
     .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
     .partySize = 2,

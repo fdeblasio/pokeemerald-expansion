@@ -78,7 +78,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MANIAC",
+      "graphics_id": "OBJ_EVENT_GFX_BUG_MANIAC",
       "x": 26,
       "y": 123,
       "elevation": 3,
@@ -91,7 +91,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MANIAC",
+      "graphics_id": "OBJ_EVENT_GFX_BUG_MANIAC",
       "x": 5,
       "y": 125,
       "elevation": 3,
@@ -104,7 +104,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_CAMPER",
+      "graphics_id": "OBJ_EVENT_GFX_POKEMON_RANGER_M",
       "x": 7,
       "y": 74,
       "elevation": 3,
@@ -117,7 +117,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MANIAC",
+      "graphics_id": "OBJ_EVENT_GFX_BUG_MANIAC",
       "x": 28,
       "y": 116,
       "elevation": 3,
@@ -130,8 +130,8 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
-      "x": 35,
+      "graphics_id": "OBJ_EVENT_GFX_POKEMON_RANGER_F",
+      "x": 36,
       "y": 83,
       "elevation": 4,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -195,7 +195,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
+      "graphics_id": "OBJ_EVENT_GFX_BIRD_KEEPER",
       "x": 10,
       "y": 50,
       "elevation": 4,
@@ -208,7 +208,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
+      "graphics_id": "OBJ_EVENT_GFX_BIRD_KEEPER",
       "x": 8,
       "y": 63,
       "elevation": 3,
@@ -243,9 +243,9 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_SUPER_REPEL",
+      "trainer_sight_or_berry_tree_id": "ITEM_LINKING_CORD",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_119_SUPER_REPEL"
+      "flag": "FLAG_ITEM_ROUTE_119_LINKING_CORD"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -509,7 +509,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
+      "graphics_id": "OBJ_EVENT_GFX_PARASOL_LADY",
       "x": 8,
       "y": 68,
       "elevation": 3,
@@ -522,7 +522,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
+      "graphics_id": "OBJ_EVENT_GFX_KINDLER",
       "x": 16,
       "y": 52,
       "elevation": 3,
@@ -535,7 +535,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
+      "graphics_id": "OBJ_EVENT_GFX_GUITARIST",
       "x": 32,
       "y": 15,
       "elevation": 3,
@@ -918,6 +918,13 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route119_EventScript_TrainerTipsDecoration"
+    }
+  ],
+  "heal_locations": [
+    {
+      "id": "HEAL_LOCATION_ROUTE_119",
+      "x": 6,
+      "y": 33
     }
   ]
 }

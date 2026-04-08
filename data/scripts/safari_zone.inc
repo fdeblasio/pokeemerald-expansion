@@ -267,9 +267,9 @@ SafariZone_RestHouse_Text_FatMan:
 	.string "I think Pokémon with the same sort of\n"
 	.string "nature are drawn by a certain {POKEBLOCK}.$"
 
-SafariZone_South_Text_AreaOffLimits1:
-	.string "This area is still under construction.\n"
-	.string "It's off-limits, sorry!$"
+Route121_SafariZoneEntrance_Text_AreaOffLimits:
+	.string "The Safari Zone is still under\n"
+	.string "construction. It's off-limits, sorry!$"
 
 SafariZone_Southeast_Text_ExpansionIsFinished:
 	.string "The Safari Zone's expansion project\n"

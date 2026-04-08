@@ -80,7 +80,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ZIGZAGOON_2",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SLATEPORT_FAN_CLUB_1)",
       "x": 3,
       "y": 9,
       "elevation": 3,
@@ -93,7 +93,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SKITTY",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SLATEPORT_FAN_CLUB_2)",
       "x": 8,
       "y": 3,
       "elevation": 3,
@@ -106,7 +106,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_AZUMARILL",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SLATEPORT_FAN_CLUB_3)",
       "x": 10,
       "y": 8,
       "elevation": 3,
@@ -119,7 +119,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_4",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
       "x": 11,
       "y": 8,
       "elevation": 0,

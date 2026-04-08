@@ -156,7 +156,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
+      "graphics_id": "OBJ_EVENT_GFX_BIRD_KEEPER",
       "x": 5,
       "y": 22,
       "elevation": 3,
@@ -169,7 +169,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
+      "graphics_id": "OBJ_EVENT_GFX_BIRD_KEEPER",
       "x": 32,
       "y": 14,
       "elevation": 3,
@@ -182,7 +182,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_CAMPER",
+      "graphics_id": "OBJ_EVENT_GFX_POKEMON_RANGER_M",
       "x": 27,
       "y": 51,
       "elevation": 3,
@@ -195,7 +195,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
+      "graphics_id": "OBJ_EVENT_GFX_POKEMON_RANGER_F",
       "x": 36,
       "y": 45,
       "elevation": 3,
@@ -208,7 +208,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MANIAC",
+      "graphics_id": "OBJ_EVENT_GFX_BUG_MANIAC",
       "x": 19,
       "y": 80,
       "elevation": 5,
@@ -290,19 +290,6 @@
       "flag": "FLAG_HIDE_ROUTE_120_GABBY_AND_TY_2"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
-      "x": 35,
-      "y": 32,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_CutTree",
-      "flag": "FLAG_TEMP_11"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 7,
       "y": 89,
@@ -329,7 +316,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
+      "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_F",
       "x": 31,
       "y": 37,
       "elevation": 3,
@@ -342,7 +329,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "graphics_id": "OBJ_EVENT_GFX_RUIN_MANIAC",
       "x": 9,
       "y": 60,
       "elevation": 3,
@@ -355,7 +342,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
+      "graphics_id": "OBJ_EVENT_GFX_PARASOL_LADY",
       "x": 16,
       "y": 6,
       "elevation": 3,
@@ -368,7 +355,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
+      "graphics_id": "OBJ_EVENT_GFX_PARASOL_LADY",
       "x": 18,
       "y": 34,
       "elevation": 3,
@@ -433,32 +420,6 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route120_EventScript_Steven",
       "flag": "FLAG_HIDE_ROUTE_120_STEVEN"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
-      "x": 20,
-      "y": 1,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_CutTree",
-      "flag": "FLAG_TEMP_14"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
-      "x": 15,
-      "y": 1,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_CutTree",
-      "flag": "FLAG_TEMP_12"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
@@ -566,7 +527,7 @@
       "flag": "FLAG_HIDE_ROUTE_120_KECLEON_4"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
+      "graphics_id": "OBJ_EVENT_GFX_BATTLE_GIRL",
       "x": 19,
       "y": 32,
       "elevation": 3,
@@ -579,7 +540,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_M",
       "x": 14,
       "y": 34,
       "elevation": 3,
@@ -603,6 +564,32 @@
       "trainer_sight_or_berry_tree_id": "ITEM_REVIVE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_120_REVIVE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BIRD_KEEPER",
+      "x": 8,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route120_EventScript_BirdManiac",
+      "flag": "FLAG_BADGE06_GET"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BIRD_KEEPER",
+      "x": 8,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route120_EventScript_BirdManiac",
+      "flag": "FLAG_BADGE06_GET"
     }
   ],
   "warp_events": [

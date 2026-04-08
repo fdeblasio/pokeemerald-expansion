@@ -6,7 +6,7 @@
   "region_map_section": "MAPSEC_MT_PYRE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_INDOOR",
+  "map_type": "MAP_TYPE_BURIAL_GROUND",
   "allow_cycling": false,
   "allow_escaping": false,
   "allow_running": false,
@@ -19,7 +19,7 @@
       "x": 1,
       "y": 4,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_UP",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -28,11 +28,11 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_LASS",
+      "graphics_id": "OBJ_EVENT_GFX_PSYCHIC_F",
       "x": 11,
       "y": 4,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_UP",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -54,7 +54,7 @@
       "flag": "FLAG_ITEM_MT_PYRE_3F_SUPER_REPEL"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
+      "graphics_id": "OBJ_EVENT_GFX_POKEMON_BREEDER_F",
       "x": 6,
       "y": 4,
       "elevation": 3,

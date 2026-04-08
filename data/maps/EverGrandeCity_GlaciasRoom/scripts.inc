@@ -40,9 +40,17 @@ EverGrandeCity_GlaciasRoom_EventScript_Glacia::
 	lock
 	faceplayer
 	goto_if_set FLAG_DEFEATED_ELITE_4_GLACIA, EverGrandeCity_GlaciasRoom_EventScript_PostBattleSpeech
+	goto_if_set FLAG_SYS_GAME_CLEAR, EverGrandeCity_GlaciasRoom_EventScript_Rematch
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
 	msgbox EverGrandeCity_GlaciasRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_GLACIA, EverGrandeCity_GlaciasRoom_Text_Defeat
+	goto EverGrandeCity_GlaciasRoom_EventScript_Defeated
+	end
+
+EverGrandeCity_GlaciasRoom_EventScript_Rematch::
+	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
+	msgbox EverGrandeCity_GlaciasRoom_Text_IntroSpeechRematch, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_GLACIA_REMATCH, EverGrandeCity_GlaciasRoom_Text_Defeat
 	goto EverGrandeCity_GlaciasRoom_EventScript_Defeated
 	end
 
@@ -68,6 +76,10 @@ EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
 	.string "What about you?\p"
 	.string "It would please me to no end if I could\n"
 	.string "go all out against you!$"
+
+EverGrandeCity_GlaciasRoom_Text_IntroSpeechRematch:
+	.string "It would please me to no end if I could\n"
+	.string "go all out against you again!$"
 
 EverGrandeCity_GlaciasRoom_Text_Defeat:
 	.string "You and your Pokémon…\n"

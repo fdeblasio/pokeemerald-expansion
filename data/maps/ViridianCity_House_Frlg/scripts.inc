@@ -13,14 +13,14 @@ ViridianCity_House_EventScript_Speary::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_SPEAROW, CRY_MODE_NORMAL
+	overworldspecies SPECIES_VIRIDIAN_HOUSE
 	msgbox ViridianCity_House_Text_Speary
 	waitmoncry
 	release
 	end
 
 ViridianCity_House_EventScript_NicknameSign::
-	msgbox ViridianCity_House_Text_SpearowNameSpeary, MSGBOX_SIGN
+	bufferspeciestext SPECIES_VIRIDIAN_HOUSE, ViridianCity_House_Text_SpearowNameSpeary, MSGBOX_SIGN
 	end
 
 ViridianCity_House_Text_NicknamingIsFun::

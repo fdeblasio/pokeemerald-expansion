@@ -328,6 +328,7 @@ LilycoveCity_ContestLobby_EventScript_SetContestType::
 	case CONTEST_RANK_SUPER, LilycoveCity_ContestLobby_EventScript_SetSuperContestType
 	case CONTEST_RANK_HYPER, LilycoveCity_ContestLobby_EventScript_SetHyperContestType
 	case CONTEST_RANK_MASTER, LilycoveCity_ContestLobby_EventScript_SetMasterContestType
+	case CONTEST_RANK_SPECIAL, LilycoveCity_ContestLobby_EventScript_SetSpecialContestType
 	return
 
 LilycoveCity_ContestLobby_EventScript_SetNormalContestType::
@@ -346,14 +347,14 @@ LilycoveCity_ContestLobby_EventScript_SetMasterContestType::
 	setvar VAR_CONTEST_TYPE, CONTEST_TYPE_NPC_MASTER
 	return
 
+LilycoveCity_ContestLobby_EventScript_SetSpecialContestType::
+	setvar VAR_CONTEST_TYPE, CONTEST_TYPE_NPC_SPECIAL
+	return
+
 @ Functionally unused
 LilycoveCity_ContestLobby_EventScript_SetDebug::
 	setflag FLAG_HIDE_LILYCOVE_MUSEUM_CURATOR
-#ifdef UBFIX
 	setvar VAR_LILYCOVE_MUSEUM_2F_STATE, 1
-#else
-	copyvar VAR_LILYCOVE_MUSEUM_2F_STATE, 1, warn=FALSE
-#endif
 	additem ITEM_CONTEST_PASS
 	setvar VAR_0x800B, 8
 	setvar VAR_CONTEST_RANK, CONTEST_RANK_MASTER

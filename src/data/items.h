@@ -12251,7 +12251,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_HAIL] =
+    [ITEM_TM_SNOWSCAPE] =
     {
         .name = ITEM_NAME("TM07"),
         .price = 3000,
@@ -12884,95 +12884,119 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM51] =
+    [ITEM_TM_CUT] =
     {
-        .name = ITEM_NAME("TM51"),
-        .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
-        .importance = I_REUSABLE_TMS,
+        .name = ITEM_NAME("HM01"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Attacks the foe\n"
+            "with sharp blades\n"
+            "or claws."),
+        .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM52] =
+    [ITEM_TM_FLY] =
     {
-        .name = ITEM_NAME("TM52"),
-        .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
-        .importance = I_REUSABLE_TMS,
+        .name = ITEM_NAME("HM02"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Flies up on the\n"
+            "first turn, then\n"
+            "attacks next turn."),
+        .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM53] =
+    [ITEM_TM_SURF] =
     {
-        .name = ITEM_NAME("TM53"),
-        .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
-        .importance = I_REUSABLE_TMS,
+        .name = ITEM_NAME("HM03"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Creates a huge\n"
+            "wave, then crashes\n"
+            "it down on the foe."),
+        .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM54] =
+    [ITEM_TM_STRENGTH] =
     {
-        .name = ITEM_NAME("TM54"),
-        .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
-        .importance = I_REUSABLE_TMS,
+        .name = ITEM_NAME("HM04"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Builds enormous\n"
+            "power, then slams\n"
+            "the foe."),
+        .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM55] =
+    [ITEM_TM_FLASH] =
     {
-        .name = ITEM_NAME("TM55"),
-        .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
-        .importance = I_REUSABLE_TMS,
+        .name = ITEM_NAME("HM05"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Looses a powerful\n"
+            "blast of light that\n"
+            "reduces accuracy."),
+        .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM56] =
+    [ITEM_TM_ROCK_SMASH] =
     {
-        .name = ITEM_NAME("TM56"),
-        .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
-        .importance = I_REUSABLE_TMS,
+        .name = ITEM_NAME("HM06"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A rock-crushingly\n"
+            "tough attack that\n"
+            "may lower Defense."),
+        .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM57] =
+    [ITEM_TM_WATERFALL] =
     {
-        .name = ITEM_NAME("TM57"),
-        .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
-        .importance = I_REUSABLE_TMS,
+        .name = ITEM_NAME("HM07"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Attacks the foe\n"
+            "with enough power\n"
+            "to climb waterfalls."),
+        .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM58] =
+    [ITEM_TM_DIVE] =
     {
-        .name = ITEM_NAME("TM58"),
-        .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
-        .importance = I_REUSABLE_TMS,
+        .name = ITEM_NAME("HM08"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Dives underwater\n"
+            "the 1st turn, then\n"
+            "attacks next turn."),
+        .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM59] =
+    [ITEM_TM059] =
     {
         .name = ITEM_NAME("TM59"),
         .price = 3000,
@@ -12983,7 +13007,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM60] =
+    [ITEM_TM060] =
     {
         .name = ITEM_NAME("TM60"),
         .price = 3000,
@@ -12994,7 +13018,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM61] =
+    [ITEM_TM061] =
     {
         .name = ITEM_NAME("TM61"),
         .price = 3000,
@@ -13005,7 +13029,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM62] =
+    [ITEM_TM062] =
     {
         .name = ITEM_NAME("TM62"),
         .price = 3000,
@@ -13016,7 +13040,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM63] =
+    [ITEM_TM063] =
     {
         .name = ITEM_NAME("TM63"),
         .price = 3000,
@@ -13027,7 +13051,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM64] =
+    [ITEM_TM064] =
     {
         .name = ITEM_NAME("TM64"),
         .price = 3000,
@@ -13038,7 +13062,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM65] =
+    [ITEM_TM065] =
     {
         .name = ITEM_NAME("TM65"),
         .price = 3000,
@@ -13049,7 +13073,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM66] =
+    [ITEM_TM066] =
     {
         .name = ITEM_NAME("TM66"),
         .price = 3000,
@@ -13060,7 +13084,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM67] =
+    [ITEM_TM067] =
     {
         .name = ITEM_NAME("TM67"),
         .price = 3000,
@@ -13071,7 +13095,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM68] =
+    [ITEM_TM068] =
     {
         .name = ITEM_NAME("TM68"),
         .price = 3000,
@@ -13082,7 +13106,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM69] =
+    [ITEM_TM069] =
     {
         .name = ITEM_NAME("TM69"),
         .price = 3000,
@@ -13093,7 +13117,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM70] =
+    [ITEM_TM070] =
     {
         .name = ITEM_NAME("TM70"),
         .price = 3000,
@@ -13104,7 +13128,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM71] =
+    [ITEM_TM071] =
     {
         .name = ITEM_NAME("TM71"),
         .price = 3000,
@@ -13115,7 +13139,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM72] =
+    [ITEM_TM072] =
     {
         .name = ITEM_NAME("TM72"),
         .price = 3000,
@@ -13126,7 +13150,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM73] =
+    [ITEM_TM073] =
     {
         .name = ITEM_NAME("TM73"),
         .price = 3000,
@@ -13137,7 +13161,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM74] =
+    [ITEM_TM074] =
     {
         .name = ITEM_NAME("TM74"),
         .price = 3000,
@@ -13148,7 +13172,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM75] =
+    [ITEM_TM075] =
     {
         .name = ITEM_NAME("TM75"),
         .price = 3000,
@@ -13159,7 +13183,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM76] =
+    [ITEM_TM076] =
     {
         .name = ITEM_NAME("TM76"),
         .price = 3000,
@@ -13170,7 +13194,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM77] =
+    [ITEM_TM077] =
     {
         .name = ITEM_NAME("TM77"),
         .price = 3000,
@@ -13181,7 +13205,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM78] =
+    [ITEM_TM078] =
     {
         .name = ITEM_NAME("TM78"),
         .price = 3000,
@@ -13192,7 +13216,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM79] =
+    [ITEM_TM079] =
     {
         .name = ITEM_NAME("TM79"),
         .price = 3000,
@@ -13203,7 +13227,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM80] =
+    [ITEM_TM080] =
     {
         .name = ITEM_NAME("TM80"),
         .price = 3000,
@@ -13214,7 +13238,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM81] =
+    [ITEM_TM081] =
     {
         .name = ITEM_NAME("TM81"),
         .price = 3000,
@@ -13225,7 +13249,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM82] =
+    [ITEM_TM082] =
     {
         .name = ITEM_NAME("TM82"),
         .price = 3000,
@@ -13236,7 +13260,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM83] =
+    [ITEM_TM083] =
     {
         .name = ITEM_NAME("TM83"),
         .price = 3000,
@@ -13247,7 +13271,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM84] =
+    [ITEM_TM084] =
     {
         .name = ITEM_NAME("TM84"),
         .price = 3000,
@@ -13258,7 +13282,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM85] =
+    [ITEM_TM085] =
     {
         .name = ITEM_NAME("TM85"),
         .price = 3000,
@@ -13269,7 +13293,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM86] =
+    [ITEM_TM086] =
     {
         .name = ITEM_NAME("TM86"),
         .price = 3000,
@@ -13280,7 +13304,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM87] =
+    [ITEM_TM087] =
     {
         .name = ITEM_NAME("TM87"),
         .price = 3000,
@@ -13291,7 +13315,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM88] =
+    [ITEM_TM088] =
     {
         .name = ITEM_NAME("TM88"),
         .price = 3000,
@@ -13302,7 +13326,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM89] =
+    [ITEM_TM089] =
     {
         .name = ITEM_NAME("TM89"),
         .price = 3000,
@@ -13313,7 +13337,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM90] =
+    [ITEM_TM090] =
     {
         .name = ITEM_NAME("TM90"),
         .price = 3000,
@@ -13324,7 +13348,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM91] =
+    [ITEM_TM091] =
     {
         .name = ITEM_NAME("TM91"),
         .price = 3000,
@@ -13335,7 +13359,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM92] =
+    [ITEM_TM092] =
     {
         .name = ITEM_NAME("TM92"),
         .price = 3000,
@@ -13346,7 +13370,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM93] =
+    [ITEM_TM093] =
     {
         .name = ITEM_NAME("TM93"),
         .price = 3000,
@@ -13357,7 +13381,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM94] =
+    [ITEM_TM094] =
     {
         .name = ITEM_NAME("TM94"),
         .price = 3000,
@@ -13368,7 +13392,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM95] =
+    [ITEM_TM095] =
     {
         .name = ITEM_NAME("TM95"),
         .price = 3000,
@@ -13379,7 +13403,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM96] =
+    [ITEM_TM096] =
     {
         .name = ITEM_NAME("TM96"),
         .price = 3000,
@@ -13390,7 +13414,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM97] =
+    [ITEM_TM097] =
     {
         .name = ITEM_NAME("TM97"),
         .price = 3000,
@@ -13401,7 +13425,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM98] =
+    [ITEM_TM098] =
     {
         .name = ITEM_NAME("TM98"),
         .price = 3000,
@@ -13412,7 +13436,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM99] =
+    [ITEM_TM099] =
     {
         .name = ITEM_NAME("TM99"),
         .price = 3000,
@@ -13433,119 +13457,6 @@ const struct ItemInfo gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
-
-    [ITEM_HM_CUT] =
-    {
-        .name = ITEM_NAME("HM01"),
-        .price = 0,
-        .description = COMPOUND_STRING(
-            "Attacks the foe\n"
-            "with sharp blades\n"
-            "or claws."),
-        .importance = 1,
-        .pocket = POCKET_TM_HM,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-    },
-
-    [ITEM_HM_FLY] =
-    {
-        .name = ITEM_NAME("HM02"),
-        .price = 0,
-        .description = COMPOUND_STRING(
-            "Flies up on the\n"
-            "first turn, then\n"
-            "attacks next turn."),
-        .importance = 1,
-        .pocket = POCKET_TM_HM,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-    },
-
-    [ITEM_HM_SURF] =
-    {
-        .name = ITEM_NAME("HM03"),
-        .price = 0,
-        .description = COMPOUND_STRING(
-            "Creates a huge\n"
-            "wave, then crashes\n"
-            "it down on the foe."),
-        .importance = 1,
-        .pocket = POCKET_TM_HM,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-    },
-
-    [ITEM_HM_STRENGTH] =
-    {
-        .name = ITEM_NAME("HM04"),
-        .price = 0,
-        .description = COMPOUND_STRING(
-            "Builds enormous\n"
-            "power, then slams\n"
-            "the foe."),
-        .importance = 1,
-        .pocket = POCKET_TM_HM,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-    },
-
-    [ITEM_HM_FLASH] =
-    {
-        .name = ITEM_NAME("HM05"),
-        .price = 0,
-        .description = COMPOUND_STRING(
-            "Looses a powerful\n"
-            "blast of light that\n"
-            "reduces accuracy."),
-        .importance = 1,
-        .pocket = POCKET_TM_HM,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-    },
-
-    [ITEM_HM_ROCK_SMASH] =
-    {
-        .name = ITEM_NAME("HM06"),
-        .price = 0,
-        .description = COMPOUND_STRING(
-            "A rock-crushingly\n"
-            "tough attack that\n"
-            "may lower Defense."),
-        .importance = 1,
-        .pocket = POCKET_TM_HM,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-    },
-
-    [ITEM_HM_WATERFALL] =
-    {
-        .name = ITEM_NAME("HM07"),
-        .price = 0,
-        .description = COMPOUND_STRING(
-            "Attacks the foe\n"
-            "with enough power\n"
-            "to climb waterfalls."),
-        .importance = 1,
-        .pocket = POCKET_TM_HM,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-    },
-
-    [ITEM_HM_DIVE] =
-    {
-        .name = ITEM_NAME("HM08"),
-        .price = 0,
-        .description = COMPOUND_STRING(
-            "Dives underwater\n"
-            "the 1st turn, then\n"
-            "attacks next turn."),
-        .importance = 1,
-        .pocket = POCKET_TM_HM,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-    },
-
 
 // Charms
 

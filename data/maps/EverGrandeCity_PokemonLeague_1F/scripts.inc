@@ -23,24 +23,19 @@ EverGrandeCity_PokemonLeague_1F_EventScript_Nurse::
 	end
 
 EverGrandeCity_PokemonLeague_1F_EventScript_Clerk::
-	lock
-	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
-	pokemart EverGrandeCity_PokemonLeague_1F_Pokemart
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
+	mart_clerk 0
+
+EverGrandeCity_PokemonLeague_1F_EventScript_ClerkMax::
+	mart_clerk EverGrandeCity_PokemonLeague_1F_Max
 
 	.align 2
-EverGrandeCity_PokemonLeague_1F_Pokemart:
+EverGrandeCity_PokemonLeague_1F_Max:
 	.2byte ITEM_ULTRA_BALL
-	.2byte ITEM_HYPER_POTION
-	.2byte ITEM_MAX_POTION
 	.2byte ITEM_FULL_RESTORE
-	.2byte ITEM_FULL_HEAL
-	.2byte ITEM_REVIVE
-	.2byte ITEM_MAX_REPEL
+	.2byte ITEM_MAX_REVIVE
+	.2byte ITEM_MAX_ELIXIR
+	.2byte ITEM_ABILITY_CAPSULE
+	.2byte ITEM_ABILITY_PATCH
 	pokemartlistend
 
 @ The door guards only check for FLAG_BADGE06_GET because Winonas badge is the only one that can be skipped

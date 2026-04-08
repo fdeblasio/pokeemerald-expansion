@@ -104,7 +104,7 @@
 #define VAR_DEWFORD_TOWN_STATE                           0x4052 // Unused Var
 #define VAR_LAVARIDGE_TOWN_STATE                         0x4053
 #define VAR_CURRENT_SECRET_BASE                          0x4054 // was probably allocated for VAR_FALLARBOR_TOWN_STATE at one point
-#define VAR_VERDANTURF_TOWN_STATE                        0x4055 // Unused Var
+#define VAR_VERDANTURF_TOWN_STATE                        0x4055
 #define VAR_PACIFIDLOG_TOWN_STATE                        0x4056 // Unused Var
 #define VAR_PETALBURG_CITY_STATE                         0x4057
 #define VAR_SLATEPORT_CITY_STATE                         0x4058
@@ -128,7 +128,7 @@
 #define VAR_ROUTE111_STATE                               0x406A // Unused Var
 #define VAR_ROUTE112_STATE                               0x406B // Unused Var
 #define VAR_ROUTE113_STATE                               0x406C // Unused Var
-#define VAR_ROUTE114_STATE                               0x406D // Unused Var
+#define VAR_ROUTE114_STATE                               0x406D
 #define VAR_ROUTE115_STATE                               0x406E // Unused Var
 #define VAR_ROUTE116_STATE                               0x406F
 #define VAR_ROUTE117_STATE                               0x4070 // Unused Var
@@ -238,7 +238,7 @@
 #define VAR_SOOTOPOLIS_WALLACE_STATE                     0x40D8
 #define VAR_HAS_TALKED_TO_SEAFLOOR_CAVERN_ENTRANCE_GRUNT 0x40D9
 #define VAR_REGISTER_BIRCH_STATE                         0x40DA
-#define VAR_UNUSED_0x40DB                                0x40DB // Unused Var
+#define VAR_POSTGAME_STARTERS_CHOSEN                     0x40DB
 #define VAR_UNUSED_0x40DC                                0x40DC // Unused Var
 #define VAR_GIFT_PICHU_SLOT                              0x40DD
 #define VAR_GIFT_UNUSED_1                                0x40DE // Var is written to, but never read

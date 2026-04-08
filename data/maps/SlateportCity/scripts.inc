@@ -125,18 +125,26 @@ SlateportCity_EventScript_EnergyGuru::
 
 	.align 2
 SlateportCity_Pokemart_EnergyGuru:
+	.2byte ITEM_HP_UP
 	.2byte ITEM_PROTEIN
 	.2byte ITEM_IRON
-	.2byte ITEM_CARBOS
-	.2byte ITEM_ZINC
 	.2byte ITEM_CALCIUM
-	.2byte ITEM_HP_UP
+	.2byte ITEM_ZINC
+	.2byte ITEM_CARBOS
+	.2byte ITEM_X_ATTACK
+	.2byte ITEM_X_DEFENSE
+	.2byte ITEM_X_SP_ATK
+	.2byte ITEM_X_SP_DEF
+	.2byte ITEM_X_SPEED
+	.2byte ITEM_X_ACCURACY
+	.2byte ITEM_DIRE_HIT
+	.2byte ITEM_GUARD_SPEC
 	pokemartlistend
 
 SlateportCity_EventScript_EffortRibbonWoman::
 	lock
 	faceplayer
-	bufferleadmonspeciesname STR_VAR_1
+	bufferpartymonnick STR_VAR_1 0
 	msgbox SlateportCity_Text_OhYourPokemon, MSGBOX_DEFAULT
 	specialvar VAR_RESULT, LeadMonHasEffortRibbon
 	call_if_eq VAR_RESULT, TRUE, SlateportCity_EventScript_MonHasEffortRibbon
@@ -525,21 +533,8 @@ SlateportCity_PokemartDecor:
 	.2byte DECOR_C_HIGH_NOTE_MAT
 	pokemartlistend
 
-SlateportCity_EventScript_PowerTMClerk::
-	lock
-	faceplayer
-	message gText_HowMayIServeYou
-	waitmessage
-	pokemart SlateportCity_Pokemart_PowerTMs
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
-
-	.align 2
-SlateportCity_Pokemart_PowerTMs:
-	.2byte ITEM_TM_HIDDEN_POWER
-	.2byte ITEM_TM_SECRET_POWER
-	pokemartlistend
+SlateportCity_EventScript_TMClerk::
+	mart_clerk SlateportCity_Market_TMs
 
 @ Scene with Capt Sterns interview and Team Aqua announcing plans to steal Submarine
 SlateportCity_EventScript_CaptStern::
@@ -708,7 +703,7 @@ SlateportCity_EventScript_BerryPowderClerk::
 	faceplayer
 	goto_if_set FLAG_RECEIVED_POWDER_JAR, SlateportCity_EventScript_ReceivedPowderJar
 	msgbox SlateportCity_Text_ExplainBerries, MSGBOX_DEFAULT
-	giveitem ITEM_POWDER_JAR
+	giveitem ITEM_CATCHING_CHARM
 	setflag FLAG_RECEIVED_POWDER_JAR
 	msgbox SlateportCity_Text_ExplainBerryPowder, MSGBOX_DEFAULT
 	release
@@ -739,13 +734,13 @@ SlateportCity_EventScript_ChooseBerryPowderItem::
 	case 1, SlateportCity_EventScript_EnergyRoot
 	case 2, SlateportCity_EventScript_HealPowder
 	case 3, SlateportCity_EventScript_RevivalHerb
-	case 4, SlateportCity_EventScript_Protein
-	case 5, SlateportCity_EventScript_Iron
-	case 6, SlateportCity_EventScript_Carbos
-	case 7, SlateportCity_EventScript_Calcium
-	case 8, SlateportCity_EventScript_Zinc
-	case 9, SlateportCity_EventScript_HPUp
-	case 10, SlateportCity_EventScript_PPUp
+	case 4, SlateportCity_EventScript_HPUp
+	case 5, SlateportCity_EventScript_Protein
+	case 6, SlateportCity_EventScript_Iron
+	case 7, SlateportCity_EventScript_Carbos
+	case 8, SlateportCity_EventScript_Calcium
+	case 9, SlateportCity_EventScript_Zinc
+	case 10, SlateportCity_EventScript_RareCandy
 	case 11, SlateportCity_EventScript_CancelPowderItemSelect
 	case MULTI_B_PRESSED, SlateportCity_EventScript_CancelPowderItemSelect
 	end
@@ -820,9 +815,9 @@ SlateportCity_EventScript_HPUp::
 	goto SlateportCity_EventScript_TryBuyBerryPowderItem
 	end
 
-SlateportCity_EventScript_PPUp::
-	bufferitemname STR_VAR_1, ITEM_PP_UP
-	setvar VAR_0x8008, ITEM_PP_UP
+SlateportCity_EventScript_RareCandy::
+	bufferitemname STR_VAR_1, ITEM_RARE_CANDY
+	setvar VAR_0x8008, ITEM_RARE_CANDY
 	setvar VAR_0x8009, 3000
 	goto SlateportCity_EventScript_TryBuyBerryPowderItem
 	end
@@ -928,7 +923,7 @@ SlateportCity_Text_OhYourPokemon:
 	.string "Your {STR_VAR_1}…$"
 
 SlateportCity_Text_PleaseGiveItThisEffortRibbon:
-	.string "Went for it stupendously!\p"
+	.string "…went for it stupendously!\p"
 	.string "As its reward, please give it this\n"
 	.string "Effort Ribbon.$"
 
@@ -940,8 +935,8 @@ SlateportCity_Text_PutEffortRibbonOnMon:
 	.string "on {STR_VAR_1}.$"
 
 SlateportCity_Text_GoForItLittleHarder:
-	.string "You have to go for it a little harder.\p"
-	.string "If you do, I'll give your Pokémon\n"
+	.string "…will have to go for it a little harder.\p"
+	.string "If it does, I'll give {STR_VAR_1}\n"
 	.string "something nice.$"
 
 SlateportCity_Text_EffortRibbonLooksGoodOnIt:
@@ -1256,27 +1251,13 @@ SlateportCity_Text_ExplainBerries:
 	.string "If a wild Pokémon gets hurt, it heals\n"
 	.string "itself by chewing on Berries.\p"
 	.string "Did you know that?\p"
-	.string "Somebody saw that and got the idea\n"
-	.string "of making medicine from Berries.\p"
-	.string "Did you know that?\p"
-	.string "To turn Berries into medicine,\n"
-	.string "they must be crushed into powder.\p"
-	.string "Did you know that?\p"
 	.string "You seem to have an interest\n"
-	.string "in Berries!\p"
+	.string "in Pokémon!\p"
 	.string "I've got something good for someone\n"
 	.string "like you.$"
 
 SlateportCity_Text_ExplainBerryPowder:
-	.string "I recently had machines installed at\n"
-	.string "Pokémon Centers for crushing Berries.\p"
-	.string "The Berry Crush machines are at\n"
-	.string "the Direct Corner upstairs.\p"
-	.string "Did you know?\p"
-	.string "Could you make Berry Powder for\n"
-	.string "me using those machines?\p"
-	.string "I can make you all sorts of medicine\n"
-	.string "if you bring me lots of Berry Powder.$"
+	.string "Some Pokémon hold berries!$"
 
 SlateportCity_Text_BroughtMeSomeBerryPowder:
 	.string "Have you brought me some\n"

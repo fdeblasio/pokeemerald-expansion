@@ -15,7 +15,6 @@ RustboroCity_Gym_EventScript_RoxanneDefeated::
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
 	msgbox RustboroCity_Gym_Text_StoneBadgeInfoTakeThis, MSGBOX_DEFAULT
-	setflag FLAG_DEFEATED_RUSTBORO_GYM
 	setflag FLAG_BADGE01_GET
 	setvar VAR_RUSTBORO_CITY_STATE, 1
 	addvar VAR_PETALBURG_GYM_STATE, 1
@@ -49,14 +48,14 @@ RustboroCity_Gym_EventScript_Tommy::
 	end
 
 RustboroCity_Gym_EventScript_Marcia::
-	trainerbattle_single TRAINER_MARCIA, RustboroCity_Gym_Text_MarcIntro, RustboroCity_Gym_Text_MarcDefeat
-	msgbox RustboroCity_Gym_Text_MarcPostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_MARCIA, RustboroCity_Gym_Text_MarciaIntro, RustboroCity_Gym_Text_MarciaDefeat
+	msgbox RustboroCity_Gym_Text_MarciaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 RustboroCity_Gym_EventScript_GymGuide::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_RUSTBORO_GYM, RustboroCity_Gym_EventScript_GymGuidePostVictory
+	goto_if_set FLAG_BADGE01_GET, RustboroCity_Gym_EventScript_GymGuidePostVictory
 	msgbox RustboroCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
 	release
 	end
@@ -160,17 +159,17 @@ RustboroCity_Gym_Text_TommyPostBattle:
 	.string "several times.\p"
 	.string "You'd better be on your guard!$"
 
-RustboroCity_Gym_Text_MarcIntro:
+RustboroCity_Gym_Text_MarciaIntro:
 	.string "We might be in the middle of town,\n"
 	.string "but so what?\p"
 	.string "My Rock Pokémon need room to\n"
 	.string "rampage!$"
 
-RustboroCity_Gym_Text_MarcDefeat:
+RustboroCity_Gym_Text_MarciaDefeat:
 	.string "Oh, man oh man!\n"
 	.string "Our challenger is one feisty customer!$"
 
-RustboroCity_Gym_Text_MarcPostBattle:
+RustboroCity_Gym_Text_MarciaPostBattle:
 	.string "I have to hand it to our Leader.\p"
 	.string "It took smarts and sense for her to\n"
 	.string "pick the Rock type at her young age.$"
@@ -203,8 +202,6 @@ RustboroCity_Gym_Text_ReceivedStoneBadge:
 RustboroCity_Gym_Text_StoneBadgeInfoTakeThis:
 	.string "The Stone Badge heightens the Attack\n"
 	.string "power of your Pokémon.\p"
-	.string "It also enables them to use the HM move\n"
-	.string "Cut outside of battle.\p"
 	.string "Please take this with you, too.$"
 
 RustboroCity_Gym_Text_ExplainRockTomb:
@@ -213,9 +210,7 @@ RustboroCity_Gym_Text_ExplainRockTomb:
 	.string "It not only inflicts damage by dropping\n"
 	.string "rocks, it also lowers Speed.\p"
 	.string "If you use a TM, it instantly teaches\n"
-	.string "the move to a Pokémon.\p"
-	.string "Remember, a TM can be used only once,\n"
-	.string "so think before you use it.$"
+	.string "the move to a Pokémon.$"
 
 RustboroCity_Gym_Text_RoxannePostBattle:
 	.string "Since you are so strong, you should\n"

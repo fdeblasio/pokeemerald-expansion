@@ -47,7 +47,6 @@ const struct TmHmIndexKey gTMHMItemMoveIds[NUM_ALL_MACHINES + 1] =
 {
     [0] = { ITEM_NONE, MOVE_NONE }, // Failsafe
     FOREACH_TM(UNPACK_TM_ITEM_ID)
-    FOREACH_HM(UNPACK_HM_ITEM_ID)
     /*
      * Expands to the following:
      *

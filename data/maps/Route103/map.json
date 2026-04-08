@@ -53,7 +53,7 @@
       "flag": "FLAG_HIDE_ROUTE_103_RIVAL"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
+      "graphics_id": "OBJ_EVENT_GFX_AROMA_LADY",
       "x": 71,
       "y": 11,
       "elevation": 3,
@@ -196,32 +196,6 @@
       "flag": "FLAG_ITEM_ROUTE_103_GUARD_SPEC"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
-      "x": 67,
-      "y": 7,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_CutTree",
-      "flag": "FLAG_TEMP_12"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
-      "x": 72,
-      "y": 8,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_CutTree",
-      "flag": "FLAG_TEMP_13"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
       "x": 67,
       "y": 5,
@@ -235,7 +209,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
+      "graphics_id": "OBJ_EVENT_GFX_GUITARIST",
       "x": 67,
       "y": 9,
       "elevation": 3,
@@ -282,9 +256,9 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_PP_UP",
+      "trainer_sight_or_berry_tree_id": "ITEM_EXP_CANDY_S",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_103_PP_UP"
+      "flag": "FLAG_ITEM_ROUTE_103_EXP_CANDY_S"
     }
   ],
   "warp_events": [

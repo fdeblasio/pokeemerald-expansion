@@ -6,7 +6,7 @@ RustboroCity_House3_EventScript_OldMan::
 	end
 
 RustboroCity_House3_EventScript_OldWoman::
-	msgbox RustboroCity_House3_Text_NamingPikachuPekachu, MSGBOX_NPC
+	bufferspeciestext SPECIES_RUSTBORO_PEKACHU, RustboroCity_House3_Text_NamingPikachuPekachu, MSGBOX_NPC
 	end
 
 @ Misspelling on purpose, see nickname
@@ -14,7 +14,7 @@ RustboroCity_House3_EventScript_Pekachu::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_PIKACHU, CRY_MODE_NORMAL
+	overworldspecies SPECIES_RUSTBORO_PEKACHU
 	msgbox RustboroCity_House3_Text_Pekachu, MSGBOX_DEFAULT
 	waitmoncry
 	release
@@ -28,7 +28,7 @@ RustboroCity_House3_Text_IGivePerfectlySuitedNicknames:
 
 RustboroCity_House3_Text_NamingPikachuPekachu:
 	.string "But giving the name Pekachu to\n"
-	.string "a Pikachu? It seems pointless.\p"
+	.string "a {STR_VAR_1}? It seems pointless.\p"
 	.string "I suppose it is good to use a name\n"
 	.string "that's easy to understand, but…$"
 

@@ -4370,7 +4370,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, enum Item item, u8 partyIndex, 
 bool8 HealStatusConditions(struct Pokemon *mon, u32 healMask, enum BattlerId battler)
 {
     u32 status = GetMonData(mon, MON_DATA_STATUS, 0);
-    
+
     PREPARE_MON_NICK_BUFFER(gBattleTextBuff1, battler, gBattlerPartyIndexes[battler]);
 
     if (status & healMask)
@@ -5866,7 +5866,7 @@ const u16 *GetMonSpritePalFromSpeciesIsEgg(enum Species species, bool32 isShiny,
 
 bool32 IsMoveHM(enum Move move)
 {
-    return FALSE FOREACH_HM(OR_MOVE_IS_HM);
+    return FALSE;
 }
 
 #undef OR_MOVE_IS_HM
@@ -6906,7 +6906,7 @@ bool32 SpeciesHasGenderDifferences(enum Species species)
 static struct PartyState *GetBattlerPartyStateByPokemon(struct Pokemon *partyMon, enum BattleTrainer trainer)
 {
     struct Pokemon *party = GetTrainerParty(trainer);
-    
+
     for (int i = 0; i < PARTY_SIZE; i++)
     {
         struct Pokemon *mon = &party[i];

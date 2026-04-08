@@ -6,9 +6,9 @@ Route16_House_EventScript_Woman::
 	faceplayer
 	goto_if_set FLAG_GOT_HM02, Route16_House_EventScript_AlreadyGotHM02
 	msgbox Route16_House_Text_FoundMySecretRetreat
-	checkitemspace ITEM_HM02
+	checkitemspace ITEM_TM052
 	goto_if_eq VAR_RESULT, FALSE, Route16_House_EventScript_NoRoomForHM02
-	giveitem_msg Route16_House_Text_ReceivedHM02FromGirl, ITEM_HM02
+	giveitem_msg Route16_House_Text_ReceivedHM02FromGirl, ITEM_TM052
 	msgbox Route16_House_Text_ExplainHM02
 	setflag FLAG_GOT_HM02
 	release
@@ -28,8 +28,8 @@ Route16_House_EventScript_Fearow::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_FEAROW, CRY_MODE_NORMAL
-	msgbox Route16_House_Text_Fearow
+	overworldspecies SPECIES_FEAROW
+	bufferspeciestext SPECIES_FEAROW, Route16_House_Text_Fearow
 	waitmoncry
 	release
 	end
@@ -53,5 +53,5 @@ Route16_House_Text_DontHaveAnyRoomForThis::
 	.string "You don't have any room for this.$"
 
 Route16_House_Text_Fearow::
-	.string "Fearow: Kyueen!$"
+	.string "{STR_VAR_1}: Kyueen!$"
 

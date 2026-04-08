@@ -74,8 +74,8 @@ SevenIsland_SevaultCanyon_House_EventScript_Chansey::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_CHANSEY, CRY_MODE_NORMAL
-	msgbox SevenIsland_SevaultCanyon_House_Text_Chansey
+	overworldspecies SPECIES_CHANSEY
+	bufferspeciestext SPECIES_CHANSEY, SevenIsland_SevaultCanyon_House_Text_Chansey
 	waitmoncry
 	release
 	end
@@ -101,4 +101,4 @@ SevenIsland_SevaultCanyon_House_Text_YoureAllChipperNow::
 	.string "Lucky!$"
 
 SevenIsland_SevaultCanyon_House_Text_Chansey::
-	.string "Chansey: Chansi! Chansi!$"
+	.string "{STR_VAR_1}: Chansi! Chansi!$"

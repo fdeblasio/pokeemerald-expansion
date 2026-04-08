@@ -45,7 +45,7 @@
 #define TEMP_FLAGS_END   FLAG_TEMP_1F
 #define NUM_TEMP_FLAGS   (TEMP_FLAGS_END - TEMP_FLAGS_START + 1)
 
-#define FLAG_EXP_SHARE       0x20
+#define FLAG_EXP_SHARE       0x20 // Unused Flag
 #define FLAG_UNUSED_0x021    0x21 // Unused Flag
 #define FLAG_UNUSED_0x022    0x22 // Unused Flag
 #define FLAG_UNUSED_0x023    0x23 // Unused Flag
@@ -296,8 +296,8 @@
 #define FLAG_RECEIVED_REVIVED_FOSSIL_MON     0x10A
 #define FLAG_SECRET_BASE_REGISTRY_ENABLED    0x10B
 #define FLAG_RECEIVED_TM_THIEF               0x10C
-#define FLAG_CONTEST_SKETCH_CREATED          0x10D  // Set but never read
-#define FLAG_EVIL_TEAM_ESCAPED_STERN_SPOKE   0x10E
+#define FLAG_CONTEST_SKETCH_CREATED          0x10D
+#define FLAG_EVIL_TEAM_ESCAPED_STERN_SPOKE   0x10E  // Set but never read
 #define FLAG_RECEIVED_EXP_SHARE              0x10F
 #define FLAG_POKERUS_EXPLAINED               0x110
 #define FLAG_RECEIVED_RUNNING_SHOES          0x111
@@ -333,19 +333,18 @@
 #define FLAG_ADDED_MATCH_CALL_TO_POKENAV     0x12F
 #define FLAG_REGISTERED_STEVEN_POKENAV       0x130
 #define FLAG_ENABLE_NORMAN_MATCH_CALL        0x131
-#define FLAG_STEVEN_GUIDES_TO_CAVE_OF_ORIGIN 0x132 // Set after you follow Steven to the entrance of the Cave of Origin.
-#define FLAG_MET_ARCHIE_SOOTOPOLIS           0x133
+#define FLAG_STEVEN_GUIDES_TO_CAVE_OF_ORIGIN 0x132
+#define FLAG_MET_ARCHIE_SOOTOPOLIS           0x133 // Set after you follow Steven to the entrance of the Cave of Origin.
 #define FLAG_MET_MAXIE_SOOTOPOLIS            0x134
 #define FLAG_MET_SCOTT_RUSTBORO              0x135
-#define FLAG_WALLACE_GOES_TO_SKY_PILLAR      0x136 // Set after speaking to Wallace within the Cave of Origin.
-#define FLAG_RECEIVED_TM_WATERFALL           0x137
+#define FLAG_WALLACE_GOES_TO_SKY_PILLAR      0x136
+#define FLAG_RECEIVED_TM_WATERFALL           0x137 // Set after speaking to Wallace within the Cave of Origin.
 #define FLAG_BEAT_MAGMA_GRUNT_JAGGED_PASS    0x138
 #define FLAG_RECEIVED_AURORA_TICKET          0x139
 #define FLAG_RECEIVED_MYSTIC_TICKET          0x13A
 #define FLAG_RECEIVED_OLD_SEA_MAP            0x13B
 
 #define FLAG_UNUSED_0x013C                   0x13C // Unused Flag
-
 #define FLAG_WONDER_CARD_UNUSED_1            0x13D // These Wonder Card flags are referenced but never set
 #define FLAG_WONDER_CARD_UNUSED_2            0x13E
 #define FLAG_WONDER_CARD_UNUSED_3            0x13F
@@ -880,13 +879,13 @@
 #define FLAG_HIDE_ROUTE_128_STEVEN                                  0x342
 #define FLAG_HIDE_SLATEPORT_CITY_GABBY_AND_TY                       0x343
 #define FLAG_HIDE_BATTLE_FRONTIER_RECEPTION_GATE_SCOTT              0x344
-#define FLAG_HIDE_ROUTE_110_BIRCH                                   0x345 // Set but not used?
+#define FLAG_HIDE_ROUTE_110_BIRCH                                   0x345 // ???
 #define FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_POKEBALL_CHIKORITA     0x346
 #define FLAG_HIDE_SOOTOPOLIS_CITY_MAN_1                             0x347
 #define FLAG_HIDE_SLATEPORT_CITY_CAPTAIN_STERN                      0x348
 #define FLAG_HIDE_SLATEPORT_CITY_HARBOR_CAPTAIN_STERN               0x349
 #define FLAG_HIDE_BATTLE_FRONTIER_SUDOWOODO                         0x34A
-#define FLAG_HIDE_ROUTE_111_ROCK_SMASH_TIP_GUY                      0x34B // Unused
+#define FLAG_HIDE_MAUVILLE_ROCK_SMASH_TIP_GUY                       0x34B // Unused
 #define FLAG_HIDE_RUSTBORO_CITY_SCIENTIST                           0x34C
 #define FLAG_HIDE_SLATEPORT_CITY_HARBOR_AQUA_GRUNT                  0x34D
 #define FLAG_HIDE_SLATEPORT_CITY_HARBOR_ARCHIE                      0x34E
@@ -954,7 +953,7 @@
 #define FLAG_HIDE_LILYCOVE_HARBOR_FERRY_ATTENDANT                   0x38C
 #define FLAG_HIDE_LILYCOVE_HARBOR_FERRY_SAILOR                      0x38D
 #define FLAG_HIDE_SOUTHERN_ISLAND_EON_STONE                         0x38E
-#define FLAG_UNUSED_0x38F                                           0x38F
+#define FLAG_HIDE_SOUTHERN_ISLAND_UNCHOSEN_EON_DUO_MON              0x38F // Set, however has no purpose.
 #define FLAG_HIDE_MAUVILLE_CITY_WATTSON                             0x390
 #define FLAG_HIDE_MAUVILLE_GYM_WATTSON                              0x391
 #define FLAG_HIDE_ROUTE_121_TEAM_AQUA_GRUNTS                        0x392
@@ -1229,7 +1228,6 @@
 #define FLAG_HIDE_REGIDRAGO                                         0x49B
 #define FLAG_DEFEATED_REGIGIGAS                                     0x49C
 #define FLAG_HIDE_REGIGIGAS                                         0x49D
-
 #define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
 #define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
 #define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag

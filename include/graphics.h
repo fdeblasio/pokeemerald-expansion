@@ -3258,7 +3258,6 @@ extern const u16 gPokedexAreaScreenAreaUnknown_Pal[];
 extern const u32 gStorageSystemMenu_Gfx[];
 extern const u16 gStorageSystemPartyMenu_Pal[];
 extern const u32 gStorageSystemPartyMenu_Tilemap[];
-
 // Cable Car
 extern const u32 gCableCarBg_Gfx[];
 extern const u16 gCableCarBg_Pal[];

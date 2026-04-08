@@ -57,16 +57,6 @@ const u8 gNotDoneYetDescription[] = _(
         .chance = Chance,                     \
     })
 
-#define EFFECT_30_POWER_INFO(Effect)          \
-    BASIC_MOVE,                               \
-    .power = 30,                              \
-    .pp = 35,                                 \
-    .additionalEffects = ADDITIONAL_EFFECTS({ \
-        .moveEffect = Effect,                 \
-        .chance = 30,                         \
-    })
-
-// 35
 #define TRAPPING_MOVE(Move)                               \
     .effect = EFFECT_HIT,                                 \
     .target = TARGET_SELECTED,                            \
@@ -159,31 +149,6 @@ const u8 gNotDoneYetDescription[] = _(
     .target = TARGET_SELECTED
 
 // 35
-#define TRAPPING_35_POWER_MOVE(Move)                     \
-    TRAPPING_MOVE(Move),                                 \
-    .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 35 : 15,     \
-    .accuracy = B_UPDATED_MOVE_DATA >= GEN_5 ? 100 : 70, \
-    .pp = 20
-
-// 40
-#define BASIC_40_POWER_INFO \
-    BASIC_MOVE,             \
-    .power = 40,            \
-    .pp = 40,               \
-    .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING
-
-#define EFFECT_40_POWER_INFO(Effect)          \
-    EFFECT_MOVE_INFO(Effect, 10),             \
-    .power = 40,                              \
-    .pp = 30,                                 \
-    .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING
-
-#define EFFECT_30_POWER_INFO(Effect)          \
-    BASIC_MOVE,                               \
-    .power = 30,                              \
-    .pp = 35,                                 \
-    .target = TARGET_SELECTED
-
 #define TRAPPING_35_POWER_MOVE(Move)                     \
     TRAPPING_MOVE(Move),                                 \
     .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 35 : 15,     \
@@ -474,34 +439,6 @@ const u8 gNotDoneYetDescription[] = _(
     .contestEffect = CONTEST_EFFECT_BETTER_IF_FIRST, \
     .validApprenticeMove = TRUE
 
-#define EFFECT_70_POWER_INFO(Effect)          \
-    EFFECT_MOVE_INFO(Effect, 30),             \
-    .power = 70,                              \
-    .pp = 15,                                 \
-    .target = TARGET_SELECTED,                \
-    .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_HIGHLY_APPEALING : CONTEST_EFFECT_STARTLE_PREV_MON
-
-#define DOUBLE_AND_REMOVE_ON_STATUS_70_POWER(Status) \
-    .effect = EFFECT_DOUBLE_POWER_ON_ARG_STATUS,     \
-    .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 70 : 60, \
-    .accuracy = 100,                                 \
-    .pp = 10,                                        \
-    .target = TARGET_SELECTED,                       \
-    .priority = 0,                                   \
-    .argument = { .status = Status },                \
-    .additionalEffects = ADDITIONAL_EFFECTS({        \
-        .moveEffect = MOVE_EFFECT_REMOVE_STATUS,     \
-    }),                                              \
-    .validApprenticeMove = TRUE
-
-#define ALWAYS_HIT_70_POWER_INFO                     \
-    ALWAYS_HIT_INFO,                                 \
-    .power = 70,                                     \
-    .pp = 10,                                        \
-    .target = TARGET_SELECTED,                       \
-    .contestEffect = CONTEST_EFFECT_BETTER_IF_FIRST, \
-    .validApprenticeMove = TRUE
-
 #define ESCAPE_70_POWER_INFO     \
     .effect = EFFECT_HIT_ESCAPE, \
     .power = 70,                 \
@@ -698,32 +635,6 @@ const u8 gNotDoneYetDescription[] = _(
     .target = TARGET_SELECTED,                         \
     .contestEffect = CONTEST_EFFECT_WORSEN_CONDITION_OF_PREV_MONS
 
-#define TARGETS_BOTH_90_POWER_INFO                     \
-    .effect = EFFECT_HIT,                              \
-    .power = 90,                                       \
-    .accuracy = 100,                                   \
-    .pp = 15,                                          \
-    .target = TARGET_BOTH,                             \
-    .priority = 0,                                     \
-    .contestEffect = CONTEST_EFFECT_STARTLE_PREV_MONS, \
-    .validApprenticeMove = TRUE
-
-#define HIGH_CRITICAL_90_POWER_INFO                  \
-    HIGH_CRITICAL_INFO,                              \
-    .power = B_UPDATED_MOVE_DATA >= GEN_4 ? 90 : 70, \
-    .accuracy = 100,                                 \
-    .pp = 15,                                        \
-    .target = TARGET_SELECTED,                       \
-    .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_REPETITION_NOT_BORING : CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL, \
-    .validApprenticeMove = TRUE
-
-#define PREVENT_ESCAPE_90_POWER_INFO                   \
-    EFFECT_MOVE_INFO(MOVE_EFFECT_PREVENT_ESCAPE, 100), \
-    .power = 90,                                       \
-    .pp = 20,                                          \
-    .target = TARGET_SELECTED,                         \
-    .contestEffect = CONTEST_EFFECT_WORSEN_CONDITION_OF_PREV_MONS
-
 // 100
 #define BASIC_100_POWER_INFO                          \
     BASIC_MOVE,                                       \
@@ -869,13 +780,6 @@ const u8 gNotDoneYetDescription[] = _(
     .pp = 10,                           \
     .target = TARGET_SELECTED,          \
     .priority = 0,                      \
-    .validApprenticeMove = TRUE
-
-#define RECOIL_120_POWER_INFO \
-    RECOIL_INFO(33),          \
-    .power = 120,             \
-    .accuracy = 100,          \
-    .pp = 15,                 \
     .validApprenticeMove = TRUE
 
 #define RECOIL_120_POWER_INFO \

@@ -242,10 +242,8 @@ static bool32 TryCalculateWallpaper(u16 *backgroundClr, u16 *foregroundClr, u8 *
     u8 charsByTableId[WALDA_PHRASE_LENGTH];
     u16 *ptr;
 
-    if (StringLength(phrase) == WALDA_SIMPLE_LENGTH)
-        return TryCalculateWallpaperSimple(backgroundClr, foregroundClr, iconId, patternId, phrase);
     // Reject any phrase that does not use the full length
-    else if (StringLength(phrase) != WALDA_PHRASE_LENGTH)
+    if (StringLength(phrase) != WALDA_PHRASE_LENGTH)
         return FALSE;
 
     // Reject any phrase that uses characters not in sWaldaLettersTable, sWaldaLettersTable2, or sWaldaLettersTable3

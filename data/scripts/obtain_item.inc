@@ -31,6 +31,7 @@ EventScript_BufferItemsPocket::
 	call_if_eq VAR_0x8007, TRUE, EventScript_PlayFanfareObtainedItem
 	return
 
+
 EventScript_BufferMedicinePocket::
 	bufferstdstring STR_VAR_3, STDSTRING_MEDICINE
 	call_if_eq VAR_0x8007, TRUE, EventScript_PlayFanfareObtainedItem
@@ -257,7 +258,6 @@ Std_PutItemAway::
 EventScript_BufferPutAwayPocketName::
 	switch VAR_RESULT
 	case POCKET_ITEMS,       EventScript_BufferPutAwayPocketItems
-	case POCKET_MEDICINE,    EventScript_BufferMedicinePocket
 	case POCKET_KEY_ITEMS,   EventScript_BufferPutAwayPocketKeyItems
 	case POCKET_POKE_BALLS,  EventScript_BufferPutAwayPocketPokeBalls
 	case POCKET_TM,     EventScript_BufferPutAwayPocketTMCase

@@ -1372,7 +1372,7 @@ static void Task_TradeEvolutionScene(u8 taskId)
                 if (gTasks[taskId].tPartyId == PC_MON_CHOSEN)
                 {
                     ShowSelectMovePokemonSummaryScreen(
-                                gParties[B_TRAINER_1],
+                                gParties[B_TRAINER_1], 
                                 TRADEMON_FROM_PC,
                                 CB2_TradeEvolutionSceneLoadGraphics,
                                 gMoveToLearn
@@ -1381,7 +1381,7 @@ static void Task_TradeEvolutionScene(u8 taskId)
                 else
                 {
                     ShowSelectMovePokemonSummaryScreen(
-                                gParties[B_TRAINER_0],
+                                gParties[B_TRAINER_0], 
                                 gTasks[taskId].tPartyId,
                                 CB2_TradeEvolutionSceneLoadGraphics,
                                 gMoveToLearn

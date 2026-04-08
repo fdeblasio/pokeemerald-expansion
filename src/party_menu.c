@@ -4344,21 +4344,6 @@ bool32 SetUpFieldMove_RockClimb(void)
 
 void CB2_ReturnToPartyMenuFromFlyMap(void)
 {
-    s16 x, y;
-
-    GetXYCoordsOneStepInFrontOfPlayer(&x, &y);
-    if (MetatileBehavior_IsRockClimbable(MapGridGetMetatileBehaviorAt(x, y)))
-    {
-        gFieldCallback2 = FieldCallback_PrepareFadeInFromMenu;
-        gPostMenuFieldCallback = FieldCallback_RockClimb;
-        return TRUE;
-    }
-
-    return FALSE;
-}
-
-void CB2_ReturnToPartyMenuFromFlyMap(void)
-{
     InitPartyMenu(PARTY_MENU_TYPE_FIELD, PARTY_LAYOUT_SINGLE, PARTY_ACTION_CHOOSE_MON, TRUE, PARTY_MSG_CHOOSE_MON, Task_HandleChooseMonInput, CB2_ReturnToFieldWithOpenMenu);
 }
 

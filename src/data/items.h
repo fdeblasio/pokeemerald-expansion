@@ -1378,8 +1378,6 @@ const struct ItemInfo gItemsInfo[] =
     .flingPower = 10,                        \
     .iconPic = gItemIcon_Mint
 
-#define MINT_PRICE (I_PRICE >= GEN_9) ? 2000 : 20
-
     [ITEM_LONELY_MINT] =
     {
         .name = ITEM_NAME("Lonely Mint"),

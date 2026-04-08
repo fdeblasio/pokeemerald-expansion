@@ -113,7 +113,6 @@
 - Added Burial Ground, Volcano, and Ice battle environments from later generations (effects Secret Power and Nature Power)
 
 ### Items:
-- No longer able to select "Use" on items that can't be used from the bag
 - Eviolite now prevents Pokémon from evolving
 - Buffs to healing items:
     - Hyper Potion: 120->200
@@ -127,13 +126,6 @@
 - Sacred Ash now works in battles although it only revives one Pokémon
 - Soul Dew uses its Gen 6 effect
 - Lucky Egg now gives double EXP
-
-### Battle Frontier:
-- Pokémon in the Battle Frontier/Trainer Hill now register in the Pokédex
-- Frontier Brains have updated teams
-- Battle Pyramid wild Pokémon have been updated
-- Battle Frontier no longer requires saving
-- The old man in the Battle Frontier (in the building above the Pokémon Center) who used to tell you your Pokémon's IVs now Hyper Trains stats for free
 
 ### Battle Frontier:
 - Pokémon in the Battle Frontier/Trainer Hill now register in the Pokédex
@@ -539,78 +531,6 @@
 - Scary Face
 - Take Down
 
-#### Move Relearner:
-- Acid Spray
-- Agility
-- Air Cutter
-- Alluring Voice
-- Amnesia
-- Avalanche
-- Baton Pass
-- Blast Burn
-- Brave Bird
-- Breaking Swipe
-- Bug Bite
-- Bulldoze
-- Burning Jealousy
-- Charge
-- Charge Beam
-- Charm
-- Chilling Water
-- Close Combat
-- Coaching
-- Confuse Ray
-- Curse
-- Draco Meteor
-- Dragon Cheer
-- Dragon Tail
-- Draining Kiss
-- Eerie Impulse
-- Electro Ball
-- Electroweb
-- Encore
-- Endeavor
-- Fake Tears
-- Feather Dance
-- Fire Fang
-- Fire Pledge
-- Fire Spin
-- Flame Charge
-- Flare Blitz
-- Fling
-- Flip Turn
-- Foul Play
-- Frenzy Plant
-- Future Sight
-- Grass Pledge
-- Gravity
-- Gunk Shot
-- Gyro Ball
-- Hard Press
-- Haze
-- Heat Crash
-- Heat Wave
-- Heavy Slam
-- Helping Hand
-- Hex
-- Hurricane
-- Hydro Cannon
-- Hydro Pump
-- Ice Fang
-- Icicle Spear
-- Imprison
-
-#### Battle Frontier Right:
-- Poison Fang
-- Low Kick
-- Low Sweep
-- Terrain Pulse
-- Rock Blast
-- Mystical Fire
-- Defense Curl
-- Scary Face
-- Take Down
-
 ### Moves:
 - All moves automatically have their max PP amount
 - Added custom 40 BP moves for type/category combos that were missing them
@@ -631,9 +551,6 @@
     - Bind:
         - Power: 15->35
         - Accuracy: 85->100
-    - Bind:
-        - Power: 15->35
-        - Accuracy: 85->90
     - Blood Moon:
         - PP: 5->10
     - Chatter:
@@ -715,8 +632,6 @@
         - Accuracy: 75->100
     - Spike Cannon:
         - Power: 20->25
-        - PP: 15->20
-    - Strength:
         - PP: 15->20
     - Strength:
         - PP: 15->20
@@ -1763,9 +1678,6 @@
 - Mega Victreebel (not in Emerald):
     - Atk: 125->135
 
-- Mega Victreebel (not in main game):
-    - Atk: 125->135
-
 - Tentacool/Tentacruel:
     - Learn Venoshock by level up
 
@@ -2130,27 +2042,6 @@
     - Learns Aerial Ace by TM
 
 - Tauros (not in Emerald):
-    - Catch rate: 45->90
-    - Learns Headbutt by level up
-
-- Paldean Tauros (Combat) (not in Emerald):
-    - Catch rate: 45->90
-    - Learns Rock Smash and Brick Break by level up
-
-- Paldean Tauros (Blaze) (not in Emerald):
-    - Catch rate: 45->90
-    - Learns Rock Smash, Temper Flare, and Brick Break by level up
-
-- Paldean Tauros (Aqua) (not in Emerald):
-    - Catch rate: 45->90
-    - Learns Rock Smash, Liquidation and Brick Break by level up
-
-- Pinsir:
-    - Catch rate: 45->90
-    - Learns Fury Cutter by level up
-    - Learns Aerial Ace by TM
-
-- Tauros (not in main game):
     - Catch rate: 45->90
     - Learns Headbutt by level up
 
@@ -4238,14 +4129,6 @@
     - Learns Aurora Veil upon evolving
     - Learns Power Gem by level up
 
-- Amaura:
-    - Catch rate: 45->90
-    - Learns Power Gem by level up
-
-- Aurorus:
-    - Learns Aurora Veil upon evolving
-    - Learns Power Gem by level up
-
 - Hawlucha:
     - Learns Rolling Kick, Drain Punch, Sky Uppercut, Dual Wingbeat, and Acrobatics by level up
 
@@ -4519,9 +4402,6 @@
 - Stufful/Bewear:
     - Learn Rock Smash, Brick Break, Body Slam, and Drain Punch by level up
 
-- Stufful/Bewear:
-    - Learn Rock Smash, Brick Break, Body Slam, and Drain Punch by level up
-
 - Bounsweet:
     - Atk: 30->40
     - Held item: Magost Berry: 0%->50%
@@ -4582,10 +4462,6 @@
 - Komala:
     - Catch rate: 45->90
     - Learns Pound, Snore, and Body Slam by level up
-
-- Komala:
-    - Catch rate: 45->90
-    - Learns Pound and Body Slam by level up
 
 - Turtonator:
     - Catch rate: 70->90
@@ -4650,59 +4526,6 @@
 
 - Lunala:
     - Learns Psybeam and Hyper Beam by level up
-
-- Nihilego:
-    - Learns Rock Throw, Ancient Power, Sludge Bomb, and Sludge Wave by level up
-
-- Buzzwole:
-    - Learns Fury Cutter, Wide Guard, Karate Chop, Drain Punch, Sky Uppercut, and Megahorn by level up
-
-- Pheromosa:
-    - Learns Fury Cutter, Vacuum Wave, Pounce, Signal Beam, and Aura Sphere by level up
-
-- Xurkitree:
-    - Learns Charge Beam, Rising Voltage, Dazzling Gleam, and Thunder by level up
-
-- Celesteela:
-    - Learns Magnet Bomb, Smart Strike, and Mirror Shot by level up
-
-- Kartana:
-    - Learns Leafage, Metal Claw, Trailblaze, Smart Strike, and Solar Blade by level up
-
-- Guzzlord:
-    - Learns Breaking Swipe, Dragon Breath, Dragon Claw, Dark Pulse, and Dragon Pulse by level up
-
-- Necrozma:
-    - Learns Psybeam, Dragon Pulse, Dragon Claw, Zen Headbutt, Psychic, and Dazzling Gleam by level up
-
-- Magearna:
-    - Learns Fairy Wind, Draining Kiss, Disarming Voice, Dazzling Gleam, and Moonblast by level up
-
-- Marshadow:
-    - Learns Mach Punch by level up
-
-- Poipole:
-    - Learns Poison Sting, Sludge, Poison Tail, and Sludge Bomb by level up
-
-- Naganadel:
-    - Learns Twister upon evolving
-    - Learns Poison Sting, Sludge, Dragon Breath, Poison Tail, and Sludge Bomb by level up
-
-- Stakataka:
-    - Learns Rock Tomb and Magnet Bomb by level up
-
-- Blacephalon:
-    - Learns Ominous Wind and Flamethrower by level up
-
-- Zeraora:
-    - Learns Zing Zap by level up
-
-- Meltan:
-    - Evolution: None->Thunder Stone
-    - Learns Magnet Bomb and Iron Head by level up
-
-- Melmetal:
-    - Learns Bullet Punch, Magnet Bomb, and Iron Head by level up
 
 - Nihilego:
     - Learns Rock Throw, Ancient Power, Sludge Bomb, and Sludge Wave by level up
@@ -4974,10 +4797,6 @@
 
 - Pincurchin:
     - Learns Supercell Slam by level up
-
-- Mega Falinks:
-    - HP: 65->75
-    - SpD: 65->75
 
 - Snom:
     - Evolution: friendship->21

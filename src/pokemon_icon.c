@@ -202,6 +202,7 @@ u8 CreateMonIconSilhouette(u16 species, void (*callback)(struct Sprite *), s16 x
     return spriteId;
 }
 
+
 u8 CreateMonIconNoPersonality(enum Species species, void (*callback)(struct Sprite *), s16 x, s16 y, u8 subpriority)
 {
     return CreateMonIconNoPersonalityIsEgg(species, callback, x, y, subpriority, FALSE);

@@ -5917,85 +5917,6 @@
           }
         },
         {
-          "map": "MAP_SAFARI_ZONE_FIRE_CAVE",
-          "base_label": "gSafariZone_FireCave",
-          "land_mons": {
-            "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
-            "mons": [
-              {
-                "species": "MAGBY"
-              },
-              {
-                "species": "HEATMOR"
-              },
-              {
-                "species": "GROWLITHE"
-              },
-              {
-                "species": "GROWLITHE_HISUI"
-              },
-              {
-                "species": "GROWLITHE"
-              },
-              {
-                "species": "GROWLITHE_HISUI"
-              },
-              {
-                "species": "ROLYCOLY"
-              },
-              {
-                "species": "ROLYCOLY"
-              },
-              {
-                "species": "ROLYCOLY"
-              },
-              {
-                "species": "ROLYCOLY"
-              }
-            ]
-          }
-        },
-        {
-          "map": "MAP_SAFARI_ZONE_FOREST",
-          "base_label": "gSafariZone_Forest",
-          "land_mons": {
-            "encounter_rate": "SAFARI_ZONE_ENCOUNTER_RATE",
-            "range": "POSTGAME",
-            "mons": [
-              {
-                "species": "NONE"
-              },
-              {
-                "species": "NONE"
-              },
-              {
-                "species": "NONE"
-              },
-              {
-                "species": "NONE"
-              },
-              {
-                "species": "NONE"
-              },
-              {
-                "species": "NONE"
-              },
-              {
-                "species": "NONE"
-              },
-              {
-                "species": "NONE"
-              },
-              {
-                "species": "NONE"
-              },
-              {
-                "species": "NONE"
-              }
-            ]
-          }
-        },
-        {
           "map": "MAP_DESERT_UNDERPASS",
           "base_label": "gDesertUnderpass",
           "land_mons": {
@@ -9932,6 +9853,9 @@
                 "species": "POLIWAG"
               },
               {
+                "species": "MAGIKARP"
+              },
+              {
                 "species": "GOLDEEN"
               },
               {
@@ -9939,6 +9863,9 @@
               },
               {
                 "species": "POLIWHIRL"
+              },
+              {
+                "species": "GYARADOS"
               },
               {
                 "species": "PSYDUCK"
@@ -9977,7 +9904,13 @@
                 "species": "MAGIKARP"
               },
               {
+                "species": "MAGIKARP"
+              },
+              {
                 "species": "HORSEA"
+              },
+              {
+                "species": "MAGIKARP"
               },
               {
                 "species": "HORSEA"
@@ -9987,6 +9920,9 @@
               },
               {
                 "species": "SHELLDER"
+              },
+              {
+                "species": "GYARADOS"
               },
               {
                 "species": "SEADRA"

@@ -1182,6 +1182,8 @@ enum __attribute__((packed)) Item
 
     /* Expands to:
      *   ITEM_TM_FOCUS_PUNCH = ITEM_TM001,
+     *   ...
+     *   ITEM_HM_CUT = ITM_HM01,
      *   ... */
     #define ENUM_TM(n, id) CAT(ITEM_TM_, id) = CAT(ITEM_TM, n),
     #define ENUM_HM(n, id) CAT(ITEM_HM_, id) = CAT(ITEM_HM, n),

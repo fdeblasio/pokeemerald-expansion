@@ -2292,7 +2292,7 @@
 // Item Ball Flags
 #define FLAG_ITEM_ROUTE_102_POTION                                  0
 #define FLAG_ITEM_ROUTE_116_X_SPECIAL                               0
-#define FLAG_ITEM_ROUTE_104_EXP_CANDY_M                             0
+#define FLAG_ITEM_ROUTE_104_PP_UP                                   0
 #define FLAG_ITEM_ROUTE_105_IRON                                    0
 #define FLAG_ITEM_ROUTE_106_PROTEIN                                 0
 #define FLAG_ITEM_ROUTE_109_PP_UP                                   0
@@ -2606,28 +2606,6 @@
 #define FLAG_  0
 #define FLAG_  0
 #define FLAG_  0
-
-//Custom Emerald flags unused here
-#define FLAG_LANDMARK_METEOR_FALLS        0
-#define FLAG_LANDMARK_WEATHER_INSTITUTE   0
-#define FLAG_LANDMARK_SAFARI_ZONE         0
-#define FLAG_LANDMARK_MT_PYRE             0
-#define FLAG_LANDMARK_SHOAL_CAVE          0
-#define FLAG_HIDE_VERDANTURF_TOWN_WALLY   0
-#define FLAG_HIDE_ROUTE_114_WALLY         0
-#define FLAG_RECEIVED_TM_LEAF_BLADE       0
-#define FLAG_RECEIVED_TM_POWER_GEM        0
-#define FLAG_RECEIVED_TM_PSYCHIC          0
-#define FLAG_HIDE_MOSSDEEP_CITY_TEAM_AQUA 0
-#define FLAG_RECEIVED_TM_LIQUIDATION      0
-#define FLAG_DEFEATED_REGIDRAGO           0
-#define FLAG_HIDE_REGIDRAGO               0
-#define FLAG_DEFEATED_REGIELEKI           0
-#define FLAG_HIDE_REGIELEKI               0
-#define FLAG_DEFEATED_REGIGIGAS           0
-#define FLAG_HIDE_REGIGIGAS               0
-#define FLAG_CAUGHT_LATIOS                0
-#define FLAG_CAUGHT_LATIAS                0
 
 #define FLAG_UNUSED_0x8E5                           0
 #define FLAG_UNUSED_0x8E6                           0

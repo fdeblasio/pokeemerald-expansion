@@ -296,6 +296,7 @@ gSpecials::
 	def_special GetPokeblockNameByMonNature
 	def_special GetSecretBaseNearbyMapName
 	def_special CheckRelicanthWailord
+	def_special CheckRegiParty
 	def_special ShouldDoBrailleRegirockEffectOld
 	def_special DoOrbEffect
 	def_special FadeOutOrbEffect, waitstate=1
@@ -489,7 +490,6 @@ gSpecials::
 	def_special ScriptMenu_CreateStartMenuForPokenavTutorial, waitstate=1
 	def_special CountPlayerTrainerStars
 	def_special BufferBattleFrontierTutorMoveName
-	def_special CloseBattleFrontierTutorWindow
 	def_special ScrollableMultichoice_RedrawPersistentMenu
 	def_special ChooseMonForMoveTutor, waitstate=1
 	def_special ScrollableMultichoice_ClosePersistentMenu

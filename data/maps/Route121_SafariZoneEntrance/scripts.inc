@@ -1,6 +1,11 @@
 Route121_SafariZoneEntrance_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route121_SafariZoneEntrance_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, Route121_SafariZoneEntrance_OnFrame
 	.byte 0
+
+Route121_SafariZoneEntrance_OnTransition:
+	setflag FLAG_LANDMARK_SAFARI_ZONE
+	end
 
 Route121_SafariZoneEntrance_OnFrame:
 	map_script_2 VAR_SAFARI_WARP_STATE, SAFARI_WARP_NO_STEPS, Route121_SafariZoneEntrance_EventScript_ExitSafariZone
@@ -51,7 +56,6 @@ Route121_SafariZoneEntrance_EventScript_EntranceCounterTrigger::
 	lockall
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
-	showmoneybox 0, 0
 	msgbox Route121_SafariZoneEntrance_Text_WouldYouLikeToPlay, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, Route121_SafariZoneEntrance_EventScript_TryEnterSafariZone
 	msgbox Route121_SafariZoneEntrance_Text_PlayAnotherTime, MSGBOX_DEFAULT
@@ -62,19 +66,13 @@ Route121_SafariZoneEntrance_EventScript_TryEnterSafariZone::
 	checkitem ITEM_POKEBLOCK_CASE
 	goto_if_eq VAR_RESULT, 0, Route121_SafariZoneEntrance_EventScript_NoPokeblockCase
 	call Route121_SafariZoneEntrance_EventScript_CheckHasRoomForPokemon
-	checkmoney 500
-	goto_if_eq VAR_RESULT, 0, Route121_SafariZoneEntrance_EventScript_NotEnoughMoney
 	playse SE_SHOP
-	msgbox Route121_SafariZoneEntrance_Text_ThatWillBe500Please, MSGBOX_DEFAULT
-	removemoney 500
-	updatemoneybox
 	msgbox Route121_SafariZoneEntrance_Text_HereAreYourSafariBalls, MSGBOX_DEFAULT
 	playfanfare MUS_OBTAIN_ITEM
 	message Route121_SafariZoneEntrance_Text_Received30SafariBalls
 	waitfanfare
 	msgbox Route121_SafariZoneEntrance_Text_PleaseEnjoyYourself, MSGBOX_DEFAULT
 	closemessage
-	hidemoneybox
 	applymovement LOCALID_PLAYER, Route121_SafariZoneEntrance_Movement_EnterSafariZone
 	waitmovement 0
 	safari_enter SAFARI_EVENT_HOENN
@@ -100,17 +98,15 @@ Route121_SafariZoneEntrance_EventScript_NoPokeblockCase::
 	goto Route121_SafariZoneEntrance_EventScript_MovePlayerBackFromCounter
 	end
 
-Route121_SafariZoneEntrance_EventScript_NotEnoughMoney::
-	msgbox Route121_SafariZoneEntrance_Text_NotEnoughMoney, MSGBOX_DEFAULT
-	goto Route121_SafariZoneEntrance_EventScript_MovePlayerBackFromCounter
-	end
-
 Route121_SafariZoneEntrance_EventScript_MovePlayerBackFromCounter::
 	closemessage
-	hidemoneybox
 	applymovement LOCALID_PLAYER, Route121_SafariZoneEntrance_Movement_BackAwayFromCounter
 	waitmovement 0
 	releaseall
+	end
+
+Route121_SafariZoneEntrance_EventScript_ConstructionWorker::
+	msgbox Route121_SafariZoneEntrance_Text_AreaOffLimits, MSGBOX_NPC
 	end
 
 Route121_SafariZoneEntrance_Movement_BackAwayFromCounter:

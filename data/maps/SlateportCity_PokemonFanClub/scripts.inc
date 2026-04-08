@@ -226,8 +226,8 @@ SlateportCity_PokemonFanClub_EventScript_Skitty::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_SKITTY, CRY_MODE_NORMAL
-	msgbox SlateportCity_PokemonFanClub_Text_Skitty, MSGBOX_DEFAULT
+	overworldspecies SPECIES_SLATEPORT_FAN_CLUB_2
+	bufferspeciestext SPECIES_SLATEPORT_FAN_CLUB_2, SlateportCity_PokemonFanClub_Text_Skitty, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end
@@ -236,8 +236,8 @@ SlateportCity_PokemonFanClub_EventScript_Zigzagoon::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_ZIGZAGOON, CRY_MODE_NORMAL
-	msgbox SlateportCity_PokemonFanClub_Text_Zigzagoon, MSGBOX_DEFAULT
+	overworldspecies SPECIES_SLATEPORT_FAN_CLUB_1
+	bufferspeciestext SPECIES_SLATEPORT_FAN_CLUB_1, SlateportCity_PokemonFanClub_Text_Zigzagoon, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end
@@ -246,8 +246,8 @@ SlateportCity_PokemonFanClub_EventScript_Azumarill::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_AZUMARILL, CRY_MODE_NORMAL
-	msgbox SlateportCity_PokemonFanClub_Text_Azumarill, MSGBOX_DEFAULT
+	overworldspecies SPECIES_SLATEPORT_FAN_CLUB_3
+	bufferspeciestext SPECIES_SLATEPORT_FAN_CLUB_3, SlateportCity_PokemonFanClub_Text_Azumarill, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end
@@ -390,11 +390,11 @@ SlateportCity_PokemonFanClub_Text_MonEnjoyedProtein:
 	.string "it some Protein.$"
 
 SlateportCity_PokemonFanClub_Text_Skitty:
-	.string "Skitty: Fffnyaaaah…$"
+	.string "{STR_VAR_1}: Fffnyaaaah…$"
 
 SlateportCity_PokemonFanClub_Text_Zigzagoon:
-	.string "Zigzagoon: Kyuuu…$"
+	.string "{STR_VAR_1}: Kyuuu…$"
 
 SlateportCity_PokemonFanClub_Text_Azumarill:
-	.string "Azumarill: Marimari?$"
+	.string "{STR_VAR_1}: Marimari?$"
 

@@ -10,7 +10,7 @@ CeruleanCity_House5_EventScript_BerryPowderMan::
 	goto_if_unset FLAG_SYS_GOT_BERRY_POUCH, CeruleanCity_House5_EventScript_NoBerries
 	msgbox CeruleanCity_House1_Text_HaveJustTheThing
 	setflag FLAG_GOT_POWDER_JAR
-	giveitem ITEM_POWDER_JAR
+	giveitem ITEM_CATCHING_CHARM
 	goto_if_eq VAR_RESULT, FALSE, EventScript_BagIsFull
 	msgbox CeruleanCity_House1_Text_GoCrushBerriesAtDirectCorner
 	release
@@ -27,9 +27,7 @@ CeruleanCity_House5_EventScript_NoInterestInBerries::
 	end
 
 CeruleanCity_House5_EventScript_AskToExchangePowder::
-	special DisplayBerryPowderVendorMenu
-	msgbox CeruleanCity_House1_Text_HaveYouBroughtBerryPowder
-	goto CeruleanCity_House5_EventScript_ChooseExchangeItem
+	msgbox CeruleanCity_House5_EventScript_AskToExchangePowder, MSGBOX_DEFAULT
 	end
 
 CeruleanCity_House5_EventScript_ChooseExchangeItem::
@@ -177,29 +175,14 @@ CeruleanCity_House1_Text_AnyInterestInBerries::
 	.string "Using good Berry Powder, I can\n"
 	.string "make any kind of medicine.\p"
 	.string "Now tell me, have you any interest\n"
-	.string "in Berries?$"
+	.string "in Pokémon?$"
 
 CeruleanCity_House1_Text_HaveJustTheThing::
 	.string "Ah, good! For you, then, I have\n"
 	.string "just the thing.$"
 
 CeruleanCity_House1_Text_GoCrushBerriesAtDirectCorner::
-	.string "There's something new on the second\n"
-	.string "floor of Pokémon Centers, at the\l"
-	.string "Direct Corner.\p"
-	.string "They installed a Wireless Adapter\n"
-	.string "machine for crushing Berries.\p"
-	.string "This is where you come in.\p"
-	.string "I have a favor to ask, one that\n"
-	.string "I can entrust only to you.\p"
-	.string "Could you make Berry Powder for\n"
-	.string "me using that machine?\p"
-	.string "Don't forget, the machine is at the\n"
-	.string "Direct Corner of Pokémon Centers.\p"
-	.string "I'll concoct medicine for you if\n"
-	.string "you bring me some Berry Powder.\p"
-	.string "Don't forget, crush Berries into\n"
-	.string "Berry Powder and bring it to me.$"
+	.string "Some Pokémon carry Berries!$"
 
 CeruleanCity_House1_Text_WhyMustYouLieNoBerries::
 	.string "Why must you lie to me?\p"

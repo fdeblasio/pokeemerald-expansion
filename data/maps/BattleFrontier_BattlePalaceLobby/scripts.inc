@@ -95,9 +95,7 @@ BattleFrontier_BattlePalaceLobby_EventScript_EndSaveAfterChallenge::
 BattleFrontier_BattlePalaceLobby_EventScript_ResumeChallenge::
 	lockall
 	msgbox BattleFrontier_BattlePalaceLobby_Text_WeHaveBeenWaiting, MSGBOX_DEFAULT
-	message BattleFrontier_BattlePalaceLobby_Text_MustSaveBeforeChallenge
 	waitmessage
-	palace_save CHALLENGE_STATUS_SAVING
 	playse SE_SAVE
 	waitse
 	frontier_set FRONTIER_DATA_PAUSED, FALSE
@@ -154,13 +152,6 @@ BattleFrontier_BattlePalaceLobby_EventScript_TryEnterChallenge::
 	copyvar VAR_0x8004, VAR_RESULT
 	choosepartyforbattlefrontier FRONTIER_PARTY_SIZE
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattlePalaceLobby_EventScript_LoadPartyAndCancelChallenge
-	msgbox BattleFrontier_BattlePalaceLobby_Text_MustSaveBeforeChallenge2, MSGBOX_YESNO
-	switch VAR_RESULT
-	case NO, BattleFrontier_BattlePalaceLobby_EventScript_LoadPartyAndCancelChallenge
-	case YES, BattleFrontier_BattlePalaceLobby_EventScript_SaveBeforeChallenge
-	case MULTI_B_PRESSED, BattleFrontier_BattlePalaceLobby_EventScript_LoadPartyAndCancelChallenge
-
-BattleFrontier_BattlePalaceLobby_EventScript_SaveBeforeChallenge::
 	setvar VAR_TEMP_CHALLENGE_STATUS, 0
 	frontier_set FRONTIER_DATA_SELECTED_MON_ORDER
 	palace_init
@@ -169,10 +160,9 @@ BattleFrontier_BattlePalaceLobby_EventScript_SaveBeforeChallenge::
 	frontier_set FRONTIER_DATA_PAUSED, FALSE
 	special LoadPlayerParty
 	closemessage
-	delay 2
-	call Common_EventScript_SaveGame
 	setvar VAR_TEMP_CHALLENGE_STATUS, 255
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattlePalaceLobby_EventScript_CancelChallengeSaveFailed
+
 BattleFrontier_BattlePalaceLobby_EventScript_EnterChallenge::
 	special SavePlayerParty
 	frontier_setpartyorder FRONTIER_PARTY_SIZE
@@ -449,10 +439,6 @@ BattleFrontier_BattlePalaceLobby_Text_NowSelectThreeMons:
 	.string "Good. Now, you must select your\n"
 	.string "three Pokémon.$"
 
-BattleFrontier_BattlePalaceLobby_Text_MustSaveBeforeChallenge2:
-	.string "I must save before I show you to\n"
-	.string "the Battle Hall. Is that okay?$"
-
 BattleFrontier_BattlePalaceLobby_Text_FollowMe:
 	.string "Good.\n"
 	.string "Now, follow me.$"
@@ -485,10 +471,6 @@ BattleFrontier_BattlePalaceLobby_Text_NoSpaceForPrize:
 
 BattleFrontier_BattlePalaceLobby_Text_WeHaveBeenWaiting:
 	.string "We have been waiting for you…$"
-
-BattleFrontier_BattlePalaceLobby_Text_MustSaveBeforeChallenge:
-	.string "I must save before I show you to\n"
-	.string "the Battle Hall. Is that okay?$"
 
 BattleFrontier_BattlePalaceLobby_Text_FailedToSaveBeforeEndingChallenge:
 	.string "Sigh…\p"

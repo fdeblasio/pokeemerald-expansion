@@ -5,8 +5,8 @@ SaffronCity_CopycatsHouse_2F_EventScript_Doduo::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_DODUO, CRY_MODE_NORMAL
-	msgbox SaffronCity_CopycatsHouse_2F_Text_Doduo
+	overworldspecies SPECIES_DODUO
+	bufferspeciestext SPECIES_DODUO, SaffronCity_CopycatsHouse_2F_Text_Doduo
 	waitmoncry
 	release
 	end
@@ -98,7 +98,7 @@ Text_MimicTaughtFemale::
 	.string "It's a scream!$"
 
 SaffronCity_CopycatsHouse_2F_Text_Doduo::
-	.string "Doduo: Giiih!\p"
+	.string "{STR_VAR_1}: Giiih!\p"
 	.string "PRETTY MIRROR LOOK AT ME,\n"
 	.string "SEE HOW PRETTY I CAN BE?$"
 

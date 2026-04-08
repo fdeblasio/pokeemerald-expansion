@@ -66,15 +66,15 @@ CeruleanCity_EventScript_Rival::
 	end
 
 CeruleanCity_EventScript_RivalSquirtle::
-	trainerbattle_no_intro TRAINER_RIVAL_CERULEAN_SQUIRTLE, CeruleanCity_Text_RivalDefeat
+	trainerbattle_no_intro TRAINER_RIVAL_CERULEAN_WATER, CeruleanCity_Text_RivalDefeat
 	return
 
 CeruleanCity_EventScript_RivalBulbasaur::
-	trainerbattle_no_intro TRAINER_RIVAL_CERULEAN_BULBASAUR, CeruleanCity_Text_RivalDefeat
+	trainerbattle_no_intro TRAINER_RIVAL_CERULEAN_GRASS, CeruleanCity_Text_RivalDefeat
 	return
 
 CeruleanCity_EventScript_RivalCharmander::
-	trainerbattle_no_intro TRAINER_RIVAL_CERULEAN_CHARMANDER, CeruleanCity_Text_RivalDefeat
+	trainerbattle_no_intro TRAINER_RIVAL_CERULEAN_FIRE, CeruleanCity_Text_RivalDefeat
 	return
 
 CeruleanCity_EventScript_RivalStartExit::
@@ -176,9 +176,9 @@ CeruleanCity_EventScript_Grunt::
 
 CeruleanCity_EventScript_GruntDefeated::
 	msgbox CeruleanCity_Text_OkayIllReturnStolenTM
-	checkitemspace ITEM_TM28
+	checkitemspace ITEM_TM028
 	goto_if_eq VAR_RESULT, FALSE, CeruleanCity_EventScript_NoRoomForTM28
-	giveitem_msg CeruleanCity_Text_RecoveredTM28FromGrunt, ITEM_TM28
+	giveitem_msg CeruleanCity_Text_RecoveredTM28FromGrunt, ITEM_TM028
 	msgbox CeruleanCity_Text_BetterGetMovingBye
 	closemessage
 	fadescreenswapbuffers FADE_TO_BLACK

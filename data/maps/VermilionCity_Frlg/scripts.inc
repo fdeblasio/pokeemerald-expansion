@@ -233,8 +233,8 @@ VermilionCity_EventScript_Machop::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_MACHOP, CRY_MODE_NORMAL
-	msgbox VermilionCity_Text_Machop
+	overworldspecies SPECIES_MACHOP
+	bufferspeciestext SPECIES_MACHOP, VermilionCity_Text_Machop
 	waitmoncry
 	msgbox VermilionCity_Text_MachopStompingLandFlat
 	release
@@ -284,7 +284,7 @@ VermilionCity_Text_BuildingOnThisLand::
 	.string "to lay the foundation.$"
 
 VermilionCity_Text_Machop::
-	.string "Machop: Guoh! Gogogoh!$"
+	.string "{STR_VAR_1}: Guoh! Gogogoh!$"
 
 VermilionCity_Text_MachopStompingLandFlat::
 	.string "A Machop is stomping the land flat.$"

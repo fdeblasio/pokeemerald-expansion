@@ -144,10 +144,10 @@
   },
   "BEEDRILL": {
     "LevelMoves": [
+      {"Level": 26, "Move": "MOVE_CROSS_POISON"},
       {"Level": 47, "Move": "MOVE_LEECH_LIFE"}
     ],
     "PreEvoMoves": [],
-    "TMMoves": ["MOVE_LEECH_LIFE"],
     "EggMoves": [],
     "TutorMoves": []
   },

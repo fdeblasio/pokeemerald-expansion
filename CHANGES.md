@@ -840,7 +840,6 @@
         - Accuracy: 90->100
     - Shadow Claw:
         - PP: 15->20
-        - Now a slicing move
     - Shadow Force:
         - PP: 5->10
     - Spirit Shackle:
@@ -1157,6 +1156,8 @@
         - PP: 5->10
     - Hard Press:
         - Power: 100->120
+    - Iron Head:
+        - Chance to flinch: 20%->30%
     - Make It Rain:
         - PP: 5->10
         - No longer lowers user's Special Attack
@@ -1386,7 +1387,7 @@
     - Learns Bug Bite at level 7 instead of 9
 
 - Beedrill (not in Emerald):
-    - Learns Leech Life by level up
+    - Learns Cross Poison and Leech Life by level up
 
 - Pidgey (not in Emerald):
     - SpA: 35->45
